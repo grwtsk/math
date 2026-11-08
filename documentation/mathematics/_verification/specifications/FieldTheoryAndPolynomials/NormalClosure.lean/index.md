@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/NormalClosure.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/NormalClosure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/NormalClosure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/NormalClosure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [normalClosure](../../../../FieldTheoryAndPolynomials/NormalClosure.lean/declarations/normalclosure.md) | 25 | `declaration-track:f1c631aad365200b1f38ef5c71d165a5399f263bb008c49e4e81898b4eeed655` |
-| 2 | `theorem` | [restrictScalars_eq_iSup_adjoin](../../../../FieldTheoryAndPolynomials/NormalClosure.lean/declarations/restrictscalars-eq-isup-adjoin.md) | 33 | `result-track:722a6c80dc92837cffdace7b489594e134a95d71da15222fb0cf052fde76c1cf` |
-| 3 | `instance` | [normal](../../../../FieldTheoryAndPolynomials/NormalClosure.lean/declarations/normal.md) | 57 | `declaration-track:2023ca360a82b834913715daada057043b40ae135092bd7919cf9804477b1e61` |
-| 4 | `instance` | [is_finiteDimensional](../../../../FieldTheoryAndPolynomials/NormalClosure.lean/declarations/is-finitedimensional.md) | 69 | `declaration-track:00a84a8c3e0df630442a85de8748d895bcdb18e8cb3a4eefdebf9fe08ff6914f` |
-| 5 | `instance` | [isScalarTower](../../../../FieldTheoryAndPolynomials/NormalClosure.lean/declarations/isscalartower.md) | 76 | `declaration-track:2e4c9ef4ce37b49319d985ae7db656c995869ec8f6e7286d6b97c33b3054cc34` |
+| 1 | `def` | [normalClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/NormalClosure.lean/declarations/normalclosure.md) | 25 | `declaration-track:f1c631aad365200b1f38ef5c71d165a5399f263bb008c49e4e81898b4eeed655` |
+| 2 | `theorem` | [restrictScalars_eq_iSup_adjoin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/NormalClosure.lean/declarations/restrictscalars-eq-isup-adjoin.md) | 33 | `result-track:722a6c80dc92837cffdace7b489594e134a95d71da15222fb0cf052fde76c1cf` |
+| 3 | `instance` | [normal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/NormalClosure.lean/declarations/normal.md) | 57 | `declaration-track:2023ca360a82b834913715daada057043b40ae135092bd7919cf9804477b1e61` |
+| 4 | `instance` | [is_finiteDimensional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/NormalClosure.lean/declarations/is-finitedimensional.md) | 69 | `declaration-track:00a84a8c3e0df630442a85de8748d895bcdb18e8cb3a4eefdebf9fe08ff6914f` |
+| 5 | `instance` | [isScalarTower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/NormalClosure.lean/declarations/isscalartower.md) | 76 | `declaration-track:2e4c9ef4ce37b49319d985ae7db656c995869ec8f6e7286d6b97c33b3054cc34` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

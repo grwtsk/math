@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedFixedTensorImplication.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedFixedTensorImplication.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedFixedTensorImplication.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedFixedTensorImplication.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IndexToFixedTensorBridge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedFixedTensorImplication.lean/declarations/indextofixedtensorbridge.md) | 51 | `declaration-track:fd054e62d6212758461e9377a8f60435d737cbb74107eaba07ae23ecf30ef898` |
-| 2 | `theorem` | [fixed_tensor_from_nonzero_index](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedFixedTensorImplication.lean/declarations/fixed-tensor-from-nonzero-index.md) | 69 | `result-track:5a661f8a1729a6db5a12ee31dcb8184492c1d9fec02d2b763f3929974d276a9b` |
+| 1 | `structure` | [IndexToFixedTensorBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedFixedTensorImplication.lean/declarations/indextofixedtensorbridge.md) | 51 | `declaration-track:fd054e62d6212758461e9377a8f60435d737cbb74107eaba07ae23ecf30ef898` |
+| 2 | `theorem` | [fixed_tensor_from_nonzero_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedFixedTensorImplication.lean/declarations/fixed-tensor-from-nonzero-index.md) | 69 | `result-track:5a661f8a1729a6db5a12ee31dcb8184492c1d9fec02d2b763f3929974d276a9b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

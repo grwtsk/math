@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveHeadConsumer.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveHeadConsumer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveHeadConsumer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveHeadConsumer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [original_quadratic_lower_of_adaptive_head](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveHeadConsumer.lean/declarations/original-quadratic-lower-of-adaptive-head.md) | 20 | `result-track:75a96d3323a1ec57016e02778bff9a2fe78829c8f33c389a18740cbb1f085378` |
-| 2 | `theorem` | [estimate_of_actual_adaptive_head](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveHeadConsumer.lean/declarations/estimate-of-actual-adaptive-head.md) | 37 | `result-track:d7f3683f9f4941192fa6f6a78c7fa4b4e841ab6f2e4bf567a95bc506cc614284` |
-| 3 | `theorem` | [actual_adaptive_head_estimate_source_witness](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveHeadConsumer.lean/declarations/actual-adaptive-head-estimate-source-witness.md) | 50 | `result-track:138e88096931db7a3f661442f6ac24ca0f35828be920c87839669d74890a5699` |
+| 1 | `theorem` | [original_quadratic_lower_of_adaptive_head](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveHeadConsumer.lean/declarations/original-quadratic-lower-of-adaptive-head.md) | 20 | `result-track:75a96d3323a1ec57016e02778bff9a2fe78829c8f33c389a18740cbb1f085378` |
+| 2 | `theorem` | [estimate_of_actual_adaptive_head](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveHeadConsumer.lean/declarations/estimate-of-actual-adaptive-head.md) | 37 | `result-track:d7f3683f9f4941192fa6f6a78c7fa4b4e841ab6f2e4bf567a95bc506cc614284` |
+| 3 | `theorem` | [actual_adaptive_head_estimate_source_witness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveHeadConsumer.lean/declarations/actual-adaptive-head-estimate-source-witness.md) | 50 | `result-track:138e88096931db7a3f661442f6ac24ca0f35828be920c87839669d74890a5699` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

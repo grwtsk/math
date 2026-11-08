@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FullLineChiAssemblyNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FullLineChiAssemblyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiAssemblyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiAssemblyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_heights_chi](../../../../MeasureAndIntegration/FullLineChiAssemblyNamespaced.lean/declarations/exists-heights-chi.md) | 42 | `result-track:4bfd770f1dfd55ed871bdb99a862ef1e470f71a0e2452ce0e99506980ac3f32e` |
-| 2 | `theorem` | [completedL_ne_zero_on_horizontals](../../../../MeasureAndIntegration/FullLineChiAssemblyNamespaced.lean/declarations/completedl-ne-zero-on-horizontals.md) | 70 | `result-track:9bf19b596f880b6588df0a1c6c14c162530bcf6db61746eac51fd8a5ed7d2821` |
-| 3 | `theorem` | [integrable_FlineChi](../../../../MeasureAndIntegration/FullLineChiAssemblyNamespaced.lean/declarations/integrable-flinechi.md) | 102 | `result-track:e70f627655edc184934cc00f89a32b7ca24629a93b24a63e935709c91a27f0cb` |
-| 4 | `theorem` | [tendsto_interval_FlineChi](../../../../MeasureAndIntegration/FullLineChiAssemblyNamespaced.lean/declarations/tendsto-interval-flinechi.md) | 148 | `result-track:814446d91890def53fbd022a37607efb76f8c294e3e5abfab2a11a42871ec7e8` |
-| 5 | `theorem` | [full_line_identity_chi'](../../../../MeasureAndIntegration/FullLineChiAssemblyNamespaced.lean/declarations/full-line-identity-chi.md) | 160 | `result-track:a5e91e5e928f57b656c4d152f108e2b6c289421de6f4b5fd8a9ec5df4afdf482` |
+| 1 | `theorem` | [exists_heights_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiAssemblyNamespaced.lean/declarations/exists-heights-chi.md) | 42 | `result-track:4bfd770f1dfd55ed871bdb99a862ef1e470f71a0e2452ce0e99506980ac3f32e` |
+| 2 | `theorem` | [completedL_ne_zero_on_horizontals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiAssemblyNamespaced.lean/declarations/completedl-ne-zero-on-horizontals.md) | 70 | `result-track:9bf19b596f880b6588df0a1c6c14c162530bcf6db61746eac51fd8a5ed7d2821` |
+| 3 | `theorem` | [integrable_FlineChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiAssemblyNamespaced.lean/declarations/integrable-flinechi.md) | 102 | `result-track:e70f627655edc184934cc00f89a32b7ca24629a93b24a63e935709c91a27f0cb` |
+| 4 | `theorem` | [tendsto_interval_FlineChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiAssemblyNamespaced.lean/declarations/tendsto-interval-flinechi.md) | 148 | `result-track:814446d91890def53fbd022a37607efb76f8c294e3e5abfab2a11a42871ec7e8` |
+| 5 | `theorem` | [full_line_identity_chi'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiAssemblyNamespaced.lean/declarations/full-line-identity-chi.md) | 160 | `result-track:a5e91e5e928f57b656c4d152f108e2b6c289421de6f4b5fd8a9ec5df4afdf482` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

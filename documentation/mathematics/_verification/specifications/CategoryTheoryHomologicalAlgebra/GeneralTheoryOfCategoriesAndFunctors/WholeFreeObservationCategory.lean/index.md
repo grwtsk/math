@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Obs](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/declarations/obs.md) | 45 | `declaration-track:b8eaccb0a3eb14fd344315befabf34b3d33d087e903cad01d525f60c42136133` |
-| 2 | `inductive` | [Generator](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/declarations/generator.md) | 58 | `declaration-track:d152dfa20aa7f9ae17162f5e0e5dfcaeec62fb22e458c388290a913938f92d83` |
-| 3 | `inductive` | [Path](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/declarations/path.md) | 67 | `declaration-track:961f18e18393ec7692c86ef85e1ff69428811b7e27bc1d81474d992389fb9a4e` |
-| 4 | `def` | [append](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/declarations/append.md) | 73 | `declaration-track:921c9e09f7f48a3139a539107ae2e3d4dfffbe1b915ad8aaacc2d37a0f14cff0` |
-| 5 | `theorem` | [nil_append](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/declarations/nil-append.md) | 78 | `result-track:fed8c422653d3f78022e9c9884abfead6fa6221e4f3914d486bf0ecdd86a2010` |
-| 6 | `theorem` | [append_nil](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/declarations/append-nil.md) | 83 | `result-track:0bbd717cdda5d724e0a969bee82b40ee4186f42f3c7dfaaeced07d8e842ffaae` |
-| 7 | `theorem` | [append_assoc](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/declarations/append-assoc.md) | 91 | `result-track:886a44d9f7f2e0c30d4ce2db2950ce6eacf3ccd8bda5090494449e33fd30c5f1` |
-| 8 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/declarations/instance.md) | 101 | `declaration-track:dc5cb65a77da01ac61e810dbf55949a37f8f2ec9a794eab522b94c7fdc8c56db` |
+| 1 | `inductive` | [Obs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/declarations/obs.md) | 45 | `declaration-track:b8eaccb0a3eb14fd344315befabf34b3d33d087e903cad01d525f60c42136133` |
+| 2 | `inductive` | [Generator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/declarations/generator.md) | 58 | `declaration-track:d152dfa20aa7f9ae17162f5e0e5dfcaeec62fb22e458c388290a913938f92d83` |
+| 3 | `inductive` | [Path](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/declarations/path.md) | 67 | `declaration-track:961f18e18393ec7692c86ef85e1ff69428811b7e27bc1d81474d992389fb9a4e` |
+| 4 | `def` | [append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/declarations/append.md) | 73 | `declaration-track:921c9e09f7f48a3139a539107ae2e3d4dfffbe1b915ad8aaacc2d37a0f14cff0` |
+| 5 | `theorem` | [nil_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/declarations/nil-append.md) | 78 | `result-track:fed8c422653d3f78022e9c9884abfead6fa6221e4f3914d486bf0ecdd86a2010` |
+| 6 | `theorem` | [append_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/declarations/append-nil.md) | 83 | `result-track:0bbd717cdda5d724e0a969bee82b40ee4186f42f3c7dfaaeced07d8e842ffaae` |
+| 7 | `theorem` | [append_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/declarations/append-assoc.md) | 91 | `result-track:886a44d9f7f2e0c30d4ce2db2950ce6eacf3ccd8bda5090494449e33fd30c5f1` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WholeFreeObservationCategory.lean/declarations/instance.md) | 101 | `declaration-track:dc5cb65a77da01ac61e810dbf55949a37f8f2ec9a794eab522b94c7fdc8c56db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

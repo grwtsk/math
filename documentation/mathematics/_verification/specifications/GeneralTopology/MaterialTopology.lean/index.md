@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MaterialTopology.lean/index.md) · [Full source](../../../../GeneralTopology/MaterialTopology.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopology.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopology.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [material_homeomorph_image_connected_iff](../../../../GeneralTopology/MaterialTopology.lean/declarations/material-homeomorph-image-connected-iff.md) | 24 | `result-track:4495d3faeefe85f582861eed302f3844d597a2a2e0cd83d6e4dc40f4d3f6ad94` |
-| 2 | `theorem` | [material_homeomorph_image_preconnected_iff](../../../../GeneralTopology/MaterialTopology.lean/declarations/material-homeomorph-image-preconnected-iff.md) | 29 | `result-track:24f84ab2a6c80a61c30e0636998ac4d8626e62e50d3051a36cb73ba5b84c8758` |
-| 3 | `theorem` | [no_continuous_image_of_connected_disconnected](../../../../GeneralTopology/MaterialTopology.lean/declarations/no-continuous-image-of-connected-disconnected.md) | 35 | `result-track:cb2b83429bbd233b4dbeea15e4370e904c109602d3d3c747d6e6938362baed7b` |
-| 4 | `theorem` | [no_homeomorph_image_of_connected_disconnected](../../../../GeneralTopology/MaterialTopology.lean/declarations/no-homeomorph-image-of-connected-disconnected.md) | 44 | `result-track:64d4f17e4d9334782d8b73cdb1c34a25eaaa772fab8e5c66cc9d034fd778810b` |
-| 5 | `theorem` | [no_homeomorph_image_of_disconnected_connected](../../../../GeneralTopology/MaterialTopology.lean/declarations/no-homeomorph-image-of-disconnected-connected.md) | 52 | `result-track:7a37b41514d3e94cbb783317d4c86f7e14851676be92fb9b37b3f6924999ed6b` |
-| 6 | `theorem` | [no_interface_homeomorph_of_connected_disconnected](../../../../GeneralTopology/MaterialTopology.lean/declarations/no-interface-homeomorph-of-connected-disconnected.md) | 62 | `result-track:b46e346529d99c34019d4d49e5042e269a95eeb74e0f277ae03b018d650c7a10` |
-| 7 | `theorem` | [no_fixed_interface_homeomorph_family](../../../../GeneralTopology/MaterialTopology.lean/declarations/no-fixed-interface-homeomorph-family.md) | 72 | `result-track:aa10481cebd017d65b6abf49aa74e7aae1bf21446720bcc91cdb3d0426327b44` |
-| 8 | `theorem` | [empty_interface_is_preconnected](../../../../GeneralTopology/MaterialTopology.lean/declarations/empty-interface-is-preconnected.md) | 87 | `result-track:ac3d1d07e24d092d92b02f321ce1113423e9ec2624abfac46b2dc615b8e6e8e7` |
+| 1 | `theorem` | [material_homeomorph_image_connected_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopology.lean/declarations/material-homeomorph-image-connected-iff.md) | 24 | `result-track:4495d3faeefe85f582861eed302f3844d597a2a2e0cd83d6e4dc40f4d3f6ad94` |
+| 2 | `theorem` | [material_homeomorph_image_preconnected_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopology.lean/declarations/material-homeomorph-image-preconnected-iff.md) | 29 | `result-track:24f84ab2a6c80a61c30e0636998ac4d8626e62e50d3051a36cb73ba5b84c8758` |
+| 3 | `theorem` | [no_continuous_image_of_connected_disconnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopology.lean/declarations/no-continuous-image-of-connected-disconnected.md) | 35 | `result-track:cb2b83429bbd233b4dbeea15e4370e904c109602d3d3c747d6e6938362baed7b` |
+| 4 | `theorem` | [no_homeomorph_image_of_connected_disconnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopology.lean/declarations/no-homeomorph-image-of-connected-disconnected.md) | 44 | `result-track:64d4f17e4d9334782d8b73cdb1c34a25eaaa772fab8e5c66cc9d034fd778810b` |
+| 5 | `theorem` | [no_homeomorph_image_of_disconnected_connected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopology.lean/declarations/no-homeomorph-image-of-disconnected-connected.md) | 52 | `result-track:7a37b41514d3e94cbb783317d4c86f7e14851676be92fb9b37b3f6924999ed6b` |
+| 6 | `theorem` | [no_interface_homeomorph_of_connected_disconnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopology.lean/declarations/no-interface-homeomorph-of-connected-disconnected.md) | 62 | `result-track:b46e346529d99c34019d4d49e5042e269a95eeb74e0f277ae03b018d650c7a10` |
+| 7 | `theorem` | [no_fixed_interface_homeomorph_family](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopology.lean/declarations/no-fixed-interface-homeomorph-family.md) | 72 | `result-track:aa10481cebd017d65b6abf49aa74e7aae1bf21446720bcc91cdb3d0426327b44` |
+| 8 | `theorem` | [empty_interface_is_preconnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopology.lean/declarations/empty-interface-is-preconnected.md) | 87 | `result-track:ac3d1d07e24d092d92b02f321ce1113423e9ec2624abfac46b2dc615b8e6e8e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

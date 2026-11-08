@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01Namespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fourthDisplacementEnergyPolynomial](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01Namespaced.lean/declarations/fourthdisplacementenergypolynomial.md) | 27 | `declaration-track:2097148e9e54b50db3b168f438c3a7f7cd11c970e4df4a8297f9748ad11e949e` |
-| 2 | `theorem` | [cubic_energy_ratio_le_sixty_seven](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01Namespaced.lean/declarations/cubic-energy-ratio-le-sixty-seven.md) | 31 | `result-track:77a879f1653a68588d55f7454d2dee3b5f6ec095b36ed3985e93da940c6c65b6` |
-| 3 | `theorem` | [cubic_energy_ratio_le_sixty_seven_of_scale](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01Namespaced.lean/declarations/cubic-energy-ratio-le-sixty-seven-of-scale.md) | 40 | `result-track:7cb3ad3516cfd9b46b6a54015cd1a06ec1c2cccbbdb340c741fa648f0a2c8e6d` |
-| 4 | `theorem` | [refined_cubic_calibration_budget_lt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01Namespaced.lean/declarations/refined-cubic-calibration-budget-lt.md) | 49 | `result-track:28fc155e8affaf99de63e247b72af2059c7d2fd6846ca187d69c52c8a8965eb7` |
+| 1 | `def` | [fourthDisplacementEnergyPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01Namespaced.lean/declarations/fourthdisplacementenergypolynomial.md) | 27 | `declaration-track:2097148e9e54b50db3b168f438c3a7f7cd11c970e4df4a8297f9748ad11e949e` |
+| 2 | `theorem` | [cubic_energy_ratio_le_sixty_seven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01Namespaced.lean/declarations/cubic-energy-ratio-le-sixty-seven.md) | 31 | `result-track:77a879f1653a68588d55f7454d2dee3b5f6ec095b36ed3985e93da940c6c65b6` |
+| 3 | `theorem` | [cubic_energy_ratio_le_sixty_seven_of_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01Namespaced.lean/declarations/cubic-energy-ratio-le-sixty-seven-of-scale.md) | 40 | `result-track:7cb3ad3516cfd9b46b6a54015cd1a06ec1c2cccbbdb340c741fa648f0a2c8e6d` |
+| 4 | `theorem` | [refined_cubic_calibration_budget_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01Namespaced.lean/declarations/refined-cubic-calibration-budget-lt.md) | 49 | `result-track:28fc155e8affaf99de63e247b72af2059c7d2fd6846ca187d69c52c8a8965eb7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

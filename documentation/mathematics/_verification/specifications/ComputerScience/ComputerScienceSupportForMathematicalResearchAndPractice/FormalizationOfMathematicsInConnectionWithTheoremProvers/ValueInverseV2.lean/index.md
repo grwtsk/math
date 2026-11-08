@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ValueInverseV2.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ValueInverseV2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ValueInverseV2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ValueInverseV2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [valueOK_depth_le](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ValueInverseV2.lean/declarations/valueok-depth-le.md) | 5 | `result-track:8c6f0c208660635d0e1690b8cf32c5a4ea6032fb15288cf59c871672b0d7e668` |
-| 2 | `theorem` | [parse_value_suffix](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ValueInverseV2.lean/declarations/parse-value-suffix.md) | 9 | `result-track:86550e95ef276f9f32683a709b32d6f356d6cd10a6b85248d8ade733f96a5013` |
-| 3 | `theorem` | [supported_record_inverse](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ValueInverseV2.lean/declarations/supported-record-inverse.md) | 54 | `result-track:d89eeae1b4dfcc674510f54cc358a09b0c158fbe2c8df1a7a91e04a4e8c34190` |
+| 1 | `theorem` | [valueOK_depth_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ValueInverseV2.lean/declarations/valueok-depth-le.md) | 5 | `result-track:8c6f0c208660635d0e1690b8cf32c5a4ea6032fb15288cf59c871672b0d7e668` |
+| 2 | `theorem` | [parse_value_suffix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ValueInverseV2.lean/declarations/parse-value-suffix.md) | 9 | `result-track:86550e95ef276f9f32683a709b32d6f356d6cd10a6b85248d8ade733f96a5013` |
+| 3 | `theorem` | [supported_record_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ValueInverseV2.lean/declarations/supported-record-inverse.md) | 54 | `result-track:d89eeae1b4dfcc674510f54cc358a09b0c158fbe2c8df1a7a91e04a4e8c34190` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

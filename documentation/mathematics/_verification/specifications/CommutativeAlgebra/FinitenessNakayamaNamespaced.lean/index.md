@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FinitenessNakayamaNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FinitenessNakayamaNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessNakayamaNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessNakayamaNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_sub_one_mem_and_smul_eq_zero_of_fg_of_le_smul](../../../../CommutativeAlgebra/FinitenessNakayamaNamespaced.lean/declarations/exists-sub-one-mem-and-smul-eq-zero-of-fg-of-le-smul.md) | 32 | `result-track:8f4417e7bd8e7426c4dc96248bfcd4a58593805085f8cfd0e0a806102899975a` |
-| 2 | `theorem` | [exists_mem_and_smul_eq_self_of_fg_of_le_smul](../../../../CommutativeAlgebra/FinitenessNakayamaNamespaced.lean/declarations/exists-mem-and-smul-eq-self-of-fg-of-le-smul.md) | 87 | `result-track:a20ad622b34281af1734fa216ef44f4834c2a99e4077eef6f1ba0b5c5fd8e3c1` |
+| 1 | `theorem` | [exists_sub_one_mem_and_smul_eq_zero_of_fg_of_le_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessNakayamaNamespaced.lean/declarations/exists-sub-one-mem-and-smul-eq-zero-of-fg-of-le-smul.md) | 32 | `result-track:8f4417e7bd8e7426c4dc96248bfcd4a58593805085f8cfd0e0a806102899975a` |
+| 2 | `theorem` | [exists_mem_and_smul_eq_self_of_fg_of_le_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessNakayamaNamespaced.lean/declarations/exists-mem-and-smul-eq-self-of-fg-of-le-smul.md) | 87 | `result-track:a20ad622b34281af1734fa216ef44f4834c2a99e4077eef6f1ba0b5c5fd8e3c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

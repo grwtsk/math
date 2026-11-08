@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleLemmasNamespaced.lean/index.md) · [Full source](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleLemmasNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleLemmasNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleLemmasNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [hasCentralRadical_and_of_isIrreducible_of_isFaithful](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleLemmasNamespaced.lean/declarations/hascentralradical-and-of-isirreducible-of-isfaithful.md) | 50 | `result-track:355d29cd313fc0f6a4cbc938c202a11ae1b2d43eac78992c0b968a272681f9cf` |
-| 2 | `theorem` | [hasTrivialRadical_and_of_isIrreducible_of_isFaithful](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleLemmasNamespaced.lean/declarations/hastrivialradical-and-of-isirreducible-of-isfaithful.md) | 75 | `result-track:e129370a265ba8f32aa415627d350586ca037752d075d81979ad546d14893474` |
+| 1 | `lemma` | [hasCentralRadical_and_of_isIrreducible_of_isFaithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleLemmasNamespaced.lean/declarations/hascentralradical-and-of-isirreducible-of-isfaithful.md) | 50 | `result-track:355d29cd313fc0f6a4cbc938c202a11ae1b2d43eac78992c0b968a272681f9cf` |
+| 2 | `theorem` | [hasTrivialRadical_and_of_isIrreducible_of_isFaithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleLemmasNamespaced.lean/declarations/hastrivialradical-and-of-isirreducible-of-isfaithful.md) | 75 | `result-track:e129370a265ba8f32aa415627d350586ca037752d075d81979ad546d14893474` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

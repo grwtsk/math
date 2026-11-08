@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/OrderLemmasExistsNotAndSuccOfNotZeroOfExists.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/OrderLemmasExistsNotAndSuccOfNotZeroOfExists.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderLemmasExistsNotAndSuccOfNotZeroOfExists.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderLemmasExistsNotAndSuccOfNotZeroOfExists.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Subtype.orderBot](../../../../../NumberTheory/ElementaryNumberTheory/OrderLemmasExistsNotAndSuccOfNotZeroOfExists.lean/declarations/subtype-orderbot.md) | 24 | `declaration-track:adb6de94f5e8bccf288306013531559702c406679af25d8fe9c2937b9e340e42` |
-| 2 | `instance` | [Subtype.semilatticeSup](../../../../../NumberTheory/ElementaryNumberTheory/OrderLemmasExistsNotAndSuccOfNotZeroOfExists.lean/declarations/subtype-semilatticesup.md) | 28 | `declaration-track:c48870403a9fb289412611a6d7e36a7f977446fd0774e6cd5a40ce5fc121fda1` |
-| 3 | `theorem` | [Subtype.coe_bot](../../../../../NumberTheory/ElementaryNumberTheory/OrderLemmasExistsNotAndSuccOfNotZeroOfExists.lean/declarations/subtype-coe-bot.md) | 31 | `result-track:eb421a1bef711af062513b1639484695de79306b518422e9b26aaf05581cfced` |
-| 4 | `theorem` | [set_eq_univ](../../../../../NumberTheory/ElementaryNumberTheory/OrderLemmasExistsNotAndSuccOfNotZeroOfExists.lean/declarations/set-eq-univ.md) | 35 | `result-track:8be098c777cef7650edb1ed135caa045c5b303fdc8668ab0f799afca8c057b10` |
-| 5 | `lemma` | [exists_not_and_succ_of_not_zero_of_exists](../../../../../NumberTheory/ElementaryNumberTheory/OrderLemmasExistsNotAndSuccOfNotZeroOfExists.lean/declarations/exists-not-and-succ-of-not-zero-of-exists.md) | 38 | `result-track:1a91230c82ebc70323116855d9e00610f70c286db041639bf3b3833e8422d780` |
+| 1 | `instance` | [Subtype.orderBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderLemmasExistsNotAndSuccOfNotZeroOfExists.lean/declarations/subtype-orderbot.md) | 24 | `declaration-track:adb6de94f5e8bccf288306013531559702c406679af25d8fe9c2937b9e340e42` |
+| 2 | `instance` | [Subtype.semilatticeSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderLemmasExistsNotAndSuccOfNotZeroOfExists.lean/declarations/subtype-semilatticesup.md) | 28 | `declaration-track:c48870403a9fb289412611a6d7e36a7f977446fd0774e6cd5a40ce5fc121fda1` |
+| 3 | `theorem` | [Subtype.coe_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderLemmasExistsNotAndSuccOfNotZeroOfExists.lean/declarations/subtype-coe-bot.md) | 31 | `result-track:eb421a1bef711af062513b1639484695de79306b518422e9b26aaf05581cfced` |
+| 4 | `theorem` | [set_eq_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderLemmasExistsNotAndSuccOfNotZeroOfExists.lean/declarations/set-eq-univ.md) | 35 | `result-track:8be098c777cef7650edb1ed135caa045c5b303fdc8668ab0f799afca8c057b10` |
+| 5 | `lemma` | [exists_not_and_succ_of_not_zero_of_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderLemmasExistsNotAndSuccOfNotZeroOfExists.lean/declarations/exists-not-and-succ-of-not-zero-of-exists.md) | 38 | `result-track:1a91230c82ebc70323116855d9e00610f70c286db041639bf3b3833e8422d780` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCorrelatedPaymentLowerFringe.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCorrelatedPaymentLowerFringe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCorrelatedPaymentLowerFringe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCorrelatedPaymentLowerFringe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [moebius_mangoldt_eq_neg_pointwise_log](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCorrelatedPaymentLowerFringe.lean/declarations/moebius-mangoldt-eq-neg-pointwise-log.md) | 35 | `result-track:23db3861954d471c5aa65a0d44716d145f397de1d36531c5d1fad4edf254ad24` |
-| 2 | `theorem` | [moebius_mul_vonMangoldt_apply](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCorrelatedPaymentLowerFringe.lean/declarations/moebius-mul-vonmangoldt-apply.md) | 53 | `result-track:096c95b8ced1c66ac6a1f3f7c7acfc55be6a48027a17eb19efa033fad9f5c86c` |
-| 3 | `theorem` | [samplingPaymentAt_eq_closed_moebius_sub_fringe](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCorrelatedPaymentLowerFringe.lean/declarations/samplingpaymentat-eq-closed-moebius-sub-fringe.md) | 61 | `result-track:d5585dee5047ebbfaf87cb5a64bdc75dc14b463a90e0456d6692a47f4c483c28` |
-| 4 | `theorem` | [jointSignedRemainder_eq_closed_payment_sub_fringe_and_physicalOff](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCorrelatedPaymentLowerFringe.lean/declarations/jointsignedremainder-eq-closed-payment-sub-fringe-and-physicaloff.md) | 107 | `result-track:05c34c6cc86b1a74d72835ef3663623ada5f973ee86a3b6c06ef7c638cb920f1` |
+| 1 | `theorem` | [moebius_mangoldt_eq_neg_pointwise_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCorrelatedPaymentLowerFringe.lean/declarations/moebius-mangoldt-eq-neg-pointwise-log.md) | 35 | `result-track:23db3861954d471c5aa65a0d44716d145f397de1d36531c5d1fad4edf254ad24` |
+| 2 | `theorem` | [moebius_mul_vonMangoldt_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCorrelatedPaymentLowerFringe.lean/declarations/moebius-mul-vonmangoldt-apply.md) | 53 | `result-track:096c95b8ced1c66ac6a1f3f7c7acfc55be6a48027a17eb19efa033fad9f5c86c` |
+| 3 | `theorem` | [samplingPaymentAt_eq_closed_moebius_sub_fringe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCorrelatedPaymentLowerFringe.lean/declarations/samplingpaymentat-eq-closed-moebius-sub-fringe.md) | 61 | `result-track:d5585dee5047ebbfaf87cb5a64bdc75dc14b463a90e0456d6692a47f4c483c28` |
+| 4 | `theorem` | [jointSignedRemainder_eq_closed_payment_sub_fringe_and_physicalOff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCorrelatedPaymentLowerFringe.lean/declarations/jointsignedremainder-eq-closed-payment-sub-fringe-and-physicaloff.md) | 107 | `result-track:05c34c6cc86b1a74d72835ef3663623ada5f973ee86a3b6c06ef7c638cb920f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

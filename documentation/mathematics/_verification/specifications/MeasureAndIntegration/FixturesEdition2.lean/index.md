@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FixturesEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FixturesEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FixturesEdition2.lean/declarations/example-source-edition-2.md) | 8 | `declaration-track:f9e20e8c5c33996a4ac9e912d673a53f2938f9fa3dec85ce1b93607b8172d236` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FixturesEdition2.lean/declarations/example.md) | 12 | `declaration-track:360975eef7084ea39c4e4a0d89fe7f7551470214960e8a57c6a8131fee7918db` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesEdition2.lean/declarations/example-source-edition-2.md) | 8 | `declaration-track:f9e20e8c5c33996a4ac9e912d673a53f2938f9fa3dec85ce1b93607b8172d236` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesEdition2.lean/declarations/example.md) | 12 | `declaration-track:360975eef7084ea39c4e4a0d89fe7f7551470214960e8a57c6a8131fee7918db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

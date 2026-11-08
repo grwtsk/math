@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Real.RationalTentCorrectionPrefixExact`](../../../../MeasureAndIntegration/RationalTentCorrectionPrefixExact.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalPositiveTuringCorrectionMargin`](../../../../NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Real.RationalTentCorrectionPrefixExact`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RationalTentCorrectionPrefixExact.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalPositiveTuringCorrectionMargin`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [squarePrefixValueQ](../../../../NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/declarations/squareprefixvalueq.md) | 49 | `declaration-track:da2e6ee061a5105a45a9e845509d994da2fadb070b10b301a3fe077a4ccbdd3c` |
-| 2 | `def` | [verifySquareExact](../../../../NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/declarations/verifysquareexact.md) | 54 | `declaration-track:e8e73db36111f056b4e6e124513897f1fb20a47db937cc75159b7401b1183f4a` |
-| 3 | `theorem` | [squarePrefixValueQ_exact](../../../../NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/declarations/squareprefixvalueq-exact.md) | 60 | `result-track:8dd4780066b4fd0e5dd16dbff740966e94cb168f22892b6f3abff788a5f7c8bb` |
-| 4 | `theorem` | [verified_square_exact_correction_lower](../../../../NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/declarations/verified-square-exact-correction-lower.md) | 72 | `result-track:93b815ad94b71b0a61682fd7c46272bdb4136d87df8403e3cef64617c4c0e67a` |
-| 5 | `theorem` | [verified_square_exact_correction_floor](../../../../NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/declarations/verified-square-exact-correction-floor.md) | 88 | `result-track:37b46ccdd1993f4b1117049678c8c0956f75030b5a6050e3dc7d38932ef78405` |
-| 6 | `theorem` | [prime_in_square_of_exact_prefix_claimed_endpoints](../../../../NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/declarations/prime-in-square-of-exact-prefix-claimed-endpoints.md) | 98 | `result-track:e64757dab6e816bdf3e7cffc5e7906ce34dfac24335db99213a6abaa6e62127e` |
-| 7 | `theorem` | [prime_in_square_of_exact_prefix_thresholds](../../../../NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/declarations/prime-in-square-of-exact-prefix-thresholds.md) | 132 | `result-track:711f9739ef5d0eddeb0ab9c4c25c9ca76674912896e22873f03ee4262dc495f2` |
-| 8 | `theorem` | [exact_prefix_zero_margin_not_strict_fixture](../../../../NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/declarations/exact-prefix-zero-margin-not-strict-fixture.md) | 162 | `result-track:27305eafc74f9b749d48e2683fd4d60d00334b7ceff366a0a5a62d50bf76a98b` |
+| 1 | `def` | [squarePrefixValueQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/declarations/squareprefixvalueq.md) | 49 | `declaration-track:da2e6ee061a5105a45a9e845509d994da2fadb070b10b301a3fe077a4ccbdd3c` |
+| 2 | `def` | [verifySquareExact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/declarations/verifysquareexact.md) | 54 | `declaration-track:e8e73db36111f056b4e6e124513897f1fb20a47db937cc75159b7401b1183f4a` |
+| 3 | `theorem` | [squarePrefixValueQ_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/declarations/squareprefixvalueq-exact.md) | 60 | `result-track:8dd4780066b4fd0e5dd16dbff740966e94cb168f22892b6f3abff788a5f7c8bb` |
+| 4 | `theorem` | [verified_square_exact_correction_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/declarations/verified-square-exact-correction-lower.md) | 72 | `result-track:93b815ad94b71b0a61682fd7c46272bdb4136d87df8403e3cef64617c4c0e67a` |
+| 5 | `theorem` | [verified_square_exact_correction_floor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/declarations/verified-square-exact-correction-floor.md) | 88 | `result-track:37b46ccdd1993f4b1117049678c8c0956f75030b5a6050e3dc7d38932ef78405` |
+| 6 | `theorem` | [prime_in_square_of_exact_prefix_claimed_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/declarations/prime-in-square-of-exact-prefix-claimed-endpoints.md) | 98 | `result-track:e64757dab6e816bdf3e7cffc5e7906ce34dfac24335db99213a6abaa6e62127e` |
+| 7 | `theorem` | [prime_in_square_of_exact_prefix_thresholds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/declarations/prime-in-square-of-exact-prefix-thresholds.md) | 132 | `result-track:711f9739ef5d0eddeb0ab9c4c25c9ca76674912896e22873f03ee4262dc495f2` |
+| 8 | `theorem` | [exact_prefix_zero_margin_not_strict_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringExactCorrectionMargin.lean/declarations/exact-prefix-zero-margin-not-strict-fixture.md) | 162 | `result-track:27305eafc74f9b749d48e2683fd4d60d00334b7ceff366a0a5a62d50bf76a98b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

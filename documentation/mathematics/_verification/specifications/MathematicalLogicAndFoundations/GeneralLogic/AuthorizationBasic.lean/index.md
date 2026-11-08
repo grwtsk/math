@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [MayAct](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/declarations/mayact.md) | 5 | `declaration-track:04c55afb0b95bad89b7b7a0816add6286f40518218d3291b9a7d308fef9e1d83` |
-| 2 | `theorem` | [requires_authentication](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/declarations/requires-authentication.md) | 10 | `result-track:d497d51e8241be6880366ae71917e97d81b75f9b5ef05f585b0379f13a09570b` |
-| 3 | `theorem` | [revocation_blocks](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/declarations/revocation-blocks.md) | 18 | `result-track:a7fd73858d1b8c695b76d73b567925883831942a8ad17c0037ecf11e080f57f9` |
-| 4 | `theorem` | [no_authority_expansion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/declarations/no-authority-expansion.md) | 27 | `result-track:fdb3d2bbcd41fce50abc5864d91d595baebe139fa39815bbd3fff12b6690477c` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/declarations/example.md) | 37 | `declaration-track:0ea1b71193cf95d84ca1359c1d19db87c36d8d8ebe67381811e3ae8ae82dbaa0` |
-| 6 | `structure` | [ApprovalJudgments](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/declarations/approvaljudgments.md) | 49 | `declaration-track:c050e06bde3c105a6354006dffc5dbaf5d154e000b0b9db52cb92c114009eb65` |
-| 7 | `theorem` | [mathematical_judgments_do_not_force_operational_or_public](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/declarations/mathematical-judgments-do-not-force-operational-or-public.md) | 57 | `result-track:2820f496bd73c3e20c7409f5b2e12c9886feb2f894649c581e97ad9e502b8428` |
-| 8 | `theorem` | [investigation_admission_is_not_truth](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/declarations/investigation-admission-is-not-truth.md) | 66 | `result-track:515739cf838dbe4e98a518a99214a11639fb605e99b07aaf840c7e03696934ae` |
-| 9 | `theorem` | [accepted_entailment](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/declarations/accepted-entailment.md) | 72 | `result-track:3c29dc032f7c855e4b0f7fcae9097da77c7648777842992c44574b3941447171` |
+| 1 | `def` | [MayAct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/declarations/mayact.md) | 5 | `declaration-track:04c55afb0b95bad89b7b7a0816add6286f40518218d3291b9a7d308fef9e1d83` |
+| 2 | `theorem` | [requires_authentication](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/declarations/requires-authentication.md) | 10 | `result-track:d497d51e8241be6880366ae71917e97d81b75f9b5ef05f585b0379f13a09570b` |
+| 3 | `theorem` | [revocation_blocks](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/declarations/revocation-blocks.md) | 18 | `result-track:a7fd73858d1b8c695b76d73b567925883831942a8ad17c0037ecf11e080f57f9` |
+| 4 | `theorem` | [no_authority_expansion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/declarations/no-authority-expansion.md) | 27 | `result-track:fdb3d2bbcd41fce50abc5864d91d595baebe139fa39815bbd3fff12b6690477c` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/declarations/example.md) | 37 | `declaration-track:0ea1b71193cf95d84ca1359c1d19db87c36d8d8ebe67381811e3ae8ae82dbaa0` |
+| 6 | `structure` | [ApprovalJudgments](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/declarations/approvaljudgments.md) | 49 | `declaration-track:c050e06bde3c105a6354006dffc5dbaf5d154e000b0b9db52cb92c114009eb65` |
+| 7 | `theorem` | [mathematical_judgments_do_not_force_operational_or_public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/declarations/mathematical-judgments-do-not-force-operational-or-public.md) | 57 | `result-track:2820f496bd73c3e20c7409f5b2e12c9886feb2f894649c581e97ad9e502b8428` |
+| 8 | `theorem` | [investigation_admission_is_not_truth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/declarations/investigation-admission-is-not-truth.md) | 66 | `result-track:515739cf838dbe4e98a518a99214a11639fb605e99b07aaf840c7e03696934ae` |
+| 9 | `theorem` | [accepted_entailment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorizationBasic.lean/declarations/accepted-entailment.md) | 72 | `result-track:3c29dc032f7c855e4b0f7fcae9097da77c7648777842992c44574b3941447171` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

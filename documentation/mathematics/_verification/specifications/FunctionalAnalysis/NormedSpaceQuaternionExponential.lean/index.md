@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/index.md) · [Full source](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exp_coe](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/declarations/exp-coe.md) | 33 | `result-track:b564d44ea34bc7c456f41f86f0ebf14ad6769533f40cc526a6abdefaa0c35a71` |
-| 2 | `macro_rules` | [(anonymous)](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/declarations/macro-rules.md) | 37 | `declaration-track:834c524431ef9414bca7ce9189f980943909f63333b158d86473a1b94deca089` |
-| 3 | `theorem` | [hasSum_expSeries_of_imaginary](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/declarations/hassum-expseries-of-imaginary.md) | 41 | `result-track:bfb577eeb7fea693360fbfc7eab157bde765e2eb362146e49f8c2554e6f22f38` |
-| 4 | `theorem` | [exp_of_re_eq_zero](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/declarations/exp-of-re-eq-zero.md) | 92 | `result-track:6b5958316c0672e0f0a5051fc37610a5231f5eae1d19e4da21036ea8c329a87a` |
-| 5 | `theorem` | [exp_eq](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/declarations/exp-eq.md) | 101 | `result-track:548e219f2e400d559749a11d1628b1ea88b3d0fb1cfcbc94d6cef649c1092efc` |
-| 6 | `theorem` | [re_exp](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/declarations/re-exp.md) | 108 | `result-track:ad67ff7c0395e3720b14b82819391b37d0f9755bab033119c284390c4a09ecf1` |
-| 7 | `theorem` | [im_exp](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/declarations/im-exp.md) | 111 | `result-track:eb3a4f3f6de648b9986d90a21b8eeadc00809305178f3cdf563217b274e293c3` |
-| 8 | `theorem` | [normSq_exp](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/declarations/normsq-exp.md) | 115 | `result-track:c53f21df388b9249f0bade33620aa84a447deaeb05ee4584b56c56bf9157b4d7` |
-| 9 | `theorem` | [norm_exp](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/declarations/norm-exp.md) | 136 | `result-track:fe208e0a8f44fca2924f3e21ca18b159eeea48d31cde6a687a29581b585e6abe` |
+| 1 | `theorem` | [exp_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/declarations/exp-coe.md) | 33 | `result-track:b564d44ea34bc7c456f41f86f0ebf14ad6769533f40cc526a6abdefaa0c35a71` |
+| 2 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/declarations/macro-rules.md) | 37 | `declaration-track:834c524431ef9414bca7ce9189f980943909f63333b158d86473a1b94deca089` |
+| 3 | `theorem` | [hasSum_expSeries_of_imaginary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/declarations/hassum-expseries-of-imaginary.md) | 41 | `result-track:bfb577eeb7fea693360fbfc7eab157bde765e2eb362146e49f8c2554e6f22f38` |
+| 4 | `theorem` | [exp_of_re_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/declarations/exp-of-re-eq-zero.md) | 92 | `result-track:6b5958316c0672e0f0a5051fc37610a5231f5eae1d19e4da21036ea8c329a87a` |
+| 5 | `theorem` | [exp_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/declarations/exp-eq.md) | 101 | `result-track:548e219f2e400d559749a11d1628b1ea88b3d0fb1cfcbc94d6cef649c1092efc` |
+| 6 | `theorem` | [re_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/declarations/re-exp.md) | 108 | `result-track:ad67ff7c0395e3720b14b82819391b37d0f9755bab033119c284390c4a09ecf1` |
+| 7 | `theorem` | [im_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/declarations/im-exp.md) | 111 | `result-track:eb3a4f3f6de648b9986d90a21b8eeadc00809305178f3cdf563217b274e293c3` |
+| 8 | `theorem` | [normSq_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/declarations/normsq-exp.md) | 115 | `result-track:c53f21df388b9249f0bade33620aa84a447deaeb05ee4584b56c56bf9157b4d7` |
+| 9 | `theorem` | [norm_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponential.lean/declarations/norm-exp.md) | 136 | `result-track:fe208e0a8f44fca2924f3e21ca18b159eeea48d31cde6a687a29581b585e6abe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

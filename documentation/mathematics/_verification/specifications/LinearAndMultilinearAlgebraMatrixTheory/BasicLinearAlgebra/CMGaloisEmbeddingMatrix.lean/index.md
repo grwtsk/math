@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEmbeddingMatrix.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEmbeddingMatrix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEmbeddingMatrix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEmbeddingMatrix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.Hodge.CMRegularBaseChange`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMRegularBaseChange.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.Hodge.CMRegularBaseChange`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMRegularBaseChange.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.RingTheory.Discriminant` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.FieldTheory.Galois.Basic` — import line 7; external provider; requires a separately pinned dependency.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [galIndexEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEmbeddingMatrix.lean/declarations/galindexequiv.md) | 35 | `declaration-track:fab1703ffa91c5a89481d5604d0ede401176f1ed9b376bef54b40faf49a1171a` |
-| 2 | `def` | [embeddingMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEmbeddingMatrix.lean/declarations/embeddingmatrix.md) | 41 | `declaration-track:38318e317813ffde066f3f5ab6a4be023be4616a0798856fcd7106fd0671778d` |
-| 3 | `theorem` | [embeddingMatrix_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEmbeddingMatrix.lean/declarations/embeddingmatrix-apply.md) | 46 | `result-track:dfb67d8eec8529ea0e287d6d5924284ee556e9e573fe5236bd6a3ef5a1c7e957` |
-| 4 | `theorem` | [traceMatrix_map_eq_mul_trans](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEmbeddingMatrix.lean/declarations/tracematrix-map-eq-mul-trans.md) | 52 | `result-track:55cb8c9a6f5fe7e34dedebc5f0c5af64a4180b7b55da6e4d24f43333426369ad` |
-| 5 | `theorem` | [embeddingMatrix_det_ne_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEmbeddingMatrix.lean/declarations/embeddingmatrix-det-ne-zero.md) | 64 | `result-track:d96c39c29d88005fe4d10fd15210831ea2f0722f050e6f26007c1f94dbbc74b0` |
+| 1 | `def` | [galIndexEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEmbeddingMatrix.lean/declarations/galindexequiv.md) | 35 | `declaration-track:fab1703ffa91c5a89481d5604d0ede401176f1ed9b376bef54b40faf49a1171a` |
+| 2 | `def` | [embeddingMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEmbeddingMatrix.lean/declarations/embeddingmatrix.md) | 41 | `declaration-track:38318e317813ffde066f3f5ab6a4be023be4616a0798856fcd7106fd0671778d` |
+| 3 | `theorem` | [embeddingMatrix_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEmbeddingMatrix.lean/declarations/embeddingmatrix-apply.md) | 46 | `result-track:dfb67d8eec8529ea0e287d6d5924284ee556e9e573fe5236bd6a3ef5a1c7e957` |
+| 4 | `theorem` | [traceMatrix_map_eq_mul_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEmbeddingMatrix.lean/declarations/tracematrix-map-eq-mul-trans.md) | 52 | `result-track:55cb8c9a6f5fe7e34dedebc5f0c5af64a4180b7b55da6e4d24f43333426369ad` |
+| 5 | `theorem` | [embeddingMatrix_det_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEmbeddingMatrix.lean/declarations/embeddingmatrix-det-ne-zero.md) | 64 | `result-track:d96c39c29d88005fe4d10fd15210831ea2f0722f050e6f26007c1f94dbbc74b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

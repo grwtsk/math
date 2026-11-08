@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative36.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative36.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative36.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative36.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [thetaPhiJetPolynomial](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative36.lean/declarations/thetaphijetpolynomial.md) | 25 | `declaration-track:4fa24c8581e88ad62852bb5a583a974f46153dd4108237936f2e96afc791e29e` |
-| 2 | `theorem` | [thetaPhiJetPolynomial_abs_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative36.lean/declarations/thetaphijetpolynomial-abs-le.md) | 34 | `result-track:2bdec8dd1ad34ab6a3562b593cea9048178d75cb526aae8811f3de8822ef6598` |
-| 3 | `def` | [thetaPhiJetDet](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative36.lean/declarations/thetaphijetdet.md) | 51 | `declaration-track:68278999cf59061c32e8dbaf4e091ff758ad2d37e00c6977e18e81b789a8fe80` |
-| 4 | `theorem` | [thetaPhiJetDet_eq_matrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative36.lean/declarations/thetaphijetdet-eq-matrix.md) | 56 | `result-track:18649b9c56eb7e5ed0b56147f40bca2873fc7714d0238acbfb6b044c276dc819` |
-| 5 | `theorem` | [thetaPhiJetDet_two_modes_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative36.lean/declarations/thetaphijetdet-two-modes-le.md) | 64 | `result-track:582540911df6faf0843556069a2e470d0f17c8584b34c318ce0da10f1e94936f` |
+| 1 | `def` | [thetaPhiJetPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative36.lean/declarations/thetaphijetpolynomial.md) | 25 | `declaration-track:4fa24c8581e88ad62852bb5a583a974f46153dd4108237936f2e96afc791e29e` |
+| 2 | `theorem` | [thetaPhiJetPolynomial_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative36.lean/declarations/thetaphijetpolynomial-abs-le.md) | 34 | `result-track:2bdec8dd1ad34ab6a3562b593cea9048178d75cb526aae8811f3de8822ef6598` |
+| 3 | `def` | [thetaPhiJetDet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative36.lean/declarations/thetaphijetdet.md) | 51 | `declaration-track:68278999cf59061c32e8dbaf4e091ff758ad2d37e00c6977e18e81b789a8fe80` |
+| 4 | `theorem` | [thetaPhiJetDet_eq_matrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative36.lean/declarations/thetaphijetdet-eq-matrix.md) | 56 | `result-track:18649b9c56eb7e5ed0b56147f40bca2873fc7714d0238acbfb6b044c276dc819` |
+| 5 | `theorem` | [thetaPhiJetDet_two_modes_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative36.lean/declarations/thetaphijetdet-two-modes-le.md) | 64 | `result-track:582540911df6faf0843556069a2e470d0f17c8584b34c318ce0da10f1e94936f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

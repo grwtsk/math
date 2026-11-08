@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpNamespacedPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [FinStronglyMeasurable.exists_measurableSet_measure_pos_lt_top](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpNamespacedPublic.lean/declarations/finstronglymeasurable-exists-measurableset-measure-pos-lt-top.md) | 31 | `result-track:62e8cde3609593ed2d4c19cd5ef04ce2f5677ab5ad0f58c0d756e2ce6cb48475` |
-| 2 | `lemma` | [AEFinStronglyMeasurable.exists_measurableSet_measure_pos_lt_top](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpNamespacedPublic.lean/declarations/aefinstronglymeasurable-exists-measurableset-measure-pos-lt-top.md) | 45 | `result-track:4048f21402be1f0749540cf04ca517e02b4fa93a2f397cbc48303f255008eb9c` |
-| 3 | `lemma` | [nontrivial_Lp_real_of_nontrivial_Lp](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpNamespacedPublic.lean/declarations/nontrivial-lp-real-of-nontrivial-lp.md) | 53 | `result-track:df05447a88543b0145f504d690575517746f3f60e07ceeea2d761e281b9c3291` |
-| 4 | `lemma` | [completeSpace_of_completeSpace_Lp](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpNamespacedPublic.lean/declarations/completespace-of-completespace-lp.md) | 88 | `result-track:ab69eb81aca7fb256bcd6c5a68c5331608ff38bddb8f6a2573888272a52d9f28` |
+| 1 | `lemma` | [FinStronglyMeasurable.exists_measurableSet_measure_pos_lt_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpNamespacedPublic.lean/declarations/finstronglymeasurable-exists-measurableset-measure-pos-lt-top.md) | 31 | `result-track:62e8cde3609593ed2d4c19cd5ef04ce2f5677ab5ad0f58c0d756e2ce6cb48475` |
+| 2 | `lemma` | [AEFinStronglyMeasurable.exists_measurableSet_measure_pos_lt_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpNamespacedPublic.lean/declarations/aefinstronglymeasurable-exists-measurableset-measure-pos-lt-top.md) | 45 | `result-track:4048f21402be1f0749540cf04ca517e02b4fa93a2f397cbc48303f255008eb9c` |
+| 3 | `lemma` | [nontrivial_Lp_real_of_nontrivial_Lp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpNamespacedPublic.lean/declarations/nontrivial-lp-real-of-nontrivial-lp.md) | 53 | `result-track:df05447a88543b0145f504d690575517746f3f60e07ceeea2d761e281b9c3291` |
+| 4 | `lemma` | [completeSpace_of_completeSpace_Lp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpNamespacedPublic.lean/declarations/completespace-of-completespace-lp.md) | 88 | `result-track:ab69eb81aca7fb256bcd6c5a68c5331608ff38bddb8f6a2573888272a52d9f28` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

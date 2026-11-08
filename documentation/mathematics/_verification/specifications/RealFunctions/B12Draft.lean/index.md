@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/B12Draft.lean/index.md) · [Full source](../../../../RealFunctions/B12Draft.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/B12Draft.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/B12Draft.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [deriv_thetaPhi_poly_integrableOn](../../../../RealFunctions/B12Draft.lean/declarations/deriv-thetaphi-poly-integrableon.md) | 2 | `result-track:26b8a752dd7d268ba0cf3ebd6c06eb64e4c39e87bac31a5a5d3791581f5f575b` |
-| 2 | `theorem` | [thetaPhi_deriv_mul_sub_integrableOn](../../../../RealFunctions/B12Draft.lean/declarations/thetaphi-deriv-mul-sub-integrableon.md) | 13 | `result-track:9840ce0473887197f185de2025e716845dfce6c29a50af9164cb61f3a283d5d0` |
+| 1 | `theorem` | [deriv_thetaPhi_poly_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/B12Draft.lean/declarations/deriv-thetaphi-poly-integrableon.md) | 2 | `result-track:26b8a752dd7d268ba0cf3ebd6c06eb64e4c39e87bac31a5a5d3791581f5f575b` |
+| 2 | `theorem` | [thetaPhi_deriv_mul_sub_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/B12Draft.lean/declarations/thetaphi-deriv-mul-sub-integrableon.md) | 13 | `result-track:9840ce0473887197f185de2025e716845dfce6c29a50af9164cb61f3a283d5d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

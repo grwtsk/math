@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quotient_span_eq_top_iff_span_eq_top](../../../../CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/declarations/quotient-span-eq-top-iff-span-eq-top.md) | 44 | `result-track:efc0ccf5387a902ee644c9e995c2a10578a24e31175beb9163f2ea228386c433` |
-| 2 | `theorem` | [finrank_quotient_map](../../../../CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/declarations/finrank-quotient-map.md) | 73 | `result-track:f717ce504516b935d1c9267d7b92fff4e538fbd6a9d64a471e7d65732eb782d9` |
-| 3 | `def` | [basisQuotient](../../../../CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/declarations/basisquotient.md) | 92 | `declaration-track:1e6b49fb57a55e2368183a66e736dc66532905631e131d2e2bdbcfc1a492f2af` |
-| 4 | `lemma` | [basisQuotient_apply](../../../../CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/declarations/basisquotient-apply.md) | 99 | `result-track:03d7b4ce693c17953998727a42686a77e2bb8dc6d7a2bd84424afbcec1e0ac24` |
-| 5 | `lemma` | [basisQuotient_repr](../../../../CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/declarations/basisquotient-repr.md) | 104 | `result-track:125fb6240427c06e310994561238e7e28cb69dd44e25395654e001eb45744372` |
-| 6 | `lemma` | [exists_maximalIdeal_pow_le_of_isArtinianRing_quotient](../../../../CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/declarations/exists-maximalideal-pow-le-of-isartinianring-quotient.md) | 118 | `result-track:274d77c5caca202c426924fb9d4a0645d761354296e1bf6903518004ceb665fa` |
-| 7 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/declarations/instance.md) | 134 | `declaration-track:78e9f395a8dacd5a304b873c8a46f08f0a0bfc4197bedcc5ed55067b054dcd49` |
-| 8 | `lemma` | [finite_quotient_iff](../../../../CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/declarations/finite-quotient-iff.md) | 139 | `result-track:53c6b97f24c358f1a7f3fc7ff0a62cb71c93e73c358b1a5cf3f9901971967742` |
+| 1 | `theorem` | [quotient_span_eq_top_iff_span_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/declarations/quotient-span-eq-top-iff-span-eq-top.md) | 44 | `result-track:efc0ccf5387a902ee644c9e995c2a10578a24e31175beb9163f2ea228386c433` |
+| 2 | `theorem` | [finrank_quotient_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/declarations/finrank-quotient-map.md) | 73 | `result-track:f717ce504516b935d1c9267d7b92fff4e538fbd6a9d64a471e7d65732eb782d9` |
+| 3 | `def` | [basisQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/declarations/basisquotient.md) | 92 | `declaration-track:1e6b49fb57a55e2368183a66e736dc66532905631e131d2e2bdbcfc1a492f2af` |
+| 4 | `lemma` | [basisQuotient_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/declarations/basisquotient-apply.md) | 99 | `result-track:03d7b4ce693c17953998727a42686a77e2bb8dc6d7a2bd84424afbcec1e0ac24` |
+| 5 | `lemma` | [basisQuotient_repr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/declarations/basisquotient-repr.md) | 104 | `result-track:125fb6240427c06e310994561238e7e28cb69dd44e25395654e001eb45744372` |
+| 6 | `lemma` | [exists_maximalIdeal_pow_le_of_isArtinianRing_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/declarations/exists-maximalideal-pow-le-of-isartinianring-quotient.md) | 118 | `result-track:274d77c5caca202c426924fb9d4a0645d761354296e1bf6903518004ceb665fa` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/declarations/instance.md) | 134 | `declaration-track:78e9f395a8dacd5a304b873c8a46f08f0a0bfc4197bedcc5ed55067b054dcd49` |
+| 8 | `lemma` | [finite_quotient_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingQuotientNamespacedPublic.lean/declarations/finite-quotient-iff.md) | 139 | `result-track:53c6b97f24c358f1a7f3fc7ff0a62cb71c93e73c358b1a5cf3f9901971967742` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

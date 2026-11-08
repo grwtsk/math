@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/index.md) · [Full source](../../../../GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [IsObtainable](../../../../GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/declarations/isobtainable.md) | 66 | `declaration-track:15f4cfcdf5f5825f5a947ece0a15ed91e4f646b64426827057bda1b627d49ed8` |
-| 2 | `theorem` | [kckc_idem](../../../../GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/declarations/kckc-idem.md) | 76 | `result-track:8f4a698d915aa121aa3c673cdafb179ff2eb408ec735e6c536c448f9b64284d1` |
-| 3 | `theorem` | [kckckck_eq_kck](../../../../GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/declarations/kckckck-eq-kck.md) | 79 | `result-track:2d2f28b9296741424d9ca734e107de73b517fca087e978b73a6e4cbe795e18ec` |
-| 4 | `def` | [theFourteen](../../../../GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/declarations/thefourteen.md) | 83 | `declaration-track:eaa1b2cfe23d0b7aa280c3a41d2ad5eca64feb6755a575756a0d31e4d6658759` |
-| 5 | `theorem` | [card_theFourteen](../../../../GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/declarations/card-thefourteen.md) | 89 | `result-track:01f49442946285c42db7c2824c8933ac1a8258c83c99866761da585d09d03a8e` |
-| 6 | `theorem` | [IsObtainable.mem_theFourteen](../../../../GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/declarations/isobtainable-mem-thefourteen.md) | 93 | `result-track:5cc69f630d56a7197df3767a9a09a39f417be1a21453845629d49d4916198046` |
-| 7 | `theorem` | [mem_theFourteen_iff_isObtainable](../../../../GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/declarations/mem-thefourteen-iff-isobtainable.md) | 99 | `result-track:07641fe0fcc18f497fb91eae701b8735f969a9bedf62701489d0f53547621a06` |
-| 8 | `theorem` | [ncard_isObtainable_le_fourteen](../../../../GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/declarations/ncard-isobtainable-le-fourteen.md) | 115 | `result-track:eeb3bce4fde303fb274ae03d210eb3f7d5fb9f893ba4370d996883e8a07224b0` |
+| 1 | `inductive` | [IsObtainable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/declarations/isobtainable.md) | 66 | `declaration-track:15f4cfcdf5f5825f5a947ece0a15ed91e4f646b64426827057bda1b627d49ed8` |
+| 2 | `theorem` | [kckc_idem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/declarations/kckc-idem.md) | 76 | `result-track:8f4a698d915aa121aa3c673cdafb179ff2eb408ec735e6c536c448f9b64284d1` |
+| 3 | `theorem` | [kckckck_eq_kck](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/declarations/kckckck-eq-kck.md) | 79 | `result-track:2d2f28b9296741424d9ca734e107de73b517fca087e978b73a6e4cbe795e18ec` |
+| 4 | `def` | [theFourteen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/declarations/thefourteen.md) | 83 | `declaration-track:eaa1b2cfe23d0b7aa280c3a41d2ad5eca64feb6755a575756a0d31e4d6658759` |
+| 5 | `theorem` | [card_theFourteen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/declarations/card-thefourteen.md) | 89 | `result-track:01f49442946285c42db7c2824c8933ac1a8258c83c99866761da585d09d03a8e` |
+| 6 | `theorem` | [IsObtainable.mem_theFourteen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/declarations/isobtainable-mem-thefourteen.md) | 93 | `result-track:5cc69f630d56a7197df3767a9a09a39f417be1a21453845629d49d4916198046` |
+| 7 | `theorem` | [mem_theFourteen_iff_isObtainable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/declarations/mem-thefourteen-iff-isobtainable.md) | 99 | `result-track:07641fe0fcc18f497fb91eae701b8735f969a9bedf62701489d0f53547621a06` |
+| 8 | `theorem` | [ncard_isObtainable_le_fourteen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KuratowskiNamespacedPublicIsObtainable.lean/declarations/ncard-isobtainable-le-fourteen.md) | 115 | `result-track:eeb3bce4fde303fb274ae03d210eb3f7d5fb9f893ba4370d996883e8a07224b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

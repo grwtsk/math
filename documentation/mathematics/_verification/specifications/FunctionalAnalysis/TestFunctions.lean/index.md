@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/TestFunctions.lean/index.md) · [Full source](../../../../FunctionalAnalysis/TestFunctions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TestFunctions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TestFunctions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RHTestFunction](../../../../FunctionalAnalysis/TestFunctions.lean/declarations/rhtestfunction.md) | 26 | `declaration-track:5e965b8d0ca399db148da34b521cb601b6f541cb2a8768b3473719cb05e9945f` |
-| 2 | `theorem` | [rh_test_function_has_schwartz_map](../../../../FunctionalAnalysis/TestFunctions.lean/declarations/rh-test-function-has-schwartz-map.md) | 30 | `result-track:7db4eda18dbabf1f5fd606ef7aec43f333480b78a92ac281a96edc9a97e75540` |
+| 1 | `structure` | [RHTestFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TestFunctions.lean/declarations/rhtestfunction.md) | 26 | `declaration-track:5e965b8d0ca399db148da34b521cb601b6f541cb2a8768b3473719cb05e9945f` |
+| 2 | `theorem` | [rh_test_function_has_schwartz_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TestFunctions.lean/declarations/rh-test-function-has-schwartz-map.md) | 30 | `result-track:7db4eda18dbabf1f5fd606ef7aec43f333480b78a92ac281a96edc9a97e75540` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

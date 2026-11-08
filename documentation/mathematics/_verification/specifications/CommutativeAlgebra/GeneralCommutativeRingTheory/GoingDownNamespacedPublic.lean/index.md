@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Algebra.HasGoingDown](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/declarations/algebra-hasgoingdown.md) | 52 | `declaration-track:6ae9128a65fe1e2b68992d12654caa6df1f6a7b365c334ec8103b5f9d64d3ca1` |
-| 2 | `lemma` | [Ideal.exists_ideal_le_liesOver_of_le](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/declarations/ideal-exists-ideal-le-liesover-of-le.md) | 58 | `result-track:c95ab56986289b7fdc4fcc972d36fe8e89c39fefb8a02c83276e9ce5aa97bcbf` |
-| 3 | `lemma` | [Ideal.exists_ideal_lt_liesOver_of_lt](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/declarations/ideal-exists-ideal-lt-liesover-of-lt.md) | 69 | `result-track:156a78916dd794e6fd0de58ba2e2691928e1e23ff039632d7efc96c8e68fc4d7` |
-| 4 | `lemma` | [Ideal.exists_ltSeries_of_hasGoingDown](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/declarations/ideal-exists-ltseries-of-hasgoingdown.md) | 79 | `result-track:7bfde304df60a69296addc6079429fef5d46d5a5a0df3b99b2ae4d2c21433853` |
-| 5 | `lemma` | [iff_generalizingMap_primeSpectrumComap](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/declarations/iff-generalizingmap-primespectrumcomap.md) | 114 | `result-track:fed63f50a587fd5dd3cc578dc82a274c0908f31c236b200172272ed196ed306e` |
-| 6 | `lemma` | [trans](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/declarations/trans.md) | 133 | `result-track:b44415f6b128b249c7ec7db5baef8125bff31deb706ed3fa4067e733e1ff350e` |
-| 7 | `lemma` | [of_comap_localRingHom_surjective](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/declarations/of-comap-localringhom-surjective.md) | 144 | `result-track:0298451f1606cb3b348a7594de00a33a2078aa2d702599ac04462b3cff1ce1c3` |
-| 8 | `instance` | [of_flat](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/declarations/of-flat.md) | 162 | `declaration-track:46a9d5fa181ce8ebb0d1d11329d425c04b7d531e437e55609654319f136b2898` |
+| 1 | `class` | [Algebra.HasGoingDown](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/declarations/algebra-hasgoingdown.md) | 52 | `declaration-track:6ae9128a65fe1e2b68992d12654caa6df1f6a7b365c334ec8103b5f9d64d3ca1` |
+| 2 | `lemma` | [Ideal.exists_ideal_le_liesOver_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/declarations/ideal-exists-ideal-le-liesover-of-le.md) | 58 | `result-track:c95ab56986289b7fdc4fcc972d36fe8e89c39fefb8a02c83276e9ce5aa97bcbf` |
+| 3 | `lemma` | [Ideal.exists_ideal_lt_liesOver_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/declarations/ideal-exists-ideal-lt-liesover-of-lt.md) | 69 | `result-track:156a78916dd794e6fd0de58ba2e2691928e1e23ff039632d7efc96c8e68fc4d7` |
+| 4 | `lemma` | [Ideal.exists_ltSeries_of_hasGoingDown](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/declarations/ideal-exists-ltseries-of-hasgoingdown.md) | 79 | `result-track:7bfde304df60a69296addc6079429fef5d46d5a5a0df3b99b2ae4d2c21433853` |
+| 5 | `lemma` | [iff_generalizingMap_primeSpectrumComap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/declarations/iff-generalizingmap-primespectrumcomap.md) | 114 | `result-track:fed63f50a587fd5dd3cc578dc82a274c0908f31c236b200172272ed196ed306e` |
+| 6 | `lemma` | [trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/declarations/trans.md) | 133 | `result-track:b44415f6b128b249c7ec7db5baef8125bff31deb706ed3fa4067e733e1ff350e` |
+| 7 | `lemma` | [of_comap_localRingHom_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/declarations/of-comap-localringhom-surjective.md) | 144 | `result-track:0298451f1606cb3b348a7594de00a33a2078aa2d702599ac04462b3cff1ce1c3` |
+| 8 | `instance` | [of_flat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownNamespacedPublic.lean/declarations/of-flat.md) | 162 | `declaration-track:46a9d5fa181ce8ebb0d1d11329d425c04b7d531e437e55609654319f136b2898` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

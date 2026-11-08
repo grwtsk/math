@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AdmissibilityProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/declarations/admissibilityprofile.md) | 21 | `declaration-track:d033e45001b0ec55cda957f008914e158c6932510a462bf298fabb43c5a08491` |
-| 2 | `def` | [NodeAdmissible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/declarations/nodeadmissible.md) | 31 | `declaration-track:a43b9dcbffc6ee01b6a2fd96c394b5a64783027413a34cd2cb4b92159ad69fd5` |
-| 3 | `def` | [EdgeAdmissible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/declarations/edgeadmissible.md) | 37 | `declaration-track:97450f2ad156e55db4c554ab8648144dcc66153fb1835f517c956ea9fd64d8b1` |
-| 4 | `def` | [ArcAdmissible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/declarations/arcadmissible.md) | 43 | `declaration-track:400ddc06f264564a7bc36b12584ccfd7e83312470fb754aba1c0b90de20a5ae9` |
-| 5 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/declarations/instance.md) | 49 | `declaration-track:0a5ec8b8304302eb96d8f85d3d08261a105f5196c39207385c0e7f6b9466b213` |
-| 6 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/declarations/instance-source-edition-3.md) | 58 | `declaration-track:fd696a040b1f5a8b225eb8b892794705888cf1c82dde8124ef8a20f15d388eba` |
-| 7 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/declarations/instance-source-edition-2.md) | 67 | `declaration-track:160e2807651ead6c9a7b282b7b5884f233345e8f88014607cfba5353ef3cb0f3` |
-| 8 | `theorem` | [ArcAdmissible.endpoints](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/declarations/arcadmissible-endpoints.md) | 76 | `result-track:eb576881602f3c57f7b5e8527e279f03dd136faabf8a7c863d23bc7313328bd8` |
+| 1 | `structure` | [AdmissibilityProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/declarations/admissibilityprofile.md) | 21 | `declaration-track:d033e45001b0ec55cda957f008914e158c6932510a462bf298fabb43c5a08491` |
+| 2 | `def` | [NodeAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/declarations/nodeadmissible.md) | 31 | `declaration-track:a43b9dcbffc6ee01b6a2fd96c394b5a64783027413a34cd2cb4b92159ad69fd5` |
+| 3 | `def` | [EdgeAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/declarations/edgeadmissible.md) | 37 | `declaration-track:97450f2ad156e55db4c554ab8648144dcc66153fb1835f517c956ea9fd64d8b1` |
+| 4 | `def` | [ArcAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/declarations/arcadmissible.md) | 43 | `declaration-track:400ddc06f264564a7bc36b12584ccfd7e83312470fb754aba1c0b90de20a5ae9` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/declarations/instance.md) | 49 | `declaration-track:0a5ec8b8304302eb96d8f85d3d08261a105f5196c39207385c0e7f6b9466b213` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/declarations/instance-source-edition-3.md) | 58 | `declaration-track:fd696a040b1f5a8b225eb8b892794705888cf1c82dde8124ef8a20f15d388eba` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/declarations/instance-source-edition-2.md) | 67 | `declaration-track:160e2807651ead6c9a7b282b7b5884f233345e8f88014607cfba5353ef3cb0f3` |
+| 8 | `theorem` | [ArcAdmissible.endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmissibilityNamespaced.lean/declarations/arcadmissible-endpoints.md) | 76 | `result-track:eb576881602f3c57f7b5e8527e279f03dd136faabf8a7c863d23bc7313328bd8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

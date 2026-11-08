@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/index.md) · [Full source](../../../../MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenFourierActionFrame`](../../../../MeasureAndIntegration/DyadicGreenFourierActionFrame.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenFourierActionFrame`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenFourierActionFrame.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.Fourier.AddCircle` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasSum_prod_fourierCoeff_unitCircle](../../../../MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/hassum-prod-fouriercoeff-unitcircle.md) | 42 | `result-track:9460855a4f8d69dc491239a312ff82d32b4d50945205db7d69edeed9a9de06e4` |
-| 2 | `theorem` | [hasSum_prod_fourierCoeffOn_unit](../../../../MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/hassum-prod-fouriercoeffon-unit.md) | 57 | `result-track:5ccff49be2ce1dae88673c2d3ec4e22aa88ea3af6e3511278180d1745ed7274c` |
-| 3 | `theorem` | [complexTestSlope_memLp_Ioc](../../../../MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/complextestslope-memlp-ioc.md) | 85 | `result-track:433fa7f14e3aa83f1a2e790d4349c141a3075d239ab5104a855f7d1078ef2f0b` |
-| 4 | `def` | [complexTestSlopeFourierCoeff](../../../../MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/complextestslopefouriercoeff.md) | 117 | `declaration-track:54e9bd65fe7e1e78d787c4cf24539c9080269a0eaa5b59224e0003458fa0c300` |
-| 5 | `def` | [greenPolarizedFourierTerm](../../../../MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/greenpolarizedfourierterm.md) | 122 | `declaration-track:59dddeab55a7b6ec888f4b5d74e20ae324e6f2fe0b15df607655e8e8c7ab68e6` |
-| 6 | `theorem` | [greenPolarizedFourierTerm_hasSum](../../../../MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/greenpolarizedfourierterm-hassum.md) | 128 | `result-track:f02abf62ece55530297efd69513f6ec07b194d7fdc16a28d2120043614fca5a6` |
-| 7 | `def` | [greenPolarizedFourierShell](../../../../MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/greenpolarizedfouriershell.md) | 147 | `declaration-track:e3fdcea5224fcf800aa75e3bdbd763d9225bb05ce3ba717d0617dcbba8891fce` |
-| 8 | `theorem` | [greenPolarizedFourierShell_hasSum](../../../../MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/greenpolarizedfouriershell-hassum.md) | 152 | `result-track:ba3f0e095c0550b2235ce0dee9d0f0cd8367bab95c2eaa58225a369aa9f4b3d4` |
-| 9 | `def` | [greenPolarizedFourierHead](../../../../MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/greenpolarizedfourierhead.md) | 162 | `declaration-track:f54c4fc970b5e2b1b5789eac99e6fdb732dfa0cff94e6ef5ab40d52fcb9d7950` |
-| 10 | `theorem` | [greenPolarizedFourierHead_tendsto](../../../../MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/greenpolarizedfourierhead-tendsto.md) | 166 | `result-track:fb5150db0065d15814a24c96e7a3999404bcb5c7834a4dd1fa9a2d99a7d0e98a` |
-| 11 | `def` | [complexTestEndpointReadout](../../../../MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/complextestendpointreadout.md) | 176 | `declaration-track:1ba7c2fb37428b25e8c7f2b5fe2ed797878de6163b96cca836e8872d0232466e` |
-| 12 | `def` | [fourierReconstructedActionHead](../../../../MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/fourierreconstructedactionhead.md) | 182 | `declaration-track:f6694daab064248c87594bc9a8f281192378bed5eaa0b32149a93d43aaa3f408` |
-| 13 | `theorem` | [fourierReconstructedActionHead_tendsto](../../../../MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/fourierreconstructedactionhead-tendsto.md) | 189 | `result-track:46f0d00e8e57e2b4df6c3a80f2da66766a33bba16c8c697d96c4c3398b8318ab` |
+| 1 | `theorem` | [hasSum_prod_fourierCoeff_unitCircle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/hassum-prod-fouriercoeff-unitcircle.md) | 42 | `result-track:9460855a4f8d69dc491239a312ff82d32b4d50945205db7d69edeed9a9de06e4` |
+| 2 | `theorem` | [hasSum_prod_fourierCoeffOn_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/hassum-prod-fouriercoeffon-unit.md) | 57 | `result-track:5ccff49be2ce1dae88673c2d3ec4e22aa88ea3af6e3511278180d1745ed7274c` |
+| 3 | `theorem` | [complexTestSlope_memLp_Ioc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/complextestslope-memlp-ioc.md) | 85 | `result-track:433fa7f14e3aa83f1a2e790d4349c141a3075d239ab5104a855f7d1078ef2f0b` |
+| 4 | `def` | [complexTestSlopeFourierCoeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/complextestslopefouriercoeff.md) | 117 | `declaration-track:54e9bd65fe7e1e78d787c4cf24539c9080269a0eaa5b59224e0003458fa0c300` |
+| 5 | `def` | [greenPolarizedFourierTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/greenpolarizedfourierterm.md) | 122 | `declaration-track:59dddeab55a7b6ec888f4b5d74e20ae324e6f2fe0b15df607655e8e8c7ab68e6` |
+| 6 | `theorem` | [greenPolarizedFourierTerm_hasSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/greenpolarizedfourierterm-hassum.md) | 128 | `result-track:f02abf62ece55530297efd69513f6ec07b194d7fdc16a28d2120043614fca5a6` |
+| 7 | `def` | [greenPolarizedFourierShell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/greenpolarizedfouriershell.md) | 147 | `declaration-track:e3fdcea5224fcf800aa75e3bdbd763d9225bb05ce3ba717d0617dcbba8891fce` |
+| 8 | `theorem` | [greenPolarizedFourierShell_hasSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/greenpolarizedfouriershell-hassum.md) | 152 | `result-track:ba3f0e095c0550b2235ce0dee9d0f0cd8367bab95c2eaa58225a369aa9f4b3d4` |
+| 9 | `def` | [greenPolarizedFourierHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/greenpolarizedfourierhead.md) | 162 | `declaration-track:f54c4fc970b5e2b1b5789eac99e6fdb732dfa0cff94e6ef5ab40d52fcb9d7950` |
+| 10 | `theorem` | [greenPolarizedFourierHead_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/greenpolarizedfourierhead-tendsto.md) | 166 | `result-track:fb5150db0065d15814a24c96e7a3999404bcb5c7834a4dd1fa9a2d99a7d0e98a` |
+| 11 | `def` | [complexTestEndpointReadout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/complextestendpointreadout.md) | 176 | `declaration-track:1ba7c2fb37428b25e8c7f2b5fe2ed797878de6163b96cca836e8872d0232466e` |
+| 12 | `def` | [fourierReconstructedActionHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/fourierreconstructedactionhead.md) | 182 | `declaration-track:f6694daab064248c87594bc9a8f281192378bed5eaa0b32149a93d43aaa3f408` |
+| 13 | `theorem` | [fourierReconstructedActionHead_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenPolarizedReadout.lean/declarations/fourierreconstructedactionhead-tendsto.md) | 189 | `result-track:46f0d00e8e57e2b4df6c3a80f2da66766a33bba16c8c697d96c4c3398b8318ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

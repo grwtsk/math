@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/IndexNSmulPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/IndexNSmulPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IndexNSmulPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IndexNSmulPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [index_range_nsmul](../../../../GroupTheoryAndGeneralizations/IndexNSmulPublic.lean/declarations/index-range-nsmul.md) | 39 | `result-track:27e1bd221c035f3efdff608b956c5c5d2aafe3f1c76022608b8d9a3bee3d70e9` |
-| 2 | `lemma` | [relIndex_map_nsmul](../../../../GroupTheoryAndGeneralizations/IndexNSmulPublic.lean/declarations/relindex-map-nsmul.md) | 54 | `result-track:16d333b6665cbbb670546d7428935c7632f3f6f8fac89364d77a54a9380fca89` |
-| 3 | `lemma` | [distribSMulToLinearMap_injective_of_isTorsionFree](../../../../GroupTheoryAndGeneralizations/IndexNSmulPublic.lean/declarations/distribsmultolinearmap-injective-of-istorsionfree.md) | 62 | `result-track:9a74abeca7a5aecf25922481416c9c1374b4440ecebd23a0b7f5718cda4471bc` |
-| 4 | `lemma` | [nsmulAddMonoidHom_injective_of_isTorsionFree](../../../../GroupTheoryAndGeneralizations/IndexNSmulPublic.lean/declarations/nsmuladdmonoidhom-injective-of-istorsionfree.md) | 68 | `result-track:76a7bcca9948da016504c01f3c9498cb8a78f684ead2c43d05eb45d6db5905e8` |
-| 5 | `lemma` | [finrank_eq_of_finiteIndex](../../../../GroupTheoryAndGeneralizations/IndexNSmulPublic.lean/declarations/finrank-eq-of-finiteindex.md) | 74 | `result-track:1cfc8c88ce4ea7cd26e2d36d1d0aa1b86fad6dc66236ebdf8e311f8da64f9940` |
-| 6 | `lemma` | [finrank_eq_of_isFiniteRelIndex](../../../../GroupTheoryAndGeneralizations/IndexNSmulPublic.lean/declarations/finrank-eq-of-isfiniterelindex.md) | 89 | `result-track:2938c0c9b2278e5de973ae53515e5883a233f0770d2191992d7c72d71f33a958` |
+| 1 | `lemma` | [index_range_nsmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IndexNSmulPublic.lean/declarations/index-range-nsmul.md) | 39 | `result-track:27e1bd221c035f3efdff608b956c5c5d2aafe3f1c76022608b8d9a3bee3d70e9` |
+| 2 | `lemma` | [relIndex_map_nsmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IndexNSmulPublic.lean/declarations/relindex-map-nsmul.md) | 54 | `result-track:16d333b6665cbbb670546d7428935c7632f3f6f8fac89364d77a54a9380fca89` |
+| 3 | `lemma` | [distribSMulToLinearMap_injective_of_isTorsionFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IndexNSmulPublic.lean/declarations/distribsmultolinearmap-injective-of-istorsionfree.md) | 62 | `result-track:9a74abeca7a5aecf25922481416c9c1374b4440ecebd23a0b7f5718cda4471bc` |
+| 4 | `lemma` | [nsmulAddMonoidHom_injective_of_isTorsionFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IndexNSmulPublic.lean/declarations/nsmuladdmonoidhom-injective-of-istorsionfree.md) | 68 | `result-track:76a7bcca9948da016504c01f3c9498cb8a78f684ead2c43d05eb45d6db5905e8` |
+| 5 | `lemma` | [finrank_eq_of_finiteIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IndexNSmulPublic.lean/declarations/finrank-eq-of-finiteindex.md) | 74 | `result-track:1cfc8c88ce4ea7cd26e2d36d1d0aa1b86fad6dc66236ebdf8e311f8da64f9940` |
+| 6 | `lemma` | [finrank_eq_of_isFiniteRelIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IndexNSmulPublic.lean/declarations/finrank-eq-of-isfiniterelindex.md) | 89 | `result-track:2938c0c9b2278e5de973ae53515e5883a233f0770d2191992d7c72d71f33a958` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

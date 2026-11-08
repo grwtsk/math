@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IrreduciblePublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IrreduciblePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IrreduciblePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IrreduciblePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [irreducible_mem_submonoidClosure_subset](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IrreduciblePublic.lean/declarations/irreducible-mem-submonoidclosure-subset.md) | 30 | `result-track:44b27027d1793e63f4bfad3e51966810906f675eaeeb27a531f8cd174bac8b1d` |
-| 2 | `lemma` | [irreducible_subset_of_submonoidClosure_eq_top](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IrreduciblePublic.lean/declarations/irreducible-subset-of-submonoidclosure-eq-top.md) | 39 | `result-track:1e52fdd44ba95c3e7637e4433c35d0060ee319e6fc85ffeb11f6aa4d9a78563f` |
-| 3 | `lemma` | [Submonoid.FG.finite_irreducible_mem_submonoidClosure](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IrreduciblePublic.lean/declarations/submonoid-fg-finite-irreducible-mem-submonoidclosure.md) | 48 | `result-track:1fcd27e93946503d0e09dce8bac16083682765981a2951e3de43d1a7bce68fb2` |
-| 4 | `lemma` | [finite_irreducible](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IrreduciblePublic.lean/declarations/finite-irreducible.md) | 58 | `result-track:aea8c1dcbafe12064d9e234e82d1bbcce3a83ac21a3af0e43ba3e547c70c6d8c` |
-| 5 | `lemma` | [Submonoid.closure_irreducible](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IrreduciblePublic.lean/declarations/submonoid-closure-irreducible.md) | 71 | `result-track:5eb225943f7d8af9848edc7f1e7d8d46f1bdaccbceb3c9217c84af030f058297` |
+| 1 | `lemma` | [irreducible_mem_submonoidClosure_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IrreduciblePublic.lean/declarations/irreducible-mem-submonoidclosure-subset.md) | 30 | `result-track:44b27027d1793e63f4bfad3e51966810906f675eaeeb27a531f8cd174bac8b1d` |
+| 2 | `lemma` | [irreducible_subset_of_submonoidClosure_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IrreduciblePublic.lean/declarations/irreducible-subset-of-submonoidclosure-eq-top.md) | 39 | `result-track:1e52fdd44ba95c3e7637e4433c35d0060ee319e6fc85ffeb11f6aa4d9a78563f` |
+| 3 | `lemma` | [Submonoid.FG.finite_irreducible_mem_submonoidClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IrreduciblePublic.lean/declarations/submonoid-fg-finite-irreducible-mem-submonoidclosure.md) | 48 | `result-track:1fcd27e93946503d0e09dce8bac16083682765981a2951e3de43d1a7bce68fb2` |
+| 4 | `lemma` | [finite_irreducible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IrreduciblePublic.lean/declarations/finite-irreducible.md) | 58 | `result-track:aea8c1dcbafe12064d9e234e82d1bbcce3a83ac21a3af0e43ba3e547c70c6d8c` |
+| 5 | `lemma` | [Submonoid.closure_irreducible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IrreduciblePublic.lean/declarations/submonoid-closure-irreducible.md) | 71 | `result-track:5eb225943f7d8af9848edc7f1e7d8d46f1bdaccbceb3c9217c84af030f058297` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

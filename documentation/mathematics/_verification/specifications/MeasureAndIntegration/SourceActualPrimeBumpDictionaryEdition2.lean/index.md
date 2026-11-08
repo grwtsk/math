@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualPrimeBumpDictionaryEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualPrimeBumpDictionaryEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPrimeBumpDictionaryEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPrimeBumpDictionaryEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualInitialPrimeMellin_eq_bumpMellinWeight](../../../../MeasureAndIntegration/SourceActualPrimeBumpDictionaryEdition2.lean/declarations/actualinitialprimemellin-eq-bumpmellinweight.md) | 25 | `result-track:12912fe733958be778f08888ebbcf7b01575bf176c6377d3e112a657d6a28b4c` |
-| 2 | `theorem` | [actualInitialPrimeDensity_eq_bump](../../../../MeasureAndIntegration/SourceActualPrimeBumpDictionaryEdition2.lean/declarations/actualinitialprimedensity-eq-bump.md) | 38 | `result-track:8f203a5f8b73d51820ecb88721149afab984a7b8c421cfd9f973c5bab1af2f9d` |
-| 3 | `theorem` | [actualInitialPrimeTwoTail_eq_bump](../../../../MeasureAndIntegration/SourceActualPrimeBumpDictionaryEdition2.lean/declarations/actualinitialprimetwotail-eq-bump.md) | 45 | `result-track:b6876287b717bee1931be40f08be8a4968b0a21d20a2377176487e70f4f43bd6` |
-| 4 | `theorem` | [actualInitialPrimeTwoTail_movingHeight_norm_le](../../../../MeasureAndIntegration/SourceActualPrimeBumpDictionaryEdition2.lean/declarations/actualinitialprimetwotail-movingheight-norm-le.md) | 51 | `result-track:f256dfe57eed4970c24651b6d5d9ef76eb417cca91f3972181556cf3f046a45f` |
-| 5 | `theorem` | [actualMertensResidual_sub_head_norm_le](../../../../MeasureAndIntegration/SourceActualPrimeBumpDictionaryEdition2.lean/declarations/actualmertensresidual-sub-head-norm-le.md) | 59 | `result-track:f9deb13e9ce97d6ea2e0ac21fe2f0cffc912023399df7dc5cb08157ea9509533` |
-| 6 | `theorem` | [actualMertensResidual_sub_head_real_abs_le](../../../../MeasureAndIntegration/SourceActualPrimeBumpDictionaryEdition2.lean/declarations/actualmertensresidual-sub-head-real-abs-le.md) | 68 | `result-track:66813a1b9c84d033f54dc1b7e0ce0173106f01f79f4041eb535613dd43713bc7` |
-| 7 | `theorem` | [actualMertensResidual_le_head_add](../../../../MeasureAndIntegration/SourceActualPrimeBumpDictionaryEdition2.lean/declarations/actualmertensresidual-le-head-add.md) | 78 | `result-track:601f25bd4c6bfa6a3da692e53040fad374e3dd85eda922e687ae22c1cd987cad` |
+| 1 | `theorem` | [actualInitialPrimeMellin_eq_bumpMellinWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPrimeBumpDictionaryEdition2.lean/declarations/actualinitialprimemellin-eq-bumpmellinweight.md) | 25 | `result-track:12912fe733958be778f08888ebbcf7b01575bf176c6377d3e112a657d6a28b4c` |
+| 2 | `theorem` | [actualInitialPrimeDensity_eq_bump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPrimeBumpDictionaryEdition2.lean/declarations/actualinitialprimedensity-eq-bump.md) | 38 | `result-track:8f203a5f8b73d51820ecb88721149afab984a7b8c421cfd9f973c5bab1af2f9d` |
+| 3 | `theorem` | [actualInitialPrimeTwoTail_eq_bump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPrimeBumpDictionaryEdition2.lean/declarations/actualinitialprimetwotail-eq-bump.md) | 45 | `result-track:b6876287b717bee1931be40f08be8a4968b0a21d20a2377176487e70f4f43bd6` |
+| 4 | `theorem` | [actualInitialPrimeTwoTail_movingHeight_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPrimeBumpDictionaryEdition2.lean/declarations/actualinitialprimetwotail-movingheight-norm-le.md) | 51 | `result-track:f256dfe57eed4970c24651b6d5d9ef76eb417cca91f3972181556cf3f046a45f` |
+| 5 | `theorem` | [actualMertensResidual_sub_head_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPrimeBumpDictionaryEdition2.lean/declarations/actualmertensresidual-sub-head-norm-le.md) | 59 | `result-track:f9deb13e9ce97d6ea2e0ac21fe2f0cffc912023399df7dc5cb08157ea9509533` |
+| 6 | `theorem` | [actualMertensResidual_sub_head_real_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPrimeBumpDictionaryEdition2.lean/declarations/actualmertensresidual-sub-head-real-abs-le.md) | 68 | `result-track:66813a1b9c84d033f54dc1b7e0ce0173106f01f79f4041eb535613dd43713bc7` |
+| 7 | `theorem` | [actualMertensResidual_le_head_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPrimeBumpDictionaryEdition2.lean/declarations/actualmertensresidual-le-head-add.md) | 78 | `result-track:601f25bd4c6bfa6a3da692e53040fad374e3dd85eda922e687ae22c1cd987cad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

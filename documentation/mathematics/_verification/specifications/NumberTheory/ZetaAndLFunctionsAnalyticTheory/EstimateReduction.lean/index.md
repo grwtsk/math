@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EstimateReduction.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EstimateReduction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EstimateReduction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EstimateReduction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [SignedPairingUniformLowerBound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EstimateReduction.lean/declarations/signedpairinguniformlowerbound.md) | 27 | `declaration-track:a60aeb6d97e146f54721046bf6e91111b33198090032778675e7ce7db1c94a3a` |
-| 2 | `theorem` | [estimate_of_signed_pairing_uniform_lower_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EstimateReduction.lean/declarations/estimate-of-signed-pairing-uniform-lower-bound.md) | 34 | `result-track:135420b40bd626080f19a6e52e827cda03cca7ac95a5668b668e3cf8b67a12d3` |
-| 3 | `theorem` | [estimate_obligation_iff_signed_pairing_sufficient](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EstimateReduction.lean/declarations/estimate-obligation-iff-signed-pairing-sufficient.md) | 54 | `result-track:89e1d22c8b0643a17271d0be75af531df227cca376f257e980eac16ff05b0b55` |
-| 4 | `def` | [EstimateReductionCheckpoint](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EstimateReduction.lean/declarations/estimatereductioncheckpoint.md) | 61 | `declaration-track:436696422fdccb6ef5156a67d4b77462cb522ab811e6b56edb0fe838da86b226` |
-| 5 | `theorem` | [estimate_reduction_checkpoint](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EstimateReduction.lean/declarations/estimate-reduction-checkpoint.md) | 67 | `result-track:e9591cacb8bc94db59158485f02c9562843f35b6c7cab2c44bf7dabc685d02ed` |
+| 1 | `def` | [SignedPairingUniformLowerBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EstimateReduction.lean/declarations/signedpairinguniformlowerbound.md) | 27 | `declaration-track:a60aeb6d97e146f54721046bf6e91111b33198090032778675e7ce7db1c94a3a` |
+| 2 | `theorem` | [estimate_of_signed_pairing_uniform_lower_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EstimateReduction.lean/declarations/estimate-of-signed-pairing-uniform-lower-bound.md) | 34 | `result-track:135420b40bd626080f19a6e52e827cda03cca7ac95a5668b668e3cf8b67a12d3` |
+| 3 | `theorem` | [estimate_obligation_iff_signed_pairing_sufficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EstimateReduction.lean/declarations/estimate-obligation-iff-signed-pairing-sufficient.md) | 54 | `result-track:89e1d22c8b0643a17271d0be75af531df227cca376f257e980eac16ff05b0b55` |
+| 4 | `def` | [EstimateReductionCheckpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EstimateReduction.lean/declarations/estimatereductioncheckpoint.md) | 61 | `declaration-track:436696422fdccb6ef5156a67d4b77462cb522ab811e6b56edb0fe838da86b226` |
+| 5 | `theorem` | [estimate_reduction_checkpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EstimateReduction.lean/declarations/estimate-reduction-checkpoint.md) | 67 | `result-track:e9591cacb8bc94db59158485f02c9562843f35b6c7cab2c44bf7dabc685d02ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

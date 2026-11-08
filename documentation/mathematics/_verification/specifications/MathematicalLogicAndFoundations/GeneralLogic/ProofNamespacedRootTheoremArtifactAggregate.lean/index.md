@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofNamespacedRootTheoremArtifactAggregate.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofNamespacedRootTheoremArtifactAggregate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofNamespacedRootTheoremArtifactAggregate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofNamespacedRootTheoremArtifactAggregate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,7 +61,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [root_theorem_artifact_aggregate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofNamespacedRootTheoremArtifactAggregate.lean/declarations/root-theorem-artifact-aggregate.md) | 17 | `result-track:6b70a38ae894c544b431565d8e809c581221b9d1a882fe2886fc2c9104c22cbb` |
+| 1 | `theorem` | [root_theorem_artifact_aggregate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofNamespacedRootTheoremArtifactAggregate.lean/declarations/root-theorem-artifact-aggregate.md) | 17 | `result-track:6b70a38ae894c544b431565d8e809c581221b9d1a882fe2886fc2c9104c22cbb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

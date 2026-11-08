@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SourceOneSidedPowerBudgetNamespacedEdition2.lean/index.md) · [Full source](../../../../Combinatorics/SourceOneSidedPowerBudgetNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceOneSidedPowerBudgetNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceOneSidedPowerBudgetNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [squareNegativeTailCost](../../../../Combinatorics/SourceOneSidedPowerBudgetNamespacedEdition2.lean/declarations/squarenegativetailcost.md) | 20 | `declaration-track:687e421f796683510d3416a853f839eb5aa3bf9f331b8b61a4e56eb10b208258` |
-| 2 | `def` | [cubicPowerTailCost](../../../../Combinatorics/SourceOneSidedPowerBudgetNamespacedEdition2.lean/declarations/cubicpowertailcost.md) | 23 | `declaration-track:8bfcc3e4e6e8963bdbcef8cab9c1bb0fe4c10452bba86b2ccacb074fb00601c4` |
-| 3 | `def` | [oneSidedPowerRadiusBudget](../../../../Combinatorics/SourceOneSidedPowerBudgetNamespacedEdition2.lean/declarations/onesidedpowerradiusbudget.md) | 26 | `declaration-track:e51599283ab50d8360d990a9a08034b4891888d8ef7be13d37e5b76732774df1` |
-| 4 | `theorem` | [exp_radius_square_threshold](../../../../Combinatorics/SourceOneSidedPowerBudgetNamespacedEdition2.lean/declarations/exp-radius-square-threshold.md) | 31 | `result-track:1fbe0aa3e2e952e9b3e939be9c569a112e2071af4acabd0daa6f4cdc5e61f855` |
-| 5 | `theorem` | [log_radius_vaughan_upper](../../../../Combinatorics/SourceOneSidedPowerBudgetNamespacedEdition2.lean/declarations/log-radius-vaughan-upper.md) | 38 | `result-track:32dbffebe930c7fd38f4389f05df75cd273c7af96a04835de523d68a930a5f08` |
-| 6 | `theorem` | [oneSidedPowerRadiusBudget_ninety_one](../../../../Combinatorics/SourceOneSidedPowerBudgetNamespacedEdition2.lean/declarations/onesidedpowerradiusbudget-ninety-one.md) | 44 | `result-track:2013a8b9506e38792621c6e61b40cea7d3ccc307d0b2b863c2e9aeba517a2558` |
+| 1 | `def` | [squareNegativeTailCost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceOneSidedPowerBudgetNamespacedEdition2.lean/declarations/squarenegativetailcost.md) | 20 | `declaration-track:687e421f796683510d3416a853f839eb5aa3bf9f331b8b61a4e56eb10b208258` |
+| 2 | `def` | [cubicPowerTailCost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceOneSidedPowerBudgetNamespacedEdition2.lean/declarations/cubicpowertailcost.md) | 23 | `declaration-track:8bfcc3e4e6e8963bdbcef8cab9c1bb0fe4c10452bba86b2ccacb074fb00601c4` |
+| 3 | `def` | [oneSidedPowerRadiusBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceOneSidedPowerBudgetNamespacedEdition2.lean/declarations/onesidedpowerradiusbudget.md) | 26 | `declaration-track:e51599283ab50d8360d990a9a08034b4891888d8ef7be13d37e5b76732774df1` |
+| 4 | `theorem` | [exp_radius_square_threshold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceOneSidedPowerBudgetNamespacedEdition2.lean/declarations/exp-radius-square-threshold.md) | 31 | `result-track:1fbe0aa3e2e952e9b3e939be9c569a112e2071af4acabd0daa6f4cdc5e61f855` |
+| 5 | `theorem` | [log_radius_vaughan_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceOneSidedPowerBudgetNamespacedEdition2.lean/declarations/log-radius-vaughan-upper.md) | 38 | `result-track:32dbffebe930c7fd38f4389f05df75cd273c7af96a04835de523d68a930a5f08` |
+| 6 | `theorem` | [oneSidedPowerRadiusBudget_ninety_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceOneSidedPowerBudgetNamespacedEdition2.lean/declarations/onesidedpowerradiusbudget-ninety-one.md) | 44 | `result-track:2013a8b9506e38792621c6e61b40cea7d3ccc307d0b2b863c2e9aeba517a2558` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

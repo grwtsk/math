@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/StringDefsNamespacedRightpad.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/StringDefsNamespacedRightpad.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/StringDefsNamespacedRightpad.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/StringDefsNamespacedRightpad.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [leftpad](../../../../../../ComputerScience/TheoryOfData/DataStructures/StringDefsNamespacedRightpad.lean/declarations/leftpad.md) | 26 | `declaration-track:34d121ef48d5184e452fdc365e12a00861602c97ecdc28fe2b659dd05df408d0` |
-| 2 | `def` | [replicate](../../../../../../ComputerScience/TheoryOfData/DataStructures/StringDefsNamespacedRightpad.lean/declarations/replicate.md) | 30 | `declaration-track:0d0ef9590cce7fea3f2d75a2160f13daddd81b854915a83a1b6fb38d479f11aa` |
-| 3 | `def` | [rightpad](../../../../../../ComputerScience/TheoryOfData/DataStructures/StringDefsNamespacedRightpad.lean/declarations/rightpad.md) | 38 | `declaration-track:9d21f607f22d8568946cbf85bfbbcddddc0e14b691117628336720d36c862cbf` |
-| 4 | `def` | [IsPrefix](../../../../../../ComputerScience/TheoryOfData/DataStructures/StringDefsNamespacedRightpad.lean/declarations/isprefix.md) | 42 | `declaration-track:681b38ebf8adf377bcffb273b6c67cc0dd1dc2015393efc5b7772f5b13791a1d` |
-| 5 | `def` | [IsSuffix](../../../../../../ComputerScience/TheoryOfData/DataStructures/StringDefsNamespacedRightpad.lean/declarations/issuffix.md) | 46 | `declaration-track:3c3d70732abde5d4b26777891576f85db27361dc44aed0b7fa17e009e0e0a6e3` |
-| 6 | `def` | [mapTokens](../../../../../../ComputerScience/TheoryOfData/DataStructures/StringDefsNamespacedRightpad.lean/declarations/maptokens.md) | 51 | `declaration-track:df9c1e8abe0aaf2e1b45782ddf7466d2356e80854689a760edfaf34feefb76c3` |
-| 7 | `def` | [head](../../../../../../ComputerScience/TheoryOfData/DataStructures/StringDefsNamespacedRightpad.lean/declarations/head.md) | 55 | `declaration-track:87db9dd10fd4cc31911aa593f0313b4c0f9c6c7e28f086b652441a18990fc202` |
+| 1 | `def` | [leftpad](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/StringDefsNamespacedRightpad.lean/declarations/leftpad.md) | 26 | `declaration-track:34d121ef48d5184e452fdc365e12a00861602c97ecdc28fe2b659dd05df408d0` |
+| 2 | `def` | [replicate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/StringDefsNamespacedRightpad.lean/declarations/replicate.md) | 30 | `declaration-track:0d0ef9590cce7fea3f2d75a2160f13daddd81b854915a83a1b6fb38d479f11aa` |
+| 3 | `def` | [rightpad](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/StringDefsNamespacedRightpad.lean/declarations/rightpad.md) | 38 | `declaration-track:9d21f607f22d8568946cbf85bfbbcddddc0e14b691117628336720d36c862cbf` |
+| 4 | `def` | [IsPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/StringDefsNamespacedRightpad.lean/declarations/isprefix.md) | 42 | `declaration-track:681b38ebf8adf377bcffb273b6c67cc0dd1dc2015393efc5b7772f5b13791a1d` |
+| 5 | `def` | [IsSuffix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/StringDefsNamespacedRightpad.lean/declarations/issuffix.md) | 46 | `declaration-track:3c3d70732abde5d4b26777891576f85db27361dc44aed0b7fa17e009e0e0a6e3` |
+| 6 | `def` | [mapTokens](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/StringDefsNamespacedRightpad.lean/declarations/maptokens.md) | 51 | `declaration-track:df9c1e8abe0aaf2e1b45782ddf7466d2356e80854689a760edfaf34feefb76c3` |
+| 7 | `def` | [head](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/StringDefsNamespacedRightpad.lean/declarations/head.md) | 55 | `declaration-track:87db9dd10fd4cc31911aa593f0313b4c0f9c6c7e28f086b652441a18990fc202` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

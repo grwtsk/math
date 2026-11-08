@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineTransitionLimit.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineTransitionLimit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineTransitionLimit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineTransitionLimit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Scheme.nonempty_of_isLimit](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineTransitionLimit.lean/declarations/scheme-nonempty-of-islimit.md) | 35 | `result-track:eb9b301c98710855b1dc8e56f1f3bf24e46800523f7cb9a5f19214a4452cbfea` |
+| 1 | `lemma` | [Scheme.nonempty_of_isLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineTransitionLimit.lean/declarations/scheme-nonempty-of-islimit.md) | 35 | `result-track:eb9b301c98710855b1dc8e56f1f3bf24e46800523f7cb9a5f19214a4452cbfea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

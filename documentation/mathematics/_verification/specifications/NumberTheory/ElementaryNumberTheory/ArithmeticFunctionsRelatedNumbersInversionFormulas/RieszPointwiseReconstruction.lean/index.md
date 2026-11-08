@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.EndpointConventions`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EndpointConventions.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.TentSource`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TentSource.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.EndpointConventions`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EndpointConventions.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.TentSource`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TentSource.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [halfJumpWeight](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/declarations/halfjumpweight.md) | 23 | `declaration-track:55835ef8aaaa2775749b1933269d9a805d3766169fb1ad4bb9e4b64c68163f22` |
-| 2 | `theorem` | [hinge_symmetric_nat](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/declarations/hinge-symmetric-nat.md) | 26 | `result-track:dc29f9b4bf3255659bc236a2728a9a0f3881b723ade13e4f7f2ec158e42a3572` |
-| 3 | `theorem` | [finite_halfJump_sum](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/declarations/finite-halfjump-sum.md) | 43 | `result-track:793d68cee9be9b72b06cda9a38bfed58ed7dc4e9e8844ee912c69cc0229cd097` |
-| 4 | `def` | [symmetricRieszQuotient](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/declarations/symmetricrieszquotient.md) | 80 | `declaration-track:b2c082ecaefbfe5e79f035fd21d598d287b0e16dc50549ec3c7b6a435233a3b8` |
-| 5 | `theorem` | [symmetricRieszQuotient_nat](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/declarations/symmetricrieszquotient-nat.md) | 83 | `result-track:9d710abda0d5d1eecc2c8024a5e9fb41c60278612be0c16d7fd39a94e7e41fdf` |
-| 6 | `theorem` | [symmetricRieszQuotient_noninteger](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/declarations/symmetricrieszquotient-noninteger.md) | 103 | `result-track:f6a9e4fb52c271795b0d4bcdf054d1d548bdda4f643ac31a3eb28c0b3f2380e1` |
-| 7 | `theorem` | [exists_noninteger_reconstruction_radius](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/declarations/exists-noninteger-reconstruction-radius.md) | 149 | `result-track:beaa2214a7e11e9c716effb8877a8c2d5cdda295f3a5828cc3b2b24ff5520434` |
-| 8 | `theorem` | [pointwise_reconstruction_error](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/declarations/pointwise-reconstruction-error.md) | 165 | `result-track:e076f228ff017759132b13b734944a719bec35895d0eaa82566f84ab12685aaf` |
+| 1 | `def` | [halfJumpWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/declarations/halfjumpweight.md) | 23 | `declaration-track:55835ef8aaaa2775749b1933269d9a805d3766169fb1ad4bb9e4b64c68163f22` |
+| 2 | `theorem` | [hinge_symmetric_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/declarations/hinge-symmetric-nat.md) | 26 | `result-track:dc29f9b4bf3255659bc236a2728a9a0f3881b723ade13e4f7f2ec158e42a3572` |
+| 3 | `theorem` | [finite_halfJump_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/declarations/finite-halfjump-sum.md) | 43 | `result-track:793d68cee9be9b72b06cda9a38bfed58ed7dc4e9e8844ee912c69cc0229cd097` |
+| 4 | `def` | [symmetricRieszQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/declarations/symmetricrieszquotient.md) | 80 | `declaration-track:b2c082ecaefbfe5e79f035fd21d598d287b0e16dc50549ec3c7b6a435233a3b8` |
+| 5 | `theorem` | [symmetricRieszQuotient_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/declarations/symmetricrieszquotient-nat.md) | 83 | `result-track:9d710abda0d5d1eecc2c8024a5e9fb41c60278612be0c16d7fd39a94e7e41fdf` |
+| 6 | `theorem` | [symmetricRieszQuotient_noninteger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/declarations/symmetricrieszquotient-noninteger.md) | 103 | `result-track:f6a9e4fb52c271795b0d4bcdf054d1d548bdda4f643ac31a3eb28c0b3f2380e1` |
+| 7 | `theorem` | [exists_noninteger_reconstruction_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/declarations/exists-noninteger-reconstruction-radius.md) | 149 | `result-track:beaa2214a7e11e9c716effb8877a8c2d5cdda295f3a5828cc3b2b24ff5520434` |
+| 8 | `theorem` | [pointwise_reconstruction_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/declarations/pointwise-reconstruction-error.md) | 165 | `result-track:e076f228ff017759132b13b734944a719bec35895d0eaa82566f84ab12685aaf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

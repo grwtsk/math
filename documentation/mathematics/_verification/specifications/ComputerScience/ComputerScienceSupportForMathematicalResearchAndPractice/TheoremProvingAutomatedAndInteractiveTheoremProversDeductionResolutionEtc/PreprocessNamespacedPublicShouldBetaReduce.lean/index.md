@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PreprocessNamespacedPublicShouldBetaReduce.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PreprocessNamespacedPublicShouldBetaReduce.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PreprocessNamespacedPublicShouldBetaReduce.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PreprocessNamespacedPublicShouldBetaReduce.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [shouldBetaReduce](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PreprocessNamespacedPublicShouldBetaReduce.lean/declarations/shouldbetareduce.md) | 25 | `declaration-track:b3a61e7c4a834d49e3b83a99bbc5b7d0f479aaabc07ae9d16f2cebdba7da5cef` |
-| 2 | `def` | [preprocess](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PreprocessNamespacedPublicShouldBetaReduce.lean/declarations/preprocess.md) | 54 | `declaration-track:cb419153f1c222196e108483914740c96a98754099e5b865885f26441f9843ae` |
+| 1 | `def` | [shouldBetaReduce](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PreprocessNamespacedPublicShouldBetaReduce.lean/declarations/shouldbetareduce.md) | 25 | `declaration-track:b3a61e7c4a834d49e3b83a99bbc5b7d0f479aaabc07ae9d16f2cebdba7da5cef` |
+| 2 | `def` | [preprocess](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PreprocessNamespacedPublicShouldBetaReduce.lean/declarations/preprocess.md) | 54 | `declaration-track:cb419153f1c222196e108483914740c96a98754099e5b865885f26441f9843ae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

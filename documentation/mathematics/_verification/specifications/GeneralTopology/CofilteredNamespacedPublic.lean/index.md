@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CofilteredNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/CofilteredNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CofilteredNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CofilteredNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isTopologicalBasis_cofiltered_limit](../../../../GeneralTopology/CofilteredNamespacedPublic.lean/declarations/istopologicalbasis-cofiltered-limit.md) | 51 | `result-track:249ab1b1b9af19a25e8f1681600e95bab3fbc0ee4380e89abe62ef62e2cf6ec4` |
+| 1 | `theorem` | [isTopologicalBasis_cofiltered_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CofilteredNamespacedPublic.lean/declarations/istopologicalbasis-cofiltered-limit.md) | 51 | `result-track:249ab1b1b9af19a25e8f1681600e95bab3fbc0ee4380e89abe62ef62e2cf6ec4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

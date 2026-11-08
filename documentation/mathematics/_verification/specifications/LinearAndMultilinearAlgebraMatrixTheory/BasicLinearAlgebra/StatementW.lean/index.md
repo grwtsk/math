@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/StatementW.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/StatementW.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/StatementW.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/StatementW.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [GentryW1](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/StatementW.lean/declarations/gentryw1.md) | 45 | `declaration-track:c6e9e8e6ddb22f912eb40de3bb3677c34345dd3fe5f9f18d17cd9d8ed70da1ce` |
-| 2 | `def` | [GpW1](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/StatementW.lean/declarations/gpw1.md) | 49 | `declaration-track:1585b87410dace7c3e28ecddb03e63d7ea97af6146f52cad9512808617cbcf6a` |
-| 3 | `def` | [WEF](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/StatementW.lean/declarations/wef.md) | 71 | `declaration-track:b09b45f7000b58f7d1fe3493850a6688fd9ea6310fd7e93d7294aef079412111` |
-| 4 | `def` | [WRvM](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/StatementW.lean/declarations/wrvm.md) | 98 | `declaration-track:cf4643028ce504ab9c3164b34aa84adaebac4d808cbf76dab6c6866dde5f14a4` |
+| 1 | `def` | [GentryW1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/StatementW.lean/declarations/gentryw1.md) | 45 | `declaration-track:c6e9e8e6ddb22f912eb40de3bb3677c34345dd3fe5f9f18d17cd9d8ed70da1ce` |
+| 2 | `def` | [GpW1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/StatementW.lean/declarations/gpw1.md) | 49 | `declaration-track:1585b87410dace7c3e28ecddb03e63d7ea97af6146f52cad9512808617cbcf6a` |
+| 3 | `def` | [WEF](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/StatementW.lean/declarations/wef.md) | 71 | `declaration-track:b09b45f7000b58f7d1fe3493850a6688fd9ea6310fd7e93d7294aef079412111` |
+| 4 | `def` | [WRvM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/StatementW.lean/declarations/wrvm.md) | 98 | `declaration-track:cf4643028ce504ab9c3164b34aa84adaebac4d808cbf76dab6c6866dde5f14a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

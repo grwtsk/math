@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ProperCompactlyGeneratedNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/ProperCompactlyGeneratedNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperCompactlyGeneratedNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperCompactlyGeneratedNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isProperMap_iff_isCompact_preimage](../../../../GeneralTopology/ProperCompactlyGeneratedNamespacedPublic.lean/declarations/ispropermap-iff-iscompact-preimage.md) | 37 | `result-track:7cf54ccc247e4c88edad05051551a5fb775a209e532655c3302fcc407f17d8b5` |
-| 2 | `lemma` | [isProperMap_iff_tendsto_cocompact](../../../../GeneralTopology/ProperCompactlyGeneratedNamespacedPublic.lean/declarations/ispropermap-iff-tendsto-cocompact.md) | 46 | `result-track:b23316c546a7f1d304be2c98873c08cae802be7768c6286afa521c292805908d` |
+| 1 | `theorem` | [isProperMap_iff_isCompact_preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperCompactlyGeneratedNamespacedPublic.lean/declarations/ispropermap-iff-iscompact-preimage.md) | 37 | `result-track:7cf54ccc247e4c88edad05051551a5fb775a209e532655c3302fcc407f17d8b5` |
+| 2 | `lemma` | [isProperMap_iff_tendsto_cocompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperCompactlyGeneratedNamespacedPublic.lean/declarations/ispropermap-iff-tendsto-cocompact.md) | 46 | `result-track:b23316c546a7f1d304be2c98873c08cae802be7768c6286afa521c292805908d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

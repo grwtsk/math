@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Strict.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Strict.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Strict.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Strict.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Bicategory.Strict](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Strict.lean/declarations/bicategory-strict.md) | 36 | `declaration-track:396d749923931d7e6c675293aa802ae5a4639c8b217cb774170509415d0af07e` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Strict.lean/declarations/instance.md) | 55 | `declaration-track:1bdcf9a6b1be8461a36bbdc6cb6866d43f6e56961acc559f77633eff097e9a60` |
-| 3 | `theorem` | [whiskerLeft_eqToHom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Strict.lean/declarations/whiskerleft-eqtohom.md) | 65 | `result-track:b8ce6284adbaa0d47f856f2a96fad7e53c5437198b4ccd71ec744fac4f7bfc1b` |
-| 4 | `theorem` | [eqToHom_whiskerRight](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Strict.lean/declarations/eqtohom-whiskerright.md) | 71 | `result-track:1df31aaa110c75eced1fcac3b54855c584c5a9722c21727fe808aebfca4e7cae` |
+| 1 | `class` | [Bicategory.Strict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Strict.lean/declarations/bicategory-strict.md) | 36 | `declaration-track:396d749923931d7e6c675293aa802ae5a4639c8b217cb774170509415d0af07e` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Strict.lean/declarations/instance.md) | 55 | `declaration-track:1bdcf9a6b1be8461a36bbdc6cb6866d43f6e56961acc559f77633eff097e9a60` |
+| 3 | `theorem` | [whiskerLeft_eqToHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Strict.lean/declarations/whiskerleft-eqtohom.md) | 65 | `result-track:b8ce6284adbaa0d47f856f2a96fad7e53c5437198b4ccd71ec744fac4f7bfc1b` |
+| 4 | `theorem` | [eqToHom_whiskerRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Strict.lean/declarations/eqtohom-whiskerright.md) | 71 | `result-track:1df31aaa110c75eced1fcac3b54855c584c5a9722c21727fe808aebfca4e7cae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

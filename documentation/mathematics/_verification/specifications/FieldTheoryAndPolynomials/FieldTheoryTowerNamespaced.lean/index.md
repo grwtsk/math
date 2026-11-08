@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/FieldTheoryTowerNamespaced.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/FieldTheoryTowerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryTowerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryTowerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [left](../../../../FieldTheoryAndPolynomials/FieldTheoryTowerNamespaced.lean/declarations/left.md) | 51 | `result-track:8b2f7434a212930a5ae781cf81d49ea248b9c2d7487e90b8060b1b98b3124981` |
-| 2 | `theorem` | [right](../../../../FieldTheoryAndPolynomials/FieldTheoryTowerNamespaced.lean/declarations/right.md) | 59 | `result-track:383c210d97c27c0634c61ff1355280174e9d69a6233d7dde74d44a175f8a3a61` |
+| 1 | `theorem` | [left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryTowerNamespaced.lean/declarations/left.md) | 51 | `result-track:8b2f7434a212930a5ae781cf81d49ea248b9c2d7487e90b8060b1b98b3124981` |
+| 2 | `theorem` | [right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryTowerNamespaced.lean/declarations/right.md) | 59 | `result-track:383c210d97c27c0634c61ff1355280174e9d69a6233d7dde74d44a175f8a3a61` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

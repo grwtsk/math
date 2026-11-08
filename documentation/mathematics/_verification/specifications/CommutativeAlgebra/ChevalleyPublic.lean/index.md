@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ChevalleyPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ChevalleyPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChevalleyPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChevalleyPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isConstructible_comap_C](../../../../CommutativeAlgebra/ChevalleyPublic.lean/declarations/isconstructible-comap-c.md) | 28 | `result-track:40f541f10f58e2457aa3d577b12cecebdd47d2ead0ae37fe46352884efa95067` |
-| 2 | `lemma` | [isConstructible_comap_image](../../../../CommutativeAlgebra/ChevalleyPublic.lean/declarations/isconstructible-comap-image.md) | 38 | `result-track:2f4bfd5bf06f19844116cb96ace3fc9f8b547bbd83f156a6c7af91b269e725f2` |
-| 3 | `lemma` | [isConstructible_range_comap](../../../../CommutativeAlgebra/ChevalleyPublic.lean/declarations/isconstructible-range-comap.md) | 54 | `result-track:49ccbc5e71c9d167b49f45d6a7f9b0c25268cd56c3292993fea862f53f5e1ce7` |
-| 4 | `lemma` | [isOpenMap_comap_of_hasGoingDown_of_finitePresentation](../../../../CommutativeAlgebra/ChevalleyPublic.lean/declarations/isopenmap-comap-of-hasgoingdown-of-finitepresentation.md) | 59 | `result-track:8ad5c0f3851b5e2fa27de8e2cd1a7c09378997cc67adf08ec63c26078a26ed40` |
-| 5 | `theorem` | [isOpenMap_comap_algebraMap_tensorProduct_of_field](../../../../CommutativeAlgebra/ChevalleyPublic.lean/declarations/isopenmap-comap-algebramap-tensorproduct-of-field.md) | 72 | `result-track:bf080061286eb535c9ce463d62f7ab148197b0264904a60b1171cc58ab15e0c7` |
+| 1 | `lemma` | [isConstructible_comap_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChevalleyPublic.lean/declarations/isconstructible-comap-c.md) | 28 | `result-track:40f541f10f58e2457aa3d577b12cecebdd47d2ead0ae37fe46352884efa95067` |
+| 2 | `lemma` | [isConstructible_comap_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChevalleyPublic.lean/declarations/isconstructible-comap-image.md) | 38 | `result-track:2f4bfd5bf06f19844116cb96ace3fc9f8b547bbd83f156a6c7af91b269e725f2` |
+| 3 | `lemma` | [isConstructible_range_comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChevalleyPublic.lean/declarations/isconstructible-range-comap.md) | 54 | `result-track:49ccbc5e71c9d167b49f45d6a7f9b0c25268cd56c3292993fea862f53f5e1ce7` |
+| 4 | `lemma` | [isOpenMap_comap_of_hasGoingDown_of_finitePresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChevalleyPublic.lean/declarations/isopenmap-comap-of-hasgoingdown-of-finitepresentation.md) | 59 | `result-track:8ad5c0f3851b5e2fa27de8e2cd1a7c09378997cc67adf08ec63c26078a26ed40` |
+| 5 | `theorem` | [isOpenMap_comap_algebraMap_tensorProduct_of_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChevalleyPublic.lean/declarations/isopenmap-comap-algebramap-tensorproduct-of-field.md) | 72 | `result-track:bf080061286eb535c9ce463d62f7ab148197b0264904a60b1171cc58ab15e0c7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

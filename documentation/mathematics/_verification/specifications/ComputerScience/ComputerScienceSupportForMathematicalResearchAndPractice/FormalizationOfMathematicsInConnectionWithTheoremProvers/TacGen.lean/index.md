@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TacGen.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TacGen.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TacGen.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TacGen.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [foo](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TacGen.lean/declarations/foo.md) | 6 | `result-track:5bb917f61ac8c6ca245e63ef11e8afc735d8f12e3c44fee26d689ac267c0f54a` |
-| 2 | `def` | [tacGen₁](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TacGen.lean/declarations/tacgen-source-edition-2.md) | 10 | `declaration-track:ed8f5b494b991c1484aa4d4ad7306adf34a514bd324b4661688b6b4032939a35` |
-| 3 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TacGen.lean/declarations/example-source-edition-2.md) | 13 | `declaration-track:df74a35f8a64ce10de45c318eb88915dc09779fe0ecf09926e74c30be9a311eb` |
-| 4 | `def` | [tacGen₂](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TacGen.lean/declarations/tacgen.md) | 17 | `declaration-track:11f568132260a123b57a70da7b7796cbd69141f391e3c0b1220733dae3e3a810` |
-| 5 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TacGen.lean/declarations/example.md) | 24 | `declaration-track:796769923910c5c3e8b69364fd15fd9545b0a531206f976c107f1bd764932af2` |
+| 1 | `theorem` | [foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TacGen.lean/declarations/foo.md) | 6 | `result-track:5bb917f61ac8c6ca245e63ef11e8afc735d8f12e3c44fee26d689ac267c0f54a` |
+| 2 | `def` | [tacGen₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TacGen.lean/declarations/tacgen-source-edition-2.md) | 10 | `declaration-track:ed8f5b494b991c1484aa4d4ad7306adf34a514bd324b4661688b6b4032939a35` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TacGen.lean/declarations/example-source-edition-2.md) | 13 | `declaration-track:df74a35f8a64ce10de45c318eb88915dc09779fe0ecf09926e74c30be9a311eb` |
+| 4 | `def` | [tacGen₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TacGen.lean/declarations/tacgen.md) | 17 | `declaration-track:11f568132260a123b57a70da7b7796cbd69141f391e3c0b1220733dae3e3a810` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TacGen.lean/declarations/example.md) | 24 | `declaration-track:796769923910c5c3e8b69364fd15fd9545b0a531206f976c107f1bd764932af2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

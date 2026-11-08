@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Averaging.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Averaging.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Averaging.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Averaging.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HeatAveragingDescriptor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Averaging.lean/declarations/heataveragingdescriptor.md) | 25 | `declaration-track:fb64a9548f7bbc10a5ee5b8e3c1c18f2a140081219dea70e18829583a19d54d4` |
-| 2 | `structure` | [CertifiedHeatAveragingOperator](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Averaging.lean/declarations/certifiedheataveragingoperator.md) | 33 | `declaration-track:c7afb5e0785f2b18aa421423b3cb86c45d83377bf4a63a05c3499f3b788b2c3f` |
-| 3 | `theorem` | [heatAveraging_not_reversible_without_certificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Averaging.lean/declarations/heataveraging-not-reversible-without-certificate.md) | 38 | `result-track:a4f2fad608f74152b3ed643772ef685b662bc37f4f63abf50d8b98cf7105d808` |
-| 4 | `theorem` | [heatAveraging_reversibility_requires_inverse_certificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Averaging.lean/declarations/heataveraging-reversibility-requires-inverse-certificate.md) | 45 | `result-track:fa42530984bc2964149f6b3c0ab4f2d8fa16154c1043e3a04041205db4c490d8` |
+| 1 | `structure` | [HeatAveragingDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Averaging.lean/declarations/heataveragingdescriptor.md) | 25 | `declaration-track:fb64a9548f7bbc10a5ee5b8e3c1c18f2a140081219dea70e18829583a19d54d4` |
+| 2 | `structure` | [CertifiedHeatAveragingOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Averaging.lean/declarations/certifiedheataveragingoperator.md) | 33 | `declaration-track:c7afb5e0785f2b18aa421423b3cb86c45d83377bf4a63a05c3499f3b788b2c3f` |
+| 3 | `theorem` | [heatAveraging_not_reversible_without_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Averaging.lean/declarations/heataveraging-not-reversible-without-certificate.md) | 38 | `result-track:a4f2fad608f74152b3ed643772ef685b662bc37f4f63abf50d8b98cf7105d808` |
+| 4 | `theorem` | [heatAveraging_reversibility_requires_inverse_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Averaging.lean/declarations/heataveraging-reversibility-requires-inverse-certificate.md) | 45 | `result-track:fa42530984bc2964149f6b3c0ab4f2d8fa16154c1043e3a04041205db4c490d8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

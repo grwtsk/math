@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/RepresentsNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/RepresentsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RepresentsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RepresentsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Represents](../../../../../Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/represents.md) | 36 | `declaration-track:85f0d05f5b365e64060f69fa9af3863297cbbffd48fd06d382f957a07d67dcc8` |
-| 2 | `lemma` | [image_out](../../../../../Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/image-out.md) | 43 | `result-track:476c9688d65f5efde4ff75384c5e12c93671be271f7157970ef69d75eb1aa5da` |
-| 3 | `lemma` | [existsUnique_rep](../../../../../Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/existsunique-rep.md) | 50 | `result-track:2dbb854c795ee902c49ecff94b1337265fcb539aaa51ca154bd29966aea035d9` |
-| 4 | `lemma` | [exists_inter_eq_singleton](../../../../../Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/exists-inter-eq-singleton.md) | 56 | `result-track:88dae121c25a87fd6e4ee998b123ddebca319070abf302f1edd522556cd1a56c` |
-| 5 | `lemma` | [disjoint_supp_of_notMem](../../../../../Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/disjoint-supp-of-notmem.md) | 60 | `result-track:1950648b0fcd311fb8e563204b4c86f9a586b1f91ec748775561acebbaef5875` |
-| 6 | `lemma` | [ncard_inter](../../../../../Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/ncard-inter.md) | 69 | `result-track:6433f5ec493ef7509e13e67518f5fd29beb0aaaddc71f2c593a999e43a61e581` |
-| 7 | `lemma` | [ncard_eq](../../../../../Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/ncard-eq.md) | 73 | `result-track:67114ec3b749b62590ae3a654cbd7e31235726fb8f025530041e4288b990d675` |
-| 8 | `lemma` | [ncard_sdiff_of_mem](../../../../../Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/ncard-sdiff-of-mem.md) | 76 | `result-track:6d7a2cac007a7054057fa160c271d99151bccd84a24f14d5870d8f87037c28e5` |
-| 9 | `lemma` | [ncard_sdiff_of_notMem](../../../../../Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/ncard-sdiff-of-notmem.md) | 82 | `result-track:efda6d81dad1eab1adee179575e9a945a1da60ee6f157b817341829025430e27` |
-| 10 | `lemma` | [ConnectedComponent.even_ncard_supp_sdiff_rep](../../../../../Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/connectedcomponent-even-ncard-supp-sdiff-rep.md) | 90 | `result-track:e614b0f38e4ebe0fe02a9640702aae879aaaa43e59bc00df015e0646fdd2d24c` |
+| 1 | `def` | [Represents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/represents.md) | 36 | `declaration-track:85f0d05f5b365e64060f69fa9af3863297cbbffd48fd06d382f957a07d67dcc8` |
+| 2 | `lemma` | [image_out](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/image-out.md) | 43 | `result-track:476c9688d65f5efde4ff75384c5e12c93671be271f7157970ef69d75eb1aa5da` |
+| 3 | `lemma` | [existsUnique_rep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/existsunique-rep.md) | 50 | `result-track:2dbb854c795ee902c49ecff94b1337265fcb539aaa51ca154bd29966aea035d9` |
+| 4 | `lemma` | [exists_inter_eq_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/exists-inter-eq-singleton.md) | 56 | `result-track:88dae121c25a87fd6e4ee998b123ddebca319070abf302f1edd522556cd1a56c` |
+| 5 | `lemma` | [disjoint_supp_of_notMem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/disjoint-supp-of-notmem.md) | 60 | `result-track:1950648b0fcd311fb8e563204b4c86f9a586b1f91ec748775561acebbaef5875` |
+| 6 | `lemma` | [ncard_inter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/ncard-inter.md) | 69 | `result-track:6433f5ec493ef7509e13e67518f5fd29beb0aaaddc71f2c593a999e43a61e581` |
+| 7 | `lemma` | [ncard_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/ncard-eq.md) | 73 | `result-track:67114ec3b749b62590ae3a654cbd7e31235726fb8f025530041e4288b990d675` |
+| 8 | `lemma` | [ncard_sdiff_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/ncard-sdiff-of-mem.md) | 76 | `result-track:6d7a2cac007a7054057fa160c271d99151bccd84a24f14d5870d8f87037c28e5` |
+| 9 | `lemma` | [ncard_sdiff_of_notMem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/ncard-sdiff-of-notmem.md) | 82 | `result-track:efda6d81dad1eab1adee179575e9a945a1da60ee6f157b817341829025430e27` |
+| 10 | `lemma` | [ConnectedComponent.even_ncard_supp_sdiff_rep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RepresentsNamespaced.lean/declarations/connectedcomponent-even-ncard-supp-sdiff-rep.md) | 90 | `result-track:e614b0f38e4ebe0fe02a9640702aae879aaaa43e59bc00df015e0646fdd2d24c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

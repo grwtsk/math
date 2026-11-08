@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/ProductFormulaNamespacedPublic.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/ProductFormulaNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/ProductFormulaNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/ProductFormulaNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [FinitePlace.prod_eq_inv_abs_norm_int](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/ProductFormulaNamespacedPublic.lean/declarations/finiteplace-prod-eq-inv-abs-norm-int.md) | 54 | `result-track:52831d55d1b6b1dddb5690ed889e317be1bf0d95c82fed5e43f722a98ab095ba` |
-| 2 | `theorem` | [FinitePlace.prod_eq_inv_abs_norm](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/ProductFormulaNamespacedPublic.lean/declarations/finiteplace-prod-eq-inv-abs-norm.md) | 85 | `result-track:3fb756703dffeced3651347c1489aacf64c308398462e2a95d28a2deff0f43b1` |
-| 3 | `theorem` | [prod_abs_eq_one](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/ProductFormulaNamespacedPublic.lean/declarations/prod-abs-eq-one.md) | 106 | `result-track:59f3ec4486c2677c3794c2b74080363baf9372f0f7b684c3565025d32002e362` |
+| 1 | `theorem` | [FinitePlace.prod_eq_inv_abs_norm_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/ProductFormulaNamespacedPublic.lean/declarations/finiteplace-prod-eq-inv-abs-norm-int.md) | 54 | `result-track:52831d55d1b6b1dddb5690ed889e317be1bf0d95c82fed5e43f722a98ab095ba` |
+| 2 | `theorem` | [FinitePlace.prod_eq_inv_abs_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/ProductFormulaNamespacedPublic.lean/declarations/finiteplace-prod-eq-inv-abs-norm.md) | 85 | `result-track:3fb756703dffeced3651347c1489aacf64c308398462e2a95d28a2deff0f43b1` |
+| 3 | `theorem` | [prod_abs_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/ProductFormulaNamespacedPublic.lean/declarations/prod-abs-eq-one.md) | 106 | `result-track:59f3ec4486c2677c3794c2b74080363baf9372f0f7b684c3565025d32002e362` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

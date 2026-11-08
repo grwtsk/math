@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SuppliedChangeOfMeasure.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SuppliedChangeOfMeasure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SuppliedChangeOfMeasure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SuppliedChangeOfMeasure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -50,7 +50,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `BitMatrix.Spectral.Capabilities` — import line 20; external provider; requires a separately pinned dependency.
 - `Mathlib.MeasureTheory.Integral.Bochner.Basic` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 22; external provider; requires a separately pinned dependency.
-- [Supplied Mean Averaging](../../../../MeasureAndIntegration/SuppliedMeanAveraging.lean/index.md) — import line 24; pinned internal source present.
+- [Supplied Mean Averaging](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SuppliedMeanAveraging.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -61,7 +61,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [spectral_changeOfMeasure](../../../../MeasureAndIntegration/SuppliedChangeOfMeasure.lean/declarations/spectral-changeofmeasure.md) | 52 | `result-track:944c27ae86acb0e4ed3a56d6abe2eb8778131e327871b8d0070d030eae3b3546` |
+| 1 | `theorem` | [spectral_changeOfMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SuppliedChangeOfMeasure.lean/declarations/spectral-changeofmeasure.md) | 52 | `result-track:944c27ae86acb0e4ed3a56d6abe2eb8778131e327871b8d0070d030eae3b3546` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

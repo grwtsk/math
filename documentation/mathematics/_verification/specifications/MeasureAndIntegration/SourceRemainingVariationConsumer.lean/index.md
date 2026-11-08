@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceRemainingVariationConsumer.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceRemainingVariationConsumer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainingVariationConsumer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainingVariationConsumer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [remainingAtomWork_abs_le_elementary_budget](../../../../MeasureAndIntegration/SourceRemainingVariationConsumer.lean/declarations/remainingatomwork-abs-le-elementary-budget.md) | 21 | `result-track:6ec3fea845994d8cdc6d63c9603102b32d7b4d37ce26692fa95266ec9cf9be83` |
-| 2 | `theorem` | [elementary_remaining_budget_not_eventually_bounded](../../../../MeasureAndIntegration/SourceRemainingVariationConsumer.lean/declarations/elementary-remaining-budget-not-eventually-bounded.md) | 47 | `result-track:5d6bd71877187b5c22e9af1b16ade36292d80ede0fc1bbf463bd7498fbcce603` |
+| 1 | `theorem` | [remainingAtomWork_abs_le_elementary_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainingVariationConsumer.lean/declarations/remainingatomwork-abs-le-elementary-budget.md) | 21 | `result-track:6ec3fea845994d8cdc6d63c9603102b32d7b4d37ce26692fa95266ec9cf9be83` |
+| 2 | `theorem` | [elementary_remaining_budget_not_eventually_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainingVariationConsumer.lean/declarations/elementary-remaining-budget-not-eventually-bounded.md) | 47 | `result-track:5d6bd71877187b5c22e9af1b16ade36292d80ede0fc1bbf463bd7498fbcce603` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

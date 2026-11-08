@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -64,14 +64,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [coprime_mul_succ](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/declarations/coprime-mul-succ.md) | 49 | `result-track:ba9effccdf154a4842bc63b3f45c8417fbfeb634d6e06ec68029d4655e90ee98` |
-| 2 | `def` | [supOfSeq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/declarations/supofseq.md) | 63 | `declaration-track:fd5c13ca39451d4f8d9d027fff2cf1ad0b5a1f2f3917fdf91867810d1656e1da` |
-| 3 | `def` | [coprimes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/declarations/coprimes.md) | 65 | `declaration-track:39b501aebc5248d7f9ef81c7e3d4a3b6372bba05c7cc33b6de237ac26d66b2d1` |
-| 4 | `lemma` | [coprimes_lt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/declarations/coprimes-lt.md) | 67 | `result-track:55ae9194161d4ae5ce748279e621e684a92e445e5ab234ec1a275e60bb917545` |
-| 5 | `lemma` | [pairwise_coprime_coprimes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/declarations/pairwise-coprime-coprimes.md) | 76 | `result-track:010bc8ccf21fba333d7dbcfc711e13dfac05fb7b11e48fb37749bd5abdc1e219` |
-| 6 | `def` | [beta](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/declarations/beta.md) | 88 | `declaration-track:a76dd4ead348fb6d4efd29dbd1f709cdd2750c5a73799381ede141324a37cee4` |
-| 7 | `def` | [unbeta](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/declarations/unbeta.md) | 92 | `declaration-track:db0d2a44fcdec910c811acc88478ebcd60a3a5ea9a69544641d81a6977d3afeb` |
-| 8 | `lemma` | [beta_unbeta_coe](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/declarations/beta-unbeta-coe.md) | 99 | `result-track:90b983d40351edabba69ce6bf89c76a10d44dfb0ee7f81b46f03064e880eb93e` |
+| 1 | `lemma` | [coprime_mul_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/declarations/coprime-mul-succ.md) | 49 | `result-track:ba9effccdf154a4842bc63b3f45c8417fbfeb634d6e06ec68029d4655e90ee98` |
+| 2 | `def` | [supOfSeq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/declarations/supofseq.md) | 63 | `declaration-track:fd5c13ca39451d4f8d9d027fff2cf1ad0b5a1f2f3917fdf91867810d1656e1da` |
+| 3 | `def` | [coprimes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/declarations/coprimes.md) | 65 | `declaration-track:39b501aebc5248d7f9ef81c7e3d4a3b6372bba05c7cc33b6de237ac26d66b2d1` |
+| 4 | `lemma` | [coprimes_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/declarations/coprimes-lt.md) | 67 | `result-track:55ae9194161d4ae5ce748279e621e684a92e445e5ab234ec1a275e60bb917545` |
+| 5 | `lemma` | [pairwise_coprime_coprimes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/declarations/pairwise-coprime-coprimes.md) | 76 | `result-track:010bc8ccf21fba333d7dbcfc711e13dfac05fb7b11e48fb37749bd5abdc1e219` |
+| 6 | `def` | [beta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/declarations/beta.md) | 88 | `declaration-track:a76dd4ead348fb6d4efd29dbd1f709cdd2750c5a73799381ede141324a37cee4` |
+| 7 | `def` | [unbeta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/declarations/unbeta.md) | 92 | `declaration-track:db0d2a44fcdec910c811acc88478ebcd60a3a5ea9a69544641d81a6977d3afeb` |
+| 8 | `lemma` | [beta_unbeta_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GodelBetaFunction.lean/declarations/beta-unbeta-coe.md) | 99 | `result-track:90b983d40351edabba69ce6bf89c76a10d44dfb0ee7f81b46f03064e880eb93e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Model](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/model.md) | 35 | `declaration-track:31c7afea5124846c64c6cec8bbb00528219aa9152b66e3937eb4e1bace5eee58` |
-| 2 | `theorem` | [id_comp_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/id-comp-apply.md) | 80 | `result-track:29d5f7641935e20b8c78e17bfad2be7a2ed74b3f38ee13428c7afa2bc2be5922` |
-| 3 | `theorem` | [comp_id_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/comp-id-apply.md) | 87 | `result-track:5d5437b47ee667e02269155ba405cdaec19d5d42fdf591611d3bb2962fccf3a5` |
-| 4 | `structure` | [CertifiedQuasiIso](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/certifiedquasiiso.md) | 96 | `declaration-track:27adc59b665e24deff677a9e0b76a9a1454c69cfb323645a92bad903f7e4dcf6` |
-| 5 | `theorem` | [ext](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/ext.md) | 107 | `result-track:27af43fc440ec95c9da5a6198e64f49b0653c0ab17b562ae62cde2337b6da024` |
-| 6 | `def` | [id](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/id.md) | 116 | `declaration-track:70bb091630fa53ab3e90633445831f0c27267fdfd198c0da770e8f2eddcb7129` |
-| 7 | `def` | [comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/comp.md) | 122 | `declaration-track:dc21c217de01d08dceaa4da553e66d2b0bf42c59bc2859c72e1766c56eb17ff4` |
-| 8 | `theorem` | [id_hom](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/id-hom.md) | 130 | `result-track:21748cde058e674be266f81cb7687e41872250b0ea37b173ede88d618c2950e9` |
-| 9 | `theorem` | [comp_hom](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/comp-hom.md) | 135 | `result-track:2d6786831f4847b481f5596850f70576b44ce39d13144b57caf74c1dc7f53c89` |
-| 10 | `theorem` | [id_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/id-comp.md) | 142 | `result-track:4f4a3ab9c7cda518c128f28cf99de82f42191a0e549e24f2779303fe33f538ad` |
-| 11 | `theorem` | [comp_id](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/comp-id.md) | 149 | `result-track:87ff5c543920f4f0df77a649b81224fd7fc8cdc6a6878f862e8c89b2444692a0` |
-| 12 | `theorem` | [comp_assoc](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/comp-assoc.md) | 155 | `result-track:b0ab12e624bc2fda907b1374c0c3a6b7e37e45c70c7d0d3cb1b6d560497c090f` |
+| 1 | `structure` | [Model](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/model.md) | 35 | `declaration-track:31c7afea5124846c64c6cec8bbb00528219aa9152b66e3937eb4e1bace5eee58` |
+| 2 | `theorem` | [id_comp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/id-comp-apply.md) | 80 | `result-track:29d5f7641935e20b8c78e17bfad2be7a2ed74b3f38ee13428c7afa2bc2be5922` |
+| 3 | `theorem` | [comp_id_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/comp-id-apply.md) | 87 | `result-track:5d5437b47ee667e02269155ba405cdaec19d5d42fdf591611d3bb2962fccf3a5` |
+| 4 | `structure` | [CertifiedQuasiIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/certifiedquasiiso.md) | 96 | `declaration-track:27adc59b665e24deff677a9e0b76a9a1454c69cfb323645a92bad903f7e4dcf6` |
+| 5 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/ext.md) | 107 | `result-track:27af43fc440ec95c9da5a6198e64f49b0653c0ab17b562ae62cde2337b6da024` |
+| 6 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/id.md) | 116 | `declaration-track:70bb091630fa53ab3e90633445831f0c27267fdfd198c0da770e8f2eddcb7129` |
+| 7 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/comp.md) | 122 | `declaration-track:dc21c217de01d08dceaa4da553e66d2b0bf42c59bc2859c72e1766c56eb17ff4` |
+| 8 | `theorem` | [id_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/id-hom.md) | 130 | `result-track:21748cde058e674be266f81cb7687e41872250b0ea37b173ede88d618c2950e9` |
+| 9 | `theorem` | [comp_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/comp-hom.md) | 135 | `result-track:2d6786831f4847b481f5596850f70576b44ce39d13144b57caf74c1dc7f53c89` |
+| 10 | `theorem` | [id_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/id-comp.md) | 142 | `result-track:4f4a3ab9c7cda518c128f28cf99de82f42191a0e549e24f2779303fe33f538ad` |
+| 11 | `theorem` | [comp_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/comp-id.md) | 149 | `result-track:87ff5c543920f4f0df77a649b81224fd7fc8cdc6a6878f862e8c89b2444692a0` |
+| 12 | `theorem` | [comp_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedModel.lean/declarations/comp-assoc.md) | 155 | `result-track:b0ab12e624bc2fda907b1374c0c3a6b7e37e45c70c7d0d3cb1b6d560497c090f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ListNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ListNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ListNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ListNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [prod_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ListNamespaced.lean/declarations/prod-nonneg.md) | 27 | `result-track:689b934d093d871bc3b0cd0386839dea1055f09d469ccbb234696f73e17ef044` |
-| 2 | `lemma` | [one_le_prod](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ListNamespaced.lean/declarations/one-le-prod.md) | 36 | `result-track:a60aa635ccc16aaa81e3e90387722499bfd8bbc9c5342cbca615bb45c9b3fb5f` |
-| 3 | `theorem` | [prod_map_le_prod_map₀](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ListNamespaced.lean/declarations/prod-map-le-prod-map.md) | 44 | `result-track:5167148bc9183cae1cb0d59a5662aa6d95c623dd848c3718bdbfca66d90f595d` |
-| 4 | `theorem` | [prod_map_le_pow_length₀](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ListNamespaced.lean/declarations/prod-map-le-pow-length.md) | 69 | `result-track:410c6621726db82d8782f15b07888534c5c00c01bd5fc55c09e1b050b7f5c50b` |
-| 5 | `lemma` | [prod_pos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ListNamespaced.lean/declarations/prod-pos.md) | 78 | `result-track:baaa7800a74f54cc15c10268adec50451f6140ec91403d872d49b4f4ab30ea00` |
-| 6 | `theorem` | [prod_map_lt_prod_map](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ListNamespaced.lean/declarations/prod-map-lt-prod-map.md) | 86 | `result-track:16cf3f6af4959528ca814eb82295c35b9880f6a78a4316fbba0cbaf6fd8f7708` |
+| 1 | `lemma` | [prod_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ListNamespaced.lean/declarations/prod-nonneg.md) | 27 | `result-track:689b934d093d871bc3b0cd0386839dea1055f09d469ccbb234696f73e17ef044` |
+| 2 | `lemma` | [one_le_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ListNamespaced.lean/declarations/one-le-prod.md) | 36 | `result-track:a60aa635ccc16aaa81e3e90387722499bfd8bbc9c5342cbca615bb45c9b3fb5f` |
+| 3 | `theorem` | [prod_map_le_prod_map₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ListNamespaced.lean/declarations/prod-map-le-prod-map.md) | 44 | `result-track:5167148bc9183cae1cb0d59a5662aa6d95c623dd848c3718bdbfca66d90f595d` |
+| 4 | `theorem` | [prod_map_le_pow_length₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ListNamespaced.lean/declarations/prod-map-le-pow-length.md) | 69 | `result-track:410c6621726db82d8782f15b07888534c5c00c01bd5fc55c09e1b050b7f5c50b` |
+| 5 | `lemma` | [prod_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ListNamespaced.lean/declarations/prod-pos.md) | 78 | `result-track:baaa7800a74f54cc15c10268adec50451f6140ec91403d872d49b4f4ab30ea00` |
+| 6 | `theorem` | [prod_map_lt_prod_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ListNamespaced.lean/declarations/prod-map-lt-prod-map.md) | 86 | `result-track:16cf3f6af4959528ca814eb82295c35b9880f6a78a4316fbba0cbaf6fd8f7708` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

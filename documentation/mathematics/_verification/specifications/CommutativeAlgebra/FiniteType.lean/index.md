@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FiniteType.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FiniteType.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteType.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteType.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_finset_adjoin_eq_top_and_homogeneous](../../../../CommutativeAlgebra/FiniteType.lean/declarations/exists-finset-adjoin-eq-top-and-homogeneous.md) | 26 | `result-track:f4d7ff449ef39a047e49ea21af8a2cfed69ba01ec2240ad7a2bc05c3b014995d` |
-| 2 | `theorem` | [exists_finset_adjoin_eq_top_and_homogeneous_ne_zero](../../../../CommutativeAlgebra/FiniteType.lean/declarations/exists-finset-adjoin-eq-top-and-homogeneous-ne-zero.md) | 39 | `result-track:641ddd7a29a421ee09f56d88fb1b938834dd689731db6f8fc3be2e175dd5ce02` |
+| 1 | `theorem` | [exists_finset_adjoin_eq_top_and_homogeneous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteType.lean/declarations/exists-finset-adjoin-eq-top-and-homogeneous.md) | 26 | `result-track:f4d7ff449ef39a047e49ea21af8a2cfed69ba01ec2240ad7a2bc05c3b014995d` |
+| 2 | `theorem` | [exists_finset_adjoin_eq_top_and_homogeneous_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteType.lean/declarations/exists-finset-adjoin-eq-top-and-homogeneous-ne-zero.md) | 39 | `result-track:641ddd7a29a421ee09f56d88fb1b938834dd689731db6f8fc3be2e175dd5ce02` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

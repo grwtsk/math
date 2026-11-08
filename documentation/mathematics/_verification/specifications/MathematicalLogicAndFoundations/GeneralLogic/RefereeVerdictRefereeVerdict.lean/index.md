@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefereeVerdictRefereeVerdict.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefereeVerdictRefereeVerdict.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefereeVerdictRefereeVerdict.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefereeVerdictRefereeVerdict.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [RefereeVerdict](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefereeVerdictRefereeVerdict.lean/declarations/refereeverdict.md) | 18 | `declaration-track:4993f15cadc4f5e595ba17056aea3a72e8a479aa7ede3c847ae85231a2357223` |
-| 2 | `structure` | [CurrentCanonicalPathVerdict](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefereeVerdictRefereeVerdict.lean/declarations/currentcanonicalpathverdict.md) | 23 | `declaration-track:ae404a68713e1530fe476d578e9116f2d55a11aedfca55bab0385ca5428fc1ea` |
-| 3 | `def` | [currentRefereeVerdict](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefereeVerdictRefereeVerdict.lean/declarations/currentrefereeverdict.md) | 29 | `declaration-track:e0ce3f72e9b68f6ed6172634bc7e1392195797c9c429520a4ff82deaf56f6013` |
-| 4 | `theorem` | [accept_research_ne_accept_rh_proof](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefereeVerdictRefereeVerdict.lean/declarations/accept-research-ne-accept-rh-proof.md) | 33 | `result-track:dbd163b9ecb608af4cfdf0a3a7b26a898d423c2f53cd729af233508f6737c356` |
-| 5 | `theorem` | [current_verdict_rejects_as_rh_proof](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefereeVerdictRefereeVerdict.lean/declarations/current-verdict-rejects-as-rh-proof.md) | 37 | `result-track:faf4a86104c556d197ae3d89bd3dbe8575b71d762e89f2da05e84b2d67ba5e31` |
+| 1 | `inductive` | [RefereeVerdict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefereeVerdictRefereeVerdict.lean/declarations/refereeverdict.md) | 18 | `declaration-track:4993f15cadc4f5e595ba17056aea3a72e8a479aa7ede3c847ae85231a2357223` |
+| 2 | `structure` | [CurrentCanonicalPathVerdict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefereeVerdictRefereeVerdict.lean/declarations/currentcanonicalpathverdict.md) | 23 | `declaration-track:ae404a68713e1530fe476d578e9116f2d55a11aedfca55bab0385ca5428fc1ea` |
+| 3 | `def` | [currentRefereeVerdict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefereeVerdictRefereeVerdict.lean/declarations/currentrefereeverdict.md) | 29 | `declaration-track:e0ce3f72e9b68f6ed6172634bc7e1392195797c9c429520a4ff82deaf56f6013` |
+| 4 | `theorem` | [accept_research_ne_accept_rh_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefereeVerdictRefereeVerdict.lean/declarations/accept-research-ne-accept-rh-proof.md) | 33 | `result-track:dbd163b9ecb608af4cfdf0a3a7b26a898d423c2f53cd729af233508f6737c356` |
+| 5 | `theorem` | [current_verdict_rejects_as_rh_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefereeVerdictRefereeVerdict.lean/declarations/current-verdict-rejects-as-rh-proof.md) | 37 | `result-track:faf4a86104c556d197ae3d89bd3dbe8575b71d762e89f2da05e84b2d67ba5e31` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

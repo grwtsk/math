@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraIdealNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraIdealNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraIdealNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraIdealNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [MonoidAlgebra.mem_ideal_span_of_image](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraIdealNamespaced.lean/declarations/monoidalgebra-mem-ideal-span-of-image.md) | 30 | `result-track:b26dfb0d5126b7bd1e429861aadeab557c8c1c92b405bb26a8d3e51af18fc3b9` |
-| 2 | `theorem` | [AddMonoidAlgebra.mem_ideal_span_of'_image](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraIdealNamespaced.lean/declarations/addmonoidalgebra-mem-ideal-span-of-image.md) | 69 | `result-track:f7574c3baaf3963e31e4ee3e4753e67e253a75bcd306845fcff309767c4425c4` |
+| 1 | `theorem` | [MonoidAlgebra.mem_ideal_span_of_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraIdealNamespaced.lean/declarations/monoidalgebra-mem-ideal-span-of-image.md) | 30 | `result-track:b26dfb0d5126b7bd1e429861aadeab557c8c1c92b405bb26a8d3e51af18fc3b9` |
+| 2 | `theorem` | [AddMonoidAlgebra.mem_ideal_span_of'_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraIdealNamespaced.lean/declarations/addmonoidalgebra-mem-ideal-span-of-image.md) | 69 | `result-track:f7574c3baaf3963e31e4ee3e4753e67e253a75bcd306845fcff309767c4425c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

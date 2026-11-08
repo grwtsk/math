@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Tower.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Tower.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Tower.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Tower.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Tower](../../../../../ComputerScience/AlgorithmsInComputerScience/Tower.lean/declarations/tower.md) | 11 | `declaration-track:9d64b65f83bd0eaa3b566d7f8a5832484b1040d5ae76bb43dae3c4d335513f32` |
-| 2 | `def` | [Tower.append](../../../../../ComputerScience/AlgorithmsInComputerScience/Tower.lean/declarations/tower-append.md) | 17 | `declaration-track:46e63bd079040648c5075770cc6572ddbca6c61e30e737a2642569f622534032` |
-| 3 | `theorem` | [Tower.append_preserves_prefix](../../../../../ComputerScience/AlgorithmsInComputerScience/Tower.lean/declarations/tower-append-preserves-prefix.md) | 27 | `result-track:783d75ef2b791d7ee34b3b7146bb0f610952f7515e6bd1aba8a74efcd7995406` |
+| 1 | `structure` | [Tower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Tower.lean/declarations/tower.md) | 11 | `declaration-track:9d64b65f83bd0eaa3b566d7f8a5832484b1040d5ae76bb43dae3c4d335513f32` |
+| 2 | `def` | [Tower.append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Tower.lean/declarations/tower-append.md) | 17 | `declaration-track:46e63bd079040648c5075770cc6572ddbca6c61e30e737a2642569f622534032` |
+| 3 | `theorem` | [Tower.append_preserves_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Tower.lean/declarations/tower-append-preserves-prefix.md) | 27 | `result-track:783d75ef2b791d7ee34b3b7146bb0f610952f7515e6bd1aba8a74efcd7995406` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

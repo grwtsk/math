@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ArzelaAscoli.lean/index.md) · [Full source](../../../../GeneralTopology/ArzelaAscoli.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ArzelaAscoli.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ArzelaAscoli.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [arzela_ascoli₁](../../../../GeneralTopology/ArzelaAscoli.lean/declarations/arzela-ascoli-source-edition-2.md) | 26 | `result-track:259c3da02b7c353deff33624888ad7dcab89daabb024dbde28d84a8d83418b65` |
-| 2 | `theorem` | [arzela_ascoli₂](../../../../GeneralTopology/ArzelaAscoli.lean/declarations/arzela-ascoli.md) | 86 | `result-track:140c3f8dc96c2d9fa2f730a842313ccd89f73262c92f62a540cad01b5df4c468` |
-| 3 | `theorem` | [arzela_ascoli](../../../../GeneralTopology/ArzelaAscoli.lean/declarations/arzela-ascoli-source-edition-3.md) | 105 | `result-track:83fce6d551c7c1e1854fa633ef0fd3d9567a100f6cc5546d6cb398665b922ecb` |
+| 1 | `theorem` | [arzela_ascoli₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ArzelaAscoli.lean/declarations/arzela-ascoli-source-edition-2.md) | 26 | `result-track:259c3da02b7c353deff33624888ad7dcab89daabb024dbde28d84a8d83418b65` |
+| 2 | `theorem` | [arzela_ascoli₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ArzelaAscoli.lean/declarations/arzela-ascoli.md) | 86 | `result-track:140c3f8dc96c2d9fa2f730a842313ccd89f73262c92f62a540cad01b5df4c468` |
+| 3 | `theorem` | [arzela_ascoli](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ArzelaAscoli.lean/declarations/arzela-ascoli-source-edition-3.md) | 105 | `result-track:83fce6d551c7c1e1854fa633ef0fd3d9567a100f6cc5546d6cb398665b922ecb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

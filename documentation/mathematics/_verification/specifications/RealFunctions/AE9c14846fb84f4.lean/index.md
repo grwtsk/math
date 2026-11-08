@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AE9c14846fb84f4.lean/index.md) · [Full source](../../../../RealFunctions/AE9c14846fb84f4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AE9c14846fb84f4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AE9c14846fb84f4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,7 +61,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [zeroSemanticKernel_apply](../../../../RealFunctions/AE9c14846fb84f4.lean/declarations/zerosemantickernel-apply.md) | 27 | `result-track:3668abcbafb4e2c768690d0782b25bfe5932fa02fa7f6b4f0aaf86b00f9f892b` |
+| 1 | `theorem` | [zeroSemanticKernel_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AE9c14846fb84f4.lean/declarations/zerosemantickernel-apply.md) | 27 | `result-track:3668abcbafb4e2c768690d0782b25bfe5932fa02fa7f6b4f0aaf86b00f9f892b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

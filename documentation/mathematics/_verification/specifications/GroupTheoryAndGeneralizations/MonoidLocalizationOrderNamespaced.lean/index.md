@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [le](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/le.md) | 34 | `declaration-track:74b30a26d455060655bd49f15d2ce2c61d93d53d8b412a6dd2fb8811dbf210d6` |
-| 2 | `instance` | [lt](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/lt.md) | 47 | `declaration-track:05f63aa839a6f03f170f4ea164b3f21de1f9ae12433e5cf63f4e5b25697a6d5b` |
-| 3 | `theorem` | [mk_le_mk](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/mk-le-mk.md) | 60 | `result-track:a5598a9c21e146551d81dd97cbd38a4ace623393ff64d2a516bc89b728ee2d67` |
-| 4 | `theorem` | [mk_lt_mk](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/mk-lt-mk.md) | 64 | `result-track:10658ae804dd1b8b09659bdadcde9bb0a376c89a809a6b09dd0322667c6f0ca9` |
-| 5 | `instance` | [partialOrder](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/partialorder.md) | 69 | `declaration-track:c1d7aed124a9d134c9bbf63a59364d585203134a1afd0d3915a78e2d42268764` |
-| 6 | `instance` | [isOrderedCancelMonoid](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/isorderedcancelmonoid.md) | 91 | `declaration-track:ae547dbcdba67e6b46eb0664b8dcf1e9708d37b39f8ceef8c0956830409c3752` |
-| 7 | `instance` | [decidableLE](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/decidablele.md) | 103 | `declaration-track:891257be02d1c266802e2698704cc38a71b0ab380d001f91d26f5b9110cb20e1` |
-| 8 | `instance` | [decidableLT](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/decidablelt.md) | 107 | `declaration-track:b69918a6d77aed56b6369fe79fc08c22086cf4b6741a99d46c986879508c7639` |
-| 9 | `def` | [mkOrderEmbedding](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/mkorderembedding.md) | 113 | `declaration-track:c5755bb9479241f77181f19f228e2b44b1c64029edc124a75f535bd0269b1e6b` |
-| 10 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/instance.md) | 121 | `declaration-track:792fa658cadb92d6cbbf350f0148fa625962d2b914aae7667dad6df2a1f4e122` |
+| 1 | `instance` | [le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/le.md) | 34 | `declaration-track:74b30a26d455060655bd49f15d2ce2c61d93d53d8b412a6dd2fb8811dbf210d6` |
+| 2 | `instance` | [lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/lt.md) | 47 | `declaration-track:05f63aa839a6f03f170f4ea164b3f21de1f9ae12433e5cf63f4e5b25697a6d5b` |
+| 3 | `theorem` | [mk_le_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/mk-le-mk.md) | 60 | `result-track:a5598a9c21e146551d81dd97cbd38a4ace623393ff64d2a516bc89b728ee2d67` |
+| 4 | `theorem` | [mk_lt_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/mk-lt-mk.md) | 64 | `result-track:10658ae804dd1b8b09659bdadcde9bb0a376c89a809a6b09dd0322667c6f0ca9` |
+| 5 | `instance` | [partialOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/partialorder.md) | 69 | `declaration-track:c1d7aed124a9d134c9bbf63a59364d585203134a1afd0d3915a78e2d42268764` |
+| 6 | `instance` | [isOrderedCancelMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/isorderedcancelmonoid.md) | 91 | `declaration-track:ae547dbcdba67e6b46eb0664b8dcf1e9708d37b39f8ceef8c0956830409c3752` |
+| 7 | `instance` | [decidableLE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/decidablele.md) | 103 | `declaration-track:891257be02d1c266802e2698704cc38a71b0ab380d001f91d26f5b9110cb20e1` |
+| 8 | `instance` | [decidableLT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/decidablelt.md) | 107 | `declaration-track:b69918a6d77aed56b6369fe79fc08c22086cf4b6741a99d46c986879508c7639` |
+| 9 | `def` | [mkOrderEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/mkorderembedding.md) | 113 | `declaration-track:c5755bb9479241f77181f19f228e2b44b1c64029edc124a75f535bd0269b1e6b` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationOrderNamespaced.lean/declarations/instance.md) | 121 | `declaration-track:792fa658cadb92d6cbbf350f0148fa625962d2b914aae7667dad6df2a1f4e122` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

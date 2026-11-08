@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Comparison.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Comparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Comparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Comparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [arithmetic_zero_equality](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Comparison.lean/declarations/arithmetic-zero-equality.md) | 23 | `result-track:91752835c9d1352c0d0fff40409a037d2ba745d129818b4e3256a56bbf1082ad` |
-| 2 | `theorem` | [zero_side_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Comparison.lean/declarations/zero-side-identity.md) | 44 | `result-track:fbc5b3fedb9dc8fddb4d4379cffa41019faafbceb8fc94d76a54b8736e4968ff` |
-| 3 | `theorem` | [arithmetic_zero_hasSum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Comparison.lean/declarations/arithmetic-zero-hassum.md) | 48 | `result-track:02e19a494c00b1117dbb3689a63cdd48fa56cded9d74e3189afd4e3b53196bec` |
-| 4 | `theorem` | [normalized_hasSum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Comparison.lean/declarations/normalized-hassum.md) | 52 | `result-track:641605fccd60277ab8867844fc42ac876d2246f774b14ea699d2f791bee1ce04` |
-| 5 | `theorem` | [original_source_equality](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Comparison.lean/declarations/original-source-equality.md) | 60 | `result-track:b2565520439847b117f7886b3712801de82be982644a6d532e39387442fa4828` |
+| 1 | `theorem` | [arithmetic_zero_equality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Comparison.lean/declarations/arithmetic-zero-equality.md) | 23 | `result-track:91752835c9d1352c0d0fff40409a037d2ba745d129818b4e3256a56bbf1082ad` |
+| 2 | `theorem` | [zero_side_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Comparison.lean/declarations/zero-side-identity.md) | 44 | `result-track:fbc5b3fedb9dc8fddb4d4379cffa41019faafbceb8fc94d76a54b8736e4968ff` |
+| 3 | `theorem` | [arithmetic_zero_hasSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Comparison.lean/declarations/arithmetic-zero-hassum.md) | 48 | `result-track:02e19a494c00b1117dbb3689a63cdd48fa56cded9d74e3189afd4e3b53196bec` |
+| 4 | `theorem` | [normalized_hasSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Comparison.lean/declarations/normalized-hassum.md) | 52 | `result-track:641605fccd60277ab8867844fc42ac876d2246f774b14ea699d2f791bee1ce04` |
+| 5 | `theorem` | [original_source_equality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Comparison.lean/declarations/original-source-equality.md) | 60 | `result-track:b2565520439847b117f7886b3712801de82be982644a6d532e39387442fa4828` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

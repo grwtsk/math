@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRingPublic.lean/index.md) · [Full source](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRingPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRingPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRingPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [EventuallyLE.mul_le_mul](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRingPublic.lean/declarations/eventuallyle-mul-le-mul.md) | 24 | `result-track:338bce37c9fb0001e914f3663d957c6e01d7316d1c4d5ad6bd8d95e898991586` |
-| 2 | `theorem` | [EventuallyLE.mul_le_mul'](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRingPublic.lean/declarations/eventuallyle-mul-le-mul-source-edition-2.md) | 30 | `result-track:f48ab305cf6949057afab195177539bf633e82ebe6255c4da27406d7b856129f` |
-| 3 | `theorem` | [EventuallyLE.mul_nonneg](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRingPublic.lean/declarations/eventuallyle-mul-nonneg.md) | 35 | `result-track:020a66d69e73ff3ea29e6ad3fb6630e9f9530787d269cc34f71abbd67b0bfc18` |
-| 4 | `theorem` | [eventually_sub_nonneg](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRingPublic.lean/declarations/eventually-sub-nonneg.md) | 39 | `result-track:5ae3190ff4bb654d61d085b7dbe270a2f62939ae0374ea63dc8932691069a8fc` |
-| 5 | `instance` | [instIsOrderedRing](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRingPublic.lean/declarations/instisorderedring.md) | 48 | `declaration-track:5c746e70759f7037db9377cb784279c1b0e929383deff257e5fabd94daae840e` |
+| 1 | `theorem` | [EventuallyLE.mul_le_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRingPublic.lean/declarations/eventuallyle-mul-le-mul.md) | 24 | `result-track:338bce37c9fb0001e914f3663d957c6e01d7316d1c4d5ad6bd8d95e898991586` |
+| 2 | `theorem` | [EventuallyLE.mul_le_mul'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRingPublic.lean/declarations/eventuallyle-mul-le-mul-source-edition-2.md) | 30 | `result-track:f48ab305cf6949057afab195177539bf633e82ebe6255c4da27406d7b856129f` |
+| 3 | `theorem` | [EventuallyLE.mul_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRingPublic.lean/declarations/eventuallyle-mul-nonneg.md) | 35 | `result-track:020a66d69e73ff3ea29e6ad3fb6630e9f9530787d269cc34f71abbd67b0bfc18` |
+| 4 | `theorem` | [eventually_sub_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRingPublic.lean/declarations/eventually-sub-nonneg.md) | 39 | `result-track:5ae3190ff4bb654d61d085b7dbe270a2f62939ae0374ea63dc8932691069a8fc` |
+| 5 | `instance` | [instIsOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRingPublic.lean/declarations/instisorderedring.md) | 48 | `declaration-track:5c746e70759f7037db9377cb784279c1b0e929383deff257e5fabd94daae840e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

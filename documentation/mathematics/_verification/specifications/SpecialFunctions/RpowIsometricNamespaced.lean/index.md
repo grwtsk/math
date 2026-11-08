@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/RpowIsometricNamespaced.lean/index.md) · [Full source](../../../../SpecialFunctions/RpowIsometricNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RpowIsometricNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RpowIsometricNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [nnnorm_nnrpow](../../../../SpecialFunctions/RpowIsometricNamespaced.lean/declarations/nnnorm-nnrpow.md) | 42 | `result-track:12d5820193129212185898b9ee0fe3944f03c03c9e5bf6147c8c185adfbc56ba` |
-| 2 | `lemma` | [norm_nnrpow](../../../../SpecialFunctions/RpowIsometricNamespaced.lean/declarations/norm-nnrpow.md) | 46 | `result-track:a645ab0d7871cd3edecc3a6c9ec296f35f257d6df4f8f37f7d4545311d758602` |
-| 3 | `lemma` | [nnnorm_sqrt](../../../../SpecialFunctions/RpowIsometricNamespaced.lean/declarations/nnnorm-sqrt.md) | 50 | `result-track:74409a6f966ace11ed12f343f402952ba8bb01c6046a2fafc487c91e4590ced2` |
-| 4 | `lemma` | [norm_sqrt](../../../../SpecialFunctions/RpowIsometricNamespaced.lean/declarations/norm-sqrt.md) | 54 | `result-track:7bcbfc2eac96cf4899937653a20a94fc560d4999cfc2248621ee012f0bc478f3` |
-| 5 | `lemma` | [nnnorm_rpow](../../../../SpecialFunctions/RpowIsometricNamespaced.lean/declarations/nnnorm-rpow.md) | 65 | `result-track:35b5fed3b631d85ac9bf4271766d0b69103c43fe7e8a95cec290351bca49dd54` |
-| 6 | `lemma` | [norm_rpow](../../../../SpecialFunctions/RpowIsometricNamespaced.lean/declarations/norm-rpow.md) | 71 | `result-track:a1898e8da81420b67726c5fca7e99edc6c576a7b715b1cb38e3e8f2243f1e376` |
+| 1 | `lemma` | [nnnorm_nnrpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RpowIsometricNamespaced.lean/declarations/nnnorm-nnrpow.md) | 42 | `result-track:12d5820193129212185898b9ee0fe3944f03c03c9e5bf6147c8c185adfbc56ba` |
+| 2 | `lemma` | [norm_nnrpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RpowIsometricNamespaced.lean/declarations/norm-nnrpow.md) | 46 | `result-track:a645ab0d7871cd3edecc3a6c9ec296f35f257d6df4f8f37f7d4545311d758602` |
+| 3 | `lemma` | [nnnorm_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RpowIsometricNamespaced.lean/declarations/nnnorm-sqrt.md) | 50 | `result-track:74409a6f966ace11ed12f343f402952ba8bb01c6046a2fafc487c91e4590ced2` |
+| 4 | `lemma` | [norm_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RpowIsometricNamespaced.lean/declarations/norm-sqrt.md) | 54 | `result-track:7bcbfc2eac96cf4899937653a20a94fc560d4999cfc2248621ee012f0bc478f3` |
+| 5 | `lemma` | [nnnorm_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RpowIsometricNamespaced.lean/declarations/nnnorm-rpow.md) | 65 | `result-track:35b5fed3b631d85ac9bf4271766d0b69103c43fe7e8a95cec290351bca49dd54` |
+| 6 | `lemma` | [norm_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RpowIsometricNamespaced.lean/declarations/norm-rpow.md) | 71 | `result-track:a1898e8da81420b67726c5fca7e99edc6c576a7b715b1cb38e3e8f2243f1e376` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

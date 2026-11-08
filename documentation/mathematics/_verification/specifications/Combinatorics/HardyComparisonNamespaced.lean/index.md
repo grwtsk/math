@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/HardyComparisonNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/HardyComparisonNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HardyComparisonNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HardyComparisonNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HardySoninPacketBridge](../../../../Combinatorics/HardyComparisonNamespaced.lean/declarations/hardysoninpacketbridge.md) | 22 | `declaration-track:e1524c3035e4d96408f098cec0f946f80b04561caa27beb3187abe26e2ec129f` |
-| 2 | `structure` | [HardySoninTraceClassBridge](../../../../Combinatorics/HardyComparisonNamespaced.lean/declarations/hardysonintraceclassbridge.md) | 45 | `declaration-track:be2448a72770362429177b85fbe3ed2e5d1ceb36752c0c99356a822a09bfe63f` |
-| 3 | `structure` | [HardySoninOperatorBridge](../../../../Combinatorics/HardyComparisonNamespaced.lean/declarations/hardysoninoperatorbridge.md) | 67 | `declaration-track:ddf5f284019e0529f75b566ceb72b8dc0aa6d15dd5aabbbed8a6437b57199627` |
+| 1 | `structure` | [HardySoninPacketBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HardyComparisonNamespaced.lean/declarations/hardysoninpacketbridge.md) | 22 | `declaration-track:e1524c3035e4d96408f098cec0f946f80b04561caa27beb3187abe26e2ec129f` |
+| 2 | `structure` | [HardySoninTraceClassBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HardyComparisonNamespaced.lean/declarations/hardysonintraceclassbridge.md) | 45 | `declaration-track:be2448a72770362429177b85fbe3ed2e5d1ceb36752c0c99356a822a09bfe63f` |
+| 3 | `structure` | [HardySoninOperatorBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HardyComparisonNamespaced.lean/declarations/hardysoninoperatorbridge.md) | 67 | `declaration-track:ddf5f284019e0529f75b566ceb72b8dc0aa6d15dd5aabbbed8a6437b57199627` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

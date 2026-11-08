@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NaturalEqualityPackage.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NaturalEqualityPackage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NaturalEqualityPackage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NaturalEqualityPackage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BSDContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NaturalEqualityPackage.lean/declarations/bsdcontract.md) | 40 | `declaration-track:77d42f0b9165e7aa3a462553c0a5dc41a5d4b652852dfb012a4ea0eef06b272a` |
-| 2 | `theorem` | [bsd_rank_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NaturalEqualityPackage.lean/declarations/bsd-rank-eq.md) | 49 | `result-track:76bc251eb71c4f6b143f7a016bea96a552cac92a1d792cbef03f26c89d11998e` |
-| 3 | `theorem` | [bsd_sha_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NaturalEqualityPackage.lean/declarations/bsd-sha-eq.md) | 54 | `result-track:e76352211328d5ace4def5856a674ab1fea14816b4b9ce32c147fbe852213f05` |
+| 1 | `structure` | [BSDContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NaturalEqualityPackage.lean/declarations/bsdcontract.md) | 40 | `declaration-track:77d42f0b9165e7aa3a462553c0a5dc41a5d4b652852dfb012a4ea0eef06b272a` |
+| 2 | `theorem` | [bsd_rank_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NaturalEqualityPackage.lean/declarations/bsd-rank-eq.md) | 49 | `result-track:76bc251eb71c4f6b143f7a016bea96a552cac92a1d792cbef03f26c89d11998e` |
+| 3 | `theorem` | [bsd_sha_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NaturalEqualityPackage.lean/declarations/bsd-sha-eq.md) | 54 | `result-track:e76352211328d5ace4def5856a674ab1fea14816b4b9ce32c147fbe852213f05` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/CoordinationTargets.lean/index.md) · [Full source](../../../../FunctionalAnalysis/CoordinationTargets.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoordinationTargets.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoordinationTargets.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,20 +63,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ObservationRootPreservation](../../../../FunctionalAnalysis/CoordinationTargets.lean/declarations/observationrootpreservation.md) | 31 | `declaration-track:3a595ad7ee89f4417149765f1f4dd6fd555347f796e0ba5b469bb40ef08bd43f` |
-| 2 | `theorem` | [observation_root_preservation](../../../../FunctionalAnalysis/CoordinationTargets.lean/declarations/observation-root-preservation.md) | 39 | `result-track:614fc77ae3bd308df5c8eb71f8c5ff694d2edf0672bb7d103ea93be537b1432d` |
-| 3 | `def` | [FiniteApertureUnresolvedness](../../../../FunctionalAnalysis/CoordinationTargets.lean/declarations/finiteapertureunresolvedness.md) | 43 | `declaration-track:2c488f779d6ba7b03ee181cd28c80ec23b66cf44a8364d00196968f6bc457a9e` |
-| 4 | `theorem` | [finite_aperture_unresolvedness](../../../../FunctionalAnalysis/CoordinationTargets.lean/declarations/finite-aperture-unresolvedness.md) | 52 | `result-track:61e9bf8bba913102c15f75a09976e6f7f20d2c2a2daeb717c3c49a4b68b28606` |
-| 5 | `def` | [StrategyReplayBudget](../../../../FunctionalAnalysis/CoordinationTargets.lean/declarations/strategyreplaybudget.md) | 56 | `declaration-track:9a0294eebdf53b798d2399c10fd9501567b5a1fba6f91f4aeefc54c984240ab1` |
-| 6 | `theorem` | [strategy_replay_budget](../../../../FunctionalAnalysis/CoordinationTargets.lean/declarations/strategy-replay-budget.md) | 63 | `result-track:93811cdced1f53f60a89699f8cf9617f143d5bc6f828b5aa1ebb35ffb5590f41` |
-| 7 | `def` | [ResourceVectorLaws](../../../../FunctionalAnalysis/CoordinationTargets.lean/declarations/resourcevectorlaws.md) | 68 | `declaration-track:b1bfe3f34160e17243b88146ef20997afdcda2d9734c58978557ef5e34a4eb74` |
-| 8 | `theorem` | [resource_vector_laws](../../../../FunctionalAnalysis/CoordinationTargets.lean/declarations/resource-vector-laws.md) | 81 | `result-track:ab1b4d6476e219a5f7962cc104a7c94ed7494aa93a9628a2e37a6fa939f0defa` |
-| 9 | `def` | [CRTCardinality](../../../../FunctionalAnalysis/CoordinationTargets.lean/declarations/crtcardinality.md) | 88 | `declaration-track:74503a241eb39d358e89bf498d2a8696e296af8a4f51292d1660c69596133315` |
-| 10 | `theorem` | [crt_cardinality](../../../../FunctionalAnalysis/CoordinationTargets.lean/declarations/crt-cardinality.md) | 95 | `result-track:f7842fbf95285278a6e3c253d48d705d31c0255fdb28f9127ddd7576c55556fe` |
-| 11 | `def` | [FactorRefinement](../../../../FunctionalAnalysis/CoordinationTargets.lean/declarations/factorrefinement.md) | 98 | `declaration-track:efa2351faa99203f054b9b5b0819977aa12728bc194b4c4b37f982e28bc7a779` |
-| 12 | `theorem` | [factor_refinement](../../../../FunctionalAnalysis/CoordinationTargets.lean/declarations/factor-refinement.md) | 107 | `result-track:73b85a2266ef77ef494cb0dc4961740c307605b7c9be42ce129f1bbc61356003` |
-| 13 | `def` | [AnalyticAdmission](../../../../FunctionalAnalysis/CoordinationTargets.lean/declarations/analyticadmission.md) | 114 | `declaration-track:0f21118b25d8fed0c59eb767f9ebe18c05ef9d7480da1194847bdc668827fe54` |
-| 14 | `theorem` | [analytic_admission](../../../../FunctionalAnalysis/CoordinationTargets.lean/declarations/analytic-admission.md) | 117 | `result-track:9b5051d23bf516e4e8fc1d5d862493fd765879451841f933006336048eb39b64` |
+| 1 | `def` | [ObservationRootPreservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoordinationTargets.lean/declarations/observationrootpreservation.md) | 31 | `declaration-track:3a595ad7ee89f4417149765f1f4dd6fd555347f796e0ba5b469bb40ef08bd43f` |
+| 2 | `theorem` | [observation_root_preservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoordinationTargets.lean/declarations/observation-root-preservation.md) | 39 | `result-track:614fc77ae3bd308df5c8eb71f8c5ff694d2edf0672bb7d103ea93be537b1432d` |
+| 3 | `def` | [FiniteApertureUnresolvedness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoordinationTargets.lean/declarations/finiteapertureunresolvedness.md) | 43 | `declaration-track:2c488f779d6ba7b03ee181cd28c80ec23b66cf44a8364d00196968f6bc457a9e` |
+| 4 | `theorem` | [finite_aperture_unresolvedness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoordinationTargets.lean/declarations/finite-aperture-unresolvedness.md) | 52 | `result-track:61e9bf8bba913102c15f75a09976e6f7f20d2c2a2daeb717c3c49a4b68b28606` |
+| 5 | `def` | [StrategyReplayBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoordinationTargets.lean/declarations/strategyreplaybudget.md) | 56 | `declaration-track:9a0294eebdf53b798d2399c10fd9501567b5a1fba6f91f4aeefc54c984240ab1` |
+| 6 | `theorem` | [strategy_replay_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoordinationTargets.lean/declarations/strategy-replay-budget.md) | 63 | `result-track:93811cdced1f53f60a89699f8cf9617f143d5bc6f828b5aa1ebb35ffb5590f41` |
+| 7 | `def` | [ResourceVectorLaws](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoordinationTargets.lean/declarations/resourcevectorlaws.md) | 68 | `declaration-track:b1bfe3f34160e17243b88146ef20997afdcda2d9734c58978557ef5e34a4eb74` |
+| 8 | `theorem` | [resource_vector_laws](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoordinationTargets.lean/declarations/resource-vector-laws.md) | 81 | `result-track:ab1b4d6476e219a5f7962cc104a7c94ed7494aa93a9628a2e37a6fa939f0defa` |
+| 9 | `def` | [CRTCardinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoordinationTargets.lean/declarations/crtcardinality.md) | 88 | `declaration-track:74503a241eb39d358e89bf498d2a8696e296af8a4f51292d1660c69596133315` |
+| 10 | `theorem` | [crt_cardinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoordinationTargets.lean/declarations/crt-cardinality.md) | 95 | `result-track:f7842fbf95285278a6e3c253d48d705d31c0255fdb28f9127ddd7576c55556fe` |
+| 11 | `def` | [FactorRefinement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoordinationTargets.lean/declarations/factorrefinement.md) | 98 | `declaration-track:efa2351faa99203f054b9b5b0819977aa12728bc194b4c4b37f982e28bc7a779` |
+| 12 | `theorem` | [factor_refinement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoordinationTargets.lean/declarations/factor-refinement.md) | 107 | `result-track:73b85a2266ef77ef494cb0dc4961740c307605b7c9be42ce129f1bbc61356003` |
+| 13 | `def` | [AnalyticAdmission](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoordinationTargets.lean/declarations/analyticadmission.md) | 114 | `declaration-track:0f21118b25d8fed0c59eb767f9ebe18c05ef9d7480da1194847bdc668827fe54` |
+| 14 | `theorem` | [analytic_admission](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoordinationTargets.lean/declarations/analytic-admission.md) | 117 | `result-track:9b5051d23bf516e4e8fc1d5d862493fd765879451841f933006336048eb39b64` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

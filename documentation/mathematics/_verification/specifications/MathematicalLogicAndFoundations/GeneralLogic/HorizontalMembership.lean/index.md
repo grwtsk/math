@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HorizontalMembership.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HorizontalMembership.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HorizontalMembership.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HorizontalMembership.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [horizontal_section_is_horizontal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HorizontalMembership.lean/declarations/horizontal-section-is-horizontal.md) | 31 | `result-track:f0b001937ea2ad6aba0f54c95db8cccca6156697d5d606d7f35dbc2cf3ffe319` |
+| 1 | `theorem` | [horizontal_section_is_horizontal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HorizontalMembership.lean/declarations/horizontal-section-is-horizontal.md) | 31 | `result-track:f0b001937ea2ad6aba0f54c95db8cccca6156697d5d606d7f35dbc2cf3ffe319` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LaurentRankOneTriangular.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LaurentRankOneTriangular.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LaurentRankOneTriangular.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LaurentRankOneTriangular.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.Hecke.LaurentRankOneBar`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LaurentRankOneBar.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.Hecke.LaurentRankOneBar`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LaurentRankOneBar.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [StrictlyNegativeLaurent](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LaurentRankOneTriangular.lean/declarations/strictlynegativelaurent.md) | 9 | `declaration-track:4983c9779714a0194fc2a9d004832e06a6dae5ab9f85e66223e262818c80f02a` |
-| 2 | `theorem` | [inverse_parameter_strictly_negative](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LaurentRankOneTriangular.lean/declarations/inverse-parameter-strictly-negative.md) | 13 | `result-track:4846fe51c80d033dca6d9059853cf025a4fd5a543d8220584dffab76b2c870da` |
-| 3 | `theorem` | [negative_laurent_invert_fixed_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LaurentRankOneTriangular.lean/declarations/negative-laurent-invert-fixed-zero.md) | 20 | `result-track:25525a3ad92c8c8397002778cbf565339445ba6ff57a691e151d2e55d60f35f1` |
-| 4 | `theorem` | [laurent_rankOne_triangular_bar_unique](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LaurentRankOneTriangular.lean/declarations/laurent-rankone-triangular-bar-unique.md) | 33 | `result-track:d57fb2d3b2ec6f2615f2f7908204303a6324ba5f3ebd9196feff225d9b47c439` |
-| 5 | `theorem` | [laurent_rankOne_triangular_bar_existsUnique](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LaurentRankOneTriangular.lean/declarations/laurent-rankone-triangular-bar-existsunique.md) | 54 | `result-track:8fd0f62fe78cd748b5aab62b8e9e22a4a12731151f8f2be3585d66f08feff35b` |
+| 1 | `def` | [StrictlyNegativeLaurent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LaurentRankOneTriangular.lean/declarations/strictlynegativelaurent.md) | 9 | `declaration-track:4983c9779714a0194fc2a9d004832e06a6dae5ab9f85e66223e262818c80f02a` |
+| 2 | `theorem` | [inverse_parameter_strictly_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LaurentRankOneTriangular.lean/declarations/inverse-parameter-strictly-negative.md) | 13 | `result-track:4846fe51c80d033dca6d9059853cf025a4fd5a543d8220584dffab76b2c870da` |
+| 3 | `theorem` | [negative_laurent_invert_fixed_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LaurentRankOneTriangular.lean/declarations/negative-laurent-invert-fixed-zero.md) | 20 | `result-track:25525a3ad92c8c8397002778cbf565339445ba6ff57a691e151d2e55d60f35f1` |
+| 4 | `theorem` | [laurent_rankOne_triangular_bar_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LaurentRankOneTriangular.lean/declarations/laurent-rankone-triangular-bar-unique.md) | 33 | `result-track:d57fb2d3b2ec6f2615f2f7908204303a6324ba5f3ebd9196feff225d9b47c439` |
+| 5 | `theorem` | [laurent_rankOne_triangular_bar_existsUnique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LaurentRankOneTriangular.lean/declarations/laurent-rankone-triangular-bar-existsunique.md) | 54 | `result-track:8fd0f62fe78cd748b5aab62b8e9e22a4a12731151f8f2be3585d66f08feff35b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

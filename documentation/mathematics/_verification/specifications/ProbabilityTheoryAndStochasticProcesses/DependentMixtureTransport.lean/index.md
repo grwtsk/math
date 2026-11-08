@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/DependentMixtureTransport.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/DependentMixtureTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/DependentMixtureTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/DependentMixtureTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Spectral.FinitePacket` — import line 20; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 21; external provider; requires a separately pinned dependency.
-- [Whole Equivalence And Expectations](../../../../ProbabilityTheoryAndStochasticProcesses/WholeEquivalenceAndExpectations.lean/index.md) — import line 23; pinned internal source present.
+- [Whole Equivalence And Expectations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholeEquivalenceAndExpectations.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FamilyTurnCovariance](../../../../ProbabilityTheoryAndStochasticProcesses/DependentMixtureTransport.lean/declarations/familyturncovariance.md) | 46 | `declaration-track:dd89f2bf08eb28c87bd5f2e7b5ebad3ac551c8aae4d89b35476e643ca4028ff9` |
-| 2 | `def` | [sumOutcomeEquiv](../../../../ProbabilityTheoryAndStochasticProcesses/DependentMixtureTransport.lean/declarations/sumoutcomeequiv.md) | 62 | `declaration-track:a2b81e39c6eb7d8431db9467b2580ba3ef2cf5aa99859ace1758d8e1d4eb2f87` |
-| 3 | `def` | [mixtureEquiv](../../../../ProbabilityTheoryAndStochasticProcesses/DependentMixtureTransport.lean/declarations/mixtureequiv.md) | 69 | `declaration-track:35f1c61673f269b3893a596a0ab6858249ac8437a8a8c06c904f959909ec0ca5` |
-| 4 | `theorem` | [spectralExpectation_reindex](../../../../ProbabilityTheoryAndStochasticProcesses/DependentMixtureTransport.lean/declarations/spectralexpectation-reindex.md) | 89 | `result-track:f90d2316fac1fadfb543e82c448518712c43ac77e887180aa8c7a4b65b699905` |
+| 1 | `structure` | [FamilyTurnCovariance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/DependentMixtureTransport.lean/declarations/familyturncovariance.md) | 46 | `declaration-track:dd89f2bf08eb28c87bd5f2e7b5ebad3ac551c8aae4d89b35476e643ca4028ff9` |
+| 2 | `def` | [sumOutcomeEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/DependentMixtureTransport.lean/declarations/sumoutcomeequiv.md) | 62 | `declaration-track:a2b81e39c6eb7d8431db9467b2580ba3ef2cf5aa99859ace1758d8e1d4eb2f87` |
+| 3 | `def` | [mixtureEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/DependentMixtureTransport.lean/declarations/mixtureequiv.md) | 69 | `declaration-track:35f1c61673f269b3893a596a0ab6858249ac8437a8a8c06c904f959909ec0ca5` |
+| 4 | `theorem` | [spectralExpectation_reindex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/DependentMixtureTransport.lean/declarations/spectralexpectation-reindex.md) | 89 | `result-track:f90d2316fac1fadfb543e82c448518712c43ac77e887180aa8c7a4b65b699905` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

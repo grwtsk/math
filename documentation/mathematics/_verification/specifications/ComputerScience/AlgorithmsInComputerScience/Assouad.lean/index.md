@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Assouad.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Assouad.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Assouad.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Assouad.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DimensionLowerBoundInput](../../../../../ComputerScience/AlgorithmsInComputerScience/Assouad.lean/declarations/dimensionlowerboundinput.md) | 19 | `declaration-track:00a30770b169666b9d5935164284fbd6521dd8039cf813a8f98f1f4943f1c21e` |
-| 2 | `def` | [DimensionLowerBoundInput.usableForMajorProof](../../../../../ComputerScience/AlgorithmsInComputerScience/Assouad.lean/declarations/dimensionlowerboundinput-usableformajorproof.md) | 27 | `declaration-track:baa388bb006ee5698b30cc162b83c9cd69b26511c6323e17fdf0e98c4402e68c` |
-| 3 | `theorem` | [DimensionLowerBoundInput.usableForMajorProof_of_fields](../../../../../ComputerScience/AlgorithmsInComputerScience/Assouad.lean/declarations/dimensionlowerboundinput-usableformajorproof-of-fields.md) | 35 | `result-track:8dbce643b98ee61a9590a401195ed660211f62ef25a0f859b62def4c6dca045e` |
+| 1 | `structure` | [DimensionLowerBoundInput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Assouad.lean/declarations/dimensionlowerboundinput.md) | 19 | `declaration-track:00a30770b169666b9d5935164284fbd6521dd8039cf813a8f98f1f4943f1c21e` |
+| 2 | `def` | [DimensionLowerBoundInput.usableForMajorProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Assouad.lean/declarations/dimensionlowerboundinput-usableformajorproof.md) | 27 | `declaration-track:baa388bb006ee5698b30cc162b83c9cd69b26511c6323e17fdf0e98c4402e68c` |
+| 3 | `theorem` | [DimensionLowerBoundInput.usableForMajorProof_of_fields](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Assouad.lean/declarations/dimensionlowerboundinput-usableformajorproof-of-fields.md) | 35 | `result-track:8dbce643b98ee61a9590a401195ed660211f62ef25a0f859b62def4c6dca045e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRealStarEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRealStarEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRealStarEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRealStarEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRealStarEdition2.lean/declarations/instance-source-edition-2.md) | 17 | `declaration-track:42f5f138e2c3764ba850a796c4ad30018386f86755307c7d499ebad4f53180a1` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRealStarEdition2.lean/declarations/instance.md) | 19 | `declaration-track:2abc2d763c1ecd6395bf23ac999d4b2eada221b0f54efb47aabb8f9de7ccb9cf` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRealStarEdition2.lean/declarations/instance-source-edition-3.md) | 22 | `declaration-track:8477b679c642de0ceafed493a8841a4ee21f289cc10f455a1554af630a6aced1` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRealStarEdition2.lean/declarations/instance-source-edition-4.md) | 25 | `declaration-track:e809371b8ec9da489eefe92b187bbf3fa77b1a7f10c1893b411f489a5990f6cf` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRealStarEdition2.lean/declarations/instance-source-edition-2.md) | 17 | `declaration-track:42f5f138e2c3764ba850a796c4ad30018386f86755307c7d499ebad4f53180a1` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRealStarEdition2.lean/declarations/instance.md) | 19 | `declaration-track:2abc2d763c1ecd6395bf23ac999d4b2eada221b0f54efb47aabb8f9de7ccb9cf` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRealStarEdition2.lean/declarations/instance-source-edition-3.md) | 22 | `declaration-track:8477b679c642de0ceafed493a8841a4ee21f289cc10f455a1554af630a6aced1` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRealStarEdition2.lean/declarations/instance-source-edition-4.md) | 25 | `declaration-track:e809371b8ec9da489eefe92b187bbf3fa77b1a7f10c1893b411f489a5990f6cf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FutureObservableProvenanceVerified.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FutureObservableProvenanceVerified.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FutureObservableProvenanceVerified.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FutureObservableProvenanceVerified.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [matrixWord](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FutureObservableProvenanceVerified.lean/declarations/matrixword.md) | 24 | `declaration-track:716dc79ceb9f682cb63a13fbd8f0efc78137a7ab3e478ef3c7c42bd3178236ff` |
-| 2 | `theorem` | [matrixWord_cons](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FutureObservableProvenanceVerified.lean/declarations/matrixword-cons.md) | 29 | `result-track:5154654ac2d8fc7a54789de910a5ab96da183fbda1d817a8e6dd847bc60a073c` |
-| 3 | `theorem` | [matrixWord_fold](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FutureObservableProvenanceVerified.lean/declarations/matrixword-fold.md) | 35 | `result-track:8db3392a65123a3948e9a26609d310cfcc68a5b7b2780235d98b66d31ff28aff` |
-| 4 | `theorem` | [matrixWord_execute](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FutureObservableProvenanceVerified.lean/declarations/matrixword-execute.md) | 45 | `result-track:3570683c5baac2bf2eca5938a0e770b5637a13cc53f4b6f7bdde3be16047cc20` |
-| 5 | `theorem` | [provenance_extension](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FutureObservableProvenanceVerified.lean/declarations/provenance-extension.md) | 56 | `result-track:c16fd6b237e02cddd04e036d9d838aafed90fabb320dcd433299e774d890af9a` |
-| 6 | `theorem` | [quadratic_matrixWord](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FutureObservableProvenanceVerified.lean/declarations/quadratic-matrixword.md) | 65 | `result-track:5ee2013f03ca7ce48e1fdc6ed41690f2d12d29bd23073769815c04bb016ea52b` |
+| 1 | `def` | [matrixWord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FutureObservableProvenanceVerified.lean/declarations/matrixword.md) | 24 | `declaration-track:716dc79ceb9f682cb63a13fbd8f0efc78137a7ab3e478ef3c7c42bd3178236ff` |
+| 2 | `theorem` | [matrixWord_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FutureObservableProvenanceVerified.lean/declarations/matrixword-cons.md) | 29 | `result-track:5154654ac2d8fc7a54789de910a5ab96da183fbda1d817a8e6dd847bc60a073c` |
+| 3 | `theorem` | [matrixWord_fold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FutureObservableProvenanceVerified.lean/declarations/matrixword-fold.md) | 35 | `result-track:8db3392a65123a3948e9a26609d310cfcc68a5b7b2780235d98b66d31ff28aff` |
+| 4 | `theorem` | [matrixWord_execute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FutureObservableProvenanceVerified.lean/declarations/matrixword-execute.md) | 45 | `result-track:3570683c5baac2bf2eca5938a0e770b5637a13cc53f4b6f7bdde3be16047cc20` |
+| 5 | `theorem` | [provenance_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FutureObservableProvenanceVerified.lean/declarations/provenance-extension.md) | 56 | `result-track:c16fd6b237e02cddd04e036d9d838aafed90fabb320dcd433299e774d890af9a` |
+| 6 | `theorem` | [quadratic_matrixWord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FutureObservableProvenanceVerified.lean/declarations/quadratic-matrixword.md) | 65 | `result-track:5ee2013f03ca7ce48e1fdc6ed41690f2d12d29bd23073769815c04bb016ea52b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/AB50003e1d2fc207Namespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/AB50003e1d2fc207Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AB50003e1d2fc207Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AB50003e1d2fc207Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Variance](../../../../ProbabilityTheoryAndStochasticProcesses/AB50003e1d2fc207Namespaced.lean/declarations/variance.md) | 15 | `declaration-track:9cf2fff6c11d78dba5697b69309fa23eba207c40ccfe71d54c65c61297150559` |
+| 1 | `inductive` | [Variance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AB50003e1d2fc207Namespaced.lean/declarations/variance.md) | 15 | `declaration-track:9cf2fff6c11d78dba5697b69309fa23eba207c40ccfe71d54c65c61297150559` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

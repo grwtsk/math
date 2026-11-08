@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PositiveNat.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PositiveNat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PositiveNat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PositiveNat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [PositiveNat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PositiveNat.lean/declarations/positivenat.md) | 18 | `declaration-track:14efbb4d0976ee398c48fc8521f5c6212d8b8e0ba26b172c95ab559d549d3696` |
-| 2 | `def` | [one](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PositiveNat.lean/declarations/one.md) | 22 | `declaration-track:6c8bb8bc457c6be4c551e74d0baea26a768214c3d7b2fd6812425ee37539b225` |
-| 3 | `def` | [val](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PositiveNat.lean/declarations/val.md) | 24 | `declaration-track:30ad7865581b3c82c6d8671c358c351f72a14a1761e94046400f8c48ebf5f9d2` |
-| 4 | `theorem` | [val_pos](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PositiveNat.lean/declarations/val-pos.md) | 27 | `result-track:9c9ed1dd8733c3137bafc8d0c3d5026fb2c1dc317eb72f3961d43ca87d3a1219` |
-| 5 | `theorem` | [ext](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PositiveNat.lean/declarations/ext.md) | 30 | `result-track:7b8e861e8a9d60a188cb65539f15692f172eb95c886143104f01db244f0c4456` |
+| 1 | `abbrev` | [PositiveNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PositiveNat.lean/declarations/positivenat.md) | 18 | `declaration-track:14efbb4d0976ee398c48fc8521f5c6212d8b8e0ba26b172c95ab559d549d3696` |
+| 2 | `def` | [one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PositiveNat.lean/declarations/one.md) | 22 | `declaration-track:6c8bb8bc457c6be4c551e74d0baea26a768214c3d7b2fd6812425ee37539b225` |
+| 3 | `def` | [val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PositiveNat.lean/declarations/val.md) | 24 | `declaration-track:30ad7865581b3c82c6d8671c358c351f72a14a1761e94046400f8c48ebf5f9d2` |
+| 4 | `theorem` | [val_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PositiveNat.lean/declarations/val-pos.md) | 27 | `result-track:9c9ed1dd8733c3137bafc8d0c3d5026fb2c1dc317eb72f3961d43ca87d3a1219` |
+| 5 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PositiveNat.lean/declarations/ext.md) | 30 | `result-track:7b8e861e8a9d60a188cb65539f15692f172eb95c886143104f01db244f0c4456` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

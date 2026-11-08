@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CoordinationMemoryTargets.lean/index.md) · [Full source](../../../../Combinatorics/CoordinationMemoryTargets.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinationMemoryTargets.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinationMemoryTargets.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ObservationCoarseningObligation](../../../../Combinatorics/CoordinationMemoryTargets.lean/declarations/observationcoarseningobligation.md) | 20 | `declaration-track:5a486d73d3ff3d1aa8516c766a9b61e83d548af19fb26c9943285d3a1cabb320` |
-| 2 | `theorem` | [observation_coarsening_checked](../../../../Combinatorics/CoordinationMemoryTargets.lean/declarations/observation-coarsening-checked.md) | 29 | `result-track:e9598bfc41c331069c3a6244866489e5ce2c687d5fae41c8f35231a328514e3c` |
-| 3 | `def` | [AssumptionReplayObligation](../../../../Combinatorics/CoordinationMemoryTargets.lean/declarations/assumptionreplayobligation.md) | 38 | `declaration-track:0bb9eb84109259c191dba6864fd7b5bc49a175478c7a8e5aaf59a7d6f6f0b431` |
-| 4 | `theorem` | [assumption_replay_checked](../../../../Combinatorics/CoordinationMemoryTargets.lean/declarations/assumption-replay-checked.md) | 47 | `result-track:54b6c70ec8ff3e24d3a585cd2e312b8f8490f97449de2b67c45a7bbf45323eac` |
+| 1 | `def` | [ObservationCoarseningObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinationMemoryTargets.lean/declarations/observationcoarseningobligation.md) | 20 | `declaration-track:5a486d73d3ff3d1aa8516c766a9b61e83d548af19fb26c9943285d3a1cabb320` |
+| 2 | `theorem` | [observation_coarsening_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinationMemoryTargets.lean/declarations/observation-coarsening-checked.md) | 29 | `result-track:e9598bfc41c331069c3a6244866489e5ce2c687d5fae41c8f35231a328514e3c` |
+| 3 | `def` | [AssumptionReplayObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinationMemoryTargets.lean/declarations/assumptionreplayobligation.md) | 38 | `declaration-track:0bb9eb84109259c191dba6864fd7b5bc49a175478c7a8e5aaf59a7d6f6f0b431` |
+| 4 | `theorem` | [assumption_replay_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinationMemoryTargets.lean/declarations/assumption-replay-checked.md) | 47 | `result-track:54b6c70ec8ff3e24d3a585cd2e312b8f8490f97449de2b67c45a7bbf45323eac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

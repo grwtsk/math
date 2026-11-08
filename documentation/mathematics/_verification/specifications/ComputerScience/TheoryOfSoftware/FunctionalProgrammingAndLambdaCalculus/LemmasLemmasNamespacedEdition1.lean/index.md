@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [getD_none](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition1.lean/declarations/getd-none.md) | 24 | `result-track:786e326bb6e0d7f2a68d069498970924e17270f970efff9fd777037c2d01f0bf` |
-| 2 | `theorem` | [getD_some](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition1.lean/declarations/getd-some.md) | 25 | `result-track:9c1a8b8030be16740b7b780b7dc9c51135387ea49867b1762aa31ba53c0006ba` |
-| 3 | `theorem` | [map_none'](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition1.lean/declarations/map-none.md) | 27 | `result-track:2558930df38519c7be2a4a93e222e2d35246af7b54b073f076c6351a7ac0138c` |
-| 4 | `theorem` | [map_some'](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition1.lean/declarations/map-some.md) | 28 | `result-track:9839b028eda345a33ad8fc74e4ccbbcfda05b7cda9a44e208bd45d1952867ecb` |
-| 5 | `theorem` | [none_bind](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition1.lean/declarations/none-bind.md) | 30 | `result-track:003fc95eed05b0c8425323a63c2c82e259cb659cd2f1f3a231e96567b8e757ca` |
-| 6 | `theorem` | [some_bind](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition1.lean/declarations/some-bind.md) | 31 | `result-track:95d44137f2936735202d69906289b0f5ba3b629485ed0785e045ee289c285c7e` |
+| 1 | `theorem` | [getD_none](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition1.lean/declarations/getd-none.md) | 24 | `result-track:786e326bb6e0d7f2a68d069498970924e17270f970efff9fd777037c2d01f0bf` |
+| 2 | `theorem` | [getD_some](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition1.lean/declarations/getd-some.md) | 25 | `result-track:9c1a8b8030be16740b7b780b7dc9c51135387ea49867b1762aa31ba53c0006ba` |
+| 3 | `theorem` | [map_none'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition1.lean/declarations/map-none.md) | 27 | `result-track:2558930df38519c7be2a4a93e222e2d35246af7b54b073f076c6351a7ac0138c` |
+| 4 | `theorem` | [map_some'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition1.lean/declarations/map-some.md) | 28 | `result-track:9839b028eda345a33ad8fc74e4ccbbcfda05b7cda9a44e208bd45d1952867ecb` |
+| 5 | `theorem` | [none_bind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition1.lean/declarations/none-bind.md) | 30 | `result-track:003fc95eed05b0c8425323a63c2c82e259cb659cd2f1f3a231e96567b8e757ca` |
+| 6 | `theorem` | [some_bind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition1.lean/declarations/some-bind.md) | 31 | `result-track:95d44137f2936735202d69906289b0f5ba3b629485ed0785e045ee289c285c7e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

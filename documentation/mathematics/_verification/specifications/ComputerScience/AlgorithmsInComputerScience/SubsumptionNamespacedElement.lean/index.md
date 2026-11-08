@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SubsumptionNamespacedElement.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SubsumptionNamespacedElement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SubsumptionNamespacedElement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SubsumptionNamespacedElement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [everyKernelProvedEuclideanItemIsMathematicsTheorem](../../../../../ComputerScience/AlgorithmsInComputerScience/SubsumptionNamespacedElement.lean/declarations/everykernelprovedeuclideanitemismathematicstheorem.md) | 28 | `result-track:caadea5bba643058d0e49519a0684af25bf1aad3d5953c4c87979b0ae7b29cbe` |
-| 2 | `theorem` | [historicalPlacementIsNonauthoritative](../../../../../ComputerScience/AlgorithmsInComputerScience/SubsumptionNamespacedElement.lean/declarations/historicalplacementisnonauthoritative.md) | 40 | `result-track:621c561a5789a499f68354697edf145d06c6be2dd0f830eb06ba0da713629058` |
-| 3 | `theorem` | [provenanceErasureIsExact](../../../../../ComputerScience/AlgorithmsInComputerScience/SubsumptionNamespacedElement.lean/declarations/provenanceerasureisexact.md) | 60 | `result-track:460ce89656437cf8c20a89724c8c5acdcdd50c3636d4a25f18618a649b78b2d8` |
+| 1 | `theorem` | [everyKernelProvedEuclideanItemIsMathematicsTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SubsumptionNamespacedElement.lean/declarations/everykernelprovedeuclideanitemismathematicstheorem.md) | 28 | `result-track:caadea5bba643058d0e49519a0684af25bf1aad3d5953c4c87979b0ae7b29cbe` |
+| 2 | `theorem` | [historicalPlacementIsNonauthoritative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SubsumptionNamespacedElement.lean/declarations/historicalplacementisnonauthoritative.md) | 40 | `result-track:621c561a5789a499f68354697edf145d06c6be2dd0f830eb06ba0da713629058` |
+| 3 | `theorem` | [provenanceErasureIsExact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SubsumptionNamespacedElement.lean/declarations/provenanceerasureisexact.md) | 60 | `result-track:460ce89656437cf8c20a89724c8c5acdcdd50c3636d4a25f18618a649b78b2d8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/Hilbert90.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/Hilbert90.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/Hilbert90.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/Hilbert90.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [aux](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/Hilbert90.lean/declarations/aux.md) | 56 | `declaration-track:4a6802e15080b18acb5901ea107eedfb61028dc343aff1f0ad74a27da5e5f7b2` |
-| 2 | `theorem` | [aux_ne_zero](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/Hilbert90.lean/declarations/aux-ne-zero.md) | 60 | `result-track:bd221d6b8e0e0e676bcca88bf207affdbae101b48805a11a83f51e421e7cbee4` |
-| 3 | `theorem` | [isMulOneCoboundary_of_isMulOneCocycle_of_aut_to_units](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/Hilbert90.lean/declarations/ismulonecoboundary-of-ismulonecocycle-of-aut-to-units.md) | 79 | `result-track:c3909ecfdcefb42e4cffb19e208a6df06e2ecd3ceda3cebb13739723a66031c8` |
-| 4 | `instance` | [H1ofAutOnUnitsUnique](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/Hilbert90.lean/declarations/h1ofautonunitsunique.md) | 102 | `declaration-track:33de60504b55e3ef255149c619dca36d80156ad95348b415cf30fe3b457374be` |
+| 1 | `def` | [aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/Hilbert90.lean/declarations/aux.md) | 56 | `declaration-track:4a6802e15080b18acb5901ea107eedfb61028dc343aff1f0ad74a27da5e5f7b2` |
+| 2 | `theorem` | [aux_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/Hilbert90.lean/declarations/aux-ne-zero.md) | 60 | `result-track:bd221d6b8e0e0e676bcca88bf207affdbae101b48805a11a83f51e421e7cbee4` |
+| 3 | `theorem` | [isMulOneCoboundary_of_isMulOneCocycle_of_aut_to_units](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/Hilbert90.lean/declarations/ismulonecoboundary-of-ismulonecocycle-of-aut-to-units.md) | 79 | `result-track:c3909ecfdcefb42e4cffb19e208a6df06e2ecd3ceda3cebb13739723a66031c8` |
+| 4 | `instance` | [H1ofAutOnUnitsUnique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/Hilbert90.lean/declarations/h1ofautonunitsunique.md) | 102 | `declaration-track:33de60504b55e3ef255149c619dca36d80156ad95348b415cf30fe3b457374be` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

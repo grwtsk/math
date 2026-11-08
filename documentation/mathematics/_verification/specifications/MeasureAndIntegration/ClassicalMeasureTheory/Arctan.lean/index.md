@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Arctan.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Arctan.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Arctan.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Arctan.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [measurable_arctan](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Arctan.lean/declarations/measurable-arctan.md) | 18 | `result-track:9d671f8b612aef38be853978d6f0b20163bcafc0a78d2772899914bc4d1f46c7` |
-| 2 | `theorem` | [Measurable.arctan](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Arctan.lean/declarations/measurable-arctan-source-edition-2.md) | 30 | `result-track:e5529fd31188c759e586962a0c1b81619b1c024e3f991a9c4df73847e55c16ec` |
+| 1 | `theorem` | [measurable_arctan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Arctan.lean/declarations/measurable-arctan.md) | 18 | `result-track:9d671f8b612aef38be853978d6f0b20163bcafc0a78d2772899914bc4d1f46c7` |
+| 2 | `theorem` | [Measurable.arctan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Arctan.lean/declarations/measurable-arctan-source-edition-2.md) | 30 | `result-track:e5529fd31188c759e586962a0c1b81619b1c024e3f991a9c4df73847e55c16ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

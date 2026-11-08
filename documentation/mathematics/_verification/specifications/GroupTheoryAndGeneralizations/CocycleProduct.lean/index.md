@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CocycleProduct.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CocycleProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.LinearAlgebra.OrderedProductDeterminant`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedProductDeterminantHistoricalSourceEdition2.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Algebra.LinearAlgebra.OrderedProductDeterminant`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedProductDeterminantHistoricalSourceEdition2.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Logic.Function.Iterate` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cocycleProduct](../../../../GroupTheoryAndGeneralizations/CocycleProduct.lean/declarations/cocycleproduct.md) | 50 | `declaration-track:e9d2ac2d9a2fa0e1972cfcc0587f5b7a64cb0d57293fdf782514fc35f68548e5` |
-| 2 | `theorem` | [cocycleProduct_zero](../../../../GroupTheoryAndGeneralizations/CocycleProduct.lean/declarations/cocycleproduct-zero.md) | 58 | `result-track:9cd5eb81765890114f9551b550745a9b99cbeca1dbedfdb9030409ef9c3b4110` |
-| 3 | `theorem` | [cocycleProduct_succ](../../../../GroupTheoryAndGeneralizations/CocycleProduct.lean/declarations/cocycleproduct-succ.md) | 64 | `result-track:c23dfe0bbe08e58379a1116fed523ef1cc1ee360a3fc11416711f5ae4fb44c5b` |
-| 4 | `theorem` | [cocycleProduct_eq_orderedProduct](../../../../GroupTheoryAndGeneralizations/CocycleProduct.lean/declarations/cocycleproduct-eq-orderedproduct.md) | 71 | `result-track:95da3c25ebbb58ff7aa88b6a9481e23d20096b0b3aa570791f356d1d776eaeb5` |
-| 5 | `theorem` | [cocycleProduct_add](../../../../GroupTheoryAndGeneralizations/CocycleProduct.lean/declarations/cocycleproduct-add.md) | 81 | `result-track:aadc3d6d38b74ce29496f1e08c66b7cdf812edfd989ad67c85c69a2b22fa9817` |
-| 6 | `def` | [cocycleGaugeTransfer](../../../../GroupTheoryAndGeneralizations/CocycleProduct.lean/declarations/cocyclegaugetransfer.md) | 94 | `declaration-track:ac157fdfcc87f2d713a4c011d1f19a28d56e8a8d622281e364d36f394d0ba9a7` |
-| 7 | `theorem` | [cocycleProduct_gauge](../../../../GroupTheoryAndGeneralizations/CocycleProduct.lean/declarations/cocycleproduct-gauge.md) | 100 | `result-track:3a631431e09ef6cef697d4975f32c3b5c928e35fd852428a1caeb93295dfc328` |
+| 1 | `def` | [cocycleProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProduct.lean/declarations/cocycleproduct.md) | 50 | `declaration-track:e9d2ac2d9a2fa0e1972cfcc0587f5b7a64cb0d57293fdf782514fc35f68548e5` |
+| 2 | `theorem` | [cocycleProduct_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProduct.lean/declarations/cocycleproduct-zero.md) | 58 | `result-track:9cd5eb81765890114f9551b550745a9b99cbeca1dbedfdb9030409ef9c3b4110` |
+| 3 | `theorem` | [cocycleProduct_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProduct.lean/declarations/cocycleproduct-succ.md) | 64 | `result-track:c23dfe0bbe08e58379a1116fed523ef1cc1ee360a3fc11416711f5ae4fb44c5b` |
+| 4 | `theorem` | [cocycleProduct_eq_orderedProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProduct.lean/declarations/cocycleproduct-eq-orderedproduct.md) | 71 | `result-track:95da3c25ebbb58ff7aa88b6a9481e23d20096b0b3aa570791f356d1d776eaeb5` |
+| 5 | `theorem` | [cocycleProduct_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProduct.lean/declarations/cocycleproduct-add.md) | 81 | `result-track:aadc3d6d38b74ce29496f1e08c66b7cdf812edfd989ad67c85c69a2b22fa9817` |
+| 6 | `def` | [cocycleGaugeTransfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProduct.lean/declarations/cocyclegaugetransfer.md) | 94 | `declaration-track:ac157fdfcc87f2d713a4c011d1f19a28d56e8a8d622281e364d36f394d0ba9a7` |
+| 7 | `theorem` | [cocycleProduct_gauge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProduct.lean/declarations/cocycleproduct-gauge.md) | 100 | `result-track:3a631431e09ef6cef697d4975f32c3b5c928e35fd852428a1caeb93295dfc328` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

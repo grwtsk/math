@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexNamespacedWittValuedCrystallineIndex.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexNamespacedWittValuedCrystallineIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexNamespacedWittValuedCrystallineIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexNamespacedWittValuedCrystallineIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [WittValuedCrystallineIndex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexNamespacedWittValuedCrystallineIndex.lean/declarations/wittvaluedcrystallineindex.md) | 37 | `declaration-track:2422d06a90e4712e2960a15cb4c93301f6ec7d262334122758a3e69845f23454` |
-| 2 | `def` | [WittValuedCrystallineIndex.Nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexNamespacedWittValuedCrystallineIndex.lean/declarations/wittvaluedcrystallineindex-nonzero.md) | 49 | `declaration-track:78db6210b553ee721eeffcdd374f40ee263c7de3d5185884817cc201baeb311b` |
-| 3 | `theorem` | [witt_index_represents_operator_index](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexNamespacedWittValuedCrystallineIndex.lean/declarations/witt-index-represents-operator-index.md) | 58 | `result-track:77b316486aefbbff9f0b6072d283c6162312d243c45428a4c1b18d6922712f93` |
-| 4 | `theorem` | [witt_index_has_witt_element](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexNamespacedWittValuedCrystallineIndex.lean/declarations/witt-index-has-witt-element.md) | 68 | `result-track:cf3ce4722e54931e3789b1131b83ab7037243ef949b0ddffd8c1243a6aa869e2` |
+| 1 | `structure` | [WittValuedCrystallineIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexNamespacedWittValuedCrystallineIndex.lean/declarations/wittvaluedcrystallineindex.md) | 37 | `declaration-track:2422d06a90e4712e2960a15cb4c93301f6ec7d262334122758a3e69845f23454` |
+| 2 | `def` | [WittValuedCrystallineIndex.Nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexNamespacedWittValuedCrystallineIndex.lean/declarations/wittvaluedcrystallineindex-nonzero.md) | 49 | `declaration-track:78db6210b553ee721eeffcdd374f40ee263c7de3d5185884817cc201baeb311b` |
+| 3 | `theorem` | [witt_index_represents_operator_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexNamespacedWittValuedCrystallineIndex.lean/declarations/witt-index-represents-operator-index.md) | 58 | `result-track:77b316486aefbbff9f0b6072d283c6162312d243c45428a4c1b18d6922712f93` |
+| 4 | `theorem` | [witt_index_has_witt_element](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexNamespacedWittValuedCrystallineIndex.lean/declarations/witt-index-has-witt-element.md) | 68 | `result-track:cf3ce4722e54931e3789b1131b83ab7037243ef949b0ddffd8c1243a6aa869e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [findConstValWithKind?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentPublic.lean/declarations/findconstvalwithkind.md) | 29 | `declaration-track:c3b59d9bf78eeacb0aaff0a44bcdd311b393e1f1bb7c9b29b6227cac43733a2f` |
-| 2 | `def` | [findConstValOfKind?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentPublic.lean/declarations/findconstvalofkind.md) | 40 | `declaration-track:f563d7f61b0956692ec8c0ae5017f6efa67fc24fc4f4b56fb96ba5f33fae2585` |
-| 3 | `def` | [findTheoremConstVal?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentPublic.lean/declarations/findtheoremconstval.md) | 50 | `declaration-track:ad0585ef3fad2ac35cb6647a1e0825c598442bc3cd2878600e17e1dc1fa7d31f` |
+| 1 | `def` | [findConstValWithKind?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentPublic.lean/declarations/findconstvalwithkind.md) | 29 | `declaration-track:c3b59d9bf78eeacb0aaff0a44bcdd311b393e1f1bb7c9b29b6227cac43733a2f` |
+| 2 | `def` | [findConstValOfKind?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentPublic.lean/declarations/findconstvalofkind.md) | 40 | `declaration-track:f563d7f61b0956692ec8c0ae5017f6efa67fc24fc4f4b56fb96ba5f33fae2585` |
+| 3 | `def` | [findTheoremConstVal?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentPublic.lean/declarations/findtheoremconstval.md) | 50 | `declaration-track:ad0585ef3fad2ac35cb6647a1e0825c598442bc3cd2878600e17e1dc1fa7d31f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

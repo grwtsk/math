@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CountedTentTailCore.lean/index.md) · [Full source](../../../../NumberTheory/CountedTentTailCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CountedTentTailCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CountedTentTailCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,11 +46,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Series.HeightCountingTail`](../../../../MeasureAndIntegration/HeightCountingTail.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.TentKernelTail`](../../../../FunctionsOfAComplexVariable/TentKernelTail.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CountedTentTail`](../../../../NumberTheory/CountedTentTail.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.Checks.CountingTailControls`](../../../../MeasureAndIntegration/CountingTailControls.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.Interfaces.LegendreTentCore`](../../../../NumberTheory/LegendreTentCore.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Analysis.Series.HeightCountingTail`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HeightCountingTail.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.TentKernelTail`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelTail.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CountedTentTail`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CountedTentTail.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.Checks.CountingTailControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountingTailControls.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Interfaces.LegendreTentCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreTentCore.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

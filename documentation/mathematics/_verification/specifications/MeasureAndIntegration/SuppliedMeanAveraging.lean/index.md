@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SuppliedMeanAveraging.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SuppliedMeanAveraging.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SuppliedMeanAveraging.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SuppliedMeanAveraging.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [meanMixture](../../../../MeasureAndIntegration/SuppliedMeanAveraging.lean/declarations/meanmixture.md) | 52 | `declaration-track:6616d2a9f31a5aee55c72f49fa0183cbe36430a0af299090d8f584f8f24d6494` |
-| 2 | `theorem` | [meanMixture_normalized](../../../../MeasureAndIntegration/SuppliedMeanAveraging.lean/declarations/meanmixture-normalized.md) | 58 | `result-track:f3864b47bb80135bcabdf5fc37e59e615da8bcac4f70d66cf5392afb4172edb8` |
-| 3 | `def` | [randomSpectralExpectation](../../../../MeasureAndIntegration/SuppliedMeanAveraging.lean/declarations/randomspectralexpectation.md) | 65 | `declaration-track:c5757c17486a3b2b24b876ee863969a8fa2e084cfa8777e48423d186d16032d9` |
-| 4 | `theorem` | [randomSpectralExpectation_eq_sum](../../../../MeasureAndIntegration/SuppliedMeanAveraging.lean/declarations/randomspectralexpectation-eq-sum.md) | 72 | `result-track:b098130165ec2f4db9871c3c39b473518ad307d7cf584afca46c71062ac39c49` |
-| 5 | `theorem` | [integral_randomSpectralExpectation_eq_mean](../../../../MeasureAndIntegration/SuppliedMeanAveraging.lean/declarations/integral-randomspectralexpectation-eq-mean.md) | 84 | `result-track:528d8cefdbd94b1cd4bba423ff76285c2037f3fe8f65f5177717284953ce11f3` |
-| 6 | `theorem` | [integral_equalScaleMeanSpectralExpectation](../../../../MeasureAndIntegration/SuppliedMeanAveraging.lean/declarations/integral-equalscalemeanspectralexpectation.md) | 122 | `result-track:d62d31d868ff5b2215bd5362e3eab1f086f7321e06230eab7a2c729c271a89a3` |
+| 1 | `def` | [meanMixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SuppliedMeanAveraging.lean/declarations/meanmixture.md) | 52 | `declaration-track:6616d2a9f31a5aee55c72f49fa0183cbe36430a0af299090d8f584f8f24d6494` |
+| 2 | `theorem` | [meanMixture_normalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SuppliedMeanAveraging.lean/declarations/meanmixture-normalized.md) | 58 | `result-track:f3864b47bb80135bcabdf5fc37e59e615da8bcac4f70d66cf5392afb4172edb8` |
+| 3 | `def` | [randomSpectralExpectation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SuppliedMeanAveraging.lean/declarations/randomspectralexpectation.md) | 65 | `declaration-track:c5757c17486a3b2b24b876ee863969a8fa2e084cfa8777e48423d186d16032d9` |
+| 4 | `theorem` | [randomSpectralExpectation_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SuppliedMeanAveraging.lean/declarations/randomspectralexpectation-eq-sum.md) | 72 | `result-track:b098130165ec2f4db9871c3c39b473518ad307d7cf584afca46c71062ac39c49` |
+| 5 | `theorem` | [integral_randomSpectralExpectation_eq_mean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SuppliedMeanAveraging.lean/declarations/integral-randomspectralexpectation-eq-mean.md) | 84 | `result-track:528d8cefdbd94b1cd4bba423ff76285c2037f3fe8f65f5177717284953ce11f3` |
+| 6 | `theorem` | [integral_equalScaleMeanSpectralExpectation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SuppliedMeanAveraging.lean/declarations/integral-equalscalemeanspectralexpectation.md) | 122 | `result-track:d62d31d868ff5b2215bd5362e3eab1f086f7321e06230eab7a2c729c271a89a3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

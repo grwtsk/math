@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VerifierNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VerifierNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VerifierNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VerifierNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [findDeclaredEdge](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VerifierNamespacedPublic.lean/declarations/finddeclarededge.md) | 32 | `declaration-track:e6ae5d2e9716847d2b5575b51095193c13527130b98d38950274b193b3ff4509` |
-| 2 | `def` | [verifyProposal](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VerifierNamespacedPublic.lean/declarations/verifyproposal.md) | 38 | `declaration-track:5171d495ff3289e26a327f4ef30c2dbf340c0b0af313e435ab8c17183ee38113` |
-| 3 | `theorem` | [verifyProposal_sound](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VerifierNamespacedPublic.lean/declarations/verifyproposal-sound.md) | 197 | `result-track:1045ecee38b65c8c72ae2b0d705a8114bbd5a0885f865ee93b1f4890575bf747` |
+| 1 | `def` | [findDeclaredEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VerifierNamespacedPublic.lean/declarations/finddeclarededge.md) | 32 | `declaration-track:e6ae5d2e9716847d2b5575b51095193c13527130b98d38950274b193b3ff4509` |
+| 2 | `def` | [verifyProposal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VerifierNamespacedPublic.lean/declarations/verifyproposal.md) | 38 | `declaration-track:5171d495ff3289e26a327f4ef30c2dbf340c0b0af313e435ab8c17183ee38113` |
+| 3 | `theorem` | [verifyProposal_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/VerifierNamespacedPublic.lean/declarations/verifyproposal-sound.md) | 197 | `result-track:1045ecee38b65c8c72ae2b0d705a8114bbd5a0885f865ee93b1f4890575bf747` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

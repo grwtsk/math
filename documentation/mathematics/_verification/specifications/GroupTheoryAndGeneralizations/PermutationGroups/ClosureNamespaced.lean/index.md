@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ClosureNamespaced.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ClosureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ClosureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ClosureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [closure_isCycle](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ClosureNamespaced.lean/declarations/closure-iscycle.md) | 43 | `result-track:6fd39c30170b7f61957a41f39df6dca7ba5a136d058e523fdd9c84f35c20fbb3` |
-| 2 | `theorem` | [closure_cycle_adjacent_swap](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ClosureNamespaced.lean/declarations/closure-cycle-adjacent-swap.md) | 51 | `result-track:e4c7f62b43c8b08c0cce0d1bc2e518c425c855e74e0b1a77d8f7de01a1bd42ed` |
-| 3 | `theorem` | [closure_cycle_coprime_swap](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ClosureNamespaced.lean/declarations/closure-cycle-coprime-swap.md) | 102 | `result-track:2167e4a3abaa3561b2d6631901a912894fce41eb9159286ba3ee749841911f8e` |
-| 4 | `theorem` | [closure_prime_cycle_swap](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ClosureNamespaced.lean/declarations/closure-prime-cycle-swap.md) | 116 | `result-track:3fff845427b4006e67ddb6871806cf202299855ebd3dc17970e0824416f19982` |
+| 1 | `theorem` | [closure_isCycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ClosureNamespaced.lean/declarations/closure-iscycle.md) | 43 | `result-track:6fd39c30170b7f61957a41f39df6dca7ba5a136d058e523fdd9c84f35c20fbb3` |
+| 2 | `theorem` | [closure_cycle_adjacent_swap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ClosureNamespaced.lean/declarations/closure-cycle-adjacent-swap.md) | 51 | `result-track:e4c7f62b43c8b08c0cce0d1bc2e518c425c855e74e0b1a77d8f7de01a1bd42ed` |
+| 3 | `theorem` | [closure_cycle_coprime_swap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ClosureNamespaced.lean/declarations/closure-cycle-coprime-swap.md) | 102 | `result-track:2167e4a3abaa3561b2d6631901a912894fce41eb9159286ba3ee749841911f8e` |
+| 4 | `theorem` | [closure_prime_cycle_swap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ClosureNamespaced.lean/declarations/closure-prime-cycle-swap.md) | 116 | `result-track:3fff845427b4006e67ddb6871806cf202299855ebd3dc17970e0824416f19982` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

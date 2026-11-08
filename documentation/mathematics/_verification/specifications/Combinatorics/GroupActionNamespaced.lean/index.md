@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/GroupActionNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/GroupActionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GroupActionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GroupActionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteAction](../../../../Combinatorics/GroupActionNamespaced.lean/declarations/finiteaction.md) | 21 | `declaration-track:7d331bdc6a301e85b37ca87d1799c9d5a6cd8382baaff07bf27cf54ed87036da` |
-| 2 | `structure` | [LawAction](../../../../Combinatorics/GroupActionNamespaced.lean/declarations/lawaction.md) | 32 | `declaration-track:747539a89708ae4c715d849d337138020506ac10a6f25a4fec66a806107ab5ab` |
-| 3 | `def` | [KernelLawEquivariant](../../../../Combinatorics/GroupActionNamespaced.lean/declarations/kernellawequivariant.md) | 43 | `declaration-track:ef237d308c114a1d06061fa8e3e6e998c414b9956ac00ad645a8a67d4a441e83` |
-| 4 | `theorem` | [unique_equivariant_invariant_law_is_group_invariant](../../../../Combinatorics/GroupActionNamespaced.lean/declarations/unique-equivariant-invariant-law-is-group-invariant.md) | 51 | `result-track:57bb16ae6a9e13adb54b8ef616ce166423cfaafdec5064ab67e78f1b9470cb59` |
-| 5 | `structure` | [EquivarianceCertificate](../../../../Combinatorics/GroupActionNamespaced.lean/declarations/equivariancecertificate.md) | 68 | `declaration-track:af89741121051a36666cedd577aa3542713e61665d3cdd473488542d18f011ee` |
-| 6 | `structure` | [CommonContractiveBoundaryLawAtScale](../../../../Combinatorics/GroupActionNamespaced.lean/declarations/commoncontractiveboundarylawatscale.md) | 83 | `declaration-track:24c42308bb5f97c098f502d0005f0226119ba05da0b8374a4bd3dd5d68d2ffaf` |
-| 7 | `theorem` | [commonBoundaryLaw_certified_invariant_unique](../../../../Combinatorics/GroupActionNamespaced.lean/declarations/commonboundarylaw-certified-invariant-unique.md) | 100 | `result-track:40365260f8160d73693cf5c03e4af76dfbeb38400191cc5ae5ac86549fb7af7e` |
-| 8 | `theorem` | [commonBoundaryLaw_certified_invariant_is_group_invariant](../../../../Combinatorics/GroupActionNamespaced.lean/declarations/commonboundarylaw-certified-invariant-is-group-invariant.md) | 115 | `result-track:d1ee1bc606b80ab4f5e337bcec07c4b624a38b26f589057d8e20a6f4e9b5bb68` |
+| 1 | `structure` | [FiniteAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GroupActionNamespaced.lean/declarations/finiteaction.md) | 21 | `declaration-track:7d331bdc6a301e85b37ca87d1799c9d5a6cd8382baaff07bf27cf54ed87036da` |
+| 2 | `structure` | [LawAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GroupActionNamespaced.lean/declarations/lawaction.md) | 32 | `declaration-track:747539a89708ae4c715d849d337138020506ac10a6f25a4fec66a806107ab5ab` |
+| 3 | `def` | [KernelLawEquivariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GroupActionNamespaced.lean/declarations/kernellawequivariant.md) | 43 | `declaration-track:ef237d308c114a1d06061fa8e3e6e998c414b9956ac00ad645a8a67d4a441e83` |
+| 4 | `theorem` | [unique_equivariant_invariant_law_is_group_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GroupActionNamespaced.lean/declarations/unique-equivariant-invariant-law-is-group-invariant.md) | 51 | `result-track:57bb16ae6a9e13adb54b8ef616ce166423cfaafdec5064ab67e78f1b9470cb59` |
+| 5 | `structure` | [EquivarianceCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GroupActionNamespaced.lean/declarations/equivariancecertificate.md) | 68 | `declaration-track:af89741121051a36666cedd577aa3542713e61665d3cdd473488542d18f011ee` |
+| 6 | `structure` | [CommonContractiveBoundaryLawAtScale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GroupActionNamespaced.lean/declarations/commoncontractiveboundarylawatscale.md) | 83 | `declaration-track:24c42308bb5f97c098f502d0005f0226119ba05da0b8374a4bd3dd5d68d2ffaf` |
+| 7 | `theorem` | [commonBoundaryLaw_certified_invariant_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GroupActionNamespaced.lean/declarations/commonboundarylaw-certified-invariant-unique.md) | 100 | `result-track:40365260f8160d73693cf5c03e4af76dfbeb38400191cc5ae5ac86549fb7af7e` |
+| 8 | `theorem` | [commonBoundaryLaw_certified_invariant_is_group_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GroupActionNamespaced.lean/declarations/commonboundarylaw-certified-invariant-is-group-invariant.md) | 115 | `result-track:d1ee1bc606b80ab4f5e337bcec07c4b624a38b26f589057d8e20a6f4e9b5bb68` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

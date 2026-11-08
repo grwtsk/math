@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HattoriStallingsTrace.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HattoriStallingsTrace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HattoriStallingsTrace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HattoriStallingsTrace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HattoriStallingsTraceContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HattoriStallingsTrace.lean/declarations/hattoristallingstracecontract.md) | 18 | `declaration-track:006644afd79be3ef10e545f13d708e95cc746709214ad6e465f686f6bfa976b3` |
-| 2 | `theorem` | [hattori_stallings_trace_defined](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HattoriStallingsTrace.lean/declarations/hattori-stallings-trace-defined.md) | 28 | `result-track:94ad88154ca6e1848ea3b4207f371eff5028e0a68ec4f3cf2f25b84e095f6a77` |
+| 1 | `structure` | [HattoriStallingsTraceContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HattoriStallingsTrace.lean/declarations/hattoristallingstracecontract.md) | 18 | `declaration-track:006644afd79be3ef10e545f13d708e95cc746709214ad6e465f686f6bfa976b3` |
+| 2 | `theorem` | [hattori_stallings_trace_defined](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HattoriStallingsTrace.lean/declarations/hattori-stallings-trace-defined.md) | 28 | `result-track:94ad88154ca6e1848ea3b4207f371eff5028e0a68ec4f3cf2f25b84e095f6a77` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

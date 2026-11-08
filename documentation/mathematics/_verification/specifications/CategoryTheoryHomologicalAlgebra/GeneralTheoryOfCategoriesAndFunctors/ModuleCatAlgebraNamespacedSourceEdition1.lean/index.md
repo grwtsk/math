@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraNamespacedSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraNamespacedSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraNamespacedSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [moduleOfAlgebraModule](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraNamespacedSourceEdition1.lean/declarations/moduleofalgebramodule.md) | 55 | `declaration-track:d75d28ecae199aa2e0a3f07d48716103c8d2b68bb291708568aa362a4fe88fbd` |
-| 2 | `theorem` | [isScalarTower_of_algebra_moduleCat](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraNamespacedSourceEdition1.lean/declarations/isscalartower-of-algebra-modulecat.md) | 61 | `result-track:77bfdd2aa2954c43cffcf30179001c962afd6f53f11d5a7f15f55423d02228f0` |
-| 3 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraNamespacedSourceEdition1.lean/declarations/example.md) | 68 | `declaration-track:aae57dee0c185fa5fbd82848abc00b195a0693511c1d6653eb4dfef013620f89` |
-| 4 | `instance` | [linearOverField](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraNamespacedSourceEdition1.lean/declarations/linearoverfield.md) | 71 | `declaration-track:b02098652662ee6e8c698251c793dc46a05f8b9696601168153665997bbfee5d` |
+| 1 | `def` | [moduleOfAlgebraModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraNamespacedSourceEdition1.lean/declarations/moduleofalgebramodule.md) | 55 | `declaration-track:d75d28ecae199aa2e0a3f07d48716103c8d2b68bb291708568aa362a4fe88fbd` |
+| 2 | `theorem` | [isScalarTower_of_algebra_moduleCat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraNamespacedSourceEdition1.lean/declarations/isscalartower-of-algebra-modulecat.md) | 61 | `result-track:77bfdd2aa2954c43cffcf30179001c962afd6f53f11d5a7f15f55423d02228f0` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraNamespacedSourceEdition1.lean/declarations/example.md) | 68 | `declaration-track:aae57dee0c185fa5fbd82848abc00b195a0693511c1d6653eb4dfef013620f89` |
+| 4 | `instance` | [linearOverField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraNamespacedSourceEdition1.lean/declarations/linearoverfield.md) | 71 | `declaration-track:b02098652662ee6e8c698251c793dc46a05f8b9696601168153665997bbfee5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

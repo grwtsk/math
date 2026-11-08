@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/Operator.lean/index.md) · [Full source](../../../../FunctionalAnalysis/Operator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Operator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Operator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Hilbert.LinearOperator](../../../../FunctionalAnalysis/Operator.lean/declarations/hilbert-linearoperator.md) | 23 | `declaration-track:799a4cd0c2d15a2a6638a01909191c832b999bea2c2887466c48cc5598c3e87b` |
-| 2 | `def` | [Hilbert.identityOperator](../../../../FunctionalAnalysis/Operator.lean/declarations/hilbert-identityoperator.md) | 33 | `declaration-track:4f88327f15907d85dc87e009c5f40481167e7fffd9f50977d7f34684862474c0` |
-| 3 | `theorem` | [Hilbert.linearOperator_is_linear](../../../../FunctionalAnalysis/Operator.lean/declarations/hilbert-linearoperator-is-linear.md) | 47 | `result-track:0c893018a0811521bacf1e3cc0e04e1e4ca27bf7c7b1dffcd8d9890d1bfbca60` |
+| 1 | `structure` | [Hilbert.LinearOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Operator.lean/declarations/hilbert-linearoperator.md) | 23 | `declaration-track:799a4cd0c2d15a2a6638a01909191c832b999bea2c2887466c48cc5598c3e87b` |
+| 2 | `def` | [Hilbert.identityOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Operator.lean/declarations/hilbert-identityoperator.md) | 33 | `declaration-track:4f88327f15907d85dc87e009c5f40481167e7fffd9f50977d7f34684862474c0` |
+| 3 | `theorem` | [Hilbert.linearOperator_is_linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Operator.lean/declarations/hilbert-linearoperator-is-linear.md) | 47 | `result-track:0c893018a0811521bacf1e3cc0e04e1e4ca27bf7c7b1dffcd8d9890d1bfbca60` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

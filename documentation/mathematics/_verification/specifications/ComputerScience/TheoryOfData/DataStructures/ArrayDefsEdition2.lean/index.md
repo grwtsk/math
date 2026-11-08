@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ArrayDefsEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ArrayDefsEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ArrayDefsEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ArrayDefsEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cyclicPermute!](../../../../../../ComputerScience/TheoryOfData/DataStructures/ArrayDefsEdition2.lean/declarations/cyclicpermute.md) | 23 | `declaration-track:76fc7e352a92a00fdf371979abc76a84cc19898ede40374756616b159375dbfe` |
-| 2 | `def` | [permute!](../../../../../../ComputerScience/TheoryOfData/DataStructures/ArrayDefsEdition2.lean/declarations/permute.md) | 33 | `declaration-track:5c13dc30c0aec5816881ec3cc9632232d5ea32e5b405b246408de7d313ea3f13` |
+| 1 | `def` | [cyclicPermute!](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ArrayDefsEdition2.lean/declarations/cyclicpermute.md) | 23 | `declaration-track:76fc7e352a92a00fdf371979abc76a84cc19898ede40374756616b159375dbfe` |
+| 2 | `def` | [permute!](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ArrayDefsEdition2.lean/declarations/permute.md) | 33 | `declaration-track:5c13dc30c0aec5816881ec3cc9632232d5ea32e5b405b246408de7d313ea3f13` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

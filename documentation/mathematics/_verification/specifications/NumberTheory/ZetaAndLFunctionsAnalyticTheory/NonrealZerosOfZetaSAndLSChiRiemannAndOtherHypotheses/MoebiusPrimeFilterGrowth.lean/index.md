@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.PrimeFilterEnergy`](../../../../../../MeasureAndIntegration/PrimeFilterEnergy.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Prime.ReciprocalMass`](../../../../../../MeasureAndIntegration/ReciprocalMass.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.PrimeFilterEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeFilterEnergy.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Prime.ReciprocalMass`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalMass.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [PrimeReverberation](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/declarations/primereverberation.md) | 16 | `declaration-track:537c24ca94a8d3bc58f55c107202d354e4e7a5def662206a085e7366fb41cc20` |
-| 2 | `def` | [PrimeBlockReverberation](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/declarations/primeblockreverberation.md) | 23 | `declaration-track:277f6db03f6041743a84226ac894a7ed44993672aebf6a033b42a15796f81a22` |
-| 3 | `theorem` | [baseNote_energy_bound](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/declarations/basenote-energy-bound.md) | 30 | `result-track:733fce4c942741a9d14ea8e79ca029b0c22d397401595052ec69ecef1419dc4a` |
-| 4 | `theorem` | [cascade_compensated_bound](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/declarations/cascade-compensated-bound.md) | 46 | `result-track:409c70a55548cb98750d0d0e399a9ce9c412fb4e3571e63ebec3e72a7a57ea02` |
-| 5 | `theorem` | [pickup_poly_of_compensated_step](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/declarations/pickup-poly-of-compensated-step.md) | 68 | `result-track:3925701cd3ad568d42949b8195dfdc96ea072b52ac3e8d008427b45d22ab1e5a` |
-| 6 | `theorem` | [p04_of_block_reverberation](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/declarations/p04-of-block-reverberation.md) | 104 | `result-track:36ae3d7c711b44c1f95a457c3891e33aceea9e9073fa2328fb058045a5c1f646` |
-| 7 | `theorem` | [p04_of_prime_reverberation](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/declarations/p04-of-prime-reverberation.md) | 118 | `result-track:964a09a2b90cbeccc754be08e8251b7b119eca6cc16cf4053b1112221124ea91` |
-| 8 | `theorem` | [riemannHypothesis_of_block_reverberation](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/declarations/riemannhypothesis-of-block-reverberation.md) | 169 | `result-track:3636727a174c9616cbf979126567f12ffde135edbe52d2e4d697dcca87d7311f` |
+| 1 | `def` | [PrimeReverberation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/declarations/primereverberation.md) | 16 | `declaration-track:537c24ca94a8d3bc58f55c107202d354e4e7a5def662206a085e7366fb41cc20` |
+| 2 | `def` | [PrimeBlockReverberation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/declarations/primeblockreverberation.md) | 23 | `declaration-track:277f6db03f6041743a84226ac894a7ed44993672aebf6a033b42a15796f81a22` |
+| 3 | `theorem` | [baseNote_energy_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/declarations/basenote-energy-bound.md) | 30 | `result-track:733fce4c942741a9d14ea8e79ca029b0c22d397401595052ec69ecef1419dc4a` |
+| 4 | `theorem` | [cascade_compensated_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/declarations/cascade-compensated-bound.md) | 46 | `result-track:409c70a55548cb98750d0d0e399a9ce9c412fb4e3571e63ebec3e72a7a57ea02` |
+| 5 | `theorem` | [pickup_poly_of_compensated_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/declarations/pickup-poly-of-compensated-step.md) | 68 | `result-track:3925701cd3ad568d42949b8195dfdc96ea072b52ac3e8d008427b45d22ab1e5a` |
+| 6 | `theorem` | [p04_of_block_reverberation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/declarations/p04-of-block-reverberation.md) | 104 | `result-track:36ae3d7c711b44c1f95a457c3891e33aceea9e9073fa2328fb058045a5c1f646` |
+| 7 | `theorem` | [p04_of_prime_reverberation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/declarations/p04-of-prime-reverberation.md) | 118 | `result-track:964a09a2b90cbeccc754be08e8251b7b119eca6cc16cf4053b1112221124ea91` |
+| 8 | `theorem` | [riemannHypothesis_of_block_reverberation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeFilterGrowth.lean/declarations/riemannhypothesis-of-block-reverberation.md) | 169 | `result-track:3636727a174c9616cbf979126567f12ffde135edbe52d2e4d697dcca87d7311f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

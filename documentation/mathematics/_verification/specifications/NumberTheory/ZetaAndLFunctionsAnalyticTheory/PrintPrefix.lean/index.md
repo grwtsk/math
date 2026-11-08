@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrintPrefix.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrintPrefix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrintPrefix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrintPrefix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TEmpty](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrintPrefix.lean/declarations/tempty.md) | 3 | `declaration-track:584558ec4ab6c8fda6fc457bb25c339b6c275bd267e47b56f5acb7bea6fdbfd3` |
-| 2 | `def` | [foo](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrintPrefix.lean/declarations/foo.md) | 34 | `declaration-track:d7e1fc4a0b67015180fc8324362befc8c709602c9bbe1962abc492ce0f3649d5` |
-| 3 | `structure` | [TestStruct](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrintPrefix.lean/declarations/teststruct.md) | 43 | `declaration-track:05ccf5042e160e264ce4d341e727451151b0e82510c3fd83c9482f111195db3c` |
-| 4 | `def` | [testMatchProof](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrintPrefix.lean/declarations/testmatchproof.md) | 131 | `declaration-track:7c7951fa2021c7a79f4dd45eb41c409e59fc9fea533ee9417aeb9188813692c0` |
-| 5 | `inductive` | [TestInd](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrintPrefix.lean/declarations/testind.md) | 152 | `declaration-track:63be6567f68ab1eacef171b44c82a8da19347ccf9da74077f43332a4d0333111` |
+| 1 | `inductive` | [TEmpty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrintPrefix.lean/declarations/tempty.md) | 3 | `declaration-track:584558ec4ab6c8fda6fc457bb25c339b6c275bd267e47b56f5acb7bea6fdbfd3` |
+| 2 | `def` | [foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrintPrefix.lean/declarations/foo.md) | 34 | `declaration-track:d7e1fc4a0b67015180fc8324362befc8c709602c9bbe1962abc492ce0f3649d5` |
+| 3 | `structure` | [TestStruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrintPrefix.lean/declarations/teststruct.md) | 43 | `declaration-track:05ccf5042e160e264ce4d341e727451151b0e82510c3fd83c9482f111195db3c` |
+| 4 | `def` | [testMatchProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrintPrefix.lean/declarations/testmatchproof.md) | 131 | `declaration-track:7c7951fa2021c7a79f4dd45eb41c409e59fc9fea533ee9417aeb9188813692c0` |
+| 5 | `inductive` | [TestInd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrintPrefix.lean/declarations/testind.md) | 152 | `declaration-track:63be6567f68ab1eacef171b44c82a8da19347ccf9da74077f43332a4d0333111` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmaCmd.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmaCmd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmaCmd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmaCmd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [test1](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmaCmd.lean/declarations/test1.md) | 13 | `result-track:a014d5de911cb4c23563b8bfe499bc472466a3ba621351fda4326e4477b58cea` |
-| 2 | `lemma` | [test2](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmaCmd.lean/declarations/test2.md) | 17 | `result-track:554aba4b920914208e92b13b091b8fc70cd0b1051ddeb03e41e747964d8e7489` |
-| 3 | `lemma` | [test3](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmaCmd.lean/declarations/test3.md) | 29 | `result-track:41c4f75597e12d146cc1c0e320224fadd90750739221fe63a93c82c01786c0d9` |
-| 4 | `lemma` | [test4](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmaCmd.lean/declarations/test4.md) | 34 | `result-track:a00f715f8a9b7ce0b3f693c7cdd98fd2fa4884404aab73ae7844c9677f637038` |
-| 5 | `lemma` | [test5](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmaCmd.lean/declarations/test5.md) | 36 | `result-track:381e3b2a73317033fe8c26811e012e157e897ccd93d2adcc7e09ed048a65e5f3` |
+| 1 | `lemma` | [test1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmaCmd.lean/declarations/test1.md) | 13 | `result-track:a014d5de911cb4c23563b8bfe499bc472466a3ba621351fda4326e4477b58cea` |
+| 2 | `lemma` | [test2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmaCmd.lean/declarations/test2.md) | 17 | `result-track:554aba4b920914208e92b13b091b8fc70cd0b1051ddeb03e41e747964d8e7489` |
+| 3 | `lemma` | [test3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmaCmd.lean/declarations/test3.md) | 29 | `result-track:41c4f75597e12d146cc1c0e320224fadd90750739221fe63a93c82c01786c0d9` |
+| 4 | `lemma` | [test4](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmaCmd.lean/declarations/test4.md) | 34 | `result-track:a00f715f8a9b7ce0b3f693c7cdd98fd2fa4884404aab73ae7844c9677f637038` |
+| 5 | `lemma` | [test5](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmaCmd.lean/declarations/test5.md) | 36 | `result-track:381e3b2a73317033fe8c26811e012e157e897ccd93d2adcc7e09ed048a65e5f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

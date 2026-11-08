@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inverse_sqrt_antiderivative](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassNamespaced.lean/declarations/inverse-sqrt-antiderivative.md) | 29 | `result-track:1bac6662af870128a024c3e9c5ee6c03ccdf08d59b92cc5b4dc5cf2385377fb4` |
-| 2 | `theorem` | [inverse_sqrt_cell_integrable](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassNamespaced.lean/declarations/inverse-sqrt-cell-integrable.md) | 40 | `result-track:8ee3206dae410dc1bf6757b04d9233bf04fe24daa2ef36a272d0fd39cd5e6232` |
-| 3 | `theorem` | [inverse_sqrt_integral](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassNamespaced.lean/declarations/inverse-sqrt-integral.md) | 49 | `result-track:94a40536d198b8987e32ae60734f68e2ce562748f68b13eea630b3bbb38ab90a` |
-| 4 | `def` | [columnEnvelopeMass](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassNamespaced.lean/declarations/columnenvelopemass.md) | 60 | `declaration-track:95c7306e56a8343bf6343c5a81c9e6ac07038d70952faedcc9d3770b56fc073c` |
-| 5 | `theorem` | [columnEnvelopeMass_le](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassNamespaced.lean/declarations/columnenvelopemass-le.md) | 67 | `result-track:948cc233c61df595c6f098229ee7f4fc58c74fd2e4d002fe55b38c551abe74eb` |
+| 1 | `theorem` | [inverse_sqrt_antiderivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassNamespaced.lean/declarations/inverse-sqrt-antiderivative.md) | 29 | `result-track:1bac6662af870128a024c3e9c5ee6c03ccdf08d59b92cc5b4dc5cf2385377fb4` |
+| 2 | `theorem` | [inverse_sqrt_cell_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassNamespaced.lean/declarations/inverse-sqrt-cell-integrable.md) | 40 | `result-track:8ee3206dae410dc1bf6757b04d9233bf04fe24daa2ef36a272d0fd39cd5e6232` |
+| 3 | `theorem` | [inverse_sqrt_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassNamespaced.lean/declarations/inverse-sqrt-integral.md) | 49 | `result-track:94a40536d198b8987e32ae60734f68e2ce562748f68b13eea630b3bbb38ab90a` |
+| 4 | `def` | [columnEnvelopeMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassNamespaced.lean/declarations/columnenvelopemass.md) | 60 | `declaration-track:95c7306e56a8343bf6343c5a81c9e6ac07038d70952faedcc9d3770b56fc073c` |
+| 5 | `theorem` | [columnEnvelopeMass_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassNamespaced.lean/declarations/columnenvelopemass-le.md) | 67 | `result-track:948cc233c61df595c6f098229ee7f4fc58c74fd2e4d002fe55b38c551abe74eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

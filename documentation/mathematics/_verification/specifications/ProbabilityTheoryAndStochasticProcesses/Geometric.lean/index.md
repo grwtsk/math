@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/Geometric.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/Geometric.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Geometric.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Geometric.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [geometricPMFReal](../../../../ProbabilityTheoryAndStochasticProcesses/Geometric.lean/declarations/geometricpmfreal.md) | 36 | `declaration-track:9e81872b550ad83e124bcd179c96e8a4022ee2d6324c65f986853b36d1832c38` |
-| 2 | `lemma` | [geometricPMFRealSum](../../../../ProbabilityTheoryAndStochasticProcesses/Geometric.lean/declarations/geometricpmfrealsum.md) | 38 | `result-track:7af3f7cebcca144e1580f9d322a507d846d0561a588ec269dc53b9fd01a6fa75` |
-| 3 | `lemma` | [geometricPMFReal_pos](../../../../ProbabilityTheoryAndStochasticProcesses/Geometric.lean/declarations/geometricpmfreal-pos.md) | 48 | `result-track:0cdea461d16ff87a9d50e893f8672bd92f24f7a4a8d6cf1b4ed068b81a6b50ee` |
-| 4 | `lemma` | [geometricPMFReal_nonneg](../../../../ProbabilityTheoryAndStochasticProcesses/Geometric.lean/declarations/geometricpmfreal-nonneg.md) | 54 | `result-track:b56a3cf6eb242c88d99a297473bce4522344bb35da8fc6c225f81578eae4fe6a` |
-| 5 | `def` | [geometricPMF](../../../../ProbabilityTheoryAndStochasticProcesses/Geometric.lean/declarations/geometricpmf.md) | 62 | `declaration-track:ed4965da8ccebd6dcdf628426a9932270b6d2c8da6f018220ff6d49bf44b8cf6` |
-| 6 | `lemma` | [measurable_geometricPMFReal](../../../../ProbabilityTheoryAndStochasticProcesses/Geometric.lean/declarations/measurable-geometricpmfreal.md) | 71 | `result-track:467496051a4d6a6032246bc6bd39bed7b538a0ab0f31010a91b558e149406455` |
-| 7 | `lemma` | [stronglyMeasurable_geometricPMFReal](../../../../ProbabilityTheoryAndStochasticProcesses/Geometric.lean/declarations/stronglymeasurable-geometricpmfreal.md) | 75 | `result-track:beedea9db71e95406d536b5be21e44ab81e5304b8b5948a281e0a71a62febf96` |
-| 8 | `def` | [geometricMeasure](../../../../ProbabilityTheoryAndStochasticProcesses/Geometric.lean/declarations/geometricmeasure.md) | 82 | `declaration-track:c00e6a1e1c12eb23e1f7c753d755799d1069ee8764cc50ae79e429c3fdd32016` |
-| 9 | `lemma` | [isProbabilityMeasureGeometric](../../../../ProbabilityTheoryAndStochasticProcesses/Geometric.lean/declarations/isprobabilitymeasuregeometric.md) | 85 | `result-track:b5190c22c30a10c5307dbb356e3dcf5d85978f6a5666c1dbc1d2d8f52d2655d7` |
+| 1 | `def` | [geometricPMFReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Geometric.lean/declarations/geometricpmfreal.md) | 36 | `declaration-track:9e81872b550ad83e124bcd179c96e8a4022ee2d6324c65f986853b36d1832c38` |
+| 2 | `lemma` | [geometricPMFRealSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Geometric.lean/declarations/geometricpmfrealsum.md) | 38 | `result-track:7af3f7cebcca144e1580f9d322a507d846d0561a588ec269dc53b9fd01a6fa75` |
+| 3 | `lemma` | [geometricPMFReal_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Geometric.lean/declarations/geometricpmfreal-pos.md) | 48 | `result-track:0cdea461d16ff87a9d50e893f8672bd92f24f7a4a8d6cf1b4ed068b81a6b50ee` |
+| 4 | `lemma` | [geometricPMFReal_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Geometric.lean/declarations/geometricpmfreal-nonneg.md) | 54 | `result-track:b56a3cf6eb242c88d99a297473bce4522344bb35da8fc6c225f81578eae4fe6a` |
+| 5 | `def` | [geometricPMF](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Geometric.lean/declarations/geometricpmf.md) | 62 | `declaration-track:ed4965da8ccebd6dcdf628426a9932270b6d2c8da6f018220ff6d49bf44b8cf6` |
+| 6 | `lemma` | [measurable_geometricPMFReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Geometric.lean/declarations/measurable-geometricpmfreal.md) | 71 | `result-track:467496051a4d6a6032246bc6bd39bed7b538a0ab0f31010a91b558e149406455` |
+| 7 | `lemma` | [stronglyMeasurable_geometricPMFReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Geometric.lean/declarations/stronglymeasurable-geometricpmfreal.md) | 75 | `result-track:beedea9db71e95406d536b5be21e44ab81e5304b8b5948a281e0a71a62febf96` |
+| 8 | `def` | [geometricMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Geometric.lean/declarations/geometricmeasure.md) | 82 | `declaration-track:c00e6a1e1c12eb23e1f7c753d755799d1069ee8764cc50ae79e429c3fdd32016` |
+| 9 | `lemma` | [isProbabilityMeasureGeometric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Geometric.lean/declarations/isprobabilitymeasuregeometric.md) | 85 | `result-track:b5190c22c30a10c5307dbb356e3dcf5d85978f6a5666c1dbc1d2d8f52d2655d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

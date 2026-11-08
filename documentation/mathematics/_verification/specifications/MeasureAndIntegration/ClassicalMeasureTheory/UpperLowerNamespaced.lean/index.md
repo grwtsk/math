@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/UpperLowerNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/UpperLowerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/UpperLowerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/UpperLowerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [aux₀](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/UpperLowerNamespaced.lean/declarations/aux-source-edition-2.md) | 66 | `result-track:d95a953190f0190a48cf35a0018d6d76c5ff11c65199ea489b181764c5436493` |
-| 2 | `lemma` | [aux₁](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/UpperLowerNamespaced.lean/declarations/aux.md) | 95 | `result-track:d76ce6dee5898bef78327e3898c2c23613023dcae67f705c9e2d9a788f2e939a` |
-| 3 | `theorem` | [IsUpperSet.null_frontier](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/UpperLowerNamespaced.lean/declarations/isupperset-null-frontier.md) | 129 | `result-track:a56f1a55525b25a73fa873e96e636e64cfdb364477e954964139103aa392db10` |
-| 4 | `theorem` | [IsLowerSet.null_frontier](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/UpperLowerNamespaced.lean/declarations/islowerset-null-frontier.md) | 140 | `result-track:90456fa7095256b4802adb520b6a979b473a1e450de7352159172297312f51f1` |
-| 5 | `theorem` | [Set.OrdConnected.null_frontier](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/UpperLowerNamespaced.lean/declarations/set-ordconnected-null-frontier.md) | 151 | `result-track:1468306df3c7f353d3539db7633a143905be59256b1800a41388804f7d8d6d31` |
-| 6 | `theorem` | [Set.OrdConnected.nullMeasurableSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/UpperLowerNamespaced.lean/declarations/set-ordconnected-nullmeasurableset.md) | 157 | `result-track:b356be9f6a01df4939abc07d9ade0aa5d6905febe8896fb7c400be6c6344f101` |
-| 7 | `theorem` | [IsAntichain.volume_eq_zero](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/UpperLowerNamespaced.lean/declarations/isantichain-volume-eq-zero.md) | 160 | `result-track:be692770b5f70c7789746501610826124061353a5960214614195b8665943ec9` |
+| 1 | `lemma` | [aux₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/UpperLowerNamespaced.lean/declarations/aux-source-edition-2.md) | 66 | `result-track:d95a953190f0190a48cf35a0018d6d76c5ff11c65199ea489b181764c5436493` |
+| 2 | `lemma` | [aux₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/UpperLowerNamespaced.lean/declarations/aux.md) | 95 | `result-track:d76ce6dee5898bef78327e3898c2c23613023dcae67f705c9e2d9a788f2e939a` |
+| 3 | `theorem` | [IsUpperSet.null_frontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/UpperLowerNamespaced.lean/declarations/isupperset-null-frontier.md) | 129 | `result-track:a56f1a55525b25a73fa873e96e636e64cfdb364477e954964139103aa392db10` |
+| 4 | `theorem` | [IsLowerSet.null_frontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/UpperLowerNamespaced.lean/declarations/islowerset-null-frontier.md) | 140 | `result-track:90456fa7095256b4802adb520b6a979b473a1e450de7352159172297312f51f1` |
+| 5 | `theorem` | [Set.OrdConnected.null_frontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/UpperLowerNamespaced.lean/declarations/set-ordconnected-null-frontier.md) | 151 | `result-track:1468306df3c7f353d3539db7633a143905be59256b1800a41388804f7d8d6d31` |
+| 6 | `theorem` | [Set.OrdConnected.nullMeasurableSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/UpperLowerNamespaced.lean/declarations/set-ordconnected-nullmeasurableset.md) | 157 | `result-track:b356be9f6a01df4939abc07d9ade0aa5d6905febe8896fb7c400be6c6344f101` |
+| 7 | `theorem` | [IsAntichain.volume_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/UpperLowerNamespaced.lean/declarations/isantichain-volume-eq-zero.md) | 160 | `result-track:be692770b5f70c7789746501610826124061353a5960214614195b8665943ec9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

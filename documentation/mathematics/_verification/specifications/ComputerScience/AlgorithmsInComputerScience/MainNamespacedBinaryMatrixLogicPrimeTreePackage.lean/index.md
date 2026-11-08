@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MainNamespacedBinaryMatrixLogicPrimeTreePackage.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MainNamespacedBinaryMatrixLogicPrimeTreePackage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainNamespacedBinaryMatrixLogicPrimeTreePackage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainNamespacedBinaryMatrixLogicPrimeTreePackage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -69,8 +69,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BinaryMatrixLogicPrimeTreePackage](../../../../../ComputerScience/AlgorithmsInComputerScience/MainNamespacedBinaryMatrixLogicPrimeTreePackage.lean/declarations/binarymatrixlogicprimetreepackage.md) | 27 | `declaration-track:73a3276b65ad9e007f8a3d45f0420c48272e78105ea3d3f0fe6728763483d6b7` |
-| 2 | `def` | [defaultPrimeTreePackage](../../../../../ComputerScience/AlgorithmsInComputerScience/MainNamespacedBinaryMatrixLogicPrimeTreePackage.lean/declarations/defaultprimetreepackage.md) | 32 | `declaration-track:74c9d90cc525fe8c27835d5bfea3ffbaddb182cf466550f24969cb3b256e2f67` |
+| 1 | `structure` | [BinaryMatrixLogicPrimeTreePackage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainNamespacedBinaryMatrixLogicPrimeTreePackage.lean/declarations/binarymatrixlogicprimetreepackage.md) | 27 | `declaration-track:73a3276b65ad9e007f8a3d45f0420c48272e78105ea3d3f0fe6728763483d6b7` |
+| 2 | `def` | [defaultPrimeTreePackage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainNamespacedBinaryMatrixLogicPrimeTreePackage.lean/declarations/defaultprimetreepackage.md) | 32 | `declaration-track:74c9d90cc525fe8c27835d5bfea3ffbaddb182cf466550f24969cb3b256e2f67` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/SubalgebraTower.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/SubalgebraTower.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraTower.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraTower.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lmul_algebraMap](../../../../AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/lmul-algebramap.md) | 42 | `result-track:824967b564b0b54a7de58ad06616bcc937a256caaade7b696d6995120a199ad9` |
-| 2 | `instance` | [subalgebra](../../../../AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/subalgebra.md) | 54 | `declaration-track:ef9c697bb3eaa6ac135889b312e0caba470fc92e57edadb5f1e672f3913aa9d1` |
-| 3 | `instance` | [subalgebra'](../../../../AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/subalgebra-source-edition-2.md) | 59 | `declaration-track:f83d9c271853f04ecb3fdd0551fa8cccddfce28127fbdd8fdd565e3b6b334a35` |
-| 4 | `def` | [restrictScalars](../../../../AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/restrictscalars.md) | 79 | `declaration-track:ead1c49f873b39e8bb6f9c3d4a168a152588456c7c4ec37988965d2eeb7abd6b` |
-| 5 | `theorem` | [coe_restrictScalars](../../../../AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/coe-restrictscalars.md) | 86 | `result-track:8971764fda2dcd052a0fd8312a19064abbb34d27991e591e74c58e64d262cd9a` |
-| 6 | `theorem` | [restrictScalars_top](../../../../AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/restrictscalars-top.md) | 90 | `result-track:0fa2e3d68f309ba1086ecda6cc779a73cf2175b077e5231f202f18dd82877ab2` |
-| 7 | `theorem` | [restrictScalars_toSubmodule](../../../../AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/restrictscalars-tosubmodule.md) | 94 | `result-track:7fdf7a7333a6392c562a2443ef275767e725a318c5f2bc55af9e243db81a92ae` |
-| 8 | `theorem` | [mem_restrictScalars](../../../../AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/mem-restrictscalars.md) | 99 | `result-track:ee959f34d20aa33607e54187d70905deb4f9b91fd9485d85ac61ae49eeec071c` |
-| 9 | `theorem` | [restrictScalars_injective](../../../../AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/restrictscalars-injective.md) | 102 | `result-track:71430697c407c75df9a6dc84b408d0d872072c4513e5e19235adeb8d8bb921fb` |
-| 10 | `def` | [ofRestrictScalars](../../../../AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/ofrestrictscalars.md) | 110 | `declaration-track:21ec4d3d184797a45c3ca30f649241f8f2827282de5d3563d1975b1769057203` |
-| 11 | `lemma` | [range_isScalarTower_toAlgHom](../../../../AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/range-isscalartower-toalghom.md) | 118 | `result-track:57963438537b8d9345f5147b4f600967ab3bd806a03893909ccfed9b4740e7b3` |
-| 12 | `theorem` | [adjoin_range_toAlgHom](../../../../AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/adjoin-range-toalghom.md) | 137 | `result-track:3d64d751cf1808e18e754dbce4cbbb5cac408d8e645d8e43462eb5cbdce77220` |
+| 1 | `theorem` | [lmul_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/lmul-algebramap.md) | 42 | `result-track:824967b564b0b54a7de58ad06616bcc937a256caaade7b696d6995120a199ad9` |
+| 2 | `instance` | [subalgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/subalgebra.md) | 54 | `declaration-track:ef9c697bb3eaa6ac135889b312e0caba470fc92e57edadb5f1e672f3913aa9d1` |
+| 3 | `instance` | [subalgebra'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/subalgebra-source-edition-2.md) | 59 | `declaration-track:f83d9c271853f04ecb3fdd0551fa8cccddfce28127fbdd8fdd565e3b6b334a35` |
+| 4 | `def` | [restrictScalars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/restrictscalars.md) | 79 | `declaration-track:ead1c49f873b39e8bb6f9c3d4a168a152588456c7c4ec37988965d2eeb7abd6b` |
+| 5 | `theorem` | [coe_restrictScalars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/coe-restrictscalars.md) | 86 | `result-track:8971764fda2dcd052a0fd8312a19064abbb34d27991e591e74c58e64d262cd9a` |
+| 6 | `theorem` | [restrictScalars_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/restrictscalars-top.md) | 90 | `result-track:0fa2e3d68f309ba1086ecda6cc779a73cf2175b077e5231f202f18dd82877ab2` |
+| 7 | `theorem` | [restrictScalars_toSubmodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/restrictscalars-tosubmodule.md) | 94 | `result-track:7fdf7a7333a6392c562a2443ef275767e725a318c5f2bc55af9e243db81a92ae` |
+| 8 | `theorem` | [mem_restrictScalars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/mem-restrictscalars.md) | 99 | `result-track:ee959f34d20aa33607e54187d70905deb4f9b91fd9485d85ac61ae49eeec071c` |
+| 9 | `theorem` | [restrictScalars_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/restrictscalars-injective.md) | 102 | `result-track:71430697c407c75df9a6dc84b408d0d872072c4513e5e19235adeb8d8bb921fb` |
+| 10 | `def` | [ofRestrictScalars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/ofrestrictscalars.md) | 110 | `declaration-track:21ec4d3d184797a45c3ca30f649241f8f2827282de5d3563d1975b1769057203` |
+| 11 | `lemma` | [range_isScalarTower_toAlgHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/range-isscalartower-toalghom.md) | 118 | `result-track:57963438537b8d9345f5147b4f600967ab3bd806a03893909ccfed9b4740e7b3` |
+| 12 | `theorem` | [adjoin_range_toAlgHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraTower.lean/declarations/adjoin-range-toalghom.md) | 137 | `result-track:3d64d751cf1808e18e754dbce4cbbb5cac408d8e645d8e43462eb5cbdce77220` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

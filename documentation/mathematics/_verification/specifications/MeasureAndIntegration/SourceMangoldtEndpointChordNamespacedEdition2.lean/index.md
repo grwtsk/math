@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceMangoldtEndpointChordNamespacedEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceMangoldtEndpointChordNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMangoldtEndpointChordNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMangoldtEndpointChordNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [criticalMangoldtWork_endpoint_chord_replacement_abs_le](../../../../MeasureAndIntegration/SourceMangoldtEndpointChordNamespacedEdition2.lean/declarations/criticalmangoldtwork-endpoint-chord-replacement-abs-le.md) | 28 | `result-track:f2b368b0e381a24cfb0021b511a02dafd5905c55a907050281b34a2d797b0ae2` |
+| 1 | `theorem` | [criticalMangoldtWork_endpoint_chord_replacement_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMangoldtEndpointChordNamespacedEdition2.lean/declarations/criticalmangoldtwork-endpoint-chord-replacement-abs-le.md) | 28 | `result-track:f2b368b0e381a24cfb0021b511a02dafd5905c55a907050281b34a2d797b0ae2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

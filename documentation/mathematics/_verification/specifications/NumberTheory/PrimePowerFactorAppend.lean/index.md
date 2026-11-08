@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PrimePowerFactorAppend.lean/index.md) · [Full source](../../../../NumberTheory/PrimePowerFactorAppend.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePowerFactorAppend.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePowerFactorAppend.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [dilateTree](../../../../NumberTheory/PrimePowerFactorAppend.lean/declarations/dilatetree.md) | 36 | `declaration-track:0796908905805e6ff9bca0f4ad8ee64efecb969c018b8c93652b89531325d386` |
-| 2 | `theorem` | [decode_dilateTree](../../../../NumberTheory/PrimePowerFactorAppend.lean/declarations/decode-dilatetree.md) | 42 | `result-track:758c115bc36b5abd3a0ad5a974b0316f6ec7dec41fc58ab06d4308ef2c4833d2` |
+| 1 | `def` | [dilateTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePowerFactorAppend.lean/declarations/dilatetree.md) | 36 | `declaration-track:0796908905805e6ff9bca0f4ad8ee64efecb969c018b8c93652b89531325d386` |
+| 2 | `theorem` | [decode_dilateTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePowerFactorAppend.lean/declarations/decode-dilatetree.md) | 42 | `result-track:758c115bc36b5abd3a0ad5a974b0316f6ec7dec41fc58ab06d4308ef2c4833d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

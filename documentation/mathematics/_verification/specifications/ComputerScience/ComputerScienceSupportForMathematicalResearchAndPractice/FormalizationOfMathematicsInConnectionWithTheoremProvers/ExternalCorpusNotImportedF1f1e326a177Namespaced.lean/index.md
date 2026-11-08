@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExternalCorpusNotImportedF1f1e326a177Namespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExternalCorpusNotImportedF1f1e326a177Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExternalCorpusNotImportedF1f1e326a177Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExternalCorpusNotImportedF1f1e326a177Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [importsExternalCorpus](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExternalCorpusNotImportedF1f1e326a177Namespaced.lean/declarations/importsexternalcorpus.md) | 20 | `declaration-track:b4a3c4905dc5fbdbc172f41ddd5cf7be18b64ff9d4f9247850a5d415be4482c1` |
-| 2 | `theorem` | [external_corpus_not_imported](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExternalCorpusNotImportedF1f1e326a177Namespaced.lean/declarations/external-corpus-not-imported.md) | 22 | `result-track:a8a22415c2e18797ba76c13d206e930ebf448da38338a6e389839af11f5d773d` |
+| 1 | `def` | [importsExternalCorpus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExternalCorpusNotImportedF1f1e326a177Namespaced.lean/declarations/importsexternalcorpus.md) | 20 | `declaration-track:b4a3c4905dc5fbdbc172f41ddd5cf7be18b64ff9d4f9247850a5d415be4482c1` |
+| 2 | `theorem` | [external_corpus_not_imported](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExternalCorpusNotImportedF1f1e326a177Namespaced.lean/declarations/external-corpus-not-imported.md) | 22 | `result-track:a8a22415c2e18797ba76c13d206e930ebf448da38338a6e389839af11f5d773d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

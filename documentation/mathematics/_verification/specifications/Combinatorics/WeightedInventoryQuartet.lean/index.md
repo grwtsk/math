@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/WeightedInventoryQuartet.lean/index.md) · [Full source](../../../../Combinatorics/WeightedInventoryQuartet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedInventoryQuartet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedInventoryQuartet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.WeightedInventoryDeficit`](../../../../Combinatorics/WeightedInventoryDeficit.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Combinatorics.WeightedInventoryDeficit`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedInventoryDeficit.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [known_add_missing_le_mass](../../../../Combinatorics/WeightedInventoryQuartet.lean/declarations/known-add-missing-le-mass.md) | 27 | `result-track:eb9d60259d00c02f5c9a799620934d84b6aeef089ebd04863271028ff00dc204` |
-| 2 | `theorem` | [known_add_four_le_mass](../../../../Combinatorics/WeightedInventoryQuartet.lean/declarations/known-add-four-le-mass.md) | 43 | `result-track:c87fbd5d94c29894839060eeeecfc58df234e8ebfca7f8c9cb5706e73c1d93f1` |
-| 3 | `theorem` | [four_unit_boundary_fixture](../../../../Combinatorics/WeightedInventoryQuartet.lean/declarations/four-unit-boundary-fixture.md) | 72 | `result-track:b63ac4d11dd06501dad872e54e8b3b848c178d948040bfbb4acb2ea8f4176b62` |
-| 4 | `theorem` | [two_missing_units_fixture](../../../../Combinatorics/WeightedInventoryQuartet.lean/declarations/two-missing-units-fixture.md) | 80 | `result-track:fdc9f5408598381f4240df6ebe3ee908addd483b94a6284ab2f01381dda99ee2` |
-| 5 | `theorem` | [collapsed_labels_fixture](../../../../Combinatorics/WeightedInventoryQuartet.lean/declarations/collapsed-labels-fixture.md) | 91 | `result-track:f4a7c593698be50da47699028eb0ddc2ba4c0379200f25b633ced766bc66fb32` |
+| 1 | `theorem` | [known_add_missing_le_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedInventoryQuartet.lean/declarations/known-add-missing-le-mass.md) | 27 | `result-track:eb9d60259d00c02f5c9a799620934d84b6aeef089ebd04863271028ff00dc204` |
+| 2 | `theorem` | [known_add_four_le_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedInventoryQuartet.lean/declarations/known-add-four-le-mass.md) | 43 | `result-track:c87fbd5d94c29894839060eeeecfc58df234e8ebfca7f8c9cb5706e73c1d93f1` |
+| 3 | `theorem` | [four_unit_boundary_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedInventoryQuartet.lean/declarations/four-unit-boundary-fixture.md) | 72 | `result-track:b63ac4d11dd06501dad872e54e8b3b848c178d948040bfbb4acb2ea8f4176b62` |
+| 4 | `theorem` | [two_missing_units_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedInventoryQuartet.lean/declarations/two-missing-units-fixture.md) | 80 | `result-track:fdc9f5408598381f4240df6ebe3ee908addd483b94a6284ab2f01381dda99ee2` |
+| 5 | `theorem` | [collapsed_labels_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedInventoryQuartet.lean/declarations/collapsed-labels-fixture.md) | 91 | `result-track:f4a7c593698be50da47699028eb0ddc2ba4c0379200f25b633ced766bc66fb32` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

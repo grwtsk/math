@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/System.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/System.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/System.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/System.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteProbabilityLaw](../../../../ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/finiteprobabilitylaw.md) | 17 | `declaration-track:9a7bac6dc404a3da2fdcb03eff6216823cb3baccdaa1090d56152f6591ed7ae6` |
-| 2 | `def` | [expectation](../../../../ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/expectation.md) | 25 | `declaration-track:6888f458935086a7bd18351e037c51774b5dc80eb566053a100a698b36fa8fc4` |
-| 3 | `def` | [realExpectation](../../../../ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/realexpectation.md) | 34 | `declaration-track:246e3a0c6f1e9b0707424a96867cc67b187c36eb0eabdfe1fd9c223009ce1249` |
-| 4 | `def` | [eventMass](../../../../ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/eventmass.md) | 43 | `declaration-track:2eaf906d0c0e4b27b0ac92d8cbf520794202316e23f14f8e398b49a978bc540d` |
-| 5 | `abbrev` | [Bitfield](../../../../ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/bitfield.md) | 54 | `declaration-track:dadc8e8d5942cfb156a04c976c94fc2171395dc30240ecfd73c94fe0f8ed607a` |
-| 6 | `structure` | [FiniteBitfieldMetric](../../../../ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/finitebitfieldmetric.md) | 57 | `declaration-track:7bd20d72dc5df5dbfb2ff0fc6b19756e5d5cda80692defa13ac058521de35519` |
-| 7 | `def` | [flipBit](../../../../ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/flipbit.md) | 80 | `declaration-track:6b409891230b37624eeb81c7cf1be42f3e6dc926983fb1246e5a9d1729af165f` |
-| 8 | `def` | [centeredBit](../../../../ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/centeredbit.md) | 87 | `declaration-track:e672ce447399bf6ad66a1c6657dfd3b50bd9c25dd2276431a0f1b11b6a8c84dd` |
-| 9 | `def` | [walshCharacter](../../../../ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/walshcharacter.md) | 93 | `declaration-track:e0324e9ed3c1e1d4f1c0c6a5474c64047166df5d0368e3f5467ab97e2caf63ab` |
-| 10 | `structure` | [RandomBitfieldSystem](../../../../ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/randombitfieldsystem.md) | 99 | `declaration-track:d12248ceaac47f5230afd49527ae756c206c10a8fcd992b785987b2dd6ed5a19` |
-| 11 | `structure` | [ArithmeticBitfieldEncoding](../../../../ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/arithmeticbitfieldencoding.md) | 124 | `declaration-track:7e00f8efa69ff6dbe106a5e79c982eeae39fe7ff7f57690d896f8dfc4596e722` |
-| 12 | `theorem` | [ArithmeticBitfieldEncoding.preservesSystemAdmissibility](../../../../ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/arithmeticbitfieldencoding-preservessystemadmissibility.md) | 154 | `result-track:9226410e777763c9b0455ef4e48274cc7c14d52c16163353b022454566d4d35c` |
+| 1 | `structure` | [FiniteProbabilityLaw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/finiteprobabilitylaw.md) | 17 | `declaration-track:9a7bac6dc404a3da2fdcb03eff6216823cb3baccdaa1090d56152f6591ed7ae6` |
+| 2 | `def` | [expectation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/expectation.md) | 25 | `declaration-track:6888f458935086a7bd18351e037c51774b5dc80eb566053a100a698b36fa8fc4` |
+| 3 | `def` | [realExpectation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/realexpectation.md) | 34 | `declaration-track:246e3a0c6f1e9b0707424a96867cc67b187c36eb0eabdfe1fd9c223009ce1249` |
+| 4 | `def` | [eventMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/eventmass.md) | 43 | `declaration-track:2eaf906d0c0e4b27b0ac92d8cbf520794202316e23f14f8e398b49a978bc540d` |
+| 5 | `abbrev` | [Bitfield](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/bitfield.md) | 54 | `declaration-track:dadc8e8d5942cfb156a04c976c94fc2171395dc30240ecfd73c94fe0f8ed607a` |
+| 6 | `structure` | [FiniteBitfieldMetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/finitebitfieldmetric.md) | 57 | `declaration-track:7bd20d72dc5df5dbfb2ff0fc6b19756e5d5cda80692defa13ac058521de35519` |
+| 7 | `def` | [flipBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/flipbit.md) | 80 | `declaration-track:6b409891230b37624eeb81c7cf1be42f3e6dc926983fb1246e5a9d1729af165f` |
+| 8 | `def` | [centeredBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/centeredbit.md) | 87 | `declaration-track:e672ce447399bf6ad66a1c6657dfd3b50bd9c25dd2276431a0f1b11b6a8c84dd` |
+| 9 | `def` | [walshCharacter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/walshcharacter.md) | 93 | `declaration-track:e0324e9ed3c1e1d4f1c0c6a5474c64047166df5d0368e3f5467ab97e2caf63ab` |
+| 10 | `structure` | [RandomBitfieldSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/randombitfieldsystem.md) | 99 | `declaration-track:d12248ceaac47f5230afd49527ae756c206c10a8fcd992b785987b2dd6ed5a19` |
+| 11 | `structure` | [ArithmeticBitfieldEncoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/arithmeticbitfieldencoding.md) | 124 | `declaration-track:7e00f8efa69ff6dbe106a5e79c982eeae39fe7ff7f57690d896f8dfc4596e722` |
+| 12 | `theorem` | [ArithmeticBitfieldEncoding.preservesSystemAdmissibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/System.lean/declarations/arithmeticbitfieldencoding-preservessystemadmissibility.md) | 154 | `result-track:9226410e777763c9b0455ef4e48274cc7c14d52c16163353b022454566d4d35c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

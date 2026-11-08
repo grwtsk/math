@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AEMeasurableOrder.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AEMeasurableOrder.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AEMeasurableOrder.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AEMeasurableOrder.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [MeasureTheory.aemeasurable_of_exist_almost_disjoint_supersets](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AEMeasurableOrder.lean/declarations/measuretheory-aemeasurable-of-exist-almost-disjoint-supersets.md) | 31 | `result-track:d1455f1bde26e672f0f5920ed5060eb52225a24a5651ce730cd1557f9a2dc996` |
-| 2 | `theorem` | [ENNReal.aemeasurable_of_exist_almost_disjoint_supersets](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AEMeasurableOrder.lean/declarations/ennreal-aemeasurable-of-exist-almost-disjoint-supersets.md) | 108 | `result-track:3f5c2767ba7767dca318685751b8f033f5c3ce5bf1400c04725dfdbcdd5e5562` |
+| 1 | `theorem` | [MeasureTheory.aemeasurable_of_exist_almost_disjoint_supersets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AEMeasurableOrder.lean/declarations/measuretheory-aemeasurable-of-exist-almost-disjoint-supersets.md) | 31 | `result-track:d1455f1bde26e672f0f5920ed5060eb52225a24a5651ce730cd1557f9a2dc996` |
+| 2 | `theorem` | [ENNReal.aemeasurable_of_exist_almost_disjoint_supersets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AEMeasurableOrder.lean/declarations/ennreal-aemeasurable-of-exist-almost-disjoint-supersets.md) | 108 | `result-track:3f5c2767ba7767dca318685751b8f033f5c3ce5bf1400c04725dfdbcdd5e5562` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

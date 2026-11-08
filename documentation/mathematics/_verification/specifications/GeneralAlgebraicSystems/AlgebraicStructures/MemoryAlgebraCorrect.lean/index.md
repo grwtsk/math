@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MemoryAlgebraCorrect.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MemoryAlgebraCorrect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MemoryAlgebraCorrect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MemoryAlgebraCorrect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [WeightedMemory](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MemoryAlgebraCorrect.lean/declarations/weightedmemory.md) | 7 | `declaration-track:299bbfacbadb843727368df92b9b375b8435b936c41998c007ca3da3d721e674` |
-| 2 | `abbrev` | [MemorySemiringLaws](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MemoryAlgebraCorrect.lean/declarations/memorysemiringlaws.md) | 8 | `declaration-track:396ade206eb5ee4ed3939519af352a3d8c23849ed163b8f96275772264b6b468` |
-| 3 | `def` | [semiringLawsForNonnegativeMemory](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MemoryAlgebraCorrect.lean/declarations/semiringlawsfornonnegativememory.md) | 10 | `declaration-track:4663eda2fa2e82e4710b8aa815fe2d52dc0a73b8170ad16360812eed6cf77130` |
-| 4 | `theorem` | [memory_add_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MemoryAlgebraCorrect.lean/declarations/memory-add-zero.md) | 13 | `result-track:7f512418353768b3b199c305f0c23fa7c6ce2cf8bae27e509dda6f25ae96012e` |
-| 5 | `theorem` | [memory_zero_add](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MemoryAlgebraCorrect.lean/declarations/memory-zero-add.md) | 18 | `result-track:dca3c68960a4837e27b148e81120a5f823e75a1e379ea238e3631b906f085a5a` |
-| 6 | `theorem` | [memory_add_assoc](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MemoryAlgebraCorrect.lean/declarations/memory-add-assoc.md) | 23 | `result-track:cd23aff180a3c598c60bc134b3339a220516fd5973fe6bad219f3868f34fb2a9` |
-| 7 | `theorem` | [memory_semiring_default_residue](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MemoryAlgebraCorrect.lean/declarations/memory-semiring-default-residue.md) | 30 | `result-track:1669c3c6abc2aafef06ae3f30cf5dd396ef04c993dd9c03cfec389ad2e07699b` |
+| 1 | `abbrev` | [WeightedMemory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MemoryAlgebraCorrect.lean/declarations/weightedmemory.md) | 7 | `declaration-track:299bbfacbadb843727368df92b9b375b8435b936c41998c007ca3da3d721e674` |
+| 2 | `abbrev` | [MemorySemiringLaws](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MemoryAlgebraCorrect.lean/declarations/memorysemiringlaws.md) | 8 | `declaration-track:396ade206eb5ee4ed3939519af352a3d8c23849ed163b8f96275772264b6b468` |
+| 3 | `def` | [semiringLawsForNonnegativeMemory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MemoryAlgebraCorrect.lean/declarations/semiringlawsfornonnegativememory.md) | 10 | `declaration-track:4663eda2fa2e82e4710b8aa815fe2d52dc0a73b8170ad16360812eed6cf77130` |
+| 4 | `theorem` | [memory_add_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MemoryAlgebraCorrect.lean/declarations/memory-add-zero.md) | 13 | `result-track:7f512418353768b3b199c305f0c23fa7c6ce2cf8bae27e509dda6f25ae96012e` |
+| 5 | `theorem` | [memory_zero_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MemoryAlgebraCorrect.lean/declarations/memory-zero-add.md) | 18 | `result-track:dca3c68960a4837e27b148e81120a5f823e75a1e379ea238e3631b906f085a5a` |
+| 6 | `theorem` | [memory_add_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MemoryAlgebraCorrect.lean/declarations/memory-add-assoc.md) | 23 | `result-track:cd23aff180a3c598c60bc134b3339a220516fd5973fe6bad219f3868f34fb2a9` |
+| 7 | `theorem` | [memory_semiring_default_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MemoryAlgebraCorrect.lean/declarations/memory-semiring-default-residue.md) | 30 | `result-track:1669c3c6abc2aafef06ae3f30cf5dd396ef04c993dd9c03cfec389ad2e07699b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

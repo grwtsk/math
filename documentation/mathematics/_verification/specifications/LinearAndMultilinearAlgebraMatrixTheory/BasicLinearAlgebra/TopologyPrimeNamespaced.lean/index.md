@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TopologyPrimeNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TopologyPrimeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TopologyPrimeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TopologyPrimeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [topologyPrimeIdentity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TopologyPrimeNamespaced.lean/declarations/topologyprimeidentity.md) | 15 | `declaration-track:2de504728759e31ad5efeb83e0fbc0715d243e6a11721743e57c5d2099ba5b5f` |
-| 2 | `theorem` | [topologyPrimeIdentity_visible](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TopologyPrimeNamespaced.lean/declarations/topologyprimeidentity-visible.md) | 20 | `result-track:6ab4c0b23fc7ef0c1a1a532c7c0155c95626fa4cb171956ddf1a61d43333e980` |
+| 1 | `def` | [topologyPrimeIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TopologyPrimeNamespaced.lean/declarations/topologyprimeidentity.md) | 15 | `declaration-track:2de504728759e31ad5efeb83e0fbc0715d243e6a11721743e57c5d2099ba5b5f` |
+| 2 | `theorem` | [topologyPrimeIdentity_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TopologyPrimeNamespaced.lean/declarations/topologyprimeidentity-visible.md) | 20 | `result-track:6ab4c0b23fc7ef0c1a1a532c7c0155c95626fa4cb171956ddf1a61d43333e980` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

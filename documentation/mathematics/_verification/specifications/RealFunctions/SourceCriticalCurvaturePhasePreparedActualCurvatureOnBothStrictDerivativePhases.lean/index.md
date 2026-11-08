@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SourceCriticalCurvaturePhasePreparedActualCurvatureOnBothStrictDerivativePhases.lean/index.md) · [Full source](../../../../RealFunctions/SourceCriticalCurvaturePhasePreparedActualCurvatureOnBothStrictDerivativePhases.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCriticalCurvaturePhasePreparedActualCurvatureOnBothStrictDerivativePhases.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCriticalCurvaturePhasePreparedActualCurvatureOnBothStrictDerivativePhases.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pairedTailTest_second_deriv_eq_neg_of_deriv_pos](../../../../RealFunctions/SourceCriticalCurvaturePhasePreparedActualCurvatureOnBothStrictDerivativePhases.lean/declarations/pairedtailtest-second-deriv-eq-neg-of-deriv-pos.md) | 28 | `result-track:d1431a01e1f735fa3924bca5efa319f530d45340d3a40cb2ea324ee539ebd990` |
-| 2 | `theorem` | [pairedTailTest_second_deriv_eq_neg_mass_mul_of_deriv_neg](../../../../RealFunctions/SourceCriticalCurvaturePhasePreparedActualCurvatureOnBothStrictDerivativePhases.lean/declarations/pairedtailtest-second-deriv-eq-neg-mass-mul-of-deriv-neg.md) | 48 | `result-track:0780aad8b5051882ea298fa27a07729631d689ae7b508edf9b223f50651d7fab` |
-| 3 | `theorem` | [criticalPrimeTest_second_deriv_eq_correlation](../../../../RealFunctions/SourceCriticalCurvaturePhasePreparedActualCurvatureOnBothStrictDerivativePhases.lean/declarations/criticalprimetest-second-deriv-eq-correlation.md) | 71 | `result-track:31dec720156fbb28c1fbe616cbbc6def8c54fcf824c91a04953e9080dae5fa1a` |
+| 1 | `theorem` | [pairedTailTest_second_deriv_eq_neg_of_deriv_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCriticalCurvaturePhasePreparedActualCurvatureOnBothStrictDerivativePhases.lean/declarations/pairedtailtest-second-deriv-eq-neg-of-deriv-pos.md) | 28 | `result-track:d1431a01e1f735fa3924bca5efa319f530d45340d3a40cb2ea324ee539ebd990` |
+| 2 | `theorem` | [pairedTailTest_second_deriv_eq_neg_mass_mul_of_deriv_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCriticalCurvaturePhasePreparedActualCurvatureOnBothStrictDerivativePhases.lean/declarations/pairedtailtest-second-deriv-eq-neg-mass-mul-of-deriv-neg.md) | 48 | `result-track:0780aad8b5051882ea298fa27a07729631d689ae7b508edf9b223f50651d7fab` |
+| 3 | `theorem` | [criticalPrimeTest_second_deriv_eq_correlation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCriticalCurvaturePhasePreparedActualCurvatureOnBothStrictDerivativePhases.lean/declarations/criticalprimetest-second-deriv-eq-correlation.md) | 71 | `result-track:31dec720156fbb28c1fbe616cbbc6def8c54fcf824c91a04953e9080dae5fa1a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

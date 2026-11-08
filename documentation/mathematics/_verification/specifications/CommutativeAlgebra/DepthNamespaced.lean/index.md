@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/DepthNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/DepthNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DepthNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DepthNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,8 +63,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [linearMap_subsingleton_of_mem_annihilator](../../../../CommutativeAlgebra/DepthNamespaced.lean/declarations/linearmap-subsingleton-of-mem-annihilator.md) | 43 | `result-track:a1ec8bfa2a19c36e8bf00cb3a5348fe7626a521f37f7bbccb2a33f50d5940472` |
-| 2 | `lemma` | [subsingleton_linearMap_iff](../../../../CommutativeAlgebra/DepthNamespaced.lean/declarations/subsingleton-linearmap-iff.md) | 50 | `result-track:418fd28c5a9d7d9aae53086e93f672f662af068fab65a19a6911724399fbba14` |
+| 1 | `lemma` | [linearMap_subsingleton_of_mem_annihilator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DepthNamespaced.lean/declarations/linearmap-subsingleton-of-mem-annihilator.md) | 43 | `result-track:a1ec8bfa2a19c36e8bf00cb3a5348fe7626a521f37f7bbccb2a33f50d5940472` |
+| 2 | `lemma` | [subsingleton_linearMap_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DepthNamespaced.lean/declarations/subsingleton-linearmap-iff.md) | 50 | `result-track:418fd28c5a9d7d9aae53086e93f672f662af068fab65a19a6911724399fbba14` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

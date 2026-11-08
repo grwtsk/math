@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/AnalysisPolarization.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/AnalysisPolarization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/AnalysisPolarization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/AnalysisPolarization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [real_inner_eq_signed_norm_square](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/AnalysisPolarization.lean/declarations/real-inner-eq-signed-norm-square.md) | 31 | `result-track:0fe1028cac306d2bb98613732e3d603dcc32cfa2b226e8d425e526de692440f3` |
-| 2 | `theorem` | [nonnegative_sectors_negative_difference](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/AnalysisPolarization.lean/declarations/nonnegative-sectors-negative-difference.md) | 40 | `result-track:56aeeec115ccfabf502cd966fba940327e090c456f1f2a2f953a91d278af73f4` |
-| 3 | `theorem` | [signed_difference_has_no_universal_lower_bound](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/AnalysisPolarization.lean/declarations/signed-difference-has-no-universal-lower-bound.md) | 50 | `result-track:1da7663af280d2442d3392f078c1ba89272f4a2f1b82b1925848640228694fee` |
+| 1 | `theorem` | [real_inner_eq_signed_norm_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/AnalysisPolarization.lean/declarations/real-inner-eq-signed-norm-square.md) | 31 | `result-track:0fe1028cac306d2bb98613732e3d603dcc32cfa2b226e8d425e526de692440f3` |
+| 2 | `theorem` | [nonnegative_sectors_negative_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/AnalysisPolarization.lean/declarations/nonnegative-sectors-negative-difference.md) | 40 | `result-track:56aeeec115ccfabf502cd966fba940327e090c456f1f2a2f953a91d278af73f4` |
+| 3 | `theorem` | [signed_difference_has_no_universal_lower_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/AnalysisPolarization.lean/declarations/signed-difference-has-no-universal-lower-bound.md) | 50 | `result-track:1da7663af280d2442d3392f078c1ba89272f4a2f1b82b1925848640228694fee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

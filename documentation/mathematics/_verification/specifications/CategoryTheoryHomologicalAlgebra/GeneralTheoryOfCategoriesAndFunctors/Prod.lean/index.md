@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [prod_uniq](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/declarations/prod-uniq.md) | 43 | `result-track:e3f26a03c87ed324e2618cd89aa2604e11dfba2c070724736747e09151c94926` |
-| 2 | `def` | [prodLift₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/declarations/prodlift.md) | 55 | `declaration-track:176ec2bdff1c2772afcaf12208b2d158479a165ec473c07285d3feb0be888cd4` |
-| 3 | `lemma` | [prod_fac₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/declarations/prod-fac-source-edition-3.md) | 65 | `result-track:ac7a088cb4cce2951ea7f72ca0f94823e66a106a8eab4b2c6fe197286f515741` |
-| 4 | `def` | [prodLift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/declarations/prodlift-source-edition-2.md) | 73 | `declaration-track:4db4617712c0731f0beec47522e5b5a03a1629926876ef0182857dfa67f67e07` |
-| 5 | `lemma` | [prod_fac₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/declarations/prod-fac-source-edition-2.md) | 86 | `result-track:4f50c70a4360b916ad93e271e7105f15cc760b602f270d41c0fb99ff7920cb0d` |
-| 6 | `lemma` | [prod_fac](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/declarations/prod-fac.md) | 91 | `result-track:210ccf559b57122612df600f3d56f82e66704cc06d36c1fc92a0ac58d647e6f3` |
-| 7 | `def` | [prod](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/declarations/prod.md) | 100 | `declaration-track:7bee74e0c5c84fd6b5bcfc72c1705a1b2dffd8884c19d61a3bb6b24d461b3da0` |
-| 8 | `lemma` | [Construction.prodIsLocalization](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/declarations/construction-prodislocalization.md) | 112 | `result-track:05c11fe474798d4db0c59a5f2cce39c3709d815c74a266150a0b8b0054784d4f` |
-| 9 | `instance` | [prod](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/declarations/prod-source-edition-2.md) | 133 | `declaration-track:adf43dc0623de024c8fab9301894950421188138bac5df3869bc0967282ad6cf` |
+| 1 | `lemma` | [prod_uniq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/declarations/prod-uniq.md) | 43 | `result-track:e3f26a03c87ed324e2618cd89aa2604e11dfba2c070724736747e09151c94926` |
+| 2 | `def` | [prodLift₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/declarations/prodlift.md) | 55 | `declaration-track:176ec2bdff1c2772afcaf12208b2d158479a165ec473c07285d3feb0be888cd4` |
+| 3 | `lemma` | [prod_fac₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/declarations/prod-fac-source-edition-3.md) | 65 | `result-track:ac7a088cb4cce2951ea7f72ca0f94823e66a106a8eab4b2c6fe197286f515741` |
+| 4 | `def` | [prodLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/declarations/prodlift-source-edition-2.md) | 73 | `declaration-track:4db4617712c0731f0beec47522e5b5a03a1629926876ef0182857dfa67f67e07` |
+| 5 | `lemma` | [prod_fac₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/declarations/prod-fac-source-edition-2.md) | 86 | `result-track:4f50c70a4360b916ad93e271e7105f15cc760b602f270d41c0fb99ff7920cb0d` |
+| 6 | `lemma` | [prod_fac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/declarations/prod-fac.md) | 91 | `result-track:210ccf559b57122612df600f3d56f82e66704cc06d36c1fc92a0ac58d647e6f3` |
+| 7 | `def` | [prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/declarations/prod.md) | 100 | `declaration-track:7bee74e0c5c84fd6b5bcfc72c1705a1b2dffd8884c19d61a3bb6b24d461b3da0` |
+| 8 | `lemma` | [Construction.prodIsLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/declarations/construction-prodislocalization.md) | 112 | `result-track:05c11fe474798d4db0c59a5f2cce39c3709d815c74a266150a0b8b0054784d4f` |
+| 9 | `instance` | [prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Prod.lean/declarations/prod-source-edition-2.md) | 133 | `declaration-track:adf43dc0623de024c8fab9301894950421188138bac5df3869bc0967282ad6cf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

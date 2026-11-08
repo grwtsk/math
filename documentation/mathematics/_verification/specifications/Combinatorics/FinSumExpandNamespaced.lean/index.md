@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FinSumExpandNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/FinSumExpandNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinSumExpandNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinSumExpandNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -64,8 +64,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro` | [(anonymous)](../../../../Combinatorics/FinSumExpandNamespaced.lean/declarations/macro.md) | 43 | `declaration-track:91670738fc30a83ddfa219fa8a6118f48e10a344b85ba8fbce9df7f33ac72769` |
-| 2 | `macro` | [(anonymous)](../../../../Combinatorics/FinSumExpandNamespaced.lean/declarations/macro-source-edition-2.md) | 61 | `declaration-track:953a5f5a473de46d647851645c76d004422dea9f28203b267b85e62d7f001a3f` |
+| 1 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinSumExpandNamespaced.lean/declarations/macro.md) | 43 | `declaration-track:91670738fc30a83ddfa219fa8a6118f48e10a344b85ba8fbce9df7f33ac72769` |
+| 2 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinSumExpandNamespaced.lean/declarations/macro-source-edition-2.md) | 61 | `declaration-track:953a5f5a473de46d647851645c76d004422dea9f28203b267b85e62d7f001a3f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

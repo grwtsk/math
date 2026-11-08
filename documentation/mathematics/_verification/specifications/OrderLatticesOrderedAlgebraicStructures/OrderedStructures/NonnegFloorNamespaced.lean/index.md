@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegFloorNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegFloorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegFloorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegFloorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [floorSemiring](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegFloorNamespaced.lean/declarations/floorsemiring.md) | 36 | `declaration-track:9765673790ab8331141a62560a366cdeab42d406447e408c25585ed9e7419fc2` |
-| 2 | `theorem` | [nat_floor_coe](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegFloorNamespaced.lean/declarations/nat-floor-coe.md) | 45 | `result-track:e8e0f13cbf3bb648b1b2ad26be8096a257633b989de4443e73b202aa4bbf53c9` |
-| 3 | `theorem` | [nat_ceil_coe](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegFloorNamespaced.lean/declarations/nat-ceil-coe.md) | 51 | `result-track:befbba05b9c0817f1e259abd5f8c5fabcc3a9568141d3ac1aa67fbb572d76fca` |
+| 1 | `instance` | [floorSemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegFloorNamespaced.lean/declarations/floorsemiring.md) | 36 | `declaration-track:9765673790ab8331141a62560a366cdeab42d406447e408c25585ed9e7419fc2` |
+| 2 | `theorem` | [nat_floor_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegFloorNamespaced.lean/declarations/nat-floor-coe.md) | 45 | `result-track:e8e0f13cbf3bb648b1b2ad26be8096a257633b989de4443e73b202aa4bbf53c9` |
+| 3 | `theorem` | [nat_ceil_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegFloorNamespaced.lean/declarations/nat-ceil-coe.md) | 51 | `result-track:befbba05b9c0817f1e259abd5f8c5fabcc3a9568141d3ac1aa67fbb572d76fca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

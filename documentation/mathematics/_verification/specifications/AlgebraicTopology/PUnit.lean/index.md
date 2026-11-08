@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/PUnit.lean/index.md) · [Full source](../../../../AlgebraicTopology/PUnit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PUnit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PUnit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../AlgebraicTopology/PUnit.lean/declarations/instance.md) | 24 | `declaration-track:942a56b21b34bd85ee0f9df47c9d45cb547d7ecd6f497120f14c6c24f9d4c2e3` |
-| 2 | `instance` | [(anonymous)](../../../../AlgebraicTopology/PUnit.lean/declarations/instance-source-edition-2.md) | 31 | `declaration-track:df5940abb0d36bb93a819ae3f38a6461b3d856f5db7249ea9e8ae2f1bd00507a` |
-| 3 | `def` | [punitEquivDiscretePUnit](../../../../AlgebraicTopology/PUnit.lean/declarations/punitequivdiscretepunit.md) | 37 | `declaration-track:ed4a792cb75c52198dd6ece97cd3ba5de0f8f50f56efdd8962736dd40818a90d` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PUnit.lean/declarations/instance.md) | 24 | `declaration-track:942a56b21b34bd85ee0f9df47c9d45cb547d7ecd6f497120f14c6c24f9d4c2e3` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PUnit.lean/declarations/instance-source-edition-2.md) | 31 | `declaration-track:df5940abb0d36bb93a819ae3f38a6461b3d856f5db7249ea9e8ae2f1bd00507a` |
+| 3 | `def` | [punitEquivDiscretePUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PUnit.lean/declarations/punitequivdiscretepunit.md) | 37 | `declaration-track:ed4a792cb75c52198dd6ece97cd3ba5de0f8f50f56efdd8962736dd40818a90d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

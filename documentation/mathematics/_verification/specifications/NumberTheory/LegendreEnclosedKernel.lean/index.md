@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/LegendreEnclosedKernel.lean/index.md) · [Full source](../../../../NumberTheory/LegendreEnclosedKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreEnclosedKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreEnclosedKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.ErrorBounds.ComplexSourceBudget`](../../../../RealFunctions/ComplexSourceBudget.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalKernel`](../../../../NumberTheory/QuadraticIntervalKernel.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.LegendreLogBudget`](../../../../NumberTheory/LegendreLogBudget.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.ComplexSourceBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ComplexSourceBudget.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervalKernel.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.LegendreLogBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [squareFiniteSum](../../../../NumberTheory/LegendreEnclosedKernel.lean/declarations/squarefinitesum.md) | 49 | `declaration-track:db8ed0cf0a9698866660388529d0d9091cfad359d0b961b337cab7b3ca6d3a3a` |
-| 2 | `def` | [squareEnclosureBudget](../../../../NumberTheory/LegendreEnclosedKernel.lean/declarations/squareenclosurebudget.md) | 53 | `declaration-track:fcb10f60d6ac5ec95e4f92c68ae20f46126e6c63b10ae717ad6bb54e42e92771` |
-| 3 | `theorem` | [squareFiniteSum_enclosure_error](../../../../NumberTheory/LegendreEnclosedKernel.lean/declarations/squarefinitesum-enclosure-error.md) | 58 | `result-track:46eea29cee69f47218af5dc07c5232d3accb85407839188c7cafebf4865edc87` |
-| 4 | `theorem` | [squareFiniteSum_evaluation_error](../../../../NumberTheory/LegendreEnclosedKernel.lean/declarations/squarefinitesum-evaluation-error.md) | 67 | `result-track:28bea4a323838266d38d8df41dee9e29c1e0244ab7a0cbc4d3dd4d8864893119` |
-| 5 | `theorem` | [squareCount_pos_of_source_lower](../../../../NumberTheory/LegendreEnclosedKernel.lean/declarations/squarecount-pos-of-source-lower.md) | 84 | `result-track:b9d3bf5f92869824987451dfb311fb34c561768d2f9f53a988049e6fef5328e5` |
-| 6 | `theorem` | [squareIncrement_lower_of_enclosures](../../../../NumberTheory/LegendreEnclosedKernel.lean/declarations/squareincrement-lower-of-enclosures.md) | 94 | `result-track:691f941f629afb6d8e4cb7407a3ef701426707dbb6616c7efd318259f254cb6e` |
-| 7 | `theorem` | [prime_in_square_of_enclosed_kernel](../../../../NumberTheory/LegendreEnclosedKernel.lean/declarations/prime-in-square-of-enclosed-kernel.md) | 114 | `result-track:acdc7cdbd09da40dd5eb9ca8cb08401161ad4f32548bf1c6258c71670167128e` |
-| 8 | `theorem` | [squareIncrement_error_of_enclosures](../../../../NumberTheory/LegendreEnclosedKernel.lean/declarations/squareincrement-error-of-enclosures.md) | 136 | `result-track:1a739a6b6a391c17dd40def942787d606acfecc4332d79435939dd307b713ea5` |
-| 9 | `theorem` | [legendre_of_prefix_and_source_lower](../../../../NumberTheory/LegendreEnclosedKernel.lean/declarations/legendre-of-prefix-and-source-lower.md) | 156 | `result-track:65ef2296daef0cb60257ab17b52e35cbe2dd86149dcbe61e8390eb1146401496` |
+| 1 | `def` | [squareFiniteSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreEnclosedKernel.lean/declarations/squarefinitesum.md) | 49 | `declaration-track:db8ed0cf0a9698866660388529d0d9091cfad359d0b961b337cab7b3ca6d3a3a` |
+| 2 | `def` | [squareEnclosureBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreEnclosedKernel.lean/declarations/squareenclosurebudget.md) | 53 | `declaration-track:fcb10f60d6ac5ec95e4f92c68ae20f46126e6c63b10ae717ad6bb54e42e92771` |
+| 3 | `theorem` | [squareFiniteSum_enclosure_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreEnclosedKernel.lean/declarations/squarefinitesum-enclosure-error.md) | 58 | `result-track:46eea29cee69f47218af5dc07c5232d3accb85407839188c7cafebf4865edc87` |
+| 4 | `theorem` | [squareFiniteSum_evaluation_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreEnclosedKernel.lean/declarations/squarefinitesum-evaluation-error.md) | 67 | `result-track:28bea4a323838266d38d8df41dee9e29c1e0244ab7a0cbc4d3dd4d8864893119` |
+| 5 | `theorem` | [squareCount_pos_of_source_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreEnclosedKernel.lean/declarations/squarecount-pos-of-source-lower.md) | 84 | `result-track:b9d3bf5f92869824987451dfb311fb34c561768d2f9f53a988049e6fef5328e5` |
+| 6 | `theorem` | [squareIncrement_lower_of_enclosures](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreEnclosedKernel.lean/declarations/squareincrement-lower-of-enclosures.md) | 94 | `result-track:691f941f629afb6d8e4cb7407a3ef701426707dbb6616c7efd318259f254cb6e` |
+| 7 | `theorem` | [prime_in_square_of_enclosed_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreEnclosedKernel.lean/declarations/prime-in-square-of-enclosed-kernel.md) | 114 | `result-track:acdc7cdbd09da40dd5eb9ca8cb08401161ad4f32548bf1c6258c71670167128e` |
+| 8 | `theorem` | [squareIncrement_error_of_enclosures](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreEnclosedKernel.lean/declarations/squareincrement-error-of-enclosures.md) | 136 | `result-track:1a739a6b6a391c17dd40def942787d606acfecc4332d79435939dd307b713ea5` |
+| 9 | `theorem` | [legendre_of_prefix_and_source_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreEnclosedKernel.lean/declarations/legendre-of-prefix-and-source-lower.md) | 156 | `result-track:65ef2296daef0cb60257ab17b52e35cbe2dd86149dcbe61e8390eb1146401496` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateNamespacedCertOfStrictAtOne.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateNamespacedCertOfStrictAtOne.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateNamespacedCertOfStrictAtOne.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateNamespacedCertOfStrictAtOne.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cert_of_strict_at_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateNamespacedCertOfStrictAtOne.lean/declarations/cert-of-strict-at-one.md) | 39 | `result-track:875c44c8015de78fe1d0b2f23445f82293395fe724c43f67d67784e43ba146a1` |
-| 2 | `theorem` | [certFlat](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateNamespacedCertOfStrictAtOne.lean/declarations/certflat.md) | 58 | `result-track:8be91f6fb11dfd1e2e52d277637ff6e35a2dbbe2cfe52a6de76336a4f0a5ad5f` |
-| 3 | `theorem` | [certQuartic](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateNamespacedCertOfStrictAtOne.lean/declarations/certquartic.md) | 62 | `result-track:2747f2ae12bf5065072b919aba99bdd6e2bcd8f409954ea7e36859e7cb6b2c3e` |
-| 4 | `theorem` | [certFlat_sharp](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateNamespacedCertOfStrictAtOne.lean/declarations/certflat-sharp.md) | 66 | `result-track:742e65bba3f8fb67d346912a2e3833d226491a43ac7901cc7f9bc3b54781c86a` |
-| 5 | `theorem` | [certQuartic_sharp](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateNamespacedCertOfStrictAtOne.lean/declarations/certquartic-sharp.md) | 71 | `result-track:3fb052cd2c590cc7c8d912e410b9f5a22d04abf124b47a21bfccf8e9bbaea70f` |
+| 1 | `theorem` | [cert_of_strict_at_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateNamespacedCertOfStrictAtOne.lean/declarations/cert-of-strict-at-one.md) | 39 | `result-track:875c44c8015de78fe1d0b2f23445f82293395fe724c43f67d67784e43ba146a1` |
+| 2 | `theorem` | [certFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateNamespacedCertOfStrictAtOne.lean/declarations/certflat.md) | 58 | `result-track:8be91f6fb11dfd1e2e52d277637ff6e35a2dbbe2cfe52a6de76336a4f0a5ad5f` |
+| 3 | `theorem` | [certQuartic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateNamespacedCertOfStrictAtOne.lean/declarations/certquartic.md) | 62 | `result-track:2747f2ae12bf5065072b919aba99bdd6e2bcd8f409954ea7e36859e7cb6b2c3e` |
+| 4 | `theorem` | [certFlat_sharp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateNamespacedCertOfStrictAtOne.lean/declarations/certflat-sharp.md) | 66 | `result-track:742e65bba3f8fb67d346912a2e3833d226491a43ac7901cc7f9bc3b54781c86a` |
+| 5 | `theorem` | [certQuartic_sharp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateNamespacedCertOfStrictAtOne.lean/declarations/certquartic-sharp.md) | 71 | `result-track:3fb052cd2c590cc7c8d912e410b9f5a22d04abf124b47a21bfccf8e9bbaea70f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

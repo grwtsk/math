@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/OperatorBridgeNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/OperatorBridgeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OperatorBridgeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OperatorBridgeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SemiLocalOperatorBridge](../../../../Combinatorics/OperatorBridgeNamespaced.lean/declarations/semilocaloperatorbridge.md) | 19 | `declaration-track:70166a75ee5dc4bdc4c3696a9a229f7963e2e4e7232e86912d8b0a9e1265ec75` |
+| 1 | `structure` | [SemiLocalOperatorBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OperatorBridgeNamespaced.lean/declarations/semilocaloperatorbridge.md) | 19 | `declaration-track:70166a75ee5dc4bdc4c3696a9a229f7963e2e4e7232e86912d8b0a9e1265ec75` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

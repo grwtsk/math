@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/HeineCantorPublic.lean/index.md) · [Full source](../../../../GeneralTopology/HeineCantorPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HeineCantorPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HeineCantorPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [CompactSpace.uniformContinuous_of_continuous](../../../../GeneralTopology/HeineCantorPublic.lean/declarations/compactspace-uniformcontinuous-of-continuous.md) | 40 | `result-track:53f2aa6019ff97b557853b2eda12e48eee6433ee8e64155b9184fff337b3d1be` |
-| 2 | `theorem` | [IsCompact.uniformContinuousOn_of_continuous](../../../../GeneralTopology/HeineCantorPublic.lean/declarations/iscompact-uniformcontinuouson-of-continuous.md) | 49 | `result-track:1ca7e8049a55efa6fde74babd88c153953db666fa5f42da41d6faa5a09bf12c4` |
-| 3 | `theorem` | [IsCompact.uniformContinuousAt_of_continuousAt](../../../../GeneralTopology/HeineCantorPublic.lean/declarations/iscompact-uniformcontinuousat-of-continuousat.md) | 60 | `result-track:c7cffdd6856720ba1f4130f64e385ac5fbda196f4a537dc868997112ece057c1` |
-| 4 | `theorem` | [Continuous.uniformContinuous_of_tendsto_cocompact](../../../../GeneralTopology/HeineCantorPublic.lean/declarations/continuous-uniformcontinuous-of-tendsto-cocompact.md) | 74 | `result-track:2329d6d2728e8a6e9e69ac8f257d6e5c75d1917ffe5801aab764968facdd102a` |
-| 5 | `theorem` | [HasCompactMulSupport.uniformContinuous_of_continuous](../../../../GeneralTopology/HeineCantorPublic.lean/declarations/hascompactmulsupport-uniformcontinuous-of-continuous.md) | 91 | `result-track:15857965cc8f14eec201f636640ea092787bd65858381ac63dbeeeec927976db` |
-| 6 | `theorem` | [ContinuousOn.tendstoUniformly](../../../../GeneralTopology/HeineCantorPublic.lean/declarations/continuouson-tendstouniformly.md) | 97 | `result-track:dcbbd8f035b30a113bfcc689a20be9549ee23ebde11c40e4f5f32f442c54ccf1` |
-| 7 | `theorem` | [Continuous.tendstoUniformly](../../../../GeneralTopology/HeineCantorPublic.lean/declarations/continuous-tendstouniformly.md) | 108 | `result-track:ce7338cd352fc7a0a21f60d2135cb99bb53ef6703bb7356312ec363056b9507f` |
-| 8 | `lemma` | [IsCompact.mem_uniformity_of_prod](../../../../GeneralTopology/HeineCantorPublic.lean/declarations/iscompact-mem-uniformity-of-prod.md) | 118 | `result-track:72d70ad9ba330b7e0d4f5bd4ae9668e8a14363d305f8dd492a9ae5a79bbae443` |
-| 9 | `theorem` | [CompactSpace.uniformEquicontinuous_of_equicontinuous](../../../../GeneralTopology/HeineCantorPublic.lean/declarations/compactspace-uniformequicontinuous-of-equicontinuous.md) | 146 | `result-track:a65272e643170f4176f3b1939f1ea97a4621ab3cf66af00eb001fa851668f453` |
+| 1 | `theorem` | [CompactSpace.uniformContinuous_of_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HeineCantorPublic.lean/declarations/compactspace-uniformcontinuous-of-continuous.md) | 40 | `result-track:53f2aa6019ff97b557853b2eda12e48eee6433ee8e64155b9184fff337b3d1be` |
+| 2 | `theorem` | [IsCompact.uniformContinuousOn_of_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HeineCantorPublic.lean/declarations/iscompact-uniformcontinuouson-of-continuous.md) | 49 | `result-track:1ca7e8049a55efa6fde74babd88c153953db666fa5f42da41d6faa5a09bf12c4` |
+| 3 | `theorem` | [IsCompact.uniformContinuousAt_of_continuousAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HeineCantorPublic.lean/declarations/iscompact-uniformcontinuousat-of-continuousat.md) | 60 | `result-track:c7cffdd6856720ba1f4130f64e385ac5fbda196f4a537dc868997112ece057c1` |
+| 4 | `theorem` | [Continuous.uniformContinuous_of_tendsto_cocompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HeineCantorPublic.lean/declarations/continuous-uniformcontinuous-of-tendsto-cocompact.md) | 74 | `result-track:2329d6d2728e8a6e9e69ac8f257d6e5c75d1917ffe5801aab764968facdd102a` |
+| 5 | `theorem` | [HasCompactMulSupport.uniformContinuous_of_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HeineCantorPublic.lean/declarations/hascompactmulsupport-uniformcontinuous-of-continuous.md) | 91 | `result-track:15857965cc8f14eec201f636640ea092787bd65858381ac63dbeeeec927976db` |
+| 6 | `theorem` | [ContinuousOn.tendstoUniformly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HeineCantorPublic.lean/declarations/continuouson-tendstouniformly.md) | 97 | `result-track:dcbbd8f035b30a113bfcc689a20be9549ee23ebde11c40e4f5f32f442c54ccf1` |
+| 7 | `theorem` | [Continuous.tendstoUniformly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HeineCantorPublic.lean/declarations/continuous-tendstouniformly.md) | 108 | `result-track:ce7338cd352fc7a0a21f60d2135cb99bb53ef6703bb7356312ec363056b9507f` |
+| 8 | `lemma` | [IsCompact.mem_uniformity_of_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HeineCantorPublic.lean/declarations/iscompact-mem-uniformity-of-prod.md) | 118 | `result-track:72d70ad9ba330b7e0d4f5bd4ae9668e8a14363d305f8dd492a9ae5a79bbae443` |
+| 9 | `theorem` | [CompactSpace.uniformEquicontinuous_of_equicontinuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HeineCantorPublic.lean/declarations/compactspace-uniformequicontinuous-of-equicontinuous.md) | 146 | `result-track:a65272e643170f4176f3b1939f1ea97a4621ab3cf66af00eb001fa851668f453` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

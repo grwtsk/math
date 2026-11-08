@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceNative01ActualUpperAdjointInterior.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceNative01ActualUpperAdjointInterior.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNative01ActualUpperAdjointInterior.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNative01ActualUpperAdjointInterior.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualUpperAdjointInterior](../../../../MeasureAndIntegration/SourceNative01ActualUpperAdjointInterior.lean/declarations/actualupperadjointinterior.md) | 26 | `declaration-track:2d079a32d5bef43f1274e8a08395d28cf685e1275ceb84085b93589387331be7` |
-| 2 | `def` | [actualRetainedCompensationRemainder](../../../../MeasureAndIntegration/SourceNative01ActualUpperAdjointInterior.lean/declarations/actualretainedcompensationremainder.md) | 34 | `declaration-track:73c802a073276cdbeba26c6c7c604ead052b044ad76e1dbdcfd2ce07400362de` |
-| 3 | `theorem` | [actual_box_orders](../../../../MeasureAndIntegration/SourceNative01ActualUpperAdjointInterior.lean/declarations/actual-box-orders.md) | 41 | `result-track:6fa4bca70d2848f813cc332a219cc362dc94595c12a86ca76a078ea2748a4a3b` |
-| 4 | `theorem` | [actual_full_interior_intervalIntegrable](../../../../MeasureAndIntegration/SourceNative01ActualUpperAdjointInterior.lean/declarations/actual-full-interior-intervalintegrable.md) | 52 | `result-track:0eefc5f24c976baa01033b00c4e2c445238d38e8312b6d66d176e3e2e3ae1313` |
-| 5 | `theorem` | [actualAdjointInterior_eq_lower_add_upper](../../../../MeasureAndIntegration/SourceNative01ActualUpperAdjointInterior.lean/declarations/actualadjointinterior-eq-lower-add-upper.md) | 64 | `result-track:912f1060a8898e0e00e99bf71b16a3fd1260c7cd5ed2ac242f44985a26ebcb70` |
-| 6 | `theorem` | [compensatedJointWork_eq_retained_add_lowerStrip](../../../../MeasureAndIntegration/SourceNative01ActualUpperAdjointInterior.lean/declarations/compensatedjointwork-eq-retained-add-lowerstrip.md) | 80 | `result-track:f885ba41781766876bed32ab4d9bb32422e1263a4a931d285e44234835c29dde` |
-| 7 | `theorem` | [compensatedJointWork_sub_retained_abs_le](../../../../MeasureAndIntegration/SourceNative01ActualUpperAdjointInterior.lean/declarations/compensatedjointwork-sub-retained-abs-le.md) | 92 | `result-track:617cf3e5704927c52e4f0f41941acd46da023a6f0d7f297effd150a7379ada4c` |
+| 1 | `def` | [actualUpperAdjointInterior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNative01ActualUpperAdjointInterior.lean/declarations/actualupperadjointinterior.md) | 26 | `declaration-track:2d079a32d5bef43f1274e8a08395d28cf685e1275ceb84085b93589387331be7` |
+| 2 | `def` | [actualRetainedCompensationRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNative01ActualUpperAdjointInterior.lean/declarations/actualretainedcompensationremainder.md) | 34 | `declaration-track:73c802a073276cdbeba26c6c7c604ead052b044ad76e1dbdcfd2ce07400362de` |
+| 3 | `theorem` | [actual_box_orders](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNative01ActualUpperAdjointInterior.lean/declarations/actual-box-orders.md) | 41 | `result-track:6fa4bca70d2848f813cc332a219cc362dc94595c12a86ca76a078ea2748a4a3b` |
+| 4 | `theorem` | [actual_full_interior_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNative01ActualUpperAdjointInterior.lean/declarations/actual-full-interior-intervalintegrable.md) | 52 | `result-track:0eefc5f24c976baa01033b00c4e2c445238d38e8312b6d66d176e3e2e3ae1313` |
+| 5 | `theorem` | [actualAdjointInterior_eq_lower_add_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNative01ActualUpperAdjointInterior.lean/declarations/actualadjointinterior-eq-lower-add-upper.md) | 64 | `result-track:912f1060a8898e0e00e99bf71b16a3fd1260c7cd5ed2ac242f44985a26ebcb70` |
+| 6 | `theorem` | [compensatedJointWork_eq_retained_add_lowerStrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNative01ActualUpperAdjointInterior.lean/declarations/compensatedjointwork-eq-retained-add-lowerstrip.md) | 80 | `result-track:f885ba41781766876bed32ab4d9bb32422e1263a4a931d285e44234835c29dde` |
+| 7 | `theorem` | [compensatedJointWork_sub_retained_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNative01ActualUpperAdjointInterior.lean/declarations/compensatedjointwork-sub-retained-abs-le.md) | 92 | `result-track:617cf3e5704927c52e4f0f41941acd46da023a6f0d7f297effd150a7379ada4c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

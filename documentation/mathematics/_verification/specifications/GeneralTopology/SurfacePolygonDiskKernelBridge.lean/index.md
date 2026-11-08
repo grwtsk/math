@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonDiskKernelBridge.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonDiskKernelBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskKernelBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskKernelBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskCharacteristic`](../../../../GeneralTopology/SurfacePolygonDiskCharacteristic.lean/index.md) — import line 8; pinned internal source present.
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeKernel`](../../../../GeneralTopology/SurfacePolygonConeKernel.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskCharacteristic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskCharacteristic.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonConeKernel.lean/index.md) — import line 9; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [diskCharacteristic_eq_iff_outerConnected](../../../../GeneralTopology/SurfacePolygonDiskKernelBridge.lean/declarations/diskcharacteristic-eq-iff-outerconnected.md) | 36 | `result-track:d90dd3cbae4d4d1ba580d645d9c5e4d8c83999f6e71b0369713b16ae74171f27` |
-| 2 | `theorem` | [diskCharacteristic_isQuotientMap](../../../../GeneralTopology/SurfacePolygonDiskKernelBridge.lean/declarations/diskcharacteristic-isquotientmap.md) | 46 | `result-track:8e8dd450953ce530dad850aac0ece569eb590ea08ec941f55625e62563ea3fb7` |
-| 3 | `theorem` | [continuous_iff_comp_diskCharacteristic](../../../../GeneralTopology/SurfacePolygonDiskKernelBridge.lean/declarations/continuous-iff-comp-diskcharacteristic.md) | 55 | `result-track:1bea46f09b16cde099c4a72f7c59eba404b9797d1efffbcf415269f5ba207dc1` |
-| 4 | `theorem` | [diskCharacteristic_original_boundary](../../../../GeneralTopology/SurfacePolygonDiskKernelBridge.lean/declarations/diskcharacteristic-original-boundary.md) | 63 | `result-track:3cb23646f404577b505a5516b11629d7d96eb3abae03b5cdf4870d0d0343cdde` |
+| 1 | `theorem` | [diskCharacteristic_eq_iff_outerConnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskKernelBridge.lean/declarations/diskcharacteristic-eq-iff-outerconnected.md) | 36 | `result-track:d90dd3cbae4d4d1ba580d645d9c5e4d8c83999f6e71b0369713b16ae74171f27` |
+| 2 | `theorem` | [diskCharacteristic_isQuotientMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskKernelBridge.lean/declarations/diskcharacteristic-isquotientmap.md) | 46 | `result-track:8e8dd450953ce530dad850aac0ece569eb590ea08ec941f55625e62563ea3fb7` |
+| 3 | `theorem` | [continuous_iff_comp_diskCharacteristic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskKernelBridge.lean/declarations/continuous-iff-comp-diskcharacteristic.md) | 55 | `result-track:1bea46f09b16cde099c4a72f7c59eba404b9797d1efffbcf415269f5ba207dc1` |
+| 4 | `theorem` | [diskCharacteristic_original_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskKernelBridge.lean/declarations/diskcharacteristic-original-boundary.md) | 63 | `result-track:3cb23646f404577b505a5516b11629d7d96eb3abae03b5cdf4870d0d0343cdde` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

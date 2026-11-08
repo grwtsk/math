@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDOrderedCorrelation.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDOrderedCorrelation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDOrderedCorrelation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDOrderedCorrelation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDCoefficients`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDCoefficients.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDCoefficients`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDCoefficients.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [orderedCenteredLowGCDCorrelation](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDOrderedCorrelation.lean/declarations/orderedcenteredlowgcdcorrelation.md) | 25 | `declaration-track:6ced3fd0626cb23af3b7023c213e766e4e09f77868bac32a13e0083249ebd227` |
-| 2 | `theorem` | [genuineLowGCDBilinear_eq_ordered_pair_sum](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDOrderedCorrelation.lean/declarations/genuinelowgcdbilinear-eq-ordered-pair-sum.md) | 34 | `result-track:dd7521910b58a0113723572bf43b18aae49d6fe08d25d445a5118c9a1604f046` |
-| 3 | `theorem` | [orderedCenteredLowGCDCorrelation_eq_bilinear](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDOrderedCorrelation.lean/declarations/orderedcenteredlowgcdcorrelation-eq-bilinear.md) | 64 | `result-track:300974d7e5d90158a7f9689ac3f3df02b036570ccc0f9abd6779b19ae0ddac90` |
+| 1 | `def` | [orderedCenteredLowGCDCorrelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDOrderedCorrelation.lean/declarations/orderedcenteredlowgcdcorrelation.md) | 25 | `declaration-track:6ced3fd0626cb23af3b7023c213e766e4e09f77868bac32a13e0083249ebd227` |
+| 2 | `theorem` | [genuineLowGCDBilinear_eq_ordered_pair_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDOrderedCorrelation.lean/declarations/genuinelowgcdbilinear-eq-ordered-pair-sum.md) | 34 | `result-track:dd7521910b58a0113723572bf43b18aae49d6fe08d25d445a5118c9a1604f046` |
+| 3 | `theorem` | [orderedCenteredLowGCDCorrelation_eq_bilinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDOrderedCorrelation.lean/declarations/orderedcenteredlowgcdcorrelation-eq-bilinear.md) | 64 | `result-track:300974d7e5d90158a7f9689ac3f3df02b036570ccc0f9abd6779b19ae0ddac90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

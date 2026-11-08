@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AllAlternative2.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AllAlternative2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllAlternative2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllAlternative2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [All](../../../../../ComputerScience/AlgorithmsInComputerScience/AllAlternative2.lean/declarations/all.md) | 17 | `declaration-track:33925d16eaa0e0c37c472f2bb8de0990cec855cd608266a80c908ee62e3defb4` |
-| 2 | `theorem` | [All.split_cons](../../../../../ComputerScience/AlgorithmsInComputerScience/AllAlternative2.lean/declarations/all-split-cons.md) | 36 | `result-track:3a0cb34577371a97bb90b1688fe5dec29a1fff08914129e86defc4a31b9acf0e` |
-| 3 | `theorem` | [All.split_cons₂](../../../../../ComputerScience/AlgorithmsInComputerScience/AllAlternative2.lean/declarations/all-split-cons-source-edition-2.md) | 41 | `result-track:fb148b47d44e5b1339141018856393b9bddf8fec8a2f72e9f770d42abf153264` |
+| 1 | `inductive` | [All](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllAlternative2.lean/declarations/all.md) | 17 | `declaration-track:33925d16eaa0e0c37c472f2bb8de0990cec855cd608266a80c908ee62e3defb4` |
+| 2 | `theorem` | [All.split_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllAlternative2.lean/declarations/all-split-cons.md) | 36 | `result-track:3a0cb34577371a97bb90b1688fe5dec29a1fff08914129e86defc4a31b9acf0e` |
+| 3 | `theorem` | [All.split_cons₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllAlternative2.lean/declarations/all-split-cons-source-edition-2.md) | 41 | `result-track:fb148b47d44e5b1339141018856393b9bddf8fec8a2f72e9f770d42abf153264` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

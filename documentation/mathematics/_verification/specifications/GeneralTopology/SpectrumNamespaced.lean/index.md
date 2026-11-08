@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SpectrumNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/SpectrumNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectrumNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectrumNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [spectrum_lowerBound](../../../../GeneralTopology/SpectrumNamespaced.lean/declarations/spectrum-lowerbound.md) | 34 | `result-track:19c2df400aea1b94e796dc6db0a01d191cc073ebcab72d4ced99c5471ad085fc` |
-| 2 | `lemma` | [spectrum_subset_real](../../../../GeneralTopology/SpectrumNamespaced.lean/declarations/spectrum-subset-real.md) | 42 | `result-track:40570944a93e0f33ad98694c40ee58fd6db178572c8fb422d42924774955e005` |
-| 3 | `lemma` | [spectrum_eq_eigenvalues](../../../../GeneralTopology/SpectrumNamespaced.lean/declarations/spectrum-eq-eigenvalues.md) | 48 | `result-track:42abee575963fecf0d06979448e28b828b4e4be529c70e403a6002b4eead1ac0` |
+| 1 | `lemma` | [spectrum_lowerBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectrumNamespaced.lean/declarations/spectrum-lowerbound.md) | 34 | `result-track:19c2df400aea1b94e796dc6db0a01d191cc073ebcab72d4ced99c5471ad085fc` |
+| 2 | `lemma` | [spectrum_subset_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectrumNamespaced.lean/declarations/spectrum-subset-real.md) | 42 | `result-track:40570944a93e0f33ad98694c40ee58fd6db178572c8fb422d42924774955e005` |
+| 3 | `lemma` | [spectrum_eq_eigenvalues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectrumNamespaced.lean/declarations/spectrum-eq-eigenvalues.md) | 48 | `result-track:42abee575963fecf0d06979448e28b828b4e4be529c70e403a6002b4eead1ac0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

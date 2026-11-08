@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TaggedModeAnnotations.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TaggedModeAnnotations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TaggedModeAnnotations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TaggedModeAnnotations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,7 +61,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpectralModeZeroData](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TaggedModeAnnotations.lean/declarations/spectralmodezerodata.md) | 42 | `declaration-track:558395bb415e8713677892487578349f429a8a786706107ff92445045c0cc3a5` |
+| 1 | `structure` | [SpectralModeZeroData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TaggedModeAnnotations.lean/declarations/spectralmodezerodata.md) | 42 | `declaration-track:558395bb415e8713677892487578349f429a8a786706107ff92445045c0cc3a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

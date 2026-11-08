@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/Commutator.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/Commutator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Commutator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Commutator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [commutatorElement](../../../../GroupTheoryAndGeneralizations/Commutator.lean/declarations/commutatorelement.md) | 16 | `declaration-track:aa674b38ab5efa2b00c091fe26d2d071ebe95b22447f76b3a648b8e97fc8f614` |
-| 2 | `theorem` | [commutatorElement_def](../../../../GroupTheoryAndGeneralizations/Commutator.lean/declarations/commutatorelement-def.md) | 19 | `result-track:4000c3301efded202426f309175fa91e29f4a2e282b34c8fd181afa5441960d1` |
+| 1 | `instance` | [commutatorElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Commutator.lean/declarations/commutatorelement.md) | 16 | `declaration-track:aa674b38ab5efa2b00c091fe26d2d071ebe95b22447f76b3a648b8e97fc8f614` |
+| 2 | `theorem` | [commutatorElement_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Commutator.lean/declarations/commutatorelement-def.md) | 19 | `result-track:4000c3301efded202426f309175fa91e29f4a2e282b34c8fd181afa5441960d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

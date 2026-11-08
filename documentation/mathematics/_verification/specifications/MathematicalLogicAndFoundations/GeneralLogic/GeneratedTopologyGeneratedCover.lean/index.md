@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GeneratedTopologyGeneratedCover.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GeneratedTopologyGeneratedCover.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GeneratedTopologyGeneratedCover.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GeneratedTopologyGeneratedCover.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [GeneratedCover](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GeneratedTopologyGeneratedCover.lean/declarations/generatedcover.md) | 23 | `declaration-track:f281a6e2c5e2b6c5b1a4060683168462cf846479c3b46c8dbf390526eb1ca219` |
-| 2 | `theorem` | [generated_contains_base](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GeneratedTopologyGeneratedCover.lean/declarations/generated-contains-base.md) | 52 | `result-track:587288a91ffc2d2b2904262923e3745f9c46d4e79e56a113f61ca9de7f157628` |
-| 3 | `theorem` | [generated_identity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GeneratedTopologyGeneratedCover.lean/declarations/generated-identity.md) | 58 | `result-track:9dde2a54da88071c0a976ba988487649f06261ba6c4292bf71e0991bf65235e2` |
-| 4 | `theorem` | [generated_pullbackStable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GeneratedTopologyGeneratedCover.lean/declarations/generated-pullbackstable.md) | 63 | `result-track:af83ed30ff9d6acb8cc5b5a2f2890a4854b42c07377d817e65b1c1856178b048` |
-| 5 | `theorem` | [generated_transitive](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GeneratedTopologyGeneratedCover.lean/declarations/generated-transitive.md) | 72 | `result-track:e0ff322f28b4560b84d4bacf88bcb88ae42ce03c595755202a295ea04d91924a` |
-| 6 | `theorem` | [generated_minimal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GeneratedTopologyGeneratedCover.lean/declarations/generated-minimal.md) | 81 | `result-track:0a4a4852c3446114eedb9412bf5238e2487acd9b025a18c86942ca97e35e881b` |
+| 1 | `inductive` | [GeneratedCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GeneratedTopologyGeneratedCover.lean/declarations/generatedcover.md) | 23 | `declaration-track:f281a6e2c5e2b6c5b1a4060683168462cf846479c3b46c8dbf390526eb1ca219` |
+| 2 | `theorem` | [generated_contains_base](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GeneratedTopologyGeneratedCover.lean/declarations/generated-contains-base.md) | 52 | `result-track:587288a91ffc2d2b2904262923e3745f9c46d4e79e56a113f61ca9de7f157628` |
+| 3 | `theorem` | [generated_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GeneratedTopologyGeneratedCover.lean/declarations/generated-identity.md) | 58 | `result-track:9dde2a54da88071c0a976ba988487649f06261ba6c4292bf71e0991bf65235e2` |
+| 4 | `theorem` | [generated_pullbackStable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GeneratedTopologyGeneratedCover.lean/declarations/generated-pullbackstable.md) | 63 | `result-track:af83ed30ff9d6acb8cc5b5a2f2890a4854b42c07377d817e65b1c1856178b048` |
+| 5 | `theorem` | [generated_transitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GeneratedTopologyGeneratedCover.lean/declarations/generated-transitive.md) | 72 | `result-track:e0ff322f28b4560b84d4bacf88bcb88ae42ce03c595755202a295ea04d91924a` |
+| 6 | `theorem` | [generated_minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GeneratedTopologyGeneratedCover.lean/declarations/generated-minimal.md) | 81 | `result-track:0a4a4852c3446114eedb9412bf5238e2487acd9b025a18c86942ca97e35e881b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

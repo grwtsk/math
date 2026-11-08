@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [goodNats](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/goodnats.md) | 28 | `declaration-track:7e194febcdbf30370c6c2a08903960a2f28aaca6b0e8aac9894d5ee6ea4e1515` |
-| 2 | `theorem` | [factorization](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/factorization.md) | 38 | `result-track:5b9820c834c2799e1ea0ca38e9e9937e69f9aeec95139d86b94a595e7266eb1b` |
-| 3 | `theorem` | [left_factor_large](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/left-factor-large.md) | 48 | `result-track:c5ecb635ba49751ecf2ea1ed1109427c82b21ab6a39a240750b563a9b20c6702` |
-| 4 | `theorem` | [right_factor_large](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/right-factor-large.md) | 50 | `result-track:9ee60584c8de6318c66110f118db919e16a34eaae960f87b22d73827d7c25021` |
-| 5 | `theorem` | [int_large](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/int-large.md) | 57 | `result-track:f3d487beff5208a32a6cefd3bfec6cdf551c3a9566dfa9f5b53507fa5edf183c` |
-| 6 | `theorem` | [not_prime_of_int_mul'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/not-prime-of-int-mul.md) | 60 | `result-track:5845263919c8a8b7e2d1369f58a6c2f94956f63d3d9b119970e729f7d01a92d6` |
-| 7 | `theorem` | [polynomial_not_prime](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/polynomial-not-prime.md) | 65 | `result-track:198ed22bce0461c0afbfae594cfdb1164f5234f500670ec94aae15efa29e193d` |
-| 8 | `def` | [aChoice](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/achoice.md) | 72 | `declaration-track:6928cde41729424105f3d170c9f9fc8754ffead864a5b59eb3a45103522a91db` |
-| 9 | `theorem` | [aChoice_good](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/achoice-good.md) | 75 | `result-track:0c5c34447d0a668419e5165d684d2300c13c3a9148367bcad371fbfc07f586c9` |
-| 10 | `theorem` | [aChoice_strictMono](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/achoice-strictmono.md) | 80 | `result-track:c5d56223d5685e90bc7262e02cff5c57f08f975edb51d9e766288cfcd1c87de6` |
-| 11 | `theorem` | [imo1969_q1](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/imo1969-q1.md) | 89 | `result-track:670404215891036acc64d136e6e66982640a29656e6e0bf7240c722762784aa7` |
+| 1 | `def` | [goodNats](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/goodnats.md) | 28 | `declaration-track:7e194febcdbf30370c6c2a08903960a2f28aaca6b0e8aac9894d5ee6ea4e1515` |
+| 2 | `theorem` | [factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/factorization.md) | 38 | `result-track:5b9820c834c2799e1ea0ca38e9e9937e69f9aeec95139d86b94a595e7266eb1b` |
+| 3 | `theorem` | [left_factor_large](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/left-factor-large.md) | 48 | `result-track:c5ecb635ba49751ecf2ea1ed1109427c82b21ab6a39a240750b563a9b20c6702` |
+| 4 | `theorem` | [right_factor_large](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/right-factor-large.md) | 50 | `result-track:9ee60584c8de6318c66110f118db919e16a34eaae960f87b22d73827d7c25021` |
+| 5 | `theorem` | [int_large](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/int-large.md) | 57 | `result-track:f3d487beff5208a32a6cefd3bfec6cdf551c3a9566dfa9f5b53507fa5edf183c` |
+| 6 | `theorem` | [not_prime_of_int_mul'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/not-prime-of-int-mul.md) | 60 | `result-track:5845263919c8a8b7e2d1369f58a6c2f94956f63d3d9b119970e729f7d01a92d6` |
+| 7 | `theorem` | [polynomial_not_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/polynomial-not-prime.md) | 65 | `result-track:198ed22bce0461c0afbfae594cfdb1164f5234f500670ec94aae15efa29e193d` |
+| 8 | `def` | [aChoice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/achoice.md) | 72 | `declaration-track:6928cde41729424105f3d170c9f9fc8754ffead864a5b59eb3a45103522a91db` |
+| 9 | `theorem` | [aChoice_good](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/achoice-good.md) | 75 | `result-track:0c5c34447d0a668419e5165d684d2300c13c3a9148367bcad371fbfc07f586c9` |
+| 10 | `theorem` | [aChoice_strictMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/achoice-strictmono.md) | 80 | `result-track:c5d56223d5685e90bc7262e02cff5c57f08f975edb51d9e766288cfcd1c87de6` |
+| 11 | `theorem` | [imo1969_q1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1969Q1Public.lean/declarations/imo1969-q1.md) | 89 | `result-track:670404215891036acc64d136e6e66982640a29656e6e0bf7240c722762784aa7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

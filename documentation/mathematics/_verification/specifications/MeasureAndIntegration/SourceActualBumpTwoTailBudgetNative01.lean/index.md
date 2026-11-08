@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_density_continuous](../../../../MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/declarations/actual-density-continuous.md) | 18 | `result-track:33a608f2b63295ab5a88a67b47c3001273c14028a06207b376ea24b16793abc8` |
-| 2 | `theorem` | [tail_numerator_nonneg](../../../../MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/declarations/tail-numerator-nonneg.md) | 43 | `result-track:542a992a6014df0a1814a6ee994f0a131907ce5616986ffa898a918108c48043` |
-| 3 | `theorem` | [sixth_power_tail_integrable](../../../../MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/declarations/sixth-power-tail-integrable.md) | 50 | `result-track:20837ddf99db425cc40624c083310a25a3ddbc94acb1ff7d9a9e4f7d54ea244c` |
-| 4 | `theorem` | [sixth_power_tail_integral](../../../../MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/declarations/sixth-power-tail-integral.md) | 56 | `result-track:5d55f109d32d542ae613714b6bb2fb81727ae9489a8f2fa1f89cb51917f0ce89` |
-| 5 | `theorem` | [actual_one_tail_integrable](../../../../MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/declarations/actual-one-tail-integrable.md) | 70 | `result-track:f04beee22e07a357f2b96ac5ea3591fd85aa9d392bb3c580de0f713750291b61` |
-| 6 | `theorem` | [actual_one_tail_norm_le](../../../../MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/declarations/actual-one-tail-norm-le.md) | 82 | `result-track:d42f7f267b823a2397de7b4af4116317a511042ca9182a73a5ebec8b330a3107` |
-| 7 | `def` | [actualBumpTwoTail](../../../../MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/declarations/actualbumptwotail.md) | 102 | `declaration-track:0c7df22202e4b16e63a9ad0d0cea8fb2b2b127d4548016302924aadd0b96afeb` |
-| 8 | `theorem` | [actualBumpTwoTail_integrable](../../../../MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/declarations/actualbumptwotail-integrable.md) | 108 | `result-track:911d0ac5b52897ad2a62dd51ae687a6ae203f44de255b22c412d4853f68e0de7` |
-| 9 | `theorem` | [actualBumpTwoTail_norm_le](../../../../MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/declarations/actualbumptwotail-norm-le.md) | 117 | `result-track:5c72589a44773f03067078fb652371b6489aa1a7ada8a2fd89b0992ac9819cb4` |
+| 1 | `theorem` | [actual_density_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/declarations/actual-density-continuous.md) | 18 | `result-track:33a608f2b63295ab5a88a67b47c3001273c14028a06207b376ea24b16793abc8` |
+| 2 | `theorem` | [tail_numerator_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/declarations/tail-numerator-nonneg.md) | 43 | `result-track:542a992a6014df0a1814a6ee994f0a131907ce5616986ffa898a918108c48043` |
+| 3 | `theorem` | [sixth_power_tail_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/declarations/sixth-power-tail-integrable.md) | 50 | `result-track:20837ddf99db425cc40624c083310a25a3ddbc94acb1ff7d9a9e4f7d54ea244c` |
+| 4 | `theorem` | [sixth_power_tail_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/declarations/sixth-power-tail-integral.md) | 56 | `result-track:5d55f109d32d542ae613714b6bb2fb81727ae9489a8f2fa1f89cb51917f0ce89` |
+| 5 | `theorem` | [actual_one_tail_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/declarations/actual-one-tail-integrable.md) | 70 | `result-track:f04beee22e07a357f2b96ac5ea3591fd85aa9d392bb3c580de0f713750291b61` |
+| 6 | `theorem` | [actual_one_tail_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/declarations/actual-one-tail-norm-le.md) | 82 | `result-track:d42f7f267b823a2397de7b4af4116317a511042ca9182a73a5ebec8b330a3107` |
+| 7 | `def` | [actualBumpTwoTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/declarations/actualbumptwotail.md) | 102 | `declaration-track:0c7df22202e4b16e63a9ad0d0cea8fb2b2b127d4548016302924aadd0b96afeb` |
+| 8 | `theorem` | [actualBumpTwoTail_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/declarations/actualbumptwotail-integrable.md) | 108 | `result-track:911d0ac5b52897ad2a62dd51ae687a6ae203f44de255b22c412d4853f68e0de7` |
+| 9 | `theorem` | [actualBumpTwoTail_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualBumpTwoTailBudgetNative01.lean/declarations/actualbumptwotail-norm-le.md) | 117 | `result-track:5c72589a44773f03067078fb652371b6489aa1a7ada8a2fd89b0992ac9819cb4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

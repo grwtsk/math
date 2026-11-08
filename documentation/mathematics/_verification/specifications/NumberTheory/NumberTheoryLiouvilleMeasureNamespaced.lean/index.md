@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/NumberTheoryLiouvilleMeasureNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/NumberTheoryLiouvilleMeasureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryLiouvilleMeasureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryLiouvilleMeasureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../NumberTheory/NumberTheoryLiouvilleMeasureNamespaced.lean/declarations/macro-rules.md) | 42 | `declaration-track:3eb6f78663dd08787c784cb23d8321ff8c9e9e5da64af67c69e752e15c39ac2b` |
-| 2 | `theorem` | [setOf_liouvilleWith_subset_aux](../../../../NumberTheory/NumberTheoryLiouvilleMeasureNamespaced.lean/declarations/setof-liouvillewith-subset-aux.md) | 44 | `result-track:1793e3988d0968e150f7c42212c107640018a47b29716b42a80e0acb8580e04d` |
-| 3 | `theorem` | [volume_iUnion_setOf_liouvilleWith](../../../../NumberTheory/NumberTheoryLiouvilleMeasureNamespaced.lean/declarations/volume-iunion-setof-liouvillewith.md) | 87 | `result-track:b98ff076ec565186c6d08b86201ec8ff7f3e3f2a21b45cd671d33e9367ad16c0` |
-| 4 | `theorem` | [ae_not_liouvilleWith](../../../../NumberTheory/NumberTheoryLiouvilleMeasureNamespaced.lean/declarations/ae-not-liouvillewith.md) | 119 | `result-track:133573a732ec76b851bc92b3f899a228ccd3f382520578c41abed99ff7158dcd` |
-| 5 | `theorem` | [ae_not_liouville](../../../../NumberTheory/NumberTheoryLiouvilleMeasureNamespaced.lean/declarations/ae-not-liouville.md) | 124 | `result-track:343ed4ea83ba55c69e1aee98486d53a1bea6f8c31c5cc91237c6c862bc9d40ab` |
-| 6 | `theorem` | [volume_setOf_liouville](../../../../NumberTheory/NumberTheoryLiouvilleMeasureNamespaced.lean/declarations/volume-setof-liouville.md) | 130 | `result-track:b0912dd84d6c9505e9b08762643acf792ec9c610318e90334e8a2ed9e43973ab` |
-| 7 | `theorem` | [Real.disjoint_residual_ae](../../../../NumberTheory/NumberTheoryLiouvilleMeasureNamespaced.lean/declarations/real-disjoint-residual-ae.md) | 136 | `result-track:79cd91f9ffef70e0c42490b05a3dad2469c1192dd9ec1df84cf33f65c4da3c9f` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryLiouvilleMeasureNamespaced.lean/declarations/macro-rules.md) | 42 | `declaration-track:3eb6f78663dd08787c784cb23d8321ff8c9e9e5da64af67c69e752e15c39ac2b` |
+| 2 | `theorem` | [setOf_liouvilleWith_subset_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryLiouvilleMeasureNamespaced.lean/declarations/setof-liouvillewith-subset-aux.md) | 44 | `result-track:1793e3988d0968e150f7c42212c107640018a47b29716b42a80e0acb8580e04d` |
+| 3 | `theorem` | [volume_iUnion_setOf_liouvilleWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryLiouvilleMeasureNamespaced.lean/declarations/volume-iunion-setof-liouvillewith.md) | 87 | `result-track:b98ff076ec565186c6d08b86201ec8ff7f3e3f2a21b45cd671d33e9367ad16c0` |
+| 4 | `theorem` | [ae_not_liouvilleWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryLiouvilleMeasureNamespaced.lean/declarations/ae-not-liouvillewith.md) | 119 | `result-track:133573a732ec76b851bc92b3f899a228ccd3f382520578c41abed99ff7158dcd` |
+| 5 | `theorem` | [ae_not_liouville](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryLiouvilleMeasureNamespaced.lean/declarations/ae-not-liouville.md) | 124 | `result-track:343ed4ea83ba55c69e1aee98486d53a1bea6f8c31c5cc91237c6c862bc9d40ab` |
+| 6 | `theorem` | [volume_setOf_liouville](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryLiouvilleMeasureNamespaced.lean/declarations/volume-setof-liouville.md) | 130 | `result-track:b0912dd84d6c9505e9b08762643acf792ec9c610318e90334e8a2ed9e43973ab` |
+| 7 | `theorem` | [Real.disjoint_residual_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryLiouvilleMeasureNamespaced.lean/declarations/real-disjoint-residual-ae.md) | 136 | `result-track:79cd91f9ffef70e0c42490b05a3dad2469c1192dd9ec1df84cf33f65c4da3c9f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

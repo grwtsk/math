@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppNotationNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppNotationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppNotationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppNotationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [elabSingle₀](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppNotationNamespaced.lean/declarations/elabsingle.md) | 36 | `declaration-track:79b199cee269b94a772c6f6bca1ac8f121b808e9b61ffba7fcbe7908497376ef` |
-| 2 | `def` | [elabUpdate₀](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppNotationNamespaced.lean/declarations/elabupdate.md) | 46 | `declaration-track:bb29bdb75345d86388ee3784f72166508822f1ceb3877c05f26743c03ca73410` |
-| 3 | `def` | [singleUnexpander](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppNotationNamespaced.lean/declarations/singleunexpander.md) | 56 | `declaration-track:5ea8e49aa1b1b987abf61f257762156c1b39e3c40a88a85cf04210e8d63b1094` |
-| 4 | `def` | [updateUnexpander](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppNotationNamespaced.lean/declarations/updateunexpander.md) | 62 | `declaration-track:8a1658b9d3ac9038b52bb5aa830baec906fe4c73d663e657fd165f993387d4f4` |
-| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppNotationNamespaced.lean/declarations/instance.md) | 69 | `declaration-track:6917a2aab4ba68ff261c420890ae93a6914b262dd2684af3044037635169330c` |
+| 1 | `def` | [elabSingle₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppNotationNamespaced.lean/declarations/elabsingle.md) | 36 | `declaration-track:79b199cee269b94a772c6f6bca1ac8f121b808e9b61ffba7fcbe7908497376ef` |
+| 2 | `def` | [elabUpdate₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppNotationNamespaced.lean/declarations/elabupdate.md) | 46 | `declaration-track:bb29bdb75345d86388ee3784f72166508822f1ceb3877c05f26743c03ca73410` |
+| 3 | `def` | [singleUnexpander](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppNotationNamespaced.lean/declarations/singleunexpander.md) | 56 | `declaration-track:5ea8e49aa1b1b987abf61f257762156c1b39e3c40a88a85cf04210e8d63b1094` |
+| 4 | `def` | [updateUnexpander](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppNotationNamespaced.lean/declarations/updateunexpander.md) | 62 | `declaration-track:8a1658b9d3ac9038b52bb5aa830baec906fe4c73d663e657fd165f993387d4f4` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppNotationNamespaced.lean/declarations/instance.md) | 69 | `declaration-track:6917a2aab4ba68ff261c420890ae93a6914b262dd2684af3044037635169330c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

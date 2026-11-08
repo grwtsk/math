@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LayoutAndCapacity.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LayoutAndCapacity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LayoutAndCapacity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LayoutAndCapacity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Face](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LayoutAndCapacity.lean/declarations/face.md) | 30 | `declaration-track:f54a674dcbadec4df972616a582289583e239e1d3f026e2699ce15fda5815c24` |
-| 2 | `structure` | [Presentation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LayoutAndCapacity.lean/declarations/presentation.md) | 40 | `declaration-track:2c2a1d0cf3ca612034d5bd7e6a4533617bba1bc6b37c8b3a8f921bd9a68451c5` |
-| 3 | `def` | [Presentation.surfaceCapacity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LayoutAndCapacity.lean/declarations/presentation-surfacecapacity.md) | 48 | `declaration-track:62ce917ca04eac28dbec15b7278dfd2d41c73f929ae213f0276bcf46b46f8fa2` |
-| 4 | `def` | [Presentation.paddingBitCount](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LayoutAndCapacity.lean/declarations/presentation-paddingbitcount.md) | 52 | `declaration-track:58baf1ac85a68334c7786f5357b2b423287d39891d3d396f9e40568cdd82857e` |
+| 1 | `inductive` | [Face](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LayoutAndCapacity.lean/declarations/face.md) | 30 | `declaration-track:f54a674dcbadec4df972616a582289583e239e1d3f026e2699ce15fda5815c24` |
+| 2 | `structure` | [Presentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LayoutAndCapacity.lean/declarations/presentation.md) | 40 | `declaration-track:2c2a1d0cf3ca612034d5bd7e6a4533617bba1bc6b37c8b3a8f921bd9a68451c5` |
+| 3 | `def` | [Presentation.surfaceCapacity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LayoutAndCapacity.lean/declarations/presentation-surfacecapacity.md) | 48 | `declaration-track:62ce917ca04eac28dbec15b7278dfd2d41c73f929ae213f0276bcf46b46f8fa2` |
+| 4 | `def` | [Presentation.paddingBitCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LayoutAndCapacity.lean/declarations/presentation-paddingbitcount.md) | 52 | `declaration-track:58baf1ac85a68334c7786f5357b2b423287d39891d3d396f9e40568cdd82857e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

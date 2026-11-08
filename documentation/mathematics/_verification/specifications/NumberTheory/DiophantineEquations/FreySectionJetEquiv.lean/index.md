@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetQuotient`](../../../../../CommutativeAlgebra/FreyJetQuotient.lean/index.md) — import line 10; pinned internal source present.
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetCharts`](../../../../../CommutativeAlgebra/FreyIntegralJetCharts.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetQuotient`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyJetQuotient.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetCharts`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyIntegralJetCharts.lean/index.md) — import line 11; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [FreySectionJetRing](../../../../../NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/freysectionjetring.md) | 19 | `declaration-track:61e54d719b5ccbd6a313ed2dbcae201c5fc4d26a3bacabcbd7865e9927850229` |
-| 2 | `theorem` | [PrimitiveAdditiveTriple.freySectionJet_root](../../../../../NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/primitiveadditivetriple-freysectionjet-root.md) | 24 | `result-track:7079c2112c633b6de3440ab1ed1f7a567bc01b75598c6b97df9d5aa514162dcb` |
-| 3 | `theorem` | [PrimitiveAdditiveTriple.freySectionJet_derivative](../../../../../NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/primitiveadditivetriple-freysectionjet-derivative.md) | 30 | `result-track:b6d35e40f50e46d99844e24b48d1c0e267700b6b430e47777db139b35237589c` |
-| 4 | `theorem` | [PrimitiveAdditiveTriple.freySectionJet_quadratic](../../../../../NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/primitiveadditivetriple-freysectionjet-quadratic.md) | 40 | `result-track:9dbf2aeec593c6081ebb8955843a04f54ee31c50f4b1a66fcd5029b5ff737d07` |
-| 5 | `theorem` | [PrimitiveAdditiveTriple.freySectionJet_inverse](../../../../../NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/primitiveadditivetriple-freysectionjet-inverse.md) | 50 | `result-track:c13d0041c8834e11a7f3f42b90de2fc0818a7ff56aaa1480c290410975e35d28` |
-| 6 | `def` | [PrimitiveAdditiveTriple.freySectionJetEquiv](../../../../../NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/primitiveadditivetriple-freysectionjetequiv.md) | 60 | `declaration-track:a8e6b43e38ca9143b2692ce55a96a7b29583fdd24c1e2fe4224a60d3c3748036` |
-| 7 | `theorem` | [PrimitiveAdditiveTriple.freySectionJetEquiv_symm_parameter](../../../../../NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/primitiveadditivetriple-freysectionjetequiv-symm-parameter.md) | 68 | `result-track:da9aac1088af01c8419d408792d9a510b2561c5ddea23baba932f68d22d1465f` |
-| 8 | `theorem` | [PrimitiveAdditiveTriple.freySectionJetEquiv_x](../../../../../NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/primitiveadditivetriple-freysectionjetequiv-x.md) | 77 | `result-track:860dca339c5da8eacbb56ec7f4a51332a9cd513e18cd4564eadab1c9358994dc` |
-| 9 | `def` | [PrimitiveAdditiveTriple.freySectionJetTruncate](../../../../../NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/primitiveadditivetriple-freysectionjettruncate.md) | 98 | `declaration-track:4d8d3b71d493d27745ac44e512215b97f587b09c620d7c3063d9de8708bb0d56` |
-| 10 | `theorem` | [PrimitiveAdditiveTriple.freySectionJetEquiv_truncate](../../../../../NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/primitiveadditivetriple-freysectionjetequiv-truncate.md) | 104 | `result-track:4c9164459b8ff196b87d06bdaa260ee677f590400870a245f845ed0483339c6f` |
+| 1 | `abbrev` | [FreySectionJetRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/freysectionjetring.md) | 19 | `declaration-track:61e54d719b5ccbd6a313ed2dbcae201c5fc4d26a3bacabcbd7865e9927850229` |
+| 2 | `theorem` | [PrimitiveAdditiveTriple.freySectionJet_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/primitiveadditivetriple-freysectionjet-root.md) | 24 | `result-track:7079c2112c633b6de3440ab1ed1f7a567bc01b75598c6b97df9d5aa514162dcb` |
+| 3 | `theorem` | [PrimitiveAdditiveTriple.freySectionJet_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/primitiveadditivetriple-freysectionjet-derivative.md) | 30 | `result-track:b6d35e40f50e46d99844e24b48d1c0e267700b6b430e47777db139b35237589c` |
+| 4 | `theorem` | [PrimitiveAdditiveTriple.freySectionJet_quadratic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/primitiveadditivetriple-freysectionjet-quadratic.md) | 40 | `result-track:9dbf2aeec593c6081ebb8955843a04f54ee31c50f4b1a66fcd5029b5ff737d07` |
+| 5 | `theorem` | [PrimitiveAdditiveTriple.freySectionJet_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/primitiveadditivetriple-freysectionjet-inverse.md) | 50 | `result-track:c13d0041c8834e11a7f3f42b90de2fc0818a7ff56aaa1480c290410975e35d28` |
+| 6 | `def` | [PrimitiveAdditiveTriple.freySectionJetEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/primitiveadditivetriple-freysectionjetequiv.md) | 60 | `declaration-track:a8e6b43e38ca9143b2692ce55a96a7b29583fdd24c1e2fe4224a60d3c3748036` |
+| 7 | `theorem` | [PrimitiveAdditiveTriple.freySectionJetEquiv_symm_parameter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/primitiveadditivetriple-freysectionjetequiv-symm-parameter.md) | 68 | `result-track:da9aac1088af01c8419d408792d9a510b2561c5ddea23baba932f68d22d1465f` |
+| 8 | `theorem` | [PrimitiveAdditiveTriple.freySectionJetEquiv_x](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/primitiveadditivetriple-freysectionjetequiv-x.md) | 77 | `result-track:860dca339c5da8eacbb56ec7f4a51332a9cd513e18cd4564eadab1c9358994dc` |
+| 9 | `def` | [PrimitiveAdditiveTriple.freySectionJetTruncate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/primitiveadditivetriple-freysectionjettruncate.md) | 98 | `declaration-track:4d8d3b71d493d27745ac44e512215b97f587b09c620d7c3063d9de8708bb0d56` |
+| 10 | `theorem` | [PrimitiveAdditiveTriple.freySectionJetEquiv_truncate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreySectionJetEquiv.lean/declarations/primitiveadditivetriple-freysectionjetequiv-truncate.md) | 104 | `result-track:4c9164459b8ff196b87d06bdaa260ee677f590400870a245f845ed0483339c6f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

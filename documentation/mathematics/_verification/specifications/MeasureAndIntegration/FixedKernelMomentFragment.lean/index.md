@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FixedKernelMomentFragment.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FixedKernelMomentFragment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelMomentFragment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelMomentFragment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [weighted_translate](../../../../MeasureAndIntegration/FixedKernelMomentFragment.lean/declarations/weighted-translate.md) | 13 | `result-track:cf331e038d453d00af63fc1721e49e77dbb0510d56f54fc6e48fd98899958b72` |
-| 2 | `theorem` | [weighted_translated_integrable](../../../../MeasureAndIntegration/FixedKernelMomentFragment.lean/declarations/weighted-translated-integrable.md) | 22 | `result-track:ba980db88bcc833550c8e7d0ff8fbd200360132aeb68842a919a2dfa399c6254` |
-| 3 | `theorem` | [weighted_translated_integral_zero](../../../../MeasureAndIntegration/FixedKernelMomentFragment.lean/declarations/weighted-translated-integral-zero.md) | 29 | `result-track:272cd5ed5b8bd3b863c11a4c3fc4acef2491e8ab224dd3a702b0d5d7ae05a337` |
-| 4 | `theorem` | [logSample_integral_zero](../../../../MeasureAndIntegration/FixedKernelMomentFragment.lean/declarations/logsample-integral-zero.md) | 37 | `result-track:af0f62f093d320ebb38bfea6ff287142f8d60e55eb4f3b95ebce4cdd1b96e6b2` |
-| 5 | `theorem` | [logSample_integrableOn_and_integral_zero](../../../../MeasureAndIntegration/FixedKernelMomentFragment.lean/declarations/logsample-integrableon-and-integral-zero.md) | 51 | `result-track:ba2f8bac64e7b7e26dd7bf3e7a0a8c33b9bda3007eb8837e867a1c51629ae9ba` |
+| 1 | `theorem` | [weighted_translate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelMomentFragment.lean/declarations/weighted-translate.md) | 13 | `result-track:cf331e038d453d00af63fc1721e49e77dbb0510d56f54fc6e48fd98899958b72` |
+| 2 | `theorem` | [weighted_translated_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelMomentFragment.lean/declarations/weighted-translated-integrable.md) | 22 | `result-track:ba980db88bcc833550c8e7d0ff8fbd200360132aeb68842a919a2dfa399c6254` |
+| 3 | `theorem` | [weighted_translated_integral_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelMomentFragment.lean/declarations/weighted-translated-integral-zero.md) | 29 | `result-track:272cd5ed5b8bd3b863c11a4c3fc4acef2491e8ab224dd3a702b0d5d7ae05a337` |
+| 4 | `theorem` | [logSample_integral_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelMomentFragment.lean/declarations/logsample-integral-zero.md) | 37 | `result-track:af0f62f093d320ebb38bfea6ff287142f8d60e55eb4f3b95ebce4cdd1b96e6b2` |
+| 5 | `theorem` | [logSample_integrableOn_and_integral_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelMomentFragment.lean/declarations/logsample-integrableon-and-integral-zero.md) | 51 | `result-track:ba2f8bac64e7b7e26dd7bf3e7a0a8c33b9bda3007eb8837e867a1c51629ae9ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

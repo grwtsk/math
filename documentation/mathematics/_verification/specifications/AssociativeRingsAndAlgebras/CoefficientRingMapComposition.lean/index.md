@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/CoefficientRingMapComposition.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/CoefficientRingMapComposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CoefficientRingMapComposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CoefficientRingMapComposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -51,7 +51,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.Algebra.Ring.ULift` — import line 23; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Rat.Defs` — import line 24; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.ZMod.Basic` — import line 25; external provider; requires a separately pinned dependency.
-- [Commutative Coefficient Carriers](../../../../CommutativeAlgebra/CommutativeCoefficientCarriers.lean/index.md) — import line 26; pinned internal source present.
+- [Commutative Coefficient Carriers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CommutativeCoefficientCarriers.lean/index.md) — import line 26; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -62,11 +62,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CoefficientChange](../../../../AssociativeRingsAndAlgebras/CoefficientRingMapComposition.lean/declarations/coefficientchange.md) | 53 | `declaration-track:1980b0a9f0df52c62d0d22b9ea8160cbf3c66f07de2604e426a4fa71ec7cab54` |
-| 2 | `def` | [id](../../../../AssociativeRingsAndAlgebras/CoefficientRingMapComposition.lean/declarations/id.md) | 60 | `declaration-track:055a88838f31684c7bb511ff7c03031b218faa1d038099ecbc0ee94d34527801` |
-| 3 | `def` | [comp](../../../../AssociativeRingsAndAlgebras/CoefficientRingMapComposition.lean/declarations/comp.md) | 64 | `declaration-track:3071379113da7c2139c1c9d3cd5503895ddf4b27b0cbe39161daa3e304c9c7c1` |
-| 4 | `theorem` | [id_apply](../../../../AssociativeRingsAndAlgebras/CoefficientRingMapComposition.lean/declarations/id-apply.md) | 73 | `result-track:574db4c79d83213b9a560d426d57145589c2adb4f304c9c9b5a24a651ed423f7` |
-| 5 | `theorem` | [comp_apply](../../../../AssociativeRingsAndAlgebras/CoefficientRingMapComposition.lean/declarations/comp-apply.md) | 78 | `result-track:b1ca3c0d2b360cec79dc3a62950962f744f2382991c4e6b2b284af4f021d4386` |
+| 1 | `structure` | [CoefficientChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CoefficientRingMapComposition.lean/declarations/coefficientchange.md) | 53 | `declaration-track:1980b0a9f0df52c62d0d22b9ea8160cbf3c66f07de2604e426a4fa71ec7cab54` |
+| 2 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CoefficientRingMapComposition.lean/declarations/id.md) | 60 | `declaration-track:055a88838f31684c7bb511ff7c03031b218faa1d038099ecbc0ee94d34527801` |
+| 3 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CoefficientRingMapComposition.lean/declarations/comp.md) | 64 | `declaration-track:3071379113da7c2139c1c9d3cd5503895ddf4b27b0cbe39161daa3e304c9c7c1` |
+| 4 | `theorem` | [id_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CoefficientRingMapComposition.lean/declarations/id-apply.md) | 73 | `result-track:574db4c79d83213b9a560d426d57145589c2adb4f304c9c9b5a24a651ed423f7` |
+| 5 | `theorem` | [comp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CoefficientRingMapComposition.lean/declarations/comp-apply.md) | 78 | `result-track:b1ca3c0d2b360cec79dc3a62950962f744f2382991c4e6b2b284af4f021d4386` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

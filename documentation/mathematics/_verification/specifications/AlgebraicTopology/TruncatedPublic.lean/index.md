@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/TruncatedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/TruncatedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TruncatedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TruncatedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,22 +57,22 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../AlgebraicTopology/TruncatedPublic.lean/declarations/instance.md) | 26 | `declaration-track:3ece0325eee5e59c39d8d057584c0a4557a9bb27c927e2c8b42cc6bbcc20884a` |
-| 2 | `instance` | [initial_inclusion](../../../../AlgebraicTopology/TruncatedPublic.lean/declarations/initial-inclusion.md) | 31 | `declaration-track:a717017596155ac1633d48506666ec9a217b02f0d1c5f4c10aefc839e94dfe0e` |
-| 3 | `theorem` | [initial_incl](../../../../AlgebraicTopology/TruncatedPublic.lean/declarations/initial-incl.md) | 54 | `result-track:ac9e94ef1fcf4a621bfb069a5304f0b11f3dbbddbeed139a9680b674805c4356` |
-| 4 | `abbrev` | [δ](../../../../AlgebraicTopology/TruncatedPublic.lean/declarations/anonymous-source-edition-3.md) | 60 | `declaration-track:de15acf2587c7a64a983768ffbfdedbcb91764299ca30803f751df1150cfe8e6` |
-| 5 | `abbrev` | [σ](../../../../AlgebraicTopology/TruncatedPublic.lean/declarations/anonymous-source-edition-4.md) | 64 | `declaration-track:e7130acc7fe1705a193df718c272c267f4827ce8a28fa463f043b5e30b5c76e4` |
-| 6 | `abbrev` | [δ₂](../../../../AlgebraicTopology/TruncatedPublic.lean/declarations/anonymous-source-edition-2.md) | 70 | `declaration-track:b4da0dceaa68f72cc1bc0b3e1eff89aaad2b804a4fd386eb03e5e926db71776f` |
-| 7 | `abbrev` | [σ₂](../../../../AlgebraicTopology/TruncatedPublic.lean/declarations/anonymous.md) | 73 | `declaration-track:5c19b7dc093c4d828d3f412debf312ef4c7e6986d597244ca453b7037df28c81` |
-| 8 | `lemma` | [δ₂_zero_comp_σ₂_zero](../../../../AlgebraicTopology/TruncatedPublic.lean/declarations/zero-comp-zero.md) | 76 | `result-track:f4cc72b0b18c4fe34d2a90f09d67c535a4b768e245f1b71aa63da3290cf2db95` |
-| 9 | `lemma` | [δ₂_zero_comp_σ₂_one](../../../../AlgebraicTopology/TruncatedPublic.lean/declarations/zero-comp-one.md) | 81 | `result-track:58f8fe327b28c9b2cad6df76e1f88a8fd429af693e964b7b5f1a4a6aa9e8ce25` |
-| 10 | `lemma` | [δ₂_one_comp_σ₂_zero](../../../../AlgebraicTopology/TruncatedPublic.lean/declarations/one-comp-zero.md) | 85 | `result-track:9512151f2b02ffa8e8d2210f4138643b9eb80e1bf2474e01f10361fd69624876` |
-| 11 | `lemma` | [δ₂_one_comp_σ₂_one](../../../../AlgebraicTopology/TruncatedPublic.lean/declarations/one-comp-one.md) | 90 | `result-track:1e7b837132b7e17fff6a6350a4225d7658cb6b4f8f6df4f311a1cd096c41a811` |
-| 12 | `lemma` | [δ₂_two_comp_σ₂_one](../../../../AlgebraicTopology/TruncatedPublic.lean/declarations/two-comp-one.md) | 95 | `result-track:87a3e28ea5b7e7c2ea5fd2b7f34c5205f389c833ea58466ec4797457655f56b4` |
-| 13 | `lemma` | [δ₂_two_comp_σ₂_zero](../../../../AlgebraicTopology/TruncatedPublic.lean/declarations/two-comp-zero.md) | 99 | `result-track:7151f81210726a2262c6f2ffe45950c18ec14b96b75e1a89fbf1cbb3a0104a66` |
-| 14 | `lemma` | [δ₂_one_eq_const](../../../../AlgebraicTopology/TruncatedPublic.lean/declarations/one-eq-const.md) | 102 | `result-track:355c82cf0b118e95bf0f9fb7acbf1be9306b443c6f30835ce8283f63dd1ab368` |
-| 15 | `lemma` | [δ₂_zero_eq_const](../../../../AlgebraicTopology/TruncatedPublic.lean/declarations/zero-eq-const.md) | 104 | `result-track:bc2f30d9c0bc9e24a74acff63ba49a28af4f9d222724768c06185f2191a0c617` |
-| 16 | `lemma` | [δ₂_zero_comp_δ₂_two](../../../../AlgebraicTopology/TruncatedPublic.lean/declarations/zero-comp-two.md) | 107 | `result-track:f47126995cb9265a4b323b6a6e27b280b06574262443978c4a747bf33f61aa9c` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TruncatedPublic.lean/declarations/instance.md) | 26 | `declaration-track:3ece0325eee5e59c39d8d057584c0a4557a9bb27c927e2c8b42cc6bbcc20884a` |
+| 2 | `instance` | [initial_inclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TruncatedPublic.lean/declarations/initial-inclusion.md) | 31 | `declaration-track:a717017596155ac1633d48506666ec9a217b02f0d1c5f4c10aefc839e94dfe0e` |
+| 3 | `theorem` | [initial_incl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TruncatedPublic.lean/declarations/initial-incl.md) | 54 | `result-track:ac9e94ef1fcf4a621bfb069a5304f0b11f3dbbddbeed139a9680b674805c4356` |
+| 4 | `abbrev` | [δ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TruncatedPublic.lean/declarations/anonymous-source-edition-3.md) | 60 | `declaration-track:de15acf2587c7a64a983768ffbfdedbcb91764299ca30803f751df1150cfe8e6` |
+| 5 | `abbrev` | [σ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TruncatedPublic.lean/declarations/anonymous-source-edition-4.md) | 64 | `declaration-track:e7130acc7fe1705a193df718c272c267f4827ce8a28fa463f043b5e30b5c76e4` |
+| 6 | `abbrev` | [δ₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TruncatedPublic.lean/declarations/anonymous-source-edition-2.md) | 70 | `declaration-track:b4da0dceaa68f72cc1bc0b3e1eff89aaad2b804a4fd386eb03e5e926db71776f` |
+| 7 | `abbrev` | [σ₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TruncatedPublic.lean/declarations/anonymous.md) | 73 | `declaration-track:5c19b7dc093c4d828d3f412debf312ef4c7e6986d597244ca453b7037df28c81` |
+| 8 | `lemma` | [δ₂_zero_comp_σ₂_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TruncatedPublic.lean/declarations/zero-comp-zero.md) | 76 | `result-track:f4cc72b0b18c4fe34d2a90f09d67c535a4b768e245f1b71aa63da3290cf2db95` |
+| 9 | `lemma` | [δ₂_zero_comp_σ₂_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TruncatedPublic.lean/declarations/zero-comp-one.md) | 81 | `result-track:58f8fe327b28c9b2cad6df76e1f88a8fd429af693e964b7b5f1a4a6aa9e8ce25` |
+| 10 | `lemma` | [δ₂_one_comp_σ₂_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TruncatedPublic.lean/declarations/one-comp-zero.md) | 85 | `result-track:9512151f2b02ffa8e8d2210f4138643b9eb80e1bf2474e01f10361fd69624876` |
+| 11 | `lemma` | [δ₂_one_comp_σ₂_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TruncatedPublic.lean/declarations/one-comp-one.md) | 90 | `result-track:1e7b837132b7e17fff6a6350a4225d7658cb6b4f8f6df4f311a1cd096c41a811` |
+| 12 | `lemma` | [δ₂_two_comp_σ₂_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TruncatedPublic.lean/declarations/two-comp-one.md) | 95 | `result-track:87a3e28ea5b7e7c2ea5fd2b7f34c5205f389c833ea58466ec4797457655f56b4` |
+| 13 | `lemma` | [δ₂_two_comp_σ₂_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TruncatedPublic.lean/declarations/two-comp-zero.md) | 99 | `result-track:7151f81210726a2262c6f2ffe45950c18ec14b96b75e1a89fbf1cbb3a0104a66` |
+| 14 | `lemma` | [δ₂_one_eq_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TruncatedPublic.lean/declarations/one-eq-const.md) | 102 | `result-track:355c82cf0b118e95bf0f9fb7acbf1be9306b443c6f30835ce8283f63dd1ab368` |
+| 15 | `lemma` | [δ₂_zero_eq_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TruncatedPublic.lean/declarations/zero-eq-const.md) | 104 | `result-track:bc2f30d9c0bc9e24a74acff63ba49a28af4f9d222724768c06185f2191a0c617` |
+| 16 | `lemma` | [δ₂_zero_comp_δ₂_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TruncatedPublic.lean/declarations/zero-comp-two.md) | 107 | `result-track:f47126995cb9265a4b323b6a6e27b280b06574262443978c4a747bf33f61aa9c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

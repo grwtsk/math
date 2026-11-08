@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/TopComparisonPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/TopComparisonPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/TopComparisonPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/TopComparisonPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [factorsThrough_of_pullbackCondition](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/TopComparisonPublic.lean/declarations/factorsthrough-of-pullbackcondition.md) | 38 | `result-track:d37e939b9e668662edc7ed4b5ca31c31c402f26ae944d562a23c407f88ec87f6` |
-| 2 | `theorem` | [equalizerCondition_yonedaPresheaf](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/TopComparisonPublic.lean/declarations/equalizercondition-yonedapresheaf.md) | 64 | `result-track:ba2d729011ba9f9b86938f8cc9b80e84f03a24a510ec3e47471440d4d04abc06` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/TopComparisonPublic.lean/declarations/instance.md) | 94 | `declaration-track:e7b11c824e602fe355bb7ad52a23e7d6817ae3f696912cb88b88380c5c301c2d` |
-| 4 | `def` | [TopCat.toSheafCompHausLike](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/TopComparisonPublic.lean/declarations/topcat-tosheafcomphauslike.md) | 109 | `declaration-track:53729ee8029fe19d84a8f5a19497e0afde18a93039c5a5f233258aff4e425871` |
-| 5 | `def` | [topCatToSheafCompHausLike](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/TopComparisonPublic.lean/declarations/topcattosheafcomphauslike.md) | 127 | `declaration-track:9b186e0809b5b03aa6df333a990d91ab777a0cfc666db9e3dca53e526caa6ff5` |
-| 6 | `abbrev` | [TopCat.toCondensedSet](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/TopComparisonPublic.lean/declarations/topcat-tocondensedset.md) | 139 | `declaration-track:b8696b38e7272bc538d754217abb0064ee2ed8ef79de3053be7dd1d499063dcc` |
-| 7 | `abbrev` | [topCatToCondensedSet](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/TopComparisonPublic.lean/declarations/topcattocondensedset.md) | 145 | `declaration-track:41412da7487045cce035205cf57de92cd963e0299a6ea5de8ed03e8e9c1d8e90` |
+| 1 | `theorem` | [factorsThrough_of_pullbackCondition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/TopComparisonPublic.lean/declarations/factorsthrough-of-pullbackcondition.md) | 38 | `result-track:d37e939b9e668662edc7ed4b5ca31c31c402f26ae944d562a23c407f88ec87f6` |
+| 2 | `theorem` | [equalizerCondition_yonedaPresheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/TopComparisonPublic.lean/declarations/equalizercondition-yonedapresheaf.md) | 64 | `result-track:ba2d729011ba9f9b86938f8cc9b80e84f03a24a510ec3e47471440d4d04abc06` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/TopComparisonPublic.lean/declarations/instance.md) | 94 | `declaration-track:e7b11c824e602fe355bb7ad52a23e7d6817ae3f696912cb88b88380c5c301c2d` |
+| 4 | `def` | [TopCat.toSheafCompHausLike](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/TopComparisonPublic.lean/declarations/topcat-tosheafcomphauslike.md) | 109 | `declaration-track:53729ee8029fe19d84a8f5a19497e0afde18a93039c5a5f233258aff4e425871` |
+| 5 | `def` | [topCatToSheafCompHausLike](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/TopComparisonPublic.lean/declarations/topcattosheafcomphauslike.md) | 127 | `declaration-track:9b186e0809b5b03aa6df333a990d91ab777a0cfc666db9e3dca53e526caa6ff5` |
+| 6 | `abbrev` | [TopCat.toCondensedSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/TopComparisonPublic.lean/declarations/topcat-tocondensedset.md) | 139 | `declaration-track:b8696b38e7272bc538d754217abb0064ee2ed8ef79de3053be7dd1d499063dcc` |
+| 7 | `abbrev` | [topCatToCondensedSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/TopComparisonPublic.lean/declarations/topcattocondensedset.md) | 145 | `declaration-track:41412da7487045cce035205cf57de92cd963e0299a6ea5de8ed03e8e9c1d8e90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

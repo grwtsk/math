@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileEdition48.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileEdition48.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileEdition48.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileEdition48.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [buildModuleBlueprint](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileEdition48.lean/declarations/buildmoduleblueprint.md) | 35 | `declaration-track:ee42dc2732458a4c7fb1d404522727ed7a46e32f58911a0808aa7e370c8449c6` |
-| 2 | `def` | [buildLibraryBlueprint](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileEdition48.lean/declarations/buildlibraryblueprint.md) | 59 | `declaration-track:73348114435fd0bcf67b4c8de3442091be0a7826b96b45a53708a561f83e2f89` |
-| 3 | `def` | [runCmd](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileEdition48.lean/declarations/runcmd.md) | 97 | `declaration-track:a318471c462f7b420f0715b5b1aca9cd61802c8d95cf50766116ccdc7b3525e7` |
+| 1 | `def` | [buildModuleBlueprint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileEdition48.lean/declarations/buildmoduleblueprint.md) | 35 | `declaration-track:ee42dc2732458a4c7fb1d404522727ed7a46e32f58911a0808aa7e370c8449c6` |
+| 2 | `def` | [buildLibraryBlueprint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileEdition48.lean/declarations/buildlibraryblueprint.md) | 59 | `declaration-track:73348114435fd0bcf67b4c8de3442091be0a7826b96b45a53708a561f83e2f89` |
+| 3 | `def` | [runCmd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileEdition48.lean/declarations/runcmd.md) | 97 | `declaration-track:a318471c462f7b420f0715b5b1aca9cd61802c8d95cf50766116ccdc7b3525e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

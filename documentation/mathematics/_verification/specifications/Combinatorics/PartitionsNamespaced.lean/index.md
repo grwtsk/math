@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PartitionsNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/PartitionsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ScalePartition](../../../../Combinatorics/PartitionsNamespaced.lean/declarations/scalepartition.md) | 22 | `declaration-track:0525c92051284fd8be5e701f81b7ef97d95e882764ff9ec94ab18b5dea2a7acf` |
-| 2 | `def` | [partitionResidue](../../../../Combinatorics/PartitionsNamespaced.lean/declarations/partitionresidue.md) | 30 | `declaration-track:8a27876de7beaaa1865b605eee5aaf79a2aba2d44af9b402a862d899c7f73e6f` |
-| 3 | `def` | [hasExactPaperPartition](../../../../Combinatorics/PartitionsNamespaced.lean/declarations/hasexactpaperpartition.md) | 33 | `declaration-track:35a96c47aab9d84ea7945fb7869d6539b0745fbf43544fffd41eedf8a92e0812` |
-| 4 | `theorem` | [exact_partition_false_blocks_paper_match](../../../../Combinatorics/PartitionsNamespaced.lean/declarations/exact-partition-false-blocks-paper-match.md) | 36 | `result-track:4f9788d005ba9dba37021c82500d0214952414c1816c14dd9581ad687edd2455` |
+| 1 | `structure` | [ScalePartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionsNamespaced.lean/declarations/scalepartition.md) | 22 | `declaration-track:0525c92051284fd8be5e701f81b7ef97d95e882764ff9ec94ab18b5dea2a7acf` |
+| 2 | `def` | [partitionResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionsNamespaced.lean/declarations/partitionresidue.md) | 30 | `declaration-track:8a27876de7beaaa1865b605eee5aaf79a2aba2d44af9b402a862d899c7f73e6f` |
+| 3 | `def` | [hasExactPaperPartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionsNamespaced.lean/declarations/hasexactpaperpartition.md) | 33 | `declaration-track:35a96c47aab9d84ea7945fb7869d6539b0745fbf43544fffd41eedf8a92e0812` |
+| 4 | `theorem` | [exact_partition_false_blocks_paper_match](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionsNamespaced.lean/declarations/exact-partition-false-blocks-paper-match.md) | 36 | `result-track:4f9788d005ba9dba37021c82500d0214952414c1816c14dd9581ad687edd2455` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

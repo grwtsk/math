@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.TwinPrimePowerBoundary`](../../../../../NumberTheory/MultiplicativeNumberTheory/TwinPrimePowerBoundary.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.TwinPrimePowerBoundary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/TwinPrimePowerBoundary.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.NormNum` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [incompatible_three_six](../../../../../NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/incompatible-three-six.md) | 32 | `result-track:fbd9bfc447d90b6ce01c4c7af46855247c03a41b16a0336ce1b2d2f55c944381` |
-| 2 | `theorem` | [compatible_four_six](../../../../../NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/compatible-four-six.md) | 38 | `result-track:e26587472c42361a3aa35b93a62cadc496b41408f958263fa8e75391b06bd0f7` |
-| 3 | `theorem` | [residue_count_four_six_thirty](../../../../../NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/residue-count-four-six-thirty.md) | 46 | `result-track:e964c975c6e08326ac64277cd629baa90b99494c8d5584000c5a9a7f02225901` |
-| 4 | `theorem` | [incompatible_count_three_six_hundred](../../../../../NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/incompatible-count-three-six-hundred.md) | 53 | `result-track:3cea958deddf98926c16f71045fb4a360e5ddb1dac946af24f39e892d70e3981` |
-| 5 | `theorem` | [shift_six_not_shift_two](../../../../../NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/shift-six-not-shift-two.md) | 58 | `result-track:8302be5e1e3412e8ed4226b1364ff05fdc5c23146cb121ab11257311d82c609b` |
-| 6 | `theorem` | [nine_has_mangoldt_mass_but_is_not_prime](../../../../../NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/nine-has-mangoldt-mass-but-is-not-prime.md) | 65 | `result-track:47c0feccb276d33e211f73d1ef1b3fad59cf4b210ce232d0288cfd3dede2e034` |
-| 7 | `theorem` | [seven_nine_mangoldt_not_twin](../../../../../NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/seven-nine-mangoldt-not-twin.md) | 76 | `result-track:ad122ad1dfb179c83f91218eb961c302c295db1875ba953c9608c9da5c87eca0` |
-| 8 | `theorem` | [odd_survivor_can_be_composite](../../../../../NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/odd-survivor-can-be-composite.md) | 88 | `result-track:c5bc37b8f3c929cc23526696d5cc526a66ba19334f4d8095d8f14f239a6f88cd` |
-| 9 | `theorem` | [one_pair_cannot_fake_infinitude](../../../../../NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/one-pair-cannot-fake-infinitude.md) | 94 | `result-track:eef4718a4ea9e4bcee462c21f8185ccff732b8be8f0836942b47e45512214c1e` |
-| 10 | `theorem` | [exact_sources_not_twin_witness](../../../../../NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/exact-sources-not-twin-witness.md) | 103 | `result-track:7d13676daac36aa48c5f3e8fea3f64b80e38425aa415e6f0abb2dc694c9ec720` |
-| 11 | `theorem` | [strict_margin_equality_rejected](../../../../../NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/strict-margin-equality-rejected.md) | 110 | `result-track:ce3c21927b4979a1422fc5cf5ac56fd43f7e69a054b818712d13785678529d29` |
+| 1 | `theorem` | [incompatible_three_six](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/incompatible-three-six.md) | 32 | `result-track:fbd9bfc447d90b6ce01c4c7af46855247c03a41b16a0336ce1b2d2f55c944381` |
+| 2 | `theorem` | [compatible_four_six](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/compatible-four-six.md) | 38 | `result-track:e26587472c42361a3aa35b93a62cadc496b41408f958263fa8e75391b06bd0f7` |
+| 3 | `theorem` | [residue_count_four_six_thirty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/residue-count-four-six-thirty.md) | 46 | `result-track:e964c975c6e08326ac64277cd629baa90b99494c8d5584000c5a9a7f02225901` |
+| 4 | `theorem` | [incompatible_count_three_six_hundred](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/incompatible-count-three-six-hundred.md) | 53 | `result-track:3cea958deddf98926c16f71045fb4a360e5ddb1dac946af24f39e892d70e3981` |
+| 5 | `theorem` | [shift_six_not_shift_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/shift-six-not-shift-two.md) | 58 | `result-track:8302be5e1e3412e8ed4226b1364ff05fdc5c23146cb121ab11257311d82c609b` |
+| 6 | `theorem` | [nine_has_mangoldt_mass_but_is_not_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/nine-has-mangoldt-mass-but-is-not-prime.md) | 65 | `result-track:47c0feccb276d33e211f73d1ef1b3fad59cf4b210ce232d0288cfd3dede2e034` |
+| 7 | `theorem` | [seven_nine_mangoldt_not_twin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/seven-nine-mangoldt-not-twin.md) | 76 | `result-track:ad122ad1dfb179c83f91218eb961c302c295db1875ba953c9608c9da5c87eca0` |
+| 8 | `theorem` | [odd_survivor_can_be_composite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/odd-survivor-can-be-composite.md) | 88 | `result-track:c5bc37b8f3c929cc23526696d5cc526a66ba19334f4d8095d8f14f239a6f88cd` |
+| 9 | `theorem` | [one_pair_cannot_fake_infinitude](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/one-pair-cannot-fake-infinitude.md) | 94 | `result-track:eef4718a4ea9e4bcee462c21f8185ccff732b8be8f0836942b47e45512214c1e` |
+| 10 | `theorem` | [exact_sources_not_twin_witness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/exact-sources-not-twin-witness.md) | 103 | `result-track:7d13676daac36aa48c5f3e8fea3f64b80e38425aa415e6f0abb2dc694c9ec720` |
+| 11 | `theorem` | [strict_margin_equality_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/TwinShiftTwoControls.lean/declarations/strict-margin-equality-rejected.md) | 110 | `result-track:ce3c21927b4979a1422fc5cf5ac56fd43f7e69a054b818712d13785678529d29` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

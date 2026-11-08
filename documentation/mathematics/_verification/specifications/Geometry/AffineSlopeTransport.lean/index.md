@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/AffineSlopeTransport.lean/index.md) · [Full source](../../../../Geometry/AffineSlopeTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSlopeTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSlopeTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.EllipticCurve.TangentPolynomialSplitting`](../../../../CommutativeAlgebra/TangentPolynomialSplitting.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.EllipticCurve.TangentPolynomialSplitting`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TangentPolynomialSplitting.lean/index.md) — import line 9; pinned internal source present.
 - `Mathlib.Data.ZMod.Basic` — import line 10; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.FieldSimp` — import line 11; external provider; requires a separately pinned dependency.
 
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [slopePolynomial](../../../../Geometry/AffineSlopeTransport.lean/declarations/slopepolynomial.md) | 25 | `declaration-track:ac62aa082334aa2e1022feb54f960ff54f35e0650c15a07912eb89c7ec06165e` |
-| 2 | `theorem` | [slope_degree](../../../../Geometry/AffineSlopeTransport.lean/declarations/slope-degree.md) | 27 | `result-track:cac0cca0ccb4370543f84264755b3899747a3b0a1c84abed309d511164b9ffa7` |
-| 3 | `theorem` | [splits_affine_iff](../../../../Geometry/AffineSlopeTransport.lean/declarations/splits-affine-iff.md) | 32 | `result-track:b2374ba6d742b9b6c3a3354203325964ee441cc3a88e321e536bbc8e9f9ac301` |
-| 4 | `theorem` | [splits_of_cleared_identity](../../../../Geometry/AffineSlopeTransport.lean/declarations/splits-of-cleared-identity.md) | 37 | `result-track:186f73d33f4578e5d8d818a8ce12abc1e0e4b398fc8c6e55226ec772e570becc` |
-| 5 | `theorem` | [eval_cleared_identity](../../../../Geometry/AffineSlopeTransport.lean/declarations/eval-cleared-identity.md) | 45 | `result-track:cadeac7ce3820646b140d983365a5ba6775955a22ec794bae344266cf036228a` |
-| 6 | `theorem` | [root_transport_iff](../../../../Geometry/AffineSlopeTransport.lean/declarations/root-transport-iff.md) | 51 | `result-track:8072bee4602dc9af5a3c3dad42bc14df106759c5e1dbd363c1f97d962f82b845` |
-| 7 | `def` | [rootEquiv](../../../../Geometry/AffineSlopeTransport.lean/declarations/rootequiv.md) | 58 | `declaration-track:77ba12dab2e49b669849e65ce30c4555fb764d2b9e498a7419190fc5dd090ddc` |
-| 8 | `theorem` | [slope_distinct_iff](../../../../Geometry/AffineSlopeTransport.lean/declarations/slope-distinct-iff.md) | 77 | `result-track:9a77ec35a69ac6e893e851df0997f8ead3d375ee86974405ecec212a8118a7b4` |
-| 9 | `def` | [halfSlopeChange](../../../../Geometry/AffineSlopeTransport.lean/declarations/halfslopechange.md) | 90 | `declaration-track:5aa94b39ab78e25a9f1f5a84554a4f30819ac6d533dbbb60e86f7f844010efd0` |
-| 10 | `theorem` | [half_tangent_identity](../../../../Geometry/AffineSlopeTransport.lean/declarations/half-tangent-identity.md) | 98 | `result-track:45ac4db02bcf245f0dfd4ced7eebe9b7a578be8e4a717485c2ac7c01495b6ae3` |
-| 11 | `theorem` | [binary_tangent](../../../../Geometry/AffineSlopeTransport.lean/declarations/binary-tangent.md) | 130 | `result-track:a6265ed533f778bdad273bc48607dc208e8c7ddeaad7144c05fd7924d0776a96` |
-| 12 | `theorem` | [binary_quadratic_splits_iff](../../../../Geometry/AffineSlopeTransport.lean/declarations/binary-quadratic-splits-iff.md) | 138 | `result-track:22e360f214b7625ba9f087a558188011d5bd1058262f0269f8f1129a61b9cfde` |
-| 13 | `theorem` | [binary_split_roots](../../../../Geometry/AffineSlopeTransport.lean/declarations/binary-split-roots.md) | 157 | `result-track:9c14d7871567f9351804a7829b61fb0299653bdc5ee5f047bcb60bad10360c40` |
+| 1 | `def` | [slopePolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSlopeTransport.lean/declarations/slopepolynomial.md) | 25 | `declaration-track:ac62aa082334aa2e1022feb54f960ff54f35e0650c15a07912eb89c7ec06165e` |
+| 2 | `theorem` | [slope_degree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSlopeTransport.lean/declarations/slope-degree.md) | 27 | `result-track:cac0cca0ccb4370543f84264755b3899747a3b0a1c84abed309d511164b9ffa7` |
+| 3 | `theorem` | [splits_affine_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSlopeTransport.lean/declarations/splits-affine-iff.md) | 32 | `result-track:b2374ba6d742b9b6c3a3354203325964ee441cc3a88e321e536bbc8e9f9ac301` |
+| 4 | `theorem` | [splits_of_cleared_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSlopeTransport.lean/declarations/splits-of-cleared-identity.md) | 37 | `result-track:186f73d33f4578e5d8d818a8ce12abc1e0e4b398fc8c6e55226ec772e570becc` |
+| 5 | `theorem` | [eval_cleared_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSlopeTransport.lean/declarations/eval-cleared-identity.md) | 45 | `result-track:cadeac7ce3820646b140d983365a5ba6775955a22ec794bae344266cf036228a` |
+| 6 | `theorem` | [root_transport_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSlopeTransport.lean/declarations/root-transport-iff.md) | 51 | `result-track:8072bee4602dc9af5a3c3dad42bc14df106759c5e1dbd363c1f97d962f82b845` |
+| 7 | `def` | [rootEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSlopeTransport.lean/declarations/rootequiv.md) | 58 | `declaration-track:77ba12dab2e49b669849e65ce30c4555fb764d2b9e498a7419190fc5dd090ddc` |
+| 8 | `theorem` | [slope_distinct_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSlopeTransport.lean/declarations/slope-distinct-iff.md) | 77 | `result-track:9a77ec35a69ac6e893e851df0997f8ead3d375ee86974405ecec212a8118a7b4` |
+| 9 | `def` | [halfSlopeChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSlopeTransport.lean/declarations/halfslopechange.md) | 90 | `declaration-track:5aa94b39ab78e25a9f1f5a84554a4f30819ac6d533dbbb60e86f7f844010efd0` |
+| 10 | `theorem` | [half_tangent_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSlopeTransport.lean/declarations/half-tangent-identity.md) | 98 | `result-track:45ac4db02bcf245f0dfd4ced7eebe9b7a578be8e4a717485c2ac7c01495b6ae3` |
+| 11 | `theorem` | [binary_tangent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSlopeTransport.lean/declarations/binary-tangent.md) | 130 | `result-track:a6265ed533f778bdad273bc48607dc208e8c7ddeaad7144c05fd7924d0776a96` |
+| 12 | `theorem` | [binary_quadratic_splits_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSlopeTransport.lean/declarations/binary-quadratic-splits-iff.md) | 138 | `result-track:22e360f214b7625ba9f087a558188011d5bd1058262f0269f8f1129a61b9cfde` |
+| 13 | `theorem` | [binary_split_roots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSlopeTransport.lean/declarations/binary-split-roots.md) | 157 | `result-track:9c14d7871567f9351804a7829b61fb0299653bdc5ee5f047bcb60bad10360c40` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

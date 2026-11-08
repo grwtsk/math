@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicator.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [continuous_mulIndicator](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicator.lean/declarations/continuous-mulindicator-source-edition-2.md) | 20 | `result-track:b81914e132e728218b8209f5b2cd634f49ff4074257808e8c641aa92b86b481c` |
-| 2 | `lemma` | [Continuous.mulIndicator](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicator.lean/declarations/continuous-mulindicator.md) | 25 | `result-track:153eb03d946e9aaa1c00f19892fd7b1422e6e86abf057a2f6c527ee7f859e567` |
-| 3 | `theorem` | [ContinuousOn.continuousAt_mulIndicator](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicator.lean/declarations/continuouson-continuousat-mulindicator.md) | 30 | `result-track:31d3fc028feb95bcea4016c4afad9cf124f463b14293a742ece856d75c4f4230` |
-| 4 | `lemma` | [IsClopen.continuous_mulIndicator](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicator.lean/declarations/isclopen-continuous-mulindicator.md) | 42 | `result-track:3c5a7e10c88e3c36bd59e73833537d59f17ad5f4051932a96c58f4571a4d828d` |
+| 1 | `lemma` | [continuous_mulIndicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicator.lean/declarations/continuous-mulindicator-source-edition-2.md) | 20 | `result-track:b81914e132e728218b8209f5b2cd634f49ff4074257808e8c641aa92b86b481c` |
+| 2 | `lemma` | [Continuous.mulIndicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicator.lean/declarations/continuous-mulindicator.md) | 25 | `result-track:153eb03d946e9aaa1c00f19892fd7b1422e6e86abf057a2f6c527ee7f859e567` |
+| 3 | `theorem` | [ContinuousOn.continuousAt_mulIndicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicator.lean/declarations/continuouson-continuousat-mulindicator.md) | 30 | `result-track:31d3fc028feb95bcea4016c4afad9cf124f463b14293a742ece856d75c4f4230` |
+| 4 | `lemma` | [IsClopen.continuous_mulIndicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicator.lean/declarations/isclopen-continuous-mulindicator.md) | 42 | `result-track:3c5a7e10c88e3c36bd59e73833537d59f17ad5f4051932a96c58f4571a4d828d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

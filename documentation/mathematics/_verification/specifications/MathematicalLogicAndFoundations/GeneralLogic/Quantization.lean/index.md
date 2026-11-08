@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Quantization.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Quantization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Quantization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Quantization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TensorQuantizer](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Quantization.lean/declarations/tensorquantizer.md) | 22 | `declaration-track:571856bcd90b76c806e8c66401c04845933f1ac7cf635b12d60048bee0273024` |
-| 2 | `def` | [quantizeChannel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Quantization.lean/declarations/quantizechannel.md) | 28 | `declaration-track:7d75ba92a0378611678620dbc04440c288ba479f717207bd6bd8d9231d36ff56` |
-| 3 | `def` | [unitThresholdQuantizer](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Quantization.lean/declarations/unitthresholdquantizer.md) | 36 | `declaration-track:b816fd8e045c68a654bcb3d55e071ddfba356773630fbf822b69d16526a883ef` |
-| 4 | `theorem` | [quantization_not_declared_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Quantization.lean/declarations/quantization-not-declared-injective.md) | 46 | `result-track:5e8a23b54d84de9da531c37cf414be62752e3f1522422903de2e1a75020e1453` |
+| 1 | `structure` | [TensorQuantizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Quantization.lean/declarations/tensorquantizer.md) | 22 | `declaration-track:571856bcd90b76c806e8c66401c04845933f1ac7cf635b12d60048bee0273024` |
+| 2 | `def` | [quantizeChannel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Quantization.lean/declarations/quantizechannel.md) | 28 | `declaration-track:7d75ba92a0378611678620dbc04440c288ba479f717207bd6bd8d9231d36ff56` |
+| 3 | `def` | [unitThresholdQuantizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Quantization.lean/declarations/unitthresholdquantizer.md) | 36 | `declaration-track:b816fd8e045c68a654bcb3d55e071ddfba356773630fbf822b69d16526a883ef` |
+| 4 | `theorem` | [quantization_not_declared_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Quantization.lean/declarations/quantization-not-declared-injective.md) | 46 | `result-track:5e8a23b54d84de9da531c37cf414be62752e3f1522422903de2e1a75020e1453` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

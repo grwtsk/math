@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExplicitSchurMatrixEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExplicitSchurMatrixEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExplicitSchurMatrixEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExplicitSchurMatrixEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [provenanceMatrix_isSymm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExplicitSchurMatrixEdition2.lean/declarations/provenancematrix-issymm.md) | 32 | `result-track:eafd99d962f0215267df7fa4cf20b54dd6c5eff8a45788d58833bac6e8171593` |
-| 2 | `theorem` | [inverseProvenanceMatrix_isSymm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExplicitSchurMatrixEdition2.lean/declarations/inverseprovenancematrix-issymm.md) | 46 | `result-track:babcaa305c6a6c8ca4d400f4c4e433b43eaf1577c2fc0e03e1819a82c17996a4` |
-| 3 | `def` | [schurMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExplicitSchurMatrixEdition2.lean/declarations/schurmatrix.md) | 76 | `declaration-track:1c671bf2d09a8a9f92f62f7971954c2308dede32fc04495f36aaa7b30c1fd5b4` |
-| 4 | `theorem` | [schurCorrection_pairing](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExplicitSchurMatrixEdition2.lean/declarations/schurcorrection-pairing.md) | 82 | `result-track:9f14ebd1a3ca65f23e23b6c19443bd126cf7cef17acb53ac8ce00becd669f412` |
-| 5 | `theorem` | [schurForm_eq_schurMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExplicitSchurMatrixEdition2.lean/declarations/schurform-eq-schurmatrix.md) | 104 | `result-track:0f94efa386780f33714683aaf387d7ec5a54bdcccb1369aa950136759972c6cf` |
-| 6 | `theorem` | [schurMatrix_nonnegative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExplicitSchurMatrixEdition2.lean/declarations/schurmatrix-nonnegative.md) | 113 | `result-track:c45085db674078baee2960c7f1ba1d9ab7b20a548d188a0e1f265e8361976cf9` |
-| 7 | `theorem` | [autonomous_energy_eq_explained_add_schurMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExplicitSchurMatrixEdition2.lean/declarations/autonomous-energy-eq-explained-add-schurmatrix.md) | 121 | `result-track:aa04f7d0da02fe7f9e3d11bd16fa73ccdcd7f658c7dc4dca707917ae40778626` |
+| 1 | `theorem` | [provenanceMatrix_isSymm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExplicitSchurMatrixEdition2.lean/declarations/provenancematrix-issymm.md) | 32 | `result-track:eafd99d962f0215267df7fa4cf20b54dd6c5eff8a45788d58833bac6e8171593` |
+| 2 | `theorem` | [inverseProvenanceMatrix_isSymm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExplicitSchurMatrixEdition2.lean/declarations/inverseprovenancematrix-issymm.md) | 46 | `result-track:babcaa305c6a6c8ca4d400f4c4e433b43eaf1577c2fc0e03e1819a82c17996a4` |
+| 3 | `def` | [schurMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExplicitSchurMatrixEdition2.lean/declarations/schurmatrix.md) | 76 | `declaration-track:1c671bf2d09a8a9f92f62f7971954c2308dede32fc04495f36aaa7b30c1fd5b4` |
+| 4 | `theorem` | [schurCorrection_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExplicitSchurMatrixEdition2.lean/declarations/schurcorrection-pairing.md) | 82 | `result-track:9f14ebd1a3ca65f23e23b6c19443bd126cf7cef17acb53ac8ce00becd669f412` |
+| 5 | `theorem` | [schurForm_eq_schurMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExplicitSchurMatrixEdition2.lean/declarations/schurform-eq-schurmatrix.md) | 104 | `result-track:0f94efa386780f33714683aaf387d7ec5a54bdcccb1369aa950136759972c6cf` |
+| 6 | `theorem` | [schurMatrix_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExplicitSchurMatrixEdition2.lean/declarations/schurmatrix-nonnegative.md) | 113 | `result-track:c45085db674078baee2960c7f1ba1d9ab7b20a548d188a0e1f265e8361976cf9` |
+| 7 | `theorem` | [autonomous_energy_eq_explained_add_schurMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExplicitSchurMatrixEdition2.lean/declarations/autonomous-energy-eq-explained-add-schurmatrix.md) | 121 | `result-track:aa04f7d0da02fe7f9e3d11bd16fa73ccdcd7f658c7dc4dca707917ae40778626` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

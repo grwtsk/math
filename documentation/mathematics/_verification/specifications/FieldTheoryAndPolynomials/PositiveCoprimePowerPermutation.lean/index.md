@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/PositiveCoprimePowerPermutation.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/PositiveCoprimePowerPermutation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PositiveCoprimePowerPermutation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PositiveCoprimePowerPermutation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [powerMap_bijective](../../../../FieldTheoryAndPolynomials/PositiveCoprimePowerPermutation.lean/declarations/powermap-bijective.md) | 68 | `result-track:10e58de9d79541b2358c63f6ac226750c9b5199716d7eaf4a8a6915545ccfeb2` |
-| 2 | `def` | [powerPermutation](../../../../FieldTheoryAndPolynomials/PositiveCoprimePowerPermutation.lean/declarations/powerpermutation.md) | 113 | `declaration-track:62263bf15f3cd8d48a6bfb6a78431aeabcb9aa42e13d1a93d6d13efc44942ccf` |
-| 3 | `theorem` | [powerPermutation_apply](../../../../FieldTheoryAndPolynomials/PositiveCoprimePowerPermutation.lean/declarations/powerpermutation-apply.md) | 122 | `result-track:b30a5334d28d76f6ffca9484707046353c472d6ce59de51d16bdcb1166502d46` |
+| 1 | `theorem` | [powerMap_bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PositiveCoprimePowerPermutation.lean/declarations/powermap-bijective.md) | 68 | `result-track:10e58de9d79541b2358c63f6ac226750c9b5199716d7eaf4a8a6915545ccfeb2` |
+| 2 | `def` | [powerPermutation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PositiveCoprimePowerPermutation.lean/declarations/powerpermutation.md) | 113 | `declaration-track:62263bf15f3cd8d48a6bfb6a78431aeabcb9aa42e13d1a93d6d13efc44942ccf` |
+| 3 | `theorem` | [powerPermutation_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PositiveCoprimePowerPermutation.lean/declarations/powerpermutation-apply.md) | 122 | `result-track:b30a5334d28d76f6ffca9484707046353c472d6ce59de51d16bdcb1166502d46` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

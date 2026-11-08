@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.SymmetricPair`](../../../../FunctionsOfAComplexVariable/SymmetricPair.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.SymmetricPair`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPair.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [energy_nonneg](../../../../FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/energy-nonneg.md) | 23 | `result-track:11fe8f75e03f02dbd647685d0e997476f10889c90cbd0d8a55233b1678d8afa3` |
-| 2 | `theorem` | [energy_pos_iff](../../../../FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/energy-pos-iff.md) | 28 | `result-track:a3d5ae87919973e1a8938fefe3f9550bd1d246d602f1f00d453d331f5367dba0` |
-| 3 | `def` | [budget](../../../../FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/budget.md) | 47 | `declaration-track:d4650614b5c90053603861a76478c3ff17cac8d07eb41f173cba47f6dbe94c4a` |
-| 4 | `lemma` | [budget_nonneg](../../../../FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/budget-nonneg.md) | 50 | `result-track:dba71be09ce075d75efe2e5b6e41f4900b55fbf20b20ebbcc69ed0bb8740a371` |
-| 5 | `lemma` | [norm_sq_le_two](../../../../FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/norm-sq-le-two.md) | 54 | `result-track:925d38ec8d8acaad776b603587a2a6bca12ac454d9cb8d8e16ce0403862aa793` |
-| 6 | `theorem` | [source_energy_le](../../../../FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/source-energy-le.md) | 65 | `result-track:d8e9edace6147ac5909015f47dc3dace17bfdc842d868dbf7a728fda42c9478c` |
-| 7 | `theorem` | [accepts_of_source_gap](../../../../FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/accepts-of-source-gap.md) | 75 | `result-track:4c2b97bec1a811d9891873ab909e2492873779100cdbb476c607be7ba45afad1` |
-| 8 | `theorem` | [rejects_zero_pair](../../../../FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/rejects-zero-pair.md) | 80 | `result-track:32515027b457363c97b27c33a7c7c546c3e087c3213e24ef7b9cd2c93b900f50` |
-| 9 | `def` | [trans](../../../../FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/trans.md) | 87 | `declaration-track:af8f4b9592df6f148660da2a4df856453e707c79deec80638d846ecd07a32b09` |
-| 10 | `theorem` | [trans_budget](../../../../FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/trans-budget.md) | 100 | `result-track:168fa1509c18e4d107371652f7d43cbbfc156ce1d8645c2b70e17265208dd911` |
-| 11 | `theorem` | [eventually_accepts_iff](../../../../FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/eventually-accepts-iff.md) | 109 | `result-track:cc8f3310ab0139b2cf5d82f606fa1b158e6887326c00a4f88eb0b3f79be1edc6` |
-| 12 | `theorem` | [exists_accepts_iff](../../../../FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/exists-accepts-iff.md) | 127 | `result-track:e31386371eabd4843a5798ff450e8731ed8074ec39059227e16bd832be68b777` |
+| 1 | `lemma` | [energy_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/energy-nonneg.md) | 23 | `result-track:11fe8f75e03f02dbd647685d0e997476f10889c90cbd0d8a55233b1678d8afa3` |
+| 2 | `theorem` | [energy_pos_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/energy-pos-iff.md) | 28 | `result-track:a3d5ae87919973e1a8938fefe3f9550bd1d246d602f1f00d453d331f5367dba0` |
+| 3 | `def` | [budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/budget.md) | 47 | `declaration-track:d4650614b5c90053603861a76478c3ff17cac8d07eb41f173cba47f6dbe94c4a` |
+| 4 | `lemma` | [budget_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/budget-nonneg.md) | 50 | `result-track:dba71be09ce075d75efe2e5b6e41f4900b55fbf20b20ebbcc69ed0bb8740a371` |
+| 5 | `lemma` | [norm_sq_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/norm-sq-le-two.md) | 54 | `result-track:925d38ec8d8acaad776b603587a2a6bca12ac454d9cb8d8e16ce0403862aa793` |
+| 6 | `theorem` | [source_energy_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/source-energy-le.md) | 65 | `result-track:d8e9edace6147ac5909015f47dc3dace17bfdc842d868dbf7a728fda42c9478c` |
+| 7 | `theorem` | [accepts_of_source_gap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/accepts-of-source-gap.md) | 75 | `result-track:4c2b97bec1a811d9891873ab909e2492873779100cdbb476c607be7ba45afad1` |
+| 8 | `theorem` | [rejects_zero_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/rejects-zero-pair.md) | 80 | `result-track:32515027b457363c97b27c33a7c7c546c3e087c3213e24ef7b9cd2c93b900f50` |
+| 9 | `def` | [trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/trans.md) | 87 | `declaration-track:af8f4b9592df6f148660da2a4df856453e707c79deec80638d846ecd07a32b09` |
+| 10 | `theorem` | [trans_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/trans-budget.md) | 100 | `result-track:168fa1509c18e4d107371652f7d43cbbfc156ce1d8645c2b70e17265208dd911` |
+| 11 | `theorem` | [eventually_accepts_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/eventually-accepts-iff.md) | 109 | `result-track:cc8f3310ab0139b2cf5d82f606fa1b158e6887326c00a4f88eb0b3f79be1edc6` |
+| 12 | `theorem` | [exists_accepts_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairApproximation.lean/declarations/exists-accepts-iff.md) | 127 | `result-track:e31386371eabd4843a5798ff450e8731ed8074ec39059227e16bd832be68b777` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

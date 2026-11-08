@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DerangementsExponential.lean/index.md) · [Full source](../../../../Combinatorics/DerangementsExponential.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsExponential.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsExponential.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [numDerangements_tendsto_inv_e](../../../../Combinatorics/DerangementsExponential.lean/declarations/numderangements-tendsto-inv-e.md) | 23 | `result-track:f739f61eb606785ac70221374823c94fb82af6c44458a216f4b70d0e223f9c8e` |
+| 1 | `theorem` | [numDerangements_tendsto_inv_e](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsExponential.lean/declarations/numderangements-tendsto-inv-e.md) | 23 | `result-track:f739f61eb606785ac70221374823c94fb82af6c44458a216f4b70d0e223f9c8e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPSubring.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPSubring.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPSubring.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPSubring.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [subsemiring](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPSubring.lean/declarations/subsemiring.md) | 17 | `declaration-track:968ee5a72811e5738a89024cbb85e325564b467ad0f7adec603c3b5c770e91c0` |
-| 2 | `instance` | [subring](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPSubring.lean/declarations/subring-source-edition-2.md) | 25 | `declaration-track:e284af4fc456aaddb2d1e44961dcc5b6983c1fb69189097d5778f17254f6b719` |
-| 3 | `instance` | [subring'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPSubring.lean/declarations/subring.md) | 32 | `declaration-track:2c72b21e16e379a1747be6f54c6feb03739d86c7ef9777b00175b97d2a12aef2` |
-| 4 | `theorem` | [charP_center_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPSubring.lean/declarations/charp-center-iff.md) | 37 | `result-track:97489b2ee2589a1c1eb6d015bf51143832033fc26fc0c6e28a013eae32f67c4e` |
-| 5 | `theorem` | [expChar_center_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPSubring.lean/declarations/expchar-center-iff.md) | 45 | `result-track:b1e3206dc1d54e1d1c5b66411c5e5171ec32eeb6bb9798689758738219a939f0` |
+| 1 | `instance` | [subsemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPSubring.lean/declarations/subsemiring.md) | 17 | `declaration-track:968ee5a72811e5738a89024cbb85e325564b467ad0f7adec603c3b5c770e91c0` |
+| 2 | `instance` | [subring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPSubring.lean/declarations/subring-source-edition-2.md) | 25 | `declaration-track:e284af4fc456aaddb2d1e44961dcc5b6983c1fb69189097d5778f17254f6b719` |
+| 3 | `instance` | [subring'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPSubring.lean/declarations/subring.md) | 32 | `declaration-track:2c72b21e16e379a1747be6f54c6feb03739d86c7ef9777b00175b97d2a12aef2` |
+| 4 | `theorem` | [charP_center_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPSubring.lean/declarations/charp-center-iff.md) | 37 | `result-track:97489b2ee2589a1c1eb6d015bf51143832033fc26fc0c6e28a013eae32f67c4e` |
+| 5 | `theorem` | [expChar_center_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPSubring.lean/declarations/expchar-center-iff.md) | 45 | `result-track:b1e3206dc1d54e1d1c5b66411c5e5171ec32eeb6bb9798689758738219a939f0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

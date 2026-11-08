@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupInstancesAligned.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupInstancesAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupInstancesAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupInstancesAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [OrderDual.orderedCommGroup](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupInstancesAligned.lean/declarations/orderdual-orderedcommgroup.md) | 20 | `declaration-track:1b7137e756d8cc82aeb84f8d0e6fe0fc649078c5a751542e5a9eef19684343de` |
-| 2 | `instance` | [OrderDual.linearOrderedCommGroup](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupInstancesAligned.lean/declarations/orderdual-linearorderedcommgroup.md) | 26 | `declaration-track:b9dc6c214a4e4b1bf352c09bc3673e40b23d4212fea4fbf200ffd121723750bb` |
+| 1 | `instance` | [OrderDual.orderedCommGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupInstancesAligned.lean/declarations/orderdual-orderedcommgroup.md) | 20 | `declaration-track:1b7137e756d8cc82aeb84f8d0e6fe0fc649078c5a751542e5a9eef19684343de` |
+| 2 | `instance` | [OrderDual.linearOrderedCommGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupInstancesAligned.lean/declarations/orderdual-linearorderedcommgroup.md) | 26 | `declaration-track:b9dc6c214a4e4b1bf352c09bc3673e40b23d4212fea4fbf200ffd121723750bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

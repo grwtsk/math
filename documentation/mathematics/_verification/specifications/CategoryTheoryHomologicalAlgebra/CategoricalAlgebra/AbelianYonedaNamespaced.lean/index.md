@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianYonedaNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianYonedaNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianYonedaNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianYonedaNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [preadditiveCoyonedaObj_map_surjective](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianYonedaNamespaced.lean/declarations/preadditivecoyonedaobj-map-surjective.md) | 40 | `result-track:00149c9b14700d775a3fbfcc1c43eba466723e5b51a8f9743c3b871f09b73f1c` |
-| 2 | `theorem` | [full_comp_preadditiveCoyonedaObj](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianYonedaNamespaced.lean/declarations/full-comp-preadditivecoyonedaobj.md) | 62 | `result-track:dca49e65e1e96654278485ccd6789020bcb1d61322317718bbe33dfe796e4a59` |
+| 1 | `theorem` | [preadditiveCoyonedaObj_map_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianYonedaNamespaced.lean/declarations/preadditivecoyonedaobj-map-surjective.md) | 40 | `result-track:00149c9b14700d775a3fbfcc1c43eba466723e5b51a8f9743c3b871f09b73f1c` |
+| 2 | `theorem` | [full_comp_preadditiveCoyonedaObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianYonedaNamespaced.lean/declarations/full-comp-preadditivecoyonedaobj.md) | 62 | `result-track:dca49e65e1e96654278485ccd6789020bcb1d61322317718bbe33dfe796e4a59` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

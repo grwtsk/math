@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicGetGE.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicGetGE.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicGetGE.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicGetGE.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [getGE](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicGetGE.lean/declarations/getge.md) | 39 | `declaration-track:5af6cd8d6bb5a3da99d02046d5dd69c77860465456865ba8fdb9e540579a9225` |
-| 2 | `def` | [getGT](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicGetGE.lean/declarations/getgt.md) | 47 | `declaration-track:dbd80e0147803667d4f4668d1803de5e986f2a2ea540f4d10dca4399c1a88705` |
-| 3 | `def` | [getLE](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicGetGE.lean/declarations/getle.md) | 55 | `declaration-track:1b3284175238a90aac89a71e1ea9570a26c3cc5069bb9886a0b96fc38183e567` |
-| 4 | `def` | [getLT](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicGetGE.lean/declarations/getlt.md) | 63 | `declaration-track:7dd84fa68e45c8adadd5db0fa985b23302af336bdf0ec0222c2eb2ae277b7a21` |
+| 1 | `def` | [getGE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicGetGE.lean/declarations/getge.md) | 39 | `declaration-track:5af6cd8d6bb5a3da99d02046d5dd69c77860465456865ba8fdb9e540579a9225` |
+| 2 | `def` | [getGT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicGetGE.lean/declarations/getgt.md) | 47 | `declaration-track:dbd80e0147803667d4f4668d1803de5e986f2a2ea540f4d10dca4399c1a88705` |
+| 3 | `def` | [getLE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicGetGE.lean/declarations/getle.md) | 55 | `declaration-track:1b3284175238a90aac89a71e1ea9570a26c3cc5069bb9886a0b96fc38183e567` |
+| 4 | `def` | [getLT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicGetGE.lean/declarations/getlt.md) | 63 | `declaration-track:7dd84fa68e45c8adadd5db0fa985b23302af336bdf0ec0222c2eb2ae277b7a21` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

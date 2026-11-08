@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/LatticePiNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/LatticePiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticePiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticePiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inf_sup](../../../../../Combinatorics/EnumerativeCombinatorics/LatticePiNamespaced.lean/declarations/inf-sup.md) | 32 | `result-track:4a0f8222661a8f87639fe7ba7c05ec27bbed3f4d0ba038b9993ec61ce1523f95` |
-| 2 | `theorem` | [sup_inf](../../../../../Combinatorics/EnumerativeCombinatorics/LatticePiNamespaced.lean/declarations/sup-inf.md) | 57 | `result-track:2d36f979525196c6dc44ffe8341986be6ca0a7fdbb6aa2d11899c36b8c042d35` |
+| 1 | `theorem` | [inf_sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticePiNamespaced.lean/declarations/inf-sup.md) | 32 | `result-track:4a0f8222661a8f87639fe7ba7c05ec27bbed3f4d0ba038b9993ec61ce1523f95` |
+| 2 | `theorem` | [sup_inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticePiNamespaced.lean/declarations/sup-inf.md) | 57 | `result-track:2d36f979525196c6dc44ffe8341986be6ca0a7fdbb6aa2d11899c36b8c042d35` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

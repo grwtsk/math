@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Prototype.lean/index.md) · [Full source](../../../../Combinatorics/Prototype.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Prototype.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Prototype.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [prototypeAttentionRoots](../../../../Combinatorics/Prototype.lean/declarations/prototypeattentionroots.md) | 20 | `declaration-track:ad48d1f20a383970d59996ccc92f0efc28029eb9c0bb4128e9ef1c29df7562a5` |
-| 2 | `def` | [prototypeActiveRegion](../../../../Combinatorics/Prototype.lean/declarations/prototypeactiveregion.md) | 24 | `declaration-track:a5df86a85f099c7a3037c5bce835b5f6f0bec44afa4f021f3d34949898523ce4` |
-| 3 | `theorem` | [prototypeActiveRegion_eq_univ](../../../../Combinatorics/Prototype.lean/declarations/prototypeactiveregion-eq-univ.md) | 32 | `result-track:44bca8ebb1c2802e051117a279fdcfc2e9aacdc36ef0d47c8a7658b68c08997e` |
-| 4 | `theorem` | [prototype_model_active](../../../../Combinatorics/Prototype.lean/declarations/prototype-model-active.md) | 37 | `result-track:ae9e75e14b89e2806938a285e338744c816c1cde560de3d219d246abd7480e99` |
-| 5 | `theorem` | [prototype_selectedVersion_eq](../../../../Combinatorics/Prototype.lean/declarations/prototype-selectedversion-eq.md) | 43 | `result-track:6fde3f302bde91982ade02f538860572cbbb737e79b5c71798d92395d6cec6da` |
-| 6 | `theorem` | [prototype_no_omitted_dependencies](../../../../Combinatorics/Prototype.lean/declarations/prototype-no-omitted-dependencies.md) | 51 | `result-track:3ba6923b6c317052ac107e28d6e791c287ccaae6b9e6bb99dbd18379ce9fd02d` |
-| 7 | `theorem` | [prototypeActiveRegion_is_least](../../../../Combinatorics/Prototype.lean/declarations/prototypeactiveregion-is-least.md) | 56 | `result-track:a0be66c035ff477f24e69adcde9e686b676551b8df5fcefe5d49a0976cbca37e` |
-| 8 | `def` | [PrototypeStructuralCompletion](../../../../Combinatorics/Prototype.lean/declarations/prototypestructuralcompletion.md) | 75 | `declaration-track:f200340cb4ed52d444ed67ef9621550d5a75cef1eff48e9f6e41e34488edc698` |
-| 9 | `theorem` | [prototype_structural_completion](../../../../Combinatorics/Prototype.lean/declarations/prototype-structural-completion.md) | 84 | `result-track:79470788baf0be9077d35198d88892a1ae2e616e8330b41cde951fd1bc39cded` |
+| 1 | `def` | [prototypeAttentionRoots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Prototype.lean/declarations/prototypeattentionroots.md) | 20 | `declaration-track:ad48d1f20a383970d59996ccc92f0efc28029eb9c0bb4128e9ef1c29df7562a5` |
+| 2 | `def` | [prototypeActiveRegion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Prototype.lean/declarations/prototypeactiveregion.md) | 24 | `declaration-track:a5df86a85f099c7a3037c5bce835b5f6f0bec44afa4f021f3d34949898523ce4` |
+| 3 | `theorem` | [prototypeActiveRegion_eq_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Prototype.lean/declarations/prototypeactiveregion-eq-univ.md) | 32 | `result-track:44bca8ebb1c2802e051117a279fdcfc2e9aacdc36ef0d47c8a7658b68c08997e` |
+| 4 | `theorem` | [prototype_model_active](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Prototype.lean/declarations/prototype-model-active.md) | 37 | `result-track:ae9e75e14b89e2806938a285e338744c816c1cde560de3d219d246abd7480e99` |
+| 5 | `theorem` | [prototype_selectedVersion_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Prototype.lean/declarations/prototype-selectedversion-eq.md) | 43 | `result-track:6fde3f302bde91982ade02f538860572cbbb737e79b5c71798d92395d6cec6da` |
+| 6 | `theorem` | [prototype_no_omitted_dependencies](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Prototype.lean/declarations/prototype-no-omitted-dependencies.md) | 51 | `result-track:3ba6923b6c317052ac107e28d6e791c287ccaae6b9e6bb99dbd18379ce9fd02d` |
+| 7 | `theorem` | [prototypeActiveRegion_is_least](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Prototype.lean/declarations/prototypeactiveregion-is-least.md) | 56 | `result-track:a0be66c035ff477f24e69adcde9e686b676551b8df5fcefe5d49a0976cbca37e` |
+| 8 | `def` | [PrototypeStructuralCompletion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Prototype.lean/declarations/prototypestructuralcompletion.md) | 75 | `declaration-track:f200340cb4ed52d444ed67ef9621550d5a75cef1eff48e9f6e41e34488edc698` |
+| 9 | `theorem` | [prototype_structural_completion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Prototype.lean/declarations/prototype-structural-completion.md) | 84 | `result-track:79470788baf0be9077d35198d88892a1ae2e616e8330b41cde951fd1bc39cded` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

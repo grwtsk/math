@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GroupTheoryArchimedeanNamespacedSubgroup.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GroupTheoryArchimedeanNamespacedSubgroup.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryArchimedeanNamespacedSubgroup.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryArchimedeanNamespacedSubgroup.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Subgroup.cyclic_of_min](../../../../GroupTheoryAndGeneralizations/GroupTheoryArchimedeanNamespacedSubgroup.lean/declarations/subgroup-cyclic-of-min.md) | 52 | `result-track:1a841b160e7a01cbe02f83d729c570470f3aad5ca32dfa44d9ed9707400a2e51` |
-| 2 | `theorem` | [Subgroup.exists_isLeast_one_lt](../../../../GroupTheoryAndGeneralizations/GroupTheoryArchimedeanNamespacedSubgroup.lean/declarations/subgroup-exists-isleast-one-lt.md) | 74 | `result-track:6d589cd13a4b8fa0ee03048dc70abb9677f6865d28c995bb324c1408147710c0` |
-| 3 | `theorem` | [Subgroup.cyclic_of_isolated_one](../../../../GroupTheoryAndGeneralizations/GroupTheoryArchimedeanNamespacedSubgroup.lean/declarations/subgroup-cyclic-of-isolated-one.md) | 108 | `result-track:25b5deae0a1c5c5fa462da97522256fa259ff07c681e803fe578868ebd5b97c5` |
-| 4 | `theorem` | [Int.subgroup_cyclic](../../../../GroupTheoryAndGeneralizations/GroupTheoryArchimedeanNamespacedSubgroup.lean/declarations/int-subgroup-cyclic.md) | 115 | `result-track:ecca1c38433cfdfe08e7e7d508b581aa708850c3a93e79de4756890575e20972` |
+| 1 | `theorem` | [Subgroup.cyclic_of_min](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryArchimedeanNamespacedSubgroup.lean/declarations/subgroup-cyclic-of-min.md) | 52 | `result-track:1a841b160e7a01cbe02f83d729c570470f3aad5ca32dfa44d9ed9707400a2e51` |
+| 2 | `theorem` | [Subgroup.exists_isLeast_one_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryArchimedeanNamespacedSubgroup.lean/declarations/subgroup-exists-isleast-one-lt.md) | 74 | `result-track:6d589cd13a4b8fa0ee03048dc70abb9677f6865d28c995bb324c1408147710c0` |
+| 3 | `theorem` | [Subgroup.cyclic_of_isolated_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryArchimedeanNamespacedSubgroup.lean/declarations/subgroup-cyclic-of-isolated-one.md) | 108 | `result-track:25b5deae0a1c5c5fa462da97522256fa259ff07c681e803fe578868ebd5b97c5` |
+| 4 | `theorem` | [Int.subgroup_cyclic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryArchimedeanNamespacedSubgroup.lean/declarations/int-subgroup-cyclic.md) | 115 | `result-track:ecca1c38433cfdfe08e7e7d508b581aa708850c3a93e79de4756890575e20972` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

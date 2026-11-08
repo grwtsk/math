@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/GroupLikePublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/GroupLikePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GroupLikePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GroupLikePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IsGroupLikeElem](../../../../CommutativeAlgebra/GroupLikePublic.lean/declarations/isgrouplikeelem.md) | 37 | `declaration-track:3039c39a551109a5a9658d9d3c2dbec623fecda5c2ea1cecf826eebe28447005` |
-| 2 | `lemma` | [isGroupLikeElem_self](../../../../CommutativeAlgebra/GroupLikePublic.lean/declarations/isgrouplikeelem-self.md) | 45 | `result-track:927873a20eac8f9e6c8574cd25b90dec61a3f308161a3522cddf837f89045c74` |
-| 3 | `lemma` | [IsGroupLikeElem.ne_zero](../../../../CommutativeAlgebra/GroupLikePublic.lean/declarations/isgrouplikeelem-ne-zero.md) | 48 | `result-track:aea7eee2e4026db79ec84ba848ac8fc841cf0ae1221a6afbbc2c455a320ccb55` |
-| 4 | `lemma` | [IsGroupLikeElem.map](../../../../CommutativeAlgebra/GroupLikePublic.lean/declarations/isgrouplikeelem-map.md) | 52 | `result-track:3529e206e6feba1eb299ee128d7c952dc5af3473f3b3171efbe3709e402a15fc` |
-| 5 | `lemma` | [isGroupLikeElem_map_equiv](../../../../CommutativeAlgebra/GroupLikePublic.lean/declarations/isgrouplikeelem-map-equiv.md) | 58 | `result-track:dd9765a1c21bf4330db428cc39e6a2938c8ea1bc568c183e16da02f132990159` |
-| 6 | `structure` | [GroupLike](../../../../CommutativeAlgebra/GroupLikePublic.lean/declarations/grouplike.md) | 66 | `declaration-track:95767606c8fc635120e01aeec4107269e38c0b4c1db6e957e6f4062dcee9790e` |
-| 7 | `instance` | [instCoeOut](../../../../CommutativeAlgebra/GroupLikePublic.lean/declarations/instcoeout.md) | 79 | `declaration-track:6bc8e5b176a1179a96ed13e6b051e4b9db2fb4b18a1b10e24a5b7c007f4f85c5` |
-| 8 | `lemma` | [val_injective](../../../../CommutativeAlgebra/GroupLikePublic.lean/declarations/val-injective.md) | 81 | `result-track:33122e8b063db151a1c845a3b6987f9f9fd8c9cfb0bd94e0a9651071ddfa9930` |
-| 9 | `lemma` | [val_inj](../../../../CommutativeAlgebra/GroupLikePublic.lean/declarations/val-inj.md) | 83 | `result-track:04bfdcad0e0e6b693c807376b187badd69c7f5a2bb28992ed9053bfdbeffd0e7` |
-| 10 | `def` | [valEquiv](../../../../CommutativeAlgebra/GroupLikePublic.lean/declarations/valequiv.md) | 88 | `declaration-track:f60e53c9cc033738c571aa6786a3ce43a6a9336861a10274300ca6693c4bcbf8` |
-| 11 | `lemma` | [linearIndepOn_isGroupLikeElem](../../../../CommutativeAlgebra/GroupLikePublic.lean/declarations/linearindepon-isgrouplikeelem.md) | 103 | `result-track:86551914096a66fb7a8685acc89f31a2234734fa2330bde71f13e84eba534925` |
-| 12 | `lemma` | [linearIndep_groupLikeVal](../../../../CommutativeAlgebra/GroupLikePublic.lean/declarations/linearindep-grouplikeval.md) | 157 | `result-track:9656cceb0592395da40256818e6e503ff35d7e545565708ed5e53d875e78c02d` |
+| 1 | `structure` | [IsGroupLikeElem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GroupLikePublic.lean/declarations/isgrouplikeelem.md) | 37 | `declaration-track:3039c39a551109a5a9658d9d3c2dbec623fecda5c2ea1cecf826eebe28447005` |
+| 2 | `lemma` | [isGroupLikeElem_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GroupLikePublic.lean/declarations/isgrouplikeelem-self.md) | 45 | `result-track:927873a20eac8f9e6c8574cd25b90dec61a3f308161a3522cddf837f89045c74` |
+| 3 | `lemma` | [IsGroupLikeElem.ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GroupLikePublic.lean/declarations/isgrouplikeelem-ne-zero.md) | 48 | `result-track:aea7eee2e4026db79ec84ba848ac8fc841cf0ae1221a6afbbc2c455a320ccb55` |
+| 4 | `lemma` | [IsGroupLikeElem.map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GroupLikePublic.lean/declarations/isgrouplikeelem-map.md) | 52 | `result-track:3529e206e6feba1eb299ee128d7c952dc5af3473f3b3171efbe3709e402a15fc` |
+| 5 | `lemma` | [isGroupLikeElem_map_equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GroupLikePublic.lean/declarations/isgrouplikeelem-map-equiv.md) | 58 | `result-track:dd9765a1c21bf4330db428cc39e6a2938c8ea1bc568c183e16da02f132990159` |
+| 6 | `structure` | [GroupLike](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GroupLikePublic.lean/declarations/grouplike.md) | 66 | `declaration-track:95767606c8fc635120e01aeec4107269e38c0b4c1db6e957e6f4062dcee9790e` |
+| 7 | `instance` | [instCoeOut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GroupLikePublic.lean/declarations/instcoeout.md) | 79 | `declaration-track:6bc8e5b176a1179a96ed13e6b051e4b9db2fb4b18a1b10e24a5b7c007f4f85c5` |
+| 8 | `lemma` | [val_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GroupLikePublic.lean/declarations/val-injective.md) | 81 | `result-track:33122e8b063db151a1c845a3b6987f9f9fd8c9cfb0bd94e0a9651071ddfa9930` |
+| 9 | `lemma` | [val_inj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GroupLikePublic.lean/declarations/val-inj.md) | 83 | `result-track:04bfdcad0e0e6b693c807376b187badd69c7f5a2bb28992ed9053bfdbeffd0e7` |
+| 10 | `def` | [valEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GroupLikePublic.lean/declarations/valequiv.md) | 88 | `declaration-track:f60e53c9cc033738c571aa6786a3ce43a6a9336861a10274300ca6693c4bcbf8` |
+| 11 | `lemma` | [linearIndepOn_isGroupLikeElem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GroupLikePublic.lean/declarations/linearindepon-isgrouplikeelem.md) | 103 | `result-track:86551914096a66fb7a8685acc89f31a2234734fa2330bde71f13e84eba534925` |
+| 12 | `lemma` | [linearIndep_groupLikeVal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GroupLikePublic.lean/declarations/linearindep-grouplikeval.md) | 157 | `result-track:9656cceb0592395da40256818e6e503ff35d7e545565708ed5e53d875e78c02d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

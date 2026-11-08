@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReverseImportGraphNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReverseImportGraphNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReverseImportGraphNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReverseImportGraphNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reverseImports](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReverseImportGraphNamespaced.lean/declarations/reverseimports.md) | 14 | `declaration-track:88981ec8c02216292066f9257df729e2bd27635804efe04e73a9554a60c1fc11` |
-| 2 | `theorem` | [reverseImports_iff_imports](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReverseImportGraphNamespaced.lean/declarations/reverseimports-iff-imports.md) | 19 | `result-track:282e69c07d02b6cc1f0403b68e93036e6875afe8350c7adb4635d111acdb65a8` |
+| 1 | `def` | [reverseImports](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReverseImportGraphNamespaced.lean/declarations/reverseimports.md) | 14 | `declaration-track:88981ec8c02216292066f9257df729e2bd27635804efe04e73a9554a60c1fc11` |
+| 2 | `theorem` | [reverseImports_iff_imports](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReverseImportGraphNamespaced.lean/declarations/reverseimports-iff-imports.md) | 19 | `result-track:282e69c07d02b6cc1f0403b68e93036e6875afe8350c7adb4635d111acdb65a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

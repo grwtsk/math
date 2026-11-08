@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalBlockControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalBlockControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalBlockControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalBlockControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenCanonicalBlockClosure`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalBlockClosure.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenCanonicalBlockClosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalBlockClosure.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [block04_zero_rejected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalBlockControls.lean/declarations/block04-zero-rejected.md) | 22 | `result-track:a23667eb7587c8313fef42a9396495b284a74c29d4f4b0fc7eb9773c3e43405a` |
-| 2 | `theorem` | [block00_one_rejected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalBlockControls.lean/declarations/block00-one-rejected.md) | 28 | `result-track:2899a6c5b6216a1684587b64540a5ef29503045384581727874a560fd3c74aee` |
-| 3 | `theorem` | [final_suffix_present](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalBlockControls.lean/declarations/final-suffix-present.md) | 34 | `result-track:76f5a6a08228c1bbd9443d84abe255274a1990ff29fe62b6995622d36b020cbe` |
-| 4 | `theorem` | [none_ne_successful_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalBlockControls.lean/declarations/none-ne-successful-zero.md) | 39 | `result-track:69fcc1db5540b69ae37a2fe67606f791b7ad82c59c690b5f3d00fdae653f1ab9` |
-| 5 | `theorem` | [claim_sum_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalBlockControls.lean/declarations/claim-sum-one.md) | 43 | `result-track:badb8b64b07c9da939b47d10c88405199ba30d31f03eb87d2b443f2672b6fca4` |
-| 6 | `theorem` | [changed_claims_rejected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalBlockControls.lean/declarations/changed-claims-rejected.md) | 47 | `result-track:fe7b835a91bbaf3b651b648bd5456fc26b283ae863d3bb3fb40c25b4b97e49bf` |
+| 1 | `theorem` | [block04_zero_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalBlockControls.lean/declarations/block04-zero-rejected.md) | 22 | `result-track:a23667eb7587c8313fef42a9396495b284a74c29d4f4b0fc7eb9773c3e43405a` |
+| 2 | `theorem` | [block00_one_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalBlockControls.lean/declarations/block00-one-rejected.md) | 28 | `result-track:2899a6c5b6216a1684587b64540a5ef29503045384581727874a560fd3c74aee` |
+| 3 | `theorem` | [final_suffix_present](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalBlockControls.lean/declarations/final-suffix-present.md) | 34 | `result-track:76f5a6a08228c1bbd9443d84abe255274a1990ff29fe62b6995622d36b020cbe` |
+| 4 | `theorem` | [none_ne_successful_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalBlockControls.lean/declarations/none-ne-successful-zero.md) | 39 | `result-track:69fcc1db5540b69ae37a2fe67606f791b7ad82c59c690b5f3d00fdae653f1ab9` |
+| 5 | `theorem` | [claim_sum_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalBlockControls.lean/declarations/claim-sum-one.md) | 43 | `result-track:badb8b64b07c9da939b47d10c88405199ba30d31f03eb87d2b443f2672b6fca4` |
+| 6 | `theorem` | [changed_claims_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalBlockControls.lean/declarations/changed-claims-rejected.md) | 47 | `result-track:fe7b835a91bbaf3b651b648bd5456fc26b283ae863d3bb3fb40c25b4b97e49bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Node.lean/index.md) · [Full source](../../../../Combinatorics/Node.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Node.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Node.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TerrainNodeKind](../../../../Combinatorics/Node.lean/declarations/terrainnodekind.md) | 10 | `declaration-track:2e9050f5cdfb817c2bff03f3f29590d25bb2cf25918c81f760a977eb93cf8463` |
-| 2 | `inductive` | [TerrainRelation](../../../../Combinatorics/Node.lean/declarations/terrainrelation.md) | 24 | `declaration-track:608aa9416264c988a08327651c89fa23be6614dbd50f66f2018cdfd7679672e5` |
-| 3 | `structure` | [TerrainNode](../../../../Combinatorics/Node.lean/declarations/terrainnode.md) | 40 | `declaration-track:18a29dc329f9d7dcd4520feb3078f6ef930cf17531f5dd31cb364a0c50d27541` |
-| 4 | `structure` | [RelationCertificate](../../../../Combinatorics/Node.lean/declarations/relationcertificate.md) | 55 | `declaration-track:9aeb49ae9dc6615067fe77f94aa003244d2a4c6d2075ba94f884cc7f34e5cc67` |
-| 5 | `structure` | [TerrainEdgeDescriptor](../../../../Combinatorics/Node.lean/declarations/terrainedgedescriptor.md) | 62 | `declaration-track:5b95f9b65f2511032cf40dcf0790773650fd3ff1e338f9c4c4a35a745167c45b` |
-| 6 | `structure` | [TerrainCellDescriptor](../../../../Combinatorics/Node.lean/declarations/terraincelldescriptor.md) | 73 | `declaration-track:1214015b1b2e1a381492faf3935e01cc89eb762bbaa19f72419f8337bab11dbb` |
-| 7 | `structure` | [RuntimeBindingDescriptor](../../../../Combinatorics/Node.lean/declarations/runtimebindingdescriptor.md) | 81 | `declaration-track:9e7300dca4084f01901cc0840549af91c36fae2e81c36a4587408fb5909abbca` |
-| 8 | `structure` | [ExternalAuthorityDescriptor](../../../../Combinatorics/Node.lean/declarations/externalauthoritydescriptor.md) | 91 | `declaration-track:ac9543457858853fbda25c20c9508512d71e08b6073462f2459e5d664b2abfb4` |
+| 1 | `inductive` | [TerrainNodeKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Node.lean/declarations/terrainnodekind.md) | 10 | `declaration-track:2e9050f5cdfb817c2bff03f3f29590d25bb2cf25918c81f760a977eb93cf8463` |
+| 2 | `inductive` | [TerrainRelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Node.lean/declarations/terrainrelation.md) | 24 | `declaration-track:608aa9416264c988a08327651c89fa23be6614dbd50f66f2018cdfd7679672e5` |
+| 3 | `structure` | [TerrainNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Node.lean/declarations/terrainnode.md) | 40 | `declaration-track:18a29dc329f9d7dcd4520feb3078f6ef930cf17531f5dd31cb364a0c50d27541` |
+| 4 | `structure` | [RelationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Node.lean/declarations/relationcertificate.md) | 55 | `declaration-track:9aeb49ae9dc6615067fe77f94aa003244d2a4c6d2075ba94f884cc7f34e5cc67` |
+| 5 | `structure` | [TerrainEdgeDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Node.lean/declarations/terrainedgedescriptor.md) | 62 | `declaration-track:5b95f9b65f2511032cf40dcf0790773650fd3ff1e338f9c4c4a35a745167c45b` |
+| 6 | `structure` | [TerrainCellDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Node.lean/declarations/terraincelldescriptor.md) | 73 | `declaration-track:1214015b1b2e1a381492faf3935e01cc89eb762bbaa19f72419f8337bab11dbb` |
+| 7 | `structure` | [RuntimeBindingDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Node.lean/declarations/runtimebindingdescriptor.md) | 81 | `declaration-track:9e7300dca4084f01901cc0840549af91c36fae2e81c36a4587408fb5909abbca` |
+| 8 | `structure` | [ExternalAuthorityDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Node.lean/declarations/externalauthoritydescriptor.md) | 91 | `declaration-track:ac9543457858853fbda25c20c9508512d71e08b6073462f2459e5d664b2abfb4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

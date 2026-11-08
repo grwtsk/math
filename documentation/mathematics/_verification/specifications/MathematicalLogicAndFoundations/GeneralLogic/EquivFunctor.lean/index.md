@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mapEquiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/declarations/mapequiv-source-edition-2.md) | 36 | `declaration-track:9a5530bd3466baaf20bc7c213d9678ec9f5a3da94ada0738c74c46a73f3ee8a1` |
-| 2 | `theorem` | [mapEquiv_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/declarations/mapequiv-apply.md) | 43 | `result-track:564a0a5648ec6f2507f54d1f4f960c33c792e8843292bcc50b0ae119707d91ae` |
-| 3 | `theorem` | [mapEquiv_symm_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/declarations/mapequiv-symm-apply-source-edition-2.md) | 47 | `result-track:5b7ba77f7cc0dee58dd4db3b744ad36e031fc00030892a24bbe50fbd64ac794d` |
-| 4 | `theorem` | [mapEquiv_refl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/declarations/mapequiv-refl.md) | 52 | `result-track:3a107e82b48db8d8ec4f1d53c410efdeb61c2d77f98e9f39117ac635a1af0c05` |
-| 5 | `def` | [mapEquiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/declarations/mapequiv.md) | 64 | `declaration-track:7686d4066f9a2ca2fbba9ca34493a4e97c3bae8211a1a5e0da7b309401489658` |
-| 6 | `theorem` | [mapEquiv_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/declarations/mapequiv-apply-source-edition-2.md) | 71 | `result-track:b5e0a3981582f13415231ad1864ee9298836c7717c53282ba1cf9c2ba61d2f73` |
-| 7 | `theorem` | [mapEquiv_symm_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/declarations/mapequiv-symm-apply.md) | 76 | `result-track:31e17937df6a68dbdb78d8eeaa8262b2debcd50ba7b16c886e83a5795ac1d7f3` |
-| 8 | `theorem` | [mapEquiv_refl_refl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/declarations/mapequiv-refl-refl.md) | 81 | `result-track:55bfc9e0a43dee7230b514ce58f1f82f7344af296ecc4ef20509fabff91dc4e5` |
+| 1 | `def` | [mapEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/declarations/mapequiv-source-edition-2.md) | 36 | `declaration-track:9a5530bd3466baaf20bc7c213d9678ec9f5a3da94ada0738c74c46a73f3ee8a1` |
+| 2 | `theorem` | [mapEquiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/declarations/mapequiv-apply.md) | 43 | `result-track:564a0a5648ec6f2507f54d1f4f960c33c792e8843292bcc50b0ae119707d91ae` |
+| 3 | `theorem` | [mapEquiv_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/declarations/mapequiv-symm-apply-source-edition-2.md) | 47 | `result-track:5b7ba77f7cc0dee58dd4db3b744ad36e031fc00030892a24bbe50fbd64ac794d` |
+| 4 | `theorem` | [mapEquiv_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/declarations/mapequiv-refl.md) | 52 | `result-track:3a107e82b48db8d8ec4f1d53c410efdeb61c2d77f98e9f39117ac635a1af0c05` |
+| 5 | `def` | [mapEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/declarations/mapequiv.md) | 64 | `declaration-track:7686d4066f9a2ca2fbba9ca34493a4e97c3bae8211a1a5e0da7b309401489658` |
+| 6 | `theorem` | [mapEquiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/declarations/mapequiv-apply-source-edition-2.md) | 71 | `result-track:b5e0a3981582f13415231ad1864ee9298836c7717c53282ba1cf9c2ba61d2f73` |
+| 7 | `theorem` | [mapEquiv_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/declarations/mapequiv-symm-apply.md) | 76 | `result-track:31e17937df6a68dbdb78d8eeaa8262b2debcd50ba7b16c886e83a5795ac1d7f3` |
+| 8 | `theorem` | [mapEquiv_refl_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivFunctor.lean/declarations/mapequiv-refl-refl.md) | 81 | `result-track:55bfc9e0a43dee7230b514ce58f1f82f7344af296ecc4ef20509fabff91dc4e5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

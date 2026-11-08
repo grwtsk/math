@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [struct](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/declarations/struct.md) | 41 | `declaration-track:959e2d30d2231909df4abab73a17379a2285706ea31834a592375e1464069480` |
-| 2 | `lemma` | [exists_effectiveEpi](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/declarations/exists-effectiveepi.md) | 50 | `result-track:2dc1c28bd7f3191404c87f867d8897928eaa279e322b4d3969a3cb0fbf3d21e4` |
-| 3 | `def` | [preimage](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/declarations/preimage.md) | 57 | `declaration-track:0e0dad414a14cab73c42c2e40154ca9eb5ae3b4994fd70a7e15de644db04f39d` |
-| 4 | `def` | [preimageStruct](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/declarations/preimagestruct.md) | 64 | `declaration-track:9d11925ddfe42e050eeda62fecbabc547aac28e1e001cf145ebe828c75f5aeae` |
-| 5 | `def` | [preimageDiagram](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/declarations/preimagediagram.md) | 71 | `declaration-track:c9bf05c28575ad7a7c6b41573c673a453df5ed823afc33ea7f7e5a15ff81e028` |
-| 6 | `def` | [cone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/declarations/cone.md) | 76 | `declaration-track:c4a37a1ded89fe7c74551388f483eeef381679c5ae6f1edfe7a987648784897b` |
-| 7 | `lemma` | [isLocallySurjective_π_app_zero_of_isLocallySurjective_map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/declarations/islocallysurjective-app-zero-of-islocallysurjective-map.md) | 93 | `result-track:1bb50858a5eb7e3acbf037506d0888d4ddbf84c0444fc829c653216ddd9f8fca` |
-| 8 | `lemma` | [epi_π_app_zero_of_epi](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/declarations/epi-app-zero-of-epi.md) | 108 | `result-track:2282241cc5da26ec640e2e4d766da01a442b3cdf58021d5592e7cd2f0866921f` |
+| 1 | `structure` | [struct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/declarations/struct.md) | 41 | `declaration-track:959e2d30d2231909df4abab73a17379a2285706ea31834a592375e1464069480` |
+| 2 | `lemma` | [exists_effectiveEpi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/declarations/exists-effectiveepi.md) | 50 | `result-track:2dc1c28bd7f3191404c87f867d8897928eaa279e322b4d3969a3cb0fbf3d21e4` |
+| 3 | `def` | [preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/declarations/preimage.md) | 57 | `declaration-track:0e0dad414a14cab73c42c2e40154ca9eb5ae3b4994fd70a7e15de644db04f39d` |
+| 4 | `def` | [preimageStruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/declarations/preimagestruct.md) | 64 | `declaration-track:9d11925ddfe42e050eeda62fecbabc547aac28e1e001cf145ebe828c75f5aeae` |
+| 5 | `def` | [preimageDiagram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/declarations/preimagediagram.md) | 71 | `declaration-track:c9bf05c28575ad7a7c6b41573c673a453df5ed823afc33ea7f7e5a15ff81e028` |
+| 6 | `def` | [cone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/declarations/cone.md) | 76 | `declaration-track:c4a37a1ded89fe7c74551388f483eeef381679c5ae6f1edfe7a987648784897b` |
+| 7 | `lemma` | [isLocallySurjective_π_app_zero_of_isLocallySurjective_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/declarations/islocallysurjective-app-zero-of-islocallysurjective-map.md) | 93 | `result-track:1bb50858a5eb7e3acbf037506d0888d4ddbf84c0444fc829c653216ddd9f8fca` |
+| 8 | `lemma` | [epi_π_app_zero_of_epi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SequentialLimit.lean/declarations/epi-app-zero-of-epi.md) | 108 | `result-track:2282241cc5da26ec640e2e4d766da01a442b3cdf58021d5592e7cd2f0866921f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

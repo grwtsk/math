@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CertificateNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CertificateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CertificateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CertificateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TraceCompensationEvidence](../../../../ProbabilityTheoryAndStochasticProcesses/CertificateNamespaced.lean/declarations/tracecompensationevidence.md) | 26 | `declaration-track:90980da698a69e306eea9ad180c1c2cb7b9039501076b87263ada9b2e4d9bedb` |
-| 2 | `structure` | [ResidueDeflectionCertificate](../../../../ProbabilityTheoryAndStochasticProcesses/CertificateNamespaced.lean/declarations/residuedeflectioncertificate.md) | 40 | `declaration-track:43c675dcb7f2dd46f0c8a148708eff75e70e006241d5fad6cf4833f9250f7bd5` |
-| 3 | `structure` | [ExactResidueDeflectionCertificate](../../../../ProbabilityTheoryAndStochasticProcesses/CertificateNamespaced.lean/declarations/exactresiduedeflectioncertificate.md) | 77 | `declaration-track:9355e56f79b4ec1f9580f0bdeabb2e81e578e3a81df0c4cefadcb0ceaf6486a0` |
-| 4 | `theorem` | [exact_certificate_trace_conservation](../../../../ProbabilityTheoryAndStochasticProcesses/CertificateNamespaced.lean/declarations/exact-certificate-trace-conservation.md) | 114 | `result-track:cf9fa7b468ee1edcf479fb0a56236363de15d25fd4b9cfe918f795bfb0e92629` |
-| 5 | `theorem` | [exact_certificate_defect_holonomy](../../../../ProbabilityTheoryAndStochasticProcesses/CertificateNamespaced.lean/declarations/exact-certificate-defect-holonomy.md) | 136 | `result-track:0e85adc7c4483a4da970e52a71ad23f327b24cb31b1baa265905e79595b06638` |
-| 6 | `theorem` | [exact_certificate_amplitude_positive](../../../../ProbabilityTheoryAndStochasticProcesses/CertificateNamespaced.lean/declarations/exact-certificate-amplitude-positive.md) | 156 | `result-track:e044ca7329fe82c7553db5ae7ef357e777b769227b034f6e0081ecbe251e7827` |
-| 7 | `theorem` | [exact_certificate_rule_three](../../../../ProbabilityTheoryAndStochasticProcesses/CertificateNamespaced.lean/declarations/exact-certificate-rule-three.md) | 177 | `result-track:f17f6dbe38357ec45a1ebe157efe3e26865da450ecbf078a7d4d9e9bb019f884` |
+| 1 | `inductive` | [TraceCompensationEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CertificateNamespaced.lean/declarations/tracecompensationevidence.md) | 26 | `declaration-track:90980da698a69e306eea9ad180c1c2cb7b9039501076b87263ada9b2e4d9bedb` |
+| 2 | `structure` | [ResidueDeflectionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CertificateNamespaced.lean/declarations/residuedeflectioncertificate.md) | 40 | `declaration-track:43c675dcb7f2dd46f0c8a148708eff75e70e006241d5fad6cf4833f9250f7bd5` |
+| 3 | `structure` | [ExactResidueDeflectionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CertificateNamespaced.lean/declarations/exactresiduedeflectioncertificate.md) | 77 | `declaration-track:9355e56f79b4ec1f9580f0bdeabb2e81e578e3a81df0c4cefadcb0ceaf6486a0` |
+| 4 | `theorem` | [exact_certificate_trace_conservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CertificateNamespaced.lean/declarations/exact-certificate-trace-conservation.md) | 114 | `result-track:cf9fa7b468ee1edcf479fb0a56236363de15d25fd4b9cfe918f795bfb0e92629` |
+| 5 | `theorem` | [exact_certificate_defect_holonomy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CertificateNamespaced.lean/declarations/exact-certificate-defect-holonomy.md) | 136 | `result-track:0e85adc7c4483a4da970e52a71ad23f327b24cb31b1baa265905e79595b06638` |
+| 6 | `theorem` | [exact_certificate_amplitude_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CertificateNamespaced.lean/declarations/exact-certificate-amplitude-positive.md) | 156 | `result-track:e044ca7329fe82c7553db5ae7ef357e777b769227b034f6e0081ecbe251e7827` |
+| 7 | `theorem` | [exact_certificate_rule_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CertificateNamespaced.lean/declarations/exact-certificate-rule-three.md) | 177 | `result-track:f17f6dbe38357ec45a1ebe157efe3e26865da450ecbf078a7d4d9e9bb019f884` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

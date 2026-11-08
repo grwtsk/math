@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/AtlasSimpPriorAttributeReviewNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/AtlasSimpPriorAttributeReviewNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AtlasSimpPriorAttributeReviewNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AtlasSimpPriorAttributeReviewNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,13 +62,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/AtlasSimpPriorAttributeReviewNamespaced.lean/declarations/example.md) | 24 | `declaration-track:159bc3cb98ddd28c3ba231743d460eb62ce0985deb7df1ecb5f50aca51fd5296` |
-| 2 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/AtlasSimpPriorAttributeReviewNamespaced.lean/declarations/example-source-edition-4.md) | 31 | `declaration-track:b09a4001a71c65b620a738e6f3e270b79d7ec6afc78196dee5e5a523b218a6c7` |
-| 3 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/AtlasSimpPriorAttributeReviewNamespaced.lean/declarations/example-source-edition-7.md) | 33 | `declaration-track:ee4c58e8652e1826ef9139927fcd66b54507867fb3c12caacffc45a7f8f8e291` |
-| 4 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/AtlasSimpPriorAttributeReviewNamespaced.lean/declarations/example-source-edition-6.md) | 38 | `declaration-track:d4ca5415ed8f5ed79563c3a05b64792d3ded99a850dd403e645872d55a7db7ae` |
-| 5 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/AtlasSimpPriorAttributeReviewNamespaced.lean/declarations/example-source-edition-3.md) | 43 | `declaration-track:a66c950540f1d7985d548c89fc52f7e7e0393f6114f609ddeb7629fdd6f1abdc` |
-| 6 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/AtlasSimpPriorAttributeReviewNamespaced.lean/declarations/example-source-edition-2.md) | 47 | `declaration-track:2f6d4dc47073e500e2ce1e1a8cb09840d6f49d49f52a30627ca6fbcb0db3a001` |
-| 7 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/AtlasSimpPriorAttributeReviewNamespaced.lean/declarations/example-source-edition-5.md) | 50 | `declaration-track:cf1fa95091400885085863fdfb0e6137bd5141738b1f52d5666f1e22e358a924` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AtlasSimpPriorAttributeReviewNamespaced.lean/declarations/example.md) | 24 | `declaration-track:159bc3cb98ddd28c3ba231743d460eb62ce0985deb7df1ecb5f50aca51fd5296` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AtlasSimpPriorAttributeReviewNamespaced.lean/declarations/example-source-edition-4.md) | 31 | `declaration-track:b09a4001a71c65b620a738e6f3e270b79d7ec6afc78196dee5e5a523b218a6c7` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AtlasSimpPriorAttributeReviewNamespaced.lean/declarations/example-source-edition-7.md) | 33 | `declaration-track:ee4c58e8652e1826ef9139927fcd66b54507867fb3c12caacffc45a7f8f8e291` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AtlasSimpPriorAttributeReviewNamespaced.lean/declarations/example-source-edition-6.md) | 38 | `declaration-track:d4ca5415ed8f5ed79563c3a05b64792d3ded99a850dd403e645872d55a7db7ae` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AtlasSimpPriorAttributeReviewNamespaced.lean/declarations/example-source-edition-3.md) | 43 | `declaration-track:a66c950540f1d7985d548c89fc52f7e7e0393f6114f609ddeb7629fdd6f1abdc` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AtlasSimpPriorAttributeReviewNamespaced.lean/declarations/example-source-edition-2.md) | 47 | `declaration-track:2f6d4dc47073e500e2ce1e1a8cb09840d6f49d49f52a30627ca6fbcb0db3a001` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AtlasSimpPriorAttributeReviewNamespaced.lean/declarations/example-source-edition-5.md) | 50 | `declaration-track:cf1fa95091400885085863fdfb0e6137bd5141738b1f52d5666f1e22e358a924` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DiagonalRemainderBudget.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DiagonalRemainderBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DiagonalRemainderBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DiagonalRemainderBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [moebius_square_le_one](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DiagonalRemainderBudget.lean/declarations/moebius-square-le-one.md) | 20 | `result-track:e0bed163ef25c5d48f50f90849ed8201a48062eaf9b3ce2daedb72eacf8442df` |
-| 2 | `theorem` | [source_harmonic_sum_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DiagonalRemainderBudget.lean/declarations/source-harmonic-sum-le.md) | 28 | `result-track:d501b68b0a86fe80dff6d49238f7ffa319be483d5acb259b035c3dcde3d8d1ab` |
-| 3 | `theorem` | [diagonal_remainder_abs_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DiagonalRemainderBudget.lean/declarations/diagonal-remainder-abs-le.md) | 36 | `result-track:b1e32f3ef186e40e746157e8b3f442cd2b559959466b86bd7c550883507390a8` |
+| 1 | `theorem` | [moebius_square_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DiagonalRemainderBudget.lean/declarations/moebius-square-le-one.md) | 20 | `result-track:e0bed163ef25c5d48f50f90849ed8201a48062eaf9b3ce2daedb72eacf8442df` |
+| 2 | `theorem` | [source_harmonic_sum_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DiagonalRemainderBudget.lean/declarations/source-harmonic-sum-le.md) | 28 | `result-track:d501b68b0a86fe80dff6d49238f7ffa319be483d5acb259b035c3dcde3d8d1ab` |
+| 3 | `theorem` | [diagonal_remainder_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DiagonalRemainderBudget.lean/declarations/diagonal-remainder-abs-le.md) | 36 | `result-track:b1e32f3ef186e40e746157e8b3f442cd2b559959466b86bd7c550883507390a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

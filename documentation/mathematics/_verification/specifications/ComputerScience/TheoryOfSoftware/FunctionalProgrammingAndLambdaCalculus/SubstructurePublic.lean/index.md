@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SubstructurePublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SubstructurePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SubstructurePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SubstructurePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bitblast](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SubstructurePublic.lean/declarations/bitblast.md) | 29 | `declaration-track:7e648e1decfb82b98d7dc950cf8a00ca1e3d3f7c32519cd7db7e8d7c5bc533e8` |
-| 2 | `theorem` | [go_le_size](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SubstructurePublic.lean/declarations/go-le-size.md) | 113 | `result-track:5bd6b2965724e58f4fd6966c007f8da9f161295bd99485bd2557f502f68d09ea` |
-| 3 | `theorem` | [go_lt_size_of_lt_aig_size](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SubstructurePublic.lean/declarations/go-lt-size-of-lt-aig-size.md) | 117 | `result-track:2edff15acc4eb9119a1d782e9d68f4ff3f1d610aaaa98e7e227202a4c8bcb428` |
-| 4 | `theorem` | [go_decl_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SubstructurePublic.lean/declarations/go-decl-eq.md) | 124 | `result-track:0191bee5b23ad54fa2af7499292f4f4fc8176345d8a9f0d9dac98bbddd44b35c` |
-| 5 | `theorem` | [go_isPrefix_aig](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SubstructurePublic.lean/declarations/go-isprefix-aig.md) | 184 | `result-track:68c02eb2db716eb4049cacb43a400ec340cfcd6a45f54d29373bb325323cb641` |
-| 6 | `theorem` | [go_denote_mem_prefix](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SubstructurePublic.lean/declarations/go-denote-mem-prefix.md) | 191 | `result-track:d6328dbc03d3898897e66e04495ad915899d764c89add77beebd49ed72b9c807` |
+| 1 | `def` | [bitblast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SubstructurePublic.lean/declarations/bitblast.md) | 29 | `declaration-track:7e648e1decfb82b98d7dc950cf8a00ca1e3d3f7c32519cd7db7e8d7c5bc533e8` |
+| 2 | `theorem` | [go_le_size](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SubstructurePublic.lean/declarations/go-le-size.md) | 113 | `result-track:5bd6b2965724e58f4fd6966c007f8da9f161295bd99485bd2557f502f68d09ea` |
+| 3 | `theorem` | [go_lt_size_of_lt_aig_size](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SubstructurePublic.lean/declarations/go-lt-size-of-lt-aig-size.md) | 117 | `result-track:2edff15acc4eb9119a1d782e9d68f4ff3f1d610aaaa98e7e227202a4c8bcb428` |
+| 4 | `theorem` | [go_decl_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SubstructurePublic.lean/declarations/go-decl-eq.md) | 124 | `result-track:0191bee5b23ad54fa2af7499292f4f4fc8176345d8a9f0d9dac98bbddd44b35c` |
+| 5 | `theorem` | [go_isPrefix_aig](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SubstructurePublic.lean/declarations/go-isprefix-aig.md) | 184 | `result-track:68c02eb2db716eb4049cacb43a400ec340cfcd6a45f54d29373bb325323cb641` |
+| 6 | `theorem` | [go_denote_mem_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SubstructurePublic.lean/declarations/go-denote-mem-prefix.md) | 191 | `result-track:d6328dbc03d3898897e66e04495ad915899d764c89add77beebd49ed72b9c807` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

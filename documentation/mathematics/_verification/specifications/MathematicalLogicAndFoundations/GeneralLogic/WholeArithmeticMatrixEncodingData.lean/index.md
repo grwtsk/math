@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeArithmeticMatrixEncodingData.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeArithmeticMatrixEncodingData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeArithmeticMatrixEncodingData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeArithmeticMatrixEncodingData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Folder.Carrier.BinaryMatrix` — import line 21; external provider; requires a separately pinned dependency.
 - `Folder.CellularArithmetic.CellularRepresentation` — import line 22; external provider; requires a separately pinned dependency.
-- [Unary Positive Natural Matrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnaryPositiveNaturalMatrix.lean/index.md) — import line 23; pinned internal source present.
+- [Unary Positive Natural Matrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnaryPositiveNaturalMatrix.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BinaryMatrixArithmeticEncoding](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeArithmeticMatrixEncodingData.lean/declarations/binarymatrixarithmeticencoding.md) | 40 | `declaration-track:1e2d83bed44aecb9f625ddc2651c0b759fd40a92ad25b75ba90ff447e44ccf7f` |
-| 2 | `def` | [unaryEncoding](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeArithmeticMatrixEncodingData.lean/declarations/unaryencoding.md) | 46 | `declaration-track:ab567e121b3f6a5b7dfbe920b5c054593febc3b3661ab4098dcf856b258f3a43` |
+| 1 | `structure` | [BinaryMatrixArithmeticEncoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeArithmeticMatrixEncodingData.lean/declarations/binarymatrixarithmeticencoding.md) | 40 | `declaration-track:1e2d83bed44aecb9f625ddc2651c0b759fd40a92ad25b75ba90ff447e44ccf7f` |
+| 2 | `def` | [unaryEncoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeArithmeticMatrixEncodingData.lean/declarations/unaryencoding.md) | 46 | `declaration-track:ab567e121b3f6a5b7dfbe920b5c054593febc3b3661ab4098dcf856b258f3a43` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

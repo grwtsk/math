@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FractionalLogBasisNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FractionalLogBasisNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractionalLogBasisNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractionalLogBasisNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fractionalLogFunction](../../../../MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/fractionallogfunction.md) | 22 | `declaration-track:4a8c0d18906fab6769499404b5b324909d76fdebff38b7e33904fd4030efdedb` |
-| 2 | `theorem` | [fractionalLogFunction_measurable](../../../../MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/fractionallogfunction-measurable.md) | 25 | `result-track:2e46a7daef2dbb93207b8a073d59d3923a89d8c75a3394658d72daa1ea63a892` |
-| 3 | `theorem` | [fractionalLogFunction_sq_le_near](../../../../MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/fractionallogfunction-sq-le-near.md) | 30 | `result-track:69b36a534d095fdaa7e7528e4607e33912222ded47679d6845bdebb68fac17ae` |
-| 4 | `theorem` | [fractionalLogFunction_sq_le_far](../../../../MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/fractionallogfunction-sq-le-far.md) | 48 | `result-track:b49f903d41da88cc93c7f63ae8540ae1c19db94f1b9cc957f99893fe95c61df7` |
-| 5 | `theorem` | [fractionalLogFunction_memLp](../../../../MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/fractionallogfunction-memlp.md) | 63 | `result-track:62669a185625015c24ebb3b17d1aa554cc4acfad2513408125d53428430f414c` |
-| 6 | `def` | [fractionalLogVector](../../../../MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/fractionallogvector.md) | 83 | `declaration-track:68543a2c17feace5d065358ee4548ca29e0631dc3b3fdcdc9fee9f1ed04e41e1` |
-| 7 | `theorem` | [fractionalLogVector_norm_le](../../../../MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/fractionallogvector-norm-le.md) | 87 | `result-track:507f72a243b25a1a46a069c7c72d63ba6aa16eeb9343ad01e7d554a0a076a622` |
-| 8 | `theorem` | [fractionalLogVector_ae](../../../../MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/fractionallogvector-ae.md) | 116 | `result-track:f88fb9c1bcfe321392a93b903cd0ae7b9707a84c2a93ef2ce841b292c0a36734` |
-| 9 | `theorem` | [sum_coe_ae](../../../../MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/sum-coe-ae.md) | 120 | `result-track:43d59cd30c2b2d69ce3ccbc173550e2a06386fdf5d129cfc232e977a857301dd` |
-| 10 | `theorem` | [fullResidualVector_sub_expansion_norm](../../../../MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/fullresidualvector-sub-expansion-norm.md) | 134 | `result-track:09d9c7c6ce84fda03744c14aad305671d643e517b49546e7fc6ba60eb2fbf345` |
+| 1 | `def` | [fractionalLogFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/fractionallogfunction.md) | 22 | `declaration-track:4a8c0d18906fab6769499404b5b324909d76fdebff38b7e33904fd4030efdedb` |
+| 2 | `theorem` | [fractionalLogFunction_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/fractionallogfunction-measurable.md) | 25 | `result-track:2e46a7daef2dbb93207b8a073d59d3923a89d8c75a3394658d72daa1ea63a892` |
+| 3 | `theorem` | [fractionalLogFunction_sq_le_near](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/fractionallogfunction-sq-le-near.md) | 30 | `result-track:69b36a534d095fdaa7e7528e4607e33912222ded47679d6845bdebb68fac17ae` |
+| 4 | `theorem` | [fractionalLogFunction_sq_le_far](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/fractionallogfunction-sq-le-far.md) | 48 | `result-track:b49f903d41da88cc93c7f63ae8540ae1c19db94f1b9cc957f99893fe95c61df7` |
+| 5 | `theorem` | [fractionalLogFunction_memLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/fractionallogfunction-memlp.md) | 63 | `result-track:62669a185625015c24ebb3b17d1aa554cc4acfad2513408125d53428430f414c` |
+| 6 | `def` | [fractionalLogVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/fractionallogvector.md) | 83 | `declaration-track:68543a2c17feace5d065358ee4548ca29e0631dc3b3fdcdc9fee9f1ed04e41e1` |
+| 7 | `theorem` | [fractionalLogVector_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/fractionallogvector-norm-le.md) | 87 | `result-track:507f72a243b25a1a46a069c7c72d63ba6aa16eeb9343ad01e7d554a0a076a622` |
+| 8 | `theorem` | [fractionalLogVector_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/fractionallogvector-ae.md) | 116 | `result-track:f88fb9c1bcfe321392a93b903cd0ae7b9707a84c2a93ef2ce841b292c0a36734` |
+| 9 | `theorem` | [sum_coe_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/sum-coe-ae.md) | 120 | `result-track:43d59cd30c2b2d69ce3ccbc173550e2a06386fdf5d129cfc232e977a857301dd` |
+| 10 | `theorem` | [fullResidualVector_sub_expansion_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractionalLogBasisNamespaced.lean/declarations/fullresidualvector-sub-expansion-norm.md) | 134 | `result-track:09d9c7c6ce84fda03744c14aad305671d643e517b49546e7fc6ba60eb2fbf345` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

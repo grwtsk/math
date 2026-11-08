@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ClosedProperPowerPrefixAttempt01Namespaced.lean/index.md) · [Full source](../../../../NumberTheory/ClosedProperPowerPrefixAttempt01Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedProperPowerPrefixAttempt01Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedProperPowerPrefixAttempt01Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [properExponentInventory](../../../../NumberTheory/ClosedProperPowerPrefixAttempt01Namespaced.lean/declarations/properexponentinventory.md) | 23 | `declaration-track:b4ad82738176efbe44a094f878b96bfbc04d22e073287096fa1781e8e7378785` |
-| 2 | `theorem` | [inventory_pow_injective](../../../../NumberTheory/ClosedProperPowerPrefixAttempt01Namespaced.lean/declarations/inventory-pow-injective.md) | 27 | `result-track:2cc516e0c04f91fffec5790dc4273d7a31a0617fda5a87a55e3da0c8f40c6a0f` |
-| 3 | `theorem` | [weighted_difference_eq_proper_exponents](../../../../NumberTheory/ClosedProperPowerPrefixAttempt01Namespaced.lean/declarations/weighted-difference-eq-proper-exponents.md) | 41 | `result-track:a77ae60e3db9798c0c97576feac03c569407d15e8fbb701bfb1c16fa91384ec2` |
-| 4 | `def` | [actualProperPowerClosedPrefix](../../../../NumberTheory/ClosedProperPowerPrefixAttempt01Namespaced.lean/declarations/actualproperpowerclosedprefix.md) | 95 | `declaration-track:fcb478175371829e3dd7d46505a5927b29deb422f3036e5d7170b5f3944011c6` |
-| 5 | `theorem` | [actual_closed_prefix_dictionary](../../../../NumberTheory/ClosedProperPowerPrefixAttempt01Namespaced.lean/declarations/actual-closed-prefix-dictionary.md) | 99 | `result-track:b61dcf80f99fe89adea95e10e6193da4e24398fc0098d3d7803c6f0744da6cd3` |
-| 6 | `theorem` | [prime_power_closed_onset_iff](../../../../NumberTheory/ClosedProperPowerPrefixAttempt01Namespaced.lean/declarations/prime-power-closed-onset-iff.md) | 104 | `result-track:a484c13d437d9cebff6d9c942452860bf3f15273034718d0ae7ac56cd64bc6b0` |
+| 1 | `def` | [properExponentInventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedProperPowerPrefixAttempt01Namespaced.lean/declarations/properexponentinventory.md) | 23 | `declaration-track:b4ad82738176efbe44a094f878b96bfbc04d22e073287096fa1781e8e7378785` |
+| 2 | `theorem` | [inventory_pow_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedProperPowerPrefixAttempt01Namespaced.lean/declarations/inventory-pow-injective.md) | 27 | `result-track:2cc516e0c04f91fffec5790dc4273d7a31a0617fda5a87a55e3da0c8f40c6a0f` |
+| 3 | `theorem` | [weighted_difference_eq_proper_exponents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedProperPowerPrefixAttempt01Namespaced.lean/declarations/weighted-difference-eq-proper-exponents.md) | 41 | `result-track:a77ae60e3db9798c0c97576feac03c569407d15e8fbb701bfb1c16fa91384ec2` |
+| 4 | `def` | [actualProperPowerClosedPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedProperPowerPrefixAttempt01Namespaced.lean/declarations/actualproperpowerclosedprefix.md) | 95 | `declaration-track:fcb478175371829e3dd7d46505a5927b29deb422f3036e5d7170b5f3944011c6` |
+| 5 | `theorem` | [actual_closed_prefix_dictionary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedProperPowerPrefixAttempt01Namespaced.lean/declarations/actual-closed-prefix-dictionary.md) | 99 | `result-track:b61dcf80f99fe89adea95e10e6193da4e24398fc0098d3d7803c6f0744da6cd3` |
+| 6 | `theorem` | [prime_power_closed_onset_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedProperPowerPrefixAttempt01Namespaced.lean/declarations/prime-power-closed-onset-iff.md) | 104 | `result-track:a484c13d437d9cebff6d9c942452860bf3f15273034718d0ae7ac56cd64bc6b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

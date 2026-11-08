@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [timeRow](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/declarations/timerow.md) | 34 | `declaration-track:dad3830ba9d52f9a526ae5e521649916aaa8aa8257eb617d229aca91408e9188` |
-| 2 | `def` | [columnRow](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/declarations/columnrow.md) | 39 | `declaration-track:e571cba048ec1d1dbe46ee93471b0194a17656db02c41e0946abd15310cdd121` |
-| 3 | `def` | [actualBilinearWork](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/declarations/actualbilinearwork.md) | 47 | `declaration-track:fb2b8f1f5db81f84bde948ef4b534e7b28392b9e4e29591141972d749d430e1e` |
-| 4 | `theorem` | [actualBilinearWork_eq_jointMangoldtErrorWork](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/declarations/actualbilinearwork-eq-jointmangoldterrorwork.md) | 52 | `result-track:b638881e6c4d89ffb2b72b07c4f6f2e44c608c403600745e934862bd8a5c77ee` |
-| 5 | `def` | [compensatedBilinearWork](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/declarations/compensatedbilinearwork.md) | 58 | `declaration-track:655b2771a4e7b4ce77a5543870993620add9ec4d64bad2c1a9a9583d9d1f36e7` |
-| 6 | `theorem` | [compensatedBilinearWork_eq_compensatedJointWork](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/declarations/compensatedbilinearwork-eq-compensatedjointwork.md) | 65 | `result-track:59d2d708283027af4484eebc5c5fb46dd3c93eb1fb2964597368b0988bf819c5` |
-| 7 | `theorem` | [residual_tail_of_compensatedBilinearWork_tail](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/declarations/residual-tail-of-compensatedbilinearwork-tail.md) | 71 | `result-track:2d3c8673805c142e3a66bd6bdf68d4bf9afa5f21697cd6186946c4ea4d333a85` |
-| 8 | `theorem` | [estimate_of_compensatedBilinearWork_tail](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/declarations/estimate-of-compensatedbilinearwork-tail.md) | 82 | `result-track:5cafec2205a3f5dfe86190c35b59eb4b2112d6c1448ad049fa4d4a9e50545223` |
+| 1 | `def` | [timeRow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/declarations/timerow.md) | 34 | `declaration-track:dad3830ba9d52f9a526ae5e521649916aaa8aa8257eb617d229aca91408e9188` |
+| 2 | `def` | [columnRow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/declarations/columnrow.md) | 39 | `declaration-track:e571cba048ec1d1dbe46ee93471b0194a17656db02c41e0946abd15310cdd121` |
+| 3 | `def` | [actualBilinearWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/declarations/actualbilinearwork.md) | 47 | `declaration-track:fb2b8f1f5db81f84bde948ef4b534e7b28392b9e4e29591141972d749d430e1e` |
+| 4 | `theorem` | [actualBilinearWork_eq_jointMangoldtErrorWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/declarations/actualbilinearwork-eq-jointmangoldterrorwork.md) | 52 | `result-track:b638881e6c4d89ffb2b72b07c4f6f2e44c608c403600745e934862bd8a5c77ee` |
+| 5 | `def` | [compensatedBilinearWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/declarations/compensatedbilinearwork.md) | 58 | `declaration-track:655b2771a4e7b4ce77a5543870993620add9ec4d64bad2c1a9a9583d9d1f36e7` |
+| 6 | `theorem` | [compensatedBilinearWork_eq_compensatedJointWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/declarations/compensatedbilinearwork-eq-compensatedjointwork.md) | 65 | `result-track:59d2d708283027af4484eebc5c5fb46dd3c93eb1fb2964597368b0988bf819c5` |
+| 7 | `theorem` | [residual_tail_of_compensatedBilinearWork_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/declarations/residual-tail-of-compensatedbilinearwork-tail.md) | 71 | `result-track:2d3c8673805c142e3a66bd6bdf68d4bf9afa5f21697cd6186946c4ea4d333a85` |
+| 8 | `theorem` | [estimate_of_compensatedBilinearWork_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumerNamespaced.lean/declarations/estimate-of-compensatedbilinearwork-tail.md) | 82 | `result-track:5cafec2205a3f5dfe86190c35b59eb4b2112d6c1448ad049fa4d4a9e50545223` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AddEquiv.toMultiplicative](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/declarations/addequiv-tomultiplicative-source-edition-2.md) | 19 | `declaration-track:a041bf87822ad017ce99ef693fb3c07d8b5f5b8d1aac3825fb328102e5bed8bb` |
-| 2 | `def` | [MulEquiv.toAdditive](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/declarations/mulequiv-toadditive-source-edition-2.md) | 30 | `declaration-track:c32f95784e049a12df0a5f9714eec69103e86613408c6b842ab43ef42ec08290` |
-| 3 | `def` | [AddEquiv.toMultiplicative'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/declarations/addequiv-tomultiplicative.md) | 40 | `declaration-track:0eda1c9ce470f2ee3f96634b220a2ba4d1870cbd6d9c6823920e000fc808cb36` |
-| 4 | `def` | [MulEquiv.toAdditive'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/declarations/mulequiv-toadditive-source-edition-3.md) | 51 | `declaration-track:d98f8a23a61634255f3d7da3400f21f76b4d41de725c9ea3f2a817fc74003b09` |
-| 5 | `def` | [AddEquiv.toMultiplicative''](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/declarations/addequiv-tomultiplicative-source-edition-3.md) | 57 | `declaration-track:e7bdd0fb75fa7c85bf2e02fb725b511c070dcc282788075e30a4f7f1d66bce47` |
-| 6 | `def` | [MulEquiv.toAdditive''](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/declarations/mulequiv-toadditive.md) | 68 | `declaration-track:3bc3382c890491d20983ee04f609adf4d905bfdb4a4f52e21c8bc1990551ff3b` |
-| 7 | `def` | [AddEquiv.additiveMultiplicative](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/declarations/addequiv-additivemultiplicative.md) | 78 | `declaration-track:838c340eb1dc1933be53235a12bdc8cadf3e3c4cbb63e8f4b2d133be6348ce14` |
-| 8 | `def` | [MulEquiv.multiplicativeAdditive](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/declarations/mulequiv-multiplicativeadditive.md) | 83 | `declaration-track:a469eddae80912f40a221997173f27ea8b31c059b93b6723db75332dcfe211a9` |
+| 1 | `def` | [AddEquiv.toMultiplicative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/declarations/addequiv-tomultiplicative-source-edition-2.md) | 19 | `declaration-track:a041bf87822ad017ce99ef693fb3c07d8b5f5b8d1aac3825fb328102e5bed8bb` |
+| 2 | `def` | [MulEquiv.toAdditive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/declarations/mulequiv-toadditive-source-edition-2.md) | 30 | `declaration-track:c32f95784e049a12df0a5f9714eec69103e86613408c6b842ab43ef42ec08290` |
+| 3 | `def` | [AddEquiv.toMultiplicative'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/declarations/addequiv-tomultiplicative.md) | 40 | `declaration-track:0eda1c9ce470f2ee3f96634b220a2ba4d1870cbd6d9c6823920e000fc808cb36` |
+| 4 | `def` | [MulEquiv.toAdditive'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/declarations/mulequiv-toadditive-source-edition-3.md) | 51 | `declaration-track:d98f8a23a61634255f3d7da3400f21f76b4d41de725c9ea3f2a817fc74003b09` |
+| 5 | `def` | [AddEquiv.toMultiplicative''](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/declarations/addequiv-tomultiplicative-source-edition-3.md) | 57 | `declaration-track:e7bdd0fb75fa7c85bf2e02fb725b511c070dcc282788075e30a4f7f1d66bce47` |
+| 6 | `def` | [MulEquiv.toAdditive''](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/declarations/mulequiv-toadditive.md) | 68 | `declaration-track:3bc3382c890491d20983ee04f609adf4d905bfdb4a4f52e21c8bc1990551ff3b` |
+| 7 | `def` | [AddEquiv.additiveMultiplicative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/declarations/addequiv-additivemultiplicative.md) | 78 | `declaration-track:838c340eb1dc1933be53235a12bdc8cadf3e3c4cbb63e8f4b2d133be6348ce14` |
+| 8 | `def` | [MulEquiv.multiplicativeAdditive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypeTags.lean/declarations/mulequiv-multiplicativeadditive.md) | 83 | `declaration-track:a469eddae80912f40a221997173f27ea8b31c059b93b6723db75332dcfe211a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

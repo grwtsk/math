@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/AsymptoticPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/AsymptoticPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [one_isLittleO_logCounting_single](../../../../FunctionsOfAComplexVariable/AsymptoticPublic.lean/declarations/one-islittleo-logcounting-single.md) | 45 | `result-track:7208ef9a7e8e3d79a84ae6997bc9a5503dccf28ed9386dd7e5023a48c0da979b` |
-| 2 | `lemma` | [zero_iff_logCounting_bounded](../../../../FunctionsOfAComplexVariable/AsymptoticPublic.lean/declarations/zero-iff-logcounting-bounded.md) | 59 | `result-track:bd6882b09a8aaa99222f7fa89ea0bb09ae7e1b5a32278dac5243ee3764735fdd` |
-| 3 | `lemma` | [logCounting_single_isBigO_log](../../../../FunctionsOfAComplexVariable/AsymptoticPublic.lean/declarations/logcounting-single-isbigo-log.md) | 94 | `result-track:bf7fef09aff352a61f1b6d4152d6b58c2419fb116cb459c97fe86ff39a5df2e9` |
-| 4 | `lemma` | [logCounting_isBigO_log_of_finite_support](../../../../FunctionsOfAComplexVariable/AsymptoticPublic.lean/declarations/logcounting-isbigo-log-of-finite-support.md) | 106 | `result-track:dfc7eda23302f4f2d1b7443e2ce45129bda72d7b78c76aa6715b4b4d55d787b0` |
-| 5 | `lemma` | [finite_support_of_logCounting_isBigO_log](../../../../FunctionsOfAComplexVariable/AsymptoticPublic.lean/declarations/finite-support-of-logcounting-isbigo-log.md) | 116 | `result-track:6378bed3a61a613f09f2e370746ebe7c418f51031cb8db108bae08414cdb637a` |
-| 6 | `theorem` | [finite_support_iff_logCounting_isBigO_log](../../../../FunctionsOfAComplexVariable/AsymptoticPublic.lean/declarations/finite-support-iff-logcounting-isbigo-log.md) | 164 | `result-track:1ba378673fd5ec5e1c971e867d7be7f032dd4252dde0a6a3bea935116f0fdd82` |
-| 7 | `theorem` | [logCounting_isBigO_one_iff_analyticOnNhd](../../../../FunctionsOfAComplexVariable/AsymptoticPublic.lean/declarations/logcounting-isbigo-one-iff-analyticonnhd.md) | 185 | `result-track:e0464e780313cc17cda11d8ff638500390b7b85cbfb59c08b3fc585465981302` |
-| 8 | `theorem` | [logCounting_isBigO_log_iff_finite_support](../../../../FunctionsOfAComplexVariable/AsymptoticPublic.lean/declarations/logcounting-isbigo-log-iff-finite-support.md) | 196 | `result-track:5c10f8bac8a09d780eb3176be44cfe2a9f2228c1d0dcfed85154834947891f52` |
+| 1 | `lemma` | [one_isLittleO_logCounting_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticPublic.lean/declarations/one-islittleo-logcounting-single.md) | 45 | `result-track:7208ef9a7e8e3d79a84ae6997bc9a5503dccf28ed9386dd7e5023a48c0da979b` |
+| 2 | `lemma` | [zero_iff_logCounting_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticPublic.lean/declarations/zero-iff-logcounting-bounded.md) | 59 | `result-track:bd6882b09a8aaa99222f7fa89ea0bb09ae7e1b5a32278dac5243ee3764735fdd` |
+| 3 | `lemma` | [logCounting_single_isBigO_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticPublic.lean/declarations/logcounting-single-isbigo-log.md) | 94 | `result-track:bf7fef09aff352a61f1b6d4152d6b58c2419fb116cb459c97fe86ff39a5df2e9` |
+| 4 | `lemma` | [logCounting_isBigO_log_of_finite_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticPublic.lean/declarations/logcounting-isbigo-log-of-finite-support.md) | 106 | `result-track:dfc7eda23302f4f2d1b7443e2ce45129bda72d7b78c76aa6715b4b4d55d787b0` |
+| 5 | `lemma` | [finite_support_of_logCounting_isBigO_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticPublic.lean/declarations/finite-support-of-logcounting-isbigo-log.md) | 116 | `result-track:6378bed3a61a613f09f2e370746ebe7c418f51031cb8db108bae08414cdb637a` |
+| 6 | `theorem` | [finite_support_iff_logCounting_isBigO_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticPublic.lean/declarations/finite-support-iff-logcounting-isbigo-log.md) | 164 | `result-track:1ba378673fd5ec5e1c971e867d7be7f032dd4252dde0a6a3bea935116f0fdd82` |
+| 7 | `theorem` | [logCounting_isBigO_one_iff_analyticOnNhd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticPublic.lean/declarations/logcounting-isbigo-one-iff-analyticonnhd.md) | 185 | `result-track:e0464e780313cc17cda11d8ff638500390b7b85cbfb59c08b3fc585465981302` |
+| 8 | `theorem` | [logCounting_isBigO_log_iff_finite_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticPublic.lean/declarations/logcounting-isbigo-log-iff-finite-support.md) | 196 | `result-track:5c10f8bac8a09d780eb3176be44cfe2a9f2228c1d0dcfed85154834947891f52` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

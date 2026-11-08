@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD672dfa9be4bc16aNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD672dfa9be4bc16aNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD672dfa9be4bc16aNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD672dfa9be4bc16aNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -64,12 +64,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Closed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD672dfa9be4bc16aNamespaced.lean/declarations/closed.md) | 28 | `declaration-track:3374b184e20fd6a23f8bd3976a2000cd39d88a5a116000ca5d2dd4d557504b50` |
-| 2 | `theorem` | [coreAxis_mem_required](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD672dfa9be4bc16aNamespaced.lean/declarations/coreaxis-mem-required.md) | 32 | `result-track:cc331fd36fbb95a88f08748c62ebfd2ebd913ca3b9ba84b832877e32c361148a` |
-| 3 | `theorem` | [coreAxis_discharged](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD672dfa9be4bc16aNamespaced.lean/declarations/coreaxis-discharged.md) | 38 | `result-track:e99fa243cc834e9e4f1dab0b7a822d721b0947debc9462ea27ebbca400d8ceab` |
-| 4 | `theorem` | [evidence_valid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD672dfa9be4bc16aNamespaced.lean/declarations/evidence-valid.md) | 45 | `result-track:97baf72ca6032f441b9129e594ba89575afd8a6be27d1c205b072f61754d6b2f` |
-| 5 | `structure` | [FaceTransition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD672dfa9be4bc16aNamespaced.lean/declarations/facetransition.md) | 51 | `declaration-track:d44c8e2193d3d7339825f4a40edd61dfe9e4afadbc871582c767eae071ad9277` |
-| 6 | `structure` | [TheoremCell](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD672dfa9be4bc16aNamespaced.lean/declarations/theoremcell.md) | 63 | `declaration-track:a7abd07c980f47dfa263e6cff6ce31d9ca238dabf8f288ca1256976057748f09` |
+| 1 | `def` | [Closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD672dfa9be4bc16aNamespaced.lean/declarations/closed.md) | 28 | `declaration-track:3374b184e20fd6a23f8bd3976a2000cd39d88a5a116000ca5d2dd4d557504b50` |
+| 2 | `theorem` | [coreAxis_mem_required](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD672dfa9be4bc16aNamespaced.lean/declarations/coreaxis-mem-required.md) | 32 | `result-track:cc331fd36fbb95a88f08748c62ebfd2ebd913ca3b9ba84b832877e32c361148a` |
+| 3 | `theorem` | [coreAxis_discharged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD672dfa9be4bc16aNamespaced.lean/declarations/coreaxis-discharged.md) | 38 | `result-track:e99fa243cc834e9e4f1dab0b7a822d721b0947debc9462ea27ebbca400d8ceab` |
+| 4 | `theorem` | [evidence_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD672dfa9be4bc16aNamespaced.lean/declarations/evidence-valid.md) | 45 | `result-track:97baf72ca6032f441b9129e594ba89575afd8a6be27d1c205b072f61754d6b2f` |
+| 5 | `structure` | [FaceTransition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD672dfa9be4bc16aNamespaced.lean/declarations/facetransition.md) | 51 | `declaration-track:d44c8e2193d3d7339825f4a40edd61dfe9e4afadbc871582c767eae071ad9277` |
+| 6 | `structure` | [TheoremCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD672dfa9be4bc16aNamespaced.lean/declarations/theoremcell.md) | 63 | `declaration-track:a7abd07c980f47dfa263e6cff6ce31d9ca238dabf8f288ca1256976057748f09` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

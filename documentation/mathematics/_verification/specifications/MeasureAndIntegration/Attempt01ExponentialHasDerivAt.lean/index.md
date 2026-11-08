@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Attempt01ExponentialHasDerivAt.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Attempt01ExponentialHasDerivAt.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ExponentialHasDerivAt.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ExponentialHasDerivAt.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exponential_hasDerivAt](../../../../MeasureAndIntegration/Attempt01ExponentialHasDerivAt.lean/declarations/exponential-hasderivat.md) | 21 | `result-track:ff4c4ef0b5f69590880c91daa5476d180de064c5003832f52f3bee0b94a06683` |
-| 2 | `theorem` | [finite_abel](../../../../MeasureAndIntegration/Attempt01ExponentialHasDerivAt.lean/declarations/finite-abel.md) | 28 | `result-track:843b279a0c3670b73fa4a30a18b9b732555d0fa5cd6edec0cb7c4757d09268f6` |
+| 1 | `theorem` | [exponential_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ExponentialHasDerivAt.lean/declarations/exponential-hasderivat.md) | 21 | `result-track:ff4c4ef0b5f69590880c91daa5476d180de064c5003832f52f3bee0b94a06683` |
+| 2 | `theorem` | [finite_abel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ExponentialHasDerivAt.lean/declarations/finite-abel.md) | 28 | `result-track:843b279a0c3670b73fa4a30a18b9b732555d0fa5cd6edec0cb7c4757d09268f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

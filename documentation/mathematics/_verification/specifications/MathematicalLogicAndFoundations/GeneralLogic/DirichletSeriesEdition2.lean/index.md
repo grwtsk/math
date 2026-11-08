@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HalfPlane](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/declarations/halfplane.md) | 17 | `declaration-track:b5bc773160fa10434aa06a85d52affd6508773ffc0ba99c60c2036c23dcfaba4` |
-| 2 | `structure` | [DirichletSeries](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/declarations/dirichletseries.md) | 22 | `declaration-track:26a32dfa37df2bccb8f347020d7ab386ca861f481c976889847e1faac74a8679` |
-| 3 | `structure` | [AbsoluteConvergenceCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/declarations/absoluteconvergencecertificate.md) | 27 | `declaration-track:8358604ff4b4b8616d876522ed15a36f149ea48c902d6b8687c06c03328c35e3` |
-| 4 | `structure` | [CauchyProductCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/declarations/cauchyproductcertificate.md) | 36 | `declaration-track:d2f6d75fcd406dcdb587c0c8669d753e7dedd3ad0a58941a440fecf3c7fcd92f` |
-| 5 | `theorem` | [absolute_convergence_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/declarations/absolute-convergence-sound.md) | 45 | `result-track:cfc55136f2509ebd49636db37fed2af058826bd9b6bb1a0e57321f3be1d23986` |
-| 6 | `theorem` | [cauchy_product_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/declarations/cauchy-product-sound.md) | 52 | `result-track:eb8339fe048405bf6250a1b769a985ef8d86d761a4a49d74937426af15028771` |
-| 7 | `def` | [DirichletSeriesOwnsConvergence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/declarations/dirichletseriesownsconvergence.md) | 63 | `declaration-track:4a4d0b5b759b82d76e6acfb48c5ca33fffd9a3342d945f497b9065668d0f9e19` |
-| 8 | `theorem` | [dirichlet_series_not_convergence_authority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/declarations/dirichlet-series-not-convergence-authority.md) | 67 | `result-track:fcbeab585cebba4ce1808021f4c877435057311bbbaf2688c3cf933286982d90` |
+| 1 | `structure` | [HalfPlane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/declarations/halfplane.md) | 17 | `declaration-track:b5bc773160fa10434aa06a85d52affd6508773ffc0ba99c60c2036c23dcfaba4` |
+| 2 | `structure` | [DirichletSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/declarations/dirichletseries.md) | 22 | `declaration-track:26a32dfa37df2bccb8f347020d7ab386ca861f481c976889847e1faac74a8679` |
+| 3 | `structure` | [AbsoluteConvergenceCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/declarations/absoluteconvergencecertificate.md) | 27 | `declaration-track:8358604ff4b4b8616d876522ed15a36f149ea48c902d6b8687c06c03328c35e3` |
+| 4 | `structure` | [CauchyProductCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/declarations/cauchyproductcertificate.md) | 36 | `declaration-track:d2f6d75fcd406dcdb587c0c8669d753e7dedd3ad0a58941a440fecf3c7fcd92f` |
+| 5 | `theorem` | [absolute_convergence_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/declarations/absolute-convergence-sound.md) | 45 | `result-track:cfc55136f2509ebd49636db37fed2af058826bd9b6bb1a0e57321f3be1d23986` |
+| 6 | `theorem` | [cauchy_product_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/declarations/cauchy-product-sound.md) | 52 | `result-track:eb8339fe048405bf6250a1b769a985ef8d86d761a4a49d74937426af15028771` |
+| 7 | `def` | [DirichletSeriesOwnsConvergence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/declarations/dirichletseriesownsconvergence.md) | 63 | `declaration-track:4a4d0b5b759b82d76e6acfb48c5ca33fffd9a3342d945f497b9065668d0f9e19` |
+| 8 | `theorem` | [dirichlet_series_not_convergence_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DirichletSeriesEdition2.lean/declarations/dirichlet-series-not-convergence-authority.md) | 67 | `result-track:fcbeab585cebba4ce1808021f4c877435057311bbbaf2688c3cf933286982d90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

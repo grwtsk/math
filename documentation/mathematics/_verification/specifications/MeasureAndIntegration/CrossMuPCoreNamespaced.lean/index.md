@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CrossMuPCoreNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CrossMuPCoreNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPCoreNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPCoreNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Mform_integrableOn'](../../../../MeasureAndIntegration/CrossMuPCoreNamespaced.lean/declarations/mform-integrableon.md) | 34 | `result-track:8025ee3d8c9c87b834739b6da19111af98b1833dc90499bd2fd775b83f664180` |
-| 2 | `lemma` | [setIntegral_sq_shift_le_left](../../../../MeasureAndIntegration/CrossMuPCoreNamespaced.lean/declarations/setintegral-sq-shift-le-left.md) | 43 | `result-track:00f871eee1be4ed94177becd2bce4fe5335b0588284d20a494d95473b11e28d2` |
-| 3 | `lemma` | [setIntegral_Icc_eq_intervalIntegral](../../../../MeasureAndIntegration/CrossMuPCoreNamespaced.lean/declarations/setintegral-icc-eq-intervalintegral.md) | 51 | `result-track:7c03d08d34261a803f9ee8185ccae43495970f6df17ed6a8b4c021381799364b` |
-| 4 | `lemma` | [Mform_eq_iter](../../../../MeasureAndIntegration/CrossMuPCoreNamespaced.lean/declarations/mform-eq-iter.md) | 57 | `result-track:ace213813c8165f3b1aa6d1667328053c09f8ee9d2f94dfaa8886bad2f375929` |
-| 5 | `lemma` | [setIntegral_sq_shift_le'](../../../../MeasureAndIntegration/CrossMuPCoreNamespaced.lean/declarations/setintegral-sq-shift-le.md) | 67 | `result-track:b7af58606fe7ca942e7878daa1d1077a6fd2f9e037680c9514fe23976f86626c` |
-| 6 | `lemma` | [outer_ibp](../../../../MeasureAndIntegration/CrossMuPCoreNamespaced.lean/declarations/outer-ibp.md) | 76 | `result-track:d3f4a9ad9eff630bc41987c64281196f089a3e09547d0d18bc45ff7d25347dda` |
-| 7 | `lemma` | [inner_ibp_phase](../../../../MeasureAndIntegration/CrossMuPCoreNamespaced.lean/declarations/inner-ibp-phase.md) | 100 | `result-track:8295d1fa68c7d70a88689566a65081da7a5a60515a2521cef0f01b2a4efdad99` |
-| 8 | `theorem` | [abs_Mform_cos_phase_le](../../../../MeasureAndIntegration/CrossMuPCoreNamespaced.lean/declarations/abs-mform-cos-phase-le.md) | 137 | `result-track:2247f9cac04c743d50d7b5f03a63913a795992f4ddd51fbf6e69d70766717f49` |
-| 9 | `theorem` | [abs_Mform_cos_le](../../../../MeasureAndIntegration/CrossMuPCoreNamespaced.lean/declarations/abs-mform-cos-le.md) | 279 | `result-track:ee532f4961cf91b004b327e84298105d1fb59e8ccf10934779c2b5b41b33142a` |
+| 1 | `lemma` | [Mform_integrableOn'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPCoreNamespaced.lean/declarations/mform-integrableon.md) | 34 | `result-track:8025ee3d8c9c87b834739b6da19111af98b1833dc90499bd2fd775b83f664180` |
+| 2 | `lemma` | [setIntegral_sq_shift_le_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPCoreNamespaced.lean/declarations/setintegral-sq-shift-le-left.md) | 43 | `result-track:00f871eee1be4ed94177becd2bce4fe5335b0588284d20a494d95473b11e28d2` |
+| 3 | `lemma` | [setIntegral_Icc_eq_intervalIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPCoreNamespaced.lean/declarations/setintegral-icc-eq-intervalintegral.md) | 51 | `result-track:7c03d08d34261a803f9ee8185ccae43495970f6df17ed6a8b4c021381799364b` |
+| 4 | `lemma` | [Mform_eq_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPCoreNamespaced.lean/declarations/mform-eq-iter.md) | 57 | `result-track:ace213813c8165f3b1aa6d1667328053c09f8ee9d2f94dfaa8886bad2f375929` |
+| 5 | `lemma` | [setIntegral_sq_shift_le'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPCoreNamespaced.lean/declarations/setintegral-sq-shift-le.md) | 67 | `result-track:b7af58606fe7ca942e7878daa1d1077a6fd2f9e037680c9514fe23976f86626c` |
+| 6 | `lemma` | [outer_ibp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPCoreNamespaced.lean/declarations/outer-ibp.md) | 76 | `result-track:d3f4a9ad9eff630bc41987c64281196f089a3e09547d0d18bc45ff7d25347dda` |
+| 7 | `lemma` | [inner_ibp_phase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPCoreNamespaced.lean/declarations/inner-ibp-phase.md) | 100 | `result-track:8295d1fa68c7d70a88689566a65081da7a5a60515a2521cef0f01b2a4efdad99` |
+| 8 | `theorem` | [abs_Mform_cos_phase_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPCoreNamespaced.lean/declarations/abs-mform-cos-phase-le.md) | 137 | `result-track:2247f9cac04c743d50d7b5f03a63913a795992f4ddd51fbf6e69d70766717f49` |
+| 9 | `theorem` | [abs_Mform_cos_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPCoreNamespaced.lean/declarations/abs-mform-cos-le.md) | 279 | `result-track:ee532f4961cf91b004b327e84298105d1fb59e8ccf10934779c2b5b41b33142a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

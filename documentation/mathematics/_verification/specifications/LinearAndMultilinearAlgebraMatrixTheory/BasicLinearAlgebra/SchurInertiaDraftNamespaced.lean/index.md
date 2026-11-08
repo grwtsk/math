@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchurInertiaDraftNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchurInertiaDraftNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchurInertiaDraftNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchurInertiaDraftNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [complexInertia](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchurInertiaDraftNamespaced.lean/declarations/complexinertia.md) | 24 | `declaration-track:672800abe1f3959cb45d828965f5ea9c18d6c7c17b6e0bbcd0f93e6ee63c17f9` |
-| 2 | `theorem` | [positive_count_schur](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchurInertiaDraftNamespaced.lean/declarations/positive-count-schur.md) | 30 | `result-track:b83abdd77cc5dd44f2c3ae47814572455697c3b5e8ddb4921b0e1cc7b3c0768d` |
-| 3 | `theorem` | [negative_count_schur](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchurInertiaDraftNamespaced.lean/declarations/negative-count-schur.md) | 41 | `result-track:04fa04defa3de684e874c840b11c64a51a0646ef5e531d11963abc2114b11dcc` |
-| 4 | `theorem` | [complexInertia_schur](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchurInertiaDraftNamespaced.lean/declarations/complexinertia-schur.md) | 52 | `result-track:17edbdeff5c4d1a73dfcb52daf479531e657bca9df5ea8e707f9c88a3af2635e` |
-| 5 | `def` | [ComplexFeshbachInertiaObligation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchurInertiaDraftNamespaced.lean/declarations/complexfeshbachinertiaobligation.md) | 63 | `declaration-track:4e92758de34d5024ae7ad5e9c32d82bcb8239433225e9489ae9255758afd34e3` |
-| 6 | `theorem` | [issue266_obligation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchurInertiaDraftNamespaced.lean/declarations/issue266-obligation.md) | 73 | `result-track:79e7729f43dc84d8aeb107e7ce6e57f40680c0e2ca44ab89fca9ab3620fdf8d4` |
+| 1 | `def` | [complexInertia](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchurInertiaDraftNamespaced.lean/declarations/complexinertia.md) | 24 | `declaration-track:672800abe1f3959cb45d828965f5ea9c18d6c7c17b6e0bbcd0f93e6ee63c17f9` |
+| 2 | `theorem` | [positive_count_schur](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchurInertiaDraftNamespaced.lean/declarations/positive-count-schur.md) | 30 | `result-track:b83abdd77cc5dd44f2c3ae47814572455697c3b5e8ddb4921b0e1cc7b3c0768d` |
+| 3 | `theorem` | [negative_count_schur](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchurInertiaDraftNamespaced.lean/declarations/negative-count-schur.md) | 41 | `result-track:04fa04defa3de684e874c840b11c64a51a0646ef5e531d11963abc2114b11dcc` |
+| 4 | `theorem` | [complexInertia_schur](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchurInertiaDraftNamespaced.lean/declarations/complexinertia-schur.md) | 52 | `result-track:17edbdeff5c4d1a73dfcb52daf479531e657bca9df5ea8e707f9c88a3af2635e` |
+| 5 | `def` | [ComplexFeshbachInertiaObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchurInertiaDraftNamespaced.lean/declarations/complexfeshbachinertiaobligation.md) | 63 | `declaration-track:4e92758de34d5024ae7ad5e9c32d82bcb8239433225e9489ae9255758afd34e3` |
+| 6 | `theorem` | [issue266_obligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchurInertiaDraftNamespaced.lean/declarations/issue266-obligation.md) | 73 | `result-track:79e7729f43dc84d8aeb107e7ce6e57f40680c0e2ca44ab89fca9ab3620fdf8d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

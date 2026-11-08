@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralBundleNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralBundleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralBundleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralBundleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FixedShapeSpectralFiber](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralBundleNamespaced.lean/declarations/fixedshapespectralfiber.md) | 31 | `declaration-track:b4789df88ca343c099be1e71fbc63938de6f916e88989906ee58f0750a02a554` |
-| 2 | `def` | [constantSpectralBundle](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralBundleNamespaced.lean/declarations/constantspectralbundle.md) | 37 | `declaration-track:14bb2b1dc2afb45251746d0ff5156fa19f7ea6fff0985c4ab723491ffd6b7ae7` |
-| 3 | `def` | [constantSpectralTransport](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralBundleNamespaced.lean/declarations/constantspectraltransport.md) | 43 | `declaration-track:c109030003eeff6cb150a46bbdd7e44eed63eaf1ea213122d088c55aa808b4eb` |
-| 4 | `theorem` | [constantSpectralTransport_roundtrip](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralBundleNamespaced.lean/declarations/constantspectraltransport-roundtrip.md) | 50 | `result-track:80ddec4d646d68a3eca9cd016e982e26ea29abc5093ce3b5bb42b72eb6e3844e` |
-| 5 | `structure` | [SpectralExpansionBundleContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralBundleNamespaced.lean/declarations/spectralexpansionbundlecontract.md) | 61 | `declaration-track:6022a3b6274689f8b7a8c9ad7f53482c0c2a1ab8d42ea8ebbe1547beba8393cb` |
+| 1 | `structure` | [FixedShapeSpectralFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralBundleNamespaced.lean/declarations/fixedshapespectralfiber.md) | 31 | `declaration-track:b4789df88ca343c099be1e71fbc63938de6f916e88989906ee58f0750a02a554` |
+| 2 | `def` | [constantSpectralBundle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralBundleNamespaced.lean/declarations/constantspectralbundle.md) | 37 | `declaration-track:14bb2b1dc2afb45251746d0ff5156fa19f7ea6fff0985c4ab723491ffd6b7ae7` |
+| 3 | `def` | [constantSpectralTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralBundleNamespaced.lean/declarations/constantspectraltransport.md) | 43 | `declaration-track:c109030003eeff6cb150a46bbdd7e44eed63eaf1ea213122d088c55aa808b4eb` |
+| 4 | `theorem` | [constantSpectralTransport_roundtrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralBundleNamespaced.lean/declarations/constantspectraltransport-roundtrip.md) | 50 | `result-track:80ddec4d646d68a3eca9cd016e982e26ea29abc5093ce3b5bb42b72eb6e3844e` |
+| 5 | `structure` | [SpectralExpansionBundleContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralBundleNamespaced.lean/declarations/spectralexpansionbundlecontract.md) | 61 | `declaration-track:6022a3b6274689f8b7a8c9ad7f53482c0c2a1ab8d42ea8ebbe1547beba8393cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

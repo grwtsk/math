@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Ring_of_Mon_](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/declarations/ring-of-mon.md) | 51 | `declaration-track:36b0175802054d5c1274d0c1b0665fcce8bd05cae2af263dd5036dd6a52b1680` |
-| 2 | `instance` | [Algebra_of_Mon_](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/declarations/algebra-of-mon.md) | 76 | `declaration-track:36a97b62f2fc0486aa975da04179edf5417f608de8f87e0b70512543fddaf678` |
-| 3 | `theorem` | [algebraMap](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/declarations/algebramap.md) | 93 | `result-track:f77108975190c7f6cdd4a7c523398be67d7810a24aac8d1fd1f555784dba00ab` |
-| 4 | `def` | [functor](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/declarations/functor.md) | 99 | `declaration-track:b549054f9412ebdb3f9f2bf242cd792174db39e49e46f905c16e43cc032a27e2` |
-| 5 | `def` | [inverseObj](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/declarations/inverseobj.md) | 111 | `declaration-track:aff5e6703fc4a24c65b7dd3e72dd21b973a1e7a33207d9737791a15e95d602c3` |
-| 6 | `def` | [inverse](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/declarations/inverse.md) | 159 | `declaration-track:23d091c12482c6b9249469035f6c2d717720f21e6c685d38c0c7a22ae1f58b5b` |
-| 7 | `def` | [monModuleEquivalenceAlgebra](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/declarations/monmoduleequivalencealgebra.md) | 173 | `declaration-track:3ee0f4196580d2a0d2b18dda1c676bc5b94a019f6bf01165a283e53f7047ed58` |
-| 8 | `def` | [monModuleEquivalenceAlgebraForget](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/declarations/monmoduleequivalencealgebraforget.md) | 222 | `declaration-track:71f1117563e02d29c150dd6ad4cc1dfeb3698e3c8d43cccb6f5e7b14bc4981ac` |
+| 1 | `instance` | [Ring_of_Mon_](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/declarations/ring-of-mon.md) | 51 | `declaration-track:36b0175802054d5c1274d0c1b0665fcce8bd05cae2af263dd5036dd6a52b1680` |
+| 2 | `instance` | [Algebra_of_Mon_](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/declarations/algebra-of-mon.md) | 76 | `declaration-track:36a97b62f2fc0486aa975da04179edf5417f608de8f87e0b70512543fddaf678` |
+| 3 | `theorem` | [algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/declarations/algebramap.md) | 93 | `result-track:f77108975190c7f6cdd4a7c523398be67d7810a24aac8d1fd1f555784dba00ab` |
+| 4 | `def` | [functor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/declarations/functor.md) | 99 | `declaration-track:b549054f9412ebdb3f9f2bf242cd792174db39e49e46f905c16e43cc032a27e2` |
+| 5 | `def` | [inverseObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/declarations/inverseobj.md) | 111 | `declaration-track:aff5e6703fc4a24c65b7dd3e72dd21b973a1e7a33207d9737791a15e95d602c3` |
+| 6 | `def` | [inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/declarations/inverse.md) | 159 | `declaration-track:23d091c12482c6b9249469035f6c2d717720f21e6c685d38c0c7a22ae1f58b5b` |
+| 7 | `def` | [monModuleEquivalenceAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/declarations/monmoduleequivalencealgebra.md) | 173 | `declaration-track:3ee0f4196580d2a0d2b18dda1c676bc5b94a019f6bf01165a283e53f7047ed58` |
+| 8 | `def` | [monModuleEquivalenceAlgebraForget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalModuleNamespaced.lean/declarations/monmoduleequivalencealgebraforget.md) | 222 | `declaration-track:71f1117563e02d29c150dd6ad4cc1dfeb3698e3c8d43cccb6f5e7b14bc4981ac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

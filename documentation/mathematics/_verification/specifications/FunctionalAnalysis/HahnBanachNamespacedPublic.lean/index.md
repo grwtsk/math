@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/HahnBanachNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/HahnBanachNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Module.Dual.exists_extension_of_le_seminorm_real](../../../../FunctionalAnalysis/HahnBanachNamespacedPublic.lean/declarations/module-dual-exists-extension-of-le-seminorm-real.md) | 46 | `result-track:0d4dc57bcc7c23f5cd12012d3a6461645fbf09bc48494bd389623e5e51806891` |
-| 2 | `theorem` | [Module.Dual.exists_extension_of_le_seminorm](../../../../FunctionalAnalysis/HahnBanachNamespacedPublic.lean/declarations/module-dual-exists-extension-of-le-seminorm.md) | 58 | `result-track:2d43ff093265dcc340e3409f029a325fb1693c89def92d8621646ae56e340236` |
-| 3 | `theorem` | [Module.Dual.exists_continuous_extension_of_le_seminorm_real](../../../../FunctionalAnalysis/HahnBanachNamespacedPublic.lean/declarations/module-dual-exists-continuous-extension-of-le-seminorm-real.md) | 78 | `result-track:0ebddc299ae0fa78167ba7a9e25e18e69af7ba82a7e3032bf24f8faf695f112a` |
-| 4 | `theorem` | [Module.Dual.exists_continuous_extension_of_le_seminorm](../../../../FunctionalAnalysis/HahnBanachNamespacedPublic.lean/declarations/module-dual-exists-continuous-extension-of-le-seminorm.md) | 90 | `result-track:ae31e91b793888920c914cf1587e39130919d2dc9e8f5afd1efe4fe375f74ca5` |
-| 5 | `theorem` | [StrongDual.exists_extension](../../../../FunctionalAnalysis/HahnBanachNamespacedPublic.lean/declarations/strongdual-exists-extension.md) | 99 | `result-track:73067e15e6592c64d26140311b6cd1296454963cbd274ab0bbe2c6551a4609d4` |
-| 6 | `lemma` | [ContinuousLinearMap.exist_extension_of_finiteDimensional_range](../../../../FunctionalAnalysis/HahnBanachNamespacedPublic.lean/declarations/continuouslinearmap-exist-extension-of-finitedimensional-range.md) | 114 | `result-track:532a263f44c5c8401de36622a814687e3ee40c3e1667774f3776b79cf09e68d1` |
-| 7 | `lemma` | [Submodule.ClosedComplemented.of_finiteDimensional](../../../../FunctionalAnalysis/HahnBanachNamespacedPublic.lean/declarations/submodule-closedcomplemented-of-finitedimensional.md) | 129 | `result-track:d252e4123932e4b7ad210f5f039d3518fdb90969cfcdd6ec5aa5068c59b7bbef` |
+| 1 | `theorem` | [Module.Dual.exists_extension_of_le_seminorm_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachNamespacedPublic.lean/declarations/module-dual-exists-extension-of-le-seminorm-real.md) | 46 | `result-track:0d4dc57bcc7c23f5cd12012d3a6461645fbf09bc48494bd389623e5e51806891` |
+| 2 | `theorem` | [Module.Dual.exists_extension_of_le_seminorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachNamespacedPublic.lean/declarations/module-dual-exists-extension-of-le-seminorm.md) | 58 | `result-track:2d43ff093265dcc340e3409f029a325fb1693c89def92d8621646ae56e340236` |
+| 3 | `theorem` | [Module.Dual.exists_continuous_extension_of_le_seminorm_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachNamespacedPublic.lean/declarations/module-dual-exists-continuous-extension-of-le-seminorm-real.md) | 78 | `result-track:0ebddc299ae0fa78167ba7a9e25e18e69af7ba82a7e3032bf24f8faf695f112a` |
+| 4 | `theorem` | [Module.Dual.exists_continuous_extension_of_le_seminorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachNamespacedPublic.lean/declarations/module-dual-exists-continuous-extension-of-le-seminorm.md) | 90 | `result-track:ae31e91b793888920c914cf1587e39130919d2dc9e8f5afd1efe4fe375f74ca5` |
+| 5 | `theorem` | [StrongDual.exists_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachNamespacedPublic.lean/declarations/strongdual-exists-extension.md) | 99 | `result-track:73067e15e6592c64d26140311b6cd1296454963cbd274ab0bbe2c6551a4609d4` |
+| 6 | `lemma` | [ContinuousLinearMap.exist_extension_of_finiteDimensional_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachNamespacedPublic.lean/declarations/continuouslinearmap-exist-extension-of-finitedimensional-range.md) | 114 | `result-track:532a263f44c5c8401de36622a814687e3ee40c3e1667774f3776b79cf09e68d1` |
+| 7 | `lemma` | [Submodule.ClosedComplemented.of_finiteDimensional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachNamespacedPublic.lean/declarations/submodule-closedcomplemented-of-finitedimensional.md) | 129 | `result-track:d252e4123932e4b7ad210f5f039d3518fdb90969cfcdd6ec5aa5068c59b7bbef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/EMetricSpaceParacompact.lean/index.md) · [Full source](../../../../GeneralTopology/EMetricSpaceParacompact.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EMetricSpaceParacompact.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EMetricSpaceParacompact.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/EMetricSpaceParacompact.lean/declarations/instance.md) | 40 | `declaration-track:2395839e6c823df7523d8ca9ad514994b764e8987f1c11cdc7ed0518a2d9f19c` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/EMetricSpaceParacompact.lean/declarations/instance-source-edition-2.md) | 169 | `declaration-track:3c51816b95649ebcbaa5d2903b0831ac98503d52c5c2edbb29d20a7e8287b686` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EMetricSpaceParacompact.lean/declarations/instance.md) | 40 | `declaration-track:2395839e6c823df7523d8ca9ad514994b764e8987f1c11cdc7ed0518a2d9f19c` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EMetricSpaceParacompact.lean/declarations/instance-source-edition-2.md) | 169 | `declaration-track:3c51816b95649ebcbaa5d2903b0831ac98503d52c5c2edbb29d20a7e8287b686` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

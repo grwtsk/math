@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ArctanNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ArctanNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ArctanNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ArctanNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [measurable_arctan](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ArctanNamespaced.lean/declarations/measurable-arctan.md) | 26 | `result-track:286040d15ba4e82f95725be787b65b85c276467d77b40eebe62ecfcbd8b0f5a5` |
-| 2 | `theorem` | [Measurable.arctan](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ArctanNamespaced.lean/declarations/measurable-arctan-source-edition-2.md) | 38 | `result-track:bce3328cb90362bbcc81274dc2cefc897c2b0d2422c0ddd0793acc257faf8d82` |
+| 1 | `theorem` | [measurable_arctan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ArctanNamespaced.lean/declarations/measurable-arctan.md) | 26 | `result-track:286040d15ba4e82f95725be787b65b85c276467d77b40eebe62ecfcbd8b0f5a5` |
+| 2 | `theorem` | [Measurable.arctan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ArctanNamespaced.lean/declarations/measurable-arctan-source-edition-2.md) | 38 | `result-track:bce3328cb90362bbcc81274dc2cefc897c2b0d2422c0ddd0793acc257faf8d82` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

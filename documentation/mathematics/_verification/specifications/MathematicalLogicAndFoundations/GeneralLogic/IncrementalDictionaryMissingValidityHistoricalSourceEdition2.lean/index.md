@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncrementalDictionaryMissingValidityHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncrementalDictionaryMissingValidityHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncrementalDictionaryMissingValidityHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncrementalDictionaryMissingValidityHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IncrementalDictionary`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalDictionaryHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IncrementalDictionary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalDictionaryHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [invalid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncrementalDictionaryMissingValidityHistoricalSourceEdition2.lean/declarations/invalid.md) | 6 | `declaration-track:a9f7e38ac13be24a05fbeee75379a98ef38bbf8b1cea7943939e8730393cb839` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncrementalDictionaryMissingValidityHistoricalSourceEdition2.lean/declarations/example.md) | 10 | `declaration-track:87951046141c9914ee9689b1aa1c4fd55c39e195c1de6b95a40d7be2cb4bf979` |
+| 1 | `def` | [invalid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncrementalDictionaryMissingValidityHistoricalSourceEdition2.lean/declarations/invalid.md) | 6 | `declaration-track:a9f7e38ac13be24a05fbeee75379a98ef38bbf8b1cea7943939e8730393cb839` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncrementalDictionaryMissingValidityHistoricalSourceEdition2.lean/declarations/example.md) | 10 | `declaration-track:87951046141c9914ee9689b1aa1c4fd55c39e195c1de6b95a40d7be2cb4bf979` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

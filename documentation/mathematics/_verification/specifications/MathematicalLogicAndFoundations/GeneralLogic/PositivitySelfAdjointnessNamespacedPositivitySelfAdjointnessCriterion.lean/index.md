@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositivitySelfAdjointnessNamespacedPositivitySelfAdjointnessCriterion.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositivitySelfAdjointnessNamespacedPositivitySelfAdjointnessCriterion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositivitySelfAdjointnessNamespacedPositivitySelfAdjointnessCriterion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositivitySelfAdjointnessNamespacedPositivitySelfAdjointnessCriterion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PositivitySelfAdjointnessCriterion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositivitySelfAdjointnessNamespacedPositivitySelfAdjointnessCriterion.lean/declarations/positivityselfadjointnesscriterion.md) | 30 | `declaration-track:b1b28e2ce4efa684b469df41f010ca13d8b5c5a86ae7738135a492e78ca5fdd6` |
-| 2 | `theorem` | [positivity_selfadjoint_rules_out_offline](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositivitySelfAdjointnessNamespacedPositivitySelfAdjointnessCriterion.lean/declarations/positivity-selfadjoint-rules-out-offline.md) | 39 | `result-track:50311be821324c7d6f7a884380c74f3f22bc7efda1863c75177e41b4a34bf864` |
-| 3 | `structure` | [TraceIdentityToBoundaryAlignment](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositivitySelfAdjointnessNamespacedPositivitySelfAdjointnessCriterion.lean/declarations/traceidentitytoboundaryalignment.md) | 48 | `declaration-track:21e09236c6b19ad9532d57b22bce041c1399475ce2cfc6b8de47e5abf4ee20a5` |
-| 4 | `theorem` | [trace_identity_plus_positivity_forces_alignment](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositivitySelfAdjointnessNamespacedPositivitySelfAdjointnessCriterion.lean/declarations/trace-identity-plus-positivity-forces-alignment.md) | 55 | `result-track:8bdaa617335892089735eb646b7ff6de03f266fc32e512bfbb86e62f8b5d56cb` |
+| 1 | `structure` | [PositivitySelfAdjointnessCriterion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositivitySelfAdjointnessNamespacedPositivitySelfAdjointnessCriterion.lean/declarations/positivityselfadjointnesscriterion.md) | 30 | `declaration-track:b1b28e2ce4efa684b469df41f010ca13d8b5c5a86ae7738135a492e78ca5fdd6` |
+| 2 | `theorem` | [positivity_selfadjoint_rules_out_offline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositivitySelfAdjointnessNamespacedPositivitySelfAdjointnessCriterion.lean/declarations/positivity-selfadjoint-rules-out-offline.md) | 39 | `result-track:50311be821324c7d6f7a884380c74f3f22bc7efda1863c75177e41b4a34bf864` |
+| 3 | `structure` | [TraceIdentityToBoundaryAlignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositivitySelfAdjointnessNamespacedPositivitySelfAdjointnessCriterion.lean/declarations/traceidentitytoboundaryalignment.md) | 48 | `declaration-track:21e09236c6b19ad9532d57b22bce041c1399475ce2cfc6b8de47e5abf4ee20a5` |
+| 4 | `theorem` | [trace_identity_plus_positivity_forces_alignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositivitySelfAdjointnessNamespacedPositivitySelfAdjointnessCriterion.lean/declarations/trace-identity-plus-positivity-forces-alignment.md) | 55 | `result-track:8bdaa617335892089735eb646b7ff6de03f266fc32e512bfbb86e62f8b5d56cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/LimitIndexNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/LimitIndexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LimitIndexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LimitIndexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsDeclaredSupremum](../../../../Combinatorics/LimitIndexNamespaced.lean/declarations/isdeclaredsupremum.md) | 21 | `declaration-track:763ec7bbc017f506b8c14996c6536d7c35583e5fe86bf055cc22fbf1000cc9d2` |
-| 2 | `structure` | [RegisteredLimitIndex](../../../../Combinatorics/LimitIndexNamespaced.lean/declarations/registeredlimitindex.md) | 31 | `declaration-track:e8653547ce69b1957d39400ddae90e1984f563ab50e0322b225a627d59a3ca93` |
-| 3 | `theorem` | [limit_index_monotone](../../../../Combinatorics/LimitIndexNamespaced.lean/declarations/limit-index-monotone.md) | 43 | `result-track:7510137823989d7e7a2ed277acc8a36e3172c8018173d9ec226212a0ae3d3ee4` |
-| 4 | `theorem` | [limit_index_has_declared_supremum](../../../../Combinatorics/LimitIndexNamespaced.lean/declarations/limit-index-has-declared-supremum.md) | 50 | `result-track:9df91c23b150afd50ac27965bdc723a36ed4dbb560a2ba3f8e8b8c8d4a024c78` |
+| 1 | `def` | [IsDeclaredSupremum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LimitIndexNamespaced.lean/declarations/isdeclaredsupremum.md) | 21 | `declaration-track:763ec7bbc017f506b8c14996c6536d7c35583e5fe86bf055cc22fbf1000cc9d2` |
+| 2 | `structure` | [RegisteredLimitIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LimitIndexNamespaced.lean/declarations/registeredlimitindex.md) | 31 | `declaration-track:e8653547ce69b1957d39400ddae90e1984f563ab50e0322b225a627d59a3ca93` |
+| 3 | `theorem` | [limit_index_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LimitIndexNamespaced.lean/declarations/limit-index-monotone.md) | 43 | `result-track:7510137823989d7e7a2ed277acc8a36e3172c8018173d9ec226212a0ae3d3ee4` |
+| 4 | `theorem` | [limit_index_has_declared_supremum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LimitIndexNamespaced.lean/declarations/limit-index-has-declared-supremum.md) | 50 | `result-track:9df91c23b150afd50ac27965bdc723a36ed4dbb560a2ba3f8e8b8c8d4a024c78` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

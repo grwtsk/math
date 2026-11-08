@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticValuePowerExclusion.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticValuePowerExclusion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticValuePowerExclusion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticValuePowerExclusion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quadraticValue_between_squares](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticValuePowerExclusion.lean/declarations/quadraticvalue-between-squares.md) | 22 | `result-track:eb271c5363cf88a9580d40c7eab16d7522204521d33e3a9be656d33a8faae25a` |
-| 2 | `theorem` | [quadraticValue_not_square](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticValuePowerExclusion.lean/declarations/quadraticvalue-not-square.md) | 27 | `result-track:63ef076ec2a13eac60c87c4a233aef4ba51bd127675f8faffcf3e5ea540aed15` |
-| 3 | `theorem` | [quadraticValue_ne_even_power](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticValuePowerExclusion.lean/declarations/quadraticvalue-ne-even-power.md) | 39 | `result-track:baeca8b2be8fc666078f3d1e7ad5b72be482704eb684d3bdcaba714633e28a78` |
+| 1 | `theorem` | [quadraticValue_between_squares](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticValuePowerExclusion.lean/declarations/quadraticvalue-between-squares.md) | 22 | `result-track:eb271c5363cf88a9580d40c7eab16d7522204521d33e3a9be656d33a8faae25a` |
+| 2 | `theorem` | [quadraticValue_not_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticValuePowerExclusion.lean/declarations/quadraticvalue-not-square.md) | 27 | `result-track:63ef076ec2a13eac60c87c4a233aef4ba51bd127675f8faffcf3e5ea540aed15` |
+| 3 | `theorem` | [quadraticValue_ne_even_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticValuePowerExclusion.lean/declarations/quadraticvalue-ne-even-power.md) | 39 | `result-track:baeca8b2be8fc666078f3d1e7ad5b72be482704eb684d3bdcaba714633e28a78` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

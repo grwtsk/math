@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/JointEigenspaceNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/JointEigenspaceNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/JointEigenspaceNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/JointEigenspaceNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [orthogonalFamily_eigenspace_inf_eigenspace](../../../../FunctionalAnalysis/JointEigenspaceNamespacedPublic.lean/declarations/orthogonalfamily-eigenspace-inf-eigenspace.md) | 69 | `result-track:d88fcfb65c0f5e510790c1010bd90fe792c6e950385f786c52a24a197f24d26d` |
-| 2 | `theorem` | [orthogonalFamily_iInf_eigenspaces](../../../../FunctionalAnalysis/JointEigenspaceNamespacedPublic.lean/declarations/orthogonalfamily-iinf-eigenspaces.md) | 80 | `result-track:7169ee2b13c78187182df229e341ca4d4afe958da6ba94d173993d5d5f59ac14` |
-| 3 | `theorem` | [iSup_eigenspace_inf_eigenspace_of_commute](../../../../FunctionalAnalysis/JointEigenspaceNamespacedPublic.lean/declarations/isup-eigenspace-inf-eigenspace-of-commute.md) | 97 | `result-track:4e0856532020024b033508c31e1acf47aa7bf7bbaa612ef3454dfad04a117149` |
-| 4 | `theorem` | [iSup_iSup_eigenspace_inf_eigenspace_eq_top_of_commute](../../../../FunctionalAnalysis/JointEigenspaceNamespacedPublic.lean/declarations/isup-isup-eigenspace-inf-eigenspace-eq-top-of-commute.md) | 109 | `result-track:a3ce28f4556a729fac296de0eb90354975cc4db39c4ec16d4854e32a3521e942` |
-| 5 | `theorem` | [directSum_isInternal_of_commute](../../../../FunctionalAnalysis/JointEigenspaceNamespacedPublic.lean/declarations/directsum-isinternal-of-commute.md) | 118 | `result-track:e3a8ec4b9ddcc3fe830792e38f199dcac19b3a0ec7c27be184794949ad705aaf` |
-| 6 | `theorem` | [iSup_iInf_eq_top_of_commute](../../../../FunctionalAnalysis/JointEigenspaceNamespacedPublic.lean/declarations/isup-iinf-eq-top-of-commute.md) | 129 | `result-track:cd13721b87ed89d71e96d1e22a007cf4c2dc2074bbfca72d4e3e5daa5dfbb804` |
-| 7 | `theorem` | [directSum_isInternal_of_pairwise_commute](../../../../FunctionalAnalysis/JointEigenspaceNamespacedPublic.lean/declarations/directsum-isinternal-of-pairwise-commute.md) | 144 | `result-track:987ae8b271970ee10e0c55153f4884c66d44b25c9851e85a1f20f10b522331a7` |
+| 1 | `theorem` | [orthogonalFamily_eigenspace_inf_eigenspace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/JointEigenspaceNamespacedPublic.lean/declarations/orthogonalfamily-eigenspace-inf-eigenspace.md) | 69 | `result-track:d88fcfb65c0f5e510790c1010bd90fe792c6e950385f786c52a24a197f24d26d` |
+| 2 | `theorem` | [orthogonalFamily_iInf_eigenspaces](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/JointEigenspaceNamespacedPublic.lean/declarations/orthogonalfamily-iinf-eigenspaces.md) | 80 | `result-track:7169ee2b13c78187182df229e341ca4d4afe958da6ba94d173993d5d5f59ac14` |
+| 3 | `theorem` | [iSup_eigenspace_inf_eigenspace_of_commute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/JointEigenspaceNamespacedPublic.lean/declarations/isup-eigenspace-inf-eigenspace-of-commute.md) | 97 | `result-track:4e0856532020024b033508c31e1acf47aa7bf7bbaa612ef3454dfad04a117149` |
+| 4 | `theorem` | [iSup_iSup_eigenspace_inf_eigenspace_eq_top_of_commute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/JointEigenspaceNamespacedPublic.lean/declarations/isup-isup-eigenspace-inf-eigenspace-eq-top-of-commute.md) | 109 | `result-track:a3ce28f4556a729fac296de0eb90354975cc4db39c4ec16d4854e32a3521e942` |
+| 5 | `theorem` | [directSum_isInternal_of_commute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/JointEigenspaceNamespacedPublic.lean/declarations/directsum-isinternal-of-commute.md) | 118 | `result-track:e3a8ec4b9ddcc3fe830792e38f199dcac19b3a0ec7c27be184794949ad705aaf` |
+| 6 | `theorem` | [iSup_iInf_eq_top_of_commute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/JointEigenspaceNamespacedPublic.lean/declarations/isup-iinf-eq-top-of-commute.md) | 129 | `result-track:cd13721b87ed89d71e96d1e22a007cf4c2dc2074bbfca72d4e3e5daa5dfbb804` |
+| 7 | `theorem` | [directSum_isInternal_of_pairwise_commute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/JointEigenspaceNamespacedPublic.lean/declarations/directsum-isinternal-of-pairwise-commute.md) | 144 | `result-track:987ae8b271970ee10e0c55153f4884c66d44b25c9851e85a1f20f10b522331a7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

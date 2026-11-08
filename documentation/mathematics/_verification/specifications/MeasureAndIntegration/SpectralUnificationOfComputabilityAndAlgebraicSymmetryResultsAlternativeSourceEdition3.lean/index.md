@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition3.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [frequency_moment_integrable](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition3.lean/declarations/frequency-moment-integrable.md) | 22 | `result-track:cc5c152e707a1d37b9313a39f17a24b9dee3f0719aa812c1cf9e60a69d3f4c19` |
-| 2 | `theorem` | [frequency_moment_plancherel](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition3.lean/declarations/frequency-moment-plancherel.md) | 30 | `result-track:d2c90be135fb351fe9d22f8c00bab477c81f25c909562383d46b1b55058adc1d` |
-| 3 | `theorem` | [quadratic_integrand_integrable](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition3.lean/declarations/quadratic-integrand-integrable.md) | 39 | `result-track:4daa59a2c76aa754c24657350f953c55f1015aa86707fb440dea061f03bb2c5b` |
-| 4 | `theorem` | [logarithmicEnergy_le_h1](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition3.lean/declarations/logarithmicenergy-le-h1.md) | 49 | `result-track:d80b82a691b943e5f4cf1c8ddef3820d54c2756bfcb53ccf9f0302dbc3e430d2` |
+| 1 | `theorem` | [frequency_moment_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition3.lean/declarations/frequency-moment-integrable.md) | 22 | `result-track:cc5c152e707a1d37b9313a39f17a24b9dee3f0719aa812c1cf9e60a69d3f4c19` |
+| 2 | `theorem` | [frequency_moment_plancherel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition3.lean/declarations/frequency-moment-plancherel.md) | 30 | `result-track:d2c90be135fb351fe9d22f8c00bab477c81f25c909562383d46b1b55058adc1d` |
+| 3 | `theorem` | [quadratic_integrand_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition3.lean/declarations/quadratic-integrand-integrable.md) | 39 | `result-track:4daa59a2c76aa754c24657350f953c55f1015aa86707fb440dea061f03bb2c5b` |
+| 4 | `theorem` | [logarithmicEnergy_le_h1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition3.lean/declarations/logarithmicenergy-le-h1.md) | 49 | `result-track:d80b82a691b943e5f4cf1c8ddef3820d54c2756bfcb53ccf9f0302dbc3e430d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

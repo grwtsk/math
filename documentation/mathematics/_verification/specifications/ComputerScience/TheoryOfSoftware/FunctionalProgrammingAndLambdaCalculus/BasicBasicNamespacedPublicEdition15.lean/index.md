@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition15.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition15.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition15.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition15.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ofFnLEAux](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition15.lean/declarations/offnleaux.md) | 21 | `declaration-track:a8a45e29ac0c8aa857a75553c0a0fb788829ab3daa1deae9298500cebf4faa6e` |
-| 2 | `def` | [ofFnLE](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition15.lean/declarations/offnle.md) | 25 | `declaration-track:d88632ae43bde49e3bf037ba7de546d7971d12a10c60d4de760f2b952d8073f7` |
-| 3 | `def` | [ofFnBE](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition15.lean/declarations/offnbe.md) | 28 | `declaration-track:d1bcdb8465e40b819066f6d30511488d0f8b6e46ca58dfa7140142ae35765831` |
+| 1 | `def` | [ofFnLEAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition15.lean/declarations/offnleaux.md) | 21 | `declaration-track:a8a45e29ac0c8aa857a75553c0a0fb788829ab3daa1deae9298500cebf4faa6e` |
+| 2 | `def` | [ofFnLE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition15.lean/declarations/offnle.md) | 25 | `declaration-track:d88632ae43bde49e3bf037ba7de546d7971d12a10c60d4de760f2b952d8073f7` |
+| 3 | `def` | [ofFnBE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition15.lean/declarations/offnbe.md) | 28 | `declaration-track:d1bcdb8465e40b819066f6d30511488d0f8b6e46ca58dfa7140142ae35765831` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

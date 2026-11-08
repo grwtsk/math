@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/PoissonLimitThmPublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/PoissonLimitThmPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PoissonLimitThmPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PoissonLimitThmPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [tendsto_zero_of_tendsto_mul_atTop](../../../../ProbabilityTheoryAndStochasticProcesses/PoissonLimitThmPublic.lean/declarations/tendsto-zero-of-tendsto-mul-attop.md) | 47 | `result-track:733d5844f37d493047ef6a5f094f0206e58efb5308906d24ec498e1a5de1f1fd` |
-| 2 | `lemma` | [tendsto_choose_mul_pow_atTop](../../../../ProbabilityTheoryAndStochasticProcesses/PoissonLimitThmPublic.lean/declarations/tendsto-choose-mul-pow-attop.md) | 55 | `result-track:1da4ab632a03e5c0a2cce79a368ca65abd87f89e649403504a26c1f336f62fa1` |
-| 3 | `theorem` | [tendsto_choose_mul_pow_of_tendsto_mul_atTop](../../../../ProbabilityTheoryAndStochasticProcesses/PoissonLimitThmPublic.lean/declarations/tendsto-choose-mul-pow-of-tendsto-mul-attop.md) | 70 | `result-track:7845dd8a71965d6a6b1246af99effeedc7969f453be35ca2eaacd30c02c507ea` |
-| 4 | `lemma` | [binomial_tendsto_poissonPMFReal_atTop](../../../../ProbabilityTheoryAndStochasticProcesses/PoissonLimitThmPublic.lean/declarations/binomial-tendsto-poissonpmfreal-attop.md) | 94 | `result-track:f97930bf7f990ad8735c5867b0e113607dd04a84a9607d69bea0af12b721936a` |
+| 1 | `lemma` | [tendsto_zero_of_tendsto_mul_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PoissonLimitThmPublic.lean/declarations/tendsto-zero-of-tendsto-mul-attop.md) | 47 | `result-track:733d5844f37d493047ef6a5f094f0206e58efb5308906d24ec498e1a5de1f1fd` |
+| 2 | `lemma` | [tendsto_choose_mul_pow_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PoissonLimitThmPublic.lean/declarations/tendsto-choose-mul-pow-attop.md) | 55 | `result-track:1da4ab632a03e5c0a2cce79a368ca65abd87f89e649403504a26c1f336f62fa1` |
+| 3 | `theorem` | [tendsto_choose_mul_pow_of_tendsto_mul_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PoissonLimitThmPublic.lean/declarations/tendsto-choose-mul-pow-of-tendsto-mul-attop.md) | 70 | `result-track:7845dd8a71965d6a6b1246af99effeedc7969f453be35ca2eaacd30c02c507ea` |
+| 4 | `lemma` | [binomial_tendsto_poissonPMFReal_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PoissonLimitThmPublic.lean/declarations/binomial-tendsto-poissonpmfreal-attop.md) | 94 | `result-track:f97930bf7f990ad8735c5867b0e113607dd04a84a9607d69bea0af12b721936a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

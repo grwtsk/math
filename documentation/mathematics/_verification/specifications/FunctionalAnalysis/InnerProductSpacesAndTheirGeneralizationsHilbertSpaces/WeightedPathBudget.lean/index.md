@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudget.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [weightedCompensationBudget](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudget.lean/declarations/weightedcompensationbudget.md) | 17 | `declaration-track:ab5468898cf0baeeae2999dbbc75e47c5309c7f318126578706e8ee594a35768` |
-| 2 | `theorem` | [weightedCompensationBudget_nonnegative](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudget.lean/declarations/weightedcompensationbudget-nonnegative.md) | 38 | `result-track:63e395bbdacfeab1043b57a3aab144a8ea66320c1ec049550c2b0616c2c6d218` |
-| 3 | `theorem` | [pathCompensationBudget_le_weighted](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudget.lean/declarations/pathcompensationbudget-le-weighted.md) | 63 | `result-track:6de24f81ccca0d1148654ed6c16fa503c41d761448d5ba7f49d027428512c8a0` |
-| 4 | `theorem` | [pathEnergy_weighted_compensation_bound](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudget.lean/declarations/pathenergy-weighted-compensation-bound.md) | 140 | `result-track:c79aeb86fa2bbde9c885aa0a2c3eb7896cd65152b62be4657ccb6ec1ce8e32a4` |
+| 1 | `def` | [weightedCompensationBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudget.lean/declarations/weightedcompensationbudget.md) | 17 | `declaration-track:ab5468898cf0baeeae2999dbbc75e47c5309c7f318126578706e8ee594a35768` |
+| 2 | `theorem` | [weightedCompensationBudget_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudget.lean/declarations/weightedcompensationbudget-nonnegative.md) | 38 | `result-track:63e395bbdacfeab1043b57a3aab144a8ea66320c1ec049550c2b0616c2c6d218` |
+| 3 | `theorem` | [pathCompensationBudget_le_weighted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudget.lean/declarations/pathcompensationbudget-le-weighted.md) | 63 | `result-track:6de24f81ccca0d1148654ed6c16fa503c41d761448d5ba7f49d027428512c8a0` |
+| 4 | `theorem` | [pathEnergy_weighted_compensation_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudget.lean/declarations/pathenergy-weighted-compensation-bound.md) | 140 | `result-track:c79aeb86fa2bbde9c885aa0a2c3eb7896cd65152b62be4657ccb6ec1ce8e32a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BridgeNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BridgeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BridgeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BridgeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ExactBridge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BridgeNamespaced.lean/declarations/exactbridge.md) | 18 | `declaration-track:2d4dfd5c3f7f94bf29b27a5007794418de051816eb760a1a80a303f4884686c2` |
-| 2 | `theorem` | [forward_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BridgeNamespaced.lean/declarations/forward-injective.md) | 28 | `result-track:72ffd110ab64ba64eac771fe88b47cc4124cca9b10844fee67ca5915d0a8af9f` |
-| 3 | `theorem` | [forward_surjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BridgeNamespaced.lean/declarations/forward-surjective.md) | 35 | `result-track:4720da7e09ce094109dae3f8414f98385ff32c9af3528b887eb0af77733a27e3` |
+| 1 | `structure` | [ExactBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BridgeNamespaced.lean/declarations/exactbridge.md) | 18 | `declaration-track:2d4dfd5c3f7f94bf29b27a5007794418de051816eb760a1a80a303f4884686c2` |
+| 2 | `theorem` | [forward_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BridgeNamespaced.lean/declarations/forward-injective.md) | 28 | `result-track:72ffd110ab64ba64eac771fe88b47cc4124cca9b10844fee67ca5915d0a8af9f` |
+| 3 | `theorem` | [forward_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BridgeNamespaced.lean/declarations/forward-surjective.md) | 35 | `result-track:4720da7e09ce094109dae3f8414f98385ff32c9af3528b887eb0af77733a27e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

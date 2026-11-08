@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/MangoldtLaplaceIntegrabilityAttempt02.lean/index.md) · [Full source](../../../../MeasureAndIntegration/MangoldtLaplaceIntegrabilityAttempt02.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MangoldtLaplaceIntegrabilityAttempt02.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MangoldtLaplaceIntegrabilityAttempt02.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mangoldtLogPrefix_measurable](../../../../MeasureAndIntegration/MangoldtLaplaceIntegrabilityAttempt02.lean/declarations/mangoldtlogprefix-measurable.md) | 17 | `result-track:d817a9d2c5c4e74c69223806b8a199bedba1692692e528d70c4b507a8fb71e0f` |
-| 2 | `theorem` | [mangoldtLogError_measurable](../../../../MeasureAndIntegration/MangoldtLaplaceIntegrabilityAttempt02.lean/declarations/mangoldtlogerror-measurable.md) | 21 | `result-track:8223a3edd97cb24edd72568c4b753d741e678f7304a9e4db606257ebb39dd880` |
-| 3 | `theorem` | [centeredMangoldtError_measurable](../../../../MeasureAndIntegration/MangoldtLaplaceIntegrabilityAttempt02.lean/declarations/centeredmangoldterror-measurable.md) | 25 | `result-track:0a6bddb1118adc490e21f3754d3bb86cedb2563c4ba18c061e3cebdd62fbafbd` |
-| 4 | `theorem` | [centeredMangoldtError_bound](../../../../MeasureAndIntegration/MangoldtLaplaceIntegrabilityAttempt02.lean/declarations/centeredmangoldterror-bound.md) | 30 | `result-track:109d71ea531936eae5365dafdcbfdb1d0d6b952334bfb2e1ef30fdda12d6ce7e` |
-| 5 | `theorem` | [centeredMangoldtError_laplace_integrable](../../../../MeasureAndIntegration/MangoldtLaplaceIntegrabilityAttempt02.lean/declarations/centeredmangoldterror-laplace-integrable.md) | 36 | `result-track:fcf63faad00ec111f47bb40123b3493555aa7bc85ba58f71dacbf7910af5b703` |
-| 6 | `theorem` | [mangoldtLogError_laplace_integrable](../../../../MeasureAndIntegration/MangoldtLaplaceIntegrabilityAttempt02.lean/declarations/mangoldtlogerror-laplace-integrable.md) | 58 | `result-track:dd3b04e1d0bba998fffb6bf84442f21e799cdc91b1ba11df9631be137655d7f7` |
-| 7 | `theorem` | [centeredMangoldtError_below_first_atom](../../../../MeasureAndIntegration/MangoldtLaplaceIntegrabilityAttempt02.lean/declarations/centeredmangoldterror-below-first-atom.md) | 69 | `result-track:6dd110faa8535af71511434edb6084c884bdb82b33a5054fa4183c40798df6e0` |
+| 1 | `theorem` | [mangoldtLogPrefix_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MangoldtLaplaceIntegrabilityAttempt02.lean/declarations/mangoldtlogprefix-measurable.md) | 17 | `result-track:d817a9d2c5c4e74c69223806b8a199bedba1692692e528d70c4b507a8fb71e0f` |
+| 2 | `theorem` | [mangoldtLogError_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MangoldtLaplaceIntegrabilityAttempt02.lean/declarations/mangoldtlogerror-measurable.md) | 21 | `result-track:8223a3edd97cb24edd72568c4b753d741e678f7304a9e4db606257ebb39dd880` |
+| 3 | `theorem` | [centeredMangoldtError_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MangoldtLaplaceIntegrabilityAttempt02.lean/declarations/centeredmangoldterror-measurable.md) | 25 | `result-track:0a6bddb1118adc490e21f3754d3bb86cedb2563c4ba18c061e3cebdd62fbafbd` |
+| 4 | `theorem` | [centeredMangoldtError_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MangoldtLaplaceIntegrabilityAttempt02.lean/declarations/centeredmangoldterror-bound.md) | 30 | `result-track:109d71ea531936eae5365dafdcbfdb1d0d6b952334bfb2e1ef30fdda12d6ce7e` |
+| 5 | `theorem` | [centeredMangoldtError_laplace_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MangoldtLaplaceIntegrabilityAttempt02.lean/declarations/centeredmangoldterror-laplace-integrable.md) | 36 | `result-track:fcf63faad00ec111f47bb40123b3493555aa7bc85ba58f71dacbf7910af5b703` |
+| 6 | `theorem` | [mangoldtLogError_laplace_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MangoldtLaplaceIntegrabilityAttempt02.lean/declarations/mangoldtlogerror-laplace-integrable.md) | 58 | `result-track:dd3b04e1d0bba998fffb6bf84442f21e799cdc91b1ba11df9631be137655d7f7` |
+| 7 | `theorem` | [centeredMangoldtError_below_first_atom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MangoldtLaplaceIntegrabilityAttempt02.lean/declarations/centeredmangoldterror-below-first-atom.md) | 69 | `result-track:6dd110faa8535af71511434edb6084c884bdb82b33a5054fa4183c40798df6e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

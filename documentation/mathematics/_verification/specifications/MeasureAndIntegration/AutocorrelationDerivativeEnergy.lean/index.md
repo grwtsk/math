@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/index.md) · [Full source](../../../../MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Calculus.PolynomialBumpDerivativeEnergy`](../../../../MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Calculus.PolynomialBumpDerivativeEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceCorrelation_hasDerivAt_integral](../../../../MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/declarations/sourcecorrelation-hasderivat-integral.md) | 28 | `result-track:b102d7678237ad623a7e34a0b6bfbb4f5a3c03a1a6a6e8c2dba78a9f612ae02f` |
-| 2 | `theorem` | [sourceCorrelation_deriv_eq_integral](../../../../MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/declarations/sourcecorrelation-deriv-eq-integral.md) | 39 | `result-track:5418ddfbaa569396715bf9e8c7b35f48c223e6f0997d3b224e70a92ce8d007dd` |
-| 3 | `theorem` | [sourceCorrelation_deriv_integrand_integrable](../../../../MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/declarations/sourcecorrelation-deriv-integrand-integrable.md) | 46 | `result-track:62c0fda14c958fc16d88d6eeafe1885c2d166264ec5e66f1ef4610def3418225` |
-| 4 | `theorem` | [integral_mul_square_le_of_unit](../../../../MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/declarations/integral-mul-square-le-of-unit.md) | 54 | `result-track:2c2751af3aa5d4d18d0e7a3c3e42134777c5ca7525089c230e08e8a023aab80b` |
-| 5 | `theorem` | [sourceCorrelation_deriv_square_le_energy](../../../../MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/declarations/sourcecorrelation-deriv-square-le-energy.md) | 78 | `result-track:95d3662ce7b74bbb845a6d7c34e707a048e61fc1111f59e6c1bb25b2e9f24e3c` |
-| 6 | `theorem` | [sourceCorrelation_deriv_abs_le_coefficient](../../../../MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/declarations/sourcecorrelation-deriv-abs-le-coefficient.md) | 92 | `result-track:52825cf57524c23507283dd2e5c6e2c00ade5f4aef587f34cb4c77e661bf552d` |
-| 7 | `theorem` | [sourceCorrelation_deriv_abs_le_five_div](../../../../MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/declarations/sourcecorrelation-deriv-abs-le-five-div.md) | 105 | `result-track:c2088df72f380e6e78511fc63ff8dd61030da8be182c1efaa2bdab6a218bfe5d` |
+| 1 | `theorem` | [sourceCorrelation_hasDerivAt_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/declarations/sourcecorrelation-hasderivat-integral.md) | 28 | `result-track:b102d7678237ad623a7e34a0b6bfbb4f5a3c03a1a6a6e8c2dba78a9f612ae02f` |
+| 2 | `theorem` | [sourceCorrelation_deriv_eq_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/declarations/sourcecorrelation-deriv-eq-integral.md) | 39 | `result-track:5418ddfbaa569396715bf9e8c7b35f48c223e6f0997d3b224e70a92ce8d007dd` |
+| 3 | `theorem` | [sourceCorrelation_deriv_integrand_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/declarations/sourcecorrelation-deriv-integrand-integrable.md) | 46 | `result-track:62c0fda14c958fc16d88d6eeafe1885c2d166264ec5e66f1ef4610def3418225` |
+| 4 | `theorem` | [integral_mul_square_le_of_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/declarations/integral-mul-square-le-of-unit.md) | 54 | `result-track:2c2751af3aa5d4d18d0e7a3c3e42134777c5ca7525089c230e08e8a023aab80b` |
+| 5 | `theorem` | [sourceCorrelation_deriv_square_le_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/declarations/sourcecorrelation-deriv-square-le-energy.md) | 78 | `result-track:95d3662ce7b74bbb845a6d7c34e707a048e61fc1111f59e6c1bb25b2e9f24e3c` |
+| 6 | `theorem` | [sourceCorrelation_deriv_abs_le_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/declarations/sourcecorrelation-deriv-abs-le-coefficient.md) | 92 | `result-track:52825cf57524c23507283dd2e5c6e2c00ade5f4aef587f34cb4c77e661bf552d` |
+| 7 | `theorem` | [sourceCorrelation_deriv_abs_le_five_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/declarations/sourcecorrelation-deriv-abs-le-five-div.md) | 105 | `result-track:c2088df72f380e6e78511fc63ff8dd61030da8be182c1efaa2bdab6a218bfe5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquareNamespacedPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquareNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquareNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquareNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [HyperbolicSurgeryPlan.crossIntervalKernel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquareNamespacedPublic.lean/declarations/hyperbolicsurgeryplan-crossintervalkernel.md) | 36 | `declaration-track:0457c66918a9bff40504ab791aec974a828548107ca0de0ff8b0538852be8cb2` |
-| 2 | `def` | [EvaluatedSurgeryTree.nodeCrossCutIntervalSquareSum](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquareNamespacedPublic.lean/declarations/evaluatedsurgerytree-nodecrosscutintervalsquaresum.md) | 45 | `declaration-track:035b978ecbc0a26ec4a3b37dceb36f1ffa65373ad9654b58e9de4e519cf3073a` |
-| 3 | `def` | [LocalCrossCutSquareEstimateAtCut](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquareNamespacedPublic.lean/declarations/localcrosscutsquareestimateatcut.md) | 58 | `declaration-track:01981c397f41b696a5fa62a9e2edeeaf28099920e578453d27a2515934151673` |
-| 4 | `def` | [LocalCrossSquareEstimateAtCut](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquareNamespacedPublic.lean/declarations/localcrosssquareestimateatcut.md) | 70 | `declaration-track:582c006f3d0d4e40e221aee5c2b27dc340259708765e28ab1d669126767f7e6d` |
+| 1 | `def` | [HyperbolicSurgeryPlan.crossIntervalKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquareNamespacedPublic.lean/declarations/hyperbolicsurgeryplan-crossintervalkernel.md) | 36 | `declaration-track:0457c66918a9bff40504ab791aec974a828548107ca0de0ff8b0538852be8cb2` |
+| 2 | `def` | [EvaluatedSurgeryTree.nodeCrossCutIntervalSquareSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquareNamespacedPublic.lean/declarations/evaluatedsurgerytree-nodecrosscutintervalsquaresum.md) | 45 | `declaration-track:035b978ecbc0a26ec4a3b37dceb36f1ffa65373ad9654b58e9de4e519cf3073a` |
+| 3 | `def` | [LocalCrossCutSquareEstimateAtCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquareNamespacedPublic.lean/declarations/localcrosscutsquareestimateatcut.md) | 58 | `declaration-track:01981c397f41b696a5fa62a9e2edeeaf28099920e578453d27a2515934151673` |
+| 4 | `def` | [LocalCrossSquareEstimateAtCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquareNamespacedPublic.lean/declarations/localcrosssquareestimateatcut.md) | 70 | `declaration-track:582c006f3d0d4e40e221aee5c2b27dc340259708765e28ab1d669126767f7e6d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

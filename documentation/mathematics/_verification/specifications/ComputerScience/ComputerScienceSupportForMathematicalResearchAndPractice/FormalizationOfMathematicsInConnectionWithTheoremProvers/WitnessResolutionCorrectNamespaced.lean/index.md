@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WitnessResolutionCorrectNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WitnessResolutionCorrectNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WitnessResolutionCorrectNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WitnessResolutionCorrectNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inserted_boundary_witness_is_bridge](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WitnessResolutionCorrectNamespaced.lean/declarations/inserted-boundary-witness-is-bridge.md) | 15 | `result-track:a3fe64701fa9c1f60a5e70af20ff0ae6b46a00033b5dc9e84bc8bc8dd2243e80` |
-| 2 | `theorem` | [inserted_boundary_witness_targets_residue](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WitnessResolutionCorrectNamespaced.lean/declarations/inserted-boundary-witness-targets-residue.md) | 20 | `result-track:aa5e7dc5147aa6509e606e7cb943726efbdf45cf38989821cb2337e7b815fbaa` |
+| 1 | `theorem` | [inserted_boundary_witness_is_bridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WitnessResolutionCorrectNamespaced.lean/declarations/inserted-boundary-witness-is-bridge.md) | 15 | `result-track:a3fe64701fa9c1f60a5e70af20ff0ae6b46a00033b5dc9e84bc8bc8dd2243e80` |
+| 2 | `theorem` | [inserted_boundary_witness_targets_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WitnessResolutionCorrectNamespaced.lean/declarations/inserted-boundary-witness-targets-residue.md) | 20 | `result-track:aa5e7dc5147aa6509e606e7cb943726efbdf45cf38989821cb2337e7b815fbaa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogLCMProgressionReductionControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogLCMProgressionReductionControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogLCMProgressionReductionControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogLCMProgressionReductionControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerMobiusLogLCMProgressionReduction`](../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/QuadraticThetaPrimeFejerMobiusLogLCMProgressionReduction.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerMobiusLogLCMProgressionReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/QuadraticThetaPrimeFejerMobiusLogLCMProgressionReduction.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exactFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogLCMProgressionReductionControls.lean/declarations/exactfrontier.md) | 14 | `declaration-track:3b3e1caff17a5c8105f05fe21ecc0250a101dd71a713e1198c40b0afcb75c9ae` |
-| 2 | `theorem` | [lcmFiberCardinalityClosed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogLCMProgressionReductionControls.lean/declarations/lcmfibercardinalityclosed.md) | 30 | `result-track:ff2c3f85bbfa0fd66cb5ffb42410bc4e36286eff87affd994b1f059daa334a78` |
-| 3 | `theorem` | [anchorAnchorFiberIsFull](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogLCMProgressionReductionControls.lean/declarations/anchoranchorfiberisfull.md) | 40 | `result-track:d5b12d84b6bd1e84bc4f3cdb186bb604631387123a034561d28287a29e5a5ad4` |
-| 4 | `def` | [remainingArithmeticFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogLCMProgressionReductionControls.lean/declarations/remainingarithmeticfrontier.md) | 47 | `declaration-track:6ff1f3c925b95103a36cc935ef01efc9827092919c45a9da379a10e3120c231f` |
+| 1 | `def` | [exactFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogLCMProgressionReductionControls.lean/declarations/exactfrontier.md) | 14 | `declaration-track:3b3e1caff17a5c8105f05fe21ecc0250a101dd71a713e1198c40b0afcb75c9ae` |
+| 2 | `theorem` | [lcmFiberCardinalityClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogLCMProgressionReductionControls.lean/declarations/lcmfibercardinalityclosed.md) | 30 | `result-track:ff2c3f85bbfa0fd66cb5ffb42410bc4e36286eff87affd994b1f059daa334a78` |
+| 3 | `theorem` | [anchorAnchorFiberIsFull](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogLCMProgressionReductionControls.lean/declarations/anchoranchorfiberisfull.md) | 40 | `result-track:d5b12d84b6bd1e84bc4f3cdb186bb604631387123a034561d28287a29e5a5ad4` |
+| 4 | `def` | [remainingArithmeticFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogLCMProgressionReductionControls.lean/declarations/remainingarithmeticfrontier.md) | 47 | `declaration-track:6ff1f3c925b95103a36cc935ef01efc9827092919c45a9da379a10e3120c231f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

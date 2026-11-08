@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualEndpointCorrelationAttempt01Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualEndpointCorrelationAttempt01Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualEndpointCorrelationAttempt01Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualEndpointCorrelationAttempt01Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [endpointPolynomialCorrelation](../../../../MeasureAndIntegration/ActualEndpointCorrelationAttempt01Namespaced.lean/declarations/endpointpolynomialcorrelation.md) | 25 | `declaration-track:b39e4752ba0bb11891d7025861c5f226d67dfca9fd6f2cfb40fc95c7525d61fd` |
-| 2 | `theorem` | [endpointPolynomialCorrelation_integrand_intervalIntegrable](../../../../MeasureAndIntegration/ActualEndpointCorrelationAttempt01Namespaced.lean/declarations/endpointpolynomialcorrelation-integrand-intervalintegrable.md) | 28 | `result-track:ad67e3c1c5a247481aa27d20f5b18eb96c532568ffc69175139fef802ff34bb0` |
-| 3 | `theorem` | [normalizedInterior_even](../../../../MeasureAndIntegration/ActualEndpointCorrelationAttempt01Namespaced.lean/declarations/normalizedinterior-even.md) | 35 | `result-track:7c1d098043dfc82c4d2cf135a6f7dc217bd0917a75c360dd0d1f6064ed86f7bd` |
-| 4 | `theorem` | [actual_endpoint_overlap](../../../../MeasureAndIntegration/ActualEndpointCorrelationAttempt01Namespaced.lean/declarations/actual-endpoint-overlap.md) | 41 | `result-track:fd0b5ffaffcd45c46afe43cff649352e5fdf6d9198c20c996677505b95ccdc4a` |
-| 5 | `theorem` | [actual_endpoint_overlap_distance](../../../../MeasureAndIntegration/ActualEndpointCorrelationAttempt01Namespaced.lean/declarations/actual-endpoint-overlap-distance.md) | 69 | `result-track:783e19e8c1c16d52a1f4fd82fa1303531cd4bb3e6cb5b1ea2a7d2847c76239c4` |
-| 6 | `theorem` | [normalized_endpoint_product](../../../../MeasureAndIntegration/ActualEndpointCorrelationAttempt01Namespaced.lean/declarations/normalized-endpoint-product.md) | 86 | `result-track:dd230246277ab65672495b8fd0ce42088e6ae428ef941af03029c74c92df0419` |
-| 7 | `theorem` | [actual_endpoint_polynomial_correlation](../../../../MeasureAndIntegration/ActualEndpointCorrelationAttempt01Namespaced.lean/declarations/actual-endpoint-polynomial-correlation.md) | 101 | `result-track:ac70d4a5c1796605998d9e08a9a4935d14c9069520b1c92716e6abb6fbf0437a` |
+| 1 | `def` | [endpointPolynomialCorrelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualEndpointCorrelationAttempt01Namespaced.lean/declarations/endpointpolynomialcorrelation.md) | 25 | `declaration-track:b39e4752ba0bb11891d7025861c5f226d67dfca9fd6f2cfb40fc95c7525d61fd` |
+| 2 | `theorem` | [endpointPolynomialCorrelation_integrand_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualEndpointCorrelationAttempt01Namespaced.lean/declarations/endpointpolynomialcorrelation-integrand-intervalintegrable.md) | 28 | `result-track:ad67e3c1c5a247481aa27d20f5b18eb96c532568ffc69175139fef802ff34bb0` |
+| 3 | `theorem` | [normalizedInterior_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualEndpointCorrelationAttempt01Namespaced.lean/declarations/normalizedinterior-even.md) | 35 | `result-track:7c1d098043dfc82c4d2cf135a6f7dc217bd0917a75c360dd0d1f6064ed86f7bd` |
+| 4 | `theorem` | [actual_endpoint_overlap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualEndpointCorrelationAttempt01Namespaced.lean/declarations/actual-endpoint-overlap.md) | 41 | `result-track:fd0b5ffaffcd45c46afe43cff649352e5fdf6d9198c20c996677505b95ccdc4a` |
+| 5 | `theorem` | [actual_endpoint_overlap_distance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualEndpointCorrelationAttempt01Namespaced.lean/declarations/actual-endpoint-overlap-distance.md) | 69 | `result-track:783e19e8c1c16d52a1f4fd82fa1303531cd4bb3e6cb5b1ea2a7d2847c76239c4` |
+| 6 | `theorem` | [normalized_endpoint_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualEndpointCorrelationAttempt01Namespaced.lean/declarations/normalized-endpoint-product.md) | 86 | `result-track:dd230246277ab65672495b8fd0ce42088e6ae428ef941af03029c74c92df0419` |
+| 7 | `theorem` | [actual_endpoint_polynomial_correlation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualEndpointCorrelationAttempt01Namespaced.lean/declarations/actual-endpoint-polynomial-correlation.md) | 101 | `result-track:ac70d4a5c1796605998d9e08a9a4935d14c9069520b1c92716e6abb6fbf0437a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

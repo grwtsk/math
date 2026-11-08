@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactInductionCorrectNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactInductionCorrectNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactInductionCorrectNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactInductionCorrectNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [poles_only_require_compact_conservative_residue_cover](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactInductionCorrectNamespaced.lean/declarations/poles-only-require-compact-conservative-residue-cover.md) | 15 | `result-track:5dfd0002f6a62264487935f761147f9e97d1d4de463f97cee934287a237f0578` |
-| 2 | `theorem` | [admitted_compact_induction_has_poles_determine_compacts](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactInductionCorrectNamespaced.lean/declarations/admitted-compact-induction-has-poles-determine-compacts.md) | 21 | `result-track:ffed4674ab10bfe875ac7acbbdbb44c256caf5f4a783609d8b8f060fbf3e74a2` |
-| 3 | `theorem` | [admitted_compact_induction_has_pair_bound](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactInductionCorrectNamespaced.lean/declarations/admitted-compact-induction-has-pair-bound.md) | 27 | `result-track:15e6a7580815c950cc2fc28c16019deddc925af12249bf0e6e59bffffe73bc9f` |
+| 1 | `theorem` | [poles_only_require_compact_conservative_residue_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactInductionCorrectNamespaced.lean/declarations/poles-only-require-compact-conservative-residue-cover.md) | 15 | `result-track:5dfd0002f6a62264487935f761147f9e97d1d4de463f97cee934287a237f0578` |
+| 2 | `theorem` | [admitted_compact_induction_has_poles_determine_compacts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactInductionCorrectNamespaced.lean/declarations/admitted-compact-induction-has-poles-determine-compacts.md) | 21 | `result-track:ffed4674ab10bfe875ac7acbbdbb44c256caf5f4a783609d8b8f060fbf3e74a2` |
+| 3 | `theorem` | [admitted_compact_induction_has_pair_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactInductionCorrectNamespaced.lean/declarations/admitted-compact-induction-has-pair-bound.md) | 27 | `result-track:15e6a7580815c950cc2fc28c16019deddc925af12249bf0e6e59bffffe73bc9f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

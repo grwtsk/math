@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExplicitInternalConceptId.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExplicitInternalConceptId.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExplicitInternalConceptId.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExplicitInternalConceptId.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [explicitInternal_conceptId?](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExplicitInternalConceptId.lean/declarations/explicitinternal-conceptid.md) | 12 | `result-track:d241d79ff4c1906b7186304ad4d5b910158e1e2e5981a1f4105f8fa663c708da` |
+| 1 | `theorem` | [explicitInternal_conceptId?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExplicitInternalConceptId.lean/declarations/explicitinternal-conceptid.md) | 12 | `result-track:d241d79ff4c1906b7186304ad4d5b910158e1e2e5981a1f4105f8fa663c708da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

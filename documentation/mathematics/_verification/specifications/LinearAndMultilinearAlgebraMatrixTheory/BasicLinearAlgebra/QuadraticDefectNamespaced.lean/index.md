@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [value](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/declarations/value.md) | 32 | `declaration-track:ae284f8372b6452d35e0fcf235ded56e6cb0c869abfeb3ffd7a468526b478669` |
-| 2 | `def` | [cross](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/declarations/cross.md) | 36 | `declaration-track:fb0324b20efcc560138e00cf54a2ef2b7b873a90586a1913906d90f41b4fc433` |
-| 3 | `theorem` | [union_inter_defect](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/declarations/union-inter-defect.md) | 40 | `result-track:1c2d132b14b39600f8e5fd2832c6a5824e51c1e955663abce9b147c281d04769` |
-| 4 | `theorem` | [real_entry_symm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/declarations/real-entry-symm.md) | 55 | `result-track:5a288ec86d1800c0894aaaef2e938a5aa520d08ea5379982b8d56ae74d2e44f6` |
-| 5 | `theorem` | [cross_symm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/declarations/cross-symm.md) | 61 | `result-track:f820ed103c5d0344fae3e4773adb9e92ee7183f11941e09c326b423908092e85` |
-| 6 | `theorem` | [hermitian_union_inter_defect](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/declarations/hermitian-union-inter-defect.md) | 73 | `result-track:da91eb2a9c74dbf09c01a5bc508b0dc9b9ad8d82a061f5b3c718164fe5c7f828` |
-| 7 | `theorem` | [supermodular_iff_cross_nonneg](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/declarations/supermodular-iff-cross-nonneg.md) | 81 | `result-track:f218721ef926136db82d3470a15b2993c3c8cf3c352ee9e6e995f3351f668026` |
-| 8 | `theorem` | [not_supermodular_of_negative_cross](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/declarations/not-supermodular-of-negative-cross.md) | 97 | `result-track:5f29dc4af7b183407f1a5eb53c75a66f019f864578b81f4c94adaca21c7390d4` |
+| 1 | `def` | [value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/declarations/value.md) | 32 | `declaration-track:ae284f8372b6452d35e0fcf235ded56e6cb0c869abfeb3ffd7a468526b478669` |
+| 2 | `def` | [cross](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/declarations/cross.md) | 36 | `declaration-track:fb0324b20efcc560138e00cf54a2ef2b7b873a90586a1913906d90f41b4fc433` |
+| 3 | `theorem` | [union_inter_defect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/declarations/union-inter-defect.md) | 40 | `result-track:1c2d132b14b39600f8e5fd2832c6a5824e51c1e955663abce9b147c281d04769` |
+| 4 | `theorem` | [real_entry_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/declarations/real-entry-symm.md) | 55 | `result-track:5a288ec86d1800c0894aaaef2e938a5aa520d08ea5379982b8d56ae74d2e44f6` |
+| 5 | `theorem` | [cross_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/declarations/cross-symm.md) | 61 | `result-track:f820ed103c5d0344fae3e4773adb9e92ee7183f11941e09c326b423908092e85` |
+| 6 | `theorem` | [hermitian_union_inter_defect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/declarations/hermitian-union-inter-defect.md) | 73 | `result-track:da91eb2a9c74dbf09c01a5bc508b0dc9b9ad8d82a061f5b3c718164fe5c7f828` |
+| 7 | `theorem` | [supermodular_iff_cross_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/declarations/supermodular-iff-cross-nonneg.md) | 81 | `result-track:f218721ef926136db82d3470a15b2993c3c8cf3c352ee9e6e995f3351f668026` |
+| 8 | `theorem` | [not_supermodular_of_negative_cross](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticDefectNamespaced.lean/declarations/not-supermodular-of-negative-cross.md) | 97 | `result-track:5f29dc4af7b183407f1a5eb53c75a66f019f864578b81f4c94adaca21c7390d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

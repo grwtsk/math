@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ArithmeticGramCertificatesNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ArithmeticGramCertificatesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ArithmeticGramCertificatesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ArithmeticGramCertificatesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [translationGramForm](../../../../MeasureAndIntegration/ArithmeticGramCertificatesNamespaced.lean/declarations/translationgramform.md) | 18 | `declaration-track:9919835504b43fef80046bf486fb43935a9bd19c8ac38d1ad4c0689969823336` |
-| 2 | `theorem` | [translation_gram_form_nonneg](../../../../MeasureAndIntegration/ArithmeticGramCertificatesNamespaced.lean/declarations/translation-gram-form-nonneg.md) | 21 | `result-track:5fb1c193a0b7e31cb5996e4b91ab54ba1c07af52459d17e51b6282fb38086db8` |
-| 3 | `theorem` | [no_uniform_translation_gram_certificate](../../../../MeasureAndIntegration/ArithmeticGramCertificatesNamespaced.lean/declarations/no-uniform-translation-gram-certificate.md) | 27 | `result-track:beaa44f43a77f62fe55d9066b1e2f7f337d830f8857d377efe105d761d86556b` |
+| 1 | `def` | [translationGramForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ArithmeticGramCertificatesNamespaced.lean/declarations/translationgramform.md) | 18 | `declaration-track:9919835504b43fef80046bf486fb43935a9bd19c8ac38d1ad4c0689969823336` |
+| 2 | `theorem` | [translation_gram_form_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ArithmeticGramCertificatesNamespaced.lean/declarations/translation-gram-form-nonneg.md) | 21 | `result-track:5fb1c193a0b7e31cb5996e4b91ab54ba1c07af52459d17e51b6282fb38086db8` |
+| 3 | `theorem` | [no_uniform_translation_gram_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ArithmeticGramCertificatesNamespaced.lean/declarations/no-uniform-translation-gram-certificate.md) | 27 | `result-track:beaa44f43a77f62fe55d9066b1e2f7f337d830f8857d377efe105d761d86556b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

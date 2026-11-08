@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicBorelCaratheodoryZeroClosedBall.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicBorelCaratheodoryZeroClosedBall.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicBorelCaratheodoryZeroClosedBall.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicBorelCaratheodoryZeroClosedBall.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [borelCaratheodory_zero_closedBall](../../../../FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicBorelCaratheodoryZeroClosedBall.lean/declarations/borelcaratheodory-zero-closedball.md) | 27 | `result-track:1dd1840440b9d5b803cb353174955eaedd82ee82616f450012fd336e33964d75` |
+| 1 | `theorem` | [borelCaratheodory_zero_closedBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicBorelCaratheodoryZeroClosedBall.lean/declarations/borelcaratheodory-zero-closedball.md) | 27 | `result-track:1dd1840440b9d5b803cb353174955eaedd82ee82616f450012fd336e33964d75` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

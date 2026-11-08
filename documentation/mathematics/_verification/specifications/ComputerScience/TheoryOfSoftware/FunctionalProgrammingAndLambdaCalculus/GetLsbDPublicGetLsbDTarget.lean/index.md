@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GetLsbDPublicGetLsbDTarget.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GetLsbDPublicGetLsbDTarget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GetLsbDPublicGetLsbDTarget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GetLsbDPublicGetLsbDTarget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GetLsbDTarget](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GetLsbDPublicGetLsbDTarget.lean/declarations/getlsbdtarget.md) | 25 | `declaration-track:674a0fac456b731fee04574cc8bde1be69bbf10e6ffbbc550122a314679960de` |
-| 2 | `def` | [blastGetLsbD](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GetLsbDPublicGetLsbDTarget.lean/declarations/blastgetlsbd.md) | 30 | `declaration-track:05fddbd5513cd339ff5dd32ba1e0e1b87e21780b939f4f501f6a35adaa84f1fb` |
+| 1 | `structure` | [GetLsbDTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GetLsbDPublicGetLsbDTarget.lean/declarations/getlsbdtarget.md) | 25 | `declaration-track:674a0fac456b731fee04574cc8bde1be69bbf10e6ffbbc550122a314679960de` |
+| 2 | `def` | [blastGetLsbD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GetLsbDPublicGetLsbDTarget.lean/declarations/blastgetlsbd.md) | 30 | `declaration-track:05fddbd5513cd339ff5dd32ba1e0e1b87e21780b939f4f501f6a35adaa84f1fb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

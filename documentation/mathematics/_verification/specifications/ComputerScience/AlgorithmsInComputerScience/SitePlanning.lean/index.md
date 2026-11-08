@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SitePlanning.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SitePlanning.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SitePlanning.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SitePlanning.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ComplexSitePlan](../../../../../ComputerScience/AlgorithmsInComputerScience/SitePlanning.lean/declarations/complexsiteplan-source-edition-2.md) | 7 | `declaration-track:45000097e9dfd53e3644fa9b1292ce142c0db6160d834dd4902fbda18b8df682` |
-| 2 | `def` | [complexSitePlan](../../../../../ComputerScience/AlgorithmsInComputerScience/SitePlanning.lean/declarations/complexsiteplan.md) | 17 | `declaration-track:1553646aa8443a5d139eaaeee9faa6fea2c719c4359e77fc42d2a7a6f38edbd2` |
-| 3 | `theorem` | [complexSitePlan_primeModularities_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/SitePlanning.lean/declarations/complexsiteplan-primemodularities-visible.md) | 35 | `result-track:61dedab45f9fcbf80cedb757effb7f452b8ba61fe2e8f8ad0773c39c680f3771` |
-| 4 | `theorem` | [complexSitePlan_topologyPrime_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/SitePlanning.lean/declarations/complexsiteplan-topologyprime-visible.md) | 42 | `result-track:cbe8dc5103b7a875f9e3d9d7a9ac21a9344bdb48a13e8790d3cedc7c3e9a8277` |
-| 5 | `theorem` | [complexSitePlan_claimBoundary_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/SitePlanning.lean/declarations/complexsiteplan-claimboundary-visible.md) | 49 | `result-track:3e547efc2a2c20d15bb8adcbc26047182c638e5cae95fc1f6243bb014958a36a` |
+| 1 | `structure` | [ComplexSitePlan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SitePlanning.lean/declarations/complexsiteplan-source-edition-2.md) | 7 | `declaration-track:45000097e9dfd53e3644fa9b1292ce142c0db6160d834dd4902fbda18b8df682` |
+| 2 | `def` | [complexSitePlan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SitePlanning.lean/declarations/complexsiteplan.md) | 17 | `declaration-track:1553646aa8443a5d139eaaeee9faa6fea2c719c4359e77fc42d2a7a6f38edbd2` |
+| 3 | `theorem` | [complexSitePlan_primeModularities_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SitePlanning.lean/declarations/complexsiteplan-primemodularities-visible.md) | 35 | `result-track:61dedab45f9fcbf80cedb757effb7f452b8ba61fe2e8f8ad0773c39c680f3771` |
+| 4 | `theorem` | [complexSitePlan_topologyPrime_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SitePlanning.lean/declarations/complexsiteplan-topologyprime-visible.md) | 42 | `result-track:cbe8dc5103b7a875f9e3d9d7a9ac21a9344bdb48a13e8790d3cedc7c3e9a8277` |
+| 5 | `theorem` | [complexSitePlan_claimBoundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SitePlanning.lean/declarations/complexsiteplan-claimboundary-visible.md) | 49 | `result-track:3e547efc2a2c20d15bb8adcbc26047182c638e5cae95fc1f6243bb014958a36a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

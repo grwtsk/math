@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanChecker.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanChecker.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanChecker.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanChecker.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [replayFromImports](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanChecker.lean/declarations/replayfromimports.md) | 12 | `declaration-track:4549befc0dab1ab282bf07658cec9b97e672ad7a75f998afae37509292fa8267` |
-| 2 | `def` | [replayFromFresh](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanChecker.lean/declarations/replayfromfresh.md) | 36 | `declaration-track:3a96f34e720ec2381bf628021f79c814dee728571bd9355632c5d13ea7da006e` |
-| 3 | `def` | [getCurrentModule](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanChecker.lean/declarations/getcurrentmodule.md) | 43 | `declaration-track:7bfa34224e59591835739ff274294799d8e9fd41b1365266f59fdedb6b9299f0` |
-| 4 | `def` | [main](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanChecker.lean/declarations/main.md) | 70 | `declaration-track:a8866ef37f36666fe52b0d025b72db47148aa9c046b1fcaec988e3555c010d94` |
+| 1 | `def` | [replayFromImports](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanChecker.lean/declarations/replayfromimports.md) | 12 | `declaration-track:4549befc0dab1ab282bf07658cec9b97e672ad7a75f998afae37509292fa8267` |
+| 2 | `def` | [replayFromFresh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanChecker.lean/declarations/replayfromfresh.md) | 36 | `declaration-track:3a96f34e720ec2381bf628021f79c814dee728571bd9355632c5d13ea7da006e` |
+| 3 | `def` | [getCurrentModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanChecker.lean/declarations/getcurrentmodule.md) | 43 | `declaration-track:7bfa34224e59591835739ff274294799d8e9fd41b1365266f59fdedb6b9299f0` |
+| 4 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanChecker.lean/declarations/main.md) | 70 | `declaration-track:a8866ef37f36666fe52b0d025b72db47148aa9c046b1fcaec988e3555c010d94` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

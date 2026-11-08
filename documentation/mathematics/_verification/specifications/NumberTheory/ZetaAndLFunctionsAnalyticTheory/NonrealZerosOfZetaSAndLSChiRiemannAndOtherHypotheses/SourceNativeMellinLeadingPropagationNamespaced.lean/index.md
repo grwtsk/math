@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceNativeMellinLeadingPropagationNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceNativeMellinLeadingPropagationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceNativeMellinLeadingPropagationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceNativeMellinLeadingPropagationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [leading_tail_of_native_signed_head](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceNativeMellinLeadingPropagationNamespaced.lean/declarations/leading-tail-of-native-signed-head.md) | 26 | `result-track:5db3192c72066067d57bb74d0782a86253cb8cf933f5dbe8eb8f3369517f18e4` |
-| 2 | `theorem` | [leading_tail_of_native_compensated_contour](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceNativeMellinLeadingPropagationNamespaced.lean/declarations/leading-tail-of-native-compensated-contour.md) | 36 | `result-track:747e9bdacf979ab3e7110678b44d13cc9ac1b0428c0cab1a7f795021eba2bb38` |
+| 1 | `theorem` | [leading_tail_of_native_signed_head](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceNativeMellinLeadingPropagationNamespaced.lean/declarations/leading-tail-of-native-signed-head.md) | 26 | `result-track:5db3192c72066067d57bb74d0782a86253cb8cf933f5dbe8eb8f3369517f18e4` |
+| 2 | `theorem` | [leading_tail_of_native_compensated_contour](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceNativeMellinLeadingPropagationNamespaced.lean/declarations/leading-tail-of-native-compensated-contour.md) | 36 | `result-track:747e9bdacf979ab3e7110678b44d13cc9ac1b0428c0cab1a7f795021eba2bb38` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

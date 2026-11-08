@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PivotOverlap](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/declarations/pivotoverlap.md) | 19 | `declaration-track:9eacc842c7e2af5169e94d73811f0eedce37e716b5d2431e6d61cc63b80ec5e6` |
-| 2 | `structure` | [PivotTransition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/declarations/pivottransition.md) | 26 | `declaration-track:d9fec5169cf9f8c634cd84f546944c495f70a2cfb7414b50f2d807f091248403` |
-| 3 | `theorem` | [PivotTransition.preserves_index](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/declarations/pivottransition-preserves-index.md) | 33 | `result-track:64c3441f54c1762b39a20bdd7e7e28aa00439f242d3592bd53207bdbaed9080d` |
-| 4 | `structure` | [CanonicalPivotAtlas](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/declarations/canonicalpivotatlas.md) | 45 | `declaration-track:b69119fd93cbf3ccd8b561497380fd72f018c9c6ee62313c57abc597c115a8d9` |
-| 5 | `theorem` | [CanonicalPivotAtlas.covers_canonical_path](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/declarations/canonicalpivotatlas-covers-canonical-path.md) | 56 | `result-track:1aa9d73ea9203d8d4e3f66d58ee2f7fce9859e891155b8faa7240703db0bf7d4` |
-| 6 | `theorem` | [CanonicalPivotAtlas.cocycle_compatible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/declarations/canonicalpivotatlas-cocycle-compatible.md) | 62 | `result-track:dddc2d420ae32008ba4adbbd4d683128649eee1f1e4723a0b7a3f4c039263fb4` |
-| 7 | `theorem` | [CanonicalPivotAtlas.barrier_closed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/declarations/canonicalpivotatlas-barrier-closed.md) | 68 | `result-track:5605be4a30e7aa822ec06e0e70a030b2b42ab18408d7257cb01700a62c52a5cb` |
-| 8 | `theorem` | [CanonicalPivotAtlas.transition_preserves_index](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/declarations/canonicalpivotatlas-transition-preserves-index.md) | 74 | `result-track:a12d7543769c1c3d0c758d086b8f3e8d0f74941775be8a63e09dfda60275bfb9` |
+| 1 | `structure` | [PivotOverlap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/declarations/pivotoverlap.md) | 19 | `declaration-track:9eacc842c7e2af5169e94d73811f0eedce37e716b5d2431e6d61cc63b80ec5e6` |
+| 2 | `structure` | [PivotTransition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/declarations/pivottransition.md) | 26 | `declaration-track:d9fec5169cf9f8c634cd84f546944c495f70a2cfb7414b50f2d807f091248403` |
+| 3 | `theorem` | [PivotTransition.preserves_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/declarations/pivottransition-preserves-index.md) | 33 | `result-track:64c3441f54c1762b39a20bdd7e7e28aa00439f242d3592bd53207bdbaed9080d` |
+| 4 | `structure` | [CanonicalPivotAtlas](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/declarations/canonicalpivotatlas.md) | 45 | `declaration-track:b69119fd93cbf3ccd8b561497380fd72f018c9c6ee62313c57abc597c115a8d9` |
+| 5 | `theorem` | [CanonicalPivotAtlas.covers_canonical_path](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/declarations/canonicalpivotatlas-covers-canonical-path.md) | 56 | `result-track:1aa9d73ea9203d8d4e3f66d58ee2f7fce9859e891155b8faa7240703db0bf7d4` |
+| 6 | `theorem` | [CanonicalPivotAtlas.cocycle_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/declarations/canonicalpivotatlas-cocycle-compatible.md) | 62 | `result-track:dddc2d420ae32008ba4adbbd4d683128649eee1f1e4723a0b7a3f4c039263fb4` |
+| 7 | `theorem` | [CanonicalPivotAtlas.barrier_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/declarations/canonicalpivotatlas-barrier-closed.md) | 68 | `result-track:5605be4a30e7aa822ec06e0e70a030b2b42ab18408d7257cb01700a62c52a5cb` |
+| 8 | `theorem` | [CanonicalPivotAtlas.transition_preserves_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlas.lean/declarations/canonicalpivotatlas-transition-preserves-index.md) | 74 | `result-track:a12d7543769c1c3d0c758d086b8f3e8d0f74941775be8a63e09dfda60275bfb9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

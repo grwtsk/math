@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLNamespacedPublicSymDSimprocElab.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLNamespacedPublicSymDSimprocElab.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLNamespacedPublicSymDSimprocElab.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLNamespacedPublicSymDSimprocElab.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [SymDSimprocElab](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLNamespacedPublicSymDSimprocElab.lean/declarations/symdsimprocelab.md) | 24 | `declaration-track:c5128ac64de55418b4a67dcf1b97e8f5a258ca05fbcbadc8c0ffe32729355af4` |
-| 2 | `builtin_initialize` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLNamespacedPublicSymDSimprocElab.lean/declarations/builtin-initialize.md) | 26 | `declaration-track:8440c0e3ebf125693751a3a8a88c7a730d78a29ae76255bbd3a5d8c0d3862306` |
-| 3 | `def` | [elabSymDSimproc](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLNamespacedPublicSymDSimprocElab.lean/declarations/elabsymdsimproc.md) | 31 | `declaration-track:86e2bea3aa9064a54b9143f5e5905612bc1e119d4c84d16f0de4ca4bfc0fab38` |
+| 1 | `abbrev` | [SymDSimprocElab](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLNamespacedPublicSymDSimprocElab.lean/declarations/symdsimprocelab.md) | 24 | `declaration-track:c5128ac64de55418b4a67dcf1b97e8f5a258ca05fbcbadc8c0ffe32729355af4` |
+| 2 | `builtin_initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLNamespacedPublicSymDSimprocElab.lean/declarations/builtin-initialize.md) | 26 | `declaration-track:8440c0e3ebf125693751a3a8a88c7a730d78a29ae76255bbd3a5d8c0d3862306` |
+| 3 | `def` | [elabSymDSimproc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLNamespacedPublicSymDSimprocElab.lean/declarations/elabsymdsimproc.md) | 31 | `declaration-track:86e2bea3aa9064a54b9143f5e5905612bc1e119d4c84d16f0de4ca4bfc0fab38` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

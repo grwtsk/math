@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instNNRatCast](../../../../FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/instnnratcast.md) | 35 | `declaration-track:b04b22eb9537b94f49c1926258d827450f2edb5ced111a013b104e06c118a1bc` |
-| 2 | `instance` | [instRatCast](../../../../FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/instratcast.md) | 36 | `declaration-track:c5a8b7e70055e9630672e73fcc54c358e1cbbe96c8f6038e7e4a5f35bb6cb9b9` |
-| 3 | `lemma` | [up_nnratCast](../../../../FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/up-nnratcast.md) | 38 | `result-track:7d8ada4a14ebdc88c428c99a06c9f484312c25ff7b260ddf4d94f3c0489c988e` |
-| 4 | `lemma` | [down_nnratCast](../../../../FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/down-nnratcast.md) | 39 | `result-track:d2a58d0486ce300715d1eabb422af99ade8a9737eeec528eec594202fed299d3` |
-| 5 | `lemma` | [up_ratCast](../../../../FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/up-ratcast.md) | 40 | `result-track:1d393254046acc67c14647943a88e90d9cb2c0761a7114618f4ee62585b8023b` |
-| 6 | `lemma` | [down_ratCast](../../../../FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/down-ratcast.md) | 41 | `result-track:2c9e25662f9992f5b0a569201e7019bfdd0d7c5009cf5106f87a5f102e724d52` |
-| 7 | `instance` | [divisionSemiring](../../../../FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/divisionsemiring.md) | 43 | `declaration-track:864a06277a20c88dab6778d39f7f0c2239266a9b515988f4a383e41e4a7dc4fd` |
-| 8 | `instance` | [semifield](../../../../FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/semifield.md) | 48 | `declaration-track:0902c182b3be35cd9e62ea341e54a0cdd30767b588bd020eb97a2be781f716b3` |
-| 9 | `instance` | [divisionRing](../../../../FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/divisionring.md) | 51 | `declaration-track:9268d8ac92df83b590c17c8e2863f3e955fb2614d76d0bb5245ff6a1e51bd567` |
-| 10 | `instance` | [field](../../../../FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/field.md) | 61 | `declaration-track:1a6f17437c3a08880afb1645de5f0380f14e8b70ba6f7a2ada9ec238d0631570` |
+| 1 | `instance` | [instNNRatCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/instnnratcast.md) | 35 | `declaration-track:b04b22eb9537b94f49c1926258d827450f2edb5ced111a013b104e06c118a1bc` |
+| 2 | `instance` | [instRatCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/instratcast.md) | 36 | `declaration-track:c5a8b7e70055e9630672e73fcc54c358e1cbbe96c8f6038e7e4a5f35bb6cb9b9` |
+| 3 | `lemma` | [up_nnratCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/up-nnratcast.md) | 38 | `result-track:7d8ada4a14ebdc88c428c99a06c9f484312c25ff7b260ddf4d94f3c0489c988e` |
+| 4 | `lemma` | [down_nnratCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/down-nnratcast.md) | 39 | `result-track:d2a58d0486ce300715d1eabb422af99ade8a9737eeec528eec594202fed299d3` |
+| 5 | `lemma` | [up_ratCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/up-ratcast.md) | 40 | `result-track:1d393254046acc67c14647943a88e90d9cb2c0761a7114618f4ee62585b8023b` |
+| 6 | `lemma` | [down_ratCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/down-ratcast.md) | 41 | `result-track:2c9e25662f9992f5b0a569201e7019bfdd0d7c5009cf5106f87a5f102e724d52` |
+| 7 | `instance` | [divisionSemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/divisionsemiring.md) | 43 | `declaration-track:864a06277a20c88dab6778d39f7f0c2239266a9b515988f4a383e41e4a7dc4fd` |
+| 8 | `instance` | [semifield](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/semifield.md) | 48 | `declaration-track:0902c182b3be35cd9e62ea341e54a0cdd30767b588bd020eb97a2be781f716b3` |
+| 9 | `instance` | [divisionRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/divisionring.md) | 51 | `declaration-track:9268d8ac92df83b590c17c8e2863f3e955fb2614d76d0bb5245ff6a1e51bd567` |
+| 10 | `instance` | [field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespacedPublic.lean/declarations/field.md) | 61 | `declaration-track:1a6f17437c3a08880afb1645de5f0380f14e8b70ba6f7a2ada9ec238d0631570` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [one_isLittleO_logCounting_single](../../../../FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/declarations/one-islittleo-logcounting-single.md) | 53 | `result-track:783a886e17a519d1c051f7d439176ed9e956642606a35e0871ba8fdd79974ce8` |
-| 2 | `lemma` | [zero_iff_logCounting_bounded](../../../../FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/declarations/zero-iff-logcounting-bounded.md) | 67 | `result-track:d7f398de327da4a2e73d919b8a378df178db5cfbc287cf893a597b1c10a8f513` |
-| 3 | `lemma` | [logCounting_single_isBigO_log](../../../../FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/declarations/logcounting-single-isbigo-log.md) | 102 | `result-track:3743fdb6fa2a445b936c432031512d267ee213c65b2f2816cb67f7f47447803f` |
-| 4 | `lemma` | [logCounting_isBigO_log_of_finite_support](../../../../FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/declarations/logcounting-isbigo-log-of-finite-support.md) | 114 | `result-track:cc901fc2657b030c60fa8b76d0c7c7becbe3e8e2a325591aeaf3a98509aa0e57` |
-| 5 | `lemma` | [finite_support_of_logCounting_isBigO_log](../../../../FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/declarations/finite-support-of-logcounting-isbigo-log.md) | 124 | `result-track:29ff8143a019b9944881541e155fd9d713607d8ac425b5a992428851c11e75a1` |
-| 6 | `theorem` | [finite_support_iff_logCounting_isBigO_log](../../../../FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/declarations/finite-support-iff-logcounting-isbigo-log.md) | 172 | `result-track:259d4e84ae7a3c2811daa31708346e8a2635a5a1ed1808e9af8cd1c8cf285a5e` |
-| 7 | `theorem` | [logCounting_isBigO_one_iff_analyticOnNhd](../../../../FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/declarations/logcounting-isbigo-one-iff-analyticonnhd.md) | 193 | `result-track:d772f449155f5acfa1d57a338b67897057ef0f797b3cc56a4f30aa4196b256ea` |
-| 8 | `theorem` | [logCounting_isBigO_log_iff_finite_support](../../../../FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/declarations/logcounting-isbigo-log-iff-finite-support.md) | 204 | `result-track:6f07b69309c8d47fda7288cea2427b19545801c62d0e78c8e81e2aa6870ed1cd` |
+| 1 | `lemma` | [one_isLittleO_logCounting_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/declarations/one-islittleo-logcounting-single.md) | 53 | `result-track:783a886e17a519d1c051f7d439176ed9e956642606a35e0871ba8fdd79974ce8` |
+| 2 | `lemma` | [zero_iff_logCounting_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/declarations/zero-iff-logcounting-bounded.md) | 67 | `result-track:d7f398de327da4a2e73d919b8a378df178db5cfbc287cf893a597b1c10a8f513` |
+| 3 | `lemma` | [logCounting_single_isBigO_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/declarations/logcounting-single-isbigo-log.md) | 102 | `result-track:3743fdb6fa2a445b936c432031512d267ee213c65b2f2816cb67f7f47447803f` |
+| 4 | `lemma` | [logCounting_isBigO_log_of_finite_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/declarations/logcounting-isbigo-log-of-finite-support.md) | 114 | `result-track:cc901fc2657b030c60fa8b76d0c7c7becbe3e8e2a325591aeaf3a98509aa0e57` |
+| 5 | `lemma` | [finite_support_of_logCounting_isBigO_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/declarations/finite-support-of-logcounting-isbigo-log.md) | 124 | `result-track:29ff8143a019b9944881541e155fd9d713607d8ac425b5a992428851c11e75a1` |
+| 6 | `theorem` | [finite_support_iff_logCounting_isBigO_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/declarations/finite-support-iff-logcounting-isbigo-log.md) | 172 | `result-track:259d4e84ae7a3c2811daa31708346e8a2635a5a1ed1808e9af8cd1c8cf285a5e` |
+| 7 | `theorem` | [logCounting_isBigO_one_iff_analyticOnNhd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/declarations/logcounting-isbigo-one-iff-analyticonnhd.md) | 193 | `result-track:d772f449155f5acfa1d57a338b67897057ef0f797b3cc56a4f30aa4196b256ea` |
+| 8 | `theorem` | [logCounting_isBigO_log_iff_finite_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AsymptoticNamespacedPublic.lean/declarations/logcounting-isbigo-log-iff-finite-support.md) | 204 | `result-track:6f07b69309c8d47fda7288cea2427b19545801c62d0e78c8e81e2aa6870ed1cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/Goursat.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/Goursat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Goursat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Goursat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [goursatFst](../../../../GroupTheoryAndGeneralizations/Goursat.lean/declarations/goursatfst.md) | 39 | `declaration-track:f9c84384cb72aece6f5593329f15891b8c228f266001207434c7df98079d5363` |
-| 2 | `def` | [goursatSnd](../../../../GroupTheoryAndGeneralizations/Goursat.lean/declarations/goursatsnd.md) | 52 | `declaration-track:58f8b7a0f0eddd4ab98d84e83a7255d35e4f7eea3f16bf1cdda8b9e479ba4836` |
-| 3 | `lemma` | [mem_goursatFst](../../../../GroupTheoryAndGeneralizations/Goursat.lean/declarations/mem-goursatfst.md) | 56 | `result-track:bca4e9f6ea8ec4eda15bea8de60ce7307c2b28d2a3aca29cd5d97b3f5fd29bbe` |
-| 4 | `lemma` | [mem_goursatSnd](../../../../GroupTheoryAndGeneralizations/Goursat.lean/declarations/mem-goursatsnd.md) | 59 | `result-track:e736deab02027c98d1de3e9ccf91741461d4a21c4c53c9ec1cd2cdbe371a29ab` |
-| 5 | `lemma` | [normal_goursatFst](../../../../GroupTheoryAndGeneralizations/Goursat.lean/declarations/normal-goursatfst.md) | 62 | `result-track:9c688ed68320e008127c52ff599148f9060b9ceff340a6df8b89d2f0bcd81d38` |
-| 6 | `lemma` | [normal_goursatSnd](../../../../GroupTheoryAndGeneralizations/Goursat.lean/declarations/normal-goursatsnd.md) | 65 | `result-track:3ff2f4ad86b6ecb0b905d9b1f6b6a2a46786c21a90871e444865708418a244d1` |
-| 7 | `lemma` | [mk_goursatFst_eq_iff_mk_goursatSnd_eq](../../../../GroupTheoryAndGeneralizations/Goursat.lean/declarations/mk-goursatfst-eq-iff-mk-goursatsnd-eq.md) | 69 | `result-track:7ee32a5b1f6516d6df870fc04645c83675e2dad263e08cd22d437e86ecf5dce8` |
-| 8 | `lemma` | [goursatFst_prod_goursatSnd_le](../../../../GroupTheoryAndGeneralizations/Goursat.lean/declarations/goursatfst-prod-goursatsnd-le.md) | 81 | `result-track:c70599f1326aad2f3af6d88725f931f32240d208500a306cb50a6bb9219b1a22` |
-| 9 | `lemma` | [goursat_surjective](../../../../GroupTheoryAndGeneralizations/Goursat.lean/declarations/goursat-surjective.md) | 100 | `result-track:9d12d9b572542b67ea1860c9b31db4d92f81ca3cdd031a6866fdffe1c89496aa` |
-| 10 | `lemma` | [goursat](../../../../GroupTheoryAndGeneralizations/Goursat.lean/declarations/goursat.md) | 124 | `result-track:b95dba8c53b9b7fc591396cfc9dd02bbb6098cc8d023448cbb578aace42ce9d0` |
+| 1 | `def` | [goursatFst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Goursat.lean/declarations/goursatfst.md) | 39 | `declaration-track:f9c84384cb72aece6f5593329f15891b8c228f266001207434c7df98079d5363` |
+| 2 | `def` | [goursatSnd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Goursat.lean/declarations/goursatsnd.md) | 52 | `declaration-track:58f8b7a0f0eddd4ab98d84e83a7255d35e4f7eea3f16bf1cdda8b9e479ba4836` |
+| 3 | `lemma` | [mem_goursatFst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Goursat.lean/declarations/mem-goursatfst.md) | 56 | `result-track:bca4e9f6ea8ec4eda15bea8de60ce7307c2b28d2a3aca29cd5d97b3f5fd29bbe` |
+| 4 | `lemma` | [mem_goursatSnd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Goursat.lean/declarations/mem-goursatsnd.md) | 59 | `result-track:e736deab02027c98d1de3e9ccf91741461d4a21c4c53c9ec1cd2cdbe371a29ab` |
+| 5 | `lemma` | [normal_goursatFst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Goursat.lean/declarations/normal-goursatfst.md) | 62 | `result-track:9c688ed68320e008127c52ff599148f9060b9ceff340a6df8b89d2f0bcd81d38` |
+| 6 | `lemma` | [normal_goursatSnd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Goursat.lean/declarations/normal-goursatsnd.md) | 65 | `result-track:3ff2f4ad86b6ecb0b905d9b1f6b6a2a46786c21a90871e444865708418a244d1` |
+| 7 | `lemma` | [mk_goursatFst_eq_iff_mk_goursatSnd_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Goursat.lean/declarations/mk-goursatfst-eq-iff-mk-goursatsnd-eq.md) | 69 | `result-track:7ee32a5b1f6516d6df870fc04645c83675e2dad263e08cd22d437e86ecf5dce8` |
+| 8 | `lemma` | [goursatFst_prod_goursatSnd_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Goursat.lean/declarations/goursatfst-prod-goursatsnd-le.md) | 81 | `result-track:c70599f1326aad2f3af6d88725f931f32240d208500a306cb50a6bb9219b1a22` |
+| 9 | `lemma` | [goursat_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Goursat.lean/declarations/goursat-surjective.md) | 100 | `result-track:9d12d9b572542b67ea1860c9b31db4d92f81ca3cdd031a6866fdffe1c89496aa` |
+| 10 | `lemma` | [goursat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Goursat.lean/declarations/goursat.md) | 124 | `result-track:b95dba8c53b9b7fc591396cfc9dd02bbb6098cc8d023448cbb578aace42ce9d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

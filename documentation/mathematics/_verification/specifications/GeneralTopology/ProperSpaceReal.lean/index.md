@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ProperSpaceReal.lean/index.md) · [Full source](../../../../GeneralTopology/ProperSpaceReal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceReal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceReal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,12 +63,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/ProperSpaceReal.lean/declarations/instance-source-edition-3.md) | 27 | `declaration-track:63ef0687ae507dd5b7e13b6fceb048863da5fe536d5603a062cf75a5d79f4273` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/ProperSpaceReal.lean/declarations/instance-source-edition-2.md) | 32 | `declaration-track:60f0a9609e79ce8960251b2abe4a7f0153ab86ff070d522a4fd1e67c75d82835` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/ProperSpaceReal.lean/declarations/instance-source-edition-4.md) | 36 | `declaration-track:bf2db0029890118dc2d2a4f4d14a1b296383b106cf7c9ef29307cacdea958c7e` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/ProperSpaceReal.lean/declarations/instance.md) | 48 | `declaration-track:4b38076d2a579ead5b77515e23dbf5a4c051ed01719703d3dc76f78ca2673bc4` |
-| 5 | `instance` | [instProperSpace](../../../../GeneralTopology/ProperSpaceReal.lean/declarations/instproperspace.md) | 51 | `declaration-track:5aacaa83580fb57883df8b885a0ec3d2fdef6e7d4c8f0fe102ddc08b1307772b` |
-| 6 | `instance` | [(anonymous)](../../../../GeneralTopology/ProperSpaceReal.lean/declarations/instance-source-edition-5.md) | 60 | `declaration-track:c4d71f57a17cebe5d6f4ba2125c0c136d611eac473d8df4eae8a0426dc46aa41` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceReal.lean/declarations/instance-source-edition-3.md) | 27 | `declaration-track:63ef0687ae507dd5b7e13b6fceb048863da5fe536d5603a062cf75a5d79f4273` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceReal.lean/declarations/instance-source-edition-2.md) | 32 | `declaration-track:60f0a9609e79ce8960251b2abe4a7f0153ab86ff070d522a4fd1e67c75d82835` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceReal.lean/declarations/instance-source-edition-4.md) | 36 | `declaration-track:bf2db0029890118dc2d2a4f4d14a1b296383b106cf7c9ef29307cacdea958c7e` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceReal.lean/declarations/instance.md) | 48 | `declaration-track:4b38076d2a579ead5b77515e23dbf5a4c051ed01719703d3dc76f78ca2673bc4` |
+| 5 | `instance` | [instProperSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceReal.lean/declarations/instproperspace.md) | 51 | `declaration-track:5aacaa83580fb57883df8b885a0ec3d2fdef6e7d4c8f0fe102ddc08b1307772b` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceReal.lean/declarations/instance-source-edition-5.md) | 60 | `declaration-track:c4d71f57a17cebe5d6f4ba2125c0c136d611eac473d8df4eae8a0426dc46aa41` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

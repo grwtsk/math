@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FourierL1L2ForwardNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FourierL1L2ForwardNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierL1L2ForwardNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierL1L2ForwardNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integral_fourier_mul_eq](../../../../MeasureAndIntegration/FourierL1L2ForwardNamespaced.lean/declarations/integral-fourier-mul-eq.md) | 20 | `result-track:8d9ff9e4ebee5be7459b6a7ea876ad5ad4b478d4ca3c0203517d82b526796016` |
-| 2 | `theorem` | [fourier_sub](../../../../MeasureAndIntegration/FourierL1L2ForwardNamespaced.lean/declarations/fourier-sub.md) | 33 | `result-track:523a43710b976cdecf46635d1a9c94f173f7720217a6db901378adef26e228cc` |
-| 3 | `theorem` | [continuous_fourier](../../../../MeasureAndIntegration/FourierL1L2ForwardNamespaced.lean/declarations/continuous-fourier.md) | 49 | `result-track:583bf1c189acf5321b47b1009e6d77c090c8c0391d15f1903a91c380016bdfa9` |
-| 4 | `theorem` | [fourier_toLp_ae](../../../../MeasureAndIntegration/FourierL1L2ForwardNamespaced.lean/declarations/fourier-tolp-ae.md) | 56 | `result-track:7f9a34fde132bbaa1fbda9049caa614e1e4fc802e6263ad9c5b58d22eb11909c` |
-| 5 | `theorem` | [fourier_memLp](../../../../MeasureAndIntegration/FourierL1L2ForwardNamespaced.lean/declarations/fourier-memlp.md) | 87 | `result-track:4ccd863f5239aa34505baa4916609c5613fe9f809c433e4fef37384cd4a7e178` |
-| 6 | `theorem` | [fourier_toLp_eq](../../../../MeasureAndIntegration/FourierL1L2ForwardNamespaced.lean/declarations/fourier-tolp-eq.md) | 92 | `result-track:80c90d120c9b16fcaecc17d2676c9f0cfe38713c70d6a166f6f93cbcf202aa0d` |
-| 7 | `theorem` | [norm_fourier_toLp](../../../../MeasureAndIntegration/FourierL1L2ForwardNamespaced.lean/declarations/norm-fourier-tolp.md) | 98 | `result-track:a74ebcfbfa35b9875560f8f837f098a3d8b4bf445d3b10b8369f873963e87554` |
+| 1 | `theorem` | [integral_fourier_mul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierL1L2ForwardNamespaced.lean/declarations/integral-fourier-mul-eq.md) | 20 | `result-track:8d9ff9e4ebee5be7459b6a7ea876ad5ad4b478d4ca3c0203517d82b526796016` |
+| 2 | `theorem` | [fourier_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierL1L2ForwardNamespaced.lean/declarations/fourier-sub.md) | 33 | `result-track:523a43710b976cdecf46635d1a9c94f173f7720217a6db901378adef26e228cc` |
+| 3 | `theorem` | [continuous_fourier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierL1L2ForwardNamespaced.lean/declarations/continuous-fourier.md) | 49 | `result-track:583bf1c189acf5321b47b1009e6d77c090c8c0391d15f1903a91c380016bdfa9` |
+| 4 | `theorem` | [fourier_toLp_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierL1L2ForwardNamespaced.lean/declarations/fourier-tolp-ae.md) | 56 | `result-track:7f9a34fde132bbaa1fbda9049caa614e1e4fc802e6263ad9c5b58d22eb11909c` |
+| 5 | `theorem` | [fourier_memLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierL1L2ForwardNamespaced.lean/declarations/fourier-memlp.md) | 87 | `result-track:4ccd863f5239aa34505baa4916609c5613fe9f809c433e4fef37384cd4a7e178` |
+| 6 | `theorem` | [fourier_toLp_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierL1L2ForwardNamespaced.lean/declarations/fourier-tolp-eq.md) | 92 | `result-track:80c90d120c9b16fcaecc17d2676c9f0cfe38713c70d6a166f6f93cbcf202aa0d` |
+| 7 | `theorem` | [norm_fourier_toLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierL1L2ForwardNamespaced.lean/declarations/norm-fourier-tolp.md) | 98 | `result-track:a74ebcfbfa35b9875560f8f837f098a3d8b4bf445d3b10b8369f873963e87554` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

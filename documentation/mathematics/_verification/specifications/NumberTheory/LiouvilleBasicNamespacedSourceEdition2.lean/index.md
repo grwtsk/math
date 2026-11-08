@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/LiouvilleBasicNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../NumberTheory/LiouvilleBasicNamespacedSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LiouvilleBasicNamespacedSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LiouvilleBasicNamespacedSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Liouville](../../../../NumberTheory/LiouvilleBasicNamespacedSourceEdition2.lean/declarations/liouville.md) | 41 | `declaration-track:02b6dd7a5c782e7cab7da33cbbce98ebc9f71995e99ea203a5f483b1e949a75d` |
-| 2 | `theorem` | [irrational](../../../../NumberTheory/LiouvilleBasicNamespacedSourceEdition2.lean/declarations/irrational.md) | 47 | `result-track:9baf69d90cfa7dafea8539152d1535bfaa4bdec5d56e0a46ff11f6816d0babb0` |
-| 3 | `theorem` | [exists_one_le_pow_mul_dist](../../../../NumberTheory/LiouvilleBasicNamespacedSourceEdition2.lean/declarations/exists-one-le-pow-mul-dist.md) | 103 | `result-track:325943eccbdb887df6bc7c2ac151cae6c7f4ff21e5aff6c68080b6f91b4ea788` |
-| 4 | `theorem` | [exists_pos_real_of_irrational_root](../../../../NumberTheory/LiouvilleBasicNamespacedSourceEdition2.lean/declarations/exists-pos-real-of-irrational-root.md) | 131 | `result-track:fb8c332c338f89b84b3e0796142ae947428caeaf808c88d70f850f8843873099` |
-| 5 | `theorem` | [transcendental](../../../../NumberTheory/LiouvilleBasicNamespacedSourceEdition2.lean/declarations/transcendental.md) | 185 | `result-track:aca506b6a5c40bab07ce3ebb212f427229008fa70960d238941594e2cfdf1adb` |
+| 1 | `def` | [Liouville](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LiouvilleBasicNamespacedSourceEdition2.lean/declarations/liouville.md) | 41 | `declaration-track:02b6dd7a5c782e7cab7da33cbbce98ebc9f71995e99ea203a5f483b1e949a75d` |
+| 2 | `theorem` | [irrational](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LiouvilleBasicNamespacedSourceEdition2.lean/declarations/irrational.md) | 47 | `result-track:9baf69d90cfa7dafea8539152d1535bfaa4bdec5d56e0a46ff11f6816d0babb0` |
+| 3 | `theorem` | [exists_one_le_pow_mul_dist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LiouvilleBasicNamespacedSourceEdition2.lean/declarations/exists-one-le-pow-mul-dist.md) | 103 | `result-track:325943eccbdb887df6bc7c2ac151cae6c7f4ff21e5aff6c68080b6f91b4ea788` |
+| 4 | `theorem` | [exists_pos_real_of_irrational_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LiouvilleBasicNamespacedSourceEdition2.lean/declarations/exists-pos-real-of-irrational-root.md) | 131 | `result-track:fb8c332c338f89b84b3e0796142ae947428caeaf808c88d70f850f8843873099` |
+| 5 | `theorem` | [transcendental](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LiouvilleBasicNamespacedSourceEdition2.lean/declarations/transcendental.md) | 185 | `result-track:aca506b6a5c40bab07ce3ebb212f427229008fa70960d238941594e2cfdf1adb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

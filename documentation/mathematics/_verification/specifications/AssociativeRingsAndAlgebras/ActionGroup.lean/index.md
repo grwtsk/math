@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/ActionGroup.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/ActionGroup.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionGroup.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionGroup.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [MulSemiringAction.toRingEquiv](../../../../AssociativeRingsAndAlgebras/ActionGroup.lean/declarations/mulsemiringaction-toringequiv.md) | 24 | `declaration-track:4cb839d69ab1515211f6a01763237dbec7f429dfa48d7c5baaa73948f2a3b000` |
+| 1 | `def` | [MulSemiringAction.toRingEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionGroup.lean/declarations/mulsemiringaction-toringequiv.md) | 24 | `declaration-track:4cb839d69ab1515211f6a01763237dbec7f429dfa48d7c5baaa73948f2a3b000` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

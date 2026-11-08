@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/LoadNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/LoadNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoadNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoadNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [envOfImports](../../../../../ComputerScience/AlgorithmsInComputerScience/LoadNamespaced.lean/declarations/envofimports.md) | 21 | `declaration-track:42b74ccd64f6783781384a3265df64817a0292a0a79b822be02df53aed65d32a` |
-| 2 | `def` | [runEnvOfImports](../../../../../ComputerScience/AlgorithmsInComputerScience/LoadNamespaced.lean/declarations/runenvofimports.md) | 27 | `declaration-track:ee2cf96d5a54701a0e88a5e8c16fb3cad800b5955132e9b9c62cb604a57c037a` |
-| 3 | `def` | [latexOutputOfImportModule](../../../../../ComputerScience/AlgorithmsInComputerScience/LoadNamespaced.lean/declarations/latexoutputofimportmodule.md) | 42 | `declaration-track:05035074e5ac2631068dbffa223ac54d40aff3a7c14a0c4959621946bd2650d1` |
-| 4 | `def` | [jsonOfImportModule](../../../../../ComputerScience/AlgorithmsInComputerScience/LoadNamespaced.lean/declarations/jsonofimportmodule.md) | 46 | `declaration-track:f78f9e87beefb251d44409a1e03ba5af41d165977d22ac3cbaacf626c01a528a` |
+| 1 | `def` | [envOfImports](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoadNamespaced.lean/declarations/envofimports.md) | 21 | `declaration-track:42b74ccd64f6783781384a3265df64817a0292a0a79b822be02df53aed65d32a` |
+| 2 | `def` | [runEnvOfImports](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoadNamespaced.lean/declarations/runenvofimports.md) | 27 | `declaration-track:ee2cf96d5a54701a0e88a5e8c16fb3cad800b5955132e9b9c62cb604a57c037a` |
+| 3 | `def` | [latexOutputOfImportModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoadNamespaced.lean/declarations/latexoutputofimportmodule.md) | 42 | `declaration-track:05035074e5ac2631068dbffa223ac54d40aff3a7c14a0c4959621946bd2650d1` |
+| 4 | `def` | [jsonOfImportModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoadNamespaced.lean/declarations/jsonofimportmodule.md) | 46 | `declaration-track:f78f9e87beefb251d44409a1e03ba5af41d165977d22ac3cbaacf626c01a528a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

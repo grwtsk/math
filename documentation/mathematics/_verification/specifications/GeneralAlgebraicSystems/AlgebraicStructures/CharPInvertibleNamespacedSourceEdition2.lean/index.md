@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPInvertibleNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPInvertibleNamespacedSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPInvertibleNamespacedSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPInvertibleNamespacedSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [invertibleOfRingCharNotDvd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPInvertibleNamespacedSourceEdition2.lean/declarations/invertibleofringcharnotdvd.md) | 37 | `declaration-track:fafdc186e8f884d3ff22171e73127a85cc8ee4353780999439eb9c6830aa1ec7` |
-| 2 | `theorem` | [not_ringChar_dvd_of_invertible](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPInvertibleNamespacedSourceEdition2.lean/declarations/not-ringchar-dvd-of-invertible.md) | 41 | `result-track:a614e12de14f4c83d7ad5905e8ccb11c3bfe12cced7816aaf1c5803c68dda49f` |
-| 3 | `def` | [invertibleOfCharPNotDvd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPInvertibleNamespacedSourceEdition2.lean/declarations/invertibleofcharpnotdvd.md) | 48 | `declaration-track:3e5c312505bb8501d3fc9dca355f407e22f252ec0d9741a719b51d296c29f5c8` |
-| 4 | `instance` | [invertibleOfPos](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPInvertibleNamespacedSourceEdition2.lean/declarations/invertibleofpos.md) | 54 | `declaration-track:31e3598c937b6a962b80fb48fe259f5ece3766d1675ca9718e082fae16c954cd` |
-| 5 | `instance` | [invertibleSucc](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPInvertibleNamespacedSourceEdition2.lean/declarations/invertiblesucc.md) | 64 | `declaration-track:31bdfcdc57f7bbc3e4126ba2e7463b526e9d19cbf932cba61d7e27646eeb1ca1` |
-| 6 | `instance` | [invertibleTwo](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPInvertibleNamespacedSourceEdition2.lean/declarations/invertibletwo.md) | 74 | `declaration-track:37c6ed3d78d9a00ba08ebd3018f0b4bf4d50381f73928dbad3d0cc1df26f5ae3` |
-| 7 | `instance` | [invertibleThree](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPInvertibleNamespacedSourceEdition2.lean/declarations/invertiblethree.md) | 78 | `declaration-track:0a70781ec7bc0b9bd9269befa80cfefd027b28407993354acdd51690812bc917` |
+| 1 | `def` | [invertibleOfRingCharNotDvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPInvertibleNamespacedSourceEdition2.lean/declarations/invertibleofringcharnotdvd.md) | 37 | `declaration-track:fafdc186e8f884d3ff22171e73127a85cc8ee4353780999439eb9c6830aa1ec7` |
+| 2 | `theorem` | [not_ringChar_dvd_of_invertible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPInvertibleNamespacedSourceEdition2.lean/declarations/not-ringchar-dvd-of-invertible.md) | 41 | `result-track:a614e12de14f4c83d7ad5905e8ccb11c3bfe12cced7816aaf1c5803c68dda49f` |
+| 3 | `def` | [invertibleOfCharPNotDvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPInvertibleNamespacedSourceEdition2.lean/declarations/invertibleofcharpnotdvd.md) | 48 | `declaration-track:3e5c312505bb8501d3fc9dca355f407e22f252ec0d9741a719b51d296c29f5c8` |
+| 4 | `instance` | [invertibleOfPos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPInvertibleNamespacedSourceEdition2.lean/declarations/invertibleofpos.md) | 54 | `declaration-track:31e3598c937b6a962b80fb48fe259f5ece3766d1675ca9718e082fae16c954cd` |
+| 5 | `instance` | [invertibleSucc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPInvertibleNamespacedSourceEdition2.lean/declarations/invertiblesucc.md) | 64 | `declaration-track:31bdfcdc57f7bbc3e4126ba2e7463b526e9d19cbf932cba61d7e27646eeb1ca1` |
+| 6 | `instance` | [invertibleTwo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPInvertibleNamespacedSourceEdition2.lean/declarations/invertibletwo.md) | 74 | `declaration-track:37c6ed3d78d9a00ba08ebd3018f0b4bf4d50381f73928dbad3d0cc1df26f5ae3` |
+| 7 | `instance` | [invertibleThree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPInvertibleNamespacedSourceEdition2.lean/declarations/invertiblethree.md) | 78 | `declaration-track:0a70781ec7bc0b9bd9269befa80cfefd027b28407993354acdd51690812bc917` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ADdf60df378a779d5Namespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ADdf60df378a779d5Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ADdf60df378a779d5Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ADdf60df378a779d5Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [DependencyTargetResolution](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ADdf60df378a779d5Namespaced.lean/declarations/dependencytargetresolution.md) | 24 | `declaration-track:7b29bbc3ca01b1911659edde50acbb7257d8eab901d84dad503c2431ddb5686f` |
-| 2 | `structure` | [DependencyEdge](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ADdf60df378a779d5Namespaced.lean/declarations/dependencyedge.md) | 29 | `declaration-track:ebef2a1af93ecf5bf75f1b4d8e37e3f78a994a3e17621d5fc8e295d9cf6d890a` |
-| 3 | `def` | [IsLogical](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ADdf60df378a779d5Namespaced.lean/declarations/islogical.md) | 46 | `declaration-track:1d2dd3613969326141011b6fd88e2d069a49312899b145dc59ecaf1ab71ddbdd` |
+| 1 | `inductive` | [DependencyTargetResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ADdf60df378a779d5Namespaced.lean/declarations/dependencytargetresolution.md) | 24 | `declaration-track:7b29bbc3ca01b1911659edde50acbb7257d8eab901d84dad503c2431ddb5686f` |
+| 2 | `structure` | [DependencyEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ADdf60df378a779d5Namespaced.lean/declarations/dependencyedge.md) | 29 | `declaration-track:ebef2a1af93ecf5bf75f1b4d8e37e3f78a994a3e17621d5fc8e295d9cf6d890a` |
+| 3 | `def` | [IsLogical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ADdf60df378a779d5Namespaced.lean/declarations/islogical.md) | 46 | `declaration-track:1d2dd3613969326141011b6fd88e2d069a49312899b145dc59ecaf1ab71ddbdd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

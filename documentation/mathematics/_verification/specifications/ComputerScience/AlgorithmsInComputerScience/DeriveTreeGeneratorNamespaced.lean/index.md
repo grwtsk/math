@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveTreeGeneratorNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveTreeGeneratorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveTreeGeneratorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveTreeGeneratorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Tree](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveTreeGeneratorNamespaced.lean/declarations/tree.md) | 20 | `declaration-track:91a40804408c1c49f832b02119d9b999e63fdcc11f5f1694a0cfd1d5c831a063` |
-| 2 | `def` | [mirror](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveTreeGeneratorNamespaced.lean/declarations/mirror.md) | 89 | `declaration-track:89242ff950447f57104f413261b49eb872df2c0c3ec5d04281e8f2b9c7401351` |
-| 3 | `def` | [shrinkTree](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveTreeGeneratorNamespaced.lean/declarations/shrinktree.md) | 96 | `declaration-track:d0877678e3fc407217b2ca5a08477d8c42107761c34673ca0c27b62459a31998` |
-| 4 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveTreeGeneratorNamespaced.lean/declarations/instance.md) | 106 | `declaration-track:88a299c58f745b9c1812d1cb6d483ddfe4339188d1df7e2b3a5e7dbe9b5ea602` |
+| 1 | `inductive` | [Tree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveTreeGeneratorNamespaced.lean/declarations/tree.md) | 20 | `declaration-track:91a40804408c1c49f832b02119d9b999e63fdcc11f5f1694a0cfd1d5c831a063` |
+| 2 | `def` | [mirror](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveTreeGeneratorNamespaced.lean/declarations/mirror.md) | 89 | `declaration-track:89242ff950447f57104f413261b49eb872df2c0c3ec5d04281e8f2b9c7401351` |
+| 3 | `def` | [shrinkTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveTreeGeneratorNamespaced.lean/declarations/shrinktree.md) | 96 | `declaration-track:d0877678e3fc407217b2ca5a08477d8c42107761c34673ca0c27b62459a31998` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveTreeGeneratorNamespaced.lean/declarations/instance.md) | 106 | `declaration-track:88a299c58f745b9c1812d1cb6d483ddfe4339188d1df7e2b3a5e7dbe9b5ea602` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

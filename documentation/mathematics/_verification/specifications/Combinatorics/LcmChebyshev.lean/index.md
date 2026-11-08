@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/LcmChebyshev.lean/index.md) · [Full source](../../../../Combinatorics/LcmChebyshev.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LcmChebyshev.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LcmChebyshev.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [intervalLcm](../../../../Combinatorics/LcmChebyshev.lean/declarations/intervallcm.md) | 18 | `declaration-track:25f0991c8fefc39854be67fe21ddf2d1e0497bb5c7ec2fdd89ebb884c5931a69` |
-| 2 | `theorem` | [dvd_intervalLcm](../../../../Combinatorics/LcmChebyshev.lean/declarations/dvd-intervallcm.md) | 22 | `result-track:6682fed094d59adef2f29d81a8c0fecf80bd88cba79214b54d6073b846b02777` |
-| 3 | `theorem` | [factorization_intervalLcm_eq_max](../../../../Combinatorics/LcmChebyshev.lean/declarations/factorization-intervallcm-eq-max.md) | 29 | `result-track:0ee4de35d84242cba38d82fd228ac3c9651fa38744d509d0d44813e9e72ed3c5` |
-| 4 | `theorem` | [factorization_intervalLcm_prime_log](../../../../Combinatorics/LcmChebyshev.lean/declarations/factorization-intervallcm-prime-log.md) | 42 | `result-track:dd1ef573a6a305112055795f773672ee75b45f656c23ce62029a03437234e746` |
-| 5 | `theorem` | [factorization_intervalLcm_prime](../../../../Combinatorics/LcmChebyshev.lean/declarations/factorization-intervallcm-prime.md) | 71 | `result-track:1efd3522f45f5c106f367b174f5fc58f141047ed05773fc43a81f2c502a9d478` |
-| 6 | `theorem` | [log_intervalLcm_eq_chebyshevPsi](../../../../Combinatorics/LcmChebyshev.lean/declarations/log-intervallcm-eq-chebyshevpsi.md) | 91 | `result-track:198f35731e273c2c8441b5b608032fb5f7ebfdbbb39c1af32d1506eb8dbea79f` |
-| 7 | `theorem` | [chebyshevPsi_le_log_intervalLcm](../../../../Combinatorics/LcmChebyshev.lean/declarations/chebyshevpsi-le-log-intervallcm.md) | 128 | `result-track:0ff4e71e14cc0fbe1a63ec69e9e3701e3ffee70d37556f7cbc357816bc032aff` |
+| 1 | `def` | [intervalLcm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LcmChebyshev.lean/declarations/intervallcm.md) | 18 | `declaration-track:25f0991c8fefc39854be67fe21ddf2d1e0497bb5c7ec2fdd89ebb884c5931a69` |
+| 2 | `theorem` | [dvd_intervalLcm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LcmChebyshev.lean/declarations/dvd-intervallcm.md) | 22 | `result-track:6682fed094d59adef2f29d81a8c0fecf80bd88cba79214b54d6073b846b02777` |
+| 3 | `theorem` | [factorization_intervalLcm_eq_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LcmChebyshev.lean/declarations/factorization-intervallcm-eq-max.md) | 29 | `result-track:0ee4de35d84242cba38d82fd228ac3c9651fa38744d509d0d44813e9e72ed3c5` |
+| 4 | `theorem` | [factorization_intervalLcm_prime_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LcmChebyshev.lean/declarations/factorization-intervallcm-prime-log.md) | 42 | `result-track:dd1ef573a6a305112055795f773672ee75b45f656c23ce62029a03437234e746` |
+| 5 | `theorem` | [factorization_intervalLcm_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LcmChebyshev.lean/declarations/factorization-intervallcm-prime.md) | 71 | `result-track:1efd3522f45f5c106f367b174f5fc58f141047ed05773fc43a81f2c502a9d478` |
+| 6 | `theorem` | [log_intervalLcm_eq_chebyshevPsi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LcmChebyshev.lean/declarations/log-intervallcm-eq-chebyshevpsi.md) | 91 | `result-track:198f35731e273c2c8441b5b608032fb5f7ebfdbbb39c1af32d1506eb8dbea79f` |
+| 7 | `theorem` | [chebyshevPsi_le_log_intervalLcm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LcmChebyshev.lean/declarations/chebyshevpsi-le-log-intervallcm.md) | 128 | `result-track:0ff4e71e14cc0fbe1a63ec69e9e3701e3ffee70d37556f7cbc357816bc032aff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

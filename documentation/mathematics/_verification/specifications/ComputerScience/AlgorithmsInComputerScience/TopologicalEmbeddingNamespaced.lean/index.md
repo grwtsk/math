@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [R4Like](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/declarations/r4like.md) | 27 | `declaration-track:2c3c9fcaee56a461a54f6d95c7e704c1b7d7b3aadee9433542bdc129fd34c80c` |
-| 2 | `structure` | [ComplexTorusUniformization](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/declarations/complextorusuniformization.md) | 35 | `declaration-track:77707bcceadb2a75c3aecda5cd58a3841ec17bef0da79f46adf0284b50ce3ffe` |
-| 3 | `structure` | [TopologicalEmbeddingData](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/declarations/topologicalembeddingdata.md) | 43 | `declaration-track:0eff80622e3e1318ee70efd5e2905c5d33f75578a1aca928444dae3d6ad14e2d` |
-| 4 | `def` | [orbitSet](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/declarations/orbitset.md) | 57 | `declaration-track:6a4c7a443ec9d3b93389907cf6c543a6398434cf8f13ef02f315c2540cfea68d` |
-| 5 | `structure` | [OrbitClosure](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/declarations/orbitclosure.md) | 65 | `declaration-track:f0e519579346836b64a937f4fecf558b80dc4acf7645f87cebe45e086da4c182` |
-| 6 | `structure` | [InfiniteOrderPointCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/declarations/infiniteorderpointcertificate.md) | 75 | `declaration-track:d91dddba32cf2f50f0a3d0a60585d6e79429c1cf6a699e2e1dab529fbb673fe0` |
-| 7 | `structure` | [LoopFromPoint](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/declarations/loopfrompoint.md) | 84 | `declaration-track:37c1ce96d701e6a17a22f72d7675fdc40d99123ff1dd114ac2a1b70719aa93d4` |
-| 8 | `theorem` | [certified_infinite_order_point_induces_certified_loop](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/declarations/certified-infinite-order-point-induces-certified-loop.md) | 96 | `result-track:285be21b09122145add852f61c12e6006a98d8a12b13b8ba80cc79c51761833a` |
+| 1 | `structure` | [R4Like](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/declarations/r4like.md) | 27 | `declaration-track:2c3c9fcaee56a461a54f6d95c7e704c1b7d7b3aadee9433542bdc129fd34c80c` |
+| 2 | `structure` | [ComplexTorusUniformization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/declarations/complextorusuniformization.md) | 35 | `declaration-track:77707bcceadb2a75c3aecda5cd58a3841ec17bef0da79f46adf0284b50ce3ffe` |
+| 3 | `structure` | [TopologicalEmbeddingData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/declarations/topologicalembeddingdata.md) | 43 | `declaration-track:0eff80622e3e1318ee70efd5e2905c5d33f75578a1aca928444dae3d6ad14e2d` |
+| 4 | `def` | [orbitSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/declarations/orbitset.md) | 57 | `declaration-track:6a4c7a443ec9d3b93389907cf6c543a6398434cf8f13ef02f315c2540cfea68d` |
+| 5 | `structure` | [OrbitClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/declarations/orbitclosure.md) | 65 | `declaration-track:f0e519579346836b64a937f4fecf558b80dc4acf7645f87cebe45e086da4c182` |
+| 6 | `structure` | [InfiniteOrderPointCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/declarations/infiniteorderpointcertificate.md) | 75 | `declaration-track:d91dddba32cf2f50f0a3d0a60585d6e79429c1cf6a699e2e1dab529fbb673fe0` |
+| 7 | `structure` | [LoopFromPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/declarations/loopfrompoint.md) | 84 | `declaration-track:37c1ce96d701e6a17a22f72d7675fdc40d99123ff1dd114ac2a1b70719aa93d4` |
+| 8 | `theorem` | [certified_infinite_order_point_induces_certified_loop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologicalEmbeddingNamespaced.lean/declarations/certified-infinite-order-point-induces-certified-loop.md) | 96 | `result-track:285be21b09122145add852f61c12e6006a98d8a12b13b8ba80cc79c51761833a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

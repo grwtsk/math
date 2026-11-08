@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/AlgebraRingNat.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/AlgebraRingNat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraRingNat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraRingNat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instAddMonoidWithOne](../../../../AssociativeRingsAndAlgebras/AlgebraRingNat.lean/declarations/instaddmonoidwithone.md) | 20 | `declaration-track:8390e7d634fae80ab33806a3a052449b7c940dd83fa3e780d86f56fa7dbe21a4` |
-| 2 | `instance` | [instAddCommMonoidWithOne](../../../../AssociativeRingsAndAlgebras/AlgebraRingNat.lean/declarations/instaddcommmonoidwithone.md) | 25 | `declaration-track:d2afdabaef4e995c2463d581a6694a2c98fbf3794aa71759c994a633483f43a5` |
-| 3 | `instance` | [instDistrib](../../../../AssociativeRingsAndAlgebras/AlgebraRingNat.lean/declarations/instdistrib.md) | 29 | `declaration-track:0c35a3733ded420d7b158fc50f1daedcc331df3ae202bf9f49aa7f79dfe95de1` |
-| 4 | `instance` | [instNonUnitalNonAssocSemiring](../../../../AssociativeRingsAndAlgebras/AlgebraRingNat.lean/declarations/instnonunitalnonassocsemiring.md) | 33 | `declaration-track:233c6936ec2a10ac09a8d2c12748cf0737137df35e2d4ee5f4ffbf854015a86d` |
-| 5 | `instance` | [instNonUnitalSemiring](../../../../AssociativeRingsAndAlgebras/AlgebraRingNat.lean/declarations/instnonunitalsemiring.md) | 38 | `declaration-track:f3e084f9eb1e49c5aed3b386dff3bac4160955bd942cd46097455edb69248db0` |
-| 6 | `instance` | [instNonAssocSemiring](../../../../AssociativeRingsAndAlgebras/AlgebraRingNat.lean/declarations/instnonassocsemiring.md) | 42 | `declaration-track:2459a0731ffa606205e728b4b33f524a88218ceb4157c38b594cb1e3e6c3ae02` |
-| 7 | `instance` | [instSemiring](../../../../AssociativeRingsAndAlgebras/AlgebraRingNat.lean/declarations/instsemiring.md) | 47 | `declaration-track:70a092ee477a1bea1e68260ec2ce2bd86a709f0f0f65cfbc33ca15e66608a999` |
-| 8 | `instance` | [instCommSemiring](../../../../AssociativeRingsAndAlgebras/AlgebraRingNat.lean/declarations/instcommsemiring.md) | 52 | `declaration-track:d45e6270cbe07ae6e03ed3deb146cd010eb7523af988aee2d1f4acd84f639868` |
-| 9 | `instance` | [instCharZero](../../../../AssociativeRingsAndAlgebras/AlgebraRingNat.lean/declarations/instcharzero.md) | 56 | `declaration-track:8207a27e5b90313233fbe5948b7d7421ced10283a53b714160fe79e650ddc649` |
+| 1 | `instance` | [instAddMonoidWithOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraRingNat.lean/declarations/instaddmonoidwithone.md) | 20 | `declaration-track:8390e7d634fae80ab33806a3a052449b7c940dd83fa3e780d86f56fa7dbe21a4` |
+| 2 | `instance` | [instAddCommMonoidWithOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraRingNat.lean/declarations/instaddcommmonoidwithone.md) | 25 | `declaration-track:d2afdabaef4e995c2463d581a6694a2c98fbf3794aa71759c994a633483f43a5` |
+| 3 | `instance` | [instDistrib](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraRingNat.lean/declarations/instdistrib.md) | 29 | `declaration-track:0c35a3733ded420d7b158fc50f1daedcc331df3ae202bf9f49aa7f79dfe95de1` |
+| 4 | `instance` | [instNonUnitalNonAssocSemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraRingNat.lean/declarations/instnonunitalnonassocsemiring.md) | 33 | `declaration-track:233c6936ec2a10ac09a8d2c12748cf0737137df35e2d4ee5f4ffbf854015a86d` |
+| 5 | `instance` | [instNonUnitalSemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraRingNat.lean/declarations/instnonunitalsemiring.md) | 38 | `declaration-track:f3e084f9eb1e49c5aed3b386dff3bac4160955bd942cd46097455edb69248db0` |
+| 6 | `instance` | [instNonAssocSemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraRingNat.lean/declarations/instnonassocsemiring.md) | 42 | `declaration-track:2459a0731ffa606205e728b4b33f524a88218ceb4157c38b594cb1e3e6c3ae02` |
+| 7 | `instance` | [instSemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraRingNat.lean/declarations/instsemiring.md) | 47 | `declaration-track:70a092ee477a1bea1e68260ec2ce2bd86a709f0f0f65cfbc33ca15e66608a999` |
+| 8 | `instance` | [instCommSemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraRingNat.lean/declarations/instcommsemiring.md) | 52 | `declaration-track:d45e6270cbe07ae6e03ed3deb146cd010eb7523af988aee2d1f4acd84f639868` |
+| 9 | `instance` | [instCharZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraRingNat.lean/declarations/instcharzero.md) | 56 | `declaration-track:8207a27e5b90313233fbe5948b7d7421ced10283a53b714160fe79e650ddc649` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

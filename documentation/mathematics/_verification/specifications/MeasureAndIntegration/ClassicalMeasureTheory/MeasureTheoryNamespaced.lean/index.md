@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasureTheoryNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasureTheoryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasureTheoryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasureTheoryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [conceptualSubdirectories](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasureTheoryNamespaced.lean/declarations/conceptualsubdirectories.md) | 18 | `declaration-track:f3efd73c5f568f9b95741a724ba96e6f8cfebce74b554643da85f505748da867` |
-| 2 | `theorem` | [conceptualSubdirectories_count](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasureTheoryNamespaced.lean/declarations/conceptualsubdirectories-count.md) | 22 | `result-track:71152558e39271a89b99f2d41ccb6983222494b407e29407d21500fec9ab1441` |
+| 1 | `def` | [conceptualSubdirectories](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasureTheoryNamespaced.lean/declarations/conceptualsubdirectories.md) | 18 | `declaration-track:f3efd73c5f568f9b95741a724ba96e6f8cfebce74b554643da85f505748da867` |
+| 2 | `theorem` | [conceptualSubdirectories_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasureTheoryNamespaced.lean/declarations/conceptualsubdirectories-count.md) | 22 | `result-track:71152558e39271a89b99f2d41ccb6983222494b407e29407d21500fec9ab1441` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

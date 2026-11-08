@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PrimeTermJ.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PrimeTermJ.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeTermJ.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeTermJ.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integrable_paperFT_mul_sin](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/integrable-paperft-mul-sin.md) | 31 | `result-track:37901acbf3585c3a847c0d8d82cb3bef21cc138ad548c0866d4b00e6aa89ac49` |
-| 2 | `theorem` | [integrable_paperFT_mul_trig](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/integrable-paperft-mul-trig.md) | 39 | `result-track:c72aaa8c2c2658663e2a543b8929f730f47a987746f01e3dcaea6d84cca0f24e` |
-| 3 | `theorem` | [mul_cexp_add_conj_mul_cexp](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/mul-cexp-add-conj-mul-cexp.md) | 49 | `result-track:74c6899b97f3210ddeeab6f7cb2afcceca137cd0bdc8c532c904b6cab19308d3` |
-| 4 | `theorem` | [c_mul_k_add_conj_mul_k_neg](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/c-mul-k-add-conj-mul-k-neg.md) | 68 | `result-track:f3c59e83ed962d27e4605d56b5d1fae4a730cd51d2d8cdb1fa44a3102e9aa37a` |
-| 5 | `theorem` | [complex_summand_eq_zero](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/complex-summand-eq-zero.md) | 100 | `result-track:ff076ceef50a77475ac35327efb7387dad77c147c13cd71f9fc1f437f8542eb5` |
-| 6 | `theorem` | [paperFT_mul_Pc_eq](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/paperft-mul-pc-eq.md) | 120 | `result-track:4370176e890e7325c2ac5dbdbdbe43fb3783ff10239759f2f31d839fc2283b5c` |
-| 7 | `theorem` | [integrable_paperFT_mul_Pc](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/integrable-paperft-mul-pc.md) | 133 | `result-track:05d1ca28820a2bbd4705d68673f35199e722978682a1e3ae02c489f9cb541293` |
-| 8 | `theorem` | [prime_term_complex](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/prime-term-complex.md) | 140 | `result-track:1d27886b0950cccd62fac9e7ae2b9d10cb3e81acf5ed21233aaa339ae4f6a624` |
-| 9 | `theorem` | [Pc_add](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/pc-add.md) | 162 | `result-track:037cfef98d73b787b246aa9a21c4c4fa490ec400ca5a198fac5b63989c98d42d` |
-| 10 | `theorem` | [Pc_congr](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/pc-congr.md) | 169 | `result-track:616dc372c04d268c444c18b8fd37a36675fedc8188bdefd1fd2035e6969d1928` |
-| 11 | `theorem` | [Pc_neg_vonMangoldt](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/pc-neg-vonmangoldt.md) | 176 | `result-track:f233adae4099013d59be19f5a3008031872ced28159b46fae3de21d21c4f25ce` |
-| 12 | `theorem` | [nuc_xiCoeff_eq'](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/nuc-xicoeff-eq.md) | 185 | `result-track:b3ee22fa02eadd93358765e73223821e6dd8c72930c2850eafa3adacba73e1b6` |
+| 1 | `theorem` | [integrable_paperFT_mul_sin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeTermJ.lean/declarations/integrable-paperft-mul-sin.md) | 31 | `result-track:37901acbf3585c3a847c0d8d82cb3bef21cc138ad548c0866d4b00e6aa89ac49` |
+| 2 | `theorem` | [integrable_paperFT_mul_trig](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeTermJ.lean/declarations/integrable-paperft-mul-trig.md) | 39 | `result-track:c72aaa8c2c2658663e2a543b8929f730f47a987746f01e3dcaea6d84cca0f24e` |
+| 3 | `theorem` | [mul_cexp_add_conj_mul_cexp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeTermJ.lean/declarations/mul-cexp-add-conj-mul-cexp.md) | 49 | `result-track:74c6899b97f3210ddeeab6f7cb2afcceca137cd0bdc8c532c904b6cab19308d3` |
+| 4 | `theorem` | [c_mul_k_add_conj_mul_k_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeTermJ.lean/declarations/c-mul-k-add-conj-mul-k-neg.md) | 68 | `result-track:f3c59e83ed962d27e4605d56b5d1fae4a730cd51d2d8cdb1fa44a3102e9aa37a` |
+| 5 | `theorem` | [complex_summand_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeTermJ.lean/declarations/complex-summand-eq-zero.md) | 100 | `result-track:ff076ceef50a77475ac35327efb7387dad77c147c13cd71f9fc1f437f8542eb5` |
+| 6 | `theorem` | [paperFT_mul_Pc_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeTermJ.lean/declarations/paperft-mul-pc-eq.md) | 120 | `result-track:4370176e890e7325c2ac5dbdbdbe43fb3783ff10239759f2f31d839fc2283b5c` |
+| 7 | `theorem` | [integrable_paperFT_mul_Pc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeTermJ.lean/declarations/integrable-paperft-mul-pc.md) | 133 | `result-track:05d1ca28820a2bbd4705d68673f35199e722978682a1e3ae02c489f9cb541293` |
+| 8 | `theorem` | [prime_term_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeTermJ.lean/declarations/prime-term-complex.md) | 140 | `result-track:1d27886b0950cccd62fac9e7ae2b9d10cb3e81acf5ed21233aaa339ae4f6a624` |
+| 9 | `theorem` | [Pc_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeTermJ.lean/declarations/pc-add.md) | 162 | `result-track:037cfef98d73b787b246aa9a21c4c4fa490ec400ca5a198fac5b63989c98d42d` |
+| 10 | `theorem` | [Pc_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeTermJ.lean/declarations/pc-congr.md) | 169 | `result-track:616dc372c04d268c444c18b8fd37a36675fedc8188bdefd1fd2035e6969d1928` |
+| 11 | `theorem` | [Pc_neg_vonMangoldt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeTermJ.lean/declarations/pc-neg-vonmangoldt.md) | 176 | `result-track:f233adae4099013d59be19f5a3008031872ced28159b46fae3de21d21c4f25ce` |
+| 12 | `theorem` | [nuc_xiCoeff_eq'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeTermJ.lean/declarations/nuc-xicoeff-eq.md) | 185 | `result-track:b3ee22fa02eadd93358765e73223821e6dd8c72930c2850eafa3adacba73e1b6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

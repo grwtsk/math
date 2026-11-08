@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpiNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [effectiveEpiStructOfRegularEpi](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpiNamespaced.lean/declarations/effectiveepistructofregularepi.md) | 31 | `declaration-track:a8413f5b641ca8e063d68cd46cbe20cc47564f5f8a4cb9a65cd2cd53cb6d7503` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpiNamespaced.lean/declarations/instance.md) | 38 | `declaration-track:381196a848004be0e16a48bc15e72918f9fa6b5570e0fe44d656f021c44c9564` |
-| 3 | `theorem` | [effectiveEpiOfKernelPair](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpiNamespaced.lean/declarations/effectiveepiofkernelpair.md) | 42 | `result-track:063fb0a785ff40a22c1bc5f3fd56759fe8f427baf2bfeeb4a57eeef77a3a2d8a` |
-| 4 | `instance` | [regularEpiOfEffectiveEpi](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpiNamespaced.lean/declarations/regularepiofeffectiveepi.md) | 48 | `declaration-track:65fdf9e01eeb4a42842824c20eae57fe240d4cbc75ca6ab9ab2338ecee2ded3f` |
+| 1 | `def` | [effectiveEpiStructOfRegularEpi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpiNamespaced.lean/declarations/effectiveepistructofregularepi.md) | 31 | `declaration-track:a8413f5b641ca8e063d68cd46cbe20cc47564f5f8a4cb9a65cd2cd53cb6d7503` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpiNamespaced.lean/declarations/instance.md) | 38 | `declaration-track:381196a848004be0e16a48bc15e72918f9fa6b5570e0fe44d656f021c44c9564` |
+| 3 | `theorem` | [effectiveEpiOfKernelPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpiNamespaced.lean/declarations/effectiveepiofkernelpair.md) | 42 | `result-track:063fb0a785ff40a22c1bc5f3fd56759fe8f427baf2bfeeb4a57eeef77a3a2d8a` |
+| 4 | `instance` | [regularEpiOfEffectiveEpi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpiNamespaced.lean/declarations/regularepiofeffectiveepi.md) | 48 | `declaration-track:65fdf9e01eeb4a42842824c20eae57fe240d4cbc75ca6ab9ab2338ecee2ded3f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

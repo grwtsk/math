@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/declarations/example-source-edition-9.md) | 20 | `declaration-track:c723ea46042425f682f93053ff3d3cf3a83ce340a05157e4b207782611dbd156` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/declarations/example-source-edition-8.md) | 24 | `declaration-track:c2c04cac3ee7a897df60a53e2af792b762fcb45b7fd2d5c148e12940c2a8e2ce` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/declarations/example-source-edition-5.md) | 31 | `declaration-track:99c298978c65d179ef3ad6296121bc299ecefb24f854d74d4a91654e3caeab6b` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/declarations/example.md) | 36 | `declaration-track:20a51701144b5081918bf2145d8d043cf013d338840632e8df22e0c30d1447c0` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/declarations/example-source-edition-4.md) | 42 | `declaration-track:86f5b3a8682b85b0e92399c8f5b8d8b05363fb0cc276feebbc154010b9a044a7` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/declarations/example-source-edition-3.md) | 46 | `declaration-track:64a4d1fb630e24b8ab9d1f02768641af7fcb3938eea95b41ad4c04678c1c66c0` |
-| 7 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/declarations/example-source-edition-7.md) | 52 | `declaration-track:b9b5f86db5dbd7dc29aa7ed863478a481edb223b8958b735d80911d0eeee2338` |
-| 8 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/declarations/example-source-edition-2.md) | 55 | `declaration-track:48d19c4a7e3e0d8e70f508a26b4a62e2b82de7c38a63f88a4a6e000606c31c32` |
-| 9 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/declarations/example-source-edition-6.md) | 59 | `declaration-track:a959203c8b69944323f9280b22018d6c22b191629a65a9118f5a62f966dd9858` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/declarations/example-source-edition-9.md) | 20 | `declaration-track:c723ea46042425f682f93053ff3d3cf3a83ce340a05157e4b207782611dbd156` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/declarations/example-source-edition-8.md) | 24 | `declaration-track:c2c04cac3ee7a897df60a53e2af792b762fcb45b7fd2d5c148e12940c2a8e2ce` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/declarations/example-source-edition-5.md) | 31 | `declaration-track:99c298978c65d179ef3ad6296121bc299ecefb24f854d74d4a91654e3caeab6b` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/declarations/example.md) | 36 | `declaration-track:20a51701144b5081918bf2145d8d043cf013d338840632e8df22e0c30d1447c0` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/declarations/example-source-edition-4.md) | 42 | `declaration-track:86f5b3a8682b85b0e92399c8f5b8d8b05363fb0cc276feebbc154010b9a044a7` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/declarations/example-source-edition-3.md) | 46 | `declaration-track:64a4d1fb630e24b8ab9d1f02768641af7fcb3938eea95b41ad4c04678c1c66c0` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/declarations/example-source-edition-7.md) | 52 | `declaration-track:b9b5f86db5dbd7dc29aa7ed863478a481edb223b8958b735d80911d0eeee2338` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/declarations/example-source-edition-2.md) | 55 | `declaration-track:48d19c4a7e3e0d8e70f508a26b4a62e2b82de7c38a63f88a4a6e000606c31c32` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGateNamespaced.lean/declarations/example-source-edition-6.md) | 59 | `declaration-track:a959203c8b69944323f9280b22018d6c22b191629a65a9118f5a62f966dd9858` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

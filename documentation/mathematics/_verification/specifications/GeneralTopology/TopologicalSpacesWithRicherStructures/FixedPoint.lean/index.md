@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPoint.lean/index.md) · [Full source](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPoint.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPoint.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPoint.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HasFixedPoint](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPoint.lean/declarations/hasfixedpoint.md) | 19 | `declaration-track:caa181ad971c9b15befb502896227dc411ee9aa7d5e1d8bb7ccb812ba8cde826` |
-| 2 | `structure` | [HasUniqueFixedPoint](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPoint.lean/declarations/hasuniquefixedpoint.md) | 23 | `declaration-track:482683be58ae662bf0f414a2d5cd7338542b4edaf37e78c41eb24520bda080fb` |
-| 3 | `structure` | [ContractiveFixedPointContract](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPoint.lean/declarations/contractivefixedpointcontract.md) | 27 | `declaration-track:b56990cac423f64eb341b378a4f63337d3b0943abb1353ce05a86f3db91b4617` |
-| 4 | `theorem` | [fixed_point_is_fixed](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPoint.lean/declarations/fixed-point-is-fixed.md) | 35 | `result-track:80b8f5e4b5edff14aac75166b26c03d9d4846d9736f8a2b477427a50099d1267` |
-| 5 | `theorem` | [unique_fixed_point_eq](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPoint.lean/declarations/unique-fixed-point-eq.md) | 40 | `result-track:4abd80af77c2629b318e9b81fcf398a0f228eeefb224fa7e00bddbfe962bd12b` |
+| 1 | `structure` | [HasFixedPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPoint.lean/declarations/hasfixedpoint.md) | 19 | `declaration-track:caa181ad971c9b15befb502896227dc411ee9aa7d5e1d8bb7ccb812ba8cde826` |
+| 2 | `structure` | [HasUniqueFixedPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPoint.lean/declarations/hasuniquefixedpoint.md) | 23 | `declaration-track:482683be58ae662bf0f414a2d5cd7338542b4edaf37e78c41eb24520bda080fb` |
+| 3 | `structure` | [ContractiveFixedPointContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPoint.lean/declarations/contractivefixedpointcontract.md) | 27 | `declaration-track:b56990cac423f64eb341b378a4f63337d3b0943abb1353ce05a86f3db91b4617` |
+| 4 | `theorem` | [fixed_point_is_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPoint.lean/declarations/fixed-point-is-fixed.md) | 35 | `result-track:80b8f5e4b5edff14aac75166b26c03d9d4846d9736f8a2b477427a50099d1267` |
+| 5 | `theorem` | [unique_fixed_point_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPoint.lean/declarations/unique-fixed-point-eq.md) | 40 | `result-track:4abd80af77c2629b318e9b81fcf398a0f228eeefb224fa7e00bddbfe962bd12b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

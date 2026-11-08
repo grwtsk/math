@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ObligationNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ObligationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObligationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObligationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ProofObligationKind](../../../../../ComputerScience/AlgorithmsInComputerScience/ObligationNamespaced.lean/declarations/proofobligationkind.md) | 15 | `declaration-track:7659df63943bd9455bb2e5c2b693cee01efd6a1ca5ed4a95b3fc4b757fbb93bb` |
-| 2 | `inductive` | [ProofObligationStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/ObligationNamespaced.lean/declarations/proofobligationstatus.md) | 23 | `declaration-track:760773ee51b4cd75fd42b6523d75fbbb4d2296684b951210c736df77f4431927` |
-| 3 | `structure` | [ProofObligation](../../../../../ComputerScience/AlgorithmsInComputerScience/ObligationNamespaced.lean/declarations/proofobligation.md) | 31 | `declaration-track:2353b11e67e8dd2429bf0232003d35d221db47230336acfa2b1a30674f291da3` |
+| 1 | `inductive` | [ProofObligationKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObligationNamespaced.lean/declarations/proofobligationkind.md) | 15 | `declaration-track:7659df63943bd9455bb2e5c2b693cee01efd6a1ca5ed4a95b3fc4b757fbb93bb` |
+| 2 | `inductive` | [ProofObligationStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObligationNamespaced.lean/declarations/proofobligationstatus.md) | 23 | `declaration-track:760773ee51b4cd75fd42b6523d75fbbb4d2296684b951210c736df77f4431927` |
+| 3 | `structure` | [ProofObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObligationNamespaced.lean/declarations/proofobligation.md) | 31 | `declaration-track:2353b11e67e8dd2429bf0232003d35d221db47230336acfa2b1a30674f291da3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

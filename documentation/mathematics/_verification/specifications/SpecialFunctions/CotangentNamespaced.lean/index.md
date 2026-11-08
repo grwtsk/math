@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/CotangentNamespaced.lean/index.md) · [Full source](../../../../SpecialFunctions/CotangentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/CotangentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/CotangentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Complex.cot_eq_exp_ratio](../../../../SpecialFunctions/CotangentNamespaced.lean/declarations/complex-cot-eq-exp-ratio.md) | 26 | `result-track:557860bcce88ed0ee44bbae366aa6720f42627b275396e9e9f4f1e81b38ff55e` |
-| 2 | `lemma` | [Complex.cot_pi_eq_exp_ratio](../../../../SpecialFunctions/CotangentNamespaced.lean/declarations/complex-cot-pi-eq-exp-ratio.md) | 41 | `result-track:eadfb2c4a8f5221b3ea7ad2c9679b0971e46f9fc1a6859578a25ecd098a01d0d` |
-| 3 | `theorem` | [pi_mul_cot_pi_q_exp](../../../../SpecialFunctions/CotangentNamespaced.lean/declarations/pi-mul-cot-pi-q-exp.md) | 47 | `result-track:1fc7401266c5ddafca078bc7027967ee73540b523f703f51e55d60ae5ef11e60` |
+| 1 | `lemma` | [Complex.cot_eq_exp_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/CotangentNamespaced.lean/declarations/complex-cot-eq-exp-ratio.md) | 26 | `result-track:557860bcce88ed0ee44bbae366aa6720f42627b275396e9e9f4f1e81b38ff55e` |
+| 2 | `lemma` | [Complex.cot_pi_eq_exp_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/CotangentNamespaced.lean/declarations/complex-cot-pi-eq-exp-ratio.md) | 41 | `result-track:eadfb2c4a8f5221b3ea7ad2c9679b0971e46f9fc1a6859578a25ecd098a01d0d` |
+| 3 | `theorem` | [pi_mul_cot_pi_q_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/CotangentNamespaced.lean/declarations/pi-mul-cot-pi-q-exp.md) | 47 | `result-track:1fc7401266c5ddafca078bc7027967ee73540b523f703f51e55d60ae5ef11e60` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

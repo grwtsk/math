@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuarticBaseMaximalCriterion.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuarticBaseMaximalCriterion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticBaseMaximalCriterion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticBaseMaximalCriterion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticCubicMaximalReduction`](../../../../CommutativeAlgebra/QuarticCubicMaximalReduction.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Algebra.QuarticCubicPolynomialComparison`](../../../../CommutativeAlgebra/QuarticCubicPolynomialComparison.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticCubicMaximalReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicMaximalReduction.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticCubicPolynomialComparison`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicPolynomialComparison.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coefficientResolvent_reduction_separable](../../../../CommutativeAlgebra/QuarticBaseMaximalCriterion.lean/declarations/coefficientresolvent-reduction-separable.md) | 29 | `result-track:6feda7e35006093c82906053d72261f62654c39f1639a00f8a1a6b79014d128a` |
+| 1 | `theorem` | [coefficientResolvent_reduction_separable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticBaseMaximalCriterion.lean/declarations/coefficientresolvent-reduction-separable.md) | 29 | `result-track:6feda7e35006093c82906053d72261f62654c39f1639a00f8a1a6b79014d128a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

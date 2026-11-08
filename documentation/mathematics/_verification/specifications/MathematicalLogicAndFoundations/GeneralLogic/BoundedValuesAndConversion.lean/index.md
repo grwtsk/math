@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundedValuesAndConversion.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundedValuesAndConversion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundedValuesAndConversion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundedValuesAndConversion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Byte](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundedValuesAndConversion.lean/declarations/byte.md) | 37 | `declaration-track:44861315413ed92b784270e8df0343106f8f8363eae1a353194b1b026c40c144` |
-| 2 | `def` | [toNat](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundedValuesAndConversion.lean/declarations/tonat.md) | 42 | `declaration-track:2a40340ff90fa9a44115dc5fa7e160e2a13b731297876f98a9714788bf4ed9af` |
-| 3 | `def` | [ofNat?](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundedValuesAndConversion.lean/declarations/ofnat.md) | 45 | `declaration-track:ea70cd9b5ac8cd544cedb012384bf98d6a10d9063293fe71e5b1867448961d2e` |
+| 1 | `abbrev` | [Byte](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundedValuesAndConversion.lean/declarations/byte.md) | 37 | `declaration-track:44861315413ed92b784270e8df0343106f8f8363eae1a353194b1b026c40c144` |
+| 2 | `def` | [toNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundedValuesAndConversion.lean/declarations/tonat.md) | 42 | `declaration-track:2a40340ff90fa9a44115dc5fa7e160e2a13b731297876f98a9714788bf4ed9af` |
+| 3 | `def` | [ofNat?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundedValuesAndConversion.lean/declarations/ofnat.md) | 45 | `declaration-track:ea70cd9b5ac8cd544cedb012384bf98d6a10d9063293fe71e5b1867448961d2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

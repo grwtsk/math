@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FinalValue.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FinalValue.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinalValue.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinalValue.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [laplace_rescale](../../../../MeasureAndIntegration/FinalValue.lean/declarations/laplace-rescale.md) | 14 | `result-track:aa911926dc04002164f5a381b5ee573c8cb5dc26ccd8b5ee7651c794eb1f1eda` |
-| 2 | `theorem` | [bounded_final_value](../../../../MeasureAndIntegration/FinalValue.lean/declarations/bounded-final-value.md) | 27 | `result-track:d1dc5fecf3928faf8eb3fb6c137fafdf573211d1597a0d13608fc0fd9a1788b7` |
+| 1 | `theorem` | [laplace_rescale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinalValue.lean/declarations/laplace-rescale.md) | 14 | `result-track:aa911926dc04002164f5a381b5ee573c8cb5dc26ccd8b5ee7651c794eb1f1eda` |
+| 2 | `theorem` | [bounded_final_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinalValue.lean/declarations/bounded-final-value.md) | 27 | `result-track:d1dc5fecf3928faf8eb3fb6c137fafdf573211d1597a0d13608fc0fd9a1788b7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

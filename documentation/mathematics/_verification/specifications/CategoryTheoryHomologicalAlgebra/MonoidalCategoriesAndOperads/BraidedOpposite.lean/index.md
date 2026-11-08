@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedOpposite.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedOpposite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedOpposite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedOpposite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedOpposite.lean/declarations/instance.md) | 19 | `declaration-track:a7b768f75125c311683be7964bb74557f8cd3e57a478cd1b34d70cc039c4d182` |
-| 2 | `lemma` | [unop_tensorμ](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedOpposite.lean/declarations/unop-tensor.md) | 24 | `result-track:6aca51b76cc17d60fe8c6c215b99d482dbef94dd16b42b8887c6dee1c6ddb466` |
-| 3 | `lemma` | [op_tensorμ](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedOpposite.lean/declarations/op-tensor.md) | 30 | `result-track:d76a0820cdf35b8e9e89c987db9471442bd66bc1b8a8a68d94818fce2066d841` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedOpposite.lean/declarations/instance.md) | 19 | `declaration-track:a7b768f75125c311683be7964bb74557f8cd3e57a478cd1b34d70cc039c4d182` |
+| 2 | `lemma` | [unop_tensorμ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedOpposite.lean/declarations/unop-tensor.md) | 24 | `result-track:6aca51b76cc17d60fe8c6c215b99d482dbef94dd16b42b8887c6dee1c6ddb466` |
+| 3 | `lemma` | [op_tensorμ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedOpposite.lean/declarations/op-tensor.md) | 30 | `result-track:d76a0820cdf35b8e9e89c987db9471442bd66bc1b8a8a68d94818fce2066d841` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

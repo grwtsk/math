@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [orderBot](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/declarations/orderbot.md) | 25 | `declaration-track:3896738ae8ea5ead5b979e494f8b93200ceb8c7a89386476779325d993f45c73` |
-| 2 | `theorem` | [bot_eq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/declarations/bot-eq.md) | 28 | `result-track:84c1568c2c7829c0a4c0a4e9827eea478444c33ad1cf8aa546a9af09cb4e5fcc` |
-| 3 | `instance` | [noMaxOrder](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/declarations/nomaxorder.md) | 31 | `declaration-track:39426aa71a6ea2fa3e57d33b796c89a7a65fb38bfaa73c9f260c6ee26bfbf14f` |
-| 4 | `instance` | [semilatticeSup](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/declarations/semilatticesup.md) | 34 | `declaration-track:c4280b80b8a0bd3331c39150bc36e25a6213ba7d8ee9e5979c29d438b1a96f50` |
-| 5 | `instance` | [semilatticeInf](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/declarations/semilatticeinf.md) | 37 | `declaration-track:20be05ada6d62d54ff910cbc78426c5c44bb279e6c95c4d9a68ce9ef4db24d9f` |
-| 6 | `instance` | [distribLattice](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/declarations/distriblattice.md) | 40 | `declaration-track:92afbebd26470ac0ca6c2e086da1ca8fb7020d9d83641fd3fa36414e3ff87d5c` |
-| 7 | `instance` | [instDenselyOrdered](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/declarations/instdenselyordered.md) | 43 | `declaration-track:04aebd56bd3311696cce3db695dc3424f9d52fd5d8a88360cecd295d80b922d4` |
-| 8 | `abbrev` | [conditionallyCompleteLinearOrder](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/declarations/conditionallycompletelinearorder.md) | 48 | `declaration-track:c0349bf4715d7ca0c6c952c141a6a5ed1069dc1ec1be2106f11a7b70e0703f7b` |
-| 9 | `abbrev` | [conditionallyCompleteLinearOrderBot](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/declarations/conditionallycompletelinearorderbot.md) | 57 | `declaration-track:f5712a5d6ed61713ef2dbe876293ea5a28b66afa29dfd29081c664f471073f6b` |
+| 1 | `instance` | [orderBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/declarations/orderbot.md) | 25 | `declaration-track:3896738ae8ea5ead5b979e494f8b93200ceb8c7a89386476779325d993f45c73` |
+| 2 | `theorem` | [bot_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/declarations/bot-eq.md) | 28 | `result-track:84c1568c2c7829c0a4c0a4e9827eea478444c33ad1cf8aa546a9af09cb4e5fcc` |
+| 3 | `instance` | [noMaxOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/declarations/nomaxorder.md) | 31 | `declaration-track:39426aa71a6ea2fa3e57d33b796c89a7a65fb38bfaa73c9f260c6ee26bfbf14f` |
+| 4 | `instance` | [semilatticeSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/declarations/semilatticesup.md) | 34 | `declaration-track:c4280b80b8a0bd3331c39150bc36e25a6213ba7d8ee9e5979c29d438b1a96f50` |
+| 5 | `instance` | [semilatticeInf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/declarations/semilatticeinf.md) | 37 | `declaration-track:20be05ada6d62d54ff910cbc78426c5c44bb279e6c95c4d9a68ce9ef4db24d9f` |
+| 6 | `instance` | [distribLattice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/declarations/distriblattice.md) | 40 | `declaration-track:92afbebd26470ac0ca6c2e086da1ca8fb7020d9d83641fd3fa36414e3ff87d5c` |
+| 7 | `instance` | [instDenselyOrdered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/declarations/instdenselyordered.md) | 43 | `declaration-track:04aebd56bd3311696cce3db695dc3424f9d52fd5d8a88360cecd295d80b922d4` |
+| 8 | `abbrev` | [conditionallyCompleteLinearOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/declarations/conditionallycompletelinearorder.md) | 48 | `declaration-track:c0349bf4715d7ca0c6c952c141a6a5ed1069dc1ec1be2106f11a7b70e0703f7b` |
+| 9 | `abbrev` | [conditionallyCompleteLinearOrderBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegLattice.lean/declarations/conditionallycompletelinearorderbot.md) | 57 | `declaration-track:f5712a5d6ed61713ef2dbe876293ea5a28b66afa29dfd29081c664f471073f6b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

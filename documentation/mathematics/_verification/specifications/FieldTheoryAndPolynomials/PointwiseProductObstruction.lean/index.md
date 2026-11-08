@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -50,8 +50,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.LinearAlgebra.Matrix.ToLinearEquiv` — import line 20; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.IntervalCases` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.Linarith` — import line 22; external provider; requires a separately pinned dependency.
-- [Boolean Coefficient Equivalence](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanCoefficientEquivalence.lean/index.md) — import line 24; pinned internal source present.
-- [Row Major Boolean Coordinates](../../../../FieldTheoryAndPolynomials/RowMajorBooleanCoordinates.lean/index.md) — import line 25; pinned internal source present.
+- [Boolean Coefficient Equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanCoefficientEquivalence.lean/index.md) — import line 24; pinned internal source present.
+- [Row Major Boolean Coordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RowMajorBooleanCoordinates.lean/index.md) — import line 25; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -62,19 +62,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [zeroMatrix](../../../../FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/zeromatrix.md) | 60 | `declaration-track:deb60e38386a49514dbaebcea17bca1ce9ac03b159f72eea853d1771e993d4bb` |
-| 2 | `def` | [pointwiseOneMatrix](../../../../FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/pointwiseonematrix.md) | 64 | `declaration-track:f0033a1d951951fb231311953f1fc2375f5566da3e5eaa53eb5e84ff8be1aa30` |
-| 3 | `theorem` | [xor_zero_right](../../../../FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/xor-zero-right.md) | 68 | `result-track:2dd48fb22da59d6d237c7865fe036d4e4052c473f4981808cf92b773834b6e2a` |
-| 4 | `theorem` | [xor_self](../../../../FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/xor-self.md) | 75 | `result-track:f7f8ca3475ad4df1302b21cb2c35a3b7eb323a790f4d3bc971bc5f18a567a535` |
-| 5 | `theorem` | [and_zero_right](../../../../FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/and-zero-right.md) | 82 | `result-track:04ffe6d6b95a71ef2487e44ccc33be50eb9692d611cabb466b2ae0c4390bb825` |
-| 6 | `theorem` | [and_one_right](../../../../FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/and-one-right.md) | 89 | `result-track:39af002a6fac49261a3a7670476e630533909ec8f0b999983b09cca47a1233c9` |
-| 7 | `theorem` | [zeroMatrix_eq_pointwiseOneMatrix_of_mul_eq_zero](../../../../FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/zeromatrix-eq-pointwiseonematrix-of-mul-eq-zero.md) | 96 | `result-track:69032dfb0c4d7598a31a8ea830b785b5b145fc49297c41b4272f78ed0adade05` |
-| 8 | `def` | [singletonMatrix](../../../../FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/singletonmatrix.md) | 106 | `declaration-track:a2425214a42a8b96b89c017ffd9e4064675b7af7b18a7c8dc3e99a25dd67ba21` |
-| 9 | `theorem` | [singletonMatrix_ne_zero](../../../../FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/singletonmatrix-ne-zero.md) | 111 | `result-track:4bb3a038b11a08c240cbad09700304280ada32b23776130f1d70be4a0fa0a2f8` |
-| 10 | `theorem` | [exists_pointwise_zero_divisors](../../../../FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/exists-pointwise-zero-divisors.md) | 123 | `result-track:1ed641b49938d6e9f41ad75eac199c8afa1cd0202077f762b83a2a9a3f8fa121` |
-| 11 | `def` | [oneEntryGF2Equiv](../../../../FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/oneentrygf2equiv.md) | 149 | `declaration-track:82f88314d0b9b188e6d5885767bc79acc217f53ab6e7b6781ba7b4b35efe0999` |
-| 12 | `theorem` | [oneEntryGF2Equiv_xor](../../../../FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/oneentrygf2equiv-xor.md) | 159 | `result-track:ec892af9c63c0d1af6988482fc53145dd0a7207c51cf90ecdf6876ccd1c1b240` |
-| 13 | `theorem` | [oneEntryGF2Equiv_and](../../../../FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/oneentrygf2equiv-and.md) | 165 | `result-track:7502712e0fe6dbfd2b5765749180558dadc12be36b56fd4cbbf0a1debdefc810` |
+| 1 | `def` | [zeroMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/zeromatrix.md) | 60 | `declaration-track:deb60e38386a49514dbaebcea17bca1ce9ac03b159f72eea853d1771e993d4bb` |
+| 2 | `def` | [pointwiseOneMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/pointwiseonematrix.md) | 64 | `declaration-track:f0033a1d951951fb231311953f1fc2375f5566da3e5eaa53eb5e84ff8be1aa30` |
+| 3 | `theorem` | [xor_zero_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/xor-zero-right.md) | 68 | `result-track:2dd48fb22da59d6d237c7865fe036d4e4052c473f4981808cf92b773834b6e2a` |
+| 4 | `theorem` | [xor_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/xor-self.md) | 75 | `result-track:f7f8ca3475ad4df1302b21cb2c35a3b7eb323a790f4d3bc971bc5f18a567a535` |
+| 5 | `theorem` | [and_zero_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/and-zero-right.md) | 82 | `result-track:04ffe6d6b95a71ef2487e44ccc33be50eb9692d611cabb466b2ae0c4390bb825` |
+| 6 | `theorem` | [and_one_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/and-one-right.md) | 89 | `result-track:39af002a6fac49261a3a7670476e630533909ec8f0b999983b09cca47a1233c9` |
+| 7 | `theorem` | [zeroMatrix_eq_pointwiseOneMatrix_of_mul_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/zeromatrix-eq-pointwiseonematrix-of-mul-eq-zero.md) | 96 | `result-track:69032dfb0c4d7598a31a8ea830b785b5b145fc49297c41b4272f78ed0adade05` |
+| 8 | `def` | [singletonMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/singletonmatrix.md) | 106 | `declaration-track:a2425214a42a8b96b89c017ffd9e4064675b7af7b18a7c8dc3e99a25dd67ba21` |
+| 9 | `theorem` | [singletonMatrix_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/singletonmatrix-ne-zero.md) | 111 | `result-track:4bb3a038b11a08c240cbad09700304280ada32b23776130f1d70be4a0fa0a2f8` |
+| 10 | `theorem` | [exists_pointwise_zero_divisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/exists-pointwise-zero-divisors.md) | 123 | `result-track:1ed641b49938d6e9f41ad75eac199c8afa1cd0202077f762b83a2a9a3f8fa121` |
+| 11 | `def` | [oneEntryGF2Equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/oneentrygf2equiv.md) | 149 | `declaration-track:82f88314d0b9b188e6d5885767bc79acc217f53ab6e7b6781ba7b4b35efe0999` |
+| 12 | `theorem` | [oneEntryGF2Equiv_xor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/oneentrygf2equiv-xor.md) | 159 | `result-track:ec892af9c63c0d1af6988482fc53145dd0a7207c51cf90ecdf6876ccd1c1b240` |
+| 13 | `theorem` | [oneEntryGF2Equiv_and](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/declarations/oneentrygf2equiv-and.md) | 165 | `result-track:7502712e0fe6dbfd2b5765749180558dadc12be36b56fd4cbbf0a1debdefc810` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

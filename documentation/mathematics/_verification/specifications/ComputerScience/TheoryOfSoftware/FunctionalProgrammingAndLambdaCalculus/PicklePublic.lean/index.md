@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PicklePublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PicklePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PicklePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PicklePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pickle](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PicklePublic.lean/declarations/pickle.md) | 25 | `declaration-track:dfdc704b266f1b9dec88e3144ca1276e2e0e45d585edf028f6edea9c688aa5c3` |
-| 2 | `def` | [unpickle](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PicklePublic.lean/declarations/unpickle.md) | 38 | `declaration-track:9395521a09e92a4af679e1fa51b9329f85f2b0e2abc825e2e851d97c5bbde6ac` |
-| 3 | `def` | [withUnpickle](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PicklePublic.lean/declarations/withunpickle.md) | 43 | `declaration-track:d44a9b75d34ce236a401b7e5e851da1850e2e4afb5ff3232cba5448fbed8b150` |
+| 1 | `def` | [pickle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PicklePublic.lean/declarations/pickle.md) | 25 | `declaration-track:dfdc704b266f1b9dec88e3144ca1276e2e0e45d585edf028f6edea9c688aa5c3` |
+| 2 | `def` | [unpickle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PicklePublic.lean/declarations/unpickle.md) | 38 | `declaration-track:9395521a09e92a4af679e1fa51b9329f85f2b0e2abc825e2e851d97c5bbde6ac` |
+| 3 | `def` | [withUnpickle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PicklePublic.lean/declarations/withunpickle.md) | 43 | `declaration-track:d44a9b75d34ce236a401b7e5e851da1850e2e4afb5ff3232cba5448fbed8b150` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZero.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mulLeft₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZero.lean/declarations/mulleft.md) | 27 | `declaration-track:78365eca7b2f3626f6a0ae9c6da8a11f9b23e3f46ba19950bce52c3684f209f3` |
-| 2 | `theorem` | [_root_.mulLeft_bijective₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZero.lean/declarations/root-mulleft-bijective.md) | 33 | `result-track:b513e9018a80c5e7becde0d85d6bfc26cda1a7236e7957f0c033b3434658fe8f` |
-| 3 | `def` | [mulRight₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZero.lean/declarations/mulright.md) | 40 | `declaration-track:b62e10e1c6d83f0acbc7161e9f015343ff30154f0db6154c5f28fc26ef14dbfa` |
-| 4 | `theorem` | [_root_.mulRight_bijective₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZero.lean/declarations/root-mulright-bijective.md) | 46 | `result-track:e97218eed0c7e65eb8439afca7b25c0f800a46727b908933efec2c16e2b86a34` |
+| 1 | `def` | [mulLeft₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZero.lean/declarations/mulleft.md) | 27 | `declaration-track:78365eca7b2f3626f6a0ae9c6da8a11f9b23e3f46ba19950bce52c3684f209f3` |
+| 2 | `theorem` | [_root_.mulLeft_bijective₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZero.lean/declarations/root-mulleft-bijective.md) | 33 | `result-track:b513e9018a80c5e7becde0d85d6bfc26cda1a7236e7957f0c033b3434658fe8f` |
+| 3 | `def` | [mulRight₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZero.lean/declarations/mulright.md) | 40 | `declaration-track:b62e10e1c6d83f0acbc7161e9f015343ff30154f0db6154c5f28fc26ef14dbfa` |
+| 4 | `theorem` | [_root_.mulRight_bijective₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZero.lean/declarations/root-mulright-bijective.md) | 46 | `result-track:e97218eed0c7e65eb8439afca7b25c0f800a46727b908933efec2c16e2b86a34` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

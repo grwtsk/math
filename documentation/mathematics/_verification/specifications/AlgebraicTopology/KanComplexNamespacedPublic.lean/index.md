@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/KanComplexNamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/KanComplexNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/KanComplexNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/KanComplexNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [KanComplex](../../../../AlgebraicTopology/KanComplexNamespacedPublic.lean/declarations/kancomplex.md) | 49 | `declaration-track:0a0bc4b2944ab8f93131f32b62d5d494eea68bce86aeef9cbad2d651291fbd6f` |
-| 2 | `lemma` | [KanComplex.hornFilling](../../../../AlgebraicTopology/KanComplexNamespacedPublic.lean/declarations/kancomplex-hornfilling.md) | 54 | `result-track:58dc8950448ee3d200e1b0f1182da71ba896b340e437e76ff76c74ad21279c78` |
-| 3 | `lemma` | [exists_lift_of_kanComplex](../../../../AlgebraicTopology/KanComplexNamespacedPublic.lean/declarations/exists-lift-of-kancomplex.md) | 65 | `result-track:0313739244555430c53537d3501cb896f9859a40eebb897b6d95395223412580` |
-| 4 | `def` | [liftOfKanComplex](../../../../AlgebraicTopology/KanComplexNamespacedPublic.lean/declarations/liftofkancomplex.md) | 75 | `declaration-track:1fc6ca8f962e7e0cf5e3c5b9423a063c346b238c9586b7e3a4768fb3f0b2baf0` |
-| 5 | `lemma` | [δ_liftOfKanComplex](../../../../AlgebraicTopology/KanComplexNamespacedPublic.lean/declarations/liftofkancomplex-source-edition-2.md) | 80 | `result-track:f7c7603f183df6bc271458a87661bd9e95acd2305014db4d4ef0158704231f7c` |
-| 6 | `lemma` | [KanComplex.iff](../../../../AlgebraicTopology/KanComplexNamespacedPublic.lean/declarations/kancomplex-iff.md) | 93 | `result-track:4877ead08712e34497324a978526103056237db16f956e19869458b655d1a6f4` |
-| 7 | `instance` | [(anonymous)](../../../../AlgebraicTopology/KanComplexNamespacedPublic.lean/declarations/instance.md) | 112 | `declaration-track:d0b2d23ea80d6234489f740564ae552404c9a21ed5b85bd678933d2b6dc15dae` |
+| 1 | `abbrev` | [KanComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/KanComplexNamespacedPublic.lean/declarations/kancomplex.md) | 49 | `declaration-track:0a0bc4b2944ab8f93131f32b62d5d494eea68bce86aeef9cbad2d651291fbd6f` |
+| 2 | `lemma` | [KanComplex.hornFilling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/KanComplexNamespacedPublic.lean/declarations/kancomplex-hornfilling.md) | 54 | `result-track:58dc8950448ee3d200e1b0f1182da71ba896b340e437e76ff76c74ad21279c78` |
+| 3 | `lemma` | [exists_lift_of_kanComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/KanComplexNamespacedPublic.lean/declarations/exists-lift-of-kancomplex.md) | 65 | `result-track:0313739244555430c53537d3501cb896f9859a40eebb897b6d95395223412580` |
+| 4 | `def` | [liftOfKanComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/KanComplexNamespacedPublic.lean/declarations/liftofkancomplex.md) | 75 | `declaration-track:1fc6ca8f962e7e0cf5e3c5b9423a063c346b238c9586b7e3a4768fb3f0b2baf0` |
+| 5 | `lemma` | [δ_liftOfKanComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/KanComplexNamespacedPublic.lean/declarations/liftofkancomplex-source-edition-2.md) | 80 | `result-track:f7c7603f183df6bc271458a87661bd9e95acd2305014db4d4ef0158704231f7c` |
+| 6 | `lemma` | [KanComplex.iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/KanComplexNamespacedPublic.lean/declarations/kancomplex-iff.md) | 93 | `result-track:4877ead08712e34497324a978526103056237db16f956e19869458b655d1a6f4` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/KanComplexNamespacedPublic.lean/declarations/instance.md) | 112 | `declaration-track:d0b2d23ea80d6234489f740564ae552404c9a21ed5b85bd678933d2b6dc15dae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

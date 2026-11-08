@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationAdjunctionNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationAdjunctionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationAdjunctionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationAdjunctionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ε](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationAdjunctionNamespaced.lean/declarations/anonymous-source-edition-2.md) | 46 | `declaration-track:c0049b148e49cf20a15a8e4d262856b7339cc26cc01ce697b798e4712ac1ec69` |
-| 2 | `lemma` | [ε_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationAdjunctionNamespaced.lean/declarations/app-source-edition-2.md) | 52 | `result-track:fee0bc3fc55f5ba0e67595d7b5aca66fac7b4788aefd3cd8671a1d7b203c20af` |
-| 3 | `def` | [η](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationAdjunctionNamespaced.lean/declarations/anonymous.md) | 63 | `declaration-track:8cadf4ff104fd282291cbf180109028ac64dfc4acc7b75bd5d3c6ae0d4adf80b` |
-| 4 | `lemma` | [η_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationAdjunctionNamespaced.lean/declarations/app.md) | 68 | `result-track:d8520fec4754e3f5d016029728ea045c5aee3160aa7dea6e38ea7dab458bd9c4` |
-| 5 | `def` | [localization](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationAdjunctionNamespaced.lean/declarations/localization.md) | 86 | `declaration-track:91f9edc3d374a9ed223024d8ef78f5a435001ad7bcfa651c4cb3940b85c4e08f` |
-| 6 | `lemma` | [localization_unit_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationAdjunctionNamespaced.lean/declarations/localization-unit-app.md) | 117 | `result-track:ba2d1a827e9f5347b6da84e96f916ec7babe7c90719d46baf78d43d87df15163` |
-| 7 | `lemma` | [localization_counit_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationAdjunctionNamespaced.lean/declarations/localization-counit-app.md) | 124 | `result-track:7ed43764187e9e88f24a91dbe87455262d44b8244e28a32c476943339ce67f36` |
+| 1 | `def` | [ε](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationAdjunctionNamespaced.lean/declarations/anonymous-source-edition-2.md) | 46 | `declaration-track:c0049b148e49cf20a15a8e4d262856b7339cc26cc01ce697b798e4712ac1ec69` |
+| 2 | `lemma` | [ε_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationAdjunctionNamespaced.lean/declarations/app-source-edition-2.md) | 52 | `result-track:fee0bc3fc55f5ba0e67595d7b5aca66fac7b4788aefd3cd8671a1d7b203c20af` |
+| 3 | `def` | [η](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationAdjunctionNamespaced.lean/declarations/anonymous.md) | 63 | `declaration-track:8cadf4ff104fd282291cbf180109028ac64dfc4acc7b75bd5d3c6ae0d4adf80b` |
+| 4 | `lemma` | [η_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationAdjunctionNamespaced.lean/declarations/app.md) | 68 | `result-track:d8520fec4754e3f5d016029728ea045c5aee3160aa7dea6e38ea7dab458bd9c4` |
+| 5 | `def` | [localization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationAdjunctionNamespaced.lean/declarations/localization.md) | 86 | `declaration-track:91f9edc3d374a9ed223024d8ef78f5a435001ad7bcfa651c4cb3940b85c4e08f` |
+| 6 | `lemma` | [localization_unit_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationAdjunctionNamespaced.lean/declarations/localization-unit-app.md) | 117 | `result-track:ba2d1a827e9f5347b6da84e96f916ec7babe7c90719d46baf78d43d87df15163` |
+| 7 | `lemma` | [localization_counit_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationAdjunctionNamespaced.lean/declarations/localization-counit-app.md) | 124 | `result-track:7ed43764187e9e88f24a91dbe87455262d44b8244e28a32c476943339ce67f36` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

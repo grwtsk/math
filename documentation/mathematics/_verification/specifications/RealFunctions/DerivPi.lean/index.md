@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DerivPi.lean/index.md) · [Full source](../../../../RealFunctions/DerivPi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivPi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivPi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasDerivAt_update](../../../../RealFunctions/DerivPi.lean/declarations/hasderivat-update.md) | 15 | `result-track:72f82d83c778e2b971a3703cb5ffbea6b566ac15a7505f6f824dbd2332fe59cf` |
-| 2 | `theorem` | [hasDerivAt_single](../../../../RealFunctions/DerivPi.lean/declarations/hasderivat-single.md) | 24 | `result-track:df064f5a8efc60392a4352dfd2064a20076116c20bfd779ab732be2dc6a53293` |
-| 3 | `theorem` | [deriv_update](../../../../RealFunctions/DerivPi.lean/declarations/deriv-update.md) | 28 | `result-track:195a61c878efc23073dd65d810bf9d157421700d35bd01428d68e858aa5190cf` |
-| 4 | `theorem` | [deriv_single](../../../../RealFunctions/DerivPi.lean/declarations/deriv-single.md) | 32 | `result-track:84bbefa2f408b73fb0ba1ee038d4f86e8efdf6f479bf639dbc27714e1e6118b1` |
+| 1 | `theorem` | [hasDerivAt_update](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivPi.lean/declarations/hasderivat-update.md) | 15 | `result-track:72f82d83c778e2b971a3703cb5ffbea6b566ac15a7505f6f824dbd2332fe59cf` |
+| 2 | `theorem` | [hasDerivAt_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivPi.lean/declarations/hasderivat-single.md) | 24 | `result-track:df064f5a8efc60392a4352dfd2064a20076116c20bfd779ab732be2dc6a53293` |
+| 3 | `theorem` | [deriv_update](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivPi.lean/declarations/deriv-update.md) | 28 | `result-track:195a61c878efc23073dd65d810bf9d157421700d35bd01428d68e858aa5190cf` |
+| 4 | `theorem` | [deriv_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivPi.lean/declarations/deriv-single.md) | 32 | `result-track:84bbefa2f408b73fb0ba1ee038d4f86e8efdf6f479bf639dbc27714e1e6118b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

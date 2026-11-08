@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SpectralMeasureAtom.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SpectralMeasureAtom.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralMeasureAtom.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralMeasureAtom.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,16 +60,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [resolventMassKernel](../../../../MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/resolventmasskernel.md) | 18 | `declaration-track:81fa39376cf8570277d5bc83740e4796769ab4d40a0dd1310fc706128b6613f5` |
-| 2 | `def` | [resolventMass](../../../../MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/resolventmass.md) | 22 | `declaration-track:d5f4d4a78bb005b45f87dde2a877155452265b7a3cbc301cdb6d088ee890b3d9` |
-| 3 | `theorem` | [resolventMassKernel_nonneg_le_one](../../../../MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/resolventmasskernel-nonneg-le-one.md) | 25 | `result-track:db4ee6bcbe75f5916f9ce69a47a4611b078ffd1de54c1ec733a18a6d620e45d7` |
-| 4 | `theorem` | [resolventMassKernel_measurable](../../../../MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/resolventmasskernel-measurable.md) | 32 | `result-track:c1b3b076b071a12b2452a7a0d1dc75ddf417b90f9279f447e479686234a47b45` |
-| 5 | `theorem` | [resolventMassKernel_integrable](../../../../MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/resolventmasskernel-integrable.md) | 36 | `result-track:15187f05dc31e84d140864de115327f8f5dbcc8a0ce4375a4e8624b2c6da48fe` |
-| 6 | `theorem` | [resolventMass_nonneg_le_total](../../../../MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/resolventmass-nonneg-le-total.md) | 44 | `result-track:02a757017e0668c47572c38f6eca4445b29193341e5ff081686602220406439f` |
-| 7 | `theorem` | [resolventMassKernel_tendsto_zero_right](../../../../MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/resolventmasskernel-tendsto-zero-right.md) | 54 | `result-track:01478d9db1bfeb60c4199f9633323d5c3b656a31dabef882a4940dbbdf471b63` |
-| 8 | `theorem` | [resolventMass_tendsto_zero_atom](../../../../MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/resolventmass-tendsto-zero-atom.md) | 75 | `result-track:672efb324feb00d94dcba26be98aba90b095b280696a353e2014737b8528f73b` |
-| 9 | `theorem` | [zero_atom_le_resolventMass](../../../../MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/zero-atom-le-resolventmass.md) | 94 | `result-track:22373696f2e38796296d19eba0aee6a41054bd62453731b83ea5e95c94ac3c4b` |
-| 10 | `theorem` | [spectral_interval_mass_le_resolventMass](../../../../MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/spectral-interval-mass-le-resolventmass.md) | 108 | `result-track:66b6ca8cfc008aef3063030b442a1eaf4d92c0a77d1b0e893015b3511f07006e` |
+| 1 | `def` | [resolventMassKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/resolventmasskernel.md) | 18 | `declaration-track:81fa39376cf8570277d5bc83740e4796769ab4d40a0dd1310fc706128b6613f5` |
+| 2 | `def` | [resolventMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/resolventmass.md) | 22 | `declaration-track:d5f4d4a78bb005b45f87dde2a877155452265b7a3cbc301cdb6d088ee890b3d9` |
+| 3 | `theorem` | [resolventMassKernel_nonneg_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/resolventmasskernel-nonneg-le-one.md) | 25 | `result-track:db4ee6bcbe75f5916f9ce69a47a4611b078ffd1de54c1ec733a18a6d620e45d7` |
+| 4 | `theorem` | [resolventMassKernel_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/resolventmasskernel-measurable.md) | 32 | `result-track:c1b3b076b071a12b2452a7a0d1dc75ddf417b90f9279f447e479686234a47b45` |
+| 5 | `theorem` | [resolventMassKernel_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/resolventmasskernel-integrable.md) | 36 | `result-track:15187f05dc31e84d140864de115327f8f5dbcc8a0ce4375a4e8624b2c6da48fe` |
+| 6 | `theorem` | [resolventMass_nonneg_le_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/resolventmass-nonneg-le-total.md) | 44 | `result-track:02a757017e0668c47572c38f6eca4445b29193341e5ff081686602220406439f` |
+| 7 | `theorem` | [resolventMassKernel_tendsto_zero_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/resolventmasskernel-tendsto-zero-right.md) | 54 | `result-track:01478d9db1bfeb60c4199f9633323d5c3b656a31dabef882a4940dbbdf471b63` |
+| 8 | `theorem` | [resolventMass_tendsto_zero_atom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/resolventmass-tendsto-zero-atom.md) | 75 | `result-track:672efb324feb00d94dcba26be98aba90b095b280696a353e2014737b8528f73b` |
+| 9 | `theorem` | [zero_atom_le_resolventMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/zero-atom-le-resolventmass.md) | 94 | `result-track:22373696f2e38796296d19eba0aee6a41054bd62453731b83ea5e95c94ac3c4b` |
+| 10 | `theorem` | [spectral_interval_mass_le_resolventMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralMeasureAtom.lean/declarations/spectral-interval-mass-le-resolventmass.md) | 108 | `result-track:66b6ca8cfc008aef3063030b442a1eaf4d92c0a77d1b0e893015b3511f07006e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

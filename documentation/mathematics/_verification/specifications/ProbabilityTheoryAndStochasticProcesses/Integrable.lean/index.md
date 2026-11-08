@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/Integrable.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/Integrable.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Integrable.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Integrable.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [MemLp.isProbabilityMeasure_of_indepFun](../../../../ProbabilityTheoryAndStochasticProcesses/Integrable.lean/declarations/memlp-isprobabilitymeasure-of-indepfun.md) | 29 | `result-track:ce1b667db1223cb09eb0e09f377e31b8b0fba699c1d6a67c163f4f91b4363c4c` |
-| 2 | `lemma` | [Integrable.isProbabilityMeasure_of_indepFun](../../../../ProbabilityTheoryAndStochasticProcesses/Integrable.lean/declarations/integrable-isprobabilitymeasure-of-indepfun.md) | 52 | `result-track:c5e15cf3a6a898b7090bc53bb6acae80a8fa642f0981eb21932c9572322862ac` |
+| 1 | `lemma` | [MemLp.isProbabilityMeasure_of_indepFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Integrable.lean/declarations/memlp-isprobabilitymeasure-of-indepfun.md) | 29 | `result-track:ce1b667db1223cb09eb0e09f377e31b8b0fba699c1d6a67c163f4f91b4363c4c` |
+| 2 | `lemma` | [Integrable.isProbabilityMeasure_of_indepFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Integrable.lean/declarations/integrable-isprobabilitymeasure-of-indepfun.md) | 52 | `result-track:c5e15cf3a6a898b7090bc53bb6acae80a8fa642f0981eb21932c9572322862ac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

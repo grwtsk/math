@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryRamificationInertiaBasicNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryRamificationInertiaBasicNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryRamificationInertiaBasicNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryRamificationInertiaBasicNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sum_ramification_inertia_eq_finrank_fiber](../../../../CommutativeAlgebra/RingTheoryRamificationInertiaBasicNamespacedPublic.lean/declarations/sum-ramification-inertia-eq-finrank-fiber.md) | 52 | `result-track:dbb94ab4b15cff7a051b2298c558de57f42431293f05cdacee471c13d0f588bc` |
-| 2 | `theorem` | [sum_ramification_inertia_eq_finrank](../../../../CommutativeAlgebra/RingTheoryRamificationInertiaBasicNamespacedPublic.lean/declarations/sum-ramification-inertia-eq-finrank.md) | 80 | `result-track:7e9ddf0e050d55bfe2059eb0fc4666babd69e59dfbc09ca9bcc3a06eafbf8814` |
-| 3 | `theorem` | [sum_ramification_inertia_eq_card](../../../../CommutativeAlgebra/RingTheoryRamificationInertiaBasicNamespacedPublic.lean/declarations/sum-ramification-inertia-eq-card.md) | 89 | `result-track:f9b84e280cce26a7dc7a2beacb9c7deb8d85e1421059486676921eb193999bbe` |
+| 1 | `theorem` | [sum_ramification_inertia_eq_finrank_fiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryRamificationInertiaBasicNamespacedPublic.lean/declarations/sum-ramification-inertia-eq-finrank-fiber.md) | 52 | `result-track:dbb94ab4b15cff7a051b2298c558de57f42431293f05cdacee471c13d0f588bc` |
+| 2 | `theorem` | [sum_ramification_inertia_eq_finrank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryRamificationInertiaBasicNamespacedPublic.lean/declarations/sum-ramification-inertia-eq-finrank.md) | 80 | `result-track:7e9ddf0e050d55bfe2059eb0fc4666babd69e59dfbc09ca9bcc3a06eafbf8814` |
+| 3 | `theorem` | [sum_ramification_inertia_eq_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryRamificationInertiaBasicNamespacedPublic.lean/declarations/sum-ramification-inertia-eq-card.md) | 89 | `result-track:f9b84e280cce26a7dc7a2beacb9c7deb8d85e1421059486676921eb193999bbe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TentMellinInversion.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TentMellinInversion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.TentMellinKernel`](../../../../MeasureAndIntegration/TentMellinKernel.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Real.TentRationalCorrection`](../../../../MeasureAndIntegration/TentRationalCorrection.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.TentMellinKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinKernel.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Real.TentRationalCorrection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentRationalCorrection.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Analysis.MellinInversion` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.SpecialFunctions.ImproperIntegrals` — import line 7; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.Positivity` — import line 8; external provider; requires a separately pinned dependency.
@@ -61,22 +61,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rightLine](../../../../MeasureAndIntegration/TentMellinInversion.lean/declarations/rightline.md) | 35 | `declaration-track:6706bc3ed46d40e4453c48b7d70f290281ee097e276b32c3a0e136e11db017df` |
-| 2 | `def` | [rightLineConstant](../../../../MeasureAndIntegration/TentMellinInversion.lean/declarations/rightlineconstant.md) | 38 | `declaration-track:a73add723cf5e733323b6d79d662e9f357e2741006c9580abbf3e31ba28d50f0` |
-| 3 | `theorem` | [rightLine_re](../../../../MeasureAndIntegration/TentMellinInversion.lean/declarations/rightline-re.md) | 41 | `result-track:fe77510b607de881c54dfe255fc4f092da00016d5dc75478b251e4832af08aed` |
-| 4 | `theorem` | [rightLine_im](../../../../MeasureAndIntegration/TentMellinInversion.lean/declarations/rightline-im.md) | 43 | `result-track:40753133cd2936aad61118340090b4ce043babae5bf61e219978544b8826b6ca` |
-| 5 | `theorem` | [rightLineConstant_pos](../../../../MeasureAndIntegration/TentMellinInversion.lean/declarations/rightlineconstant-pos.md) | 45 | `result-track:cd8f25c31248d546c87e8531edbe9a413d52bda9961643e89b8a119a501b59d9` |
-| 6 | `theorem` | [rightLineConstant_eq](../../../../MeasureAndIntegration/TentMellinInversion.lean/declarations/rightlineconstant-eq.md) | 48 | `result-track:f504b93f0e360aacfbc275b040e3548f8d32976e21d5c240fcb2b7010c9b0997` |
-| 7 | `theorem` | [density_eq_cpow](../../../../MeasureAndIntegration/TentMellinInversion.lean/declarations/density-eq-cpow.md) | 57 | `result-track:ccd88dd4a96aded56e40b7ce27bf9813d292663350be073c82696ba998c66d98` |
-| 8 | `theorem` | [weightedDensity_support](../../../../MeasureAndIntegration/TentMellinInversion.lean/declarations/weighteddensity-support.md) | 64 | `result-track:bd812b27465c81c84f98cc560fae2c099cfa3ff8d5dbc4e0597b2b992fcd4144` |
-| 9 | `theorem` | [weightedDensity_integrable](../../../../MeasureAndIntegration/TentMellinInversion.lean/declarations/weighteddensity-integrable.md) | 74 | `result-track:5da846e8ead840378fcfc440230db229e908513e9938b06a437454347be519ab` |
-| 10 | `theorem` | [mellinConvergent_tent](../../../../MeasureAndIntegration/TentMellinInversion.lean/declarations/mellinconvergent-tent.md) | 86 | `result-track:6b6583012e633f52775348f27587e4826bc17aeca0fd315641a0263155071acf` |
-| 11 | `theorem` | [mellin_tent_eq](../../../../MeasureAndIntegration/TentMellinInversion.lean/declarations/mellin-tent-eq.md) | 95 | `result-track:c3d12c136895111ae9a275ed95e02ffee87105f6226766936d61db05202af703` |
-| 12 | `theorem` | [continuous_tentKernel](../../../../MeasureAndIntegration/TentMellinInversion.lean/declarations/continuous-tentkernel.md) | 123 | `result-track:720c4a81df9a7cf81cffeaedf4740d8b399d340d73dba81bc8d959c6dca66533` |
-| 13 | `theorem` | [norm_tentKernel_rightLine_le](../../../../MeasureAndIntegration/TentMellinInversion.lean/declarations/norm-tentkernel-rightline-le.md) | 132 | `result-track:e65aaaf45810d54aad97b04f783813265974f6c5af9afb0914d111286db007ce` |
-| 14 | `theorem` | [verticalIntegrable_tentKernel](../../../../MeasureAndIntegration/TentMellinInversion.lean/declarations/verticalintegrable-tentkernel.md) | 165 | `result-track:bff491603f6c1ac5966fb4d31a2ac25da071deeb05d5dcd8a8f2929bf6bb3aac` |
-| 15 | `theorem` | [mellinInv_tentKernel](../../../../MeasureAndIntegration/TentMellinInversion.lean/declarations/mellininv-tentkernel.md) | 174 | `result-track:6be1ec801f101101e6835eaffa4fa66cae06c4ea9078c8f025803331965a83bc` |
-| 16 | `theorem` | [rightLine_inversion](../../../../MeasureAndIntegration/TentMellinInversion.lean/declarations/rightline-inversion.md) | 185 | `result-track:4ac5e01748e4c01c5339cf27e68461f67f6b9f87dd943b5d5c83176857425c7c` |
+| 1 | `def` | [rightLine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/declarations/rightline.md) | 35 | `declaration-track:6706bc3ed46d40e4453c48b7d70f290281ee097e276b32c3a0e136e11db017df` |
+| 2 | `def` | [rightLineConstant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/declarations/rightlineconstant.md) | 38 | `declaration-track:a73add723cf5e733323b6d79d662e9f357e2741006c9580abbf3e31ba28d50f0` |
+| 3 | `theorem` | [rightLine_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/declarations/rightline-re.md) | 41 | `result-track:fe77510b607de881c54dfe255fc4f092da00016d5dc75478b251e4832af08aed` |
+| 4 | `theorem` | [rightLine_im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/declarations/rightline-im.md) | 43 | `result-track:40753133cd2936aad61118340090b4ce043babae5bf61e219978544b8826b6ca` |
+| 5 | `theorem` | [rightLineConstant_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/declarations/rightlineconstant-pos.md) | 45 | `result-track:cd8f25c31248d546c87e8531edbe9a413d52bda9961643e89b8a119a501b59d9` |
+| 6 | `theorem` | [rightLineConstant_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/declarations/rightlineconstant-eq.md) | 48 | `result-track:f504b93f0e360aacfbc275b040e3548f8d32976e21d5c240fcb2b7010c9b0997` |
+| 7 | `theorem` | [density_eq_cpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/declarations/density-eq-cpow.md) | 57 | `result-track:ccd88dd4a96aded56e40b7ce27bf9813d292663350be073c82696ba998c66d98` |
+| 8 | `theorem` | [weightedDensity_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/declarations/weighteddensity-support.md) | 64 | `result-track:bd812b27465c81c84f98cc560fae2c099cfa3ff8d5dbc4e0597b2b992fcd4144` |
+| 9 | `theorem` | [weightedDensity_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/declarations/weighteddensity-integrable.md) | 74 | `result-track:5da846e8ead840378fcfc440230db229e908513e9938b06a437454347be519ab` |
+| 10 | `theorem` | [mellinConvergent_tent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/declarations/mellinconvergent-tent.md) | 86 | `result-track:6b6583012e633f52775348f27587e4826bc17aeca0fd315641a0263155071acf` |
+| 11 | `theorem` | [mellin_tent_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/declarations/mellin-tent-eq.md) | 95 | `result-track:c3d12c136895111ae9a275ed95e02ffee87105f6226766936d61db05202af703` |
+| 12 | `theorem` | [continuous_tentKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/declarations/continuous-tentkernel.md) | 123 | `result-track:720c4a81df9a7cf81cffeaedf4740d8b399d340d73dba81bc8d959c6dca66533` |
+| 13 | `theorem` | [norm_tentKernel_rightLine_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/declarations/norm-tentkernel-rightline-le.md) | 132 | `result-track:e65aaaf45810d54aad97b04f783813265974f6c5af9afb0914d111286db007ce` |
+| 14 | `theorem` | [verticalIntegrable_tentKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/declarations/verticalintegrable-tentkernel.md) | 165 | `result-track:bff491603f6c1ac5966fb4d31a2ac25da071deeb05d5dcd8a8f2929bf6bb3aac` |
+| 15 | `theorem` | [mellinInv_tentKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/declarations/mellininv-tentkernel.md) | 174 | `result-track:6be1ec801f101101e6835eaffa4fa66cae06c4ea9078c8f025803331965a83bc` |
+| 16 | `theorem` | [rightLine_inversion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/declarations/rightline-inversion.md) | 185 | `result-track:4ac5e01748e4c01c5339cf27e68461f67f6b9f87dd943b5d5c83176857425c7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

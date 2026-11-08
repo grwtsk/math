@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNegativeCorrelationGeometryNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNegativeCorrelationGeometryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNegativeCorrelationGeometryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNegativeCorrelationGeometryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_interior_negative_sourceCorrelation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNegativeCorrelationGeometryNamespaced.lean/declarations/exists-interior-negative-sourcecorrelation.md) | 31 | `result-track:566d8c0d11f37daab85fff1a9456dc095a2a7ae93d623747b86cd91ea3078ed3` |
+| 1 | `theorem` | [exists_interior_negative_sourceCorrelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNegativeCorrelationGeometryNamespaced.lean/declarations/exists-interior-negative-sourcecorrelation.md) | 31 | `result-track:566d8c0d11f37daab85fff1a9456dc095a2a7ae93d623747b86cd91ea3078ed3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

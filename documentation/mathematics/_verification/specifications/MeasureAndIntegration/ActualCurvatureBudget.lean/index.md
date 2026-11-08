@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualCurvatureBudget.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualCurvatureBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [criticalPrimeTest_second_deriv](../../../../MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/criticalprimetest-second-deriv.md) | 21 | `result-track:db122937b1ba6f51ad96d21eb3f444d0e83f5f7ef5f0c6c7b9cd59fd2d31ecd5` |
-| 2 | `theorem` | [criticalPrimeTest_deriv_zero_after](../../../../MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/criticalprimetest-deriv-zero-after.md) | 43 | `result-track:e2c2670b05ceb32723b38d2a2f018c61fa6b0400ef79a320836130a2b856b650` |
-| 3 | `theorem` | [criticalPrimeTest_second_deriv_zero_after](../../../../MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/criticalprimetest-second-deriv-zero-after.md) | 51 | `result-track:5d5d1f43b2eacfff1d3510e0f450903dd4e114ebee6965377d4e7a018fe4185d` |
-| 4 | `theorem` | [criticalPrimeTest_second_deriv_abs_le](../../../../MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/criticalprimetest-second-deriv-abs-le.md) | 59 | `result-track:f4739b3c38ecbb31250667e1a29a0bd8f788de416d1ab27cb38d4bfdccc62ae4` |
-| 5 | `theorem` | [criticalPrimeTest_deriv_lipschitz_explicit](../../../../MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/criticalprimetest-deriv-lipschitz-explicit.md) | 89 | `result-track:b730cef03469c9032ff86bdaf02f33600842c49efc4f4908a818d02ef8f5032a` |
-| 6 | `theorem` | [mass_ratio_bounds](../../../../MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/mass-ratio-bounds.md) | 97 | `result-track:af64af4b9872b556ced9e45a9ae4a2cf5d6f84a61c5d079ebccd857c5d5a526f` |
-| 7 | `theorem` | [pairedTailCurvature_abs_le](../../../../MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/pairedtailcurvature-abs-le.md) | 104 | `result-track:d544cc92a4b81e49160861dd3262b27dfea7c4c3218f58a7c39c4f326fc4a80c` |
-| 8 | `def` | [curvatureVariation](../../../../MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/curvaturevariation.md) | 130 | `declaration-track:49b748b9ad74b936065ec2b29de8804ea7a9111881e6e657b200d02e0379c3b1` |
-| 9 | `theorem` | [curvatureVariation_nonneg](../../../../MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/curvaturevariation-nonneg.md) | 132 | `result-track:21e0627fd68946e342426b3a7dbe182a29cd4252d199f4319e0b801df66cce6f` |
-| 10 | `theorem` | [curvatureVariation_le](../../../../MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/curvaturevariation-le.md) | 135 | `result-track:6a5892d5966244f6cad557d5357ac84e291f52976a1531f1386e269cd99804df` |
+| 1 | `theorem` | [criticalPrimeTest_second_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/criticalprimetest-second-deriv.md) | 21 | `result-track:db122937b1ba6f51ad96d21eb3f444d0e83f5f7ef5f0c6c7b9cd59fd2d31ecd5` |
+| 2 | `theorem` | [criticalPrimeTest_deriv_zero_after](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/criticalprimetest-deriv-zero-after.md) | 43 | `result-track:e2c2670b05ceb32723b38d2a2f018c61fa6b0400ef79a320836130a2b856b650` |
+| 3 | `theorem` | [criticalPrimeTest_second_deriv_zero_after](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/criticalprimetest-second-deriv-zero-after.md) | 51 | `result-track:5d5d1f43b2eacfff1d3510e0f450903dd4e114ebee6965377d4e7a018fe4185d` |
+| 4 | `theorem` | [criticalPrimeTest_second_deriv_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/criticalprimetest-second-deriv-abs-le.md) | 59 | `result-track:f4739b3c38ecbb31250667e1a29a0bd8f788de416d1ab27cb38d4bfdccc62ae4` |
+| 5 | `theorem` | [criticalPrimeTest_deriv_lipschitz_explicit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/criticalprimetest-deriv-lipschitz-explicit.md) | 89 | `result-track:b730cef03469c9032ff86bdaf02f33600842c49efc4f4908a818d02ef8f5032a` |
+| 6 | `theorem` | [mass_ratio_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/mass-ratio-bounds.md) | 97 | `result-track:af64af4b9872b556ced9e45a9ae4a2cf5d6f84a61c5d079ebccd857c5d5a526f` |
+| 7 | `theorem` | [pairedTailCurvature_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/pairedtailcurvature-abs-le.md) | 104 | `result-track:d544cc92a4b81e49160861dd3262b27dfea7c4c3218f58a7c39c4f326fc4a80c` |
+| 8 | `def` | [curvatureVariation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/curvaturevariation.md) | 130 | `declaration-track:49b748b9ad74b936065ec2b29de8804ea7a9111881e6e657b200d02e0379c3b1` |
+| 9 | `theorem` | [curvatureVariation_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/curvaturevariation-nonneg.md) | 132 | `result-track:21e0627fd68946e342426b3a7dbe182a29cd4252d199f4319e0b801df66cce6f` |
+| 10 | `theorem` | [curvatureVariation_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureBudget.lean/declarations/curvaturevariation-le.md) | 135 | `result-track:6a5892d5966244f6cad557d5357ac84e291f52976a1531f1386e269cd99804df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/SubringUnitsNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/SubringUnitsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubringUnitsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubringUnitsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Units.posSubgroup](../../../../AssociativeRingsAndAlgebras/SubringUnitsNamespaced.lean/declarations/units-possubgroup.md) | 26 | `declaration-track:5a7692142d70b113a34e7a5d8b571f742fe5db21f7b7af7448caf65ab4a4ed49` |
-| 2 | `theorem` | [Units.mem_posSubgroup](../../../../AssociativeRingsAndAlgebras/SubringUnitsNamespaced.lean/declarations/units-mem-possubgroup.md) | 33 | `result-track:25cbbdd713ad0bbacf271e75326b85fad17e067a4eedf7843f9b4f11aff63f35` |
+| 1 | `def` | [Units.posSubgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubringUnitsNamespaced.lean/declarations/units-possubgroup.md) | 26 | `declaration-track:5a7692142d70b113a34e7a5d8b571f742fe5db21f7b7af7448caf65ab4a4ed49` |
+| 2 | `theorem` | [Units.mem_posSubgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubringUnitsNamespaced.lean/declarations/units-mem-possubgroup.md) | 33 | `result-track:25cbbdd713ad0bbacf271e75326b85fad17e067a4eedf7843f9b4f11aff63f35` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

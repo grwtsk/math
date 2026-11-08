@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SignedWindowRootBounds.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SignedWindowRootBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedWindowRootBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedWindowRootBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.InnerProductSpace.SignedWindowPacketCertificates`](../../../../MeasureAndIntegration/SignedWindowPacketCertificates.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.Integration.QuadraticRootTransport`](../../../../MeasureAndIntegration/QuadraticRootTransport.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.SignedWindowPacketCertificates`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedWindowPacketCertificates.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Integration.QuadraticRootTransport`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticRootTransport.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [narrow_root_transport](../../../../MeasureAndIntegration/SignedWindowRootBounds.lean/declarations/narrow-root-transport.md) | 19 | `result-track:a5a2bd299556b172fe8305b350a9cb78fbea59614d5eda0068101e1977dc7468` |
-| 2 | `theorem` | [narrow_energy_budget](../../../../MeasureAndIntegration/SignedWindowRootBounds.lean/declarations/narrow-energy-budget.md) | 48 | `result-track:c44ef8e97fa8c385107faa8be6042b516e641a0dbcd78d2f1c55fbce9d818649` |
-| 3 | `inductive` | [SharpBudgetDerivation](../../../../MeasureAndIntegration/SignedWindowRootBounds.lean/declarations/sharpbudgetderivation.md) | 63 | `declaration-track:13053ac9e706bebf5baf6e76367536b13d003bf10af6bbfe48bd3a4b0a6c0c40` |
-| 4 | `theorem` | [SharpBudgetDerivation.sound](../../../../MeasureAndIntegration/SignedWindowRootBounds.lean/declarations/sharpbudgetderivation-sound.md) | 72 | `result-track:7f8d6c06d8a70c9d25dacb628ebee8eec8eec096979c9d1416db875fa4faf87c` |
-| 5 | `theorem` | [uniform_sharp_charts_return](../../../../MeasureAndIntegration/SignedWindowRootBounds.lean/declarations/uniform-sharp-charts-return.md) | 80 | `result-track:a405bf6464bc99862e028d9584eb5d64c8989524d83952898bb4cfc03dbd6744` |
+| 1 | `theorem` | [narrow_root_transport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedWindowRootBounds.lean/declarations/narrow-root-transport.md) | 19 | `result-track:a5a2bd299556b172fe8305b350a9cb78fbea59614d5eda0068101e1977dc7468` |
+| 2 | `theorem` | [narrow_energy_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedWindowRootBounds.lean/declarations/narrow-energy-budget.md) | 48 | `result-track:c44ef8e97fa8c385107faa8be6042b516e641a0dbcd78d2f1c55fbce9d818649` |
+| 3 | `inductive` | [SharpBudgetDerivation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedWindowRootBounds.lean/declarations/sharpbudgetderivation.md) | 63 | `declaration-track:13053ac9e706bebf5baf6e76367536b13d003bf10af6bbfe48bd3a4b0a6c0c40` |
+| 4 | `theorem` | [SharpBudgetDerivation.sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedWindowRootBounds.lean/declarations/sharpbudgetderivation-sound.md) | 72 | `result-track:7f8d6c06d8a70c9d25dacb628ebee8eec8eec096979c9d1416db875fa4faf87c` |
+| 5 | `theorem` | [uniform_sharp_charts_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedWindowRootBounds.lean/declarations/uniform-sharp-charts-return.md) | 80 | `result-track:a405bf6464bc99862e028d9584eb5d64c8989524d83952898bb4cfc03dbd6744` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

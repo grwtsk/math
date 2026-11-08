@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceFilterDeltaLiteralSnippet.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceFilterDeltaLiteralSnippet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterDeltaLiteralSnippet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterDeltaLiteralSnippet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SourceFilterDeltaLiteralSnippet.lean/declarations/example-source-edition-3.md) | 7 | `declaration-track:b873393a37eda0cd23092f86de10be4a5811e63692952110426db41e2841f4a9` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SourceFilterDeltaLiteralSnippet.lean/declarations/example.md) | 8 | `declaration-track:5c3d84f754a11d71bbbdc8ba15148706e27c80a9cc8585c9571345d19fd81904` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SourceFilterDeltaLiteralSnippet.lean/declarations/example-source-edition-2.md) | 9 | `declaration-track:9d48f2d62712949b3b20d83aa1c9bb4c099c1dd3b1d4c5d55fc763a8112d2dbb` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterDeltaLiteralSnippet.lean/declarations/example-source-edition-3.md) | 7 | `declaration-track:b873393a37eda0cd23092f86de10be4a5811e63692952110426db41e2841f4a9` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterDeltaLiteralSnippet.lean/declarations/example.md) | 8 | `declaration-track:5c3d84f754a11d71bbbdc8ba15148706e27c80a9cc8585c9571345d19fd81904` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterDeltaLiteralSnippet.lean/declarations/example-source-edition-2.md) | 9 | `declaration-track:9d48f2d62712949b3b20d83aa1c9bb4c099c1dd3b1d4c5d55fc763a8112d2dbb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

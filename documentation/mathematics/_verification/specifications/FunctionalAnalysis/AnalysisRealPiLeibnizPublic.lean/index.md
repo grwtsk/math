@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/AnalysisRealPiLeibnizPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/AnalysisRealPiLeibnizPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisRealPiLeibnizPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisRealPiLeibnizPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_sum_pi_div_four](../../../../FunctionalAnalysis/AnalysisRealPiLeibnizPublic.lean/declarations/tendsto-sum-pi-div-four.md) | 23 | `result-track:1c0864597720d4d0a4dcc6a946c25ec7ce240257c4f62da4e35ae939d1fe8628` |
+| 1 | `theorem` | [tendsto_sum_pi_div_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisRealPiLeibnizPublic.lean/declarations/tendsto-sum-pi-div-four.md) | 23 | `result-track:1c0864597720d4d0a4dcc6a946c25ec7ce240257c4f62da4e35ae939d1fe8628` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

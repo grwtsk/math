@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltrationNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltrationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltrationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltrationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Filtration](../../../../ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltrationNamespaced.lean/declarations/filtration.md) | 26 | `declaration-track:207f27a1e7968d76636a690b01058a92f36a0ab4ce7a1b44cf786e77fcef6cb6` |
-| 2 | `structure` | [HodgeDeRhamFiltration](../../../../ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltrationNamespaced.lean/declarations/hodgederhamfiltration.md) | 35 | `declaration-track:4747aa846405db793f281a8afe86050b47cdfae89feae690baadf5f2d8596f17` |
-| 3 | `theorem` | [filtration_exhaustive](../../../../ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltrationNamespaced.lean/declarations/filtration-exhaustive.md) | 45 | `result-track:819aaffa3e6e3cfe0635de6b64079136fdfb6aa8ea3d5645cf841ee0d08ed0d3` |
-| 4 | `theorem` | [filtration_separated](../../../../ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltrationNamespaced.lean/declarations/filtration-separated.md) | 50 | `result-track:9275f139bc7836b046a2f5fc55e5440d527e05e26b87f0b53b9f66156d594860` |
-| 5 | `theorem` | [hodge_de_rham_has_associated_connection](../../../../ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltrationNamespaced.lean/declarations/hodge-de-rham-has-associated-connection.md) | 55 | `result-track:b789260c8108ef09fdef427a095aa30b9e3817035b40dbef13482375b35f18d7` |
+| 1 | `structure` | [Filtration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltrationNamespaced.lean/declarations/filtration.md) | 26 | `declaration-track:207f27a1e7968d76636a690b01058a92f36a0ab4ce7a1b44cf786e77fcef6cb6` |
+| 2 | `structure` | [HodgeDeRhamFiltration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltrationNamespaced.lean/declarations/hodgederhamfiltration.md) | 35 | `declaration-track:4747aa846405db793f281a8afe86050b47cdfae89feae690baadf5f2d8596f17` |
+| 3 | `theorem` | [filtration_exhaustive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltrationNamespaced.lean/declarations/filtration-exhaustive.md) | 45 | `result-track:819aaffa3e6e3cfe0635de6b64079136fdfb6aa8ea3d5645cf841ee0d08ed0d3` |
+| 4 | `theorem` | [filtration_separated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltrationNamespaced.lean/declarations/filtration-separated.md) | 50 | `result-track:9275f139bc7836b046a2f5fc55e5440d527e05e26b87f0b53b9f66156d594860` |
+| 5 | `theorem` | [hodge_de_rham_has_associated_connection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltrationNamespaced.lean/declarations/hodge-de-rham-has-associated-connection.md) | 55 | `result-track:b789260c8108ef09fdef427a095aa30b9e3817035b40dbef13482375b35f18d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceUpperCubicKappaNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceUpperCubicKappaNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceUpperCubicKappaNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceUpperCubicKappaNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [upperCubicKappaWeight](../../../../MeasureAndIntegration/SourceUpperCubicKappaNamespaced.lean/declarations/uppercubickappaweight.md) | 33 | `declaration-track:72115b7c2fee433921b183290278172ebeeff2c0e73bc113b917dfb53390388d` |
-| 2 | `theorem` | [upperCubicKappaWeight_eq_moment_densities](../../../../MeasureAndIntegration/SourceUpperCubicKappaNamespaced.lean/declarations/uppercubickappaweight-eq-moment-densities.md) | 37 | `result-track:397bd08776a08ad11991b09aedd7e0650f5f51c5ce270b9bd5e289d014c148df` |
-| 3 | `theorem` | [upperCubicKappaWeight_integrable](../../../../MeasureAndIntegration/SourceUpperCubicKappaNamespaced.lean/declarations/uppercubickappaweight-integrable.md) | 43 | `result-track:ad1ea18a14b082e0c8aae0b9533d7591981e1aa52271037aa04be63c2f8db2d0` |
-| 4 | `def` | [upperCubicKappa](../../../../MeasureAndIntegration/SourceUpperCubicKappaNamespaced.lean/declarations/uppercubickappa.md) | 53 | `declaration-track:c6ae6fe418312f123f192a19c4104c143fb918e7d1c0b54e94d3e4d9bddb026b` |
-| 5 | `theorem` | [upperCubicKappa_eq_moments](../../../../MeasureAndIntegration/SourceUpperCubicKappaNamespaced.lean/declarations/uppercubickappa-eq-moments.md) | 55 | `result-track:e9c6d8a8c3ca382c2cfac6a5d9a38d879d9df79061672f33c959e3b062d21a61` |
-| 6 | `theorem` | [cubicUpperBetas_eq_kappa](../../../../MeasureAndIntegration/SourceUpperCubicKappaNamespaced.lean/declarations/cubicupperbetas-eq-kappa.md) | 66 | `result-track:7de40bead66fcaae6aeee675d0574402eb9c90710912febe6ec2431b8a93d08f` |
-| 7 | `theorem` | [cubicUpperMainTerm_eq_kappa_jet](../../../../MeasureAndIntegration/SourceUpperCubicKappaNamespaced.lean/declarations/cubicuppermainterm-eq-kappa-jet.md) | 80 | `result-track:cbd693584b62060da023a7e0edd5f52b6915473a13417e8f05698ab26079ea96` |
+| 1 | `def` | [upperCubicKappaWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceUpperCubicKappaNamespaced.lean/declarations/uppercubickappaweight.md) | 33 | `declaration-track:72115b7c2fee433921b183290278172ebeeff2c0e73bc113b917dfb53390388d` |
+| 2 | `theorem` | [upperCubicKappaWeight_eq_moment_densities](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceUpperCubicKappaNamespaced.lean/declarations/uppercubickappaweight-eq-moment-densities.md) | 37 | `result-track:397bd08776a08ad11991b09aedd7e0650f5f51c5ce270b9bd5e289d014c148df` |
+| 3 | `theorem` | [upperCubicKappaWeight_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceUpperCubicKappaNamespaced.lean/declarations/uppercubickappaweight-integrable.md) | 43 | `result-track:ad1ea18a14b082e0c8aae0b9533d7591981e1aa52271037aa04be63c2f8db2d0` |
+| 4 | `def` | [upperCubicKappa](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceUpperCubicKappaNamespaced.lean/declarations/uppercubickappa.md) | 53 | `declaration-track:c6ae6fe418312f123f192a19c4104c143fb918e7d1c0b54e94d3e4d9bddb026b` |
+| 5 | `theorem` | [upperCubicKappa_eq_moments](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceUpperCubicKappaNamespaced.lean/declarations/uppercubickappa-eq-moments.md) | 55 | `result-track:e9c6d8a8c3ca382c2cfac6a5d9a38d879d9df79061672f33c959e3b062d21a61` |
+| 6 | `theorem` | [cubicUpperBetas_eq_kappa](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceUpperCubicKappaNamespaced.lean/declarations/cubicupperbetas-eq-kappa.md) | 66 | `result-track:7de40bead66fcaae6aeee675d0574402eb9c90710912febe6ec2431b8a93d08f` |
+| 7 | `theorem` | [cubicUpperMainTerm_eq_kappa_jet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceUpperCubicKappaNamespaced.lean/declarations/cubicuppermainterm-eq-kappa-jet.md) | 80 | `result-track:cbd693584b62060da023a7e0edd5f52b6915473a13417e8f05698ab26079ea96` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

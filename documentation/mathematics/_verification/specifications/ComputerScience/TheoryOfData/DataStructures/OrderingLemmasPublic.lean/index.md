@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/OrderingLemmasPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/OrderingLemmasPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OrderingLemmasPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OrderingLemmasPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ite_eq_lt_distrib](../../../../../../ComputerScience/TheoryOfData/DataStructures/OrderingLemmasPublic.lean/declarations/ite-eq-lt-distrib.md) | 22 | `result-track:97b6f0c9cb576637ccdd09ab7f8b06b5da28beb581da2ddc002561ed60cf3dd4` |
-| 2 | `theorem` | [ite_eq_eq_distrib](../../../../../../ComputerScience/TheoryOfData/DataStructures/OrderingLemmasPublic.lean/declarations/ite-eq-eq-distrib.md) | 27 | `result-track:28d5aa232df169c74f9cea132ddf73da752180515c840549cb2e1d3fdc3533eb` |
-| 3 | `theorem` | [ite_eq_gt_distrib](../../../../../../ComputerScience/TheoryOfData/DataStructures/OrderingLemmasPublic.lean/declarations/ite-eq-gt-distrib.md) | 32 | `result-track:db89cc002d51a8a5120ae4f229bbac97096aaa29d2d77c4a259b7e7885c58190` |
-| 4 | `lemma` | [dthen_eq_then](../../../../../../ComputerScience/TheoryOfData/DataStructures/OrderingLemmasPublic.lean/declarations/dthen-eq-then.md) | 37 | `result-track:8ccf31e702d5906ef507df8d2772e640dbb9137b9c3002cf756b9e2cf53f2de3` |
-| 5 | `theorem` | [cmpUsing_eq_lt](../../../../../../ComputerScience/TheoryOfData/DataStructures/OrderingLemmasPublic.lean/declarations/cmpusing-eq-lt.md) | 49 | `result-track:f11920b236f44eb933a503635b01c02f5ebeeb5a5e49866c981c5fdf2bcf8477` |
-| 6 | `theorem` | [cmpUsing_eq_gt](../../../../../../ComputerScience/TheoryOfData/DataStructures/OrderingLemmasPublic.lean/declarations/cmpusing-eq-gt.md) | 54 | `result-track:1b636fd4ca7187eca61111ee0f9380162cebc12366967e3552f491fec2abcda2` |
-| 7 | `theorem` | [cmpUsing_eq_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/OrderingLemmasPublic.lean/declarations/cmpusing-eq-eq.md) | 60 | `result-track:c90c89632a9508f410d1b88a526d45d2e73c0f779d135de943c8c5a6dbb4b811` |
+| 1 | `theorem` | [ite_eq_lt_distrib](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OrderingLemmasPublic.lean/declarations/ite-eq-lt-distrib.md) | 22 | `result-track:97b6f0c9cb576637ccdd09ab7f8b06b5da28beb581da2ddc002561ed60cf3dd4` |
+| 2 | `theorem` | [ite_eq_eq_distrib](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OrderingLemmasPublic.lean/declarations/ite-eq-eq-distrib.md) | 27 | `result-track:28d5aa232df169c74f9cea132ddf73da752180515c840549cb2e1d3fdc3533eb` |
+| 3 | `theorem` | [ite_eq_gt_distrib](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OrderingLemmasPublic.lean/declarations/ite-eq-gt-distrib.md) | 32 | `result-track:db89cc002d51a8a5120ae4f229bbac97096aaa29d2d77c4a259b7e7885c58190` |
+| 4 | `lemma` | [dthen_eq_then](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OrderingLemmasPublic.lean/declarations/dthen-eq-then.md) | 37 | `result-track:8ccf31e702d5906ef507df8d2772e640dbb9137b9c3002cf756b9e2cf53f2de3` |
+| 5 | `theorem` | [cmpUsing_eq_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OrderingLemmasPublic.lean/declarations/cmpusing-eq-lt.md) | 49 | `result-track:f11920b236f44eb933a503635b01c02f5ebeeb5a5e49866c981c5fdf2bcf8477` |
+| 6 | `theorem` | [cmpUsing_eq_gt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OrderingLemmasPublic.lean/declarations/cmpusing-eq-gt.md) | 54 | `result-track:1b636fd4ca7187eca61111ee0f9380162cebc12366967e3552f491fec2abcda2` |
+| 7 | `theorem` | [cmpUsing_eq_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OrderingLemmasPublic.lean/declarations/cmpusing-eq-eq.md) | 60 | `result-track:c90c89632a9508f410d1b88a526d45d2e73c0f779d135de943c8c5a6dbb4b811` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

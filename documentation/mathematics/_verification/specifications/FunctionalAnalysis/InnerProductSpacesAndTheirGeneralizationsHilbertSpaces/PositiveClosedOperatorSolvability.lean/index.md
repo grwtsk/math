@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveClosedOperatorSolvability.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveClosedOperatorSolvability.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveClosedOperatorSolvability.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveClosedOperatorSolvability.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.InnerProductSpace.ClosedOperatorSolvability`](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceClosedOperatorSolvability.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.ClosedOperatorSolvability`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceClosedOperatorSolvability.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveClosedOperatorSolvability.lean/declarations/example-source-edition-3.md) | 19 | `declaration-track:6374cfbacf78468f82f1e58b33c4aee7546bf10f1f854d2b1dfe267d51e20203` |
-| 2 | `example` | [(anonymous)](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveClosedOperatorSolvability.lean/declarations/example-source-edition-2.md) | 25 | `declaration-track:55901b11247b3e4b820e1519e2233b9b8f10c75629820090f0cbe2ad70521cb4` |
-| 3 | `theorem` | [zero_dense](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveClosedOperatorSolvability.lean/declarations/zero-dense.md) | 31 | `result-track:9eed5a10c6acb0690a588c6451a7b1062a2d363f3c9f05a1af04e731c1606d50` |
-| 4 | `theorem` | [zero_closed](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveClosedOperatorSolvability.lean/declarations/zero-closed.md) | 35 | `result-track:63ea0a37db9991eb3c09a5912e3eec597b1798daa2f64799e00a74b193110c24` |
-| 5 | `example` | [(anonymous)](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveClosedOperatorSolvability.lean/declarations/example.md) | 49 | `declaration-track:37164359166d86fba8fddf7e9c219bd4d061d0b27184fa4fb8f943a915bb4580` |
-| 6 | `example` | [(anonymous)](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveClosedOperatorSolvability.lean/declarations/example-source-edition-4.md) | 54 | `declaration-track:6b0a7011a4044f2a37083b8b1733c74a94295dea6f5ea875e92d4e582fa64767` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveClosedOperatorSolvability.lean/declarations/example-source-edition-3.md) | 19 | `declaration-track:6374cfbacf78468f82f1e58b33c4aee7546bf10f1f854d2b1dfe267d51e20203` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveClosedOperatorSolvability.lean/declarations/example-source-edition-2.md) | 25 | `declaration-track:55901b11247b3e4b820e1519e2233b9b8f10c75629820090f0cbe2ad70521cb4` |
+| 3 | `theorem` | [zero_dense](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveClosedOperatorSolvability.lean/declarations/zero-dense.md) | 31 | `result-track:9eed5a10c6acb0690a588c6451a7b1062a2d363f3c9f05a1af04e731c1606d50` |
+| 4 | `theorem` | [zero_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveClosedOperatorSolvability.lean/declarations/zero-closed.md) | 35 | `result-track:63ea0a37db9991eb3c09a5912e3eec597b1798daa2f64799e00a74b193110c24` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveClosedOperatorSolvability.lean/declarations/example.md) | 49 | `declaration-track:37164359166d86fba8fddf7e9c219bd4d061d0b27184fa4fb8f943a915bb4580` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveClosedOperatorSolvability.lean/declarations/example-source-edition-4.md) | 54 | `declaration-track:6b0a7011a4044f2a37083b8b1733c74a94295dea6f5ea875e92d4e582fa64767` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PermuteGoals.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PermuteGoals.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PermuteGoals.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PermuteGoals.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PermuteGoals.lean/declarations/example-source-edition-4.md) | 4 | `declaration-track:d5be63dc4311c2c0d6db10003a06254e9e7a163b53ef2a04b041bf6dd572f051` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PermuteGoals.lean/declarations/example.md) | 17 | `declaration-track:689d25b1a0b1f313c0fd2bde07e04d5362f3175b292610368f4856e769a72a30` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PermuteGoals.lean/declarations/example-source-edition-3.md) | 31 | `declaration-track:cd16f2f8fac6fbbff5523cbbd11effdc4133d725ec841053d82e0333214c583a` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PermuteGoals.lean/declarations/example-source-edition-2.md) | 41 | `declaration-track:8345f163699f3844811a9b94d3310436c7ce2d569e9a06fca2b4e1df65f124e7` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PermuteGoals.lean/declarations/example-source-edition-4.md) | 4 | `declaration-track:d5be63dc4311c2c0d6db10003a06254e9e7a163b53ef2a04b041bf6dd572f051` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PermuteGoals.lean/declarations/example.md) | 17 | `declaration-track:689d25b1a0b1f313c0fd2bde07e04d5362f3175b292610368f4856e769a72a30` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PermuteGoals.lean/declarations/example-source-edition-3.md) | 31 | `declaration-track:cd16f2f8fac6fbbff5523cbbd11effdc4133d725ec841053d82e0333214c583a` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PermuteGoals.lean/declarations/example-source-edition-2.md) | 41 | `declaration-track:8345f163699f3844811a9b94d3310436c7ce2d569e9a06fca2b4e1df65f124e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

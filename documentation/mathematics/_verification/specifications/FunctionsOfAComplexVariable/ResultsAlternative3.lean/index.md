@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ResultsAlternative3.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ResultsAlternative3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ResultsAlternative3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ResultsAlternative3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteFeatureFamily](../../../../FunctionsOfAComplexVariable/ResultsAlternative3.lean/declarations/finitefeaturefamily.md) | 18 | `declaration-track:9d12ca52dfcc228165dfcd45ad8a7a7c3ca7e3accd3b5eeb5bc1fb4bb7b6f9c8` |
+| 1 | `structure` | [FiniteFeatureFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ResultsAlternative3.lean/declarations/finitefeaturefamily.md) | 18 | `declaration-track:9d12ca52dfcc228165dfcd45ad8a7a7c3ca7e3accd3b5eeb5bc1fb4bb7b6f9c8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

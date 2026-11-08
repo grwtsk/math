@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FiniteEnergyLiteralSnippet.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FiniteEnergyLiteralSnippet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralSnippet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralSnippet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FiniteEnergyLiteralSnippet.lean/declarations/example-source-edition-5.md) | 9 | `declaration-track:b939f752aeb9718ffa79bd447a9eb71ed6765655de5e04483f23135dba8ac197` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FiniteEnergyLiteralSnippet.lean/declarations/example-source-edition-3.md) | 11 | `declaration-track:3cda61fca6d14f103a6312ac5af78fc4adf7f7caffbef03ebe5cadf3b1ed3a8b` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FiniteEnergyLiteralSnippet.lean/declarations/example.md) | 14 | `declaration-track:0d2b81a301c1692600b27d89685704d05eb9e6c0813aaa78daabb64702de5f30` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FiniteEnergyLiteralSnippet.lean/declarations/example-source-edition-4.md) | 18 | `declaration-track:84fe377c747f6b27358c535233a534045249193bc8e6266f0ca8588bb567d598` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FiniteEnergyLiteralSnippet.lean/declarations/example-source-edition-2.md) | 21 | `declaration-track:332bb6042a1aa460b76ea0bd9c4b9398de59fd9191dc87783e8d39e8cab4cd24` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FiniteEnergyLiteralSnippet.lean/declarations/example-source-edition-6.md) | 25 | `declaration-track:cb065da403d46d3dbfc97f97c229c21bae67b7e4c1a166946c291b818fcbe3b3` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralSnippet.lean/declarations/example-source-edition-5.md) | 9 | `declaration-track:b939f752aeb9718ffa79bd447a9eb71ed6765655de5e04483f23135dba8ac197` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralSnippet.lean/declarations/example-source-edition-3.md) | 11 | `declaration-track:3cda61fca6d14f103a6312ac5af78fc4adf7f7caffbef03ebe5cadf3b1ed3a8b` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralSnippet.lean/declarations/example.md) | 14 | `declaration-track:0d2b81a301c1692600b27d89685704d05eb9e6c0813aaa78daabb64702de5f30` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralSnippet.lean/declarations/example-source-edition-4.md) | 18 | `declaration-track:84fe377c747f6b27358c535233a534045249193bc8e6266f0ca8588bb567d598` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralSnippet.lean/declarations/example-source-edition-2.md) | 21 | `declaration-track:332bb6042a1aa460b76ea0bd9c4b9398de59fd9191dc87783e8d39e8cab4cd24` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralSnippet.lean/declarations/example-source-edition-6.md) | 25 | `declaration-track:cb065da403d46d3dbfc97f97c229c21bae67b7e4c1a166946c291b818fcbe3b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

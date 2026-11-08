@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VonNeumannNamespacedEdition1.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VonNeumannNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VonNeumannNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VonNeumannNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [normSqMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VonNeumannNamespacedEdition1.lean/declarations/normsqmatrix.md) | 61 | `declaration-track:85a80f0c8d46347a6fb339acf29af78cc5d91fcfe1b184bd30eb80f3afb7efbe` |
-| 2 | `lemma` | [normSqMatrix_mem_doublyStochastic_of_unitary](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VonNeumannNamespacedEdition1.lean/declarations/normsqmatrix-mem-doublystochastic-of-unitary.md) | 68 | `result-track:70e212813a83752ea78258179eee39d6c755bcdce22601019d5f97687e9b57f2` |
-| 3 | `lemma` | [re_trace_mul_eq_eigenvalue_bilinear](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VonNeumannNamespacedEdition1.lean/declarations/re-trace-mul-eq-eigenvalue-bilinear.md) | 86 | `result-track:ba788bda7775a6d192c31893fde0b7a59d408de42718e41968875c12ad7b93bd` |
-| 4 | `lemma` | [Von Neumann Namespaced Edition1](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VonNeumannNamespacedEdition1.lean/declarations/monovary-antitone.md) | 141 | `result-track:4f0ab3bdd8831e4e8ac3da3069ef2df64bc68a6fe7450dfbb9b965908af21ff2` |
-| 5 | `lemma` | [bilinear_doublyStochastic_le_of_monovary](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VonNeumannNamespacedEdition1.lean/declarations/bilinear-doublystochastic-le-of-monovary.md) | 151 | `result-track:d5ccd0144c7ad0bf97bc83cfb7bd7802d8f2b818a4f35c5475094daa518b3b4c` |
-| 6 | `theorem` | [vonNeumann_trace_ineq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VonNeumannNamespacedEdition1.lean/declarations/vonneumann-trace-ineq.md) | 179 | `result-track:bc4ce4ea4e525fc132ccb89b777318a10d39147c33e3d3ba159424ea7e5316f3` |
+| 1 | `def` | [normSqMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VonNeumannNamespacedEdition1.lean/declarations/normsqmatrix.md) | 61 | `declaration-track:85a80f0c8d46347a6fb339acf29af78cc5d91fcfe1b184bd30eb80f3afb7efbe` |
+| 2 | `lemma` | [normSqMatrix_mem_doublyStochastic_of_unitary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VonNeumannNamespacedEdition1.lean/declarations/normsqmatrix-mem-doublystochastic-of-unitary.md) | 68 | `result-track:70e212813a83752ea78258179eee39d6c755bcdce22601019d5f97687e9b57f2` |
+| 3 | `lemma` | [re_trace_mul_eq_eigenvalue_bilinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VonNeumannNamespacedEdition1.lean/declarations/re-trace-mul-eq-eigenvalue-bilinear.md) | 86 | `result-track:ba788bda7775a6d192c31893fde0b7a59d408de42718e41968875c12ad7b93bd` |
+| 4 | `lemma` | [Von Neumann Namespaced Edition1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VonNeumannNamespacedEdition1.lean/declarations/monovary-antitone.md) | 141 | `result-track:4f0ab3bdd8831e4e8ac3da3069ef2df64bc68a6fe7450dfbb9b965908af21ff2` |
+| 5 | `lemma` | [bilinear_doublyStochastic_le_of_monovary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VonNeumannNamespacedEdition1.lean/declarations/bilinear-doublystochastic-le-of-monovary.md) | 151 | `result-track:d5ccd0144c7ad0bf97bc83cfb7bd7802d8f2b818a4f35c5475094daa518b3b4c` |
+| 6 | `theorem` | [vonNeumann_trace_ineq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VonNeumannNamespacedEdition1.lean/declarations/vonneumann-trace-ineq.md) | 179 | `result-track:bc4ce4ea4e525fc132ccb89b777318a10d39147c33e3d3ba159424ea7e5316f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

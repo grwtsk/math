@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SourceCriticalCurvaturePhasePreparedNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/SourceCriticalCurvaturePhasePreparedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCriticalCurvaturePhasePreparedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCriticalCurvaturePhasePreparedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pairedTailTest_second_deriv_eq_neg_of_deriv_pos](../../../../RealFunctions/SourceCriticalCurvaturePhasePreparedNamespaced.lean/declarations/pairedtailtest-second-deriv-eq-neg-of-deriv-pos.md) | 32 | `result-track:7860d8a745d29dc3f48471541daa466eec77f6743b016ef73bf6efc0fded82ac` |
+| 1 | `theorem` | [pairedTailTest_second_deriv_eq_neg_of_deriv_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCriticalCurvaturePhasePreparedNamespaced.lean/declarations/pairedtailtest-second-deriv-eq-neg-of-deriv-pos.md) | 32 | `result-track:7860d8a745d29dc3f48471541daa466eec77f6743b016ef73bf6efc0fded82ac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

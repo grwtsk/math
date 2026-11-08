@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexUniformPublic.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexUniformPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConvexUniformPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConvexUniformPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [UniformConvexSpace](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexUniformPublic.lean/declarations/uniformconvexspace.md) | 39 | `declaration-track:3e5712b5dbb8a35af31aaf38ceaa46bd916be09e653e0241486ede45b201d61c` |
-| 2 | `theorem` | [exists_forall_sphere_dist_add_le_two_sub](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexUniformPublic.lean/declarations/exists-forall-sphere-dist-add-le-two-sub.md) | 49 | `result-track:c50fca91fa0b3e7b13803f17afc3d6d539f90baaaa746da28b56b88b6741c384` |
-| 3 | `theorem` | [exists_forall_closed_ball_dist_add_le_two_sub](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexUniformPublic.lean/declarations/exists-forall-closed-ball-dist-add-le-two-sub.md) | 55 | `result-track:363e75481ebb20b4dca4bc547274a483e9cdcda32021d58ace37bd9cf8b83823` |
-| 4 | `theorem` | [exists_forall_closed_ball_dist_add_le_two_mul_sub](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexUniformPublic.lean/declarations/exists-forall-closed-ball-dist-add-le-two-mul-sub.md) | 102 | `result-track:bce957d445bb4820f3c45da2f81e6312701c84da6b3d67986ee3eee3cf53333f` |
-| 5 | `instance` | [(anonymous)](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexUniformPublic.lean/declarations/instance.md) | 120 | `declaration-track:94c329cc37151564b66d27c9d3251f18a512efe05d3c170bc14ab5e046f6c75d` |
+| 1 | `class` | [UniformConvexSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConvexUniformPublic.lean/declarations/uniformconvexspace.md) | 39 | `declaration-track:3e5712b5dbb8a35af31aaf38ceaa46bd916be09e653e0241486ede45b201d61c` |
+| 2 | `theorem` | [exists_forall_sphere_dist_add_le_two_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConvexUniformPublic.lean/declarations/exists-forall-sphere-dist-add-le-two-sub.md) | 49 | `result-track:c50fca91fa0b3e7b13803f17afc3d6d539f90baaaa746da28b56b88b6741c384` |
+| 3 | `theorem` | [exists_forall_closed_ball_dist_add_le_two_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConvexUniformPublic.lean/declarations/exists-forall-closed-ball-dist-add-le-two-sub.md) | 55 | `result-track:363e75481ebb20b4dca4bc547274a483e9cdcda32021d58ace37bd9cf8b83823` |
+| 4 | `theorem` | [exists_forall_closed_ball_dist_add_le_two_mul_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConvexUniformPublic.lean/declarations/exists-forall-closed-ball-dist-add-le-two-mul-sub.md) | 102 | `result-track:bce957d445bb4820f3c45da2f81e6312701c84da6b3d67986ee3eee3cf53333f` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConvexUniformPublic.lean/declarations/instance.md) | 120 | `declaration-track:94c329cc37151564b66d27c9d3251f18a512efe05d3c170bc14ab5e046f6c75d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

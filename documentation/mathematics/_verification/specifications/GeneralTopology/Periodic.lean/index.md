@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Periodic.lean/index.md) · [Full source](../../../../GeneralTopology/Periodic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Periodic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Periodic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [periodic_tsum_comp_add_zsmul](../../../../GeneralTopology/Periodic.lean/declarations/periodic-tsum-comp-add-zsmul.md) | 26 | `result-track:c4423fc1b36782c82828f5651bf3a6e9043fd0dc50b3dab497f90cf44c442658` |
+| 1 | `theorem` | [periodic_tsum_comp_add_zsmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Periodic.lean/declarations/periodic-tsum-comp-add-zsmul.md) | 26 | `result-track:c4423fc1b36782c82828f5651bf3a6e9043fd0dc50b3dab497f90cf44c442658` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

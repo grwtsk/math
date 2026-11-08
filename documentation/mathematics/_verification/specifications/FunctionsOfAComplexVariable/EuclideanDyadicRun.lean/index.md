@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.IntegerDyadicTrace`](../../../../FunctionsOfAComplexVariable/IntegerDyadicTrace.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.IntegerDyadicTrace`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntegerDyadicTrace.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Data.Int.DivMod` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [next](../../../../FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/declarations/next.md) | 22 | `declaration-track:e6a42e3f94b50ee0a1ed729ce248fcaf10819e9c9d3db268f8933a7d46107924` |
-| 2 | `def` | [iterate](../../../../FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/declarations/iterate.md) | 26 | `declaration-track:69c2fd8cb3a5fc0782f792dd947fb7dc98c0cff01599a5a9f623826197abb2d1` |
-| 3 | `theorem` | [ediv_window](../../../../FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/declarations/ediv-window.md) | 30 | `result-track:71542f7b9130ed0a37894a342ee5e839a88b046b67514ebaeaeac5030214c1e3` |
-| 4 | `theorem` | [neg_ediv_window](../../../../FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/declarations/neg-ediv-window.md) | 36 | `result-track:5de594e21178899ae47732f7530ddd043bc2c4746cae37686eb20c0b8946b2d4` |
-| 5 | `theorem` | [next_error_nonneg](../../../../FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/declarations/next-error-nonneg.md) | 41 | `result-track:453986aad2cb831060b0c2880efffa82c2c0fc5e1cb761c7d979a00f0bf49540` |
-| 6 | `theorem` | [next_valid](../../../../FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/declarations/next-valid.md) | 52 | `result-track:1a531cd6ee4017910b892fdab24100f7193d932df42e2524df269aa8c3b791f9` |
-| 7 | `theorem` | [iterate_error_nonneg](../../../../FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/declarations/iterate-error-nonneg.md) | 58 | `result-track:031dd031bf7488f176f7c95dfeaeebc2c23aaf9139e505ba7e67b0f88d49bffe` |
-| 8 | `theorem` | [run_eq_iterate](../../../../FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/declarations/run-eq-iterate.md) | 65 | `result-track:f9a17816d7a5f1b3aeee2ff788b79c2c8b6d7df01c3acd7987d294189c2464c5` |
+| 1 | `def` | [next](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/declarations/next.md) | 22 | `declaration-track:e6a42e3f94b50ee0a1ed729ce248fcaf10819e9c9d3db268f8933a7d46107924` |
+| 2 | `def` | [iterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/declarations/iterate.md) | 26 | `declaration-track:69c2fd8cb3a5fc0782f792dd947fb7dc98c0cff01599a5a9f623826197abb2d1` |
+| 3 | `theorem` | [ediv_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/declarations/ediv-window.md) | 30 | `result-track:71542f7b9130ed0a37894a342ee5e839a88b046b67514ebaeaeac5030214c1e3` |
+| 4 | `theorem` | [neg_ediv_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/declarations/neg-ediv-window.md) | 36 | `result-track:5de594e21178899ae47732f7530ddd043bc2c4746cae37686eb20c0b8946b2d4` |
+| 5 | `theorem` | [next_error_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/declarations/next-error-nonneg.md) | 41 | `result-track:453986aad2cb831060b0c2880efffa82c2c0fc5e1cb761c7d979a00f0bf49540` |
+| 6 | `theorem` | [next_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/declarations/next-valid.md) | 52 | `result-track:1a531cd6ee4017910b892fdab24100f7193d932df42e2524df269aa8c3b791f9` |
+| 7 | `theorem` | [iterate_error_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/declarations/iterate-error-nonneg.md) | 58 | `result-track:031dd031bf7488f176f7c95dfeaeebc2c23aaf9139e505ba7e67b0f88d49bffe` |
+| 8 | `theorem` | [run_eq_iterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/declarations/run-eq-iterate.md) | 65 | `result-track:f9a17816d7a5f1b3aeee2ff788b79c2c8b6d7df01c3acd7987d294189c2464c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [setoidPrestructure](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/declarations/setoidprestructure.md) | 54 | `declaration-track:2e88c48149731c1a3a55282b41d4185175d471e8e1c3f1ad7f28d5db2aba59b1` |
-| 2 | `instance` | [«structure»](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/declarations/structure.md) | 80 | `declaration-track:c0c3d30dae0dca7458e5fbb60d1c1755c57cd3e4aad1ba58bc4987563cb507e7` |
-| 3 | `theorem` | [funMap_cast](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/declarations/funmap-cast.md) | 85 | `result-track:2b7876cbc8bf6cd9f32d4531b3540b6b1c403ae5e494bcfd83ddf389006a97de` |
-| 4 | `theorem` | [term_realize_cast](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/declarations/term-realize-cast.md) | 91 | `result-track:0e3d0360a31b99be9fd081029c77e46b5afb9b665567b7b4b7306867855e2e48` |
-| 5 | `theorem` | [boundedFormula_realize_cast](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/declarations/boundedformula-realize-cast.md) | 107 | `result-track:b638d4715fdebf78924145faf0fbcb55825758fb0561335d1b3afca5261fdd28` |
-| 6 | `theorem` | [realize_formula_cast](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/declarations/realize-formula-cast.md) | 158 | `result-track:2e31d2ae31061d89881045936db3ccc603757f983780a4aef935b08b1ca96538` |
-| 7 | `theorem` | [sentence_realize](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/declarations/sentence-realize.md) | 167 | `result-track:273c109eed531dad6a241bfb43741219919ed69b1ac8e539e5002daf7a99ae0d` |
-| 8 | `instance` | [Product.instNonempty](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/declarations/product-instnonempty.md) | 174 | `declaration-track:6dcb808394fba3d4302f6234b6ad37c12c2af8e582fc24ab377003a7c37fb39f` |
+| 1 | `instance` | [setoidPrestructure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/declarations/setoidprestructure.md) | 54 | `declaration-track:2e88c48149731c1a3a55282b41d4185175d471e8e1c3f1ad7f28d5db2aba59b1` |
+| 2 | `instance` | [«structure»](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/declarations/structure.md) | 80 | `declaration-track:c0c3d30dae0dca7458e5fbb60d1c1755c57cd3e4aad1ba58bc4987563cb507e7` |
+| 3 | `theorem` | [funMap_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/declarations/funmap-cast.md) | 85 | `result-track:2b7876cbc8bf6cd9f32d4531b3540b6b1c403ae5e494bcfd83ddf389006a97de` |
+| 4 | `theorem` | [term_realize_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/declarations/term-realize-cast.md) | 91 | `result-track:0e3d0360a31b99be9fd081029c77e46b5afb9b665567b7b4b7306867855e2e48` |
+| 5 | `theorem` | [boundedFormula_realize_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/declarations/boundedformula-realize-cast.md) | 107 | `result-track:b638d4715fdebf78924145faf0fbcb55825758fb0561335d1b3afca5261fdd28` |
+| 6 | `theorem` | [realize_formula_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/declarations/realize-formula-cast.md) | 158 | `result-track:2e31d2ae31061d89881045936db3ccc603757f983780a4aef935b08b1ca96538` |
+| 7 | `theorem` | [sentence_realize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/declarations/sentence-realize.md) | 167 | `result-track:273c109eed531dad6a241bfb43741219919ed69b1ac8e539e5002daf7a99ae0d` |
+| 8 | `instance` | [Product.instNonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsNamespacedAligned.lean/declarations/product-instnonempty.md) | 174 | `declaration-track:6dcb808394fba3d4302f6234b6ad37c12c2af8e582fc24ab377003a7c37fb39f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

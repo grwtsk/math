@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/SetNamespacedPublic.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/SetNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [zero_union_range_succ](../../../../../NumberTheory/ElementaryNumberTheory/SetNamespacedPublic.lean/declarations/zero-union-range-succ.md) | 31 | `result-track:694281deea8a974d66338a1ac0ede0e9792459c237b4d51ebc359a265461278c` |
-| 2 | `theorem` | [range_succ](../../../../../NumberTheory/ElementaryNumberTheory/SetNamespacedPublic.lean/declarations/range-succ.md) | 36 | `result-track:1dfa01574d86219c04e8c6a87d543e78ca765f62c02f0671111e010fe91349af` |
-| 3 | `theorem` | [range_of_succ](../../../../../NumberTheory/ElementaryNumberTheory/SetNamespacedPublic.lean/declarations/range-of-succ.md) | 41 | `result-track:b2321f277288dff2013ed7be464cf25e12205ebd87357c05f64ce8ad4b484eb4` |
-| 4 | `theorem` | [range_rec](../../../../../NumberTheory/ElementaryNumberTheory/SetNamespacedPublic.lean/declarations/range-rec.md) | 44 | `result-track:0412d70a26be224cde0102c9815038ea024fd3d04d1e80f9c04f092cedb3e559` |
-| 5 | `theorem` | [range_casesOn](../../../../../NumberTheory/ElementaryNumberTheory/SetNamespacedPublic.lean/declarations/range-caseson.md) | 54 | `result-track:70a8f2accfd0ba146bc28770074dc788c6f8154f9f22aed1d2d3cf4d74b9c0f3` |
+| 1 | `theorem` | [zero_union_range_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetNamespacedPublic.lean/declarations/zero-union-range-succ.md) | 31 | `result-track:694281deea8a974d66338a1ac0ede0e9792459c237b4d51ebc359a265461278c` |
+| 2 | `theorem` | [range_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetNamespacedPublic.lean/declarations/range-succ.md) | 36 | `result-track:1dfa01574d86219c04e8c6a87d543e78ca765f62c02f0671111e010fe91349af` |
+| 3 | `theorem` | [range_of_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetNamespacedPublic.lean/declarations/range-of-succ.md) | 41 | `result-track:b2321f277288dff2013ed7be464cf25e12205ebd87357c05f64ce8ad4b484eb4` |
+| 4 | `theorem` | [range_rec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetNamespacedPublic.lean/declarations/range-rec.md) | 44 | `result-track:0412d70a26be224cde0102c9815038ea024fd3d04d1e80f9c04f092cedb3e559` |
+| 5 | `theorem` | [range_casesOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetNamespacedPublic.lean/declarations/range-caseson.md) | 54 | `result-track:70a8f2accfd0ba146bc28770074dc788c6f8154f9f22aed1d2d3cf4d74b9c0f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

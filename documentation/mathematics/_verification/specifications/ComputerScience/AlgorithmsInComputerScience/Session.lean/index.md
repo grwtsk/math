@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Session.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Session.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Session.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Session.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SessionIdentity](../../../../../ComputerScience/AlgorithmsInComputerScience/Session.lean/declarations/sessionidentity.md) | 12 | `declaration-track:290f49706df7be02733e05446cf6fdd40ba14bbc81846bd05cb816c1a883e972` |
-| 2 | `structure` | [SessionState](../../../../../ComputerScience/AlgorithmsInComputerScience/Session.lean/declarations/sessionstate.md) | 20 | `declaration-track:18c49c8853872100b7dc1735328170bd89141e80cf754fce39016c6d7e3f3a14` |
-| 3 | `inductive` | [SessionEvent](../../../../../ComputerScience/AlgorithmsInComputerScience/Session.lean/declarations/sessionevent.md) | 26 | `declaration-track:385ad591646801acb596e632b60f72616ed675bb62c2ba8b37f64ce945133062` |
-| 4 | `inductive` | [SessionStep](../../../../../ComputerScience/AlgorithmsInComputerScience/Session.lean/declarations/sessionstep.md) | 31 | `declaration-track:b07465437967fa7dc218197c4e2ebb887f0bb4aa135aa6f35a91bb3a94159145` |
-| 5 | `theorem` | [disconnect_preserves_logical_session](../../../../../ComputerScience/AlgorithmsInComputerScience/Session.lean/declarations/disconnect-preserves-logical-session.md) | 53 | `result-track:c1b8caf9198110d556fcddb22b6761bd2784a5c7e92547ddcce15dcaa3791583` |
+| 1 | `structure` | [SessionIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Session.lean/declarations/sessionidentity.md) | 12 | `declaration-track:290f49706df7be02733e05446cf6fdd40ba14bbc81846bd05cb816c1a883e972` |
+| 2 | `structure` | [SessionState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Session.lean/declarations/sessionstate.md) | 20 | `declaration-track:18c49c8853872100b7dc1735328170bd89141e80cf754fce39016c6d7e3f3a14` |
+| 3 | `inductive` | [SessionEvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Session.lean/declarations/sessionevent.md) | 26 | `declaration-track:385ad591646801acb596e632b60f72616ed675bb62c2ba8b37f64ce945133062` |
+| 4 | `inductive` | [SessionStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Session.lean/declarations/sessionstep.md) | 31 | `declaration-track:b07465437967fa7dc218197c4e2ebb887f0bb4aa135aa6f35a91bb3a94159145` |
+| 5 | `theorem` | [disconnect_preserves_logical_session](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Session.lean/declarations/disconnect-preserves-logical-session.md) | 53 | `result-track:c1b8caf9198110d556fcddb22b6761bd2784a5c7e92547ddcce15dcaa3791583` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

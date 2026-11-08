@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FormalVerificationPolicyFormalVerificationPolicy.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FormalVerificationPolicyFormalVerificationPolicy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FormalVerificationPolicyFormalVerificationPolicy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FormalVerificationPolicyFormalVerificationPolicy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FormalVerificationPolicy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FormalVerificationPolicyFormalVerificationPolicy.lean/declarations/formalverificationpolicy.md) | 16 | `declaration-track:1769e395f121d793980c2a4481aa088450c9d748d0309366f1938732962c7b76` |
-| 2 | `def` | [defaultFormalVerificationPolicy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FormalVerificationPolicyFormalVerificationPolicy.lean/declarations/defaultformalverificationpolicy.md) | 26 | `declaration-track:2218ba4ea1673ff3d34a719cb8f64832bdad80f0a59de812dc9d1477e981fe1b` |
-| 3 | `theorem` | [formal_policy_requires_kernel_check](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FormalVerificationPolicyFormalVerificationPolicy.lean/declarations/formal-policy-requires-kernel-check.md) | 38 | `result-track:33f6cf0422ae4d85039282d119bad287b258419d8eca2956218dcffb5cab563f` |
-| 4 | `theorem` | [formal_policy_forbids_sorry](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FormalVerificationPolicyFormalVerificationPolicy.lean/declarations/formal-policy-forbids-sorry.md) | 42 | `result-track:832afe5ac00a88a3fe8dcd0ed46655b5c6e03e13f050cb8b6c620e42441614b6` |
-| 5 | `theorem` | [formal_policy_forbids_axiom](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FormalVerificationPolicyFormalVerificationPolicy.lean/declarations/formal-policy-forbids-axiom.md) | 46 | `result-track:101a5536b05fcf51249de342c05d42b363d58f7afe3be7229486cee24425a536` |
-| 6 | `theorem` | [formal_policy_allows_informal_heuristics](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FormalVerificationPolicyFormalVerificationPolicy.lean/declarations/formal-policy-allows-informal-heuristics.md) | 50 | `result-track:ffa8f8b6d8f2bd53fd674d5eacb607a6c7dc0de8caa4045be804eefbe35b3418` |
+| 1 | `structure` | [FormalVerificationPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FormalVerificationPolicyFormalVerificationPolicy.lean/declarations/formalverificationpolicy.md) | 16 | `declaration-track:1769e395f121d793980c2a4481aa088450c9d748d0309366f1938732962c7b76` |
+| 2 | `def` | [defaultFormalVerificationPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FormalVerificationPolicyFormalVerificationPolicy.lean/declarations/defaultformalverificationpolicy.md) | 26 | `declaration-track:2218ba4ea1673ff3d34a719cb8f64832bdad80f0a59de812dc9d1477e981fe1b` |
+| 3 | `theorem` | [formal_policy_requires_kernel_check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FormalVerificationPolicyFormalVerificationPolicy.lean/declarations/formal-policy-requires-kernel-check.md) | 38 | `result-track:33f6cf0422ae4d85039282d119bad287b258419d8eca2956218dcffb5cab563f` |
+| 4 | `theorem` | [formal_policy_forbids_sorry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FormalVerificationPolicyFormalVerificationPolicy.lean/declarations/formal-policy-forbids-sorry.md) | 42 | `result-track:832afe5ac00a88a3fe8dcd0ed46655b5c6e03e13f050cb8b6c620e42441614b6` |
+| 5 | `theorem` | [formal_policy_forbids_axiom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FormalVerificationPolicyFormalVerificationPolicy.lean/declarations/formal-policy-forbids-axiom.md) | 46 | `result-track:101a5536b05fcf51249de342c05d42b363d58f7afe3be7229486cee24425a536` |
+| 6 | `theorem` | [formal_policy_allows_informal_heuristics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FormalVerificationPolicyFormalVerificationPolicy.lean/declarations/formal-policy-allows-informal-heuristics.md) | 50 | `result-track:ffa8f8b6d8f2bd53fd674d5eacb607a6c7dc0de8caa4045be804eefbe35b3418` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

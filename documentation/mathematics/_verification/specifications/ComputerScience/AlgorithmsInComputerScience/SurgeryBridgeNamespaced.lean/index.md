@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryBridgeNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryBridgeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryBridgeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryBridgeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedConstructedBasePrism](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryBridgeNamespaced.lean/declarations/certifiedconstructedbaseprism.md) | 28 | `declaration-track:673e368d9aa41f69752fe6607f58da9e358467a1bfa842dbecbc20b6029eae81` |
-| 2 | `structure` | [PrismaticSurgeryWitness](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryBridgeNamespaced.lean/declarations/prismaticsurgerywitness.md) | 37 | `declaration-track:8942eaa4b091b87b668a71583e46a50127838c6b8406141cce3427852cc4162f` |
-| 3 | `theorem` | [targets_same_global_locus](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryBridgeNamespaced.lean/declarations/targets-same-global-locus.md) | 58 | `result-track:49f7051ba18baa30032c2faeae883d94af6860e119481167409249468b32bf2e` |
-| 4 | `theorem` | [fabric_boundary_compatible](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryBridgeNamespaced.lean/declarations/fabric-boundary-compatible.md) | 69 | `result-track:1d2bd85052f647d8d74f5ee6a56b755da47e31b468f27074f5f55f2fbdc58684` |
-| 5 | `theorem` | [realization_commutes](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryBridgeNamespaced.lean/declarations/realization-commutes.md) | 80 | `result-track:1bd0199feb3cf525a9b5bc15f6b60ce8beb011d11bc3f2f5a0b9803beec0d9a1` |
+| 1 | `structure` | [CertifiedConstructedBasePrism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryBridgeNamespaced.lean/declarations/certifiedconstructedbaseprism.md) | 28 | `declaration-track:673e368d9aa41f69752fe6607f58da9e358467a1bfa842dbecbc20b6029eae81` |
+| 2 | `structure` | [PrismaticSurgeryWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryBridgeNamespaced.lean/declarations/prismaticsurgerywitness.md) | 37 | `declaration-track:8942eaa4b091b87b668a71583e46a50127838c6b8406141cce3427852cc4162f` |
+| 3 | `theorem` | [targets_same_global_locus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryBridgeNamespaced.lean/declarations/targets-same-global-locus.md) | 58 | `result-track:49f7051ba18baa30032c2faeae883d94af6860e119481167409249468b32bf2e` |
+| 4 | `theorem` | [fabric_boundary_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryBridgeNamespaced.lean/declarations/fabric-boundary-compatible.md) | 69 | `result-track:1d2bd85052f647d8d74f5ee6a56b755da47e31b468f27074f5f55f2fbdc58684` |
+| 5 | `theorem` | [realization_commutes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryBridgeNamespaced.lean/declarations/realization-commutes.md) | 80 | `result-track:1bd0199feb3cf525a9b5bc15f6b60ce8beb011d11bc3f2f5a0b9803beec0d9a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

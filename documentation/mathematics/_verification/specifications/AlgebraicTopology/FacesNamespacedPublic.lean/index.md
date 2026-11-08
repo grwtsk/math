@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/FacesNamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/FacesNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FacesNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FacesNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [HigherFacesVanish](../../../../AlgebraicTopology/FacesNamespacedPublic.lean/declarations/higherfacesvanish.md) | 58 | `declaration-track:f18c1cdc3aa7db2dd78e0d1bfb4824f4686a56f9d5698f78351ffe75e0526b30` |
-| 2 | `theorem` | [comp_δ_eq_zero](../../../../AlgebraicTopology/FacesNamespacedPublic.lean/declarations/comp-eq-zero.md) | 64 | `result-track:1bc8ee9d5d1746bb6c67dc65648bb26634d30921b91e5e08386dbb101efcb468` |
-| 3 | `theorem` | [of_succ](../../../../AlgebraicTopology/FacesNamespacedPublic.lean/declarations/of-succ.md) | 71 | `result-track:d36c84407be2e872a2c72279d437dd7077eb2a63faaf38820d7deb5e25c3a267` |
-| 4 | `theorem` | [of_comp](../../../../AlgebraicTopology/FacesNamespacedPublic.lean/declarations/of-comp.md) | 74 | `result-track:e687b05e57a9b0f402eb1a826134681d85c01a0247ec45de4f5a6bdc2b6de209` |
-| 5 | `theorem` | [comp_Hσ_eq](../../../../AlgebraicTopology/FacesNamespacedPublic.lean/declarations/comp-h-eq.md) | 77 | `result-track:076d82aa5a7a41af91a3a6239e4079fab237042d57cfbe1b9ec4f86ac0268289` |
-| 6 | `theorem` | [comp_Hσ_eq_zero](../../../../AlgebraicTopology/FacesNamespacedPublic.lean/declarations/comp-h-eq-zero.md) | 146 | `result-track:c81220306919cbbbe1f97688daa067b0fb18c56765b449fedd622ab921937efd` |
-| 7 | `theorem` | [induction](../../../../AlgebraicTopology/FacesNamespacedPublic.lean/declarations/induction.md) | 167 | `result-track:03ce48b08b3b31e8d1340caacdbbb9431ee6c5774f738aaf406ac3f1daebe971` |
+| 1 | `def` | [HigherFacesVanish](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FacesNamespacedPublic.lean/declarations/higherfacesvanish.md) | 58 | `declaration-track:f18c1cdc3aa7db2dd78e0d1bfb4824f4686a56f9d5698f78351ffe75e0526b30` |
+| 2 | `theorem` | [comp_δ_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FacesNamespacedPublic.lean/declarations/comp-eq-zero.md) | 64 | `result-track:1bc8ee9d5d1746bb6c67dc65648bb26634d30921b91e5e08386dbb101efcb468` |
+| 3 | `theorem` | [of_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FacesNamespacedPublic.lean/declarations/of-succ.md) | 71 | `result-track:d36c84407be2e872a2c72279d437dd7077eb2a63faaf38820d7deb5e25c3a267` |
+| 4 | `theorem` | [of_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FacesNamespacedPublic.lean/declarations/of-comp.md) | 74 | `result-track:e687b05e57a9b0f402eb1a826134681d85c01a0247ec45de4f5a6bdc2b6de209` |
+| 5 | `theorem` | [comp_Hσ_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FacesNamespacedPublic.lean/declarations/comp-h-eq.md) | 77 | `result-track:076d82aa5a7a41af91a3a6239e4079fab237042d57cfbe1b9ec4f86ac0268289` |
+| 6 | `theorem` | [comp_Hσ_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FacesNamespacedPublic.lean/declarations/comp-h-eq-zero.md) | 146 | `result-track:c81220306919cbbbe1f97688daa067b0fb18c56765b449fedd622ab921937efd` |
+| 7 | `theorem` | [induction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FacesNamespacedPublic.lean/declarations/induction.md) | 167 | `result-track:03ce48b08b3b31e8d1340caacdbbb9431ee6c5774f738aaf406ac3f1daebe971` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

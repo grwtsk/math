@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ThetaIntegralTransport.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ThetaIntegralTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaIntegralTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaIntegralTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [scaledSampling_hasDerivAt](../../../../MeasureAndIntegration/ThetaIntegralTransport.lean/declarations/scaledsampling-hasderivat.md) | 14 | `result-track:721e7d56c537320d409ab4168762abe6930799c5de1be96048a28c4b3f2d7043` |
-| 2 | `theorem` | [scaledSampling_derivative_integrableOn](../../../../MeasureAndIntegration/ThetaIntegralTransport.lean/declarations/scaledsampling-derivative-integrableon.md) | 21 | `result-track:3f0c0cefbe39be7960aefc08f2baf88b227e9777508c3c03b4fab52ef53aaa96` |
-| 3 | `theorem` | [scaledSampling_integrableOn](../../../../MeasureAndIntegration/ThetaIntegralTransport.lean/declarations/scaledsampling-integrableon.md) | 44 | `result-track:3c2babb091d989f1f68659746d6713cba896a104804da0487de6d57db3fc9923` |
-| 4 | `theorem` | [scaledSampling_sawtooth_integrableOn](../../../../MeasureAndIntegration/ThetaIntegralTransport.lean/declarations/scaledsampling-sawtooth-integrableon.md) | 51 | `result-track:fdcd6a6e79f4b8d4f9a3f6e75c16956b38ad549597033f84606e2d4096ad459a` |
-| 5 | `theorem` | [thetaKernel_eq_padded_sum](../../../../MeasureAndIntegration/ThetaIntegralTransport.lean/declarations/thetakernel-eq-padded-sum.md) | 63 | `result-track:24583a67ccf8609810d2bd512649f5a97c280d090d60b37d6a5b27bef18f7386` |
-| 6 | `theorem` | [scaledSampling_endpoint_zero](../../../../MeasureAndIntegration/ThetaIntegralTransport.lean/declarations/scaledsampling-endpoint-zero.md) | 86 | `result-track:5ed1323c545dfb285467090d71a343ade0b6578f3c6335861748a439eb702f31` |
-| 7 | `theorem` | [thetaKernel_sub_integral_eq](../../../../MeasureAndIntegration/ThetaIntegralTransport.lean/declarations/thetakernel-sub-integral-eq.md) | 96 | `result-track:aaa794d281bc39fe3e92ee8f3ae75773f8669ca18fdd9105355248ea110c4f89` |
-| 8 | `theorem` | [thetaKernel_sub_integral_abs_le](../../../../MeasureAndIntegration/ThetaIntegralTransport.lean/declarations/thetakernel-sub-integral-abs-le.md) | 123 | `result-track:a386807bc44cd3f07526ea9363ae4ae4f261bed9ed763ae08f2caf821cd3a64d` |
+| 1 | `theorem` | [scaledSampling_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaIntegralTransport.lean/declarations/scaledsampling-hasderivat.md) | 14 | `result-track:721e7d56c537320d409ab4168762abe6930799c5de1be96048a28c4b3f2d7043` |
+| 2 | `theorem` | [scaledSampling_derivative_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaIntegralTransport.lean/declarations/scaledsampling-derivative-integrableon.md) | 21 | `result-track:3f0c0cefbe39be7960aefc08f2baf88b227e9777508c3c03b4fab52ef53aaa96` |
+| 3 | `theorem` | [scaledSampling_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaIntegralTransport.lean/declarations/scaledsampling-integrableon.md) | 44 | `result-track:3c2babb091d989f1f68659746d6713cba896a104804da0487de6d57db3fc9923` |
+| 4 | `theorem` | [scaledSampling_sawtooth_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaIntegralTransport.lean/declarations/scaledsampling-sawtooth-integrableon.md) | 51 | `result-track:fdcd6a6e79f4b8d4f9a3f6e75c16956b38ad549597033f84606e2d4096ad459a` |
+| 5 | `theorem` | [thetaKernel_eq_padded_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaIntegralTransport.lean/declarations/thetakernel-eq-padded-sum.md) | 63 | `result-track:24583a67ccf8609810d2bd512649f5a97c280d090d60b37d6a5b27bef18f7386` |
+| 6 | `theorem` | [scaledSampling_endpoint_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaIntegralTransport.lean/declarations/scaledsampling-endpoint-zero.md) | 86 | `result-track:5ed1323c545dfb285467090d71a343ade0b6578f3c6335861748a439eb702f31` |
+| 7 | `theorem` | [thetaKernel_sub_integral_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaIntegralTransport.lean/declarations/thetakernel-sub-integral-eq.md) | 96 | `result-track:aaa794d281bc39fe3e92ee8f3ae75773f8669ca18fdd9105355248ea110c4f89` |
+| 8 | `theorem` | [thetaKernel_sub_integral_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaIntegralTransport.lean/declarations/thetakernel-sub-integral-abs-le.md) | 123 | `result-track:a386807bc44cd3f07526ea9363ae4ae4f261bed9ed763ae08f2caf821cd3a64d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/OrderedSquare.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/OrderedSquare.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/OrderedSquare.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/OrderedSquare.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finite_ordered_energy](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/OrderedSquare.lean/declarations/finite-ordered-energy.md) | 17 | `result-track:8540c9191d9ad1880fcfd474cde9325c49fac15571fd97bdfa1cd6ab398baca4` |
+| 1 | `theorem` | [finite_ordered_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/OrderedSquare.lean/declarations/finite-ordered-energy.md) | 17 | `result-track:8540c9191d9ad1880fcfd474cde9325c49fac15571fd97bdfa1cd6ab398baca4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

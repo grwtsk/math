@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PathCategoryMorphismPropertyNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PathCategoryMorphismPropertyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PathCategoryMorphismPropertyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PathCategoryMorphismPropertyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [morphismProperty_eq_top](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PathCategoryMorphismPropertyNamespaced.lean/declarations/morphismproperty-eq-top-source-edition-2.md) | 33 | `result-track:d0fb2e5980bb883db14a16f5d43e24ee3955cc21a448888b4e359de67c02f82c` |
-| 2 | `lemma` | [morphismProperty_eq_top'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PathCategoryMorphismPropertyNamespaced.lean/declarations/morphismproperty-eq-top.md) | 44 | `result-track:0c4d13000cc0c19b81704e5270eb24180ec161503f9a53aa86b7b6cea7c2d971` |
-| 3 | `lemma` | [morphismProperty_eq_top_of_isMultiplicative](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PathCategoryMorphismPropertyNamespaced.lean/declarations/morphismproperty-eq-top-of-ismultiplicative.md) | 54 | `result-track:87058f1b966c76564fe4ffcf1d0125ca9435505a936311b5f5c714ba72d6c444` |
-| 4 | `def` | [liftNatTrans](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PathCategoryMorphismPropertyNamespaced.lean/declarations/liftnattrans.md) | 66 | `declaration-track:ac51ded8f283f3f541c149374c1b84fd96da9ddf8cd05216ce9b052ac72b0951` |
-| 5 | `def` | [liftNatIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PathCategoryMorphismPropertyNamespaced.lean/declarations/liftnatiso.md) | 78 | `declaration-track:0e414171bd783f8d814baae703b168fc5106a888ca99deb30969b59121fe5bd4` |
+| 1 | `lemma` | [morphismProperty_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PathCategoryMorphismPropertyNamespaced.lean/declarations/morphismproperty-eq-top-source-edition-2.md) | 33 | `result-track:d0fb2e5980bb883db14a16f5d43e24ee3955cc21a448888b4e359de67c02f82c` |
+| 2 | `lemma` | [morphismProperty_eq_top'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PathCategoryMorphismPropertyNamespaced.lean/declarations/morphismproperty-eq-top.md) | 44 | `result-track:0c4d13000cc0c19b81704e5270eb24180ec161503f9a53aa86b7b6cea7c2d971` |
+| 3 | `lemma` | [morphismProperty_eq_top_of_isMultiplicative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PathCategoryMorphismPropertyNamespaced.lean/declarations/morphismproperty-eq-top-of-ismultiplicative.md) | 54 | `result-track:87058f1b966c76564fe4ffcf1d0125ca9435505a936311b5f5c714ba72d6c444` |
+| 4 | `def` | [liftNatTrans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PathCategoryMorphismPropertyNamespaced.lean/declarations/liftnattrans.md) | 66 | `declaration-track:ac51ded8f283f3f541c149374c1b84fd96da9ddf8cd05216ce9b052ac72b0951` |
+| 5 | `def` | [liftNatIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PathCategoryMorphismPropertyNamespaced.lean/declarations/liftnatiso.md) | 78 | `declaration-track:0e414171bd783f8d814baae703b168fc5106a888ca99deb30969b59121fe5bd4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

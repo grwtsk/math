@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/RingInverseOrderPublic.lean/index.md) · [Full source](../../../../SpecialFunctions/RingInverseOrderPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RingInverseOrderPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RingInverseOrderPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [convexOn_ringInverse](../../../../SpecialFunctions/RingInverseOrderPublic.lean/declarations/convexon-ringinverse.md) | 35 | `result-track:01b32978005984af5224e65f1f337d90a6d58fc760e3db53894197d2d10cdca6` |
-| 2 | `lemma` | [convexOn_ringInverse_algebraMap_add](../../../../SpecialFunctions/RingInverseOrderPublic.lean/declarations/convexon-ringinverse-algebramap-add.md) | 106 | `result-track:f7e0b31a0d295ca39808425d40b17736bf2bfae2e9ecdcbcbadd03ee470cf41c` |
+| 1 | `lemma` | [convexOn_ringInverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RingInverseOrderPublic.lean/declarations/convexon-ringinverse.md) | 35 | `result-track:01b32978005984af5224e65f1f337d90a6d58fc760e3db53894197d2d10cdca6` |
+| 2 | `lemma` | [convexOn_ringInverse_algebraMap_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RingInverseOrderPublic.lean/declarations/convexon-ringinverse-algebramap-add.md) | 106 | `result-track:f7e0b31a0d295ca39808425d40b17736bf2bfae2e9ecdcbcbadd03ee470cf41c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

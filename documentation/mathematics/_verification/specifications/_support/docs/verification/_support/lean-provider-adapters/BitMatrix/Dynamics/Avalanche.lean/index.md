@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../../../../../_support/docs/verification/_support/lean-provider-adapters/BitMatrix/Dynamics/Avalanche.lean/index.md) · [Full source](../../../../../../../../../../_support/docs/verification/_support/lean-provider-adapters/BitMatrix/Dynamics/Avalanche.lean/source.md)
+[Module and every result](../../../../../../../../../../_support/provider-documentation/lean-provider-adapters/BitMatrix/Dynamics/Avalanche.lean/index.md) · [Full source](../../../../../../../../../../_support/provider-documentation/lean-provider-adapters/BitMatrix/Dynamics/Avalanche.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,14 +46,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Xor Vector Algebra](../../../../../../../../../../Combinatorics/XorVectorAlgebra.lean/index.md) — import line 1; pinned internal source present.
-- [Boolean Derivatives And Local Quantizer](../../../../../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanDerivativesAndLocalQuantizer.lean/index.md) — import line 2; pinned internal source present.
-- [Differential Counts And Parity](../../../../../../../../../../Combinatorics/DifferentialCountsAndParity.lean/index.md) — import line 3; pinned internal source present.
-- [Marginal Balance Scores](../../../../../../../../../../ProbabilityTheoryAndStochasticProcesses/MarginalBalanceScores.lean/index.md) — import line 4; pinned internal source present.
-- [Hamming Propagation Histograms](../../../../../../../../../../ProbabilityTheoryAndStochasticProcesses/HammingPropagationHistograms.lean/index.md) — import line 5; pinned internal source present.
-- [Fixed Edge Binomial Mass Formulas](../../../../../../../../../../ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/index.md) — import line 6; pinned internal source present.
-- [Finite Boolean Derivative And Field Data Identity Avalanche Counterexample](../../../../../../../../../../Combinatorics/FiniteBooleanDerivativeAndFieldDataIdentityAvalancheCounterexample.lean/index.md) — import line 7; pinned internal source present.
-- [Output Flip Sign Correlation](../../../../../../../../../../ProbabilityTheoryAndStochasticProcesses/OutputFlipSignCorrelation.lean/index.md) — import line 8; pinned internal source present.
+- [Xor Vector Algebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XorVectorAlgebra.lean/index.md) — import line 1; pinned internal source present.
+- [Boolean Derivatives And Local Quantizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanDerivativesAndLocalQuantizer.lean/index.md) — import line 2; pinned internal source present.
+- [Differential Counts And Parity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DifferentialCountsAndParity.lean/index.md) — import line 3; pinned internal source present.
+- [Marginal Balance Scores](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/MarginalBalanceScores.lean/index.md) — import line 4; pinned internal source present.
+- [Hamming Propagation Histograms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/HammingPropagationHistograms.lean/index.md) — import line 5; pinned internal source present.
+- [Fixed Edge Binomial Mass Formulas](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/index.md) — import line 6; pinned internal source present.
+- [Finite Boolean Derivative And Field Data Identity Avalanche Counterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteBooleanDerivativeAndFieldDataIdentityAvalancheCounterexample.lean/index.md) — import line 7; pinned internal source present.
+- [Output Flip Sign Correlation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/OutputFlipSignCorrelation.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

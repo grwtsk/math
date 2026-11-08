@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [QuasiErgodic.ae_eq_const_of_ae_eq_comp_of_ae_range₀](../../../../DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/declarations/quasiergodic-ae-eq-const-of-ae-eq-comp-of-ae-range.md) | 35 | `result-track:45b47304d426919e399f2adbe7c22bfe16d495ae336ed354947d67b3c8a99fdb` |
-| 2 | `theorem` | [PreErgodic.ae_eq_const_of_ae_eq_comp](../../../../DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/declarations/preergodic-ae-eq-const-of-ae-eq-comp.md) | 54 | `result-track:698486c24a40cbfa2742c632f58bbd3ed019c52a27285e3e7573d99e1f55b5cc` |
-| 3 | `theorem` | [QuasiErgodic.ae_eq_const_of_ae_eq_comp₀](../../../../DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/declarations/quasiergodic-ae-eq-const-of-ae-eq-comp.md) | 63 | `result-track:e45539248ee6f15ac86138764af88363ded946b2f151731c0d0306cbd38891a0` |
-| 4 | `theorem` | [Ergodic.ae_eq_const_of_ae_eq_comp₀](../../../../DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/declarations/ergodic-ae-eq-const-of-ae-eq-comp.md) | 71 | `result-track:c05a180a3fc1a199df3e9956665d9a151079577c36c161437db95d8e5b104102` |
-| 5 | `theorem` | [ae_eq_const_of_ae_eq_comp_ae](../../../../DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/declarations/ae-eq-const-of-ae-eq-comp-ae-source-edition-2.md) | 85 | `result-track:ddc3565a4016184b186d8c8a01501beda5c429a080bc5c733c742cd3d8a6512b` |
-| 6 | `theorem` | [eq_const_of_compQuasiMeasurePreserving_eq](../../../../DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/declarations/eq-const-of-compquasimeasurepreserving-eq.md) | 92 | `result-track:b11ba2f6b60568053c74475a078f9e49fac71d48dc35a6b4ab8d684c2797ae20` |
-| 7 | `theorem` | [ae_eq_const_of_ae_eq_comp_ae](../../../../DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/declarations/ae-eq-const-of-ae-eq-comp-ae.md) | 107 | `result-track:7b536769ff2c253332c08183d43b01817a38baf47e0152f12cf7277759d9f2f0` |
-| 8 | `theorem` | [eq_const_of_compMeasurePreserving_eq](../../../../DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/declarations/eq-const-of-compmeasurepreserving-eq.md) | 111 | `result-track:b907f661f360f08cd2bd2a068847fca52fab6954528fe8e07d7022579e5fe57c` |
+| 1 | `theorem` | [QuasiErgodic.ae_eq_const_of_ae_eq_comp_of_ae_range₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/declarations/quasiergodic-ae-eq-const-of-ae-eq-comp-of-ae-range.md) | 35 | `result-track:45b47304d426919e399f2adbe7c22bfe16d495ae336ed354947d67b3c8a99fdb` |
+| 2 | `theorem` | [PreErgodic.ae_eq_const_of_ae_eq_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/declarations/preergodic-ae-eq-const-of-ae-eq-comp.md) | 54 | `result-track:698486c24a40cbfa2742c632f58bbd3ed019c52a27285e3e7573d99e1f55b5cc` |
+| 3 | `theorem` | [QuasiErgodic.ae_eq_const_of_ae_eq_comp₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/declarations/quasiergodic-ae-eq-const-of-ae-eq-comp.md) | 63 | `result-track:e45539248ee6f15ac86138764af88363ded946b2f151731c0d0306cbd38891a0` |
+| 4 | `theorem` | [Ergodic.ae_eq_const_of_ae_eq_comp₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/declarations/ergodic-ae-eq-const-of-ae-eq-comp.md) | 71 | `result-track:c05a180a3fc1a199df3e9956665d9a151079577c36c161437db95d8e5b104102` |
+| 5 | `theorem` | [ae_eq_const_of_ae_eq_comp_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/declarations/ae-eq-const-of-ae-eq-comp-ae-source-edition-2.md) | 85 | `result-track:ddc3565a4016184b186d8c8a01501beda5c429a080bc5c733c742cd3d8a6512b` |
+| 6 | `theorem` | [eq_const_of_compQuasiMeasurePreserving_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/declarations/eq-const-of-compquasimeasurepreserving-eq.md) | 92 | `result-track:b11ba2f6b60568053c74475a078f9e49fac71d48dc35a6b4ab8d684c2797ae20` |
+| 7 | `theorem` | [ae_eq_const_of_ae_eq_comp_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/declarations/ae-eq-const-of-ae-eq-comp-ae.md) | 107 | `result-track:7b536769ff2c253332c08183d43b01817a38baf47e0152f12cf7277759d9f2f0` |
+| 8 | `theorem` | [eq_const_of_compMeasurePreserving_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FunctionNamespaced.lean/declarations/eq-const-of-compmeasurepreserving-eq.md) | 111 | `result-track:b907f661f360f08cd2bd2a068847fca52fab6954528fe8e07d7022579e5fe57c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

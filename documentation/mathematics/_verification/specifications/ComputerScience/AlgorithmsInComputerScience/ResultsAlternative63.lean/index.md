@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ResultsAlternative63.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ResultsAlternative63.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResultsAlternative63.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResultsAlternative63.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [NamedBinding](../../../../../ComputerScience/AlgorithmsInComputerScience/ResultsAlternative63.lean/declarations/namedbinding.md) | 13 | `declaration-track:4545d5af629b5287219c790349b6b5d22081e92231e176a6a870f8fa7330e88f` |
-| 2 | `structure` | [SourceContext](../../../../../ComputerScience/AlgorithmsInComputerScience/ResultsAlternative63.lean/declarations/sourcecontext.md) | 18 | `declaration-track:434109b57d30bde18adc6b8d7421c805c3fcdfae6c41981c614b046fdb67f9c4` |
+| 1 | `structure` | [NamedBinding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResultsAlternative63.lean/declarations/namedbinding.md) | 13 | `declaration-track:4545d5af629b5287219c790349b6b5d22081e92231e176a6a870f8fa7330e88f` |
+| 2 | `structure` | [SourceContext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResultsAlternative63.lean/declarations/sourcecontext.md) | 18 | `declaration-track:434109b57d30bde18adc6b8d7421c805c3fcdfae6c41981c614b046fdb67f9c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

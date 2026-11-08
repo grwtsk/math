@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedBasicCondensedSet.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedBasicCondensedSet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedBasicCondensedSet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedBasicCondensedSet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Condensed](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedBasicCondensedSet.lean/declarations/condensed.md) | 42 | `declaration-track:7c7bba2e34905f8ee12b9fb2bd6a5a8994e4e6bc12f38f9d0a67f892f4631821` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedBasicCondensedSet.lean/declarations/instance.md) | 45 | `declaration-track:3fc9a6015345f2d0462c4deedfb96f9d91137ff61a4ce3cda1b98595827ef994` |
-| 3 | `abbrev` | [CondensedSet](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedBasicCondensedSet.lean/declarations/condensedset.md) | 52 | `declaration-track:25971200ff7198748255d2569b09d84ab10e3502ddc884af2075260dc1a5cac9` |
-| 4 | `lemma` | [id_val](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedBasicCondensedSet.lean/declarations/id-val.md) | 59 | `result-track:06d095c9893b5d1e4ab19fe767af8038dd0229d6b7311d8d27d1975f7ce61881` |
-| 5 | `lemma` | [comp_val](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedBasicCondensedSet.lean/declarations/comp-val.md) | 62 | `result-track:abfd74b87fc5ff7d553b41020392592a7fb7b2e87d30c4c4e021d24248eb49f3` |
-| 6 | `lemma` | [hom_ext](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedBasicCondensedSet.lean/declarations/hom-ext.md) | 66 | `result-track:af121128000923135654d11dffaf959c27cb6098de3b3670e459d1b265cbee39` |
-| 7 | `lemma` | [hom_naturality_apply](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedBasicCondensedSet.lean/declarations/hom-naturality-apply.md) | 80 | `result-track:988bdba90cdc160aa3757e7184f2973a3b31e18e1fc6a71aed6059a982621bff` |
+| 1 | `def` | [Condensed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedBasicCondensedSet.lean/declarations/condensed.md) | 42 | `declaration-track:7c7bba2e34905f8ee12b9fb2bd6a5a8994e4e6bc12f38f9d0a67f892f4631821` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedBasicCondensedSet.lean/declarations/instance.md) | 45 | `declaration-track:3fc9a6015345f2d0462c4deedfb96f9d91137ff61a4ce3cda1b98595827ef994` |
+| 3 | `abbrev` | [CondensedSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedBasicCondensedSet.lean/declarations/condensedset.md) | 52 | `declaration-track:25971200ff7198748255d2569b09d84ab10e3502ddc884af2075260dc1a5cac9` |
+| 4 | `lemma` | [id_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedBasicCondensedSet.lean/declarations/id-val.md) | 59 | `result-track:06d095c9893b5d1e4ab19fe767af8038dd0229d6b7311d8d27d1975f7ce61881` |
+| 5 | `lemma` | [comp_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedBasicCondensedSet.lean/declarations/comp-val.md) | 62 | `result-track:abfd74b87fc5ff7d553b41020392592a7fb7b2e87d30c4c4e021d24248eb49f3` |
+| 6 | `lemma` | [hom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedBasicCondensedSet.lean/declarations/hom-ext.md) | 66 | `result-track:af121128000923135654d11dffaf959c27cb6098de3b3670e459d1b265cbee39` |
+| 7 | `lemma` | [hom_naturality_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedBasicCondensedSet.lean/declarations/hom-naturality-apply.md) | 80 | `result-track:988bdba90cdc160aa3757e7184f2973a3b31e18e1fc6a71aed6059a982621bff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

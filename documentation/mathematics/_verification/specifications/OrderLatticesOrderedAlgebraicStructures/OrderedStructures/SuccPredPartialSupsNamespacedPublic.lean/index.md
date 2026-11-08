@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredPartialSupsNamespacedPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredPartialSupsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredPartialSupsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredPartialSupsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [partialSups_add_one](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredPartialSupsNamespacedPublic.lean/declarations/partialsups-add-one-source-edition-2.md) | 32 | `result-track:aad12fd18ea355ec7eb6e0a7432e0d75d476f71cc0677971b8716d57f60a4075` |
-| 2 | `lemma` | [partialSups_succ'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredPartialSupsNamespacedPublic.lean/declarations/partialsups-succ.md) | 37 | `result-track:989442e41b474aa36651279d184c4a336625ab3923298ec9f3adff6ca992cf2f` |
-| 3 | `lemma` | [partialSups_add_one'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredPartialSupsNamespacedPublic.lean/declarations/partialsups-add-one.md) | 46 | `result-track:65988f1a380cf7354db148d65df3f2a7bb27f7bc9f7643d613d0b06ca78c0d34` |
+| 1 | `lemma` | [partialSups_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredPartialSupsNamespacedPublic.lean/declarations/partialsups-add-one-source-edition-2.md) | 32 | `result-track:aad12fd18ea355ec7eb6e0a7432e0d75d476f71cc0677971b8716d57f60a4075` |
+| 2 | `lemma` | [partialSups_succ'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredPartialSupsNamespacedPublic.lean/declarations/partialsups-succ.md) | 37 | `result-track:989442e41b474aa36651279d184c4a336625ab3923298ec9f3adff6ca992cf2f` |
+| 3 | `lemma` | [partialSups_add_one'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredPartialSupsNamespacedPublic.lean/declarations/partialsups-add-one.md) | 46 | `result-track:65988f1a380cf7354db148d65df3f2a7bb27f7bc9f7643d613d0b06ca78c0d34` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualXiMellinAtOneNamespacedEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualXiMellinAtOneNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiMellinAtOneNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiMellinAtOneNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualXiComplexMellinTailSeven_at_one_eq_physical](../../../../MeasureAndIntegration/SourceActualXiMellinAtOneNamespacedEdition1.lean/declarations/actualxicomplexmellintailseven-at-one-eq-physical.md) | 32 | `result-track:03c0c309c4f2bb4243a0126f0892f9b31519a5d71015aa7923c02fbc2c9952a9` |
-| 2 | `theorem` | [actualXiComplexMellinTailSeven_tendsto_one](../../../../MeasureAndIntegration/SourceActualXiMellinAtOneNamespacedEdition1.lean/declarations/actualxicomplexmellintailseven-tendsto-one.md) | 43 | `result-track:d6e11cc144ffbe9adf3383f7973ca9f265da32231a09c0621f8ea0aa755443d5` |
-| 3 | `theorem` | [actualXiInverseSquarePhysical_integral_eq_poleValue](../../../../MeasureAndIntegration/SourceActualXiMellinAtOneNamespacedEdition1.lean/declarations/actualxiinversesquarephysical-integral-eq-polevalue.md) | 87 | `result-track:65929e435ad2580cf40e8ed64382c366c362e39d7977f9da568f5bd0fbd15931` |
+| 1 | `theorem` | [actualXiComplexMellinTailSeven_at_one_eq_physical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiMellinAtOneNamespacedEdition1.lean/declarations/actualxicomplexmellintailseven-at-one-eq-physical.md) | 32 | `result-track:03c0c309c4f2bb4243a0126f0892f9b31519a5d71015aa7923c02fbc2c9952a9` |
+| 2 | `theorem` | [actualXiComplexMellinTailSeven_tendsto_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiMellinAtOneNamespacedEdition1.lean/declarations/actualxicomplexmellintailseven-tendsto-one.md) | 43 | `result-track:d6e11cc144ffbe9adf3383f7973ca9f265da32231a09c0621f8ea0aa755443d5` |
+| 3 | `theorem` | [actualXiInverseSquarePhysical_integral_eq_poleValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiMellinAtOneNamespacedEdition1.lean/declarations/actualxiinversesquarephysical-integral-eq-polevalue.md) | 87 | `result-track:65929e435ad2580cf40e8ed64382c366c362e39d7977f9da568f5bd0fbd15931` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

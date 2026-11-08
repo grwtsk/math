@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/BigZariskiNamespaced.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/BigZariskiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/BigZariskiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/BigZariskiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [zariskiPretopology](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/BigZariskiNamespaced.lean/declarations/zariskipretopology.md) | 46 | `declaration-track:4b444d67ba8906aa0c76742d13962eafd8d3479fc1514251e21d99d18f57e34c` |
-| 2 | `abbrev` | [zariskiTopology](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/BigZariskiNamespaced.lean/declarations/zariskitopology.md) | 50 | `declaration-track:b3eb0e0d7491e5319a0e453bf92c88d9942468391deff01d5bab7cae66b3a478` |
-| 3 | `instance` | [subcanonical_zariskiTopology](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/BigZariskiNamespaced.lean/declarations/subcanonical-zariskitopology.md) | 53 | `declaration-track:0756114298051704d41c506e4dd811946226c3e6924962df93ce34a7fc48ff29` |
+| 1 | `def` | [zariskiPretopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/BigZariskiNamespaced.lean/declarations/zariskipretopology.md) | 46 | `declaration-track:4b444d67ba8906aa0c76742d13962eafd8d3479fc1514251e21d99d18f57e34c` |
+| 2 | `abbrev` | [zariskiTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/BigZariskiNamespaced.lean/declarations/zariskitopology.md) | 50 | `declaration-track:b3eb0e0d7491e5319a0e453bf92c88d9942468391deff01d5bab7cae66b3a478` |
+| 3 | `instance` | [subcanonical_zariskiTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/BigZariskiNamespaced.lean/declarations/subcanonical-zariskitopology.md) | 53 | `declaration-track:0756114298051704d41c506e4dd811946226c3e6924962df93ce34a7fc48ff29` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

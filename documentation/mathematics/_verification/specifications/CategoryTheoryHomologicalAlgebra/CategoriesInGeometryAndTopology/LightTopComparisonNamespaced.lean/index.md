@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightTopComparisonNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightTopComparisonNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightTopComparisonNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightTopComparisonNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [TopCat.toLightCondSet](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightTopComparisonNamespaced.lean/declarations/topcat-tolightcondset.md) | 33 | `declaration-track:e6d1ebdfd72aeb9854f2408b39339bed261ffc0615027306ed02cddb03594d08` |
-| 2 | `abbrev` | [topCatToLightCondSet](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightTopComparisonNamespaced.lean/declarations/topcattolightcondset.md) | 39 | `declaration-track:f284c5f9b338992425f80a9e07251cc01e8ed112e86acc3206899d731974396f` |
+| 1 | `abbrev` | [TopCat.toLightCondSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightTopComparisonNamespaced.lean/declarations/topcat-tolightcondset.md) | 33 | `declaration-track:e6d1ebdfd72aeb9854f2408b39339bed261ffc0615027306ed02cddb03594d08` |
+| 2 | `abbrev` | [topCatToLightCondSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightTopComparisonNamespaced.lean/declarations/topcattolightcondset.md) | 39 | `declaration-track:f284c5f9b338992425f80a9e07251cc01e8ed112e86acc3206899d731974396f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PrimeDefsNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PrimeDefsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeDefsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeDefsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimeSpectrum](../../../../CommutativeAlgebra/PrimeDefsNamespaced.lean/declarations/primespectrum.md) | 38 | `declaration-track:d83f75fc5720ff7ae4e7d493f9c428f76207127e61851a9dfadfdc7f3ed61aef` |
+| 1 | `structure` | [PrimeSpectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeDefsNamespaced.lean/declarations/primespectrum.md) | 38 | `declaration-track:d83f75fc5720ff7ae4e7d493f9c428f76207127e61851a9dfadfdc7f3ed61aef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BinaryMatrixFiniteCounts.lean/index.md) · [Full source](../../../../Combinatorics/BinaryMatrixFiniteCounts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixFiniteCounts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixFiniteCounts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Carrier.Bit` — import line 19; external provider; requires a separately pinned dependency.
-- [Finite Binary Matrix Carrier](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBinaryMatrixCarrier.lean/index.md) — import line 20; pinned internal source present.
+- [Finite Binary Matrix Carrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBinaryMatrixCarrier.lean/index.md) — import line 20; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cellCount](../../../../Combinatorics/BinaryMatrixFiniteCounts.lean/declarations/cellcount.md) | 38 | `declaration-track:4302029304f35026cc7b30fb8735c43f77b8558b841c91fb5b95b18a1eb7376c` |
-| 2 | `def` | [IsCheckerboardPattern](../../../../Combinatorics/BinaryMatrixFiniteCounts.lean/declarations/ischeckerboardpattern.md) | 41 | `declaration-track:028c18969bbe3fcddacc67c71a98c2218fa70808211dadd0d525cdb8f976a100` |
-| 3 | `def` | [actualCount](../../../../Combinatorics/BinaryMatrixFiniteCounts.lean/declarations/actualcount.md) | 44 | `declaration-track:0db100bc050f1936c87df0e150e1c8ce988a93b7f8b8c193ceb19da7ad73c166` |
-| 4 | `def` | [countOnes](../../../../Combinatorics/BinaryMatrixFiniteCounts.lean/declarations/countones.md) | 47 | `declaration-track:1ff46abcb0ae73b5e148f7d52f9b15f650c3c61e082651703efcc9e26d1092df` |
-| 5 | `def` | [countZeros](../../../../Combinatorics/BinaryMatrixFiniteCounts.lean/declarations/countzeros.md) | 50 | `declaration-track:03d36fdc239726f77bfb95de8def579939c22ec65094815020be23abee544bf0` |
-| 6 | `theorem` | [bit_eq_zero_or_one](../../../../Combinatorics/BinaryMatrixFiniteCounts.lean/declarations/bit-eq-zero-or-one.md) | 53 | `result-track:5d26496e6ce61b316ee651e89cb6941211df00d043b0963106d0ae5304089524` |
-| 7 | `theorem` | [bit_eq_zero_iff_not_eq_one](../../../../Combinatorics/BinaryMatrixFiniteCounts.lean/declarations/bit-eq-zero-iff-not-eq-one.md) | 61 | `result-track:13090d4d4bc9291b1755420ddc916facab06f959d111083e094dad49905aa72f` |
-| 8 | `theorem` | [countOnes_add_countZeros](../../../../Combinatorics/BinaryMatrixFiniteCounts.lean/declarations/countones-add-countzeros.md) | 72 | `result-track:fdafe928b9312cb139253acac758b3b6cddc34833dfa15e819bfa97a79e34bfb` |
+| 1 | `def` | [cellCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixFiniteCounts.lean/declarations/cellcount.md) | 38 | `declaration-track:4302029304f35026cc7b30fb8735c43f77b8558b841c91fb5b95b18a1eb7376c` |
+| 2 | `def` | [IsCheckerboardPattern](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixFiniteCounts.lean/declarations/ischeckerboardpattern.md) | 41 | `declaration-track:028c18969bbe3fcddacc67c71a98c2218fa70808211dadd0d525cdb8f976a100` |
+| 3 | `def` | [actualCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixFiniteCounts.lean/declarations/actualcount.md) | 44 | `declaration-track:0db100bc050f1936c87df0e150e1c8ce988a93b7f8b8c193ceb19da7ad73c166` |
+| 4 | `def` | [countOnes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixFiniteCounts.lean/declarations/countones.md) | 47 | `declaration-track:1ff46abcb0ae73b5e148f7d52f9b15f650c3c61e082651703efcc9e26d1092df` |
+| 5 | `def` | [countZeros](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixFiniteCounts.lean/declarations/countzeros.md) | 50 | `declaration-track:03d36fdc239726f77bfb95de8def579939c22ec65094815020be23abee544bf0` |
+| 6 | `theorem` | [bit_eq_zero_or_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixFiniteCounts.lean/declarations/bit-eq-zero-or-one.md) | 53 | `result-track:5d26496e6ce61b316ee651e89cb6941211df00d043b0963106d0ae5304089524` |
+| 7 | `theorem` | [bit_eq_zero_iff_not_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixFiniteCounts.lean/declarations/bit-eq-zero-iff-not-eq-one.md) | 61 | `result-track:13090d4d4bc9291b1755420ddc916facab06f959d111083e094dad49905aa72f` |
+| 8 | `theorem` | [countOnes_add_countZeros](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixFiniteCounts.lean/declarations/countones-add-countzeros.md) | 72 | `result-track:fdafe928b9312cb139253acac758b3b6cddc34833dfa15e819bfa97a79e34bfb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

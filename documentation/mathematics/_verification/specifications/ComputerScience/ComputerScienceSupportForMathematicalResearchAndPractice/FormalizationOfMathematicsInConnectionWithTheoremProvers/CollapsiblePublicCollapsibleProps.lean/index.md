@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsiblePublicCollapsibleProps.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsiblePublicCollapsibleProps.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsiblePublicCollapsibleProps.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsiblePublicCollapsibleProps.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CollapsibleProps](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsiblePublicCollapsibleProps.lean/declarations/collapsibleprops.md) | 38 | `declaration-track:2b14452ae55559fc1c9c99c4a2b88725c83a5cdf1d9fc8caa748061c2f9f1574` |
-| 2 | `def` | [Collapsible](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsiblePublicCollapsibleProps.lean/declarations/collapsible.md) | 53 | `declaration-track:1469b1294e9443b301799ec7fa37bea2dcae7713086f5a1b4d26bcf1518df8aa` |
-| 3 | `def` | [collapsible](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsiblePublicCollapsibleProps.lean/declarations/collapsible-source-edition-2.md) | 98 | `declaration-track:8bffc42ed0cff6687cd8ef16c7b46a12fbfa0efbbd753726ee1083425e85f66c` |
+| 1 | `structure` | [CollapsibleProps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsiblePublicCollapsibleProps.lean/declarations/collapsibleprops.md) | 38 | `declaration-track:2b14452ae55559fc1c9c99c4a2b88725c83a5cdf1d9fc8caa748061c2f9f1574` |
+| 2 | `def` | [Collapsible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsiblePublicCollapsibleProps.lean/declarations/collapsible.md) | 53 | `declaration-track:1469b1294e9443b301799ec7fa37bea2dcae7713086f5a1b4d26bcf1518df8aa` |
+| 3 | `def` | [collapsible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsiblePublicCollapsibleProps.lean/declarations/collapsible-source-edition-2.md) | 98 | `declaration-track:8bffc42ed0cff6687cd8ef16c7b46a12fbfa0efbbd753726ee1083425e85f66c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

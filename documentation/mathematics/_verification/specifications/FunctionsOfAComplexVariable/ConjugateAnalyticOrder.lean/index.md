@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ConjugateAnalyticOrder.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ConjugateAnalyticOrder.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ConjugateAnalyticOrder.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ConjugateAnalyticOrder.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [deriv_conjugation](../../../../FunctionsOfAComplexVariable/ConjugateAnalyticOrder.lean/declarations/deriv-conjugation.md) | 24 | `result-track:ba6b4489b46b1a35ddec2bd9bbf4e4c9b5e04fdba6c474950870ec93d6140dd2` |
-| 2 | `theorem` | [iteratedDeriv_conjugation](../../../../FunctionsOfAComplexVariable/ConjugateAnalyticOrder.lean/declarations/iteratedderiv-conjugation.md) | 37 | `result-track:b773a60ccb6072b757ca4e9e293cfa2c6e836812fad3a59fa79060f4d5c4fce4` |
-| 3 | `theorem` | [finite_order_conjugation](../../../../FunctionsOfAComplexVariable/ConjugateAnalyticOrder.lean/declarations/finite-order-conjugation.md) | 47 | `result-track:d8a6fc3ce9e5b7a4b94987ae2b46cd2cf8ab9f5f2cfff1ccb93252480cd4b7bb` |
+| 1 | `theorem` | [deriv_conjugation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ConjugateAnalyticOrder.lean/declarations/deriv-conjugation.md) | 24 | `result-track:ba6b4489b46b1a35ddec2bd9bbf4e4c9b5e04fdba6c474950870ec93d6140dd2` |
+| 2 | `theorem` | [iteratedDeriv_conjugation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ConjugateAnalyticOrder.lean/declarations/iteratedderiv-conjugation.md) | 37 | `result-track:b773a60ccb6072b757ca4e9e293cfa2c6e836812fad3a59fa79060f4d5c4fce4` |
+| 3 | `theorem` | [finite_order_conjugation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ConjugateAnalyticOrder.lean/declarations/finite-order-conjugation.md) | 47 | `result-track:d8a6fc3ce9e5b7a4b94987ae2b46cd2cf8ab9f5f2cfff1ccb93252480cd4b7bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

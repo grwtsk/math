@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,21 +59,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [RingHom.Flat](../../../../CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/ringhom-flat.md) | 31 | `declaration-track:077b7cf4d292a65dbdea5cdf10bb8dec8d9192d0486c43725aae623748acd0e8` |
-| 2 | `lemma` | [flat_algebraMap_iff](../../../../CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/flat-algebramap-iff.md) | 35 | `result-track:813f40e44d207a21f77b0d46f2909f49857edcd4d033432046faedee53012404` |
-| 3 | `lemma` | [id](../../../../CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/id.md) | 47 | `result-track:3ed40cb2a36fb599f8cd7d54d8acf3f3f4f4cd1211a8f1ab84b2aa4adb91bf44` |
-| 4 | `lemma` | [comp](../../../../CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/comp.md) | 51 | `result-track:e8e858cfa3c5a69c657dd25d4631d9b5454930f8c3c83b971458f3205394db16` |
-| 5 | `lemma` | [of_bijective](../../../../CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/of-bijective.md) | 56 | `result-track:29424e5071a3a2e4976fa229199d0268282b4b2854b9d404ef87a5fad2bb6028` |
-| 6 | `lemma` | [containsIdentities](../../../../CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/containsidentities.md) | 60 | `result-track:6dc384446d92f03fe08d0eea8564d32aeed711de474ee06c18295448e7878530` |
-| 7 | `lemma` | [stableUnderComposition](../../../../CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/stableundercomposition.md) | 62 | `result-track:da09edcda61c53c460c21e4c22be577fc0df0d902ab81fb5d2586ec63c3a35ee` |
-| 8 | `lemma` | [respectsIso](../../../../CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/respectsiso.md) | 66 | `result-track:a97ef2089a2c7b03a0facd584f01f2433c82fe90e9a7f485455a21d146b3478d` |
-| 9 | `lemma` | [isStableUnderBaseChange](../../../../CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/isstableunderbasechange.md) | 71 | `result-track:4069a77cb14f381f31be84d14212d37bb694524d46e9f251d7d323d3b400c4c6` |
-| 10 | `lemma` | [holdsForLocalizationAway](../../../../CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/holdsforlocalizationaway.md) | 80 | `result-track:6e3e665ca453c94ff1bafb6d2a57f46f8f02c89b015870b9e1169556bdc182e0` |
-| 11 | `lemma` | [ofLocalizationSpanTarget](../../../../CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/oflocalizationspantarget.md) | 86 | `result-track:05a607cfc6cdd600b8b42d51be3830e340c2afb3757cf9827ee5c8776e329978` |
-| 12 | `lemma` | [propertyIsLocal](../../../../CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/propertyislocal.md) | 96 | `result-track:57e7556bba594eb171975f6a60a0d03bc7c6885a1dc0dc4a3013370b9c2304f2` |
-| 13 | `lemma` | [ofLocalizationPrime](../../../../CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/oflocalizationprime.md) | 106 | `result-track:779f0c1d3cbf651cc997c6e4953483e9fba5fe5c652a1279744b0790cb2aa09d` |
-| 14 | `lemma` | [localRingHom](../../../../CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/localringhom.md) | 119 | `result-track:be0f8d6a5fc20dbcd08cb7e22a6ed12ad7b4f5240156a3c0c7123ba05f9d021d` |
-| 15 | `lemma` | [generalizingMap_comap](../../../../CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/generalizingmap-comap.md) | 133 | `result-track:e36d7cacba29ba2f272c516c25498741d283cf1d1ff43824579895ae1d77b26c` |
+| 1 | `def` | [RingHom.Flat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/ringhom-flat.md) | 31 | `declaration-track:077b7cf4d292a65dbdea5cdf10bb8dec8d9192d0486c43725aae623748acd0e8` |
+| 2 | `lemma` | [flat_algebraMap_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/flat-algebramap-iff.md) | 35 | `result-track:813f40e44d207a21f77b0d46f2909f49857edcd4d033432046faedee53012404` |
+| 3 | `lemma` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/id.md) | 47 | `result-track:3ed40cb2a36fb599f8cd7d54d8acf3f3f4f4cd1211a8f1ab84b2aa4adb91bf44` |
+| 4 | `lemma` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/comp.md) | 51 | `result-track:e8e858cfa3c5a69c657dd25d4631d9b5454930f8c3c83b971458f3205394db16` |
+| 5 | `lemma` | [of_bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/of-bijective.md) | 56 | `result-track:29424e5071a3a2e4976fa229199d0268282b4b2854b9d404ef87a5fad2bb6028` |
+| 6 | `lemma` | [containsIdentities](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/containsidentities.md) | 60 | `result-track:6dc384446d92f03fe08d0eea8564d32aeed711de474ee06c18295448e7878530` |
+| 7 | `lemma` | [stableUnderComposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/stableundercomposition.md) | 62 | `result-track:da09edcda61c53c460c21e4c22be577fc0df0d902ab81fb5d2586ec63c3a35ee` |
+| 8 | `lemma` | [respectsIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/respectsiso.md) | 66 | `result-track:a97ef2089a2c7b03a0facd584f01f2433c82fe90e9a7f485455a21d146b3478d` |
+| 9 | `lemma` | [isStableUnderBaseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/isstableunderbasechange.md) | 71 | `result-track:4069a77cb14f381f31be84d14212d37bb694524d46e9f251d7d323d3b400c4c6` |
+| 10 | `lemma` | [holdsForLocalizationAway](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/holdsforlocalizationaway.md) | 80 | `result-track:6e3e665ca453c94ff1bafb6d2a57f46f8f02c89b015870b9e1169556bdc182e0` |
+| 11 | `lemma` | [ofLocalizationSpanTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/oflocalizationspantarget.md) | 86 | `result-track:05a607cfc6cdd600b8b42d51be3830e340c2afb3757cf9827ee5c8776e329978` |
+| 12 | `lemma` | [propertyIsLocal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/propertyislocal.md) | 96 | `result-track:57e7556bba594eb171975f6a60a0d03bc7c6885a1dc0dc4a3013370b9c2304f2` |
+| 13 | `lemma` | [ofLocalizationPrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/oflocalizationprime.md) | 106 | `result-track:779f0c1d3cbf651cc997c6e4953483e9fba5fe5c652a1279744b0790cb2aa09d` |
+| 14 | `lemma` | [localRingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/localringhom.md) | 119 | `result-track:be0f8d6a5fc20dbcd08cb7e22a6ed12ad7b4f5240156a3c0c7123ba05f9d021d` |
+| 15 | `lemma` | [generalizingMap_comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFlatFlatNamespaced.lean/declarations/generalizingmap-comap.md) | 133 | `result-track:e36d7cacba29ba2f272c516c25498741d283cf1d1ff43824579895ae1d77b26c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

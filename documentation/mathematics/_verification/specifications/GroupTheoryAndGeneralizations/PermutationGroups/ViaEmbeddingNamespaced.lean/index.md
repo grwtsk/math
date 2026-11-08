@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ViaEmbeddingNamespaced.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ViaEmbeddingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ViaEmbeddingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ViaEmbeddingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [viaEmbedding](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ViaEmbeddingNamespaced.lean/declarations/viaembedding.md) | 33 | `declaration-track:d9e22a07aa2e218f3f68674cecdea7dd7bff20a63a90650547f0596a2b4344e5` |
-| 2 | `theorem` | [viaEmbedding_apply](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ViaEmbeddingNamespaced.lean/declarations/viaembedding-apply.md) | 37 | `result-track:996777c83f2233a6c524abab9f87f1e51866680738891f05a8e54a7bddd9c71c` |
-| 3 | `theorem` | [viaEmbedding_apply_of_notMem](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ViaEmbeddingNamespaced.lean/declarations/viaembedding-apply-of-notmem.md) | 41 | `result-track:e777bc39b7918dfe9ae8db57c33f6d7eb82810cd38a35719c0648f0954829a19` |
-| 4 | `def` | [viaEmbeddingHom](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ViaEmbeddingNamespaced.lean/declarations/viaembeddinghom.md) | 49 | `declaration-track:aedf4e689585744beadd60e666afd96bc2fe950f2d0ea22464540dd8a7cc3c27` |
-| 5 | `theorem` | [viaEmbeddingHom_apply](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ViaEmbeddingNamespaced.lean/declarations/viaembeddinghom-apply.md) | 52 | `result-track:cd52d5109c9493801b3630722a6453f1a95a4429dd6ae31d026c04298193ade1` |
-| 6 | `theorem` | [viaEmbeddingHom_injective](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ViaEmbeddingNamespaced.lean/declarations/viaembeddinghom-injective.md) | 56 | `result-track:d8c67d200c31a95fb31bb04a215ce02b212830aa9877c18aa7b6d1f16a4d15dc` |
+| 1 | `def` | [viaEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ViaEmbeddingNamespaced.lean/declarations/viaembedding.md) | 33 | `declaration-track:d9e22a07aa2e218f3f68674cecdea7dd7bff20a63a90650547f0596a2b4344e5` |
+| 2 | `theorem` | [viaEmbedding_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ViaEmbeddingNamespaced.lean/declarations/viaembedding-apply.md) | 37 | `result-track:996777c83f2233a6c524abab9f87f1e51866680738891f05a8e54a7bddd9c71c` |
+| 3 | `theorem` | [viaEmbedding_apply_of_notMem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ViaEmbeddingNamespaced.lean/declarations/viaembedding-apply-of-notmem.md) | 41 | `result-track:e777bc39b7918dfe9ae8db57c33f6d7eb82810cd38a35719c0648f0954829a19` |
+| 4 | `def` | [viaEmbeddingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ViaEmbeddingNamespaced.lean/declarations/viaembeddinghom.md) | 49 | `declaration-track:aedf4e689585744beadd60e666afd96bc2fe950f2d0ea22464540dd8a7cc3c27` |
+| 5 | `theorem` | [viaEmbeddingHom_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ViaEmbeddingNamespaced.lean/declarations/viaembeddinghom-apply.md) | 52 | `result-track:cd52d5109c9493801b3630722a6453f1a95a4429dd6ae31d026c04298193ade1` |
+| 6 | `theorem` | [viaEmbeddingHom_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ViaEmbeddingNamespaced.lean/declarations/viaembeddinghom-injective.md) | 56 | `result-track:d8c67d200c31a95fb31bb04a215ce02b212830aa9877c18aa7b6d1f16a4d15dc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

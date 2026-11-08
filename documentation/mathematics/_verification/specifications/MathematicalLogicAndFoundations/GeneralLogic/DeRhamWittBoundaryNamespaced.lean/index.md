@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeRhamWittBoundaryNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeRhamWittBoundaryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeRhamWittBoundaryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeRhamWittBoundaryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DeRhamWittComplexContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeRhamWittBoundaryNamespaced.lean/declarations/derhamwittcomplexcontract.md) | 32 | `declaration-track:f6684f9479388968bd645b9931c6932ec8e8447fe10f8f075d4d136b048691ea` |
-| 2 | `theorem` | [deRhamWitt_is_complex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeRhamWittBoundaryNamespaced.lean/declarations/derhamwitt-is-complex.md) | 40 | `result-track:efe17e1cd985eb28f74fb55495749a1311a52e236d051e0d265fdcb139fef10e` |
-| 3 | `theorem` | [deRhamWitt_identifies_with_crystalline_target](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeRhamWittBoundaryNamespaced.lean/declarations/derhamwitt-identifies-with-crystalline-target.md) | 45 | `result-track:2b75475768c4cf675070736a07c307d268fbdb5716868eb60418fa6900805935` |
+| 1 | `structure` | [DeRhamWittComplexContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeRhamWittBoundaryNamespaced.lean/declarations/derhamwittcomplexcontract.md) | 32 | `declaration-track:f6684f9479388968bd645b9931c6932ec8e8447fe10f8f075d4d136b048691ea` |
+| 2 | `theorem` | [deRhamWitt_is_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeRhamWittBoundaryNamespaced.lean/declarations/derhamwitt-is-complex.md) | 40 | `result-track:efe17e1cd985eb28f74fb55495749a1311a52e236d051e0d265fdcb139fef10e` |
+| 3 | `theorem` | [deRhamWitt_identifies_with_crystalline_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeRhamWittBoundaryNamespaced.lean/declarations/derhamwitt-identifies-with-crystalline-target.md) | 45 | `result-track:2b75475768c4cf675070736a07c307d268fbdb5716868eb60418fa6900805935` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

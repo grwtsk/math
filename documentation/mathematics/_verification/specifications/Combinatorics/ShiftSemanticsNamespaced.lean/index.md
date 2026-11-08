@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ShiftSemanticsNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ShiftSemanticsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShiftSemanticsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShiftSemanticsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [hammingDistance](../../../../Combinatorics/ShiftSemanticsNamespaced.lean/declarations/hammingdistance.md) | 22 | `declaration-track:4ba58631b1fd9e6ab75c2eb0f0761d8da439c51d5cd7014576c873daf474fead` |
-| 2 | `def` | [zeroFillShift](../../../../Combinatorics/ShiftSemanticsNamespaced.lean/declarations/zerofillshift.md) | 26 | `declaration-track:9a38ac2b0415bf43bf10bf8ac5f77284b880d66def79515506cf5f0e6da01750` |
-| 3 | `structure` | [LogicalShift](../../../../Combinatorics/ShiftSemanticsNamespaced.lean/declarations/logicalshift.md) | 37 | `declaration-track:726ec71c1f7e078e6888753d28e50227ee7045761444717aa2b27804e6dc1fcb` |
-| 4 | `inductive` | [OverflowBehavior](../../../../Combinatorics/ShiftSemanticsNamespaced.lean/declarations/overflowbehavior.md) | 48 | `declaration-track:152119f9bdc79633a759f1616a38486aab74d6467f2e2597a59a99bbf0f173e6` |
-| 5 | `structure` | [FixedPointDecoder](../../../../Combinatorics/ShiftSemanticsNamespaced.lean/declarations/fixedpointdecoder.md) | 56 | `declaration-track:ba183f292f84a74352653a263d81224eaa94ae51eedd04b237c77e2a029786df` |
-| 6 | `structure` | [ShiftScaleCertificate](../../../../Combinatorics/ShiftSemanticsNamespaced.lean/declarations/shiftscalecertificate.md) | 60 | `declaration-track:c447cc481b75bd98afd8c4dc4ebc439f228d2fc2ad287218ff59a25e3bdc4b9e` |
+| 1 | `def` | [hammingDistance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShiftSemanticsNamespaced.lean/declarations/hammingdistance.md) | 22 | `declaration-track:4ba58631b1fd9e6ab75c2eb0f0761d8da439c51d5cd7014576c873daf474fead` |
+| 2 | `def` | [zeroFillShift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShiftSemanticsNamespaced.lean/declarations/zerofillshift.md) | 26 | `declaration-track:9a38ac2b0415bf43bf10bf8ac5f77284b880d66def79515506cf5f0e6da01750` |
+| 3 | `structure` | [LogicalShift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShiftSemanticsNamespaced.lean/declarations/logicalshift.md) | 37 | `declaration-track:726ec71c1f7e078e6888753d28e50227ee7045761444717aa2b27804e6dc1fcb` |
+| 4 | `inductive` | [OverflowBehavior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShiftSemanticsNamespaced.lean/declarations/overflowbehavior.md) | 48 | `declaration-track:152119f9bdc79633a759f1616a38486aab74d6467f2e2597a59a99bbf0f173e6` |
+| 5 | `structure` | [FixedPointDecoder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShiftSemanticsNamespaced.lean/declarations/fixedpointdecoder.md) | 56 | `declaration-track:ba183f292f84a74352653a263d81224eaa94ae51eedd04b237c77e2a029786df` |
+| 6 | `structure` | [ShiftScaleCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShiftSemanticsNamespaced.lean/declarations/shiftscalecertificate.md) | 60 | `declaration-track:c447cc481b75bd98afd8c4dc4ebc439f228d2fc2ad287218ff59a25e3bdc4b9e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

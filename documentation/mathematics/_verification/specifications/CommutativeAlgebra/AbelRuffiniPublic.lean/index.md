@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AbelRuffiniPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AbelRuffiniPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AbelRuffiniPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AbelRuffiniPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,23 +57,23 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Φ](../../../../CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/anonymous.md) | 42 | `declaration-track:5c3f74cf2307adfbc097e2f665fe996bfe42b37e6f0f129f93d83d889ef7152c` |
-| 2 | `theorem` | [map_Phi](../../../../CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/map-phi.md) | 48 | `result-track:969a42b0e6f6f26833ce0c488abb29bd381da08085de9916a794fe2d1951e797` |
-| 3 | `theorem` | [coeff_zero_Phi](../../../../CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/coeff-zero-phi.md) | 51 | `result-track:ba99b72073bc04560d6de48351b8cdec382438cb37204b83ab4f93dff3abc464` |
-| 4 | `theorem` | [coeff_five_Phi](../../../../CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/coeff-five-phi.md) | 54 | `result-track:b478c403902b828c3fc9cff0765618a0dda33065f04526aaa40dd07a13030318` |
-| 5 | `theorem` | [degree_Phi](../../../../CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/degree-phi.md) | 59 | `result-track:a6c38649715ba0384cdd38769a6ca60aa6859f0016f4bac12159b69ae190f80e` |
-| 6 | `theorem` | [natDegree_Phi](../../../../CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/natdegree-phi.md) | 66 | `result-track:08f93f5b4fbc375fbf3c15ed509c2c4410924156c92424053305842a65a1d610` |
-| 7 | `theorem` | [leadingCoeff_Phi](../../../../CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/leadingcoeff-phi.md) | 69 | `result-track:8e8b970d2048869060a56fce71513b49ecf38f5752008e133be085ffd27278a7` |
-| 8 | `theorem` | [monic_Phi](../../../../CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/monic-phi.md) | 72 | `result-track:f04fca8bb42977f305c8b8ce3587a94014cdef134fa6e46eecc60bd88fb89695` |
-| 9 | `theorem` | [irreducible_Phi](../../../../CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/irreducible-phi.md) | 75 | `result-track:27cc6d5e4ddda7f338629dd37f2e03eb5dec4fadb463cb98d3a72662c1f17149` |
-| 10 | `theorem` | [real_roots_Phi_le](../../../../CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/real-roots-phi-le.md) | 97 | `result-track:db29a896f59418596f60dcc2bb1a17a83ae9344044a8006e51570b6cf242ecd0` |
-| 11 | `theorem` | [real_roots_Phi_ge_aux](../../../../CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/real-roots-phi-ge-aux.md) | 107 | `result-track:c2af0205e4460d9d39198e059773bac6c6627a8cd23fc0f4511648f34a4b9544` |
-| 12 | `theorem` | [real_roots_Phi_ge](../../../../CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/real-roots-phi-ge.md) | 136 | `result-track:5e5d0f62c3e7c5ee4d398224d26ca95af6360644edc3108ff2609e06090d73c8` |
-| 13 | `theorem` | [complex_roots_Phi](../../../../CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/complex-roots-phi.md) | 145 | `result-track:8c453626908c842176495cf707148e78703b5dfbd0fed318d367d82e7ff52ae0` |
-| 14 | `theorem` | [gal_Phi](../../../../CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/gal-phi.md) | 148 | `result-track:65575face4c61dece12535ca68c4ff0f1f2b6bf7d803b2e3f32b4506ec523e07` |
-| 15 | `theorem` | [not_solvable_by_rad](../../../../CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/not-solvable-by-rad-source-edition-2.md) | 157 | `result-track:8fe8d5b830912ae92cf3963e9f40778fcdf6e57c7edc814f304b3b3b574a51df` |
-| 16 | `theorem` | [not_solvable_by_rad'](../../../../CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/not-solvable-by-rad.md) | 166 | `result-track:6db3ae1b68a465612ebb307461247508d90b80cfe522de20c08646d01ecc4e3d` |
-| 17 | `theorem` | [exists_not_solvable_by_rad](../../../../CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/exists-not-solvable-by-rad.md) | 170 | `result-track:c7c241d5e34a26dbaa5ac36752ca920dcccf56daaea6ccbfd7d4944cbc23e25a` |
+| 1 | `def` | [Φ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/anonymous.md) | 42 | `declaration-track:5c3f74cf2307adfbc097e2f665fe996bfe42b37e6f0f129f93d83d889ef7152c` |
+| 2 | `theorem` | [map_Phi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/map-phi.md) | 48 | `result-track:969a42b0e6f6f26833ce0c488abb29bd381da08085de9916a794fe2d1951e797` |
+| 3 | `theorem` | [coeff_zero_Phi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/coeff-zero-phi.md) | 51 | `result-track:ba99b72073bc04560d6de48351b8cdec382438cb37204b83ab4f93dff3abc464` |
+| 4 | `theorem` | [coeff_five_Phi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/coeff-five-phi.md) | 54 | `result-track:b478c403902b828c3fc9cff0765618a0dda33065f04526aaa40dd07a13030318` |
+| 5 | `theorem` | [degree_Phi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/degree-phi.md) | 59 | `result-track:a6c38649715ba0384cdd38769a6ca60aa6859f0016f4bac12159b69ae190f80e` |
+| 6 | `theorem` | [natDegree_Phi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/natdegree-phi.md) | 66 | `result-track:08f93f5b4fbc375fbf3c15ed509c2c4410924156c92424053305842a65a1d610` |
+| 7 | `theorem` | [leadingCoeff_Phi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/leadingcoeff-phi.md) | 69 | `result-track:8e8b970d2048869060a56fce71513b49ecf38f5752008e133be085ffd27278a7` |
+| 8 | `theorem` | [monic_Phi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/monic-phi.md) | 72 | `result-track:f04fca8bb42977f305c8b8ce3587a94014cdef134fa6e46eecc60bd88fb89695` |
+| 9 | `theorem` | [irreducible_Phi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/irreducible-phi.md) | 75 | `result-track:27cc6d5e4ddda7f338629dd37f2e03eb5dec4fadb463cb98d3a72662c1f17149` |
+| 10 | `theorem` | [real_roots_Phi_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/real-roots-phi-le.md) | 97 | `result-track:db29a896f59418596f60dcc2bb1a17a83ae9344044a8006e51570b6cf242ecd0` |
+| 11 | `theorem` | [real_roots_Phi_ge_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/real-roots-phi-ge-aux.md) | 107 | `result-track:c2af0205e4460d9d39198e059773bac6c6627a8cd23fc0f4511648f34a4b9544` |
+| 12 | `theorem` | [real_roots_Phi_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/real-roots-phi-ge.md) | 136 | `result-track:5e5d0f62c3e7c5ee4d398224d26ca95af6360644edc3108ff2609e06090d73c8` |
+| 13 | `theorem` | [complex_roots_Phi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/complex-roots-phi.md) | 145 | `result-track:8c453626908c842176495cf707148e78703b5dfbd0fed318d367d82e7ff52ae0` |
+| 14 | `theorem` | [gal_Phi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/gal-phi.md) | 148 | `result-track:65575face4c61dece12535ca68c4ff0f1f2b6bf7d803b2e3f32b4506ec523e07` |
+| 15 | `theorem` | [not_solvable_by_rad](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/not-solvable-by-rad-source-edition-2.md) | 157 | `result-track:8fe8d5b830912ae92cf3963e9f40778fcdf6e57c7edc814f304b3b3b574a51df` |
+| 16 | `theorem` | [not_solvable_by_rad'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/not-solvable-by-rad.md) | 166 | `result-track:6db3ae1b68a465612ebb307461247508d90b80cfe522de20c08646d01ecc4e3d` |
+| 17 | `theorem` | [exists_not_solvable_by_rad](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AbelRuffiniPublic.lean/declarations/exists-not-solvable-by-rad.md) | 170 | `result-track:c7c241d5e34a26dbaa5ac36752ca920dcccf56daaea6ccbfd7d4944cbc23e25a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

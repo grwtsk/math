@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/BertrandNamespacedAligned.lean/index.md) · [Full source](../../../../NumberTheory/BertrandNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,13 +61,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [real_main_inequality](../../../../NumberTheory/BertrandNamespacedAligned.lean/declarations/real-main-inequality.md) | 62 | `result-track:695ff7145e882b4aa01a0d2a939b6e303f6d239d590fbae115c46f509c56d05d` |
-| 2 | `theorem` | [bertrand_main_inequality](../../../../NumberTheory/BertrandNamespacedAligned.lean/declarations/bertrand-main-inequality.md) | 133 | `result-track:24824b5458dee701978b462af44364a7953d403151c6df9b744c4c8f8fd78a5a` |
-| 3 | `theorem` | [centralBinom_factorization_small](../../../../NumberTheory/BertrandNamespacedAligned.lean/declarations/centralbinom-factorization-small.md) | 153 | `result-track:7c6c839aa77d0f0dd4863e7c16e9cc303fa28150f15169c6934a567fc28486ac` |
-| 4 | `theorem` | [centralBinom_le_of_no_bertrand_prime](../../../../NumberTheory/BertrandNamespacedAligned.lean/declarations/centralbinom-le-of-no-bertrand-prime.md) | 177 | `result-track:1e62a748ae8cbea64e9f490362a27c5a0a0acc813f1b7fca0cb8a760378e57f7` |
-| 5 | `theorem` | [exists_prime_lt_and_le_two_mul_eventually](../../../../NumberTheory/BertrandNamespacedAligned.lean/declarations/exists-prime-lt-and-le-two-mul-eventually.md) | 211 | `result-track:b433c40a845ceba4da3d26dbd470426c61546d28a1600a7984433bdced72e407` |
-| 6 | `theorem` | [exists_prime_lt_and_le_two_mul_succ](../../../../NumberTheory/BertrandNamespacedAligned.lean/declarations/exists-prime-lt-and-le-two-mul-succ.md) | 230 | `result-track:baca3cd2ccee5ecc1140d11a9a363937284b6b6d51a095174e8a2ff280fd0835` |
-| 7 | `theorem` | [exists_prime_lt_and_le_two_mul](../../../../NumberTheory/BertrandNamespacedAligned.lean/declarations/exists-prime-lt-and-le-two-mul.md) | 241 | `result-track:96b1d980ad8c745479901b1d314eadac0814abc8bd28bdee998146df8f54885d` |
+| 1 | `theorem` | [real_main_inequality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespacedAligned.lean/declarations/real-main-inequality.md) | 62 | `result-track:695ff7145e882b4aa01a0d2a939b6e303f6d239d590fbae115c46f509c56d05d` |
+| 2 | `theorem` | [bertrand_main_inequality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespacedAligned.lean/declarations/bertrand-main-inequality.md) | 133 | `result-track:24824b5458dee701978b462af44364a7953d403151c6df9b744c4c8f8fd78a5a` |
+| 3 | `theorem` | [centralBinom_factorization_small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespacedAligned.lean/declarations/centralbinom-factorization-small.md) | 153 | `result-track:7c6c839aa77d0f0dd4863e7c16e9cc303fa28150f15169c6934a567fc28486ac` |
+| 4 | `theorem` | [centralBinom_le_of_no_bertrand_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespacedAligned.lean/declarations/centralbinom-le-of-no-bertrand-prime.md) | 177 | `result-track:1e62a748ae8cbea64e9f490362a27c5a0a0acc813f1b7fca0cb8a760378e57f7` |
+| 5 | `theorem` | [exists_prime_lt_and_le_two_mul_eventually](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespacedAligned.lean/declarations/exists-prime-lt-and-le-two-mul-eventually.md) | 211 | `result-track:b433c40a845ceba4da3d26dbd470426c61546d28a1600a7984433bdced72e407` |
+| 6 | `theorem` | [exists_prime_lt_and_le_two_mul_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespacedAligned.lean/declarations/exists-prime-lt-and-le-two-mul-succ.md) | 230 | `result-track:baca3cd2ccee5ecc1140d11a9a363937284b6b6d51a095174e8a2ff280fd0835` |
+| 7 | `theorem` | [exists_prime_lt_and_le_two_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespacedAligned.lean/declarations/exists-prime-lt-and-le-two-mul.md) | 241 | `result-track:96b1d980ad8c745479901b1d314eadac0814abc8bd28bdee998146df8f54885d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Imo1987Q1NamespacedPublic.lean/index.md) · [Full source](../../../../Combinatorics/Imo1987Q1NamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1NamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1NamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fixedPointsEquiv](../../../../Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/fixedpointsequiv.md) | 48 | `declaration-track:093ed74dc51d0d26dbd0fc8c4cd96e40c900b4613479611b27c0254e1f1bcacf` |
-| 2 | `theorem` | [card_fixed_points](../../../../Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/card-fixed-points.md) | 56 | `result-track:490ca134c23ae63d9d80fdc93079bbf0d641d06972ef2903f609d115295e2990` |
-| 3 | `def` | [fiber](../../../../Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/fiber.md) | 66 | `declaration-track:cdc7f91c1b5d13660ba1379e5d1449ea5159409773e5cc06dc782ab461cc2308` |
-| 4 | `instance` | [(anonymous)](../../../../Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/instance.md) | 69 | `declaration-track:af0274385bc66e1ae7360806dae9d0773455981350bdde6225b2288a035900dc` |
-| 5 | `theorem` | [mem_fiber](../../../../Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/mem-fiber.md) | 72 | `result-track:61cca1e928e901854c2b16f539ecce269ce5f3fabfb580f45dac281047c59f25` |
-| 6 | `def` | [p](../../../../Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/p.md) | 76 | `declaration-track:1325bc4d101e158104624392ecbd44e2265d801baa94df7bffb5f926882baaa3` |
-| 7 | `def` | [fixedPointsEquiv'](../../../../Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/fixedpointsequiv-source-edition-2.md) | 85 | `declaration-track:ab6c440e57890473fddd373a38a40ac8258a2148a1fb697ed476b602d12c95ee` |
-| 8 | `theorem` | [main_fintype](../../../../Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/main-fintype.md) | 98 | `result-track:7c2fad99780086f1cc837eed433b39dfdb36bad0ca2b811140ce9e0d29947dca` |
-| 9 | `theorem` | [main₀](../../../../Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/main-source-edition-2.md) | 104 | `result-track:613cb4336cd51e5b105bedfbb3ef093be1a08b2db86223083d9e69b013251400` |
-| 10 | `theorem` | [main](../../../../Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/main.md) | 108 | `result-track:2c416a9ce76ff49938253a64c77225f94e151d5fc5b53f1f52defec261211e54` |
+| 1 | `def` | [fixedPointsEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/fixedpointsequiv.md) | 48 | `declaration-track:093ed74dc51d0d26dbd0fc8c4cd96e40c900b4613479611b27c0254e1f1bcacf` |
+| 2 | `theorem` | [card_fixed_points](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/card-fixed-points.md) | 56 | `result-track:490ca134c23ae63d9d80fdc93079bbf0d641d06972ef2903f609d115295e2990` |
+| 3 | `def` | [fiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/fiber.md) | 66 | `declaration-track:cdc7f91c1b5d13660ba1379e5d1449ea5159409773e5cc06dc782ab461cc2308` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/instance.md) | 69 | `declaration-track:af0274385bc66e1ae7360806dae9d0773455981350bdde6225b2288a035900dc` |
+| 5 | `theorem` | [mem_fiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/mem-fiber.md) | 72 | `result-track:61cca1e928e901854c2b16f539ecce269ce5f3fabfb580f45dac281047c59f25` |
+| 6 | `def` | [p](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/p.md) | 76 | `declaration-track:1325bc4d101e158104624392ecbd44e2265d801baa94df7bffb5f926882baaa3` |
+| 7 | `def` | [fixedPointsEquiv'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/fixedpointsequiv-source-edition-2.md) | 85 | `declaration-track:ab6c440e57890473fddd373a38a40ac8258a2148a1fb697ed476b602d12c95ee` |
+| 8 | `theorem` | [main_fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/main-fintype.md) | 98 | `result-track:7c2fad99780086f1cc837eed433b39dfdb36bad0ca2b811140ce9e0d29947dca` |
+| 9 | `theorem` | [main₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/main-source-edition-2.md) | 104 | `result-track:613cb4336cd51e5b105bedfbb3ef093be1a08b2db86223083d9e69b013251400` |
+| 10 | `theorem` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1NamespacedPublic.lean/declarations/main.md) | 108 | `result-track:2c416a9ce76ff49938253a64c77225f94e151d5fc5b53f1f52defec261211e54` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

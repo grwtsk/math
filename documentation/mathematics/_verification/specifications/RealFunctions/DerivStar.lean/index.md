@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DerivStar.lean/index.md) · [Full source](../../../../RealFunctions/DerivStar.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivStar.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivStar.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [HasDerivAtFilter.star](../../../../RealFunctions/DerivStar.lean/declarations/hasderivatfilter-star.md) | 29 | `result-track:9c2e6d339017d013acd84a5b112e0c4dcddbcd1e8718aad5b1a4a53368f8ceb2` |
-| 2 | `theorem` | [HasDerivWithinAt.star](../../../../RealFunctions/DerivStar.lean/declarations/hasderivwithinat-star.md) | 33 | `result-track:03afb2c31cd795e086ea8a26508d5d3855977290c2403ab47ed14c91cecb8c69` |
-| 3 | `theorem` | [HasDerivAt.star](../../../../RealFunctions/DerivStar.lean/declarations/hasderivat-star.md) | 37 | `result-track:b4c844034e00300155f18173d20c787306e2fc7ab6466ba8b5a0da786d83a0c7` |
-| 4 | `theorem` | [HasStrictDerivAt.star](../../../../RealFunctions/DerivStar.lean/declarations/hasstrictderivat-star.md) | 41 | `result-track:e1a5d9df6566fc4d5365a144e57de02ba9bdfca6ebd568115fc273e9f1623e41` |
-| 5 | `theorem` | [derivWithin.star](../../../../RealFunctions/DerivStar.lean/declarations/derivwithin-star.md) | 44 | `result-track:91fdbb3f4b5ccee6e9b167c7afb0893b7cea22c0022407a93250fee631832c35` |
-| 6 | `theorem` | [deriv.star](../../../../RealFunctions/DerivStar.lean/declarations/deriv-star.md) | 50 | `result-track:5e1cdbd88e483cf7576afb3984faf2ca01a5bbb9bb9f6366276d989f8b741a72` |
-| 7 | `theorem` | [deriv.star'](../../../../RealFunctions/DerivStar.lean/declarations/deriv-star-source-edition-2.md) | 54 | `result-track:6e2630bff7e2d4f0578d8cb91c83bf75c74bcb1ac84872b33a16252140155d60` |
+| 1 | `theorem` | [HasDerivAtFilter.star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivStar.lean/declarations/hasderivatfilter-star.md) | 29 | `result-track:9c2e6d339017d013acd84a5b112e0c4dcddbcd1e8718aad5b1a4a53368f8ceb2` |
+| 2 | `theorem` | [HasDerivWithinAt.star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivStar.lean/declarations/hasderivwithinat-star.md) | 33 | `result-track:03afb2c31cd795e086ea8a26508d5d3855977290c2403ab47ed14c91cecb8c69` |
+| 3 | `theorem` | [HasDerivAt.star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivStar.lean/declarations/hasderivat-star.md) | 37 | `result-track:b4c844034e00300155f18173d20c787306e2fc7ab6466ba8b5a0da786d83a0c7` |
+| 4 | `theorem` | [HasStrictDerivAt.star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivStar.lean/declarations/hasstrictderivat-star.md) | 41 | `result-track:e1a5d9df6566fc4d5365a144e57de02ba9bdfca6ebd568115fc273e9f1623e41` |
+| 5 | `theorem` | [derivWithin.star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivStar.lean/declarations/derivwithin-star.md) | 44 | `result-track:91fdbb3f4b5ccee6e9b167c7afb0893b7cea22c0022407a93250fee631832c35` |
+| 6 | `theorem` | [deriv.star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivStar.lean/declarations/deriv-star.md) | 50 | `result-track:5e1cdbd88e483cf7576afb3984faf2ca01a5bbb9bb9f6366276d989f8b741a72` |
+| 7 | `theorem` | [deriv.star'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivStar.lean/declarations/deriv-star-source-edition-2.md) | 54 | `result-track:6e2630bff7e2d4f0578d8cb91c83bf75c74bcb1ac84872b33a16252140155d60` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

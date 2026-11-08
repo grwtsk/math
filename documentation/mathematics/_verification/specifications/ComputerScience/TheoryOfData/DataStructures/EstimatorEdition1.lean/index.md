@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/EstimatorEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/EstimatorEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/EstimatorEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/EstimatorEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LevenshteinEstimator'](../../../../../../ComputerScience/TheoryOfData/DataStructures/EstimatorEdition1.lean/declarations/levenshteinestimator.md) | 41 | `declaration-track:37206407aa82950fcf74f55aa3a0e8bbbb253e61962cbf2fe546738205c13763` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/EstimatorEdition1.lean/declarations/instance-source-edition-3.md) | 60 | `declaration-track:47fc1234d18ea56afad9392ae971525aed6378f9aec54f70305c0dade7c0400e` |
-| 3 | `instance` | [estimator'](../../../../../../ComputerScience/TheoryOfData/DataStructures/EstimatorEdition1.lean/declarations/estimator.md) | 74 | `declaration-track:a669b579d5ca692bfcbb69449afcf78d5add7919088e918bc68b2292cc0117b9` |
-| 4 | `def` | [LevenshteinEstimator](../../../../../../ComputerScience/TheoryOfData/DataStructures/EstimatorEdition1.lean/declarations/levenshteinestimator-source-edition-2.md) | 128 | `declaration-track:5c85b008a82ea57ee6668ad81f3318f45dc64cc893cec8b8cfeba2ffaf9fe798` |
-| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/EstimatorEdition1.lean/declarations/instance-source-edition-2.md) | 131 | `declaration-track:15b5171a13a824f651d1a1dce753732999186c458c34e08394c2dd7b0c0a0cd0` |
-| 6 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/EstimatorEdition1.lean/declarations/instance.md) | 136 | `declaration-track:0cf1e3f8c2b51634185a168f20732e76f803100773d5a263168ddb2d9889543d` |
+| 1 | `structure` | [LevenshteinEstimator'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/EstimatorEdition1.lean/declarations/levenshteinestimator.md) | 41 | `declaration-track:37206407aa82950fcf74f55aa3a0e8bbbb253e61962cbf2fe546738205c13763` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/EstimatorEdition1.lean/declarations/instance-source-edition-3.md) | 60 | `declaration-track:47fc1234d18ea56afad9392ae971525aed6378f9aec54f70305c0dade7c0400e` |
+| 3 | `instance` | [estimator'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/EstimatorEdition1.lean/declarations/estimator.md) | 74 | `declaration-track:a669b579d5ca692bfcbb69449afcf78d5add7919088e918bc68b2292cc0117b9` |
+| 4 | `def` | [LevenshteinEstimator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/EstimatorEdition1.lean/declarations/levenshteinestimator-source-edition-2.md) | 128 | `declaration-track:5c85b008a82ea57ee6668ad81f3318f45dc64cc893cec8b8cfeba2ffaf9fe798` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/EstimatorEdition1.lean/declarations/instance-source-edition-2.md) | 131 | `declaration-track:15b5171a13a824f651d1a1dce753732999186c458c34e08394c2dd7b0c0a0cd0` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/EstimatorEdition1.lean/declarations/instance.md) | 136 | `declaration-track:0cf1e3f8c2b51634185a168f20732e76f803100773d5a263168ddb2d9889543d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

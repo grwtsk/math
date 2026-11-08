@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionW.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionW.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionW.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionW.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [halfL](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionW.lean/declarations/halfl.md) | 30 | `declaration-track:0d0516df1cc0e5fa57befaa8f09d6b17e9a2ee196c06eba874e2b768c6119950` |
-| 2 | `lemma` | [halfL_re](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionW.lean/declarations/halfl-re.md) | 32 | `result-track:240ed8435ba9cf3ee7184c9e70571e65a74d2e40cf9d53389a47423c52d31a29` |
-| 3 | `def` | [eW](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionW.lean/declarations/ew.md) | 35 | `declaration-track:04655b9a56ed5cb3a051e1dd1b69f73833de1b2993541f9a930c221db2c73315` |
-| 4 | `theorem` | [wReexpansion_eW](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionW.lean/declarations/wreexpansion-ew.md) | 38 | `result-track:723436b5021ddde2fbe28d5886ab36ca1a84bb114e2b3ee71a2add3302689290` |
-| 5 | `theorem` | [wReexpansion](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionW.lean/declarations/wreexpansion.md) | 52 | `result-track:508e6ddd372ba64efacef2943ebfc613274344b7afd7e4cb0332620ff5dd7e01` |
+| 1 | `def` | [halfL](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionW.lean/declarations/halfl.md) | 30 | `declaration-track:0d0516df1cc0e5fa57befaa8f09d6b17e9a2ee196c06eba874e2b768c6119950` |
+| 2 | `lemma` | [halfL_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionW.lean/declarations/halfl-re.md) | 32 | `result-track:240ed8435ba9cf3ee7184c9e70571e65a74d2e40cf9d53389a47423c52d31a29` |
+| 3 | `def` | [eW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionW.lean/declarations/ew.md) | 35 | `declaration-track:04655b9a56ed5cb3a051e1dd1b69f73833de1b2993541f9a930c221db2c73315` |
+| 4 | `theorem` | [wReexpansion_eW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionW.lean/declarations/wreexpansion-ew.md) | 38 | `result-track:723436b5021ddde2fbe28d5886ab36ca1a84bb114e2b3ee71a2add3302689290` |
+| 5 | `theorem` | [wReexpansion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionW.lean/declarations/wreexpansion.md) | 52 | `result-track:508e6ddd372ba64efacef2943ebfc613274344b7afd7e4cb0332620ff5dd7e01` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveLiftNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveLiftNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveLiftNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveLiftNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [LeftOrderedNonnegative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveLiftNamespaced.lean/declarations/leftorderednonnegative.md) | 29 | `declaration-track:44e21420ecf7351a0bfbbc9a3127c44042b3e1478940f16849c66307de02c5e0` |
-| 2 | `def` | [RightOrderedNonnegative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveLiftNamespaced.lean/declarations/rightorderednonnegative.md) | 34 | `declaration-track:87de26afcda46e1ef75688d742f7e741a6385973b946d821b817cbdbf8d34de6` |
-| 3 | `theorem` | [det_mul_nonnegative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveLiftNamespaced.lean/declarations/det-mul-nonnegative.md) | 40 | `result-track:a39c618d391225088c31c2ee346f3bea91f2a80bbd23f8ac3f7a896d17851620` |
-| 4 | `def` | [matrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveLiftNamespaced.lean/declarations/matrix.md) | 59 | `declaration-track:c23f20408b4454c354907547c81822f5710aab1bc61239e7a9653e3a26c72b0a` |
-| 5 | `theorem` | [matrix_det_nonnegative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveLiftNamespaced.lean/declarations/matrix-det-nonnegative.md) | 66 | `result-track:71bc17b983cbb7691db9eab8299ee17e428d4fbd07241183065cfbff31b65058` |
+| 1 | `def` | [LeftOrderedNonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveLiftNamespaced.lean/declarations/leftorderednonnegative.md) | 29 | `declaration-track:44e21420ecf7351a0bfbbc9a3127c44042b3e1478940f16849c66307de02c5e0` |
+| 2 | `def` | [RightOrderedNonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveLiftNamespaced.lean/declarations/rightorderednonnegative.md) | 34 | `declaration-track:87de26afcda46e1ef75688d742f7e741a6385973b946d821b817cbdbf8d34de6` |
+| 3 | `theorem` | [det_mul_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveLiftNamespaced.lean/declarations/det-mul-nonnegative.md) | 40 | `result-track:a39c618d391225088c31c2ee346f3bea91f2a80bbd23f8ac3f7a896d17851620` |
+| 4 | `def` | [matrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveLiftNamespaced.lean/declarations/matrix.md) | 59 | `declaration-track:c23f20408b4454c354907547c81822f5710aab1bc61239e7a9653e3a26c72b0a` |
+| 5 | `theorem` | [matrix_det_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveLiftNamespaced.lean/declarations/matrix-det-nonnegative.md) | 66 | `result-track:71bc17b983cbb7691db9eab8299ee17e428d4fbd07241183065cfbff31b65058` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

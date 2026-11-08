@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNaturality.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNaturality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNaturality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNaturality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [roundingSet_transport_iff](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNaturality.lean/declarations/roundingset-transport-iff.md) | 26 | `result-track:70bd00d100d277af143724669990854c92dc044d696fe66b6a9f50b5f1fb937b` |
-| 2 | `theorem` | [roundingSet_transport](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNaturality.lean/declarations/roundingset-transport.md) | 73 | `result-track:9a658595154a550a7f41ffca8d528052ee48ca5a712f192751ba9cb606cee23f` |
+| 1 | `theorem` | [roundingSet_transport_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNaturality.lean/declarations/roundingset-transport-iff.md) | 26 | `result-track:70bd00d100d277af143724669990854c92dc044d696fe66b6a9f50b5f1fb937b` |
+| 2 | `theorem` | [roundingSet_transport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNaturality.lean/declarations/roundingset-transport.md) | 73 | `result-track:9a658595154a550a7f41ffca8d528052ee48ca5a712f192751ba9cb606cee23f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

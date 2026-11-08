@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MacroPublicLean.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MacroPublicLean.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MacroPublicLean.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MacroPublicLean.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Lean.SourceInfo.mkCanonical](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MacroPublicLean.lean/declarations/lean-sourceinfo-mkcanonical.md) | 17 | `declaration-track:158829e1316e69548b5815dd43578651fc8b013450ec0c4efcce0efdbeec26c0` |
-| 2 | `def` | [Lean.Syntax.mkInfoCanonical](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MacroPublicLean.lean/declarations/lean-syntax-mkinfocanonical.md) | 21 | `declaration-track:668d057402703b6490b7f74a1e42c0cc14d48c28f8711c286f7fe6e70dd247cc` |
-| 3 | `def` | [Lean.TSyntax.mkInfoCanonical](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MacroPublicLean.lean/declarations/lean-tsyntax-mkinfocanonical.md) | 27 | `declaration-track:668e0b7886e2230a7ef5766e038eab8629ec9c16c2994c148d3daa7a86c2b96b` |
-| 4 | `macro` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MacroPublicLean.lean/declarations/macro.md) | 30 | `declaration-track:7f69863a4e94edc6f6940c6cc058ee425f732a5d32259ae47053efdb6d4ee94a` |
+| 1 | `def` | [Lean.SourceInfo.mkCanonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MacroPublicLean.lean/declarations/lean-sourceinfo-mkcanonical.md) | 17 | `declaration-track:158829e1316e69548b5815dd43578651fc8b013450ec0c4efcce0efdbeec26c0` |
+| 2 | `def` | [Lean.Syntax.mkInfoCanonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MacroPublicLean.lean/declarations/lean-syntax-mkinfocanonical.md) | 21 | `declaration-track:668d057402703b6490b7f74a1e42c0cc14d48c28f8711c286f7fe6e70dd247cc` |
+| 3 | `def` | [Lean.TSyntax.mkInfoCanonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MacroPublicLean.lean/declarations/lean-tsyntax-mkinfocanonical.md) | 27 | `declaration-track:668e0b7886e2230a7ef5766e038eab8629ec9c16c2994c148d3daa7a86c2b96b` |
+| 4 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MacroPublicLean.lean/declarations/macro.md) | 30 | `declaration-track:7f69863a4e94edc6f6940c6cc058ee425f732a5d32259ae47053efdb6d4ee94a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

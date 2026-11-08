@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LandauYfnGenericInputs.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LandauYfnGenericInputs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LandauYfnGenericInputs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LandauYfnGenericInputs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Yfn_generic_inputs](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LandauYfnGenericInputs.lean/declarations/yfn-generic-inputs.md) | 32 | `result-track:5cb714389aa0d9fefa65c75da26fc2a9cec81325e9ae1ede434e56dbbb106712` |
-| 2 | `theorem` | [Yfn_logDeriv_partial_fraction](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LandauYfnGenericInputs.lean/declarations/yfn-logderiv-partial-fraction.md) | 42 | `result-track:3aac245aadbcd10ca894c3c4f35b2d0b0ea9828d2b60df41b5fcc5cb5ad2e851` |
-| 3 | `theorem` | [xiDerivZeros_link](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LandauYfnGenericInputs.lean/declarations/xiderivzeros-link.md) | 62 | `result-track:d1bf93fdca8e6e809018f37c5b137efeea637b65d035bf275d77dc140b639b46` |
-| 4 | `theorem` | [half_count_large](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LandauYfnGenericInputs.lean/declarations/half-count-large.md) | 70 | `result-track:7fd0abe5d125e54857c8f116ef1c29eed0aa956d5265c958cf0489824616c6d5` |
-| 5 | `theorem` | [xiDeriv_local_count](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LandauYfnGenericInputs.lean/declarations/xideriv-local-count.md) | 79 | `result-track:3f43041fc1b6cdabde7347a0428719169d368a85af6468f6971ef39f7fa23c30` |
+| 1 | `theorem` | [Yfn_generic_inputs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LandauYfnGenericInputs.lean/declarations/yfn-generic-inputs.md) | 32 | `result-track:5cb714389aa0d9fefa65c75da26fc2a9cec81325e9ae1ede434e56dbbb106712` |
+| 2 | `theorem` | [Yfn_logDeriv_partial_fraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LandauYfnGenericInputs.lean/declarations/yfn-logderiv-partial-fraction.md) | 42 | `result-track:3aac245aadbcd10ca894c3c4f35b2d0b0ea9828d2b60df41b5fcc5cb5ad2e851` |
+| 3 | `theorem` | [xiDerivZeros_link](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LandauYfnGenericInputs.lean/declarations/xiderivzeros-link.md) | 62 | `result-track:d1bf93fdca8e6e809018f37c5b137efeea637b65d035bf275d77dc140b639b46` |
+| 4 | `theorem` | [half_count_large](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LandauYfnGenericInputs.lean/declarations/half-count-large.md) | 70 | `result-track:7fd0abe5d125e54857c8f116ef1c29eed0aa956d5265c958cf0489824616c6d5` |
+| 5 | `theorem` | [xiDeriv_local_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LandauYfnGenericInputs.lean/declarations/xideriv-local-count.md) | 79 | `result-track:3f43041fc1b6cdabde7347a0428719169d368a85af6468f6971ef39f7fa23c30` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

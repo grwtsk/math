@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,14 +62,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FormalTypeReference](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/declarations/formaltypereference.md) | 19 | `declaration-track:b5fa74a9a2eaae29e33caff18ad218c839fc9cb57b5ea193f14e68e4b9998db8` |
-| 2 | `structure` | [RhetoricalRoleReference](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/declarations/rhetoricalrolereference.md) | 24 | `declaration-track:9fe22cd721c7a56404c2d99fb7ddc3bc42a98b38b56fc8d7e662a4dd26ef969d` |
-| 3 | `structure` | [ProjectRelativeName](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/declarations/projectrelativename.md) | 29 | `declaration-track:1fa02e2453590957ceb95a18b6f0404c30546194857d7ef120bf3ce2c52dd1c4` |
-| 4 | `structure` | [StabilityRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/declarations/stabilityrecord.md) | 35 | `declaration-track:4c1f718689399ef08f0b12c01cf33e9331436d2d865fb546958c64709906b1d5` |
-| 5 | `structure` | [MathematicalPoint](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/declarations/mathematicalpoint.md) | 43 | `declaration-track:be7d1c620578ac9b2b63e7702795f34b26ad0430fa9b83e56ea52a0303aa7921` |
-| 6 | `def` | [SameIdentity](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/declarations/sameidentity.md) | 72 | `declaration-track:6658f8b626c60728df6f0028d16bfc9d600b927cf322f6c08d6e506a11160564` |
-| 7 | `theorem` | [sameIdentity_of_pointId_eq](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/declarations/sameidentity-of-pointid-eq.md) | 76 | `result-track:11a9582f6ad63ee5507ae9285a90c2a5bc63e3fd062cfe9d762362be55834571` |
-| 8 | `theorem` | [has_source](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/declarations/has-source.md) | 83 | `result-track:6e56af2579cdd5120b5a67fa41e5aa2fb2bc525b317f319654b3c0e00a4f7c0d` |
+| 1 | `structure` | [FormalTypeReference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/declarations/formaltypereference.md) | 19 | `declaration-track:b5fa74a9a2eaae29e33caff18ad218c839fc9cb57b5ea193f14e68e4b9998db8` |
+| 2 | `structure` | [RhetoricalRoleReference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/declarations/rhetoricalrolereference.md) | 24 | `declaration-track:9fe22cd721c7a56404c2d99fb7ddc3bc42a98b38b56fc8d7e662a4dd26ef969d` |
+| 3 | `structure` | [ProjectRelativeName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/declarations/projectrelativename.md) | 29 | `declaration-track:1fa02e2453590957ceb95a18b6f0404c30546194857d7ef120bf3ce2c52dd1c4` |
+| 4 | `structure` | [StabilityRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/declarations/stabilityrecord.md) | 35 | `declaration-track:4c1f718689399ef08f0b12c01cf33e9331436d2d865fb546958c64709906b1d5` |
+| 5 | `structure` | [MathematicalPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/declarations/mathematicalpoint.md) | 43 | `declaration-track:be7d1c620578ac9b2b63e7702795f34b26ad0430fa9b83e56ea52a0303aa7921` |
+| 6 | `def` | [SameIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/declarations/sameidentity.md) | 72 | `declaration-track:6658f8b626c60728df6f0028d16bfc9d600b927cf322f6c08d6e506a11160564` |
+| 7 | `theorem` | [sameIdentity_of_pointId_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/declarations/sameidentity-of-pointid-eq.md) | 76 | `result-track:11a9582f6ad63ee5507ae9285a90c2a5bc63e3fd062cfe9d762362be55834571` |
+| 8 | `theorem` | [has_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPoint.lean/declarations/has-source.md) | 83 | `result-track:6e56af2579cdd5120b5a67fa41e5aa2fb2bc525b317f319654b3c0e00a4f7c0d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

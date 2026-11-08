@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuarticCubicResidueSeparable.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuarticCubicResidueSeparable.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicResidueSeparable.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicResidueSeparable.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticCubicResidueSeparation`](../../../../AssociativeRingsAndAlgebras/QuarticCubicResidueSeparation.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticCubicResidueSeparation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticCubicResidueSeparation.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [reduced_adjacencyCubic_separable](../../../../CommutativeAlgebra/QuarticCubicResidueSeparable.lean/declarations/reduced-adjacencycubic-separable.md) | 29 | `result-track:bfef92e6d2ba29df631076ee00bde7fd9ccc6b6dc11cf4581acf7c9997cf48b0` |
+| 1 | `theorem` | [reduced_adjacencyCubic_separable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicResidueSeparable.lean/declarations/reduced-adjacencycubic-separable.md) | 29 | `result-track:bfef92e6d2ba29df631076ee00bde7fd9ccc6b6dc11cf4581acf7c9997cf48b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Tube.lean/index.md) · [Full source](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Tube.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Tube.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Tube.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Tube](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Tube.lean/declarations/tube.md) | 14 | `declaration-track:7e3b29b04f17d9114016fc5382757575f1550ad7da9ddabb1e52ddf840987040` |
-| 2 | `def` | [axisPoint](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Tube.lean/declarations/axispoint.md) | 22 | `declaration-track:19df187cf74ed240b4fda3044ce3ca15b3b84817d9d05f7851577ca5b21e2713` |
-| 3 | `def` | [Contains](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Tube.lean/declarations/contains.md) | 28 | `declaration-track:b0ee4eb094e0db8180ace20f3fe9fc625abc402e04a448b9416dca0371e13cb5` |
-| 4 | `def` | [carrier](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Tube.lean/declarations/carrier.md) | 35 | `declaration-track:6dd17fd524824a394b5a5b1c0b10ca0dc4f7f2f6290c49e34bfdeb6a00787a6e` |
-| 5 | `theorem` | [mem_carrier_iff](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Tube.lean/declarations/mem-carrier-iff.md) | 39 | `result-track:14bbaa37a18342a1cba96592422ef42985fe7cf23241ee7d51be1371aa58f71a` |
-| 6 | `theorem` | [center_mem](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Tube.lean/declarations/center-mem.md) | 45 | `result-track:cfc9721ee0058d30bdcea69490962a5cf08ce927ebbff0fe97c5585df5b538a0` |
-| 7 | `theorem` | [carrier_nonempty](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Tube.lean/declarations/carrier-nonempty.md) | 52 | `result-track:85379b7628c10cf96c71754c29b866c8f55fc1ef05096461123d26ca2fe6fb63` |
+| 1 | `structure` | [Tube](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Tube.lean/declarations/tube.md) | 14 | `declaration-track:7e3b29b04f17d9114016fc5382757575f1550ad7da9ddabb1e52ddf840987040` |
+| 2 | `def` | [axisPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Tube.lean/declarations/axispoint.md) | 22 | `declaration-track:19df187cf74ed240b4fda3044ce3ca15b3b84817d9d05f7851577ca5b21e2713` |
+| 3 | `def` | [Contains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Tube.lean/declarations/contains.md) | 28 | `declaration-track:b0ee4eb094e0db8180ace20f3fe9fc625abc402e04a448b9416dca0371e13cb5` |
+| 4 | `def` | [carrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Tube.lean/declarations/carrier.md) | 35 | `declaration-track:6dd17fd524824a394b5a5b1c0b10ca0dc4f7f2f6290c49e34bfdeb6a00787a6e` |
+| 5 | `theorem` | [mem_carrier_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Tube.lean/declarations/mem-carrier-iff.md) | 39 | `result-track:14bbaa37a18342a1cba96592422ef42985fe7cf23241ee7d51be1371aa58f71a` |
+| 6 | `theorem` | [center_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Tube.lean/declarations/center-mem.md) | 45 | `result-track:cfc9721ee0058d30bdcea69490962a5cf08ce927ebbff0fe97c5585df5b538a0` |
+| 7 | `theorem` | [carrier_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Tube.lean/declarations/carrier-nonempty.md) | 52 | `result-track:85379b7628c10cf96c71754c29b866c8f55fc1ef05096461123d26ca2fe6fb63` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

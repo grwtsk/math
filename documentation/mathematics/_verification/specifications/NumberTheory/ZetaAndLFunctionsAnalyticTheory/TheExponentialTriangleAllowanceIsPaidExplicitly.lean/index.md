@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExponentialTriangleAllowanceIsPaidExplicitly.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExponentialTriangleAllowanceIsPaidExplicitly.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExponentialTriangleAllowanceIsPaidExplicitly.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExponentialTriangleAllowanceIsPaidExplicitly.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inverse_root_increment](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExponentialTriangleAllowanceIsPaidExplicitly.lean/declarations/inverse-root-increment.md) | 21 | `result-track:1b4575fc15f01607a1d2a371925a1a2fa253c3cfb18a202f32d4861e02222ec6` |
-| 2 | `theorem` | [inverse_root_sum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExponentialTriangleAllowanceIsPaidExplicitly.lean/declarations/inverse-root-sum.md) | 31 | `result-track:29e9b8d9e39f57681725697ecd07901cd9e540ed1c12c83b9f9fc897a74423fa` |
-| 3 | `theorem` | [weighted_absolute_mass](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExponentialTriangleAllowanceIsPaidExplicitly.lean/declarations/weighted-absolute-mass.md) | 40 | `result-track:e0615ec279ec2ca8eafaad90ea74ad67aac5f3a88eb7123914a017f46a71be94` |
-| 4 | `theorem` | [physicalEnergy_triangle](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExponentialTriangleAllowanceIsPaidExplicitly.lean/declarations/physicalenergy-triangle.md) | 62 | `result-track:66b6468eed489a2f8ca7ed00d6d7f3ef19bf91eda5d135f3be4e666356b8144b` |
-| 5 | `theorem` | [physicalEnergy_exponential_allowance](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExponentialTriangleAllowanceIsPaidExplicitly.lean/declarations/physicalenergy-exponential-allowance.md) | 79 | `result-track:8d3fb1b0c9f4bf7fc5df1a25aee1506e309caaba5f8b8bfc050f4fd1e40ae1a3` |
-| 6 | `theorem` | [crossEnergy_exponential_allowance](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExponentialTriangleAllowanceIsPaidExplicitly.lean/declarations/crossenergy-exponential-allowance.md) | 86 | `result-track:2b58fb7932fcebb9d901b6d4e1fd7ac0993661e4a90333942ada2aaa34c2cf91` |
+| 1 | `theorem` | [inverse_root_increment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExponentialTriangleAllowanceIsPaidExplicitly.lean/declarations/inverse-root-increment.md) | 21 | `result-track:1b4575fc15f01607a1d2a371925a1a2fa253c3cfb18a202f32d4861e02222ec6` |
+| 2 | `theorem` | [inverse_root_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExponentialTriangleAllowanceIsPaidExplicitly.lean/declarations/inverse-root-sum.md) | 31 | `result-track:29e9b8d9e39f57681725697ecd07901cd9e540ed1c12c83b9f9fc897a74423fa` |
+| 3 | `theorem` | [weighted_absolute_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExponentialTriangleAllowanceIsPaidExplicitly.lean/declarations/weighted-absolute-mass.md) | 40 | `result-track:e0615ec279ec2ca8eafaad90ea74ad67aac5f3a88eb7123914a017f46a71be94` |
+| 4 | `theorem` | [physicalEnergy_triangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExponentialTriangleAllowanceIsPaidExplicitly.lean/declarations/physicalenergy-triangle.md) | 62 | `result-track:66b6468eed489a2f8ca7ed00d6d7f3ef19bf91eda5d135f3be4e666356b8144b` |
+| 5 | `theorem` | [physicalEnergy_exponential_allowance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExponentialTriangleAllowanceIsPaidExplicitly.lean/declarations/physicalenergy-exponential-allowance.md) | 79 | `result-track:8d3fb1b0c9f4bf7fc5df1a25aee1506e309caaba5f8b8bfc050f4fd1e40ae1a3` |
+| 6 | `theorem` | [crossEnergy_exponential_allowance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExponentialTriangleAllowanceIsPaidExplicitly.lean/declarations/crossenergy-exponential-allowance.md) | 86 | `result-track:2b58fb7932fcebb9d901b6d4e1fd7ac0993661e4a90333942ada2aaa34c2cf91` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

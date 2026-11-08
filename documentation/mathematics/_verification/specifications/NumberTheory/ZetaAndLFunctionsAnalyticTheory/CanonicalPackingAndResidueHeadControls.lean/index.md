@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPackingAndResidueHeadControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPackingAndResidueHeadControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPackingAndResidueHeadControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPackingAndResidueHeadControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalPrimePowerPackingNecessity`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingNecessity.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.FiniteZetaResidueHead`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaResidueHead.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalPrimePowerPackingNecessity`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingNecessity.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.FiniteZetaResidueHead`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaResidueHead.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [comparison_requires_arithmetic_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPackingAndResidueHeadControls.lean/declarations/comparison-requires-arithmetic-decay.md) | 15 | `result-track:486010f7759f53e85959e968783cfcb9f113771fcebe952ef1b92b1696020382` |
-| 2 | `theorem` | [zero_multiplier_has_zero_head](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPackingAndResidueHeadControls.lean/declarations/zero-multiplier-has-zero-head.md) | 20 | `result-track:2582ff4eb6c1518c08de50376058a52089c80511fc592e7f662d6da7ddae22aa` |
+| 1 | `theorem` | [comparison_requires_arithmetic_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPackingAndResidueHeadControls.lean/declarations/comparison-requires-arithmetic-decay.md) | 15 | `result-track:486010f7759f53e85959e968783cfcb9f113771fcebe952ef1b92b1696020382` |
+| 2 | `theorem` | [zero_multiplier_has_zero_head](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPackingAndResidueHeadControls.lean/declarations/zero-multiplier-has-zero-head.md) | 20 | `result-track:2582ff4eb6c1518c08de50376058a52089c80511fc592e7f662d6da7ddae22aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

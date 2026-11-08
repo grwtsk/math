@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SincNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SincNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SincNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SincNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [measurable_sinc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SincNamespaced.lean/declarations/measurable-sinc.md) | 35 | `result-track:1796ced5412abdfb7d4872f50e5b2835486171ed1be02127768702738a1390e3` |
-| 2 | `lemma` | [stronglyMeasurable_sinc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SincNamespaced.lean/declarations/stronglymeasurable-sinc.md) | 38 | `result-track:40510262657ddfe3ab2b65120479f1f5ee08e994e705b4a26a5d5404ca1bb513` |
-| 3 | `lemma` | [integrable_sinc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SincNamespaced.lean/declarations/integrable-sinc.md) | 41 | `result-track:732a388f2a24baf61ce360042607a0cfcf43c75267acea7f41a31c1915c68424` |
-| 4 | `theorem` | [Measurable.sinc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SincNamespaced.lean/declarations/measurable-sinc-source-edition-2.md) | 52 | `result-track:bf3a9d4006f1cca3b045317e8c1823f33948af41d9096786eddb2d54fc789055` |
-| 5 | `theorem` | [AEMeasurable.sinc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SincNamespaced.lean/declarations/aemeasurable-sinc.md) | 56 | `result-track:7cdf152a956da5cc7860a7212174be16b80aa04a6c189200203f8f00c87376bc` |
-| 6 | `theorem` | [MeasureTheory.StronglyMeasurable.sinc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SincNamespaced.lean/declarations/measuretheory-stronglymeasurable-sinc.md) | 60 | `result-track:159d2eec7a2a29687e6600af5ca8f518aad3d5c86721a6127ec3a3e57dcc4618` |
-| 7 | `theorem` | [MeasureTheory.AEStronglyMeasurable.sinc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SincNamespaced.lean/declarations/measuretheory-aestronglymeasurable-sinc.md) | 65 | `result-track:92a2f0a7177d9d4fd628ea23c1f3a1df2533102d14903a14b4be6ac1b3d3763b` |
+| 1 | `lemma` | [measurable_sinc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SincNamespaced.lean/declarations/measurable-sinc.md) | 35 | `result-track:1796ced5412abdfb7d4872f50e5b2835486171ed1be02127768702738a1390e3` |
+| 2 | `lemma` | [stronglyMeasurable_sinc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SincNamespaced.lean/declarations/stronglymeasurable-sinc.md) | 38 | `result-track:40510262657ddfe3ab2b65120479f1f5ee08e994e705b4a26a5d5404ca1bb513` |
+| 3 | `lemma` | [integrable_sinc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SincNamespaced.lean/declarations/integrable-sinc.md) | 41 | `result-track:732a388f2a24baf61ce360042607a0cfcf43c75267acea7f41a31c1915c68424` |
+| 4 | `theorem` | [Measurable.sinc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SincNamespaced.lean/declarations/measurable-sinc-source-edition-2.md) | 52 | `result-track:bf3a9d4006f1cca3b045317e8c1823f33948af41d9096786eddb2d54fc789055` |
+| 5 | `theorem` | [AEMeasurable.sinc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SincNamespaced.lean/declarations/aemeasurable-sinc.md) | 56 | `result-track:7cdf152a956da5cc7860a7212174be16b80aa04a6c189200203f8f00c87376bc` |
+| 6 | `theorem` | [MeasureTheory.StronglyMeasurable.sinc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SincNamespaced.lean/declarations/measuretheory-stronglymeasurable-sinc.md) | 60 | `result-track:159d2eec7a2a29687e6600af5ca8f518aad3d5c86721a6127ec3a3e57dcc4618` |
+| 7 | `theorem` | [MeasureTheory.AEStronglyMeasurable.sinc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SincNamespaced.lean/declarations/measuretheory-aestronglymeasurable-sinc.md) | 65 | `result-track:92a2f0a7177d9d4fd628ea23c1f3a1df2533102d14903a14b4be6ac1b3d3763b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbit.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [InSameOrbit](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbit.lean/declarations/insameorbit.md) | 18 | `declaration-track:0c18fade413fdec9e3a7a99d54fb133c8818b9d2b8b160f31a84566867f5f95a` |
-| 2 | `structure` | [OrbitCanonicalizer](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbit.lean/declarations/orbitcanonicalizer.md) | 23 | `declaration-track:448a23d566fddd308254f816ef7d8a9fa41a2296a9227c40de9b94fec0f2fabc` |
-| 3 | `def` | [copyCanonicalizer](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbit.lean/declarations/copycanonicalizer.md) | 31 | `declaration-track:805355ce08c14b0580cf361e18d942416e340d065350571431edced372f31bd1` |
-| 4 | `theorem` | [orbitCanonicalizer_reconstruct](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbit.lean/declarations/orbitcanonicalizer-reconstruct.md) | 39 | `result-track:5c08d7f5aa714018be28a3fa5bc3f981afeb66e603086a40258470856faa05c3` |
-| 5 | `theorem` | [copyCanonicalizer_reconstruct](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbit.lean/declarations/copycanonicalizer-reconstruct.md) | 46 | `result-track:f4c320cdef8763161d9f6b9b8ecf1978ad670ce7809a52abc90993e88ed8eaae` |
+| 1 | `def` | [InSameOrbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbit.lean/declarations/insameorbit.md) | 18 | `declaration-track:0c18fade413fdec9e3a7a99d54fb133c8818b9d2b8b160f31a84566867f5f95a` |
+| 2 | `structure` | [OrbitCanonicalizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbit.lean/declarations/orbitcanonicalizer.md) | 23 | `declaration-track:448a23d566fddd308254f816ef7d8a9fa41a2296a9227c40de9b94fec0f2fabc` |
+| 3 | `def` | [copyCanonicalizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbit.lean/declarations/copycanonicalizer.md) | 31 | `declaration-track:805355ce08c14b0580cf361e18d942416e340d065350571431edced372f31bd1` |
+| 4 | `theorem` | [orbitCanonicalizer_reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbit.lean/declarations/orbitcanonicalizer-reconstruct.md) | 39 | `result-track:5c08d7f5aa714018be28a3fa5bc3f981afeb66e603086a40258470856faa05c3` |
+| 5 | `theorem` | [copyCanonicalizer_reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbit.lean/declarations/copycanonicalizer-reconstruct.md) | 46 | `result-track:f4c320cdef8763161d9f6b9b8ecf1978ad670ce7809a52abc90993e88ed8eaae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

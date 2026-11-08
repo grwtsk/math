@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FullLinePlancherelNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FullLinePlancherelNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLinePlancherelNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLinePlancherelNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [norm_sq_toLp](../../../../MeasureAndIntegration/FullLinePlancherelNamespaced.lean/declarations/norm-sq-tolp.md) | 22 | `result-track:6e6022cb202bd174cf4588faf702520261ae9fce6ed7a63f105d8826467bb6e3` |
-| 2 | `theorem` | [fourier_integral_norm_sq](../../../../MeasureAndIntegration/FullLinePlancherelNamespaced.lean/declarations/fourier-integral-norm-sq.md) | 33 | `result-track:9ea9ef285d3f42deaa4dc01180074d478df0f3afdcf7935771e2a80492b520c3` |
-| 3 | `theorem` | [angular_plancherel](../../../../MeasureAndIntegration/FullLinePlancherelNamespaced.lean/declarations/angular-plancherel.md) | 41 | `result-track:f157affbe50dbb2b30baf1ead307d3c2b0752415bcf92a071ac980eb7f5ea5c7` |
+| 1 | `theorem` | [norm_sq_toLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLinePlancherelNamespaced.lean/declarations/norm-sq-tolp.md) | 22 | `result-track:6e6022cb202bd174cf4588faf702520261ae9fce6ed7a63f105d8826467bb6e3` |
+| 2 | `theorem` | [fourier_integral_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLinePlancherelNamespaced.lean/declarations/fourier-integral-norm-sq.md) | 33 | `result-track:9ea9ef285d3f42deaa4dc01180074d478df0f3afdcf7935771e2a80492b520c3` |
+| 3 | `theorem` | [angular_plancherel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLinePlancherelNamespaced.lean/declarations/angular-plancherel.md) | 41 | `result-track:f157affbe50dbb2b30baf1ead307d3c2b0752415bcf92a071ac980eb7f5ea5c7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

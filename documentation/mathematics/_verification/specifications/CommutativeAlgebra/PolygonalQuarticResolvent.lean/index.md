@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PolygonalQuarticResolvent.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PolygonalQuarticResolvent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticResolvent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticResolvent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quarticPairSum](../../../../CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/quarticpairsum.md) | 27 | `declaration-track:2a3d135ff8a64363b66ca7f8ec73ec93b0beaff91066b59b47a55a35268e6eee` |
-| 2 | `def` | [cycleABCD](../../../../CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/cycleabcd.md) | 31 | `declaration-track:eb64f633250a15540587074735453b7c4fca1776ad2fab99b8949311270cf3a3` |
-| 3 | `def` | [cycleACBD](../../../../CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/cycleacbd.md) | 35 | `declaration-track:1d6457aeb95de0cfc06e246873eb182801a2d7bc334381446765c9ad91b562f1` |
-| 4 | `def` | [cycleABDC](../../../../CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/cycleabdc.md) | 39 | `declaration-track:fd5e98225c0faa50447d9a3668dcc3b22ea05f681fb9c04684300d400b4ceba6` |
-| 5 | `def` | [matchAC_BD](../../../../CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/matchac-bd.md) | 43 | `declaration-track:deffc943ef39dc059eeb63b8e34e0263635aba0fc6c315a2c950fd4c0d05b006` |
-| 6 | `def` | [matchAB_CD](../../../../CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/matchab-cd.md) | 46 | `declaration-track:1c7285d7aca041161e97d07df62b249896d27c1f97bb6596750cb76b0f0f736d` |
-| 7 | `def` | [matchAD_BC](../../../../CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/matchad-bc.md) | 49 | `declaration-track:3aa2953926b66a73655d6cf1c3a19dd6fdab8a40289dcaeed5a01343958848f6` |
-| 8 | `theorem` | [cycleABCD_eq_complement](../../../../CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/cycleabcd-eq-complement.md) | 51 | `result-track:28acd963a7cdd7f8a5708650874d83dbb1172af269d4e0558a97407b4c84b89c` |
-| 9 | `theorem` | [cycleACBD_eq_complement](../../../../CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/cycleacbd-eq-complement.md) | 57 | `result-track:bfec25d3826080fb5d40a4481dc76901fb786ab107a3bc9e69ac616cea7ca5e0` |
-| 10 | `theorem` | [cycleABDC_eq_complement](../../../../CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/cycleabdc-eq-complement.md) | 63 | `result-track:cc4bda453eb986922ccdf8fe03f2472eaf1a5807cffbe6d36cfe4e67137d0f9d` |
-| 11 | `def` | [cycleCubic](../../../../CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/cyclecubic.md) | 70 | `declaration-track:cdfce24036116152596f66778d20d8b1f09787d0ce5902800fb8c31d9998cd60` |
-| 12 | `def` | [complementaryMatchingCubic](../../../../CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/complementarymatchingcubic.md) | 76 | `declaration-track:d74a8fa38fd6df981e9a140166dd660144104576c6f0fce5d4e7836845aaa9f9` |
-| 13 | `theorem` | [cycleCubic_eq_complementaryMatchingCubic](../../../../CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/cyclecubic-eq-complementarymatchingcubic.md) | 84 | `result-track:4a707705aaba4791a59c30ff336f05904f21e5f559361c2924aaffc9178602df` |
+| 1 | `def` | [quarticPairSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/quarticpairsum.md) | 27 | `declaration-track:2a3d135ff8a64363b66ca7f8ec73ec93b0beaff91066b59b47a55a35268e6eee` |
+| 2 | `def` | [cycleABCD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/cycleabcd.md) | 31 | `declaration-track:eb64f633250a15540587074735453b7c4fca1776ad2fab99b8949311270cf3a3` |
+| 3 | `def` | [cycleACBD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/cycleacbd.md) | 35 | `declaration-track:1d6457aeb95de0cfc06e246873eb182801a2d7bc334381446765c9ad91b562f1` |
+| 4 | `def` | [cycleABDC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/cycleabdc.md) | 39 | `declaration-track:fd5e98225c0faa50447d9a3668dcc3b22ea05f681fb9c04684300d400b4ceba6` |
+| 5 | `def` | [matchAC_BD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/matchac-bd.md) | 43 | `declaration-track:deffc943ef39dc059eeb63b8e34e0263635aba0fc6c315a2c950fd4c0d05b006` |
+| 6 | `def` | [matchAB_CD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/matchab-cd.md) | 46 | `declaration-track:1c7285d7aca041161e97d07df62b249896d27c1f97bb6596750cb76b0f0f736d` |
+| 7 | `def` | [matchAD_BC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/matchad-bc.md) | 49 | `declaration-track:3aa2953926b66a73655d6cf1c3a19dd6fdab8a40289dcaeed5a01343958848f6` |
+| 8 | `theorem` | [cycleABCD_eq_complement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/cycleabcd-eq-complement.md) | 51 | `result-track:28acd963a7cdd7f8a5708650874d83dbb1172af269d4e0558a97407b4c84b89c` |
+| 9 | `theorem` | [cycleACBD_eq_complement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/cycleacbd-eq-complement.md) | 57 | `result-track:bfec25d3826080fb5d40a4481dc76901fb786ab107a3bc9e69ac616cea7ca5e0` |
+| 10 | `theorem` | [cycleABDC_eq_complement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/cycleabdc-eq-complement.md) | 63 | `result-track:cc4bda453eb986922ccdf8fe03f2472eaf1a5807cffbe6d36cfe4e67137d0f9d` |
+| 11 | `def` | [cycleCubic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/cyclecubic.md) | 70 | `declaration-track:cdfce24036116152596f66778d20d8b1f09787d0ce5902800fb8c31d9998cd60` |
+| 12 | `def` | [complementaryMatchingCubic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/complementarymatchingcubic.md) | 76 | `declaration-track:d74a8fa38fd6df981e9a140166dd660144104576c6f0fce5d4e7836845aaa9f9` |
+| 13 | `theorem` | [cycleCubic_eq_complementaryMatchingCubic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticResolvent.lean/declarations/cyclecubic-eq-complementarymatchingcubic.md) | 84 | `result-track:4a707705aaba4791a59c30ff336f05904f21e5f559361c2924aaffc9178602df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

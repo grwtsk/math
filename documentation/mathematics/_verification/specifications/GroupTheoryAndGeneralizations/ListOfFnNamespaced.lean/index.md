@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ListOfFnNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ListOfFnNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ListOfFnNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ListOfFnNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_prod_list_ofFn](../../../../GroupTheoryAndGeneralizations/ListOfFnNamespaced.lean/declarations/mem-prod-list-offn.md) | 31 | `result-track:9b1d9557a4ed9dd76a0408c2c5b9bd0c77edc01e6a68f75b0119cf19b58eea59` |
-| 2 | `theorem` | [mem_list_prod](../../../../GroupTheoryAndGeneralizations/ListOfFnNamespaced.lean/declarations/mem-list-prod.md) | 39 | `result-track:50ec188cc7a1e85bb642c286a36fa5efa8a8b1e9e85a407bd9892c8c9a0001f3` |
-| 3 | `theorem` | [mem_pow](../../../../GroupTheoryAndGeneralizations/ListOfFnNamespaced.lean/declarations/mem-pow.md) | 53 | `result-track:fa2a86dc477a5868ca47366e191c28a6bb53af70a7d0f30df1e58b76258afa35` |
+| 1 | `theorem` | [mem_prod_list_ofFn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ListOfFnNamespaced.lean/declarations/mem-prod-list-offn.md) | 31 | `result-track:9b1d9557a4ed9dd76a0408c2c5b9bd0c77edc01e6a68f75b0119cf19b58eea59` |
+| 2 | `theorem` | [mem_list_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ListOfFnNamespaced.lean/declarations/mem-list-prod.md) | 39 | `result-track:50ec188cc7a1e85bb642c286a36fa5efa8a8b1e9e85a407bd9892c8c9a0001f3` |
+| 3 | `theorem` | [mem_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ListOfFnNamespaced.lean/declarations/mem-pow.md) | 53 | `result-track:fa2a86dc477a5868ca47366e191c28a6bb53af70a7d0f30df1e58b76258afa35` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

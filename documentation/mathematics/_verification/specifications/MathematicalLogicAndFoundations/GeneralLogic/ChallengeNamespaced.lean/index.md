@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChallengeNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChallengeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChallengeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChallengeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChallengeNamespaced.lean/declarations/hex.md) | 9 | `result-track:c94b96ed38dbf86570dd5e733205f9695d0f592029d5023e56693983bfe2166f` |
-| 2 | `def` | [w](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChallengeNamespaced.lean/declarations/w.md) | 13 | `declaration-track:c6b7f837b85c611b2b00bf54f3d0d7240ac022b3f1832848c2192ca3dadc8741` |
-| 3 | `theorem` | [hw](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChallengeNamespaced.lean/declarations/hw.md) | 15 | `result-track:433c9fa40ae245ca153514a6f08ab3e3e2f3a23e56dcae42b34b89251369577d` |
+| 1 | `theorem` | [hex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChallengeNamespaced.lean/declarations/hex.md) | 9 | `result-track:c94b96ed38dbf86570dd5e733205f9695d0f592029d5023e56693983bfe2166f` |
+| 2 | `def` | [w](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChallengeNamespaced.lean/declarations/w.md) | 13 | `declaration-track:c6b7f837b85c611b2b00bf54f3d0d7240ac022b3f1832848c2192ca3dadc8741` |
+| 3 | `theorem` | [hw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChallengeNamespaced.lean/declarations/hw.md) | 15 | `result-track:433c9fa40ae245ca153514a6f08ab3e3e2f3a23e56dcae42b34b89251369577d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

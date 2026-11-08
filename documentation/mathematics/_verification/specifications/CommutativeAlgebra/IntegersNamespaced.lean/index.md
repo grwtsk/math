@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IntegersNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IntegersNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegersNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegersNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [integer](../../../../CommutativeAlgebra/IntegersNamespaced.lean/declarations/integer.md) | 38 | `declaration-track:2fded9e8ae191349bb994a350ce63f70b1a5e35fa6dc8da05a632620ff0a28ba` |
-| 2 | `structure` | [Integers](../../../../CommutativeAlgebra/IntegersNamespaced.lean/declarations/integers.md) | 59 | `declaration-track:662d4f37c2c87f67a1ff0a21b607f9ff69634ef826d2b5abc66d34e9a77c8edc` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/IntegersNamespaced.lean/declarations/instance.md) | 66 | `declaration-track:280f5ed4ee2fa2e301f37f177e63156ee7623cf7980f029dbca4aad858e52d66` |
-| 4 | `theorem` | [integer.integers](../../../../CommutativeAlgebra/IntegersNamespaced.lean/declarations/integer-integers.md) | 69 | `result-track:bf50554ff42048a539abe3b5e776e2ef3853abd1d0262b868032131bae07bebf` |
-| 5 | `theorem` | [one_of_isUnit](../../../../CommutativeAlgebra/IntegersNamespaced.lean/declarations/one-of-isunit.md) | 80 | `result-track:844ede760eea95a426373afdeb8d6516f265dd390fd5c9876f4c1b00279e7669` |
-| 6 | `theorem` | [isUnit_of_one](../../../../CommutativeAlgebra/IntegersNamespaced.lean/declarations/isunit-of-one.md) | 88 | `result-track:52138ab7b1c0a8bfdd149c47c1b20e0a0973546cc8f4bb438266aceca2540111` |
-| 7 | `theorem` | [le_of_dvd](../../../../CommutativeAlgebra/IntegersNamespaced.lean/declarations/le-of-dvd.md) | 101 | `result-track:d54be9cb274c67cc4d46bb5414bd0486276c4823d55ba9d769966a778aa0f9d2` |
-| 8 | `theorem` | [dvd_of_le](../../../../CommutativeAlgebra/IntegersNamespaced.lean/declarations/dvd-of-le.md) | 119 | `result-track:0580520ab8d99e40adc91385c442b2016f4d3e6f64befea32bf75ba3805596c9` |
-| 9 | `theorem` | [dvd_iff_le](../../../../CommutativeAlgebra/IntegersNamespaced.lean/declarations/dvd-iff-le.md) | 134 | `result-track:78d1cc66d25ce81ef574eddd4827c2e94f798d0c32ece5767cfa8cfc72dbcf30` |
-| 10 | `theorem` | [le_iff_dvd](../../../../CommutativeAlgebra/IntegersNamespaced.lean/declarations/le-iff-dvd.md) | 138 | `result-track:7df2b8e0a84d0ab084ce13f2572881ff9e8c71b68568d18be5c53bf8457d2ea2` |
+| 1 | `def` | [integer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegersNamespaced.lean/declarations/integer.md) | 38 | `declaration-track:2fded9e8ae191349bb994a350ce63f70b1a5e35fa6dc8da05a632620ff0a28ba` |
+| 2 | `structure` | [Integers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegersNamespaced.lean/declarations/integers.md) | 59 | `declaration-track:662d4f37c2c87f67a1ff0a21b607f9ff69634ef826d2b5abc66d34e9a77c8edc` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegersNamespaced.lean/declarations/instance.md) | 66 | `declaration-track:280f5ed4ee2fa2e301f37f177e63156ee7623cf7980f029dbca4aad858e52d66` |
+| 4 | `theorem` | [integer.integers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegersNamespaced.lean/declarations/integer-integers.md) | 69 | `result-track:bf50554ff42048a539abe3b5e776e2ef3853abd1d0262b868032131bae07bebf` |
+| 5 | `theorem` | [one_of_isUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegersNamespaced.lean/declarations/one-of-isunit.md) | 80 | `result-track:844ede760eea95a426373afdeb8d6516f265dd390fd5c9876f4c1b00279e7669` |
+| 6 | `theorem` | [isUnit_of_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegersNamespaced.lean/declarations/isunit-of-one.md) | 88 | `result-track:52138ab7b1c0a8bfdd149c47c1b20e0a0973546cc8f4bb438266aceca2540111` |
+| 7 | `theorem` | [le_of_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegersNamespaced.lean/declarations/le-of-dvd.md) | 101 | `result-track:d54be9cb274c67cc4d46bb5414bd0486276c4823d55ba9d769966a778aa0f9d2` |
+| 8 | `theorem` | [dvd_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegersNamespaced.lean/declarations/dvd-of-le.md) | 119 | `result-track:0580520ab8d99e40adc91385c442b2016f4d3e6f64befea32bf75ba3805596c9` |
+| 9 | `theorem` | [dvd_iff_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegersNamespaced.lean/declarations/dvd-iff-le.md) | 134 | `result-track:78d1cc66d25ce81ef574eddd4827c2e94f798d0c32ece5767cfa8cfc72dbcf30` |
+| 10 | `theorem` | [le_iff_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegersNamespaced.lean/declarations/le-iff-dvd.md) | 138 | `result-track:7df2b8e0a84d0ab084ce13f2572881ff9e8c71b68568d18be5c53bf8457d2ea2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceipt.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceipt.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceipt.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceipt.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [arxiv181204760CheckedProofReceipt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceipt.lean/declarations/arxiv181204760checkedproofreceipt.md) | 7 | `declaration-track:f9d0315fa0d9ce3090ca5510463a075499aaa49911512ec0e71403639ef4227c` |
-| 2 | `theorem` | [arxiv181204760_receipt_not_promotable_to_checked_proof](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceipt.lean/declarations/arxiv181204760-receipt-not-promotable-to-checked-proof.md) | 17 | `result-track:c85b664fac4d19281fff3562244f159698b0c98006fcb2507c08b6d85ce658c0` |
-| 3 | `theorem` | [arxiv181204760_receipt_has_open_residue](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceipt.lean/declarations/arxiv181204760-receipt-has-open-residue.md) | 20 | `result-track:2ded040387379a92f940a5874f8fcf9bfaa0fa794ee79ed8f15d888c683d4d23` |
+| 1 | `def` | [arxiv181204760CheckedProofReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceipt.lean/declarations/arxiv181204760checkedproofreceipt.md) | 7 | `declaration-track:f9d0315fa0d9ce3090ca5510463a075499aaa49911512ec0e71403639ef4227c` |
+| 2 | `theorem` | [arxiv181204760_receipt_not_promotable_to_checked_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceipt.lean/declarations/arxiv181204760-receipt-not-promotable-to-checked-proof.md) | 17 | `result-track:c85b664fac4d19281fff3562244f159698b0c98006fcb2507c08b6d85ce658c0` |
+| 3 | `theorem` | [arxiv181204760_receipt_has_open_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceipt.lean/declarations/arxiv181204760-receipt-has-open-residue.md) | 20 | `result-track:2ded040387379a92f940a5874f8fcf9bfaa0fa794ee79ed8f15d888c683d4d23` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

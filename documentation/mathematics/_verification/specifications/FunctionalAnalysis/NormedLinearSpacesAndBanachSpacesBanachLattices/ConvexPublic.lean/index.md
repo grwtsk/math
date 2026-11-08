@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexPublic.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Wbtw.dist_add_dist](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexPublic.lean/declarations/wbtw-dist-add-dist.md) | 34 | `result-track:7bf38aa3952bf286da71acc62087180d3937276f8e074248247154e0868f8ed9` |
-| 2 | `theorem` | [dist_add_dist_of_mem_segment](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexPublic.lean/declarations/dist-add-dist-of-mem-segment.md) | 39 | `result-track:4347f8288ddb667747b5dcc7c527f9ed4fa76497e69d567ea1eaa88fa53fd068` |
-| 3 | `lemma` | [exists_mem_interior_convexHull_affineBasis](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexPublic.lean/declarations/exists-mem-interior-convexhull-affinebasis.md) | 49 | `result-track:3bbbf5b98e308bee142009cbf3722a396f26bf1d05ca26a58dcb7de8a10d14a5` |
-| 4 | `theorem` | [Convex.exists_subset_interior_convexHull_finset_of_isCompact](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexPublic.lean/declarations/convex-exists-subset-interior-convexhull-finset-of-iscompact.md) | 94 | `result-track:929f86c398ca7c1cbbb729ce8e062e06fee7b6cae5bae5d5320c76e98c2984ad` |
+| 1 | `theorem` | [Wbtw.dist_add_dist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexPublic.lean/declarations/wbtw-dist-add-dist.md) | 34 | `result-track:7bf38aa3952bf286da71acc62087180d3937276f8e074248247154e0868f8ed9` |
+| 2 | `theorem` | [dist_add_dist_of_mem_segment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexPublic.lean/declarations/dist-add-dist-of-mem-segment.md) | 39 | `result-track:4347f8288ddb667747b5dcc7c527f9ed4fa76497e69d567ea1eaa88fa53fd068` |
+| 3 | `lemma` | [exists_mem_interior_convexHull_affineBasis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexPublic.lean/declarations/exists-mem-interior-convexhull-affinebasis.md) | 49 | `result-track:3bbbf5b98e308bee142009cbf3722a396f26bf1d05ca26a58dcb7de8a10d14a5` |
+| 4 | `theorem` | [Convex.exists_subset_interior_convexHull_finset_of_isCompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexPublic.lean/declarations/convex-exists-subset-interior-convexhull-finset-of-iscompact.md) | 94 | `result-track:929f86c398ca7c1cbbb729ce8e062e06fee7b6cae5bae5d5320c76e98c2984ad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

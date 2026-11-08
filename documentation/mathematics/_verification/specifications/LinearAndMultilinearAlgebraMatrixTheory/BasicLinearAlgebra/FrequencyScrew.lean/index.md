@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FrequencyScrew.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FrequencyScrew.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FrequencyScrew.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FrequencyScrew.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.GraphTheory.RelationSandwich`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationSandwich.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Combinatorics.GraphTheory.RelationSandwich`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationSandwich.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Algebra.BigOperators.Group.Finset.Basic` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.LinearAlgebra.Pi` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [operator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FrequencyScrew.lean/declarations/operator.md) | 31 | `declaration-track:f84ead5aa9d3e3e633c0778b089c29622792017ff4547ba36b37e2d75a1e147b` |
-| 2 | `theorem` | [operator_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FrequencyScrew.lean/declarations/operator-apply.md) | 42 | `result-track:54e43cf125ab28080c0b6b3773876a387e9b33e7eb09761c30f6b34c99a7f30e` |
-| 3 | `structure` | [OrderedOperator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FrequencyScrew.lean/declarations/orderedoperator.md) | 53 | `declaration-track:6538547856c5b1fa22a926b6a1b63301135e0299784064f1a4eec8c8dcb50bb9` |
-| 4 | `def` | [OrderedOperator.toLinearMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FrequencyScrew.lean/declarations/orderedoperator-tolinearmap.md) | 64 | `declaration-track:58de9249d72319238da1dfa41fce17b3cd34962ecd90a46858e040a448f48e70` |
-| 5 | `theorem` | [OrderedOperator.path_frequency_lt](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FrequencyScrew.lean/declarations/orderedoperator-path-frequency-lt.md) | 72 | `result-track:5b01e71b34243fd9466e5e6ab3028e82c7ce8fe7fdcb8e9705f286e64d331c90` |
+| 1 | `def` | [operator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FrequencyScrew.lean/declarations/operator.md) | 31 | `declaration-track:f84ead5aa9d3e3e633c0778b089c29622792017ff4547ba36b37e2d75a1e147b` |
+| 2 | `theorem` | [operator_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FrequencyScrew.lean/declarations/operator-apply.md) | 42 | `result-track:54e43cf125ab28080c0b6b3773876a387e9b33e7eb09761c30f6b34c99a7f30e` |
+| 3 | `structure` | [OrderedOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FrequencyScrew.lean/declarations/orderedoperator.md) | 53 | `declaration-track:6538547856c5b1fa22a926b6a1b63301135e0299784064f1a4eec8c8dcb50bb9` |
+| 4 | `def` | [OrderedOperator.toLinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FrequencyScrew.lean/declarations/orderedoperator-tolinearmap.md) | 64 | `declaration-track:58de9249d72319238da1dfa41fce17b3cd34962ecd90a46858e040a448f48e70` |
+| 5 | `theorem` | [OrderedOperator.path_frequency_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FrequencyScrew.lean/declarations/orderedoperator-path-frequency-lt.md) | 72 | `result-track:5b01e71b34243fd9466e5e6ab3028e82c7ce8fe7fdcb8e9705f286e64d331c90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

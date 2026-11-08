@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualMertensOrdinaryLimitEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualMertensOrdinaryLimitEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMertensOrdinaryLimitEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMertensOrdinaryLimitEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualPntMertensLimit](../../../../MeasureAndIntegration/SourceActualMertensOrdinaryLimitEdition2.lean/declarations/actualpntmertenslimit.md) | 23 | `declaration-track:44cc15283ddd693889d37046b2177224ae7dd51d3a204be74b123a449d833c09` |
-| 2 | `theorem` | [actualRelativePsiTimeError_eq_pnt_error](../../../../MeasureAndIntegration/SourceActualMertensOrdinaryLimitEdition2.lean/declarations/actualrelativepsitimeerror-eq-pnt-error.md) | 27 | `result-track:31612404170d8aedfe9044fb500369fcd29a6568d4861372ded404837cdde2c3` |
-| 3 | `theorem` | [mangoldtLogError_eq_pnt_relative_primitive](../../../../MeasureAndIntegration/SourceActualMertensOrdinaryLimitEdition2.lean/declarations/mangoldtlogerror-eq-pnt-relative-primitive.md) | 33 | `result-track:ba5facfc4ae047879f8fd6e66c56c9ad209ac95b258e439e9269f61cc9744595` |
-| 4 | `theorem` | [actualRelativePsiTimePrimitive_tendsto](../../../../MeasureAndIntegration/SourceActualMertensOrdinaryLimitEdition2.lean/declarations/actualrelativepsitimeprimitive-tendsto.md) | 40 | `result-track:d3eef16196c4602b2e998e15f92e137655044f956d37848c144984fce07d1fa8` |
-| 5 | `theorem` | [mangoldtLogError_tendsto_actualPntMertensLimit](../../../../MeasureAndIntegration/SourceActualMertensOrdinaryLimitEdition2.lean/declarations/mangoldtlogerror-tendsto-actualpntmertenslimit.md) | 49 | `result-track:2ec6feca9b2e742a227e7e4155e786bc2499f699fb2963fbc53ce7b95f6eaf34` |
-| 6 | `theorem` | [actualCenteredMangoldtLogError_tendsto](../../../../MeasureAndIntegration/SourceActualMertensOrdinaryLimitEdition2.lean/declarations/actualcenteredmangoldtlogerror-tendsto.md) | 62 | `result-track:7c5ecf519c54dbd91ca5cc0d2c2314220539ff26dd405f313e0431923c59f297` |
+| 1 | `def` | [actualPntMertensLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMertensOrdinaryLimitEdition2.lean/declarations/actualpntmertenslimit.md) | 23 | `declaration-track:44cc15283ddd693889d37046b2177224ae7dd51d3a204be74b123a449d833c09` |
+| 2 | `theorem` | [actualRelativePsiTimeError_eq_pnt_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMertensOrdinaryLimitEdition2.lean/declarations/actualrelativepsitimeerror-eq-pnt-error.md) | 27 | `result-track:31612404170d8aedfe9044fb500369fcd29a6568d4861372ded404837cdde2c3` |
+| 3 | `theorem` | [mangoldtLogError_eq_pnt_relative_primitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMertensOrdinaryLimitEdition2.lean/declarations/mangoldtlogerror-eq-pnt-relative-primitive.md) | 33 | `result-track:ba5facfc4ae047879f8fd6e66c56c9ad209ac95b258e439e9269f61cc9744595` |
+| 4 | `theorem` | [actualRelativePsiTimePrimitive_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMertensOrdinaryLimitEdition2.lean/declarations/actualrelativepsitimeprimitive-tendsto.md) | 40 | `result-track:d3eef16196c4602b2e998e15f92e137655044f956d37848c144984fce07d1fa8` |
+| 5 | `theorem` | [mangoldtLogError_tendsto_actualPntMertensLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMertensOrdinaryLimitEdition2.lean/declarations/mangoldtlogerror-tendsto-actualpntmertenslimit.md) | 49 | `result-track:2ec6feca9b2e742a227e7e4155e786bc2499f699fb2963fbc53ce7b95f6eaf34` |
+| 6 | `theorem` | [actualCenteredMangoldtLogError_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMertensOrdinaryLimitEdition2.lean/declarations/actualcenteredmangoldtlogerror-tendsto.md) | 62 | `result-track:7c5ecf519c54dbd91ca5cc0d2c2314220539ff26dd405f313e0431923c59f297` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/MoserMatrixHodge.lean/index.md) · [Full source](../../../../Geometry/MoserMatrixHodge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MoserMatrixHodge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MoserMatrixHodge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Geometry.Hodge.FiniteMatrixHodge`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteMatrixHodge.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Geometry.Hodge.FiniteMatrixHodge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteMatrixHodge.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [hodgeData](../../../../Geometry/MoserMatrixHodge.lean/declarations/hodgedata.md) | 10 | `declaration-track:0e0a922d3e7980d2e76bc03fa26e4a21e94f54e1fde664d004399d8044d70ed1` |
-| 2 | `theorem` | [laplacian_nonneg](../../../../Geometry/MoserMatrixHodge.lean/declarations/laplacian-nonneg.md) | 15 | `result-track:7552a948d53ea8a267cc1671a1093276f2c3f91f6868908515ee9a7777cf1d0f` |
-| 3 | `theorem` | [harmonic_iff_constant](../../../../Geometry/MoserMatrixHodge.lean/declarations/harmonic-iff-constant.md) | 21 | `result-track:e037e850cb3f2246847eb127fb97d64ab6562a76d6638d5c6b74102aae2c170b` |
-| 4 | `theorem` | [constant_harmonic](../../../../Geometry/MoserMatrixHodge.lean/declarations/constant-harmonic.md) | 38 | `result-track:1e3e1866e317e8bc8ef9c59383017a3ab51caaacfb6bd51abbc795a9636b23c3` |
+| 1 | `def` | [hodgeData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MoserMatrixHodge.lean/declarations/hodgedata.md) | 10 | `declaration-track:0e0a922d3e7980d2e76bc03fa26e4a21e94f54e1fde664d004399d8044d70ed1` |
+| 2 | `theorem` | [laplacian_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MoserMatrixHodge.lean/declarations/laplacian-nonneg.md) | 15 | `result-track:7552a948d53ea8a267cc1671a1093276f2c3f91f6868908515ee9a7777cf1d0f` |
+| 3 | `theorem` | [harmonic_iff_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MoserMatrixHodge.lean/declarations/harmonic-iff-constant.md) | 21 | `result-track:e037e850cb3f2246847eb127fb97d64ab6562a76d6638d5c6b74102aae2c170b` |
+| 4 | `theorem` | [constant_harmonic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MoserMatrixHodge.lean/declarations/constant-harmonic.md) | 38 | `result-track:1e3e1866e317e8bc8ef9c59383017a3ab51caaacfb6bd51abbc795a9636b23c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

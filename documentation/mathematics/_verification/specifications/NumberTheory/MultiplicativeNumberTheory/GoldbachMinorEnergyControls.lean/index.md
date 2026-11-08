@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyControls.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.GoldbachMinorEnergyBarrier`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.GoldbachMinorPhaseBalance`](../../../../../MeasureAndIntegration/GoldbachMinorPhaseBalance.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachMinorEnergyBarrier`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachMinorPhaseBalance`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachMinorPhaseBalance.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [absolute_mass_can_hide_signed_cancellation](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyControls.lean/declarations/absolute-mass-can-hide-signed-cancellation.md) | 16 | `result-track:87caa10edd4690769725302cec37048b3eb68814b9f5bc6130deeb3e2e63f802` |
-| 2 | `theorem` | [phase_balance_does_not_require_small_imaginary_energy](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyControls.lean/declarations/phase-balance-does-not-require-small-imaginary-energy.md) | 22 | `result-track:76b8b260c0a4e0310ab81d8734c284fc265ff6d2588aee2e617af25972677f72` |
-| 3 | `theorem` | [square_total_at_two](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyControls.lean/declarations/square-total-at-two.md) | 26 | `result-track:14692c8b4f321ddad1e42288554a96d82025d0d037c6677bfb89c3cc71e5ad29` |
-| 4 | `theorem` | [square_total_no_atom_at_four](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyControls.lean/declarations/square-total-no-atom-at-four.md) | 31 | `result-track:034acdc0b41f0bbe074443f380e76827b9a5f371309dad9570dd8f5d8090a33d` |
-| 5 | `theorem` | [logarithmic_threshold_for_two](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyControls.lean/declarations/logarithmic-threshold-for-two.md) | 36 | `result-track:b331a7b37f33e610ff5c38b2b1c98ba0e72b5c206cfdc0c67984c5607e4bba52` |
+| 1 | `theorem` | [absolute_mass_can_hide_signed_cancellation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyControls.lean/declarations/absolute-mass-can-hide-signed-cancellation.md) | 16 | `result-track:87caa10edd4690769725302cec37048b3eb68814b9f5bc6130deeb3e2e63f802` |
+| 2 | `theorem` | [phase_balance_does_not_require_small_imaginary_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyControls.lean/declarations/phase-balance-does-not-require-small-imaginary-energy.md) | 22 | `result-track:76b8b260c0a4e0310ab81d8734c284fc265ff6d2588aee2e617af25972677f72` |
+| 3 | `theorem` | [square_total_at_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyControls.lean/declarations/square-total-at-two.md) | 26 | `result-track:14692c8b4f321ddad1e42288554a96d82025d0d037c6677bfb89c3cc71e5ad29` |
+| 4 | `theorem` | [square_total_no_atom_at_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyControls.lean/declarations/square-total-no-atom-at-four.md) | 31 | `result-track:034acdc0b41f0bbe074443f380e76827b9a5f371309dad9570dd8f5d8090a33d` |
+| 5 | `theorem` | [logarithmic_threshold_for_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyControls.lean/declarations/logarithmic-threshold-for-two.md) | 36 | `result-track:b331a7b37f33e610ff5c38b2b1c98ba0e72b5c206cfdc0c67984c5607e4bba52` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

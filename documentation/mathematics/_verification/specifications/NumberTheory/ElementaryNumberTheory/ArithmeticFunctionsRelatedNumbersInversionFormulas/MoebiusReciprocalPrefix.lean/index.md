@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefix.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.ArithmeticFunctions.DensityFiniteSums`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSums.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.ArithmeticFunctions.DensityFiniteSums`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSums.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Algebra.Order.Floor.Semifield` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [densityMobiusReciprocalPrefix](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefix.lean/declarations/densitymobiusreciprocalprefix.md) | 18 | `declaration-track:2dac2196efc7ddb1f41f1f3eb010a2c4d42df38d8f73661f7dde1dcea05d8078` |
-| 2 | `theorem` | [density_mobius_reciprocal_prefix_source_inventory](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefix.lean/declarations/density-mobius-reciprocal-prefix-source-inventory.md) | 21 | `result-track:ea069af4e9d9030460744bc3438f28e9493f6f50d69052d29020de7e9e03c911` |
-| 3 | `theorem` | [density_mobius_reciprocal_prefix_zero_of_lt_one](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefix.lean/declarations/density-mobius-reciprocal-prefix-zero-of-lt-one.md) | 26 | `result-track:e8d986b99ecc0b5c04da01af8485c4bb1805f65a6a09b1b5e654496554d2be77` |
-| 4 | `theorem` | [density_mobius_closed_floor_convolution](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefix.lean/declarations/density-mobius-closed-floor-convolution.md) | 30 | `result-track:111dc3f5d6a25d4b32b5b63c49f672720ec2c0fc90e05fec8dee4a31f15d3df9` |
-| 5 | `theorem` | [density_mobius_reciprocal_prefix_abs_le_one](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefix.lean/declarations/density-mobius-reciprocal-prefix-abs-le-one.md) | 51 | `result-track:e2eec5ebc6563f321c462bed3d1a04882da6b090065ba31a943dedd15043b373` |
+| 1 | `def` | [densityMobiusReciprocalPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefix.lean/declarations/densitymobiusreciprocalprefix.md) | 18 | `declaration-track:2dac2196efc7ddb1f41f1f3eb010a2c4d42df38d8f73661f7dde1dcea05d8078` |
+| 2 | `theorem` | [density_mobius_reciprocal_prefix_source_inventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefix.lean/declarations/density-mobius-reciprocal-prefix-source-inventory.md) | 21 | `result-track:ea069af4e9d9030460744bc3438f28e9493f6f50d69052d29020de7e9e03c911` |
+| 3 | `theorem` | [density_mobius_reciprocal_prefix_zero_of_lt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefix.lean/declarations/density-mobius-reciprocal-prefix-zero-of-lt-one.md) | 26 | `result-track:e8d986b99ecc0b5c04da01af8485c4bb1805f65a6a09b1b5e654496554d2be77` |
+| 4 | `theorem` | [density_mobius_closed_floor_convolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefix.lean/declarations/density-mobius-closed-floor-convolution.md) | 30 | `result-track:111dc3f5d6a25d4b32b5b63c49f672720ec2c0fc90e05fec8dee4a31f15d3df9` |
+| 5 | `theorem` | [density_mobius_reciprocal_prefix_abs_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefix.lean/declarations/density-mobius-reciprocal-prefix-abs-le-one.md) | 51 | `result-track:e2eec5ebc6563f321c462bed3d1a04882da6b090065ba31a943dedd15043b373` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

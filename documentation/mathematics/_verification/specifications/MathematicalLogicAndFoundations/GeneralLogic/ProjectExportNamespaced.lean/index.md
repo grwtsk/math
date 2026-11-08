@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProjectExportNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProjectExportNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProjectExportNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProjectExportNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProjectTable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProjectExportNamespaced.lean/declarations/projecttable.md) | 15 | `declaration-track:831a1ee05079f19944c2ae8670df9c01da50ccfdeaf49f8b79e8645935e42be5` |
-| 2 | `structure` | [ProjectExport](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProjectExportNamespaced.lean/declarations/projectexport.md) | 20 | `declaration-track:e155e68ed0bceae155e212c04119cbfdc6b1bd24ab1693d778b66a57a9f9b63f` |
-| 3 | `structure` | [ProjectCodec](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProjectExportNamespaced.lean/declarations/projectcodec.md) | 36 | `declaration-track:caae3f9bb89080afc2c270a6bb9e2c3016dde29684ab60d4901703bdd9944362` |
+| 1 | `structure` | [ProjectTable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProjectExportNamespaced.lean/declarations/projecttable.md) | 15 | `declaration-track:831a1ee05079f19944c2ae8670df9c01da50ccfdeaf49f8b79e8645935e42be5` |
+| 2 | `structure` | [ProjectExport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProjectExportNamespaced.lean/declarations/projectexport.md) | 20 | `declaration-track:e155e68ed0bceae155e212c04119cbfdc6b1bd24ab1693d778b66a57a9f9b63f` |
+| 3 | `structure` | [ProjectCodec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProjectExportNamespaced.lean/declarations/projectcodec.md) | 36 | `declaration-track:caae3f9bb89080afc2c270a6bb9e2c3016dde29684ab60d4901703bdd9944362` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

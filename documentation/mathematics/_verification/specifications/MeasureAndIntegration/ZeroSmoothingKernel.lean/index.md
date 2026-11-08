@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ZeroSmoothingKernel.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ZeroSmoothingKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [smoothingBump](../../../../MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/smoothingbump.md) | 23 | `declaration-track:5503e0ad12175ae2e0250415120388d897fb813664af7ebe8a90e93c5c56f260` |
-| 2 | `def` | [mollifier](../../../../MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/mollifier.md) | 30 | `declaration-track:560faeea711dde3ca52570039557aead1ad659dc6d1c74413bcd478d4074fde0` |
-| 3 | `theorem` | [mollifier_nonneg](../../../../MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/mollifier-nonneg.md) | 34 | `result-track:c9e3e0742554a425b7c600e96d849fe5b4f2adb04274b42579edabbd17afe3ef` |
-| 4 | `theorem` | [mollifier_even](../../../../MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/mollifier-even.md) | 39 | `result-track:2f2763cd29fb5ee7d951aad0732a7ac214209c39dba5e63ac225d7401d421b6f` |
-| 5 | `theorem` | [mollifier_contDiff](../../../../MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/mollifier-contdiff.md) | 43 | `result-track:c7be6000dd0b9b59c615b11ac3de1707b2aee9c118701625fb1a5b416a932648` |
-| 6 | `theorem` | [mollifier_integrable](../../../../MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/mollifier-integrable.md) | 48 | `result-track:58d619404c284b0cbac081621990c3811aba2e5cdcda065d38335687e32985bb` |
-| 7 | `theorem` | [mollifier_integral](../../../../MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/mollifier-integral.md) | 53 | `result-track:3af6047d97cfc4c6db4649509ecbcac0e463e2f86fc58cc55ac833597c3b3ced` |
-| 8 | `theorem` | [mollifier_support](../../../../MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/mollifier-support.md) | 58 | `result-track:db0ba7ba34f48cde7c74221e846bc53a42afb0c10e9e90c7ccac5667fcf0182d` |
-| 9 | `theorem` | [mollifier_tsupport](../../../../MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/mollifier-tsupport.md) | 64 | `result-track:08e49f16236dcc475b95b30f22a7bac07284251e0f7ac026fcd7b9d756796087` |
-| 10 | `theorem` | [mollifier_hasCompactSupport](../../../../MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/mollifier-hascompactsupport.md) | 70 | `result-track:a72da855632c033de82210bbf7e823506e29084109512f1cee3ebadc1da84711` |
-| 11 | `def` | [smoothedTest](../../../../MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/smoothedtest.md) | 75 | `declaration-track:e77239c01ff0e0275ba81cf87adce49aaa977b693a206aa34db388bfef396b22` |
-| 12 | `theorem` | [smoothedTest_eq_integral](../../../../MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/smoothedtest-eq-integral.md) | 79 | `result-track:e0c3a20ef48da47065917bd7548f096e6bf28f21adc3e48ff8972c9759d17ffa` |
+| 1 | `def` | [smoothingBump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/smoothingbump.md) | 23 | `declaration-track:5503e0ad12175ae2e0250415120388d897fb813664af7ebe8a90e93c5c56f260` |
+| 2 | `def` | [mollifier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/mollifier.md) | 30 | `declaration-track:560faeea711dde3ca52570039557aead1ad659dc6d1c74413bcd478d4074fde0` |
+| 3 | `theorem` | [mollifier_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/mollifier-nonneg.md) | 34 | `result-track:c9e3e0742554a425b7c600e96d849fe5b4f2adb04274b42579edabbd17afe3ef` |
+| 4 | `theorem` | [mollifier_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/mollifier-even.md) | 39 | `result-track:2f2763cd29fb5ee7d951aad0732a7ac214209c39dba5e63ac225d7401d421b6f` |
+| 5 | `theorem` | [mollifier_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/mollifier-contdiff.md) | 43 | `result-track:c7be6000dd0b9b59c615b11ac3de1707b2aee9c118701625fb1a5b416a932648` |
+| 6 | `theorem` | [mollifier_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/mollifier-integrable.md) | 48 | `result-track:58d619404c284b0cbac081621990c3811aba2e5cdcda065d38335687e32985bb` |
+| 7 | `theorem` | [mollifier_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/mollifier-integral.md) | 53 | `result-track:3af6047d97cfc4c6db4649509ecbcac0e463e2f86fc58cc55ac833597c3b3ced` |
+| 8 | `theorem` | [mollifier_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/mollifier-support.md) | 58 | `result-track:db0ba7ba34f48cde7c74221e846bc53a42afb0c10e9e90c7ccac5667fcf0182d` |
+| 9 | `theorem` | [mollifier_tsupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/mollifier-tsupport.md) | 64 | `result-track:08e49f16236dcc475b95b30f22a7bac07284251e0f7ac026fcd7b9d756796087` |
+| 10 | `theorem` | [mollifier_hasCompactSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/mollifier-hascompactsupport.md) | 70 | `result-track:a72da855632c033de82210bbf7e823506e29084109512f1cee3ebadc1da84711` |
+| 11 | `def` | [smoothedTest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/smoothedtest.md) | 75 | `declaration-track:e77239c01ff0e0275ba81cf87adce49aaa977b693a206aa34db388bfef396b22` |
+| 12 | `theorem` | [smoothedTest_eq_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingKernel.lean/declarations/smoothedtest-eq-integral.md) | 79 | `result-track:e0c3a20ef48da47065917bd7548f096e6bf28f21adc3e48ff8972c9759d17ffa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

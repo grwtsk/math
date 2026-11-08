@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RecExtNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RecExtNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RecExtNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RecExtNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `builtin_initialize` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RecExtNamespacedPublic.lean/declarations/builtin-initialize.md) | 28 | `declaration-track:dc4436a785dab2879cf526c3441bfb65d4c9d7d393e084e5d90dbc40cb9f7431` |
-| 2 | `def` | [markAsRecursive](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RecExtNamespacedPublic.lean/declarations/markasrecursive.md) | 34 | `declaration-track:e4ef63f4bfaf84ec192d7c9c106acfbbf09e3bbe05c45594d492ecfd29c74742` |
-| 3 | `def` | [isRecursiveDefinition](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RecExtNamespacedPublic.lean/declarations/isrecursivedefinition.md) | 40 | `declaration-track:e8014d58de539b0b73efb3a0c1c88924d3a3176932c4243fe9d53f975e6058a1` |
+| 1 | `builtin_initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RecExtNamespacedPublic.lean/declarations/builtin-initialize.md) | 28 | `declaration-track:dc4436a785dab2879cf526c3441bfb65d4c9d7d393e084e5d90dbc40cb9f7431` |
+| 2 | `def` | [markAsRecursive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RecExtNamespacedPublic.lean/declarations/markasrecursive.md) | 34 | `declaration-track:e4ef63f4bfaf84ec192d7c9c106acfbbf09e3bbe05c45594d492ecfd29c74742` |
+| 3 | `def` | [isRecursiveDefinition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RecExtNamespacedPublic.lean/declarations/isrecursivedefinition.md) | 40 | `declaration-track:e8014d58de539b0b73efb3a0c1c88924d3a3176932c4243fe9d53f975e6058a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

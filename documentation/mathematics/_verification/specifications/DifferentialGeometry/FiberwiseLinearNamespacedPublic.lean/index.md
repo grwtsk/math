@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/index.md) · [Full source](../../../../DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [openPartialHomeomorph](../../../../DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/declarations/openpartialhomeomorph.md) | 44 | `declaration-track:990184a6e383474887a842ad30a812966d04598ce3d6e4e970f63dd606e9dc2a` |
-| 2 | `theorem` | [trans_openPartialHomeomorph_apply](../../../../DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/declarations/trans-openpartialhomeomorph-apply.md) | 69 | `result-track:d9da6a5cb8c9404c130a5ba5d02af4c588ca30bad5f4f558ca290cd4e5dfb3df` |
-| 3 | `theorem` | [source_trans_openPartialHomeomorph](../../../../DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/declarations/source-trans-openpartialhomeomorph.md) | 82 | `result-track:2c7a8e54f29f654187f3d3b73514d362da9ca31509ebc31877fa3efdfa3830db` |
-| 4 | `theorem` | [target_trans_openPartialHomeomorph](../../../../DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/declarations/target-trans-openpartialhomeomorph.md) | 94 | `result-track:87fd723c81f70a60e8d540dd4ed6042a85aa5f6be6a62e6b0dfd805c6520f9c2` |
-| 5 | `theorem` | [ContMDiffFiberwiseLinear.locality_aux₁](../../../../DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/declarations/contmdifffiberwiselinear-locality-aux.md) | 115 | `result-track:2365e7db58e6a57203d3f7fb8b2e5813164cdb66fd1c9770068c1f938c3c1f50` |
-| 6 | `theorem` | [ContMDiffFiberwiseLinear.locality_aux₂](../../../../DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/declarations/contmdifffiberwiselinear-locality-aux-source-edition-2.md) | 168 | `result-track:b600ff4878867bb172d20d1e9d01d70746f6f7e488c91d47ffa1a0e66a94b46d` |
-| 7 | `theorem` | [mem_aux](../../../../DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/declarations/mem-aux.md) | 235 | `result-track:07303ab5cac6e45bb7bfd4435195de410f2ba0e2ee8d98d0fc0fbc08c3e5a557` |
-| 8 | `def` | [contMDiffFiberwiseLinear](../../../../DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/declarations/contmdifffiberwiselinear.md) | 254 | `declaration-track:44cd45d462fca89745b490f8578aa15f14f7b03cc2b97a9195ccf0b7f82fccbe` |
-| 9 | `theorem` | [mem_contMDiffFiberwiseLinear_iff](../../../../DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/declarations/mem-contmdifffiberwiselinear-iff.md) | 301 | `result-track:3f5ce627c74ae6f4efd7ec88acb361dc62c65b00a04148128627d227f5160ab5` |
+| 1 | `def` | [openPartialHomeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/declarations/openpartialhomeomorph.md) | 44 | `declaration-track:990184a6e383474887a842ad30a812966d04598ce3d6e4e970f63dd606e9dc2a` |
+| 2 | `theorem` | [trans_openPartialHomeomorph_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/declarations/trans-openpartialhomeomorph-apply.md) | 69 | `result-track:d9da6a5cb8c9404c130a5ba5d02af4c588ca30bad5f4f558ca290cd4e5dfb3df` |
+| 3 | `theorem` | [source_trans_openPartialHomeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/declarations/source-trans-openpartialhomeomorph.md) | 82 | `result-track:2c7a8e54f29f654187f3d3b73514d362da9ca31509ebc31877fa3efdfa3830db` |
+| 4 | `theorem` | [target_trans_openPartialHomeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/declarations/target-trans-openpartialhomeomorph.md) | 94 | `result-track:87fd723c81f70a60e8d540dd4ed6042a85aa5f6be6a62e6b0dfd805c6520f9c2` |
+| 5 | `theorem` | [ContMDiffFiberwiseLinear.locality_aux₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/declarations/contmdifffiberwiselinear-locality-aux.md) | 115 | `result-track:2365e7db58e6a57203d3f7fb8b2e5813164cdb66fd1c9770068c1f938c3c1f50` |
+| 6 | `theorem` | [ContMDiffFiberwiseLinear.locality_aux₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/declarations/contmdifffiberwiselinear-locality-aux-source-edition-2.md) | 168 | `result-track:b600ff4878867bb172d20d1e9d01d70746f6f7e488c91d47ffa1a0e66a94b46d` |
+| 7 | `theorem` | [mem_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/declarations/mem-aux.md) | 235 | `result-track:07303ab5cac6e45bb7bfd4435195de410f2ba0e2ee8d98d0fc0fbc08c3e5a557` |
+| 8 | `def` | [contMDiffFiberwiseLinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/declarations/contmdifffiberwiselinear.md) | 254 | `declaration-track:44cd45d462fca89745b490f8578aa15f14f7b03cc2b97a9195ccf0b7f82fccbe` |
+| 9 | `theorem` | [mem_contMDiffFiberwiseLinear_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearNamespacedPublic.lean/declarations/mem-contmdifffiberwiselinear-iff.md) | 301 | `result-track:3f5ce627c74ae6f4efd7ec88acb361dc62c65b00a04148128627d227f5160ab5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

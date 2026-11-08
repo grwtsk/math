@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CochainCurvatureNamespacedMeasuredDefectCochain.lean/index.md) · [Full source](../../../../Combinatorics/CochainCurvatureNamespacedMeasuredDefectCochain.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CochainCurvatureNamespacedMeasuredDefectCochain.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CochainCurvatureNamespacedMeasuredDefectCochain.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MeasuredDefectCochain](../../../../Combinatorics/CochainCurvatureNamespacedMeasuredDefectCochain.lean/declarations/measureddefectcochain.md) | 23 | `declaration-track:9c7fe7d92c8600803aebfc06fbefb5a435b9714ce1f3cf2d412ce21127f4d361` |
-| 2 | `def` | [MeasuredDefectCochain.curvature](../../../../Combinatorics/CochainCurvatureNamespacedMeasuredDefectCochain.lean/declarations/measureddefectcochain-curvature.md) | 31 | `declaration-track:c46bf2f028df6071d168feb1f6ea7ce234e87ea98a6fbc8490e3cb850ad1e7e8` |
-| 3 | `structure` | [CochainCurvatureBudget](../../../../Combinatorics/CochainCurvatureNamespacedMeasuredDefectCochain.lean/declarations/cochaincurvaturebudget.md) | 45 | `declaration-track:dd8a08f3292a9a542166e56d41f4eed85cd67932c0c6aef325645382fa45e930` |
+| 1 | `structure` | [MeasuredDefectCochain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CochainCurvatureNamespacedMeasuredDefectCochain.lean/declarations/measureddefectcochain.md) | 23 | `declaration-track:9c7fe7d92c8600803aebfc06fbefb5a435b9714ce1f3cf2d412ce21127f4d361` |
+| 2 | `def` | [MeasuredDefectCochain.curvature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CochainCurvatureNamespacedMeasuredDefectCochain.lean/declarations/measureddefectcochain-curvature.md) | 31 | `declaration-track:c46bf2f028df6071d168feb1f6ea7ce234e87ea98a6fbc8490e3cb850ad1e7e8` |
+| 3 | `structure` | [CochainCurvatureBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CochainCurvatureNamespacedMeasuredDefectCochain.lean/declarations/cochaincurvaturebudget.md) | 45 | `declaration-track:dd8a08f3292a9a542166e56d41f4eed85cd67932c0c6aef325645382fa45e930` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransportNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransportNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransportNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransportNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PlaceholderCover](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransportNamespaced.lean/declarations/placeholdercover.md) | 16 | `declaration-track:a8da4db200065b9a9bbdf96c59e350809213540d9f15b9a65e41a5476bb4ef57` |
-| 2 | `def` | [binomialTransportRootPlaceholder](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransportNamespaced.lean/declarations/binomialtransportrootplaceholder.md) | 23 | `declaration-track:fe68858eee6415931ed7c75de843cdfee289647f1791a6bb8baa82b0fb9705a1` |
-| 3 | `theorem` | [binomialTransportRootPlaceholder_nonowning](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransportNamespaced.lean/declarations/binomialtransportrootplaceholder-nonowning.md) | 31 | `result-track:a4bef9babd47c7922cec9d715c9ba2ce6e99cbb1c38d7835b3c97b7b59e44c35` |
+| 1 | `structure` | [PlaceholderCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransportNamespaced.lean/declarations/placeholdercover.md) | 16 | `declaration-track:a8da4db200065b9a9bbdf96c59e350809213540d9f15b9a65e41a5476bb4ef57` |
+| 2 | `def` | [binomialTransportRootPlaceholder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransportNamespaced.lean/declarations/binomialtransportrootplaceholder.md) | 23 | `declaration-track:fe68858eee6415931ed7c75de843cdfee289647f1791a6bb8baa82b0fb9705a1` |
+| 3 | `theorem` | [binomialTransportRootPlaceholder_nonowning](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransportNamespaced.lean/declarations/binomialtransportrootplaceholder-nonowning.md) | 31 | `result-track:a4bef9babd47c7922cec9d715c9ba2ce6e99cbb1c38d7835b3c97b7b59e44c35` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

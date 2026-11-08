@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BinaryCompressionRecursionNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BinaryCompressionRecursionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BinaryCompressionRecursionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BinaryCompressionRecursionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RequiresBacktracking](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BinaryCompressionRecursionNamespaced.lean/declarations/requiresbacktracking.md) | 28 | `declaration-track:ee575cc4a102bb31d6319d4d326e4508d2cb7b92e348f42f1a2abe1ebc1e82c2` |
-| 2 | `structure` | [BinaryCompressionRecursion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BinaryCompressionRecursionNamespaced.lean/declarations/binarycompressionrecursion.md) | 40 | `declaration-track:77e70aeab6d2b1fad7a207602290b576064a14fcba65eba5ccce40f7e4485fc8` |
-| 3 | `theorem` | [glitched_stream_requires_backtracking_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BinaryCompressionRecursionNamespaced.lean/declarations/glitched-stream-requires-backtracking-if-supplied.md) | 51 | `result-track:8f5b5f6e48014d461ae58ad15a7ba33a02f098fb1b92a15e1ce68d9faf1c6bb1` |
-| 4 | `theorem` | [binary_recursion_forbidden_escape_obstructed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BinaryCompressionRecursionNamespaced.lean/declarations/binary-recursion-forbidden-escape-obstructed.md) | 58 | `result-track:b968bd4ac9a071c22147349a33fa949fe8db6fea38e26d62a3f32af4fce31644` |
+| 1 | `structure` | [RequiresBacktracking](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BinaryCompressionRecursionNamespaced.lean/declarations/requiresbacktracking.md) | 28 | `declaration-track:ee575cc4a102bb31d6319d4d326e4508d2cb7b92e348f42f1a2abe1ebc1e82c2` |
+| 2 | `structure` | [BinaryCompressionRecursion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BinaryCompressionRecursionNamespaced.lean/declarations/binarycompressionrecursion.md) | 40 | `declaration-track:77e70aeab6d2b1fad7a207602290b576064a14fcba65eba5ccce40f7e4485fc8` |
+| 3 | `theorem` | [glitched_stream_requires_backtracking_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BinaryCompressionRecursionNamespaced.lean/declarations/glitched-stream-requires-backtracking-if-supplied.md) | 51 | `result-track:8f5b5f6e48014d461ae58ad15a7ba33a02f098fb1b92a15e1ce68d9faf1c6bb1` |
+| 4 | `theorem` | [binary_recursion_forbidden_escape_obstructed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BinaryCompressionRecursionNamespaced.lean/declarations/binary-recursion-forbidden-escape-obstructed.md) | 58 | `result-track:b968bd4ac9a071c22147349a33fa949fe8db6fea38e26d62a3f32af4fce31644` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

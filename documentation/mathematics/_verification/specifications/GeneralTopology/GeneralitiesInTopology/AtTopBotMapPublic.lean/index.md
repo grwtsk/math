@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotMapPublic.lean/index.md) · [Full source](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotMapPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotMapPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotMapPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [comap_atTop](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotMapPublic.lean/declarations/comap-attop.md) | 32 | `result-track:289d1097e7223fd0d31e28d7f0994f7c14e8380fc6b58444b11da2ed891d5ba6` |
-| 2 | `theorem` | [map_atTop](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotMapPublic.lean/declarations/map-attop.md) | 36 | `result-track:1ac3cd59d3b052d38d93f4cb749d21126f2cb4511095b249836a5c80ece64a43` |
-| 3 | `theorem` | [tendsto_atTop](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotMapPublic.lean/declarations/tendsto-attop.md) | 40 | `result-track:03049fdb5eff9ca58f8db4fc7325fb01471dababe0cf80955a79ad59c40fd503` |
-| 4 | `theorem` | [tendsto_atTop_iff](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotMapPublic.lean/declarations/tendsto-attop-iff.md) | 44 | `result-track:86e2103266929caf932b127a203d395fdea73c1ed8ffd0c8d30bd99d4cd4558d` |
+| 1 | `theorem` | [comap_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotMapPublic.lean/declarations/comap-attop.md) | 32 | `result-track:289d1097e7223fd0d31e28d7f0994f7c14e8380fc6b58444b11da2ed891d5ba6` |
+| 2 | `theorem` | [map_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotMapPublic.lean/declarations/map-attop.md) | 36 | `result-track:1ac3cd59d3b052d38d93f4cb749d21126f2cb4511095b249836a5c80ece64a43` |
+| 3 | `theorem` | [tendsto_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotMapPublic.lean/declarations/tendsto-attop.md) | 40 | `result-track:03049fdb5eff9ca58f8db4fc7325fb01471dababe0cf80955a79ad59c40fd503` |
+| 4 | `theorem` | [tendsto_atTop_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotMapPublic.lean/declarations/tendsto-attop-iff.md) | 44 | `result-track:86e2103266929caf932b127a203d395fdea73c1ed8ffd0c8d30bd99d4cd4558d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

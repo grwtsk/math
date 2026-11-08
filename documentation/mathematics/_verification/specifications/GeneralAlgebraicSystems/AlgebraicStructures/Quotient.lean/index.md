@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Quotient.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Quotient.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Quotient.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Quotient.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [HasQuotient](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Quotient.lean/declarations/hasquotient.md) | 44 | `declaration-track:4f20fc6fcaf5ff0a40fc24effe5b9fc3df20eed4e6eb38dbf49f8fc1ea4f6620` |
-| 2 | `abbrev` | [HasQuotient.Quotient](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Quotient.lean/declarations/hasquotient-quotient.md) | 55 | `declaration-track:2aeb75dc9e0a051decbf58419e74f1616e6ca4b1cff031c6067f2e658bd6a28c` |
+| 1 | `class` | [HasQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Quotient.lean/declarations/hasquotient.md) | 44 | `declaration-track:4f20fc6fcaf5ff0a40fc24effe5b9fc3df20eed4e6eb38dbf49f8fc1ea4f6620` |
+| 2 | `abbrev` | [HasQuotient.Quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Quotient.lean/declarations/hasquotient-quotient.md) | 55 | `declaration-track:2aeb75dc9e0a051decbf58419e74f1616e6ca4b1cff031c6067f2e658bd6a28c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

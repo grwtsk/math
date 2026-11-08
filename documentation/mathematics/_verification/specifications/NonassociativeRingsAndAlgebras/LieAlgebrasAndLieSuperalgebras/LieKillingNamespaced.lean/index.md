@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieKillingNamespaced.lean/index.md) · [Full source](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieKillingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieKillingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieKillingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [traceForm](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieKillingNamespaced.lean/declarations/traceform.md) | 54 | `declaration-track:a6cceba20951d19cc71cbde223ce9a626d2e6fdc6b8ca4cd780ddb0eb9817ada` |
-| 2 | `lemma` | [traceForm_apply_apply](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieKillingNamespaced.lean/declarations/traceform-apply-apply.md) | 57 | `result-track:20b93fb1ff10fae1e65471ff1c1b97bfe165fdacbac828479a623673db8fb301` |
-| 3 | `lemma` | [traceForm_comm](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieKillingNamespaced.lean/declarations/traceform-comm.md) | 61 | `result-track:50e4de32c2faed866bed7156ef3285f4eaf71388a326b76d7681fa2b40102251` |
-| 4 | `lemma` | [traceForm_flip](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieKillingNamespaced.lean/declarations/traceform-flip.md) | 64 | `result-track:204e14c846fc3ef5dc13f8b710c711a872c6837d3aa536d9da0661e1f2ef6a05` |
-| 5 | `lemma` | [traceForm_apply_lie_apply](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieKillingNamespaced.lean/declarations/traceform-apply-lie-apply.md) | 67 | `result-track:ed03be3b298a615ae4332e8377d4880739010188cee2eeff7e565e6ea3619d30` |
-| 6 | `abbrev` | [killingForm](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieKillingNamespaced.lean/declarations/killingform.md) | 90 | `declaration-track:f3def7296898ce49405023cba351a2a17042541e9d7f642969b80e01745628fb` |
+| 1 | `def` | [traceForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieKillingNamespaced.lean/declarations/traceform.md) | 54 | `declaration-track:a6cceba20951d19cc71cbde223ce9a626d2e6fdc6b8ca4cd780ddb0eb9817ada` |
+| 2 | `lemma` | [traceForm_apply_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieKillingNamespaced.lean/declarations/traceform-apply-apply.md) | 57 | `result-track:20b93fb1ff10fae1e65471ff1c1b97bfe165fdacbac828479a623673db8fb301` |
+| 3 | `lemma` | [traceForm_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieKillingNamespaced.lean/declarations/traceform-comm.md) | 61 | `result-track:50e4de32c2faed866bed7156ef3285f4eaf71388a326b76d7681fa2b40102251` |
+| 4 | `lemma` | [traceForm_flip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieKillingNamespaced.lean/declarations/traceform-flip.md) | 64 | `result-track:204e14c846fc3ef5dc13f8b710c711a872c6837d3aa536d9da0661e1f2ef6a05` |
+| 5 | `lemma` | [traceForm_apply_lie_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieKillingNamespaced.lean/declarations/traceform-apply-lie-apply.md) | 67 | `result-track:ed03be3b298a615ae4332e8377d4880739010188cee2eeff7e565e6ea3619d30` |
+| 6 | `abbrev` | [killingForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieKillingNamespaced.lean/declarations/killingform.md) | 90 | `declaration-track:f3def7296898ce49405023cba351a2a17042541e9d7f642969b80e01745628fb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

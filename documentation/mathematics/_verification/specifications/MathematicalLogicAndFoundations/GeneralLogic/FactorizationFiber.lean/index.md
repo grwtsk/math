@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FactorsThrough](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/declarations/factorsthrough.md) | 33 | `declaration-track:242c7db6f101cad0b8ddfb941084c59f55700c2187fb4cf9b2012ddc577d1186` |
-| 2 | `theorem` | [eq_of_factorsThrough](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/declarations/eq-of-factorsthrough.md) | 38 | `result-track:e5c123619c559d7bce2edf34cef40b2bf304950f64c7aa393d36863de535d067` |
-| 3 | `theorem` | [not_factorsThrough_of_collision](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/declarations/not-factorsthrough-of-collision.md) | 49 | `result-track:93849ccbf6d5e827fe5a4123a9be690f5563cd538d1764be277c1dd994a38a73` |
-| 4 | `def` | [augmentedProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/declarations/augmentedprofile.md) | 62 | `declaration-track:ae442a0b27640f6cf6b39f871fef5b213baeae2c695f8a00fb35e090cd14c593` |
-| 5 | `theorem` | [augmentedProfile_separates](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/declarations/augmentedprofile-separates.md) | 69 | `result-track:1dc071646856f67cd06c0ea6df8cc53e411fc67d9b62f55c522feac0d154112f` |
+| 1 | `def` | [FactorsThrough](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/declarations/factorsthrough.md) | 33 | `declaration-track:242c7db6f101cad0b8ddfb941084c59f55700c2187fb4cf9b2012ddc577d1186` |
+| 2 | `theorem` | [eq_of_factorsThrough](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/declarations/eq-of-factorsthrough.md) | 38 | `result-track:e5c123619c559d7bce2edf34cef40b2bf304950f64c7aa393d36863de535d067` |
+| 3 | `theorem` | [not_factorsThrough_of_collision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/declarations/not-factorsthrough-of-collision.md) | 49 | `result-track:93849ccbf6d5e827fe5a4123a9be690f5563cd538d1764be277c1dd994a38a73` |
+| 4 | `def` | [augmentedProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/declarations/augmentedprofile.md) | 62 | `declaration-track:ae442a0b27640f6cf6b39f871fef5b213baeae2c695f8a00fb35e090cd14c593` |
+| 5 | `theorem` | [augmentedProfile_separates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/declarations/augmentedprofile-separates.md) | 69 | `result-track:1dc071646856f67cd06c0ea6df8cc53e411fc67d9b62f55c522feac0d154112f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

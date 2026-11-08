@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelState.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelState.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelState.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelState.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [State](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelState.lean/declarations/state.md) | 7 | `declaration-track:53e2c789589a0a3ed02615ea66c5dc594b74ba4e18d04d7df0c14673d4a20ccd` |
-| 2 | `structure` | [Intent](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelState.lean/declarations/intent.md) | 16 | `declaration-track:bfcbab2fa1470b13e1c0233de31762b4b116ce2419b71d59acb584ec50639ff2` |
-| 3 | `def` | [Invariant](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelState.lean/declarations/invariant.md) | 25 | `declaration-track:ccd32e4e1c480699a19884f65adf600a382ce92383e877b25a4497f1ecb16698` |
-| 4 | `def` | [ValidTransition](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelState.lean/declarations/validtransition.md) | 28 | `declaration-track:68d3de07b3fce8c7c628791c9bda77814f660c0b0ed59b9470ab60962a601c0d` |
+| 1 | `structure` | [State](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelState.lean/declarations/state.md) | 7 | `declaration-track:53e2c789589a0a3ed02615ea66c5dc594b74ba4e18d04d7df0c14673d4a20ccd` |
+| 2 | `structure` | [Intent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelState.lean/declarations/intent.md) | 16 | `declaration-track:bfcbab2fa1470b13e1c0233de31762b4b116ce2419b71d59acb584ec50639ff2` |
+| 3 | `def` | [Invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelState.lean/declarations/invariant.md) | 25 | `declaration-track:ccd32e4e1c480699a19884f65adf600a382ce92383e877b25a4497f1ecb16698` |
+| 4 | `def` | [ValidTransition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelState.lean/declarations/validtransition.md) | 28 | `declaration-track:68d3de07b3fce8c7c628791c9bda77814f660c0b0ed59b9470ab60962a601c0d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

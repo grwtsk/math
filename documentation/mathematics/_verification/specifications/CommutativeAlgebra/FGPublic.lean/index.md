@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FGPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FGPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FGPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FGPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,23 +57,23 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fg_trans](../../../../CommutativeAlgebra/FGPublic.lean/declarations/fg-trans.md) | 44 | `result-track:96f0be44bd021122acad0bd5e6f1f2a7d72b07d960e1d2df7d17f809066ff10e` |
-| 2 | `def` | [FG](../../../../CommutativeAlgebra/FGPublic.lean/declarations/fg.md) | 95 | `declaration-track:75a686dabbac4768273eec5d89eaa4bc3e9fe4bfe63341e2becf7ff3d501e6c6` |
-| 3 | `theorem` | [fg_adjoin_finset](../../../../CommutativeAlgebra/FGPublic.lean/declarations/fg-adjoin-finset.md) | 98 | `result-track:b425d2092b934d6a9962c49e89889187c4839b92852a0f6557919001b7c7867c` |
-| 4 | `theorem` | [fg_def](../../../../CommutativeAlgebra/FGPublic.lean/declarations/fg-def.md) | 101 | `result-track:6aa014797d8f43ef872755224abcdc32983788f5d33c73690fce559e91e2c5ba` |
-| 5 | `theorem` | [fg_bot](../../../../CommutativeAlgebra/FGPublic.lean/declarations/fg-bot.md) | 104 | `result-track:fbb491243ada5385e8262387c8012d03d015f45ba81931e42d32f5938c4157ff` |
-| 6 | `theorem` | [fg_of_fg_toSubmodule](../../../../CommutativeAlgebra/FGPublic.lean/declarations/fg-of-fg-tosubmodule.md) | 107 | `result-track:29d4e891474933e1f5880c569bc8bd86183aaa4912384cf296246d44d7fa7c7c` |
-| 7 | `theorem` | [fg_of_noetherian](../../../../CommutativeAlgebra/FGPublic.lean/declarations/fg-of-noetherian.md) | 116 | `result-track:b04c5262f18d10a447a650d0c1446e9e94ee8175ba10ac0341d8058674314a2f` |
-| 8 | `theorem` | [fg_of_submodule_fg](../../../../CommutativeAlgebra/FGPublic.lean/declarations/fg-of-submodule-fg.md) | 119 | `result-track:a585b1c0fe77aa14cde443857f2a5e4c549cd8b7c2871fa07eac097775035461` |
-| 9 | `theorem` | [FG.prod](../../../../CommutativeAlgebra/FGPublic.lean/declarations/fg-prod.md) | 125 | `result-track:1d26fe2ac90641491ff015784642935ac0c0f6f07a5ebb1c69fbee27f2c01399` |
-| 10 | `theorem` | [FG.map](../../../../CommutativeAlgebra/FGPublic.lean/declarations/fg-map.md) | 137 | `result-track:74999fa5c753c611501a1b937081cc5c27de233f24d11ce44cbae1c995eb0db5` |
-| 11 | `theorem` | [fg_of_fg_map](../../../../CommutativeAlgebra/FGPublic.lean/declarations/fg-of-fg-map.md) | 145 | `result-track:110ed10ea9be8429fa3c12c961222c4ee523e5ff130bae093bb1c49a8bf36e8f` |
-| 12 | `theorem` | [fg_top](../../../../CommutativeAlgebra/FGPublic.lean/declarations/fg-top.md) | 154 | `result-track:566653d77b6d61a0976c81c0d1b62bee02f6d1ef37d60dc7a90214f1fa532377` |
-| 13 | `theorem` | [induction_on_adjoin](../../../../CommutativeAlgebra/FGPublic.lean/declarations/induction-on-adjoin.md) | 162 | `result-track:d0949921853edc2543ad1f0d8b5c6ff324ab75722181e278492393b6a8f2e762` |
-| 14 | `theorem` | [FG.sup](../../../../CommutativeAlgebra/FGPublic.lean/declarations/fg-sup.md) | 173 | `result-track:3cdda51776019528792170fc885be296111bb83202647c8c54a3e3749dbe8337` |
-| 15 | `instance` | [AlgHom.isNoetherianRing_range](../../../../CommutativeAlgebra/FGPublic.lean/declarations/alghom-isnoetherianring-range.md) | 188 | `declaration-track:8c12b240e3449ac711a263013c536d31f699bfd3003794071375143814a08d04` |
-| 16 | `theorem` | [isNoetherianRing_of_fg](../../../../CommutativeAlgebra/FGPublic.lean/declarations/isnoetherianring-of-fg.md) | 199 | `result-track:cfb7d2793491b35e9181ca22cd573379cf6ca660ee6cdc03baaf7184aaf79a84` |
-| 17 | `theorem` | [is_noetherian_subring_closure](../../../../CommutativeAlgebra/FGPublic.lean/declarations/is-noetherian-subring-closure.md) | 204 | `result-track:df0aa8258a9b3095e24106f4fefe9ce0b66851a6937a0b9882814a609f3e85db` |
+| 1 | `theorem` | [fg_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FGPublic.lean/declarations/fg-trans.md) | 44 | `result-track:96f0be44bd021122acad0bd5e6f1f2a7d72b07d960e1d2df7d17f809066ff10e` |
+| 2 | `def` | [FG](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FGPublic.lean/declarations/fg.md) | 95 | `declaration-track:75a686dabbac4768273eec5d89eaa4bc3e9fe4bfe63341e2becf7ff3d501e6c6` |
+| 3 | `theorem` | [fg_adjoin_finset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FGPublic.lean/declarations/fg-adjoin-finset.md) | 98 | `result-track:b425d2092b934d6a9962c49e89889187c4839b92852a0f6557919001b7c7867c` |
+| 4 | `theorem` | [fg_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FGPublic.lean/declarations/fg-def.md) | 101 | `result-track:6aa014797d8f43ef872755224abcdc32983788f5d33c73690fce559e91e2c5ba` |
+| 5 | `theorem` | [fg_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FGPublic.lean/declarations/fg-bot.md) | 104 | `result-track:fbb491243ada5385e8262387c8012d03d015f45ba81931e42d32f5938c4157ff` |
+| 6 | `theorem` | [fg_of_fg_toSubmodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FGPublic.lean/declarations/fg-of-fg-tosubmodule.md) | 107 | `result-track:29d4e891474933e1f5880c569bc8bd86183aaa4912384cf296246d44d7fa7c7c` |
+| 7 | `theorem` | [fg_of_noetherian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FGPublic.lean/declarations/fg-of-noetherian.md) | 116 | `result-track:b04c5262f18d10a447a650d0c1446e9e94ee8175ba10ac0341d8058674314a2f` |
+| 8 | `theorem` | [fg_of_submodule_fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FGPublic.lean/declarations/fg-of-submodule-fg.md) | 119 | `result-track:a585b1c0fe77aa14cde443857f2a5e4c549cd8b7c2871fa07eac097775035461` |
+| 9 | `theorem` | [FG.prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FGPublic.lean/declarations/fg-prod.md) | 125 | `result-track:1d26fe2ac90641491ff015784642935ac0c0f6f07a5ebb1c69fbee27f2c01399` |
+| 10 | `theorem` | [FG.map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FGPublic.lean/declarations/fg-map.md) | 137 | `result-track:74999fa5c753c611501a1b937081cc5c27de233f24d11ce44cbae1c995eb0db5` |
+| 11 | `theorem` | [fg_of_fg_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FGPublic.lean/declarations/fg-of-fg-map.md) | 145 | `result-track:110ed10ea9be8429fa3c12c961222c4ee523e5ff130bae093bb1c49a8bf36e8f` |
+| 12 | `theorem` | [fg_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FGPublic.lean/declarations/fg-top.md) | 154 | `result-track:566653d77b6d61a0976c81c0d1b62bee02f6d1ef37d60dc7a90214f1fa532377` |
+| 13 | `theorem` | [induction_on_adjoin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FGPublic.lean/declarations/induction-on-adjoin.md) | 162 | `result-track:d0949921853edc2543ad1f0d8b5c6ff324ab75722181e278492393b6a8f2e762` |
+| 14 | `theorem` | [FG.sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FGPublic.lean/declarations/fg-sup.md) | 173 | `result-track:3cdda51776019528792170fc885be296111bb83202647c8c54a3e3749dbe8337` |
+| 15 | `instance` | [AlgHom.isNoetherianRing_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FGPublic.lean/declarations/alghom-isnoetherianring-range.md) | 188 | `declaration-track:8c12b240e3449ac711a263013c536d31f699bfd3003794071375143814a08d04` |
+| 16 | `theorem` | [isNoetherianRing_of_fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FGPublic.lean/declarations/isnoetherianring-of-fg.md) | 199 | `result-track:cfb7d2793491b35e9181ca22cd573379cf6ca660ee6cdc03baaf7184aaf79a84` |
+| 17 | `theorem` | [is_noetherian_subring_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FGPublic.lean/declarations/is-noetherian-subring-closure.md) | 204 | `result-track:df0aa8258a9b3095e24106f4fefe9ce0b66851a6937a0b9882814a609f3e85db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

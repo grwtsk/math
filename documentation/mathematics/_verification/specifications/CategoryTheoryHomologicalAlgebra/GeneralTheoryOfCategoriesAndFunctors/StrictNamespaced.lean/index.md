@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrictNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrictNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrictNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrictNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Bicategory.Strict](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrictNamespaced.lean/declarations/bicategory-strict.md) | 44 | `declaration-track:dde02eeac5b4dc4e55e640b7f622ec1cb838a10c7f9b9d4d1810ed2a941507f7` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrictNamespaced.lean/declarations/instance.md) | 63 | `declaration-track:2916d33c65face666f6a49f8d38ea6e6e9432c1ca34b1f775ea951d28ab4794c` |
-| 3 | `theorem` | [whiskerLeft_eqToHom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrictNamespaced.lean/declarations/whiskerleft-eqtohom.md) | 73 | `result-track:765c0999e3baaaea44c9ddc8949f649632511bc676dde962ae691973f4f864e6` |
-| 4 | `theorem` | [eqToHom_whiskerRight](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrictNamespaced.lean/declarations/eqtohom-whiskerright.md) | 79 | `result-track:d07e0c4feb3c3a730b9c7e18305608f1aca3c335488fecfd7e9be262b0a2cd91` |
+| 1 | `class` | [Bicategory.Strict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrictNamespaced.lean/declarations/bicategory-strict.md) | 44 | `declaration-track:dde02eeac5b4dc4e55e640b7f622ec1cb838a10c7f9b9d4d1810ed2a941507f7` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrictNamespaced.lean/declarations/instance.md) | 63 | `declaration-track:2916d33c65face666f6a49f8d38ea6e6e9432c1ca34b1f775ea951d28ab4794c` |
+| 3 | `theorem` | [whiskerLeft_eqToHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrictNamespaced.lean/declarations/whiskerleft-eqtohom.md) | 73 | `result-track:765c0999e3baaaea44c9ddc8949f649632511bc676dde962ae691973f4f864e6` |
+| 4 | `theorem` | [eqToHom_whiskerRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrictNamespaced.lean/declarations/eqtohom-whiskerright.md) | 79 | `result-track:d07e0c4feb3c3a730b9c7e18305608f1aca3c335488fecfd7e9be262b0a2cd91` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

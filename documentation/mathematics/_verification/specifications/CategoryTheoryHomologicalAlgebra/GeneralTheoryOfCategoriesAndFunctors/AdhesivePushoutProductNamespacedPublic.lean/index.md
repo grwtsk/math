@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AdhesivePushoutProductNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AdhesivePushoutProductNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AdhesivePushoutProductNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AdhesivePushoutProductNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mono_ι_of_isPullback](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AdhesivePushoutProductNamespacedPublic.lean/declarations/mono-of-ispullback.md) | 43 | `result-track:936414a3b383c24fa02819b97728b7c57f21e4b31b4c8dd30ef3b02900bcdd1a` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AdhesivePushoutProductNamespacedPublic.lean/declarations/instance.md) | 60 | `declaration-track:f76d0c82e1e36d6ea6ab1fba47bba3dca0036d0f96de3263519a454f11699460` |
+| 1 | `theorem` | [mono_ι_of_isPullback](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AdhesivePushoutProductNamespacedPublic.lean/declarations/mono-of-ispullback.md) | 43 | `result-track:936414a3b383c24fa02819b97728b7c57f21e4b31b4c8dd30ef3b02900bcdd1a` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AdhesivePushoutProductNamespacedPublic.lean/declarations/instance.md) | 60 | `declaration-track:f76d0c82e1e36d6ea6ab1fba47bba3dca0036d0f96de3263519a454f11699460` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instMulZeroClass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/declarations/instmulzeroclass.md) | 22 | `declaration-track:47bb7c5387e61ef2d14ae3d220ad4d96da0eee3e376046344acbd5b90c729f6a` |
-| 2 | `instance` | [instSemigroupWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/declarations/instsemigroupwithzero.md) | 26 | `declaration-track:bcce1bda1d71ed4204e71c1e76692af72cc20f55e055b2fe602319a651231b16` |
-| 3 | `instance` | [instMonoidWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/declarations/instmonoidwithzero.md) | 30 | `declaration-track:d5a6cbf64c47810c92d16f53d1a1f78b5d8cc53afbbb1a960cc7461acdb4ef89` |
-| 4 | `instance` | [instCommMonoidWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/declarations/instcommmonoidwithzero.md) | 35 | `declaration-track:4906aa8a6f936f3ab95cfa8423d6c6a63aa00115c27e987cf911ede7d8536a93` |
-| 5 | `instance` | [instIsLeftCancelMulZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/declarations/instisleftcancelmulzero.md) | 39 | `declaration-track:737a90343f1d3606a6aa2a0f300b7b549bf18acc5c53324ab16509da977dc902` |
-| 6 | `instance` | [instCancelCommMonoidWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/declarations/instcancelcommmonoidwithzero.md) | 42 | `declaration-track:85fa8f20e49074cbff04042cc1c1f20e593bafe23ee063e82feb3525ae645da1` |
-| 7 | `instance` | [instMulDivCancelClass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/declarations/instmuldivcancelclass.md) | 46 | `declaration-track:b5e580c5159e987f7364b0132729922798d1b33c45a620e81b0f37e163f9d4d5` |
-| 8 | `instance` | [instMulZeroOneClass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/declarations/instmulzerooneclass.md) | 49 | `declaration-track:f3a70e22e8fb300424ab4644a4bef72d4f4ef90d77414fd244f551769965ac55` |
+| 1 | `instance` | [instMulZeroClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/declarations/instmulzeroclass.md) | 22 | `declaration-track:47bb7c5387e61ef2d14ae3d220ad4d96da0eee3e376046344acbd5b90c729f6a` |
+| 2 | `instance` | [instSemigroupWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/declarations/instsemigroupwithzero.md) | 26 | `declaration-track:bcce1bda1d71ed4204e71c1e76692af72cc20f55e055b2fe602319a651231b16` |
+| 3 | `instance` | [instMonoidWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/declarations/instmonoidwithzero.md) | 30 | `declaration-track:d5a6cbf64c47810c92d16f53d1a1f78b5d8cc53afbbb1a960cc7461acdb4ef89` |
+| 4 | `instance` | [instCommMonoidWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/declarations/instcommmonoidwithzero.md) | 35 | `declaration-track:4906aa8a6f936f3ab95cfa8423d6c6a63aa00115c27e987cf911ede7d8536a93` |
+| 5 | `instance` | [instIsLeftCancelMulZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/declarations/instisleftcancelmulzero.md) | 39 | `declaration-track:737a90343f1d3606a6aa2a0f300b7b549bf18acc5c53324ab16509da977dc902` |
+| 6 | `instance` | [instCancelCommMonoidWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/declarations/instcancelcommmonoidwithzero.md) | 42 | `declaration-track:85fa8f20e49074cbff04042cc1c1f20e593bafe23ee063e82feb3525ae645da1` |
+| 7 | `instance` | [instMulDivCancelClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/declarations/instmuldivcancelclass.md) | 46 | `declaration-track:b5e580c5159e987f7364b0132729922798d1b33c45a620e81b0f37e163f9d4d5` |
+| 8 | `instance` | [instMulZeroOneClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNat.lean/declarations/instmulzerooneclass.md) | 49 | `declaration-track:f3a70e22e8fb300424ab4644a4bef72d4f4ef90d77414fd244f551769965ac55` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AlgebraTowerAligned.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AlgebraTowerAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraTowerAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraTowerAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,20 +60,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Invertible.algebraTower](../../../../CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/invertible-algebratower.md) | 50 | `declaration-track:9c804a7362ba5fbaa89fa16352b071811c4c795c5cd5818ce9a0748eb8869033` |
-| 2 | `def` | [invertibleAlgebraCoeNat](../../../../CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/invertiblealgebracoenat.md) | 58 | `declaration-track:d414f6e5f1578f8b0344a2803295e8238138fd8f9567dec0d087e5f45eedd2a2` |
-| 3 | `def` | [Basis.algebraMapCoeffs](../../../../CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/basis-algebramapcoeffs.md) | 86 | `declaration-track:3ee1ff7998b615934c7dd054c29645ce0a1f1e38a15e8cc71e58818b0cd2a93f` |
-| 4 | `theorem` | [Basis.algebraMapCoeffs_apply](../../../../CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/basis-algebramapcoeffs-apply.md) | 91 | `result-track:1764f26b93ab961de44813660fe98bb00b188a65d5b1e43f7aa05ac5d87de14a` |
-| 5 | `theorem` | [Basis.coe_algebraMapCoeffs](../../../../CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/basis-coe-algebramapcoeffs.md) | 96 | `result-track:889ad9c1195fd2375c3a0395367a14a58d72e8243f8e87a57540b9a24be5365e` |
-| 6 | `theorem` | [linearIndependent_smul](../../../../CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/linearindependent-smul.md) | 116 | `result-track:17edf3d3b6c19c7164e90ef24c8f77a1839d2cfb86713d416dad9a56b3aef210` |
-| 7 | `def` | [Basis.smul](../../../../CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/basis-smul.md) | 134 | `declaration-track:9a80de83a4a4bd1dc58ecd59dfcf226a3febaad1c9dc225bbf4adaefb328ac68` |
-| 8 | `theorem` | [Basis.smul_repr](../../../../CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/basis-smul-repr.md) | 144 | `result-track:27d229586cd39c172083e1dcff1b39dcb910f015a07a3f115b41e538bceed345` |
-| 9 | `theorem` | [Basis.smul_repr_mk](../../../../CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/basis-smul-repr-mk.md) | 148 | `result-track:effb3022e01abcd9c5919729997a5dafa11595d7a0e108a4e007048d4242256b` |
-| 10 | `theorem` | [Basis.smul_apply](../../../../CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/basis-smul-apply.md) | 154 | `result-track:ffa09319ac2bdce41029d66e623e1ec2b7da683074f1ea02d764958c95ef9cb3` |
-| 11 | `theorem` | [Basis.algebraMap_injective](../../../../CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/basis-algebramap-injective.md) | 176 | `result-track:fc8045ba71a370d8be306a4287654bc2f258a2452be9009727449b126594f44d` |
-| 12 | `def` | [AlgHom.restrictDomain](../../../../CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/alghom-restrictdomain.md) | 193 | `declaration-track:27f168914a2466fad79f2ef3eb873fc146a09b197ed31068b4d3cd1061e89a03` |
-| 13 | `def` | [AlgHom.extendScalars](../../../../CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/alghom-extendscalars.md) | 202 | `declaration-track:1e51ec150f761ff0591e53ecdba397c960d28ae0642ad86cceeeddbc6dbab1e5` |
-| 14 | `def` | [algHomEquivSigma](../../../../CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/alghomequivsigma.md) | 219 | `declaration-track:d6596d3b22c09fd9a1e62bb889c06b6a5e9f93a94a2f424e1164dfba06ef0e1c` |
+| 1 | `def` | [Invertible.algebraTower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/invertible-algebratower.md) | 50 | `declaration-track:9c804a7362ba5fbaa89fa16352b071811c4c795c5cd5818ce9a0748eb8869033` |
+| 2 | `def` | [invertibleAlgebraCoeNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/invertiblealgebracoenat.md) | 58 | `declaration-track:d414f6e5f1578f8b0344a2803295e8238138fd8f9567dec0d087e5f45eedd2a2` |
+| 3 | `def` | [Basis.algebraMapCoeffs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/basis-algebramapcoeffs.md) | 86 | `declaration-track:3ee1ff7998b615934c7dd054c29645ce0a1f1e38a15e8cc71e58818b0cd2a93f` |
+| 4 | `theorem` | [Basis.algebraMapCoeffs_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/basis-algebramapcoeffs-apply.md) | 91 | `result-track:1764f26b93ab961de44813660fe98bb00b188a65d5b1e43f7aa05ac5d87de14a` |
+| 5 | `theorem` | [Basis.coe_algebraMapCoeffs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/basis-coe-algebramapcoeffs.md) | 96 | `result-track:889ad9c1195fd2375c3a0395367a14a58d72e8243f8e87a57540b9a24be5365e` |
+| 6 | `theorem` | [linearIndependent_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/linearindependent-smul.md) | 116 | `result-track:17edf3d3b6c19c7164e90ef24c8f77a1839d2cfb86713d416dad9a56b3aef210` |
+| 7 | `def` | [Basis.smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/basis-smul.md) | 134 | `declaration-track:9a80de83a4a4bd1dc58ecd59dfcf226a3febaad1c9dc225bbf4adaefb328ac68` |
+| 8 | `theorem` | [Basis.smul_repr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/basis-smul-repr.md) | 144 | `result-track:27d229586cd39c172083e1dcff1b39dcb910f015a07a3f115b41e538bceed345` |
+| 9 | `theorem` | [Basis.smul_repr_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/basis-smul-repr-mk.md) | 148 | `result-track:effb3022e01abcd9c5919729997a5dafa11595d7a0e108a4e007048d4242256b` |
+| 10 | `theorem` | [Basis.smul_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/basis-smul-apply.md) | 154 | `result-track:ffa09319ac2bdce41029d66e623e1ec2b7da683074f1ea02d764958c95ef9cb3` |
+| 11 | `theorem` | [Basis.algebraMap_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/basis-algebramap-injective.md) | 176 | `result-track:fc8045ba71a370d8be306a4287654bc2f258a2452be9009727449b126594f44d` |
+| 12 | `def` | [AlgHom.restrictDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/alghom-restrictdomain.md) | 193 | `declaration-track:27f168914a2466fad79f2ef3eb873fc146a09b197ed31068b4d3cd1061e89a03` |
+| 13 | `def` | [AlgHom.extendScalars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/alghom-extendscalars.md) | 202 | `declaration-track:1e51ec150f761ff0591e53ecdba397c960d28ae0642ad86cceeeddbc6dbab1e5` |
+| 14 | `def` | [algHomEquivSigma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraTowerAligned.lean/declarations/alghomequivsigma.md) | 219 | `declaration-track:d6596d3b22c09fd9a1e62bb889c06b6a5e9f93a94a2f424e1164dfba06ef0e1c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

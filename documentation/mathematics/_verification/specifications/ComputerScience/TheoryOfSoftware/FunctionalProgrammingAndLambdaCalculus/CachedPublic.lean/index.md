@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mkAtomCached](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedPublic.lean/declarations/mkatomcached.md) | 31 | `declaration-track:0252417bcc8716a7a1f031eab1134805efb642b53de04812f2d48849e32538c6` |
-| 2 | `def` | [mkConstCached](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedPublic.lean/declarations/mkconstcached.md) | 56 | `declaration-track:964f375305dc6af369f53fc438deddafd4a3b4014a16c05f012ccc74f32bceb5` |
-| 3 | `def` | [mkGateCached](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedPublic.lean/declarations/mkgatecached.md) | 65 | `declaration-track:6dcd0c99a2efd31bfe2f96f6dc6fa5ac2ef43dc8b500923ad5326ec0df2456c4` |
+| 1 | `def` | [mkAtomCached](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedPublic.lean/declarations/mkatomcached.md) | 31 | `declaration-track:0252417bcc8716a7a1f031eab1134805efb642b53de04812f2d48849e32538c6` |
+| 2 | `def` | [mkConstCached](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedPublic.lean/declarations/mkconstcached.md) | 56 | `declaration-track:964f375305dc6af369f53fc438deddafd4a3b4014a16c05f012ccc74f32bceb5` |
+| 3 | `def` | [mkGateCached](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedPublic.lean/declarations/mkgatecached.md) | 65 | `declaration-track:6dcd0c99a2efd31bfe2f96f6dc6fa5ac2ef43dc8b500923ad5326ec0df2456c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

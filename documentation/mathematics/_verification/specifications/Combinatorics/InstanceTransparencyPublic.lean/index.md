@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/InstanceTransparencyPublic.lean/index.md) · [Full source](../../../../Combinatorics/InstanceTransparencyPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InstanceTransparencyPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InstanceTransparencyPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `axiom` | [test_sorry](../../../../Combinatorics/InstanceTransparencyPublic.lean/declarations/test-sorry.md) | 17 | `declaration-track:3ea137f7a1ca1c1658897b5f9b978cadf3b25ded79108fc0794983a2226f4601` |
-| 2 | `example` | [(anonymous)](../../../../Combinatorics/InstanceTransparencyPublic.lean/declarations/example.md) | 20 | `declaration-track:585a25e1bf7ed900dd512124556b903cd6d492e012f0a7fef39f17bb5547bd46` |
-| 3 | `example` | [(anonymous)](../../../../Combinatorics/InstanceTransparencyPublic.lean/declarations/example-source-edition-3.md) | 24 | `declaration-track:e89fa175f2713b24abc724809bcbe8b55c1152ad3a4697d9f603c0798a9f27ae` |
-| 4 | `example` | [(anonymous)](../../../../Combinatorics/InstanceTransparencyPublic.lean/declarations/example-source-edition-2.md) | 29 | `declaration-track:902cd0964c88943866107925efda02ea90d4b1efcc15d97db75c665e6f5de2e8` |
+| 1 | `axiom` | [test_sorry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InstanceTransparencyPublic.lean/declarations/test-sorry.md) | 17 | `declaration-track:3ea137f7a1ca1c1658897b5f9b978cadf3b25ded79108fc0794983a2226f4601` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InstanceTransparencyPublic.lean/declarations/example.md) | 20 | `declaration-track:585a25e1bf7ed900dd512124556b903cd6d492e012f0a7fef39f17bb5547bd46` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InstanceTransparencyPublic.lean/declarations/example-source-edition-3.md) | 24 | `declaration-track:e89fa175f2713b24abc724809bcbe8b55c1152ad3a4697d9f603c0798a9f27ae` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InstanceTransparencyPublic.lean/declarations/example-source-edition-2.md) | 29 | `declaration-track:902cd0964c88943866107925efda02ea90d4b1efcc15d97db75c665e6f5de2e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtCoefficientSourceControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtCoefficientSourceControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtCoefficientSourceControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtCoefficientSourceControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedVonMangoldtCoefficientSource`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PinnedVonMangoldtCoefficientSource.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedVonMangoldtCoefficientSource`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PinnedVonMangoldtCoefficientSource.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [primeFive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtCoefficientSourceControls.lean/declarations/primefive.md) | 14 | `declaration-track:4989fe8b05f93b77fdd4bc52572bb92e30c66366a7343e599fc526bdc5fd453f` |
-| 2 | `def` | [fiveSquaredEvent](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtCoefficientSourceControls.lean/declarations/fivesquaredevent.md) | 16 | `declaration-track:3e971fef6f3ee3b62c35dfdc0bc22cc85c95d378771a6f1fc78f632e3f7a910a` |
-| 3 | `theorem` | [fiveSquared_coefficient_is_log_five](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtCoefficientSourceControls.lean/declarations/fivesquared-coefficient-is-log-five.md) | 21 | `result-track:12e0bb88fb916957359f1cde7d6293bca5299a6dc4d09185b04fab63655be4a4` |
-| 4 | `theorem` | [fiveSquared_raw_weight_is_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtCoefficientSourceControls.lean/declarations/fivesquared-raw-weight-is-one.md) | 27 | `result-track:92b29b00a554e53c030afa94cd0cd11251a05dd2d6dfca915f43e47e3f4144a9` |
-| 5 | `def` | [coefficientChannelStatus](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtCoefficientSourceControls.lean/declarations/coefficientchannelstatus.md) | 33 | `declaration-track:b51aa23116d4964f09e63b23f1700dc4e05b4aae034155d5a183fe3c2ba41231` |
+| 1 | `def` | [primeFive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtCoefficientSourceControls.lean/declarations/primefive.md) | 14 | `declaration-track:4989fe8b05f93b77fdd4bc52572bb92e30c66366a7343e599fc526bdc5fd453f` |
+| 2 | `def` | [fiveSquaredEvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtCoefficientSourceControls.lean/declarations/fivesquaredevent.md) | 16 | `declaration-track:3e971fef6f3ee3b62c35dfdc0bc22cc85c95d378771a6f1fc78f632e3f7a910a` |
+| 3 | `theorem` | [fiveSquared_coefficient_is_log_five](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtCoefficientSourceControls.lean/declarations/fivesquared-coefficient-is-log-five.md) | 21 | `result-track:12e0bb88fb916957359f1cde7d6293bca5299a6dc4d09185b04fab63655be4a4` |
+| 4 | `theorem` | [fiveSquared_raw_weight_is_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtCoefficientSourceControls.lean/declarations/fivesquared-raw-weight-is-one.md) | 27 | `result-track:92b29b00a554e53c030afa94cd0cd11251a05dd2d6dfca915f43e47e3f4144a9` |
+| 5 | `def` | [coefficientChannelStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtCoefficientSourceControls.lean/declarations/coefficientchannelstatus.md) | 33 | `declaration-track:b51aa23116d4964f09e63b23f1700dc4e05b4aae034155d5a183fe3c2ba41231` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

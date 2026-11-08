@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/BocksteinExtension.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/BocksteinExtension.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BocksteinExtension.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BocksteinExtension.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BocksteinExtension](../../../../GroupTheoryAndGeneralizations/BocksteinExtension.lean/declarations/bocksteinextension.md) | 16 | `declaration-track:1827d48c922babaab6e482b20f6a6d16fa03b023b45967760480a7db32b452c8` |
-| 2 | `theorem` | [bockstein_include_zero](../../../../GroupTheoryAndGeneralizations/BocksteinExtension.lean/declarations/bockstein-include-zero.md) | 39 | `result-track:8f82768a96bbd53176f75a721b494ee1f04f20388127467294652e6a1790f96e` |
-| 3 | `theorem` | [difference_lifts_from_torus](../../../../GroupTheoryAndGeneralizations/BocksteinExtension.lean/declarations/difference-lifts-from-torus.md) | 44 | `result-track:0c7373b9a1de9d9437161c4f56bd1a1e67c17bfdad9fdb78b7fce45864e7e7f5` |
+| 1 | `structure` | [BocksteinExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BocksteinExtension.lean/declarations/bocksteinextension.md) | 16 | `declaration-track:1827d48c922babaab6e482b20f6a6d16fa03b023b45967760480a7db32b452c8` |
+| 2 | `theorem` | [bockstein_include_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BocksteinExtension.lean/declarations/bockstein-include-zero.md) | 39 | `result-track:8f82768a96bbd53176f75a721b494ee1f04f20388127467294652e6a1790f96e` |
+| 3 | `theorem` | [difference_lifts_from_torus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BocksteinExtension.lean/declarations/difference-lifts-from-torus.md) | 44 | `result-track:0c7373b9a1de9d9437161c4f56bd1a1e67c17bfdad9fdb78b7fce45864e7e7f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

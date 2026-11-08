@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/EisensteinSeriesBasic.lean/index.md) · [Full source](../../../../NumberTheory/EisensteinSeriesBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [eisensteinSeries_MF](../../../../NumberTheory/EisensteinSeriesBasic.lean/declarations/eisensteinseries-mf.md) | 30 | `declaration-track:16cf35fe91a863c1c7e50b1f783c6d920a5898907a1d0954bb3259f7105f4f71` |
+| 1 | `def` | [eisensteinSeries_MF](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesBasic.lean/declarations/eisensteinseries-mf.md) | 30 | `declaration-track:16cf35fe91a863c1c7e50b1f783c6d920a5898907a1d0954bb3259f7105f4f71` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

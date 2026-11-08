@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/RankNamespaced.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/RankNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RankNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RankNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,7 +61,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [MvRatFunc.rank_eq_max_lift](../../../../FieldTheoryAndPolynomials/RankNamespaced.lean/declarations/mvratfunc-rank-eq-max-lift.md) | 29 | `result-track:4a444a4c46415e674979624a58671997940c6edf2098eff5a11436a8c8075a41` |
+| 1 | `theorem` | [MvRatFunc.rank_eq_max_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RankNamespaced.lean/declarations/mvratfunc-rank-eq-max-lift.md) | 29 | `result-track:4a444a4c46415e674979624a58671997940c6edf2098eff5a11436a8c8075a41` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

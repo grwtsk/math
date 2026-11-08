@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Envelope.lean/index.md) · [Full source](../../../../Combinatorics/Envelope.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Envelope.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Envelope.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedOuterDisk](../../../../Combinatorics/Envelope.lean/declarations/certifiedouterdisk.md) | 12 | `declaration-track:169f978c0e6a8b734053473afe2e992ce582d149e0d32f3597306584f0246400` |
-| 2 | `structure` | [CertifiedMinimumEnclosingDisk](../../../../Combinatorics/Envelope.lean/declarations/certifiedminimumenclosingdisk.md) | 21 | `declaration-track:83344dfa37431f5044e7183ec66035e85eb18f722a9bbce98531e932f988e273` |
-| 3 | `structure` | [DiskSupportCertificate](../../../../Combinatorics/Envelope.lean/declarations/disksupportcertificate.md) | 31 | `declaration-track:02ba28523072b1f79ea609ca47ace1fe62699b13db4540d145c780bdad01cc4d` |
-| 4 | `theorem` | [outerDisk_contains_unique_zero](../../../../Combinatorics/Envelope.lean/declarations/outerdisk-contains-unique-zero.md) | 45 | `result-track:29bd09fb6229f46f5405944452f937bcfa54b4c90040be03811ae9d41a062d04` |
-| 5 | `theorem` | [minimumDisk_support_card_le_three](../../../../Combinatorics/Envelope.lean/declarations/minimumdisk-support-card-le-three.md) | 61 | `result-track:4ac1e289de39e21758b1a4c1bb1694557872567582ebf9990bb9436ee660c201` |
+| 1 | `structure` | [CertifiedOuterDisk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Envelope.lean/declarations/certifiedouterdisk.md) | 12 | `declaration-track:169f978c0e6a8b734053473afe2e992ce582d149e0d32f3597306584f0246400` |
+| 2 | `structure` | [CertifiedMinimumEnclosingDisk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Envelope.lean/declarations/certifiedminimumenclosingdisk.md) | 21 | `declaration-track:83344dfa37431f5044e7183ec66035e85eb18f722a9bbce98531e932f988e273` |
+| 3 | `structure` | [DiskSupportCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Envelope.lean/declarations/disksupportcertificate.md) | 31 | `declaration-track:02ba28523072b1f79ea609ca47ace1fe62699b13db4540d145c780bdad01cc4d` |
+| 4 | `theorem` | [outerDisk_contains_unique_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Envelope.lean/declarations/outerdisk-contains-unique-zero.md) | 45 | `result-track:29bd09fb6229f46f5405944452f937bcfa54b4c90040be03811ae9d41a062d04` |
+| 5 | `theorem` | [minimumDisk_support_card_le_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Envelope.lean/declarations/minimumdisk-support-card-le-three.md) | 61 | `result-track:4ac1e289de39e21758b1a4c1bb1694557872567582ebf9990bb9436ee660c201` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

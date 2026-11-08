@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidIntegrallyClosedNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidIntegrallyClosedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidIntegrallyClosedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidIntegrallyClosedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsLocalization.surj_of_gcd_domain](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidIntegrallyClosedNamespaced.lean/declarations/islocalization-surj-of-gcd-domain.md) | 29 | `result-track:85b00697bf06b20ac3543edf53cde20eb48c30559a236ac407152a07d08e2fd5` |
-| 2 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidIntegrallyClosedNamespaced.lean/declarations/instance.md) | 38 | `declaration-track:89193f8f1bb754f1da71364305ac1ca10198074c35179a92b98f06304b7511ae` |
+| 1 | `theorem` | [IsLocalization.surj_of_gcd_domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidIntegrallyClosedNamespaced.lean/declarations/islocalization-surj-of-gcd-domain.md) | 29 | `result-track:85b00697bf06b20ac3543edf53cde20eb48c30559a236ac407152a07d08e2fd5` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidIntegrallyClosedNamespaced.lean/declarations/instance.md) | 38 | `declaration-track:89193f8f1bb754f1da71364305ac1ca10198074c35179a92b98f06304b7511ae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

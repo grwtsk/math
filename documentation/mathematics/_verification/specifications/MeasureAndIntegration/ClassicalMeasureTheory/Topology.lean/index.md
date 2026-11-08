@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Topology.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Topology.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Topology.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Topology.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ae_restrict_le_codiscreteWithin](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Topology.lean/declarations/ae-restrict-le-codiscretewithin.md) | 19 | `result-track:81361a4bc4f355b69f76cfce12072bd5fea1ba8f72324f770d17d773ebe6be98` |
+| 1 | `theorem` | [ae_restrict_le_codiscreteWithin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Topology.lean/declarations/ae-restrict-le-codiscretewithin.md) | 19 | `result-track:81361a4bc4f355b69f76cfce12072bd5fea1ba8f72324f770d17d773ebe6be98` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

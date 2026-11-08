@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Comp](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/comp.md) | 27 | `declaration-track:7aa9f185f12471ecf5e3eba4b6832d110dd603684cc8223c5f4de1b9ef724156` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/instance-source-edition-3.md) | 36 | `declaration-track:df735a283a30516fbf36bb80ce124d35093fd11b42153dedc86614880745c5ce` |
-| 3 | `def` | [mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/mk.md) | 39 | `declaration-track:25321749fb47905ffbeadf77cd5da56e7a52447fcfd74c1b7de58109ce1f31fc` |
-| 4 | `def` | [get](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/get.md) | 42 | `declaration-track:82f48ac4acf3aeb467416bfc099952f979fa2103e001ee9232ad46bc0cbb4542` |
-| 5 | `theorem` | [mk_get](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/mk-get.md) | 45 | `result-track:0ae7da536e0a27ac9d205a20120f491ab24350fff801d8a54389bcaea0cc8f52` |
-| 6 | `theorem` | [get_mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/get-mk.md) | 48 | `result-track:39999463aa812a2bd80e8341a27961000f40472ac622956d10bf16651f07ddf9` |
-| 7 | `def` | [map'](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/map.md) | 54 | `declaration-track:a4a23eaea098114b547801c1f15e46fb92bc18ac0081172c2c71bb38c78bc0a4` |
-| 8 | `def` | [map](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/map-source-edition-2.md) | 57 | `declaration-track:f6b39710fe154cfc7da496c53ef250f29a0bdeb2c68124aa43455ddc1fbe9dbb` |
-| 9 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/instance-source-edition-2.md) | 60 | `declaration-track:3c53195cce928ab1f3a89db596fcd51b6c4d8b9cbaacb69973d6fff53d6df636` |
-| 10 | `theorem` | [map_mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/map-mk.md) | 62 | `result-track:15e3ab0a5d37b56c061b58b8660a8b29ace5683567c2e1d070e9dcc8835939b4` |
-| 11 | `theorem` | [get_map](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/get-map.md) | 65 | `result-track:7c5e47d130f1de84cee11d89ae29fe4640596048ce4abde86e1466badb4af685` |
-| 12 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/instance.md) | 70 | `declaration-track:2635de9686a99595df4d539f7ad5220fbace78ad0fc857548e5921e77480cd0a` |
+| 1 | `def` | [Comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/comp.md) | 27 | `declaration-track:7aa9f185f12471ecf5e3eba4b6832d110dd603684cc8223c5f4de1b9ef724156` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/instance-source-edition-3.md) | 36 | `declaration-track:df735a283a30516fbf36bb80ce124d35093fd11b42153dedc86614880745c5ce` |
+| 3 | `def` | [mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/mk.md) | 39 | `declaration-track:25321749fb47905ffbeadf77cd5da56e7a52447fcfd74c1b7de58109ce1f31fc` |
+| 4 | `def` | [get](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/get.md) | 42 | `declaration-track:82f48ac4acf3aeb467416bfc099952f979fa2103e001ee9232ad46bc0cbb4542` |
+| 5 | `theorem` | [mk_get](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/mk-get.md) | 45 | `result-track:0ae7da536e0a27ac9d205a20120f491ab24350fff801d8a54389bcaea0cc8f52` |
+| 6 | `theorem` | [get_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/get-mk.md) | 48 | `result-track:39999463aa812a2bd80e8341a27961000f40472ac622956d10bf16651f07ddf9` |
+| 7 | `def` | [map'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/map.md) | 54 | `declaration-track:a4a23eaea098114b547801c1f15e46fb92bc18ac0081172c2c71bb38c78bc0a4` |
+| 8 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/map-source-edition-2.md) | 57 | `declaration-track:f6b39710fe154cfc7da496c53ef250f29a0bdeb2c68124aa43455ddc1fbe9dbb` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/instance-source-edition-2.md) | 60 | `declaration-track:3c53195cce928ab1f3a89db596fcd51b6c4d8b9cbaacb69973d6fff53d6df636` |
+| 10 | `theorem` | [map_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/map-mk.md) | 62 | `result-track:15e3ab0a5d37b56c061b58b8660a8b29ace5683567c2e1d070e9dcc8835939b4` |
+| 11 | `theorem` | [get_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/get-map.md) | 65 | `result-track:7c5e47d130f1de84cee11d89ae29fe4640596048ce4abde86e1466badb4af685` |
+| 12 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ConstructionsComp.lean/declarations/instance.md) | 70 | `declaration-track:2635de9686a99595df4d539f7ad5220fbace78ad0fc857548e5921e77480cd0a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

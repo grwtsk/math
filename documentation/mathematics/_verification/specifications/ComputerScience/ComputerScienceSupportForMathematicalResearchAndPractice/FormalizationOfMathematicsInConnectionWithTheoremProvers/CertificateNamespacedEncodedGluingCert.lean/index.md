@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CertificateNamespacedEncodedGluingCert.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CertificateNamespacedEncodedGluingCert.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CertificateNamespacedEncodedGluingCert.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CertificateNamespacedEncodedGluingCert.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [EncodedGluingCert](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CertificateNamespacedEncodedGluingCert.lean/declarations/encodedgluingcert.md) | 19 | `declaration-track:38635abf5753fd01cd4c99a24230bb6ec1398d9f0099a7044de61534298ca4f3` |
-| 2 | `def` | [checkGluingCertificate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CertificateNamespacedEncodedGluingCert.lean/declarations/checkgluingcertificate.md) | 24 | `declaration-track:31830d93e2709e0597a4ea5f2987fc0e6968936f72482bbe9e895b7e70a42c0d` |
+| 1 | `structure` | [EncodedGluingCert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CertificateNamespacedEncodedGluingCert.lean/declarations/encodedgluingcert.md) | 19 | `declaration-track:38635abf5753fd01cd4c99a24230bb6ec1398d9f0099a7044de61534298ca4f3` |
+| 2 | `def` | [checkGluingCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CertificateNamespacedEncodedGluingCert.lean/declarations/checkgluingcertificate.md) | 24 | `declaration-track:31830d93e2709e0597a4ea5f2987fc0e6968936f72482bbe9e895b7e70a42c0d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

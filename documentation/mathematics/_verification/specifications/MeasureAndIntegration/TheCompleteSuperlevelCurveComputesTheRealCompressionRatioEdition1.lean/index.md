@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TheCompleteSuperlevelCurveComputesTheRealCompressionRatioEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TheCompleteSuperlevelCurveComputesTheRealCompressionRatioEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TheCompleteSuperlevelCurveComputesTheRealCompressionRatioEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TheCompleteSuperlevelCurveComputesTheRealCompressionRatioEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [normalizedCurve](../../../../MeasureAndIntegration/TheCompleteSuperlevelCurveComputesTheRealCompressionRatioEdition1.lean/declarations/normalizedcurve.md) | 26 | `declaration-track:bcdf219e01e9c4c75b434e71e050011157af7659ef7b8a0d13edf9ee0369ea9d` |
-| 2 | `theorem` | [real_unit_layercake](../../../../MeasureAndIntegration/TheCompleteSuperlevelCurveComputesTheRealCompressionRatioEdition1.lean/declarations/real-unit-layercake.md) | 29 | `result-track:01bf6c80d395ca8c79c1e86376ba3ffc6f2d2015efdedb695469b269e480e10d` |
-| 3 | `theorem` | [normalized_moment](../../../../MeasureAndIntegration/TheCompleteSuperlevelCurveComputesTheRealCompressionRatioEdition1.lean/declarations/normalized-moment.md) | 50 | `result-track:03878d610c78de1af20714c48212283255de90c8e75a09bb251b3cb0b419840b` |
-| 4 | `theorem` | [normalized_superlevel_moment](../../../../MeasureAndIntegration/TheCompleteSuperlevelCurveComputesTheRealCompressionRatioEdition1.lean/declarations/normalized-superlevel-moment.md) | 58 | `result-track:f40736b5b686323ecb2562b3f7d07aa0bc758d6de899704153c1d7cedfa1563a` |
-| 5 | `theorem` | [compression_from_complete_superlevels](../../../../MeasureAndIntegration/TheCompleteSuperlevelCurveComputesTheRealCompressionRatioEdition1.lean/declarations/compression-from-complete-superlevels.md) | 68 | `result-track:7aba66d41d47e4f94db457d765e5851f880890b4c497290bef6fd204c3a42bcf` |
+| 1 | `def` | [normalizedCurve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TheCompleteSuperlevelCurveComputesTheRealCompressionRatioEdition1.lean/declarations/normalizedcurve.md) | 26 | `declaration-track:bcdf219e01e9c4c75b434e71e050011157af7659ef7b8a0d13edf9ee0369ea9d` |
+| 2 | `theorem` | [real_unit_layercake](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TheCompleteSuperlevelCurveComputesTheRealCompressionRatioEdition1.lean/declarations/real-unit-layercake.md) | 29 | `result-track:01bf6c80d395ca8c79c1e86376ba3ffc6f2d2015efdedb695469b269e480e10d` |
+| 3 | `theorem` | [normalized_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TheCompleteSuperlevelCurveComputesTheRealCompressionRatioEdition1.lean/declarations/normalized-moment.md) | 50 | `result-track:03878d610c78de1af20714c48212283255de90c8e75a09bb251b3cb0b419840b` |
+| 4 | `theorem` | [normalized_superlevel_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TheCompleteSuperlevelCurveComputesTheRealCompressionRatioEdition1.lean/declarations/normalized-superlevel-moment.md) | 58 | `result-track:f40736b5b686323ecb2562b3f7d07aa0bc758d6de899704153c1d7cedfa1563a` |
+| 5 | `theorem` | [compression_from_complete_superlevels](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TheCompleteSuperlevelCurveComputesTheRealCompressionRatioEdition1.lean/declarations/compression-from-complete-superlevels.md) | 68 | `result-track:7aba66d41d47e4f94db457d765e5851f880890b4c497290bef6fd204c3a42bcf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

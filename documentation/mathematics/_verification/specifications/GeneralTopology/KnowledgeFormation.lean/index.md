@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/KnowledgeFormation.lean/index.md) · [Full source](../../../../GeneralTopology/KnowledgeFormation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KnowledgeFormation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KnowledgeFormation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [KnowledgeDisposition](../../../../GeneralTopology/KnowledgeFormation.lean/declarations/knowledgedisposition.md) | 28 | `declaration-track:482831b1eaa9724601afef7c17aa94b5507f7eee15cea52a7fb832e695aba636` |
-| 2 | `def` | [activationRequired](../../../../GeneralTopology/KnowledgeFormation.lean/declarations/activationrequired.md) | 47 | `declaration-track:5d1928145766d949e7c7f232eba57eea9b7d54fddece013cc51e72630ddbc0db` |
-| 3 | `theorem` | [incidence_anchor_activation_not_required](../../../../GeneralTopology/KnowledgeFormation.lean/declarations/incidence-anchor-activation-not-required.md) | 53 | `result-track:03e7d636af703d3b3f3b3094409e2a91e0c7f5f5fe41b6bce9b3b815305bfc8c` |
-| 4 | `theorem` | [routing_residue_activates](../../../../GeneralTopology/KnowledgeFormation.lean/declarations/routing-residue-activates.md) | 58 | `result-track:e20788c50767b6dd68f861b8ecbdb29c30f3554e0f12cff78305d84b7504eadc` |
-| 5 | `theorem` | [naming_residue_activates](../../../../GeneralTopology/KnowledgeFormation.lean/declarations/naming-residue-activates.md) | 65 | `result-track:d113f318ceb31927202e365baf89cd34b4bb84c4f9715673f23ed61f3e58c4d8` |
-| 6 | `structure` | [CertifiedKnowledgeFormation](../../../../GeneralTopology/KnowledgeFormation.lean/declarations/certifiedknowledgeformation.md) | 80 | `declaration-track:8cca8b1574f1bf39621313a1e53379aba109a4fb908c795250b9878b9c24e21d` |
-| 7 | `theorem` | [compact](../../../../GeneralTopology/KnowledgeFormation.lean/declarations/compact.md) | 98 | `result-track:13c215a8946e61119e4bb145faf165e090520e9b0374d671e24d59d94b78f4f4` |
+| 1 | `inductive` | [KnowledgeDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KnowledgeFormation.lean/declarations/knowledgedisposition.md) | 28 | `declaration-track:482831b1eaa9724601afef7c17aa94b5507f7eee15cea52a7fb832e695aba636` |
+| 2 | `def` | [activationRequired](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KnowledgeFormation.lean/declarations/activationrequired.md) | 47 | `declaration-track:5d1928145766d949e7c7f232eba57eea9b7d54fddece013cc51e72630ddbc0db` |
+| 3 | `theorem` | [incidence_anchor_activation_not_required](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KnowledgeFormation.lean/declarations/incidence-anchor-activation-not-required.md) | 53 | `result-track:03e7d636af703d3b3f3b3094409e2a91e0c7f5f5fe41b6bce9b3b815305bfc8c` |
+| 4 | `theorem` | [routing_residue_activates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KnowledgeFormation.lean/declarations/routing-residue-activates.md) | 58 | `result-track:e20788c50767b6dd68f861b8ecbdb29c30f3554e0f12cff78305d84b7504eadc` |
+| 5 | `theorem` | [naming_residue_activates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KnowledgeFormation.lean/declarations/naming-residue-activates.md) | 65 | `result-track:d113f318ceb31927202e365baf89cd34b4bb84c4f9715673f23ed61f3e58c4d8` |
+| 6 | `structure` | [CertifiedKnowledgeFormation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KnowledgeFormation.lean/declarations/certifiedknowledgeformation.md) | 80 | `declaration-track:8cca8b1574f1bf39621313a1e53379aba109a4fb908c795250b9878b9c24e21d` |
+| 7 | `theorem` | [compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KnowledgeFormation.lean/declarations/compact.md) | 98 | `result-track:13c215a8946e61119e4bb145faf165e090520e9b0374d671e24d59d94b78f4f4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

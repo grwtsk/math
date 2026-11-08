@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PerfectComplexPerfectComplex.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PerfectComplexPerfectComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PerfectComplexPerfectComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PerfectComplexPerfectComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PerfectComplex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PerfectComplexPerfectComplex.lean/declarations/perfectcomplex.md) | 18 | `declaration-track:4731554962be52acbe19df3ac27a0499330a04743e55cdb6d5fa155b8476e9c4` |
-| 2 | `theorem` | [perfect_complex_dualizable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PerfectComplexPerfectComplex.lean/declarations/perfect-complex-dualizable.md) | 28 | `result-track:122ec41226d17d60c70e74daa2e9af3feb52a38109c1b64bbb30bf2ef18b30e7` |
-| 3 | `theorem` | [perfect_complex_locally_finite](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PerfectComplexPerfectComplex.lean/declarations/perfect-complex-locally-finite.md) | 33 | `result-track:52d621134a519e502d72bc4a1639abd5400ab6cef5c33d3ec1c6d59c832766ce` |
-| 4 | `theorem` | [perfect_complex_bounded_tor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PerfectComplexPerfectComplex.lean/declarations/perfect-complex-bounded-tor.md) | 38 | `result-track:8a01a61f9d4710d0d51bdd2e5529b2a81932cf8aff412da35a0e4c4ce3a33111` |
+| 1 | `structure` | [PerfectComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PerfectComplexPerfectComplex.lean/declarations/perfectcomplex.md) | 18 | `declaration-track:4731554962be52acbe19df3ac27a0499330a04743e55cdb6d5fa155b8476e9c4` |
+| 2 | `theorem` | [perfect_complex_dualizable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PerfectComplexPerfectComplex.lean/declarations/perfect-complex-dualizable.md) | 28 | `result-track:122ec41226d17d60c70e74daa2e9af3feb52a38109c1b64bbb30bf2ef18b30e7` |
+| 3 | `theorem` | [perfect_complex_locally_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PerfectComplexPerfectComplex.lean/declarations/perfect-complex-locally-finite.md) | 33 | `result-track:52d621134a519e502d72bc4a1639abd5400ab6cef5c33d3ec1c6d59c832766ce` |
+| 4 | `theorem` | [perfect_complex_bounded_tor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PerfectComplexPerfectComplex.lean/declarations/perfect-complex-bounded-tor.md) | 38 | `result-track:8a01a61f9d4710d0d51bdd2e5529b2a81932cf8aff412da35a0e4c4ce3a33111` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

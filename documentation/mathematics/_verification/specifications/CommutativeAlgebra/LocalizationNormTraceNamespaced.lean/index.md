@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LocalizationNormTraceNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LocalizationNormTraceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationNormTraceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationNormTraceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Algebra.map_leftMulMatrix_localization](../../../../CommutativeAlgebra/LocalizationNormTraceNamespaced.lean/declarations/algebra-map-leftmulmatrix-localization.md) | 56 | `result-track:568837c2b3400164b2914262297c977e01b0e18f6993c0b7442a148787d8cf74` |
-| 2 | `theorem` | [Algebra.norm_localization](../../../../CommutativeAlgebra/LocalizationNormTraceNamespaced.lean/declarations/algebra-norm-localization.md) | 67 | `result-track:ca7782247aeccbe36776cb39926270ee53cc3dde95f1b886fe854ae70603a06a` |
-| 3 | `lemma` | [Algebra.norm_eq_iff](../../../../CommutativeAlgebra/LocalizationNormTraceNamespaced.lean/declarations/algebra-norm-eq-iff.md) | 79 | `result-track:5bc544497e23133eebe5ac997a71ad1fcd904d37ace053a272b122b52b539734` |
-| 4 | `theorem` | [Algebra.trace_localization](../../../../CommutativeAlgebra/LocalizationNormTraceNamespaced.lean/declarations/algebra-trace-localization.md) | 88 | `result-track:ae89b06d014d65a8699635a6a4c01dced90dc569ab833a75cd0a65c70b5fb9dc` |
-| 5 | `theorem` | [Algebra.traceMatrix_localizationLocalization](../../../../CommutativeAlgebra/LocalizationNormTraceNamespaced.lean/declarations/algebra-tracematrix-localizationlocalization.md) | 106 | `result-track:3378a32ccaf4cf045dbad44f0109215750db5504d5d712bb8e2221f5f98ea0f3` |
-| 6 | `theorem` | [Algebra.discr_localizationLocalization](../../../../CommutativeAlgebra/LocalizationNormTraceNamespaced.lean/declarations/algebra-discr-localizationlocalization.md) | 120 | `result-track:2f207be238bf3b2c84b01bbdba2c88ccd54132771eb3e6d430497ae7224a2a2c` |
+| 1 | `theorem` | [Algebra.map_leftMulMatrix_localization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationNormTraceNamespaced.lean/declarations/algebra-map-leftmulmatrix-localization.md) | 56 | `result-track:568837c2b3400164b2914262297c977e01b0e18f6993c0b7442a148787d8cf74` |
+| 2 | `theorem` | [Algebra.norm_localization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationNormTraceNamespaced.lean/declarations/algebra-norm-localization.md) | 67 | `result-track:ca7782247aeccbe36776cb39926270ee53cc3dde95f1b886fe854ae70603a06a` |
+| 3 | `lemma` | [Algebra.norm_eq_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationNormTraceNamespaced.lean/declarations/algebra-norm-eq-iff.md) | 79 | `result-track:5bc544497e23133eebe5ac997a71ad1fcd904d37ace053a272b122b52b539734` |
+| 4 | `theorem` | [Algebra.trace_localization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationNormTraceNamespaced.lean/declarations/algebra-trace-localization.md) | 88 | `result-track:ae89b06d014d65a8699635a6a4c01dced90dc569ab833a75cd0a65c70b5fb9dc` |
+| 5 | `theorem` | [Algebra.traceMatrix_localizationLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationNormTraceNamespaced.lean/declarations/algebra-tracematrix-localizationlocalization.md) | 106 | `result-track:3378a32ccaf4cf045dbad44f0109215750db5504d5d712bb8e2221f5f98ea0f3` |
+| 6 | `theorem` | [Algebra.discr_localizationLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationNormTraceNamespaced.lean/declarations/algebra-discr-localizationlocalization.md) | 120 | `result-track:2f207be238bf3b2c84b01bbdba2c88ccd54132771eb3e6d430497ae7224a2a2c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

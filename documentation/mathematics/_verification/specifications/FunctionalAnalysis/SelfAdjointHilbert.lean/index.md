@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SelfAdjointHilbert.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SelfAdjointHilbert.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SelfAdjointHilbert.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SelfAdjointHilbert.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Hilbert.SymmetricOperator](../../../../FunctionalAnalysis/SelfAdjointHilbert.lean/declarations/hilbert-symmetricoperator.md) | 23 | `declaration-track:8e6fd8a66e2518dc1c7ccebd472d31ab985c9f5ab53eec6aaa309d76c04d7706` |
-| 2 | `structure` | [Hilbert.SelfAdjointCertificate](../../../../FunctionalAnalysis/SelfAdjointHilbert.lean/declarations/hilbert-selfadjointcertificate.md) | 30 | `declaration-track:0c510e727dd8fa1169553f83be49254288c22fb80c87205e530d2883a28891df` |
-| 3 | `theorem` | [Hilbert.selfAdjoint_implies_symmetric](../../../../FunctionalAnalysis/SelfAdjointHilbert.lean/declarations/hilbert-selfadjoint-implies-symmetric.md) | 39 | `result-track:10e496cfae3fd5f5ad291940c7afbe41b203ff33641ef9edf0dbfe1a0f0ef907` |
+| 1 | `structure` | [Hilbert.SymmetricOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SelfAdjointHilbert.lean/declarations/hilbert-symmetricoperator.md) | 23 | `declaration-track:8e6fd8a66e2518dc1c7ccebd472d31ab985c9f5ab53eec6aaa309d76c04d7706` |
+| 2 | `structure` | [Hilbert.SelfAdjointCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SelfAdjointHilbert.lean/declarations/hilbert-selfadjointcertificate.md) | 30 | `declaration-track:0c510e727dd8fa1169553f83be49254288c22fb80c87205e530d2883a28891df` |
+| 3 | `theorem` | [Hilbert.selfAdjoint_implies_symmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SelfAdjointHilbert.lean/declarations/hilbert-selfadjoint-implies-symmetric.md) | 39 | `result-track:10e496cfae3fd5f5ad291940c7afbe41b203ff33641ef9edf0dbfe1a0f0ef907` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

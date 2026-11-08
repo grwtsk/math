@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedCanonicalChoiceProfile.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedCanonicalChoiceProfile.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedCanonicalChoiceProfile.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedCanonicalChoiceProfile.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CanonicalChoiceProfile](../../../../../ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedCanonicalChoiceProfile.lean/declarations/canonicalchoiceprofile.md) | 15 | `declaration-track:7456da04e09b33cbcf058f50700744a4ce946ed10e5be3c9c5f3735ed7fdff78` |
-| 2 | `structure` | [ProjectProfile](../../../../../ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedCanonicalChoiceProfile.lean/declarations/projectprofile.md) | 25 | `declaration-track:c58599174020f43b83adf18706e0dec83ce72a914e27de063abc042134c53aba` |
+| 1 | `inductive` | [CanonicalChoiceProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedCanonicalChoiceProfile.lean/declarations/canonicalchoiceprofile.md) | 15 | `declaration-track:7456da04e09b33cbcf058f50700744a4ce946ed10e5be3c9c5f3735ed7fdff78` |
+| 2 | `structure` | [ProjectProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedCanonicalChoiceProfile.lean/declarations/projectprofile.md) | 25 | `declaration-track:c58599174020f43b83adf18706e0dec83ce72a914e27de063abc042134c53aba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

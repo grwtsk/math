@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuarticCubicResidueSplittingField.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuarticCubicResidueSplittingField.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicResidueSplittingField.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicResidueSplittingField.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticCubicResidueDescent`](../../../../CommutativeAlgebra/QuarticCubicResidueDescent.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticCubicResidueDescent`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicResidueDescent.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.FieldTheory.SplittingField.IsSplittingField` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [reduced_adjacencyCubic_separable_in_splittingField](../../../../CommutativeAlgebra/QuarticCubicResidueSplittingField.lean/declarations/reduced-adjacencycubic-separable-in-splittingfield.md) | 28 | `result-track:c7150e2f8263012876b656c458ede570c2071faedfb5e8641ea8804db87a5222` |
+| 1 | `theorem` | [reduced_adjacencyCubic_separable_in_splittingField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicResidueSplittingField.lean/declarations/reduced-adjacencycubic-separable-in-splittingfield.md) | 28 | `result-track:c7150e2f8263012876b656c458ede570c2071faedfb5e8641ea8804db87a5222` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

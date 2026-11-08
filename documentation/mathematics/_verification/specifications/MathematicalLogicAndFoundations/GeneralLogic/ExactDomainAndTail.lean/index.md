@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTail.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTail.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTail.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTail.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.FiniteCoverage`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteCoverageHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Logic.FiniteCoverage`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteCoverageHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTail.lean/declarations/example-source-edition-3.md) | 3 | `declaration-track:e24791c8ed962abce95529f72c02ff6eadd516e586025270b1e120379aa1908e` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTail.lean/declarations/example-source-edition-2.md) | 7 | `declaration-track:d3f0cdaaa94f06027698d5592d38ec40b2e6210c8a762baa04d75271c928a834` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTail.lean/declarations/example.md) | 11 | `declaration-track:1a271a1db75fbd65fa253d387f5462499c2dde0ed23a3aefb905aa44eb731c8e` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTail.lean/declarations/example-source-edition-4.md) | 13 | `declaration-track:e47ae6920938d19aaa64b1df8212d26017f13b85159e5a8949e3ba6c5cad3393` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTail.lean/declarations/example-source-edition-3.md) | 3 | `declaration-track:e24791c8ed962abce95529f72c02ff6eadd516e586025270b1e120379aa1908e` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTail.lean/declarations/example-source-edition-2.md) | 7 | `declaration-track:d3f0cdaaa94f06027698d5592d38ec40b2e6210c8a762baa04d75271c928a834` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTail.lean/declarations/example.md) | 11 | `declaration-track:1a271a1db75fbd65fa253d387f5462499c2dde0ed23a3aefb905aa44eb731c8e` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTail.lean/declarations/example-source-edition-4.md) | 13 | `declaration-track:e47ae6920938d19aaa64b1df8212d26017f13b85159e5a8949e3ba6c5cad3393` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

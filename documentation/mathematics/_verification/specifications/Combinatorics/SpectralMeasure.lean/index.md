@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SpectralMeasure.lean/index.md) · [Full source](../../../../Combinatorics/SpectralMeasure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpectralMeasure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpectralMeasure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [eigenvalueMultiplicity](../../../../Combinatorics/SpectralMeasure.lean/declarations/eigenvaluemultiplicity.md) | 14 | `declaration-track:e13b006c18895dcbc2b8a503e59f82a33f6f45a22e04822dfa98f7f19dc59cd8` |
-| 2 | `def` | [empiricalSpectralIntegral](../../../../Combinatorics/SpectralMeasure.lean/declarations/empiricalspectralintegral.md) | 30 | `declaration-track:fc5721ba9409f0ea2141eb233c9435f5f6282328c1e694df2e15190d2449f4ae` |
-| 3 | `def` | [invariantEnsembleSpectralIntegral](../../../../Combinatorics/SpectralMeasure.lean/declarations/invariantensemblespectralintegral.md) | 41 | `declaration-track:f09d1ebc4d6b6c527553b0fff2dc499e74d1437df7f442246d9e9c19f34e8c73` |
+| 1 | `def` | [eigenvalueMultiplicity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpectralMeasure.lean/declarations/eigenvaluemultiplicity.md) | 14 | `declaration-track:e13b006c18895dcbc2b8a503e59f82a33f6f45a22e04822dfa98f7f19dc59cd8` |
+| 2 | `def` | [empiricalSpectralIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpectralMeasure.lean/declarations/empiricalspectralintegral.md) | 30 | `declaration-track:fc5721ba9409f0ea2141eb233c9435f5f6282328c1e694df2e15190d2449f4ae` |
+| 3 | `def` | [invariantEnsembleSpectralIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpectralMeasure.lean/declarations/invariantensemblespectralintegral.md) | 41 | `declaration-track:f09d1ebc4d6b6c527553b0fff2dc499e74d1437df7f442246d9e9c19f34e8c73` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

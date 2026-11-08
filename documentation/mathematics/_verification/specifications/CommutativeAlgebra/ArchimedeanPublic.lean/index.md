@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ArchimedeanPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ArchimedeanPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArchimedeanPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArchimedeanPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [MonoidWithZeroHom.instLinearOrderedCommGroupWithZeroMrange](../../../../CommutativeAlgebra/ArchimedeanPublic.lean/declarations/monoidwithzerohom-instlinearorderedcommgroupwithzeromrange.md) | 23 | `declaration-track:2992cf1ccbb494542ec01b917d60b75d5120875c2bf67173ce8bb0a88b4f17b5` |
-| 2 | `instance` | [Valuation.instLinearOrderedCommGroupWithZeroMrange](../../../../CommutativeAlgebra/ArchimedeanPublic.lean/declarations/valuation-instlinearorderedcommgroupwithzeromrange.md) | 34 | `declaration-track:5585ab3f411579f8aebe34b047b08af066b9b0c3ab691350278c0b7e47798a15` |
-| 3 | `lemma` | [wfDvdMonoid_iff_wellFounded_gt_on_v](../../../../CommutativeAlgebra/ArchimedeanPublic.lean/declarations/wfdvdmonoid-iff-wellfounded-gt-on-v.md) | 41 | `result-track:5363b9fb63d624125d1b0c09de76f3078563c223db8dd35a15b761742fac8a0c` |
-| 4 | `lemma` | [wellFounded_gt_on_v_iff_discrete_mrange](../../../../CommutativeAlgebra/ArchimedeanPublic.lean/declarations/wellfounded-gt-on-v-iff-discrete-mrange.md) | 47 | `result-track:5196aaac3c571530f4499e259740b186209cf04918997c7d51980b4116bf6643` |
-| 5 | `lemma` | [isPrincipalIdealRing_iff_not_denselyOrdered](../../../../CommutativeAlgebra/ArchimedeanPublic.lean/declarations/isprincipalidealring-iff-not-denselyordered.md) | 70 | `result-track:cf14d1e7308968418c38cfd51c459fc22d457f40dba9457237efb60c1f6c480c` |
-| 6 | `lemma` | [isPrincipalIdealRing_iff_not_denselyOrdered_mrange](../../../../CommutativeAlgebra/ArchimedeanPublic.lean/declarations/isprincipalidealring-iff-not-denselyordered-mrange.md) | 84 | `result-track:d77d4ed679cdfa35449f4ecff921a6e3541c3f4a0528524f49a816c1bdaa9c6f` |
+| 1 | `instance` | [MonoidWithZeroHom.instLinearOrderedCommGroupWithZeroMrange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArchimedeanPublic.lean/declarations/monoidwithzerohom-instlinearorderedcommgroupwithzeromrange.md) | 23 | `declaration-track:2992cf1ccbb494542ec01b917d60b75d5120875c2bf67173ce8bb0a88b4f17b5` |
+| 2 | `instance` | [Valuation.instLinearOrderedCommGroupWithZeroMrange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArchimedeanPublic.lean/declarations/valuation-instlinearorderedcommgroupwithzeromrange.md) | 34 | `declaration-track:5585ab3f411579f8aebe34b047b08af066b9b0c3ab691350278c0b7e47798a15` |
+| 3 | `lemma` | [wfDvdMonoid_iff_wellFounded_gt_on_v](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArchimedeanPublic.lean/declarations/wfdvdmonoid-iff-wellfounded-gt-on-v.md) | 41 | `result-track:5363b9fb63d624125d1b0c09de76f3078563c223db8dd35a15b761742fac8a0c` |
+| 4 | `lemma` | [wellFounded_gt_on_v_iff_discrete_mrange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArchimedeanPublic.lean/declarations/wellfounded-gt-on-v-iff-discrete-mrange.md) | 47 | `result-track:5196aaac3c571530f4499e259740b186209cf04918997c7d51980b4116bf6643` |
+| 5 | `lemma` | [isPrincipalIdealRing_iff_not_denselyOrdered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArchimedeanPublic.lean/declarations/isprincipalidealring-iff-not-denselyordered.md) | 70 | `result-track:cf14d1e7308968418c38cfd51c459fc22d457f40dba9457237efb60c1f6c480c` |
+| 6 | `lemma` | [isPrincipalIdealRing_iff_not_denselyOrdered_mrange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArchimedeanPublic.lean/declarations/isprincipalidealring-iff-not-denselyordered-mrange.md) | 84 | `result-track:d77d4ed679cdfa35449f4ecff921a6e3541c3f4a0528524f49a816c1bdaa9c6f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

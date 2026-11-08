@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.EllipticCurve.WeierstrassImageIndex`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeierstrassImageIndex.lean/index.md) — import line 10; pinned internal source present.
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetImage`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetImage.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.EllipticCurve.WeierstrassImageIndex`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeierstrassImageIndex.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetImage`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetImage.lean/index.md) — import line 11; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Target](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/declarations/target.md) | 23 | `declaration-track:08dc535d7c72deaf671c80287e19a34322b9587898de82d13562f4a81dbcb17d` |
-| 2 | `theorem` | [imageLattice_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/declarations/imagelattice-eq.md) | 26 | `result-track:28e06b4b379909a929a4169d0acfe38cd28a502054a90193e8f7a27eed33ec96` |
-| 3 | `theorem` | [image_quotient_cardinality](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/declarations/image-quotient-cardinality.md) | 42 | `result-track:f6490ef9493977ed9688f189a27c72036c43e51cf4575a6e55507cba4f3023b0` |
-| 4 | `theorem` | [image_quotient_cardinality_formula](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/declarations/image-quotient-cardinality-formula.md) | 56 | `result-track:121c243528a9627108f45a6a2dd5088c0e95ca536f3244cfebe20b22be22cebb` |
-| 5 | `theorem` | [image_index_prime_depth](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/declarations/image-index-prime-depth.md) | 66 | `result-track:a9c2ed5176cd89b478b3c694261135482ae7f0c2f1b8a783f41f477cf7baba44` |
-| 6 | `theorem` | [fixed_source_index](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/declarations/fixed-source-index.md) | 77 | `result-track:c72a2be946d7475f67714277b2795b83473786ed17f059f7c764282020013f20` |
-| 7 | `theorem` | [fixed_source_order_four_index_vs_clearing](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/declarations/fixed-source-order-four-index-vs-clearing.md) | 93 | `result-track:bf264ba2a0e36b22e9567a75ef47df1858eea517486c79344bb8408c182af7d7` |
-| 8 | `theorem` | [fixed_source_height](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/declarations/fixed-source-height.md) | 110 | `result-track:6a4223f3e462e3e48b94712ddebe2fadd2b351c382ee5f232ef28bf41562e615` |
+| 1 | `abbrev` | [Target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/declarations/target.md) | 23 | `declaration-track:08dc535d7c72deaf671c80287e19a34322b9587898de82d13562f4a81dbcb17d` |
+| 2 | `theorem` | [imageLattice_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/declarations/imagelattice-eq.md) | 26 | `result-track:28e06b4b379909a929a4169d0acfe38cd28a502054a90193e8f7a27eed33ec96` |
+| 3 | `theorem` | [image_quotient_cardinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/declarations/image-quotient-cardinality.md) | 42 | `result-track:f6490ef9493977ed9688f189a27c72036c43e51cf4575a6e55507cba4f3023b0` |
+| 4 | `theorem` | [image_quotient_cardinality_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/declarations/image-quotient-cardinality-formula.md) | 56 | `result-track:121c243528a9627108f45a6a2dd5088c0e95ca536f3244cfebe20b22be22cebb` |
+| 5 | `theorem` | [image_index_prime_depth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/declarations/image-index-prime-depth.md) | 66 | `result-track:a9c2ed5176cd89b478b3c694261135482ae7f0c2f1b8a783f41f477cf7baba44` |
+| 6 | `theorem` | [fixed_source_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/declarations/fixed-source-index.md) | 77 | `result-track:c72a2be946d7475f67714277b2795b83473786ed17f059f7c764282020013f20` |
+| 7 | `theorem` | [fixed_source_order_four_index_vs_clearing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/declarations/fixed-source-order-four-index-vs-clearing.md) | 93 | `result-track:bf264ba2a0e36b22e9567a75ef47df1858eea517486c79344bb8408c182af7d7` |
+| 8 | `theorem` | [fixed_source_height](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/declarations/fixed-source-height.md) | 110 | `result-track:6a4223f3e462e3e48b94712ddebe2fadd2b351c382ee5f232ef28bf41562e615` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

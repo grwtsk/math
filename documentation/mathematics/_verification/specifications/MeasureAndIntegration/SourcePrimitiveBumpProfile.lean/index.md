@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourcePrimitiveBumpProfile.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourcePrimitiveBumpProfile.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveBumpProfile.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveBumpProfile.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceBump_overlap_integrable](../../../../MeasureAndIntegration/SourcePrimitiveBumpProfile.lean/declarations/sourcebump-overlap-integrable.md) | 33 | `result-track:7b7258253126af4db3d5a0b45482e29852bec5ef8270e75d0c85137a95b9bb0c` |
-| 2 | `theorem` | [primitiveCorrelationZero_eq_profile](../../../../MeasureAndIntegration/SourcePrimitiveBumpProfile.lean/declarations/primitivecorrelationzero-eq-profile.md) | 41 | `result-track:cca50e489af9bfc501a586bad94009544134228bc8c0328c2a5ef1deda9703d1` |
+| 1 | `theorem` | [sourceBump_overlap_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveBumpProfile.lean/declarations/sourcebump-overlap-integrable.md) | 33 | `result-track:7b7258253126af4db3d5a0b45482e29852bec5ef8270e75d0c85137a95b9bb0c` |
+| 2 | `theorem` | [primitiveCorrelationZero_eq_profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveBumpProfile.lean/declarations/primitivecorrelationzero-eq-profile.md) | 41 | `result-track:cca50e489af9bfc501a586bad94009544134228bc8c0328c2a5ef1deda9703d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

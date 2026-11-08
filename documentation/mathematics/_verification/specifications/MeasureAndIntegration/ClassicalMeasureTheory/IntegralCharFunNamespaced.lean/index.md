@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralCharFunNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralCharFunNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralCharFunNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralCharFunNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [integral_charFun_Icc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralCharFunNamespaced.lean/declarations/integral-charfun-icc.md) | 48 | `result-track:53699c71c66c0c1fb263b9e786d6cc4170c657008722a6c42fbfbbb10a4d6bf2` |
-| 2 | `lemma` | [measureReal_abs_gt_le_integral_charFun](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralCharFunNamespaced.lean/declarations/measurereal-abs-gt-le-integral-charfun.md) | 99 | `result-track:3d32c5db6408882a5bcd75023d91d6a5d356d43088b6d8d62d35a3f54d2e2361` |
-| 3 | `lemma` | [measureReal_abs_dual_gt_le_integral_charFunDual](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralCharFunNamespaced.lean/declarations/measurereal-abs-dual-gt-le-integral-charfundual.md) | 158 | `result-track:46d8ca11997feded2e81cf447608f0a87dd69707b1b294730503a666b87144bb` |
-| 4 | `lemma` | [measureReal_abs_inner_gt_le_integral_charFun](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralCharFunNamespaced.lean/declarations/measurereal-abs-inner-gt-le-integral-charfun.md) | 171 | `result-track:dbe67b349938936b78af3a397d0e24be3cd6884a049696878dc73dee423b1f58` |
+| 1 | `lemma` | [integral_charFun_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralCharFunNamespaced.lean/declarations/integral-charfun-icc.md) | 48 | `result-track:53699c71c66c0c1fb263b9e786d6cc4170c657008722a6c42fbfbbb10a4d6bf2` |
+| 2 | `lemma` | [measureReal_abs_gt_le_integral_charFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralCharFunNamespaced.lean/declarations/measurereal-abs-gt-le-integral-charfun.md) | 99 | `result-track:3d32c5db6408882a5bcd75023d91d6a5d356d43088b6d8d62d35a3f54d2e2361` |
+| 3 | `lemma` | [measureReal_abs_dual_gt_le_integral_charFunDual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralCharFunNamespaced.lean/declarations/measurereal-abs-dual-gt-le-integral-charfundual.md) | 158 | `result-track:46d8ca11997feded2e81cf447608f0a87dd69707b1b294730503a666b87144bb` |
+| 4 | `lemma` | [measureReal_abs_inner_gt_le_integral_charFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralCharFunNamespaced.lean/declarations/measurereal-abs-inner-gt-le-integral-charfun.md) | 171 | `result-track:dbe67b349938936b78af3a397d0e24be3cd6884a049696878dc73dee423b1f58` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

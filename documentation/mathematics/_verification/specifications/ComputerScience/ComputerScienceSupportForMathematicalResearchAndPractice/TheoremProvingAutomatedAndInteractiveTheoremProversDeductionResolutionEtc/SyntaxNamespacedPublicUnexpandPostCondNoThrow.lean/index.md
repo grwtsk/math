@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxNamespacedPublicUnexpandPostCondNoThrow.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxNamespacedPublicUnexpandPostCondNoThrow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxNamespacedPublicUnexpandPostCondNoThrow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxNamespacedPublicUnexpandPostCondNoThrow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [unexpandPostCondNoThrow](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxNamespacedPublicUnexpandPostCondNoThrow.lean/declarations/unexpandpostcondnothrow.md) | 28 | `declaration-track:d7f911eec44b4065515953b6d8bf44d5b8a5e836d5019cb084532b1575d89ae4` |
-| 2 | `def` | [unexpandPostCondMayThrow](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxNamespacedPublicUnexpandPostCondNoThrow.lean/declarations/unexpandpostcondmaythrow.md) | 37 | `declaration-track:901170697dc8bdb1e722a6a71d64a5ea3adc180323c020bdea8ac97b2844a474` |
-| 3 | `def` | [elabTriple](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxNamespacedPublicUnexpandPostCondNoThrow.lean/declarations/elabtriple.md) | 45 | `declaration-track:8cc24084522c1a7a5e4e580d635ec7eab6d1348af92fd4eec6bb593a4e5f4625` |
+| 1 | `def` | [unexpandPostCondNoThrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxNamespacedPublicUnexpandPostCondNoThrow.lean/declarations/unexpandpostcondnothrow.md) | 28 | `declaration-track:d7f911eec44b4065515953b6d8bf44d5b8a5e836d5019cb084532b1575d89ae4` |
+| 2 | `def` | [unexpandPostCondMayThrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxNamespacedPublicUnexpandPostCondNoThrow.lean/declarations/unexpandpostcondmaythrow.md) | 37 | `declaration-track:901170697dc8bdb1e722a6a71d64a5ea3adc180323c020bdea8ac97b2844a474` |
+| 3 | `def` | [elabTriple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxNamespacedPublicUnexpandPostCondNoThrow.lean/declarations/elabtriple.md) | 45 | `declaration-track:8cc24084522c1a7a5e4e580d635ec7eab6d1348af92fd4eec6bb593a4e5f4625` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

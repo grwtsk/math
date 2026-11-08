@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GeneralTentExplicitFormula.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GeneralTentExplicitFormula.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GeneralTentExplicitFormula.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GeneralTentExplicitFormula.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula`](../../../../../../NumberTheory/CanonicalTentExplicitFormula.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.LSeries.TentPairing`](../../../../../../MeasureAndIntegration/TentPairing.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentExplicitFormula.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.LSeries.TentPairing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentPairing.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [tentMangoldt](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GeneralTentExplicitFormula.lean/declarations/tentmangoldt.md) | 34 | `declaration-track:09999a3dc9bb2827e1df96a1538d25b487aa733a6990a0fd50c117c680e958f0` |
-| 2 | `theorem` | [tentMangoldt_eq_rightLine](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GeneralTentExplicitFormula.lean/declarations/tentmangoldt-eq-rightline.md) | 37 | `result-track:0d7b1f8035f2519435a0f34f97ba0b411c45344d5f60f7d6cbaa2d5045161dc8` |
-| 3 | `theorem` | [separated_right_tendsto_tentMangoldt](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GeneralTentExplicitFormula.lean/declarations/separated-right-tendsto-tentmangoldt.md) | 46 | `result-track:19385a9afe3c60a2f4b5c8a6d4a0955eedce43ca89deb1b4387d86b2ce7bae03` |
-| 4 | `theorem` | [general_residues_tendsto_source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GeneralTentExplicitFormula.lean/declarations/general-residues-tendsto-source.md) | 60 | `result-track:8bcfe3039c8c42a0e57ae195e93191ef9d44f476a2cc97df8462ae1a4ee29e7b` |
-| 5 | `theorem` | [general_tent_source_eq_tsum](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GeneralTentExplicitFormula.lean/declarations/general-tent-source-eq-tsum.md) | 82 | `result-track:ca9ed9c227c5541d60ebd168d99926dc969d49620e4f4f251114ebe6e51c5a2d` |
-| 6 | `theorem` | [norm_general_tent_sub_head_le](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GeneralTentExplicitFormula.lean/declarations/norm-general-tent-sub-head-le.md) | 93 | `result-track:8b4c431a19a7113e2e6bc9b061a674fe577cc0c8dfc45fe3a151aaa0a01f801c` |
+| 1 | `def` | [tentMangoldt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GeneralTentExplicitFormula.lean/declarations/tentmangoldt.md) | 34 | `declaration-track:09999a3dc9bb2827e1df96a1538d25b487aa733a6990a0fd50c117c680e958f0` |
+| 2 | `theorem` | [tentMangoldt_eq_rightLine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GeneralTentExplicitFormula.lean/declarations/tentmangoldt-eq-rightline.md) | 37 | `result-track:0d7b1f8035f2519435a0f34f97ba0b411c45344d5f60f7d6cbaa2d5045161dc8` |
+| 3 | `theorem` | [separated_right_tendsto_tentMangoldt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GeneralTentExplicitFormula.lean/declarations/separated-right-tendsto-tentmangoldt.md) | 46 | `result-track:19385a9afe3c60a2f4b5c8a6d4a0955eedce43ca89deb1b4387d86b2ce7bae03` |
+| 4 | `theorem` | [general_residues_tendsto_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GeneralTentExplicitFormula.lean/declarations/general-residues-tendsto-source.md) | 60 | `result-track:8bcfe3039c8c42a0e57ae195e93191ef9d44f476a2cc97df8462ae1a4ee29e7b` |
+| 5 | `theorem` | [general_tent_source_eq_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GeneralTentExplicitFormula.lean/declarations/general-tent-source-eq-tsum.md) | 82 | `result-track:ca9ed9c227c5541d60ebd168d99926dc969d49620e4f4f251114ebe6e51c5a2d` |
+| 6 | `theorem` | [norm_general_tent_sub_head_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GeneralTentExplicitFormula.lean/declarations/norm-general-tent-sub-head-le.md) | 93 | `result-track:8b4c431a19a7113e2e6bc9b061a674fe577cc0c8dfc45fe3a151aaa0a01f801c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

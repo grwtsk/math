@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicZipWithIndex.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicZipWithIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicZipWithIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicZipWithIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [zipWithIndex](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicZipWithIndex.lean/declarations/zipwithindex.md) | 16 | `declaration-track:f767e5ad9875110d02f8c97fb900e6f70ac47c64a499b64eb8d9bd197b9ffd1b` |
-| 2 | `def` | [toListAppend](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicZipWithIndex.lean/declarations/tolistappend.md) | 20 | `declaration-track:196157705b6a4805aed897af80f9313821d5d3731bf4a9cae0e3a45bbc334772` |
-| 3 | `def` | [ofFn](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicZipWithIndex.lean/declarations/offn.md) | 28 | `declaration-track:aa24ad1a7623ff39ce4aa9b41824d91e1089c0f9ee462aaefae2389498e9edc9` |
-| 4 | `def` | [range](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicZipWithIndex.lean/declarations/range.md) | 35 | `declaration-track:08ddb762aa4bad12ef5d387b783a1b0ddbf9b58604490e6c981840e172dd4f6a` |
-| 5 | `def` | [flatten](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicZipWithIndex.lean/declarations/flatten.md) | 39 | `declaration-track:fe72b0c1e69d55c2fe9918fb6d28c2c2bf32e29cb624b917b278a55034916411` |
+| 1 | `def` | [zipWithIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicZipWithIndex.lean/declarations/zipwithindex.md) | 16 | `declaration-track:f767e5ad9875110d02f8c97fb900e6f70ac47c64a499b64eb8d9bd197b9ffd1b` |
+| 2 | `def` | [toListAppend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicZipWithIndex.lean/declarations/tolistappend.md) | 20 | `declaration-track:196157705b6a4805aed897af80f9313821d5d3731bf4a9cae0e3a45bbc334772` |
+| 3 | `def` | [ofFn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicZipWithIndex.lean/declarations/offn.md) | 28 | `declaration-track:aa24ad1a7623ff39ce4aa9b41824d91e1089c0f9ee462aaefae2389498e9edc9` |
+| 4 | `def` | [range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicZipWithIndex.lean/declarations/range.md) | 35 | `declaration-track:08ddb762aa4bad12ef5d387b783a1b0ddbf9b58604490e6c981840e172dd4f6a` |
+| 5 | `def` | [flatten](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicZipWithIndex.lean/declarations/flatten.md) | 39 | `declaration-track:fe72b0c1e69d55c2fe9918fb6d28c2c2bf32e29cb624b917b278a55034916411` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

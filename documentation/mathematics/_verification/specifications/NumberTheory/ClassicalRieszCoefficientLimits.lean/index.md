@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ClassicalRieszCoefficientLimits.lean/index.md) · [Full source](../../../../NumberTheory/ClassicalRieszCoefficientLimits.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassicalRieszCoefficientLimits.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassicalRieszCoefficientLimits.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.ClassicalRieszNormalization`](../../../../NumberTheory/ClassicalRieszNormalization.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.NormalizedRieszFiniteEvaluation`](../../../../NumberTheory/NormalizedRieszFiniteEvaluation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.ClassicalRieszNormalization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassicalRieszNormalization.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.NormalizedRieszFiniteEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedRieszFiniteEvaluation.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteSourceSlope](../../../../NumberTheory/ClassicalRieszCoefficientLimits.lean/declarations/finitesourceslope.md) | 20 | `declaration-track:82d350e1ce09854dac157afbc4f898e37858b696a9cd624df3f4a71f8fec0b1f` |
-| 2 | `def` | [finiteSourceIntercept](../../../../NumberTheory/ClassicalRieszCoefficientLimits.lean/declarations/finitesourceintercept.md) | 23 | `declaration-track:d8e85dee70b48a9e338f06638763c98c879c8dbdb17e1d6c206a22439d140a36` |
-| 3 | `theorem` | [slope_error_eq](../../../../NumberTheory/ClassicalRieszCoefficientLimits.lean/declarations/slope-error-eq.md) | 26 | `result-track:e4f6528de731cfd2a3aac56f98f3d91443591db05137e1a1a977a05bef6415f8` |
-| 4 | `theorem` | [norm_slope_error_le](../../../../NumberTheory/ClassicalRieszCoefficientLimits.lean/declarations/norm-slope-error-le.md) | 35 | `result-track:7f54476b708ac84ac509a90ba0bf7057e604fa5649f0dcdecf5397b8e629dd9f` |
-| 5 | `theorem` | [norm_intercept_error_le](../../../../NumberTheory/ClassicalRieszCoefficientLimits.lean/declarations/norm-intercept-error-le.md) | 42 | `result-track:5ca6c182bf186cc59fa97df5055315407eb63b59bd2ff066ba44fabe912f1550` |
-| 6 | `theorem` | [finiteSourceSlope_tendsto_source](../../../../NumberTheory/ClassicalRieszCoefficientLimits.lean/declarations/finitesourceslope-tendsto-source.md) | 58 | `result-track:4f7f3fa978b701656cb1e81442429e9533129908b2c363db2e2c0d51aa7acd1d` |
-| 7 | `theorem` | [finiteSourceIntercept_tendsto_source](../../../../NumberTheory/ClassicalRieszCoefficientLimits.lean/declarations/finitesourceintercept-tendsto-source.md) | 67 | `result-track:dea44b99d565195b9736fa6b99963da56afae3eeb50deddcea0fde8559dc08b8` |
+| 1 | `def` | [finiteSourceSlope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassicalRieszCoefficientLimits.lean/declarations/finitesourceslope.md) | 20 | `declaration-track:82d350e1ce09854dac157afbc4f898e37858b696a9cd624df3f4a71f8fec0b1f` |
+| 2 | `def` | [finiteSourceIntercept](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassicalRieszCoefficientLimits.lean/declarations/finitesourceintercept.md) | 23 | `declaration-track:d8e85dee70b48a9e338f06638763c98c879c8dbdb17e1d6c206a22439d140a36` |
+| 3 | `theorem` | [slope_error_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassicalRieszCoefficientLimits.lean/declarations/slope-error-eq.md) | 26 | `result-track:e4f6528de731cfd2a3aac56f98f3d91443591db05137e1a1a977a05bef6415f8` |
+| 4 | `theorem` | [norm_slope_error_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassicalRieszCoefficientLimits.lean/declarations/norm-slope-error-le.md) | 35 | `result-track:7f54476b708ac84ac509a90ba0bf7057e604fa5649f0dcdecf5397b8e629dd9f` |
+| 5 | `theorem` | [norm_intercept_error_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassicalRieszCoefficientLimits.lean/declarations/norm-intercept-error-le.md) | 42 | `result-track:5ca6c182bf186cc59fa97df5055315407eb63b59bd2ff066ba44fabe912f1550` |
+| 6 | `theorem` | [finiteSourceSlope_tendsto_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassicalRieszCoefficientLimits.lean/declarations/finitesourceslope-tendsto-source.md) | 58 | `result-track:4f7f3fa978b701656cb1e81442429e9533129908b2c363db2e2c0d51aa7acd1d` |
+| 7 | `theorem` | [finiteSourceIntercept_tendsto_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassicalRieszCoefficientLimits.lean/declarations/finitesourceintercept-tendsto-source.md) | 67 | `result-track:dea44b99d565195b9736fa6b99963da56afae3eeb50deddcea0fde8559dc08b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandCommandPacket.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandCommandPacket.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandCommandPacket.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandCommandPacket.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CommandPacket](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandCommandPacket.lean/declarations/commandpacket.md) | 11 | `declaration-track:2917f5d2d42fcb2a101161887197c7747abea244347002ecf100676fa9b60171` |
-| 2 | `structure` | [AdmittedCommand](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandCommandPacket.lean/declarations/admittedcommand.md) | 19 | `declaration-track:2ab330c53b81b12b3f4c300c19c7b75ac97394bdd339a646e2bfa89234bc2d8f` |
-| 3 | `def` | [AdmittedCommand.evidenceKind](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandCommandPacket.lean/declarations/admittedcommand-evidencekind.md) | 31 | `declaration-track:9bacf10788a71cc2e5a9333fea6438a77524facc66eec2e4e41728051af45b66` |
-| 4 | `theorem` | [admitted_command_has_no_theorem_authority](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandCommandPacket.lean/declarations/admitted-command-has-no-theorem-authority.md) | 37 | `result-track:617bfe7a8bb5ee82aa52d0e52378e100a21a82de6b95dfefbabe91976a720320` |
+| 1 | `structure` | [CommandPacket](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandCommandPacket.lean/declarations/commandpacket.md) | 11 | `declaration-track:2917f5d2d42fcb2a101161887197c7747abea244347002ecf100676fa9b60171` |
+| 2 | `structure` | [AdmittedCommand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandCommandPacket.lean/declarations/admittedcommand.md) | 19 | `declaration-track:2ab330c53b81b12b3f4c300c19c7b75ac97394bdd339a646e2bfa89234bc2d8f` |
+| 3 | `def` | [AdmittedCommand.evidenceKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandCommandPacket.lean/declarations/admittedcommand-evidencekind.md) | 31 | `declaration-track:9bacf10788a71cc2e5a9333fea6438a77524facc66eec2e4e41728051af45b66` |
+| 4 | `theorem` | [admitted_command_has_no_theorem_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandCommandPacket.lean/declarations/admitted-command-has-no-theorem-authority.md) | 37 | `result-track:617bfe7a8bb5ee82aa52d0e52378e100a21a82de6b95dfefbabe91976a720320` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

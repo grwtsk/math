@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PiNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [List.Vector.encodable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PiNamespaced.lean/declarations/list-vector-encodable.md) | 36 | `declaration-track:9fbddd71ca061f8c721cb1f6110aa9d35f654007e82fe03fed4c1ae11fdfd283` |
-| 2 | `instance` | [List.Vector.countable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PiNamespaced.lean/declarations/list-vector-countable.md) | 40 | `declaration-track:61ba6315a903c2818f2e6e02b52817aae103e6165fda7e3254e35dc73efc5a6b` |
-| 3 | `instance` | [finArrow](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PiNamespaced.lean/declarations/finarrow.md) | 44 | `declaration-track:73fbcf194acfce25798145a7d194576f715c495f54f21624692777e694c5cd6d` |
-| 4 | `instance` | [finPi](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PiNamespaced.lean/declarations/finpi.md) | 47 | `declaration-track:789dcf22de7c3f83199fa85981cc229e952a0b3fdf2cd7cfb1bb7d4d72bd70a4` |
-| 5 | `def` | [fintypeArrow](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PiNamespaced.lean/declarations/fintypearrow.md) | 53 | `declaration-track:11958e6987720e82f915a96b8611bd0d26592397c7eef809e90a02e1c2708f34` |
-| 6 | `def` | [fintypePi](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PiNamespaced.lean/declarations/fintypepi.md) | 60 | `declaration-track:819a92cbb9fa7a0431b5e31887928f84602baac7913bdac22bb02e96ef6191a7` |
-| 7 | `instance` | [fintypeArrowOfEncodable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PiNamespaced.lean/declarations/fintypearrowofencodable.md) | 69 | `declaration-track:1312993aef9e51391ce7f2e3d43df9115fdb3901cec1daf3bc96294ce491a26f` |
+| 1 | `instance` | [List.Vector.encodable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PiNamespaced.lean/declarations/list-vector-encodable.md) | 36 | `declaration-track:9fbddd71ca061f8c721cb1f6110aa9d35f654007e82fe03fed4c1ae11fdfd283` |
+| 2 | `instance` | [List.Vector.countable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PiNamespaced.lean/declarations/list-vector-countable.md) | 40 | `declaration-track:61ba6315a903c2818f2e6e02b52817aae103e6165fda7e3254e35dc73efc5a6b` |
+| 3 | `instance` | [finArrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PiNamespaced.lean/declarations/finarrow.md) | 44 | `declaration-track:73fbcf194acfce25798145a7d194576f715c495f54f21624692777e694c5cd6d` |
+| 4 | `instance` | [finPi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PiNamespaced.lean/declarations/finpi.md) | 47 | `declaration-track:789dcf22de7c3f83199fa85981cc229e952a0b3fdf2cd7cfb1bb7d4d72bd70a4` |
+| 5 | `def` | [fintypeArrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PiNamespaced.lean/declarations/fintypearrow.md) | 53 | `declaration-track:11958e6987720e82f915a96b8611bd0d26592397c7eef809e90a02e1c2708f34` |
+| 6 | `def` | [fintypePi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PiNamespaced.lean/declarations/fintypepi.md) | 60 | `declaration-track:819a92cbb9fa7a0431b5e31887928f84602baac7913bdac22bb02e96ef6191a7` |
+| 7 | `instance` | [fintypeArrowOfEncodable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PiNamespaced.lean/declarations/fintypearrowofencodable.md) | 69 | `declaration-track:1312993aef9e51391ce7f2e3d43df9115fdb3901cec1daf3bc96294ce491a26f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

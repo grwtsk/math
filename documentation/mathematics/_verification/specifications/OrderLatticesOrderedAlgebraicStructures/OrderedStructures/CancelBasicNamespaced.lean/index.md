@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CancelBasicNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CancelBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CancelBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CancelBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Function.Injective.orderedCancelCommMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CancelBasicNamespaced.lean/declarations/function-injective-orderedcancelcommmonoid.md) | 40 | `declaration-track:c2d76cb0e820501342fc8723abfdc3c0beb7c8e9ec7241cf60c80796fdb1fbee` |
-| 2 | `def` | [Function.Injective.linearOrderedCancelCommMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CancelBasicNamespaced.lean/declarations/function-injective-linearorderedcancelcommmonoid.md) | 59 | `declaration-track:080f77c9fa7b7c3738616911a924a393a5790dc3050f4b93faa3bac0dfdcfa19` |
+| 1 | `def` | [Function.Injective.orderedCancelCommMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CancelBasicNamespaced.lean/declarations/function-injective-orderedcancelcommmonoid.md) | 40 | `declaration-track:c2d76cb0e820501342fc8723abfdc3c0beb7c8e9ec7241cf60c80796fdb1fbee` |
+| 2 | `def` | [Function.Injective.linearOrderedCancelCommMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CancelBasicNamespaced.lean/declarations/function-injective-linearorderedcancelcommmonoid.md) | 59 | `declaration-track:080f77c9fa7b7c3738616911a924a393a5790dc3050f4b93faa3bac0dfdcfa19` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

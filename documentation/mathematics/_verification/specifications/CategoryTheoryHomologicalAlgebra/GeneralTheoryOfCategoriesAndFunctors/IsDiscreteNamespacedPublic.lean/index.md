@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsDiscreteNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsDiscreteNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsDiscreteNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsDiscreteNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsDiscreteNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 39 | `declaration-track:0ed1fda9a8f3ceb676bc6934407496d16953ba47358ceb41f519525064c643e2` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsDiscreteNamespacedPublic.lean/declarations/instance.md) | 49 | `declaration-track:072c74c1b081494024781fe3d598fbb613bc6a4346445a81df55a6f832e5dde5` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsDiscreteNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 61 | `declaration-track:81be02b3ebb128ff0d89033d9320b26239be0ded5b9acbb96943be541bb6d023` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsDiscreteNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 67 | `declaration-track:3626b35a2a524fae6611b7c434047ad75a64d48ee80251b7157824ee6eff9da1` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsDiscreteNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 85 | `declaration-track:a88f5e759a3efcc22db96f1876135c4a3c0703055adb7c2842ddf3f8fbb2d018` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsDiscreteNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 39 | `declaration-track:0ed1fda9a8f3ceb676bc6934407496d16953ba47358ceb41f519525064c643e2` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsDiscreteNamespacedPublic.lean/declarations/instance.md) | 49 | `declaration-track:072c74c1b081494024781fe3d598fbb613bc6a4346445a81df55a6f832e5dde5` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsDiscreteNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 61 | `declaration-track:81be02b3ebb128ff0d89033d9320b26239be0ded5b9acbb96943be541bb6d023` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsDiscreteNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 67 | `declaration-track:3626b35a2a524fae6611b7c434047ad75a64d48ee80251b7157824ee6eff9da1` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsDiscreteNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 85 | `declaration-track:a88f5e759a3efcc22db96f1876135c4a3c0703055adb7c2842ddf3f8fbb2d018` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

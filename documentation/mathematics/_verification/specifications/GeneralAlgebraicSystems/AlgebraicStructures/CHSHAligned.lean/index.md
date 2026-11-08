@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CHSHAligned.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CHSHAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CHSHAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CHSHAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IsCHSHTuple](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CHSHAligned.lean/declarations/ischshtuple.md) | 85 | `declaration-track:b14c971996276263494f29bf992fa60924f25c1739e8c853a33884f8ee99f9de` |
-| 2 | `theorem` | [CHSH_id](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CHSHAligned.lean/declarations/chsh-id.md) | 103 | `result-track:fffd5f8e46c8eb8fee0a6d56b7b7fde2aef9ba3492c9656ffc9d04d77b79976d` |
-| 3 | `theorem` | [CHSH_inequality_of_comm](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CHSHAligned.lean/declarations/chsh-inequality-of-comm.md) | 124 | `result-track:7d8736702c0f0e6a0a1a617a2da2cfa85d0cc73d16403565ecc9f637c61c9bd9` |
-| 4 | `theorem` | [tsirelson_inequality_aux](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CHSHAligned.lean/declarations/tsirelson-inequality-aux.md) | 170 | `result-track:746d93385da698b373f6cd44f6cae68faab3ade1557e13959b277b312f524909` |
-| 5 | `theorem` | [sqrt_two_inv_mul_self](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CHSHAligned.lean/declarations/sqrt-two-inv-mul-self.md) | 177 | `result-track:1f4319ab31a3f97221ded7a8d987cde9ac83a83c9821b26e70fefb8a0fa84e80` |
-| 6 | `theorem` | [tsirelson_inequality](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CHSHAligned.lean/declarations/tsirelson-inequality.md) | 195 | `result-track:7f1b63588818a29f12e2049ad1503ec759dd27afc53608c6b5c2bf9f6346a2a0` |
+| 1 | `structure` | [IsCHSHTuple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CHSHAligned.lean/declarations/ischshtuple.md) | 85 | `declaration-track:b14c971996276263494f29bf992fa60924f25c1739e8c853a33884f8ee99f9de` |
+| 2 | `theorem` | [CHSH_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CHSHAligned.lean/declarations/chsh-id.md) | 103 | `result-track:fffd5f8e46c8eb8fee0a6d56b7b7fde2aef9ba3492c9656ffc9d04d77b79976d` |
+| 3 | `theorem` | [CHSH_inequality_of_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CHSHAligned.lean/declarations/chsh-inequality-of-comm.md) | 124 | `result-track:7d8736702c0f0e6a0a1a617a2da2cfa85d0cc73d16403565ecc9f637c61c9bd9` |
+| 4 | `theorem` | [tsirelson_inequality_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CHSHAligned.lean/declarations/tsirelson-inequality-aux.md) | 170 | `result-track:746d93385da698b373f6cd44f6cae68faab3ade1557e13959b277b312f524909` |
+| 5 | `theorem` | [sqrt_two_inv_mul_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CHSHAligned.lean/declarations/sqrt-two-inv-mul-self.md) | 177 | `result-track:1f4319ab31a3f97221ded7a8d987cde9ac83a83c9821b26e70fefb8a0fa84e80` |
+| 6 | `theorem` | [tsirelson_inequality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CHSHAligned.lean/declarations/tsirelson-inequality.md) | 195 | `result-track:7f1b63588818a29f12e2049ad1503ec759dd27afc53608c6b5c2bf9f6346a2a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

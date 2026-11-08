@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SerializationFramedBytes.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SerializationFramedBytes.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SerializationFramedBytes.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SerializationFramedBytes.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [FramedBytes](../../../../../ComputerScience/AlgorithmsInComputerScience/SerializationFramedBytes.lean/declarations/framedbytes.md) | 28 | `declaration-track:585ad7777f076b3675a6482ed4ba6deb6c4a819c11216ec6d49c26599d33b8eb` |
-| 2 | `abbrev` | [CanonicalSerializer](../../../../../ComputerScience/AlgorithmsInComputerScience/SerializationFramedBytes.lean/declarations/canonicalserializer.md) | 34 | `declaration-track:da6ab2a66219e3d2174a8d3b86443e622b1186edb0334c8b8d2df1cbc7a444b4` |
-| 3 | `def` | [Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/SerializationFramedBytes.lean/declarations/valid.md) | 40 | `declaration-track:2506e41c244086cc88e85ddad22cb70278975933eb3e2182b57b9431b357fd70` |
-| 4 | `theorem` | [encode_injective](../../../../../ComputerScience/AlgorithmsInComputerScience/SerializationFramedBytes.lean/declarations/encode-injective.md) | 47 | `result-track:7949b41b283d048243ee12ca398a43714676a34d33d87d6c996e71a1e4e71b76` |
+| 1 | `abbrev` | [FramedBytes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SerializationFramedBytes.lean/declarations/framedbytes.md) | 28 | `declaration-track:585ad7777f076b3675a6482ed4ba6deb6c4a819c11216ec6d49c26599d33b8eb` |
+| 2 | `abbrev` | [CanonicalSerializer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SerializationFramedBytes.lean/declarations/canonicalserializer.md) | 34 | `declaration-track:da6ab2a66219e3d2174a8d3b86443e622b1186edb0334c8b8d2df1cbc7a444b4` |
+| 3 | `def` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SerializationFramedBytes.lean/declarations/valid.md) | 40 | `declaration-track:2506e41c244086cc88e85ddad22cb70278975933eb3e2182b57b9431b357fd70` |
+| 4 | `theorem` | [encode_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SerializationFramedBytes.lean/declarations/encode-injective.md) | 47 | `result-track:7949b41b283d048243ee12ca398a43714676a34d33d87d6c996e71a1e4e71b76` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

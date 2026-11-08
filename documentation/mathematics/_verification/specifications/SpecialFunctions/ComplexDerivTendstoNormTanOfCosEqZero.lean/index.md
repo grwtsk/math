@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/index.md) · [Full source](../../../../SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasStrictDerivAt_tan](../../../../SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/declarations/hasstrictderivat-tan.md) | 24 | `result-track:629eda10088208941517f9f2b85d803ab07f9ddca418e120e1135aadc68364ed` |
-| 2 | `theorem` | [hasDerivAt_tan](../../../../SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/declarations/hasderivat-tan.md) | 29 | `result-track:7216a84b88d9302233fc904ddee71ff207848dd1f3fac5bd1d702a5bebd0f59e` |
-| 3 | `theorem` | [tendsto_norm_tan_of_cos_eq_zero](../../../../SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/declarations/tendsto-norm-tan-of-cos-eq-zero.md) | 34 | `result-track:612d9bf8c24f18e16f4ab2194ba70f4a44b631d6b03bc9e43ac29442155e434d` |
-| 4 | `theorem` | [tendsto_norm_tan_atTop](../../../../SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/declarations/tendsto-norm-tan-attop.md) | 43 | `result-track:9cf3c773a21161a5e05ec6b8b1fbe9c59a09b98943a9314384c0d28ab2e457f5` |
-| 5 | `theorem` | [continuousAt_tan](../../../../SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/declarations/continuousat-tan.md) | 52 | `result-track:f56d0ca3e4a30330effb40c51573b6d93795f293d90d3be03edb64946b70192c` |
-| 6 | `theorem` | [differentiableAt_tan](../../../../SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/declarations/differentiableat-tan.md) | 58 | `result-track:1e863c1df459de998f9121a7eb46e7132a0def0d9b5e2ed0e5a86ee97b37c697` |
-| 7 | `theorem` | [deriv_tan](../../../../SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/declarations/deriv-tan.md) | 62 | `result-track:fb2e1f094afd6812d2300708142a7d3601c18440671a4e812bb59c0b1b48c154` |
-| 8 | `theorem` | [contDiffAt_tan](../../../../SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/declarations/contdiffat-tan.md) | 69 | `result-track:2de22acb54533c596091983dc47d3365931494cac828371b045ca2ac4bc86cbb` |
+| 1 | `theorem` | [hasStrictDerivAt_tan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/declarations/hasstrictderivat-tan.md) | 24 | `result-track:629eda10088208941517f9f2b85d803ab07f9ddca418e120e1135aadc68364ed` |
+| 2 | `theorem` | [hasDerivAt_tan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/declarations/hasderivat-tan.md) | 29 | `result-track:7216a84b88d9302233fc904ddee71ff207848dd1f3fac5bd1d702a5bebd0f59e` |
+| 3 | `theorem` | [tendsto_norm_tan_of_cos_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/declarations/tendsto-norm-tan-of-cos-eq-zero.md) | 34 | `result-track:612d9bf8c24f18e16f4ab2194ba70f4a44b631d6b03bc9e43ac29442155e434d` |
+| 4 | `theorem` | [tendsto_norm_tan_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/declarations/tendsto-norm-tan-attop.md) | 43 | `result-track:9cf3c773a21161a5e05ec6b8b1fbe9c59a09b98943a9314384c0d28ab2e457f5` |
+| 5 | `theorem` | [continuousAt_tan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/declarations/continuousat-tan.md) | 52 | `result-track:f56d0ca3e4a30330effb40c51573b6d93795f293d90d3be03edb64946b70192c` |
+| 6 | `theorem` | [differentiableAt_tan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/declarations/differentiableat-tan.md) | 58 | `result-track:1e863c1df459de998f9121a7eb46e7132a0def0d9b5e2ed0e5a86ee97b37c697` |
+| 7 | `theorem` | [deriv_tan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/declarations/deriv-tan.md) | 62 | `result-track:fb2e1f094afd6812d2300708142a7d3601c18440671a4e812bb59c0b1b48c154` |
+| 8 | `theorem` | [contDiffAt_tan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexDerivTendstoNormTanOfCosEqZero.lean/declarations/contdiffat-tan.md) | 69 | `result-track:2de22acb54533c596091983dc47d3365931494cac828371b045ca2ac4bc86cbb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

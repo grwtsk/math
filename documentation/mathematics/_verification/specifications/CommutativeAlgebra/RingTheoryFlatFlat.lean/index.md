@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryFlatFlat.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryFlatFlat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFlatFlat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFlatFlat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Flat](../../../../CommutativeAlgebra/RingTheoryFlatFlat.lean/declarations/flat.md) | 61 | `declaration-track:8290a4a120b34d2fb5924500634f9ff224d461492948a6d6ce926de6e21ab841` |
-| 2 | `instance` | [self](../../../../CommutativeAlgebra/RingTheoryFlatFlat.lean/declarations/self.md) | 69 | `declaration-track:24606932e205b3b6b96c9de91eca58ddc4f4c3837cfb51e7bec156874c009744` |
+| 1 | `class` | [Flat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFlatFlat.lean/declarations/flat.md) | 61 | `declaration-track:8290a4a120b34d2fb5924500634f9ff224d461492948a6d6ce926de6e21ab841` |
+| 2 | `instance` | [self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFlatFlat.lean/declarations/self.md) | 69 | `declaration-track:24606932e205b3b6b96c9de91eca58ddc4f4c3837cfb51e7bec156874c009744` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

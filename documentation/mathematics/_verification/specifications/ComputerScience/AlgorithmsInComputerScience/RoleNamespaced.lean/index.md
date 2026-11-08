@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RoleNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RoleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RoleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RoleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,9 +63,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/RoleNamespaced.lean/declarations/instance.md) | 32 | `declaration-track:8034c973f567e2dfe0e092d89f6b000f0adc4f2b3dd56eb07ae278569ee865e8` |
-| 2 | `theorem` | [proof_ne_statement](../../../../../ComputerScience/AlgorithmsInComputerScience/RoleNamespaced.lean/declarations/proof-ne-statement.md) | 36 | `result-track:0a8492f1c9f26ed4450b5c578d97bc71bf67c6b25fa7f6bc3698d3617919948e` |
-| 3 | `theorem` | [representation_ne_object](../../../../../ComputerScience/AlgorithmsInComputerScience/RoleNamespaced.lean/declarations/representation-ne-object.md) | 39 | `result-track:65b5dec209d9efb9bd578ac8ad5f9aaa70ab80d2cb2e4d4d61b7331b8b498f74` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RoleNamespaced.lean/declarations/instance.md) | 32 | `declaration-track:8034c973f567e2dfe0e092d89f6b000f0adc4f2b3dd56eb07ae278569ee865e8` |
+| 2 | `theorem` | [proof_ne_statement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RoleNamespaced.lean/declarations/proof-ne-statement.md) | 36 | `result-track:0a8492f1c9f26ed4450b5c578d97bc71bf67c6b25fa7f6bc3698d3617919948e` |
+| 3 | `theorem` | [representation_ne_object](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RoleNamespaced.lean/declarations/representation-ne-object.md) | 39 | `result-track:65b5dec209d9efb9bd578ac8ad5f9aaa70ab80d2cb2e4d4d61b7331b8b498f74` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

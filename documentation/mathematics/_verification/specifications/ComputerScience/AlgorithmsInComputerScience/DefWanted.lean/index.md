@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/DefWanted.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/DefWanted.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefWanted.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefWanted.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [regular_def_dw](../../../../../ComputerScience/AlgorithmsInComputerScience/DefWanted.lean/declarations/regular-def-dw.md) | 86 | `declaration-track:4797e760e4b20087b4b18f804f8f764bdf097c2b4cd65ef4e930beac765fcbc6` |
-| 2 | `class` | [MyClass](../../../../../ComputerScience/AlgorithmsInComputerScience/DefWanted.lean/declarations/myclass.md) | 273 | `declaration-track:92f60440bc63fa164fbe23ed840e380703e668bc3f12d07c1926f262d6e58ef5` |
-| 3 | `def` | [use_val](../../../../../ComputerScience/AlgorithmsInComputerScience/DefWanted.lean/declarations/use-val.md) | 274 | `declaration-track:6cab622c25afb0b3b260dccbcad882ccb32319f2e56421a7b85635a3f9f10d62` |
-| 4 | `class` | [OtherClass](../../../../../ComputerScience/AlgorithmsInComputerScience/DefWanted.lean/declarations/otherclass.md) | 318 | `declaration-track:9ed87fcebee880c9c1a73fd1fff89eec25196c372f3a448963067238e9e54596` |
-| 5 | `class` | [Pointed](../../../../../ComputerScience/AlgorithmsInComputerScience/DefWanted.lean/declarations/pointed.md) | 340 | `declaration-track:e1329a9bb77273e3b7da0b36cd9684fbf0767a091f54ccb681325bef43cc2407` |
-| 6 | `class` | [DoublePointed](../../../../../ComputerScience/AlgorithmsInComputerScience/DefWanted.lean/declarations/doublepointed.md) | 341 | `declaration-track:085006849b2c6f709b858a370f06c4eb14e5a02c171ba6eb796d23fbf97725c8` |
-| 7 | `class` | [Stupid](../../../../../ComputerScience/AlgorithmsInComputerScience/DefWanted.lean/declarations/stupid.md) | 342 | `declaration-track:9963d0c0aaf146b412b1761408793e17620ff72050daf9f048c062b7c80f2f3e` |
+| 1 | `def` | [regular_def_dw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefWanted.lean/declarations/regular-def-dw.md) | 86 | `declaration-track:4797e760e4b20087b4b18f804f8f764bdf097c2b4cd65ef4e930beac765fcbc6` |
+| 2 | `class` | [MyClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefWanted.lean/declarations/myclass.md) | 273 | `declaration-track:92f60440bc63fa164fbe23ed840e380703e668bc3f12d07c1926f262d6e58ef5` |
+| 3 | `def` | [use_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefWanted.lean/declarations/use-val.md) | 274 | `declaration-track:6cab622c25afb0b3b260dccbcad882ccb32319f2e56421a7b85635a3f9f10d62` |
+| 4 | `class` | [OtherClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefWanted.lean/declarations/otherclass.md) | 318 | `declaration-track:9ed87fcebee880c9c1a73fd1fff89eec25196c372f3a448963067238e9e54596` |
+| 5 | `class` | [Pointed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefWanted.lean/declarations/pointed.md) | 340 | `declaration-track:e1329a9bb77273e3b7da0b36cd9684fbf0767a091f54ccb681325bef43cc2407` |
+| 6 | `class` | [DoublePointed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefWanted.lean/declarations/doublepointed.md) | 341 | `declaration-track:085006849b2c6f709b858a370f06c4eb14e5a02c171ba6eb796d23fbf97725c8` |
+| 7 | `class` | [Stupid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefWanted.lean/declarations/stupid.md) | 342 | `declaration-track:9963d0c0aaf146b412b1761408793e17620ff72050daf9f048c062b7c80f2f3e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

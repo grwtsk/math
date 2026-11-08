@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Bezout.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Bezout.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Bezout.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Bezout.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [iff_span_pair_isPrincipal](../../../../CommutativeAlgebra/Bezout.lean/declarations/iff-span-pair-isprincipal.md) | 28 | `result-track:b29e170b054771bae09b79a421f3d511ad72d95be23818d76849e87b96270b02` |
-| 2 | `theorem` | [_root_.Function.Surjective.isBezout](../../../../CommutativeAlgebra/Bezout.lean/declarations/root-function-surjective-isbezout.md) | 39 | `result-track:38bdcbe460d87377fad0fc1127ad691b1cf3310882f7edeaa329971e37cb6dea` |
-| 3 | `theorem` | [TFAE](../../../../CommutativeAlgebra/Bezout.lean/declarations/tfae.md) | 49 | `result-track:1b13842114859e98a490934617eaf21f41df163666d144888b61b8cf432504d4` |
+| 1 | `theorem` | [iff_span_pair_isPrincipal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Bezout.lean/declarations/iff-span-pair-isprincipal.md) | 28 | `result-track:b29e170b054771bae09b79a421f3d511ad72d95be23818d76849e87b96270b02` |
+| 2 | `theorem` | [_root_.Function.Surjective.isBezout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Bezout.lean/declarations/root-function-surjective-isbezout.md) | 39 | `result-track:38bdcbe460d87377fad0fc1127ad691b1cf3310882f7edeaa329971e37cb6dea` |
+| 3 | `theorem` | [TFAE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Bezout.lean/declarations/tfae.md) | 49 | `result-track:1b13842114859e98a490934617eaf21f41df163666d144888b61b8cf432504d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteDimensionalLawsPublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteDimensionalLawsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteDimensionalLawsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteDimensionalLawsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isProjectiveMeasureFamily_map_restrict](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteDimensionalLawsPublic.lean/declarations/isprojectivemeasurefamily-map-restrict.md) | 44 | `result-track:3a972010b7afd25bed6f6c0d9912ef7d6da9fe089a69d35dcbb407f78c6d3276` |
-| 2 | `lemma` | [isProjectiveLimit_map](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteDimensionalLawsPublic.lean/declarations/isprojectivelimit-map.md) | 53 | `result-track:ba0d01191b4187192099ae0f611e283427774c6f4d626b68db5cac1a83a3de51` |
-| 3 | `lemma` | [map_eq_iff_forall_finset_map_restrict_eq](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteDimensionalLawsPublic.lean/declarations/map-eq-iff-forall-finset-map-restrict-eq.md) | 61 | `result-track:ee344b5f9b2a9edacf5190c4590fcf80c1386ee88d93af6b594d177b3120afed` |
-| 4 | `lemma` | [identDistrib_iff_forall_finset_identDistrib](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteDimensionalLawsPublic.lean/declarations/identdistrib-iff-forall-finset-identdistrib.md) | 77 | `result-track:fdec92f6b967a0146924900cee366e6881fe0e8d4b25d6ace83e3635992ee9a5` |
-| 5 | `lemma` | [map_restrict_eq_of_forall_ae_eq](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteDimensionalLawsPublic.lean/declarations/map-restrict-eq-of-forall-ae-eq.md) | 90 | `result-track:d8066b7298ee5e331d18b07c933642584cf84e4f6faa1b4d258cd6de2f21cd22` |
-| 6 | `lemma` | [map_eq_of_forall_ae_eq](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteDimensionalLawsPublic.lean/declarations/map-eq-of-forall-ae-eq.md) | 99 | `result-track:1c9545399f7b185ed4b36ea44bd535efe8ce17dad4d380ab3ab27e03659ed65a` |
+| 1 | `lemma` | [isProjectiveMeasureFamily_map_restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteDimensionalLawsPublic.lean/declarations/isprojectivemeasurefamily-map-restrict.md) | 44 | `result-track:3a972010b7afd25bed6f6c0d9912ef7d6da9fe089a69d35dcbb407f78c6d3276` |
+| 2 | `lemma` | [isProjectiveLimit_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteDimensionalLawsPublic.lean/declarations/isprojectivelimit-map.md) | 53 | `result-track:ba0d01191b4187192099ae0f611e283427774c6f4d626b68db5cac1a83a3de51` |
+| 3 | `lemma` | [map_eq_iff_forall_finset_map_restrict_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteDimensionalLawsPublic.lean/declarations/map-eq-iff-forall-finset-map-restrict-eq.md) | 61 | `result-track:ee344b5f9b2a9edacf5190c4590fcf80c1386ee88d93af6b594d177b3120afed` |
+| 4 | `lemma` | [identDistrib_iff_forall_finset_identDistrib](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteDimensionalLawsPublic.lean/declarations/identdistrib-iff-forall-finset-identdistrib.md) | 77 | `result-track:fdec92f6b967a0146924900cee366e6881fe0e8d4b25d6ace83e3635992ee9a5` |
+| 5 | `lemma` | [map_restrict_eq_of_forall_ae_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteDimensionalLawsPublic.lean/declarations/map-restrict-eq-of-forall-ae-eq.md) | 90 | `result-track:d8066b7298ee5e331d18b07c933642584cf84e4f6faa1b4d258cd6de2f21cd22` |
+| 6 | `lemma` | [map_eq_of_forall_ae_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteDimensionalLawsPublic.lean/declarations/map-eq-of-forall-ae-eq.md) | 99 | `result-track:1c9545399f7b185ed4b36ea44bd535efe8ce17dad4d380ab3ab27e03659ed65a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,16 +60,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [radon_partition](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/radon-partition.md) | 50 | `result-track:85a25af336478930c09f1fdb63c1804db4fd7ed391ae574746a07e28674ba21f` |
-| 2 | `lemma` | [helly_theorem_corner](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/helly-theorem-corner.md) | 80 | `result-track:c4f21704a5ffa89ae10ebf75b294f80725f59a3c3b59f6802b9134eca32c1e2c` |
-| 3 | `theorem` | [helly_theorem'](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/helly-theorem-source-edition-2.md) | 91 | `result-track:5892041f74d961511507c025ef9d5cbd2214f94ee13237afdaf3dcdf2c1ae0aa` |
-| 4 | `theorem` | [helly_theorem](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/helly-theorem.md) | 151 | `result-track:4dd719143b13c328a4e4b3157355e55dee738a9041e77d7d434d1813c79a005f` |
-| 5 | `theorem` | [helly_theorem_set'](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/helly-theorem-set-source-edition-2.md) | 166 | `result-track:ddba4534d30856350e3ef51489c0a2769b1250ec1a3323a770d9ab6a9159937c` |
-| 6 | `theorem` | [helly_theorem_set](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/helly-theorem-set.md) | 182 | `result-track:7e05e71c13b02735134e6f6a35ef18a33f2d92db97817c6144e0e964d89d8fb9` |
-| 7 | `theorem` | [helly_theorem_compact'](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/helly-theorem-compact-source-edition-2.md) | 198 | `result-track:6c1ebb0554130d716268d82b255ca6c7155b03d39ebba905b1525957a88cc068` |
-| 8 | `theorem` | [helly_theorem_compact](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/helly-theorem-compact.md) | 226 | `result-track:2d29d296361d5d469fc33e413eafab9ef8e436da9adc5c0ba32ad241a6602de5` |
-| 9 | `theorem` | [helly_theorem_set_compact'](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/helly-theorem-set-compact-source-edition-2.md) | 249 | `result-track:a8fb86fadbcb3b239ea42531f8fd1e62c10cc448b889e84e147069301026b2f2` |
-| 10 | `theorem` | [helly_theorem_set_compact](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/helly-theorem-set-compact.md) | 271 | `result-track:50cb576b92fa674d3ce56b48c47c65f57580caaf0fed41d61c67f49ff02bd25b` |
+| 1 | `theorem` | [radon_partition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/radon-partition.md) | 50 | `result-track:85a25af336478930c09f1fdb63c1804db4fd7ed391ae574746a07e28674ba21f` |
+| 2 | `lemma` | [helly_theorem_corner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/helly-theorem-corner.md) | 80 | `result-track:c4f21704a5ffa89ae10ebf75b294f80725f59a3c3b59f6802b9134eca32c1e2c` |
+| 3 | `theorem` | [helly_theorem'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/helly-theorem-source-edition-2.md) | 91 | `result-track:5892041f74d961511507c025ef9d5cbd2214f94ee13237afdaf3dcdf2c1ae0aa` |
+| 4 | `theorem` | [helly_theorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/helly-theorem.md) | 151 | `result-track:4dd719143b13c328a4e4b3157355e55dee738a9041e77d7d434d1813c79a005f` |
+| 5 | `theorem` | [helly_theorem_set'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/helly-theorem-set-source-edition-2.md) | 166 | `result-track:ddba4534d30856350e3ef51489c0a2769b1250ec1a3323a770d9ab6a9159937c` |
+| 6 | `theorem` | [helly_theorem_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/helly-theorem-set.md) | 182 | `result-track:7e05e71c13b02735134e6f6a35ef18a33f2d92db97817c6144e0e964d89d8fb9` |
+| 7 | `theorem` | [helly_theorem_compact'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/helly-theorem-compact-source-edition-2.md) | 198 | `result-track:6c1ebb0554130d716268d82b255ca6c7155b03d39ebba905b1525957a88cc068` |
+| 8 | `theorem` | [helly_theorem_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/helly-theorem-compact.md) | 226 | `result-track:2d29d296361d5d469fc33e413eafab9ef8e436da9adc5c0ba32ad241a6602de5` |
+| 9 | `theorem` | [helly_theorem_set_compact'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/helly-theorem-set-compact-source-edition-2.md) | 249 | `result-track:a8fb86fadbcb3b239ea42531f8fd1e62c10cc448b889e84e147069301026b2f2` |
+| 10 | `theorem` | [helly_theorem_set_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/RadonNamespaced.lean/declarations/helly-theorem-set-compact.md) | 271 | `result-track:50cb576b92fa674d3ce56b48c47c65f57580caaf0fed41d61c67f49ff02bd25b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

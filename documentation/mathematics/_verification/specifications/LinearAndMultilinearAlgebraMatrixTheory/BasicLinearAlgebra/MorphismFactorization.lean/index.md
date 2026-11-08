@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MorphismFactorization.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MorphismFactorization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MorphismFactorization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MorphismFactorization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BinaryLogicMatrixMorphismFactorization](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MorphismFactorization.lean/declarations/binarylogicmatrixmorphismfactorization.md) | 5 | `declaration-track:9847ac271b9c05970cfacfe7b609591cacc6385361aba57afb2e2a328c294130` |
-| 2 | `theorem` | [morphismFactorization_projects_certificate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MorphismFactorization.lean/declarations/morphismfactorization-projects-certificate.md) | 13 | `result-track:e2cd0bdf1a7aba427c597697ad0f19be9879aa27d4bdbf2735da1987853f713b` |
-| 3 | `theorem` | [morphismFactorization_not_flow_claim](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MorphismFactorization.lean/declarations/morphismfactorization-not-flow-claim.md) | 20 | `result-track:68a2518ff98f35df3268deb4b997923669e45ecd274ff3bf0d5d82d70ff00b61` |
+| 1 | `structure` | [BinaryLogicMatrixMorphismFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MorphismFactorization.lean/declarations/binarylogicmatrixmorphismfactorization.md) | 5 | `declaration-track:9847ac271b9c05970cfacfe7b609591cacc6385361aba57afb2e2a328c294130` |
+| 2 | `theorem` | [morphismFactorization_projects_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MorphismFactorization.lean/declarations/morphismfactorization-projects-certificate.md) | 13 | `result-track:e2cd0bdf1a7aba427c597697ad0f19be9879aa27d4bdbf2735da1987853f713b` |
+| 3 | `theorem` | [morphismFactorization_not_flow_claim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MorphismFactorization.lean/declarations/morphismfactorization-not-flow-claim.md) | 20 | `result-track:68a2518ff98f35df3268deb4b997923669e45ecd274ff3bf0d5d82d70ff00b61` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

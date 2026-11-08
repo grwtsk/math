@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquivNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquivNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquivNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquivNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Units Equiv Namespaced](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquivNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-mathematicallogic-mulleft-vari-source-edition-2.md) | 31 | `declaration-track:c245ea785ea80014785000cb39e67ee5411534555dc9d042772159d56cf429e2` |
-| 2 | `def` | [mulLeft₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquivNamespaced.lean/declarations/mulleft.md) | 40 | `declaration-track:11afb9d6c2dfa4ca45e58fd5f24fa816c3d1ef747422274778d1fbfe7ea73a70` |
-| 3 | `theorem` | [Units Equiv Namespaced](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquivNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-mathematicallogic-mulleft-vari.md) | 43 | `result-track:54cb37dc2384f74039cb305ee1da69d0b52ad21d3cb7eaff5dbc773497186bab` |
-| 4 | `def` | [mulRight₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquivNamespaced.lean/declarations/mulright.md) | 49 | `declaration-track:b4f8ee4fb5f14185a964ab7ccf7721374a1a88c29b7bd4035859b31ee29aa7e4` |
-| 5 | `theorem` | [Units Equiv Namespaced](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquivNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-mathematicallogic-mulleft-vari-source-edition-3.md) | 52 | `result-track:c2e4b2493c37d85245b9aded1058d485c4d7b041a5f293a632419a7d2ca3d306` |
-| 6 | `def` | [divRight₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquivNamespaced.lean/declarations/divright.md) | 58 | `declaration-track:6332a86c29368ec5a6201525dddef0e714c7a8ebdcc99efa84ae868ab2838728` |
-| 7 | `def` | [divLeft₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquivNamespaced.lean/declarations/divleft.md) | 72 | `declaration-track:88b2ca326c67da79599119d762b9f4bea67b704efeed9e0459730e0c34a9ebce` |
+| 1 | `def` | [Units Equiv Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquivNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-mathematicallogic-mulleft-vari-source-edition-2.md) | 31 | `declaration-track:c245ea785ea80014785000cb39e67ee5411534555dc9d042772159d56cf429e2` |
+| 2 | `def` | [mulLeft₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquivNamespaced.lean/declarations/mulleft.md) | 40 | `declaration-track:11afb9d6c2dfa4ca45e58fd5f24fa816c3d1ef747422274778d1fbfe7ea73a70` |
+| 3 | `theorem` | [Units Equiv Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquivNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-mathematicallogic-mulleft-vari.md) | 43 | `result-track:54cb37dc2384f74039cb305ee1da69d0b52ad21d3cb7eaff5dbc773497186bab` |
+| 4 | `def` | [mulRight₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquivNamespaced.lean/declarations/mulright.md) | 49 | `declaration-track:b4f8ee4fb5f14185a964ab7ccf7721374a1a88c29b7bd4035859b31ee29aa7e4` |
+| 5 | `theorem` | [Units Equiv Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquivNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-mathematicallogic-mulleft-vari-source-edition-3.md) | 52 | `result-track:c2e4b2493c37d85245b9aded1058d485c4d7b041a5f293a632419a7d2ca3d306` |
+| 6 | `def` | [divRight₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquivNamespaced.lean/declarations/divright.md) | 58 | `declaration-track:6332a86c29368ec5a6201525dddef0e714c7a8ebdcc99efa84ae868ab2838728` |
+| 7 | `def` | [divLeft₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquivNamespaced.lean/declarations/divleft.md) | 72 | `declaration-track:88b2ca326c67da79599119d762b9f4bea67b704efeed9e0459730e0c34a9ebce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

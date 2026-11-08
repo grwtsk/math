@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/PImage.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/PImage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PImage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PImage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,22 +59,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toFinset](../../../../../Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/tofinset.md) | 27 | `declaration-track:b2c95003f8e505e582cb4ffaacdbd2ce5f7b4570425aa4c7f989c6792dd1c43a` |
-| 2 | `theorem` | [mem_toFinset](../../../../../Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/mem-tofinset.md) | 31 | `result-track:f0ebde12a3d4ea47ea417f0dd38b18fd892d9c98b7e99489a796ca565134f333` |
-| 3 | `theorem` | [toFinset_none](../../../../../Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/tofinset-none.md) | 35 | `result-track:29cb15f8964bc0e6e30abfd2132fa4e6b3d60bd6575a319298a60987513ff504` |
-| 4 | `theorem` | [toFinset_some](../../../../../Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/tofinset-some.md) | 39 | `result-track:a407e3a0c8228d4726aad1b1f50a859cfdb1f6b52baf1c45465c34122933403e` |
-| 5 | `theorem` | [coe_toFinset](../../../../../Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/coe-tofinset.md) | 43 | `result-track:cd16557f8f1dabfcdd7d16426e70162d66321a582057f0f6e18c9ec7a5080b71` |
-| 6 | `def` | [pimage](../../../../../Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/pimage.md) | 54 | `declaration-track:b46e446f26d9e2b9acfb0b91efcd1fbdc0746600e2b56cecb4561c11d5c66136` |
-| 7 | `theorem` | [mem_pimage](../../../../../Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/mem-pimage.md) | 58 | `result-track:439550e4cba96a76389a89d48f15a2fb33af002574ede987e2847578d905f60f` |
-| 8 | `theorem` | [coe_pimage](../../../../../Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/coe-pimage.md) | 62 | `result-track:8dafb5069442e4bdaf21c12d05b89ab4fb4c81bf922d5735007af72004ea9dcd` |
-| 9 | `theorem` | [pimage_some](../../../../../Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/pimage-some.md) | 66 | `result-track:ece7e04bb7fb1fbbf660f3979143d790011cb7cc8c1a3ec4011a5099d5601706` |
-| 10 | `theorem` | [pimage_congr](../../../../../Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/pimage-congr.md) | 71 | `result-track:c6585f8372ddf9f55282260bb3fb1b10176e63b4a43c87e6fa07120d1d00be3c` |
-| 11 | `theorem` | [pimage_eq_image_filter](../../../../../Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/pimage-eq-image-filter.md) | 75 | `result-track:6207f8d7359e10dcbb772eadbce2820d103825d906e8b30190e098e92d3927e5` |
-| 12 | `theorem` | [pimage_union](../../../../../Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/pimage-union.md) | 81 | `result-track:1c695e2e8384fd3f5c63f9e84799658e54d5227225b4dbb11f29e67437fceb09` |
-| 13 | `theorem` | [pimage_empty](../../../../../Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/pimage-empty.md) | 86 | `result-track:79d78142c21f0a0b44bf5b20117ec7b7a57b6db59d8c46592358696fd9c34d6f` |
-| 14 | `theorem` | [pimage_subset](../../../../../Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/pimage-subset.md) | 90 | `result-track:257630d51eacfc786c86d6b6b8a9f9645e2bf0b97b955cf58f6c32f9e3eb52c3` |
-| 15 | `theorem` | [pimage_mono](../../../../../Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/pimage-mono.md) | 94 | `result-track:75ce08190140841ef3d498c4072914f7d6234564dda6afbbcc28f9c7bfbef761` |
-| 16 | `theorem` | [pimage_inter](../../../../../Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/pimage-inter.md) | 97 | `result-track:5864097f6b971e1c96bc37b9581a0a4a0b474bb0c083dea84b7be6764862f129` |
+| 1 | `def` | [toFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/tofinset.md) | 27 | `declaration-track:b2c95003f8e505e582cb4ffaacdbd2ce5f7b4570425aa4c7f989c6792dd1c43a` |
+| 2 | `theorem` | [mem_toFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/mem-tofinset.md) | 31 | `result-track:f0ebde12a3d4ea47ea417f0dd38b18fd892d9c98b7e99489a796ca565134f333` |
+| 3 | `theorem` | [toFinset_none](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/tofinset-none.md) | 35 | `result-track:29cb15f8964bc0e6e30abfd2132fa4e6b3d60bd6575a319298a60987513ff504` |
+| 4 | `theorem` | [toFinset_some](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/tofinset-some.md) | 39 | `result-track:a407e3a0c8228d4726aad1b1f50a859cfdb1f6b52baf1c45465c34122933403e` |
+| 5 | `theorem` | [coe_toFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/coe-tofinset.md) | 43 | `result-track:cd16557f8f1dabfcdd7d16426e70162d66321a582057f0f6e18c9ec7a5080b71` |
+| 6 | `def` | [pimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/pimage.md) | 54 | `declaration-track:b46e446f26d9e2b9acfb0b91efcd1fbdc0746600e2b56cecb4561c11d5c66136` |
+| 7 | `theorem` | [mem_pimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/mem-pimage.md) | 58 | `result-track:439550e4cba96a76389a89d48f15a2fb33af002574ede987e2847578d905f60f` |
+| 8 | `theorem` | [coe_pimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/coe-pimage.md) | 62 | `result-track:8dafb5069442e4bdaf21c12d05b89ab4fb4c81bf922d5735007af72004ea9dcd` |
+| 9 | `theorem` | [pimage_some](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/pimage-some.md) | 66 | `result-track:ece7e04bb7fb1fbbf660f3979143d790011cb7cc8c1a3ec4011a5099d5601706` |
+| 10 | `theorem` | [pimage_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/pimage-congr.md) | 71 | `result-track:c6585f8372ddf9f55282260bb3fb1b10176e63b4a43c87e6fa07120d1d00be3c` |
+| 11 | `theorem` | [pimage_eq_image_filter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/pimage-eq-image-filter.md) | 75 | `result-track:6207f8d7359e10dcbb772eadbce2820d103825d906e8b30190e098e92d3927e5` |
+| 12 | `theorem` | [pimage_union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/pimage-union.md) | 81 | `result-track:1c695e2e8384fd3f5c63f9e84799658e54d5227225b4dbb11f29e67437fceb09` |
+| 13 | `theorem` | [pimage_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/pimage-empty.md) | 86 | `result-track:79d78142c21f0a0b44bf5b20117ec7b7a57b6db59d8c46592358696fd9c34d6f` |
+| 14 | `theorem` | [pimage_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/pimage-subset.md) | 90 | `result-track:257630d51eacfc786c86d6b6b8a9f9645e2bf0b97b955cf58f6c32f9e3eb52c3` |
+| 15 | `theorem` | [pimage_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/pimage-mono.md) | 94 | `result-track:75ce08190140841ef3d498c4072914f7d6234564dda6afbbcc28f9c7bfbef761` |
+| 16 | `theorem` | [pimage_inter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PImage.lean/declarations/pimage-inter.md) | 97 | `result-track:5864097f6b971e1c96bc37b9581a0a4a0b474bb0c083dea84b7be6764862f129` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

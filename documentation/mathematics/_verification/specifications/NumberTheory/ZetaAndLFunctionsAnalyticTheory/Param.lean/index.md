@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [norm_param_ge](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/norm-param-ge.md) | 30 | `result-track:40f689128b4f64a478eec83afcba8acfd20874b8b3193493cf91224a5caae524` |
-| 2 | `lemma` | [normSq_param_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/normsq-param-eq.md) | 35 | `result-track:79e7bf0cf3042658f2579ffdbc88c0c739b15aca1f7acaa357bdf510772c4d02` |
-| 3 | `lemma` | [normSq_param_ge](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/normsq-param-ge.md) | 38 | `result-track:39dadb092f4698728f65c9276d8152b3b2fae13329e2e72550f6b7f54422ff20` |
-| 4 | `lemma` | [normSq_param_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/normsq-param-le.md) | 41 | `result-track:2636bebac5f7c9733fde0b3f260de3d4e923ab0205da9920fc14f25d46dcd38a` |
-| 5 | `lemma` | [norm_param_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/norm-param-pos.md) | 48 | `result-track:3d8782fdb39332fe4071be9e96308a5ac19b8dbeb3ff835c8f3e2a01717a2bea` |
-| 6 | `lemma` | [inv_re_param](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/inv-re-param.md) | 51 | `result-track:207167789041ecf7c0d5c0d82245508f154b5badcb2af73477de68c64c551fde` |
-| 7 | `lemma` | [inv_normSq_param](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/inv-normsq-param.md) | 69 | `result-track:84d415754b3d9abb19e0741daae4100cece86272f43f7be7b0340b5327c681a7` |
-| 8 | `lemma` | [inv_normSq_param_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/inv-normsq-param-le.md) | 83 | `result-track:3a9f331548fec7fa8c86f3190c59c4cd6fa66329ab1403b7337bc4fded208b6d` |
-| 9 | `lemma` | [mul_pow_sub_pow_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/mul-pow-sub-pow-le.md) | 92 | `result-track:0c0bb86fd06bc52884c30b6389bb33656f9f1c645a5625fabeea86d3886efc2f` |
-| 10 | `lemma` | [inv_normSq_pow_param](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/inv-normsq-pow-param.md) | 112 | `result-track:0738d25b7c50ae88cf99c9c88a1d26ea3e54fadc31606023d47a8c6904489d1d` |
+| 1 | `lemma` | [norm_param_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/norm-param-ge.md) | 30 | `result-track:40f689128b4f64a478eec83afcba8acfd20874b8b3193493cf91224a5caae524` |
+| 2 | `lemma` | [normSq_param_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/normsq-param-eq.md) | 35 | `result-track:79e7bf0cf3042658f2579ffdbc88c0c739b15aca1f7acaa357bdf510772c4d02` |
+| 3 | `lemma` | [normSq_param_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/normsq-param-ge.md) | 38 | `result-track:39dadb092f4698728f65c9276d8152b3b2fae13329e2e72550f6b7f54422ff20` |
+| 4 | `lemma` | [normSq_param_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/normsq-param-le.md) | 41 | `result-track:2636bebac5f7c9733fde0b3f260de3d4e923ab0205da9920fc14f25d46dcd38a` |
+| 5 | `lemma` | [norm_param_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/norm-param-pos.md) | 48 | `result-track:3d8782fdb39332fe4071be9e96308a5ac19b8dbeb3ff835c8f3e2a01717a2bea` |
+| 6 | `lemma` | [inv_re_param](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/inv-re-param.md) | 51 | `result-track:207167789041ecf7c0d5c0d82245508f154b5badcb2af73477de68c64c551fde` |
+| 7 | `lemma` | [inv_normSq_param](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/inv-normsq-param.md) | 69 | `result-track:84d415754b3d9abb19e0741daae4100cece86272f43f7be7b0340b5327c681a7` |
+| 8 | `lemma` | [inv_normSq_param_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/inv-normsq-param-le.md) | 83 | `result-track:3a9f331548fec7fa8c86f3190c59c4cd6fa66329ab1403b7337bc4fded208b6d` |
+| 9 | `lemma` | [mul_pow_sub_pow_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/mul-pow-sub-pow-le.md) | 92 | `result-track:0c0bb86fd06bc52884c30b6389bb33656f9f1c645a5625fabeea86d3886efc2f` |
+| 10 | `lemma` | [inv_normSq_pow_param](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Param.lean/declarations/inv-normsq-pow-param.md) | 112 | `result-track:0738d25b7c50ae88cf99c9c88a1d26ea3e54fadc31606023d47a8c6904489d1d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

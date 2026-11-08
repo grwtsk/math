@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/BialgebraPrimitiveNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/BialgebraPrimitiveNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraPrimitiveNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraPrimitiveNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IsPrimitiveElem](../../../../CommutativeAlgebra/BialgebraPrimitiveNamespacedPublic.lean/declarations/isprimitiveelem.md) | 54 | `declaration-track:d3d88cf83e72e99a104f3b429a42d7e96c0d67a866a4c18c12d41d7b34e84dfe` |
-| 2 | `lemma` | [IsPrimitiveElem.ne_one](../../../../CommutativeAlgebra/BialgebraPrimitiveNamespacedPublic.lean/declarations/isprimitiveelem-ne-one.md) | 56 | `result-track:e1e10345a1e5b51c2dab6394991b488587b9047d5d49897043be50fa0b3fe992` |
-| 3 | `lemma` | [counit_eq_zero_of_comul_eq_tmul_add_tmul](../../../../CommutativeAlgebra/BialgebraPrimitiveNamespacedPublic.lean/declarations/counit-eq-zero-of-comul-eq-tmul-add-tmul.md) | 62 | `result-track:6c05bf79a9b5e2add2dd2cf62ce10778c88de213d49678a92a06b66f94a1f1da` |
-| 4 | `lemma` | [isPrimitiveElem_iff_comul_eq_tmul_add_tmul](../../../../CommutativeAlgebra/BialgebraPrimitiveNamespacedPublic.lean/declarations/isprimitiveelem-iff-comul-eq-tmul-add-tmul.md) | 66 | `result-track:1b38a6b9572900510d544d5071136822a2f5de8da2f27df56e95d15c1700b19e` |
-| 5 | `lemma` | [IsPrimitiveElem.commutator](../../../../CommutativeAlgebra/BialgebraPrimitiveNamespacedPublic.lean/declarations/isprimitiveelem-commutator.md) | 76 | `result-track:65c7d356dd5dc66113596658380564d682012bdaa9e98a25dbf6a8f4aec6d4f8` |
+| 1 | `abbrev` | [IsPrimitiveElem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraPrimitiveNamespacedPublic.lean/declarations/isprimitiveelem.md) | 54 | `declaration-track:d3d88cf83e72e99a104f3b429a42d7e96c0d67a866a4c18c12d41d7b34e84dfe` |
+| 2 | `lemma` | [IsPrimitiveElem.ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraPrimitiveNamespacedPublic.lean/declarations/isprimitiveelem-ne-one.md) | 56 | `result-track:e1e10345a1e5b51c2dab6394991b488587b9047d5d49897043be50fa0b3fe992` |
+| 3 | `lemma` | [counit_eq_zero_of_comul_eq_tmul_add_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraPrimitiveNamespacedPublic.lean/declarations/counit-eq-zero-of-comul-eq-tmul-add-tmul.md) | 62 | `result-track:6c05bf79a9b5e2add2dd2cf62ce10778c88de213d49678a92a06b66f94a1f1da` |
+| 4 | `lemma` | [isPrimitiveElem_iff_comul_eq_tmul_add_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraPrimitiveNamespacedPublic.lean/declarations/isprimitiveelem-iff-comul-eq-tmul-add-tmul.md) | 66 | `result-track:1b38a6b9572900510d544d5071136822a2f5de8da2f27df56e95d15c1700b19e` |
+| 5 | `lemma` | [IsPrimitiveElem.commutator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraPrimitiveNamespacedPublic.lean/declarations/isprimitiveelem-commutator.md) | 76 | `result-track:65c7d356dd5dc66113596658380564d682012bdaa9e98a25dbf6a8f4aec6d4f8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/AveragedIncrements.lean/index.md) · [Full source](../../../../Combinatorics/AveragedIncrements.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AveragedIncrements.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AveragedIncrements.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [twoPrimeAttributionFirst](../../../../Combinatorics/AveragedIncrements.lean/declarations/twoprimeattributionfirst.md) | 41 | `declaration-track:d7545ad11b6be7902b2ddf553010c653aaa72057c1c8efc604aac825b00b6c74` |
-| 2 | `def` | [twoPrimeAttributionSecond](../../../../Combinatorics/AveragedIncrements.lean/declarations/twoprimeattributionsecond.md) | 52 | `declaration-track:c618d24d3ac6e89aff45207f438ba7339c8d2e494b3a0bde1dcb3863f96e797b` |
+| 1 | `def` | [twoPrimeAttributionFirst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AveragedIncrements.lean/declarations/twoprimeattributionfirst.md) | 41 | `declaration-track:d7545ad11b6be7902b2ddf553010c653aaa72057c1c8efc604aac825b00b6c74` |
+| 2 | `def` | [twoPrimeAttributionSecond](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AveragedIncrements.lean/declarations/twoprimeattributionsecond.md) | 52 | `declaration-track:c618d24d3ac6e89aff45207f438ba7339c8d2e494b3a0bde1dcb3863f96e797b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

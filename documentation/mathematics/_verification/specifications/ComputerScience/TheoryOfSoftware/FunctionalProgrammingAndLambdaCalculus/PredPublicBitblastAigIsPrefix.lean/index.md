@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicBitblastAigIsPrefix.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicBitblastAigIsPrefix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicBitblastAigIsPrefix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicBitblastAigIsPrefix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bitblast_aig_IsPrefix](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicBitblastAigIsPrefix.lean/declarations/bitblast-aig-isprefix.md) | 27 | `result-track:a9dbe97c5cefc90b5c0d44716d8a315f5c65c46e601bb696f08cc339852f82ac` |
-| 2 | `theorem` | [bitblast_denote_mem_prefix](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicBitblastAigIsPrefix.lean/declarations/bitblast-denote-mem-prefix.md) | 35 | `result-track:e2cee8a26c43d37a523ebc9fe8e4d9c1b5ccbeedfad3eb3379ddbfde08bb09e1` |
-| 3 | `theorem` | [bitblast_Inv_of_Inv](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicBitblastAigIsPrefix.lean/declarations/bitblast-inv-of-inv.md) | 47 | `result-track:6c1cbd3a12022c7d9e54bd04764277ca164839237cb6c21f2dc348f409b804e2` |
-| 4 | `theorem` | [denote_bitblast](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicBitblastAigIsPrefix.lean/declarations/denote-bitblast.md) | 73 | `result-track:e573e92c24541c47b8d37687199eec5bf4b85165b70b66e0a8519c00d1a12a4a` |
+| 1 | `theorem` | [bitblast_aig_IsPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicBitblastAigIsPrefix.lean/declarations/bitblast-aig-isprefix.md) | 27 | `result-track:a9dbe97c5cefc90b5c0d44716d8a315f5c65c46e601bb696f08cc339852f82ac` |
+| 2 | `theorem` | [bitblast_denote_mem_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicBitblastAigIsPrefix.lean/declarations/bitblast-denote-mem-prefix.md) | 35 | `result-track:e2cee8a26c43d37a523ebc9fe8e4d9c1b5ccbeedfad3eb3379ddbfde08bb09e1` |
+| 3 | `theorem` | [bitblast_Inv_of_Inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicBitblastAigIsPrefix.lean/declarations/bitblast-inv-of-inv.md) | 47 | `result-track:6c1cbd3a12022c7d9e54bd04764277ca164839237cb6c21f2dc348f409b804e2` |
+| 4 | `theorem` | [denote_bitblast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicBitblastAigIsPrefix.lean/declarations/denote-bitblast.md) | 73 | `result-track:e573e92c24541c47b8d37687199eec5bf4b85165b70b66e0a8519c00d1a12a4a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateCertOfStrictAtOne.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateCertOfStrictAtOne.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateCertOfStrictAtOne.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateCertOfStrictAtOne.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cert_of_strict_at_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateCertOfStrictAtOne.lean/declarations/cert-of-strict-at-one.md) | 31 | `result-track:0aa7eb28f31fbf65fd8202406717baaa2f0fc685474d104985bf84c6cb1c0ab3` |
-| 2 | `theorem` | [certFlat](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateCertOfStrictAtOne.lean/declarations/certflat.md) | 50 | `result-track:2b7cbe062506774e6de65939001d6af920bad7d29e1b6b7510fbca8463500ba5` |
-| 3 | `theorem` | [certQuartic](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateCertOfStrictAtOne.lean/declarations/certquartic.md) | 54 | `result-track:5ddc54767f121e7d919d7ca6d3c8836c24fce87e7de484346a5db8355b5c1857` |
-| 4 | `theorem` | [certFlat_sharp](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateCertOfStrictAtOne.lean/declarations/certflat-sharp.md) | 58 | `result-track:bdcacddaddc8929cf77eb88b8b6285e8b0dce9e6b18893f92822e1cc9f980c77` |
-| 5 | `theorem` | [certQuartic_sharp](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateCertOfStrictAtOne.lean/declarations/certquartic-sharp.md) | 63 | `result-track:afb7fc9f90e249bf31c51fe71b1f0f6b3491e9958d7f571f6142af64d504f956` |
+| 1 | `theorem` | [cert_of_strict_at_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateCertOfStrictAtOne.lean/declarations/cert-of-strict-at-one.md) | 31 | `result-track:0aa7eb28f31fbf65fd8202406717baaa2f0fc685474d104985bf84c6cb1c0ab3` |
+| 2 | `theorem` | [certFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateCertOfStrictAtOne.lean/declarations/certflat.md) | 50 | `result-track:2b7cbe062506774e6de65939001d6af920bad7d29e1b6b7510fbca8463500ba5` |
+| 3 | `theorem` | [certQuartic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateCertOfStrictAtOne.lean/declarations/certquartic.md) | 54 | `result-track:5ddc54767f121e7d919d7ca6d3c8836c24fce87e7de484346a5db8355b5c1857` |
+| 4 | `theorem` | [certFlat_sharp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateCertOfStrictAtOne.lean/declarations/certflat-sharp.md) | 58 | `result-track:bdcacddaddc8929cf77eb88b8b6285e8b0dce9e6b18893f92822e1cc9f980c77` |
+| 5 | `theorem` | [certQuartic_sharp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateCertOfStrictAtOne.lean/declarations/certquartic-sharp.md) | 63 | `result-track:afb7fc9f90e249bf31c51fe71b1f0f6b3491e9958d7f571f6142af64d504f956` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

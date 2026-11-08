@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/Completion.lean/index.md) · [Full source](../../../../FunctionalAnalysis/Completion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Completion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Completion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isBigO_completion_left](../../../../FunctionalAnalysis/Completion.lean/declarations/isbigo-completion-left.md) | 26 | `result-track:f2b830cc8107bfbdf8dbc1b4b17eff403ec2a1878e3841dac63884c30d6b578e` |
-| 2 | `lemma` | [isBigO_completion_right](../../../../FunctionalAnalysis/Completion.lean/declarations/isbigo-completion-right.md) | 30 | `result-track:c3e292db88b149cae581c16baa83c66c4a50faf7395fd527175fb2c6e4fc62e7` |
-| 3 | `lemma` | [isTheta_completion_left](../../../../FunctionalAnalysis/Completion.lean/declarations/istheta-completion-left.md) | 34 | `result-track:f46fc5b3c6e65ac38ccbddfc005e79b3bd7fc3055160fb289e1b80a2270bb600` |
-| 4 | `lemma` | [isTheta_completion_right](../../../../FunctionalAnalysis/Completion.lean/declarations/istheta-completion-right.md) | 38 | `result-track:5a150aefd7f5080ae41803f7469a6621e2c01e7e01194ddcdd8605de1e9cd6a6` |
-| 5 | `lemma` | [isLittleO_completion_left](../../../../FunctionalAnalysis/Completion.lean/declarations/islittleo-completion-left.md) | 42 | `result-track:7350e48720c48f782dac10c53caac9ed7f1b8b879db280f64d1e4f2e003d3806` |
-| 6 | `lemma` | [isLittleO_completion_right](../../../../FunctionalAnalysis/Completion.lean/declarations/islittleo-completion-right.md) | 46 | `result-track:caaba29ce8e44f3d8b2bf4f9f604455b5084fd1ccbd502af634f73f5706cfc4b` |
+| 1 | `lemma` | [isBigO_completion_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Completion.lean/declarations/isbigo-completion-left.md) | 26 | `result-track:f2b830cc8107bfbdf8dbc1b4b17eff403ec2a1878e3841dac63884c30d6b578e` |
+| 2 | `lemma` | [isBigO_completion_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Completion.lean/declarations/isbigo-completion-right.md) | 30 | `result-track:c3e292db88b149cae581c16baa83c66c4a50faf7395fd527175fb2c6e4fc62e7` |
+| 3 | `lemma` | [isTheta_completion_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Completion.lean/declarations/istheta-completion-left.md) | 34 | `result-track:f46fc5b3c6e65ac38ccbddfc005e79b3bd7fc3055160fb289e1b80a2270bb600` |
+| 4 | `lemma` | [isTheta_completion_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Completion.lean/declarations/istheta-completion-right.md) | 38 | `result-track:5a150aefd7f5080ae41803f7469a6621e2c01e7e01194ddcdd8605de1e9cd6a6` |
+| 5 | `lemma` | [isLittleO_completion_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Completion.lean/declarations/islittleo-completion-left.md) | 42 | `result-track:7350e48720c48f782dac10c53caac9ed7f1b8b879db280f64d1e4f2e003d3806` |
+| 6 | `lemma` | [isLittleO_completion_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Completion.lean/declarations/islittleo-completion-right.md) | 46 | `result-track:caaba29ce8e44f3d8b2bf4f9f604455b5084fd1ccbd502af634f73f5706cfc4b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

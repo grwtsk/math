@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilQq.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilQq.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilQq.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilQq.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [inferTypeQ'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilQq.lean/declarations/infertypeq.md) | 23 | `declaration-track:483e0ecf01a8ba4b71af74d36342efe6d78d52ae44446c908dcfff550be0190d` |
-| 2 | `theorem` | [QuotedDefEq.rfl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilQq.lean/declarations/quoteddefeq-rfl.md) | 29 | `result-track:9cc29d9b5dd08b4b5e3b1da41f338f2f57214a40f77b9c674d160f0c3bf48ff4` |
-| 3 | `def` | [findLocalDeclWithTypeQ?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilQq.lean/declarations/findlocaldeclwithtypeq.md) | 34 | `declaration-track:2d315c69dd6fd206aca14a0b42ebbb519fc80a7712e7b84fe41baecd26d2436d` |
-| 4 | `def` | [mkDecideProofQ](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilQq.lean/declarations/mkdecideproofq.md) | 41 | `declaration-track:eaa666f126c1fe04f19361471a389f6bda0f94d8126436646b3586a68274cd29` |
-| 5 | `def` | [mkSetLiteralQ](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilQq.lean/declarations/mksetliteralq.md) | 53 | `declaration-track:47321921b72cf2650c239421fe2eb2e80da28eb99dc3c42de8a5e8d39f80e870` |
+| 1 | `def` | [inferTypeQ'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilQq.lean/declarations/infertypeq.md) | 23 | `declaration-track:483e0ecf01a8ba4b71af74d36342efe6d78d52ae44446c908dcfff550be0190d` |
+| 2 | `theorem` | [QuotedDefEq.rfl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilQq.lean/declarations/quoteddefeq-rfl.md) | 29 | `result-track:9cc29d9b5dd08b4b5e3b1da41f338f2f57214a40f77b9c674d160f0c3bf48ff4` |
+| 3 | `def` | [findLocalDeclWithTypeQ?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilQq.lean/declarations/findlocaldeclwithtypeq.md) | 34 | `declaration-track:2d315c69dd6fd206aca14a0b42ebbb519fc80a7712e7b84fe41baecd26d2436d` |
+| 4 | `def` | [mkDecideProofQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilQq.lean/declarations/mkdecideproofq.md) | 41 | `declaration-track:eaa666f126c1fe04f19361471a389f6bda0f94d8126436646b3586a68274cd29` |
+| 5 | `def` | [mkSetLiteralQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilQq.lean/declarations/mksetliteralq.md) | 53 | `declaration-track:47321921b72cf2650c239421fe2eb2e80da28eb99dc3c42de8a5e8d39f80e870` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

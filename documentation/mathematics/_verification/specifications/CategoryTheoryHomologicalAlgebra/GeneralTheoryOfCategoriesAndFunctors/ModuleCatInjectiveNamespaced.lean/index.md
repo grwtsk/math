@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjectiveNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjectiveNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjectiveNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjectiveNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [injective_object_of_injective_module](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjectiveNamespaced.lean/declarations/injective-object-of-injective-module.md) | 28 | `result-track:064e9ca4d2dfdf2c1e999767dcee0e022cbff53d5cbf86f2d1b9457ec6b691aa` |
-| 2 | `theorem` | [injective_module_of_injective_object](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjectiveNamespaced.lean/declarations/injective-module-of-injective-object.md) | 34 | `result-track:3b7a4c216dd94ad313e764d9a431a30fc37fdd8f1688eab67ed56b8ce2cdd5ac` |
-| 3 | `theorem` | [injective_iff_injective_object](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjectiveNamespaced.lean/declarations/injective-iff-injective-object.md) | 43 | `result-track:319e09798fc5e0a18b8827e476dc82eda06d34b40714a5d5461d60c3a515a7d9` |
-| 4 | `instance` | [ModuleCat.ulift_injective_of_injective.](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjectiveNamespaced.lean/declarations/modulecat-ulift-injective-of-injective.md) | 52 | `declaration-track:503ec15b9e68d918ec62d87cabc063b401a02840071bfa460bccc794f881904c` |
+| 1 | `theorem` | [injective_object_of_injective_module](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjectiveNamespaced.lean/declarations/injective-object-of-injective-module.md) | 28 | `result-track:064e9ca4d2dfdf2c1e999767dcee0e022cbff53d5cbf86f2d1b9457ec6b691aa` |
+| 2 | `theorem` | [injective_module_of_injective_object](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjectiveNamespaced.lean/declarations/injective-module-of-injective-object.md) | 34 | `result-track:3b7a4c216dd94ad313e764d9a431a30fc37fdd8f1688eab67ed56b8ce2cdd5ac` |
+| 3 | `theorem` | [injective_iff_injective_object](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjectiveNamespaced.lean/declarations/injective-iff-injective-object.md) | 43 | `result-track:319e09798fc5e0a18b8827e476dc82eda06d34b40714a5d5461d60c3a515a7d9` |
+| 4 | `instance` | [ModuleCat.ulift_injective_of_injective.](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjectiveNamespaced.lean/declarations/modulecat-ulift-injective-of-injective.md) | 52 | `declaration-track:503ec15b9e68d918ec62d87cabc063b401a02840071bfa460bccc794f881904c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

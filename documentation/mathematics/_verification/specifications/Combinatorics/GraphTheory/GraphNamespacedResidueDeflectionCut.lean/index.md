@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/GraphNamespacedResidueDeflectionCut.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/GraphNamespacedResidueDeflectionCut.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GraphNamespacedResidueDeflectionCut.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GraphNamespacedResidueDeflectionCut.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ResidueDeflectionCut](../../../../../Combinatorics/GraphTheory/GraphNamespacedResidueDeflectionCut.lean/declarations/residuedeflectioncut.md) | 23 | `declaration-track:5d3db20f1bacb4f8a622273b56ec610cc723d825cae49fbfb19fa12123110ab2` |
-| 2 | `theorem` | [ResidueDeflectionCut.defect_not_admitted](../../../../../Combinatorics/GraphTheory/GraphNamespacedResidueDeflectionCut.lean/declarations/residuedeflectioncut-defect-not-admitted.md) | 84 | `result-track:96e26d0737bf369620721f7328431d9b2da5e79f6b8e93ceff0f7bf2be945b2d` |
+| 1 | `structure` | [ResidueDeflectionCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GraphNamespacedResidueDeflectionCut.lean/declarations/residuedeflectioncut.md) | 23 | `declaration-track:5d3db20f1bacb4f8a622273b56ec610cc723d825cae49fbfb19fa12123110ab2` |
+| 2 | `theorem` | [ResidueDeflectionCut.defect_not_admitted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GraphNamespacedResidueDeflectionCut.lean/declarations/residuedeflectioncut-defect-not-admitted.md) | 84 | `result-track:96e26d0737bf369620721f7328431d9b2da5e79f6b8e93ceff0f7bf2be945b2d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

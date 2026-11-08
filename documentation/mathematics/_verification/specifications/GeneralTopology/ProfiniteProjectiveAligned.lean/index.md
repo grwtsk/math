@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ProfiniteProjectiveAligned.lean/index.md) · [Full source](../../../../GeneralTopology/ProfiniteProjectiveAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteProjectiveAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteProjectiveAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [projective_ultrafilter](../../../../GeneralTopology/ProfiniteProjectiveAligned.lean/declarations/projective-ultrafilter.md) | 38 | `declaration-track:ec5d78a9c8127e8f6dda7d5d2de944aaecb194c0f7965399d132137b089e5bea` |
-| 2 | `def` | [projectivePresentation](../../../../GeneralTopology/ProfiniteProjectiveAligned.lean/declarations/projectivepresentation.md) | 56 | `declaration-track:dd3d68a75548e0ec7f097092b1b962ed4431ccf181234532b4e9c5c820289d68` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/ProfiniteProjectiveAligned.lean/declarations/instance.md) | 64 | `declaration-track:f3b8409caab58fac393e412a470695f2bbab0d5867e34f79bd4452be8dd8e11d` |
+| 1 | `instance` | [projective_ultrafilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteProjectiveAligned.lean/declarations/projective-ultrafilter.md) | 38 | `declaration-track:ec5d78a9c8127e8f6dda7d5d2de944aaecb194c0f7965399d132137b089e5bea` |
+| 2 | `def` | [projectivePresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteProjectiveAligned.lean/declarations/projectivepresentation.md) | 56 | `declaration-track:dd3d68a75548e0ec7f097092b1b962ed4431ccf181234532b4e9c5c820289d68` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteProjectiveAligned.lean/declarations/instance.md) | 64 | `declaration-track:f3b8409caab58fac393e412a470695f2bbab0d5867e34f79bd4452be8dd8e11d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

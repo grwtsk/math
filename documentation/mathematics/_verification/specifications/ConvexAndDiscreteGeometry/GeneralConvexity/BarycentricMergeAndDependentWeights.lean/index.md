@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/BarycentricMergeAndDependentWeights.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/BarycentricMergeAndDependentWeights.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/BarycentricMergeAndDependentWeights.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/BarycentricMergeAndDependentWeights.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.Algebra.BigOperators.Group.Finset.Basic` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Fintype.BigOperators` — import line 20; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 21; external provider; requires a separately pinned dependency.
-- [Normalized Weights And Relabeling](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/index.md) — import line 23; pinned internal source present.
+- [Normalized Weights And Relabeling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [barycentric](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/BarycentricMergeAndDependentWeights.lean/declarations/barycentric.md) | 43 | `declaration-track:29b99a8db45e04ec96a53d8b13fbbe4d2880b33d9ed7c2ec651f0f1dc3e4951f` |
-| 2 | `theorem` | [barycentric_apply](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/BarycentricMergeAndDependentWeights.lean/declarations/barycentric-apply.md) | 60 | `result-track:a8900e1638c6b6d3bbaac6582221db77de75b28275d8a72181cf839e6c81c1d7` |
-| 3 | `def` | [merge](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/BarycentricMergeAndDependentWeights.lean/declarations/merge.md) | 68 | `declaration-track:589f5e89cd3a6e83ce54c0a9ae72c1a8cf8a8cd71540b48b9d5458bc9b77dc47` |
-| 4 | `theorem` | [merge_apply](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/BarycentricMergeAndDependentWeights.lean/declarations/merge-apply.md) | 84 | `result-track:fa0dec526fd51d3648026624a360b1eba3df6db567e39247fe534f4660c5a478` |
-| 5 | `def` | [hierarchical](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/BarycentricMergeAndDependentWeights.lean/declarations/hierarchical.md) | 90 | `declaration-track:8e73022d7d973ba1e6617d0db3f45791b662b37a4dd9cdeefbee5cb3106d6237` |
-| 6 | `theorem` | [hierarchical_apply](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/BarycentricMergeAndDependentWeights.lean/declarations/hierarchical-apply.md) | 109 | `result-track:ff31333488911aafa49ceb59dc9daa85023d124258cd682adee8930d0fd54203` |
+| 1 | `def` | [barycentric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/BarycentricMergeAndDependentWeights.lean/declarations/barycentric.md) | 43 | `declaration-track:29b99a8db45e04ec96a53d8b13fbbe4d2880b33d9ed7c2ec651f0f1dc3e4951f` |
+| 2 | `theorem` | [barycentric_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/BarycentricMergeAndDependentWeights.lean/declarations/barycentric-apply.md) | 60 | `result-track:a8900e1638c6b6d3bbaac6582221db77de75b28275d8a72181cf839e6c81c1d7` |
+| 3 | `def` | [merge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/BarycentricMergeAndDependentWeights.lean/declarations/merge.md) | 68 | `declaration-track:589f5e89cd3a6e83ce54c0a9ae72c1a8cf8a8cd71540b48b9d5458bc9b77dc47` |
+| 4 | `theorem` | [merge_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/BarycentricMergeAndDependentWeights.lean/declarations/merge-apply.md) | 84 | `result-track:fa0dec526fd51d3648026624a360b1eba3df6db567e39247fe534f4660c5a478` |
+| 5 | `def` | [hierarchical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/BarycentricMergeAndDependentWeights.lean/declarations/hierarchical.md) | 90 | `declaration-track:8e73022d7d973ba1e6617d0db3f45791b662b37a4dd9cdeefbee5cb3106d6237` |
+| 6 | `theorem` | [hierarchical_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/BarycentricMergeAndDependentWeights.lean/declarations/hierarchical-apply.md) | 109 | `result-track:ff31333488911aafa49ceb59dc9daa85023d124258cd682adee8930d0fd54203` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

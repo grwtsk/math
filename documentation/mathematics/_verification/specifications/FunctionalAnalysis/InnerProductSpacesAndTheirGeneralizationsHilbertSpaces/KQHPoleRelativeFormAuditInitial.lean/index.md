@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAuditInitial.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAuditInitial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAuditInitial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAuditInitial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [annihilator_error_bound](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAuditInitial.lean/declarations/annihilator-error-bound.md) | 34 | `result-track:85b3319f436da85ea6d47a527cb017dbfd2193b81f4c8f9b0c50bc774e6feedd` |
-| 2 | `theorem` | [transferred_error_bound](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAuditInitial.lean/declarations/transferred-error-bound.md) | 45 | `result-track:c3e9cb5e91dc006bd60ed3585c4cbfc1ec9778499626228d87e56ada779774f2` |
-| 3 | `theorem` | [transferred_kernel](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAuditInitial.lean/declarations/transferred-kernel.md) | 53 | `result-track:dcbe0dd7848869e47fed2a6f5412f4574b631daddd0940a413aa9f8789ad55d6` |
-| 4 | `theorem` | [native_readout_transfer](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAuditInitial.lean/declarations/native-readout-transfer.md) | 63 | `result-track:054eb1afd0eee47bbfc1691ad716dbf08856086513ea674f1682efa2a2fbb3c8` |
+| 1 | `theorem` | [annihilator_error_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAuditInitial.lean/declarations/annihilator-error-bound.md) | 34 | `result-track:85b3319f436da85ea6d47a527cb017dbfd2193b81f4c8f9b0c50bc774e6feedd` |
+| 2 | `theorem` | [transferred_error_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAuditInitial.lean/declarations/transferred-error-bound.md) | 45 | `result-track:c3e9cb5e91dc006bd60ed3585c4cbfc1ec9778499626228d87e56ada779774f2` |
+| 3 | `theorem` | [transferred_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAuditInitial.lean/declarations/transferred-kernel.md) | 53 | `result-track:dcbe0dd7848869e47fed2a6f5412f4574b631daddd0940a413aa9f8789ad55d6` |
+| 4 | `theorem` | [native_readout_transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAuditInitial.lean/declarations/native-readout-transfer.md) | 63 | `result-track:054eb1afd0eee47bbfc1691ad716dbf08856086513ea674f1682efa2a2fbb3c8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

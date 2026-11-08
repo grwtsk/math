@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoordinatesSeparated.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoordinatesSeparated.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoordinatesSeparated.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoordinatesSeparated.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CoordinatesSeparated](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoordinatesSeparated.lean/declarations/coordinatesseparated.md) | 12 | `declaration-track:42ab97e7f76a08045cf5e8beedc8b2e0830164a44ba4e4a7113c0b0a25900008` |
+| 1 | `def` | [CoordinatesSeparated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoordinatesSeparated.lean/declarations/coordinatesseparated.md) | 12 | `declaration-track:42ab97e7f76a08045cf5e8beedc8b2e0830164a44ba4e4a7113c0b0a25900008` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

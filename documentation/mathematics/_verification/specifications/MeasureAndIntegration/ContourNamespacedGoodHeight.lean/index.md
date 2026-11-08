@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ContourNamespacedGoodHeight.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ContourNamespacedGoodHeight.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContourNamespacedGoodHeight.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContourNamespacedGoodHeight.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [GoodHeight](../../../../MeasureAndIntegration/ContourNamespacedGoodHeight.lean/declarations/goodheight.md) | 36 | `declaration-track:bc8bf8c3cc69bbf5b33e2807ec734a09f46f6c8b2eb590e70e79ea18e9fd5413` |
-| 2 | `theorem` | [exists_goodHeight](../../../../MeasureAndIntegration/ContourNamespacedGoodHeight.lean/declarations/exists-goodheight.md) | 39 | `result-track:aa49ee666ed209dce67f68dbe855ac98f36f652f8df31c324399f64c78629784` |
-| 3 | `theorem` | [goodHeight_xiDeriv_ne_zero](../../../../MeasureAndIntegration/ContourNamespacedGoodHeight.lean/declarations/goodheight-xideriv-ne-zero.md) | 50 | `result-track:958a937f07482ca7a746c03a06b63be78a5d8bb68c982d561fef9d234e5be49b` |
-| 4 | `theorem` | [rectangleIntegral'_logDeriv_xiDeriv_eq_Ncount](../../../../MeasureAndIntegration/ContourNamespacedGoodHeight.lean/declarations/rectangleintegral-logderiv-xideriv-eq-ncount.md) | 55 | `result-track:6aa0e8e885922922c40ef45d5317255884f786fdf70b3a07abd7919d8099fb65` |
-| 5 | `lemma` | [continuous_logDeriv_xiDeriv_horizontal](../../../../MeasureAndIntegration/ContourNamespacedGoodHeight.lean/declarations/continuous-logderiv-xideriv-horizontal.md) | 115 | `result-track:138ba6d68e45ed46f1d2016725331b843e40c7d9430f4871542fcc33aea1f11b` |
-| 6 | `lemma` | [horizontal_fold](../../../../MeasureAndIntegration/ContourNamespacedGoodHeight.lean/declarations/horizontal-fold.md) | 126 | `result-track:64177f65c27487dd6b7f2a4f83c04b880ed6c865da2362f254a6ac9b8eedbde2` |
-| 7 | `lemma` | [vertical_fold](../../../../MeasureAndIntegration/ContourNamespacedGoodHeight.lean/declarations/vertical-fold.md) | 133 | `result-track:a797a940810dccbc99f152ed302bee4d1c95bc49af5f03d1e16e2adfd95d1f25` |
-| 8 | `theorem` | [rectangleIntegral_logDeriv_xiDeriv_eq_halfContour](../../../../MeasureAndIntegration/ContourNamespacedGoodHeight.lean/declarations/rectangleintegral-logderiv-xideriv-eq-halfcontour.md) | 140 | `result-track:8049bb85c9a66e6b033fade6d9bbc75548a7c434cbb3ef1ed7ddfe2e979ae231` |
-| 9 | `theorem` | [Ncount_eq_im_halfContour](../../../../MeasureAndIntegration/ContourNamespacedGoodHeight.lean/declarations/ncount-eq-im-halfcontour.md) | 150 | `result-track:682413a93a01de8a077ecdb12a3068f79b590ee06eec9665751fd3a77007f5a8` |
+| 1 | `def` | [GoodHeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContourNamespacedGoodHeight.lean/declarations/goodheight.md) | 36 | `declaration-track:bc8bf8c3cc69bbf5b33e2807ec734a09f46f6c8b2eb590e70e79ea18e9fd5413` |
+| 2 | `theorem` | [exists_goodHeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContourNamespacedGoodHeight.lean/declarations/exists-goodheight.md) | 39 | `result-track:aa49ee666ed209dce67f68dbe855ac98f36f652f8df31c324399f64c78629784` |
+| 3 | `theorem` | [goodHeight_xiDeriv_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContourNamespacedGoodHeight.lean/declarations/goodheight-xideriv-ne-zero.md) | 50 | `result-track:958a937f07482ca7a746c03a06b63be78a5d8bb68c982d561fef9d234e5be49b` |
+| 4 | `theorem` | [rectangleIntegral'_logDeriv_xiDeriv_eq_Ncount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContourNamespacedGoodHeight.lean/declarations/rectangleintegral-logderiv-xideriv-eq-ncount.md) | 55 | `result-track:6aa0e8e885922922c40ef45d5317255884f786fdf70b3a07abd7919d8099fb65` |
+| 5 | `lemma` | [continuous_logDeriv_xiDeriv_horizontal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContourNamespacedGoodHeight.lean/declarations/continuous-logderiv-xideriv-horizontal.md) | 115 | `result-track:138ba6d68e45ed46f1d2016725331b843e40c7d9430f4871542fcc33aea1f11b` |
+| 6 | `lemma` | [horizontal_fold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContourNamespacedGoodHeight.lean/declarations/horizontal-fold.md) | 126 | `result-track:64177f65c27487dd6b7f2a4f83c04b880ed6c865da2362f254a6ac9b8eedbde2` |
+| 7 | `lemma` | [vertical_fold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContourNamespacedGoodHeight.lean/declarations/vertical-fold.md) | 133 | `result-track:a797a940810dccbc99f152ed302bee4d1c95bc49af5f03d1e16e2adfd95d1f25` |
+| 8 | `theorem` | [rectangleIntegral_logDeriv_xiDeriv_eq_halfContour](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContourNamespacedGoodHeight.lean/declarations/rectangleintegral-logderiv-xideriv-eq-halfcontour.md) | 140 | `result-track:8049bb85c9a66e6b033fade6d9bbc75548a7c434cbb3ef1ed7ddfe2e979ae231` |
+| 9 | `theorem` | [Ncount_eq_im_halfContour](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContourNamespacedGoodHeight.lean/declarations/ncount-eq-im-halfcontour.md) | 150 | `result-track:682413a93a01de8a077ecdb12a3068f79b590ee06eec9665751fd3a77007f5a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

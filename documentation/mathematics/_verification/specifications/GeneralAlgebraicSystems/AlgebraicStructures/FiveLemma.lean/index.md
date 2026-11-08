@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FiveLemma.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FiveLemma.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FiveLemma.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FiveLemma.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [surjective_of_surjective_of_surjective_of_injective](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FiveLemma.lean/declarations/surjective-of-surjective-of-surjective-of-injective.md) | 59 | `result-track:b49f828bf37ea3b8aeacacea36acc77b674d6e59790852454b3780d3b81a373f` |
-| 2 | `lemma` | [injective_of_surjective_of_injective_of_injective](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FiveLemma.lean/declarations/injective-of-surjective-of-injective-of-injective-source-edition-2.md) | 75 | `result-track:dc82cf85d1214899d69015769583dea412ce3861e251da61bf121c1324c365b0` |
-| 3 | `lemma` | [bijective_of_surjective_of_bijective_of_bijective_of_injective](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FiveLemma.lean/declarations/bijective-of-surjective-of-bijective-of-bijective-of-injective.md) | 93 | `result-track:06c9a970ecc47994c528a637b8a4a3da8a7814b8dcadbaf6188c07843fbe03ea` |
-| 4 | `lemma` | [surjective_of_surjective_of_surjective_of_injective](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FiveLemma.lean/declarations/surjective-of-surjective-of-surjective-of-injective-source-edition-2.md) | 123 | `result-track:c60ced3d9edf6f5a1e64444beec9b4353a6252a005cfd3d2a4fedbd52ba9ed34` |
-| 5 | `lemma` | [injective_of_surjective_of_injective_of_injective](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FiveLemma.lean/declarations/injective-of-surjective-of-injective-of-injective.md) | 136 | `result-track:26253d70aab49f3883328ba28d56fc2f628616ade1072245eaddf46d342a469b` |
-| 6 | `lemma` | [bijective_of_surjective_of_bijective_of_bijective_of_injective](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FiveLemma.lean/declarations/bijective-of-surjective-of-bijective-of-bijective-of-injective-source-edition-2.md) | 149 | `result-track:281794fd1be69fac5093ecdb6fe685e96eae4bfc2a18832132ea7cabf9624b16` |
+| 1 | `lemma` | [surjective_of_surjective_of_surjective_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FiveLemma.lean/declarations/surjective-of-surjective-of-surjective-of-injective.md) | 59 | `result-track:b49f828bf37ea3b8aeacacea36acc77b674d6e59790852454b3780d3b81a373f` |
+| 2 | `lemma` | [injective_of_surjective_of_injective_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FiveLemma.lean/declarations/injective-of-surjective-of-injective-of-injective-source-edition-2.md) | 75 | `result-track:dc82cf85d1214899d69015769583dea412ce3861e251da61bf121c1324c365b0` |
+| 3 | `lemma` | [bijective_of_surjective_of_bijective_of_bijective_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FiveLemma.lean/declarations/bijective-of-surjective-of-bijective-of-bijective-of-injective.md) | 93 | `result-track:06c9a970ecc47994c528a637b8a4a3da8a7814b8dcadbaf6188c07843fbe03ea` |
+| 4 | `lemma` | [surjective_of_surjective_of_surjective_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FiveLemma.lean/declarations/surjective-of-surjective-of-surjective-of-injective-source-edition-2.md) | 123 | `result-track:c60ced3d9edf6f5a1e64444beec9b4353a6252a005cfd3d2a4fedbd52ba9ed34` |
+| 5 | `lemma` | [injective_of_surjective_of_injective_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FiveLemma.lean/declarations/injective-of-surjective-of-injective-of-injective.md) | 136 | `result-track:26253d70aab49f3883328ba28d56fc2f628616ade1072245eaddf46d342a469b` |
+| 6 | `lemma` | [bijective_of_surjective_of_bijective_of_bijective_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FiveLemma.lean/declarations/bijective-of-surjective-of-bijective-of-bijective-of-injective-source-edition-2.md) | 149 | `result-track:281794fd1be69fac5093ecdb6fe685e96eae4bfc2a18832132ea7cabf9624b16` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

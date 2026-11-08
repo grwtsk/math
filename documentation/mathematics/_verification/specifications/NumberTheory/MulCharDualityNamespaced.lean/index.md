@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/MulCharDualityNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/MulCharDualityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MulCharDualityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MulCharDualityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [finite](../../../../NumberTheory/MulCharDualityNamespaced.lean/declarations/finite.md) | 34 | `declaration-track:08c77c496ec9106adc8c87ab0f8db13ae3266d1e91dd6df5537288c19c66ac76` |
-| 2 | `lemma` | [exists_apply_ne_one_iff_exists_monoidHom](../../../../NumberTheory/MulCharDualityNamespaced.lean/declarations/exists-apply-ne-one-iff-exists-monoidhom.md) | 47 | `result-track:897416ce7ffebe7e0b24892f7d9acdcde4f9417f7b539b353184bd9c54c40f5e` |
-| 3 | `theorem` | [exists_apply_ne_one_of_hasEnoughRootsOfUnity](../../../../NumberTheory/MulCharDualityNamespaced.lean/declarations/exists-apply-ne-one-of-hasenoughrootsofunity.md) | 61 | `result-track:be058d24b549367ef6ad522cf48dab42809377a6fef2bc5d55e395e500298e38` |
-| 4 | `lemma` | [mulEquiv_units](../../../../NumberTheory/MulCharDualityNamespaced.lean/declarations/mulequiv-units.md) | 73 | `result-track:417acd80a64da2dd2a70aa4df5e823b68efc76d5e171a80121d0f05829821a92` |
-| 5 | `lemma` | [card_eq_card_units_of_hasEnoughRootsOfUnity](../../../../NumberTheory/MulCharDualityNamespaced.lean/declarations/card-eq-card-units-of-hasenoughrootsofunity.md) | 80 | `result-track:d0fab12a424379650addb93e4afa201239133ada5d74318f76efd6e7cb75e829` |
+| 1 | `instance` | [finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MulCharDualityNamespaced.lean/declarations/finite.md) | 34 | `declaration-track:08c77c496ec9106adc8c87ab0f8db13ae3266d1e91dd6df5537288c19c66ac76` |
+| 2 | `lemma` | [exists_apply_ne_one_iff_exists_monoidHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MulCharDualityNamespaced.lean/declarations/exists-apply-ne-one-iff-exists-monoidhom.md) | 47 | `result-track:897416ce7ffebe7e0b24892f7d9acdcde4f9417f7b539b353184bd9c54c40f5e` |
+| 3 | `theorem` | [exists_apply_ne_one_of_hasEnoughRootsOfUnity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MulCharDualityNamespaced.lean/declarations/exists-apply-ne-one-of-hasenoughrootsofunity.md) | 61 | `result-track:be058d24b549367ef6ad522cf48dab42809377a6fef2bc5d55e395e500298e38` |
+| 4 | `lemma` | [mulEquiv_units](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MulCharDualityNamespaced.lean/declarations/mulequiv-units.md) | 73 | `result-track:417acd80a64da2dd2a70aa4df5e823b68efc76d5e171a80121d0f05829821a92` |
+| 5 | `lemma` | [card_eq_card_units_of_hasEnoughRootsOfUnity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MulCharDualityNamespaced.lean/declarations/card-eq-card-units-of-hasenoughrootsofunity.md) | 80 | `result-track:d0fab12a424379650addb93e4afa201239133ada5d74318f76efd6e7cb75e829` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

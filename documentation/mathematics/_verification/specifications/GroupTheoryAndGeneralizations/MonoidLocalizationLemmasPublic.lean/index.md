@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationLemmasPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationLemmasPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationLemmasPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationLemmasPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [surj_pi_of_finite](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationLemmasPublic.lean/declarations/surj-pi-of-finite.md) | 25 | `result-track:f0f32210ece4f2547bdd776e6e6a5ff02e3dde780bfe41554ade614122923ad5` |
-| 2 | `theorem` | [pi](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationLemmasPublic.lean/declarations/pi.md) | 35 | `result-track:5e561f86a06d399c08da53727bf17121b214897788473c14b2c0ba630dd49e1d` |
+| 1 | `theorem` | [surj_pi_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationLemmasPublic.lean/declarations/surj-pi-of-finite.md) | 25 | `result-track:f0f32210ece4f2547bdd776e6e6a5ff02e3dde780bfe41554ade614122923ad5` |
+| 2 | `theorem` | [pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationLemmasPublic.lean/declarations/pi.md) | 35 | `result-track:5e561f86a06d399c08da53727bf17121b214897788473c14b2c0ba630dd49e1d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

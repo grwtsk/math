@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticePublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticePublic.lean/declarations/instance-source-edition-4.md) | 38 | `declaration-track:ab735067cd0dfdc59751810e7d894171cfee68df66c8f7da0e4bf1b88812c77c` |
-| 2 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticePublic.lean/declarations/instance-source-edition-7.md) | 45 | `declaration-track:e7ca660f7af9cdcfba2028fd8c6a9d25c3fa14c720dfd9ed59da5abd003f1872` |
-| 3 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticePublic.lean/declarations/instance-source-edition-2.md) | 52 | `declaration-track:391320e14d7b5466da98dc37caf452ebee905f915c0bd2b36d4332da01b63a31` |
-| 4 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticePublic.lean/declarations/instance-source-edition-5.md) | 55 | `declaration-track:b14785fb56d53fabc18808b956368ea9e41be3d0c7eba484924ee201b83b8d85` |
-| 5 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticePublic.lean/declarations/instance-source-edition-3.md) | 58 | `declaration-track:a4272ef3513296822f2b30c15f401628b698e2989413bc5bcdbc938fd98c1f16` |
-| 6 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticePublic.lean/declarations/instance.md) | 61 | `declaration-track:08ad6cee76378b9003c01e4ae573c4ed870f6f5f1e0251cd359be20b468add67` |
-| 7 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticePublic.lean/declarations/instance-source-edition-6.md) | 68 | `declaration-track:e51f43d06be33fe56651df6e92e0962140ef951ddae4e9e68278fa4c7b6d3f6a` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticePublic.lean/declarations/instance-source-edition-4.md) | 38 | `declaration-track:ab735067cd0dfdc59751810e7d894171cfee68df66c8f7da0e4bf1b88812c77c` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticePublic.lean/declarations/instance-source-edition-7.md) | 45 | `declaration-track:e7ca660f7af9cdcfba2028fd8c6a9d25c3fa14c720dfd9ed59da5abd003f1872` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticePublic.lean/declarations/instance-source-edition-2.md) | 52 | `declaration-track:391320e14d7b5466da98dc37caf452ebee905f915c0bd2b36d4332da01b63a31` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticePublic.lean/declarations/instance-source-edition-5.md) | 55 | `declaration-track:b14785fb56d53fabc18808b956368ea9e41be3d0c7eba484924ee201b83b8d85` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticePublic.lean/declarations/instance-source-edition-3.md) | 58 | `declaration-track:a4272ef3513296822f2b30c15f401628b698e2989413bc5bcdbc938fd98c1f16` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticePublic.lean/declarations/instance.md) | 61 | `declaration-track:08ad6cee76378b9003c01e4ae573c4ed870f6f5f1e0251cd359be20b468add67` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticePublic.lean/declarations/instance-source-edition-6.md) | 68 | `declaration-track:e51f43d06be33fe56651df6e92e0962140ef951ddae4e9e68278fa4c7b6d3f6a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

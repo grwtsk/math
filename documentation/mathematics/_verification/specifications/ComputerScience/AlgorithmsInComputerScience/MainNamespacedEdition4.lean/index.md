@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MainNamespacedEdition4.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MainNamespacedEdition4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainNamespacedEdition4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainNamespacedEdition4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [matrixOrError](../../../../../ComputerScience/AlgorithmsInComputerScience/MainNamespacedEdition4.lean/declarations/matrixorerror.md) | 19 | `declaration-track:2ce3d8647373c941f377d3a5f71b49de1e3387aea7a30850b8688f1fe577c5b2` |
-| 2 | `def` | [printMatrix](../../../../../ComputerScience/AlgorithmsInComputerScience/MainNamespacedEdition4.lean/declarations/printmatrix.md) | 33 | `declaration-track:3729ac1382b44af25013765012ae93e1d5e68d4023489a4042c3a2b15295c151` |
-| 3 | `def` | [main](../../../../../ComputerScience/AlgorithmsInComputerScience/MainNamespacedEdition4.lean/declarations/main.md) | 39 | `declaration-track:791e2da000341274b96a9d71745c5de80db93f45b11e27628cb262f0b203163e` |
+| 1 | `def` | [matrixOrError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainNamespacedEdition4.lean/declarations/matrixorerror.md) | 19 | `declaration-track:2ce3d8647373c941f377d3a5f71b49de1e3387aea7a30850b8688f1fe577c5b2` |
+| 2 | `def` | [printMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainNamespacedEdition4.lean/declarations/printmatrix.md) | 33 | `declaration-track:3729ac1382b44af25013765012ae93e1d5e68d4023489a4042c3a2b15295c151` |
+| 3 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainNamespacedEdition4.lean/declarations/main.md) | 39 | `declaration-track:791e2da000341274b96a9d71745c5de80db93f45b11e27628cb262f0b203163e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Rendering.lean/index.md) · [Full source](../../../../Combinatorics/Rendering.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Rendering.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Rendering.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LosslessRenderProfile](../../../../Combinatorics/Rendering.lean/declarations/losslessrenderprofile.md) | 12 | `declaration-track:a6d12f572a76a77f89d8b80853aed40df67da25eb31695ed6e4284259e4c1fcb` |
-| 2 | `def` | [renderProblem](../../../../Combinatorics/Rendering.lean/declarations/renderproblem.md) | 20 | `declaration-track:2501805114fe2b8959bc898f0d2bc2a385a3991cd797a5e7aa809fc68e477098` |
-| 3 | `theorem` | [lossless_render_roundtrip](../../../../Combinatorics/Rendering.lean/declarations/lossless-render-roundtrip.md) | 26 | `result-track:4d4084def30afb58ed1d6f40c3d5b2e0171d1954f208c483dba1617aaf698c78` |
-| 4 | `structure` | [LossyProblemProjection](../../../../Combinatorics/Rendering.lean/declarations/lossyproblemprojection.md) | 32 | `declaration-track:95a87779750513222e39854452d4acf32fe2b8dfff5786f177cddb950ba7cfc7` |
+| 1 | `structure` | [LosslessRenderProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Rendering.lean/declarations/losslessrenderprofile.md) | 12 | `declaration-track:a6d12f572a76a77f89d8b80853aed40df67da25eb31695ed6e4284259e4c1fcb` |
+| 2 | `def` | [renderProblem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Rendering.lean/declarations/renderproblem.md) | 20 | `declaration-track:2501805114fe2b8959bc898f0d2bc2a385a3991cd797a5e7aa809fc68e477098` |
+| 3 | `theorem` | [lossless_render_roundtrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Rendering.lean/declarations/lossless-render-roundtrip.md) | 26 | `result-track:4d4084def30afb58ed1d6f40c3d5b2e0171d1954f208c483dba1617aaf698c78` |
+| 4 | `structure` | [LossyProblemProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Rendering.lean/declarations/lossyproblemprojection.md) | 32 | `declaration-track:95a87779750513222e39854452d4acf32fe2b8dfff5786f177cddb950ba7cfc7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

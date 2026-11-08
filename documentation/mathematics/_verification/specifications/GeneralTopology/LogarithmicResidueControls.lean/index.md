@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LogarithmicResidueControls.lean/index.md) · [Full source](../../../../GeneralTopology/LogarithmicResidueControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicResidueControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicResidueControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.TentResidueContributions`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentResidueContributions.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.TentResidueContributions`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentResidueContributions.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [double_zero_limit_control](../../../../GeneralTopology/LogarithmicResidueControls.lean/declarations/double-zero-limit-control.md) | 27 | `result-track:f6d40fd621132053b5859cf947b7527f8aac9a8aeabb709fc9aa8c244f456b35` |
-| 2 | `theorem` | [triple_pole_limit_control](../../../../GeneralTopology/LogarithmicResidueControls.lean/declarations/triple-pole-limit-control.md) | 35 | `result-track:24161c89d024cc7dd82de44264d236e2d50c87894812653d4736d2ef41e46007` |
-| 3 | `theorem` | [unit_limit_control](../../../../GeneralTopology/LogarithmicResidueControls.lean/declarations/unit-limit-control.md) | 43 | `result-track:9fc0694bf245bfb0e2586d607f9562397aa4b9280f1db081c705185503577429` |
-| 4 | `theorem` | [vanishing_multiplier_control](../../../../GeneralTopology/LogarithmicResidueControls.lean/declarations/vanishing-multiplier-control.md) | 51 | `result-track:6a4bf4db74cc9d7695276e22f994f91f42e65e1d5af87bc386bac086ee7568df` |
-| 5 | `theorem` | [totalized_center_control](../../../../GeneralTopology/LogarithmicResidueControls.lean/declarations/totalized-center-control.md) | 60 | `result-track:a01a1e7cb8993d194da8a93329919aa82995747b3828011e54719b6c004324ec` |
-| 6 | `theorem` | [riesz_zero_parameter_control](../../../../GeneralTopology/LogarithmicResidueControls.lean/declarations/riesz-zero-parameter-control.md) | 67 | `result-track:4f60e9254edc7b32bedd45362cef30f339e82b5d136ed529759ea0416217b89a` |
-| 7 | `theorem` | [riesz_negative_one_parameter_control](../../../../GeneralTopology/LogarithmicResidueControls.lean/declarations/riesz-negative-one-parameter-control.md) | 71 | `result-track:fc2bca6a717286ea5be9208c85f80ba1c2ae9dff4a35affc615c6810b3896a3f` |
-| 8 | `theorem` | [riesz_main_normalization_control](../../../../GeneralTopology/LogarithmicResidueControls.lean/declarations/riesz-main-normalization-control.md) | 75 | `result-track:e6661c6863dee967398291a83635d44e204e2e50e612daf8405a7841da4530b1` |
-| 9 | `theorem` | [invisible_entire_addition_control](../../../../GeneralTopology/LogarithmicResidueControls.lean/declarations/invisible-entire-addition-control.md) | 80 | `result-track:e96496da7374f7e58160e3f3737f2008386b3de9fa31271c505780bde22922b7` |
-| 10 | `theorem` | [nonzero_entire_addition_control](../../../../GeneralTopology/LogarithmicResidueControls.lean/declarations/nonzero-entire-addition-control.md) | 93 | `result-track:80ab2cbe3bcde2d11bab7c61ec34dd46ea1bf7d910eb90bcab25ecb8c0d2de1e` |
+| 1 | `theorem` | [double_zero_limit_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicResidueControls.lean/declarations/double-zero-limit-control.md) | 27 | `result-track:f6d40fd621132053b5859cf947b7527f8aac9a8aeabb709fc9aa8c244f456b35` |
+| 2 | `theorem` | [triple_pole_limit_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicResidueControls.lean/declarations/triple-pole-limit-control.md) | 35 | `result-track:24161c89d024cc7dd82de44264d236e2d50c87894812653d4736d2ef41e46007` |
+| 3 | `theorem` | [unit_limit_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicResidueControls.lean/declarations/unit-limit-control.md) | 43 | `result-track:9fc0694bf245bfb0e2586d607f9562397aa4b9280f1db081c705185503577429` |
+| 4 | `theorem` | [vanishing_multiplier_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicResidueControls.lean/declarations/vanishing-multiplier-control.md) | 51 | `result-track:6a4bf4db74cc9d7695276e22f994f91f42e65e1d5af87bc386bac086ee7568df` |
+| 5 | `theorem` | [totalized_center_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicResidueControls.lean/declarations/totalized-center-control.md) | 60 | `result-track:a01a1e7cb8993d194da8a93329919aa82995747b3828011e54719b6c004324ec` |
+| 6 | `theorem` | [riesz_zero_parameter_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicResidueControls.lean/declarations/riesz-zero-parameter-control.md) | 67 | `result-track:4f60e9254edc7b32bedd45362cef30f339e82b5d136ed529759ea0416217b89a` |
+| 7 | `theorem` | [riesz_negative_one_parameter_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicResidueControls.lean/declarations/riesz-negative-one-parameter-control.md) | 71 | `result-track:fc2bca6a717286ea5be9208c85f80ba1c2ae9dff4a35affc615c6810b3896a3f` |
+| 8 | `theorem` | [riesz_main_normalization_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicResidueControls.lean/declarations/riesz-main-normalization-control.md) | 75 | `result-track:e6661c6863dee967398291a83635d44e204e2e50e612daf8405a7841da4530b1` |
+| 9 | `theorem` | [invisible_entire_addition_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicResidueControls.lean/declarations/invisible-entire-addition-control.md) | 80 | `result-track:e96496da7374f7e58160e3f3737f2008386b3de9fa31271c505780bde22922b7` |
+| 10 | `theorem` | [nonzero_entire_addition_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicResidueControls.lean/declarations/nonzero-entire-addition-control.md) | 93 | `result-track:80ab2cbe3bcde2d11bab7c61ec34dd46ea1bf7d910eb90bcab25ecb8c0d2de1e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

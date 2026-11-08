@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRationalAndLinearFormsOfTheTwoModeSourceConditionEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRationalAndLinearFormsOfTheTwoModeSourceConditionEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRationalAndLinearFormsOfTheTwoModeSourceConditionEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRationalAndLinearFormsOfTheTwoModeSourceConditionEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [positive_denominator_linear_rational_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRationalAndLinearFormsOfTheTwoModeSourceConditionEdition2.lean/declarations/positive-denominator-linear-rational-iff.md) | 17 | `result-track:bf89ddd4f9028775c9798ca42a7551e73176bf60888477591556e81185c2a38d` |
-| 2 | `theorem` | [badly_approximable_iff_rational_source_condition](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRationalAndLinearFormsOfTheTwoModeSourceConditionEdition2.lean/declarations/badly-approximable-iff-rational-source-condition.md) | 27 | `result-track:c6ff4265ad51e162f78adc3df15bff744c8e3ea62e75835a540be669d8894779` |
+| 1 | `theorem` | [positive_denominator_linear_rational_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRationalAndLinearFormsOfTheTwoModeSourceConditionEdition2.lean/declarations/positive-denominator-linear-rational-iff.md) | 17 | `result-track:bf89ddd4f9028775c9798ca42a7551e73176bf60888477591556e81185c2a38d` |
+| 2 | `theorem` | [badly_approximable_iff_rational_source_condition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRationalAndLinearFormsOfTheTwoModeSourceConditionEdition2.lean/declarations/badly-approximable-iff-rational-source-condition.md) | 27 | `result-track:c6ff4265ad51e162f78adc3df15bff744c8e3ea62e75835a540be669d8894779` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

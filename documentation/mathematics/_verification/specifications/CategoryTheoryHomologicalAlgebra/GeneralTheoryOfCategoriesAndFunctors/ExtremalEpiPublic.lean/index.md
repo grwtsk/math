@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtremalEpiPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtremalEpiPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtremalEpiPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtremalEpiPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [ExtremalEpi](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtremalEpiPublic.lean/declarations/extremalepi.md) | 40 | `declaration-track:3e2de00a7323eda7f5dfee0b1f6705a5ab74f72e543ef2e781c636e232aa7c52` |
-| 2 | `lemma` | [ExtremalEpi.subobject_eq_top](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtremalEpiPublic.lean/declarations/extremalepi-subobject-eq-top.md) | 45 | `result-track:e023dd60ee380b89b73e68039067ee6955a704464236d361b15670a8f50f7641` |
-| 3 | `lemma` | [ExtremalEpi.mk_of_hasEqualizers](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtremalEpiPublic.lean/declarations/extremalepi-mk-of-hasequalizers.md) | 50 | `result-track:ce26687d94fb81ee4b5c5d40d24832749b22f5e83be5d2bb7fb70bc0f308ce95` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtremalEpiPublic.lean/declarations/instance.md) | 58 | `declaration-track:bafa3d064e664b51b075f96fd78d23bd6b58a952fa1877e16170b92d0d7ce273` |
-| 5 | `lemma` | [extremalEpi_iff_strongEpi_of_hasPullbacks](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtremalEpiPublic.lean/declarations/extremalepi-iff-strongepi-of-haspullbacks.md) | 64 | `result-track:4e5f3df8420ec5640e4d4a9fe5201bc02d67cba4acb2eec4952307a814c38cde` |
+| 1 | `class` | [ExtremalEpi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtremalEpiPublic.lean/declarations/extremalepi.md) | 40 | `declaration-track:3e2de00a7323eda7f5dfee0b1f6705a5ab74f72e543ef2e781c636e232aa7c52` |
+| 2 | `lemma` | [ExtremalEpi.subobject_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtremalEpiPublic.lean/declarations/extremalepi-subobject-eq-top.md) | 45 | `result-track:e023dd60ee380b89b73e68039067ee6955a704464236d361b15670a8f50f7641` |
+| 3 | `lemma` | [ExtremalEpi.mk_of_hasEqualizers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtremalEpiPublic.lean/declarations/extremalepi-mk-of-hasequalizers.md) | 50 | `result-track:ce26687d94fb81ee4b5c5d40d24832749b22f5e83be5d2bb7fb70bc0f308ce95` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtremalEpiPublic.lean/declarations/instance.md) | 58 | `declaration-track:bafa3d064e664b51b075f96fd78d23bd6b58a952fa1877e16170b92d0d7ce273` |
+| 5 | `lemma` | [extremalEpi_iff_strongEpi_of_hasPullbacks](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtremalEpiPublic.lean/declarations/extremalepi-iff-strongepi-of-haspullbacks.md) | 64 | `result-track:4e5f3df8420ec5640e4d4a9fe5201bc02d67cba4acb2eec4952307a814c38cde` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

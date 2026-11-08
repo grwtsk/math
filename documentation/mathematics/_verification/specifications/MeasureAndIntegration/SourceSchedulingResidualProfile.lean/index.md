@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceSchedulingResidualProfile.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceSchedulingResidualProfile.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSchedulingResidualProfile.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSchedulingResidualProfile.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [residualProfile](../../../../MeasureAndIntegration/SourceSchedulingResidualProfile.lean/declarations/residualprofile.md) | 33 | `declaration-track:9fb29dfc579279163d38f9af44b6b77c658f3020c36426fa7f8d98de9d1b4f6a` |
-| 2 | `theorem` | [residualProfile_intervalIntegrable](../../../../MeasureAndIntegration/SourceSchedulingResidualProfile.lean/declarations/residualprofile-intervalintegrable.md) | 36 | `result-track:7344c45fbf1c33b60f76a538cd634a9ef3e98e24df9d368aa7b279b7859d04ad` |
-| 3 | `theorem` | [residualProfile_integral_eq_readout](../../../../MeasureAndIntegration/SourceSchedulingResidualProfile.lean/declarations/residualprofile-integral-eq-readout.md) | 52 | `result-track:a144fd0c59165a4e1c2aabd3fcc568ea88cb847e6ae53f63e3b58b37077828b3` |
-| 4 | `theorem` | [readout_abs_le_curvature_profile](../../../../MeasureAndIntegration/SourceSchedulingResidualProfile.lean/declarations/readout-abs-le-curvature-profile.md) | 96 | `result-track:2d87d3175c6f97a4ebd976064403b6f68ce0e006c12c0a5116864eed2b96c119` |
+| 1 | `def` | [residualProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSchedulingResidualProfile.lean/declarations/residualprofile.md) | 33 | `declaration-track:9fb29dfc579279163d38f9af44b6b77c658f3020c36426fa7f8d98de9d1b4f6a` |
+| 2 | `theorem` | [residualProfile_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSchedulingResidualProfile.lean/declarations/residualprofile-intervalintegrable.md) | 36 | `result-track:7344c45fbf1c33b60f76a538cd634a9ef3e98e24df9d368aa7b279b7859d04ad` |
+| 3 | `theorem` | [residualProfile_integral_eq_readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSchedulingResidualProfile.lean/declarations/residualprofile-integral-eq-readout.md) | 52 | `result-track:a144fd0c59165a4e1c2aabd3fcc568ea88cb847e6ae53f63e3b58b37077828b3` |
+| 4 | `theorem` | [readout_abs_le_curvature_profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSchedulingResidualProfile.lean/declarations/readout-abs-le-curvature-profile.md) | 96 | `result-track:2d87d3175c6f97a4ebd976064403b6f68ce0e006c12c0a5116864eed2b96c119` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

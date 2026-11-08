@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MiscNamespacedPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MiscNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MiscNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MiscNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [submatrix_succAbove_det_eq_negOnePow_submatrix_succAbove_det](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MiscNamespacedPublic.lean/declarations/submatrix-succabove-det-eq-negonepow-submatrix-succabove-det-source-edition-2.md) | 36 | `result-track:c03b5285e9ca382cc9d6f834fb8c068e1e86c8757d841e1851132faaba6db038` |
-| 2 | `theorem` | [submatrix_succAbove_det_eq_negOnePow_submatrix_succAbove_det'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MiscNamespacedPublic.lean/declarations/submatrix-succabove-det-eq-negonepow-submatrix-succabove-det.md) | 67 | `result-track:58468083bfb84dc116b4b09808ddea70ede6831a8aba71b662cbd7c12f38d57f` |
-| 3 | `theorem` | [det_eq_sum_column_mul_submatrix_succAbove_succAbove_det](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MiscNamespacedPublic.lean/declarations/det-eq-sum-column-mul-submatrix-succabove-succabove-det.md) | 81 | `result-track:3e4ba590f4932216b089583587c1d83e7cf7dbd2da4ca6619d2ce604eb04ea7a` |
-| 4 | `theorem` | [det_eq_sum_row_mul_submatrix_succAbove_succAbove_det](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MiscNamespacedPublic.lean/declarations/det-eq-sum-row-mul-submatrix-succabove-succabove-det.md) | 97 | `result-track:aac3f06ffb453c9cd273adc2efc73e6cf00dbf822f65dfcda43b9cd685e0d992` |
+| 1 | `theorem` | [submatrix_succAbove_det_eq_negOnePow_submatrix_succAbove_det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MiscNamespacedPublic.lean/declarations/submatrix-succabove-det-eq-negonepow-submatrix-succabove-det-source-edition-2.md) | 36 | `result-track:c03b5285e9ca382cc9d6f834fb8c068e1e86c8757d841e1851132faaba6db038` |
+| 2 | `theorem` | [submatrix_succAbove_det_eq_negOnePow_submatrix_succAbove_det'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MiscNamespacedPublic.lean/declarations/submatrix-succabove-det-eq-negonepow-submatrix-succabove-det.md) | 67 | `result-track:58468083bfb84dc116b4b09808ddea70ede6831a8aba71b662cbd7c12f38d57f` |
+| 3 | `theorem` | [det_eq_sum_column_mul_submatrix_succAbove_succAbove_det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MiscNamespacedPublic.lean/declarations/det-eq-sum-column-mul-submatrix-succabove-succabove-det.md) | 81 | `result-track:3e4ba590f4932216b089583587c1d83e7cf7dbd2da4ca6619d2ce604eb04ea7a` |
+| 4 | `theorem` | [det_eq_sum_row_mul_submatrix_succAbove_succAbove_det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MiscNamespacedPublic.lean/declarations/det-eq-sum-row-mul-submatrix-succabove-succabove-det.md) | 97 | `result-track:aac3f06ffb453c9cd273adc2efc73e6cf00dbf822f65dfcda43b9cd685e0d992` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

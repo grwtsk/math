@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusCorrection.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusCorrection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusCorrection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusCorrection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.ArithmeticFunctions.DensityMoebius`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebius.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.ArithmeticFunctions.DensityMoebius`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebius.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.NumberTheory.ArithmeticFunction.Moebius` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [densityMoebiusFunction](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusCorrection.lean/declarations/densitymoebiusfunction.md) | 21 | `declaration-track:4548f742d9aecf57d26ce8f071e40ef9de9af5196192a8c5cf4f9a1c0e20ddbd` |
-| 2 | `def` | [densityMoebiusCorrection](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusCorrection.lean/declarations/densitymoebiuscorrection.md) | 25 | `declaration-track:0dd5dffa337dbda609315c23e7efa16781b2c3db8a6dd7c4737e7ffa38ff6cbd` |
-| 3 | `theorem` | [density_moebius_correction_return](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusCorrection.lean/declarations/density-moebius-correction-return.md) | 29 | `result-track:7f9dd4b3941089f02c2775bc58c170fb3f53fae57120df33a759e5789f9ad3bb` |
-| 4 | `theorem` | [density_moebius_correction_divisors](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusCorrection.lean/declarations/density-moebius-correction-divisors.md) | 39 | `result-track:a84f9b2772b4aed903d92b4875e128045a4bf75a1adf9cd95f4aa0f0a62db125` |
-| 5 | `theorem` | [density_moebius_correction_one](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusCorrection.lean/declarations/density-moebius-correction-one.md) | 44 | `result-track:9deef8f62547fbac85c9c9bc2fb731d501f928c7ce073e4505dbaeb394b1ead9` |
-| 6 | `theorem` | [density_moebius_correction_prime](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusCorrection.lean/declarations/density-moebius-correction-prime.md) | 49 | `result-track:36829a800dab95fabec66c56732fe846c99822bd955dca012036bdceff514086` |
+| 1 | `def` | [densityMoebiusFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusCorrection.lean/declarations/densitymoebiusfunction.md) | 21 | `declaration-track:4548f742d9aecf57d26ce8f071e40ef9de9af5196192a8c5cf4f9a1c0e20ddbd` |
+| 2 | `def` | [densityMoebiusCorrection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusCorrection.lean/declarations/densitymoebiuscorrection.md) | 25 | `declaration-track:0dd5dffa337dbda609315c23e7efa16781b2c3db8a6dd7c4737e7ffa38ff6cbd` |
+| 3 | `theorem` | [density_moebius_correction_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusCorrection.lean/declarations/density-moebius-correction-return.md) | 29 | `result-track:7f9dd4b3941089f02c2775bc58c170fb3f53fae57120df33a759e5789f9ad3bb` |
+| 4 | `theorem` | [density_moebius_correction_divisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusCorrection.lean/declarations/density-moebius-correction-divisors.md) | 39 | `result-track:a84f9b2772b4aed903d92b4875e128045a4bf75a1adf9cd95f4aa0f0a62db125` |
+| 5 | `theorem` | [density_moebius_correction_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusCorrection.lean/declarations/density-moebius-correction-one.md) | 44 | `result-track:9deef8f62547fbac85c9c9bc2fb731d501f928c7ce073e4505dbaeb394b1ead9` |
+| 6 | `theorem` | [density_moebius_correction_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusCorrection.lean/declarations/density-moebius-correction-prime.md) | 49 | `result-track:36829a800dab95fabec66c56732fe846c99822bd955dca012036bdceff514086` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

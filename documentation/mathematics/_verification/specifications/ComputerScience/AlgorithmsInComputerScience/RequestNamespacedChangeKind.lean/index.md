@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RequestNamespacedChangeKind.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RequestNamespacedChangeKind.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RequestNamespacedChangeKind.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RequestNamespacedChangeKind.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ChangeKind](../../../../../ComputerScience/AlgorithmsInComputerScience/RequestNamespacedChangeKind.lean/declarations/changekind.md) | 14 | `declaration-track:d57abb520f66eb448a52fe962690b96f1cd91616daf5b465e3418957ae57515d` |
-| 2 | `structure` | [ChangedLeanFile](../../../../../ComputerScience/AlgorithmsInComputerScience/RequestNamespacedChangeKind.lean/declarations/changedleanfile.md) | 24 | `declaration-track:f40a52c53ccaef2fdc2429e28c1a0056fd3f35c18e86affecd1e15ef9eb21cef` |
-| 3 | `inductive` | [ArtifactKind](../../../../../ComputerScience/AlgorithmsInComputerScience/RequestNamespacedChangeKind.lean/declarations/artifactkind.md) | 32 | `declaration-track:50a272701e55a4c67ed951cb3e1ecbf0812e1018f524e95f4dd3a614b6994cdd` |
-| 4 | `structure` | [IncrementalGenerationRequest](../../../../../ComputerScience/AlgorithmsInComputerScience/RequestNamespacedChangeKind.lean/declarations/incrementalgenerationrequest.md) | 48 | `declaration-track:997c2bbcdd360e5945afdb0139cdbb565b3aeac0660497d4c8f5b9865a281768` |
-| 5 | `theorem` | [changedLeanFile_boundary_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/RequestNamespacedChangeKind.lean/declarations/changedleanfile-boundary-visible.md) | 59 | `result-track:dd15c6f794daa6d1eab22f1503add36c8727c60d99db6d49d15ce02bc82affa9` |
+| 1 | `inductive` | [ChangeKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RequestNamespacedChangeKind.lean/declarations/changekind.md) | 14 | `declaration-track:d57abb520f66eb448a52fe962690b96f1cd91616daf5b465e3418957ae57515d` |
+| 2 | `structure` | [ChangedLeanFile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RequestNamespacedChangeKind.lean/declarations/changedleanfile.md) | 24 | `declaration-track:f40a52c53ccaef2fdc2429e28c1a0056fd3f35c18e86affecd1e15ef9eb21cef` |
+| 3 | `inductive` | [ArtifactKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RequestNamespacedChangeKind.lean/declarations/artifactkind.md) | 32 | `declaration-track:50a272701e55a4c67ed951cb3e1ecbf0812e1018f524e95f4dd3a614b6994cdd` |
+| 4 | `structure` | [IncrementalGenerationRequest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RequestNamespacedChangeKind.lean/declarations/incrementalgenerationrequest.md) | 48 | `declaration-track:997c2bbcdd360e5945afdb0139cdbb565b3aeac0660497d4c8f5b9865a281768` |
+| 5 | `theorem` | [changedLeanFile_boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RequestNamespacedChangeKind.lean/declarations/changedleanfile-boundary-visible.md) | 59 | `result-track:dd15c6f794daa6d1eab22f1503add36c8727c60d99db6d49d15ce02bc82affa9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

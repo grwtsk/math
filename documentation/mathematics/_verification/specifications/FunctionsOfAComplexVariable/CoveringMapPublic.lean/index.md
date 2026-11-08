@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/CoveringMapPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/CoveringMapPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CoveringMapPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CoveringMapPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isAddQuotientCoveringMap_exp](../../../../FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/isaddquotientcoveringmap-exp.md) | 31 | `result-track:6337a6f39762bb1f4f2ba5694ce8bc7159fec8c776996d7649a8194a08a0f7d0` |
-| 2 | `theorem` | [isCoveringMap_exp](../../../../FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/iscoveringmap-exp.md) | 42 | `result-track:a66356ded85ab27fec07b7ac72551e972671f7fc9ae3e929bc2db7a19acb48ba` |
-| 3 | `theorem` | [isCoveringMapOn_exp](../../../../FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/iscoveringmapon-exp.md) | 45 | `result-track:5f5ed5a8627d4cd102ce25658d10a2653e04483e04f9338741ea60e54f576222` |
-| 4 | `theorem` | [Polynomial.isCoveringMapOn_eval](../../../../FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/polynomial-iscoveringmapon-eval.md) | 56 | `result-track:d4156c0aa5243cfc80175b2b588d89cdbf477d9f9be8c6aebadf7db4ff9d4aa2` |
-| 5 | `theorem` | [isCoveringMapOn_npow](../../../../FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/iscoveringmapon-npow.md) | 65 | `result-track:04a1b555917d32567d5acf6823a9d0dba960f8216084f49628ebf1037c8c0d4b` |
-| 6 | `theorem` | [isCoveringMap_npow](../../../../FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/iscoveringmap-npow.md) | 73 | `result-track:bde6357e147e02f486aa9a3a78cbe696048e38f725ab9c6d245559022455fd08` |
-| 7 | `theorem` | [isCoveringMap_zpow](../../../../FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/iscoveringmap-zpow.md) | 81 | `result-track:98a83bf0c5d0a00a780a64fe39b4079004ee75b0c66468102a1691d3179f116d` |
-| 8 | `theorem` | [isCoveringMapOn_zpow](../../../../FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/iscoveringmapon-zpow.md) | 89 | `result-track:15376ea406169eff47a69a432abeb69cbc3bccbcc623b4c221c33b2b13a87c3b` |
-| 9 | `theorem` | [isQuotientCoveringMap_npow](../../../../FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/isquotientcoveringmap-npow.md) | 100 | `result-track:71f4e5db8cdb7e5b81bb1b8b92d2f98aaa52fb2b6791724b3d608fa29de8775d` |
-| 10 | `theorem` | [Complex.isQuotientCoveringMap_npow](../../../../FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/complex-isquotientcoveringmap-npow.md) | 116 | `result-track:499c83a1de16f8ed0de14c1ec5f0fe7eb1a5ff7482bb7c95d3bfef5648e8ab9a` |
-| 11 | `theorem` | [isQuotientCoveringMap_zpow](../../../../FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/isquotientcoveringmap-zpow.md) | 120 | `result-track:db96b79882488e8963bb4a6d0c37b3bb233188b73ede4aa3acb1f68733c8eea1` |
+| 1 | `theorem` | [isAddQuotientCoveringMap_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/isaddquotientcoveringmap-exp.md) | 31 | `result-track:6337a6f39762bb1f4f2ba5694ce8bc7159fec8c776996d7649a8194a08a0f7d0` |
+| 2 | `theorem` | [isCoveringMap_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/iscoveringmap-exp.md) | 42 | `result-track:a66356ded85ab27fec07b7ac72551e972671f7fc9ae3e929bc2db7a19acb48ba` |
+| 3 | `theorem` | [isCoveringMapOn_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/iscoveringmapon-exp.md) | 45 | `result-track:5f5ed5a8627d4cd102ce25658d10a2653e04483e04f9338741ea60e54f576222` |
+| 4 | `theorem` | [Polynomial.isCoveringMapOn_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/polynomial-iscoveringmapon-eval.md) | 56 | `result-track:d4156c0aa5243cfc80175b2b588d89cdbf477d9f9be8c6aebadf7db4ff9d4aa2` |
+| 5 | `theorem` | [isCoveringMapOn_npow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/iscoveringmapon-npow.md) | 65 | `result-track:04a1b555917d32567d5acf6823a9d0dba960f8216084f49628ebf1037c8c0d4b` |
+| 6 | `theorem` | [isCoveringMap_npow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/iscoveringmap-npow.md) | 73 | `result-track:bde6357e147e02f486aa9a3a78cbe696048e38f725ab9c6d245559022455fd08` |
+| 7 | `theorem` | [isCoveringMap_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/iscoveringmap-zpow.md) | 81 | `result-track:98a83bf0c5d0a00a780a64fe39b4079004ee75b0c66468102a1691d3179f116d` |
+| 8 | `theorem` | [isCoveringMapOn_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/iscoveringmapon-zpow.md) | 89 | `result-track:15376ea406169eff47a69a432abeb69cbc3bccbcc623b4c221c33b2b13a87c3b` |
+| 9 | `theorem` | [isQuotientCoveringMap_npow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/isquotientcoveringmap-npow.md) | 100 | `result-track:71f4e5db8cdb7e5b81bb1b8b92d2f98aaa52fb2b6791724b3d608fa29de8775d` |
+| 10 | `theorem` | [Complex.isQuotientCoveringMap_npow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/complex-isquotientcoveringmap-npow.md) | 116 | `result-track:499c83a1de16f8ed0de14c1ec5f0fe7eb1a5ff7482bb7c95d3bfef5648e8ab9a` |
+| 11 | `theorem` | [isQuotientCoveringMap_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CoveringMapPublic.lean/declarations/isquotientcoveringmap-zpow.md) | 120 | `result-track:db96b79882488e8963bb4a6d0c37b3bb233188b73ede4aa3acb1f68733c8eea1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

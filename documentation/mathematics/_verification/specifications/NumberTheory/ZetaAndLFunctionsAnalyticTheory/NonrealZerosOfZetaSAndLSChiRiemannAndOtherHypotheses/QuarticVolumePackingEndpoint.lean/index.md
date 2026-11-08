@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuarticVolumePackingEndpoint.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuarticVolumePackingEndpoint.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuarticVolumePackingEndpoint.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuarticVolumePackingEndpoint.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.SafeShiftQuarticFactorization`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticFactorization.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.SafeShiftQuarticFactorization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticFactorization.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [QuarticVolumePackingCertificateAtZero](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuarticVolumePackingEndpoint.lean/declarations/quarticvolumepackingcertificateatzero.md) | 54 | `declaration-track:d57a52ac17c09452d3102ab9a139a9cc02a9a73eb2fe7a04169f77c118e09a64` |
-| 2 | `theorem` | [QuarticVolumePackingCertificateAtZero.scaledOccupied_tendsto](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuarticVolumePackingEndpoint.lean/declarations/quarticvolumepackingcertificateatzero-scaledoccupied-tendsto.md) | 76 | `result-track:7bb60a7c77a8541eeff9d234b9b33316f1a39aafd6d79a572f742800fa8ac948` |
-| 3 | `theorem` | [QuarticVolumePackingCertificateAtZero.scaledOccupied_tendsto_zero](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuarticVolumePackingEndpoint.lean/declarations/quarticvolumepackingcertificateatzero-scaledoccupied-tendsto-zero.md) | 114 | `result-track:b204b88d6a713c5a7c2ca92d8c7e62733e6e9fd9d1573cb58c52f10790a9f725` |
-| 4 | `theorem` | [QuarticVolumePackingCertificateAtZero.forces_critical_line](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuarticVolumePackingEndpoint.lean/declarations/quarticvolumepackingcertificateatzero-forces-critical-line.md) | 133 | `result-track:cdee74f32a081e660d773c53724672b89c05b2c7b3bb129a83a9f7e26de4e812` |
-| 5 | `def` | [QuarticVolumePackingClaim](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuarticVolumePackingEndpoint.lean/declarations/quarticvolumepackingclaim.md) | 161 | `declaration-track:e6d42edcfe60f67b15942657e683e597df9560b29c1b59be90622598f9de819f` |
-| 6 | `theorem` | [riemannHypothesis_of_quarticVolumePacking](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuarticVolumePackingEndpoint.lean/declarations/riemannhypothesis-of-quarticvolumepacking.md) | 166 | `result-track:fc5a2c80476d0ff2a7cc261fa1b8842793fae5b9a65816fb85ac4e02b008ac8f` |
+| 1 | `structure` | [QuarticVolumePackingCertificateAtZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuarticVolumePackingEndpoint.lean/declarations/quarticvolumepackingcertificateatzero.md) | 54 | `declaration-track:d57a52ac17c09452d3102ab9a139a9cc02a9a73eb2fe7a04169f77c118e09a64` |
+| 2 | `theorem` | [QuarticVolumePackingCertificateAtZero.scaledOccupied_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuarticVolumePackingEndpoint.lean/declarations/quarticvolumepackingcertificateatzero-scaledoccupied-tendsto.md) | 76 | `result-track:7bb60a7c77a8541eeff9d234b9b33316f1a39aafd6d79a572f742800fa8ac948` |
+| 3 | `theorem` | [QuarticVolumePackingCertificateAtZero.scaledOccupied_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuarticVolumePackingEndpoint.lean/declarations/quarticvolumepackingcertificateatzero-scaledoccupied-tendsto-zero.md) | 114 | `result-track:b204b88d6a713c5a7c2ca92d8c7e62733e6e9fd9d1573cb58c52f10790a9f725` |
+| 4 | `theorem` | [QuarticVolumePackingCertificateAtZero.forces_critical_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuarticVolumePackingEndpoint.lean/declarations/quarticvolumepackingcertificateatzero-forces-critical-line.md) | 133 | `result-track:cdee74f32a081e660d773c53724672b89c05b2c7b3bb129a83a9f7e26de4e812` |
+| 5 | `def` | [QuarticVolumePackingClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuarticVolumePackingEndpoint.lean/declarations/quarticvolumepackingclaim.md) | 161 | `declaration-track:e6d42edcfe60f67b15942657e683e597df9560b29c1b59be90622598f9de819f` |
+| 6 | `theorem` | [riemannHypothesis_of_quarticVolumePacking](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuarticVolumePackingEndpoint.lean/declarations/riemannhypothesis-of-quarticvolumepacking.md) | 166 | `result-track:fc5a2c80476d0ff2a7cc261fa1b8842793fae5b9a65816fb85ac4e02b008ac8f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

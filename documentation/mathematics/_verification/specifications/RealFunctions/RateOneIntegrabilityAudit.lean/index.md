@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/RateOneIntegrabilityAudit.lean/index.md) · [Full source](../../../../RealFunctions/RateOneIntegrabilityAudit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RateOneIntegrabilityAudit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RateOneIntegrabilityAudit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rate_one_integrableOn_Ioc](../../../../RealFunctions/RateOneIntegrabilityAudit.lean/declarations/rate-one-integrableon-ioc.md) | 15 | `result-track:ddcb3b324ae8d8a5d4be1fae7af8e8b395d820895bb3441c325622e92a4e8da1` |
-| 2 | `theorem` | [rate_one_integrable_of_eventual_majorant](../../../../RealFunctions/RateOneIntegrabilityAudit.lean/declarations/rate-one-integrable-of-eventual-majorant.md) | 37 | `result-track:df3ecd34ed30ad761fc9f03b752abe3a79e10139dd0378ecc26204893476c8ba` |
-| 3 | `theorem` | [polynomial_stretched_integrable](../../../../RealFunctions/RateOneIntegrabilityAudit.lean/declarations/polynomial-stretched-integrable.md) | 71 | `result-track:63ae997308d44b51b1dec7b10bff98301470bcec6d1a7075014264f92a52e92a` |
-| 4 | `theorem` | [rate_one_majorant_integrable](../../../../RealFunctions/RateOneIntegrabilityAudit.lean/declarations/rate-one-majorant-integrable.md) | 82 | `result-track:2854ef5d9e2cc503ce19f05c8097b6f9ec4bb8fce439c8c056b1bb11ba97f5f2` |
-| 5 | `theorem` | [rate_one_integrable_of_stretched_majorant](../../../../RealFunctions/RateOneIntegrabilityAudit.lean/declarations/rate-one-integrable-of-stretched-majorant.md) | 97 | `result-track:1b5662846749288ec6d04d1662dc392fb236ab8a26b2b286bd2213fa9bd1af02` |
-| 6 | `theorem` | [actual_scale_le](../../../../RealFunctions/RateOneIntegrabilityAudit.lean/declarations/actual-scale-le.md) | 105 | `result-track:f6066c888a9c719df5a02eb21a408d4cf6452e4ecf21d668dde1a8eb15565bd4` |
-| 7 | `theorem` | [weighted_negativeSource_le_of_pairing_bound](../../../../RealFunctions/RateOneIntegrabilityAudit.lean/declarations/weighted-negativesource-le-of-pairing-bound.md) | 116 | `result-track:5a0148162a186e77735f54a85ea4fe2aebadf902b86e71a00ce387c89c0fe919` |
-| 8 | `theorem` | [rate_one_integrable_of_pairing_bound](../../../../RealFunctions/RateOneIntegrabilityAudit.lean/declarations/rate-one-integrable-of-pairing-bound.md) | 166 | `result-track:49bd679e4db09ac5a32a13f3dc867aeeb70a7e0197971702b5efc7d3f31db2fd` |
-| 9 | `theorem` | [integrable_of_one_le_rate](../../../../RealFunctions/RateOneIntegrabilityAudit.lean/declarations/integrable-of-one-le-rate.md) | 177 | `result-track:3ebdc4dedebf02e87b145d89a85db7e644f9b4c66e5c89e020be74f0b81a904a` |
+| 1 | `theorem` | [rate_one_integrableOn_Ioc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RateOneIntegrabilityAudit.lean/declarations/rate-one-integrableon-ioc.md) | 15 | `result-track:ddcb3b324ae8d8a5d4be1fae7af8e8b395d820895bb3441c325622e92a4e8da1` |
+| 2 | `theorem` | [rate_one_integrable_of_eventual_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RateOneIntegrabilityAudit.lean/declarations/rate-one-integrable-of-eventual-majorant.md) | 37 | `result-track:df3ecd34ed30ad761fc9f03b752abe3a79e10139dd0378ecc26204893476c8ba` |
+| 3 | `theorem` | [polynomial_stretched_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RateOneIntegrabilityAudit.lean/declarations/polynomial-stretched-integrable.md) | 71 | `result-track:63ae997308d44b51b1dec7b10bff98301470bcec6d1a7075014264f92a52e92a` |
+| 4 | `theorem` | [rate_one_majorant_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RateOneIntegrabilityAudit.lean/declarations/rate-one-majorant-integrable.md) | 82 | `result-track:2854ef5d9e2cc503ce19f05c8097b6f9ec4bb8fce439c8c056b1bb11ba97f5f2` |
+| 5 | `theorem` | [rate_one_integrable_of_stretched_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RateOneIntegrabilityAudit.lean/declarations/rate-one-integrable-of-stretched-majorant.md) | 97 | `result-track:1b5662846749288ec6d04d1662dc392fb236ab8a26b2b286bd2213fa9bd1af02` |
+| 6 | `theorem` | [actual_scale_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RateOneIntegrabilityAudit.lean/declarations/actual-scale-le.md) | 105 | `result-track:f6066c888a9c719df5a02eb21a408d4cf6452e4ecf21d668dde1a8eb15565bd4` |
+| 7 | `theorem` | [weighted_negativeSource_le_of_pairing_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RateOneIntegrabilityAudit.lean/declarations/weighted-negativesource-le-of-pairing-bound.md) | 116 | `result-track:5a0148162a186e77735f54a85ea4fe2aebadf902b86e71a00ce387c89c0fe919` |
+| 8 | `theorem` | [rate_one_integrable_of_pairing_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RateOneIntegrabilityAudit.lean/declarations/rate-one-integrable-of-pairing-bound.md) | 166 | `result-track:49bd679e4db09ac5a32a13f3dc867aeeb70a7e0197971702b5efc7d3f31db2fd` |
+| 9 | `theorem` | [integrable_of_one_le_rate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RateOneIntegrabilityAudit.lean/declarations/integrable-of-one-le-rate.md) | 177 | `result-track:3ebdc4dedebf02e87b145d89a85db7e644f9b4c66e5c89e020be74f0b81a904a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SourceCompensatedProjection.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SourceCompensatedProjection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SourceCompensatedProjection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SourceCompensatedProjection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [compensatedInteraction_inner_symmetric](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SourceCompensatedProjection.lean/declarations/compensatedinteraction-inner-symmetric.md) | 37 | `result-track:7503e4845620a4b284021aa21d1ffd6a11797a114c47fd159e2088bee6c0803c` |
-| 2 | `theorem` | [compensatedInteraction_selfAdjoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SourceCompensatedProjection.lean/declarations/compensatedinteraction-selfadjoint.md) | 43 | `result-track:0a062f32deec632406ab55fa7dd6666d169b99805a1b3244f24da4425c0f70e4` |
-| 3 | `theorem` | [compensated_abs_le_of_projection_rows](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SourceCompensatedProjection.lean/declarations/compensated-abs-le-of-projection-rows.md) | 51 | `result-track:7bdd3336047c21efb9e090f84bcd57f310c4c666c1b13d9ef6857a3647387959` |
-| 4 | `theorem` | [estimate_of_uniform_projection_rows](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SourceCompensatedProjection.lean/declarations/estimate-of-uniform-projection-rows.md) | 63 | `result-track:72aa60e71043c8d4f6925404c31566af61099200cc724e741192094d4aa24f9d` |
+| 1 | `theorem` | [compensatedInteraction_inner_symmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SourceCompensatedProjection.lean/declarations/compensatedinteraction-inner-symmetric.md) | 37 | `result-track:7503e4845620a4b284021aa21d1ffd6a11797a114c47fd159e2088bee6c0803c` |
+| 2 | `theorem` | [compensatedInteraction_selfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SourceCompensatedProjection.lean/declarations/compensatedinteraction-selfadjoint.md) | 43 | `result-track:0a062f32deec632406ab55fa7dd6666d169b99805a1b3244f24da4425c0f70e4` |
+| 3 | `theorem` | [compensated_abs_le_of_projection_rows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SourceCompensatedProjection.lean/declarations/compensated-abs-le-of-projection-rows.md) | 51 | `result-track:7bdd3336047c21efb9e090f84bcd57f310c4c666c1b13d9ef6857a3647387959` |
+| 4 | `theorem` | [estimate_of_uniform_projection_rows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SourceCompensatedProjection.lean/declarations/estimate-of-uniform-projection-rows.md) | 63 | `result-track:72aa60e71043c8d4f6925404c31566af61099200cc724e741192094d4aa24f9d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

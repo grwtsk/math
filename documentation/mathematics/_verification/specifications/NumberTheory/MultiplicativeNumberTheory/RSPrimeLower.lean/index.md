@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/RSPrimeLower.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/RSPrimeLower.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RSPrimeLower.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RSPrimeLower.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [count_prime_le_imp_le_nth](../../../../../NumberTheory/MultiplicativeNumberTheory/RSPrimeLower.lean/declarations/count-prime-le-imp-le-nth.md) | 9 | `result-track:8cb3b8f97e5c82eb120e1b28b99e6ef363e36b9cbf523b3aca519755442ab7eb` |
-| 2 | `lemma` | [nth_prime_gt_bound](../../../../../NumberTheory/MultiplicativeNumberTheory/RSPrimeLower.lean/declarations/nth-prime-gt-bound.md) | 17 | `result-track:eaa1cd72c9f7544bfcb42d02e7c5a358610c349a69b04d72f62b83c10703d475` |
-| 3 | `lemma` | [p_n_lower_small](../../../../../NumberTheory/MultiplicativeNumberTheory/RSPrimeLower.lean/declarations/p-n-lower-small.md) | 23 | `result-track:3acd648900ae0938547ee49bfbfdb8598b365fdb341f957cd853bdc1d6464c2f` |
-| 4 | `lemma` | [pi_nth_prime'](../../../../../NumberTheory/MultiplicativeNumberTheory/RSPrimeLower.lean/declarations/pi-nth-prime.md) | 57 | `result-track:fc065a5bf899e2ca35169a8d002399b8f489b7ce55960a8b1c31095fb79298c4` |
-| 5 | `lemma` | [p_n_lower_large](../../../../../NumberTheory/MultiplicativeNumberTheory/RSPrimeLower.lean/declarations/p-n-lower-large.md) | 66 | `result-track:fccbfd096cbf6bdc57a8b020f214bd586c3b729f3811b164825fe91639caf4d8` |
+| 1 | `lemma` | [count_prime_le_imp_le_nth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RSPrimeLower.lean/declarations/count-prime-le-imp-le-nth.md) | 9 | `result-track:8cb3b8f97e5c82eb120e1b28b99e6ef363e36b9cbf523b3aca519755442ab7eb` |
+| 2 | `lemma` | [nth_prime_gt_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RSPrimeLower.lean/declarations/nth-prime-gt-bound.md) | 17 | `result-track:eaa1cd72c9f7544bfcb42d02e7c5a358610c349a69b04d72f62b83c10703d475` |
+| 3 | `lemma` | [p_n_lower_small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RSPrimeLower.lean/declarations/p-n-lower-small.md) | 23 | `result-track:3acd648900ae0938547ee49bfbfdb8598b365fdb341f957cd853bdc1d6464c2f` |
+| 4 | `lemma` | [pi_nth_prime'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RSPrimeLower.lean/declarations/pi-nth-prime.md) | 57 | `result-track:fc065a5bf899e2ca35169a8d002399b8f489b7ce55960a8b1c31095fb79298c4` |
+| 5 | `lemma` | [p_n_lower_large](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RSPrimeLower.lean/declarations/p-n-lower-large.md) | 66 | `result-track:fccbfd096cbf6bdc57a8b020f214bd586c3b729f3811b164825fe91639caf4d8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

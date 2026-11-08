@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PseudoRealNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/PseudoRealNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PseudoRealNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PseudoRealNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [dist_left_le_of_mem_uIcc](../../../../GeneralTopology/PseudoRealNamespaced.lean/declarations/dist-left-le-of-mem-uicc.md) | 28 | `result-track:57e957c60dd4b900cb019bc1bd36ff3043ff2d63848a27b8e8475afd5ee1edf2` |
-| 2 | `lemma` | [dist_right_le_of_mem_uIcc](../../../../GeneralTopology/PseudoRealNamespaced.lean/declarations/dist-right-le-of-mem-uicc.md) | 31 | `result-track:91b73e35035aaf6cc66174006b788f48185cd53f1ebd7b514331d58a9e18218f` |
-| 3 | `lemma` | [dist_le_of_mem_uIcc](../../../../GeneralTopology/PseudoRealNamespaced.lean/declarations/dist-le-of-mem-uicc.md) | 34 | `result-track:a8fdcd4cc992c835d95f3c6eaec7fb147b447f50272db5e3bd657a2c354cff5b` |
-| 4 | `lemma` | [dist_le_of_mem_Icc](../../../../GeneralTopology/PseudoRealNamespaced.lean/declarations/dist-le-of-mem-icc.md) | 38 | `result-track:75c6a4b53ef73718ad81adf6b4fb834542393c809a91ebd71733c9bfe4d8edd5` |
-| 5 | `lemma` | [dist_le_of_mem_Icc_01](../../../../GeneralTopology/PseudoRealNamespaced.lean/declarations/dist-le-of-mem-icc-01.md) | 43 | `result-track:064adbf6431b9fcb7cc2eecbf1f331d6aa726ba9e174074cfe01dcea7994c61b` |
-| 6 | `lemma` | [dist_le_of_mem_pi_Icc](../../../../GeneralTopology/PseudoRealNamespaced.lean/declarations/dist-le-of-mem-pi-icc.md) | 48 | `result-track:8eda94da547018065c1d65a41a09ef92db7ae74a838dc3792e1e643c38067a40` |
+| 1 | `lemma` | [dist_left_le_of_mem_uIcc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PseudoRealNamespaced.lean/declarations/dist-left-le-of-mem-uicc.md) | 28 | `result-track:57e957c60dd4b900cb019bc1bd36ff3043ff2d63848a27b8e8475afd5ee1edf2` |
+| 2 | `lemma` | [dist_right_le_of_mem_uIcc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PseudoRealNamespaced.lean/declarations/dist-right-le-of-mem-uicc.md) | 31 | `result-track:91b73e35035aaf6cc66174006b788f48185cd53f1ebd7b514331d58a9e18218f` |
+| 3 | `lemma` | [dist_le_of_mem_uIcc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PseudoRealNamespaced.lean/declarations/dist-le-of-mem-uicc.md) | 34 | `result-track:a8fdcd4cc992c835d95f3c6eaec7fb147b447f50272db5e3bd657a2c354cff5b` |
+| 4 | `lemma` | [dist_le_of_mem_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PseudoRealNamespaced.lean/declarations/dist-le-of-mem-icc.md) | 38 | `result-track:75c6a4b53ef73718ad81adf6b4fb834542393c809a91ebd71733c9bfe4d8edd5` |
+| 5 | `lemma` | [dist_le_of_mem_Icc_01](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PseudoRealNamespaced.lean/declarations/dist-le-of-mem-icc-01.md) | 43 | `result-track:064adbf6431b9fcb7cc2eecbf1f331d6aa726ba9e174074cfe01dcea7994c61b` |
+| 6 | `lemma` | [dist_le_of_mem_pi_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PseudoRealNamespaced.lean/declarations/dist-le-of-mem-pi-icc.md) | 48 | `result-track:8eda94da547018065c1d65a41a09ef92db7ae74a838dc3792e1e643c38067a40` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

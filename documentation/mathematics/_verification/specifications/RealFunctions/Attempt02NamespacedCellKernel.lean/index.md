@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Attempt02NamespacedCellKernel.lean/index.md) · [Full source](../../../../RealFunctions/Attempt02NamespacedCellKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Attempt02NamespacedCellKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Attempt02NamespacedCellKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cellKernel](../../../../RealFunctions/Attempt02NamespacedCellKernel.lean/declarations/cellkernel.md) | 21 | `declaration-track:fad0a4a86eabc176ed33ee331c4eeda24e4ea5ba313c6f54cde742b30e86f7e9` |
-| 2 | `def` | [cellDerivative](../../../../RealFunctions/Attempt02NamespacedCellKernel.lean/declarations/cellderivative.md) | 22 | `declaration-track:af053f28c7c6b8d8df34f0482f4827e83b1a666fb4969eb3e21904f55d9a3f96` |
-| 3 | `def` | [derivativeMajorant](../../../../RealFunctions/Attempt02NamespacedCellKernel.lean/declarations/derivativemajorant.md) | 23 | `declaration-track:5dd5126c969b6933e6f78b04d61b80e715ee60cc8e9e9d6b8b97e598be02af86` |
-| 4 | `theorem` | [cellKernel_integrable](../../../../RealFunctions/Attempt02NamespacedCellKernel.lean/declarations/cellkernel-integrable.md) | 25 | `result-track:5e58ac28976a6ce03d6a1a3cdebbbe19453829cf42b2836bf97224613cb64e3f` |
-| 5 | `theorem` | [cellDerivative_integrable](../../../../RealFunctions/Attempt02NamespacedCellKernel.lean/declarations/cellderivative-integrable.md) | 35 | `result-track:e89244d2fa00dbd72b0e8d028e912ad0d45e33c0087699b9d7d9e7006b2fabe5` |
-| 6 | `theorem` | [cellKernel_hasDerivAt](../../../../RealFunctions/Attempt02NamespacedCellKernel.lean/declarations/cellkernel-hasderivat.md) | 46 | `result-track:5263194f4115569237a74c25890df6927bd0b987054d18837ca279a94d850a6e` |
-| 7 | `theorem` | [cellDerivative_bound](../../../../RealFunctions/Attempt02NamespacedCellKernel.lean/declarations/cellderivative-bound.md) | 62 | `result-track:fb6ec1f0229c23fb188d11fd58c0450b378c7b9e35a1906a9cf4262df781234c` |
+| 1 | `def` | [cellKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Attempt02NamespacedCellKernel.lean/declarations/cellkernel.md) | 21 | `declaration-track:fad0a4a86eabc176ed33ee331c4eeda24e4ea5ba313c6f54cde742b30e86f7e9` |
+| 2 | `def` | [cellDerivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Attempt02NamespacedCellKernel.lean/declarations/cellderivative.md) | 22 | `declaration-track:af053f28c7c6b8d8df34f0482f4827e83b1a666fb4969eb3e21904f55d9a3f96` |
+| 3 | `def` | [derivativeMajorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Attempt02NamespacedCellKernel.lean/declarations/derivativemajorant.md) | 23 | `declaration-track:5dd5126c969b6933e6f78b04d61b80e715ee60cc8e9e9d6b8b97e598be02af86` |
+| 4 | `theorem` | [cellKernel_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Attempt02NamespacedCellKernel.lean/declarations/cellkernel-integrable.md) | 25 | `result-track:5e58ac28976a6ce03d6a1a3cdebbbe19453829cf42b2836bf97224613cb64e3f` |
+| 5 | `theorem` | [cellDerivative_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Attempt02NamespacedCellKernel.lean/declarations/cellderivative-integrable.md) | 35 | `result-track:e89244d2fa00dbd72b0e8d028e912ad0d45e33c0087699b9d7d9e7006b2fabe5` |
+| 6 | `theorem` | [cellKernel_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Attempt02NamespacedCellKernel.lean/declarations/cellkernel-hasderivat.md) | 46 | `result-track:5263194f4115569237a74c25890df6927bd0b987054d18837ca279a94d850a6e` |
+| 7 | `theorem` | [cellDerivative_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Attempt02NamespacedCellKernel.lean/declarations/cellderivative-bound.md) | 62 | `result-track:fb6ec1f0229c23fb188d11fd58c0450b378c7b9e35a1906a9cf4262df781234c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

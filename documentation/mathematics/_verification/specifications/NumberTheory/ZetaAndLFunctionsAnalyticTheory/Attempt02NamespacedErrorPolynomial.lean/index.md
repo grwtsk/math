@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [errorPolynomial](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/declarations/errorpolynomial.md) | 24 | `declaration-track:9b87fcdc51c0fb06ce6bd95893ec6c6215a94cb8a098f68567ee00907d058335` |
-| 2 | `def` | [normalizationRatio](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/declarations/normalizationratio.md) | 28 | `declaration-track:e566651327e1fb0c4f21c2a37cb1a5895c9707752177d675f4a88d483f71548e` |
-| 3 | `def` | [positiveEndpoint](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/declarations/positiveendpoint.md) | 31 | `declaration-track:851e4ae2a02bf6d65c5b8d7a3a669d91dab7f6db15466b7b866a2c02c8f64158` |
-| 4 | `def` | [reflectedEndpoint](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/declarations/reflectedendpoint.md) | 35 | `declaration-track:324c38041d8f7cca39a149ffa0093628fb8e5b158e7c10f1cfd97e5515d7621d` |
-| 5 | `theorem` | [errorPolynomial_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/declarations/errorpolynomial-nonneg.md) | 39 | `result-track:8023441d1a04192ece6e8dc58ccaa5ef7f1728c737f22a6839344199c7ec953a` |
-| 6 | `theorem` | [normalization_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/declarations/normalization-bounds.md) | 42 | `result-track:6c85c0a7d7985b14702f47d398f97c3e3e281a2ef964f4291b17f8e1582c5373` |
-| 7 | `theorem` | [normalizationRatio_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/declarations/normalizationratio-bounds.md) | 66 | `result-track:12408d7f853db74c2de64308c78163fc6fed8366a54ee0e944d6f94b74c26bab` |
-| 8 | `theorem` | [normalizationRatio_deficit](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/declarations/normalizationratio-deficit.md) | 76 | `result-track:d529e77946eeb921dd622b1871c4aaddd057980b7775a5fda4579d69e8bb0ec0` |
+| 1 | `def` | [errorPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/declarations/errorpolynomial.md) | 24 | `declaration-track:9b87fcdc51c0fb06ce6bd95893ec6c6215a94cb8a098f68567ee00907d058335` |
+| 2 | `def` | [normalizationRatio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/declarations/normalizationratio.md) | 28 | `declaration-track:e566651327e1fb0c4f21c2a37cb1a5895c9707752177d675f4a88d483f71548e` |
+| 3 | `def` | [positiveEndpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/declarations/positiveendpoint.md) | 31 | `declaration-track:851e4ae2a02bf6d65c5b8d7a3a669d91dab7f6db15466b7b866a2c02c8f64158` |
+| 4 | `def` | [reflectedEndpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/declarations/reflectedendpoint.md) | 35 | `declaration-track:324c38041d8f7cca39a149ffa0093628fb8e5b158e7c10f1cfd97e5515d7621d` |
+| 5 | `theorem` | [errorPolynomial_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/declarations/errorpolynomial-nonneg.md) | 39 | `result-track:8023441d1a04192ece6e8dc58ccaa5ef7f1728c737f22a6839344199c7ec953a` |
+| 6 | `theorem` | [normalization_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/declarations/normalization-bounds.md) | 42 | `result-track:6c85c0a7d7985b14702f47d398f97c3e3e281a2ef964f4291b17f8e1582c5373` |
+| 7 | `theorem` | [normalizationRatio_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/declarations/normalizationratio-bounds.md) | 66 | `result-track:12408d7f853db74c2de64308c78163fc6fed8366a54ee0e944d6f94b74c26bab` |
+| 8 | `theorem` | [normalizationRatio_deficit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02NamespacedErrorPolynomial.lean/declarations/normalizationratio-deficit.md) | 76 | `result-track:d529e77946eeb921dd622b1871c4aaddd057980b7775a5fda4579d69e8bb0ec0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

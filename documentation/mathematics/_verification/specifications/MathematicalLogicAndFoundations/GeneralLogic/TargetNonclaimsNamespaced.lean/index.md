@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TargetNonclaimsNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TargetNonclaimsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TargetNonclaimsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TargetNonclaimsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [targetNonclaimProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TargetNonclaimsNamespaced.lean/declarations/targetnonclaimprofile.md) | 16 | `declaration-track:e02f2d09c6040bc4fdbe76327a69a9f2b03318de2eae6cf2c2324dd44ca417bd` |
-| 2 | `theorem` | [targetNonclaimProfile_true](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TargetNonclaimsNamespaced.lean/declarations/targetnonclaimprofile-true.md) | 21 | `result-track:bb58c7f782773054a2d524faa2bb7404955367f821494be20c74975442c57e11` |
+| 1 | `def` | [targetNonclaimProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TargetNonclaimsNamespaced.lean/declarations/targetnonclaimprofile.md) | 16 | `declaration-track:e02f2d09c6040bc4fdbe76327a69a9f2b03318de2eae6cf2c2324dd44ca417bd` |
+| 2 | `theorem` | [targetNonclaimProfile_true](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TargetNonclaimsNamespaced.lean/declarations/targetnonclaimprofile-true.md) | 21 | `result-track:bb58c7f782773054a2d524faa2bb7404955367f821494be20c74975442c57e11` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

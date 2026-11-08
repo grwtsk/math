@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Env.lean/index.md) · [Full source](../../../../GeneralTopology/Env.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Env.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Env.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [nonEmptyEnvValue](../../../../GeneralTopology/Env.lean/declarations/nonemptyenvvalue.md) | 25 | `declaration-track:74f45293c946e8dfbfbe7729ad78cc2081eddf423fdf4613e82700b00b57de28` |
-| 2 | `def` | [getEnvNonEmpty](../../../../GeneralTopology/Env.lean/declarations/getenvnonempty.md) | 29 | `declaration-track:9ed55d13bcbc8aaf6a580b29fef4e612f7e49e1f4f6b56a8f3e40305d9d90bec` |
-| 3 | `def` | [normalizeBaseURL](../../../../GeneralTopology/Env.lean/declarations/normalizebaseurl.md) | 37 | `declaration-track:0cb17fb8d63da979b8041bc0727d004eab2f782bec51b7166986550a5e28e594` |
-| 4 | `def` | [parseEnvFlag](../../../../GeneralTopology/Env.lean/declarations/parseenvflag.md) | 46 | `declaration-track:cfa1b686143b48aeff3456da0e4806640797308b0cdccba765f27cee844b6920` |
-| 5 | `def` | [getEnvFlag](../../../../GeneralTopology/Env.lean/declarations/getenvflag.md) | 57 | `declaration-track:bc644916a7afa8df8f36a23b339d0552281371d62d3c182c701fff9d033e2ed1` |
+| 1 | `def` | [nonEmptyEnvValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Env.lean/declarations/nonemptyenvvalue.md) | 25 | `declaration-track:74f45293c946e8dfbfbe7729ad78cc2081eddf423fdf4613e82700b00b57de28` |
+| 2 | `def` | [getEnvNonEmpty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Env.lean/declarations/getenvnonempty.md) | 29 | `declaration-track:9ed55d13bcbc8aaf6a580b29fef4e612f7e49e1f4f6b56a8f3e40305d9d90bec` |
+| 3 | `def` | [normalizeBaseURL](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Env.lean/declarations/normalizebaseurl.md) | 37 | `declaration-track:0cb17fb8d63da979b8041bc0727d004eab2f782bec51b7166986550a5e28e594` |
+| 4 | `def` | [parseEnvFlag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Env.lean/declarations/parseenvflag.md) | 46 | `declaration-track:cfa1b686143b48aeff3456da0e4806640797308b0cdccba765f27cee844b6920` |
+| 5 | `def` | [getEnvFlag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Env.lean/declarations/getenvflag.md) | 57 | `declaration-track:bc644916a7afa8df8f36a23b339d0552281371d62d3c182c701fff9d033e2ed1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

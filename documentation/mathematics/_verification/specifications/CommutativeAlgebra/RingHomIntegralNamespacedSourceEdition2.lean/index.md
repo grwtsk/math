@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingHomIntegralNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingHomIntegralNamespacedSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomIntegralNamespacedSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomIntegralNamespacedSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isIntegral_stableUnderComposition](../../../../CommutativeAlgebra/RingHomIntegralNamespacedSourceEdition2.lean/declarations/isintegral-stableundercomposition.md) | 32 | `result-track:0d68462db423133599a7d5d6ee69be2f70b06772bb96c1cd4e4cf1c9ae1e9a52` |
-| 2 | `theorem` | [isIntegral_respectsIso](../../../../CommutativeAlgebra/RingHomIntegralNamespacedSourceEdition2.lean/declarations/isintegral-respectsiso.md) | 36 | `result-track:36a9d5798e677b7bfd943fb4e43d733ec06ab935035c0f8b4d22dc6738a7ce85` |
-| 3 | `theorem` | [isIntegral_stableUnderBaseChange](../../../../CommutativeAlgebra/RingHomIntegralNamespacedSourceEdition2.lean/declarations/isintegral-stableunderbasechange.md) | 43 | `result-track:5b52ab02c52ea2e517b4184efa9526f7f460f0eba6faa0cea919778397a28c5a` |
+| 1 | `theorem` | [isIntegral_stableUnderComposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomIntegralNamespacedSourceEdition2.lean/declarations/isintegral-stableundercomposition.md) | 32 | `result-track:0d68462db423133599a7d5d6ee69be2f70b06772bb96c1cd4e4cf1c9ae1e9a52` |
+| 2 | `theorem` | [isIntegral_respectsIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomIntegralNamespacedSourceEdition2.lean/declarations/isintegral-respectsiso.md) | 36 | `result-track:36a9d5798e677b7bfd943fb4e43d733ec06ab935035c0f8b4d22dc6738a7ce85` |
+| 3 | `theorem` | [isIntegral_stableUnderBaseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomIntegralNamespacedSourceEdition2.lean/declarations/isintegral-stableunderbasechange.md) | 43 | `result-track:5b52ab02c52ea2e517b4184efa9526f7f460f0eba6faa0cea919778397a28c5a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

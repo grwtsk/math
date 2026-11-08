@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSpaceInfiniteSumNamespacedPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSpaceInfiniteSumNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSpaceInfiniteSumNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSpaceInfiniteSumNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [summable_norm_of_tsum_eLpNorm_ne_top](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSpaceInfiniteSumNamespacedPublic.lean/declarations/summable-norm-of-tsum-elpnorm-ne-top.md) | 38 | `result-track:0e598c4a658b87ac0d2d0064643125e98e6a5b37dfc2e8caba179c36cbba0ec2` |
-| 2 | `theorem` | [hasSum_coeFn_tsum_nat](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSpaceInfiniteSumNamespacedPublic.lean/declarations/hassum-coefn-tsum-nat.md) | 118 | `result-track:c487e5df0a91e04a132a8b016921a73c5618e5f1646c492cc345eec93dd91f3f` |
-| 3 | `theorem` | [hasSum_coeFn_tsum](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSpaceInfiniteSumNamespacedPublic.lean/declarations/hassum-coefn-tsum.md) | 137 | `result-track:17094f26a19ad3f82afa0ce6bfa5c49610625a8edce7731cf29a250c4febcad7` |
-| 4 | `theorem` | [coeFn_tsum](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSpaceInfiniteSumNamespacedPublic.lean/declarations/coefn-tsum.md) | 154 | `result-track:eddb4e0ef6fbab95da6e4838f1ec66842c2a5ca9c9f33514f97316f0654e6fa4` |
+| 1 | `theorem` | [summable_norm_of_tsum_eLpNorm_ne_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSpaceInfiniteSumNamespacedPublic.lean/declarations/summable-norm-of-tsum-elpnorm-ne-top.md) | 38 | `result-track:0e598c4a658b87ac0d2d0064643125e98e6a5b37dfc2e8caba179c36cbba0ec2` |
+| 2 | `theorem` | [hasSum_coeFn_tsum_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSpaceInfiniteSumNamespacedPublic.lean/declarations/hassum-coefn-tsum-nat.md) | 118 | `result-track:c487e5df0a91e04a132a8b016921a73c5618e5f1646c492cc345eec93dd91f3f` |
+| 3 | `theorem` | [hasSum_coeFn_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSpaceInfiniteSumNamespacedPublic.lean/declarations/hassum-coefn-tsum.md) | 137 | `result-track:17094f26a19ad3f82afa0ce6bfa5c49610625a8edce7731cf29a250c4febcad7` |
+| 4 | `theorem` | [coeFn_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSpaceInfiniteSumNamespacedPublic.lean/declarations/coefn-tsum.md) | 154 | `result-track:eddb4e0ef6fbab95da6e4838f1ec66842c2a5ca9c9f33514f97316f0654e6fa4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

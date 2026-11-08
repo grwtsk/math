@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SurjectiveInputAndIsoCausalTransport.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SurjectiveInputAndIsoCausalTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SurjectiveInputAndIsoCausalTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SurjectiveInputAndIsoCausalTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `DAF.System` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.List.Basic` — import line 22; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Set.Operations` — import line 23; external provider; requires a separately pinned dependency.
-- [Full Future Trace Quotient](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/index.md) — import line 24; pinned internal source present.
+- [Full Future Trace Quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [map_causalEquivalent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SurjectiveInputAndIsoCausalTransport.lean/declarations/map-causalequivalent.md) | 61 | `result-track:2ed5941ae8622539f1943d3e6982a2e90aa092746a1f0cbd19e18cfb1e3dfbd2` |
-| 2 | `def` | [causalStateMap](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SurjectiveInputAndIsoCausalTransport.lean/declarations/causalstatemap.md) | 77 | `declaration-track:31f326abf3f8a8921eee6e4b7cdbe837ead7d3491dcd63f2e094d50265ba60a4` |
-| 3 | `theorem` | [causalStateMap_toCausal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SurjectiveInputAndIsoCausalTransport.lean/declarations/causalstatemap-tocausal.md) | 85 | `result-track:43ec8df5298abd3b877d0d1018cb7caad6d87eb563c9b2420a18fef655099559` |
-| 4 | `theorem` | [causalStateMap_surjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SurjectiveInputAndIsoCausalTransport.lean/declarations/causalstatemap-surjective.md) | 101 | `result-track:67b057c5ee0c2b4242fcf19956fb62fafaab5199582917c0d2bd5824574c5f9f` |
-| 5 | `theorem` | [causalEquivalent_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SurjectiveInputAndIsoCausalTransport.lean/declarations/causalequivalent-iff.md) | 120 | `result-track:53a68bf3baad2d666c7e7a3b88e21388bb5b0cd01e73738d693e66bbe246d49a` |
-| 6 | `def` | [causalStateEquiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SurjectiveInputAndIsoCausalTransport.lean/declarations/causalstateequiv.md) | 133 | `declaration-track:3662be39af59f90d803d45d2c25201f7fcd690e37e2018ef5e0b157fabf3acd5` |
-| 7 | `theorem` | [causalStateEquiv_toCausal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SurjectiveInputAndIsoCausalTransport.lean/declarations/causalstateequiv-tocausal.md) | 151 | `result-track:437860632517e1acb6f5c38cd160e41431c55f7a9771c1371df2f2d3b502f9e3` |
+| 1 | `theorem` | [map_causalEquivalent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SurjectiveInputAndIsoCausalTransport.lean/declarations/map-causalequivalent.md) | 61 | `result-track:2ed5941ae8622539f1943d3e6982a2e90aa092746a1f0cbd19e18cfb1e3dfbd2` |
+| 2 | `def` | [causalStateMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SurjectiveInputAndIsoCausalTransport.lean/declarations/causalstatemap.md) | 77 | `declaration-track:31f326abf3f8a8921eee6e4b7cdbe837ead7d3491dcd63f2e094d50265ba60a4` |
+| 3 | `theorem` | [causalStateMap_toCausal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SurjectiveInputAndIsoCausalTransport.lean/declarations/causalstatemap-tocausal.md) | 85 | `result-track:43ec8df5298abd3b877d0d1018cb7caad6d87eb563c9b2420a18fef655099559` |
+| 4 | `theorem` | [causalStateMap_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SurjectiveInputAndIsoCausalTransport.lean/declarations/causalstatemap-surjective.md) | 101 | `result-track:67b057c5ee0c2b4242fcf19956fb62fafaab5199582917c0d2bd5824574c5f9f` |
+| 5 | `theorem` | [causalEquivalent_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SurjectiveInputAndIsoCausalTransport.lean/declarations/causalequivalent-iff.md) | 120 | `result-track:53a68bf3baad2d666c7e7a3b88e21388bb5b0cd01e73738d693e66bbe246d49a` |
+| 6 | `def` | [causalStateEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SurjectiveInputAndIsoCausalTransport.lean/declarations/causalstateequiv.md) | 133 | `declaration-track:3662be39af59f90d803d45d2c25201f7fcd690e37e2018ef5e0b157fabf3acd5` |
+| 7 | `theorem` | [causalStateEquiv_toCausal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SurjectiveInputAndIsoCausalTransport.lean/declarations/causalstateequiv-tocausal.md) | 151 | `result-track:437860632517e1acb6f5c38cd160e41431c55f7a9771c1371df2f2d3b502f9e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

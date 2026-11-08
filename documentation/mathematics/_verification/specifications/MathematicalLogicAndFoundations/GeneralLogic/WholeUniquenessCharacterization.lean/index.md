@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeUniquenessCharacterization.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeUniquenessCharacterization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeUniquenessCharacterization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeUniquenessCharacterization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Canonical](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeUniquenessCharacterization.lean/declarations/canonical.md) | 42 | `declaration-track:5e900a9af1af684a57cbcdf7b494f28d9876d759052e26bcb1dec1049293af1e` |
-| 2 | `theorem` | [eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeUniquenessCharacterization.lean/declarations/eq.md) | 50 | `result-track:e608c88d0344d2b2784e429dc4e2a557383e1ab536d62e1c2552498fd542164f` |
-| 3 | `def` | [comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeUniquenessCharacterization.lean/declarations/comp.md) | 59 | `declaration-track:239cacd59de85fc69e888d98074d56ec28875ace347233adbd82da0ace18ade9` |
+| 1 | `structure` | [Canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeUniquenessCharacterization.lean/declarations/canonical.md) | 42 | `declaration-track:5e900a9af1af684a57cbcdf7b494f28d9876d759052e26bcb1dec1049293af1e` |
+| 2 | `theorem` | [eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeUniquenessCharacterization.lean/declarations/eq.md) | 50 | `result-track:e608c88d0344d2b2784e429dc4e2a557383e1ab536d62e1c2552498fd542164f` |
+| 3 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeUniquenessCharacterization.lean/declarations/comp.md) | 59 | `declaration-track:239cacd59de85fc69e888d98074d56ec28875ace347233adbd82da0ace18ade9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

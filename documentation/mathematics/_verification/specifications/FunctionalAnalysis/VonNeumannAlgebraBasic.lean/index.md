@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/VonNeumannAlgebraBasic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/VonNeumannAlgebraBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/VonNeumannAlgebraBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/VonNeumannAlgebraBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [WStarAlgebra](../../../../FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/wstaralgebra.md) | 41 | `declaration-track:b0522285ccad39344808341d4874baef2451d2274a56994685e575600e7fcb40` |
-| 2 | `structure` | [VonNeumannAlgebra](../../../../FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/vonneumannalgebra.md) | 63 | `declaration-track:c53f9fa774e5070778c939b32179b090978cf423427cdfd3a270598e68bd8f29` |
-| 3 | `instance` | [instSetLike](../../../../FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/instsetlike.md) | 78 | `declaration-track:ec61fcb452f549110c3741869fa7286e307df6b200d8c1206d15032cdf1ebc25` |
-| 4 | `instance` | [instStarMemClass](../../../../FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/inststarmemclass.md) | 82 | `declaration-track:1eaa9c98b01854c38862800ae494e3f4014ebc722433e0c67a125c903964a181` |
-| 5 | `instance` | [instSubringClass](../../../../FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/instsubringclass.md) | 85 | `declaration-track:a73e107b64508f9177233c03ec0801f456c5d2a83833474472f5c9d28bb35f62` |
-| 6 | `theorem` | [mem_carrier](../../../../FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/mem-carrier.md) | 93 | `result-track:fd91e003cb45993157e98ea4e7a890c2bc5c9ce7d4f87c1a1401191e34e111ed` |
-| 7 | `theorem` | [coe_toStarSubalgebra](../../../../FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/coe-tostarsubalgebra.md) | 98 | `result-track:864680b29f6285863117922b735781c300bee88791446b7cd7e3a8d975e8dcca` |
-| 8 | `theorem` | [coe_mk](../../../../FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/coe-mk.md) | 103 | `result-track:1ed2320a1ddc14c120dde4e1e99ffd4768e02d389bf96afd8c1c3f120e7516a6` |
-| 9 | `theorem` | [ext](../../../../FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/ext.md) | 108 | `result-track:b212dadb9efdb089b40ab8af9e8f18945126bc19048a35c049a31e922b3ac370` |
-| 10 | `theorem` | [centralizer_centralizer](../../../../FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/centralizer-centralizer.md) | 112 | `result-track:f6e34ecb28c02ff1e728ce35197a0960fb4c58700ceb565833dc47e21530bd5b` |
-| 11 | `def` | [commutant](../../../../FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/commutant.md) | 117 | `declaration-track:f9919729043a2d962d6d7edab59e786325449972251d9b13c59e9bc3a88fb863` |
-| 12 | `theorem` | [coe_commutant](../../../../FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/coe-commutant.md) | 122 | `result-track:17577b1cd462b9f0434b64ec9beaeb6768659d310d550334dcf00f99f1ced5fa` |
-| 13 | `theorem` | [mem_commutant_iff](../../../../FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/mem-commutant-iff.md) | 127 | `result-track:954fc14e64ad624c6dfb69c2465136b4b93671a4eea1aea8133866769d958fbf` |
-| 14 | `theorem` | [commutant_commutant](../../../../FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/commutant-commutant.md) | 133 | `result-track:9fa3f3f72070e610cec18caf3edf53cfb174802846a39baa373850bbc3591306` |
+| 1 | `class` | [WStarAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/wstaralgebra.md) | 41 | `declaration-track:b0522285ccad39344808341d4874baef2451d2274a56994685e575600e7fcb40` |
+| 2 | `structure` | [VonNeumannAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/vonneumannalgebra.md) | 63 | `declaration-track:c53f9fa774e5070778c939b32179b090978cf423427cdfd3a270598e68bd8f29` |
+| 3 | `instance` | [instSetLike](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/instsetlike.md) | 78 | `declaration-track:ec61fcb452f549110c3741869fa7286e307df6b200d8c1206d15032cdf1ebc25` |
+| 4 | `instance` | [instStarMemClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/inststarmemclass.md) | 82 | `declaration-track:1eaa9c98b01854c38862800ae494e3f4014ebc722433e0c67a125c903964a181` |
+| 5 | `instance` | [instSubringClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/instsubringclass.md) | 85 | `declaration-track:a73e107b64508f9177233c03ec0801f456c5d2a83833474472f5c9d28bb35f62` |
+| 6 | `theorem` | [mem_carrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/mem-carrier.md) | 93 | `result-track:fd91e003cb45993157e98ea4e7a890c2bc5c9ce7d4f87c1a1401191e34e111ed` |
+| 7 | `theorem` | [coe_toStarSubalgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/coe-tostarsubalgebra.md) | 98 | `result-track:864680b29f6285863117922b735781c300bee88791446b7cd7e3a8d975e8dcca` |
+| 8 | `theorem` | [coe_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/coe-mk.md) | 103 | `result-track:1ed2320a1ddc14c120dde4e1e99ffd4768e02d389bf96afd8c1c3f120e7516a6` |
+| 9 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/ext.md) | 108 | `result-track:b212dadb9efdb089b40ab8af9e8f18945126bc19048a35c049a31e922b3ac370` |
+| 10 | `theorem` | [centralizer_centralizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/centralizer-centralizer.md) | 112 | `result-track:f6e34ecb28c02ff1e728ce35197a0960fb4c58700ceb565833dc47e21530bd5b` |
+| 11 | `def` | [commutant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/commutant.md) | 117 | `declaration-track:f9919729043a2d962d6d7edab59e786325449972251d9b13c59e9bc3a88fb863` |
+| 12 | `theorem` | [coe_commutant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/coe-commutant.md) | 122 | `result-track:17577b1cd462b9f0434b64ec9beaeb6768659d310d550334dcf00f99f1ced5fa` |
+| 13 | `theorem` | [mem_commutant_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/mem-commutant-iff.md) | 127 | `result-track:954fc14e64ad624c6dfb69c2465136b4b93671a4eea1aea8133866769d958fbf` |
+| 14 | `theorem` | [commutant_commutant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/VonNeumannAlgebraBasic.lean/declarations/commutant-commutant.md) | 133 | `result-track:9fa3f3f72070e610cec18caf3edf53cfb174802846a39baa373850bbc3591306` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

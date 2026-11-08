@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Context](../../../../../ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/declarations/context.md) | 21 | `declaration-track:dae6021c950a6b3d8f520f592a8f2f7c1ade15f4dd364653e9afa228fbdac105` |
-| 2 | `structure` | [State](../../../../../ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/declarations/state.md) | 27 | `declaration-track:43bf4f8758653924142c03a7bce1819042f6727cfed1b56576af8c3566c4f3d0` |
-| 3 | `abbrev` | [CompareM](../../../../../ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/declarations/comparem.md) | 31 | `declaration-track:b3fa7dcc72dab6f899684401cab53da1ede3268b8acedd4bcb5e24a481e1c36a` |
-| 4 | `def` | [addWorklist](../../../../../ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/declarations/addworklist.md) | 38 | `declaration-track:3fe51da45cd3965d5cac5f4ac9b144dc89ba41249b25bdd4f4afb8cb0c5f2aa7` |
-| 5 | `def` | [addRelevantConsts](../../../../../ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/declarations/addrelevantconsts.md) | 42 | `declaration-track:1564a3c32e5e28b11b71c4ac32378c79592895795e37e542070c1748da2b1382` |
-| 6 | `def` | [loop](../../../../../ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/declarations/loop.md) | 45 | `declaration-track:3397549380c829e0ae7dd6b98b62b41ed7656247dd43c6da16aaec82efcb5f45` |
-| 7 | `def` | [definitionHoleMatches](../../../../../ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/declarations/definitionholematches.md) | 71 | `declaration-track:5ffe6a6a23c38216abcf0ba6657c046e974a29f3bbbcd3fc07997703a349006a` |
-| 8 | `def` | [compareAt](../../../../../ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/declarations/compareat.md) | 75 | `declaration-track:249afe3745ea80a2f41dac5d683be56772cf7c8fd6ec961f568aeb1628010fa5` |
+| 1 | `structure` | [Context](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/declarations/context.md) | 21 | `declaration-track:dae6021c950a6b3d8f520f592a8f2f7c1ade15f4dd364653e9afa228fbdac105` |
+| 2 | `structure` | [State](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/declarations/state.md) | 27 | `declaration-track:43bf4f8758653924142c03a7bce1819042f6727cfed1b56576af8c3566c4f3d0` |
+| 3 | `abbrev` | [CompareM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/declarations/comparem.md) | 31 | `declaration-track:b3fa7dcc72dab6f899684401cab53da1ede3268b8acedd4bcb5e24a481e1c36a` |
+| 4 | `def` | [addWorklist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/declarations/addworklist.md) | 38 | `declaration-track:3fe51da45cd3965d5cac5f4ac9b144dc89ba41249b25bdd4f4afb8cb0c5f2aa7` |
+| 5 | `def` | [addRelevantConsts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/declarations/addrelevantconsts.md) | 42 | `declaration-track:1564a3c32e5e28b11b71c4ac32378c79592895795e37e542070c1748da2b1382` |
+| 6 | `def` | [loop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/declarations/loop.md) | 45 | `declaration-track:3397549380c829e0ae7dd6b98b62b41ed7656247dd43c6da16aaec82efcb5f45` |
+| 7 | `def` | [definitionHoleMatches](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/declarations/definitionholematches.md) | 71 | `declaration-track:5ffe6a6a23c38216abcf0ba6657c046e974a29f3bbbcd3fc07997703a349006a` |
+| 8 | `def` | [compareAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompareNamespaced.lean/declarations/compareat.md) | 75 | `declaration-track:249afe3745ea80a2f41dac5d683be56772cf7c8fd6ec961f568aeb1628010fa5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

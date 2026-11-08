@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WilesBoundaryNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WilesBoundaryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WilesBoundaryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WilesBoundaryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ExternalTheoremArtifactKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WilesBoundaryNamespaced.lean/declarations/externaltheoremartifactkind.md) | 14 | `declaration-track:cce9357ae288d1d1bae4e3890871e70ee43377a532d37a891ff34849da3d7ee5` |
-| 2 | `structure` | [WilesAuthorityArtifact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WilesBoundaryNamespaced.lean/declarations/wilesauthorityartifact.md) | 20 | `declaration-track:4a69fc4c9e7faf160853c419600fa14f89554c0c979df90f11db57ff82020d74` |
-| 3 | `def` | [WilesAuthorityArtifact.IsExternalScopedArtifact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WilesBoundaryNamespaced.lean/declarations/wilesauthorityartifact-isexternalscopedartifact.md) | 29 | `declaration-track:a295dc920ddfa892c7fc90af53fe176914f719167e7e30245aaffd0689ce10fb` |
-| 4 | `structure` | [ForbiddenAuthorityFlags](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WilesBoundaryNamespaced.lean/declarations/forbiddenauthorityflags.md) | 38 | `declaration-track:b6bd3ed8e4c850020895217ec5354b31c28d1400eb6a503b749b0bea7fc81d40` |
-| 5 | `def` | [ForbiddenAuthorityFlags.NoForbiddenAuthority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WilesBoundaryNamespaced.lean/declarations/forbiddenauthorityflags-noforbiddenauthority.md) | 46 | `declaration-track:2daeef12161a3a414fb3c8da91708dd672cff55b3169d6a7f50a89a9f481021d` |
-| 6 | `theorem` | [wiles_artifact_external_only](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WilesBoundaryNamespaced.lean/declarations/wiles-artifact-external-only.md) | 55 | `result-track:040feb538b775614d94b8787755b32396be54f7c2b8a44d99a97e75a1f73e8b5` |
-| 7 | `theorem` | [forbidden_authority_not_introduced](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WilesBoundaryNamespaced.lean/declarations/forbidden-authority-not-introduced.md) | 68 | `result-track:c97143aa2ddb248ace68ef6cb8b9e8ad5b34163d05eeca7b6963d129ce2ccfd9` |
+| 1 | `inductive` | [ExternalTheoremArtifactKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WilesBoundaryNamespaced.lean/declarations/externaltheoremartifactkind.md) | 14 | `declaration-track:cce9357ae288d1d1bae4e3890871e70ee43377a532d37a891ff34849da3d7ee5` |
+| 2 | `structure` | [WilesAuthorityArtifact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WilesBoundaryNamespaced.lean/declarations/wilesauthorityartifact.md) | 20 | `declaration-track:4a69fc4c9e7faf160853c419600fa14f89554c0c979df90f11db57ff82020d74` |
+| 3 | `def` | [WilesAuthorityArtifact.IsExternalScopedArtifact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WilesBoundaryNamespaced.lean/declarations/wilesauthorityartifact-isexternalscopedartifact.md) | 29 | `declaration-track:a295dc920ddfa892c7fc90af53fe176914f719167e7e30245aaffd0689ce10fb` |
+| 4 | `structure` | [ForbiddenAuthorityFlags](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WilesBoundaryNamespaced.lean/declarations/forbiddenauthorityflags.md) | 38 | `declaration-track:b6bd3ed8e4c850020895217ec5354b31c28d1400eb6a503b749b0bea7fc81d40` |
+| 5 | `def` | [ForbiddenAuthorityFlags.NoForbiddenAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WilesBoundaryNamespaced.lean/declarations/forbiddenauthorityflags-noforbiddenauthority.md) | 46 | `declaration-track:2daeef12161a3a414fb3c8da91708dd672cff55b3169d6a7f50a89a9f481021d` |
+| 6 | `theorem` | [wiles_artifact_external_only](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WilesBoundaryNamespaced.lean/declarations/wiles-artifact-external-only.md) | 55 | `result-track:040feb538b775614d94b8787755b32396be54f7c2b8a44d99a97e75a1f73e8b5` |
+| 7 | `theorem` | [forbidden_authority_not_introduced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WilesBoundaryNamespaced.lean/declarations/forbidden-authority-not-introduced.md) | 68 | `result-track:c97143aa2ddb248ace68ef6cb8b9e8ad5b34163d05eeca7b6963d129ce2ccfd9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

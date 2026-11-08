@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [paperFT_comp_neg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/declarations/paperft-comp-neg.md) | 46 | `result-track:f4c81fb91af45429f2ce49622b909d457617691007839bbf44ecdd02d5f78235` |
-| 2 | `lemma` | [cauchyK_le_of_far](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/declarations/cauchyk-le-of-far.md) | 52 | `result-track:3d60fb00047863bdf1ff48b1d2847f48d6fa98f7f57f1208ed68024b9d13df3b` |
-| 3 | `lemma` | [factor_bounds_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/declarations/factor-bounds-le.md) | 66 | `result-track:413945c2cee3f1937c4574b463644b361af01732add4f3ea12bd7871f742036d` |
-| 4 | `lemma` | [pair_bounds_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/declarations/pair-bounds-le.md) | 90 | `result-track:5741ce86538a17ab6a8d929262546439792dfaf3bdfc3879221fde665a5cafde` |
-| 5 | `theorem` | [paperFT_kfun_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/declarations/paperft-kfun-bounds.md) | 132 | `result-track:1dca96fa4c5456d955a51d52363f83938a23f467271d64ae9d48220c0067b324` |
-| 6 | `theorem` | [paperFT_kfun_neg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/declarations/paperft-kfun-neg.md) | 181 | `result-track:f7e049404b234efd2fa76ed8ebadd6e6283fbe5a8f99c9ed1a37bc08cb0360c2` |
-| 7 | `theorem` | [kfun_regular'](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/declarations/kfun-regular.md) | 188 | `result-track:4f04c1da1256441e79b81402212a08c8f73aaee0785d5bdd866fbd6c4a056441` |
-| 8 | `theorem` | [kfun_facts](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/declarations/kfun-facts.md) | 202 | `result-track:2aab78d8809e762714ce3b16e3b81eaaae5dfbdb96498618debf8321c35c163e` |
+| 1 | `theorem` | [paperFT_comp_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/declarations/paperft-comp-neg.md) | 46 | `result-track:f4c81fb91af45429f2ce49622b909d457617691007839bbf44ecdd02d5f78235` |
+| 2 | `lemma` | [cauchyK_le_of_far](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/declarations/cauchyk-le-of-far.md) | 52 | `result-track:3d60fb00047863bdf1ff48b1d2847f48d6fa98f7f57f1208ed68024b9d13df3b` |
+| 3 | `lemma` | [factor_bounds_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/declarations/factor-bounds-le.md) | 66 | `result-track:413945c2cee3f1937c4574b463644b361af01732add4f3ea12bd7871f742036d` |
+| 4 | `lemma` | [pair_bounds_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/declarations/pair-bounds-le.md) | 90 | `result-track:5741ce86538a17ab6a8d929262546439792dfaf3bdfc3879221fde665a5cafde` |
+| 5 | `theorem` | [paperFT_kfun_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/declarations/paperft-kfun-bounds.md) | 132 | `result-track:1dca96fa4c5456d955a51d52363f83938a23f467271d64ae9d48220c0067b324` |
+| 6 | `theorem` | [paperFT_kfun_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/declarations/paperft-kfun-neg.md) | 181 | `result-track:f7e049404b234efd2fa76ed8ebadd6e6283fbe5a8f99c9ed1a37bc08cb0360c2` |
+| 7 | `theorem` | [kfun_regular'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/declarations/kfun-regular.md) | 188 | `result-track:4f04c1da1256441e79b81402212a08c8f73aaee0785d5bdd866fbd6c4a056441` |
+| 8 | `theorem` | [kfun_facts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFWeightsNamespaced.lean/declarations/kfun-facts.md) | 202 | `result-track:2aab78d8809e762714ce3b16e3b81eaaae5dfbdb96498618debf8321c35c163e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

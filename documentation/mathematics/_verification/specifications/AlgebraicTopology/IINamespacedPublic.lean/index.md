@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/IINamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/IINamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,24 +57,24 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finset](../../../../AlgebraicTopology/IINamespacedPublic.lean/declarations/finset.md) | 55 | `declaration-track:c297a743008acad0eec486ff6e73361f2130907c62d14dfea0f5ec86a3b52df0` |
-| 2 | `lemma` | [mem_finset_iff](../../../../AlgebraicTopology/IINamespacedPublic.lean/declarations/mem-finset-iff.md) | 59 | `result-track:3bfc6d9915f55f9471b709425fe7116d98a46f4d34f590a4783c5895f531ca72` |
-| 3 | `lemma` | [last_mem_finset](../../../../AlgebraicTopology/IINamespacedPublic.lean/declarations/last-mem-finset.md) | 65 | `result-track:d2e096c6ab37672371a1ea604879ac37884b98bbdd65304eab4ffb69aa7e8c1f` |
-| 4 | `lemma` | [castSucc_mem_finset_iff](../../../../AlgebraicTopology/IINamespacedPublic.lean/declarations/castsucc-mem-finset-iff.md) | 70 | `result-track:bd9266d56157e5a330619f12050afd60e592dd18a89a070537e6c1044a38a67a` |
-| 5 | `lemma` | [nonempty_finset](../../../../AlgebraicTopology/IINamespacedPublic.lean/declarations/nonempty-finset.md) | 75 | `result-track:47a636db1763936f5a597cf68cd80665ac6fcd9b55e2eb314e20c322d8be4358` |
-| 6 | `def` | [map'](../../../../AlgebraicTopology/IINamespacedPublic.lean/declarations/map.md) | 81 | `declaration-track:b8faa72e3045efad964551e4af29def6518966ab93bd7d328930f7d272242d74` |
-| 7 | `lemma` | [map'_eq_last_iff](../../../../AlgebraicTopology/IINamespacedPublic.lean/declarations/map-eq-last-iff.md) | 84 | `result-track:2fb4362749ab87e22d8d9fc78f0b42b9ea358df59548c68445f6f59048b94af6` |
-| 8 | `lemma` | [map'_eq_castSucc_iff](../../../../AlgebraicTopology/IINamespacedPublic.lean/declarations/map-eq-castsucc-iff.md) | 97 | `result-track:e2c2ece5e7089e1918805141e19642474e0ca4a41510433a0a4c977fa395f381` |
-| 9 | `lemma` | [map'_last](../../../../AlgebraicTopology/IINamespacedPublic.lean/declarations/map-last.md) | 114 | `result-track:d450065fe19c0efb5c5a4f0d3927097928ba52505a9770b610e30813460e3e5d` |
-| 10 | `lemma` | [map'_zero](../../../../AlgebraicTopology/IINamespacedPublic.lean/declarations/map-zero.md) | 119 | `result-track:7410996d4bd40d5b3bc7f565c2b3c536178efec44d91e8597d20d33a2e8ce55a` |
-| 11 | `lemma` | [map'_id](../../../../AlgebraicTopology/IINamespacedPublic.lean/declarations/map-id.md) | 124 | `result-track:83e45afe2b9f0d04a096c4f896340da03b581b6aecdd5b825861649d196768c8` |
-| 12 | `lemma` | [map'_map'](../../../../AlgebraicTopology/IINamespacedPublic.lean/declarations/map-map.md) | 130 | `result-track:78f6036ec8c001814bd2b1de9b0bdc25691d6c874d346b8436ac23b788c33216` |
-| 13 | `lemma` | [map'_succAboveOrderEmb](../../../../AlgebraicTopology/IINamespacedPublic.lean/declarations/map-succaboveorderemb.md) | 157 | `result-track:a5c31fc93beeb043c24eb4f02fd0f2fe93b1d1c6746a63864992812e5c8b1507` |
-| 14 | `lemma` | [map'_predAbove](../../../../AlgebraicTopology/IINamespacedPublic.lean/declarations/map-predabove.md) | 188 | `result-track:18923223e20ec8002a6b57529f4fbdd69863ceaef9c62f6ee575041e62e6e49f` |
-| 15 | `lemma` | [monotone_map'](../../../../AlgebraicTopology/IINamespacedPublic.lean/declarations/monotone-map.md) | 218 | `result-track:af51622bd8b3508155a6d65146e9fe6ad704fa2cd574508deea8595f4b7d1544` |
-| 16 | `def` | [II](../../../../AlgebraicTopology/IINamespacedPublic.lean/declarations/ii-source-edition-2.md) | 234 | `declaration-track:1804ae68aab77eb3593e3f606f6fe9023b0b64b3d818442a88a75ffea6f30dbd` |
-| 17 | `lemma` | [II_δ](../../../../AlgebraicTopology/IINamespacedPublic.lean/declarations/ii-source-edition-3.md) | 247 | `result-track:263fcbe67e4bf6958998bb5efb839f9f2e0697151b4eb7d9e81c1e3c9d36ff87` |
-| 18 | `lemma` | [II_σ](../../../../AlgebraicTopology/IINamespacedPublic.lean/declarations/ii.md) | 252 | `result-track:0044ee613245c7a72c73d9d5e1a47acdcfebcfea95fb317ea008201ef865fb43` |
+| 1 | `def` | [finset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/declarations/finset.md) | 55 | `declaration-track:c297a743008acad0eec486ff6e73361f2130907c62d14dfea0f5ec86a3b52df0` |
+| 2 | `lemma` | [mem_finset_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/declarations/mem-finset-iff.md) | 59 | `result-track:3bfc6d9915f55f9471b709425fe7116d98a46f4d34f590a4783c5895f531ca72` |
+| 3 | `lemma` | [last_mem_finset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/declarations/last-mem-finset.md) | 65 | `result-track:d2e096c6ab37672371a1ea604879ac37884b98bbdd65304eab4ffb69aa7e8c1f` |
+| 4 | `lemma` | [castSucc_mem_finset_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/declarations/castsucc-mem-finset-iff.md) | 70 | `result-track:bd9266d56157e5a330619f12050afd60e592dd18a89a070537e6c1044a38a67a` |
+| 5 | `lemma` | [nonempty_finset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/declarations/nonempty-finset.md) | 75 | `result-track:47a636db1763936f5a597cf68cd80665ac6fcd9b55e2eb314e20c322d8be4358` |
+| 6 | `def` | [map'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/declarations/map.md) | 81 | `declaration-track:b8faa72e3045efad964551e4af29def6518966ab93bd7d328930f7d272242d74` |
+| 7 | `lemma` | [map'_eq_last_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/declarations/map-eq-last-iff.md) | 84 | `result-track:2fb4362749ab87e22d8d9fc78f0b42b9ea358df59548c68445f6f59048b94af6` |
+| 8 | `lemma` | [map'_eq_castSucc_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/declarations/map-eq-castsucc-iff.md) | 97 | `result-track:e2c2ece5e7089e1918805141e19642474e0ca4a41510433a0a4c977fa395f381` |
+| 9 | `lemma` | [map'_last](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/declarations/map-last.md) | 114 | `result-track:d450065fe19c0efb5c5a4f0d3927097928ba52505a9770b610e30813460e3e5d` |
+| 10 | `lemma` | [map'_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/declarations/map-zero.md) | 119 | `result-track:7410996d4bd40d5b3bc7f565c2b3c536178efec44d91e8597d20d33a2e8ce55a` |
+| 11 | `lemma` | [map'_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/declarations/map-id.md) | 124 | `result-track:83e45afe2b9f0d04a096c4f896340da03b581b6aecdd5b825861649d196768c8` |
+| 12 | `lemma` | [map'_map'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/declarations/map-map.md) | 130 | `result-track:78f6036ec8c001814bd2b1de9b0bdc25691d6c874d346b8436ac23b788c33216` |
+| 13 | `lemma` | [map'_succAboveOrderEmb](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/declarations/map-succaboveorderemb.md) | 157 | `result-track:a5c31fc93beeb043c24eb4f02fd0f2fe93b1d1c6746a63864992812e5c8b1507` |
+| 14 | `lemma` | [map'_predAbove](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/declarations/map-predabove.md) | 188 | `result-track:18923223e20ec8002a6b57529f4fbdd69863ceaef9c62f6ee575041e62e6e49f` |
+| 15 | `lemma` | [monotone_map'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/declarations/monotone-map.md) | 218 | `result-track:af51622bd8b3508155a6d65146e9fe6ad704fa2cd574508deea8595f4b7d1544` |
+| 16 | `def` | [II](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/declarations/ii-source-edition-2.md) | 234 | `declaration-track:1804ae68aab77eb3593e3f606f6fe9023b0b64b3d818442a88a75ffea6f30dbd` |
+| 17 | `lemma` | [II_δ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/declarations/ii-source-edition-3.md) | 247 | `result-track:263fcbe67e4bf6958998bb5efb839f9f2e0697151b4eb7d9e81c1e3c9d36ff87` |
+| 18 | `lemma` | [II_σ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IINamespacedPublic.lean/declarations/ii.md) | 252 | `result-track:0044ee613245c7a72c73d9d5e1a47acdcfebcfea95fb317ea008201ef865fb43` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

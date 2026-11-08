@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseResidueNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseResidueNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseResidueNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseResidueNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrunedWitness](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseResidueNamespaced.lean/declarations/prunedwitness.md) | 18 | `declaration-track:415954a2f2f4fbda79c8a2a8b6498c009bf06182bde89e160ced815818fd405e` |
-| 2 | `def` | [phase37Witness](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseResidueNamespaced.lean/declarations/phase37witness.md) | 27 | `declaration-track:73f11067022b6a24c698ddd4ca4d950b6ffbebb389f75a240dda2e6dabbcdcba` |
-| 3 | `theorem` | [phase37Witness_preservesWeight](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseResidueNamespaced.lean/declarations/phase37witness-preservesweight.md) | 36 | `result-track:bfe1e229190ece8a78dc20c0a40568ee4eb0c194871f081640bde8f48235837f` |
+| 1 | `structure` | [PrunedWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseResidueNamespaced.lean/declarations/prunedwitness.md) | 18 | `declaration-track:415954a2f2f4fbda79c8a2a8b6498c009bf06182bde89e160ced815818fd405e` |
+| 2 | `def` | [phase37Witness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseResidueNamespaced.lean/declarations/phase37witness.md) | 27 | `declaration-track:73f11067022b6a24c698ddd4ca4d950b6ffbebb389f75a240dda2e6dabbcdcba` |
+| 3 | `theorem` | [phase37Witness_preservesWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseResidueNamespaced.lean/declarations/phase37witness-preservesweight.md) | 36 | `result-track:bfe1e229190ece8a78dc20c0a40568ee4eb0c194871f081640bde8f48235837f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

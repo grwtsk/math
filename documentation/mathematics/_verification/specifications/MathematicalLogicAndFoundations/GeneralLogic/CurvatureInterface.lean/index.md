@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CurvatureInterface.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CurvatureInterface.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CurvatureInterface.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CurvatureInterface.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CurvatureSemantics](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CurvatureInterface.lean/declarations/curvaturesemantics.md) | 21 | `declaration-track:3c63bccf2ee7ddb28973102abe4bdd25d11e8202bae63f72e1b3f0060c3eea1d` |
-| 2 | `def` | [IsDiscrete](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CurvatureInterface.lean/declarations/isdiscrete.md) | 31 | `declaration-track:7a7375166f2a22cd2bfef95f72530d3e80e4098ee1e34ad6c13ff952bc71d23e` |
-| 3 | `theorem` | [isDiscrete_ne_smoothManifold](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CurvatureInterface.lean/declarations/isdiscrete-ne-smoothmanifold.md) | 35 | `result-track:9948b88b0bf83af7e50e72ec07c05236c3c991d562ecc01858efa7572ffdefa1` |
-| 4 | `structure` | [DiscreteCurvatureModel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CurvatureInterface.lean/declarations/discretecurvaturemodel.md) | 51 | `declaration-track:a5bef86b8f829fdfcb27c6b8000ce51a865d9cf04a7fdb9ed23b204b3b1b888d` |
-| 5 | `theorem` | [semantics_ne_smoothManifold](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CurvatureInterface.lean/declarations/semantics-ne-smoothmanifold.md) | 76 | `result-track:ce1b902f916463df3982da53e04547418b496f3a6f08f14630faefeb6a922fe3` |
-| 6 | `theorem` | [weight_eq_zero_of_not_adjacent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CurvatureInterface.lean/declarations/weight-eq-zero-of-not-adjacent.md) | 83 | `result-track:eb817a7983fd3015858fa14b8c85b04fac9ed9ebe1b1fa9f8b0b707bfcefeaea` |
+| 1 | `inductive` | [CurvatureSemantics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CurvatureInterface.lean/declarations/curvaturesemantics.md) | 21 | `declaration-track:3c63bccf2ee7ddb28973102abe4bdd25d11e8202bae63f72e1b3f0060c3eea1d` |
+| 2 | `def` | [IsDiscrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CurvatureInterface.lean/declarations/isdiscrete.md) | 31 | `declaration-track:7a7375166f2a22cd2bfef95f72530d3e80e4098ee1e34ad6c13ff952bc71d23e` |
+| 3 | `theorem` | [isDiscrete_ne_smoothManifold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CurvatureInterface.lean/declarations/isdiscrete-ne-smoothmanifold.md) | 35 | `result-track:9948b88b0bf83af7e50e72ec07c05236c3c991d562ecc01858efa7572ffdefa1` |
+| 4 | `structure` | [DiscreteCurvatureModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CurvatureInterface.lean/declarations/discretecurvaturemodel.md) | 51 | `declaration-track:a5bef86b8f829fdfcb27c6b8000ce51a865d9cf04a7fdb9ed23b204b3b1b888d` |
+| 5 | `theorem` | [semantics_ne_smoothManifold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CurvatureInterface.lean/declarations/semantics-ne-smoothmanifold.md) | 76 | `result-track:ce1b902f916463df3982da53e04547418b496f3a6f08f14630faefeb6a922fe3` |
+| 6 | `theorem` | [weight_eq_zero_of_not_adjacent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CurvatureInterface.lean/declarations/weight-eq-zero-of-not-adjacent.md) | 83 | `result-track:eb817a7983fd3015858fa14b8c85b04fac9ed9ebe1b1fa9f8b0b707bfcefeaea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

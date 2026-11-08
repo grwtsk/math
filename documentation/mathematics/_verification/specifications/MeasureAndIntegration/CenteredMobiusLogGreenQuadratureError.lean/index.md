@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadratureError.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadratureError.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadratureError.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadratureError.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenQuadratureDerivativeBound`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivativeBound.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenQuadratureDerivativeBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivativeBound.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [greenFourierDerivativeMajorant](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadratureError.lean/declarations/greenfourierderivativemajorant.md) | 16 | `declaration-track:9268def13a51417f293e052ab787af9ba7d5bfcb17a6b9f2d73c341b6a4a0b81` |
-| 2 | `theorem` | [greenFourierBackgroundIntegrand_lipschitzOn](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadratureError.lean/declarations/greenfourierbackgroundintegrand-lipschitzon.md) | 21 | `result-track:ce3cd4ac443b9c3b550934234ca65d85bd42bb969f2779a16882aa164ad0ff54` |
-| 3 | `theorem` | [norm_greenFourierQuadratureCellError_le](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadratureError.lean/declarations/norm-greenfourierquadraturecellerror-le.md) | 40 | `result-track:f8c86eeed3bd7dbdeac3615c97a418f69bb2f74770aee83882e6f69fda21cd0e` |
+| 1 | `def` | [greenFourierDerivativeMajorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadratureError.lean/declarations/greenfourierderivativemajorant.md) | 16 | `declaration-track:9268def13a51417f293e052ab787af9ba7d5bfcb17a6b9f2d73c341b6a4a0b81` |
+| 2 | `theorem` | [greenFourierBackgroundIntegrand_lipschitzOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadratureError.lean/declarations/greenfourierbackgroundintegrand-lipschitzon.md) | 21 | `result-track:ce3cd4ac443b9c3b550934234ca65d85bd42bb969f2779a16882aa164ad0ff54` |
+| 3 | `theorem` | [norm_greenFourierQuadratureCellError_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadratureError.lean/declarations/norm-greenfourierquadraturecellerror-le.md) | 40 | `result-track:f8c86eeed3bd7dbdeac3615c97a418f69bb2f74770aee83882e6f69fda21cd0e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

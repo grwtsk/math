@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SingularSetNamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/SingularSetNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSetNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSetNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [TopCat.toSSet](../../../../AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/topcat-tosset.md) | 60 | `declaration-track:2e4b268bbc5a1ee2e145a3f6edf6e344757b0bc19dba71fa64bffce063f16b64` |
-| 2 | `def` | [TopCat.toSSetObjEquiv](../../../../AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/topcat-tossetobjequiv.md) | 66 | `declaration-track:d550311b710c322415cd9124110b79c338c6436ede732df7e8b823c428ffb1a7` |
-| 3 | `def` | [SSet.toTop](../../../../AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/sset-totop.md) | 75 | `declaration-track:a85409284e69fe54247db961298fb37b4a2222220e886aa30b67b7602b07c154` |
-| 4 | `def` | [sSetTopAdj](../../../../AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/ssettopadj.md) | 83 | `declaration-track:4e801ca951f80855989489403b8dd7646f6be61a71c543ffdc182b7922af0d7d` |
-| 5 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 88 | `declaration-track:ef8b126f49766bf2e65ff1e5d284af7baece4e8f808aa51b526c9a353cd99865` |
-| 6 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/instance.md) | 89 | `declaration-track:0e9046de65a6900b3cfe491244098c6a1d54ccd03f760372cfd94d1241ed4c56` |
-| 7 | `def` | [SSet.toTopSimplex](../../../../AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/sset-totopsimplex.md) | 93 | `declaration-track:b2bf30272b9fc546a743047e8ac1ce8ad97f364c850033942e8153b9bda5aa87` |
-| 8 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 97 | `declaration-track:673be2886817aa9d8940b88c63d227544c18501352c92e44fdfc2a62c4aa8e0e` |
-| 9 | `lemma` | [sSetTopAdj_unit_app_app_down](../../../../AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/ssettopadj-unit-app-app-down.md) | 101 | `result-track:65bc70c344a82ede50d9cd3f0b92a71f36880dd1505cafe1eb1764d41607a027` |
-| 10 | `def` | [TopCat.toSSetIsoConst](../../../../AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/topcat-tossetisoconst.md) | 107 | `declaration-track:2da5a90f13661d2f9adffc0f2922250ac22463575a7143478776a8a9591f24ff` |
-| 11 | `def` | [SSet.stdSimplexToTop](../../../../AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/sset-stdsimplextotop.md) | 117 | `declaration-track:e182356a312462db769370df89b089b491b064af3a2b5e29495f82ea11a8d008` |
+| 1 | `def` | [TopCat.toSSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/topcat-tosset.md) | 60 | `declaration-track:2e4b268bbc5a1ee2e145a3f6edf6e344757b0bc19dba71fa64bffce063f16b64` |
+| 2 | `def` | [TopCat.toSSetObjEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/topcat-tossetobjequiv.md) | 66 | `declaration-track:d550311b710c322415cd9124110b79c338c6436ede732df7e8b823c428ffb1a7` |
+| 3 | `def` | [SSet.toTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/sset-totop.md) | 75 | `declaration-track:a85409284e69fe54247db961298fb37b4a2222220e886aa30b67b7602b07c154` |
+| 4 | `def` | [sSetTopAdj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/ssettopadj.md) | 83 | `declaration-track:4e801ca951f80855989489403b8dd7646f6be61a71c543ffdc182b7922af0d7d` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 88 | `declaration-track:ef8b126f49766bf2e65ff1e5d284af7baece4e8f808aa51b526c9a353cd99865` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/instance.md) | 89 | `declaration-track:0e9046de65a6900b3cfe491244098c6a1d54ccd03f760372cfd94d1241ed4c56` |
+| 7 | `def` | [SSet.toTopSimplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/sset-totopsimplex.md) | 93 | `declaration-track:b2bf30272b9fc546a743047e8ac1ce8ad97f364c850033942e8153b9bda5aa87` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 97 | `declaration-track:673be2886817aa9d8940b88c63d227544c18501352c92e44fdfc2a62c4aa8e0e` |
+| 9 | `lemma` | [sSetTopAdj_unit_app_app_down](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/ssettopadj-unit-app-app-down.md) | 101 | `result-track:65bc70c344a82ede50d9cd3f0b92a71f36880dd1505cafe1eb1764d41607a027` |
+| 10 | `def` | [TopCat.toSSetIsoConst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/topcat-tossetisoconst.md) | 107 | `declaration-track:2da5a90f13661d2f9adffc0f2922250ac22463575a7143478776a8a9591f24ff` |
+| 11 | `def` | [SSet.stdSimplexToTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSetNamespacedPublic.lean/declarations/sset-stdsimplextotop.md) | 117 | `declaration-track:e182356a312462db769370df89b089b491b064af3a2b5e29495f82ea11a8d008` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

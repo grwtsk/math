@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PolygonLogCharts.lean/index.md) · [Full source](../../../../GeneralTopology/PolygonLogCharts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PolygonLogCharts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PolygonLogCharts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.ExponentialLoopIndex`](../../../../FunctionsOfAComplexVariable/ExponentialLoopIndex.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.PolygonTube`](../../../../GeneralTopology/PolygonTube.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.ExponentialLoopIndex`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialLoopIndex.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.PolygonTube`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PolygonTube.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [below](../../../../GeneralTopology/PolygonLogCharts.lean/declarations/below.md) | 27 | `declaration-track:4fe2c958be4ae80b582bf5ffbf22e488007aaafb562914289538f02d2e663529` |
-| 2 | `def` | [negativeLog](../../../../GeneralTopology/PolygonLogCharts.lean/declarations/negativelog.md) | 29 | `declaration-track:59dc0c15055927fa2385c7dd1660cadfbe9848c58f2ad79846bcd482a7fa293e` |
-| 3 | `theorem` | [exp_negativeLog](../../../../GeneralTopology/PolygonLogCharts.lean/declarations/exp-negativelog.md) | 32 | `result-track:62e54ec7b982febb475c94b01831ca2bf053ec0d8461861827217ce0ecae59ea` |
-| 4 | `theorem` | [negativeLog_eq](../../../../GeneralTopology/PolygonLogCharts.lean/declarations/negativelog-eq.md) | 38 | `result-track:f4c2eac1a37faab2b786242a93774807508b3ca809402df7623fb7e94877ee59` |
-| 5 | `theorem` | [positive_blend](../../../../GeneralTopology/PolygonLogCharts.lean/declarations/positive-blend.md) | 55 | `result-track:bbe5cd7faffde9c7e10b1f7e7e6bb28d32b5ccad5c29aa57a921379bf0066724` |
-| 6 | `def` | [PrincipalEdge](../../../../GeneralTopology/PolygonLogCharts.lean/declarations/principaledge.md) | 64 | `declaration-track:a8de181f06694e9993d99b8fe7619f21214c0f4fd366dba5c346971830655f62` |
-| 7 | `theorem` | [principal_edge_mem](../../../../GeneralTopology/PolygonLogCharts.lean/declarations/principal-edge-mem.md) | 67 | `result-track:1b1d91f386f8dada6f8d5e5c2f68730fe9249e705cc7bc225254f1c7e44a4ca2` |
-| 8 | `theorem` | [negative_edge_re](../../../../GeneralTopology/PolygonLogCharts.lean/declarations/negative-edge-re.md) | 85 | `result-track:643ad790801c28bd44540256cbde99b6391c75cf59b0f680ba0c2495a88a9384` |
-| 9 | `theorem` | [negative_edge_mem](../../../../GeneralTopology/PolygonLogCharts.lean/declarations/negative-edge-mem.md) | 92 | `result-track:a702761b2f728c75aa81f1abda89f4c62786c84da2643f927e119160b16f8e3a` |
-| 10 | `theorem` | [continuous_principal_edge](../../../../GeneralTopology/PolygonLogCharts.lean/declarations/continuous-principal-edge.md) | 97 | `result-track:b338abbd8220128ff55b219e88cc65c4102a51e6ef69a80ba8374e0e759510e7` |
-| 11 | `theorem` | [continuous_negative_edge](../../../../GeneralTopology/PolygonLogCharts.lean/declarations/continuous-negative-edge.md) | 102 | `result-track:481e9e74033b725df11426664f81a67c33f5da6accd926186c720f8d5338dfa5` |
+| 1 | `def` | [below](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PolygonLogCharts.lean/declarations/below.md) | 27 | `declaration-track:4fe2c958be4ae80b582bf5ffbf22e488007aaafb562914289538f02d2e663529` |
+| 2 | `def` | [negativeLog](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PolygonLogCharts.lean/declarations/negativelog.md) | 29 | `declaration-track:59dc0c15055927fa2385c7dd1660cadfbe9848c58f2ad79846bcd482a7fa293e` |
+| 3 | `theorem` | [exp_negativeLog](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PolygonLogCharts.lean/declarations/exp-negativelog.md) | 32 | `result-track:62e54ec7b982febb475c94b01831ca2bf053ec0d8461861827217ce0ecae59ea` |
+| 4 | `theorem` | [negativeLog_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PolygonLogCharts.lean/declarations/negativelog-eq.md) | 38 | `result-track:f4c2eac1a37faab2b786242a93774807508b3ca809402df7623fb7e94877ee59` |
+| 5 | `theorem` | [positive_blend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PolygonLogCharts.lean/declarations/positive-blend.md) | 55 | `result-track:bbe5cd7faffde9c7e10b1f7e7e6bb28d32b5ccad5c29aa57a921379bf0066724` |
+| 6 | `def` | [PrincipalEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PolygonLogCharts.lean/declarations/principaledge.md) | 64 | `declaration-track:a8de181f06694e9993d99b8fe7619f21214c0f4fd366dba5c346971830655f62` |
+| 7 | `theorem` | [principal_edge_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PolygonLogCharts.lean/declarations/principal-edge-mem.md) | 67 | `result-track:1b1d91f386f8dada6f8d5e5c2f68730fe9249e705cc7bc225254f1c7e44a4ca2` |
+| 8 | `theorem` | [negative_edge_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PolygonLogCharts.lean/declarations/negative-edge-re.md) | 85 | `result-track:643ad790801c28bd44540256cbde99b6391c75cf59b0f680ba0c2495a88a9384` |
+| 9 | `theorem` | [negative_edge_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PolygonLogCharts.lean/declarations/negative-edge-mem.md) | 92 | `result-track:a702761b2f728c75aa81f1abda89f4c62786c84da2643f927e119160b16f8e3a` |
+| 10 | `theorem` | [continuous_principal_edge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PolygonLogCharts.lean/declarations/continuous-principal-edge.md) | 97 | `result-track:b338abbd8220128ff55b219e88cc65c4102a51e6ef69a80ba8374e0e759510e7` |
+| 11 | `theorem` | [continuous_negative_edge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PolygonLogCharts.lean/declarations/continuous-negative-edge.md) | 102 | `result-track:481e9e74033b725df11426664f81a67c33f5da6accd926186c720f8d5338dfa5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

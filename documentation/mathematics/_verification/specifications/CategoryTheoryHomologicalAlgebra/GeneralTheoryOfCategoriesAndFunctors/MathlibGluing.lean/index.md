@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MathlibGluing.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MathlibGluing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MathlibGluing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MathlibGluing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [KnowledgeGluingCondition](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MathlibGluing.lean/declarations/knowledgegluingcondition.md) | 18 | `declaration-track:dd62dac47bd2873a11a99af6968647a9d7c399b288dcc536f461c7585190d532` |
-| 2 | `theorem` | [unique_knowledge_gluing](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MathlibGluing.lean/declarations/unique-knowledge-gluing.md) | 43 | `result-track:fc8a72cb3265ab2d0281d6bb2084ea890d85ec525087dd10026312deec63764a` |
+| 1 | `structure` | [KnowledgeGluingCondition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MathlibGluing.lean/declarations/knowledgegluingcondition.md) | 18 | `declaration-track:dd62dac47bd2873a11a99af6968647a9d7c399b288dcc536f461c7585190d532` |
+| 2 | `theorem` | [unique_knowledge_gluing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MathlibGluing.lean/declarations/unique-knowledge-gluing.md) | 43 | `result-track:fc8a72cb3265ab2d0281d6bb2084ea890d85ec525087dd10026312deec63764a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

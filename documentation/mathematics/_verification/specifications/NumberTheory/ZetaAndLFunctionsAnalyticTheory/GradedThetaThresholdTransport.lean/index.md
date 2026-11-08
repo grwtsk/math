@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedThetaThresholdTransport.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedThetaThresholdTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedThetaThresholdTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedThetaThresholdTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.GradedDyadicEnergyHalfPlane`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GradedDyadicEnergyHalfPlane.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicThetaOctaveSupplier`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaOctaveSupplier.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.GradedDyadicEnergyHalfPlane`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GradedDyadicEnergyHalfPlane.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicThetaOctaveSupplier`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaOctaveSupplier.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AllDyadicThetaAtThreshold](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedThetaThresholdTransport.lean/declarations/alldyadicthetaatthreshold.md) | 39 | `declaration-track:4eef2eca451730f7bf8dbe60debe0bdcc878af19954bb986c18f3924b20cf0b9` |
-| 2 | `theorem` | [thresholdAmplitude_ge_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedThetaThresholdTransport.lean/declarations/thresholdamplitude-ge-one.md) | 49 | `result-track:48d93e3eddf0673e8073ef34aaaa59bbb047062d469c492d5428695cf613f03a` |
-| 3 | `theorem` | [sqrt_twoX_le_two_thresholdAmplitude](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedThetaThresholdTransport.lean/declarations/sqrt-twox-le-two-thresholdamplitude.md) | 59 | `result-track:832f5851e2656bee1bd97efa031acee8fa7b264dab488be266739f1a80d09ecd` |
-| 4 | `theorem` | [thetaAtThreshold_to_energyAtThreshold](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedThetaThresholdTransport.lean/declarations/thetaatthreshold-to-energyatthreshold.md) | 89 | `result-track:d4cc88c8bbf95701f678920e16b4a35188b343bdda916ebac9343ab26d5fb78f` |
-| 5 | `theorem` | [thetaAtThreshold_to_sameZeroFree](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedThetaThresholdTransport.lean/declarations/thetaatthreshold-to-samezerofree.md) | 221 | `result-track:980a52dccb2c1a5d49935713d3ff19a0da6a4d5769e141b6fb320d9c42028203` |
+| 1 | `def` | [AllDyadicThetaAtThreshold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedThetaThresholdTransport.lean/declarations/alldyadicthetaatthreshold.md) | 39 | `declaration-track:4eef2eca451730f7bf8dbe60debe0bdcc878af19954bb986c18f3924b20cf0b9` |
+| 2 | `theorem` | [thresholdAmplitude_ge_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedThetaThresholdTransport.lean/declarations/thresholdamplitude-ge-one.md) | 49 | `result-track:48d93e3eddf0673e8073ef34aaaa59bbb047062d469c492d5428695cf613f03a` |
+| 3 | `theorem` | [sqrt_twoX_le_two_thresholdAmplitude](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedThetaThresholdTransport.lean/declarations/sqrt-twox-le-two-thresholdamplitude.md) | 59 | `result-track:832f5851e2656bee1bd97efa031acee8fa7b264dab488be266739f1a80d09ecd` |
+| 4 | `theorem` | [thetaAtThreshold_to_energyAtThreshold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedThetaThresholdTransport.lean/declarations/thetaatthreshold-to-energyatthreshold.md) | 89 | `result-track:d4cc88c8bbf95701f678920e16b4a35188b343bdda916ebac9343ab26d5fb78f` |
+| 5 | `theorem` | [thetaAtThreshold_to_sameZeroFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedThetaThresholdTransport.lean/declarations/thetaatthreshold-to-samezerofree.md) | 221 | `result-track:980a52dccb2c1a5d49935713d3ff19a0da6a4d5769e141b6fb320d9c42028203` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

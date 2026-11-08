@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Eigs.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Eigs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Eigs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Eigs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [det_eq_prod_roots_charpoly_of_splits](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Eigs.lean/declarations/det-eq-prod-roots-charpoly-of-splits.md) | 58 | `result-track:898bbf23a0bc3a817bced5816f952702df791ca9a9c2cd0fb614089a395907fc` |
-| 2 | `theorem` | [trace_eq_sum_roots_charpoly_of_splits](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Eigs.lean/declarations/trace-eq-sum-roots-charpoly-of-splits.md) | 64 | `result-track:6505c8c6213478af56f7dd81ea9b3d4c27727a7930fdc204d294fa93e9053866` |
-| 3 | `theorem` | [det_eq_prod_roots_charpoly](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Eigs.lean/declarations/det-eq-prod-roots-charpoly.md) | 76 | `result-track:a855b18afa95e25e639b19f5eab55efbafbf4aba71bee569ab3d8763098af5cf` |
-| 4 | `theorem` | [trace_eq_sum_roots_charpoly](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Eigs.lean/declarations/trace-eq-sum-roots-charpoly.md) | 79 | `result-track:2bd941d7974e7c850b1e34f6a34f8038f1d59eea13d1cf67ec969b9fd6fa5e29` |
+| 1 | `theorem` | [det_eq_prod_roots_charpoly_of_splits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Eigs.lean/declarations/det-eq-prod-roots-charpoly-of-splits.md) | 58 | `result-track:898bbf23a0bc3a817bced5816f952702df791ca9a9c2cd0fb614089a395907fc` |
+| 2 | `theorem` | [trace_eq_sum_roots_charpoly_of_splits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Eigs.lean/declarations/trace-eq-sum-roots-charpoly-of-splits.md) | 64 | `result-track:6505c8c6213478af56f7dd81ea9b3d4c27727a7930fdc204d294fa93e9053866` |
+| 3 | `theorem` | [det_eq_prod_roots_charpoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Eigs.lean/declarations/det-eq-prod-roots-charpoly.md) | 76 | `result-track:a855b18afa95e25e639b19f5eab55efbafbf4aba71bee569ab3d8763098af5cf` |
+| 4 | `theorem` | [trace_eq_sum_roots_charpoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Eigs.lean/declarations/trace-eq-sum-roots-charpoly.md) | 79 | `result-track:2bd941d7974e7c850b1e34f6a34f8038f1d59eea13d1cf67ec969b9fd6fa5e29` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

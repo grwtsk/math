@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CylinderAccess.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CylinderAccess.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CylinderAccess.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CylinderAccess.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CylinderAccessCertificate](../../../../ProbabilityTheoryAndStochasticProcesses/CylinderAccess.lean/declarations/cylinderaccesscertificate.md) | 10 | `declaration-track:915634c99fe0ff4744f6b2fdce5a6aecd5cbeffae369742e919e9e048e98c57e` |
-| 2 | `theorem` | [cylinder_access_stage_independent](../../../../ProbabilityTheoryAndStochasticProcesses/CylinderAccess.lean/declarations/cylinder-access-stage-independent.md) | 21 | `result-track:a6262fd07e5e85d98d04269cb2e3682f715af36fb548afa8708c40299609e646` |
+| 1 | `structure` | [CylinderAccessCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CylinderAccess.lean/declarations/cylinderaccesscertificate.md) | 10 | `declaration-track:915634c99fe0ff4744f6b2fdce5a6aecd5cbeffae369742e919e9e048e98c57e` |
+| 2 | `theorem` | [cylinder_access_stage_independent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CylinderAccess.lean/declarations/cylinder-access-stage-independent.md) | 21 | `result-track:a6262fd07e5e85d98d04269cb2e3682f715af36fb548afa8708c40299609e646` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

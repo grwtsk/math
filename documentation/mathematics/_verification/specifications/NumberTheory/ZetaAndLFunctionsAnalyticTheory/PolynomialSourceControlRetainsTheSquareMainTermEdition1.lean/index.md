@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialSourceControlRetainsTheSquareMainTermEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialSourceControlRetainsTheSquareMainTermEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialSourceControlRetainsTheSquareMainTermEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialSourceControlRetainsTheSquareMainTermEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [firstPrimeWithSquareMain](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialSourceControlRetainsTheSquareMainTermEdition1.lean/declarations/firstprimewithsquaremain.md) | 29 | `declaration-track:efd2d18b5a9d866f42cf7510db75d66400727faf1b2be46c26518f383c45c32c` |
-| 2 | `theorem` | [polynomial_upper_iff_of_bounded_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialSourceControlRetainsTheSquareMainTermEdition1.lean/declarations/polynomial-upper-iff-of-bounded-error.md) | 33 | `result-track:0425507e6d72e5f76003a134f5697313cb14b562fed402585c7f338096172a79` |
-| 3 | `theorem` | [source_polynomial_iff_firstPrimeWithSquareMain](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialSourceControlRetainsTheSquareMainTermEdition1.lean/declarations/source-polynomial-iff-firstprimewithsquaremain.md) | 49 | `result-track:f3e3163ef0db875edcc1b35091e26ce16cc0a603980b4b16b0907e9b0c1d3237` |
-| 4 | `theorem` | [signedMertens_iff_firstPrimeWithSquareMain](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialSourceControlRetainsTheSquareMainTermEdition1.lean/declarations/signedmertens-iff-firstprimewithsquaremain.md) | 60 | `result-track:81eec79ab47e930e42dc5b75219207ef68375b5d3167d6f1d8cee07a6f03838f` |
+| 1 | `def` | [firstPrimeWithSquareMain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialSourceControlRetainsTheSquareMainTermEdition1.lean/declarations/firstprimewithsquaremain.md) | 29 | `declaration-track:efd2d18b5a9d866f42cf7510db75d66400727faf1b2be46c26518f383c45c32c` |
+| 2 | `theorem` | [polynomial_upper_iff_of_bounded_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialSourceControlRetainsTheSquareMainTermEdition1.lean/declarations/polynomial-upper-iff-of-bounded-error.md) | 33 | `result-track:0425507e6d72e5f76003a134f5697313cb14b562fed402585c7f338096172a79` |
+| 3 | `theorem` | [source_polynomial_iff_firstPrimeWithSquareMain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialSourceControlRetainsTheSquareMainTermEdition1.lean/declarations/source-polynomial-iff-firstprimewithsquaremain.md) | 49 | `result-track:f3e3163ef0db875edcc1b35091e26ce16cc0a603980b4b16b0907e9b0c1d3237` |
+| 4 | `theorem` | [signedMertens_iff_firstPrimeWithSquareMain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialSourceControlRetainsTheSquareMainTermEdition1.lean/declarations/signedmertens-iff-firstprimewithsquaremain.md) | 60 | `result-track:81eec79ab47e930e42dc5b75219207ef68375b5d3167d6f1d8cee07a6f03838f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

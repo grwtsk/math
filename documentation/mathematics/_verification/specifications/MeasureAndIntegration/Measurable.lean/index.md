@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Measurable.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Measurable.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Measurable.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Measurable.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [MeasurableSet](../../../../MeasureAndIntegration/Measurable.lean/declarations/measurableset.md) | 5 | `declaration-track:2396b42ec72240f0f3b4f0fe0b356de8cf4c8134e5fb8bb7d8dcabe5db7352d7` |
-| 2 | `structure` | [MeasurableSpace](../../../../MeasureAndIntegration/Measurable.lean/declarations/measurablespace.md) | 7 | `declaration-track:fddb36b182627bc59993bb537e52ecdd07870266374352ec48774ad26f7cf645` |
-| 3 | `def` | [Measurable](../../../../MeasureAndIntegration/Measurable.lean/declarations/measurable.md) | 10 | `declaration-track:469854657cd369da8d6feac977019e6a075f45d359fb1f45ad8b56fe220ed5b5` |
-| 4 | `structure` | [CertifiedMeasurableSpace](../../../../MeasureAndIntegration/Measurable.lean/declarations/certifiedmeasurablespace.md) | 12 | `declaration-track:ec5db33886f4f156f3d5a4b875ad894a245e9f8ca22e97d99ca6dd819782f225` |
-| 5 | `inductive` | [MeasurableConvergenceMode](../../../../MeasureAndIntegration/Measurable.lean/declarations/measurableconvergencemode.md) | 16 | `declaration-track:b23867ff1b898c169214ae1d10f47fcfbba3550392e6f38cb6f2d4ca46ee002c` |
-| 6 | `structure` | [CertifiedSimpleApproximation](../../../../MeasureAndIntegration/Measurable.lean/declarations/certifiedsimpleapproximation.md) | 24 | `declaration-track:96b64b29d0573b6fc5163ff60786ae91e3938af610266865488d51efef5ec8c1` |
-| 7 | `structure` | [CertifiedMeasurableFunction](../../../../MeasureAndIntegration/Measurable.lean/declarations/certifiedmeasurablefunction.md) | 32 | `declaration-track:324bb3dbbf3af648ae46cda069b92eba7967854ae42238312f92d2c3f6d1a857` |
-| 8 | `structure` | [CertifiedSimpleApproximationRef](../../../../MeasureAndIntegration/Measurable.lean/declarations/certifiedsimpleapproximationref.md) | 40 | `declaration-track:c1a2fd27279bcb467844943eb63d0d1f8399066d26979fc2112b738b644fc9a7` |
-| 9 | `structure` | [CertifiedMeasurableLimitRef](../../../../MeasureAndIntegration/Measurable.lean/declarations/certifiedmeasurablelimitref.md) | 44 | `declaration-track:138606dae60fb86ff9ffd9ab3a6d8ba2066ca091dbd3858e94b3cedf8124a5e6` |
-| 10 | `theorem` | [certifiedMeasurable_has_measurability](../../../../MeasureAndIntegration/Measurable.lean/declarations/certifiedmeasurable-has-measurability.md) | 48 | `result-track:e6f2095bc61311ade93fa252d6002e630743c7c22ff4a4539b1c9dc336d6a4e8` |
+| 1 | `abbrev` | [MeasurableSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Measurable.lean/declarations/measurableset.md) | 5 | `declaration-track:2396b42ec72240f0f3b4f0fe0b356de8cf4c8134e5fb8bb7d8dcabe5db7352d7` |
+| 2 | `structure` | [MeasurableSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Measurable.lean/declarations/measurablespace.md) | 7 | `declaration-track:fddb36b182627bc59993bb537e52ecdd07870266374352ec48774ad26f7cf645` |
+| 3 | `def` | [Measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Measurable.lean/declarations/measurable.md) | 10 | `declaration-track:469854657cd369da8d6feac977019e6a075f45d359fb1f45ad8b56fe220ed5b5` |
+| 4 | `structure` | [CertifiedMeasurableSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Measurable.lean/declarations/certifiedmeasurablespace.md) | 12 | `declaration-track:ec5db33886f4f156f3d5a4b875ad894a245e9f8ca22e97d99ca6dd819782f225` |
+| 5 | `inductive` | [MeasurableConvergenceMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Measurable.lean/declarations/measurableconvergencemode.md) | 16 | `declaration-track:b23867ff1b898c169214ae1d10f47fcfbba3550392e6f38cb6f2d4ca46ee002c` |
+| 6 | `structure` | [CertifiedSimpleApproximation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Measurable.lean/declarations/certifiedsimpleapproximation.md) | 24 | `declaration-track:96b64b29d0573b6fc5163ff60786ae91e3938af610266865488d51efef5ec8c1` |
+| 7 | `structure` | [CertifiedMeasurableFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Measurable.lean/declarations/certifiedmeasurablefunction.md) | 32 | `declaration-track:324bb3dbbf3af648ae46cda069b92eba7967854ae42238312f92d2c3f6d1a857` |
+| 8 | `structure` | [CertifiedSimpleApproximationRef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Measurable.lean/declarations/certifiedsimpleapproximationref.md) | 40 | `declaration-track:c1a2fd27279bcb467844943eb63d0d1f8399066d26979fc2112b738b644fc9a7` |
+| 9 | `structure` | [CertifiedMeasurableLimitRef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Measurable.lean/declarations/certifiedmeasurablelimitref.md) | 44 | `declaration-track:138606dae60fb86ff9ffd9ab3a6d8ba2066ca091dbd3858e94b3cedf8124a5e6` |
+| 10 | `theorem` | [certifiedMeasurable_has_measurability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Measurable.lean/declarations/certifiedmeasurable-has-measurability.md) | 48 | `result-track:e6f2095bc61311ade93fa252d6002e630743c7c22ff4a4539b1c9dc336d6a4e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

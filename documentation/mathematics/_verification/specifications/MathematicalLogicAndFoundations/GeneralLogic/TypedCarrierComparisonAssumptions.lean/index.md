@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedCarrierComparisonAssumptions.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedCarrierComparisonAssumptions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedCarrierComparisonAssumptions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedCarrierComparisonAssumptions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RealizationComparisonPackage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedCarrierComparisonAssumptions.lean/declarations/realizationcomparisonpackage.md) | 37 | `declaration-track:62de14be63ed25479d00d14b69c704467f7f1aa3de48833847f679c7cc38e1ff` |
-| 2 | `theorem` | [realization_comparison_maps_exist](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedCarrierComparisonAssumptions.lean/declarations/realization-comparison-maps-exist.md) | 48 | `result-track:bba5f4ac6fb0f7e7d017c5abf005186f7acbc7d3c56214a3cfa8040eda841bff` |
-| 3 | `theorem` | [realization_trace_classes_agree](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedCarrierComparisonAssumptions.lean/declarations/realization-trace-classes-agree.md) | 53 | `result-track:d3cabcbc4c9f16871a1dd20ab0927f78164e4af7cb2ef6f1c34a0cda2bcf17b0` |
+| 1 | `structure` | [RealizationComparisonPackage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedCarrierComparisonAssumptions.lean/declarations/realizationcomparisonpackage.md) | 37 | `declaration-track:62de14be63ed25479d00d14b69c704467f7f1aa3de48833847f679c7cc38e1ff` |
+| 2 | `theorem` | [realization_comparison_maps_exist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedCarrierComparisonAssumptions.lean/declarations/realization-comparison-maps-exist.md) | 48 | `result-track:bba5f4ac6fb0f7e7d017c5abf005186f7acbc7d3c56214a3cfa8040eda841bff` |
+| 3 | `theorem` | [realization_trace_classes_agree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedCarrierComparisonAssumptions.lean/declarations/realization-trace-classes-agree.md) | 53 | `result-track:d3cabcbc4c9f16871a1dd20ab0927f78164e4af7cb2ef6f1c34a0cda2bcf17b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

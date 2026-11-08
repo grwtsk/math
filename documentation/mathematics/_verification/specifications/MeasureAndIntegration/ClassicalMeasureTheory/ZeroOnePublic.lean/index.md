@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsZeroOneMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/declarations/iszeroonemeasure.md) | 37 | `declaration-track:a66e3fd3eec9fc4ad100a4b571316730fa2ebf70c6a31b75f4cd5ff0645889e8` |
-| 2 | `lemma` | [Measure.zero_one](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/declarations/measure-zero-one.md) | 40 | `result-track:ed823082a3aa69f95c06efff53a05811a7c3c481723b48d98275cb82efed30ee` |
-| 3 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/declarations/instance.md) | 51 | `declaration-track:74d3be003d9a6c2e2b2db7ff1a5e72b92de71b577d2da2e63761c191b31c9a11` |
-| 4 | `lemma` | [exists_measure_eq_one_iff_measure_univ_eq_one](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/declarations/exists-measure-eq-one-iff-measure-univ-eq-one.md) | 56 | `result-track:9fae4eebd232468c056ef7c9dab4d1aa2b34a507323d6622c309e57baec0922e` |
-| 5 | `lemma` | [measure_univ](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/declarations/measure-univ.md) | 67 | `result-track:9fd3fc40225df3cfacbc2b4fd5335363fcec9562f87c9835a668530cfd18868a` |
-| 6 | `lemma` | [measure_inter_eq_one](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/declarations/measure-inter-eq-one.md) | 70 | `result-track:91d9a4f2cc15a06d7db309539045e98c93aa75516c447b0e033e4fdde3bb0ce6` |
-| 7 | `lemma` | [measure_inter_eq_prod](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/declarations/measure-inter-eq-prod.md) | 89 | `result-track:7f94937ce6645706c9f0142124993c0007bf8ec5d16bcc7d0f74fca172794d3b` |
-| 8 | `theorem` | [exists_eq_dirac](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/declarations/exists-eq-dirac.md) | 98 | `result-track:70250712e1e4000273317985e1f7ad3184548d456b3f129f79e8abaddf9db0dc` |
+| 1 | `class` | [IsZeroOneMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/declarations/iszeroonemeasure.md) | 37 | `declaration-track:a66e3fd3eec9fc4ad100a4b571316730fa2ebf70c6a31b75f4cd5ff0645889e8` |
+| 2 | `lemma` | [Measure.zero_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/declarations/measure-zero-one.md) | 40 | `result-track:ed823082a3aa69f95c06efff53a05811a7c3c481723b48d98275cb82efed30ee` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/declarations/instance.md) | 51 | `declaration-track:74d3be003d9a6c2e2b2db7ff1a5e72b92de71b577d2da2e63761c191b31c9a11` |
+| 4 | `lemma` | [exists_measure_eq_one_iff_measure_univ_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/declarations/exists-measure-eq-one-iff-measure-univ-eq-one.md) | 56 | `result-track:9fae4eebd232468c056ef7c9dab4d1aa2b34a507323d6622c309e57baec0922e` |
+| 5 | `lemma` | [measure_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/declarations/measure-univ.md) | 67 | `result-track:9fd3fc40225df3cfacbc2b4fd5335363fcec9562f87c9835a668530cfd18868a` |
+| 6 | `lemma` | [measure_inter_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/declarations/measure-inter-eq-one.md) | 70 | `result-track:91d9a4f2cc15a06d7db309539045e98c93aa75516c447b0e033e4fdde3bb0ce6` |
+| 7 | `lemma` | [measure_inter_eq_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/declarations/measure-inter-eq-prod.md) | 89 | `result-track:7f94937ce6645706c9f0142124993c0007bf8ec5d16bcc7d0f74fca172794d3b` |
+| 8 | `theorem` | [exists_eq_dirac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ZeroOnePublic.lean/declarations/exists-eq-dirac.md) | 98 | `result-track:70250712e1e4000273317985e1f7ad3184548d456b3f129f79e8abaddf9db0dc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

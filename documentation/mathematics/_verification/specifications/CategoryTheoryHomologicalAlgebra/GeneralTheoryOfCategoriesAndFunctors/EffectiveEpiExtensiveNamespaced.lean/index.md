@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiExtensiveNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiExtensiveNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiExtensiveNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiExtensiveNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [effectiveEpi_desc_iff_effectiveEpiFamily](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiExtensiveNamespaced.lean/declarations/effectiveepi-desc-iff-effectiveepifamily.md) | 32 | `result-track:948cc6973312e5e585dbff55a219ec05066a9a44daf16f5e1f4ad23b64ace904` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiExtensiveNamespaced.lean/declarations/instance.md) | 42 | `declaration-track:1a4835571d30978a1a8812f8f207b1b9918a2600195814144aea642fe232557b` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiExtensiveNamespaced.lean/declarations/instance-source-edition-2.md) | 50 | `declaration-track:65ad192d694bd3cd55ba57b8068d9e78ff51bd091ce21d774a009a4ef8bded55` |
+| 1 | `theorem` | [effectiveEpi_desc_iff_effectiveEpiFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiExtensiveNamespaced.lean/declarations/effectiveepi-desc-iff-effectiveepifamily.md) | 32 | `result-track:948cc6973312e5e585dbff55a219ec05066a9a44daf16f5e1f4ad23b64ace904` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiExtensiveNamespaced.lean/declarations/instance.md) | 42 | `declaration-track:1a4835571d30978a1a8812f8f207b1b9918a2600195814144aea642fe232557b` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiExtensiveNamespaced.lean/declarations/instance-source-edition-2.md) | 50 | `declaration-track:65ad192d694bd3cd55ba57b8068d9e78ff51bd091ce21d774a009a4ef8bded55` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

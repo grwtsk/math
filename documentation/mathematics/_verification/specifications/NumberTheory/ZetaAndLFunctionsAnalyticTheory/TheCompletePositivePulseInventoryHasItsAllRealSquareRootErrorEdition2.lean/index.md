@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheCompletePositivePulseInventoryHasItsAllRealSquareRootErrorEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheCompletePositivePulseInventoryHasItsAllRealSquareRootErrorEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheCompletePositivePulseInventoryHasItsAllRealSquareRootErrorEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheCompletePositivePulseInventoryHasItsAllRealSquareRootErrorEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [count](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheCompletePositivePulseInventoryHasItsAllRealSquareRootErrorEdition2.lean/declarations/count.md) | 24 | `declaration-track:b4cdfe13523d72850f3d496a06f93aaf3500675d8cc47595088616593ed5aaa8` |
-| 2 | `theorem` | [first_counting_weight_retained](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheCompletePositivePulseInventoryHasItsAllRealSquareRootErrorEdition2.lean/declarations/first-counting-weight-retained.md) | 26 | `result-track:8e4d4eddd3602096e9a181110e3814d2f74ab731f7fae9fe094a2b1250bc9296` |
-| 3 | `theorem` | [complete_integer_count](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheCompletePositivePulseInventoryHasItsAllRealSquareRootErrorEdition2.lean/declarations/complete-integer-count.md) | 32 | `result-track:18e46e9a9ef31d93def6564173447dca225bc4bf43d9ba6dc9ba4802d7a63814` |
-| 4 | `theorem` | [all_real_counting_bracket](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheCompletePositivePulseInventoryHasItsAllRealSquareRootErrorEdition2.lean/declarations/all-real-counting-bracket.md) | 46 | `result-track:4a4722b56f575435a432c93eb5a8843e94fbd817d66d87c038108e3c1f804a39` |
-| 5 | `theorem` | [all_real_square_root_counting_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheCompletePositivePulseInventoryHasItsAllRealSquareRootErrorEdition2.lean/declarations/all-real-square-root-counting-error.md) | 59 | `result-track:71e90ca10191a66ef3875f41a397ae209b25107329e5f6d4b8e9bc300975d824` |
+| 1 | `def` | [count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheCompletePositivePulseInventoryHasItsAllRealSquareRootErrorEdition2.lean/declarations/count.md) | 24 | `declaration-track:b4cdfe13523d72850f3d496a06f93aaf3500675d8cc47595088616593ed5aaa8` |
+| 2 | `theorem` | [first_counting_weight_retained](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheCompletePositivePulseInventoryHasItsAllRealSquareRootErrorEdition2.lean/declarations/first-counting-weight-retained.md) | 26 | `result-track:8e4d4eddd3602096e9a181110e3814d2f74ab731f7fae9fe094a2b1250bc9296` |
+| 3 | `theorem` | [complete_integer_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheCompletePositivePulseInventoryHasItsAllRealSquareRootErrorEdition2.lean/declarations/complete-integer-count.md) | 32 | `result-track:18e46e9a9ef31d93def6564173447dca225bc4bf43d9ba6dc9ba4802d7a63814` |
+| 4 | `theorem` | [all_real_counting_bracket](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheCompletePositivePulseInventoryHasItsAllRealSquareRootErrorEdition2.lean/declarations/all-real-counting-bracket.md) | 46 | `result-track:4a4722b56f575435a432c93eb5a8843e94fbd817d66d87c038108e3c1f804a39` |
+| 5 | `theorem` | [all_real_square_root_counting_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheCompletePositivePulseInventoryHasItsAllRealSquareRootErrorEdition2.lean/declarations/all-real-square-root-counting-error.md) | 59 | `result-track:71e90ca10191a66ef3875f41a397ae209b25107329e5f6d4b8e9bc300975d824` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

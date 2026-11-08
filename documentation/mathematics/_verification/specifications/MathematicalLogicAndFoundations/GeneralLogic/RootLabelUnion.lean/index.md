@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RootLabelUnion.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RootLabelUnion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RootLabelUnion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RootLabelUnion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Complete Family And Root](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteFamilyAndRoot.lean/index.md) — import line 17; pinned internal source present.
+- [Complete Family And Root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteFamilyAndRoot.lean/index.md) — import line 17; pinned internal source present.
 - `Atomize.Formal.IndexedAll` — import line 19; external provider; requires a separately pinned dependency.
 - `Atomize.Formal.KernelPresentation` — import line 20; external provider; requires a separately pinned dependency.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rootVariables](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RootLabelUnion.lean/declarations/rootvariables.md) | 86 | `declaration-track:087eebdbf641230dbeffc3d3e482a0fa91a0b743b9e3464503b5468c89a26f27` |
-| 2 | `def` | [rootVariablesAll](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RootLabelUnion.lean/declarations/rootvariablesall.md) | 104 | `declaration-track:7ce0c7240f9689b622dfbfe4202a3dc2b8f49f91b6a3fbb8c959146dae0fd7e6` |
+| 1 | `def` | [rootVariables](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RootLabelUnion.lean/declarations/rootvariables.md) | 86 | `declaration-track:087eebdbf641230dbeffc3d3e482a0fa91a0b743b9e3464503b5468c89a26f27` |
+| 2 | `def` | [rootVariablesAll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RootLabelUnion.lean/declarations/rootvariablesall.md) | 104 | `declaration-track:7ce0c7240f9689b622dfbfe4202a3dc2b8f49f91b6a3fbb8c959146dae0fd7e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

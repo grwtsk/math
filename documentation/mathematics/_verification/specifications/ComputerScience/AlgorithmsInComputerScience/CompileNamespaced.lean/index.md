@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CompileNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CompileNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompileNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompileNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Tree.toFormula](../../../../../ComputerScience/AlgorithmsInComputerScience/CompileNamespaced.lean/declarations/tree-toformula.md) | 17 | `declaration-track:d1c296ed1a13bcfe739c5b711ce42c036ed33d567f708b6c8d7ff9f685074d05` |
-| 2 | `theorem` | [Tree.eval_toFormula](../../../../../ComputerScience/AlgorithmsInComputerScience/CompileNamespaced.lean/declarations/tree-eval-toformula.md) | 28 | `result-track:25b7a904363b14f6025dca188bc0f2e53070e309482198be535687ac11bc5e69` |
+| 1 | `def` | [Tree.toFormula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompileNamespaced.lean/declarations/tree-toformula.md) | 17 | `declaration-track:d1c296ed1a13bcfe739c5b711ce42c036ed33d567f708b6c8d7ff9f685074d05` |
+| 2 | `theorem` | [Tree.eval_toFormula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompileNamespaced.lean/declarations/tree-eval-toformula.md) | 28 | `result-track:25b7a904363b14f6025dca188bc0f2e53070e309482198be535687ac11bc5e69` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,14 +62,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [iteratedDeriv_conjugate_pullback](../../../../FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/declarations/iteratedderiv-conjugate-pullback.md) | 29 | `result-track:246ed2667c80240430b29a7f5c297990776c439503f6ae8c37305c80b4e409fe` |
-| 2 | `theorem` | [order_conjugate_of_equivariant](../../../../FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/declarations/order-conjugate-of-equivariant.md) | 38 | `result-track:b2de751d92c34c5feda0986d3731d06390ba12de7aed7233aedbe245d3fce92d` |
-| 3 | `theorem` | [order_one_sub](../../../../FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/declarations/order-one-sub.md) | 63 | `result-track:91da374e3d048c93dabfbaace8f5e58f0e092ba243707051df8f7b44f3c7dd74` |
-| 4 | `theorem` | [order_mul_nonzero_right](../../../../FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/declarations/order-mul-nonzero-right.md) | 74 | `result-track:7e5915b3219bc4be3d1b70b1f19a0e0271a210bb692f34dce60adc10d503248e` |
-| 5 | `theorem` | [nonzero_multiplier_fixture](../../../../FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/declarations/nonzero-multiplier-fixture.md) | 80 | `result-track:d5a846dfd784696e50c851cdd8f40a288d222178c02359e648637d81f67719ae` |
-| 6 | `theorem` | [vanishing_multiplier_fixture](../../../../FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/declarations/vanishing-multiplier-fixture.md) | 88 | `result-track:b4ae29aa2ebea33b71d598838cd90056c8de26f56968324a684a8f14a005cb68` |
-| 7 | `theorem` | [ramified_coordinate_fixture](../../../../FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/declarations/ramified-coordinate-fixture.md) | 97 | `result-track:e31a9ebc53a441c71f9cfbb90898f1273603bf46b295f9b65bf17a66bb4a07d0` |
-| 8 | `theorem` | [same_zero_set_unequal_orders_fixture](../../../../FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/declarations/same-zero-set-unequal-orders-fixture.md) | 104 | `result-track:c6c21a857f72cd3a2135e50ce1d1d9032e411e034888857a0f8cb5fbf994cd2a` |
+| 1 | `theorem` | [iteratedDeriv_conjugate_pullback](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/declarations/iteratedderiv-conjugate-pullback.md) | 29 | `result-track:246ed2667c80240430b29a7f5c297990776c439503f6ae8c37305c80b4e409fe` |
+| 2 | `theorem` | [order_conjugate_of_equivariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/declarations/order-conjugate-of-equivariant.md) | 38 | `result-track:b2de751d92c34c5feda0986d3731d06390ba12de7aed7233aedbe245d3fce92d` |
+| 3 | `theorem` | [order_one_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/declarations/order-one-sub.md) | 63 | `result-track:91da374e3d048c93dabfbaace8f5e58f0e092ba243707051df8f7b44f3c7dd74` |
+| 4 | `theorem` | [order_mul_nonzero_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/declarations/order-mul-nonzero-right.md) | 74 | `result-track:7e5915b3219bc4be3d1b70b1f19a0e0271a210bb692f34dce60adc10d503248e` |
+| 5 | `theorem` | [nonzero_multiplier_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/declarations/nonzero-multiplier-fixture.md) | 80 | `result-track:d5a846dfd784696e50c851cdd8f40a288d222178c02359e648637d81f67719ae` |
+| 6 | `theorem` | [vanishing_multiplier_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/declarations/vanishing-multiplier-fixture.md) | 88 | `result-track:b4ae29aa2ebea33b71d598838cd90056c8de26f56968324a684a8f14a005cb68` |
+| 7 | `theorem` | [ramified_coordinate_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/declarations/ramified-coordinate-fixture.md) | 97 | `result-track:e31a9ebc53a441c71f9cfbb90898f1273603bf46b295f9b65bf17a66bb4a07d0` |
+| 8 | `theorem` | [same_zero_set_unequal_orders_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/declarations/same-zero-set-unequal-orders-fixture.md) | 104 | `result-track:c6c21a857f72cd3a2135e50ce1d1d9032e411e034888857a0f8cb5fbf994cd2a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

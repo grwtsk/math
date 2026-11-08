@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CostructuredArrowNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CostructuredArrowNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CostructuredArrowNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CostructuredArrowNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isFiltered_of_isFiltered_costructuredArrow_small](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CostructuredArrowNamespaced.lean/declarations/isfiltered-of-isfiltered-costructuredarrow-small.md) | 40 | `result-track:e4ac90975c6eb3c8b9eb5a799f4712d1fa652bc262b77b7bfce49b245a9653b9` |
-| 2 | `theorem` | [isFiltered_of_isFiltered_costructuredArrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CostructuredArrowNamespaced.lean/declarations/isfiltered-of-isfiltered-costructuredarrow.md) | 64 | `result-track:3d38c553aa8978fe4e3280ba1f86dcba42e60b1fb4c6c731b6e28ca23d6eff38` |
+| 1 | `lemma` | [isFiltered_of_isFiltered_costructuredArrow_small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CostructuredArrowNamespaced.lean/declarations/isfiltered-of-isfiltered-costructuredarrow-small.md) | 40 | `result-track:e4ac90975c6eb3c8b9eb5a799f4712d1fa652bc262b77b7bfce49b245a9653b9` |
+| 2 | `theorem` | [isFiltered_of_isFiltered_costructuredArrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CostructuredArrowNamespaced.lean/declarations/isfiltered-of-isfiltered-costructuredarrow.md) | 64 | `result-track:3d38c553aa8978fe4e3280ba1f86dcba42e60b1fb4c6c731b6e28ca23d6eff38` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

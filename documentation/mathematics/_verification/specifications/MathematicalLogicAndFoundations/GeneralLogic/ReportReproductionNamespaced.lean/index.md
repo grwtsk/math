@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReportReproductionNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReportReproductionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReportReproductionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReportReproductionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_maximizer_of_finite_values](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReportReproductionNamespaced.lean/declarations/exists-maximizer-of-finite-values.md) | 17 | `result-track:427506b5bbee22f8ac018163580bda506b931ba07e8b7cb3ef160653aefd2394` |
-| 2 | `theorem` | [exists_unique_greatest_maximizer_of_bounded_rank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReportReproductionNamespaced.lean/declarations/exists-unique-greatest-maximizer-of-bounded-rank.md) | 29 | `result-track:4aa44f32ba28c1458746ae1762265c996f03fedd83a872ab079a3b9d5f447a6c` |
-| 3 | `theorem` | [exists_greatest_maximizer_fixed_of_bounded_rank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReportReproductionNamespaced.lean/declarations/exists-greatest-maximizer-fixed-of-bounded-rank.md) | 59 | `result-track:c133fa3ec092c22c519ea6d5c27aec993ea66b372bb6d2dfb87781fc5aa03493` |
-| 4 | `theorem` | [exists_greatest_maximizer_fixed_of_finite_values_bounded_rank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReportReproductionNamespaced.lean/declarations/exists-greatest-maximizer-fixed-of-finite-values-bounded-rank.md) | 70 | `result-track:bfc55ea535ee35cd18afa494b4e75633abc1285d065d061b02f0976f2b94a5bf` |
+| 1 | `theorem` | [exists_maximizer_of_finite_values](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReportReproductionNamespaced.lean/declarations/exists-maximizer-of-finite-values.md) | 17 | `result-track:427506b5bbee22f8ac018163580bda506b931ba07e8b7cb3ef160653aefd2394` |
+| 2 | `theorem` | [exists_unique_greatest_maximizer_of_bounded_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReportReproductionNamespaced.lean/declarations/exists-unique-greatest-maximizer-of-bounded-rank.md) | 29 | `result-track:4aa44f32ba28c1458746ae1762265c996f03fedd83a872ab079a3b9d5f447a6c` |
+| 3 | `theorem` | [exists_greatest_maximizer_fixed_of_bounded_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReportReproductionNamespaced.lean/declarations/exists-greatest-maximizer-fixed-of-bounded-rank.md) | 59 | `result-track:c133fa3ec092c22c519ea6d5c27aec993ea66b372bb6d2dfb87781fc5aa03493` |
+| 4 | `theorem` | [exists_greatest_maximizer_fixed_of_finite_values_bounded_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReportReproductionNamespaced.lean/declarations/exists-greatest-maximizer-fixed-of-finite-values-bounded-rank.md) | 70 | `result-track:bfc55ea535ee35cd18afa494b4e75633abc1285d065d061b02f0976f2b94a5bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

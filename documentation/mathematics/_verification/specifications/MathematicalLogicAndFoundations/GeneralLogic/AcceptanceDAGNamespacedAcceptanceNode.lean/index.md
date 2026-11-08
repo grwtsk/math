@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AcceptanceDAGNamespacedAcceptanceNode.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AcceptanceDAGNamespacedAcceptanceNode.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AcceptanceDAGNamespacedAcceptanceNode.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AcceptanceDAGNamespacedAcceptanceNode.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AcceptanceNode](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AcceptanceDAGNamespacedAcceptanceNode.lean/declarations/acceptancenode.md) | 27 | `declaration-track:e4a1c9c5cda0da05c14cb6376f8c2e667594f81e22cd1b64d36afd7b2ae3b573` |
-| 2 | `structure` | [RHAcceptanceDAG](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AcceptanceDAGNamespacedAcceptanceNode.lean/declarations/rhacceptancedag.md) | 45 | `declaration-track:f944e75f5b338170c639b6d9ffdc6de83b8e7d301496da6d922938eddbbf2141` |
-| 3 | `theorem` | [acceptance_dag_requires_all_nodes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AcceptanceDAGNamespacedAcceptanceNode.lean/declarations/acceptance-dag-requires-all-nodes.md) | 57 | `result-track:39f400d2fa01b406b44bc6491fe8b1c67e54d70a1dfe4134a2acd15db226020e` |
-| 4 | `theorem` | [acceptance_dag_requires_no_contracts](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AcceptanceDAGNamespacedAcceptanceNode.lean/declarations/acceptance-dag-requires-no-contracts.md) | 62 | `result-track:020951ddf8c38cd03e0b7c98b57b718e6865e814c07cb16428c18c245ca4a52b` |
-| 5 | `theorem` | [acceptance_dag_requires_zeta_specialization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AcceptanceDAGNamespacedAcceptanceNode.lean/declarations/acceptance-dag-requires-zeta-specialization.md) | 67 | `result-track:ca98973783dc0069e92e2bbfa820006d1856928f35399fa79680b7e987802799` |
+| 1 | `inductive` | [AcceptanceNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AcceptanceDAGNamespacedAcceptanceNode.lean/declarations/acceptancenode.md) | 27 | `declaration-track:e4a1c9c5cda0da05c14cb6376f8c2e667594f81e22cd1b64d36afd7b2ae3b573` |
+| 2 | `structure` | [RHAcceptanceDAG](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AcceptanceDAGNamespacedAcceptanceNode.lean/declarations/rhacceptancedag.md) | 45 | `declaration-track:f944e75f5b338170c639b6d9ffdc6de83b8e7d301496da6d922938eddbbf2141` |
+| 3 | `theorem` | [acceptance_dag_requires_all_nodes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AcceptanceDAGNamespacedAcceptanceNode.lean/declarations/acceptance-dag-requires-all-nodes.md) | 57 | `result-track:39f400d2fa01b406b44bc6491fe8b1c67e54d70a1dfe4134a2acd15db226020e` |
+| 4 | `theorem` | [acceptance_dag_requires_no_contracts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AcceptanceDAGNamespacedAcceptanceNode.lean/declarations/acceptance-dag-requires-no-contracts.md) | 62 | `result-track:020951ddf8c38cd03e0b7c98b57b718e6865e814c07cb16428c18c245ca4a52b` |
+| 5 | `theorem` | [acceptance_dag_requires_zeta_specialization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AcceptanceDAGNamespacedAcceptanceNode.lean/declarations/acceptance-dag-requires-zeta-specialization.md) | 67 | `result-track:ca98973783dc0069e92e2bbfa820006d1856928f35399fa79680b7e987802799` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

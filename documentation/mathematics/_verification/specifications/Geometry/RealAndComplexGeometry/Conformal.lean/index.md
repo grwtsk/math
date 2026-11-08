@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Geometry/RealAndComplexGeometry/Conformal.lean/index.md) · [Full source](../../../../../Geometry/RealAndComplexGeometry/Conformal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/Conformal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/Conformal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsConformalMap.preserves_angle](../../../../../Geometry/RealAndComplexGeometry/Conformal.lean/declarations/isconformalmap-preserves-angle.md) | 23 | `result-track:65d263085ab3a54e6203724be22a322f7236e3bb8cffe9029b0eb314f10aaa41` |
-| 2 | `theorem` | [ConformalAt.preserves_angle](../../../../../Geometry/RealAndComplexGeometry/Conformal.lean/declarations/conformalat-preserves-angle.md) | 30 | `result-track:54a2f220ec66f4e4b50a0d4ef40e44d463d5a92e40255244755473668f00befd` |
+| 1 | `theorem` | [IsConformalMap.preserves_angle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/Conformal.lean/declarations/isconformalmap-preserves-angle.md) | 23 | `result-track:65d263085ab3a54e6203724be22a322f7236e3bb8cffe9029b0eb314f10aaa41` |
+| 2 | `theorem` | [ConformalAt.preserves_angle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/Conformal.lean/declarations/conformalat-preserves-angle.md) | 30 | `result-track:54a2f220ec66f4e4b50a0d4ef40e44d463d5a92e40255244755473668f00befd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

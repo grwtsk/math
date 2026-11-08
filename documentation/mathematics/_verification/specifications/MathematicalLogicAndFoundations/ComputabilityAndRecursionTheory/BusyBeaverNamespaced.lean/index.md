@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/BusyBeaverNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/BusyBeaverNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/BusyBeaverNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/BusyBeaverNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BusyBeaverDescriptor](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/BusyBeaverNamespaced.lean/declarations/busybeaverdescriptor.md) | 24 | `declaration-track:a345fa4497dc33b17c8bc9a2368caa43f5151c9328a2649bc28a2c26a0188124` |
-| 2 | `theorem` | [busyBeaver_not_marked_ordinary_computable](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/BusyBeaverNamespaced.lean/declarations/busybeaver-not-marked-ordinary-computable.md) | 28 | `result-track:d12665522abb262beea834a0c521be169d964cebd4e7596fdc4573d90e532282` |
+| 1 | `structure` | [BusyBeaverDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/BusyBeaverNamespaced.lean/declarations/busybeaverdescriptor.md) | 24 | `declaration-track:a345fa4497dc33b17c8bc9a2368caa43f5151c9328a2649bc28a2c26a0188124` |
+| 2 | `theorem` | [busyBeaver_not_marked_ordinary_computable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/BusyBeaverNamespaced.lean/declarations/busybeaver-not-marked-ordinary-computable.md) | 28 | `result-track:d12665522abb262beea834a0c521be169d964cebd4e7596fdc4573d90e532282` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

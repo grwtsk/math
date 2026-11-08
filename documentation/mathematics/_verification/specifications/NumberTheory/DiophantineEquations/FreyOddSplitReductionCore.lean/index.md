@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/FreyOddSplitReductionCore.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/FreyOddSplitReductionCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyOddSplitReductionCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyOddSplitReductionCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.EllipticCurve.TangentPolynomialSplitting`](../../../../../CommutativeAlgebra/TangentPolynomialSplitting.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyOddSplitReduction`](../../../../../CommutativeAlgebra/FreyOddSplitReduction.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.EllipticCurve.TangentPolynomialSplitting`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TangentPolynomialSplitting.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyOddSplitReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyOddSplitReduction.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

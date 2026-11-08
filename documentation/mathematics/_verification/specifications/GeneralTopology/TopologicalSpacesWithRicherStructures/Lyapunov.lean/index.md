@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Lyapunov.lean/index.md) · [Full source](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Lyapunov.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Lyapunov.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Lyapunov.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LocalQuadraticLyapunovCertificate](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Lyapunov.lean/declarations/localquadraticlyapunovcertificate.md) | 19 | `declaration-track:73ef16f5ce758d5d87893a49e72ab83662a685712bc3a733a363749e806315ce` |
-| 2 | `theorem` | [iterate_mem](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Lyapunov.lean/declarations/iterate-mem.md) | 62 | `result-track:ec7631b3e653d3633577354b3973cec28ce482bec238673d9520216f8164ffd0` |
-| 3 | `theorem` | [energy_iterate_le](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Lyapunov.lean/declarations/energy-iterate-le.md) | 71 | `result-track:f1013ec54e095b0148bc621943bd481545d77dd7e6cb1e4bba2ac91906f92483` |
-| 4 | `theorem` | [isLyapunovStable](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Lyapunov.lean/declarations/islyapunovstable.md) | 91 | `result-track:84e4a181a29a816f2efbc4f799a6b2bcd90e376dbf5e61d10263bb51b6a84e98` |
+| 1 | `structure` | [LocalQuadraticLyapunovCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Lyapunov.lean/declarations/localquadraticlyapunovcertificate.md) | 19 | `declaration-track:73ef16f5ce758d5d87893a49e72ab83662a685712bc3a733a363749e806315ce` |
+| 2 | `theorem` | [iterate_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Lyapunov.lean/declarations/iterate-mem.md) | 62 | `result-track:ec7631b3e653d3633577354b3973cec28ce482bec238673d9520216f8164ffd0` |
+| 3 | `theorem` | [energy_iterate_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Lyapunov.lean/declarations/energy-iterate-le.md) | 71 | `result-track:f1013ec54e095b0148bc621943bd481545d77dd7e6cb1e4bba2ac91906f92483` |
+| 4 | `theorem` | [isLyapunovStable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Lyapunov.lean/declarations/islyapunovstable.md) | 91 | `result-track:84e4a181a29a816f2efbc4f799a6b2bcd90e376dbf5e61d10263bb51b6a84e98` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

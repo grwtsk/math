@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Ambient.lean/index.md) · [Full source](../../../../Combinatorics/Ambient.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Ambient.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Ambient.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [FiniteSoninHorizon.Ambient](../../../../Combinatorics/Ambient.lean/declarations/finitesoninhorizon-ambient.md) | 9 | `declaration-track:a8af008b0d45460f346bd2a864093505d53d1e9513af08fbc3e70176a49cc2a7` |
-| 2 | `def` | [FiniteSoninHorizon.toTop](../../../../Combinatorics/Ambient.lean/declarations/finitesoninhorizon-totop.md) | 14 | `declaration-track:b3f79f3110ff1ad7a06667963323949673819a2025ea8dcbceba4d1ad65050ea` |
-| 3 | `theorem` | [FiniteSoninHorizon.toTop_injective](../../../../Combinatorics/Ambient.lean/declarations/finitesoninhorizon-totop-injective.md) | 22 | `result-track:ff4fe8cc6100d236ca8fd1801b38690def46a8b88e9990d8ed2a20f766600c2d` |
+| 1 | `abbrev` | [FiniteSoninHorizon.Ambient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Ambient.lean/declarations/finitesoninhorizon-ambient.md) | 9 | `declaration-track:a8af008b0d45460f346bd2a864093505d53d1e9513af08fbc3e70176a49cc2a7` |
+| 2 | `def` | [FiniteSoninHorizon.toTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Ambient.lean/declarations/finitesoninhorizon-totop.md) | 14 | `declaration-track:b3f79f3110ff1ad7a06667963323949673819a2025ea8dcbceba4d1ad65050ea` |
+| 3 | `theorem` | [FiniteSoninHorizon.toTop_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Ambient.lean/declarations/finitesoninhorizon-totop-injective.md) | 22 | `result-track:ff4fe8cc6100d236ca8fd1801b38690def46a8b88e9990d8ed2a20f766600c2d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

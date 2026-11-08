@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/NormedSpaceRay.lean/index.md) · [Full source](../../../../FunctionalAnalysis/NormedSpaceRay.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRay.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRay.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [norm_add](../../../../FunctionalAnalysis/NormedSpaceRay.lean/declarations/norm-add.md) | 32 | `result-track:2953729f1ccd2767baff06f96775a8e1d59e77f1d80931e656cf8a2865900c06` |
-| 2 | `theorem` | [norm_sub](../../../../FunctionalAnalysis/NormedSpaceRay.lean/declarations/norm-sub.md) | 38 | `result-track:20e9a1de0228c7f6a69866fd00a0c373870849559977c78a1702e62abaaee33f` |
-| 3 | `theorem` | [norm_smul_eq](../../../../FunctionalAnalysis/NormedSpaceRay.lean/declarations/norm-smul-eq.md) | 50 | `result-track:5255c6f5906e79e7930c98bf7b2cdbfa87054fd9e584b7df2535dccba28f63b6` |
-| 4 | `theorem` | [norm_injOn_ray_left](../../../../FunctionalAnalysis/NormedSpaceRay.lean/declarations/norm-injon-ray-left.md) | 60 | `result-track:e7e23afa18a9681e902b622d97b62d6e6eb3b412faece293477c601f6068392a` |
-| 5 | `theorem` | [norm_injOn_ray_right](../../../../FunctionalAnalysis/NormedSpaceRay.lean/declarations/norm-injon-ray-right.md) | 69 | `result-track:40ca91d094309dc58f7f9a0963ec5e893923f9d4d157ed35023471795d0fa114` |
-| 6 | `theorem` | [sameRay_iff_norm_smul_eq](../../../../FunctionalAnalysis/NormedSpaceRay.lean/declarations/sameray-iff-norm-smul-eq.md) | 73 | `result-track:d47841f357cb8814bfc49c3b31f3090857e0fd5eea57ec1259c0473488c1d29f` |
-| 7 | `theorem` | [sameRay_iff_inv_norm_smul_eq_of_ne](../../../../FunctionalAnalysis/NormedSpaceRay.lean/declarations/sameray-iff-inv-norm-smul-eq-of-ne.md) | 81 | `result-track:d7d0759c556a885ec1deb62cbaa5f755fb4306e33ed6c6df455df89fb845acf3` |
-| 8 | `theorem` | [sameRay_iff_inv_norm_smul_eq](../../../../FunctionalAnalysis/NormedSpaceRay.lean/declarations/sameray-iff-inv-norm-smul-eq.md) | 92 | `result-track:bf3a97db476c927955eff1abac4303551388002789f8f51b240d33ca22f63828` |
-| 9 | `theorem` | [sameRay_iff_of_norm_eq](../../../../FunctionalAnalysis/NormedSpaceRay.lean/declarations/sameray-iff-of-norm-eq.md) | 99 | `result-track:291c67c2fbf8420a7d795291a7ef2535a95d2b55360066b6fcd8f69aea0dd445` |
-| 10 | `theorem` | [not_sameRay_iff_of_norm_eq](../../../../FunctionalAnalysis/NormedSpaceRay.lean/declarations/not-sameray-iff-of-norm-eq.md) | 106 | `result-track:5a9983b4ba186eaefa9e91be0d340c76b27c6111e9a7d90584df3086b306cc5b` |
-| 11 | `theorem` | [SameRay.eq_of_norm_eq](../../../../FunctionalAnalysis/NormedSpaceRay.lean/declarations/sameray-eq-of-norm-eq.md) | 111 | `result-track:3f6c9ce260c6eb45ae4ecc43372c7dd5c46c5a9833570ad40d84b0b13542c566` |
-| 12 | `theorem` | [SameRay.norm_eq_iff](../../../../FunctionalAnalysis/NormedSpaceRay.lean/declarations/sameray-norm-eq-iff.md) | 116 | `result-track:aeb27a82dd70ef55b04ecd67ffdcb7736a05f0f635ade2c8f80fac99fdc63a2a` |
+| 1 | `theorem` | [norm_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRay.lean/declarations/norm-add.md) | 32 | `result-track:2953729f1ccd2767baff06f96775a8e1d59e77f1d80931e656cf8a2865900c06` |
+| 2 | `theorem` | [norm_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRay.lean/declarations/norm-sub.md) | 38 | `result-track:20e9a1de0228c7f6a69866fd00a0c373870849559977c78a1702e62abaaee33f` |
+| 3 | `theorem` | [norm_smul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRay.lean/declarations/norm-smul-eq.md) | 50 | `result-track:5255c6f5906e79e7930c98bf7b2cdbfa87054fd9e584b7df2535dccba28f63b6` |
+| 4 | `theorem` | [norm_injOn_ray_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRay.lean/declarations/norm-injon-ray-left.md) | 60 | `result-track:e7e23afa18a9681e902b622d97b62d6e6eb3b412faece293477c601f6068392a` |
+| 5 | `theorem` | [norm_injOn_ray_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRay.lean/declarations/norm-injon-ray-right.md) | 69 | `result-track:40ca91d094309dc58f7f9a0963ec5e893923f9d4d157ed35023471795d0fa114` |
+| 6 | `theorem` | [sameRay_iff_norm_smul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRay.lean/declarations/sameray-iff-norm-smul-eq.md) | 73 | `result-track:d47841f357cb8814bfc49c3b31f3090857e0fd5eea57ec1259c0473488c1d29f` |
+| 7 | `theorem` | [sameRay_iff_inv_norm_smul_eq_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRay.lean/declarations/sameray-iff-inv-norm-smul-eq-of-ne.md) | 81 | `result-track:d7d0759c556a885ec1deb62cbaa5f755fb4306e33ed6c6df455df89fb845acf3` |
+| 8 | `theorem` | [sameRay_iff_inv_norm_smul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRay.lean/declarations/sameray-iff-inv-norm-smul-eq.md) | 92 | `result-track:bf3a97db476c927955eff1abac4303551388002789f8f51b240d33ca22f63828` |
+| 9 | `theorem` | [sameRay_iff_of_norm_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRay.lean/declarations/sameray-iff-of-norm-eq.md) | 99 | `result-track:291c67c2fbf8420a7d795291a7ef2535a95d2b55360066b6fcd8f69aea0dd445` |
+| 10 | `theorem` | [not_sameRay_iff_of_norm_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRay.lean/declarations/not-sameray-iff-of-norm-eq.md) | 106 | `result-track:5a9983b4ba186eaefa9e91be0d340c76b27c6111e9a7d90584df3086b306cc5b` |
+| 11 | `theorem` | [SameRay.eq_of_norm_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRay.lean/declarations/sameray-eq-of-norm-eq.md) | 111 | `result-track:3f6c9ce260c6eb45ae4ecc43372c7dd5c46c5a9833570ad40d84b0b13542c566` |
+| 12 | `theorem` | [SameRay.norm_eq_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRay.lean/declarations/sameray-norm-eq-iff.md) | 116 | `result-track:aeb27a82dd70ef55b04ecd67ffdcb7736a05f0f635ade2c8f80fac99fdc63a2a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

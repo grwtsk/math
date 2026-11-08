@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PrimeIntervalWitness.lean/index.md) · [Full source](../../../../NumberTheory/PrimeIntervalWitness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeIntervalWitness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeIntervalWitness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.ConfigurationCounts`](../../../../NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.ConfigurationCounts`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.NumberTheory.Chebyshev` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Algebra.BigOperators.Intervals` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.Linarith` — import line 7; external provider; requires a separately pinned dependency.
@@ -63,11 +63,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prime_log_sum_pos_iff](../../../../NumberTheory/PrimeIntervalWitness.lean/declarations/prime-log-sum-pos-iff.md) | 32 | `result-track:88e4638a9e22d774d993cdf21052b0805b297a8eed637a17141f421ae312425b` |
-| 2 | `theorem` | [theta_sub_nat_eq_prime_sum](../../../../NumberTheory/PrimeIntervalWitness.lean/declarations/theta-sub-nat-eq-prime-sum.md) | 49 | `result-track:47355a2a123be6f69643b8fed441eeba0501adaf63c1bd6fc39abe775274b849` |
-| 3 | `theorem` | [theta_sub_pos_iff_intervalCount](../../../../NumberTheory/PrimeIntervalWitness.lean/declarations/theta-sub-pos-iff-intervalcount.md) | 60 | `result-track:c2e8169a99cbc55cfb42f8e995eca771827f03bc93391edd6b909bf146901a3a` |
-| 4 | `theorem` | [square_not_prime](../../../../NumberTheory/PrimeIntervalWitness.lean/declarations/square-not-prime.md) | 77 | `result-track:0840a0b8a6a2c8d4571d66006212ddb683295e2878f8977c96d50ea3c7762da4` |
-| 5 | `theorem` | [theta_square_sub_pos_iff](../../../../NumberTheory/PrimeIntervalWitness.lean/declarations/theta-square-sub-pos-iff.md) | 83 | `result-track:dcb238039897b023f4f10a96b6f6bfd4cfb8c0f46ba786767ffb2905faf52682` |
+| 1 | `theorem` | [prime_log_sum_pos_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeIntervalWitness.lean/declarations/prime-log-sum-pos-iff.md) | 32 | `result-track:88e4638a9e22d774d993cdf21052b0805b297a8eed637a17141f421ae312425b` |
+| 2 | `theorem` | [theta_sub_nat_eq_prime_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeIntervalWitness.lean/declarations/theta-sub-nat-eq-prime-sum.md) | 49 | `result-track:47355a2a123be6f69643b8fed441eeba0501adaf63c1bd6fc39abe775274b849` |
+| 3 | `theorem` | [theta_sub_pos_iff_intervalCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeIntervalWitness.lean/declarations/theta-sub-pos-iff-intervalcount.md) | 60 | `result-track:c2e8169a99cbc55cfb42f8e995eca771827f03bc93391edd6b909bf146901a3a` |
+| 4 | `theorem` | [square_not_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeIntervalWitness.lean/declarations/square-not-prime.md) | 77 | `result-track:0840a0b8a6a2c8d4571d66006212ddb683295e2878f8977c96d50ea3c7762da4` |
+| 5 | `theorem` | [theta_square_sub_pos_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeIntervalWitness.lean/declarations/theta-square-sub-pos-iff.md) | 83 | `result-track:dcb238039897b023f4f10a96b6f6bfd4cfb8c0f46ba786767ffb2905faf52682` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

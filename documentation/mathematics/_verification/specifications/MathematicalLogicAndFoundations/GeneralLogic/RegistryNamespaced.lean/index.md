@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ControlledPlaneResearchRegistry](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespaced.lean/declarations/controlledplaneresearchregistry.md) | 21 | `declaration-track:41f7733e1e9e625f808d46692d8768187d1dfa4426b64cf003205f6fcbbca8ef` |
-| 2 | `structure` | [ControlledPlanePrerequisites](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespaced.lean/declarations/controlledplaneprerequisites.md) | 40 | `declaration-track:f3823200938e59aa5345f08d89a331cf065d9a42b539ff99094f6c76a3e6303c` |
-| 3 | `theorem` | [ofTheoremRegistry](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespaced.lean/declarations/oftheoremregistry.md) | 50 | `result-track:1cb2af2015894600fa4c4691a1b227ea2633e84a6b1155f12776761379f293b5` |
-| 4 | `structure` | [ControlledPlaneSourceHypotheses](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespaced.lean/declarations/controlledplanesourcehypotheses.md) | 61 | `declaration-track:c284910ba347c87192ca4a14ad4a3b3f963266fcea40e2786524203320873c25` |
-| 5 | `structure` | [ControlledPlaneCompleteness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespaced.lean/declarations/controlledplanecompleteness.md) | 74 | `declaration-track:a3a9fa06667145b1160d17e721adb2ed5c5d704c2ba3e343a006fd1b4db3d520` |
+| 1 | `structure` | [ControlledPlaneResearchRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespaced.lean/declarations/controlledplaneresearchregistry.md) | 21 | `declaration-track:41f7733e1e9e625f808d46692d8768187d1dfa4426b64cf003205f6fcbbca8ef` |
+| 2 | `structure` | [ControlledPlanePrerequisites](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespaced.lean/declarations/controlledplaneprerequisites.md) | 40 | `declaration-track:f3823200938e59aa5345f08d89a331cf065d9a42b539ff99094f6c76a3e6303c` |
+| 3 | `theorem` | [ofTheoremRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespaced.lean/declarations/oftheoremregistry.md) | 50 | `result-track:1cb2af2015894600fa4c4691a1b227ea2633e84a6b1155f12776761379f293b5` |
+| 4 | `structure` | [ControlledPlaneSourceHypotheses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespaced.lean/declarations/controlledplanesourcehypotheses.md) | 61 | `declaration-track:c284910ba347c87192ca4a14ad4a3b3f963266fcea40e2786524203320873c25` |
+| 5 | `structure` | [ControlledPlaneCompleteness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespaced.lean/declarations/controlledplanecompleteness.md) | 74 | `declaration-track:a3a9fa06667145b1160d17e721adb2ed5c5d704c2ba3e343a006fd1b4db3d520` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

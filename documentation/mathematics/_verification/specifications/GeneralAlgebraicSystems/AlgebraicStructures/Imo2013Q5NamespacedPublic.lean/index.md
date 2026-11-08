@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [le_of_all_pow_lt_succ](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/declarations/le-of-all-pow-lt-succ-source-edition-2.md) | 45 | `result-track:dab4e268cb589aeed11cc15a7f45d2477ea4acbbf49888af5b95b667ce278374` |
-| 2 | `theorem` | [le_of_all_pow_lt_succ'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/declarations/le-of-all-pow-lt-succ.md) | 76 | `result-track:1aaed5850e160a22f598a57e4d968e76b589da0ae86bfde431477670a7b896f1` |
-| 3 | `theorem` | [f_pos_of_pos](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/declarations/f-pos-of-pos.md) | 92 | `result-track:fe6f6eb668b4be8b929b386cda43f7feced07b62d85ece34f49f0eb9025b9adf` |
-| 4 | `theorem` | [fx_gt_xm1](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/declarations/fx-gt-xm1.md) | 110 | `result-track:5406a6bf73547d0410dc0a4a92475af4b163588fa17525f83ea115bb142fed97` |
-| 5 | `theorem` | [pow_f_le_f_pow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/declarations/pow-f-le-f-pow.md) | 126 | `result-track:7c06ea7b1e68a500d04beb3771242783add5a77ed57bb60ccb9ec6c7bad1fe83` |
-| 6 | `theorem` | [fixed_point_of_pos_nat_pow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/declarations/fixed-point-of-pos-nat-pow.md) | 141 | `result-track:13395a86baf7687e2aa71c0e8532913c054bea2610ff23cb685c2efc875c1501` |
-| 7 | `theorem` | [fixed_point_of_gt_1](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/declarations/fixed-point-of-gt-1.md) | 152 | `result-track:76b3cd753a658a2831f106375f1131d7a20227c390176f16cbc4c1e61705db18` |
-| 8 | `theorem` | [imo2013_q5](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/declarations/imo2013-q5.md) | 178 | `result-track:f97f66a63469c78feb9e67b7b0b151494c51057ce8aa1659f1c194d2a90812e6` |
+| 1 | `theorem` | [le_of_all_pow_lt_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/declarations/le-of-all-pow-lt-succ-source-edition-2.md) | 45 | `result-track:dab4e268cb589aeed11cc15a7f45d2477ea4acbbf49888af5b95b667ce278374` |
+| 2 | `theorem` | [le_of_all_pow_lt_succ'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/declarations/le-of-all-pow-lt-succ.md) | 76 | `result-track:1aaed5850e160a22f598a57e4d968e76b589da0ae86bfde431477670a7b896f1` |
+| 3 | `theorem` | [f_pos_of_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/declarations/f-pos-of-pos.md) | 92 | `result-track:fe6f6eb668b4be8b929b386cda43f7feced07b62d85ece34f49f0eb9025b9adf` |
+| 4 | `theorem` | [fx_gt_xm1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/declarations/fx-gt-xm1.md) | 110 | `result-track:5406a6bf73547d0410dc0a4a92475af4b163588fa17525f83ea115bb142fed97` |
+| 5 | `theorem` | [pow_f_le_f_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/declarations/pow-f-le-f-pow.md) | 126 | `result-track:7c06ea7b1e68a500d04beb3771242783add5a77ed57bb60ccb9ec6c7bad1fe83` |
+| 6 | `theorem` | [fixed_point_of_pos_nat_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/declarations/fixed-point-of-pos-nat-pow.md) | 141 | `result-track:13395a86baf7687e2aa71c0e8532913c054bea2610ff23cb685c2efc875c1501` |
+| 7 | `theorem` | [fixed_point_of_gt_1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/declarations/fixed-point-of-gt-1.md) | 152 | `result-track:76b3cd753a658a2831f106375f1131d7a20227c390176f16cbc4c1e61705db18` |
+| 8 | `theorem` | [imo2013_q5](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q5NamespacedPublic.lean/declarations/imo2013-q5.md) | 178 | `result-track:f97f66a63469c78feb9e67b7b0b151494c51057ce8aa1659f1c194d2a90812e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

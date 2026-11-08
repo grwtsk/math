@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryMvPolynomialExpandNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryMvPolynomialExpandNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialExpandNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialExpandNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [map_frobenius_expand](../../../../CommutativeAlgebra/RingTheoryMvPolynomialExpandNamespacedPublic.lean/declarations/map-frobenius-expand.md) | 35 | `result-track:e4887ff609987f5126cbac115e271f1c612c689890f0691ce512a078d9cf5ff7` |
-| 2 | `theorem` | [map_iterateFrobenius_expand](../../../../CommutativeAlgebra/RingTheoryMvPolynomialExpandNamespacedPublic.lean/declarations/map-iteratefrobenius-expand.md) | 40 | `result-track:e4cff05bf00535895e361fd7358503936e7694a43eb2e5db7f5b974c147a765a` |
-| 3 | `theorem` | [Ring Theory Mv Polynomial Expand Namespaced Public](../../../../CommutativeAlgebra/RingTheoryMvPolynomialExpandNamespacedPublic.lean/declarations/expand-card.md) | 50 | `result-track:1ee99ab2f182d5d399a8116a080971307fcacd8b22fd71828c107531b8c8d498` |
+| 1 | `theorem` | [map_frobenius_expand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialExpandNamespacedPublic.lean/declarations/map-frobenius-expand.md) | 35 | `result-track:e4887ff609987f5126cbac115e271f1c612c689890f0691ce512a078d9cf5ff7` |
+| 2 | `theorem` | [map_iterateFrobenius_expand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialExpandNamespacedPublic.lean/declarations/map-iteratefrobenius-expand.md) | 40 | `result-track:e4cff05bf00535895e361fd7358503936e7694a43eb2e5db7f5b974c147a765a` |
+| 3 | `theorem` | [Ring Theory Mv Polynomial Expand Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialExpandNamespacedPublic.lean/declarations/expand-card.md) | 50 | `result-track:1ee99ab2f182d5d399a8116a080971307fcacd8b22fd71828c107531b8c8d498` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

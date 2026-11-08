@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TwoFixedPositiveConstantsForTheActualSixthCensus.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TwoFixedPositiveConstantsForTheActualSixthCensus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TwoFixedPositiveConstantsForTheActualSixthCensus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TwoFixedPositiveConstantsForTheActualSixthCensus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_laplace_square_le_full_absolute_norm](../../../../MeasureAndIntegration/TwoFixedPositiveConstantsForTheActualSixthCensus.lean/declarations/actual-laplace-square-le-full-absolute-norm.md) | 26 | `result-track:ea42025130e66beb84158ed91896ea78d43ee4814aba8af1bd7d2873f70f93e3` |
-| 2 | `theorem` | [actual_sixth_census_complete_upper](../../../../MeasureAndIntegration/TwoFixedPositiveConstantsForTheActualSixthCensus.lean/declarations/actual-sixth-census-complete-upper.md) | 62 | `result-track:8cc103b4d379a0e94af98f712886c8adbeadc974adef3fd53bc27ddabab44bac` |
-| 3 | `theorem` | [actual_sixth_census_two_eventual_positive_constants](../../../../MeasureAndIntegration/TwoFixedPositiveConstantsForTheActualSixthCensus.lean/declarations/actual-sixth-census-two-eventual-positive-constants.md) | 79 | `result-track:8f1e18a2be2e414570f571f6d8d7a31ef40fd96780337ddb9c8db4325c24bd52` |
+| 1 | `theorem` | [actual_laplace_square_le_full_absolute_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TwoFixedPositiveConstantsForTheActualSixthCensus.lean/declarations/actual-laplace-square-le-full-absolute-norm.md) | 26 | `result-track:ea42025130e66beb84158ed91896ea78d43ee4814aba8af1bd7d2873f70f93e3` |
+| 2 | `theorem` | [actual_sixth_census_complete_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TwoFixedPositiveConstantsForTheActualSixthCensus.lean/declarations/actual-sixth-census-complete-upper.md) | 62 | `result-track:8cc103b4d379a0e94af98f712886c8adbeadc974adef3fd53bc27ddabab44bac` |
+| 3 | `theorem` | [actual_sixth_census_two_eventual_positive_constants](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TwoFixedPositiveConstantsForTheActualSixthCensus.lean/declarations/actual-sixth-census-two-eventual-positive-constants.md) | 79 | `result-track:8f1e18a2be2e414570f571f6d8d7a31ef40fd96780337ddb9c8db4325c24bd52` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

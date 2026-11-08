@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobject.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobject.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobject.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobject.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [mono_of_isColimit_monoOver](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobject.lean/declarations/mono-of-iscolimit-monoover.md) | 47 | `result-track:28991e10c2115a605933f925e4d0dcd68b62b8c4a88e35eead56a1fc03c0b8e9` |
-| 2 | `lemma` | [subobjectMk_of_isColimit_eq_iSup](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobject.lean/declarations/subobjectmk-of-iscolimit-eq-isup.md) | 58 | `result-track:1cae422a10f44bbcc1bcef2f420d1a96889051e00bd367ea9f6aa29860b72219` |
-| 3 | `def` | [isColimitMapCoconeOfSubobjectMkEqISup](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobject.lean/declarations/iscolimitmapcoconeofsubobjectmkeqisup.md) | 87 | `declaration-track:e384eccd918c0af820de1a1cd856e36678ab2fcba21bdfdd4aed09a9671a0b4c` |
-| 4 | `lemma` | [exists_isIso_of_functor_from_monoOver](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobject.lean/declarations/exists-isiso-of-functor-from-monoover.md) | 110 | `result-track:8f09056297e378f25a7e5d828ae9e933e032080e92fa4dcda389c22830cd53cc` |
+| 1 | `lemma` | [mono_of_isColimit_monoOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobject.lean/declarations/mono-of-iscolimit-monoover.md) | 47 | `result-track:28991e10c2115a605933f925e4d0dcd68b62b8c4a88e35eead56a1fc03c0b8e9` |
+| 2 | `lemma` | [subobjectMk_of_isColimit_eq_iSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobject.lean/declarations/subobjectmk-of-iscolimit-eq-isup.md) | 58 | `result-track:1cae422a10f44bbcc1bcef2f420d1a96889051e00bd367ea9f6aa29860b72219` |
+| 3 | `def` | [isColimitMapCoconeOfSubobjectMkEqISup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobject.lean/declarations/iscolimitmapcoconeofsubobjectmkeqisup.md) | 87 | `declaration-track:e384eccd918c0af820de1a1cd856e36678ab2fcba21bdfdd4aed09a9671a0b4c` |
+| 4 | `lemma` | [exists_isIso_of_functor_from_monoOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobject.lean/declarations/exists-isiso-of-functor-from-monoover.md) | 110 | `result-track:8f09056297e378f25a7e5d828ae9e933e032080e92fa4dcda389c22830cd53cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

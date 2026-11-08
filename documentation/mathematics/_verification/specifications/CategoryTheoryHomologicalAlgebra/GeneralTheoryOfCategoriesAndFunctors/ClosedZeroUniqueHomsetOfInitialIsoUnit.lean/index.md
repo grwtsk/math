@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedZeroUniqueHomsetOfInitialIsoUnit.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedZeroUniqueHomsetOfInitialIsoUnit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedZeroUniqueHomsetOfInitialIsoUnit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedZeroUniqueHomsetOfInitialIsoUnit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [uniqueHomsetOfInitialIsoUnit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedZeroUniqueHomsetOfInitialIsoUnit.lean/declarations/uniquehomsetofinitialisounit.md) | 37 | `declaration-track:f060ccbfc5ff802cd24c23cacc2261b35b1476c85be5aa341ecdeec555b4c814` |
-| 2 | `def` | [uniqueHomsetOfZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedZeroUniqueHomsetOfInitialIsoUnit.lean/declarations/uniquehomsetofzero.md) | 47 | `declaration-track:b894e2ab3645018cd9c295a1a104639c11a237cf94367620515ea231aedb33ab` |
-| 3 | `def` | [equivPUnit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedZeroUniqueHomsetOfInitialIsoUnit.lean/declarations/equivpunit.md) | 57 | `declaration-track:8934d3270d5000748222498a16d810c6f14032929652cce5f3a0bb25f4fc4231` |
+| 1 | `def` | [uniqueHomsetOfInitialIsoUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedZeroUniqueHomsetOfInitialIsoUnit.lean/declarations/uniquehomsetofinitialisounit.md) | 37 | `declaration-track:f060ccbfc5ff802cd24c23cacc2261b35b1476c85be5aa341ecdeec555b4c814` |
+| 2 | `def` | [uniqueHomsetOfZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedZeroUniqueHomsetOfInitialIsoUnit.lean/declarations/uniquehomsetofzero.md) | 47 | `declaration-track:b894e2ab3645018cd9c295a1a104639c11a237cf94367620515ea231aedb33ab` |
+| 3 | `def` | [equivPUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedZeroUniqueHomsetOfInitialIsoUnit.lean/declarations/equivpunit.md) | 57 | `declaration-track:8934d3270d5000748222498a16d810c6f14032929652cce5f3a0bb25f4fc4231` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

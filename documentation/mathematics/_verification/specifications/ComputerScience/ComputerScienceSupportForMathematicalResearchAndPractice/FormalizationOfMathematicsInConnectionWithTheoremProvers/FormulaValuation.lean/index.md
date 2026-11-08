@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FormulaValuation.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FormulaValuation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FormulaValuation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FormulaValuation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Valuation](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FormulaValuation.lean/declarations/valuation.md) | 14 | `declaration-track:d1777227df798dc29ccbe8c9472d22650fb1af85b10ca22a445bd27792d0bfb6` |
-| 2 | `inductive` | [Formula](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FormulaValuation.lean/declarations/formula.md) | 17 | `declaration-track:f449a9c3ecf2f6d12cbdead8d083b8cad6eef57b89619bbe08448f752573c944` |
-| 3 | `def` | [const](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FormulaValuation.lean/declarations/const.md) | 33 | `declaration-track:fa9ccabead0927456cd447c8efa236d18b5236cd9f095df2de75bd92abb57aa5` |
+| 1 | `abbrev` | [Valuation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FormulaValuation.lean/declarations/valuation.md) | 14 | `declaration-track:d1777227df798dc29ccbe8c9472d22650fb1af85b10ca22a445bd27792d0bfb6` |
+| 2 | `inductive` | [Formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FormulaValuation.lean/declarations/formula.md) | 17 | `declaration-track:f449a9c3ecf2f6d12cbdead8d083b8cad6eef57b89619bbe08448f752573c944` |
+| 3 | `def` | [const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FormulaValuation.lean/declarations/const.md) | 33 | `declaration-track:fa9ccabead0927456cd447c8efa236d18b5236cd9f095df2de75bd92abb57aa5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

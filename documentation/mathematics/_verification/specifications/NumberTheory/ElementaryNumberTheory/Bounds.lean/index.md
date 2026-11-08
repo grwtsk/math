@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/Bounds.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/Bounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Bounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Bounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [choose_le_pow](../../../../../NumberTheory/ElementaryNumberTheory/Bounds.lean/declarations/choose-le-pow.md) | 31 | `result-track:ac2d995c71c3276c189b7117790377b14b99075127bda90d4c3c916455e4ec63` |
-| 2 | `theorem` | [pow_le_choose](../../../../../NumberTheory/ElementaryNumberTheory/Bounds.lean/declarations/pow-le-choose.md) | 40 | `result-track:18953cb313e889aaba9f834889abb21c51981790a049cb9225b8a9f37f9ef9dd` |
+| 1 | `theorem` | [choose_le_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Bounds.lean/declarations/choose-le-pow.md) | 31 | `result-track:ac2d995c71c3276c189b7117790377b14b99075127bda90d4c3c916455e4ec63` |
+| 2 | `theorem` | [pow_le_choose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Bounds.lean/declarations/pow-le-choose.md) | 40 | `result-track:18953cb313e889aaba9f834889abb21c51981790a049cb9225b8a9f37f9ef9dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

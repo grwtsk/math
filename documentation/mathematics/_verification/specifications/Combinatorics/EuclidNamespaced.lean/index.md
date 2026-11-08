@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/EuclidNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/EuclidNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EuclidNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EuclidNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [euclid_prime_not_in_finite_set](../../../../Combinatorics/EuclidNamespaced.lean/declarations/euclid-prime-not-in-finite-set.md) | 24 | `result-track:d2279ffc007c5eaa5b0f003150820ef0d8eba63e376467fcf74123cedcb5a9d5` |
-| 2 | `theorem` | [infinitely_many_primes_checked](../../../../Combinatorics/EuclidNamespaced.lean/declarations/infinitely-many-primes-checked.md) | 47 | `result-track:e0485415561263a525c87f40b1227b8c526e32952b3b0f6d91184cabd21ba297` |
+| 1 | `theorem` | [euclid_prime_not_in_finite_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EuclidNamespaced.lean/declarations/euclid-prime-not-in-finite-set.md) | 24 | `result-track:d2279ffc007c5eaa5b0f003150820ef0d8eba63e376467fcf74123cedcb5a9d5` |
+| 2 | `theorem` | [infinitely_many_primes_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EuclidNamespaced.lean/declarations/infinitely-many-primes-checked.md) | 47 | `result-track:e0485415561263a525c87f40b1227b8c526e32952b3b0f6d91184cabd21ba297` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

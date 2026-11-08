@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticContinuationMapNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticContinuationMapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticContinuationMapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticContinuationMapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [continuation_map_respects_differential](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticContinuationMapNamespaced.lean/declarations/continuation-map-respects-differential.md) | 27 | `result-track:64921c6575b9cc10df13762d179468ba63c1f5b15c281562b18bfe8311926c31` |
-| 2 | `theorem` | [continuation_map_has_estimates](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticContinuationMapNamespaced.lean/declarations/continuation-map-has-estimates.md) | 32 | `result-track:f36df61302c52732c7d53a479a1e5163e82dbfcf1cc1d71a4dbcb15386880748` |
+| 1 | `theorem` | [continuation_map_respects_differential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticContinuationMapNamespaced.lean/declarations/continuation-map-respects-differential.md) | 27 | `result-track:64921c6575b9cc10df13762d179468ba63c1f5b15c281562b18bfe8311926c31` |
+| 2 | `theorem` | [continuation_map_has_estimates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticContinuationMapNamespaced.lean/declarations/continuation-map-has-estimates.md) | 32 | `result-track:f36df61302c52732c7d53a479a1e5163e82dbfcf1cc1d71a4dbcb15386880748` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

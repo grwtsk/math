@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LocalPropertiesInjectiveDimensionPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LocalPropertiesInjectiveDimensionPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesInjectiveDimensionPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesInjectiveDimensionPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/LocalPropertiesInjectiveDimensionPublic.lean/declarations/instance.md) | 34 | `declaration-track:589eee58fc768dbcabf5e38eded36c64796b3805c5e639f4dec5649c24b310e3` |
-| 2 | `lemma` | [localizedModule_hasInjectiveDimensionLE](../../../../CommutativeAlgebra/LocalPropertiesInjectiveDimensionPublic.lean/declarations/localizedmodule-hasinjectivedimensionle.md) | 42 | `result-track:062c9f5d1b4e68b2eb7e41e37962914731fe8ba45509822bf6333b994065cd59` |
-| 3 | `lemma` | [injectiveDimension_le_injectiveDimension_of_isLocalizedModule](../../../../CommutativeAlgebra/LocalPropertiesInjectiveDimensionPublic.lean/declarations/injectivedimension-le-injectivedimension-of-islocalizedmodule.md) | 69 | `result-track:dfc1dfa3ecdb2c9d37ed8417721dda2cbe2d7ae9ba08a4ddfdd766837918b803` |
-| 4 | `lemma` | [hasInjectiveDimensionLE_iff_forall_maximalSpectrum](../../../../CommutativeAlgebra/LocalPropertiesInjectiveDimensionPublic.lean/declarations/hasinjectivedimensionle-iff-forall-maximalspectrum.md) | 88 | `result-track:c55a4c04bdd46d08a05dace90764666645aac5b1573cf56c4d5c0ffa4ab1f523` |
-| 5 | `lemma` | [hasInjectiveDimensionLE_iff_forall_primeSpectrum](../../../../CommutativeAlgebra/LocalPropertiesInjectiveDimensionPublic.lean/declarations/hasinjectivedimensionle-iff-forall-primespectrum.md) | 126 | `result-track:71283f356b628d6f1f8c57f7f73d10be20421cae2e4b0d83f7cdd64c1f44518c` |
-| 6 | `lemma` | [injectiveDimension_eq_iSup_localizedModule_prime](../../../../CommutativeAlgebra/LocalPropertiesInjectiveDimensionPublic.lean/declarations/injectivedimension-eq-isup-localizedmodule-prime.md) | 133 | `result-track:cf1ddd49b67712ce3719aeeb0737e1217f059009e6851411ed38577cb9545e22` |
-| 7 | `lemma` | [injectiveDimension_eq_iSup_localizedModule_maximal](../../../../CommutativeAlgebra/LocalPropertiesInjectiveDimensionPublic.lean/declarations/injectivedimension-eq-isup-localizedmodule-maximal.md) | 155 | `result-track:9a77226b279046e7f4c5acb7577b7e837fab69ec4702d2d1216b669a35d5189a` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesInjectiveDimensionPublic.lean/declarations/instance.md) | 34 | `declaration-track:589eee58fc768dbcabf5e38eded36c64796b3805c5e639f4dec5649c24b310e3` |
+| 2 | `lemma` | [localizedModule_hasInjectiveDimensionLE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesInjectiveDimensionPublic.lean/declarations/localizedmodule-hasinjectivedimensionle.md) | 42 | `result-track:062c9f5d1b4e68b2eb7e41e37962914731fe8ba45509822bf6333b994065cd59` |
+| 3 | `lemma` | [injectiveDimension_le_injectiveDimension_of_isLocalizedModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesInjectiveDimensionPublic.lean/declarations/injectivedimension-le-injectivedimension-of-islocalizedmodule.md) | 69 | `result-track:dfc1dfa3ecdb2c9d37ed8417721dda2cbe2d7ae9ba08a4ddfdd766837918b803` |
+| 4 | `lemma` | [hasInjectiveDimensionLE_iff_forall_maximalSpectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesInjectiveDimensionPublic.lean/declarations/hasinjectivedimensionle-iff-forall-maximalspectrum.md) | 88 | `result-track:c55a4c04bdd46d08a05dace90764666645aac5b1573cf56c4d5c0ffa4ab1f523` |
+| 5 | `lemma` | [hasInjectiveDimensionLE_iff_forall_primeSpectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesInjectiveDimensionPublic.lean/declarations/hasinjectivedimensionle-iff-forall-primespectrum.md) | 126 | `result-track:71283f356b628d6f1f8c57f7f73d10be20421cae2e4b0d83f7cdd64c1f44518c` |
+| 6 | `lemma` | [injectiveDimension_eq_iSup_localizedModule_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesInjectiveDimensionPublic.lean/declarations/injectivedimension-eq-isup-localizedmodule-prime.md) | 133 | `result-track:cf1ddd49b67712ce3719aeeb0737e1217f059009e6851411ed38577cb9545e22` |
+| 7 | `lemma` | [injectiveDimension_eq_iSup_localizedModule_maximal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesInjectiveDimensionPublic.lean/declarations/injectivedimension-eq-isup-localizedmodule-maximal.md) | 155 | `result-track:9a77226b279046e7f4c5acb7577b7e837fab69ec4702d2d1216b669a35d5189a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

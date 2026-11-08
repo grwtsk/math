@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/DigammaShift.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/DigammaShift.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DigammaShift.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DigammaShift.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ne_neg_nat_of_re_pos](../../../../FunctionsOfAComplexVariable/DigammaShift.lean/declarations/ne-neg-nat-of-re-pos.md) | 26 | `result-track:e9ae09692c3323f1369894666712b7528a22ca50596a70b026524d17a1bfb972` |
-| 2 | `theorem` | [digamma_add_nat](../../../../FunctionsOfAComplexVariable/DigammaShift.lean/declarations/digamma-add-nat.md) | 33 | `result-track:ffa46784d51bc04dee134d1d11e492e6dffbc537f21934e8537b1326a2f8a2ab` |
-| 3 | `theorem` | [norm_shift_inv_le_half](../../../../FunctionsOfAComplexVariable/DigammaShift.lean/declarations/norm-shift-inv-le-half.md) | 47 | `result-track:f77918f7655fb42fe89bb16b6ef9d20ab08fecf526dd30dacdc525ecd022c2d0` |
-| 4 | `theorem` | [norm_reciprocal_sum_le](../../../../FunctionsOfAComplexVariable/DigammaShift.lean/declarations/norm-reciprocal-sum-le.md) | 57 | `result-track:a9000f71d1bff6fa633b0f5d07eff4cada74d9136df67740c8fa3930ed6b0ad6` |
+| 1 | `theorem` | [ne_neg_nat_of_re_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DigammaShift.lean/declarations/ne-neg-nat-of-re-pos.md) | 26 | `result-track:e9ae09692c3323f1369894666712b7528a22ca50596a70b026524d17a1bfb972` |
+| 2 | `theorem` | [digamma_add_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DigammaShift.lean/declarations/digamma-add-nat.md) | 33 | `result-track:ffa46784d51bc04dee134d1d11e492e6dffbc537f21934e8537b1326a2f8a2ab` |
+| 3 | `theorem` | [norm_shift_inv_le_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DigammaShift.lean/declarations/norm-shift-inv-le-half.md) | 47 | `result-track:f77918f7655fb42fe89bb16b6ef9d20ab08fecf526dd30dacdc525ecd022c2d0` |
+| 4 | `theorem` | [norm_reciprocal_sum_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DigammaShift.lean/declarations/norm-reciprocal-sum-le.md) | 57 | `result-track:a9000f71d1bff6fa633b0f5d07eff4cada74d9136df67740c8fa3930ed6b0ad6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

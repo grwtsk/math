@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [projectiveSeminormAux](../../../../FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/declarations/projectiveseminormaux.md) | 59 | `declaration-track:c2fc9740ed43658a12675051c4acbc551be7ba018165f744c45db5c4488a8e82` |
-| 2 | `theorem` | [projectiveSeminormAux_nonneg](../../../../FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/declarations/projectiveseminormaux-nonneg.md) | 62 | `result-track:17c2e875711af0eaf6da40a3da57585c5d412378df698826bdfd2af699922cf2` |
-| 3 | `theorem` | [projectiveSeminormAux_add_le](../../../../FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/declarations/projectiveseminormaux-add-le.md) | 73 | `result-track:bda6d2669632b4b8b138082fdf77386f9b5cbc0ee18c9112d713f365896fd2b0` |
-| 4 | `theorem` | [projectiveSeminormAux_smul](../../../../FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/declarations/projectiveseminormaux-smul.md) | 77 | `result-track:1999ef76ef600d486d77d3a621fdcf23ac8137abf0c8572b30385ae4dd3645ab` |
-| 5 | `theorem` | [bddBelow_projectiveSemiNormAux](../../../../FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/declarations/bddbelow-projectiveseminormaux.md) | 84 | `result-track:d46faed7b2f7e5c00ae06132e24eac4174629e96fa3f72a6d0334a7312d8441a` |
-| 6 | `def` | [projectiveSeminorm](../../../../FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/declarations/projectiveseminorm.md) | 96 | `declaration-track:8b78d2ff87d1f6570763a150dcdb0b2d935c499f5abe0d65b9b7b109405c8d48` |
-| 7 | `theorem` | [projectiveSeminorm_apply](../../../../FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/declarations/projectiveseminorm-apply.md) | 116 | `result-track:36764833f1e5f1aa2bfadce77e351833750bacf3e02998d46b463604eacc2275` |
-| 8 | `theorem` | [projectiveSeminorm_tprod_le](../../../../FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/declarations/projectiveseminorm-tprod-le.md) | 119 | `result-track:23bd7179b28a97f5170b0a3ff7fa4c16436e5b5a4bb38b8e950c8c0d3933b3e8` |
-| 9 | `theorem` | [norm_eval_le_projectiveSeminorm](../../../../FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/declarations/norm-eval-le-projectiveseminorm.md) | 126 | `result-track:c02303e4431e83e366a47fea75ae604a10e6a00552fcb0fc83dfcf62642d04a5` |
+| 1 | `def` | [projectiveSeminormAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/declarations/projectiveseminormaux.md) | 59 | `declaration-track:c2fc9740ed43658a12675051c4acbc551be7ba018165f744c45db5c4488a8e82` |
+| 2 | `theorem` | [projectiveSeminormAux_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/declarations/projectiveseminormaux-nonneg.md) | 62 | `result-track:17c2e875711af0eaf6da40a3da57585c5d412378df698826bdfd2af699922cf2` |
+| 3 | `theorem` | [projectiveSeminormAux_add_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/declarations/projectiveseminormaux-add-le.md) | 73 | `result-track:bda6d2669632b4b8b138082fdf77386f9b5cbc0ee18c9112d713f365896fd2b0` |
+| 4 | `theorem` | [projectiveSeminormAux_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/declarations/projectiveseminormaux-smul.md) | 77 | `result-track:1999ef76ef600d486d77d3a621fdcf23ac8137abf0c8572b30385ae4dd3645ab` |
+| 5 | `theorem` | [bddBelow_projectiveSemiNormAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/declarations/bddbelow-projectiveseminormaux.md) | 84 | `result-track:d46faed7b2f7e5c00ae06132e24eac4174629e96fa3f72a6d0334a7312d8441a` |
+| 6 | `def` | [projectiveSeminorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/declarations/projectiveseminorm.md) | 96 | `declaration-track:8b78d2ff87d1f6570763a150dcdb0b2d935c499f5abe0d65b9b7b109405c8d48` |
+| 7 | `theorem` | [projectiveSeminorm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/declarations/projectiveseminorm-apply.md) | 116 | `result-track:36764833f1e5f1aa2bfadce77e351833750bacf3e02998d46b463604eacc2275` |
+| 8 | `theorem` | [projectiveSeminorm_tprod_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/declarations/projectiveseminorm-tprod-le.md) | 119 | `result-track:23bd7179b28a97f5170b0a3ff7fa4c16436e5b5a4bb38b8e950c8c0d3933b3e8` |
+| 9 | `theorem` | [norm_eval_le_projectiveSeminorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminormNamespaced.lean/declarations/norm-eval-le-projectiveseminorm.md) | 126 | `result-track:c02303e4431e83e366a47fea75ae604a10e6a00552fcb0fc83dfcf62642d04a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

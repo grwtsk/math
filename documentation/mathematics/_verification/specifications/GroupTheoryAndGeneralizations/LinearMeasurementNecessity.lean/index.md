@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/LinearMeasurementNecessity.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/LinearMeasurementNecessity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LinearMeasurementNecessity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LinearMeasurementNecessity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.LinearRedundantMeasurements`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearRedundantMeasurements.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.LinearRedundantMeasurements`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearRedundantMeasurements.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [extra_detects_relevant_invisible_direction](../../../../GroupTheoryAndGeneralizations/LinearMeasurementNecessity.lean/declarations/extra-detects-relevant-invisible-direction.md) | 28 | `result-track:26d6fdedef45d1393d77b61bd637c4831425ca79c0118c68f3c129e1d6823fc2` |
-| 2 | `theorem` | [unresolved_direction_refutes_unique_reconstruction](../../../../GroupTheoryAndGeneralizations/LinearMeasurementNecessity.lean/declarations/unresolved-direction-refutes-unique-reconstruction.md) | 38 | `result-track:442de893365fbc3390e8964cb54c162ea906c76d0d3ad552d738f4a5a4a4d5c7` |
+| 1 | `theorem` | [extra_detects_relevant_invisible_direction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LinearMeasurementNecessity.lean/declarations/extra-detects-relevant-invisible-direction.md) | 28 | `result-track:26d6fdedef45d1393d77b61bd637c4831425ca79c0118c68f3c129e1d6823fc2` |
+| 2 | `theorem` | [unresolved_direction_refutes_unique_reconstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LinearMeasurementNecessity.lean/declarations/unresolved-direction-refutes-unique-reconstruction.md) | 38 | `result-track:442de893365fbc3390e8964cb54c162ea906c76d0d3ad552d738f4a5a4a4d5c7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

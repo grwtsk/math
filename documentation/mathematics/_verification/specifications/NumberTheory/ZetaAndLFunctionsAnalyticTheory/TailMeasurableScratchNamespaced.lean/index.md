@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TailMeasurableScratchNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TailMeasurableScratchNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TailMeasurableScratchNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TailMeasurableScratchNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [stronglyMeasurable_thetaTail_scratch](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TailMeasurableScratchNamespaced.lean/declarations/stronglymeasurable-thetatail-scratch.md) | 16 | `result-track:34744fa62a9dd080ecc93be1a9fc3504cfbfae30ef22f4f407b5edf652816c25` |
+| 1 | `theorem` | [stronglyMeasurable_thetaTail_scratch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TailMeasurableScratchNamespaced.lean/declarations/stronglymeasurable-thetatail-scratch.md) | 16 | `result-track:34744fa62a9dd080ecc93be1a9fc3504cfbfae30ef22f4f407b5edf652816c25` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/GenericRestrictionAndBoundaryPredicate.lean/index.md) · [Full source](../../../../Combinatorics/GenericRestrictionAndBoundaryPredicate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GenericRestrictionAndBoundaryPredicate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GenericRestrictionAndBoundaryPredicate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `BitMatrix.Codec.SequentialPrimeSource` — import line 20; external provider; requires a separately pinned dependency.
 - `BitMatrix.Rhetorical.Core` — import line 21; external provider; requires a separately pinned dependency.
 - `BitMatrix.Topology.DesignatedCantor` — import line 22; external provider; requires a separately pinned dependency.
-- [Whole Theory And Symbolic Source](../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/index.md) — import line 24; pinned internal source present.
+- [Whole Theory And Symbolic Source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [source_relative_scalar_exists_unique](../../../../Combinatorics/GenericRestrictionAndBoundaryPredicate.lean/declarations/source-relative-scalar-exists-unique.md) | 39 | `result-track:4f1342162986e92cb63ab248749603e50d892a434f13aa09d7db1d5cac159ada` |
-| 2 | `def` | [validityRestrictedEquiv](../../../../Combinatorics/GenericRestrictionAndBoundaryPredicate.lean/declarations/validityrestrictedequiv.md) | 56 | `declaration-track:885127ec5fe4363127b7debccb92a98bfcefa29d4a3b2b3472f43f577eec00b7` |
-| 3 | `def` | [TransformationCardinalityBoundary](../../../../Combinatorics/GenericRestrictionAndBoundaryPredicate.lean/declarations/transformationcardinalityboundary.md) | 89 | `declaration-track:b780d07f823ad5cce3f7b5039e75af75a1fc629c913840800ecbb14f9cdfb238` |
+| 1 | `theorem` | [source_relative_scalar_exists_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GenericRestrictionAndBoundaryPredicate.lean/declarations/source-relative-scalar-exists-unique.md) | 39 | `result-track:4f1342162986e92cb63ab248749603e50d892a434f13aa09d7db1d5cac159ada` |
+| 2 | `def` | [validityRestrictedEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GenericRestrictionAndBoundaryPredicate.lean/declarations/validityrestrictedequiv.md) | 56 | `declaration-track:885127ec5fe4363127b7debccb92a98bfcefa29d4a3b2b3472f43f577eec00b7` |
+| 3 | `def` | [TransformationCardinalityBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GenericRestrictionAndBoundaryPredicate.lean/declarations/transformationcardinalityboundary.md) | 89 | `declaration-track:b780d07f823ad5cce3f7b5039e75af75a1fc629c913840800ecbb14f9cdfb238` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

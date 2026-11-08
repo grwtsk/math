@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MinpolyAligned.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MinpolyAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MinpolyAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MinpolyAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [minpoly_toLin'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MinpolyAligned.lean/declarations/minpoly-tolin-source-edition-2.md) | 40 | `result-track:461c662264c20b7e6504b3fa50eca9f275b05cc725bd2f85615e11cb66334c88` |
-| 2 | `theorem` | [minpoly_toLin](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MinpolyAligned.lean/declarations/minpoly-tolin.md) | 45 | `result-track:2757dbf9139b6dafca401188bfc83389304a8e88035ee75eb969b996816bf87e` |
-| 3 | `theorem` | [isIntegral](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MinpolyAligned.lean/declarations/isintegral.md) | 50 | `result-track:f80772941377b319546ffabf06cb0626ba9d413430fbc4300d5453d60a2ab68a` |
-| 4 | `theorem` | [minpoly_dvd_charpoly](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MinpolyAligned.lean/declarations/minpoly-dvd-charpoly.md) | 54 | `result-track:f92d021832b568d08a97cd2d0462a8418a73b3ca36dc5485bb19fd824b788f43` |
-| 5 | `theorem` | [minpoly_toMatrix'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MinpolyAligned.lean/declarations/minpoly-tomatrix-source-edition-2.md) | 63 | `result-track:91a88fa280e0d88fb11225b285361ed7a25c1aa842137fce2c602f21f88754a1` |
-| 6 | `theorem` | [minpoly_toMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MinpolyAligned.lean/declarations/minpoly-tomatrix.md) | 68 | `result-track:27bf519b717ab9559fbd23703d6e072d4155fd7383d11b5f9aa4f4c7212483b0` |
-| 7 | `theorem` | [charpoly_leftMulMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MinpolyAligned.lean/declarations/charpoly-leftmulmatrix.md) | 85 | `result-track:62068830f1653d8b717c730c67659ade15d26949bb2fe81b549f5121de17087d` |
+| 1 | `theorem` | [minpoly_toLin'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MinpolyAligned.lean/declarations/minpoly-tolin-source-edition-2.md) | 40 | `result-track:461c662264c20b7e6504b3fa50eca9f275b05cc725bd2f85615e11cb66334c88` |
+| 2 | `theorem` | [minpoly_toLin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MinpolyAligned.lean/declarations/minpoly-tolin.md) | 45 | `result-track:2757dbf9139b6dafca401188bfc83389304a8e88035ee75eb969b996816bf87e` |
+| 3 | `theorem` | [isIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MinpolyAligned.lean/declarations/isintegral.md) | 50 | `result-track:f80772941377b319546ffabf06cb0626ba9d413430fbc4300d5453d60a2ab68a` |
+| 4 | `theorem` | [minpoly_dvd_charpoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MinpolyAligned.lean/declarations/minpoly-dvd-charpoly.md) | 54 | `result-track:f92d021832b568d08a97cd2d0462a8418a73b3ca36dc5485bb19fd824b788f43` |
+| 5 | `theorem` | [minpoly_toMatrix'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MinpolyAligned.lean/declarations/minpoly-tomatrix-source-edition-2.md) | 63 | `result-track:91a88fa280e0d88fb11225b285361ed7a25c1aa842137fce2c602f21f88754a1` |
+| 6 | `theorem` | [minpoly_toMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MinpolyAligned.lean/declarations/minpoly-tomatrix.md) | 68 | `result-track:27bf519b717ab9559fbd23703d6e072d4155fd7383d11b5f9aa4f4c7212483b0` |
+| 7 | `theorem` | [charpoly_leftMulMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MinpolyAligned.lean/declarations/charpoly-leftmulmatrix.md) | 85 | `result-track:62068830f1653d8b717c730c67659ade15d26949bb2fe81b549f5121de17087d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

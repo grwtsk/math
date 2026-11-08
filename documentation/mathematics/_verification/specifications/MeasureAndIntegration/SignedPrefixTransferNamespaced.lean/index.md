@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SignedPrefixTransferNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SignedPrefixTransferNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedPrefixTransferNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedPrefixTransferNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cumulativeSum](../../../../MeasureAndIntegration/SignedPrefixTransferNamespaced.lean/declarations/cumulativesum.md) | 28 | `declaration-track:971564a98f34e5bea07e97bbdd8a89fac694fe6a2cdaba8cf04411192dc087f0` |
-| 2 | `theorem` | [signed_sum_by_parts](../../../../MeasureAndIntegration/SignedPrefixTransferNamespaced.lean/declarations/signed-sum-by-parts.md) | 33 | `result-track:9c1fd4cb22501682e9b369348515e564b7fc329aff69bf921f0dcf0940a07716` |
-| 3 | `theorem` | [abs_weighted_sum_le_prefix_variation](../../../../MeasureAndIntegration/SignedPrefixTransferNamespaced.lean/declarations/abs-weighted-sum-le-prefix-variation.md) | 46 | `result-track:f6bd4cb2c93d5de7608d136dab6e431ffd3491748a3c34f9860b68b98aa7143b` |
-| 4 | `theorem` | [weighted_actual_le_model_add_budget](../../../../MeasureAndIntegration/SignedPrefixTransferNamespaced.lean/declarations/weighted-actual-le-model-add-budget.md) | 64 | `result-track:838e5c031121093017991d37a5a77170354f011317c861b76ad211f47bc3068c` |
-| 5 | `theorem` | [closed_sum_eq_neg_cumulative_integral](../../../../MeasureAndIntegration/SignedPrefixTransferNamespaced.lean/declarations/closed-sum-eq-neg-cumulative-integral.md) | 81 | `result-track:b6585e969761d6d2dd7ad5293d55ab8c7334d2e8a3d6e5601ac8b57b205aefa5` |
+| 1 | `def` | [cumulativeSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedPrefixTransferNamespaced.lean/declarations/cumulativesum.md) | 28 | `declaration-track:971564a98f34e5bea07e97bbdd8a89fac694fe6a2cdaba8cf04411192dc087f0` |
+| 2 | `theorem` | [signed_sum_by_parts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedPrefixTransferNamespaced.lean/declarations/signed-sum-by-parts.md) | 33 | `result-track:9c1fd4cb22501682e9b369348515e564b7fc329aff69bf921f0dcf0940a07716` |
+| 3 | `theorem` | [abs_weighted_sum_le_prefix_variation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedPrefixTransferNamespaced.lean/declarations/abs-weighted-sum-le-prefix-variation.md) | 46 | `result-track:f6bd4cb2c93d5de7608d136dab6e431ffd3491748a3c34f9860b68b98aa7143b` |
+| 4 | `theorem` | [weighted_actual_le_model_add_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedPrefixTransferNamespaced.lean/declarations/weighted-actual-le-model-add-budget.md) | 64 | `result-track:838e5c031121093017991d37a5a77170354f011317c861b76ad211f47bc3068c` |
+| 5 | `theorem` | [closed_sum_eq_neg_cumulative_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedPrefixTransferNamespaced.lean/declarations/closed-sum-eq-neg-cumulative-integral.md) | 81 | `result-track:b6585e969761d6d2dd7ad5293d55ab8c7334d2e8a3d6e5601ac8b57b205aefa5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

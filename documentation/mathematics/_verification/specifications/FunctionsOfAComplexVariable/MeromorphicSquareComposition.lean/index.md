@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/MeromorphicSquareComposition.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/MeromorphicSquareComposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/MeromorphicSquareComposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/MeromorphicSquareComposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [deriv_square](../../../../FunctionsOfAComplexVariable/MeromorphicSquareComposition.lean/declarations/deriv-square.md) | 56 | `result-track:7f0a4e19cd2e4c2003533466f3bd56c0e4408770a2ee124e69b1270b0ab40b8b` |
-| 2 | `theorem` | [meromorphicOrderAt_comp_square](../../../../FunctionsOfAComplexVariable/MeromorphicSquareComposition.lean/declarations/meromorphicorderat-comp-square.md) | 61 | `result-track:131bf5e41d6f66c138bed11819dc570ff65e16eff845c04b9d52f4d83c473619` |
+| 1 | `theorem` | [deriv_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/MeromorphicSquareComposition.lean/declarations/deriv-square.md) | 56 | `result-track:7f0a4e19cd2e4c2003533466f3bd56c0e4408770a2ee124e69b1270b0ab40b8b` |
+| 2 | `theorem` | [meromorphicOrderAt_comp_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/MeromorphicSquareComposition.lean/declarations/meromorphicorderat-comp-square.md) | 61 | `result-track:131bf5e41d6f66c138bed11819dc570ff65e16eff845c04b9d52f4d83c473619` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

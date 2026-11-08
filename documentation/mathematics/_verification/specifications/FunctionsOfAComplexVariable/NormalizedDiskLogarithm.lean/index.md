@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.NormalizedLogDerivativeBound`](../../../../FunctionsOfAComplexVariable/NormalizedLogDerivativeBound.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.NormalizedLogDerivativeBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormalizedLogDerivativeBound.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.Complex.HasPrimitives` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_normalized_log](../../../../FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/declarations/exists-normalized-log.md) | 29 | `result-track:40e40cea30084602dd057aaf3cfc207ec95f609d53d83fd745950bc10f109291` |
-| 2 | `theorem` | [differentiableOn_of_log_derivative](../../../../FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/declarations/differentiableon-of-log-derivative.md) | 57 | `result-track:81faeeda2e053a8f3b242334199014141cb0bd509a5e0d262fe88b7d967f58fc` |
-| 3 | `theorem` | [normalized_primitives_eqOn](../../../../FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/declarations/normalized-primitives-eqon.md) | 63 | `result-track:e91d915ca7710ccbe60755d91c136c1a9a187901127ad1944b6d470fbc2a306d` |
-| 4 | `theorem` | [re_log_le_of_modulus](../../../../FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/declarations/re-log-le-of-modulus.md) | 79 | `result-track:dbbff8938800be62b75e2328b0d0f9c65ae04995bd6eba68dc263e3cc620e27c` |
-| 5 | `theorem` | [exists_normalized_log_bounded](../../../../FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/declarations/exists-normalized-log-bounded.md) | 96 | `result-track:8bfcf3635be1c3a38374eae295b712afa95cf823de691174aee05b010125c1c0` |
+| 1 | `theorem` | [exists_normalized_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/declarations/exists-normalized-log.md) | 29 | `result-track:40e40cea30084602dd057aaf3cfc207ec95f609d53d83fd745950bc10f109291` |
+| 2 | `theorem` | [differentiableOn_of_log_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/declarations/differentiableon-of-log-derivative.md) | 57 | `result-track:81faeeda2e053a8f3b242334199014141cb0bd509a5e0d262fe88b7d967f58fc` |
+| 3 | `theorem` | [normalized_primitives_eqOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/declarations/normalized-primitives-eqon.md) | 63 | `result-track:e91d915ca7710ccbe60755d91c136c1a9a187901127ad1944b6d470fbc2a306d` |
+| 4 | `theorem` | [re_log_le_of_modulus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/declarations/re-log-le-of-modulus.md) | 79 | `result-track:dbbff8938800be62b75e2328b0d0f9c65ae04995bd6eba68dc263e3cc620e27c` |
+| 5 | `theorem` | [exists_normalized_log_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/declarations/exists-normalized-log-bounded.md) | 96 | `result-track:8bfcf3635be1c3a38374eae295b712afa95cf823de691174aee05b010125c1c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

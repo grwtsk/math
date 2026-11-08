@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/NonArchimedeanFiber.lean/index.md) · [Full source](../../../../NumberTheory/NonArchimedeanFiber.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NonArchimedeanFiber.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NonArchimedeanFiber.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MoravaLocalContract](../../../../NumberTheory/NonArchimedeanFiber.lean/declarations/moravalocalcontract.md) | 20 | `declaration-track:14aa4d36253cdf2ecefa697b287aeb3b2df804f354352c9f0922e40d5ac292f4` |
-| 2 | `structure` | [NonArchimedeanTMFFiber](../../../../NumberTheory/NonArchimedeanFiber.lean/declarations/nonarchimedeantmffiber.md) | 27 | `declaration-track:76f42d63483515a0cad0f152b9f20d2db684d11093b8ecd985a065f978ef3c1a` |
-| 3 | `theorem` | [nonarchimedean_fiber_is_finite](../../../../NumberTheory/NonArchimedeanFiber.lean/declarations/nonarchimedean-fiber-is-finite.md) | 37 | `result-track:497c4625a4afa59204cb448d70200ac9eb11998363ad34108d14da280609472c` |
-| 4 | `theorem` | [nonarchimedean_local_modular_compatible](../../../../NumberTheory/NonArchimedeanFiber.lean/declarations/nonarchimedean-local-modular-compatible.md) | 42 | `result-track:3ae5c813486648b4f85c1de86d3a2faafb43e9f9ce241d7d881eef616fc5a087` |
+| 1 | `structure` | [MoravaLocalContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NonArchimedeanFiber.lean/declarations/moravalocalcontract.md) | 20 | `declaration-track:14aa4d36253cdf2ecefa697b287aeb3b2df804f354352c9f0922e40d5ac292f4` |
+| 2 | `structure` | [NonArchimedeanTMFFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NonArchimedeanFiber.lean/declarations/nonarchimedeantmffiber.md) | 27 | `declaration-track:76f42d63483515a0cad0f152b9f20d2db684d11093b8ecd985a065f978ef3c1a` |
+| 3 | `theorem` | [nonarchimedean_fiber_is_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NonArchimedeanFiber.lean/declarations/nonarchimedean-fiber-is-finite.md) | 37 | `result-track:497c4625a4afa59204cb448d70200ac9eb11998363ad34108d14da280609472c` |
+| 4 | `theorem` | [nonarchimedean_local_modular_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NonArchimedeanFiber.lean/declarations/nonarchimedean-local-modular-compatible.md) | 42 | `result-track:3ae5c813486648b4f85c1de86d3a2faafb43e9f9ce241d7d881eef616fc5a087` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

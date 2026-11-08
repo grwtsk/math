@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotDisjointPublic.lean/index.md) · [Full source](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotDisjointPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotDisjointPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotDisjointPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [disjoint_atBot_principal_Ioi](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotDisjointPublic.lean/declarations/disjoint-atbot-principal-ioi.md) | 26 | `result-track:61e074284a9663d1eeac172780df27f1b26fca5ce587b405333691c848fa4ea6` |
-| 2 | `theorem` | [disjoint_atTop_principal_Iic](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotDisjointPublic.lean/declarations/disjoint-attop-principal-iic.md) | 30 | `result-track:430e23897a76e91fc3690010d10644b359647833ec19e2c893a10ffc4acbd306` |
-| 3 | `theorem` | [disjoint_pure_atTop](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotDisjointPublic.lean/declarations/disjoint-pure-attop.md) | 36 | `result-track:d0c5fdcb9d738bdd062a5146c904020b688a1c36e6fd4596aed3c1880015925e` |
-| 4 | `theorem` | [disjoint_atBot_atTop](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotDisjointPublic.lean/declarations/disjoint-atbot-attop.md) | 41 | `result-track:bd18099963c328fc9e747870777b843b3eafb5051989b3103acf5e9f1235a54b` |
+| 1 | `theorem` | [disjoint_atBot_principal_Ioi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotDisjointPublic.lean/declarations/disjoint-atbot-principal-ioi.md) | 26 | `result-track:61e074284a9663d1eeac172780df27f1b26fca5ce587b405333691c848fa4ea6` |
+| 2 | `theorem` | [disjoint_atTop_principal_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotDisjointPublic.lean/declarations/disjoint-attop-principal-iic.md) | 30 | `result-track:430e23897a76e91fc3690010d10644b359647833ec19e2c893a10ffc4acbd306` |
+| 3 | `theorem` | [disjoint_pure_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotDisjointPublic.lean/declarations/disjoint-pure-attop.md) | 36 | `result-track:d0c5fdcb9d738bdd062a5146c904020b688a1c36e6fd4596aed3c1880015925e` |
+| 4 | `theorem` | [disjoint_atBot_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotDisjointPublic.lean/declarations/disjoint-atbot-attop.md) | 41 | `result-track:bd18099963c328fc9e747870777b843b3eafb5051989b3103acf5e9f1235a54b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

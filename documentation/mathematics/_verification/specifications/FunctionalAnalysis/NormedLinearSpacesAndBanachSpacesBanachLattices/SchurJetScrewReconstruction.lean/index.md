@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SchurJetScrewReconstruction.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SchurJetScrewReconstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SchurJetScrewReconstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SchurJetScrewReconstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.ErrorBounds.ScrewSpectralReconstruction`](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScrewSpectralReconstruction.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.ScrewSpectralReconstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScrewSpectralReconstruction.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Budget](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SchurJetScrewReconstruction.lean/declarations/budget.md) | 19 | `declaration-track:0e09353f90a43b69b2c99946c39b5a02e64ea6824b11febcb74a851b4b5fbdf0` |
-| 2 | `def` | [Budget.total](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SchurJetScrewReconstruction.lean/declarations/budget-total.md) | 27 | `declaration-track:5a73da785e401386abb7b8405acbae51fb2eeca8667ad6d8b16ee316ec0d1eeb` |
-| 3 | `def` | [Budget.toScrewSpectral](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SchurJetScrewReconstruction.lean/declarations/budget-toscrewspectral.md) | 31 | `declaration-track:67626fe4320b0ec25b13210b275f427c373fc89043fa25016ed8d5e709f6e149` |
-| 4 | `theorem` | [Budget.toScrewSpectral_total](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SchurJetScrewReconstruction.lean/declarations/budget-toscrewspectral-total.md) | 40 | `result-track:facf5fa53b554692139f22c1f3b05fb1107a9edbc00577446d6596ae7edff754` |
-| 5 | `theorem` | [reconstruction_error_bound](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SchurJetScrewReconstruction.lean/declarations/reconstruction-error-bound.md) | 46 | `result-track:251496431f0c01df02222b20cbaec33ae2a93f58c767236d94b8a2b6fb95c275` |
+| 1 | `structure` | [Budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SchurJetScrewReconstruction.lean/declarations/budget.md) | 19 | `declaration-track:0e09353f90a43b69b2c99946c39b5a02e64ea6824b11febcb74a851b4b5fbdf0` |
+| 2 | `def` | [Budget.total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SchurJetScrewReconstruction.lean/declarations/budget-total.md) | 27 | `declaration-track:5a73da785e401386abb7b8405acbae51fb2eeca8667ad6d8b16ee316ec0d1eeb` |
+| 3 | `def` | [Budget.toScrewSpectral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SchurJetScrewReconstruction.lean/declarations/budget-toscrewspectral.md) | 31 | `declaration-track:67626fe4320b0ec25b13210b275f427c373fc89043fa25016ed8d5e709f6e149` |
+| 4 | `theorem` | [Budget.toScrewSpectral_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SchurJetScrewReconstruction.lean/declarations/budget-toscrewspectral-total.md) | 40 | `result-track:facf5fa53b554692139f22c1f3b05fb1107a9edbc00577446d6596ae7edff754` |
+| 5 | `theorem` | [reconstruction_error_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SchurJetScrewReconstruction.lean/declarations/reconstruction-error-bound.md) | 46 | `result-track:251496431f0c01df02222b20cbaec33ae2a93f58c767236d94b8a2b6fb95c275` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

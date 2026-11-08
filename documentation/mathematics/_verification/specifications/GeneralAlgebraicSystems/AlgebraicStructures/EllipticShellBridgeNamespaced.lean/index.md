@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [shell_weil_compatible](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeNamespaced.lean/declarations/shell-weil-compatible.md) | 29 | `result-track:53edc745ab06b6f1f586e7276cc0f02f896d311e002f3dcd1d932faba2455ef7` |
-| 2 | `theorem` | [selected_shell_twist_has_preimage](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeNamespaced.lean/declarations/selected-shell-twist-has-preimage.md) | 40 | `result-track:9e4e7442d8de167066004c3a8eedb6776cbf58e2065e34f39f14c3ea6610aa59` |
+| 1 | `theorem` | [shell_weil_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeNamespaced.lean/declarations/shell-weil-compatible.md) | 29 | `result-track:53edc745ab06b6f1f586e7276cc0f02f896d311e002f3dcd1d932faba2455ef7` |
+| 2 | `theorem` | [selected_shell_twist_has_preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeNamespaced.lean/declarations/selected-shell-twist-has-preimage.md) | 40 | `result-track:9e4e7442d8de167066004c3a8eedb6776cbf58e2065e34f39f14c3ea6610aa59` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

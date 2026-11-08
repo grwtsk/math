@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/AsymptoticAnalysisPowerWeightedSquareSummability.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/AsymptoticAnalysisPowerWeightedSquareSummability.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/AsymptoticAnalysisPowerWeightedSquareSummability.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/AsymptoticAnalysisPowerWeightedSquareSummability.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [summable_sq_mul_rpow_of_abs_le_rpow](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/AsymptoticAnalysisPowerWeightedSquareSummability.lean/declarations/summable-sq-mul-rpow-of-abs-le-rpow.md) | 20 | `result-track:69db282304b225cea8fc3b5f426a3fe427b3163b4f9a836e26f2a4fb4873589b` |
+| 1 | `theorem` | [summable_sq_mul_rpow_of_abs_le_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/AsymptoticAnalysisPowerWeightedSquareSummability.lean/declarations/summable-sq-mul-rpow-of-abs-le-rpow.md) | 20 | `result-track:69db282304b225cea8fc3b5f426a3fe427b3163b4f9a836e26f2a4fb4873589b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/H3Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/H3Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/H3Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/H3Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [dcoef_eq_D1coeff](../../../../MeasureAndIntegration/H3Namespaced.lean/declarations/dcoef-eq-d1coeff.md) | 33 | `result-track:fa37f217bde9c8dda8da84cf0c641c7e856ebaef6ab186f505ec2dd8370188f5` |
-| 2 | `lemma` | [l_ge_of_le](../../../../MeasureAndIntegration/H3Namespaced.lean/declarations/l-ge-of-le.md) | 43 | `result-track:ce066fb7f4a5deb83c988d75ce7540f44ca65ec9095c6e324cd6cf94b5f52f28` |
-| 3 | `theorem` | [coeff_H3](../../../../MeasureAndIntegration/H3Namespaced.lean/declarations/coeff-h3.md) | 52 | `result-track:be7dd396f93fe2fdc795d264c89e2d7788e25737c5638aa56ef48fdf4077d5eb` |
+| 1 | `lemma` | [dcoef_eq_D1coeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/H3Namespaced.lean/declarations/dcoef-eq-d1coeff.md) | 33 | `result-track:fa37f217bde9c8dda8da84cf0c641c7e856ebaef6ab186f505ec2dd8370188f5` |
+| 2 | `lemma` | [l_ge_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/H3Namespaced.lean/declarations/l-ge-of-le.md) | 43 | `result-track:ce066fb7f4a5deb83c988d75ce7540f44ca65ec9095c6e324cd6cf94b5f52f28` |
+| 3 | `theorem` | [coeff_H3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/H3Namespaced.lean/declarations/coeff-h3.md) | 52 | `result-track:be7dd396f93fe2fdc795d264c89e2d7788e25737c5638aa56ef48fdf4077d5eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

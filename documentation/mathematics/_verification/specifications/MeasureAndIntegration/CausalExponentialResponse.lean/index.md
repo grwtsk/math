@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CausalExponentialResponse.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CausalExponentialResponse.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalExponentialResponse.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalExponentialResponse.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy`](../../../../MeasureAndIntegration/WeightedIntegralEnergy.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedIntegralEnergy.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.ImproperIntegrals` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [laplaceResponse](../../../../MeasureAndIntegration/CausalExponentialResponse.lean/declarations/laplaceresponse.md) | 24 | `declaration-track:c16c7fc40864c257175e8653b643b5576460a608a9a4269852251fd27261dc35` |
-| 2 | `def` | [atomInverseHalf](../../../../MeasureAndIntegration/CausalExponentialResponse.lean/declarations/atominversehalf.md) | 27 | `declaration-track:eda8329c9b2a0f3c5159c8f4f00ffc5320d562698dc7fce8af07eae97912fba8` |
-| 3 | `def` | [ungatedLaplaceResponse](../../../../MeasureAndIntegration/CausalExponentialResponse.lean/declarations/ungatedlaplaceresponse.md) | 29 | `declaration-track:77de1119c077759d8e9ece7e7fbd251b992ed17bfee794f5a784e91003a29b56` |
-| 4 | `theorem` | [weighted_kernel_identity](../../../../MeasureAndIntegration/CausalExponentialResponse.lean/declarations/weighted-kernel-identity.md) | 33 | `result-track:993a854638288f13301063644b1b0f617b9a799b54a4456c11227a4a49946966` |
-| 5 | `theorem` | [laplace_response_indicator](../../../../MeasureAndIntegration/CausalExponentialResponse.lean/declarations/laplace-response-indicator.md) | 50 | `result-track:668319f9c1655a7432efa30e9c214e7953fea9673ebcd1ddf642ccd84378bd41` |
-| 6 | `theorem` | [ungated_laplace_response_integrable](../../../../MeasureAndIntegration/CausalExponentialResponse.lean/declarations/ungated-laplace-response-integrable.md) | 65 | `result-track:37cebcfabcd5f6859cf58e75c34d4e58cfb0318d30e4cef8d6de63107e61aa65` |
-| 7 | `theorem` | [laplace_response_integrable](../../../../MeasureAndIntegration/CausalExponentialResponse.lean/declarations/laplace-response-integrable.md) | 77 | `result-track:7f977eb9dd3b2dbad045be7f9da2a6112ec9faa71ae86b316133775647ea13a6` |
-| 8 | `theorem` | [laplace_response_integral](../../../../MeasureAndIntegration/CausalExponentialResponse.lean/declarations/laplace-response-integral.md) | 84 | `result-track:703e1f5c662f5b05f95641c3e938e13a71c761ce20d515262069d4c1602ac389` |
-| 9 | `theorem` | [atom_inverse_half_eq_exp](../../../../MeasureAndIntegration/CausalExponentialResponse.lean/declarations/atom-inverse-half-eq-exp.md) | 112 | `result-track:f0628a0b75c63ae89791f73f19e6984f44bab6aba4fc80fadc487b3d8c18e8df` |
-| 10 | `theorem` | [laplace_response_integral_cpow](../../../../MeasureAndIntegration/CausalExponentialResponse.lean/declarations/laplace-response-integral-cpow.md) | 122 | `result-track:e069fda977944be01fdf0fe6fbc46a191bddc5cd311efc97bc4e4eb8e45184e7` |
+| 1 | `def` | [laplaceResponse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalExponentialResponse.lean/declarations/laplaceresponse.md) | 24 | `declaration-track:c16c7fc40864c257175e8653b643b5576460a608a9a4269852251fd27261dc35` |
+| 2 | `def` | [atomInverseHalf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalExponentialResponse.lean/declarations/atominversehalf.md) | 27 | `declaration-track:eda8329c9b2a0f3c5159c8f4f00ffc5320d562698dc7fce8af07eae97912fba8` |
+| 3 | `def` | [ungatedLaplaceResponse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalExponentialResponse.lean/declarations/ungatedlaplaceresponse.md) | 29 | `declaration-track:77de1119c077759d8e9ece7e7fbd251b992ed17bfee794f5a784e91003a29b56` |
+| 4 | `theorem` | [weighted_kernel_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalExponentialResponse.lean/declarations/weighted-kernel-identity.md) | 33 | `result-track:993a854638288f13301063644b1b0f617b9a799b54a4456c11227a4a49946966` |
+| 5 | `theorem` | [laplace_response_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalExponentialResponse.lean/declarations/laplace-response-indicator.md) | 50 | `result-track:668319f9c1655a7432efa30e9c214e7953fea9673ebcd1ddf642ccd84378bd41` |
+| 6 | `theorem` | [ungated_laplace_response_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalExponentialResponse.lean/declarations/ungated-laplace-response-integrable.md) | 65 | `result-track:37cebcfabcd5f6859cf58e75c34d4e58cfb0318d30e4cef8d6de63107e61aa65` |
+| 7 | `theorem` | [laplace_response_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalExponentialResponse.lean/declarations/laplace-response-integrable.md) | 77 | `result-track:7f977eb9dd3b2dbad045be7f9da2a6112ec9faa71ae86b316133775647ea13a6` |
+| 8 | `theorem` | [laplace_response_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalExponentialResponse.lean/declarations/laplace-response-integral.md) | 84 | `result-track:703e1f5c662f5b05f95641c3e938e13a71c761ce20d515262069d4c1602ac389` |
+| 9 | `theorem` | [atom_inverse_half_eq_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalExponentialResponse.lean/declarations/atom-inverse-half-eq-exp.md) | 112 | `result-track:f0628a0b75c63ae89791f73f19e6984f44bab6aba4fc80fadc487b3d8c18e8df` |
+| 10 | `theorem` | [laplace_response_integral_cpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalExponentialResponse.lean/declarations/laplace-response-integral-cpow.md) | 122 | `result-track:e069fda977944be01fdf0fe6fbc46a191bddc5cd311efc97bc4e4eb8e45184e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

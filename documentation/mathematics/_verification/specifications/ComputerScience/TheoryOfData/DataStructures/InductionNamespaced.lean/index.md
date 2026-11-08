@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reverseRecOn](../../../../../../ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/declarations/reverserecon.md) | 26 | `declaration-track:ce49c4bbcb858e94b1251c3ab878f094fabe5ec794ec6be12927d274d2c9a375` |
-| 2 | `theorem` | [reverseRecOn_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/declarations/reverserecon-nil.md) | 41 | `result-track:5205decee66fef35cb6e25c9154b1db47af96e9f3335d5c8459bfaefb17265d3` |
-| 3 | `theorem` | [reverseRecOn_concat](../../../../../../ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/declarations/reverserecon-concat.md) | 47 | `result-track:b5d08b98e43e84d19152b059984e093f2e43072d43dfe744ba5296476507474a` |
-| 4 | `def` | [bidirectionalRec](../../../../../../ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/declarations/bidirectionalrec.md) | 72 | `declaration-track:2c5c9eea83308868e089d7e8868da0d6100cef9788237dac19405311e439540f` |
-| 5 | `theorem` | [bidirectionalRec_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/declarations/bidirectionalrec-nil.md) | 85 | `result-track:7b03d875a9c8ca7a8cb93de4473825afe19af58575001e712dca95ea27ecc62d` |
-| 6 | `theorem` | [bidirectionalRec_singleton](../../../../../../ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/declarations/bidirectionalrec-singleton.md) | 92 | `result-track:f4321b63961e08f1fdb67c37f10cb4f94a8a3a44928295dc7d487efaf93af350` |
-| 7 | `theorem` | [bidirectionalRec_cons_append](../../../../../../ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/declarations/bidirectionalrec-cons-append.md) | 99 | `result-track:59ee6aaed3862e1b880d26473bcf7fa9ddb2ca19e7f0fca2c68e41c83ff9728e` |
-| 8 | `abbrev` | [bidirectionalRecOn](../../../../../../ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/declarations/bidirectionalrecon.md) | 123 | `declaration-track:a5bf35d00ce7a65b67c6cb8005959e5601620dce9bb822a9a1811db54a4973bf` |
+| 1 | `def` | [reverseRecOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/declarations/reverserecon.md) | 26 | `declaration-track:ce49c4bbcb858e94b1251c3ab878f094fabe5ec794ec6be12927d274d2c9a375` |
+| 2 | `theorem` | [reverseRecOn_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/declarations/reverserecon-nil.md) | 41 | `result-track:5205decee66fef35cb6e25c9154b1db47af96e9f3335d5c8459bfaefb17265d3` |
+| 3 | `theorem` | [reverseRecOn_concat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/declarations/reverserecon-concat.md) | 47 | `result-track:b5d08b98e43e84d19152b059984e093f2e43072d43dfe744ba5296476507474a` |
+| 4 | `def` | [bidirectionalRec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/declarations/bidirectionalrec.md) | 72 | `declaration-track:2c5c9eea83308868e089d7e8868da0d6100cef9788237dac19405311e439540f` |
+| 5 | `theorem` | [bidirectionalRec_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/declarations/bidirectionalrec-nil.md) | 85 | `result-track:7b03d875a9c8ca7a8cb93de4473825afe19af58575001e712dca95ea27ecc62d` |
+| 6 | `theorem` | [bidirectionalRec_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/declarations/bidirectionalrec-singleton.md) | 92 | `result-track:f4321b63961e08f1fdb67c37f10cb4f94a8a3a44928295dc7d487efaf93af350` |
+| 7 | `theorem` | [bidirectionalRec_cons_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/declarations/bidirectionalrec-cons-append.md) | 99 | `result-track:59ee6aaed3862e1b880d26473bcf7fa9ddb2ca19e7f0fca2c68e41c83ff9728e` |
+| 8 | `abbrev` | [bidirectionalRecOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/InductionNamespaced.lean/declarations/bidirectionalrecon.md) | 123 | `declaration-track:a5bf35d00ce7a65b67c6cb8005959e5601620dce9bb822a9a1811db54a4973bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

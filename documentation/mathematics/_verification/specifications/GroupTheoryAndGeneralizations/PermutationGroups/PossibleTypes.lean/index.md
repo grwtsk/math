@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PossibleTypes.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PossibleTypes.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PossibleTypes.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PossibleTypes.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [List.exists_pw_disjoint_with_card](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PossibleTypes.lean/declarations/list-exists-pw-disjoint-with-card.md) | 24 | `result-track:f697d557cfba428ff06a28cb585cb0523ff5785a6ce8f514b721e8828ab38cbf` |
-| 2 | `theorem` | [Equiv.Perm.exists_with_cycleType_iff](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PossibleTypes.lean/declarations/equiv-perm-exists-with-cycletype-iff.md) | 74 | `result-track:58965d1607c7989208b53d10139eb0647edc84c23060f2bfd534a0d73863131b` |
+| 1 | `theorem` | [List.exists_pw_disjoint_with_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PossibleTypes.lean/declarations/list-exists-pw-disjoint-with-card.md) | 24 | `result-track:f697d557cfba428ff06a28cb585cb0523ff5785a6ce8f514b721e8828ab38cbf` |
+| 2 | `theorem` | [Equiv.Perm.exists_with_cycleType_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PossibleTypes.lean/declarations/equiv-perm-exists-with-cycletype-iff.md) | 74 | `result-track:58965d1607c7989208b53d10139eb0647edc84c23060f2bfd534a0d73863131b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

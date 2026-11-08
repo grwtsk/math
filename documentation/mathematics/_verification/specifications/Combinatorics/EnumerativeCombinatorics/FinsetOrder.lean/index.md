@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetOrder.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetOrder.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FinsetOrder.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FinsetOrder.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Directed.finset_le](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetOrder.lean/declarations/directed-finset-le.md) | 19 | `result-track:396c876a2cda1320f440a9de742c81ef8647ff83f72973045837aea2f5229c80` |
-| 2 | `theorem` | [Finset.exists_le](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetOrder.lean/declarations/finset-exists-le.md) | 28 | `result-track:8359d92729afd1190a17dad3fe4682b8e1de2bf1df2a24afe6c46767e0e6a7f1` |
+| 1 | `theorem` | [Directed.finset_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FinsetOrder.lean/declarations/directed-finset-le.md) | 19 | `result-track:396c876a2cda1320f440a9de742c81ef8647ff83f72973045837aea2f5229c80` |
+| 2 | `theorem` | [Finset.exists_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FinsetOrder.lean/declarations/finset-exists-le.md) | 28 | `result-track:8359d92729afd1190a17dad3fe4682b8e1de2bf1df2a24afe6c46767e0e6a7f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

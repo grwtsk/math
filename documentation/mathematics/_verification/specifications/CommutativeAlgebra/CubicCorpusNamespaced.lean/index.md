@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/CubicCorpusNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/CubicCorpusNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CubicCorpusNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CubicCorpusNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [source](../../../../CommutativeAlgebra/CubicCorpusNamespaced.lean/declarations/source.md) | 25 | `declaration-track:de2c77bee68eb862ec1906678ae7b468ac64fd0cc063238a2f6457ea5603a582` |
-| 2 | `def` | [quadraticCarrier](../../../../CommutativeAlgebra/CubicCorpusNamespaced.lean/declarations/quadraticcarrier.md) | 50 | `declaration-track:b5e1fca8533af809037fa2d43720f503f5d9052ed429130421b1bbeeddbba8fb` |
-| 3 | `def` | [quadraticEvaluation](../../../../CommutativeAlgebra/CubicCorpusNamespaced.lean/declarations/quadraticevaluation.md) | 69 | `declaration-track:6a813c8f341acd593dc77fdbc208bd1f08d047acca55977868f520d1da1fe923` |
-| 4 | `def` | [cubicCarrier](../../../../CommutativeAlgebra/CubicCorpusNamespaced.lean/declarations/cubiccarrier.md) | 87 | `declaration-track:9d8b6fe9487ce27fe23e4d1b93e807053572b8bf12db763dfda8a59931c63255` |
-| 5 | `def` | [cubicEvaluation](../../../../CommutativeAlgebra/CubicCorpusNamespaced.lean/declarations/cubicevaluation.md) | 106 | `declaration-track:87c7ee6881f92ef4f7736f18008360ed6b7c0e4042480084f5e09eab3a64214e` |
-| 6 | `def` | [cubicDerivative](../../../../CommutativeAlgebra/CubicCorpusNamespaced.lean/declarations/cubicderivative.md) | 124 | `declaration-track:7ed78b628f72dcfc5b6471a9cdd0aba7e2e0c21ce73947712ee3afc83e7f58aa` |
-| 7 | `def` | [cubicPotentialEvaluation](../../../../CommutativeAlgebra/CubicCorpusNamespaced.lean/declarations/cubicpotentialevaluation.md) | 142 | `declaration-track:1ddd67d93e1d6cf69aa1435dce0482a48e32fc1dd21554732cb08328155c9102` |
-| 8 | `def` | [links](../../../../CommutativeAlgebra/CubicCorpusNamespaced.lean/declarations/links.md) | 161 | `declaration-track:4fa1e32a51b12b8c7717df204c0262794282aa38d54be118345934169811f889` |
-| 9 | `theorem` | [links_length](../../../../CommutativeAlgebra/CubicCorpusNamespaced.lean/declarations/links-length.md) | 170 | `result-track:71ac8c8a0fba36a5a1dc7b761a01df3aa4ec62dcb23131b127046d98bfbc8aa6` |
+| 1 | `def` | [source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CubicCorpusNamespaced.lean/declarations/source.md) | 25 | `declaration-track:de2c77bee68eb862ec1906678ae7b468ac64fd0cc063238a2f6457ea5603a582` |
+| 2 | `def` | [quadraticCarrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CubicCorpusNamespaced.lean/declarations/quadraticcarrier.md) | 50 | `declaration-track:b5e1fca8533af809037fa2d43720f503f5d9052ed429130421b1bbeeddbba8fb` |
+| 3 | `def` | [quadraticEvaluation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CubicCorpusNamespaced.lean/declarations/quadraticevaluation.md) | 69 | `declaration-track:6a813c8f341acd593dc77fdbc208bd1f08d047acca55977868f520d1da1fe923` |
+| 4 | `def` | [cubicCarrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CubicCorpusNamespaced.lean/declarations/cubiccarrier.md) | 87 | `declaration-track:9d8b6fe9487ce27fe23e4d1b93e807053572b8bf12db763dfda8a59931c63255` |
+| 5 | `def` | [cubicEvaluation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CubicCorpusNamespaced.lean/declarations/cubicevaluation.md) | 106 | `declaration-track:87c7ee6881f92ef4f7736f18008360ed6b7c0e4042480084f5e09eab3a64214e` |
+| 6 | `def` | [cubicDerivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CubicCorpusNamespaced.lean/declarations/cubicderivative.md) | 124 | `declaration-track:7ed78b628f72dcfc5b6471a9cdd0aba7e2e0c21ce73947712ee3afc83e7f58aa` |
+| 7 | `def` | [cubicPotentialEvaluation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CubicCorpusNamespaced.lean/declarations/cubicpotentialevaluation.md) | 142 | `declaration-track:1ddd67d93e1d6cf69aa1435dce0482a48e32fc1dd21554732cb08328155c9102` |
+| 8 | `def` | [links](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CubicCorpusNamespaced.lean/declarations/links.md) | 161 | `declaration-track:4fa1e32a51b12b8c7717df204c0262794282aa38d54be118345934169811f889` |
+| 9 | `theorem` | [links_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CubicCorpusNamespaced.lean/declarations/links-length.md) | 170 | `result-track:71ac8c8a0fba36a5a1dc7b761a01df3aa4ec62dcb23131b127046d98bfbc8aa6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

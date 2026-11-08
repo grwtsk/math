@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAnchoredMixedWorkBoundNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAnchoredMixedWorkBoundNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAnchoredMixedWorkBoundNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAnchoredMixedWorkBoundNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [centeredErrorExpMass_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAnchoredMixedWorkBoundNamespaced.lean/declarations/centerederrorexpmass-nonneg.md) | 32 | `result-track:eebbe190eecbcdc7cb9352d21d3c4be7baff42fd57bcaf33503e5aa5d8279e9a` |
-| 2 | `theorem` | [centeredErrorWork_abs_le_twiceA_mass](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAnchoredMixedWorkBoundNamespaced.lean/declarations/centerederrorwork-abs-le-twicea-mass.md) | 40 | `result-track:d50de79c04016f1d05d4ba3c40179bcdc7a0fddc98d1412919618c68b498bb83` |
-| 3 | `theorem` | [actual_lower_boundary_add_work_abs_le_anchored_mass](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAnchoredMixedWorkBoundNamespaced.lean/declarations/actual-lower-boundary-add-work-abs-le-anchored-mass.md) | 54 | `result-track:17a0342c5be9d094fa10a6e1722f7dff4ac7b1fd2d91943792c25c84c83fe182` |
+| 1 | `theorem` | [centeredErrorExpMass_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAnchoredMixedWorkBoundNamespaced.lean/declarations/centerederrorexpmass-nonneg.md) | 32 | `result-track:eebbe190eecbcdc7cb9352d21d3c4be7baff42fd57bcaf33503e5aa5d8279e9a` |
+| 2 | `theorem` | [centeredErrorWork_abs_le_twiceA_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAnchoredMixedWorkBoundNamespaced.lean/declarations/centerederrorwork-abs-le-twicea-mass.md) | 40 | `result-track:d50de79c04016f1d05d4ba3c40179bcdc7a0fddc98d1412919618c68b498bb83` |
+| 3 | `theorem` | [actual_lower_boundary_add_work_abs_le_anchored_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAnchoredMixedWorkBoundNamespaced.lean/declarations/actual-lower-boundary-add-work-abs-le-anchored-mass.md) | 54 | `result-track:17a0342c5be9d094fa10a6e1722f7dff4ac7b1fd2d91943792c25c84c83fe182` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

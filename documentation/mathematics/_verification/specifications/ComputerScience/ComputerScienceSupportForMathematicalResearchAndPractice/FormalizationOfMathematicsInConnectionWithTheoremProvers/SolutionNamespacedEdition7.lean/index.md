@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SolutionNamespacedEdition7.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SolutionNamespacedEdition7.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SolutionNamespacedEdition7.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SolutionNamespacedEdition7.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [badNatUnsafe](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SolutionNamespacedEdition7.lean/declarations/badnatunsafe.md) | 13 | `declaration-track:60a2fe489237aed1695b87f54c472b038fc584af37937740620c69ba3e0f7b59` |
-| 2 | `opaque` | [badNatVal](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SolutionNamespacedEdition7.lean/declarations/badnatval.md) | 15 | `declaration-track:aba9b8d5717933ed8babe6c94a126c87449dc64f193748da2b1df58674b9bfc9` |
-| 3 | `theorem` | [boom](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SolutionNamespacedEdition7.lean/declarations/boom.md) | 27 | `result-track:8919fff50da54fe898d5830492c06af0ed2bf7cbf807d5b6cb969e5c4607cb4e` |
+| 1 | `def` | [badNatUnsafe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SolutionNamespacedEdition7.lean/declarations/badnatunsafe.md) | 13 | `declaration-track:60a2fe489237aed1695b87f54c472b038fc584af37937740620c69ba3e0f7b59` |
+| 2 | `opaque` | [badNatVal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SolutionNamespacedEdition7.lean/declarations/badnatval.md) | 15 | `declaration-track:aba9b8d5717933ed8babe6c94a126c87449dc64f193748da2b1df58674b9bfc9` |
+| 3 | `theorem` | [boom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SolutionNamespacedEdition7.lean/declarations/boom.md) | 27 | `result-track:8919fff50da54fe898d5830492c06af0ed2bf7cbf807d5b6cb969e5c4607cb4e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

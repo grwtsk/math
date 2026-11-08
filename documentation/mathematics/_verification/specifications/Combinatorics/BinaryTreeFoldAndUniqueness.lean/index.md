@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BinaryTreeFoldAndUniqueness.lean/index.md) · [Full source](../../../../Combinatorics/BinaryTreeFoldAndUniqueness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeFoldAndUniqueness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeFoldAndUniqueness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fold](../../../../Combinatorics/BinaryTreeFoldAndUniqueness.lean/declarations/fold.md) | 41 | `declaration-track:b945e92b647fd455b68c976f99d7a8509644fe276d599ea674cf713373709450` |
-| 2 | `theorem` | [fold_leaf](../../../../Combinatorics/BinaryTreeFoldAndUniqueness.lean/declarations/fold-leaf.md) | 46 | `result-track:07390b595ed3cec700f0247b335eb10579eadf59e89760ab0589f2baca89f35b` |
-| 3 | `theorem` | [fold_node](../../../../Combinatorics/BinaryTreeFoldAndUniqueness.lean/declarations/fold-node.md) | 51 | `result-track:e8528cc3338fce51cee5e845f381b35fdebfcc9d38178a534caae786bbfa34aa` |
-| 4 | `theorem` | [fold_unique](../../../../Combinatorics/BinaryTreeFoldAndUniqueness.lean/declarations/fold-unique.md) | 59 | `result-track:04853991694b330da6b45fb5723ccaf6374618ac192227ae8e74b5ef19f3a6ec` |
+| 1 | `def` | [fold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeFoldAndUniqueness.lean/declarations/fold.md) | 41 | `declaration-track:b945e92b647fd455b68c976f99d7a8509644fe276d599ea674cf713373709450` |
+| 2 | `theorem` | [fold_leaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeFoldAndUniqueness.lean/declarations/fold-leaf.md) | 46 | `result-track:07390b595ed3cec700f0247b335eb10579eadf59e89760ab0589f2baca89f35b` |
+| 3 | `theorem` | [fold_node](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeFoldAndUniqueness.lean/declarations/fold-node.md) | 51 | `result-track:e8528cc3338fce51cee5e845f381b35fdebfcc9d38178a534caae786bbfa34aa` |
+| 4 | `theorem` | [fold_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeFoldAndUniqueness.lean/declarations/fold-unique.md) | 59 | `result-track:04853991694b330da6b45fb5723ccaf6374618ac192227ae8e74b5ef19f3a6ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

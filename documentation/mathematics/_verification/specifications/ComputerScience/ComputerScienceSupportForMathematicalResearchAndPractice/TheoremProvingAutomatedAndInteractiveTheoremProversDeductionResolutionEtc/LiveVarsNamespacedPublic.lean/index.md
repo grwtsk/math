@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LiveVarsNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LiveVarsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LiveVarsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LiveVarsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Context](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LiveVarsNamespacedPublic.lean/declarations/context.md) | 45 | `declaration-track:076a39f72a8181f74af4aec59f6812ff65f8697064814038a662062e9bd369f6` |
-| 2 | `structure` | [State](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LiveVarsNamespacedPublic.lean/declarations/state.md) | 55 | `declaration-track:77c514d8ae5c949a892a7395d643352436142f0f9477e11f7da7dddf74818d07` |
-| 3 | `abbrev` | [LiveM](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LiveVarsNamespacedPublic.lean/declarations/livem.md) | 61 | `declaration-track:11f3f39dc6870ddf6e2c0b258ad0db606599a260c2db078a223fdce3471916c2` |
-| 4 | `def` | [Code.isFVarLiveIn](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LiveVarsNamespacedPublic.lean/declarations/code-isfvarlivein.md) | 67 | `declaration-track:f84934cbced6f9bf5242d0c34d8dc2113886ff7880a570eda52f7614fac71a5d` |
+| 1 | `structure` | [Context](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LiveVarsNamespacedPublic.lean/declarations/context.md) | 45 | `declaration-track:076a39f72a8181f74af4aec59f6812ff65f8697064814038a662062e9bd369f6` |
+| 2 | `structure` | [State](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LiveVarsNamespacedPublic.lean/declarations/state.md) | 55 | `declaration-track:77c514d8ae5c949a892a7395d643352436142f0f9477e11f7da7dddf74818d07` |
+| 3 | `abbrev` | [LiveM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LiveVarsNamespacedPublic.lean/declarations/livem.md) | 61 | `declaration-track:11f3f39dc6870ddf6e2c0b258ad0db606599a260c2db078a223fdce3471916c2` |
+| 4 | `def` | [Code.isFVarLiveIn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LiveVarsNamespacedPublic.lean/declarations/code-isfvarlivein.md) | 67 | `declaration-track:f84934cbced6f9bf5242d0c34d8dc2113886ff7880a570eda52f7614fac71a5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

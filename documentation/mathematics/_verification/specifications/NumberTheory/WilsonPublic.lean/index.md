@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/WilsonPublic.lean/index.md) · [Full source](../../../../NumberTheory/WilsonPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [factorial_eq_neg_one_pow_mul_half_factorial_sq](../../../../NumberTheory/WilsonPublic.lean/declarations/factorial-eq-neg-one-pow-mul-half-factorial-sq.md) | 51 | `result-track:d6d317fb7e33080541fdc0b51db84e4352da002e7a95d20e62029c25064bd35e` |
-| 2 | `theorem` | [wilsons_lemma](../../../../NumberTheory/WilsonPublic.lean/declarations/wilsons-lemma.md) | 61 | `result-track:e6669b001bd2f438b3b93218180ccbaa510535b9a2feb21dd526cfe71b4b22da` |
-| 3 | `theorem` | [half_factorial_sq_eq_neg_one](../../../../NumberTheory/WilsonPublic.lean/declarations/half-factorial-sq-eq-neg-one.md) | 91 | `result-track:7612b97ecc9364812cd986a7394d5d622f32b4e0a68afd26f92fb26f7872a4c7` |
-| 4 | `theorem` | [prod_Ico_one_prime](../../../../NumberTheory/WilsonPublic.lean/declarations/prod-ico-one-prime.md) | 101 | `result-track:900a6120c7e0777e1256f9fba21505985b2d704769b7120f17199cad2580d7de` |
-| 5 | `theorem` | [prime_of_fac_equiv_neg_one](../../../../NumberTheory/WilsonPublic.lean/declarations/prime-of-fac-equiv-neg-one.md) | 116 | `result-track:3ee621825bb9b40c2d7577a264155dab3d77a6d8098850edd5780e55686e82c1` |
-| 6 | `theorem` | [prime_iff_fac_equiv_neg_one](../../../../NumberTheory/WilsonPublic.lean/declarations/prime-iff-fac-equiv-neg-one.md) | 127 | `result-track:99ae2dc40a526c7485d9186fbd5ad024a512f69e6da40bbd88099a90619afa1b` |
+| 1 | `theorem` | [factorial_eq_neg_one_pow_mul_half_factorial_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonPublic.lean/declarations/factorial-eq-neg-one-pow-mul-half-factorial-sq.md) | 51 | `result-track:d6d317fb7e33080541fdc0b51db84e4352da002e7a95d20e62029c25064bd35e` |
+| 2 | `theorem` | [wilsons_lemma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonPublic.lean/declarations/wilsons-lemma.md) | 61 | `result-track:e6669b001bd2f438b3b93218180ccbaa510535b9a2feb21dd526cfe71b4b22da` |
+| 3 | `theorem` | [half_factorial_sq_eq_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonPublic.lean/declarations/half-factorial-sq-eq-neg-one.md) | 91 | `result-track:7612b97ecc9364812cd986a7394d5d622f32b4e0a68afd26f92fb26f7872a4c7` |
+| 4 | `theorem` | [prod_Ico_one_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonPublic.lean/declarations/prod-ico-one-prime.md) | 101 | `result-track:900a6120c7e0777e1256f9fba21505985b2d704769b7120f17199cad2580d7de` |
+| 5 | `theorem` | [prime_of_fac_equiv_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonPublic.lean/declarations/prime-of-fac-equiv-neg-one.md) | 116 | `result-track:3ee621825bb9b40c2d7577a264155dab3d77a6d8098850edd5780e55686e82c1` |
+| 6 | `theorem` | [prime_iff_fac_equiv_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonPublic.lean/declarations/prime-iff-fac-equiv-neg-one.md) | 127 | `result-track:99ae2dc40a526c7485d9186fbd5ad024a512f69e6da40bbd88099a90619afa1b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

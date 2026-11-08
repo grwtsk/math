@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/EstimateCorrelationNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/EstimateCorrelationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateCorrelationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateCorrelationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_correlation_at_zero](../../../../MeasureAndIntegration/EstimateCorrelationNamespaced.lean/declarations/actual-correlation-at-zero.md) | 34 | `result-track:f5f95e62f43ef9fa2174e2a6acc57c43f4afe4ca7a04d4030cfa09af09f3207e` |
-| 2 | `theorem` | [actual_correlation_abs_le_one](../../../../MeasureAndIntegration/EstimateCorrelationNamespaced.lean/declarations/actual-correlation-abs-le-one.md) | 39 | `result-track:e4900cd5e9fac920175e0edc77e8abdef15daa3add0ab7a94d40e10dd2be3649` |
-| 3 | `theorem` | [actual_prime_two_boundary_abs_le](../../../../MeasureAndIntegration/EstimateCorrelationNamespaced.lean/declarations/actual-prime-two-boundary-abs-le.md) | 61 | `result-track:014262fb9e58c9f3bd989718fe78d08f557b80353771187da328074de9b1c861` |
-| 4 | `def` | [CorrelationAndPrimeTwoBounds](../../../../MeasureAndIntegration/EstimateCorrelationNamespaced.lean/declarations/correlationandprimetwobounds.md) | 71 | `declaration-track:014e79982b59cd6967c5ab13252fa058a3f92b3b1be06d5abc79c0d10ea29b0c` |
-| 5 | `theorem` | [correlation_and_prime_two_bounds](../../../../MeasureAndIntegration/EstimateCorrelationNamespaced.lean/declarations/correlation-and-prime-two-bounds.md) | 78 | `result-track:b045a1392f6a27fb4ccc9e09a5438cfcbec6c2424adf30806235a5384d7fe7b1` |
+| 1 | `theorem` | [actual_correlation_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateCorrelationNamespaced.lean/declarations/actual-correlation-at-zero.md) | 34 | `result-track:f5f95e62f43ef9fa2174e2a6acc57c43f4afe4ca7a04d4030cfa09af09f3207e` |
+| 2 | `theorem` | [actual_correlation_abs_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateCorrelationNamespaced.lean/declarations/actual-correlation-abs-le-one.md) | 39 | `result-track:e4900cd5e9fac920175e0edc77e8abdef15daa3add0ab7a94d40e10dd2be3649` |
+| 3 | `theorem` | [actual_prime_two_boundary_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateCorrelationNamespaced.lean/declarations/actual-prime-two-boundary-abs-le.md) | 61 | `result-track:014262fb9e58c9f3bd989718fe78d08f557b80353771187da328074de9b1c861` |
+| 4 | `def` | [CorrelationAndPrimeTwoBounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateCorrelationNamespaced.lean/declarations/correlationandprimetwobounds.md) | 71 | `declaration-track:014e79982b59cd6967c5ab13252fa058a3f92b3b1be06d5abc79c0d10ea29b0c` |
+| 5 | `theorem` | [correlation_and_prime_two_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateCorrelationNamespaced.lean/declarations/correlation-and-prime-two-bounds.md) | 78 | `result-track:b045a1392f6a27fb4ccc9e09a5438cfcbec6c2424adf30806235a5384d7fe7b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

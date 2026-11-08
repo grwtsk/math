@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuperconnectionTransportModelNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuperconnectionTransportModelNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuperconnectionTransportModelNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuperconnectionTransportModelNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SuperconnectionFamiliesIndexModel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuperconnectionTransportModelNamespaced.lean/declarations/superconnectionfamiliesindexmodel.md) | 27 | `declaration-track:d5f5453a1c54a01e80615ef8f612621e6f0b002b81d9a9ca5c1eba1e82868cb0` |
-| 2 | `theorem` | [superconnection_family_index_invariant_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuperconnectionTransportModelNamespaced.lean/declarations/superconnection-family-index-invariant-if-supplied.md) | 36 | `result-track:5fa360e4c788c3b4fbc2c7ecae22062e60be419cc81f749a05b5667cd10b47db` |
+| 1 | `structure` | [SuperconnectionFamiliesIndexModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuperconnectionTransportModelNamespaced.lean/declarations/superconnectionfamiliesindexmodel.md) | 27 | `declaration-track:d5f5453a1c54a01e80615ef8f612621e6f0b002b81d9a9ca5c1eba1e82868cb0` |
+| 2 | `theorem` | [superconnection_family_index_invariant_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuperconnectionTransportModelNamespaced.lean/declarations/superconnection-family-index-invariant-if-supplied.md) | 36 | `result-track:5fa360e4c788c3b4fbc2c7ecae22062e60be419cc81f749a05b5667cd10b47db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

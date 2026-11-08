@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachEquationIdeal.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachEquationIdeal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachEquationIdeal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachEquationIdeal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachEquationIdeal.lean/declarations/example-source-edition-3.md) | 13 | `declaration-track:0c2f99e754c38a21e31c21a5f846a2ee2968022bb2db66d5b0cf7faa951395df` |
-| 2 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachEquationIdeal.lean/declarations/example.md) | 22 | `declaration-track:02c4d903f6659c899f511be664c4b9987cbf85140331a09ef3c7d222f3a0fc38` |
-| 3 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachEquationIdeal.lean/declarations/example-source-edition-5.md) | 32 | `declaration-track:a8234f92fc7c307a546e9b4a0b5f89045f8353bae9c1ffd7b432a3586a51c6de` |
-| 4 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachEquationIdeal.lean/declarations/example-source-edition-6.md) | 40 | `declaration-track:fa5de98c952e4017add4a61e3461553a1d6e0756b60d88591644736eda84b8fb` |
-| 5 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachEquationIdeal.lean/declarations/example-source-edition-4.md) | 47 | `declaration-track:4b08de0baddae376edaad516522ffb210ae22b6a7c21a763c07e9ccb4cd90572` |
-| 6 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachEquationIdeal.lean/declarations/example-source-edition-2.md) | 57 | `declaration-track:0b5691ff6dd8cb2690a8af2f67ec41d057be6e52402339ea2673601922cc97d0` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachEquationIdeal.lean/declarations/example-source-edition-3.md) | 13 | `declaration-track:0c2f99e754c38a21e31c21a5f846a2ee2968022bb2db66d5b0cf7faa951395df` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachEquationIdeal.lean/declarations/example.md) | 22 | `declaration-track:02c4d903f6659c899f511be664c4b9987cbf85140331a09ef3c7d222f3a0fc38` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachEquationIdeal.lean/declarations/example-source-edition-5.md) | 32 | `declaration-track:a8234f92fc7c307a546e9b4a0b5f89045f8353bae9c1ffd7b432a3586a51c6de` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachEquationIdeal.lean/declarations/example-source-edition-6.md) | 40 | `declaration-track:fa5de98c952e4017add4a61e3461553a1d6e0756b60d88591644736eda84b8fb` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachEquationIdeal.lean/declarations/example-source-edition-4.md) | 47 | `declaration-track:4b08de0baddae376edaad516522ffb210ae22b6a7c21a763c07e9ccb4cd90572` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachEquationIdeal.lean/declarations/example-source-edition-2.md) | 57 | `declaration-track:0b5691ff6dd8cb2690a8af2f67ec41d057be6e52402339ea2673601922cc97d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RootNumberParity.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RootNumberParity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RootNumberParity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RootNumberParity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BSDRootNumberParityData](../../../../../ComputerScience/AlgorithmsInComputerScience/RootNumberParity.lean/declarations/bsdrootnumberparitydata.md) | 37 | `declaration-track:abfa17d58ea45d884f0a5ff365ae9acc7d6510aea114fcee027472fe5f164354` |
-| 2 | `structure` | [BSDRootNumberParityCompatibilityCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/RootNumberParity.lean/declarations/bsdrootnumberparitycompatibilitycertificate.md) | 51 | `declaration-track:67fbc1d70b1ee9528a20c6d2342e6350b3c2aef4b8345897568389d7e1ef4416` |
-| 3 | `def` | [BSDRootNumberParityCompatibilityCertificate.certifiedForBSD](../../../../../ComputerScience/AlgorithmsInComputerScience/RootNumberParity.lean/declarations/bsdrootnumberparitycompatibilitycertificate-certifiedforbsd.md) | 76 | `declaration-track:81ac193dc9a826b9bb92af0663a18617c4eb4e4da50428b7dbb04ef6b900bdbb` |
-| 4 | `theorem` | [BSDRootNumberParityCompatibilityCertificate.certifiedForBSD_of_fields](../../../../../ComputerScience/AlgorithmsInComputerScience/RootNumberParity.lean/declarations/bsdrootnumberparitycompatibilitycertificate-certifiedforbsd-of-fields.md) | 97 | `result-track:18f26732fdc256db8a8ac2caa7e4f5c4442fad6cd11f84e2bd351f0847300377` |
+| 1 | `structure` | [BSDRootNumberParityData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RootNumberParity.lean/declarations/bsdrootnumberparitydata.md) | 37 | `declaration-track:abfa17d58ea45d884f0a5ff365ae9acc7d6510aea114fcee027472fe5f164354` |
+| 2 | `structure` | [BSDRootNumberParityCompatibilityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RootNumberParity.lean/declarations/bsdrootnumberparitycompatibilitycertificate.md) | 51 | `declaration-track:67fbc1d70b1ee9528a20c6d2342e6350b3c2aef4b8345897568389d7e1ef4416` |
+| 3 | `def` | [BSDRootNumberParityCompatibilityCertificate.certifiedForBSD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RootNumberParity.lean/declarations/bsdrootnumberparitycompatibilitycertificate-certifiedforbsd.md) | 76 | `declaration-track:81ac193dc9a826b9bb92af0663a18617c4eb4e4da50428b7dbb04ef6b900bdbb` |
+| 4 | `theorem` | [BSDRootNumberParityCompatibilityCertificate.certifiedForBSD_of_fields](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RootNumberParity.lean/declarations/bsdrootnumberparitycompatibilitycertificate-certifiedforbsd-of-fields.md) | 97 | `result-track:18f26732fdc256db8a8ac2caa7e4f5c4442fad6cd11f84e2bd351f0847300377` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

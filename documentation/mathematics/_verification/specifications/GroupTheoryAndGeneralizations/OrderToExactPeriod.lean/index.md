@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/OrderToExactPeriod.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/OrderToExactPeriod.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderToExactPeriod.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderToExactPeriod.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Period And Faithfulness](../../../../GroupTheoryAndGeneralizations/PeriodAndFaithfulness.lean/index.md) — import line 19; pinned internal source present.
+- [Period And Faithfulness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PeriodAndFaithfulness.lean/index.md) — import line 19; pinned internal source present.
 - `Folder.Monodromy.TorsionPeriodicity` — import line 21; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exact_period_of_hasOrder_and_faithful](../../../../GroupTheoryAndGeneralizations/OrderToExactPeriod.lean/declarations/exact-period-of-hasorder-and-faithful.md) | 40 | `result-track:275266f29d2ea70e5d926612567b4c387c00a3fec08fb573b957bacc4d46d64a` |
+| 1 | `theorem` | [exact_period_of_hasOrder_and_faithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderToExactPeriod.lean/declarations/exact-period-of-hasorder-and-faithful.md) | 40 | `result-track:275266f29d2ea70e5d926612567b4c387c00a3fec08fb573b957bacc4d46d64a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

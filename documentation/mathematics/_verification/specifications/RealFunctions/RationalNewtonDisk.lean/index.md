@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/RationalNewtonDisk.lean/index.md) · [Full source](../../../../RealFunctions/RationalNewtonDisk.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalNewtonDisk.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalNewtonDisk.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.NewtonDisk`](../../../../FunctionsOfAComplexVariable/NewtonDisk.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure`](../../../../RealFunctions/RationalComplexEnclosure.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.NewtonDisk`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NewtonDisk.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalComplexEnclosure.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Analysis.Calculus.FDeriv.Analytic` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.NormNum` — import line 7; external provider; requires a separately pinned dependency.
 
@@ -60,23 +60,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Data](../../../../RealFunctions/RationalNewtonDisk.lean/declarations/data.md) | 27 | `declaration-track:219162cc46902cee8c11940830eb2ab034bcb3fcf13ba859ebccdf490bb2d22a` |
-| 2 | `def` | [magnitude](../../../../RealFunctions/RationalNewtonDisk.lean/declarations/magnitude.md) | 37 | `declaration-track:68d1f7ae7ae8e2e1fcb03e22ac89fdaea3f2dd09ec2b0fbd440c63c04526fbbd` |
-| 3 | `def` | [residual](../../../../RealFunctions/RationalNewtonDisk.lean/declarations/residual.md) | 39 | `declaration-track:259673cfecf4d258790fdd284d0224949dee6d68163e72d2e96e3f33db5fe514` |
-| 4 | `def` | [contraction](../../../../RealFunctions/RationalNewtonDisk.lean/declarations/contraction.md) | 42 | `declaration-track:f5f24a939d9151d1c7cac167c5e61f8616a5ad4d3ee22643d1e866393c1bd1d6` |
-| 5 | `def` | [Valid](../../../../RealFunctions/RationalNewtonDisk.lean/declarations/valid.md) | 47 | `declaration-track:5f3ee001535c5428fda4baa3bf43c379b5a7b4667d8b520d5b84d09ec362317b` |
-| 6 | `instance` | [instDecidableValid](../../../../RealFunctions/RationalNewtonDisk.lean/declarations/instdecidablevalid.md) | 51 | `declaration-track:d2d31833e1d16bf68f5006675fcfa59576c2f1fbf157108570af6c5f07a19891` |
-| 7 | `def` | [check](../../../../RealFunctions/RationalNewtonDisk.lean/declarations/check.md) | 55 | `declaration-track:7604ef62f7d5e8fc2e04b770bf89193c24279f8957df84525e517e2713693e30` |
-| 8 | `def` | [Estimates](../../../../RealFunctions/RationalNewtonDisk.lean/declarations/estimates.md) | 58 | `declaration-track:985b2ebcf0831131f4e91e87b8f035411f4f39a9443d48ee0ec9370dda88c754` |
-| 9 | `theorem` | [check_iff_valid](../../../../RealFunctions/RationalNewtonDisk.lean/declarations/check-iff-valid.md) | 63 | `result-track:6c48fe4ae87ccdab0f94d8dbd61f7b8fd1fc469ea01621c175fc9c16350cb369` |
-| 10 | `theorem` | [magnitude_nonneg](../../../../RealFunctions/RationalNewtonDisk.lean/declarations/magnitude-nonneg.md) | 66 | `result-track:f96420b6c91a275c6dd832c073e30faadfc7d937ce191cff56eda9e8a9584004` |
-| 11 | `theorem` | [norm_le_magnitude](../../../../RealFunctions/RationalNewtonDisk.lean/declarations/norm-le-magnitude.md) | 69 | `result-track:6007183be822505a3cbe6449e77d1bec08d4873e0a4123e911eaf912749de5a7` |
-| 12 | `theorem` | [checked_contraction_nonneg](../../../../RealFunctions/RationalNewtonDisk.lean/declarations/checked-contraction-nonneg.md) | 72 | `result-track:9b1168e4fd98736c912eb9691d0941ccbed89353c9a8700983adca38341ce614` |
-| 13 | `theorem` | [residual_bound](../../../../RealFunctions/RationalNewtonDisk.lean/declarations/residual-bound.md) | 79 | `result-track:cdc56c2c8066cf373285158ca2a2a851eeeebf9293ac6fbd40de236e0e8c0de6` |
-| 14 | `theorem` | [contraction_bound](../../../../RealFunctions/RationalNewtonDisk.lean/declarations/contraction-bound.md) | 97 | `result-track:fd7a3dd0cbc7895e2890d9ff251a9994f58de01e07ffef060d520dd501dd7a19` |
-| 15 | `theorem` | [check_sound](../../../../RealFunctions/RationalNewtonDisk.lean/declarations/check-sound.md) | 130 | `result-track:a60c423e48155b69e1697b4643706ef2041d8c18128dffa5f769e38e8d4be016` |
-| 16 | `theorem` | [closed_margin_control](../../../../RealFunctions/RationalNewtonDisk.lean/declarations/closed-margin-control.md) | 145 | `result-track:685dafa651409a6d5bbee38fa15a702f78c78f65077fab73339314182c187949` |
-| 17 | `theorem` | [unit_defect_rejected](../../../../RealFunctions/RationalNewtonDisk.lean/declarations/unit-defect-rejected.md) | 149 | `result-track:caba5c2e59c8537ba98bdfe5bc931f657338010cd72f21d254fc8a3a218c244d` |
+| 1 | `structure` | [Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalNewtonDisk.lean/declarations/data.md) | 27 | `declaration-track:219162cc46902cee8c11940830eb2ab034bcb3fcf13ba859ebccdf490bb2d22a` |
+| 2 | `def` | [magnitude](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalNewtonDisk.lean/declarations/magnitude.md) | 37 | `declaration-track:68d1f7ae7ae8e2e1fcb03e22ac89fdaea3f2dd09ec2b0fbd440c63c04526fbbd` |
+| 3 | `def` | [residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalNewtonDisk.lean/declarations/residual.md) | 39 | `declaration-track:259673cfecf4d258790fdd284d0224949dee6d68163e72d2e96e3f33db5fe514` |
+| 4 | `def` | [contraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalNewtonDisk.lean/declarations/contraction.md) | 42 | `declaration-track:f5f24a939d9151d1c7cac167c5e61f8616a5ad4d3ee22643d1e866393c1bd1d6` |
+| 5 | `def` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalNewtonDisk.lean/declarations/valid.md) | 47 | `declaration-track:5f3ee001535c5428fda4baa3bf43c379b5a7b4667d8b520d5b84d09ec362317b` |
+| 6 | `instance` | [instDecidableValid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalNewtonDisk.lean/declarations/instdecidablevalid.md) | 51 | `declaration-track:d2d31833e1d16bf68f5006675fcfa59576c2f1fbf157108570af6c5f07a19891` |
+| 7 | `def` | [check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalNewtonDisk.lean/declarations/check.md) | 55 | `declaration-track:7604ef62f7d5e8fc2e04b770bf89193c24279f8957df84525e517e2713693e30` |
+| 8 | `def` | [Estimates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalNewtonDisk.lean/declarations/estimates.md) | 58 | `declaration-track:985b2ebcf0831131f4e91e87b8f035411f4f39a9443d48ee0ec9370dda88c754` |
+| 9 | `theorem` | [check_iff_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalNewtonDisk.lean/declarations/check-iff-valid.md) | 63 | `result-track:6c48fe4ae87ccdab0f94d8dbd61f7b8fd1fc469ea01621c175fc9c16350cb369` |
+| 10 | `theorem` | [magnitude_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalNewtonDisk.lean/declarations/magnitude-nonneg.md) | 66 | `result-track:f96420b6c91a275c6dd832c073e30faadfc7d937ce191cff56eda9e8a9584004` |
+| 11 | `theorem` | [norm_le_magnitude](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalNewtonDisk.lean/declarations/norm-le-magnitude.md) | 69 | `result-track:6007183be822505a3cbe6449e77d1bec08d4873e0a4123e911eaf912749de5a7` |
+| 12 | `theorem` | [checked_contraction_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalNewtonDisk.lean/declarations/checked-contraction-nonneg.md) | 72 | `result-track:9b1168e4fd98736c912eb9691d0941ccbed89353c9a8700983adca38341ce614` |
+| 13 | `theorem` | [residual_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalNewtonDisk.lean/declarations/residual-bound.md) | 79 | `result-track:cdc56c2c8066cf373285158ca2a2a851eeeebf9293ac6fbd40de236e0e8c0de6` |
+| 14 | `theorem` | [contraction_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalNewtonDisk.lean/declarations/contraction-bound.md) | 97 | `result-track:fd7a3dd0cbc7895e2890d9ff251a9994f58de01e07ffef060d520dd501dd7a19` |
+| 15 | `theorem` | [check_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalNewtonDisk.lean/declarations/check-sound.md) | 130 | `result-track:a60c423e48155b69e1697b4643706ef2041d8c18128dffa5f769e38e8d4be016` |
+| 16 | `theorem` | [closed_margin_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalNewtonDisk.lean/declarations/closed-margin-control.md) | 145 | `result-track:685dafa651409a6d5bbee38fa15a702f78c78f65077fab73339314182c187949` |
+| 17 | `theorem` | [unit_defect_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalNewtonDisk.lean/declarations/unit-defect-rejected.md) | 149 | `result-track:caba5c2e59c8537ba98bdfe5bc931f657338010cd72f21d254fc8a3a218c244d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

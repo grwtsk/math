@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEdition3.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PositiveKernel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEdition3.lean/declarations/positivekernel.md) | 22 | `declaration-track:b7fde4b01ee2a93bd08bb5d43079eb401330a8a9f4f43dcea193827465dd25ed` |
-| 2 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEdition3.lean/declarations/instance.md) | 30 | `declaration-track:7a0563aeebfe670c5ed0d4c7fd0196a811b79551ddab2a9590dc4e48737e6c51` |
-| 3 | `theorem` | [isHermitian](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEdition3.lean/declarations/ishermitian.md) | 34 | `result-track:e333018cf9537c0da80b04a9d043eca578d90b1271aa6f48f0cdd5d5268ab6b7` |
-| 4 | `theorem` | [conj_apply_symm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEdition3.lean/declarations/conj-apply-symm.md) | 40 | `result-track:017e7fe532e5909da6c562d07dbc2f9ffe030ea76e1136bd94758fb24325a716` |
-| 5 | `theorem` | [conj_matrix_apply_symm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEdition3.lean/declarations/conj-matrix-apply-symm.md) | 46 | `result-track:c42cab802a11edf3b93e3e1b1ec3b83aedcfacc7b6e984d34d70582cf568f51a` |
-| 6 | `theorem` | [quadratic_nonnegative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEdition3.lean/declarations/quadratic-nonnegative.md) | 52 | `result-track:bc2fe316de89e60a7a717c7a89453c0fe72a6a62cf327b428c5c913befc8742e` |
+| 1 | `structure` | [PositiveKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEdition3.lean/declarations/positivekernel.md) | 22 | `declaration-track:b7fde4b01ee2a93bd08bb5d43079eb401330a8a9f4f43dcea193827465dd25ed` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEdition3.lean/declarations/instance.md) | 30 | `declaration-track:7a0563aeebfe670c5ed0d4c7fd0196a811b79551ddab2a9590dc4e48737e6c51` |
+| 3 | `theorem` | [isHermitian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEdition3.lean/declarations/ishermitian.md) | 34 | `result-track:e333018cf9537c0da80b04a9d043eca578d90b1271aa6f48f0cdd5d5268ab6b7` |
+| 4 | `theorem` | [conj_apply_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEdition3.lean/declarations/conj-apply-symm.md) | 40 | `result-track:017e7fe532e5909da6c562d07dbc2f9ffe030ea76e1136bd94758fb24325a716` |
+| 5 | `theorem` | [conj_matrix_apply_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEdition3.lean/declarations/conj-matrix-apply-symm.md) | 46 | `result-track:c42cab802a11edf3b93e3e1b1ec3b83aedcfacc7b6e984d34d70582cf568f51a` |
+| 6 | `theorem` | [quadratic_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEdition3.lean/declarations/quadratic-nonnegative.md) | 52 | `result-track:bc2fe316de89e60a7a717c7a89453c0fe72a6a62cf327b428c5c913befc8742e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

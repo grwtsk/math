@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FixturesNamespacedEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FixturesNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FixturesNamespacedEdition2.lean/declarations/example-source-edition-2.md) | 16 | `declaration-track:76fb8ee9fa6f9810bf910bb4caaed9bb01a10d471bc4f8b085d1f67858b04160` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FixturesNamespacedEdition2.lean/declarations/example.md) | 20 | `declaration-track:1b9f313adfc7513ee88fb575cf42d5976b8d1bc4a7c3c0c4fd3aa329ec8d7a99` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesNamespacedEdition2.lean/declarations/example-source-edition-2.md) | 16 | `declaration-track:76fb8ee9fa6f9810bf910bb4caaed9bb01a10d471bc4f8b085d1f67858b04160` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesNamespacedEdition2.lean/declarations/example.md) | 20 | `declaration-track:1b9f313adfc7513ee88fb575cf42d5976b8d1bc4a7c3c0c4fd3aa329ec8d7a99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

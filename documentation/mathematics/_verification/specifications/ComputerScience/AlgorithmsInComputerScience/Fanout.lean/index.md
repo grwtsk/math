@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Fanout.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Fanout.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Fanout.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Fanout.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [FanoutBranchId](../../../../../ComputerScience/AlgorithmsInComputerScience/Fanout.lean/declarations/fanoutbranchid.md) | 12 | `declaration-track:e88adf5d898bde0a8d3a9d93a9380dbb23a6341f9a3cda9c465a759628ea8b41` |
-| 2 | `inductive` | [FanoutDisposition](../../../../../ComputerScience/AlgorithmsInComputerScience/Fanout.lean/declarations/fanoutdisposition.md) | 14 | `declaration-track:5e5aa8d3a64f57ea8434c7630badc0c28b6d9f6ff8336e78d257c71159e2eba1` |
-| 3 | `inductive` | [FanoutMergeStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/Fanout.lean/declarations/fanoutmergestatus.md) | 22 | `declaration-track:24b6937825e35261818be163d750e6841647d95918dfe70014aeadb297c7f75a` |
-| 4 | `structure` | [FanoutBudget](../../../../../ComputerScience/AlgorithmsInComputerScience/Fanout.lean/declarations/fanoutbudget.md) | 31 | `declaration-track:9c8e2964e305daaf46dbadef4d8e5304726986a07a5adbd2d0057ba612652f74` |
-| 5 | `structure` | [FanoutBranch](../../../../../ComputerScience/AlgorithmsInComputerScience/Fanout.lean/declarations/fanoutbranch.md) | 37 | `declaration-track:a1aca653ee935f3f25a6d1de7464454d8379d2a1003dcb403a305949aca58fae` |
-| 6 | `structure` | [FanoutTree](../../../../../ComputerScience/AlgorithmsInComputerScience/Fanout.lean/declarations/fanouttree.md) | 57 | `declaration-track:1be8189a33987102813e74ee557d8ca21881b202f67a1955a3c89f8ddddac3ac` |
-| 7 | `theorem` | [FanoutTree.rejected_retained](../../../../../ComputerScience/AlgorithmsInComputerScience/Fanout.lean/declarations/fanouttree-rejected-retained.md) | 85 | `result-track:7be869af048f1f8e0fd3aada9cb18926a1a794b5c61f8e2e235346635bb4b2ad` |
+| 1 | `abbrev` | [FanoutBranchId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Fanout.lean/declarations/fanoutbranchid.md) | 12 | `declaration-track:e88adf5d898bde0a8d3a9d93a9380dbb23a6341f9a3cda9c465a759628ea8b41` |
+| 2 | `inductive` | [FanoutDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Fanout.lean/declarations/fanoutdisposition.md) | 14 | `declaration-track:5e5aa8d3a64f57ea8434c7630badc0c28b6d9f6ff8336e78d257c71159e2eba1` |
+| 3 | `inductive` | [FanoutMergeStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Fanout.lean/declarations/fanoutmergestatus.md) | 22 | `declaration-track:24b6937825e35261818be163d750e6841647d95918dfe70014aeadb297c7f75a` |
+| 4 | `structure` | [FanoutBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Fanout.lean/declarations/fanoutbudget.md) | 31 | `declaration-track:9c8e2964e305daaf46dbadef4d8e5304726986a07a5adbd2d0057ba612652f74` |
+| 5 | `structure` | [FanoutBranch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Fanout.lean/declarations/fanoutbranch.md) | 37 | `declaration-track:a1aca653ee935f3f25a6d1de7464454d8379d2a1003dcb403a305949aca58fae` |
+| 6 | `structure` | [FanoutTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Fanout.lean/declarations/fanouttree.md) | 57 | `declaration-track:1be8189a33987102813e74ee557d8ca21881b202f67a1955a3c89f8ddddac3ac` |
+| 7 | `theorem` | [FanoutTree.rejected_retained](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Fanout.lean/declarations/fanouttree-rejected-retained.md) | 85 | `result-track:7be869af048f1f8e0fd3aada9cb18926a1a794b5c61f8e2e235346635bb4b2ad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/RealPublicLogMulRpowNegLeTwoDivMulRpowNeg.lean/index.md) · [Full source](../../../../SpecialFunctions/RealPublicLogMulRpowNegLeTwoDivMulRpowNeg.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RealPublicLogMulRpowNegLeTwoDivMulRpowNeg.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RealPublicLogMulRpowNegLeTwoDivMulRpowNeg.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [log_mul_rpow_neg_le_two_div_mul_rpow_neg](../../../../SpecialFunctions/RealPublicLogMulRpowNegLeTwoDivMulRpowNeg.lean/declarations/log-mul-rpow-neg-le-two-div-mul-rpow-neg.md) | 20 | `result-track:36d7b14649e257fc517ee9041da0e8fea205867cc31d6f5721d86ec13a219440` |
-| 2 | `theorem` | [one_le_one_add_norm_rpow](../../../../SpecialFunctions/RealPublicLogMulRpowNegLeTwoDivMulRpowNeg.lean/declarations/one-le-one-add-norm-rpow.md) | 50 | `result-track:d676a452863dc213d9cd901aadf19c94afa28f159b91af0e278d72d9ac4c3917` |
+| 1 | `theorem` | [log_mul_rpow_neg_le_two_div_mul_rpow_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RealPublicLogMulRpowNegLeTwoDivMulRpowNeg.lean/declarations/log-mul-rpow-neg-le-two-div-mul-rpow-neg.md) | 20 | `result-track:36d7b14649e257fc517ee9041da0e8fea205867cc31d6f5721d86ec13a219440` |
+| 2 | `theorem` | [one_le_one_add_norm_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RealPublicLogMulRpowNegLeTwoDivMulRpowNeg.lean/declarations/one-le-one-add-norm-rpow.md) | 50 | `result-track:d676a452863dc213d9cd901aadf19c94afa28f159b91af0e278d72d9ac4c3917` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MoritaBasic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MoritaBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoritaBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoritaBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,17 +60,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MoritaEquivalence](../../../../CommutativeAlgebra/MoritaBasic.lean/declarations/moritaequivalence.md) | 55 | `declaration-track:15be5460f53c0d0668631708d71b6fcf597ea8021280866467a2902e409c115a` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/MoritaBasic.lean/declarations/instance.md) | 66 | `declaration-track:1143c2cb718fb1aa07c41beb97e9c44ba451c0191aeccf478b9147d291a38cb0` |
-| 3 | `def` | [refl](../../../../CommutativeAlgebra/MoritaBasic.lean/declarations/refl.md) | 73 | `declaration-track:107dec92e63978a8eff5d2a67c72dd4bbbe0a312613144c24e92e9917114fe36` |
-| 4 | `def` | [symm](../../../../CommutativeAlgebra/MoritaBasic.lean/declarations/symm.md) | 81 | `declaration-track:eab194ed7b7f0ea42314375211173306399a0e2334a528b87ee8652bb53cc8b3` |
-| 5 | `def` | [trans](../../../../CommutativeAlgebra/MoritaBasic.lean/declarations/trans-source-edition-2.md) | 97 | `declaration-track:c154c11a7dd480cef9efedbf09d05b5e3cb14b374df88c46002499187b4e99d6` |
-| 6 | `def` | [ofAlgEquiv](../../../../CommutativeAlgebra/MoritaBasic.lean/declarations/ofalgequiv.md) | 108 | `declaration-track:4c54eedd32e14db31564a06d44b784fb45df597d63d2c5ece67074e5071bac66` |
-| 7 | `structure` | [IsMoritaEquivalent](../../../../CommutativeAlgebra/MoritaBasic.lean/declarations/ismoritaequivalent.md) | 120 | `declaration-track:a956bec8432b41c8ee635c5ed90e32ce6d4c966c85cb5e764292d31310c825f4` |
-| 8 | `lemma` | [refl](../../../../CommutativeAlgebra/MoritaBasic.lean/declarations/refl-source-edition-2.md) | 127 | `result-track:75d39e12ed1c480db3b28558cf42ab42bed53f681a86c3fc9ce348e754d7880c` |
-| 9 | `lemma` | [symm](../../../../CommutativeAlgebra/MoritaBasic.lean/declarations/symm-source-edition-2.md) | 130 | `result-track:f018b4817ba569bc40813c821f27026541b0bd8f0302b5c31e3aa1d35e28635c` |
-| 10 | `lemma` | [trans](../../../../CommutativeAlgebra/MoritaBasic.lean/declarations/trans.md) | 134 | `result-track:3871e5f3fbdf06f0d5ecff04240926e768518421d0e665cce97573448ac76739` |
-| 11 | `lemma` | [of_algEquiv](../../../../CommutativeAlgebra/MoritaBasic.lean/declarations/of-algequiv.md) | 139 | `result-track:0ba5e7704b1e54f5a487663d22fab0d1ee3ce42cba5fe8f4874125c7b8aefaf2` |
+| 1 | `structure` | [MoritaEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoritaBasic.lean/declarations/moritaequivalence.md) | 55 | `declaration-track:15be5460f53c0d0668631708d71b6fcf597ea8021280866467a2902e409c115a` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoritaBasic.lean/declarations/instance.md) | 66 | `declaration-track:1143c2cb718fb1aa07c41beb97e9c44ba451c0191aeccf478b9147d291a38cb0` |
+| 3 | `def` | [refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoritaBasic.lean/declarations/refl.md) | 73 | `declaration-track:107dec92e63978a8eff5d2a67c72dd4bbbe0a312613144c24e92e9917114fe36` |
+| 4 | `def` | [symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoritaBasic.lean/declarations/symm.md) | 81 | `declaration-track:eab194ed7b7f0ea42314375211173306399a0e2334a528b87ee8652bb53cc8b3` |
+| 5 | `def` | [trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoritaBasic.lean/declarations/trans-source-edition-2.md) | 97 | `declaration-track:c154c11a7dd480cef9efedbf09d05b5e3cb14b374df88c46002499187b4e99d6` |
+| 6 | `def` | [ofAlgEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoritaBasic.lean/declarations/ofalgequiv.md) | 108 | `declaration-track:4c54eedd32e14db31564a06d44b784fb45df597d63d2c5ece67074e5071bac66` |
+| 7 | `structure` | [IsMoritaEquivalent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoritaBasic.lean/declarations/ismoritaequivalent.md) | 120 | `declaration-track:a956bec8432b41c8ee635c5ed90e32ce6d4c966c85cb5e764292d31310c825f4` |
+| 8 | `lemma` | [refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoritaBasic.lean/declarations/refl-source-edition-2.md) | 127 | `result-track:75d39e12ed1c480db3b28558cf42ab42bed53f681a86c3fc9ce348e754d7880c` |
+| 9 | `lemma` | [symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoritaBasic.lean/declarations/symm-source-edition-2.md) | 130 | `result-track:f018b4817ba569bc40813c821f27026541b0bd8f0302b5c31e3aa1d35e28635c` |
+| 10 | `lemma` | [trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoritaBasic.lean/declarations/trans.md) | 134 | `result-track:3871e5f3fbdf06f0d5ecff04240926e768518421d0e665cce97573448ac76739` |
+| 11 | `lemma` | [of_algEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoritaBasic.lean/declarations/of-algequiv.md) | 139 | `result-track:0ba5e7704b1e54f5a487663d22fab0d1ee3ce42cba5fe8f4874125c7b8aefaf2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

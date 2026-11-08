@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedVonMangoldtModOneAnalyticInputs`](../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PinnedVonMangoldtModOneAnalyticInputs.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedVonMangoldtModOneAnalyticInputs`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PinnedVonMangoldtModOneAnalyticInputs.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Analysis.SpecificLimits.Basic` — import line 8; external provider; requires a separately pinned dependency.
 - `Mathlib.Topology.MetricSpace.Basic` — import line 9; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 10; external provider; requires a separately pinned dependency.
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [TauberianRelativeWindowLimits](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/declarations/tauberianrelativewindowlimits.md) | 47 | `declaration-track:c89bb69afd9515393639ec25f0e5f7873ca469e480e4097f7fc02d6e5b85652c` |
-| 2 | `theorem` | [tauberian_relative_window_exact_partition](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/declarations/tauberian-relative-window-exact-partition.md) | 57 | `result-track:1667202bd28d2e3f1a4fa4d014d13f0ce4492ed853f919909c10bac0568f3a53` |
-| 3 | `theorem` | [tauberian_omitted_prefix_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/declarations/tauberian-omitted-prefix-le.md) | 66 | `result-track:5cb364856b3f1b8ea631a603f5c3eac18f6f3cee714e6bd6c5ff99e66f5cb1ef` |
-| 4 | `theorem` | [tauberian_relativeWindows_to_fullCumulative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/declarations/tauberian-relativewindows-to-fullcumulative.md) | 88 | `result-track:ca4f2385a1078388eb822076b3f23701c1042bfe3ebe0dbe6a3694032a14e8b8` |
-| 5 | `def` | [PinnedVonMangoldtRelativeIntervalLimits](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/declarations/pinnedvonmangoldtrelativeintervallimits.md) | 227 | `declaration-track:504df356cc9dd5e8045c81716f0fa2f96e1ca76bc77c7bd02b88f1746d0a1949` |
-| 6 | `theorem` | [pinnedVonMangoldtWeakPNT_of_intervalLimits](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/declarations/pinnedvonmangoldtweakpnt-of-intervallimits.md) | 232 | `result-track:f85bd7c083579dd81f9a2fcd742830788f88aa3fd9693cf8a266501d89bede15` |
+| 1 | `def` | [TauberianRelativeWindowLimits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/declarations/tauberianrelativewindowlimits.md) | 47 | `declaration-track:c89bb69afd9515393639ec25f0e5f7873ca469e480e4097f7fc02d6e5b85652c` |
+| 2 | `theorem` | [tauberian_relative_window_exact_partition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/declarations/tauberian-relative-window-exact-partition.md) | 57 | `result-track:1667202bd28d2e3f1a4fa4d014d13f0ce4492ed853f919909c10bac0568f3a53` |
+| 3 | `theorem` | [tauberian_omitted_prefix_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/declarations/tauberian-omitted-prefix-le.md) | 66 | `result-track:5cb364856b3f1b8ea631a603f5c3eac18f6f3cee714e6bd6c5ff99e66f5cb1ef` |
+| 4 | `theorem` | [tauberian_relativeWindows_to_fullCumulative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/declarations/tauberian-relativewindows-to-fullcumulative.md) | 88 | `result-track:ca4f2385a1078388eb822076b3f23701c1042bfe3ebe0dbe6a3694032a14e8b8` |
+| 5 | `def` | [PinnedVonMangoldtRelativeIntervalLimits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/declarations/pinnedvonmangoldtrelativeintervallimits.md) | 227 | `declaration-track:504df356cc9dd5e8045c81716f0fa2f96e1ca76bc77c7bd02b88f1746d0a1949` |
+| 6 | `theorem` | [pinnedVonMangoldtWeakPNT_of_intervalLimits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/declarations/pinnedvonmangoldtweakpnt-of-intervallimits.md) | 232 | `result-track:f85bd7c083579dd81f9a2fcd742830788f88aa3fd9693cf8a266501d89bede15` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

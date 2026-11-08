@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Telescope](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/declarations/telescope.md) | 28 | `declaration-track:8072d7fe99faf46c1723146c9d6e9c67de48db3457fa1be267bd77a6cde6544a` |
-| 2 | `structure` | [ProofAt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/declarations/proofat.md) | 31 | `declaration-track:e09c76a4f8d26a821f9964487748f3b094f9f43d8e536fe78096b93f0bb5b38a` |
-| 3 | `structure` | [CheckedAdapter](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/declarations/checkedadapter.md) | 37 | `declaration-track:cf1fdd997c14ba202455a14a4345cbad44e234a546490275496b9a44af881133` |
-| 4 | `def` | [cutAt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/declarations/cutat.md) | 44 | `declaration-track:43bd575b188452218b0ec661712d3ccfb1ca626248b4ff23bcc05de2950c6930` |
-| 5 | `theorem` | [cutFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/declarations/cutfamily.md) | 54 | `result-track:10857eead5c12993da466331001021c4cfbf4c384dfc220b30385a595e1602d2` |
-| 6 | `def` | [CheckedAdapter.trans](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/declarations/checkedadapter-trans.md) | 65 | `declaration-track:6e6d9b7235309472d0894b885cc2824c3b391499f9a677317ee19cfa13780c97` |
-| 7 | `structure` | [DescriptiveLink](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/declarations/descriptivelink.md) | 73 | `declaration-track:714545fe634588fa36f397bd3c37032347fa86a294731e6813d759eb5af813d3` |
-| 8 | `theorem` | [descriptive_link_does_not_supply_false](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/declarations/descriptive-link-does-not-supply-false.md) | 80 | `result-track:13f7041d24306c8cb803902ff961443a55bd1657b8f48b1efb12ebae640f504b` |
-| 9 | `theorem` | [conclusion_of_premise](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/declarations/conclusion-of-premise.md) | 88 | `result-track:f41edeb10f780c9c3c25f9c565cd33828a2395511b4dcc7a1c57752ea883f0fb` |
+| 1 | `abbrev` | [Telescope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/declarations/telescope.md) | 28 | `declaration-track:8072d7fe99faf46c1723146c9d6e9c67de48db3457fa1be267bd77a6cde6544a` |
+| 2 | `structure` | [ProofAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/declarations/proofat.md) | 31 | `declaration-track:e09c76a4f8d26a821f9964487748f3b094f9f43d8e536fe78096b93f0bb5b38a` |
+| 3 | `structure` | [CheckedAdapter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/declarations/checkedadapter.md) | 37 | `declaration-track:cf1fdd997c14ba202455a14a4345cbad44e234a546490275496b9a44af881133` |
+| 4 | `def` | [cutAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/declarations/cutat.md) | 44 | `declaration-track:43bd575b188452218b0ec661712d3ccfb1ca626248b4ff23bcc05de2950c6930` |
+| 5 | `theorem` | [cutFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/declarations/cutfamily.md) | 54 | `result-track:10857eead5c12993da466331001021c4cfbf4c384dfc220b30385a595e1602d2` |
+| 6 | `def` | [CheckedAdapter.trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/declarations/checkedadapter-trans.md) | 65 | `declaration-track:6e6d9b7235309472d0894b885cc2824c3b391499f9a677317ee19cfa13780c97` |
+| 7 | `structure` | [DescriptiveLink](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/declarations/descriptivelink.md) | 73 | `declaration-track:714545fe634588fa36f397bd3c37032347fa86a294731e6813d759eb5af813d3` |
+| 8 | `theorem` | [descriptive_link_does_not_supply_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/declarations/descriptive-link-does-not-supply-false.md) | 80 | `result-track:13f7041d24306c8cb803902ff961443a55bd1657b8f48b1efb12ebae640f504b` |
+| 9 | `theorem` | [conclusion_of_premise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentPortCut.lean/declarations/conclusion-of-premise.md) | 88 | `result-track:f41edeb10f780c9c3c25f9c565cd33828a2395511b4dcc7a1c57752ea883f0fb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

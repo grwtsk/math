@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CenteredMobiusLogGreenModewiseReadout.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CenteredMobiusLogGreenModewiseReadout.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenModewiseReadout.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenModewiseReadout.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenHistoricalMemLp`](../../../../MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenHistoricalMemLp`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Analysis.Fourier.AddCircle` — import line 9; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 10; external provider; requires a separately pinned dependency.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [thinFourierSlope](../../../../MeasureAndIntegration/CenteredMobiusLogGreenModewiseReadout.lean/declarations/thinfourierslope.md) | 20 | `declaration-track:a3038c9e8168cf3e1273a5dc42fec880d450bdd90fce474b2bfb1543c48e741f` |
-| 2 | `theorem` | [integral_thinHistoricalGreenResidual_zero](../../../../MeasureAndIntegration/CenteredMobiusLogGreenModewiseReadout.lean/declarations/integral-thinhistoricalgreenresidual-zero.md) | 24 | `result-track:257923bff8666bb2893bbf7ba1d735fc0562d10bede238a1bb2e8c8bc6dd045f` |
-| 3 | `theorem` | [thinHistoricalGreenFourierCoeff_zero](../../../../MeasureAndIntegration/CenteredMobiusLogGreenModewiseReadout.lean/declarations/thinhistoricalgreenfouriercoeff-zero.md) | 80 | `result-track:309d12c54579c8b731263e2b83617b93e3b1728c5d3e0dd305cea78a1a5db715` |
-| 4 | `theorem` | [thinHistoricalGreenFourierCoeff_eq_derivative_pairing](../../../../MeasureAndIntegration/CenteredMobiusLogGreenModewiseReadout.lean/declarations/thinhistoricalgreenfouriercoeff-eq-derivative-pairing.md) | 92 | `result-track:91e04b183699242483def25f5a02644f3f8600d736bc331db9c6e8e20afa2415` |
-| 5 | `theorem` | [thinGreenArithmeticFourierCoordinate_eq_fourierCoeff_of_ibp](../../../../MeasureAndIntegration/CenteredMobiusLogGreenModewiseReadout.lean/declarations/thingreenarithmeticfouriercoordinate-eq-fouriercoeff-of-ibp.md) | 106 | `result-track:70921840e6d619f1c3199d78dc342e7db69c07256241e59292aa73c09095e6b5` |
+| 1 | `def` | [thinFourierSlope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenModewiseReadout.lean/declarations/thinfourierslope.md) | 20 | `declaration-track:a3038c9e8168cf3e1273a5dc42fec880d450bdd90fce474b2bfb1543c48e741f` |
+| 2 | `theorem` | [integral_thinHistoricalGreenResidual_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenModewiseReadout.lean/declarations/integral-thinhistoricalgreenresidual-zero.md) | 24 | `result-track:257923bff8666bb2893bbf7ba1d735fc0562d10bede238a1bb2e8c8bc6dd045f` |
+| 3 | `theorem` | [thinHistoricalGreenFourierCoeff_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenModewiseReadout.lean/declarations/thinhistoricalgreenfouriercoeff-zero.md) | 80 | `result-track:309d12c54579c8b731263e2b83617b93e3b1728c5d3e0dd305cea78a1a5db715` |
+| 4 | `theorem` | [thinHistoricalGreenFourierCoeff_eq_derivative_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenModewiseReadout.lean/declarations/thinhistoricalgreenfouriercoeff-eq-derivative-pairing.md) | 92 | `result-track:91e04b183699242483def25f5a02644f3f8600d736bc331db9c6e8e20afa2415` |
+| 5 | `theorem` | [thinGreenArithmeticFourierCoordinate_eq_fourierCoeff_of_ibp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenModewiseReadout.lean/declarations/thingreenarithmeticfouriercoordinate-eq-fouriercoeff-of-ibp.md) | 106 | `result-track:70921840e6d619f1c3199d78dc342e7db69c07256241e59292aa73c09095e6b5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

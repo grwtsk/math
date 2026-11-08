@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamples.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamples.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamples.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamples.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [hostileUpper](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamples.lean/declarations/hostileupper.md) | 27 | `declaration-track:1fbca9beb6e2e86941065bd563e964527b6c00fc015c42f8181e611bc7558bd6` |
-| 2 | `def` | [hostileLower](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamples.lean/declarations/hostilelower.md) | 40 | `declaration-track:2660c11134d85104d834f665a6eb8e0423525443e4ff8dd2527a8528f4c4cf21` |
-| 3 | `def` | [hostileSign](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamples.lean/declarations/hostilesign.md) | 53 | `declaration-track:bafbd09529ac29d442923406010f319af77bb0d1571766138b0931e31e891f1b` |
-| 4 | `theorem` | [hostileUpper_sign_inverse](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamples.lean/declarations/hostileupper-sign-inverse.md) | 66 | `result-track:6a7d3a143d61aae0081457026ff24ce43fe6a75ac484d091a6ea83727c82a8a7` |
-| 5 | `theorem` | [hostileLower_sign_inverse](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamples.lean/declarations/hostilelower-sign-inverse.md) | 76 | `result-track:efef85f7a94de0c685718d6711a7d7ec3973e76c548e22e12536fefbac214737` |
-| 6 | `theorem` | [noncommuting_sign_loop_fails](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamples.lean/declarations/noncommuting-sign-loop-fails.md) | 86 | `result-track:21d511b06997dfa9454a873f95459810b18c16de01c35fd7994e9b1be6415e91` |
-| 7 | `theorem` | [hostile_edges_noncommute](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamples.lean/declarations/hostile-edges-noncommute.md) | 97 | `result-track:ebeb62b4a82197db258bbd4e0e5c130f93e911a918cbaeae5e9c44ed936b5ff3` |
+| 1 | `def` | [hostileUpper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamples.lean/declarations/hostileupper.md) | 27 | `declaration-track:1fbca9beb6e2e86941065bd563e964527b6c00fc015c42f8181e611bc7558bd6` |
+| 2 | `def` | [hostileLower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamples.lean/declarations/hostilelower.md) | 40 | `declaration-track:2660c11134d85104d834f665a6eb8e0423525443e4ff8dd2527a8528f4c4cf21` |
+| 3 | `def` | [hostileSign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamples.lean/declarations/hostilesign.md) | 53 | `declaration-track:bafbd09529ac29d442923406010f319af77bb0d1571766138b0931e31e891f1b` |
+| 4 | `theorem` | [hostileUpper_sign_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamples.lean/declarations/hostileupper-sign-inverse.md) | 66 | `result-track:6a7d3a143d61aae0081457026ff24ce43fe6a75ac484d091a6ea83727c82a8a7` |
+| 5 | `theorem` | [hostileLower_sign_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamples.lean/declarations/hostilelower-sign-inverse.md) | 76 | `result-track:efef85f7a94de0c685718d6711a7d7ec3973e76c548e22e12536fefbac214737` |
+| 6 | `theorem` | [noncommuting_sign_loop_fails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamples.lean/declarations/noncommuting-sign-loop-fails.md) | 86 | `result-track:21d511b06997dfa9454a873f95459810b18c16de01c35fd7994e9b1be6415e91` |
+| 7 | `theorem` | [hostile_edges_noncommute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamples.lean/declarations/hostile-edges-noncommute.md) | 97 | `result-track:ebeb62b4a82197db258bbd4e0e5c130f93e911a918cbaeae5e9c44ed936b5ff3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

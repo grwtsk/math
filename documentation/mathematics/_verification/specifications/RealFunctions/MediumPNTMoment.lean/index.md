@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/MediumPNTMoment.lean/index.md) · [Full source](../../../../RealFunctions/MediumPNTMoment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MediumPNTMoment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MediumPNTMoment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [psiRelativeError_measurable](../../../../RealFunctions/MediumPNTMoment.lean/declarations/psirelativeerror-measurable.md) | 11 | `result-track:5b746ba7db4e86473325d553120e6787d64b86b88259fe80f73782ee8384b7f6` |
-| 2 | `theorem` | [psiRelativeError_bound](../../../../RealFunctions/MediumPNTMoment.lean/declarations/psirelativeerror-bound.md) | 17 | `result-track:f50e3f2f51bc06a4ac8bb0d220b23676b55918178dcce4eff888e381ee2c1456` |
-| 3 | `theorem` | [inverse_square_integrable](../../../../RealFunctions/MediumPNTMoment.lean/declarations/inverse-square-integrable.md) | 33 | `result-track:79d5c6fef9e4b8533b210177b3d637cecac5526e6ae6a8d983ccd7e19f42adbb` |
-| 4 | `theorem` | [psiRelativeError_mul_pow_integrable](../../../../RealFunctions/MediumPNTMoment.lean/declarations/psirelativeerror-mul-pow-integrable.md) | 42 | `result-track:14f3fdd03576d0ee4d2461460386f8f057f7331f82df46ca4561387077a17ff6` |
-| 5 | `theorem` | [psiRelativeError_integrable](../../../../RealFunctions/MediumPNTMoment.lean/declarations/psirelativeerror-integrable.md) | 79 | `result-track:4643f417846caa5ee1aef09bed7b4fdb54ba4895ad4ceb3ef39b555dddd74af4` |
-| 6 | `theorem` | [psiRelativeError_first_moment_integrable](../../../../RealFunctions/MediumPNTMoment.lean/declarations/psirelativeerror-first-moment-integrable.md) | 83 | `result-track:dab12b9607f7f6410a3b8965b88b6a9e4c05457d69a28a42cefc70e57a2e4f61` |
+| 1 | `theorem` | [psiRelativeError_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MediumPNTMoment.lean/declarations/psirelativeerror-measurable.md) | 11 | `result-track:5b746ba7db4e86473325d553120e6787d64b86b88259fe80f73782ee8384b7f6` |
+| 2 | `theorem` | [psiRelativeError_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MediumPNTMoment.lean/declarations/psirelativeerror-bound.md) | 17 | `result-track:f50e3f2f51bc06a4ac8bb0d220b23676b55918178dcce4eff888e381ee2c1456` |
+| 3 | `theorem` | [inverse_square_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MediumPNTMoment.lean/declarations/inverse-square-integrable.md) | 33 | `result-track:79d5c6fef9e4b8533b210177b3d637cecac5526e6ae6a8d983ccd7e19f42adbb` |
+| 4 | `theorem` | [psiRelativeError_mul_pow_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MediumPNTMoment.lean/declarations/psirelativeerror-mul-pow-integrable.md) | 42 | `result-track:14f3fdd03576d0ee4d2461460386f8f057f7331f82df46ca4561387077a17ff6` |
+| 5 | `theorem` | [psiRelativeError_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MediumPNTMoment.lean/declarations/psirelativeerror-integrable.md) | 79 | `result-track:4643f417846caa5ee1aef09bed7b4fdb54ba4895ad4ceb3ef39b555dddd74af4` |
+| 6 | `theorem` | [psiRelativeError_first_moment_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MediumPNTMoment.lean/declarations/psirelativeerror-first-moment-integrable.md) | 83 | `result-track:dab12b9607f7f6410a3b8965b88b6a9e4c05457d69a28a42cefc70e57a2e4f61` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

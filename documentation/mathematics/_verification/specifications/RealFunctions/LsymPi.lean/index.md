@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/LsymPi.lean/index.md) · [Full source](../../../../RealFunctions/LsymPi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LsymPi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LsymPi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Lsym_pi](../../../../RealFunctions/LsymPi.lean/declarations/lsym-pi.md) | 20 | `declaration-track:05a7710e5cbd692f8020ac182189191558ea470c2584b35ce228710755756050` |
-| 2 | `lemma` | [trace_class_Lsym_pi](../../../../RealFunctions/LsymPi.lean/declarations/trace-class-lsym-pi.md) | 35 | `result-track:c2443b53a1847a0b5d5db8198665123d545d9af567bb887ba5c0c0858731acc5` |
-| 3 | `lemma` | [self_adjoint_Lsym_pi](../../../../RealFunctions/LsymPi.lean/declarations/self-adjoint-lsym-pi.md) | 47 | `result-track:1765a0947b9dc3c4ff125855c7cc3f4f83a1da0689295fa92308f5531bda94ba` |
+| 1 | `def` | [Lsym_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LsymPi.lean/declarations/lsym-pi.md) | 20 | `declaration-track:05a7710e5cbd692f8020ac182189191558ea470c2584b35ce228710755756050` |
+| 2 | `lemma` | [trace_class_Lsym_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LsymPi.lean/declarations/trace-class-lsym-pi.md) | 35 | `result-track:c2443b53a1847a0b5d5db8198665123d545d9af567bb887ba5c0c0858731acc5` |
+| 3 | `lemma` | [self_adjoint_Lsym_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LsymPi.lean/declarations/self-adjoint-lsym-pi.md) | 47 | `result-track:1765a0947b9dc3c4ff125855c7cc3f4f83a1da0689295fa92308f5531bda94ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Stream.lean/index.md) · [Full source](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Stream.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Stream.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Stream.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.InformationTheory.Huffman.Tree`](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Tree.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.InformationTheory.Huffman.Tree`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Tree.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [encodeWith](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Stream.lean/declarations/encodewith.md) | 13 | `declaration-track:9450512a289d706760719cefa53c060cb2b9dfae853ca62cabc1b78ae24ebd76` |
-| 2 | `def` | [decodeCount](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Stream.lean/declarations/decodecount.md) | 20 | `declaration-track:4c3257bf10e63a3b4107c295a841fea716eae44da652d649da26ddfde14ea2b7` |
-| 3 | `theorem` | [encodeWith_exists](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Stream.lean/declarations/encodewith-exists.md) | 27 | `result-track:c89a6692d97226d737f22484f03a985c44dfbc8db213e4786581ac2b291009a2` |
-| 4 | `theorem` | [decodeCount_encodeWith_append](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Stream.lean/declarations/decodecount-encodewith-append.md) | 37 | `result-track:3713addae8b55cf07982bce7af90452c0cb846f496673f481ab77b32f8224576` |
-| 5 | `theorem` | [decodeCount_encodeWith](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Stream.lean/declarations/decodecount-encodewith.md) | 58 | `result-track:147919990dd93624d0f680e9d3342a79f3f6890c1cf8de8ddf197d4ce326543b` |
+| 1 | `def` | [encodeWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Stream.lean/declarations/encodewith.md) | 13 | `declaration-track:9450512a289d706760719cefa53c060cb2b9dfae853ca62cabc1b78ae24ebd76` |
+| 2 | `def` | [decodeCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Stream.lean/declarations/decodecount.md) | 20 | `declaration-track:4c3257bf10e63a3b4107c295a841fea716eae44da652d649da26ddfde14ea2b7` |
+| 3 | `theorem` | [encodeWith_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Stream.lean/declarations/encodewith-exists.md) | 27 | `result-track:c89a6692d97226d737f22484f03a985c44dfbc8db213e4786581ac2b291009a2` |
+| 4 | `theorem` | [decodeCount_encodeWith_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Stream.lean/declarations/decodecount-encodewith-append.md) | 37 | `result-track:3713addae8b55cf07982bce7af90452c0cb846f496673f481ab77b32f8224576` |
+| 5 | `theorem` | [decodeCount_encodeWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Stream.lean/declarations/decodecount-encodewith.md) | 58 | `result-track:147919990dd93624d0f680e9d3342a79f3f6890c1cf8de8ddf197d4ce326543b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FourierBridgeFullAuditNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FourierBridgeFullAuditNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierBridgeFullAuditNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierBridgeFullAuditNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integral_fourierInv_mul_eq](../../../../MeasureAndIntegration/FourierBridgeFullAuditNamespaced.lean/declarations/integral-fourierinv-mul-eq.md) | 20 | `result-track:c170f51b09789d8656d407e5187e472a277eee02cf4eac0d3b2bd5bf6e429c0d` |
-| 2 | `theorem` | [continuous_fourierInv](../../../../MeasureAndIntegration/FourierBridgeFullAuditNamespaced.lean/declarations/continuous-fourierinv.md) | 34 | `result-track:c674cc150525f0deb702ecb04f62316dc38f31b011869fc00b4582c711698060` |
-| 3 | `theorem` | [fourierInv_toLp_ae](../../../../MeasureAndIntegration/FourierBridgeFullAuditNamespaced.lean/declarations/fourierinv-tolp-ae.md) | 41 | `result-track:38bef967fc8ab804d67ffe9fb420e23030f05306c72d1f8a0d203e6b2c42e6be` |
-| 4 | `theorem` | [fourierInv_memLp](../../../../MeasureAndIntegration/FourierBridgeFullAuditNamespaced.lean/declarations/fourierinv-memlp.md) | 72 | `result-track:f277da1cec5c411c77cb22d3c411294adaf9e7b38037db9937113a437dbb169f` |
-| 5 | `theorem` | [fourierInv_toLp_eq](../../../../MeasureAndIntegration/FourierBridgeFullAuditNamespaced.lean/declarations/fourierinv-tolp-eq.md) | 77 | `result-track:8ddf3526ba36afe49b5bd73ead40d83ab606f71ad6fc974823bce24eddc3ab7a` |
-| 6 | `theorem` | [norm_fourierInv_toLp](../../../../MeasureAndIntegration/FourierBridgeFullAuditNamespaced.lean/declarations/norm-fourierinv-tolp.md) | 83 | `result-track:42e9130c15ba40953406f17b4bf6676dcd23c33cfdb01ab1ac7e72c99213c3fd` |
+| 1 | `theorem` | [integral_fourierInv_mul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierBridgeFullAuditNamespaced.lean/declarations/integral-fourierinv-mul-eq.md) | 20 | `result-track:c170f51b09789d8656d407e5187e472a277eee02cf4eac0d3b2bd5bf6e429c0d` |
+| 2 | `theorem` | [continuous_fourierInv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierBridgeFullAuditNamespaced.lean/declarations/continuous-fourierinv.md) | 34 | `result-track:c674cc150525f0deb702ecb04f62316dc38f31b011869fc00b4582c711698060` |
+| 3 | `theorem` | [fourierInv_toLp_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierBridgeFullAuditNamespaced.lean/declarations/fourierinv-tolp-ae.md) | 41 | `result-track:38bef967fc8ab804d67ffe9fb420e23030f05306c72d1f8a0d203e6b2c42e6be` |
+| 4 | `theorem` | [fourierInv_memLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierBridgeFullAuditNamespaced.lean/declarations/fourierinv-memlp.md) | 72 | `result-track:f277da1cec5c411c77cb22d3c411294adaf9e7b38037db9937113a437dbb169f` |
+| 5 | `theorem` | [fourierInv_toLp_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierBridgeFullAuditNamespaced.lean/declarations/fourierinv-tolp-eq.md) | 77 | `result-track:8ddf3526ba36afe49b5bd73ead40d83ab606f71ad6fc974823bce24eddc3ab7a` |
+| 6 | `theorem` | [norm_fourierInv_toLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierBridgeFullAuditNamespaced.lean/declarations/norm-fourierinv-tolp.md) | 83 | `result-track:42e9130c15ba40953406f17b4bf6676dcd23c33cfdb01ab1ac7e72c99213c3fd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

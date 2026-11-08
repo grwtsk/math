@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Heights.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Heights.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Heights.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Heights.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [NeronTateHeightPairingData](../../../../../ComputerScience/AlgorithmsInComputerScience/Heights.lean/declarations/nerontateheightpairingdata.md) | 35 | `declaration-track:501d010d1fad3221692c8c12f6ee35b54bd536e7c754de6767fcf0efc28f657c` |
-| 2 | `structure` | [NeronTateHeightPairingCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Heights.lean/declarations/nerontateheightpairingcertificate.md) | 59 | `declaration-track:3807d2e02e108a2cfd9a9c7521514f91871939bbaebba9f1a08d6ff5a41c6a48` |
-| 3 | `def` | [NeronTateHeightPairingCertificate.certifiedForBSD](../../../../../ComputerScience/AlgorithmsInComputerScience/Heights.lean/declarations/nerontateheightpairingcertificate-certifiedforbsd.md) | 80 | `declaration-track:15e1ede6e84a75e46ea9dd20487f931e0e3a6c676b37b54792b126e59db060db` |
-| 4 | `theorem` | [NeronTateHeightPairingCertificate.certifiedForBSD_of_fields](../../../../../ComputerScience/AlgorithmsInComputerScience/Heights.lean/declarations/nerontateheightpairingcertificate-certifiedforbsd-of-fields.md) | 93 | `result-track:2fa1176c3912d67bda8f337db522b94efd0c1f24b889a0f72ef8d9716d543705` |
+| 1 | `structure` | [NeronTateHeightPairingData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Heights.lean/declarations/nerontateheightpairingdata.md) | 35 | `declaration-track:501d010d1fad3221692c8c12f6ee35b54bd536e7c754de6767fcf0efc28f657c` |
+| 2 | `structure` | [NeronTateHeightPairingCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Heights.lean/declarations/nerontateheightpairingcertificate.md) | 59 | `declaration-track:3807d2e02e108a2cfd9a9c7521514f91871939bbaebba9f1a08d6ff5a41c6a48` |
+| 3 | `def` | [NeronTateHeightPairingCertificate.certifiedForBSD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Heights.lean/declarations/nerontateheightpairingcertificate-certifiedforbsd.md) | 80 | `declaration-track:15e1ede6e84a75e46ea9dd20487f931e0e3a6c676b37b54792b126e59db060db` |
+| 4 | `theorem` | [NeronTateHeightPairingCertificate.certifiedForBSD_of_fields](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Heights.lean/declarations/nerontateheightpairingcertificate-certifiedforbsd-of-fields.md) | 93 | `result-track:2fa1176c3912d67bda8f337db522b94efd0c1f24b889a0f72ef8d9716d543705` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

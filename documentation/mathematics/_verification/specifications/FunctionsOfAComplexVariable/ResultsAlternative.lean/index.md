@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ResultsAlternative.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ResultsAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ResultsAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ResultsAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [scalarFeatureKernel_apply](../../../../FunctionsOfAComplexVariable/ResultsAlternative.lean/declarations/scalarfeaturekernel-apply.md) | 19 | `result-track:d27eaf2ae7a5199bc92f396f857840048c5b667e141407eb851adb6aa86e176f` |
+| 1 | `theorem` | [scalarFeatureKernel_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ResultsAlternative.lean/declarations/scalarfeaturekernel-apply.md) | 19 | `result-track:d27eaf2ae7a5199bc92f396f857840048c5b667e141407eb851adb6aa86e176f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

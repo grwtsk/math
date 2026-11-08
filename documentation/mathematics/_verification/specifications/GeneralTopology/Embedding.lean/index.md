@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Embedding.lean/index.md) · [Full source](../../../../GeneralTopology/Embedding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Embedding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Embedding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Homeomorphism](../../../../GeneralTopology/Embedding.lean/declarations/homeomorphism.md) | 8 | `declaration-track:92bd500bee2f9ec7cb00317aa26105ba6ec5aff8ca405bd2da04f5262a12bc75` |
-| 2 | `theorem` | [Homeomorphism.injective](../../../../GeneralTopology/Embedding.lean/declarations/homeomorphism-injective.md) | 19 | `result-track:5c6bd196697e6f7305513f3e1cb2b790166b072943963cf0fe6c8570a491a534` |
-| 3 | `theorem` | [Homeomorphism.surjective](../../../../GeneralTopology/Embedding.lean/declarations/homeomorphism-surjective.md) | 30 | `result-track:ca979491c9843cdce8c0ca80365356abe9e32fe9e94a41316e7e1bdada34605c` |
-| 4 | `abbrev` | [FunctionImage](../../../../GeneralTopology/Embedding.lean/declarations/functionimage.md) | 39 | `declaration-track:c723170819ddf6d693701913f238609902af2e06b0b767ffcadcb824a07c2b10` |
-| 5 | `structure` | [TopologicalEmbedding](../../../../GeneralTopology/Embedding.lean/declarations/topologicalembedding.md) | 48 | `declaration-track:88fe58e4f93c8a085dded2f39adff18f1882ce7cc46da5135aaf0144c23be1d1` |
-| 6 | `theorem` | [TopologicalEmbedding.injective](../../../../GeneralTopology/Embedding.lean/declarations/topologicalembedding-injective.md) | 60 | `result-track:5bd9dab7ba6d1c99269b532b46ea671bd5b81d5357ddbdac933e18868abc22a1` |
-| 7 | `theorem` | [TopologicalEmbedding.continuous](../../../../GeneralTopology/Embedding.lean/declarations/topologicalembedding-continuous.md) | 78 | `result-track:f6908235587cb8c827e538f7a9e6f11ef0df232b864a27528526a1f819a5fbcf` |
-| 8 | `theorem` | [TopologicalEmbedding.continuous_toFun](../../../../GeneralTopology/Embedding.lean/declarations/topologicalembedding-continuous-tofun.md) | 91 | `result-track:85e605490d29432dd9f13ad962e247ab25c17457335850870d0cd690bccc848e` |
+| 1 | `structure` | [Homeomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Embedding.lean/declarations/homeomorphism.md) | 8 | `declaration-track:92bd500bee2f9ec7cb00317aa26105ba6ec5aff8ca405bd2da04f5262a12bc75` |
+| 2 | `theorem` | [Homeomorphism.injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Embedding.lean/declarations/homeomorphism-injective.md) | 19 | `result-track:5c6bd196697e6f7305513f3e1cb2b790166b072943963cf0fe6c8570a491a534` |
+| 3 | `theorem` | [Homeomorphism.surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Embedding.lean/declarations/homeomorphism-surjective.md) | 30 | `result-track:ca979491c9843cdce8c0ca80365356abe9e32fe9e94a41316e7e1bdada34605c` |
+| 4 | `abbrev` | [FunctionImage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Embedding.lean/declarations/functionimage.md) | 39 | `declaration-track:c723170819ddf6d693701913f238609902af2e06b0b767ffcadcb824a07c2b10` |
+| 5 | `structure` | [TopologicalEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Embedding.lean/declarations/topologicalembedding.md) | 48 | `declaration-track:88fe58e4f93c8a085dded2f39adff18f1882ce7cc46da5135aaf0144c23be1d1` |
+| 6 | `theorem` | [TopologicalEmbedding.injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Embedding.lean/declarations/topologicalembedding-injective.md) | 60 | `result-track:5bd9dab7ba6d1c99269b532b46ea671bd5b81d5357ddbdac933e18868abc22a1` |
+| 7 | `theorem` | [TopologicalEmbedding.continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Embedding.lean/declarations/topologicalembedding-continuous.md) | 78 | `result-track:f6908235587cb8c827e538f7a9e6f11ef0df232b864a27528526a1f819a5fbcf` |
+| 8 | `theorem` | [TopologicalEmbedding.continuous_toFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Embedding.lean/declarations/topologicalembedding-continuous-tofun.md) | 91 | `result-track:85e605490d29432dd9f13ad962e247ab25c17457335850870d0cd690bccc848e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

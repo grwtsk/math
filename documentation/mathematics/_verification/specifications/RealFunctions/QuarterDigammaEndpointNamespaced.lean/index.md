@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/QuarterDigammaEndpointNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/QuarterDigammaEndpointNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuarterDigammaEndpointNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuarterDigammaEndpointNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [gamma_of_positive_nonzero](../../../../RealFunctions/QuarterDigammaEndpointNamespaced.lean/declarations/gamma-of-positive-nonzero.md) | 21 | `result-track:b2a0e559da819ec23423df0fa4f9ba9f6e25d6d53d543107aa481e8513d30f94` |
-| 2 | `theorem` | [gamma_of_positive_differentiable](../../../../RealFunctions/QuarterDigammaEndpointNamespaced.lean/declarations/gamma-of-positive-differentiable.md) | 26 | `result-track:f2f1116807ee388fa4096ebc4a6ba77df6b5be9da7c7501c7386e80c6b09378f` |
-| 3 | `theorem` | [reflection_quarter](../../../../RealFunctions/QuarterDigammaEndpointNamespaced.lean/declarations/reflection-quarter.md) | 34 | `result-track:35bef8bea6f444a81e2961fb24b4b48e9eab3db0d9fd2479456d84a3b5abbaf3` |
-| 4 | `theorem` | [duplication_quarter](../../../../RealFunctions/QuarterDigammaEndpointNamespaced.lean/declarations/duplication-quarter.md) | 79 | `result-track:e4d2c9caad89a9a2a016b4f55f005b7ac96067e11279c6b6e9c6a7f41d5ebade` |
-| 5 | `theorem` | [actual_quarter_value](../../../../RealFunctions/QuarterDigammaEndpointNamespaced.lean/declarations/actual-quarter-value.md) | 125 | `result-track:d7cb4cef4f7c4f1b8933d6697831794442f9058cea5b247a65f12b2506731a85` |
-| 6 | `theorem` | [actual_quarter_real_value](../../../../RealFunctions/QuarterDigammaEndpointNamespaced.lean/declarations/actual-quarter-real-value.md) | 132 | `result-track:f19d2641c94106fe85f03bada883323532203e228c2beef11ee885a7cf90c5cc` |
+| 1 | `theorem` | [gamma_of_positive_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuarterDigammaEndpointNamespaced.lean/declarations/gamma-of-positive-nonzero.md) | 21 | `result-track:b2a0e559da819ec23423df0fa4f9ba9f6e25d6d53d543107aa481e8513d30f94` |
+| 2 | `theorem` | [gamma_of_positive_differentiable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuarterDigammaEndpointNamespaced.lean/declarations/gamma-of-positive-differentiable.md) | 26 | `result-track:f2f1116807ee388fa4096ebc4a6ba77df6b5be9da7c7501c7386e80c6b09378f` |
+| 3 | `theorem` | [reflection_quarter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuarterDigammaEndpointNamespaced.lean/declarations/reflection-quarter.md) | 34 | `result-track:35bef8bea6f444a81e2961fb24b4b48e9eab3db0d9fd2479456d84a3b5abbaf3` |
+| 4 | `theorem` | [duplication_quarter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuarterDigammaEndpointNamespaced.lean/declarations/duplication-quarter.md) | 79 | `result-track:e4d2c9caad89a9a2a016b4f55f005b7ac96067e11279c6b6e9c6a7f41d5ebade` |
+| 5 | `theorem` | [actual_quarter_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuarterDigammaEndpointNamespaced.lean/declarations/actual-quarter-value.md) | 125 | `result-track:d7cb4cef4f7c4f1b8933d6697831794442f9058cea5b247a65f12b2506731a85` |
+| 6 | `theorem` | [actual_quarter_real_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuarterDigammaEndpointNamespaced.lean/declarations/actual-quarter-real-value.md) | 132 | `result-track:f19d2641c94106fe85f03bada883323532203e228c2beef11ee885a7cf90c5cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

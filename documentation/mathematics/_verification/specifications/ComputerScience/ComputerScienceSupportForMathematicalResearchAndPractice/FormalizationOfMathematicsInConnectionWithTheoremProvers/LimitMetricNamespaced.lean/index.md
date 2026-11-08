@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitMetricNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitMetricNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitMetricNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitMetricNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LimitMetricCertificate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitMetricNamespaced.lean/declarations/limitmetriccertificate.md) | 20 | `declaration-track:cc3a45c084698707fae5e987c53ec2f9b0ab443de3392ad7ed0cb6acaa422237` |
-| 2 | `theorem` | [limit_metric_separates](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitMetricNamespaced.lean/declarations/limit-metric-separates.md) | 36 | `result-track:acb912fe34c4db9f9941fc4d17f23cd1d4d92d6ccf0b34a27aae10cac92b7ed1` |
-| 3 | `theorem` | [limit_metric_complete](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitMetricNamespaced.lean/declarations/limit-metric-complete.md) | 45 | `result-track:53f5f9c0e5ff78ae86dfc10f97a305d31c447bc6ef49d3fa853c29bd569292cd` |
+| 1 | `structure` | [LimitMetricCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitMetricNamespaced.lean/declarations/limitmetriccertificate.md) | 20 | `declaration-track:cc3a45c084698707fae5e987c53ec2f9b0ab443de3392ad7ed0cb6acaa422237` |
+| 2 | `theorem` | [limit_metric_separates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitMetricNamespaced.lean/declarations/limit-metric-separates.md) | 36 | `result-track:acb912fe34c4db9f9941fc4d17f23cd1d4d92d6ccf0b34a27aae10cac92b7ed1` |
+| 3 | `theorem` | [limit_metric_complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitMetricNamespaced.lean/declarations/limit-metric-complete.md) | 45 | `result-track:53f5f9c0e5ff78ae86dfc10f97a305d31c447bc6ef49d3fa853c29bd569292cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

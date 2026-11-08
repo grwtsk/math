@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/NormalizedDiskLogControls.lean/index.md) · [Full source](../../../../NumberTheory/NormalizedDiskLogControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedDiskLogControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedDiskLogControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.JensenDiskQuotientLog`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotientLog.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.JensenDiskQuotientLog`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotientLog.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [negative_anchor_lift](../../../../NumberTheory/NormalizedDiskLogControls.lean/declarations/negative-anchor-lift.md) | 18 | `result-track:f4299823d8a20cc8a4e22eec630d8373bee589054415d08b9cfb1399c62b7cdd` |
-| 2 | `theorem` | [normalized_exp_not_negative_at_center](../../../../NumberTheory/NormalizedDiskLogControls.lean/declarations/normalized-exp-not-negative-at-center.md) | 26 | `result-track:fb90a80c48f19dafe2c1c5168c2d5a54d68a097e337bcf9116460e95293e7060` |
-| 3 | `theorem` | [raw_removed_center_is_wrong](../../../../NumberTheory/NormalizedDiskLogControls.lean/declarations/raw-removed-center-is-wrong.md) | 30 | `result-track:1c051516d5f1e2eea439ac4ddf5f6385a88e6dbc84370e3d1c03c078884dca91` |
-| 4 | `theorem` | [exponential_has_no_zero](../../../../NumberTheory/NormalizedDiskLogControls.lean/declarations/exponential-has-no-zero.md) | 34 | `result-track:3a39e8a9bff4320b327255ef95838c13f3e2dc781c2b9b9732d1a342149e9bff` |
-| 5 | `theorem` | [positive_floor_rejects_zero](../../../../NumberTheory/NormalizedDiskLogControls.lean/declarations/positive-floor-rejects-zero.md) | 38 | `result-track:f049b2561edb87faa3c2f60b989cbb81d9426785a8ed8b1fb697342eb37f9372` |
-| 6 | `theorem` | [normalized_factor_center](../../../../NumberTheory/NormalizedDiskLogControls.lean/declarations/normalized-factor-center.md) | 42 | `result-track:4c85afed2994fd518a52a6c3835f6f55933e0cbba7e08f3586adfaea2c408a07` |
+| 1 | `theorem` | [negative_anchor_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedDiskLogControls.lean/declarations/negative-anchor-lift.md) | 18 | `result-track:f4299823d8a20cc8a4e22eec630d8373bee589054415d08b9cfb1399c62b7cdd` |
+| 2 | `theorem` | [normalized_exp_not_negative_at_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedDiskLogControls.lean/declarations/normalized-exp-not-negative-at-center.md) | 26 | `result-track:fb90a80c48f19dafe2c1c5168c2d5a54d68a097e337bcf9116460e95293e7060` |
+| 3 | `theorem` | [raw_removed_center_is_wrong](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedDiskLogControls.lean/declarations/raw-removed-center-is-wrong.md) | 30 | `result-track:1c051516d5f1e2eea439ac4ddf5f6385a88e6dbc84370e3d1c03c078884dca91` |
+| 4 | `theorem` | [exponential_has_no_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedDiskLogControls.lean/declarations/exponential-has-no-zero.md) | 34 | `result-track:3a39e8a9bff4320b327255ef95838c13f3e2dc781c2b9b9732d1a342149e9bff` |
+| 5 | `theorem` | [positive_floor_rejects_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedDiskLogControls.lean/declarations/positive-floor-rejects-zero.md) | 38 | `result-track:f049b2561edb87faa3c2f60b989cbb81d9426785a8ed8b1fb697342eb37f9372` |
+| 6 | `theorem` | [normalized_factor_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedDiskLogControls.lean/declarations/normalized-factor-center.md) | 42 | `result-track:4c85afed2994fd518a52a6c3835f6f55933e0cbba7e08f3586adfaea2c408a07` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

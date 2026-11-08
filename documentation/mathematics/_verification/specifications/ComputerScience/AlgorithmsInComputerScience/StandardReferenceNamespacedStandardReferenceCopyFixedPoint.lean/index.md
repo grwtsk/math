@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/StandardReferenceNamespacedStandardReferenceCopyFixedPoint.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/StandardReferenceNamespacedStandardReferenceCopyFixedPoint.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StandardReferenceNamespacedStandardReferenceCopyFixedPoint.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StandardReferenceNamespacedStandardReferenceCopyFixedPoint.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [standardReferenceCopyFixedPoint](../../../../../ComputerScience/AlgorithmsInComputerScience/StandardReferenceNamespacedStandardReferenceCopyFixedPoint.lean/declarations/standardreferencecopyfixedpoint.md) | 28 | `declaration-track:2998ea74124fc899f1a118cccec7782ff4b25c45dc29ee7a718b981a465b46b5` |
-| 2 | `theorem` | [standardReference_manifestSerializer_roundtrip_copy](../../../../../ComputerScience/AlgorithmsInComputerScience/StandardReferenceNamespacedStandardReferenceCopyFixedPoint.lean/declarations/standardreference-manifestserializer-roundtrip-copy.md) | 33 | `result-track:a02ac65bd96eea24d3378e3b5e292f83e03b3847224b914bc2a2e65d4bf8d794` |
-| 3 | `theorem` | [standardReference_copyArchive_materializes_file_layers](../../../../../ComputerScience/AlgorithmsInComputerScience/StandardReferenceNamespacedStandardReferenceCopyFixedPoint.lean/declarations/standardreference-copyarchive-materializes-file-layers.md) | 40 | `result-track:3a54e61b62957f9684f5d9a36ee8c6efcb75774bea4f9ff2ef5fcdf07076e2ac` |
-| 4 | `def` | [standardReference_rectV4_runtime_target](../../../../../ComputerScience/AlgorithmsInComputerScience/StandardReferenceNamespacedStandardReferenceCopyFixedPoint.lean/declarations/standardreference-rectv4-runtime-target.md) | 48 | `declaration-track:bea4162a17f3b50e2b0c42b0555da8fe09eb1c39b63137575248a38c35d18986` |
+| 1 | `def` | [standardReferenceCopyFixedPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StandardReferenceNamespacedStandardReferenceCopyFixedPoint.lean/declarations/standardreferencecopyfixedpoint.md) | 28 | `declaration-track:2998ea74124fc899f1a118cccec7782ff4b25c45dc29ee7a718b981a465b46b5` |
+| 2 | `theorem` | [standardReference_manifestSerializer_roundtrip_copy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StandardReferenceNamespacedStandardReferenceCopyFixedPoint.lean/declarations/standardreference-manifestserializer-roundtrip-copy.md) | 33 | `result-track:a02ac65bd96eea24d3378e3b5e292f83e03b3847224b914bc2a2e65d4bf8d794` |
+| 3 | `theorem` | [standardReference_copyArchive_materializes_file_layers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StandardReferenceNamespacedStandardReferenceCopyFixedPoint.lean/declarations/standardreference-copyarchive-materializes-file-layers.md) | 40 | `result-track:3a54e61b62957f9684f5d9a36ee8c6efcb75774bea4f9ff2ef5fcdf07076e2ac` |
+| 4 | `def` | [standardReference_rectV4_runtime_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StandardReferenceNamespacedStandardReferenceCopyFixedPoint.lean/declarations/standardreference-rectv4-runtime-target.md) | 48 | `declaration-track:bea4162a17f3b50e2b0c42b0555da8fe09eb1c39b63137575248a38c35d18986` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

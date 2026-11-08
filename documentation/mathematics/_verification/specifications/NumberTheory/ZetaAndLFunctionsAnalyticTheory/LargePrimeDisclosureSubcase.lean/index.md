@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LargePrimeDisclosureSubcase.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LargePrimeDisclosureSubcase.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LargePrimeDisclosureSubcase.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LargePrimeDisclosureSubcase.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [primeDivisors_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LargePrimeDisclosureSubcase.lean/declarations/primedivisors-zero.md) | 20 | `result-track:2522d273fc8342b25cc40b84d712cd306038d6104e0c83756152f986d3099aa9` |
-| 2 | `theorem` | [freshBetaRow_eq_zero_of_U_lt_p](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LargePrimeDisclosureSubcase.lean/declarations/freshbetarow-eq-zero-of-u-lt-p.md) | 31 | `result-track:212e8bb06a1b8663f8d141341d559aa591a17581c0f39d53bfc218f8739ef930` |
-| 3 | `theorem` | [disclosedReadout_large_prime_one_block](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LargePrimeDisclosureSubcase.lean/declarations/disclosedreadout-large-prime-one-block.md) | 39 | `result-track:7976886b6f8efcb8613142a590c4b5f63e4b6f5214c47b85339298169dfcb50e` |
+| 1 | `theorem` | [primeDivisors_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LargePrimeDisclosureSubcase.lean/declarations/primedivisors-zero.md) | 20 | `result-track:2522d273fc8342b25cc40b84d712cd306038d6104e0c83756152f986d3099aa9` |
+| 2 | `theorem` | [freshBetaRow_eq_zero_of_U_lt_p](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LargePrimeDisclosureSubcase.lean/declarations/freshbetarow-eq-zero-of-u-lt-p.md) | 31 | `result-track:212e8bb06a1b8663f8d141341d559aa591a17581c0f39d53bfc218f8739ef930` |
+| 3 | `theorem` | [disclosedReadout_large_prime_one_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LargePrimeDisclosureSubcase.lean/declarations/disclosedreadout-large-prime-one-block.md) | 39 | `result-track:7976886b6f8efcb8613142a590c4b5f63e4b6f5214c47b85339298169dfcb50e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

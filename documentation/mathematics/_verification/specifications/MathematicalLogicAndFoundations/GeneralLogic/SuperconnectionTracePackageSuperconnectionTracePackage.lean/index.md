@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuperconnectionTracePackageSuperconnectionTracePackage.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuperconnectionTracePackageSuperconnectionTracePackage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuperconnectionTracePackageSuperconnectionTracePackage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuperconnectionTracePackageSuperconnectionTracePackage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SuperconnectionTracePackage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuperconnectionTracePackageSuperconnectionTracePackage.lean/declarations/superconnectiontracepackage.md) | 16 | `declaration-track:0e5a178aad04c428cffda900ff1be46baa02af28aea255da9eb83b7fb6f0b5a9` |
-| 2 | `theorem` | [superconnection_trace_formula_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuperconnectionTracePackageSuperconnectionTracePackage.lean/declarations/superconnection-trace-formula-if-supplied.md) | 27 | `result-track:cb659265198559fa87c602a06598ed9df3980ccfab488c5a328a7c2c8b5d7f07` |
-| 3 | `theorem` | [superconnection_family_index_compatible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuperconnectionTracePackageSuperconnectionTracePackage.lean/declarations/superconnection-family-index-compatible.md) | 32 | `result-track:84d219af1bbd7b6a9a4ebc65598948f7f5dcbcc8454166c1e5d3e44f9bcdc02a` |
+| 1 | `structure` | [SuperconnectionTracePackage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuperconnectionTracePackageSuperconnectionTracePackage.lean/declarations/superconnectiontracepackage.md) | 16 | `declaration-track:0e5a178aad04c428cffda900ff1be46baa02af28aea255da9eb83b7fb6f0b5a9` |
+| 2 | `theorem` | [superconnection_trace_formula_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuperconnectionTracePackageSuperconnectionTracePackage.lean/declarations/superconnection-trace-formula-if-supplied.md) | 27 | `result-track:cb659265198559fa87c602a06598ed9df3980ccfab488c5a328a7c2c8b5d7f07` |
+| 3 | `theorem` | [superconnection_family_index_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuperconnectionTracePackageSuperconnectionTracePackage.lean/declarations/superconnection-family-index-compatible.md) | 32 | `result-track:84d219af1bbd7b6a9a4ebc65598948f7f5dcbcc8454166c1e5d3e44f9bcdc02a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

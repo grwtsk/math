@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ProperPrimePowerCorrection.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ProperPrimePowerCorrection.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [correction_eight_nine](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/declarations/correction-eight-nine.md) | 28 | `result-track:21c0fb83aaaeb5827f0763969e2a256a843ad09462a26236eddffe27b2394793` |
-| 2 | `theorem` | [theta_eight_nine](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/declarations/theta-eight-nine.md) | 38 | `result-track:ea416fecfdf67646e34ad57010298d5edb91f2ab1c3571a26d3fee287570baac` |
-| 3 | `theorem` | [positive_source_without_prime](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/declarations/positive-source-without-prime.md) | 44 | `result-track:8731f302f274e962ee047bb827be21ba3cfa9adb9ffff5925035cede2cad1149` |
-| 4 | `theorem` | [non_strict_margin_control](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/declarations/non-strict-margin-control.md) | 55 | `result-track:5787b6027c1431f66a3fab0c3939fa5db0d83a0baee8b74ac835354fe3d15ff8` |
-| 5 | `theorem` | [first_square_upper_correction](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/declarations/first-square-upper-correction.md) | 62 | `result-track:c2a715a7d85278ab186b141cf30c2e6ad0f65be87f3e63ecd5ee1906ba1d88bf` |
-| 6 | `theorem` | [upper_endpoint_omission_changes_correction](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/declarations/upper-endpoint-omission-changes-correction.md) | 74 | `result-track:976cf1a612eaca8d3989b697ff38de28c47498286f250ed9cf439bf231698871` |
-| 7 | `theorem` | [first_square_positive_weight](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/declarations/first-square-positive-weight.md) | 85 | `result-track:9d1da2a0b0d911ee519cc2d478e9235b8189dde66ff2b125a9730dfa8c246a1b` |
-| 8 | `theorem` | [prime_upper_endpoint_control](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/declarations/prime-upper-endpoint-control.md) | 91 | `result-track:75482b8a0e699cf59a4bbc9caf7eae1aa4b3ad0b26ee890e56e4dd288bd4e5c5` |
+| 1 | `theorem` | [correction_eight_nine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/declarations/correction-eight-nine.md) | 28 | `result-track:21c0fb83aaaeb5827f0763969e2a256a843ad09462a26236eddffe27b2394793` |
+| 2 | `theorem` | [theta_eight_nine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/declarations/theta-eight-nine.md) | 38 | `result-track:ea416fecfdf67646e34ad57010298d5edb91f2ab1c3571a26d3fee287570baac` |
+| 3 | `theorem` | [positive_source_without_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/declarations/positive-source-without-prime.md) | 44 | `result-track:8731f302f274e962ee047bb827be21ba3cfa9adb9ffff5925035cede2cad1149` |
+| 4 | `theorem` | [non_strict_margin_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/declarations/non-strict-margin-control.md) | 55 | `result-track:5787b6027c1431f66a3fab0c3939fa5db0d83a0baee8b74ac835354fe3d15ff8` |
+| 5 | `theorem` | [first_square_upper_correction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/declarations/first-square-upper-correction.md) | 62 | `result-track:c2a715a7d85278ab186b141cf30c2e6ad0f65be87f3e63ecd5ee1906ba1d88bf` |
+| 6 | `theorem` | [upper_endpoint_omission_changes_correction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/declarations/upper-endpoint-omission-changes-correction.md) | 74 | `result-track:976cf1a612eaca8d3989b697ff38de28c47498286f250ed9cf439bf231698871` |
+| 7 | `theorem` | [first_square_positive_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/declarations/first-square-positive-weight.md) | 85 | `result-track:9d1da2a0b0d911ee519cc2d478e9235b8189dde66ff2b125a9730dfa8c246a1b` |
+| 8 | `theorem` | [prime_upper_endpoint_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerMarginControls.lean/declarations/prime-upper-endpoint-control.md) | 91 | `result-track:75482b8a0e699cf59a4bbc9caf7eae1aa4b3ad0b26ee890e56e4dd288bd4e5c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

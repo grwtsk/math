@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayBacked.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayBacked.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayBacked.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayBacked.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BitMatrix.ArrayBacked](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayBacked.lean/declarations/bitmatrix-arraybacked.md) | 5 | `declaration-track:5e80c715e96dc2f97e11accd1406891d87115f1637da3987e254e6f8dae5dbfc` |
-| 2 | `def` | [flatIndex](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayBacked.lean/declarations/flatindex.md) | 11 | `declaration-track:3efce6d3d9399e3e2f73a91a2a74330e2d478f128e64ccd4f5db2df77111336e` |
-| 3 | `def` | [get](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayBacked.lean/declarations/get.md) | 14 | `declaration-track:00dd1a2a64ffa7d4fd8916adf533bf7dcbdb3fc23e9227278dc8f15b200a679a` |
-| 4 | `def` | [abstract](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayBacked.lean/declarations/abstract.md) | 17 | `declaration-track:c9ca06c444f5067586d0e5685ab9a10c4b3257991c8d60840412073524dc060f` |
-| 5 | `theorem` | [abstract_apply](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayBacked.lean/declarations/abstract-apply.md) | 20 | `result-track:2760b3c5b93a4908e66c547cac2c402a5f1b94d9581bcff2a2c2d1b1813c6dda` |
+| 1 | `structure` | [BitMatrix.ArrayBacked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayBacked.lean/declarations/bitmatrix-arraybacked.md) | 5 | `declaration-track:5e80c715e96dc2f97e11accd1406891d87115f1637da3987e254e6f8dae5dbfc` |
+| 2 | `def` | [flatIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayBacked.lean/declarations/flatindex.md) | 11 | `declaration-track:3efce6d3d9399e3e2f73a91a2a74330e2d478f128e64ccd4f5db2df77111336e` |
+| 3 | `def` | [get](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayBacked.lean/declarations/get.md) | 14 | `declaration-track:00dd1a2a64ffa7d4fd8916adf533bf7dcbdb3fc23e9227278dc8f15b200a679a` |
+| 4 | `def` | [abstract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayBacked.lean/declarations/abstract.md) | 17 | `declaration-track:c9ca06c444f5067586d0e5685ab9a10c4b3257991c8d60840412073524dc060f` |
+| 5 | `theorem` | [abstract_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayBacked.lean/declarations/abstract-apply.md) | 20 | `result-track:2760b3c5b93a4908e66c547cac2c402a5f1b94d9581bcff2a2c2d1b1813c6dda` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

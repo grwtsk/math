@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/KernelRetractionSharpness.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/KernelRetractionSharpness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KernelRetractionSharpness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KernelRetractionSharpness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.FiniteRankMeasurementRange`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteRankMeasurementRange.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.FiniteRankMeasurementRange`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteRankMeasurementRange.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sharp_extra_of_kernel_retraction](../../../../GroupTheoryAndGeneralizations/KernelRetractionSharpness.lean/declarations/sharp-extra-of-kernel-retraction.md) | 31 | `result-track:51d36921572faadfe366fa013849a10269005b7ed0f987b310e7b34994dfbd2f` |
-| 2 | `theorem` | [sharp_extra_restricted_surjective](../../../../GroupTheoryAndGeneralizations/KernelRetractionSharpness.lean/declarations/sharp-extra-restricted-surjective.md) | 48 | `result-track:f4a9c96511e9be8b9c2d6899b031de6630f4426aa16e9136768ced8fc87d01d8` |
+| 1 | `theorem` | [sharp_extra_of_kernel_retraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KernelRetractionSharpness.lean/declarations/sharp-extra-of-kernel-retraction.md) | 31 | `result-track:51d36921572faadfe366fa013849a10269005b7ed0f987b310e7b34994dfbd2f` |
+| 2 | `theorem` | [sharp_extra_restricted_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KernelRetractionSharpness.lean/declarations/sharp-extra-restricted-surjective.md) | 48 | `result-track:f4a9c96511e9be8b9c2d6899b031de6630f4426aa16e9136768ced8fc87d01d8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

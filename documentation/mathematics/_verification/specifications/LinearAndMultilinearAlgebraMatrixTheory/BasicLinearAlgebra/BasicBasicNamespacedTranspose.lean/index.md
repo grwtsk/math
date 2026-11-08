@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [BitMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/declarations/bitmatrix.md) | 16 | `declaration-track:d97f7a2b75209c72ac2d38dcc85ea3ae73575be9d38330b3172de1e2c02f5076` |
-| 2 | `theorem` | [ext](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/declarations/ext.md) | 20 | `result-track:351f113307bf802889dc5c6392684b16501ef4a3c76da64df1884c9fda12da43` |
-| 3 | `def` | [transpose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/declarations/transpose.md) | 27 | `declaration-track:3597d01db52fd98c632e04b3585d2b196a5b4d28c6afb87a2d2c55a7dd702b05` |
-| 4 | `def` | [diagonal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/declarations/diagonal.md) | 30 | `declaration-track:63ff18761498df22a612126b5013283d0e587637f4314d6b15469b8161b93783` |
-| 5 | `theorem` | [transpose_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/declarations/transpose-apply.md) | 33 | `result-track:a5ab66312179dbf3f157f4e9de01dfaaa2d6036e11b9f602f22b24fadb219e24` |
-| 6 | `theorem` | [transpose_transpose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/declarations/transpose-transpose.md) | 40 | `result-track:cd8a640d962abf1285a0b49db33adf0aef2a392cef724dab6c42eb446453efa3` |
-| 7 | `theorem` | [diagonal_on](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/declarations/diagonal-on.md) | 46 | `result-track:10c5c5413c3ec6ea2676ba4443f8aab1bedf3c522f6ba12265625d339a5b1f33` |
-| 8 | `theorem` | [diagonal_off](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/declarations/diagonal-off.md) | 52 | `result-track:5aee01b00a5a3abbdb7c6c38718b064d3229f3488b6762812cba99cc481e1633` |
+| 1 | `abbrev` | [BitMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/declarations/bitmatrix.md) | 16 | `declaration-track:d97f7a2b75209c72ac2d38dcc85ea3ae73575be9d38330b3172de1e2c02f5076` |
+| 2 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/declarations/ext.md) | 20 | `result-track:351f113307bf802889dc5c6392684b16501ef4a3c76da64df1884c9fda12da43` |
+| 3 | `def` | [transpose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/declarations/transpose.md) | 27 | `declaration-track:3597d01db52fd98c632e04b3585d2b196a5b4d28c6afb87a2d2c55a7dd702b05` |
+| 4 | `def` | [diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/declarations/diagonal.md) | 30 | `declaration-track:63ff18761498df22a612126b5013283d0e587637f4314d6b15469b8161b93783` |
+| 5 | `theorem` | [transpose_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/declarations/transpose-apply.md) | 33 | `result-track:a5ab66312179dbf3f157f4e9de01dfaaa2d6036e11b9f602f22b24fadb219e24` |
+| 6 | `theorem` | [transpose_transpose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/declarations/transpose-transpose.md) | 40 | `result-track:cd8a640d962abf1285a0b49db33adf0aef2a392cef724dab6c42eb446453efa3` |
+| 7 | `theorem` | [diagonal_on](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/declarations/diagonal-on.md) | 46 | `result-track:10c5c5413c3ec6ea2676ba4443f8aab1bedf3c522f6ba12265625d339a5b1f33` |
+| 8 | `theorem` | [diagonal_off](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedTranspose.lean/declarations/diagonal-off.md) | 52 | `result-track:5aee01b00a5a3abbdb7c6c38718b064d3229f3488b6762812cba99cc481e1633` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

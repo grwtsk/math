@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Fibration.isLowerSet_image](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/declarations/fibration-islowerset-image.md) | 26 | `result-track:642ef9e77fcd4fb138cacc2a6fded4fae28ea5bc686df132e22d2b4460311aa7` |
-| 2 | `lemma` | [fibration_iff_isLowerSet_image_Iic](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/declarations/fibration-iff-islowerset-image-iic.md) | 32 | `result-track:7109e0feeb3cf56cf0cc88cb2f364fc08866b4625973dc66352e167b5a84c9f9` |
-| 3 | `lemma` | [fibration_iff_isLowerSet_image](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/declarations/fibration-iff-islowerset-image.md) | 36 | `result-track:63117dd468a06d51cca3afd0f24bfa0dea5c09ddb326d5547d865167106be40a` |
-| 4 | `lemma` | [fibration_iff_image_Iic](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/declarations/fibration-iff-image-iic.md) | 41 | `result-track:3b5be9bedbd8b46823ab9373ac75ec02c2bd1efe25624802f2d8de1e840de419` |
-| 5 | `lemma` | [Fibration.isUpperSet_image](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/declarations/fibration-isupperset-image.md) | 47 | `result-track:d47b0ca295be2879d1463e248a3419e0affc368e22ca9e035fda738883433cd9` |
-| 6 | `lemma` | [fibration_iff_isUpperSet_image_Ici](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/declarations/fibration-iff-isupperset-image-ici.md) | 53 | `result-track:6beb4c5f6c4d7b858f9f189db2f9ceb6e80349f364a196a5ccde82acc14bb0fc` |
-| 7 | `lemma` | [fibration_iff_isUpperSet_image](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/declarations/fibration-iff-isupperset-image.md) | 57 | `result-track:e5d483f4f33ce69860b899c1c1ca2121ca5a28b2fee0682f96fa049f5398748e` |
-| 8 | `lemma` | [fibration_iff_image_Ici](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/declarations/fibration-iff-image-ici.md) | 61 | `result-track:244d7414227b2ba10ffc4d830d8b67f6b2c049a35cba2f4cb0626150e52eabab` |
+| 1 | `lemma` | [Fibration.isLowerSet_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/declarations/fibration-islowerset-image.md) | 26 | `result-track:642ef9e77fcd4fb138cacc2a6fded4fae28ea5bc686df132e22d2b4460311aa7` |
+| 2 | `lemma` | [fibration_iff_isLowerSet_image_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/declarations/fibration-iff-islowerset-image-iic.md) | 32 | `result-track:7109e0feeb3cf56cf0cc88cb2f364fc08866b4625973dc66352e167b5a84c9f9` |
+| 3 | `lemma` | [fibration_iff_isLowerSet_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/declarations/fibration-iff-islowerset-image.md) | 36 | `result-track:63117dd468a06d51cca3afd0f24bfa0dea5c09ddb326d5547d865167106be40a` |
+| 4 | `lemma` | [fibration_iff_image_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/declarations/fibration-iff-image-iic.md) | 41 | `result-track:3b5be9bedbd8b46823ab9373ac75ec02c2bd1efe25624802f2d8de1e840de419` |
+| 5 | `lemma` | [Fibration.isUpperSet_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/declarations/fibration-isupperset-image.md) | 47 | `result-track:d47b0ca295be2879d1463e248a3419e0affc368e22ca9e035fda738883433cd9` |
+| 6 | `lemma` | [fibration_iff_isUpperSet_image_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/declarations/fibration-iff-isupperset-image-ici.md) | 53 | `result-track:6beb4c5f6c4d7b858f9f189db2f9ceb6e80349f364a196a5ccde82acc14bb0fc` |
+| 7 | `lemma` | [fibration_iff_isUpperSet_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/declarations/fibration-iff-isupperset-image.md) | 57 | `result-track:e5d483f4f33ce69860b899c1c1ca2121ca5a28b2fee0682f96fa049f5398748e` |
+| 8 | `lemma` | [fibration_iff_image_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/FibrationNamespaced.lean/declarations/fibration-iff-image-ici.md) | 61 | `result-track:244d7414227b2ba10ffc4d830d8b67f6b2c049a35cba2f4cb0626150e52eabab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

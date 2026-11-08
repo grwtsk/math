@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletionNamespaced.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasSum_iff_hasSum_compl](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletionNamespaced.lean/declarations/hassum-iff-hassum-compl.md) | 27 | `result-track:4f107d8542929c39429a47dcdd66034aba2b3bd6c2bade4a390eaa34816adb6a` |
-| 2 | `theorem` | [summable_iff_summable_compl_and_tsum_mem](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletionNamespaced.lean/declarations/summable-iff-summable-compl-and-tsum-mem.md) | 32 | `result-track:6cf8901fb53687d4ecad5f42c6077628b65d1347358658bf52e219d365f6c3a9` |
-| 3 | `theorem` | [summable_iff_cauchySeq_finset_and_tsum_mem](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletionNamespaced.lean/declarations/summable-iff-cauchyseq-finset-and-tsum-mem.md) | 40 | `result-track:4b0810b623b51a2b8cd9f576502f0764ba486395815d241eaef740ef93f223cf` |
-| 4 | `theorem` | [Summable.toCompl_tsum](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletionNamespaced.lean/declarations/summable-tocompl-tsum.md) | 57 | `result-track:6eb3f21adc65c3653227b90f990cf969d4ff54258dbc40f88db51d5ad63dd3ba` |
+| 1 | `theorem` | [hasSum_iff_hasSum_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletionNamespaced.lean/declarations/hassum-iff-hassum-compl.md) | 27 | `result-track:4f107d8542929c39429a47dcdd66034aba2b3bd6c2bade4a390eaa34816adb6a` |
+| 2 | `theorem` | [summable_iff_summable_compl_and_tsum_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletionNamespaced.lean/declarations/summable-iff-summable-compl-and-tsum-mem.md) | 32 | `result-track:6cf8901fb53687d4ecad5f42c6077628b65d1347358658bf52e219d365f6c3a9` |
+| 3 | `theorem` | [summable_iff_cauchySeq_finset_and_tsum_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletionNamespaced.lean/declarations/summable-iff-cauchyseq-finset-and-tsum-mem.md) | 40 | `result-track:4b0810b623b51a2b8cd9f576502f0764ba486395815d241eaef740ef93f223cf` |
+| 4 | `theorem` | [Summable.toCompl_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletionNamespaced.lean/declarations/summable-tocompl-tsum.md) | 57 | `result-track:6eb3f21adc65c3653227b90f990cf969d4ff54258dbc40f88db51d5ad63dd3ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

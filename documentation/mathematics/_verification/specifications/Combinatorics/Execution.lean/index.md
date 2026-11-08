@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Execution.lean/index.md) · [Full source](../../../../Combinatorics/Execution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Execution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Execution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [MachineResolution](../../../../Combinatorics/Execution.lean/declarations/machineresolution.md) | 13 | `declaration-track:a890472a62126e853da6598569ce5b8d3baf233a0f69b3ddf87cd598bebe3210` |
-| 2 | `def` | [runMachine](../../../../Combinatorics/Execution.lean/declarations/runmachine.md) | 33 | `declaration-track:bd45c6594739e9e83c672c7ccaff23290eb586b0d120a2c3ffd73569d45761e0` |
-| 3 | `def` | [executeMachine](../../../../Combinatorics/Execution.lean/declarations/executemachine.md) | 80 | `declaration-track:0349350ca331165bc9749dab0e609d3fd8dd80c02e012968cfe16dfcc0ce8684` |
-| 4 | `theorem` | [accessMachine_total](../../../../Combinatorics/Execution.lean/declarations/accessmachine-total.md) | 92 | `result-track:61c6ea7ffc2ea119dc361fe0b6ea4f7e5b37af7a2beac3fca9cc8d57c5d4916e` |
-| 5 | `theorem` | [completed_has_mode_certificate](../../../../Combinatorics/Execution.lean/declarations/completed-has-mode-certificate.md) | 101 | `result-track:f0c8f6b8755705232bf11c206d1a0568d3fba54eebd477b928c348c3003f240b` |
-| 6 | `def` | [completed_output_kind_matches_objective](../../../../Combinatorics/Execution.lean/declarations/completed-output-kind-matches-objective.md) | 117 | `declaration-track:f3a878713f1d94162640a9a523c7dbff6f08dcd7ea1e196c56c974b2fba2bb39` |
-| 7 | `theorem` | [zero_fuel_returns_residual](../../../../Combinatorics/Execution.lean/declarations/zero-fuel-returns-residual.md) | 133 | `result-track:35fd1cf5feed0c0f33c67ec0a25a03fa29563339f274b78ca8a37ffd39144efe` |
-| 8 | `theorem` | [budget_exhaustion_returns_residual](../../../../Combinatorics/Execution.lean/declarations/budget-exhaustion-returns-residual.md) | 151 | `result-track:1534d3744c8c4131fc19bf6e779a6b0c89e61aa488a82a5ccd07ad61b4102f7a` |
-| 9 | `theorem` | [resource_exhaustion_has_no_unreachability_certificate](../../../../Combinatorics/Execution.lean/declarations/resource-exhaustion-has-no-unreachability-certificate.md) | 182 | `result-track:d2a943e6a0083551c2f7cc63e4c250e29f17a7d3be6310c433e8040dc49c2b33` |
-| 10 | `theorem` | [executeMachine_deterministic](../../../../Combinatorics/Execution.lean/declarations/executemachine-deterministic.md) | 200 | `result-track:e43a7f0113eba63fc2931f8e2dc0f4f8c7904beb8fd525ff5ad208c0843400f0` |
-| 11 | `theorem` | [completed_usage_within_budget](../../../../Combinatorics/Execution.lean/declarations/completed-usage-within-budget.md) | 212 | `result-track:d12510136f4d31f59ea74fc589bbea6bf8eb3cd7278a65d7b5a6388b2606dc5a` |
+| 1 | `inductive` | [MachineResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Execution.lean/declarations/machineresolution.md) | 13 | `declaration-track:a890472a62126e853da6598569ce5b8d3baf233a0f69b3ddf87cd598bebe3210` |
+| 2 | `def` | [runMachine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Execution.lean/declarations/runmachine.md) | 33 | `declaration-track:bd45c6594739e9e83c672c7ccaff23290eb586b0d120a2c3ffd73569d45761e0` |
+| 3 | `def` | [executeMachine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Execution.lean/declarations/executemachine.md) | 80 | `declaration-track:0349350ca331165bc9749dab0e609d3fd8dd80c02e012968cfe16dfcc0ce8684` |
+| 4 | `theorem` | [accessMachine_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Execution.lean/declarations/accessmachine-total.md) | 92 | `result-track:61c6ea7ffc2ea119dc361fe0b6ea4f7e5b37af7a2beac3fca9cc8d57c5d4916e` |
+| 5 | `theorem` | [completed_has_mode_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Execution.lean/declarations/completed-has-mode-certificate.md) | 101 | `result-track:f0c8f6b8755705232bf11c206d1a0568d3fba54eebd477b928c348c3003f240b` |
+| 6 | `def` | [completed_output_kind_matches_objective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Execution.lean/declarations/completed-output-kind-matches-objective.md) | 117 | `declaration-track:f3a878713f1d94162640a9a523c7dbff6f08dcd7ea1e196c56c974b2fba2bb39` |
+| 7 | `theorem` | [zero_fuel_returns_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Execution.lean/declarations/zero-fuel-returns-residual.md) | 133 | `result-track:35fd1cf5feed0c0f33c67ec0a25a03fa29563339f274b78ca8a37ffd39144efe` |
+| 8 | `theorem` | [budget_exhaustion_returns_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Execution.lean/declarations/budget-exhaustion-returns-residual.md) | 151 | `result-track:1534d3744c8c4131fc19bf6e779a6b0c89e61aa488a82a5ccd07ad61b4102f7a` |
+| 9 | `theorem` | [resource_exhaustion_has_no_unreachability_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Execution.lean/declarations/resource-exhaustion-has-no-unreachability-certificate.md) | 182 | `result-track:d2a943e6a0083551c2f7cc63e4c250e29f17a7d3be6310c433e8040dc49c2b33` |
+| 10 | `theorem` | [executeMachine_deterministic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Execution.lean/declarations/executemachine-deterministic.md) | 200 | `result-track:e43a7f0113eba63fc2931f8e2dc0f4f8c7904beb8fd525ff5ad208c0843400f0` |
+| 11 | `theorem` | [completed_usage_within_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Execution.lean/declarations/completed-usage-within-budget.md) | 212 | `result-track:d12510136f4d31f59ea74fc589bbea6bf8eb3cd7278a65d7b5a6388b2606dc5a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

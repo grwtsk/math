@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/PosPart.lean/index.md) · [Full source](../../../../FunctionalAnalysis/PosPart.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PosPart.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PosPart.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [span_nonneg_inter_closedBall](../../../../FunctionalAnalysis/PosPart.lean/declarations/span-nonneg-inter-closedball.md) | 20 | `result-track:ecbd14c7e74343d903113b8146a706e58b42421d8a70a41b26b8e0f6f6415e9c` |
-| 2 | `lemma` | [span_nonneg_inter_ball](../../../../FunctionalAnalysis/PosPart.lean/declarations/span-nonneg-inter-ball.md) | 37 | `result-track:6b5836bb039b1d601e11813a99c39bbac9a4451c35559fabfb77e3282c534a50` |
-| 3 | `lemma` | [span_nonneg_inter_unitClosedBall](../../../../FunctionalAnalysis/PosPart.lean/declarations/span-nonneg-inter-unitclosedball.md) | 44 | `result-track:6aceaaf5c906b63e11f30b9ca3ca1fb1d95bf22a81de5c6aca94abb81184f766` |
-| 4 | `lemma` | [span_nonneg_inter_unitBall](../../../../FunctionalAnalysis/PosPart.lean/declarations/span-nonneg-inter-unitball.md) | 49 | `result-track:af097eafbc717d0b57bc567021b9c7a2666cdea053472bba968fc0f71a35ce21` |
-| 5 | `lemma` | [exists_sum_four_nonneg](../../../../FunctionalAnalysis/PosPart.lean/declarations/exists-sum-four-nonneg.md) | 56 | `result-track:a12b22de531de1c467c50a4a03cb9da4592469deea8aa656f1fb055816c321bc` |
+| 1 | `lemma` | [span_nonneg_inter_closedBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PosPart.lean/declarations/span-nonneg-inter-closedball.md) | 20 | `result-track:ecbd14c7e74343d903113b8146a706e58b42421d8a70a41b26b8e0f6f6415e9c` |
+| 2 | `lemma` | [span_nonneg_inter_ball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PosPart.lean/declarations/span-nonneg-inter-ball.md) | 37 | `result-track:6b5836bb039b1d601e11813a99c39bbac9a4451c35559fabfb77e3282c534a50` |
+| 3 | `lemma` | [span_nonneg_inter_unitClosedBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PosPart.lean/declarations/span-nonneg-inter-unitclosedball.md) | 44 | `result-track:6aceaaf5c906b63e11f30b9ca3ca1fb1d95bf22a81de5c6aca94abb81184f766` |
+| 4 | `lemma` | [span_nonneg_inter_unitBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PosPart.lean/declarations/span-nonneg-inter-unitball.md) | 49 | `result-track:af097eafbc717d0b57bc567021b9c7a2666cdea053472bba968fc0f71a35ce21` |
+| 5 | `lemma` | [exists_sum_four_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PosPart.lean/declarations/exists-sum-four-nonneg.md) | 56 | `result-track:a12b22de531de1c467c50a4a03cb9da4592469deea8aa656f1fb055816c321bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

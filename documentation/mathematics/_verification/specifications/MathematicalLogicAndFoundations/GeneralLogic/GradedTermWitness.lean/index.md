@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GradedTermWitness.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GradedTermWitness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GradedTermWitness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GradedTermWitness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [graded_object_has_term](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GradedTermWitness.lean/declarations/graded-object-has-term.md) | 33 | `result-track:c92aca4ad3f9a8f33b5d6135c5208fc46ed82b9c1f4d27f63e1075504167bedf` |
+| 1 | `theorem` | [graded_object_has_term](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GradedTermWitness.lean/declarations/graded-object-has-term.md) | 33 | `result-track:c92aca4ad3f9a8f33b5d6135c5208fc46ed82b9c1f4d27f63e1075504167bedf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

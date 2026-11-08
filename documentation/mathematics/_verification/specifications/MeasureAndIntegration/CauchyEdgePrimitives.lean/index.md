@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CauchyEdgePrimitives.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CauchyEdgePrimitives.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CauchyEdgePrimitives.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CauchyEdgePrimitives.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -65,14 +65,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [squared_radius_pos](../../../../MeasureAndIntegration/CauchyEdgePrimitives.lean/declarations/squared-radius-pos.md) | 30 | `result-track:1bc44f0e58ec4cfea462568b608b84a2b84fa1f6a9a1a476c4a00468411f036e` |
-| 2 | `theorem` | [continuous_radial_density](../../../../MeasureAndIntegration/CauchyEdgePrimitives.lean/declarations/continuous-radial-density.md) | 34 | `result-track:114bdbe3fdbd67b64704459e641d71f30ab11a879e8b8b4743c1af0dd14c850e` |
-| 3 | `theorem` | [continuous_angular_density](../../../../MeasureAndIntegration/CauchyEdgePrimitives.lean/declarations/continuous-angular-density.md) | 40 | `result-track:c741043f34a71b1dc45693843ffa44f6391125210a3e52ef60d09832f8220c07` |
-| 4 | `theorem` | [hasDerivAt_radial_primitive](../../../../MeasureAndIntegration/CauchyEdgePrimitives.lean/declarations/hasderivat-radial-primitive.md) | 47 | `result-track:061f4b158a33dcbe6366bd520da540367f5803aea17c1ca476e49c559460310b` |
-| 5 | `theorem` | [hasDerivAt_angular_primitive](../../../../MeasureAndIntegration/CauchyEdgePrimitives.lean/declarations/hasderivat-angular-primitive.md) | 55 | `result-track:ad34ed839813c792a0eeae603842b497a3a500f55bdf04e56e9451ae1e028feb` |
-| 6 | `theorem` | [integral_radial_density](../../../../MeasureAndIntegration/CauchyEdgePrimitives.lean/declarations/integral-radial-density.md) | 63 | `result-track:93edc6bdd733574329589b43ce5367d759d3f27e1fb9074aced8f9f292c35979` |
-| 7 | `theorem` | [integral_angular_density](../../../../MeasureAndIntegration/CauchyEdgePrimitives.lean/declarations/integral-angular-density.md) | 71 | `result-track:58cda0dcea582f2f627b939a954bb01a7fb216582b2e2970b922c5b8c5fd778a` |
-| 8 | `theorem` | [arctan_reciprocal_corner](../../../../MeasureAndIntegration/CauchyEdgePrimitives.lean/declarations/arctan-reciprocal-corner.md) | 79 | `result-track:1bb6367fbd67445cfff8a38181b60b1195432415b8d2405da0e5e2fc28535b05` |
+| 1 | `theorem` | [squared_radius_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CauchyEdgePrimitives.lean/declarations/squared-radius-pos.md) | 30 | `result-track:1bc44f0e58ec4cfea462568b608b84a2b84fa1f6a9a1a476c4a00468411f036e` |
+| 2 | `theorem` | [continuous_radial_density](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CauchyEdgePrimitives.lean/declarations/continuous-radial-density.md) | 34 | `result-track:114bdbe3fdbd67b64704459e641d71f30ab11a879e8b8b4743c1af0dd14c850e` |
+| 3 | `theorem` | [continuous_angular_density](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CauchyEdgePrimitives.lean/declarations/continuous-angular-density.md) | 40 | `result-track:c741043f34a71b1dc45693843ffa44f6391125210a3e52ef60d09832f8220c07` |
+| 4 | `theorem` | [hasDerivAt_radial_primitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CauchyEdgePrimitives.lean/declarations/hasderivat-radial-primitive.md) | 47 | `result-track:061f4b158a33dcbe6366bd520da540367f5803aea17c1ca476e49c559460310b` |
+| 5 | `theorem` | [hasDerivAt_angular_primitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CauchyEdgePrimitives.lean/declarations/hasderivat-angular-primitive.md) | 55 | `result-track:ad34ed839813c792a0eeae603842b497a3a500f55bdf04e56e9451ae1e028feb` |
+| 6 | `theorem` | [integral_radial_density](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CauchyEdgePrimitives.lean/declarations/integral-radial-density.md) | 63 | `result-track:93edc6bdd733574329589b43ce5367d759d3f27e1fb9074aced8f9f292c35979` |
+| 7 | `theorem` | [integral_angular_density](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CauchyEdgePrimitives.lean/declarations/integral-angular-density.md) | 71 | `result-track:58cda0dcea582f2f627b939a954bb01a7fb216582b2e2970b922c5b8c5fd778a` |
+| 8 | `theorem` | [arctan_reciprocal_corner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CauchyEdgePrimitives.lean/declarations/arctan-reciprocal-corner.md) | 79 | `result-track:1bb6367fbd67445cfff8a38181b60b1195432415b8d2405da0e5e2fc28535b05` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

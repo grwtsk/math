@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/EveryIntegerCellOfTheActualLogarithmicSourceCensusEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/EveryIntegerCellOfTheActualLogarithmicSourceCensusEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EveryIntegerCellOfTheActualLogarithmicSourceCensusEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EveryIntegerCellOfTheActualLogarithmicSourceCensusEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [logarithmicSample](../../../../MeasureAndIntegration/EveryIntegerCellOfTheActualLogarithmicSourceCensusEdition1.lean/declarations/logarithmicsample.md) | 28 | `declaration-track:45f1e8ecfca6995b9baa621f4030242933b6391e2f93d200ce619a90309706e6` |
-| 2 | `def` | [logarithmicDerivative](../../../../MeasureAndIntegration/EveryIntegerCellOfTheActualLogarithmicSourceCensusEdition1.lean/declarations/logarithmicderivative.md) | 29 | `declaration-track:105ac5a13fc2b0e44793cccb8596bea26b6ac6c94238a77a0ed44cabc7691a54` |
-| 3 | `theorem` | [actual_logarithmic_hasDerivAt](../../../../MeasureAndIntegration/EveryIntegerCellOfTheActualLogarithmicSourceCensusEdition1.lean/declarations/actual-logarithmic-hasderivat.md) | 31 | `result-track:881e89d2eb997c6350867a9f4c47a263520e6a64b93389f2a11b449c6048e4fb` |
-| 4 | `theorem` | [actual_logarithmic_derivative_continuousOn](../../../../MeasureAndIntegration/EveryIntegerCellOfTheActualLogarithmicSourceCensusEdition1.lean/declarations/actual-logarithmic-derivative-continuouson.md) | 41 | `result-track:50399809ab03ecb74718743f973b215ee6dffce46b1c5ee4bcbc9870e90dab35` |
-| 5 | `theorem` | [actual_logarithmic_derivative_price](../../../../MeasureAndIntegration/EveryIntegerCellOfTheActualLogarithmicSourceCensusEdition1.lean/declarations/actual-logarithmic-derivative-price.md) | 49 | `result-track:dd31a7a98801926347088156a83dc95bf3492a1ff8a568638fcb7d10320cb72d` |
-| 6 | `theorem` | [actual_logarithmic_complete_sampling_price](../../../../MeasureAndIntegration/EveryIntegerCellOfTheActualLogarithmicSourceCensusEdition1.lean/declarations/actual-logarithmic-complete-sampling-price.md) | 60 | `result-track:26b20ca9fad0ee8f754ed38c78f2308a493fbfb615bb2c80fdc0fcb34bc9340f` |
+| 1 | `def` | [logarithmicSample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EveryIntegerCellOfTheActualLogarithmicSourceCensusEdition1.lean/declarations/logarithmicsample.md) | 28 | `declaration-track:45f1e8ecfca6995b9baa621f4030242933b6391e2f93d200ce619a90309706e6` |
+| 2 | `def` | [logarithmicDerivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EveryIntegerCellOfTheActualLogarithmicSourceCensusEdition1.lean/declarations/logarithmicderivative.md) | 29 | `declaration-track:105ac5a13fc2b0e44793cccb8596bea26b6ac6c94238a77a0ed44cabc7691a54` |
+| 3 | `theorem` | [actual_logarithmic_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EveryIntegerCellOfTheActualLogarithmicSourceCensusEdition1.lean/declarations/actual-logarithmic-hasderivat.md) | 31 | `result-track:881e89d2eb997c6350867a9f4c47a263520e6a64b93389f2a11b449c6048e4fb` |
+| 4 | `theorem` | [actual_logarithmic_derivative_continuousOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EveryIntegerCellOfTheActualLogarithmicSourceCensusEdition1.lean/declarations/actual-logarithmic-derivative-continuouson.md) | 41 | `result-track:50399809ab03ecb74718743f973b215ee6dffce46b1c5ee4bcbc9870e90dab35` |
+| 5 | `theorem` | [actual_logarithmic_derivative_price](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EveryIntegerCellOfTheActualLogarithmicSourceCensusEdition1.lean/declarations/actual-logarithmic-derivative-price.md) | 49 | `result-track:dd31a7a98801926347088156a83dc95bf3492a1ff8a568638fcb7d10320cb72d` |
+| 6 | `theorem` | [actual_logarithmic_complete_sampling_price](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EveryIntegerCellOfTheActualLogarithmicSourceCensusEdition1.lean/declarations/actual-logarithmic-complete-sampling-price.md) | 60 | `result-track:26b20ca9fad0ee8f754ed38c78f2308a493fbfb615bb2c80fdc0fcb34bc9340f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

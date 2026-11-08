@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModuleKeyNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModuleKeyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModuleKeyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModuleKeyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ModuleKey](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModuleKeyNamespaced.lean/declarations/modulekey.md) | 12 | `declaration-track:bd73f1fbeacf9d82ad6de20cd4e861cfc157c56b8031ad1b6d99d1067d13c539` |
-| 2 | `def` | [ModuleKey.lexicalKey](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModuleKeyNamespaced.lean/declarations/modulekey-lexicalkey.md) | 17 | `declaration-track:b6ca908b71d21995c021d17d73626be38acd25f3779b665f59d143aa936fa9eb` |
-| 3 | `theorem` | [moduleKey_lexicalKey_deterministic](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModuleKeyNamespaced.lean/declarations/modulekey-lexicalkey-deterministic.md) | 21 | `result-track:027466cd7ab390322812c778af4b23ca1425de9e85da6c2d20685f44a6b34f7c` |
+| 1 | `structure` | [ModuleKey](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModuleKeyNamespaced.lean/declarations/modulekey.md) | 12 | `declaration-track:bd73f1fbeacf9d82ad6de20cd4e861cfc157c56b8031ad1b6d99d1067d13c539` |
+| 2 | `def` | [ModuleKey.lexicalKey](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModuleKeyNamespaced.lean/declarations/modulekey-lexicalkey.md) | 17 | `declaration-track:b6ca908b71d21995c021d17d73626be38acd25f3779b665f59d143aa936fa9eb` |
+| 3 | `theorem` | [moduleKey_lexicalKey_deterministic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModuleKeyNamespaced.lean/declarations/modulekey-lexicalkey-deterministic.md) | 21 | `result-track:027466cd7ab390322812c778af4b23ca1425de9e85da6c2d20685f44a6b34f7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

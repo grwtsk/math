@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MorphismPropertyQuotientNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MorphismPropertyQuotientNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MorphismPropertyQuotientNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MorphismPropertyQuotientNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [HasQuotient](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MorphismPropertyQuotientNamespacedPublic.lean/declarations/hasquotient.md) | 43 | `declaration-track:2d7d05cd3ea15d8742ee0ac11edc1c2e31f7ab6c43ef3f745026fa3ead6deabf` |
-| 2 | `lemma` | [HasQuotient.iff_of_eqvGen](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MorphismPropertyQuotientNamespacedPublic.lean/declarations/hasquotient-iff-of-eqvgen.md) | 52 | `result-track:e79ea75220daae3cde7cd562c7539e7fd7f53d335f72154f4757aee956f4ad64` |
-| 3 | `def` | [quotient](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MorphismPropertyQuotientNamespacedPublic.lean/declarations/quotient.md) | 65 | `declaration-track:3d3401d2676932c3e351ada9cbe2cd519934d12538f9aaea15da1a62bc8e8053` |
-| 4 | `lemma` | [quotient_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MorphismPropertyQuotientNamespacedPublic.lean/declarations/quotient-iff.md) | 70 | `result-track:6ea5ac77370b262df9075ac145813eb2847c0208f676713dca1250d03d21b572` |
-| 5 | `lemma` | [eq_inverseImage_quotientFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MorphismPropertyQuotientNamespacedPublic.lean/declarations/eq-inverseimage-quotientfunctor.md) | 77 | `result-track:40f785d48c63a6606f34de2b63b0b50e1661f0378356e1b3bd6f63b72f0b7ab9` |
+| 1 | `class` | [HasQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MorphismPropertyQuotientNamespacedPublic.lean/declarations/hasquotient.md) | 43 | `declaration-track:2d7d05cd3ea15d8742ee0ac11edc1c2e31f7ab6c43ef3f745026fa3ead6deabf` |
+| 2 | `lemma` | [HasQuotient.iff_of_eqvGen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MorphismPropertyQuotientNamespacedPublic.lean/declarations/hasquotient-iff-of-eqvgen.md) | 52 | `result-track:e79ea75220daae3cde7cd562c7539e7fd7f53d335f72154f4757aee956f4ad64` |
+| 3 | `def` | [quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MorphismPropertyQuotientNamespacedPublic.lean/declarations/quotient.md) | 65 | `declaration-track:3d3401d2676932c3e351ada9cbe2cd519934d12538f9aaea15da1a62bc8e8053` |
+| 4 | `lemma` | [quotient_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MorphismPropertyQuotientNamespacedPublic.lean/declarations/quotient-iff.md) | 70 | `result-track:6ea5ac77370b262df9075ac145813eb2847c0208f676713dca1250d03d21b572` |
+| 5 | `lemma` | [eq_inverseImage_quotientFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MorphismPropertyQuotientNamespacedPublic.lean/declarations/eq-inverseimage-quotientfunctor.md) | 77 | `result-track:40f785d48c63a6606f34de2b63b0b50e1661f0378356e1b3bd6f63b72f0b7ab9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

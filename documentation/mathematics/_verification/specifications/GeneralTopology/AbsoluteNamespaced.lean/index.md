@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/AbsoluteNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/AbsoluteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ArithmeticFieldLabel](../../../../GeneralTopology/AbsoluteNamespaced.lean/declarations/arithmeticfieldlabel.md) | 38 | `declaration-track:621077ab4acccb46307bd9151229e48b037c6ee94112bdafbf338e1c646acd2f` |
-| 2 | `structure` | [AbsoluteGaloisGroupAdapter](../../../../GeneralTopology/AbsoluteNamespaced.lean/declarations/absolutegaloisgroupadapter.md) | 49 | `declaration-track:7890cdac8f638322a731c5aa8d7ee54c088de09a743836f092418c9b1091b1f1` |
-| 3 | `structure` | [LocalGaloisGroupAdapter](../../../../GeneralTopology/AbsoluteNamespaced.lean/declarations/localgaloisgroupadapter.md) | 58 | `declaration-track:4de93d8580d49d6bbb0c7747632ebbda9f74962072b8733749750f6b90ba2151` |
-| 4 | `structure` | [AbsoluteFiniteGaloisModule](../../../../GeneralTopology/AbsoluteNamespaced.lean/declarations/absolutefinitegaloismodule.md) | 71 | `declaration-track:2fb9fe8c3eb0d9b3d417e2513edaf9c5e3240f36eb7eb5f6634e38c9b1b66de3` |
-| 5 | `abbrev` | [AbsoluteH1](../../../../GeneralTopology/AbsoluteNamespaced.lean/declarations/absoluteh1.md) | 81 | `declaration-track:1740d5e1f5ad1e748f01f49ab5a8f635403931eed30e5034e21e8383f6bd201b` |
-| 6 | `theorem` | [absoluteH1_eq_continuousH1](../../../../GeneralTopology/AbsoluteNamespaced.lean/declarations/absoluteh1-eq-continuoush1.md) | 88 | `result-track:6cece24e49707f5f71d3777336d0662ccf657a36bd4918f3ae89f689b5405098` |
-| 7 | `structure` | [AbsoluteToLocalRestriction](../../../../GeneralTopology/AbsoluteNamespaced.lean/declarations/absolutetolocalrestriction.md) | 100 | `declaration-track:ad10dc7057fdf6b2e9f96a4ed3ba698dd1af21b18b667c6750aa477a8758466f` |
-| 8 | `def` | [resAbsoluteH1](../../../../GeneralTopology/AbsoluteNamespaced.lean/declarations/resabsoluteh1.md) | 114 | `declaration-track:b06832ee9dd50aea23e920ac40277bd40769c12847b5ea2c992cec04c905741b` |
-| 9 | `theorem` | [resAbsoluteH1_value](../../../../GeneralTopology/AbsoluteNamespaced.lean/declarations/resabsoluteh1-value.md) | 124 | `result-track:a57f790fedaebdd92f470318e11173d8da9f4ebc87c2bfce80b61232c655cf9c` |
-| 10 | `theorem` | [absoluteAdapter_depends_after_continuous](../../../../GeneralTopology/AbsoluteNamespaced.lean/declarations/absoluteadapter-depends-after-continuous.md) | 136 | `result-track:93ac3cf9026da29e0d44ae516620433c2d0ba18426316a07c3e6288dc7a2467b` |
-| 11 | `theorem` | [absoluteAdapter_depends_after_finiteSelmer](../../../../GeneralTopology/AbsoluteNamespaced.lean/declarations/absoluteadapter-depends-after-finiteselmer.md) | 142 | `result-track:aad6d393b5330d33c5eddc942d5dc775bf70b73fa9fa5fb8b0b9dfd62981e240` |
+| 1 | `structure` | [ArithmeticFieldLabel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteNamespaced.lean/declarations/arithmeticfieldlabel.md) | 38 | `declaration-track:621077ab4acccb46307bd9151229e48b037c6ee94112bdafbf338e1c646acd2f` |
+| 2 | `structure` | [AbsoluteGaloisGroupAdapter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteNamespaced.lean/declarations/absolutegaloisgroupadapter.md) | 49 | `declaration-track:7890cdac8f638322a731c5aa8d7ee54c088de09a743836f092418c9b1091b1f1` |
+| 3 | `structure` | [LocalGaloisGroupAdapter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteNamespaced.lean/declarations/localgaloisgroupadapter.md) | 58 | `declaration-track:4de93d8580d49d6bbb0c7747632ebbda9f74962072b8733749750f6b90ba2151` |
+| 4 | `structure` | [AbsoluteFiniteGaloisModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteNamespaced.lean/declarations/absolutefinitegaloismodule.md) | 71 | `declaration-track:2fb9fe8c3eb0d9b3d417e2513edaf9c5e3240f36eb7eb5f6634e38c9b1b66de3` |
+| 5 | `abbrev` | [AbsoluteH1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteNamespaced.lean/declarations/absoluteh1.md) | 81 | `declaration-track:1740d5e1f5ad1e748f01f49ab5a8f635403931eed30e5034e21e8383f6bd201b` |
+| 6 | `theorem` | [absoluteH1_eq_continuousH1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteNamespaced.lean/declarations/absoluteh1-eq-continuoush1.md) | 88 | `result-track:6cece24e49707f5f71d3777336d0662ccf657a36bd4918f3ae89f689b5405098` |
+| 7 | `structure` | [AbsoluteToLocalRestriction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteNamespaced.lean/declarations/absolutetolocalrestriction.md) | 100 | `declaration-track:ad10dc7057fdf6b2e9f96a4ed3ba698dd1af21b18b667c6750aa477a8758466f` |
+| 8 | `def` | [resAbsoluteH1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteNamespaced.lean/declarations/resabsoluteh1.md) | 114 | `declaration-track:b06832ee9dd50aea23e920ac40277bd40769c12847b5ea2c992cec04c905741b` |
+| 9 | `theorem` | [resAbsoluteH1_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteNamespaced.lean/declarations/resabsoluteh1-value.md) | 124 | `result-track:a57f790fedaebdd92f470318e11173d8da9f4ebc87c2bfce80b61232c655cf9c` |
+| 10 | `theorem` | [absoluteAdapter_depends_after_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteNamespaced.lean/declarations/absoluteadapter-depends-after-continuous.md) | 136 | `result-track:93ac3cf9026da29e0d44ae516620433c2d0ba18426316a07c3e6288dc7a2467b` |
+| 11 | `theorem` | [absoluteAdapter_depends_after_finiteSelmer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteNamespaced.lean/declarations/absoluteadapter-depends-after-finiteselmer.md) | 142 | `result-track:aad6d393b5330d33c5eddc942d5dc775bf70b73fa9fa5fb8b0b9dfd62981e240` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

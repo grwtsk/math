@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SingletonNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SingletonNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SingletonNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SingletonNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [RingHom.adjoinAlgebraMap](../../../../CommutativeAlgebra/SingletonNamespacedPublic.lean/declarations/ringhom-adjoinalgebramap.md) | 39 | `declaration-track:716aec0a6fb6489cc9bcfab7a3f488d5b9f3e7940eeb67bb7e182dae12381f7a` |
-| 2 | `theorem` | [RingHom.adjoinAlgebraMap_apply](../../../../CommutativeAlgebra/SingletonNamespacedPublic.lean/declarations/ringhom-adjoinalgebramap-apply.md) | 47 | `result-track:0198c103d22fbaf0395fa8f7e88e2bb52257709a9fe13f1d8a7467fdc97ae6b1` |
-| 3 | `theorem` | [RingHom.adjoinAlgebraMap_surjective](../../../../CommutativeAlgebra/SingletonNamespacedPublic.lean/declarations/ringhom-adjoinalgebramap-surjective.md) | 50 | `result-track:6e5681fdbb188f899e888d0e3c6bd3b96ab3febb45b079c981c6f9ca1721679f` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/SingletonNamespacedPublic.lean/declarations/instance.md) | 56 | `declaration-track:64e7f0d59e91924b9fa32d9c02c2a3f8624846d46393a7bdc382b898bb0924ad` |
-| 5 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/SingletonNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 59 | `declaration-track:ad83ea631059b52c228b9145daddf92a6e36c8cb763bce84e7ad55598582c5d6` |
-| 6 | `def` | [RingHom.adjoinAlgebraMapEquiv](../../../../CommutativeAlgebra/SingletonNamespacedPublic.lean/declarations/ringhom-adjoinalgebramapequiv.md) | 63 | `declaration-track:14ca8cc01e98151f3ae9b505e302d37347fed4be8df8464c7f22ca56deca58a8` |
+| 1 | `def` | [RingHom.adjoinAlgebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SingletonNamespacedPublic.lean/declarations/ringhom-adjoinalgebramap.md) | 39 | `declaration-track:716aec0a6fb6489cc9bcfab7a3f488d5b9f3e7940eeb67bb7e182dae12381f7a` |
+| 2 | `theorem` | [RingHom.adjoinAlgebraMap_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SingletonNamespacedPublic.lean/declarations/ringhom-adjoinalgebramap-apply.md) | 47 | `result-track:0198c103d22fbaf0395fa8f7e88e2bb52257709a9fe13f1d8a7467fdc97ae6b1` |
+| 3 | `theorem` | [RingHom.adjoinAlgebraMap_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SingletonNamespacedPublic.lean/declarations/ringhom-adjoinalgebramap-surjective.md) | 50 | `result-track:6e5681fdbb188f899e888d0e3c6bd3b96ab3febb45b079c981c6f9ca1721679f` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SingletonNamespacedPublic.lean/declarations/instance.md) | 56 | `declaration-track:64e7f0d59e91924b9fa32d9c02c2a3f8624846d46393a7bdc382b898bb0924ad` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SingletonNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 59 | `declaration-track:ad83ea631059b52c228b9145daddf92a6e36c8cb763bce84e7ad55598582c5d6` |
+| 6 | `def` | [RingHom.adjoinAlgebraMapEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SingletonNamespacedPublic.lean/declarations/ringhom-adjoinalgebramapequiv.md) | 63 | `declaration-track:14ca8cc01e98151f3ae9b505e302d37347fed4be8df8464c7f22ca56deca58a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

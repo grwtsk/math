@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphericalRealization.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphericalRealization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphericalRealization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphericalRealization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [InjectiveS3Realization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphericalRealization.lean/declarations/injectives3realization.md) | 13 | `declaration-track:8331bd2f45e3d0656bd60cb247ab481f1a540a8b15fadfadc2c8790e8db31616` |
-| 2 | `def` | [HasInjectiveS3RealizationWitness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphericalRealization.lean/declarations/hasinjectives3realizationwitness.md) | 20 | `declaration-track:5d85bd8a36ab775e717203e6127301e5deff536a5cac0056c222fabdb13b85b6` |
-| 3 | `inductive` | [SphericalRealizationChoice](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphericalRealization.lean/declarations/sphericalrealizationchoice.md) | 28 | `declaration-track:dee9ddf1fa94877b20280ff4697efcdec59b80ab295312f8daff2b21dc57357c` |
-| 4 | `def` | [SphericalRealizationChoice.dimension](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphericalRealization.lean/declarations/sphericalrealizationchoice-dimension.md) | 39 | `declaration-track:322ee070ee109fe2b8a3e5ce1b38ab1ab17c3a5cddaac49438c943a53bcdf58c` |
-| 5 | `def` | [SelectedSphericalCarrierCompact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphericalRealization.lean/declarations/selectedsphericalcarriercompact.md) | 49 | `declaration-track:496df99e475f43d6be9096b9b6b5b47c57a8c764036a8a515c51851ed62c1706` |
-| 6 | `def` | [chooseInjectiveSphericalRealization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphericalRealization.lean/declarations/chooseinjectivesphericalrealization.md) | 62 | `declaration-track:64645b4941586b78eb6b7ce9cdf61f56a0d2444e5dbf8a797531eef584a1d523` |
+| 1 | `structure` | [InjectiveS3Realization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphericalRealization.lean/declarations/injectives3realization.md) | 13 | `declaration-track:8331bd2f45e3d0656bd60cb247ab481f1a540a8b15fadfadc2c8790e8db31616` |
+| 2 | `def` | [HasInjectiveS3RealizationWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphericalRealization.lean/declarations/hasinjectives3realizationwitness.md) | 20 | `declaration-track:5d85bd8a36ab775e717203e6127301e5deff536a5cac0056c222fabdb13b85b6` |
+| 3 | `inductive` | [SphericalRealizationChoice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphericalRealization.lean/declarations/sphericalrealizationchoice.md) | 28 | `declaration-track:dee9ddf1fa94877b20280ff4697efcdec59b80ab295312f8daff2b21dc57357c` |
+| 4 | `def` | [SphericalRealizationChoice.dimension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphericalRealization.lean/declarations/sphericalrealizationchoice-dimension.md) | 39 | `declaration-track:322ee070ee109fe2b8a3e5ce1b38ab1ab17c3a5cddaac49438c943a53bcdf58c` |
+| 5 | `def` | [SelectedSphericalCarrierCompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphericalRealization.lean/declarations/selectedsphericalcarriercompact.md) | 49 | `declaration-track:496df99e475f43d6be9096b9b6b5b47c57a8c764036a8a515c51851ed62c1706` |
+| 6 | `def` | [chooseInjectiveSphericalRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphericalRealization.lean/declarations/chooseinjectivesphericalrealization.md) | 62 | `declaration-track:64645b4941586b78eb6b7ce9cdf61f56a0d2444e5dbf8a797531eef584a1d523` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

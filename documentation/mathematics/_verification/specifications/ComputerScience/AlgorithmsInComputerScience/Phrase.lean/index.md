@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Phrase.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Phrase.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Phrase.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Phrase.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [PhraseConnection](../../../../../ComputerScience/AlgorithmsInComputerScience/Phrase.lean/declarations/phraseconnection.md) | 7 | `declaration-track:adf92949a84c2f09691f2115777fb44722be23a259fff99205ae3a6fb5229ce4` |
-| 2 | `structure` | [PhraseCandidate](../../../../../ComputerScience/AlgorithmsInComputerScience/Phrase.lean/declarations/phrasecandidate.md) | 12 | `declaration-track:699dd8c55c32c568298dd9a94c7a5cc3a6e15c91f191ebdd0522953648810149` |
-| 3 | `inductive` | [ReadingClass](../../../../../ComputerScience/AlgorithmsInComputerScience/Phrase.lean/declarations/readingclass.md) | 21 | `declaration-track:929112fa3a14e71eee21b60a12051e248d50429c6e6de3dc02989b8ecc992ae5` |
-| 4 | `structure` | [ClassifiedReading](../../../../../ComputerScience/AlgorithmsInComputerScience/Phrase.lean/declarations/classifiedreading.md) | 31 | `declaration-track:e35cc263efcf4a97825ef63f63934109f01275661cbf914301210a6ecdef4f0a` |
+| 1 | `inductive` | [PhraseConnection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Phrase.lean/declarations/phraseconnection.md) | 7 | `declaration-track:adf92949a84c2f09691f2115777fb44722be23a259fff99205ae3a6fb5229ce4` |
+| 2 | `structure` | [PhraseCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Phrase.lean/declarations/phrasecandidate.md) | 12 | `declaration-track:699dd8c55c32c568298dd9a94c7a5cc3a6e15c91f191ebdd0522953648810149` |
+| 3 | `inductive` | [ReadingClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Phrase.lean/declarations/readingclass.md) | 21 | `declaration-track:929112fa3a14e71eee21b60a12051e248d50429c6e6de3dc02989b8ecc992ae5` |
+| 4 | `structure` | [ClassifiedReading](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Phrase.lean/declarations/classifiedreading.md) | 31 | `declaration-track:e35cc263efcf4a97825ef63f63934109f01275661cbf914301210a6ecdef4f0a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

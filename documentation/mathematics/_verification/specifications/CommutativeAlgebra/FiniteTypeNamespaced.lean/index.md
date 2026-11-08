@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FiniteTypeNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FiniteTypeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteTypeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteTypeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_finset_adjoin_eq_top_and_homogeneous](../../../../CommutativeAlgebra/FiniteTypeNamespaced.lean/declarations/exists-finset-adjoin-eq-top-and-homogeneous.md) | 34 | `result-track:90e7253c0aab5b8b05d27a60400264d49d179a93c458c2d2e063000b93726e60` |
-| 2 | `theorem` | [exists_finset_adjoin_eq_top_and_homogeneous_ne_zero](../../../../CommutativeAlgebra/FiniteTypeNamespaced.lean/declarations/exists-finset-adjoin-eq-top-and-homogeneous-ne-zero.md) | 47 | `result-track:a5ba75d9d78b7617bbbecb1085f19349c66ade6f9d2c72d0ba7cc42605d5ec0a` |
+| 1 | `theorem` | [exists_finset_adjoin_eq_top_and_homogeneous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteTypeNamespaced.lean/declarations/exists-finset-adjoin-eq-top-and-homogeneous.md) | 34 | `result-track:90e7253c0aab5b8b05d27a60400264d49d179a93c458c2d2e063000b93726e60` |
+| 2 | `theorem` | [exists_finset_adjoin_eq_top_and_homogeneous_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteTypeNamespaced.lean/declarations/exists-finset-adjoin-eq-top-and-homogeneous-ne-zero.md) | 47 | `result-track:a5ba75d9d78b7617bbbecb1085f19349c66ade6f9d2c72d0ba7cc42605d5ec0a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

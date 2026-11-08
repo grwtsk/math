@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IdealCompactNormSupport.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IdealCompactNormSupport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IdealCompactNormSupport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IdealCompactNormSupport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [norm_at_least_one](../../../../CommutativeAlgebra/IdealCompactNormSupport.lean/declarations/norm-at-least-one.md) | 31 | `result-track:ffe9dd49d922a81a23abda71f03e0304bcf8d3ca89c0e801dfe0484d0739e67a` |
-| 2 | `lemma` | [ideal_triple_scale_bounds](../../../../CommutativeAlgebra/IdealCompactNormSupport.lean/declarations/ideal-triple-scale-bounds.md) | 36 | `result-track:f2ba27e8d2fb17b8db1c5f97ddf0aa6dde6b50c969582d61f7a0523adaf1227e` |
-| 3 | `theorem` | [finite_support_norm_triple](../../../../CommutativeAlgebra/IdealCompactNormSupport.lean/declarations/finite-support-norm-triple.md) | 61 | `result-track:4bbea65cfdd0ac0ac870d3d7d5e1dcf9902d8269c4be7120841a53a1b1e3fde8` |
+| 1 | `lemma` | [norm_at_least_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IdealCompactNormSupport.lean/declarations/norm-at-least-one.md) | 31 | `result-track:ffe9dd49d922a81a23abda71f03e0304bcf8d3ca89c0e801dfe0484d0739e67a` |
+| 2 | `lemma` | [ideal_triple_scale_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IdealCompactNormSupport.lean/declarations/ideal-triple-scale-bounds.md) | 36 | `result-track:f2ba27e8d2fb17b8db1c5f97ddf0aa6dde6b50c969582d61f7a0523adaf1227e` |
+| 3 | `theorem` | [finite_support_norm_triple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IdealCompactNormSupport.lean/declarations/finite-support-norm-triple.md) | 61 | `result-track:4bbea65cfdd0ac0ac870d3d7d5e1dcf9902d8269c4be7120841a53a1b1e3fde8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/FieldNamespaced.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/FieldNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/FieldNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/FieldNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [HasProd.norm](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/FieldNamespaced.lean/declarations/hasprod-norm.md) | 29 | `result-track:70f9f1bfbb867e3c9b828bde045619ba62511c5ed3576d8e879b6533bcfa8d8e` |
-| 2 | `theorem` | [Multipliable.norm](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/FieldNamespaced.lean/declarations/multipliable-norm.md) | 33 | `result-track:455f4507f9302dcd2c95b77773a85f8b7b5c2bd5e956dac7451f79f365d21e7e` |
-| 3 | `theorem` | [Multipliable.norm_tprod](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/FieldNamespaced.lean/declarations/multipliable-norm-tprod.md) | 36 | `result-track:a6fa30bbae43f0c1f218dc17b6006ba3aead6d7b6c6e887e899a397cc5536257` |
+| 1 | `theorem` | [HasProd.norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/FieldNamespaced.lean/declarations/hasprod-norm.md) | 29 | `result-track:70f9f1bfbb867e3c9b828bde045619ba62511c5ed3576d8e879b6533bcfa8d8e` |
+| 2 | `theorem` | [Multipliable.norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/FieldNamespaced.lean/declarations/multipliable-norm.md) | 33 | `result-track:455f4507f9302dcd2c95b77773a85f8b7b5c2bd5e956dac7451f79f365d21e7e` |
+| 3 | `theorem` | [Multipliable.norm_tprod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/FieldNamespaced.lean/declarations/multipliable-norm-tprod.md) | 36 | `result-track:a6fa30bbae43f0c1f218dc17b6006ba3aead6d7b6c6e887e899a397cc5536257` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GoodHeightsW.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GoodHeightsW.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GoodHeightsW.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GoodHeightsW.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [norm_L2_le_log](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GoodHeightsW.lean/declarations/norm-l2-le-log.md) | 37 | `result-track:7dcc8d921d3654e06bbd9e334cf43b21984ea3f4e7acda6dc3e55c5b7c1cea54` |
-| 2 | `theorem` | [logDeriv_hardyW_eq_reflect](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GoodHeightsW.lean/declarations/logderiv-hardyw-eq-reflect.md) | 73 | `result-track:d836072acc79d2ee965e7ada8c79dc10c1ce8ba014cd002ac2d2a94459f74073` |
-| 3 | `theorem` | [L2_add_logDeriv_hardyW_one_sub](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GoodHeightsW.lean/declarations/l2-add-logderiv-hardyw-one-sub.md) | 106 | `result-track:f3fb5ba59182ee36b287a6b13dfb76c66cfe743f9de1819226d3477f6ef5b792` |
-| 4 | `theorem` | [hardyW_good_heights](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GoodHeightsW.lean/declarations/hardyw-good-heights.md) | 113 | `result-track:387cb4155d2332a94aae83e4c73d585c0751301c5b9094baf5f7d9db14eec50f` |
+| 1 | `theorem` | [norm_L2_le_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GoodHeightsW.lean/declarations/norm-l2-le-log.md) | 37 | `result-track:7dcc8d921d3654e06bbd9e334cf43b21984ea3f4e7acda6dc3e55c5b7c1cea54` |
+| 2 | `theorem` | [logDeriv_hardyW_eq_reflect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GoodHeightsW.lean/declarations/logderiv-hardyw-eq-reflect.md) | 73 | `result-track:d836072acc79d2ee965e7ada8c79dc10c1ce8ba014cd002ac2d2a94459f74073` |
+| 3 | `theorem` | [L2_add_logDeriv_hardyW_one_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GoodHeightsW.lean/declarations/l2-add-logderiv-hardyw-one-sub.md) | 106 | `result-track:f3fb5ba59182ee36b287a6b13dfb76c66cfe743f9de1819226d3477f6ef5b792` |
+| 4 | `theorem` | [hardyW_good_heights](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GoodHeightsW.lean/declarations/hardyw-good-heights.md) | 113 | `result-track:387cb4155d2332a94aae83e4c73d585c0751301c5b9094baf5f7d9db14eec50f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

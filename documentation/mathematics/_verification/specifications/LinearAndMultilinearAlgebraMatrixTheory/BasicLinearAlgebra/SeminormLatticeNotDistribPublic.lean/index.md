@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistribPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistribPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistribPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistribPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [p](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistribPublic.lean/declarations/p.md) | 33 | `declaration-track:b2833894b49f363ed26c9a6aa7f7bb642bb6562988396910289f10a0d5aa0818` |
-| 2 | `def` | [q1](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistribPublic.lean/declarations/q1.md) | 37 | `declaration-track:e9f334a4b211c2ca745ddb1046eaed2f8678c8a807981bafde96950647dc3ffe` |
-| 3 | `def` | [q2](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistribPublic.lean/declarations/q2.md) | 41 | `declaration-track:670b6f7847a89b54f9fee190c7e9d4f92990d6c78e956bcc024466a55d6690a9` |
-| 4 | `theorem` | [eq_one](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistribPublic.lean/declarations/eq-one.md) | 44 | `result-track:510a8878f158487f3b3457b6a05d516b5150ecacc20a913c02c28fc61902eea9` |
-| 5 | `theorem` | [not_distrib](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistribPublic.lean/declarations/not-distrib.md) | 50 | `result-track:3b079e2005db0f6815030422dc7f12d083e364f27c74c9caee20b0bcddf558dd` |
+| 1 | `def` | [p](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistribPublic.lean/declarations/p.md) | 33 | `declaration-track:b2833894b49f363ed26c9a6aa7f7bb642bb6562988396910289f10a0d5aa0818` |
+| 2 | `def` | [q1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistribPublic.lean/declarations/q1.md) | 37 | `declaration-track:e9f334a4b211c2ca745ddb1046eaed2f8678c8a807981bafde96950647dc3ffe` |
+| 3 | `def` | [q2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistribPublic.lean/declarations/q2.md) | 41 | `declaration-track:670b6f7847a89b54f9fee190c7e9d4f92990d6c78e956bcc024466a55d6690a9` |
+| 4 | `theorem` | [eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistribPublic.lean/declarations/eq-one.md) | 44 | `result-track:510a8878f158487f3b3457b6a05d516b5150ecacc20a913c02c28fc61902eea9` |
+| 5 | `theorem` | [not_distrib](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistribPublic.lean/declarations/not-distrib.md) | 50 | `result-track:3b079e2005db0f6815030422dc7f12d083e364f27c74c9caee20b0bcddf558dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

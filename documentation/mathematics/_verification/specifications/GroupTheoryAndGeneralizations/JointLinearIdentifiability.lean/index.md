@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/JointLinearIdentifiability.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/JointLinearIdentifiability.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/JointLinearIdentifiability.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/JointLinearIdentifiability.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.LinearMeasurementNecessity`](../../../../GroupTheoryAndGeneralizations/LinearMeasurementNecessity.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.LinearMeasurementNecessity`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LinearMeasurementNecessity.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pairedLinear_injective_iff_common_kernel_zero](../../../../GroupTheoryAndGeneralizations/JointLinearIdentifiability.lean/declarations/pairedlinear-injective-iff-common-kernel-zero.md) | 28 | `result-track:763102e1808c1beebd306060ec2c378f17091880ae521dc8186147b26ee830ba` |
-| 2 | `theorem` | [pairedLinear_not_injective_of_common_kernel](../../../../GroupTheoryAndGeneralizations/JointLinearIdentifiability.lean/declarations/pairedlinear-not-injective-of-common-kernel.md) | 49 | `result-track:1c2fb986fd7a54b09edbdfc8ca63cd0c4f8b6729031f2798efefa0b3024a5d2a` |
+| 1 | `theorem` | [pairedLinear_injective_iff_common_kernel_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/JointLinearIdentifiability.lean/declarations/pairedlinear-injective-iff-common-kernel-zero.md) | 28 | `result-track:763102e1808c1beebd306060ec2c378f17091880ae521dc8186147b26ee830ba` |
+| 2 | `theorem` | [pairedLinear_not_injective_of_common_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/JointLinearIdentifiability.lean/declarations/pairedlinear-not-injective-of-common-kernel.md) | 49 | `result-track:1c2fb986fd7a54b09edbdfc8ca63cd0c4f8b6729031f2798efefa0b3024a5d2a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

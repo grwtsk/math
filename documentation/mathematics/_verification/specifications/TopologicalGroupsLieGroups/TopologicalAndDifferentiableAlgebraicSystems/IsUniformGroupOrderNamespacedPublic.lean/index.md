@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsUniformGroupOrderNamespacedPublic.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsUniformGroupOrderNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsUniformGroupOrderNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsUniformGroupOrderNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [TendstoUniformlyOn.eventually_forall_lt](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsUniformGroupOrderNamespacedPublic.lean/declarations/tendstouniformlyon-eventually-forall-lt.md) | 43 | `result-track:570a5b15b7ef3629367474c064a2618b903b24a6d6923b24d5a728528e109081` |
-| 2 | `lemma` | [TendstoUniformlyOn.eventually_forall_le](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsUniformGroupOrderNamespacedPublic.lean/declarations/tendstouniformlyon-eventually-forall-le.md) | 54 | `result-track:f8f4775b5dc2766ffcf5d2bfa925ba86bcbd3eebef1e3b304a305b544ea8ad75` |
+| 1 | `lemma` | [TendstoUniformlyOn.eventually_forall_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsUniformGroupOrderNamespacedPublic.lean/declarations/tendstouniformlyon-eventually-forall-lt.md) | 43 | `result-track:570a5b15b7ef3629367474c064a2618b903b24a6d6923b24d5a728528e109081` |
+| 2 | `lemma` | [TendstoUniformlyOn.eventually_forall_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsUniformGroupOrderNamespacedPublic.lean/declarations/tendstouniformlyon-eventually-forall-le.md) | 54 | `result-track:f8f4775b5dc2766ffcf5d2bfa925ba86bcbd3eebef1e3b304a305b544ea8ad75` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

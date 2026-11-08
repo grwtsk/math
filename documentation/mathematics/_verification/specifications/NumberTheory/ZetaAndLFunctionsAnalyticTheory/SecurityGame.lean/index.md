@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SecurityGame.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SecurityGame.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SecurityGame.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SecurityGame.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [OracleProblem](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SecurityGame.lean/declarations/oracleproblem.md) | 15 | `declaration-track:ce6dc1163d47d507c1fa269ca392dba1681175ca897260a001ee75f48d0535db` |
-| 2 | `structure` | [SecurityGame](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SecurityGame.lean/declarations/securitygame.md) | 18 | `declaration-track:e70acd778aea51cd5f121db7cb4ee9ea4b3158eac904e59d06556bbc510360ab` |
-| 3 | `inductive` | [SecurityProblemKind](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SecurityGame.lean/declarations/securityproblemkind.md) | 28 | `declaration-track:b8446a7eef246f9b781d2e0e567ba50fb0ad8397a5fff97f8e83d3c52f860d1f` |
+| 1 | `abbrev` | [OracleProblem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SecurityGame.lean/declarations/oracleproblem.md) | 15 | `declaration-track:ce6dc1163d47d507c1fa269ca392dba1681175ca897260a001ee75f48d0535db` |
+| 2 | `structure` | [SecurityGame](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SecurityGame.lean/declarations/securitygame.md) | 18 | `declaration-track:e70acd778aea51cd5f121db7cb4ee9ea4b3158eac904e59d06556bbc510360ab` |
+| 3 | `inductive` | [SecurityProblemKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SecurityGame.lean/declarations/securityproblemkind.md) | 28 | `declaration-track:b8446a7eef246f9b781d2e0e567ba50fb0ad8397a5fff97f8e83d3c52f860d1f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

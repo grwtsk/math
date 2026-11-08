@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalCheckedJetContour`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenCheckedJets`](../../../../../AssociativeRingsAndAlgebras/HeightFifteenCheckedJets.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalCheckedJetContour`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenCheckedJets`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/HeightFifteenCheckedJets.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [packets](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/declarations/packets.md) | 22 | `declaration-track:a9677d5d0ac2744474fd0e508eab9f1e417cb8b0532ab20b6c3e717eb53cf70a` |
-| 2 | `def` | [result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/declarations/result.md) | 25 | `declaration-track:908c5a7d77450fd7b03cfe8ece10f4ced35ed48ce360a77a00bae6d54588e988` |
-| 3 | `theorem` | [result_eq_original](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/declarations/result-eq-original.md) | 28 | `result-track:f68a81908daafc3ea69ea8fd26fddd462affe940b9cee525563025b7ca87d4c5` |
-| 4 | `theorem` | [success_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/declarations/success-iff.md) | 33 | `result-track:c7ec66a46793e16dcc17168c2c56bfea5f87348121bdceeea3f888d3c6a76d49` |
-| 5 | `theorem` | [result_one_of_blocks](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/declarations/result-one-of-blocks.md) | 38 | `result-track:687ed0fb569690e11457b3abcd3308c37d8cab18b4bd806db5effb28a176efec` |
-| 6 | `theorem` | [count_one_of_result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/declarations/count-one-of-result.md) | 42 | `result-track:e0de718829fcc1dc68dd38c4858a3f8bb812d9abf35a38d5a0f83ac65ff1e694` |
-| 7 | `theorem` | [complete_pair_of_result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/declarations/complete-pair-of-result.md) | 47 | `result-track:2d459df181988b709b01017ccd48469bcd4294d29d658fa3606e5ccc92cf6a39` |
+| 1 | `def` | [packets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/declarations/packets.md) | 22 | `declaration-track:a9677d5d0ac2744474fd0e508eab9f1e417cb8b0532ab20b6c3e717eb53cf70a` |
+| 2 | `def` | [result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/declarations/result.md) | 25 | `declaration-track:908c5a7d77450fd7b03cfe8ece10f4ced35ed48ce360a77a00bae6d54588e988` |
+| 3 | `theorem` | [result_eq_original](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/declarations/result-eq-original.md) | 28 | `result-track:f68a81908daafc3ea69ea8fd26fddd462affe940b9cee525563025b7ca87d4c5` |
+| 4 | `theorem` | [success_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/declarations/success-iff.md) | 33 | `result-track:c7ec66a46793e16dcc17168c2c56bfea5f87348121bdceeea3f888d3c6a76d49` |
+| 5 | `theorem` | [result_one_of_blocks](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/declarations/result-one-of-blocks.md) | 38 | `result-track:687ed0fb569690e11457b3abcd3308c37d8cab18b4bd806db5effb28a176efec` |
+| 6 | `theorem` | [count_one_of_result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/declarations/count-one-of-result.md) | 42 | `result-track:e0de718829fcc1dc68dd38c4858a3f8bb812d9abf35a38d5a0f83ac65ff1e694` |
+| 7 | `theorem` | [complete_pair_of_result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/declarations/complete-pair-of-result.md) | 47 | `result-track:2d459df181988b709b01017ccd48469bcd4294d29d658fa3606e5ccc92cf6a39` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

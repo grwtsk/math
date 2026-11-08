@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoundNamespacedPublicRoundDownLe.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoundNamespacedPublicRoundDownLe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoundNamespacedPublicRoundDownLe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoundNamespacedPublicRoundDownLe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -65,10 +65,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [roundDown_le](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoundNamespacedPublicRoundDownLe.lean/declarations/rounddown-le.md) | 36 | `result-track:98526abbfa6be5be5d05f602964a7fa53fbf5ef1c63b4738ce36be9564d09e2e` |
-| 2 | `theorem` | [precision_roundDown](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoundNamespacedPublicRoundDownLe.lean/declarations/precision-rounddown.md) | 62 | `result-track:834952a7d26d506cd1576dd72fa47c600d0584728fbb3df5afe21cb44f4d7db1` |
-| 3 | `theorem` | [le_roundUp](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoundNamespacedPublicRoundDownLe.lean/declarations/le-roundup.md) | 80 | `result-track:178a36ebfaa630c69662a6812154edaf7ccad16a9a674c7d08c1877924482580` |
-| 4 | `theorem` | [precision_roundUp](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoundNamespacedPublicRoundDownLe.lean/declarations/precision-roundup.md) | 84 | `result-track:952767776789882e04fb6f1028887d3a24a0bcf14eeaf5055a1f8229589adf8b` |
+| 1 | `theorem` | [roundDown_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoundNamespacedPublicRoundDownLe.lean/declarations/rounddown-le.md) | 36 | `result-track:98526abbfa6be5be5d05f602964a7fa53fbf5ef1c63b4738ce36be9564d09e2e` |
+| 2 | `theorem` | [precision_roundDown](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoundNamespacedPublicRoundDownLe.lean/declarations/precision-rounddown.md) | 62 | `result-track:834952a7d26d506cd1576dd72fa47c600d0584728fbb3df5afe21cb44f4d7db1` |
+| 3 | `theorem` | [le_roundUp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoundNamespacedPublicRoundDownLe.lean/declarations/le-roundup.md) | 80 | `result-track:178a36ebfaa630c69662a6812154edaf7ccad16a9a674c7d08c1877924482580` |
+| 4 | `theorem` | [precision_roundUp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoundNamespacedPublicRoundDownLe.lean/declarations/precision-roundup.md) | 84 | `result-track:952767776789882e04fb6f1028887d3a24a0bcf14eeaf5055a1f8229589adf8b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

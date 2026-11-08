@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ToArrayImplNamespacedPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ToArrayImplNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ToArrayImplNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ToArrayImplNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [List.toArrayAux](../../../../../ComputerScience/AlgorithmsInComputerScience/ToArrayImplNamespacedPublic.lean/declarations/list-toarrayaux.md) | 30 | `declaration-track:0422f235f82a0d0b4740723e35a3b5d66a500c626752e27e1da25d8f4fc1b78d` |
-| 2 | `def` | [List.toArrayImpl](../../../../../ComputerScience/AlgorithmsInComputerScience/ToArrayImplNamespacedPublic.lean/declarations/list-toarrayimpl.md) | 44 | `declaration-track:74444dfd41e800141f56a3c5d4d86cf533180167ccfffc1f38b803a46a963e00` |
+| 1 | `def` | [List.toArrayAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ToArrayImplNamespacedPublic.lean/declarations/list-toarrayaux.md) | 30 | `declaration-track:0422f235f82a0d0b4740723e35a3b5d66a500c626752e27e1da25d8f4fc1b78d` |
+| 2 | `def` | [List.toArrayImpl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ToArrayImplNamespacedPublic.lean/declarations/list-toarrayimpl.md) | 44 | `declaration-track:74444dfd41e800141f56a3c5d4d86cf533180167ccfffc1f38b803a46a963e00` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

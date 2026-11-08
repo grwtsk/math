@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Cluster.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Cluster.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Cluster.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Cluster.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [placements](../../../../../ComputerScience/AlgorithmsInComputerScience/Cluster.lean/declarations/placements.md) | 7 | `declaration-track:cd80f087a1bebaababe0daebf90cd1ee40c46466ff4737b1c85be5de6b589459` |
-| 2 | `theorem` | [placements_count](../../../../../ComputerScience/AlgorithmsInComputerScience/Cluster.lean/declarations/placements-count.md) | 10 | `result-track:378f71e430f323ef5101b090f9a98ece8d7ca519b5220bd1057eb146dc4c6607` |
-| 3 | `theorem` | [placements_centerControlled](../../../../../ComputerScience/AlgorithmsInComputerScience/Cluster.lean/declarations/placements-centercontrolled.md) | 14 | `result-track:625bba9a57305501730bcfe3a4e250e07ab8dad8e2cc9bc501105b207e47ec9d` |
+| 1 | `def` | [placements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Cluster.lean/declarations/placements.md) | 7 | `declaration-track:cd80f087a1bebaababe0daebf90cd1ee40c46466ff4737b1c85be5de6b589459` |
+| 2 | `theorem` | [placements_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Cluster.lean/declarations/placements-count.md) | 10 | `result-track:378f71e430f323ef5101b090f9a98ece8d7ca519b5220bd1057eb146dc4c6607` |
+| 3 | `theorem` | [placements_centerControlled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Cluster.lean/declarations/placements-centercontrolled.md) | 14 | `result-track:625bba9a57305501730bcfe3a4e250e07ab8dad8e2cc9bc501105b207e47ec9d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

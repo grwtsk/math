@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SampleCountsAndUnitInterval.lean/index.md) · [Full source](../../../../Combinatorics/SampleCountsAndUnitInterval.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SampleCountsAndUnitInterval.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SampleCountsAndUnitInterval.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -56,7 +56,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.Analysis.SpecialFunctions.Pow.Real` — import line 27; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` — import line 28; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Rat.Floor` — import line 29; external provider; requires a separately pinned dependency.
-- [Point And Finite List Reflection](../../../../Geometry/PointAndFiniteListReflection.lean/index.md) — import line 31; pinned internal source present.
+- [Point And Finite List Reflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PointAndFiniteListReflection.lean/index.md) — import line 31; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -67,14 +67,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [PointInRegionPredicate](../../../../Combinatorics/SampleCountsAndUnitInterval.lean/declarations/pointinregionpredicate.md) | 45 | `declaration-track:cd6b98ed03afcaaf0a6e70dd19c1e41da71a59dc96ca36ac76db49f46457cfdd` |
-| 2 | `structure` | [CellSupport](../../../../Combinatorics/SampleCountsAndUnitInterval.lean/declarations/cellsupport.md) | 48 | `declaration-track:3eb67999965c99ea2bc29b951a8a130f1ce3eb064add7c510af92e1aceda5b14` |
-| 3 | `def` | [cellSamplePoint](../../../../Combinatorics/SampleCountsAndUnitInterval.lean/declarations/cellsamplepoint.md) | 57 | `declaration-track:6c4e20b40246b40d16803cb2706ab50a4fc7b055803fbf937e1b21bbfbcd6c28` |
-| 4 | `def` | [coverageCount](../../../../Combinatorics/SampleCountsAndUnitInterval.lean/declarations/coveragecount.md) | 65 | `declaration-track:58455ebe5cf7522a55a238faaea02482ea819ab38ef79e3f01236ab0588fd4a2` |
-| 5 | `def` | [sampledCoverage](../../../../Combinatorics/SampleCountsAndUnitInterval.lean/declarations/sampledcoverage.md) | 73 | `declaration-track:9180bbfadf3a49b88e707963e6540c558c0eab2f4efdfd31cda76b1fc3604928` |
-| 6 | `theorem` | [sampledCoverage_zero](../../../../Combinatorics/SampleCountsAndUnitInterval.lean/declarations/sampledcoverage-zero.md) | 77 | `result-track:60d4629a6b6a1b11d3d5b7132eb9af8730606ebbc3ffedcebc7818b2f05b5691` |
-| 7 | `theorem` | [coverageCount_le_sampleCount](../../../../Combinatorics/SampleCountsAndUnitInterval.lean/declarations/coveragecount-le-samplecount.md) | 82 | `result-track:425cd39f73be163448b00e6e17532805e797160bd2a723b658ac70f2d812ab19` |
-| 8 | `theorem` | [sampledCoverage_mem_unitInterval](../../../../Combinatorics/SampleCountsAndUnitInterval.lean/declarations/sampledcoverage-mem-unitinterval.md) | 96 | `result-track:d67eaa81ab89211e505baa9506a2f690750e5dd4d863d28ddf3c27f81f9f2e4e` |
+| 1 | `abbrev` | [PointInRegionPredicate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SampleCountsAndUnitInterval.lean/declarations/pointinregionpredicate.md) | 45 | `declaration-track:cd6b98ed03afcaaf0a6e70dd19c1e41da71a59dc96ca36ac76db49f46457cfdd` |
+| 2 | `structure` | [CellSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SampleCountsAndUnitInterval.lean/declarations/cellsupport.md) | 48 | `declaration-track:3eb67999965c99ea2bc29b951a8a130f1ce3eb064add7c510af92e1aceda5b14` |
+| 3 | `def` | [cellSamplePoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SampleCountsAndUnitInterval.lean/declarations/cellsamplepoint.md) | 57 | `declaration-track:6c4e20b40246b40d16803cb2706ab50a4fc7b055803fbf937e1b21bbfbcd6c28` |
+| 4 | `def` | [coverageCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SampleCountsAndUnitInterval.lean/declarations/coveragecount.md) | 65 | `declaration-track:58455ebe5cf7522a55a238faaea02482ea819ab38ef79e3f01236ab0588fd4a2` |
+| 5 | `def` | [sampledCoverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SampleCountsAndUnitInterval.lean/declarations/sampledcoverage.md) | 73 | `declaration-track:9180bbfadf3a49b88e707963e6540c558c0eab2f4efdfd31cda76b1fc3604928` |
+| 6 | `theorem` | [sampledCoverage_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SampleCountsAndUnitInterval.lean/declarations/sampledcoverage-zero.md) | 77 | `result-track:60d4629a6b6a1b11d3d5b7132eb9af8730606ebbc3ffedcebc7818b2f05b5691` |
+| 7 | `theorem` | [coverageCount_le_sampleCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SampleCountsAndUnitInterval.lean/declarations/coveragecount-le-samplecount.md) | 82 | `result-track:425cd39f73be163448b00e6e17532805e797160bd2a723b658ac70f2d812ab19` |
+| 8 | `theorem` | [sampledCoverage_mem_unitInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SampleCountsAndUnitInterval.lean/declarations/sampledcoverage-mem-unitinterval.md) | 96 | `result-track:d67eaa81ab89211e505baa9506a2f690750e5dd4d863d28ddf3c27f81f9f2e4e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ParameterizedTypeTestNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ParameterizedTypeTestNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ParameterizedTypeTestNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ParameterizedTypeTestNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [MyList](../../../../../ComputerScience/AlgorithmsInComputerScience/ParameterizedTypeTestNamespaced.lean/declarations/mylist.md) | 18 | `declaration-track:355fc60081074186bd8fbb3223a26166568ec68def26ce6417a18cd4fa63e385` |
-| 2 | `inductive` | [Vec](../../../../../ComputerScience/AlgorithmsInComputerScience/ParameterizedTypeTestNamespaced.lean/declarations/vec.md) | 49 | `declaration-track:89bb08c516ba3a59fd14194db5189e9f91e45ffadd6563b783b00c734985315f` |
-| 3 | `def` | [listOfMyList](../../../../../ComputerScience/AlgorithmsInComputerScience/ParameterizedTypeTestNamespaced.lean/declarations/listofmylist.md) | 71 | `declaration-track:8ca246dcf759bdc959df5904dc9feb3d120e5398d54aae3a5da9f8ab7d600840` |
-| 4 | `def` | [myListOfList](../../../../../ComputerScience/AlgorithmsInComputerScience/ParameterizedTypeTestNamespaced.lean/declarations/mylistoflist.md) | 77 | `declaration-track:56fdd1d9187d2ad4b7865bfd7781b81efe37997c8fef3ef07d165b497f85112e` |
-| 5 | `def` | [shrinkMyList](../../../../../ComputerScience/AlgorithmsInComputerScience/ParameterizedTypeTestNamespaced.lean/declarations/shrinkmylist.md) | 85 | `declaration-track:09250808f300fc15e37a4e1cf1744f235d148efd9a0f6d37a4d2f4bb2a4d40fc` |
-| 6 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ParameterizedTypeTestNamespaced.lean/declarations/instance.md) | 90 | `declaration-track:b5998f89d93c4e8ce955bf33a3dd9da0ca9a40266dfd4718f91d8dae0dfaecb7` |
-| 7 | `def` | [reverse](../../../../../ComputerScience/AlgorithmsInComputerScience/ParameterizedTypeTestNamespaced.lean/declarations/reverse.md) | 106 | `declaration-track:3c697b435e62534bcfd583415e16b33d6e3a307d0c6b1bcd1614cfbec98efe44` |
+| 1 | `inductive` | [MyList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ParameterizedTypeTestNamespaced.lean/declarations/mylist.md) | 18 | `declaration-track:355fc60081074186bd8fbb3223a26166568ec68def26ce6417a18cd4fa63e385` |
+| 2 | `inductive` | [Vec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ParameterizedTypeTestNamespaced.lean/declarations/vec.md) | 49 | `declaration-track:89bb08c516ba3a59fd14194db5189e9f91e45ffadd6563b783b00c734985315f` |
+| 3 | `def` | [listOfMyList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ParameterizedTypeTestNamespaced.lean/declarations/listofmylist.md) | 71 | `declaration-track:8ca246dcf759bdc959df5904dc9feb3d120e5398d54aae3a5da9f8ab7d600840` |
+| 4 | `def` | [myListOfList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ParameterizedTypeTestNamespaced.lean/declarations/mylistoflist.md) | 77 | `declaration-track:56fdd1d9187d2ad4b7865bfd7781b81efe37997c8fef3ef07d165b497f85112e` |
+| 5 | `def` | [shrinkMyList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ParameterizedTypeTestNamespaced.lean/declarations/shrinkmylist.md) | 85 | `declaration-track:09250808f300fc15e37a4e1cf1744f235d148efd9a0f6d37a4d2f4bb2a4d40fc` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ParameterizedTypeTestNamespaced.lean/declarations/instance.md) | 90 | `declaration-track:b5998f89d93c4e8ce955bf33a3dd9da0ca9a40266dfd4718f91d8dae0dfaecb7` |
+| 7 | `def` | [reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ParameterizedTypeTestNamespaced.lean/declarations/reverse.md) | 106 | `declaration-track:3c697b435e62534bcfd583415e16b33d6e3a307d0c6b1bcd1614cfbec98efe44` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

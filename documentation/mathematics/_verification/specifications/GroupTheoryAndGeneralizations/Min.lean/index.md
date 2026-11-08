@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/Min.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/Min.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Min.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Min.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [minOrder](../../../../GroupTheoryAndGeneralizations/Min.lean/declarations/minorder-source-edition-2.md) | 34 | `declaration-track:ad71860e355a12c40883fe2bcc8633e734088b624179fb42c76f6035a9024ba4` |
-| 2 | `lemma` | [minOrder_eq_top](../../../../GroupTheoryAndGeneralizations/Min.lean/declarations/minorder-eq-top.md) | 39 | `result-track:5127f989e578d65308198c0bf12d4441f9c218f5b20d5688699fd4ece42a597f` |
-| 3 | `lemma` | [le_minOrder](../../../../GroupTheoryAndGeneralizations/Min.lean/declarations/le-minorder.md) | 44 | `result-track:dcbf3b5444b463bd73071c4b901a20220443a69dd44558a1a652780ebfffbfa9` |
-| 4 | `lemma` | [minOrder_le_orderOf](../../../../GroupTheoryAndGeneralizations/Min.lean/declarations/minorder-le-orderof.md) | 48 | `result-track:5c6524c1b7b94c2fd659785f3c45b648f16e10647301c8b41a59b319759ebe38` |
-| 5 | `lemma` | [le_minOrder_iff_forall_subgroup](../../../../GroupTheoryAndGeneralizations/Min.lean/declarations/le-minorder-iff-forall-subgroup.md) | 56 | `result-track:6aeea6f003fece62ecd613c4f2705f35b3c75034c28c5f7b046b2270c5fc4be1` |
-| 6 | `lemma` | [minOrder_le_natCard](../../../../GroupTheoryAndGeneralizations/Min.lean/declarations/minorder-le-natcard.md) | 67 | `result-track:0a6295f05dd7430bbecea01f4190b2f47d18bf175ea475340e68ac97ddbf8458` |
-| 7 | `lemma` | [minOrder](../../../../GroupTheoryAndGeneralizations/Min.lean/declarations/minorder.md) | 77 | `result-track:660dce0eddcfd299ab9bc78ddad9f1a1f1687747585310af2045e19a2e090c66` |
-| 8 | `lemma` | [minOrder_of_prime](../../../../GroupTheoryAndGeneralizations/Min.lean/declarations/minorder-of-prime.md) | 94 | `result-track:bd10b7241c95394e66b4632a146839f102e3082bdab95486817949f005ac59e4` |
+| 1 | `def` | [minOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Min.lean/declarations/minorder-source-edition-2.md) | 34 | `declaration-track:ad71860e355a12c40883fe2bcc8633e734088b624179fb42c76f6035a9024ba4` |
+| 2 | `lemma` | [minOrder_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Min.lean/declarations/minorder-eq-top.md) | 39 | `result-track:5127f989e578d65308198c0bf12d4441f9c218f5b20d5688699fd4ece42a597f` |
+| 3 | `lemma` | [le_minOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Min.lean/declarations/le-minorder.md) | 44 | `result-track:dcbf3b5444b463bd73071c4b901a20220443a69dd44558a1a652780ebfffbfa9` |
+| 4 | `lemma` | [minOrder_le_orderOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Min.lean/declarations/minorder-le-orderof.md) | 48 | `result-track:5c6524c1b7b94c2fd659785f3c45b648f16e10647301c8b41a59b319759ebe38` |
+| 5 | `lemma` | [le_minOrder_iff_forall_subgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Min.lean/declarations/le-minorder-iff-forall-subgroup.md) | 56 | `result-track:6aeea6f003fece62ecd613c4f2705f35b3c75034c28c5f7b046b2270c5fc4be1` |
+| 6 | `lemma` | [minOrder_le_natCard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Min.lean/declarations/minorder-le-natcard.md) | 67 | `result-track:0a6295f05dd7430bbecea01f4190b2f47d18bf175ea475340e68ac97ddbf8458` |
+| 7 | `lemma` | [minOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Min.lean/declarations/minorder.md) | 77 | `result-track:660dce0eddcfd299ab9bc78ddad9f1a1f1687747585310af2045e19a2e090c66` |
+| 8 | `lemma` | [minOrder_of_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Min.lean/declarations/minorder-of-prime.md) | 94 | `result-track:bd10b7241c95394e66b4632a146839f102e3082bdab95486817949f005ac59e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

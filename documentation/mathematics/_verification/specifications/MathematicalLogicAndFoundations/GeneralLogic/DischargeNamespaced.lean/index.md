@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DischargeNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DischargeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DischargeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DischargeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [DischargeKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DischargeNamespaced.lean/declarations/dischargekind.md) | 15 | `declaration-track:3842230b502f0a74cb8e479ca535a3c9a3eb11408103ca18a07bddecb7f7b35e` |
-| 2 | `structure` | [DischargeCandidate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DischargeNamespaced.lean/declarations/dischargecandidate.md) | 29 | `declaration-track:6c73a41baa447d55a0cfbf072bbf3d12fb0cc85bc9857ad7f087d7f8c4afda11` |
-| 3 | `def` | [acceptsDischarge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DischargeNamespaced.lean/declarations/acceptsdischarge.md) | 35 | `declaration-track:6c6667de2dc3bc490544365a4d37af7b6a06e2b6b9d754024e7ee36d6734f056` |
-| 4 | `structure` | [AcceptedDischarge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DischargeNamespaced.lean/declarations/accepteddischarge.md) | 40 | `declaration-track:fb079084d189f489706b3dc6189a46210c740111f302ae92a7f07f70b946c51e` |
-| 5 | `theorem` | [discharge_requires_exact_certificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DischargeNamespaced.lean/declarations/discharge-requires-exact-certificate.md) | 46 | `result-track:5015e1ad34b865e29a130c96610e3ef6f283a416f099330351021a243e326a60` |
+| 1 | `inductive` | [DischargeKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DischargeNamespaced.lean/declarations/dischargekind.md) | 15 | `declaration-track:3842230b502f0a74cb8e479ca535a3c9a3eb11408103ca18a07bddecb7f7b35e` |
+| 2 | `structure` | [DischargeCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DischargeNamespaced.lean/declarations/dischargecandidate.md) | 29 | `declaration-track:6c73a41baa447d55a0cfbf072bbf3d12fb0cc85bc9857ad7f087d7f8c4afda11` |
+| 3 | `def` | [acceptsDischarge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DischargeNamespaced.lean/declarations/acceptsdischarge.md) | 35 | `declaration-track:6c6667de2dc3bc490544365a4d37af7b6a06e2b6b9d754024e7ee36d6734f056` |
+| 4 | `structure` | [AcceptedDischarge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DischargeNamespaced.lean/declarations/accepteddischarge.md) | 40 | `declaration-track:fb079084d189f489706b3dc6189a46210c740111f302ae92a7f07f70b946c51e` |
+| 5 | `theorem` | [discharge_requires_exact_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DischargeNamespaced.lean/declarations/discharge-requires-exact-certificate.md) | 46 | `result-track:5015e1ad34b865e29a130c96610e3ef6f283a416f099330351021a243e326a60` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

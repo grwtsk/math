@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/HeatSemigroup.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/HeatSemigroup.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HeatSemigroup.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HeatSemigroup.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HeatSemigroup](../../../../GroupTheoryAndGeneralizations/HeatSemigroup.lean/declarations/heatsemigroup.md) | 19 | `declaration-track:c24638a952ba1d587c2b8220baf7ec9431d0c0854c44edc83a2a8be4a9cc2bea` |
+| 1 | `structure` | [HeatSemigroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HeatSemigroup.lean/declarations/heatsemigroup.md) | 19 | `declaration-track:c24638a952ba1d587c2b8220baf7ec9431d0c0854c44edc83a2a8be4a9cc2bea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

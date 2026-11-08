@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [cfcL_integral](../../../../FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/declarations/cfcl-integral.md) | 43 | `result-track:86ff5e72fd02982daad312765f8b271f1775b0af33b92ec22f7d10dcf0edf765` |
-| 2 | `lemma` | [cfcHom_integral](../../../../FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/declarations/cfchom-integral.md) | 48 | `result-track:b45468a7ce7b664972c21d2b6b17c5f5f8acca1eb585054e8da7e5528ef08d93` |
-| 3 | `lemma` | [cfc_integral](../../../../FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/declarations/cfc-integral-source-edition-3.md) | 55 | `result-track:cb444ef2ce74a4ea83460d40a6ad89e149c557f8b9bf760fc30eb891e25b3e26` |
-| 4 | `lemma` | [cfc_integral'](../../../../FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/declarations/cfc-integral.md) | 78 | `result-track:5f0d788a94afb4ae603c7324831d278e0304f882d70c280739f2b5dd6c7139ee` |
-| 5 | `lemma` | [cfcₙL_integral](../../../../FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/declarations/cfc-l-integral.md) | 97 | `result-track:daaaf0acda9b4af40e8d958fdad9cfca7d75ab5fdafa64b455f79f7a0d26133d` |
-| 6 | `lemma` | [cfcₙHom_integral](../../../../FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/declarations/cfc-hom-integral.md) | 102 | `result-track:546ff6913dd652a0abaf7287341a9019ce72c4cb6d67ebba49c7677138132eb8` |
-| 7 | `lemma` | [cfcₙ_integral](../../../../FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/declarations/cfc-integral-source-edition-2.md) | 109 | `result-track:7dca5705e657f768f8457e1e0a92a866d7c7b0282b3bd35a77aefd8ef43add3a` |
-| 8 | `lemma` | [cfcₙ_integral'](../../../../FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/declarations/cfc-integral-source-edition-4.md) | 134 | `result-track:fbc347f71e945286f5171ef6e85f5948bb07fe58c42426f23d1ec1aa784fe29d` |
+| 1 | `lemma` | [cfcL_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/declarations/cfcl-integral.md) | 43 | `result-track:86ff5e72fd02982daad312765f8b271f1775b0af33b92ec22f7d10dcf0edf765` |
+| 2 | `lemma` | [cfcHom_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/declarations/cfchom-integral.md) | 48 | `result-track:b45468a7ce7b664972c21d2b6b17c5f5f8acca1eb585054e8da7e5528ef08d93` |
+| 3 | `lemma` | [cfc_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/declarations/cfc-integral-source-edition-3.md) | 55 | `result-track:cb444ef2ce74a4ea83460d40a6ad89e149c557f8b9bf760fc30eb891e25b3e26` |
+| 4 | `lemma` | [cfc_integral'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/declarations/cfc-integral.md) | 78 | `result-track:5f0d788a94afb4ae603c7324831d278e0304f882d70c280739f2b5dd6c7139ee` |
+| 5 | `lemma` | [cfcₙL_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/declarations/cfc-l-integral.md) | 97 | `result-track:daaaf0acda9b4af40e8d958fdad9cfca7d75ab5fdafa64b455f79f7a0d26133d` |
+| 6 | `lemma` | [cfcₙHom_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/declarations/cfc-hom-integral.md) | 102 | `result-track:546ff6913dd652a0abaf7287341a9019ce72c4cb6d67ebba49c7677138132eb8` |
+| 7 | `lemma` | [cfcₙ_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/declarations/cfc-integral-source-edition-2.md) | 109 | `result-track:7dca5705e657f768f8457e1e0a92a866d7c7b0282b3bd35a77aefd8ef43add3a` |
+| 8 | `lemma` | [cfcₙ_integral'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousFunctionalCalculusIntegral.lean/declarations/cfc-integral-source-edition-4.md) | 134 | `result-track:fbc347f71e945286f5171ef6e85f5948bb07fe58c42426f23d1ec1aa784fe29d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

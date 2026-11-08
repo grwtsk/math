@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReciprocalBoundaryNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReciprocalBoundaryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReciprocalBoundaryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReciprocalBoundaryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ReciprocalBoundary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReciprocalBoundaryNamespaced.lean/declarations/reciprocalboundary.md) | 30 | `declaration-track:a1c3b7e99d87c03713b03d2d957fc80055843e31633c5567541a2da88cff9cef` |
-| 2 | `theorem` | [zero_iff_pole_reciprocal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReciprocalBoundaryNamespaced.lean/declarations/zero-iff-pole-reciprocal.md) | 40 | `result-track:0692667d3392ae9c41c3c45aed974a2a266b7b2919103a36b78ba4a7dcc52363` |
-| 3 | `theorem` | [pole_iff_zero_reciprocal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReciprocalBoundaryNamespaced.lean/declarations/pole-iff-zero-reciprocal.md) | 48 | `result-track:b34ab194ca9652ca26ac2e6fdc970f8b0a7b546f6bfc2da9447cd90c3720d70d` |
-| 4 | `theorem` | [pole_implies_reciprocal_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReciprocalBoundaryNamespaced.lean/declarations/pole-implies-reciprocal-zero.md) | 56 | `result-track:c7b035fd3b02083a800fe3c06a295221854fa42692578096f029f18de5b0e8f1` |
-| 5 | `theorem` | [zero_implies_reciprocal_pole](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReciprocalBoundaryNamespaced.lean/declarations/zero-implies-reciprocal-pole.md) | 65 | `result-track:1d633ea49a3ee2c40411f9e9d6418937f34d8cd47242affeb82bf9b17501b7b2` |
-| 6 | `structure` | [ZetaReciprocalBoundary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReciprocalBoundaryNamespaced.lean/declarations/zetareciprocalboundary.md) | 74 | `declaration-track:2722ebd0fdd5f4edeefdc06076c70bd9973fef00611317d0bc9ab2f4cd718864` |
-| 7 | `theorem` | [zeta_pole_at_one_implies_reciprocal_zero_at_one](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReciprocalBoundaryNamespaced.lean/declarations/zeta-pole-at-one-implies-reciprocal-zero-at-one.md) | 82 | `result-track:fee93ad24345ce326f1dd7def15cf7f1ab8ad278628a5f486188a2fff27c826c` |
+| 1 | `structure` | [ReciprocalBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReciprocalBoundaryNamespaced.lean/declarations/reciprocalboundary.md) | 30 | `declaration-track:a1c3b7e99d87c03713b03d2d957fc80055843e31633c5567541a2da88cff9cef` |
+| 2 | `theorem` | [zero_iff_pole_reciprocal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReciprocalBoundaryNamespaced.lean/declarations/zero-iff-pole-reciprocal.md) | 40 | `result-track:0692667d3392ae9c41c3c45aed974a2a266b7b2919103a36b78ba4a7dcc52363` |
+| 3 | `theorem` | [pole_iff_zero_reciprocal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReciprocalBoundaryNamespaced.lean/declarations/pole-iff-zero-reciprocal.md) | 48 | `result-track:b34ab194ca9652ca26ac2e6fdc970f8b0a7b546f6bfc2da9447cd90c3720d70d` |
+| 4 | `theorem` | [pole_implies_reciprocal_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReciprocalBoundaryNamespaced.lean/declarations/pole-implies-reciprocal-zero.md) | 56 | `result-track:c7b035fd3b02083a800fe3c06a295221854fa42692578096f029f18de5b0e8f1` |
+| 5 | `theorem` | [zero_implies_reciprocal_pole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReciprocalBoundaryNamespaced.lean/declarations/zero-implies-reciprocal-pole.md) | 65 | `result-track:1d633ea49a3ee2c40411f9e9d6418937f34d8cd47242affeb82bf9b17501b7b2` |
+| 6 | `structure` | [ZetaReciprocalBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReciprocalBoundaryNamespaced.lean/declarations/zetareciprocalboundary.md) | 74 | `declaration-track:2722ebd0fdd5f4edeefdc06076c70bd9973fef00611317d0bc9ab2f4cd718864` |
+| 7 | `theorem` | [zeta_pole_at_one_implies_reciprocal_zero_at_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReciprocalBoundaryNamespaced.lean/declarations/zeta-pole-at-one-implies-reciprocal-zero-at-one.md) | 82 | `result-track:fee93ad24345ce326f1dd7def15cf7f1ab8ad278628a5f486188a2fff27c826c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

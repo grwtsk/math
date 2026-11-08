@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ExistingProviderMapEquations.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ExistingProviderMapEquations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ExistingProviderMapEquations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ExistingProviderMapEquations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [shell_twist_of_zero_is_identity](../../../../GroupTheoryAndGeneralizations/ExistingProviderMapEquations.lean/declarations/shell-twist-of-zero-is-identity.md) | 39 | `result-track:d879614b3c7565629fac9887fa752882b94b4461442e4edf90b91a34e31b805c` |
-| 2 | `theorem` | [shell_twist_respects_add](../../../../GroupTheoryAndGeneralizations/ExistingProviderMapEquations.lean/declarations/shell-twist-respects-add.md) | 50 | `result-track:d68dca2dc0efe8d35d0931f1b26e03f266a9e148d0dc25a33c88b14bc7c66686` |
+| 1 | `theorem` | [shell_twist_of_zero_is_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ExistingProviderMapEquations.lean/declarations/shell-twist-of-zero-is-identity.md) | 39 | `result-track:d879614b3c7565629fac9887fa752882b94b4461442e4edf90b91a34e31b805c` |
+| 2 | `theorem` | [shell_twist_respects_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ExistingProviderMapEquations.lean/declarations/shell-twist-respects-add.md) | 50 | `result-track:d68dca2dc0efe8d35d0931f1b26e03f266a9e148d0dc25a33c88b14bc7c66686` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

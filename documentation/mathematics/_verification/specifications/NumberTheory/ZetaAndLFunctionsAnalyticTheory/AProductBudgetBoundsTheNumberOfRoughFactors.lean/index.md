@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AProductBudgetBoundsTheNumberOfRoughFactors.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AProductBudgetBoundsTheNumberOfRoughFactors.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AProductBudgetBoundsTheNumberOfRoughFactors.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AProductBudgetBoundsTheNumberOfRoughFactors.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [weak_rough_arity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AProductBudgetBoundsTheNumberOfRoughFactors.lean/declarations/weak-rough-arity.md) | 25 | `result-track:5e3c6c6f9a02651330382c0bf3f67684440d23068bc4d101a21d3037ed3078bd` |
-| 2 | `theorem` | [strict_rough_arity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AProductBudgetBoundsTheNumberOfRoughFactors.lean/declarations/strict-rough-arity.md) | 38 | `result-track:ca5e5fc57331d2c1a500e32224ae5fce00c8c9b5dc3334c58bb0c5be73012620` |
-| 3 | `theorem` | [rough_arity_le_floor_inverse](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AProductBudgetBoundsTheNumberOfRoughFactors.lean/declarations/rough-arity-le-floor-inverse.md) | 51 | `result-track:0a9cd755c02ed29d6497c2c447856b0f8358e35e5fd059c4e4aa51dcc2e68318` |
-| 4 | `theorem` | [sixth_threshold_has_at_most_six](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AProductBudgetBoundsTheNumberOfRoughFactors.lean/declarations/sixth-threshold-has-at-most-six.md) | 58 | `result-track:380dc3f4de6092d2a26338d0824ab6046531fb41260de2830fbf4c64e1b97eb6` |
-| 5 | `theorem` | [strict_sixth_threshold_has_at_most_five](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AProductBudgetBoundsTheNumberOfRoughFactors.lean/declarations/strict-sixth-threshold-has-at-most-five.md) | 65 | `result-track:e5e1407326b51de6cf17bda14db3fa89b40566a9c978ad873744b73cb71cad6d` |
+| 1 | `theorem` | [weak_rough_arity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AProductBudgetBoundsTheNumberOfRoughFactors.lean/declarations/weak-rough-arity.md) | 25 | `result-track:5e3c6c6f9a02651330382c0bf3f67684440d23068bc4d101a21d3037ed3078bd` |
+| 2 | `theorem` | [strict_rough_arity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AProductBudgetBoundsTheNumberOfRoughFactors.lean/declarations/strict-rough-arity.md) | 38 | `result-track:ca5e5fc57331d2c1a500e32224ae5fce00c8c9b5dc3334c58bb0c5be73012620` |
+| 3 | `theorem` | [rough_arity_le_floor_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AProductBudgetBoundsTheNumberOfRoughFactors.lean/declarations/rough-arity-le-floor-inverse.md) | 51 | `result-track:0a9cd755c02ed29d6497c2c447856b0f8358e35e5fd059c4e4aa51dcc2e68318` |
+| 4 | `theorem` | [sixth_threshold_has_at_most_six](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AProductBudgetBoundsTheNumberOfRoughFactors.lean/declarations/sixth-threshold-has-at-most-six.md) | 58 | `result-track:380dc3f4de6092d2a26338d0824ab6046531fb41260de2830fbf4c64e1b97eb6` |
+| 5 | `theorem` | [strict_sixth_threshold_has_at_most_five](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AProductBudgetBoundsTheNumberOfRoughFactors.lean/declarations/strict-sixth-threshold-has-at-most-five.md) | 65 | `result-track:e5e1407326b51de6cf17bda14db3fa89b40566a9c978ad873744b73cb71cad6d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

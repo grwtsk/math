@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Arc.lean/index.md) · [Full source](../../../../Combinatorics/Arc.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,29 +60,29 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ArcDirection](../../../../Combinatorics/Arc.lean/declarations/arcdirection.md) | 15 | `declaration-track:021d02fdc8ce19062ba99c51476fbbf434680199b78bff23a7f5871012861870` |
-| 2 | `def` | [ArcDirection.code](../../../../Combinatorics/Arc.lean/declarations/arcdirection-code.md) | 20 | `declaration-track:3885cd1850e07c06f1189a3e51c6595ce776ddc2ea6250ac9848218798bc404d` |
-| 3 | `theorem` | [ArcDirection.code_injective](../../../../Combinatorics/Arc.lean/declarations/arcdirection-code-injective.md) | 24 | `result-track:eeac0c05c2a2afc5090bec5e427c1cfb9af22de928f1c6a100d311a455b8d640` |
-| 4 | `instance` | [(anonymous)](../../../../Combinatorics/Arc.lean/declarations/instance-source-edition-3.md) | 30 | `declaration-track:4ecf8232761695ecaa671aed82ec4d0c39f1ec4435e9fe0b2ae122ce17827d28` |
-| 5 | `structure` | [Arc](../../../../Combinatorics/Arc.lean/declarations/arc.md) | 35 | `declaration-track:573101226fff594973771d297eb712dc2793e3aae6e4b9677e298e5a3e46ef02` |
-| 6 | `instance` | [(anonymous)](../../../../Combinatorics/Arc.lean/declarations/instance-source-edition-4.md) | 40 | `declaration-track:ef497108e2ea88f539cfee53f9f9a1f64e119cd26839dbf93ecc8e42d6ec2eb2` |
-| 7 | `def` | [directionCode](../../../../Combinatorics/Arc.lean/declarations/directioncode.md) | 59 | `declaration-track:80d72a32752606a6c07eddbf8f8b825606e2d20c0b932ff9961e449cae335717` |
-| 8 | `def` | [tail](../../../../Combinatorics/Arc.lean/declarations/tail.md) | 62 | `declaration-track:7571d2bc9c3ec1760dddc1fa42937c71fb38a2032d08996bcd43dfaacd571ee1` |
-| 9 | `def` | [head](../../../../Combinatorics/Arc.lean/declarations/head.md) | 69 | `declaration-track:f79767c4ac9b82b463c492b46c13694531ad313085fa0f411dda3e82957eef12` |
-| 10 | `def` | [reverse](../../../../Combinatorics/Arc.lean/declarations/reverse.md) | 76 | `declaration-track:e2a47ec4aebd9904d774f472c06601220dcfc1e49536bde0a92c8c2d938984cb` |
-| 11 | `theorem` | [reverse_reverse](../../../../Combinatorics/Arc.lean/declarations/reverse-reverse.md) | 86 | `result-track:fd844af4aba5e795f64cb4cbcba3db8492cdd86e7017b2ba11330a6590af6119` |
-| 12 | `theorem` | [reverse_involutive](../../../../Combinatorics/Arc.lean/declarations/reverse-involutive.md) | 94 | `result-track:f6329e897de61367068a940d02721ec0e22e96856bef972e09ec18dd819ef863` |
-| 13 | `theorem` | [tail_reverse](../../../../Combinatorics/Arc.lean/declarations/tail-reverse.md) | 100 | `result-track:c24cfa32e79e9326660754694b8d64d837099c52b8231a15608985958114a678` |
-| 14 | `theorem` | [reverse_tail](../../../../Combinatorics/Arc.lean/declarations/reverse-tail.md) | 108 | `result-track:ee23d5200c2790f0e29b3b8b5301b961b6084557d6573aa841cb213ae226e816` |
-| 15 | `theorem` | [head_reverse](../../../../Combinatorics/Arc.lean/declarations/head-reverse.md) | 115 | `result-track:328c0e287a048013e055a8adcfe99a14b6ef92a0003b04317567fa9d7c96f7e0` |
-| 16 | `theorem` | [reverse_head](../../../../Combinatorics/Arc.lean/declarations/reverse-head.md) | 123 | `result-track:22bc3945e5bb083e0104b7b66a99b489035478e0a517c6325a07367d1990c553` |
-| 17 | `def` | [canonicalKey](../../../../Combinatorics/Arc.lean/declarations/canonicalkey.md) | 129 | `declaration-track:d922b0a58e9966027b97214892ae88d11a4832d8ebc6fe499ea9ab5e4337a90d` |
-| 18 | `instance` | [(anonymous)](../../../../Combinatorics/Arc.lean/declarations/instance-source-edition-2.md) | 134 | `declaration-track:0b2579e48897d611fad14f5ecc14788f278cc6664705e7aa12c38d571c0e1296` |
-| 19 | `theorem` | [canonicalKey_injective](../../../../Combinatorics/Arc.lean/declarations/canonicalkey-injective.md) | 138 | `result-track:1086e7e847368b5348b31f126c167e9292cddf8d71f786ff954bbf332c5b033b` |
-| 20 | `def` | [canonicalLexKey](../../../../Combinatorics/Arc.lean/declarations/canonicallexkey.md) | 158 | `declaration-track:ccf4cee87b7c60ae88c5a94c345ebf3664089087e12798b4f09b81c4d9c53b8b` |
-| 21 | `theorem` | [canonicalLexKey_injective](../../../../Combinatorics/Arc.lean/declarations/canonicallexkey-injective.md) | 164 | `result-track:51dbe50cffb8d971f5395e3b176fde3a55d728b4e79741103b772e17d568ff20` |
-| 22 | `instance` | [(anonymous)](../../../../Combinatorics/Arc.lean/declarations/instance.md) | 171 | `declaration-track:09a459f99226ebab325c72b56b49f83ff955e0dcccfa03e007dc327616ba4697` |
-| 23 | `theorem` | [forward_ne_reverse](../../../../Combinatorics/Arc.lean/declarations/forward-ne-reverse.md) | 175 | `result-track:0d0d547ec95e0cb0c6859a619f0e76381e06ac1875b70165b8408c4d7a9435e4` |
+| 1 | `inductive` | [ArcDirection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/arcdirection.md) | 15 | `declaration-track:021d02fdc8ce19062ba99c51476fbbf434680199b78bff23a7f5871012861870` |
+| 2 | `def` | [ArcDirection.code](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/arcdirection-code.md) | 20 | `declaration-track:3885cd1850e07c06f1189a3e51c6595ce776ddc2ea6250ac9848218798bc404d` |
+| 3 | `theorem` | [ArcDirection.code_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/arcdirection-code-injective.md) | 24 | `result-track:eeac0c05c2a2afc5090bec5e427c1cfb9af22de928f1c6a100d311a455b8d640` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/instance-source-edition-3.md) | 30 | `declaration-track:4ecf8232761695ecaa671aed82ec4d0c39f1ec4435e9fe0b2ae122ce17827d28` |
+| 5 | `structure` | [Arc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/arc.md) | 35 | `declaration-track:573101226fff594973771d297eb712dc2793e3aae6e4b9677e298e5a3e46ef02` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/instance-source-edition-4.md) | 40 | `declaration-track:ef497108e2ea88f539cfee53f9f9a1f64e119cd26839dbf93ecc8e42d6ec2eb2` |
+| 7 | `def` | [directionCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/directioncode.md) | 59 | `declaration-track:80d72a32752606a6c07eddbf8f8b825606e2d20c0b932ff9961e449cae335717` |
+| 8 | `def` | [tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/tail.md) | 62 | `declaration-track:7571d2bc9c3ec1760dddc1fa42937c71fb38a2032d08996bcd43dfaacd571ee1` |
+| 9 | `def` | [head](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/head.md) | 69 | `declaration-track:f79767c4ac9b82b463c492b46c13694531ad313085fa0f411dda3e82957eef12` |
+| 10 | `def` | [reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/reverse.md) | 76 | `declaration-track:e2a47ec4aebd9904d774f472c06601220dcfc1e49536bde0a92c8c2d938984cb` |
+| 11 | `theorem` | [reverse_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/reverse-reverse.md) | 86 | `result-track:fd844af4aba5e795f64cb4cbcba3db8492cdd86e7017b2ba11330a6590af6119` |
+| 12 | `theorem` | [reverse_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/reverse-involutive.md) | 94 | `result-track:f6329e897de61367068a940d02721ec0e22e96856bef972e09ec18dd819ef863` |
+| 13 | `theorem` | [tail_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/tail-reverse.md) | 100 | `result-track:c24cfa32e79e9326660754694b8d64d837099c52b8231a15608985958114a678` |
+| 14 | `theorem` | [reverse_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/reverse-tail.md) | 108 | `result-track:ee23d5200c2790f0e29b3b8b5301b961b6084557d6573aa841cb213ae226e816` |
+| 15 | `theorem` | [head_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/head-reverse.md) | 115 | `result-track:328c0e287a048013e055a8adcfe99a14b6ef92a0003b04317567fa9d7c96f7e0` |
+| 16 | `theorem` | [reverse_head](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/reverse-head.md) | 123 | `result-track:22bc3945e5bb083e0104b7b66a99b489035478e0a517c6325a07367d1990c553` |
+| 17 | `def` | [canonicalKey](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/canonicalkey.md) | 129 | `declaration-track:d922b0a58e9966027b97214892ae88d11a4832d8ebc6fe499ea9ab5e4337a90d` |
+| 18 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/instance-source-edition-2.md) | 134 | `declaration-track:0b2579e48897d611fad14f5ecc14788f278cc6664705e7aa12c38d571c0e1296` |
+| 19 | `theorem` | [canonicalKey_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/canonicalkey-injective.md) | 138 | `result-track:1086e7e847368b5348b31f126c167e9292cddf8d71f786ff954bbf332c5b033b` |
+| 20 | `def` | [canonicalLexKey](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/canonicallexkey.md) | 158 | `declaration-track:ccf4cee87b7c60ae88c5a94c345ebf3664089087e12798b4f09b81c4d9c53b8b` |
+| 21 | `theorem` | [canonicalLexKey_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/canonicallexkey-injective.md) | 164 | `result-track:51dbe50cffb8d971f5395e3b176fde3a55d728b4e79741103b772e17d568ff20` |
+| 22 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/instance.md) | 171 | `declaration-track:09a459f99226ebab325c72b56b49f83ff955e0dcccfa03e007dc327616ba4697` |
+| 23 | `theorem` | [forward_ne_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Arc.lean/declarations/forward-ne-reverse.md) | 175 | `result-track:0d0d547ec95e0cb0c6859a619f0e76381e06ac1875b70165b8408c4d7a9435e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesEdition1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `axiom` | [test_sorry](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesEdition1.lean/declarations/test-sorry.md) | 4 | `declaration-track:4b578bf3feca7583da8969d0c671f55f57971e6ba241441e166acd5a720f81db` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesEdition1.lean/declarations/example-source-edition-2.md) | 5 | `declaration-track:727be657cf8f4a6967d43fad1eec934b4f18d7005ececfba5c32eb857fbfe9bb` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesEdition1.lean/declarations/example-source-edition-3.md) | 15 | `declaration-track:c0bb33cccbba68d39b0ab3de86ec41990a0cb2ce5ae4909184f6525802f96945` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesEdition1.lean/declarations/example-source-edition-4.md) | 25 | `declaration-track:decb8f0817913d7132872d2b14dd56385b030362878fd1b002a61b95e51d6ab6` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesEdition1.lean/declarations/example.md) | 35 | `declaration-track:294d525f0125260edce4ff3ac2f0b5ea56a48c715b9720f898aff00e63050fe1` |
+| 1 | `axiom` | [test_sorry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesEdition1.lean/declarations/test-sorry.md) | 4 | `declaration-track:4b578bf3feca7583da8969d0c671f55f57971e6ba241441e166acd5a720f81db` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesEdition1.lean/declarations/example-source-edition-2.md) | 5 | `declaration-track:727be657cf8f4a6967d43fad1eec934b4f18d7005ececfba5c32eb857fbfe9bb` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesEdition1.lean/declarations/example-source-edition-3.md) | 15 | `declaration-track:c0bb33cccbba68d39b0ab3de86ec41990a0cb2ce5ae4909184f6525802f96945` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesEdition1.lean/declarations/example-source-edition-4.md) | 25 | `declaration-track:decb8f0817913d7132872d2b14dd56385b030362878fd1b002a61b95e51d6ab6` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesEdition1.lean/declarations/example.md) | 35 | `declaration-track:294d525f0125260edce4ff3ac2f0b5ea56a48c715b9720f898aff00e63050fe1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileNamespacedMathlibTestOptions.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileNamespacedMathlibTestOptions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileNamespacedMathlibTestOptions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileNamespacedMathlibTestOptions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [mathlibOnlyLinters](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileNamespacedMathlibTestOptions.lean/declarations/mathlibonlylinters.md) | 36 | `declaration-track:b6ae8c019aeabb4fa222da9bc34b38627b079cd08d39782827cc163774f55e08` |
-| 2 | `abbrev` | [mathlibLeanOptions](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileNamespacedMathlibTestOptions.lean/declarations/mathlibleanoptions.md) | 51 | `declaration-track:0f440e1148b4e9485c434db54f0daa700f52997357fd4f45390edbab3daadea1` |
-| 3 | `abbrev` | [mathlibTestOptions](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileNamespacedMathlibTestOptions.lean/declarations/mathlibtestoptions.md) | 61 | `declaration-track:85ff901267b97f8774a55d71c112f7b021667d60c317c271763c6301e01c70cc` |
+| 1 | `abbrev` | [mathlibOnlyLinters](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileNamespacedMathlibTestOptions.lean/declarations/mathlibonlylinters.md) | 36 | `declaration-track:b6ae8c019aeabb4fa222da9bc34b38627b079cd08d39782827cc163774f55e08` |
+| 2 | `abbrev` | [mathlibLeanOptions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileNamespacedMathlibTestOptions.lean/declarations/mathlibleanoptions.md) | 51 | `declaration-track:0f440e1148b4e9485c434db54f0daa700f52997357fd4f45390edbab3daadea1` |
+| 3 | `abbrev` | [mathlibTestOptions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileNamespacedMathlibTestOptions.lean/declarations/mathlibtestoptions.md) | 61 | `declaration-track:85ff901267b97f8774a55d71c112f7b021667d60c317c271763c6301e01c70cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

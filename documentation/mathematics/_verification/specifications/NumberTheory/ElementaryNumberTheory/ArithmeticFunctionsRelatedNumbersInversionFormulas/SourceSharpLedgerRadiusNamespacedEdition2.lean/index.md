@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpLedgerRadiusNamespacedEdition2.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpLedgerRadiusNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpLedgerRadiusNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpLedgerRadiusNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sharpDiagonalCost_antitone](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpLedgerRadiusNamespacedEdition2.lean/declarations/sharpdiagonalcost-antitone.md) | 25 | `result-track:0d900936b4e09e766336029e25fdef7c9587c7f1c49c34b429b96e3c5394f10b` |
-| 2 | `theorem` | [sharpSamplingLedgerCost_antitone](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpLedgerRadiusNamespacedEdition2.lean/declarations/sharpsamplingledgercost-antitone.md) | 57 | `result-track:e8c03b1dec244b5f51a74c6d4209a534ef3e03c0d779fc7f360f5a1a18ff08fb` |
-| 3 | `theorem` | [sharpSamplingLedgerCost_lt_1729](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpLedgerRadiusNamespacedEdition2.lean/declarations/sharpsamplingledgercost-lt-1729.md) | 75 | `result-track:ba02ae3383e1ca4f55c7cde594278c79e00f6a5a12925dff4202be7c05433dc6` |
-| 4 | `theorem` | [all_real_lower_with_fixed_ledger_cap](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpLedgerRadiusNamespacedEdition2.lean/declarations/all-real-lower-with-fixed-ledger-cap.md) | 81 | `result-track:4d5485c53addae62cd56d715ad8a6855b275093c82e7c7a713bba3286bf74571` |
+| 1 | `theorem` | [sharpDiagonalCost_antitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpLedgerRadiusNamespacedEdition2.lean/declarations/sharpdiagonalcost-antitone.md) | 25 | `result-track:0d900936b4e09e766336029e25fdef7c9587c7f1c49c34b429b96e3c5394f10b` |
+| 2 | `theorem` | [sharpSamplingLedgerCost_antitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpLedgerRadiusNamespacedEdition2.lean/declarations/sharpsamplingledgercost-antitone.md) | 57 | `result-track:e8c03b1dec244b5f51a74c6d4209a534ef3e03c0d779fc7f360f5a1a18ff08fb` |
+| 3 | `theorem` | [sharpSamplingLedgerCost_lt_1729](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpLedgerRadiusNamespacedEdition2.lean/declarations/sharpsamplingledgercost-lt-1729.md) | 75 | `result-track:ba02ae3383e1ca4f55c7cde594278c79e00f6a5a12925dff4202be7c05433dc6` |
+| 4 | `theorem` | [all_real_lower_with_fixed_ledger_cap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpLedgerRadiusNamespacedEdition2.lean/declarations/all-real-lower-with-fixed-ledger-cap.md) | 81 | `result-track:4d5485c53addae62cd56d715ad8a6855b275093c82e7c7a713bba3286bf74571` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

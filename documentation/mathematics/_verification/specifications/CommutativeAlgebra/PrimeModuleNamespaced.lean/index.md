@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PrimeModuleNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PrimeModuleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeModuleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeModuleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [LocalizedModule.subsingleton_iff_disjoint](../../../../CommutativeAlgebra/PrimeModuleNamespaced.lean/declarations/localizedmodule-subsingleton-iff-disjoint.md) | 38 | `result-track:34c4264e51c658ac5c32e8b4183289296add7548ba868327a36b13c598d58ace` |
-| 2 | `lemma` | [Module.stableUnderSpecialization_support](../../../../CommutativeAlgebra/PrimeModuleNamespaced.lean/declarations/module-stableunderspecialization-support.md) | 44 | `result-track:3f842264195e7ab8b2db68be68c7865c3085286197a494afc5e4220fb443aac2` |
-| 3 | `lemma` | [Module.isClosed_support](../../../../CommutativeAlgebra/PrimeModuleNamespaced.lean/declarations/module-isclosed-support.md) | 51 | `result-track:286891beead3b97a17ba6670cfe36527254732264d990d68e8bfea9cbffeb0e8` |
-| 4 | `lemma` | [Module.support_subset_preimage_comap](../../../../CommutativeAlgebra/PrimeModuleNamespaced.lean/declarations/module-support-subset-preimage-comap.md) | 56 | `result-track:bfc57b60832d28c33b38541cbbb7e09e216034c05f0547fc5ca1e1fdb7f66868` |
+| 1 | `lemma` | [LocalizedModule.subsingleton_iff_disjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeModuleNamespaced.lean/declarations/localizedmodule-subsingleton-iff-disjoint.md) | 38 | `result-track:34c4264e51c658ac5c32e8b4183289296add7548ba868327a36b13c598d58ace` |
+| 2 | `lemma` | [Module.stableUnderSpecialization_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeModuleNamespaced.lean/declarations/module-stableunderspecialization-support.md) | 44 | `result-track:3f842264195e7ab8b2db68be68c7865c3085286197a494afc5e4220fb443aac2` |
+| 3 | `lemma` | [Module.isClosed_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeModuleNamespaced.lean/declarations/module-isclosed-support.md) | 51 | `result-track:286891beead3b97a17ba6670cfe36527254732264d990d68e8bfea9cbffeb0e8` |
+| 4 | `lemma` | [Module.support_subset_preimage_comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeModuleNamespaced.lean/declarations/module-support-subset-preimage-comap.md) | 56 | `result-track:bfc57b60832d28c33b38541cbbb7e09e216034c05f0547fc5ca1e1fdb7f66868` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

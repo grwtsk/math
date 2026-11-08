@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualTiltL2State.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualTiltL2State.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltL2State.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltL2State.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualUnitTilt_memLp](../../../../MeasureAndIntegration/SourceActualTiltL2State.lean/declarations/actualunittilt-memlp.md) | 19 | `result-track:6f2e210a4c24881e1ecbaaf3c719f3c517619ae1dd3d2422f98b75ea89984046` |
-| 2 | `def` | [actualUnitTiltState](../../../../MeasureAndIntegration/SourceActualTiltL2State.lean/declarations/actualunittiltstate.md) | 30 | `declaration-track:dbe21f5a76c07a81ffa3967592f8ac3aeeeef05265c0f71d41ebe55fbe3117a8` |
-| 3 | `theorem` | [actualUnitTiltState_coe_ae](../../../../MeasureAndIntegration/SourceActualTiltL2State.lean/declarations/actualunittiltstate-coe-ae.md) | 35 | `result-track:391101669ef32fb18988ca0f78a851ccf23df3ce6ff3c8fdc634638a7ba31d80` |
-| 4 | `theorem` | [actualUnitTiltState_norm_sq](../../../../MeasureAndIntegration/SourceActualTiltL2State.lean/declarations/actualunittiltstate-norm-sq.md) | 41 | `result-track:eee40ddfec2bf40904d5d5ce4473f3f27407d47cdb467885521b0f7e344a8b40` |
-| 5 | `theorem` | [actualUnitTiltState_norm_sq_tendsto_atTop](../../../../MeasureAndIntegration/SourceActualTiltL2State.lean/declarations/actualunittiltstate-norm-sq-tendsto-attop.md) | 57 | `result-track:0e42fbbf2e5b878405ec426ad8288315608789ea77a589a00f812dca91dac991` |
+| 1 | `theorem` | [actualUnitTilt_memLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltL2State.lean/declarations/actualunittilt-memlp.md) | 19 | `result-track:6f2e210a4c24881e1ecbaaf3c719f3c517619ae1dd3d2422f98b75ea89984046` |
+| 2 | `def` | [actualUnitTiltState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltL2State.lean/declarations/actualunittiltstate.md) | 30 | `declaration-track:dbe21f5a76c07a81ffa3967592f8ac3aeeeef05265c0f71d41ebe55fbe3117a8` |
+| 3 | `theorem` | [actualUnitTiltState_coe_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltL2State.lean/declarations/actualunittiltstate-coe-ae.md) | 35 | `result-track:391101669ef32fb18988ca0f78a851ccf23df3ce6ff3c8fdc634638a7ba31d80` |
+| 4 | `theorem` | [actualUnitTiltState_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltL2State.lean/declarations/actualunittiltstate-norm-sq.md) | 41 | `result-track:eee40ddfec2bf40904d5d5ce4473f3f27407d47cdb467885521b0f7e344a8b40` |
+| 5 | `theorem` | [actualUnitTiltState_norm_sq_tendsto_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltL2State.lean/declarations/actualunittiltstate-norm-sq-tendsto-attop.md) | 57 | `result-track:0e42fbbf2e5b878405ec426ad8288315608789ea77a589a00f812dca91dac991` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

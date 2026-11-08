@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/RhEstimateVaughanTranslationGate.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/RhEstimateVaughanTranslationGate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RhEstimateVaughanTranslationGate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RhEstimateVaughanTranslationGate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/RhEstimateVaughanTranslationGate.lean/declarations/example.md) | 10 | `declaration-track:18022e51b594e4d6ab74769a2102ef2e7efad6b3dec2c01e43069a34432e8fce` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/RhEstimateVaughanTranslationGate.lean/declarations/example-source-edition-3.md) | 16 | `declaration-track:5829c77e3704665235e1b3cb47c932756b108b2cbb85c3181a58ac3e0fcf42bf` |
-| 3 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/RhEstimateVaughanTranslationGate.lean/declarations/example-source-edition-5.md) | 22 | `declaration-track:beb7923512628cd00caba0392e917af0716125c2269199763dde8af7f450b101` |
-| 4 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/RhEstimateVaughanTranslationGate.lean/declarations/example-source-edition-4.md) | 26 | `declaration-track:a3d9c2a1b751011cc021788b24f967fa2aad4267524c3755a53444dd0a6ade73` |
-| 5 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/RhEstimateVaughanTranslationGate.lean/declarations/example-source-edition-2.md) | 30 | `declaration-track:43323502b384c691878ad3cf9700e96d8b24099abe51c01330c5a1a5f0c3c341` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RhEstimateVaughanTranslationGate.lean/declarations/example.md) | 10 | `declaration-track:18022e51b594e4d6ab74769a2102ef2e7efad6b3dec2c01e43069a34432e8fce` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RhEstimateVaughanTranslationGate.lean/declarations/example-source-edition-3.md) | 16 | `declaration-track:5829c77e3704665235e1b3cb47c932756b108b2cbb85c3181a58ac3e0fcf42bf` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RhEstimateVaughanTranslationGate.lean/declarations/example-source-edition-5.md) | 22 | `declaration-track:beb7923512628cd00caba0392e917af0716125c2269199763dde8af7f450b101` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RhEstimateVaughanTranslationGate.lean/declarations/example-source-edition-4.md) | 26 | `declaration-track:a3d9c2a1b751011cc021788b24f967fa2aad4267524c3755a53444dd0a6ade73` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RhEstimateVaughanTranslationGate.lean/declarations/example-source-edition-2.md) | 30 | `declaration-track:43323502b384c691878ad3cf9700e96d8b24099abe51c01330c5a1a5f0c3c341` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

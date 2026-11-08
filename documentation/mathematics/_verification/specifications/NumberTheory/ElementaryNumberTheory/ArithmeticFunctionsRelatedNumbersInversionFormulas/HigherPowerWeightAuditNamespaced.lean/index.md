@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/HigherPowerWeightAuditNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/HigherPowerWeightAuditNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/HigherPowerWeightAuditNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/HigherPowerWeightAuditNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sqrt_nat_power](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/HigherPowerWeightAuditNamespaced.lean/declarations/sqrt-nat-power.md) | 19 | `result-track:91404b552696780239d42f95c285e69f32865c31dbad97f264729991df1443d2` |
-| 2 | `theorem` | [higher_prime_power_weight](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/HigherPowerWeightAuditNamespaced.lean/declarations/higher-prime-power-weight.md) | 26 | `result-track:3af1af3b771f58ca4f46a8f01726daf614d16c617b0231b98b9accbfffdeaf0b` |
-| 3 | `theorem` | [higher_prime_power_summand](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/HigherPowerWeightAuditNamespaced.lean/declarations/higher-prime-power-summand.md) | 33 | `result-track:ab5158237fba626f7a275d0895ed00ad8771cb12305f7b50e5a16bec7a735b9c` |
+| 1 | `theorem` | [sqrt_nat_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/HigherPowerWeightAuditNamespaced.lean/declarations/sqrt-nat-power.md) | 19 | `result-track:91404b552696780239d42f95c285e69f32865c31dbad97f264729991df1443d2` |
+| 2 | `theorem` | [higher_prime_power_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/HigherPowerWeightAuditNamespaced.lean/declarations/higher-prime-power-weight.md) | 26 | `result-track:3af1af3b771f58ca4f46a8f01726daf614d16c617b0231b98b9accbfffdeaf0b` |
+| 3 | `theorem` | [higher_prime_power_summand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/HigherPowerWeightAuditNamespaced.lean/declarations/higher-prime-power-summand.md) | 33 | `result-track:ab5158237fba626f7a275d0895ed00ad8771cb12305f7b50e5a16bec7a735b9c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

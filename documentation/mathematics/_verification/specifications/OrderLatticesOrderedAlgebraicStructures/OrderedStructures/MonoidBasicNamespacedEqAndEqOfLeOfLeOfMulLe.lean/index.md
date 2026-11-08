@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespacedEqAndEqOfLeOfLeOfMulLe.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespacedEqAndEqOfLeOfLeOfMulLe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespacedEqAndEqOfLeOfLeOfMulLe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespacedEqAndEqOfLeOfLeOfMulLe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Function.Injective.orderedCommMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespacedEqAndEqOfLeOfLeOfMulLe.lean/declarations/function-injective-orderedcommmonoid.md) | 36 | `declaration-track:342ce1ad86657f9f0212ba20d585d6ef30219a52410500ce98e5eb4b74a4a145` |
-| 2 | `def` | [Function.Injective.linearOrderedCommMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespacedEqAndEqOfLeOfLeOfMulLe.lean/declarations/function-injective-linearorderedcommmonoid.md) | 53 | `declaration-track:81a33ce8aa40399a3093926142ac1a1614728cd1ca876f31c54e685c2745cb9b` |
-| 3 | `def` | [OrderEmbedding.mulLeft](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespacedEqAndEqOfLeOfLeOfMulLe.lean/declarations/orderembedding-mulleft.md) | 68 | `declaration-track:2da19af7247a92ab0b384989122b8a4c2f052ef4ea37095aa63464498a2df2aa` |
-| 4 | `def` | [OrderEmbedding.mulRight](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespacedEqAndEqOfLeOfLeOfMulLe.lean/declarations/orderembedding-mulright.md) | 81 | `declaration-track:2f9b4fe97fcb94d8232e5b1782954480f1d0202b7bf74eec29c9fec5a9defb05` |
-| 5 | `theorem` | [eq_and_eq_of_le_of_le_of_mul_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespacedEqAndEqOfLeOfLeOfMulLe.lean/declarations/eq-and-eq-of-le-of-le-of-mul-le.md) | 90 | `result-track:3dc787b38e695c84ffbab2a5c7885865c20d6e5fa08b628f93ead38bdf57035d` |
+| 1 | `def` | [Function.Injective.orderedCommMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespacedEqAndEqOfLeOfLeOfMulLe.lean/declarations/function-injective-orderedcommmonoid.md) | 36 | `declaration-track:342ce1ad86657f9f0212ba20d585d6ef30219a52410500ce98e5eb4b74a4a145` |
+| 2 | `def` | [Function.Injective.linearOrderedCommMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespacedEqAndEqOfLeOfLeOfMulLe.lean/declarations/function-injective-linearorderedcommmonoid.md) | 53 | `declaration-track:81a33ce8aa40399a3093926142ac1a1614728cd1ca876f31c54e685c2745cb9b` |
+| 3 | `def` | [OrderEmbedding.mulLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespacedEqAndEqOfLeOfLeOfMulLe.lean/declarations/orderembedding-mulleft.md) | 68 | `declaration-track:2da19af7247a92ab0b384989122b8a4c2f052ef4ea37095aa63464498a2df2aa` |
+| 4 | `def` | [OrderEmbedding.mulRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespacedEqAndEqOfLeOfLeOfMulLe.lean/declarations/orderembedding-mulright.md) | 81 | `declaration-track:2f9b4fe97fcb94d8232e5b1782954480f1d0202b7bf74eec29c9fec5a9defb05` |
+| 5 | `theorem` | [eq_and_eq_of_le_of_le_of_mul_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespacedEqAndEqOfLeOfLeOfMulLe.lean/declarations/eq-and-eq-of-le-of-le-of-mul-le.md) | 90 | `result-track:3dc787b38e695c84ffbab2a5c7885865c20d6e5fa08b628f93ead38bdf57035d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/TwoValuedNamespacedPublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/TwoValuedNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TwoValuedNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TwoValuedNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [integral_of_ae_eq_zero_or_one](../../../../ProbabilityTheoryAndStochasticProcesses/TwoValuedNamespacedPublic.lean/declarations/integral-of-ae-eq-zero-or-one.md) | 36 | `result-track:adeb3754b927ce171658db3dcc3452efd355b64ffb86668f17f03997896fd42b` |
-| 2 | `lemma` | [integral_one_sub_of_ae_eq_zero_or_one](../../../../ProbabilityTheoryAndStochasticProcesses/TwoValuedNamespacedPublic.lean/declarations/integral-one-sub-of-ae-eq-zero-or-one.md) | 48 | `result-track:62a94ea76ba96df03e6639b0f6124ba926ba7b14c22dd0c73e35ad46990044f4` |
-| 3 | `lemma` | [condVar_of_ae_eq_zero_or_one](../../../../ProbabilityTheoryAndStochasticProcesses/TwoValuedNamespacedPublic.lean/declarations/condvar-of-ae-eq-zero-or-one.md) | 64 | `result-track:a1271c4afd072215bc6876f6953f946a2369ef9ff04ccb6b47c04d78943ff892` |
-| 4 | `lemma` | [variance_of_ae_eq_zero_or_one](../../../../ProbabilityTheoryAndStochasticProcesses/TwoValuedNamespacedPublic.lean/declarations/variance-of-ae-eq-zero-or-one.md) | 100 | `result-track:f39de2027261946f2a42bb35c454c27219fe3e9d2955edbe9916f8b9b6995640` |
+| 1 | `lemma` | [integral_of_ae_eq_zero_or_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TwoValuedNamespacedPublic.lean/declarations/integral-of-ae-eq-zero-or-one.md) | 36 | `result-track:adeb3754b927ce171658db3dcc3452efd355b64ffb86668f17f03997896fd42b` |
+| 2 | `lemma` | [integral_one_sub_of_ae_eq_zero_or_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TwoValuedNamespacedPublic.lean/declarations/integral-one-sub-of-ae-eq-zero-or-one.md) | 48 | `result-track:62a94ea76ba96df03e6639b0f6124ba926ba7b14c22dd0c73e35ad46990044f4` |
+| 3 | `lemma` | [condVar_of_ae_eq_zero_or_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TwoValuedNamespacedPublic.lean/declarations/condvar-of-ae-eq-zero-or-one.md) | 64 | `result-track:a1271c4afd072215bc6876f6953f946a2369ef9ff04ccb6b47c04d78943ff892` |
+| 4 | `lemma` | [variance_of_ae_eq_zero_or_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TwoValuedNamespacedPublic.lean/declarations/variance-of-ae-eq-zero-or-one.md) | 100 | `result-track:f39de2027261946f2a42bb35c454c27219fe3e9d2955edbe9916f8b9b6995640` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteComparison.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteComparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteComparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteComparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.OrientedRealLine.PositiveScale`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveScale.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.OrientedRealLine.PositiveScale`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveScale.lean/index.md) — import line 10; pinned internal source present.
 - `Mathlib.Algebra.BigOperators.Ring.Finset` — import line 11; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.Ring` — import line 12; external provider; requires a separately pinned dependency.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteComparisonRepair](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteComparison.lean/declarations/finitecomparisonrepair.md) | 25 | `declaration-track:7e236883d7964bc2d817045f0ad4f04c6dc46f61b506dba2e2e5607823604772` |
-| 2 | `theorem` | [weighted_bound](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteComparison.lean/declarations/weighted-bound.md) | 44 | `result-track:103e3dc1d2b90caf72c643935d0c61a098b99d3b18d033681175cded389877a7` |
-| 3 | `theorem` | [weighted_degree_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteComparison.lean/declarations/weighted-degree-le.md) | 91 | `result-track:8fc9615ab0de286e7d1812f860f10624195097ba5c3d55d8730c13122d79766f` |
+| 1 | `structure` | [FiniteComparisonRepair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteComparison.lean/declarations/finitecomparisonrepair.md) | 25 | `declaration-track:7e236883d7964bc2d817045f0ad4f04c6dc46f61b506dba2e2e5607823604772` |
+| 2 | `theorem` | [weighted_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteComparison.lean/declarations/weighted-bound.md) | 44 | `result-track:103e3dc1d2b90caf72c643935d0c61a098b99d3b18d033681175cded389877a7` |
+| 3 | `theorem` | [weighted_degree_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteComparison.lean/declarations/weighted-degree-le.md) | 91 | `result-track:8fc9615ab0de286e7d1812f860f10624195097ba5c3d55d8730c13122d79766f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

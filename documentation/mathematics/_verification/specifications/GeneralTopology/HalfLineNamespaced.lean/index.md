@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/HalfLineNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/HalfLineNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HalfLineNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HalfLineNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,19 +60,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ℝ≥0](../../../../GeneralTopology/HalfLineNamespaced.lean/declarations/0.md) | 29 | `declaration-track:9d782db8723308fe97827c2039c86a7c0b37a1c83e64d64ce6210eda59481554` |
-| 2 | `abbrev` | [μ₊](../../../../GeneralTopology/HalfLineNamespaced.lean/declarations/anonymous.md) | 32 | `declaration-track:3c21c0a414600e7196878b0deb4b45fb6f66f992af6daa57e576f2d6324f24df` |
-| 3 | `abbrev` | [L²](../../../../GeneralTopology/HalfLineNamespaced.lean/declarations/l.md) | 35 | `declaration-track:35c5b7faa9f44b7f11c67844fcedeabd38fd61f09f74f6734520674bf42bb33c` |
-| 4 | `def` | [C∞₀_D](../../../../GeneralTopology/HalfLineNamespaced.lean/declarations/c-d.md) | 43 | `declaration-track:73409fc4ac31a8d2a019ba8ecddbd9d119a0b91fa1aecea784514e3365a6e447` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/HalfLineNamespaced.lean/declarations/instance-source-edition-2.md) | 47 | `declaration-track:e4fc94bf28d6d4bf1aa9a09451679f9f7e7c7a3e8b23ca3eab8ec6b61c39e606` |
-| 6 | `instance` | [(anonymous)](../../../../GeneralTopology/HalfLineNamespaced.lean/declarations/instance.md) | 48 | `declaration-track:a8941a41f07ca3fb37bb5fc93ad5af8e0778218ca4fef3ce3bae97454e669087` |
-| 7 | `def` | [η](../../../../GeneralTopology/HalfLineNamespaced.lean/declarations/anonymous-source-edition-2.md) | 53 | `declaration-track:5450e9cc63aaef3fb029aebd10d63aaf2f7028c3876a84f38bdfac8f6bb242e9` |
-| 8 | `lemma` | [η_at_zero](../../../../GeneralTopology/HalfLineNamespaced.lean/declarations/at-zero.md) | 72 | `result-track:5a671fec203653ba753872834809a835655fc94be01d471eeebeffe0c28c10e6` |
-| 9 | `lemma` | [dense_L2_halfLine](../../../../GeneralTopology/HalfLineNamespaced.lean/declarations/dense-l2-halfline.md) | 76 | `result-track:e3fdbbe9ef09ba0d01cb3810ee0e175b47e28fbba0b2b942f37fd2160f58fd70` |
-| 10 | `lemma` | [mem_H1](../../../../GeneralTopology/HalfLineNamespaced.lean/declarations/mem-h1.md) | 95 | `result-track:eed33159475a6e5e35de81fbff28771a19b42c3895eaf57af9117366ece7e36c` |
-| 11 | `lemma` | [dirichletBC_zero](../../../../GeneralTopology/HalfLineNamespaced.lean/declarations/dirichletbc-zero.md) | 98 | `result-track:a4317a2c2a3891323c747655ea1a632ff1a37a65db2d2ed0ac6247a50d83ec3e` |
-| 12 | `lemma` | [V_mul_L2](../../../../GeneralTopology/HalfLineNamespaced.lean/declarations/v-mul-l2.md) | 106 | `result-track:82a0739789564ef338f8036dc8d4c6766ee8a81571e1124b45c645a69b48ed0a` |
-| 13 | `lemma` | [DirichletDomain_dense](../../../../GeneralTopology/HalfLineNamespaced.lean/declarations/dirichletdomain-dense.md) | 133 | `result-track:9e4c1e6f8a236a6ef8ea4472c5614322b26d4ff3549dee97b1a96427d491b7d3` |
+| 1 | `abbrev` | [ℝ≥0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HalfLineNamespaced.lean/declarations/0.md) | 29 | `declaration-track:9d782db8723308fe97827c2039c86a7c0b37a1c83e64d64ce6210eda59481554` |
+| 2 | `abbrev` | [μ₊](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HalfLineNamespaced.lean/declarations/anonymous.md) | 32 | `declaration-track:3c21c0a414600e7196878b0deb4b45fb6f66f992af6daa57e576f2d6324f24df` |
+| 3 | `abbrev` | [L²](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HalfLineNamespaced.lean/declarations/l.md) | 35 | `declaration-track:35c5b7faa9f44b7f11c67844fcedeabd38fd61f09f74f6734520674bf42bb33c` |
+| 4 | `def` | [C∞₀_D](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HalfLineNamespaced.lean/declarations/c-d.md) | 43 | `declaration-track:73409fc4ac31a8d2a019ba8ecddbd9d119a0b91fa1aecea784514e3365a6e447` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HalfLineNamespaced.lean/declarations/instance-source-edition-2.md) | 47 | `declaration-track:e4fc94bf28d6d4bf1aa9a09451679f9f7e7c7a3e8b23ca3eab8ec6b61c39e606` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HalfLineNamespaced.lean/declarations/instance.md) | 48 | `declaration-track:a8941a41f07ca3fb37bb5fc93ad5af8e0778218ca4fef3ce3bae97454e669087` |
+| 7 | `def` | [η](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HalfLineNamespaced.lean/declarations/anonymous-source-edition-2.md) | 53 | `declaration-track:5450e9cc63aaef3fb029aebd10d63aaf2f7028c3876a84f38bdfac8f6bb242e9` |
+| 8 | `lemma` | [η_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HalfLineNamespaced.lean/declarations/at-zero.md) | 72 | `result-track:5a671fec203653ba753872834809a835655fc94be01d471eeebeffe0c28c10e6` |
+| 9 | `lemma` | [dense_L2_halfLine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HalfLineNamespaced.lean/declarations/dense-l2-halfline.md) | 76 | `result-track:e3fdbbe9ef09ba0d01cb3810ee0e175b47e28fbba0b2b942f37fd2160f58fd70` |
+| 10 | `lemma` | [mem_H1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HalfLineNamespaced.lean/declarations/mem-h1.md) | 95 | `result-track:eed33159475a6e5e35de81fbff28771a19b42c3895eaf57af9117366ece7e36c` |
+| 11 | `lemma` | [dirichletBC_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HalfLineNamespaced.lean/declarations/dirichletbc-zero.md) | 98 | `result-track:a4317a2c2a3891323c747655ea1a632ff1a37a65db2d2ed0ac6247a50d83ec3e` |
+| 12 | `lemma` | [V_mul_L2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HalfLineNamespaced.lean/declarations/v-mul-l2.md) | 106 | `result-track:82a0739789564ef338f8036dc8d4c6766ee8a81571e1124b45c645a69b48ed0a` |
+| 13 | `lemma` | [DirichletDomain_dense](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HalfLineNamespaced.lean/declarations/dirichletdomain-dense.md) | 133 | `result-track:9e4c1e6f8a236a6ef8ea4472c5614322b26d4ff3549dee97b1a96427d491b7d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

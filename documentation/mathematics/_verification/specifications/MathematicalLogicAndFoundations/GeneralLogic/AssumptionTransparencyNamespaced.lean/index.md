@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssumptionTransparencyNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssumptionTransparencyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssumptionTransparencyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssumptionTransparencyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [T](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssumptionTransparencyNamespaced.lean/declarations/t.md) | 20 | `declaration-track:9494ae33f9fdc2d29714c18d5ac7c78ac84bdc336910d4ed62b8a2548adadd14` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssumptionTransparencyNamespaced.lean/declarations/example-source-edition-4.md) | 26 | `declaration-track:f67efa88af86debe5c7d69fee5ed664bcc619331d021676c31143d3e17462350` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssumptionTransparencyNamespaced.lean/declarations/example-source-edition-3.md) | 34 | `declaration-track:792135ccd24fbedeee29ebe21b94eb41a68ecc93fb5e714e294c9a5a4ee540a7` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssumptionTransparencyNamespaced.lean/declarations/example-source-edition-2.md) | 38 | `declaration-track:47db3d379dd36fccfff2a799f661f47ca75b5bb3503617e9306c41aff80eec74` |
-| 5 | `def` | [U](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssumptionTransparencyNamespaced.lean/declarations/u.md) | 41 | `declaration-track:719d886057d540411f79cff0e4f2c7154608608cb68c9267a059570c0d3506f4` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssumptionTransparencyNamespaced.lean/declarations/example.md) | 47 | `declaration-track:45decd895edf4425b0d8b9643dcdcfb64e526b2f8e231874eb0488b1de7289e7` |
-| 7 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssumptionTransparencyNamespaced.lean/declarations/example-source-edition-5.md) | 50 | `declaration-track:fabbf681d5bffb36280a64c8ea92eddb9526f309e61b3f04660ad3374979e324` |
+| 1 | `def` | [T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssumptionTransparencyNamespaced.lean/declarations/t.md) | 20 | `declaration-track:9494ae33f9fdc2d29714c18d5ac7c78ac84bdc336910d4ed62b8a2548adadd14` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssumptionTransparencyNamespaced.lean/declarations/example-source-edition-4.md) | 26 | `declaration-track:f67efa88af86debe5c7d69fee5ed664bcc619331d021676c31143d3e17462350` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssumptionTransparencyNamespaced.lean/declarations/example-source-edition-3.md) | 34 | `declaration-track:792135ccd24fbedeee29ebe21b94eb41a68ecc93fb5e714e294c9a5a4ee540a7` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssumptionTransparencyNamespaced.lean/declarations/example-source-edition-2.md) | 38 | `declaration-track:47db3d379dd36fccfff2a799f661f47ca75b5bb3503617e9306c41aff80eec74` |
+| 5 | `def` | [U](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssumptionTransparencyNamespaced.lean/declarations/u.md) | 41 | `declaration-track:719d886057d540411f79cff0e4f2c7154608608cb68c9267a059570c0d3506f4` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssumptionTransparencyNamespaced.lean/declarations/example.md) | 47 | `declaration-track:45decd895edf4425b0d8b9643dcdcfb64e526b2f8e231874eb0488b1de7289e7` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssumptionTransparencyNamespaced.lean/declarations/example-source-edition-5.md) | 50 | `declaration-track:fabbf681d5bffb36280a64c8ea92eddb9526f309e61b3f04660ad3374979e324` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

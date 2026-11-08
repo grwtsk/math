@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/AffineMapDefsPublic.lean/index.md) · [Full source](../../../../Geometry/AffineMapDefsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineMapDefsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineMapDefsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IsAffineMap.iConvexComb](../../../../Geometry/AffineMapDefsPublic.lean/declarations/isaffinemap-iconvexcomb.md) | 29 | `result-track:2b0bacc3952c5c3005a2892426b719aa8a0620dd7888acbcd856315376896c47` |
-| 2 | `instance` | [instConvexSpace](../../../../Geometry/AffineMapDefsPublic.lean/declarations/instconvexspace.md) | 38 | `declaration-track:8131945b483ed0231a10967321e8aec51f2e2ffde77347d445d939ebbac86642` |
-| 3 | `lemma` | [sConvexComb_apply](../../../../Geometry/AffineMapDefsPublic.lean/declarations/sconvexcomb-apply.md) | 44 | `result-track:287d05ab95e6c0d24f1d423d73b364622d79ac3067fbcf967063bead02292dfb` |
-| 4 | `lemma` | [isAffineMap_eval](../../../../Geometry/AffineMapDefsPublic.lean/declarations/isaffinemap-eval.md) | 49 | `result-track:9833e275af64c4e5276917b71f57463663569135909023de38b72c351823eee1` |
-| 5 | `lemma` | [iConvexComb_apply](../../../../Geometry/AffineMapDefsPublic.lean/declarations/iconvexcomb-apply.md) | 53 | `result-track:a313d011763f8fe0633af78083bd6ef3e1822442aa51014380fe5943b5db3864` |
-| 6 | `lemma` | [convexCombPair_apply](../../../../Geometry/AffineMapDefsPublic.lean/declarations/convexcombpair-apply.md) | 57 | `result-track:d53a54806629e5eb53a5c4273a6b93cc04172bd899275251f1d963f16e80369d` |
-| 7 | `lemma` | [isAffineMap_const_comp](../../../../Geometry/AffineMapDefsPublic.lean/declarations/isaffinemap-const-comp.md) | 62 | `result-track:fe36ab47ab8b65294bbfd999fdbcc460f06f4d0bf4bf1ce538171f9eba1e3042` |
-| 8 | `lemma` | [isAffineMap_comp_const](../../../../Geometry/AffineMapDefsPublic.lean/declarations/isaffinemap-comp-const.md) | 69 | `result-track:192af8499433682b087c28874346f72122764d92f1356b2a015453ad48282e38` |
+| 1 | `lemma` | [IsAffineMap.iConvexComb](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineMapDefsPublic.lean/declarations/isaffinemap-iconvexcomb.md) | 29 | `result-track:2b0bacc3952c5c3005a2892426b719aa8a0620dd7888acbcd856315376896c47` |
+| 2 | `instance` | [instConvexSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineMapDefsPublic.lean/declarations/instconvexspace.md) | 38 | `declaration-track:8131945b483ed0231a10967321e8aec51f2e2ffde77347d445d939ebbac86642` |
+| 3 | `lemma` | [sConvexComb_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineMapDefsPublic.lean/declarations/sconvexcomb-apply.md) | 44 | `result-track:287d05ab95e6c0d24f1d423d73b364622d79ac3067fbcf967063bead02292dfb` |
+| 4 | `lemma` | [isAffineMap_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineMapDefsPublic.lean/declarations/isaffinemap-eval.md) | 49 | `result-track:9833e275af64c4e5276917b71f57463663569135909023de38b72c351823eee1` |
+| 5 | `lemma` | [iConvexComb_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineMapDefsPublic.lean/declarations/iconvexcomb-apply.md) | 53 | `result-track:a313d011763f8fe0633af78083bd6ef3e1822442aa51014380fe5943b5db3864` |
+| 6 | `lemma` | [convexCombPair_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineMapDefsPublic.lean/declarations/convexcombpair-apply.md) | 57 | `result-track:d53a54806629e5eb53a5c4273a6b93cc04172bd899275251f1d963f16e80369d` |
+| 7 | `lemma` | [isAffineMap_const_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineMapDefsPublic.lean/declarations/isaffinemap-const-comp.md) | 62 | `result-track:fe36ab47ab8b65294bbfd999fdbcc460f06f4d0bf4bf1ce538171f9eba1e3042` |
+| 8 | `lemma` | [isAffineMap_comp_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineMapDefsPublic.lean/declarations/isaffinemap-comp-const.md) | 69 | `result-track:192af8499433682b087c28874346f72122764d92f1356b2a015453ad48282e38` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AF5d239a675c7485aNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/AF5d239a675c7485aNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AF5d239a675c7485aNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AF5d239a675c7485aNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,7 +61,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [regularizedKernel_strictOnDistinct](../../../../RealFunctions/AF5d239a675c7485aNamespaced.lean/declarations/regularizedkernel-strictondistinct.md) | 34 | `result-track:049ed2f9fdf0e9241f2eb1f4bb3b43e5dedee45f44195a2339cab7652eda4a83` |
+| 1 | `theorem` | [regularizedKernel_strictOnDistinct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AF5d239a675c7485aNamespaced.lean/declarations/regularizedkernel-strictondistinct.md) | 34 | `result-track:049ed2f9fdf0e9241f2eb1f4bb3b43e5dedee45f44195a2339cab7652eda4a83` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

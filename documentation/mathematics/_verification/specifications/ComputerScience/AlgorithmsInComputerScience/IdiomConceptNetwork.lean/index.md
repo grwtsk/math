@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [NetworkVertexKind](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/declarations/networkvertexkind.md) | 7 | `declaration-track:ae0c39969b9de5959dcc65b0508f33267e4a5ed3193feeff6bb7980ba51e08c3` |
-| 2 | `structure` | [NetworkVertex](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/declarations/networkvertex.md) | 16 | `declaration-track:08bc29fc94148e1f056bb098f7d5f6f706142862b2fb23bc71a1b473de49c9df` |
-| 3 | `inductive` | [NetworkEdgeType](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/declarations/networkedgetype.md) | 22 | `declaration-track:fcca94977a5e28bf9a0aa107b6c272297261a8b60ea2a14bcc7ee0c879a12208` |
-| 4 | `structure` | [NetworkEdge](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/declarations/networkedge.md) | 36 | `declaration-track:cf59541df94fe51759cf15d8aa1f8fb6803d49a128d83c90053b93487e99aa24` |
-| 5 | `structure` | [IdiomConceptNetwork](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/declarations/idiomconceptnetwork.md) | 44 | `declaration-track:03b9f87f498c2cc776708d3e4b97701d9a0a4e486da6099db3ebe92ab5b8a7ca` |
-| 6 | `def` | [NetworkEdgeType.entails](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/declarations/networkedgetype-entails.md) | 58 | `declaration-track:756d4f1426f952768f31f9f48165ea922807e3d7850c53018a939092086ca223` |
-| 7 | `theorem` | [shared_imagery_not_synonymy](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/declarations/shared-imagery-not-synonymy.md) | 65 | `result-track:41a7ceb1158754452a583bb07962d05e96b7feb84686aefc91fd8fc0e4bea88d` |
-| 8 | `theorem` | [shared_concept_not_synonymy](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/declarations/shared-concept-not-synonymy.md) | 70 | `result-track:39c22e2ea63d8e6e5057fa0747908295ee58bd8a6c376a11b2d4a56d05534048` |
+| 1 | `inductive` | [NetworkVertexKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/declarations/networkvertexkind.md) | 7 | `declaration-track:ae0c39969b9de5959dcc65b0508f33267e4a5ed3193feeff6bb7980ba51e08c3` |
+| 2 | `structure` | [NetworkVertex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/declarations/networkvertex.md) | 16 | `declaration-track:08bc29fc94148e1f056bb098f7d5f6f706142862b2fb23bc71a1b473de49c9df` |
+| 3 | `inductive` | [NetworkEdgeType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/declarations/networkedgetype.md) | 22 | `declaration-track:fcca94977a5e28bf9a0aa107b6c272297261a8b60ea2a14bcc7ee0c879a12208` |
+| 4 | `structure` | [NetworkEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/declarations/networkedge.md) | 36 | `declaration-track:cf59541df94fe51759cf15d8aa1f8fb6803d49a128d83c90053b93487e99aa24` |
+| 5 | `structure` | [IdiomConceptNetwork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/declarations/idiomconceptnetwork.md) | 44 | `declaration-track:03b9f87f498c2cc776708d3e4b97701d9a0a4e486da6099db3ebe92ab5b8a7ca` |
+| 6 | `def` | [NetworkEdgeType.entails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/declarations/networkedgetype-entails.md) | 58 | `declaration-track:756d4f1426f952768f31f9f48165ea922807e3d7850c53018a939092086ca223` |
+| 7 | `theorem` | [shared_imagery_not_synonymy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/declarations/shared-imagery-not-synonymy.md) | 65 | `result-track:41a7ceb1158754452a583bb07962d05e96b7feb84686aefc91fd8fc0e4bea88d` |
+| 8 | `theorem` | [shared_concept_not_synonymy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetwork.lean/declarations/shared-concept-not-synonymy.md) | 70 | `result-track:39c22e2ea63d8e6e5057fa0747908295ee58bd8a6c376a11b2d4a56d05534048` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

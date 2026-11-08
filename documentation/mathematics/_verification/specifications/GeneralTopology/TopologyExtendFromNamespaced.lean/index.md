@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopologyExtendFromNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/TopologyExtendFromNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyExtendFromNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyExtendFromNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [extendFrom](../../../../GeneralTopology/TopologyExtendFromNamespaced.lean/declarations/extendfrom.md) | 45 | `declaration-track:ac050fffe04b5afb38f0797c719acb3ad8cc2ec3d2b424fb952b1ea28a09e4d5` |
-| 2 | `theorem` | [tendsto_extendFrom](../../../../GeneralTopology/TopologyExtendFromNamespaced.lean/declarations/tendsto-extendfrom.md) | 50 | `result-track:3265d610d5453601e1cdfcea76e26fadd5a8c02191477cc740499669c579b8a5` |
-| 3 | `theorem` | [extendFrom_eq](../../../../GeneralTopology/TopologyExtendFromNamespaced.lean/declarations/extendfrom-eq.md) | 54 | `result-track:ac2ec29113816da9e1d85663be9e7daf9597e5a141d32a55c5add6f204abe102` |
-| 4 | `theorem` | [extendFrom_extends](../../../../GeneralTopology/TopologyExtendFromNamespaced.lean/declarations/extendfrom-extends.md) | 59 | `result-track:0a666fd10a962e8b48fa4c1ad5c5bfd1f80653ad046d5bbc15bfcc0ffa7911c2` |
-| 5 | `theorem` | [continuousOn_extendFrom](../../../../GeneralTopology/TopologyExtendFromNamespaced.lean/declarations/continuouson-extendfrom.md) | 65 | `result-track:19e81f3e717dc99a33e6ab78e6eb64cc1c698f5a98798635b04452f091fbb772` |
-| 6 | `theorem` | [continuous_extendFrom](../../../../GeneralTopology/TopologyExtendFromNamespaced.lean/declarations/continuous-extendfrom.md) | 87 | `result-track:83b3475856780585f432d929c215b74e7f231773b155bddeb1ee2551960f34d7` |
+| 1 | `def` | [extendFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyExtendFromNamespaced.lean/declarations/extendfrom.md) | 45 | `declaration-track:ac050fffe04b5afb38f0797c719acb3ad8cc2ec3d2b424fb952b1ea28a09e4d5` |
+| 2 | `theorem` | [tendsto_extendFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyExtendFromNamespaced.lean/declarations/tendsto-extendfrom.md) | 50 | `result-track:3265d610d5453601e1cdfcea76e26fadd5a8c02191477cc740499669c579b8a5` |
+| 3 | `theorem` | [extendFrom_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyExtendFromNamespaced.lean/declarations/extendfrom-eq.md) | 54 | `result-track:ac2ec29113816da9e1d85663be9e7daf9597e5a141d32a55c5add6f204abe102` |
+| 4 | `theorem` | [extendFrom_extends](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyExtendFromNamespaced.lean/declarations/extendfrom-extends.md) | 59 | `result-track:0a666fd10a962e8b48fa4c1ad5c5bfd1f80653ad046d5bbc15bfcc0ffa7911c2` |
+| 5 | `theorem` | [continuousOn_extendFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyExtendFromNamespaced.lean/declarations/continuouson-extendfrom.md) | 65 | `result-track:19e81f3e717dc99a33e6ab78e6eb64cc1c698f5a98798635b04452f091fbb772` |
+| 6 | `theorem` | [continuous_extendFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyExtendFromNamespaced.lean/declarations/continuous-extendfrom.md) | 87 | `result-track:83b3475856780585f432d929c215b74e7f231773b155bddeb1ee2551960f34d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

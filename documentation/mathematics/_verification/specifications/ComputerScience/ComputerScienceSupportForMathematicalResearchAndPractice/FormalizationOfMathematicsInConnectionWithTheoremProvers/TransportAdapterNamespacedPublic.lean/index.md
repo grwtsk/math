@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CheckedTransportedTheorem](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterNamespacedPublic.lean/declarations/checkedtransportedtheorem.md) | 27 | `declaration-track:b1930956b696fc4c9907e1c61d03777f62771be165494642f72b68fde58665fe` |
-| 2 | `theorem` | [checkedTransportedTheorem_exposes_exact_task](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterNamespacedPublic.lean/declarations/checkedtransportedtheorem-exposes-exact-task.md) | 36 | `result-track:178bedac314fb45f6bd28e55138a81295688b5f3949cfbd3da0ec40fdb7a5bf5` |
-| 3 | `theorem` | [checkedTransportedTheorem_preserves_statement_identity](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterNamespacedPublic.lean/declarations/checkedtransportedtheorem-preserves-statement-identity.md) | 41 | `result-track:9af1d71f157241b923b708899fd9ff9bde6c7931a1d7ac348718fede94c74d00` |
+| 1 | `structure` | [CheckedTransportedTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterNamespacedPublic.lean/declarations/checkedtransportedtheorem.md) | 27 | `declaration-track:b1930956b696fc4c9907e1c61d03777f62771be165494642f72b68fde58665fe` |
+| 2 | `theorem` | [checkedTransportedTheorem_exposes_exact_task](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterNamespacedPublic.lean/declarations/checkedtransportedtheorem-exposes-exact-task.md) | 36 | `result-track:178bedac314fb45f6bd28e55138a81295688b5f3949cfbd3da0ec40fdb7a5bf5` |
+| 3 | `theorem` | [checkedTransportedTheorem_preserves_statement_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterNamespacedPublic.lean/declarations/checkedtransportedtheorem-preserves-statement-identity.md) | 41 | `result-track:9af1d71f157241b923b708899fd9ff9bde6c7931a1d7ac348718fede94c74d00` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

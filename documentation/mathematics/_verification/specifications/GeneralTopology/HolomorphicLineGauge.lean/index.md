@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/HolomorphicLineGauge.lean/index.md) · [Full source](../../../../GeneralTopology/HolomorphicLineGauge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.HolomorphicLineSections`](../../../../GeneralTopology/HolomorphicLineSections.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicLineSections`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.Tactic.Ring` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,29 +58,29 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [unitValue](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/unitvalue.md) | 22 | `declaration-track:1c0fa99d5ee954517c04037689c95d684acc2446eb45aaeff70036779a10e357` |
-| 2 | `theorem` | [unitValue_one](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/unitvalue-one.md) | 25 | `result-track:dfe43209e7c8dcda11d137608bccfbc5e20f924b9d076eac1a94881b8ce2a741` |
-| 3 | `theorem` | [unitValue_mul](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/unitvalue-mul.md) | 28 | `result-track:eda855ada6bf6ca91177d4ee89e81c8505ea3273282008ca4f03ec8c66120d10` |
-| 4 | `theorem` | [unitValue_inv_mul](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/unitvalue-inv-mul.md) | 31 | `result-track:1242b1b786973fb16fdbb3454a17c916bc8a93c03ea0521f1a88f263adac61f0` |
-| 5 | `theorem` | [unitValue_mul_inv](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/unitvalue-mul-inv.md) | 35 | `result-track:4da344c4a32238e648c20707a4305e75138570d8434288ee074114dfeced9871` |
-| 6 | `structure` | [Gauge](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/gauge.md) | 40 | `declaration-track:6837e14dfe0b21dcdfb86079a961c676e9fb24b1ed159fa052e5e9a5bed5d0c6` |
-| 7 | `theorem` | [ext_frame](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/ext-frame.md) | 51 | `result-track:2085ed33e88ea8009989389c2379f53bf8a8791184b8ce55d9af96064e5e8d42` |
-| 8 | `def` | [identity](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/identity.md) | 58 | `declaration-track:41950614ffd3fcdfc8632799c9c62fee5bc3dd733410c23136bb4f83b959a87e` |
-| 9 | `def` | [symm](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/symm.md) | 63 | `declaration-track:c988fa12c7e107f450b8b477487f7f73e6ae2febe3fe12dd6f610feeb7203c5e` |
-| 10 | `def` | [comp](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/comp.md) | 82 | `declaration-track:5a0b7935808206bb58eb9417c5bc0a63c3efc7a11e11f1c8e1513813894817e7` |
-| 11 | `theorem` | [comp_identity](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/comp-identity.md) | 99 | `result-track:fc2db75b1413db5ed29ed5eb35c8fc7f3d0230acf9503dd99d9e8d80ce8db6b5` |
-| 12 | `theorem` | [identity_comp](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/identity-comp.md) | 104 | `result-track:ad28e65936555bc77590e13f499464e3c22bbc91ca49b69b056760302e795614` |
-| 13 | `theorem` | [comp_symm](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/comp-symm.md) | 109 | `result-track:cab69ca406ce740bc56ce997afdbdc676d41034bcc4e1789b996d84ba73df79d` |
-| 14 | `theorem` | [symm_comp](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/symm-comp.md) | 114 | `result-track:68703410e4ce7be380740e34212e3415896f2ba5803d231fb2836a2b1b9b7332` |
-| 15 | `theorem` | [comp_assoc](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/comp-assoc.md) | 119 | `result-track:7b3eb3f1936721aab0bb028868795273fbba81b321a31354dbfa62f838f5a56f` |
-| 16 | `def` | [mapFamily](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/mapfamily.md) | 126 | `declaration-track:0ae01d06e652c7cb178c263255bd4542479a0c43859dd9e4977f06f6cf51d6d6` |
-| 17 | `def` | [familyEquiv](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/familyequiv.md) | 137 | `declaration-track:7894713507a9aa63b73a9aa594af323ccd7089f24701eb5d25c975e9c6a42df3` |
-| 18 | `def` | [bundleSectionEquiv](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/bundlesectionequiv.md) | 156 | `declaration-track:d9b0991a3591b3c5f546dde9ccc252a7d2e1a28426f5d6cce1ecbbb9bea63be5` |
-| 19 | `theorem` | [bundleSectionEquiv_coordinate](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/bundlesectionequiv-coordinate.md) | 161 | `result-track:6fde9db3f1d10733a05b6e6289eb44cf496de135dbc40bd65d5501ccf652ee06` |
-| 20 | `theorem` | [mapFamily_comp](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/mapfamily-comp.md) | 169 | `result-track:2b18091337b7f280fbccd7e15496bdd31a46715fe63b50896be0cf29a129e5d5` |
-| 21 | `theorem` | [transportedSection_continuous](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/transportedsection-continuous.md) | 176 | `result-track:0445f28e4e44370fb17ccdd1e85c4f3774821f27ff3df55258baf799954ccd95` |
-| 22 | `def` | [changeFrames](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/changeframes.md) | 189 | `declaration-track:28a311f95185abe17ff9d8ffdc0519cb20e96fb8e87091605981b9e22d82cf1a` |
-| 23 | `def` | [changeFramesGauge](../../../../GeneralTopology/HolomorphicLineGauge.lean/declarations/changeframesgauge.md) | 222 | `declaration-track:522e6d629aee62242258d71781e932461a2b0b23e607fb5937f8aedf189a3404` |
+| 1 | `def` | [unitValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/unitvalue.md) | 22 | `declaration-track:1c0fa99d5ee954517c04037689c95d684acc2446eb45aaeff70036779a10e357` |
+| 2 | `theorem` | [unitValue_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/unitvalue-one.md) | 25 | `result-track:dfe43209e7c8dcda11d137608bccfbc5e20f924b9d076eac1a94881b8ce2a741` |
+| 3 | `theorem` | [unitValue_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/unitvalue-mul.md) | 28 | `result-track:eda855ada6bf6ca91177d4ee89e81c8505ea3273282008ca4f03ec8c66120d10` |
+| 4 | `theorem` | [unitValue_inv_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/unitvalue-inv-mul.md) | 31 | `result-track:1242b1b786973fb16fdbb3454a17c916bc8a93c03ea0521f1a88f263adac61f0` |
+| 5 | `theorem` | [unitValue_mul_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/unitvalue-mul-inv.md) | 35 | `result-track:4da344c4a32238e648c20707a4305e75138570d8434288ee074114dfeced9871` |
+| 6 | `structure` | [Gauge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/gauge.md) | 40 | `declaration-track:6837e14dfe0b21dcdfb86079a961c676e9fb24b1ed159fa052e5e9a5bed5d0c6` |
+| 7 | `theorem` | [ext_frame](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/ext-frame.md) | 51 | `result-track:2085ed33e88ea8009989389c2379f53bf8a8791184b8ce55d9af96064e5e8d42` |
+| 8 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/identity.md) | 58 | `declaration-track:41950614ffd3fcdfc8632799c9c62fee5bc3dd733410c23136bb4f83b959a87e` |
+| 9 | `def` | [symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/symm.md) | 63 | `declaration-track:c988fa12c7e107f450b8b477487f7f73e6ae2febe3fe12dd6f610feeb7203c5e` |
+| 10 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/comp.md) | 82 | `declaration-track:5a0b7935808206bb58eb9417c5bc0a63c3efc7a11e11f1c8e1513813894817e7` |
+| 11 | `theorem` | [comp_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/comp-identity.md) | 99 | `result-track:fc2db75b1413db5ed29ed5eb35c8fc7f3d0230acf9503dd99d9e8d80ce8db6b5` |
+| 12 | `theorem` | [identity_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/identity-comp.md) | 104 | `result-track:ad28e65936555bc77590e13f499464e3c22bbc91ca49b69b056760302e795614` |
+| 13 | `theorem` | [comp_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/comp-symm.md) | 109 | `result-track:cab69ca406ce740bc56ce997afdbdc676d41034bcc4e1789b996d84ba73df79d` |
+| 14 | `theorem` | [symm_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/symm-comp.md) | 114 | `result-track:68703410e4ce7be380740e34212e3415896f2ba5803d231fb2836a2b1b9b7332` |
+| 15 | `theorem` | [comp_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/comp-assoc.md) | 119 | `result-track:7b3eb3f1936721aab0bb028868795273fbba81b321a31354dbfa62f838f5a56f` |
+| 16 | `def` | [mapFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/mapfamily.md) | 126 | `declaration-track:0ae01d06e652c7cb178c263255bd4542479a0c43859dd9e4977f06f6cf51d6d6` |
+| 17 | `def` | [familyEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/familyequiv.md) | 137 | `declaration-track:7894713507a9aa63b73a9aa594af323ccd7089f24701eb5d25c975e9c6a42df3` |
+| 18 | `def` | [bundleSectionEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/bundlesectionequiv.md) | 156 | `declaration-track:d9b0991a3591b3c5f546dde9ccc252a7d2e1a28426f5d6cce1ecbbb9bea63be5` |
+| 19 | `theorem` | [bundleSectionEquiv_coordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/bundlesectionequiv-coordinate.md) | 161 | `result-track:6fde9db3f1d10733a05b6e6289eb44cf496de135dbc40bd65d5501ccf652ee06` |
+| 20 | `theorem` | [mapFamily_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/mapfamily-comp.md) | 169 | `result-track:2b18091337b7f280fbccd7e15496bdd31a46715fe63b50896be0cf29a129e5d5` |
+| 21 | `theorem` | [transportedSection_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/transportedsection-continuous.md) | 176 | `result-track:0445f28e4e44370fb17ccdd1e85c4f3774821f27ff3df55258baf799954ccd95` |
+| 22 | `def` | [changeFrames](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/changeframes.md) | 189 | `declaration-track:28a311f95185abe17ff9d8ffdc0519cb20e96fb8e87091605981b9e22d82cf1a` |
+| 23 | `def` | [changeFramesGauge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/declarations/changeframesgauge.md) | 222 | `declaration-track:522e6d629aee62242258d71781e932461a2b0b23e607fb5937f8aedf189a3404` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

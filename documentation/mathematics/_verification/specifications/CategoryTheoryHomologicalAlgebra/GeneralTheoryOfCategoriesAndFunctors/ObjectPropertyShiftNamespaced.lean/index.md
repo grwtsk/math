@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyShiftNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyShiftNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyShiftNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyShiftNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [shift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyShiftNamespaced.lean/declarations/shift.md) | 36 | `declaration-track:80659e276de6357dcdd98aee7228e51f07a3b12f5534f666f4aaf87aa32c4db2` |
-| 2 | `lemma` | [prop_shift_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyShiftNamespaced.lean/declarations/prop-shift-iff.md) | 38 | `result-track:3f2ae8c7e1e3a1f49b13d23127be6e4cf4c78da5c4bdb8713dff45ac808d5e4b` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyShiftNamespaced.lean/declarations/instance.md) | 40 | `declaration-track:3d2f63ceffa33382ccf612d0afee8935731f0f1362ec4eac9dc01cdfcc731aed` |
-| 4 | `lemma` | [shift_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyShiftNamespaced.lean/declarations/shift-zero.md) | 47 | `result-track:7f3ddd36b200a138648843fe5a8526fa61c7436b744a16d72067e0249cf1d4e8` |
-| 5 | `lemma` | [shift_shift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyShiftNamespaced.lean/declarations/shift-shift.md) | 53 | `result-track:5de09dd31121acb6b28585c39325dea3fb944c4b5ce1b23f04b432cfa7e38e3d` |
+| 1 | `def` | [shift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyShiftNamespaced.lean/declarations/shift.md) | 36 | `declaration-track:80659e276de6357dcdd98aee7228e51f07a3b12f5534f666f4aaf87aa32c4db2` |
+| 2 | `lemma` | [prop_shift_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyShiftNamespaced.lean/declarations/prop-shift-iff.md) | 38 | `result-track:3f2ae8c7e1e3a1f49b13d23127be6e4cf4c78da5c4bdb8713dff45ac808d5e4b` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyShiftNamespaced.lean/declarations/instance.md) | 40 | `declaration-track:3d2f63ceffa33382ccf612d0afee8935731f0f1362ec4eac9dc01cdfcc731aed` |
+| 4 | `lemma` | [shift_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyShiftNamespaced.lean/declarations/shift-zero.md) | 47 | `result-track:7f3ddd36b200a138648843fe5a8526fa61c7436b744a16d72067e0249cf1d4e8` |
+| 5 | `lemma` | [shift_shift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyShiftNamespaced.lean/declarations/shift-shift.md) | 53 | `result-track:5de09dd31121acb6b28585c39325dea3fb944c4b5ce1b23f04b432cfa7e38e3d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

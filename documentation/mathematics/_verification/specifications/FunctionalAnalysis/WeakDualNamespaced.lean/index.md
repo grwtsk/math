@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/WeakDualNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/WeakDualNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WeakDualNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WeakDualNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toSeminorm](../../../../FunctionalAnalysis/WeakDualNamespaced.lean/declarations/toseminorm.md) | 61 | `declaration-track:a4ef18da18efaa95e994bce387eb02c554ff0ce80d806ffac248f28de55144d8` |
-| 2 | `theorem` | [coe_toSeminorm](../../../../FunctionalAnalysis/WeakDualNamespaced.lean/declarations/coe-toseminorm.md) | 64 | `result-track:9c3d6ef992319c9733705bb51ab287a7e9b84dfa5eef305cb7c2d4294da777bc` |
-| 3 | `theorem` | [toSeminorm_apply](../../../../FunctionalAnalysis/WeakDualNamespaced.lean/declarations/toseminorm-apply.md) | 68 | `result-track:9488466f60ec1482adf117cfd18e107649274c8c7bfa97de18c6b32951daa456` |
-| 4 | `theorem` | [toSeminorm_ball_zero](../../../../FunctionalAnalysis/WeakDualNamespaced.lean/declarations/toseminorm-ball-zero.md) | 71 | `result-track:0531bf58cac5a729361cb01480c2806c92a5a97bf23d6fcbcdcabeb3f5435136` |
-| 5 | `theorem` | [toSeminorm_comp](../../../../FunctionalAnalysis/WeakDualNamespaced.lean/declarations/toseminorm-comp.md) | 75 | `result-track:14e80ee1ae1cffeae69c02846a378a5a97c7caa14b26e9167d464c88c80edfef` |
-| 6 | `def` | [toSeminormFamily](../../../../FunctionalAnalysis/WeakDualNamespaced.lean/declarations/toseminormfamily.md) | 81 | `declaration-track:e4ee8d8fce30b6712995e7b754ece3479f17b9b083a1b216828197a99c928dc8` |
-| 7 | `theorem` | [toSeminormFamily_apply](../../../../FunctionalAnalysis/WeakDualNamespaced.lean/declarations/toseminormfamily-apply.md) | 85 | `result-track:e309940693d2075ddf27f6a14286d5008e9bc73bf5084a0b67ba1887f8ca566d` |
-| 8 | `theorem` | [LinearMap.weakBilin_withSeminorms](../../../../FunctionalAnalysis/WeakDualNamespaced.lean/declarations/linearmap-weakbilin-withseminorms.md) | 96 | `result-track:f7fc90dfb8d3faeae09bc095b4e968ee4ec3ab21ba6be4900503056f6bac2fcf` |
-| 9 | `theorem` | [LinearMap.hasBasis_weakBilin](../../../../FunctionalAnalysis/WeakDualNamespaced.lean/declarations/linearmap-hasbasis-weakbilin.md) | 103 | `result-track:9331660d9bc5eddb71fc23cabcd0cae458f132a0dd6def0820bfdb6259beafcc` |
-| 10 | `instance` | [WeakBilin.locallyConvexSpace](../../../../FunctionalAnalysis/WeakDualNamespaced.lean/declarations/weakbilin-locallyconvexspace.md) | 114 | `declaration-track:6b279f1c23bbbd49a164d9af02d748e5a2f761ae40ac8e813e8a775dd0747d08` |
+| 1 | `def` | [toSeminorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WeakDualNamespaced.lean/declarations/toseminorm.md) | 61 | `declaration-track:a4ef18da18efaa95e994bce387eb02c554ff0ce80d806ffac248f28de55144d8` |
+| 2 | `theorem` | [coe_toSeminorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WeakDualNamespaced.lean/declarations/coe-toseminorm.md) | 64 | `result-track:9c3d6ef992319c9733705bb51ab287a7e9b84dfa5eef305cb7c2d4294da777bc` |
+| 3 | `theorem` | [toSeminorm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WeakDualNamespaced.lean/declarations/toseminorm-apply.md) | 68 | `result-track:9488466f60ec1482adf117cfd18e107649274c8c7bfa97de18c6b32951daa456` |
+| 4 | `theorem` | [toSeminorm_ball_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WeakDualNamespaced.lean/declarations/toseminorm-ball-zero.md) | 71 | `result-track:0531bf58cac5a729361cb01480c2806c92a5a97bf23d6fcbcdcabeb3f5435136` |
+| 5 | `theorem` | [toSeminorm_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WeakDualNamespaced.lean/declarations/toseminorm-comp.md) | 75 | `result-track:14e80ee1ae1cffeae69c02846a378a5a97c7caa14b26e9167d464c88c80edfef` |
+| 6 | `def` | [toSeminormFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WeakDualNamespaced.lean/declarations/toseminormfamily.md) | 81 | `declaration-track:e4ee8d8fce30b6712995e7b754ece3479f17b9b083a1b216828197a99c928dc8` |
+| 7 | `theorem` | [toSeminormFamily_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WeakDualNamespaced.lean/declarations/toseminormfamily-apply.md) | 85 | `result-track:e309940693d2075ddf27f6a14286d5008e9bc73bf5084a0b67ba1887f8ca566d` |
+| 8 | `theorem` | [LinearMap.weakBilin_withSeminorms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WeakDualNamespaced.lean/declarations/linearmap-weakbilin-withseminorms.md) | 96 | `result-track:f7fc90dfb8d3faeae09bc095b4e968ee4ec3ab21ba6be4900503056f6bac2fcf` |
+| 9 | `theorem` | [LinearMap.hasBasis_weakBilin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WeakDualNamespaced.lean/declarations/linearmap-hasbasis-weakbilin.md) | 103 | `result-track:9331660d9bc5eddb71fc23cabcd0cae458f132a0dd6def0820bfdb6259beafcc` |
+| 10 | `instance` | [WeakBilin.locallyConvexSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WeakDualNamespaced.lean/declarations/weakbilin-locallyconvexspace.md) | 114 | `declaration-track:6b279f1c23bbbd49a164d9af02d748e5a2f761ae40ac8e813e8a775dd0747d08` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

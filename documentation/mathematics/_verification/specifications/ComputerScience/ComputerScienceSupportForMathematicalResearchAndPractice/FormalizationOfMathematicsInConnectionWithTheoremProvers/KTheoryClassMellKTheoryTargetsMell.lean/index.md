@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassMellKTheoryTargetsMell.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassMellKTheoryTargetsMell.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassMellKTheoryTargetsMell.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassMellKTheoryTargetsMell.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ktheory_class_has_value](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassMellKTheoryTargetsMell.lean/declarations/ktheory-class-has-value.md) | 19 | `result-track:c167ed8152d57a4241f77512a3f2715843f712080a646ac3fc6378cec7d029ca` |
-| 2 | `theorem` | [mell_k_theory_targets_mell](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassMellKTheoryTargetsMell.lean/declarations/mell-k-theory-targets-mell.md) | 25 | `result-track:7bd5bf3044904bc5bf8e1402a151d0c4b367cf0e66efd9aa37ad1263a46bb46c` |
-| 3 | `theorem` | [mell_contract_is_mell](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassMellKTheoryTargetsMell.lean/declarations/mell-contract-is-mell.md) | 30 | `result-track:c18b61ca8d1645ca0848980360ebeee5fa7a1fbf9d27d8480f509459b4451488` |
+| 1 | `theorem` | [ktheory_class_has_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassMellKTheoryTargetsMell.lean/declarations/ktheory-class-has-value.md) | 19 | `result-track:c167ed8152d57a4241f77512a3f2715843f712080a646ac3fc6378cec7d029ca` |
+| 2 | `theorem` | [mell_k_theory_targets_mell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassMellKTheoryTargetsMell.lean/declarations/mell-k-theory-targets-mell.md) | 25 | `result-track:7bd5bf3044904bc5bf8e1402a151d0c4b367cf0e66efd9aa37ad1263a46bb46c` |
+| 3 | `theorem` | [mell_contract_is_mell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassMellKTheoryTargetsMell.lean/declarations/mell-contract-is-mell.md) | 30 | `result-track:c18b61ca8d1645ca0848980360ebeee5fa7a1fbf9d27d8480f509459b4451488` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IndexNamespacedPublicRecBuildWithIndex.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IndexNamespacedPublicRecBuildWithIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IndexNamespacedPublicRecBuildWithIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IndexNamespacedPublicRecBuildWithIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [recBuildWithIndex](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IndexNamespacedPublicRecBuildWithIndex.lean/declarations/recbuildwithindex.md) | 37 | `declaration-track:a80ae6dc877d48a5a5050693d6be56d586d44b4a4894dc179dbb45782a485c82` |
-| 2 | `def` | [recFetchWithIndex](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IndexNamespacedPublicRecBuildWithIndex.lean/declarations/recfetchwithindex.md) | 66 | `declaration-track:15e2abb4f7fa9b918ba5702052180824254fcce9d70f7725136a9d98feeeca30` |
-| 3 | `def` | [FetchT.run](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IndexNamespacedPublicRecBuildWithIndex.lean/declarations/fetcht-run.md) | 73 | `declaration-track:a1cb7ca6acce1cb40e8685a27091f497273b28be78a17f651d0a0144160c6956` |
+| 1 | `def` | [recBuildWithIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IndexNamespacedPublicRecBuildWithIndex.lean/declarations/recbuildwithindex.md) | 37 | `declaration-track:a80ae6dc877d48a5a5050693d6be56d586d44b4a4894dc179dbb45782a485c82` |
+| 2 | `def` | [recFetchWithIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IndexNamespacedPublicRecBuildWithIndex.lean/declarations/recfetchwithindex.md) | 66 | `declaration-track:15e2abb4f7fa9b918ba5702052180824254fcce9d70f7725136a9d98feeeca30` |
+| 3 | `def` | [FetchT.run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IndexNamespacedPublicRecBuildWithIndex.lean/declarations/fetcht-run.md) | 73 | `declaration-track:a1cb7ca6acce1cb40e8685a27091f497273b28be78a17f651d0a0144160c6956` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [le_of_lt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/le-of-lt.md) | 23 | `result-track:942b7661409314357b22627a045be5b437fd82d9ae7d2b6c11a3d5c47631a2cb` |
-| 2 | `theorem` | [lt_irrefl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/lt-irrefl.md) | 25 | `result-track:20fbc8eca96a9c02e0be3bce010cbb2eb947762b9e7531a9ca8fda8df9fe2184` |
-| 3 | `theorem` | [ne_of_lt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/ne-of-lt.md) | 29 | `result-track:5deeff566d421695266130d58a67b340397e073d28a76fab8b8ce98d2f72e075` |
-| 4 | `theorem` | [ne_of_gt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/ne-of-gt.md) | 32 | `result-track:eaf4e9a00b4edcbc9c8a7b581fa5af7a0e8f1440435a7f8edd019eba1592292a` |
-| 5 | `theorem` | [lt_of_lt_of_le](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/lt-of-lt-of-le.md) | 37 | `result-track:fd3520369920166b2b1d4ef1b1421681f2c76206a2d72ff805d4bc6955ef4466` |
-| 6 | `theorem` | [lt_of_le_of_lt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/lt-of-le-of-lt.md) | 41 | `result-track:75b3fab57491aebc8df48f5fa1bb7f74d2eb1a52050f5dd79392dab0d8194d12` |
-| 7 | `theorem` | [lt_trans](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/lt-trans.md) | 45 | `result-track:971873f473fd279aab811b00596393b47d7ffe5ade063151869332d4739cb5b0` |
-| 8 | `theorem` | [not_ge_of_lt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/not-ge-of-lt.md) | 48 | `result-track:2f89b8b696dfca0e6a2613b436f83258de8712283e2c3072f3be249c145211be` |
-| 9 | `theorem` | [not_gt_of_lt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/not-gt-of-lt.md) | 51 | `result-track:19e2c0988e6cffc6934800913d32122fed71375ac549e64ba434ff40526daf26` |
-| 10 | `theorem` | [le_iff_lt_or_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/le-iff-lt-or-eq.md) | 60 | `result-track:66104f7287fcf93aa7f393eb95c406b9fbb6a14b2bccc5b016f5b8dfb32574c4` |
-| 11 | `theorem` | [trichotomy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/trichotomy.md) | 76 | `result-track:4a924f131509124f0a06a4c6d913300e9065eda226f74aa0ddbd9fb41ee067c3` |
-| 12 | `theorem` | [le_of_not_lt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/le-of-not-lt.md) | 89 | `result-track:6eeaa1f7fb505d47188bd3dc6757814488230dae6e34d821b0b7134fa5b6d6b8` |
-| 13 | `theorem` | [lt_of_not_le](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/lt-of-not-le.md) | 94 | `result-track:220c63e9e9885cde0c5fa256ea63b2a110a7db90f7530d3edbec96f6011841a7` |
+| 1 | `theorem` | [le_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/le-of-lt.md) | 23 | `result-track:942b7661409314357b22627a045be5b437fd82d9ae7d2b6c11a3d5c47631a2cb` |
+| 2 | `theorem` | [lt_irrefl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/lt-irrefl.md) | 25 | `result-track:20fbc8eca96a9c02e0be3bce010cbb2eb947762b9e7531a9ca8fda8df9fe2184` |
+| 3 | `theorem` | [ne_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/ne-of-lt.md) | 29 | `result-track:5deeff566d421695266130d58a67b340397e073d28a76fab8b8ce98d2f72e075` |
+| 4 | `theorem` | [ne_of_gt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/ne-of-gt.md) | 32 | `result-track:eaf4e9a00b4edcbc9c8a7b581fa5af7a0e8f1440435a7f8edd019eba1592292a` |
+| 5 | `theorem` | [lt_of_lt_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/lt-of-lt-of-le.md) | 37 | `result-track:fd3520369920166b2b1d4ef1b1421681f2c76206a2d72ff805d4bc6955ef4466` |
+| 6 | `theorem` | [lt_of_le_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/lt-of-le-of-lt.md) | 41 | `result-track:75b3fab57491aebc8df48f5fa1bb7f74d2eb1a52050f5dd79392dab0d8194d12` |
+| 7 | `theorem` | [lt_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/lt-trans.md) | 45 | `result-track:971873f473fd279aab811b00596393b47d7ffe5ade063151869332d4739cb5b0` |
+| 8 | `theorem` | [not_ge_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/not-ge-of-lt.md) | 48 | `result-track:2f89b8b696dfca0e6a2613b436f83258de8712283e2c3072f3be249c145211be` |
+| 9 | `theorem` | [not_gt_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/not-gt-of-lt.md) | 51 | `result-track:19e2c0988e6cffc6934800913d32122fed71375ac549e64ba434ff40526daf26` |
+| 10 | `theorem` | [le_iff_lt_or_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/le-iff-lt-or-eq.md) | 60 | `result-track:66104f7287fcf93aa7f393eb95c406b9fbb6a14b2bccc5b016f5b8dfb32574c4` |
+| 11 | `theorem` | [trichotomy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/trichotomy.md) | 76 | `result-track:4a924f131509124f0a06a4c6d913300e9065eda226f74aa0ddbd9fb41ee067c3` |
+| 12 | `theorem` | [le_of_not_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/le-of-not-lt.md) | 89 | `result-track:6eeaa1f7fb505d47188bd3dc6757814488230dae6e34d821b0b7134fa5b6d6b8` |
+| 13 | `theorem` | [lt_of_not_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderPublic.lean/declarations/lt-of-not-le.md) | 94 | `result-track:220c63e9e9885cde0c5fa256ea63b2a110a7db90f7530d3edbec96f6011841a7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

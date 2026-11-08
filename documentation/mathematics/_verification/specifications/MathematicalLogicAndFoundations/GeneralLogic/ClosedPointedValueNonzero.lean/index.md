@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosedPointedValueNonzero.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosedPointedValueNonzero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosedPointedValueNonzero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosedPointedValueNonzero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [standard_reference_base_case_index_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosedPointedValueNonzero.lean/declarations/standard-reference-base-case-index-nonzero.md) | 31 | `result-track:44817920fc3071b0e0c01c2abd65c53d4234040e37d091d16a69cde4f68a3cb1` |
-| 2 | `theorem` | [standard_reference_11a1_base_case_index_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosedPointedValueNonzero.lean/declarations/standard-reference-11a1-base-case-index-nonzero.md) | 35 | `result-track:8e7f08b40f3978b63bea37c062640d20b015649edb0f676cba7273b4e5eccc06` |
+| 1 | `theorem` | [standard_reference_base_case_index_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosedPointedValueNonzero.lean/declarations/standard-reference-base-case-index-nonzero.md) | 31 | `result-track:44817920fc3071b0e0c01c2abd65c53d4234040e37d091d16a69cde4f68a3cb1` |
+| 2 | `theorem` | [standard_reference_11a1_base_case_index_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosedPointedValueNonzero.lean/declarations/standard-reference-11a1-base-case-index-nonzero.md) | 35 | `result-track:8e7f08b40f3978b63bea37c062640d20b015649edb0f676cba7273b4e5eccc06` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

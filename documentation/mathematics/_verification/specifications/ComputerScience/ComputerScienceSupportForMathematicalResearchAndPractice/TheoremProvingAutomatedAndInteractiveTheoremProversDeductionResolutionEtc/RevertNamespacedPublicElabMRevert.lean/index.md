@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertNamespacedPublicElabMRevert.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertNamespacedPublicElabMRevert.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertNamespacedPublicElabMRevert.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertNamespacedPublicElabMRevert.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mRevert](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertNamespacedPublicElabMRevert.lean/declarations/mrevert.md) | 28 | `declaration-track:76029a10f68a048c73ce2971aa4d55c7ca52fd670eff67462d85feef51a39a25` |
-| 2 | `def` | [mRevertForallN](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertNamespacedPublicElabMRevert.lean/declarations/mrevertforalln.md) | 48 | `declaration-track:14366808083763e64e040320b7aef18a841150555483b7c3532532f993b84923` |
-| 3 | `def` | [elabMRevert](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertNamespacedPublicElabMRevert.lean/declarations/elabmrevert.md) | 93 | `declaration-track:cd2e3f0da09cb82ad835c86d1754beaa13840bd5ff82f573f2ac9d57da1dfbbe` |
+| 1 | `def` | [mRevert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertNamespacedPublicElabMRevert.lean/declarations/mrevert.md) | 28 | `declaration-track:76029a10f68a048c73ce2971aa4d55c7ca52fd670eff67462d85feef51a39a25` |
+| 2 | `def` | [mRevertForallN](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertNamespacedPublicElabMRevert.lean/declarations/mrevertforalln.md) | 48 | `declaration-track:14366808083763e64e040320b7aef18a841150555483b7c3532532f993b84923` |
+| 3 | `def` | [elabMRevert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertNamespacedPublicElabMRevert.lean/declarations/elabmrevert.md) | 93 | `declaration-track:cd2e3f0da09cb82ad835c86d1754beaa13840bd5ff82f573f2ac9d57da1dfbbe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

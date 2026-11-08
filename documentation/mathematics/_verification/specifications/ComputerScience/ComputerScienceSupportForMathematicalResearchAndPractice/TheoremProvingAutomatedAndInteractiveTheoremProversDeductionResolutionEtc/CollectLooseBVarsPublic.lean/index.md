@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CollectLooseBVarsPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CollectLooseBVarsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CollectLooseBVarsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CollectLooseBVarsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [State](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CollectLooseBVarsPublic.lean/declarations/state.md) | 24 | `declaration-track:8f3480e15454996e7adbcaf4954eae7c07a8beb3e8dacd8ecca605a463b0123b` |
-| 2 | `abbrev` | [M](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CollectLooseBVarsPublic.lean/declarations/m.md) | 28 | `declaration-track:8e51780e03e365551e6443bd56e4e48a395706df70428313b0314ff0283a0207` |
-| 3 | `def` | [main](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CollectLooseBVarsPublic.lean/declarations/main.md) | 30 | `declaration-track:4f3f7ad8ffa6369f70f562efcfed99aeceaccfcd510cd4744d0c7d2836fb9d02` |
-| 4 | `def` | [collectLooseBVars](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CollectLooseBVarsPublic.lean/declarations/collectloosebvars.md) | 53 | `declaration-track:3cc33acd11d259a96243599ebb51c04cb4c45146e4c8f16b1a0cecad2f014135` |
+| 1 | `structure` | [State](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CollectLooseBVarsPublic.lean/declarations/state.md) | 24 | `declaration-track:8f3480e15454996e7adbcaf4954eae7c07a8beb3e8dacd8ecca605a463b0123b` |
+| 2 | `abbrev` | [M](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CollectLooseBVarsPublic.lean/declarations/m.md) | 28 | `declaration-track:8e51780e03e365551e6443bd56e4e48a395706df70428313b0314ff0283a0207` |
+| 3 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CollectLooseBVarsPublic.lean/declarations/main.md) | 30 | `declaration-track:4f3f7ad8ffa6369f70f562efcfed99aeceaccfcd510cd4744d0c7d2836fb9d02` |
+| 4 | `def` | [collectLooseBVars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CollectLooseBVarsPublic.lean/declarations/collectloosebvars.md) | 53 | `declaration-track:3cc33acd11d259a96243599ebb51c04cb4c45146e4c8f16b1a0cecad2f014135` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterNamespacedPublicSourceEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterNamespacedPublicSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterNamespacedPublicSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterNamespacedPublicSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Filter](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterNamespacedPublicSourceEdition2.lean/declarations/filter.md) | 19 | `declaration-track:8b167821f1cc81a94c6c1bec80c470340cae5563f31d7f3b39a5350dadac9389` |
-| 2 | `def` | [getGen](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterNamespacedPublicSourceEdition2.lean/declarations/getgen.md) | 29 | `declaration-track:54dfb741c0a11e6d2dffc0fd1d55b11f8806e0394786a8d8208b2c5ff72d4e01` |
-| 3 | `def` | [Filter.eval](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterNamespacedPublicSourceEdition2.lean/declarations/filter-eval.md) | 36 | `declaration-track:1d5811b0477ba985eebdcd2df1c28498f7027ccc52d0dc2dc8d4b85f07c153c6` |
+| 1 | `inductive` | [Filter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterNamespacedPublicSourceEdition2.lean/declarations/filter.md) | 19 | `declaration-track:8b167821f1cc81a94c6c1bec80c470340cae5563f31d7f3b39a5350dadac9389` |
+| 2 | `def` | [getGen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterNamespacedPublicSourceEdition2.lean/declarations/getgen.md) | 29 | `declaration-track:54dfb741c0a11e6d2dffc0fd1d55b11f8806e0394786a8d8208b2c5ff72d4e01` |
+| 3 | `def` | [Filter.eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterNamespacedPublicSourceEdition2.lean/declarations/filter-eval.md) | 36 | `declaration-track:1d5811b0477ba985eebdcd2df1c28498f7027ccc52d0dc2dc8d4b85f07c153c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

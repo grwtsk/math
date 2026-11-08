@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DeprecatedNamespacedPublicDeprecatedCodeActionProvider.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DeprecatedNamespacedPublicDeprecatedCodeActionProvider.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DeprecatedNamespacedPublicDeprecatedCodeActionProvider.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DeprecatedNamespacedPublicDeprecatedCodeActionProvider.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `initialize` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DeprecatedNamespacedPublicDeprecatedCodeActionProvider.lean/declarations/initialize.md) | 34 | `declaration-track:8453b87a87aa8c425946d3987436cc65c59f649972d02d6d3f6fa9092b824f6b` |
-| 2 | `def` | [deprecatedCodeActionProvider](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DeprecatedNamespacedPublicDeprecatedCodeActionProvider.lean/declarations/deprecatedcodeactionprovider.md) | 40 | `declaration-track:668181a804f2e73156fca0e44b7e9d8f5aedc7fdc953d5a0cba0d80338b4dfde` |
+| 1 | `initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DeprecatedNamespacedPublicDeprecatedCodeActionProvider.lean/declarations/initialize.md) | 34 | `declaration-track:8453b87a87aa8c425946d3987436cc65c59f649972d02d6d3f6fa9092b824f6b` |
+| 2 | `def` | [deprecatedCodeActionProvider](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DeprecatedNamespacedPublicDeprecatedCodeActionProvider.lean/declarations/deprecatedcodeactionprovider.md) | 40 | `declaration-track:668181a804f2e73156fca0e44b7e9d8f5aedc7fdc953d5a0cba0d80338b4dfde` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

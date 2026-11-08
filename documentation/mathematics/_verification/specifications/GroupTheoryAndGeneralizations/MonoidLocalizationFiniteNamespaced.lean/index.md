@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationFiniteNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationFiniteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationFiniteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationFiniteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [fg](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationFiniteNamespaced.lean/declarations/fg.md) | 35 | `result-track:4909dc2ca2087cb9b6b54c117e5d89e31bbbfe001ac18c36346a03cce99a14e7` |
-| 2 | `instance` | [instFG](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationFiniteNamespaced.lean/declarations/instfg.md) | 44 | `declaration-track:9fe891784261ef63c371ddb54e726a76afa4cd0b68d8a5dacf6827b81e59140c` |
+| 1 | `lemma` | [fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationFiniteNamespaced.lean/declarations/fg.md) | 35 | `result-track:4909dc2ca2087cb9b6b54c117e5d89e31bbbfe001ac18c36346a03cce99a14e7` |
+| 2 | `instance` | [instFG](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationFiniteNamespaced.lean/declarations/instfg.md) | 44 | `declaration-track:9fe891784261ef63c371ddb54e726a76afa4cd0b68d8a5dacf6827b81e59140c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

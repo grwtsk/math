@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BasicBasicSourceEdition2.lean/index.md) · [Full source](../../../../Combinatorics/BasicBasicSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [BooleanAlgebraCore](../../../../Combinatorics/BasicBasicSourceEdition2.lean/declarations/booleanalgebracore.md) | 17 | `declaration-track:90f6a234be6bb161b90638bf42a6d982bf2923a4c59d0edf2162cd6ec2ecc926` |
-| 2 | `abbrev` | [BooleanAlgebra](../../../../Combinatorics/BasicBasicSourceEdition2.lean/declarations/booleanalgebra.md) | 43 | `declaration-track:b65f0784135f254271aa7ddae80dccc5780e3d8d325873e9a0872eab2b4aeae4` |
+| 1 | `class` | [BooleanAlgebraCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicSourceEdition2.lean/declarations/booleanalgebracore.md) | 17 | `declaration-track:90f6a234be6bb161b90638bf42a6d982bf2923a4c59d0edf2162cd6ec2ecc926` |
+| 2 | `abbrev` | [BooleanAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicSourceEdition2.lean/declarations/booleanalgebra.md) | 43 | `declaration-track:b65f0784135f254271aa7ddae80dccc5780e3d8d325873e9a0872eab2b4aeae4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

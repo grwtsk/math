@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonRadialGlobalComparison.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonRadialGlobalComparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonRadialGlobalComparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonRadialGlobalComparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionRadius`](../../../../GeneralTopology/SurfacePolygonAdjunctionRadius.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionRadius`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionRadius.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [forward_preserves_radius](../../../../AlgebraicTopology/SurfacePolygonRadialGlobalComparison.lean/declarations/forward-preserves-radius.md) | 28 | `result-track:d6f130c94f05027a6c87a06705ef52da94beced0f6dbb739feed72953b519da5` |
-| 2 | `theorem` | [reverse_preserves_radius](../../../../AlgebraicTopology/SurfacePolygonRadialGlobalComparison.lean/declarations/reverse-preserves-radius.md) | 40 | `result-track:bf4893eba4b22757d6c2f8bd42e6ba5e4964771c911b355d82cebeb965e617c7` |
-| 3 | `theorem` | [homeomorph_preserves_radius](../../../../AlgebraicTopology/SurfacePolygonRadialGlobalComparison.lean/declarations/homeomorph-preserves-radius.md) | 47 | `result-track:3d9d3ba46769b58a176cb00d2270a437c2262bb038043c52289d6c699e2eaae3` |
+| 1 | `theorem` | [forward_preserves_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonRadialGlobalComparison.lean/declarations/forward-preserves-radius.md) | 28 | `result-track:d6f130c94f05027a6c87a06705ef52da94beced0f6dbb739feed72953b519da5` |
+| 2 | `theorem` | [reverse_preserves_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonRadialGlobalComparison.lean/declarations/reverse-preserves-radius.md) | 40 | `result-track:bf4893eba4b22757d6c2f8bd42e6ba5e4964771c911b355d82cebeb965e617c7` |
+| 3 | `theorem` | [homeomorph_preserves_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonRadialGlobalComparison.lean/declarations/homeomorph-preserves-radius.md) | 47 | `result-track:3d9d3ba46769b58a176cb00d2270a437c2262bb038043c52289d6c699e2eaae3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

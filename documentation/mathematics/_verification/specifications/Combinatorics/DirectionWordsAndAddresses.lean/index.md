@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DirectionWordsAndAddresses.lean/index.md) · [Full source](../../../../Combinatorics/DirectionWordsAndAddresses.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectionWordsAndAddresses.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectionWordsAndAddresses.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Direction](../../../../Combinatorics/DirectionWordsAndAddresses.lean/declarations/direction.md) | 39 | `declaration-track:65173990c634e8e8ba574fe7d867820580eb6f3ba963b2f3211a4f3781bba92a` |
-| 2 | `abbrev` | [Address](../../../../Combinatorics/DirectionWordsAndAddresses.lean/declarations/address.md) | 44 | `declaration-track:f19b37f061d33a094df67bd0a721f366fd7e30875e2238a13c87a93b3fce7f70` |
+| 1 | `inductive` | [Direction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectionWordsAndAddresses.lean/declarations/direction.md) | 39 | `declaration-track:65173990c634e8e8ba574fe7d867820580eb6f3ba963b2f3211a4f3781bba92a` |
+| 2 | `abbrev` | [Address](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectionWordsAndAddresses.lean/declarations/address.md) | 44 | `declaration-track:f19b37f061d33a094df67bd0a721f366fd7e30875e2238a13c87a93b3fce7f70` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

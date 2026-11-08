@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Transport.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Transport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Transport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Transport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.OrientedRealLine.Coherence`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Coherence.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.LinearAlgebra.OrientedRealLine.FiniteComparison`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteComparison.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.ArithmeticGeometry.LogThetaComparison`](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.OrientedRealLine.Coherence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Coherence.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.OrientedRealLine.FiniteComparison`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteComparison.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.ArithmeticGeometry.LogThetaComparison`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Transport.lean/declarations/example-source-edition-3.md) | 13 | `declaration-track:5718b2821d450d4b4105f138153b6e426ae310a017c71d7d35fdbee2f6087632` |
-| 2 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Transport.lean/declarations/example-source-edition-2.md) | 16 | `declaration-track:100af6ec49f2f629627f96bdf90ef5f2eb8e05ec9ed370aa280f22088bc6414a` |
-| 3 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Transport.lean/declarations/example-source-edition-5.md) | 23 | `declaration-track:a6df1f16fb83fe5c31a4a606aeefa223ac88d67b2b9a67301f0b9bca50986a82` |
-| 4 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Transport.lean/declarations/example-source-edition-4.md) | 28 | `declaration-track:978e4ca5201f06891d3e6064df641935ff20ae20d666c8043dc15d8b7bf7f4a1` |
-| 5 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Transport.lean/declarations/example-source-edition-6.md) | 33 | `declaration-track:d15126b7cad439cceeeb7bff06f14b736b39f81bae2f3997b221c77f8d6c31b2` |
-| 6 | `def` | [numericalRepair](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Transport.lean/declarations/numericalrepair.md) | 40 | `declaration-track:d6e5b2c5bf5b95d028cd5a33271641e8c5c9dddac5fa4ff8377aaa6d942026c4` |
-| 7 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Transport.lean/declarations/example.md) | 56 | `declaration-track:0dc74ba4f26a6ebd21ed5f4b30adab52399cfd094208a2a8f58829311cc99c45` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Transport.lean/declarations/example-source-edition-3.md) | 13 | `declaration-track:5718b2821d450d4b4105f138153b6e426ae310a017c71d7d35fdbee2f6087632` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Transport.lean/declarations/example-source-edition-2.md) | 16 | `declaration-track:100af6ec49f2f629627f96bdf90ef5f2eb8e05ec9ed370aa280f22088bc6414a` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Transport.lean/declarations/example-source-edition-5.md) | 23 | `declaration-track:a6df1f16fb83fe5c31a4a606aeefa223ac88d67b2b9a67301f0b9bca50986a82` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Transport.lean/declarations/example-source-edition-4.md) | 28 | `declaration-track:978e4ca5201f06891d3e6064df641935ff20ae20d666c8043dc15d8b7bf7f4a1` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Transport.lean/declarations/example-source-edition-6.md) | 33 | `declaration-track:d15126b7cad439cceeeb7bff06f14b736b39f81bae2f3997b221c77f8d6c31b2` |
+| 6 | `def` | [numericalRepair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Transport.lean/declarations/numericalrepair.md) | 40 | `declaration-track:d6e5b2c5bf5b95d028cd5a33271641e8c5c9dddac5fa4ff8377aaa6d942026c4` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Transport.lean/declarations/example.md) | 56 | `declaration-track:0dc74ba4f26a6ebd21ed5f4b30adab52399cfd094208a2a8f58829311cc99c45` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

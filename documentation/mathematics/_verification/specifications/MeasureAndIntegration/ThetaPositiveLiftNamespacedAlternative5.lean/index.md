@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternative5.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternative5.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternative5.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternative5.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [differentiable_thetaTail](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternative5.lean/declarations/differentiable-thetatail.md) | 29 | `result-track:4c62f367f5bc39948ebffbeb9936ea4f15153f5b81928d511421cff2a38247cc` |
-| 2 | `theorem` | [deriv_thetaTail_integrableOn](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternative5.lean/declarations/deriv-thetatail-integrableon.md) | 35 | `result-track:52fb41526f88b47fe41f036c91846de49ed2cc58524ef422f24f4db91de47d0d` |
-| 3 | `theorem` | [thetaTail_succ_eq_integral](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternative5.lean/declarations/thetatail-succ-eq-integral.md) | 44 | `result-track:4c7714d973ab4f4b1dc29c671fdd5c2f0bfe1ab8e63cff22338b8f852b72bf55` |
-| 4 | `theorem` | [thetaTail_succ_integral_add](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternative5.lean/declarations/thetatail-succ-integral-add.md) | 55 | `result-track:d6dd499685072990b2d265e35d8ae3643408cf0b6956450ed5a0b960b23115f8` |
-| 5 | `theorem` | [thetaTail_logSlope_antitone](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternative5.lean/declarations/thetatail-logslope-antitone.md) | 61 | `result-track:b2da3f4f26b29b17c57222ab7c2afa98463d87b0ad7f15bffe6eacdbecbf3578` |
-| 6 | `theorem` | [thetaTail_succ_div_antitone](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternative5.lean/declarations/thetatail-succ-div-antitone.md) | 82 | `result-track:82303c6fd25b3c5173347f2048bf3cd0747af94cea5936481e8799efc03ef9c4` |
+| 1 | `theorem` | [differentiable_thetaTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternative5.lean/declarations/differentiable-thetatail.md) | 29 | `result-track:4c62f367f5bc39948ebffbeb9936ea4f15153f5b81928d511421cff2a38247cc` |
+| 2 | `theorem` | [deriv_thetaTail_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternative5.lean/declarations/deriv-thetatail-integrableon.md) | 35 | `result-track:52fb41526f88b47fe41f036c91846de49ed2cc58524ef422f24f4db91de47d0d` |
+| 3 | `theorem` | [thetaTail_succ_eq_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternative5.lean/declarations/thetatail-succ-eq-integral.md) | 44 | `result-track:4c7714d973ab4f4b1dc29c671fdd5c2f0bfe1ab8e63cff22338b8f852b72bf55` |
+| 4 | `theorem` | [thetaTail_succ_integral_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternative5.lean/declarations/thetatail-succ-integral-add.md) | 55 | `result-track:d6dd499685072990b2d265e35d8ae3643408cf0b6956450ed5a0b960b23115f8` |
+| 5 | `theorem` | [thetaTail_logSlope_antitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternative5.lean/declarations/thetatail-logslope-antitone.md) | 61 | `result-track:b2da3f4f26b29b17c57222ab7c2afa98463d87b0ad7f15bffe6eacdbecbf3578` |
+| 6 | `theorem` | [thetaTail_succ_div_antitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternative5.lean/declarations/thetatail-succ-div-antitone.md) | 82 | `result-track:82303c6fd25b3c5173347f2048bf3cd0747af94cea5936481e8799efc03ef9c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategoryBasic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategoryBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategoryBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategoryBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [discreteFintype](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategoryBasic.lean/declarations/discretefintype.md) | 30 | `declaration-track:7eca0880890c2564c8cbd677696ba76e02221c7856ab34ead9dd632c73614c6b` |
-| 2 | `instance` | [discreteHomFintype](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategoryBasic.lean/declarations/discretehomfintype.md) | 33 | `declaration-track:6954136539321733b3ac8be2c0f9a5f5b8b25d57df4c8e16132ced0253712400` |
-| 3 | `class` | [FinCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategoryBasic.lean/declarations/fincategory.md) | 38 | `declaration-track:16b3e517a1c86354d40366f9649a85caa13878344cd740418686fb142906c819` |
-| 4 | `instance` | [finCategoryDiscreteOfFintype](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategoryBasic.lean/declarations/fincategorydiscreteoffintype.md) | 44 | `declaration-track:2ce1dcd4cd3267cdda93dfa3f227ab5c286f7b48bb69f19d24307aa7614020d8` |
-| 5 | `instance` | [finCategoryOpposite](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategoryBasic.lean/declarations/fincategoryopposite.md) | 50 | `declaration-track:f8934c1ed2acd9163817523b0e3363997270358dea8240d5529a61f7dfcb64db` |
-| 6 | `instance` | [finCategoryUlift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategoryBasic.lean/declarations/fincategoryulift.md) | 55 | `declaration-track:05399e3c0a7c28524fe1ee0851b0f804f4c37829c6f864a3afb9838d8f192bc3` |
+| 1 | `instance` | [discreteFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategoryBasic.lean/declarations/discretefintype.md) | 30 | `declaration-track:7eca0880890c2564c8cbd677696ba76e02221c7856ab34ead9dd632c73614c6b` |
+| 2 | `instance` | [discreteHomFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategoryBasic.lean/declarations/discretehomfintype.md) | 33 | `declaration-track:6954136539321733b3ac8be2c0f9a5f5b8b25d57df4c8e16132ced0253712400` |
+| 3 | `class` | [FinCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategoryBasic.lean/declarations/fincategory.md) | 38 | `declaration-track:16b3e517a1c86354d40366f9649a85caa13878344cd740418686fb142906c819` |
+| 4 | `instance` | [finCategoryDiscreteOfFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategoryBasic.lean/declarations/fincategorydiscreteoffintype.md) | 44 | `declaration-track:2ce1dcd4cd3267cdda93dfa3f227ab5c286f7b48bb69f19d24307aa7614020d8` |
+| 5 | `instance` | [finCategoryOpposite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategoryBasic.lean/declarations/fincategoryopposite.md) | 50 | `declaration-track:f8934c1ed2acd9163817523b0e3363997270358dea8240d5529a61f7dfcb64db` |
+| 6 | `instance` | [finCategoryUlift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategoryBasic.lean/declarations/fincategoryulift.md) | 55 | `declaration-track:05399e3c0a7c28524fe1ee0851b0f804f4c37829c6f864a3afb9838d8f192bc3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

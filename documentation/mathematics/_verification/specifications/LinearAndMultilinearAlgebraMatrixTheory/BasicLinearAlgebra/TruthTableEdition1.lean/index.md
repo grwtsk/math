@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [TruthTable](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/declarations/truthtable.md) | 7 | `declaration-track:a8f3fa211a7213604e83797afb7fda46037b331fb60ac7d0e1a06d1ead745934` |
-| 2 | `def` | [TruthTable.rows](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/declarations/truthtable-rows.md) | 11 | `declaration-track:c916942b3cb12e0db597bb6de3f7bee0b3e20cef8f1fdd2b0432b37234b60a8a` |
-| 3 | `def` | [TruthTable.toMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/declarations/truthtable-tomatrix.md) | 21 | `declaration-track:24db2a7443fbd07a6b11cf41cc25bdc3aedf4c2693ed7eb84283bfa91cfd8edb` |
-| 4 | `def` | [TruthTable.minterm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/declarations/truthtable-minterm.md) | 30 | `declaration-track:b1668fa6f8ed8562cf6b5664fac22d4a002b56433553f043097b5f4d1e5f04e2` |
-| 5 | `def` | [TruthTable.trueInputs](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/declarations/truthtable-trueinputs.md) | 39 | `declaration-track:70f7d7034a802abe87f45e3d2f4cda0ea2e3c7b6ff8643392f21a4851a719274` |
-| 6 | `def` | [TruthTable.toSOP](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/declarations/truthtable-tosop.md) | 49 | `declaration-track:540955b0c085773fc8a9b3bfd4752ab6ca9277ea778db15921ee56af67f03fe1` |
-| 7 | `def` | [TruthTable.toTree](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/declarations/truthtable-totree.md) | 54 | `declaration-track:78e5a769f719bcac88238032353d33d22479673346bb800bea4e6f1fdeaae5f8` |
-| 8 | `def` | [TruthTable.toSOPMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/declarations/truthtable-tosopmatrix.md) | 59 | `declaration-track:3d715c9fecef5681d768d9283e85849a5c2082954eb91e7ffdc704c6f3a99171` |
+| 1 | `abbrev` | [TruthTable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/declarations/truthtable.md) | 7 | `declaration-track:a8f3fa211a7213604e83797afb7fda46037b331fb60ac7d0e1a06d1ead745934` |
+| 2 | `def` | [TruthTable.rows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/declarations/truthtable-rows.md) | 11 | `declaration-track:c916942b3cb12e0db597bb6de3f7bee0b3e20cef8f1fdd2b0432b37234b60a8a` |
+| 3 | `def` | [TruthTable.toMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/declarations/truthtable-tomatrix.md) | 21 | `declaration-track:24db2a7443fbd07a6b11cf41cc25bdc3aedf4c2693ed7eb84283bfa91cfd8edb` |
+| 4 | `def` | [TruthTable.minterm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/declarations/truthtable-minterm.md) | 30 | `declaration-track:b1668fa6f8ed8562cf6b5664fac22d4a002b56433553f043097b5f4d1e5f04e2` |
+| 5 | `def` | [TruthTable.trueInputs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/declarations/truthtable-trueinputs.md) | 39 | `declaration-track:70f7d7034a802abe87f45e3d2f4cda0ea2e3c7b6ff8643392f21a4851a719274` |
+| 6 | `def` | [TruthTable.toSOP](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/declarations/truthtable-tosop.md) | 49 | `declaration-track:540955b0c085773fc8a9b3bfd4752ab6ca9277ea778db15921ee56af67f03fe1` |
+| 7 | `def` | [TruthTable.toTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/declarations/truthtable-totree.md) | 54 | `declaration-track:78e5a769f719bcac88238032353d33d22479673346bb800bea4e6f1fdeaae5f8` |
+| 8 | `def` | [TruthTable.toSOPMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TruthTableEdition1.lean/declarations/truthtable-tosopmatrix.md) | 59 | `declaration-track:3d715c9fecef5681d768d9283e85849a5c2082954eb91e7ffdc704c6f3a99171` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/QuadraticIntervalKernel.lean/index.md) · [Full source](../../../../NumberTheory/QuadraticIntervalKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervalKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervalKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.IntervalMellinKernel`](../../../../MeasureAndIntegration/IntervalMellinKernel.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.QuadraticIntervals`](../../../../NumberTheory/QuadraticIntervals.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.IntervalMellinKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntervalMellinKernel.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.QuadraticIntervals`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervals.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [squareKernel](../../../../NumberTheory/QuadraticIntervalKernel.lean/declarations/squarekernel.md) | 26 | `declaration-track:a6b63f5ecec88ba9eb77da1565635c4986148338aa5c1ffdf26345f91a550ed4` |
-| 2 | `theorem` | [squareEndpoint_strict_order](../../../../NumberTheory/QuadraticIntervalKernel.lean/declarations/squareendpoint-strict-order.md) | 29 | `result-track:b7b33937f81c6da725c3e713e438858b64fdd66b986bcbd30c1bbd9c8f61ffc5` |
-| 3 | `theorem` | [differentiable_squareKernel](../../../../NumberTheory/QuadraticIntervalKernel.lean/declarations/differentiable-squarekernel.md) | 35 | `result-track:d5948bca5120c328eb5720bdc4e9bb050a819264bb03a6316828e2ff7f0d8988` |
-| 4 | `theorem` | [squareKernel_eq_quotient](../../../../NumberTheory/QuadraticIntervalKernel.lean/declarations/squarekernel-eq-quotient.md) | 39 | `result-track:bc25208c3273a6a4f158f52052feb9bb71e6efaf55aa337c30f7f13fd7d98e23` |
-| 5 | `theorem` | [squareKernel_zero](../../../../NumberTheory/QuadraticIntervalKernel.lean/declarations/squarekernel-zero.md) | 44 | `result-track:dc5a841e08baa2e761e0c6c9d630bfb7039581a27c6b3c84ffc93c4dd96f076e` |
-| 6 | `theorem` | [squareKernel_zero_ne_zero](../../../../NumberTheory/QuadraticIntervalKernel.lean/declarations/squarekernel-zero-ne-zero.md) | 49 | `result-track:69db8245fb2af3026c70ff5fcddda92eb61c5ce3a041d84e942e9cc32b45d17a` |
-| 7 | `theorem` | [squareKernel_one](../../../../NumberTheory/QuadraticIntervalKernel.lean/declarations/squarekernel-one.md) | 53 | `result-track:d43574623e5a432221fa79368022e783f84219cb1f1a9b8afce14d11c8387dda` |
-| 8 | `theorem` | [norm_squareKernel_sub_le](../../../../NumberTheory/QuadraticIntervalKernel.lean/declarations/norm-squarekernel-sub-le.md) | 56 | `result-track:2f4306e66f540f1ce7bbe92f0f9ae12d5e3ad7af417d072072ed0a5815e43d0b` |
-| 9 | `theorem` | [square_finite_enclosure_error](../../../../NumberTheory/QuadraticIntervalKernel.lean/declarations/square-finite-enclosure-error.md) | 65 | `result-track:61b4c05bec7cdd34a4a4870b05812c5cd96c944d43ec981b8fe8112b92fbde15` |
+| 1 | `def` | [squareKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervalKernel.lean/declarations/squarekernel.md) | 26 | `declaration-track:a6b63f5ecec88ba9eb77da1565635c4986148338aa5c1ffdf26345f91a550ed4` |
+| 2 | `theorem` | [squareEndpoint_strict_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervalKernel.lean/declarations/squareendpoint-strict-order.md) | 29 | `result-track:b7b33937f81c6da725c3e713e438858b64fdd66b986bcbd30c1bbd9c8f61ffc5` |
+| 3 | `theorem` | [differentiable_squareKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervalKernel.lean/declarations/differentiable-squarekernel.md) | 35 | `result-track:d5948bca5120c328eb5720bdc4e9bb050a819264bb03a6316828e2ff7f0d8988` |
+| 4 | `theorem` | [squareKernel_eq_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervalKernel.lean/declarations/squarekernel-eq-quotient.md) | 39 | `result-track:bc25208c3273a6a4f158f52052feb9bb71e6efaf55aa337c30f7f13fd7d98e23` |
+| 5 | `theorem` | [squareKernel_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervalKernel.lean/declarations/squarekernel-zero.md) | 44 | `result-track:dc5a841e08baa2e761e0c6c9d630bfb7039581a27c6b3c84ffc93c4dd96f076e` |
+| 6 | `theorem` | [squareKernel_zero_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervalKernel.lean/declarations/squarekernel-zero-ne-zero.md) | 49 | `result-track:69db8245fb2af3026c70ff5fcddda92eb61c5ce3a041d84e942e9cc32b45d17a` |
+| 7 | `theorem` | [squareKernel_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervalKernel.lean/declarations/squarekernel-one.md) | 53 | `result-track:d43574623e5a432221fa79368022e783f84219cb1f1a9b8afce14d11c8387dda` |
+| 8 | `theorem` | [norm_squareKernel_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervalKernel.lean/declarations/norm-squarekernel-sub-le.md) | 56 | `result-track:2f4306e66f540f1ce7bbe92f0f9ae12d5e3ad7af417d072072ed0a5815e43d0b` |
+| 9 | `theorem` | [square_finite_enclosure_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervalKernel.lean/declarations/square-finite-enclosure-error.md) | 65 | `result-track:61b4c05bec7cdd34a4a4870b05812c5cd96c944d43ec981b8fe8112b92fbde15` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

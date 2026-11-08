@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctorNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [map_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctorNamespaced.lean/declarations/map-id.md) | 31 | `result-track:b9e607dd4157eeed80a8aac5075e256902a6d856ad0004c09e243c4315f495ec` |
-| 2 | `theorem` | [map_id_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctorNamespaced.lean/declarations/map-id-comp.md) | 36 | `result-track:5147117b892643f1eac99e5fca1804caad315fa0b576012f6bbb3290c2bc9032` |
-| 3 | `theorem` | [map_comp_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctorNamespaced.lean/declarations/map-comp-id.md) | 42 | `result-track:a51ac36ec5e644f31ebe127ed0a6186f0b1dda9a4cad325b2c61624131e0d344` |
-| 4 | `theorem` | [diagonal](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctorNamespaced.lean/declarations/diagonal-source-edition-2.md) | 48 | `result-track:da0f130acf7d4636e65113caa0259545c58ce960a883457781b58df03f05b920` |
-| 5 | `theorem` | [diagonal'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctorNamespaced.lean/declarations/diagonal.md) | 54 | `result-track:460796ff8b758619db3be0b7ac9dc4e7d45bbadfac1dcfd2896266177fc8b054` |
+| 1 | `theorem` | [map_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctorNamespaced.lean/declarations/map-id.md) | 31 | `result-track:b9e607dd4157eeed80a8aac5075e256902a6d856ad0004c09e243c4315f495ec` |
+| 2 | `theorem` | [map_id_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctorNamespaced.lean/declarations/map-id-comp.md) | 36 | `result-track:5147117b892643f1eac99e5fca1804caad315fa0b576012f6bbb3290c2bc9032` |
+| 3 | `theorem` | [map_comp_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctorNamespaced.lean/declarations/map-comp-id.md) | 42 | `result-track:a51ac36ec5e644f31ebe127ed0a6186f0b1dda9a4cad325b2c61624131e0d344` |
+| 4 | `theorem` | [diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctorNamespaced.lean/declarations/diagonal-source-edition-2.md) | 48 | `result-track:da0f130acf7d4636e65113caa0259545c58ce960a883457781b58df03f05b920` |
+| 5 | `theorem` | [diagonal'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctorNamespaced.lean/declarations/diagonal.md) | 54 | `result-track:460796ff8b758619db3be0b7ac9dc4e7d45bbadfac1dcfd2896266177fc8b054` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

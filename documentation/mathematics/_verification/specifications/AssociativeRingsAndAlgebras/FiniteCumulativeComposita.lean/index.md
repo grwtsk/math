@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/FiniteCumulativeComposita.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/FiniteCumulativeComposita.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCumulativeComposita.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCumulativeComposita.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cumulativeField](../../../../AssociativeRingsAndAlgebras/FiniteCumulativeComposita.lean/declarations/cumulativefield.md) | 27 | `declaration-track:e7edda5ac0d821233c8c8bd0369106c20f66f9dcbf73e094bbc61b80698dfb81` |
-| 2 | `theorem` | [cumulative_field_mono](../../../../AssociativeRingsAndAlgebras/FiniteCumulativeComposita.lean/declarations/cumulative-field-mono.md) | 31 | `result-track:3354faaae01d08a13044d2b6391f16c1143260c39d5a68b32cd62147033878c5` |
-| 3 | `theorem` | [component_le_cumulative](../../../../AssociativeRingsAndAlgebras/FiniteCumulativeComposita.lean/declarations/component-le-cumulative.md) | 36 | `result-track:fbd418b9bfe9457135679bcc95496b154f996ea2a8612bbe5021e455d2f53e25` |
-| 4 | `def` | [cumulativeInclusion](../../../../AssociativeRingsAndAlgebras/FiniteCumulativeComposita.lean/declarations/cumulativeinclusion.md) | 41 | `declaration-track:036538f39f0fdb79fedd05ff4aafe0658f442ac43236404dc5dbf11d967ef3ec` |
-| 5 | `theorem` | [cumulative_inclusion_comp](../../../../AssociativeRingsAndAlgebras/FiniteCumulativeComposita.lean/declarations/cumulative-inclusion-comp.md) | 46 | `result-track:c248ab18f82f2c5d15c203033d6bfbe901d54c85ee8dad480888174f39b05ba4` |
+| 1 | `def` | [cumulativeField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCumulativeComposita.lean/declarations/cumulativefield.md) | 27 | `declaration-track:e7edda5ac0d821233c8c8bd0369106c20f66f9dcbf73e094bbc61b80698dfb81` |
+| 2 | `theorem` | [cumulative_field_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCumulativeComposita.lean/declarations/cumulative-field-mono.md) | 31 | `result-track:3354faaae01d08a13044d2b6391f16c1143260c39d5a68b32cd62147033878c5` |
+| 3 | `theorem` | [component_le_cumulative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCumulativeComposita.lean/declarations/component-le-cumulative.md) | 36 | `result-track:fbd418b9bfe9457135679bcc95496b154f996ea2a8612bbe5021e455d2f53e25` |
+| 4 | `def` | [cumulativeInclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCumulativeComposita.lean/declarations/cumulativeinclusion.md) | 41 | `declaration-track:036538f39f0fdb79fedd05ff4aafe0658f442ac43236404dc5dbf11d967ef3ec` |
+| 5 | `theorem` | [cumulative_inclusion_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCumulativeComposita.lean/declarations/cumulative-inclusion-comp.md) | 46 | `result-track:c248ab18f82f2c5d15c203033d6bfbe901d54c85ee8dad480888174f39b05ba4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

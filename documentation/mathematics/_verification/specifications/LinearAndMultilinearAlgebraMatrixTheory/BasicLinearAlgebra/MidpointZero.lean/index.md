@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MidpointZero.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MidpointZero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MidpointZero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MidpointZero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lineMap_inv_two](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MidpointZero.lean/declarations/linemap-inv-two.md) | 22 | `result-track:d650cbd34540020d26b1e0e7fb406e6d4bc8424f93089c6b710dcab33ad593a5` |
-| 2 | `theorem` | [lineMap_one_half](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MidpointZero.lean/declarations/linemap-one-half.md) | 26 | `result-track:37be6e40fa9ccddd75e6fa5ee69f17861b8232df3e861ed211a180aa904bdd13` |
-| 3 | `theorem` | [homothety_invOf_two](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MidpointZero.lean/declarations/homothety-invof-two.md) | 30 | `result-track:25bb554041367cf89ddfb11412f193b176bd806ca5c69c52ea6f7ed84c066ad6` |
-| 4 | `theorem` | [homothety_inv_two](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MidpointZero.lean/declarations/homothety-inv-two.md) | 35 | `result-track:6a8d57053b1ada2662242f337f61adb032f5363b000a687346f72b7b6fb0be5e` |
-| 5 | `theorem` | [homothety_one_half](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MidpointZero.lean/declarations/homothety-one-half.md) | 39 | `result-track:d2b47f2b5fdba078f4530d2ea0e2ef8957f04c844f9d0a0a9a36f5513b38ec1a` |
-| 6 | `theorem` | [pi_midpoint_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MidpointZero.lean/declarations/pi-midpoint-apply.md) | 44 | `result-track:43b5e11a0c4a88ba426d3f86c9dcc4595ae4c74948c0b347a7363c14ea8ac367` |
+| 1 | `theorem` | [lineMap_inv_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MidpointZero.lean/declarations/linemap-inv-two.md) | 22 | `result-track:d650cbd34540020d26b1e0e7fb406e6d4bc8424f93089c6b710dcab33ad593a5` |
+| 2 | `theorem` | [lineMap_one_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MidpointZero.lean/declarations/linemap-one-half.md) | 26 | `result-track:37be6e40fa9ccddd75e6fa5ee69f17861b8232df3e861ed211a180aa904bdd13` |
+| 3 | `theorem` | [homothety_invOf_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MidpointZero.lean/declarations/homothety-invof-two.md) | 30 | `result-track:25bb554041367cf89ddfb11412f193b176bd806ca5c69c52ea6f7ed84c066ad6` |
+| 4 | `theorem` | [homothety_inv_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MidpointZero.lean/declarations/homothety-inv-two.md) | 35 | `result-track:6a8d57053b1ada2662242f337f61adb032f5363b000a687346f72b7b6fb0be5e` |
+| 5 | `theorem` | [homothety_one_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MidpointZero.lean/declarations/homothety-one-half.md) | 39 | `result-track:d2b47f2b5fdba078f4530d2ea0e2ef8957f04c844f9d0a0a9a36f5513b38ec1a` |
+| 6 | `theorem` | [pi_midpoint_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MidpointZero.lean/declarations/pi-midpoint-apply.md) | 44 | `result-track:43b5e11a0c4a88ba426d3f86c9dcc4595ae4c74948c0b347a7363c14ea8ac367` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

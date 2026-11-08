@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TT08TransportComposition.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TT08TransportComposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TT08TransportComposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TT08TransportComposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tt08_transportComposition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TT08TransportComposition.lean/declarations/tt08-transportcomposition.md) | 14 | `result-track:a44a4406bf70bceb0e2b9f4c6cfc5793d0184709688cddab45c7b72f84b33199` |
+| 1 | `theorem` | [tt08_transportComposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TT08TransportComposition.lean/declarations/tt08-transportcomposition.md) | 14 | `result-track:a44a4406bf70bceb0e2b9f4c6cfc5793d0184709688cddab45c7b72f84b33199` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

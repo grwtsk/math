@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteSumsProductsSumsProductsNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteSumsProductsSumsProductsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteSumsProductsSumsProductsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteSumsProductsSumsProductsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [productEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteSumsProductsSumsProductsNamespaced.lean/declarations/productequiv.md) | 42 | `declaration-track:2ac8d1df983a2604243db18b14230c0bacf78c9fb5ec66e70843ff01680a3024` |
-| 2 | `def` | [sumEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteSumsProductsSumsProductsNamespaced.lean/declarations/sumequiv.md) | 53 | `declaration-track:979a80c88d2d97f5db41c4bd1dafb8524dcd7badb4df9dc478549c6a0d981b7a` |
-| 3 | `instance` | [prod](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteSumsProductsSumsProductsNamespaced.lean/declarations/prod.md) | 76 | `declaration-track:358185215976f9fab722ce829ef95f89734ef8498ef08ecb8bea1d348644b179` |
-| 4 | `instance` | [sum](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteSumsProductsSumsProductsNamespaced.lean/declarations/sum.md) | 81 | `declaration-track:79fe7b9d71b1610a9bad5ec3cc2692d0a45db5ed89569b282a724a39e8d8ce26` |
+| 1 | `def` | [productEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteSumsProductsSumsProductsNamespaced.lean/declarations/productequiv.md) | 42 | `declaration-track:2ac8d1df983a2604243db18b14230c0bacf78c9fb5ec66e70843ff01680a3024` |
+| 2 | `def` | [sumEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteSumsProductsSumsProductsNamespaced.lean/declarations/sumequiv.md) | 53 | `declaration-track:979a80c88d2d97f5db41c4bd1dafb8524dcd7badb4df9dc478549c6a0d981b7a` |
+| 3 | `instance` | [prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteSumsProductsSumsProductsNamespaced.lean/declarations/prod.md) | 76 | `declaration-track:358185215976f9fab722ce829ef95f89734ef8498ef08ecb8bea1d348644b179` |
+| 4 | `instance` | [sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteSumsProductsSumsProductsNamespaced.lean/declarations/sum.md) | 81 | `declaration-track:79fe7b9d71b1610a9bad5ec3cc2692d0a45db5ed89569b282a724a39e8d8ce26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

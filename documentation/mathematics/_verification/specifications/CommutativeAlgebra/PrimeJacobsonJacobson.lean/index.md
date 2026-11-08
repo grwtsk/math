@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PrimeJacobsonJacobson.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PrimeJacobsonJacobson.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeJacobsonJacobson.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeJacobsonJacobson.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [exists_isClosed_singleton_of_isJacobsonRing](../../../../CommutativeAlgebra/PrimeJacobsonJacobson.lean/declarations/exists-isclosed-singleton-of-isjacobsonring.md) | 30 | `result-track:d76f9676d18a7377a8b140f74f89d805226838218edf8cb310f1d583585fcec7` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/PrimeJacobsonJacobson.lean/declarations/instance.md) | 45 | `declaration-track:a666911d721bdd799b3005454cb6c0ea0926989e82c053b2e1f47cdd5725a6c9` |
-| 3 | `lemma` | [isJacobsonRing_iff_jacobsonSpace](../../../../CommutativeAlgebra/PrimeJacobsonJacobson.lean/declarations/isjacobsonring-iff-jacobsonspace.md) | 57 | `result-track:e2926ecf3abb127a41cdd004729b4e2f1378f3505f4d0a5704c968bc2b143e46` |
-| 4 | `lemma` | [isOpen_singleton_tfae_of_isNoetherian_of_isJacobsonRing](../../../../CommutativeAlgebra/PrimeJacobsonJacobson.lean/declarations/isopen-singleton-tfae-of-isnoetherian-of-isjacobsonring.md) | 76 | `result-track:1de6af2ce30f5a03f7991ccf7b6c42f278241b2194027550b0357275cb523121` |
+| 1 | `lemma` | [exists_isClosed_singleton_of_isJacobsonRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeJacobsonJacobson.lean/declarations/exists-isclosed-singleton-of-isjacobsonring.md) | 30 | `result-track:d76f9676d18a7377a8b140f74f89d805226838218edf8cb310f1d583585fcec7` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeJacobsonJacobson.lean/declarations/instance.md) | 45 | `declaration-track:a666911d721bdd799b3005454cb6c0ea0926989e82c053b2e1f47cdd5725a6c9` |
+| 3 | `lemma` | [isJacobsonRing_iff_jacobsonSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeJacobsonJacobson.lean/declarations/isjacobsonring-iff-jacobsonspace.md) | 57 | `result-track:e2926ecf3abb127a41cdd004729b4e2f1378f3505f4d0a5704c968bc2b143e46` |
+| 4 | `lemma` | [isOpen_singleton_tfae_of_isNoetherian_of_isJacobsonRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeJacobsonJacobson.lean/declarations/isopen-singleton-tfae-of-isnoetherian-of-isjacobsonring.md) | 76 | `result-track:1de6af2ce30f5a03f7991ccf7b6c42f278241b2194027550b0357275cb523121` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

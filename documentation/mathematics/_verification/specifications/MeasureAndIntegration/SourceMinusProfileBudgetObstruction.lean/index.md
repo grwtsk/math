@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceMinusProfileBudgetObstruction.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceMinusProfileBudgetObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMinusProfileBudgetObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMinusProfileBudgetObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [minusCorrelationKernel](../../../../MeasureAndIntegration/SourceMinusProfileBudgetObstruction.lean/declarations/minuscorrelationkernel.md) | 24 | `declaration-track:88464268e86ab3e165d9e3117381f6c8f6bfde55a86e691f3077d8df24084588` |
-| 2 | `def` | [minusProfileEnvelope](../../../../MeasureAndIntegration/SourceMinusProfileBudgetObstruction.lean/declarations/minusprofileenvelope.md) | 29 | `declaration-track:ed0cd517cd39cf9a568f64cc6c755329fe817cb61c5088bacef57cc17656b9a0` |
-| 3 | `theorem` | [minus_kernel_le_neg_sixteenth](../../../../MeasureAndIntegration/SourceMinusProfileBudgetObstruction.lean/declarations/minus-kernel-le-neg-sixteenth.md) | 33 | `result-track:d1444dd1150d8ed8e2c39a94b8d9b249999663bba7426118210196bb85b48426` |
-| 4 | `theorem` | [minus_profile_envelope_lower](../../../../MeasureAndIntegration/SourceMinusProfileBudgetObstruction.lean/declarations/minus-profile-envelope-lower.md) | 49 | `result-track:223e0be97ad80819bcf2c80170c007327abaf247fad35a3c6743b9bad7093b01` |
-| 5 | `theorem` | [minus_profile_envelope_ge_linear](../../../../MeasureAndIntegration/SourceMinusProfileBudgetObstruction.lean/declarations/minus-profile-envelope-ge-linear.md) | 88 | `result-track:0f1c0a6ad3116e3bedcf9ad2de41e3a00e778c7219818cc21f290def3830baba` |
-| 6 | `theorem` | [probe_interval_inside_complete_tail](../../../../MeasureAndIntegration/SourceMinusProfileBudgetObstruction.lean/declarations/probe-interval-inside-complete-tail.md) | 103 | `result-track:8c9d8ff092425c44e81e7d96584a114fe52429c9c8bb8770a27f1ac2e0f0391e` |
-| 7 | `theorem` | [minus_profile_envelope_not_eventually_bounded](../../../../MeasureAndIntegration/SourceMinusProfileBudgetObstruction.lean/declarations/minus-profile-envelope-not-eventually-bounded.md) | 110 | `result-track:d9f4bc6615e20b8b6d4ffaf83e7034ccfe89e170ad48d776507c467ab56e997e` |
+| 1 | `def` | [minusCorrelationKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMinusProfileBudgetObstruction.lean/declarations/minuscorrelationkernel.md) | 24 | `declaration-track:88464268e86ab3e165d9e3117381f6c8f6bfde55a86e691f3077d8df24084588` |
+| 2 | `def` | [minusProfileEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMinusProfileBudgetObstruction.lean/declarations/minusprofileenvelope.md) | 29 | `declaration-track:ed0cd517cd39cf9a568f64cc6c755329fe817cb61c5088bacef57cc17656b9a0` |
+| 3 | `theorem` | [minus_kernel_le_neg_sixteenth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMinusProfileBudgetObstruction.lean/declarations/minus-kernel-le-neg-sixteenth.md) | 33 | `result-track:d1444dd1150d8ed8e2c39a94b8d9b249999663bba7426118210196bb85b48426` |
+| 4 | `theorem` | [minus_profile_envelope_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMinusProfileBudgetObstruction.lean/declarations/minus-profile-envelope-lower.md) | 49 | `result-track:223e0be97ad80819bcf2c80170c007327abaf247fad35a3c6743b9bad7093b01` |
+| 5 | `theorem` | [minus_profile_envelope_ge_linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMinusProfileBudgetObstruction.lean/declarations/minus-profile-envelope-ge-linear.md) | 88 | `result-track:0f1c0a6ad3116e3bedcf9ad2de41e3a00e778c7219818cc21f290def3830baba` |
+| 6 | `theorem` | [probe_interval_inside_complete_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMinusProfileBudgetObstruction.lean/declarations/probe-interval-inside-complete-tail.md) | 103 | `result-track:8c9d8ff092425c44e81e7d96584a114fe52429c9c8bb8770a27f1ac2e0f0391e` |
+| 7 | `theorem` | [minus_profile_envelope_not_eventually_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMinusProfileBudgetObstruction.lean/declarations/minus-profile-envelope-not-eventually-bounded.md) | 110 | `result-track:d9f4bc6615e20b8b6d4ffaf83e7034ccfe89e170ad48d776507c467ab56e997e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

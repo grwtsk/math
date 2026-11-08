@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1964Q1.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1964Q1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1964Q1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1964Q1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [two_pow_mod_seven](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1964Q1.lean/declarations/two-pow-mod-seven.md) | 33 | `result-track:26bdc2bde3e8a7bf2d12d88ab6f2b672649297ab690a144dbdb5d24d94df79dd` |
-| 2 | `def` | [ProblemPredicate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1964Q1.lean/declarations/problempredicate.md) | 45 | `declaration-track:c32a15a7b699c832062bc963a1043b63dc97c37b3d9580a9467878ee0bd4e04b` |
-| 3 | `theorem` | [imo1964_q1a](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1964Q1.lean/declarations/imo1964-q1a.md) | 49 | `result-track:7c8cfed63b2dc7546f4be69066bda107841959b27c7ba239e08022a316338bca` |
-| 4 | `theorem` | [imo1964_q1b](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1964Q1.lean/declarations/imo1964-q1b.md) | 64 | `result-track:2d48ed28e0063063a016de2183ebce602c54ddf7909b68bd839a3dd980931700` |
+| 1 | `theorem` | [two_pow_mod_seven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1964Q1.lean/declarations/two-pow-mod-seven.md) | 33 | `result-track:26bdc2bde3e8a7bf2d12d88ab6f2b672649297ab690a144dbdb5d24d94df79dd` |
+| 2 | `def` | [ProblemPredicate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1964Q1.lean/declarations/problempredicate.md) | 45 | `declaration-track:c32a15a7b699c832062bc963a1043b63dc97c37b3d9580a9467878ee0bd4e04b` |
+| 3 | `theorem` | [imo1964_q1a](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1964Q1.lean/declarations/imo1964-q1a.md) | 49 | `result-track:7c8cfed63b2dc7546f4be69066bda107841959b27c7ba239e08022a316338bca` |
+| 4 | `theorem` | [imo1964_q1b](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1964Q1.lean/declarations/imo1964-q1b.md) | 64 | `result-track:2d48ed28e0063063a016de2183ebce602c54ddf7909b68bd839a3dd980931700` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

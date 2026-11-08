@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/MUSUnsatCore.lean/index.md) · [Full source](../../../../Combinatorics/MUSUnsatCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSUnsatCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSUnsatCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [UnsatCore](../../../../Combinatorics/MUSUnsatCore.lean/declarations/unsatcore.md) | 17 | `declaration-track:96f84ae8616b105bca1d21bba3437ff21e170345027197bb38b986a5fe84da71` |
-| 2 | `structure` | [PrimitiveCore](../../../../Combinatorics/MUSUnsatCore.lean/declarations/primitivecore.md) | 35 | `declaration-track:58e320c3f1d9ed09abaa7f4efdafc54575bd7d4ad06c355e81a5e54f102c5159` |
-| 3 | `theorem` | [PrimitiveCore.primitive_core_unsatisfiable](../../../../Combinatorics/MUSUnsatCore.lean/declarations/primitivecore-primitive-core-unsatisfiable.md) | 52 | `result-track:e5ae5b0563ca91408e02ffe938b9641c9f463d9ae30d509c337c72c20e82330c` |
-| 4 | `theorem` | [PrimitiveCore.every_proper_subset_feasible](../../../../Combinatorics/MUSUnsatCore.lean/declarations/primitivecore-every-proper-subset-feasible.md) | 68 | `result-track:17c709815d05a1b05011fb46f7eb3e39f02760097a2c17bd445f23e3f5b936d1` |
-| 5 | `def` | [primitive_of_all_proper_subsets](../../../../Combinatorics/MUSUnsatCore.lean/declarations/primitive-of-all-proper-subsets.md) | 95 | `declaration-track:c1b76a2fdb00816047a0dcdcd36247b81a34e8205830081e3688752d760fb671` |
-| 6 | `def` | [PrimitiveCore.extendRegistry](../../../../Combinatorics/MUSUnsatCore.lean/declarations/primitivecore-extendregistry.md) | 120 | `declaration-track:edd383a957d6472cd74f2718f9cfa4ed322ad93a61caf4d0dc41db94a3d12b84` |
-| 7 | `abbrev` | [PrimitiveCoreAt](../../../../Combinatorics/MUSUnsatCore.lean/declarations/primitivecoreat.md) | 147 | `declaration-track:268fcd80ce27f027c55b96c0461b583b6293bee254ffcc2d8f92016b19d283f7` |
-| 8 | `abbrev` | [ExtractedPrimitiveCore](../../../../Combinatorics/MUSUnsatCore.lean/declarations/extractedprimitivecore.md) | 158 | `declaration-track:d19b947fb1bf03c57ba54f48d584f4219e486455e238721320a221add69bf8b3` |
-| 9 | `structure` | [MUSExtractor](../../../../Combinatorics/MUSUnsatCore.lean/declarations/musextractor.md) | 171 | `declaration-track:66b765cd027f638e9694715ab8920454248e1343abbbb9e2080ea9ccd0930142` |
+| 1 | `structure` | [UnsatCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSUnsatCore.lean/declarations/unsatcore.md) | 17 | `declaration-track:96f84ae8616b105bca1d21bba3437ff21e170345027197bb38b986a5fe84da71` |
+| 2 | `structure` | [PrimitiveCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSUnsatCore.lean/declarations/primitivecore.md) | 35 | `declaration-track:58e320c3f1d9ed09abaa7f4efdafc54575bd7d4ad06c355e81a5e54f102c5159` |
+| 3 | `theorem` | [PrimitiveCore.primitive_core_unsatisfiable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSUnsatCore.lean/declarations/primitivecore-primitive-core-unsatisfiable.md) | 52 | `result-track:e5ae5b0563ca91408e02ffe938b9641c9f463d9ae30d509c337c72c20e82330c` |
+| 4 | `theorem` | [PrimitiveCore.every_proper_subset_feasible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSUnsatCore.lean/declarations/primitivecore-every-proper-subset-feasible.md) | 68 | `result-track:17c709815d05a1b05011fb46f7eb3e39f02760097a2c17bd445f23e3f5b936d1` |
+| 5 | `def` | [primitive_of_all_proper_subsets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSUnsatCore.lean/declarations/primitive-of-all-proper-subsets.md) | 95 | `declaration-track:c1b76a2fdb00816047a0dcdcd36247b81a34e8205830081e3688752d760fb671` |
+| 6 | `def` | [PrimitiveCore.extendRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSUnsatCore.lean/declarations/primitivecore-extendregistry.md) | 120 | `declaration-track:edd383a957d6472cd74f2718f9cfa4ed322ad93a61caf4d0dc41db94a3d12b84` |
+| 7 | `abbrev` | [PrimitiveCoreAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSUnsatCore.lean/declarations/primitivecoreat.md) | 147 | `declaration-track:268fcd80ce27f027c55b96c0461b583b6293bee254ffcc2d8f92016b19d283f7` |
+| 8 | `abbrev` | [ExtractedPrimitiveCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSUnsatCore.lean/declarations/extractedprimitivecore.md) | 158 | `declaration-track:d19b947fb1bf03c57ba54f48d584f4219e486455e238721320a221add69bf8b3` |
+| 9 | `structure` | [MUSExtractor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSUnsatCore.lean/declarations/musextractor.md) | 171 | `declaration-track:66b765cd027f638e9694715ab8920454248e1343abbbb9e2080ea9ccd0930142` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

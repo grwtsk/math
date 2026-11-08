@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/WholeRepresentationWithExactTypeclassProjections.lean/index.md) · [Full source](../../../../CommutativeAlgebra/WholeRepresentationWithExactTypeclassProjections.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WholeRepresentationWithExactTypeclassProjections.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WholeRepresentationWithExactTypeclassProjections.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RepresentationDatum](../../../../CommutativeAlgebra/WholeRepresentationWithExactTypeclassProjections.lean/declarations/representationdatum.md) | 51 | `declaration-track:2d96392977e19206df3a21ea5e0c8892a3518071e2abfd8247f06c2f3b711312` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/WholeRepresentationWithExactTypeclassProjections.lean/declarations/instance.md) | 65 | `declaration-track:6027c912eb89004f48589d6354ecde30897aecf43665d2034264c98a3e664de6` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/WholeRepresentationWithExactTypeclassProjections.lean/declarations/instance-source-edition-2.md) | 68 | `declaration-track:97df927173f27b4ef31de42c3c476906a19b15291ce13c8eb1eb7cf9febcd9a6` |
-| 4 | `theorem` | [groupRingMap_of](../../../../CommutativeAlgebra/WholeRepresentationWithExactTypeclassProjections.lean/declarations/groupringmap-of.md) | 73 | `result-track:2ac5bef9385c3a3a0fe44168e8ca518899cb4dd2b3649517fd594f3a4d98c23f` |
+| 1 | `structure` | [RepresentationDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WholeRepresentationWithExactTypeclassProjections.lean/declarations/representationdatum.md) | 51 | `declaration-track:2d96392977e19206df3a21ea5e0c8892a3518071e2abfd8247f06c2f3b711312` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WholeRepresentationWithExactTypeclassProjections.lean/declarations/instance.md) | 65 | `declaration-track:6027c912eb89004f48589d6354ecde30897aecf43665d2034264c98a3e664de6` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WholeRepresentationWithExactTypeclassProjections.lean/declarations/instance-source-edition-2.md) | 68 | `declaration-track:97df927173f27b4ef31de42c3c476906a19b15291ce13c8eb1eb7cf9febcd9a6` |
+| 4 | `theorem` | [groupRingMap_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WholeRepresentationWithExactTypeclassProjections.lean/declarations/groupringmap-of.md) | 73 | `result-track:2ac5bef9385c3a3a0fe44168e8ca518899cb4dd2b3649517fd594f3a4d98c23f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

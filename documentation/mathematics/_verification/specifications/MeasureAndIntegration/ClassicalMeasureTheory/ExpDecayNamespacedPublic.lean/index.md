@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespacedPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exp_neg_integrableOn_Ioi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespacedPublic.lean/declarations/exp-neg-integrableon-ioi.md) | 42 | `result-track:5dfbf14e92abcffdd755b0b457ebfb3c73a752c5bcc6e0103747e810f181f3db` |
-| 2 | `theorem` | [integrable_of_isBigO_exp_neg](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespacedPublic.lean/declarations/integrable-of-isbigo-exp-neg.md) | 52 | `result-track:09e7a6e19fefb04850f3b1529f685eeb4f9ba8c364dec73c7f76390133ac739a` |
-| 3 | `theorem` | [integrableOn_exp_neg_smul_of_isBigO_exp](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespacedPublic.lean/declarations/integrableon-exp-neg-smul-of-isbigo-exp.md) | 61 | `result-track:acf4e38290337113f99e2fe2b3af33f06959372a02c096ef6f782cc78a0df4f9` |
-| 4 | `theorem` | [integrableOn_exp_neg_mul_of_isBigO_exp](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespacedPublic.lean/declarations/integrableon-exp-neg-mul-of-isbigo-exp.md) | 74 | `result-track:4cd6bd6ef36ca3b75d93f500c61b014f5d50e204ce0918162dcf2f29db6979d0` |
+| 1 | `theorem` | [exp_neg_integrableOn_Ioi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespacedPublic.lean/declarations/exp-neg-integrableon-ioi.md) | 42 | `result-track:5dfbf14e92abcffdd755b0b457ebfb3c73a752c5bcc6e0103747e810f181f3db` |
+| 2 | `theorem` | [integrable_of_isBigO_exp_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespacedPublic.lean/declarations/integrable-of-isbigo-exp-neg.md) | 52 | `result-track:09e7a6e19fefb04850f3b1529f685eeb4f9ba8c364dec73c7f76390133ac739a` |
+| 3 | `theorem` | [integrableOn_exp_neg_smul_of_isBigO_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespacedPublic.lean/declarations/integrableon-exp-neg-smul-of-isbigo-exp.md) | 61 | `result-track:acf4e38290337113f99e2fe2b3af33f06959372a02c096ef6f782cc78a0df4f9` |
+| 4 | `theorem` | [integrableOn_exp_neg_mul_of_isBigO_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespacedPublic.lean/declarations/integrableon-exp-neg-mul-of-isbigo-exp.md) | 74 | `result-track:4cd6bd6ef36ca3b75d93f500c61b014f5d50e204ce0918162dcf2f29db6979d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

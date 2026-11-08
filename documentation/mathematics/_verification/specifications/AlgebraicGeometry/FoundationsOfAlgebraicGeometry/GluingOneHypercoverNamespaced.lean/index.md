@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GluingOneHypercoverNamespaced.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GluingOneHypercoverNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GluingOneHypercoverNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GluingOneHypercoverNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [oneHypercover](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GluingOneHypercoverNamespaced.lean/declarations/onehypercover.md) | 46 | `declaration-track:983fde55e4848b54b31ee986af2b6896b153247691d9238580ecdb7bed5a78f1` |
-| 2 | `def` | [sheafValGluedMk](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GluingOneHypercoverNamespaced.lean/declarations/sheafvalgluedmk.md) | 74 | `declaration-track:aa9a663b43dfea79b2bb70a9db220508dc1a68b438c88a415bc9cd6a6599ac78` |
-| 3 | `lemma` | [sheafValGluedMk_val](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GluingOneHypercoverNamespaced.lean/declarations/sheafvalgluedmk-val.md) | 80 | `result-track:4b07db6d82ced6b8c5018b5bd9e1116234e24ed6951f4ed1437cf96440cde103` |
+| 1 | `def` | [oneHypercover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GluingOneHypercoverNamespaced.lean/declarations/onehypercover.md) | 46 | `declaration-track:983fde55e4848b54b31ee986af2b6896b153247691d9238580ecdb7bed5a78f1` |
+| 2 | `def` | [sheafValGluedMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GluingOneHypercoverNamespaced.lean/declarations/sheafvalgluedmk.md) | 74 | `declaration-track:aa9a663b43dfea79b2bb70a9db220508dc1a68b438c88a415bc9cd6a6599ac78` |
+| 3 | `lemma` | [sheafValGluedMk_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GluingOneHypercoverNamespaced.lean/declarations/sheafvalgluedmk-val.md) | 80 | `result-track:4b07db6d82ced6b8c5018b5bd9e1116234e24ed6951f4ed1437cf96440cde103` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

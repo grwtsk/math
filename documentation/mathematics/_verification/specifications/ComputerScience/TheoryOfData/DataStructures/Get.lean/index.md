@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/Get.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/Get.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Get.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Get.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [indexOf](../../../../../../ComputerScience/TheoryOfData/DataStructures/Get.lean/declarations/indexof.md) | 29 | `declaration-track:9e8a29c820b44e7a5ccdf19ea94af8b21f06d100cffcf3bfb3d217d42aae8650` |
-| 2 | `def` | [get](../../../../../../ComputerScience/TheoryOfData/DataStructures/Get.lean/declarations/get.md) | 42 | `declaration-track:cd3bd8a7c3168fd85ed9e0acd9d0849366d45d3837ad5bf5827f50661c4ab7f8` |
-| 3 | `def` | [getOrElse](../../../../../../ComputerScience/TheoryOfData/DataStructures/Get.lean/declarations/getorelse.md) | 50 | `declaration-track:79f44067c34a1008104236ce15c66fe442ca6db159f7e4fe1ac2af2ba655252d` |
+| 1 | `def` | [indexOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Get.lean/declarations/indexof.md) | 29 | `declaration-track:9e8a29c820b44e7a5ccdf19ea94af8b21f06d100cffcf3bfb3d217d42aae8650` |
+| 2 | `def` | [get](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Get.lean/declarations/get.md) | 42 | `declaration-track:cd3bd8a7c3168fd85ed9e0acd9d0849366d45d3837ad5bf5827f50661c4ab7f8` |
+| 3 | `def` | [getOrElse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Get.lean/declarations/getorelse.md) | 50 | `declaration-track:79f44067c34a1008104236ce15c66fe442ca6db159f7e4fe1ac2af2ba655252d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CevaNamespacedPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CevaNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CevaNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CevaNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [exists_affineCombination_eq_smul_eq_aux](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CevaNamespacedPublic.lean/declarations/exists-affinecombination-eq-smul-eq-aux.md) | 41 | `result-track:7a90422ade7a8485e6d5c1eb61c859fea253214b162b3342dd37e893b659f46f` |
-| 2 | `lemma` | [exists_affineCombination_eq_smul_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CevaNamespacedPublic.lean/declarations/exists-affinecombination-eq-smul-eq.md) | 81 | `result-track:f2f9a527436c68e3d9bec4a382c498f20d613a778e2403f5f7f10c43a945e5ff` |
-| 3 | `lemma` | [exists_affineCombination_eq_smul_eq_of_fintype](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CevaNamespacedPublic.lean/declarations/exists-affinecombination-eq-smul-eq-of-fintype.md) | 113 | `result-track:d0e42d4fc957a82288b6b93ec7163bed7f4f810273200b1065aedbc8fd3310bc` |
-| 4 | `lemma` | [prod_eq_prod_one_sub_of_mem_line_point_lineMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CevaNamespacedPublic.lean/declarations/prod-eq-prod-one-sub-of-mem-line-point-linemap.md) | 143 | `result-track:53c9bb80cbe55844478e0be5ffd53d5f6fbef3af8d3662fa2ea2a5721f7a8459` |
-| 5 | `lemma` | [prod_div_one_sub_eq_one_of_mem_line_point_lineMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CevaNamespacedPublic.lean/declarations/prod-div-one-sub-eq-one-of-mem-line-point-linemap.md) | 212 | `result-track:caea28eaf930dacb2f63b288641c17eacd774d000a0519a7c15a395da56f2467` |
+| 1 | `lemma` | [exists_affineCombination_eq_smul_eq_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CevaNamespacedPublic.lean/declarations/exists-affinecombination-eq-smul-eq-aux.md) | 41 | `result-track:7a90422ade7a8485e6d5c1eb61c859fea253214b162b3342dd37e893b659f46f` |
+| 2 | `lemma` | [exists_affineCombination_eq_smul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CevaNamespacedPublic.lean/declarations/exists-affinecombination-eq-smul-eq.md) | 81 | `result-track:f2f9a527436c68e3d9bec4a382c498f20d613a778e2403f5f7f10c43a945e5ff` |
+| 3 | `lemma` | [exists_affineCombination_eq_smul_eq_of_fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CevaNamespacedPublic.lean/declarations/exists-affinecombination-eq-smul-eq-of-fintype.md) | 113 | `result-track:d0e42d4fc957a82288b6b93ec7163bed7f4f810273200b1065aedbc8fd3310bc` |
+| 4 | `lemma` | [prod_eq_prod_one_sub_of_mem_line_point_lineMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CevaNamespacedPublic.lean/declarations/prod-eq-prod-one-sub-of-mem-line-point-linemap.md) | 143 | `result-track:53c9bb80cbe55844478e0be5ffd53d5f6fbef3af8d3662fa2ea2a5721f7a8459` |
+| 5 | `lemma` | [prod_div_one_sub_eq_one_of_mem_line_point_lineMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CevaNamespacedPublic.lean/declarations/prod-div-one-sub-eq-one-of-mem-line-point-linemap.md) | 212 | `result-track:caea28eaf930dacb2f63b288641c17eacd774d000a0519a7c15a395da56f2467` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

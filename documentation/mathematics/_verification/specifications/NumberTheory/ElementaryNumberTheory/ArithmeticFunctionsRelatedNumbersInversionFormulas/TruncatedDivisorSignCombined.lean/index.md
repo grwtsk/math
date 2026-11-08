@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorSignCombined.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorSignCombined.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorSignCombined.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorSignCombined.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [truncatedDivisorCoefficient](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorSignCombined.lean/declarations/truncateddivisorcoefficient.md) | 4 | `declaration-track:d43193e226b428e527f209c2e58e538b55b053aa8462aeae8bea65f5fe45741c` |
-| 2 | `theorem` | [truncated_three_six](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorSignCombined.lean/declarations/truncated-three-six.md) | 18 | `result-track:37d0b484d857cf3138815506ce85b752f310a589050f76ea0f66cd67456f6478` |
-| 3 | `theorem` | [truncated_three_six_le_neg_quarter](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorSignCombined.lean/declarations/truncated-three-six-le-neg-quarter.md) | 30 | `result-track:eb7eb6efe31c60429d6af52962894ac2d3456da4412c19ddc4aa760777b52fd8` |
+| 1 | `def` | [truncatedDivisorCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorSignCombined.lean/declarations/truncateddivisorcoefficient.md) | 4 | `declaration-track:d43193e226b428e527f209c2e58e538b55b053aa8462aeae8bea65f5fe45741c` |
+| 2 | `theorem` | [truncated_three_six](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorSignCombined.lean/declarations/truncated-three-six.md) | 18 | `result-track:37d0b484d857cf3138815506ce85b752f310a589050f76ea0f66cd67456f6478` |
+| 3 | `theorem` | [truncated_three_six_le_neg_quarter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorSignCombined.lean/declarations/truncated-three-six-le-neg-quarter.md) | 30 | `result-track:eb7eb6efe31c60429d6af52962894ac2d3456da4412c19ddc4aa760777b52fd8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

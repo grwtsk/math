@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Issue9EstimateCorrelation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Issue9EstimateCorrelation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Issue9EstimateCorrelation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Issue9EstimateCorrelation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_correlation_at_zero](../../../../MeasureAndIntegration/Issue9EstimateCorrelation.lean/declarations/actual-correlation-at-zero.md) | 14 | `result-track:92a4f32fa60aef820738cc21ee9e3702e0ada00ea37ab0ee4d4531f14b476b47` |
-| 2 | `theorem` | [actual_correlation_abs_le_one](../../../../MeasureAndIntegration/Issue9EstimateCorrelation.lean/declarations/actual-correlation-abs-le-one.md) | 18 | `result-track:2af4603715ca450ae2088499f59059c19e3156470cabba3d114114a89b2b4c7a` |
-| 3 | `theorem` | [actual_prime_two_boundary_abs_le](../../../../MeasureAndIntegration/Issue9EstimateCorrelation.lean/declarations/actual-prime-two-boundary-abs-le.md) | 39 | `result-track:8aa15a083d592953639d46d333de8a6885a5a6af0a9146eb2d4cff8205a62ed2` |
+| 1 | `theorem` | [actual_correlation_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Issue9EstimateCorrelation.lean/declarations/actual-correlation-at-zero.md) | 14 | `result-track:92a4f32fa60aef820738cc21ee9e3702e0ada00ea37ab0ee4d4531f14b476b47` |
+| 2 | `theorem` | [actual_correlation_abs_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Issue9EstimateCorrelation.lean/declarations/actual-correlation-abs-le-one.md) | 18 | `result-track:2af4603715ca450ae2088499f59059c19e3156470cabba3d114114a89b2b4c7a` |
+| 3 | `theorem` | [actual_prime_two_boundary_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Issue9EstimateCorrelation.lean/declarations/actual-prime-two-boundary-abs-le.md) | 39 | `result-track:8aa15a083d592953639d46d333de8a6885a5a6af0a9146eb2d4cff8205a62ed2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

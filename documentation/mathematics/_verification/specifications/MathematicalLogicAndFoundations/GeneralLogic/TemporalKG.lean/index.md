@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TemporalKG.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TemporalKG.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TemporalKG.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TemporalKG.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TemporalEdgeKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TemporalKG.lean/declarations/temporaledgekind.md) | 7 | `declaration-track:c018e29317c15b7494141212b2f1bf4376204c963cdaf4fed8429097358e94ab` |
-| 2 | `structure` | [TemporalEdge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TemporalKG.lean/declarations/temporaledge.md) | 15 | `declaration-track:1159ec3add01d65941ea0951e0359e1f644c4eb398b66fa4d25a6fd0e3f3fb73` |
-| 3 | `def` | [TemporalEdge.invalidated](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TemporalKG.lean/declarations/temporaledge-invalidated.md) | 24 | `declaration-track:5f0528e2ce1bad74319605b8e96e69e3a2f6731847a7d09ffbafc31ce6f44d1a` |
-| 4 | `def` | [invalidationPreservesHistory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TemporalKG.lean/declarations/invalidationpreserveshistory.md) | 27 | `declaration-track:affe93515575856cb7ec16ba9894a6d36d337beb56a1fda1f52c4e044ddecfc1` |
-| 5 | `theorem` | [invalidated_iff_has_invalid_time](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TemporalKG.lean/declarations/invalidated-iff-has-invalid-time.md) | 32 | `result-track:c6c637b25f914f38962d195f1c4964ad0fdc3dad7e8c9b2b3fd2f898252702e1` |
+| 1 | `inductive` | [TemporalEdgeKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TemporalKG.lean/declarations/temporaledgekind.md) | 7 | `declaration-track:c018e29317c15b7494141212b2f1bf4376204c963cdaf4fed8429097358e94ab` |
+| 2 | `structure` | [TemporalEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TemporalKG.lean/declarations/temporaledge.md) | 15 | `declaration-track:1159ec3add01d65941ea0951e0359e1f644c4eb398b66fa4d25a6fd0e3f3fb73` |
+| 3 | `def` | [TemporalEdge.invalidated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TemporalKG.lean/declarations/temporaledge-invalidated.md) | 24 | `declaration-track:5f0528e2ce1bad74319605b8e96e69e3a2f6731847a7d09ffbafc31ce6f44d1a` |
+| 4 | `def` | [invalidationPreservesHistory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TemporalKG.lean/declarations/invalidationpreserveshistory.md) | 27 | `declaration-track:affe93515575856cb7ec16ba9894a6d36d337beb56a1fda1f52c4e044ddecfc1` |
+| 5 | `theorem` | [invalidated_iff_has_invalid_time](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TemporalKG.lean/declarations/invalidated-iff-has-invalid-time.md) | 32 | `result-track:c6c637b25f914f38962d195f1c4964ad0fdc3dad7e8c9b2b3fd2f898252702e1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

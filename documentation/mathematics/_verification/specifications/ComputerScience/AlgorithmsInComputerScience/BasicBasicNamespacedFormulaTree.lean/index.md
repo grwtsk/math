@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedFormulaTree.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedFormulaTree.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedFormulaTree.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedFormulaTree.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [FormulaTree](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedFormulaTree.lean/declarations/formulatree.md) | 23 | `declaration-track:fd1cb64581ee644e2f3138b2e8b194898260d22d1819e20e61d65c14b2d7fbce` |
-| 2 | `def` | [FormulaTree.eval](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedFormulaTree.lean/declarations/formulatree-eval.md) | 36 | `declaration-track:15f406a27261e1516552c4bd41dcd026ef02cd03fb73cdc7e03ef7799c97af11` |
-| 3 | `def` | [FormulaTree.toFormula](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedFormulaTree.lean/declarations/formulatree-toformula.md) | 48 | `declaration-track:9f7ba13fd6d23a4b77eb47796b6effbb0e577cab2f91b5e61bfc1034225f7b15` |
-| 4 | `theorem` | [FormulaTree.eval_toFormula](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedFormulaTree.lean/declarations/formulatree-eval-toformula.md) | 59 | `result-track:47d16e6fb8b022aa3b3f4f49590d683dd814984526ddecc16cfe3dd6c54d7b15` |
-| 5 | `def` | [FormulaTree.nodeCount](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedFormulaTree.lean/declarations/formulatree-nodecount.md) | 75 | `declaration-track:01d9e4ee7d468d47c4b5864c5734f739f251a1e733273b3453244c2010daeddd` |
-| 6 | `def` | [FormulaTree.conjList](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedFormulaTree.lean/declarations/formulatree-conjlist.md) | 87 | `declaration-track:e1582e075f76de275de3be04f39ab8960cbd0ac6f760d3a8fcd8c3cec6d2fbc8` |
-| 7 | `def` | [FormulaTree.disjList](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedFormulaTree.lean/declarations/formulatree-disjlist.md) | 92 | `declaration-track:35666e1199c70a0a2acd29874c128426476e024958d48cae4b3786901807e495` |
+| 1 | `inductive` | [FormulaTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedFormulaTree.lean/declarations/formulatree.md) | 23 | `declaration-track:fd1cb64581ee644e2f3138b2e8b194898260d22d1819e20e61d65c14b2d7fbce` |
+| 2 | `def` | [FormulaTree.eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedFormulaTree.lean/declarations/formulatree-eval.md) | 36 | `declaration-track:15f406a27261e1516552c4bd41dcd026ef02cd03fb73cdc7e03ef7799c97af11` |
+| 3 | `def` | [FormulaTree.toFormula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedFormulaTree.lean/declarations/formulatree-toformula.md) | 48 | `declaration-track:9f7ba13fd6d23a4b77eb47796b6effbb0e577cab2f91b5e61bfc1034225f7b15` |
+| 4 | `theorem` | [FormulaTree.eval_toFormula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedFormulaTree.lean/declarations/formulatree-eval-toformula.md) | 59 | `result-track:47d16e6fb8b022aa3b3f4f49590d683dd814984526ddecc16cfe3dd6c54d7b15` |
+| 5 | `def` | [FormulaTree.nodeCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedFormulaTree.lean/declarations/formulatree-nodecount.md) | 75 | `declaration-track:01d9e4ee7d468d47c4b5864c5734f739f251a1e733273b3453244c2010daeddd` |
+| 6 | `def` | [FormulaTree.conjList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedFormulaTree.lean/declarations/formulatree-conjlist.md) | 87 | `declaration-track:e1582e075f76de275de3be04f39ab8960cbd0ac6f760d3a8fcd8c3cec6d2fbc8` |
+| 7 | `def` | [FormulaTree.disjList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedFormulaTree.lean/declarations/formulatree-disjlist.md) | 92 | `declaration-track:35666e1199c70a0a2acd29874c128426476e024958d48cae4b3786901807e495` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -67,15 +67,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [log_le](../../../../MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/declarations/log-le.md) | 41 | `result-track:4cbf0ab94cec378e647c58edf60b22a3b739f07686a5f9b1558659c6b8418b73` |
-| 2 | `theorem` | [log_ge](../../../../MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/declarations/log-ge-source-edition-2.md) | 56 | `result-track:e152b221cc36a3934746eac51b5194fde58a8188d827031cb52c3b706d54c257` |
-| 3 | `theorem` | [log_ge'](../../../../MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/declarations/log-ge.md) | 88 | `result-track:2d0e2feb968c18254b43f1c3e1237081622857d883e9c74ccfaa9c76f4191218` |
-| 4 | `theorem` | [symm_inv_log](../../../../MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/declarations/symm-inv-log.md) | 119 | `result-track:59f4950462fe460b4ca3e0117cb91df52d9bd7e547f37216cf91194455287b32` |
-| 5 | `theorem` | [li.sub_Li](../../../../MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/declarations/li-sub-li.md) | 183 | `result-track:f555c42086bc5020095895707ee0cd75f847def824412ec48e066889fbfdf1fa` |
-| 6 | `theorem` | [li.two_approx](../../../../MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/declarations/li-two-approx.md) | 220 | `result-track:dcd2753580b210f1099f1eb7dd4b9c12075121917b6d0a3a26ea1e28d15722d9` |
-| 7 | `theorem` | [li_eq_Li2Bounds_li](../../../../MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/declarations/li-eq-li2bounds-li.md) | 229 | `result-track:e1507a9e9e407194f6bf7ad2f449b048a7d02d410e9dfbe326953c47b9ec72f2` |
-| 8 | `theorem` | [li.two_approx_weak](../../../../MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/declarations/li-two-approx-weak.md) | 242 | `result-track:b66345604dafffd3425231579a3c5cd2222e829f922f38847b178f73bdc0d03b` |
-| 9 | `theorem` | [li2_symmetric_eq_li2](../../../../MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/declarations/li2-symmetric-eq-li2.md) | 257 | `result-track:1ba132f81148c8db4d35424f626f1b0bf6074804b64f47c39ac3b431ba9d589e` |
+| 1 | `theorem` | [log_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/declarations/log-le.md) | 41 | `result-track:4cbf0ab94cec378e647c58edf60b22a3b739f07686a5f9b1558659c6b8418b73` |
+| 2 | `theorem` | [log_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/declarations/log-ge-source-edition-2.md) | 56 | `result-track:e152b221cc36a3934746eac51b5194fde58a8188d827031cb52c3b706d54c257` |
+| 3 | `theorem` | [log_ge'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/declarations/log-ge.md) | 88 | `result-track:2d0e2feb968c18254b43f1c3e1237081622857d883e9c74ccfaa9c76f4191218` |
+| 4 | `theorem` | [symm_inv_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/declarations/symm-inv-log.md) | 119 | `result-track:59f4950462fe460b4ca3e0117cb91df52d9bd7e547f37216cf91194455287b32` |
+| 5 | `theorem` | [li.sub_Li](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/declarations/li-sub-li.md) | 183 | `result-track:f555c42086bc5020095895707ee0cd75f847def824412ec48e066889fbfdf1fa` |
+| 6 | `theorem` | [li.two_approx](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/declarations/li-two-approx.md) | 220 | `result-track:dcd2753580b210f1099f1eb7dd4b9c12075121917b6d0a3a26ea1e28d15722d9` |
+| 7 | `theorem` | [li_eq_Li2Bounds_li](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/declarations/li-eq-li2bounds-li.md) | 229 | `result-track:e1507a9e9e407194f6bf7ad2f449b048a7d02d410e9dfbe326953c47b9ec72f2` |
+| 8 | `theorem` | [li.two_approx_weak](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/declarations/li-two-approx-weak.md) | 242 | `result-track:b66345604dafffd3425231579a3c5cd2222e829f922f38847b178f73bdc0d03b` |
+| 9 | `theorem` | [li2_symmetric_eq_li2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondaryDefinitionsNamespacedEdition1.lean/declarations/li2-symmetric-eq-li2.md) | 257 | `result-track:1ba132f81148c8db4d35424f626f1b0bf6074804b64f47c39ac3b431ba9d589e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

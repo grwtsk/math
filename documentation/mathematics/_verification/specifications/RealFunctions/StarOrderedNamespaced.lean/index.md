@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/StarOrderedNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/StarOrderedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/StarOrderedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/StarOrderedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Real.instStarOrderedRing](../../../../RealFunctions/StarOrderedNamespaced.lean/declarations/real-inststarorderedring.md) | 28 | `declaration-track:ab56156c964f79f7972daac8464bd3e4817cd3d7bbee328d4040f9ede14636ca` |
-| 2 | `instance` | [NNReal.instStarOrderedRing](../../../../RealFunctions/StarOrderedNamespaced.lean/declarations/nnreal-inststarorderedring.md) | 34 | `declaration-track:86fa5e007136668c38664b9246c0114b0b133c431958b25828f6f459cd6588b7` |
+| 1 | `instance` | [Real.instStarOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/StarOrderedNamespaced.lean/declarations/real-inststarorderedring.md) | 28 | `declaration-track:ab56156c964f79f7972daac8464bd3e4817cd3d7bbee328d4040f9ede14636ca` |
+| 2 | `instance` | [NNReal.instStarOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/StarOrderedNamespaced.lean/declarations/nnreal-inststarorderedring.md) | 34 | `declaration-track:86fa5e007136668c38664b9246c0114b0b133c431958b25828f6f459cd6588b7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

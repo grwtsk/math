@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibUpstreamStatus.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibUpstreamStatus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibUpstreamStatus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibUpstreamStatus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [UpstreamStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibUpstreamStatus.lean/declarations/upstreamstatus.md) | 17 | `declaration-track:875a9a66e8415ac5eb27f2efe18675d0e0abb14cf8a28f6337981f3e0deeae5c` |
-| 2 | `def` | [defaultStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibUpstreamStatus.lean/declarations/defaultstatus.md) | 23 | `declaration-track:99866fa8050f89bdb800ee7ba7d5cb65718e5656b5c9c0dc558076c85f7a1923` |
-| 3 | `theorem` | [defaultStatus_is_localOnly](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibUpstreamStatus.lean/declarations/defaultstatus-is-localonly.md) | 25 | `result-track:1bcf3480f8bb4c8dca39761909777919785aa56c0d6142d6f6561c4c537a9a1e` |
-| 4 | `def` | [conceptualBoundaries](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibUpstreamStatus.lean/declarations/conceptualboundaries.md) | 28 | `declaration-track:38c2907be5a47c207ecf78cf92b537502de76c3dfb030f2a502a5347dc00a5aa` |
-| 5 | `theorem` | [conceptualBoundaries_count](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibUpstreamStatus.lean/declarations/conceptualboundaries-count.md) | 36 | `result-track:f0f083d33a87aea5c095bf20c8ba387a22d5087c1d691c89c27b31cd1e9849e8` |
+| 1 | `inductive` | [UpstreamStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibUpstreamStatus.lean/declarations/upstreamstatus.md) | 17 | `declaration-track:875a9a66e8415ac5eb27f2efe18675d0e0abb14cf8a28f6337981f3e0deeae5c` |
+| 2 | `def` | [defaultStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibUpstreamStatus.lean/declarations/defaultstatus.md) | 23 | `declaration-track:99866fa8050f89bdb800ee7ba7d5cb65718e5656b5c9c0dc558076c85f7a1923` |
+| 3 | `theorem` | [defaultStatus_is_localOnly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibUpstreamStatus.lean/declarations/defaultstatus-is-localonly.md) | 25 | `result-track:1bcf3480f8bb4c8dca39761909777919785aa56c0d6142d6f6561c4c537a9a1e` |
+| 4 | `def` | [conceptualBoundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibUpstreamStatus.lean/declarations/conceptualboundaries.md) | 28 | `declaration-track:38c2907be5a47c207ecf78cf92b537502de76c3dfb030f2a502a5347dc00a5aa` |
+| 5 | `theorem` | [conceptualBoundaries_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibUpstreamStatus.lean/declarations/conceptualboundaries-count.md) | 36 | `result-track:f0f083d33a87aea5c095bf20c8ba387a22d5087c1d691c89c27b31cd1e9849e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

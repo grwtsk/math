@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition2.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [RingAut](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition2.lean/declarations/ringaut.md) | 28 | `declaration-track:6812da2c88cd523d3eb4e3f0b5584ef0a30d3707c125d0185036f86cfc0ea151` |
-| 2 | `instance` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition2.lean/declarations/instance.md) | 35 | `declaration-track:cce5dc77434b04caef754ca5108dc3b307822f8e49627b51900edc9a6a7a573e` |
-| 3 | `instance` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition2.lean/declarations/instance-source-edition-2.md) | 44 | `declaration-track:fcbda91b86dc34805c761a14e831006f096bf6e8e36227f04593c1d92d58bcbe` |
-| 4 | `def` | [toAddAut](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition2.lean/declarations/toaddaut.md) | 48 | `declaration-track:42e40fe6b6a0b6d54d2749fbedb7836499f45a456629485ee7ffaa2e85555e09` |
-| 5 | `def` | [toMulAut](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition2.lean/declarations/tomulaut.md) | 54 | `declaration-track:b04adaaf4557cf27e0604d1c6554757c861eda07a313ac0523ee3db3d4b42eab` |
-| 6 | `def` | [toPerm](../../../../AssociativeRingsAndAlgebras/RingAutSourceEdition2.lean/declarations/toperm.md) | 60 | `declaration-track:b3317f4a5341fc6dbefab4351e10c2b403d91395bae7a7ea5fc2ade2c3d2ca2c` |
+| 1 | `abbrev` | [RingAut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition2.lean/declarations/ringaut.md) | 28 | `declaration-track:6812da2c88cd523d3eb4e3f0b5584ef0a30d3707c125d0185036f86cfc0ea151` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition2.lean/declarations/instance.md) | 35 | `declaration-track:cce5dc77434b04caef754ca5108dc3b307822f8e49627b51900edc9a6a7a573e` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition2.lean/declarations/instance-source-edition-2.md) | 44 | `declaration-track:fcbda91b86dc34805c761a14e831006f096bf6e8e36227f04593c1d92d58bcbe` |
+| 4 | `def` | [toAddAut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition2.lean/declarations/toaddaut.md) | 48 | `declaration-track:42e40fe6b6a0b6d54d2749fbedb7836499f45a456629485ee7ffaa2e85555e09` |
+| 5 | `def` | [toMulAut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition2.lean/declarations/tomulaut.md) | 54 | `declaration-track:b04adaaf4557cf27e0604d1c6554757c861eda07a313ac0523ee3db3d4b42eab` |
+| 6 | `def` | [toPerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAutSourceEdition2.lean/declarations/toperm.md) | 60 | `declaration-track:b3317f4a5341fc6dbefab4351e10c2b403d91395bae7a7ea5fc2ade2c3d2ca2c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

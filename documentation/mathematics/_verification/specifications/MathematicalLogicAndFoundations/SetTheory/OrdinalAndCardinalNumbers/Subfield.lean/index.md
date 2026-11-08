@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Subfield.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Subfield.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Subfield.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Subfield.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Operands](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Subfield.lean/declarations/operands.md) | 28 | `declaration-track:ae10b682c6236e059f240e911e0cc5daf22689314e378ad7fb3c5a933764c371` |
-| 2 | `def` | [operate](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Subfield.lean/declarations/operate.md) | 39 | `declaration-track:4a2103bfe1595be1e23a8094a4cd7d7bc5196ab5567ad28ea34d4225d08b674f` |
-| 3 | `def` | [rangeOfWType](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Subfield.lean/declarations/rangeofwtype.md) | 48 | `declaration-track:5b995f1ff000686a318bcf19ac65af590e30a459a761c64772a174c723dae14d` |
-| 4 | `lemma` | [rangeOfWType_eq_top](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Subfield.lean/declarations/rangeofwtype-eq-top.md) | 57 | `result-track:f71be2708b937abcb5e624968877df2131744a661ef9b5637fde81d995f95631` |
-| 5 | `lemma` | [surjective_ofWType](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Subfield.lean/declarations/surjective-ofwtype.md) | 63 | `result-track:8d77494da63ad1840dcae2dd759a19c4fc1de21408746d952d9a9aeb2ee64376` |
-| 6 | `lemma` | [cardinalMk_closure_le_max](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Subfield.lean/declarations/cardinalmk-closure-le-max.md) | 69 | `result-track:3b3482d5613849ccbcae68871dbb9d671a9956ec30f826495eb6a761b728c646` |
-| 7 | `lemma` | [cardinalMk_closure](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Subfield.lean/declarations/cardinalmk-closure.md) | 84 | `result-track:8881dc9599dd7cdaf72e7b541fbe43c15145d87897f570c9b19103c610d48e77` |
+| 1 | `abbrev` | [Operands](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Subfield.lean/declarations/operands.md) | 28 | `declaration-track:ae10b682c6236e059f240e911e0cc5daf22689314e378ad7fb3c5a933764c371` |
+| 2 | `def` | [operate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Subfield.lean/declarations/operate.md) | 39 | `declaration-track:4a2103bfe1595be1e23a8094a4cd7d7bc5196ab5567ad28ea34d4225d08b674f` |
+| 3 | `def` | [rangeOfWType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Subfield.lean/declarations/rangeofwtype.md) | 48 | `declaration-track:5b995f1ff000686a318bcf19ac65af590e30a459a761c64772a174c723dae14d` |
+| 4 | `lemma` | [rangeOfWType_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Subfield.lean/declarations/rangeofwtype-eq-top.md) | 57 | `result-track:f71be2708b937abcb5e624968877df2131744a661ef9b5637fde81d995f95631` |
+| 5 | `lemma` | [surjective_ofWType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Subfield.lean/declarations/surjective-ofwtype.md) | 63 | `result-track:8d77494da63ad1840dcae2dd759a19c4fc1de21408746d952d9a9aeb2ee64376` |
+| 6 | `lemma` | [cardinalMk_closure_le_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Subfield.lean/declarations/cardinalmk-closure-le-max.md) | 69 | `result-track:3b3482d5613849ccbcae68871dbb9d671a9956ec30f826495eb6a761b728c646` |
+| 7 | `lemma` | [cardinalMk_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Subfield.lean/declarations/cardinalmk-closure.md) | 84 | `result-track:8881dc9599dd7cdaf72e7b541fbe43c15145d87897f570c9b19103c610d48e77` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingActionBasic.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingActionBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingActionBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingActionBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [MulSemiringAction](../../../../AssociativeRingsAndAlgebras/RingActionBasic.lean/declarations/mulsemiringaction.md) | 42 | `declaration-track:3c2933ba01ca7a0d9077697b7401bfb0bbeb1b6f5d385fa6c6221097eed7f782` |
-| 2 | `instance` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/RingActionBasic.lean/declarations/instance.md) | 55 | `declaration-track:861d790da2a30ccc3c643b5111cf3022fb3f3e8c835bd7da2bd74c1a6caa0da0` |
-| 3 | `def` | [MulSemiringAction.toRingHom](../../../../AssociativeRingsAndAlgebras/RingActionBasic.lean/declarations/mulsemiringaction-toringhom.md) | 62 | `declaration-track:6f17a900fc59975865519797e75b069920450133cf47f7e4f42cf8a96914345e` |
-| 4 | `theorem` | [toRingHom_injective](../../../../AssociativeRingsAndAlgebras/RingActionBasic.lean/declarations/toringhom-injective.md) | 65 | `result-track:b6bf6a6fd333d9996e7980ebc42849d889d492e1cf6feb0705bf0154cdbcb027` |
-| 5 | `instance` | [RingHom.applyMulSemiringAction](../../../../AssociativeRingsAndAlgebras/RingActionBasic.lean/declarations/ringhom-applymulsemiringaction.md) | 72 | `declaration-track:4448dc68074ab9b775413c4a4a1626a6385f8eecd08354488837a5f9f01054e1` |
-| 6 | `theorem` | [RingHom.smul_def](../../../../AssociativeRingsAndAlgebras/RingActionBasic.lean/declarations/ringhom-smul-def.md) | 82 | `result-track:0ff6023cba7ff0809ace05569b39ced1107b0f1214b6fed3d7ad4b0b0377475a` |
-| 7 | `instance` | [RingHom.applyFaithfulSMul](../../../../AssociativeRingsAndAlgebras/RingActionBasic.lean/declarations/ringhom-applyfaithfulsmul.md) | 86 | `declaration-track:a527a6d8618f28124d1afecfcfd52b4b4be216f1eb219ec712b0ea178c4d6bf0` |
-| 8 | `abbrev` | [MulSemiringAction.compHom](../../../../AssociativeRingsAndAlgebras/RingActionBasic.lean/declarations/mulsemiringaction-comphom.md) | 95 | `declaration-track:bcb98de8ad4e2295c663583eb7445653e3f170bb7cfac957c7995481c1bc341f` |
+| 1 | `class` | [MulSemiringAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingActionBasic.lean/declarations/mulsemiringaction.md) | 42 | `declaration-track:3c2933ba01ca7a0d9077697b7401bfb0bbeb1b6f5d385fa6c6221097eed7f782` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingActionBasic.lean/declarations/instance.md) | 55 | `declaration-track:861d790da2a30ccc3c643b5111cf3022fb3f3e8c835bd7da2bd74c1a6caa0da0` |
+| 3 | `def` | [MulSemiringAction.toRingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingActionBasic.lean/declarations/mulsemiringaction-toringhom.md) | 62 | `declaration-track:6f17a900fc59975865519797e75b069920450133cf47f7e4f42cf8a96914345e` |
+| 4 | `theorem` | [toRingHom_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingActionBasic.lean/declarations/toringhom-injective.md) | 65 | `result-track:b6bf6a6fd333d9996e7980ebc42849d889d492e1cf6feb0705bf0154cdbcb027` |
+| 5 | `instance` | [RingHom.applyMulSemiringAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingActionBasic.lean/declarations/ringhom-applymulsemiringaction.md) | 72 | `declaration-track:4448dc68074ab9b775413c4a4a1626a6385f8eecd08354488837a5f9f01054e1` |
+| 6 | `theorem` | [RingHom.smul_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingActionBasic.lean/declarations/ringhom-smul-def.md) | 82 | `result-track:0ff6023cba7ff0809ace05569b39ced1107b0f1214b6fed3d7ad4b0b0377475a` |
+| 7 | `instance` | [RingHom.applyFaithfulSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingActionBasic.lean/declarations/ringhom-applyfaithfulsmul.md) | 86 | `declaration-track:a527a6d8618f28124d1afecfcfd52b4b4be216f1eb219ec712b0ea178c4d6bf0` |
+| 8 | `abbrev` | [MulSemiringAction.compHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingActionBasic.lean/declarations/mulsemiringaction-comphom.md) | 95 | `declaration-track:bcb98de8ad4e2295c663583eb7445653e3f170bb7cfac957c7995481c1bc341f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

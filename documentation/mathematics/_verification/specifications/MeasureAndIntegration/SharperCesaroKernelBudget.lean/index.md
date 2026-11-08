@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SharperCesaroKernelBudget.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SharperCesaroKernelBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharperCesaroKernelBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharperCesaroKernelBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cesaroWeight_second_abs_le_upper](../../../../MeasureAndIntegration/SharperCesaroKernelBudget.lean/declarations/cesaroweight-second-abs-le-upper.md) | 27 | `result-track:9ef37f89494eb420a19f6de55b46bc841c87d3aadb5bfb6e3af743d2b0639e2a` |
-| 2 | `theorem` | [cesaroWeight_second_abs_le_origin](../../../../MeasureAndIntegration/SharperCesaroKernelBudget.lean/declarations/cesaroweight-second-abs-le-origin.md) | 44 | `result-track:266898edd076b8ae61823809fb79a3e439be19d6e30815734b3e90ddc6258466` |
-| 3 | `theorem` | [cesaroWeight_second_abs_le_both_distances](../../../../MeasureAndIntegration/SharperCesaroKernelBudget.lean/declarations/cesaroweight-second-abs-le-both-distances.md) | 63 | `result-track:1517d0bbf0d85d994c229dc7ba4e6fa16ee67d34bc8076012f2eb322e0b0cd29` |
-| 4 | `theorem` | [integral_quadratic](../../../../MeasureAndIntegration/SharperCesaroKernelBudget.lean/declarations/integral-quadratic.md) | 73 | `result-track:adc35ffd3ccf3be20e20ec585ae3b4bd91c6fceedbe32e7810f39d717bf0fccf` |
-| 5 | `theorem` | [cesaroWeight_weighted_budget_twenty](../../../../MeasureAndIntegration/SharperCesaroKernelBudget.lean/declarations/cesaroweight-weighted-budget-twenty.md) | 86 | `result-track:5f6ffb01ffdfd233cf6daec90608dab8c6f4c8ae8d8d918b93b1a6b587a7c8b1` |
-| 6 | `theorem` | [cesaroWeight_weighted_budget_twenty_uniform](../../../../MeasureAndIntegration/SharperCesaroKernelBudget.lean/declarations/cesaroweight-weighted-budget-twenty-uniform.md) | 128 | `result-track:b02fb60af6fad218d39b95ca7cdb116be4f6ccebc9b197e7c69d8a364d4f5be0` |
-| 7 | `theorem` | [cesaroWeight_weighted_budget_both_distances](../../../../MeasureAndIntegration/SharperCesaroKernelBudget.lean/declarations/cesaroweight-weighted-budget-both-distances.md) | 137 | `result-track:5d94fd182224cbc953157e5f67ae019513c282b800cafac26b9d7a90588ae840` |
-| 8 | `theorem` | [cesaroWeight_weighted_budget_both_distances_uniform](../../../../MeasureAndIntegration/SharperCesaroKernelBudget.lean/declarations/cesaroweight-weighted-budget-both-distances-uniform.md) | 198 | `result-track:62f690c041ff6af8aab921dc574c1d633385476618475c395e0bf737e6b85ad9` |
+| 1 | `theorem` | [cesaroWeight_second_abs_le_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharperCesaroKernelBudget.lean/declarations/cesaroweight-second-abs-le-upper.md) | 27 | `result-track:9ef37f89494eb420a19f6de55b46bc841c87d3aadb5bfb6e3af743d2b0639e2a` |
+| 2 | `theorem` | [cesaroWeight_second_abs_le_origin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharperCesaroKernelBudget.lean/declarations/cesaroweight-second-abs-le-origin.md) | 44 | `result-track:266898edd076b8ae61823809fb79a3e439be19d6e30815734b3e90ddc6258466` |
+| 3 | `theorem` | [cesaroWeight_second_abs_le_both_distances](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharperCesaroKernelBudget.lean/declarations/cesaroweight-second-abs-le-both-distances.md) | 63 | `result-track:1517d0bbf0d85d994c229dc7ba4e6fa16ee67d34bc8076012f2eb322e0b0cd29` |
+| 4 | `theorem` | [integral_quadratic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharperCesaroKernelBudget.lean/declarations/integral-quadratic.md) | 73 | `result-track:adc35ffd3ccf3be20e20ec585ae3b4bd91c6fceedbe32e7810f39d717bf0fccf` |
+| 5 | `theorem` | [cesaroWeight_weighted_budget_twenty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharperCesaroKernelBudget.lean/declarations/cesaroweight-weighted-budget-twenty.md) | 86 | `result-track:5f6ffb01ffdfd233cf6daec90608dab8c6f4c8ae8d8d918b93b1a6b587a7c8b1` |
+| 6 | `theorem` | [cesaroWeight_weighted_budget_twenty_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharperCesaroKernelBudget.lean/declarations/cesaroweight-weighted-budget-twenty-uniform.md) | 128 | `result-track:b02fb60af6fad218d39b95ca7cdb116be4f6ccebc9b197e7c69d8a364d4f5be0` |
+| 7 | `theorem` | [cesaroWeight_weighted_budget_both_distances](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharperCesaroKernelBudget.lean/declarations/cesaroweight-weighted-budget-both-distances.md) | 137 | `result-track:5d94fd182224cbc953157e5f67ae019513c282b800cafac26b9d7a90588ae840` |
+| 8 | `theorem` | [cesaroWeight_weighted_budget_both_distances_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharperCesaroKernelBudget.lean/declarations/cesaroweight-weighted-budget-both-distances-uniform.md) | 198 | `result-track:62f690c041ff6af8aab921dc574c1d633385476618475c395e0bf737e6b85ad9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OppositeMonPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OppositeMonPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OppositeMonPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OppositeMonPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [mopMonObj](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OppositeMonPublic.lean/declarations/mopmonobj.md) | 31 | `declaration-track:39df711a0c5834bb030434759d024daaccf1d07e91b2732500ab201886ac18de` |
-| 2 | `instance` | [mop_isMonHom](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OppositeMonPublic.lean/declarations/mop-ismonhom.md) | 47 | `declaration-track:393b3f1905fe85338f42b221eccee3fe5057848a3af5269c4665f2dde170a348` |
-| 3 | `instance` | [unmopMonObj](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OppositeMonPublic.lean/declarations/unmopmonobj.md) | 65 | `declaration-track:cacc65d5e37c8999908db2d81e7d37a246c81001e51438c7b8e46857c9f51136` |
-| 4 | `instance` | [unmop_isMonHom](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OppositeMonPublic.lean/declarations/unmop-ismonhom.md) | 81 | `declaration-track:4999c0d799878c48518a62e2bdc3bfb274e0e7a0f1205fca730dc328071d6774` |
-| 5 | `def` | [mopEquiv](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OppositeMonPublic.lean/declarations/mopequiv.md) | 97 | `declaration-track:eac4cc61f8665ceb55205030c9b8c4210cd844a215fc96050b3914dbb026a240` |
-| 6 | `def` | [mopEquivCompForgetIso](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OppositeMonPublic.lean/declarations/mopequivcompforgetiso.md) | 111 | `declaration-track:b347c6c0831af5b32e83c6521265e53426d93ff5406a4dca0abe07b800800b5d` |
+| 1 | `instance` | [mopMonObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OppositeMonPublic.lean/declarations/mopmonobj.md) | 31 | `declaration-track:39df711a0c5834bb030434759d024daaccf1d07e91b2732500ab201886ac18de` |
+| 2 | `instance` | [mop_isMonHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OppositeMonPublic.lean/declarations/mop-ismonhom.md) | 47 | `declaration-track:393b3f1905fe85338f42b221eccee3fe5057848a3af5269c4665f2dde170a348` |
+| 3 | `instance` | [unmopMonObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OppositeMonPublic.lean/declarations/unmopmonobj.md) | 65 | `declaration-track:cacc65d5e37c8999908db2d81e7d37a246c81001e51438c7b8e46857c9f51136` |
+| 4 | `instance` | [unmop_isMonHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OppositeMonPublic.lean/declarations/unmop-ismonhom.md) | 81 | `declaration-track:4999c0d799878c48518a62e2bdc3bfb274e0e7a0f1205fca730dc328071d6774` |
+| 5 | `def` | [mopEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OppositeMonPublic.lean/declarations/mopequiv.md) | 97 | `declaration-track:eac4cc61f8665ceb55205030c9b8c4210cd844a215fc96050b3914dbb026a240` |
+| 6 | `def` | [mopEquivCompForgetIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OppositeMonPublic.lean/declarations/mopequivcompforgetiso.md) | 111 | `declaration-track:b347c6c0831af5b32e83c6521265e53426d93ff5406a4dca0abe07b800800b5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

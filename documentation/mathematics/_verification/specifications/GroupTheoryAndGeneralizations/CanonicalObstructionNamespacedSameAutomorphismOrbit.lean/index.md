@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedSameAutomorphismOrbit.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedSameAutomorphismOrbit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedSameAutomorphismOrbit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedSameAutomorphismOrbit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [SameAutomorphismOrbit](../../../../GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedSameAutomorphismOrbit.lean/declarations/sameautomorphismorbit.md) | 29 | `declaration-track:947525414ff378aeeef02be9b6df39f1c2b6775e7501d02c4be2dc0581cb6175` |
-| 2 | `structure` | [CanonicalObstruction](../../../../GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedSameAutomorphismOrbit.lean/declarations/canonicalobstruction.md) | 38 | `declaration-track:3d99ee3e7720572eec94b686187673659693cefaebf38a21fc126db38ceb0510` |
-| 3 | `theorem` | [automorphic_obstructions_same_canonical_record](../../../../GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedSameAutomorphismOrbit.lean/declarations/automorphic-obstructions-same-canonical-record.md) | 93 | `result-track:3c225041d9c33ed9733060f0f7a4ec484808e723840e33e4a5cc622a92b8c664` |
-| 4 | `theorem` | [canonical_obstruction_unique](../../../../GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedSameAutomorphismOrbit.lean/declarations/canonical-obstruction-unique.md) | 119 | `result-track:510606c1cfca5f29ae1a5ce98ba35b3493ade493ef3b89954964979f62c0a7f5` |
+| 1 | `def` | [SameAutomorphismOrbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedSameAutomorphismOrbit.lean/declarations/sameautomorphismorbit.md) | 29 | `declaration-track:947525414ff378aeeef02be9b6df39f1c2b6775e7501d02c4be2dc0581cb6175` |
+| 2 | `structure` | [CanonicalObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedSameAutomorphismOrbit.lean/declarations/canonicalobstruction.md) | 38 | `declaration-track:3d99ee3e7720572eec94b686187673659693cefaebf38a21fc126db38ceb0510` |
+| 3 | `theorem` | [automorphic_obstructions_same_canonical_record](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedSameAutomorphismOrbit.lean/declarations/automorphic-obstructions-same-canonical-record.md) | 93 | `result-track:3c225041d9c33ed9733060f0f7a4ec484808e723840e33e4a5cc622a92b8c664` |
+| 4 | `theorem` | [canonical_obstruction_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalObstructionNamespacedSameAutomorphismOrbit.lean/declarations/canonical-obstruction-unique.md) | 119 | `result-track:510606c1cfca5f29ae1a5ce98ba35b3493ade493ef3b89954964979f62c0a7f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

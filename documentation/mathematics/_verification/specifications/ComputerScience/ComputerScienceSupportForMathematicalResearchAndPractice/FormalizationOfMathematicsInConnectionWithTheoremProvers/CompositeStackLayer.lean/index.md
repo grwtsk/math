@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompositeStackLayer.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompositeStackLayer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompositeStackLayer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompositeStackLayer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StackLayer](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompositeStackLayer.lean/declarations/stacklayer.md) | 18 | `declaration-track:d2e618221d2aec39e2233ac236f5e63052e8ff2421892bdea7d660514a2c70e6` |
-| 2 | `structure` | [CompositeLayerStack](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompositeStackLayer.lean/declarations/compositelayerstack.md) | 22 | `declaration-track:0ba2c303aaf22b74e1d59acb5de309f736ef9c6ed73199ef1100ebf4bab8137f` |
-| 3 | `theorem` | [composite_layer_stack_has_carrier](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompositeStackLayer.lean/declarations/composite-layer-stack-has-carrier.md) | 31 | `result-track:c17ca8ae55e5f16a64862c431749d5ef087243c4d808dca2f76d3cdd67589d02` |
+| 1 | `structure` | [StackLayer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompositeStackLayer.lean/declarations/stacklayer.md) | 18 | `declaration-track:d2e618221d2aec39e2233ac236f5e63052e8ff2421892bdea7d660514a2c70e6` |
+| 2 | `structure` | [CompositeLayerStack](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompositeStackLayer.lean/declarations/compositelayerstack.md) | 22 | `declaration-track:0ba2c303aaf22b74e1d59acb5de309f736ef9c6ed73199ef1100ebf4bab8137f` |
+| 3 | `theorem` | [composite_layer_stack_has_carrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompositeStackLayer.lean/declarations/composite-layer-stack-has-carrier.md) | 31 | `result-track:c17ca8ae55e5f16a64862c431749d5ef087243c4d808dca2f76d3cdd67589d02` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

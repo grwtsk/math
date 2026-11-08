@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualTiltFourierDictionaryEdition4.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualTiltFourierDictionaryEdition4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltFourierDictionaryEdition4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltFourierDictionaryEdition4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualTiltStandardSpectrum](../../../../MeasureAndIntegration/SourceActualTiltFourierDictionaryEdition4.lean/declarations/actualtiltstandardspectrum.md) | 24 | `declaration-track:2b7c70f7997bf711aec0686ccf6b7fb56e4c801c750cd6debb4d4308409ee445` |
-| 2 | `theorem` | [actualUnitTilt_complex_integrable](../../../../MeasureAndIntegration/SourceActualTiltFourierDictionaryEdition4.lean/declarations/actualunittilt-complex-integrable.md) | 28 | `result-track:688ab2b2a83f6d01766eaafb54019f0477e4282b0b957274160de75e3240ed6f` |
-| 3 | `theorem` | [actualUnitTiltState_integrable](../../../../MeasureAndIntegration/SourceActualTiltFourierDictionaryEdition4.lean/declarations/actualunittiltstate-integrable.md) | 39 | `result-track:c6d3f97c3f1e31fb1bdb1f4f0e1eee55b34b77c53a6dda26cffd57cc42edcad4` |
-| 4 | `theorem` | [actualUnitTilt_fourier_eq](../../../../MeasureAndIntegration/SourceActualTiltFourierDictionaryEdition4.lean/declarations/actualunittilt-fourier-eq.md) | 44 | `result-track:729c9009e7dee27cda6cd385cb410f1ea4e8070d5ea7f68db61fa1678b1fbabd` |
-| 5 | `theorem` | [actualUnitTiltState_fourier_coe_ae](../../../../MeasureAndIntegration/SourceActualTiltFourierDictionaryEdition4.lean/declarations/actualunittiltstate-fourier-coe-ae.md) | 78 | `result-track:3b45bbccf8d7e3f240a2f5bf594672ecc66cef1037b1ccec6bb0c8dfc40a9f3a` |
-| 6 | `theorem` | [actualTiltStandardSpectrum_sq_eq_weight](../../../../MeasureAndIntegration/SourceActualTiltFourierDictionaryEdition4.lean/declarations/actualtiltstandardspectrum-sq-eq-weight.md) | 87 | `result-track:c011694efd17cc7d3bf607a48d2a04c3013efbdbd659ed0a932a6672682109ba` |
-| 7 | `theorem` | [actualTiltStandardSpectrum_norm_sq_eq_weight_norm](../../../../MeasureAndIntegration/SourceActualTiltFourierDictionaryEdition4.lean/declarations/actualtiltstandardspectrum-norm-sq-eq-weight-norm.md) | 97 | `result-track:ad19170d6bd7298fe816fadb2b11635058cc328bb17ca80f097f0a118b716c0b` |
+| 1 | `def` | [actualTiltStandardSpectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltFourierDictionaryEdition4.lean/declarations/actualtiltstandardspectrum.md) | 24 | `declaration-track:2b7c70f7997bf711aec0686ccf6b7fb56e4c801c750cd6debb4d4308409ee445` |
+| 2 | `theorem` | [actualUnitTilt_complex_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltFourierDictionaryEdition4.lean/declarations/actualunittilt-complex-integrable.md) | 28 | `result-track:688ab2b2a83f6d01766eaafb54019f0477e4282b0b957274160de75e3240ed6f` |
+| 3 | `theorem` | [actualUnitTiltState_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltFourierDictionaryEdition4.lean/declarations/actualunittiltstate-integrable.md) | 39 | `result-track:c6d3f97c3f1e31fb1bdb1f4f0e1eee55b34b77c53a6dda26cffd57cc42edcad4` |
+| 4 | `theorem` | [actualUnitTilt_fourier_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltFourierDictionaryEdition4.lean/declarations/actualunittilt-fourier-eq.md) | 44 | `result-track:729c9009e7dee27cda6cd385cb410f1ea4e8070d5ea7f68db61fa1678b1fbabd` |
+| 5 | `theorem` | [actualUnitTiltState_fourier_coe_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltFourierDictionaryEdition4.lean/declarations/actualunittiltstate-fourier-coe-ae.md) | 78 | `result-track:3b45bbccf8d7e3f240a2f5bf594672ecc66cef1037b1ccec6bb0c8dfc40a9f3a` |
+| 6 | `theorem` | [actualTiltStandardSpectrum_sq_eq_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltFourierDictionaryEdition4.lean/declarations/actualtiltstandardspectrum-sq-eq-weight.md) | 87 | `result-track:c011694efd17cc7d3bf607a48d2a04c3013efbdbd659ed0a932a6672682109ba` |
+| 7 | `theorem` | [actualTiltStandardSpectrum_norm_sq_eq_weight_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltFourierDictionaryEdition4.lean/declarations/actualtiltstandardspectrum-norm-sq-eq-weight-norm.md) | 97 | `result-track:ad19170d6bd7298fe816fadb2b11635058cc328bb17ca80f097f0a118b716c0b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

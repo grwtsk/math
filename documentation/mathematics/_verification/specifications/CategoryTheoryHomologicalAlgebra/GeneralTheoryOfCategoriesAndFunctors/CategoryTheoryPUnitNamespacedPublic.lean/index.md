@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryPUnitNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryPUnitNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryPUnitNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryPUnitNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [star](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryPUnitNamespacedPublic.lean/declarations/star.md) | 39 | `declaration-track:c8914e854abf9c2c36adb7a125aef089f0df2a67422e44c7c206e452ccbba971` |
-| 2 | `def` | [punitExt](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryPUnitNamespacedPublic.lean/declarations/punitext.md) | 45 | `declaration-track:46461d0825496563bf6101258bc91194e8ae44e04ac0ef75e553aec7cda88e98` |
-| 3 | `theorem` | [punit_ext'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryPUnitNamespacedPublic.lean/declarations/punit-ext.md) | 50 | `result-track:1ab517278cfc8f071a28affbf96d9cfa833975bf48a0c8027bcb7b5bfb472906` |
-| 4 | `abbrev` | [fromPUnit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryPUnitNamespacedPublic.lean/declarations/frompunit.md) | 54 | `declaration-track:22c60274bc54c83f7dcf5f5a2c26caf8914437a79b48e5e231ae99c678b5c4a8` |
-| 5 | `def` | [equiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryPUnitNamespacedPublic.lean/declarations/equiv.md) | 60 | `declaration-track:eb1e73a99f72453e03d8088aa37f7e1c5951343b24880449735e2bbcbf79a458` |
-| 6 | `theorem` | [equiv_punit_iff_unique](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryPUnitNamespacedPublic.lean/declarations/equiv-punit-iff-unique.md) | 74 | `result-track:57871db7659284abb6bc2c25afd6c21a90124cfe7194df4c577186a4cab05e5b` |
+| 1 | `def` | [star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryPUnitNamespacedPublic.lean/declarations/star.md) | 39 | `declaration-track:c8914e854abf9c2c36adb7a125aef089f0df2a67422e44c7c206e452ccbba971` |
+| 2 | `def` | [punitExt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryPUnitNamespacedPublic.lean/declarations/punitext.md) | 45 | `declaration-track:46461d0825496563bf6101258bc91194e8ae44e04ac0ef75e553aec7cda88e98` |
+| 3 | `theorem` | [punit_ext'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryPUnitNamespacedPublic.lean/declarations/punit-ext.md) | 50 | `result-track:1ab517278cfc8f071a28affbf96d9cfa833975bf48a0c8027bcb7b5bfb472906` |
+| 4 | `abbrev` | [fromPUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryPUnitNamespacedPublic.lean/declarations/frompunit.md) | 54 | `declaration-track:22c60274bc54c83f7dcf5f5a2c26caf8914437a79b48e5e231ae99c678b5c4a8` |
+| 5 | `def` | [equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryPUnitNamespacedPublic.lean/declarations/equiv.md) | 60 | `declaration-track:eb1e73a99f72453e03d8088aa37f7e1c5951343b24880449735e2bbcbf79a458` |
+| 6 | `theorem` | [equiv_punit_iff_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryPUnitNamespacedPublic.lean/declarations/equiv-punit-iff-unique.md) | 74 | `result-track:57871db7659284abb6bc2c25afd6c21a90124cfe7194df4c577186a4cab05e5b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

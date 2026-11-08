@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CategoricalTracePackageCategoricalTracePackage.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CategoricalTracePackageCategoricalTracePackage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CategoricalTracePackageCategoricalTracePackage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CategoricalTracePackageCategoricalTracePackage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CategoricalTracePackage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CategoricalTracePackageCategoricalTracePackage.lean/declarations/categoricaltracepackage.md) | 16 | `declaration-track:ed7c980b9eacac1ab8d36a85ee92ffb964fadaede5b746777db57848613e7c92` |
-| 2 | `theorem` | [categorical_trace_formula_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CategoricalTracePackageCategoricalTracePackage.lean/declarations/categorical-trace-formula-if-supplied.md) | 26 | `result-track:0e15599c2bb7c1d52ef3cef26bb2d43b38a10f02eabf6bcf5cae8cdfa69c5f88` |
-| 3 | `theorem` | [categorical_trace_hrr_compatible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CategoricalTracePackageCategoricalTracePackage.lean/declarations/categorical-trace-hrr-compatible.md) | 31 | `result-track:a51b1948e3cbb3dd9d9fea09d752da47aefbbd47ffc3c27adc8f2a45007611fd` |
+| 1 | `structure` | [CategoricalTracePackage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CategoricalTracePackageCategoricalTracePackage.lean/declarations/categoricaltracepackage.md) | 16 | `declaration-track:ed7c980b9eacac1ab8d36a85ee92ffb964fadaede5b746777db57848613e7c92` |
+| 2 | `theorem` | [categorical_trace_formula_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CategoricalTracePackageCategoricalTracePackage.lean/declarations/categorical-trace-formula-if-supplied.md) | 26 | `result-track:0e15599c2bb7c1d52ef3cef26bb2d43b38a10f02eabf6bcf5cae8cdfa69c5f88` |
+| 3 | `theorem` | [categorical_trace_hrr_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CategoricalTracePackageCategoricalTracePackage.lean/declarations/categorical-trace-hrr-compatible.md) | 31 | `result-track:a51b1948e3cbb3dd9d9fea09d752da47aefbbd47ffc3c27adc8f2a45007611fd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

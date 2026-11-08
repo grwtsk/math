@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LinearFunctorCategoryNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LinearFunctorCategoryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LinearFunctorCategoryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LinearFunctorCategoryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [functorCategoryLinear](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LinearFunctorCategoryNamespaced.lean/declarations/functorcategorylinear.md) | 32 | `declaration-track:33fffebb480acd9c6df30089ea4424e97944252f0b5c9f40454bf21c5c66ec19` |
-| 2 | `def` | [appLinearMap](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LinearFunctorCategoryNamespaced.lean/declarations/applinearmap.md) | 79 | `declaration-track:9a942484c994a934d867e6092586473ab64f1cf991a971c1f126ae96f93219ed` |
-| 3 | `theorem` | [app_smul](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LinearFunctorCategoryNamespaced.lean/declarations/app-smul.md) | 85 | `result-track:f53fb09bcfaf9f5610569849e46c43c27730827fce3fe3671603a7546304c5bb` |
+| 1 | `instance` | [functorCategoryLinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LinearFunctorCategoryNamespaced.lean/declarations/functorcategorylinear.md) | 32 | `declaration-track:33fffebb480acd9c6df30089ea4424e97944252f0b5c9f40454bf21c5c66ec19` |
+| 2 | `def` | [appLinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LinearFunctorCategoryNamespaced.lean/declarations/applinearmap.md) | 79 | `declaration-track:9a942484c994a934d867e6092586473ab64f1cf991a971c1f126ae96f93219ed` |
+| 3 | `theorem` | [app_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LinearFunctorCategoryNamespaced.lean/declarations/app-smul.md) | 85 | `result-track:f53fb09bcfaf9f5610569849e46c43c27730827fce3fe3671603a7546304c5bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/SymmetricIrreflexiveRelationData.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/SymmetricIrreflexiveRelationData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/SymmetricIrreflexiveRelationData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/SymmetricIrreflexiveRelationData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CellGraph](../../../../../Combinatorics/GraphTheory/SymmetricIrreflexiveRelationData.lean/declarations/cellgraph.md) | 40 | `declaration-track:ce0debc1261005211a502e39086f87f6a02cd51a0e6aea04881724dcd78b6bd1` |
+| 1 | `structure` | [CellGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/SymmetricIrreflexiveRelationData.lean/declarations/cellgraph.md) | 40 | `declaration-track:ce0debc1261005211a502e39086f87f6a02cd51a0e6aea04881724dcd78b6bd1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

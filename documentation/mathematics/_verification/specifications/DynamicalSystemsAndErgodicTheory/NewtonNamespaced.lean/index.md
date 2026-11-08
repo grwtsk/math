@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [newtonMap](../../../../DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/declarations/newtonmap.md) | 52 | `declaration-track:69e2d8a82b4d12f030d31c8b5cdeafd39eda32f647e7ce0c70539941a1947488` |
-| 2 | `theorem` | [newtonMap_apply](../../../../DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/declarations/newtonmap-apply.md) | 55 | `result-track:121be1cffac4bc056f645a3cfabd1c0ca51ff2e7719ce2553583d3d96e6fe256` |
-| 3 | `theorem` | [newtonMap_apply_of_isUnit](../../../../DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/declarations/newtonmap-apply-of-isunit.md) | 61 | `result-track:278b201ce46233c867224261061e601293796f04568eee04e860e0d7a7dc2a1b` |
-| 4 | `theorem` | [newtonMap_apply_of_not_isUnit](../../../../DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/declarations/newtonmap-apply-of-not-isunit.md) | 65 | `result-track:733fe8bb9db3bf82680b562ff07f0b5ff30e81247ef9c99d079de1d6b7073d52` |
-| 5 | `theorem` | [isNilpotent_iterate_newtonMap_sub_of_isNilpotent](../../../../DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/declarations/isnilpotent-iterate-newtonmap-sub-of-isnilpotent.md) | 69 | `result-track:43a1059a82d35c49ec000cbe682def7628c3889b77992c6bca57e186d21f274c` |
-| 6 | `theorem` | [isFixedPt_newtonMap_of_aeval_eq_zero](../../../../DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/declarations/isfixedpt-newtonmap-of-aeval-eq-zero.md) | 79 | `result-track:043ef24d0833d87dc837e61cd6474377075104e6e3571b9095132fd93844ad03` |
-| 7 | `theorem` | [isFixedPt_newtonMap_of_isUnit_iff](../../../../DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/declarations/isfixedpt-newtonmap-of-isunit-iff.md) | 83 | `result-track:34ff1a357b23f0a67a8f97da1243d59c231dd63ae3ff216c1aa297723da33c52` |
-| 8 | `theorem` | [aeval_pow_two_pow_dvd_aeval_iterate_newtonMap](../../../../DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/declarations/aeval-pow-two-pow-dvd-aeval-iterate-newtonmap.md) | 89 | `result-track:ce87cc0c79876df03312686cd745bcdc0c2130541b54a3c78abcb7ef8d88b0c2` |
-| 9 | `theorem` | [existsUnique_nilpotent_sub_and_aeval_eq_zero](../../../../DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/declarations/existsunique-nilpotent-sub-and-aeval-eq-zero.md) | 114 | `result-track:b0019681de2de93786b6e704bbde0f8a4e7afcc0bc92e3c73c3d9f5466a750cd` |
+| 1 | `def` | [newtonMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/declarations/newtonmap.md) | 52 | `declaration-track:69e2d8a82b4d12f030d31c8b5cdeafd39eda32f647e7ce0c70539941a1947488` |
+| 2 | `theorem` | [newtonMap_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/declarations/newtonmap-apply.md) | 55 | `result-track:121be1cffac4bc056f645a3cfabd1c0ca51ff2e7719ce2553583d3d96e6fe256` |
+| 3 | `theorem` | [newtonMap_apply_of_isUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/declarations/newtonmap-apply-of-isunit.md) | 61 | `result-track:278b201ce46233c867224261061e601293796f04568eee04e860e0d7a7dc2a1b` |
+| 4 | `theorem` | [newtonMap_apply_of_not_isUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/declarations/newtonmap-apply-of-not-isunit.md) | 65 | `result-track:733fe8bb9db3bf82680b562ff07f0b5ff30e81247ef9c99d079de1d6b7073d52` |
+| 5 | `theorem` | [isNilpotent_iterate_newtonMap_sub_of_isNilpotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/declarations/isnilpotent-iterate-newtonmap-sub-of-isnilpotent.md) | 69 | `result-track:43a1059a82d35c49ec000cbe682def7628c3889b77992c6bca57e186d21f274c` |
+| 6 | `theorem` | [isFixedPt_newtonMap_of_aeval_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/declarations/isfixedpt-newtonmap-of-aeval-eq-zero.md) | 79 | `result-track:043ef24d0833d87dc837e61cd6474377075104e6e3571b9095132fd93844ad03` |
+| 7 | `theorem` | [isFixedPt_newtonMap_of_isUnit_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/declarations/isfixedpt-newtonmap-of-isunit-iff.md) | 83 | `result-track:34ff1a357b23f0a67a8f97da1243d59c231dd63ae3ff216c1aa297723da33c52` |
+| 8 | `theorem` | [aeval_pow_two_pow_dvd_aeval_iterate_newtonMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/declarations/aeval-pow-two-pow-dvd-aeval-iterate-newtonmap.md) | 89 | `result-track:ce87cc0c79876df03312686cd745bcdc0c2130541b54a3c78abcb7ef8d88b0c2` |
+| 9 | `theorem` | [existsUnique_nilpotent_sub_and_aeval_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/NewtonNamespaced.lean/declarations/existsunique-nilpotent-sub-and-aeval-eq-zero.md) | 114 | `result-track:b0019681de2de93786b6e704bbde0f8a4e7afcc0bc92e3c73c3d9f5466a750cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

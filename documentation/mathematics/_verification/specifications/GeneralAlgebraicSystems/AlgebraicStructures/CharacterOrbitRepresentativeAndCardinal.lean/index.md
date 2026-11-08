@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharacterOrbitRepresentativeAndCardinal.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharacterOrbitRepresentativeAndCardinal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharacterOrbitRepresentativeAndCardinal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharacterOrbitRepresentativeAndCardinal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Mathlib.NumberTheory.DirichletCharacter.Bounds` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.SpecialFunctions.Gamma.Digamma` — import line 22; external provider; requires a separately pinned dependency.
-- [Primitive Character Profile And Conjugation](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/index.md) — import line 23; pinned internal source present.
+- [Primitive Character Profile And Conjugation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CharacterOrbit](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharacterOrbitRepresentativeAndCardinal.lean/declarations/characterorbit.md) | 39 | `declaration-track:04a3a24fd26a87eb26b7e188647c017d154924b66052e928a386888ce821603e` |
-| 2 | `def` | [conjugateRepresentative](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharacterOrbitRepresentativeAndCardinal.lean/declarations/conjugaterepresentative.md) | 44 | `declaration-track:1aed910170f13bc5b4cd61021a2718795a28bd7d331c1b6076e3fa8bb95baf1f` |
-| 3 | `def` | [cardinal](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharacterOrbitRepresentativeAndCardinal.lean/declarations/cardinal.md) | 49 | `declaration-track:3bb642881e63f1b1024a30dcbd7abd90d8a84c5079f0030e21a0afcf769bd415` |
-| 4 | `theorem` | [cardinal_eq_one_or_two](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharacterOrbitRepresentativeAndCardinal.lean/declarations/cardinal-eq-one-or-two.md) | 54 | `result-track:59dbc29285f45ed76303c0034abe121fa6b24d863409007a9d9aef5e3d384248` |
-| 5 | `abbrev` | [CharacterOrbit](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharacterOrbitRepresentativeAndCardinal.lean/declarations/characterorbit-source-edition-2.md) | 64 | `declaration-track:b41b69e83dfa9a5ab21c6252819acb579075a91c1f6351f5bbf924ad74283e6a` |
+| 1 | `structure` | [CharacterOrbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharacterOrbitRepresentativeAndCardinal.lean/declarations/characterorbit.md) | 39 | `declaration-track:04a3a24fd26a87eb26b7e188647c017d154924b66052e928a386888ce821603e` |
+| 2 | `def` | [conjugateRepresentative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharacterOrbitRepresentativeAndCardinal.lean/declarations/conjugaterepresentative.md) | 44 | `declaration-track:1aed910170f13bc5b4cd61021a2718795a28bd7d331c1b6076e3fa8bb95baf1f` |
+| 3 | `def` | [cardinal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharacterOrbitRepresentativeAndCardinal.lean/declarations/cardinal.md) | 49 | `declaration-track:3bb642881e63f1b1024a30dcbd7abd90d8a84c5079f0030e21a0afcf769bd415` |
+| 4 | `theorem` | [cardinal_eq_one_or_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharacterOrbitRepresentativeAndCardinal.lean/declarations/cardinal-eq-one-or-two.md) | 54 | `result-track:59dbc29285f45ed76303c0034abe121fa6b24d863409007a9d9aef5e3d384248` |
+| 5 | `abbrev` | [CharacterOrbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharacterOrbitRepresentativeAndCardinal.lean/declarations/characterorbit-source-edition-2.md) | 64 | `declaration-track:b41b69e83dfa9a5ab21c6252819acb579075a91c1f6351f5bbf924ad74283e6a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

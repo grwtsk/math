@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MarkerNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MarkerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MarkerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MarkerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [markerDirPath](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MarkerNamespaced.lean/declarations/markerdirpath.md) | 41 | `declaration-track:901fcd8cb84a0af770d93d185cbf218f47a5ea870081acc03fc6a86b42e1d578` |
-| 2 | `def` | [markerPath](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MarkerNamespaced.lean/declarations/markerpath.md) | 45 | `declaration-track:6d1b6d85e7a3196dac32f15099c15826db97180842862db5fa93aeb8e3b3f4cf` |
-| 3 | `def` | [markerReadURL](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MarkerNamespaced.lean/declarations/markerreadurl.md) | 53 | `declaration-track:fb41acfa2c026309d71ba96ebad3109f19e49a770d80ff4c66bf8c65e7aa488e` |
-| 4 | `def` | [uploadMarkerWith](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MarkerNamespaced.lean/declarations/uploadmarkerwith.md) | 73 | `declaration-track:621724b51e57d880f021239acb628d2a64e070ee8d00b5a225a0253f1df57a3c` |
+| 1 | `def` | [markerDirPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MarkerNamespaced.lean/declarations/markerdirpath.md) | 41 | `declaration-track:901fcd8cb84a0af770d93d185cbf218f47a5ea870081acc03fc6a86b42e1d578` |
+| 2 | `def` | [markerPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MarkerNamespaced.lean/declarations/markerpath.md) | 45 | `declaration-track:6d1b6d85e7a3196dac32f15099c15826db97180842862db5fa93aeb8e3b3f4cf` |
+| 3 | `def` | [markerReadURL](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MarkerNamespaced.lean/declarations/markerreadurl.md) | 53 | `declaration-track:fb41acfa2c026309d71ba96ebad3109f19e49a770d80ff4c66bf8c65e7aa488e` |
+| 4 | `def` | [uploadMarkerWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MarkerNamespaced.lean/declarations/uploadmarkerwith.md) | 73 | `declaration-track:621724b51e57d880f021239acb628d2a64e070ee8d00b5a225a0253f1df57a3c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

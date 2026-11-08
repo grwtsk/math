@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Folds.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Folds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Folds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Folds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [iunfoldr](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Folds.lean/declarations/iunfoldr.md) | 16 | `declaration-track:6d4793c0f93d29f0de3e9daf6ce7f6fcbda76f3e4b1ba1da9a408b78c6ab7feb` |
-| 2 | `theorem` | [iunfoldr.fst_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Folds.lean/declarations/iunfoldr-fst-eq.md) | 20 | `result-track:2d0a9e1d60acf47df8dfeed8f288bd2f5b9cb31b4735c5865fc07b37f7e755e6` |
-| 3 | `theorem` | [iunfoldr.eq_test](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Folds.lean/declarations/iunfoldr-eq-test.md) | 33 | `result-track:f65e0763343c2c03795075e6b601fdc470a8776c5c4aca0edd8e9ad07f17a98e` |
-| 4 | `theorem` | [iunfoldr_replace](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Folds.lean/declarations/iunfoldr-replace.md) | 48 | `result-track:3cb393edd1101534698e7fbaf3e5a0971598ef524ede6ad359c786f152ca189c` |
+| 1 | `def` | [iunfoldr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Folds.lean/declarations/iunfoldr.md) | 16 | `declaration-track:6d4793c0f93d29f0de3e9daf6ce7f6fcbda76f3e4b1ba1da9a408b78c6ab7feb` |
+| 2 | `theorem` | [iunfoldr.fst_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Folds.lean/declarations/iunfoldr-fst-eq.md) | 20 | `result-track:2d0a9e1d60acf47df8dfeed8f288bd2f5b9cb31b4735c5865fc07b37f7e755e6` |
+| 3 | `theorem` | [iunfoldr.eq_test](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Folds.lean/declarations/iunfoldr-eq-test.md) | 33 | `result-track:f65e0763343c2c03795075e6b601fdc470a8776c5c4aca0edd8e9ad07f17a98e` |
+| 4 | `theorem` | [iunfoldr_replace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Folds.lean/declarations/iunfoldr-replace.md) | 48 | `result-track:3cb393edd1101534698e7fbaf3e5a0971598ef524ede6ad359c786f152ca189c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

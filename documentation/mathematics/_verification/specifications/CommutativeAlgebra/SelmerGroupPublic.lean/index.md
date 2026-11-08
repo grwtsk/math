@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SelmerGroupPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SelmerGroupPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SelmerGroupPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SelmerGroupPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,21 +57,21 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [valuationOfNeZeroToFun](../../../../CommutativeAlgebra/SelmerGroupPublic.lean/declarations/valuationofnezerotofun.md) | 89 | `declaration-track:4ba5e5926b45aec91172a2429174ed8982816fc59c9062816126310e1ab88ac6` |
-| 2 | `theorem` | [valuationOfNeZeroToFun_eq](../../../../CommutativeAlgebra/SelmerGroupPublic.lean/declarations/valuationofnezerotofun-eq.md) | 97 | `result-track:9e43226cab474339862d84aaffbeb11e68c78542aee47e2682ad0aed1162ca78` |
-| 3 | `def` | [valuationOfNeZero](../../../../CommutativeAlgebra/SelmerGroupPublic.lean/declarations/valuationofnezero.md) | 109 | `declaration-track:d2a5e2934ccb5268ea8d42d7ae19391b1e2e4bf61e6ee9bc69b48978dd99464b` |
-| 4 | `theorem` | [valuationOfNeZero_eq](../../../../CommutativeAlgebra/SelmerGroupPublic.lean/declarations/valuationofnezero-eq.md) | 117 | `result-track:3ece8a84f540a62cac87c7e400f2ecb26345cd0e60136722a3e0191bbe73f4ab` |
-| 5 | `theorem` | [valuation_of_unit_eq](../../../../CommutativeAlgebra/SelmerGroupPublic.lean/declarations/valuation-of-unit-eq.md) | 121 | `result-track:436bc7309e3d133a6aace9de22a49871b11f4177793a4929dba9542e85452913` |
-| 6 | `def` | [valuationOfNeZeroMod](../../../../CommutativeAlgebra/SelmerGroupPublic.lean/declarations/valuationofnezeromod.md) | 135 | `declaration-track:a8ad6713026f7dc0c9ddd4fa3fc5b6d6cb89efa74d40228fbe0d196a0d4d893b` |
-| 7 | `theorem` | [valuation_of_unit_mod_eq](../../../../CommutativeAlgebra/SelmerGroupPublic.lean/declarations/valuation-of-unit-mod-eq.md) | 148 | `result-track:954b765fc0a34fcad015fbb25742a24ad35b0eeca31dbb5a74de483db34c1850` |
-| 8 | `def` | [selmerGroup](../../../../CommutativeAlgebra/SelmerGroupPublic.lean/declarations/selmergroup.md) | 163 | `declaration-track:58a5b21942ca849f58180dedbe2e906f821ee43abe332d6646fbabdafdd68c09` |
-| 9 | `theorem` | [monotone](../../../../CommutativeAlgebra/SelmerGroupPublic.lean/declarations/monotone.md) | 174 | `result-track:1295e99804449018c4ec3372faecf357fc1e14367851bc21359b4619af107f5c` |
-| 10 | `def` | [valuation](../../../../CommutativeAlgebra/SelmerGroupPublic.lean/declarations/valuation.md) | 177 | `declaration-track:2f9bb81271065158c3a4de7ee000f922c2c7d7911a7ec2a378ca3766537993b0` |
-| 11 | `theorem` | [valuation_ker_eq](../../../../CommutativeAlgebra/SelmerGroupPublic.lean/declarations/valuation-ker-eq.md) | 182 | `result-track:9ec1e1151d09875c67cf92b44b3554c69c5ef15d22c338e65f2b93a8046bb01a` |
-| 12 | `def` | [fromUnit](../../../../CommutativeAlgebra/SelmerGroupPublic.lean/declarations/fromunit.md) | 193 | `declaration-track:efeb9d69f34c6fcad2e4514203e06907d362e46fa1382816c84acc20dc02c315` |
-| 13 | `theorem` | [fromUnit_ker](../../../../CommutativeAlgebra/SelmerGroupPublic.lean/declarations/fromunit-ker.md) | 201 | `result-track:f1ff064d06c404e069fa906a0bebef0437a1053f66dba6f1e33de7003c195a04` |
-| 14 | `def` | [fromUnitLift](../../../../CommutativeAlgebra/SelmerGroupPublic.lean/declarations/fromunitlift.md) | 229 | `declaration-track:45232e1ccef2c7b491846b4e96369ebde0a1fa326224d9b63ab9807ef5a4efd5` |
-| 15 | `theorem` | [fromUnitLift_injective](../../../../CommutativeAlgebra/SelmerGroupPublic.lean/declarations/fromunitlift-injective.md) | 233 | `result-track:ad4266e320df611f0cdec122580582b1a4dc1983abcbcbe0cc2d2c6ff665b0c6` |
+| 1 | `def` | [valuationOfNeZeroToFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SelmerGroupPublic.lean/declarations/valuationofnezerotofun.md) | 89 | `declaration-track:4ba5e5926b45aec91172a2429174ed8982816fc59c9062816126310e1ab88ac6` |
+| 2 | `theorem` | [valuationOfNeZeroToFun_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SelmerGroupPublic.lean/declarations/valuationofnezerotofun-eq.md) | 97 | `result-track:9e43226cab474339862d84aaffbeb11e68c78542aee47e2682ad0aed1162ca78` |
+| 3 | `def` | [valuationOfNeZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SelmerGroupPublic.lean/declarations/valuationofnezero.md) | 109 | `declaration-track:d2a5e2934ccb5268ea8d42d7ae19391b1e2e4bf61e6ee9bc69b48978dd99464b` |
+| 4 | `theorem` | [valuationOfNeZero_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SelmerGroupPublic.lean/declarations/valuationofnezero-eq.md) | 117 | `result-track:3ece8a84f540a62cac87c7e400f2ecb26345cd0e60136722a3e0191bbe73f4ab` |
+| 5 | `theorem` | [valuation_of_unit_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SelmerGroupPublic.lean/declarations/valuation-of-unit-eq.md) | 121 | `result-track:436bc7309e3d133a6aace9de22a49871b11f4177793a4929dba9542e85452913` |
+| 6 | `def` | [valuationOfNeZeroMod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SelmerGroupPublic.lean/declarations/valuationofnezeromod.md) | 135 | `declaration-track:a8ad6713026f7dc0c9ddd4fa3fc5b6d6cb89efa74d40228fbe0d196a0d4d893b` |
+| 7 | `theorem` | [valuation_of_unit_mod_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SelmerGroupPublic.lean/declarations/valuation-of-unit-mod-eq.md) | 148 | `result-track:954b765fc0a34fcad015fbb25742a24ad35b0eeca31dbb5a74de483db34c1850` |
+| 8 | `def` | [selmerGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SelmerGroupPublic.lean/declarations/selmergroup.md) | 163 | `declaration-track:58a5b21942ca849f58180dedbe2e906f821ee43abe332d6646fbabdafdd68c09` |
+| 9 | `theorem` | [monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SelmerGroupPublic.lean/declarations/monotone.md) | 174 | `result-track:1295e99804449018c4ec3372faecf357fc1e14367851bc21359b4619af107f5c` |
+| 10 | `def` | [valuation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SelmerGroupPublic.lean/declarations/valuation.md) | 177 | `declaration-track:2f9bb81271065158c3a4de7ee000f922c2c7d7911a7ec2a378ca3766537993b0` |
+| 11 | `theorem` | [valuation_ker_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SelmerGroupPublic.lean/declarations/valuation-ker-eq.md) | 182 | `result-track:9ec1e1151d09875c67cf92b44b3554c69c5ef15d22c338e65f2b93a8046bb01a` |
+| 12 | `def` | [fromUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SelmerGroupPublic.lean/declarations/fromunit.md) | 193 | `declaration-track:efeb9d69f34c6fcad2e4514203e06907d362e46fa1382816c84acc20dc02c315` |
+| 13 | `theorem` | [fromUnit_ker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SelmerGroupPublic.lean/declarations/fromunit-ker.md) | 201 | `result-track:f1ff064d06c404e069fa906a0bebef0437a1053f66dba6f1e33de7003c195a04` |
+| 14 | `def` | [fromUnitLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SelmerGroupPublic.lean/declarations/fromunitlift.md) | 229 | `declaration-track:45232e1ccef2c7b491846b4e96369ebde0a1fa326224d9b63ab9807ef5a4efd5` |
+| 15 | `theorem` | [fromUnitLift_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SelmerGroupPublic.lean/declarations/fromunitlift-injective.md) | 233 | `result-track:ad4266e320df611f0cdec122580582b1a4dc1983abcbcbe0cc2d2c6ff665b0c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02P.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02P.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02P.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02P.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [p](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02P.lean/declarations/p.md) | 15 | `declaration-track:a0cd0e9a70e5fa78bd2c50e9afce284402af4af3504d8d12d5dcab2f94dc1880` |
-| 2 | `def` | [normalizedSquare](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02P.lean/declarations/normalizedsquare.md) | 17 | `declaration-track:f9b40f3187165bc90b16ea2df1ae6be828becd90fc8bf955b1a29da78b47cf7f` |
-| 3 | `theorem` | [p_coe](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02P.lean/declarations/p-coe.md) | 20 | `result-track:1a5e7546599d1919ffb4c097f38ce3122fe1090b6028d920f48aab497496ac12` |
-| 4 | `theorem` | [actual_scaled_square_real](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02P.lean/declarations/actual-scaled-square-real.md) | 23 | `result-track:f24911faddf0b447d151eef34e1e447819783a6f72812e019ae2b3db0323566c` |
+| 1 | `def` | [p](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02P.lean/declarations/p.md) | 15 | `declaration-track:a0cd0e9a70e5fa78bd2c50e9afce284402af4af3504d8d12d5dcab2f94dc1880` |
+| 2 | `def` | [normalizedSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02P.lean/declarations/normalizedsquare.md) | 17 | `declaration-track:f9b40f3187165bc90b16ea2df1ae6be828becd90fc8bf955b1a29da78b47cf7f` |
+| 3 | `theorem` | [p_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02P.lean/declarations/p-coe.md) | 20 | `result-track:1a5e7546599d1919ffb4c097f38ce3122fe1090b6028d920f48aab497496ac12` |
+| 4 | `theorem` | [actual_scaled_square_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02P.lean/declarations/actual-scaled-square-real.md) | 23 | `result-track:f24911faddf0b447d151eef34e1e447819783a6f72812e019ae2b3db0323566c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

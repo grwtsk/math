@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [prodComonad](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/declarations/prodcomonad.md) | 48 | `declaration-track:bb9e31bdfbd9468a944e9a02216ff3d71a1db694a38075c4d4865d670c316142` |
-| 2 | `def` | [coalgebraToOver](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/declarations/coalgebratoover.md) | 58 | `declaration-track:a1e7cf5621725c6b09cc18f0c9670d52305ddd8278a1aa7ece8db09dbb94db0f` |
-| 3 | `def` | [overToCoalgebra](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/declarations/overtocoalgebra.md) | 68 | `declaration-track:8077358b46a7b4fff6e98e3994a0d2692f4aee5414399789427af852b0001234` |
-| 4 | `def` | [coalgebraEquivOver](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/declarations/coalgebraequivover.md) | 78 | `declaration-track:6741ecba1f581373af589d4334a8273c95487c4a1c67851b8cedbaece9432648` |
-| 5 | `def` | [coprodMonad](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/declarations/coprodmonad.md) | 95 | `declaration-track:2933a522a4ea6ceea1c25c522d8918f5259e9814dd441b014dbf2d75c4bd2da3` |
-| 6 | `def` | [algebraToUnder](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/declarations/algebratounder.md) | 106 | `declaration-track:a94d6a670bc751dcf0a02515c3b4cafd687c96188c353d683fa69dc961e7e316` |
-| 7 | `def` | [underToAlgebra](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/declarations/undertoalgebra.md) | 115 | `declaration-track:6cc297d7327cd64ccadf1d230f672d8dae99e07c549dd264d6adb7311bd22970` |
-| 8 | `def` | [algebraEquivUnder](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/declarations/algebraequivunder.md) | 126 | `declaration-track:d075c2515c9b359ba95c0524cb6afe553e78db2f25ac320a7ad4546dd9d897ed` |
+| 1 | `def` | [prodComonad](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/declarations/prodcomonad.md) | 48 | `declaration-track:bb9e31bdfbd9468a944e9a02216ff3d71a1db694a38075c4d4865d670c316142` |
+| 2 | `def` | [coalgebraToOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/declarations/coalgebratoover.md) | 58 | `declaration-track:a1e7cf5621725c6b09cc18f0c9670d52305ddd8278a1aa7ece8db09dbb94db0f` |
+| 3 | `def` | [overToCoalgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/declarations/overtocoalgebra.md) | 68 | `declaration-track:8077358b46a7b4fff6e98e3994a0d2692f4aee5414399789427af852b0001234` |
+| 4 | `def` | [coalgebraEquivOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/declarations/coalgebraequivover.md) | 78 | `declaration-track:6741ecba1f581373af589d4334a8273c95487c4a1c67851b8cedbaece9432648` |
+| 5 | `def` | [coprodMonad](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/declarations/coprodmonad.md) | 95 | `declaration-track:2933a522a4ea6ceea1c25c522d8918f5259e9814dd441b014dbf2d75c4bd2da3` |
+| 6 | `def` | [algebraToUnder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/declarations/algebratounder.md) | 106 | `declaration-track:a94d6a670bc751dcf0a02515c3b4cafd687c96188c353d683fa69dc961e7e316` |
+| 7 | `def` | [underToAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/declarations/undertoalgebra.md) | 115 | `declaration-track:6cc297d7327cd64ccadf1d230f672d8dae99e07c549dd264d6adb7311bd22970` |
+| 8 | `def` | [algebraEquivUnder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonadProductsPublic.lean/declarations/algebraequivunder.md) | 126 | `declaration-track:d075c2515c9b359ba95c0524cb6afe553e78db2f25ac320a7ad4546dd9d897ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

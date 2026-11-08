@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormTrim.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormTrim.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormTrim.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormTrim.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eLpNorm'_trim](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormTrim.lean/declarations/elpnorm-trim-source-edition-2.md) | 23 | `result-track:e68c592c1ba516425fb9c5953bb9617e073912c12f8b3ddcac137107eaaecfc3` |
-| 2 | `theorem` | [limsup_trim](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormTrim.lean/declarations/limsup-trim.md) | 29 | `result-track:6ff7c85c3690497b046bb1c56182c28526710c7d3bd5467df1b328c9994b8029` |
-| 3 | `theorem` | [essSup_trim](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormTrim.lean/declarations/esssup-trim.md) | 41 | `result-track:d5baf346cbaac920e2d67fde89dd89a2c1897f55c57bfe5d440e7ce9d874fdca` |
-| 4 | `theorem` | [eLpNormEssSup_trim](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormTrim.lean/declarations/elpnormesssup-trim.md) | 46 | `result-track:c68d9a347577171af80df8e0f439b096928e3a085302da0ded30bf5d22566509` |
-| 5 | `theorem` | [eLpNorm_trim](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormTrim.lean/declarations/elpnorm-trim.md) | 50 | `result-track:d07d29fd41029a9f1fbb649102c2b820ac07b54f775ead622eaf702cb5efd0a6` |
-| 6 | `theorem` | [eLpNorm_trim_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormTrim.lean/declarations/elpnorm-trim-ae.md) | 58 | `result-track:9b889985f0d1333e0241872de9d8cc33c7aabd075bde932e4990725baee88987` |
-| 7 | `theorem` | [memLp_of_memLp_trim](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormTrim.lean/declarations/memlp-of-memlp-trim.md) | 63 | `result-track:3851155d7bfe50085ca782c74560279828db5d13a26a16bc894f3339496584d1` |
+| 1 | `theorem` | [eLpNorm'_trim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormTrim.lean/declarations/elpnorm-trim-source-edition-2.md) | 23 | `result-track:e68c592c1ba516425fb9c5953bb9617e073912c12f8b3ddcac137107eaaecfc3` |
+| 2 | `theorem` | [limsup_trim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormTrim.lean/declarations/limsup-trim.md) | 29 | `result-track:6ff7c85c3690497b046bb1c56182c28526710c7d3bd5467df1b328c9994b8029` |
+| 3 | `theorem` | [essSup_trim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormTrim.lean/declarations/esssup-trim.md) | 41 | `result-track:d5baf346cbaac920e2d67fde89dd89a2c1897f55c57bfe5d440e7ce9d874fdca` |
+| 4 | `theorem` | [eLpNormEssSup_trim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormTrim.lean/declarations/elpnormesssup-trim.md) | 46 | `result-track:c68d9a347577171af80df8e0f439b096928e3a085302da0ded30bf5d22566509` |
+| 5 | `theorem` | [eLpNorm_trim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormTrim.lean/declarations/elpnorm-trim.md) | 50 | `result-track:d07d29fd41029a9f1fbb649102c2b820ac07b54f775ead622eaf702cb5efd0a6` |
+| 6 | `theorem` | [eLpNorm_trim_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormTrim.lean/declarations/elpnorm-trim-ae.md) | 58 | `result-track:9b889985f0d1333e0241872de9d8cc33c7aabd075bde932e4990725baee88987` |
+| 7 | `theorem` | [memLp_of_memLp_trim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormTrim.lean/declarations/memlp-of-memlp-trim.md) | 63 | `result-track:3851155d7bfe50085ca782c74560279828db5d13a26a16bc894f3339496584d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AbsoluteValueNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AbsoluteValueNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AbsoluteValueNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AbsoluteValueNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [det_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AbsoluteValueNamespaced.lean/declarations/det-le.md) | 46 | `result-track:22f1168939f78df55914c6b503a9af3a4165106907d2c756f9f7384d9e32c11f` |
-| 2 | `theorem` | [det_sum_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AbsoluteValueNamespaced.lean/declarations/det-sum-le.md) | 56 | `result-track:f11ee58f573cb379a7978655a97090e836333d7e7955eda2cab870bbfd9b57fa` |
-| 3 | `theorem` | [det_sum_smul_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AbsoluteValueNamespaced.lean/declarations/det-sum-smul-le.md) | 66 | `result-track:5073d7a838bda6afe1ab3d437bb25706d12bbf07e0e405c47bc6361a044f5c0b` |
+| 1 | `theorem` | [det_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AbsoluteValueNamespaced.lean/declarations/det-le.md) | 46 | `result-track:22f1168939f78df55914c6b503a9af3a4165106907d2c756f9f7384d9e32c11f` |
+| 2 | `theorem` | [det_sum_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AbsoluteValueNamespaced.lean/declarations/det-sum-le.md) | 56 | `result-track:f11ee58f573cb379a7978655a97090e836333d7e7955eda2cab870bbfd9b57fa` |
+| 3 | `theorem` | [det_sum_smul_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AbsoluteValueNamespaced.lean/declarations/det-sum-smul-le.md) | 66 | `result-track:5073d7a838bda6afe1ab3d437bb25706d12bbf07e0e405c47bc6361a044f5c0b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

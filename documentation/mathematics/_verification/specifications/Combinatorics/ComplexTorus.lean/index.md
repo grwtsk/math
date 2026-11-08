@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ComplexTorus.lean/index.md) · [Full source](../../../../Combinatorics/ComplexTorus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ComplexTorusTau](../../../../Combinatorics/ComplexTorus.lean/declarations/complextorustau.md) | 13 | `declaration-track:f8034d22c97138f12c1e5c7fa7d564285b6b3dd00f7e67e9858b55eb9a4dfdca` |
-| 2 | `structure` | [TorusPoint](../../../../Combinatorics/ComplexTorus.lean/declarations/toruspoint.md) | 19 | `declaration-track:125a1c51ba17a42c86f614631346c76bbad01a5fcbae2ac877f300c44a3ebca2` |
-| 3 | `def` | [torusZero](../../../../Combinatorics/ComplexTorus.lean/declarations/toruszero.md) | 24 | `declaration-track:2a52198a68925c4fa41d0ef1e9443c3bc4e1f8617967d25efc688706e3f5cc8b` |
-| 4 | `def` | [torusAdd](../../../../Combinatorics/ComplexTorus.lean/declarations/torusadd.md) | 27 | `declaration-track:9d645e84e55a0eed14342b4134cf2ba972caf029b025480a32d4e78097c85dad` |
-| 5 | `def` | [torusNeg](../../../../Combinatorics/ComplexTorus.lean/declarations/torusneg.md) | 30 | `declaration-track:30cbd4ee83670e5f1a6faceea1f8559f8ea325570467435d66080ee5fb0fceb9` |
-| 6 | `def` | [torusScalarMul](../../../../Combinatorics/ComplexTorus.lean/declarations/torusscalarmul.md) | 33 | `declaration-track:f3028bddb33412b00b62050b873db657d66e42107a1f3b62fbfd72c39b99aa02` |
-| 7 | `def` | [torsionRepresentative](../../../../Combinatorics/ComplexTorus.lean/declarations/torsionrepresentative.md) | 37 | `declaration-track:afaa9d36c3e4107ffdd1ca1499c2f764755043f636466ed0c9eeca1504953e02` |
-| 8 | `theorem` | [torus_identity_add](../../../../Combinatorics/ComplexTorus.lean/declarations/torus-identity-add.md) | 40 | `result-track:76e60ba5c307fe6074684334fe60a98354a049fd89bd4a97a84a8bea5ef0abef` |
-| 9 | `theorem` | [torus_add_comm](../../../../Combinatorics/ComplexTorus.lean/declarations/torus-add-comm.md) | 46 | `result-track:2346ffe356f797fe88beb0f3ff73e2df02e49b6938c2e2bee245716f2e2b4daa` |
-| 10 | `theorem` | [torus_n_torsion_representative](../../../../Combinatorics/ComplexTorus.lean/declarations/torus-n-torsion-representative.md) | 53 | `result-track:7a6cc3e2a1e823c58a1f6d903000a88c99ea216aa68be0ea386942dd787c228a` |
+| 1 | `structure` | [ComplexTorusTau](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorus.lean/declarations/complextorustau.md) | 13 | `declaration-track:f8034d22c97138f12c1e5c7fa7d564285b6b3dd00f7e67e9858b55eb9a4dfdca` |
+| 2 | `structure` | [TorusPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorus.lean/declarations/toruspoint.md) | 19 | `declaration-track:125a1c51ba17a42c86f614631346c76bbad01a5fcbae2ac877f300c44a3ebca2` |
+| 3 | `def` | [torusZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorus.lean/declarations/toruszero.md) | 24 | `declaration-track:2a52198a68925c4fa41d0ef1e9443c3bc4e1f8617967d25efc688706e3f5cc8b` |
+| 4 | `def` | [torusAdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorus.lean/declarations/torusadd.md) | 27 | `declaration-track:9d645e84e55a0eed14342b4134cf2ba972caf029b025480a32d4e78097c85dad` |
+| 5 | `def` | [torusNeg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorus.lean/declarations/torusneg.md) | 30 | `declaration-track:30cbd4ee83670e5f1a6faceea1f8559f8ea325570467435d66080ee5fb0fceb9` |
+| 6 | `def` | [torusScalarMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorus.lean/declarations/torusscalarmul.md) | 33 | `declaration-track:f3028bddb33412b00b62050b873db657d66e42107a1f3b62fbfd72c39b99aa02` |
+| 7 | `def` | [torsionRepresentative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorus.lean/declarations/torsionrepresentative.md) | 37 | `declaration-track:afaa9d36c3e4107ffdd1ca1499c2f764755043f636466ed0c9eeca1504953e02` |
+| 8 | `theorem` | [torus_identity_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorus.lean/declarations/torus-identity-add.md) | 40 | `result-track:76e60ba5c307fe6074684334fe60a98354a049fd89bd4a97a84a8bea5ef0abef` |
+| 9 | `theorem` | [torus_add_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorus.lean/declarations/torus-add-comm.md) | 46 | `result-track:2346ffe356f797fe88beb0f3ff73e2df02e49b6938c2e2bee245716f2e2b4daa` |
+| 10 | `theorem` | [torus_n_torsion_representative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorus.lean/declarations/torus-n-torsion-representative.md) | 53 | `result-track:7a6cc3e2a1e823c58a1f6d903000a88c99ea216aa68be0ea386942dd787c228a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

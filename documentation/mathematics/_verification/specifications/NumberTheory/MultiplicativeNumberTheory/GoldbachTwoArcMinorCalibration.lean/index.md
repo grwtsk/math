@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.GoldbachThetaExplicitCutoff`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachThetaExplicitCutoff`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [signed_minor_lower_iff_mass_lower](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/declarations/signed-minor-lower-iff-mass-lower.md) | 36 | `result-track:72f4ac905b7a8cdfab6392efbfe1e88eb90f79382ee23ec7a383e1c76f3ff510` |
-| 2 | `theorem` | [goldbach_signed_minor_lower_iff_logMass_lower](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/declarations/goldbach-signed-minor-lower-iff-logmass-lower.md) | 45 | `result-track:0a91b2435689c9086ac124b6baa510887fa5cf79ecd885e0b0fee856bad7eb73` |
-| 3 | `theorem` | [twoArcBudget_one_percent_eq](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/declarations/twoarcbudget-one-percent-eq.md) | 55 | `result-track:4fc84b2649cf2a0348cff03f7ddfefd0065b9cf1e8ceae33c18b41fd37de63d2` |
-| 4 | `theorem` | [twoArcBudget_one_percent_le_thirteen_thirtieths](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/declarations/twoarcbudget-one-percent-le-thirteen-thirtieths.md) | 64 | `result-track:58965f2a52eb1e2610e4e8d30941e91ef76b06f3ea19e9b4742ec81a45728629` |
-| 5 | `theorem` | [twoArcBudget_full_minor_margin](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/declarations/twoarcbudget-full-minor-margin.md) | 75 | `result-track:6174ff2877a37d892142e24d361dcd99a1f54fb0ed79ea9cf2837382d7dd48d6` |
-| 6 | `def` | [GoldbachTwoArcSignedMinorSupplier](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/declarations/goldbachtwoarcsignedminorsupplier.md) | 82 | `declaration-track:cfaf4a084a172c8dabedad9ebdf83fbb90468cc2fe5c23a1a35969ad570f472a` |
-| 7 | `theorem` | [goldbachLogMass_ge_one_ninetieth_of_two_arc_bridges](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/declarations/goldbachlogmass-ge-one-ninetieth-of-two-arc-bridges.md) | 88 | `result-track:60d9268dee835ade6f3d0ce3e80bd865bef7eb29afcfb5c576639dab1f994705` |
-| 8 | `theorem` | [goldbachCount_pos_of_relaxed_two_arc_bridges](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/declarations/goldbachcount-pos-of-relaxed-two-arc-bridges.md) | 110 | `result-track:12b4a7f63868985245af49fa766926284e8769030e373d0daba96298269ea856` |
-| 9 | `theorem` | [goldbachLogMass_lower_above_of_relaxed_two_arc_suppliers](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/declarations/goldbachlogmass-lower-above-of-relaxed-two-arc-suppliers.md) | 127 | `result-track:acca8eee4ea9a64cdba31c31edcace1a782299e3ccf6c7c639483e943d9a5ec1` |
+| 1 | `theorem` | [signed_minor_lower_iff_mass_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/declarations/signed-minor-lower-iff-mass-lower.md) | 36 | `result-track:72f4ac905b7a8cdfab6392efbfe1e88eb90f79382ee23ec7a383e1c76f3ff510` |
+| 2 | `theorem` | [goldbach_signed_minor_lower_iff_logMass_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/declarations/goldbach-signed-minor-lower-iff-logmass-lower.md) | 45 | `result-track:0a91b2435689c9086ac124b6baa510887fa5cf79ecd885e0b0fee856bad7eb73` |
+| 3 | `theorem` | [twoArcBudget_one_percent_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/declarations/twoarcbudget-one-percent-eq.md) | 55 | `result-track:4fc84b2649cf2a0348cff03f7ddfefd0065b9cf1e8ceae33c18b41fd37de63d2` |
+| 4 | `theorem` | [twoArcBudget_one_percent_le_thirteen_thirtieths](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/declarations/twoarcbudget-one-percent-le-thirteen-thirtieths.md) | 64 | `result-track:58965f2a52eb1e2610e4e8d30941e91ef76b06f3ea19e9b4742ec81a45728629` |
+| 5 | `theorem` | [twoArcBudget_full_minor_margin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/declarations/twoarcbudget-full-minor-margin.md) | 75 | `result-track:6174ff2877a37d892142e24d361dcd99a1f54fb0ed79ea9cf2837382d7dd48d6` |
+| 6 | `def` | [GoldbachTwoArcSignedMinorSupplier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/declarations/goldbachtwoarcsignedminorsupplier.md) | 82 | `declaration-track:cfaf4a084a172c8dabedad9ebdf83fbb90468cc2fe5c23a1a35969ad570f472a` |
+| 7 | `theorem` | [goldbachLogMass_ge_one_ninetieth_of_two_arc_bridges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/declarations/goldbachlogmass-ge-one-ninetieth-of-two-arc-bridges.md) | 88 | `result-track:60d9268dee835ade6f3d0ce3e80bd865bef7eb29afcfb5c576639dab1f994705` |
+| 8 | `theorem` | [goldbachCount_pos_of_relaxed_two_arc_bridges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/declarations/goldbachcount-pos-of-relaxed-two-arc-bridges.md) | 110 | `result-track:12b4a7f63868985245af49fa766926284e8769030e373d0daba96298269ea856` |
+| 9 | `theorem` | [goldbachLogMass_lower_above_of_relaxed_two_arc_suppliers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/declarations/goldbachlogmass-lower-above-of-relaxed-two-arc-suppliers.md) | 127 | `result-track:acca8eee4ea9a64cdba31c31edcace1a782299e3ccf6c7c639483e943d9a5ec1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

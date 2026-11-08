@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsConformalMap](../../../../FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/isconformalmap.md) | 56 | `declaration-track:98ecba4843dab55b9fbce78ae5098c0bd769c71679d64749575f704c308648f7` |
-| 2 | `theorem` | [isConformalMap_id](../../../../FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/isconformalmap-id.md) | 64 | `result-track:2f42e25cec8e03691c93baa1e16d18397b1bc42c539fdad883b838d49bab7825` |
-| 3 | `theorem` | [IsConformalMap.smul](../../../../FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/isconformalmap-smul.md) | 67 | `result-track:46b586d0dd332a3a59bc16d66164647e26daed9d660273e1bb8b6f074f49c5f7` |
-| 4 | `theorem` | [isConformalMap_const_smul](../../../../FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/isconformalmap-const-smul.md) | 72 | `result-track:ae3fe8d257b93604470b5654a86434ced3a3ea07c1914c1f064aa960a38cc3f3` |
-| 5 | `theorem` | [LinearIsometry.isConformalMap](../../../../FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/linearisometry-isconformalmap.md) | 75 | `result-track:d0c8c56ea610a90ba8d44f1fc845917cd2fc23fe9b5802569030bfb540870851` |
-| 6 | `theorem` | [isConformalMap_of_subsingleton](../../../../FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/isconformalmap-of-subsingleton.md) | 80 | `result-track:108e97cf4252d4be4b933129c709e2d6879371145d93c466616c6b8c0149546f` |
-| 7 | `theorem` | [comp](../../../../FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/comp.md) | 85 | `result-track:c6ea385aa816e3ff70c957da95f8206ef0094f6e2825b1b5d80073362477be91` |
-| 8 | `theorem` | [injective](../../../../FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/injective.md) | 92 | `result-track:a97db1e854419ca990f5d9c6c7e2356c931914fcec1e32494baec601ae53e208` |
-| 9 | `theorem` | [ne_zero](../../../../FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/ne-zero.md) | 96 | `result-track:f0161556eb22b8f4760f809793e377ebf38b441182dc1e0cf31a58b7428249a0` |
+| 1 | `def` | [IsConformalMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/isconformalmap.md) | 56 | `declaration-track:98ecba4843dab55b9fbce78ae5098c0bd769c71679d64749575f704c308648f7` |
+| 2 | `theorem` | [isConformalMap_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/isconformalmap-id.md) | 64 | `result-track:2f42e25cec8e03691c93baa1e16d18397b1bc42c539fdad883b838d49bab7825` |
+| 3 | `theorem` | [IsConformalMap.smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/isconformalmap-smul.md) | 67 | `result-track:46b586d0dd332a3a59bc16d66164647e26daed9d660273e1bb8b6f074f49c5f7` |
+| 4 | `theorem` | [isConformalMap_const_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/isconformalmap-const-smul.md) | 72 | `result-track:ae3fe8d257b93604470b5654a86434ced3a3ea07c1914c1f064aa960a38cc3f3` |
+| 5 | `theorem` | [LinearIsometry.isConformalMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/linearisometry-isconformalmap.md) | 75 | `result-track:d0c8c56ea610a90ba8d44f1fc845917cd2fc23fe9b5802569030bfb540870851` |
+| 6 | `theorem` | [isConformalMap_of_subsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/isconformalmap-of-subsingleton.md) | 80 | `result-track:108e97cf4252d4be4b933129c709e2d6879371145d93c466616c6b8c0149546f` |
+| 7 | `theorem` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/comp.md) | 85 | `result-track:c6ea385aa816e3ff70c957da95f8206ef0094f6e2825b1b5d80073362477be91` |
+| 8 | `theorem` | [injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/injective.md) | 92 | `result-track:a97db1e854419ca990f5d9c6c7e2356c931914fcec1e32494baec601ae53e208` |
+| 9 | `theorem` | [ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/ne-zero.md) | 96 | `result-track:f0161556eb22b8f4760f809793e377ebf38b441182dc1e0cf31a58b7428249a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveCountableModulePublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveCountableModulePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveCountableModulePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveCountableModulePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Single](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveCountableModulePublic.lean/declarations/single.md) | 20 | `declaration-track:5d7c025f6b0ac8fdc224a7eb375f73eede8ece3a8f88d25555185407ffa0de4c` |
-| 2 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveCountableModulePublic.lean/declarations/example-source-edition-2.md) | 24 | `declaration-track:c7c5d54da2f341bb1deb156314eb7b6ef93fce725eaf3ee940af2c4ae9564175` |
-| 3 | `inductive` | [Tree](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveCountableModulePublic.lean/declarations/tree.md) | 26 | `declaration-track:1c7afdc2dafb090c4a6f73704c1b70fb6bf8717c0e353e8025c6e59e1adfd7a8` |
-| 4 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveCountableModulePublic.lean/declarations/example.md) | 31 | `declaration-track:a571d909901764308814cddb169fbe73f78e9b6b37c433a3f4e33c922e313678` |
+| 1 | `inductive` | [Single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveCountableModulePublic.lean/declarations/single.md) | 20 | `declaration-track:5d7c025f6b0ac8fdc224a7eb375f73eede8ece3a8f88d25555185407ffa0de4c` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveCountableModulePublic.lean/declarations/example-source-edition-2.md) | 24 | `declaration-track:c7c5d54da2f341bb1deb156314eb7b6ef93fce725eaf3ee940af2c4ae9564175` |
+| 3 | `inductive` | [Tree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveCountableModulePublic.lean/declarations/tree.md) | 26 | `declaration-track:1c7afdc2dafb090c4a6f73704c1b70fb6bf8717c0e353e8025c6e59e1adfd7a8` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveCountableModulePublic.lean/declarations/example.md) | 31 | `declaration-track:a571d909901764308814cddb169fbe73f78e9b6b37c433a3f4e33c922e313678` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

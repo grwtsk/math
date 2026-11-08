@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [wellOrderExtension](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/declarations/wellorderextension-source-edition-2.md) | 60 | `declaration-track:cd333db32a5ec2fcde755249ac57e20572bb47395de27ec0022ed303d8b8a596` |
-| 2 | `instance` | [wellOrderExtension.wellFounded_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/declarations/wellorderextension-wellfounded-lt.md) | 64 | `declaration-track:3b5c53a49e561ffb13470b21632ba5425820734d4294fb9a383d586c700698d9` |
-| 3 | `instance` | [wellOrderExtension.isWellOrder_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/declarations/wellorderextension-iswellorder-lt.md) | 68 | `declaration-track:3a7000080cf9fd7dc34241d6af3026f6cb5636f2aba5a614e16ff083791321ec` |
-| 4 | `theorem` | [exists_well_order_ge](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/declarations/exists-well-order-ge.md) | 71 | `result-track:23bef6662b78dc57bb2e7176f2931a485af5dc0df9ced7c18ce020ddcf6c941a` |
-| 5 | `def` | [WellOrderExtension](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/declarations/wellorderextension.md) | 77 | `declaration-track:327301bf43832d34aab587f2d082ec371560cd8f7d9c82a122610b2d783ac182` |
-| 6 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/declarations/instance.md) | 79 | `declaration-track:5c9d44bc00153cb28bb931c33bf0905dfcdd9f529b8d1301aab680577f692a1e` |
-| 7 | `def` | [toWellOrderExtension](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/declarations/towellorderextension.md) | 82 | `declaration-track:2a3a559d35806f6adda6510a65a90f525c82fdb490db86098bb05f308f633eae` |
-| 8 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/declarations/instance-source-edition-2.md) | 85 | `declaration-track:c3052ee80966057e710990b20c97bb6df3d37608f5852a352687d1cf351c8ac4` |
-| 9 | `theorem` | [toWellOrderExtension_strictMono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/declarations/towellorderextension-strictmono.md) | 88 | `result-track:aff0bd98c7f37d2a574537e6c4f7604e5d341b2c84f299da20a34d66b2ee7ab5` |
+| 1 | `def` | [wellOrderExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/declarations/wellorderextension-source-edition-2.md) | 60 | `declaration-track:cd333db32a5ec2fcde755249ac57e20572bb47395de27ec0022ed303d8b8a596` |
+| 2 | `instance` | [wellOrderExtension.wellFounded_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/declarations/wellorderextension-wellfounded-lt.md) | 64 | `declaration-track:3b5c53a49e561ffb13470b21632ba5425820734d4294fb9a383d586c700698d9` |
+| 3 | `instance` | [wellOrderExtension.isWellOrder_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/declarations/wellorderextension-iswellorder-lt.md) | 68 | `declaration-track:3a7000080cf9fd7dc34241d6af3026f6cb5636f2aba5a614e16ff083791321ec` |
+| 4 | `theorem` | [exists_well_order_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/declarations/exists-well-order-ge.md) | 71 | `result-track:23bef6662b78dc57bb2e7176f2931a485af5dc0df9ced7c18ce020ddcf6c941a` |
+| 5 | `def` | [WellOrderExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/declarations/wellorderextension.md) | 77 | `declaration-track:327301bf43832d34aab587f2d082ec371560cd8f7d9c82a122610b2d783ac182` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/declarations/instance.md) | 79 | `declaration-track:5c9d44bc00153cb28bb931c33bf0905dfcdd9f529b8d1301aab680577f692a1e` |
+| 7 | `def` | [toWellOrderExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/declarations/towellorderextension.md) | 82 | `declaration-track:2a3a559d35806f6adda6510a65a90f525c82fdb490db86098bb05f308f633eae` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/declarations/instance-source-edition-2.md) | 85 | `declaration-track:c3052ee80966057e710990b20c97bb6df3d37608f5852a352687d1cf351c8ac4` |
+| 9 | `theorem` | [toWellOrderExtension_strictMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellPublic.lean/declarations/towellorderextension-strictmono.md) | 88 | `result-track:aff0bd98c7f37d2a574537e6c4f7604e5d341b2c84f299da20a34d66b2ee7ab5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/FieldULift.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/FieldULift.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULift.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULift.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instNNRatCast](../../../../FieldTheoryAndPolynomials/FieldULift.lean/declarations/instnnratcast.md) | 23 | `declaration-track:e7b1d41df9f9e71ed304c9a7a5d2ed4274905fba31ae2d41a674755040c9d2eb` |
-| 2 | `instance` | [instRatCast](../../../../FieldTheoryAndPolynomials/FieldULift.lean/declarations/instratcast.md) | 24 | `declaration-track:8847bfb1f955a6d7a09dc85f9bcebc99d69dafc17fc6ac30c3ac2cf5f1729a9e` |
-| 3 | `lemma` | [up_nnratCast](../../../../FieldTheoryAndPolynomials/FieldULift.lean/declarations/up-nnratcast.md) | 26 | `result-track:e7d0da84876cfe4da16ed320194d122d18ffeac21635a9acb57614b702f85165` |
-| 4 | `lemma` | [down_nnratCast](../../../../FieldTheoryAndPolynomials/FieldULift.lean/declarations/down-nnratcast.md) | 27 | `result-track:34be4defc01564fa2564124eab17d494fa834d9467d8156252f0b06394840055` |
-| 5 | `lemma` | [up_ratCast](../../../../FieldTheoryAndPolynomials/FieldULift.lean/declarations/up-ratcast.md) | 28 | `result-track:590d17d7d90d3e253106be665b863b23dae5b74f6434a69528d1175272e6ccb7` |
-| 6 | `lemma` | [down_ratCast](../../../../FieldTheoryAndPolynomials/FieldULift.lean/declarations/down-ratcast.md) | 29 | `result-track:2fe050cfd9f39174a3432808ac09a3405d511bcbd1d5c8f16fcd39175f9199e7` |
-| 7 | `instance` | [divisionSemiring](../../../../FieldTheoryAndPolynomials/FieldULift.lean/declarations/divisionsemiring.md) | 31 | `declaration-track:70708d89e7dc1ab9c52bfcd2cd820855619f1569e3f0991370a08258856297f8` |
-| 8 | `instance` | [semifield](../../../../FieldTheoryAndPolynomials/FieldULift.lean/declarations/semifield.md) | 36 | `declaration-track:ea5827cb8085c286637f19afacef7a15b68d9c114c37083d9565fab78b26ae3c` |
-| 9 | `instance` | [divisionRing](../../../../FieldTheoryAndPolynomials/FieldULift.lean/declarations/divisionring.md) | 39 | `declaration-track:7b6c6d2a1a02752c2e06f9f83901a46ead9b02da981435d93781bcc50843b540` |
-| 10 | `instance` | [field](../../../../FieldTheoryAndPolynomials/FieldULift.lean/declarations/field.md) | 49 | `declaration-track:d08be69ef386a51807a6fca8c8d3d45fcbf1f298d4158b70ad047a9360a0fc72` |
+| 1 | `instance` | [instNNRatCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULift.lean/declarations/instnnratcast.md) | 23 | `declaration-track:e7b1d41df9f9e71ed304c9a7a5d2ed4274905fba31ae2d41a674755040c9d2eb` |
+| 2 | `instance` | [instRatCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULift.lean/declarations/instratcast.md) | 24 | `declaration-track:8847bfb1f955a6d7a09dc85f9bcebc99d69dafc17fc6ac30c3ac2cf5f1729a9e` |
+| 3 | `lemma` | [up_nnratCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULift.lean/declarations/up-nnratcast.md) | 26 | `result-track:e7d0da84876cfe4da16ed320194d122d18ffeac21635a9acb57614b702f85165` |
+| 4 | `lemma` | [down_nnratCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULift.lean/declarations/down-nnratcast.md) | 27 | `result-track:34be4defc01564fa2564124eab17d494fa834d9467d8156252f0b06394840055` |
+| 5 | `lemma` | [up_ratCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULift.lean/declarations/up-ratcast.md) | 28 | `result-track:590d17d7d90d3e253106be665b863b23dae5b74f6434a69528d1175272e6ccb7` |
+| 6 | `lemma` | [down_ratCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULift.lean/declarations/down-ratcast.md) | 29 | `result-track:2fe050cfd9f39174a3432808ac09a3405d511bcbd1d5c8f16fcd39175f9199e7` |
+| 7 | `instance` | [divisionSemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULift.lean/declarations/divisionsemiring.md) | 31 | `declaration-track:70708d89e7dc1ab9c52bfcd2cd820855619f1569e3f0991370a08258856297f8` |
+| 8 | `instance` | [semifield](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULift.lean/declarations/semifield.md) | 36 | `declaration-track:ea5827cb8085c286637f19afacef7a15b68d9c114c37083d9565fab78b26ae3c` |
+| 9 | `instance` | [divisionRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULift.lean/declarations/divisionring.md) | 39 | `declaration-track:7b6c6d2a1a02752c2e06f9f83901a46ead9b02da981435d93781bcc50843b540` |
+| 10 | `instance` | [field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULift.lean/declarations/field.md) | 49 | `declaration-track:d08be69ef386a51807a6fca8c8d3d45fcbf1f298d4158b70ad047a9360a0fc72` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

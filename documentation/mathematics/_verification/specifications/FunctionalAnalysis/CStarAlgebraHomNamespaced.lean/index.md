@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/CStarAlgebraHomNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/CStarAlgebraHomNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraHomNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraHomNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IsSelfAdjoint.map_spectrum_real](../../../../FunctionalAnalysis/CStarAlgebraHomNamespaced.lean/declarations/isselfadjoint-map-spectrum-real.md) | 28 | `result-track:cb52d08d8674104f420ec5de2f3d86bde67cb53370c5f745e3961b395293958c` |
-| 2 | `lemma` | [norm_map](../../../../FunctionalAnalysis/CStarAlgebraHomNamespaced.lean/declarations/norm-map.md) | 60 | `result-track:8324124be0344eb6c9f17a4e924109e941fa47b3f45c55cc98778090c848badc` |
-| 3 | `lemma` | [nnnorm_map](../../../../FunctionalAnalysis/CStarAlgebraHomNamespaced.lean/declarations/nnnorm-map.md) | 80 | `result-track:bc5fd9de0a886032add0bc680e178b0cffa9edf3694fd00e4bf39c969a1558ee` |
-| 4 | `lemma` | [isometry](../../../../FunctionalAnalysis/CStarAlgebraHomNamespaced.lean/declarations/isometry.md) | 83 | `result-track:456f9c3d48a168fd103bc366276511c68d8ba92b712e1daa6af5e1e49f5d1b12` |
+| 1 | `lemma` | [IsSelfAdjoint.map_spectrum_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraHomNamespaced.lean/declarations/isselfadjoint-map-spectrum-real.md) | 28 | `result-track:cb52d08d8674104f420ec5de2f3d86bde67cb53370c5f745e3961b395293958c` |
+| 2 | `lemma` | [norm_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraHomNamespaced.lean/declarations/norm-map.md) | 60 | `result-track:8324124be0344eb6c9f17a4e924109e941fa47b3f45c55cc98778090c848badc` |
+| 3 | `lemma` | [nnnorm_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraHomNamespaced.lean/declarations/nnnorm-map.md) | 80 | `result-track:bc5fd9de0a886032add0bc680e178b0cffa9edf3694fd00e4bf39c969a1558ee` |
+| 4 | `lemma` | [isometry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraHomNamespaced.lean/declarations/isometry.md) | 83 | `result-track:456f9c3d48a168fd103bc366276511c68d8ba92b712e1daa6af5e1e49f5d1b12` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

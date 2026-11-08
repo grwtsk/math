@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomComparisonCancellationAlternative2.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomComparisonCancellationAlternative2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomComparisonCancellationAlternative2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomComparisonCancellationAlternative2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [boundary_epi_of_hom_comparisons](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomComparisonCancellationAlternative2.lean/declarations/boundary-epi-of-hom-comparisons.md) | 38 | `result-track:39ea9e68fb45ffa27941243ec6cc41a2bef5f0a183679176db63cb7bf9d09304` |
-| 2 | `theorem` | [boundary_identity_consumer](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomComparisonCancellationAlternative2.lean/declarations/boundary-identity-consumer.md) | 52 | `result-track:658cfa97eaee8e976866128214d92aa97bc86f70d81fdc758dada50e89f3e338` |
+| 1 | `theorem` | [boundary_epi_of_hom_comparisons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomComparisonCancellationAlternative2.lean/declarations/boundary-epi-of-hom-comparisons.md) | 38 | `result-track:39ea9e68fb45ffa27941243ec6cc41a2bef5f0a183679176db63cb7bf9d09304` |
+| 2 | `theorem` | [boundary_identity_consumer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomComparisonCancellationAlternative2.lean/declarations/boundary-identity-consumer.md) | 52 | `result-track:658cfa97eaee8e976866128214d92aa97bc86f70d81fdc758dada50e89f3e338` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

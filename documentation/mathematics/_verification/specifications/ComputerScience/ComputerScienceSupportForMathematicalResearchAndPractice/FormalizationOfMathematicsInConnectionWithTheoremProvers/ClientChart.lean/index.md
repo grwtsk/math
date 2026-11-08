@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClientChart.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClientChart.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClientChart.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClientChart.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ClientChart](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClientChart.lean/declarations/clientchart.md) | 13 | `declaration-track:9df5468da503591e1df2b075a1c778aedadbaedff3cc86f18d0d716d958adc9e` |
-| 2 | `structure` | [CapabilityChartProjection](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClientChart.lean/declarations/capabilitychartprojection.md) | 19 | `declaration-track:d578118b1f06ea60f8d85c3b44a7c3d4a26f831e777513180c2524743e783ffb` |
-| 3 | `def` | [ClientChart.evidenceKind](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClientChart.lean/declarations/clientchart-evidencekind.md) | 29 | `declaration-track:b2d18d634b55d8485d397cb0abce4a640a7023a442cc1b3f11740f15fb370ff4` |
-| 4 | `theorem` | [client_chart_has_no_theorem_authority](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClientChart.lean/declarations/client-chart-has-no-theorem-authority.md) | 34 | `result-track:2e9d7fe562af3f65cbec75254617cf1f216ec993e24b220635b648e31ee81af1` |
+| 1 | `structure` | [ClientChart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClientChart.lean/declarations/clientchart.md) | 13 | `declaration-track:9df5468da503591e1df2b075a1c778aedadbaedff3cc86f18d0d716d958adc9e` |
+| 2 | `structure` | [CapabilityChartProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClientChart.lean/declarations/capabilitychartprojection.md) | 19 | `declaration-track:d578118b1f06ea60f8d85c3b44a7c3d4a26f831e777513180c2524743e783ffb` |
+| 3 | `def` | [ClientChart.evidenceKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClientChart.lean/declarations/clientchart-evidencekind.md) | 29 | `declaration-track:b2d18d634b55d8485d397cb0abce4a640a7023a442cc1b3f11740f15fb370ff4` |
+| 4 | `theorem` | [client_chart_has_no_theorem_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClientChart.lean/declarations/client-chart-has-no-theorem-authority.md) | 34 | `result-track:2e9d7fe562af3f65cbec75254617cf1f216ec993e24b220635b648e31ee81af1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

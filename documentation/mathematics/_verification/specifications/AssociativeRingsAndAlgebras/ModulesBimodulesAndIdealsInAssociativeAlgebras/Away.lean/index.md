@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Away.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Away.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Away.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Away.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IsLocalizedModule.Away](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Away.lean/declarations/islocalizedmodule-away.md) | 14 | `declaration-track:452b5b8702a22969d7a1ee88bf8210fd512fc7fcc075d75b8afbcbd15a8e286c` |
-| 2 | `abbrev` | [LocalizedModule.Away](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Away.lean/declarations/localizedmodule-away.md) | 20 | `declaration-track:01feb02d1820700fce3164e5cc8be659a3218a3c565e2a48e8c48063564b0c6e` |
+| 1 | `abbrev` | [IsLocalizedModule.Away](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Away.lean/declarations/islocalizedmodule-away.md) | 14 | `declaration-track:452b5b8702a22969d7a1ee88bf8210fd512fc7fcc075d75b8afbcbd15a8e286c` |
+| 2 | `abbrev` | [LocalizedModule.Away](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Away.lean/declarations/localizedmodule-away.md) | 20 | `declaration-track:01feb02d1820700fce3164e5cc8be659a3218a3c565e2a48e8c48063564b0c6e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

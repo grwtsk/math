@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CertificateObligations.lean/index.md) · [Full source](../../../../RealFunctions/CertificateObligations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CertificateObligations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CertificateObligations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ContractionCertificate](../../../../RealFunctions/CertificateObligations.lean/declarations/contractioncertificate.md) | 30 | `declaration-track:fb5e263da99be8c2f3d37b833ee47a7f2eb259370aea522ef16429e68e1a7bc8` |
-| 2 | `structure` | [BanachFixedPointObligation](../../../../RealFunctions/CertificateObligations.lean/declarations/banachfixedpointobligation.md) | 40 | `declaration-track:ff56befa1b7f3d9643fbfa94ef41fe18e0df6d0f952e5dd36f2a9cf2fc5313dc` |
-| 3 | `structure` | [ResidualFloorObligation](../../../../RealFunctions/CertificateObligations.lean/declarations/residualfloorobligation.md) | 52 | `declaration-track:60fff6135d8dba46bb75791db92f6556dd65ffe74e956eed15d3991f00effc65` |
+| 1 | `structure` | [ContractionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CertificateObligations.lean/declarations/contractioncertificate.md) | 30 | `declaration-track:fb5e263da99be8c2f3d37b833ee47a7f2eb259370aea522ef16429e68e1a7bc8` |
+| 2 | `structure` | [BanachFixedPointObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CertificateObligations.lean/declarations/banachfixedpointobligation.md) | 40 | `declaration-track:ff56befa1b7f3d9643fbfa94ef41fe18e0df6d0f952e5dd36f2a9cf2fc5313dc` |
+| 3 | `structure` | [ResidualFloorObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CertificateObligations.lean/declarations/residualfloorobligation.md) | 52 | `declaration-track:60fff6135d8dba46bb75791db92f6556dd65ffe74e956eed15d3991f00effc65` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

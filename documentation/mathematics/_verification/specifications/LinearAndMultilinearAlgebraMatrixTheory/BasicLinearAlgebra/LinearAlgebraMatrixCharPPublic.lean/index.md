@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixCharPPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixCharPPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixCharPPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixCharPPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instCharP](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixCharPPublic.lean/declarations/instcharp.md) | 25 | `declaration-track:a9849a667aade9578b7b5dc3ec3fc24a2bf0db839afa27cd8506ce4a45c92ce4` |
-| 2 | `instance` | [instCharZero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixCharPPublic.lean/declarations/instcharzero.md) | 29 | `declaration-track:e237eb912cb672646d513e6b54809511faa492c7a93daf3ea2b9c2840aebb56d` |
-| 3 | `instance` | [instExpChar](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixCharPPublic.lean/declarations/instexpchar.md) | 34 | `declaration-track:57986775e68bbc7c74754e4a96c2230fbecc5a7558f6dfb6a31b50b5c10db5fa` |
+| 1 | `instance` | [instCharP](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixCharPPublic.lean/declarations/instcharp.md) | 25 | `declaration-track:a9849a667aade9578b7b5dc3ec3fc24a2bf0db839afa27cd8506ce4a45c92ce4` |
+| 2 | `instance` | [instCharZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixCharPPublic.lean/declarations/instcharzero.md) | 29 | `declaration-track:e237eb912cb672646d513e6b54809511faa492c7a93daf3ea2b9c2840aebb56d` |
+| 3 | `instance` | [instExpChar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixCharPPublic.lean/declarations/instexpchar.md) | 34 | `declaration-track:57986775e68bbc7c74754e4a96c2230fbecc5a7558f6dfb6a31b50b5c10db5fa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelGrowthNamespacedPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelGrowthNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BorelGrowthNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BorelGrowthNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [MonotoneOn.eventually_le_two_mul'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelGrowthNamespacedPublic.lean/declarations/monotoneon-eventually-le-two-mul-source-edition-2.md) | 60 | `result-track:afde0f21322a4a01516bbb8c3818ce0e290bd2dd04e39a85f335ba3b34ce9030` |
-| 2 | `theorem` | [MonotoneOn.eventually_le_two_mul](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelGrowthNamespacedPublic.lean/declarations/monotoneon-eventually-le-two-mul.md) | 139 | `result-track:2ba32c07856fe004d9f307f8584eb26ed17f9c71cece75469fba3c43e3104773` |
+| 1 | `theorem` | [MonotoneOn.eventually_le_two_mul'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BorelGrowthNamespacedPublic.lean/declarations/monotoneon-eventually-le-two-mul-source-edition-2.md) | 60 | `result-track:afde0f21322a4a01516bbb8c3818ce0e290bd2dd04e39a85f335ba3b34ce9030` |
+| 2 | `theorem` | [MonotoneOn.eventually_le_two_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BorelGrowthNamespacedPublic.lean/declarations/monotoneon-eventually-le-two-mul.md) | 139 | `result-track:2ba32c07856fe004d9f307f8584eb26ed17f9c71cece75469fba3c43e3104773` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

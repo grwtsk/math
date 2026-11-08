@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/UnivLEPublic.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/UnivLEPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/UnivLEPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/UnivLEPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [univLE_iff_cardinal_le](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/UnivLEPublic.lean/declarations/univle-iff-cardinal-le.md) | 23 | `result-track:d2ccdc4485edec38a4635cd322f5a873255b32eb0c91a9fbbb6a127cd4a551b7` |
-| 2 | `theorem` | [univLE_iff_exists_embedding](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/UnivLEPublic.lean/declarations/univle-iff-exists-embedding.md) | 34 | `result-track:7454457ad81d2141b248f4fc32f53b49d053b11c4d85f52153acf4a8239e7ac9` |
-| 3 | `theorem` | [Ordinal.univLE_of_injective](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/UnivLEPublic.lean/declarations/ordinal-univle-of-injective.md) | 38 | `result-track:944ae2f4ecab272390f359748e735987d08ab475b43c8a335ce901463885a3ed` |
-| 4 | `theorem` | [univLE_total](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/UnivLEPublic.lean/declarations/univle-total.md) | 43 | `result-track:d9edbeba52a563bbad1ba1f63a19dc7291c7e75ee76a5e9a8a94724b62ba3a63` |
+| 1 | `theorem` | [univLE_iff_cardinal_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/UnivLEPublic.lean/declarations/univle-iff-cardinal-le.md) | 23 | `result-track:d2ccdc4485edec38a4635cd322f5a873255b32eb0c91a9fbbb6a127cd4a551b7` |
+| 2 | `theorem` | [univLE_iff_exists_embedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/UnivLEPublic.lean/declarations/univle-iff-exists-embedding.md) | 34 | `result-track:7454457ad81d2141b248f4fc32f53b49d053b11c4d85f52153acf4a8239e7ac9` |
+| 3 | `theorem` | [Ordinal.univLE_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/UnivLEPublic.lean/declarations/ordinal-univle-of-injective.md) | 38 | `result-track:944ae2f4ecab272390f359748e735987d08ab475b43c8a335ce901463885a3ed` |
+| 4 | `theorem` | [univLE_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/UnivLEPublic.lean/declarations/univle-total.md) | 43 | `result-track:d9edbeba52a563bbad1ba1f63a19dc7291c7e75ee76a5e9a8a94724b62ba3a63` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

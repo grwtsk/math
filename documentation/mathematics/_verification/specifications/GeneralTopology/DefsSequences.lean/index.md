@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/DefsSequences.lean/index.md) · [Full source](../../../../GeneralTopology/DefsSequences.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsSequences.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsSequences.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [seqClosure](../../../../GeneralTopology/DefsSequences.lean/declarations/seqclosure.md) | 51 | `declaration-track:2efca75517f9381210d3a3a5fa5a8854d8ab1d4432467a479ccda92fd40152dc` |
-| 2 | `def` | [IsSeqClosed](../../../../GeneralTopology/DefsSequences.lean/declarations/isseqclosed.md) | 57 | `declaration-track:15943fd5de592bc817bddfdb16c1616f01a9409e00a3fe4d1119ae5999300f8c` |
-| 3 | `def` | [SeqContinuous](../../../../GeneralTopology/DefsSequences.lean/declarations/seqcontinuous.md) | 62 | `declaration-track:880307c07aa9bd1eb253dcf0cd7f41d274991422d806a5e0d726f0473bc098d6` |
-| 4 | `def` | [IsSeqCompact](../../../../GeneralTopology/DefsSequences.lean/declarations/isseqcompact.md) | 67 | `declaration-track:eb1aa510067e9685960d8c439d2b1d6cee7cee30526da1d8577ce1809e033f07` |
-| 5 | `class` | [SeqCompactSpace](../../../../GeneralTopology/DefsSequences.lean/declarations/seqcompactspace.md) | 75 | `declaration-track:7f24689c25218664f300a53c84e06b24396558045227652fcaa02ac092288efb` |
-| 6 | `class` | [FrechetUrysohnSpace](../../../../GeneralTopology/DefsSequences.lean/declarations/frecheturysohnspace.md) | 83 | `declaration-track:40df9a2bd446276b1d7293d6869d92c3c7fc2915a4d7724246fd29d44f101157` |
-| 7 | `class` | [SequentialSpace](../../../../GeneralTopology/DefsSequences.lean/declarations/sequentialspace.md) | 88 | `declaration-track:2b1cc3d7e1a50e24adaa64dfd8e30482998387c3090f6628db569bfc4a7da0c4` |
-| 8 | `theorem` | [IsSeqClosed.isClosed](../../../../GeneralTopology/DefsSequences.lean/declarations/isseqclosed-isclosed.md) | 94 | `result-track:7257478907e70f544aea746717e8e130079210c8f32f9b0419b889842a1b8419` |
+| 1 | `def` | [seqClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsSequences.lean/declarations/seqclosure.md) | 51 | `declaration-track:2efca75517f9381210d3a3a5fa5a8854d8ab1d4432467a479ccda92fd40152dc` |
+| 2 | `def` | [IsSeqClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsSequences.lean/declarations/isseqclosed.md) | 57 | `declaration-track:15943fd5de592bc817bddfdb16c1616f01a9409e00a3fe4d1119ae5999300f8c` |
+| 3 | `def` | [SeqContinuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsSequences.lean/declarations/seqcontinuous.md) | 62 | `declaration-track:880307c07aa9bd1eb253dcf0cd7f41d274991422d806a5e0d726f0473bc098d6` |
+| 4 | `def` | [IsSeqCompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsSequences.lean/declarations/isseqcompact.md) | 67 | `declaration-track:eb1aa510067e9685960d8c439d2b1d6cee7cee30526da1d8577ce1809e033f07` |
+| 5 | `class` | [SeqCompactSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsSequences.lean/declarations/seqcompactspace.md) | 75 | `declaration-track:7f24689c25218664f300a53c84e06b24396558045227652fcaa02ac092288efb` |
+| 6 | `class` | [FrechetUrysohnSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsSequences.lean/declarations/frecheturysohnspace.md) | 83 | `declaration-track:40df9a2bd446276b1d7293d6869d92c3c7fc2915a4d7724246fd29d44f101157` |
+| 7 | `class` | [SequentialSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsSequences.lean/declarations/sequentialspace.md) | 88 | `declaration-track:2b1cc3d7e1a50e24adaa64dfd8e30482998387c3090f6628db569bfc4a7da0c4` |
+| 8 | `theorem` | [IsSeqClosed.isClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsSequences.lean/declarations/isseqclosed-isclosed.md) | 94 | `result-track:7257478907e70f544aea746717e8e130079210c8f32f9b0419b889842a1b8419` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

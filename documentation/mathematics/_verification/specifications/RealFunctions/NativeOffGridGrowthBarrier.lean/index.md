@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/NativeOffGridGrowthBarrier.lean/index.md) · [Full source](../../../../RealFunctions/NativeOffGridGrowthBarrier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NativeOffGridGrowthBarrier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NativeOffGridGrowthBarrier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [literal_half_integer_exceeds_fixed_exponential_cap](../../../../RealFunctions/NativeOffGridGrowthBarrier.lean/declarations/literal-half-integer-exceeds-fixed-exponential-cap.md) | 19 | `result-track:6d21936e901d2ba1c7fba0aeb31ed2019b895c1d62f2b015568f17aa16af1eb2` |
-| 2 | `theorem` | [literal_native_has_no_all_real_fixed_exponential_cap](../../../../RealFunctions/NativeOffGridGrowthBarrier.lean/declarations/literal-native-has-no-all-real-fixed-exponential-cap.md) | 56 | `result-track:f14725dc1b5bbe06d8cf505c1d040000c853082a5b8627be70f81190a533a882` |
-| 3 | `theorem` | [literal_native_has_no_all_real_polynomial_cap](../../../../RealFunctions/NativeOffGridGrowthBarrier.lean/declarations/literal-native-has-no-all-real-polynomial-cap.md) | 63 | `result-track:33df6c6a53e5f28ba71c363849e5a97a4df9f239b5bd1314683850f9fa7a9381` |
+| 1 | `theorem` | [literal_half_integer_exceeds_fixed_exponential_cap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NativeOffGridGrowthBarrier.lean/declarations/literal-half-integer-exceeds-fixed-exponential-cap.md) | 19 | `result-track:6d21936e901d2ba1c7fba0aeb31ed2019b895c1d62f2b015568f17aa16af1eb2` |
+| 2 | `theorem` | [literal_native_has_no_all_real_fixed_exponential_cap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NativeOffGridGrowthBarrier.lean/declarations/literal-native-has-no-all-real-fixed-exponential-cap.md) | 56 | `result-track:f14725dc1b5bbe06d8cf505c1d040000c853082a5b8627be70f81190a533a882` |
+| 3 | `theorem` | [literal_native_has_no_all_real_polynomial_cap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NativeOffGridGrowthBarrier.lean/declarations/literal-native-has-no-all-real-polynomial-cap.md) | 63 | `result-track:33df6c6a53e5f28ba71c363849e5a97a4df9f239b5bd1314683850f9fa7a9381` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

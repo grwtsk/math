@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PoleGreenGaugeNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PoleGreenGaugeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PoleGreenGaugeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PoleGreenGaugeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [homogeneous_operator_pairing_integrable](../../../../MeasureAndIntegration/PoleGreenGaugeNamespaced.lean/declarations/homogeneous-operator-pairing-integrable.md) | 34 | `result-track:b176011520a3d611ea04bde67bfd473b2a86c9cf6a315b9c9812731f507f02e9` |
-| 2 | `theorem` | [homogeneous_operator_pairing_zero](../../../../MeasureAndIntegration/PoleGreenGaugeNamespaced.lean/declarations/homogeneous-operator-pairing-zero.md) | 41 | `result-track:9c2554983d2a7c9d4cf6824b408d09f48a13ecdf65cda9dd00e6a1b56d5b16e8` |
-| 3 | `theorem` | [green_discrepancy_pairing_add_homogeneous](../../../../MeasureAndIntegration/PoleGreenGaugeNamespaced.lean/declarations/green-discrepancy-pairing-add-homogeneous.md) | 87 | `result-track:de377271484f0708042772fc1fec4e792f8a0466b61f7595a2eaa52dc29d4d49` |
-| 4 | `theorem` | [pole_mode_operator_pairing_zero](../../../../MeasureAndIntegration/PoleGreenGaugeNamespaced.lean/declarations/pole-mode-operator-pairing-zero.md) | 99 | `result-track:aed549a9a94a239d8c738d6cb7717cd18c24af6d5052e1b6ea1119f15970b4be` |
+| 1 | `theorem` | [homogeneous_operator_pairing_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PoleGreenGaugeNamespaced.lean/declarations/homogeneous-operator-pairing-integrable.md) | 34 | `result-track:b176011520a3d611ea04bde67bfd473b2a86c9cf6a315b9c9812731f507f02e9` |
+| 2 | `theorem` | [homogeneous_operator_pairing_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PoleGreenGaugeNamespaced.lean/declarations/homogeneous-operator-pairing-zero.md) | 41 | `result-track:9c2554983d2a7c9d4cf6824b408d09f48a13ecdf65cda9dd00e6a1b56d5b16e8` |
+| 3 | `theorem` | [green_discrepancy_pairing_add_homogeneous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PoleGreenGaugeNamespaced.lean/declarations/green-discrepancy-pairing-add-homogeneous.md) | 87 | `result-track:de377271484f0708042772fc1fec4e792f8a0466b61f7595a2eaa52dc29d4d49` |
+| 4 | `theorem` | [pole_mode_operator_pairing_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PoleGreenGaugeNamespaced.lean/declarations/pole-mode-operator-pairing-zero.md) | 99 | `result-track:aed549a9a94a239d8c738d6cb7717cd18c24af6d5052e1b6ea1119f15970b4be` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

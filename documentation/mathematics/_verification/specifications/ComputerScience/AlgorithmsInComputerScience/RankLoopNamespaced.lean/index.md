@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HomologyGroupH1](../../../../../ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/declarations/homologygrouph1.md) | 29 | `declaration-track:f17c3569cf308da32b97fa5a3b08bf84238c33b934b77d2cf2452a403a9c9f2d` |
-| 2 | `structure` | [MordellWeilModuloTorsion](../../../../../ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/declarations/mordellweilmodulotorsion.md) | 36 | `declaration-track:4e541d1456bdcf3cd4fb65f7ef89ac2ecdeec5fdaa2daf7adb1e84c7915852b0` |
-| 3 | `structure` | [RankLoopMap](../../../../../ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/declarations/rankloopmap.md) | 43 | `declaration-track:3da1ce0c1b3722c4c57d1a6952c9c1ac0d9ca991a30de591dd7a983348f1a020` |
-| 4 | `structure` | [RankLoopEquivalenceCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/declarations/rankloopequivalencecertificate.md) | 55 | `declaration-track:ee083802530e56ea45d863584c53eff82faa8c421457fe9faf3cdaec448fb0a2` |
-| 5 | `def` | [RankLoopConjecture](../../../../../ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/declarations/rankloopconjecture.md) | 69 | `declaration-track:2336a498c197879485c18b5376473037a197449ca94c1faa7a7956e6746583ad` |
-| 6 | `theorem` | [rank_eq_loop_rank](../../../../../ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/declarations/rank-eq-loop-rank.md) | 81 | `result-track:47126b0891c6c25f635306137cfa05e3b6b9929e307df3bb6f99691f407d0307` |
-| 7 | `structure` | [RankZeroConditionalSchema](../../../../../ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/declarations/rankzeroconditionalschema.md) | 91 | `declaration-track:476f289e59fd09b0241b92343f5c2c958f1089179ae3211b66a003c2901b2516` |
-| 8 | `structure` | [RankOneConditionalSchema](../../../../../ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/declarations/rankoneconditionalschema.md) | 97 | `declaration-track:0c1a0e0755f39070554ea4ec8c82330bae81b9eb365cbbbc77e1ce4e78f9ea14` |
+| 1 | `structure` | [HomologyGroupH1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/declarations/homologygrouph1.md) | 29 | `declaration-track:f17c3569cf308da32b97fa5a3b08bf84238c33b934b77d2cf2452a403a9c9f2d` |
+| 2 | `structure` | [MordellWeilModuloTorsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/declarations/mordellweilmodulotorsion.md) | 36 | `declaration-track:4e541d1456bdcf3cd4fb65f7ef89ac2ecdeec5fdaa2daf7adb1e84c7915852b0` |
+| 3 | `structure` | [RankLoopMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/declarations/rankloopmap.md) | 43 | `declaration-track:3da1ce0c1b3722c4c57d1a6952c9c1ac0d9ca991a30de591dd7a983348f1a020` |
+| 4 | `structure` | [RankLoopEquivalenceCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/declarations/rankloopequivalencecertificate.md) | 55 | `declaration-track:ee083802530e56ea45d863584c53eff82faa8c421457fe9faf3cdaec448fb0a2` |
+| 5 | `def` | [RankLoopConjecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/declarations/rankloopconjecture.md) | 69 | `declaration-track:2336a498c197879485c18b5376473037a197449ca94c1faa7a7956e6746583ad` |
+| 6 | `theorem` | [rank_eq_loop_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/declarations/rank-eq-loop-rank.md) | 81 | `result-track:47126b0891c6c25f635306137cfa05e3b6b9929e307df3bb6f99691f407d0307` |
+| 7 | `structure` | [RankZeroConditionalSchema](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/declarations/rankzeroconditionalschema.md) | 91 | `declaration-track:476f289e59fd09b0241b92343f5c2c958f1089179ae3211b66a003c2901b2516` |
+| 8 | `structure` | [RankOneConditionalSchema](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RankLoopNamespaced.lean/declarations/rankoneconditionalschema.md) | 97 | `declaration-track:0c1a0e0755f39070554ea4ec8c82330bae81b9eb365cbbbc77e1ce4e78f9ea14` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

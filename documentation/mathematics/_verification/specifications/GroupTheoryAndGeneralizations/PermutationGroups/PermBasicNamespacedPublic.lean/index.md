@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermBasicNamespacedPublic.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermBasicNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermBasicNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermBasicNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [swap_smul_self_smul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermBasicNamespacedPublic.lean/declarations/swap-smul-self-smul.md) | 49 | `result-track:0160264e5a0370dc5a997b4ca16ad60b9ebf9d3889fa6571068fa954982b158a` |
-| 2 | `theorem` | [swap_smul_involutive](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermBasicNamespacedPublic.lean/declarations/swap-smul-involutive.md) | 52 | `result-track:345185550d65ceb7e282c92eaf2ddafaed41e65404885d23f0a37fb7e3666036` |
-| 3 | `lemma` | [BijOn.perm_inv](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermBasicNamespacedPublic.lean/declarations/bijon-perm-inv.md) | 63 | `result-track:b4af976a0c767416eb0978de01817b47f4e20d17229a807275ee0f41dcac036a` |
-| 4 | `lemma` | [MapsTo.perm_pow](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermBasicNamespacedPublic.lean/declarations/mapsto-perm-pow.md) | 65 | `result-track:903858e20bafb821e1ee07b2f0403b21c10593c28cf9b61ecf667a61306d3093` |
-| 5 | `lemma` | [SurjOn.perm_pow](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermBasicNamespacedPublic.lean/declarations/surjon-perm-pow.md) | 67 | `result-track:7d4a146e9f6480a5fa517f0584c98f65d27a8ea1627b1bf12538a22a8b5e1238` |
-| 6 | `lemma` | [BijOn.perm_pow](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermBasicNamespacedPublic.lean/declarations/bijon-perm-pow.md) | 69 | `result-track:2417b718dc1cacf567d5e37994bf2422c1f6811c83d2c0a2ad4145293999f586` |
-| 7 | `lemma` | [BijOn.perm_zpow](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermBasicNamespacedPublic.lean/declarations/bijon-perm-zpow.md) | 72 | `result-track:cb81dfce0858d7b881b3d5f81ef4fa3b40a0eef904af8f41e4b4d401f0a5fc17` |
+| 1 | `theorem` | [swap_smul_self_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermBasicNamespacedPublic.lean/declarations/swap-smul-self-smul.md) | 49 | `result-track:0160264e5a0370dc5a997b4ca16ad60b9ebf9d3889fa6571068fa954982b158a` |
+| 2 | `theorem` | [swap_smul_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermBasicNamespacedPublic.lean/declarations/swap-smul-involutive.md) | 52 | `result-track:345185550d65ceb7e282c92eaf2ddafaed41e65404885d23f0a37fb7e3666036` |
+| 3 | `lemma` | [BijOn.perm_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermBasicNamespacedPublic.lean/declarations/bijon-perm-inv.md) | 63 | `result-track:b4af976a0c767416eb0978de01817b47f4e20d17229a807275ee0f41dcac036a` |
+| 4 | `lemma` | [MapsTo.perm_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermBasicNamespacedPublic.lean/declarations/mapsto-perm-pow.md) | 65 | `result-track:903858e20bafb821e1ee07b2f0403b21c10593c28cf9b61ecf667a61306d3093` |
+| 5 | `lemma` | [SurjOn.perm_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermBasicNamespacedPublic.lean/declarations/surjon-perm-pow.md) | 67 | `result-track:7d4a146e9f6480a5fa517f0584c98f65d27a8ea1627b1bf12538a22a8b5e1238` |
+| 6 | `lemma` | [BijOn.perm_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermBasicNamespacedPublic.lean/declarations/bijon-perm-pow.md) | 69 | `result-track:2417b718dc1cacf567d5e37994bf2422c1f6811c83d2c0a2ad4145293999f586` |
+| 7 | `lemma` | [BijOn.perm_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermBasicNamespacedPublic.lean/declarations/bijon-perm-zpow.md) | 72 | `result-track:cb81dfce0858d7b881b3d5f81ef4fa3b40a0eef904af8f41e4b4d401f0a5fc17` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

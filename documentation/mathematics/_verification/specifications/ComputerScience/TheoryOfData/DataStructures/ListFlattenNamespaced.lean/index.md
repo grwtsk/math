@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFlattenNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFlattenNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFlattenNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFlattenNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Sublist.flatten](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFlattenNamespaced.lean/declarations/sublist-flatten.md) | 32 | `result-track:960089fdd6daa5b9106e77dfb7e4b6379be4376dee5d0a970c7b7b4e945efe9c` |
-| 2 | `theorem` | [Sublist.flatMap](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFlattenNamespaced.lean/declarations/sublist-flatmap.md) | 42 | `result-track:24ea254c75c75ac79c84cda1f2c525542afe5b8c66d275133854cbc1638a8b08` |
-| 3 | `theorem` | [drop_take_succ_eq_cons_getElem](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFlattenNamespaced.lean/declarations/drop-take-succ-eq-cons-getelem.md) | 52 | `result-track:8ef3567bd7f918731055ca3446193d6a097f1f14f0ea22f3a66ebb62fb3f5bc9` |
-| 4 | `theorem` | [append_flatten_map_append](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFlattenNamespaced.lean/declarations/append-flatten-map-append.md) | 63 | `result-track:f4b24b061f91f5e1693ac365ba2163307c275e6dc546d125f4f9ae6c456a9587` |
+| 1 | `theorem` | [Sublist.flatten](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFlattenNamespaced.lean/declarations/sublist-flatten.md) | 32 | `result-track:960089fdd6daa5b9106e77dfb7e4b6379be4376dee5d0a970c7b7b4e945efe9c` |
+| 2 | `theorem` | [Sublist.flatMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFlattenNamespaced.lean/declarations/sublist-flatmap.md) | 42 | `result-track:24ea254c75c75ac79c84cda1f2c525542afe5b8c66d275133854cbc1638a8b08` |
+| 3 | `theorem` | [drop_take_succ_eq_cons_getElem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFlattenNamespaced.lean/declarations/drop-take-succ-eq-cons-getelem.md) | 52 | `result-track:8ef3567bd7f918731055ca3446193d6a097f1f14f0ea22f3a66ebb62fb3f5bc9` |
+| 4 | `theorem` | [append_flatten_map_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFlattenNamespaced.lean/declarations/append-flatten-map-append.md) | 63 | `result-track:f4b24b061f91f5e1693ac365ba2163307c275e6dc546d125f4f9ae6c456a9587` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

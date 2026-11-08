@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/PartitionMeasure.lean/index.md) · [Full source](../../../../FunctionalAnalysis/PartitionMeasure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PartitionMeasure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PartitionMeasure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [measure_Icc_lt_top](../../../../FunctionalAnalysis/PartitionMeasure.lean/declarations/measure-icc-lt-top.md) | 42 | `result-track:98066618511324d6928bb020d87f2a946c26498f13c5f72c3713185a8e0b7d12` |
-| 2 | `theorem` | [measure_coe_lt_top](../../../../FunctionalAnalysis/PartitionMeasure.lean/declarations/measure-coe-lt-top.md) | 45 | `result-track:ff595ca4c4c924741c47af513a1738d772e34fedb1f6036c035789413eb14a7d` |
-| 3 | `theorem` | [measurableSet_coe](../../../../FunctionalAnalysis/PartitionMeasure.lean/declarations/measurableset-coe.md) | 52 | `result-track:4455f3a1ccac8c40ad69f8112f3fcb6c563a3b5fab64fad0626748a3d3dd075a` |
-| 4 | `theorem` | [measurableSet_Icc](../../../../FunctionalAnalysis/PartitionMeasure.lean/declarations/measurableset-icc.md) | 56 | `result-track:7a35f648925afba8c09ebf72743356e88543904db26be2d0bd1f6e25ac27a53d` |
-| 5 | `theorem` | [measurableSet_Ioo](../../../../FunctionalAnalysis/PartitionMeasure.lean/declarations/measurableset-ioo.md) | 59 | `result-track:e67524202bf96d8722962053b1b498288f59a6690955378c283f68d8719e6598` |
-| 6 | `theorem` | [coe_ae_eq_Icc](../../../../FunctionalAnalysis/PartitionMeasure.lean/declarations/coe-ae-eq-icc.md) | 66 | `result-track:2e6ba3ff95072128f851d866b3f8ae8b77b3aeed585c1129cd438298b2c21950` |
-| 7 | `theorem` | [Ioo_ae_eq_Icc](../../../../FunctionalAnalysis/PartitionMeasure.lean/declarations/ioo-ae-eq-icc.md) | 70 | `result-track:ba539ee19baccea6f06327f039ad3717f0be1dc7ee3da83250e2b827f694471b` |
-| 8 | `theorem` | [Prepartition.measure_iUnion_toReal](../../../../FunctionalAnalysis/PartitionMeasure.lean/declarations/prepartition-measure-iunion-toreal.md) | 75 | `result-track:f3f63fd961df6d1e47e35b3a516571022a959ca18c1c6d5e69f158f9b2232e5f` |
-| 9 | `def` | [toBoxAdditive](../../../../FunctionalAnalysis/PartitionMeasure.lean/declarations/toboxadditive.md) | 95 | `declaration-track:825e5ca24faf8f135d690048a524a4d1b9664d0d4a41a3b2f729fc2ce5d40fcb` |
-| 10 | `theorem` | [volume_apply](../../../../FunctionalAnalysis/PartitionMeasure.lean/declarations/volume-apply-source-edition-2.md) | 113 | `result-track:3bc6fae41da4482fa4511f080ba0c1506257ad9aea7a9416081487af27a2b612` |
-| 11 | `theorem` | [volume_apply'](../../../../FunctionalAnalysis/PartitionMeasure.lean/declarations/volume-apply-source-edition-3.md) | 119 | `result-track:f20ef2f527148968975d529c8f0aa08a1483c244711aba05a71888d913e0a713` |
-| 12 | `theorem` | [volume_face_mul](../../../../FunctionalAnalysis/PartitionMeasure.lean/declarations/volume-face-mul.md) | 123 | `result-track:90dbfc4310c475bfd8466dec5999875f274f32e01a65b01a768e8af70518c37c` |
-| 13 | `def` | [volume](../../../../FunctionalAnalysis/PartitionMeasure.lean/declarations/volume.md) | 136 | `declaration-track:a85a912cece32b71087fb1717dceecefeae014b7ba263f502e5d718cf2aec6d6` |
-| 14 | `theorem` | [volume_apply](../../../../FunctionalAnalysis/PartitionMeasure.lean/declarations/volume-apply.md) | 139 | `result-track:0fb92c76b9f44fd43e8fa89b56a5b5b0beac9eb272989e4d93c00dddb048bd4b` |
+| 1 | `theorem` | [measure_Icc_lt_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PartitionMeasure.lean/declarations/measure-icc-lt-top.md) | 42 | `result-track:98066618511324d6928bb020d87f2a946c26498f13c5f72c3713185a8e0b7d12` |
+| 2 | `theorem` | [measure_coe_lt_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PartitionMeasure.lean/declarations/measure-coe-lt-top.md) | 45 | `result-track:ff595ca4c4c924741c47af513a1738d772e34fedb1f6036c035789413eb14a7d` |
+| 3 | `theorem` | [measurableSet_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PartitionMeasure.lean/declarations/measurableset-coe.md) | 52 | `result-track:4455f3a1ccac8c40ad69f8112f3fcb6c563a3b5fab64fad0626748a3d3dd075a` |
+| 4 | `theorem` | [measurableSet_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PartitionMeasure.lean/declarations/measurableset-icc.md) | 56 | `result-track:7a35f648925afba8c09ebf72743356e88543904db26be2d0bd1f6e25ac27a53d` |
+| 5 | `theorem` | [measurableSet_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PartitionMeasure.lean/declarations/measurableset-ioo.md) | 59 | `result-track:e67524202bf96d8722962053b1b498288f59a6690955378c283f68d8719e6598` |
+| 6 | `theorem` | [coe_ae_eq_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PartitionMeasure.lean/declarations/coe-ae-eq-icc.md) | 66 | `result-track:2e6ba3ff95072128f851d866b3f8ae8b77b3aeed585c1129cd438298b2c21950` |
+| 7 | `theorem` | [Ioo_ae_eq_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PartitionMeasure.lean/declarations/ioo-ae-eq-icc.md) | 70 | `result-track:ba539ee19baccea6f06327f039ad3717f0be1dc7ee3da83250e2b827f694471b` |
+| 8 | `theorem` | [Prepartition.measure_iUnion_toReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PartitionMeasure.lean/declarations/prepartition-measure-iunion-toreal.md) | 75 | `result-track:f3f63fd961df6d1e47e35b3a516571022a959ca18c1c6d5e69f158f9b2232e5f` |
+| 9 | `def` | [toBoxAdditive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PartitionMeasure.lean/declarations/toboxadditive.md) | 95 | `declaration-track:825e5ca24faf8f135d690048a524a4d1b9664d0d4a41a3b2f729fc2ce5d40fcb` |
+| 10 | `theorem` | [volume_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PartitionMeasure.lean/declarations/volume-apply-source-edition-2.md) | 113 | `result-track:3bc6fae41da4482fa4511f080ba0c1506257ad9aea7a9416081487af27a2b612` |
+| 11 | `theorem` | [volume_apply'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PartitionMeasure.lean/declarations/volume-apply-source-edition-3.md) | 119 | `result-track:f20ef2f527148968975d529c8f0aa08a1483c244711aba05a71888d913e0a713` |
+| 12 | `theorem` | [volume_face_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PartitionMeasure.lean/declarations/volume-face-mul.md) | 123 | `result-track:90dbfc4310c475bfd8466dec5999875f274f32e01a65b01a768e8af70518c37c` |
+| 13 | `def` | [volume](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PartitionMeasure.lean/declarations/volume.md) | 136 | `declaration-track:a85a912cece32b71087fb1717dceecefeae014b7ba263f502e5d718cf2aec6d6` |
+| 14 | `theorem` | [volume_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PartitionMeasure.lean/declarations/volume-apply.md) | 139 | `result-track:0fb92c76b9f44fd43e8fa89b56a5b5b0beac9eb272989e4d93c00dddb048bd4b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReducePublicReduceProjAndUnfold.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReducePublicReduceProjAndUnfold.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReducePublicReduceProjAndUnfold.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReducePublicReduceProjAndUnfold.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reduceProjAndUnfold?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReducePublicReduceProjAndUnfold.lean/declarations/reduceprojandunfold.md) | 27 | `declaration-track:90079f44126b886387ebb9d2fd3b32fb9887ca3ffd97779d5f4781f3a5124202` |
-| 2 | `def` | [reduceHead?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReducePublicReduceProjAndUnfold.lean/declarations/reducehead.md) | 47 | `declaration-track:7d6121d1de9b43eded6e5ec383e2f405e1106a2a486bc3b2d39871d3fcd224a0` |
-| 3 | `def` | [reduceHead](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReducePublicReduceProjAndUnfold.lean/declarations/reducehead-source-edition-2.md) | 80 | `declaration-track:b7ef59afd3d80e46369c759d2b998ae57eba1e34f8d6088abfbbb74dc2813a06` |
+| 1 | `def` | [reduceProjAndUnfold?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReducePublicReduceProjAndUnfold.lean/declarations/reduceprojandunfold.md) | 27 | `declaration-track:90079f44126b886387ebb9d2fd3b32fb9887ca3ffd97779d5f4781f3a5124202` |
+| 2 | `def` | [reduceHead?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReducePublicReduceProjAndUnfold.lean/declarations/reducehead.md) | 47 | `declaration-track:7d6121d1de9b43eded6e5ec383e2f405e1106a2a486bc3b2d39871d3fcd224a0` |
+| 3 | `def` | [reduceHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReducePublicReduceProjAndUnfold.lean/declarations/reducehead-source-edition-2.md) | 80 | `declaration-track:b7ef59afd3d80e46369c759d2b998ae57eba1e34f8d6088abfbbb74dc2813a06` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

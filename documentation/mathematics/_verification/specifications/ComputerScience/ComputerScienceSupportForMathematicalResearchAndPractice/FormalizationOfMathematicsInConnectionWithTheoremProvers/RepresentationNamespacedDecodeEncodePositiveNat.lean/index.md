@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RepresentationNamespacedDecodeEncodePositiveNat.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RepresentationNamespacedDecodeEncodePositiveNat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RepresentationNamespacedDecodeEncodePositiveNat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RepresentationNamespacedDecodeEncodePositiveNat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [decode_encode_positiveNat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RepresentationNamespacedDecodeEncodePositiveNat.lean/declarations/decode-encode-positivenat.md) | 27 | `result-track:19efa0bf8d5bd0d800768b0ed56fcbab561891a69d7be8e26ddf486adc1f8a9d` |
-| 2 | `theorem` | [factorMap_unique_of_same_number](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RepresentationNamespacedDecodeEncodePositiveNat.lean/declarations/factormap-unique-of-same-number.md) | 32 | `result-track:48479294440a885d207b3427bd40e323ce36c1985ecd91131d36fdd27b86391d` |
+| 1 | `theorem` | [decode_encode_positiveNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RepresentationNamespacedDecodeEncodePositiveNat.lean/declarations/decode-encode-positivenat.md) | 27 | `result-track:19efa0bf8d5bd0d800768b0ed56fcbab561891a69d7be8e26ddf486adc1f8a9d` |
+| 2 | `theorem` | [factorMap_unique_of_same_number](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RepresentationNamespacedDecodeEncodePositiveNat.lean/declarations/factormap-unique-of-same-number.md) | 32 | `result-track:48479294440a885d207b3427bd40e323ce36c1985ecd91131d36fdd27b86391d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

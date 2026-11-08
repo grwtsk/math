@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Cut.lean/index.md) · [Full source](../../../../GeneralTopology/Cut.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Cut.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Cut.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [HeightConvention](../../../../GeneralTopology/Cut.lean/declarations/heightconvention.md) | 13 | `declaration-track:b563735060b563de522ba091264b432cf54cc7718a65da699e916a7cba62bcea` |
-| 2 | `structure` | [CriticalStripCut](../../../../GeneralTopology/Cut.lean/declarations/criticalstripcut.md) | 18 | `declaration-track:5215e4d59227ee3e4eff33582b8bdb7aef84f54b763ef4180d5f91bf17e709f8` |
-| 3 | `def` | [CriticalStripCut.owns](../../../../GeneralTopology/Cut.lean/declarations/criticalstripcut-owns.md) | 40 | `declaration-track:abde379efb6ca67cb893401960940297f45c944a7df176a6bf379e38b07065f0` |
-| 4 | `def` | [CriticalStripCut.boundaryOwned](../../../../GeneralTopology/Cut.lean/declarations/criticalstripcut-boundaryowned.md) | 48 | `declaration-track:280a77e0ef01239dc609e2a99711898cd2004f5d05c129e1e76be01bb60718e1` |
-| 5 | `theorem` | [CriticalStripCut.boundaryOwned_sound](../../../../GeneralTopology/Cut.lean/declarations/criticalstripcut-boundaryowned-sound.md) | 60 | `result-track:82de27f50ac474d56907c0e5faa156a4c444e80e0834517a9730aa15f4ac3080` |
+| 1 | `inductive` | [HeightConvention](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Cut.lean/declarations/heightconvention.md) | 13 | `declaration-track:b563735060b563de522ba091264b432cf54cc7718a65da699e916a7cba62bcea` |
+| 2 | `structure` | [CriticalStripCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Cut.lean/declarations/criticalstripcut.md) | 18 | `declaration-track:5215e4d59227ee3e4eff33582b8bdb7aef84f54b763ef4180d5f91bf17e709f8` |
+| 3 | `def` | [CriticalStripCut.owns](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Cut.lean/declarations/criticalstripcut-owns.md) | 40 | `declaration-track:abde379efb6ca67cb893401960940297f45c944a7df176a6bf379e38b07065f0` |
+| 4 | `def` | [CriticalStripCut.boundaryOwned](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Cut.lean/declarations/criticalstripcut-boundaryowned.md) | 48 | `declaration-track:280a77e0ef01239dc609e2a99711898cd2004f5d05c129e1e76be01bb60718e1` |
+| 5 | `theorem` | [CriticalStripCut.boundaryOwned_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Cut.lean/declarations/criticalstripcut-boundaryowned-sound.md) | 60 | `result-track:82de27f50ac474d56907c0e5faa156a4c444e80e0834517a9730aa15f4ac3080` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

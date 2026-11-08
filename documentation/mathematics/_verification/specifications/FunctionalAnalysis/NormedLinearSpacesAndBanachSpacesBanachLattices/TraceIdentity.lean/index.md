@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TraceIdentity.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TraceIdentity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TraceIdentity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TraceIdentity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [InvariantProjection](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TraceIdentity.lean/declarations/invariantprojection.md) | 16 | `declaration-track:f41f9891cf7e294536dd4010098e42fd83d73b3df761f5073fd2263e41e9e656` |
-| 2 | `abbrev` | [TraceCertificate](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TraceIdentity.lean/declarations/tracecertificate.md) | 19 | `declaration-track:c90cf5d720375e8cf149244ba1c5d27f4398e4c31b6c2b5a1cf9e192126e6cb5` |
-| 3 | `theorem` | [centered_trace_identity](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TraceIdentity.lean/declarations/centered-trace-identity.md) | 25 | `result-track:25a56ef5217b458f7f19d063dd7414908b4947f7a23f025d57444e90601047e2` |
+| 1 | `abbrev` | [InvariantProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TraceIdentity.lean/declarations/invariantprojection.md) | 16 | `declaration-track:f41f9891cf7e294536dd4010098e42fd83d73b3df761f5073fd2263e41e9e656` |
+| 2 | `abbrev` | [TraceCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TraceIdentity.lean/declarations/tracecertificate.md) | 19 | `declaration-track:c90cf5d720375e8cf149244ba1c5d27f4398e4c31b6c2b5a1cf9e192126e6cb5` |
+| 3 | `theorem` | [centered_trace_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TraceIdentity.lean/declarations/centered-trace-identity.md) | 25 | `result-track:25a56ef5217b458f7f19d063dd7414908b4947f7a23f025d57444e90601047e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

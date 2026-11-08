@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculus.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Filter.Tendsto.integral_sub_linear_isLittleO_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculus.lean/declarations/filter-tendsto-integral-sub-linear-islittleo-ae.md) | 37 | `result-track:efc946edcd95b5d6c8344c267c7c354f03c9ea97e3d27fa14c8578cbfc0bcec6` |
-| 2 | `theorem` | [ContinuousWithinAt.integral_sub_linear_isLittleO_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculus.lean/declarations/continuouswithinat-integral-sub-linear-islittleo-ae.md) | 69 | `result-track:561cba909f05ea03df160673ac864f8931a92afe635eda10f75595b5dab95b54` |
-| 3 | `theorem` | [ContinuousAt.integral_sub_linear_isLittleO_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculus.lean/declarations/continuousat-integral-sub-linear-islittleo-ae.md) | 89 | `result-track:db766aa1d917d241b5249af9c914a5836990c950dc994e923b8041ca791cc511` |
-| 4 | `theorem` | [ContinuousOn.integral_sub_linear_isLittleO_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculus.lean/declarations/continuouson-integral-sub-linear-islittleo-ae.md) | 105 | `result-track:94b075069264179194c24eee2825d614633f65fc1a9a9021aca226670ace8738` |
+| 1 | `theorem` | [Filter.Tendsto.integral_sub_linear_isLittleO_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculus.lean/declarations/filter-tendsto-integral-sub-linear-islittleo-ae.md) | 37 | `result-track:efc946edcd95b5d6c8344c267c7c354f03c9ea97e3d27fa14c8578cbfc0bcec6` |
+| 2 | `theorem` | [ContinuousWithinAt.integral_sub_linear_isLittleO_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculus.lean/declarations/continuouswithinat-integral-sub-linear-islittleo-ae.md) | 69 | `result-track:561cba909f05ea03df160673ac864f8931a92afe635eda10f75595b5dab95b54` |
+| 3 | `theorem` | [ContinuousAt.integral_sub_linear_isLittleO_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculus.lean/declarations/continuousat-integral-sub-linear-islittleo-ae.md) | 89 | `result-track:db766aa1d917d241b5249af9c914a5836990c950dc994e923b8041ca791cc511` |
+| 4 | `theorem` | [ContinuousOn.integral_sub_linear_isLittleO_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculus.lean/declarations/continuouson-integral-sub-linear-islittleo-ae.md) | 105 | `result-track:94b075069264179194c24eee2825d614633f65fc1a9a9021aca226670ace8738` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

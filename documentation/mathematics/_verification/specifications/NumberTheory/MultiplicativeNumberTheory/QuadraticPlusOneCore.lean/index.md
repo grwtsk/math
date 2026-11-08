@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOneCore.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOneCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOneCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOneCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,11 +46,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.QuadraticPlusOneLocalRoots`](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOneLocalRoots.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.QuadraticPlusOneResidueCounting`](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOneResidueCounting.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.QuadraticGaussianLine`](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticGaussianLine.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.QuadraticPrimeBoundary`](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.Checks.QuadraticPlusOneControls`](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOneControls.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.QuadraticPlusOneLocalRoots`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOneLocalRoots.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.QuadraticPlusOneResidueCounting`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOneResidueCounting.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.QuadraticGaussianLine`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticGaussianLine.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.QuadraticPrimeBoundary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.Checks.QuadraticPlusOneControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOneControls.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

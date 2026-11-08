@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [splitBy_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/splitby-nil.md) | 27 | `result-track:9f65517aa1204522d245a4631c3cfbaa373596ff4f436479f88c036d350e3708` |
-| 2 | `theorem` | [splitByLoop_eq_append](../../../../../../ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/splitbyloop-eq-append.md) | 30 | `result-track:46aa14a5caeb67e2f76a4ad732e35048b22147dc6d5664649a1f3cb549a6f4c2` |
-| 3 | `theorem` | [flatten_splitByLoop](../../../../../../ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/flatten-splitbyloop.md) | 40 | `result-track:99df58d3531108736aba44cb2717f8a12afd61c4f4a3f5fb9e78834314cc82c4` |
-| 4 | `theorem` | [flatten_splitBy](../../../../../../ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/flatten-splitby.md) | 49 | `result-track:1e61c0cf49b9b14999f1e380564ef7b7e2c9fa4915b7fa9e529c90d637d5f1b2` |
-| 5 | `theorem` | [nil_notMem_splitByLoop](../../../../../../ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/nil-notmem-splitbyloop.md) | 54 | `result-track:eca3b99cae386443a0f5cf31c8c7cb44fb8ce71b172f41b18d9a90e5194467cc` |
-| 6 | `theorem` | [nil_notMem_splitBy](../../../../../../ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/nil-notmem-splitby.md) | 68 | `result-track:f599be0d8b6e4f77e3104fb922e63122cc781de6191d2c1e5382bd3893578698` |
-| 7 | `theorem` | [ne_nil_of_mem_splitBy](../../../../../../ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/ne-nil-of-mem-splitby.md) | 75 | `result-track:cd8bdf8206419d0dbe20af1a5ab1dc9a683fe0350463f3c4b255335ae59f3749` |
-| 8 | `theorem` | [chain'_of_mem_splitByLoop](../../../../../../ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/chain-of-mem-splitbyloop.md) | 79 | `result-track:b65ebf484190fe4008c7abd424597b4350196fbb84fc25184d86449e6a9a5f86` |
-| 9 | `theorem` | [chain'_of_mem_splitBy](../../../../../../ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/chain-of-mem-splitby.md) | 105 | `result-track:157b963edbe99579b4bb353770bf7559666d8b647ad598f30397d5f50efa7689` |
-| 10 | `theorem` | [chain'_getLast_head_splitByLoop](../../../../../../ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/chain-getlast-head-splitbyloop.md) | 114 | `result-track:a41374374b2f7181f7f8ed5c0c69891bab5667320193d29f52aaeefa0c22bd9a` |
-| 11 | `theorem` | [chain'_getLast_head_splitBy](../../../../../../ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/chain-getlast-head-splitby.md) | 138 | `result-track:11c5f5da06c8094d117b7749de9192b91ef578d3bedbfa483b962e1ebe057b58` |
+| 1 | `theorem` | [splitBy_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/splitby-nil.md) | 27 | `result-track:9f65517aa1204522d245a4631c3cfbaa373596ff4f436479f88c036d350e3708` |
+| 2 | `theorem` | [splitByLoop_eq_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/splitbyloop-eq-append.md) | 30 | `result-track:46aa14a5caeb67e2f76a4ad732e35048b22147dc6d5664649a1f3cb549a6f4c2` |
+| 3 | `theorem` | [flatten_splitByLoop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/flatten-splitbyloop.md) | 40 | `result-track:99df58d3531108736aba44cb2717f8a12afd61c4f4a3f5fb9e78834314cc82c4` |
+| 4 | `theorem` | [flatten_splitBy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/flatten-splitby.md) | 49 | `result-track:1e61c0cf49b9b14999f1e380564ef7b7e2c9fa4915b7fa9e529c90d637d5f1b2` |
+| 5 | `theorem` | [nil_notMem_splitByLoop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/nil-notmem-splitbyloop.md) | 54 | `result-track:eca3b99cae386443a0f5cf31c8c7cb44fb8ce71b172f41b18d9a90e5194467cc` |
+| 6 | `theorem` | [nil_notMem_splitBy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/nil-notmem-splitby.md) | 68 | `result-track:f599be0d8b6e4f77e3104fb922e63122cc781de6191d2c1e5382bd3893578698` |
+| 7 | `theorem` | [ne_nil_of_mem_splitBy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/ne-nil-of-mem-splitby.md) | 75 | `result-track:cd8bdf8206419d0dbe20af1a5ab1dc9a683fe0350463f3c4b255335ae59f3749` |
+| 8 | `theorem` | [chain'_of_mem_splitByLoop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/chain-of-mem-splitbyloop.md) | 79 | `result-track:b65ebf484190fe4008c7abd424597b4350196fbb84fc25184d86449e6a9a5f86` |
+| 9 | `theorem` | [chain'_of_mem_splitBy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/chain-of-mem-splitby.md) | 105 | `result-track:157b963edbe99579b4bb353770bf7559666d8b647ad598f30397d5f50efa7689` |
+| 10 | `theorem` | [chain'_getLast_head_splitByLoop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/chain-getlast-head-splitbyloop.md) | 114 | `result-track:a41374374b2f7181f7f8ed5c0c69891bab5667320193d29f52aaeefa0c22bd9a` |
+| 11 | `theorem` | [chain'_getLast_head_splitBy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SplitBy.lean/declarations/chain-getlast-head-splitby.md) | 138 | `result-track:11c5f5da06c8094d117b7749de9192b91ef578d3bedbfa483b962e1ebe057b58` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SaddlePointNamespacedPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SaddlePointNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SaddlePointNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SaddlePointNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [iSup₂_iInf₂_le_iInf₂_iSup₂](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SaddlePointNamespacedPublic.lean/declarations/isup-iinf-le-iinf-isup.md) | 44 | `result-track:c089ebdb9ce96023e219d8cc5603cd4121c80d79b1667a2ba9f54a8069a2ee95` |
-| 2 | `def` | [IsSaddlePointOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SaddlePointNamespacedPublic.lean/declarations/issaddlepointon.md) | 55 | `declaration-track:93aa9cbf85e1fdc73c02a9fcc9153fcbe2b61334eb474632c5183e2618110d7a` |
-| 3 | `lemma` | [IsSaddlePointOn.swap_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SaddlePointNamespacedPublic.lean/declarations/issaddlepointon-swap-left.md) | 60 | `result-track:d7fbe4f8a16cf8c00464d735d006ed800829c4be47b0ebf02db29e686cad1967` |
-| 4 | `lemma` | [IsSaddlePointOn.swap_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SaddlePointNamespacedPublic.lean/declarations/issaddlepointon-swap-right.md) | 65 | `result-track:1e5b3112d7f85cd69f416bb81a3cf512879eddc27799e2601fffada7a058faa5` |
-| 5 | `lemma` | [isSaddlePointOn_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SaddlePointNamespacedPublic.lean/declarations/issaddlepointon-iff.md) | 71 | `result-track:2cc714f7395dbe0bc4ff6e1343f0e2d06a12a87d727f81224a26d1d5825de167` |
-| 6 | `lemma` | [isSaddlePointOn_iff'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SaddlePointNamespacedPublic.lean/declarations/issaddlepointon-iff-source-edition-2.md) | 94 | `result-track:715af2cfae2087861989a696b62397d9d94d5fdf71c6aef06ee23ae2b1c2c59e` |
-| 7 | `lemma` | [isSaddlePointOn_value](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SaddlePointNamespacedPublic.lean/declarations/issaddlepointon-value.md) | 111 | `result-track:cfe1036af789a0ffecdb812eb8cc2c14afcf60a4d50f9aa65a7203eda8f312f7` |
+| 1 | `theorem` | [iSup₂_iInf₂_le_iInf₂_iSup₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SaddlePointNamespacedPublic.lean/declarations/isup-iinf-le-iinf-isup.md) | 44 | `result-track:c089ebdb9ce96023e219d8cc5603cd4121c80d79b1667a2ba9f54a8069a2ee95` |
+| 2 | `def` | [IsSaddlePointOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SaddlePointNamespacedPublic.lean/declarations/issaddlepointon.md) | 55 | `declaration-track:93aa9cbf85e1fdc73c02a9fcc9153fcbe2b61334eb474632c5183e2618110d7a` |
+| 3 | `lemma` | [IsSaddlePointOn.swap_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SaddlePointNamespacedPublic.lean/declarations/issaddlepointon-swap-left.md) | 60 | `result-track:d7fbe4f8a16cf8c00464d735d006ed800829c4be47b0ebf02db29e686cad1967` |
+| 4 | `lemma` | [IsSaddlePointOn.swap_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SaddlePointNamespacedPublic.lean/declarations/issaddlepointon-swap-right.md) | 65 | `result-track:1e5b3112d7f85cd69f416bb81a3cf512879eddc27799e2601fffada7a058faa5` |
+| 5 | `lemma` | [isSaddlePointOn_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SaddlePointNamespacedPublic.lean/declarations/issaddlepointon-iff.md) | 71 | `result-track:2cc714f7395dbe0bc4ff6e1343f0e2d06a12a87d727f81224a26d1d5825de167` |
+| 6 | `lemma` | [isSaddlePointOn_iff'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SaddlePointNamespacedPublic.lean/declarations/issaddlepointon-iff-source-edition-2.md) | 94 | `result-track:715af2cfae2087861989a696b62397d9d94d5fdf71c6aef06ee23ae2b1c2c59e` |
+| 7 | `lemma` | [isSaddlePointOn_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SaddlePointNamespacedPublic.lean/declarations/issaddlepointon-value.md) | 111 | `result-track:cfe1036af789a0ffecdb812eb8cc2c14afcf60a4d50f9aa65a7203eda8f312f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

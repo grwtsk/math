@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MonicNonRegularEdition2.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MonicNonRegularEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MonicNonRegularEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MonicNonRegularEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [N₃](../../../../CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/n.md) | 31 | `declaration-track:f021e6da7ba1b7b316a1045c9889137fa7e74a990728ae232afe385c62706f49` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/instance-source-edition-5.md) | 39 | `declaration-track:b0620e125b3683062af41a38c1d3330adf5eb9b26992304400a20cd3e99b0e9c` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/instance-source-edition-2.md) | 40 | `declaration-track:6d66cdd3597a3ec8a91b3a67621beb0967b8ec36a934b54bc7755e55e802ca59` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/instance-source-edition-4.md) | 43 | `declaration-track:adac43ba775577d9bb53bff348b238419f5f043fbc1be0a4a097c981a2cdbb35` |
-| 5 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/instance.md) | 51 | `declaration-track:07518a9f3f831d994a8caa3e1c4d9296ab56830cda8a40f34779c02916b8a40e` |
-| 6 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/instance-source-edition-6.md) | 59 | `declaration-track:ee125bcb34ea39f867982914bc27b2943cbab4e53175f14e3e647fb6accacbac` |
-| 7 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/instance-source-edition-3.md) | 65 | `declaration-track:7c8c970fca3e44b8c608e01cae0830ab27b98d45cc15c136cbd04c2072d9ca5a` |
-| 8 | `theorem` | [X_add_two_mul_X_add_two](../../../../CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/x-add-two-mul-x-add-two.md) | 77 | `result-track:058780c44451f78740315c00e644db1eef7d9f7d30a6ddce50b0b22546f7351e` |
-| 9 | `theorem` | [monic_X_add_two](../../../../CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/monic-x-add-two.md) | 87 | `result-track:15af46a6b903bdba434887c8371cb1a115fd8dd4673d5c3f97377bb8767ae794` |
-| 10 | `theorem` | [not_isLeftRegular_X_add_two](../../../../CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/not-isleftregular-x-add-two.md) | 94 | `result-track:700c7970a518911671efb3ffdb30033e616cedda97f89083740916fae55ba83b` |
-| 11 | `theorem` | [not_monic_implies_isLeftRegular](../../../../CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/not-monic-implies-isleftregular.md) | 102 | `result-track:a3893b37a581e62e82e6e10f61b2008dd5b49915961c4bceeb737bc10812faba` |
+| 1 | `inductive` | [N₃](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/n.md) | 31 | `declaration-track:f021e6da7ba1b7b316a1045c9889137fa7e74a990728ae232afe385c62706f49` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/instance-source-edition-5.md) | 39 | `declaration-track:b0620e125b3683062af41a38c1d3330adf5eb9b26992304400a20cd3e99b0e9c` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/instance-source-edition-2.md) | 40 | `declaration-track:6d66cdd3597a3ec8a91b3a67621beb0967b8ec36a934b54bc7755e55e802ca59` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/instance-source-edition-4.md) | 43 | `declaration-track:adac43ba775577d9bb53bff348b238419f5f043fbc1be0a4a097c981a2cdbb35` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/instance.md) | 51 | `declaration-track:07518a9f3f831d994a8caa3e1c4d9296ab56830cda8a40f34779c02916b8a40e` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/instance-source-edition-6.md) | 59 | `declaration-track:ee125bcb34ea39f867982914bc27b2943cbab4e53175f14e3e647fb6accacbac` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/instance-source-edition-3.md) | 65 | `declaration-track:7c8c970fca3e44b8c608e01cae0830ab27b98d45cc15c136cbd04c2072d9ca5a` |
+| 8 | `theorem` | [X_add_two_mul_X_add_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/x-add-two-mul-x-add-two.md) | 77 | `result-track:058780c44451f78740315c00e644db1eef7d9f7d30a6ddce50b0b22546f7351e` |
+| 9 | `theorem` | [monic_X_add_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/monic-x-add-two.md) | 87 | `result-track:15af46a6b903bdba434887c8371cb1a115fd8dd4673d5c3f97377bb8767ae794` |
+| 10 | `theorem` | [not_isLeftRegular_X_add_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/not-isleftregular-x-add-two.md) | 94 | `result-track:700c7970a518911671efb3ffdb30033e616cedda97f89083740916fae55ba83b` |
+| 11 | `theorem` | [not_monic_implies_isLeftRegular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MonicNonRegularEdition2.lean/declarations/not-monic-implies-isleftregular.md) | 102 | `result-track:a3893b37a581e62e82e6e10f61b2008dd5b49915961c4bceeb737bc10812faba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

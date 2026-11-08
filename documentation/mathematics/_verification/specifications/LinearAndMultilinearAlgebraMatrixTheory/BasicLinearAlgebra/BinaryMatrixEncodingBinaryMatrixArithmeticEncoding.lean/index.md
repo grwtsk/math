@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingBinaryMatrixArithmeticEncoding.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingBinaryMatrixArithmeticEncoding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingBinaryMatrixArithmeticEncoding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingBinaryMatrixArithmeticEncoding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BinaryMatrixArithmeticEncoding](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingBinaryMatrixArithmeticEncoding.lean/declarations/binarymatrixarithmeticencoding.md) | 19 | `declaration-track:4d90bcbaae30a882c9dcbedaf406a54f3c9406ab6e5eea09bf3c924923012aff` |
-| 2 | `def` | [unaryBinaryMatrixOfNat](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingBinaryMatrixArithmeticEncoding.lean/declarations/unarybinarymatrixofnat.md) | 25 | `declaration-track:c9ddc2cd73c29d4b90ffd5e19d1723543415e6e980dc7be140d02694c4019ded` |
-| 3 | `theorem` | [unaryBinaryMatrix_shape](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingBinaryMatrixArithmeticEncoding.lean/declarations/unarybinarymatrix-shape.md) | 30 | `result-track:5f31558c1f6470fb2a6904568d125a98e3d5226bd023618b3c4017fb7a033ecf` |
-| 4 | `def` | [unaryEncoding](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingBinaryMatrixArithmeticEncoding.lean/declarations/unaryencoding.md) | 36 | `declaration-track:f6bce2adc985abb47589ffeba5be014a998632f7dc7ddf563010c47edca4e78f` |
+| 1 | `structure` | [BinaryMatrixArithmeticEncoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingBinaryMatrixArithmeticEncoding.lean/declarations/binarymatrixarithmeticencoding.md) | 19 | `declaration-track:4d90bcbaae30a882c9dcbedaf406a54f3c9406ab6e5eea09bf3c924923012aff` |
+| 2 | `def` | [unaryBinaryMatrixOfNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingBinaryMatrixArithmeticEncoding.lean/declarations/unarybinarymatrixofnat.md) | 25 | `declaration-track:c9ddc2cd73c29d4b90ffd5e19d1723543415e6e980dc7be140d02694c4019ded` |
+| 3 | `theorem` | [unaryBinaryMatrix_shape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingBinaryMatrixArithmeticEncoding.lean/declarations/unarybinarymatrix-shape.md) | 30 | `result-track:5f31558c1f6470fb2a6904568d125a98e3d5226bd023618b3c4017fb7a033ecf` |
+| 4 | `def` | [unaryEncoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingBinaryMatrixArithmeticEncoding.lean/declarations/unaryencoding.md) | 36 | `declaration-track:f6bce2adc985abb47589ffeba5be014a998632f7dc7ddf563010c47edca4e78f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

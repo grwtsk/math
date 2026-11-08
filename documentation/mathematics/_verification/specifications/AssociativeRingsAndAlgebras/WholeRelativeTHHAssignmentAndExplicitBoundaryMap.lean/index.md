@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/WholeRelativeTHHAssignmentAndExplicitBoundaryMap.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/WholeRelativeTHHAssignmentAndExplicitBoundaryMap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeRelativeTHHAssignmentAndExplicitBoundaryMap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeRelativeTHHAssignmentAndExplicitBoundaryMap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RelativeTHHTheory](../../../../AssociativeRingsAndAlgebras/WholeRelativeTHHAssignmentAndExplicitBoundaryMap.lean/declarations/relativethhtheory.md) | 46 | `declaration-track:9faab000be1c24f8cf6c95823627a8e6bad26cdbef0a9b3d79f4cd1daaef07a4` |
-| 2 | `structure` | [THHBoundaryMap](../../../../AssociativeRingsAndAlgebras/WholeRelativeTHHAssignmentAndExplicitBoundaryMap.lean/declarations/thhboundarymap.md) | 63 | `declaration-track:0375bde337c3a1cbd791e9477e21547d86b9b045013ffe21e5cb1a70b3e16790` |
-| 3 | `def` | [THHBoundaryMap.relativeTHHBoundaryDefect](../../../../AssociativeRingsAndAlgebras/WholeRelativeTHHAssignmentAndExplicitBoundaryMap.lean/declarations/thhboundarymap-relativethhboundarydefect.md) | 72 | `declaration-track:800780c960bb89f79f6daf2ef83154cd11416898c159dd93289f26230092d559` |
+| 1 | `structure` | [RelativeTHHTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeRelativeTHHAssignmentAndExplicitBoundaryMap.lean/declarations/relativethhtheory.md) | 46 | `declaration-track:9faab000be1c24f8cf6c95823627a8e6bad26cdbef0a9b3d79f4cd1daaef07a4` |
+| 2 | `structure` | [THHBoundaryMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeRelativeTHHAssignmentAndExplicitBoundaryMap.lean/declarations/thhboundarymap.md) | 63 | `declaration-track:0375bde337c3a1cbd791e9477e21547d86b9b045013ffe21e5cb1a70b3e16790` |
+| 3 | `def` | [THHBoundaryMap.relativeTHHBoundaryDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeRelativeTHHAssignmentAndExplicitBoundaryMap.lean/declarations/thhboundarymap-relativethhboundarydefect.md) | 72 | `declaration-track:800780c960bb89f79f6daf2ef83154cd11416898c159dd93289f26230092d559` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

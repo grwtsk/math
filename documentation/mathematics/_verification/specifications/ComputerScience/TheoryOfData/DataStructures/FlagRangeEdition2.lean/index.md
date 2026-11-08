@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FlagRangeEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FlagRangeEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FlagRangeEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FlagRangeEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsMaxChain.range_fin_of_covBy](../../../../../../ComputerScience/TheoryOfData/DataStructures/FlagRangeEdition2.lean/declarations/ismaxchain-range-fin-of-covby.md) | 30 | `result-track:49b062e8c29e10f913f3a6fff041cda51619d89b445c730958e6195398f9323f` |
-| 2 | `def` | [Flag.rangeFin](../../../../../../ComputerScience/TheoryOfData/DataStructures/FlagRangeEdition2.lean/declarations/flag-rangefin.md) | 50 | `declaration-track:88049f1e08bb4e58ae8f5f3275cee1c6af26827c97b756f73750115f0776889b` |
-| 3 | `theorem` | [Flag.mem_rangeFin](../../../../../../ComputerScience/TheoryOfData/DataStructures/FlagRangeEdition2.lean/declarations/flag-mem-rangefin.md) | 56 | `result-track:2fd6263e22d2c9ef07021ca3491c2f17d9804d6f25dff97c5d8548f447a583cd` |
+| 1 | `theorem` | [IsMaxChain.range_fin_of_covBy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FlagRangeEdition2.lean/declarations/ismaxchain-range-fin-of-covby.md) | 30 | `result-track:49b062e8c29e10f913f3a6fff041cda51619d89b445c730958e6195398f9323f` |
+| 2 | `def` | [Flag.rangeFin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FlagRangeEdition2.lean/declarations/flag-rangefin.md) | 50 | `declaration-track:88049f1e08bb4e58ae8f5f3275cee1c6af26827c97b756f73750115f0776889b` |
+| 3 | `theorem` | [Flag.mem_rangeFin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FlagRangeEdition2.lean/declarations/flag-mem-rangefin.md) | 56 | `result-track:2fd6263e22d2c9ef07021ca3491c2f17d9804d6f25dff97c5d8548f447a583cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

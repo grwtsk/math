@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PlaceInteractionNamespacedPairInteraction.lean/index.md) · [Full source](../../../../Combinatorics/PlaceInteractionNamespacedPairInteraction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlaceInteractionNamespacedPairInteraction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlaceInteractionNamespacedPairInteraction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pairInteraction](../../../../Combinatorics/PlaceInteractionNamespacedPairInteraction.lean/declarations/pairinteraction.md) | 21 | `declaration-track:cf322de481e8df7ed350579607071a16cde22f9a73f1b68e1bfa77ab85c1d840` |
-| 2 | `theorem` | [pairInteraction_symmetric](../../../../Combinatorics/PlaceInteractionNamespacedPairInteraction.lean/declarations/pairinteraction-symmetric.md) | 34 | `result-track:946e07776edc5f2c7a94a751095f6ed23198285bbfc145709c28002630656643` |
+| 1 | `def` | [pairInteraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlaceInteractionNamespacedPairInteraction.lean/declarations/pairinteraction.md) | 21 | `declaration-track:cf322de481e8df7ed350579607071a16cde22f9a73f1b68e1bfa77ab85c1d840` |
+| 2 | `theorem` | [pairInteraction_symmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlaceInteractionNamespacedPairInteraction.lean/declarations/pairinteraction-symmetric.md) | 34 | `result-track:946e07776edc5f2c7a94a751095f6ed23198285bbfc145709c28002630656643` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

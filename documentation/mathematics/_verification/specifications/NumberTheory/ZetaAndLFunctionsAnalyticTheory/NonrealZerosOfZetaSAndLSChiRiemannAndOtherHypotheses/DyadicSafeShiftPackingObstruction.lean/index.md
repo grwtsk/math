@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSafeShiftPackingObstruction.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSafeShiftPackingObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSafeShiftPackingObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSafeShiftPackingObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicChebyshevCumulativeBudget`](../../../../../../MeasureAndIntegration/DyadicChebyshevCumulativeBudget.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicChebyshevCumulativeBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicChebyshevCumulativeBudget.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OffLineDyadicCommonLowerMassAtZero](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSafeShiftPackingObstruction.lean/declarations/offlinedyadiccommonlowermassatzero.md) | 52 | `declaration-track:64dd53a941173c19c35569785eaf3826cc8ea0076bf55e77cac2199d121ba04a` |
-| 2 | `def` | [toCumulativePackingData](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSafeShiftPackingObstruction.lean/declarations/tocumulativepackingdata.md) | 69 | `declaration-track:f0291cf40982e2ab5d7b98b9f7aa6f0776cd9d803464acefe2c4ba7c65031835` |
-| 3 | `theorem` | [partial_le_budget_div_factor](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSafeShiftPackingObstruction.lean/declarations/partial-le-budget-div-factor.md) | 84 | `result-track:266fce57d5fa7ce1fcd1987d4dacb13c675942708b8cb68e2d8d146f176d3093` |
-| 4 | `theorem` | [impossible](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSafeShiftPackingObstruction.lean/declarations/impossible.md) | 102 | `result-track:9961c3fe1e31912b403550e5fa14b6b84532a08d28a18045474ad20a35a401a1` |
-| 5 | `theorem` | [no_offLineDyadicCommonLowerMassAtZero](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSafeShiftPackingObstruction.lean/declarations/no-offlinedyadiccommonlowermassatzero.md) | 110 | `result-track:ddeb07b0832e1ff121b304968eb0900aae06be87487f94e73fd886ec26c215e9` |
-| 6 | `def` | [OffLineDyadicCommonLowerMassClaim](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSafeShiftPackingObstruction.lean/declarations/offlinedyadiccommonlowermassclaim.md) | 118 | `declaration-track:38ec7b8038805b5de4fbf12f23ed5b2c34571c365ed31a3c323fcc22957aafb5` |
-| 7 | `theorem` | [offLineDyadicCommonLowerMassClaim_iff_rh](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSafeShiftPackingObstruction.lean/declarations/offlinedyadiccommonlowermassclaim-iff-rh.md) | 126 | `result-track:5f020e5a3b09034c101491f21339fffe6f70b9a7035a51065ae1faa0e35bb551` |
+| 1 | `structure` | [OffLineDyadicCommonLowerMassAtZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSafeShiftPackingObstruction.lean/declarations/offlinedyadiccommonlowermassatzero.md) | 52 | `declaration-track:64dd53a941173c19c35569785eaf3826cc8ea0076bf55e77cac2199d121ba04a` |
+| 2 | `def` | [toCumulativePackingData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSafeShiftPackingObstruction.lean/declarations/tocumulativepackingdata.md) | 69 | `declaration-track:f0291cf40982e2ab5d7b98b9f7aa6f0776cd9d803464acefe2c4ba7c65031835` |
+| 3 | `theorem` | [partial_le_budget_div_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSafeShiftPackingObstruction.lean/declarations/partial-le-budget-div-factor.md) | 84 | `result-track:266fce57d5fa7ce1fcd1987d4dacb13c675942708b8cb68e2d8d146f176d3093` |
+| 4 | `theorem` | [impossible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSafeShiftPackingObstruction.lean/declarations/impossible.md) | 102 | `result-track:9961c3fe1e31912b403550e5fa14b6b84532a08d28a18045474ad20a35a401a1` |
+| 5 | `theorem` | [no_offLineDyadicCommonLowerMassAtZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSafeShiftPackingObstruction.lean/declarations/no-offlinedyadiccommonlowermassatzero.md) | 110 | `result-track:ddeb07b0832e1ff121b304968eb0900aae06be87487f94e73fd886ec26c215e9` |
+| 6 | `def` | [OffLineDyadicCommonLowerMassClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSafeShiftPackingObstruction.lean/declarations/offlinedyadiccommonlowermassclaim.md) | 118 | `declaration-track:38ec7b8038805b5de4fbf12f23ed5b2c34571c365ed31a3c323fcc22957aafb5` |
+| 7 | `theorem` | [offLineDyadicCommonLowerMassClaim_iff_rh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSafeShiftPackingObstruction.lean/declarations/offlinedyadiccommonlowermassclaim-iff-rh.md) | 126 | `result-track:5f020e5a3b09034c101491f21339fffe6f70b9a7035a51065ae1faa0e35bb551` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ToExprPublicOfPoly.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ToExprPublicOfPoly.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ToExprPublicOfPoly.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ToExprPublicOfPoly.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ofPoly](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ToExprPublicOfPoly.lean/declarations/ofpoly.md) | 17 | `declaration-track:4fe5ce2c7b40d2d9310180ba21ba5dc8e07d9128181ce78ea6295b28d441c186` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ToExprPublicOfPoly.lean/declarations/instance.md) | 22 | `declaration-track:9f7ce0019ab825947bec8657132999d4adb27e5b7c0b66cc6594cc163f01f2f9` |
-| 3 | `def` | [ofLinExpr](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ToExprPublicOfPoly.lean/declarations/oflinexpr.md) | 28 | `declaration-track:15b9651ee908467e0f3558dc1fcf29455b84d37f43c552acd3b739b53b45442f` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ToExprPublicOfPoly.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:b7f4ca90dcb9f70f5e4bdf91303f4cd6698127e4a0e5bb785ba6b173ca4a9c36` |
+| 1 | `def` | [ofPoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ToExprPublicOfPoly.lean/declarations/ofpoly.md) | 17 | `declaration-track:4fe5ce2c7b40d2d9310180ba21ba5dc8e07d9128181ce78ea6295b28d441c186` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ToExprPublicOfPoly.lean/declarations/instance.md) | 22 | `declaration-track:9f7ce0019ab825947bec8657132999d4adb27e5b7c0b66cc6594cc163f01f2f9` |
+| 3 | `def` | [ofLinExpr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ToExprPublicOfPoly.lean/declarations/oflinexpr.md) | 28 | `declaration-track:15b9651ee908467e0f3558dc1fcf29455b84d37f43c552acd3b739b53b45442f` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ToExprPublicOfPoly.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:b7f4ca90dcb9f70f5e4bdf91303f4cd6698127e4a0e5bb785ba6b173ca4a9c36` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

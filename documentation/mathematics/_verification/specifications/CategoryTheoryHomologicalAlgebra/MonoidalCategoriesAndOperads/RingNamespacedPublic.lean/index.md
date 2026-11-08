@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RingNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RingNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RingNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RingNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [yonedaRingObj](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RingNamespacedPublic.lean/declarations/yonedaringobj.md) | 38 | `declaration-track:1eb2c5ecac698e435bb217f2b41591c1d530efa92d71213af5236bdbf9e622a3` |
-| 2 | `lemma` | [yonedaRingObj_map_apply](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RingNamespacedPublic.lean/declarations/yonedaringobj-map-apply.md) | 49 | `result-track:edfe8bbfc79f3f73aea76ec443b6cc80b4e552054344115d108aabfb8379ee6a` |
-| 3 | `def` | [yonedaRing](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RingNamespacedPublic.lean/declarations/yonedaring.md) | 55 | `declaration-track:3899f76fc00c63fc506895627720bb9e095979d187061476593a3e338a04abb2` |
-| 4 | `def` | [yonedaCommRingObj](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RingNamespacedPublic.lean/declarations/yonedacommringobj.md) | 67 | `declaration-track:9341e266a373fe7780f3fdc7521e8ae3f55363277fea6b25e640772ee67f5355` |
-| 5 | `lemma` | [yonedaCommRingObj_map_apply](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RingNamespacedPublic.lean/declarations/yonedacommringobj-map-apply.md) | 73 | `result-track:6ace690c5685a770a7afdc54ccf34615327a006268808e693c7981a51d2345e8` |
-| 6 | `def` | [yonedaCommRing](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RingNamespacedPublic.lean/declarations/yonedacommring.md) | 80 | `declaration-track:1b2571de8da3c9e6ba8cdf3aba55bb41760c6e225ed71b18557ed1b2083d18ff` |
-| 7 | `lemma` | [yonedaCommRing_map_app_apply](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RingNamespacedPublic.lean/declarations/yonedacommring-map-app-apply.md) | 91 | `result-track:b15d17b5736e0c02a738c7d12a5645e863fc075ca87c2086cfb34cfa308c3357` |
+| 1 | `def` | [yonedaRingObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RingNamespacedPublic.lean/declarations/yonedaringobj.md) | 38 | `declaration-track:1eb2c5ecac698e435bb217f2b41591c1d530efa92d71213af5236bdbf9e622a3` |
+| 2 | `lemma` | [yonedaRingObj_map_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RingNamespacedPublic.lean/declarations/yonedaringobj-map-apply.md) | 49 | `result-track:edfe8bbfc79f3f73aea76ec443b6cc80b4e552054344115d108aabfb8379ee6a` |
+| 3 | `def` | [yonedaRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RingNamespacedPublic.lean/declarations/yonedaring.md) | 55 | `declaration-track:3899f76fc00c63fc506895627720bb9e095979d187061476593a3e338a04abb2` |
+| 4 | `def` | [yonedaCommRingObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RingNamespacedPublic.lean/declarations/yonedacommringobj.md) | 67 | `declaration-track:9341e266a373fe7780f3fdc7521e8ae3f55363277fea6b25e640772ee67f5355` |
+| 5 | `lemma` | [yonedaCommRingObj_map_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RingNamespacedPublic.lean/declarations/yonedacommringobj-map-apply.md) | 73 | `result-track:6ace690c5685a770a7afdc54ccf34615327a006268808e693c7981a51d2345e8` |
+| 6 | `def` | [yonedaCommRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RingNamespacedPublic.lean/declarations/yonedacommring.md) | 80 | `declaration-track:1b2571de8da3c9e6ba8cdf3aba55bb41760c6e225ed71b18557ed1b2083d18ff` |
+| 7 | `lemma` | [yonedaCommRing_map_app_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RingNamespacedPublic.lean/declarations/yonedacommring-map-app-apply.md) | 91 | `result-track:b15d17b5736e0c02a738c7d12a5645e863fc075ca87c2086cfb34cfa308c3357` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

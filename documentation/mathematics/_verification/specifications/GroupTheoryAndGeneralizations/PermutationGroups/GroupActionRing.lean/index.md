@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionRing.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionRing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionRing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionRing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [NonUnitalNonAssocSemiring.toDistribSMul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionRing.lean/declarations/nonunitalnonassocsemiring-todistribsmul.md) | 24 | `declaration-track:6e6ff2cb0fbb23c9ab353c3b6c3639aa81cd7bb41c1c8af9e4fbd7b3ecb10c6a` |
-| 2 | `instance` | [NonUnitalNonAssocSemiring.nat_isScalarTower](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionRing.lean/declarations/nonunitalnonassocsemiring-nat-isscalartower.md) | 28 | `declaration-track:f3d2210ac8423315e1c56e83a72dcc5fe491e7e19d85c2a83c352e23a06a6cc6` |
-| 3 | `instance` | [NonUnitalNonAssocRing.int_isScalarTower](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionRing.lean/declarations/nonunitalnonassocring-int-isscalartower.md) | 36 | `declaration-track:2ec21c3723f45d94a95b267a832dd217a39db28f66f9ebb8ab8b2b4209984772` |
+| 1 | `instance` | [NonUnitalNonAssocSemiring.toDistribSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionRing.lean/declarations/nonunitalnonassocsemiring-todistribsmul.md) | 24 | `declaration-track:6e6ff2cb0fbb23c9ab353c3b6c3639aa81cd7bb41c1c8af9e4fbd7b3ecb10c6a` |
+| 2 | `instance` | [NonUnitalNonAssocSemiring.nat_isScalarTower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionRing.lean/declarations/nonunitalnonassocsemiring-nat-isscalartower.md) | 28 | `declaration-track:f3d2210ac8423315e1c56e83a72dcc5fe491e7e19d85c2a83c352e23a06a6cc6` |
+| 3 | `instance` | [NonUnitalNonAssocRing.int_isScalarTower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionRing.lean/declarations/nonunitalnonassocring-int-isscalartower.md) | 36 | `declaration-track:2ec21c3723f45d94a95b267a832dd217a39db28f66f9ebb8ab8b2b4209984772` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

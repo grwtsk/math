@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ThirdCyclotomicCharacters.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ThirdCyclotomicCharacters.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicCharacters.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicCharacters.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicReduction`](../../../../CommutativeAlgebra/ThirdCyclotomicReduction.lean/index.md) — import line 16; pinned internal source present.
+- [`GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicReduction.lean/index.md) — import line 16; pinned internal source present.
 - `Mathlib.NumberTheory.MulChar.Basic` — import line 17; external provider; requires a separately pinned dependency.
 - `Mathlib.FieldTheory.Finite.Basic` — import line 18; external provider; requires a separately pinned dependency.
 - `Mathlib.NumberTheory.NumberField.Ideal.Basic` — import line 19; external provider; requires a separately pinned dependency.
@@ -60,22 +60,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [quotientFintype](../../../../CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/quotientfintype.md) | 29 | `declaration-track:d3680d19760faa8c0f3c9754b4b3ef4f4d8c685d3155b0acb7695b1866823bc3` |
-| 2 | `instance` | [quotientField](../../../../CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/quotientfield.md) | 32 | `declaration-track:de65028535f87b5d3f1f373d594460ec93ab5b4e3504ce7547a00fae47554df7` |
-| 3 | `theorem` | [restrictedRoots_surjective](../../../../CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/restrictedroots-surjective.md) | 36 | `result-track:4c385cfd176fd3cfc1c03cc4ec6f6ffc585a5900e91877a968def4f140bdc186` |
-| 4 | `def` | [restrictedRootsEquiv](../../../../CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/restrictedrootsequiv.md) | 50 | `declaration-track:fa3f479ea7893891bb849c5f76cbc39082218e260a5cc40cceffd5e4453b8fae` |
-| 5 | `theorem` | [card_sub_one_div_three](../../../../CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/card-sub-one-div-three.md) | 62 | `result-track:f1ad8455718fadf675ce3ab109021fdbfd3865c0114de87d5d637b5b4c2587ae` |
-| 6 | `def` | [cubicExponent](../../../../CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/cubicexponent.md) | 71 | `declaration-track:883326e04735397ef6ecb5fdaacb83cfc9df5d254f00c00e83457f9ac7d7b33e` |
-| 7 | `theorem` | [cubicExponent_pos](../../../../CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/cubicexponent-pos.md) | 73 | `result-track:3099d78b1707f0057e9254e196554064bad6ac280a22ee2cab8521e0f302c9ad` |
-| 8 | `def` | [eulerToRoots](../../../../CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/eulertoroots.md) | 81 | `declaration-track:e89b31f81fe29ca5dcde9e5984d5f496dfadf36bfd8d9746d735452a2f315e03` |
-| 9 | `def` | [residueChar](../../../../CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/residuechar.md) | 94 | `declaration-track:f01bea056603d664e06746984d816ac7de496d37822df235b06705fb70c0d7ee` |
-| 10 | `theorem` | [residueChar_reduce_unit](../../../../CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/residuechar-reduce-unit.md) | 100 | `result-track:cffa2804a979b1f5afb2b5d85b4ec82a8a83cbe7deac80aed7124049bb008c88` |
-| 11 | `theorem` | [residueChar_pow_three](../../../../CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/residuechar-pow-three.md) | 115 | `result-track:73529fda57b0dae3a47905784313b54315cf0a0f357f89584640332f1df3b03a` |
-| 12 | `def` | [cubicChar](../../../../CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/cubicchar.md) | 127 | `declaration-track:b84a278566d4c7f84b445c5b7c94b2d6465d463552f5b1c03940c968a9d7e0af` |
-| 13 | `theorem` | [cubicChar_reduce](../../../../CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/cubicchar-reduce.md) | 135 | `result-track:8250084157d20788e49b3b83ff4ce2e77c8b96ef18c449107bda6c60cd412120` |
-| 14 | `theorem` | [cubicChar_pow_three](../../../../CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/cubicchar-pow-three.md) | 155 | `result-track:b615c032603e0dae39a4ebccbecc6ca7d8c88dafc25700f210053198d0473b9c` |
-| 15 | `theorem` | [cubicChar_ne_one](../../../../CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/cubicchar-ne-one.md) | 163 | `result-track:550defd634727da06226f9f964a7bc2d84e24bb3b785f03237467b0a39dc1d0c` |
-| 16 | `theorem` | [cubicChar_order](../../../../CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/cubicchar-order.md) | 184 | `result-track:60c37cff69ce7f7eb7b2d7647486a2f98f0ec50f4c17a76bee6ad727ce09d3cc` |
+| 1 | `instance` | [quotientFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/quotientfintype.md) | 29 | `declaration-track:d3680d19760faa8c0f3c9754b4b3ef4f4d8c685d3155b0acb7695b1866823bc3` |
+| 2 | `instance` | [quotientField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/quotientfield.md) | 32 | `declaration-track:de65028535f87b5d3f1f373d594460ec93ab5b4e3504ce7547a00fae47554df7` |
+| 3 | `theorem` | [restrictedRoots_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/restrictedroots-surjective.md) | 36 | `result-track:4c385cfd176fd3cfc1c03cc4ec6f6ffc585a5900e91877a968def4f140bdc186` |
+| 4 | `def` | [restrictedRootsEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/restrictedrootsequiv.md) | 50 | `declaration-track:fa3f479ea7893891bb849c5f76cbc39082218e260a5cc40cceffd5e4453b8fae` |
+| 5 | `theorem` | [card_sub_one_div_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/card-sub-one-div-three.md) | 62 | `result-track:f1ad8455718fadf675ce3ab109021fdbfd3865c0114de87d5d637b5b4c2587ae` |
+| 6 | `def` | [cubicExponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/cubicexponent.md) | 71 | `declaration-track:883326e04735397ef6ecb5fdaacb83cfc9df5d254f00c00e83457f9ac7d7b33e` |
+| 7 | `theorem` | [cubicExponent_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/cubicexponent-pos.md) | 73 | `result-track:3099d78b1707f0057e9254e196554064bad6ac280a22ee2cab8521e0f302c9ad` |
+| 8 | `def` | [eulerToRoots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/eulertoroots.md) | 81 | `declaration-track:e89b31f81fe29ca5dcde9e5984d5f496dfadf36bfd8d9746d735452a2f315e03` |
+| 9 | `def` | [residueChar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/residuechar.md) | 94 | `declaration-track:f01bea056603d664e06746984d816ac7de496d37822df235b06705fb70c0d7ee` |
+| 10 | `theorem` | [residueChar_reduce_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/residuechar-reduce-unit.md) | 100 | `result-track:cffa2804a979b1f5afb2b5d85b4ec82a8a83cbe7deac80aed7124049bb008c88` |
+| 11 | `theorem` | [residueChar_pow_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/residuechar-pow-three.md) | 115 | `result-track:73529fda57b0dae3a47905784313b54315cf0a0f357f89584640332f1df3b03a` |
+| 12 | `def` | [cubicChar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/cubicchar.md) | 127 | `declaration-track:b84a278566d4c7f84b445c5b7c94b2d6465d463552f5b1c03940c968a9d7e0af` |
+| 13 | `theorem` | [cubicChar_reduce](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/cubicchar-reduce.md) | 135 | `result-track:8250084157d20788e49b3b83ff4ce2e77c8b96ef18c449107bda6c60cd412120` |
+| 14 | `theorem` | [cubicChar_pow_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/cubicchar-pow-three.md) | 155 | `result-track:b615c032603e0dae39a4ebccbecc6ca7d8c88dafc25700f210053198d0473b9c` |
+| 15 | `theorem` | [cubicChar_ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/cubicchar-ne-one.md) | 163 | `result-track:550defd634727da06226f9f964a7bc2d84e24bb3b785f03237467b0a39dc1d0c` |
+| 16 | `theorem` | [cubicChar_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicCharacters.lean/declarations/cubicchar-order.md) | 184 | `result-track:60c37cff69ce7f7eb7b2d7647486a2f98f0ec50f4c17a76bee6ad727ce09d3cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

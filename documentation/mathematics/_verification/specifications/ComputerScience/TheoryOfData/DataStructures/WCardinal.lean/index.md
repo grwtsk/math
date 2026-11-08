@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/WCardinal.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/WCardinal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/WCardinal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/WCardinal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cardinalMk_eq_sum_lift](../../../../../../ComputerScience/TheoryOfData/DataStructures/WCardinal.lean/declarations/cardinalmk-eq-sum-lift.md) | 37 | `result-track:7c8f912f66892e294a98082396b1e889426b07aa43c875d144127eca91254bf9` |
-| 2 | `theorem` | [cardinalMk_le_of_le'](../../../../../../ComputerScience/TheoryOfData/DataStructures/WCardinal.lean/declarations/cardinalmk-le-of-le.md) | 44 | `result-track:0ad35bc8fafabc3f8e5dd25e7869a1cc8b5f13be2b8a3bf64e439382f90654d9` |
-| 3 | `theorem` | [cardinalMk_le_max_aleph0_of_finite'](../../../../../../ComputerScience/TheoryOfData/DataStructures/WCardinal.lean/declarations/cardinalmk-le-max-aleph0-of-finite-source-edition-2.md) | 58 | `result-track:e477c3c8b55ddc2ce2810d17c456ba48a1d6be82c16a5f4cfaf8d3372255cbfc` |
-| 4 | `theorem` | [cardinalMk_eq_sum](../../../../../../ComputerScience/TheoryOfData/DataStructures/WCardinal.lean/declarations/cardinalmk-eq-sum.md) | 91 | `result-track:920426aa37c0612dc6cb5620056c4f9fb5475f3c5495897c808f4b9ae7487ac4` |
-| 5 | `theorem` | [cardinalMk_le_of_le](../../../../../../ComputerScience/TheoryOfData/DataStructures/WCardinal.lean/declarations/cardinalmk-le-of-le-source-edition-2.md) | 97 | `result-track:ee967111436cdc2a64e17667e9c60e64f0f8a33555e44eeea2f199d778c976b3` |
-| 6 | `theorem` | [cardinalMk_le_max_aleph0_of_finite](../../../../../../ComputerScience/TheoryOfData/DataStructures/WCardinal.lean/declarations/cardinalmk-le-max-aleph0-of-finite.md) | 104 | `result-track:8c033b6b8eb873134c8bd6ac270ee55bfd3822765b15c7e45e5e9f1ef2ac9aa5` |
+| 1 | `theorem` | [cardinalMk_eq_sum_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/WCardinal.lean/declarations/cardinalmk-eq-sum-lift.md) | 37 | `result-track:7c8f912f66892e294a98082396b1e889426b07aa43c875d144127eca91254bf9` |
+| 2 | `theorem` | [cardinalMk_le_of_le'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/WCardinal.lean/declarations/cardinalmk-le-of-le.md) | 44 | `result-track:0ad35bc8fafabc3f8e5dd25e7869a1cc8b5f13be2b8a3bf64e439382f90654d9` |
+| 3 | `theorem` | [cardinalMk_le_max_aleph0_of_finite'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/WCardinal.lean/declarations/cardinalmk-le-max-aleph0-of-finite-source-edition-2.md) | 58 | `result-track:e477c3c8b55ddc2ce2810d17c456ba48a1d6be82c16a5f4cfaf8d3372255cbfc` |
+| 4 | `theorem` | [cardinalMk_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/WCardinal.lean/declarations/cardinalmk-eq-sum.md) | 91 | `result-track:920426aa37c0612dc6cb5620056c4f9fb5475f3c5495897c808f4b9ae7487ac4` |
+| 5 | `theorem` | [cardinalMk_le_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/WCardinal.lean/declarations/cardinalmk-le-of-le-source-edition-2.md) | 97 | `result-track:ee967111436cdc2a64e17667e9c60e64f0f8a33555e44eeea2f199d778c976b3` |
+| 6 | `theorem` | [cardinalMk_le_max_aleph0_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/WCardinal.lean/declarations/cardinalmk-le-max-aleph0-of-finite.md) | 104 | `result-track:8c033b6b8eb873134c8bd6ac270ee55bfd3822765b15c7e45e5e9f1ef2ac9aa5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

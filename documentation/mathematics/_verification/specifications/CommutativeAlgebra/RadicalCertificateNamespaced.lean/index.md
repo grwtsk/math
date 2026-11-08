@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RadicalCertificateNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RadicalCertificateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RadicalCertificateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RadicalCertificateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [EquationSystem.idealCombination](../../../../CommutativeAlgebra/RadicalCertificateNamespaced.lean/declarations/equationsystem-idealcombination.md) | 32 | `declaration-track:3df9a4fb0505ddb6fe5b1c7bae0e406b1fcd1035d3c8181640adaf6cf3d8a6fd` |
-| 2 | `structure` | [RadicalCertificate](../../../../CommutativeAlgebra/RadicalCertificateNamespaced.lean/declarations/radicalcertificate.md) | 44 | `declaration-track:a2b94fcf052acecfab9026554bf721e3121b941acf0490c8baf3eba96ae3d281` |
-| 3 | `theorem` | [EquationSystem.eval_idealCombination_eq_zero](../../../../CommutativeAlgebra/RadicalCertificateNamespaced.lean/declarations/equationsystem-eval-idealcombination-eq-zero.md) | 56 | `result-track:88d709b58256b0efb30af68afd8ff70241cc37f951a49d5f5102cf7c61970be4` |
-| 4 | `theorem` | [RadicalCertificate.vanishesOn](../../../../CommutativeAlgebra/RadicalCertificateNamespaced.lean/declarations/radicalcertificate-vanisheson.md) | 79 | `result-track:26e3bc8129a6608e66979e8685ba3a29b7014dabb2a0091aab140ccbd90c2d39` |
-| 5 | `theorem` | [RadicalCertificate.geometricConsequence](../../../../CommutativeAlgebra/RadicalCertificateNamespaced.lean/declarations/radicalcertificate-geometricconsequence.md) | 92 | `result-track:a6554b070e5af4959661cfabf25f7c132f9b5558723a94641b869d8e47afaf6e` |
+| 1 | `def` | [EquationSystem.idealCombination](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RadicalCertificateNamespaced.lean/declarations/equationsystem-idealcombination.md) | 32 | `declaration-track:3df9a4fb0505ddb6fe5b1c7bae0e406b1fcd1035d3c8181640adaf6cf3d8a6fd` |
+| 2 | `structure` | [RadicalCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RadicalCertificateNamespaced.lean/declarations/radicalcertificate.md) | 44 | `declaration-track:a2b94fcf052acecfab9026554bf721e3121b941acf0490c8baf3eba96ae3d281` |
+| 3 | `theorem` | [EquationSystem.eval_idealCombination_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RadicalCertificateNamespaced.lean/declarations/equationsystem-eval-idealcombination-eq-zero.md) | 56 | `result-track:88d709b58256b0efb30af68afd8ff70241cc37f951a49d5f5102cf7c61970be4` |
+| 4 | `theorem` | [RadicalCertificate.vanishesOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RadicalCertificateNamespaced.lean/declarations/radicalcertificate-vanisheson.md) | 79 | `result-track:26e3bc8129a6608e66979e8685ba3a29b7014dabb2a0091aab140ccbd90c2d39` |
+| 5 | `theorem` | [RadicalCertificate.geometricConsequence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RadicalCertificateNamespaced.lean/declarations/radicalcertificate-geometricconsequence.md) | 92 | `result-track:a6554b070e5af4959661cfabf25f7c132f9b5558723a94641b869d8e47afaf6e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

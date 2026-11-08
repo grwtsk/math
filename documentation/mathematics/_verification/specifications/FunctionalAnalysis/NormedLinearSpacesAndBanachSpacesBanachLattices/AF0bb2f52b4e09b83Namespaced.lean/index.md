@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AF0bb2f52b4e09b83Namespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AF0bb2f52b4e09b83Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AF0bb2f52b4e09b83Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AF0bb2f52b4e09b83Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,7 +61,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [flipBitField](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AF0bb2f52b4e09b83Namespaced.lean/declarations/flipbitfield.md) | 27 | `declaration-track:6e3e008e273a667f2478ac4fd79e35d9bdbdabb1bc40fc31b5f472e1018645c0` |
+| 1 | `def` | [flipBitField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AF0bb2f52b4e09b83Namespaced.lean/declarations/flipbitfield.md) | 27 | `declaration-track:6e3e008e273a667f2478ac4fd79e35d9bdbdabb1bc40fc31b5f472e1018645c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

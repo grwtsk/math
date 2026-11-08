@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/HindmanAligned.lean/index.md) · [Full source](../../../../Combinatorics/HindmanAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HindmanAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HindmanAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,22 +59,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Ultrafilter.mul](../../../../Combinatorics/HindmanAligned.lean/declarations/ultrafilter-mul.md) | 51 | `declaration-track:5b76228eefc34ed8c9bee912c2587ab65213ebcb820abe0e6ecc6536b4702107` |
-| 2 | `theorem` | [Ultrafilter.eventually_mul](../../../../Combinatorics/HindmanAligned.lean/declarations/ultrafilter-eventually-mul.md) | 60 | `result-track:92def3968f642bc03323df157362f1c7bf92613ce2a73e161cadf7cfeb566956` |
-| 3 | `structure` | [on](../../../../Combinatorics/HindmanAligned.lean/declarations/on.md) | 69 | `declaration-track:b215f558237258dc95b2a18bd171536eac42df43adaff0b6bfc4f9b5b387d0ea` |
-| 4 | `def` | [Ultrafilter.semigroup](../../../../Combinatorics/HindmanAligned.lean/declarations/ultrafilter-semigroup.md) | 70 | `declaration-track:5b7ce4bdb27c40ed772c88b785f8127d56da90f89d99aaf0cbbf360c9b4247eb` |
-| 5 | `theorem` | [Ultrafilter.continuous_mul_left](../../../../Combinatorics/HindmanAligned.lean/declarations/ultrafilter-continuous-mul-left.md) | 83 | `result-track:4f339cf6b820dae49e44e73e40ab2fd1daa79049f8ddc9d8dd7cfc5fda71b840` |
-| 6 | `inductive` | [FS](../../../../Combinatorics/HindmanAligned.lean/declarations/fs.md) | 97 | `declaration-track:fab6f30f8666f41761cc0c4cd9b480fbea3844c125eb1cd7ea372ece4c0e6036` |
-| 7 | `inductive` | [FP](../../../../Combinatorics/HindmanAligned.lean/declarations/fp.md) | 107 | `declaration-track:e8d9b481904c51bd1b2857d7b507e8b25ce6b831569579a7d9e119db774488e5` |
-| 8 | `theorem` | [FP.mul](../../../../Combinatorics/HindmanAligned.lean/declarations/fp-mul.md) | 119 | `result-track:9bcde648cb6e7a74d312d04005a8e88bc4f5c833e8ead2a11c1b9859cdf9ade5` |
-| 9 | `theorem` | [exists_idempotent_ultrafilter_le_FP](../../../../Combinatorics/HindmanAligned.lean/declarations/exists-idempotent-ultrafilter-le-fp.md) | 138 | `result-track:7da3b1e279fc9a426d3a107189c40a05ca349edc4ec82acbe91d1041d7ff987c` |
-| 10 | `theorem` | [exists_FP_of_large](../../../../Combinatorics/HindmanAligned.lean/declarations/exists-fp-of-large.md) | 174 | `result-track:4080a756f019b0c277db54aeb6817ade945fab33fb3255fdc646ece4239fef91` |
-| 11 | `theorem` | [FP_partition_regular](../../../../Combinatorics/HindmanAligned.lean/declarations/fp-partition-regular.md) | 217 | `result-track:d421f7b971925e96e07d554d6cd611a47171f463e7c588249e1c4f1a4e8cdb2d` |
-| 12 | `theorem` | [exists_FP_of_finite_cover](../../../../Combinatorics/HindmanAligned.lean/declarations/exists-fp-of-finite-cover.md) | 232 | `result-track:8d65eb2c3cde87f181cf1dc3a7752457d8e36414bab19551288bec05fc980df0` |
-| 13 | `theorem` | [FP_drop_subset_FP](../../../../Combinatorics/HindmanAligned.lean/declarations/fp-drop-subset-fp.md) | 244 | `result-track:ab35223e052a46bdc606edaccb8926adf8422b2b3825092cd8c03e876d893726` |
-| 14 | `theorem` | [FP.singleton](../../../../Combinatorics/HindmanAligned.lean/declarations/fp-singleton.md) | 255 | `result-track:322cbc41005c2835ffcb0d74aa13f0b6f585fdfb77ab24d2bd4f97ca778641e4` |
-| 15 | `theorem` | [FP.mul_two](../../../../Combinatorics/HindmanAligned.lean/declarations/fp-mul-two.md) | 266 | `result-track:83dc9ea251f88d67a5894992f0890ff3cc72ce7d9f6186c275dfac5b18223156` |
-| 16 | `theorem` | [FP.finset_prod](../../../../Combinatorics/HindmanAligned.lean/declarations/fp-finset-prod.md) | 284 | `result-track:9232aa12013243d62ad0642e7cfb52a1fb84eb052c80d9bcfe3feb84522e0c31` |
+| 1 | `def` | [Ultrafilter.mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HindmanAligned.lean/declarations/ultrafilter-mul.md) | 51 | `declaration-track:5b76228eefc34ed8c9bee912c2587ab65213ebcb820abe0e6ecc6536b4702107` |
+| 2 | `theorem` | [Ultrafilter.eventually_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HindmanAligned.lean/declarations/ultrafilter-eventually-mul.md) | 60 | `result-track:92def3968f642bc03323df157362f1c7bf92613ce2a73e161cadf7cfeb566956` |
+| 3 | `structure` | [on](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HindmanAligned.lean/declarations/on.md) | 69 | `declaration-track:b215f558237258dc95b2a18bd171536eac42df43adaff0b6bfc4f9b5b387d0ea` |
+| 4 | `def` | [Ultrafilter.semigroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HindmanAligned.lean/declarations/ultrafilter-semigroup.md) | 70 | `declaration-track:5b7ce4bdb27c40ed772c88b785f8127d56da90f89d99aaf0cbbf360c9b4247eb` |
+| 5 | `theorem` | [Ultrafilter.continuous_mul_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HindmanAligned.lean/declarations/ultrafilter-continuous-mul-left.md) | 83 | `result-track:4f339cf6b820dae49e44e73e40ab2fd1daa79049f8ddc9d8dd7cfc5fda71b840` |
+| 6 | `inductive` | [FS](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HindmanAligned.lean/declarations/fs.md) | 97 | `declaration-track:fab6f30f8666f41761cc0c4cd9b480fbea3844c125eb1cd7ea372ece4c0e6036` |
+| 7 | `inductive` | [FP](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HindmanAligned.lean/declarations/fp.md) | 107 | `declaration-track:e8d9b481904c51bd1b2857d7b507e8b25ce6b831569579a7d9e119db774488e5` |
+| 8 | `theorem` | [FP.mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HindmanAligned.lean/declarations/fp-mul.md) | 119 | `result-track:9bcde648cb6e7a74d312d04005a8e88bc4f5c833e8ead2a11c1b9859cdf9ade5` |
+| 9 | `theorem` | [exists_idempotent_ultrafilter_le_FP](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HindmanAligned.lean/declarations/exists-idempotent-ultrafilter-le-fp.md) | 138 | `result-track:7da3b1e279fc9a426d3a107189c40a05ca349edc4ec82acbe91d1041d7ff987c` |
+| 10 | `theorem` | [exists_FP_of_large](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HindmanAligned.lean/declarations/exists-fp-of-large.md) | 174 | `result-track:4080a756f019b0c277db54aeb6817ade945fab33fb3255fdc646ece4239fef91` |
+| 11 | `theorem` | [FP_partition_regular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HindmanAligned.lean/declarations/fp-partition-regular.md) | 217 | `result-track:d421f7b971925e96e07d554d6cd611a47171f463e7c588249e1c4f1a4e8cdb2d` |
+| 12 | `theorem` | [exists_FP_of_finite_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HindmanAligned.lean/declarations/exists-fp-of-finite-cover.md) | 232 | `result-track:8d65eb2c3cde87f181cf1dc3a7752457d8e36414bab19551288bec05fc980df0` |
+| 13 | `theorem` | [FP_drop_subset_FP](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HindmanAligned.lean/declarations/fp-drop-subset-fp.md) | 244 | `result-track:ab35223e052a46bdc606edaccb8926adf8422b2b3825092cd8c03e876d893726` |
+| 14 | `theorem` | [FP.singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HindmanAligned.lean/declarations/fp-singleton.md) | 255 | `result-track:322cbc41005c2835ffcb0d74aa13f0b6f585fdfb77ab24d2bd4f97ca778641e4` |
+| 15 | `theorem` | [FP.mul_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HindmanAligned.lean/declarations/fp-mul-two.md) | 266 | `result-track:83dc9ea251f88d67a5894992f0890ff3cc72ce7d9f6186c275dfac5b18223156` |
+| 16 | `theorem` | [FP.finset_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HindmanAligned.lean/declarations/fp-finset-prod.md) | 284 | `result-track:9232aa12013243d62ad0642e7cfb52a1fb84eb052c80d9bcfe3feb84522e0c31` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototype.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototype.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototype.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototype.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [function_field_zeros_realized_by_frobenius](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototype.lean/declarations/function-field-zeros-realized-by-frobenius.md) | 19 | `result-track:4f31f28a38361f70e249cee01037d458ea69c452d8922648d92aabb2a6019c1f` |
-| 2 | `theorem` | [function_field_trace_identity_holds](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototype.lean/declarations/function-field-trace-identity-holds.md) | 25 | `result-track:cb313e130741c559aab9f02faecfe72feb9d465265965c619524546ccf9a4fd0` |
-| 3 | `theorem` | [function_field_alignment_conclusion](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototype.lean/declarations/function-field-alignment-conclusion.md) | 31 | `result-track:73186be37b09040916ff94a4e28f41cf0c0ae2ab9333013caa5c7774cb9d27e1` |
+| 1 | `theorem` | [function_field_zeros_realized_by_frobenius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototype.lean/declarations/function-field-zeros-realized-by-frobenius.md) | 19 | `result-track:4f31f28a38361f70e249cee01037d458ea69c452d8922648d92aabb2a6019c1f` |
+| 2 | `theorem` | [function_field_trace_identity_holds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototype.lean/declarations/function-field-trace-identity-holds.md) | 25 | `result-track:cb313e130741c559aab9f02faecfe72feb9d465265965c619524546ccf9a4fd0` |
+| 3 | `theorem` | [function_field_alignment_conclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototype.lean/declarations/function-field-alignment-conclusion.md) | 31 | `result-track:73186be37b09040916ff94a4e28f41cf0c0ae2ab9333013caa5c7774cb9d27e1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

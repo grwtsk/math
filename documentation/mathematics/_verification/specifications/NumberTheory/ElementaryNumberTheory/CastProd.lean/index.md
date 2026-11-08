@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/CastProd.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/CastProd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastProd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastProd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instAddMonoidWithOne](../../../../../NumberTheory/ElementaryNumberTheory/CastProd.lean/declarations/instaddmonoidwithone.md) | 20 | `declaration-track:1cc7a1bd58741bd07d14505e27d3e7f02fffc51a7997c90e1437fd24aed2c5fb` |
-| 2 | `theorem` | [fst_natCast](../../../../../NumberTheory/ElementaryNumberTheory/CastProd.lean/declarations/fst-natcast.md) | 27 | `result-track:d091c7216e4134cb53df00fb195d45cff4c550d29d6d950e37cfc2710819aaa1` |
-| 3 | `theorem` | [fst_ofNat](../../../../../NumberTheory/ElementaryNumberTheory/CastProd.lean/declarations/fst-ofnat.md) | 30 | `result-track:5fc6d9be0236bbfbffd49c3ab9c2690a71ae61fc7bf303c58dd33d6111cb09cd` |
-| 4 | `theorem` | [snd_natCast](../../../../../NumberTheory/ElementaryNumberTheory/CastProd.lean/declarations/snd-natcast.md) | 35 | `result-track:ca352db2d10df78975605606c4d7611ed63589250876bec1c28919f47c57b56b` |
-| 5 | `theorem` | [snd_ofNat](../../../../../NumberTheory/ElementaryNumberTheory/CastProd.lean/declarations/snd-ofnat.md) | 38 | `result-track:0df454bd3bd8f5b8733d8e7207c1dff44463574cff082e41b94088ca7eca4616` |
+| 1 | `instance` | [instAddMonoidWithOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastProd.lean/declarations/instaddmonoidwithone.md) | 20 | `declaration-track:1cc7a1bd58741bd07d14505e27d3e7f02fffc51a7997c90e1437fd24aed2c5fb` |
+| 2 | `theorem` | [fst_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastProd.lean/declarations/fst-natcast.md) | 27 | `result-track:d091c7216e4134cb53df00fb195d45cff4c550d29d6d950e37cfc2710819aaa1` |
+| 3 | `theorem` | [fst_ofNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastProd.lean/declarations/fst-ofnat.md) | 30 | `result-track:5fc6d9be0236bbfbffd49c3ab9c2690a71ae61fc7bf303c58dd33d6111cb09cd` |
+| 4 | `theorem` | [snd_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastProd.lean/declarations/snd-natcast.md) | 35 | `result-track:ca352db2d10df78975605606c4d7611ed63589250876bec1c28919f47c57b56b` |
+| 5 | `theorem` | [snd_ofNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastProd.lean/declarations/snd-ofnat.md) | 38 | `result-track:0df454bd3bd8f5b8733d8e7207c1dff44463574cff082e41b94088ca7eca4616` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [FundamentalSequenceId](../../../../../MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/fundamentalsequenceid.md) | 14 | `declaration-track:b377d67be160192c4d83f34569efafea4853a76f9bfd192a9b341d6f769856ae` |
-| 2 | `inductive` | [RawCode](../../../../../MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/rawcode.md) | 16 | `declaration-track:8f96e57cea217c7c27c4c559e4eca41878f5138d55e471cda8f6234413e6dec8` |
-| 3 | `inductive` | [ExecutableOrdinalTally](../../../../../MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/executableordinaltally.md) | 26 | `declaration-track:d7927f249d7db6a9f48405344ae75dcc9fc4e733beb29d7598f6c5f8b7c01fca` |
-| 4 | `def` | [empty](../../../../../MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/empty.md) | 36 | `declaration-track:c2437e12170d2c75864734c43a69d9f757e0f3246bbd61c527e4770d9f3ee931` |
-| 5 | `def` | [appendTall](../../../../../MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/appendtall.md) | 39 | `declaration-track:d7efb396fd960c4ac4f64229d61084a8c7230cacab2f68bbff92b3955b6e669d` |
-| 6 | `def` | [derivedSuccessor](../../../../../MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/derivedsuccessor.md) | 43 | `declaration-track:e987f60113729691afa043e3cedb814bb74b5ddb2dcb073c7461f167dcbd1f29` |
-| 7 | `def` | [constructorName](../../../../../MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/constructorname-source-edition-2.md) | 47 | `declaration-track:e48aae9f6725e178e5a7631714cbae7d7460b5e19a951f2418aa23d4a050519b` |
-| 8 | `def` | [tall](../../../../../MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/tall.md) | 58 | `declaration-track:2bece0cfb3f5bcd5aa889bef5a050176eb47c0ab27066d299c286f40132657ed` |
-| 9 | `def` | [reify](../../../../../MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/reify.md) | 64 | `declaration-track:fcba2fe18d3f860ccf51a8e440474a27fc327fb406e7666825612eed43498774` |
-| 10 | `def` | [constructorName](../../../../../MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/constructorname.md) | 71 | `declaration-track:89f10f87ae802acfdba9f0a6b1206a55dd62d1e06c50a8f618b65aa3b44d61ab` |
-| 11 | `theorem` | [RawCode.appendTall_eq](../../../../../MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/rawcode-appendtall-eq.md) | 78 | `result-track:325cb21978b6bb3d5515865542180807cb6d1c76ffe8c048e8333c2770fd5e7f` |
-| 12 | `theorem` | [ExecutableOrdinalTally.reify_tall](../../../../../MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/executableordinaltally-reify-tall.md) | 84 | `result-track:cf4149ec94901687abdbd01829410d91fc5d65345aa8ee2e5efabd2518275726` |
+| 1 | `abbrev` | [FundamentalSequenceId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/fundamentalsequenceid.md) | 14 | `declaration-track:b377d67be160192c4d83f34569efafea4853a76f9bfd192a9b341d6f769856ae` |
+| 2 | `inductive` | [RawCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/rawcode.md) | 16 | `declaration-track:8f96e57cea217c7c27c4c559e4eca41878f5138d55e471cda8f6234413e6dec8` |
+| 3 | `inductive` | [ExecutableOrdinalTally](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/executableordinaltally.md) | 26 | `declaration-track:d7927f249d7db6a9f48405344ae75dcc9fc4e733beb29d7598f6c5f8b7c01fca` |
+| 4 | `def` | [empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/empty.md) | 36 | `declaration-track:c2437e12170d2c75864734c43a69d9f757e0f3246bbd61c527e4770d9f3ee931` |
+| 5 | `def` | [appendTall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/appendtall.md) | 39 | `declaration-track:d7efb396fd960c4ac4f64229d61084a8c7230cacab2f68bbff92b3955b6e669d` |
+| 6 | `def` | [derivedSuccessor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/derivedsuccessor.md) | 43 | `declaration-track:e987f60113729691afa043e3cedb814bb74b5ddb2dcb073c7461f167dcbd1f29` |
+| 7 | `def` | [constructorName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/constructorname-source-edition-2.md) | 47 | `declaration-track:e48aae9f6725e178e5a7631714cbae7d7460b5e19a951f2418aa23d4a050519b` |
+| 8 | `def` | [tall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/tall.md) | 58 | `declaration-track:2bece0cfb3f5bcd5aa889bef5a050176eb47c0ab27066d299c286f40132657ed` |
+| 9 | `def` | [reify](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/reify.md) | 64 | `declaration-track:fcba2fe18d3f860ccf51a8e440474a27fc327fb406e7666825612eed43498774` |
+| 10 | `def` | [constructorName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/constructorname.md) | 71 | `declaration-track:89f10f87ae802acfdba9f0a6b1206a55dd62d1e06c50a8f618b65aa3b44d61ab` |
+| 11 | `theorem` | [RawCode.appendTall_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/rawcode-appendtall-eq.md) | 78 | `result-track:325cb21978b6bb3d5515865542180807cb6d1c76ffe8c048e8333c2770fd5e7f` |
+| 12 | `theorem` | [ExecutableOrdinalTally.reify_tall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/SyntaxRawCode.lean/declarations/executableordinaltally-reify-tall.md) | 84 | `result-track:cf4149ec94901687abdbd01829410d91fc5d65345aa8ee2e5efabd2518275726` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/StarPublic.lean/index.md) · [Full source](../../../../Geometry/StarPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,24 +57,24 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsStarConvexSet](../../../../Geometry/StarPublic.lean/declarations/isstarconvexset.md) | 49 | `declaration-track:870735efbd174199feeca9bc05bd54209721770df90304a0afebd754834f6a53` |
-| 2 | `lemma` | [IsStarConvexSet.empty](../../../../Geometry/StarPublic.lean/declarations/isstarconvexset-empty.md) | 52 | `result-track:97348f3a172c9aafd77f97f9ec472343fb40b9bc8ce81c7e7d37757418d3107f` |
-| 3 | `lemma` | [IsStarConvexSet.univ](../../../../Geometry/StarPublic.lean/declarations/isstarconvexset-univ.md) | 55 | `result-track:b88b5887cfc3867f14cc33c551a438d70e0227484a572141d846b44d4d095d0a` |
-| 4 | `lemma` | [IsStarConvexSet.singleton](../../../../Geometry/StarPublic.lean/declarations/isstarconvexset-singleton.md) | 57 | `result-track:1edf5f41653ff0667453789c2d26f51d408666f2f1d09b95c2d25405dc4f66bb` |
-| 5 | `lemma` | [IsStarConvexSet.inter](../../../../Geometry/StarPublic.lean/declarations/isstarconvexset-inter.md) | 61 | `result-track:873f327f3f4ec95a3eb419eb378902d340ac8779f22e147bfd9a0f1e585fe2b3` |
-| 6 | `lemma` | [IsStarConvexSet.union](../../../../Geometry/StarPublic.lean/declarations/isstarconvexset-union.md) | 65 | `result-track:d96490394806bf71bcbf14cc3a43918c43c705f5daab3fff0d03d8c634373fbc` |
-| 7 | `lemma` | [IsStarConvexSet.sInter](../../../../Geometry/StarPublic.lean/declarations/isstarconvexset-sinter.md) | 69 | `result-track:1355c53e72476283ef25ec2ad6cf1831c27619c89780576e07eb5e87d09372a9` |
-| 8 | `lemma` | [IsStarConvexSet.iInter](../../../../Geometry/StarPublic.lean/declarations/isstarconvexset-iinter-source-edition-2.md) | 73 | `result-track:b12f6edeb905d17dea67f83bb5ad081c2188a601aa3cfaa467535327b681fe5f` |
-| 9 | `lemma` | [IsStarConvexSet.iInter₂](../../../../Geometry/StarPublic.lean/declarations/isstarconvexset-iinter.md) | 76 | `result-track:7a4bdbdbbf091ef7c13ef9ac672940657802fba3767c3205de484a60a2a7c7f1` |
-| 10 | `lemma` | [IsStarConvexSet.sUnion](../../../../Geometry/StarPublic.lean/declarations/isstarconvexset-sunion.md) | 80 | `result-track:7b8d820d18c533191559490762112cb99b038970194d3c0823a62d1ce63edbd6` |
-| 11 | `lemma` | [IsStarConvexSet.iUnion](../../../../Geometry/StarPublic.lean/declarations/isstarconvexset-iunion.md) | 85 | `result-track:cdc74f4833f7ecc5eeea114fb15c1091d227edc726112a3f8cb73b637c680846` |
-| 12 | `lemma` | [IsStarConvexSet.iUnion₂](../../../../Geometry/StarPublic.lean/declarations/isstarconvexset-iunion-source-edition-2.md) | 88 | `result-track:fcfa73aa8f8e1862fc724dec6625a53db60ba8bb6d2de86e655ef28e5b15427f` |
-| 13 | `lemma` | [IsConvexSet.isStarConvexSet](../../../../Geometry/StarPublic.lean/declarations/isconvexset-isstarconvexset.md) | 92 | `result-track:c62fb03abaaa692c979460dd67037f2f57847ae86f272ad2cb36eaf98f9330ef` |
-| 14 | `lemma` | [IsStarConvexSet.mem](../../../../Geometry/StarPublic.lean/declarations/isstarconvexset-mem.md) | 95 | `result-track:a910302a1ba223308ed9e0b4953791e4db220e6afadbc4c9196c1b2ba008ad35` |
-| 15 | `lemma` | [IsStarConvexSet.preimage](../../../../Geometry/StarPublic.lean/declarations/isstarconvexset-preimage.md) | 99 | `result-track:6ea362fd0c25d65c02764f2a89aa062020a76a45fbdf140ece9d3e459eaaf172` |
-| 16 | `lemma` | [IsStarConvexSet.image](../../../../Geometry/StarPublic.lean/declarations/isstarconvexset-image.md) | 104 | `result-track:dbda272479cb70c5e294b209fb6a8f95a640bed7dc3ecc5339910fa61a2e3084` |
-| 17 | `lemma` | [IsStarConvexSet.prod](../../../../Geometry/StarPublic.lean/declarations/isstarconvexset-prod.md) | 109 | `result-track:cc28b0c2b924c6d168437766be0ff15d4b430854f2833fc71719c6660908303a` |
-| 18 | `lemma` | [IsStarConvexSet.pi](../../../../Geometry/StarPublic.lean/declarations/isstarconvexset-pi.md) | 114 | `result-track:272e33adc4741a7648aa708699f866dbe52c6242902bca4a11988c1c5e2f33ec` |
+| 1 | `def` | [IsStarConvexSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/declarations/isstarconvexset.md) | 49 | `declaration-track:870735efbd174199feeca9bc05bd54209721770df90304a0afebd754834f6a53` |
+| 2 | `lemma` | [IsStarConvexSet.empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/declarations/isstarconvexset-empty.md) | 52 | `result-track:97348f3a172c9aafd77f97f9ec472343fb40b9bc8ce81c7e7d37757418d3107f` |
+| 3 | `lemma` | [IsStarConvexSet.univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/declarations/isstarconvexset-univ.md) | 55 | `result-track:b88b5887cfc3867f14cc33c551a438d70e0227484a572141d846b44d4d095d0a` |
+| 4 | `lemma` | [IsStarConvexSet.singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/declarations/isstarconvexset-singleton.md) | 57 | `result-track:1edf5f41653ff0667453789c2d26f51d408666f2f1d09b95c2d25405dc4f66bb` |
+| 5 | `lemma` | [IsStarConvexSet.inter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/declarations/isstarconvexset-inter.md) | 61 | `result-track:873f327f3f4ec95a3eb419eb378902d340ac8779f22e147bfd9a0f1e585fe2b3` |
+| 6 | `lemma` | [IsStarConvexSet.union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/declarations/isstarconvexset-union.md) | 65 | `result-track:d96490394806bf71bcbf14cc3a43918c43c705f5daab3fff0d03d8c634373fbc` |
+| 7 | `lemma` | [IsStarConvexSet.sInter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/declarations/isstarconvexset-sinter.md) | 69 | `result-track:1355c53e72476283ef25ec2ad6cf1831c27619c89780576e07eb5e87d09372a9` |
+| 8 | `lemma` | [IsStarConvexSet.iInter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/declarations/isstarconvexset-iinter-source-edition-2.md) | 73 | `result-track:b12f6edeb905d17dea67f83bb5ad081c2188a601aa3cfaa467535327b681fe5f` |
+| 9 | `lemma` | [IsStarConvexSet.iInter₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/declarations/isstarconvexset-iinter.md) | 76 | `result-track:7a4bdbdbbf091ef7c13ef9ac672940657802fba3767c3205de484a60a2a7c7f1` |
+| 10 | `lemma` | [IsStarConvexSet.sUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/declarations/isstarconvexset-sunion.md) | 80 | `result-track:7b8d820d18c533191559490762112cb99b038970194d3c0823a62d1ce63edbd6` |
+| 11 | `lemma` | [IsStarConvexSet.iUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/declarations/isstarconvexset-iunion.md) | 85 | `result-track:cdc74f4833f7ecc5eeea114fb15c1091d227edc726112a3f8cb73b637c680846` |
+| 12 | `lemma` | [IsStarConvexSet.iUnion₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/declarations/isstarconvexset-iunion-source-edition-2.md) | 88 | `result-track:fcfa73aa8f8e1862fc724dec6625a53db60ba8bb6d2de86e655ef28e5b15427f` |
+| 13 | `lemma` | [IsConvexSet.isStarConvexSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/declarations/isconvexset-isstarconvexset.md) | 92 | `result-track:c62fb03abaaa692c979460dd67037f2f57847ae86f272ad2cb36eaf98f9330ef` |
+| 14 | `lemma` | [IsStarConvexSet.mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/declarations/isstarconvexset-mem.md) | 95 | `result-track:a910302a1ba223308ed9e0b4953791e4db220e6afadbc4c9196c1b2ba008ad35` |
+| 15 | `lemma` | [IsStarConvexSet.preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/declarations/isstarconvexset-preimage.md) | 99 | `result-track:6ea362fd0c25d65c02764f2a89aa062020a76a45fbdf140ece9d3e459eaaf172` |
+| 16 | `lemma` | [IsStarConvexSet.image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/declarations/isstarconvexset-image.md) | 104 | `result-track:dbda272479cb70c5e294b209fb6a8f95a640bed7dc3ecc5339910fa61a2e3084` |
+| 17 | `lemma` | [IsStarConvexSet.prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/declarations/isstarconvexset-prod.md) | 109 | `result-track:cc28b0c2b924c6d168437766be0ff15d4b430854f2833fc71719c6660908303a` |
+| 18 | `lemma` | [IsStarConvexSet.pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/StarPublic.lean/declarations/isstarconvexset-pi.md) | 114 | `result-track:272e33adc4741a7648aa708699f866dbe52c6242902bca4a11988c1c5e2f33ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

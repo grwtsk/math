@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MoebiusFiniteEulerProduct.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MoebiusFiniteEulerProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoebiusFiniteEulerProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoebiusFiniteEulerProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prime_subset_weight](../../../../CommutativeAlgebra/MoebiusFiniteEulerProduct.lean/declarations/prime-subset-weight.md) | 26 | `result-track:9d02351498e209f1959c8ab569adb5d6adf2f4232fa410a96dec54d4f246ca52` |
-| 2 | `theorem` | [born_prime_subset_sum](../../../../CommutativeAlgebra/MoebiusFiniteEulerProduct.lean/declarations/born-prime-subset-sum.md) | 43 | `result-track:f0e7e2960ef4f163b4b6e2dc06a0d510f442fa0aaba57236d4e9e26f3ec031c4` |
-| 3 | `theorem` | [finite_euler_product_cutoff](../../../../CommutativeAlgebra/MoebiusFiniteEulerProduct.lean/declarations/finite-euler-product-cutoff.md) | 82 | `result-track:09e55421d694a9fe824bb962d9b8b62f6e012a6e5b9c592c94cc55bd620fed75` |
-| 4 | `theorem` | [finite_euler_product_cutoff_zero](../../../../CommutativeAlgebra/MoebiusFiniteEulerProduct.lean/declarations/finite-euler-product-cutoff-zero.md) | 106 | `result-track:b3e142ef845686f98422fc9be13091424f06d88193d279fc65c4720fb00ee226` |
+| 1 | `theorem` | [prime_subset_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoebiusFiniteEulerProduct.lean/declarations/prime-subset-weight.md) | 26 | `result-track:9d02351498e209f1959c8ab569adb5d6adf2f4232fa410a96dec54d4f246ca52` |
+| 2 | `theorem` | [born_prime_subset_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoebiusFiniteEulerProduct.lean/declarations/born-prime-subset-sum.md) | 43 | `result-track:f0e7e2960ef4f163b4b6e2dc06a0d510f442fa0aaba57236d4e9e26f3ec031c4` |
+| 3 | `theorem` | [finite_euler_product_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoebiusFiniteEulerProduct.lean/declarations/finite-euler-product-cutoff.md) | 82 | `result-track:09e55421d694a9fe824bb962d9b8b62f6e012a6e5b9c592c94cc55bd620fed75` |
+| 4 | `theorem` | [finite_euler_product_cutoff_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoebiusFiniteEulerProduct.lean/declarations/finite-euler-product-cutoff-zero.md) | 106 | `result-track:b3e142ef845686f98422fc9be13091424f06d88193d279fc65c4720fb00ee226` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

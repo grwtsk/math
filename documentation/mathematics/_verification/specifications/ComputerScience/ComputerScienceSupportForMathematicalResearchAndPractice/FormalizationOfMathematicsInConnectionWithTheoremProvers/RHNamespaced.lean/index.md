@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RHNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RHNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RHNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RHNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rh_pivot_atlas_if_supplied](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RHNamespaced.lean/declarations/rh-pivot-atlas-if-supplied.md) | 27 | `result-track:f26b4f703f22875d68efe9077f88546e2cb15f2fdf85fe0b01e5e92c5357fe45` |
-| 2 | `theorem` | [rh_fixed_point_transcendency_if_supplied](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RHNamespaced.lean/declarations/rh-fixed-point-transcendency-if-supplied.md) | 32 | `result-track:6c1bdd64de77ad224b59c47bde6cdd1d039d31723db79dbe6bc192b400defa74` |
-| 3 | `theorem` | [rh_spectral_boundary_criterion_if_supplied](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RHNamespaced.lean/declarations/rh-spectral-boundary-criterion-if-supplied.md) | 37 | `result-track:af4a224dd495ff49ec6422194da8fef2c6400012629602aa83349d29ff52bf20` |
+| 1 | `theorem` | [rh_pivot_atlas_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RHNamespaced.lean/declarations/rh-pivot-atlas-if-supplied.md) | 27 | `result-track:f26b4f703f22875d68efe9077f88546e2cb15f2fdf85fe0b01e5e92c5357fe45` |
+| 2 | `theorem` | [rh_fixed_point_transcendency_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RHNamespaced.lean/declarations/rh-fixed-point-transcendency-if-supplied.md) | 32 | `result-track:6c1bdd64de77ad224b59c47bde6cdd1d039d31723db79dbe6bc192b400defa74` |
+| 3 | `theorem` | [rh_spectral_boundary_criterion_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RHNamespaced.lean/declarations/rh-spectral-boundary-criterion-if-supplied.md) | 37 | `result-track:af4a224dd495ff49ec6422194da8fef2c6400012629602aa83349d29ff52bf20` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

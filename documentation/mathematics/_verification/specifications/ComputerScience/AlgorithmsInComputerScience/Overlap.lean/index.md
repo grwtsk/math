@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Overlap.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Overlap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Overlap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Overlap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MetadataComparison](../../../../../ComputerScience/AlgorithmsInComputerScience/Overlap.lean/declarations/metadatacomparison.md) | 7 | `declaration-track:3ca760e602bc229a744149328b8e7f38109fcd159346e209525683397bc2a56e` |
-| 2 | `structure` | [SomeMetadataComparison](../../../../../ComputerScience/AlgorithmsInComputerScience/Overlap.lean/declarations/somemetadatacomparison.md) | 14 | `declaration-track:b4169cc96cf0d46e29a80ae8f4da89e9af241f08ffe15ceeee404e6c272852ae` |
-| 3 | `structure` | [OverlapAggregationRule](../../../../../ComputerScience/AlgorithmsInComputerScience/Overlap.lean/declarations/overlapaggregationrule.md) | 18 | `declaration-track:a923195676b3c3253d7fc4fbb868c0bc3908bc8c1ff2530a71059a63a99e684e` |
-| 4 | `structure` | [TypedOverlap](../../../../../ComputerScience/AlgorithmsInComputerScience/Overlap.lean/declarations/typedoverlap.md) | 22 | `declaration-track:8d87662aa1d229f11b637140d1211ad058ef0f555e3df22b821345da1692c6be` |
-| 5 | `def` | [TypedOverlap.impliesSemanticIdentity](../../../../../ComputerScience/AlgorithmsInComputerScience/Overlap.lean/declarations/typedoverlap-impliessemanticidentity.md) | 33 | `declaration-track:7b5bfcacf1b08d4054ed33cdc6e5ee699df0f8732efea97e03237e0e4a0adbe0` |
-| 6 | `theorem` | [overlap_does_not_imply_semantic_identity](../../../../../ComputerScience/AlgorithmsInComputerScience/Overlap.lean/declarations/overlap-does-not-imply-semantic-identity.md) | 38 | `result-track:04cd3817f7d3e08a94dbe2aa8a8fbfe76e552c244e567d311434e8a631cfb56c` |
+| 1 | `structure` | [MetadataComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Overlap.lean/declarations/metadatacomparison.md) | 7 | `declaration-track:3ca760e602bc229a744149328b8e7f38109fcd159346e209525683397bc2a56e` |
+| 2 | `structure` | [SomeMetadataComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Overlap.lean/declarations/somemetadatacomparison.md) | 14 | `declaration-track:b4169cc96cf0d46e29a80ae8f4da89e9af241f08ffe15ceeee404e6c272852ae` |
+| 3 | `structure` | [OverlapAggregationRule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Overlap.lean/declarations/overlapaggregationrule.md) | 18 | `declaration-track:a923195676b3c3253d7fc4fbb868c0bc3908bc8c1ff2530a71059a63a99e684e` |
+| 4 | `structure` | [TypedOverlap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Overlap.lean/declarations/typedoverlap.md) | 22 | `declaration-track:8d87662aa1d229f11b637140d1211ad058ef0f555e3df22b821345da1692c6be` |
+| 5 | `def` | [TypedOverlap.impliesSemanticIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Overlap.lean/declarations/typedoverlap-impliessemanticidentity.md) | 33 | `declaration-track:7b5bfcacf1b08d4054ed33cdc6e5ee699df0f8732efea97e03237e0e4a0adbe0` |
+| 6 | `theorem` | [overlap_does_not_imply_semantic_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Overlap.lean/declarations/overlap-does-not-imply-semantic-identity.md) | 38 | `result-track:04cd3817f7d3e08a94dbe2aa8a8fbfe76e552c244e567d311434e8a631cfb56c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

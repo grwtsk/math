@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/HarrisKleitmanAligned.lean/index.md) · [Full source](../../../../Combinatorics/HarrisKleitmanAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HarrisKleitmanAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HarrisKleitmanAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsLowerSet.nonMemberSubfamily](../../../../Combinatorics/HarrisKleitmanAligned.lean/declarations/islowerset-nonmembersubfamily.md) | 36 | `result-track:fe6e33bc65d8ed275233cf04f6248bc1c88ce50dc1880ea26b2abcd05ad3fc48` |
-| 2 | `theorem` | [IsLowerSet.memberSubfamily](../../../../Combinatorics/HarrisKleitmanAligned.lean/declarations/islowerset-membersubfamily.md) | 42 | `result-track:0298c96138460ca85ec56c31d87ba79908e2fef40b0339b395a4c2878726b3bb` |
-| 3 | `theorem` | [IsLowerSet.memberSubfamily_subset_nonMemberSubfamily](../../../../Combinatorics/HarrisKleitmanAligned.lean/declarations/islowerset-membersubfamily-subset-nonmembersubfamily.md) | 49 | `result-track:5faab2921d38e7407a1d79bd15e5d625d1def7a71bb6ba116f83ca860b6e42b8` |
-| 4 | `theorem` | [IsLowerSet.le_card_inter_finset'](../../../../Combinatorics/HarrisKleitmanAligned.lean/declarations/islowerset-le-card-inter-finset-source-edition-2.md) | 56 | `result-track:9d09e5d38e8e54f7014919fdccb6eca8200e096dab839d87e46d00c634f4781a` |
-| 5 | `theorem` | [IsLowerSet.le_card_inter_finset](../../../../Combinatorics/HarrisKleitmanAligned.lean/declarations/islowerset-le-card-inter-finset.md) | 97 | `result-track:3280402f80c25aa5091fdf018c876278905ee33d54f5d7e1e5ca92ebb886e99f` |
-| 6 | `theorem` | [IsUpperSet.card_inter_le_finset](../../../../Combinatorics/HarrisKleitmanAligned.lean/declarations/isupperset-card-inter-le-finset.md) | 103 | `result-track:0f96f4fcbce5b16be36ea68e0fca600c80545c8bfa82b437431791f72eab5ea5` |
-| 7 | `theorem` | [IsLowerSet.card_inter_le_finset](../../../../Combinatorics/HarrisKleitmanAligned.lean/declarations/islowerset-card-inter-le-finset.md) | 114 | `result-track:28a154982a900e7243c49e2a48d94907ab793c575fc69035407458c6ccbbcba9` |
-| 8 | `theorem` | [IsUpperSet.le_card_inter_finset](../../../../Combinatorics/HarrisKleitmanAligned.lean/declarations/isupperset-le-card-inter-finset.md) | 122 | `result-track:dea950f3e237ec68452e25b71ff6280b4ad360fa371622791daf3af039e5e9f0` |
+| 1 | `theorem` | [IsLowerSet.nonMemberSubfamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HarrisKleitmanAligned.lean/declarations/islowerset-nonmembersubfamily.md) | 36 | `result-track:fe6e33bc65d8ed275233cf04f6248bc1c88ce50dc1880ea26b2abcd05ad3fc48` |
+| 2 | `theorem` | [IsLowerSet.memberSubfamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HarrisKleitmanAligned.lean/declarations/islowerset-membersubfamily.md) | 42 | `result-track:0298c96138460ca85ec56c31d87ba79908e2fef40b0339b395a4c2878726b3bb` |
+| 3 | `theorem` | [IsLowerSet.memberSubfamily_subset_nonMemberSubfamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HarrisKleitmanAligned.lean/declarations/islowerset-membersubfamily-subset-nonmembersubfamily.md) | 49 | `result-track:5faab2921d38e7407a1d79bd15e5d625d1def7a71bb6ba116f83ca860b6e42b8` |
+| 4 | `theorem` | [IsLowerSet.le_card_inter_finset'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HarrisKleitmanAligned.lean/declarations/islowerset-le-card-inter-finset-source-edition-2.md) | 56 | `result-track:9d09e5d38e8e54f7014919fdccb6eca8200e096dab839d87e46d00c634f4781a` |
+| 5 | `theorem` | [IsLowerSet.le_card_inter_finset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HarrisKleitmanAligned.lean/declarations/islowerset-le-card-inter-finset.md) | 97 | `result-track:3280402f80c25aa5091fdf018c876278905ee33d54f5d7e1e5ca92ebb886e99f` |
+| 6 | `theorem` | [IsUpperSet.card_inter_le_finset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HarrisKleitmanAligned.lean/declarations/isupperset-card-inter-le-finset.md) | 103 | `result-track:0f96f4fcbce5b16be36ea68e0fca600c80545c8bfa82b437431791f72eab5ea5` |
+| 7 | `theorem` | [IsLowerSet.card_inter_le_finset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HarrisKleitmanAligned.lean/declarations/islowerset-card-inter-le-finset.md) | 114 | `result-track:28a154982a900e7243c49e2a48d94907ab793c575fc69035407458c6ccbbcba9` |
+| 8 | `theorem` | [IsUpperSet.le_card_inter_finset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HarrisKleitmanAligned.lean/declarations/isupperset-le-card-inter-finset.md) | 122 | `result-track:dea950f3e237ec68452e25b71ff6280b4ad360fa371622791daf3af039e5e9f0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

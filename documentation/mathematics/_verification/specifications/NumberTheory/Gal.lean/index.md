@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/Gal.lean/index.md) · [Full source](../../../../NumberTheory/Gal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Gal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Gal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [autToPow_injective](../../../../NumberTheory/Gal.lean/declarations/auttopow-injective.md) | 53 | `result-track:2083e0ba234b4d0ffe0e341339ac61f9d435afe377f26443cc4a91a739e4b0ca` |
-| 2 | `def` | [Aut.commGroup](../../../../NumberTheory/Gal.lean/declarations/aut-commgroup.md) | 82 | `declaration-track:daef642d874d82f8617358bccd60d13bb9d2c7b9af475afb1059c0e6d8662417` |
-| 3 | `def` | [autEquivPow](../../../../NumberTheory/Gal.lean/declarations/autequivpow.md) | 91 | `declaration-track:1a351b9e4fb9919270e8c19c08bfbba927b434f28d6694c2a16509289b30f700` |
-| 4 | `def` | [fromZetaAut](../../../../NumberTheory/Gal.lean/declarations/fromzetaaut.md) | 135 | `declaration-track:8b5edab027071ca1aa73561b8d8c2c9492f387992be41f7c51eec93f8fa3e2e8` |
-| 5 | `theorem` | [fromZetaAut_spec](../../../../NumberTheory/Gal.lean/declarations/fromzetaaut-spec.md) | 141 | `result-track:bb642ebd29e40d97d9d5b84bca3e599ce300c6fd1ac83ce15d50ad118b42c68c` |
-| 6 | `def` | [galCyclotomicEquivUnitsZMod](../../../../NumberTheory/Gal.lean/declarations/galcyclotomicequivunitszmod.md) | 159 | `declaration-track:9712791fa078c96e89ee5103f8d8a54b623c5a8ab49961dd71ac217d6f9c4a68` |
-| 7 | `def` | [galXPowEquivUnitsZMod](../../../../NumberTheory/Gal.lean/declarations/galxpowequivunitszmod.md) | 167 | `declaration-track:3eee88d76c126ca6c6882f208c2f15d90d6eabd605a2b41d7504398d4f758ec0` |
+| 1 | `theorem` | [autToPow_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Gal.lean/declarations/auttopow-injective.md) | 53 | `result-track:2083e0ba234b4d0ffe0e341339ac61f9d435afe377f26443cc4a91a739e4b0ca` |
+| 2 | `def` | [Aut.commGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Gal.lean/declarations/aut-commgroup.md) | 82 | `declaration-track:daef642d874d82f8617358bccd60d13bb9d2c7b9af475afb1059c0e6d8662417` |
+| 3 | `def` | [autEquivPow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Gal.lean/declarations/autequivpow.md) | 91 | `declaration-track:1a351b9e4fb9919270e8c19c08bfbba927b434f28d6694c2a16509289b30f700` |
+| 4 | `def` | [fromZetaAut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Gal.lean/declarations/fromzetaaut.md) | 135 | `declaration-track:8b5edab027071ca1aa73561b8d8c2c9492f387992be41f7c51eec93f8fa3e2e8` |
+| 5 | `theorem` | [fromZetaAut_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Gal.lean/declarations/fromzetaaut-spec.md) | 141 | `result-track:bb642ebd29e40d97d9d5b84bca3e599ce300c6fd1ac83ce15d50ad118b42c68c` |
+| 6 | `def` | [galCyclotomicEquivUnitsZMod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Gal.lean/declarations/galcyclotomicequivunitszmod.md) | 159 | `declaration-track:9712791fa078c96e89ee5103f8d8a54b623c5a8ab49961dd71ac217d6f9c4a68` |
+| 7 | `def` | [galXPowEquivUnitsZMod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Gal.lean/declarations/galxpowequivunitszmod.md) | 167 | `declaration-track:3eee88d76c126ca6c6882f208c2f15d90d6eabd605a2b41d7504398d4f758ec0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

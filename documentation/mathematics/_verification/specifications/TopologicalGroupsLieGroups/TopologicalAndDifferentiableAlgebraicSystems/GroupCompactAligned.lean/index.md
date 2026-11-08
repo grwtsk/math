@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompactAligned.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompactAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompactAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompactAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [TopologicalSpace.PositiveCompacts.locallyCompactSpace_of_group](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompactAligned.lean/declarations/topologicalspace-positivecompacts-locallycompactspace-of-group.md) | 38 | `result-track:d828c5b64b51c3e6d6347f00cbcc5c0f69a4103d5ea261665e84b2dac635cdc7` |
-| 2 | `instance` | [QuotientGroup.continuousSMul](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompactAligned.lean/declarations/quotientgroup-continuoussmul.md) | 62 | `declaration-track:d63f3301680097877ec0d606a35f1c8f1bc147792b65089bb050464ba6f854f0` |
+| 1 | `theorem` | [TopologicalSpace.PositiveCompacts.locallyCompactSpace_of_group](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompactAligned.lean/declarations/topologicalspace-positivecompacts-locallycompactspace-of-group.md) | 38 | `result-track:d828c5b64b51c3e6d6347f00cbcc5c0f69a4103d5ea261665e84b2dac635cdc7` |
+| 2 | `instance` | [QuotientGroup.continuousSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompactAligned.lean/declarations/quotientgroup-continuoussmul.md) | 62 | `declaration-track:d63f3301680097877ec0d606a35f1c8f1bc147792b65089bb050464ba6f854f0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

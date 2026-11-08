@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/BridgeRangeDiagnosticAttempt01.lean/index.md) · [Full source](../../../../MeasureAndIntegration/BridgeRangeDiagnosticAttempt01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeRangeDiagnosticAttempt01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeRangeDiagnosticAttempt01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [linearRangeProfile](../../../../MeasureAndIntegration/BridgeRangeDiagnosticAttempt01.lean/declarations/linearrangeprofile.md) | 11 | `declaration-track:6ee89bd8f968736b2f258796149fe6aacb5fdc19f06c3e7af1a02f99fbb8a8b8` |
-| 2 | `theorem` | [linearRangeProfile_continuous](../../../../MeasureAndIntegration/BridgeRangeDiagnosticAttempt01.lean/declarations/linearrangeprofile-continuous.md) | 13 | `result-track:f3c03af2b09ded6d71d6d128e735770334b84348d7465412b5fd09d0e16ad6cc` |
-| 3 | `theorem` | [linearRangeProfile_bounds](../../../../MeasureAndIntegration/BridgeRangeDiagnosticAttempt01.lean/declarations/linearrangeprofile-bounds.md) | 16 | `result-track:e54408c5b93f244b3dcd84f40e86463324e22ca2489cb06e180dabd397a17156` |
-| 4 | `theorem` | [linearRangeProfile_integral](../../../../MeasureAndIntegration/BridgeRangeDiagnosticAttempt01.lean/declarations/linearrangeprofile-integral.md) | 21 | `result-track:ecd613b5bb4238c78c303c755c2fac9e7aa5094b57ada8a8efe4780a7509f974` |
-| 5 | `theorem` | [linearRangeProfile_bridge](../../../../MeasureAndIntegration/BridgeRangeDiagnosticAttempt01.lean/declarations/linearrangeprofile-bridge.md) | 32 | `result-track:b7e3bf1dfac46d3dd46b7cf17023c1bd54ca791d6961aad851755ef5e6070785` |
-| 6 | `theorem` | [linearRangeProfile_midpoint](../../../../MeasureAndIntegration/BridgeRangeDiagnosticAttempt01.lean/declarations/linearrangeprofile-midpoint.md) | 39 | `result-track:bfea09410515192346d2fa8b76c559e8b933f2816688591534921006d6642e58` |
-| 7 | `theorem` | [no_uniform_bridge_budget](../../../../MeasureAndIntegration/BridgeRangeDiagnosticAttempt01.lean/declarations/no-uniform-bridge-budget.md) | 46 | `result-track:17cf6a6ab7608bf1985f821f21e36b51092e95c2876b6546ef3edd5c3f47eccf` |
+| 1 | `def` | [linearRangeProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeRangeDiagnosticAttempt01.lean/declarations/linearrangeprofile.md) | 11 | `declaration-track:6ee89bd8f968736b2f258796149fe6aacb5fdc19f06c3e7af1a02f99fbb8a8b8` |
+| 2 | `theorem` | [linearRangeProfile_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeRangeDiagnosticAttempt01.lean/declarations/linearrangeprofile-continuous.md) | 13 | `result-track:f3c03af2b09ded6d71d6d128e735770334b84348d7465412b5fd09d0e16ad6cc` |
+| 3 | `theorem` | [linearRangeProfile_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeRangeDiagnosticAttempt01.lean/declarations/linearrangeprofile-bounds.md) | 16 | `result-track:e54408c5b93f244b3dcd84f40e86463324e22ca2489cb06e180dabd397a17156` |
+| 4 | `theorem` | [linearRangeProfile_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeRangeDiagnosticAttempt01.lean/declarations/linearrangeprofile-integral.md) | 21 | `result-track:ecd613b5bb4238c78c303c755c2fac9e7aa5094b57ada8a8efe4780a7509f974` |
+| 5 | `theorem` | [linearRangeProfile_bridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeRangeDiagnosticAttempt01.lean/declarations/linearrangeprofile-bridge.md) | 32 | `result-track:b7e3bf1dfac46d3dd46b7cf17023c1bd54ca791d6961aad851755ef5e6070785` |
+| 6 | `theorem` | [linearRangeProfile_midpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeRangeDiagnosticAttempt01.lean/declarations/linearrangeprofile-midpoint.md) | 39 | `result-track:bfea09410515192346d2fa8b76c559e8b933f2816688591534921006d6642e58` |
+| 7 | `theorem` | [no_uniform_bridge_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeRangeDiagnosticAttempt01.lean/declarations/no-uniform-bridge-budget.md) | 46 | `result-track:17cf6a6ab7608bf1985f821f21e36b51092e95c2876b6546ef3edd5c3f47eccf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

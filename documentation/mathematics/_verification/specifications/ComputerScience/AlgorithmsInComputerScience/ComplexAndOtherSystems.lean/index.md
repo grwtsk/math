@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexAndOtherSystems.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexAndOtherSystems.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexAndOtherSystems.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexAndOtherSystems.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ComplexDescriptorCode](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexAndOtherSystems.lean/declarations/complexdescriptorcode.md) | 5 | `declaration-track:88e6a8bc937c70cb54506f5a57082a652688f9cb5c737a3805196ed8f38794bf` |
-| 2 | `def` | [complexDescriptorBoundary](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexAndOtherSystems.lean/declarations/complexdescriptorboundary.md) | 12 | `declaration-track:7a31a28712e0e5a9c9c448766e61b51eb9428138da77dc9514efac98a6802fda` |
-| 3 | `theorem` | [complex_descriptor_boundary_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexAndOtherSystems.lean/declarations/complex-descriptor-boundary-visible.md) | 15 | `result-track:83371cecf14e28d099105de263ca82bc63f528cec3fb07dc92726217e3372b36` |
-| 4 | `structure` | [NumberSystemRegistry](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexAndOtherSystems.lean/declarations/numbersystemregistry.md) | 20 | `declaration-track:a289f3806a15589e8567cd8c33331193b4439f7dc735de5c597f63464a5d8897` |
-| 5 | `theorem` | [number_system_registry_is_metadata](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexAndOtherSystems.lean/declarations/number-system-registry-is-metadata.md) | 24 | `result-track:f838354a2a2c946e9e5c6b09c9c6bedc17346c1405e40aca0fe18ff7dc067281` |
+| 1 | `structure` | [ComplexDescriptorCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexAndOtherSystems.lean/declarations/complexdescriptorcode.md) | 5 | `declaration-track:88e6a8bc937c70cb54506f5a57082a652688f9cb5c737a3805196ed8f38794bf` |
+| 2 | `def` | [complexDescriptorBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexAndOtherSystems.lean/declarations/complexdescriptorboundary.md) | 12 | `declaration-track:7a31a28712e0e5a9c9c448766e61b51eb9428138da77dc9514efac98a6802fda` |
+| 3 | `theorem` | [complex_descriptor_boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexAndOtherSystems.lean/declarations/complex-descriptor-boundary-visible.md) | 15 | `result-track:83371cecf14e28d099105de263ca82bc63f528cec3fb07dc92726217e3372b36` |
+| 4 | `structure` | [NumberSystemRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexAndOtherSystems.lean/declarations/numbersystemregistry.md) | 20 | `declaration-track:a289f3806a15589e8567cd8c33331193b4439f7dc735de5c597f63464a5d8897` |
+| 5 | `theorem` | [number_system_registry_is_metadata](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexAndOtherSystems.lean/declarations/number-system-registry-is-metadata.md) | 24 | `result-track:f838354a2a2c946e9e5c6b09c9c6bedc17346c1405e40aca0fe18ff7dc067281` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

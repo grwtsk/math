@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerPerronGenericNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerPerronGenericNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerPerronGenericNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerPerronGenericNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [perron_per_n_integral](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerPerronGenericNamespaced.lean/declarations/perron-per-n-integral.md) | 13 | `result-track:78a9fd4f28394316e3c8fa3bbe3496a9fe03c8f2b54e2b7d93288532df0a453c` |
-| 2 | `theorem` | [perron_line_integral_swap](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerPerronGenericNamespaced.lean/declarations/perron-line-integral-swap.md) | 78 | `result-track:89f4905ccc3a37df3e7f2a60311b3cb9717296580a259888368a50190c6d6138` |
-| 3 | `theorem` | [perron_prime_side_line](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerPerronGenericNamespaced.lean/declarations/perron-prime-side-line.md) | 136 | `result-track:6b1cf09348a717c013a4e0a9fe7bd63ea7d24a88db084a0c164494fa3ea84f2c` |
+| 1 | `theorem` | [perron_per_n_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerPerronGenericNamespaced.lean/declarations/perron-per-n-integral.md) | 13 | `result-track:78a9fd4f28394316e3c8fa3bbe3496a9fe03c8f2b54e2b7d93288532df0a453c` |
+| 2 | `theorem` | [perron_line_integral_swap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerPerronGenericNamespaced.lean/declarations/perron-line-integral-swap.md) | 78 | `result-track:89f4905ccc3a37df3e7f2a60311b3cb9717296580a259888368a50190c6d6138` |
+| 3 | `theorem` | [perron_prime_side_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerPerronGenericNamespaced.lean/declarations/perron-prime-side-line.md) | 136 | `result-track:6b1cf09348a717c013a4e0a9fe7bd63ea7d24a88db084a0c164494fa3ea84f2c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

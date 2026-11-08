@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/RadiusLiminfPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/RadiusLiminfPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RadiusLiminfPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RadiusLiminfPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [radius_eq_liminf](../../../../FunctionalAnalysis/RadiusLiminfPublic.lean/declarations/radius-eq-liminf.md) | 37 | `result-track:1ab6d521dd64fd8a3b7188fe8f93b4af19a0154116aa8442ee6f79917c0f0660` |
-| 2 | `theorem` | [radius_inv_eq_limsup](../../../../FunctionalAnalysis/RadiusLiminfPublic.lean/declarations/radius-inv-eq-limsup.md) | 66 | `result-track:059948c9b7786fffbaa62533ab3532444cc338da55ae11e49d11d23398b9df49` |
+| 1 | `theorem` | [radius_eq_liminf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RadiusLiminfPublic.lean/declarations/radius-eq-liminf.md) | 37 | `result-track:1ab6d521dd64fd8a3b7188fe8f93b4af19a0154116aa8442ee6f79917c0f0660` |
+| 2 | `theorem` | [radius_inv_eq_limsup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RadiusLiminfPublic.lean/declarations/radius-inv-eq-limsup.md) | 66 | `result-track:059948c9b7786fffbaa62533ab3532444cc338da55ae11e49d11d23398b9df49` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

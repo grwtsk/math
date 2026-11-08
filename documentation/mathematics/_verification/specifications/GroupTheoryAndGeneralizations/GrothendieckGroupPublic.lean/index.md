@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [GrothendieckGroup](../../../../GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/declarations/grothendieckgroup.md) | 36 | `declaration-track:72da2e49ad60e494d05f06f408409f61d6b3d89c6cffcf54202c370415ca734d` |
-| 2 | `abbrev` | [of](../../../../GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/declarations/of.md) | 47 | `declaration-track:a640770e29cc60fe1bf3c0bed6e36d1e9e3bd08fef0b7c3126735d10bc4dd31e` |
-| 3 | `lemma` | [of_injective](../../../../GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/declarations/of-injective.md) | 50 | `result-track:b99eda17b621a678d69b6fe6ce5eb3c80c29c96355940abc5a7a4bf8e3fb7149` |
-| 4 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/declarations/instance.md) | 54 | `declaration-track:6188b476125e60b1d366eab9235c5330ccfdbd225b767f1dcc7289f0d5c07da6` |
-| 5 | `lemma` | [inv_mk](../../../../GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/declarations/inv-mk.md) | 59 | `result-track:dad51c73234a1b4f3c2ca5bc2aa2689858b7f9fc82226d9330c933762654aa32` |
-| 6 | `instance` | [instCommGroup](../../../../GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/declarations/instcommgroup.md) | 63 | `declaration-track:2e3c06d4e85d81cabc365f7d6a4451798b8460006de2f53b81fe3621d97278ba` |
-| 7 | `lemma` | [mk_div_mk](../../../../GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/declarations/mk-div-mk.md) | 72 | `result-track:0073cee7e1146cce7d0710aedc793dd340899a939f50e160088678f36f1a330c` |
-| 8 | `def` | [lift](../../../../GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/declarations/lift.md) | 81 | `declaration-track:4cdb85abfd373644beec005a7adbab898a71c22814a22f1e49744680ecf3ea2d` |
-| 9 | `lemma` | [lift_apply](../../../../GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/declarations/lift-apply.md) | 88 | `result-track:4da58e5480739bc9de6620bfcc10d89f001f059e25b215cefab2053e162d10b3` |
+| 1 | `abbrev` | [GrothendieckGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/declarations/grothendieckgroup.md) | 36 | `declaration-track:72da2e49ad60e494d05f06f408409f61d6b3d89c6cffcf54202c370415ca734d` |
+| 2 | `abbrev` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/declarations/of.md) | 47 | `declaration-track:a640770e29cc60fe1bf3c0bed6e36d1e9e3bd08fef0b7c3126735d10bc4dd31e` |
+| 3 | `lemma` | [of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/declarations/of-injective.md) | 50 | `result-track:b99eda17b621a678d69b6fe6ce5eb3c80c29c96355940abc5a7a4bf8e3fb7149` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/declarations/instance.md) | 54 | `declaration-track:6188b476125e60b1d366eab9235c5330ccfdbd225b767f1dcc7289f0d5c07da6` |
+| 5 | `lemma` | [inv_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/declarations/inv-mk.md) | 59 | `result-track:dad51c73234a1b4f3c2ca5bc2aa2689858b7f9fc82226d9330c933762654aa32` |
+| 6 | `instance` | [instCommGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/declarations/instcommgroup.md) | 63 | `declaration-track:2e3c06d4e85d81cabc365f7d6a4451798b8460006de2f53b81fe3621d97278ba` |
+| 7 | `lemma` | [mk_div_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/declarations/mk-div-mk.md) | 72 | `result-track:0073cee7e1146cce7d0710aedc793dd340899a939f50e160088678f36f1a330c` |
+| 8 | `def` | [lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/declarations/lift.md) | 81 | `declaration-track:4cdb85abfd373644beec005a7adbab898a71c22814a22f1e49744680ecf3ea2d` |
+| 9 | `lemma` | [lift_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GrothendieckGroupPublic.lean/declarations/lift-apply.md) | 88 | `result-track:4da58e5480739bc9de6620bfcc10d89f001f059e25b215cefab2053e162d10b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

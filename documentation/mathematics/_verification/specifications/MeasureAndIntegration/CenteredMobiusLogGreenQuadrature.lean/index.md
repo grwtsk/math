@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFourierBridge`](../../../../MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFourierBridge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [greenFourierBackgroundIntegrand](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/declarations/greenfourierbackgroundintegrand.md) | 16 | `declaration-track:e10f54764b3a13f724ea715f111243f894320b06cbfdf65d6f40e767457886e2` |
-| 2 | `def` | [greenRightMeshPoint](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/declarations/greenrightmeshpoint.md) | 20 | `declaration-track:e997ff7d6b68302624f4eea4758db1c80dd70736de15c946ce87b0d0f40f20de` |
-| 3 | `def` | [greenFourierRightRiemannSum](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/declarations/greenfourierrightriemannsum.md) | 23 | `declaration-track:86e3d6f0572fc019bea013fc691ccfb37f599045903ef9200eb39ba28c860621` |
-| 4 | `theorem` | [greenDiscreteHarmonicFourierCorrection_eq_rightRiemannSum](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/declarations/greendiscreteharmonicfouriercorrection-eq-rightriemannsum.md) | 30 | `result-track:79b4f5a106837eeec705f25c11890b13c184b461f507f23d213e6a7e05f87b4a` |
-| 5 | `theorem` | [greenCenteringResidual_eq_integral_sub_rightRiemannSum](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/declarations/greencenteringresidual-eq-integral-sub-rightriemannsum.md) | 76 | `result-track:2ac0d412d2b1db116fc2055c350ac73474a30e38ca1ced673c47362e41bd62d0` |
-| 6 | `def` | [greenFourierQuadratureCellError](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/declarations/greenfourierquadraturecellerror.md) | 85 | `declaration-track:f58e4606c1432da6efae0b3ed130cb6053e45de11fb79d80b9c3ae666d313717` |
-| 7 | `def` | [greenFourierQuadratureCellErrorSum](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/declarations/greenfourierquadraturecellerrorsum.md) | 96 | `declaration-track:f5548efe0e569cfda497cde3585bf747c7afb27da49f17306d68c35bfcac315f` |
+| 1 | `def` | [greenFourierBackgroundIntegrand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/declarations/greenfourierbackgroundintegrand.md) | 16 | `declaration-track:e10f54764b3a13f724ea715f111243f894320b06cbfdf65d6f40e767457886e2` |
+| 2 | `def` | [greenRightMeshPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/declarations/greenrightmeshpoint.md) | 20 | `declaration-track:e997ff7d6b68302624f4eea4758db1c80dd70736de15c946ce87b0d0f40f20de` |
+| 3 | `def` | [greenFourierRightRiemannSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/declarations/greenfourierrightriemannsum.md) | 23 | `declaration-track:86e3d6f0572fc019bea013fc691ccfb37f599045903ef9200eb39ba28c860621` |
+| 4 | `theorem` | [greenDiscreteHarmonicFourierCorrection_eq_rightRiemannSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/declarations/greendiscreteharmonicfouriercorrection-eq-rightriemannsum.md) | 30 | `result-track:79b4f5a106837eeec705f25c11890b13c184b461f507f23d213e6a7e05f87b4a` |
+| 5 | `theorem` | [greenCenteringResidual_eq_integral_sub_rightRiemannSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/declarations/greencenteringresidual-eq-integral-sub-rightriemannsum.md) | 76 | `result-track:2ac0d412d2b1db116fc2055c350ac73474a30e38ca1ced673c47362e41bd62d0` |
+| 6 | `def` | [greenFourierQuadratureCellError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/declarations/greenfourierquadraturecellerror.md) | 85 | `declaration-track:f58e4606c1432da6efae0b3ed130cb6053e45de11fb79d80b9c3ae666d313717` |
+| 7 | `def` | [greenFourierQuadratureCellErrorSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/declarations/greenfourierquadraturecellerrorsum.md) | 96 | `declaration-track:f5548efe0e569cfda497cde3585bf747c7afb27da49f17306d68c35bfcac315f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

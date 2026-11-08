@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instSMul](../../../../GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/instsmul.md) | 45 | `declaration-track:c3c7f499b75891b3e608ec211fecde217f260323f97e0ab3f7d4aa7e1d3a53ba` |
-| 2 | `theorem` | [smul_def](../../../../GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/smul-def.md) | 49 | `result-track:25c9d86e66ba14fb6db9345d9f128a779b3bea0b299390ab7439a3caf8e7ff56` |
-| 3 | `theorem` | [smul_inl](../../../../GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/smul-inl.md) | 53 | `result-track:00f67f37d48dc17e41363365c380e1900cacb6faa328c0c9879df7d70f006bbe` |
-| 4 | `theorem` | [smul_inr](../../../../GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/smul-inr.md) | 57 | `result-track:7c417c741f71d7a557e4b516f78e8e93fc3e1a174b141665d26f111e42588e1f` |
-| 5 | `theorem` | [smul_swap](../../../../GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/smul-swap.md) | 61 | `result-track:afb942b2894242b35019e86d5cc2e1da3ee2a343582953fe318ec57f2ab6f9f8` |
-| 6 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 63 | `declaration-track:6d4ba1cc5cec166112fe29fe3111830205906e28fd7c737aec0caf68d24e1277` |
-| 7 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 69 | `declaration-track:dfe1838a9d42712293c766fcdd0121ae7468cc33d45022c3c597029b591f4fa1` |
-| 8 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 75 | `declaration-track:af126a2fb221112966cb75dda744211da9491699991314f09627407fcfaea5ea` |
-| 9 | `instance` | [FaithfulSMulLeft](../../../../GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/faithfulsmulleft.md) | 82 | `declaration-track:aca3eefc080c9b9a3b3fa023a5f93488768937319a6aa2e48b62d98727400e33` |
-| 10 | `instance` | [FaithfulSMulRight](../../../../GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/faithfulsmulright.md) | 86 | `declaration-track:f7222cecba99af92596dbfe462532c19a9389f045d0b321aa72d5461a69b240f` |
-| 11 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/instance.md) | 92 | `declaration-track:622f5161c0fa0d69b84a6829d7f3b072dda98246cf5e57ce803bb38ab7542d6d` |
+| 1 | `instance` | [instSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/instsmul.md) | 45 | `declaration-track:c3c7f499b75891b3e608ec211fecde217f260323f97e0ab3f7d4aa7e1d3a53ba` |
+| 2 | `theorem` | [smul_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/smul-def.md) | 49 | `result-track:25c9d86e66ba14fb6db9345d9f128a779b3bea0b299390ab7439a3caf8e7ff56` |
+| 3 | `theorem` | [smul_inl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/smul-inl.md) | 53 | `result-track:00f67f37d48dc17e41363365c380e1900cacb6faa328c0c9879df7d70f006bbe` |
+| 4 | `theorem` | [smul_inr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/smul-inr.md) | 57 | `result-track:7c417c741f71d7a557e4b516f78e8e93fc3e1a174b141665d26f111e42588e1f` |
+| 5 | `theorem` | [smul_swap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/smul-swap.md) | 61 | `result-track:afb942b2894242b35019e86d5cc2e1da3ee2a343582953fe318ec57f2ab6f9f8` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 63 | `declaration-track:6d4ba1cc5cec166112fe29fe3111830205906e28fd7c737aec0caf68d24e1277` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 69 | `declaration-track:dfe1838a9d42712293c766fcdd0121ae7468cc33d45022c3c597029b591f4fa1` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 75 | `declaration-track:af126a2fb221112966cb75dda744211da9491699991314f09627407fcfaea5ea` |
+| 9 | `instance` | [FaithfulSMulLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/faithfulsmulleft.md) | 82 | `declaration-track:aca3eefc080c9b9a3b3fa023a5f93488768937319a6aa2e48b62d98727400e33` |
+| 10 | `instance` | [FaithfulSMulRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/faithfulsmulright.md) | 86 | `declaration-track:f7222cecba99af92596dbfe462532c19a9389f045d0b321aa72d5461a69b240f` |
+| 11 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SumNamespacedPublic.lean/declarations/instance.md) | 92 | `declaration-track:622f5161c0fa0d69b84a6829d7f3b072dda98246cf5e57ce803bb38ab7542d6d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

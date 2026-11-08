@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/QuantifierUnspecified.lean/index.md) · [Full source](../../../../Combinatorics/QuantifierUnspecified.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierUnspecified.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierUnspecified.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [version](../../../../Combinatorics/QuantifierUnspecified.lean/declarations/version.md) | 5 | `declaration-track:07598395ca0c2ac2649cf5e36a57bc205e1843939a986f95a7e111e0f727c964` |
-| 2 | `def` | [boolTheory](../../../../Combinatorics/QuantifierUnspecified.lean/declarations/booltheory.md) | 8 | `declaration-track:83ec4f4f161c9296cd7d7c0afafa61a2ca2566066d5eadd4e3fc4554d4da979f` |
-| 3 | `def` | [natTheory](../../../../Combinatorics/QuantifierUnspecified.lean/declarations/nattheory.md) | 18 | `declaration-track:b8d377adbe141fe1afcc47a78786981578d125ff9023a32d039bd1d6b8c31dea` |
-| 4 | `def` | [foundation](../../../../Combinatorics/QuantifierUnspecified.lean/declarations/foundation.md) | 28 | `declaration-track:7c786587dc602a9bc20e37c50bea19a8314bd6ab899c00dd4fc475e7347d70fb` |
-| 5 | `def` | [neutral](../../../../Combinatorics/QuantifierUnspecified.lean/declarations/neutral.md) | 29 | `declaration-track:3ffe6940be02b548765954cedc73513cde10d15b2000a33403e5282304c7a2dd` |
-| 6 | `def` | [boolVersion](../../../../Combinatorics/QuantifierUnspecified.lean/declarations/boolversion.md) | 31 | `declaration-track:8ce2fb758681473455ec824ed118344ff93f97ed71daaa6652a3d9d995535d7a` |
-| 7 | `def` | [natVersion](../../../../Combinatorics/QuantifierUnspecified.lean/declarations/natversion.md) | 44 | `declaration-track:2230fe1bff456ff26f37d58233d828d6c2553f6f91526419656ff4f7a6ba3bb1` |
-| 8 | `def` | [boolAssumptions](../../../../Combinatorics/QuantifierUnspecified.lean/declarations/boolassumptions.md) | 57 | `declaration-track:7c14b7f0b50b30b81a38a9327d1fc1bf835b258017b80b4aafee736f2c4b6c2c` |
-| 9 | `def` | [natAssumptions](../../../../Combinatorics/QuantifierUnspecified.lean/declarations/natassumptions.md) | 58 | `declaration-track:a8688c5750048c9bff36ca90f352ac036850a5e1d1b5a1c6ad01b97fa4fc9198` |
-| 10 | `def` | [boolScope](../../../../Combinatorics/QuantifierUnspecified.lean/declarations/boolscope.md) | 59 | `declaration-track:9e9858e52679bdcf49d99eedc578aa78bceb18f8c1be810618f27844a4bfe632` |
-| 11 | `def` | [natScope](../../../../Combinatorics/QuantifierUnspecified.lean/declarations/natscope.md) | 60 | `declaration-track:f27020c861efd43889aeacacb7a530b67feadf5c8eace7617d4b5fe8c8c600a3` |
-| 12 | `def` | [finiteToInfiniteTranslation](../../../../Combinatorics/QuantifierUnspecified.lean/declarations/finitetoinfinitetranslation.md) | 63 | `declaration-track:5a43b0e276dcbd91357caf0ac2e6fa502cbbee63265e41c619d6a83150364d32` |
-| 13 | `example` | [(anonymous)](../../../../Combinatorics/QuantifierUnspecified.lean/declarations/example-source-edition-2.md) | 94 | `declaration-track:5c220d2a0161127f4c1ba07e7bcf448f15d7ce3f6b2fb8ad5be68741cfaa4a3b` |
-| 14 | `example` | [(anonymous)](../../../../Combinatorics/QuantifierUnspecified.lean/declarations/example.md) | 95 | `declaration-track:21de4dd5e6a0d04dbd61472c8ee99ea64f1fed6e582b361cdcb5b2045a6888e7` |
+| 1 | `def` | [version](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierUnspecified.lean/declarations/version.md) | 5 | `declaration-track:07598395ca0c2ac2649cf5e36a57bc205e1843939a986f95a7e111e0f727c964` |
+| 2 | `def` | [boolTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierUnspecified.lean/declarations/booltheory.md) | 8 | `declaration-track:83ec4f4f161c9296cd7d7c0afafa61a2ca2566066d5eadd4e3fc4554d4da979f` |
+| 3 | `def` | [natTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierUnspecified.lean/declarations/nattheory.md) | 18 | `declaration-track:b8d377adbe141fe1afcc47a78786981578d125ff9023a32d039bd1d6b8c31dea` |
+| 4 | `def` | [foundation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierUnspecified.lean/declarations/foundation.md) | 28 | `declaration-track:7c786587dc602a9bc20e37c50bea19a8314bd6ab899c00dd4fc475e7347d70fb` |
+| 5 | `def` | [neutral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierUnspecified.lean/declarations/neutral.md) | 29 | `declaration-track:3ffe6940be02b548765954cedc73513cde10d15b2000a33403e5282304c7a2dd` |
+| 6 | `def` | [boolVersion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierUnspecified.lean/declarations/boolversion.md) | 31 | `declaration-track:8ce2fb758681473455ec824ed118344ff93f97ed71daaa6652a3d9d995535d7a` |
+| 7 | `def` | [natVersion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierUnspecified.lean/declarations/natversion.md) | 44 | `declaration-track:2230fe1bff456ff26f37d58233d828d6c2553f6f91526419656ff4f7a6ba3bb1` |
+| 8 | `def` | [boolAssumptions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierUnspecified.lean/declarations/boolassumptions.md) | 57 | `declaration-track:7c14b7f0b50b30b81a38a9327d1fc1bf835b258017b80b4aafee736f2c4b6c2c` |
+| 9 | `def` | [natAssumptions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierUnspecified.lean/declarations/natassumptions.md) | 58 | `declaration-track:a8688c5750048c9bff36ca90f352ac036850a5e1d1b5a1c6ad01b97fa4fc9198` |
+| 10 | `def` | [boolScope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierUnspecified.lean/declarations/boolscope.md) | 59 | `declaration-track:9e9858e52679bdcf49d99eedc578aa78bceb18f8c1be810618f27844a4bfe632` |
+| 11 | `def` | [natScope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierUnspecified.lean/declarations/natscope.md) | 60 | `declaration-track:f27020c861efd43889aeacacb7a530b67feadf5c8eace7617d4b5fe8c8c600a3` |
+| 12 | `def` | [finiteToInfiniteTranslation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierUnspecified.lean/declarations/finitetoinfinitetranslation.md) | 63 | `declaration-track:5a43b0e276dcbd91357caf0ac2e6fa502cbbee63265e41c619d6a83150364d32` |
+| 13 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierUnspecified.lean/declarations/example-source-edition-2.md) | 94 | `declaration-track:5c220d2a0161127f4c1ba07e7bcf448f15d7ce3f6b2fb8ad5be68741cfaa4a3b` |
+| 14 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierUnspecified.lean/declarations/example.md) | 95 | `declaration-track:21de4dd5e6a0d04dbd61472c8ee99ea64f1fed6e582b361cdcb5b2045a6888e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

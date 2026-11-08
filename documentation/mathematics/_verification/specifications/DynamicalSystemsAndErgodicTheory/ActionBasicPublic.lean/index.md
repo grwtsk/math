@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/ActionBasicPublic.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/ActionBasicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionBasicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionBasicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [ErgodicVAdd](../../../../DynamicalSystemsAndErgodicTheory/ActionBasicPublic.lean/declarations/ergodicvadd.md) | 31 | `declaration-track:3630af40830d0a4023a65a434cdae33ca621520ade6ad984ddbbcd30092cbaa8` |
-| 2 | `class` | [ErgodicSMul](../../../../DynamicalSystemsAndErgodicTheory/ActionBasicPublic.lean/declarations/ergodicsmul.md) | 43 | `declaration-track:6fcfd4e4c8cf00b27067e52e3664e3bf87784d1fc9cef11cd52958408100819d` |
-| 3 | `theorem` | [aeconst_of_forall_preimage_smul_ae_eq](../../../../DynamicalSystemsAndErgodicTheory/ActionBasicPublic.lean/declarations/aeconst-of-forall-preimage-smul-ae-eq.md) | 55 | `result-track:118a9c721b82f14358e4fc5007632a59231bddf318fa215db8508ba613d5ce00` |
-| 4 | `theorem` | [aeconst_of_forall_smul_ae_eq](../../../../DynamicalSystemsAndErgodicTheory/ActionBasicPublic.lean/declarations/aeconst-of-forall-smul-ae-eq.md) | 69 | `result-track:a899364ed4408806c64f7d4901a16a5b5e1319ce5483c456b2d504e70452d48f` |
-| 5 | `theorem` | [_root_.MulAction.aeconst_of_aestabilizer_eq_top](../../../../DynamicalSystemsAndErgodicTheory/ActionBasicPublic.lean/declarations/root-mulaction-aeconst-of-aestabilizer-eq-top.md) | 75 | `result-track:dc81ab500086f0545e1c517992f4fdc0c419f3ed24c652ed5f27c34e6569887e` |
-| 6 | `theorem` | [_root_.ErgodicSMul.of_aestabilizer](../../../../DynamicalSystemsAndErgodicTheory/ActionBasicPublic.lean/declarations/root-ergodicsmul-of-aestabilizer.md) | 81 | `result-track:a55447ccfc01b64960021a249be35618baa88332cf322234253e401e0c92b859` |
-| 7 | `theorem` | [ergodicSMul_iterateMulAct](../../../../DynamicalSystemsAndErgodicTheory/ActionBasicPublic.lean/declarations/ergodicsmul-iteratemulact.md) | 87 | `result-track:6a66c52084a70d0f0c829bf1bca0181ea424e7da962c328cfb20bf596b5aed9a` |
+| 1 | `class` | [ErgodicVAdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionBasicPublic.lean/declarations/ergodicvadd.md) | 31 | `declaration-track:3630af40830d0a4023a65a434cdae33ca621520ade6ad984ddbbcd30092cbaa8` |
+| 2 | `class` | [ErgodicSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionBasicPublic.lean/declarations/ergodicsmul.md) | 43 | `declaration-track:6fcfd4e4c8cf00b27067e52e3664e3bf87784d1fc9cef11cd52958408100819d` |
+| 3 | `theorem` | [aeconst_of_forall_preimage_smul_ae_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionBasicPublic.lean/declarations/aeconst-of-forall-preimage-smul-ae-eq.md) | 55 | `result-track:118a9c721b82f14358e4fc5007632a59231bddf318fa215db8508ba613d5ce00` |
+| 4 | `theorem` | [aeconst_of_forall_smul_ae_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionBasicPublic.lean/declarations/aeconst-of-forall-smul-ae-eq.md) | 69 | `result-track:a899364ed4408806c64f7d4901a16a5b5e1319ce5483c456b2d504e70452d48f` |
+| 5 | `theorem` | [_root_.MulAction.aeconst_of_aestabilizer_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionBasicPublic.lean/declarations/root-mulaction-aeconst-of-aestabilizer-eq-top.md) | 75 | `result-track:dc81ab500086f0545e1c517992f4fdc0c419f3ed24c652ed5f27c34e6569887e` |
+| 6 | `theorem` | [_root_.ErgodicSMul.of_aestabilizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionBasicPublic.lean/declarations/root-ergodicsmul-of-aestabilizer.md) | 81 | `result-track:a55447ccfc01b64960021a249be35618baa88332cf322234253e401e0c92b859` |
+| 7 | `theorem` | [ergodicSMul_iterateMulAct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionBasicPublic.lean/declarations/ergodicsmul-iteratemulact.md) | 87 | `result-track:6a66c52084a70d0f0c829bf1bca0181ea424e7da962c328cfb20bf596b5aed9a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

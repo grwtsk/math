@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/RiemannMappingPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/RiemannMappingPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RiemannMappingPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RiemannMappingPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_injective_not_dense_image_deriv_ne_zero](../../../../FunctionsOfAComplexVariable/RiemannMappingPublic.lean/declarations/exists-injective-not-dense-image-deriv-ne-zero.md) | 51 | `result-track:d7dfe82e712e2908ed9801e362cd3f10060482bf9b4f52c43b9284123088bf37` |
-| 2 | `lemma` | [exists_mapsTo_unitBall_injOn_deriv_ne_zero](../../../../FunctionsOfAComplexVariable/RiemannMappingPublic.lean/declarations/exists-mapsto-unitball-injon-deriv-ne-zero.md) | 120 | `result-track:718a5ec7c4bad88d97d3613240c54e51ba637263e570fa09d9d27e1736a7a1fa` |
+| 1 | `theorem` | [exists_injective_not_dense_image_deriv_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RiemannMappingPublic.lean/declarations/exists-injective-not-dense-image-deriv-ne-zero.md) | 51 | `result-track:d7dfe82e712e2908ed9801e362cd3f10060482bf9b4f52c43b9284123088bf37` |
+| 2 | `lemma` | [exists_mapsTo_unitBall_injOn_deriv_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RiemannMappingPublic.lean/declarations/exists-mapsto-unitball-injon-deriv-ne-zero.md) | 120 | `result-track:718a5ec7c4bad88d97d3613240c54e51ba637263e570fa09d9d27e1736a7a1fa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

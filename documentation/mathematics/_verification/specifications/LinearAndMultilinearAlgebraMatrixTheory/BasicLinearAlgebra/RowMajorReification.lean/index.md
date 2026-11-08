@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorReification.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorReification.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorReification.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorReification.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `BitMatrix.Geometry.GlobalProjection` — import line 19; external provider; requires a separately pinned dependency.
-- [Locus Operations And Support](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LocusOperationsAndSupport.lean/index.md) — import line 21; pinned internal source present.
+- [Locus Operations And Support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LocusOperationsAndSupport.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ofMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorReification.lean/declarations/ofmatrix.md) | 46 | `declaration-track:979dab0a933680e381c31f4c2609b43021e1f9488a6f2bbdbb909ccaad65306f` |
-| 2 | `theorem` | [toMatrix_ofMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorReification.lean/declarations/tomatrix-ofmatrix.md) | 50 | `result-track:01dcb7c31a26c841ce424a0567c19a46a7ef5b4a3d9e1cf9ce7149b799e8caba` |
-| 3 | `def` | [implantSubmatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorReification.lean/declarations/implantsubmatrix.md) | 61 | `declaration-track:5efc0a20b3c78660c77e39b8725392e059d6ba85911e1c5b3c272c55d8f2c19b` |
-| 4 | `theorem` | [implantSubmatrix_spec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorReification.lean/declarations/implantsubmatrix-spec.md) | 68 | `result-track:3bdbfd3c09aa2f27b60b69778236111b9da99be29366a92824ebcedd97742c2f` |
+| 1 | `def` | [ofMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorReification.lean/declarations/ofmatrix.md) | 46 | `declaration-track:979dab0a933680e381c31f4c2609b43021e1f9488a6f2bbdbb909ccaad65306f` |
+| 2 | `theorem` | [toMatrix_ofMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorReification.lean/declarations/tomatrix-ofmatrix.md) | 50 | `result-track:01dcb7c31a26c841ce424a0567c19a46a7ef5b4a3d9e1cf9ce7149b799e8caba` |
+| 3 | `def` | [implantSubmatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorReification.lean/declarations/implantsubmatrix.md) | 61 | `declaration-track:5efc0a20b3c78660c77e39b8725392e059d6ba85911e1c5b3c272c55d8f2c19b` |
+| 4 | `theorem` | [implantSubmatrix_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorReification.lean/declarations/implantsubmatrix-spec.md) | 68 | `result-track:3bdbfd3c09aa2f27b60b69778236111b9da99be29366a92824ebcedd97742c2f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

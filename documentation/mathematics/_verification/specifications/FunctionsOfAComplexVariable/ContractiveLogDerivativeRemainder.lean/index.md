@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ContractiveLogDerivativeRemainder.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ContractiveLogDerivativeRemainder.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveLogDerivativeRemainder.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveLogDerivativeRemainder.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.ContractiveZeroSeparation`](../../../../FunctionsOfAComplexVariable/ContractiveZeroSeparation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.ContractiveZeroSeparation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveZeroSeparation.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [first_order_remainder_le](../../../../FunctionsOfAComplexVariable/ContractiveLogDerivativeRemainder.lean/declarations/first-order-remainder-le.md) | 36 | `result-track:c276db9c535079374616a314ae122e15c606cbd584bb786c7f90cbce5b101ed8` |
-| 2 | `theorem` | [pole_subtracted_bound](../../../../FunctionsOfAComplexVariable/ContractiveLogDerivativeRemainder.lean/declarations/pole-subtracted-bound.md) | 73 | `result-track:f1a0333ac2c934a5bc88fe24ef21cc217446b925138dfd198ec3e33c3763db72` |
-| 3 | `theorem` | [pole_location_difference](../../../../FunctionsOfAComplexVariable/ContractiveLogDerivativeRemainder.lean/declarations/pole-location-difference.md) | 119 | `result-track:c1eb8f3b4ff6043feef88e93cb9e88b26cf68eb98df7375e09a5db99b932d68d` |
+| 1 | `theorem` | [first_order_remainder_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveLogDerivativeRemainder.lean/declarations/first-order-remainder-le.md) | 36 | `result-track:c276db9c535079374616a314ae122e15c606cbd584bb786c7f90cbce5b101ed8` |
+| 2 | `theorem` | [pole_subtracted_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveLogDerivativeRemainder.lean/declarations/pole-subtracted-bound.md) | 73 | `result-track:f1a0333ac2c934a5bc88fe24ef21cc217446b925138dfd198ec3e33c3763db72` |
+| 3 | `theorem` | [pole_location_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveLogDerivativeRemainder.lean/declarations/pole-location-difference.md) | 119 | `result-track:c1eb8f3b4ff6043feef88e93cb9e88b26cf68eb98df7375e09a5db99b932d68d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

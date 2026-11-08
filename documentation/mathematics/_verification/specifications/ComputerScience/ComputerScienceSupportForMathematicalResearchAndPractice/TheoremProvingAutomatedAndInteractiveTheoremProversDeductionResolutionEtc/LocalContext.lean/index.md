@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LocalContext.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LocalContext.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LocalContext.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LocalContext.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [LocalDecl.setKind](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LocalContext.lean/declarations/localdecl-setkind.md) | 13 | `declaration-track:330d26e7281bc210d6ac1c941b72c62a89f35588c9f5975a962b5fe6454d22d7` |
-| 2 | `def` | [getRoundtrippingUserName?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LocalContext.lean/declarations/getroundtrippingusername.md) | 25 | `declaration-track:94a6c177c382bf84f1bc2b06b0cc7cd787b26b82f8a1d7d250b0c54eaf109daa` |
-| 3 | `def` | [setKind](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LocalContext.lean/declarations/setkind.md) | 34 | `declaration-track:c795d82cde65c437d39025e1602324ac21f7206bb286d603f779a146ec86c8bf` |
-| 4 | `def` | [sortFVarsByContextOrder](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LocalContext.lean/declarations/sortfvarsbycontextorder.md) | 42 | `declaration-track:21d924ce1c68e46870f0caf4e45fc92cefc099dcf944dbfc6336d982292110e9` |
+| 1 | `def` | [LocalDecl.setKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LocalContext.lean/declarations/localdecl-setkind.md) | 13 | `declaration-track:330d26e7281bc210d6ac1c941b72c62a89f35588c9f5975a962b5fe6454d22d7` |
+| 2 | `def` | [getRoundtrippingUserName?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LocalContext.lean/declarations/getroundtrippingusername.md) | 25 | `declaration-track:94a6c177c382bf84f1bc2b06b0cc7cd787b26b82f8a1d7d250b0c54eaf109daa` |
+| 3 | `def` | [setKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LocalContext.lean/declarations/setkind.md) | 34 | `declaration-track:c795d82cde65c437d39025e1602324ac21f7206bb286d603f779a146ec86c8bf` |
+| 4 | `def` | [sortFVarsByContextOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LocalContext.lean/declarations/sortfvarsbycontextorder.md) | 42 | `declaration-track:21d924ce1c68e46870f0caf4e45fc92cefc099dcf944dbfc6336d982292110e9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

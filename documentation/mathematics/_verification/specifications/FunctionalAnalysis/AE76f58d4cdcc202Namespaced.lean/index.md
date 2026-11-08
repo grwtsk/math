@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/AE76f58d4cdcc202Namespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/AE76f58d4cdcc202Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AE76f58d4cdcc202Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AE76f58d4cdcc202Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inner_conj_symm](../../../../FunctionalAnalysis/AE76f58d4cdcc202Namespaced.lean/declarations/inner-conj-symm.md) | 31 | `result-track:f3f70b41dbb26b6f46f5ff9fa9f0f0d4c8655344076e59f34ddb449a3ce41d0e` |
+| 1 | `theorem` | [inner_conj_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AE76f58d4cdcc202Namespaced.lean/declarations/inner-conj-symm.md) | 31 | `result-track:f3f70b41dbb26b6f46f5ff9fa9f0f0d4c8655344076e59f34ddb449a3ce41d0e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

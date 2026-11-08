@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OneDim.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OneDim.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OneDim.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OneDim.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Icc_mem_vitaliFamily_at_right](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OneDim.lean/declarations/icc-mem-vitalifamily-at-right.md) | 24 | `result-track:742b39c3594e5dbae44ca7302bfad9e74d71fa8817d9f94518a834e0e5fb1b9c` |
-| 2 | `theorem` | [tendsto_Icc_vitaliFamily_right](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OneDim.lean/declarations/tendsto-icc-vitalifamily-right.md) | 30 | `result-track:2c4a77c46a5046cbcde06b0ecbdbf4dc10c6e34fcc63e65a9f94d4f0456d539c` |
-| 3 | `theorem` | [Icc_mem_vitaliFamily_at_left](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OneDim.lean/declarations/icc-mem-vitalifamily-at-left.md) | 39 | `result-track:ed3539e583bd184ac6b18ac4c6aa6015976cf214bc6b87608d1ba320693a6ddf` |
-| 4 | `theorem` | [tendsto_Icc_vitaliFamily_left](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OneDim.lean/declarations/tendsto-icc-vitalifamily-left.md) | 45 | `result-track:44f3fe5139ab0fd9ae89401dcc6c127113e4c0825e2e317f1c2ac5e014693685` |
+| 1 | `theorem` | [Icc_mem_vitaliFamily_at_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OneDim.lean/declarations/icc-mem-vitalifamily-at-right.md) | 24 | `result-track:742b39c3594e5dbae44ca7302bfad9e74d71fa8817d9f94518a834e0e5fb1b9c` |
+| 2 | `theorem` | [tendsto_Icc_vitaliFamily_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OneDim.lean/declarations/tendsto-icc-vitalifamily-right.md) | 30 | `result-track:2c4a77c46a5046cbcde06b0ecbdbf4dc10c6e34fcc63e65a9f94d4f0456d539c` |
+| 3 | `theorem` | [Icc_mem_vitaliFamily_at_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OneDim.lean/declarations/icc-mem-vitalifamily-at-left.md) | 39 | `result-track:ed3539e583bd184ac6b18ac4c6aa6015976cf214bc6b87608d1ba320693a6ddf` |
+| 4 | `theorem` | [tendsto_Icc_vitaliFamily_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OneDim.lean/declarations/tendsto-icc-vitalifamily-left.md) | 45 | `result-track:44f3fe5139ab0fd9ae89401dcc6c127113e4c0825e2e317f1c2ac5e014693685` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

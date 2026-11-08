@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsSmall.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsSmall.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsSmall.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsSmall.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsSmall](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsSmall.lean/declarations/issmall.md) | 30 | `declaration-track:1c179944a6de3642cb6ef7803f3c91f15e95d222b2d9adef4ecad322b7438d70` |
-| 2 | `instance` | [isSmall_ofHoms](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsSmall.lean/declarations/issmall-ofhoms.md) | 35 | `declaration-track:1de579b45bf0843cbb91e070542b804bf3d71e02bfbf30cf7d5c00df2a6d5f26` |
-| 3 | `lemma` | [isSmall_iff_eq_ofHoms](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsSmall.lean/declarations/issmall-iff-eq-ofhoms.md) | 43 | `result-track:4ad8a6c19c170abcd81e0ec23da776c37aedc7649a32da9909e9f7d8959c9307` |
+| 1 | `class` | [IsSmall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsSmall.lean/declarations/issmall.md) | 30 | `declaration-track:1c179944a6de3642cb6ef7803f3c91f15e95d222b2d9adef4ecad322b7438d70` |
+| 2 | `instance` | [isSmall_ofHoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsSmall.lean/declarations/issmall-ofhoms.md) | 35 | `declaration-track:1de579b45bf0843cbb91e070542b804bf3d71e02bfbf30cf7d5c00df2a6d5f26` |
+| 3 | `lemma` | [isSmall_iff_eq_ofHoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsSmall.lean/declarations/issmall-iff-eq-ofhoms.md) | 43 | `result-track:4ad8a6c19c170abcd81e0ec23da776c37aedc7649a32da9909e9f7d8959c9307` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

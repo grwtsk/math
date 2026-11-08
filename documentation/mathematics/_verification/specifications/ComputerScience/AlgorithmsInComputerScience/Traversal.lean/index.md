@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Traversal.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Traversal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Traversal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Traversal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mapAtoms](../../../../../ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/mapatoms.md) | 12 | `declaration-track:c6a49f57c1dd5c8905e05829527b5ad19f97e460659c6b9e947a3764dcf96c10` |
-| 2 | `theorem` | [mapAtoms_const](../../../../../ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/mapatoms-const.md) | 22 | `result-track:920defd56722ff4c866e4f22fed3e00e43472d86372f99c65cd0c710509deb0b` |
-| 3 | `theorem` | [mapAtoms_id](../../../../../ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/mapatoms-id.md) | 26 | `result-track:b0684eb0c40179b974bcd7edfa14e969f3d1fc9d13b05b0ba91b4bcc9c662e9f` |
-| 4 | `theorem` | [mapAtoms_comp](../../../../../ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/mapatoms-comp.md) | 38 | `result-track:ae930e886523aa16c21a1b3a27cf5fe6842c81d3016802524f5fb7a06f95766c` |
-| 5 | `theorem` | [eval_mapAtoms](../../../../../ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/eval-mapatoms.md) | 50 | `result-track:6440f9aafdcf7396db7cc9dc8fd8c47910b581630c43e5ecf3712602afb0539e` |
-| 6 | `def` | [atoms](../../../../../ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/atoms.md) | 63 | `declaration-track:a0b9b951bab890869cd8fc859f3a1f931be216489705403fb0759eafd591967a` |
-| 7 | `def` | [size](../../../../../ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/size.md) | 74 | `declaration-track:cbcfb3677d399c9a9b9bf5b908a5009fb6e4f6fea749792f004c42ad4d6f81af` |
-| 8 | `def` | [depth](../../../../../ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/depth.md) | 85 | `declaration-track:0adc5800d9f27e2c2a6118286002777c9be31f9f961ba1b1bb7345ed8a0c6872` |
-| 9 | `theorem` | [size_mapAtoms](../../../../../ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/size-mapatoms.md) | 95 | `result-track:35a4dbc6db7035596e178c5cdf13352895ad6351b3357c9dbcb37f72d78c1512` |
-| 10 | `theorem` | [depth_mapAtoms](../../../../../ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/depth-mapatoms.md) | 107 | `result-track:f7841b4b2f47e40e7d4cd4a0eca40429ae8f62e2288aea787749b02badb1d74c` |
+| 1 | `def` | [mapAtoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/mapatoms.md) | 12 | `declaration-track:c6a49f57c1dd5c8905e05829527b5ad19f97e460659c6b9e947a3764dcf96c10` |
+| 2 | `theorem` | [mapAtoms_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/mapatoms-const.md) | 22 | `result-track:920defd56722ff4c866e4f22fed3e00e43472d86372f99c65cd0c710509deb0b` |
+| 3 | `theorem` | [mapAtoms_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/mapatoms-id.md) | 26 | `result-track:b0684eb0c40179b974bcd7edfa14e969f3d1fc9d13b05b0ba91b4bcc9c662e9f` |
+| 4 | `theorem` | [mapAtoms_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/mapatoms-comp.md) | 38 | `result-track:ae930e886523aa16c21a1b3a27cf5fe6842c81d3016802524f5fb7a06f95766c` |
+| 5 | `theorem` | [eval_mapAtoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/eval-mapatoms.md) | 50 | `result-track:6440f9aafdcf7396db7cc9dc8fd8c47910b581630c43e5ecf3712602afb0539e` |
+| 6 | `def` | [atoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/atoms.md) | 63 | `declaration-track:a0b9b951bab890869cd8fc859f3a1f931be216489705403fb0759eafd591967a` |
+| 7 | `def` | [size](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/size.md) | 74 | `declaration-track:cbcfb3677d399c9a9b9bf5b908a5009fb6e4f6fea749792f004c42ad4d6f81af` |
+| 8 | `def` | [depth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/depth.md) | 85 | `declaration-track:0adc5800d9f27e2c2a6118286002777c9be31f9f961ba1b1bb7345ed8a0c6872` |
+| 9 | `theorem` | [size_mapAtoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/size-mapatoms.md) | 95 | `result-track:35a4dbc6db7035596e178c5cdf13352895ad6351b3357c9dbcb37f72d78c1512` |
+| 10 | `theorem` | [depth_mapAtoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Traversal.lean/declarations/depth-mapatoms.md) | 107 | `result-track:f7841b4b2f47e40e7d4cd4a0eca40429ae8f62e2288aea787749b02badb1d74c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

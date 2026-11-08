@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEulerResidualApproximationEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEulerResidualApproximationEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEulerResidualApproximationEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEulerResidualApproximationEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualResidual_sub_closedHead_norm_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEulerResidualApproximationEdition2.lean/declarations/actualresidual-sub-closedhead-norm-le.md) | 19 | `result-track:cd8198faa50586eac1d8bbf50a5663915baa53bb93b90186d3a3267f84adeec1` |
-| 2 | `theorem` | [actualResidual_sub_closedHead_tendsto_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEulerResidualApproximationEdition2.lean/declarations/actualresidual-sub-closedhead-tendsto-zero.md) | 37 | `result-track:a4f8595dd864aeba7ebfc9f0787165b075f19a9b78b5b85b9575e20737fc8bec` |
+| 1 | `theorem` | [actualResidual_sub_closedHead_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEulerResidualApproximationEdition2.lean/declarations/actualresidual-sub-closedhead-norm-le.md) | 19 | `result-track:cd8198faa50586eac1d8bbf50a5663915baa53bb93b90186d3a3267f84adeec1` |
+| 2 | `theorem` | [actualResidual_sub_closedHead_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEulerResidualApproximationEdition2.lean/declarations/actualresidual-sub-closedhead-tendsto-zero.md) | 37 | `result-track:a4f8595dd864aeba7ebfc9f0787165b075f19a9b78b5b85b9575e20737fc8bec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

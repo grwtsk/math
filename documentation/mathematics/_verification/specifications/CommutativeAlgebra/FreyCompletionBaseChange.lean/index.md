@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FreyCompletionBaseChange.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FreyCompletionBaseChange.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCompletionBaseChange.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCompletionBaseChange.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetBaseChange`](../../../../CommutativeAlgebra/FreyJetBaseChange.lean/index.md) — import line 10; pinned internal source present.
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetCompletion`](../../../../CommutativeAlgebra/FreyJetCompletion.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetBaseChange`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyJetBaseChange.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetCompletion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyJetCompletion.lean/index.md) — import line 11; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,23 +58,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mapLimit](../../../../CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/maplimit.md) | 25 | `declaration-track:570eaacb7b33aad63415eb35519daa1a91fcb89e0bd2321cf09c7fdd5b95b79e` |
-| 2 | `theorem` | [mapLimit_projection](../../../../CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/maplimit-projection.md) | 37 | `result-track:2a9bcbfe6b4d0fabc51accfdc2087ebfcf953a343902a1f7e221044accf13d7d` |
-| 3 | `theorem` | [mapLimit_scalar](../../../../CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/maplimit-scalar.md) | 43 | `result-track:144ee70cac258c8b19e84d429d980761824764a50dc28ab9c2b19c2e99962920` |
-| 4 | `theorem` | [mapLimit_id](../../../../CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/maplimit-id.md) | 51 | `result-track:02e8b21cef514bc58b6708c2338659308e4ee8c71847ed9eae6850a964701d04` |
-| 5 | `theorem` | [mapLimit_comp](../../../../CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/maplimit-comp.md) | 60 | `result-track:70ddd7cae249cbe7552b02ea30ab3c54b6518a937cd305331c65ad5dec25e951` |
-| 6 | `theorem` | [seriesTrunc_map](../../../../CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/seriestrunc-map.md) | 70 | `result-track:862e26df8edcae2d2904acf50495fa8186dc6db482e729a85227f99eb0b8be4d` |
-| 7 | `theorem` | [completion_natural](../../../../CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/completion-natural.md) | 81 | `result-track:d1d10278e93aef5931e7dce4b0b7e1a6b1ff18a577dbaff427ff7582ba939d39` |
-| 8 | `theorem` | [projection_zero_map](../../../../CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/projection-zero-map.md) | 99 | `result-track:21e54192b39711fab20eeb43b802fe003507ccae672ef89ce3400a7e4d8212e6` |
-| 9 | `theorem` | [projection_zero_iff_of_injective](../../../../CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/projection-zero-iff-of-injective.md) | 107 | `result-track:83c6c74c1d686df7640b311d7e25904b49b36e3530f510650b885c9ae5367b0b` |
-| 10 | `theorem` | [mapLimit_injective](../../../../CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/maplimit-injective.md) | 121 | `result-track:8c84bf79d17b6679bfd1e4557439c96f3c5330fc995df19897bcb43f28581c4c` |
-| 11 | `theorem` | [residue_erases_nonzero_constant](../../../../CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/residue-erases-nonzero-constant.md) | 132 | `result-track:6e34654f2047c8f90de48f213c0db2039e75befc894a9fb0d2decbd129ace0a5` |
-| 12 | `def` | [orderIncreaseSource](../../../../CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/orderincreasesource.md) | 143 | `declaration-track:d0551a098de9f1e75b1838e3b3b14193b15fe5a724d27dc2a0afd2a660e2bcad` |
-| 13 | `theorem` | [orderIncreaseSource_coeff](../../../../CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/orderincreasesource-coeff.md) | 146 | `result-track:f41cd894656b70bcc6fe06539aacca74f8c3603a24c9762b91f1f138097f4bdc` |
-| 14 | `theorem` | [orderIncreaseSource_specializes](../../../../CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/orderincreasesource-specializes.md) | 152 | `result-track:69c81180ce2b3a66be43369d6fe5827222245cbb2ea0809d7492f5d1334bf333` |
-| 15 | `theorem` | [residue_exact_order_increase](../../../../CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/residue-exact-order-increase.md) | 159 | `result-track:e8af5bccd15e642c14da020d92f40a3992f77d76e5ecaf1108dce6c920d2ca3e` |
-| 16 | `def` | [PrimitiveAdditiveTriple.freySectionCompletionMap](../../../../CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/primitiveadditivetriple-freysectioncompletionmap.md) | 201 | `declaration-track:7be8592bc10efb2ddbd16e941e09ea1ccb3056179bcb60921f9fd2eeef463cd8` |
-| 17 | `theorem` | [PrimitiveAdditiveTriple.freySectionCompletion_baseChange](../../../../CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/primitiveadditivetriple-freysectioncompletion-basechange.md) | 211 | `result-track:2dc0ae9c001292ae747bfe65cea76f2d60cca90ba833eb69043ebe2050613e5f` |
+| 1 | `def` | [mapLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/maplimit.md) | 25 | `declaration-track:570eaacb7b33aad63415eb35519daa1a91fcb89e0bd2321cf09c7fdd5b95b79e` |
+| 2 | `theorem` | [mapLimit_projection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/maplimit-projection.md) | 37 | `result-track:2a9bcbfe6b4d0fabc51accfdc2087ebfcf953a343902a1f7e221044accf13d7d` |
+| 3 | `theorem` | [mapLimit_scalar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/maplimit-scalar.md) | 43 | `result-track:144ee70cac258c8b19e84d429d980761824764a50dc28ab9c2b19c2e99962920` |
+| 4 | `theorem` | [mapLimit_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/maplimit-id.md) | 51 | `result-track:02e8b21cef514bc58b6708c2338659308e4ee8c71847ed9eae6850a964701d04` |
+| 5 | `theorem` | [mapLimit_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/maplimit-comp.md) | 60 | `result-track:70ddd7cae249cbe7552b02ea30ab3c54b6518a937cd305331c65ad5dec25e951` |
+| 6 | `theorem` | [seriesTrunc_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/seriestrunc-map.md) | 70 | `result-track:862e26df8edcae2d2904acf50495fa8186dc6db482e729a85227f99eb0b8be4d` |
+| 7 | `theorem` | [completion_natural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/completion-natural.md) | 81 | `result-track:d1d10278e93aef5931e7dce4b0b7e1a6b1ff18a577dbaff427ff7582ba939d39` |
+| 8 | `theorem` | [projection_zero_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/projection-zero-map.md) | 99 | `result-track:21e54192b39711fab20eeb43b802fe003507ccae672ef89ce3400a7e4d8212e6` |
+| 9 | `theorem` | [projection_zero_iff_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/projection-zero-iff-of-injective.md) | 107 | `result-track:83c6c74c1d686df7640b311d7e25904b49b36e3530f510650b885c9ae5367b0b` |
+| 10 | `theorem` | [mapLimit_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/maplimit-injective.md) | 121 | `result-track:8c84bf79d17b6679bfd1e4557439c96f3c5330fc995df19897bcb43f28581c4c` |
+| 11 | `theorem` | [residue_erases_nonzero_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/residue-erases-nonzero-constant.md) | 132 | `result-track:6e34654f2047c8f90de48f213c0db2039e75befc894a9fb0d2decbd129ace0a5` |
+| 12 | `def` | [orderIncreaseSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/orderincreasesource.md) | 143 | `declaration-track:d0551a098de9f1e75b1838e3b3b14193b15fe5a724d27dc2a0afd2a660e2bcad` |
+| 13 | `theorem` | [orderIncreaseSource_coeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/orderincreasesource-coeff.md) | 146 | `result-track:f41cd894656b70bcc6fe06539aacca74f8c3603a24c9762b91f1f138097f4bdc` |
+| 14 | `theorem` | [orderIncreaseSource_specializes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/orderincreasesource-specializes.md) | 152 | `result-track:69c81180ce2b3a66be43369d6fe5827222245cbb2ea0809d7492f5d1334bf333` |
+| 15 | `theorem` | [residue_exact_order_increase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/residue-exact-order-increase.md) | 159 | `result-track:e8af5bccd15e642c14da020d92f40a3992f77d76e5ecaf1108dce6c920d2ca3e` |
+| 16 | `def` | [PrimitiveAdditiveTriple.freySectionCompletionMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/primitiveadditivetriple-freysectioncompletionmap.md) | 201 | `declaration-track:7be8592bc10efb2ddbd16e941e09ea1ccb3056179bcb60921f9fd2eeef463cd8` |
+| 17 | `theorem` | [PrimitiveAdditiveTriple.freySectionCompletion_baseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyCompletionBaseChange.lean/declarations/primitiveadditivetriple-freysectioncompletion-basechange.md) | 211 | `result-track:2dc0ae9c001292ae747bfe65cea76f2d60cca90ba833eb69043ebe2050613e5f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalAligned.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [free_and_finite_fin](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalAligned.lean/declarations/free-and-finite-fin.md) | 35 | `result-track:be73d7641e642e794356c80f96ff883271858d55abd69f764f1936cb0e4dd741` |
-| 2 | `theorem` | [free_and_finite](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalAligned.lean/declarations/free-and-finite.md) | 58 | `result-track:4cbf8226fcef5878dd646aeabf63724ed725bcb1286048c4baf20f893a13bb32` |
-| 3 | `instance` | [_root_.Module.Finite.multilinearMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalAligned.lean/declarations/root-module-finite-multilinearmap.md) | 67 | `declaration-track:c60ca3c2d102a1d4ac25a4cd01993fdeff1314a3dad7f9f9248bc94c7aea6a2f` |
-| 4 | `instance` | [_root_.Module.Free.multilinearMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalAligned.lean/declarations/root-module-free-multilinearmap.md) | 71 | `declaration-track:21b9d3971b70436bb3ff0722a2dc81ba16d2eeab0dd80a26ff80d2abf6662df6` |
+| 1 | `theorem` | [free_and_finite_fin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalAligned.lean/declarations/free-and-finite-fin.md) | 35 | `result-track:be73d7641e642e794356c80f96ff883271858d55abd69f764f1936cb0e4dd741` |
+| 2 | `theorem` | [free_and_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalAligned.lean/declarations/free-and-finite.md) | 58 | `result-track:4cbf8226fcef5878dd646aeabf63724ed725bcb1286048c4baf20f893a13bb32` |
+| 3 | `instance` | [_root_.Module.Finite.multilinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalAligned.lean/declarations/root-module-finite-multilinearmap.md) | 67 | `declaration-track:c60ca3c2d102a1d4ac25a4cd01993fdeff1314a3dad7f9f9248bc94c7aea6a2f` |
+| 4 | `instance` | [_root_.Module.Free.multilinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalAligned.lean/declarations/root-module-free-multilinearmap.md) | 71 | `declaration-track:21b9d3971b70436bb3ff0722a2dc81ba16d2eeab0dd80a26ff80d2abf6662df6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

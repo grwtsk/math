@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CofinalGram.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CofinalGram.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CofinalGram.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CofinalGram.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CofinalGramDescriptor](../../../../../ComputerScience/AlgorithmsInComputerScience/CofinalGram.lean/declarations/cofinalgramdescriptor.md) | 5 | `declaration-track:71c0a0382cb3c255aa246f9cc94ac33b4bade794da3d31cc65c7d31d612ee535` |
+| 1 | `structure` | [CofinalGramDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CofinalGram.lean/declarations/cofinalgramdescriptor.md) | 5 | `declaration-track:71c0a0382cb3c255aa246f9cc94ac33b4bade794da3d31cc65c7d31d612ee535` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

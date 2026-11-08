@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BehavioralEquivalenceNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/BehavioralEquivalenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BehavioralEquivalenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BehavioralEquivalenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ContinuationProfile](../../../../Combinatorics/BehavioralEquivalenceNamespaced.lean/declarations/continuationprofile.md) | 23 | `declaration-track:58f447a05241323e1338cb7814f6a9c6775fef31990cbce11d1cacb23077e685` |
-| 2 | `def` | [BehaviorallyEquivalent](../../../../Combinatorics/BehavioralEquivalenceNamespaced.lean/declarations/behaviorallyequivalent.md) | 28 | `declaration-track:8503c1ebd645a9261c7fc86f24a4ab6d2e8acaed97421db464565e4ac3410c4c` |
-| 3 | `theorem` | [behaviorallyEquivalent_equivalence](../../../../Combinatorics/BehavioralEquivalenceNamespaced.lean/declarations/behaviorallyequivalent-equivalence.md) | 37 | `result-track:8563c6be113534e73222550e6a7ee1de66cbec292af5332deea2395afa782fab` |
-| 4 | `def` | [behavioralSetoid](../../../../Combinatorics/BehavioralEquivalenceNamespaced.lean/declarations/behavioralsetoid.md) | 50 | `declaration-track:302aebad08e5c5dda6c2509edbcb27d3d71e9c0eb1f2286618e6e388e1912017` |
-| 5 | `structure` | [BehaviorTransitionCongruence](../../../../Combinatorics/BehavioralEquivalenceNamespaced.lean/declarations/behaviortransitioncongruence.md) | 58 | `declaration-track:c03d8981fc8711c47fa75e7583b45fe9504d42d4ea49e793df22fc03d6bd923c` |
-| 6 | `structure` | [BehaviorTwistInvariance](../../../../Combinatorics/BehavioralEquivalenceNamespaced.lean/declarations/behaviortwistinvariance.md) | 71 | `declaration-track:b40c6ca4f600e65f0ec682b3bebba9b1d96d9da552bcdba912e1442f7f78681d` |
-| 7 | `theorem` | [behavior_transition_congruence](../../../../Combinatorics/BehavioralEquivalenceNamespaced.lean/declarations/behavior-transition-congruence.md) | 81 | `result-track:d691d3dec795165db03b1ccde2d8d85fbd8ca8b032cb705b2380e260600a2c6f` |
-| 8 | `theorem` | [behavior_twist_invariant](../../../../Combinatorics/BehavioralEquivalenceNamespaced.lean/declarations/behavior-twist-invariant.md) | 96 | `result-track:a916068f12bd948ce314c6ee4ab242e9b1072a435ef6fca0ce6c353f3b7d9633` |
+| 1 | `structure` | [ContinuationProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BehavioralEquivalenceNamespaced.lean/declarations/continuationprofile.md) | 23 | `declaration-track:58f447a05241323e1338cb7814f6a9c6775fef31990cbce11d1cacb23077e685` |
+| 2 | `def` | [BehaviorallyEquivalent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BehavioralEquivalenceNamespaced.lean/declarations/behaviorallyequivalent.md) | 28 | `declaration-track:8503c1ebd645a9261c7fc86f24a4ab6d2e8acaed97421db464565e4ac3410c4c` |
+| 3 | `theorem` | [behaviorallyEquivalent_equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BehavioralEquivalenceNamespaced.lean/declarations/behaviorallyequivalent-equivalence.md) | 37 | `result-track:8563c6be113534e73222550e6a7ee1de66cbec292af5332deea2395afa782fab` |
+| 4 | `def` | [behavioralSetoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BehavioralEquivalenceNamespaced.lean/declarations/behavioralsetoid.md) | 50 | `declaration-track:302aebad08e5c5dda6c2509edbcb27d3d71e9c0eb1f2286618e6e388e1912017` |
+| 5 | `structure` | [BehaviorTransitionCongruence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BehavioralEquivalenceNamespaced.lean/declarations/behaviortransitioncongruence.md) | 58 | `declaration-track:c03d8981fc8711c47fa75e7583b45fe9504d42d4ea49e793df22fc03d6bd923c` |
+| 6 | `structure` | [BehaviorTwistInvariance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BehavioralEquivalenceNamespaced.lean/declarations/behaviortwistinvariance.md) | 71 | `declaration-track:b40c6ca4f600e65f0ec682b3bebba9b1d96d9da552bcdba912e1442f7f78681d` |
+| 7 | `theorem` | [behavior_transition_congruence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BehavioralEquivalenceNamespaced.lean/declarations/behavior-transition-congruence.md) | 81 | `result-track:d691d3dec795165db03b1ccde2d8d85fbd8ca8b032cb705b2380e260600a2c6f` |
+| 8 | `theorem` | [behavior_twist_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BehavioralEquivalenceNamespaced.lean/declarations/behavior-twist-invariant.md) | 96 | `result-track:a916068f12bd948ce314c6ee4ab242e9b1072a435ef6fca0ce6c353f3b7d9633` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

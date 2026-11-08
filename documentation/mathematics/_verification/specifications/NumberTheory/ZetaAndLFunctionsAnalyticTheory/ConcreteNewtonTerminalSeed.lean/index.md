@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.RationalPowerIntegerSeed`](../../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonPacket`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonPacket.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalPowerIntegerSeed`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonPacket`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonPacket.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic.NormNum` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [encoding](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/encoding.md) | 29 | `declaration-track:55c587a48a3228fde178ea53be658af50e19f2db57c311739b7d0df10c57152d` |
-| 2 | `theorem` | [encoding_valid](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/encoding-valid.md) | 37 | `result-track:3f2a793ac595bd6be74916a97cb46a8ef047c5405b9b395af5b71beeb3a55f05` |
-| 3 | `theorem` | [reduction_data](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/reduction-data.md) | 41 | `result-track:548a52441a8eb1dfb4c11a59629ed656e989f657d927658e33b5a8c40aa51727` |
-| 4 | `theorem` | [log_decomposition](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/log-decomposition.md) | 48 | `result-track:0d6094bb619cf9833c871b09be12de29ec6f606981468202203eb0aeecdc9695` |
-| 5 | `theorem` | [log_data](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/log-data.md) | 59 | `result-track:e7aa4fee0f6fa649f2716972679fe0390d7a79216dbd73932f3de728b453bd8b` |
-| 6 | `theorem` | [encoding_binding](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/encoding-binding.md) | 70 | `result-track:84e9e3e54868f030939baf8fc4d3a10d84a20db0a5032f4f341f8dee512f02ba` |
-| 7 | `theorem` | [terminal_admissible](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/terminal-admissible.md) | 84 | `result-track:c43bf8e963bc00c066d73ef6c1b6e3d7949fd9e751f71c35ceac49972e40c8c8` |
-| 8 | `def` | [terminalStart](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/terminalstart.md) | 94 | `declaration-track:2f5fcfefa026dabe56789681486cb174a068bb44e0375e68d99158ccd51bb5c2` |
-| 9 | `theorem` | [real_window](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/real-window.md) | 97 | `result-track:a1e8357a3bddf9fa467c2a578ed57799b77d8f58ba58f5e56f15316357d77b4c` |
-| 10 | `theorem` | [imag_window](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/imag-window.md) | 102 | `result-track:8b9062c3fdfa9429e59e24c66242b5a41a77f3fdee5e82f2ae0244ed66a1ac30` |
-| 11 | `theorem` | [error_window](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/error-window.md) | 107 | `result-track:48260d463236a3553396d339f920696f3617993b72f1f68580b93c4418164863` |
-| 12 | `theorem` | [terminal_windows](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/terminal-windows.md) | 113 | `result-track:b8b480f834a1e0aba43a3fac2333e3d2cf05564fea48dc533154ea5eb461febc` |
-| 13 | `theorem` | [terminal_seed_valid](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/terminal-seed-valid.md) | 117 | `result-track:bc0e8f33d92f309bed64c899681faf479efda74c29793f7d1521e4a66ff35c69` |
+| 1 | `def` | [encoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/encoding.md) | 29 | `declaration-track:55c587a48a3228fde178ea53be658af50e19f2db57c311739b7d0df10c57152d` |
+| 2 | `theorem` | [encoding_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/encoding-valid.md) | 37 | `result-track:3f2a793ac595bd6be74916a97cb46a8ef047c5405b9b395af5b71beeb3a55f05` |
+| 3 | `theorem` | [reduction_data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/reduction-data.md) | 41 | `result-track:548a52441a8eb1dfb4c11a59629ed656e989f657d927658e33b5a8c40aa51727` |
+| 4 | `theorem` | [log_decomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/log-decomposition.md) | 48 | `result-track:0d6094bb619cf9833c871b09be12de29ec6f606981468202203eb0aeecdc9695` |
+| 5 | `theorem` | [log_data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/log-data.md) | 59 | `result-track:e7aa4fee0f6fa649f2716972679fe0390d7a79216dbd73932f3de728b453bd8b` |
+| 6 | `theorem` | [encoding_binding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/encoding-binding.md) | 70 | `result-track:84e9e3e54868f030939baf8fc4d3a10d84a20db0a5032f4f341f8dee512f02ba` |
+| 7 | `theorem` | [terminal_admissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/terminal-admissible.md) | 84 | `result-track:c43bf8e963bc00c066d73ef6c1b6e3d7949fd9e751f71c35ceac49972e40c8c8` |
+| 8 | `def` | [terminalStart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/terminalstart.md) | 94 | `declaration-track:2f5fcfefa026dabe56789681486cb174a068bb44e0375e68d99158ccd51bb5c2` |
+| 9 | `theorem` | [real_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/real-window.md) | 97 | `result-track:a1e8357a3bddf9fa467c2a578ed57799b77d8f58ba58f5e56f15316357d77b4c` |
+| 10 | `theorem` | [imag_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/imag-window.md) | 102 | `result-track:8b9062c3fdfa9429e59e24c66242b5a41a77f3fdee5e82f2ae0244ed66a1ac30` |
+| 11 | `theorem` | [error_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/error-window.md) | 107 | `result-track:48260d463236a3553396d339f920696f3617993b72f1f68580b93c4418164863` |
+| 12 | `theorem` | [terminal_windows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/terminal-windows.md) | 113 | `result-track:b8b480f834a1e0aba43a3fac2333e3d2cf05564fea48dc533154ea5eb461febc` |
+| 13 | `theorem` | [terminal_seed_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalSeed.lean/declarations/terminal-seed-valid.md) | 117 | `result-track:bc0e8f33d92f309bed64c899681faf479efda74c29793f7d1521e4a66ff35c69` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

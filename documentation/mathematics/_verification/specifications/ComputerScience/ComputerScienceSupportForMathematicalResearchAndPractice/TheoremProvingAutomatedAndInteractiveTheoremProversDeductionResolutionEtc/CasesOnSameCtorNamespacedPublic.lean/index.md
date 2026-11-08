@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesOnSameCtorNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesOnSameCtorNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesOnSameCtorNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesOnSameCtorNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mkCasesOnSameCtorHet](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesOnSameCtorNamespacedPublic.lean/declarations/mkcasesonsamectorhet.md) | 37 | `declaration-track:eb40a519d1edb62d590fbcbc43a1df8dc02e2f23cd942d6bd47aa3f40c5eca67` |
-| 2 | `def` | [mkCasesOnSameCtor](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesOnSameCtorNamespacedPublic.lean/declarations/mkcasesonsamector.md) | 143 | `declaration-track:409f8cb9274524d0b7d4b2e0eb600ae98afc128d07c5264f471183f00fd419b4` |
+| 1 | `def` | [mkCasesOnSameCtorHet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesOnSameCtorNamespacedPublic.lean/declarations/mkcasesonsamectorhet.md) | 37 | `declaration-track:eb40a519d1edb62d590fbcbc43a1df8dc02e2f23cd942d6bd47aa3f40c5eca67` |
+| 2 | `def` | [mkCasesOnSameCtor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesOnSameCtorNamespacedPublic.lean/declarations/mkcasesonsamector.md) | 143 | `declaration-track:409f8cb9274524d0b7d4b2e0eb600ae98afc128d07c5264f471183f00fd419b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

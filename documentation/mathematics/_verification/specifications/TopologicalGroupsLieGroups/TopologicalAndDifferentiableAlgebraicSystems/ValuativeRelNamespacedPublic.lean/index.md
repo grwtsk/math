@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuativeRelNamespacedPublic.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuativeRelNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuativeRelNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuativeRelNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [of_zero](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuativeRelNamespacedPublic.lean/declarations/of-zero.md) | 48 | `result-track:f963757c942100b4752850eee465023993407d9130eaee0e580240a61e51ef6a` |
-| 2 | `instance` | [(anonymous)](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuativeRelNamespacedPublic.lean/declarations/instance.md) | 65 | `declaration-track:3bb7df9984b5267b45dcbfc47d161ffd1311fe93cefbbc8186dcd6e346012c17` |
-| 3 | `lemma` | [v_eq_valuation](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuativeRelNamespacedPublic.lean/declarations/v-eq-valuation.md) | 75 | `result-track:f705e5d995617b98e9b26e9fba5081d0b9f263b8c29ae3b2e86af9750b89182d` |
-| 4 | `lemma` | [continuous_valuation](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuativeRelNamespacedPublic.lean/declarations/continuous-valuation.md) | 80 | `result-track:f91eb3c876e9d260de7bf8d4312b2ae0fb7a3b3d1ad64166ccbe9758010f3788` |
+| 1 | `theorem` | [of_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuativeRelNamespacedPublic.lean/declarations/of-zero.md) | 48 | `result-track:f963757c942100b4752850eee465023993407d9130eaee0e580240a61e51ef6a` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuativeRelNamespacedPublic.lean/declarations/instance.md) | 65 | `declaration-track:3bb7df9984b5267b45dcbfc47d161ffd1311fe93cefbbc8186dcd6e346012c17` |
+| 3 | `lemma` | [v_eq_valuation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuativeRelNamespacedPublic.lean/declarations/v-eq-valuation.md) | 75 | `result-track:f705e5d995617b98e9b26e9fba5081d0b9f263b8c29ae3b2e86af9750b89182d` |
+| 4 | `lemma` | [continuous_valuation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuativeRelNamespacedPublic.lean/declarations/continuous-valuation.md) | 80 | `result-track:f91eb3c876e9d260de7bf8d4312b2ae0fb7a3b3d1ad64166ccbe9758010f3788` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1977Q6.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1977Q6.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo1977Q6.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo1977Q6.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [imo1977_q6_nat](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1977Q6.lean/declarations/imo1977-q6-nat.md) | 21 | `result-track:eec5f7678d5b1126647a8e10c1ff2093ce56ac1edebeac8a0ce8fcfd41253f37` |
-| 2 | `theorem` | [imo1977_q6](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1977Q6.lean/declarations/imo1977-q6.md) | 40 | `result-track:dfb7199edc538babc6ec430e3f2ac00c20206ada00495d4c73cbcaa22d1569ea` |
+| 1 | `theorem` | [imo1977_q6_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo1977Q6.lean/declarations/imo1977-q6-nat.md) | 21 | `result-track:eec5f7678d5b1126647a8e10c1ff2093ce56ac1edebeac8a0ce8fcfd41253f37` |
+| 2 | `theorem` | [imo1977_q6](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo1977Q6.lean/declarations/imo1977-q6.md) | 40 | `result-track:dfb7199edc538babc6ec430e3f2ac00c20206ada00495d4c73cbcaa22d1569ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

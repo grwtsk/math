@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/index.md) · [Full source](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OrderedComplexRectangle](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/declarations/orderedcomplexrectangle.md) | 18 | `declaration-track:9502f3f3720582864638f06fd5a42d90a167b3096f28d651c57d91d97088b8ef` |
-| 2 | `def` | [closed](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/declarations/closed.md) | 27 | `declaration-track:513ba480d635b335c120b7f7e0afd860a908a92842630f3f802881be944a75e3` |
-| 3 | `def` | [openRect](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/declarations/openrect.md) | 31 | `declaration-track:a6caae1540fd5b5764cdfd19ed20a07f098aecf72dbeac08f3d12958e2dac6ce` |
-| 4 | `structure` | [SingleHoleConfiguration](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/declarations/singleholeconfiguration.md) | 37 | `declaration-track:66763fad11e3dec892513b5e45b90aa2fa155a8ff613895641cee9c19a8b7222` |
-| 5 | `def` | [closedRegion](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/declarations/closedregion.md) | 48 | `declaration-track:ffed3e55b38d1c8d64db4f3ef344324f926843f9e9eb244f28e02989625e469e` |
-| 6 | `def` | [openRegion](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/declarations/openregion.md) | 52 | `declaration-track:667953b0c65e81fdcb1e3d5f5e0daaa2b7d657d8d6314203575eaf37083c95ae` |
-| 7 | `def` | [singleHoleBoundaryIntegral](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/declarations/singleholeboundaryintegral.md) | 60 | `declaration-track:026f686fbb27cb478edc6d5d71cf5cb1f6f30ee678d1cf393b7d9c67213a6abf` |
-| 8 | `def` | [SingleHoleExcisionStatement](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/declarations/singleholeexcisionstatement.md) | 68 | `declaration-track:4d6248ecc310dcbe57cb564eb793000300b070da8ed2c700d8573b1ec79fe4f1` |
-| 9 | `example` | [(anonymous)](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/declarations/example.md) | 79 | `declaration-track:cc7845ce093f967564493270446dbb1f4055f05467def7fc7505addbb0622242` |
+| 1 | `structure` | [OrderedComplexRectangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/declarations/orderedcomplexrectangle.md) | 18 | `declaration-track:9502f3f3720582864638f06fd5a42d90a167b3096f28d651c57d91d97088b8ef` |
+| 2 | `def` | [closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/declarations/closed.md) | 27 | `declaration-track:513ba480d635b335c120b7f7e0afd860a908a92842630f3f802881be944a75e3` |
+| 3 | `def` | [openRect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/declarations/openrect.md) | 31 | `declaration-track:a6caae1540fd5b5764cdfd19ed20a07f098aecf72dbeac08f3d12958e2dac6ce` |
+| 4 | `structure` | [SingleHoleConfiguration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/declarations/singleholeconfiguration.md) | 37 | `declaration-track:66763fad11e3dec892513b5e45b90aa2fa155a8ff613895641cee9c19a8b7222` |
+| 5 | `def` | [closedRegion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/declarations/closedregion.md) | 48 | `declaration-track:ffed3e55b38d1c8d64db4f3ef344324f926843f9e9eb244f28e02989625e469e` |
+| 6 | `def` | [openRegion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/declarations/openregion.md) | 52 | `declaration-track:667953b0c65e81fdcb1e3d5f5e0daaa2b7d657d8d6314203575eaf37083c95ae` |
+| 7 | `def` | [singleHoleBoundaryIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/declarations/singleholeboundaryintegral.md) | 60 | `declaration-track:026f686fbb27cb478edc6d5d71cf5cb1f6f30ee678d1cf393b7d9c67213a6abf` |
+| 8 | `def` | [SingleHoleExcisionStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/declarations/singleholeexcisionstatement.md) | 68 | `declaration-track:4d6248ecc310dcbe57cb564eb793000300b070da8ed2c700d8573b1ec79fe4f1` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/SharedStatement.lean/declarations/example.md) | 79 | `declaration-track:cc7845ce093f967564493270446dbb1f4055f05467def7fc7505addbb0622242` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

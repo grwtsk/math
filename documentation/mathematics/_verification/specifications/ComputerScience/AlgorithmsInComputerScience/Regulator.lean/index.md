@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Regulator.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Regulator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Regulator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Regulator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RegulatorData](../../../../../ComputerScience/AlgorithmsInComputerScience/Regulator.lean/declarations/regulatordata.md) | 33 | `declaration-track:ac981458870274b3dd92791f0131592688030da03730b824a0855f7e7bd379ea` |
-| 2 | `structure` | [RegulatorCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Regulator.lean/declarations/regulatorcertificate.md) | 47 | `declaration-track:dcfe9852f3cbcaeb1140a197e1cb54bdecbe6f454fc6c62b2c626a5c84eebb25` |
-| 3 | `def` | [RegulatorCertificate.certifiedForBSD](../../../../../ComputerScience/AlgorithmsInComputerScience/Regulator.lean/declarations/regulatorcertificate-certifiedforbsd.md) | 70 | `declaration-track:4b3f99768b32f532f562c18d950afce73836dcb0ce694f4fdb1ddf51dc4b1db9` |
-| 4 | `theorem` | [RegulatorCertificate.certifiedForBSD_of_fields](../../../../../ComputerScience/AlgorithmsInComputerScience/Regulator.lean/declarations/regulatorcertificate-certifiedforbsd-of-fields.md) | 85 | `result-track:38acd57a64711d8ba63fd739157b3debb3be45871625dcf8f5b6891e89a2794c` |
-| 5 | `structure` | [RegulatorCanonicalHeightCompatibilityCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Regulator.lean/declarations/regulatorcanonicalheightcompatibilitycertificate.md) | 115 | `declaration-track:c890a60860df7f6a0f11587f8c3cf5a12d6a36ab7103d41358d13d38dc0b71f4` |
-| 6 | `def` | [RegulatorCanonicalHeightCompatibilityCertificate.certifiedForBSD](../../../../../ComputerScience/AlgorithmsInComputerScience/Regulator.lean/declarations/regulatorcanonicalheightcompatibilitycertificate-certifiedforbsd.md) | 151 | `declaration-track:3e45d53339b381baa4dc3e695b22135d33d0b3e18e351283ecb25c9bc7797fc7` |
-| 7 | `theorem` | [RegulatorCanonicalHeightCompatibilityCertificate.certifiedForBSD_of_fields](../../../../../ComputerScience/AlgorithmsInComputerScience/Regulator.lean/declarations/regulatorcanonicalheightcompatibilitycertificate-certifiedforbsd-of-fiel.md) | 171 | `result-track:7772d80ef4382ce71fc009e9ac39156a48f5fe8cf32a15045764098e04e0f9d2` |
+| 1 | `structure` | [RegulatorData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Regulator.lean/declarations/regulatordata.md) | 33 | `declaration-track:ac981458870274b3dd92791f0131592688030da03730b824a0855f7e7bd379ea` |
+| 2 | `structure` | [RegulatorCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Regulator.lean/declarations/regulatorcertificate.md) | 47 | `declaration-track:dcfe9852f3cbcaeb1140a197e1cb54bdecbe6f454fc6c62b2c626a5c84eebb25` |
+| 3 | `def` | [RegulatorCertificate.certifiedForBSD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Regulator.lean/declarations/regulatorcertificate-certifiedforbsd.md) | 70 | `declaration-track:4b3f99768b32f532f562c18d950afce73836dcb0ce694f4fdb1ddf51dc4b1db9` |
+| 4 | `theorem` | [RegulatorCertificate.certifiedForBSD_of_fields](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Regulator.lean/declarations/regulatorcertificate-certifiedforbsd-of-fields.md) | 85 | `result-track:38acd57a64711d8ba63fd739157b3debb3be45871625dcf8f5b6891e89a2794c` |
+| 5 | `structure` | [RegulatorCanonicalHeightCompatibilityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Regulator.lean/declarations/regulatorcanonicalheightcompatibilitycertificate.md) | 115 | `declaration-track:c890a60860df7f6a0f11587f8c3cf5a12d6a36ab7103d41358d13d38dc0b71f4` |
+| 6 | `def` | [RegulatorCanonicalHeightCompatibilityCertificate.certifiedForBSD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Regulator.lean/declarations/regulatorcanonicalheightcompatibilitycertificate-certifiedforbsd.md) | 151 | `declaration-track:3e45d53339b381baa4dc3e695b22135d33d0b3e18e351283ecb25c9bc7797fc7` |
+| 7 | `theorem` | [RegulatorCanonicalHeightCompatibilityCertificate.certifiedForBSD_of_fields](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Regulator.lean/declarations/regulatorcanonicalheightcompatibilitycertificate-certifiedforbsd-of-fiel.md) | 171 | `result-track:7772d80ef4382ce71fc009e9ac39156a48f5fe8cf32a15045764098e04e0f9d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

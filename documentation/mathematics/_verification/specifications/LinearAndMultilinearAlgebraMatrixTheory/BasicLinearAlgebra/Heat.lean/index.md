@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Heat.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Heat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Heat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Heat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [heatDiffuser](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Heat.lean/declarations/heatdiffuser.md) | 23 | `declaration-track:fb7991e816517820a829114564fca6ada9fddd55673e02ad64012a30094c3761` |
-| 2 | `theorem` | [diracSquare_isHermitian](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Heat.lean/declarations/diracsquare-ishermitian.md) | 28 | `result-track:7fbb9248d66548f6862763cd4245dbf7a431fdf7270feed3da9281e51f25e60e` |
-| 3 | `theorem` | [heatGenerator_isHermitian](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Heat.lean/declarations/heatgenerator-ishermitian.md) | 36 | `result-track:0e966bbafaddf409726fb2e03c14cbbb85a426ac3e6febb609bb5de90908d1c3` |
-| 4 | `theorem` | [heatDiffuser_selfAdjoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Heat.lean/declarations/heatdiffuser-selfadjoint.md) | 45 | `result-track:711b7e19d1d7e376c26629355f67b99cf329bbdec4003eb23f699374fce1deab` |
-| 5 | `theorem` | [heatDiffuser_add](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Heat.lean/declarations/heatdiffuser-add.md) | 53 | `result-track:8e447ec351050eeeadc93ffeae0b5a0dba02b6dc16a88bff9d239bba6cd943d7` |
-| 6 | `structure` | [HeatContractionCertificate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Heat.lean/declarations/heatcontractioncertificate.md) | 70 | `declaration-track:11a6fe98f260312a2eb55fbe5fb49d4bd0f61d4341239e0ae205ebf5a10c048c` |
+| 1 | `def` | [heatDiffuser](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Heat.lean/declarations/heatdiffuser.md) | 23 | `declaration-track:fb7991e816517820a829114564fca6ada9fddd55673e02ad64012a30094c3761` |
+| 2 | `theorem` | [diracSquare_isHermitian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Heat.lean/declarations/diracsquare-ishermitian.md) | 28 | `result-track:7fbb9248d66548f6862763cd4245dbf7a431fdf7270feed3da9281e51f25e60e` |
+| 3 | `theorem` | [heatGenerator_isHermitian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Heat.lean/declarations/heatgenerator-ishermitian.md) | 36 | `result-track:0e966bbafaddf409726fb2e03c14cbbb85a426ac3e6febb609bb5de90908d1c3` |
+| 4 | `theorem` | [heatDiffuser_selfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Heat.lean/declarations/heatdiffuser-selfadjoint.md) | 45 | `result-track:711b7e19d1d7e376c26629355f67b99cf329bbdec4003eb23f699374fce1deab` |
+| 5 | `theorem` | [heatDiffuser_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Heat.lean/declarations/heatdiffuser-add.md) | 53 | `result-track:8e447ec351050eeeadc93ffeae0b5a0dba02b6dc16a88bff9d239bba6cd943d7` |
+| 6 | `structure` | [HeatContractionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Heat.lean/declarations/heatcontractioncertificate.md) | 70 | `declaration-track:11a6fe98f260312a2eb55fbe5fb49d4bd0f61d4341239e0ae205ebf5a10c048c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

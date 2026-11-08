@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/IntNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/IntNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IntNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IntNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [harmonic_pos](../../../../NumberTheory/IntNamespaced.lean/declarations/harmonic-pos.md) | 28 | `result-track:38de9e02105ef049cd166fe97b9837f0768e7ee93ebe2fe257695cdc9f8f219e` |
-| 2 | `theorem` | [padicValRat_two_harmonic](../../../../NumberTheory/IntNamespaced.lean/declarations/padicvalrat-two-harmonic.md) | 35 | `result-track:709b6fa0e3a211d64c86f38e3465cf17ff2680e4c464a7a499c863bbc7241321` |
-| 3 | `lemma` | [padicNorm_two_harmonic](../../../../NumberTheory/IntNamespaced.lean/declarations/padicnorm-two-harmonic.md) | 51 | `result-track:5ed351a1e1a86ca57a7227f8c158fbb48c94c54b2e21f606a32d0494df5ccf1a` |
-| 4 | `theorem` | [harmonic_not_int](../../../../NumberTheory/IntNamespaced.lean/declarations/harmonic-not-int.md) | 57 | `result-track:30d49ee597fff7c1c645100f054d49cee84ee8a6d284e456869e8f096d64b277` |
+| 1 | `lemma` | [harmonic_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IntNamespaced.lean/declarations/harmonic-pos.md) | 28 | `result-track:38de9e02105ef049cd166fe97b9837f0768e7ee93ebe2fe257695cdc9f8f219e` |
+| 2 | `theorem` | [padicValRat_two_harmonic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IntNamespaced.lean/declarations/padicvalrat-two-harmonic.md) | 35 | `result-track:709b6fa0e3a211d64c86f38e3465cf17ff2680e4c464a7a499c863bbc7241321` |
+| 3 | `lemma` | [padicNorm_two_harmonic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IntNamespaced.lean/declarations/padicnorm-two-harmonic.md) | 51 | `result-track:5ed351a1e1a86ca57a7227f8c158fbb48c94c54b2e21f606a32d0494df5ccf1a` |
+| 4 | `theorem` | [harmonic_not_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IntNamespaced.lean/declarations/harmonic-not-int.md) | 57 | `result-track:30d49ee597fff7c1c645100f054d49cee84ee8a6d284e456869e8f096d64b277` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

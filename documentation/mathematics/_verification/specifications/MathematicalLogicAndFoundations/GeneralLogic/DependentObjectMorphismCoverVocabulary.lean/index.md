@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentObjectMorphismCoverVocabulary.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentObjectMorphismCoverVocabulary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentObjectMorphismCoverVocabulary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentObjectMorphismCoverVocabulary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DirectedArithmeticSite](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentObjectMorphismCoverVocabulary.lean/declarations/directedarithmeticsite.md) | 40 | `declaration-track:f5c0f82471325bcd464c59a8275e2ecdafdd90be43732b5a889212f63b107939` |
-| 2 | `theorem` | [directed_arithmetic_site_zero_barrier_contract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentObjectMorphismCoverVocabulary.lean/declarations/directed-arithmetic-site-zero-barrier-contract.md) | 52 | `result-track:9e1c5c6538b0483d4e0c49a772ad257d1ddd2ae8b728cb841fbea8bdc03c568b` |
-| 3 | `theorem` | [directed_arithmetic_site_cover_is_pivot_family](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentObjectMorphismCoverVocabulary.lean/declarations/directed-arithmetic-site-cover-is-pivot-family.md) | 58 | `result-track:fdd3dd85757faa04b8db3c223aac3442a6e55a7e197000966cab5c59fec5f0a8` |
+| 1 | `structure` | [DirectedArithmeticSite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentObjectMorphismCoverVocabulary.lean/declarations/directedarithmeticsite.md) | 40 | `declaration-track:f5c0f82471325bcd464c59a8275e2ecdafdd90be43732b5a889212f63b107939` |
+| 2 | `theorem` | [directed_arithmetic_site_zero_barrier_contract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentObjectMorphismCoverVocabulary.lean/declarations/directed-arithmetic-site-zero-barrier-contract.md) | 52 | `result-track:9e1c5c6538b0483d4e0c49a772ad257d1ddd2ae8b728cb841fbea8bdc03c568b` |
+| 3 | `theorem` | [directed_arithmetic_site_cover_is_pivot_family](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentObjectMorphismCoverVocabulary.lean/declarations/directed-arithmetic-site-cover-is-pivot-family.md) | 58 | `result-track:fdd3dd85757faa04b8db3c223aac3442a6e55a7e197000966cab5c59fec5f0a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

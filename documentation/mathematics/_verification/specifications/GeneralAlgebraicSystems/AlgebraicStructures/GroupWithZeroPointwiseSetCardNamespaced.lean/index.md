@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseSetCardNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseSetCardNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseSetCardNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseSetCardNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Group With Zero Pointwise Set Card Namespaced](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseSetCardNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-settheory-rootcardinalmksmulse.md) | 31 | `result-track:ba8e93a3e3fa049e7c5823a066119d92694b3650fa37be0ef649089549fca0eb` |
-| 2 | `lemma` | [natCard_smul_set₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseSetCardNamespaced.lean/declarations/natcard-smul-set.md) | 34 | `result-track:49914d7c3247aa62de7c940d38d60c7988112ffb4cd04ce539b1aafbfcad6cdb` |
+| 1 | `lemma` | [Group With Zero Pointwise Set Card Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseSetCardNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-settheory-rootcardinalmksmulse.md) | 31 | `result-track:ba8e93a3e3fa049e7c5823a066119d92694b3650fa37be0ef649089549fca0eb` |
+| 2 | `lemma` | [natCard_smul_set₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseSetCardNamespaced.lean/declarations/natcard-smul-set.md) | 34 | `result-track:49914d7c3247aa62de7c940d38d60c7988112ffb4cd04ce539b1aafbfcad6cdb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

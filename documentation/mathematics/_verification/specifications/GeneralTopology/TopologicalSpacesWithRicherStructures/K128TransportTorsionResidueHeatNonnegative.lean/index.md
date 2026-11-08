@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportTorsionResidueHeatNonnegative.lean/index.md) · [Full source](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportTorsionResidueHeatNonnegative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportTorsionResidueHeatNonnegative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportTorsionResidueHeatNonnegative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [torsion_residue_heat_nonnegative](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportTorsionResidueHeatNonnegative.lean/declarations/torsion-residue-heat-nonnegative.md) | 5 | `result-track:8562fc4065a26a73eeab0b2a707ee95b3a168b49685efce0a63a32accd69ac7f` |
-| 2 | `def` | [k128_torsion_iff_zero_residue](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportTorsionResidueHeatNonnegative.lean/declarations/k128-torsion-iff-zero-residue.md) | 13 | `declaration-track:0400bbc3615d118aed9765b92d028780281cc0bb1386f055bb5a45b9ffabae4f` |
-| 3 | `theorem` | [exact_torsion_transports_to_k128](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportTorsionResidueHeatNonnegative.lean/declarations/exact-torsion-transports-to-k128.md) | 16 | `result-track:a18b10c9af5375b75405b2cd6d8fb9bb8e5542439c6ba6096475f28e37e9c932` |
+| 1 | `theorem` | [torsion_residue_heat_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportTorsionResidueHeatNonnegative.lean/declarations/torsion-residue-heat-nonnegative.md) | 5 | `result-track:8562fc4065a26a73eeab0b2a707ee95b3a168b49685efce0a63a32accd69ac7f` |
+| 2 | `def` | [k128_torsion_iff_zero_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportTorsionResidueHeatNonnegative.lean/declarations/k128-torsion-iff-zero-residue.md) | 13 | `declaration-track:0400bbc3615d118aed9765b92d028780281cc0bb1386f055bb5a45b9ffabae4f` |
+| 3 | `theorem` | [exact_torsion_transports_to_k128](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportTorsionResidueHeatNonnegative.lean/declarations/exact-torsion-transports-to-k128.md) | 16 | `result-track:a18b10c9af5375b75405b2cd6d8fb9bb8e5542439c6ba6096475f28e37e9c932` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

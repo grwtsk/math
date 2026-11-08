@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFrobeniusNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFrobeniusNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFrobeniusNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFrobeniusNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FrobeniusDatum](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFrobeniusNamespaced.lean/declarations/frobeniusdatum.md) | 27 | `declaration-track:f0641323c1375c162869ddbb23f904000b618c64ccffc66f12d1506e6b1252ce` |
-| 2 | `structure` | [NygaardDatum](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFrobeniusNamespaced.lean/declarations/nygaarddatum.md) | 32 | `declaration-track:5192a086a1a6ea115076b3fa3bc43258bbb85cf0316368b3d8a16e0341890978` |
-| 3 | `theorem` | [transition_refl_apply](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFrobeniusNamespaced.lean/declarations/transition-refl-apply.md) | 55 | `result-track:00d62f290e03f7483468a0b196a72a1604a6cf142945b28c5c2f87340249a70b` |
-| 4 | `structure` | [FilteredFrobeniusComparison](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFrobeniusNamespaced.lean/declarations/filteredfrobeniuscomparison.md) | 71 | `declaration-track:100691471eaf60f5a07ad89eaa7cebcac46225cb150da72c13e8327a22711e24` |
-| 5 | `def` | [valueMap](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFrobeniusNamespaced.lean/declarations/valuemap.md) | 114 | `declaration-track:08b0233619dd4fbebb3360c1eb1da5e0466dbc66f44e60c1a538c1a300d04ae0` |
-| 6 | `def` | [IsFiltrationPreserving](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFrobeniusNamespaced.lean/declarations/isfiltrationpreserving.md) | 120 | `declaration-track:915079720e2939a56139d14fcb11466d5c1c70b02b7f6354155a251e07e78bee` |
+| 1 | `structure` | [FrobeniusDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFrobeniusNamespaced.lean/declarations/frobeniusdatum.md) | 27 | `declaration-track:f0641323c1375c162869ddbb23f904000b618c64ccffc66f12d1506e6b1252ce` |
+| 2 | `structure` | [NygaardDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFrobeniusNamespaced.lean/declarations/nygaarddatum.md) | 32 | `declaration-track:5192a086a1a6ea115076b3fa3bc43258bbb85cf0316368b3d8a16e0341890978` |
+| 3 | `theorem` | [transition_refl_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFrobeniusNamespaced.lean/declarations/transition-refl-apply.md) | 55 | `result-track:00d62f290e03f7483468a0b196a72a1604a6cf142945b28c5c2f87340249a70b` |
+| 4 | `structure` | [FilteredFrobeniusComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFrobeniusNamespaced.lean/declarations/filteredfrobeniuscomparison.md) | 71 | `declaration-track:100691471eaf60f5a07ad89eaa7cebcac46225cb150da72c13e8327a22711e24` |
+| 5 | `def` | [valueMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFrobeniusNamespaced.lean/declarations/valuemap.md) | 114 | `declaration-track:08b0233619dd4fbebb3360c1eb1da5e0466dbc66f44e60c1a538c1a300d04ae0` |
+| 6 | `def` | [IsFiltrationPreserving](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredFrobeniusNamespaced.lean/declarations/isfiltrationpreserving.md) | 120 | `declaration-track:915079720e2939a56139d14fcb11466d5c1c70b02b7f6354155a251e07e78bee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

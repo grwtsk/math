@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNormalizedSixthSourceFormulaBeforeItsAsymptoticConsumerEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNormalizedSixthSourceFormulaBeforeItsAsymptoticConsumerEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNormalizedSixthSourceFormulaBeforeItsAsymptoticConsumerEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNormalizedSixthSourceFormulaBeforeItsAsymptoticConsumerEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [normalizedSixthMoment](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNormalizedSixthSourceFormulaBeforeItsAsymptoticConsumerEdition2.lean/declarations/normalizedsixthmoment.md) | 20 | `declaration-track:1b8adad022cf3b20267b4827a17567111c8ecf7204478cd842f760b67d6648e7` |
-| 2 | `theorem` | [actual_sixth_laplace_closed_formula](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNormalizedSixthSourceFormulaBeforeItsAsymptoticConsumerEdition2.lean/declarations/actual-sixth-laplace-closed-formula.md) | 23 | `result-track:3e6dc2fd23c750af1f3dad295c48d1f45ad1de30a857b2171ddcf2252c81bc67` |
-| 3 | `theorem` | [actual_sixth_normalized_squared_formula](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNormalizedSixthSourceFormulaBeforeItsAsymptoticConsumerEdition2.lean/declarations/actual-sixth-normalized-squared-formula.md) | 33 | `result-track:09b3ae7c22fef2d1813553df094eb00bf0ef4dc386cd45770d9a67081b36c587` |
-| 4 | `theorem` | [exact_limiting_normalization_coefficient](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNormalizedSixthSourceFormulaBeforeItsAsymptoticConsumerEdition2.lean/declarations/exact-limiting-normalization-coefficient.md) | 47 | `result-track:3b081fae3ffae8a6c1edc929dd3621cf766c68c15670758794d5773c0720d342` |
+| 1 | `def` | [normalizedSixthMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNormalizedSixthSourceFormulaBeforeItsAsymptoticConsumerEdition2.lean/declarations/normalizedsixthmoment.md) | 20 | `declaration-track:1b8adad022cf3b20267b4827a17567111c8ecf7204478cd842f760b67d6648e7` |
+| 2 | `theorem` | [actual_sixth_laplace_closed_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNormalizedSixthSourceFormulaBeforeItsAsymptoticConsumerEdition2.lean/declarations/actual-sixth-laplace-closed-formula.md) | 23 | `result-track:3e6dc2fd23c750af1f3dad295c48d1f45ad1de30a857b2171ddcf2252c81bc67` |
+| 3 | `theorem` | [actual_sixth_normalized_squared_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNormalizedSixthSourceFormulaBeforeItsAsymptoticConsumerEdition2.lean/declarations/actual-sixth-normalized-squared-formula.md) | 33 | `result-track:09b3ae7c22fef2d1813553df094eb00bf0ef4dc386cd45770d9a67081b36c587` |
+| 4 | `theorem` | [exact_limiting_normalization_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNormalizedSixthSourceFormulaBeforeItsAsymptoticConsumerEdition2.lean/declarations/exact-limiting-normalization-coefficient.md) | 47 | `result-track:3b081fae3ffae8a6c1edc929dd3621cf766c68c15670758794d5773c0720d342` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

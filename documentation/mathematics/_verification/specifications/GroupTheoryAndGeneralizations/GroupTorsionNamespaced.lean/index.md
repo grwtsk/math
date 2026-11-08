@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsAddTorsionFree](../../../../GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/declarations/isaddtorsionfree.md) | 38 | `declaration-track:371afed5ca15308c6eba64f0a227652df34f3e72f06f2a31991f6059a017a103` |
-| 2 | `class` | [IsMulTorsionFree](../../../../GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/declarations/ismultorsionfree.md) | 47 | `declaration-track:a8d84cc41ee3b641f066755d0b85ca2e884b25b1f4586bcc73b01a84fe185803` |
-| 3 | `instance` | [Subsingleton.to_isMulTorsionFree](../../../../GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/declarations/subsingleton-to-ismultorsionfree.md) | 52 | `declaration-track:f6ee291a7c9f778b0456beb1ea7dc4aaf666fd25c2a07e825e736f729fff186e` |
-| 4 | `lemma` | [pow_left_injective](../../../../GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/declarations/pow-left-injective.md) | 58 | `result-track:86d958364d779427b9022e22a459d712ee536d5feb4b7fa4f6873e48be425d22` |
-| 5 | `lemma` | [pow_left_inj](../../../../GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/declarations/pow-left-inj.md) | 62 | `result-track:6e633f4e0e3f32eae734cc9388f2e31f633a51f6dee1126123eca35f653cade2` |
-| 6 | `lemma` | [zpow_left_injective](../../../../GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/declarations/zpow-left-injective.md) | 70 | `result-track:fde0ddeb7cc781481168bdd96489c07eaafff54cef9c8ded76729fdfec3f305d` |
-| 7 | `lemma` | [zpow_left_inj](../../../../GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/declarations/zpow-left-inj.md) | 76 | `result-track:3a9d49aaa7862ed8938527d925c4ee1cd0faa39433cf3ad7c37c0984d04c39d3` |
-| 8 | `lemma` | [zpow_eq_zpow_iff'](../../../../GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/declarations/zpow-eq-zpow-iff.md) | 82 | `result-track:4afd1e6bf826af04fa4917177737ef8c75af3d5f36dc8f7bccddf56781178e1a` |
+| 1 | `class` | [IsAddTorsionFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/declarations/isaddtorsionfree.md) | 38 | `declaration-track:371afed5ca15308c6eba64f0a227652df34f3e72f06f2a31991f6059a017a103` |
+| 2 | `class` | [IsMulTorsionFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/declarations/ismultorsionfree.md) | 47 | `declaration-track:a8d84cc41ee3b641f066755d0b85ca2e884b25b1f4586bcc73b01a84fe185803` |
+| 3 | `instance` | [Subsingleton.to_isMulTorsionFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/declarations/subsingleton-to-ismultorsionfree.md) | 52 | `declaration-track:f6ee291a7c9f778b0456beb1ea7dc4aaf666fd25c2a07e825e736f729fff186e` |
+| 4 | `lemma` | [pow_left_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/declarations/pow-left-injective.md) | 58 | `result-track:86d958364d779427b9022e22a459d712ee536d5feb4b7fa4f6873e48be425d22` |
+| 5 | `lemma` | [pow_left_inj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/declarations/pow-left-inj.md) | 62 | `result-track:6e633f4e0e3f32eae734cc9388f2e31f633a51f6dee1126123eca35f653cade2` |
+| 6 | `lemma` | [zpow_left_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/declarations/zpow-left-injective.md) | 70 | `result-track:fde0ddeb7cc781481168bdd96489c07eaafff54cef9c8ded76729fdfec3f305d` |
+| 7 | `lemma` | [zpow_left_inj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/declarations/zpow-left-inj.md) | 76 | `result-track:3a9d49aaa7862ed8938527d925c4ee1cd0faa39433cf3ad7c37c0984d04c39d3` |
+| 8 | `lemma` | [zpow_eq_zpow_iff'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTorsionNamespaced.lean/declarations/zpow-eq-zpow-iff.md) | 82 | `result-track:4afd1e6bf826af04fa4917177737ef8c75af3d5f36dc8f7bccddf56781178e1a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentLedgerControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentLedgerControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentLedgerControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentLedgerControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentLedger`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentLedger.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentLedger`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentLedger.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [square_two_ledger_balance](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentLedgerControls.lean/declarations/square-two-ledger-balance.md) | 20 | `result-track:769e6e14056d21b13854bfbe857409ffb3d64e2d16000e947ae381c2cf46c140` |
-| 2 | `theorem` | [wrong_sign_control](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentLedgerControls.lean/declarations/wrong-sign-control.md) | 31 | `result-track:ce16b4eb8ac0daf394a27b830d4b74f652e1da34e7ed5468e41004ed0beecbad` |
-| 3 | `theorem` | [endpoint_control](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentLedgerControls.lean/declarations/endpoint-control.md) | 43 | `result-track:8d8c3b42c39253d40882a00b31019e989fe2973ac821f5fb30ea9c00f6984b59` |
-| 4 | `theorem` | [finite_head_control](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentLedgerControls.lean/declarations/finite-head-control.md) | 48 | `result-track:82ec4cad079227957fcb28e4cbac34a263a3812149bc7f27c7b13f6de011e548` |
-| 5 | `theorem` | [tail_decay_control](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentLedgerControls.lean/declarations/tail-decay-control.md) | 54 | `result-track:7af4b7714031a8f0684f52999baa012fe0778d8aaedfe19a7148571799a54f00` |
+| 1 | `theorem` | [square_two_ledger_balance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentLedgerControls.lean/declarations/square-two-ledger-balance.md) | 20 | `result-track:769e6e14056d21b13854bfbe857409ffb3d64e2d16000e947ae381c2cf46c140` |
+| 2 | `theorem` | [wrong_sign_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentLedgerControls.lean/declarations/wrong-sign-control.md) | 31 | `result-track:ce16b4eb8ac0daf394a27b830d4b74f652e1da34e7ed5468e41004ed0beecbad` |
+| 3 | `theorem` | [endpoint_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentLedgerControls.lean/declarations/endpoint-control.md) | 43 | `result-track:8d8c3b42c39253d40882a00b31019e989fe2973ac821f5fb30ea9c00f6984b59` |
+| 4 | `theorem` | [finite_head_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentLedgerControls.lean/declarations/finite-head-control.md) | 48 | `result-track:82ec4cad079227957fcb28e4cbac34a263a3812149bc7f27c7b13f6de011e548` |
+| 5 | `theorem` | [tail_decay_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentLedgerControls.lean/declarations/tail-decay-control.md) | 54 | `result-track:7af4b7714031a8f0684f52999baa012fe0778d8aaedfe19a7148571799a54f00` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

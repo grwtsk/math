@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectFederation.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectFederation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectFederation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectFederation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [preserves_source_snapshots](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectFederation.lean/declarations/preserves-source-snapshots.md) | 14 | `result-track:fb23619794d6c478e3bf58fe43f356691e5e7a7e29cd66d8106d61cab121a264` |
-| 2 | `theorem` | [preserves_project_snapshot_keys](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectFederation.lean/declarations/preserves-project-snapshot-keys.md) | 22 | `result-track:6875e0e7d3bda4dde88ccc9d9d56e261ace0b2a400f992271f9ff7da023c8e67` |
-| 3 | `theorem` | [preserves_source_object_scope](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectFederation.lean/declarations/preserves-source-object-scope.md) | 30 | `result-track:5a158e97daf0b0d6f14d15aefb24548e0237f6119a84f91789217726b6853f48` |
+| 1 | `theorem` | [preserves_source_snapshots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectFederation.lean/declarations/preserves-source-snapshots.md) | 14 | `result-track:fb23619794d6c478e3bf58fe43f356691e5e7a7e29cd66d8106d61cab121a264` |
+| 2 | `theorem` | [preserves_project_snapshot_keys](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectFederation.lean/declarations/preserves-project-snapshot-keys.md) | 22 | `result-track:6875e0e7d3bda4dde88ccc9d9d56e261ace0b2a400f992271f9ff7da023c8e67` |
+| 3 | `theorem` | [preserves_source_object_scope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectFederation.lean/declarations/preserves-source-object-scope.md) | 30 | `result-track:5a158e97daf0b0d6f14d15aefb24548e0237f6119a84f91789217726b6853f48` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

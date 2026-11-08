@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CircleClosureNamespacedCircleClosureCertificate.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CircleClosureNamespacedCircleClosureCertificate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CircleClosureNamespacedCircleClosureCertificate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CircleClosureNamespacedCircleClosureCertificate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CircleClosureCertificate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CircleClosureNamespacedCircleClosureCertificate.lean/declarations/circleclosurecertificate.md) | 15 | `declaration-track:7314edec51702b59532c74ac5d50eb4c2135e371957cdca8ccedded3b9f50bad` |
-| 2 | `def` | [CircleClosureCertificate.status](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CircleClosureNamespacedCircleClosureCertificate.lean/declarations/circleclosurecertificate-status.md) | 20 | `declaration-track:6c771f011fba77552ecafc3661e0d2439e3e37a17cc66cf92016e4d9811f3005` |
+| 1 | `structure` | [CircleClosureCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CircleClosureNamespacedCircleClosureCertificate.lean/declarations/circleclosurecertificate.md) | 15 | `declaration-track:7314edec51702b59532c74ac5d50eb4c2135e371957cdca8ccedded3b9f50bad` |
+| 2 | `def` | [CircleClosureCertificate.status](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CircleClosureNamespacedCircleClosureCertificate.lean/declarations/circleclosurecertificate-status.md) | 20 | `declaration-track:6c771f011fba77552ecafc3661e0d2439e3e37a17cc66cf92016e4d9811f3005` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

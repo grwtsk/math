@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Problem.lean/index.md) · [Full source](../../../../Combinatorics/Problem.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Problem.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Problem.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ProblemSourceKind](../../../../Combinatorics/Problem.lean/declarations/problemsourcekind.md) | 9 | `declaration-track:a4a500f585208f8d6be139210f7698c3c7d2624e863a48b0100c8a2f030c28ca` |
-| 2 | `inductive` | [ProblemDisposition](../../../../Combinatorics/Problem.lean/declarations/problemdisposition.md) | 15 | `declaration-track:0d06823cc173a4b1c160c9cacfb2c6cc7c61470ed9e84534ad3f1ff2c465d2fb` |
-| 3 | `structure` | [ProblemIR](../../../../Combinatorics/Problem.lean/declarations/problemir.md) | 31 | `declaration-track:cfaeb5370c7421f61987f5637741f4eb8c0629e673b7f834c35c2e95aba1c244` |
-| 4 | `def` | [compileProblemIR](../../../../Combinatorics/Problem.lean/declarations/compileproblemir.md) | 48 | `declaration-track:018ac9ce3602a23cbbb8d41f7f6793c498bcb18b215996e66b0f50b882bab712` |
+| 1 | `inductive` | [ProblemSourceKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Problem.lean/declarations/problemsourcekind.md) | 9 | `declaration-track:a4a500f585208f8d6be139210f7698c3c7d2624e863a48b0100c8a2f030c28ca` |
+| 2 | `inductive` | [ProblemDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Problem.lean/declarations/problemdisposition.md) | 15 | `declaration-track:0d06823cc173a4b1c160c9cacfb2c6cc7c61470ed9e84534ad3f1ff2c465d2fb` |
+| 3 | `structure` | [ProblemIR](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Problem.lean/declarations/problemir.md) | 31 | `declaration-track:cfaeb5370c7421f61987f5637741f4eb8c0629e673b7f834c35c2e95aba1c244` |
+| 4 | `def` | [compileProblemIR](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Problem.lean/declarations/compileproblemir.md) | 48 | `declaration-track:018ac9ce3602a23cbbb8d41f7f6793c498bcb18b215996e66b0f50b882bab712` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/SeparationQuotientHomNamespaced.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/SeparationQuotientHomNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/SeparationQuotientHomNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/SeparationQuotientHomNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [liftContinuousMonoidHom](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/SeparationQuotientHomNamespaced.lean/declarations/liftcontinuousmonoidhom.md) | 33 | `declaration-track:209786d62d80074212ef4ace114d0d83c03a4059c7829e1313239d6ddf56cf45` |
-| 2 | `theorem` | [liftContinuousCommMonoidHom_mk](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/SeparationQuotientHomNamespaced.lean/declarations/liftcontinuouscommmonoidhom-mk.md) | 42 | `result-track:1396624954b37c528ab24c6f0a7272240e408b39497d5b6066eb364b96d566f7` |
+| 1 | `def` | [liftContinuousMonoidHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/SeparationQuotientHomNamespaced.lean/declarations/liftcontinuousmonoidhom.md) | 33 | `declaration-track:209786d62d80074212ef4ace114d0d83c03a4059c7829e1313239d6ddf56cf45` |
+| 2 | `theorem` | [liftContinuousCommMonoidHom_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/SeparationQuotientHomNamespaced.lean/declarations/liftcontinuouscommmonoidhom-mk.md) | 42 | `result-track:1396624954b37c528ab24c6f0a7272240e408b39497d5b6066eb364b96d566f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [JointObligationDomain](../../../../../ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/declarations/jointobligationdomain.md) | 21 | `declaration-track:2c8d975446cab981495f83b99a65316da0f7416433529b6eb9145369785a5c0d` |
-| 2 | `structure` | [JointObligation](../../../../../ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/declarations/jointobligation.md) | 27 | `declaration-track:6365f623d91179d9561cf7ba38e682bcf81d35e58fb45cb2252aee45286620b7` |
-| 3 | `structure` | [JointOriginCoordinate](../../../../../ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/declarations/jointorigincoordinate.md) | 33 | `declaration-track:d62d68f6bf5446e3444e30ee4be41b3f24a962a6890eac445c85a3b9713b4b95` |
-| 4 | `theorem` | [equal_coordinates_do_not_erase_domain](../../../../../ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/declarations/equal-coordinates-do-not-erase-domain.md) | 38 | `result-track:5596c3c772d3135db6138e20b497f9876b056cef827e9aa001ea5f28649e5616` |
-| 5 | `structure` | [JointFrontierEntry](../../../../../ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/declarations/jointfrontierentry.md) | 47 | `declaration-track:38a41822dcaa11743053b3bae58b56f9687a98be70a0470fea20c5e72ebd516a` |
-| 6 | `inductive` | [JointUnknownKind](../../../../../ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/declarations/jointunknownkind.md) | 54 | `declaration-track:c872463d539a6ccb14c51c8bfbba5ac4fefba49f28adf514334190a1d0a3ba5b` |
-| 7 | `structure` | [ExactJointCost](../../../../../ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/declarations/exactjointcost.md) | 70 | `declaration-track:81e591f6a89be2d46f07db198cbb0fb13bbf88b4b514a0aadc9238defa18e35a` |
-| 8 | `inductive` | [JointProtectedMeaning](../../../../../ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/declarations/jointprotectedmeaning.md) | 82 | `declaration-track:141cdb8e98c9b23728a882b90a0124f76273e29933ea03e95050d3b9bc7f5b0b` |
+| 1 | `inductive` | [JointObligationDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/declarations/jointobligationdomain.md) | 21 | `declaration-track:2c8d975446cab981495f83b99a65316da0f7416433529b6eb9145369785a5c0d` |
+| 2 | `structure` | [JointObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/declarations/jointobligation.md) | 27 | `declaration-track:6365f623d91179d9561cf7ba38e682bcf81d35e58fb45cb2252aee45286620b7` |
+| 3 | `structure` | [JointOriginCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/declarations/jointorigincoordinate.md) | 33 | `declaration-track:d62d68f6bf5446e3444e30ee4be41b3f24a962a6890eac445c85a3b9713b4b95` |
+| 4 | `theorem` | [equal_coordinates_do_not_erase_domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/declarations/equal-coordinates-do-not-erase-domain.md) | 38 | `result-track:5596c3c772d3135db6138e20b497f9876b056cef827e9aa001ea5f28649e5616` |
+| 5 | `structure` | [JointFrontierEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/declarations/jointfrontierentry.md) | 47 | `declaration-track:38a41822dcaa11743053b3bae58b56f9687a98be70a0470fea20c5e72ebd516a` |
+| 6 | `inductive` | [JointUnknownKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/declarations/jointunknownkind.md) | 54 | `declaration-track:c872463d539a6ccb14c51c8bfbba5ac4fefba49f28adf514334190a1d0a3ba5b` |
+| 7 | `structure` | [ExactJointCost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/declarations/exactjointcost.md) | 70 | `declaration-track:81e591f6a89be2d46f07db198cbb0fb13bbf88b4b514a0aadc9238defa18e35a` |
+| 8 | `inductive` | [JointProtectedMeaning](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JointFocusNamespaced.lean/declarations/jointprotectedmeaning.md) | 82 | `declaration-track:141cdb8e98c9b23728a882b90a0124f76273e29933ea03e95050d3b9bc7f5b0b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

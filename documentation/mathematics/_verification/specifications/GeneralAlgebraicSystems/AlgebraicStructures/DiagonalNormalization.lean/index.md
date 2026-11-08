@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DiagonalNormalization.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DiagonalNormalization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DiagonalNormalization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DiagonalNormalization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [X_sq_ne_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DiagonalNormalization.lean/declarations/x-sq-ne-one.md) | 9 | `result-track:bfca4f98c706cfb98c282f19e514f081d4e92dfa6f7d138e572927c382b09479` |
-| 2 | `theorem` | [normalized_diagonal_ne_X_sq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DiagonalNormalization.lean/declarations/normalized-diagonal-ne-x-sq.md) | 15 | `result-track:d975d94b529ee8681f21a4c86ffae70cb919158ad30efa35c7aa4e314f9d226d` |
+| 1 | `theorem` | [X_sq_ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DiagonalNormalization.lean/declarations/x-sq-ne-one.md) | 9 | `result-track:bfca4f98c706cfb98c282f19e514f081d4e92dfa6f7d138e572927c382b09479` |
+| 2 | `theorem` | [normalized_diagonal_ne_X_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DiagonalNormalization.lean/declarations/normalized-diagonal-ne-x-sq.md) | 15 | `result-track:d975d94b529ee8681f21a4c86ffae70cb919158ad30efa35c7aa4e314f9d226d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

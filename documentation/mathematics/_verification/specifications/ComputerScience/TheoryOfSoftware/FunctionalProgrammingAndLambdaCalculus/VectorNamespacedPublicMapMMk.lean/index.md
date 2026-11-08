@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicMapMMk.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicMapMMk.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicMapMMk.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicMapMMk.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mapM_mk](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicMapMMk.lean/declarations/mapm-mk.md) | 23 | `result-track:ff4dceea2e660c4de4f88d1157808044a1de6cef6b43d6b12435ca771d8afb35` |
-| 2 | `theorem` | [mapIdxM_mk](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicMapMMk.lean/declarations/mapidxm-mk.md) | 30 | `result-track:040e4bb97e5965b9135112da115666dd85b0c288f6c0d1fffdb1f898e1a7a1a3` |
-| 3 | `theorem` | [mapFinIdxM_mk](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicMapMMk.lean/declarations/mapfinidxm-mk.md) | 37 | `result-track:16d364e765ef6cf95722a14ea9be132e76cb27948cd6cbb92b8b19e63363b648` |
+| 1 | `theorem` | [mapM_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicMapMMk.lean/declarations/mapm-mk.md) | 23 | `result-track:ff4dceea2e660c4de4f88d1157808044a1de6cef6b43d6b12435ca771d8afb35` |
+| 2 | `theorem` | [mapIdxM_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicMapMMk.lean/declarations/mapidxm-mk.md) | 30 | `result-track:040e4bb97e5965b9135112da115666dd85b0c288f6c0d1fffdb1f898e1a7a1a3` |
+| 3 | `theorem` | [mapFinIdxM_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicMapMMk.lean/declarations/mapfinidxm-mk.md) | 37 | `result-track:16d364e765ef6cf95722a14ea9be132e76cb27948cd6cbb92b8b19e63363b648` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

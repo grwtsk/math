@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/BridgeMultiplierEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/BridgeMultiplierEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeMultiplierEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeMultiplierEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [archimedeanMultiplier_measurable](../../../../MeasureAndIntegration/BridgeMultiplierEdition1.lean/declarations/archimedeanmultiplier-measurable.md) | 23 | `result-track:4169996a964eab384368a877ddc2e8fa6f15403f7ee8468ef1a83875e23cdfec` |
-| 2 | `theorem` | [multiplier_abs_le_of_estimate](../../../../MeasureAndIntegration/BridgeMultiplierEdition1.lean/declarations/multiplier-abs-le-of-estimate.md) | 30 | `result-track:d4a6564a0f64a7f4b337b655873f566093d4b027563417cd6c7f016f37de8456` |
-| 3 | `theorem` | [actual_archimedean_integrable_of_multiplier_estimate](../../../../MeasureAndIntegration/BridgeMultiplierEdition1.lean/declarations/actual-archimedean-integrable-of-multiplier-estimate.md) | 43 | `result-track:d95b04b9e958173627f1936b0d532733431948fe6177ea4b10aa4547747cfddb` |
-| 4 | `theorem` | [normalization_admissibility_of_multiplier_estimate](../../../../MeasureAndIntegration/BridgeMultiplierEdition1.lean/declarations/normalization-admissibility-of-multiplier-estimate.md) | 69 | `result-track:0c8badb9201a59b962c2284bd660be0d56e85a383882100e1c049dad5e6528c0` |
+| 1 | `theorem` | [archimedeanMultiplier_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeMultiplierEdition1.lean/declarations/archimedeanmultiplier-measurable.md) | 23 | `result-track:4169996a964eab384368a877ddc2e8fa6f15403f7ee8468ef1a83875e23cdfec` |
+| 2 | `theorem` | [multiplier_abs_le_of_estimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeMultiplierEdition1.lean/declarations/multiplier-abs-le-of-estimate.md) | 30 | `result-track:d4a6564a0f64a7f4b337b655873f566093d4b027563417cd6c7f016f37de8456` |
+| 3 | `theorem` | [actual_archimedean_integrable_of_multiplier_estimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeMultiplierEdition1.lean/declarations/actual-archimedean-integrable-of-multiplier-estimate.md) | 43 | `result-track:d95b04b9e958173627f1936b0d532733431948fe6177ea4b10aa4547747cfddb` |
+| 4 | `theorem` | [normalization_admissibility_of_multiplier_estimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeMultiplierEdition1.lean/declarations/normalization-admissibility-of-multiplier-estimate.md) | 69 | `result-track:0c8badb9201a59b962c2284bd660be0d56e85a383882100e1c049dad5e6528c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SourceLeadingTailDecayEdition2.lean/index.md) · [Full source](../../../../GeneralTopology/SourceLeadingTailDecayEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceLeadingTailDecayEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceLeadingTailDecayEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [logarithmicLeadingErrorEnvelope](../../../../GeneralTopology/SourceLeadingTailDecayEdition2.lean/declarations/logarithmicleadingerrorenvelope.md) | 24 | `declaration-track:5498985f4f0eb71f01a1f1f9e8aeadf6735dbb6025b9cd7ee9667868d7940df4` |
-| 2 | `theorem` | [fullKappaShortBudget_le_logarithmic_envelope](../../../../GeneralTopology/SourceLeadingTailDecayEdition2.lean/declarations/fullkappashortbudget-le-logarithmic-envelope.md) | 30 | `result-track:7e8dd265f124f5462bee5a5065c97e6092521b4ef7a3f754c6baa8889e66bf1b` |
-| 3 | `theorem` | [logarithmicLeadingErrorEnvelope_tendsto_zero](../../../../GeneralTopology/SourceLeadingTailDecayEdition2.lean/declarations/logarithmicleadingerrorenvelope-tendsto-zero.md) | 65 | `result-track:602b2e5fd70efb37dbc5d283b3bfcfd9ac1834cf91647899f0203e0f6da6a3f0` |
-| 4 | `theorem` | [fullKappaShortBudget_tendsto_zero](../../../../GeneralTopology/SourceLeadingTailDecayEdition2.lean/declarations/fullkappashortbudget-tendsto-zero.md) | 81 | `result-track:c23162ef453a5b73ff1a79eab76dc110fe4be0c0e63149b69ec6075f857b4a81` |
-| 5 | `theorem` | [renormalized_sub_actual_leading_tendsto_zero](../../../../GeneralTopology/SourceLeadingTailDecayEdition2.lean/declarations/renormalized-sub-actual-leading-tendsto-zero.md) | 94 | `result-track:feecf48fc5ca98a29e4ece259046e4bd6cebf8bd88ca573062fee51d0bb5361e` |
+| 1 | `def` | [logarithmicLeadingErrorEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceLeadingTailDecayEdition2.lean/declarations/logarithmicleadingerrorenvelope.md) | 24 | `declaration-track:5498985f4f0eb71f01a1f1f9e8aeadf6735dbb6025b9cd7ee9667868d7940df4` |
+| 2 | `theorem` | [fullKappaShortBudget_le_logarithmic_envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceLeadingTailDecayEdition2.lean/declarations/fullkappashortbudget-le-logarithmic-envelope.md) | 30 | `result-track:7e8dd265f124f5462bee5a5065c97e6092521b4ef7a3f754c6baa8889e66bf1b` |
+| 3 | `theorem` | [logarithmicLeadingErrorEnvelope_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceLeadingTailDecayEdition2.lean/declarations/logarithmicleadingerrorenvelope-tendsto-zero.md) | 65 | `result-track:602b2e5fd70efb37dbc5d283b3bfcfd9ac1834cf91647899f0203e0f6da6a3f0` |
+| 4 | `theorem` | [fullKappaShortBudget_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceLeadingTailDecayEdition2.lean/declarations/fullkappashortbudget-tendsto-zero.md) | 81 | `result-track:c23162ef453a5b73ff1a79eab76dc110fe4be0c0e63149b69ec6075f857b4a81` |
+| 5 | `theorem` | [renormalized_sub_actual_leading_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceLeadingTailDecayEdition2.lean/declarations/renormalized-sub-actual-leading-tendsto-zero.md) | 94 | `result-track:feecf48fc5ca98a29e4ece259046e4bd6cebf8bd88ca573062fee51d0bb5361e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

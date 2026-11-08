@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualSourceCrossSignChallengeAttempt01Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualSourceCrossSignChallengeAttempt01Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSourceCrossSignChallengeAttempt01Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSourceCrossSignChallengeAttempt01Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_mixed_kernel_at_zero_strictly_negative](../../../../MeasureAndIntegration/ActualSourceCrossSignChallengeAttempt01Namespaced.lean/declarations/actual-mixed-kernel-at-zero-strictly-negative.md) | 33 | `result-track:560f020c370af22de99e809f6e446bb214071a0d1f8a9af71e21ef44ecfdd65d` |
-| 2 | `theorem` | [actual_same_singleton_mixed_cross_negative](../../../../MeasureAndIntegration/ActualSourceCrossSignChallengeAttempt01Namespaced.lean/declarations/actual-same-singleton-mixed-cross-negative.md) | 47 | `result-track:49781926964e3a436a069fa8fe1a19c1de89a514a02baf1123f174938dd3a57e` |
-| 3 | `theorem` | [actual_opposite_singleton_mixed_cross_positive](../../../../MeasureAndIntegration/ActualSourceCrossSignChallengeAttempt01Namespaced.lean/declarations/actual-opposite-singleton-mixed-cross-positive.md) | 56 | `result-track:e507abf3bae3ff20faebbbd195fb493a6a4e1940a85ec838b5545a5b811fad4a` |
+| 1 | `theorem` | [actual_mixed_kernel_at_zero_strictly_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSourceCrossSignChallengeAttempt01Namespaced.lean/declarations/actual-mixed-kernel-at-zero-strictly-negative.md) | 33 | `result-track:560f020c370af22de99e809f6e446bb214071a0d1f8a9af71e21ef44ecfdd65d` |
+| 2 | `theorem` | [actual_same_singleton_mixed_cross_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSourceCrossSignChallengeAttempt01Namespaced.lean/declarations/actual-same-singleton-mixed-cross-negative.md) | 47 | `result-track:49781926964e3a436a069fa8fe1a19c1de89a514a02baf1123f174938dd3a57e` |
+| 3 | `theorem` | [actual_opposite_singleton_mixed_cross_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSourceCrossSignChallengeAttempt01Namespaced.lean/declarations/actual-opposite-singleton-mixed-cross-positive.md) | 56 | `result-track:e507abf3bae3ff20faebbbd195fb493a6a4e1940a85ec838b5545a5b811fad4a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

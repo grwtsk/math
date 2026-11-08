@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ExactPeriodHasExactPeriod.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ExactPeriodHasExactPeriod.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ExactPeriodHasExactPeriod.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ExactPeriodHasExactPeriod.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [HasExactPeriod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ExactPeriodHasExactPeriod.lean/declarations/hasexactperiod.md) | 20 | `declaration-track:e4f83a8efc7115adb2be8303f8ffc614ad1099d9365629153971dd7d9f80863b` |
-| 2 | `def` | [ActionFaithful](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ExactPeriodHasExactPeriod.lean/declarations/actionfaithful.md) | 33 | `declaration-track:287c87564593762d2d659042a6e840d8a4eedd4f5295da2120172a0ef48b22a8` |
-| 3 | `theorem` | [exact_period_of_hasOrder_and_faithful](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ExactPeriodHasExactPeriod.lean/declarations/exact-period-of-hasorder-and-faithful.md) | 41 | `result-track:ec3e8bff6b098e67f6f6969012115af0a676c5dbc7f536b1ec673cf957fa8a2e` |
+| 1 | `def` | [HasExactPeriod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ExactPeriodHasExactPeriod.lean/declarations/hasexactperiod.md) | 20 | `declaration-track:e4f83a8efc7115adb2be8303f8ffc614ad1099d9365629153971dd7d9f80863b` |
+| 2 | `def` | [ActionFaithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ExactPeriodHasExactPeriod.lean/declarations/actionfaithful.md) | 33 | `declaration-track:287c87564593762d2d659042a6e840d8a4eedd4f5295da2120172a0ef48b22a8` |
+| 3 | `theorem` | [exact_period_of_hasOrder_and_faithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ExactPeriodHasExactPeriod.lean/declarations/exact-period-of-hasorder-and-faithful.md) | 41 | `result-track:ec3e8bff6b098e67f6f6969012115af0a676c5dbc7f536b1ec673cf957fa8a2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

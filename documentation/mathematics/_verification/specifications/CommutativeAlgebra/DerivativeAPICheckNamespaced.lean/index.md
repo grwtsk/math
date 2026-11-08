@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/DerivativeAPICheckNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/DerivativeAPICheckNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivativeAPICheckNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivativeAPICheckNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pderiv_ofNat](../../../../CommutativeAlgebra/DerivativeAPICheckNamespaced.lean/declarations/pderiv-ofnat.md) | 16 | `result-track:87cd350e80d1caaa0d10a31da8056da518b4dafdf90ae00c9159f16be529cf20` |
-| 2 | `example` | [(anonymous)](../../../../CommutativeAlgebra/DerivativeAPICheckNamespaced.lean/declarations/example.md) | 20 | `declaration-track:81a433693d17f46d48c31e8aa2884d17f910e27ffa1b3cf4d68b52bab3f865fe` |
+| 1 | `theorem` | [pderiv_ofNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivativeAPICheckNamespaced.lean/declarations/pderiv-ofnat.md) | 16 | `result-track:87cd350e80d1caaa0d10a31da8056da518b4dafdf90ae00c9159f16be529cf20` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivativeAPICheckNamespaced.lean/declarations/example.md) | 20 | `declaration-track:81a433693d17f46d48c31e8aa2884d17f910e27ffa1b3cf4d68b52bab3f865fe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

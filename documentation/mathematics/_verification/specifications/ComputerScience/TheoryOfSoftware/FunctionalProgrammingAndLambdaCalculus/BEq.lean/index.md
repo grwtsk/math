@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BEq.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BEq.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BEq.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BEq.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [PartialEquivBEq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BEq.lean/declarations/partialequivbeq.md) | 14 | `declaration-track:2607c7bcab1dff1a42e2dccdab52c38a34829681c8dce55abe089ad5f2a14141` |
-| 2 | `theorem` | [beq_eq_false_iff_ne](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BEq.lean/declarations/beq-eq-false-iff-ne.md) | 20 | `result-track:47167dc5d63bc9d22b28b3b538a21c9372a4ad84699a0efacc59d67e43bf9b22` |
+| 1 | `class` | [PartialEquivBEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BEq.lean/declarations/partialequivbeq.md) | 14 | `declaration-track:2607c7bcab1dff1a42e2dccdab52c38a34829681c8dce55abe089ad5f2a14141` |
+| 2 | `theorem` | [beq_eq_false_iff_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BEq.lean/declarations/beq-eq-false-iff-ne.md) | 20 | `result-track:47167dc5d63bc9d22b28b3b538a21c9372a4ad84699a0efacc59d67e43bf9b22` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

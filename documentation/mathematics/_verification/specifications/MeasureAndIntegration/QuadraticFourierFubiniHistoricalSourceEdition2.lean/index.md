@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Fourier.ReciprocalZetaQuadraticKernel`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalZetaQuadraticKernel.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.ReciprocalZetaQuadraticKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalZetaQuadraticKernel.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.MeasureTheory.Integral.Prod` — import line 2; external provider; requires a separately pinned dependency.
 - `Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap` — import line 3; external provider; requires a separately pinned dependency.
 
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [phase](../../../../MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/phase.md) | 10 | `declaration-track:cdb5b860e2e7d2e36852fee717fe3660ea9d02c693583a2568c3129c112d1df9` |
-| 2 | `def` | [triple](../../../../MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/triple.md) | 13 | `declaration-track:bb6ca991d791475295738e0e405534679042be2f37a12ec120ecbb062dd787a0` |
-| 3 | `lemma` | [conjugate_integrable](../../../../MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/conjugate-integrable.md) | 17 | `result-track:9e4c6e4fae044bf82d696ed68f2ec100165663f0c7a82433063e42bd75a4f987` |
-| 4 | `lemma` | [phase_norm](../../../../MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/phase-norm.md) | 25 | `result-track:a5aaf540a509d0710d0d11d2cefd523c0b7d6aba6430da8b13d2889c2c49a978` |
-| 5 | `lemma` | [phase_norm_bound](../../../../MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/phase-norm-bound.md) | 28 | `result-track:913b21f6d9189d804b58ad7acb284cc552ad9117967beb62fd8ad360c2d84305` |
-| 6 | `lemma` | [triple_integrable](../../../../MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/triple-integrable.md) | 35 | `result-track:cf5204011ba81809e08dc734b6b26695aa5954ca38744983e4638c912ab5447d` |
-| 7 | `lemma` | [density_eq_time_integral](../../../../MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/density-eq-time-integral.md) | 50 | `result-track:2c1103f0290fda8888302c38e1f623bcf3e8bc69126067ce9cea786ebc3f7a32` |
-| 8 | `lemma` | [density_integrable](../../../../MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/density-integrable.md) | 57 | `result-track:8c620ea82a712ace082f8f00242b9dacdb1635bbb8605a24c0d9b509fb5f6410` |
-| 9 | `lemma` | [density_section_integrable](../../../../MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/density-section-integrable.md) | 64 | `result-track:32284f94f8e4b909c22ed5e0d70403c0a1411c7dca5ff6d4d077361c18e7ef66` |
-| 10 | `lemma` | [density_outer_integrable](../../../../MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/density-outer-integrable.md) | 82 | `result-track:6ad36ab2bc989c416dd4173de0a1be08c88a137812d44f9d71534e091ef36f43` |
-| 11 | `lemma` | [phase_factorization](../../../../MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/phase-factorization.md) | 87 | `result-track:7f99b4f8211dde1ed433540ca354205cb404164fc5538e7020b60d516a35ab5b` |
-| 12 | `lemma` | [frequency_product_return](../../../../MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/frequency-product-return.md) | 103 | `result-track:9eda3b67a195dc9295ba524e62d717f6e51625667398880f41a1e11931adc241` |
-| 13 | `theorem` | [density_double_return](../../../../MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/density-double-return.md) | 128 | `result-track:764e9198b9e4b79119e2df5f0d025256653d55fb72055afb7a3aa9b6848ce92a` |
+| 1 | `def` | [phase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/phase.md) | 10 | `declaration-track:cdb5b860e2e7d2e36852fee717fe3660ea9d02c693583a2568c3129c112d1df9` |
+| 2 | `def` | [triple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/triple.md) | 13 | `declaration-track:bb6ca991d791475295738e0e405534679042be2f37a12ec120ecbb062dd787a0` |
+| 3 | `lemma` | [conjugate_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/conjugate-integrable.md) | 17 | `result-track:9e4c6e4fae044bf82d696ed68f2ec100165663f0c7a82433063e42bd75a4f987` |
+| 4 | `lemma` | [phase_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/phase-norm.md) | 25 | `result-track:a5aaf540a509d0710d0d11d2cefd523c0b7d6aba6430da8b13d2889c2c49a978` |
+| 5 | `lemma` | [phase_norm_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/phase-norm-bound.md) | 28 | `result-track:913b21f6d9189d804b58ad7acb284cc552ad9117967beb62fd8ad360c2d84305` |
+| 6 | `lemma` | [triple_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/triple-integrable.md) | 35 | `result-track:cf5204011ba81809e08dc734b6b26695aa5954ca38744983e4638c912ab5447d` |
+| 7 | `lemma` | [density_eq_time_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/density-eq-time-integral.md) | 50 | `result-track:2c1103f0290fda8888302c38e1f623bcf3e8bc69126067ce9cea786ebc3f7a32` |
+| 8 | `lemma` | [density_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/density-integrable.md) | 57 | `result-track:8c620ea82a712ace082f8f00242b9dacdb1635bbb8605a24c0d9b509fb5f6410` |
+| 9 | `lemma` | [density_section_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/density-section-integrable.md) | 64 | `result-track:32284f94f8e4b909c22ed5e0d70403c0a1411c7dca5ff6d4d077361c18e7ef66` |
+| 10 | `lemma` | [density_outer_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/density-outer-integrable.md) | 82 | `result-track:6ad36ab2bc989c416dd4173de0a1be08c88a137812d44f9d71534e091ef36f43` |
+| 11 | `lemma` | [phase_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/phase-factorization.md) | 87 | `result-track:7f99b4f8211dde1ed433540ca354205cb404164fc5538e7020b60d516a35ab5b` |
+| 12 | `lemma` | [frequency_product_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/frequency-product-return.md) | 103 | `result-track:9eda3b67a195dc9295ba524e62d717f6e51625667398880f41a1e11931adc241` |
+| 13 | `theorem` | [density_double_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuadraticFourierFubiniHistoricalSourceEdition2.lean/declarations/density-double-return.md) | 128 | `result-track:764e9198b9e4b79119e2df5f0d025256653d55fb72055afb7a3aa9b6848ce92a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

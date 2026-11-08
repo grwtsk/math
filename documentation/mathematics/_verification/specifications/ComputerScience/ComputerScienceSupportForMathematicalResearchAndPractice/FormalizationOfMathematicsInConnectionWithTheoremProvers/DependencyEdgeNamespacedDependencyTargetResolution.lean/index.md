@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyEdgeNamespacedDependencyTargetResolution.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyEdgeNamespacedDependencyTargetResolution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyEdgeNamespacedDependencyTargetResolution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyEdgeNamespacedDependencyTargetResolution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [DependencyTargetResolution](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyEdgeNamespacedDependencyTargetResolution.lean/declarations/dependencytargetresolution.md) | 24 | `declaration-track:c48135a00fb37f7ee190d6e5bde1e8d8cbeba3836474f967fc47ea6f7525f311` |
-| 2 | `structure` | [DependencyEdge](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyEdgeNamespacedDependencyTargetResolution.lean/declarations/dependencyedge.md) | 29 | `declaration-track:fc215dd6cc7725b35ee280159db9d2b37a66e05ea06a7b363a30a08247e87521` |
-| 3 | `def` | [IsLogical](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyEdgeNamespacedDependencyTargetResolution.lean/declarations/islogical.md) | 46 | `declaration-track:15ec3b3209f7bacaeb9a61c1798678cbe9b94cffe91de058c707f3ce901ccdde` |
+| 1 | `inductive` | [DependencyTargetResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyEdgeNamespacedDependencyTargetResolution.lean/declarations/dependencytargetresolution.md) | 24 | `declaration-track:c48135a00fb37f7ee190d6e5bde1e8d8cbeba3836474f967fc47ea6f7525f311` |
+| 2 | `structure` | [DependencyEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyEdgeNamespacedDependencyTargetResolution.lean/declarations/dependencyedge.md) | 29 | `declaration-track:fc215dd6cc7725b35ee280159db9d2b37a66e05ea06a7b363a30a08247e87521` |
+| 3 | `def` | [IsLogical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyEdgeNamespacedDependencyTargetResolution.lean/declarations/islogical.md) | 46 | `declaration-track:15ec3b3209f7bacaeb9a61c1798678cbe9b94cffe91de058c707f3ce901ccdde` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

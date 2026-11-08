@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/OrderingBasicNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/OrderingBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OrderingBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OrderingBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Compares](../../../../../../ComputerScience/TheoryOfData/DataStructures/OrderingBasicNamespaced.lean/declarations/compares.md) | 32 | `declaration-track:d8521df15ebaf6622cdcf602072976b44e95465f9d0e73d1cda4110a10ab9815` |
-| 2 | `lemma` | [compares_lt](../../../../../../ComputerScience/TheoryOfData/DataStructures/OrderingBasicNamespaced.lean/declarations/compares-lt.md) | 37 | `result-track:37ab72ba2526b2041e3d6ee30a7b2cd4efbc9c984c09f23fb783d94894408c73` |
-| 3 | `lemma` | [compares_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/OrderingBasicNamespaced.lean/declarations/compares-eq.md) | 39 | `result-track:d7452a7b317764b5ea2ebacb9392d7404816234af84331a43096b878a2b505bd` |
-| 4 | `lemma` | [compares_gt](../../../../../../ComputerScience/TheoryOfData/DataStructures/OrderingBasicNamespaced.lean/declarations/compares-gt.md) | 41 | `result-track:d2ea37e73e215ef2e21d958ad7312b923f69874ddf16c30940ed45ea532d3479` |
-| 5 | `def` | [dthen](../../../../../../ComputerScience/TheoryOfData/DataStructures/OrderingBasicNamespaced.lean/declarations/dthen.md) | 45 | `declaration-track:8d5ac7785391ae3546fcf53cafef7cfeb34d0329807c54e9409cedeb7992e667` |
-| 6 | `def` | [cmpUsing](../../../../../../ComputerScience/TheoryOfData/DataStructures/OrderingBasicNamespaced.lean/declarations/cmpusing.md) | 56 | `declaration-track:0b74bd34aaebca6b60dcc41b56beb03dacde1404ef4cd2e301d122435305e3c5` |
-| 7 | `def` | [cmp](../../../../../../ComputerScience/TheoryOfData/DataStructures/OrderingBasicNamespaced.lean/declarations/cmp.md) | 63 | `declaration-track:e9ad12494353ed84f087f6a0c2d0f2a41773ad7681ead1edb3c673a69903cb3a` |
+| 1 | `def` | [Compares](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OrderingBasicNamespaced.lean/declarations/compares.md) | 32 | `declaration-track:d8521df15ebaf6622cdcf602072976b44e95465f9d0e73d1cda4110a10ab9815` |
+| 2 | `lemma` | [compares_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OrderingBasicNamespaced.lean/declarations/compares-lt.md) | 37 | `result-track:37ab72ba2526b2041e3d6ee30a7b2cd4efbc9c984c09f23fb783d94894408c73` |
+| 3 | `lemma` | [compares_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OrderingBasicNamespaced.lean/declarations/compares-eq.md) | 39 | `result-track:d7452a7b317764b5ea2ebacb9392d7404816234af84331a43096b878a2b505bd` |
+| 4 | `lemma` | [compares_gt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OrderingBasicNamespaced.lean/declarations/compares-gt.md) | 41 | `result-track:d2ea37e73e215ef2e21d958ad7312b923f69874ddf16c30940ed45ea532d3479` |
+| 5 | `def` | [dthen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OrderingBasicNamespaced.lean/declarations/dthen.md) | 45 | `declaration-track:8d5ac7785391ae3546fcf53cafef7cfeb34d0329807c54e9409cedeb7992e667` |
+| 6 | `def` | [cmpUsing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OrderingBasicNamespaced.lean/declarations/cmpusing.md) | 56 | `declaration-track:0b74bd34aaebca6b60dcc41b56beb03dacde1404ef4cd2e301d122435305e3c5` |
+| 7 | `def` | [cmp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OrderingBasicNamespaced.lean/declarations/cmp.md) | 63 | `declaration-track:e9ad12494353ed84f087f6a0c2d0f2a41773ad7681ead1edb3c673a69903cb3a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

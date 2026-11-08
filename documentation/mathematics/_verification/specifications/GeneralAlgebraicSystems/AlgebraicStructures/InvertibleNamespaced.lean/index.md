@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/InvertibleNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/InvertibleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/InvertibleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/InvertibleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [MvPolynomial.invertibleC](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/InvertibleNamespaced.lean/declarations/mvpolynomial-invertiblec.md) | 27 | `declaration-track:1b90a36ac3e705b9d40b1c8a0585018c95c6154b581be4695b9d4c89ab07a7b1` |
-| 2 | `instance` | [MvPolynomial.invertibleCoeNat](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/InvertibleNamespaced.lean/declarations/mvpolynomial-invertiblecoenat.md) | 35 | `declaration-track:52c9d03edb57fe80f6a744422af388c05d0d2f0a83ab13b1ed4a7aae2470e865` |
+| 1 | `instance` | [MvPolynomial.invertibleC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/InvertibleNamespaced.lean/declarations/mvpolynomial-invertiblec.md) | 27 | `declaration-track:1b90a36ac3e705b9d40b1c8a0585018c95c6154b581be4695b9d4c89ab07a7b1` |
+| 2 | `instance` | [MvPolynomial.invertibleCoeNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/InvertibleNamespaced.lean/declarations/mvpolynomial-invertiblecoenat.md) | 35 | `declaration-track:52c9d03edb57fe80f6a744422af388c05d0d2f0a83ab13b1ed4a7aae2470e865` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RegularityNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RegularityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RegularityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RegularityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [RegularityRequest](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RegularityNamespaced.lean/declarations/regularityrequest.md) | 15 | `declaration-track:24ce749fc6e61965d680a48e1597c0dcff16d8ca8d69dc7ec33aa2cebda34f5a` |
-| 2 | `inductive` | [RegularityStatus](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RegularityNamespaced.lean/declarations/regularitystatus.md) | 21 | `declaration-track:f9857d202ec3331e6688869d8ad24597d9fad4371468b9a914280f57e17f5302` |
-| 3 | `structure` | [RegularityCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RegularityNamespaced.lean/declarations/regularitycertificate.md) | 28 | `declaration-track:63500f1d2f5e69ce0a1ace82951f20dc7d5102b700d70a99021f1006e17fe8d0` |
-| 4 | `def` | [RegularityCertificate.Valid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RegularityNamespaced.lean/declarations/regularitycertificate-valid.md) | 34 | `declaration-track:23666f711e25f58e38826bfb12a28e6a4ab86ba6632cb4e28c8e6a3c450e4480` |
+| 1 | `inductive` | [RegularityRequest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RegularityNamespaced.lean/declarations/regularityrequest.md) | 15 | `declaration-track:24ce749fc6e61965d680a48e1597c0dcff16d8ca8d69dc7ec33aa2cebda34f5a` |
+| 2 | `inductive` | [RegularityStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RegularityNamespaced.lean/declarations/regularitystatus.md) | 21 | `declaration-track:f9857d202ec3331e6688869d8ad24597d9fad4371468b9a914280f57e17f5302` |
+| 3 | `structure` | [RegularityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RegularityNamespaced.lean/declarations/regularitycertificate.md) | 28 | `declaration-track:63500f1d2f5e69ce0a1ace82951f20dc7d5102b700d70a99021f1006e17fe8d0` |
+| 4 | `def` | [RegularityCertificate.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RegularityNamespaced.lean/declarations/regularitycertificate-valid.md) | 34 | `declaration-track:23666f711e25f58e38826bfb12a28e6a4ab86ba6632cb4e28c8e6a3c450e4480` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

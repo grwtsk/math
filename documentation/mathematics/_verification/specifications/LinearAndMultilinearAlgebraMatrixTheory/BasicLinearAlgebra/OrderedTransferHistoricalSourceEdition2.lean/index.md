@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransferHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransferHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransferHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransferHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.OrderedProduct`](../../../../../GroupTheoryAndGeneralizations/OrderedProduct.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Algebra.LinearAlgebra.JacobiTransfer`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraJacobiTransferHistoricalSourceEdition2.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Algebra.OrderedProduct`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProduct.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Algebra.LinearAlgebra.JacobiTransfer`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraJacobiTransferHistoricalSourceEdition2.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [orderedTransfer](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransferHistoricalSourceEdition2.lean/declarations/orderedtransfer.md) | 44 | `declaration-track:addc580917d4cb2dc2607688690fcda5f584444af70caa8d50cc6ffb0eaabe4e` |
-| 2 | `theorem` | [state_eq_orderedProduct_mulVec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransferHistoricalSourceEdition2.lean/declarations/state-eq-orderedproduct-mulvec.md) | 50 | `result-track:fefd8d9d1167c9daececa63d847bce0efce404b9534ffd0b5f06e0916559cc78` |
-| 3 | `theorem` | [state_eq_orderedTransfer_mulVec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransferHistoricalSourceEdition2.lean/declarations/state-eq-orderedtransfer-mulvec.md) | 63 | `result-track:6609b8c70e35ed06482c4c16c9a7106d6bfdb7d697a83a8f3b324aed07d11330` |
+| 1 | `def` | [orderedTransfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransferHistoricalSourceEdition2.lean/declarations/orderedtransfer.md) | 44 | `declaration-track:addc580917d4cb2dc2607688690fcda5f584444af70caa8d50cc6ffb0eaabe4e` |
+| 2 | `theorem` | [state_eq_orderedProduct_mulVec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransferHistoricalSourceEdition2.lean/declarations/state-eq-orderedproduct-mulvec.md) | 50 | `result-track:fefd8d9d1167c9daececa63d847bce0efce404b9534ffd0b5f06e0916559cc78` |
+| 3 | `theorem` | [state_eq_orderedTransfer_mulVec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransferHistoricalSourceEdition2.lean/declarations/state-eq-orderedtransfer-mulvec.md) | 63 | `result-track:6609b8c70e35ed06482c4c16c9a7106d6bfdb7d697a83a8f3b324aed07d11330` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AdmissibleRealPowerExample.lean/index.md) · [Full source](../../../../RealFunctions/AdmissibleRealPowerExample.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissibleRealPowerExample.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissibleRealPowerExample.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,8 +62,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../RealFunctions/AdmissibleRealPowerExample.lean/declarations/example.md) | 30 | `declaration-track:2efb1ccd49165e9873bd28d56c19c940ef310b30ead254684ff9a758f875e41a` |
-| 2 | `example` | [(anonymous)](../../../../RealFunctions/AdmissibleRealPowerExample.lean/declarations/example-source-edition-2.md) | 37 | `declaration-track:7224fa92274d25de279806b94cd586a55468830360f58a57ef1b2e1f62bab33d` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissibleRealPowerExample.lean/declarations/example.md) | 30 | `declaration-track:2efb1ccd49165e9873bd28d56c19c940ef310b30ead254684ff9a758f875e41a` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissibleRealPowerExample.lean/declarations/example-source-edition-2.md) | 37 | `declaration-track:7224fa92274d25de279806b94cd586a55468830360f58a57ef1b2e1f62bab33d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

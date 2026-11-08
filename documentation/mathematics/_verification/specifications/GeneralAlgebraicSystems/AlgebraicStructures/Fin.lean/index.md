@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Fin.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Fin.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Fin.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Fin.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [sum_cons](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Fin.lean/declarations/sum-cons.md) | 20 | `result-track:6dcea49b813c278cd36f19ffa31bd0d88ed66ab7e24a6b1ebbf971d6ab475ecd` |
-| 2 | `lemma` | [sum_cons'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Fin.lean/declarations/sum-cons-source-edition-2.md) | 25 | `result-track:d28ad249470de1573f7e1ed472b51644ac7635d420b9723d42856b6bf0abdf03` |
+| 1 | `lemma` | [sum_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Fin.lean/declarations/sum-cons.md) | 20 | `result-track:6dcea49b813c278cd36f19ffa31bd0d88ed66ab7e24a6b1ebbf971d6ab475ecd` |
+| 2 | `lemma` | [sum_cons'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Fin.lean/declarations/sum-cons-source-edition-2.md) | 25 | `result-track:d28ad249470de1573f7e1ed472b51644ac7635d420b9723d42856b6bf0abdf03` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

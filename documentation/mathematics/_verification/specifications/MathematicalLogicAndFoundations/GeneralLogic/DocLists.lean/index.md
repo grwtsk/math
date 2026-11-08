@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [MyList](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/mylist.md) | 14 | `declaration-track:16cf9e6095c0c8822a0afa57fcba79d78232cfdcb90549cfc9408f52b5a3efff` |
-| 2 | `def` | [append](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/append.md) | 20 | `declaration-track:1722773fd2e45b0b2104253160c3ba425ac222955aec6db6f6954cf6cadc9dc9` |
-| 3 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/instance.md) | 24 | `declaration-track:1287a6dcc0e97311f3fbf968dd30730c6b48e2045e47675899314c438c7a2b70` |
-| 4 | `theorem` | [nil_append](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/nil-append.md) | 28 | `result-track:87c6464e5e069783153332eddfd8baf651123ca688661e1ae7135532ca8f3dc2` |
-| 5 | `theorem` | [cons_append](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/cons-append.md) | 31 | `result-track:ad25cfdd0643241c51014beeb2648ff69402a1be80b46cf7ae2c30193314d2e9` |
-| 6 | `inductive` | [NonEmpty](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/nonempty.md) | 34 | `declaration-track:4adb7d8606912ef9340613f54b0356929bd17eb91dfaba73e6a82e8a9ce6f458` |
-| 7 | `theorem` | [nonEmpty_append₁](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/nonempty-append.md) | 38 | `result-track:3e934644cf1291b796297f1830e887b652be00f9c6e4d1dd33fa725e4bee0eeb` |
-| 8 | `theorem` | [nonEmpty_append₁'](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/nonempty-append-source-edition-2.md) | 51 | `result-track:5ff92e11c12fe5e30d922d838ec4b7507fe353e528a7dfc48130f15360ebe814` |
-| 9 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/example.md) | 55 | `declaration-track:f808d513af254bf091ae857edfddf6197aaddb52fd6f89f132315f470195e439` |
-| 10 | `theorem` | [nil_not_nonEmpty](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/nil-not-nonempty.md) | 59 | `result-track:acf9276ca9e8252ee656a2baa919718054e9de5d31ad91be54b89d5676bdc605` |
-| 11 | `theorem` | [append_nil](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/append-nil.md) | 63 | `result-track:0d9d45db49451fe77f9e9e8896643102614ceaf3e75c72d2ce46dbe9d1901f93` |
-| 12 | `theorem` | [append_assoc](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/append-assoc.md) | 67 | `result-track:d19e1744cc573373a612106890266d471f4506e5d856cd32125bccf0574e94a0` |
+| 1 | `inductive` | [MyList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/mylist.md) | 14 | `declaration-track:16cf9e6095c0c8822a0afa57fcba79d78232cfdcb90549cfc9408f52b5a3efff` |
+| 2 | `def` | [append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/append.md) | 20 | `declaration-track:1722773fd2e45b0b2104253160c3ba425ac222955aec6db6f6954cf6cadc9dc9` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/instance.md) | 24 | `declaration-track:1287a6dcc0e97311f3fbf968dd30730c6b48e2045e47675899314c438c7a2b70` |
+| 4 | `theorem` | [nil_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/nil-append.md) | 28 | `result-track:87c6464e5e069783153332eddfd8baf651123ca688661e1ae7135532ca8f3dc2` |
+| 5 | `theorem` | [cons_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/cons-append.md) | 31 | `result-track:ad25cfdd0643241c51014beeb2648ff69402a1be80b46cf7ae2c30193314d2e9` |
+| 6 | `inductive` | [NonEmpty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/nonempty.md) | 34 | `declaration-track:4adb7d8606912ef9340613f54b0356929bd17eb91dfaba73e6a82e8a9ce6f458` |
+| 7 | `theorem` | [nonEmpty_append₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/nonempty-append.md) | 38 | `result-track:3e934644cf1291b796297f1830e887b652be00f9c6e4d1dd33fa725e4bee0eeb` |
+| 8 | `theorem` | [nonEmpty_append₁'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/nonempty-append-source-edition-2.md) | 51 | `result-track:5ff92e11c12fe5e30d922d838ec4b7507fe353e528a7dfc48130f15360ebe814` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/example.md) | 55 | `declaration-track:f808d513af254bf091ae857edfddf6197aaddb52fd6f89f132315f470195e439` |
+| 10 | `theorem` | [nil_not_nonEmpty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/nil-not-nonempty.md) | 59 | `result-track:acf9276ca9e8252ee656a2baa919718054e9de5d31ad91be54b89d5676bdc605` |
+| 11 | `theorem` | [append_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/append-nil.md) | 63 | `result-track:0d9d45db49451fe77f9e9e8896643102614ceaf3e75c72d2ce46dbe9d1901f93` |
+| 12 | `theorem` | [append_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DocLists.lean/declarations/append-assoc.md) | 67 | `result-track:d19e1744cc573373a612106890266d471f4506e5d856cd32125bccf0574e94a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

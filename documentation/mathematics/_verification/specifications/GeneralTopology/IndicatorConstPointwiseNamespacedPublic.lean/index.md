@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/IndicatorConstPointwiseNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/IndicatorConstPointwiseNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IndicatorConstPointwiseNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IndicatorConstPointwiseNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [tendsto_ite](../../../../GeneralTopology/IndicatorConstPointwiseNamespacedPublic.lean/declarations/tendsto-ite.md) | 53 | `result-track:88eb0bb3800eb521d644918391fcb98e1f1b0d55679e6c818050b18a213aed5f` |
-| 2 | `lemma` | [tendsto_indicator_const_apply_iff_eventually'](../../../../GeneralTopology/IndicatorConstPointwiseNamespacedPublic.lean/declarations/tendsto-indicator-const-apply-iff-eventually-source-edition-2.md) | 82 | `result-track:ced740696e97d4214e69f345353e40d7442ab8d060c906b92b31a0535eb61ab2` |
-| 3 | `lemma` | [tendsto_indicator_const_iff_forall_eventually'](../../../../GeneralTopology/IndicatorConstPointwiseNamespacedPublic.lean/declarations/tendsto-indicator-const-iff-forall-eventually-source-edition-2.md) | 96 | `result-track:e8b9b1e4bc286cb9e4227e2dc637adf34aa8b34328c1fe21e4bc8f560f36f990` |
-| 4 | `lemma` | [tendsto_indicator_const_apply_iff_eventually](../../../../GeneralTopology/IndicatorConstPointwiseNamespacedPublic.lean/declarations/tendsto-indicator-const-apply-iff-eventually.md) | 106 | `result-track:04745a206384312cb8da09cfb3578daba75ff83ba48e582f7ca904accb464ccf` |
-| 5 | `lemma` | [tendsto_indicator_const_iff_forall_eventually](../../../../GeneralTopology/IndicatorConstPointwiseNamespacedPublic.lean/declarations/tendsto-indicator-const-iff-forall-eventually.md) | 116 | `result-track:b122bdaa7be59f93a98289cbd2de54afb3550d6dcc831197ffb99e14a2572e89` |
-| 6 | `lemma` | [tendsto_indicator_const_iff_tendsto_pi_pure'](../../../../GeneralTopology/IndicatorConstPointwiseNamespacedPublic.lean/declarations/tendsto-indicator-const-iff-tendsto-pi-pure-source-edition-2.md) | 123 | `result-track:8471d8494d2f91fb2635ff7fa17cf53d03a67b5354fa80290faa6f1ef3fca3c5` |
-| 7 | `lemma` | [tendsto_indicator_const_iff_tendsto_pi_pure](../../../../GeneralTopology/IndicatorConstPointwiseNamespacedPublic.lean/declarations/tendsto-indicator-const-iff-tendsto-pi-pure.md) | 131 | `result-track:6e1249bbf6fb214d9ec73423d2b18b4e7dff370c4ce53a850e0b2f80c7663d26` |
+| 1 | `lemma` | [tendsto_ite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IndicatorConstPointwiseNamespacedPublic.lean/declarations/tendsto-ite.md) | 53 | `result-track:88eb0bb3800eb521d644918391fcb98e1f1b0d55679e6c818050b18a213aed5f` |
+| 2 | `lemma` | [tendsto_indicator_const_apply_iff_eventually'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IndicatorConstPointwiseNamespacedPublic.lean/declarations/tendsto-indicator-const-apply-iff-eventually-source-edition-2.md) | 82 | `result-track:ced740696e97d4214e69f345353e40d7442ab8d060c906b92b31a0535eb61ab2` |
+| 3 | `lemma` | [tendsto_indicator_const_iff_forall_eventually'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IndicatorConstPointwiseNamespacedPublic.lean/declarations/tendsto-indicator-const-iff-forall-eventually-source-edition-2.md) | 96 | `result-track:e8b9b1e4bc286cb9e4227e2dc637adf34aa8b34328c1fe21e4bc8f560f36f990` |
+| 4 | `lemma` | [tendsto_indicator_const_apply_iff_eventually](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IndicatorConstPointwiseNamespacedPublic.lean/declarations/tendsto-indicator-const-apply-iff-eventually.md) | 106 | `result-track:04745a206384312cb8da09cfb3578daba75ff83ba48e582f7ca904accb464ccf` |
+| 5 | `lemma` | [tendsto_indicator_const_iff_forall_eventually](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IndicatorConstPointwiseNamespacedPublic.lean/declarations/tendsto-indicator-const-iff-forall-eventually.md) | 116 | `result-track:b122bdaa7be59f93a98289cbd2de54afb3550d6dcc831197ffb99e14a2572e89` |
+| 6 | `lemma` | [tendsto_indicator_const_iff_tendsto_pi_pure'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IndicatorConstPointwiseNamespacedPublic.lean/declarations/tendsto-indicator-const-iff-tendsto-pi-pure-source-edition-2.md) | 123 | `result-track:8471d8494d2f91fb2635ff7fa17cf53d03a67b5354fa80290faa6f1ef3fca3c5` |
+| 7 | `lemma` | [tendsto_indicator_const_iff_tendsto_pi_pure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IndicatorConstPointwiseNamespacedPublic.lean/declarations/tendsto-indicator-const-iff-tendsto-pi-pure.md) | 131 | `result-track:6e1249bbf6fb214d9ec73423d2b18b4e7dff370c4ce53a850e0b2f80c7663d26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

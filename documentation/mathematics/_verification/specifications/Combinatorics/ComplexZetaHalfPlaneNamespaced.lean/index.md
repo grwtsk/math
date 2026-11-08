@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ComplexZetaHalfPlaneNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ComplexZetaHalfPlaneNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexZetaHalfPlaneNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexZetaHalfPlaneNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [zetaComplexHalfPlane](../../../../Combinatorics/ComplexZetaHalfPlaneNamespaced.lean/declarations/zetacomplexhalfplane.md) | 24 | `declaration-track:537c230fa0e65150d3948c13892dee258c3d53678bf791602f5783201dc77e6f` |
-| 2 | `theorem` | [zetaComplexHalfPlane_summable](../../../../Combinatorics/ComplexZetaHalfPlaneNamespaced.lean/declarations/zetacomplexhalfplane-summable.md) | 28 | `result-track:f938b04be8861558cef3fc8fb09ddc4977412f74f4cfb8bbd88b5c5f00249f4d` |
-| 3 | `def` | [zetaPartialComplex](../../../../Combinatorics/ComplexZetaHalfPlaneNamespaced.lean/declarations/zetapartialcomplex.md) | 34 | `declaration-track:bc4e25d93fb7a8a6f771246894fcdabb66caeeba2a4f6f14ecde5a947b61d4a2` |
-| 4 | `theorem` | [zetaPartialComplex_eq_range_sum](../../../../Combinatorics/ComplexZetaHalfPlaneNamespaced.lean/declarations/zetapartialcomplex-eq-range-sum.md) | 39 | `result-track:55ea89ffb2f69208529e151a8bca884d18cc050131ebdb530e5198ebfb68c770` |
-| 5 | `theorem` | [tendsto_zetaPartialComplex](../../../../Combinatorics/ComplexZetaHalfPlaneNamespaced.lean/declarations/tendsto-zetapartialcomplex.md) | 57 | `result-track:671982e514c673fed3d8489601edd783253c0f374ca77ab6e9144b909dde3f17` |
-| 6 | `def` | [zetaComplexHalfPlane_nonzero_target](../../../../Combinatorics/ComplexZetaHalfPlaneNamespaced.lean/declarations/zetacomplexhalfplane-nonzero-target.md) | 75 | `declaration-track:ed0269aa1620d127ebce0e211c1aa7783a3b4fc88956f8eec87103d45a53e573` |
+| 1 | `def` | [zetaComplexHalfPlane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexZetaHalfPlaneNamespaced.lean/declarations/zetacomplexhalfplane.md) | 24 | `declaration-track:537c230fa0e65150d3948c13892dee258c3d53678bf791602f5783201dc77e6f` |
+| 2 | `theorem` | [zetaComplexHalfPlane_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexZetaHalfPlaneNamespaced.lean/declarations/zetacomplexhalfplane-summable.md) | 28 | `result-track:f938b04be8861558cef3fc8fb09ddc4977412f74f4cfb8bbd88b5c5f00249f4d` |
+| 3 | `def` | [zetaPartialComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexZetaHalfPlaneNamespaced.lean/declarations/zetapartialcomplex.md) | 34 | `declaration-track:bc4e25d93fb7a8a6f771246894fcdabb66caeeba2a4f6f14ecde5a947b61d4a2` |
+| 4 | `theorem` | [zetaPartialComplex_eq_range_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexZetaHalfPlaneNamespaced.lean/declarations/zetapartialcomplex-eq-range-sum.md) | 39 | `result-track:55ea89ffb2f69208529e151a8bca884d18cc050131ebdb530e5198ebfb68c770` |
+| 5 | `theorem` | [tendsto_zetaPartialComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexZetaHalfPlaneNamespaced.lean/declarations/tendsto-zetapartialcomplex.md) | 57 | `result-track:671982e514c673fed3d8489601edd783253c0f374ca77ab6e9144b909dde3f17` |
+| 6 | `def` | [zetaComplexHalfPlane_nonzero_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexZetaHalfPlaneNamespaced.lean/declarations/zetacomplexhalfplane-nonzero-target.md) | 75 | `declaration-track:ed0269aa1620d127ebce0e211c1aa7783a3b4fc88956f8eec87103d45a53e573` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

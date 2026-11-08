@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Band](../../../../../ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/declarations/band.md) | 5 | `declaration-track:6c7f201b31a99fae3dd423e7120efa165934aae87262c4eae26ce4ed214cebb7` |
-| 2 | `inductive` | [ColorAtom](../../../../../ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/declarations/coloratom.md) | 14 | `declaration-track:a7c222b97eacaf753313b6aad4953de8f1cea50f9d1a0795b8669ff12a8bbeed` |
-| 3 | `structure` | [Admissibility](../../../../../ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/declarations/admissibility.md) | 25 | `declaration-track:c40c60d4436756b781beb50be7a0a9d23119f40b02f453bb3aea4893535b28ac` |
-| 4 | `def` | [acceptsOnly](../../../../../ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/declarations/acceptsonly.md) | 31 | `declaration-track:0ff9d0db6d2166b608994eba005fbb1e15d8ac3c4b083cc289ebe49a44baf80e` |
-| 5 | `def` | [rejectsUnresolved](../../../../../ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/declarations/rejectsunresolved.md) | 34 | `declaration-track:4a0478a6a84aaacc16a8aa0e1cdd156f992a589cc341970f84e6cf469c6b6853` |
-| 6 | `def` | [symmetricMixColorSet](../../../../../ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/declarations/symmetricmixcolorset.md) | 38 | `declaration-track:f78e31830098d9ade7c34d456e3db8166863a73d5c4eb5e90fbe5a7f406c03e7` |
-| 7 | `theorem` | [symmetricMixColorSet_red_green](../../../../../ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/declarations/symmetricmixcolorset-red-green.md) | 41 | `result-track:4967ecc09aa69de321773decbbd3de99b80ef1b1eb117777ae984dea15680a4f` |
-| 8 | `theorem` | [symmetricMixColorSet_green_red](../../../../../ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/declarations/symmetricmixcolorset-green-red.md) | 44 | `result-track:ec51ccc382e7c01450084c650d66c91114033af25bc6fa049b61477c9267a060` |
+| 1 | `structure` | [Band](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/declarations/band.md) | 5 | `declaration-track:6c7f201b31a99fae3dd423e7120efa165934aae87262c4eae26ce4ed214cebb7` |
+| 2 | `inductive` | [ColorAtom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/declarations/coloratom.md) | 14 | `declaration-track:a7c222b97eacaf753313b6aad4953de8f1cea50f9d1a0795b8669ff12a8bbeed` |
+| 3 | `structure` | [Admissibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/declarations/admissibility.md) | 25 | `declaration-track:c40c60d4436756b781beb50be7a0a9d23119f40b02f453bb3aea4893535b28ac` |
+| 4 | `def` | [acceptsOnly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/declarations/acceptsonly.md) | 31 | `declaration-track:0ff9d0db6d2166b608994eba005fbb1e15d8ac3c4b083cc289ebe49a44baf80e` |
+| 5 | `def` | [rejectsUnresolved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/declarations/rejectsunresolved.md) | 34 | `declaration-track:4a0478a6a84aaacc16a8aa0e1cdd156f992a589cc341970f84e6cf469c6b6853` |
+| 6 | `def` | [symmetricMixColorSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/declarations/symmetricmixcolorset.md) | 38 | `declaration-track:f78e31830098d9ade7c34d456e3db8166863a73d5c4eb5e90fbe5a7f406c03e7` |
+| 7 | `theorem` | [symmetricMixColorSet_red_green](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/declarations/symmetricmixcolorset-red-green.md) | 41 | `result-track:4967ecc09aa69de321773decbbd3de99b80ef1b1eb117777ae984dea15680a4f` |
+| 8 | `theorem` | [symmetricMixColorSet_green_red](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Admissibility.lean/declarations/symmetricmixcolorset-green-red.md) | 44 | `result-track:ec51ccc382e7c01450084c650d66c91114033af25bc6fa049b61477c9267a060` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

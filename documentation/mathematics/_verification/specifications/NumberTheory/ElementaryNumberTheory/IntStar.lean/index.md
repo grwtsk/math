@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/IntStar.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/IntStar.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntStar.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntStar.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [addSubmonoid_closure_range_pow](../../../../../NumberTheory/ElementaryNumberTheory/IntStar.lean/declarations/addsubmonoid-closure-range-pow.md) | 22 | `result-track:bfb16e3670f963fb0ef431e63c3a642d662162e2c3de0dfeeec77accab78d23a` |
-| 2 | `lemma` | [addSubmonoid_closure_range_mul_self](../../../../../NumberTheory/ElementaryNumberTheory/IntStar.lean/declarations/addsubmonoid-closure-range-mul-self.md) | 30 | `result-track:b4bca995e9a1f764958dbce03e80d83eb4e3295aa71a3da5a508af9a45069860` |
-| 3 | `instance` | [instStarOrderedRing](../../../../../NumberTheory/ElementaryNumberTheory/IntStar.lean/declarations/inststarorderedring.md) | 33 | `declaration-track:ac6b7f0ee09d7ee0a8e7c3d7e797628e400acccf7ae16d7b9879fcf2631dfdd8` |
+| 1 | `lemma` | [addSubmonoid_closure_range_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntStar.lean/declarations/addsubmonoid-closure-range-pow.md) | 22 | `result-track:bfb16e3670f963fb0ef431e63c3a642d662162e2c3de0dfeeec77accab78d23a` |
+| 2 | `lemma` | [addSubmonoid_closure_range_mul_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntStar.lean/declarations/addsubmonoid-closure-range-mul-self.md) | 30 | `result-track:b4bca995e9a1f764958dbce03e80d83eb4e3295aa71a3da5a508af9a45069860` |
+| 3 | `instance` | [instStarOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntStar.lean/declarations/inststarorderedring.md) | 33 | `declaration-track:ac6b7f0ee09d7ee0a8e7c3d7e797628e400acccf7ae16d7b9879fcf2631dfdd8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

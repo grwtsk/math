@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative10.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative10.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative10.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative10.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [run_stdout](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative10.lean/declarations/run-stdout.md) | 28 | `declaration-track:f1a034d1dd4959a5a61f0d77544946826bee55edf7736957bd719ac50c37b631` |
-| 2 | `def` | [upload](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative10.lean/declarations/upload.md) | 47 | `declaration-track:07d60d315040122ffe749287fa48456a6d6a21d54eb6bf876c9ad1b4f4521da0` |
+| 1 | `def` | [run_stdout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative10.lean/declarations/run-stdout.md) | 28 | `declaration-track:f1a034d1dd4959a5a61f0d77544946826bee55edf7736957bd719ac50c37b631` |
+| 2 | `def` | [upload](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative10.lean/declarations/upload.md) | 47 | `declaration-track:07d60d315040122ffe749287fa48456a6d6a21d54eb6bf876c9ad1b4f4521da0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

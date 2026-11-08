@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModSmallEnergySpectrum.lean/index.md) · [Full source](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModSmallEnergySpectrum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModSmallEnergySpectrum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModSmallEnergySpectrum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Fourier.ZModSmallEnergySets`](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModSmallEnergySets.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Combinatorics.Sequences.CyclicSumsetGrowth`](../../../../Combinatorics/CyclicSumsetGrowth.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.ZModSmallEnergySets`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModSmallEnergySets.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Combinatorics.Sequences.CyclicSumsetGrowth`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicSumsetGrowth.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [iteratedSumset_smallEnergyPoints_subset](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModSmallEnergySpectrum.lean/declarations/iteratedsumset-smallenergypoints-subset.md) | 24 | `result-track:dfd490f3e782043dd08f9d041b61073dd421d3cf3b03a3e15bc436dced3a76ae` |
-| 2 | `def` | [expansionLength](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModSmallEnergySpectrum.lean/declarations/expansionlength.md) | 39 | `declaration-track:4a6c098df3cb9d9e981b31b0cd6e6421d2a78e38a7be9b65d6e286f0d210fada` |
-| 3 | `theorem` | [expansionLength_spec](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModSmallEnergySpectrum.lean/declarations/expansionlength-spec.md) | 44 | `result-track:16bf5b1a95e5ab315773eac8e36027b417de45fe43517fbcf24e964d88f34c86` |
-| 4 | `theorem` | [smallEnergyFrequencies_card_le](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModSmallEnergySpectrum.lean/declarations/smallenergyfrequencies-card-le.md) | 81 | `result-track:0be895b3d5fd16b223a7e3e2e29d1d82f3fe5b3a87fc413f221d5a18e97315a7` |
+| 1 | `theorem` | [iteratedSumset_smallEnergyPoints_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModSmallEnergySpectrum.lean/declarations/iteratedsumset-smallenergypoints-subset.md) | 24 | `result-track:dfd490f3e782043dd08f9d041b61073dd421d3cf3b03a3e15bc436dced3a76ae` |
+| 2 | `def` | [expansionLength](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModSmallEnergySpectrum.lean/declarations/expansionlength.md) | 39 | `declaration-track:4a6c098df3cb9d9e981b31b0cd6e6421d2a78e38a7be9b65d6e286f0d210fada` |
+| 3 | `theorem` | [expansionLength_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModSmallEnergySpectrum.lean/declarations/expansionlength-spec.md) | 44 | `result-track:16bf5b1a95e5ab315773eac8e36027b417de45fe43517fbcf24e964d88f34c86` |
+| 4 | `theorem` | [smallEnergyFrequencies_card_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModSmallEnergySpectrum.lean/declarations/smallenergyfrequencies-card-le.md) | 81 | `result-track:0be895b3d5fd16b223a7e3e2e29d1d82f3fe5b3a87fc413f221d5a18e97315a7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

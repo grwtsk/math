@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/UnknownLedgerNamespacedUnknownGroup.lean/index.md) · [Full source](../../../../Combinatorics/UnknownLedgerNamespacedUnknownGroup.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerNamespacedUnknownGroup.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerNamespacedUnknownGroup.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,12 +61,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [UnknownGroup](../../../../Combinatorics/UnknownLedgerNamespacedUnknownGroup.lean/declarations/unknowngroup.md) | 23 | `declaration-track:b3aff343335ec8bc3b3506351598666454a48963ab5535068375fa592e3ec2d8` |
-| 2 | `inductive` | [SemiLocalUnknown](../../../../Combinatorics/UnknownLedgerNamespacedUnknownGroup.lean/declarations/semilocalunknown.md) | 32 | `declaration-track:3ee950e67334e09c8147c893b191965174b82e46e48ff02689dc5a6d33dc99bb` |
-| 3 | `def` | [SemiLocalUnknown.group](../../../../Combinatorics/UnknownLedgerNamespacedUnknownGroup.lean/declarations/semilocalunknown-group.md) | 55 | `declaration-track:261f534bc996bc4f376c9583b9aa7dac338b16820a36c0aba3132356eb35b3d6` |
-| 4 | `inductive` | [ObligationState](../../../../Combinatorics/UnknownLedgerNamespacedUnknownGroup.lean/declarations/obligationstate.md) | 84 | `declaration-track:721ba916d745e30f67a5977a29507ad0183dd64b8f2ed58c5f6cfc1d62ebe0cf` |
-| 5 | `structure` | [UnknownLedgerEntry](../../../../Combinatorics/UnknownLedgerNamespacedUnknownGroup.lean/declarations/unknownledgerentry.md) | 91 | `declaration-track:fb48d0180811926512f3d2d251feffc41472370dc93e099a93fa23ae52ece34b` |
-| 6 | `structure` | [SemiLocalUnknownLedger](../../../../Combinatorics/UnknownLedgerNamespacedUnknownGroup.lean/declarations/semilocalunknownledger.md) | 97 | `declaration-track:3e891bd816f41069653c7939eb10df6d0ca065512aea17b6c40b191d74056213` |
+| 1 | `inductive` | [UnknownGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerNamespacedUnknownGroup.lean/declarations/unknowngroup.md) | 23 | `declaration-track:b3aff343335ec8bc3b3506351598666454a48963ab5535068375fa592e3ec2d8` |
+| 2 | `inductive` | [SemiLocalUnknown](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerNamespacedUnknownGroup.lean/declarations/semilocalunknown.md) | 32 | `declaration-track:3ee950e67334e09c8147c893b191965174b82e46e48ff02689dc5a6d33dc99bb` |
+| 3 | `def` | [SemiLocalUnknown.group](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerNamespacedUnknownGroup.lean/declarations/semilocalunknown-group.md) | 55 | `declaration-track:261f534bc996bc4f376c9583b9aa7dac338b16820a36c0aba3132356eb35b3d6` |
+| 4 | `inductive` | [ObligationState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerNamespacedUnknownGroup.lean/declarations/obligationstate.md) | 84 | `declaration-track:721ba916d745e30f67a5977a29507ad0183dd64b8f2ed58c5f6cfc1d62ebe0cf` |
+| 5 | `structure` | [UnknownLedgerEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerNamespacedUnknownGroup.lean/declarations/unknownledgerentry.md) | 91 | `declaration-track:fb48d0180811926512f3d2d251feffc41472370dc93e099a93fa23ae52ece34b` |
+| 6 | `structure` | [SemiLocalUnknownLedger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerNamespacedUnknownGroup.lean/declarations/semilocalunknownledger.md) | 97 | `declaration-track:3e891bd816f41069653c7939eb10df6d0ca065512aea17b6c40b191d74056213` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

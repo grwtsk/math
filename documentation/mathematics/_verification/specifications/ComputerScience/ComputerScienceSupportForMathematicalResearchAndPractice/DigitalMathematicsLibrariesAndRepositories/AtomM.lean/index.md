@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AtomM.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AtomM.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AtomM.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AtomM.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AtomM.Context](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AtomM.lean/declarations/atomm-context.md) | 24 | `declaration-track:f684ab4b0d918f0d73f033b122b5205b2569dda5de4430279c017a6d0fd0ccb2` |
-| 2 | `structure` | [AtomM.State](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AtomM.lean/declarations/atomm-state.md) | 33 | `declaration-track:fa31c84cb0a6c0f7e7cf2aa74fff2b51b41c8f4fb47a321712cd20778f750088` |
-| 3 | `abbrev` | [AtomM](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AtomM.lean/declarations/atomm.md) | 38 | `declaration-track:91ac9ef7681347eb58bf4721b34949455799390f39b14d9887135ca5c9a5bc00` |
-| 4 | `def` | [AtomM.run](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AtomM.lean/declarations/atomm-run.md) | 41 | `declaration-track:20f5e1417d957535f5fd42e070f4f001c5cccfe2413c3672ad31a562fa206f27` |
-| 5 | `def` | [AtomM.addAtom](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AtomM.lean/declarations/atomm-addatom.md) | 48 | `declaration-track:2f9046685e8a7b1b067e1b64f9ee15d0a82a7f7b518f3d78176166e44ac91fe2` |
+| 1 | `structure` | [AtomM.Context](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AtomM.lean/declarations/atomm-context.md) | 24 | `declaration-track:f684ab4b0d918f0d73f033b122b5205b2569dda5de4430279c017a6d0fd0ccb2` |
+| 2 | `structure` | [AtomM.State](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AtomM.lean/declarations/atomm-state.md) | 33 | `declaration-track:fa31c84cb0a6c0f7e7cf2aa74fff2b51b41c8f4fb47a321712cd20778f750088` |
+| 3 | `abbrev` | [AtomM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AtomM.lean/declarations/atomm.md) | 38 | `declaration-track:91ac9ef7681347eb58bf4721b34949455799390f39b14d9887135ca5c9a5bc00` |
+| 4 | `def` | [AtomM.run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AtomM.lean/declarations/atomm-run.md) | 41 | `declaration-track:20f5e1417d957535f5fd42e070f4f001c5cccfe2413c3672ad31a562fa206f27` |
+| 5 | `def` | [AtomM.addAtom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AtomM.lean/declarations/atomm-addatom.md) | 48 | `declaration-track:2f9046685e8a7b1b067e1b64f9ee15d0a82a7f7b518f3d78176166e44ac91fe2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

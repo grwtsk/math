@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/OctahedralFaceIncidence.lean/index.md) · [Full source](../../../../GeneralTopology/OctahedralFaceIncidence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OctahedralFaceIncidence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OctahedralFaceIncidence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [octahedralFaceContainsEdge](../../../../GeneralTopology/OctahedralFaceIncidence.lean/declarations/octahedralfacecontainsedge.md) | 41 | `declaration-track:634ab9fc0a9e91d9d4cb5861e5aea259793e3bfd59c5e05aa9ab67c5a6ec4acd` |
-| 2 | `def` | [octahedralFaceContainsVertex](../../../../GeneralTopology/OctahedralFaceIncidence.lean/declarations/octahedralfacecontainsvertex.md) | 46 | `declaration-track:a815048d40347803de78b266a5136acf8f00f991170e0a6a3ddd23ad401e9767` |
-| 3 | `def` | [octahedralOrientedFaceVertices](../../../../GeneralTopology/OctahedralFaceIncidence.lean/declarations/octahedralorientedfacevertices.md) | 54 | `declaration-track:d65fd78c06a5373b7e26e7231c2ef132153aa20b309bf61092847fcc34fd659f` |
+| 1 | `def` | [octahedralFaceContainsEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OctahedralFaceIncidence.lean/declarations/octahedralfacecontainsedge.md) | 41 | `declaration-track:634ab9fc0a9e91d9d4cb5861e5aea259793e3bfd59c5e05aa9ab67c5a6ec4acd` |
+| 2 | `def` | [octahedralFaceContainsVertex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OctahedralFaceIncidence.lean/declarations/octahedralfacecontainsvertex.md) | 46 | `declaration-track:a815048d40347803de78b266a5136acf8f00f991170e0a6a3ddd23ad401e9767` |
+| 3 | `def` | [octahedralOrientedFaceVertices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OctahedralFaceIncidence.lean/declarations/octahedralorientedfacevertices.md) | 54 | `declaration-track:d65fd78c06a5373b7e26e7231c2ef132153aa20b309bf61092847fcc34fd659f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thetaTail_ratio_eq_product](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsNamespaced.lean/declarations/thetatail-ratio-eq-product.md) | 20 | `result-track:c2789b7f0e442d0beef24e2085c7648c04166b5788041c10861c540e653012f9` |
-| 2 | `theorem` | [thetaTail_ratio_product_antitone_of_succ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsNamespaced.lean/declarations/thetatail-ratio-product-antitone-of-succ.md) | 40 | `result-track:f8e83082d282d155bfb9ff84361c2c3be5a42dba1ce3f0b1b8d5fef9c15cb3bf` |
-| 3 | `theorem` | [thetaTail_div_antitone_of_succ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsNamespaced.lean/declarations/thetatail-div-antitone-of-succ.md) | 48 | `result-track:3f69fcbee84cb0136c5aabe2ff51a5fadfc0ffe078ab7dcd9c6be71571bc8aa3` |
-| 4 | `theorem` | [thetaTailSignRegular_two_of_succ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsNamespaced.lean/declarations/thetatailsignregular-two-of-succ.md) | 56 | `result-track:6a268c24727d8d2849686dc38cf42a467291ef99d2909b4eadb4198627285067` |
+| 1 | `theorem` | [thetaTail_ratio_eq_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsNamespaced.lean/declarations/thetatail-ratio-eq-product.md) | 20 | `result-track:c2789b7f0e442d0beef24e2085c7648c04166b5788041c10861c540e653012f9` |
+| 2 | `theorem` | [thetaTail_ratio_product_antitone_of_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsNamespaced.lean/declarations/thetatail-ratio-product-antitone-of-succ.md) | 40 | `result-track:f8e83082d282d155bfb9ff84361c2c3be5a42dba1ce3f0b1b8d5fef9c15cb3bf` |
+| 3 | `theorem` | [thetaTail_div_antitone_of_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsNamespaced.lean/declarations/thetatail-div-antitone-of-succ.md) | 48 | `result-track:3f69fcbee84cb0136c5aabe2ff51a5fadfc0ffe078ab7dcd9c6be71571bc8aa3` |
+| 4 | `theorem` | [thetaTailSignRegular_two_of_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsNamespaced.lean/declarations/thetatailsignregular-two-of-succ.md) | 56 | `result-track:6a268c24727d8d2849686dc38cf42a467291ef99d2909b4eadb4198627285067` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatAdjunctionNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatAdjunctionNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatAdjunctionNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatAdjunctionNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [typeToCatObjectsAdjHomEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatAdjunctionNamespacedPublic.lean/declarations/typetocatobjectsadjhomequiv.md) | 42 | `declaration-track:661bef01ecf0d629d5b03ec7bc6503377d9d0bf5e9400b50fc6bffa9775ec221` |
-| 2 | `def` | [typeToCatObjectsAdjCounitApp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatAdjunctionNamespacedPublic.lean/declarations/typetocatobjectsadjcounitapp.md) | 51 | `declaration-track:ae65e42bd7a34e449a9b0c10af3870fde48bbdb1c0333a62e243104b393c0be7` |
-| 3 | `def` | [typeToCatObjectsAdj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatAdjunctionNamespacedPublic.lean/declarations/typetocatobjectsadj.md) | 59 | `declaration-track:87a5e28e4fa50586ac494d4fe7c40316f414945bbc745bb65ea9f67a9fa0d757` |
-| 4 | `def` | [connectedComponents](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatAdjunctionNamespacedPublic.lean/declarations/connectedcomponents.md) | 71 | `declaration-track:b3153c2fb92df9af7571634e842008071123974d25981d44597fe017d22341aa` |
-| 5 | `def` | [connectedComponentsTypeToCatAdj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatAdjunctionNamespacedPublic.lean/declarations/connectedcomponentstypetocatadj.md) | 78 | `declaration-track:5739a3ed6f278f936d8c6fc3ab8555c9562ce37fa33cce04164dcf0fb8022241` |
+| 1 | `def` | [typeToCatObjectsAdjHomEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatAdjunctionNamespacedPublic.lean/declarations/typetocatobjectsadjhomequiv.md) | 42 | `declaration-track:661bef01ecf0d629d5b03ec7bc6503377d9d0bf5e9400b50fc6bffa9775ec221` |
+| 2 | `def` | [typeToCatObjectsAdjCounitApp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatAdjunctionNamespacedPublic.lean/declarations/typetocatobjectsadjcounitapp.md) | 51 | `declaration-track:ae65e42bd7a34e449a9b0c10af3870fde48bbdb1c0333a62e243104b393c0be7` |
+| 3 | `def` | [typeToCatObjectsAdj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatAdjunctionNamespacedPublic.lean/declarations/typetocatobjectsadj.md) | 59 | `declaration-track:87a5e28e4fa50586ac494d4fe7c40316f414945bbc745bb65ea9f67a9fa0d757` |
+| 4 | `def` | [connectedComponents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatAdjunctionNamespacedPublic.lean/declarations/connectedcomponents.md) | 71 | `declaration-track:b3153c2fb92df9af7571634e842008071123974d25981d44597fe017d22341aa` |
+| 5 | `def` | [connectedComponentsTypeToCatAdj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatAdjunctionNamespacedPublic.lean/declarations/connectedcomponentstypetocatadj.md) | 78 | `declaration-track:5739a3ed6f278f936d8c6fc3ab8555c9562ce37fa33cce04164dcf0fb8022241` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

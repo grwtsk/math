@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BinaryCharge.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BinaryCharge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinaryCharge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinaryCharge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BinaryVertexCharge](../../../../../ComputerScience/AlgorithmsInComputerScience/BinaryCharge.lean/declarations/binaryvertexcharge.md) | 17 | `declaration-track:51dff1bce4f46f734a6ef2b0d8751a0bb3f39aa766756e4e74529a09d5b40134` |
-| 2 | `structure` | [ChargedTerrain](../../../../../ComputerScience/AlgorithmsInComputerScience/BinaryCharge.lean/declarations/chargedterrain.md) | 25 | `declaration-track:615eefe221cfc0fc56a546e72620eebc884675bd9848ab84abadc31c60307efc` |
-| 3 | `def` | [boolToReal](../../../../../ComputerScience/AlgorithmsInComputerScience/BinaryCharge.lean/declarations/booltoreal.md) | 31 | `declaration-track:bd0f2b8296e0a5e22eef729739ceb6d2074b7f0160fee0c090a2792d786d0ca0` |
-| 4 | `theorem` | [boolToReal_false](../../../../../ComputerScience/AlgorithmsInComputerScience/BinaryCharge.lean/declarations/booltoreal-false.md) | 35 | `result-track:19b3a4446179dfaacc49ed566abe981f7be3c6d25c00b04315962afc5b8fddb7` |
-| 5 | `theorem` | [boolToReal_true](../../../../../ComputerScience/AlgorithmsInComputerScience/BinaryCharge.lean/declarations/booltoreal-true.md) | 36 | `result-track:41d4bf265fc3258d7443f936f9750fa47f9dd4c3a5508e7f0735722296beb425` |
+| 1 | `structure` | [BinaryVertexCharge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinaryCharge.lean/declarations/binaryvertexcharge.md) | 17 | `declaration-track:51dff1bce4f46f734a6ef2b0d8751a0bb3f39aa766756e4e74529a09d5b40134` |
+| 2 | `structure` | [ChargedTerrain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinaryCharge.lean/declarations/chargedterrain.md) | 25 | `declaration-track:615eefe221cfc0fc56a546e72620eebc884675bd9848ab84abadc31c60307efc` |
+| 3 | `def` | [boolToReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinaryCharge.lean/declarations/booltoreal.md) | 31 | `declaration-track:bd0f2b8296e0a5e22eef729739ceb6d2074b7f0160fee0c090a2792d786d0ca0` |
+| 4 | `theorem` | [boolToReal_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinaryCharge.lean/declarations/booltoreal-false.md) | 35 | `result-track:19b3a4446179dfaacc49ed566abe981f7be3c6d25c00b04315962afc5b8fddb7` |
+| 5 | `theorem` | [boolToReal_true](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinaryCharge.lean/declarations/booltoreal-true.md) | 36 | `result-track:41d4bf265fc3258d7443f936f9750fa47f9dd4c3a5508e7f0735722296beb425` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

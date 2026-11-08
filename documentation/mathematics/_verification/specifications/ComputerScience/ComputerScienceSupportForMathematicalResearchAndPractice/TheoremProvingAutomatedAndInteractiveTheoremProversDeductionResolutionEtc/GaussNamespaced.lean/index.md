@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GaussNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GaussNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GaussNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GaussNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [GaussM](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GaussNamespaced.lean/declarations/gaussm.md) | 26 | `declaration-track:d28911f0f12fff8b1a80255d498d037994de421b4902add61e8597a8b7ffb825` |
-| 2 | `def` | [findNonzeroRow](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GaussNamespaced.lean/declarations/findnonzerorow.md) | 31 | `declaration-track:3b4875706fdfec87e3aa789aa25f49078fcfb087510ecc43495b8db31b4adef5` |
-| 3 | `def` | [getTableauImp](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GaussNamespaced.lean/declarations/gettableauimp.md) | 38 | `declaration-track:a883c5459f1c045e071477db036bd583b00e4b2a78895fc3972f4368dcfd129d` |
-| 4 | `def` | [getTableau](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GaussNamespaced.lean/declarations/gettableau.md) | 86 | `declaration-track:3f5be7eb123ab9845254b67d07ccb0b4ffdc405158fa4e03cfaf345a5211d3c2` |
+| 1 | `abbrev` | [GaussM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GaussNamespaced.lean/declarations/gaussm.md) | 26 | `declaration-track:d28911f0f12fff8b1a80255d498d037994de421b4902add61e8597a8b7ffb825` |
+| 2 | `def` | [findNonzeroRow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GaussNamespaced.lean/declarations/findnonzerorow.md) | 31 | `declaration-track:3b4875706fdfec87e3aa789aa25f49078fcfb087510ecc43495b8db31b4adef5` |
+| 3 | `def` | [getTableauImp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GaussNamespaced.lean/declarations/gettableauimp.md) | 38 | `declaration-track:a883c5459f1c045e071477db036bd583b00e4b2a78895fc3972f4368dcfd129d` |
+| 4 | `def` | [getTableau](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GaussNamespaced.lean/declarations/gettableau.md) | 86 | `declaration-track:3f5be7eb123ab9845254b67d07ccb0b4ffdc405158fa4e03cfaf345a5211d3c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

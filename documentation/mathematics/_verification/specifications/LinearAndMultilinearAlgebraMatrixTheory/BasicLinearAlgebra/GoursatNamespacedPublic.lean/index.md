@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GoursatNamespacedPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GoursatNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GoursatNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GoursatNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [goursatFst](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GoursatNamespacedPublic.lean/declarations/goursatfst.md) | 47 | `declaration-track:cd305fb360b4b35f824d53e21e501490a431a95949cfbcc278a641af8492bb68` |
-| 2 | `def` | [goursatSnd](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GoursatNamespacedPublic.lean/declarations/goursatsnd.md) | 56 | `declaration-track:85732943be01c8948e693ea5f097e6b832100372a865f68c3bce24fba02d4b00` |
-| 3 | `lemma` | [goursatFst_toAddSubgroup](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GoursatNamespacedPublic.lean/declarations/goursatfst-toaddsubgroup.md) | 59 | `result-track:d985c786f6259c07e39702695b5866285b69fae6569f11a22955dc7aee2ab9a4` |
-| 4 | `lemma` | [goursatSnd_toAddSubgroup](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GoursatNamespacedPublic.lean/declarations/goursatsnd-toaddsubgroup.md) | 64 | `result-track:9156fed99c641e772f57467d0ad94182199aef5c698ca35738f5be4941da5f6c` |
-| 5 | `lemma` | [goursatFst_prod_goursatSnd_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GoursatNamespacedPublic.lean/declarations/goursatfst-prod-goursatsnd-le.md) | 70 | `result-track:f34885b789daa962e7a58e03746244853dba2f1327adc287e303bd1ca9acf0ef` |
-| 6 | `lemma` | [goursat_surjective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GoursatNamespacedPublic.lean/declarations/goursat-surjective.md) | 83 | `result-track:e217c2c4d4129c23e4a2c936aee6fd7bc4b95bd47a1f335a9d148771eb22adf6` |
-| 7 | `lemma` | [goursat](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GoursatNamespacedPublic.lean/declarations/goursat.md) | 111 | `result-track:80fbc9becc6b6600c9f268621ea8ce87ae2857eac4b6ab25027ba5fff74b80cd` |
+| 1 | `def` | [goursatFst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GoursatNamespacedPublic.lean/declarations/goursatfst.md) | 47 | `declaration-track:cd305fb360b4b35f824d53e21e501490a431a95949cfbcc278a641af8492bb68` |
+| 2 | `def` | [goursatSnd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GoursatNamespacedPublic.lean/declarations/goursatsnd.md) | 56 | `declaration-track:85732943be01c8948e693ea5f097e6b832100372a865f68c3bce24fba02d4b00` |
+| 3 | `lemma` | [goursatFst_toAddSubgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GoursatNamespacedPublic.lean/declarations/goursatfst-toaddsubgroup.md) | 59 | `result-track:d985c786f6259c07e39702695b5866285b69fae6569f11a22955dc7aee2ab9a4` |
+| 4 | `lemma` | [goursatSnd_toAddSubgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GoursatNamespacedPublic.lean/declarations/goursatsnd-toaddsubgroup.md) | 64 | `result-track:9156fed99c641e772f57467d0ad94182199aef5c698ca35738f5be4941da5f6c` |
+| 5 | `lemma` | [goursatFst_prod_goursatSnd_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GoursatNamespacedPublic.lean/declarations/goursatfst-prod-goursatsnd-le.md) | 70 | `result-track:f34885b789daa962e7a58e03746244853dba2f1327adc287e303bd1ca9acf0ef` |
+| 6 | `lemma` | [goursat_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GoursatNamespacedPublic.lean/declarations/goursat-surjective.md) | 83 | `result-track:e217c2c4d4129c23e4a2c936aee6fd7bc4b95bd47a1f335a9d148771eb22adf6` |
+| 7 | `lemma` | [goursat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GoursatNamespacedPublic.lean/declarations/goursat.md) | 111 | `result-track:80fbc9becc6b6600c9f268621ea8ce87ae2857eac4b6ab25027ba5fff74b80cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

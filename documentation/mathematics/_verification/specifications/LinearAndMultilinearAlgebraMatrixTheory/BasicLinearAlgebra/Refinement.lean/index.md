@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Refinement.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Refinement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Refinement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Refinement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [HierarchyEvidenceStatus](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Refinement.lean/declarations/hierarchyevidencestatus.md) | 20 | `declaration-track:2bf2cb12489b260df6f80c966615878c429d0e3c89ce7baca5c33a62ab0b1ed1` |
-| 2 | `structure` | [HierarchyLevelMetadata](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Refinement.lean/declarations/hierarchylevelmetadata.md) | 28 | `declaration-track:f2a1d95b2197587922a02a66ea1467c6aef39e215d87a680fae6d5706cff33a8` |
-| 3 | `structure` | [GlobalHierarchy](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Refinement.lean/declarations/globalhierarchy.md) | 36 | `declaration-track:9813e9da32e13a77b0e1df8b84d003a7ec8f5dad8e831bbb15ce4058c192e43d` |
-| 4 | `structure` | [LinearLaplacianEncoding](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Refinement.lean/declarations/linearlaplacianencoding.md) | 54 | `declaration-track:ea4a5cec94a25287441b272ff19d78bfe9f9ae17b5585ed0aa9571a23ea036c2` |
-| 5 | `theorem` | [reconstruct](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Refinement.lean/declarations/reconstruct.md) | 68 | `result-track:3beda615ffe757092819f48a8a186be518007b2415dd1e7480d62c67dd2d879a` |
-| 6 | `structure` | [RefinementObstruction](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Refinement.lean/declarations/refinementobstruction.md) | 75 | `declaration-track:25f8421e3f5b548197f3d13cc8a6266edabfbca6e27a68063f298dec2bcb765e` |
+| 1 | `inductive` | [HierarchyEvidenceStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Refinement.lean/declarations/hierarchyevidencestatus.md) | 20 | `declaration-track:2bf2cb12489b260df6f80c966615878c429d0e3c89ce7baca5c33a62ab0b1ed1` |
+| 2 | `structure` | [HierarchyLevelMetadata](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Refinement.lean/declarations/hierarchylevelmetadata.md) | 28 | `declaration-track:f2a1d95b2197587922a02a66ea1467c6aef39e215d87a680fae6d5706cff33a8` |
+| 3 | `structure` | [GlobalHierarchy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Refinement.lean/declarations/globalhierarchy.md) | 36 | `declaration-track:9813e9da32e13a77b0e1df8b84d003a7ec8f5dad8e831bbb15ce4058c192e43d` |
+| 4 | `structure` | [LinearLaplacianEncoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Refinement.lean/declarations/linearlaplacianencoding.md) | 54 | `declaration-track:ea4a5cec94a25287441b272ff19d78bfe9f9ae17b5585ed0aa9571a23ea036c2` |
+| 5 | `theorem` | [reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Refinement.lean/declarations/reconstruct.md) | 68 | `result-track:3beda615ffe757092819f48a8a186be518007b2415dd1e7480d62c67dd2d879a` |
+| 6 | `structure` | [RefinementObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Refinement.lean/declarations/refinementobstruction.md) | 75 | `declaration-track:25f8421e3f5b548197f3d13cc8a6266edabfbca6e27a68063f298dec2bcb765e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

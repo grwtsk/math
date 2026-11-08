@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.LandauStatements`](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.LandauStatements`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [goldbach_ten](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/goldbach-ten.md) | 23 | `result-track:d7e5445fb1ec67aca78ad61b3ca812c8b4ae3ef7e6a02afa5c7f00358026c2f3` |
-| 2 | `theorem` | [twins_ten](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/twins-ten.md) | 26 | `result-track:1b51ef315143b276df4453aef02fbc8917060ac45b09622c7e5b85c1198cee43` |
-| 3 | `theorem` | [first_square](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/first-square.md) | 29 | `result-track:d5b83c4a25a10181c55232928163eaecdca9f4ec6a9e6dc8ff21f28aa90fc093` |
-| 4 | `theorem` | [second_square](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/second-square.md) | 32 | `result-track:f8a778be8e9474db5dde7312df2c5197d1005e3be1fef4c2e3e3479a7df0f6ab` |
-| 5 | `theorem` | [quadratics_ten](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/quadratics-ten.md) | 35 | `result-track:19db02512dd43714d977b2a17ece2fc30ff81502cee60492bde4278b918806f0` |
-| 6 | `theorem` | [strict_upper_endpoint](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/strict-upper-endpoint.md) | 38 | `result-track:7c61f3595eb6ce5ac6c86312aa1bd21e4a0f74438ae3f7c3d72285bde8f4b058` |
-| 7 | `theorem` | [empty_interval](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/empty-interval.md) | 41 | `result-track:60ef085b3e317e286f90bdd3247056628e5b219e9dc44abb80453602a4114472` |
-| 8 | `theorem` | [reversed_interval](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/reversed-interval.md) | 44 | `result-track:be312f421857f2de085abab6493d4b34b9c4b3497a077653b83593aa07caa085` |
-| 9 | `theorem` | [prime_power_is_not_prime](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/prime-power-is-not-prime.md) | 47 | `result-track:4593d5b37c5985ff8c651fdda72425adfaf7b591983451fa55e496c7fea033a1` |
-| 10 | `theorem` | [upper_sieve_is_not_lower](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/upper-sieve-is-not-lower.md) | 52 | `result-track:48e0aaee6f3a59bb8531ada43414b43f1e3f4e1c2826ee6e416ebad56b9e3088` |
-| 11 | `theorem` | [fixed_shift_control](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/fixed-shift-control.md) | 57 | `result-track:ad7383edcd0d7d6c874f445e6ac7914d4eff6a427addb8c96f95ba36d5decd17` |
-| 12 | `theorem` | [finite_agreement](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/finite-agreement.md) | 61 | `result-track:a02c1675a241c4ed7fe89c4d153adfd4566337ae4f0e5ac32f3ce7a2df9dc08b` |
-| 13 | `theorem` | [bounded_predicate_not_unbounded](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/bounded-predicate-not-unbounded.md) | 68 | `result-track:5873a37202a836de1823a3c6d5c81e6451515ce8a69083428111fdbe27639c1e` |
-| 14 | `theorem` | [true_predicate_unbounded](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/true-predicate-unbounded.md) | 75 | `result-track:8f018f3e0a28391821c8d84237f711877a9ab48ae0116c57d5a7052a7c61c32b` |
+| 1 | `theorem` | [goldbach_ten](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/goldbach-ten.md) | 23 | `result-track:d7e5445fb1ec67aca78ad61b3ca812c8b4ae3ef7e6a02afa5c7f00358026c2f3` |
+| 2 | `theorem` | [twins_ten](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/twins-ten.md) | 26 | `result-track:1b51ef315143b276df4453aef02fbc8917060ac45b09622c7e5b85c1198cee43` |
+| 3 | `theorem` | [first_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/first-square.md) | 29 | `result-track:d5b83c4a25a10181c55232928163eaecdca9f4ec6a9e6dc8ff21f28aa90fc093` |
+| 4 | `theorem` | [second_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/second-square.md) | 32 | `result-track:f8a778be8e9474db5dde7312df2c5197d1005e3be1fef4c2e3e3479a7df0f6ab` |
+| 5 | `theorem` | [quadratics_ten](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/quadratics-ten.md) | 35 | `result-track:19db02512dd43714d977b2a17ece2fc30ff81502cee60492bde4278b918806f0` |
+| 6 | `theorem` | [strict_upper_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/strict-upper-endpoint.md) | 38 | `result-track:7c61f3595eb6ce5ac6c86312aa1bd21e4a0f74438ae3f7c3d72285bde8f4b058` |
+| 7 | `theorem` | [empty_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/empty-interval.md) | 41 | `result-track:60ef085b3e317e286f90bdd3247056628e5b219e9dc44abb80453602a4114472` |
+| 8 | `theorem` | [reversed_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/reversed-interval.md) | 44 | `result-track:be312f421857f2de085abab6493d4b34b9c4b3497a077653b83593aa07caa085` |
+| 9 | `theorem` | [prime_power_is_not_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/prime-power-is-not-prime.md) | 47 | `result-track:4593d5b37c5985ff8c651fdda72425adfaf7b591983451fa55e496c7fea033a1` |
+| 10 | `theorem` | [upper_sieve_is_not_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/upper-sieve-is-not-lower.md) | 52 | `result-track:48e0aaee6f3a59bb8531ada43414b43f1e3f4e1c2826ee6e416ebad56b9e3088` |
+| 11 | `theorem` | [fixed_shift_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/fixed-shift-control.md) | 57 | `result-track:ad7383edcd0d7d6c874f445e6ac7914d4eff6a427addb8c96f95ba36d5decd17` |
+| 12 | `theorem` | [finite_agreement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/finite-agreement.md) | 61 | `result-track:a02c1675a241c4ed7fe89c4d153adfd4566337ae4f0e5ac32f3ce7a2df9dc08b` |
+| 13 | `theorem` | [bounded_predicate_not_unbounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/bounded-predicate-not-unbounded.md) | 68 | `result-track:5873a37202a836de1823a3c6d5c81e6451515ce8a69083428111fdbe27639c1e` |
+| 14 | `theorem` | [true_predicate_unbounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/declarations/true-predicate-unbounded.md) | 75 | `result-track:8f018f3e0a28391821c8d84237f711877a9ab48ae0116c57d5a7052a7c61c32b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

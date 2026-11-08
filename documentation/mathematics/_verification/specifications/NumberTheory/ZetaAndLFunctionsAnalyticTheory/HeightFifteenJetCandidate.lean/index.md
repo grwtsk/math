@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.JetRectangleCount`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.JetRectangleCount`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,24 +57,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [blocks](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/blocks.md) | 24 | `declaration-track:8702028433ca2e028c07ed9a9e319d37e3eee93a8b14ef79fe5b08cfeb734693` |
-| 2 | `def` | [marks](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/marks.md) | 31 | `declaration-track:899a914394a21654e4ba62ca9e3201e6867d74002458084b2a9038c9d2c10b51` |
-| 3 | `def` | [edges](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/edges.md) | 34 | `declaration-track:20698a6be9c9bda6555323adef1b91e9c4b024ada571b425645f8b80d3ecc2a6` |
-| 4 | `def` | [parameters](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/parameters.md) | 37 | `declaration-track:9f398fff1212665b63f9f5e422f5fe25d2f0e140d570e0ece55ba79b048484b2` |
-| 5 | `def` | [domain](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/domain.md) | 39 | `declaration-track:428961caa354d66bcf7a9331a8d34289b6c02a6f91f281c487faedda8389dfc1` |
-| 6 | `def` | [lengthAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/lengthat.md) | 42 | `declaration-track:2935ae2810d604644712532d84993d35770c9fdcaef4ef85619a1387e05a4ef7` |
-| 7 | `def` | [plan](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/plan.md) | 45 | `declaration-track:1b893d4b3a88c36681faf1aec14aaecb4e6cca4abb157de4f88f08aa16d1707f` |
-| 8 | `def` | [plans](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/plans.md) | 51 | `declaration-track:fc0d2adaf7542f536ba991b77101e95899786b01fdc450f42fb76411fb98ce63` |
-| 9 | `def` | [prior](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/prior.md) | 53 | `declaration-track:bd93902ae66a21349dd26728c3ab99ac63cf78bb5068bb22007d81763b2e0406` |
-| 10 | `def` | [imageAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/imageat.md) | 58 | `declaration-track:50de1039fbf7e154117fb9d588db23ef874b0fb9fe1d798fdf2d8f5221afd8b6` |
-| 11 | `def` | [image](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/image.md) | 66 | `declaration-track:940cf42d1c2904c7f7b809ef6e48a3a75d6e8738c492b65e44fa77bd2b80ceb9` |
-| 12 | `theorem` | [mesh_shape](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/mesh-shape.md) | 69 | `result-track:bdc29c696c8323f8ea93afebf23322e7764fc64f1dc7ad35dde96fbc97e4dd4e` |
-| 13 | `theorem` | [plan_length](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/plan-length.md) | 72 | `result-track:0e47601834d6369a17e328aa6b9afbafd48c57df6c3191748522eb807f576375` |
-| 14 | `theorem` | [image_length](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/image-length.md) | 74 | `result-track:3e2ad09dc8f0edf6cabce168c8099926458ceabee134a863e9dc9d6fc677c928` |
-| 15 | `def` | [result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/result.md) | 77 | `declaration-track:db94455ae7c77e54f3eca4d957a99e2d7f389959935d02a58ba044f2a4d63cc8` |
-| 16 | `def` | [Success](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/success.md) | 79 | `declaration-track:6c542da5757f7464f053c7f2b6cdd9658287410c9dea9bf16e3fa5753a02d5c2` |
-| 17 | `theorem` | [count_one_of_success](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/count-one-of-success.md) | 82 | `result-track:da9b166d7f4d831893b2d1652d340fa174b33ead542348094b2743e59e22462b` |
-| 18 | `theorem` | [complete_pair_of_success](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/complete-pair-of-success.md) | 86 | `result-track:1fb3f43e85615d6347ca63a446e4bf0f4476aef5d1ad1179f384b69bb892bddc` |
+| 1 | `def` | [blocks](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/blocks.md) | 24 | `declaration-track:8702028433ca2e028c07ed9a9e319d37e3eee93a8b14ef79fe5b08cfeb734693` |
+| 2 | `def` | [marks](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/marks.md) | 31 | `declaration-track:899a914394a21654e4ba62ca9e3201e6867d74002458084b2a9038c9d2c10b51` |
+| 3 | `def` | [edges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/edges.md) | 34 | `declaration-track:20698a6be9c9bda6555323adef1b91e9c4b024ada571b425645f8b80d3ecc2a6` |
+| 4 | `def` | [parameters](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/parameters.md) | 37 | `declaration-track:9f398fff1212665b63f9f5e422f5fe25d2f0e140d570e0ece55ba79b048484b2` |
+| 5 | `def` | [domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/domain.md) | 39 | `declaration-track:428961caa354d66bcf7a9331a8d34289b6c02a6f91f281c487faedda8389dfc1` |
+| 6 | `def` | [lengthAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/lengthat.md) | 42 | `declaration-track:2935ae2810d604644712532d84993d35770c9fdcaef4ef85619a1387e05a4ef7` |
+| 7 | `def` | [plan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/plan.md) | 45 | `declaration-track:1b893d4b3a88c36681faf1aec14aaecb4e6cca4abb157de4f88f08aa16d1707f` |
+| 8 | `def` | [plans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/plans.md) | 51 | `declaration-track:fc0d2adaf7542f536ba991b77101e95899786b01fdc450f42fb76411fb98ce63` |
+| 9 | `def` | [prior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/prior.md) | 53 | `declaration-track:bd93902ae66a21349dd26728c3ab99ac63cf78bb5068bb22007d81763b2e0406` |
+| 10 | `def` | [imageAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/imageat.md) | 58 | `declaration-track:50de1039fbf7e154117fb9d588db23ef874b0fb9fe1d798fdf2d8f5221afd8b6` |
+| 11 | `def` | [image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/image.md) | 66 | `declaration-track:940cf42d1c2904c7f7b809ef6e48a3a75d6e8738c492b65e44fa77bd2b80ceb9` |
+| 12 | `theorem` | [mesh_shape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/mesh-shape.md) | 69 | `result-track:bdc29c696c8323f8ea93afebf23322e7764fc64f1dc7ad35dde96fbc97e4dd4e` |
+| 13 | `theorem` | [plan_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/plan-length.md) | 72 | `result-track:0e47601834d6369a17e328aa6b9afbafd48c57df6c3191748522eb807f576375` |
+| 14 | `theorem` | [image_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/image-length.md) | 74 | `result-track:3e2ad09dc8f0edf6cabce168c8099926458ceabee134a863e9dc9d6fc677c928` |
+| 15 | `def` | [result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/result.md) | 77 | `declaration-track:db94455ae7c77e54f3eca4d957a99e2d7f389959935d02a58ba044f2a4d63cc8` |
+| 16 | `def` | [Success](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/success.md) | 79 | `declaration-track:6c542da5757f7464f053c7f2b6cdd9658287410c9dea9bf16e3fa5753a02d5c2` |
+| 17 | `theorem` | [count_one_of_success](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/count-one-of-success.md) | 82 | `result-track:da9b166d7f4d831893b2d1652d340fa174b33ead542348094b2743e59e22462b` |
+| 18 | `theorem` | [complete_pair_of_success](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenJetCandidate.lean/declarations/complete-pair-of-success.md) | 86 | `result-track:1fb3f43e85615d6347ca63a446e4bf0f4476aef5d1ad1179f384b69bb892bddc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

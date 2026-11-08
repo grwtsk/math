@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PortFiber](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/declarations/portfiber.md) | 11 | `declaration-track:34703741db926f4ce0bea577ff51e9ae82c84aca128688d92ef98b136659f19d` |
-| 2 | `def` | [ofFunctions](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/declarations/offunctions.md) | 25 | `declaration-track:de8208310e3205eea51775e96236319a40505f4c2e436c9414eba362039296aa` |
-| 3 | `structure` | [SourceIdentity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/declarations/sourceidentity.md) | 40 | `declaration-track:5bfdc8cd8aefbd6eac9f50b7d6a28b2ba0f9721bd1eb75babfd11140534cbef3` |
-| 4 | `structure` | [SourceBoundPort](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/declarations/sourceboundport.md) | 48 | `declaration-track:d58f017ae92655149d31d081a280c563b4796e747dbf853672beac42af84c38f` |
-| 5 | `structure` | [SameSource](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/declarations/samesource.md) | 55 | `declaration-track:6e06cb07c19c09dd7f71218a1c2f4632d8165c22e1f91febd425863b08e88a37` |
-| 6 | `def` | [comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/declarations/comp.md) | 64 | `declaration-track:873d9e620386e43fc6a439a8f6534540274ef09a3e5662682762e546445a43b9` |
+| 1 | `structure` | [PortFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/declarations/portfiber.md) | 11 | `declaration-track:34703741db926f4ce0bea577ff51e9ae82c84aca128688d92ef98b136659f19d` |
+| 2 | `def` | [ofFunctions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/declarations/offunctions.md) | 25 | `declaration-track:de8208310e3205eea51775e96236319a40505f4c2e436c9414eba362039296aa` |
+| 3 | `structure` | [SourceIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/declarations/sourceidentity.md) | 40 | `declaration-track:5bfdc8cd8aefbd6eac9f50b7d6a28b2ba0f9721bd1eb75babfd11140534cbef3` |
+| 4 | `structure` | [SourceBoundPort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/declarations/sourceboundport.md) | 48 | `declaration-track:d58f017ae92655149d31d081a280c563b4796e747dbf853672beac42af84c38f` |
+| 5 | `structure` | [SameSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/declarations/samesource.md) | 55 | `declaration-track:6e06cb07c19c09dd7f71218a1c2f4632d8165c22e1f91febd425863b08e88a37` |
+| 6 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/declarations/comp.md) | 64 | `declaration-track:873d9e620386e43fc6a439a8f6534540274ef09a3e5662682762e546445a43b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespacedTensorFixedPointContract.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespacedTensorFixedPointContract.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespacedTensorFixedPointContract.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespacedTensorFixedPointContract.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TensorFixedPointContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespacedTensorFixedPointContract.lean/declarations/tensorfixedpointcontract.md) | 32 | `declaration-track:7783ebfc9d585ff40a483815d67f9bf0304b3436f6e662be9025fb827012ccaf` |
-| 2 | `theorem` | [tensor_fixed_point_exists](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespacedTensorFixedPointContract.lean/declarations/tensor-fixed-point-exists.md) | 47 | `result-track:c5e7c48e7d8b4633dfc9b89cffddd38835a3afd7f511b9a4accc79ce81d43844` |
-| 3 | `theorem` | [tensor_fixed_point_horizontal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespacedTensorFixedPointContract.lean/declarations/tensor-fixed-point-horizontal.md) | 57 | `result-track:5efcf42827c1b3502458cb8a813c37c3563761f20296c4aa50d3e3f819c2ba6a` |
-| 4 | `theorem` | [tensor_fixed_point_fixed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespacedTensorFixedPointContract.lean/declarations/tensor-fixed-point-fixed.md) | 69 | `result-track:cac08ab6a90db603ba1a2287d648a48b1628d926d530614a4b50ef0e99ea7bbf` |
+| 1 | `structure` | [TensorFixedPointContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespacedTensorFixedPointContract.lean/declarations/tensorfixedpointcontract.md) | 32 | `declaration-track:7783ebfc9d585ff40a483815d67f9bf0304b3436f6e662be9025fb827012ccaf` |
+| 2 | `theorem` | [tensor_fixed_point_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespacedTensorFixedPointContract.lean/declarations/tensor-fixed-point-exists.md) | 47 | `result-track:c5e7c48e7d8b4633dfc9b89cffddd38835a3afd7f511b9a4accc79ce81d43844` |
+| 3 | `theorem` | [tensor_fixed_point_horizontal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespacedTensorFixedPointContract.lean/declarations/tensor-fixed-point-horizontal.md) | 57 | `result-track:5efcf42827c1b3502458cb8a813c37c3563761f20296c4aa50d3e3f819c2ba6a` |
+| 4 | `theorem` | [tensor_fixed_point_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespacedTensorFixedPointContract.lean/declarations/tensor-fixed-point-fixed.md) | 69 | `result-track:cac08ab6a90db603ba1a2287d648a48b1628d926d530614a4b50ef0e99ea7bbf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ModelTheory/CharPNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ModelTheory/CharPNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/CharPNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/CharPNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [eqZero](../../../../../MathematicalLogicAndFoundations/ModelTheory/CharPNamespaced.lean/declarations/eqzero.md) | 41 | `declaration-track:ff130cd113edd8d30ae01348475843246f2c36e6aaba2b00a3bdd37d74b31e34` |
-| 2 | `theorem` | [realize_eqZero](../../../../../MathematicalLogicAndFoundations/ModelTheory/CharPNamespaced.lean/declarations/realize-eqzero.md) | 44 | `result-track:01b3060e5f99649b80e19f110bdb941f9f1486f1aa95662be7959236baf1d2f7` |
-| 3 | `def` | [Char PNamespaced](../../../../../MathematicalLogicAndFoundations/ModelTheory/CharPNamespaced.lean/declarations/fieldofchar.md) | 49 | `declaration-track:8bdd9c8da1fc0b3133c27065a560f5db8f44d264bbafd3bb91fc1766602ecb63` |
-| 4 | `instance` | [model_hasChar_of_charP](../../../../../MathematicalLogicAndFoundations/ModelTheory/CharPNamespaced.lean/declarations/model-haschar-of-charp.md) | 56 | `declaration-track:f30461199b811279035b53d3f18a0981bec114b618b7044f0af04de7378e5ee5` |
-| 5 | `theorem` | [charP_iff_model_fieldOfChar](../../../../../MathematicalLogicAndFoundations/ModelTheory/CharPNamespaced.lean/declarations/charp-iff-model-fieldofchar.md) | 69 | `result-track:6d4ca1533efda7add483af2092fe27df4b29dacbe5ac6652c2fbce2c36bbda1a` |
-| 6 | `instance` | [model_fieldOfChar_of_charP](../../../../../MathematicalLogicAndFoundations/ModelTheory/CharPNamespaced.lean/declarations/model-fieldofchar-of-charp.md) | 86 | `declaration-track:b5fb0d58692ec7cb307c5510e14615f2e61ae19e36b7b2fc36534cc27126e825` |
-| 7 | `theorem` | [charP_of_model_fieldOfChar](../../../../../MathematicalLogicAndFoundations/ModelTheory/CharPNamespaced.lean/declarations/charp-of-model-fieldofchar.md) | 92 | `result-track:586cfd552c140edc1347b936962b3bc449732a6096e4655e3966ea792bbbb6cf` |
+| 1 | `def` | [eqZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/CharPNamespaced.lean/declarations/eqzero.md) | 41 | `declaration-track:ff130cd113edd8d30ae01348475843246f2c36e6aaba2b00a3bdd37d74b31e34` |
+| 2 | `theorem` | [realize_eqZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/CharPNamespaced.lean/declarations/realize-eqzero.md) | 44 | `result-track:01b3060e5f99649b80e19f110bdb941f9f1486f1aa95662be7959236baf1d2f7` |
+| 3 | `def` | [Char PNamespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/CharPNamespaced.lean/declarations/fieldofchar.md) | 49 | `declaration-track:8bdd9c8da1fc0b3133c27065a560f5db8f44d264bbafd3bb91fc1766602ecb63` |
+| 4 | `instance` | [model_hasChar_of_charP](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/CharPNamespaced.lean/declarations/model-haschar-of-charp.md) | 56 | `declaration-track:f30461199b811279035b53d3f18a0981bec114b618b7044f0af04de7378e5ee5` |
+| 5 | `theorem` | [charP_iff_model_fieldOfChar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/CharPNamespaced.lean/declarations/charp-iff-model-fieldofchar.md) | 69 | `result-track:6d4ca1533efda7add483af2092fe27df4b29dacbe5ac6652c2fbce2c36bbda1a` |
+| 6 | `instance` | [model_fieldOfChar_of_charP](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/CharPNamespaced.lean/declarations/model-fieldofchar-of-charp.md) | 86 | `declaration-track:b5fb0d58692ec7cb307c5510e14615f2e61ae19e36b7b2fc36534cc27126e825` |
+| 7 | `theorem` | [charP_of_model_fieldOfChar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/CharPNamespaced.lean/declarations/charp-of-model-fieldofchar.md) | 92 | `result-track:586cfd552c140edc1347b936962b3bc449732a6096e4655e3966ea792bbbb6cf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

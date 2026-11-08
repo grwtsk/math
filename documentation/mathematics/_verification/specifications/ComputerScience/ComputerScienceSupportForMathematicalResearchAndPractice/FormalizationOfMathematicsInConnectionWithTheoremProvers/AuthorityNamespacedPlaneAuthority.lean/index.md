@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorityNamespacedPlaneAuthority.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorityNamespacedPlaneAuthority.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorityNamespacedPlaneAuthority.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorityNamespacedPlaneAuthority.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [PlaneAuthority](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorityNamespacedPlaneAuthority.lean/declarations/planeauthority.md) | 13 | `declaration-track:1fee4aa599951bde043477e243832cf4d852a0b49ff445aeefe3f1c8197c0ee7` |
-| 2 | `inductive` | [PlaneShape](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorityNamespacedPlaneAuthority.lean/declarations/planeshape.md) | 22 | `declaration-track:1e182fd838551a313d6430fb9a22faae8a0bc5d59dfba13f158dbb8a87d6dbbd` |
-| 3 | `structure` | [PlaneDescriptor](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorityNamespacedPlaneAuthority.lean/declarations/planedescriptor.md) | 30 | `declaration-track:4e02a7887d0529e91a4993630caeb130c5311e28ff641d2273666566d4ccacf4` |
+| 1 | `inductive` | [PlaneAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorityNamespacedPlaneAuthority.lean/declarations/planeauthority.md) | 13 | `declaration-track:1fee4aa599951bde043477e243832cf4d852a0b49ff445aeefe3f1c8197c0ee7` |
+| 2 | `inductive` | [PlaneShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorityNamespacedPlaneAuthority.lean/declarations/planeshape.md) | 22 | `declaration-track:1e182fd838551a313d6430fb9a22faae8a0bc5d59dfba13f158dbb8a87d6dbbd` |
+| 3 | `structure` | [PlaneDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorityNamespacedPlaneAuthority.lean/declarations/planedescriptor.md) | 30 | `declaration-track:4e02a7887d0529e91a4993630caeb130c5311e28ff641d2273666566d4ccacf4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

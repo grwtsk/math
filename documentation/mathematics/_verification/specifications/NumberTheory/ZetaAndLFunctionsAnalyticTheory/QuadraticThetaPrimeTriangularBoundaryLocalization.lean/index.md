@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularBoundaryLocalization.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularBoundaryLocalization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularBoundaryLocalization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularBoundaryLocalization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeTriangularSmoothingCandidate`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularSmoothingCandidate.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeTriangularSmoothingCandidate`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularSmoothingCandidate.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [triangularBoundaryApproximationClaim_trivial](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularBoundaryLocalization.lean/declarations/triangularboundaryapproximationclaim-trivial.md) | 14 | `result-track:a58e36cf03e0a653e7087459bfc1b088ad0595d509f40436f516eab06cec6c02` |
-| 2 | `theorem` | [primeIntervalLogMass_le_length_mul_log](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularBoundaryLocalization.lean/declarations/primeintervallogmass-le-length-mul-log.md) | 22 | `result-track:b3dba33825b2fd98a6bd56f7fdb5c205ec465277977d6adc638a8cce3804f8a8` |
-| 3 | `theorem` | [primeBoundaryMass_le_length_log_fourX](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularBoundaryLocalization.lean/declarations/primeboundarymass-le-length-log-fourx.md) | 72 | `result-track:fa26cc162a8e126c6150dcc25ccaecea1eba726759c1443e0e3d791a47a82c56` |
-| 4 | `structure` | [TriangularBoundaryLocalizationData](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularBoundaryLocalization.lean/declarations/triangularboundarylocalizationdata.md) | 95 | `declaration-track:bc52c669a3b42b1d2130c80f147dae19cb2d9aec713338d77ef896282b71524b` |
-| 5 | `def` | [TriangularBoundaryLocalizationClaim](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularBoundaryLocalization.lean/declarations/triangularboundarylocalizationclaim.md) | 109 | `declaration-track:415f29c3cc8f0e7c984ac749ec53ec70e7cd268c880a8106e7c6d320b1772f07` |
-| 6 | `theorem` | [TriangularBoundaryLocalizationData.error_le_boundary_budget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularBoundaryLocalization.lean/declarations/triangularboundarylocalizationdata-error-le-boundary-budget.md) | 115 | `result-track:6a975b00d4b69d587f18fc316adedd15d49ead55b397c751ba8e6ef624231b7d` |
+| 1 | `theorem` | [triangularBoundaryApproximationClaim_trivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularBoundaryLocalization.lean/declarations/triangularboundaryapproximationclaim-trivial.md) | 14 | `result-track:a58e36cf03e0a653e7087459bfc1b088ad0595d509f40436f516eab06cec6c02` |
+| 2 | `theorem` | [primeIntervalLogMass_le_length_mul_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularBoundaryLocalization.lean/declarations/primeintervallogmass-le-length-mul-log.md) | 22 | `result-track:b3dba33825b2fd98a6bd56f7fdb5c205ec465277977d6adc638a8cce3804f8a8` |
+| 3 | `theorem` | [primeBoundaryMass_le_length_log_fourX](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularBoundaryLocalization.lean/declarations/primeboundarymass-le-length-log-fourx.md) | 72 | `result-track:fa26cc162a8e126c6150dcc25ccaecea1eba726759c1443e0e3d791a47a82c56` |
+| 4 | `structure` | [TriangularBoundaryLocalizationData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularBoundaryLocalization.lean/declarations/triangularboundarylocalizationdata.md) | 95 | `declaration-track:bc52c669a3b42b1d2130c80f147dae19cb2d9aec713338d77ef896282b71524b` |
+| 5 | `def` | [TriangularBoundaryLocalizationClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularBoundaryLocalization.lean/declarations/triangularboundarylocalizationclaim.md) | 109 | `declaration-track:415f29c3cc8f0e7c984ac749ec53ec70e7cd268c880a8106e7c6d320b1772f07` |
+| 6 | `theorem` | [TriangularBoundaryLocalizationData.error_le_boundary_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularBoundaryLocalization.lean/declarations/triangularboundarylocalizationdata-error-le-boundary-budget.md) | 115 | `result-track:6a975b00d4b69d587f18fc316adedd15d49ead55b397c751ba8e6ef624231b7d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

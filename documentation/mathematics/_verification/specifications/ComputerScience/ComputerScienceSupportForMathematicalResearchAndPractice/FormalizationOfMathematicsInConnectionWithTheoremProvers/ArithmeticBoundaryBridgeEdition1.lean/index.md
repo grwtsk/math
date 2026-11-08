@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArithmeticBoundaryBridgeEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArithmeticBoundaryBridgeEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArithmeticBoundaryBridgeEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArithmeticBoundaryBridgeEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [arithmetic_bridge_supports_k_index](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArithmeticBoundaryBridgeEdition1.lean/declarations/arithmetic-bridge-supports-k-index.md) | 19 | `result-track:486723676e366c339ec4b8b4ed963c96a5459a5956602722da3ab830242255fb` |
-| 2 | `theorem` | [arithmetic_bridge_has_k_index](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArithmeticBoundaryBridgeEdition1.lean/declarations/arithmetic-bridge-has-k-index.md) | 25 | `result-track:2bdd15929c7f4f6b797abc693b17fc6399efb56e28a56bdd2bd0acff03704495` |
+| 1 | `theorem` | [arithmetic_bridge_supports_k_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArithmeticBoundaryBridgeEdition1.lean/declarations/arithmetic-bridge-supports-k-index.md) | 19 | `result-track:486723676e366c339ec4b8b4ed963c96a5459a5956602722da3ab830242255fb` |
+| 2 | `theorem` | [arithmetic_bridge_has_k_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArithmeticBoundaryBridgeEdition1.lean/declarations/arithmetic-bridge-has-k-index.md) | 25 | `result-track:2bdd15929c7f4f6b797abc693b17fc6399efb56e28a56bdd2bd0acff03704495` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

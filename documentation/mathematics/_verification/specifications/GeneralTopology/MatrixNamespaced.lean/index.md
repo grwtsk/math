@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MatrixNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/MatrixNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MatrixNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MatrixNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instUniformSpace](../../../../GeneralTopology/MatrixNamespaced.lean/declarations/instuniformspace.md) | 29 | `declaration-track:c60867ff95d086b865b93db1837056b290e435745a462f6714e771e339e2ec41` |
-| 2 | `instance` | [instIsUniformAddGroup](../../../../GeneralTopology/MatrixNamespaced.lean/declarations/instisuniformaddgroup.md) | 32 | `declaration-track:1c696f82fa3415c9d86a8045c607869d51e858cf96864b39a544b3301ff8e115` |
-| 3 | `theorem` | [uniformity](../../../../GeneralTopology/MatrixNamespaced.lean/declarations/uniformity.md) | 39 | `result-track:c570975901eaded99205e94bc6ee96a7a922a78355ecaaeeffb1ef7e374115f2` |
-| 4 | `theorem` | [uniformContinuous](../../../../GeneralTopology/MatrixNamespaced.lean/declarations/uniformcontinuous.md) | 45 | `result-track:e9dd08dcdda77272a3ff119f5c531fab532bc00c6e4ab5ed1f42a8fe31c46824` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/MatrixNamespaced.lean/declarations/instance-source-edition-2.md) | 50 | `declaration-track:9c4e4959b5fe5a33ea13af4ff057bdc1edba8805bbf1d4763682c57f68bb9436` |
-| 6 | `instance` | [(anonymous)](../../../../GeneralTopology/MatrixNamespaced.lean/declarations/instance.md) | 53 | `declaration-track:11e516ba30207ca70b1181adba21277651f18cb4ac7562dde01128c3d60a062d` |
+| 1 | `instance` | [instUniformSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MatrixNamespaced.lean/declarations/instuniformspace.md) | 29 | `declaration-track:c60867ff95d086b865b93db1837056b290e435745a462f6714e771e339e2ec41` |
+| 2 | `instance` | [instIsUniformAddGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MatrixNamespaced.lean/declarations/instisuniformaddgroup.md) | 32 | `declaration-track:1c696f82fa3415c9d86a8045c607869d51e858cf96864b39a544b3301ff8e115` |
+| 3 | `theorem` | [uniformity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MatrixNamespaced.lean/declarations/uniformity.md) | 39 | `result-track:c570975901eaded99205e94bc6ee96a7a922a78355ecaaeeffb1ef7e374115f2` |
+| 4 | `theorem` | [uniformContinuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MatrixNamespaced.lean/declarations/uniformcontinuous.md) | 45 | `result-track:e9dd08dcdda77272a3ff119f5c531fab532bc00c6e4ab5ed1f42a8fe31c46824` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MatrixNamespaced.lean/declarations/instance-source-edition-2.md) | 50 | `declaration-track:9c4e4959b5fe5a33ea13af4ff057bdc1edba8805bbf1d4763682c57f68bb9436` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MatrixNamespaced.lean/declarations/instance.md) | 53 | `declaration-track:11e516ba30207ca70b1181adba21277651f18cb4ac7562dde01128c3d60a062d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

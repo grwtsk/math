@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ProviderScopedTopologyObligations.lean/index.md) · [Full source](../../../../GeneralTopology/ProviderScopedTopologyObligations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProviderScopedTopologyObligations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProviderScopedTopologyObligations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,8 +48,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Topology.RasterCubicalComplex` — import line 18; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Int.Basic` — import line 19; external provider; requires a separately pinned dependency.
-- [Finite Cut And Replacement](../../../../GeneralTopology/FiniteCutAndReplacement.lean/index.md) — import line 21; pinned internal source present.
-- [Adjacency Policies And Interfaces](../../../../Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfaces.lean/index.md) — import line 22; pinned internal source present.
+- [Finite Cut And Replacement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiniteCutAndReplacement.lean/index.md) — import line 21; pinned internal source present.
+- [Adjacency Policies And Interfaces](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/AdjacencyPoliciesAndInterfaces.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DigitalTopologySemantics](../../../../GeneralTopology/ProviderScopedTopologyObligations.lean/declarations/digitaltopologysemantics.md) | 52 | `declaration-track:b9747d5d49cc4304948cacb7fdc007c5dc6f04db3ebe6154f68b47d9fc6f469c` |
-| 2 | `structure` | [ControlledDigitalSurgery](../../../../GeneralTopology/ProviderScopedTopologyObligations.lean/declarations/controlleddigitalsurgery.md) | 79 | `declaration-track:befda89fdcf6173dc1371b7b351316c0ac5b601600ea718e8460a8d9da4ef16b` |
-| 3 | `theorem` | [changes_only_selected](../../../../GeneralTopology/ProviderScopedTopologyObligations.lean/declarations/changes-only-selected.md) | 105 | `result-track:a2a36b63f4ce33b19768e27dc1af6e26fc3f9b239275e489414c3e4528e669ee` |
-| 4 | `theorem` | [added_only_selected](../../../../GeneralTopology/ProviderScopedTopologyObligations.lean/declarations/added-only-selected.md) | 114 | `result-track:4fcac13216727dcca826a38fa295fe63bc5e0bb43f559116f6910b86d9dfa848` |
-| 5 | `theorem` | [deleted_only_selected](../../../../GeneralTopology/ProviderScopedTopologyObligations.lean/declarations/deleted-only-selected.md) | 123 | `result-track:1b0f7c2503e9cb2e9430d7c212ef3e237eafa0ff1257cb92f73d63b72bb12a0c` |
+| 1 | `structure` | [DigitalTopologySemantics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProviderScopedTopologyObligations.lean/declarations/digitaltopologysemantics.md) | 52 | `declaration-track:b9747d5d49cc4304948cacb7fdc007c5dc6f04db3ebe6154f68b47d9fc6f469c` |
+| 2 | `structure` | [ControlledDigitalSurgery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProviderScopedTopologyObligations.lean/declarations/controlleddigitalsurgery.md) | 79 | `declaration-track:befda89fdcf6173dc1371b7b351316c0ac5b601600ea718e8460a8d9da4ef16b` |
+| 3 | `theorem` | [changes_only_selected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProviderScopedTopologyObligations.lean/declarations/changes-only-selected.md) | 105 | `result-track:a2a36b63f4ce33b19768e27dc1af6e26fc3f9b239275e489414c3e4528e669ee` |
+| 4 | `theorem` | [added_only_selected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProviderScopedTopologyObligations.lean/declarations/added-only-selected.md) | 114 | `result-track:4fcac13216727dcca826a38fa295fe63bc5e0bb43f559116f6910b86d9dfa848` |
+| 5 | `theorem` | [deleted_only_selected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProviderScopedTopologyObligations.lean/declarations/deleted-only-selected.md) | 123 | `result-track:1b0f7c2503e9cb2e9430d7c212ef3e237eafa0ff1257cb92f73d63b72bb12a0c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

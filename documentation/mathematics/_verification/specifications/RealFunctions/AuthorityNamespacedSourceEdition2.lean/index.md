@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AuthorityNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../RealFunctions/AuthorityNamespacedSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AuthorityNamespacedSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AuthorityNamespacedSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ClaimKind](../../../../RealFunctions/AuthorityNamespacedSourceEdition2.lean/declarations/claimkind.md) | 21 | `declaration-track:3dc12b08c45ec7753a98de8f3b4550349c2ddda62d725fcbee745db0cf58d8d6` |
-| 2 | `abbrev` | [TheoremAuthority](../../../../RealFunctions/AuthorityNamespacedSourceEdition2.lean/declarations/theoremauthority.md) | 22 | `declaration-track:c04278bcc29cfc0ec6704e8d3a27c36b5c28a428a62ec7e482ee8830891c6084` |
-| 3 | `abbrev` | [AuthoritySurface](../../../../RealFunctions/AuthorityNamespacedSourceEdition2.lean/declarations/authoritysurface.md) | 23 | `declaration-track:19c69278d40114e41099640f1a5d5663753f98ccf6910e18f9d1d5497cd09725` |
-| 4 | `abbrev` | [AuthorityTransitionGate](../../../../RealFunctions/AuthorityNamespacedSourceEdition2.lean/declarations/authoritytransitiongate.md) | 24 | `declaration-track:29f55609038e821eb29e7950dd45259ffcb957654e973163facc2626e4c6b228` |
-| 5 | `abbrev` | [AuthorityTransition](../../../../RealFunctions/AuthorityNamespacedSourceEdition2.lean/declarations/authoritytransition.md) | 26 | `declaration-track:a829c9b54de1faf0009d7515c07c2c9708a6ceed03d95b76f0aaee9ec95722eb` |
-| 6 | `abbrev` | [AuthorityContext](../../../../RealFunctions/AuthorityNamespacedSourceEdition2.lean/declarations/authoritycontext.md) | 27 | `declaration-track:d2df7ce5a2ebc8f25ef98952b383775d33b488177c6dd6a32a8e8b19cc61d7b1` |
-| 7 | `theorem` | [wrapper_non_promotion_for_gate_free_runs](../../../../RealFunctions/AuthorityNamespacedSourceEdition2.lean/declarations/wrapper-non-promotion-for-gate-free-runs.md) | 29 | `result-track:e6142935052e0ebc75a6261f067f1a7ca207e390ba238fc08b576ffcd966ae52` |
+| 1 | `abbrev` | [ClaimKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AuthorityNamespacedSourceEdition2.lean/declarations/claimkind.md) | 21 | `declaration-track:3dc12b08c45ec7753a98de8f3b4550349c2ddda62d725fcbee745db0cf58d8d6` |
+| 2 | `abbrev` | [TheoremAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AuthorityNamespacedSourceEdition2.lean/declarations/theoremauthority.md) | 22 | `declaration-track:c04278bcc29cfc0ec6704e8d3a27c36b5c28a428a62ec7e482ee8830891c6084` |
+| 3 | `abbrev` | [AuthoritySurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AuthorityNamespacedSourceEdition2.lean/declarations/authoritysurface.md) | 23 | `declaration-track:19c69278d40114e41099640f1a5d5663753f98ccf6910e18f9d1d5497cd09725` |
+| 4 | `abbrev` | [AuthorityTransitionGate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AuthorityNamespacedSourceEdition2.lean/declarations/authoritytransitiongate.md) | 24 | `declaration-track:29f55609038e821eb29e7950dd45259ffcb957654e973163facc2626e4c6b228` |
+| 5 | `abbrev` | [AuthorityTransition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AuthorityNamespacedSourceEdition2.lean/declarations/authoritytransition.md) | 26 | `declaration-track:a829c9b54de1faf0009d7515c07c2c9708a6ceed03d95b76f0aaee9ec95722eb` |
+| 6 | `abbrev` | [AuthorityContext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AuthorityNamespacedSourceEdition2.lean/declarations/authoritycontext.md) | 27 | `declaration-track:d2df7ce5a2ebc8f25ef98952b383775d33b488177c6dd6a32a8e8b19cc61d7b1` |
+| 7 | `theorem` | [wrapper_non_promotion_for_gate_free_runs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AuthorityNamespacedSourceEdition2.lean/declarations/wrapper-non-promotion-for-gate-free-runs.md) | 29 | `result-track:e6142935052e0ebc75a6261f067f1a7ca207e390ba238fc08b576ffcd966ae52` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

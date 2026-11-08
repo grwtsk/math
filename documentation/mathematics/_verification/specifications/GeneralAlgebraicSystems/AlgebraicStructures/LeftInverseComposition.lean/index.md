@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LeftInverseComposition.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LeftInverseComposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LeftInverseComposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LeftInverseComposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inverse_composition](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LeftInverseComposition.lean/declarations/inverse-composition.md) | 16 | `result-track:018e7698f18b94a8b3862614af8b115c2a82bc9679fd1e5655f167b69ca4e0d0` |
+| 1 | `theorem` | [inverse_composition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LeftInverseComposition.lean/declarations/inverse-composition.md) | 16 | `result-track:018e7698f18b94a8b3862614af8b115c2a82bc9679fd1e5655f167b69ca4e0d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

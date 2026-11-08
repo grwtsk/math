@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicatorNamespaced.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicatorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicatorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicatorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [continuous_mulIndicator](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicatorNamespaced.lean/declarations/continuous-mulindicator-source-edition-2.md) | 28 | `result-track:63ae830d37b4e05235ae638ae22c666c8a2223b71857426fff6cc96c7795d060` |
-| 2 | `lemma` | [Continuous.mulIndicator](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicatorNamespaced.lean/declarations/continuous-mulindicator.md) | 33 | `result-track:31d142b199cf02dad359872d997c25200f339c5993d99ab80f2036ae28d2269d` |
-| 3 | `theorem` | [ContinuousOn.continuousAt_mulIndicator](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicatorNamespaced.lean/declarations/continuouson-continuousat-mulindicator.md) | 38 | `result-track:ee2ac88802d90c0720bbcd3999a0d893511ee53c8ed95c8b34ac9ad85d48bcde` |
-| 4 | `lemma` | [IsClopen.continuous_mulIndicator](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicatorNamespaced.lean/declarations/isclopen-continuous-mulindicator.md) | 50 | `result-track:0ae1ec82c12da3149e8976d7e6d1626b0ce9ddf7cf69a8e5bbbd6ef7aeb26b52` |
+| 1 | `lemma` | [continuous_mulIndicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicatorNamespaced.lean/declarations/continuous-mulindicator-source-edition-2.md) | 28 | `result-track:63ae830d37b4e05235ae638ae22c666c8a2223b71857426fff6cc96c7795d060` |
+| 2 | `lemma` | [Continuous.mulIndicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicatorNamespaced.lean/declarations/continuous-mulindicator.md) | 33 | `result-track:31d142b199cf02dad359872d997c25200f339c5993d99ab80f2036ae28d2269d` |
+| 3 | `theorem` | [ContinuousOn.continuousAt_mulIndicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicatorNamespaced.lean/declarations/continuouson-continuousat-mulindicator.md) | 38 | `result-track:ee2ac88802d90c0720bbcd3999a0d893511ee53c8ed95c8b34ac9ad85d48bcde` |
+| 4 | `lemma` | [IsClopen.continuous_mulIndicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraIndicatorNamespaced.lean/declarations/isclopen-continuous-mulindicator.md) | 50 | `result-track:0ae1ec82c12da3149e8976d7e6d1626b0ce9ddf7cf69a8e5bbbd6ef7aeb26b52` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

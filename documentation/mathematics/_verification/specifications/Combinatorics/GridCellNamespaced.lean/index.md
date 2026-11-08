@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/GridCellNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/GridCellNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GridCellNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GridCellNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GridCell](../../../../Combinatorics/GridCellNamespaced.lean/declarations/gridcell.md) | 24 | `declaration-track:387872cbee8cab5cb1795fb304dfd7dd78772db9ca34cb0d6d2ac3c275296095` |
-| 2 | `def` | [gridCellEquiv](../../../../Combinatorics/GridCellNamespaced.lean/declarations/gridcellequiv.md) | 31 | `declaration-track:50579520763a893e38aa255d7a07035f3e65c8f40e892aee02b720452061791c` |
-| 3 | `instance` | [gridCellFintype](../../../../Combinatorics/GridCellNamespaced.lean/declarations/gridcellfintype.md) | 38 | `declaration-track:2ba24993bcc671f909e0fb717d2121f2ac1279537798c3f7dc2db61dedcaee43` |
-| 4 | `def` | [GridCell.rowMajorIndex](../../../../Combinatorics/GridCellNamespaced.lean/declarations/gridcell-rowmajorindex.md) | 43 | `declaration-track:c4b63297c01e0c49f67850f17cea4c1ff9c1df601589e1d39b365ee9778785bd` |
+| 1 | `structure` | [GridCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GridCellNamespaced.lean/declarations/gridcell.md) | 24 | `declaration-track:387872cbee8cab5cb1795fb304dfd7dd78772db9ca34cb0d6d2ac3c275296095` |
+| 2 | `def` | [gridCellEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GridCellNamespaced.lean/declarations/gridcellequiv.md) | 31 | `declaration-track:50579520763a893e38aa255d7a07035f3e65c8f40e892aee02b720452061791c` |
+| 3 | `instance` | [gridCellFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GridCellNamespaced.lean/declarations/gridcellfintype.md) | 38 | `declaration-track:2ba24993bcc671f909e0fb717d2121f2ac1279537798c3f7dc2db61dedcaee43` |
+| 4 | `def` | [GridCell.rowMajorIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GridCellNamespaced.lean/declarations/gridcell-rowmajorindex.md) | 43 | `declaration-track:c4b63297c01e0c49f67850f17cea4c1ff9c1df601589e1d39b365ee9778785bd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

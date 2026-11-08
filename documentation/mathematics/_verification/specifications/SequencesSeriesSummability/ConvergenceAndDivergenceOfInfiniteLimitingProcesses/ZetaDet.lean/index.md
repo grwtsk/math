@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaDet.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaDet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaDet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaDet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [tracePower](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaDet.lean/declarations/tracepower.md) | 18 | `declaration-track:1ad4ab86481624f5cc44238fdaa678cd7e407207fc2312cf81e0b49afae1fd19` |
-| 2 | `def` | [zetaDet](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaDet.lean/declarations/zetadet.md) | 28 | `declaration-track:a0c642596c4728b91e6f37ef2c64f5b2cca0e3da0f72b08daf9f42bd847c2b4e` |
-| 3 | `lemma` | [zetaDet_def](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaDet.lean/declarations/zetadet-def.md) | 32 | `result-track:8d273a89ac3a2d36c2e5734de04a526b8397ddd4c1a6079f6edeb9e79aad3051` |
-| 4 | `lemma` | [zetaDet_converges](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaDet.lean/declarations/zetadet-converges.md) | 38 | `result-track:ffdee85af5da0d6f2680cfecc328aafa0dde93d6cd58aa4674ed664cba55e7e3` |
+| 1 | `def` | [tracePower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaDet.lean/declarations/tracepower.md) | 18 | `declaration-track:1ad4ab86481624f5cc44238fdaa678cd7e407207fc2312cf81e0b49afae1fd19` |
+| 2 | `def` | [zetaDet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaDet.lean/declarations/zetadet.md) | 28 | `declaration-track:a0c642596c4728b91e6f37ef2c64f5b2cca0e3da0f72b08daf9f42bd847c2b4e` |
+| 3 | `lemma` | [zetaDet_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaDet.lean/declarations/zetadet-def.md) | 32 | `result-track:8d273a89ac3a2d36c2e5734de04a526b8397ddd4c1a6079f6edeb9e79aad3051` |
+| 4 | `lemma` | [zetaDet_converges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaDet.lean/declarations/zetadet-converges.md) | 38 | `result-track:ffdee85af5da0d6f2680cfecc328aafa0dde93d6cd58aa4674ed664cba55e7e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

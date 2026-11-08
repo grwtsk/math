@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/HeisenbergExtension.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/HeisenbergExtension.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/HeisenbergExtension.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/HeisenbergExtension.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HeisenbergExtension](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/HeisenbergExtension.lean/declarations/heisenbergextension.md) | 21 | `declaration-track:0b20ae9263dce97883619e43627374b8f54f2751dca6ca4a941781a39f9e8a48` |
-| 2 | `theorem` | [heisenberg_commutator_lift](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/HeisenbergExtension.lean/declarations/heisenberg-commutator-lift.md) | 39 | `result-track:2308a8d927307a5d766dacb38ba7b3f31d39c5af0ddd5fb469391a0f387472ef` |
+| 1 | `structure` | [HeisenbergExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/HeisenbergExtension.lean/declarations/heisenbergextension.md) | 21 | `declaration-track:0b20ae9263dce97883619e43627374b8f54f2751dca6ca4a941781a39f9e8a48` |
+| 2 | `theorem` | [heisenberg_commutator_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/HeisenbergExtension.lean/declarations/heisenberg-commutator-lift.md) | 39 | `result-track:2308a8d927307a5d766dacb38ba7b3f31d39c5af0ddd5fb469391a0f387472ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

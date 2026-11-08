@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualCenteringNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualCenteringNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_remainder_tendsto_integral](../../../../MeasureAndIntegration/ActualCenteringNamespaced.lean/declarations/actual-remainder-tendsto-integral.md) | 29 | `result-track:08b49cb171d56efa9ee4d7addf48bb40863251d6d9de565045316b96700c9a29` |
-| 2 | `theorem` | [actual_scaled_laplace_tendsto_zero](../../../../MeasureAndIntegration/ActualCenteringNamespaced.lean/declarations/actual-scaled-laplace-tendsto-zero.md) | 43 | `result-track:403f08161e7cbf0bc4d766f8d911b3b20958e5ac57980fa5dc4e0fa0e4538dfc` |
-| 3 | `theorem` | [actual_euler_centering](../../../../MeasureAndIntegration/ActualCenteringNamespaced.lean/declarations/actual-euler-centering.md) | 49 | `result-track:4d5215e2b150e16e870f1a193c824bec5c046b65b460d8422c826cc623015b04` |
-| 4 | `theorem` | [actual_remainder_tendsto_zero](../../../../MeasureAndIntegration/ActualCenteringNamespaced.lean/declarations/actual-remainder-tendsto-zero.md) | 62 | `result-track:efb46d9649d969f64e613d9f6cae1faefad124ce5feb56a8477a835e7601f111` |
-| 5 | `theorem` | [actual_remainder_eq_tail](../../../../MeasureAndIntegration/ActualCenteringNamespaced.lean/declarations/actual-remainder-eq-tail.md) | 66 | `result-track:e6e81feed23212138f078e001e8dc6351211718365269f8380f7e121f1c3248a` |
+| 1 | `theorem` | [actual_remainder_tendsto_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringNamespaced.lean/declarations/actual-remainder-tendsto-integral.md) | 29 | `result-track:08b49cb171d56efa9ee4d7addf48bb40863251d6d9de565045316b96700c9a29` |
+| 2 | `theorem` | [actual_scaled_laplace_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringNamespaced.lean/declarations/actual-scaled-laplace-tendsto-zero.md) | 43 | `result-track:403f08161e7cbf0bc4d766f8d911b3b20958e5ac57980fa5dc4e0fa0e4538dfc` |
+| 3 | `theorem` | [actual_euler_centering](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringNamespaced.lean/declarations/actual-euler-centering.md) | 49 | `result-track:4d5215e2b150e16e870f1a193c824bec5c046b65b460d8422c826cc623015b04` |
+| 4 | `theorem` | [actual_remainder_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringNamespaced.lean/declarations/actual-remainder-tendsto-zero.md) | 62 | `result-track:efb46d9649d969f64e613d9f6cae1faefad124ce5feb56a8477a835e7601f111` |
+| 5 | `theorem` | [actual_remainder_eq_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringNamespaced.lean/declarations/actual-remainder-eq-tail.md) | 66 | `result-track:e6e81feed23212138f078e001e8dc6351211718365269f8380f7e121f1c3248a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

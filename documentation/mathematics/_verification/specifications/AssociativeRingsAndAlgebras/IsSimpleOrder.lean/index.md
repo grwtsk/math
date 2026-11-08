@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/IsSimpleOrder.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/IsSimpleOrder.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IsSimpleOrder.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IsSimpleOrder.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Subalgebra.isSimpleOrder_of_finrank_prime](../../../../AssociativeRingsAndAlgebras/IsSimpleOrder.lean/declarations/subalgebra-issimpleorder-of-finrank-prime.md) | 17 | `result-track:d6960702bfe004ca6e1dd19fe5b785f376694ce77a13d750b8e76a4ea5b0e3e7` |
+| 1 | `theorem` | [Subalgebra.isSimpleOrder_of_finrank_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IsSimpleOrder.lean/declarations/subalgebra-issimpleorder-of-finrank-prime.md) | 17 | `result-track:d6960702bfe004ca6e1dd19fe5b785f376694ce77a13d750b8e76a4ea5b0e3e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

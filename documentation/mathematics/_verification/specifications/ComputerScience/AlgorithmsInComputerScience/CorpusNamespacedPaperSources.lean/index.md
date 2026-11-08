@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [paperSources](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/declarations/papersources.md) | 15 | `declaration-track:17cd12fdd0c15a93bc2c197b0e493009f59095427c832dad443d37d0c973ea4b` |
-| 2 | `theorem` | [paperSources_count](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/declarations/papersources-count.md) | 78 | `result-track:84ddc8b62e3a294132590404318137fbfb15cc452f451808a3c540a1b8d4ef00` |
-| 3 | `def` | [theoremLikeTargetTotal](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/declarations/theoremliketargettotal.md) | 81 | `declaration-track:a77947252b7619087de83f17a5317ca20c13966acb0e34403438662b11a03639` |
-| 4 | `def` | [frameworkPrimitiveTotal](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/declarations/frameworkprimitivetotal.md) | 82 | `declaration-track:006bdff0fc4c8f545dd3dd82de4a7f11e288eb1bb1d88a6838c56633baad0024` |
-| 5 | `def` | [openMentionTotal](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/declarations/openmentiontotal.md) | 83 | `declaration-track:9b7200f6462e40edeaac43c6754588d9f10578708d258771c1bc101dc5fcfcc8` |
-| 6 | `theorem` | [theoremLikeTargetTotal_correct](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/declarations/theoremliketargettotal-correct.md) | 85 | `result-track:3789438a0c3ed86b9ade09d55f62a740fab5bf66627823494dc8cb7fac8b4fff` |
-| 7 | `theorem` | [frameworkPrimitiveTotal_correct](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/declarations/frameworkprimitivetotal-correct.md) | 88 | `result-track:0a987c631a34eb8197ccf3a5c49a2f73caf8f07770436c04faf28fd43af3f311` |
-| 8 | `theorem` | [openMentionTotal_correct](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/declarations/openmentiontotal-correct.md) | 91 | `result-track:f2095cf29c829d769c420b25ce1d560e93d68033948d98973c5db971d32dc5c6` |
+| 1 | `def` | [paperSources](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/declarations/papersources.md) | 15 | `declaration-track:17cd12fdd0c15a93bc2c197b0e493009f59095427c832dad443d37d0c973ea4b` |
+| 2 | `theorem` | [paperSources_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/declarations/papersources-count.md) | 78 | `result-track:84ddc8b62e3a294132590404318137fbfb15cc452f451808a3c540a1b8d4ef00` |
+| 3 | `def` | [theoremLikeTargetTotal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/declarations/theoremliketargettotal.md) | 81 | `declaration-track:a77947252b7619087de83f17a5317ca20c13966acb0e34403438662b11a03639` |
+| 4 | `def` | [frameworkPrimitiveTotal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/declarations/frameworkprimitivetotal.md) | 82 | `declaration-track:006bdff0fc4c8f545dd3dd82de4a7f11e288eb1bb1d88a6838c56633baad0024` |
+| 5 | `def` | [openMentionTotal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/declarations/openmentiontotal.md) | 83 | `declaration-track:9b7200f6462e40edeaac43c6754588d9f10578708d258771c1bc101dc5fcfcc8` |
+| 6 | `theorem` | [theoremLikeTargetTotal_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/declarations/theoremliketargettotal-correct.md) | 85 | `result-track:3789438a0c3ed86b9ade09d55f62a740fab5bf66627823494dc8cb7fac8b4fff` |
+| 7 | `theorem` | [frameworkPrimitiveTotal_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/declarations/frameworkprimitivetotal-correct.md) | 88 | `result-track:0a987c631a34eb8197ccf3a5c49a2f73caf8f07770436c04faf28fd43af3f311` |
+| 8 | `theorem` | [openMentionTotal_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedPaperSources.lean/declarations/openmentiontotal-correct.md) | 91 | `result-track:f2095cf29c829d769c420b25ce1d560e93d68033948d98973c5db971d32dc5c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

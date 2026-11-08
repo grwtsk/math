@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SimplicialNervePublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/SimplicialNervePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialNervePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialNervePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,21 +57,21 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SimplicialThickening](../../../../AlgebraicTopology/SimplicialNervePublic.lean/declarations/simplicialthickening.md) | 54 | `declaration-track:d84588087d2eaf98f431bec5cf9109a86c9e864501d27c641c13a0c43c28137b` |
-| 2 | `structure` | [Path](../../../../AlgebraicTopology/SimplicialNervePublic.lean/declarations/path.md) | 65 | `declaration-track:ce252208112de3e8ce1a1de59141d8f558ff0722f98947429e2a764c7bde5cde` |
-| 3 | `lemma` | [Path.le](../../../../AlgebraicTopology/SimplicialNervePublic.lean/declarations/path-le.md) | 73 | `result-track:d8c99c7e1b28b042f48cbbb4b3f31b7b970669e62f0551419e2a09b2babb9601` |
-| 4 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplicialNervePublic.lean/declarations/instance.md) | 76 | `declaration-track:8744dff81da89c50d12292861d84b9bc6571dd75b85a2170fc722d8869712e2a` |
-| 5 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplicialNervePublic.lean/declarations/instance-source-edition-5.md) | 80 | `declaration-track:f7323d192848e99fe018b9fda1cfb0779ab32612d9022579557da9041b51fe8e` |
-| 6 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplicialNervePublic.lean/declarations/instance-source-edition-4.md) | 96 | `declaration-track:c851c513d188b15f69e7dfcef32407086c472caee18d20f904d935abce3ae793` |
-| 7 | `lemma` | [hom_ext](../../../../AlgebraicTopology/SimplicialNervePublic.lean/declarations/hom-ext.md) | 100 | `result-track:e3fbc525d0acb1d7c27115def86980383407c21727f3c36c3056c1032914b874` |
-| 8 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplicialNervePublic.lean/declarations/instance-source-edition-3.md) | 106 | `declaration-track:ac8c770a8c6d227cb10e0fd70482d5b321cec48a7570b8e8d305e2695b80bfe7` |
-| 9 | `def` | [compFunctor](../../../../AlgebraicTopology/SimplicialNervePublic.lean/declarations/compfunctor.md) | 114 | `declaration-track:c9a6b61240b9faecc36c93fcc99a56ee1fe232858bcd863ec52c2bacae38b0dd` |
-| 10 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplicialNervePublic.lean/declarations/instance-source-edition-2.md) | 124 | `declaration-track:911ec671dadf605cac4f1d617e1de384fa6fdfe5eb66eb9c3a3ec2922b013410` |
-| 11 | `abbrev` | [functorMap](../../../../AlgebraicTopology/SimplicialNervePublic.lean/declarations/functormap.md) | 135 | `declaration-track:d775bf30ecb56a171f907b04a04883df9d13727e8800c45fcfd8574912f5454f` |
-| 12 | `def` | [functor](../../../../AlgebraicTopology/SimplicialNervePublic.lean/declarations/functor.md) | 155 | `declaration-track:8bfd7d73d4d46f096b32c7c5caad0e65b16a4086baa5d8e1ebfb47f139b1dbe3` |
-| 13 | `lemma` | [functor_id](../../../../AlgebraicTopology/SimplicialNervePublic.lean/declarations/functor-id.md) | 169 | `result-track:35006d50a9a7852b7e8eedd928789e5b4d4aa106e05110158f237614670dd5bf` |
-| 14 | `lemma` | [functor_comp](../../../../AlgebraicTopology/SimplicialNervePublic.lean/declarations/functor-comp.md) | 176 | `result-track:74f57f10b2007687c826fa4a22dd4d82790e917a1828bb69dbda9baed1987eab` |
-| 15 | `def` | [SimplicialNerve](../../../../AlgebraicTopology/SimplicialNervePublic.lean/declarations/simplicialnerve.md) | 191 | `declaration-track:c4ef905a1bb20435811d2fea8ce99caaad4c5e862adf53bc1d8dc4a8b173e79a` |
+| 1 | `structure` | [SimplicialThickening](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialNervePublic.lean/declarations/simplicialthickening.md) | 54 | `declaration-track:d84588087d2eaf98f431bec5cf9109a86c9e864501d27c641c13a0c43c28137b` |
+| 2 | `structure` | [Path](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialNervePublic.lean/declarations/path.md) | 65 | `declaration-track:ce252208112de3e8ce1a1de59141d8f558ff0722f98947429e2a764c7bde5cde` |
+| 3 | `lemma` | [Path.le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialNervePublic.lean/declarations/path-le.md) | 73 | `result-track:d8c99c7e1b28b042f48cbbb4b3f31b7b970669e62f0551419e2a09b2babb9601` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialNervePublic.lean/declarations/instance.md) | 76 | `declaration-track:8744dff81da89c50d12292861d84b9bc6571dd75b85a2170fc722d8869712e2a` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialNervePublic.lean/declarations/instance-source-edition-5.md) | 80 | `declaration-track:f7323d192848e99fe018b9fda1cfb0779ab32612d9022579557da9041b51fe8e` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialNervePublic.lean/declarations/instance-source-edition-4.md) | 96 | `declaration-track:c851c513d188b15f69e7dfcef32407086c472caee18d20f904d935abce3ae793` |
+| 7 | `lemma` | [hom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialNervePublic.lean/declarations/hom-ext.md) | 100 | `result-track:e3fbc525d0acb1d7c27115def86980383407c21727f3c36c3056c1032914b874` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialNervePublic.lean/declarations/instance-source-edition-3.md) | 106 | `declaration-track:ac8c770a8c6d227cb10e0fd70482d5b321cec48a7570b8e8d305e2695b80bfe7` |
+| 9 | `def` | [compFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialNervePublic.lean/declarations/compfunctor.md) | 114 | `declaration-track:c9a6b61240b9faecc36c93fcc99a56ee1fe232858bcd863ec52c2bacae38b0dd` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialNervePublic.lean/declarations/instance-source-edition-2.md) | 124 | `declaration-track:911ec671dadf605cac4f1d617e1de384fa6fdfe5eb66eb9c3a3ec2922b013410` |
+| 11 | `abbrev` | [functorMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialNervePublic.lean/declarations/functormap.md) | 135 | `declaration-track:d775bf30ecb56a171f907b04a04883df9d13727e8800c45fcfd8574912f5454f` |
+| 12 | `def` | [functor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialNervePublic.lean/declarations/functor.md) | 155 | `declaration-track:8bfd7d73d4d46f096b32c7c5caad0e65b16a4086baa5d8e1ebfb47f139b1dbe3` |
+| 13 | `lemma` | [functor_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialNervePublic.lean/declarations/functor-id.md) | 169 | `result-track:35006d50a9a7852b7e8eedd928789e5b4d4aa106e05110158f237614670dd5bf` |
+| 14 | `lemma` | [functor_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialNervePublic.lean/declarations/functor-comp.md) | 176 | `result-track:74f57f10b2007687c826fa4a22dd4d82790e917a1828bb69dbda9baed1987eab` |
+| 15 | `def` | [SimplicialNerve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialNervePublic.lean/declarations/simplicialnerve.md) | 191 | `declaration-track:c4ef905a1bb20435811d2fea8ce99caaad4c5e862adf53bc1d8dc4a8b173e79a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

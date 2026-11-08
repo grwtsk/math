@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FormalNeighborhoodNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/FormalNeighborhoodNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FormalNeighborhoodNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FormalNeighborhoodNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FormalNeighborhoodCover](../../../../Combinatorics/FormalNeighborhoodNamespaced.lean/declarations/formalneighborhoodcover.md) | 25 | `declaration-track:74d3d02113d896e1d369a73514e8d788538d906105f7d2157b6efe5ecf13289d` |
-| 2 | `def` | [flatFiber](../../../../Combinatorics/FormalNeighborhoodNamespaced.lean/declarations/flatfiber.md) | 52 | `declaration-track:65be7a9a317403bc06650efaae2268dd2ab9a49b615b9f21ba8d502063544421` |
-| 3 | `structure` | [DeepReducer](../../../../Combinatorics/FormalNeighborhoodNamespaced.lean/declarations/deepreducer.md) | 65 | `declaration-track:1b9740aa169f13981dd9fc6cb7d3e03df964893ff8401afd42b1a6fca6d1a7c3` |
+| 1 | `structure` | [FormalNeighborhoodCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FormalNeighborhoodNamespaced.lean/declarations/formalneighborhoodcover.md) | 25 | `declaration-track:74d3d02113d896e1d369a73514e8d788538d906105f7d2157b6efe5ecf13289d` |
+| 2 | `def` | [flatFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FormalNeighborhoodNamespaced.lean/declarations/flatfiber.md) | 52 | `declaration-track:65be7a9a317403bc06650efaae2268dd2ab9a49b615b9f21ba8d502063544421` |
+| 3 | `structure` | [DeepReducer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FormalNeighborhoodNamespaced.lean/declarations/deepreducer.md) | 65 | `declaration-track:1b9740aa169f13981dd9fc6cb7d3e03df964893ff8401afd42b1a6fca6d1a7c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

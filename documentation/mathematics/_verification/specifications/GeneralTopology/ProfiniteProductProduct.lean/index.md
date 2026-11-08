@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ProfiniteProductProduct.lean/index.md) · [Full source](../../../../GeneralTopology/ProfiniteProductProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteProductProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteProductProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [obj](../../../../GeneralTopology/ProfiniteProductProduct.lean/declarations/obj.md) | 42 | `declaration-track:fd551cb7a632dd73bcb44b5c51381aa01dcaaedf865277c7b1a9d6f926874eda` |
-| 2 | `def` | [π_app](../../../../GeneralTopology/ProfiniteProductProduct.lean/declarations/app.md) | 45 | `declaration-track:6e49b732c25ec72640c4b0566059385f10b0bf7f5883dd93b3b6437fc9134248` |
-| 3 | `def` | [map](../../../../GeneralTopology/ProfiniteProductProduct.lean/declarations/map.md) | 52 | `declaration-track:4a83735a34e2a4bd393cd910abf385800ac8dd757cbf037a6330b3d96cf1bc16` |
-| 4 | `theorem` | [surjective_π_app](../../../../GeneralTopology/ProfiniteProductProduct.lean/declarations/surjective-app.md) | 58 | `result-track:923e4ee366a3c58192f8b24afaf69d012afaec37784630577142f95bebdc9144` |
-| 5 | `theorem` | [map_comp_π_app](../../../../GeneralTopology/ProfiniteProductProduct.lean/declarations/map-comp-app.md) | 64 | `result-track:30607c5a7214d0276a077dc6529824e9382c5e46deaabd4362c84cc89139a9f7` |
-| 6 | `theorem` | [eq_of_forall_π_app_eq](../../../../GeneralTopology/ProfiniteProductProduct.lean/declarations/eq-of-forall-app-eq.md) | 68 | `result-track:006c706f4c4bc55f9a95edafe32972ee476cc826ffbeb9797cc138c2518d6a43` |
-| 7 | `def` | [indexFunctor](../../../../GeneralTopology/ProfiniteProductProduct.lean/declarations/indexfunctor.md) | 86 | `declaration-track:b99890ac43fd0f468b080e8ad9feb82592e4af1668ddcf805b8d4ddaaec92235` |
-| 8 | `def` | [indexCone](../../../../GeneralTopology/ProfiniteProductProduct.lean/declarations/indexcone.md) | 93 | `declaration-track:cab5637e8026f293d641f1f06215137ad34ef0806d289adefce6e4e826148891` |
-| 9 | `instance` | [isIso_indexCone_lift](../../../../GeneralTopology/ProfiniteProductProduct.lean/declarations/isiso-indexcone-lift.md) | 99 | `declaration-track:abf6a625d2e10cd33ea19f906546919ac828e8ced46ce5dcbba092878d76e1a4` |
-| 10 | `def` | [isoindexConeLift](../../../../GeneralTopology/ProfiniteProductProduct.lean/declarations/isoindexconelift.md) | 136 | `declaration-track:9689551887029c6a5799f4e6744cb401b09c250af6189af79763a8d0c4fc6c34` |
-| 11 | `def` | [asLimitindexConeIso](../../../../GeneralTopology/ProfiniteProductProduct.lean/declarations/aslimitindexconeiso.md) | 143 | `declaration-track:c4adadd36143efc1bd3bb59ce688e390cb4b4547fde99068dc279a405e89ab72` |
-| 12 | `def` | [indexCone_isLimit](../../../../GeneralTopology/ProfiniteProductProduct.lean/declarations/indexcone-islimit.md) | 148 | `declaration-track:385bba48ec3b6aca58d1929ee20c46009e0d7e10d6ed7e65caa718931f3c564a` |
+| 1 | `def` | [obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteProductProduct.lean/declarations/obj.md) | 42 | `declaration-track:fd551cb7a632dd73bcb44b5c51381aa01dcaaedf865277c7b1a9d6f926874eda` |
+| 2 | `def` | [π_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteProductProduct.lean/declarations/app.md) | 45 | `declaration-track:6e49b732c25ec72640c4b0566059385f10b0bf7f5883dd93b3b6437fc9134248` |
+| 3 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteProductProduct.lean/declarations/map.md) | 52 | `declaration-track:4a83735a34e2a4bd393cd910abf385800ac8dd757cbf037a6330b3d96cf1bc16` |
+| 4 | `theorem` | [surjective_π_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteProductProduct.lean/declarations/surjective-app.md) | 58 | `result-track:923e4ee366a3c58192f8b24afaf69d012afaec37784630577142f95bebdc9144` |
+| 5 | `theorem` | [map_comp_π_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteProductProduct.lean/declarations/map-comp-app.md) | 64 | `result-track:30607c5a7214d0276a077dc6529824e9382c5e46deaabd4362c84cc89139a9f7` |
+| 6 | `theorem` | [eq_of_forall_π_app_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteProductProduct.lean/declarations/eq-of-forall-app-eq.md) | 68 | `result-track:006c706f4c4bc55f9a95edafe32972ee476cc826ffbeb9797cc138c2518d6a43` |
+| 7 | `def` | [indexFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteProductProduct.lean/declarations/indexfunctor.md) | 86 | `declaration-track:b99890ac43fd0f468b080e8ad9feb82592e4af1668ddcf805b8d4ddaaec92235` |
+| 8 | `def` | [indexCone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteProductProduct.lean/declarations/indexcone.md) | 93 | `declaration-track:cab5637e8026f293d641f1f06215137ad34ef0806d289adefce6e4e826148891` |
+| 9 | `instance` | [isIso_indexCone_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteProductProduct.lean/declarations/isiso-indexcone-lift.md) | 99 | `declaration-track:abf6a625d2e10cd33ea19f906546919ac828e8ced46ce5dcbba092878d76e1a4` |
+| 10 | `def` | [isoindexConeLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteProductProduct.lean/declarations/isoindexconelift.md) | 136 | `declaration-track:9689551887029c6a5799f4e6744cb401b09c250af6189af79763a8d0c4fc6c34` |
+| 11 | `def` | [asLimitindexConeIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteProductProduct.lean/declarations/aslimitindexconeiso.md) | 143 | `declaration-track:c4adadd36143efc1bd3bb59ce688e390cb4b4547fde99068dc279a405e89ab72` |
+| 12 | `def` | [indexCone_isLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteProductProduct.lean/declarations/indexcone-islimit.md) | 148 | `declaration-track:385bba48ec3b6aca58d1929ee20c46009e0d7e10d6ed7e65caa718931f3c564a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

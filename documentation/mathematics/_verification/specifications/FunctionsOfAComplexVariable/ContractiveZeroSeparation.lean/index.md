@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ContractiveZeroSeparation.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ContractiveZeroSeparation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveZeroSeparation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveZeroSeparation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.ContractiveZeroDisk`](../../../../FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.ContractiveZeroDisk`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [scaled_value_lower_of_pair](../../../../FunctionsOfAComplexVariable/ContractiveZeroSeparation.lean/declarations/scaled-value-lower-of-pair.md) | 31 | `result-track:dd9a63c1d0d9f780f28214e67ec42651dcadd13c1401d666514a0e7154db0077` |
-| 2 | `theorem` | [scaled_value_lower_on_disk](../../../../FunctionsOfAComplexVariable/ContractiveZeroSeparation.lean/declarations/scaled-value-lower-on-disk.md) | 46 | `result-track:84c1eb4617d43803d643ae3606c90f422a771c0784b1af43c294d6183dedb0da` |
-| 3 | `theorem` | [value_lower_of_scaled](../../../../FunctionsOfAComplexVariable/ContractiveZeroSeparation.lean/declarations/value-lower-of-scaled.md) | 57 | `result-track:fc3e6a36d0da29587f3912ba5add34bbed44dcd5fdaf036b128a8c67333cd2da` |
-| 4 | `theorem` | [scaled_derivative_upper](../../../../FunctionsOfAComplexVariable/ContractiveZeroSeparation.lean/declarations/scaled-derivative-upper.md) | 67 | `result-track:554592b4e70581444dfba9b0a98f98ec5fe688de03a2bfa3c1df994dbb8dee04` |
-| 5 | `theorem` | [quotient_bound_of_scaled](../../../../FunctionsOfAComplexVariable/ContractiveZeroSeparation.lean/declarations/quotient-bound-of-scaled.md) | 74 | `result-track:7383fcdd49d2723325054b7e9455cd693d0e1d7770a0504c943b1c20cfb72e7a` |
+| 1 | `theorem` | [scaled_value_lower_of_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveZeroSeparation.lean/declarations/scaled-value-lower-of-pair.md) | 31 | `result-track:dd9a63c1d0d9f780f28214e67ec42651dcadd13c1401d666514a0e7154db0077` |
+| 2 | `theorem` | [scaled_value_lower_on_disk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveZeroSeparation.lean/declarations/scaled-value-lower-on-disk.md) | 46 | `result-track:84c1eb4617d43803d643ae3606c90f422a771c0784b1af43c294d6183dedb0da` |
+| 3 | `theorem` | [value_lower_of_scaled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveZeroSeparation.lean/declarations/value-lower-of-scaled.md) | 57 | `result-track:fc3e6a36d0da29587f3912ba5add34bbed44dcd5fdaf036b128a8c67333cd2da` |
+| 4 | `theorem` | [scaled_derivative_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveZeroSeparation.lean/declarations/scaled-derivative-upper.md) | 67 | `result-track:554592b4e70581444dfba9b0a98f98ec5fe688de03a2bfa3c1df994dbb8dee04` |
+| 5 | `theorem` | [quotient_bound_of_scaled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveZeroSeparation.lean/declarations/quotient-bound-of-scaled.md) | 74 | `result-track:7383fcdd49d2723325054b7e9455cd693d0e1d7770a0504c943b1c20cfb72e7a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

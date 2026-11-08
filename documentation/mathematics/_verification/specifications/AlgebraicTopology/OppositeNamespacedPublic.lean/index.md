@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/OppositeNamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/OppositeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OppositeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OppositeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../AlgebraicTopology/OppositeNamespacedPublic.lean/declarations/instance.md) | 33 | `declaration-track:3867dfb34cd75a5d55dcd7e9231fe326856f160d79efda8814991a1a127d5a56` |
-| 2 | `instance` | [(anonymous)](../../../../AlgebraicTopology/OppositeNamespacedPublic.lean/declarations/instance-source-edition-6.md) | 38 | `declaration-track:c3ee13dd50d9edd3f34f747f63e8696302d01e3a8b9fa2c53d7a4cd3774b71da` |
-| 3 | `instance` | [(anonymous)](../../../../AlgebraicTopology/OppositeNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:7fd7cf990c3558b1af41f19830764fd11ef9f6320fdda0dec4c8af81f1c9bb2c` |
-| 4 | `instance` | [(anonymous)](../../../../AlgebraicTopology/OppositeNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 48 | `declaration-track:b94979ddba00bceade3c49a02d646de78005afb80cd4aca7a25795a1e615b0d0` |
-| 5 | `instance` | [(anonymous)](../../../../AlgebraicTopology/OppositeNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 53 | `declaration-track:866263c14c6d192cd4f11012160ce90b904994997efb3ff5da4f7237e9d72016` |
-| 6 | `instance` | [(anonymous)](../../../../AlgebraicTopology/OppositeNamespacedPublic.lean/declarations/instance-source-edition-7.md) | 58 | `declaration-track:d9fc434f7ce438ba37ad7a6a6ac4f464616b6124b947a388f0b8f7a0362e9b67` |
-| 7 | `instance` | [(anonymous)](../../../../AlgebraicTopology/OppositeNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 63 | `declaration-track:c1577da1fc7ffccc6704d6ce5d6fb641c51f12a6178dff9d56244852d131fc69` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OppositeNamespacedPublic.lean/declarations/instance.md) | 33 | `declaration-track:3867dfb34cd75a5d55dcd7e9231fe326856f160d79efda8814991a1a127d5a56` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OppositeNamespacedPublic.lean/declarations/instance-source-edition-6.md) | 38 | `declaration-track:c3ee13dd50d9edd3f34f747f63e8696302d01e3a8b9fa2c53d7a4cd3774b71da` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OppositeNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:7fd7cf990c3558b1af41f19830764fd11ef9f6320fdda0dec4c8af81f1c9bb2c` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OppositeNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 48 | `declaration-track:b94979ddba00bceade3c49a02d646de78005afb80cd4aca7a25795a1e615b0d0` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OppositeNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 53 | `declaration-track:866263c14c6d192cd4f11012160ce90b904994997efb3ff5da4f7237e9d72016` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OppositeNamespacedPublic.lean/declarations/instance-source-edition-7.md) | 58 | `declaration-track:d9fc434f7ce438ba37ad7a6a6ac4f464616b6124b947a388f0b8f7a0362e9b67` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OppositeNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 63 | `declaration-track:c1577da1fc7ffccc6704d6ce5d6fb641c51f12a6178dff9d56244852d131fc69` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

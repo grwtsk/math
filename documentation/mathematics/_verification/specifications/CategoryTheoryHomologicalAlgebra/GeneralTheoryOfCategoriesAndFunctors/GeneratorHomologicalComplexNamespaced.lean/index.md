@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplexNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [separatingFamily](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplexNamespaced.lean/declarations/separatingfamily.md) | 46 | `declaration-track:f5c38bc6141273826507ff3b2d956e57034271371f49d310e66d9e9ea06676d9` |
-| 2 | `lemma` | [isSeparating_separatingFamily](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplexNamespaced.lean/declarations/isseparating-separatingfamily.md) | 50 | `result-track:eee59f33580da8e8ab54498f42af411f4bb0343dc169aef2fadfd0722455dac6` |
-| 3 | `lemma` | [isSeparator_coproduct_separatingFamily](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplexNamespaced.lean/declarations/isseparator-coproduct-separatingfamily.md) | 64 | `result-track:d8c9f894f5cbafc3ee764ac4b419191aea89031aef95f7b30c2b89d468f78c75` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplexNamespaced.lean/declarations/instance.md) | 73 | `declaration-track:1810506a079e611a16d005f91a9fa5976ab85c06bc0969d8c37785fcb2691571` |
+| 1 | `def` | [separatingFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplexNamespaced.lean/declarations/separatingfamily.md) | 46 | `declaration-track:f5c38bc6141273826507ff3b2d956e57034271371f49d310e66d9e9ea06676d9` |
+| 2 | `lemma` | [isSeparating_separatingFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplexNamespaced.lean/declarations/isseparating-separatingfamily.md) | 50 | `result-track:eee59f33580da8e8ab54498f42af411f4bb0343dc169aef2fadfd0722455dac6` |
+| 3 | `lemma` | [isSeparator_coproduct_separatingFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplexNamespaced.lean/declarations/isseparator-coproduct-separatingfamily.md) | 64 | `result-track:d8c9f894f5cbafc3ee764ac4b419191aea89031aef95f7b30c2b89d468f78c75` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplexNamespaced.lean/declarations/instance.md) | 73 | `declaration-track:1810506a079e611a16d005f91a9fa5976ab85c06bc0969d8c37785fcb2691571` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TT11ReflectiveRecoveryNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TT11ReflectiveRecoveryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TT11ReflectiveRecoveryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TT11ReflectiveRecoveryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tt11_reflectiveRecovery](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TT11ReflectiveRecoveryNamespaced.lean/declarations/tt11-reflectiverecovery.md) | 22 | `result-track:81b9a0c5536985459ae099b990d04b61d926f0446689b0006b19287a5d9b3d3b` |
+| 1 | `theorem` | [tt11_reflectiveRecovery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TT11ReflectiveRecoveryNamespaced.lean/declarations/tt11-reflectiverecovery.md) | 22 | `result-track:81b9a0c5536985459ae099b990d04b61d926f0446689b0006b19287a5d9b3d3b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

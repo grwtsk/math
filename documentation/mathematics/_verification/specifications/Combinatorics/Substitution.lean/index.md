@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Substitution.lean/index.md) · [Full source](../../../../Combinatorics/Substitution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Substitution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Substitution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ReplacementSite](../../../../Combinatorics/Substitution.lean/declarations/replacementsite.md) | 10 | `declaration-track:bc9a79682d8f0813a0f21959d7a6568af9d51dad4c926112f668bcecd841a0cd` |
-| 2 | `structure` | [SubstitutedText](../../../../Combinatorics/Substitution.lean/declarations/substitutedtext.md) | 16 | `declaration-track:f9fc9d8d3fd11f85d2299c879cefe2293b8004da2eb06e7c497f19da243ec5cd` |
-| 3 | `structure` | [SubstitutionCertificate](../../../../Combinatorics/Substitution.lean/declarations/substitutioncertificate.md) | 21 | `declaration-track:9a46617703726659df83171eb2be7d5e1e03e93fd11955952063c695070d275e` |
-| 4 | `structure` | [ContextualSynonymyCertificate](../../../../Combinatorics/Substitution.lean/declarations/contextualsynonymycertificate.md) | 45 | `declaration-track:4392548bbcf98be51668e7e20a1ea8d7a090e4f45df6d90e3d79c59e961f3566` |
-| 5 | `theorem` | [synonymy_requires_substitution](../../../../Combinatorics/Substitution.lean/declarations/synonymy-requires-substitution.md) | 59 | `result-track:95af9aa09df6b6e4029d3726d04c2c22d12d97cc4aba6d2fa9cb2b5c8c7a7e9f` |
-| 6 | `structure` | [GlobalSynonymyCertificate](../../../../Combinatorics/Substitution.lean/declarations/globalsynonymycertificate.md) | 67 | `declaration-track:c23331f3f145929a7eb88026d6855eacae44956ff0a740a498d7f936bd89443f` |
+| 1 | `structure` | [ReplacementSite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Substitution.lean/declarations/replacementsite.md) | 10 | `declaration-track:bc9a79682d8f0813a0f21959d7a6568af9d51dad4c926112f668bcecd841a0cd` |
+| 2 | `structure` | [SubstitutedText](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Substitution.lean/declarations/substitutedtext.md) | 16 | `declaration-track:f9fc9d8d3fd11f85d2299c879cefe2293b8004da2eb06e7c497f19da243ec5cd` |
+| 3 | `structure` | [SubstitutionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Substitution.lean/declarations/substitutioncertificate.md) | 21 | `declaration-track:9a46617703726659df83171eb2be7d5e1e03e93fd11955952063c695070d275e` |
+| 4 | `structure` | [ContextualSynonymyCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Substitution.lean/declarations/contextualsynonymycertificate.md) | 45 | `declaration-track:4392548bbcf98be51668e7e20a1ea8d7a090e4f45df6d90e3d79c59e961f3566` |
+| 5 | `theorem` | [synonymy_requires_substitution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Substitution.lean/declarations/synonymy-requires-substitution.md) | 59 | `result-track:95af9aa09df6b6e4029d3726d04c2c22d12d97cc4aba6d2fa9cb2b5c8c7a7e9f` |
+| 6 | `structure` | [GlobalSynonymyCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Substitution.lean/declarations/globalsynonymycertificate.md) | 67 | `declaration-track:c23331f3f145929a7eb88026d6855eacae44956ff0a740a498d7f936bd89443f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

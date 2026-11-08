@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolventRoots.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolventRoots.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolventRoots.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolventRoots.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticBaseResolvent`](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticBaseResolvent`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_quartic_resolvent_three_roots](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolventRoots.lean/declarations/actual-quartic-resolvent-three-roots.md) | 27 | `result-track:8742d7c021114e7a54c4f3235fa3e2bcf1d89a30d8ef81aface82c3b6cf181c9` |
-| 2 | `theorem` | [actual_quartic_resolvent_distinct_roots](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolventRoots.lean/declarations/actual-quartic-resolvent-distinct-roots.md) | 46 | `result-track:1ee5e84e6d5fb5f23d39845290729427fe2ab7a55f508689ab07b6924b80ef9d` |
+| 1 | `theorem` | [actual_quartic_resolvent_three_roots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolventRoots.lean/declarations/actual-quartic-resolvent-three-roots.md) | 27 | `result-track:8742d7c021114e7a54c4f3235fa3e2bcf1d89a30d8ef81aface82c3b6cf181c9` |
+| 2 | `theorem` | [actual_quartic_resolvent_distinct_roots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolventRoots.lean/declarations/actual-quartic-resolvent-distinct-roots.md) | 46 | `result-track:1ee5e84e6d5fb5f23d39845290729427fe2ab7a55f508689ab07b6924b80ef9d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

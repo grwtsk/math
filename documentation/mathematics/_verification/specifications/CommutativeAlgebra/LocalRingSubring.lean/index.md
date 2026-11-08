@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LocalRingSubring.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LocalRingSubring.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingSubring.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingSubring.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [of_injective](../../../../CommutativeAlgebra/LocalRingSubring.lean/declarations/of-injective.md) | 24 | `result-track:31ce88bdb69863d438b4904665a9b7ea45558e757ff19b1cd0a65be5d2bd5c2e` |
-| 2 | `theorem` | [of_subring](../../../../CommutativeAlgebra/LocalRingSubring.lean/declarations/of-subring-source-edition-2.md) | 33 | `result-track:f824ac09b6b8b1614ef8cf180f17096d55ddfb55c14575e743fa7e017340f109` |
-| 3 | `theorem` | [of_subring'](../../../../CommutativeAlgebra/LocalRingSubring.lean/declarations/of-subring.md) | 40 | `result-track:b4536dc2bffd786663260145eb991934ca7764acca943b4a7f0134f36ca9eaf8` |
+| 1 | `theorem` | [of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingSubring.lean/declarations/of-injective.md) | 24 | `result-track:31ce88bdb69863d438b4904665a9b7ea45558e757ff19b1cd0a65be5d2bd5c2e` |
+| 2 | `theorem` | [of_subring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingSubring.lean/declarations/of-subring-source-edition-2.md) | 33 | `result-track:f824ac09b6b8b1614ef8cf180f17096d55ddfb55c14575e743fa7e017340f109` |
+| 3 | `theorem` | [of_subring'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingSubring.lean/declarations/of-subring.md) | 40 | `result-track:b4536dc2bffd786663260145eb991934ca7764acca943b4a7f0134f36ca9eaf8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

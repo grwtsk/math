@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceNamespacedActualAdaptiveDepthGeFourSquare.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceNamespacedActualAdaptiveDepthGeFourSquare.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceNamespacedActualAdaptiveDepthGeFourSquare.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceNamespacedActualAdaptiveDepthGeFourSquare.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_adaptive_depth_ge_four_square](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceNamespacedActualAdaptiveDepthGeFourSquare.lean/declarations/actual-adaptive-depth-ge-four-square.md) | 21 | `result-track:9c29153b30f8a4dcec5d44071bfcc338a792dadccb38b6bafe69fbc161f778a6` |
+| 1 | `theorem` | [actual_adaptive_depth_ge_four_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceNamespacedActualAdaptiveDepthGeFourSquare.lean/declarations/actual-adaptive-depth-ge-four-square.md) | 21 | `result-track:9c29153b30f8a4dcec5d44071bfcc338a792dadccb38b6bafe69fbc161f778a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

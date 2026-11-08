@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,14 +61,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/declarations/instance-source-edition-2.md) | 45 | `declaration-track:72ac15516c69a837b810b8f8d5d8b74fc05505aedcbfc093af79a4eec84cafc9` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/declarations/instance-source-edition-3.md) | 47 | `declaration-track:b529e5482a48b1bec9aab910a33d81a19848905b04a6e6affac2bede3b2004c8` |
-| 3 | `def` | [inverseAux](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/declarations/inverseaux.md) | 50 | `declaration-track:e080fa81b623fd3037bdbbeb2e4d435ac78aa08acbdaff940296b9b30555b430` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/declarations/instance.md) | 55 | `declaration-track:41158871bb450120863ab67147915c1ad4127de0302449fd3e6e1a799ceb44b9` |
-| 5 | `def` | [inverse](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/declarations/inverse.md) | 62 | `declaration-track:eb976e7aa1f83579606fa30f09830d03bca713a46f322fd8a3b62cdbf3e2f5f6` |
-| 6 | `def` | [unitIsoAux](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/declarations/unitisoaux.md) | 69 | `declaration-track:6db794a1f44e5f749b0a27cf8da7926a0e53eb5494c4eb015c69b7beeeae9407` |
-| 7 | `def` | [unitIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/declarations/unitiso.md) | 84 | `declaration-track:405e2e2381e61b95de91776985d639386956ac7b91adfcf120190752ce3566cc` |
-| 8 | `def` | [leftExactFunctorForgetEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/declarations/leftexactfunctorforgetequivalence.md) | 98 | `declaration-track:8fb8e68ac7468b495f0a11c23012ae49144918add2877fa05f56bdee2398b5aa` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/declarations/instance-source-edition-2.md) | 45 | `declaration-track:72ac15516c69a837b810b8f8d5d8b74fc05505aedcbfc093af79a4eec84cafc9` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/declarations/instance-source-edition-3.md) | 47 | `declaration-track:b529e5482a48b1bec9aab910a33d81a19848905b04a6e6affac2bede3b2004c8` |
+| 3 | `def` | [inverseAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/declarations/inverseaux.md) | 50 | `declaration-track:e080fa81b623fd3037bdbbeb2e4d435ac78aa08acbdaff940296b9b30555b430` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/declarations/instance.md) | 55 | `declaration-track:41158871bb450120863ab67147915c1ad4127de0302449fd3e6e1a799ceb44b9` |
+| 5 | `def` | [inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/declarations/inverse.md) | 62 | `declaration-track:eb976e7aa1f83579606fa30f09830d03bca713a46f322fd8a3b62cdbf3e2f5f6` |
+| 6 | `def` | [unitIsoAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/declarations/unitisoaux.md) | 69 | `declaration-track:6db794a1f44e5f749b0a27cf8da7926a0e53eb5494c4eb015c69b7beeeae9407` |
+| 7 | `def` | [unitIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/declarations/unitiso.md) | 84 | `declaration-track:405e2e2381e61b95de91776985d639386956ac7b91adfcf120190752ce3566cc` |
+| 8 | `def` | [leftExactFunctorForgetEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LeftExactFunctor.lean/declarations/leftexactfunctorforgetequivalence.md) | 98 | `declaration-track:8fb8e68ac7468b495f0a11c23012ae49144918add2877fa05f56bdee2398b5aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

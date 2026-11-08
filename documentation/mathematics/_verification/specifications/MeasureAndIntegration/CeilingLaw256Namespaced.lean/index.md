@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CeilingLaw256Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CeilingLaw256Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CeilingLaw256Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CeilingLaw256Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lawN256_rows](../../../../MeasureAndIntegration/CeilingLaw256Namespaced.lean/declarations/lawn256-rows.md) | 34 | `result-track:7516e225ef4242988167f288e3bcd208af94e1b65c400a2ecec1cb16f9d801e7` |
-| 2 | `theorem` | [ceiling_law256](../../../../MeasureAndIntegration/CeilingLaw256Namespaced.lean/declarations/ceiling-law256.md) | 46 | `result-track:1d6737b855ba72147a4d83f29ed1a9d2454009aefbc604596f7a0e5a2e624ffb` |
-| 3 | `theorem` | [ceiling_law256_decimal](../../../../MeasureAndIntegration/CeilingLaw256Namespaced.lean/declarations/ceiling-law256-decimal.md) | 61 | `result-track:f26d32fc49213c3b994fa2efddbd8d4d15f1c7b0b7dc2220d4039bc802921641` |
+| 1 | `theorem` | [lawN256_rows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CeilingLaw256Namespaced.lean/declarations/lawn256-rows.md) | 34 | `result-track:7516e225ef4242988167f288e3bcd208af94e1b65c400a2ecec1cb16f9d801e7` |
+| 2 | `theorem` | [ceiling_law256](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CeilingLaw256Namespaced.lean/declarations/ceiling-law256.md) | 46 | `result-track:1d6737b855ba72147a4d83f29ed1a9d2454009aefbc604596f7a0e5a2e624ffb` |
+| 3 | `theorem` | [ceiling_law256_decimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CeilingLaw256Namespaced.lean/declarations/ceiling-law256-decimal.md) | 61 | `result-track:f26d32fc49213c3b994fa2efddbd8d4d15f1c7b0b7dc2220d4039bc802921641` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

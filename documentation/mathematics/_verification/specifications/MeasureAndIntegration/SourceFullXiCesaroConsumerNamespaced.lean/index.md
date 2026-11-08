@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceFullXiCesaroConsumerNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceFullXiCesaroConsumerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiCesaroConsumerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiCesaroConsumerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualCesaroPrimitive_eq_literalXiKernel](../../../../MeasureAndIntegration/SourceFullXiCesaroConsumerNamespaced.lean/declarations/actualcesaroprimitive-eq-literalxikernel.md) | 33 | `result-track:bf3a536dd0c561aa94c29f266ea10898867ce2da2c4c1fa0e478363fd3045def` |
-| 2 | `theorem` | [actualCesaroPrimitive_eq_full_signed_reconstruction](../../../../MeasureAndIntegration/SourceFullXiCesaroConsumerNamespaced.lean/declarations/actualcesaroprimitive-eq-full-signed-reconstruction.md) | 39 | `result-track:c8096a73f4ccec040f5cc029fb3017e30e3fdb0650439028058b6a04d5b3b505` |
-| 3 | `theorem` | [remaining_lower_of_literal_full_Xi_kernel_budget](../../../../MeasureAndIntegration/SourceFullXiCesaroConsumerNamespaced.lean/declarations/remaining-lower-of-literal-full-xi-kernel-budget.md) | 46 | `result-track:49f28a84cf0552895bc6243665c9761c7769a045060c709cff9fa0a605a1064c` |
-| 4 | `theorem` | [estimate_of_literal_full_Xi_kernel_budget](../../../../MeasureAndIntegration/SourceFullXiCesaroConsumerNamespaced.lean/declarations/estimate-of-literal-full-xi-kernel-budget.md) | 56 | `result-track:47c32d4a685653c2cb29893b634bb6a334792ab89578b9d5eff60f94cf039c82` |
-| 5 | `theorem` | [signed_pairing_eq_literalXiKernel](../../../../MeasureAndIntegration/SourceFullXiCesaroConsumerNamespaced.lean/declarations/signed-pairing-eq-literalxikernel.md) | 66 | `result-track:09cb2a711cfab259bd102a775241e1f5a870debe9d48932e36d5318f6d62922d` |
-| 6 | `theorem` | [estimate_of_literal_full_Xi_signed_pairing](../../../../MeasureAndIntegration/SourceFullXiCesaroConsumerNamespaced.lean/declarations/estimate-of-literal-full-xi-signed-pairing.md) | 80 | `result-track:654bc0af178e24281849f25df3345bb14e75bd37181272d3c88d56a646603563` |
+| 1 | `theorem` | [actualCesaroPrimitive_eq_literalXiKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiCesaroConsumerNamespaced.lean/declarations/actualcesaroprimitive-eq-literalxikernel.md) | 33 | `result-track:bf3a536dd0c561aa94c29f266ea10898867ce2da2c4c1fa0e478363fd3045def` |
+| 2 | `theorem` | [actualCesaroPrimitive_eq_full_signed_reconstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiCesaroConsumerNamespaced.lean/declarations/actualcesaroprimitive-eq-full-signed-reconstruction.md) | 39 | `result-track:c8096a73f4ccec040f5cc029fb3017e30e3fdb0650439028058b6a04d5b3b505` |
+| 3 | `theorem` | [remaining_lower_of_literal_full_Xi_kernel_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiCesaroConsumerNamespaced.lean/declarations/remaining-lower-of-literal-full-xi-kernel-budget.md) | 46 | `result-track:49f28a84cf0552895bc6243665c9761c7769a045060c709cff9fa0a605a1064c` |
+| 4 | `theorem` | [estimate_of_literal_full_Xi_kernel_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiCesaroConsumerNamespaced.lean/declarations/estimate-of-literal-full-xi-kernel-budget.md) | 56 | `result-track:47c32d4a685653c2cb29893b634bb6a334792ab89578b9d5eff60f94cf039c82` |
+| 5 | `theorem` | [signed_pairing_eq_literalXiKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiCesaroConsumerNamespaced.lean/declarations/signed-pairing-eq-literalxikernel.md) | 66 | `result-track:09cb2a711cfab259bd102a775241e1f5a870debe9d48932e36d5318f6d62922d` |
+| 6 | `theorem` | [estimate_of_literal_full_Xi_signed_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiCesaroConsumerNamespaced.lean/declarations/estimate-of-literal-full-xi-signed-pairing.md) | 80 | `result-track:654bc0af178e24281849f25df3345bb14e75bd37181272d3c88d56a646603563` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

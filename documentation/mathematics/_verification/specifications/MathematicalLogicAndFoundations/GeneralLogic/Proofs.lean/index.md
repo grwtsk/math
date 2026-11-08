@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Proofs.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Proofs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Proofs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Proofs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -65,7 +65,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [theorem_artifact_root_aggregate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Proofs.lean/declarations/theorem-artifact-root-aggregate.md) | 13 | `result-track:4e0675383d421192587c16d7d915956eb4594f4e76a4ffbf3845e7e632c28af8` |
+| 1 | `theorem` | [theorem_artifact_root_aggregate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Proofs.lean/declarations/theorem-artifact-root-aggregate.md) | 13 | `result-track:4e0675383d421192587c16d7d915956eb4594f4e76a4ffbf3845e7e632c28af8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

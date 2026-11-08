@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/Refinements.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/Refinements.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/Refinements.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/Refinements.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [epi_iff_surjective_up_to_refinements](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/Refinements.lean/declarations/epi-iff-surjective-up-to-refinements.md) | 78 | `result-track:3a21924ccab84adea88db3ba1df8b8f16131732aac838b27ae767075c88aa7c3` |
-| 2 | `lemma` | [surjective_up_to_refinements_of_epi](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/Refinements.lean/declarations/surjective-up-to-refinements-of-epi.md) | 89 | `result-track:db28939ed4ecd189f29f4c6fdf9acecb0863690e2877b82338c82781324d7e39` |
-| 3 | `lemma` | [ShortComplex.exact_iff_exact_up_to_refinements](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/Refinements.lean/declarations/shortcomplex-exact-iff-exact-up-to-refinements.md) | 93 | `result-track:002f8e9fab6467d285800f852f2eec8b5eb1a95df40ad6f99cf9d85037179e02` |
-| 4 | `lemma` | [ShortComplex.Exact.exact_up_to_refinements](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/Refinements.lean/declarations/shortcomplex-exact-exact-up-to-refinements.md) | 107 | `result-track:7e6598cde5aeae2faa7b86907112f20c3e4c72109ee53c8b0c6212912b303cb0` |
-| 5 | `lemma` | [ShortComplex.eq_liftCycles_homologyπ_up_to_refinements](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/Refinements.lean/declarations/shortcomplex-eq-liftcycles-homology-up-to-refinements.md) | 113 | `result-track:5151c479dabf456986f8d133306ef1d95d634a2d19f1a0390473981123cffa37` |
+| 1 | `lemma` | [epi_iff_surjective_up_to_refinements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/Refinements.lean/declarations/epi-iff-surjective-up-to-refinements.md) | 78 | `result-track:3a21924ccab84adea88db3ba1df8b8f16131732aac838b27ae767075c88aa7c3` |
+| 2 | `lemma` | [surjective_up_to_refinements_of_epi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/Refinements.lean/declarations/surjective-up-to-refinements-of-epi.md) | 89 | `result-track:db28939ed4ecd189f29f4c6fdf9acecb0863690e2877b82338c82781324d7e39` |
+| 3 | `lemma` | [ShortComplex.exact_iff_exact_up_to_refinements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/Refinements.lean/declarations/shortcomplex-exact-iff-exact-up-to-refinements.md) | 93 | `result-track:002f8e9fab6467d285800f852f2eec8b5eb1a95df40ad6f99cf9d85037179e02` |
+| 4 | `lemma` | [ShortComplex.Exact.exact_up_to_refinements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/Refinements.lean/declarations/shortcomplex-exact-exact-up-to-refinements.md) | 107 | `result-track:7e6598cde5aeae2faa7b86907112f20c3e4c72109ee53c8b0c6212912b303cb0` |
+| 5 | `lemma` | [ShortComplex.eq_liftCycles_homologyπ_up_to_refinements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/Refinements.lean/declarations/shortcomplex-eq-liftcycles-homology-up-to-refinements.md) | 113 | `result-track:5151c479dabf456986f8d133306ef1d95d634a2d19f1a0390473981123cffa37` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

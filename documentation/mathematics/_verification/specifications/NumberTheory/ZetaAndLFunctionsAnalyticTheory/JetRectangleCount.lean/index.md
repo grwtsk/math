@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.JetPoleContour`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetPoleContour.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.JetPoleContour`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetPoleContour.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [evaluateBox](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/declarations/evaluatebox.md) | 27 | `declaration-track:8936dd90a424f094b217ea03672f77e729a084a134edfb4c0ad61559cf817ed5` |
-| 2 | `theorem` | [evaluateBox_eq_some_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/declarations/evaluatebox-eq-some-iff.md) | 33 | `result-track:393cbdefec86298768f99b0765dbfb642bb054c2c7cb9f1cd68263f80f850beb` |
-| 3 | `def` | [evaluate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/declarations/evaluate.md) | 41 | `declaration-track:ed11c475f7c4b277a655ebe27b404a33fa00cb7f5cc89a481b0505b9613a31a4` |
-| 4 | `theorem` | [boundary_of_tube](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/declarations/boundary-of-tube.md) | 47 | `result-track:c65395f7359ca28e075fa0cc24604513424ccf9e5af4f2a9bf2da1d1fb531a53` |
-| 5 | `def` | [sourceHomotopy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/declarations/sourcehomotopy.md) | 61 | `declaration-track:07bc71cefd088d8e34547a1866dfdb424d58b9e5d324fea0a1c20ffaf757d79a` |
-| 6 | `theorem` | [sourceIndex_aligned](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/declarations/sourceindex-aligned.md) | 90 | `result-track:dfbf3894ec2be9609282a9486c2b8dee2cf2191588d584bfd02bd250e397e09a` |
-| 7 | `theorem` | [count_eq_of_evaluate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/declarations/count-eq-of-evaluate.md) | 105 | `result-track:ef86876a7ccc4d26b22074b3edeb1f1e32215123c363e9433d849e4efacb36dd` |
-| 8 | `theorem` | [result_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/declarations/result-nonnegative.md) | 131 | `result-track:6c62dbebd1f971bffbffb14c3d0f2bd7b754d99da719fb004ea153ff5e940884` |
-| 9 | `theorem` | [complete_pair_of_evaluate_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/declarations/complete-pair-of-evaluate-one.md) | 138 | `result-track:d755ea8ed6d4685ea06bc624738bac0f4df5827cc9be4d02f0595445b0d4bfd5` |
+| 1 | `def` | [evaluateBox](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/declarations/evaluatebox.md) | 27 | `declaration-track:8936dd90a424f094b217ea03672f77e729a084a134edfb4c0ad61559cf817ed5` |
+| 2 | `theorem` | [evaluateBox_eq_some_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/declarations/evaluatebox-eq-some-iff.md) | 33 | `result-track:393cbdefec86298768f99b0765dbfb642bb054c2c7cb9f1cd68263f80f850beb` |
+| 3 | `def` | [evaluate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/declarations/evaluate.md) | 41 | `declaration-track:ed11c475f7c4b277a655ebe27b404a33fa00cb7f5cc89a481b0505b9613a31a4` |
+| 4 | `theorem` | [boundary_of_tube](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/declarations/boundary-of-tube.md) | 47 | `result-track:c65395f7359ca28e075fa0cc24604513424ccf9e5af4f2a9bf2da1d1fb531a53` |
+| 5 | `def` | [sourceHomotopy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/declarations/sourcehomotopy.md) | 61 | `declaration-track:07bc71cefd088d8e34547a1866dfdb424d58b9e5d324fea0a1c20ffaf757d79a` |
+| 6 | `theorem` | [sourceIndex_aligned](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/declarations/sourceindex-aligned.md) | 90 | `result-track:dfbf3894ec2be9609282a9486c2b8dee2cf2191588d584bfd02bd250e397e09a` |
+| 7 | `theorem` | [count_eq_of_evaluate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/declarations/count-eq-of-evaluate.md) | 105 | `result-track:ef86876a7ccc4d26b22074b3edeb1f1e32215123c363e9433d849e4efacb36dd` |
+| 8 | `theorem` | [result_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/declarations/result-nonnegative.md) | 131 | `result-track:6c62dbebd1f971bffbffb14c3d0f2bd7b754d99da719fb004ea153ff5e940884` |
+| 9 | `theorem` | [complete_pair_of_evaluate_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/declarations/complete-pair-of-evaluate-one.md) | 138 | `result-track:d755ea8ed6d4685ea06bc624738bac0f4df5827cc9be4d02f0595445b0d4bfd5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

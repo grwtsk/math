@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AllWeakenNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AllWeakenNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllWeakenNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllWeakenNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [All](../../../../../ComputerScience/AlgorithmsInComputerScience/AllWeakenNamespaced.lean/declarations/all.md) | 20 | `declaration-track:ff19357e944b43f5957dc6b31af38543b35895cd1cef1d42744f7bb44a478dc4` |
-| 2 | `axiom` | [weaken](../../../../../ComputerScience/AlgorithmsInComputerScience/AllWeakenNamespaced.lean/declarations/weaken.md) | 25 | `declaration-track:d634aad4e51309ce2db6da650cd8aa5ea9b09ac3bb3f40ca7d65d49a789b0438` |
-| 3 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/AllWeakenNamespaced.lean/declarations/example.md) | 32 | `declaration-track:523fa946d6c834630aecc5f4469573dd98e21608d4d086be30edb68568be9490` |
+| 1 | `inductive` | [All](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllWeakenNamespaced.lean/declarations/all.md) | 20 | `declaration-track:ff19357e944b43f5957dc6b31af38543b35895cd1cef1d42744f7bb44a478dc4` |
+| 2 | `axiom` | [weaken](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllWeakenNamespaced.lean/declarations/weaken.md) | 25 | `declaration-track:d634aad4e51309ce2db6da650cd8aa5ea9b09ac3bb3f40ca7d65d49a789b0438` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllWeakenNamespaced.lean/declarations/example.md) | 32 | `declaration-track:523fa946d6c834630aecc5f4469573dd98e21608d4d086be30edb68568be9490` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

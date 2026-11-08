@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SuccPredPublic.lean/index.md) · [Full source](../../../../GeneralTopology/SuccPredPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SuccPredPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SuccPredPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isOpen_singleton_of_not_isSuccPrelimit](../../../../GeneralTopology/SuccPredPublic.lean/declarations/isopen-singleton-of-not-issuccprelimit.md) | 31 | `result-track:ed1fa5ffa86ae26f55ad8095b33fda482128c5ae4f7ab151b57224bd14d228f5` |
-| 2 | `theorem` | [isOpen_singleton_iff](../../../../GeneralTopology/SuccPredPublic.lean/declarations/isopen-singleton-iff.md) | 43 | `result-track:e1b70702db88276d6383b2b9715b41444692460f6f3cd1ff58d7a9c3feb89188` |
-| 3 | `theorem` | [nhds_eq_pure](../../../../GeneralTopology/SuccPredPublic.lean/declarations/nhds-eq-pure.md) | 58 | `result-track:16873b8bc23811c39ae0660b2645c350082c3300bb76fba3c6e7eb5bff164c5e` |
-| 4 | `theorem` | [nhds_of_isMin](../../../../GeneralTopology/SuccPredPublic.lean/declarations/nhds-of-ismin.md) | 62 | `result-track:0127ced1f92eb17016945e604ed503272154586f82949b9a57d9a81b05460cad` |
-| 5 | `theorem` | [nhds_bot](../../../../GeneralTopology/SuccPredPublic.lean/declarations/nhds-bot.md) | 67 | `result-track:0e2290e8dd20fedc703609a77f2f7caddba9e8e7c3e7e4530e586ecc16b109e0` |
-| 6 | `theorem` | [isOpen_iff](../../../../GeneralTopology/SuccPredPublic.lean/declarations/isopen-iff.md) | 71 | `result-track:5654300195c49ee74d6a32d168baa7eabf592f640d894e9e69a5b3082aaf805e` |
-| 7 | `theorem` | [accPt_principal](../../../../GeneralTopology/SuccPredPublic.lean/declarations/accpt-principal.md) | 80 | `result-track:3002257961b4aceb219759effcef591dadb864b582cbad12927492429cc77734` |
-| 8 | `theorem` | [_root_.AccPt.not_isMin](../../../../GeneralTopology/SuccPredPublic.lean/declarations/root-accpt-not-ismin.md) | 90 | `result-track:ee6966b43f1cada27d89d246811a27fa88854cee2cd95156f83bbec3c13a8d18` |
-| 9 | `theorem` | [_root_.AccPt.isSuccLimit](../../../../GeneralTopology/SuccPredPublic.lean/declarations/root-accpt-issucclimit.md) | 94 | `result-track:1737590bb83b22b217798ad97fb94b0de51f7e4b286504ee2ddb4bb0f5d449f8` |
-| 10 | `theorem` | [isSuccLimit_of_mem_frontier](../../../../GeneralTopology/SuccPredPublic.lean/declarations/issucclimit-of-mem-frontier.md) | 100 | `result-track:56c250375766192e75a051fa34295b595c4ffc96b04c89cf03a6f925bea17270` |
+| 1 | `theorem` | [isOpen_singleton_of_not_isSuccPrelimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SuccPredPublic.lean/declarations/isopen-singleton-of-not-issuccprelimit.md) | 31 | `result-track:ed1fa5ffa86ae26f55ad8095b33fda482128c5ae4f7ab151b57224bd14d228f5` |
+| 2 | `theorem` | [isOpen_singleton_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SuccPredPublic.lean/declarations/isopen-singleton-iff.md) | 43 | `result-track:e1b70702db88276d6383b2b9715b41444692460f6f3cd1ff58d7a9c3feb89188` |
+| 3 | `theorem` | [nhds_eq_pure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SuccPredPublic.lean/declarations/nhds-eq-pure.md) | 58 | `result-track:16873b8bc23811c39ae0660b2645c350082c3300bb76fba3c6e7eb5bff164c5e` |
+| 4 | `theorem` | [nhds_of_isMin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SuccPredPublic.lean/declarations/nhds-of-ismin.md) | 62 | `result-track:0127ced1f92eb17016945e604ed503272154586f82949b9a57d9a81b05460cad` |
+| 5 | `theorem` | [nhds_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SuccPredPublic.lean/declarations/nhds-bot.md) | 67 | `result-track:0e2290e8dd20fedc703609a77f2f7caddba9e8e7c3e7e4530e586ecc16b109e0` |
+| 6 | `theorem` | [isOpen_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SuccPredPublic.lean/declarations/isopen-iff.md) | 71 | `result-track:5654300195c49ee74d6a32d168baa7eabf592f640d894e9e69a5b3082aaf805e` |
+| 7 | `theorem` | [accPt_principal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SuccPredPublic.lean/declarations/accpt-principal.md) | 80 | `result-track:3002257961b4aceb219759effcef591dadb864b582cbad12927492429cc77734` |
+| 8 | `theorem` | [_root_.AccPt.not_isMin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SuccPredPublic.lean/declarations/root-accpt-not-ismin.md) | 90 | `result-track:ee6966b43f1cada27d89d246811a27fa88854cee2cd95156f83bbec3c13a8d18` |
+| 9 | `theorem` | [_root_.AccPt.isSuccLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SuccPredPublic.lean/declarations/root-accpt-issucclimit.md) | 94 | `result-track:1737590bb83b22b217798ad97fb94b0de51f7e4b286504ee2ddb4bb0f5d449f8` |
+| 10 | `theorem` | [isSuccLimit_of_mem_frontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SuccPredPublic.lean/declarations/issucclimit-of-mem-frontier.md) | 100 | `result-track:56c250375766192e75a051fa34295b595c4ffc96b04c89cf03a6f925bea17270` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

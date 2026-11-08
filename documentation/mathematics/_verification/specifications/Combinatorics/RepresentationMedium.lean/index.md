@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RepresentationMedium.lean/index.md) · [Full source](../../../../Combinatorics/RepresentationMedium.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RepresentationMedium.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RepresentationMedium.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [RepresentationMedium](../../../../Combinatorics/RepresentationMedium.lean/declarations/representationmedium.md) | 10 | `declaration-track:8a7c7f0c3874e980ba18581b885dfaf2e59d1697d28dad701c4de319031f0ade` |
-| 2 | `inductive` | [RepresentationExactness](../../../../Combinatorics/RepresentationMedium.lean/declarations/representationexactness.md) | 22 | `declaration-track:ab2ee585871945752b358b5e7b1b77d4ae08f7b25ebe98374bc375d62a6aa805` |
-| 3 | `structure` | [RepresentationInvariant](../../../../Combinatorics/RepresentationMedium.lean/declarations/representationinvariant.md) | 33 | `declaration-track:10865e30ffe696bb95ed0e181994a79d1c3b8f40820bc2bd71a33bef4932aeb0` |
-| 4 | `structure` | [RepresentationRecord](../../../../Combinatorics/RepresentationMedium.lean/declarations/representationrecord.md) | 39 | `declaration-track:5558042d6d7ab8dbcb6643d900a893af4c1f23faf7604d28fea57c1a13aec46a` |
+| 1 | `inductive` | [RepresentationMedium](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RepresentationMedium.lean/declarations/representationmedium.md) | 10 | `declaration-track:8a7c7f0c3874e980ba18581b885dfaf2e59d1697d28dad701c4de319031f0ade` |
+| 2 | `inductive` | [RepresentationExactness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RepresentationMedium.lean/declarations/representationexactness.md) | 22 | `declaration-track:ab2ee585871945752b358b5e7b1b77d4ae08f7b25ebe98374bc375d62a6aa805` |
+| 3 | `structure` | [RepresentationInvariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RepresentationMedium.lean/declarations/representationinvariant.md) | 33 | `declaration-track:10865e30ffe696bb95ed0e181994a79d1c3b8f40820bc2bd71a33bef4932aeb0` |
+| 4 | `structure` | [RepresentationRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RepresentationMedium.lean/declarations/representationrecord.md) | 39 | `declaration-track:5558042d6d7ab8dbcb6643d900a893af4c1f23faf7604d28fea57c1a13aec46a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

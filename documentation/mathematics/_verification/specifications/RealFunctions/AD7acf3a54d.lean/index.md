@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AD7acf3a54d.lean/index.md) · [Full source](../../../../RealFunctions/AD7acf3a54d.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AD7acf3a54d.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AD7acf3a54d.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [scalarLinear](../../../../RealFunctions/AD7acf3a54d.lean/declarations/scalarlinear.md) | 11 | `declaration-track:7e4878bc6ebe0618c6d349a62d0f209cc015fcf81196f6919e7ba2d898b1e89b` |
+| 1 | `def` | [scalarLinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AD7acf3a54d.lean/declarations/scalarlinear.md) | 11 | `declaration-track:7e4878bc6ebe0618c6d349a62d0f209cc015fcf81196f6919e7ba2d898b1e89b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

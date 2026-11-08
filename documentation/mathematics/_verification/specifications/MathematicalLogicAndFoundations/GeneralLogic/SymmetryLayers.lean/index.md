@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SymmetryLayers.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SymmetryLayers.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SymmetryLayers.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SymmetryLayers.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [SymmetryLayerKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SymmetryLayers.lean/declarations/symmetrylayerkind.md) | 16 | `declaration-track:eab430b93a8739b3192a4497edd9ba75d457b8edb1c168d4590b8da634c88959` |
-| 2 | `inductive` | [SymmetryCompositionMode](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SymmetryLayers.lean/declarations/symmetrycompositionmode.md) | 24 | `declaration-track:71dec2778a33ebd49a6d59dad00f9daa6da9018e00259b4647e00d9e9e7c688d` |
-| 3 | `structure` | [RegisteredKernelSymmetryLayer](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SymmetryLayers.lean/declarations/registeredkernelsymmetrylayer.md) | 29 | `declaration-track:92d2b17d5fb329517fc8300f2bbf94d75d29a143d4f2d2fcd64c05ef583ebe2c` |
-| 4 | `structure` | [SymmetryLayerCompositionCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SymmetryLayers.lean/declarations/symmetrylayercompositioncertificate.md) | 46 | `declaration-track:2696cb8f3c23e5d354d0d40b52b7d0681b26f9bcf7637c17ed0c11b7845d848a` |
-| 5 | `structure` | [LayeredSymmetryBoundaryCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SymmetryLayers.lean/declarations/layeredsymmetryboundarycertificate.md) | 117 | `declaration-track:bd74fcdea468ffb7d58f641918e8cb823334c062ba28a6add4a2889eab366de4` |
+| 1 | `inductive` | [SymmetryLayerKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SymmetryLayers.lean/declarations/symmetrylayerkind.md) | 16 | `declaration-track:eab430b93a8739b3192a4497edd9ba75d457b8edb1c168d4590b8da634c88959` |
+| 2 | `inductive` | [SymmetryCompositionMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SymmetryLayers.lean/declarations/symmetrycompositionmode.md) | 24 | `declaration-track:71dec2778a33ebd49a6d59dad00f9daa6da9018e00259b4647e00d9e9e7c688d` |
+| 3 | `structure` | [RegisteredKernelSymmetryLayer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SymmetryLayers.lean/declarations/registeredkernelsymmetrylayer.md) | 29 | `declaration-track:92d2b17d5fb329517fc8300f2bbf94d75d29a143d4f2d2fcd64c05ef583ebe2c` |
+| 4 | `structure` | [SymmetryLayerCompositionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SymmetryLayers.lean/declarations/symmetrylayercompositioncertificate.md) | 46 | `declaration-track:2696cb8f3c23e5d354d0d40b52b7d0681b26f9bcf7637c17ed0c11b7845d848a` |
+| 5 | `structure` | [LayeredSymmetryBoundaryCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SymmetryLayers.lean/declarations/layeredsymmetryboundarycertificate.md) | 117 | `declaration-track:bd74fcdea468ffb7d58f641918e8cb823334c062ba28a6add4a2889eab366de4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

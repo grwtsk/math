@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ProfiniteLimitsNamespacedIsTerminalPUnit.lean/index.md) · [Full source](../../../../GeneralTopology/ProfiniteLimitsNamespacedIsTerminalPUnit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteLimitsNamespacedIsTerminalPUnit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteLimitsNamespacedIsTerminalPUnit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/ProfiniteLimitsNamespacedIsTerminalPUnit.lean/declarations/instance.md) | 30 | `declaration-track:25f34c94b92bbf09c7547dec2b5218aa9bebf3158cf5d63ceef55ca2a6a91d66` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/ProfiniteLimitsNamespacedIsTerminalPUnit.lean/declarations/instance-source-edition-2.md) | 34 | `declaration-track:ab409353002dd2bcb4703c7bd7ff20d661ee5c12141608b6e9f7d0f192bcd873` |
-| 3 | `abbrev` | [isTerminalPUnit](../../../../GeneralTopology/ProfiniteLimitsNamespacedIsTerminalPUnit.lean/declarations/isterminalpunit.md) | 39 | `declaration-track:e479be47c0d5a03cdfeae1099ce9cfb3a370b87946e5331997e6a4e363439170` |
-| 4 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteLimitsNamespacedIsTerminalPUnit.lean/declarations/example.md) | 41 | `declaration-track:5bd1eb4e0e1d773d7d9d2515c578500b75bb89c82441cc3735f446ff33659408` |
-| 5 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteLimitsNamespacedIsTerminalPUnit.lean/declarations/example-source-edition-2.md) | 43 | `declaration-track:aa418caf893b5b2daa2b140cbcb1d782aa49bc94011c0b8e3b5714ca6bab879b` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteLimitsNamespacedIsTerminalPUnit.lean/declarations/instance.md) | 30 | `declaration-track:25f34c94b92bbf09c7547dec2b5218aa9bebf3158cf5d63ceef55ca2a6a91d66` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteLimitsNamespacedIsTerminalPUnit.lean/declarations/instance-source-edition-2.md) | 34 | `declaration-track:ab409353002dd2bcb4703c7bd7ff20d661ee5c12141608b6e9f7d0f192bcd873` |
+| 3 | `abbrev` | [isTerminalPUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteLimitsNamespacedIsTerminalPUnit.lean/declarations/isterminalpunit.md) | 39 | `declaration-track:e479be47c0d5a03cdfeae1099ce9cfb3a370b87946e5331997e6a4e363439170` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteLimitsNamespacedIsTerminalPUnit.lean/declarations/example.md) | 41 | `declaration-track:5bd1eb4e0e1d773d7d9d2515c578500b75bb89c82441cc3735f446ff33659408` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteLimitsNamespacedIsTerminalPUnit.lean/declarations/example-source-edition-2.md) | 43 | `declaration-track:aa418caf893b5b2daa2b140cbcb1d782aa49bc94011c0b8e3b5714ca6bab879b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [FreeNonUnitalNonAssocAlgebra](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/declarations/freenonunitalnonassocalgebra.md) | 69 | `declaration-track:030c98b34b6ab9b5c0b994e74d2d440ca504970c4645b3a63e38b426291db310` |
-| 2 | `def` | [of](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/declarations/of.md) | 77 | `declaration-track:f51c9091830cf18b160278dd18bec95cdeb856de66972b3f2ea7a38e426c1926` |
-| 3 | `def` | [lift](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/declarations/lift.md) | 86 | `declaration-track:f73eefc0fda505b786a14a76dd9076b43d3ee9edc586171f648e4c31d03173d8` |
-| 4 | `theorem` | [lift_symm_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/declarations/lift-symm-apply.md) | 90 | `result-track:b74eca66965d21fba471715ff7d182a0cc13df595c0b01f7bcf3260ceff03dcf` |
-| 5 | `theorem` | [of_comp_lift](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/declarations/of-comp-lift.md) | 94 | `result-track:2e5bb3f21d121faa7403dccda204aa0b116a383178e6787914f55695981408af` |
-| 6 | `theorem` | [lift_unique](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/declarations/lift-unique.md) | 98 | `result-track:f4dad51030fb8683d976a06e35b507e5af01f6657201f03bfd1102f1abb77c8d` |
-| 7 | `theorem` | [lift_of_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/declarations/lift-of-apply.md) | 103 | `result-track:17506035742a85977e192608a8208a605fcbb00b24e077fdc9b355c58caf3237` |
-| 8 | `theorem` | [lift_comp_of](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/declarations/lift-comp-of.md) | 107 | `result-track:b03e72f1de3553382f56bc104c6b4afb38436bc9b501c79645626a06d2f53b7b` |
-| 9 | `theorem` | [hom_ext](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/declarations/hom-ext.md) | 111 | `result-track:1820470af5d6bc28366ee0c4cdcd2e5311f58a7db7d7f0400314570071268a55` |
+| 1 | `abbrev` | [FreeNonUnitalNonAssocAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/declarations/freenonunitalnonassocalgebra.md) | 69 | `declaration-track:030c98b34b6ab9b5c0b994e74d2d440ca504970c4645b3a63e38b426291db310` |
+| 2 | `def` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/declarations/of.md) | 77 | `declaration-track:f51c9091830cf18b160278dd18bec95cdeb856de66972b3f2ea7a38e426c1926` |
+| 3 | `def` | [lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/declarations/lift.md) | 86 | `declaration-track:f73eefc0fda505b786a14a76dd9076b43d3ee9edc586171f648e4c31d03173d8` |
+| 4 | `theorem` | [lift_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/declarations/lift-symm-apply.md) | 90 | `result-track:b74eca66965d21fba471715ff7d182a0cc13df595c0b01f7bcf3260ceff03dcf` |
+| 5 | `theorem` | [of_comp_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/declarations/of-comp-lift.md) | 94 | `result-track:2e5bb3f21d121faa7403dccda204aa0b116a383178e6787914f55695981408af` |
+| 6 | `theorem` | [lift_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/declarations/lift-unique.md) | 98 | `result-track:f4dad51030fb8683d976a06e35b507e5af01f6657201f03bfd1102f1abb77c8d` |
+| 7 | `theorem` | [lift_of_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/declarations/lift-of-apply.md) | 103 | `result-track:17506035742a85977e192608a8208a605fcbb00b24e077fdc9b355c58caf3237` |
+| 8 | `theorem` | [lift_comp_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/declarations/lift-comp-of.md) | 107 | `result-track:b03e72f1de3553382f56bc104c6b4afb38436bc9b501c79645626a06d2f53b7b` |
+| 9 | `theorem` | [hom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FreeNonUnitalNonAssocAlgebraNamespaced.lean/declarations/hom-ext.md) | 111 | `result-track:1820470af5d6bc28366ee0c4cdcd2e5311f58a7db7d7f0400314570071268a55` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

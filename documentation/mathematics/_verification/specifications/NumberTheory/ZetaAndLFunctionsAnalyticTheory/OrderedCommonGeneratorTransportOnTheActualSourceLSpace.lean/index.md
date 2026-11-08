@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OrderedCommonGeneratorTransportOnTheActualSourceLSpace.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OrderedCommonGeneratorTransportOnTheActualSourceLSpace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OrderedCommonGeneratorTransportOnTheActualSourceLSpace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OrderedCommonGeneratorTransportOnTheActualSourceLSpace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [angle_loop_inverse](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OrderedCommonGeneratorTransportOnTheActualSourceLSpace.lean/declarations/angle-loop-inverse.md) | 23 | `result-track:ebd0d06e294689e9461d14f3d0f9d01b02e4d745ecb183fc10ce862d44bd7700` |
-| 2 | `theorem` | [actual_site_loop_gauge](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OrderedCommonGeneratorTransportOnTheActualSourceLSpace.lean/declarations/actual-site-loop-gauge.md) | 31 | `result-track:5dfab31766bab10a67c9370b11ae8704dee0b521628ec07b559da124fbc19652` |
-| 3 | `theorem` | [actual_chart_loop_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OrderedCommonGeneratorTransportOnTheActualSourceLSpace.lean/declarations/actual-chart-loop-identity.md) | 38 | `result-track:f2aa895e6e9292fa843f4146f3f9cd06db5777c31285f683fd2d86089e7e7282` |
+| 1 | `theorem` | [angle_loop_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OrderedCommonGeneratorTransportOnTheActualSourceLSpace.lean/declarations/angle-loop-inverse.md) | 23 | `result-track:ebd0d06e294689e9461d14f3d0f9d01b02e4d745ecb183fc10ce862d44bd7700` |
+| 2 | `theorem` | [actual_site_loop_gauge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OrderedCommonGeneratorTransportOnTheActualSourceLSpace.lean/declarations/actual-site-loop-gauge.md) | 31 | `result-track:5dfab31766bab10a67c9370b11ae8704dee0b521628ec07b559da124fbc19652` |
+| 3 | `theorem` | [actual_chart_loop_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OrderedCommonGeneratorTransportOnTheActualSourceLSpace.lean/declarations/actual-chart-loop-identity.md) | 38 | `result-track:f2aa895e6e9292fa843f4146f3f9cd06db5777c31285f683fd2d86089e7e7282` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

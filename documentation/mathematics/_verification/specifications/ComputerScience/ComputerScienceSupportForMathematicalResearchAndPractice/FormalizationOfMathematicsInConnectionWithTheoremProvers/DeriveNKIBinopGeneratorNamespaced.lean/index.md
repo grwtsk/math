@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveNKIBinopGeneratorNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveNKIBinopGeneratorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveNKIBinopGeneratorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveNKIBinopGeneratorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [BinOp](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveNKIBinopGeneratorNamespaced.lean/declarations/binop.md) | 20 | `declaration-track:56a51162548ad02557bbc14edcf6ca8885be5651a9b020a4a4ba615749f7b83a` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveNKIBinopGeneratorNamespaced.lean/declarations/instance.md) | 70 | `declaration-track:20b3e0a71828ee3c6bbf558d320ffa55b7fd5f52d78d0b6e57e7faaad6073cf7` |
-| 3 | `def` | [isLogicalOp](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveNKIBinopGeneratorNamespaced.lean/declarations/islogicalop.md) | 78 | `declaration-track:e81e144be7e5c889f16aff1036faf9d3a92fe68026da6c80dd7737a5eca17b01` |
+| 1 | `inductive` | [BinOp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveNKIBinopGeneratorNamespaced.lean/declarations/binop.md) | 20 | `declaration-track:56a51162548ad02557bbc14edcf6ca8885be5651a9b020a4a4ba615749f7b83a` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveNKIBinopGeneratorNamespaced.lean/declarations/instance.md) | 70 | `declaration-track:20b3e0a71828ee3c6bbf558d320ffa55b7fd5f52d78d0b6e57e7faaad6073cf7` |
+| 3 | `def` | [isLogicalOp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveNKIBinopGeneratorNamespaced.lean/declarations/islogicalop.md) | 78 | `declaration-track:e81e144be7e5c889f16aff1036faf9d3a92fe68026da6c80dd7737a5eca17b01` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

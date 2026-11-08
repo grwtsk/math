@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CompactProfilePairingIntegrability.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CompactProfilePairingIntegrability.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CompactProfilePairingIntegrability.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CompactProfilePairingIntegrability.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Integration.CompactPolynomialMoments`](../../../../../../MeasureAndIntegration/CompactPolynomialMoments.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Convolution.CompactProfileCorrelation`](../../../../../../MeasureAndIntegration/CompactProfileCorrelation.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Integration.CompactPolynomialMoments`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactPolynomialMoments.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Convolution.CompactProfileCorrelation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileCorrelation.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.MeasureTheory.Function.Floor` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [chebyshev_prime_power_nonneg](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CompactProfilePairingIntegrability.lean/declarations/chebyshev-prime-power-nonneg.md) | 26 | `result-track:0c13058378776adf083c5b15cf688c6822c303b449e89ecd43c3c28f66c35554` |
-| 2 | `theorem` | [chebyshev_prime_power_monotone](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CompactProfilePairingIntegrability.lean/declarations/chebyshev-prime-power-monotone.md) | 30 | `result-track:30bdf21eff6beaa5518ce2b9ec013342cf457c66816b0166fe8a2d3631ab25da` |
-| 3 | `theorem` | [error_profile_measurable](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CompactProfilePairingIntegrability.lean/declarations/error-profile-measurable.md) | 40 | `result-track:6ad4119ac2858e180ac6afdafebf7ab03e7e02433ad7de67a18a237b263b26f9` |
-| 4 | `theorem` | [error_profile_bound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CompactProfilePairingIntegrability.lean/declarations/error-profile-bound.md) | 46 | `result-track:c05164594cd6836d993cd5edf903004deafe1f62c71d2ba7f3c42b68c9428daf` |
-| 5 | `theorem` | [source_weight_continuous](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CompactProfilePairingIntegrability.lean/declarations/source-weight-continuous.md) | 59 | `result-track:d31732e88bcd2b0632f3edb0a5832394b464bd3e26e86ac777605e94a4b7739e` |
-| 6 | `theorem` | [signed_pairing_integrable](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CompactProfilePairingIntegrability.lean/declarations/signed-pairing-integrable.md) | 67 | `result-track:7c1ce020332f29e6321ce875b6603f919b91541ae9aae3bccc07686bbe6cc720` |
+| 1 | `theorem` | [chebyshev_prime_power_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CompactProfilePairingIntegrability.lean/declarations/chebyshev-prime-power-nonneg.md) | 26 | `result-track:0c13058378776adf083c5b15cf688c6822c303b449e89ecd43c3c28f66c35554` |
+| 2 | `theorem` | [chebyshev_prime_power_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CompactProfilePairingIntegrability.lean/declarations/chebyshev-prime-power-monotone.md) | 30 | `result-track:30bdf21eff6beaa5518ce2b9ec013342cf457c66816b0166fe8a2d3631ab25da` |
+| 3 | `theorem` | [error_profile_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CompactProfilePairingIntegrability.lean/declarations/error-profile-measurable.md) | 40 | `result-track:6ad4119ac2858e180ac6afdafebf7ab03e7e02433ad7de67a18a237b263b26f9` |
+| 4 | `theorem` | [error_profile_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CompactProfilePairingIntegrability.lean/declarations/error-profile-bound.md) | 46 | `result-track:c05164594cd6836d993cd5edf903004deafe1f62c71d2ba7f3c42b68c9428daf` |
+| 5 | `theorem` | [source_weight_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CompactProfilePairingIntegrability.lean/declarations/source-weight-continuous.md) | 59 | `result-track:d31732e88bcd2b0632f3edb0a5832394b464bd3e26e86ac777605e94a4b7739e` |
+| 6 | `theorem` | [signed_pairing_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CompactProfilePairingIntegrability.lean/declarations/signed-pairing-integrable.md) | 67 | `result-track:7c1ce020332f29e6321ce875b6603f919b91541ae9aae3bccc07686bbe6cc720` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

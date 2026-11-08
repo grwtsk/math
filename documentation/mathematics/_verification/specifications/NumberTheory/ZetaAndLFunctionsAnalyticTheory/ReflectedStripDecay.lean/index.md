@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ReflectedStripBudget`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReflectedStripBudget.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ReflectedStripBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReflectedStripBudget.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Log.Basic` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.SpecificLimits.Basic` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nat_add_two_tendsto_atTop](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/nat-add-two-tendsto-attop.md) | 31 | `result-track:e71d5da512ce6ea1a808f1e58ca58e99e74c6d867c7ea7f91b7d29a2af3c8aba` |
-| 2 | `theorem` | [inv_nat_succ_tendsto_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/inv-nat-succ-tendsto-zero.md) | 36 | `result-track:c860eef48e60709f2dd250eee596d61b0b467b513a5518d25d382d94d5ba3d96` |
-| 3 | `theorem` | [log_div_nat_succ_tendsto_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/log-div-nat-succ-tendsto-zero.md) | 44 | `result-track:7812091a4b7811b00798adee3af88b78ddfff761f8ad4272a2858114bc8228f4` |
-| 4 | `theorem` | [growthLog_div_nat_succ_tendsto_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/growthlog-div-nat-succ-tendsto-zero.md) | 55 | `result-track:a7451d5ff454b8708f09c0f7c5048451f020542f2d5faf5ec5aec386b3e0be57` |
-| 5 | `theorem` | [inv_height_tendsto_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/inv-height-tendsto-zero.md) | 65 | `result-track:0c645f4147b58ee1ea341cc44570554fd54f2c1c11aa5e750ba7a2fac35ecbfe` |
-| 6 | `theorem` | [growthLog_div_height_tendsto_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/growthlog-div-height-tendsto-zero.md) | 70 | `result-track:92726c9ee15f6984ba995fb80e225b0ae1800cc3b666cd22f6e00291d5f62532` |
-| 7 | `theorem` | [const_div_height_sq_tendsto_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/const-div-height-sq-tendsto-zero.md) | 78 | `result-track:1962770232a61c38ef3534a390a9b3d29e5f695fc6d9da106fc700ed24b3ac7c` |
-| 8 | `theorem` | [centralBudget_div_height_sq_tendsto_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/centralbudget-div-height-sq-tendsto-zero.md) | 88 | `result-track:9ec60f69283c8217af04644534ec8f1adae0142ea2b8be197635c1a844ec0947` |
-| 9 | `theorem` | [stripBudget_div_height_sq_tendsto_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/stripbudget-div-height-sq-tendsto-zero.md) | 104 | `result-track:e2eeab813b89214a3e67fb023b5a2349bc8cbc297cb5de6cc56b4fdb260d5017` |
-| 10 | `theorem` | [weighted_strip_div_height_sq_tendsto_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/weighted-strip-div-height-sq-tendsto-zero.md) | 119 | `result-track:db5b6a6359a70e01abc8dc00cfde4e0035bce1df8e4d1601524ff876a4ba67ae` |
+| 1 | `theorem` | [nat_add_two_tendsto_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/nat-add-two-tendsto-attop.md) | 31 | `result-track:e71d5da512ce6ea1a808f1e58ca58e99e74c6d867c7ea7f91b7d29a2af3c8aba` |
+| 2 | `theorem` | [inv_nat_succ_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/inv-nat-succ-tendsto-zero.md) | 36 | `result-track:c860eef48e60709f2dd250eee596d61b0b467b513a5518d25d382d94d5ba3d96` |
+| 3 | `theorem` | [log_div_nat_succ_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/log-div-nat-succ-tendsto-zero.md) | 44 | `result-track:7812091a4b7811b00798adee3af88b78ddfff761f8ad4272a2858114bc8228f4` |
+| 4 | `theorem` | [growthLog_div_nat_succ_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/growthlog-div-nat-succ-tendsto-zero.md) | 55 | `result-track:a7451d5ff454b8708f09c0f7c5048451f020542f2d5faf5ec5aec386b3e0be57` |
+| 5 | `theorem` | [inv_height_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/inv-height-tendsto-zero.md) | 65 | `result-track:0c645f4147b58ee1ea341cc44570554fd54f2c1c11aa5e750ba7a2fac35ecbfe` |
+| 6 | `theorem` | [growthLog_div_height_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/growthlog-div-height-tendsto-zero.md) | 70 | `result-track:92726c9ee15f6984ba995fb80e225b0ae1800cc3b666cd22f6e00291d5f62532` |
+| 7 | `theorem` | [const_div_height_sq_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/const-div-height-sq-tendsto-zero.md) | 78 | `result-track:1962770232a61c38ef3534a390a9b3d29e5f695fc6d9da106fc700ed24b3ac7c` |
+| 8 | `theorem` | [centralBudget_div_height_sq_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/centralbudget-div-height-sq-tendsto-zero.md) | 88 | `result-track:9ec60f69283c8217af04644534ec8f1adae0142ea2b8be197635c1a844ec0947` |
+| 9 | `theorem` | [stripBudget_div_height_sq_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/stripbudget-div-height-sq-tendsto-zero.md) | 104 | `result-track:e2eeab813b89214a3e67fb023b5a2349bc8cbc297cb5de6cc56b4fdb260d5017` |
+| 10 | `theorem` | [weighted_strip_div_height_sq_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripDecay.lean/declarations/weighted-strip-div-height-sq-tendsto-zero.md) | 119 | `result-track:db5b6a6359a70e01abc8dc00cfde4e0035bce1df8e4d1601524ff876a4ba67ae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

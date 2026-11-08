@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/WhitneyEmbedding.lean/index.md) · [Full source](../../../../DifferentialGeometry/WhitneyEmbedding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbedding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbedding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [embeddingPiTangent](../../../../DifferentialGeometry/WhitneyEmbedding.lean/declarations/embeddingpitangent.md) | 53 | `declaration-track:c97a70ea7de81919f92c240c54bbff9e619ef627d7c5e36fd32b79e61985f226` |
-| 2 | `theorem` | [embeddingPiTangent_coe](../../../../DifferentialGeometry/WhitneyEmbedding.lean/declarations/embeddingpitangent-coe.md) | 60 | `result-track:e6eb020e716785b19abd2e3925925a598df6417eee1bebcd520c9e50861ad1dd` |
-| 3 | `theorem` | [embeddingPiTangent_injOn](../../../../DifferentialGeometry/WhitneyEmbedding.lean/declarations/embeddingpitangent-injon.md) | 64 | `result-track:9ff5885632200fee0d479e0b09b88ceb946e7f2d6be88afac668658b97a85c95` |
-| 4 | `theorem` | [embeddingPiTangent_injective](../../../../DifferentialGeometry/WhitneyEmbedding.lean/declarations/embeddingpitangent-injective.md) | 73 | `result-track:762813da8b8bf74e010f843d8438d0976d4f358f09a4cfabfc0427d05f849ada` |
-| 5 | `theorem` | [comp_embeddingPiTangent_mfderiv](../../../../DifferentialGeometry/WhitneyEmbedding.lean/declarations/comp-embeddingpitangent-mfderiv.md) | 77 | `result-track:abb76c5b17bad5e1f12d9e806be8757e0f0f27bc112c8479bcb1754cd054143f` |
-| 6 | `theorem` | [embeddingPiTangent_ker_mfderiv](../../../../DifferentialGeometry/WhitneyEmbedding.lean/declarations/embeddingpitangent-ker-mfderiv.md) | 95 | `result-track:d638ff2af32d0240e9823a8910be2f2e2cb797541224a87c2f2894aed318faff` |
-| 7 | `theorem` | [embeddingPiTangent_injective_mfderiv](../../../../DifferentialGeometry/WhitneyEmbedding.lean/declarations/embeddingpitangent-injective-mfderiv.md) | 103 | `result-track:5267f9839d9d457b1f968ac8ea37380724e1863605eee94c8d018ebf011c3ad1` |
-| 8 | `theorem` | [exists_immersion_euclidean](../../../../DifferentialGeometry/WhitneyEmbedding.lean/declarations/exists-immersion-euclidean.md) | 110 | `result-track:7f98ac22513d25b6d6b5c1439e1f1948687d7047616aea00f4ae5a849634b85c` |
-| 9 | `theorem` | [exists_embedding_euclidean_of_compact](../../../../DifferentialGeometry/WhitneyEmbedding.lean/declarations/exists-embedding-euclidean-of-compact.md) | 132 | `result-track:3ef3db3b629c537a9d6a235bdfddfb3527e76a3059aab55405c6d516804dcacb` |
+| 1 | `def` | [embeddingPiTangent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbedding.lean/declarations/embeddingpitangent.md) | 53 | `declaration-track:c97a70ea7de81919f92c240c54bbff9e619ef627d7c5e36fd32b79e61985f226` |
+| 2 | `theorem` | [embeddingPiTangent_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbedding.lean/declarations/embeddingpitangent-coe.md) | 60 | `result-track:e6eb020e716785b19abd2e3925925a598df6417eee1bebcd520c9e50861ad1dd` |
+| 3 | `theorem` | [embeddingPiTangent_injOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbedding.lean/declarations/embeddingpitangent-injon.md) | 64 | `result-track:9ff5885632200fee0d479e0b09b88ceb946e7f2d6be88afac668658b97a85c95` |
+| 4 | `theorem` | [embeddingPiTangent_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbedding.lean/declarations/embeddingpitangent-injective.md) | 73 | `result-track:762813da8b8bf74e010f843d8438d0976d4f358f09a4cfabfc0427d05f849ada` |
+| 5 | `theorem` | [comp_embeddingPiTangent_mfderiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbedding.lean/declarations/comp-embeddingpitangent-mfderiv.md) | 77 | `result-track:abb76c5b17bad5e1f12d9e806be8757e0f0f27bc112c8479bcb1754cd054143f` |
+| 6 | `theorem` | [embeddingPiTangent_ker_mfderiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbedding.lean/declarations/embeddingpitangent-ker-mfderiv.md) | 95 | `result-track:d638ff2af32d0240e9823a8910be2f2e2cb797541224a87c2f2894aed318faff` |
+| 7 | `theorem` | [embeddingPiTangent_injective_mfderiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbedding.lean/declarations/embeddingpitangent-injective-mfderiv.md) | 103 | `result-track:5267f9839d9d457b1f968ac8ea37380724e1863605eee94c8d018ebf011c3ad1` |
+| 8 | `theorem` | [exists_immersion_euclidean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbedding.lean/declarations/exists-immersion-euclidean.md) | 110 | `result-track:7f98ac22513d25b6d6b5c1439e1f1948687d7047616aea00f4ae5a849634b85c` |
+| 9 | `theorem` | [exists_embedding_euclidean_of_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/WhitneyEmbedding.lean/declarations/exists-embedding-euclidean-of-compact.md) | 132 | `result-track:3ef3db3b629c537a9d6a235bdfddfb3527e76a3059aab55405c6d516804dcacb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FiniteLogarithmicProfileBounds.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FiniteLogarithmicProfileBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLogarithmicProfileBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLogarithmicProfileBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,10 +46,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Inequalities.LogarithmicProfileIntegralPrices`](../../../../MeasureAndIntegration/LogarithmicProfileIntegralPrices.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileCutoff`](../../../../IntegralTransformsOperationalCalculus/LogarithmicProfileCutoff.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.Integration.FiniteUnitSumVariation`](../../../../MeasureAndIntegration/FiniteUnitSumVariation.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.Analysis.Integration.PositiveHalfLineCutoffBalance`](../../../../MeasureAndIntegration/PositiveHalfLineCutoffBalance.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Analysis.Inequalities.LogarithmicProfileIntegralPrices`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicProfileIntegralPrices.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileCutoff`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicProfileCutoff.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Integration.FiniteUnitSumVariation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteUnitSumVariation.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.Integration.PositiveHalfLineCutoffBalance`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveHalfLineCutoffBalance.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finite_logarithmic_profile_price](../../../../MeasureAndIntegration/FiniteLogarithmicProfileBounds.lean/declarations/finite-logarithmic-profile-price.md) | 27 | `result-track:37d7ab41517a0e98e4d04628a7a3807e667297d0c7f48e0bd429e0ad25907126` |
+| 1 | `theorem` | [finite_logarithmic_profile_price](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLogarithmicProfileBounds.lean/declarations/finite-logarithmic-profile-price.md) | 27 | `result-track:37d7ab41517a0e98e4d04628a7a3807e667297d0c7f48e0bd429e0ad25907126` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

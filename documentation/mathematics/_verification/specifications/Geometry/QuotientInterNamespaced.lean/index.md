@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/QuotientInterNamespaced.lean/index.md) · [Full source](../../../../Geometry/QuotientInterNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/QuotientInterNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/QuotientInterNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [card_pow_quotient_mul_pow_inter_subgroup_le](../../../../Geometry/QuotientInterNamespaced.lean/declarations/card-pow-quotient-mul-pow-inter-subgroup-le.md) | 33 | `result-track:46ceaa2c0bbc55c7696efcb264181cd622d2dbca9d45921713a5eeaeafba962f` |
-| 2 | `lemma` | [le_card_quotient_mul_sq_inter_subgroup](../../../../Geometry/QuotientInterNamespaced.lean/declarations/le-card-quotient-mul-sq-inter-subgroup.md) | 66 | `result-track:0fd7b66f0c7d16339b157f4470a029f31b19022811f753cdf500afa3b6368771` |
+| 1 | `lemma` | [card_pow_quotient_mul_pow_inter_subgroup_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/QuotientInterNamespaced.lean/declarations/card-pow-quotient-mul-pow-inter-subgroup-le.md) | 33 | `result-track:46ceaa2c0bbc55c7696efcb264181cd622d2dbca9d45921713a5eeaeafba962f` |
+| 2 | `lemma` | [le_card_quotient_mul_sq_inter_subgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/QuotientInterNamespaced.lean/declarations/le-card-quotient-mul-sq-inter-subgroup.md) | 66 | `result-track:0fd7b66f0c7d16339b157f4470a029f31b19022811f753cdf500afa3b6368771` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

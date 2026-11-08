@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortBounds`](../../../../../NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.NumberTheory.Height.NumberField` — import line 9; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [PrimitiveAdditiveTriple.threePort_gcd_eq](../../../../../NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/primitiveadditivetriple-threeport-gcd-eq.md) | 16 | `result-track:0bb95b94d81223c93b076932317a5496c6b3709e2e4ac696211029d97edfeb70` |
-| 2 | `lemma` | [frey_iSup2_abs](../../../../../NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/frey-isup2-abs.md) | 29 | `result-track:a5f5234b644212b458edca51c34184149b2b02b5f2c285a46c96c052200c798b` |
-| 3 | `lemma` | [frey_iSup3_abs](../../../../../NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/frey-isup3-abs.md) | 40 | `result-track:3dcb68f7bc008029df93888a965a3efe825aac14150784c3bbfff45dd50ccc86` |
-| 4 | `lemma` | [frey_gcd_eq_one_of_combination](../../../../../NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/frey-gcd-eq-one-of-combination.md) | 54 | `result-track:5aaac8f0553a6cdad1e737eaa49b753b4b37499f27d2a10ad4ee23d2198eca69` |
-| 5 | `theorem` | [PrimitiveAdditiveTriple.frey_logHeight_lower_of_primitive](../../../../../NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/primitiveadditivetriple-frey-logheight-lower-of-primitive.md) | 67 | `result-track:0dd491f2ec4d3e2dea2e26b56c6d81e91c208d3fcb2768198ef0c57a4eaaeaf3` |
-| 6 | `theorem` | [PrimitiveAdditiveTriple.freyAffinePortEval_rat_smul](../../../../../NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/primitiveadditivetriple-freyaffineporteval-rat-smul.md) | 100 | `result-track:ca8543f232d9fa3a2292a01bb90ff32562021b02a743cc3f494b7ab40c7a58d1` |
-| 7 | `theorem` | [PrimitiveAdditiveTriple.frey_logHeight_lower_of_representative](../../../../../NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/primitiveadditivetriple-frey-logheight-lower-of-representative.md) | 110 | `result-track:c3dbcc5e24f53906562e780fddc065ebefac262e601213d666027c30f5aec179` |
-| 8 | `theorem` | [PrimitiveAdditiveTriple.frey_observation_logHeight](../../../../../NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/primitiveadditivetriple-frey-observation-logheight.md) | 124 | `result-track:b27d6df77182dc4e3560435cf27c3749e755d42f78e6e2fbd6159ee88ee195ee` |
-| 9 | `theorem` | [PrimitiveAdditiveTriple.frey_triple_logHeight](../../../../../NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/primitiveadditivetriple-frey-triple-logheight.md) | 142 | `result-track:88158d18623f7531a0a25b4605b8822fb023a3d2440931b447e6e184e3931398` |
-| 10 | `theorem` | [PrimitiveAdditiveTriple.frey_decoding_logHeight_bounds](../../../../../NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/primitiveadditivetriple-frey-decoding-logheight-bounds.md) | 162 | `result-track:ded03fa1c99f24a7ab52a2a581b25d86a236af426c6242800f6b10ef21873922` |
+| 1 | `theorem` | [PrimitiveAdditiveTriple.threePort_gcd_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/primitiveadditivetriple-threeport-gcd-eq.md) | 16 | `result-track:0bb95b94d81223c93b076932317a5496c6b3709e2e4ac696211029d97edfeb70` |
+| 2 | `lemma` | [frey_iSup2_abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/frey-isup2-abs.md) | 29 | `result-track:a5f5234b644212b458edca51c34184149b2b02b5f2c285a46c96c052200c798b` |
+| 3 | `lemma` | [frey_iSup3_abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/frey-isup3-abs.md) | 40 | `result-track:3dcb68f7bc008029df93888a965a3efe825aac14150784c3bbfff45dd50ccc86` |
+| 4 | `lemma` | [frey_gcd_eq_one_of_combination](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/frey-gcd-eq-one-of-combination.md) | 54 | `result-track:5aaac8f0553a6cdad1e737eaa49b753b4b37499f27d2a10ad4ee23d2198eca69` |
+| 5 | `theorem` | [PrimitiveAdditiveTriple.frey_logHeight_lower_of_primitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/primitiveadditivetriple-frey-logheight-lower-of-primitive.md) | 67 | `result-track:0dd491f2ec4d3e2dea2e26b56c6d81e91c208d3fcb2768198ef0c57a4eaaeaf3` |
+| 6 | `theorem` | [PrimitiveAdditiveTriple.freyAffinePortEval_rat_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/primitiveadditivetriple-freyaffineporteval-rat-smul.md) | 100 | `result-track:ca8543f232d9fa3a2292a01bb90ff32562021b02a743cc3f494b7ab40c7a58d1` |
+| 7 | `theorem` | [PrimitiveAdditiveTriple.frey_logHeight_lower_of_representative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/primitiveadditivetriple-frey-logheight-lower-of-representative.md) | 110 | `result-track:c3dbcc5e24f53906562e780fddc065ebefac262e601213d666027c30f5aec179` |
+| 8 | `theorem` | [PrimitiveAdditiveTriple.frey_observation_logHeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/primitiveadditivetriple-frey-observation-logheight.md) | 124 | `result-track:b27d6df77182dc4e3560435cf27c3749e755d42f78e6e2fbd6159ee88ee195ee` |
+| 9 | `theorem` | [PrimitiveAdditiveTriple.frey_triple_logHeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/primitiveadditivetriple-frey-triple-logheight.md) | 142 | `result-track:88158d18623f7531a0a25b4605b8822fb023a3d2440931b447e6e184e3931398` |
+| 10 | `theorem` | [PrimitiveAdditiveTriple.frey_decoding_logHeight_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyProjectiveHeight.lean/declarations/primitiveadditivetriple-frey-decoding-logheight-bounds.md) | 162 | `result-track:ded03fa1c99f24a7ab52a2a581b25d86a236af426c6242800f6b10ef21873922` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

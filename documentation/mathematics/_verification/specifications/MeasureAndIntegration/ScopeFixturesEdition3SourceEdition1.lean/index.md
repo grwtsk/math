@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ScopeFixturesEdition3SourceEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ScopeFixturesEdition3SourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesEdition3SourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesEdition3SourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [wrong_sixteenth_factor](../../../../MeasureAndIntegration/ScopeFixturesEdition3SourceEdition1.lean/declarations/wrong-sixteenth-factor.md) | 15 | `result-track:126e904dcb4d69fa19b81d7ac4940936bbee4aec7fa9371b54444239b502ab5e` |
-| 2 | `theorem` | [missing_radius_multiplier](../../../../MeasureAndIntegration/ScopeFixturesEdition3SourceEdition1.lean/declarations/missing-radius-multiplier.md) | 28 | `result-track:04becf8219d9b0152aeef2af887022286054a5febc3aea016dcd0e82816ea1fc` |
-| 3 | `theorem` | [full_drift_not_zero](../../../../MeasureAndIntegration/ScopeFixturesEdition3SourceEdition1.lean/declarations/full-drift-not-zero.md) | 40 | `result-track:dfe3a93c801d1955c99b30f712d2de5ebaac4046d28211a15e9bb482480a0fe8` |
+| 1 | `theorem` | [wrong_sixteenth_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesEdition3SourceEdition1.lean/declarations/wrong-sixteenth-factor.md) | 15 | `result-track:126e904dcb4d69fa19b81d7ac4940936bbee4aec7fa9371b54444239b502ab5e` |
+| 2 | `theorem` | [missing_radius_multiplier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesEdition3SourceEdition1.lean/declarations/missing-radius-multiplier.md) | 28 | `result-track:04becf8219d9b0152aeef2af887022286054a5febc3aea016dcd0e82816ea1fc` |
+| 3 | `theorem` | [full_drift_not_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesEdition3SourceEdition1.lean/declarations/full-drift-not-zero.md) | 40 | `result-track:dfe3a93c801d1955c99b30f712d2de5ebaac4046d28211a15e9bb482480a0fe8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

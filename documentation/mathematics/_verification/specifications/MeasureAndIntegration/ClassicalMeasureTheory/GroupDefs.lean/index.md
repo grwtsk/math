@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [VAddInvariantMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/declarations/vaddinvariantmeasure.md) | 47 | `declaration-track:24c7ce480201ddc6fcda0c9c934022a9d8ecd5fd198ef935d0156953a8f97f11` |
-| 2 | `class` | [SMulInvariantMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/declarations/smulinvariantmeasure.md) | 55 | `declaration-track:03c820e51e3c52e6dca85388bae36b1b964dba3d2e7b915036f44b7b69e3ca6b` |
-| 3 | `class` | [IsAddLeftInvariant](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/declarations/isaddleftinvariant.md) | 67 | `declaration-track:2f17328121b28bfb6ae48da893812b5433381e776812a88cb0079857ec8e3d46` |
-| 4 | `class` | [IsMulLeftInvariant](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/declarations/ismulleftinvariant.md) | 73 | `declaration-track:6441f6e4412b0e365511d98c057b0b0f2ace2f373d2eff255868accb3b008bed` |
-| 5 | `class` | [IsAddRightInvariant](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/declarations/isaddrightinvariant.md) | 78 | `declaration-track:f16a1170531d374ef6e0b6a2910d5ac08eb6c4ce8047a5921f0cf854a1cb96ad` |
-| 6 | `class` | [IsMulRightInvariant](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/declarations/ismulrightinvariant.md) | 84 | `declaration-track:b290ea504bbf4749ebbbe4a489310b26a7fce6a1197db870d861f750d78fff18` |
-| 7 | `instance` | [IsMulLeftInvariant.smulInvariantMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/declarations/smulinvariantmeasure-source-line-90-occurrence-2.md) | 90 | `declaration-track:94404e3a4c5956a1768024181f1b31864fd09de49a8f47b2ea84056aacd6df04` |
-| 8 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/declarations/instance.md) | 95 | `declaration-track:e59d664dfa3e6b37a6edd61399b5a5ca475c6e6b22b9799c57a7e85fded23d05` |
-| 9 | `instance` | [IsMulRightInvariant.toSMulInvariantMeasure_op](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/declarations/tosmulinvariantmeasure-op.md) | 100 | `declaration-track:7b53445f79d7deff1ef263c0dff83cead98601afe9930e7267b1eaab1063a6bb` |
+| 1 | `class` | [VAddInvariantMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/declarations/vaddinvariantmeasure.md) | 47 | `declaration-track:24c7ce480201ddc6fcda0c9c934022a9d8ecd5fd198ef935d0156953a8f97f11` |
+| 2 | `class` | [SMulInvariantMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/declarations/smulinvariantmeasure.md) | 55 | `declaration-track:03c820e51e3c52e6dca85388bae36b1b964dba3d2e7b915036f44b7b69e3ca6b` |
+| 3 | `class` | [IsAddLeftInvariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/declarations/isaddleftinvariant.md) | 67 | `declaration-track:2f17328121b28bfb6ae48da893812b5433381e776812a88cb0079857ec8e3d46` |
+| 4 | `class` | [IsMulLeftInvariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/declarations/ismulleftinvariant.md) | 73 | `declaration-track:6441f6e4412b0e365511d98c057b0b0f2ace2f373d2eff255868accb3b008bed` |
+| 5 | `class` | [IsAddRightInvariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/declarations/isaddrightinvariant.md) | 78 | `declaration-track:f16a1170531d374ef6e0b6a2910d5ac08eb6c4ce8047a5921f0cf854a1cb96ad` |
+| 6 | `class` | [IsMulRightInvariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/declarations/ismulrightinvariant.md) | 84 | `declaration-track:b290ea504bbf4749ebbbe4a489310b26a7fce6a1197db870d861f750d78fff18` |
+| 7 | `instance` | [IsMulLeftInvariant.smulInvariantMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/declarations/smulinvariantmeasure-source-line-90-occurrence-2.md) | 90 | `declaration-track:94404e3a4c5956a1768024181f1b31864fd09de49a8f47b2ea84056aacd6df04` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/declarations/instance.md) | 95 | `declaration-track:e59d664dfa3e6b37a6edd61399b5a5ca475c6e6b22b9799c57a7e85fded23d05` |
+| 9 | `instance` | [IsMulRightInvariant.toSMulInvariantMeasure_op](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupDefs.lean/declarations/tosmulinvariantmeasure-op.md) | 100 | `declaration-track:7b53445f79d7deff1ef263c0dff83cead98601afe9930e7267b1eaab1063a6bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

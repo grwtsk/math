@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpKernelsKernelsNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpKernelsKernelsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpKernelsKernelsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpKernelsKernelsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [kernelCone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpKernelsKernelsNamespaced.lean/declarations/kernelcone.md) | 31 | `declaration-track:b3101bf4074e36823c163358e197d7f080646ea569d9c71ba7c0724c83f1c67c` |
-| 2 | `def` | [kernelIsLimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpKernelsKernelsNamespaced.lean/declarations/kernelislimit.md) | 36 | `declaration-track:cf63470b68e743c9dc5c6da761933543596e3b9f57f7c442d3643ec6f3522adb` |
-| 3 | `def` | [cokernelCocone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpKernelsKernelsNamespaced.lean/declarations/cokernelcocone.md) | 44 | `declaration-track:66b77aa6db6c0b35f038f6688eaccd08dca2dd4da663bb12a85a385063cbcfc5` |
-| 4 | `def` | [cokernelIsColimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpKernelsKernelsNamespaced.lean/declarations/cokerneliscolimit.md) | 49 | `declaration-track:4c75ab0ad48475a389bb116031983e77dc948e4c186950d24a507ceac82b2d4a` |
+| 1 | `def` | [kernelCone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpKernelsKernelsNamespaced.lean/declarations/kernelcone.md) | 31 | `declaration-track:b3101bf4074e36823c163358e197d7f080646ea569d9c71ba7c0724c83f1c67c` |
+| 2 | `def` | [kernelIsLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpKernelsKernelsNamespaced.lean/declarations/kernelislimit.md) | 36 | `declaration-track:cf63470b68e743c9dc5c6da761933543596e3b9f57f7c442d3643ec6f3522adb` |
+| 3 | `def` | [cokernelCocone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpKernelsKernelsNamespaced.lean/declarations/cokernelcocone.md) | 44 | `declaration-track:66b77aa6db6c0b35f038f6688eaccd08dca2dd4da663bb12a85a385063cbcfc5` |
+| 4 | `def` | [cokernelIsColimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpKernelsKernelsNamespaced.lean/declarations/cokerneliscolimit.md) | 49 | `declaration-track:4c75ab0ad48475a389bb116031983e77dc948e4c186950d24a507ceac82b2d4a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

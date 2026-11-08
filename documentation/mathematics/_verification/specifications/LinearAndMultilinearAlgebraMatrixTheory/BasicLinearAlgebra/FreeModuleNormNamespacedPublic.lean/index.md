@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeModuleNormNamespacedPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeModuleNormNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeModuleNormNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeModuleNormNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [associated_norm_prod_smith](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeModuleNormNamespacedPublic.lean/declarations/associated-norm-prod-smith.md) | 36 | `result-track:fd6f749d971fb19a3339c8005943b589aa502d22f283ea9e9caa7e7c0d02ccb6` |
-| 2 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeModuleNormNamespacedPublic.lean/declarations/instance.md) | 62 | `declaration-track:e69360df4b0c4fad8e559e28449d17dddd6e8384736084474d39d6fc1c60e98d` |
-| 3 | `theorem` | [finrank_quotient_span_eq_natDegree_norm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeModuleNormNamespacedPublic.lean/declarations/finrank-quotient-span-eq-natdegree-norm.md) | 68 | `result-track:2c1460aa10788c053e5df80d8ee53bda9cc362a7d14af1aef6a5ae9a3ad74292` |
+| 1 | `theorem` | [associated_norm_prod_smith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeModuleNormNamespacedPublic.lean/declarations/associated-norm-prod-smith.md) | 36 | `result-track:fd6f749d971fb19a3339c8005943b589aa502d22f283ea9e9caa7e7c0d02ccb6` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeModuleNormNamespacedPublic.lean/declarations/instance.md) | 62 | `declaration-track:e69360df4b0c4fad8e559e28449d17dddd6e8384736084474d39d6fc1c60e98d` |
+| 3 | `theorem` | [finrank_quotient_span_eq_natDegree_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeModuleNormNamespacedPublic.lean/declarations/finrank-quotient-span-eq-natdegree-norm.md) | 68 | `result-track:2c1460aa10788c053e5df80d8ee53bda9cc362a7d14af1aef6a5ae9a3ad74292` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

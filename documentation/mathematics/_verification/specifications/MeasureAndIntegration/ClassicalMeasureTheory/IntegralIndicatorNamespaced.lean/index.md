@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [tendsto_measure_of_ae_tendsto_indicator](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespaced.lean/declarations/tendsto-measure-of-ae-tendsto-indicator.md) | 49 | `result-track:701edb49b5c9c4c3ed6b5c3feeef57824a06ff619c8776f31b0073b74a5a15c3` |
-| 2 | `lemma` | [tendsto_measure_of_ae_tendsto_indicator_of_isFiniteMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespaced.lean/declarations/tendsto-measure-of-ae-tendsto-indicator-of-isfinitemeasure.md) | 67 | `result-track:3d5cff939603dc3c7245c5656de2606dff4b3a636327cf023bd7de8e2f655c85` |
-| 3 | `lemma` | [tendsto_measure_of_tendsto_indicator](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespaced.lean/declarations/tendsto-measure-of-tendsto-indicator.md) | 77 | `result-track:057b651566d96a956b47650c9b37bed00301ec561bf2bf8d4d3cd4ae743e7b11` |
-| 4 | `lemma` | [tendsto_measure_of_tendsto_indicator_of_isFiniteMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespaced.lean/declarations/tendsto-measure-of-tendsto-indicator-of-isfinitemeasure.md) | 90 | `result-track:9d56619ac780237d2ac0b723aca7b08d3eff381e84387f5c9a95029d7cc419d4` |
+| 1 | `lemma` | [tendsto_measure_of_ae_tendsto_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespaced.lean/declarations/tendsto-measure-of-ae-tendsto-indicator.md) | 49 | `result-track:701edb49b5c9c4c3ed6b5c3feeef57824a06ff619c8776f31b0073b74a5a15c3` |
+| 2 | `lemma` | [tendsto_measure_of_ae_tendsto_indicator_of_isFiniteMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespaced.lean/declarations/tendsto-measure-of-ae-tendsto-indicator-of-isfinitemeasure.md) | 67 | `result-track:3d5cff939603dc3c7245c5656de2606dff4b3a636327cf023bd7de8e2f655c85` |
+| 3 | `lemma` | [tendsto_measure_of_tendsto_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespaced.lean/declarations/tendsto-measure-of-tendsto-indicator.md) | 77 | `result-track:057b651566d96a956b47650c9b37bed00301ec561bf2bf8d4d3cd4ae743e7b11` |
+| 4 | `lemma` | [tendsto_measure_of_tendsto_indicator_of_isFiniteMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespaced.lean/declarations/tendsto-measure-of-tendsto-indicator-of-isfinitemeasure.md) | 90 | `result-track:9d56619ac780237d2ac0b723aca7b08d3eff381e84387f5c9a95029d7cc419d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

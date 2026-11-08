@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/MoserColorHodgeSeparation.lean/index.md) · [Full source](../../../../Geometry/MoserColorHodgeSeparation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MoserColorHodgeSeparation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MoserColorHodgeSeparation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserPorts`](../../../../Combinatorics/GraphTheory/MoserPorts.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Geometry.Hodge.FiniteGraphCellular`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGraphCellular.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserPorts`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/MoserPorts.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Geometry.Hodge.FiniteGraphCellular`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGraphCellular.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [colorCochain](../../../../Geometry/MoserColorHodgeSeparation.lean/declarations/colorcochain.md) | 11 | `declaration-track:da1a4e93df983f6f7272b862bbad506379fdbcad227604b5a267e03934012618` |
-| 2 | `theorem` | [colorCochain_not_constant](../../../../Geometry/MoserColorHodgeSeparation.lean/declarations/colorcochain-not-constant.md) | 15 | `result-track:4c9553bfaf9ead0a3a883df29f0dbe670461656e727faa9b3583397556a6927c` |
-| 3 | `theorem` | [colorCochain_energy_pos](../../../../Geometry/MoserColorHodgeSeparation.lean/declarations/colorcochain-energy-pos.md) | 23 | `result-track:b5055a973ed232aed7e61358f5f1effbb33c13de78a1bf2c039a156839371cfc` |
-| 4 | `theorem` | [constantColor_not_proper](../../../../Geometry/MoserColorHodgeSeparation.lean/declarations/constantcolor-not-proper.md) | 33 | `result-track:88637415d0def7544fe94594abf1e96588d1ced1fb5718e4d01f40ca29d505e4` |
-| 5 | `theorem` | [harmonic_constant_not_coloring](../../../../Geometry/MoserColorHodgeSeparation.lean/declarations/harmonic-constant-not-coloring.md) | 39 | `result-track:4e8d5bb98b0eb6d6746259784d1ffbf7c4b963b4ae96192b25dac6cc81d2b7c5` |
+| 1 | `def` | [colorCochain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MoserColorHodgeSeparation.lean/declarations/colorcochain.md) | 11 | `declaration-track:da1a4e93df983f6f7272b862bbad506379fdbcad227604b5a267e03934012618` |
+| 2 | `theorem` | [colorCochain_not_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MoserColorHodgeSeparation.lean/declarations/colorcochain-not-constant.md) | 15 | `result-track:4c9553bfaf9ead0a3a883df29f0dbe670461656e727faa9b3583397556a6927c` |
+| 3 | `theorem` | [colorCochain_energy_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MoserColorHodgeSeparation.lean/declarations/colorcochain-energy-pos.md) | 23 | `result-track:b5055a973ed232aed7e61358f5f1effbb33c13de78a1bf2c039a156839371cfc` |
+| 4 | `theorem` | [constantColor_not_proper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MoserColorHodgeSeparation.lean/declarations/constantcolor-not-proper.md) | 33 | `result-track:88637415d0def7544fe94594abf1e96588d1ced1fb5718e4d01f40ca29d505e4` |
+| 5 | `theorem` | [harmonic_constant_not_coloring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MoserColorHodgeSeparation.lean/declarations/harmonic-constant-not-coloring.md) | 39 | `result-track:4e8d5bb98b0eb6d6746259784d1ffbf7c4b963b4ae96192b25dac6cc81d2b7c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

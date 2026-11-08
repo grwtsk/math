@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ProdL2.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ProdL2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProdL2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProdL2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instProdInnerProductSpace](../../../../FunctionalAnalysis/ProdL2.lean/declarations/instprodinnerproductspace.md) | 28 | `declaration-track:4128faef94894fb7528b01b526a45d55884cffa2b152ed0dada6cc7b12f24117` |
-| 2 | `theorem` | [prod_inner_apply](../../../../FunctionalAnalysis/ProdL2.lean/declarations/prod-inner-apply.md) | 45 | `result-track:d8d3cc7348f57dfb57d0a78d7cc1cec26a7876dbe94f3c2250023170c4b934eb` |
-| 3 | `def` | [prod](../../../../FunctionalAnalysis/ProdL2.lean/declarations/prod.md) | 56 | `declaration-track:3bb9bb5625527345ac48a12b0284221a8ba2df25bbd54ed56b8d79b15bb27032` |
-| 4 | `theorem` | [prod_apply](../../../../FunctionalAnalysis/ProdL2.lean/declarations/prod-apply.md) | 72 | `result-track:e11d68f36c569b940b06f92ee6efe4f3536aefe908e0f61213b256e89f797cc2` |
+| 1 | `instance` | [instProdInnerProductSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProdL2.lean/declarations/instprodinnerproductspace.md) | 28 | `declaration-track:4128faef94894fb7528b01b526a45d55884cffa2b152ed0dada6cc7b12f24117` |
+| 2 | `theorem` | [prod_inner_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProdL2.lean/declarations/prod-inner-apply.md) | 45 | `result-track:d8d3cc7348f57dfb57d0a78d7cc1cec26a7876dbe94f3c2250023170c4b934eb` |
+| 3 | `def` | [prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProdL2.lean/declarations/prod.md) | 56 | `declaration-track:3bb9bb5625527345ac48a12b0284221a8ba2df25bbd54ed56b8d79b15bb27032` |
+| 4 | `theorem` | [prod_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProdL2.lean/declarations/prod-apply.md) | 72 | `result-track:e11d68f36c569b940b06f92ee6efe4f3536aefe908e0f61213b256e89f797cc2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

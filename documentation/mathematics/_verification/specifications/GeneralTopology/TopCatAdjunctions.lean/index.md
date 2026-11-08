@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopCatAdjunctions.lean/index.md) · [Full source](../../../../GeneralTopology/TopCatAdjunctions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatAdjunctions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatAdjunctions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [adj₁](../../../../GeneralTopology/TopCatAdjunctions.lean/declarations/adj-source-edition-2.md) | 29 | `declaration-track:e32d3bc78d9715d72aa1ce180a9ba83e7f6c5f2dac674c9757eebcf1958d32dd` |
-| 2 | `def` | [adj₂](../../../../GeneralTopology/TopCatAdjunctions.lean/declarations/adj.md) | 36 | `declaration-track:1492cd7cc47cdf3cfaec2a5d9764f36c9aa2e9fd9da850b2993394de17434b0e` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/TopCatAdjunctions.lean/declarations/instance.md) | 40 | `declaration-track:21e15b00a7b5038fbd0d3eb11278a1e3d5405b227a9095a6d13958e9088078aa` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/TopCatAdjunctions.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:92fde97098d22735dfda80bef08b7956e4acf9528a0b74d36d1aea14285b86ed` |
+| 1 | `def` | [adj₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatAdjunctions.lean/declarations/adj-source-edition-2.md) | 29 | `declaration-track:e32d3bc78d9715d72aa1ce180a9ba83e7f6c5f2dac674c9757eebcf1958d32dd` |
+| 2 | `def` | [adj₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatAdjunctions.lean/declarations/adj.md) | 36 | `declaration-track:1492cd7cc47cdf3cfaec2a5d9764f36c9aa2e9fd9da850b2993394de17434b0e` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatAdjunctions.lean/declarations/instance.md) | 40 | `declaration-track:21e15b00a7b5038fbd0d3eb11278a1e3d5405b227a9095a6d13958e9088078aa` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatAdjunctions.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:92fde97098d22735dfda80bef08b7956e4acf9528a0b74d36d1aea14285b86ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

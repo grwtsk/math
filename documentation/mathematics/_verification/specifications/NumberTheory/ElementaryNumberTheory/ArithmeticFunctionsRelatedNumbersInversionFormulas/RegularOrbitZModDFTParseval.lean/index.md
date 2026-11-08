@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitZModDFTParseval.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitZModDFTParseval.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitZModDFTParseval.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitZModDFTParseval.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.RegularOrbitMathlibZModDFTBridge`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitMathlibZModDFTBridge.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.RegularOrbitMathlibZModDFTBridge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitMathlibZModDFTBridge.lean/index.md) — import line 11; pinned internal source present.
 - `Mathlib.Analysis.Complex.Norm` — import line 12; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sum_stdAddChar_mul_eq_ite](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitZModDFTParseval.lean/declarations/sum-stdaddchar-mul-eq-ite.md) | 40 | `result-track:4b030e6009899c6648f3bb7a7017a4a2d089e67de06050a8714b7c188bd8d9a5` |
-| 2 | `theorem` | [sum_stdAddChar_sub_mul](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitZModDFTParseval.lean/declarations/sum-stdaddchar-sub-mul.md) | 52 | `result-track:a8fe0de4a690645c8c5a6f99f226d7cb0b2d39fe88c153bdb8e1434e59b18543` |
-| 3 | `theorem` | [sum_conj_dft_mul_dft](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitZModDFTParseval.lean/declarations/sum-conj-dft-mul-dft.md) | 65 | `result-track:23ddc9bd4f8a09b4619bd633d7319319d7076ac984bc52c2363ec9b357403516` |
-| 4 | `theorem` | [unnormalizedZModDFTParseval_sq](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitZModDFTParseval.lean/declarations/unnormalizedzmoddftparseval-sq.md) | 83 | `result-track:d9ab94911352c055454a55fc244f86eb8bc35e80112a007585c040c9e3ff83be` |
-| 5 | `theorem` | [unnormalizedZModDFTParseval](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitZModDFTParseval.lean/declarations/unnormalizedzmoddftparseval.md) | 100 | `result-track:67c6bbc51904b1e0e7537ca34d55ad7d0c07f2bfc9fdd3a6d5367b0f68dac009` |
-| 6 | `theorem` | [stdAddCharSquareModulusParseval](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitZModDFTParseval.lean/declarations/stdaddcharsquaremodulusparseval.md) | 108 | `result-track:533700fee91a5466b1a00afc54f260a245282eeb9744ef7ef266239613294437` |
-| 7 | `def` | [finiteOrthogonalityToStdAddCharParsevalAdapter](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitZModDFTParseval.lean/declarations/finiteorthogonalitytostdaddcharparsevaladapter.md) | 118 | `declaration-track:0fbf1e88d3ffc74ad64577fc6bddc09651509f297cd4515a6a074e677127d6eb` |
+| 1 | `theorem` | [sum_stdAddChar_mul_eq_ite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitZModDFTParseval.lean/declarations/sum-stdaddchar-mul-eq-ite.md) | 40 | `result-track:4b030e6009899c6648f3bb7a7017a4a2d089e67de06050a8714b7c188bd8d9a5` |
+| 2 | `theorem` | [sum_stdAddChar_sub_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitZModDFTParseval.lean/declarations/sum-stdaddchar-sub-mul.md) | 52 | `result-track:a8fe0de4a690645c8c5a6f99f226d7cb0b2d39fe88c153bdb8e1434e59b18543` |
+| 3 | `theorem` | [sum_conj_dft_mul_dft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitZModDFTParseval.lean/declarations/sum-conj-dft-mul-dft.md) | 65 | `result-track:23ddc9bd4f8a09b4619bd633d7319319d7076ac984bc52c2363ec9b357403516` |
+| 4 | `theorem` | [unnormalizedZModDFTParseval_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitZModDFTParseval.lean/declarations/unnormalizedzmoddftparseval-sq.md) | 83 | `result-track:d9ab94911352c055454a55fc244f86eb8bc35e80112a007585c040c9e3ff83be` |
+| 5 | `theorem` | [unnormalizedZModDFTParseval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitZModDFTParseval.lean/declarations/unnormalizedzmoddftparseval.md) | 100 | `result-track:67c6bbc51904b1e0e7537ca34d55ad7d0c07f2bfc9fdd3a6d5367b0f68dac009` |
+| 6 | `theorem` | [stdAddCharSquareModulusParseval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitZModDFTParseval.lean/declarations/stdaddcharsquaremodulusparseval.md) | 108 | `result-track:533700fee91a5466b1a00afc54f260a245282eeb9744ef7ef266239613294437` |
+| 7 | `def` | [finiteOrthogonalityToStdAddCharParsevalAdapter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitZModDFTParseval.lean/declarations/finiteorthogonalitytostdaddcharparsevaladapter.md) | 118 | `declaration-track:0fbf1e88d3ffc74ad64577fc6bddc09651509f297cd4515a6a074e677127d6eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

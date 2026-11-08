@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianAlgebraNamespaced.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianAlgebraNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianAlgebraNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianAlgebraNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isUnit_of_isIntegral_of_nonZeroDivisor](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianAlgebraNamespaced.lean/declarations/isunit-of-isintegral-of-nonzerodivisor.md) | 33 | `result-track:8dae6eafeca120cab4e6e8988c72bfd24abc21c653cde5a9d82c3995f604d50e` |
-| 2 | `theorem` | [isUnit_iff_nonZeroDivisor_of_isIntegral](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianAlgebraNamespaced.lean/declarations/isunit-iff-nonzerodivisor-of-isintegral.md) | 44 | `result-track:c45573916aaf43909a2992791fe0bc569e76022fe0f648b98798c3015e0c9c06` |
-| 3 | `theorem` | [isUnit_of_nonZeroDivisor_of_isIntegral'](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianAlgebraNamespaced.lean/declarations/isunit-of-nonzerodivisor-of-isintegral.md) | 50 | `result-track:b626baa7a337679922da3ed3c8f71ccb19bbe6d1a72e9550a8a25a74c6dabd12` |
-| 4 | `theorem` | [isUnit_iff_nonZeroDivisor_of_isIntegral'](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianAlgebraNamespaced.lean/declarations/isunit-iff-nonzerodivisor-of-isintegral-source-edition-2.md) | 55 | `result-track:f5d325a0131287de51196a00520740f13385bbede0b7dff6d6ed15a4ccd140c3` |
-| 5 | `theorem` | [isUnit_submonoid_eq_of_isIntegral](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianAlgebraNamespaced.lean/declarations/isunit-submonoid-eq-of-isintegral.md) | 59 | `result-track:94847a7634df6986b16bc1846d30514d3c34f78556175070795b9a42ef2651e8` |
+| 1 | `theorem` | [isUnit_of_isIntegral_of_nonZeroDivisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianAlgebraNamespaced.lean/declarations/isunit-of-isintegral-of-nonzerodivisor.md) | 33 | `result-track:8dae6eafeca120cab4e6e8988c72bfd24abc21c653cde5a9d82c3995f604d50e` |
+| 2 | `theorem` | [isUnit_iff_nonZeroDivisor_of_isIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianAlgebraNamespaced.lean/declarations/isunit-iff-nonzerodivisor-of-isintegral.md) | 44 | `result-track:c45573916aaf43909a2992791fe0bc569e76022fe0f648b98798c3015e0c9c06` |
+| 3 | `theorem` | [isUnit_of_nonZeroDivisor_of_isIntegral'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianAlgebraNamespaced.lean/declarations/isunit-of-nonzerodivisor-of-isintegral.md) | 50 | `result-track:b626baa7a337679922da3ed3c8f71ccb19bbe6d1a72e9550a8a25a74c6dabd12` |
+| 4 | `theorem` | [isUnit_iff_nonZeroDivisor_of_isIntegral'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianAlgebraNamespaced.lean/declarations/isunit-iff-nonzerodivisor-of-isintegral-source-edition-2.md) | 55 | `result-track:f5d325a0131287de51196a00520740f13385bbede0b7dff6d6ed15a4ccd140c3` |
+| 5 | `theorem` | [isUnit_submonoid_eq_of_isIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianAlgebraNamespaced.lean/declarations/isunit-submonoid-eq-of-isintegral.md) | 59 | `result-track:94847a7634df6986b16bc1846d30514d3c34f78556175070795b9a42ef2651e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

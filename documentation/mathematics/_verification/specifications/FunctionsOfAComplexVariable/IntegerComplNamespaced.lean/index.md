@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Complex.integerComplement](../../../../FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/declarations/complex-integercomplement.md) | 28 | `declaration-track:7648ef824b787dee43bad860f1da4ef072de4b7ff7b1a6bad375a721bdc15c15` |
-| 2 | `lemma` | [integerComplement_eq](../../../../FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/declarations/integercomplement-eq.md) | 34 | `result-track:432e746169ee5391eb4dbdb2d9df62ab810814fea79b7839f7a9c1adb42079ae` |
-| 3 | `lemma` | [integerComplement.mem_iff](../../../../FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/declarations/integercomplement-mem-iff.md) | 36 | `result-track:66433649c920a818448f3de4d386bee4ee8d4792af89006c7887bfab1d003f89` |
-| 4 | `lemma` | [UpperHalfPlane.coe_mem_integerComplement](../../../../FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/declarations/upperhalfplane-coe-mem-integercomplement.md) | 38 | `result-track:708386c223ff184a4309f73a6683623b0dda8b01c4b343abf6c5022fc553bd55` |
-| 5 | `lemma` | [integerComplement.add_coe_int_mem](../../../../FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/declarations/integercomplement-add-coe-int-mem.md) | 41 | `result-track:5a3c57e3265c955e9f476b043f5020d3066d13f15d9f1df0cb62c8a049789858` |
-| 6 | `lemma` | [integerComplement.ne_zero](../../../../FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/declarations/integercomplement-ne-zero.md) | 46 | `result-track:3947a8345749d8b593a3af85d48afcf47e51047087a02bc652c4ead3ee540bfb` |
-| 7 | `lemma` | [integerComplement_add_ne_zero](../../../../FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/declarations/integercomplement-add-ne-zero.md) | 49 | `result-track:55f6e74d517298be2fcf617173f89a4be63df9c19635523f66d0fc32135600ca` |
-| 8 | `lemma` | [integerComplement.ne_one](../../../../FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/declarations/integercomplement-ne-one.md) | 52 | `result-track:f0bdd974287904034ac125e4f2138fc310553d43af49b9c5a60a95e29566a2ff` |
+| 1 | `def` | [Complex.integerComplement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/declarations/complex-integercomplement.md) | 28 | `declaration-track:7648ef824b787dee43bad860f1da4ef072de4b7ff7b1a6bad375a721bdc15c15` |
+| 2 | `lemma` | [integerComplement_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/declarations/integercomplement-eq.md) | 34 | `result-track:432e746169ee5391eb4dbdb2d9df62ab810814fea79b7839f7a9c1adb42079ae` |
+| 3 | `lemma` | [integerComplement.mem_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/declarations/integercomplement-mem-iff.md) | 36 | `result-track:66433649c920a818448f3de4d386bee4ee8d4792af89006c7887bfab1d003f89` |
+| 4 | `lemma` | [UpperHalfPlane.coe_mem_integerComplement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/declarations/upperhalfplane-coe-mem-integercomplement.md) | 38 | `result-track:708386c223ff184a4309f73a6683623b0dda8b01c4b343abf6c5022fc553bd55` |
+| 5 | `lemma` | [integerComplement.add_coe_int_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/declarations/integercomplement-add-coe-int-mem.md) | 41 | `result-track:5a3c57e3265c955e9f476b043f5020d3066d13f15d9f1df0cb62c8a049789858` |
+| 6 | `lemma` | [integerComplement.ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/declarations/integercomplement-ne-zero.md) | 46 | `result-track:3947a8345749d8b593a3af85d48afcf47e51047087a02bc652c4ead3ee540bfb` |
+| 7 | `lemma` | [integerComplement_add_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/declarations/integercomplement-add-ne-zero.md) | 49 | `result-track:55f6e74d517298be2fcf617173f89a4be63df9c19635523f66d0fc32135600ca` |
+| 8 | `lemma` | [integerComplement.ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntegerComplNamespaced.lean/declarations/integercomplement-ne-one.md) | 52 | `result-track:f0bdd974287904034ac125e4f2138fc310553d43af49b9c5a60a95e29566a2ff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

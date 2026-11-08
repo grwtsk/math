@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -50,7 +50,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.Algebra.BigOperators.Group.Finset.Basic` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Fintype.BigOperators` — import line 22; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 23; external provider; requires a separately pinned dependency.
-- [Whole Packet And Observable Laws](../../../../ProbabilityTheoryAndStochasticProcesses/WholePacketAndObservableLaws.lean/index.md) — import line 25; pinned internal source present.
+- [Whole Packet And Observable Laws](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholePacketAndObservableLaws.lean/index.md) — import line 25; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -61,14 +61,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [eventProbability](../../../../ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/declarations/eventprobability.md) | 50 | `declaration-track:17ab1aab1b21eb3b34f665886c5d3cd679654300d3abf69e142d70c6cca1b3ea` |
-| 2 | `def` | [spectralEventProbability](../../../../ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/declarations/spectraleventprobability.md) | 57 | `declaration-track:1b16b2f2ee6290fda26f10ce1e733d828a71898097d2f956a645d6d321f52ac6` |
-| 3 | `theorem` | [eventProbability_empty](../../../../ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/declarations/eventprobability-empty.md) | 62 | `result-track:08d5459858c6def807cd441b9dc4854b90b7300456a7467a86816ccd2cae40ae` |
-| 4 | `theorem` | [eventProbability_univ](../../../../ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/declarations/eventprobability-univ.md) | 68 | `result-track:6150f3c77abbce203832167d0010f4a5eff430cbed68bfa1eed05160c4feba40` |
-| 5 | `theorem` | [eventProbability_nonnegative](../../../../ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/declarations/eventprobability-nonnegative.md) | 73 | `result-track:f7db008157635eb2fc5c722af6b5f3219d275b041c118d2df20fb137bb2e3f29` |
-| 6 | `theorem` | [spectralEventProbability_empty](../../../../ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/declarations/spectraleventprobability-empty.md) | 80 | `result-track:9d166f5d5d43cf5d8ed59bcb514189cae53786fb1f6fac587804b5f30014993f` |
-| 7 | `theorem` | [spectralEventProbability_univ](../../../../ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/declarations/spectraleventprobability-univ.md) | 85 | `result-track:2c6874fbb200a42ac64f681eb1e8273fa5dc7b95d7a93fa2c503943b0344cfe9` |
-| 8 | `theorem` | [spectralEventProbability_nonnegative](../../../../ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/declarations/spectraleventprobability-nonnegative.md) | 89 | `result-track:1482d85e5972530db612bbcf17ef80cdea5a43f5b6d6419c267f2efdb4d4983b` |
+| 1 | `def` | [eventProbability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/declarations/eventprobability.md) | 50 | `declaration-track:17ab1aab1b21eb3b34f665886c5d3cd679654300d3abf69e142d70c6cca1b3ea` |
+| 2 | `def` | [spectralEventProbability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/declarations/spectraleventprobability.md) | 57 | `declaration-track:1b16b2f2ee6290fda26f10ce1e733d828a71898097d2f956a645d6d321f52ac6` |
+| 3 | `theorem` | [eventProbability_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/declarations/eventprobability-empty.md) | 62 | `result-track:08d5459858c6def807cd441b9dc4854b90b7300456a7467a86816ccd2cae40ae` |
+| 4 | `theorem` | [eventProbability_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/declarations/eventprobability-univ.md) | 68 | `result-track:6150f3c77abbce203832167d0010f4a5eff430cbed68bfa1eed05160c4feba40` |
+| 5 | `theorem` | [eventProbability_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/declarations/eventprobability-nonnegative.md) | 73 | `result-track:f7db008157635eb2fc5c722af6b5f3219d275b041c118d2df20fb137bb2e3f29` |
+| 6 | `theorem` | [spectralEventProbability_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/declarations/spectraleventprobability-empty.md) | 80 | `result-track:9d166f5d5d43cf5d8ed59bcb514189cae53786fb1f6fac587804b5f30014993f` |
+| 7 | `theorem` | [spectralEventProbability_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/declarations/spectraleventprobability-univ.md) | 85 | `result-track:2c6874fbb200a42ac64f681eb1e8273fa5dc7b95d7a93fa2c503943b0344cfe9` |
+| 8 | `theorem` | [spectralEventProbability_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/declarations/spectraleventprobability-nonnegative.md) | 89 | `result-track:1482d85e5972530db612bbcf17ef80cdea5a43f5b6d6419c267f2efdb4d4983b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

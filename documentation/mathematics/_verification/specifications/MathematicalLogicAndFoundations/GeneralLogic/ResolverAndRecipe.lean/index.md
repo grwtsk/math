@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResolverAndRecipe.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResolverAndRecipe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResolverAndRecipe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResolverAndRecipe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RuleEngine](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResolverAndRecipe.lean/declarations/ruleengine.md) | 41 | `declaration-track:c542ba88cb290eff584b701e6c48cadf4dde8e392251a0736ebf831cfb3fe413` |
-| 2 | `def` | [copyRuleEngine](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResolverAndRecipe.lean/declarations/copyruleengine.md) | 48 | `declaration-track:b83f53132be7c98806717f04a57bdc9f8560c1c2dd1547b43c6185512f6223ce` |
-| 3 | `structure` | [LayerRecipe](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResolverAndRecipe.lean/declarations/layerrecipe.md) | 55 | `declaration-track:74789c3adadbc0b2f8a00708bf3edf6e0fc57ce7daa1d4574d6c3bd3ea84ac1a` |
+| 1 | `structure` | [RuleEngine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResolverAndRecipe.lean/declarations/ruleengine.md) | 41 | `declaration-track:c542ba88cb290eff584b701e6c48cadf4dde8e392251a0736ebf831cfb3fe413` |
+| 2 | `def` | [copyRuleEngine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResolverAndRecipe.lean/declarations/copyruleengine.md) | 48 | `declaration-track:b83f53132be7c98806717f04a57bdc9f8560c1c2dd1547b43c6185512f6223ce` |
+| 3 | `structure` | [LayerRecipe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResolverAndRecipe.lean/declarations/layerrecipe.md) | 55 | `declaration-track:74789c3adadbc0b2f8a00708bf3edf6e0fc57ce7daa1d4574d6c3bd3ea84ac1a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

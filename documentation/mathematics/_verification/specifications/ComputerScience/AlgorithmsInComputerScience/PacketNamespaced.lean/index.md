@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Digest](../../../../../ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/declarations/digest.md) | 13 | `declaration-track:2525ce4237ac8562ee03cc892b32334bee2243b4987af32dc1a0a0e30c2b07be` |
-| 2 | `structure` | [Rational](../../../../../ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/declarations/rational.md) | 17 | `declaration-track:100a5ebfe4c12d9c6d899c75b12ebe7eb79f57b5cee74d931460cd22bf3248fb` |
-| 3 | `structure` | [ScopePacket](../../../../../ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/declarations/scopepacket.md) | 23 | `declaration-track:2d6eca9da0528d6ea49519c75ba893842471968008d7dcf21b81529b0a26ae09` |
-| 4 | `structure` | [RationalHodgeClass](../../../../../ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/declarations/rationalhodgeclass.md) | 29 | `declaration-track:f43f945a09a747c4d7e62a66b0526a100251aef852115f96754f175db847492b` |
-| 5 | `structure` | [AlgebraicCycle](../../../../../ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/declarations/algebraiccycle.md) | 34 | `declaration-track:b70f9c74add9e1447fc2ce330226d67eac7613c2a0ab9fab75e3a5c6868775f6` |
-| 6 | `structure` | [CycleClassEquality](../../../../../ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/declarations/cycleclassequality.md) | 40 | `declaration-track:a8cf7c7f70fbf22c65f30223e6c938202bd7fd464efc2d1d95f0427f21aae87d` |
-| 7 | `structure` | [PrefixComparison](../../../../../ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/declarations/prefixcomparison.md) | 45 | `declaration-track:8123c07e50e7ef07b418dded9ff84bfb0716775b1c48448276a8d1700220c532` |
-| 8 | `inductive` | [RoutingPort](../../../../../ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/declarations/routingport.md) | 51 | `declaration-track:483195f04bd8a63dc1d1c615afab9cee730a15aed2a7ff4ee8c3fa1f43fb6677` |
-| 9 | `inductive` | [RoutingDisposition](../../../../../ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/declarations/routingdisposition.md) | 57 | `declaration-track:1d9de400ade0dc04b4b26a25788d9a086034fd7776e4cf4a584922d9e43dc681` |
+| 1 | `structure` | [Digest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/declarations/digest.md) | 13 | `declaration-track:2525ce4237ac8562ee03cc892b32334bee2243b4987af32dc1a0a0e30c2b07be` |
+| 2 | `structure` | [Rational](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/declarations/rational.md) | 17 | `declaration-track:100a5ebfe4c12d9c6d899c75b12ebe7eb79f57b5cee74d931460cd22bf3248fb` |
+| 3 | `structure` | [ScopePacket](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/declarations/scopepacket.md) | 23 | `declaration-track:2d6eca9da0528d6ea49519c75ba893842471968008d7dcf21b81529b0a26ae09` |
+| 4 | `structure` | [RationalHodgeClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/declarations/rationalhodgeclass.md) | 29 | `declaration-track:f43f945a09a747c4d7e62a66b0526a100251aef852115f96754f175db847492b` |
+| 5 | `structure` | [AlgebraicCycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/declarations/algebraiccycle.md) | 34 | `declaration-track:b70f9c74add9e1447fc2ce330226d67eac7613c2a0ab9fab75e3a5c6868775f6` |
+| 6 | `structure` | [CycleClassEquality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/declarations/cycleclassequality.md) | 40 | `declaration-track:a8cf7c7f70fbf22c65f30223e6c938202bd7fd464efc2d1d95f0427f21aae87d` |
+| 7 | `structure` | [PrefixComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/declarations/prefixcomparison.md) | 45 | `declaration-track:8123c07e50e7ef07b418dded9ff84bfb0716775b1c48448276a8d1700220c532` |
+| 8 | `inductive` | [RoutingPort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/declarations/routingport.md) | 51 | `declaration-track:483195f04bd8a63dc1d1c615afab9cee730a15aed2a7ff4ee8c3fa1f43fb6677` |
+| 9 | `inductive` | [RoutingDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PacketNamespaced.lean/declarations/routingdisposition.md) | 57 | `declaration-track:1d9de400ade0dc04b4b26a25788d9a086034fd7776e4cf4a584922d9e43dc681` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

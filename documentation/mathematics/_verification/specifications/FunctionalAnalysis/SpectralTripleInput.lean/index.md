@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectralTripleInput.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralTripleInput.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralTripleInput.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralTripleInput.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [surfaceId](../../../../FunctionalAnalysis/SpectralTripleInput.lean/declarations/surfaceid.md) | 8 | `declaration-track:481cd7ac52bd76868c33304b6096087c2be5b87d3c05f8fd1a793618aa0b7816` |
-| 2 | `def` | [ownsDeclaredSurface](../../../../FunctionalAnalysis/SpectralTripleInput.lean/declarations/ownsdeclaredsurface.md) | 9 | `declaration-track:92786284ff2349a20910f629012c5230daa6d3b7da91cb67b745965fd2c678da` |
-| 3 | `def` | [crossLeafReasoningRequiresGlue](../../../../FunctionalAnalysis/SpectralTripleInput.lean/declarations/crossleafreasoningrequiresglue.md) | 10 | `declaration-track:73c5089f2fc598c1358bcc94f1b3ac4aa04c57ec461a24b48e1db4dd86235597` |
-| 4 | `theorem` | [surface_id_declared](../../../../FunctionalAnalysis/SpectralTripleInput.lean/declarations/surface-id-declared.md) | 12 | `result-track:cd1efe761f4cf5229d8f0e648cd4dc34424aa3530af2db6336ee5ab2e2a565c0` |
-| 5 | `theorem` | [owns_declared_surface](../../../../FunctionalAnalysis/SpectralTripleInput.lean/declarations/owns-declared-surface.md) | 16 | `result-track:768d79aeccf37bcd6a3b050cf31bce3cb9441d7d53600720696ea1ac02dfd200` |
+| 1 | `def` | [surfaceId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralTripleInput.lean/declarations/surfaceid.md) | 8 | `declaration-track:481cd7ac52bd76868c33304b6096087c2be5b87d3c05f8fd1a793618aa0b7816` |
+| 2 | `def` | [ownsDeclaredSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralTripleInput.lean/declarations/ownsdeclaredsurface.md) | 9 | `declaration-track:92786284ff2349a20910f629012c5230daa6d3b7da91cb67b745965fd2c678da` |
+| 3 | `def` | [crossLeafReasoningRequiresGlue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralTripleInput.lean/declarations/crossleafreasoningrequiresglue.md) | 10 | `declaration-track:73c5089f2fc598c1358bcc94f1b3ac4aa04c57ec461a24b48e1db4dd86235597` |
+| 4 | `theorem` | [surface_id_declared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralTripleInput.lean/declarations/surface-id-declared.md) | 12 | `result-track:cd1efe761f4cf5229d8f0e648cd4dc34424aa3530af2db6336ee5ab2e2a565c0` |
+| 5 | `theorem` | [owns_declared_surface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralTripleInput.lean/declarations/owns-declared-surface.md) | 16 | `result-track:768d79aeccf37bcd6a3b050cf31bce3cb9441d7d53600720696ea1ac02dfd200` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

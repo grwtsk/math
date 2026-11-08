@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Conflict.lean/index.md) · [Full source](../../../../GeneralTopology/Conflict.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Conflict.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Conflict.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ConflictKind](../../../../GeneralTopology/Conflict.lean/declarations/conflictkind.md) | 7 | `declaration-track:185c8032b129a68bb1d593219f8b3c624ae1fe1cbb44c496f6caf2553c33bbf1` |
-| 2 | `structure` | [ConflictRecord](../../../../GeneralTopology/Conflict.lean/declarations/conflictrecord.md) | 18 | `declaration-track:1e53a126cd4764575a1c9d99595066a536c75060ec9c625eae083da4fc942379` |
-| 3 | `def` | [ConflictRecord.IsOpen](../../../../GeneralTopology/Conflict.lean/declarations/conflictrecord-isopen.md) | 28 | `declaration-track:9037f3cce1a568a3e2959cc21ac276e58c5bc4bc0c4401225eab44ee43cc8b21` |
+| 1 | `inductive` | [ConflictKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Conflict.lean/declarations/conflictkind.md) | 7 | `declaration-track:185c8032b129a68bb1d593219f8b3c624ae1fe1cbb44c496f6caf2553c33bbf1` |
+| 2 | `structure` | [ConflictRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Conflict.lean/declarations/conflictrecord.md) | 18 | `declaration-track:1e53a126cd4764575a1c9d99595066a536c75060ec9c625eae083da4fc942379` |
+| 3 | `def` | [ConflictRecord.IsOpen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Conflict.lean/declarations/conflictrecord-isopen.md) | 28 | `declaration-track:9037f3cce1a568a3e2959cc21ac276e58c5bc4bc0c4401225eab44ee43cc8b21` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizePublicIsParentSameOpApp.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizePublicIsParentSameOpApp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizePublicIsParentSameOpApp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizePublicIsParentSameOpApp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [isParentSameOpApp](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizePublicIsParentSameOpApp.lean/declarations/isparentsameopapp.md) | 13 | `declaration-track:601cc5c6727b57ca439038d393923ab87def80ff017abc8a3232a7ce194f1fcf` |
-| 2 | `def` | [reify](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizePublicIsParentSameOpApp.lean/declarations/reify.md) | 18 | `declaration-track:7ab6b7d20e51b5e5868145fc3e66e3cf29adfd151cd0d047da4c0d053e381051` |
-| 3 | `def` | [internalize](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizePublicIsParentSameOpApp.lean/declarations/internalize.md) | 24 | `declaration-track:ed752ca385797c8bf912512ec28db35dc88b3f405bfa0cbd03721da73ca2ca88` |
+| 1 | `def` | [isParentSameOpApp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizePublicIsParentSameOpApp.lean/declarations/isparentsameopapp.md) | 13 | `declaration-track:601cc5c6727b57ca439038d393923ab87def80ff017abc8a3232a7ce194f1fcf` |
+| 2 | `def` | [reify](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizePublicIsParentSameOpApp.lean/declarations/reify.md) | 18 | `declaration-track:7ab6b7d20e51b5e5868145fc3e66e3cf29adfd151cd0d047da4c0d053e381051` |
+| 3 | `def` | [internalize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizePublicIsParentSameOpApp.lean/declarations/internalize.md) | 24 | `declaration-track:ed752ca385797c8bf912512ec28db35dc88b3f405bfa0cbd03721da73ca2ca88` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

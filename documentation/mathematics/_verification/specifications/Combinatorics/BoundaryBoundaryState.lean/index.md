@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BoundaryBoundaryState.lean/index.md) · [Full source](../../../../Combinatorics/BoundaryBoundaryState.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryBoundaryState.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryBoundaryState.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BoundaryState](../../../../Combinatorics/BoundaryBoundaryState.lean/declarations/boundarystate.md) | 16 | `declaration-track:39f6f6554aae86f4086aca22ca1391ec3742de7d9ea6ffe070de1e0d525f1e62` |
-| 2 | `structure` | [ResourceState](../../../../Combinatorics/BoundaryBoundaryState.lean/declarations/resourcestate.md) | 22 | `declaration-track:eac3ee09075cd4ad03b99e7646c0bd8a0c4ff03d842457fd92a13faa7a276819` |
-| 3 | `structure` | [GlobalTerrain](../../../../Combinatorics/BoundaryBoundaryState.lean/declarations/globalterrain.md) | 29 | `declaration-track:54dc5d820f363f809c57d9978cf5cad2880cf45ebc78ef4aed6c0f288cf562f3` |
-| 4 | `theorem` | [vertex_mem_locus](../../../../Combinatorics/BoundaryBoundaryState.lean/declarations/vertex-mem-locus.md) | 45 | `result-track:80a04b81d9ee7517d83426afefd70a7f0ad11beca92fec144704ee041bf87382` |
-| 5 | `theorem` | [globalCoordinate_injective](../../../../Combinatorics/BoundaryBoundaryState.lean/declarations/globalcoordinate-injective.md) | 50 | `result-track:bb0b5faa13a5507297bfe8fcd44e0c22ce7b70e5ea2012cfed5c58aef13af090` |
+| 1 | `structure` | [BoundaryState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryBoundaryState.lean/declarations/boundarystate.md) | 16 | `declaration-track:39f6f6554aae86f4086aca22ca1391ec3742de7d9ea6ffe070de1e0d525f1e62` |
+| 2 | `structure` | [ResourceState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryBoundaryState.lean/declarations/resourcestate.md) | 22 | `declaration-track:eac3ee09075cd4ad03b99e7646c0bd8a0c4ff03d842457fd92a13faa7a276819` |
+| 3 | `structure` | [GlobalTerrain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryBoundaryState.lean/declarations/globalterrain.md) | 29 | `declaration-track:54dc5d820f363f809c57d9978cf5cad2880cf45ebc78ef4aed6c0f288cf562f3` |
+| 4 | `theorem` | [vertex_mem_locus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryBoundaryState.lean/declarations/vertex-mem-locus.md) | 45 | `result-track:80a04b81d9ee7517d83426afefd70a7f0ad11beca92fec144704ee041bf87382` |
+| 5 | `theorem` | [globalCoordinate_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryBoundaryState.lean/declarations/globalcoordinate-injective.md) | 50 | `result-track:bb0b5faa13a5507297bfe8fcd44e0c22ce7b70e5ea2012cfed5c58aef13af090` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

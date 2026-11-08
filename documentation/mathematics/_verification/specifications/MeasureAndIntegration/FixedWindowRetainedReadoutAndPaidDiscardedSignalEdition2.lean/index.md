@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FixedWindowRetainedReadoutAndPaidDiscardedSignalEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FixedWindowRetainedReadoutAndPaidDiscardedSignalEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWindowRetainedReadoutAndPaidDiscardedSignalEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWindowRetainedReadoutAndPaidDiscardedSignalEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [retainedReading](../../../../MeasureAndIntegration/FixedWindowRetainedReadoutAndPaidDiscardedSignalEdition2.lean/declarations/retainedreading.md) | 21 | `declaration-track:0c33ae64f7b7205ee64ae71fc2869ee138996f66e20571d2b05d9c4fba79423b` |
-| 2 | `def` | [discardedEnergy](../../../../MeasureAndIntegration/FixedWindowRetainedReadoutAndPaidDiscardedSignalEdition2.lean/declarations/discardedenergy.md) | 24 | `declaration-track:0a3377531105045a578289612516b58979fcf149d437f1070b63117b575ce37b` |
-| 3 | `theorem` | [finite_window_error_payment](../../../../MeasureAndIntegration/FixedWindowRetainedReadoutAndPaidDiscardedSignalEdition2.lean/declarations/finite-window-error-payment.md) | 29 | `result-track:345779b7c4d5af1c61051985ab0fe5b66c896f40165dda687403c91d4612c004` |
-| 4 | `theorem` | [retained_reading_error](../../../../MeasureAndIntegration/FixedWindowRetainedReadoutAndPaidDiscardedSignalEdition2.lean/declarations/retained-reading-error.md) | 46 | `result-track:5a2dc7a0f381ce0182387342ac1f8655184d8bab7dc15d52f363e15bc69434ae` |
-| 5 | `theorem` | [original_pickup_retained_error](../../../../MeasureAndIntegration/FixedWindowRetainedReadoutAndPaidDiscardedSignalEdition2.lean/declarations/original-pickup-retained-error.md) | 58 | `result-track:0f42f53cd45036b1958e6ae429156cc69abbda7044afabbb22d85731dd094210` |
-| 6 | `theorem` | [original_pickup_of_retained_and_tail](../../../../MeasureAndIntegration/FixedWindowRetainedReadoutAndPaidDiscardedSignalEdition2.lean/declarations/original-pickup-of-retained-and-tail.md) | 68 | `result-track:f2460eceb51b0437250bf536a0c4bbdaae433ee07594618b514aa13b6595387f` |
+| 1 | `def` | [retainedReading](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWindowRetainedReadoutAndPaidDiscardedSignalEdition2.lean/declarations/retainedreading.md) | 21 | `declaration-track:0c33ae64f7b7205ee64ae71fc2869ee138996f66e20571d2b05d9c4fba79423b` |
+| 2 | `def` | [discardedEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWindowRetainedReadoutAndPaidDiscardedSignalEdition2.lean/declarations/discardedenergy.md) | 24 | `declaration-track:0a3377531105045a578289612516b58979fcf149d437f1070b63117b575ce37b` |
+| 3 | `theorem` | [finite_window_error_payment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWindowRetainedReadoutAndPaidDiscardedSignalEdition2.lean/declarations/finite-window-error-payment.md) | 29 | `result-track:345779b7c4d5af1c61051985ab0fe5b66c896f40165dda687403c91d4612c004` |
+| 4 | `theorem` | [retained_reading_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWindowRetainedReadoutAndPaidDiscardedSignalEdition2.lean/declarations/retained-reading-error.md) | 46 | `result-track:5a2dc7a0f381ce0182387342ac1f8655184d8bab7dc15d52f363e15bc69434ae` |
+| 5 | `theorem` | [original_pickup_retained_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWindowRetainedReadoutAndPaidDiscardedSignalEdition2.lean/declarations/original-pickup-retained-error.md) | 58 | `result-track:0f42f53cd45036b1958e6ae429156cc69abbda7044afabbb22d85731dd094210` |
+| 6 | `theorem` | [original_pickup_of_retained_and_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWindowRetainedReadoutAndPaidDiscardedSignalEdition2.lean/declarations/original-pickup-of-retained-and-tail.md) | 68 | `result-track:f2460eceb51b0437250bf536a0c4bbdaae433ee07594618b514aa13b6595387f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

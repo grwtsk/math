@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PathClass.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PathClass.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PathClass.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PathClass.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [EndpointClass](../../../../../ComputerScience/AlgorithmsInComputerScience/PathClass.lean/declarations/endpointclass.md) | 21 | `declaration-track:c816e6ded48318d93dbc2ba4b78ebf2feef4fa95be1ac7a0ef861333eb1aefa0` |
-| 2 | `def` | [ofEndpoints](../../../../../ComputerScience/AlgorithmsInComputerScience/PathClass.lean/declarations/ofendpoints.md) | 30 | `declaration-track:c8bd5deb8fb8c016a19b7e28fd0423499d793e06c55140cb996f219347976053` |
-| 3 | `def` | [lastBit?](../../../../../ComputerScience/AlgorithmsInComputerScience/PathClass.lean/declarations/lastbit.md) | 38 | `declaration-track:cda5bdb9524a7f183d38129c053c289d11fbeb8d14fc23b72f978078993d6e81` |
-| 4 | `def` | [endpointClassOfBits](../../../../../ComputerScience/AlgorithmsInComputerScience/PathClass.lean/declarations/endpointclassofbits.md) | 43 | `declaration-track:965296211d06f0b4927c10d3cc4a15b38d29d26dc954586d902d26d3fc404925` |
-| 5 | `theorem` | [lastBit?_cons_ne_none](../../../../../ComputerScience/AlgorithmsInComputerScience/PathClass.lean/declarations/lastbit-cons-ne-none.md) | 47 | `result-track:ab056454a73b81f39bd6cf4c14e8624f8f6fbff77637c9ffb2dfd95074bdfb2c` |
-| 6 | `theorem` | [endpointClass_depends_only_on_endpoints](../../../../../ComputerScience/AlgorithmsInComputerScience/PathClass.lean/declarations/endpointclass-depends-only-on-endpoints.md) | 55 | `result-track:e4bdbc69e0cc49a2b5c9f7b0b308ecbe80c3399c72780f3b875fd246b80a69ce` |
+| 1 | `inductive` | [EndpointClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PathClass.lean/declarations/endpointclass.md) | 21 | `declaration-track:c816e6ded48318d93dbc2ba4b78ebf2feef4fa95be1ac7a0ef861333eb1aefa0` |
+| 2 | `def` | [ofEndpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PathClass.lean/declarations/ofendpoints.md) | 30 | `declaration-track:c8bd5deb8fb8c016a19b7e28fd0423499d793e06c55140cb996f219347976053` |
+| 3 | `def` | [lastBit?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PathClass.lean/declarations/lastbit.md) | 38 | `declaration-track:cda5bdb9524a7f183d38129c053c289d11fbeb8d14fc23b72f978078993d6e81` |
+| 4 | `def` | [endpointClassOfBits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PathClass.lean/declarations/endpointclassofbits.md) | 43 | `declaration-track:965296211d06f0b4927c10d3cc4a15b38d29d26dc954586d902d26d3fc404925` |
+| 5 | `theorem` | [lastBit?_cons_ne_none](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PathClass.lean/declarations/lastbit-cons-ne-none.md) | 47 | `result-track:ab056454a73b81f39bd6cf4c14e8624f8f6fbff77637c9ffb2dfd95074bdfb2c` |
+| 6 | `theorem` | [endpointClass_depends_only_on_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PathClass.lean/declarations/endpointclass-depends-only-on-endpoints.md) | 55 | `result-track:e4bdbc69e0cc49a2b5c9f7b0b308ecbe80c3399c72780f3b875fd246b80a69ce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

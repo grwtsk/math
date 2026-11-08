@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/StoneSeparationNamespacedAligned.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/StoneSeparationNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/StoneSeparationNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/StoneSeparationNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [not_disjoint_segment_convexHull_triple](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/StoneSeparationNamespacedAligned.lean/declarations/not-disjoint-segment-convexhull-triple.md) | 37 | `result-track:0f53cdd0912f1cb3bb041fd2bb708137288554187007c334577e05ddfcaf6eaf` |
-| 2 | `theorem` | [exists_convex_convex_compl_subset](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/StoneSeparationNamespacedAligned.lean/declarations/exists-convex-convex-compl-subset.md) | 91 | `result-track:71a2ce891c631ebdfa55f52fe6ff3e2a48bec666ae766c937fd90f25a9aa17ec` |
+| 1 | `theorem` | [not_disjoint_segment_convexHull_triple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/StoneSeparationNamespacedAligned.lean/declarations/not-disjoint-segment-convexhull-triple.md) | 37 | `result-track:0f53cdd0912f1cb3bb041fd2bb708137288554187007c334577e05ddfcaf6eaf` |
+| 2 | `theorem` | [exists_convex_convex_compl_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/StoneSeparationNamespacedAligned.lean/declarations/exists-convex-convex-compl-subset.md) | 91 | `result-track:71a2ce891c631ebdfa55f52fe6ff3e2a48bec666ae766c937fd90f25a9aa17ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

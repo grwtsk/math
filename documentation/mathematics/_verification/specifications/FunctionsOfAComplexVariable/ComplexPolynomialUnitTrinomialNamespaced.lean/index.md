@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ComplexPolynomialUnitTrinomialNamespaced.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ComplexPolynomialUnitTrinomialNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexPolynomialUnitTrinomialNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexPolynomialUnitTrinomialNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [irreducible_of_coprime'](../../../../FunctionsOfAComplexVariable/ComplexPolynomialUnitTrinomialNamespaced.lean/declarations/irreducible-of-coprime.md) | 30 | `result-track:d65bdb77a08e84900e5eb46fee1b896bdccc21e16ea73eb366d332cc874d8911` |
+| 1 | `theorem` | [irreducible_of_coprime'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexPolynomialUnitTrinomialNamespaced.lean/declarations/irreducible-of-coprime.md) | 30 | `result-track:d65bdb77a08e84900e5eb46fee1b896bdccc21e16ea73eb366d332cc874d8911` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

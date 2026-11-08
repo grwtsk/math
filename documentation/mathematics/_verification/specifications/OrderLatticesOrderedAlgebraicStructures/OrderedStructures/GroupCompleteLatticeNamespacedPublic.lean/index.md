@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCompleteLatticeNamespacedPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCompleteLatticeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCompleteLatticeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCompleteLatticeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [ciSup_mul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCompleteLatticeNamespacedPublic.lean/declarations/cisup-mul.md) | 33 | `result-track:d651a970a19a84f3ee6914ff5accf9be6aa25764ae8f002bf48aa4ae1236df14` |
-| 2 | `lemma` | [ciSup_div](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCompleteLatticeNamespacedPublic.lean/declarations/cisup-div.md) | 37 | `result-track:f4708615d5a48fe7c7b9cc1296d6c18670393e02e96b5d4ad03651444feca6be` |
-| 3 | `lemma` | [ciInf_mul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCompleteLatticeNamespacedPublic.lean/declarations/ciinf-mul.md) | 41 | `result-track:e508896974e1424187ac8c8c313fb4bf3ae1d9d7423c4314cbfb34507477d4e5` |
-| 4 | `lemma` | [ciInf_div](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCompleteLatticeNamespacedPublic.lean/declarations/ciinf-div.md) | 45 | `result-track:7759016ba80ec650e3b360da41bd7f4d6b2821b0d7218536d579f3c69df697a7` |
-| 5 | `lemma` | [mul_ciSup](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCompleteLatticeNamespacedPublic.lean/declarations/mul-cisup.md) | 54 | `result-track:8443e75f65d6a7bfe289aa8ab98fbb6803151ca05550719c1f46b5ce68604c7f` |
-| 6 | `lemma` | [mul_ciInf](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCompleteLatticeNamespacedPublic.lean/declarations/mul-ciinf.md) | 58 | `result-track:f7da0afcad67ad38f353399a61b4c69e459e30a5767aefa5ebd48058e530f1bb` |
+| 1 | `lemma` | [ciSup_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCompleteLatticeNamespacedPublic.lean/declarations/cisup-mul.md) | 33 | `result-track:d651a970a19a84f3ee6914ff5accf9be6aa25764ae8f002bf48aa4ae1236df14` |
+| 2 | `lemma` | [ciSup_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCompleteLatticeNamespacedPublic.lean/declarations/cisup-div.md) | 37 | `result-track:f4708615d5a48fe7c7b9cc1296d6c18670393e02e96b5d4ad03651444feca6be` |
+| 3 | `lemma` | [ciInf_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCompleteLatticeNamespacedPublic.lean/declarations/ciinf-mul.md) | 41 | `result-track:e508896974e1424187ac8c8c313fb4bf3ae1d9d7423c4314cbfb34507477d4e5` |
+| 4 | `lemma` | [ciInf_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCompleteLatticeNamespacedPublic.lean/declarations/ciinf-div.md) | 45 | `result-track:7759016ba80ec650e3b360da41bd7f4d6b2821b0d7218536d579f3c69df697a7` |
+| 5 | `lemma` | [mul_ciSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCompleteLatticeNamespacedPublic.lean/declarations/mul-cisup.md) | 54 | `result-track:8443e75f65d6a7bfe289aa8ab98fbb6803151ca05550719c1f46b5ce68604c7f` |
+| 6 | `lemma` | [mul_ciInf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCompleteLatticeNamespacedPublic.lean/declarations/mul-ciinf.md) | 58 | `result-track:f7da0afcad67ad38f353399a61b4c69e459e30a5767aefa5ebd48058e530f1bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

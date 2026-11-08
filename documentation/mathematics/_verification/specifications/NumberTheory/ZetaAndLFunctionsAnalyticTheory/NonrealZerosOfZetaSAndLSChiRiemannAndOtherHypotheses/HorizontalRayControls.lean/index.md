@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.TentHorizontalRays`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentHorizontalRays.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.TentHorizontalRays`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentHorizontalRays.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fractional_anchor](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/declarations/fractional-anchor.md) | 19 | `result-track:ec546714662729053100e59b4c9f6644aa869acced28a7d7916c0c17eb6aff8d` |
-| 2 | `theorem` | [anchor_at_boundary](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/declarations/anchor-at-boundary.md) | 23 | `result-track:3e7943c513e1a8b38c7c27f541f0ec575934d2c17e7331e5c7ba08b0218a7446` |
-| 3 | `theorem` | [zero_height_contains_actual_trivial_zero](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/declarations/zero-height-contains-actual-trivial-zero.md) | 27 | `result-track:106b3e9b7903861f0a8d1270062b6eb48a2d25ccfc2bbdc947c675b8438d985a` |
-| 4 | `theorem` | [shifted_and_reflected_height](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/declarations/shifted-and-reflected-height.md) | 31 | `result-track:b9c67f797bdb22d9c6ca280555c4ff51c180e3abd76f0a561e4c5297577c490a` |
-| 5 | `theorem` | [zero_constant_keeps_shift_cost](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/declarations/zero-constant-keeps-shift-cost.md) | 35 | `result-track:446e8599a92961c8a82cc272475dadc9e64286c51342201a2a8693f314e25d46` |
-| 6 | `theorem` | [shift_cost_is_positive](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/declarations/shift-cost-is-positive.md) | 38 | `result-track:830e83bdc98efb8bbf59788efaca2b807616fbab1bf27c66bea236a9c43c62b9` |
-| 7 | `theorem` | [quadratic_strip_bound_has_nonzero_ratio](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/declarations/quadratic-strip-bound-has-nonzero-ratio.md) | 42 | `result-track:cf2f775e5692fb9cbd97c602961137f4fd2205e5caf8340c06e2aa51310ea609` |
-| 8 | `theorem` | [moving_parameter_diagonal](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/declarations/moving-parameter-diagonal.md) | 46 | `result-track:09cd2bd87b8cd6d7035ce60c3f03e1b2d5db1a7bee1f9920558fcffab8a7f123` |
+| 1 | `theorem` | [fractional_anchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/declarations/fractional-anchor.md) | 19 | `result-track:ec546714662729053100e59b4c9f6644aa869acced28a7d7916c0c17eb6aff8d` |
+| 2 | `theorem` | [anchor_at_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/declarations/anchor-at-boundary.md) | 23 | `result-track:3e7943c513e1a8b38c7c27f541f0ec575934d2c17e7331e5c7ba08b0218a7446` |
+| 3 | `theorem` | [zero_height_contains_actual_trivial_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/declarations/zero-height-contains-actual-trivial-zero.md) | 27 | `result-track:106b3e9b7903861f0a8d1270062b6eb48a2d25ccfc2bbdc947c675b8438d985a` |
+| 4 | `theorem` | [shifted_and_reflected_height](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/declarations/shifted-and-reflected-height.md) | 31 | `result-track:b9c67f797bdb22d9c6ca280555c4ff51c180e3abd76f0a561e4c5297577c490a` |
+| 5 | `theorem` | [zero_constant_keeps_shift_cost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/declarations/zero-constant-keeps-shift-cost.md) | 35 | `result-track:446e8599a92961c8a82cc272475dadc9e64286c51342201a2a8693f314e25d46` |
+| 6 | `theorem` | [shift_cost_is_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/declarations/shift-cost-is-positive.md) | 38 | `result-track:830e83bdc98efb8bbf59788efaca2b807616fbab1bf27c66bea236a9c43c62b9` |
+| 7 | `theorem` | [quadratic_strip_bound_has_nonzero_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/declarations/quadratic-strip-bound-has-nonzero-ratio.md) | 42 | `result-track:cf2f775e5692fb9cbd97c602961137f4fd2205e5caf8340c06e2aa51310ea609` |
+| 8 | `theorem` | [moving_parameter_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalRayControls.lean/declarations/moving-parameter-diagonal.md) | 46 | `result-track:09cd2bd87b8cd6d7035ce60c3f03e1b2d5db1a7bee1f9920558fcffab8a7f123` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

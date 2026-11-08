@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ComplexDeterminant.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ComplexDeterminant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexDeterminant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexDeterminant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [det_conjAe](../../../../FunctionsOfAComplexVariable/ComplexDeterminant.lean/declarations/det-conjae.md) | 22 | `result-track:5e9c36b7479cc16fccfb603b0d23db14fe5a5a33f967d49368eafdc513729166` |
-| 2 | `theorem` | [linearEquiv_det_conjAe](../../../../FunctionsOfAComplexVariable/ComplexDeterminant.lean/declarations/linearequiv-det-conjae.md) | 28 | `result-track:a944001c6e7d26fab4461c87386c1b2a3d5e20ccf2d55d6088e1505f3519ce0b` |
+| 1 | `theorem` | [det_conjAe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexDeterminant.lean/declarations/det-conjae.md) | 22 | `result-track:5e9c36b7479cc16fccfb603b0d23db14fe5a5a33f967d49368eafdc513729166` |
+| 2 | `theorem` | [linearEquiv_det_conjAe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexDeterminant.lean/declarations/linearequiv-det-conjae.md) | 28 | `result-track:a944001c6e7d26fab4461c87386c1b2a3d5e20ccf2d55d6088e1505f3519ce0b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

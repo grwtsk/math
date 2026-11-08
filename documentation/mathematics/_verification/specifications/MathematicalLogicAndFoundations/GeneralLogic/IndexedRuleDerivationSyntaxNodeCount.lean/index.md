@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexedRuleDerivationSyntaxNodeCount.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexedRuleDerivationSyntaxNodeCount.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexedRuleDerivationSyntaxNodeCount.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexedRuleDerivationSyntaxNodeCount.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Complete Family And Root](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteFamilyAndRoot.lean/index.md) — import line 17; pinned internal source present.
+- [Complete Family And Root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteFamilyAndRoot.lean/index.md) — import line 17; pinned internal source present.
 - `Atomize.Formal.IndexedAll` — import line 19; external provider; requires a separately pinned dependency.
 - `Atomize.Formal.KernelPresentation` — import line 20; external provider; requires a separately pinned dependency.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [size](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexedRuleDerivationSyntaxNodeCount.lean/declarations/size.md) | 86 | `declaration-track:ec6e1a4ed47e23c4e7ae4dc5240db77e03d51dca3431101c33cfcc231051637d` |
-| 2 | `def` | [sizeAll](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexedRuleDerivationSyntaxNodeCount.lean/declarations/sizeall.md) | 102 | `declaration-track:c87af4511446e5d55812685d892d4fcce517be6182f85517581a45409dad0a19` |
+| 1 | `def` | [size](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexedRuleDerivationSyntaxNodeCount.lean/declarations/size.md) | 86 | `declaration-track:ec6e1a4ed47e23c4e7ae4dc5240db77e03d51dca3431101c33cfcc231051637d` |
+| 2 | `def` | [sizeAll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexedRuleDerivationSyntaxNodeCount.lean/declarations/sizeall.md) | 102 | `declaration-track:c87af4511446e5d55812685d892d4fcce517be6182f85517581a45409dad0a19` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/UpperBoundaryHyperbolaGain.lean/index.md) · [Full source](../../../../MeasureAndIntegration/UpperBoundaryHyperbolaGain.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperBoundaryHyperbolaGain.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperBoundaryHyperbolaGain.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [upperSmallIndices_empty_below_quarter](../../../../MeasureAndIntegration/UpperBoundaryHyperbolaGain.lean/declarations/uppersmallindices-empty-below-quarter.md) | 14 | `result-track:2de4d958a694bcb2171e175f7560cafd2bbe8784a551785db61315d800dfa30b` |
-| 2 | `theorem` | [upperSmallSum_zero_below_quarter](../../../../MeasureAndIntegration/UpperBoundaryHyperbolaGain.lean/declarations/uppersmallsum-zero-below-quarter.md) | 24 | `result-track:fa1351a7229b9ad52cd986887bcaacea06b5fdf379d1b3379160e4bef86496e5` |
-| 3 | `theorem` | [source_square_derivative_nonpos](../../../../MeasureAndIntegration/UpperBoundaryHyperbolaGain.lean/declarations/source-square-derivative-nonpos.md) | 29 | `result-track:deb9a43c140476976bedd03f51555547248c65c3b45897c878e4b7209f168f0f` |
-| 4 | `theorem` | [source_square_derivative_integral_nonpos](../../../../MeasureAndIntegration/UpperBoundaryHyperbolaGain.lean/declarations/source-square-derivative-integral-nonpos.md) | 38 | `result-track:87b67003a3c6ea79deffbee70d2a7e1076b2c65681149e05b05c7fe9612786ee` |
-| 5 | `theorem` | [sourceQuadraticValue_ge_core_hyperbola](../../../../MeasureAndIntegration/UpperBoundaryHyperbolaGain.lean/declarations/sourcequadraticvalue-ge-core-hyperbola.md) | 47 | `result-track:7472916f951ce49eff8cc53ca847e9e3a3d6dbbb8286040a7027c35d4cc5a740` |
-| 6 | `theorem` | [sourceQuadraticValue_negativePart_le](../../../../MeasureAndIntegration/UpperBoundaryHyperbolaGain.lean/declarations/sourcequadraticvalue-negativepart-le.md) | 57 | `result-track:63e2ccb40cdbb4cc8e35ff0ade16ca74fedd26e7d23c48438e701aea7ee04dfc` |
+| 1 | `theorem` | [upperSmallIndices_empty_below_quarter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperBoundaryHyperbolaGain.lean/declarations/uppersmallindices-empty-below-quarter.md) | 14 | `result-track:2de4d958a694bcb2171e175f7560cafd2bbe8784a551785db61315d800dfa30b` |
+| 2 | `theorem` | [upperSmallSum_zero_below_quarter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperBoundaryHyperbolaGain.lean/declarations/uppersmallsum-zero-below-quarter.md) | 24 | `result-track:fa1351a7229b9ad52cd986887bcaacea06b5fdf379d1b3379160e4bef86496e5` |
+| 3 | `theorem` | [source_square_derivative_nonpos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperBoundaryHyperbolaGain.lean/declarations/source-square-derivative-nonpos.md) | 29 | `result-track:deb9a43c140476976bedd03f51555547248c65c3b45897c878e4b7209f168f0f` |
+| 4 | `theorem` | [source_square_derivative_integral_nonpos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperBoundaryHyperbolaGain.lean/declarations/source-square-derivative-integral-nonpos.md) | 38 | `result-track:87b67003a3c6ea79deffbee70d2a7e1076b2c65681149e05b05c7fe9612786ee` |
+| 5 | `theorem` | [sourceQuadraticValue_ge_core_hyperbola](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperBoundaryHyperbolaGain.lean/declarations/sourcequadraticvalue-ge-core-hyperbola.md) | 47 | `result-track:7472916f951ce49eff8cc53ca847e9e3a3d6dbbb8286040a7027c35d4cc5a740` |
+| 6 | `theorem` | [sourceQuadraticValue_negativePart_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperBoundaryHyperbolaGain.lean/declarations/sourcequadraticvalue-negativepart-le.md) | 57 | `result-track:63e2ccb40cdbb4cc8e35ff0ade16ca74fedd26e7d23c48438e701aea7ee04dfc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

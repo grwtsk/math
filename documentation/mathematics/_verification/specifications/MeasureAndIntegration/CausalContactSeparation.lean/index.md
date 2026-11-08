@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CausalContactSeparation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CausalContactSeparation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalContactSeparation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalContactSeparation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.LinearAlgebra.BilinearAndQuadraticForms.ZeroCoordinateObstruction`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BilinearAndQuadraticFormsZeroCoordinateObstruction.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.InnerProductSpace.CausalResponseGram`](../../../../MeasureAndIntegration/CausalResponseGram.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.InnerProductSpace.DilationResponseSeparation`](../../../../MeasureAndIntegration/DilationResponseSeparation.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Algebra.LinearAlgebra.BilinearAndQuadraticForms.ZeroCoordinateObstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BilinearAndQuadraticFormsZeroCoordinateObstruction.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.CausalResponseGram`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalResponseGram.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.DilationResponseSeparation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DilationResponseSeparation.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.LinearAlgebra.Pi` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -60,17 +60,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [windowResponse](../../../../MeasureAndIntegration/CausalContactSeparation.lean/declarations/windowresponse.md) | 44 | `declaration-track:54735fa6082b146dd3303086f35a8a91fc631d6fd2b4f802fcf1fe4db9d2e4fd` |
-| 2 | `theorem` | [response_zero_before_or_at_contact](../../../../MeasureAndIntegration/CausalContactSeparation.lean/declarations/response-zero-before-or-at-contact.md) | 47 | `result-track:d892ab2fe68511aa5d1731e0a50b8b8a47ffa9afb4dd6520879b8bc21cde8fdd` |
-| 3 | `theorem` | [window_response_eq_zero_of_before_contact](../../../../MeasureAndIntegration/CausalContactSeparation.lean/declarations/window-response-eq-zero-of-before-contact.md) | 57 | `result-track:2e1dffad40fd064aef45a31ff5786def7d4de5905aa0fdc74e06ad06cd8d7e94` |
-| 4 | `theorem` | [touching_window_response_eq_zero](../../../../MeasureAndIntegration/CausalContactSeparation.lean/declarations/touching-window-response-eq-zero.md) | 66 | `result-track:3c3e14db81476a2504d63faf1107ffe8566ce925fd36c79edd1768de5522c2bc` |
-| 5 | `theorem` | [native_before_contact_row_zero](../../../../MeasureAndIntegration/CausalContactSeparation.lean/declarations/native-before-contact-row-zero.md) | 71 | `result-track:225438acdcf35d9c6d922b0256e5ed11adab41f511e4845006adc98bd0e50bf7` |
-| 6 | `theorem` | [prescribed_source_vector_ne_zero](../../../../MeasureAndIntegration/CausalContactSeparation.lean/declarations/prescribed-source-vector-ne-zero.md) | 84 | `result-track:70ea75205c2f0de0148121c1eee6587ed000e564e632fb82b937c0b6f8951804` |
-| 7 | `theorem` | [zero_preserving_contact_map_ne_source](../../../../MeasureAndIntegration/CausalContactSeparation.lean/declarations/zero-preserving-contact-map-ne-source.md) | 93 | `result-track:bcc9c1625f5b5608b5e73bc60bf6962c737cde96df70a5a36371643ce1d286d6` |
-| 8 | `theorem` | [linear_contact_map_ne_source](../../../../MeasureAndIntegration/CausalContactSeparation.lean/declarations/linear-contact-map-ne-source.md) | 99 | `result-track:e8b780360d96b94034f6e8beeffafa21939ec61834f7441f590774c05926dd27` |
-| 9 | `theorem` | [diagonal_scaled_native_ne_source](../../../../MeasureAndIntegration/CausalContactSeparation.lean/declarations/diagonal-scaled-native-ne-source.md) | 104 | `result-track:d8a61c6f7da04f7007133039b8d273161c3a948d15bc322cdd19475efb1f6a88` |
-| 10 | `theorem` | [native_contact_no_source_quadratic_domination](../../../../MeasureAndIntegration/CausalContactSeparation.lean/declarations/native-contact-no-source-quadratic-domination.md) | 114 | `result-track:3e404513eca21193a795744aaf5833b5f811200baa9f6b41e065af05e6fc9687` |
-| 11 | `theorem` | [prescribed_horizon_restricted_obstructions](../../../../MeasureAndIntegration/CausalContactSeparation.lean/declarations/prescribed-horizon-restricted-obstructions.md) | 133 | `result-track:3b993f2b9d2a6bb6ba629bdeeeac00a7cf1f72a85cf05a19838858edb0e78662` |
+| 1 | `def` | [windowResponse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalContactSeparation.lean/declarations/windowresponse.md) | 44 | `declaration-track:54735fa6082b146dd3303086f35a8a91fc631d6fd2b4f802fcf1fe4db9d2e4fd` |
+| 2 | `theorem` | [response_zero_before_or_at_contact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalContactSeparation.lean/declarations/response-zero-before-or-at-contact.md) | 47 | `result-track:d892ab2fe68511aa5d1731e0a50b8b8a47ffa9afb4dd6520879b8bc21cde8fdd` |
+| 3 | `theorem` | [window_response_eq_zero_of_before_contact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalContactSeparation.lean/declarations/window-response-eq-zero-of-before-contact.md) | 57 | `result-track:2e1dffad40fd064aef45a31ff5786def7d4de5905aa0fdc74e06ad06cd8d7e94` |
+| 4 | `theorem` | [touching_window_response_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalContactSeparation.lean/declarations/touching-window-response-eq-zero.md) | 66 | `result-track:3c3e14db81476a2504d63faf1107ffe8566ce925fd36c79edd1768de5522c2bc` |
+| 5 | `theorem` | [native_before_contact_row_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalContactSeparation.lean/declarations/native-before-contact-row-zero.md) | 71 | `result-track:225438acdcf35d9c6d922b0256e5ed11adab41f511e4845006adc98bd0e50bf7` |
+| 6 | `theorem` | [prescribed_source_vector_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalContactSeparation.lean/declarations/prescribed-source-vector-ne-zero.md) | 84 | `result-track:70ea75205c2f0de0148121c1eee6587ed000e564e632fb82b937c0b6f8951804` |
+| 7 | `theorem` | [zero_preserving_contact_map_ne_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalContactSeparation.lean/declarations/zero-preserving-contact-map-ne-source.md) | 93 | `result-track:bcc9c1625f5b5608b5e73bc60bf6962c737cde96df70a5a36371643ce1d286d6` |
+| 8 | `theorem` | [linear_contact_map_ne_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalContactSeparation.lean/declarations/linear-contact-map-ne-source.md) | 99 | `result-track:e8b780360d96b94034f6e8beeffafa21939ec61834f7441f590774c05926dd27` |
+| 9 | `theorem` | [diagonal_scaled_native_ne_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalContactSeparation.lean/declarations/diagonal-scaled-native-ne-source.md) | 104 | `result-track:d8a61c6f7da04f7007133039b8d273161c3a948d15bc322cdd19475efb1f6a88` |
+| 10 | `theorem` | [native_contact_no_source_quadratic_domination](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalContactSeparation.lean/declarations/native-contact-no-source-quadratic-domination.md) | 114 | `result-track:3e404513eca21193a795744aaf5833b5f811200baa9f6b41e065af05e6fc9687` |
+| 11 | `theorem` | [prescribed_horizon_restricted_obstructions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalContactSeparation.lean/declarations/prescribed-horizon-restricted-obstructions.md) | 133 | `result-track:3b993f2b9d2a6bb6ba629bdeeeac00a7cf1f72a85cf05a19838858edb0e78662` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

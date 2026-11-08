@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MobiusInteraction.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MobiusInteraction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MobiusInteraction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MobiusInteraction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MobiusInteractionDescriptor](../../../../../ComputerScience/AlgorithmsInComputerScience/MobiusInteraction.lean/declarations/mobiusinteractiondescriptor.md) | 5 | `declaration-track:7f66a9f0eb3e16cfdaf7c37839c470377d9c7ffdd016b5762ee1dc0afe50bdcd` |
+| 1 | `structure` | [MobiusInteractionDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MobiusInteraction.lean/declarations/mobiusinteractiondescriptor.md) | 5 | `declaration-track:7f66a9f0eb3e16cfdaf7c37839c470377d9c7ffdd016b5762ee1dc0afe50bdcd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

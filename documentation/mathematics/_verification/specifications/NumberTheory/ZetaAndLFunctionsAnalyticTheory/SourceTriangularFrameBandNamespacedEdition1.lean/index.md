@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularFrameBandNamespacedEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularFrameBandNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularFrameBandNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularFrameBandNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [attenuated_near_diagonal_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularFrameBandNamespacedEdition1.lean/declarations/attenuated-near-diagonal-lower.md) | 27 | `result-track:0d1fa9d0c0b614dd11d680ea14de34b6539beed120eebcd87be97b4b8392e557` |
+| 1 | `theorem` | [attenuated_near_diagonal_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularFrameBandNamespacedEdition1.lean/declarations/attenuated-near-diagonal-lower.md) | 27 | `result-track:0d1fa9d0c0b614dd11d680ea14de34b6539beed120eebcd87be97b4b8392e557` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

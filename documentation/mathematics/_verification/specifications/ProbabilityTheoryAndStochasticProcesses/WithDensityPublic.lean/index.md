@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [withDensity_comp](../../../../ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/declarations/withdensity-comp.md) | 32 | `result-track:7d71c883b23b29b92bf0f43316771641f3d872e88e222d50d03eefce4f57dccd` |
-| 2 | `lemma` | [compProd_withDensity](../../../../ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/declarations/compprod-withdensity-source-edition-2.md) | 48 | `result-track:8e7e837a544829b81538e40b2170a61ee3f6f3632edfcda72d4c543a39ffe5e4` |
-| 3 | `lemma` | [withDensity_compProd](../../../../ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/declarations/withdensity-compprod-source-edition-2.md) | 58 | `result-track:a90a3725da829e677594fb4ff6100dacbb8580e8febaf3055d5a4795c7aa8ca9` |
-| 4 | `lemma` | [withDensity_compProd_withDensity](../../../../ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/declarations/withdensity-compprod-withdensity.md) | 72 | `result-track:520a0bd522fdad4b6e578e6118875059f67d8a746781612b7a439665cef91864` |
-| 5 | `lemma` | [withDensity_comp_left](../../../../ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/declarations/withdensity-comp-left.md) | 83 | `result-track:5965f8dfedb278076dc0e9f78ecdfb48fc7b22ab73d2ec6b8844ff2065ea3f9b` |
-| 6 | `lemma` | [withDensity_comp_right](../../../../ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/declarations/withdensity-comp-right.md) | 93 | `result-track:eedccc8b9c505dd1bdab7f1ba1d484fd5f05081daf59fd289993f949dda94ae8` |
-| 7 | `lemma` | [sectR_withDensity](../../../../ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/declarations/sectr-withdensity.md) | 100 | `result-track:f377c29c783098030614b52a39c86b2caf31b24c611a50141c6e526f313be097` |
-| 8 | `lemma` | [compProd_withDensity](../../../../ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/declarations/compprod-withdensity.md) | 108 | `result-track:1864b9f11a5a3ecf7e5afd93aa19e51deeb617ee16e6dd19b0b4f29014a228f2` |
-| 9 | `lemma` | [withDensity_compProd](../../../../ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/declarations/withdensity-compprod.md) | 119 | `result-track:78c228664fdd7e891dcd52b186dba91269b578b8498bf7cda5612f4d0bb02ecb` |
+| 1 | `lemma` | [withDensity_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/declarations/withdensity-comp.md) | 32 | `result-track:7d71c883b23b29b92bf0f43316771641f3d872e88e222d50d03eefce4f57dccd` |
+| 2 | `lemma` | [compProd_withDensity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/declarations/compprod-withdensity-source-edition-2.md) | 48 | `result-track:8e7e837a544829b81538e40b2170a61ee3f6f3632edfcda72d4c543a39ffe5e4` |
+| 3 | `lemma` | [withDensity_compProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/declarations/withdensity-compprod-source-edition-2.md) | 58 | `result-track:a90a3725da829e677594fb4ff6100dacbb8580e8febaf3055d5a4795c7aa8ca9` |
+| 4 | `lemma` | [withDensity_compProd_withDensity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/declarations/withdensity-compprod-withdensity.md) | 72 | `result-track:520a0bd522fdad4b6e578e6118875059f67d8a746781612b7a439665cef91864` |
+| 5 | `lemma` | [withDensity_comp_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/declarations/withdensity-comp-left.md) | 83 | `result-track:5965f8dfedb278076dc0e9f78ecdfb48fc7b22ab73d2ec6b8844ff2065ea3f9b` |
+| 6 | `lemma` | [withDensity_comp_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/declarations/withdensity-comp-right.md) | 93 | `result-track:eedccc8b9c505dd1bdab7f1ba1d484fd5f05081daf59fd289993f949dda94ae8` |
+| 7 | `lemma` | [sectR_withDensity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/declarations/sectr-withdensity.md) | 100 | `result-track:f377c29c783098030614b52a39c86b2caf31b24c611a50141c6e526f313be097` |
+| 8 | `lemma` | [compProd_withDensity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/declarations/compprod-withdensity.md) | 108 | `result-track:1864b9f11a5a3ecf7e5afd93aa19e51deeb617ee16e6dd19b0b4f29014a228f2` |
+| 9 | `lemma` | [withDensity_compProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WithDensityPublic.lean/declarations/withdensity-compprod.md) | 119 | `result-track:78c228664fdd7e891dcd52b186dba91269b578b8498bf7cda5612f4d0bb02ecb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

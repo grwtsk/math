@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RegularLocalRingPolynomialNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RegularLocalRingPolynomialNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RegularLocalRingPolynomialNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RegularLocalRingPolynomialNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Polynomial.isRegularLocalRing_localization_atPrime_of_comap_eq_maximalIdeal](../../../../CommutativeAlgebra/RegularLocalRingPolynomialNamespacedPublic.lean/declarations/polynomial-isregularlocalring-localization-atprime-of-comap-eq-maximalid.md) | 43 | `result-track:a2d123422f34520c259629e273b9bc26a56a17e4e9b1cc2e306d1345de06e316` |
-| 2 | `instance` | [Polynomial.isRegularRing_of_isRegularRing](../../../../CommutativeAlgebra/RegularLocalRingPolynomialNamespacedPublic.lean/declarations/polynomial-isregularring-of-isregularring.md) | 86 | `declaration-track:f68260794c8f15ea8f0480d90ad01b3d56c528086790d585c2b995cc239b4267` |
-| 3 | `instance` | [MvPolynomial.isRegularRing_of_isRegularRing](../../../../CommutativeAlgebra/RegularLocalRingPolynomialNamespacedPublic.lean/declarations/mvpolynomial-isregularring-of-isregularring.md) | 116 | `declaration-track:21a8071f8a77cbc9f9ad7a3e928ef014e55dc134f194b5c97f9391ddbeec622b` |
+| 1 | `lemma` | [Polynomial.isRegularLocalRing_localization_atPrime_of_comap_eq_maximalIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RegularLocalRingPolynomialNamespacedPublic.lean/declarations/polynomial-isregularlocalring-localization-atprime-of-comap-eq-maximalid.md) | 43 | `result-track:a2d123422f34520c259629e273b9bc26a56a17e4e9b1cc2e306d1345de06e316` |
+| 2 | `instance` | [Polynomial.isRegularRing_of_isRegularRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RegularLocalRingPolynomialNamespacedPublic.lean/declarations/polynomial-isregularring-of-isregularring.md) | 86 | `declaration-track:f68260794c8f15ea8f0480d90ad01b3d56c528086790d585c2b995cc239b4267` |
+| 3 | `instance` | [MvPolynomial.isRegularRing_of_isRegularRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RegularLocalRingPolynomialNamespacedPublic.lean/declarations/mvpolynomial-isregularring-of-isregularring.md) | 116 | `declaration-track:21a8071f8a77cbc9f9ad7a3e928ef014e55dc134f194b5c97f9391ddbeec622b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

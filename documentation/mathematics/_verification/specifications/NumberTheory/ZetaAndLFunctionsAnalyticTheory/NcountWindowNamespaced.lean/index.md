@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NcountWindowNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NcountWindowNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NcountWindowNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NcountWindowNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [zerosIn_union](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NcountWindowNamespaced.lean/declarations/zerosin-union.md) | 28 | `result-track:5aaea06143c30790b53b6cabea1a6c97d9e68a4145b59c4b8b756a2c00fb5c5b` |
-| 2 | `theorem` | [Ncount_add](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NcountWindowNamespaced.lean/declarations/ncount-add.md) | 42 | `result-track:da8c11a9dabead5b088b6d3a999a5a16e8fd4788a231c53859add85d92c97ff3` |
-| 3 | `theorem` | [Ncount_mono](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NcountWindowNamespaced.lean/declarations/ncount-mono.md) | 52 | `result-track:93fa86e1303e7cef0b76ef39287b7c8f24020ac21d2ebc046a582c4a9903542c` |
+| 1 | `theorem` | [zerosIn_union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NcountWindowNamespaced.lean/declarations/zerosin-union.md) | 28 | `result-track:5aaea06143c30790b53b6cabea1a6c97d9e68a4145b59c4b8b756a2c00fb5c5b` |
+| 2 | `theorem` | [Ncount_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NcountWindowNamespaced.lean/declarations/ncount-add.md) | 42 | `result-track:da8c11a9dabead5b088b6d3a999a5a16e8fd4788a231c53859add85d92c97ff3` |
+| 3 | `theorem` | [Ncount_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NcountWindowNamespaced.lean/declarations/ncount-mono.md) | 52 | `result-track:93fa86e1303e7cef0b76ef39287b7c8f24020ac21d2ebc046a582c4a9903542c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

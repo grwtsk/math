@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingInvo.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingInvo.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingInvo.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingInvo.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RingInvo](../../../../CommutativeAlgebra/RingInvo.lean/declarations/ringinvo.md) | 31 | `declaration-track:b64293ded37b01b397e4a245ed127e7052f9029f079e85667ac199f6bbb60792` |
-| 2 | `class` | [RingInvoClass](../../../../CommutativeAlgebra/RingInvo.lean/declarations/ringinvoclass.md) | 40 | `declaration-track:324828536913ed4c6265671e268bebebaf2746d8fdca6289e85cf0c333d2e8b2` |
-| 3 | `def` | [RingInvoClass.toRingInvo](../../../../CommutativeAlgebra/RingInvo.lean/declarations/ringinvoclass-toringinvo.md) | 49 | `declaration-track:7622c6679888f5c56ae4a14e75a3763bec6be63db104a1acd99f57c2091f13ca` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/RingInvo.lean/declarations/instance-source-edition-4.md) | 59 | `declaration-track:d458b6ec592352eeb95828de7d1421d78b21c6b28adf3579cdbf27a53c4d61b8` |
-| 5 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/RingInvo.lean/declarations/instance.md) | 62 | `declaration-track:146b284ea042a5a2d468f021dd9e8fcdd074aa2ff152b6752a61ff28e507073e` |
-| 6 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/RingInvo.lean/declarations/instance-source-edition-2.md) | 73 | `declaration-track:3369045c5ebd8dcc3af531e4a5dfbfda7a2347d9b98cd6bf4f55280515dd596a` |
-| 7 | `def` | [mk'](../../../../CommutativeAlgebra/RingInvo.lean/declarations/mk.md) | 79 | `declaration-track:0f671422abfae14c45cd91b500e7833e75704a0db863f5e95efe79f8506b9746` |
-| 8 | `theorem` | [involution](../../../../CommutativeAlgebra/RingInvo.lean/declarations/involution.md) | 87 | `result-track:c40d84fb60b9f87e227275fc5767e4b7b4c676f8b49ceded006ce7551e675d7d` |
-| 9 | `theorem` | [coe_ringEquiv](../../../../CommutativeAlgebra/RingInvo.lean/declarations/coe-ringequiv.md) | 95 | `result-track:55e0ed0201f99024952b5b6db0d14c9a55035c0f7a639be130f9ca0da9da93c6` |
-| 10 | `theorem` | [map_eq_zero_iff](../../../../CommutativeAlgebra/RingInvo.lean/declarations/map-eq-zero-iff.md) | 98 | `result-track:0e6bfcec53dabe9aefd2724da4060cbdc1304093ec3059e54dd5af0b3c3f6308` |
-| 11 | `def` | [RingInvo.id](../../../../CommutativeAlgebra/RingInvo.lean/declarations/ringinvo-id.md) | 110 | `declaration-track:c593cbf11a76791b9929e2321c5d623b827d7d85c6732c78358cb6a99b8af3a7` |
-| 12 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/RingInvo.lean/declarations/instance-source-edition-3.md) | 113 | `declaration-track:9a69ef713c99a74e9966f91be010d6794262f278802c919fba4ec856d989ee2e` |
+| 1 | `structure` | [RingInvo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingInvo.lean/declarations/ringinvo.md) | 31 | `declaration-track:b64293ded37b01b397e4a245ed127e7052f9029f079e85667ac199f6bbb60792` |
+| 2 | `class` | [RingInvoClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingInvo.lean/declarations/ringinvoclass.md) | 40 | `declaration-track:324828536913ed4c6265671e268bebebaf2746d8fdca6289e85cf0c333d2e8b2` |
+| 3 | `def` | [RingInvoClass.toRingInvo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingInvo.lean/declarations/ringinvoclass-toringinvo.md) | 49 | `declaration-track:7622c6679888f5c56ae4a14e75a3763bec6be63db104a1acd99f57c2091f13ca` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingInvo.lean/declarations/instance-source-edition-4.md) | 59 | `declaration-track:d458b6ec592352eeb95828de7d1421d78b21c6b28adf3579cdbf27a53c4d61b8` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingInvo.lean/declarations/instance.md) | 62 | `declaration-track:146b284ea042a5a2d468f021dd9e8fcdd074aa2ff152b6752a61ff28e507073e` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingInvo.lean/declarations/instance-source-edition-2.md) | 73 | `declaration-track:3369045c5ebd8dcc3af531e4a5dfbfda7a2347d9b98cd6bf4f55280515dd596a` |
+| 7 | `def` | [mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingInvo.lean/declarations/mk.md) | 79 | `declaration-track:0f671422abfae14c45cd91b500e7833e75704a0db863f5e95efe79f8506b9746` |
+| 8 | `theorem` | [involution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingInvo.lean/declarations/involution.md) | 87 | `result-track:c40d84fb60b9f87e227275fc5767e4b7b4c676f8b49ceded006ce7551e675d7d` |
+| 9 | `theorem` | [coe_ringEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingInvo.lean/declarations/coe-ringequiv.md) | 95 | `result-track:55e0ed0201f99024952b5b6db0d14c9a55035c0f7a639be130f9ca0da9da93c6` |
+| 10 | `theorem` | [map_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingInvo.lean/declarations/map-eq-zero-iff.md) | 98 | `result-track:0e6bfcec53dabe9aefd2724da4060cbdc1304093ec3059e54dd5af0b3c3f6308` |
+| 11 | `def` | [RingInvo.id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingInvo.lean/declarations/ringinvo-id.md) | 110 | `declaration-track:c593cbf11a76791b9929e2321c5d623b827d7d85c6732c78358cb6a99b8af3a7` |
+| 12 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingInvo.lean/declarations/instance-source-edition-3.md) | 113 | `declaration-track:9a69ef713c99a74e9966f91be010d6794262f278802c919fba4ec856d989ee2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

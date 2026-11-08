@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BetaNormalizer.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BetaNormalizer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BetaNormalizer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BetaNormalizer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [normalizeFuel](../../../../../ComputerScience/AlgorithmsInComputerScience/BetaNormalizer.lean/declarations/normalizefuel.md) | 22 | `declaration-track:56312043e60abbda6415f205b798c4a062c84046d59bc3e8206531df2ed459b4` |
-| 2 | `theorem` | [normalizeFuel_sound](../../../../../ComputerScience/AlgorithmsInComputerScience/BetaNormalizer.lean/declarations/normalizefuel-sound.md) | 33 | `result-track:e279493d13989bfd2cd096e070a1b583c3c94ddbee50dc04c23557cd09c837c8` |
-| 3 | `theorem` | [normalizeFuel_complete](../../../../../ComputerScience/AlgorithmsInComputerScience/BetaNormalizer.lean/declarations/normalizefuel-complete.md) | 61 | `result-track:19253b99aebd6295a2fff584bc451db89b477f3696a4f19fa78f20872280f5d3` |
-| 4 | `theorem` | [normalizeFuel_certified](../../../../../ComputerScience/AlgorithmsInComputerScience/BetaNormalizer.lean/declarations/normalizefuel-certified.md) | 86 | `result-track:1ab2418f655a410e8019c12334755669b97f6f35a0da1929ca259a1ae2be80e9` |
-| 5 | `theorem` | [normalizeFuel_preserves_typing](../../../../../ComputerScience/AlgorithmsInComputerScience/BetaNormalizer.lean/declarations/normalizefuel-preserves-typing.md) | 93 | `result-track:583b654c2df24fe77562f99686b1a1774cc2967f8f6462966c5ebfb0fd9e6429` |
-| 6 | `theorem` | [normal_forms_unique](../../../../../ComputerScience/AlgorithmsInComputerScience/BetaNormalizer.lean/declarations/normal-forms-unique.md) | 99 | `result-track:296a9768f72b6404a21139c46c25323801f783d599a00235ed39d898889a092f` |
-| 7 | `theorem` | [normalizeFuel_unique](../../../../../ComputerScience/AlgorithmsInComputerScience/BetaNormalizer.lean/declarations/normalizefuel-unique.md) | 108 | `result-track:fc7a930606d4aa5759a35e0375415d71e7aeac0966b706dcf3cce982d7d53c99` |
+| 1 | `def` | [normalizeFuel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BetaNormalizer.lean/declarations/normalizefuel.md) | 22 | `declaration-track:56312043e60abbda6415f205b798c4a062c84046d59bc3e8206531df2ed459b4` |
+| 2 | `theorem` | [normalizeFuel_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BetaNormalizer.lean/declarations/normalizefuel-sound.md) | 33 | `result-track:e279493d13989bfd2cd096e070a1b583c3c94ddbee50dc04c23557cd09c837c8` |
+| 3 | `theorem` | [normalizeFuel_complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BetaNormalizer.lean/declarations/normalizefuel-complete.md) | 61 | `result-track:19253b99aebd6295a2fff584bc451db89b477f3696a4f19fa78f20872280f5d3` |
+| 4 | `theorem` | [normalizeFuel_certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BetaNormalizer.lean/declarations/normalizefuel-certified.md) | 86 | `result-track:1ab2418f655a410e8019c12334755669b97f6f35a0da1929ca259a1ae2be80e9` |
+| 5 | `theorem` | [normalizeFuel_preserves_typing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BetaNormalizer.lean/declarations/normalizefuel-preserves-typing.md) | 93 | `result-track:583b654c2df24fe77562f99686b1a1774cc2967f8f6462966c5ebfb0fd9e6429` |
+| 6 | `theorem` | [normal_forms_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BetaNormalizer.lean/declarations/normal-forms-unique.md) | 99 | `result-track:296a9768f72b6404a21139c46c25323801f783d599a00235ed39d898889a092f` |
+| 7 | `theorem` | [normalizeFuel_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BetaNormalizer.lean/declarations/normalizefuel-unique.md) | 108 | `result-track:fc7a930606d4aa5759a35e0375415d71e7aeac0966b706dcf3cce982d7d53c99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

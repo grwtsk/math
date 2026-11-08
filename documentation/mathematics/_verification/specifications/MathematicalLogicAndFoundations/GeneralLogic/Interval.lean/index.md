@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedInterval](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/declarations/certifiedinterval.md) | 13 | `declaration-track:dd16a4b2f5ad7477131e6a49aee4d0898771018578b08260c4b177a3b21be9d4` |
-| 2 | `def` | [CertifiedInterval.absmin](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/declarations/certifiedinterval-absmin.md) | 19 | `declaration-track:b10f13598387f61dfae975d91d4877e3202bf0bc03d8be635c7c1a6a1eeeebaf` |
-| 3 | `theorem` | [CertifiedInterval.absmin_nonnegative](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/declarations/certifiedinterval-absmin-nonnegative.md) | 26 | `result-track:044f08fc3ba71cf62a7b0b67fb67eec3e069269762f3c1582f9543c05cad1fb5` |
-| 4 | `inductive` | [QuantizedCoordinateState](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/declarations/quantizedcoordinatestate.md) | 36 | `declaration-track:9e6696ed35d0f880f373b77453fa40945e52f56808d4050830dd27a9104aa53c` |
-| 5 | `def` | [quantizeInterval](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/declarations/quantizeinterval.md) | 42 | `declaration-track:171c5e7a2ef4afce50f777dfb52de6c6b2b91a39e1f6c56b83f5d0d2a2863d80` |
-| 6 | `structure` | [ExpectationIntervalCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/declarations/expectationintervalcertificate.md) | 54 | `declaration-track:8a94ba2d469c3cd8aa124edb438ce1f9e70368950f46f47e9846a4852afd332e` |
-| 7 | `def` | [OutsideBand](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/declarations/outsideband.md) | 83 | `declaration-track:5e3019a03301e35819fdc8e344f87dd921d78a3e61fa408da41259b2e8d12a09` |
-| 8 | `def` | [StrictlyOutsideBand](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/declarations/strictlyoutsideband.md) | 89 | `declaration-track:abd6d755f6fa72ecb98f7def9d323cb83120b051a9bc537ab0158b797be2ed29` |
+| 1 | `structure` | [CertifiedInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/declarations/certifiedinterval.md) | 13 | `declaration-track:dd16a4b2f5ad7477131e6a49aee4d0898771018578b08260c4b177a3b21be9d4` |
+| 2 | `def` | [CertifiedInterval.absmin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/declarations/certifiedinterval-absmin.md) | 19 | `declaration-track:b10f13598387f61dfae975d91d4877e3202bf0bc03d8be635c7c1a6a1eeeebaf` |
+| 3 | `theorem` | [CertifiedInterval.absmin_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/declarations/certifiedinterval-absmin-nonnegative.md) | 26 | `result-track:044f08fc3ba71cf62a7b0b67fb67eec3e069269762f3c1582f9543c05cad1fb5` |
+| 4 | `inductive` | [QuantizedCoordinateState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/declarations/quantizedcoordinatestate.md) | 36 | `declaration-track:9e6696ed35d0f880f373b77453fa40945e52f56808d4050830dd27a9104aa53c` |
+| 5 | `def` | [quantizeInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/declarations/quantizeinterval.md) | 42 | `declaration-track:171c5e7a2ef4afce50f777dfb52de6c6b2b91a39e1f6c56b83f5d0d2a2863d80` |
+| 6 | `structure` | [ExpectationIntervalCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/declarations/expectationintervalcertificate.md) | 54 | `declaration-track:8a94ba2d469c3cd8aa124edb438ce1f9e70368950f46f47e9846a4852afd332e` |
+| 7 | `def` | [OutsideBand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/declarations/outsideband.md) | 83 | `declaration-track:5e3019a03301e35819fdc8e344f87dd921d78a3e61fa408da41259b2e8d12a09` |
+| 8 | `def` | [StrictlyOutsideBand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Interval.lean/declarations/strictlyoutsideband.md) | 89 | `declaration-track:abd6d755f6fa72ecb98f7def9d323cb83120b051a9bc537ab0158b797be2ed29` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

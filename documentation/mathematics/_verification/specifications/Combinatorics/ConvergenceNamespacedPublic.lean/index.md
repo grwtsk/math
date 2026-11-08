@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ConvergenceNamespacedPublic.lean/index.md) · [Full source](../../../../Combinatorics/ConvergenceNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConvergenceNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConvergenceNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eventual_convergence_to_latestAdmittedGameState](../../../../Combinatorics/ConvergenceNamespacedPublic.lean/declarations/eventual-convergence-to-latestadmittedgamestate.md) | 23 | `result-track:f4b0bd1f230d0513c98f8a5a1f2d7591d394b1bf66e03cb5a91b6289cbebd256` |
+| 1 | `theorem` | [eventual_convergence_to_latestAdmittedGameState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConvergenceNamespacedPublic.lean/declarations/eventual-convergence-to-latestadmittedgamestate.md) | 23 | `result-track:f4b0bd1f230d0513c98f8a5a1f2d7591d394b1bf66e03cb5a91b6289cbebd256` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

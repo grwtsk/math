@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SimpleRingFieldNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SimpleRingFieldNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingFieldNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingFieldNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isField_center](../../../../CommutativeAlgebra/SimpleRingFieldNamespaced.lean/declarations/isfield-center.md) | 31 | `result-track:e99efff99c3beddc2386d334726e347024d8c9131e1345feb2f24a5f333c3be8` |
-| 2 | `lemma` | [isSimpleRing_iff_isField](../../../../CommutativeAlgebra/SimpleRingFieldNamespaced.lean/declarations/issimplering-iff-isfield.md) | 59 | `result-track:0187ae761965d5dc0fa49e6a19f9598e2fb02fd7712cd29477873fd015f4ceed` |
+| 1 | `lemma` | [isField_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingFieldNamespaced.lean/declarations/isfield-center.md) | 31 | `result-track:e99efff99c3beddc2386d334726e347024d8c9131e1345feb2f24a5f333c3be8` |
+| 2 | `lemma` | [isSimpleRing_iff_isField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingFieldNamespaced.lean/declarations/issimplering-iff-isfield.md) | 59 | `result-track:0187ae761965d5dc0fa49e6a19f9598e2fb02fd7712cd29477873fd015f4ceed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

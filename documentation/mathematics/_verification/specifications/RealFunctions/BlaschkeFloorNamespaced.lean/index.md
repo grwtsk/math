@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/BlaschkeFloorNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/BlaschkeFloorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [blaschkeAtOne](../../../../RealFunctions/BlaschkeFloorNamespaced.lean/declarations/blaschkeatone.md) | 17 | `declaration-track:2de416e61a85ae0882d4a54c5057077d30e4c8b02cf3324acf4d228774bd8258` |
-| 2 | `theorem` | [reference_denominator_ne_zero](../../../../RealFunctions/BlaschkeFloorNamespaced.lean/declarations/reference-denominator-ne-zero.md) | 20 | `result-track:5261af763d7d1ecec7853bbe36fcb297a49088738ef6edc5f7407e14975f694d` |
-| 3 | `theorem` | [reference_denominator_normSq](../../../../RealFunctions/BlaschkeFloorNamespaced.lean/declarations/reference-denominator-normsq.md) | 28 | `result-track:c72824000b6279358ae3cb8817584237c5c14fb5fa4d99cda47f4acb3b24f563` |
-| 4 | `theorem` | [blaschke_deficit](../../../../RealFunctions/BlaschkeFloorNamespaced.lean/declarations/blaschke-deficit.md) | 35 | `result-track:77afeb0248b369cb77b640386765399620598f697629b536116c2e68376e61d1` |
-| 5 | `theorem` | [factor_deficit_lower](../../../../RealFunctions/BlaschkeFloorNamespaced.lean/declarations/factor-deficit-lower.md) | 47 | `result-track:8474912ef1b6fd31fc9b6ede32aca0502ef232e9dfb76d6ea175b07378e60563` |
-| 6 | `theorem` | [blaschke_floor_pos](../../../../RealFunctions/BlaschkeFloorNamespaced.lean/declarations/blaschke-floor-pos.md) | 55 | `result-track:0139a876da43fcd39895e414f4c98c9f9c1295879d5fa290df0d06162deb6457` |
+| 1 | `def` | [blaschkeAtOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorNamespaced.lean/declarations/blaschkeatone.md) | 17 | `declaration-track:2de416e61a85ae0882d4a54c5057077d30e4c8b02cf3324acf4d228774bd8258` |
+| 2 | `theorem` | [reference_denominator_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorNamespaced.lean/declarations/reference-denominator-ne-zero.md) | 20 | `result-track:5261af763d7d1ecec7853bbe36fcb297a49088738ef6edc5f7407e14975f694d` |
+| 3 | `theorem` | [reference_denominator_normSq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorNamespaced.lean/declarations/reference-denominator-normsq.md) | 28 | `result-track:c72824000b6279358ae3cb8817584237c5c14fb5fa4d99cda47f4acb3b24f563` |
+| 4 | `theorem` | [blaschke_deficit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorNamespaced.lean/declarations/blaschke-deficit.md) | 35 | `result-track:77afeb0248b369cb77b640386765399620598f697629b536116c2e68376e61d1` |
+| 5 | `theorem` | [factor_deficit_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorNamespaced.lean/declarations/factor-deficit-lower.md) | 47 | `result-track:8474912ef1b6fd31fc9b6ede32aca0502ef232e9dfb76d6ea175b07378e60563` |
+| 6 | `theorem` | [blaschke_floor_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorNamespaced.lean/declarations/blaschke-floor-pos.md) | 55 | `result-track:0139a876da43fcd39895e414f4c98c9f9c1295879d5fa290df0d06162deb6457` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

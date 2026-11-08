@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../HarmonicAnalysisOnEuclideanSpaces/SubsetAntiConcentration.lean/index.md) · [Full source](../../../../HarmonicAnalysisOnEuclideanSpaces/SubsetAntiConcentration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/SubsetAntiConcentration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/SubsetAntiConcentration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Fourier.ZModBalancedExpectedLayers`](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModBalancedExpectedLayers.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.ZModBalancedExpectedLayers`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModBalancedExpectedLayers.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [source_range_bound](../../../../HarmonicAnalysisOnEuclideanSpaces/SubsetAntiConcentration.lean/declarations/source-range-bound.md) | 16 | `result-track:c255e313d2801e02b06c8a25ecd6f9ad856070104f269a9877512ecfc5fb2dec` |
-| 2 | `theorem` | [uniform_absolute_constant](../../../../HarmonicAnalysisOnEuclideanSpaces/SubsetAntiConcentration.lean/declarations/uniform-absolute-constant.md) | 24 | `result-track:18f964258e7c8e0091ac5fa8e36203de6784c628be1515fd57c12e8b4a0bb973` |
+| 1 | `theorem` | [source_range_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/SubsetAntiConcentration.lean/declarations/source-range-bound.md) | 16 | `result-track:c255e313d2801e02b06c8a25ecd6f9ad856070104f269a9877512ecfc5fb2dec` |
+| 2 | `theorem` | [uniform_absolute_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/SubsetAntiConcentration.lean/declarations/uniform-absolute-constant.md) | 24 | `result-track:18f964258e7c8e0091ac5fa8e36203de6784c628be1515fd57c12e8b4a0bb973` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

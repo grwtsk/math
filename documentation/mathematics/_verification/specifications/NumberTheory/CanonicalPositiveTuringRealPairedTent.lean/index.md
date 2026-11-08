@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalPositiveTuringRealPairedTent.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalPositiveTuringRealPairedTent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringRealPairedTent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringRealPairedTent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.RationalRealPairAccumulation`](../../../../FunctionsOfAComplexVariable/RationalRealPairAccumulation.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalPositiveTuringPairedTent`](../../../../NumberTheory/CanonicalPositiveTuringPairedTent.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalRealPairAccumulation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalRealPairAccumulation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalPositiveTuringPairedTent`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringPairedTent.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [real_preRound_allowance_strictly_smaller](../../../../NumberTheory/CanonicalPositiveTuringRealPairedTent.lean/declarations/real-preround-allowance-strictly-smaller.md) | 53 | `result-track:296d7dbd4c1d42d9b742ea91661b8b53c7b6efb0b17eb409aba4cbad03829730` |
-| 2 | `theorem` | [verified_head_of_positive_real_pair_packet](../../../../NumberTheory/CanonicalPositiveTuringRealPairedTent.lean/declarations/verified-head-of-positive-real-pair-packet.md) | 62 | `result-track:59273179eeef1fabfd097729d34a30c8a1c06e494a688a46b510510db00f925a` |
-| 3 | `theorem` | [accepted_output_im_zero](../../../../NumberTheory/CanonicalPositiveTuringRealPairedTent.lean/declarations/accepted-output-im-zero.md) | 87 | `result-track:2c1cae34c9275592982cccd369279cdda5a30b33dcc80d9f2e34a7295e6b75fa` |
-| 4 | `theorem` | [accepted_output_eq_real](../../../../NumberTheory/CanonicalPositiveTuringRealPairedTent.lean/declarations/accepted-output-eq-real.md) | 97 | `result-track:102e4cb95ec0e27a8cbad69ed4fff566dfe39919a727973cfcd7e8de699ea1cb` |
-| 5 | `theorem` | [verified_head_with_real_center](../../../../NumberTheory/CanonicalPositiveTuringRealPairedTent.lean/declarations/verified-head-with-real-center.md) | 109 | `result-track:d87a974dc600a64c8f1cdce1f62d204ae36cec0056d7a15a3ce01e1b4df279a4` |
-| 6 | `theorem` | [prime_in_square_of_positive_real_pair_packet](../../../../NumberTheory/CanonicalPositiveTuringRealPairedTent.lean/declarations/prime-in-square-of-positive-real-pair-packet.md) | 128 | `result-track:06bbf843bad71b9c5f0a4ccb848e89e9ac13e7030ebf2e93b429f25717b7094b` |
-| 7 | `theorem` | [analytic_pair_error_unchanged](../../../../NumberTheory/CanonicalPositiveTuringRealPairedTent.lean/declarations/analytic-pair-error-unchanged.md) | 152 | `result-track:016e8f7963fca8d3b778775894ab887f9c9a240e5647ddfe4418c933954aa08c` |
+| 1 | `theorem` | [real_preRound_allowance_strictly_smaller](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringRealPairedTent.lean/declarations/real-preround-allowance-strictly-smaller.md) | 53 | `result-track:296d7dbd4c1d42d9b742ea91661b8b53c7b6efb0b17eb409aba4cbad03829730` |
+| 2 | `theorem` | [verified_head_of_positive_real_pair_packet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringRealPairedTent.lean/declarations/verified-head-of-positive-real-pair-packet.md) | 62 | `result-track:59273179eeef1fabfd097729d34a30c8a1c06e494a688a46b510510db00f925a` |
+| 3 | `theorem` | [accepted_output_im_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringRealPairedTent.lean/declarations/accepted-output-im-zero.md) | 87 | `result-track:2c1cae34c9275592982cccd369279cdda5a30b33dcc80d9f2e34a7295e6b75fa` |
+| 4 | `theorem` | [accepted_output_eq_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringRealPairedTent.lean/declarations/accepted-output-eq-real.md) | 97 | `result-track:102e4cb95ec0e27a8cbad69ed4fff566dfe39919a727973cfcd7e8de699ea1cb` |
+| 5 | `theorem` | [verified_head_with_real_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringRealPairedTent.lean/declarations/verified-head-with-real-center.md) | 109 | `result-track:d87a974dc600a64c8f1cdce1f62d204ae36cec0056d7a15a3ce01e1b4df279a4` |
+| 6 | `theorem` | [prime_in_square_of_positive_real_pair_packet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringRealPairedTent.lean/declarations/prime-in-square-of-positive-real-pair-packet.md) | 128 | `result-track:06bbf843bad71b9c5f0a4ccb848e89e9ac13e7030ebf2e93b429f25717b7094b` |
+| 7 | `theorem` | [analytic_pair_error_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringRealPairedTent.lean/declarations/analytic-pair-error-unchanged.md) | 152 | `result-track:016e8f7963fca8d3b778775894ab887f9c9a240e5647ddfe4418c933954aa08c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

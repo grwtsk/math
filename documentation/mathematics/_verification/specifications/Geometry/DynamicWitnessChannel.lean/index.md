@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/DynamicWitnessChannel.lean/index.md) · [Full source](../../../../Geometry/DynamicWitnessChannel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/DynamicWitnessChannel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/DynamicWitnessChannel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [TrianglePhase](../../../../Geometry/DynamicWitnessChannel.lean/declarations/trianglephase.md) | 19 | `declaration-track:54a0a014ab9e5716696455a1adf67a1864dc27ea4cf8a2ca0635a5dcd97415fa` |
-| 2 | `structure` | [DynamicWitnessChannel](../../../../Geometry/DynamicWitnessChannel.lean/declarations/dynamicwitnesschannel.md) | 22 | `declaration-track:1345dd380b39dc859970479aa932bc5116acb20b98b25248133c7cd2085c0b38` |
-| 3 | `def` | [DynamicWitnessChannel.Total](../../../../Geometry/DynamicWitnessChannel.lean/declarations/dynamicwitnesschannel-total.md) | 27 | `declaration-track:b5f3a091874e1905542677d4e7a7122b3959caef8d900b201919322bf0f3481e` |
-| 4 | `structure` | [StagedDynamicWitnessChannel](../../../../Geometry/DynamicWitnessChannel.lean/declarations/stageddynamicwitnesschannel.md) | 33 | `declaration-track:28e26c0bdc72459d6724772f1939cff8da48c26b43c3d5949bd24e8add68189c` |
-| 5 | `def` | [VaryingWitnessSize](../../../../Geometry/DynamicWitnessChannel.lean/declarations/varyingwitnesssize.md) | 42 | `declaration-track:7c78b8bc079f0ad8c87f1168f4d8a71a71d384e7b6624c0bcb12b5a8af5c1be6` |
+| 1 | `abbrev` | [TrianglePhase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/DynamicWitnessChannel.lean/declarations/trianglephase.md) | 19 | `declaration-track:54a0a014ab9e5716696455a1adf67a1864dc27ea4cf8a2ca0635a5dcd97415fa` |
+| 2 | `structure` | [DynamicWitnessChannel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/DynamicWitnessChannel.lean/declarations/dynamicwitnesschannel.md) | 22 | `declaration-track:1345dd380b39dc859970479aa932bc5116acb20b98b25248133c7cd2085c0b38` |
+| 3 | `def` | [DynamicWitnessChannel.Total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/DynamicWitnessChannel.lean/declarations/dynamicwitnesschannel-total.md) | 27 | `declaration-track:b5f3a091874e1905542677d4e7a7122b3959caef8d900b201919322bf0f3481e` |
+| 4 | `structure` | [StagedDynamicWitnessChannel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/DynamicWitnessChannel.lean/declarations/stageddynamicwitnesschannel.md) | 33 | `declaration-track:28e26c0bdc72459d6724772f1939cff8da48c26b43c3d5949bd24e8add68189c` |
+| 5 | `def` | [VaryingWitnessSize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/DynamicWitnessChannel.lean/declarations/varyingwitnesssize.md) | 42 | `declaration-track:7c78b8bc079f0ad8c87f1168f4d8a71a71d384e7b6624c0bcb12b5a8af5c1be6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

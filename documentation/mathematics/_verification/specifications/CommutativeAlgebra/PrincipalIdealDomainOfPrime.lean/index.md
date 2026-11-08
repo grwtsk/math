@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PrincipalIdealDomainOfPrime.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PrincipalIdealDomainOfPrime.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrincipalIdealDomainOfPrime.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrincipalIdealDomainOfPrime.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsPrincipalIdealRing.of_prime](../../../../CommutativeAlgebra/PrincipalIdealDomainOfPrime.lean/declarations/isprincipalidealring-of-prime.md) | 22 | `result-track:6d1688566ed8829391ab26b421a1126037e9df3dabdca21879f29f61617e265f` |
+| 1 | `theorem` | [IsPrincipalIdealRing.of_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrincipalIdealDomainOfPrime.lean/declarations/isprincipalidealring-of-prime.md) | 22 | `result-track:6d1688566ed8829391ab26b421a1126037e9df3dabdca21879f29f61617e265f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

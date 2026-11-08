@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD02fdf9519367.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD02fdf9519367.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD02fdf9519367.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD02fdf9519367.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [OneCocycle](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD02fdf9519367.lean/declarations/onecocycle.md) | 10 | `declaration-track:b4fd55b82d9923081d653a94e5a2f03650a69c318b38145573db196014b8c192` |
+| 1 | `def` | [OneCocycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD02fdf9519367.lean/declarations/onecocycle.md) | 10 | `declaration-track:b4fd55b82d9923081d653a94e5a2f03650a69c318b38145573db196014b8c192` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

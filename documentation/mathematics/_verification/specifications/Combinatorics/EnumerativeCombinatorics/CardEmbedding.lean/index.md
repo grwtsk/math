@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/CardEmbedding.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/CardEmbedding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/CardEmbedding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/CardEmbedding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [card_embedding_eq_of_unique](../../../../../Combinatorics/EnumerativeCombinatorics/CardEmbedding.lean/declarations/card-embedding-eq-of-unique.md) | 28 | `result-track:d23765a9107b794f243d62020d6615e3d468d124bad45b4be647dc05b8aa3db9` |
-| 2 | `theorem` | [card_embedding_eq](../../../../../Combinatorics/EnumerativeCombinatorics/CardEmbedding.lean/declarations/card-embedding-eq.md) | 36 | `result-track:3ecc582e7c0e71222b62faeaf33a5187dbca1564fe52e9bc85cf846742b7b241` |
-| 3 | `theorem` | [card_embedding_eq_of_infinite](../../../../../Combinatorics/EnumerativeCombinatorics/CardEmbedding.lean/declarations/card-embedding-eq-of-infinite.md) | 53 | `result-track:e137a1d257daa758a9906cbee89b90e507fa407c1aab79d9cc6c3f0ba7ae2248` |
+| 1 | `theorem` | [card_embedding_eq_of_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/CardEmbedding.lean/declarations/card-embedding-eq-of-unique.md) | 28 | `result-track:d23765a9107b794f243d62020d6615e3d468d124bad45b4be647dc05b8aa3db9` |
+| 2 | `theorem` | [card_embedding_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/CardEmbedding.lean/declarations/card-embedding-eq.md) | 36 | `result-track:3ecc582e7c0e71222b62faeaf33a5187dbca1564fe52e9bc85cf846742b7b241` |
+| 3 | `theorem` | [card_embedding_eq_of_infinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/CardEmbedding.lean/declarations/card-embedding-eq-of-infinite.md) | 53 | `result-track:e137a1d257daa758a9906cbee89b90e507fa407c1aab79d9cc6c3f0ba7ae2248` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

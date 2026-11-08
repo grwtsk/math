@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CandidateCausality.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CandidateCausality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateCausality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateCausality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [boundaryInverse](../../../../MeasureAndIntegration/CandidateCausality.lean/declarations/boundaryinverse.md) | 14 | `declaration-track:9f0773baa1bba793901e6a0d4c4797ca12c23b91e4a0cfd92e7858ba0e70f476` |
-| 2 | `theorem` | [boundaryInverse_eq_zero_of_neg](../../../../MeasureAndIntegration/CandidateCausality.lean/declarations/boundaryinverse-eq-zero-of-neg.md) | 19 | `result-track:a083afa02325ad2615e0fe3a90eb1d03a04d4e9683d1496d44398d9c26a29982` |
-| 3 | `theorem` | [candidate_boundary_majorant](../../../../MeasureAndIntegration/CandidateCausality.lean/declarations/candidate-boundary-majorant.md) | 63 | `result-track:63c43546b166349537f4ae22c8eddd505c09ef366c2e436727bfa4758b5d8fc3` |
-| 4 | `theorem` | [candidate_boundaryInverse_eq_zero](../../../../MeasureAndIntegration/CandidateCausality.lean/declarations/candidate-boundaryinverse-eq-zero.md) | 98 | `result-track:068fbc06c777546cddb8fe7b279d0647a34008ff8056f988a01cc26135c4665d` |
+| 1 | `def` | [boundaryInverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateCausality.lean/declarations/boundaryinverse.md) | 14 | `declaration-track:9f0773baa1bba793901e6a0d4c4797ca12c23b91e4a0cfd92e7858ba0e70f476` |
+| 2 | `theorem` | [boundaryInverse_eq_zero_of_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateCausality.lean/declarations/boundaryinverse-eq-zero-of-neg.md) | 19 | `result-track:a083afa02325ad2615e0fe3a90eb1d03a04d4e9683d1496d44398d9c26a29982` |
+| 3 | `theorem` | [candidate_boundary_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateCausality.lean/declarations/candidate-boundary-majorant.md) | 63 | `result-track:63c43546b166349537f4ae22c8eddd505c09ef366c2e436727bfa4758b5d8fc3` |
+| 4 | `theorem` | [candidate_boundaryInverse_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateCausality.lean/declarations/candidate-boundaryinverse-eq-zero.md) | 98 | `result-track:068fbc06c777546cddb8fe7b279d0647a34008ff8056f988a01cc26135c4665d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Complex.lean/index.md) · [Full source](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Complex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Complex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Complex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [isometryEquivSumSquares](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Complex.lean/declarations/isometryequivsumsquares.md) | 28 | `declaration-track:c472c7ac44ef38e85b1e08dab1a247d3b15efa9950dc39af89a1061f7e3eebba` |
-| 2 | `def` | [isometryEquivSumSquaresUnits](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Complex.lean/declarations/isometryequivsumsquaresunits.md) | 65 | `declaration-track:95f59cbdcc1ca08c5c61bc92d32cc06ee9443047f898201d626d93c94123663c` |
-| 3 | `theorem` | [equivalent_sum_squares](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Complex.lean/declarations/equivalent-sum-squares.md) | 71 | `result-track:7b379a1afa18403196be240dbffb9bce8e8da6520044a40bca88a397c2fdc7d8` |
-| 4 | `theorem` | [complex_equivalent](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Complex.lean/declarations/complex-equivalent.md) | 78 | `result-track:f64e5a04f0162eedc14ac2dc6bf236617c10f4c7912773ee2362cf590ab8b25e` |
+| 1 | `def` | [isometryEquivSumSquares](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Complex.lean/declarations/isometryequivsumsquares.md) | 28 | `declaration-track:c472c7ac44ef38e85b1e08dab1a247d3b15efa9950dc39af89a1061f7e3eebba` |
+| 2 | `def` | [isometryEquivSumSquaresUnits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Complex.lean/declarations/isometryequivsumsquaresunits.md) | 65 | `declaration-track:95f59cbdcc1ca08c5c61bc92d32cc06ee9443047f898201d626d93c94123663c` |
+| 3 | `theorem` | [equivalent_sum_squares](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Complex.lean/declarations/equivalent-sum-squares.md) | 71 | `result-track:7b379a1afa18403196be240dbffb9bce8e8da6520044a40bca88a397c2fdc7d8` |
+| 4 | `theorem` | [complex_equivalent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Complex.lean/declarations/complex-equivalent.md) | 78 | `result-track:f64e5a04f0162eedc14ac2dc6bf236617c10f4c7912773ee2362cf590ab8b25e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

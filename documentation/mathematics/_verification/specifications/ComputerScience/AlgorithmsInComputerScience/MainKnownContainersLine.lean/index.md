@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MainKnownContainersLine.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MainKnownContainersLine.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainKnownContainersLine.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainKnownContainersLine.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,10 +62,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [knownContainersLine](../../../../../ComputerScience/AlgorithmsInComputerScience/MainKnownContainersLine.lean/declarations/knowncontainersline.md) | 16 | `declaration-track:bd5ba5302831d6291787f4f892a524cce7d9ec53c99feeb9a5d502a2f464f2b8` |
-| 2 | `def` | [help](../../../../../ComputerScience/AlgorithmsInComputerScience/MainKnownContainersLine.lean/declarations/help.md) | 19 | `declaration-track:33b0e7563f1d0b6478681f7326c442c194024eeb9dc418ba4ef4870961dbec1d` |
-| 3 | `def` | [curlArgs](../../../../../ComputerScience/AlgorithmsInComputerScience/MainKnownContainersLine.lean/declarations/curlargs.md) | 104 | `declaration-track:d0d6696cd9144cf7a30eee5e5a0e5531122129498aea93bf592a8f40e7f9e5d6` |
-| 4 | `def` | [main](../../../../../ComputerScience/AlgorithmsInComputerScience/MainKnownContainersLine.lean/declarations/main.md) | 108 | `declaration-track:90b6ce0d54ea4b82fad3a2df6af2ba3252e8c5458e648eb55cd6a08d193f3578` |
+| 1 | `def` | [knownContainersLine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainKnownContainersLine.lean/declarations/knowncontainersline.md) | 16 | `declaration-track:bd5ba5302831d6291787f4f892a524cce7d9ec53c99feeb9a5d502a2f464f2b8` |
+| 2 | `def` | [help](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainKnownContainersLine.lean/declarations/help.md) | 19 | `declaration-track:33b0e7563f1d0b6478681f7326c442c194024eeb9dc418ba4ef4870961dbec1d` |
+| 3 | `def` | [curlArgs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainKnownContainersLine.lean/declarations/curlargs.md) | 104 | `declaration-track:d0d6696cd9144cf7a30eee5e5a0e5531122129498aea93bf592a8f40e7f9e5d6` |
+| 4 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainKnownContainersLine.lean/declarations/main.md) | 108 | `declaration-track:90b6ce0d54ea4b82fad3a2df6af2ba3252e8c5458e648eb55cd6a08d193f3578` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

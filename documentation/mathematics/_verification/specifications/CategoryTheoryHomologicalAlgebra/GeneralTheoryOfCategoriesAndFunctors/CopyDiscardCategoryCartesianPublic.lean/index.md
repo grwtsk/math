@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [instComonObjOfCartesian](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianPublic.lean/declarations/instcomonobjofcartesian.md) | 41 | `declaration-track:acbcb685cffe58d52a07450d1505df450df62cc1f876a8bcee09ab4bb748f5c6` |
-| 2 | `instance` | [instIsCommComonObjOfCartesian](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianPublic.lean/declarations/instiscommcomonobjofcartesian.md) | 49 | `declaration-track:1305a9a3bc29eb5592f411491949879c7a5afed2ba3d2c5a594a99d4611353c4` |
-| 3 | `abbrev` | [ofCartesianMonoidalCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianPublic.lean/declarations/ofcartesianmonoidalcategory.md) | 52 | `declaration-track:4d695cf734c4441e21cb5a01c030f033ee967df12013e3e320cf48a8807662af` |
-| 4 | `instance` | [instDeterministic](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianPublic.lean/declarations/instdeterministic.md) | 57 | `declaration-track:f684a5b4e40db62a0b7180defe3848d01a18fcd7962c4664deb587b6d14b3150` |
+| 1 | `abbrev` | [instComonObjOfCartesian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianPublic.lean/declarations/instcomonobjofcartesian.md) | 41 | `declaration-track:acbcb685cffe58d52a07450d1505df450df62cc1f876a8bcee09ab4bb748f5c6` |
+| 2 | `instance` | [instIsCommComonObjOfCartesian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianPublic.lean/declarations/instiscommcomonobjofcartesian.md) | 49 | `declaration-track:1305a9a3bc29eb5592f411491949879c7a5afed2ba3d2c5a594a99d4611353c4` |
+| 3 | `abbrev` | [ofCartesianMonoidalCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianPublic.lean/declarations/ofcartesianmonoidalcategory.md) | 52 | `declaration-track:4d695cf734c4441e21cb5a01c030f033ee967df12013e3e320cf48a8807662af` |
+| 4 | `instance` | [instDeterministic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianPublic.lean/declarations/instdeterministic.md) | 57 | `declaration-track:f684a5b4e40db62a0b7180defe3848d01a18fcd7962c4664deb587b6d14b3150` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

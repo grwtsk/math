@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightedCenterNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightedCenterNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightedCenterNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightedCenterNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [centerIndex](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightedCenterNamespaced.lean/declarations/centerindex.md) | 18 | `declaration-track:0584f4205152ae0477d1ae4bb2e360b6db4730ca48aecb5044766d82c41c2f84` |
-| 2 | `def` | [phaseCount](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightedCenterNamespaced.lean/declarations/phasecount.md) | 21 | `declaration-track:d9dd6aeb6d99f4a6a2088c66e8fa483e3b3694021cac4523b64a27918ecb44b9` |
-| 3 | `def` | [centerWeight](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightedCenterNamespaced.lean/declarations/centerweight.md) | 24 | `declaration-track:7031184d6ddd4dbabc1c9b4bca83717a0a299eb6c3a3f7649d72f1d6b748da80` |
-| 4 | `theorem` | [centerWeight_positive](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightedCenterNamespaced.lean/declarations/centerweight-positive.md) | 27 | `result-track:a67362111dca8e60a5cf471d316c07b8ac22fd72c8cb75a7eff9bacc765d09e6` |
+| 1 | `def` | [centerIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightedCenterNamespaced.lean/declarations/centerindex.md) | 18 | `declaration-track:0584f4205152ae0477d1ae4bb2e360b6db4730ca48aecb5044766d82c41c2f84` |
+| 2 | `def` | [phaseCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightedCenterNamespaced.lean/declarations/phasecount.md) | 21 | `declaration-track:d9dd6aeb6d99f4a6a2088c66e8fa483e3b3694021cac4523b64a27918ecb44b9` |
+| 3 | `def` | [centerWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightedCenterNamespaced.lean/declarations/centerweight.md) | 24 | `declaration-track:7031184d6ddd4dbabc1c9b4bca83717a0a299eb6c3a3f7649d72f1d6b748da80` |
+| 4 | `theorem` | [centerWeight_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightedCenterNamespaced.lean/declarations/centerweight-positive.md) | 27 | `result-track:a67362111dca8e60a5cf471d316c07b8ac22fd72c8cb75a7eff9bacc765d09e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

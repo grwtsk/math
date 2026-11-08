@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/RawTripleEnumeration.lean/index.md) · [Full source](../../../../NumberTheory/RawTripleEnumeration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RawTripleEnumeration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RawTripleEnumeration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -50,7 +50,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.Data.Nat.Prime.Basic` — import line 18; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Nat.Prime.Nth` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Nat.PrimeFin` — import line 20; external provider; requires a separately pinned dependency.
-- [Pairing And Sequence Formulas](../../../../NumberTheory/PairingAndSequenceFormulas.lean/index.md) — import line 22; pinned internal source present.
+- [Pairing And Sequence Formulas](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PairingAndSequenceFormulas.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RawCarrierAddress](../../../../NumberTheory/RawTripleEnumeration.lean/declarations/rawcarrieraddress.md) | 37 | `declaration-track:121c0b131c5396fb5d1323b3a3ed927f5e821788145ca4a2b6b3bbd400578b62` |
-| 2 | `def` | [rawAddressCode](../../../../NumberTheory/RawTripleEnumeration.lean/declarations/rawaddresscode.md) | 44 | `declaration-track:6f3621cce6f25fbf615be3f23779daa5072bd90bcf4ccd474565297dfd244e27` |
-| 3 | `structure` | [AddressEnumeration](../../../../NumberTheory/RawTripleEnumeration.lean/declarations/addressenumeration.md) | 53 | `declaration-track:243e708c108c144d942f3195adca954079fa532344828b6d0d9c78b2021e53ab` |
-| 4 | `def` | [naturalAddressEnumeration](../../../../NumberTheory/RawTripleEnumeration.lean/declarations/naturaladdressenumeration.md) | 62 | `declaration-track:eba599eb23154f0e0f4daee6f93f9b1209cd8032fa48c9c5ba44c444747608d6` |
-| 5 | `def` | [rawAddressEquivNat](../../../../NumberTheory/RawTripleEnumeration.lean/declarations/rawaddressequivnat.md) | 69 | `declaration-track:9137c6c915b461cd0522c47f2090e499c4fd06d25d65224d315929602a95cec4` |
-| 6 | `def` | [rawAddressEnumeration](../../../../NumberTheory/RawTripleEnumeration.lean/declarations/rawaddressenumeration.md) | 85 | `declaration-track:654eef2e4a0af31f565461e775bcd6cf3e55a3e12874e6b1fefd113991ef0f6e` |
-| 7 | `def` | [rawCanonicalAddressEnumeration](../../../../NumberTheory/RawTripleEnumeration.lean/declarations/rawcanonicaladdressenumeration.md) | 94 | `declaration-track:7ad61229fdd74f8cba17fcf46ec2b3ceb25cf8096fea357b7cf68985c7be2715` |
-| 8 | `theorem` | [rawCanonicalAddressEnumeration_code_enumerate](../../../../NumberTheory/RawTripleEnumeration.lean/declarations/rawcanonicaladdressenumeration-code-enumerate.md) | 103 | `result-track:406081036ce311fc5f14eff5e848ef9b710829fe682f5926a308ff5d67767b6b` |
-| 9 | `theorem` | [rawCanonicalAddressEnumeration_order](../../../../NumberTheory/RawTripleEnumeration.lean/declarations/rawcanonicaladdressenumeration-order.md) | 108 | `result-track:c3991e99e9783874e9b39b372dd27d03c65fa2d0f78a0476adaecc641a71140e` |
+| 1 | `structure` | [RawCarrierAddress](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RawTripleEnumeration.lean/declarations/rawcarrieraddress.md) | 37 | `declaration-track:121c0b131c5396fb5d1323b3a3ed927f5e821788145ca4a2b6b3bbd400578b62` |
+| 2 | `def` | [rawAddressCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RawTripleEnumeration.lean/declarations/rawaddresscode.md) | 44 | `declaration-track:6f3621cce6f25fbf615be3f23779daa5072bd90bcf4ccd474565297dfd244e27` |
+| 3 | `structure` | [AddressEnumeration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RawTripleEnumeration.lean/declarations/addressenumeration.md) | 53 | `declaration-track:243e708c108c144d942f3195adca954079fa532344828b6d0d9c78b2021e53ab` |
+| 4 | `def` | [naturalAddressEnumeration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RawTripleEnumeration.lean/declarations/naturaladdressenumeration.md) | 62 | `declaration-track:eba599eb23154f0e0f4daee6f93f9b1209cd8032fa48c9c5ba44c444747608d6` |
+| 5 | `def` | [rawAddressEquivNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RawTripleEnumeration.lean/declarations/rawaddressequivnat.md) | 69 | `declaration-track:9137c6c915b461cd0522c47f2090e499c4fd06d25d65224d315929602a95cec4` |
+| 6 | `def` | [rawAddressEnumeration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RawTripleEnumeration.lean/declarations/rawaddressenumeration.md) | 85 | `declaration-track:654eef2e4a0af31f565461e775bcd6cf3e55a3e12874e6b1fefd113991ef0f6e` |
+| 7 | `def` | [rawCanonicalAddressEnumeration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RawTripleEnumeration.lean/declarations/rawcanonicaladdressenumeration.md) | 94 | `declaration-track:7ad61229fdd74f8cba17fcf46ec2b3ceb25cf8096fea357b7cf68985c7be2715` |
+| 8 | `theorem` | [rawCanonicalAddressEnumeration_code_enumerate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RawTripleEnumeration.lean/declarations/rawcanonicaladdressenumeration-code-enumerate.md) | 103 | `result-track:406081036ce311fc5f14eff5e848ef9b710829fe682f5926a308ff5d67767b6b` |
+| 9 | `theorem` | [rawCanonicalAddressEnumeration_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RawTripleEnumeration.lean/declarations/rawcanonicaladdressenumeration-order.md) | 108 | `result-track:c3991e99e9783874e9b39b372dd27d03c65fa2d0f78a0476adaecc641a71140e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

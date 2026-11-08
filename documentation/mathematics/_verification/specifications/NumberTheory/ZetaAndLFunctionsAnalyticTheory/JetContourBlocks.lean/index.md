@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks`](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CheckedContiguousBlocks.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.JetRectangleCount`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CheckedContiguousBlocks.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.JetRectangleCount`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetRectangleCount.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Header](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/header.md) | 27 | `declaration-track:84ca181d6d2411af9bd832e67323b8263cd32d0ecc38a4f25d82348636af1ea6` |
-| 2 | `instance` | [headerDecidable](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/headerdecidable.md) | 31 | `declaration-track:9adab580752075bf4df5a57bf4f9a4225494bed5b6a6fe80794699b110eb507f` |
-| 3 | `def` | [cellTest](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/celltest.md) | 35 | `declaration-track:76733421bc63ed719bee8f926bedc70c7e76989d7f5c442ca879f3957583ed6a` |
-| 4 | `def` | [term](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/term.md) | 42 | `declaration-track:42111b7c32eb0460c474a07d850f99573770ff7feb7cc061f4c978769be3c04e` |
-| 5 | `theorem` | [sum_eq_prefix](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/sum-eq-prefix.md) | 46 | `result-track:53ecdadcb872f1a471a3106f7cc39b9e84c0a77047f0e97e51b764cde0248523` |
-| 6 | `theorem` | [old_evaluate_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/old-evaluate-iff.md) | 51 | `result-track:e94d7a28598e67775b974e0420a5d08626b59a854260080503d533f1879fbfe9` |
-| 7 | `def` | [evaluate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/evaluate.md) | 79 | `declaration-track:0ce857e0a4bf57e58bcbb2cdfdc26604e306d7072d9158fcda9caa4c8e4a863a` |
-| 8 | `theorem` | [evaluate_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/evaluate-iff.md) | 86 | `result-track:93f3c22c841b9f37a2014f2b523e4cef7d3161e2fd50142bccac6273670fd418` |
-| 9 | `theorem` | [evaluate_refines](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/evaluate-refines.md) | 98 | `result-track:3ba72df661621c802c88790381aabbf7f29415bd4075fe29192fb6173c143c17` |
-| 10 | `theorem` | [exists_claims_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/exists-claims-iff.md) | 112 | `result-track:d02d406c83d0e16b62212a758f1247697b79e1aad20e3db0e98e1353bbb38caf` |
-| 11 | `def` | [evaluateRectangle](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/evaluaterectangle.md) | 128 | `declaration-track:d5fabbc7400f89fb00ddde3cebb259576e69ef099903914b1b1b5b8a09b37839` |
-| 12 | `theorem` | [rectangle_refines](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/rectangle-refines.md) | 136 | `result-track:1270a263b95c94d1272b20c53532d6f81c392e193fe5d4508e0fbe2bc398ae20` |
-| 13 | `theorem` | [count_eq_of_evaluateRectangle](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/count-eq-of-evaluaterectangle.md) | 151 | `result-track:3d3e9215b4fd510f32733f9a56233adfbfc7c0b82be0a6e30a5a941fae2d82f3` |
+| 1 | `def` | [Header](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/header.md) | 27 | `declaration-track:84ca181d6d2411af9bd832e67323b8263cd32d0ecc38a4f25d82348636af1ea6` |
+| 2 | `instance` | [headerDecidable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/headerdecidable.md) | 31 | `declaration-track:9adab580752075bf4df5a57bf4f9a4225494bed5b6a6fe80794699b110eb507f` |
+| 3 | `def` | [cellTest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/celltest.md) | 35 | `declaration-track:76733421bc63ed719bee8f926bedc70c7e76989d7f5c442ca879f3957583ed6a` |
+| 4 | `def` | [term](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/term.md) | 42 | `declaration-track:42111b7c32eb0460c474a07d850f99573770ff7feb7cc061f4c978769be3c04e` |
+| 5 | `theorem` | [sum_eq_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/sum-eq-prefix.md) | 46 | `result-track:53ecdadcb872f1a471a3106f7cc39b9e84c0a77047f0e97e51b764cde0248523` |
+| 6 | `theorem` | [old_evaluate_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/old-evaluate-iff.md) | 51 | `result-track:e94d7a28598e67775b974e0420a5d08626b59a854260080503d533f1879fbfe9` |
+| 7 | `def` | [evaluate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/evaluate.md) | 79 | `declaration-track:0ce857e0a4bf57e58bcbb2cdfdc26604e306d7072d9158fcda9caa4c8e4a863a` |
+| 8 | `theorem` | [evaluate_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/evaluate-iff.md) | 86 | `result-track:93f3c22c841b9f37a2014f2b523e4cef7d3161e2fd50142bccac6273670fd418` |
+| 9 | `theorem` | [evaluate_refines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/evaluate-refines.md) | 98 | `result-track:3ba72df661621c802c88790381aabbf7f29415bd4075fe29192fb6173c143c17` |
+| 10 | `theorem` | [exists_claims_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/exists-claims-iff.md) | 112 | `result-track:d02d406c83d0e16b62212a758f1247697b79e1aad20e3db0e98e1353bbb38caf` |
+| 11 | `def` | [evaluateRectangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/evaluaterectangle.md) | 128 | `declaration-track:d5fabbc7400f89fb00ddde3cebb259576e69ef099903914b1b1b5b8a09b37839` |
+| 12 | `theorem` | [rectangle_refines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/rectangle-refines.md) | 136 | `result-track:1270a263b95c94d1272b20c53532d6f81c392e193fe5d4508e0fbe2bc398ae20` |
+| 13 | `theorem` | [count_eq_of_evaluateRectangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetContourBlocks.lean/declarations/count-eq-of-evaluaterectangle.md) | 151 | `result-track:3d3e9215b4fd510f32733f9a56233adfbfc7c0b82be0a6e30a5a941fae2d82f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

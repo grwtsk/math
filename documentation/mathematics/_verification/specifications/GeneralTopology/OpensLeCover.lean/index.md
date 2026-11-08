@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/OpensLeCover.lean/index.md) · [Full source](../../../../GeneralTopology/OpensLeCover.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpensLeCover.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpensLeCover.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [OpensLeCover](../../../../GeneralTopology/OpensLeCover.lean/declarations/openslecover.md) | 54 | `declaration-track:1e2c9a4aec4d7995ce19f9924315ef68cd80fffd5b97f3c0e51360157d4f657a` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/OpensLeCover.lean/declarations/instance-source-edition-2.md) | 60 | `declaration-track:ee18394bdacf1b6d9dc60c080cf1bd617e42921266bdba6ee4ab4cc4c9857bef` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/OpensLeCover.lean/declarations/instance.md) | 62 | `declaration-track:9de0bc514f3a1c52e703273acc40b7ce666b87c1ac42b6baad95a67808fe9c0c` |
-| 4 | `def` | [index](../../../../GeneralTopology/OpensLeCover.lean/declarations/index.md) | 71 | `declaration-track:66e66cbbb0f38d97bcf481091205362edc1e478baa3cb984422af4f353aeb5cc` |
-| 5 | `def` | [homToIndex](../../../../GeneralTopology/OpensLeCover.lean/declarations/homtoindex.md) | 78 | `declaration-track:ebb32d5a2e6c71f9069b2ed6a770de296099a41b6e50c91bc26a6ce146b58780` |
-| 6 | `def` | [opensLeCoverCocone](../../../../GeneralTopology/OpensLeCover.lean/declarations/openslecovercocone.md) | 89 | `declaration-track:ec2d88a6bc56b629f1d00c79f684b0f40b2bc7ff6d5c24c268417417d80607ea` |
-| 7 | `def` | [IsSheafOpensLeCover](../../../../GeneralTopology/OpensLeCover.lean/declarations/issheafopenslecover.md) | 107 | `declaration-track:0e1a4d329150066150b9186f8fc4b13d9200a2e2cd8d53c7099a86c98aacac00` |
-| 8 | `def` | [generateEquivalenceOpensLe_functor'](../../../../GeneralTopology/OpensLeCover.lean/declarations/generateequivalenceopensle-functor.md) | 123 | `declaration-track:c154524c52d39e1e2a35c74c79414eb8387d93e1de371426c73b75f5cdebd272` |
-| 9 | `def` | [generateEquivalenceOpensLe_inverse'](../../../../GeneralTopology/OpensLeCover.lean/declarations/generateequivalenceopensle-inverse.md) | 139 | `declaration-track:742578c0f35908e0e7257052e5e92a20f5df3553e95f9386ac6618b066363ff0` |
-| 10 | `def` | [generateEquivalenceOpensLe](../../../../GeneralTopology/OpensLeCover.lean/declarations/generateequivalenceopensle.md) | 162 | `declaration-track:0741922a5dd40df3760ed70aa7f92e303c60bfbce431f232d7c7a5840de2f31c` |
-| 11 | `def` | [whiskerIsoMapGenerateCocone](../../../../GeneralTopology/OpensLeCover.lean/declarations/whiskerisomapgeneratecocone.md) | 180 | `declaration-track:b71791d8973ddb51139eb01b1afad9ac07cc3bc73031f713d1c719fb71f15f62` |
-| 12 | `def` | [isLimitOpensLeEquivGenerate₁](../../../../GeneralTopology/OpensLeCover.lean/declarations/islimitopensleequivgenerate.md) | 208 | `declaration-track:32ea01e57d691bba294ebe1df4c5b8f3d131061cdabe4be91f2f2210d42b2e6e` |
-| 13 | `def` | [isLimitOpensLeEquivGenerate₂](../../../../GeneralTopology/OpensLeCover.lean/declarations/islimitopensleequivgenerate-source-edition-2.md) | 223 | `declaration-track:55d332020a5b36682782767d0876a11e7ba6866f83ef3be48c8d0606f280a6d6` |
-| 14 | `theorem` | [isSheaf_iff_isSheafOpensLeCover](../../../../GeneralTopology/OpensLeCover.lean/declarations/issheaf-iff-issheafopenslecover.md) | 237 | `result-track:636bf8320646823bdd69928a4a714912bd147f02c70349473756e5c30bc3f2a0` |
+| 1 | `def` | [OpensLeCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpensLeCover.lean/declarations/openslecover.md) | 54 | `declaration-track:1e2c9a4aec4d7995ce19f9924315ef68cd80fffd5b97f3c0e51360157d4f657a` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpensLeCover.lean/declarations/instance-source-edition-2.md) | 60 | `declaration-track:ee18394bdacf1b6d9dc60c080cf1bd617e42921266bdba6ee4ab4cc4c9857bef` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpensLeCover.lean/declarations/instance.md) | 62 | `declaration-track:9de0bc514f3a1c52e703273acc40b7ce666b87c1ac42b6baad95a67808fe9c0c` |
+| 4 | `def` | [index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpensLeCover.lean/declarations/index.md) | 71 | `declaration-track:66e66cbbb0f38d97bcf481091205362edc1e478baa3cb984422af4f353aeb5cc` |
+| 5 | `def` | [homToIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpensLeCover.lean/declarations/homtoindex.md) | 78 | `declaration-track:ebb32d5a2e6c71f9069b2ed6a770de296099a41b6e50c91bc26a6ce146b58780` |
+| 6 | `def` | [opensLeCoverCocone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpensLeCover.lean/declarations/openslecovercocone.md) | 89 | `declaration-track:ec2d88a6bc56b629f1d00c79f684b0f40b2bc7ff6d5c24c268417417d80607ea` |
+| 7 | `def` | [IsSheafOpensLeCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpensLeCover.lean/declarations/issheafopenslecover.md) | 107 | `declaration-track:0e1a4d329150066150b9186f8fc4b13d9200a2e2cd8d53c7099a86c98aacac00` |
+| 8 | `def` | [generateEquivalenceOpensLe_functor'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpensLeCover.lean/declarations/generateequivalenceopensle-functor.md) | 123 | `declaration-track:c154524c52d39e1e2a35c74c79414eb8387d93e1de371426c73b75f5cdebd272` |
+| 9 | `def` | [generateEquivalenceOpensLe_inverse'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpensLeCover.lean/declarations/generateequivalenceopensle-inverse.md) | 139 | `declaration-track:742578c0f35908e0e7257052e5e92a20f5df3553e95f9386ac6618b066363ff0` |
+| 10 | `def` | [generateEquivalenceOpensLe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpensLeCover.lean/declarations/generateequivalenceopensle.md) | 162 | `declaration-track:0741922a5dd40df3760ed70aa7f92e303c60bfbce431f232d7c7a5840de2f31c` |
+| 11 | `def` | [whiskerIsoMapGenerateCocone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpensLeCover.lean/declarations/whiskerisomapgeneratecocone.md) | 180 | `declaration-track:b71791d8973ddb51139eb01b1afad9ac07cc3bc73031f713d1c719fb71f15f62` |
+| 12 | `def` | [isLimitOpensLeEquivGenerate₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpensLeCover.lean/declarations/islimitopensleequivgenerate.md) | 208 | `declaration-track:32ea01e57d691bba294ebe1df4c5b8f3d131061cdabe4be91f2f2210d42b2e6e` |
+| 13 | `def` | [isLimitOpensLeEquivGenerate₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpensLeCover.lean/declarations/islimitopensleequivgenerate-source-edition-2.md) | 223 | `declaration-track:55d332020a5b36682782767d0876a11e7ba6866f83ef3be48c8d0606f280a6d6` |
+| 14 | `theorem` | [isSheaf_iff_isSheafOpensLeCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpensLeCover.lean/declarations/issheaf-iff-issheafopenslecover.md) | 237 | `result-track:636bf8320646823bdd69928a4a714912bd147f02c70349473756e5c30bc3f2a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

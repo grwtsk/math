@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ClassEquationPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ClassEquationPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ClassEquationPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ClassEquationPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sum_conjClasses_card_eq_card](../../../../GroupTheoryAndGeneralizations/ClassEquationPublic.lean/declarations/sum-conjclasses-card-eq-card.md) | 34 | `result-track:8bf791055a09798f2fa93be06db914b555a4239682096e134a9a964a1395923b` |
-| 2 | `theorem` | [Group.sum_card_conj_classes_eq_card](../../../../GroupTheoryAndGeneralizations/ClassEquationPublic.lean/declarations/group-sum-card-conj-classes-eq-card.md) | 41 | `result-track:cfefef51954ce093d31ef9dbac441105c0f361381485c2bf8f633f5fcaf3c852` |
-| 3 | `theorem` | [Group.nat_card_center_add_sum_card_noncenter_eq_card](../../../../GroupTheoryAndGeneralizations/ClassEquationPublic.lean/declarations/group-nat-card-center-add-sum-card-noncenter-eq-card.md) | 50 | `result-track:57e6e65df3dbb3b691871359466cba53290a244849a69e1cfa46ae4f0a7af3b5` |
-| 4 | `theorem` | [Group.card_center_add_sum_card_noncenter_eq_card](../../../../GroupTheoryAndGeneralizations/ClassEquationPublic.lean/declarations/group-card-center-add-sum-card-noncenter-eq-card.md) | 75 | `result-track:ba563fce4225c05f4ed0b97214c3a29bd4a5ffc3e59654a1fc3d1758df8f6a47` |
+| 1 | `theorem` | [sum_conjClasses_card_eq_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ClassEquationPublic.lean/declarations/sum-conjclasses-card-eq-card.md) | 34 | `result-track:8bf791055a09798f2fa93be06db914b555a4239682096e134a9a964a1395923b` |
+| 2 | `theorem` | [Group.sum_card_conj_classes_eq_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ClassEquationPublic.lean/declarations/group-sum-card-conj-classes-eq-card.md) | 41 | `result-track:cfefef51954ce093d31ef9dbac441105c0f361381485c2bf8f633f5fcaf3c852` |
+| 3 | `theorem` | [Group.nat_card_center_add_sum_card_noncenter_eq_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ClassEquationPublic.lean/declarations/group-nat-card-center-add-sum-card-noncenter-eq-card.md) | 50 | `result-track:57e6e65df3dbb3b691871359466cba53290a244849a69e1cfa46ae4f0a7af3b5` |
+| 4 | `theorem` | [Group.card_center_add_sum_card_noncenter_eq_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ClassEquationPublic.lean/declarations/group-card-center-add-sum-card-noncenter-eq-card.md) | 75 | `result-track:ba563fce4225c05f4ed0b97214c3a29bd4a5ffc3e59654a1fc3d1758df8f6a47` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptimizationNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptimizationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptimizationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptimizationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OptimizationReceipt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptimizationNamespaced.lean/declarations/optimizationreceipt.md) | 14 | `declaration-track:e48e336bd32f0308c58af657b4169be30d3e49c253e447a92d2daa3ef64d05ca` |
-| 2 | `def` | [OptimizationReceipt.accepted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptimizationNamespaced.lean/declarations/optimizationreceipt-accepted.md) | 21 | `declaration-track:6798b5ca7c97fc68b336e80c6963195c149346c118ac9c68ee1e0ffcff025819` |
-| 3 | `theorem` | [OptimizationReceipt.not_claim_bearing_if_accepted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptimizationNamespaced.lean/declarations/optimizationreceipt-not-claim-bearing-if-accepted.md) | 24 | `result-track:6a66230ff410079ddcda884c1d53fc5a5b3f7c22dd7f1e2224a88ff8583d96ee` |
+| 1 | `structure` | [OptimizationReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptimizationNamespaced.lean/declarations/optimizationreceipt.md) | 14 | `declaration-track:e48e336bd32f0308c58af657b4169be30d3e49c253e447a92d2daa3ef64d05ca` |
+| 2 | `def` | [OptimizationReceipt.accepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptimizationNamespaced.lean/declarations/optimizationreceipt-accepted.md) | 21 | `declaration-track:6798b5ca7c97fc68b336e80c6963195c149346c118ac9c68ee1e0ffcff025819` |
+| 3 | `theorem` | [OptimizationReceipt.not_claim_bearing_if_accepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptimizationNamespaced.lean/declarations/optimizationreceipt-not-claim-bearing-if-accepted.md) | 24 | `result-track:6a66230ff410079ddcda884c1d53fc5a5b3f7c22dd7f1e2224a88ff8583d96ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

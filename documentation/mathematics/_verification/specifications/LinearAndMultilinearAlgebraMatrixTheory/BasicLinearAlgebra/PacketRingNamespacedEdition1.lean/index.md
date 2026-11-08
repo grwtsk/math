@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingNamespacedEdition1.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [PacketRingState](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingNamespacedEdition1.lean/declarations/packetringstate.md) | 25 | `declaration-track:8f26d9863e8bbce63ec751d5f231d2be32594827436bcb2bbc54bd0beeaf057c` |
-| 2 | `def` | [latestPayloadAndMatrixObservation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingNamespacedEdition1.lean/declarations/latestpayloadandmatrixobservation.md) | 33 | `declaration-track:55afc5e691e834eb6de06df5b12794fc0522f7acb01619f477b48c9386d5ae82` |
+| 1 | `abbrev` | [PacketRingState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingNamespacedEdition1.lean/declarations/packetringstate.md) | 25 | `declaration-track:8f26d9863e8bbce63ec751d5f231d2be32594827436bcb2bbc54bd0beeaf057c` |
+| 2 | `def` | [latestPayloadAndMatrixObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingNamespacedEdition1.lean/declarations/latestpayloadandmatrixobservation.md) | 33 | `declaration-track:55afc5e691e834eb6de06df5b12794fc0522f7acb01619f477b48c9386d5ae82` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

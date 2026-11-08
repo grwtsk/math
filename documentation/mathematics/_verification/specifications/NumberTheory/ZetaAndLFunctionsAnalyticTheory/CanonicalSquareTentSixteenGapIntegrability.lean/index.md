@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenGapIntegrability.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenGapIntegrability.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenGapIntegrability.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenGapIntegrability.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenPivot`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenPivot.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenPivot`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenPivot.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.Tactic` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [stageThreeSixteenGap_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenGapIntegrability.lean/declarations/stagethreesixteengap-nonnegative.md) | 27 | `result-track:542123a738ef7a1515376c7b02f6722420501653e6cddec82d5a182a3eb495bc` |
-| 2 | `theorem` | [stageFourSixteenGap_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenGapIntegrability.lean/declarations/stagefoursixteengap-nonnegative.md) | 50 | `result-track:d4e89ab142e00e0ab17ea0a98a150ce018072c105ab4e0d8e8577042f2f481bd` |
-| 3 | `theorem` | [stageThreeSixteenGap_integrableOn](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenGapIntegrability.lean/declarations/stagethreesixteengap-integrableon.md) | 73 | `result-track:554e23fd5e627e0dc753232aca97d59b3072595a300a74c7070a77b898bf80aa` |
-| 4 | `theorem` | [stageFourSixteenGap_integrableOn](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenGapIntegrability.lean/declarations/stagefoursixteengap-integrableon.md) | 79 | `result-track:2556495b04c4a4158d3291f20955d10239b6a5f01357a5aa657c1da2f78453f4` |
+| 1 | `theorem` | [stageThreeSixteenGap_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenGapIntegrability.lean/declarations/stagethreesixteengap-nonnegative.md) | 27 | `result-track:542123a738ef7a1515376c7b02f6722420501653e6cddec82d5a182a3eb495bc` |
+| 2 | `theorem` | [stageFourSixteenGap_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenGapIntegrability.lean/declarations/stagefoursixteengap-nonnegative.md) | 50 | `result-track:d4e89ab142e00e0ab17ea0a98a150ce018072c105ab4e0d8e8577042f2f481bd` |
+| 3 | `theorem` | [stageThreeSixteenGap_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenGapIntegrability.lean/declarations/stagethreesixteengap-integrableon.md) | 73 | `result-track:554e23fd5e627e0dc753232aca97d59b3072595a300a74c7070a77b898bf80aa` |
+| 4 | `theorem` | [stageFourSixteenGap_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenGapIntegrability.lean/declarations/stagefoursixteengap-integrableon.md) | 79 | `result-track:2556495b04c4a4158d3291f20955d10239b6a5f01357a5aa657c1da2f78453f4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

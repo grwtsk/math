@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ComplexSourceBudget.lean/index.md) · [Full source](../../../../RealFunctions/ComplexSourceBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ComplexSourceBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ComplexSourceBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [source_lower_bound](../../../../RealFunctions/ComplexSourceBudget.lean/declarations/source-lower-bound.md) | 24 | `result-track:916ee0cc23a1fb42a09b2d10311e3e6988c5f2a8a7a8a342b03fde707da03832` |
-| 2 | `theorem` | [source_complex_error](../../../../RealFunctions/ComplexSourceBudget.lean/declarations/source-complex-error.md) | 41 | `result-track:6ccb3bb90998d6b8c96cf4d9227e9dcfc0544e8eabc802649ea095fc4f99233b` |
-| 3 | `theorem` | [source_real_error](../../../../RealFunctions/ComplexSourceBudget.lean/declarations/source-real-error.md) | 63 | `result-track:cecbdf0ced94f3e84da60bc7f699cd387a2dff2c3742818305598fe0c41318d9` |
-| 4 | `theorem` | [source_imaginary_error](../../../../RealFunctions/ComplexSourceBudget.lean/declarations/source-imaginary-error.md) | 78 | `result-track:f60131fde91806b2a7c77ca42943e6678be40fbf5e760ea5d1a6e991d2b0a398` |
+| 1 | `theorem` | [source_lower_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ComplexSourceBudget.lean/declarations/source-lower-bound.md) | 24 | `result-track:916ee0cc23a1fb42a09b2d10311e3e6988c5f2a8a7a8a342b03fde707da03832` |
+| 2 | `theorem` | [source_complex_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ComplexSourceBudget.lean/declarations/source-complex-error.md) | 41 | `result-track:6ccb3bb90998d6b8c96cf4d9227e9dcfc0544e8eabc802649ea095fc4f99233b` |
+| 3 | `theorem` | [source_real_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ComplexSourceBudget.lean/declarations/source-real-error.md) | 63 | `result-track:cecbdf0ced94f3e84da60bc7f699cd387a2dff2c3742818305598fe0c41318d9` |
+| 4 | `theorem` | [source_imaginary_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ComplexSourceBudget.lean/declarations/source-imaginary-error.md) | 78 | `result-track:f60131fde91806b2a7c77ca42943e6678be40fbf5e760ea5d1a6e991d2b0a398` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

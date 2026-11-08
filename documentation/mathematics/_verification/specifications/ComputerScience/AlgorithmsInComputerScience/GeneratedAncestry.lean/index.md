@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/GeneratedAncestry.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/GeneratedAncestry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GeneratedAncestry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GeneratedAncestry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [GeneratorKind](../../../../../ComputerScience/AlgorithmsInComputerScience/GeneratedAncestry.lean/declarations/generatorkind.md) | 16 | `declaration-track:941e87c7a3263051e9ea5d4f35bd5b79cbcf7d21284eeb1d634d901070f7088b` |
-| 2 | `structure` | [GeneratedAncestry](../../../../../ComputerScience/AlgorithmsInComputerScience/GeneratedAncestry.lean/declarations/generatedancestry.md) | 25 | `declaration-track:7a9dd54b6d57d1f458046828b4b3e1ccaa4779b3ffa23118beccc05aefd40180` |
-| 3 | `structure` | [GeneratedReingestion](../../../../../ComputerScience/AlgorithmsInComputerScience/GeneratedAncestry.lean/declarations/generatedreingestion.md) | 40 | `declaration-track:69714bd0719bf6c01ada6cd3c47aaeb5ea4039409055f2072723ed9284115b85` |
-| 4 | `theorem` | [GeneratedReingestion.retains_generator](../../../../../ComputerScience/AlgorithmsInComputerScience/GeneratedAncestry.lean/declarations/generatedreingestion-retains-generator.md) | 48 | `result-track:4510197bd6776e54dc1ff9def6ea980ff9a3baad767e7fab5d773424d7fb9e1e` |
+| 1 | `inductive` | [GeneratorKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GeneratedAncestry.lean/declarations/generatorkind.md) | 16 | `declaration-track:941e87c7a3263051e9ea5d4f35bd5b79cbcf7d21284eeb1d634d901070f7088b` |
+| 2 | `structure` | [GeneratedAncestry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GeneratedAncestry.lean/declarations/generatedancestry.md) | 25 | `declaration-track:7a9dd54b6d57d1f458046828b4b3e1ccaa4779b3ffa23118beccc05aefd40180` |
+| 3 | `structure` | [GeneratedReingestion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GeneratedAncestry.lean/declarations/generatedreingestion.md) | 40 | `declaration-track:69714bd0719bf6c01ada6cd3c47aaeb5ea4039409055f2072723ed9284115b85` |
+| 4 | `theorem` | [GeneratedReingestion.retains_generator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GeneratedAncestry.lean/declarations/generatedreingestion-retains-generator.md) | 48 | `result-track:4510197bd6776e54dc1ff9def6ea980ff9a3baad767e7fab5d773424d7fb9e1e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualBumpTransformEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualBumpTransformEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualBumpTransformEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualBumpTransformEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualBumpInteriorTransform_eq](../../../../MeasureAndIntegration/SourceActualBumpTransformEdition2.lean/declarations/actualbumpinteriortransform-eq.md) | 22 | `result-track:1803632d6a2d79a9c826ea2c007eb7647d7679ce0710c4625e9dc4215ab6435c` |
-| 2 | `theorem` | [actualSecondInteriorTransform_eq](../../../../MeasureAndIntegration/SourceActualBumpTransformEdition2.lean/declarations/actualsecondinteriortransform-eq.md) | 50 | `result-track:a168d9bb4288bda8c51cb428b6bec74e14135e35a0cbf62a52951d5994fd7dd6` |
-| 3 | `theorem` | [actualSourceComplexTransform_eq_bump](../../../../MeasureAndIntegration/SourceActualBumpTransformEdition2.lean/declarations/actualsourcecomplextransform-eq-bump.md) | 91 | `result-track:01ef929994d05e6d91e87cc0d67ec6706144419e32d6a4ba8dfdea9770794f9b` |
-| 4 | `theorem` | [actualBilateralCorrelationTransform_eq_bump](../../../../MeasureAndIntegration/SourceActualBumpTransformEdition2.lean/declarations/actualbilateralcorrelationtransform-eq-bump.md) | 123 | `result-track:aab90912d3d21259c1806489f3fd0ccfeb6dabcd2e9bad9c702a531fe0895361` |
+| 1 | `theorem` | [actualBumpInteriorTransform_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualBumpTransformEdition2.lean/declarations/actualbumpinteriortransform-eq.md) | 22 | `result-track:1803632d6a2d79a9c826ea2c007eb7647d7679ce0710c4625e9dc4215ab6435c` |
+| 2 | `theorem` | [actualSecondInteriorTransform_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualBumpTransformEdition2.lean/declarations/actualsecondinteriortransform-eq.md) | 50 | `result-track:a168d9bb4288bda8c51cb428b6bec74e14135e35a0cbf62a52951d5994fd7dd6` |
+| 3 | `theorem` | [actualSourceComplexTransform_eq_bump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualBumpTransformEdition2.lean/declarations/actualsourcecomplextransform-eq-bump.md) | 91 | `result-track:01ef929994d05e6d91e87cc0d67ec6706144419e32d6a4ba8dfdea9770794f9b` |
+| 4 | `theorem` | [actualBilateralCorrelationTransform_eq_bump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualBumpTransformEdition2.lean/declarations/actualbilateralcorrelationtransform-eq-bump.md) | 123 | `result-track:aab90912d3d21259c1806489f3fd0ccfeb6dabcd2e9bad9c702a531fe0895361` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

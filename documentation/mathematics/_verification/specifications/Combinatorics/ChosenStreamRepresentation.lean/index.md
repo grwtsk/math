@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ChosenStreamRepresentation.lean/index.md) · [Full source](../../../../Combinatorics/ChosenStreamRepresentation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChosenStreamRepresentation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChosenStreamRepresentation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `BitMatrix.Carrier.Address` — import line 17; external provider; requires a separately pinned dependency.
-- [Boolean Function Data And Xor](../../../../Combinatorics/BooleanFunctionDataAndXor.lean/index.md) — import line 19; pinned internal source present.
+- [Boolean Function Data And Xor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanFunctionDataAndXor.lean/index.md) — import line 19; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DesignatedCantorRepresentation](../../../../Combinatorics/ChosenStreamRepresentation.lean/declarations/designatedcantorrepresentation.md) | 40 | `declaration-track:247139a5e95df8ac41596099f3a3a438c56ce007256ca4efd36a00b708477d0c` |
-| 2 | `def` | [symbolicCantorRepresentation](../../../../Combinatorics/ChosenStreamRepresentation.lean/declarations/symboliccantorrepresentation.md) | 50 | `declaration-track:4d91edd35d4f2d510c3e94370cb9c772c14a816a80a2a3c44041d6ada08a88fb` |
-| 3 | `theorem` | [symbolicCantorRepresentation_theta](../../../../Combinatorics/ChosenStreamRepresentation.lean/declarations/symboliccantorrepresentation-theta.md) | 55 | `result-track:686e1cf29c47c33d873d9079f309b5c830a00bdc1d253894911f54b61c6b4f7f` |
-| 4 | `def` | [digits](../../../../Combinatorics/ChosenStreamRepresentation.lean/declarations/digits.md) | 62 | `declaration-track:7046b8b680a21cce1a904f13c8502536c85615d97ff0a540e2abfec50286886f` |
-| 5 | `theorem` | [theta_injective](../../../../Combinatorics/ChosenStreamRepresentation.lean/declarations/theta-injective.md) | 66 | `result-track:bc670b00089fd4d51cf24335cbf864480ce171cedad6647ee95b7079bbb8345a` |
-| 6 | `theorem` | [theta_surjective](../../../../Combinatorics/ChosenStreamRepresentation.lean/declarations/theta-surjective.md) | 70 | `result-track:1572eb548a3e4241aa496c94b395c26b3eb634a624a6abc8f32611376beaf30d` |
-| 7 | `theorem` | [digits_theta](../../../../Combinatorics/ChosenStreamRepresentation.lean/declarations/digits-theta.md) | 75 | `result-track:0a0b5e82eb25d0b24a29a0f75c4d0ec44f6d05dc851a6ae5f60542ac4402985d` |
-| 8 | `theorem` | [theta_digits](../../../../Combinatorics/ChosenStreamRepresentation.lean/declarations/theta-digits.md) | 82 | `result-track:7e1bad2b95cf6702e3c016e46f9aaba0625cf52b70713c3d4064f70d98e5880d` |
-| 9 | `def` | [zeroScalar](../../../../Combinatorics/ChosenStreamRepresentation.lean/declarations/zeroscalar.md) | 95 | `declaration-track:5973625197505390c8e48f7954aa0de47c0a3ff1e6ad12c62cf169985e1a60ed` |
-| 10 | `theorem` | [DesignatedCantorRepresentation.digits_zeroScalar](../../../../Combinatorics/ChosenStreamRepresentation.lean/declarations/designatedcantorrepresentation-digits-zeroscalar.md) | 100 | `result-track:37d0573f797ec4c61b2b75499370ec8d3d61c33e7e9ff99791437b393b706ac8` |
+| 1 | `structure` | [DesignatedCantorRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChosenStreamRepresentation.lean/declarations/designatedcantorrepresentation.md) | 40 | `declaration-track:247139a5e95df8ac41596099f3a3a438c56ce007256ca4efd36a00b708477d0c` |
+| 2 | `def` | [symbolicCantorRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChosenStreamRepresentation.lean/declarations/symboliccantorrepresentation.md) | 50 | `declaration-track:4d91edd35d4f2d510c3e94370cb9c772c14a816a80a2a3c44041d6ada08a88fb` |
+| 3 | `theorem` | [symbolicCantorRepresentation_theta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChosenStreamRepresentation.lean/declarations/symboliccantorrepresentation-theta.md) | 55 | `result-track:686e1cf29c47c33d873d9079f309b5c830a00bdc1d253894911f54b61c6b4f7f` |
+| 4 | `def` | [digits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChosenStreamRepresentation.lean/declarations/digits.md) | 62 | `declaration-track:7046b8b680a21cce1a904f13c8502536c85615d97ff0a540e2abfec50286886f` |
+| 5 | `theorem` | [theta_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChosenStreamRepresentation.lean/declarations/theta-injective.md) | 66 | `result-track:bc670b00089fd4d51cf24335cbf864480ce171cedad6647ee95b7079bbb8345a` |
+| 6 | `theorem` | [theta_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChosenStreamRepresentation.lean/declarations/theta-surjective.md) | 70 | `result-track:1572eb548a3e4241aa496c94b395c26b3eb634a624a6abc8f32611376beaf30d` |
+| 7 | `theorem` | [digits_theta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChosenStreamRepresentation.lean/declarations/digits-theta.md) | 75 | `result-track:0a0b5e82eb25d0b24a29a0f75c4d0ec44f6d05dc851a6ae5f60542ac4402985d` |
+| 8 | `theorem` | [theta_digits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChosenStreamRepresentation.lean/declarations/theta-digits.md) | 82 | `result-track:7e1bad2b95cf6702e3c016e46f9aaba0625cf52b70713c3d4064f70d98e5880d` |
+| 9 | `def` | [zeroScalar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChosenStreamRepresentation.lean/declarations/zeroscalar.md) | 95 | `declaration-track:5973625197505390c8e48f7954aa0de47c0a3ff1e6ad12c62cf169985e1a60ed` |
+| 10 | `theorem` | [DesignatedCantorRepresentation.digits_zeroScalar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChosenStreamRepresentation.lean/declarations/designatedcantorrepresentation-digits-zeroscalar.md) | 100 | `result-track:37d0573f797ec4c61b2b75499370ec8d3d61c33e7e9ff99791437b393b706ac8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

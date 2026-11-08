@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceAttempt1NamespacedCompactAutocorrelationCurvature.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceAttempt1NamespacedCompactAutocorrelationCurvature.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAttempt1NamespacedCompactAutocorrelationCurvature.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAttempt1NamespacedCompactAutocorrelationCurvature.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [compact_autocorrelation_curvature](../../../../MeasureAndIntegration/SourceAttempt1NamespacedCompactAutocorrelationCurvature.lean/declarations/compact-autocorrelation-curvature.md) | 32 | `result-track:2f6bf50aa9e97d1246f6055b7071e762ebf50ca76eb53afe1e6cd314ff046e24` |
-| 2 | `theorem` | [primitiveCorrelationZero_second_deriv_eq_neg_one](../../../../MeasureAndIntegration/SourceAttempt1NamespacedCompactAutocorrelationCurvature.lean/declarations/primitivecorrelationzero-second-deriv-eq-neg-one.md) | 74 | `result-track:e1182c81106f23defe8a4dd5a2e12e04414ca934ae2ef9687c6e5445dba1361c` |
-| 3 | `theorem` | [primitiveCorrelationOne_second_deriv_eq_neg_two](../../../../MeasureAndIntegration/SourceAttempt1NamespacedCompactAutocorrelationCurvature.lean/declarations/primitivecorrelationone-second-deriv-eq-neg-two.md) | 83 | `result-track:7d882e4569a02efada1b3f25e712a55729ea5cf41e64971c47b32610d4abab08` |
+| 1 | `theorem` | [compact_autocorrelation_curvature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAttempt1NamespacedCompactAutocorrelationCurvature.lean/declarations/compact-autocorrelation-curvature.md) | 32 | `result-track:2f6bf50aa9e97d1246f6055b7071e762ebf50ca76eb53afe1e6cd314ff046e24` |
+| 2 | `theorem` | [primitiveCorrelationZero_second_deriv_eq_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAttempt1NamespacedCompactAutocorrelationCurvature.lean/declarations/primitivecorrelationzero-second-deriv-eq-neg-one.md) | 74 | `result-track:e1182c81106f23defe8a4dd5a2e12e04414ca934ae2ef9687c6e5445dba1361c` |
+| 3 | `theorem` | [primitiveCorrelationOne_second_deriv_eq_neg_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAttempt1NamespacedCompactAutocorrelationCurvature.lean/declarations/primitivecorrelationone-second-deriv-eq-neg-two.md) | 83 | `result-track:7d882e4569a02efada1b3f25e712a55729ea5cf41e64971c47b32610d4abab08` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

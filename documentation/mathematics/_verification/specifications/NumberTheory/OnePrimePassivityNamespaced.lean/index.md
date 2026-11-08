@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/OnePrimePassivityNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/OnePrimePassivityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OnePrimePassivityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OnePrimePassivityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FixedPrimeFinitePassivity](../../../../NumberTheory/OnePrimePassivityNamespaced.lean/declarations/fixedprimefinitepassivity.md) | 20 | `declaration-track:ee671ead8eca92b2102838fa8d362f1036bae941c8ed76bee3576b0c23b7ed59` |
-| 2 | `structure` | [UniformPrimeFinitePassivity](../../../../NumberTheory/OnePrimePassivityNamespaced.lean/declarations/uniformprimefinitepassivity.md) | 26 | `declaration-track:2ce757c4edef2feb4978591407562aee0ab6b7bc81fd39a893c7e87bfb574a6a` |
-| 3 | `structure` | [CompressionExhaustion](../../../../NumberTheory/OnePrimePassivityNamespaced.lean/declarations/compressionexhaustion.md) | 34 | `declaration-track:5fb0306a5b73d923851f7d1dea0e0dbed05b9d3e92f45bbb862ef4807120cad4` |
-| 4 | `structure` | [OnePrimeConditionalPassivity](../../../../NumberTheory/OnePrimePassivityNamespaced.lean/declarations/oneprimeconditionalpassivity.md) | 44 | `declaration-track:1596c1315bbff2556635ad85431bd9aefe16a5efed0aa2c23d61e4eaa89f8af4` |
+| 1 | `structure` | [FixedPrimeFinitePassivity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OnePrimePassivityNamespaced.lean/declarations/fixedprimefinitepassivity.md) | 20 | `declaration-track:ee671ead8eca92b2102838fa8d362f1036bae941c8ed76bee3576b0c23b7ed59` |
+| 2 | `structure` | [UniformPrimeFinitePassivity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OnePrimePassivityNamespaced.lean/declarations/uniformprimefinitepassivity.md) | 26 | `declaration-track:2ce757c4edef2feb4978591407562aee0ab6b7bc81fd39a893c7e87bfb574a6a` |
+| 3 | `structure` | [CompressionExhaustion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OnePrimePassivityNamespaced.lean/declarations/compressionexhaustion.md) | 34 | `declaration-track:5fb0306a5b73d923851f7d1dea0e0dbed05b9d3e92f45bbb862ef4807120cad4` |
+| 4 | `structure` | [OnePrimeConditionalPassivity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OnePrimePassivityNamespaced.lean/declarations/oneprimeconditionalpassivity.md) | 44 | `declaration-track:1596c1315bbff2556635ad85431bd9aefe16a5efed0aa2c23d61e4eaa89f8af4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

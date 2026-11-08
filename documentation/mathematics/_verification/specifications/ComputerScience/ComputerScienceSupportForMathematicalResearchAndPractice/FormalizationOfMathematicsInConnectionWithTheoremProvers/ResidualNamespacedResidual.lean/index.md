@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResidualNamespacedResidual.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResidualNamespacedResidual.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResidualNamespacedResidual.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResidualNamespacedResidual.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Residual](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResidualNamespacedResidual.lean/declarations/residual.md) | 15 | `declaration-track:82302dd85dfe45d7545d619eac3bb61cd983fc360d65118cc70e1bc3a67e8ded` |
-| 2 | `def` | [Residual.total](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResidualNamespacedResidual.lean/declarations/residual-total.md) | 23 | `declaration-track:1072f67423e6a1008ef758acef997d9fbbd2515a5df772425598e4a4303af386` |
-| 3 | `def` | [Residual.Nonnegative](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResidualNamespacedResidual.lean/declarations/residual-nonnegative.md) | 31 | `declaration-track:7dd5a46434ef3cf1c9b35964980f0599f45c9cd7c89476ad31f56811b0f1c013` |
+| 1 | `structure` | [Residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResidualNamespacedResidual.lean/declarations/residual.md) | 15 | `declaration-track:82302dd85dfe45d7545d619eac3bb61cd983fc360d65118cc70e1bc3a67e8ded` |
+| 2 | `def` | [Residual.total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResidualNamespacedResidual.lean/declarations/residual-total.md) | 23 | `declaration-track:1072f67423e6a1008ef758acef997d9fbbd2515a5df772425598e4a4303af386` |
+| 3 | `def` | [Residual.Nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResidualNamespacedResidual.lean/declarations/residual-nonnegative.md) | 31 | `declaration-track:7dd5a46434ef3cf1c9b35964980f0599f45c9cd7c89476ad31f56811b0f1c013` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

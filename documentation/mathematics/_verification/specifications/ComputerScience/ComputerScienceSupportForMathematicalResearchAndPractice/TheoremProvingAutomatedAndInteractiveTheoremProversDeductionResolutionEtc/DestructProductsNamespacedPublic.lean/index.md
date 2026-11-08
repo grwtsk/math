@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DestructProductsNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DestructProductsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DestructProductsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DestructProductsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [destructProductHyp?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DestructProductsNamespacedPublic.lean/declarations/destructproducthyp.md) | 25 | `declaration-track:ece93a2aedb8f285a26560723ce8085f5e397ffd03a25040b9a0057356c3bd8e` |
-| 2 | `def` | [destructProductsCore](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DestructProductsNamespacedPublic.lean/declarations/destructproductscore.md) | 94 | `declaration-track:447198c2021319051acea6273537e83af867444382833f15da2e6fb2e29b6788` |
-| 3 | `def` | [destructProducts](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DestructProductsNamespacedPublic.lean/declarations/destructproducts.md) | 132 | `declaration-track:1b797c58bc065602afeffc92e21c921104539fdd8506c97d37daab087fa8c2ee` |
+| 1 | `def` | [destructProductHyp?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DestructProductsNamespacedPublic.lean/declarations/destructproducthyp.md) | 25 | `declaration-track:ece93a2aedb8f285a26560723ce8085f5e397ffd03a25040b9a0057356c3bd8e` |
+| 2 | `def` | [destructProductsCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DestructProductsNamespacedPublic.lean/declarations/destructproductscore.md) | 94 | `declaration-track:447198c2021319051acea6273537e83af867444382833f15da2e6fb2e29b6788` |
+| 3 | `def` | [destructProducts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DestructProductsNamespacedPublic.lean/declarations/destructproducts.md) | 132 | `declaration-track:1b797c58bc065602afeffc92e21c921104539fdd8506c97d37daab087fa8c2ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

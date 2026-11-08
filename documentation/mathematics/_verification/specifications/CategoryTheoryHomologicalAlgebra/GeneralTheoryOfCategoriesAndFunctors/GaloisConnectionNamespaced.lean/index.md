@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisConnectionNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisConnectionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisConnectionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisConnectionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [GaloisConnection.adjunction](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisConnectionNamespaced.lean/declarations/galoisconnection-adjunction.md) | 35 | `declaration-track:c7db8af0fec8457c14569a4e51fcd894f10fc8f4ec8c745dbfebd67cc1337a18` |
-| 2 | `theorem` | [Adjunction.gc](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisConnectionNamespaced.lean/declarations/adjunction-gc.md) | 52 | `result-track:c34e6fa9b855d29f850191e63a197ab73b4ec15428345c2bcf25bd084de61b2a` |
+| 1 | `def` | [GaloisConnection.adjunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisConnectionNamespaced.lean/declarations/galoisconnection-adjunction.md) | 35 | `declaration-track:c7db8af0fec8457c14569a4e51fcd894f10fc8f4ec8c745dbfebd67cc1337a18` |
+| 2 | `theorem` | [Adjunction.gc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisConnectionNamespaced.lean/declarations/adjunction-gc.md) | 52 | `result-track:c34e6fa9b855d29f850191e63a197ab73b4ec15428345c2bcf25bd084de61b2a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

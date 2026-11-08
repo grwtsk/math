@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SymmetricStreamNamespacedSymmetricMatrixStream.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SymmetricStreamNamespacedSymmetricMatrixStream.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SymmetricStreamNamespacedSymmetricMatrixStream.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SymmetricStreamNamespacedSymmetricMatrixStream.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SymmetricMatrixStream](../../../../../ComputerScience/AlgorithmsInComputerScience/SymmetricStreamNamespacedSymmetricMatrixStream.lean/declarations/symmetricmatrixstream.md) | 27 | `declaration-track:7a5c696edcaab6f649092191ce85ba869f04c0dc78728ca265a8a3feab8dddbb` |
-| 2 | `def` | [materialize?](../../../../../ComputerScience/AlgorithmsInComputerScience/SymmetricStreamNamespacedSymmetricMatrixStream.lean/declarations/materialize.md) | 35 | `declaration-track:05e9445d020f3242c8e76ac5bba77d77ed7bc2a10a65b34514687ee8ca856f73` |
-| 3 | `def` | [binaryMatrixStreamOfList](../../../../../ComputerScience/AlgorithmsInComputerScience/SymmetricStreamNamespacedSymmetricMatrixStream.lean/declarations/binarymatrixstreamoflist.md) | 47 | `declaration-track:fcacc8326c606974f86a67aaf08d02d1bb9e150921211511396ad8a439e1c902` |
-| 4 | `def` | [copyAtomStream](../../../../../ComputerScience/AlgorithmsInComputerScience/SymmetricStreamNamespacedSymmetricMatrixStream.lean/declarations/copyatomstream.md) | 53 | `declaration-track:fe69de2189e2df5a459ab46aebb1057435ca23090f26257ac79fbebf90f7de9e` |
-| 5 | `theorem` | [materialize_copy_atom_stream](../../../../../ComputerScience/AlgorithmsInComputerScience/SymmetricStreamNamespacedSymmetricMatrixStream.lean/declarations/materialize-copy-atom-stream.md) | 67 | `result-track:cb01207b6b7d0d0e3cb3f831cc95782934afcd287bdec408aea7c94f0b6708a6` |
+| 1 | `structure` | [SymmetricMatrixStream](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SymmetricStreamNamespacedSymmetricMatrixStream.lean/declarations/symmetricmatrixstream.md) | 27 | `declaration-track:7a5c696edcaab6f649092191ce85ba869f04c0dc78728ca265a8a3feab8dddbb` |
+| 2 | `def` | [materialize?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SymmetricStreamNamespacedSymmetricMatrixStream.lean/declarations/materialize.md) | 35 | `declaration-track:05e9445d020f3242c8e76ac5bba77d77ed7bc2a10a65b34514687ee8ca856f73` |
+| 3 | `def` | [binaryMatrixStreamOfList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SymmetricStreamNamespacedSymmetricMatrixStream.lean/declarations/binarymatrixstreamoflist.md) | 47 | `declaration-track:fcacc8326c606974f86a67aaf08d02d1bb9e150921211511396ad8a439e1c902` |
+| 4 | `def` | [copyAtomStream](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SymmetricStreamNamespacedSymmetricMatrixStream.lean/declarations/copyatomstream.md) | 53 | `declaration-track:fe69de2189e2df5a459ab46aebb1057435ca23090f26257ac79fbebf90f7de9e` |
+| 5 | `theorem` | [materialize_copy_atom_stream](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SymmetricStreamNamespacedSymmetricMatrixStream.lean/declarations/materialize-copy-atom-stream.md) | 67 | `result-track:cb01207b6b7d0d0e3cb3f831cc95782934afcd287bdec408aea7c94f0b6708a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

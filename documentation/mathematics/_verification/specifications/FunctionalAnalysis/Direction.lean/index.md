@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/Direction.lean/index.md) · [Full source](../../../../FunctionalAnalysis/Direction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Direction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Direction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [AmbientPoint](../../../../FunctionalAnalysis/Direction.lean/declarations/ambientpoint.md) | 13 | `declaration-track:23fc37fe489d077c919e3422c008e2fa7ae9a7aed81008e105a6f1117e458f0e` |
-| 2 | `structure` | [Direction](../../../../FunctionalAnalysis/Direction.lean/declarations/direction.md) | 17 | `declaration-track:0be56809d02d5f883226c9610d1fd893d027fe0ceb1dc71713a0f3d9ea0b614e` |
-| 3 | `theorem` | [Direction.nonzero](../../../../FunctionalAnalysis/Direction.lean/declarations/direction-nonzero.md) | 21 | `result-track:3ad95c0691aa53bebd8d843250898286c5f3a1a2ec4955528f4b6963d9defe0a` |
+| 1 | `abbrev` | [AmbientPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Direction.lean/declarations/ambientpoint.md) | 13 | `declaration-track:23fc37fe489d077c919e3422c008e2fa7ae9a7aed81008e105a6f1117e458f0e` |
+| 2 | `structure` | [Direction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Direction.lean/declarations/direction.md) | 17 | `declaration-track:0be56809d02d5f883226c9610d1fd893d027fe0ceb1dc71713a0f3d9ea0b614e` |
+| 3 | `theorem` | [Direction.nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Direction.lean/declarations/direction-nonzero.md) | 21 | `result-track:3ad95c0691aa53bebd8d843250898286c5f3a1a2ec4955528f4b6963d9defe0a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreLengthCoefficientBoundaryWitness.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreLengthCoefficientBoundaryWitness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreLengthCoefficientBoundaryWitness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreLengthCoefficientBoundaryWitness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.CoreLengthCoefficientMass`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreLengthCoefficientMass.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CoreLengthCoefficientMass`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreLengthCoefficientMass.lean/index.md) — import line 11; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [leftCoefficientDepths_card](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreLengthCoefficientBoundaryWitness.lean/declarations/leftcoefficientdepths-card.md) | 20 | `result-track:8d1be88851c7e0a8e8507f0a944ec389c383af0f72c383326c63cdaeffc662ab` |
-| 2 | `theorem` | [leftLengthCoefficientMass_at_leftScale](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreLengthCoefficientBoundaryWitness.lean/declarations/leftlengthcoefficientmass-at-leftscale.md) | 37 | `result-track:893ce7f81b706e1b047167354b7be402a12b675245ad27816e7d90fb3b6d1f5a` |
-| 3 | `theorem` | [leftLengthCoefficientMass_at_leftScale_le_inv](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreLengthCoefficientBoundaryWitness.lean/declarations/leftlengthcoefficientmass-at-leftscale-le-inv.md) | 88 | `result-track:466c53eb8bd97a8891f654156b32bd32a705b452ffdd3249502e078792e3c2be` |
-| 4 | `def` | [PiecewiseReciprocalLengthCoefficientMassBound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreLengthCoefficientBoundaryWitness.lean/declarations/piecewisereciprocallengthcoefficientmassbound.md) | 117 | `declaration-track:3eba6c7b6458cd9602c2e7571cb7c0251cf3db74e1be17b9c889a7925dd1cb4a` |
-| 5 | `structure` | [CoefficientMassBoundaryWitness](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreLengthCoefficientBoundaryWitness.lean/declarations/coefficientmassboundarywitness.md) | 129 | `declaration-track:e889e8b28a9df1cdd8e7421bdcb1310837839c6a2173b481b88fa7c7cf560053` |
+| 1 | `theorem` | [leftCoefficientDepths_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreLengthCoefficientBoundaryWitness.lean/declarations/leftcoefficientdepths-card.md) | 20 | `result-track:8d1be88851c7e0a8e8507f0a944ec389c383af0f72c383326c63cdaeffc662ab` |
+| 2 | `theorem` | [leftLengthCoefficientMass_at_leftScale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreLengthCoefficientBoundaryWitness.lean/declarations/leftlengthcoefficientmass-at-leftscale.md) | 37 | `result-track:893ce7f81b706e1b047167354b7be402a12b675245ad27816e7d90fb3b6d1f5a` |
+| 3 | `theorem` | [leftLengthCoefficientMass_at_leftScale_le_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreLengthCoefficientBoundaryWitness.lean/declarations/leftlengthcoefficientmass-at-leftscale-le-inv.md) | 88 | `result-track:466c53eb8bd97a8891f654156b32bd32a705b452ffdd3249502e078792e3c2be` |
+| 4 | `def` | [PiecewiseReciprocalLengthCoefficientMassBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreLengthCoefficientBoundaryWitness.lean/declarations/piecewisereciprocallengthcoefficientmassbound.md) | 117 | `declaration-track:3eba6c7b6458cd9602c2e7571cb7c0251cf3db74e1be17b9c889a7925dd1cb4a` |
+| 5 | `structure` | [CoefficientMassBoundaryWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreLengthCoefficientBoundaryWitness.lean/declarations/coefficientmassboundarywitness.md) | 129 | `declaration-track:e889e8b28a9df1cdd8e7421bdcb1310837839c6a2173b481b88fa7c7cf560053` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

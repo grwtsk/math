@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectralRealizationNamespacedZeroSpectrumRealization.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralRealizationNamespacedZeroSpectrumRealization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationNamespacedZeroSpectrumRealization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationNamespacedZeroSpectrumRealization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ZeroSpectrumRealization](../../../../FunctionalAnalysis/SpectralRealizationNamespacedZeroSpectrumRealization.lean/declarations/zerospectrumrealization.md) | 36 | `declaration-track:6f4caa7f4365e27ca769b51d7b01eb7581bb56bdc3d536f5453f296012ae6955` |
-| 2 | `theorem` | [D_selfAdjoint](../../../../FunctionalAnalysis/SpectralRealizationNamespacedZeroSpectrumRealization.lean/declarations/d-selfadjoint.md) | 40 | `result-track:7cb2ee56d1aaecc750680143e38709043cab3512edfc332c76eec72ba6d7f12a` |
-| 3 | `theorem` | [D_compactResolvent](../../../../FunctionalAnalysis/SpectralRealizationNamespacedZeroSpectrumRealization.lean/declarations/d-compactresolvent.md) | 46 | `result-track:164f281351e2a79329232358b93430a12b3fa5436f928aeab6d040a1eb519aa7` |
-| 4 | `theorem` | [spectrum_real_of_selfAdjoint](../../../../FunctionalAnalysis/SpectralRealizationNamespacedZeroSpectrumRealization.lean/declarations/spectrum-real-of-selfadjoint.md) | 52 | `result-track:8c49824f841d4c32b96c555a4351b8113d76ce9080fafb05610f47e01b0f2acf` |
-| 5 | `theorem` | [zero_spectrum_realization_has_parameter_map](../../../../FunctionalAnalysis/SpectralRealizationNamespacedZeroSpectrumRealization.lean/declarations/zero-spectrum-realization-has-parameter-map.md) | 59 | `result-track:6c8c5fa1e6951459284ff1385e9705e40726e8941a2743968a15aa46d3cac789` |
-| 6 | `theorem` | [h0_zero_iff_spectral_point](../../../../FunctionalAnalysis/SpectralRealizationNamespacedZeroSpectrumRealization.lean/declarations/h0-zero-iff-spectral-point.md) | 65 | `result-track:3ffda5ed21de94b819ae67feb37ee4f66c675e7d64e1a74da6a5325cffe98d5a` |
+| 1 | `structure` | [ZeroSpectrumRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationNamespacedZeroSpectrumRealization.lean/declarations/zerospectrumrealization.md) | 36 | `declaration-track:6f4caa7f4365e27ca769b51d7b01eb7581bb56bdc3d536f5453f296012ae6955` |
+| 2 | `theorem` | [D_selfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationNamespacedZeroSpectrumRealization.lean/declarations/d-selfadjoint.md) | 40 | `result-track:7cb2ee56d1aaecc750680143e38709043cab3512edfc332c76eec72ba6d7f12a` |
+| 3 | `theorem` | [D_compactResolvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationNamespacedZeroSpectrumRealization.lean/declarations/d-compactresolvent.md) | 46 | `result-track:164f281351e2a79329232358b93430a12b3fa5436f928aeab6d040a1eb519aa7` |
+| 4 | `theorem` | [spectrum_real_of_selfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationNamespacedZeroSpectrumRealization.lean/declarations/spectrum-real-of-selfadjoint.md) | 52 | `result-track:8c49824f841d4c32b96c555a4351b8113d76ce9080fafb05610f47e01b0f2acf` |
+| 5 | `theorem` | [zero_spectrum_realization_has_parameter_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationNamespacedZeroSpectrumRealization.lean/declarations/zero-spectrum-realization-has-parameter-map.md) | 59 | `result-track:6c8c5fa1e6951459284ff1385e9705e40726e8941a2743968a15aa46d3cac789` |
+| 6 | `theorem` | [h0_zero_iff_spectral_point](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationNamespacedZeroSpectrumRealization.lean/declarations/h0-zero-iff-spectral-point.md) | 65 | `result-track:3ffda5ed21de94b819ae67feb37ee4f66c675e7d64e1a74da6a5325cffe98d5a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

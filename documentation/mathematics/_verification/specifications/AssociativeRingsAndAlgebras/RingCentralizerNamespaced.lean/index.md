@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingCentralizerNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingCentralizerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingCentralizerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingCentralizerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [add_mem_centralizer](../../../../AssociativeRingsAndAlgebras/RingCentralizerNamespaced.lean/declarations/add-mem-centralizer.md) | 30 | `result-track:f3ca72eb5c9856e40eb9b1f858852f271883b5570ba9ae1f40684d456444d4a8` |
-| 2 | `theorem` | [neg_mem_centralizer](../../../../AssociativeRingsAndAlgebras/RingCentralizerNamespaced.lean/declarations/neg-mem-centralizer.md) | 34 | `result-track:cd057e578656db0d248030f51eafb226fb977dbd907c81ed0371980116178f8a` |
+| 1 | `theorem` | [add_mem_centralizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingCentralizerNamespaced.lean/declarations/add-mem-centralizer.md) | 30 | `result-track:f3ca72eb5c9856e40eb9b1f858852f271883b5570ba9ae1f40684d456444d4a8` |
+| 2 | `theorem` | [neg_mem_centralizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingCentralizerNamespaced.lean/declarations/neg-mem-centralizer.md) | 34 | `result-track:cd057e578656db0d248030f51eafb226fb977dbd907c81ed0371980116178f8a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

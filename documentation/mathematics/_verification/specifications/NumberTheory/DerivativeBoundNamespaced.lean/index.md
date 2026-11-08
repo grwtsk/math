@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/DerivativeBoundNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/DerivativeBoundNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DerivativeBoundNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DerivativeBoundNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -74,7 +74,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [derivativeBound](../../../../NumberTheory/DerivativeBoundNamespaced.lean/declarations/derivativebound.md) | 60 | `result-track:9ebdedcf6a465d75f342d8e61de01f35b607646305e96fa91ef7b13be5fdf545` |
+| 1 | `theorem` | [derivativeBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DerivativeBoundNamespaced.lean/declarations/derivativebound.md) | 60 | `result-track:9ebdedcf6a465d75f342d8e61de01f35b607646305e96fa91ef7b13be5fdf545` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.Polynomial.SignedRootTrace`](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Algebra.Polynomial.SignedRootTrace`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/index.md) — import line 2; pinned internal source present.
 - `Mathlib.Tactic.NormNum` — import line 3; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/declarations/example-source-edition-8.md) | 11 | `declaration-track:b2ecaf7e186b30cfa5a07b8ae46de72fa69a68abc75ffaf237ead75cec62bd65` |
-| 2 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/declarations/example-source-edition-6.md) | 19 | `declaration-track:7f21a7fef4d303a56abc44d9acd9221f72dfa58220b8c0c8e05667efc61075d2` |
-| 3 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/declarations/example-source-edition-7.md) | 24 | `declaration-track:b2056b5fde015ecf5629c07e76ea88b9943f4ed009d79ee526e14d6788df972f` |
-| 4 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/declarations/example-source-edition-3.md) | 34 | `declaration-track:2ee0370354426627cfa9d57fd30975d356c7a539b803a0dc0067fb47a062066c` |
-| 5 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/declarations/example.md) | 41 | `declaration-track:0098565c2f3baddf31a963710eb55714d3f1cdfcfc34face88c7dda0495d9d49` |
-| 6 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/declarations/example-source-edition-4.md) | 47 | `declaration-track:57603dd5a5f55dacafa7464eca5a5f9ea3c5c8ff3cfab85f40cf3f1986c1e34a` |
-| 7 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/declarations/example-source-edition-9.md) | 51 | `declaration-track:b62cf862d502ab15cc236b8689d5d569c0868d7b087e32d5457127ef9b8c4890` |
-| 8 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/declarations/example-source-edition-5.md) | 55 | `declaration-track:77cf3c1127338e89978dd6738e6a93b8bb7710a962105d84056b4ce88791b58b` |
-| 9 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/declarations/example-source-edition-2.md) | 60 | `declaration-track:2793ae21b8a532e517f4a029fd11218ae7a8a70ece172eb21f83f1f62b4e78cb` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/declarations/example-source-edition-8.md) | 11 | `declaration-track:b2ecaf7e186b30cfa5a07b8ae46de72fa69a68abc75ffaf237ead75cec62bd65` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/declarations/example-source-edition-6.md) | 19 | `declaration-track:7f21a7fef4d303a56abc44d9acd9221f72dfa58220b8c0c8e05667efc61075d2` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/declarations/example-source-edition-7.md) | 24 | `declaration-track:b2056b5fde015ecf5629c07e76ea88b9943f4ed009d79ee526e14d6788df972f` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/declarations/example-source-edition-3.md) | 34 | `declaration-track:2ee0370354426627cfa9d57fd30975d356c7a539b803a0dc0067fb47a062066c` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/declarations/example.md) | 41 | `declaration-track:0098565c2f3baddf31a963710eb55714d3f1cdfcfc34face88c7dda0495d9d49` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/declarations/example-source-edition-4.md) | 47 | `declaration-track:57603dd5a5f55dacafa7464eca5a5f9ea3c5c8ff3cfab85f40cf3f1986c1e34a` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/declarations/example-source-edition-9.md) | 51 | `declaration-track:b62cf862d502ab15cc236b8689d5d569c0868d7b087e32d5457127ef9b8c4890` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/declarations/example-source-edition-5.md) | 55 | `declaration-track:77cf3c1127338e89978dd6738e6a93b8bb7710a962105d84056b4ce88791b58b` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveSignedRootTrace.lean/declarations/example-source-edition-2.md) | 60 | `declaration-track:2793ae21b8a532e517f4a029fd11218ae7a8a70ece172eb21f83f1f62b4e78cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

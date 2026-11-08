@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MainHfnMirror.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MainHfnMirror.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MainHfnMirror.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MainHfnMirror.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Hfn_mirror](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MainHfnMirror.lean/declarations/hfn-mirror.md) | 23 | `result-track:c7a2979358af492a8303e7777dfc3befceee7c94cb7e0f258753918596b56705` |
-| 2 | `theorem` | [EF_lit_zeta](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MainHfnMirror.lean/declarations/ef-lit-zeta.md) | 51 | `result-track:58c221ceaed53c039df2d82b29198299c0567b0b0eaea15eb1a122ad92c409a1` |
-| 3 | `theorem` | [EF_lit_zetaZeroConfig](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MainHfnMirror.lean/declarations/ef-lit-zetazeroconfig.md) | 270 | `result-track:93a87fc5ff517cf8061a7e860112eae0159967a168c97c22b356ade603a3e8e0` |
+| 1 | `theorem` | [Hfn_mirror](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MainHfnMirror.lean/declarations/hfn-mirror.md) | 23 | `result-track:c7a2979358af492a8303e7777dfc3befceee7c94cb7e0f258753918596b56705` |
+| 2 | `theorem` | [EF_lit_zeta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MainHfnMirror.lean/declarations/ef-lit-zeta.md) | 51 | `result-track:58c221ceaed53c039df2d82b29198299c0567b0b0eaea15eb1a122ad92c409a1` |
+| 3 | `theorem` | [EF_lit_zetaZeroConfig](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MainHfnMirror.lean/declarations/ef-lit-zetazeroconfig.md) | 270 | `result-track:93a87fc5ff517cf8061a7e860112eae0159967a168c97c22b356ade603a3e8e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

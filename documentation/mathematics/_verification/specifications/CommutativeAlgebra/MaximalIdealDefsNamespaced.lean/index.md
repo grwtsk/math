@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MaximalIdealDefsNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MaximalIdealDefsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalIdealDefsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalIdealDefsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [maximalIdeal](../../../../CommutativeAlgebra/MaximalIdealDefsNamespaced.lean/declarations/maximalideal.md) | 34 | `declaration-track:edd40e91d155eededbdf220760a2d743ca37d82dbf5aef8d1b3db2533bb647ba` |
+| 1 | `def` | [maximalIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalIdealDefsNamespaced.lean/declarations/maximalideal.md) | 34 | `declaration-track:edd40e91d155eededbdf220760a2d743ca37d82dbf5aef8d1b3db2533bb647ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

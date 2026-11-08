@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/AFreeRegularActionRetainsANonzeroCommonTraceEdition1.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/AFreeRegularActionRetainsANonzeroCommonTraceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AFreeRegularActionRetainsANonzeroCommonTraceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AFreeRegularActionRetainsANonzeroCommonTraceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [regularRepresentation](../../../../GroupTheoryAndGeneralizations/AFreeRegularActionRetainsANonzeroCommonTraceEdition1.lean/declarations/regularrepresentation.md) | 27 | `declaration-track:40542a0edbbd8b08b06e6c38077df08b866505a90b1f0b163ccdf11a8109eb66` |
-| 2 | `def` | [pointMass](../../../../GroupTheoryAndGeneralizations/AFreeRegularActionRetainsANonzeroCommonTraceEdition1.lean/declarations/pointmass.md) | 39 | `declaration-track:863cf8c1da6db04cf219f6f588624776a25b43cc2b24cf6004e6e8cce7e36156` |
-| 3 | `theorem` | [left_regular_action_free](../../../../GroupTheoryAndGeneralizations/AFreeRegularActionRetainsANonzeroCommonTraceEdition1.lean/declarations/left-regular-action-free.md) | 42 | `result-track:db89437d69311d4e28186aa808b4f84d8128cc6dd22de4a7e190e3a960af2678` |
-| 4 | `theorem` | [point_mass_trace_one](../../../../GroupTheoryAndGeneralizations/AFreeRegularActionRetainsANonzeroCommonTraceEdition1.lean/declarations/point-mass-trace-one.md) | 46 | `result-track:5ffbea998d6717e910dee447ae052c93e2c47265ece79fef16db6affe578721e` |
-| 5 | `theorem` | [free_orbit_has_nonzero_trace](../../../../GroupTheoryAndGeneralizations/AFreeRegularActionRetainsANonzeroCommonTraceEdition1.lean/declarations/free-orbit-has-nonzero-trace.md) | 53 | `result-track:5fbb02d2c49f6b2057562ced4a699ab0f52acc4173aeb18f1875f071fbbd145d` |
-| 6 | `theorem` | [common_trace_readout_survives](../../../../GroupTheoryAndGeneralizations/AFreeRegularActionRetainsANonzeroCommonTraceEdition1.lean/declarations/common-trace-readout-survives.md) | 62 | `result-track:7049a5960f9db7ab8024deeab6a5bfefa6f5c533afed5b7ca43f096e4271cd94` |
+| 1 | `def` | [regularRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AFreeRegularActionRetainsANonzeroCommonTraceEdition1.lean/declarations/regularrepresentation.md) | 27 | `declaration-track:40542a0edbbd8b08b06e6c38077df08b866505a90b1f0b163ccdf11a8109eb66` |
+| 2 | `def` | [pointMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AFreeRegularActionRetainsANonzeroCommonTraceEdition1.lean/declarations/pointmass.md) | 39 | `declaration-track:863cf8c1da6db04cf219f6f588624776a25b43cc2b24cf6004e6e8cce7e36156` |
+| 3 | `theorem` | [left_regular_action_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AFreeRegularActionRetainsANonzeroCommonTraceEdition1.lean/declarations/left-regular-action-free.md) | 42 | `result-track:db89437d69311d4e28186aa808b4f84d8128cc6dd22de4a7e190e3a960af2678` |
+| 4 | `theorem` | [point_mass_trace_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AFreeRegularActionRetainsANonzeroCommonTraceEdition1.lean/declarations/point-mass-trace-one.md) | 46 | `result-track:5ffbea998d6717e910dee447ae052c93e2c47265ece79fef16db6affe578721e` |
+| 5 | `theorem` | [free_orbit_has_nonzero_trace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AFreeRegularActionRetainsANonzeroCommonTraceEdition1.lean/declarations/free-orbit-has-nonzero-trace.md) | 53 | `result-track:5fbb02d2c49f6b2057562ced4a699ab0f52acc4173aeb18f1875f071fbbd145d` |
+| 6 | `theorem` | [common_trace_readout_survives](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AFreeRegularActionRetainsANonzeroCommonTraceEdition1.lean/declarations/common-trace-readout-survives.md) | 62 | `result-track:7049a5960f9db7ab8024deeab6a5bfefa6f5c533afed5b7ca43f096e4271cd94` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

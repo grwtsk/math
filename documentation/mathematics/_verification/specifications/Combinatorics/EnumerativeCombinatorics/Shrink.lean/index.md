@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/Shrink.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/Shrink.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Shrink.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Shrink.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Shrink.instFintype](../../../../../Combinatorics/EnumerativeCombinatorics/Shrink.lean/declarations/shrink-instfintype.md) | 16 | `declaration-track:23ceffcb473abd6880cd5bdc3f442d30e1b1c24cb5d046e0c446e7d29ad13671` |
-| 2 | `instance` | [Shrink.instFinite](../../../../../Combinatorics/EnumerativeCombinatorics/Shrink.lean/declarations/shrink-instfinite.md) | 18 | `declaration-track:33e9dda713898e1f18ac1e8258e57017db426928d57422f209e6f85fc2778aed` |
-| 3 | `lemma` | [Fintype.card_shrink](../../../../../Combinatorics/EnumerativeCombinatorics/Shrink.lean/declarations/fintype-card-shrink.md) | 21 | `result-track:c0470853f8920f5e0abfbd4f8ab3fa768a4a5a139dcad29b7e3aa21e312e533d` |
+| 1 | `instance` | [Shrink.instFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Shrink.lean/declarations/shrink-instfintype.md) | 16 | `declaration-track:23ceffcb473abd6880cd5bdc3f442d30e1b1c24cb5d046e0c446e7d29ad13671` |
+| 2 | `instance` | [Shrink.instFinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Shrink.lean/declarations/shrink-instfinite.md) | 18 | `declaration-track:33e9dda713898e1f18ac1e8258e57017db426928d57422f209e6f85fc2778aed` |
+| 3 | `lemma` | [Fintype.card_shrink](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Shrink.lean/declarations/fintype-card-shrink.md) | 21 | `result-track:c0470853f8920f5e0abfbd4f8ab3fa768a4a5a139dcad29b7e3aa21e312e533d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

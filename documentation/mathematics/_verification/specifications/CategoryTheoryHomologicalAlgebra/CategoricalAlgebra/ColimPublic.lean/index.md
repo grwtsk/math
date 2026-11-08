@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [colim.map_mono'](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/declarations/colim-map-mono.md) | 42 | `result-track:2a8e81d3623c049ed8e98f1523d3114bd4a77748d70d5b2ca1cfd62b195aa357` |
-| 2 | `lemma` | [colim.map_epi'](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/declarations/colim-map-epi.md) | 62 | `result-track:6c88d30010e56e6940e3d18d70ed10106e8c55a7b577f11e5e3f2ca1ddf2db53` |
-| 3 | `lemma` | [IsColimit.mono_ι_app_of_isFiltered](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/declarations/iscolimit-mono-app-of-isfiltered.md) | 77 | `result-track:e34ce280b840e4105f9f0f1c00237a9e2bd8b4720b07abc6b9ec96cc98974a38` |
-| 4 | `def` | [colim.mapShortComplex](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/declarations/colim-mapshortcomplex.md) | 107 | `declaration-track:382ebc58cf08de85c394f74efac5e2118816b96be0830deba4819920312ffdff` |
-| 5 | `lemma` | [colim.exact_mapShortComplex](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/declarations/colim-exact-mapshortcomplex.md) | 121 | `result-track:0caa6f523c4d3cc5a21c799bdcf30dc78b5f8ebafcf66c8fcedf1d8d6c5f89ea` |
-| 6 | `instance` | [isStableUnderColimitsOfShape_monomorphisms](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/declarations/isstableundercolimitsofshape-monomorphisms.md) | 149 | `declaration-track:e820b0caf43721b8a2ef86ac5840a291f389e497dd5e5db0f3dcb2ae28ceff7f` |
-| 7 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/declarations/instance-source-edition-2.md) | 157 | `declaration-track:b4a266c13bf36ffc1e3bd2290b63f98d775c199709d8e4f9c05d69a5639ee78e` |
-| 8 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/declarations/instance.md) | 160 | `declaration-track:6f0c2c5e174d283aacb23b0e93541db0f3cd7ea330355d57998fd60d1efcc29e` |
+| 1 | `lemma` | [colim.map_mono'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/declarations/colim-map-mono.md) | 42 | `result-track:2a8e81d3623c049ed8e98f1523d3114bd4a77748d70d5b2ca1cfd62b195aa357` |
+| 2 | `lemma` | [colim.map_epi'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/declarations/colim-map-epi.md) | 62 | `result-track:6c88d30010e56e6940e3d18d70ed10106e8c55a7b577f11e5e3f2ca1ddf2db53` |
+| 3 | `lemma` | [IsColimit.mono_ι_app_of_isFiltered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/declarations/iscolimit-mono-app-of-isfiltered.md) | 77 | `result-track:e34ce280b840e4105f9f0f1c00237a9e2bd8b4720b07abc6b9ec96cc98974a38` |
+| 4 | `def` | [colim.mapShortComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/declarations/colim-mapshortcomplex.md) | 107 | `declaration-track:382ebc58cf08de85c394f74efac5e2118816b96be0830deba4819920312ffdff` |
+| 5 | `lemma` | [colim.exact_mapShortComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/declarations/colim-exact-mapshortcomplex.md) | 121 | `result-track:0caa6f523c4d3cc5a21c799bdcf30dc78b5f8ebafcf66c8fcedf1d8d6c5f89ea` |
+| 6 | `instance` | [isStableUnderColimitsOfShape_monomorphisms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/declarations/isstableundercolimitsofshape-monomorphisms.md) | 149 | `declaration-track:e820b0caf43721b8a2ef86ac5840a291f389e497dd5e5db0f3dcb2ae28ceff7f` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/declarations/instance-source-edition-2.md) | 157 | `declaration-track:b4a266c13bf36ffc1e3bd2290b63f98d775c199709d8e4f9c05d69a5639ee78e` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimPublic.lean/declarations/instance.md) | 160 | `declaration-track:6f0c2c5e174d283aacb23b0e93541db0f3cd7ea330355d57998fd60d1efcc29e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

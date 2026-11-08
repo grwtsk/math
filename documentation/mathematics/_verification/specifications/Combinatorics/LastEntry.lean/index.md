@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/LastEntry.lean/index.md) · [Full source](../../../../Combinatorics/LastEntry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LastEntry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LastEntry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [lastBit?](../../../../Combinatorics/LastEntry.lean/declarations/lastbit.md) | 40 | `declaration-track:4c2f2f736c698facfaf1016dac1d694be40607a4ee3dcba558a40f57e70f5a39` |
-| 2 | `theorem` | [lastBit?_cons_ne_none](../../../../Combinatorics/LastEntry.lean/declarations/lastbit-cons-ne-none.md) | 46 | `result-track:72e5826dad664d4c9213525e18c6f5eb1ca13f4ad1d156bff3f65452d25e4606` |
+| 1 | `def` | [lastBit?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LastEntry.lean/declarations/lastbit.md) | 40 | `declaration-track:4c2f2f736c698facfaf1016dac1d694be40607a4ee3dcba558a40f57e70f5a39` |
+| 2 | `theorem` | [lastBit?_cons_ne_none](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LastEntry.lean/declarations/lastbit-cons-ne-none.md) | 46 | `result-track:72e5826dad664d4c9213525e18c6f5eb1ca13f4ad1d156bff3f65452d25e4606` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

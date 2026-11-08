@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaShellCancellation`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThetaShellCancellation.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicPrimeOnlyLiteralFormulas`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyLiteralFormulas.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaShellCancellation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThetaShellCancellation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicPrimeOnlyLiteralFormulas`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyLiteralFormulas.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thetaShellError_natCast_eq_primeOnlyEndpoint](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/declarations/thetashellerror-natcast-eq-primeonlyendpoint.md) | 45 | `result-track:ee6b8c4d674c5811c69069755143ffb44906dec3fe83ca6cdf64add3f139989f` |
-| 2 | `def` | [QuadraticThetaShellAnchorCancellationAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/declarations/quadraticthetashellanchorcancellationat.md) | 61 | `declaration-track:ad73a56f7f8ae2250a3aacf2dd3670ee8b346fcc85467fa5a4ca6c2fa7f2c651` |
-| 3 | `theorem` | [quadraticThetaShellCancellation_to_anchor](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/declarations/quadraticthetashellcancellation-to-anchor.md) | 79 | `result-track:87807e1c5ad9110a84dd1824f56ab0c966050682d1685653ad17b468b30dadb5` |
-| 4 | `def` | [QuadraticPrimeEndpointCancellationAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/declarations/quadraticprimeendpointcancellationat.md) | 100 | `declaration-track:86a8ac3ac585281ee61229a00d2077523c06618237e76587d27c6c7ca1aec1db` |
-| 5 | `theorem` | [quadraticThetaShellAnchorCancellation_iff_primeEndpoint](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/declarations/quadraticthetashellanchorcancellation-iff-primeendpoint.md) | 120 | `result-track:7c3162627df3676416d53c967ee12887d2d93f0d5ddfd6cb933dd53f45b251d9` |
-| 6 | `def` | [ThetaShellAnchorUniformizationAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/declarations/thetashellanchoruniformizationat.md) | 146 | `declaration-track:a61641efdd36878fa3a6b25987ce69bef2a9ac57dca729b3c5daaf1bd332ef98` |
-| 7 | `theorem` | [primeEndpointCancellation_uniformization_to_recurrence](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/declarations/primeendpointcancellation-uniformization-to-recurrence.md) | 152 | `result-track:17ccfcefcb5405d4fb7e8470577013ec97d09581c6eaae7385c507ef0c0edddd` |
-| 8 | `theorem` | [sevenEighths_primeEndpoint_uniformization_to_recurrence](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/declarations/seveneighths-primeendpoint-uniformization-to-recurrence.md) | 165 | `result-track:4b133cf2cd9e7832832261f7008525a08f2841aa9c362e0353b77742a1bb89ec` |
+| 1 | `theorem` | [thetaShellError_natCast_eq_primeOnlyEndpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/declarations/thetashellerror-natcast-eq-primeonlyendpoint.md) | 45 | `result-track:ee6b8c4d674c5811c69069755143ffb44906dec3fe83ca6cdf64add3f139989f` |
+| 2 | `def` | [QuadraticThetaShellAnchorCancellationAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/declarations/quadraticthetashellanchorcancellationat.md) | 61 | `declaration-track:ad73a56f7f8ae2250a3aacf2dd3670ee8b346fcc85467fa5a4ca6c2fa7f2c651` |
+| 3 | `theorem` | [quadraticThetaShellCancellation_to_anchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/declarations/quadraticthetashellcancellation-to-anchor.md) | 79 | `result-track:87807e1c5ad9110a84dd1824f56ab0c966050682d1685653ad17b468b30dadb5` |
+| 4 | `def` | [QuadraticPrimeEndpointCancellationAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/declarations/quadraticprimeendpointcancellationat.md) | 100 | `declaration-track:86a8ac3ac585281ee61229a00d2077523c06618237e76587d27c6c7ca1aec1db` |
+| 5 | `theorem` | [quadraticThetaShellAnchorCancellation_iff_primeEndpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/declarations/quadraticthetashellanchorcancellation-iff-primeendpoint.md) | 120 | `result-track:7c3162627df3676416d53c967ee12887d2d93f0d5ddfd6cb933dd53f45b251d9` |
+| 6 | `def` | [ThetaShellAnchorUniformizationAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/declarations/thetashellanchoruniformizationat.md) | 146 | `declaration-track:a61641efdd36878fa3a6b25987ce69bef2a9ac57dca729b3c5daaf1bd332ef98` |
+| 7 | `theorem` | [primeEndpointCancellation_uniformization_to_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/declarations/primeendpointcancellation-uniformization-to-recurrence.md) | 152 | `result-track:17ccfcefcb5405d4fb7e8470577013ec97d09581c6eaae7385c507ef0c0edddd` |
+| 8 | `theorem` | [sevenEighths_primeEndpoint_uniformization_to_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/declarations/seveneighths-primeendpoint-uniformization-to-recurrence.md) | 165 | `result-track:4b133cf2cd9e7832832261f7008525a08f2841aa9c362e0353b77742a1bb89ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

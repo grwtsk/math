@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CharacteristicFormulaNamespacedCrystallineCharacteristicFormula.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CharacteristicFormulaNamespacedCrystallineCharacteristicFormula.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CharacteristicFormulaNamespacedCrystallineCharacteristicFormula.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CharacteristicFormulaNamespacedCrystallineCharacteristicFormula.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CrystallineCharacteristicFormula](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CharacteristicFormulaNamespacedCrystallineCharacteristicFormula.lean/declarations/crystallinecharacteristicformula.md) | 35 | `declaration-track:b911248fda0a0094cee19dd0c359b705087d1c2e51106eb0772620c5dae1591f` |
-| 2 | `theorem` | [characteristic_formula_compatible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CharacteristicFormulaNamespacedCrystallineCharacteristicFormula.lean/declarations/characteristic-formula-compatible.md) | 51 | `result-track:399a0defc8358be028d4c49123c118706033a34b3a7cfe475a29f081dd0d6d41` |
-| 3 | `theorem` | [characteristic_formula_is_index_style](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CharacteristicFormulaNamespacedCrystallineCharacteristicFormula.lean/declarations/characteristic-formula-is-index-style.md) | 62 | `result-track:5a4e3e270afb789c58f371b818005b3fa48752a2185c895eebcccb17db4f6864` |
+| 1 | `structure` | [CrystallineCharacteristicFormula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CharacteristicFormulaNamespacedCrystallineCharacteristicFormula.lean/declarations/crystallinecharacteristicformula.md) | 35 | `declaration-track:b911248fda0a0094cee19dd0c359b705087d1c2e51106eb0772620c5dae1591f` |
+| 2 | `theorem` | [characteristic_formula_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CharacteristicFormulaNamespacedCrystallineCharacteristicFormula.lean/declarations/characteristic-formula-compatible.md) | 51 | `result-track:399a0defc8358be028d4c49123c118706033a34b3a7cfe475a29f081dd0d6d41` |
+| 3 | `theorem` | [characteristic_formula_is_index_style](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CharacteristicFormulaNamespacedCrystallineCharacteristicFormula.lean/declarations/characteristic-formula-is-index-style.md) | 62 | `result-track:5a4e3e270afb789c58f371b818005b3fa48752a2185c895eebcccb17db4f6864` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

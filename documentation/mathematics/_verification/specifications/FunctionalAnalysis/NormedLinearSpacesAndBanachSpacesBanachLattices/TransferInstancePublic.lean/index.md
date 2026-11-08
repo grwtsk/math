@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TransferInstancePublic.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TransferInstancePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TransferInstancePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TransferInstancePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [seminormedCommGroup](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TransferInstancePublic.lean/declarations/seminormedcommgroup.md) | 31 | `declaration-track:3896de4ad36d1e91b92714edf7db0c606f7fdef6d1c55ac92715cf62b891513f` |
-| 2 | `abbrev` | [normedCommGroup](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TransferInstancePublic.lean/declarations/normedcommgroup.md) | 38 | `declaration-track:851198501e0416de0b041adfb045bd2031ab4a4bce7d1aeadc2d9a0dd1b475ec` |
-| 3 | `abbrev` | [AddEquiv.normedSpace](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TransferInstancePublic.lean/declarations/addequiv-normedspace.md) | 46 | `declaration-track:db5d96ae8a96d1d2a2a222c10235fe371ffec18f088309b9913078477fa5ce02` |
+| 1 | `abbrev` | [seminormedCommGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TransferInstancePublic.lean/declarations/seminormedcommgroup.md) | 31 | `declaration-track:3896de4ad36d1e91b92714edf7db0c606f7fdef6d1c55ac92715cf62b891513f` |
+| 2 | `abbrev` | [normedCommGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TransferInstancePublic.lean/declarations/normedcommgroup.md) | 38 | `declaration-track:851198501e0416de0b041adfb045bd2031ab4a4bce7d1aeadc2d9a0dd1b475ec` |
+| 3 | `abbrev` | [AddEquiv.normedSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TransferInstancePublic.lean/declarations/addequiv-normedspace.md) | 46 | `declaration-track:db5d96ae8a96d1d2a2a222c10235fe371ffec18f088309b9913078477fa5ce02` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

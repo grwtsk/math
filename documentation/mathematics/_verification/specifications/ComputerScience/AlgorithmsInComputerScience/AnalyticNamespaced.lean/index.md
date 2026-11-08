@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AnalyticNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AnalyticNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AnalyticNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AnalyticNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,8 +63,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [conceptualBoundaries](../../../../../ComputerScience/AlgorithmsInComputerScience/AnalyticNamespaced.lean/declarations/conceptualboundaries.md) | 26 | `declaration-track:b346235f5ea34292d83dfd564b7639ab869af9a085c8a4d732b5acf7a5685186` |
-| 2 | `theorem` | [conceptualBoundaries_count](../../../../../ComputerScience/AlgorithmsInComputerScience/AnalyticNamespaced.lean/declarations/conceptualboundaries-count.md) | 36 | `result-track:d9c08e61a58d886ee1840544a57ebae148b0d1a86bce97e2fe4de434d7f925a4` |
+| 1 | `def` | [conceptualBoundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AnalyticNamespaced.lean/declarations/conceptualboundaries.md) | 26 | `declaration-track:b346235f5ea34292d83dfd564b7639ab869af9a085c8a4d732b5acf7a5685186` |
+| 2 | `theorem` | [conceptualBoundaries_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AnalyticNamespaced.lean/declarations/conceptualboundaries-count.md) | 36 | `result-track:d9c08e61a58d886ee1840544a57ebae148b0d1a86bce97e2fe4de434d7f925a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

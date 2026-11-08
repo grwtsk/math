@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/UnitReflectionBounds.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/UnitReflectionBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/UnitReflectionBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/UnitReflectionBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [norm_sub_one_le_one_add_norm](../../../../FunctionsOfAComplexVariable/UnitReflectionBounds.lean/declarations/norm-sub-one-le-one-add-norm.md) | 37 | `result-track:5a2c9135d2e69d3c2af223550ef75de4cde4ed9a3133e0ec1cef563bcea66d9a` |
-| 2 | `lemma` | [norm_one_sub_le_one_add_norm](../../../../FunctionsOfAComplexVariable/UnitReflectionBounds.lean/declarations/norm-one-sub-le-one-add-norm.md) | 42 | `result-track:f054dbfdf45aa92786d7fc9074f6c47faa81afe301dcc1872dd68d60f887c720` |
-| 3 | `lemma` | [one_le_norm_one_sub_of_norm_gt_three](../../../../FunctionsOfAComplexVariable/UnitReflectionBounds.lean/declarations/one-le-norm-one-sub-of-norm-gt-three.md) | 48 | `result-track:bc5c705598eb2227e78b49cb5eafd9a990984c6afda0b7ad6a0999d1345f6c07` |
-| 4 | `lemma` | [one_sub_ne_one_of_norm_pos](../../../../FunctionsOfAComplexVariable/UnitReflectionBounds.lean/declarations/one-sub-ne-one-of-norm-pos.md) | 57 | `result-track:811166220100c3c7898c40239d7a21435af93ac3108cc3b24b9370f3aa353440` |
+| 1 | `lemma` | [norm_sub_one_le_one_add_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/UnitReflectionBounds.lean/declarations/norm-sub-one-le-one-add-norm.md) | 37 | `result-track:5a2c9135d2e69d3c2af223550ef75de4cde4ed9a3133e0ec1cef563bcea66d9a` |
+| 2 | `lemma` | [norm_one_sub_le_one_add_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/UnitReflectionBounds.lean/declarations/norm-one-sub-le-one-add-norm.md) | 42 | `result-track:f054dbfdf45aa92786d7fc9074f6c47faa81afe301dcc1872dd68d60f887c720` |
+| 3 | `lemma` | [one_le_norm_one_sub_of_norm_gt_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/UnitReflectionBounds.lean/declarations/one-le-norm-one-sub-of-norm-gt-three.md) | 48 | `result-track:bc5c705598eb2227e78b49cb5eafd9a990984c6afda0b7ad6a0999d1345f6c07` |
+| 4 | `lemma` | [one_sub_ne_one_of_norm_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/UnitReflectionBounds.lean/declarations/one-sub-ne-one-of-norm-pos.md) | 57 | `result-track:811166220100c3c7898c40239d7a21435af93ac3108cc3b24b9370f3aa353440` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

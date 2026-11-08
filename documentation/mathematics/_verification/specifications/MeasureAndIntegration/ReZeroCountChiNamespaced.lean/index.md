@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ReZeroCountChiNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ReZeroCountChiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReZeroCountChiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReZeroCountChiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [symL](../../../../MeasureAndIntegration/ReZeroCountChiNamespaced.lean/declarations/syml.md) | 35 | `declaration-track:aae72c36d812970ce57a8eeb888503d7939e483b57fd5a7ecc82de9d3ff71839` |
-| 2 | `lemma` | [symL_analyticAt](../../../../MeasureAndIntegration/ReZeroCountChiNamespaced.lean/declarations/syml-analyticat.md) | 38 | `result-track:ddfe71bcc0f9149f408001dd268f622fb0acf2e32ac4235985aa2d3ff9548856` |
-| 3 | `lemma` | [symL_ofReal](../../../../MeasureAndIntegration/ReZeroCountChiNamespaced.lean/declarations/syml-ofreal.md) | 48 | `result-track:29aeaf2b26c9cf2350820180814d7fa04e51dca2a7de254ce3f62f0777c11531` |
-| 4 | `theorem` | [reZeroSetL_card_le_uniform](../../../../MeasureAndIntegration/ReZeroCountChiNamespaced.lean/declarations/rezerosetl-card-le-uniform.md) | 67 | `result-track:650f1f7e39358bdc771a6d18376fa5e88d35754f91057cfb83768aee89ee4eeb` |
-| 5 | `theorem` | [backlund_horizontalChi_uniform](../../../../MeasureAndIntegration/ReZeroCountChiNamespaced.lean/declarations/backlund-horizontalchi-uniform.md) | 291 | `result-track:3943aca56810bdbc865556995997efdeec9dbb4c4460079e72b249d8681b1811` |
-| 6 | `theorem` | [reZeroSetL_card_le](../../../../MeasureAndIntegration/ReZeroCountChiNamespaced.lean/declarations/rezerosetl-card-le.md) | 313 | `result-track:b9ea16a7cf2c98103847d4d6784dbcb642b187b476d3028b2a064bcdc4085098` |
-| 7 | `theorem` | [backlund_horizontalChi](../../../../MeasureAndIntegration/ReZeroCountChiNamespaced.lean/declarations/backlund-horizontalchi.md) | 334 | `result-track:d4578f9c1848c03d4b5b2ffdaf4d8f8301c2bce1c918d4a0ac908a2c2dda0784` |
+| 1 | `def` | [symL](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReZeroCountChiNamespaced.lean/declarations/syml.md) | 35 | `declaration-track:aae72c36d812970ce57a8eeb888503d7939e483b57fd5a7ecc82de9d3ff71839` |
+| 2 | `lemma` | [symL_analyticAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReZeroCountChiNamespaced.lean/declarations/syml-analyticat.md) | 38 | `result-track:ddfe71bcc0f9149f408001dd268f622fb0acf2e32ac4235985aa2d3ff9548856` |
+| 3 | `lemma` | [symL_ofReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReZeroCountChiNamespaced.lean/declarations/syml-ofreal.md) | 48 | `result-track:29aeaf2b26c9cf2350820180814d7fa04e51dca2a7de254ce3f62f0777c11531` |
+| 4 | `theorem` | [reZeroSetL_card_le_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReZeroCountChiNamespaced.lean/declarations/rezerosetl-card-le-uniform.md) | 67 | `result-track:650f1f7e39358bdc771a6d18376fa5e88d35754f91057cfb83768aee89ee4eeb` |
+| 5 | `theorem` | [backlund_horizontalChi_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReZeroCountChiNamespaced.lean/declarations/backlund-horizontalchi-uniform.md) | 291 | `result-track:3943aca56810bdbc865556995997efdeec9dbb4c4460079e72b249d8681b1811` |
+| 6 | `theorem` | [reZeroSetL_card_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReZeroCountChiNamespaced.lean/declarations/rezerosetl-card-le.md) | 313 | `result-track:b9ea16a7cf2c98103847d4d6784dbcb642b187b476d3028b2a064bcdc4085098` |
+| 7 | `theorem` | [backlund_horizontalChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReZeroCountChiNamespaced.lean/declarations/backlund-horizontalchi.md) | 334 | `result-track:d4578f9c1848c03d4b5b2ffdaf4d8f8301c2bce1c918d4a0ac908a2c2dda0784` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

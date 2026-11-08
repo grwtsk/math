@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ULiftPublicIterators.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ULiftPublicIterators.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ULiftPublicIterators.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ULiftPublicIterators.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Iterators.Types.ULiftIterator.modifyStep](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ULiftPublicIterators.lean/declarations/iterators-types-uliftiterator-modifystep.md) | 24 | `declaration-track:84d2ae127adc6f3ed50bcaefdf4459e03e9374b80201fc781450b95b307e09b0` |
-| 2 | `def` | [Iter.uLift](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ULiftPublicIterators.lean/declarations/iter-ulift.md) | 48 | `declaration-track:67dcd1ebd49b144a2666869f2ad1d6f0901da78b1cb5d66b833945adfc22caf1` |
+| 1 | `def` | [Iterators.Types.ULiftIterator.modifyStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ULiftPublicIterators.lean/declarations/iterators-types-uliftiterator-modifystep.md) | 24 | `declaration-track:84d2ae127adc6f3ed50bcaefdf4459e03e9374b80201fc781450b95b307e09b0` |
+| 2 | `def` | [Iter.uLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ULiftPublicIterators.lean/declarations/iter-ulift.md) | 48 | `declaration-track:67dcd1ebd49b144a2666869f2ad1d6f0901da78b1cb5d66b833945adfc22caf1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

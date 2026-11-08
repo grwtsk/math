@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/UnsignedHahn.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/UnsignedHahn.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/UnsignedHahn.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/UnsignedHahn.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hahn_decomposition](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/UnsignedHahn.lean/declarations/hahn-decomposition.md) | 36 | `result-track:31f5418a80862210ce74188d82e5222b03be204c4e3fe952e0d5ddd8573b0fc6` |
+| 1 | `theorem` | [hahn_decomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/UnsignedHahn.lean/declarations/hahn-decomposition.md) | 36 | `result-track:31f5418a80862210ce74188d82e5222b03be204c4e3fe952e0d5ddd8573b0fc6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

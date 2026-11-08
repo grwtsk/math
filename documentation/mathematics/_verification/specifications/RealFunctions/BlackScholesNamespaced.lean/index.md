@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/BlackScholesNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/BlackScholesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlackScholesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlackScholesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [discount_factor_lower](../../../../RealFunctions/BlackScholesNamespaced.lean/declarations/discount-factor-lower.md) | 48 | `result-track:0c5c09833a66d51d8d4152d8a6e7e11439b14492c7c27dbdd7dd7832e2292936` |
-| 2 | `theorem` | [discount_factor_upper](../../../../RealFunctions/BlackScholesNamespaced.lean/declarations/discount-factor-upper.md) | 52 | `result-track:2b72a008b61ba5f14d5132d013c14d198d43316df4dba14c53e116c0eb661153` |
-| 3 | `theorem` | [log_moneyness_upper](../../../../RealFunctions/BlackScholesNamespaced.lean/declarations/log-moneyness-upper.md) | 64 | `result-track:1f098b0e8ca87940fb6878626eca4428ac733a850a9eb11657f4256fe360852b` |
-| 4 | `theorem` | [log_moneyness_lower](../../../../RealFunctions/BlackScholesNamespaced.lean/declarations/log-moneyness-lower.md) | 68 | `result-track:69cad13495f7deed137c94a9ba46407ed189160a1dcfe115bcdbbe50eeb2d725` |
-| 5 | `theorem` | [gaussian_core_upper](../../../../RealFunctions/BlackScholesNamespaced.lean/declarations/gaussian-core-upper.md) | 84 | `result-track:c5ef9351f1cd407bdccc741890de87733552405fd8153ffad705597cf6e16fff` |
-| 6 | `theorem` | [gaussian_core_lower](../../../../RealFunctions/BlackScholesNamespaced.lean/declarations/gaussian-core-lower.md) | 88 | `result-track:a39af5ada379ebe2216b014fd211cee6bd51d256ea70f849cb0007b1e55f5756` |
-| 7 | `theorem` | [exp_negative_rate_bounds](../../../../RealFunctions/BlackScholesNamespaced.lean/declarations/exp-negative-rate-bounds.md) | 104 | `result-track:b34a37bae3e1aac4177150206261f1cfa25089cb5a17202fc61440859dd061fa` |
-| 8 | `theorem` | [erf_positive_upper](../../../../RealFunctions/BlackScholesNamespaced.lean/declarations/erf-positive-upper.md) | 119 | `result-track:5e5072d9a8824a6e002f54fbe2b2fed291fcd613b359788369912d04b7548b25` |
-| 9 | `theorem` | [erf_positive_lower](../../../../RealFunctions/BlackScholesNamespaced.lean/declarations/erf-positive-lower.md) | 123 | `result-track:5348b6aa66ebf73a7a4a131e0b52aeefc06a599ad06dbdcf3fe9ffaa04314b0b` |
-| 10 | `theorem` | [erf_near_zero_bounds](../../../../RealFunctions/BlackScholesNamespaced.lean/declarations/erf-near-zero-bounds.md) | 129 | `result-track:3cf761abaf6a7f80bbbc87a63fb6c38e4a89db67ec6b9ed28a7f988ef8f33111` |
-| 11 | `theorem` | [erf_large_positive](../../../../RealFunctions/BlackScholesNamespaced.lean/declarations/erf-large-positive.md) | 134 | `result-track:61a2e2c00cb99d16c5983cecdbd883bb82ded8136fe6024e7a78be7c884eaf3c` |
+| 1 | `theorem` | [discount_factor_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlackScholesNamespaced.lean/declarations/discount-factor-lower.md) | 48 | `result-track:0c5c09833a66d51d8d4152d8a6e7e11439b14492c7c27dbdd7dd7832e2292936` |
+| 2 | `theorem` | [discount_factor_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlackScholesNamespaced.lean/declarations/discount-factor-upper.md) | 52 | `result-track:2b72a008b61ba5f14d5132d013c14d198d43316df4dba14c53e116c0eb661153` |
+| 3 | `theorem` | [log_moneyness_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlackScholesNamespaced.lean/declarations/log-moneyness-upper.md) | 64 | `result-track:1f098b0e8ca87940fb6878626eca4428ac733a850a9eb11657f4256fe360852b` |
+| 4 | `theorem` | [log_moneyness_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlackScholesNamespaced.lean/declarations/log-moneyness-lower.md) | 68 | `result-track:69cad13495f7deed137c94a9ba46407ed189160a1dcfe115bcdbbe50eeb2d725` |
+| 5 | `theorem` | [gaussian_core_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlackScholesNamespaced.lean/declarations/gaussian-core-upper.md) | 84 | `result-track:c5ef9351f1cd407bdccc741890de87733552405fd8153ffad705597cf6e16fff` |
+| 6 | `theorem` | [gaussian_core_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlackScholesNamespaced.lean/declarations/gaussian-core-lower.md) | 88 | `result-track:a39af5ada379ebe2216b014fd211cee6bd51d256ea70f849cb0007b1e55f5756` |
+| 7 | `theorem` | [exp_negative_rate_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlackScholesNamespaced.lean/declarations/exp-negative-rate-bounds.md) | 104 | `result-track:b34a37bae3e1aac4177150206261f1cfa25089cb5a17202fc61440859dd061fa` |
+| 8 | `theorem` | [erf_positive_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlackScholesNamespaced.lean/declarations/erf-positive-upper.md) | 119 | `result-track:5e5072d9a8824a6e002f54fbe2b2fed291fcd613b359788369912d04b7548b25` |
+| 9 | `theorem` | [erf_positive_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlackScholesNamespaced.lean/declarations/erf-positive-lower.md) | 123 | `result-track:5348b6aa66ebf73a7a4a131e0b52aeefc06a599ad06dbdcf3fe9ffaa04314b0b` |
+| 10 | `theorem` | [erf_near_zero_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlackScholesNamespaced.lean/declarations/erf-near-zero-bounds.md) | 129 | `result-track:3cf761abaf6a7f80bbbc87a63fb6c38e4a89db67ec6b9ed28a7f988ef8f33111` |
+| 11 | `theorem` | [erf_large_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlackScholesNamespaced.lean/declarations/erf-large-positive.md) | 134 | `result-track:61a2e2c00cb99d16c5983cecdbd883bb82ded8136fe6024e7a78be7c884eaf3c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

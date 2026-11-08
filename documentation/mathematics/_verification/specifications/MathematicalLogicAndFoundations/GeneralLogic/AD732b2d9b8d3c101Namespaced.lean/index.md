@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD732b2d9b8d3c101Namespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD732b2d9b8d3c101Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD732b2d9b8d3c101Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD732b2d9b8d3c101Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [GeneratedParentAgreement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD732b2d9b8d3c101Namespaced.lean/declarations/generatedparentagreement.md) | 25 | `declaration-track:f58e9a33cf150e8d954d4c4b7c071c69e9097738fae8bf4b847f2bc25e423e8a` |
+| 1 | `def` | [GeneratedParentAgreement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD732b2d9b8d3c101Namespaced.lean/declarations/generatedparentagreement.md) | 25 | `declaration-track:f58e9a33cf150e8d954d4c4b7c071c69e9097738fae8bf4b847f2bc25e423e8a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

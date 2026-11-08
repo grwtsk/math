@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteAnchorLogObservation.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteAnchorLogObservation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteAnchorLogObservation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteAnchorLogObservation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.AnchoredPairGreenCoefficientBridge`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/AnchoredPairGreenCoefficientBridge.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.AnchoredPairGreenCoefficientBridge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/AnchoredPairGreenCoefficientBridge.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteAnchorLogObservation](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteAnchorLogObservation.lean/declarations/finiteanchorlogobservation.md) | 15 | `declaration-track:bfa36783e39be34b4fd7bec773a32372c1df50c39c1daf437b5f0e1869b0fd48` |
-| 2 | `theorem` | [finiteAnchorLogObservation_sub](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteAnchorLogObservation.lean/declarations/finiteanchorlogobservation-sub.md) | 19 | `result-track:60ea6d96b3f8b627f941b1f5a305c7e40b8dfbd5d96fe2acb7627eb76d7de761` |
-| 3 | `theorem` | [finiteAnchorLogObservation_diagonal](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteAnchorLogObservation.lean/declarations/finiteanchorlogobservation-diagonal.md) | 28 | `result-track:63293af6f4b1ba20f24b4f9b07a5fd5f1570ed658c376f81aa6eeee5ab42a030` |
-| 4 | `theorem` | [finiteAnchorLogObservation_kernel](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteAnchorLogObservation.lean/declarations/finiteanchorlogobservation-kernel.md) | 58 | `result-track:bf13d83e524358f259b8bef2b057e833127a2094da6f347a5f2e67665cbd1f2c` |
-| 5 | `theorem` | [finiteAnchorLogObservation_injective](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteAnchorLogObservation.lean/declarations/finiteanchorlogobservation-injective.md) | 72 | `result-track:4e90779c58b6dc29c6e0e24f4463eab8174391bbe01f7098f35ee346d1221326` |
-| 6 | `theorem` | [finiteAnchorLogObservation_moebius](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteAnchorLogObservation.lean/declarations/finiteanchorlogobservation-moebius.md) | 83 | `result-track:757abfcfda6116dab166593c25fadf13e4c98639c3789e3835f9153d08f3a8c5` |
+| 1 | `def` | [finiteAnchorLogObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteAnchorLogObservation.lean/declarations/finiteanchorlogobservation.md) | 15 | `declaration-track:bfa36783e39be34b4fd7bec773a32372c1df50c39c1daf437b5f0e1869b0fd48` |
+| 2 | `theorem` | [finiteAnchorLogObservation_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteAnchorLogObservation.lean/declarations/finiteanchorlogobservation-sub.md) | 19 | `result-track:60ea6d96b3f8b627f941b1f5a305c7e40b8dfbd5d96fe2acb7627eb76d7de761` |
+| 3 | `theorem` | [finiteAnchorLogObservation_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteAnchorLogObservation.lean/declarations/finiteanchorlogobservation-diagonal.md) | 28 | `result-track:63293af6f4b1ba20f24b4f9b07a5fd5f1570ed658c376f81aa6eeee5ab42a030` |
+| 4 | `theorem` | [finiteAnchorLogObservation_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteAnchorLogObservation.lean/declarations/finiteanchorlogobservation-kernel.md) | 58 | `result-track:bf13d83e524358f259b8bef2b057e833127a2094da6f347a5f2e67665cbd1f2c` |
+| 5 | `theorem` | [finiteAnchorLogObservation_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteAnchorLogObservation.lean/declarations/finiteanchorlogobservation-injective.md) | 72 | `result-track:4e90779c58b6dc29c6e0e24f4463eab8174391bbe01f7098f35ee346d1221326` |
+| 6 | `theorem` | [finiteAnchorLogObservation_moebius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteAnchorLogObservation.lean/declarations/finiteanchorlogobservation-moebius.md) | 83 | `result-track:757abfcfda6116dab166593c25fadf13e4c98639c3789e3835f9153d08f3a8c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

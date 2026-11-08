@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirectSumFinsuppNamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirectSumFinsuppNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirectSumFinsuppNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirectSumFinsuppNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finsuppLEquivDirectSum](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirectSumFinsuppNamespacedPublic.lean/declarations/finsupplequivdirectsum.md) | 45 | `declaration-track:fb2df67109f5174afa1a44e30b09472a26ce49a6a0a8d8b49fda250070f7e559` |
-| 2 | `theorem` | [finsuppLEquivDirectSum_single](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirectSumFinsuppNamespacedPublic.lean/declarations/finsupplequivdirectsum-single.md) | 50 | `result-track:a111deb83e4668ce0a19dfc40105a8e67652c5d15dbdd08e4f820c28ee9df94f` |
-| 3 | `theorem` | [finsuppLEquivDirectSum_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirectSumFinsuppNamespacedPublic.lean/declarations/finsupplequivdirectsum-apply.md) | 55 | `result-track:a8fe00056f29333161c0db70c4c21bbe373aaca7b32e3f21e8dfb1c4476de3ad` |
-| 4 | `theorem` | [finsuppLEquivDirectSum_symm_lof](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirectSumFinsuppNamespacedPublic.lean/declarations/finsupplequivdirectsum-symm-lof.md) | 60 | `result-track:1ef68826e2e4563010c10eb66aff228a536b74457ac0308fefab2bb55084fa5f` |
-| 5 | `theorem` | [lmap_finsuppLEquivDirectSum_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirectSumFinsuppNamespacedPublic.lean/declarations/lmap-finsupplequivdirectsum-eq.md) | 65 | `result-track:49fc4288544496ca04cf5005fa1685d1f85fbc088649866382ba498b3917bf93` |
+| 1 | `def` | [finsuppLEquivDirectSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirectSumFinsuppNamespacedPublic.lean/declarations/finsupplequivdirectsum.md) | 45 | `declaration-track:fb2df67109f5174afa1a44e30b09472a26ce49a6a0a8d8b49fda250070f7e559` |
+| 2 | `theorem` | [finsuppLEquivDirectSum_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirectSumFinsuppNamespacedPublic.lean/declarations/finsupplequivdirectsum-single.md) | 50 | `result-track:a111deb83e4668ce0a19dfc40105a8e67652c5d15dbdd08e4f820c28ee9df94f` |
+| 3 | `theorem` | [finsuppLEquivDirectSum_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirectSumFinsuppNamespacedPublic.lean/declarations/finsupplequivdirectsum-apply.md) | 55 | `result-track:a8fe00056f29333161c0db70c4c21bbe373aaca7b32e3f21e8dfb1c4476de3ad` |
+| 4 | `theorem` | [finsuppLEquivDirectSum_symm_lof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirectSumFinsuppNamespacedPublic.lean/declarations/finsupplequivdirectsum-symm-lof.md) | 60 | `result-track:1ef68826e2e4563010c10eb66aff228a536b74457ac0308fefab2bb55084fa5f` |
+| 5 | `theorem` | [lmap_finsuppLEquivDirectSum_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirectSumFinsuppNamespacedPublic.lean/declarations/lmap-finsupplequivdirectsum-eq.md) | 65 | `result-track:49fc4288544496ca04cf5005fa1685d1f85fbc088649866382ba498b3917bf93` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

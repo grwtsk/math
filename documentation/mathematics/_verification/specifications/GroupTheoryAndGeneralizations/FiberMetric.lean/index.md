@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/FiberMetric.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/FiberMetric.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiberMetric.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiberMetric.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiberGramField](../../../../GroupTheoryAndGeneralizations/FiberMetric.lean/declarations/fibergramfield.md) | 18 | `declaration-track:cacc2fcf4d57dab9a5e8a768ae67e176b2e5e860630b1b76fd0a8a6ce5ffc1af` |
-| 2 | `structure` | [ParallelFiberGram](../../../../GroupTheoryAndGeneralizations/FiberMetric.lean/declarations/parallelfibergram.md) | 37 | `declaration-track:9a3874f63ef3bf5c35e58270f230ee88c1571e7b853df44d37a2612b715a88a6` |
+| 1 | `structure` | [FiberGramField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiberMetric.lean/declarations/fibergramfield.md) | 18 | `declaration-track:cacc2fcf4d57dab9a5e8a768ae67e176b2e5e860630b1b76fd0a8a6ce5ffc1af` |
+| 2 | `structure` | [ParallelFiberGram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiberMetric.lean/declarations/parallelfibergram.md) | 37 | `declaration-track:9a3874f63ef3bf5c35e58270f230ee88c1571e7b853df44d37a2612b715a88a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

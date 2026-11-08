@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/InvSubmonoidPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/InvSubmonoidPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [invSubmonoid](../../../../CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/invsubmonoid.md) | 42 | `declaration-track:a8938426197d28f3ca92ebb08fb3bb86ec971500466449b52f2dbee5dfc18511` |
-| 2 | `theorem` | [submonoid_map_le_is_unit](../../../../CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/submonoid-map-le-is-unit.md) | 47 | `result-track:8691173114c875737b2527b151076c82b25555da8995d01c36f9209db5c0bc8f` |
-| 3 | `abbrev` | [equivInvSubmonoid](../../../../CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/equivinvsubmonoid.md) | 52 | `declaration-track:aa27cce29338f3b56e8a84d7d4f96e359b95b65ed82614c4dfae844224d00a94` |
-| 4 | `def` | [toInvSubmonoid](../../../../CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/toinvsubmonoid.md) | 56 | `declaration-track:2286475481d97f62bd36f6e8821d6e4efa778413a3e041cf143c50264f5953b6` |
-| 5 | `theorem` | [toInvSubmonoid_surjective](../../../../CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/toinvsubmonoid-surjective.md) | 59 | `result-track:875ef7c9950f5935ea81f963b6640613a10238a63b9cadc912f3efbca71ddb9c` |
-| 6 | `theorem` | [toInvSubmonoid_mul](../../../../CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/toinvsubmonoid-mul.md) | 64 | `result-track:7f0e28b483c70c0cb7a23b5e38ae344e137564d1a97a0d6241d50144c2d00911` |
-| 7 | `theorem` | [mul_toInvSubmonoid](../../../../CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/mul-toinvsubmonoid.md) | 68 | `result-track:1ea9b55a37e78a9df3d1f38608c1303c11062f4780fce20a420d6ed4e12d1bb3` |
-| 8 | `theorem` | [smul_toInvSubmonoid](../../../../CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/smul-toinvsubmonoid.md) | 72 | `result-track:9d54b6cf15cecab3b4a6781601014e2da53934945288b0b90cb5cdbfd6b217a6` |
-| 9 | `theorem` | [surj'](../../../../CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/surj.md) | 80 | `result-track:9d1ba8fb1d33c0930e20f765dbad3b4ef8bb02ab71bf88fd5758265cb39cdb43` |
-| 10 | `theorem` | [toInvSubmonoid_eq_mk'](../../../../CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/toinvsubmonoid-eq-mk.md) | 89 | `result-track:d4ffe3e9ee3b5eee5b9fa2a3e71ea1b47400d9058966038fa6ef3c202e4672aa` |
-| 11 | `theorem` | [mem_invSubmonoid_iff_exists_mk'](../../../../CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/mem-invsubmonoid-iff-exists-mk.md) | 93 | `result-track:b8455399fad4835fb85c8b4889dd5d4da348b7af09c98395b97186c859c9f522` |
-| 12 | `theorem` | [span_invSubmonoid](../../../../CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/span-invsubmonoid.md) | 101 | `result-track:91bebdd0238be32dc71e11098abe5e1e81fd59b7963b91c55df1a312c1d345b6` |
-| 13 | `theorem` | [finiteType_of_monoid_fg](../../../../CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/finitetype-of-monoid-fg.md) | 107 | `result-track:8b1c918ac1730cd072386c5b79c474ffa8ec509139f8537d463bad11166f1c72` |
-| 14 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/instance.md) | 118 | `declaration-track:def13a4297b4c30ef212cc6805201ca2a615145342df48d65a9cedeac1ca9514` |
+| 1 | `def` | [invSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/invsubmonoid.md) | 42 | `declaration-track:a8938426197d28f3ca92ebb08fb3bb86ec971500466449b52f2dbee5dfc18511` |
+| 2 | `theorem` | [submonoid_map_le_is_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/submonoid-map-le-is-unit.md) | 47 | `result-track:8691173114c875737b2527b151076c82b25555da8995d01c36f9209db5c0bc8f` |
+| 3 | `abbrev` | [equivInvSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/equivinvsubmonoid.md) | 52 | `declaration-track:aa27cce29338f3b56e8a84d7d4f96e359b95b65ed82614c4dfae844224d00a94` |
+| 4 | `def` | [toInvSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/toinvsubmonoid.md) | 56 | `declaration-track:2286475481d97f62bd36f6e8821d6e4efa778413a3e041cf143c50264f5953b6` |
+| 5 | `theorem` | [toInvSubmonoid_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/toinvsubmonoid-surjective.md) | 59 | `result-track:875ef7c9950f5935ea81f963b6640613a10238a63b9cadc912f3efbca71ddb9c` |
+| 6 | `theorem` | [toInvSubmonoid_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/toinvsubmonoid-mul.md) | 64 | `result-track:7f0e28b483c70c0cb7a23b5e38ae344e137564d1a97a0d6241d50144c2d00911` |
+| 7 | `theorem` | [mul_toInvSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/mul-toinvsubmonoid.md) | 68 | `result-track:1ea9b55a37e78a9df3d1f38608c1303c11062f4780fce20a420d6ed4e12d1bb3` |
+| 8 | `theorem` | [smul_toInvSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/smul-toinvsubmonoid.md) | 72 | `result-track:9d54b6cf15cecab3b4a6781601014e2da53934945288b0b90cb5cdbfd6b217a6` |
+| 9 | `theorem` | [surj'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/surj.md) | 80 | `result-track:9d1ba8fb1d33c0930e20f765dbad3b4ef8bb02ab71bf88fd5758265cb39cdb43` |
+| 10 | `theorem` | [toInvSubmonoid_eq_mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/toinvsubmonoid-eq-mk.md) | 89 | `result-track:d4ffe3e9ee3b5eee5b9fa2a3e71ea1b47400d9058966038fa6ef3c202e4672aa` |
+| 11 | `theorem` | [mem_invSubmonoid_iff_exists_mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/mem-invsubmonoid-iff-exists-mk.md) | 93 | `result-track:b8455399fad4835fb85c8b4889dd5d4da348b7af09c98395b97186c859c9f522` |
+| 12 | `theorem` | [span_invSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/span-invsubmonoid.md) | 101 | `result-track:91bebdd0238be32dc71e11098abe5e1e81fd59b7963b91c55df1a312c1d345b6` |
+| 13 | `theorem` | [finiteType_of_monoid_fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/finitetype-of-monoid-fg.md) | 107 | `result-track:8b1c918ac1730cd072386c5b79c474ffa8ec509139f8537d463bad11166f1c72` |
+| 14 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidPublic.lean/declarations/instance.md) | 118 | `declaration-track:def13a4297b4c30ef212cc6805201ca2a615145342df48d65a9cedeac1ca9514` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

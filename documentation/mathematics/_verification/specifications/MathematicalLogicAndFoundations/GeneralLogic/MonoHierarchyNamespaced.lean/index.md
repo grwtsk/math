@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MonoHierarchyNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MonoHierarchyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MonoHierarchyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MonoHierarchyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MonoHierarchy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MonoHierarchyNamespaced.lean/declarations/monohierarchy.md) | 23 | `declaration-track:3253191cc54208e6760d44d45ed8c823937fdc97240bcb3635af08e92c266a1b` |
-| 2 | `theorem` | [ext](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MonoHierarchyNamespaced.lean/declarations/ext.md) | 35 | `result-track:76f43f019ff6cb34778faa55b9650a105927857732e28a098965b56a460d0bd1` |
-| 3 | `def` | [transport](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MonoHierarchyNamespaced.lean/declarations/transport.md) | 50 | `declaration-track:07ee73b7b51808a26938439d8fd15855b2336bfee1363a111beab127271ee025` |
-| 4 | `theorem` | [transport_refl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MonoHierarchyNamespaced.lean/declarations/transport-refl.md) | 68 | `result-track:60ac78530ff02dd8a0c05170fa3beaeecc207067c652e653574d4b315f380391` |
-| 5 | `theorem` | [transport_symm_transport](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MonoHierarchyNamespaced.lean/declarations/transport-symm-transport.md) | 73 | `result-track:06578d47cfeb15d5b189f8f73eb1fe06f7318b685b3242fed92f26fac9d8a6c0` |
-| 6 | `theorem` | [transport_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MonoHierarchyNamespaced.lean/declarations/transport-injective.md) | 80 | `result-track:4fbf7c7bd33e531e471852d0a2ec8059e4273be250def9de7eda9cf280fdd36d` |
-| 7 | `theorem` | [transport_trans](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MonoHierarchyNamespaced.lean/declarations/transport-trans.md) | 88 | `result-track:42c4f6b97074a4106e3b6e6fe920637bfaf4b4e76cc19bc1d243392d2b07e82f` |
+| 1 | `structure` | [MonoHierarchy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MonoHierarchyNamespaced.lean/declarations/monohierarchy.md) | 23 | `declaration-track:3253191cc54208e6760d44d45ed8c823937fdc97240bcb3635af08e92c266a1b` |
+| 2 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MonoHierarchyNamespaced.lean/declarations/ext.md) | 35 | `result-track:76f43f019ff6cb34778faa55b9650a105927857732e28a098965b56a460d0bd1` |
+| 3 | `def` | [transport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MonoHierarchyNamespaced.lean/declarations/transport.md) | 50 | `declaration-track:07ee73b7b51808a26938439d8fd15855b2336bfee1363a111beab127271ee025` |
+| 4 | `theorem` | [transport_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MonoHierarchyNamespaced.lean/declarations/transport-refl.md) | 68 | `result-track:60ac78530ff02dd8a0c05170fa3beaeecc207067c652e653574d4b315f380391` |
+| 5 | `theorem` | [transport_symm_transport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MonoHierarchyNamespaced.lean/declarations/transport-symm-transport.md) | 73 | `result-track:06578d47cfeb15d5b189f8f73eb1fe06f7318b685b3242fed92f26fac9d8a6c0` |
+| 6 | `theorem` | [transport_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MonoHierarchyNamespaced.lean/declarations/transport-injective.md) | 80 | `result-track:4fbf7c7bd33e531e471852d0a2ec8059e4273be250def9de7eda9cf280fdd36d` |
+| 7 | `theorem` | [transport_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MonoHierarchyNamespaced.lean/declarations/transport-trans.md) | 88 | `result-track:42c4f6b97074a4106e3b6e6fe920637bfaf4b4e76cc19bc1d243392d2b07e82f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

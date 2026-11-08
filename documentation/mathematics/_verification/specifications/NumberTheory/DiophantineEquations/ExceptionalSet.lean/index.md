@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/ExceptionalSet.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/ExceptionalSet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.EquivalentForms`](../../../../../NumberTheory/DiophantineEquations/EquivalentForms.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetCounting`](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetCounting.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.EquivalentForms`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/EquivalentForms.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetCounting`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetCounting.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.Algebra.Order.Archimedean.Real.Basic` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exceptionalSet](../../../../../NumberTheory/DiophantineEquations/ExceptionalSet.lean/declarations/exceptionalset.md) | 12 | `declaration-track:4f917c6d7794ad1703a4ce5827fcc8d8d0f97cdb202840cee08f0939b10e0c84` |
-| 2 | `theorem` | [exceptionalSet_eq_exponentExceptionalSet](../../../../../NumberTheory/DiophantineEquations/ExceptionalSet.lean/declarations/exceptionalset-eq-exponentexceptionalset.md) | 17 | `result-track:8c0a5aad12c09cbb9cf9b73bc5d6848ef371206585f963b65f61b088c41a4f57` |
-| 3 | `def` | [ABCFiniteExceptions](../../../../../NumberTheory/DiophantineEquations/ExceptionalSet.lean/declarations/abcfiniteexceptions.md) | 30 | `declaration-track:73343f904b29d6f7636bb68454a540db787b65c1638a77fcedbe7ac3804db854` |
-| 4 | `theorem` | [finite_exceptions_implies_bound](../../../../../NumberTheory/DiophantineEquations/ExceptionalSet.lean/declarations/finite-exceptions-implies-bound.md) | 33 | `result-track:5b0f8c63798919f9ed2e16a50be20554e69b4e96af8ab2686ce8de9c57a0771b` |
-| 5 | `theorem` | [bound_half_implies_finite_exceptions](../../../../../NumberTheory/DiophantineEquations/ExceptionalSet.lean/declarations/bound-half-implies-finite-exceptions.md) | 50 | `result-track:4c0c4c30265dab33ff2c770351ec3c7a212efb563e0bec746fe76d68fe9e57d6` |
-| 6 | `theorem` | [abcConjecture_iff_finite_exceptions](../../../../../NumberTheory/DiophantineEquations/ExceptionalSet.lean/declarations/abcconjecture-iff-finite-exceptions.md) | 73 | `result-track:c73e561fdb12c0dcf6786b50963f4e26e96eea51ec34ca0149344ac8318b71af` |
-| 7 | `theorem` | [exceptionalSet_eq_quality_set](../../../../../NumberTheory/DiophantineEquations/ExceptionalSet.lean/declarations/exceptionalset-eq-quality-set.md) | 81 | `result-track:c97efb442dedcae25332cdf7641fde1301bf92f17774a64a1232bbeee8593102` |
-| 8 | `theorem` | [abcConjecture_iff_finitely_many_high_quality](../../../../../NumberTheory/DiophantineEquations/ExceptionalSet.lean/declarations/abcconjecture-iff-finitely-many-high-quality.md) | 86 | `result-track:c375891aac8cbbd21342a2f10cb76e0be36b4d60dac4dea112277a08e0be64c1` |
+| 1 | `def` | [exceptionalSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSet.lean/declarations/exceptionalset.md) | 12 | `declaration-track:4f917c6d7794ad1703a4ce5827fcc8d8d0f97cdb202840cee08f0939b10e0c84` |
+| 2 | `theorem` | [exceptionalSet_eq_exponentExceptionalSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSet.lean/declarations/exceptionalset-eq-exponentexceptionalset.md) | 17 | `result-track:8c0a5aad12c09cbb9cf9b73bc5d6848ef371206585f963b65f61b088c41a4f57` |
+| 3 | `def` | [ABCFiniteExceptions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSet.lean/declarations/abcfiniteexceptions.md) | 30 | `declaration-track:73343f904b29d6f7636bb68454a540db787b65c1638a77fcedbe7ac3804db854` |
+| 4 | `theorem` | [finite_exceptions_implies_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSet.lean/declarations/finite-exceptions-implies-bound.md) | 33 | `result-track:5b0f8c63798919f9ed2e16a50be20554e69b4e96af8ab2686ce8de9c57a0771b` |
+| 5 | `theorem` | [bound_half_implies_finite_exceptions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSet.lean/declarations/bound-half-implies-finite-exceptions.md) | 50 | `result-track:4c0c4c30265dab33ff2c770351ec3c7a212efb563e0bec746fe76d68fe9e57d6` |
+| 6 | `theorem` | [abcConjecture_iff_finite_exceptions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSet.lean/declarations/abcconjecture-iff-finite-exceptions.md) | 73 | `result-track:c73e561fdb12c0dcf6786b50963f4e26e96eea51ec34ca0149344ac8318b71af` |
+| 7 | `theorem` | [exceptionalSet_eq_quality_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSet.lean/declarations/exceptionalset-eq-quality-set.md) | 81 | `result-track:c97efb442dedcae25332cdf7641fde1301bf92f17774a64a1232bbeee8593102` |
+| 8 | `theorem` | [abcConjecture_iff_finitely_many_high_quality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSet.lean/declarations/abcconjecture-iff-finitely-many-high-quality.md) | 86 | `result-track:c375891aac8cbbd21342a2f10cb76e0be36b4d60dac4dea112277a08e0be64c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

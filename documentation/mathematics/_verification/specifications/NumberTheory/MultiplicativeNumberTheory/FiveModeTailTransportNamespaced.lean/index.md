@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/FiveModeTailTransportNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/FiveModeTailTransportNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/FiveModeTailTransportNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/FiveModeTailTransportNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [estimate_of_matrix_tail](../../../../../NumberTheory/MultiplicativeNumberTheory/FiveModeTailTransportNamespaced.lean/declarations/estimate-of-matrix-tail.md) | 27 | `result-track:0b49cbf9081aa2049507db5238c68a5991f7695113231fb24eb2c1d59d218198` |
-| 2 | `theorem` | [residual_upper_of_matrix_lower](../../../../../NumberTheory/MultiplicativeNumberTheory/FiveModeTailTransportNamespaced.lean/declarations/residual-upper-of-matrix-lower.md) | 42 | `result-track:b6ba5bafc52e38e7c76700e561740caf121a412058a7154e0ca9e0564336e938` |
+| 1 | `theorem` | [estimate_of_matrix_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/FiveModeTailTransportNamespaced.lean/declarations/estimate-of-matrix-tail.md) | 27 | `result-track:0b49cbf9081aa2049507db5238c68a5991f7695113231fb24eb2c1d59d218198` |
+| 2 | `theorem` | [residual_upper_of_matrix_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/FiveModeTailTransportNamespaced.lean/declarations/residual-upper-of-matrix-lower.md) | 42 | `result-track:b6ba5bafc52e38e7c76700e561740caf121a412058a7154e0ca9e0564336e938` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

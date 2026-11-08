@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ComplexWeightedFubiniConsumerOfTheUnchangedNativeCorrelationEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ComplexWeightedFubiniConsumerOfTheUnchangedNativeCorrelationEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ComplexWeightedFubiniConsumerOfTheUnchangedNativeCorrelationEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ComplexWeightedFubiniConsumerOfTheUnchangedNativeCorrelationEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [complex_weighted_actual_correlation_convolution](../../../../MeasureAndIntegration/ComplexWeightedFubiniConsumerOfTheUnchangedNativeCorrelationEdition1.lean/declarations/complex-weighted-actual-correlation-convolution.md) | 26 | `result-track:0a34ca4f6ea8d37a28aab5e3da5f36a1fa5ff3f992d2c5457b7662e962fc8d6b` |
-| 2 | `theorem` | [complex_reflected_source_integrable](../../../../MeasureAndIntegration/ComplexWeightedFubiniConsumerOfTheUnchangedNativeCorrelationEdition1.lean/declarations/complex-reflected-source-integrable.md) | 48 | `result-track:651481d3611e566c7ce28d708618f78d13f3e3cb9ff78840a1a4b0d37775de60` |
-| 3 | `theorem` | [complex_weighted_actual_correlation_integrable](../../../../MeasureAndIntegration/ComplexWeightedFubiniConsumerOfTheUnchangedNativeCorrelationEdition1.lean/declarations/complex-weighted-actual-correlation-integrable.md) | 53 | `result-track:552bbdae52f256485cc35d96d9dcf4bc6773949282f03a4d0770377759f99148` |
-| 4 | `theorem` | [complex_actual_source_moment_even](../../../../MeasureAndIntegration/ComplexWeightedFubiniConsumerOfTheUnchangedNativeCorrelationEdition1.lean/declarations/complex-actual-source-moment-even.md) | 65 | `result-track:bbb456a0312b4ca265a098e4f5ce6306d40345e5bf75dbf5fc7070bd1747640c` |
-| 5 | `theorem` | [complex_actual_full_correlation_moment](../../../../MeasureAndIntegration/ComplexWeightedFubiniConsumerOfTheUnchangedNativeCorrelationEdition1.lean/declarations/complex-actual-full-correlation-moment.md) | 72 | `result-track:bdd9be46cf5fa55a9f97fe626d60e2e56d837f2754c547052ada66f23d41ad21` |
+| 1 | `theorem` | [complex_weighted_actual_correlation_convolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ComplexWeightedFubiniConsumerOfTheUnchangedNativeCorrelationEdition1.lean/declarations/complex-weighted-actual-correlation-convolution.md) | 26 | `result-track:0a34ca4f6ea8d37a28aab5e3da5f36a1fa5ff3f992d2c5457b7662e962fc8d6b` |
+| 2 | `theorem` | [complex_reflected_source_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ComplexWeightedFubiniConsumerOfTheUnchangedNativeCorrelationEdition1.lean/declarations/complex-reflected-source-integrable.md) | 48 | `result-track:651481d3611e566c7ce28d708618f78d13f3e3cb9ff78840a1a4b0d37775de60` |
+| 3 | `theorem` | [complex_weighted_actual_correlation_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ComplexWeightedFubiniConsumerOfTheUnchangedNativeCorrelationEdition1.lean/declarations/complex-weighted-actual-correlation-integrable.md) | 53 | `result-track:552bbdae52f256485cc35d96d9dcf4bc6773949282f03a4d0770377759f99148` |
+| 4 | `theorem` | [complex_actual_source_moment_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ComplexWeightedFubiniConsumerOfTheUnchangedNativeCorrelationEdition1.lean/declarations/complex-actual-source-moment-even.md) | 65 | `result-track:bbb456a0312b4ca265a098e4f5ce6306d40345e5bf75dbf5fc7070bd1747640c` |
+| 5 | `theorem` | [complex_actual_full_correlation_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ComplexWeightedFubiniConsumerOfTheUnchangedNativeCorrelationEdition1.lean/declarations/complex-actual-full-correlation-moment.md) | 72 | `result-track:bdd9be46cf5fa55a9f97fe626d60e2e56d837f2754c547052ada66f23d41ad21` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

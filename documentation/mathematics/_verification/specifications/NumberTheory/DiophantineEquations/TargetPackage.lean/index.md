@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/TargetPackage.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/TargetPackage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/TargetPackage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/TargetPackage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,10 +46,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSet`](../../../../../NumberTheory/DiophantineEquations/ExceptionalSet.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Signed`](../../../../../NumberTheory/DiophantineEquations/Signed.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.PartialBounds`](../../../../../NumberTheory/DiophantineEquations/PartialBounds.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.NonprimitiveObstruction`](../../../../../NumberTheory/DiophantineEquations/NonprimitiveObstruction.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSet`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSet.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Signed`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/Signed.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.PartialBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/PartialBounds.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.NonprimitiveObstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/NonprimitiveObstruction.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/DiophantineEquations/TargetPackage.lean/declarations/example-source-edition-3.md) | 8 | `declaration-track:82e6d0a794340926a0c54a947ffac04372fde2a3fecac4f391f38b749cd37944` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/DiophantineEquations/TargetPackage.lean/declarations/example-source-edition-6.md) | 12 | `declaration-track:9e46d6459f98ff1077b55c6af866a8934269e71c7b5ce2be2e18cbf996de472f` |
-| 3 | `example` | [(anonymous)](../../../../../NumberTheory/DiophantineEquations/TargetPackage.lean/declarations/example.md) | 15 | `declaration-track:0e99d482a0cddd61d0eb0421edf0428fae7e9346c2de9ef96fd825cd4e85c773` |
-| 4 | `example` | [(anonymous)](../../../../../NumberTheory/DiophantineEquations/TargetPackage.lean/declarations/example-source-edition-4.md) | 17 | `declaration-track:9843cca31ac1f797d27747e99708c34cb9a70cbe3f3f729ec20ac3c3fdf99e31` |
-| 5 | `example` | [(anonymous)](../../../../../NumberTheory/DiophantineEquations/TargetPackage.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:3b2bc433060eeee3f0c216da94c403172c2d16c08d809f4ad58c5494177ee01b` |
-| 6 | `example` | [(anonymous)](../../../../../NumberTheory/DiophantineEquations/TargetPackage.lean/declarations/example-source-edition-7.md) | 22 | `declaration-track:e70d9d871667799d962c4b1092fee03265a67fb9eea3734cd02a94548690fbd0` |
-| 7 | `example` | [(anonymous)](../../../../../NumberTheory/DiophantineEquations/TargetPackage.lean/declarations/example-source-edition-5.md) | 26 | `declaration-track:9e31b0e7c8dd56ab3dc833a9510dd877d44936321d8bd30ba48bbbebdbaa86ce` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/TargetPackage.lean/declarations/example-source-edition-3.md) | 8 | `declaration-track:82e6d0a794340926a0c54a947ffac04372fde2a3fecac4f391f38b749cd37944` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/TargetPackage.lean/declarations/example-source-edition-6.md) | 12 | `declaration-track:9e46d6459f98ff1077b55c6af866a8934269e71c7b5ce2be2e18cbf996de472f` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/TargetPackage.lean/declarations/example.md) | 15 | `declaration-track:0e99d482a0cddd61d0eb0421edf0428fae7e9346c2de9ef96fd825cd4e85c773` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/TargetPackage.lean/declarations/example-source-edition-4.md) | 17 | `declaration-track:9843cca31ac1f797d27747e99708c34cb9a70cbe3f3f729ec20ac3c3fdf99e31` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/TargetPackage.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:3b2bc433060eeee3f0c216da94c403172c2d16c08d809f4ad58c5494177ee01b` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/TargetPackage.lean/declarations/example-source-edition-7.md) | 22 | `declaration-track:e70d9d871667799d962c4b1092fee03265a67fb9eea3734cd02a94548690fbd0` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/TargetPackage.lean/declarations/example-source-edition-5.md) | 26 | `declaration-track:9e31b0e7c8dd56ab3dc833a9510dd877d44936321d8bd30ba48bbbebdbaa86ce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedIdentity.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedIdentity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedIdentity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedIdentity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedIdentity.lean/declarations/identity.md) | 15 | `result-track:30f35d5aecca51e54d2904c4c3808a8bad8a9b5e7223e304517afe95cc3ed6ae` |
-| 2 | `theorem` | [identityAgain](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedIdentity.lean/declarations/identityagain.md) | 17 | `result-track:2d28862681d4e72a2f056250b4a2b0688cfcc9317091a60f639ed283f6220acc` |
-| 3 | `theorem` | [identityFromPremise](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedIdentity.lean/declarations/identityfrompremise.md) | 19 | `result-track:173cd61dc7aa2199c79156d868ae9d62f5ab80c1d143a6084c63c0b36682baa7` |
-| 4 | `def` | [naturalIdentity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedIdentity.lean/declarations/naturalidentity.md) | 21 | `declaration-track:89ef346139b3cd438cdf402838479f271d7e47314b61ebcc175d764d5a1e01ac` |
+| 1 | `theorem` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedIdentity.lean/declarations/identity.md) | 15 | `result-track:30f35d5aecca51e54d2904c4c3808a8bad8a9b5e7223e304517afe95cc3ed6ae` |
+| 2 | `theorem` | [identityAgain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedIdentity.lean/declarations/identityagain.md) | 17 | `result-track:2d28862681d4e72a2f056250b4a2b0688cfcc9317091a60f639ed283f6220acc` |
+| 3 | `theorem` | [identityFromPremise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedIdentity.lean/declarations/identityfrompremise.md) | 19 | `result-track:173cd61dc7aa2199c79156d868ae9d62f5ab80c1d143a6084c63c0b36682baa7` |
+| 4 | `def` | [naturalIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedIdentity.lean/declarations/naturalidentity.md) | 21 | `declaration-track:89ef346139b3cd438cdf402838479f271d7e47314b61ebcc175d764d5a1e01ac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

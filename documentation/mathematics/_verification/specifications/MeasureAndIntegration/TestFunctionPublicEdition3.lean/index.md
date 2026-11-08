@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TestFunctionPublicEdition3.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TestFunctionPublicEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionPublicEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionPublicEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimitiveWeilTestFunction](../../../../MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/primitiveweiltestfunction.md) | 32 | `declaration-track:41a86eaea33e233702b0f104a0f47e4251add31b75284966ca1caa0bf893b4ac` |
-| 2 | `instance` | [(anonymous)](../../../../MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/instance.md) | 42 | `declaration-track:0ef35bf22ec2fca44a7377e4b22b0a362ba50043817669879d9091eef17b4718` |
-| 3 | `theorem` | [coe_mk](../../../../MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/coe-mk.md) | 46 | `result-track:5c7cae0292f64f0bed9985e86bf53b0cc879b2d30624282a55bdb291ea14ca01` |
-| 4 | `theorem` | [continuous](../../../../MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/continuous.md) | 53 | `result-track:07dacc21136077e0c5ec6913bd29c2b6465224d573db8c6d6db9d7d616604988` |
-| 5 | `theorem` | [hasCompactSupport](../../../../MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/hascompactsupport.md) | 57 | `result-track:66d305cfe429a408f80ad137b82c5b02cbbf774b37a77b9d834518824f26b152` |
-| 6 | `theorem` | [integrable](../../../../MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/integrable.md) | 62 | `result-track:e864149b6e26925c3448597c1896abd7a0b6eb17f0bdc7e8bd96a4e7957d301e` |
-| 7 | `theorem` | [locallyIntegrable](../../../../MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/locallyintegrable.md) | 66 | `result-track:489a7b0d6639fdd539156af97489cd234d5fc9e022f548cc7f788224123b55bd` |
-| 8 | `def` | [star](../../../../MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/star.md) | 72 | `declaration-track:8551e5925dbe44ca086985a0b914efb8b11d552ef228476b0c914e992ddab3ab` |
-| 9 | `theorem` | [star_apply](../../../../MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/star-apply.md) | 88 | `result-track:28cf64e332aea693a498da788876d9b033ba12e8b06bfe69787048e862834c0f` |
-| 10 | `theorem` | [star_supportRadius](../../../../MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/star-supportradius.md) | 93 | `result-track:d6c4aad888e174a0c0c9af7a37369f6d15f74cdb27734b93792bfccb070fcdb1` |
-| 11 | `theorem` | [star_star_apply](../../../../MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/star-star-apply.md) | 98 | `result-track:d28d508de40b78df274efdbbe06135dbffc659193a1aa744a1e5cdf7128e89f7` |
+| 1 | `structure` | [PrimitiveWeilTestFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/primitiveweiltestfunction.md) | 32 | `declaration-track:41a86eaea33e233702b0f104a0f47e4251add31b75284966ca1caa0bf893b4ac` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/instance.md) | 42 | `declaration-track:0ef35bf22ec2fca44a7377e4b22b0a362ba50043817669879d9091eef17b4718` |
+| 3 | `theorem` | [coe_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/coe-mk.md) | 46 | `result-track:5c7cae0292f64f0bed9985e86bf53b0cc879b2d30624282a55bdb291ea14ca01` |
+| 4 | `theorem` | [continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/continuous.md) | 53 | `result-track:07dacc21136077e0c5ec6913bd29c2b6465224d573db8c6d6db9d7d616604988` |
+| 5 | `theorem` | [hasCompactSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/hascompactsupport.md) | 57 | `result-track:66d305cfe429a408f80ad137b82c5b02cbbf774b37a77b9d834518824f26b152` |
+| 6 | `theorem` | [integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/integrable.md) | 62 | `result-track:e864149b6e26925c3448597c1896abd7a0b6eb17f0bdc7e8bd96a4e7957d301e` |
+| 7 | `theorem` | [locallyIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/locallyintegrable.md) | 66 | `result-track:489a7b0d6639fdd539156af97489cd234d5fc9e022f548cc7f788224123b55bd` |
+| 8 | `def` | [star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/star.md) | 72 | `declaration-track:8551e5925dbe44ca086985a0b914efb8b11d552ef228476b0c914e992ddab3ab` |
+| 9 | `theorem` | [star_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/star-apply.md) | 88 | `result-track:28cf64e332aea693a498da788876d9b033ba12e8b06bfe69787048e862834c0f` |
+| 10 | `theorem` | [star_supportRadius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/star-supportradius.md) | 93 | `result-track:d6c4aad888e174a0c0c9af7a37369f6d15f74cdb27734b93792bfccb070fcdb1` |
+| 11 | `theorem` | [star_star_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionPublicEdition3.lean/declarations/star-star-apply.md) | 98 | `result-track:d28d508de40b78df274efdbbe06135dbffc659193a1aa744a1e5cdf7128e89f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

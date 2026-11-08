@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../HarmonicAnalysisOnEuclideanSpaces/CanonicalId.lean/index.md) · [Full source](../../../../HarmonicAnalysisOnEuclideanSpaces/CanonicalId.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/CanonicalId.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/CanonicalId.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [canonical_det_identity](../../../../HarmonicAnalysisOnEuclideanSpaces/CanonicalId.lean/declarations/canonical-det-identity.md) | 20 | `declaration-track:b4467f2cd5a8182965671b451c5b40a7b09805d3987f1fd4525c1be4a4e0a39e` |
-| 2 | `lemma` | [canonical_det_identity_spec](../../../../HarmonicAnalysisOnEuclideanSpaces/CanonicalId.lean/declarations/canonical-det-identity-spec.md) | 30 | `result-track:49f6d2b4c315c5a0b13cb9b2f5b49e054eac6980719f38ce0964ed6329d80e21` |
+| 1 | `def` | [canonical_det_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/CanonicalId.lean/declarations/canonical-det-identity.md) | 20 | `declaration-track:b4467f2cd5a8182965671b451c5b40a7b09805d3987f1fd4525c1be4a4e0a39e` |
+| 2 | `lemma` | [canonical_det_identity_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/CanonicalId.lean/declarations/canonical-det-identity-spec.md) | 30 | `result-track:49f6d2b4c315c5a0b13cb9b2f5b49e054eac6980719f38ce0964ed6329d80e21` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

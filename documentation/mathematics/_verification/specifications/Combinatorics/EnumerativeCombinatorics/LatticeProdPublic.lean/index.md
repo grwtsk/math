@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sup_product_left](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/declarations/sup-product-left.md) | 33 | `result-track:2578f77b4e95578dc96cd0c07b37c0cc3850a2f43345daf83e09b2e1af4d53ec` |
-| 2 | `theorem` | [sup_product_right](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/declarations/sup-product-right.md) | 38 | `result-track:4edcb0bed416af9436837487c47666151f4f73beecd0d0d072a4246464abad23` |
-| 3 | `lemma` | [sup_prodMap](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/declarations/sup-prodmap.md) | 47 | `result-track:efae29ba0253a6a03ce10759b609e6c600d12229cbcad62b07a964df9b3f7d06` |
-| 4 | `theorem` | [sup_inf_sup](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/declarations/sup-inf-sup.md) | 66 | `result-track:01b74fc640f037dc96163b87183001a25c131d845b1d095212966573cd7b1733` |
-| 5 | `theorem` | [sup'_product_left](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/declarations/sup-product-left-source-edition-2.md) | 79 | `result-track:6e49565cb4a42494c1858ccdde31c6cad7744989be5153bd3caf67e8e9dccb59` |
-| 6 | `theorem` | [sup'_product_right](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/declarations/sup-product-right-source-edition-2.md) | 84 | `result-track:665fc2f5cb2c73ffd51132d36c83557a0f1215e824e97b2252003b5b72c25a61` |
-| 7 | `lemma` | [prodMk_sup'_sup'](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/declarations/prodmk-sup-sup.md) | 94 | `result-track:28546e90d86a21d5ebdd9af1b43dcbb7927e2791f75f9fe6789a38fbac3aac25` |
-| 8 | `lemma` | [sup'_prodMap](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/declarations/sup-prodmap-source-edition-2.md) | 105 | `result-track:f7cb2297e0709ef6dff9ffb7ddb202e57bd687f66076f13e0a23ecb8b4076cc6` |
-| 9 | `theorem` | [sup'_inf_sup'](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/declarations/sup-inf-sup-source-edition-2.md) | 118 | `result-track:0cd4522b16a06f30193792659d0747b9179fa47f2dfd8a9d0b186be9313a6f1d` |
+| 1 | `theorem` | [sup_product_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/declarations/sup-product-left.md) | 33 | `result-track:2578f77b4e95578dc96cd0c07b37c0cc3850a2f43345daf83e09b2e1af4d53ec` |
+| 2 | `theorem` | [sup_product_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/declarations/sup-product-right.md) | 38 | `result-track:4edcb0bed416af9436837487c47666151f4f73beecd0d0d072a4246464abad23` |
+| 3 | `lemma` | [sup_prodMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/declarations/sup-prodmap.md) | 47 | `result-track:efae29ba0253a6a03ce10759b609e6c600d12229cbcad62b07a964df9b3f7d06` |
+| 4 | `theorem` | [sup_inf_sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/declarations/sup-inf-sup.md) | 66 | `result-track:01b74fc640f037dc96163b87183001a25c131d845b1d095212966573cd7b1733` |
+| 5 | `theorem` | [sup'_product_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/declarations/sup-product-left-source-edition-2.md) | 79 | `result-track:6e49565cb4a42494c1858ccdde31c6cad7744989be5153bd3caf67e8e9dccb59` |
+| 6 | `theorem` | [sup'_product_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/declarations/sup-product-right-source-edition-2.md) | 84 | `result-track:665fc2f5cb2c73ffd51132d36c83557a0f1215e824e97b2252003b5b72c25a61` |
+| 7 | `lemma` | [prodMk_sup'_sup'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/declarations/prodmk-sup-sup.md) | 94 | `result-track:28546e90d86a21d5ebdd9af1b43dcbb7927e2791f75f9fe6789a38fbac3aac25` |
+| 8 | `lemma` | [sup'_prodMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/declarations/sup-prodmap-source-edition-2.md) | 105 | `result-track:f7cb2297e0709ef6dff9ffb7ddb202e57bd687f66076f13e0a23ecb8b4076cc6` |
+| 9 | `theorem` | [sup'_inf_sup'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeProdPublic.lean/declarations/sup-inf-sup-source-edition-2.md) | 118 | `result-track:0cd4522b16a06f30193792659d0747b9179fa47f2dfd8a9d0b186be9313a6f1d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

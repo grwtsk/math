@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CompleteLatticeAndExtremalFixedPoints.lean/index.md) · [Full source](../../../../Combinatorics/CompleteLatticeAndExtremalFixedPoints.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompleteLatticeAndExtremalFixedPoints.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompleteLatticeAndExtremalFixedPoints.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [knasterTarskiFixedPointLattice](../../../../Combinatorics/CompleteLatticeAndExtremalFixedPoints.lean/declarations/knastertarskifixedpointlattice.md) | 44 | `declaration-track:54c86b7fc404b3578fdb4d6d30753b5c42f5f4cb69935ac5f8a351afe04d61d9` |
-| 2 | `theorem` | [knasterTarski_least_fixed](../../../../Combinatorics/CompleteLatticeAndExtremalFixedPoints.lean/declarations/knastertarski-least-fixed.md) | 49 | `result-track:eb89cee86c70aca7afc7236265173611f6abb767a1d70a26f57742354e00f5c8` |
-| 3 | `theorem` | [knasterTarski_greatest_fixed](../../../../Combinatorics/CompleteLatticeAndExtremalFixedPoints.lean/declarations/knastertarski-greatest-fixed.md) | 53 | `result-track:7fd15d913b5188e13c6f71c89dfb6e54611fcd55cedb15d968a36cca3ed377b2` |
-| 4 | `theorem` | [knasterTarski_least](../../../../Combinatorics/CompleteLatticeAndExtremalFixedPoints.lean/declarations/knastertarski-least.md) | 57 | `result-track:d93842efb63b7a88392fa1e09a1a4a8220bbe73d0210da4e0b3778fd74c0c8ea` |
-| 5 | `theorem` | [knasterTarski_greatest](../../../../Combinatorics/CompleteLatticeAndExtremalFixedPoints.lean/declarations/knastertarski-greatest.md) | 61 | `result-track:01724c894a9de22b56483506b7346e9ca324a47f59d30e9bcb885da91821dded` |
+| 1 | `abbrev` | [knasterTarskiFixedPointLattice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompleteLatticeAndExtremalFixedPoints.lean/declarations/knastertarskifixedpointlattice.md) | 44 | `declaration-track:54c86b7fc404b3578fdb4d6d30753b5c42f5f4cb69935ac5f8a351afe04d61d9` |
+| 2 | `theorem` | [knasterTarski_least_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompleteLatticeAndExtremalFixedPoints.lean/declarations/knastertarski-least-fixed.md) | 49 | `result-track:eb89cee86c70aca7afc7236265173611f6abb767a1d70a26f57742354e00f5c8` |
+| 3 | `theorem` | [knasterTarski_greatest_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompleteLatticeAndExtremalFixedPoints.lean/declarations/knastertarski-greatest-fixed.md) | 53 | `result-track:7fd15d913b5188e13c6f71c89dfb6e54611fcd55cedb15d968a36cca3ed377b2` |
+| 4 | `theorem` | [knasterTarski_least](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompleteLatticeAndExtremalFixedPoints.lean/declarations/knastertarski-least.md) | 57 | `result-track:d93842efb63b7a88392fa1e09a1a4a8220bbe73d0210da4e0b3778fd74c0c8ea` |
+| 5 | `theorem` | [knasterTarski_greatest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompleteLatticeAndExtremalFixedPoints.lean/declarations/knastertarski-greatest.md) | 61 | `result-track:01724c894a9de22b56483506b7346e9ca324a47f59d30e9bcb885da91821dded` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

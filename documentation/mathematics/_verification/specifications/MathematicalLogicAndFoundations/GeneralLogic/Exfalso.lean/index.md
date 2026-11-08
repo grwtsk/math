@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Exfalso.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Exfalso.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Exfalso.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Exfalso.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `axiom` | [test_sorry](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Exfalso.lean/declarations/test-sorry.md) | 3 | `declaration-track:eb04c5e1d715fd0b34abe9c08564d6c7175c8b8a3c8d608496788758c9f8625e` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Exfalso.lean/declarations/example.md) | 5 | `declaration-track:9609874930c8ca296e1d502e6b9ae04cdd08572f69cda06d518010408e8a40bf` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Exfalso.lean/declarations/example-source-edition-2.md) | 9 | `declaration-track:9be1efe69a5c78ba7267ed8852f0679949e6b6e2eb542d4636d3877de7687626` |
+| 1 | `axiom` | [test_sorry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Exfalso.lean/declarations/test-sorry.md) | 3 | `declaration-track:eb04c5e1d715fd0b34abe9c08564d6c7175c8b8a3c8d608496788758c9f8625e` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Exfalso.lean/declarations/example.md) | 5 | `declaration-track:9609874930c8ca296e1d502e6b9ae04cdd08572f69cda06d518010408e8a40bf` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Exfalso.lean/declarations/example-source-edition-2.md) | 9 | `declaration-track:9be1efe69a5c78ba7267ed8852f0679949e6b6e2eb542d4636d3877de7687626` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

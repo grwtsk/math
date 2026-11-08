@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScrewSpectralReconstruction.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScrewSpectralReconstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScrewSpectralReconstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScrewSpectralReconstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Budget](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScrewSpectralReconstruction.lean/declarations/budget.md) | 24 | `declaration-track:4c22fd4252e855d792f4d603d1093e65f518c1d14e483526f5a120a378a89eb0` |
-| 2 | `def` | [Budget.total](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScrewSpectralReconstruction.lean/declarations/budget-total.md) | 32 | `declaration-track:7afe00651f54ff70e65708e4315904767abd3568b3c466524c4357e69645b8a8` |
-| 3 | `theorem` | [reconstruction_error_bound](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScrewSpectralReconstruction.lean/declarations/reconstruction-error-bound.md) | 36 | `result-track:f88e36b0a7ea8b02c2a49f152b86da661f94223011b2a9203ec1be5279a7b75c` |
+| 1 | `structure` | [Budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScrewSpectralReconstruction.lean/declarations/budget.md) | 24 | `declaration-track:4c22fd4252e855d792f4d603d1093e65f518c1d14e483526f5a120a378a89eb0` |
+| 2 | `def` | [Budget.total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScrewSpectralReconstruction.lean/declarations/budget-total.md) | 32 | `declaration-track:7afe00651f54ff70e65708e4315904767abd3568b3c466524c4357e69645b8a8` |
+| 3 | `theorem` | [reconstruction_error_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScrewSpectralReconstruction.lean/declarations/reconstruction-error-bound.md) | 36 | `result-track:f88e36b0a7ea8b02c2a49f152b86da661f94223011b2a9203ec1be5279a7b75c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

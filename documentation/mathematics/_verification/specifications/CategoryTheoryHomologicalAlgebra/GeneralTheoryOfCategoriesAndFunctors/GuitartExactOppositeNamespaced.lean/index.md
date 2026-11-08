@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GuitartExactOppositeNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GuitartExactOppositeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GuitartExactOppositeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GuitartExactOppositeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [functor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GuitartExactOppositeNamespaced.lean/declarations/functor.md) | 46 | `declaration-track:661d019b1e2e5f11eab4576182d307bb9df056e2d8c1888e14a82ce49264c937` |
-| 2 | `def` | [inverse](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GuitartExactOppositeNamespaced.lean/declarations/inverse.md) | 61 | `declaration-track:0fb0eaef86bf7fee0452255a737f9e0fde19a8af232568d6999617fe79eb9d77` |
-| 3 | `def` | [structuredArrowRightwardsOpEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GuitartExactOppositeNamespaced.lean/declarations/structuredarrowrightwardsopequivalence.md) | 82 | `declaration-track:4f1d9a10699092b7f78afd5c0d46fcd24933982cae4645409bec12755683c342` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GuitartExactOppositeNamespaced.lean/declarations/instance.md) | 92 | `declaration-track:b832eb493752f9e0d6f306d6566932d2c3e9a4e3717458c19a55a85b0f196233` |
-| 5 | `lemma` | [guitartExact_op_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GuitartExactOppositeNamespaced.lean/declarations/guitartexact-op-iff.md) | 99 | `result-track:bde0382be9f91aba21fb430e8122d84990edee7bbc54f2b4045100fcfb7e9aca` |
-| 6 | `instance` | [guitartExact_id'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GuitartExactOppositeNamespaced.lean/declarations/guitartexact-id.md) | 110 | `declaration-track:c61237658134fb96c02056034ac2d48f3025c5f9cbdba35811466cdf1b8e2782` |
+| 1 | `def` | [functor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GuitartExactOppositeNamespaced.lean/declarations/functor.md) | 46 | `declaration-track:661d019b1e2e5f11eab4576182d307bb9df056e2d8c1888e14a82ce49264c937` |
+| 2 | `def` | [inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GuitartExactOppositeNamespaced.lean/declarations/inverse.md) | 61 | `declaration-track:0fb0eaef86bf7fee0452255a737f9e0fde19a8af232568d6999617fe79eb9d77` |
+| 3 | `def` | [structuredArrowRightwardsOpEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GuitartExactOppositeNamespaced.lean/declarations/structuredarrowrightwardsopequivalence.md) | 82 | `declaration-track:4f1d9a10699092b7f78afd5c0d46fcd24933982cae4645409bec12755683c342` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GuitartExactOppositeNamespaced.lean/declarations/instance.md) | 92 | `declaration-track:b832eb493752f9e0d6f306d6566932d2c3e9a4e3717458c19a55a85b0f196233` |
+| 5 | `lemma` | [guitartExact_op_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GuitartExactOppositeNamespaced.lean/declarations/guitartexact-op-iff.md) | 99 | `result-track:bde0382be9f91aba21fb430e8122d84990edee7bbc54f2b4045100fcfb7e9aca` |
+| 6 | `instance` | [guitartExact_id'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GuitartExactOppositeNamespaced.lean/declarations/guitartexact-id.md) | 110 | `declaration-track:c61237658134fb96c02056034ac2d48f3025c5f9cbdba35811466cdf1b8e2782` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

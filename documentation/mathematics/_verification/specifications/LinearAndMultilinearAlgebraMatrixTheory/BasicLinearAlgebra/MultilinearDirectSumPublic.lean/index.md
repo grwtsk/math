@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearDirectSumPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearDirectSumPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearDirectSumPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearDirectSumPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [directSum_ext](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearDirectSumPublic.lean/declarations/directsum-ext.md) | 36 | `result-track:5376834f887b4c7caf11b264a8da495deff79b2f361e042da98030adefa16d97` |
-| 2 | `def` | [fromDirectSumEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearDirectSumPublic.lean/declarations/fromdirectsumequiv.md) | 47 | `declaration-track:ea715be11fc6e874be9cad402c7f44b28e21ba7206a765d88f31d7d1dbd1a2f3` |
-| 3 | `theorem` | [fromDirectSumEquiv_lof](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearDirectSumPublic.lean/declarations/fromdirectsumequiv-lof.md) | 55 | `result-track:ed1b3b8ee2d5ba66e3b4e608c32fe41754f17f19bba4fdf1e8411c798188f8bd` |
-| 4 | `theorem` | [fromDirectSumEquiv_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearDirectSumPublic.lean/declarations/fromdirectsumequiv-apply.md) | 64 | `result-track:1874294352fab00ee41f669dfa9b5714e26eb88646cc581adb5949d48d89615f` |
-| 5 | `theorem` | [fromDirectSumEquiv_symm_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearDirectSumPublic.lean/declarations/fromdirectsumequiv-symm-apply.md) | 74 | `result-track:fa6358b58037d6b4ab14339e28cb8d484122d110a06bd156cb1f89b324183d41` |
+| 1 | `theorem` | [directSum_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearDirectSumPublic.lean/declarations/directsum-ext.md) | 36 | `result-track:5376834f887b4c7caf11b264a8da495deff79b2f361e042da98030adefa16d97` |
+| 2 | `def` | [fromDirectSumEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearDirectSumPublic.lean/declarations/fromdirectsumequiv.md) | 47 | `declaration-track:ea715be11fc6e874be9cad402c7f44b28e21ba7206a765d88f31d7d1dbd1a2f3` |
+| 3 | `theorem` | [fromDirectSumEquiv_lof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearDirectSumPublic.lean/declarations/fromdirectsumequiv-lof.md) | 55 | `result-track:ed1b3b8ee2d5ba66e3b4e608c32fe41754f17f19bba4fdf1e8411c798188f8bd` |
+| 4 | `theorem` | [fromDirectSumEquiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearDirectSumPublic.lean/declarations/fromdirectsumequiv-apply.md) | 64 | `result-track:1874294352fab00ee41f669dfa9b5714e26eb88646cc581adb5949d48d89615f` |
+| 5 | `theorem` | [fromDirectSumEquiv_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearDirectSumPublic.lean/declarations/fromdirectsumequiv-symm-apply.md) | 74 | `result-track:fa6358b58037d6b4ab14339e28cb8d484122d110a06bd156cb1f89b324183d41` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

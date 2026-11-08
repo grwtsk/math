@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CoverageHomologyCoverageContext.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CoverageHomologyCoverageContext.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoverageHomologyCoverageContext.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoverageHomologyCoverageContext.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HomologyCoverageContext](../../../../../ComputerScience/AlgorithmsInComputerScience/CoverageHomologyCoverageContext.lean/declarations/homologycoveragecontext.md) | 28 | `declaration-track:14d80dc6e973d36171c905e28f9809887eb717c15b6647c79643bc889b0ff9e8` |
-| 2 | `def` | [HomologyStabilityCoverageAdmissible](../../../../../ComputerScience/AlgorithmsInComputerScience/CoverageHomologyCoverageContext.lean/declarations/homologystabilitycoverageadmissible.md) | 32 | `declaration-track:40bc891077d0f17bd50847a24ab0a679bebe193d129f5364cd3ad0915e644bcb` |
-| 3 | `theorem` | [homologyStabilityCoverage_requires_foundation](../../../../../ComputerScience/AlgorithmsInComputerScience/CoverageHomologyCoverageContext.lean/declarations/homologystabilitycoverage-requires-foundation.md) | 37 | `result-track:d7e6cf60bdff1156b1447b9221bdaab5fafce9153918668a11b31457c66bc15f` |
+| 1 | `structure` | [HomologyCoverageContext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoverageHomologyCoverageContext.lean/declarations/homologycoveragecontext.md) | 28 | `declaration-track:14d80dc6e973d36171c905e28f9809887eb717c15b6647c79643bc889b0ff9e8` |
+| 2 | `def` | [HomologyStabilityCoverageAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoverageHomologyCoverageContext.lean/declarations/homologystabilitycoverageadmissible.md) | 32 | `declaration-track:40bc891077d0f17bd50847a24ab0a679bebe193d129f5364cd3ad0915e644bcb` |
+| 3 | `theorem` | [homologyStabilityCoverage_requires_foundation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoverageHomologyCoverageContext.lean/declarations/homologystabilitycoverage-requires-foundation.md) | 37 | `result-track:d7e6cf60bdff1156b1447b9221bdaab5fafce9153918668a11b31457c66bc15f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

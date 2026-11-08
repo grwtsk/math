@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReplayNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReplayNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReplayNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReplayNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [deterministic_replay](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReplayNamespaced.lean/declarations/deterministic-replay.md) | 19 | `result-track:1d7f301640b9cedb46d98f2eb598a95dc255cefa44ea0450aab923da84724526` |
-| 2 | `structure` | [ReplayCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReplayNamespaced.lean/declarations/replaycertificate.md) | 41 | `declaration-track:c5cabd31ec05ca4c711e0ec5616fdc33eaac2296a385298cbfbbe88d0ff88be4` |
+| 1 | `theorem` | [deterministic_replay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReplayNamespaced.lean/declarations/deterministic-replay.md) | 19 | `result-track:1d7f301640b9cedb46d98f2eb598a95dc255cefa44ea0450aab923da84724526` |
+| 2 | `structure` | [ReplayCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReplayNamespaced.lean/declarations/replaycertificate.md) | 41 | `declaration-track:c5cabd31ec05ca4c711e0ec5616fdc33eaac2296a385298cbfbbe88d0ff88be4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

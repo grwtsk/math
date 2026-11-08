@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Ceiling.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Ceiling.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Ceiling.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Ceiling.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ceiling_of_valid_at](../../../../MeasureAndIntegration/Ceiling.lean/declarations/ceiling-of-valid-at.md) | 28 | `result-track:63bbe5e38a75d4a6f10794d1aafc00f3bb61edae4b7eaf7c21f011c8b648af72` |
-| 2 | `theorem` | [ceiling_numeric](../../../../MeasureAndIntegration/Ceiling.lean/declarations/ceiling-numeric.md) | 44 | `result-track:3fb344e4df6027c4e4f424590482e3fbe39549330edf1261f2d1c422ad3c42e6` |
+| 1 | `theorem` | [ceiling_of_valid_at](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Ceiling.lean/declarations/ceiling-of-valid-at.md) | 28 | `result-track:63bbe5e38a75d4a6f10794d1aafc00f3bb61edae4b7eaf7c21f011c8b648af72` |
+| 2 | `theorem` | [ceiling_numeric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Ceiling.lean/declarations/ceiling-numeric.md) | 44 | `result-track:3fb344e4df6027c4e4f424590482e3fbe39549330edf1261f2d1c422ad3c42e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

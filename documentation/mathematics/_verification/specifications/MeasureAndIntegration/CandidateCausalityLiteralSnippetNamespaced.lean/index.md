@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CandidateCausalityLiteralSnippetNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CandidateCausalityLiteralSnippetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateCausalityLiteralSnippetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateCausalityLiteralSnippetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/CandidateCausalityLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 14 | `declaration-track:7053fff1e6b54f86206af6362d51ff551b59a9b01c51b600ce857c0359a8a119` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/CandidateCausalityLiteralSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 18 | `declaration-track:9f247b8c5d061ae002cf7c7a83c8d5262263b4e28dbc5936a1de3f09c47ecbf0` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/CandidateCausalityLiteralSnippetNamespaced.lean/declarations/example.md) | 25 | `declaration-track:2efeb8cc0d53e3451b7f783983888c7e6e9605210b954011ea5409021fac548b` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/CandidateCausalityLiteralSnippetNamespaced.lean/declarations/example-source-edition-4.md) | 31 | `declaration-track:e5cdd0a9271b4fef058b8154183b00055f710ed4798686c6d5926febae158c8d` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateCausalityLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 14 | `declaration-track:7053fff1e6b54f86206af6362d51ff551b59a9b01c51b600ce857c0359a8a119` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateCausalityLiteralSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 18 | `declaration-track:9f247b8c5d061ae002cf7c7a83c8d5262263b4e28dbc5936a1de3f09c47ecbf0` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateCausalityLiteralSnippetNamespaced.lean/declarations/example.md) | 25 | `declaration-track:2efeb8cc0d53e3451b7f783983888c7e6e9605210b954011ea5409021fac548b` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateCausalityLiteralSnippetNamespaced.lean/declarations/example-source-edition-4.md) | 31 | `declaration-track:e5cdd0a9271b4fef058b8154183b00055f710ed4798686c6d5926febae158c8d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

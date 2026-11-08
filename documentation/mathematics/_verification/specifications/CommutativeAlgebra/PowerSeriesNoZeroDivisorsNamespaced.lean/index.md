@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PowerSeriesNoZeroDivisorsNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PowerSeriesNoZeroDivisorsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesNoZeroDivisorsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesNoZeroDivisorsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/PowerSeriesNoZeroDivisorsNamespaced.lean/declarations/instance-source-edition-2.md) | 40 | `declaration-track:e9efe7d08e0a9d6ebdc237ab289a89a186337141ebe3f42d20a5eb481b77c83c` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/PowerSeriesNoZeroDivisorsNamespaced.lean/declarations/instance.md) | 49 | `declaration-track:820567a7be537c16c833f5c1f19d09b486fd36db8fae05c0809f524d9ae697dd` |
-| 3 | `theorem` | [span_X_isPrime](../../../../CommutativeAlgebra/PowerSeriesNoZeroDivisorsNamespaced.lean/declarations/span-x-isprime.md) | 56 | `result-track:0f9a925007d30091dd680f9152d75d2eb8f06f924d957d3442cf4e3e0e9689e1` |
-| 4 | `theorem` | [X_prime](../../../../CommutativeAlgebra/PowerSeriesNoZeroDivisorsNamespaced.lean/declarations/x-prime.md) | 65 | `result-track:7507e90ae1443d896f99051847298345899231f39c7a46fca648b268c24fb9d8` |
-| 5 | `theorem` | [X_irreducible](../../../../CommutativeAlgebra/PowerSeriesNoZeroDivisorsNamespaced.lean/declarations/x-irreducible.md) | 72 | `result-track:fefabc42800d6ebd92168f71987124edc1ef41d6230ae6ba6310c57ef29fab36` |
-| 6 | `theorem` | [rescale_injective](../../../../CommutativeAlgebra/PowerSeriesNoZeroDivisorsNamespaced.lean/declarations/rescale-injective.md) | 74 | `result-track:06cb1ef250f231ba38fd6f51acd0b58895e90828310cbb8e34845905110bffc5` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesNoZeroDivisorsNamespaced.lean/declarations/instance-source-edition-2.md) | 40 | `declaration-track:e9efe7d08e0a9d6ebdc237ab289a89a186337141ebe3f42d20a5eb481b77c83c` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesNoZeroDivisorsNamespaced.lean/declarations/instance.md) | 49 | `declaration-track:820567a7be537c16c833f5c1f19d09b486fd36db8fae05c0809f524d9ae697dd` |
+| 3 | `theorem` | [span_X_isPrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesNoZeroDivisorsNamespaced.lean/declarations/span-x-isprime.md) | 56 | `result-track:0f9a925007d30091dd680f9152d75d2eb8f06f924d957d3442cf4e3e0e9689e1` |
+| 4 | `theorem` | [X_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesNoZeroDivisorsNamespaced.lean/declarations/x-prime.md) | 65 | `result-track:7507e90ae1443d896f99051847298345899231f39c7a46fca648b268c24fb9d8` |
+| 5 | `theorem` | [X_irreducible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesNoZeroDivisorsNamespaced.lean/declarations/x-irreducible.md) | 72 | `result-track:fefabc42800d6ebd92168f71987124edc1ef41d6230ae6ba6310c57ef29fab36` |
+| 6 | `theorem` | [rescale_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesNoZeroDivisorsNamespaced.lean/declarations/rescale-injective.md) | 74 | `result-track:06cb1ef250f231ba38fd6f51acd0b58895e90828310cbb8e34845905110bffc5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

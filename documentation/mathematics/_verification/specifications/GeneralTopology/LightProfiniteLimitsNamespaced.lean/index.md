@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LightProfiniteLimitsNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/LightProfiniteLimitsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteLimitsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteLimitsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/LightProfiniteLimitsNamespaced.lean/declarations/instance-source-edition-2.md) | 31 | `declaration-track:cf71c9c73beae067f8055b301e35b1e22ecc1190540b12ca6834891f0dadca1c` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/LightProfiniteLimitsNamespaced.lean/declarations/instance.md) | 37 | `declaration-track:615a34f052931e15a5aef155f576653dcf202519fd4702640d923e9a3e91ea2d` |
-| 3 | `abbrev` | [isTerminalPUnit](../../../../GeneralTopology/LightProfiniteLimitsNamespaced.lean/declarations/isterminalpunit.md) | 44 | `declaration-track:b3752df1964403a91d0251823c582a61c93585484241c2754f0a39876198744e` |
-| 4 | `example` | [(anonymous)](../../../../GeneralTopology/LightProfiniteLimitsNamespaced.lean/declarations/example-source-edition-2.md) | 47 | `declaration-track:d346fed5da7323068d5846b180ccca0f5bb733264d4f8d9ef133c8ea23c93e52` |
-| 5 | `example` | [(anonymous)](../../../../GeneralTopology/LightProfiniteLimitsNamespaced.lean/declarations/example.md) | 49 | `declaration-track:4bd0a38130f2a6a140d65264dcdf67f873e341918eb40bbaddaa8bbabd71e2ee` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteLimitsNamespaced.lean/declarations/instance-source-edition-2.md) | 31 | `declaration-track:cf71c9c73beae067f8055b301e35b1e22ecc1190540b12ca6834891f0dadca1c` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteLimitsNamespaced.lean/declarations/instance.md) | 37 | `declaration-track:615a34f052931e15a5aef155f576653dcf202519fd4702640d923e9a3e91ea2d` |
+| 3 | `abbrev` | [isTerminalPUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteLimitsNamespaced.lean/declarations/isterminalpunit.md) | 44 | `declaration-track:b3752df1964403a91d0251823c582a61c93585484241c2754f0a39876198744e` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteLimitsNamespaced.lean/declarations/example-source-edition-2.md) | 47 | `declaration-track:d346fed5da7323068d5846b180ccca0f5bb733264d4f8d9ef133c8ea23c93e52` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteLimitsNamespaced.lean/declarations/example.md) | 49 | `declaration-track:4bd0a38130f2a6a140d65264dcdf67f873e341918eb40bbaddaa8bbabd71e2ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

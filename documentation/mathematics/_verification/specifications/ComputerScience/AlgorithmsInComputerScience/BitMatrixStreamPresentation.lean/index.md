@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BitMatrixStreamPresentation.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BitMatrixStreamPresentation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BitMatrixStreamPresentation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BitMatrixStreamPresentation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,11 +62,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BitMatrixStreamMaterializer](../../../../../ComputerScience/AlgorithmsInComputerScience/BitMatrixStreamPresentation.lean/declarations/bitmatrixstreammaterializer.md) | 23 | `declaration-track:4510b58b748bc6851b1dd02db0105d2b38923ce29ac0f926696e8027f7b4bb88` |
-| 2 | `structure` | [LeanLatexPresentationInput](../../../../../ComputerScience/AlgorithmsInComputerScience/BitMatrixStreamPresentation.lean/declarations/leanlatexpresentationinput.md) | 28 | `declaration-track:4bce122bada2c5e49060816853173e474f67f096f65ca460eaa71d01d0cbe7fe` |
-| 3 | `structure` | [LeanLatexPresentationOutput](../../../../../ComputerScience/AlgorithmsInComputerScience/BitMatrixStreamPresentation.lean/declarations/leanlatexpresentationoutput.md) | 35 | `declaration-track:ba3b1a1e08d8b645d89ee281b4b277ee0052ab91f39579463fdbd339803134c1` |
-| 4 | `structure` | [LeanLatexPresentationRule](../../../../../ComputerScience/AlgorithmsInComputerScience/BitMatrixStreamPresentation.lean/declarations/leanlatexpresentationrule.md) | 40 | `declaration-track:385f1b40fa9c72d4ca468acc27a856701d28b03e71f3643fbff2c8a25ebfd095` |
-| 5 | `theorem` | [leanLatexPresentation_respectsRanking](../../../../../ComputerScience/AlgorithmsInComputerScience/BitMatrixStreamPresentation.lean/declarations/leanlatexpresentation-respectsranking.md) | 48 | `result-track:7c7bfb1de6dbeb229ed5f50b95b4b21c9a1169dea7d0f5b367bf56002e93b78d` |
+| 1 | `structure` | [BitMatrixStreamMaterializer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BitMatrixStreamPresentation.lean/declarations/bitmatrixstreammaterializer.md) | 23 | `declaration-track:4510b58b748bc6851b1dd02db0105d2b38923ce29ac0f926696e8027f7b4bb88` |
+| 2 | `structure` | [LeanLatexPresentationInput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BitMatrixStreamPresentation.lean/declarations/leanlatexpresentationinput.md) | 28 | `declaration-track:4bce122bada2c5e49060816853173e474f67f096f65ca460eaa71d01d0cbe7fe` |
+| 3 | `structure` | [LeanLatexPresentationOutput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BitMatrixStreamPresentation.lean/declarations/leanlatexpresentationoutput.md) | 35 | `declaration-track:ba3b1a1e08d8b645d89ee281b4b277ee0052ab91f39579463fdbd339803134c1` |
+| 4 | `structure` | [LeanLatexPresentationRule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BitMatrixStreamPresentation.lean/declarations/leanlatexpresentationrule.md) | 40 | `declaration-track:385f1b40fa9c72d4ca468acc27a856701d28b03e71f3643fbff2c8a25ebfd095` |
+| 5 | `theorem` | [leanLatexPresentation_respectsRanking](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BitMatrixStreamPresentation.lean/declarations/leanlatexpresentation-respectsranking.md) | 48 | `result-track:7c7bfb1de6dbeb229ed5f50b95b4b21c9a1169dea7d0f5b367bf56002e93b78d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

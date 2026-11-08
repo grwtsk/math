@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MetrizableUniformityNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/MetrizableUniformityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableUniformityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableUniformityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ofPreNNDist](../../../../GeneralTopology/MetrizableUniformityNamespaced.lean/declarations/ofprenndist.md) | 65 | `declaration-track:25bf584a6ecb5dfa46cd24152375a89bbf02e7386c0367dab64878e62fe06f6a` |
-| 2 | `theorem` | [dist_ofPreNNDist](../../../../GeneralTopology/MetrizableUniformityNamespaced.lean/declarations/dist-ofprenndist.md) | 95 | `result-track:5c304aa77f1f79c62d0a3c70ae82d673b63822951b258963dc6897ed1b71db8e` |
-| 3 | `theorem` | [dist_ofPreNNDist_le](../../../../GeneralTopology/MetrizableUniformityNamespaced.lean/declarations/dist-ofprenndist-le.md) | 103 | `result-track:59695edb52e371bc94152e065b119ecb34941110d5bdad6a0c80a627f1748090` |
-| 4 | `theorem` | [le_two_mul_dist_ofPreNNDist](../../../../GeneralTopology/MetrizableUniformityNamespaced.lean/declarations/le-two-mul-dist-ofprenndist.md) | 116 | `result-track:090e422b310fc9bcb23ff60ff7d7cf8d8562487a1b86f1dea648aefc9a1f029e` |
-| 5 | `theorem` | [UniformSpace.metrizable_uniformity](../../../../GeneralTopology/MetrizableUniformityNamespaced.lean/declarations/uniformspace-metrizable-uniformity.md) | 194 | `result-track:e50d2ef8cba20e72b733e8e5bf1db175e00c1ec2695c9324f7e4c1ccc72f0163` |
-| 6 | `def` | [UniformSpace.pseudoMetricSpace](../../../../GeneralTopology/MetrizableUniformityNamespaced.lean/declarations/uniformspace-pseudometricspace.md) | 265 | `declaration-track:1080e3216000e9295506afa219160a02f4519e4d9a24a600e6dc5e3d50e32783` |
-| 7 | `def` | [UniformSpace.metricSpace](../../../../GeneralTopology/MetrizableUniformityNamespaced.lean/declarations/uniformspace-metricspace.md) | 272 | `declaration-track:d88585a6028fad052824a3d6bd296219b6e51be5f2fe4d81fa1c19fe5a36f515` |
-| 8 | `instance` | [(anonymous)](../../../../GeneralTopology/MetrizableUniformityNamespaced.lean/declarations/instance.md) | 278 | `declaration-track:33ccf1c52f9eda1342f94e70292788fe590a387c8ec4a68c5254dda2fba5d108` |
-| 9 | `theorem` | [UniformSpace.metrizableSpace](../../../../GeneralTopology/MetrizableUniformityNamespaced.lean/declarations/uniformspace-metrizablespace.md) | 286 | `result-track:c8ad93c04b5d8cf9b70aaad11b501759ad163f23f6af20930c3dc0ab10619051` |
+| 1 | `def` | [ofPreNNDist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableUniformityNamespaced.lean/declarations/ofprenndist.md) | 65 | `declaration-track:25bf584a6ecb5dfa46cd24152375a89bbf02e7386c0367dab64878e62fe06f6a` |
+| 2 | `theorem` | [dist_ofPreNNDist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableUniformityNamespaced.lean/declarations/dist-ofprenndist.md) | 95 | `result-track:5c304aa77f1f79c62d0a3c70ae82d673b63822951b258963dc6897ed1b71db8e` |
+| 3 | `theorem` | [dist_ofPreNNDist_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableUniformityNamespaced.lean/declarations/dist-ofprenndist-le.md) | 103 | `result-track:59695edb52e371bc94152e065b119ecb34941110d5bdad6a0c80a627f1748090` |
+| 4 | `theorem` | [le_two_mul_dist_ofPreNNDist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableUniformityNamespaced.lean/declarations/le-two-mul-dist-ofprenndist.md) | 116 | `result-track:090e422b310fc9bcb23ff60ff7d7cf8d8562487a1b86f1dea648aefc9a1f029e` |
+| 5 | `theorem` | [UniformSpace.metrizable_uniformity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableUniformityNamespaced.lean/declarations/uniformspace-metrizable-uniformity.md) | 194 | `result-track:e50d2ef8cba20e72b733e8e5bf1db175e00c1ec2695c9324f7e4c1ccc72f0163` |
+| 6 | `def` | [UniformSpace.pseudoMetricSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableUniformityNamespaced.lean/declarations/uniformspace-pseudometricspace.md) | 265 | `declaration-track:1080e3216000e9295506afa219160a02f4519e4d9a24a600e6dc5e3d50e32783` |
+| 7 | `def` | [UniformSpace.metricSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableUniformityNamespaced.lean/declarations/uniformspace-metricspace.md) | 272 | `declaration-track:d88585a6028fad052824a3d6bd296219b6e51be5f2fe4d81fa1c19fe5a36f515` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableUniformityNamespaced.lean/declarations/instance.md) | 278 | `declaration-track:33ccf1c52f9eda1342f94e70292788fe590a387c8ec4a68c5254dda2fba5d108` |
+| 9 | `theorem` | [UniformSpace.metrizableSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableUniformityNamespaced.lean/declarations/uniformspace-metrizablespace.md) | 286 | `result-track:c8ad93c04b5d8cf9b70aaad11b501759ad163f23f6af20930c3dc0ab10619051` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

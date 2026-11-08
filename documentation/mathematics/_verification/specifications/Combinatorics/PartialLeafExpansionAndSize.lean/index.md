@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PartialLeafExpansionAndSize.lean/index.md) · [Full source](../../../../Combinatorics/PartialLeafExpansionAndSize.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartialLeafExpansionAndSize.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartialLeafExpansionAndSize.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Catalan.Tree` — import line 21; external provider; requires a separately pinned dependency.
-- [Direction Words And Addresses](../../../../Combinatorics/DirectionWordsAndAddresses.lean/index.md) — import line 22; pinned internal source present.
+- [Direction Words And Addresses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectionWordsAndAddresses.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [expandAt?](../../../../Combinatorics/PartialLeafExpansionAndSize.lean/declarations/expandat.md) | 42 | `declaration-track:cd8e033850a41ceb55d875b22c7b44f3ebe837a7532e8560670e48c280248b9a` |
-| 2 | `theorem` | [expandAt?_internal](../../../../Combinatorics/PartialLeafExpansionAndSize.lean/declarations/expandat-internal.md) | 55 | `result-track:d34dd23500582b93d282e6123619856416486e91ea6edf8b26ae131d67245e11` |
-| 3 | `theorem` | [expandAt?_leaves](../../../../Combinatorics/PartialLeafExpansionAndSize.lean/declarations/expandat-leaves.md) | 98 | `result-track:6f5b3eea9a4dceae2d7751f944a422bc46a6f90d9a6c604f8bc950e38e26452e` |
+| 1 | `def` | [expandAt?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartialLeafExpansionAndSize.lean/declarations/expandat.md) | 42 | `declaration-track:cd8e033850a41ceb55d875b22c7b44f3ebe837a7532e8560670e48c280248b9a` |
+| 2 | `theorem` | [expandAt?_internal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartialLeafExpansionAndSize.lean/declarations/expandat-internal.md) | 55 | `result-track:d34dd23500582b93d282e6123619856416486e91ea6edf8b26ae131d67245e11` |
+| 3 | `theorem` | [expandAt?_leaves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartialLeafExpansionAndSize.lean/declarations/expandat-leaves.md) | 98 | `result-track:6f5b3eea9a4dceae2d7751f944a422bc46a6f90d9a6c604f8bc950e38e26452e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

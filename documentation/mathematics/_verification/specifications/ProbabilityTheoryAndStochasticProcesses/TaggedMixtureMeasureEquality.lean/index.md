@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/TaggedMixtureMeasureEquality.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/TaggedMixtureMeasureEquality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TaggedMixtureMeasureEquality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TaggedMixtureMeasureEquality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -50,7 +50,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.MeasureTheory.Constructions.BorelSpace.Basic` — import line 20; external provider; requires a separately pinned dependency.
 - `Mathlib.MeasureTheory.Measure.Dirac` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 22; external provider; requires a separately pinned dependency.
-- [Atomic Probability Measure](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicProbabilityMeasure.lean/index.md) — import line 24; pinned internal source present.
+- [Atomic Probability Measure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AtomicProbabilityMeasure.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mixedAtomicMeasure](../../../../ProbabilityTheoryAndStochasticProcesses/TaggedMixtureMeasureEquality.lean/declarations/mixedatomicmeasure.md) | 47 | `declaration-track:b8e385cecd2fb565c2517621ef3b0c3085ef8d16b1d1029957ddd4a9847d3aa0` |
-| 2 | `theorem` | [atomicMeasure_mix](../../../../ProbabilityTheoryAndStochasticProcesses/TaggedMixtureMeasureEquality.lean/declarations/atomicmeasure-mix.md) | 53 | `result-track:037f5de396730929e86ead28a094ae497936415037c91e55c50e86c18d2cc6cc` |
+| 1 | `def` | [mixedAtomicMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TaggedMixtureMeasureEquality.lean/declarations/mixedatomicmeasure.md) | 47 | `declaration-track:b8e385cecd2fb565c2517621ef3b0c3085ef8d16b1d1029957ddd4a9847d3aa0` |
+| 2 | `theorem` | [atomicMeasure_mix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TaggedMixtureMeasureEquality.lean/declarations/atomicmeasure-mix.md) | 53 | `result-track:037f5de396730929e86ead28a094ae497936415037c91e55c50e86c18d2cc6cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

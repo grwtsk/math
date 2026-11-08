@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/AngularTriangleLiteralCheckNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/AngularTriangleLiteralCheckNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AngularTriangleLiteralCheckNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AngularTriangleLiteralCheckNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sqrt_normalized_integral_eq_norm](../../../../MeasureAndIntegration/AngularTriangleLiteralCheckNamespaced.lean/declarations/sqrt-normalized-integral-eq-norm.md) | 19 | `result-track:5df745b7c6a0443c1ff49be05b7e30d6ebe98eef4fb0d3fceb64ba175b6e1887` |
-| 2 | `theorem` | [sqrt_normalized_integral_add_le](../../../../MeasureAndIntegration/AngularTriangleLiteralCheckNamespaced.lean/declarations/sqrt-normalized-integral-add-le.md) | 25 | `result-track:93199f03c2eb0b68f770bf93b3cf7ab89968f8eaa5834fa903ac79b7caba87aa` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/AngularTriangleLiteralCheckNamespaced.lean/declarations/example-source-edition-2.md) | 47 | `declaration-track:ab6e42b3b857f318496a347ba15ba0e915fcbb6a9defd72bf0c18b4175f56bd1` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/AngularTriangleLiteralCheckNamespaced.lean/declarations/example.md) | 52 | `declaration-track:88acf33f1426518bc6cd6679d723a1f037df1b4078f3ffb522157641eeb534b5` |
+| 1 | `theorem` | [sqrt_normalized_integral_eq_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AngularTriangleLiteralCheckNamespaced.lean/declarations/sqrt-normalized-integral-eq-norm.md) | 19 | `result-track:5df745b7c6a0443c1ff49be05b7e30d6ebe98eef4fb0d3fceb64ba175b6e1887` |
+| 2 | `theorem` | [sqrt_normalized_integral_add_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AngularTriangleLiteralCheckNamespaced.lean/declarations/sqrt-normalized-integral-add-le.md) | 25 | `result-track:93199f03c2eb0b68f770bf93b3cf7ab89968f8eaa5834fa903ac79b7caba87aa` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AngularTriangleLiteralCheckNamespaced.lean/declarations/example-source-edition-2.md) | 47 | `declaration-track:ab6e42b3b857f318496a347ba15ba0e915fcbb6a9defd72bf0c18b4175f56bd1` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AngularTriangleLiteralCheckNamespaced.lean/declarations/example.md) | 52 | `declaration-track:88acf33f1426518bc6cd6679d723a1f037df1b4078f3ffb522157641eeb534b5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

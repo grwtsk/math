@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/ManifoldComplexPublic.lean/index.md) · [Full source](../../../../DifferentialGeometry/ManifoldComplexPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldComplexPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldComplexPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Complex.norm_eventually_eq_of_mdifferentiableAt_of_isLocalMax](../../../../DifferentialGeometry/ManifoldComplexPublic.lean/declarations/complex-norm-eventually-eq-of-mdifferentiableat-of-islocalmax.md) | 57 | `result-track:04689af5ac44a55003b34ff99d013f1004d86154681c23be7c6b938a24fa3ccc` |
-| 2 | `theorem` | [norm_eqOn_of_isPreconnected_of_isMaxOn](../../../../DifferentialGeometry/ManifoldComplexPublic.lean/declarations/norm-eqon-of-ispreconnected-of-ismaxon.md) | 89 | `result-track:6e48a4a697e9ef3137c72dc62c14587a1a1f43bde05bf27207f962c8c876a294` |
-| 3 | `theorem` | [eqOn_of_isPreconnected_of_isMaxOn_norm](../../../../DifferentialGeometry/ManifoldComplexPublic.lean/declarations/eqon-of-ispreconnected-of-ismaxon-norm.md) | 114 | `result-track:171c45f5ab7030bc2e88aa61a8023a30e98a23da46a5bda555494fb2d8810866` |
-| 4 | `theorem` | [apply_eq_of_isPreconnected_isCompact_isOpen](../../../../DifferentialGeometry/ManifoldComplexPublic.lean/declarations/apply-eq-of-ispreconnected-iscompact-isopen.md) | 125 | `result-track:ce83273387d39bf9704198f8381f7e009a0413f80f96a20dded23ad8e8676b94` |
-| 5 | `theorem` | [isLocallyConstant](../../../../DifferentialGeometry/ManifoldComplexPublic.lean/declarations/islocallyconstant.md) | 156 | `result-track:03e77c05d84ddaf6c370ed0b728b8b9d9441ca2bb20e5546882fd578949c003b` |
-| 6 | `theorem` | [apply_eq_of_compactSpace](../../../../DifferentialGeometry/ManifoldComplexPublic.lean/declarations/apply-eq-of-compactspace.md) | 165 | `result-track:563b7a32b8adefb00af381eb604a4fac13aa4532291c622914c3e33c8dd9b867` |
-| 7 | `theorem` | [exists_eq_const_of_compactSpace](../../../../DifferentialGeometry/ManifoldComplexPublic.lean/declarations/exists-eq-const-of-compactspace.md) | 171 | `result-track:08b46f54b0ff8e66cef239f39e2d3a9a1337ef534029b8d841b8e64e22e2415b` |
+| 1 | `theorem` | [Complex.norm_eventually_eq_of_mdifferentiableAt_of_isLocalMax](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldComplexPublic.lean/declarations/complex-norm-eventually-eq-of-mdifferentiableat-of-islocalmax.md) | 57 | `result-track:04689af5ac44a55003b34ff99d013f1004d86154681c23be7c6b938a24fa3ccc` |
+| 2 | `theorem` | [norm_eqOn_of_isPreconnected_of_isMaxOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldComplexPublic.lean/declarations/norm-eqon-of-ispreconnected-of-ismaxon.md) | 89 | `result-track:6e48a4a697e9ef3137c72dc62c14587a1a1f43bde05bf27207f962c8c876a294` |
+| 3 | `theorem` | [eqOn_of_isPreconnected_of_isMaxOn_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldComplexPublic.lean/declarations/eqon-of-ispreconnected-of-ismaxon-norm.md) | 114 | `result-track:171c45f5ab7030bc2e88aa61a8023a30e98a23da46a5bda555494fb2d8810866` |
+| 4 | `theorem` | [apply_eq_of_isPreconnected_isCompact_isOpen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldComplexPublic.lean/declarations/apply-eq-of-ispreconnected-iscompact-isopen.md) | 125 | `result-track:ce83273387d39bf9704198f8381f7e009a0413f80f96a20dded23ad8e8676b94` |
+| 5 | `theorem` | [isLocallyConstant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldComplexPublic.lean/declarations/islocallyconstant.md) | 156 | `result-track:03e77c05d84ddaf6c370ed0b728b8b9d9441ca2bb20e5546882fd578949c003b` |
+| 6 | `theorem` | [apply_eq_of_compactSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldComplexPublic.lean/declarations/apply-eq-of-compactspace.md) | 165 | `result-track:563b7a32b8adefb00af381eb604a4fac13aa4532291c622914c3e33c8dd9b867` |
+| 7 | `theorem` | [exists_eq_const_of_compactSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldComplexPublic.lean/declarations/exists-eq-const-of-compactspace.md) | 171 | `result-track:08b46f54b0ff8e66cef239f39e2d3a9a1337ef534029b8d841b8e64e22e2415b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

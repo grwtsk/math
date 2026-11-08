@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toMulBot](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/declarations/tomulbot.md) | 35 | `declaration-track:1dbc10da37e67018c6e893e7bb79c7f87b7530c4160f9429a4365c0dbc4405b7` |
-| 2 | `theorem` | [toMulBot_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/declarations/tomulbot-zero.md) | 39 | `result-track:93a5bdc913224189beeea4f880b1bf60db1762389ed544d2397e53b4e8fc0f88` |
-| 3 | `theorem` | [toMulBot_coe](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/declarations/tomulbot-coe.md) | 43 | `result-track:514354edba063e24159f6673bff78e2d1e0fa632e725ff9b60aa4dd9660db247` |
-| 4 | `theorem` | [toMulBot_symm_bot](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/declarations/tomulbot-symm-bot.md) | 48 | `result-track:4d00e0938827b919d7bdecebf2733ab1bb74ac924650f68dd104e24d0779bd81` |
-| 5 | `theorem` | [toMulBot_coe_ofAdd](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/declarations/tomulbot-coe-ofadd.md) | 52 | `result-track:155d2ba895e648584355467a05d5aae0d7f6dc62f0cc8d3715c3cc6c903ac1d1` |
-| 6 | `theorem` | [toMulBot_strictMono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/declarations/tomulbot-strictmono.md) | 58 | `result-track:95389b9c726cbe0695b4e2c40ccb02939d02b0c78c1666b2bfb28b5d9b76b3d4` |
-| 7 | `theorem` | [toMulBot_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/declarations/tomulbot-le.md) | 61 | `result-track:2dae2a3436e12b8ec275307ffff097dec572ee0d9f89a4db9635baada2593d47` |
-| 8 | `theorem` | [toMulBot_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/declarations/tomulbot-lt.md) | 65 | `result-track:9abdb113f09ad1b3c04d3ca9624ff35bc9d6a70943ef496b57b8f6a9b9a792df` |
+| 1 | `def` | [toMulBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/declarations/tomulbot.md) | 35 | `declaration-track:1dbc10da37e67018c6e893e7bb79c7f87b7530c4160f9429a4365c0dbc4405b7` |
+| 2 | `theorem` | [toMulBot_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/declarations/tomulbot-zero.md) | 39 | `result-track:93a5bdc913224189beeea4f880b1bf60db1762389ed544d2397e53b4e8fc0f88` |
+| 3 | `theorem` | [toMulBot_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/declarations/tomulbot-coe.md) | 43 | `result-track:514354edba063e24159f6673bff78e2d1e0fa632e725ff9b60aa4dd9660db247` |
+| 4 | `theorem` | [toMulBot_symm_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/declarations/tomulbot-symm-bot.md) | 48 | `result-track:4d00e0938827b919d7bdecebf2733ab1bb74ac924650f68dd104e24d0779bd81` |
+| 5 | `theorem` | [toMulBot_coe_ofAdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/declarations/tomulbot-coe-ofadd.md) | 52 | `result-track:155d2ba895e648584355467a05d5aae0d7f6dc62f0cc8d3715c3cc6c903ac1d1` |
+| 6 | `theorem` | [toMulBot_strictMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/declarations/tomulbot-strictmono.md) | 58 | `result-track:95389b9c726cbe0695b4e2c40ccb02939d02b0c78c1666b2bfb28b5d9b76b3d4` |
+| 7 | `theorem` | [toMulBot_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/declarations/tomulbot-le.md) | 61 | `result-track:2dae2a3436e12b8ec275307ffff097dec572ee0d9f89a4db9635baada2593d47` |
+| 8 | `theorem` | [toMulBot_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespaced.lean/declarations/tomulbot-lt.md) | 65 | `result-track:9abdb113f09ad1b3c04d3ca9624ff35bc9d6a70943ef496b57b8f6a9b9a792df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

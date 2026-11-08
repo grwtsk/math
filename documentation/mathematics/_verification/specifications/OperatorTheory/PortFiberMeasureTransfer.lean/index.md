@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../OperatorTheory/PortFiberMeasureTransfer.lean/index.md) · [Full source](../../../../OperatorTheory/PortFiberMeasureTransfer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/PortFiberMeasureTransfer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/PortFiberMeasureTransfer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.PortFiberMultiplierCircle`](../../../../MeasureAndIntegration/PortFiberMultiplierCircle.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.Operator.HolomorphicMultiplierCircleMixture`](../../../../GeneralTopology/HolomorphicMultiplierCircleMixture.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberMultiplierCircle`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberMultiplierCircle.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Operator.HolomorphicMultiplierCircleMixture`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicMultiplierCircleMixture.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [schemaVersion](../../../../OperatorTheory/PortFiberMeasureTransfer.lean/declarations/schemaversion.md) | 35 | `declaration-track:6a34366dbd8e3c8eb8959fc75c20e5b5a461bf09a24e0261cdca78eb55d8759c` |
-| 2 | `inductive` | [AddedIndex](../../../../OperatorTheory/PortFiberMeasureTransfer.lean/declarations/addedindex.md) | 37 | `declaration-track:f7c623982075f10953bd3c39198a041cca95deddc047f051edd39fe19cf2dcd1` |
-| 3 | `def` | [AddedClaim](../../../../OperatorTheory/PortFiberMeasureTransfer.lean/declarations/addedclaim.md) | 48 | `declaration-track:418a18647b96655d652d8d24a101e2c65e8b35ee902ee6334c5e9b59fb0d2905` |
-| 4 | `theorem` | [addedClaim_proof](../../../../OperatorTheory/PortFiberMeasureTransfer.lean/declarations/addedclaim-proof.md) | 105 | `result-track:6c70afce28d485f40e8c9ce96d8e49247d4353fcb68f7180acf4f8e135b78d7b` |
-| 5 | `def` | [portfolio](../../../../OperatorTheory/PortFiberMeasureTransfer.lean/declarations/portfolio.md) | 128 | `declaration-track:a3da7a16ced1a011f3cf5a9887f97853a803ac5299f05e96a4ece8bbb08efdd2` |
-| 6 | `def` | [architecture](../../../../OperatorTheory/PortFiberMeasureTransfer.lean/declarations/architecture.md) | 131 | `declaration-track:3813726d8b54a713f6dce8c863c096d1c4ac7d937c2d7f47d2d3e6bef274d4ec` |
-| 7 | `abbrev` | [PreviousIndex](../../../../OperatorTheory/PortFiberMeasureTransfer.lean/declarations/previousindex.md) | 135 | `declaration-track:ee8e9245b0236c45cc8d5669e477eee52ab30c1dac07c5075b9a01b5795b2c53` |
-| 8 | `theorem` | [original_branch_unchanged](../../../../OperatorTheory/PortFiberMeasureTransfer.lean/declarations/original-branch-unchanged.md) | 139 | `result-track:753b784078ad51f68797c912931eb12f968b4db639b26f2fe16615924bde9143` |
-| 9 | `theorem` | [new_branch_proved](../../../../OperatorTheory/PortFiberMeasureTransfer.lean/declarations/new-branch-proved.md) | 145 | `result-track:769c4eaa7bdec64a4a683ea31f38dbbc21487dfec187d26e3b2da78e47acfcac` |
-| 10 | `theorem` | [target_unchanged](../../../../OperatorTheory/PortFiberMeasureTransfer.lean/declarations/target-unchanged.md) | 150 | `result-track:c0c189df46f65f9f4c0acb964b87a2e80ab9a7c40a5081c87ece5435c67031ee` |
-| 11 | `theorem` | [retarget_preserves_new](../../../../OperatorTheory/PortFiberMeasureTransfer.lean/declarations/retarget-preserves-new.md) | 155 | `result-track:e22f59c85a2b2a66fbd5147af62559a3292382606e087a8507ad5e98ddb6ea83` |
+| 1 | `def` | [schemaVersion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/PortFiberMeasureTransfer.lean/declarations/schemaversion.md) | 35 | `declaration-track:6a34366dbd8e3c8eb8959fc75c20e5b5a461bf09a24e0261cdca78eb55d8759c` |
+| 2 | `inductive` | [AddedIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/PortFiberMeasureTransfer.lean/declarations/addedindex.md) | 37 | `declaration-track:f7c623982075f10953bd3c39198a041cca95deddc047f051edd39fe19cf2dcd1` |
+| 3 | `def` | [AddedClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/PortFiberMeasureTransfer.lean/declarations/addedclaim.md) | 48 | `declaration-track:418a18647b96655d652d8d24a101e2c65e8b35ee902ee6334c5e9b59fb0d2905` |
+| 4 | `theorem` | [addedClaim_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/PortFiberMeasureTransfer.lean/declarations/addedclaim-proof.md) | 105 | `result-track:6c70afce28d485f40e8c9ce96d8e49247d4353fcb68f7180acf4f8e135b78d7b` |
+| 5 | `def` | [portfolio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/PortFiberMeasureTransfer.lean/declarations/portfolio.md) | 128 | `declaration-track:a3da7a16ced1a011f3cf5a9887f97853a803ac5299f05e96a4ece8bbb08efdd2` |
+| 6 | `def` | [architecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/PortFiberMeasureTransfer.lean/declarations/architecture.md) | 131 | `declaration-track:3813726d8b54a713f6dce8c863c096d1c4ac7d937c2d7f47d2d3e6bef274d4ec` |
+| 7 | `abbrev` | [PreviousIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/PortFiberMeasureTransfer.lean/declarations/previousindex.md) | 135 | `declaration-track:ee8e9245b0236c45cc8d5669e477eee52ab30c1dac07c5075b9a01b5795b2c53` |
+| 8 | `theorem` | [original_branch_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/PortFiberMeasureTransfer.lean/declarations/original-branch-unchanged.md) | 139 | `result-track:753b784078ad51f68797c912931eb12f968b4db639b26f2fe16615924bde9143` |
+| 9 | `theorem` | [new_branch_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/PortFiberMeasureTransfer.lean/declarations/new-branch-proved.md) | 145 | `result-track:769c4eaa7bdec64a4a683ea31f38dbbc21487dfec187d26e3b2da78e47acfcac` |
+| 10 | `theorem` | [target_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/PortFiberMeasureTransfer.lean/declarations/target-unchanged.md) | 150 | `result-track:c0c189df46f65f9f4c0acb964b87a2e80ab9a7c40a5081c87ece5435c67031ee` |
+| 11 | `theorem` | [retarget_preserves_new](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/PortFiberMeasureTransfer.lean/declarations/retarget-preserves-new.md) | 155 | `result-track:e22f59c85a2b2a66fbd5147af62559a3292382606e087a8507ad5e98ddb6ea83` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

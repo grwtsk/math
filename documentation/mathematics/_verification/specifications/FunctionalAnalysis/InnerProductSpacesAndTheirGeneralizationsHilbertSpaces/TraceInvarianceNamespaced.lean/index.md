@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TraceInvarianceNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TraceInvarianceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TraceInvarianceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TraceInvarianceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ExactArithmeticTransport](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TraceInvarianceNamespaced.lean/declarations/exactarithmetictransport.md) | 24 | `declaration-track:9f8a05d1b20e4a01cc31f400103a3475fa0c1d364141257fa67756e12efcb703` |
-| 2 | `theorem` | [arithmeticTrace_invariant_of_exactCompensation](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TraceInvarianceNamespaced.lean/declarations/arithmetictrace-invariant-of-exactcompensation.md) | 66 | `result-track:a2adc816cfb909711debcc280376035b6dcde5075aab5ae3c4857e9bb032c5e1` |
+| 1 | `structure` | [ExactArithmeticTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TraceInvarianceNamespaced.lean/declarations/exactarithmetictransport.md) | 24 | `declaration-track:9f8a05d1b20e4a01cc31f400103a3475fa0c1d364141257fa67756e12efcb703` |
+| 2 | `theorem` | [arithmeticTrace_invariant_of_exactCompensation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TraceInvarianceNamespaced.lean/declarations/arithmetictrace-invariant-of-exactcompensation.md) | 66 | `result-track:a2adc816cfb909711debcc280376035b6dcde5075aab5ae3c4857e9bb032c5e1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

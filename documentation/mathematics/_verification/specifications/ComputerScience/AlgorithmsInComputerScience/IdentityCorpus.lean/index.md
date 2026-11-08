@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [theoremLink](../../../../../ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/theoremlink.md) | 16 | `declaration-track:b9f7fa1a2655241f409de6bb30e944f13c69ef85573267fb03b018cafa07f821` |
-| 2 | `def` | [botJoin](../../../../../ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/botjoin.md) | 39 | `declaration-track:07b08967bcaa61be789ebabb782e15b59b47a9b063dac86d57e3dc8306d49240` |
-| 3 | `def` | [topMeet](../../../../../ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/topmeet.md) | 45 | `declaration-track:b1f265586c167880670e1aea5dea5f9e340ab16dcfb9c39092369746ad9eae24` |
-| 4 | `def` | [complementJoin](../../../../../ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/complementjoin.md) | 51 | `declaration-track:dc37afecf9607286e6dd5942383868701c90143ec6d9a32aabc277071f89379f` |
-| 5 | `def` | [complementMeet](../../../../../ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/complementmeet.md) | 57 | `declaration-track:56f85d3c5572d5fac5583582689a7e6c1bea03471f0bccf64f08b619ecddcd56` |
-| 6 | `def` | [joinIdempotent](../../../../../ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/joinidempotent.md) | 63 | `declaration-track:25aba6e76177b1c4202e81c49c7d3b009ad3e514cd7b7ce0d2ac6e17287578e2` |
-| 7 | `def` | [meetIdempotent](../../../../../ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/meetidempotent.md) | 69 | `declaration-track:53dad923df7b0684cb74e2c2e81403bed6d628380e8b1c20f8cb2ae68ac96d31` |
-| 8 | `def` | [joinTop](../../../../../ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/jointop.md) | 75 | `declaration-track:aaee6b5d92be356b42d0c424380e1f5db76b1f8d1ae4a59e1090c2c82a3fb86f` |
-| 9 | `def` | [topJoin](../../../../../ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/topjoin.md) | 81 | `declaration-track:ce355735f78edee8bdf4530e600f0ea1e058976350d7e9daab1b9b231576118e` |
-| 10 | `def` | [meetBot](../../../../../ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/meetbot.md) | 87 | `declaration-track:e5d60b133c3541db7ea5061fd38487461b847b6a7f54dfb88bca1190c048012f` |
-| 11 | `def` | [botMeet](../../../../../ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/botmeet.md) | 93 | `declaration-track:f8aae2a62dd0b2ed10f2bb6f502a68f79d72cb69b2c07ea61d5ff79a49200a06` |
-| 12 | `def` | [links](../../../../../ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/links.md) | 99 | `declaration-track:7961f19a23761ae720624af6b21f3093ada93d57bf0d1e5ce4fa1b2459989e9b` |
-| 13 | `theorem` | [links_length](../../../../../ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/links-length.md) | 112 | `result-track:eab115a0db7caedd85560e8ad6575bb9698ed52be853f0e88f2965c2367760b1` |
+| 1 | `def` | [theoremLink](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/theoremlink.md) | 16 | `declaration-track:b9f7fa1a2655241f409de6bb30e944f13c69ef85573267fb03b018cafa07f821` |
+| 2 | `def` | [botJoin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/botjoin.md) | 39 | `declaration-track:07b08967bcaa61be789ebabb782e15b59b47a9b063dac86d57e3dc8306d49240` |
+| 3 | `def` | [topMeet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/topmeet.md) | 45 | `declaration-track:b1f265586c167880670e1aea5dea5f9e340ab16dcfb9c39092369746ad9eae24` |
+| 4 | `def` | [complementJoin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/complementjoin.md) | 51 | `declaration-track:dc37afecf9607286e6dd5942383868701c90143ec6d9a32aabc277071f89379f` |
+| 5 | `def` | [complementMeet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/complementmeet.md) | 57 | `declaration-track:56f85d3c5572d5fac5583582689a7e6c1bea03471f0bccf64f08b619ecddcd56` |
+| 6 | `def` | [joinIdempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/joinidempotent.md) | 63 | `declaration-track:25aba6e76177b1c4202e81c49c7d3b009ad3e514cd7b7ce0d2ac6e17287578e2` |
+| 7 | `def` | [meetIdempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/meetidempotent.md) | 69 | `declaration-track:53dad923df7b0684cb74e2c2e81403bed6d628380e8b1c20f8cb2ae68ac96d31` |
+| 8 | `def` | [joinTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/jointop.md) | 75 | `declaration-track:aaee6b5d92be356b42d0c424380e1f5db76b1f8d1ae4a59e1090c2c82a3fb86f` |
+| 9 | `def` | [topJoin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/topjoin.md) | 81 | `declaration-track:ce355735f78edee8bdf4530e600f0ea1e058976350d7e9daab1b9b231576118e` |
+| 10 | `def` | [meetBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/meetbot.md) | 87 | `declaration-track:e5d60b133c3541db7ea5061fd38487461b847b6a7f54dfb88bca1190c048012f` |
+| 11 | `def` | [botMeet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/botmeet.md) | 93 | `declaration-track:f8aae2a62dd0b2ed10f2bb6f502a68f79d72cb69b2c07ea61d5ff79a49200a06` |
+| 12 | `def` | [links](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/links.md) | 99 | `declaration-track:7961f19a23761ae720624af6b21f3093ada93d57bf0d1e5ce4fa1b2459989e9b` |
+| 13 | `theorem` | [links_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdentityCorpus.lean/declarations/links-length.md) | 112 | `result-track:eab115a0db7caedd85560e8ad6575bb9698ed52be853f0e88f2965c2367760b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ConformanceEvidenceLevel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/declarations/conformanceevidencelevel.md) | 19 | `declaration-track:dd8a3bda55d1b4ec5011d10e0c28e1048dbe64f51aee3191b851c412be6b5dbd` |
-| 2 | `structure` | [FiniteConformanceRecord](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/declarations/finiteconformancerecord.md) | 26 | `declaration-track:a50fcddf3150810645e5a7830e9db3eb827593e2c27ef9f9568e2868c138a6a1` |
-| 3 | `def` | [FiniteConformanceRecord.Valid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/declarations/finiteconformancerecord-valid.md) | 37 | `declaration-track:031865478ce2f6f0002836089f790af864fd901eb383a88328d226c67cd6e40c` |
-| 4 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/declarations/instance.md) | 42 | `declaration-track:7759ae12d5a9b704a1d418aabc4a58f5b77a4d19885ad860d560fd6bad0d00c6` |
-| 5 | `structure` | [RustTransportCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/declarations/rusttransportcertificate.md) | 47 | `declaration-track:cd53ee6eb0301933aa20975e39ae51fc10a4c0aa82cc81c856221fc8cf004382` |
-| 6 | `def` | [RustTransportConforms](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/declarations/rusttransportconforms.md) | 54 | `declaration-track:a281c444613cbeff368e8a2888cfc661ccdf54bf392d64cccca3dd714e6bb917` |
-| 7 | `theorem` | [rustExpectedUpdate_eq_leanExpectedUpdate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/declarations/rustexpectedupdate-eq-leanexpectedupdate.md) | 61 | `result-track:e778efb5a5bfa518bfe67705680e86a4aec20a30df87dfb6b0ccdb9576a48751` |
-| 8 | `theorem` | [finiteConformanceRecord_does_not_expose_proposition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/declarations/finiteconformancerecord-does-not-expose-proposition.md) | 70 | `result-track:2f6a39424482083a03be011f7835098857d334f7e015d2f14e5a78b21aa23ebd` |
+| 1 | `inductive` | [ConformanceEvidenceLevel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/declarations/conformanceevidencelevel.md) | 19 | `declaration-track:dd8a3bda55d1b4ec5011d10e0c28e1048dbe64f51aee3191b851c412be6b5dbd` |
+| 2 | `structure` | [FiniteConformanceRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/declarations/finiteconformancerecord.md) | 26 | `declaration-track:a50fcddf3150810645e5a7830e9db3eb827593e2c27ef9f9568e2868c138a6a1` |
+| 3 | `def` | [FiniteConformanceRecord.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/declarations/finiteconformancerecord-valid.md) | 37 | `declaration-track:031865478ce2f6f0002836089f790af864fd901eb383a88328d226c67cd6e40c` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/declarations/instance.md) | 42 | `declaration-track:7759ae12d5a9b704a1d418aabc4a58f5b77a4d19885ad860d560fd6bad0d00c6` |
+| 5 | `structure` | [RustTransportCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/declarations/rusttransportcertificate.md) | 47 | `declaration-track:cd53ee6eb0301933aa20975e39ae51fc10a4c0aa82cc81c856221fc8cf004382` |
+| 6 | `def` | [RustTransportConforms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/declarations/rusttransportconforms.md) | 54 | `declaration-track:a281c444613cbeff368e8a2888cfc661ccdf54bf392d64cccca3dd714e6bb917` |
+| 7 | `theorem` | [rustExpectedUpdate_eq_leanExpectedUpdate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/declarations/rustexpectedupdate-eq-leanexpectedupdate.md) | 61 | `result-track:e778efb5a5bfa518bfe67705680e86a4aec20a30df87dfb6b0ccdb9576a48751` |
+| 8 | `theorem` | [finiteConformanceRecord_does_not_expose_proposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificatePublic.lean/declarations/finiteconformancerecord-does-not-expose-proposition.md) | 70 | `result-track:2f6a39424482083a03be011f7835098857d334f7e015d2f14e5a78b21aa23ebd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

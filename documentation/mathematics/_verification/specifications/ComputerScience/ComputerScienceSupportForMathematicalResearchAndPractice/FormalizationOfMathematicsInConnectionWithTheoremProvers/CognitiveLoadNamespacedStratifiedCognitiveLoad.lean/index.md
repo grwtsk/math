@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CognitiveLoadNamespacedStratifiedCognitiveLoad.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CognitiveLoadNamespacedStratifiedCognitiveLoad.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CognitiveLoadNamespacedStratifiedCognitiveLoad.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CognitiveLoadNamespacedStratifiedCognitiveLoad.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StratifiedCognitiveLoad](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CognitiveLoadNamespacedStratifiedCognitiveLoad.lean/declarations/stratifiedcognitiveload.md) | 17 | `declaration-track:483d6c73c7c854331e7a7d89b9f5f1fea9695f529c6274788e185f42da22c808` |
-| 2 | `def` | [StratifiedCognitiveLoad.total](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CognitiveLoadNamespacedStratifiedCognitiveLoad.lean/declarations/stratifiedcognitiveload-total.md) | 31 | `declaration-track:ed61751ac0c38cfa68b435532c894e7648012dcf580c3dc9b051acd95b4eb095` |
+| 1 | `structure` | [StratifiedCognitiveLoad](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CognitiveLoadNamespacedStratifiedCognitiveLoad.lean/declarations/stratifiedcognitiveload.md) | 17 | `declaration-track:483d6c73c7c854331e7a7d89b9f5f1fea9695f529c6274788e185f42da22c808` |
+| 2 | `def` | [StratifiedCognitiveLoad.total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CognitiveLoadNamespacedStratifiedCognitiveLoad.lean/declarations/stratifiedcognitiveload-total.md) | 31 | `declaration-track:ed61751ac0c38cfa68b435532c894e7648012dcf580c3dc9b051acd95b4eb095` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

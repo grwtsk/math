@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/IdentDistribIndepNamespacedPublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/IdentDistribIndepNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IdentDistribIndepNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IdentDistribIndepNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IdentDistrib.prodMk](../../../../ProbabilityTheoryAndStochasticProcesses/IdentDistribIndepNamespacedPublic.lean/declarations/identdistrib-prodmk.md) | 47 | `result-track:07144e26b872f456bbbea046181d0c4c24d88cee18660ace5299e8a37954001b` |
-| 2 | `lemma` | [IdentDistrib.pi](../../../../ProbabilityTheoryAndStochasticProcesses/IdentDistribIndepNamespacedPublic.lean/declarations/identdistrib-pi.md) | 65 | `result-track:0500b72eddeab3fa1979ef4d6b8c5839f19d9b546573b868fabcb07d854a6c1f` |
+| 1 | `lemma` | [IdentDistrib.prodMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IdentDistribIndepNamespacedPublic.lean/declarations/identdistrib-prodmk.md) | 47 | `result-track:07144e26b872f456bbbea046181d0c4c24d88cee18660ace5299e8a37954001b` |
+| 2 | `lemma` | [IdentDistrib.pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IdentDistribIndepNamespacedPublic.lean/declarations/identdistrib-pi.md) | 65 | `result-track:0500b72eddeab3fa1979ef4d6b8c5839f19d9b546573b868fabcb07d854a6c1f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

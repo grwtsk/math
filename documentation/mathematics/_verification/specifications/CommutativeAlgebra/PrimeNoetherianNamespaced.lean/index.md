@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PrimeNoetherianNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PrimeNoetherianNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeNoetherianNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeNoetherianNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/PrimeNoetherianNamespaced.lean/declarations/instance.md) | 34 | `declaration-track:37c9ad6db25386b3bffae17e6e9717bb189c23a4a89a55ef01469a4cd9a68dc7` |
-| 2 | `lemma` | [Prime Noetherian Namespaced](../../../../CommutativeAlgebra/PrimeNoetherianNamespaced.lean/declarations/finite-of-isnoetherianring.md) | 37 | `result-track:f7f7e9d9df3de29e86a42fe15a5c1829870c44450a8d27c13710a36106c151c9` |
-| 3 | `lemma` | [finite_setOf_isMin](../../../../CommutativeAlgebra/PrimeNoetherianNamespaced.lean/declarations/finite-setof-ismin.md) | 42 | `result-track:e730a1026b12085435d12dac25fc3d0ce78666f3ce4f6e02e14caa6bf631372e` |
-| 4 | `lemma` | [Prime Noetherian Namespaced](../../../../CommutativeAlgebra/PrimeNoetherianNamespaced.lean/declarations/finite-minimalprimes-of-isnoetherianring.md) | 49 | `result-track:e9119c2c752870f91e0706db17e22b090d64dfad6b28e2eb03039d3d8a772cae` |
-| 5 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/PrimeNoetherianNamespaced.lean/declarations/instance-source-edition-3.md) | 61 | `declaration-track:e0792d85670ea12be96a2a8dbe1733bc9c6a9682e458effee70ce192de2fa4fc` |
-| 6 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/PrimeNoetherianNamespaced.lean/declarations/instance-source-edition-2.md) | 63 | `declaration-track:dec46c3be951b3101429a071187baa2d64f9c4c9c6c3855d24c15c64d67369ea` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeNoetherianNamespaced.lean/declarations/instance.md) | 34 | `declaration-track:37c9ad6db25386b3bffae17e6e9717bb189c23a4a89a55ef01469a4cd9a68dc7` |
+| 2 | `lemma` | [Prime Noetherian Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeNoetherianNamespaced.lean/declarations/finite-of-isnoetherianring.md) | 37 | `result-track:f7f7e9d9df3de29e86a42fe15a5c1829870c44450a8d27c13710a36106c151c9` |
+| 3 | `lemma` | [finite_setOf_isMin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeNoetherianNamespaced.lean/declarations/finite-setof-ismin.md) | 42 | `result-track:e730a1026b12085435d12dac25fc3d0ce78666f3ce4f6e02e14caa6bf631372e` |
+| 4 | `lemma` | [Prime Noetherian Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeNoetherianNamespaced.lean/declarations/finite-minimalprimes-of-isnoetherianring.md) | 49 | `result-track:e9119c2c752870f91e0706db17e22b090d64dfad6b28e2eb03039d3d8a772cae` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeNoetherianNamespaced.lean/declarations/instance-source-edition-3.md) | 61 | `declaration-track:e0792d85670ea12be96a2a8dbe1733bc9c6a9682e458effee70ce192de2fa4fc` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeNoetherianNamespaced.lean/declarations/instance-source-edition-2.md) | 63 | `declaration-track:dec46c3be951b3101429a071187baa2d64f9c4c9c6c3855d24c15c64d67369ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

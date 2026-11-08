@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RubiksPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RubiksPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RubiksPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RubiksPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RubiksProps](../../../../../ComputerScience/AlgorithmsInComputerScience/RubiksPublic.lean/declarations/rubiksprops.md) | 10 | `declaration-track:79e0bbdf698e35364664d5c7fc6ec59ed41415ad6fc328749c083d32dba1b56c` |
-| 2 | `def` | [Rubiks](../../../../../ComputerScience/AlgorithmsInComputerScience/RubiksPublic.lean/declarations/rubiks.md) | 15 | `declaration-track:efbc9bc5974dbd314541f65b968dcf11ed79ad639ead7f661576bc7d06094248` |
-| 3 | `def` | [eg](../../../../../ComputerScience/AlgorithmsInComputerScience/RubiksPublic.lean/declarations/eg.md) | 18 | `declaration-track:d434392d9bf570fd4dc8e78c5a988988983b0f95cda0e16f9e9632fb05853600` |
+| 1 | `structure` | [RubiksProps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RubiksPublic.lean/declarations/rubiksprops.md) | 10 | `declaration-track:79e0bbdf698e35364664d5c7fc6ec59ed41415ad6fc328749c083d32dba1b56c` |
+| 2 | `def` | [Rubiks](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RubiksPublic.lean/declarations/rubiks.md) | 15 | `declaration-track:efbc9bc5974dbd314541f65b968dcf11ed79ad639ead7f661576bc7d06094248` |
+| 3 | `def` | [eg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RubiksPublic.lean/declarations/eg.md) | 18 | `declaration-track:d434392d9bf570fd4dc8e78c5a988988983b0f95cda0e16f9e9632fb05853600` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

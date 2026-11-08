@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/QuotientPublic.lean/index.md) · [Full source](../../../../DifferentialGeometry/QuotientPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/QuotientPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/QuotientPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instChartedSpaceQuotient](../../../../DifferentialGeometry/QuotientPublic.lean/declarations/instchartedspacequotient.md) | 49 | `declaration-track:bab9a856ee2fdc0a67d608f433c2d7eb7760de4926500b4355c739d16d59494b` |
+| 1 | `instance` | [instChartedSpaceQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/QuotientPublic.lean/declarations/instchartedspacequotient.md) | 49 | `declaration-track:bab9a856ee2fdc0a67d608f433c2d7eb7760de4926500b4355c739d16d59494b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

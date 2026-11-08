@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/MoserCoordinatesHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/MoserCoordinatesHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/MoserCoordinatesHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/MoserCoordinatesHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.UnitDistanceGraph.MoserSource`](../../../../../Combinatorics/GraphTheory/MoserSourceHistoricalSourceEdition2.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.UnitDistanceGraph.MoserSource`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/MoserSourceHistoricalSourceEdition2.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sqrt_three_mul_sqrt_eleven](../../../../../Combinatorics/GraphTheory/MoserCoordinatesHistoricalSourceEdition2.lean/declarations/sqrt-three-mul-sqrt-eleven.md) | 9 | `result-track:833a797a0413773399b0193e926061d6cce8d67c6b39e12dee896f5e5ed24edf` |
-| 2 | `def` | [packetCoordinates](../../../../../Combinatorics/GraphTheory/MoserCoordinatesHistoricalSourceEdition2.lean/declarations/packetcoordinates.md) | 14 | `declaration-track:2e4b9b00c911efe1e8513dda7c78a4e9f94faa111fc2850d78cff8212742e2d8` |
-| 3 | `theorem` | [moserPoint_coordinates](../../../../../Combinatorics/GraphTheory/MoserCoordinatesHistoricalSourceEdition2.lean/declarations/moserpoint-coordinates.md) | 26 | `result-track:ed327ec54216d66cd2fc975a12bff4ebd4b3b15007f50995f86b84306b5a599f` |
+| 1 | `theorem` | [sqrt_three_mul_sqrt_eleven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/MoserCoordinatesHistoricalSourceEdition2.lean/declarations/sqrt-three-mul-sqrt-eleven.md) | 9 | `result-track:833a797a0413773399b0193e926061d6cce8d67c6b39e12dee896f5e5ed24edf` |
+| 2 | `def` | [packetCoordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/MoserCoordinatesHistoricalSourceEdition2.lean/declarations/packetcoordinates.md) | 14 | `declaration-track:2e4b9b00c911efe1e8513dda7c78a4e9f94faa111fc2850d78cff8212742e2d8` |
+| 3 | `theorem` | [moserPoint_coordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/MoserCoordinatesHistoricalSourceEdition2.lean/declarations/moserpoint-coordinates.md) | 26 | `result-track:ed327ec54216d66cd2fc975a12bff4ebd4b3b15007f50995f86b84306b5a599f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

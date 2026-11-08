@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Influence.lean/index.md) · [Full source](../../../../RealFunctions/Influence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Influence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Influence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [influenceEnergy](../../../../RealFunctions/Influence.lean/declarations/influenceenergy.md) | 18 | `declaration-track:257e9459f14bb6653ccf634a30e11576091881b78f1d9f207a533125345cb9da` |
-| 2 | `structure` | [BitfieldInfluenceCertificate](../../../../RealFunctions/Influence.lean/declarations/bitfieldinfluencecertificate.md) | 31 | `declaration-track:07a17f5036d58b1f665de20dda37eb2b6d12c8c0f5eeacdc8eb620c6b56166cd` |
-| 3 | `abbrev` | [AdmissibleInfluenceCertificate](../../../../RealFunctions/Influence.lean/declarations/admissibleinfluencecertificate.md) | 92 | `declaration-track:55ca6cb66d7c7bf158bff8bbaa6030456c911a8757a305cb04300825cfcb0b45` |
+| 1 | `def` | [influenceEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Influence.lean/declarations/influenceenergy.md) | 18 | `declaration-track:257e9459f14bb6653ccf634a30e11576091881b78f1d9f207a533125345cb9da` |
+| 2 | `structure` | [BitfieldInfluenceCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Influence.lean/declarations/bitfieldinfluencecertificate.md) | 31 | `declaration-track:07a17f5036d58b1f665de20dda37eb2b6d12c8c0f5eeacdc8eb620c6b56166cd` |
+| 3 | `abbrev` | [AdmissibleInfluenceCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Influence.lean/declarations/admissibleinfluencecertificate.md) | 92 | `declaration-track:55ca6cb66d7c7bf158bff8bbaa6030456c911a8757a305cb04300825cfcb0b45` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

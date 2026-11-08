@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionInvariant.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionInvariant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionInvariant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionInvariant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsInvariantSubring](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionInvariant.lean/declarations/isinvariantsubring.md) | 25 | `declaration-track:73dbd721df48940afb1c51a8e0fc729c0cbc3867f3be394b414dbcd8ba45d19f` |
-| 2 | `instance` | [IsInvariantSubring.toMulSemiringAction](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionInvariant.lean/declarations/tomulsemiringaction.md) | 29 | `declaration-track:6d212c1b4edd73d8a50711bf14f0bab8c2937e00fc0ab67df96368f49b81a8fb` |
-| 3 | `def` | [IsInvariantSubring.subtypeHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionInvariant.lean/declarations/subtypehom.md) | 51 | `declaration-track:2055f20fb0d6e3ef272f310c124a47a6ce3aa5732cac3366b1ed7a927aa39768` |
-| 4 | `theorem` | [IsInvariantSubring.coe_subtypeHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionInvariant.lean/declarations/coe-subtypehom.md) | 57 | `result-track:781fdfaea4e21d0c1ebeda2b23cde93d7c6ad8e744a7b648fba8296be1a4ad6f` |
-| 5 | `theorem` | [IsInvariantSubring.coe_subtypeHom'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionInvariant.lean/declarations/coe-subtypehom-source-line-63-occurrence-2.md) | 63 | `result-track:8cafd89ed338aebc7950669e05d5a0c051250332fa6b6ba6698e6799b4d9b08c` |
+| 1 | `class` | [IsInvariantSubring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionInvariant.lean/declarations/isinvariantsubring.md) | 25 | `declaration-track:73dbd721df48940afb1c51a8e0fc729c0cbc3867f3be394b414dbcd8ba45d19f` |
+| 2 | `instance` | [IsInvariantSubring.toMulSemiringAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionInvariant.lean/declarations/tomulsemiringaction.md) | 29 | `declaration-track:6d212c1b4edd73d8a50711bf14f0bab8c2937e00fc0ab67df96368f49b81a8fb` |
+| 3 | `def` | [IsInvariantSubring.subtypeHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionInvariant.lean/declarations/subtypehom.md) | 51 | `declaration-track:2055f20fb0d6e3ef272f310c124a47a6ce3aa5732cac3366b1ed7a927aa39768` |
+| 4 | `theorem` | [IsInvariantSubring.coe_subtypeHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionInvariant.lean/declarations/coe-subtypehom.md) | 57 | `result-track:781fdfaea4e21d0c1ebeda2b23cde93d7c6ad8e744a7b648fba8296be1a4ad6f` |
+| 5 | `theorem` | [IsInvariantSubring.coe_subtypeHom'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionInvariant.lean/declarations/coe-subtypehom-source-line-63-occurrence-2.md) | 63 | `result-track:8cafd89ed338aebc7950669e05d5a0c051250332fa6b6ba6698e6799b4d9b08c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

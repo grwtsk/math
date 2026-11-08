@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespacedManifestSerializerDecodeEncodeWith.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespacedManifestSerializerDecodeEncodeWith.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespacedManifestSerializerDecodeEncodeWith.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespacedManifestSerializerDecodeEncodeWith.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [manifest_serializer_decode_encode_with](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespacedManifestSerializerDecodeEncodeWith.lean/declarations/manifest-serializer-decode-encode-with.md) | 26 | `result-track:0d723bf663bbc0dd6a5fbe74400810f5def192e4026fe2b640e58f349f72db48` |
-| 2 | `theorem` | [manifest_serializer_decode_encode_copy](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespacedManifestSerializerDecodeEncodeWith.lean/declarations/manifest-serializer-decode-encode-copy.md) | 33 | `result-track:581f3ed8d5abd403d3c5b5e267ff6739ac0c4cbe9552cc9f010ab8150c6248f1` |
-| 3 | `theorem` | [copy_archive_materializes_file_layers_with](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespacedManifestSerializerDecodeEncodeWith.lean/declarations/copy-archive-materializes-file-layers-with.md) | 40 | `result-track:c3aa081a640edaa47cb27af3f1f0204c60809f0d329e589304a74148d529c723` |
-| 4 | `theorem` | [materialize_index_spin_copy](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespacedManifestSerializerDecodeEncodeWith.lean/declarations/materialize-index-spin-copy.md) | 48 | `result-track:2066be069757dcaa89ef4370b90d3ee1788904d835988ff61dc946280466d43c` |
+| 1 | `theorem` | [manifest_serializer_decode_encode_with](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespacedManifestSerializerDecodeEncodeWith.lean/declarations/manifest-serializer-decode-encode-with.md) | 26 | `result-track:0d723bf663bbc0dd6a5fbe74400810f5def192e4026fe2b640e58f349f72db48` |
+| 2 | `theorem` | [manifest_serializer_decode_encode_copy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespacedManifestSerializerDecodeEncodeWith.lean/declarations/manifest-serializer-decode-encode-copy.md) | 33 | `result-track:581f3ed8d5abd403d3c5b5e267ff6739ac0c4cbe9552cc9f010ab8150c6248f1` |
+| 3 | `theorem` | [copy_archive_materializes_file_layers_with](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespacedManifestSerializerDecodeEncodeWith.lean/declarations/copy-archive-materializes-file-layers-with.md) | 40 | `result-track:c3aa081a640edaa47cb27af3f1f0204c60809f0d329e589304a74148d529c723` |
+| 4 | `theorem` | [materialize_index_spin_copy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespacedManifestSerializerDecodeEncodeWith.lean/declarations/materialize-index-spin-copy.md) | 48 | `result-track:2066be069757dcaa89ef4370b90d3ee1788904d835988ff61dc946280466d43c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PadicPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PadicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PadicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PadicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [DividedPowers.ofInjective](../../../../CommutativeAlgebra/PadicPublic.lean/declarations/dividedpowers-ofinjective.md) | 40 | `declaration-track:33acf366306a3a0867ce1127284fa151d6ae3a91bc3cad544d51c7f9ec4a1320` |
-| 2 | `def` | [dpow'](../../../../CommutativeAlgebra/PadicPublic.lean/declarations/dpow.md) | 85 | `declaration-track:2f98dc80211e2004e0746e769f262e396fa2dd16b3890caf857c8198d57d3d6b` |
-| 3 | `lemma` | [dpow'_norm_le_of_ne_zero](../../../../CommutativeAlgebra/PadicPublic.lean/declarations/dpow-norm-le-of-ne-zero.md) | 87 | `result-track:5b7a91ec0783ff48565d7bc8c13523888898094ba4e8a0ef534d41b2cada29d7` |
-| 4 | `lemma` | [dpow'_int](../../../../CommutativeAlgebra/PadicPublic.lean/declarations/dpow-int.md) | 114 | `result-track:5059a7fb4315833b85e222dd69ed8f58e2dca3ee7ab82eabde352f5fa92f6b25` |
-| 5 | `theorem` | [dpow'_mem](../../../../CommutativeAlgebra/PadicPublic.lean/declarations/dpow-mem.md) | 126 | `result-track:3d13f7d89e3b8bc4a1549fff45cb1f3687fd17bce3bc86a538226b8424e25588` |
-| 6 | `def` | [dividedPowers](../../../../CommutativeAlgebra/PadicPublic.lean/declarations/dividedpowers.md) | 139 | `declaration-track:ef4b288e4e46e05b3d8d2a45d48704c8fff226c5a30eb8e67d35ee2134c9c581` |
-| 7 | `lemma` | [dividedPowers_eq](../../../../CommutativeAlgebra/PadicPublic.lean/declarations/dividedpowers-eq.md) | 155 | `result-track:6764839cbbbf5a9f2e0958b95fae239fddbe9ab5fcc4c2afb2a7422faa374cf0` |
-| 8 | `lemma` | [coe_dpow_eq](../../../../CommutativeAlgebra/PadicPublic.lean/declarations/coe-dpow-eq.md) | 170 | `result-track:5f8574441f0c19f6f47ff64d928c776559a8ae58121876fe444cc2842e6dc87b` |
+| 1 | `def` | [DividedPowers.ofInjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PadicPublic.lean/declarations/dividedpowers-ofinjective.md) | 40 | `declaration-track:33acf366306a3a0867ce1127284fa151d6ae3a91bc3cad544d51c7f9ec4a1320` |
+| 2 | `def` | [dpow'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PadicPublic.lean/declarations/dpow.md) | 85 | `declaration-track:2f98dc80211e2004e0746e769f262e396fa2dd16b3890caf857c8198d57d3d6b` |
+| 3 | `lemma` | [dpow'_norm_le_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PadicPublic.lean/declarations/dpow-norm-le-of-ne-zero.md) | 87 | `result-track:5b7a91ec0783ff48565d7bc8c13523888898094ba4e8a0ef534d41b2cada29d7` |
+| 4 | `lemma` | [dpow'_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PadicPublic.lean/declarations/dpow-int.md) | 114 | `result-track:5059a7fb4315833b85e222dd69ed8f58e2dca3ee7ab82eabde352f5fa92f6b25` |
+| 5 | `theorem` | [dpow'_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PadicPublic.lean/declarations/dpow-mem.md) | 126 | `result-track:3d13f7d89e3b8bc4a1549fff45cb1f3687fd17bce3bc86a538226b8424e25588` |
+| 6 | `def` | [dividedPowers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PadicPublic.lean/declarations/dividedpowers.md) | 139 | `declaration-track:ef4b288e4e46e05b3d8d2a45d48704c8fff226c5a30eb8e67d35ee2134c9c581` |
+| 7 | `lemma` | [dividedPowers_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PadicPublic.lean/declarations/dividedpowers-eq.md) | 155 | `result-track:6764839cbbbf5a9f2e0958b95fae239fddbe9ab5fcc4c2afb2a7422faa374cf0` |
+| 8 | `lemma` | [coe_dpow_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PadicPublic.lean/declarations/coe-dpow-eq.md) | 170 | `result-track:5f8574441f0c19f6f47ff64d928c776559a8ae58121876fe444cc2842e6dc87b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

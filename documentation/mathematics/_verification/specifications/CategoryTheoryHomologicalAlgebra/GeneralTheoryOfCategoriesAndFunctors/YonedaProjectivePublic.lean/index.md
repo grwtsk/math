@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProjectivePublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProjectivePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProjectivePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProjectivePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [projective_iff_preservesEpimorphisms_preadditiveCoyoneda_obj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProjectivePublic.lean/declarations/projective-iff-preservesepimorphisms-preadditivecoyoneda-obj.md) | 36 | `result-track:d7b7eaec0b330fc770af330d842274bc5c9d751982c28df49ae2958a6208721b` |
-| 2 | `theorem` | [projective_iff_preservesEpimorphisms_preadditiveCoyonedaObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProjectivePublic.lean/declarations/projective-iff-preservesepimorphisms-preadditivecoyonedaobj.md) | 46 | `result-track:7a5727078181b9f789378949b2114b6b7399a83e19c72c6a28aba6684c3193f9` |
+| 1 | `theorem` | [projective_iff_preservesEpimorphisms_preadditiveCoyoneda_obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProjectivePublic.lean/declarations/projective-iff-preservesepimorphisms-preadditivecoyoneda-obj.md) | 36 | `result-track:d7b7eaec0b330fc770af330d842274bc5c9d751982c28df49ae2958a6208721b` |
+| 2 | `theorem` | [projective_iff_preservesEpimorphisms_preadditiveCoyonedaObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProjectivePublic.lean/declarations/projective-iff-preservesepimorphisms-preadditivecoyonedaobj.md) | 46 | `result-track:7a5727078181b9f789378949b2114b6b7399a83e19c72c6a28aba6684c3193f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

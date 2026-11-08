@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TCSynth.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TCSynth.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TCSynth.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TCSynth.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TCSynth.lean/declarations/example.md) | 35 | `declaration-track:08485314df5490cb0cdeb4e0a869333756b7c6bf57184e9c85009f6bcaabdb53` |
-| 2 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TCSynth.lean/declarations/example-source-edition-5.md) | 56 | `declaration-track:cad2c3167cf06063664591c3613140893a48b0fb4862642448c4ba734b435cea` |
-| 3 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TCSynth.lean/declarations/example-source-edition-2.md) | 65 | `declaration-track:47154b45c52307565c305b78780f8c358e1f4856ace37bc21b0a0b49d04c1023` |
-| 4 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TCSynth.lean/declarations/example-source-edition-3.md) | 76 | `declaration-track:6fe07749f3ebec141fb015e5b0c24dc9dacdb1c39bfe6087df962ad9ebc31521` |
-| 5 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TCSynth.lean/declarations/example-source-edition-4.md) | 87 | `declaration-track:82fbe86cd23ebdfbed250704208f1ed08ad1ef60bad5ebc6bfd0d338688f3000` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TCSynth.lean/declarations/example.md) | 35 | `declaration-track:08485314df5490cb0cdeb4e0a869333756b7c6bf57184e9c85009f6bcaabdb53` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TCSynth.lean/declarations/example-source-edition-5.md) | 56 | `declaration-track:cad2c3167cf06063664591c3613140893a48b0fb4862642448c4ba734b435cea` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TCSynth.lean/declarations/example-source-edition-2.md) | 65 | `declaration-track:47154b45c52307565c305b78780f8c358e1f4856ace37bc21b0a0b49d04c1023` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TCSynth.lean/declarations/example-source-edition-3.md) | 76 | `declaration-track:6fe07749f3ebec141fb015e5b0c24dc9dacdb1c39bfe6087df962ad9ebc31521` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TCSynth.lean/declarations/example-source-edition-4.md) | 87 | `declaration-track:82fbe86cd23ebdfbed250704208f1ed08ad1ef60bad5ebc6bfd0d338688f3000` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

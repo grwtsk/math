@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptNamespacedArtifactDisposition.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptNamespacedArtifactDisposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptNamespacedArtifactDisposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptNamespacedArtifactDisposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,11 +63,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ArtifactDisposition](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptNamespacedArtifactDisposition.lean/declarations/artifactdisposition.md) | 21 | `declaration-track:ec0f8c2354f40213878b746b22a97d2d22c79f1261d23766cdb63765351b26b1` |
-| 2 | `structure` | [ArtifactReceipt](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptNamespacedArtifactDisposition.lean/declarations/artifactreceipt.md) | 26 | `declaration-track:67dc3f600f34745e219426b271c3c23ca18ffc02bd2374a978800dd8a51a53cb` |
-| 3 | `structure` | [IngestionReceipt](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptNamespacedArtifactDisposition.lean/declarations/ingestionreceipt.md) | 36 | `declaration-track:84dc9e34f099dade48f2068b5f8b64d29ce12eb382006c3ed97eaa6cd4186d8d` |
-| 4 | `theorem` | [disposition_exists](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptNamespacedArtifactDisposition.lean/declarations/disposition-exists.md) | 77 | `result-track:d3a9627bf87ff9cee8a76bd41223a7022201106c46e18e68e9d57946122d462d` |
-| 5 | `theorem` | [declaration_exists](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptNamespacedArtifactDisposition.lean/declarations/declaration-exists.md) | 87 | `result-track:46b3a67a925413536efede8181e902fc5e04d3fa0eabf1b5e1e0d25025ef6f20` |
+| 1 | `inductive` | [ArtifactDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptNamespacedArtifactDisposition.lean/declarations/artifactdisposition.md) | 21 | `declaration-track:ec0f8c2354f40213878b746b22a97d2d22c79f1261d23766cdb63765351b26b1` |
+| 2 | `structure` | [ArtifactReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptNamespacedArtifactDisposition.lean/declarations/artifactreceipt.md) | 26 | `declaration-track:67dc3f600f34745e219426b271c3c23ca18ffc02bd2374a978800dd8a51a53cb` |
+| 3 | `structure` | [IngestionReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptNamespacedArtifactDisposition.lean/declarations/ingestionreceipt.md) | 36 | `declaration-track:84dc9e34f099dade48f2068b5f8b64d29ce12eb382006c3ed97eaa6cd4186d8d` |
+| 4 | `theorem` | [disposition_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptNamespacedArtifactDisposition.lean/declarations/disposition-exists.md) | 77 | `result-track:d3a9627bf87ff9cee8a76bd41223a7022201106c46e18e68e9d57946122d462d` |
+| 5 | `theorem` | [declaration_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptNamespacedArtifactDisposition.lean/declarations/declaration-exists.md) | 87 | `result-track:46b3a67a925413536efede8181e902fc5e04d3fa0eabf1b5e1e0d25025ef6f20` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

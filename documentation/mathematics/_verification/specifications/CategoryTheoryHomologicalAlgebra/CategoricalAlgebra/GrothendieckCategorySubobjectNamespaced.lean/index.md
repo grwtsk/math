@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [mono_of_isColimit_monoOver](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespaced.lean/declarations/mono-of-iscolimit-monoover.md) | 55 | `result-track:e936f410a92fb50a063ce189c4c09a85c011be3d740efc2b87c82d16174c616f` |
-| 2 | `lemma` | [subobjectMk_of_isColimit_eq_iSup](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespaced.lean/declarations/subobjectmk-of-iscolimit-eq-isup.md) | 66 | `result-track:4922006c863eb34b81a79fec8e621342b2ffc54ccde1dba1fe164a6d1da3f457` |
-| 3 | `def` | [isColimitMapCoconeOfSubobjectMkEqISup](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespaced.lean/declarations/iscolimitmapcoconeofsubobjectmkeqisup.md) | 95 | `declaration-track:2cef49095f736f4534c90006b06143545b768e23b000a04460177ca1dc4faa15` |
-| 4 | `lemma` | [exists_isIso_of_functor_from_monoOver](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespaced.lean/declarations/exists-isiso-of-functor-from-monoover.md) | 118 | `result-track:d43ec840dd08bb3f2b145d9fd6c6f489f5aa4f4298e9236660940b5a0dfc5659` |
+| 1 | `lemma` | [mono_of_isColimit_monoOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespaced.lean/declarations/mono-of-iscolimit-monoover.md) | 55 | `result-track:e936f410a92fb50a063ce189c4c09a85c011be3d740efc2b87c82d16174c616f` |
+| 2 | `lemma` | [subobjectMk_of_isColimit_eq_iSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespaced.lean/declarations/subobjectmk-of-iscolimit-eq-isup.md) | 66 | `result-track:4922006c863eb34b81a79fec8e621342b2ffc54ccde1dba1fe164a6d1da3f457` |
+| 3 | `def` | [isColimitMapCoconeOfSubobjectMkEqISup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespaced.lean/declarations/iscolimitmapcoconeofsubobjectmkeqisup.md) | 95 | `declaration-track:2cef49095f736f4534c90006b06143545b768e23b000a04460177ca1dc4faa15` |
+| 4 | `lemma` | [exists_isIso_of_functor_from_monoOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespaced.lean/declarations/exists-isiso-of-functor-from-monoover.md) | 118 | `result-track:d43ec840dd08bb3f2b145d9fd6c6f489f5aa4f4298e9236660940b5a0dfc5659` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

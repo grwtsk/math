@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LiteralBoundedTwoFrequencyPathAndStrictCompactRecordDeficitEdition1.lean/index.md) · [Full source](../../../../GeneralTopology/LiteralBoundedTwoFrequencyPathAndStrictCompactRecordDeficitEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LiteralBoundedTwoFrequencyPathAndStrictCompactRecordDeficitEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LiteralBoundedTwoFrequencyPathAndStrictCompactRecordDeficitEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [twoMode](../../../../GeneralTopology/LiteralBoundedTwoFrequencyPathAndStrictCompactRecordDeficitEdition1.lean/declarations/twomode.md) | 23 | `declaration-track:d4faa47c4d666d241f3fe14967aaecae7e1a46f439bf81fb174c406c2f66140f` |
-| 2 | `theorem` | [literal_two_mode_abs_le_two](../../../../GeneralTopology/LiteralBoundedTwoFrequencyPathAndStrictCompactRecordDeficitEdition1.lean/declarations/literal-two-mode-abs-le-two.md) | 25 | `result-track:c64024e72459144db0a255b70c2668ceee1a51ae96e8b7eb63b539be224674e1` |
-| 3 | `theorem` | [literal_two_mode_continuous](../../../../GeneralTopology/LiteralBoundedTwoFrequencyPathAndStrictCompactRecordDeficitEdition1.lean/declarations/literal-two-mode-continuous.md) | 29 | `result-track:ac2925275255f76541bbe2443ca0f0a137b4233c1eae17cee87f720c53ff9103` |
-| 4 | `theorem` | [literal_two_mode_smooth](../../../../GeneralTopology/LiteralBoundedTwoFrequencyPathAndStrictCompactRecordDeficitEdition1.lean/declarations/literal-two-mode-smooth.md) | 33 | `result-track:c54d22e540051096dc8d52c1278072f0aec6066f3f758e5831291170ffe141b9` |
-| 5 | `theorem` | [literal_two_mode_lt_two](../../../../GeneralTopology/LiteralBoundedTwoFrequencyPathAndStrictCompactRecordDeficitEdition1.lean/declarations/literal-two-mode-lt-two.md) | 37 | `result-track:65a60c4f6abfa7734cf9ac3102bc6d970f0bc5b807788544d092a47b5b82d669` |
-| 6 | `theorem` | [literal_two_mode_integer_period_value](../../../../GeneralTopology/LiteralBoundedTwoFrequencyPathAndStrictCompactRecordDeficitEdition1.lean/declarations/literal-two-mode-integer-period-value.md) | 61 | `result-track:4750134a5f708c66ebaf48ce8cd77cdfd91e0fbe49a0b5ddad5b2116d4b292ac` |
-| 7 | `theorem` | [literal_compact_prefix_has_positive_deficit](../../../../GeneralTopology/LiteralBoundedTwoFrequencyPathAndStrictCompactRecordDeficitEdition1.lean/declarations/literal-compact-prefix-has-positive-deficit.md) | 67 | `result-track:260167aed2ec469479d2ab3f50f127b3a1d3a84fb6ba46b813b6ad871c751df0` |
+| 1 | `def` | [twoMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LiteralBoundedTwoFrequencyPathAndStrictCompactRecordDeficitEdition1.lean/declarations/twomode.md) | 23 | `declaration-track:d4faa47c4d666d241f3fe14967aaecae7e1a46f439bf81fb174c406c2f66140f` |
+| 2 | `theorem` | [literal_two_mode_abs_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LiteralBoundedTwoFrequencyPathAndStrictCompactRecordDeficitEdition1.lean/declarations/literal-two-mode-abs-le-two.md) | 25 | `result-track:c64024e72459144db0a255b70c2668ceee1a51ae96e8b7eb63b539be224674e1` |
+| 3 | `theorem` | [literal_two_mode_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LiteralBoundedTwoFrequencyPathAndStrictCompactRecordDeficitEdition1.lean/declarations/literal-two-mode-continuous.md) | 29 | `result-track:ac2925275255f76541bbe2443ca0f0a137b4233c1eae17cee87f720c53ff9103` |
+| 4 | `theorem` | [literal_two_mode_smooth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LiteralBoundedTwoFrequencyPathAndStrictCompactRecordDeficitEdition1.lean/declarations/literal-two-mode-smooth.md) | 33 | `result-track:c54d22e540051096dc8d52c1278072f0aec6066f3f758e5831291170ffe141b9` |
+| 5 | `theorem` | [literal_two_mode_lt_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LiteralBoundedTwoFrequencyPathAndStrictCompactRecordDeficitEdition1.lean/declarations/literal-two-mode-lt-two.md) | 37 | `result-track:65a60c4f6abfa7734cf9ac3102bc6d970f0bc5b807788544d092a47b5b82d669` |
+| 6 | `theorem` | [literal_two_mode_integer_period_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LiteralBoundedTwoFrequencyPathAndStrictCompactRecordDeficitEdition1.lean/declarations/literal-two-mode-integer-period-value.md) | 61 | `result-track:4750134a5f708c66ebaf48ce8cd77cdfd91e0fbe49a0b5ddad5b2116d4b292ac` |
+| 7 | `theorem` | [literal_compact_prefix_has_positive_deficit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LiteralBoundedTwoFrequencyPathAndStrictCompactRecordDeficitEdition1.lean/declarations/literal-compact-prefix-has-positive-deficit.md) | 67 | `result-track:260167aed2ec469479d2ab3f50f127b3a1d3a84fb6ba46b813b6ad871c751df0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

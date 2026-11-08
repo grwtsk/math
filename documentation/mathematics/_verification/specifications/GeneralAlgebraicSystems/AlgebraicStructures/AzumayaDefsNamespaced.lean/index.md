@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaDefsNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaDefsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaDefsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaDefsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [instModuleTensorProductMop](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaDefsNamespaced.lean/declarations/instmoduletensorproductmop.md) | 43 | `declaration-track:23be62d1d0e0b9e8f643ff025da4724e9f7b6c53d421eb146c8459e34cbb1ad2` |
-| 2 | `def` | [AlgHom.mulLeftRight](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaDefsNamespaced.lean/declarations/alghom-mulleftright.md) | 48 | `declaration-track:a79408f32582efcff3e65c83d67343efcab36c219447eee05e2db946c8c77de3` |
-| 3 | `lemma` | [AlgHom.mulLeftRight_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaDefsNamespaced.lean/declarations/alghom-mulleftright-apply.md) | 57 | `result-track:b4e62e4d5c8e935b66c7e0669109c478d3a81238f265b7ad3092a4f2f0e6aee3` |
-| 4 | `class` | [IsAzumaya](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaDefsNamespaced.lean/declarations/isazumaya.md) | 65 | `declaration-track:d016f7932b6eacc25b021091c213b813168fe9f193b33492acb99bf310a113d1` |
+| 1 | `abbrev` | [instModuleTensorProductMop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaDefsNamespaced.lean/declarations/instmoduletensorproductmop.md) | 43 | `declaration-track:23be62d1d0e0b9e8f643ff025da4724e9f7b6c53d421eb146c8459e34cbb1ad2` |
+| 2 | `def` | [AlgHom.mulLeftRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaDefsNamespaced.lean/declarations/alghom-mulleftright.md) | 48 | `declaration-track:a79408f32582efcff3e65c83d67343efcab36c219447eee05e2db946c8c77de3` |
+| 3 | `lemma` | [AlgHom.mulLeftRight_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaDefsNamespaced.lean/declarations/alghom-mulleftright-apply.md) | 57 | `result-track:b4e62e4d5c8e935b66c7e0669109c478d3a81238f265b7ad3092a4f2f0e6aee3` |
+| 4 | `class` | [IsAzumaya](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaDefsNamespaced.lean/declarations/isazumaya.md) | 65 | `declaration-track:d016f7932b6eacc25b021091c213b813168fe9f193b33492acb99bf310a113d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

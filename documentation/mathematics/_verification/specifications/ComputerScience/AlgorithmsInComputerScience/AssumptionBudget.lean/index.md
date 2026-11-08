@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionBudget.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AssumptionBudgetEntry](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionBudget.lean/declarations/assumptionbudgetentry.md) | 18 | `declaration-track:d241b84130327476b8e092e8a50235aed3d8cf738642b7d35a5ce1d954e39bc6` |
-| 2 | `structure` | [AssumptionBudget](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionBudget.lean/declarations/assumptionbudget.md) | 31 | `declaration-track:8736b4d8ea230846bff2ecd9333cd39b63c284fedbf1a1daeff4b4bbc5571f00` |
-| 3 | `theorem` | [assumption_budget_no_contract_entries](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionBudget.lean/declarations/assumption-budget-no-contract-entries.md) | 44 | `result-track:baff131f2945633ef2f7e7f6af63453c295a7c9409bbb4eebb7f880527d4db42` |
-| 4 | `theorem` | [assumption_budget_no_external_witness_entries](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionBudget.lean/declarations/assumption-budget-no-external-witness-entries.md) | 49 | `result-track:ee0b2a0acf996650402667db71c7838320d397f274a96c2c6c16c1585b7e795b` |
-| 5 | `theorem` | [assumption_budget_no_if_supplied_accessors](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionBudget.lean/declarations/assumption-budget-no-if-supplied-accessors.md) | 54 | `result-track:f5ec1a53944209aa0e150f21367f7ae3cd8c5f23f92362a25f520ca810822cd9` |
-| 6 | `theorem` | [assumption_budget_no_certified_projection_proofs](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionBudget.lean/declarations/assumption-budget-no-certified-projection-proofs.md) | 59 | `result-track:4e15296787c0859c0c7edc179feeab4eec5c9b4bfec797f00fea719f87ab1f38` |
+| 1 | `structure` | [AssumptionBudgetEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionBudget.lean/declarations/assumptionbudgetentry.md) | 18 | `declaration-track:d241b84130327476b8e092e8a50235aed3d8cf738642b7d35a5ce1d954e39bc6` |
+| 2 | `structure` | [AssumptionBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionBudget.lean/declarations/assumptionbudget.md) | 31 | `declaration-track:8736b4d8ea230846bff2ecd9333cd39b63c284fedbf1a1daeff4b4bbc5571f00` |
+| 3 | `theorem` | [assumption_budget_no_contract_entries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionBudget.lean/declarations/assumption-budget-no-contract-entries.md) | 44 | `result-track:baff131f2945633ef2f7e7f6af63453c295a7c9409bbb4eebb7f880527d4db42` |
+| 4 | `theorem` | [assumption_budget_no_external_witness_entries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionBudget.lean/declarations/assumption-budget-no-external-witness-entries.md) | 49 | `result-track:ee0b2a0acf996650402667db71c7838320d397f274a96c2c6c16c1585b7e795b` |
+| 5 | `theorem` | [assumption_budget_no_if_supplied_accessors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionBudget.lean/declarations/assumption-budget-no-if-supplied-accessors.md) | 54 | `result-track:f5ec1a53944209aa0e150f21367f7ae3cd8c5f23f92362a25f520ca810822cd9` |
+| 6 | `theorem` | [assumption_budget_no_certified_projection_proofs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionBudget.lean/declarations/assumption-budget-no-certified-projection-proofs.md) | 59 | `result-track:4e15296787c0859c0c7edc179feeab4eec5c9b4bfec797f00fea719f87ab1f38` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

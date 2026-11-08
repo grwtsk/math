@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Identity.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Identity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Identity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Identity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PropositionId](../../../../../ComputerScience/AlgorithmsInComputerScience/Identity.lean/declarations/propositionid.md) | 15 | `declaration-track:c4b80477f23faa7eebc126f7ad4c73d700dfbfdef4597f484419e7c6109a4dda` |
-| 2 | `structure` | [AssumptionId](../../../../../ComputerScience/AlgorithmsInComputerScience/Identity.lean/declarations/assumptionid.md) | 20 | `declaration-track:25e9af657d5cdde24ea752252dc47fdf1867cc5f2b73090ee8ce8ec8b555dee7` |
-| 3 | `structure` | [WorldModelId](../../../../../ComputerScience/AlgorithmsInComputerScience/Identity.lean/declarations/worldmodelid.md) | 25 | `declaration-track:ce73d4e8eb1b63ee1fe9c743ee94efacad82f14fce44f4a3d76b4159cc465f4b` |
-| 4 | `structure` | [TranslationId](../../../../../ComputerScience/AlgorithmsInComputerScience/Identity.lean/declarations/translationid.md) | 30 | `declaration-track:97c16a343ed6a1c8afc816d3dff7e2d8c17a3764312a1c985d947040ef8f6c4e` |
-| 5 | `structure` | [DependencyId](../../../../../ComputerScience/AlgorithmsInComputerScience/Identity.lean/declarations/dependencyid.md) | 35 | `declaration-track:93f10edb13ba8424de63ad8e7e37d0ec4079fdf8f8110b4d20615753c0c1a318` |
-| 6 | `structure` | [Vocabulary](../../../../../ComputerScience/AlgorithmsInComputerScience/Identity.lean/declarations/vocabulary.md) | 40 | `declaration-track:8790dd1accb1ab15ab9197cbec24e7ca9ba92a9cac7a2401d41bf80c261f24a7` |
-| 7 | `structure` | [DeclarationNamespace](../../../../../ComputerScience/AlgorithmsInComputerScience/Identity.lean/declarations/declarationnamespace.md) | 46 | `declaration-track:6b46c5a2719dfadc47171aab409a6fa24a4da64f6ed0ce3a8099e186153b8d83` |
-| 8 | `structure` | [RegistryVersionId](../../../../../ComputerScience/AlgorithmsInComputerScience/Identity.lean/declarations/registryversionid.md) | 51 | `declaration-track:34dac8e454d3e3e22b4ddf46b84a2b2e9660d08a3b869271ff21de045951972d` |
+| 1 | `structure` | [PropositionId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Identity.lean/declarations/propositionid.md) | 15 | `declaration-track:c4b80477f23faa7eebc126f7ad4c73d700dfbfdef4597f484419e7c6109a4dda` |
+| 2 | `structure` | [AssumptionId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Identity.lean/declarations/assumptionid.md) | 20 | `declaration-track:25e9af657d5cdde24ea752252dc47fdf1867cc5f2b73090ee8ce8ec8b555dee7` |
+| 3 | `structure` | [WorldModelId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Identity.lean/declarations/worldmodelid.md) | 25 | `declaration-track:ce73d4e8eb1b63ee1fe9c743ee94efacad82f14fce44f4a3d76b4159cc465f4b` |
+| 4 | `structure` | [TranslationId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Identity.lean/declarations/translationid.md) | 30 | `declaration-track:97c16a343ed6a1c8afc816d3dff7e2d8c17a3764312a1c985d947040ef8f6c4e` |
+| 5 | `structure` | [DependencyId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Identity.lean/declarations/dependencyid.md) | 35 | `declaration-track:93f10edb13ba8424de63ad8e7e37d0ec4079fdf8f8110b4d20615753c0c1a318` |
+| 6 | `structure` | [Vocabulary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Identity.lean/declarations/vocabulary.md) | 40 | `declaration-track:8790dd1accb1ab15ab9197cbec24e7ca9ba92a9cac7a2401d41bf80c261f24a7` |
+| 7 | `structure` | [DeclarationNamespace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Identity.lean/declarations/declarationnamespace.md) | 46 | `declaration-track:6b46c5a2719dfadc47171aab409a6fa24a4da64f6ed0ce3a8099e186153b8d83` |
+| 8 | `structure` | [RegistryVersionId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Identity.lean/declarations/registryversionid.md) | 51 | `declaration-track:34dac8e454d3e3e22b4ddf46b84a2b2e9660d08a3b869271ff21de045951972d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

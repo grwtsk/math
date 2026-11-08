@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierSubsumption.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierSubsumption.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierSubsumption.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierSubsumption.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [link](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierSubsumption.lean/declarations/link.md) | 15 | `declaration-track:c15f263d4a8dbd98ce94264e307969d9d868074be58de10d851063ad3e392cfb` |
-| 2 | `def` | [valuation](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierSubsumption.lean/declarations/valuation.md) | 40 | `declaration-track:91aa46952e545db81fe7a7a895993d1f513fb2cf22658d8c036844fb434dc708` |
-| 3 | `def` | [formula](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierSubsumption.lean/declarations/formula.md) | 47 | `declaration-track:564350574e048e4f213570732b431a96dca2014cd29a86ecf2267fd13d54f656` |
-| 4 | `def` | [constant](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierSubsumption.lean/declarations/constant.md) | 54 | `declaration-track:bd97ab1fdc7eeaa01d73765e2c6304056683500ce776b525606749dd31e74ab6` |
-| 5 | `def` | [links](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierSubsumption.lean/declarations/links.md) | 61 | `declaration-track:7884380cf685e53f55269ca8d01abdb3489034bfc928b5877df60f6c6019d3d0` |
-| 6 | `theorem` | [links_length](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierSubsumption.lean/declarations/links-length.md) | 63 | `result-track:2561f9c007d720fa55b1ee581dda3ffa5a0db90c243e7513b3b8287476e5b562` |
+| 1 | `def` | [link](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierSubsumption.lean/declarations/link.md) | 15 | `declaration-track:c15f263d4a8dbd98ce94264e307969d9d868074be58de10d851063ad3e392cfb` |
+| 2 | `def` | [valuation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierSubsumption.lean/declarations/valuation.md) | 40 | `declaration-track:91aa46952e545db81fe7a7a895993d1f513fb2cf22658d8c036844fb434dc708` |
+| 3 | `def` | [formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierSubsumption.lean/declarations/formula.md) | 47 | `declaration-track:564350574e048e4f213570732b431a96dca2014cd29a86ecf2267fd13d54f656` |
+| 4 | `def` | [constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierSubsumption.lean/declarations/constant.md) | 54 | `declaration-track:bd97ab1fdc7eeaa01d73765e2c6304056683500ce776b525606749dd31e74ab6` |
+| 5 | `def` | [links](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierSubsumption.lean/declarations/links.md) | 61 | `declaration-track:7884380cf685e53f55269ca8d01abdb3489034bfc928b5877df60f6c6019d3d0` |
+| 6 | `theorem` | [links_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierSubsumption.lean/declarations/links-length.md) | 63 | `result-track:2561f9c007d720fa55b1ee581dda3ffa5a0db90c243e7513b3b8287476e5b562` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

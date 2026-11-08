@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Depth.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Depth.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Depth.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Depth.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DepthAttentionWeights](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Depth.lean/declarations/depthattentionweights.md) | 15 | `declaration-track:d4fb8be9fb68042b02b1fe26e9fa6a69351fb06e4200825382044fcddbdbef1d` |
-| 2 | `def` | [retrieve](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Depth.lean/declarations/retrieve.md) | 25 | `declaration-track:d03a07f40b13d29955cf67c37fd3e53c3c4a39a8405850599d2815dc45e05a61` |
-| 3 | `theorem` | [norm_retrieve_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Depth.lean/declarations/norm-retrieve-le.md) | 30 | `result-track:53bd669a2705cf4748291eadb2c303da564a2e6f768271c39533d4670ab32ce1` |
-| 4 | `structure` | [DepthAttentionNormalizationCertificate](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Depth.lean/declarations/depthattentionnormalizationcertificate.md) | 55 | `declaration-track:c9f3cb8fa8f643c65f6352a81b2cfcea026b2fdf9a88a94b748dda984b588a54` |
+| 1 | `structure` | [DepthAttentionWeights](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Depth.lean/declarations/depthattentionweights.md) | 15 | `declaration-track:d4fb8be9fb68042b02b1fe26e9fa6a69351fb06e4200825382044fcddbdbef1d` |
+| 2 | `def` | [retrieve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Depth.lean/declarations/retrieve.md) | 25 | `declaration-track:d03a07f40b13d29955cf67c37fd3e53c3c4a39a8405850599d2815dc45e05a61` |
+| 3 | `theorem` | [norm_retrieve_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Depth.lean/declarations/norm-retrieve-le.md) | 30 | `result-track:53bd669a2705cf4748291eadb2c303da564a2e6f768271c39533d4670ab32ce1` |
+| 4 | `structure` | [DepthAttentionNormalizationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Depth.lean/declarations/depthattentionnormalizationcertificate.md) | 55 | `declaration-track:c9f3cb8fa8f643c65f6352a81b2cfcea026b2fdf9a88a94b748dda984b588a54` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

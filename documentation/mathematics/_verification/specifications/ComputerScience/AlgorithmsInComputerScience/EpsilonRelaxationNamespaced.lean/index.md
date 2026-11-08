@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxationNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteEpsilon](../../../../../ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxationNamespaced.lean/declarations/finiteepsilon.md) | 15 | `declaration-track:eb855e2fbb9a6da2ac1f9b823bb75baa518d3dafd896c78e4736ac2307c76728` |
-| 2 | `structure` | [FiniteRelaxedValue](../../../../../ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxationNamespaced.lean/declarations/finiterelaxedvalue.md) | 22 | `declaration-track:fbb85be7b454811c16b553ccbb865a700f748498f10beeeccd7fc240accf79eb` |
-| 3 | `inductive` | [PolarBaseBit](../../../../../ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxationNamespaced.lean/declarations/polarbasebit.md) | 28 | `declaration-track:031bad805760e2151c412ed7d0472d5e3afeb3491fe28450a84799bf1ee92dfc` |
-| 4 | `def` | [relaxedValueOfBase](../../../../../ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxationNamespaced.lean/declarations/relaxedvalueofbase.md) | 33 | `declaration-track:e801cc27227cf304f8dde72e317267cc2edf50a25a6fb9b09b230dd4075313aa` |
-| 5 | `theorem` | [relaxedValue_denominator_positive](../../../../../ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxationNamespaced.lean/declarations/relaxedvalue-denominator-positive.md) | 59 | `result-track:be3f7fee8c422008d4edacdaf4cf3a343ef356043a52351a4d08ead576a47507` |
+| 1 | `structure` | [FiniteEpsilon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxationNamespaced.lean/declarations/finiteepsilon.md) | 15 | `declaration-track:eb855e2fbb9a6da2ac1f9b823bb75baa518d3dafd896c78e4736ac2307c76728` |
+| 2 | `structure` | [FiniteRelaxedValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxationNamespaced.lean/declarations/finiterelaxedvalue.md) | 22 | `declaration-track:fbb85be7b454811c16b553ccbb865a700f748498f10beeeccd7fc240accf79eb` |
+| 3 | `inductive` | [PolarBaseBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxationNamespaced.lean/declarations/polarbasebit.md) | 28 | `declaration-track:031bad805760e2151c412ed7d0472d5e3afeb3491fe28450a84799bf1ee92dfc` |
+| 4 | `def` | [relaxedValueOfBase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxationNamespaced.lean/declarations/relaxedvalueofbase.md) | 33 | `declaration-track:e801cc27227cf304f8dde72e317267cc2edf50a25a6fb9b09b230dd4075313aa` |
+| 5 | `theorem` | [relaxedValue_denominator_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxationNamespaced.lean/declarations/relaxedvalue-denominator-positive.md) | 59 | `result-track:be3f7fee8c422008d4edacdaf4cf3a343ef356043a52351a4d08ead576a47507` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

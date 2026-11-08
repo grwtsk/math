@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ModelTheory/RingDefinability.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ModelTheory/RingDefinability.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/RingDefinability.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/RingDefinability.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mvPolynomial_zeroLocus_definable](../../../../../MathematicalLogicAndFoundations/ModelTheory/RingDefinability.lean/declarations/mvpolynomial-zerolocus-definable.md) | 26 | `result-track:64aa55d3a3d51865b5cf94c115703ef3df562d0c66a96997f7123edc5352e754` |
+| 1 | `theorem` | [mvPolynomial_zeroLocus_definable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/RingDefinability.lean/declarations/mvpolynomial-zerolocus-definable.md) | 26 | `result-track:64aa55d3a3d51865b5cf94c115703ef3df562d0c66a96997f7123edc5352e754` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

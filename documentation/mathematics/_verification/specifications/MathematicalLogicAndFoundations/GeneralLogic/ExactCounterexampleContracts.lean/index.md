@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactCounterexampleContracts.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactCounterexampleContracts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactCounterexampleContracts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactCounterexampleContracts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.CommonJCounterexamples`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamplesHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.CommonJCounterexamples`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJCounterexamplesHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactCounterexampleContracts.lean/declarations/example-source-edition-4.md) | 4 | `declaration-track:cfb5faf64d1aa513515e084130f5cb18c1c159d56a15928c45422b93d071a505` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactCounterexampleContracts.lean/declarations/example-source-edition-2.md) | 5 | `declaration-track:91d4184314b24fcfbdb422c562fe83c5462f7bbab6d45a8838115a1c8fadce84` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactCounterexampleContracts.lean/declarations/example-source-edition-3.md) | 6 | `declaration-track:96ebea5bfdaf2de8ac50f96186fb3538e18a9ea48eb49a2bd6c480d7b6f34575` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactCounterexampleContracts.lean/declarations/example.md) | 7 | `declaration-track:4f8ee575befe1b76392afa88233cedae7a2a26661dd2b005b0d8f5a89b94879c` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactCounterexampleContracts.lean/declarations/example-source-edition-4.md) | 4 | `declaration-track:cfb5faf64d1aa513515e084130f5cb18c1c159d56a15928c45422b93d071a505` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactCounterexampleContracts.lean/declarations/example-source-edition-2.md) | 5 | `declaration-track:91d4184314b24fcfbdb422c562fe83c5462f7bbab6d45a8838115a1c8fadce84` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactCounterexampleContracts.lean/declarations/example-source-edition-3.md) | 6 | `declaration-track:96ebea5bfdaf2de8ac50f96186fb3538e18a9ea48eb49a2bd6c480d7b6f34575` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactCounterexampleContracts.lean/declarations/example.md) | 7 | `declaration-track:4f8ee575befe1b76392afa88233cedae7a2a26661dd2b005b0d8f5a89b94879c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/ExistsRamifiedPublic.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/ExistsRamifiedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/ExistsRamifiedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/ExistsRamifiedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [NumberField.exists_not_isUnramifiedIn](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/ExistsRamifiedPublic.lean/declarations/numberfield-exists-not-isunramifiedin.md) | 31 | `result-track:d93164b1e4beedd9922287eaa361da3d429a74631e6bcb4e08815dede449ac05` |
-| 2 | `lemma` | [NumberField.exists_not_isUnramifiedAt_int](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/ExistsRamifiedPublic.lean/declarations/numberfield-exists-not-isunramifiedat-int.md) | 41 | `result-track:a6b8d6cdfcaef201a9658e2be3f809e2602505108041f3810300b3560db55bee` |
-| 3 | `lemma` | [NumberField.finrank_eq_one_of_unramified](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/ExistsRamifiedPublic.lean/declarations/numberfield-finrank-eq-one-of-unramified.md) | 51 | `result-track:4d281bdf9fcc2edd89f02e4cd96ec870d9fb35e3007f4cd6e76a8a56f211e776` |
-| 4 | `lemma` | [bijective_algebraMap_int_of_finite_of_unramified](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/ExistsRamifiedPublic.lean/declarations/bijective-algebramap-int-of-finite-of-unramified.md) | 58 | `result-track:cc1557ce0456af0547a18ef6405b9231681e69e4b6a4516aa192d5a232d09fe4` |
-| 5 | `lemma` | [NumberField.exists_not_isUnramifiedAt_int_of_isGalois](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/ExistsRamifiedPublic.lean/declarations/numberfield-exists-not-isunramifiedat-int-of-isgalois.md) | 73 | `result-track:26d0c11c66b3efae786da227a019b172d06a5704052ac41e14853d087826194e` |
+| 1 | `lemma` | [NumberField.exists_not_isUnramifiedIn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/ExistsRamifiedPublic.lean/declarations/numberfield-exists-not-isunramifiedin.md) | 31 | `result-track:d93164b1e4beedd9922287eaa361da3d429a74631e6bcb4e08815dede449ac05` |
+| 2 | `lemma` | [NumberField.exists_not_isUnramifiedAt_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/ExistsRamifiedPublic.lean/declarations/numberfield-exists-not-isunramifiedat-int.md) | 41 | `result-track:a6b8d6cdfcaef201a9658e2be3f809e2602505108041f3810300b3560db55bee` |
+| 3 | `lemma` | [NumberField.finrank_eq_one_of_unramified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/ExistsRamifiedPublic.lean/declarations/numberfield-finrank-eq-one-of-unramified.md) | 51 | `result-track:4d281bdf9fcc2edd89f02e4cd96ec870d9fb35e3007f4cd6e76a8a56f211e776` |
+| 4 | `lemma` | [bijective_algebraMap_int_of_finite_of_unramified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/ExistsRamifiedPublic.lean/declarations/bijective-algebramap-int-of-finite-of-unramified.md) | 58 | `result-track:cc1557ce0456af0547a18ef6405b9231681e69e4b6a4516aa192d5a232d09fe4` |
+| 5 | `lemma` | [NumberField.exists_not_isUnramifiedAt_int_of_isGalois](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/ExistsRamifiedPublic.lean/declarations/numberfield-exists-not-isunramifiedat-int-of-isgalois.md) | 73 | `result-track:26d0c11c66b3efae786da227a019b172d06a5704052ac41e14853d087826194e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Reference.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Reference.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Reference.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Reference.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [analyticGrey](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Reference.lean/declarations/analyticgrey.md) | 16 | `declaration-track:5e852740a853f8cf9da2845b93cca47ad68323b404277e2d9db18a05fc01abaf` |
-| 2 | `def` | [gammaUnitBallVolumeFormula](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Reference.lean/declarations/gammaunitballvolumeformula.md) | 18 | `declaration-track:602a6035536fe9a14c1a879a21b3a183d2430656c8454df7657a357f50f10309` |
-| 3 | `def` | [gammaUnitSphereAreaFormula](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Reference.lean/declarations/gammaunitsphereareaformula.md) | 21 | `declaration-track:e907608ddc9da99df2ed1417e41fb044ee8046a3ff7f9be157ca6869712b8249` |
-| 4 | `def` | [idealSinusoidalPhaseFormula](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Reference.lean/declarations/idealsinusoidalphaseformula.md) | 24 | `declaration-track:87446548ba9ca000b47f68308a533c26e9b4a83881745e7d42eb8249b8e1d7ed` |
+| 1 | `def` | [analyticGrey](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Reference.lean/declarations/analyticgrey.md) | 16 | `declaration-track:5e852740a853f8cf9da2845b93cca47ad68323b404277e2d9db18a05fc01abaf` |
+| 2 | `def` | [gammaUnitBallVolumeFormula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Reference.lean/declarations/gammaunitballvolumeformula.md) | 18 | `declaration-track:602a6035536fe9a14c1a879a21b3a183d2430656c8454df7657a357f50f10309` |
+| 3 | `def` | [gammaUnitSphereAreaFormula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Reference.lean/declarations/gammaunitsphereareaformula.md) | 21 | `declaration-track:e907608ddc9da99df2ed1417e41fb044ee8046a3ff7f9be157ca6869712b8249` |
+| 4 | `def` | [idealSinusoidalPhaseFormula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Reference.lean/declarations/idealsinusoidalphaseformula.md) | 24 | `declaration-track:87446548ba9ca000b47f68308a533c26e9b4a83881745e7d42eb8249b8e1d7ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

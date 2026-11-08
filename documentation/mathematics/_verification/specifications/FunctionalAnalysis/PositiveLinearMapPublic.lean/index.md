@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/PositiveLinearMapPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/PositiveLinearMapPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearMapPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearMapPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [apply_le_of_isSelfAdjoint](../../../../FunctionalAnalysis/PositiveLinearMapPublic.lean/declarations/apply-le-of-isselfadjoint.md) | 43 | `result-track:225b6981100a8a8464aa723843e204285f97ff91d9c3f1383df14447dcb99deb` |
-| 2 | `lemma` | [norm_apply_le_of_nonneg](../../../../FunctionalAnalysis/PositiveLinearMapPublic.lean/declarations/norm-apply-le-of-nonneg.md) | 48 | `result-track:bf572271cc9cc552e2096c169816678ec56f4027d4af86efd1010e922dc9d157` |
-| 3 | `lemma` | [exists_norm_apply_le](../../../../FunctionalAnalysis/PositiveLinearMapPublic.lean/declarations/exists-norm-apply-le.md) | 63 | `result-track:4bd7176e1f3f38d35a880ddceedd2c43e5f3a10aff8fddf268233736cd6e128f` |
-| 4 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/PositiveLinearMapPublic.lean/declarations/instance.md) | 112 | `declaration-track:ea5d8ed36906c73459c5795004fce0981f06d7aeab646db9d277c556a6faea1b` |
+| 1 | `lemma` | [apply_le_of_isSelfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearMapPublic.lean/declarations/apply-le-of-isselfadjoint.md) | 43 | `result-track:225b6981100a8a8464aa723843e204285f97ff91d9c3f1383df14447dcb99deb` |
+| 2 | `lemma` | [norm_apply_le_of_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearMapPublic.lean/declarations/norm-apply-le-of-nonneg.md) | 48 | `result-track:bf572271cc9cc552e2096c169816678ec56f4027d4af86efd1010e922dc9d157` |
+| 3 | `lemma` | [exists_norm_apply_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearMapPublic.lean/declarations/exists-norm-apply-le.md) | 63 | `result-track:4bd7176e1f3f38d35a880ddceedd2c43e5f3a10aff8fddf268233736cd6e128f` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearMapPublic.lean/declarations/instance.md) | 112 | `declaration-track:ea5d8ed36906c73459c5795004fce0981f06d7aeab646db9d277c556a6faea1b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

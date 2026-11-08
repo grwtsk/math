@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Change.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Change.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Change.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Change.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RepresentationChange](../../../../../ComputerScience/AlgorithmsInComputerScience/Change.lean/declarations/representationchange.md) | 15 | `declaration-track:4fd74c23b4334381efe4c0b504105aa5c698613dde53d535b73bd52f3d6433e0` |
-| 2 | `structure` | [CanonicalIndexPatch](../../../../../ComputerScience/AlgorithmsInComputerScience/Change.lean/declarations/canonicalindexpatch.md) | 28 | `declaration-track:8242d4a441b20787ebf2cb3baf60d482a42a91687188d83d951a2242f47d7f6e` |
-| 3 | `def` | [CanonicalIndexPatch.AppliesTo](../../../../../ComputerScience/AlgorithmsInComputerScience/Change.lean/declarations/canonicalindexpatch-appliesto.md) | 37 | `declaration-track:6fb4145a0a317dd529677f91fe694e1d04709d33371a68436d39d9dcdb049973` |
-| 4 | `theorem` | [CanonicalIndexPatch.appliesTo_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/Change.lean/declarations/canonicalindexpatch-appliesto-iff.md) | 42 | `result-track:b541bf3f5c814a68184d14531852b5531f3596662290f9f59f83f96c58724e2a` |
+| 1 | `structure` | [RepresentationChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Change.lean/declarations/representationchange.md) | 15 | `declaration-track:4fd74c23b4334381efe4c0b504105aa5c698613dde53d535b73bd52f3d6433e0` |
+| 2 | `structure` | [CanonicalIndexPatch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Change.lean/declarations/canonicalindexpatch.md) | 28 | `declaration-track:8242d4a441b20787ebf2cb3baf60d482a42a91687188d83d951a2242f47d7f6e` |
+| 3 | `def` | [CanonicalIndexPatch.AppliesTo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Change.lean/declarations/canonicalindexpatch-appliesto.md) | 37 | `declaration-track:6fb4145a0a317dd529677f91fe694e1d04709d33371a68436d39d9dcdb049973` |
+| 4 | `theorem` | [CanonicalIndexPatch.appliesTo_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Change.lean/declarations/canonicalindexpatch-appliesto-iff.md) | 42 | `result-track:b541bf3f5c814a68184d14531852b5531f3596662290f9f59f83f96c58724e2a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

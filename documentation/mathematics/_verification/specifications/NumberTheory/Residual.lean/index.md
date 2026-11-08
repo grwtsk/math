@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/Residual.lean/index.md) · [Full source](../../../../NumberTheory/Residual.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Residual.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Residual.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [setOf_liouville_eq_iInter_iUnion](../../../../NumberTheory/Residual.lean/declarations/setof-liouville-eq-iinter-iunion.md) | 23 | `result-track:f38f06f726853a63ce29f56b28c8743c615107755086a94b5f0ea37546ecb634` |
-| 2 | `theorem` | [IsGδ.setOf_liouville](../../../../NumberTheory/Residual.lean/declarations/isg-setof-liouville.md) | 31 | `result-track:cdb9550c85499cacb19dc81fd37afeb0a6d8c09fc7376c65ffa17fa9d023586e` |
-| 3 | `theorem` | [setOf_liouville_eq_irrational_inter_iInter_iUnion](../../../../NumberTheory/Residual.lean/declarations/setof-liouville-eq-irrational-inter-iinter-iunion.md) | 38 | `result-track:df80e19da6df417996234f10e6ab20c934f845461059aa6a70ddcf9a09aaf6d2` |
-| 4 | `theorem` | [eventually_residual_liouville](../../../../NumberTheory/Residual.lean/declarations/eventually-residual-liouville.md) | 52 | `result-track:0a50222627b7980dbedf4e8ce0fe65d416eea45a82c4af912678843c1c0acf87` |
-| 5 | `theorem` | [dense_liouville](../../../../NumberTheory/Residual.lean/declarations/dense-liouville.md) | 73 | `result-track:85669337b343a44be8b1534aa986f10abf70f1bed9adb26974a78077842354bd` |
+| 1 | `theorem` | [setOf_liouville_eq_iInter_iUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Residual.lean/declarations/setof-liouville-eq-iinter-iunion.md) | 23 | `result-track:f38f06f726853a63ce29f56b28c8743c615107755086a94b5f0ea37546ecb634` |
+| 2 | `theorem` | [IsGδ.setOf_liouville](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Residual.lean/declarations/isg-setof-liouville.md) | 31 | `result-track:cdb9550c85499cacb19dc81fd37afeb0a6d8c09fc7376c65ffa17fa9d023586e` |
+| 3 | `theorem` | [setOf_liouville_eq_irrational_inter_iInter_iUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Residual.lean/declarations/setof-liouville-eq-irrational-inter-iinter-iunion.md) | 38 | `result-track:df80e19da6df417996234f10e6ab20c934f845461059aa6a70ddcf9a09aaf6d2` |
+| 4 | `theorem` | [eventually_residual_liouville](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Residual.lean/declarations/eventually-residual-liouville.md) | 52 | `result-track:0a50222627b7980dbedf4e8ce0fe65d416eea45a82c4af912678843c1c0acf87` |
+| 5 | `theorem` | [dense_liouville](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Residual.lean/declarations/dense-liouville.md) | 73 | `result-track:85669337b343a44be8b1534aa986f10abf70f1bed9adb26974a78077842354bd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

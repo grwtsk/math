@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [padicValNat_eq_emultiplicity_of_ne_one](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/declarations/padicvalnat-eq-emultiplicity-of-ne-one.md) | 35 | `result-track:6800d0b31638ac3359212c4c5e9c369cda5bd065e710ce381e71f9643194c264` |
-| 2 | `theorem` | [Nat.toNat_emultiplicity](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/declarations/nat-tonat-emultiplicity.md) | 42 | `result-track:fd45fd192a05ee0da9d6a5865a9bba749f7b493c7f59285374f5dd4342e0d457` |
-| 3 | `theorem` | [padicValNat_eq_emultiplicity](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/declarations/padicvalnat-eq-emultiplicity.md) | 53 | `result-track:f0b9d2ab6edc9ab585bf4bbf8bdb9133cf54307074975eef068c7c83a595d7c2` |
-| 4 | `theorem` | [zero](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/declarations/zero.md) | 66 | `result-track:9dd41ccb935f3c9ec628939b2de86124550e5c070f7c21cb9a49fa844edda75a` |
-| 5 | `theorem` | [one](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/declarations/one.md) | 69 | `result-track:7daa1a2d00b20c7d34d493ce67e098bc4bb638aab9c28143d4d42c79fe97d81d` |
-| 6 | `theorem` | [eq_zero_iff](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/declarations/eq-zero-iff.md) | 72 | `result-track:3945157993c213424e70439f015be987e3bf24246f0cb6fe5419770a137e8ecb` |
-| 7 | `theorem` | [le_emultiplicity_iff_replicate_subperm_primeFactorsList](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/declarations/le-emultiplicity-iff-replicate-subperm-primefactorslist.md) | 81 | `result-track:bcf81cad9534cfedc84b354fa37389cdc60e17af53d56f327a11fad6173ac27d` |
-| 8 | `theorem` | [le_padicValNat_iff_replicate_subperm_primeFactorsList](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/declarations/le-padicvalnat-iff-replicate-subperm-primefactorslist.md) | 87 | `result-track:6b24a53784b7e5d7aec3514e23d03cb9785bc22ee349bc4947085df64d546816` |
-| 9 | `theorem` | [mul_padicValNat_le](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/declarations/mul-padicvalnat-le.md) | 96 | `result-track:ad4b257c1a33884bc0cc6a4de6effd559653b77a14da5dba183ff62fb678ec11` |
+| 1 | `theorem` | [padicValNat_eq_emultiplicity_of_ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/declarations/padicvalnat-eq-emultiplicity-of-ne-one.md) | 35 | `result-track:6800d0b31638ac3359212c4c5e9c369cda5bd065e710ce381e71f9643194c264` |
+| 2 | `theorem` | [Nat.toNat_emultiplicity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/declarations/nat-tonat-emultiplicity.md) | 42 | `result-track:fd45fd192a05ee0da9d6a5865a9bba749f7b493c7f59285374f5dd4342e0d457` |
+| 3 | `theorem` | [padicValNat_eq_emultiplicity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/declarations/padicvalnat-eq-emultiplicity.md) | 53 | `result-track:f0b9d2ab6edc9ab585bf4bbf8bdb9133cf54307074975eef068c7c83a595d7c2` |
+| 4 | `theorem` | [zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/declarations/zero.md) | 66 | `result-track:9dd41ccb935f3c9ec628939b2de86124550e5c070f7c21cb9a49fa844edda75a` |
+| 5 | `theorem` | [one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/declarations/one.md) | 69 | `result-track:7daa1a2d00b20c7d34d493ce67e098bc4bb638aab9c28143d4d42c79fe97d81d` |
+| 6 | `theorem` | [eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/declarations/eq-zero-iff.md) | 72 | `result-track:3945157993c213424e70439f015be987e3bf24246f0cb6fe5419770a137e8ecb` |
+| 7 | `theorem` | [le_emultiplicity_iff_replicate_subperm_primeFactorsList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/declarations/le-emultiplicity-iff-replicate-subperm-primefactorslist.md) | 81 | `result-track:bcf81cad9534cfedc84b354fa37389cdc60e17af53d56f327a11fad6173ac27d` |
+| 8 | `theorem` | [le_padicValNat_iff_replicate_subperm_primeFactorsList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/declarations/le-padicvalnat-iff-replicate-subperm-primefactorslist.md) | 87 | `result-track:6b24a53784b7e5d7aec3514e23d03cb9785bc22ee349bc4947085df64d546816` |
+| 9 | `theorem` | [mul_padicValNat_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/DefsDefsPublic.lean/declarations/mul-padicvalnat-le.md) | 96 | `result-track:ad4b257c1a33884bc0cc6a4de6effd559653b77a14da5dba183ff62fb678ec11` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

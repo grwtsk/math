@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/ZornAtomsNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/ZornAtomsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/ZornAtomsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/ZornAtomsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsCoatomic.of_isChain_bounded](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/ZornAtomsNamespaced.lean/declarations/iscoatomic-of-ischain-bounded.md) | 30 | `result-track:c107a866650c79f631ae2d0909cc9e67ee0d23ea9df1913135163e69c3a0217e` |
-| 2 | `theorem` | [IsAtomic.of_isChain_bounded](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/ZornAtomsNamespaced.lean/declarations/isatomic-of-ischain-bounded.md) | 43 | `result-track:dcb464d292ca2f903b9cf0cb80206832bc317434a032eefeb9cd13bcb3e655e8` |
+| 1 | `theorem` | [IsCoatomic.of_isChain_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/ZornAtomsNamespaced.lean/declarations/iscoatomic-of-ischain-bounded.md) | 30 | `result-track:c107a866650c79f631ae2d0909cc9e67ee0d23ea9df1913135163e69c3a0217e` |
+| 2 | `theorem` | [IsAtomic.of_isChain_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/ZornAtomsNamespaced.lean/declarations/isatomic-of-ischain-bounded.md) | 43 | `result-track:dcb464d292ca2f903b9cf0cb80206832bc317434a032eefeb9cd13bcb3e655e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

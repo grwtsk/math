@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SeamLNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/SeamLNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeamLNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeamLNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,22 +63,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [ne_one_of_primitive](../../../../GeneralTopology/SeamLNamespaced.lean/declarations/ne-one-of-primitive.md) | 57 | `result-track:aba9f09260b705b820b60ffea99aea1ea6a6941d395ce3e773daa18a51ea72a8` |
-| 2 | `lemma` | [inv_ne_one](../../../../GeneralTopology/SeamLNamespaced.lean/declarations/inv-ne-one.md) | 63 | `result-track:4ed0692a6a40df63e2514ea419047da7cfe29da2e5cc5c02512674e5c3a43f98` |
-| 3 | `lemma` | [LFunction_two_ne_zero](../../../../GeneralTopology/SeamLNamespaced.lean/declarations/lfunction-two-ne-zero.md) | 66 | `result-track:5ea5d7f2bfdad9e7bd3c91243d5e942e2fedc1ec1149bce66a778a70b3186ae1` |
-| 4 | `lemma` | [LFunction_analyticOnNhd](../../../../GeneralTopology/SeamLNamespaced.lean/declarations/lfunction-analyticonnhd.md) | 69 | `result-track:91cf9ae66885dbb253f7e5c1f16868e9f4ae20c4f947e8400928aeaf1c5d6772` |
-| 5 | `lemma` | [LFunction_conj_of_one_lt_re](../../../../GeneralTopology/SeamLNamespaced.lean/declarations/lfunction-conj-of-one-lt-re.md) | 74 | `result-track:19f832aebfe7e3f148b47b89676a826d1d7530b329d44ca7d7d38dc20b770d7d` |
-| 6 | `theorem` | [LFunction_conj](../../../../GeneralTopology/SeamLNamespaced.lean/declarations/lfunction-conj.md) | 103 | `result-track:36ba1f63bee9013e514102437e37966187a6fe37678669890c7688f7d4512f94` |
-| 7 | `theorem` | [analyticOrderAt_LFunction_conj](../../../../GeneralTopology/SeamLNamespaced.lean/declarations/analyticorderat-lfunction-conj.md) | 126 | `result-track:e2eba4a656248409bbe25c42f39c2c92ee6759d54932754a664fe58c091c52dd` |
-| 8 | `lemma` | [gammaFactor_analyticAt](../../../../GeneralTopology/SeamLNamespaced.lean/declarations/gammafactor-analyticat.md) | 140 | `result-track:e53f074a1349dad609a364a8ff187ee59610e1513950c71e02db684cfc67abaa` |
-| 9 | `lemma` | [completed_eq_gamma_mul_L](../../../../GeneralTopology/SeamLNamespaced.lean/declarations/completed-eq-gamma-mul-l.md) | 191 | `result-track:184fe33fd8466a7f4851f9ed3aa9b2206bcbfcc35f35bb28f7d7608ce78ceb78` |
-| 10 | `theorem` | [rootNumber_ne_zero](../../../../GeneralTopology/SeamLNamespaced.lean/declarations/rootnumber-ne-zero.md) | 209 | `result-track:1711c4ae5d06666fa86d3788713d9a7ca6d0b435e3f156255eb835bd6539274e` |
-| 11 | `theorem` | [analyticOrderAt_LFunction_one_sub](../../../../GeneralTopology/SeamLNamespaced.lean/declarations/analyticorderat-lfunction-one-sub.md) | 232 | `result-track:5ba763ef9f2ec7f7958e637899ba2033757abc652e331aac89e557ab2297606c` |
-| 12 | `theorem` | [L_mult_reflect](../../../../GeneralTopology/SeamLNamespaced.lean/declarations/l-mult-reflect.md) | 283 | `result-track:394d6e1e10ccd895a034355c434f477485bc304e7e7ae6a633eda5e461ceb052` |
-| 13 | `theorem` | [L_reflect_zero](../../../../GeneralTopology/SeamLNamespaced.lean/declarations/l-reflect-zero.md) | 295 | `result-track:0cda245bd60122c76e945e82b1aca74c6004d36bc8ab15ca774d6c46c609331d` |
-| 14 | `theorem` | [LSeam_one_le_mult](../../../../GeneralTopology/SeamLNamespaced.lean/declarations/lseam-one-le-mult.md) | 330 | `result-track:f9b1151d818256f3252caca42e10b7f98f35881b04651ce42602278394efd632` |
-| 15 | `theorem` | [LSeam_finite_window](../../../../GeneralTopology/SeamLNamespaced.lean/declarations/lseam-finite-window.md) | 349 | `result-track:619e37cfd497e2574352c8777a2e22a0efc07e9778c8d4ff0d604867205c0d7f` |
-| 16 | `theorem` | [LSeam_of](../../../../GeneralTopology/SeamLNamespaced.lean/declarations/lseam-of.md) | 375 | `result-track:c977e670de2cd7a0f8ab7c3f93929228f412defb1ffd2e6d6c2254f3f260912a` |
+| 1 | `lemma` | [ne_one_of_primitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeamLNamespaced.lean/declarations/ne-one-of-primitive.md) | 57 | `result-track:aba9f09260b705b820b60ffea99aea1ea6a6941d395ce3e773daa18a51ea72a8` |
+| 2 | `lemma` | [inv_ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeamLNamespaced.lean/declarations/inv-ne-one.md) | 63 | `result-track:4ed0692a6a40df63e2514ea419047da7cfe29da2e5cc5c02512674e5c3a43f98` |
+| 3 | `lemma` | [LFunction_two_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeamLNamespaced.lean/declarations/lfunction-two-ne-zero.md) | 66 | `result-track:5ea5d7f2bfdad9e7bd3c91243d5e942e2fedc1ec1149bce66a778a70b3186ae1` |
+| 4 | `lemma` | [LFunction_analyticOnNhd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeamLNamespaced.lean/declarations/lfunction-analyticonnhd.md) | 69 | `result-track:91cf9ae66885dbb253f7e5c1f16868e9f4ae20c4f947e8400928aeaf1c5d6772` |
+| 5 | `lemma` | [LFunction_conj_of_one_lt_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeamLNamespaced.lean/declarations/lfunction-conj-of-one-lt-re.md) | 74 | `result-track:19f832aebfe7e3f148b47b89676a826d1d7530b329d44ca7d7d38dc20b770d7d` |
+| 6 | `theorem` | [LFunction_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeamLNamespaced.lean/declarations/lfunction-conj.md) | 103 | `result-track:36ba1f63bee9013e514102437e37966187a6fe37678669890c7688f7d4512f94` |
+| 7 | `theorem` | [analyticOrderAt_LFunction_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeamLNamespaced.lean/declarations/analyticorderat-lfunction-conj.md) | 126 | `result-track:e2eba4a656248409bbe25c42f39c2c92ee6759d54932754a664fe58c091c52dd` |
+| 8 | `lemma` | [gammaFactor_analyticAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeamLNamespaced.lean/declarations/gammafactor-analyticat.md) | 140 | `result-track:e53f074a1349dad609a364a8ff187ee59610e1513950c71e02db684cfc67abaa` |
+| 9 | `lemma` | [completed_eq_gamma_mul_L](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeamLNamespaced.lean/declarations/completed-eq-gamma-mul-l.md) | 191 | `result-track:184fe33fd8466a7f4851f9ed3aa9b2206bcbfcc35f35bb28f7d7608ce78ceb78` |
+| 10 | `theorem` | [rootNumber_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeamLNamespaced.lean/declarations/rootnumber-ne-zero.md) | 209 | `result-track:1711c4ae5d06666fa86d3788713d9a7ca6d0b435e3f156255eb835bd6539274e` |
+| 11 | `theorem` | [analyticOrderAt_LFunction_one_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeamLNamespaced.lean/declarations/analyticorderat-lfunction-one-sub.md) | 232 | `result-track:5ba763ef9f2ec7f7958e637899ba2033757abc652e331aac89e557ab2297606c` |
+| 12 | `theorem` | [L_mult_reflect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeamLNamespaced.lean/declarations/l-mult-reflect.md) | 283 | `result-track:394d6e1e10ccd895a034355c434f477485bc304e7e7ae6a633eda5e461ceb052` |
+| 13 | `theorem` | [L_reflect_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeamLNamespaced.lean/declarations/l-reflect-zero.md) | 295 | `result-track:0cda245bd60122c76e945e82b1aca74c6004d36bc8ab15ca774d6c46c609331d` |
+| 14 | `theorem` | [LSeam_one_le_mult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeamLNamespaced.lean/declarations/lseam-one-le-mult.md) | 330 | `result-track:f9b1151d818256f3252caca42e10b7f98f35881b04651ce42602278394efd632` |
+| 15 | `theorem` | [LSeam_finite_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeamLNamespaced.lean/declarations/lseam-finite-window.md) | 349 | `result-track:619e37cfd497e2574352c8777a2e22a0efc07e9778c8d4ff0d604867205c0d7f` |
+| 16 | `theorem` | [LSeam_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeamLNamespaced.lean/declarations/lseam-of.md) | 375 | `result-track:c977e670de2cd7a0f8ab7c3f93929228f412defb1ffd2e6d6c2254f3f260912a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

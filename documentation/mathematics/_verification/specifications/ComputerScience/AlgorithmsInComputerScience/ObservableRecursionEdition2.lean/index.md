@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [System](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/declarations/system.md) | 27 | `declaration-track:73f9aa293fb1ce55fb692d417b9965dde99cad755f68cc7ffc353f7ccb6eba3d` |
-| 2 | `def` | [run](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/declarations/run.md) | 40 | `declaration-track:346aa78fe37d8e0684ced4477f856d3cfd4d5ebc73364f5e836109f0bd6cf230` |
-| 3 | `theorem` | [run_nil](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/declarations/run-nil.md) | 49 | `result-track:a296183c7fdb1907010b32c64999e3723ff1a464051f2ae21a853203559a1f76` |
-| 4 | `theorem` | [run_cons](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/declarations/run-cons.md) | 56 | `result-track:75f348995572640bd038b558d833d94e8d6f0499dc3766961938d6f4acf7c615` |
-| 5 | `theorem` | [run_append](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/declarations/run-append.md) | 66 | `result-track:fd18834759092f12a40ca4e38a03a1aa8b79ab75bfa567a2d3b1f86e0f9a902a` |
-| 6 | `theorem` | [run_singleton](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/declarations/run-singleton.md) | 79 | `result-track:8335f9a8278bf63300d75a714cda523b0970b77a974d466ad2e75825f4e53f42` |
-| 7 | `def` | [autonomous](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/declarations/autonomous.md) | 87 | `declaration-track:194ccceb4df4bf9439fa3b4abe3570978556651ddd1904bf58c11f2e40d1ac0b` |
-| 8 | `theorem` | [autonomous_run_replicate](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/declarations/autonomous-run-replicate.md) | 97 | `result-track:688dfe01f2166013e6b6f344b96d1800c0d33f0a642bf41219f02e5e55555a00` |
+| 1 | `structure` | [System](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/declarations/system.md) | 27 | `declaration-track:73f9aa293fb1ce55fb692d417b9965dde99cad755f68cc7ffc353f7ccb6eba3d` |
+| 2 | `def` | [run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/declarations/run.md) | 40 | `declaration-track:346aa78fe37d8e0684ced4477f856d3cfd4d5ebc73364f5e836109f0bd6cf230` |
+| 3 | `theorem` | [run_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/declarations/run-nil.md) | 49 | `result-track:a296183c7fdb1907010b32c64999e3723ff1a464051f2ae21a853203559a1f76` |
+| 4 | `theorem` | [run_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/declarations/run-cons.md) | 56 | `result-track:75f348995572640bd038b558d833d94e8d6f0499dc3766961938d6f4acf7c615` |
+| 5 | `theorem` | [run_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/declarations/run-append.md) | 66 | `result-track:fd18834759092f12a40ca4e38a03a1aa8b79ab75bfa567a2d3b1f86e0f9a902a` |
+| 6 | `theorem` | [run_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/declarations/run-singleton.md) | 79 | `result-track:8335f9a8278bf63300d75a714cda523b0970b77a974d466ad2e75825f4e53f42` |
+| 7 | `def` | [autonomous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/declarations/autonomous.md) | 87 | `declaration-track:194ccceb4df4bf9439fa3b4abe3570978556651ddd1904bf58c11f2e40d1ac0b` |
+| 8 | `theorem` | [autonomous_run_replicate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservableRecursionEdition2.lean/declarations/autonomous-run-replicate.md) | 97 | `result-track:688dfe01f2166013e6b6f344b96d1800c0d33f0a642bf41219f02e5e55555a00` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

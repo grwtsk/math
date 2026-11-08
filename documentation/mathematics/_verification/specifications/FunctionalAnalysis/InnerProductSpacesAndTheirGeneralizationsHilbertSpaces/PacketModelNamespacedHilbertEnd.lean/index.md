@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PacketModelNamespacedHilbertEnd.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PacketModelNamespacedHilbertEnd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PacketModelNamespacedHilbertEnd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PacketModelNamespacedHilbertEnd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [HilbertEnd](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PacketModelNamespacedHilbertEnd.lean/declarations/hilbertend.md) | 28 | `declaration-track:019e93f79ead2f6831112b363f2f43110a1ef985b523217559ec86b703390a57` |
-| 2 | `structure` | [PacketTraceModel](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PacketModelNamespacedHilbertEnd.lean/declarations/packettracemodel.md) | 34 | `declaration-track:e2ff181a0e315eab2a68551a2d7eb365bb2ac4cdf6e2a8c547510c7fbfa0cdc0` |
+| 1 | `abbrev` | [HilbertEnd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PacketModelNamespacedHilbertEnd.lean/declarations/hilbertend.md) | 28 | `declaration-track:019e93f79ead2f6831112b363f2f43110a1ef985b523217559ec86b703390a57` |
+| 2 | `structure` | [PacketTraceModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PacketModelNamespacedHilbertEnd.lean/declarations/packettracemodel.md) | 34 | `declaration-track:e2ff181a0e315eab2a68551a2d7eb365bb2ac4cdf6e2a8c547510c7fbfa0cdc0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

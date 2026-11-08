@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/QuarticAdjacencyStabilizer.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/QuarticAdjacencyStabilizer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAdjacencyStabilizer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAdjacencyStabilizer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticAdjacencyIntermediateField`](../../../../AssociativeRingsAndAlgebras/QuarticAdjacencyIntermediateField.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticAdjacencyIntermediateField`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAdjacencyIntermediateField.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [adjacencyStabilizer](../../../../AssociativeRingsAndAlgebras/QuarticAdjacencyStabilizer.lean/declarations/adjacencystabilizer.md) | 26 | `declaration-track:a2e780530285cd5ea0e569e2354a0d828a30d9dc87005beb314d24d7201953c3` |
-| 2 | `theorem` | [mem_adjacencyStabilizer_iff_double_transposition](../../../../AssociativeRingsAndAlgebras/QuarticAdjacencyStabilizer.lean/declarations/mem-adjacencystabilizer-iff-double-transposition.md) | 44 | `result-track:b865cdd26399f6efa7e9b5af931797ea17fca72c84a85b91267f97650dbd8ec1` |
+| 1 | `def` | [adjacencyStabilizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAdjacencyStabilizer.lean/declarations/adjacencystabilizer.md) | 26 | `declaration-track:a2e780530285cd5ea0e569e2354a0d828a30d9dc87005beb314d24d7201953c3` |
+| 2 | `theorem` | [mem_adjacencyStabilizer_iff_double_transposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAdjacencyStabilizer.lean/declarations/mem-adjacencystabilizer-iff-double-transposition.md) | 44 | `result-track:b865cdd26399f6efa7e9b5af931797ea17fca72c84a85b91267f97650dbd8ec1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

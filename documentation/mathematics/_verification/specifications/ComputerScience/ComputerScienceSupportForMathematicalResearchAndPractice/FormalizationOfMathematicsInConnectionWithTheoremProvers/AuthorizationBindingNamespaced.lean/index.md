@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBindingNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBindingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBindingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBindingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CanonicalIndexPatchAuthorization](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBindingNamespaced.lean/declarations/canonicalindexpatchauthorization.md) | 20 | `declaration-track:06bac7b159276c66a4c1a0e37db249fe40db20109fbf5b5251011a4e98fe1132` |
-| 2 | `structure` | [AuthorizedReviewedCanonicalIndexPatch](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBindingNamespaced.lean/declarations/authorizedreviewedcanonicalindexpatch.md) | 28 | `declaration-track:14d680fba4439a2d937d5fd461f23c588fbc0050fdc7116c28d52d7a4de1f051` |
-| 3 | `theorem` | [AuthorizedReviewedCanonicalIndexPatch.same_digest](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBindingNamespaced.lean/declarations/authorizedreviewedcanonicalindexpatch-same-digest.md) | 34 | `result-track:9e8f23fbee446cee8a8f9b14fbbdf7cea2c244322dc44aedc520600b848f5291` |
+| 1 | `structure` | [CanonicalIndexPatchAuthorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBindingNamespaced.lean/declarations/canonicalindexpatchauthorization.md) | 20 | `declaration-track:06bac7b159276c66a4c1a0e37db249fe40db20109fbf5b5251011a4e98fe1132` |
+| 2 | `structure` | [AuthorizedReviewedCanonicalIndexPatch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBindingNamespaced.lean/declarations/authorizedreviewedcanonicalindexpatch.md) | 28 | `declaration-track:14d680fba4439a2d937d5fd461f23c588fbc0050fdc7116c28d52d7a4de1f051` |
+| 3 | `theorem` | [AuthorizedReviewedCanonicalIndexPatch.same_digest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBindingNamespaced.lean/declarations/authorizedreviewedcanonicalindexpatch-same-digest.md) | 34 | `result-track:9e8f23fbee446cee8a8f9b14fbbdf7cea2c244322dc44aedc520600b848f5291` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

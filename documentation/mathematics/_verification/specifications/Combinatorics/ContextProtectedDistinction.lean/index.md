@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ContextProtectedDistinction.lean/index.md) · [Full source](../../../../Combinatorics/ContextProtectedDistinction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextProtectedDistinction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextProtectedDistinction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ProtectedDistinction](../../../../Combinatorics/ContextProtectedDistinction.lean/declarations/protecteddistinction.md) | 16 | `declaration-track:44b71d61dae311989d3634d0afd5741e99b9de51084a522fb776e36ae37bf973` |
-| 2 | `def` | [requiredProtectedDistinctions](../../../../Combinatorics/ContextProtectedDistinction.lean/declarations/requiredprotecteddistinctions.md) | 31 | `declaration-track:a0020bee616ba2a78d3fdd6cac036412b60770f176cbcf5dcae61139eda712b2` |
-| 3 | `structure` | [ContextEnvelope](../../../../Combinatorics/ContextProtectedDistinction.lean/declarations/contextenvelope.md) | 48 | `declaration-track:b0f6de72a9d7e0edae6ec00700e4b357f1dd780479607893035537273a00c801` |
-| 4 | `def` | [ContextEnvelope.preservesRequired](../../../../Combinatorics/ContextProtectedDistinction.lean/declarations/contextenvelope-preservesrequired.md) | 62 | `declaration-track:ac545c7fe9903c41381651cd00427c6f845ed5b315fa7eede7f5b209d5273dab` |
-| 5 | `structure` | [ContextBoundCut](../../../../Combinatorics/ContextProtectedDistinction.lean/declarations/contextboundcut.md) | 67 | `declaration-track:c8d06e934453d280eccf0bb5b972c2c02e578037b94c3a9f6fdd697b68387fa2` |
+| 1 | `inductive` | [ProtectedDistinction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextProtectedDistinction.lean/declarations/protecteddistinction.md) | 16 | `declaration-track:44b71d61dae311989d3634d0afd5741e99b9de51084a522fb776e36ae37bf973` |
+| 2 | `def` | [requiredProtectedDistinctions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextProtectedDistinction.lean/declarations/requiredprotecteddistinctions.md) | 31 | `declaration-track:a0020bee616ba2a78d3fdd6cac036412b60770f176cbcf5dcae61139eda712b2` |
+| 3 | `structure` | [ContextEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextProtectedDistinction.lean/declarations/contextenvelope.md) | 48 | `declaration-track:b0f6de72a9d7e0edae6ec00700e4b357f1dd780479607893035537273a00c801` |
+| 4 | `def` | [ContextEnvelope.preservesRequired](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextProtectedDistinction.lean/declarations/contextenvelope-preservesrequired.md) | 62 | `declaration-track:ac545c7fe9903c41381651cd00427c6f845ed5b315fa7eede7f5b209d5273dab` |
+| 5 | `structure` | [ContextBoundCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextProtectedDistinction.lean/declarations/contextboundcut.md) | 67 | `declaration-track:c8d06e934453d280eccf0bb5b972c2c02e578037b94c3a9f6fdd697b68387fa2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

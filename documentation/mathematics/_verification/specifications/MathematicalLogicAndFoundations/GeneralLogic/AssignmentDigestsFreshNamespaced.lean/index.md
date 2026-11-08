@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssignmentDigestsFreshNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssignmentDigestsFreshNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssignmentDigestsFreshNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssignmentDigestsFreshNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AssignmentDigestsFresh](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssignmentDigestsFreshNamespaced.lean/declarations/assignmentdigestsfresh.md) | 24 | `declaration-track:95f9f75530d1e754558387bcd58805304743502581a8c57162e9c3ea85f5e725` |
+| 1 | `def` | [AssignmentDigestsFresh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssignmentDigestsFreshNamespaced.lean/declarations/assignmentdigestsfresh.md) | 24 | `declaration-track:95f9f75530d1e754558387bcd58805304743502581a8c57162e9c3ea85f5e725` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

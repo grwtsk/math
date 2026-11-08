@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredNamespacedPublicBitblastAigIsPrefix.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredNamespacedPublicBitblastAigIsPrefix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredNamespacedPublicBitblastAigIsPrefix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredNamespacedPublicBitblastAigIsPrefix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bitblast_aig_IsPrefix](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredNamespacedPublicBitblastAigIsPrefix.lean/declarations/bitblast-aig-isprefix.md) | 35 | `result-track:d3008347b17b28b26c9ec5da3aaa0b30e4ee8323e32f7ae1a96ecb5566ab9787` |
-| 2 | `theorem` | [bitblast_denote_mem_prefix](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredNamespacedPublicBitblastAigIsPrefix.lean/declarations/bitblast-denote-mem-prefix.md) | 43 | `result-track:5b3ce39605871286860a694f206c822fab8d5c4182b6dceb6ce96a73a9ea5ff5` |
-| 3 | `theorem` | [bitblast_Inv_of_Inv](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredNamespacedPublicBitblastAigIsPrefix.lean/declarations/bitblast-inv-of-inv.md) | 55 | `result-track:2b6771ff281b52fda5d37ab793f8ed3f8ce3d9a55dd61f48adf1ce54be05b719` |
-| 4 | `theorem` | [denote_bitblast](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredNamespacedPublicBitblastAigIsPrefix.lean/declarations/denote-bitblast.md) | 81 | `result-track:14fed865a661a82b6b456c93a941a0351709719414993a10f9ba74452f4193a9` |
+| 1 | `theorem` | [bitblast_aig_IsPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredNamespacedPublicBitblastAigIsPrefix.lean/declarations/bitblast-aig-isprefix.md) | 35 | `result-track:d3008347b17b28b26c9ec5da3aaa0b30e4ee8323e32f7ae1a96ecb5566ab9787` |
+| 2 | `theorem` | [bitblast_denote_mem_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredNamespacedPublicBitblastAigIsPrefix.lean/declarations/bitblast-denote-mem-prefix.md) | 43 | `result-track:5b3ce39605871286860a694f206c822fab8d5c4182b6dceb6ce96a73a9ea5ff5` |
+| 3 | `theorem` | [bitblast_Inv_of_Inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredNamespacedPublicBitblastAigIsPrefix.lean/declarations/bitblast-inv-of-inv.md) | 55 | `result-track:2b6771ff281b52fda5d37ab793f8ed3f8ce3d9a55dd61f48adf1ce54be05b719` |
+| 4 | `theorem` | [denote_bitblast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredNamespacedPublicBitblastAigIsPrefix.lean/declarations/denote-bitblast.md) | 81 | `result-track:14fed865a661a82b6b456c93a941a0351709719414993a10f9ba74452f4193a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

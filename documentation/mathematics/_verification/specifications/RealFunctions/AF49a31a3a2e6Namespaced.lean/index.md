@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AF49a31a3a2e6Namespaced.lean/index.md) · [Full source](../../../../RealFunctions/AF49a31a3a2e6Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AF49a31a3a2e6Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AF49a31a3a2e6Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [EventPath](../../../../RealFunctions/AF49a31a3a2e6Namespaced.lean/declarations/eventpath.md) | 22 | `declaration-track:1e598ba6d88d9c38c42962338fe10c0ab3b5ae34938d58cf51f07c8a7ef8b0c9` |
+| 1 | `structure` | [EventPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AF49a31a3a2e6Namespaced.lean/declarations/eventpath.md) | 22 | `declaration-track:1e598ba6d88d9c38c42962338fe10c0ab3b5ae34938d58cf51f07c8a7ef8b0c9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

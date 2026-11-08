@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BothDirectionsAndSelfSource.lean/index.md) · [Full source](../../../../Combinatorics/BothDirectionsAndSelfSource.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BothDirectionsAndSelfSource.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BothDirectionsAndSelfSource.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Combinatorics/BothDirectionsAndSelfSource.lean/declarations/example-source-edition-2.md) | 29 | `declaration-track:603288d4b913e600cf85c5990e1f9c91aee6cdf4ac71730bb8fb1a433d9d766c` |
-| 2 | `example` | [(anonymous)](../../../../Combinatorics/BothDirectionsAndSelfSource.lean/declarations/example.md) | 39 | `declaration-track:3fd024ac66c169bd880f0b16ae1e4b5760ba7b7b0fd24186548c46196c4b1115` |
-| 3 | `example` | [(anonymous)](../../../../Combinatorics/BothDirectionsAndSelfSource.lean/declarations/example-source-edition-3.md) | 48 | `declaration-track:caedad539506b2cd4cce57a115c1a672960b4fff2ec6727ba37cfe2b34537f45` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BothDirectionsAndSelfSource.lean/declarations/example-source-edition-2.md) | 29 | `declaration-track:603288d4b913e600cf85c5990e1f9c91aee6cdf4ac71730bb8fb1a433d9d766c` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BothDirectionsAndSelfSource.lean/declarations/example.md) | 39 | `declaration-track:3fd024ac66c169bd880f0b16ae1e4b5760ba7b7b0fd24186548c46196c4b1115` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BothDirectionsAndSelfSource.lean/declarations/example-source-edition-3.md) | 48 | `declaration-track:caedad539506b2cd4cce57a115c1a672960b4fff2ec6727ba37cfe2b34537f45` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

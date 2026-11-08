@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralPairedReconstruction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralPairedReconstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralPairedReconstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralPairedReconstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Paired Reconstruction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PairedReconstruction.lean/index.md) — import line 19; pinned internal source present.
+- [Paired Reconstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PairedReconstruction.lean/index.md) — import line 19; pinned internal source present.
 - `Folder.Spectral.Heat` — import line 21; external provider; requires a separately pinned dependency.
 - `Folder.Spectral.Residual` — import line 22; external provider; requires a separately pinned dependency.
 - `Folder.Theorem.Spectral.HeatResidual` — import line 23; external provider; requires a separately pinned dependency.
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [spectralLiftedHeatInverse](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralPairedReconstruction.lean/declarations/spectralliftedheatinverse.md) | 42 | `declaration-track:9b4b6e4bd0d4d208bcbbe64769e6b39b7b8ab19aad730b616c14ab61a6361e10` |
+| 1 | `def` | [spectralLiftedHeatInverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralPairedReconstruction.lean/declarations/spectralliftedheatinverse.md) | 42 | `declaration-track:9b4b6e4bd0d4d208bcbbe64769e6b39b7b8ab19aad730b616c14ab61a6361e10` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

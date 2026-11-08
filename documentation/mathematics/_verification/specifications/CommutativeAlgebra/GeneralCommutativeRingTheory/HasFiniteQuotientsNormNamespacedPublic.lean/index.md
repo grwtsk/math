@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/HasFiniteQuotientsNormNamespacedPublic.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/HasFiniteQuotientsNormNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/HasFiniteQuotientsNormNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/HasFiniteQuotientsNormNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/HasFiniteQuotientsNormNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:55d214df5a513586a1b6f125776dfa3ee809e222c9eb4bab1e2cca0d3938b913` |
-| 2 | `instance` | [(anonymous)](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/HasFiniteQuotientsNormNamespacedPublic.lean/declarations/instance.md) | 36 | `declaration-track:518f41e627e8d6ae3252f5b284d6279771ebefdb83d7269dbbd9139f7fa5c0c3` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/HasFiniteQuotientsNormNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:55d214df5a513586a1b6f125776dfa3ee809e222c9eb4bab1e2cca0d3938b913` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/HasFiniteQuotientsNormNamespacedPublic.lean/declarations/instance.md) | 36 | `declaration-track:518f41e627e8d6ae3252f5b284d6279771ebefdb83d7269dbbd9139f7fa5c0c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

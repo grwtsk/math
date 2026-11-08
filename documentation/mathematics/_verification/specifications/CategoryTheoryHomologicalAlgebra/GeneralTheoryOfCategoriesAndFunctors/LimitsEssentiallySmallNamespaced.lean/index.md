@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmallNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmallNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmallNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmallNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasLimitsOfShape_of_essentiallySmall](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmallNamespaced.lean/declarations/haslimitsofshape-of-essentiallysmall.md) | 37 | `result-track:ea338dbca215f449b35dbe9c58347bacf4feefecd60ae7c1b87a521456d2681f` |
-| 2 | `theorem` | [hasColimitsOfShape_of_essentiallySmall](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmallNamespaced.lean/declarations/hascolimitsofshape-of-essentiallysmall.md) | 41 | `result-track:cab5b5d8f4f2fe8dd9635f9c6a9435dec8440e9c310ff93e95a9de0d8ad677d5` |
-| 3 | `theorem` | [hasProductsOfShape_of_small](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmallNamespaced.lean/declarations/hasproductsofshape-of-small.md) | 45 | `result-track:83117bca4ac0544cca56da2b88d6bb918539769ab289513f59eab89d030822d9` |
-| 4 | `theorem` | [hasCoproductsOfShape_of_small](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmallNamespaced.lean/declarations/hascoproductsofshape-of-small.md) | 49 | `result-track:afe1ba591c276923bc5a5315619f76bd65a0f7e78adb085868e4bfadc983b5b2` |
+| 1 | `theorem` | [hasLimitsOfShape_of_essentiallySmall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmallNamespaced.lean/declarations/haslimitsofshape-of-essentiallysmall.md) | 37 | `result-track:ea338dbca215f449b35dbe9c58347bacf4feefecd60ae7c1b87a521456d2681f` |
+| 2 | `theorem` | [hasColimitsOfShape_of_essentiallySmall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmallNamespaced.lean/declarations/hascolimitsofshape-of-essentiallysmall.md) | 41 | `result-track:cab5b5d8f4f2fe8dd9635f9c6a9435dec8440e9c310ff93e95a9de0d8ad677d5` |
+| 3 | `theorem` | [hasProductsOfShape_of_small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmallNamespaced.lean/declarations/hasproductsofshape-of-small.md) | 45 | `result-track:83117bca4ac0544cca56da2b88d6bb918539769ab289513f59eab89d030822d9` |
+| 4 | `theorem` | [hasCoproductsOfShape_of_small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmallNamespaced.lean/declarations/hascoproductsofshape-of-small.md) | 49 | `result-track:afe1ba591c276923bc5a5315619f76bd65a0f7e78adb085868e4bfadc983b5b2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

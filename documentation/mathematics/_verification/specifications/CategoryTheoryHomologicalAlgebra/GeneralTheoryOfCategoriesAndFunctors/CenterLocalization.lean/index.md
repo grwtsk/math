@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [localization](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/declarations/localization.md) | 32 | `declaration-track:1aeec0e95d390761523f52378f1a60ca311b296222410969eacb11e51f6e5201` |
-| 2 | `lemma` | [localization_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/declarations/localization-app.md) | 36 | `result-track:2948c0eb103b7674b09e5cd8fed42042703cd0f18ad17500870a370e9177c337` |
-| 3 | `lemma` | [ext_of_localization](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/declarations/ext-of-localization.md) | 44 | `result-track:694afc2d41e271f682eed041f9efb10525ded41c55b024c72a37dc3e50eb5053` |
-| 4 | `lemma` | [localization_one](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/declarations/localization-one.md) | 48 | `result-track:655a6846a62c7b477a070a67ce514df811b4ad732373f712d4e1fd47951d7cc1` |
-| 5 | `lemma` | [localization_mul](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/declarations/localization-mul.md) | 52 | `result-track:8b1fa7c522bb691f8c0923347caaa556b2e6af7bf9a5b61b6b0a0eaf66d5e0ca` |
-| 6 | `lemma` | [localization_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/declarations/localization-zero.md) | 60 | `result-track:4a3ed11f015d7c83154a4f536a779ddd68f0fc546bc6460b2dc951d08eef64da` |
-| 7 | `lemma` | [localization_add](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/declarations/localization-add.md) | 64 | `result-track:50afeb30145ac6faf605768bada7055d8b231227033afe70c05d54edb7b102f6` |
-| 8 | `def` | [localizationRingHom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/declarations/localizationringhom.md) | 72 | `declaration-track:a1713641d057e56753dcd6501953812814763c8ad78f3b7f1cac7cb75e108d74` |
+| 1 | `def` | [localization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/declarations/localization.md) | 32 | `declaration-track:1aeec0e95d390761523f52378f1a60ca311b296222410969eacb11e51f6e5201` |
+| 2 | `lemma` | [localization_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/declarations/localization-app.md) | 36 | `result-track:2948c0eb103b7674b09e5cd8fed42042703cd0f18ad17500870a370e9177c337` |
+| 3 | `lemma` | [ext_of_localization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/declarations/ext-of-localization.md) | 44 | `result-track:694afc2d41e271f682eed041f9efb10525ded41c55b024c72a37dc3e50eb5053` |
+| 4 | `lemma` | [localization_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/declarations/localization-one.md) | 48 | `result-track:655a6846a62c7b477a070a67ce514df811b4ad732373f712d4e1fd47951d7cc1` |
+| 5 | `lemma` | [localization_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/declarations/localization-mul.md) | 52 | `result-track:8b1fa7c522bb691f8c0923347caaa556b2e6af7bf9a5b61b6b0a0eaf66d5e0ca` |
+| 6 | `lemma` | [localization_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/declarations/localization-zero.md) | 60 | `result-track:4a3ed11f015d7c83154a4f536a779ddd68f0fc546bc6460b2dc951d08eef64da` |
+| 7 | `lemma` | [localization_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/declarations/localization-add.md) | 64 | `result-track:50afeb30145ac6faf605768bada7055d8b231227033afe70c05d54edb7b102f6` |
+| 8 | `def` | [localizationRingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLocalization.lean/declarations/localizationringhom.md) | 72 | `declaration-track:a1713641d057e56753dcd6501953812814763c8ad78f3b7f1cac7cb75e108d74` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

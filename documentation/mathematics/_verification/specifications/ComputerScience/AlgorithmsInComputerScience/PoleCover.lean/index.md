@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PoleCover.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PoleCover.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PoleCover.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PoleCover.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PoleChart](../../../../../ComputerScience/AlgorithmsInComputerScience/PoleCover.lean/declarations/polechart.md) | 7 | `declaration-track:3701197b24be2ff632f69a9447fe85bd03460ea554089c4b3cb6282e7d28be4a` |
-| 2 | `structure` | [PoleCover](../../../../../ComputerScience/AlgorithmsInComputerScience/PoleCover.lean/declarations/polecover.md) | 14 | `declaration-track:227bcf7b4f1fd151cb5963ee6211bf37deda9796a68c4d4c3f203c27e76951a2` |
-| 3 | `def` | [PoleCover.compactDeterminedByPoles](../../../../../ComputerScience/AlgorithmsInComputerScience/PoleCover.lean/declarations/polecover-compactdeterminedbypoles.md) | 21 | `declaration-track:472f71ed14af340e5d3f860cea6ef5d004631aede7d120c0ad2f2650e3a1b1b3` |
-| 4 | `def` | [polesFormCompactConservativeResidueCover](../../../../../ComputerScience/AlgorithmsInComputerScience/PoleCover.lean/declarations/polesformcompactconservativeresiduecover.md) | 24 | `declaration-track:320ee83cdac83915863504a74899d6d421ef8854088400968c71da3c0de5a97b` |
-| 5 | `theorem` | [compact_determined_requires_conservative_cover](../../../../../ComputerScience/AlgorithmsInComputerScience/PoleCover.lean/declarations/compact-determined-requires-conservative-cover.md) | 27 | `result-track:6d4e650f1d5211fc1237db2f212de240c4e44760206638c1154c9df402787d89` |
-| 6 | `theorem` | [conservative_residue_cover_with_overlaps_determines_compact](../../../../../ComputerScience/AlgorithmsInComputerScience/PoleCover.lean/declarations/conservative-residue-cover-with-overlaps-determines-compact.md) | 33 | `result-track:38afe39647584532f92bbbfcd96548e595bdedb449d255f230edd98bef86e2bb` |
+| 1 | `structure` | [PoleChart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PoleCover.lean/declarations/polechart.md) | 7 | `declaration-track:3701197b24be2ff632f69a9447fe85bd03460ea554089c4b3cb6282e7d28be4a` |
+| 2 | `structure` | [PoleCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PoleCover.lean/declarations/polecover.md) | 14 | `declaration-track:227bcf7b4f1fd151cb5963ee6211bf37deda9796a68c4d4c3f203c27e76951a2` |
+| 3 | `def` | [PoleCover.compactDeterminedByPoles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PoleCover.lean/declarations/polecover-compactdeterminedbypoles.md) | 21 | `declaration-track:472f71ed14af340e5d3f860cea6ef5d004631aede7d120c0ad2f2650e3a1b1b3` |
+| 4 | `def` | [polesFormCompactConservativeResidueCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PoleCover.lean/declarations/polesformcompactconservativeresiduecover.md) | 24 | `declaration-track:320ee83cdac83915863504a74899d6d421ef8854088400968c71da3c0de5a97b` |
+| 5 | `theorem` | [compact_determined_requires_conservative_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PoleCover.lean/declarations/compact-determined-requires-conservative-cover.md) | 27 | `result-track:6d4e650f1d5211fc1237db2f212de240c4e44760206638c1154c9df402787d89` |
+| 6 | `theorem` | [conservative_residue_cover_with_overlaps_determines_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PoleCover.lean/declarations/conservative-residue-cover-with-overlaps-determines-compact.md) | 33 | `result-track:38afe39647584532f92bbbfcd96548e595bdedb449d255f230edd98bef86e2bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

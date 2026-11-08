@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateFnNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateFnNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateFnNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateFnNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [count_certificate_fn](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateFnNamespaced.lean/declarations/count-certificate-fn.md) | 37 | `result-track:5bd7c7d69a0dff2ec5be9bdc675030371c8a4624226e1a0e308b40088a435aae` |
-| 2 | `theorem` | [count_certificate_c3_fn](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateFnNamespaced.lean/declarations/count-certificate-c3-fn.md) | 83 | `result-track:15e9f767e65c4b26caa1bd5ff0e0c5a880194cdc6ae600e4274f682d327c85b3` |
+| 1 | `theorem` | [count_certificate_fn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateFnNamespaced.lean/declarations/count-certificate-fn.md) | 37 | `result-track:5bd7c7d69a0dff2ec5be9bdc675030371c8a4624226e1a0e308b40088a435aae` |
+| 2 | `theorem` | [count_certificate_c3_fn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateFnNamespaced.lean/declarations/count-certificate-c3-fn.md) | 83 | `result-track:15e9f767e65c4b26caa1bd5ff0e0c5a880194cdc6ae600e4274f682d327c85b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

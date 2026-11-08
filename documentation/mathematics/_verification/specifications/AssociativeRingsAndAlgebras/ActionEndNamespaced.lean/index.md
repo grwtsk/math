@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/ActionEndNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/ActionEndNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionEndNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionEndNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [applyMulSemiringAction](../../../../AssociativeRingsAndAlgebras/ActionEndNamespaced.lean/declarations/applymulsemiringaction.md) | 41 | `declaration-track:303dadb1bd727110201e10142e0a7b543ce01b7894e302224386ae0c62588182` |
-| 2 | `theorem` | [smul_def](../../../../AssociativeRingsAndAlgebras/ActionEndNamespaced.lean/declarations/smul-def.md) | 52 | `result-track:07f017317d8c0aa88c34cbf36972b10121549dec0e4decdb80552f5266983ad0` |
-| 3 | `instance` | [apply_faithfulSMul](../../../../AssociativeRingsAndAlgebras/ActionEndNamespaced.lean/declarations/apply-faithfulsmul.md) | 55 | `declaration-track:b67d21dcd3e510ded429c7b1944289b1ddfc6417ce2f79bc0a5ddebd83fea66d` |
-| 4 | `def` | [Action End Namespaced](../../../../AssociativeRingsAndAlgebras/ActionEndNamespaced.lean/declarations/toringaut.md) | 65 | `declaration-track:c6a9dc624c5bf80bf8103cca80acd4114c0eb91900e3fbebeaf1a88fa6d7d423` |
+| 1 | `instance` | [applyMulSemiringAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionEndNamespaced.lean/declarations/applymulsemiringaction.md) | 41 | `declaration-track:303dadb1bd727110201e10142e0a7b543ce01b7894e302224386ae0c62588182` |
+| 2 | `theorem` | [smul_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionEndNamespaced.lean/declarations/smul-def.md) | 52 | `result-track:07f017317d8c0aa88c34cbf36972b10121549dec0e4decdb80552f5266983ad0` |
+| 3 | `instance` | [apply_faithfulSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionEndNamespaced.lean/declarations/apply-faithfulsmul.md) | 55 | `declaration-track:b67d21dcd3e510ded429c7b1944289b1ddfc6417ce2f79bc0a5ddebd83fea66d` |
+| 4 | `def` | [Action End Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionEndNamespaced.lean/declarations/toringaut.md) | 65 | `declaration-track:c6a9dc624c5bf80bf8103cca80acd4114c0eb91900e3fbebeaf1a88fa6d7d423` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

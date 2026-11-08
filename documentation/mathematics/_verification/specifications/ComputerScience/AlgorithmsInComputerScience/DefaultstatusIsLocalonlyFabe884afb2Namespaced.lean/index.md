@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/DefaultstatusIsLocalonlyFabe884afb2Namespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/DefaultstatusIsLocalonlyFabe884afb2Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefaultstatusIsLocalonlyFabe884afb2Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefaultstatusIsLocalonlyFabe884afb2Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [UpstreamStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/DefaultstatusIsLocalonlyFabe884afb2Namespaced.lean/declarations/upstreamstatus.md) | 25 | `declaration-track:eeac29f422f1b8ee65c1f6eb8f66308aed396a1cd68982160c8fa9b3f8420fd7` |
-| 2 | `def` | [defaultStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/DefaultstatusIsLocalonlyFabe884afb2Namespaced.lean/declarations/defaultstatus.md) | 31 | `declaration-track:1d2f37605288ac74c04213189c0da02c9498af04db7b435a969dc84f71cff8b1` |
-| 3 | `theorem` | [defaultStatus_is_localOnly](../../../../../ComputerScience/AlgorithmsInComputerScience/DefaultstatusIsLocalonlyFabe884afb2Namespaced.lean/declarations/defaultstatus-is-localonly.md) | 33 | `result-track:057b4104544ab10664ef653dd3788fb52b17c7d3cfba0f2c475baa6778c3d242` |
-| 4 | `def` | [conceptualBoundaries](../../../../../ComputerScience/AlgorithmsInComputerScience/DefaultstatusIsLocalonlyFabe884afb2Namespaced.lean/declarations/conceptualboundaries.md) | 36 | `declaration-track:a79dd4915449f1506e14917cff27bacd691e934abb3ff0444593116b57e3cbd5` |
-| 5 | `theorem` | [conceptualBoundaries_count](../../../../../ComputerScience/AlgorithmsInComputerScience/DefaultstatusIsLocalonlyFabe884afb2Namespaced.lean/declarations/conceptualboundaries-count.md) | 44 | `result-track:fbd6808f66f269abfbbb47d10ed71bc3432b3af770b863ddcd91f85942686c41` |
+| 1 | `inductive` | [UpstreamStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefaultstatusIsLocalonlyFabe884afb2Namespaced.lean/declarations/upstreamstatus.md) | 25 | `declaration-track:eeac29f422f1b8ee65c1f6eb8f66308aed396a1cd68982160c8fa9b3f8420fd7` |
+| 2 | `def` | [defaultStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefaultstatusIsLocalonlyFabe884afb2Namespaced.lean/declarations/defaultstatus.md) | 31 | `declaration-track:1d2f37605288ac74c04213189c0da02c9498af04db7b435a969dc84f71cff8b1` |
+| 3 | `theorem` | [defaultStatus_is_localOnly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefaultstatusIsLocalonlyFabe884afb2Namespaced.lean/declarations/defaultstatus-is-localonly.md) | 33 | `result-track:057b4104544ab10664ef653dd3788fb52b17c7d3cfba0f2c475baa6778c3d242` |
+| 4 | `def` | [conceptualBoundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefaultstatusIsLocalonlyFabe884afb2Namespaced.lean/declarations/conceptualboundaries.md) | 36 | `declaration-track:a79dd4915449f1506e14917cff27bacd691e934abb3ff0444593116b57e3cbd5` |
+| 5 | `theorem` | [conceptualBoundaries_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefaultstatusIsLocalonlyFabe884afb2Namespaced.lean/declarations/conceptualboundaries-count.md) | 44 | `result-track:fbd6808f66f269abfbbb47d10ed71bc3432b3af770b863ddcd91f85942686c41` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

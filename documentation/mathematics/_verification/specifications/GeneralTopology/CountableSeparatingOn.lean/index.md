@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CountableSeparatingOn.lean/index.md) · [Full source](../../../../GeneralTopology/CountableSeparatingOn.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CountableSeparatingOn.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CountableSeparatingOn.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/CountableSeparatingOn.lean/declarations/instance-source-edition-2.md) | 23 | `declaration-track:f1e5fed94261cc87289d4303a73b0a9fae7250e0403cfebcf65f8975fb12d957` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/CountableSeparatingOn.lean/declarations/instance.md) | 32 | `declaration-track:b6c7803198c78b34460cc00633a65f0a70f1c710d6d8ea15485d59d0021337b9` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CountableSeparatingOn.lean/declarations/instance-source-edition-2.md) | 23 | `declaration-track:f1e5fed94261cc87289d4303a73b0a9fae7250e0403cfebcf65f8975fb12d957` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CountableSeparatingOn.lean/declarations/instance.md) | 32 | `declaration-track:b6c7803198c78b34460cc00633a65f0a70f1c710d6d8ea15485d59d0021337b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

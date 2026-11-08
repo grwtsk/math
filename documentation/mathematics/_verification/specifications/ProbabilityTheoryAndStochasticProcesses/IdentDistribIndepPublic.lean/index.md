@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/IdentDistribIndepPublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/IdentDistribIndepPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IdentDistribIndepPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IdentDistribIndepPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IdentDistrib.prodMk](../../../../ProbabilityTheoryAndStochasticProcesses/IdentDistribIndepPublic.lean/declarations/identdistrib-prodmk.md) | 39 | `result-track:c443051d321f8a89c068c8f830271b7c1c6e67eb07ce420cfc6fbcd92190aede` |
-| 2 | `lemma` | [IdentDistrib.pi](../../../../ProbabilityTheoryAndStochasticProcesses/IdentDistribIndepPublic.lean/declarations/identdistrib-pi.md) | 57 | `result-track:72a2c3a02c9c76e8704367f680f6ae853c0777d2658286a6ffa6d5accb012314` |
+| 1 | `lemma` | [IdentDistrib.prodMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IdentDistribIndepPublic.lean/declarations/identdistrib-prodmk.md) | 39 | `result-track:c443051d321f8a89c068c8f830271b7c1c6e67eb07ce420cfc6fbcd92190aede` |
+| 2 | `lemma` | [IdentDistrib.pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IdentDistribIndepPublic.lean/declarations/identdistrib-pi.md) | 57 | `result-track:72a2c3a02c9c76e8704367f680f6ae853c0777d2658286a6ffa6d5accb012314` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

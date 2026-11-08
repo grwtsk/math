@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Translations.lean/index.md) · [Full source](../../../../GeneralTopology/Translations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Translations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Translations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [FullH](../../../../GeneralTopology/Translations.lean/declarations/fullh.md) | 42 | `declaration-track:0f9d0b5ec70d6aa046c696a8f96a4ceb3993040f0a5bda56fb0f21953396a295` |
-| 2 | `def` | [fullShift](../../../../GeneralTopology/Translations.lean/declarations/fullshift.md) | 44 | `declaration-track:5e65add71d8d2e9527c6a30256857ec013a813edabcb9fdf7723db405e2347ed` |
-| 3 | `theorem` | [fullShift_ae](../../../../GeneralTopology/Translations.lean/declarations/fullshift-ae.md) | 47 | `result-track:25c6d76162b71565786409de573db8a5e6a2911ea9a5b90aab9c0dd67bc91777` |
-| 4 | `theorem` | [fullShift_continuous](../../../../GeneralTopology/Translations.lean/declarations/fullshift-continuous.md) | 51 | `result-track:5fc1599543611b2ff415b7a12576ebfaf9630aed13ce641ead446c1c68a12185` |
+| 1 | `abbrev` | [FullH](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Translations.lean/declarations/fullh.md) | 42 | `declaration-track:0f9d0b5ec70d6aa046c696a8f96a4ceb3993040f0a5bda56fb0f21953396a295` |
+| 2 | `def` | [fullShift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Translations.lean/declarations/fullshift.md) | 44 | `declaration-track:5e65add71d8d2e9527c6a30256857ec013a813edabcb9fdf7723db405e2347ed` |
+| 3 | `theorem` | [fullShift_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Translations.lean/declarations/fullshift-ae.md) | 47 | `result-track:25c6d76162b71565786409de573db8a5e6a2911ea9a5b90aab9c0dd67bc91777` |
+| 4 | `theorem` | [fullShift_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Translations.lean/declarations/fullshift-continuous.md) | 51 | `result-track:5fc1599543611b2ff415b7a12576ebfaf9630aed13ce641ead446c1c68a12185` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

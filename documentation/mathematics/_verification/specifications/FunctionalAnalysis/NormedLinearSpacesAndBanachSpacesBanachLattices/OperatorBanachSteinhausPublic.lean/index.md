@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OperatorBanachSteinhausPublic.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OperatorBanachSteinhausPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OperatorBanachSteinhausPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OperatorBanachSteinhausPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [banach_steinhaus](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OperatorBanachSteinhausPublic.lean/declarations/banach-steinhaus.md) | 36 | `result-track:4b1beab4a0c78b32b8dd72f282703e686927484b2b6c6f0761db7b3a8f7a4f80` |
-| 2 | `theorem` | [banach_steinhaus_iSup_nnnorm](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OperatorBanachSteinhausPublic.lean/declarations/banach-steinhaus-isup-nnnorm.md) | 46 | `result-track:dd9d7b119af903d0cf06671b4fbedc8b0691ccaa974fe54e0c1f5f4f28ff1bb3` |
+| 1 | `theorem` | [banach_steinhaus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OperatorBanachSteinhausPublic.lean/declarations/banach-steinhaus.md) | 36 | `result-track:4b1beab4a0c78b32b8dd72f282703e686927484b2b6c6f0761db7b3a8f7a4f80` |
+| 2 | `theorem` | [banach_steinhaus_iSup_nnnorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OperatorBanachSteinhausPublic.lean/declarations/banach-steinhaus-isup-nnnorm.md) | 46 | `result-track:dd9d7b119af903d0cf06671b4fbedc8b0691ccaa974fe54e0c1f5f4f28ff1bb3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

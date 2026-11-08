@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ExactDefectTracker.lean/index.md) · [Full source](../../../../RealFunctions/ExactDefectTracker.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactDefectTracker.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactDefectTracker.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.ErrorBounds.SourceResidualConvergence`](../../../../RealFunctions/SourceResidualConvergence.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.SourceResidualConvergence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualConvergence.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exactDefectTracker](../../../../RealFunctions/ExactDefectTracker.lean/declarations/exactdefecttracker.md) | 13 | `declaration-track:c8c9442096433391c009fc8d879a719f2f7dc88d6abec97c0df3b09820734f9d` |
-| 2 | `theorem` | [exactDefectTracker_initial](../../../../RealFunctions/ExactDefectTracker.lean/declarations/exactdefecttracker-initial.md) | 20 | `result-track:e2669ee638840c37e89596ee26e2aba4f34955790be35e4e22a7ee1355387f49` |
-| 3 | `theorem` | [exactDefectTracker_step](../../../../RealFunctions/ExactDefectTracker.lean/declarations/exactdefecttracker-step.md) | 25 | `result-track:525a60303e1a95a55c2e74f73272571970ad1343da7ce6b89f600180fa03d592` |
-| 4 | `theorem` | [exactDefectTracker_first_step](../../../../RealFunctions/ExactDefectTracker.lean/declarations/exactdefecttracker-first-step.md) | 32 | `result-track:a5a146833c61c74b747800f0e0f1d84ac7be828dfd8237955db2365b690a77aa` |
-| 5 | `theorem` | [exactDefectTracker_net_forcing_zero](../../../../RealFunctions/ExactDefectTracker.lean/declarations/exactdefecttracker-net-forcing-zero.md) | 41 | `result-track:d4ed22259290ffd5c3f6ed6c487713f44389401bcbd59c5a343c1617a2bad090` |
-| 6 | `theorem` | [exactDefectTracker_residual_step](../../../../RealFunctions/ExactDefectTracker.lean/declarations/exactdefecttracker-residual-step.md) | 50 | `result-track:b4a24fec5febc52d0c15765654cb6310d8e5f9ea0f1f977710ef08badfcaaad5` |
-| 7 | `theorem` | [exactDefectTracker_residual_vanishes](../../../../RealFunctions/ExactDefectTracker.lean/declarations/exactdefecttracker-residual-vanishes.md) | 59 | `result-track:a81a1cd43ec4af54868d907e24adcaf6a6c0645e1cb50023d94590fdba79e495` |
+| 1 | `def` | [exactDefectTracker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactDefectTracker.lean/declarations/exactdefecttracker.md) | 13 | `declaration-track:c8c9442096433391c009fc8d879a719f2f7dc88d6abec97c0df3b09820734f9d` |
+| 2 | `theorem` | [exactDefectTracker_initial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactDefectTracker.lean/declarations/exactdefecttracker-initial.md) | 20 | `result-track:e2669ee638840c37e89596ee26e2aba4f34955790be35e4e22a7ee1355387f49` |
+| 3 | `theorem` | [exactDefectTracker_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactDefectTracker.lean/declarations/exactdefecttracker-step.md) | 25 | `result-track:525a60303e1a95a55c2e74f73272571970ad1343da7ce6b89f600180fa03d592` |
+| 4 | `theorem` | [exactDefectTracker_first_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactDefectTracker.lean/declarations/exactdefecttracker-first-step.md) | 32 | `result-track:a5a146833c61c74b747800f0e0f1d84ac7be828dfd8237955db2365b690a77aa` |
+| 5 | `theorem` | [exactDefectTracker_net_forcing_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactDefectTracker.lean/declarations/exactdefecttracker-net-forcing-zero.md) | 41 | `result-track:d4ed22259290ffd5c3f6ed6c487713f44389401bcbd59c5a343c1617a2bad090` |
+| 6 | `theorem` | [exactDefectTracker_residual_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactDefectTracker.lean/declarations/exactdefecttracker-residual-step.md) | 50 | `result-track:b4a24fec5febc52d0c15765654cb6310d8e5f9ea0f1f977710ef08badfcaaad5` |
+| 7 | `theorem` | [exactDefectTracker_residual_vanishes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactDefectTracker.lean/declarations/exactdefecttracker-residual-vanishes.md) | 59 | `result-track:a81a1cd43ec4af54868d907e24adcaf6a6c0645e1cb50023d94590fdba79e495` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

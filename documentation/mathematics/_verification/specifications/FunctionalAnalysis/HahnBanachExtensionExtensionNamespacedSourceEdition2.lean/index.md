@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/HahnBanachExtensionExtensionNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../FunctionalAnalysis/HahnBanachExtensionExtensionNamespacedSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachExtensionExtensionNamespacedSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachExtensionExtensionNamespacedSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_extension_norm_eq](../../../../FunctionalAnalysis/HahnBanachExtensionExtensionNamespacedSourceEdition2.lean/declarations/exists-extension-norm-eq.md) | 50 | `result-track:6ea63ce370637457f3faace73de8b51a275465d17c85fdb2260f52ec745ada88` |
-| 2 | `theorem` | [exists_extension_norm_eq](../../../../FunctionalAnalysis/HahnBanachExtensionExtensionNamespacedSourceEdition2.lean/declarations/exists-extension-norm-eq-source-edition-2.md) | 77 | `result-track:dbc8cdba5702f279d2879068ad5e89847c2ae9899e413b79a7c5ad387547848b` |
-| 3 | `theorem` | [coord_norm'](../../../../FunctionalAnalysis/HahnBanachExtensionExtensionNamespacedSourceEdition2.lean/declarations/coord-norm.md) | 125 | `result-track:155b42534c00125ab077e618aaf993859618e6a5ba5b781ae5e7c87741dce605` |
-| 4 | `theorem` | [exists_dual_vector](../../../../FunctionalAnalysis/HahnBanachExtensionExtensionNamespacedSourceEdition2.lean/declarations/exists-dual-vector.md) | 132 | `result-track:2bda1db5c24a2329b61343106e2d6e345c05c0e8324d7b42153d656e19ebf688` |
-| 5 | `theorem` | [exists_dual_vector'](../../../../FunctionalAnalysis/HahnBanachExtensionExtensionNamespacedSourceEdition2.lean/declarations/exists-dual-vector-source-edition-2.md) | 146 | `result-track:85340baa6cc1b0091c6ff71b8675057890b8943e9f02081e43ef5d0069ed162f` |
-| 6 | `theorem` | [exists_dual_vector''](../../../../FunctionalAnalysis/HahnBanachExtensionExtensionNamespacedSourceEdition2.lean/declarations/exists-dual-vector-source-edition-3.md) | 158 | `result-track:f62ee6f056d8ac293968c751c065dd181a4f0bc770190bfe48e995333749b9d7` |
+| 1 | `theorem` | [exists_extension_norm_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachExtensionExtensionNamespacedSourceEdition2.lean/declarations/exists-extension-norm-eq.md) | 50 | `result-track:6ea63ce370637457f3faace73de8b51a275465d17c85fdb2260f52ec745ada88` |
+| 2 | `theorem` | [exists_extension_norm_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachExtensionExtensionNamespacedSourceEdition2.lean/declarations/exists-extension-norm-eq-source-edition-2.md) | 77 | `result-track:dbc8cdba5702f279d2879068ad5e89847c2ae9899e413b79a7c5ad387547848b` |
+| 3 | `theorem` | [coord_norm'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachExtensionExtensionNamespacedSourceEdition2.lean/declarations/coord-norm.md) | 125 | `result-track:155b42534c00125ab077e618aaf993859618e6a5ba5b781ae5e7c87741dce605` |
+| 4 | `theorem` | [exists_dual_vector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachExtensionExtensionNamespacedSourceEdition2.lean/declarations/exists-dual-vector.md) | 132 | `result-track:2bda1db5c24a2329b61343106e2d6e345c05c0e8324d7b42153d656e19ebf688` |
+| 5 | `theorem` | [exists_dual_vector'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachExtensionExtensionNamespacedSourceEdition2.lean/declarations/exists-dual-vector-source-edition-2.md) | 146 | `result-track:85340baa6cc1b0091c6ff71b8675057890b8943e9f02081e43ef5d0069ed162f` |
+| 6 | `theorem` | [exists_dual_vector''](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachExtensionExtensionNamespacedSourceEdition2.lean/declarations/exists-dual-vector-source-edition-3.md) | 158 | `result-track:f62ee6f056d8ac293968c751c065dd181a4f0bc770190bfe48e995333749b9d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

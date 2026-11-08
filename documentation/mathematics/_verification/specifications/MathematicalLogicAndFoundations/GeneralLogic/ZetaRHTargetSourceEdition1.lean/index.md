@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZetaRHTargetSourceEdition1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZetaRHTargetSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZetaRHTargetSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZetaRHTargetSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [zeta_rh_target_has_conclusion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZetaRHTargetSourceEdition1.lean/declarations/zeta-rh-target-has-conclusion.md) | 19 | `result-track:60baf21c3591784b17aa33894dba540939c0d714ca3569daf27d96abe1256ee3` |
-| 2 | `theorem` | [h0_translation_matches_completed_zeta_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZetaRHTargetSourceEdition1.lean/declarations/h0-translation-matches-completed-zeta-if-supplied.md) | 24 | `result-track:c5953299365df09eae5d9a12fe70e371d4e8d569a078ec9bf179126b0303ecc8` |
-| 3 | `theorem` | [h0_translation_equivalence_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZetaRHTargetSourceEdition1.lean/declarations/h0-translation-equivalence-if-supplied.md) | 29 | `result-track:87ab8a82c7d4103cc431831e8b06170cf867872d7f4928f65864492f0189813c` |
+| 1 | `theorem` | [zeta_rh_target_has_conclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZetaRHTargetSourceEdition1.lean/declarations/zeta-rh-target-has-conclusion.md) | 19 | `result-track:60baf21c3591784b17aa33894dba540939c0d714ca3569daf27d96abe1256ee3` |
+| 2 | `theorem` | [h0_translation_matches_completed_zeta_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZetaRHTargetSourceEdition1.lean/declarations/h0-translation-matches-completed-zeta-if-supplied.md) | 24 | `result-track:c5953299365df09eae5d9a12fe70e371d4e8d569a078ec9bf179126b0303ecc8` |
+| 3 | `theorem` | [h0_translation_equivalence_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZetaRHTargetSourceEdition1.lean/declarations/h0-translation-equivalence-if-supplied.md) | 29 | `result-track:87ab8a82c7d4103cc431831e8b06170cf867872d7f4928f65864492f0189813c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

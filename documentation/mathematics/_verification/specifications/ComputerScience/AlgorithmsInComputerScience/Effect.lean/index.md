@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Effect.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Effect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Effect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Effect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Effect](../../../../../ComputerScience/AlgorithmsInComputerScience/Effect.lean/declarations/effect.md) | 13 | `declaration-track:61235655166f8609f04170ef987cbf4c2f4ca2e77e51b65e97bf2593bcf317b1` |
-| 2 | `structure` | [EffectProfile](../../../../../ComputerScience/AlgorithmsInComputerScience/Effect.lean/declarations/effectprofile.md) | 22 | `declaration-track:5a736dc5dea4d8204189aba261fe386337c26fa8470e28c1818cb2322ebf01e2` |
-| 3 | `def` | [EffectProfile.Refines](../../../../../ComputerScience/AlgorithmsInComputerScience/Effect.lean/declarations/effectprofile-refines.md) | 25 | `declaration-track:682bb18de8f66431dc8f251da550f826ec538ab808bc936a047be4db21700363` |
-| 4 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/Effect.lean/declarations/instance.md) | 29 | `declaration-track:53c739a3376882b9e196a3403d51922f31b6745bdb72d6949074307312182bef` |
-| 5 | `theorem` | [le_refl](../../../../../ComputerScience/AlgorithmsInComputerScience/Effect.lean/declarations/le-refl.md) | 34 | `result-track:8e00098bb1d3f6d9397c7ab113c869f041184c7f6264a802f12d4b969de87af0` |
-| 6 | `theorem` | [le_trans](../../../../../ComputerScience/AlgorithmsInComputerScience/Effect.lean/declarations/le-trans.md) | 38 | `result-track:b5bc603c24d5fb1a070df1db697b110540a973ef4e3659ba4f4b393f95e1e359` |
-| 7 | `def` | [meet](../../../../../ComputerScience/AlgorithmsInComputerScience/Effect.lean/declarations/meet.md) | 45 | `declaration-track:7ee8b52dfb779cc7c5b3f2c9ce83ebc3ed2f9f5dee2337a2b5b4a9c9087fc8ea` |
-| 8 | `theorem` | [meet_le_left](../../../../../ComputerScience/AlgorithmsInComputerScience/Effect.lean/declarations/meet-le-left.md) | 48 | `result-track:0e03788d77d8a68a7bb2787990c9a5ce3c75de73e07ea83179c3dd155f9fea05` |
-| 9 | `theorem` | [meet_le_right](../../../../../ComputerScience/AlgorithmsInComputerScience/Effect.lean/declarations/meet-le-right.md) | 52 | `result-track:5ed32775328e5725b6f2f9a5399cfaeadd00123c5b914f155f5edad5df8fadf1` |
+| 1 | `inductive` | [Effect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Effect.lean/declarations/effect.md) | 13 | `declaration-track:61235655166f8609f04170ef987cbf4c2f4ca2e77e51b65e97bf2593bcf317b1` |
+| 2 | `structure` | [EffectProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Effect.lean/declarations/effectprofile.md) | 22 | `declaration-track:5a736dc5dea4d8204189aba261fe386337c26fa8470e28c1818cb2322ebf01e2` |
+| 3 | `def` | [EffectProfile.Refines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Effect.lean/declarations/effectprofile-refines.md) | 25 | `declaration-track:682bb18de8f66431dc8f251da550f826ec538ab808bc936a047be4db21700363` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Effect.lean/declarations/instance.md) | 29 | `declaration-track:53c739a3376882b9e196a3403d51922f31b6745bdb72d6949074307312182bef` |
+| 5 | `theorem` | [le_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Effect.lean/declarations/le-refl.md) | 34 | `result-track:8e00098bb1d3f6d9397c7ab113c869f041184c7f6264a802f12d4b969de87af0` |
+| 6 | `theorem` | [le_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Effect.lean/declarations/le-trans.md) | 38 | `result-track:b5bc603c24d5fb1a070df1db697b110540a973ef4e3659ba4f4b393f95e1e359` |
+| 7 | `def` | [meet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Effect.lean/declarations/meet.md) | 45 | `declaration-track:7ee8b52dfb779cc7c5b3f2c9ce83ebc3ed2f9f5dee2337a2b5b4a9c9087fc8ea` |
+| 8 | `theorem` | [meet_le_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Effect.lean/declarations/meet-le-left.md) | 48 | `result-track:0e03788d77d8a68a7bb2787990c9a5ce3c75de73e07ea83179c3dd155f9fea05` |
+| 9 | `theorem` | [meet_le_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Effect.lean/declarations/meet-le-right.md) | 52 | `result-track:5ed32775328e5725b6f2f9a5399cfaeadd00123c5b914f155f5edad5df8fadf1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

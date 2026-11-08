@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatCartesianClosedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatCartesianClosedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatCartesianClosedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatCartesianClosedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatCartesianClosedPublic.lean/declarations/exp.md) | 42 | `declaration-track:d9e26c5778f041942112139a0a1433f5eaa15c6c71473b7a668366fc7845d6d7` |
-| 2 | `def` | [curryingIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatCartesianClosedPublic.lean/declarations/curryingiso.md) | 55 | `declaration-track:906eac06ac6bf06979ce66ebfe85e43769bfbab4dd2d6260c1da31daa1c1242e` |
-| 3 | `def` | [flippingIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatCartesianClosedPublic.lean/declarations/flippingiso.md) | 60 | `declaration-track:6ee736679e033cbe2f66f8a2ada370cc70ff9e1d209028a7c3e37855c4e3ec0f` |
-| 4 | `instance` | [closed](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatCartesianClosedPublic.lean/declarations/closed.md) | 70 | `declaration-track:5316528f31def552f00ccd86e3fe5adc5ee5f5fc455fe0c388eb2d93f98564b7` |
-| 5 | `instance` | [cartesianClosed](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatCartesianClosedPublic.lean/declarations/cartesianclosed.md) | 78 | `declaration-track:6c29334f04ae629218c6bcfcabc52cafe8d266dd6d453b2c05e0350f7a0736ee` |
-| 6 | `lemma` | [ihom_obj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatCartesianClosedPublic.lean/declarations/ihom-obj.md) | 82 | `result-track:2ec535fa58f4ff0a1eca8c38ed23c6c80e6e7ccbe12af0a0e3baa99d91165b3d` |
-| 7 | `lemma` | [ihom_map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatCartesianClosedPublic.lean/declarations/ihom-map.md) | 86 | `result-track:bb1f4cee47783d759b8110fbda9541de4795d4ff1cbaa10ebdb792e9fbe0ef82` |
+| 1 | `def` | [exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatCartesianClosedPublic.lean/declarations/exp.md) | 42 | `declaration-track:d9e26c5778f041942112139a0a1433f5eaa15c6c71473b7a668366fc7845d6d7` |
+| 2 | `def` | [curryingIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatCartesianClosedPublic.lean/declarations/curryingiso.md) | 55 | `declaration-track:906eac06ac6bf06979ce66ebfe85e43769bfbab4dd2d6260c1da31daa1c1242e` |
+| 3 | `def` | [flippingIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatCartesianClosedPublic.lean/declarations/flippingiso.md) | 60 | `declaration-track:6ee736679e033cbe2f66f8a2ada370cc70ff9e1d209028a7c3e37855c4e3ec0f` |
+| 4 | `instance` | [closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatCartesianClosedPublic.lean/declarations/closed.md) | 70 | `declaration-track:5316528f31def552f00ccd86e3fe5adc5ee5f5fc455fe0c388eb2d93f98564b7` |
+| 5 | `instance` | [cartesianClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatCartesianClosedPublic.lean/declarations/cartesianclosed.md) | 78 | `declaration-track:6c29334f04ae629218c6bcfcabc52cafe8d266dd6d453b2c05e0350f7a0736ee` |
+| 6 | `lemma` | [ihom_obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatCartesianClosedPublic.lean/declarations/ihom-obj.md) | 82 | `result-track:2ec535fa58f4ff0a1eca8c38ed23c6c80e6e7ccbe12af0a0e3baa99d91165b3d` |
+| 7 | `lemma` | [ihom_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatCartesianClosedPublic.lean/declarations/ihom-map.md) | 86 | `result-track:bb1f4cee47783d759b8110fbda9541de4795d4ff1cbaa10ebdb792e9fbe0ef82` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

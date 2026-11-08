@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Naturality.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Naturality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Naturality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Naturality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Natural](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Naturality.lean/declarations/natural.md) | 18 | `declaration-track:fe2fb2aecd19a5e329c8deb617c591a27f8309e00082d802a3b7465d146caede` |
-| 2 | `def` | [id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Naturality.lean/declarations/id.md) | 26 | `declaration-track:ddb347345f76f4bff968e6568abcb74e2edd1cc39cb03feef9297568713117eb` |
-| 3 | `def` | [comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Naturality.lean/declarations/comp.md) | 32 | `declaration-track:17ad588ba35c6d75f9b6187e499515000bc3cd43dd1740b466972865d8d5ebe5` |
-| 4 | `theorem` | [id_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Naturality.lean/declarations/id-hom.md) | 40 | `result-track:bdce24256a025d5a5da77e99b4354eef5a6cb2aae9d755025ca634a53867c7bd` |
-| 5 | `theorem` | [comp_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Naturality.lean/declarations/comp-hom.md) | 47 | `result-track:42c5ee780f89ddef0301039d92cc7135dea69868fa2cb1feb307d8319df9a05a` |
+| 1 | `structure` | [Natural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Naturality.lean/declarations/natural.md) | 18 | `declaration-track:fe2fb2aecd19a5e329c8deb617c591a27f8309e00082d802a3b7465d146caede` |
+| 2 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Naturality.lean/declarations/id.md) | 26 | `declaration-track:ddb347345f76f4bff968e6568abcb74e2edd1cc39cb03feef9297568713117eb` |
+| 3 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Naturality.lean/declarations/comp.md) | 32 | `declaration-track:17ad588ba35c6d75f9b6187e499515000bc3cd43dd1740b466972865d8d5ebe5` |
+| 4 | `theorem` | [id_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Naturality.lean/declarations/id-hom.md) | 40 | `result-track:bdce24256a025d5a5da77e99b4354eef5a6cb2aae9d755025ca634a53867c7bd` |
+| 5 | `theorem` | [comp_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Naturality.lean/declarations/comp-hom.md) | 47 | `result-track:42c5ee780f89ddef0301039d92cc7135dea69868fa2cb1feb307d8319df9a05a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

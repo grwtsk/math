@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DialecticaBasicNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DialecticaBasicNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DialecticaBasicNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DialecticaBasicNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Dial](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DialecticaBasicNamespacedPublic.lean/declarations/dial.md) | 64 | `declaration-track:db79987683f7f0760ea647a61dccc991428c1bcf28a4a913af1d31a98a6a8839` |
-| 2 | `structure` | [Hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DialecticaBasicNamespacedPublic.lean/declarations/hom.md) | 80 | `declaration-track:e529585daa46bed842013c1b89fd7169ddb179d39409bcce86f60bf134189f38` |
-| 3 | `theorem` | [comp_le_lemma](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DialecticaBasicNamespacedPublic.lean/declarations/comp-le-lemma.md) | 90 | `result-track:3c9ae0ac18b9a5e0368dda383596315769ac19c6a95e059dba98e87bcd5bdf49` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DialecticaBasicNamespacedPublic.lean/declarations/instance.md) | 99 | `declaration-track:a74048b5a278b87b3530cac2bdf63aa3a1fcc20a6533c33c40f9568d8983b818` |
-| 5 | `theorem` | [hom_ext](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DialecticaBasicNamespacedPublic.lean/declarations/hom-ext.md) | 116 | `result-track:864cddab862888d5098149067384d79a4670b1091f514ffb6b91f671863800fa` |
-| 6 | `def` | [isoMk](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DialecticaBasicNamespacedPublic.lean/declarations/isomk.md) | 123 | `declaration-track:d61f09f2ab3c76410b52668f16c2ac290b172eabc8e5d6b96fb1c7674f90c303` |
+| 1 | `structure` | [Dial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DialecticaBasicNamespacedPublic.lean/declarations/dial.md) | 64 | `declaration-track:db79987683f7f0760ea647a61dccc991428c1bcf28a4a913af1d31a98a6a8839` |
+| 2 | `structure` | [Hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DialecticaBasicNamespacedPublic.lean/declarations/hom.md) | 80 | `declaration-track:e529585daa46bed842013c1b89fd7169ddb179d39409bcce86f60bf134189f38` |
+| 3 | `theorem` | [comp_le_lemma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DialecticaBasicNamespacedPublic.lean/declarations/comp-le-lemma.md) | 90 | `result-track:3c9ae0ac18b9a5e0368dda383596315769ac19c6a95e059dba98e87bcd5bdf49` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DialecticaBasicNamespacedPublic.lean/declarations/instance.md) | 99 | `declaration-track:a74048b5a278b87b3530cac2bdf63aa3a1fcc20a6533c33c40f9568d8983b818` |
+| 5 | `theorem` | [hom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DialecticaBasicNamespacedPublic.lean/declarations/hom-ext.md) | 116 | `result-track:864cddab862888d5098149067384d79a4670b1091f514ffb6b91f671863800fa` |
+| 6 | `def` | [isoMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DialecticaBasicNamespacedPublic.lean/declarations/isomk.md) | 123 | `declaration-track:d61f09f2ab3c76410b52668f16c2ac290b172eabc8e5d6b96fb1c7674f90c303` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [smul_Ioo](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/declarations/smul-ioo.md) | 31 | `result-track:591661b81fa3fef2a9e5c46695a3956d52951eebec57341d9974ef1dc5f3afb9` |
-| 2 | `theorem` | [smul_Icc](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/declarations/smul-icc.md) | 32 | `result-track:feb469e1a1b0a463122fd0854f2b20ba0a9114a537fc685d4bd7794d7f12dcfb` |
-| 3 | `theorem` | [smul_Ico](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/declarations/smul-ico.md) | 33 | `result-track:fa16dfb017e5fbd268db29a74e8450d1816eb3094d8289ba93066841c3a04875` |
-| 4 | `theorem` | [smul_Ioc](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/declarations/smul-ioc.md) | 34 | `result-track:adc3c2b79e8908e34dab07d66ccc8059ad4f8b4d0fd50ee94c826944234868e8` |
-| 5 | `theorem` | [smul_Ioi](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/declarations/smul-ioi.md) | 35 | `result-track:0ea5e1a53b2eb5ece0aed6d432257152b0bdb8d761eec9cf6ca00dfc037098c8` |
-| 6 | `theorem` | [smul_Iio](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/declarations/smul-iio.md) | 36 | `result-track:5db6f5150d436fb4f2ea689de3a5eccc132dae4a82c7bcaee0b74358f42a393f` |
-| 7 | `theorem` | [smul_Ici](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/declarations/smul-ici.md) | 37 | `result-track:54814724c4d636c9885b029210719ad9b87a12d85cdf921bbe653dd85d9d40d2` |
-| 8 | `theorem` | [smul_Iic](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/declarations/smul-iic.md) | 38 | `result-track:72f6f8a59f142d98fa36d6798ebc5f4dabc5a929afc90ad760fb53c6090e2521` |
+| 1 | `theorem` | [smul_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/declarations/smul-ioo.md) | 31 | `result-track:591661b81fa3fef2a9e5c46695a3956d52951eebec57341d9974ef1dc5f3afb9` |
+| 2 | `theorem` | [smul_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/declarations/smul-icc.md) | 32 | `result-track:feb469e1a1b0a463122fd0854f2b20ba0a9114a537fc685d4bd7794d7f12dcfb` |
+| 3 | `theorem` | [smul_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/declarations/smul-ico.md) | 33 | `result-track:fa16dfb017e5fbd268db29a74e8450d1816eb3094d8289ba93066841c3a04875` |
+| 4 | `theorem` | [smul_Ioc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/declarations/smul-ioc.md) | 34 | `result-track:adc3c2b79e8908e34dab07d66ccc8059ad4f8b4d0fd50ee94c826944234868e8` |
+| 5 | `theorem` | [smul_Ioi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/declarations/smul-ioi.md) | 35 | `result-track:0ea5e1a53b2eb5ece0aed6d432257152b0bdb8d761eec9cf6ca00dfc037098c8` |
+| 6 | `theorem` | [smul_Iio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/declarations/smul-iio.md) | 36 | `result-track:5db6f5150d436fb4f2ea689de3a5eccc132dae4a82c7bcaee0b74358f42a393f` |
+| 7 | `theorem` | [smul_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/declarations/smul-ici.md) | 37 | `result-track:54814724c4d636c9885b029210719ad9b87a12d85cdf921bbe653dd85d9d40d2` |
+| 8 | `theorem` | [smul_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FieldPointwisePublic.lean/declarations/smul-iic.md) | 38 | `result-track:72f6f8a59f142d98fa36d6798ebc5f4dabc5a929afc90ad760fb53c6090e2521` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

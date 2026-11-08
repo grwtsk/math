@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [applyMulAction](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/declarations/applymulaction-source-edition-2.md) | 20 | `declaration-track:d810af46a2cf0ee8049ca11e3a93f6bd9040570e6f4ea84d072cbbed29925355` |
-| 2 | `lemma` | [smul_def](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/declarations/smul-def.md) | 25 | `result-track:2c66add0a6db22c19668b4437246854f6f495504696d6874b92339c50d35bd9f` |
-| 3 | `instance` | [apply_faithfulSMul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/declarations/apply-faithfulsmul-source-edition-2.md) | 27 | `declaration-track:dac28cc9eee818db78f3b6c0fa58d2765e09ef854efbc375ea32c39c60b77cb4` |
-| 4 | `instance` | [applyMulAction](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/declarations/applymulaction-source-edition-3.md) | 35 | `declaration-track:ef5707760cc961320e3259c95576bea9208888f3e0aec121b73910648ff53fd8` |
-| 5 | `lemma` | [smul_def](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/declarations/smul-def-source-edition-2.md) | 40 | `result-track:3468e29d5eaf291df82c59541b724320dddd79bb23e20b98f6bc7d2341e4a886` |
-| 6 | `instance` | [apply_faithfulSMul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/declarations/apply-faithfulsmul.md) | 42 | `declaration-track:7376acafa37fef9bfd6b66a938d92cd097f741cc64ee3e2e7525a7be3807c1b5` |
-| 7 | `instance` | [applyMulAction](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/declarations/applymulaction.md) | 50 | `declaration-track:3fd5b077f0e9c2a4777af4cb9a4a116005ea8aecb88a5c2c456f9f0830f3cab6` |
-| 8 | `lemma` | [smul_def](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/declarations/smul-def-source-edition-3.md) | 55 | `result-track:9c132f3bd6c6f914a2dea160843dd54e348921c4378ecf1c8b9ca06eb6975f34` |
-| 9 | `instance` | [apply_faithfulSMul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/declarations/apply-faithfulsmul-source-edition-3.md) | 57 | `declaration-track:e73c612bc9f634f6b7c3360b0871926d525a0f5e57ec27972c6dd0602867c3c2` |
+| 1 | `instance` | [applyMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/declarations/applymulaction-source-edition-2.md) | 20 | `declaration-track:d810af46a2cf0ee8049ca11e3a93f6bd9040570e6f4ea84d072cbbed29925355` |
+| 2 | `lemma` | [smul_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/declarations/smul-def.md) | 25 | `result-track:2c66add0a6db22c19668b4437246854f6f495504696d6874b92339c50d35bd9f` |
+| 3 | `instance` | [apply_faithfulSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/declarations/apply-faithfulsmul-source-edition-2.md) | 27 | `declaration-track:dac28cc9eee818db78f3b6c0fa58d2765e09ef854efbc375ea32c39c60b77cb4` |
+| 4 | `instance` | [applyMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/declarations/applymulaction-source-edition-3.md) | 35 | `declaration-track:ef5707760cc961320e3259c95576bea9208888f3e0aec121b73910648ff53fd8` |
+| 5 | `lemma` | [smul_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/declarations/smul-def-source-edition-2.md) | 40 | `result-track:3468e29d5eaf291df82c59541b724320dddd79bb23e20b98f6bc7d2341e4a886` |
+| 6 | `instance` | [apply_faithfulSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/declarations/apply-faithfulsmul.md) | 42 | `declaration-track:7376acafa37fef9bfd6b66a938d92cd097f741cc64ee3e2e7525a7be3807c1b5` |
+| 7 | `instance` | [applyMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/declarations/applymulaction.md) | 50 | `declaration-track:3fd5b077f0e9c2a4777af4cb9a4a116005ea8aecb88a5c2c456f9f0830f3cab6` |
+| 8 | `lemma` | [smul_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/declarations/smul-def-source-edition-3.md) | 55 | `result-track:9c132f3bd6c6f914a2dea160843dd54e348921c4378ecf1c8b9ca06eb6975f34` |
+| 9 | `instance` | [apply_faithfulSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/End.lean/declarations/apply-faithfulsmul-source-edition-3.md) | 57 | `declaration-track:e73c612bc9f634f6b7c3360b0871926d525a0f5e57ec27972c6dd0602867c3c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

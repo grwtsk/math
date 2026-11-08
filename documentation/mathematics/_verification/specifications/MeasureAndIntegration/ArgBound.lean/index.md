@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ArgBound.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ArgBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ArgBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ArgBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,14 +63,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [abs_im_integral_logDeriv_le_pi](../../../../MeasureAndIntegration/ArgBound.lean/declarations/abs-im-integral-logderiv-le-pi.md) | 33 | `result-track:b5b5b9f46e2108ae0c6b1001777e3e3ba5a6c200d40d2b292d813c5662a184ed` |
-| 2 | `lemma` | [hasDerivAt_vertical](../../../../MeasureAndIntegration/ArgBound.lean/declarations/hasderivat-vertical.md) | 63 | `result-track:50978ffd2b34c168225ab22aa991fa07b1797554d53fff6f9f0f1eac7824932b` |
-| 3 | `lemma` | [hasDerivAt_horizontal](../../../../MeasureAndIntegration/ArgBound.lean/declarations/hasderivat-horizontal.md) | 68 | `result-track:b8fd05197674ea03ae9788b67854e07d50e1ef9bec01bc696f7b027b32349042` |
-| 4 | `theorem` | [abs_im_integral_logDeriv_vertical_le_pi](../../../../MeasureAndIntegration/ArgBound.lean/declarations/abs-im-integral-logderiv-vertical-le-pi.md) | 73 | `result-track:dff487fbbea61cbc0b723bcce8e650bb5316d8391faf6b7601c6b578c87087d6` |
-| 5 | `theorem` | [abs_im_integral_logDeriv_horizontal_le_pi](../../../../MeasureAndIntegration/ArgBound.lean/declarations/abs-im-integral-logderiv-horizontal-le-pi.md) | 95 | `result-track:c928f01b08a7f1761ce26d0d9783a231c9c03b9cb9aa01d6c09a0c0493c7347f` |
-| 6 | `lemma` | [continuousOn_inv_sub](../../../../MeasureAndIntegration/ArgBound.lean/declarations/continuouson-inv-sub.md) | 118 | `result-track:4bdc987190f3bc0783bdd51b9b36caf00c81662eba4af11863e85920fb5d66d9` |
-| 7 | `theorem` | [intervalIntegrable_inv_sub](../../../../MeasureAndIntegration/ArgBound.lean/declarations/intervalintegrable-inv-sub.md) | 124 | `result-track:bf9c61eb591eb1c9cd74c1ec16f0fc184e168ada80ab6e98133bf9cbc4a6e6f1` |
-| 8 | `theorem` | [abs_im_integral_inv_sub_le_pi](../../../../MeasureAndIntegration/ArgBound.lean/declarations/abs-im-integral-inv-sub-le-pi.md) | 129 | `result-track:227835d4e516932bfe1a788ee6417fffb9633eca378ee5ff09ab9a4c15677690` |
+| 1 | `theorem` | [abs_im_integral_logDeriv_le_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ArgBound.lean/declarations/abs-im-integral-logderiv-le-pi.md) | 33 | `result-track:b5b5b9f46e2108ae0c6b1001777e3e3ba5a6c200d40d2b292d813c5662a184ed` |
+| 2 | `lemma` | [hasDerivAt_vertical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ArgBound.lean/declarations/hasderivat-vertical.md) | 63 | `result-track:50978ffd2b34c168225ab22aa991fa07b1797554d53fff6f9f0f1eac7824932b` |
+| 3 | `lemma` | [hasDerivAt_horizontal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ArgBound.lean/declarations/hasderivat-horizontal.md) | 68 | `result-track:b8fd05197674ea03ae9788b67854e07d50e1ef9bec01bc696f7b027b32349042` |
+| 4 | `theorem` | [abs_im_integral_logDeriv_vertical_le_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ArgBound.lean/declarations/abs-im-integral-logderiv-vertical-le-pi.md) | 73 | `result-track:dff487fbbea61cbc0b723bcce8e650bb5316d8391faf6b7601c6b578c87087d6` |
+| 5 | `theorem` | [abs_im_integral_logDeriv_horizontal_le_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ArgBound.lean/declarations/abs-im-integral-logderiv-horizontal-le-pi.md) | 95 | `result-track:c928f01b08a7f1761ce26d0d9783a231c9c03b9cb9aa01d6c09a0c0493c7347f` |
+| 6 | `lemma` | [continuousOn_inv_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ArgBound.lean/declarations/continuouson-inv-sub.md) | 118 | `result-track:4bdc987190f3bc0783bdd51b9b36caf00c81662eba4af11863e85920fb5d66d9` |
+| 7 | `theorem` | [intervalIntegrable_inv_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ArgBound.lean/declarations/intervalintegrable-inv-sub.md) | 124 | `result-track:bf9c61eb591eb1c9cd74c1ec16f0fc184e168ada80ab6e98133bf9cbc4a6e6f1` |
+| 8 | `theorem` | [abs_im_integral_inv_sub_le_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ArgBound.lean/declarations/abs-im-integral-inv-sub-le-pi.md) | 129 | `result-track:227835d4e516932bfe1a788ee6417fffb9633eca378ee5ff09ab9a4c15677690` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

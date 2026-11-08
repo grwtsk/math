@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MeasureTheory.Integral.MoebiusCumulativeEnergy`](../../../../MeasureAndIntegration/MoebiusCumulativeEnergyHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.MeasureTheory.Integral.MoebiusCumulativeEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusCumulativeEnergyHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [localEnergy](../../../../MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/localenergy.md) | 16 | `declaration-track:7f843ce1cefa0bd59d14865a28668acefec3293ad44f4cf8f390fedee3c7c04c` |
-| 2 | `lemma` | [localEnergy_nonnegative](../../../../MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/localenergy-nonnegative.md) | 21 | `result-track:4dd5167ab7621a419ea044a69e0647f6b80ad12a71980dcce2e6bb644c983426` |
-| 3 | `lemma` | [localEnergy_common_cutoff](../../../../MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/localenergy-common-cutoff.md) | 24 | `result-track:61cd2684020cbfc2dcea07a4accbcd2acf20d947c603c89ed7bf9c6d1b2cc188` |
-| 4 | `theorem` | [energy_step](../../../../MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/energy-step.md) | 31 | `result-track:fbcf0257d17567a2f5d57ac2b1e10b6e5fd2ad8824e31e806a1641f134745bcc` |
-| 5 | `theorem` | [backward_telescope](../../../../MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/backward-telescope.md) | 46 | `result-track:8cbe9d1b84c8e8682ce9322017ec4373538c123d7d8101fa1a8bd631dde2b6e1` |
-| 6 | `lemma` | [floor_remainder_bounds](../../../../MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/floor-remainder-bounds.md) | 68 | `result-track:b1b88d1a6502d8bdb650627f7c9938e2dbb68cea60fe51a74a51b4251c7bd237` |
-| 7 | `theorem` | [floor_telescope](../../../../MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/floor-telescope.md) | 77 | `result-track:9b3aaa714a8e5e4aa0bb6a8c4f437fbe5a9cf99bc3c3054b9c3ed045ca381cfd` |
-| 8 | `lemma` | [compact_remainder_bound](../../../../MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/compact-remainder-bound.md) | 82 | `result-track:1c89c9cf53ba36924bd5e7564a059a7c44184b686a2443d695f90524f8b6931d` |
-| 9 | `theorem` | [grid_telescope](../../../../MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/grid-telescope.md) | 87 | `result-track:58e90a5376929cbd426a4f7db5a5c63af6804110cc8e51f4aae413878b5bb820` |
-| 10 | `lemma` | [localEnergy_le_total](../../../../MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/localenergy-le-total.md) | 102 | `result-track:0eba33902de8379d796ad0073546242c82f2d2f5f55e208834826f9081ce6c9e` |
-| 11 | `theorem` | [window_bound_implies_energy_polynomial](../../../../MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/window-bound-implies-energy-polynomial.md) | 109 | `result-track:af67e6795027061ac52efe42f10cad8d29953e45992ef2bf8b65d8926a5dd8b2` |
+| 1 | `def` | [localEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/localenergy.md) | 16 | `declaration-track:7f843ce1cefa0bd59d14865a28668acefec3293ad44f4cf8f390fedee3c7c04c` |
+| 2 | `lemma` | [localEnergy_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/localenergy-nonnegative.md) | 21 | `result-track:4dd5167ab7621a419ea044a69e0647f6b80ad12a71980dcce2e6bb644c983426` |
+| 3 | `lemma` | [localEnergy_common_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/localenergy-common-cutoff.md) | 24 | `result-track:61cd2684020cbfc2dcea07a4accbcd2acf20d947c603c89ed7bf9c6d1b2cc188` |
+| 4 | `theorem` | [energy_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/energy-step.md) | 31 | `result-track:fbcf0257d17567a2f5d57ac2b1e10b6e5fd2ad8824e31e806a1641f134745bcc` |
+| 5 | `theorem` | [backward_telescope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/backward-telescope.md) | 46 | `result-track:8cbe9d1b84c8e8682ce9322017ec4373538c123d7d8101fa1a8bd631dde2b6e1` |
+| 6 | `lemma` | [floor_remainder_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/floor-remainder-bounds.md) | 68 | `result-track:b1b88d1a6502d8bdb650627f7c9938e2dbb68cea60fe51a74a51b4251c7bd237` |
+| 7 | `theorem` | [floor_telescope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/floor-telescope.md) | 77 | `result-track:9b3aaa714a8e5e4aa0bb6a8c4f437fbe5a9cf99bc3c3054b9c3ed045ca381cfd` |
+| 8 | `lemma` | [compact_remainder_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/compact-remainder-bound.md) | 82 | `result-track:1c89c9cf53ba36924bd5e7564a059a7c44184b686a2443d695f90524f8b6931d` |
+| 9 | `theorem` | [grid_telescope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/grid-telescope.md) | 87 | `result-track:58e90a5376929cbd426a4f7db5a5c63af6804110cc8e51f4aae413878b5bb820` |
+| 10 | `lemma` | [localEnergy_le_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/localenergy-le-total.md) | 102 | `result-track:0eba33902de8379d796ad0073546242c82f2d2f5f55e208834826f9081ce6c9e` |
+| 11 | `theorem` | [window_bound_implies_energy_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedWidthEnergyTelescopeHistoricalSourceEdition2.lean/declarations/window-bound-implies-energy-polynomial.md) | 109 | `result-track:af67e6795027061ac52efe42f10cad8d29953e45992ef2bf8b65d8926a5dd8b2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

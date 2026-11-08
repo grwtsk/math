@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/DualNumberAligned.lean/index.md) · [Full source](../../../../FunctionalAnalysis/DualNumberAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DualNumberAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DualNumberAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exp_eps](../../../../FunctionalAnalysis/DualNumberAligned.lean/declarations/exp-eps.md) | 34 | `result-track:e6a6d4cf5fc9076a55c40ab239716ab483dbf6ba5947e964aadf934940b136fd` |
-| 2 | `theorem` | [exp_smul_eps](../../../../FunctionalAnalysis/DualNumberAligned.lean/declarations/exp-smul-eps.md) | 39 | `result-track:6f5bd9d6e74245206ca09cda65f41e915667d77884df1c7d78b495a47ea9b1b1` |
+| 1 | `theorem` | [exp_eps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DualNumberAligned.lean/declarations/exp-eps.md) | 34 | `result-track:e6a6d4cf5fc9076a55c40ab239716ab483dbf6ba5947e964aadf934940b136fd` |
+| 2 | `theorem` | [exp_smul_eps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DualNumberAligned.lean/declarations/exp-smul-eps.md) | 39 | `result-track:6f5bd9d6e74245206ca09cda65f41e915667d77884df1c7d78b495a47ea9b1b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FrozenSource.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FrozenSource.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FrozenSource.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FrozenSource.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualError_intervalIntegrable](../../../../MeasureAndIntegration/FrozenSource.lean/declarations/actualerror-intervalintegrable.md) | 27 | `result-track:443d3a33f111ff1a6746061a8ccd948546143c14bf99d7ec0353e4fd8f54aafb` |
-| 2 | `theorem` | [exp_half_mass_le](../../../../MeasureAndIntegration/FrozenSource.lean/declarations/exp-half-mass-le.md) | 34 | `result-track:2b4a31a259aa631d84711b24c9486da617186c506ef3fdbb5e5909e4ddc8ee7c` |
-| 3 | `theorem` | [actualEarlyCriticalErrorCenter_abs_le](../../../../MeasureAndIntegration/FrozenSource.lean/declarations/actualearlycriticalerrorcenter-abs-le.md) | 46 | `result-track:f7a5cd3adc72ca3353a9d7d0fed8eaace47e81180f77ac8d62e72fb5b1e4c952` |
-| 4 | `theorem` | [actualMovingEarlyNinthNormalizedBudget_le](../../../../MeasureAndIntegration/FrozenSource.lean/declarations/actualmovingearlyninthnormalizedbudget-le.md) | 71 | `result-track:96fa0cb3a0e3c7f62728737bd0eb97fadc197dd09cd91c243669eac403043964` |
-| 5 | `theorem` | [actualNinthNormalizedCriticalCovariance_Pnt_budget](../../../../MeasureAndIntegration/FrozenSource.lean/declarations/actualninthnormalizedcriticalcovariance-pnt-budget.md) | 107 | `result-track:99f9d695800eb508093bc7a024d47255535bd283539bad94ada11ba2cb276854` |
-| 6 | `theorem` | [polynomial_exp_le_stretched](../../../../MeasureAndIntegration/FrozenSource.lean/declarations/polynomial-exp-le-stretched.md) | 132 | `result-track:47c4e6e981082940c7e413a5a3d0fdded90c4ed247dfb27278f9148d3c92a937` |
-| 7 | `theorem` | [actualNinthNormalizedCriticalCovariance_Pnt_isBigO](../../../../MeasureAndIntegration/FrozenSource.lean/declarations/actualninthnormalizedcriticalcovariance-pnt-isbigo.md) | 164 | `result-track:b2657e6874f6eb66d8f0fa929f5d81a948e781f069605cd31576095c68bf99e9` |
-| 8 | `theorem` | [actualCriticalErrorCovariance_NinthPnt_isBigO](../../../../MeasureAndIntegration/FrozenSource.lean/declarations/actualcriticalerrorcovariance-ninthpnt-isbigo.md) | 192 | `result-track:52f2a14d162a25847fea428854e07a38e32dd51bd6ff3f7093fd04bd0a091c30` |
+| 1 | `theorem` | [actualError_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FrozenSource.lean/declarations/actualerror-intervalintegrable.md) | 27 | `result-track:443d3a33f111ff1a6746061a8ccd948546143c14bf99d7ec0353e4fd8f54aafb` |
+| 2 | `theorem` | [exp_half_mass_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FrozenSource.lean/declarations/exp-half-mass-le.md) | 34 | `result-track:2b4a31a259aa631d84711b24c9486da617186c506ef3fdbb5e5909e4ddc8ee7c` |
+| 3 | `theorem` | [actualEarlyCriticalErrorCenter_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FrozenSource.lean/declarations/actualearlycriticalerrorcenter-abs-le.md) | 46 | `result-track:f7a5cd3adc72ca3353a9d7d0fed8eaace47e81180f77ac8d62e72fb5b1e4c952` |
+| 4 | `theorem` | [actualMovingEarlyNinthNormalizedBudget_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FrozenSource.lean/declarations/actualmovingearlyninthnormalizedbudget-le.md) | 71 | `result-track:96fa0cb3a0e3c7f62728737bd0eb97fadc197dd09cd91c243669eac403043964` |
+| 5 | `theorem` | [actualNinthNormalizedCriticalCovariance_Pnt_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FrozenSource.lean/declarations/actualninthnormalizedcriticalcovariance-pnt-budget.md) | 107 | `result-track:99f9d695800eb508093bc7a024d47255535bd283539bad94ada11ba2cb276854` |
+| 6 | `theorem` | [polynomial_exp_le_stretched](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FrozenSource.lean/declarations/polynomial-exp-le-stretched.md) | 132 | `result-track:47c4e6e981082940c7e413a5a3d0fdded90c4ed247dfb27278f9148d3c92a937` |
+| 7 | `theorem` | [actualNinthNormalizedCriticalCovariance_Pnt_isBigO](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FrozenSource.lean/declarations/actualninthnormalizedcriticalcovariance-pnt-isbigo.md) | 164 | `result-track:b2657e6874f6eb66d8f0fa929f5d81a948e781f069605cd31576095c68bf99e9` |
+| 8 | `theorem` | [actualCriticalErrorCovariance_NinthPnt_isBigO](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FrozenSource.lean/declarations/actualcriticalerrorcovariance-ninthpnt-isbigo.md) | 192 | `result-track:52f2a14d162a25847fea428854e07a38e32dd51bd6ff3f7093fd04bd0a091c30` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

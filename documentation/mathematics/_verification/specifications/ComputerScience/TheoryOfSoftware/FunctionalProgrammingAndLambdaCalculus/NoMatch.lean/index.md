@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NoMatch.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NoMatch.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NoMatch.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NoMatch.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [elabNoMatch'](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NoMatch.lean/declarations/elabnomatch.md) | 30 | `declaration-track:7dacd8117cf7530065d44733b8c0177e662b8731515c45f5743423bc57c62ef0` |
-| 2 | `elab` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NoMatch.lean/declarations/elab.md) | 49 | `declaration-track:5ce7a31952f1fb130546e9edfd4a06dcd45a79f9800bb52464a2c4cb600a902f` |
-| 3 | `macro` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NoMatch.lean/declarations/macro-source-edition-2.md) | 56 | `declaration-track:3ef4bd69b61b79eb603b2d172064e4a88823d9d329cc2f4267c66e925516f079` |
-| 4 | `macro` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NoMatch.lean/declarations/macro.md) | 58 | `declaration-track:2a1f9eb50124d6c977a2a585975c45923535c92c6e85aa32457598111b81d65b` |
-| 5 | `macro` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NoMatch.lean/declarations/macro-source-edition-3.md) | 65 | `declaration-track:c0d2a61dddda007c3d8b09f47333b536da1ee8b830d8f23b90f53800d32511d2` |
+| 1 | `def` | [elabNoMatch'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NoMatch.lean/declarations/elabnomatch.md) | 30 | `declaration-track:7dacd8117cf7530065d44733b8c0177e662b8731515c45f5743423bc57c62ef0` |
+| 2 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NoMatch.lean/declarations/elab.md) | 49 | `declaration-track:5ce7a31952f1fb130546e9edfd4a06dcd45a79f9800bb52464a2c4cb600a902f` |
+| 3 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NoMatch.lean/declarations/macro-source-edition-2.md) | 56 | `declaration-track:3ef4bd69b61b79eb603b2d172064e4a88823d9d329cc2f4267c66e925516f079` |
+| 4 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NoMatch.lean/declarations/macro.md) | 58 | `declaration-track:2a1f9eb50124d6c977a2a585975c45923535c92c6e85aa32457598111b81d65b` |
+| 5 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NoMatch.lean/declarations/macro-source-edition-3.md) | 65 | `declaration-track:c0d2a61dddda007c3d8b09f47333b536da1ee8b830d8f23b90f53800d32511d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

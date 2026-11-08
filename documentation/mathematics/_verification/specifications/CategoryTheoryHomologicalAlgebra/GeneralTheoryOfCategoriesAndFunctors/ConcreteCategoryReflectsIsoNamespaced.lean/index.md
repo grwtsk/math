@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryReflectsIsoNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryReflectsIsoNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryReflectsIsoNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryReflectsIsoNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryReflectsIsoNamespaced.lean/declarations/instance.md) | 27 | `declaration-track:87752ac74335e8ff3cd7e62840fdb6ea3298c828825589aa6fcfd0c208f5dc3e` |
-| 2 | `theorem` | [reflectsIsomorphisms_forget₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryReflectsIsoNamespaced.lean/declarations/reflectsisomorphisms-forget.md) | 37 | `result-track:e3d0eeb429feefb16c332821f03308ec1d62d6349e55910f499a146209d4917a` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryReflectsIsoNamespaced.lean/declarations/instance.md) | 27 | `declaration-track:87752ac74335e8ff3cd7e62840fdb6ea3298c828825589aa6fcfd0c208f5dc3e` |
+| 2 | `theorem` | [reflectsIsomorphisms_forget₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryReflectsIsoNamespaced.lean/declarations/reflectsisomorphisms-forget.md) | 37 | `result-track:e3d0eeb429feefb16c332821f03308ec1d62d6349e55910f499a146209d4917a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

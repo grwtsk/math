@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChiNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,11 +62,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isNontrivialZeroL_of_mem_closedBall](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChiNamespaced.lean/declarations/isnontrivialzerol-of-mem-closedball.md) | 43 | `result-track:fade8b314cdcc6ab86850795edeaf5ac1cb5244064123bab2ad289cab46f6832` |
-| 2 | `lemma` | [sum_mult_six_windows_L](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChiNamespaced.lean/declarations/sum-mult-six-windows-l.md) | 55 | `result-track:8a86e8c038bf5bd27229c3037326435e719f9b6611c219540d1142300dc48365` |
-| 3 | `lemma` | [card_le_sum_mult_L](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChiNamespaced.lean/declarations/card-le-sum-mult-l.md) | 101 | `result-track:73b44e726499d46557263a70ebee0cc0ad3ef43cce2323caf3e19ed928dbdea2` |
-| 4 | `theorem` | [good_heights_chi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChiNamespaced.lean/declarations/good-heights-chi.md) | 111 | `result-track:a4c8cb66d02a40fac3e6bf2bdeffa022cb7f8dba365e558c9cc0d71ffc45e6f1` |
-| 5 | `theorem` | [EF_zero_sum_summable_chi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChiNamespaced.lean/declarations/ef-zero-sum-summable-chi.md) | 297 | `result-track:e6b91b0a846eb486c34d778d6ae5aef7c940e16dd720b126201d156b2b02cf1b` |
+| 1 | `lemma` | [isNontrivialZeroL_of_mem_closedBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChiNamespaced.lean/declarations/isnontrivialzerol-of-mem-closedball.md) | 43 | `result-track:fade8b314cdcc6ab86850795edeaf5ac1cb5244064123bab2ad289cab46f6832` |
+| 2 | `lemma` | [sum_mult_six_windows_L](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChiNamespaced.lean/declarations/sum-mult-six-windows-l.md) | 55 | `result-track:8a86e8c038bf5bd27229c3037326435e719f9b6611c219540d1142300dc48365` |
+| 3 | `lemma` | [card_le_sum_mult_L](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChiNamespaced.lean/declarations/card-le-sum-mult-l.md) | 101 | `result-track:73b44e726499d46557263a70ebee0cc0ad3ef43cce2323caf3e19ed928dbdea2` |
+| 4 | `theorem` | [good_heights_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChiNamespaced.lean/declarations/good-heights-chi.md) | 111 | `result-track:a4c8cb66d02a40fac3e6bf2bdeffa022cb7f8dba365e558c9cc0d71ffc45e6f1` |
+| 5 | `theorem` | [EF_zero_sum_summable_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChiNamespaced.lean/declarations/ef-zero-sum-summable-chi.md) | 297 | `result-track:e6b91b0a846eb486c34d778d6ae5aef7c940e16dd720b126201d156b2b02cf1b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

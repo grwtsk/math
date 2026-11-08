@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCompletion.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCompletion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCompletion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCompletion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCompletion.lean/declarations/instance-source-edition-2.md) | 29 | `declaration-track:6e12d36585c1b2dc98f8d79b09614304f9c18926a6e3f64f37267a41d0040cf6` |
-| 2 | `theorem` | [norm_coe](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCompletion.lean/declarations/norm-coe.md) | 33 | `result-track:91c593ec23ea78ed68196315b1efcecaa66329ab9685a8b1d5adcacc5cb27f95` |
-| 3 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCompletion.lean/declarations/instance.md) | 36 | `declaration-track:443520a1dcacadf6b710a29b873bf03f7cbe83e1c0802cba2c091ea7d92e20cb` |
-| 4 | `theorem` | [nnnorm_coe](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCompletion.lean/declarations/nnnorm-coe.md) | 44 | `result-track:d227cb255c7da2cb9a7696ff61616e0695c27398d6bddab39114833618970127` |
-| 5 | `lemma` | [enorm_coe](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCompletion.lean/declarations/enorm-coe.md) | 48 | `result-track:1a4aeca1b6f5f8e2f113c065d00b55630bc3be02ce8b5a0e7e5f17bd24d2ba4e` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCompletion.lean/declarations/instance-source-edition-2.md) | 29 | `declaration-track:6e12d36585c1b2dc98f8d79b09614304f9c18926a6e3f64f37267a41d0040cf6` |
+| 2 | `theorem` | [norm_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCompletion.lean/declarations/norm-coe.md) | 33 | `result-track:91c593ec23ea78ed68196315b1efcecaa66329ab9685a8b1d5adcacc5cb27f95` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCompletion.lean/declarations/instance.md) | 36 | `declaration-track:443520a1dcacadf6b710a29b873bf03f7cbe83e1c0802cba2c091ea7d92e20cb` |
+| 4 | `theorem` | [nnnorm_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCompletion.lean/declarations/nnnorm-coe.md) | 44 | `result-track:d227cb255c7da2cb9a7696ff61616e0695c27398d6bddab39114833618970127` |
+| 5 | `lemma` | [enorm_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCompletion.lean/declarations/enorm-coe.md) | 48 | `result-track:1a4aeca1b6f5f8e2f113c065d00b55630bc3be02ce8b5a0e7e5f17bd24d2ba4e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

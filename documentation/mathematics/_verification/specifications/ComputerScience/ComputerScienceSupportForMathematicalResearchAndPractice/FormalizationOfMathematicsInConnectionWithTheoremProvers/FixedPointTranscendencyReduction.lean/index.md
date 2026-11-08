@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedPointTranscendencyReduction.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedPointTranscendencyReduction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedPointTranscendencyReduction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedPointTranscendencyReduction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rh_fixed_point_transcendency_if_supplied](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedPointTranscendencyReduction.lean/declarations/rh-fixed-point-transcendency-if-supplied.md) | 19 | `result-track:13b8d99ab9981848f8a8b3e130b04c00b09952c494a954057689ac151b967a1b` |
-| 2 | `theorem` | [rh_offcritical_obstruction_if_supplied](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedPointTranscendencyReduction.lean/declarations/rh-offcritical-obstruction-if-supplied.md) | 24 | `result-track:8a883991851fcbbfbac754ccc875c7fa22055f32162a3e2faea1ec949b50eea8` |
+| 1 | `theorem` | [rh_fixed_point_transcendency_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedPointTranscendencyReduction.lean/declarations/rh-fixed-point-transcendency-if-supplied.md) | 19 | `result-track:13b8d99ab9981848f8a8b3e130b04c00b09952c494a954057689ac151b967a1b` |
+| 2 | `theorem` | [rh_offcritical_obstruction_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedPointTranscendencyReduction.lean/declarations/rh-offcritical-obstruction-if-supplied.md) | 24 | `result-track:8a883991851fcbbfbac754ccc875c7fa22055f32162a3e2faea1ec949b50eea8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

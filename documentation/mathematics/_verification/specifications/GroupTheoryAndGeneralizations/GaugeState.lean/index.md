@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GaugeState.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GaugeState.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaugeState.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaugeState.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.OrderedProductGauge`](../../../../GroupTheoryAndGeneralizations/OrderedProductGauge.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.LinearAlgebra.CocycleProduct`](../../../../GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Algebra.OrderedProductGauge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProductGauge.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.CocycleProduct`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [gaugeState](../../../../GroupTheoryAndGeneralizations/GaugeState.lean/declarations/gaugestate.md) | 53 | `declaration-track:0b6cae039ade9d9993bc0f14bbcdd835746aeffbbf52a7836d84d9d185c8f6c3` |
-| 2 | `theorem` | [gaugeState_step_iff](../../../../GroupTheoryAndGeneralizations/GaugeState.lean/declarations/gaugestate-step-iff.md) | 60 | `result-track:2344982797bcad372c80f3f79e2fe16efe87fc247a3910cbbd9ac957ca8df697` |
+| 1 | `def` | [gaugeState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaugeState.lean/declarations/gaugestate.md) | 53 | `declaration-track:0b6cae039ade9d9993bc0f14bbcdd835746aeffbbf52a7836d84d9d185c8f6c3` |
+| 2 | `theorem` | [gaugeState_step_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaugeState.lean/declarations/gaugestate-step-iff.md) | 60 | `result-track:2344982797bcad372c80f3f79e2fe16efe87fc247a3910cbbd9ac957ca8df697` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

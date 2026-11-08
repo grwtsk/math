@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/LogDerivUniformlyOnPublic.lean/index.md) · [Full source](../../../../RealFunctions/LogDerivUniformlyOnPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LogDerivUniformlyOnPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LogDerivUniformlyOnPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [logDeriv_tprod_eq_tsum](../../../../RealFunctions/LogDerivUniformlyOnPublic.lean/declarations/logderiv-tprod-eq-tsum.md) | 24 | `result-track:12b2ecfdc648002485f0937e315dcb06eb4b12ed5811d591d0cc9af1ed111ab4` |
+| 1 | `theorem` | [logDeriv_tprod_eq_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LogDerivUniformlyOnPublic.lean/declarations/logderiv-tprod-eq-tsum.md) | 24 | `result-track:12b2ecfdc648002485f0937e315dcb06eb4b12ed5811d591d0cc9af1ed111ab4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

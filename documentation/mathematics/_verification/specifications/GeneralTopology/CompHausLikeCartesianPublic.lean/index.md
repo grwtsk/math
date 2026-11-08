@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CompHausLikeCartesianPublic.lean/index.md) · [Full source](../../../../GeneralTopology/CompHausLikeCartesianPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLikeCartesianPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLikeCartesianPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [productCone](../../../../GeneralTopology/CompHausLikeCartesianPublic.lean/declarations/productcone.md) | 40 | `declaration-track:d5e84809681e8e23ca861b2b9179bf2060c30153f303cf0f8aa2695a322bc6b2` |
-| 2 | `def` | [productIsLimit](../../../../GeneralTopology/CompHausLikeCartesianPublic.lean/declarations/productislimit.md) | 48 | `declaration-track:9c5d84af248c3bcb8a92cb85037c836f3fb37e3186ef9ab7fa6af550288e7f63` |
-| 3 | `def` | [cartesianMonoidalCategory](../../../../GeneralTopology/CompHausLikeCartesianPublic.lean/declarations/cartesianmonoidalcategory.md) | 63 | `declaration-track:4c1fe1614fa197ebd10d3c3ad3da75baeb68a028ba58988a3b2381ac50304306` |
-| 4 | `def` | [coproductCocone](../../../../GeneralTopology/CompHausLikeCartesianPublic.lean/declarations/coproductcocone.md) | 79 | `declaration-track:51e4c1552ccdd504b6c894454d7e731414ddf44d33e646a6c8913d2ea6fae469` |
-| 5 | `def` | [coproductIsColimit](../../../../GeneralTopology/CompHausLikeCartesianPublic.lean/declarations/coproductiscolimit.md) | 86 | `declaration-track:d81c1ef7cf153ae0b68f77e0102c230c44d96e0e0515b634f0df6c0e678987ab` |
+| 1 | `def` | [productCone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLikeCartesianPublic.lean/declarations/productcone.md) | 40 | `declaration-track:d5e84809681e8e23ca861b2b9179bf2060c30153f303cf0f8aa2695a322bc6b2` |
+| 2 | `def` | [productIsLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLikeCartesianPublic.lean/declarations/productislimit.md) | 48 | `declaration-track:9c5d84af248c3bcb8a92cb85037c836f3fb37e3186ef9ab7fa6af550288e7f63` |
+| 3 | `def` | [cartesianMonoidalCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLikeCartesianPublic.lean/declarations/cartesianmonoidalcategory.md) | 63 | `declaration-track:4c1fe1614fa197ebd10d3c3ad3da75baeb68a028ba58988a3b2381ac50304306` |
+| 4 | `def` | [coproductCocone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLikeCartesianPublic.lean/declarations/coproductcocone.md) | 79 | `declaration-track:51e4c1552ccdd504b6c894454d7e731414ddf44d33e646a6c8913d2ea6fae469` |
+| 5 | `def` | [coproductIsColimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLikeCartesianPublic.lean/declarations/coproductiscolimit.md) | 86 | `declaration-track:d81c1ef7cf153ae0b68f77e0102c230c44d96e0e0515b634f0df6c0e678987ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

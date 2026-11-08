@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicOverflowInput.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicOverflowInput.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicOverflowInput.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicOverflowInput.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OverflowInput](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicOverflowInput.lean/declarations/overflowinput.md) | 38 | `declaration-track:75a39a85cbdff6702d94c2782dcb35de2b761dfc344b5ac962b94a053a6d51c0` |
-| 2 | `def` | [mkOverflowBit](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicOverflowInput.lean/declarations/mkoverflowbit.md) | 43 | `declaration-track:8029962d4bbd2beaec0f8fcb56ae07cf4189721a12914ce3cf6e0649352fb365` |
-| 3 | `theorem` | [go_le_size](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicOverflowInput.lean/declarations/go-le-size.md) | 66 | `result-track:1747182040855007b63be616dfc5856860c64197090566ad3abe0849d547fdf9` |
-| 4 | `theorem` | [go_decl_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicOverflowInput.lean/declarations/go-decl-eq.md) | 77 | `result-track:6b257d7c939ed17e236cc78772ca14c542d43518967c183d7e23eb24ead90911` |
-| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicOverflowInput.lean/declarations/instance.md) | 93 | `declaration-track:979847fb1dcf7e58ab400289ed1533146b6a1e8c603360e26ccd64609d10ac5a` |
+| 1 | `structure` | [OverflowInput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicOverflowInput.lean/declarations/overflowinput.md) | 38 | `declaration-track:75a39a85cbdff6702d94c2782dcb35de2b761dfc344b5ac962b94a053a6d51c0` |
+| 2 | `def` | [mkOverflowBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicOverflowInput.lean/declarations/mkoverflowbit.md) | 43 | `declaration-track:8029962d4bbd2beaec0f8fcb56ae07cf4189721a12914ce3cf6e0649352fb365` |
+| 3 | `theorem` | [go_le_size](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicOverflowInput.lean/declarations/go-le-size.md) | 66 | `result-track:1747182040855007b63be616dfc5856860c64197090566ad3abe0849d547fdf9` |
+| 4 | `theorem` | [go_decl_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicOverflowInput.lean/declarations/go-decl-eq.md) | 77 | `result-track:6b257d7c939ed17e236cc78772ca14c542d43518967c183d7e23eb24ead90911` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicOverflowInput.lean/declarations/instance.md) | 93 | `declaration-track:979847fb1dcf7e58ab400289ed1533146b6a1e8c603360e26ccd64609d10ac5a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

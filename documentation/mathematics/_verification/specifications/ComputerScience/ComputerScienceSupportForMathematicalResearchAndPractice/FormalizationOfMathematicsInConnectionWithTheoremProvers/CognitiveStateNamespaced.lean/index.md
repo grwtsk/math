@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CognitiveStateNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CognitiveStateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CognitiveStateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CognitiveStateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CognitiveState](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CognitiveStateNamespaced.lean/declarations/cognitivestate.md) | 20 | `declaration-track:959d61f12c6fa19f14dd8d65fef2ed0361c223fdb1d53b10c1e921b6a25a1f3a` |
-| 2 | `def` | [CognitiveState.default](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CognitiveStateNamespaced.lean/declarations/cognitivestate-default.md) | 38 | `declaration-track:533d9bf8f9162fede96e9baacf0c7824e0569527b8ef4f3f0cc793e458e1a1ea` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CognitiveStateNamespaced.lean/declarations/instance.md) | 49 | `declaration-track:48bb7939c81a71418569bce6a448c471c2ae9b98f92dd2f3bc14df80c4880005` |
+| 1 | `structure` | [CognitiveState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CognitiveStateNamespaced.lean/declarations/cognitivestate.md) | 20 | `declaration-track:959d61f12c6fa19f14dd8d65fef2ed0361c223fdb1d53b10c1e921b6a25a1f3a` |
+| 2 | `def` | [CognitiveState.default](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CognitiveStateNamespaced.lean/declarations/cognitivestate-default.md) | 38 | `declaration-track:533d9bf8f9162fede96e9baacf0c7824e0569527b8ef4f3f0cc793e458e1a1ea` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CognitiveStateNamespaced.lean/declarations/instance.md) | 49 | `declaration-track:48bb7939c81a71418569bce6a448c471c2ae9b98f92dd2f3bc14df80c4880005` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

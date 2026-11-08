@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [maxPowDiv](../../../../../NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/declarations/maxpowdiv.md) | 29 | `declaration-track:47acdd6fca0f2b322cb10e942fe05fe1eadbd376da2a97d9595d1c484fb53b16` |
-| 2 | `theorem` | [go_eq](../../../../../NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/declarations/go-eq.md) | 44 | `result-track:55c80a7fed236ae26bcd2dc5c53b8786ea113a7da41265b953ef055c47769c33` |
-| 3 | `theorem` | [go_succ](../../../../../NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/declarations/go-succ.md) | 50 | `result-track:d9cb94d5d718dc2d8e26d8cb749264c898ce397e39bc459d0890ce6143b5d893` |
-| 4 | `theorem` | [zero_base](../../../../../NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/declarations/zero-base.md) | 60 | `result-track:1af2af94299488bdb2b8c31d4202a994a8b0cd2c84367b7144b6658f803bc38c` |
-| 5 | `theorem` | [zero](../../../../../NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/declarations/zero.md) | 66 | `result-track:b5eaaa21bee7ee28d58b5bdeebaaf2b19bdf19887c294752a1eb16e3f4770a4e` |
-| 6 | `theorem` | [base_mul_eq_succ](../../../../../NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/declarations/base-mul-eq-succ.md) | 71 | `result-track:b5438a5f645eac29eb45af5064d04441491f30937517a76a8de3d7086d871cac` |
-| 7 | `theorem` | [base_pow_mul](../../../../../NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/declarations/base-pow-mul.md) | 80 | `result-track:780ed0c9e79ccdfbe9ec4b4ce6fcdfff3d0b83bc98cc151c9ee9e0f54a43d6f6` |
-| 8 | `theorem` | [pow_dvd](../../../../../NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/declarations/pow-dvd.md) | 89 | `result-track:35423f0cb8ca69f89250fb74fbb4ef40b9ec76c294554a788d086c0dc6234e22` |
-| 9 | `theorem` | [le_of_dvd](../../../../../NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/declarations/le-of-dvd.md) | 103 | `result-track:d3267acc61c2c51af50f89a2af9163e63422d4df3ac2d058628ad6de3a3cfb09` |
+| 1 | `def` | [maxPowDiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/declarations/maxpowdiv.md) | 29 | `declaration-track:47acdd6fca0f2b322cb10e942fe05fe1eadbd376da2a97d9595d1c484fb53b16` |
+| 2 | `theorem` | [go_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/declarations/go-eq.md) | 44 | `result-track:55c80a7fed236ae26bcd2dc5c53b8786ea113a7da41265b953ef055c47769c33` |
+| 3 | `theorem` | [go_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/declarations/go-succ.md) | 50 | `result-track:d9cb94d5d718dc2d8e26d8cb749264c898ce397e39bc459d0890ce6143b5d893` |
+| 4 | `theorem` | [zero_base](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/declarations/zero-base.md) | 60 | `result-track:1af2af94299488bdb2b8c31d4202a994a8b0cd2c84367b7144b6658f803bc38c` |
+| 5 | `theorem` | [zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/declarations/zero.md) | 66 | `result-track:b5eaaa21bee7ee28d58b5bdeebaaf2b19bdf19887c294752a1eb16e3f4770a4e` |
+| 6 | `theorem` | [base_mul_eq_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/declarations/base-mul-eq-succ.md) | 71 | `result-track:b5438a5f645eac29eb45af5064d04441491f30937517a76a8de3d7086d871cac` |
+| 7 | `theorem` | [base_pow_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/declarations/base-pow-mul.md) | 80 | `result-track:780ed0c9e79ccdfbe9ec4b4ce6fcdfff3d0b83bc98cc151c9ee9e0f54a43d6f6` |
+| 8 | `theorem` | [pow_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/declarations/pow-dvd.md) | 89 | `result-track:35423f0cb8ca69f89250fb74fbb4ef40b9ec76c294554a788d086c0dc6234e22` |
+| 9 | `theorem` | [le_of_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatMaxPowDivMaxPowDivSourceEdition2.lean/declarations/le-of-dvd.md) | 103 | `result-track:d3267acc61c2c51af50f89a2af9163e63422d4df3ac2d058628ad6de3a3cfb09` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Network.Permutation` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Algebra.BigOperators.Group.Finset.Basic` — import line 20; external provider; requires a separately pinned dependency.
-- [Hamming Conjugacy And Avalanche](../../../../GroupTheoryAndGeneralizations/HammingConjugacyAndAvalanche.lean/index.md) — import line 22; pinned internal source present.
+- [Hamming Conjugacy And Avalanche](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HammingConjugacyAndAvalanche.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fixedPoints](../../../../GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/declarations/fixedpoints.md) | 58 | `declaration-track:20c8b4de1df8e9af565287d29775e831bd323aebb75f3b6d90831942bb02f741` |
-| 2 | `def` | [fixedPointCount](../../../../GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/declarations/fixedpointcount.md) | 62 | `declaration-track:8dde2ffc578d375c0e195f1d0ded36c9aef3f4591fb149864fdb69a9f997e20e` |
-| 3 | `theorem` | [mem_fixedPoints_iff](../../../../GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/declarations/mem-fixedpoints-iff.md) | 65 | `result-track:b8bd1c8f16e35a3335c8ea370a30ef5a68a2f012cb693a5ca1f3c6767b9b67a2` |
-| 4 | `theorem` | [fixedPoints_zero](../../../../GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/declarations/fixedpoints-zero.md) | 73 | `result-track:dc9d22ec6bb305463428175297ecbe4f54c5713ec71dd55fad108aa23f9ae575` |
-| 5 | `theorem` | [fixedPointCount_zero](../../../../GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/declarations/fixedpointcount-zero.md) | 79 | `result-track:781fdc18295d7ff009957f85a3aff0fd5a48fcdec3a883b6754cb2760720f215` |
-| 6 | `theorem` | [fixedPointCount_le](../../../../GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/declarations/fixedpointcount-le.md) | 84 | `result-track:f9016e0760eb68cdb69b92d985577c47403cd8782587ad657db458356975cf6a` |
-| 7 | `theorem` | [fixedPointCount_conjugate](../../../../GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/declarations/fixedpointcount-conjugate.md) | 90 | `result-track:857b1eed686386a78a8864cf2be3568c683bd2a043da867ab4e895bb0b1ce27f` |
-| 8 | `theorem` | [fixedPointCount_identity](../../../../GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/declarations/fixedpointcount-identity.md) | 108 | `result-track:79f9975410e40dad51854b74d5e1fbfa4901dc6a5020962b8afc6f0b64a7100a` |
+| 1 | `def` | [fixedPoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/declarations/fixedpoints.md) | 58 | `declaration-track:20c8b4de1df8e9af565287d29775e831bd323aebb75f3b6d90831942bb02f741` |
+| 2 | `def` | [fixedPointCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/declarations/fixedpointcount.md) | 62 | `declaration-track:8dde2ffc578d375c0e195f1d0ded36c9aef3f4591fb149864fdb69a9f997e20e` |
+| 3 | `theorem` | [mem_fixedPoints_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/declarations/mem-fixedpoints-iff.md) | 65 | `result-track:b8bd1c8f16e35a3335c8ea370a30ef5a68a2f012cb693a5ca1f3c6767b9b67a2` |
+| 4 | `theorem` | [fixedPoints_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/declarations/fixedpoints-zero.md) | 73 | `result-track:dc9d22ec6bb305463428175297ecbe4f54c5713ec71dd55fad108aa23f9ae575` |
+| 5 | `theorem` | [fixedPointCount_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/declarations/fixedpointcount-zero.md) | 79 | `result-track:781fdc18295d7ff009957f85a3aff0fd5a48fcdec3a883b6754cb2760720f215` |
+| 6 | `theorem` | [fixedPointCount_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/declarations/fixedpointcount-le.md) | 84 | `result-track:f9016e0760eb68cdb69b92d985577c47403cd8782587ad657db458356975cf6a` |
+| 7 | `theorem` | [fixedPointCount_conjugate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/declarations/fixedpointcount-conjugate.md) | 90 | `result-track:857b1eed686386a78a8864cf2be3568c683bd2a043da867ab4e895bb0b1ce27f` |
+| 8 | `theorem` | [fixedPointCount_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/declarations/fixedpointcount-identity.md) | 108 | `result-track:79f9975410e40dad51854b74d5e1fbfa4901dc6a5020962b8afc6f0b64a7100a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/HeatNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/HeatNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HeatNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HeatNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HeatGraphPolicy](../../../../../ComputerScience/AlgorithmsInComputerScience/HeatNamespaced.lean/declarations/heatgraphpolicy.md) | 15 | `declaration-track:d757c370226f79a17e638fe0621481f2aaca263962184584a54fa1aa52d5baa0` |
-| 2 | `def` | [selectedHeatGraph](../../../../../ComputerScience/AlgorithmsInComputerScience/HeatNamespaced.lean/declarations/selectedheatgraph.md) | 22 | `declaration-track:20570279141a7f20d1167f29b19a558544f4911fc7d2303643e352ef49a46015` |
-| 3 | `def` | [dominantHeatCluster](../../../../../ComputerScience/AlgorithmsInComputerScience/HeatNamespaced.lean/declarations/dominantheatcluster.md) | 28 | `declaration-track:075b061aaf267c24f86e61b8c92dac194b12de94fd6963ef0aac0f02a4f3cc53` |
-| 4 | `theorem` | [dominantHeatCluster_count](../../../../../ComputerScience/AlgorithmsInComputerScience/HeatNamespaced.lean/declarations/dominantheatcluster-count.md) | 37 | `result-track:0b1b3b0eba0e6b591e727cf9b8ebd2e048cd461bf69643dcf6e6c42b5ea8b673` |
+| 1 | `structure` | [HeatGraphPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HeatNamespaced.lean/declarations/heatgraphpolicy.md) | 15 | `declaration-track:d757c370226f79a17e638fe0621481f2aaca263962184584a54fa1aa52d5baa0` |
+| 2 | `def` | [selectedHeatGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HeatNamespaced.lean/declarations/selectedheatgraph.md) | 22 | `declaration-track:20570279141a7f20d1167f29b19a558544f4911fc7d2303643e352ef49a46015` |
+| 3 | `def` | [dominantHeatCluster](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HeatNamespaced.lean/declarations/dominantheatcluster.md) | 28 | `declaration-track:075b061aaf267c24f86e61b8c92dac194b12de94fd6963ef0aac0f02a4f3cc53` |
+| 4 | `theorem` | [dominantHeatCluster_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HeatNamespaced.lean/declarations/dominantheatcluster-count.md) | 37 | `result-track:0b1b3b0eba0e6b591e727cf9b8ebd2e048cd461bf69643dcf6e6c42b5ea8b673` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

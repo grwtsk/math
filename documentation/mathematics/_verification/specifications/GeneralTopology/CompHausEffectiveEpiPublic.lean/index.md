@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CompHausEffectiveEpiPublic.lean/index.md) · [Full source](../../../../GeneralTopology/CompHausEffectiveEpiPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [effectiveEpi_tfae](../../../../GeneralTopology/CompHausEffectiveEpiPublic.lean/declarations/effectiveepi-tfae.md) | 39 | `result-track:084ff19aee2bf86a02cfcfbb158f0bc1f9355b0604bdf71991a28677bc3cc7cd` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/CompHausEffectiveEpiPublic.lean/declarations/instance.md) | 51 | `declaration-track:7e24c5a47c344c2349298c22cfde14dc43fe159060c5503cf6ade1f7bb8b3552` |
-| 3 | `example` | [(anonymous)](../../../../GeneralTopology/CompHausEffectiveEpiPublic.lean/declarations/example.md) | 54 | `declaration-track:f57db247307473fc161f2bdb84ecf303b6849a7b2fd5b4906fdba11690262989` |
-| 4 | `theorem` | [effectiveEpiFamily_tfae](../../../../GeneralTopology/CompHausEffectiveEpiPublic.lean/declarations/effectiveepifamily-tfae.md) | 58 | `result-track:d09a73f989685240293c20a3cde60a7bd2945ea6f27bba2bf51afac1d757e5b3` |
-| 5 | `theorem` | [effectiveEpiFamily_of_jointly_surjective](../../../../GeneralTopology/CompHausEffectiveEpiPublic.lean/declarations/effectiveepifamily-of-jointly-surjective.md) | 101 | `result-track:2158b4030f2e44efbeca0738fa45a3c64b6159de256035655acf9d3703983436` |
+| 1 | `theorem` | [effectiveEpi_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiPublic.lean/declarations/effectiveepi-tfae.md) | 39 | `result-track:084ff19aee2bf86a02cfcfbb158f0bc1f9355b0604bdf71991a28677bc3cc7cd` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiPublic.lean/declarations/instance.md) | 51 | `declaration-track:7e24c5a47c344c2349298c22cfde14dc43fe159060c5503cf6ade1f7bb8b3552` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiPublic.lean/declarations/example.md) | 54 | `declaration-track:f57db247307473fc161f2bdb84ecf303b6849a7b2fd5b4906fdba11690262989` |
+| 4 | `theorem` | [effectiveEpiFamily_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiPublic.lean/declarations/effectiveepifamily-tfae.md) | 58 | `result-track:d09a73f989685240293c20a3cde60a7bd2945ea6f27bba2bf51afac1d757e5b3` |
+| 5 | `theorem` | [effectiveEpiFamily_of_jointly_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiPublic.lean/declarations/effectiveepifamily-of-jointly-surjective.md) | 101 | `result-track:2158b4030f2e44efbeca0738fa45a3c64b6159de256035655acf9d3703983436` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

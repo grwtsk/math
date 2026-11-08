@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/Imo1972Q5NamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/Imo1972Q5NamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Imo1972Q5NamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Imo1972Q5NamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [imo1972_q5](../../../../FunctionalAnalysis/Imo1972Q5NamespacedPublic.lean/declarations/imo1972-q5-source-edition-2.md) | 37 | `result-track:d46f3bfb5384700bab5167e8153158d888a11694137a4412ea2fd62de55ab3db` |
-| 2 | `theorem` | [imo1972_q5'](../../../../FunctionalAnalysis/Imo1972Q5NamespacedPublic.lean/declarations/imo1972-q5.md) | 93 | `result-track:8feb8c62e1b61b4fb69c401a6e7b2a28ffa7532a78b1e734f89f13658bba7660` |
+| 1 | `theorem` | [imo1972_q5](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Imo1972Q5NamespacedPublic.lean/declarations/imo1972-q5-source-edition-2.md) | 37 | `result-track:d46f3bfb5384700bab5167e8153158d888a11694137a4412ea2fd62de55ab3db` |
+| 2 | `theorem` | [imo1972_q5'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Imo1972Q5NamespacedPublic.lean/declarations/imo1972-q5.md) | 93 | `result-track:8feb8c62e1b61b4fb69c401a6e7b2a28ffa7532a78b1e734f89f13658bba7660` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

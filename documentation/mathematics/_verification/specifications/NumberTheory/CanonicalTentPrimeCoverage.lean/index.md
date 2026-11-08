@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalTentPrimeCoverage.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalTentPrimeCoverage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentPrimeCoverage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentPrimeCoverage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentPrimeCriterion`](../../../../NumberTheory/CanonicalTentPrimeCriterion.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.LandauStatements`](../../../../NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentPrimeCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentPrimeCriterion.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.LandauStatements`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [squareCount_pos_of_canonical_tent](../../../../NumberTheory/CanonicalTentPrimeCoverage.lean/declarations/squarecount-pos-of-canonical-tent.md) | 30 | `result-track:518b61aca79fda03b800f8c2751220be3f50c1885423001c1c7cd860cd01ea0f` |
-| 2 | `theorem` | [legendreBeyond_of_canonical_tent](../../../../NumberTheory/CanonicalTentPrimeCoverage.lean/declarations/legendrebeyond-of-canonical-tent.md) | 40 | `result-track:739f39f579004e3dacaffef9907d3d027ad9c579c3f1dd099ad2af58649f81d4` |
-| 3 | `theorem` | [legendre_of_prefix_and_canonical_tent](../../../../NumberTheory/CanonicalTentPrimeCoverage.lean/declarations/legendre-of-prefix-and-canonical-tent.md) | 52 | `result-track:32d141a2317a204f5f0dfeb2cc88edf395779ea9956d11724277c6513d9d1d83` |
+| 1 | `theorem` | [squareCount_pos_of_canonical_tent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentPrimeCoverage.lean/declarations/squarecount-pos-of-canonical-tent.md) | 30 | `result-track:518b61aca79fda03b800f8c2751220be3f50c1885423001c1c7cd860cd01ea0f` |
+| 2 | `theorem` | [legendreBeyond_of_canonical_tent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentPrimeCoverage.lean/declarations/legendrebeyond-of-canonical-tent.md) | 40 | `result-track:739f39f579004e3dacaffef9907d3d027ad9c579c3f1dd099ad2af58649f81d4` |
+| 3 | `theorem` | [legendre_of_prefix_and_canonical_tent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentPrimeCoverage.lean/declarations/legendre-of-prefix-and-canonical-tent.md) | 52 | `result-track:32d141a2317a204f5f0dfeb2cc88edf395779ea9956d11724277c6513d9d1d83` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/DataProcessingPublic.lean/index.md) · [Full source](../../../../MeasureAndIntegration/DataProcessingPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DataProcessingPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DataProcessingPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,19 +61,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [map_condExp_rnDeriv_le](../../../../MeasureAndIntegration/DataProcessingPublic.lean/declarations/map-condexp-rnderiv-le.md) | 48 | `result-track:bb236b3123669e09abaef96658fc9b05584a9fc6131c0b50b09655c54eceb6c1` |
-| 2 | `lemma` | [comp_rnDeriv_map_le](../../../../MeasureAndIntegration/DataProcessingPublic.lean/declarations/comp-rnderiv-map-le.md) | 56 | `result-track:355ea572ea2737a6d1bb482ddcd98858c138877c8c5daa13d6d2e1b29d537174` |
-| 3 | `lemma` | [integrable_comp_rnDeriv_map](../../../../MeasureAndIntegration/DataProcessingPublic.lean/declarations/integrable-comp-rnderiv-map.md) | 67 | `result-track:973819e7e7a85d3dce4f0e8e5149d63610ad7ef0428a0410904cf34b810d5908` |
-| 4 | `lemma` | [comp_rnDeriv_trim_le](../../../../MeasureAndIntegration/DataProcessingPublic.lean/declarations/comp-rnderiv-trim-le.md) | 87 | `result-track:62f8cd2275a8f390a2e556e575cffa5f47f2c04043ede4ddabde731b290c554e` |
-| 5 | `lemma` | [integrable_comp_rnDeriv_trim](../../../../MeasureAndIntegration/DataProcessingPublic.lean/declarations/integrable-comp-rnderiv-trim.md) | 98 | `result-track:f2e2d26f8ed47c8050c8504b437e231a90c1f5c33f3134b04f93845896ad1647` |
-| 6 | `lemma` | [integrable_comp_condExp_rnDeriv](../../../../MeasureAndIntegration/DataProcessingPublic.lean/declarations/integrable-comp-condexp-rnderiv.md) | 115 | `result-track:bc0bcc5a551c177d6628700c161a87471905ed9accd014ee41c80dee63adb304` |
-| 7 | `lemma` | [integrable_llr_map](../../../../MeasureAndIntegration/DataProcessingPublic.lean/declarations/integrable-llr-map.md) | 131 | `result-track:c014d3144639cf8480ad269558c54df82c0f89ca649f8f3fc6f21ca8769ccf78` |
-| 8 | `lemma` | [toReal_klDiv_map_of_ac](../../../../MeasureAndIntegration/DataProcessingPublic.lean/declarations/toreal-kldiv-map-of-ac.md) | 138 | `result-track:e84e121da86658e83b9b523a2822e821b62454948beb0e2d828462cbef5552ab` |
-| 9 | `lemma` | [klDiv_map_of_ac](../../../../MeasureAndIntegration/DataProcessingPublic.lean/declarations/kldiv-map-of-ac.md) | 146 | `result-track:9103527b04c74f34f5b218c2ac52dce8b598bc5112149882f0f864995f62e5a7` |
-| 10 | `lemma` | [toReal_klDiv_trim_of_ac](../../../../MeasureAndIntegration/DataProcessingPublic.lean/declarations/toreal-kldiv-trim-of-ac.md) | 153 | `result-track:aac62784c502595752ab6df8dc30f5fe86c4819d81120d2c7cfb6386eb3aac7d` |
-| 11 | `theorem` | [klDiv_map_le](../../../../MeasureAndIntegration/DataProcessingPublic.lean/declarations/kldiv-map-le.md) | 160 | `result-track:53c53342198498ae83f99749ffb33a73d226f66dea229e19bbf8d3619e075545` |
-| 12 | `theorem` | [klDiv_trim_le](../../../../MeasureAndIntegration/DataProcessingPublic.lean/declarations/kldiv-trim-le.md) | 180 | `result-track:8e86597d07cf68fb7b40fce319570a866c7a9b6add036c1260de28a1dcde59d7` |
-| 13 | `theorem` | [klDiv_comp_right_le](../../../../MeasureAndIntegration/DataProcessingPublic.lean/declarations/kldiv-comp-right-le.md) | 186 | `result-track:7d73d6d4e23eeb59428c78d199fde32027f1a9074879595560fdbc62fb749f09` |
+| 1 | `lemma` | [map_condExp_rnDeriv_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DataProcessingPublic.lean/declarations/map-condexp-rnderiv-le.md) | 48 | `result-track:bb236b3123669e09abaef96658fc9b05584a9fc6131c0b50b09655c54eceb6c1` |
+| 2 | `lemma` | [comp_rnDeriv_map_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DataProcessingPublic.lean/declarations/comp-rnderiv-map-le.md) | 56 | `result-track:355ea572ea2737a6d1bb482ddcd98858c138877c8c5daa13d6d2e1b29d537174` |
+| 3 | `lemma` | [integrable_comp_rnDeriv_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DataProcessingPublic.lean/declarations/integrable-comp-rnderiv-map.md) | 67 | `result-track:973819e7e7a85d3dce4f0e8e5149d63610ad7ef0428a0410904cf34b810d5908` |
+| 4 | `lemma` | [comp_rnDeriv_trim_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DataProcessingPublic.lean/declarations/comp-rnderiv-trim-le.md) | 87 | `result-track:62f8cd2275a8f390a2e556e575cffa5f47f2c04043ede4ddabde731b290c554e` |
+| 5 | `lemma` | [integrable_comp_rnDeriv_trim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DataProcessingPublic.lean/declarations/integrable-comp-rnderiv-trim.md) | 98 | `result-track:f2e2d26f8ed47c8050c8504b437e231a90c1f5c33f3134b04f93845896ad1647` |
+| 6 | `lemma` | [integrable_comp_condExp_rnDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DataProcessingPublic.lean/declarations/integrable-comp-condexp-rnderiv.md) | 115 | `result-track:bc0bcc5a551c177d6628700c161a87471905ed9accd014ee41c80dee63adb304` |
+| 7 | `lemma` | [integrable_llr_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DataProcessingPublic.lean/declarations/integrable-llr-map.md) | 131 | `result-track:c014d3144639cf8480ad269558c54df82c0f89ca649f8f3fc6f21ca8769ccf78` |
+| 8 | `lemma` | [toReal_klDiv_map_of_ac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DataProcessingPublic.lean/declarations/toreal-kldiv-map-of-ac.md) | 138 | `result-track:e84e121da86658e83b9b523a2822e821b62454948beb0e2d828462cbef5552ab` |
+| 9 | `lemma` | [klDiv_map_of_ac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DataProcessingPublic.lean/declarations/kldiv-map-of-ac.md) | 146 | `result-track:9103527b04c74f34f5b218c2ac52dce8b598bc5112149882f0f864995f62e5a7` |
+| 10 | `lemma` | [toReal_klDiv_trim_of_ac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DataProcessingPublic.lean/declarations/toreal-kldiv-trim-of-ac.md) | 153 | `result-track:aac62784c502595752ab6df8dc30f5fe86c4819d81120d2c7cfb6386eb3aac7d` |
+| 11 | `theorem` | [klDiv_map_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DataProcessingPublic.lean/declarations/kldiv-map-le.md) | 160 | `result-track:53c53342198498ae83f99749ffb33a73d226f66dea229e19bbf8d3619e075545` |
+| 12 | `theorem` | [klDiv_trim_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DataProcessingPublic.lean/declarations/kldiv-trim-le.md) | 180 | `result-track:8e86597d07cf68fb7b40fce319570a866c7a9b6add036c1260de28a1dcde59d7` |
+| 13 | `theorem` | [klDiv_comp_right_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DataProcessingPublic.lean/declarations/kldiv-comp-right-le.md) | 186 | `result-track:7d73d6d4e23eeb59428c78d199fde32027f1a9074879595560fdbc62fb749f09` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

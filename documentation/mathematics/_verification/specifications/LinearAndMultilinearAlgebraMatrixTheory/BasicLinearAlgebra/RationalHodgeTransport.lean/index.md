@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Geometry.Hodge.RationalCycleCellular`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalCycleCellular.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Geometry.Hodge.RationalCycleCellular`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalCycleCellular.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CycleClassEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/declarations/cycleclassequiv.md) | 11 | `declaration-track:516350010a4d29f5a4a2d584920e0c0097f767fb9139ab8db1ce67b6db2b8b11` |
-| 2 | `theorem` | [commute_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/declarations/commute-apply.md) | 39 | `result-track:9f3af43f44a594ceacb9e5d6c60e3b47e7f7455a9564da4c72d1297ee141f251` |
-| 3 | `theorem` | [surjective_forward](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/declarations/surjective-forward.md) | 45 | `result-track:f3900ccd6e4cd74de3123de6fb266ce411009d771785396c96253d4c534e0c88` |
-| 4 | `theorem` | [surjective_backward](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/declarations/surjective-backward.md) | 58 | `result-track:f9d0e22199e063b5475460add5014c5ee4ea26d48d0480728c74b1c04692f335` |
-| 5 | `theorem` | [surjective_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/declarations/surjective-iff.md) | 73 | `result-track:a4ed8112bfaf328ec8e9857eea5e8afdafd453c6ccf5b3a9f928663ced9a1786` |
-| 6 | `def` | [transportTheorem](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/declarations/transporttheorem.md) | 83 | `declaration-track:33795437d47909594111543755398eb82bb34c4de7212b8f27eed0c6bed0785a` |
-| 7 | `def` | [lineEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/declarations/lineequiv.md) | 100 | `declaration-track:ba3f4fc6a348eb4ae415e542dc45617c47038711005c3030a67ccf00a2c710de` |
-| 8 | `theorem` | [line_transport_surjective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/declarations/line-transport-surjective.md) | 106 | `result-track:48952ed4bb32be27b5cceb44ff239b18fc60dbe2533947d77f5b9de15d385630` |
+| 1 | `structure` | [CycleClassEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/declarations/cycleclassequiv.md) | 11 | `declaration-track:516350010a4d29f5a4a2d584920e0c0097f767fb9139ab8db1ce67b6db2b8b11` |
+| 2 | `theorem` | [commute_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/declarations/commute-apply.md) | 39 | `result-track:9f3af43f44a594ceacb9e5d6c60e3b47e7f7455a9564da4c72d1297ee141f251` |
+| 3 | `theorem` | [surjective_forward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/declarations/surjective-forward.md) | 45 | `result-track:f3900ccd6e4cd74de3123de6fb266ce411009d771785396c96253d4c534e0c88` |
+| 4 | `theorem` | [surjective_backward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/declarations/surjective-backward.md) | 58 | `result-track:f9d0e22199e063b5475460add5014c5ee4ea26d48d0480728c74b1c04692f335` |
+| 5 | `theorem` | [surjective_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/declarations/surjective-iff.md) | 73 | `result-track:a4ed8112bfaf328ec8e9857eea5e8afdafd453c6ccf5b3a9f928663ced9a1786` |
+| 6 | `def` | [transportTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/declarations/transporttheorem.md) | 83 | `declaration-track:33795437d47909594111543755398eb82bb34c4de7212b8f27eed0c6bed0785a` |
+| 7 | `def` | [lineEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/declarations/lineequiv.md) | 100 | `declaration-track:ba3f4fc6a348eb4ae415e542dc45617c47038711005c3030a67ccf00a2c710de` |
+| 8 | `theorem` | [line_transport_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalHodgeTransport.lean/declarations/line-transport-surjective.md) | 106 | `result-track:48952ed4bb32be27b5cceb44ff239b18fc60dbe2533947d77f5b9de15d385630` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualPntTailConvolution.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualPntTailConvolution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPntTailConvolution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPntTailConvolution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualRelativePsiTimeError_total_eq_neg_gamma_sub_one](../../../../MeasureAndIntegration/SourceActualPntTailConvolution.lean/declarations/actualrelativepsitimeerror-total-eq-neg-gamma-sub-one.md) | 17 | `result-track:d7df69e2490721802968c1832cb9708734e22744aeaca02439cdc7d35edebd1a` |
-| 2 | `theorem` | [actualMangoldtErrorConvolution_one_eq_neg_tail](../../../../MeasureAndIntegration/SourceActualPntTailConvolution.lean/declarations/actualmangoldterrorconvolution-one-eq-neg-tail.md) | 25 | `result-track:96c4fffb98f00233917f8cfcf82da909c6a27bd6fd808cc13ee00305befe7dd3` |
-| 3 | `theorem` | [actualMangoldtErrorConvolution_one_abs_le](../../../../MeasureAndIntegration/SourceActualPntTailConvolution.lean/declarations/actualmangoldterrorconvolution-one-abs-le.md) | 34 | `result-track:7925bb1e6b99ff7a53af95a500434478902fabcf706026330c0824e93d89961e` |
-| 4 | `theorem` | [actualMangoldtErrorConvolution_one_pnt_majorant](../../../../MeasureAndIntegration/SourceActualPntTailConvolution.lean/declarations/actualmangoldterrorconvolution-one-pnt-majorant.md) | 53 | `result-track:90147352314b47d12b97a112e0a5194157f6e110d0a5c294d347350ff723346e` |
+| 1 | `theorem` | [actualRelativePsiTimeError_total_eq_neg_gamma_sub_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPntTailConvolution.lean/declarations/actualrelativepsitimeerror-total-eq-neg-gamma-sub-one.md) | 17 | `result-track:d7df69e2490721802968c1832cb9708734e22744aeaca02439cdc7d35edebd1a` |
+| 2 | `theorem` | [actualMangoldtErrorConvolution_one_eq_neg_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPntTailConvolution.lean/declarations/actualmangoldterrorconvolution-one-eq-neg-tail.md) | 25 | `result-track:96c4fffb98f00233917f8cfcf82da909c6a27bd6fd808cc13ee00305befe7dd3` |
+| 3 | `theorem` | [actualMangoldtErrorConvolution_one_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPntTailConvolution.lean/declarations/actualmangoldterrorconvolution-one-abs-le.md) | 34 | `result-track:7925bb1e6b99ff7a53af95a500434478902fabcf706026330c0824e93d89961e` |
+| 4 | `theorem` | [actualMangoldtErrorConvolution_one_pnt_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPntTailConvolution.lean/declarations/actualmangoldterrorconvolution-one-pnt-majorant.md) | 53 | `result-track:90147352314b47d12b97a112e0a5194157f6e110d0a5c294d347350ff723346e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

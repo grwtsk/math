@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/IdentityStreamBaselineEquivalence.lean/index.md) · [Full source](../../../../Combinatorics/IdentityStreamBaselineEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IdentityStreamBaselineEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IdentityStreamBaselineEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,11 +62,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [identityCantor](../../../../Combinatorics/IdentityStreamBaselineEquivalence.lean/declarations/identitycantor.md) | 30 | `declaration-track:1a81cdca7f9c546f6c0b1ec4d9b88e51980e43c6d91a7d0a5ad7926cbbeecd3c` |
-| 2 | `def` | [falseBaseline](../../../../Combinatorics/IdentityStreamBaselineEquivalence.lean/declarations/falsebaseline.md) | 34 | `declaration-track:11052ce674c82e78064e590d5bc235d27194f8f8b7b2efe62f3c982416316a2e` |
-| 3 | `def` | [natAddressEnumeration](../../../../Combinatorics/IdentityStreamBaselineEquivalence.lean/declarations/nataddressenumeration.md) | 36 | `declaration-track:45b2b9bab69b866d9ef700b1ddd953b7852a822c689a936f3ea1f1bae21242dd` |
-| 4 | `example` | [(anonymous)](../../../../Combinatorics/IdentityStreamBaselineEquivalence.lean/declarations/example-source-edition-2.md) | 44 | `declaration-track:f49d7c2f954931da913568f7f1402a2f7b950abb275663dd7d2129442712cbff` |
-| 5 | `example` | [(anonymous)](../../../../Combinatorics/IdentityStreamBaselineEquivalence.lean/declarations/example.md) | 52 | `declaration-track:a08ed97f825f738bb728c858e5960205ab9682be5d525504a2831759d54ba44e` |
+| 1 | `def` | [identityCantor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IdentityStreamBaselineEquivalence.lean/declarations/identitycantor.md) | 30 | `declaration-track:1a81cdca7f9c546f6c0b1ec4d9b88e51980e43c6d91a7d0a5ad7926cbbeecd3c` |
+| 2 | `def` | [falseBaseline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IdentityStreamBaselineEquivalence.lean/declarations/falsebaseline.md) | 34 | `declaration-track:11052ce674c82e78064e590d5bc235d27194f8f8b7b2efe62f3c982416316a2e` |
+| 3 | `def` | [natAddressEnumeration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IdentityStreamBaselineEquivalence.lean/declarations/nataddressenumeration.md) | 36 | `declaration-track:45b2b9bab69b866d9ef700b1ddd953b7852a822c689a936f3ea1f1bae21242dd` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IdentityStreamBaselineEquivalence.lean/declarations/example-source-edition-2.md) | 44 | `declaration-track:f49d7c2f954931da913568f7f1402a2f7b950abb275663dd7d2129442712cbff` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IdentityStreamBaselineEquivalence.lean/declarations/example.md) | 52 | `declaration-track:a08ed97f825f738bb728c858e5960205ab9682be5d525504a2831759d54ba44e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

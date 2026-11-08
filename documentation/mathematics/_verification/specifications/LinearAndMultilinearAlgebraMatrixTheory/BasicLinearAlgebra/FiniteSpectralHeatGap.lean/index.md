@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralHeatGap.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralHeatGap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralHeatGap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralHeatGap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.FiniteSpectralHeat`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralHeat.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.FiniteSpectralHeat`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralHeat.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [SupportedAbove](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralHeatGap.lean/declarations/supportedabove.md) | 16 | `declaration-track:a481aae2a6062f12eff1252019068d885ef82bf8e82d8ea1824ab54ecaab95e4` |
-| 2 | `theorem` | [heat_gap_contracts](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralHeatGap.lean/declarations/heat-gap-contracts.md) | 20 | `result-track:2a5eb8e64c3d26c413605188cae4f734c17927c5a4c2e0ff81e896fa8a464f96` |
-| 3 | `def` | [IsCoordinateEigencomponent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralHeatGap.lean/declarations/iscoordinateeigencomponent.md) | 72 | `declaration-track:6e8273e59d661424e405d52b67f71d208bc0087346b44e13dd2322f8754742ea` |
-| 4 | `theorem` | [heat_eigencomponent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralHeatGap.lean/declarations/heat-eigencomponent.md) | 77 | `result-track:815e701f62a1e3161198f84b8baf587a8db3ab49f9d00edaaa5d71bf669e4782` |
+| 1 | `def` | [SupportedAbove](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralHeatGap.lean/declarations/supportedabove.md) | 16 | `declaration-track:a481aae2a6062f12eff1252019068d885ef82bf8e82d8ea1824ab54ecaab95e4` |
+| 2 | `theorem` | [heat_gap_contracts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralHeatGap.lean/declarations/heat-gap-contracts.md) | 20 | `result-track:2a5eb8e64c3d26c413605188cae4f734c17927c5a4c2e0ff81e896fa8a464f96` |
+| 3 | `def` | [IsCoordinateEigencomponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralHeatGap.lean/declarations/iscoordinateeigencomponent.md) | 72 | `declaration-track:6e8273e59d661424e405d52b67f71d208bc0087346b44e13dd2322f8754742ea` |
+| 4 | `theorem` | [heat_eigencomponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralHeatGap.lean/declarations/heat-eigencomponent.md) | 77 | `result-track:815e701f62a1e3161198f84b8baf587a8db3ab49f9d00edaaa5d71bf669e4782` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

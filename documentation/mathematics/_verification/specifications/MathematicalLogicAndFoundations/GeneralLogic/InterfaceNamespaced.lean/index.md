@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InterfaceNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InterfaceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InterfaceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InterfaceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Theory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InterfaceNamespaced.lean/declarations/theory.md) | 38 | `declaration-track:dfb7b9bb9bc54b8c7d5bce7d9467c3e8bb44ec44d20f62ca8530fd8d106caa04` |
-| 2 | `structure` | [BasePrismDatum](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InterfaceNamespaced.lean/declarations/baseprismdatum.md) | 61 | `declaration-track:808a95736cfc312063d720b06208659dada0b7ce3cbe4610f808fcbe51565bd7` |
-| 3 | `structure` | [ConstructedBasePrism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InterfaceNamespaced.lean/declarations/constructedbaseprism.md) | 68 | `declaration-track:9fe0b268aaddec2ba32c3ca119e8c233eaf02f5c4c97caec34cf578da003a65a` |
-| 4 | `structure` | [BasePrismCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InterfaceNamespaced.lean/declarations/baseprismcertificate.md) | 73 | `declaration-track:4a49aa80fc2f79e0c7315bb33da4d4065ee12c547057d645e9ce02db050538c4` |
-| 5 | `structure` | [SourceRealization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InterfaceNamespaced.lean/declarations/sourcerealization.md) | 84 | `declaration-track:bb1325446c3d12477d7f7bcb5478334559daf2307fbf2944b2b0dd1d87882b31` |
+| 1 | `structure` | [Theory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InterfaceNamespaced.lean/declarations/theory.md) | 38 | `declaration-track:dfb7b9bb9bc54b8c7d5bce7d9467c3e8bb44ec44d20f62ca8530fd8d106caa04` |
+| 2 | `structure` | [BasePrismDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InterfaceNamespaced.lean/declarations/baseprismdatum.md) | 61 | `declaration-track:808a95736cfc312063d720b06208659dada0b7ce3cbe4610f808fcbe51565bd7` |
+| 3 | `structure` | [ConstructedBasePrism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InterfaceNamespaced.lean/declarations/constructedbaseprism.md) | 68 | `declaration-track:9fe0b268aaddec2ba32c3ca119e8c233eaf02f5c4c97caec34cf578da003a65a` |
+| 4 | `structure` | [BasePrismCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InterfaceNamespaced.lean/declarations/baseprismcertificate.md) | 73 | `declaration-track:4a49aa80fc2f79e0c7315bb33da4d4065ee12c547057d645e9ce02db050538c4` |
+| 5 | `structure` | [SourceRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InterfaceNamespaced.lean/declarations/sourcerealization.md) | 84 | `declaration-track:bb1325446c3d12477d7f7bcb5478334559daf2307fbf2944b2b0dd1d87882b31` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

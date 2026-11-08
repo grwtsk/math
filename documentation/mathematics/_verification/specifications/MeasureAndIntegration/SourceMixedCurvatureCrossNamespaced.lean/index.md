@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceMixedCurvatureCrossNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceMixedCurvatureCrossNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureCrossNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureCrossNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [source_shift_cross_integrable](../../../../MeasureAndIntegration/SourceMixedCurvatureCrossNamespaced.lean/declarations/source-shift-cross-integrable.md) | 39 | `result-track:de8634cfd77dbfd1e2ebf911a242b07c61d09b93b8b04bcde8c8d99a20fb3e29` |
-| 2 | `theorem` | [deriv_shift_cross_integrable](../../../../MeasureAndIntegration/SourceMixedCurvatureCrossNamespaced.lean/declarations/deriv-shift-cross-integrable.md) | 46 | `result-track:a6b3cfd0ce31283675208b8e674b4b9d3c85dd5ccf71c3f4abc1dc33cf954de2` |
-| 3 | `theorem` | [correlation_at_shift_difference](../../../../MeasureAndIntegration/SourceMixedCurvatureCrossNamespaced.lean/declarations/correlation-at-shift-difference.md) | 54 | `result-track:1bb898e062eb29cef0dde102d285cb0f3f85b7a5c1dc401cb8e485340d47b33e` |
-| 4 | `theorem` | [curvature_at_shift_difference](../../../../MeasureAndIntegration/SourceMixedCurvatureCrossNamespaced.lean/declarations/curvature-at-shift-difference.md) | 70 | `result-track:c777b4778a88108e2e86efaad39fc4cf8df47617a47b0901bb9c66dfc5d0e72e` |
-| 5 | `theorem` | [actual_mixed_curvature_finite_cross_eq_neg_products](../../../../MeasureAndIntegration/SourceMixedCurvatureCrossNamespaced.lean/declarations/actual-mixed-curvature-finite-cross-eq-neg-products.md) | 91 | `result-track:55142e5e3a1023bee94681d4b4b2f9c58b1937fb2d844bfe4b72ad9dea01102f` |
+| 1 | `theorem` | [source_shift_cross_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureCrossNamespaced.lean/declarations/source-shift-cross-integrable.md) | 39 | `result-track:de8634cfd77dbfd1e2ebf911a242b07c61d09b93b8b04bcde8c8d99a20fb3e29` |
+| 2 | `theorem` | [deriv_shift_cross_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureCrossNamespaced.lean/declarations/deriv-shift-cross-integrable.md) | 46 | `result-track:a6b3cfd0ce31283675208b8e674b4b9d3c85dd5ccf71c3f4abc1dc33cf954de2` |
+| 3 | `theorem` | [correlation_at_shift_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureCrossNamespaced.lean/declarations/correlation-at-shift-difference.md) | 54 | `result-track:1bb898e062eb29cef0dde102d285cb0f3f85b7a5c1dc401cb8e485340d47b33e` |
+| 4 | `theorem` | [curvature_at_shift_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureCrossNamespaced.lean/declarations/curvature-at-shift-difference.md) | 70 | `result-track:c777b4778a88108e2e86efaad39fc4cf8df47617a47b0901bb9c66dfc5d0e72e` |
+| 5 | `theorem` | [actual_mixed_curvature_finite_cross_eq_neg_products](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureCrossNamespaced.lean/declarations/actual-mixed-curvature-finite-cross-eq-neg-products.md) | 91 | `result-track:55142e5e3a1023bee94681d4b4b2f9c58b1937fb2d844bfe4b72ad9dea01102f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

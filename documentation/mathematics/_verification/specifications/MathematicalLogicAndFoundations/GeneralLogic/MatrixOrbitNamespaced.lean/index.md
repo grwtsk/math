@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbitNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbitNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbitNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbitNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [InSameOrbit](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbitNamespaced.lean/declarations/insameorbit.md) | 26 | `declaration-track:da9b377158187073d20217f91579f459aba23ecc73117be8c73893193f301b62` |
-| 2 | `structure` | [OrbitCanonicalizer](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbitNamespaced.lean/declarations/orbitcanonicalizer.md) | 31 | `declaration-track:8b821e533a55d690b899ad844aa1405ce54a02dce52b4a5a5ee1659bcaade74e` |
-| 3 | `def` | [copyCanonicalizer](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbitNamespaced.lean/declarations/copycanonicalizer.md) | 39 | `declaration-track:bbdf5d4694cc8a084304fdc6592de09ff4cb243082163825d904a38061ebdc8e` |
-| 4 | `theorem` | [orbitCanonicalizer_reconstruct](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbitNamespaced.lean/declarations/orbitcanonicalizer-reconstruct.md) | 47 | `result-track:61faf7fc829db1e4c324e7dfdba7ec19cbb70ea667981f0b61f42e123477dcd3` |
-| 5 | `theorem` | [copyCanonicalizer_reconstruct](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbitNamespaced.lean/declarations/copycanonicalizer-reconstruct.md) | 54 | `result-track:0f8884498c675ef9c6d177709325b3dc3f5908590995e4d6b9834d9ec17b08c8` |
+| 1 | `def` | [InSameOrbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbitNamespaced.lean/declarations/insameorbit.md) | 26 | `declaration-track:da9b377158187073d20217f91579f459aba23ecc73117be8c73893193f301b62` |
+| 2 | `structure` | [OrbitCanonicalizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbitNamespaced.lean/declarations/orbitcanonicalizer.md) | 31 | `declaration-track:8b821e533a55d690b899ad844aa1405ce54a02dce52b4a5a5ee1659bcaade74e` |
+| 3 | `def` | [copyCanonicalizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbitNamespaced.lean/declarations/copycanonicalizer.md) | 39 | `declaration-track:bbdf5d4694cc8a084304fdc6592de09ff4cb243082163825d904a38061ebdc8e` |
+| 4 | `theorem` | [orbitCanonicalizer_reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbitNamespaced.lean/declarations/orbitcanonicalizer-reconstruct.md) | 47 | `result-track:61faf7fc829db1e4c324e7dfdba7ec19cbb70ea667981f0b61f42e123477dcd3` |
+| 5 | `theorem` | [copyCanonicalizer_reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixOrbitNamespaced.lean/declarations/copycanonicalizer-reconstruct.md) | 54 | `result-track:0f8884498c675ef9c6d177709325b3dc3f5908590995e4d6b9834d9ec17b08c8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

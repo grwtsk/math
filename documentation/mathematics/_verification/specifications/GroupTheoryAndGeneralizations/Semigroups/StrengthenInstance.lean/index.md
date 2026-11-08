@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/Semigroups/StrengthenInstance.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/Semigroups/StrengthenInstance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/StrengthenInstance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/StrengthenInstance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Semigroup](../../../../../GroupTheoryAndGeneralizations/Semigroups/StrengthenInstance.lean/declarations/semigroup.md) | 4 | `declaration-track:0316718db06cd03ae3498f133f0e12f8800a10772221d2045ed0819ed179f72d` |
-| 2 | `def` | [maybeReassoc](../../../../../GroupTheoryAndGeneralizations/Semigroups/StrengthenInstance.lean/declarations/maybereassoc.md) | 8 | `declaration-track:c7de8b7dcaddc9ccea8c3754e94d647329520f9927916cf202f1113c451e55d7` |
-| 3 | `def` | [maybeReassocAlt](../../../../../GroupTheoryAndGeneralizations/Semigroups/StrengthenInstance.lean/declarations/maybereassocalt.md) | 14 | `declaration-track:e5063e275030005a1b6c06fb7cc4195881b858146b48279b455e50a566b05d3a` |
-| 4 | `def` | [maybeReassocPure](../../../../../GroupTheoryAndGeneralizations/Semigroups/StrengthenInstance.lean/declarations/maybereassocpure.md) | 20 | `declaration-track:014e8d152056343058508b2ccc5a8b4f5e9a51151ba3c2afe88bb494af7f4a75` |
+| 1 | `class` | [Semigroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/StrengthenInstance.lean/declarations/semigroup.md) | 4 | `declaration-track:0316718db06cd03ae3498f133f0e12f8800a10772221d2045ed0819ed179f72d` |
+| 2 | `def` | [maybeReassoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/StrengthenInstance.lean/declarations/maybereassoc.md) | 8 | `declaration-track:c7de8b7dcaddc9ccea8c3754e94d647329520f9927916cf202f1113c451e55d7` |
+| 3 | `def` | [maybeReassocAlt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/StrengthenInstance.lean/declarations/maybereassocalt.md) | 14 | `declaration-track:e5063e275030005a1b6c06fb7cc4195881b858146b48279b455e50a566b05d3a` |
+| 4 | `def` | [maybeReassocPure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/StrengthenInstance.lean/declarations/maybereassocpure.md) | 20 | `declaration-track:014e8d152056343058508b2ccc5a8b4f5e9a51151ba3c2afe88bb494af7f4a75` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ContextNamespacedProtectedDistinction.lean/index.md) · [Full source](../../../../Combinatorics/ContextNamespacedProtectedDistinction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextNamespacedProtectedDistinction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextNamespacedProtectedDistinction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ProtectedDistinction](../../../../Combinatorics/ContextNamespacedProtectedDistinction.lean/declarations/protecteddistinction.md) | 24 | `declaration-track:8a4a6bc0c9d3fecf12367ce95f33565fb773c40f816545f6797214114b577644` |
-| 2 | `def` | [requiredProtectedDistinctions](../../../../Combinatorics/ContextNamespacedProtectedDistinction.lean/declarations/requiredprotecteddistinctions.md) | 39 | `declaration-track:abd32d3c517bfd03d3504e2c9b75914fe00a4dfcaaa7ba741f2c1dbfd11a0814` |
-| 3 | `structure` | [ContextEnvelope](../../../../Combinatorics/ContextNamespacedProtectedDistinction.lean/declarations/contextenvelope.md) | 56 | `declaration-track:9691ad45863b21283c454df61fa52cf43b2df351cba313ba38ba72b21a7c4b86` |
-| 4 | `def` | [ContextEnvelope.preservesRequired](../../../../Combinatorics/ContextNamespacedProtectedDistinction.lean/declarations/contextenvelope-preservesrequired.md) | 70 | `declaration-track:8c6acd13dbeeba5f4828f67b79395f09efe4f4e76ebbf01753c1ea8b48885f19` |
-| 5 | `structure` | [ContextBoundCut](../../../../Combinatorics/ContextNamespacedProtectedDistinction.lean/declarations/contextboundcut.md) | 75 | `declaration-track:770d25385d4a4427321c374f3dce7f589efa5e148cbe923745d3378cb90e0425` |
+| 1 | `inductive` | [ProtectedDistinction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextNamespacedProtectedDistinction.lean/declarations/protecteddistinction.md) | 24 | `declaration-track:8a4a6bc0c9d3fecf12367ce95f33565fb773c40f816545f6797214114b577644` |
+| 2 | `def` | [requiredProtectedDistinctions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextNamespacedProtectedDistinction.lean/declarations/requiredprotecteddistinctions.md) | 39 | `declaration-track:abd32d3c517bfd03d3504e2c9b75914fe00a4dfcaaa7ba741f2c1dbfd11a0814` |
+| 3 | `structure` | [ContextEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextNamespacedProtectedDistinction.lean/declarations/contextenvelope.md) | 56 | `declaration-track:9691ad45863b21283c454df61fa52cf43b2df351cba313ba38ba72b21a7c4b86` |
+| 4 | `def` | [ContextEnvelope.preservesRequired](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextNamespacedProtectedDistinction.lean/declarations/contextenvelope-preservesrequired.md) | 70 | `declaration-track:8c6acd13dbeeba5f4828f67b79395f09efe4f4e76ebbf01753c1ea8b48885f19` |
+| 5 | `structure` | [ContextBoundCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextNamespacedProtectedDistinction.lean/declarations/contextboundcut.md) | 75 | `declaration-track:770d25385d4a4427321c374f3dce7f589efa5e148cbe923745d3378cb90e0425` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

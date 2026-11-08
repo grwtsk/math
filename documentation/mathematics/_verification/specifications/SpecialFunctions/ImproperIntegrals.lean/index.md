@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/ImproperIntegrals.lean/index.md) · [Full source](../../../../SpecialFunctions/ImproperIntegrals.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegrals.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegrals.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integrableOn_exp_Iic](../../../../SpecialFunctions/ImproperIntegrals.lean/declarations/integrableon-exp-iic.md) | 32 | `result-track:21e12581fa17c238ea6352a90610b90a4408365fd5a231f75557dcbf607ec37a` |
-| 2 | `theorem` | [integral_exp_Iic](../../../../SpecialFunctions/ImproperIntegrals.lean/declarations/integral-exp-iic.md) | 41 | `result-track:b3d1531ace8e7a80d89a54c84c69bcc7ee61c774053754f62fd9c0c52f91fdb3` |
-| 3 | `theorem` | [integral_exp_Iic_zero](../../../../SpecialFunctions/ImproperIntegrals.lean/declarations/integral-exp-iic-zero.md) | 49 | `result-track:dead79e27e6bec6df9090d09f65a3998efd9859c0cfe852433bd95a76de2a0fc` |
-| 4 | `theorem` | [integral_exp_neg_Ioi](../../../../SpecialFunctions/ImproperIntegrals.lean/declarations/integral-exp-neg-ioi.md) | 53 | `result-track:cb9b3f03bffa19d394afb8f24ad72e1dbdbe9318e3c01acaed2148e20079319d` |
-| 5 | `theorem` | [integral_exp_neg_Ioi_zero](../../../../SpecialFunctions/ImproperIntegrals.lean/declarations/integral-exp-neg-ioi-zero.md) | 57 | `result-track:9a4353116950b135390532b47f1007157ae17a226dd7c3f806ceb3bd7fadcbec` |
-| 6 | `theorem` | [integrableOn_Ioi_rpow_of_lt](../../../../SpecialFunctions/ImproperIntegrals.lean/declarations/integrableon-ioi-rpow-of-lt.md) | 62 | `result-track:2ab88eacc9742ccb8ef6f6fb9433a768e2ce59ff53cbe2b856938b85cbe39842` |
-| 7 | `theorem` | [integral_Ioi_rpow_of_lt](../../../../SpecialFunctions/ImproperIntegrals.lean/declarations/integral-ioi-rpow-of-lt.md) | 76 | `result-track:a3f923ab09d6270010c301b80d7c47d540d7a148ee5f7cb7e8b0416a649341af` |
-| 8 | `theorem` | [integrableOn_Ioi_cpow_of_lt](../../../../SpecialFunctions/ImproperIntegrals.lean/declarations/integrableon-ioi-cpow-of-lt.md) | 89 | `result-track:b8f04bda1a7040dce3f08996316f6224d89947a65ba29a800034fc5e48ff0a12` |
-| 9 | `theorem` | [integral_Ioi_cpow_of_lt](../../../../SpecialFunctions/ImproperIntegrals.lean/declarations/integral-ioi-cpow-of-lt.md) | 100 | `result-track:203de2686815e394f4aa00463d7c356e43ef45985c0b87d1759e7a488ea50def` |
+| 1 | `theorem` | [integrableOn_exp_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegrals.lean/declarations/integrableon-exp-iic.md) | 32 | `result-track:21e12581fa17c238ea6352a90610b90a4408365fd5a231f75557dcbf607ec37a` |
+| 2 | `theorem` | [integral_exp_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegrals.lean/declarations/integral-exp-iic.md) | 41 | `result-track:b3d1531ace8e7a80d89a54c84c69bcc7ee61c774053754f62fd9c0c52f91fdb3` |
+| 3 | `theorem` | [integral_exp_Iic_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegrals.lean/declarations/integral-exp-iic-zero.md) | 49 | `result-track:dead79e27e6bec6df9090d09f65a3998efd9859c0cfe852433bd95a76de2a0fc` |
+| 4 | `theorem` | [integral_exp_neg_Ioi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegrals.lean/declarations/integral-exp-neg-ioi.md) | 53 | `result-track:cb9b3f03bffa19d394afb8f24ad72e1dbdbe9318e3c01acaed2148e20079319d` |
+| 5 | `theorem` | [integral_exp_neg_Ioi_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegrals.lean/declarations/integral-exp-neg-ioi-zero.md) | 57 | `result-track:9a4353116950b135390532b47f1007157ae17a226dd7c3f806ceb3bd7fadcbec` |
+| 6 | `theorem` | [integrableOn_Ioi_rpow_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegrals.lean/declarations/integrableon-ioi-rpow-of-lt.md) | 62 | `result-track:2ab88eacc9742ccb8ef6f6fb9433a768e2ce59ff53cbe2b856938b85cbe39842` |
+| 7 | `theorem` | [integral_Ioi_rpow_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegrals.lean/declarations/integral-ioi-rpow-of-lt.md) | 76 | `result-track:a3f923ab09d6270010c301b80d7c47d540d7a148ee5f7cb7e8b0416a649341af` |
+| 8 | `theorem` | [integrableOn_Ioi_cpow_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegrals.lean/declarations/integrableon-ioi-cpow-of-lt.md) | 89 | `result-track:b8f04bda1a7040dce3f08996316f6224d89947a65ba29a800034fc5e48ff0a12` |
+| 9 | `theorem` | [integral_Ioi_cpow_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegrals.lean/declarations/integral-ioi-cpow-of-lt.md) | 100 | `result-track:203de2686815e394f4aa00463d7c356e43ef45985c0b87d1759e7a488ea50def` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

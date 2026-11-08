@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/MassRpowCheckAttemptAPI02Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/MassRpowCheckAttemptAPI02Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MassRpowCheckAttemptAPI02Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MassRpowCheckAttemptAPI02Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/MassRpowCheckAttemptAPI02Namespaced.lean/declarations/example.md) | 13 | `declaration-track:10bc75e7e9627e9ea7caf9282397771e548cf9e45345fafd0c884da32d60d7b0` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MassRpowCheckAttemptAPI02Namespaced.lean/declarations/example.md) | 13 | `declaration-track:10bc75e7e9627e9ea7caf9282397771e548cf9e45345fafd0c884da32d60d7b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

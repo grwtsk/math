@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoherenceNamespacedInformationCoherencePolicy.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoherenceNamespacedInformationCoherencePolicy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoherenceNamespacedInformationCoherencePolicy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoherenceNamespacedInformationCoherencePolicy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [InformationCoherencePolicy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoherenceNamespacedInformationCoherencePolicy.lean/declarations/informationcoherencepolicy.md) | 13 | `declaration-track:c80023eed95ee1e3298986500d86a6db8a9e8f8c2ae62acb3f4721cc258c0e7e` |
-| 2 | `def` | [InformationCoherencePolicy.accepted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoherenceNamespacedInformationCoherencePolicy.lean/declarations/informationcoherencepolicy-accepted.md) | 23 | `declaration-track:eebf93517251e861cb591880079d718589e441bab01f44bac02970ed1d297cb2` |
-| 3 | `theorem` | [InformationCoherencePolicy.no_strict_tensor_equality_if_accepted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoherenceNamespacedInformationCoherencePolicy.lean/declarations/informationcoherencepolicy-no-strict-tensor-equality-if-accepted.md) | 28 | `result-track:6912e24cce7a10ec72c9fa37b4bbb9369247d10f3919b71b08031886c660acfa` |
+| 1 | `structure` | [InformationCoherencePolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoherenceNamespacedInformationCoherencePolicy.lean/declarations/informationcoherencepolicy.md) | 13 | `declaration-track:c80023eed95ee1e3298986500d86a6db8a9e8f8c2ae62acb3f4721cc258c0e7e` |
+| 2 | `def` | [InformationCoherencePolicy.accepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoherenceNamespacedInformationCoherencePolicy.lean/declarations/informationcoherencepolicy-accepted.md) | 23 | `declaration-track:eebf93517251e861cb591880079d718589e441bab01f44bac02970ed1d297cb2` |
+| 3 | `theorem` | [InformationCoherencePolicy.no_strict_tensor_equality_if_accepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoherenceNamespacedInformationCoherencePolicy.lean/declarations/informationcoherencepolicy-no-strict-tensor-equality-if-accepted.md) | 28 | `result-track:6912e24cce7a10ec72c9fa37b4bbb9369247d10f3919b71b08031886c660acfa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

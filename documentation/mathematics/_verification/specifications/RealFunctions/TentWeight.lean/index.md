@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/TentWeight.lean/index.md) · [Full source](../../../../RealFunctions/TentWeight.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TentWeight.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TentWeight.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,16 +61,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [tent](../../../../RealFunctions/TentWeight.lean/declarations/tent.md) | 24 | `declaration-track:0a74de0c902a51b2cdc78f3b15a1c4ff387ad4dc01975104d4447431e3e46694` |
-| 2 | `theorem` | [tent_nonneg](../../../../RealFunctions/TentWeight.lean/declarations/tent-nonneg.md) | 26 | `result-track:9070b80f6dcfd40631b2948c23212d2dab964b9cdf3bb15d7a796046bc7182de` |
-| 3 | `theorem` | [tent_le_one](../../../../RealFunctions/TentWeight.lean/declarations/tent-le-one.md) | 28 | `result-track:b46487f777f0665ec1fc2a0f33159101f9a3e1e049ef92b236eceb47276748f5` |
-| 4 | `theorem` | [tent_pos_iff](../../../../RealFunctions/TentWeight.lean/declarations/tent-pos-iff.md) | 33 | `result-track:a75088e69af411a7f8c90f4a1218bd65090d4e8d83da35359d62b24a5c64c746` |
-| 5 | `theorem` | [tent_eq_zero_of_outside](../../../../RealFunctions/TentWeight.lean/declarations/tent-eq-zero-of-outside.md) | 40 | `result-track:38af1acf9457d5124504d3bcc4e92b7112ee612fc081ad9607f1ac3b08cf6643` |
-| 6 | `theorem` | [tent_on_left](../../../../RealFunctions/TentWeight.lean/declarations/tent-on-left.md) | 46 | `result-track:17566dd7b6a2b0b6b3e4072beadfa3e7b31180962ed4ed643cb090e89c6950a6` |
-| 7 | `theorem` | [tent_on_right](../../../../RealFunctions/TentWeight.lean/declarations/tent-on-right.md) | 55 | `result-track:71e445e66af84f21aca76acc78e688494e14fdb3b49e28b5aa7468cf49c76330` |
-| 8 | `theorem` | [hinge_second_difference](../../../../RealFunctions/TentWeight.lean/declarations/hinge-second-difference.md) | 66 | `result-track:8c9b62be13535cfa2d5b2a487b4fab8f420157d0e5ce63b2c6ddecabf42ef3d8` |
-| 9 | `theorem` | [affine_second_difference](../../../../RealFunctions/TentWeight.lean/declarations/affine-second-difference.md) | 92 | `result-track:ad1164cd9380f2d0672fc1e33bbebc6fe0f1295f6c2c5db6caae9c46807a9004` |
-| 10 | `theorem` | [quadratic_main_second_difference](../../../../RealFunctions/TentWeight.lean/declarations/quadratic-main-second-difference.md) | 97 | `result-track:dae39a0c395adcc0d978fd2c1c7d984f1bbadf30ea7eec42b17504be9d5c05da` |
+| 1 | `def` | [tent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TentWeight.lean/declarations/tent.md) | 24 | `declaration-track:0a74de0c902a51b2cdc78f3b15a1c4ff387ad4dc01975104d4447431e3e46694` |
+| 2 | `theorem` | [tent_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TentWeight.lean/declarations/tent-nonneg.md) | 26 | `result-track:9070b80f6dcfd40631b2948c23212d2dab964b9cdf3bb15d7a796046bc7182de` |
+| 3 | `theorem` | [tent_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TentWeight.lean/declarations/tent-le-one.md) | 28 | `result-track:b46487f777f0665ec1fc2a0f33159101f9a3e1e049ef92b236eceb47276748f5` |
+| 4 | `theorem` | [tent_pos_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TentWeight.lean/declarations/tent-pos-iff.md) | 33 | `result-track:a75088e69af411a7f8c90f4a1218bd65090d4e8d83da35359d62b24a5c64c746` |
+| 5 | `theorem` | [tent_eq_zero_of_outside](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TentWeight.lean/declarations/tent-eq-zero-of-outside.md) | 40 | `result-track:38af1acf9457d5124504d3bcc4e92b7112ee612fc081ad9607f1ac3b08cf6643` |
+| 6 | `theorem` | [tent_on_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TentWeight.lean/declarations/tent-on-left.md) | 46 | `result-track:17566dd7b6a2b0b6b3e4072beadfa3e7b31180962ed4ed643cb090e89c6950a6` |
+| 7 | `theorem` | [tent_on_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TentWeight.lean/declarations/tent-on-right.md) | 55 | `result-track:71e445e66af84f21aca76acc78e688494e14fdb3b49e28b5aa7468cf49c76330` |
+| 8 | `theorem` | [hinge_second_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TentWeight.lean/declarations/hinge-second-difference.md) | 66 | `result-track:8c9b62be13535cfa2d5b2a487b4fab8f420157d0e5ce63b2c6ddecabf42ef3d8` |
+| 9 | `theorem` | [affine_second_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TentWeight.lean/declarations/affine-second-difference.md) | 92 | `result-track:ad1164cd9380f2d0672fc1e33bbebc6fe0f1295f6c2c5db6caae9c46807a9004` |
+| 10 | `theorem` | [quadratic_main_second_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TentWeight.lean/declarations/quadratic-main-second-difference.md) | 97 | `result-track:dae39a0c395adcc0d978fd2c1c7d984f1bbadf30ea7eec42b17504be9d5c05da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

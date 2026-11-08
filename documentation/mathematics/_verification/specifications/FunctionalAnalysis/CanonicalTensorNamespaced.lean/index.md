@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/CanonicalTensorNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/CanonicalTensorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CanonicalTensorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CanonicalTensorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [InnerProductSpace.canonicalContravariantTensor](../../../../FunctionalAnalysis/CanonicalTensorNamespaced.lean/declarations/canonicalcontravarianttensor.md) | 39 | `declaration-track:6a6ed5720f523b56e45d7395690747f5a48a15f3a0e24feac6ae33b5f8f131ad` |
-| 2 | `def` | [InnerProductSpace.canonicalCovariantTensor](../../../../FunctionalAnalysis/CanonicalTensorNamespaced.lean/declarations/canonicalcovarianttensor.md) | 46 | `declaration-track:47db6387ea5f43084b00d1721a6a5049ac05cdad59ca23b4fc388ff38f5c9879` |
-| 3 | `theorem` | [InnerProductSpace.canonicalCovariantTensor_eq_sum](../../../../FunctionalAnalysis/CanonicalTensorNamespaced.lean/declarations/canonicalcovarianttensor-eq-sum.md) | 50 | `result-track:cd29ed642e14f910bc8077b0542f3af07d698823e12116f86775ff811020bbfd` |
+| 1 | `def` | [InnerProductSpace.canonicalContravariantTensor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CanonicalTensorNamespaced.lean/declarations/canonicalcontravarianttensor.md) | 39 | `declaration-track:6a6ed5720f523b56e45d7395690747f5a48a15f3a0e24feac6ae33b5f8f131ad` |
+| 2 | `def` | [InnerProductSpace.canonicalCovariantTensor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CanonicalTensorNamespaced.lean/declarations/canonicalcovarianttensor.md) | 46 | `declaration-track:47db6387ea5f43084b00d1721a6a5049ac05cdad59ca23b4fc388ff38f5c9879` |
+| 3 | `theorem` | [InnerProductSpace.canonicalCovariantTensor_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CanonicalTensorNamespaced.lean/declarations/canonicalcovarianttensor-eq-sum.md) | 50 | `result-track:cd29ed642e14f910bc8077b0542f3af07d698823e12116f86775ff811020bbfd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

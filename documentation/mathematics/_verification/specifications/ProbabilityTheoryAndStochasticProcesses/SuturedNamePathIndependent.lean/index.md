@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/SuturedNamePathIndependent.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/SuturedNamePathIndependent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SuturedNamePathIndependent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SuturedNamePathIndependent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sutured_name_path_independent](../../../../ProbabilityTheoryAndStochasticProcesses/SuturedNamePathIndependent.lean/declarations/sutured-name-path-independent.md) | 11 | `result-track:14b1c0cbda0feacdf4c1c92eb4fb79ec118bb12828c668ea6184d5197b818198` |
+| 1 | `theorem` | [sutured_name_path_independent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SuturedNamePathIndependent.lean/declarations/sutured-name-path-independent.md) | 11 | `result-track:14b1c0cbda0feacdf4c1c92eb4fb79ec118bb12828c668ea6184d5197b818198` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

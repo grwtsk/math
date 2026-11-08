@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Notation3FindWithTag.lean/index.md) · [Full source](../../../../GeneralTopology/Notation3FindWithTag.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3FindWithTag.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3FindWithTag.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,23 +58,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Filter](../../../../GeneralTopology/Notation3FindWithTag.lean/declarations/filter.md) | 12 | `declaration-track:2ff6148d8255a4148d0252b0b1ff0f204219161ef7a8426f260fb5d58361cab7` |
-| 2 | `def` | [Filter.atTop](../../../../GeneralTopology/Notation3FindWithTag.lean/declarations/filter-attop.md) | 13 | `declaration-track:72b0ba02bf0279a7204f173a7f3582c948687cfe0337cb48702d730dd46c8644` |
-| 3 | `def` | [Filter.eventually](../../../../GeneralTopology/Notation3FindWithTag.lean/declarations/filter-eventually.md) | 14 | `declaration-track:95045fe26cc3ed91345c2f8866072db4a9d10ab3e886add802b382168f52acf5` |
-| 4 | `def` | [findWithTag](../../../../GeneralTopology/Notation3FindWithTag.lean/declarations/findwithtag.md) | 28 | `declaration-track:d58f98e62801399f6a30b8d1c5c3ccdbca420a776b45167ad4ebf6dd11a9bdd9` |
-| 5 | `def` | [testTagAppFns](../../../../GeneralTopology/Notation3FindWithTag.lean/declarations/testtagappfns.md) | 40 | `declaration-track:4661355c1c0d677a46db3707c0dff905fc1c573f4a981264c05e33a46ee6cda4` |
-| 6 | `def` | [foobar](../../../../GeneralTopology/Notation3FindWithTag.lean/declarations/foobar.md) | 72 | `declaration-track:38f669beb2e69446e9d33f340d74c2e00b24c7224bffc7bd05c46c5cf6047fc4` |
-| 7 | `def` | [func](../../../../GeneralTopology/Notation3FindWithTag.lean/declarations/func.md) | 94 | `declaration-track:4714fa9fef807fc119af05c1e6a01b25232f62f955ed38e237931bcf0171b7d6` |
-| 8 | `structure` | [MyUnit](../../../../GeneralTopology/Notation3FindWithTag.lean/declarations/myunit-source-edition-2.md) | 99 | `declaration-track:f56434d988196e756a0010a810fb2b4f8cdd8acfe83ce2f9c79157ee7c893790` |
-| 9 | `structure` | [MyUnit'](../../../../GeneralTopology/Notation3FindWithTag.lean/declarations/myunit.md) | 106 | `declaration-track:d09c18b3b916aee721bb4f62c3cb034c578ee6b49679fb611bf1badd6dee924f` |
-| 10 | `instance` | [(anonymous)](../../../../GeneralTopology/Notation3FindWithTag.lean/declarations/instance.md) | 107 | `declaration-track:8325aa48d767d912f2055d1b994f24fbd7e2ef30eb6e2a53c1f7e03c9b01b3e3` |
-| 11 | `def` | [foo](../../../../GeneralTopology/Notation3FindWithTag.lean/declarations/foo.md) | 118 | `declaration-track:95c259016b2e1ae219b51dd3e0a3af8c44857699853c42ed2982df9f27dd2afc` |
-| 12 | `def` | [bar](../../../../GeneralTopology/Notation3FindWithTag.lean/declarations/bar-source-edition-2.md) | 119 | `declaration-track:d6b583b894cd4c74b96dffa91d2cfa416728ee1a1c7c0ef1c022f42df6c410c7` |
-| 13 | `def` | [foo'](../../../../GeneralTopology/Notation3FindWithTag.lean/declarations/foo-source-edition-2.md) | 127 | `declaration-track:c8eec97007b761edacfff731aef766e895f3522fc616c70318a31e247e003cfd` |
-| 14 | `def` | [bar'](../../../../GeneralTopology/Notation3FindWithTag.lean/declarations/bar.md) | 128 | `declaration-track:73dba338d7888347c04805073d2e2288d040d66b6154d86e2e36fe718eea67c4` |
-| 15 | `def` | [myId](../../../../GeneralTopology/Notation3FindWithTag.lean/declarations/myid.md) | 141 | `declaration-track:32b8255633eec6469f73d0091bb89d998d187cc386088c536d5f2c0fdb310c9c` |
-| 16 | `def` | [idStr](../../../../GeneralTopology/Notation3FindWithTag.lean/declarations/idstr.md) | 167 | `declaration-track:25c507658998ef059e50e28f67ea57c273674a97f93aec5b610f78476d81094e` |
-| 17 | `example` | [(anonymous)](../../../../GeneralTopology/Notation3FindWithTag.lean/declarations/example.md) | 203 | `declaration-track:bc305c80d143dedc4ddbb95783335b69854c9ebe074044e5768cfc18dc3dea94` |
+| 1 | `def` | [Filter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3FindWithTag.lean/declarations/filter.md) | 12 | `declaration-track:2ff6148d8255a4148d0252b0b1ff0f204219161ef7a8426f260fb5d58361cab7` |
+| 2 | `def` | [Filter.atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3FindWithTag.lean/declarations/filter-attop.md) | 13 | `declaration-track:72b0ba02bf0279a7204f173a7f3582c948687cfe0337cb48702d730dd46c8644` |
+| 3 | `def` | [Filter.eventually](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3FindWithTag.lean/declarations/filter-eventually.md) | 14 | `declaration-track:95045fe26cc3ed91345c2f8866072db4a9d10ab3e886add802b382168f52acf5` |
+| 4 | `def` | [findWithTag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3FindWithTag.lean/declarations/findwithtag.md) | 28 | `declaration-track:d58f98e62801399f6a30b8d1c5c3ccdbca420a776b45167ad4ebf6dd11a9bdd9` |
+| 5 | `def` | [testTagAppFns](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3FindWithTag.lean/declarations/testtagappfns.md) | 40 | `declaration-track:4661355c1c0d677a46db3707c0dff905fc1c573f4a981264c05e33a46ee6cda4` |
+| 6 | `def` | [foobar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3FindWithTag.lean/declarations/foobar.md) | 72 | `declaration-track:38f669beb2e69446e9d33f340d74c2e00b24c7224bffc7bd05c46c5cf6047fc4` |
+| 7 | `def` | [func](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3FindWithTag.lean/declarations/func.md) | 94 | `declaration-track:4714fa9fef807fc119af05c1e6a01b25232f62f955ed38e237931bcf0171b7d6` |
+| 8 | `structure` | [MyUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3FindWithTag.lean/declarations/myunit-source-edition-2.md) | 99 | `declaration-track:f56434d988196e756a0010a810fb2b4f8cdd8acfe83ce2f9c79157ee7c893790` |
+| 9 | `structure` | [MyUnit'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3FindWithTag.lean/declarations/myunit.md) | 106 | `declaration-track:d09c18b3b916aee721bb4f62c3cb034c578ee6b49679fb611bf1badd6dee924f` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3FindWithTag.lean/declarations/instance.md) | 107 | `declaration-track:8325aa48d767d912f2055d1b994f24fbd7e2ef30eb6e2a53c1f7e03c9b01b3e3` |
+| 11 | `def` | [foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3FindWithTag.lean/declarations/foo.md) | 118 | `declaration-track:95c259016b2e1ae219b51dd3e0a3af8c44857699853c42ed2982df9f27dd2afc` |
+| 12 | `def` | [bar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3FindWithTag.lean/declarations/bar-source-edition-2.md) | 119 | `declaration-track:d6b583b894cd4c74b96dffa91d2cfa416728ee1a1c7c0ef1c022f42df6c410c7` |
+| 13 | `def` | [foo'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3FindWithTag.lean/declarations/foo-source-edition-2.md) | 127 | `declaration-track:c8eec97007b761edacfff731aef766e895f3522fc616c70318a31e247e003cfd` |
+| 14 | `def` | [bar'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3FindWithTag.lean/declarations/bar.md) | 128 | `declaration-track:73dba338d7888347c04805073d2e2288d040d66b6154d86e2e36fe718eea67c4` |
+| 15 | `def` | [myId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3FindWithTag.lean/declarations/myid.md) | 141 | `declaration-track:32b8255633eec6469f73d0091bb89d998d187cc386088c536d5f2c0fdb310c9c` |
+| 16 | `def` | [idStr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3FindWithTag.lean/declarations/idstr.md) | 167 | `declaration-track:25c507658998ef059e50e28f67ea57c273674a97f93aec5b610f78476d81094e` |
+| 17 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3FindWithTag.lean/declarations/example.md) | 203 | `declaration-track:bc305c80d143dedc4ddbb95783335b69854c9ebe074044e5768cfc18dc3dea94` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

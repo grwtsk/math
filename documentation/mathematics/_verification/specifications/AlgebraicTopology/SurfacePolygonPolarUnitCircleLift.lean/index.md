@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonPolarUnitCircleLift.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonPolarUnitCircleLift.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarUnitCircleLift.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarUnitCircleLift.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarAddCircleKernel`](../../../../AlgebraicTopology/SurfacePolygonPolarAddCircleKernel.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarAddCircleKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarAddCircleKernel.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Topology.Constructions` — import line 9; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 10; external provider; requires a separately pinned dependency.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [realAnglePolarDisk_eq_of_unitAddCircle_eq](../../../../AlgebraicTopology/SurfacePolygonPolarUnitCircleLift.lean/declarations/realanglepolardisk-eq-of-unitaddcircle-eq.md) | 34 | `result-track:f32200e1acd83f046b537962533897d03122381df87cb8ec00bc3ce2d81ae951` |
-| 2 | `def` | [unitCirclePolarDisk](../../../../AlgebraicTopology/SurfacePolygonPolarUnitCircleLift.lean/declarations/unitcirclepolardisk.md) | 49 | `declaration-track:43f1fedca65e2102ae48dceda29bcb925d9c8ce97a3b1121daa89c374c8cfa19` |
-| 3 | `theorem` | [unitCirclePolarDisk_coe](../../../../AlgebraicTopology/SurfacePolygonPolarUnitCircleLift.lean/declarations/unitcirclepolardisk-coe.md) | 59 | `result-track:2dc975810d94ee5d899cbb8eab825b13ebb3522c886ac1101b285f893ca51157` |
-| 4 | `theorem` | [unitCirclePolarDisk_zero](../../../../AlgebraicTopology/SurfacePolygonPolarUnitCircleLift.lean/declarations/unitcirclepolardisk-zero.md) | 65 | `result-track:507bd3dbda115c3073711af4b4d1fb289380031254491280b6ebcc24412bc4af` |
+| 1 | `theorem` | [realAnglePolarDisk_eq_of_unitAddCircle_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarUnitCircleLift.lean/declarations/realanglepolardisk-eq-of-unitaddcircle-eq.md) | 34 | `result-track:f32200e1acd83f046b537962533897d03122381df87cb8ec00bc3ce2d81ae951` |
+| 2 | `def` | [unitCirclePolarDisk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarUnitCircleLift.lean/declarations/unitcirclepolardisk.md) | 49 | `declaration-track:43f1fedca65e2102ae48dceda29bcb925d9c8ce97a3b1121daa89c374c8cfa19` |
+| 3 | `theorem` | [unitCirclePolarDisk_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarUnitCircleLift.lean/declarations/unitcirclepolardisk-coe.md) | 59 | `result-track:2dc975810d94ee5d899cbb8eab825b13ebb3522c886ac1101b285f893ca51157` |
+| 4 | `theorem` | [unitCirclePolarDisk_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarUnitCircleLift.lean/declarations/unitcirclepolardisk-zero.md) | 65 | `result-track:507bd3dbda115c3073711af4b4d1fb289380031254491280b6ebcc24412bc4af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instNormedAddCommGroup](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/declarations/instnormedaddcommgroup.md) | 17 | `declaration-track:bcb167353940da7456f3a6118876577032f8b3562311020929df0584ae7cffcb` |
-| 2 | `theorem` | [norm_cast_real](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/declarations/norm-cast-real.md) | 22 | `result-track:79e2931b08856bee00b01b3576c40c23e14baa15da0dc59bbed70d2c62fb25d8` |
-| 3 | `theorem` | [norm_eq_abs](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/declarations/norm-eq-abs.md) | 25 | `result-track:f928d861f61c73bc7936488fb8801d88dce1ece263cfc96adfac37ebe54de114` |
-| 4 | `theorem` | [norm_natCast](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/declarations/norm-natcast.md) | 29 | `result-track:0294637521ab14a6a0a8b4ad2b158f3138af960127d4c810a649307ea80f591d` |
-| 5 | `theorem` | [_root_.NNReal.natCast_natAbs](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/declarations/root-nnreal-natcast-natabs.md) | 31 | `result-track:6df567c006ba5dead5eb440026e1a345633c3cbb4d7efedb182939d1bae34e4c` |
-| 6 | `theorem` | [abs_le_floor_nnreal_iff](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/declarations/abs-le-floor-nnreal-iff.md) | 38 | `result-track:ab71bf72a49c13ec3933905c929d25e117ef01cccd5966383b74450c1b2cd18d` |
-| 7 | `theorem` | [norm_zpow_le_mul_norm](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/declarations/norm-zpow-le-mul-norm.md) | 50 | `result-track:fd2074053d08b0a60c569503e86cb0b5d0e9e0991e4085c7a97a16cd5504601a` |
-| 8 | `theorem` | [nnnorm_zpow_le_mul_norm](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/declarations/nnnorm-zpow-le-mul-norm.md) | 54 | `result-track:2b32c53587254dd792e48fed36296a8e88e47d3719ef7c78fee8982e0f5ff09b` |
+| 1 | `instance` | [instNormedAddCommGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/declarations/instnormedaddcommgroup.md) | 17 | `declaration-track:bcb167353940da7456f3a6118876577032f8b3562311020929df0584ae7cffcb` |
+| 2 | `theorem` | [norm_cast_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/declarations/norm-cast-real.md) | 22 | `result-track:79e2931b08856bee00b01b3576c40c23e14baa15da0dc59bbed70d2c62fb25d8` |
+| 3 | `theorem` | [norm_eq_abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/declarations/norm-eq-abs.md) | 25 | `result-track:f928d861f61c73bc7936488fb8801d88dce1ece263cfc96adfac37ebe54de114` |
+| 4 | `theorem` | [norm_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/declarations/norm-natcast.md) | 29 | `result-track:0294637521ab14a6a0a8b4ad2b158f3138af960127d4c810a649307ea80f591d` |
+| 5 | `theorem` | [_root_.NNReal.natCast_natAbs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/declarations/root-nnreal-natcast-natabs.md) | 31 | `result-track:6df567c006ba5dead5eb440026e1a345633c3cbb4d7efedb182939d1bae34e4c` |
+| 6 | `theorem` | [abs_le_floor_nnreal_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/declarations/abs-le-floor-nnreal-iff.md) | 38 | `result-track:ab71bf72a49c13ec3933905c929d25e117ef01cccd5966383b74450c1b2cd18d` |
+| 7 | `theorem` | [norm_zpow_le_mul_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/declarations/norm-zpow-le-mul-norm.md) | 50 | `result-track:fd2074053d08b0a60c569503e86cb0b5d0e9e0991e4085c7a97a16cd5504601a` |
+| 8 | `theorem` | [nnnorm_zpow_le_mul_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupInt.lean/declarations/nnnorm-zpow-le-mul-norm.md) | 54 | `result-track:2b32c53587254dd792e48fed36296a8e88e47d3719ef7c78fee8982e0f5ff09b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

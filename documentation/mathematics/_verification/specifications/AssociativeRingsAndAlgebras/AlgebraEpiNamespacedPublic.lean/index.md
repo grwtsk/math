@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsEpi](../../../../AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/isepi.md) | 37 | `declaration-track:b277fef0098815a63f53f2e9376e9b9bb4818b617d7bdeaa577e9b4e1e057019` |
-| 2 | `lemma` | [isEpi_iff_forall_one_tmul_eq](../../../../AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/isepi-iff-forall-one-tmul-eq.md) | 41 | `result-track:4b44b7190841131e348ffc7dacbc18b39998554ae6f050bf87310964e225cdd4` |
-| 3 | `lemma` | [isEpi_of_surjective_algebraMap](../../../../AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/isepi-of-surjective-algebramap.md) | 60 | `result-track:9fe366a74e040738b3e659c98768b79cdb38944c03f8c39c84427f6011e29dbd` |
-| 4 | `instance` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/instance.md) | 69 | `declaration-track:963481cf51e412d6b09e6d4e7ea9c2f725b924daaf63f6f28cf6a0539e4c5152` |
-| 5 | `lemma` | [isEpi_iff_surjective_algebraMap_of_finite](../../../../AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/isepi-iff-surjective-algebramap-of-finite.md) | 86 | `result-track:2f35d2419c96e5937035c368a3febb5a3b8e51153d6526d6a097f0723598b36a` |
-| 6 | `lemma` | [tmul_comm](../../../../AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/tmul-comm.md) | 115 | `result-track:7a8ece7fa02615d745ef68782261a806f2e410cc99335a07fdbf426f962b27d7` |
-| 7 | `lemma` | [injective_lift_lsmul](../../../../AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/injective-lift-lsmul.md) | 129 | `result-track:32a493890b1c6cdbacaa848dac1552db843931ffbe020625eca6ca61fa66a4ab` |
-| 8 | `def` | [Algebra Epi Namespaced Public](../../../../AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/lid.md) | 161 | `declaration-track:1062490b5742f5bb46f959d642a029d60889b7e69b016322b490e3932e4a473d` |
-| 9 | `lemma` | [Algebra Epi Namespaced Public](../../../../AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/lid-apply-tmul.md) | 166 | `result-track:257d0307f2b48fc90995e2db021d26de37b12859c555cdff037847bc465ef31b` |
-| 10 | `lemma` | [Algebra Epi Namespaced Public](../../../../AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/lid-symm-apply.md) | 170 | `result-track:4ca2d68d90dc03ef16d88d1e519f44349264fc2d6d56cc3b07dd8c88b88d9aec` |
+| 1 | `class` | [IsEpi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/isepi.md) | 37 | `declaration-track:b277fef0098815a63f53f2e9376e9b9bb4818b617d7bdeaa577e9b4e1e057019` |
+| 2 | `lemma` | [isEpi_iff_forall_one_tmul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/isepi-iff-forall-one-tmul-eq.md) | 41 | `result-track:4b44b7190841131e348ffc7dacbc18b39998554ae6f050bf87310964e225cdd4` |
+| 3 | `lemma` | [isEpi_of_surjective_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/isepi-of-surjective-algebramap.md) | 60 | `result-track:9fe366a74e040738b3e659c98768b79cdb38944c03f8c39c84427f6011e29dbd` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/instance.md) | 69 | `declaration-track:963481cf51e412d6b09e6d4e7ea9c2f725b924daaf63f6f28cf6a0539e4c5152` |
+| 5 | `lemma` | [isEpi_iff_surjective_algebraMap_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/isepi-iff-surjective-algebramap-of-finite.md) | 86 | `result-track:2f35d2419c96e5937035c368a3febb5a3b8e51153d6526d6a097f0723598b36a` |
+| 6 | `lemma` | [tmul_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/tmul-comm.md) | 115 | `result-track:7a8ece7fa02615d745ef68782261a806f2e410cc99335a07fdbf426f962b27d7` |
+| 7 | `lemma` | [injective_lift_lsmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/injective-lift-lsmul.md) | 129 | `result-track:32a493890b1c6cdbacaa848dac1552db843931ffbe020625eca6ca61fa66a4ab` |
+| 8 | `def` | [Algebra Epi Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/lid.md) | 161 | `declaration-track:1062490b5742f5bb46f959d642a029d60889b7e69b016322b490e3932e4a473d` |
+| 9 | `lemma` | [Algebra Epi Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/lid-apply-tmul.md) | 166 | `result-track:257d0307f2b48fc90995e2db021d26de37b12859c555cdff037847bc465ef31b` |
+| 10 | `lemma` | [Algebra Epi Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiNamespacedPublic.lean/declarations/lid-symm-apply.md) | 170 | `result-track:4ca2d68d90dc03ef16d88d1e519f44349264fc2d6d56cc3b07dd8c88b88d9aec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

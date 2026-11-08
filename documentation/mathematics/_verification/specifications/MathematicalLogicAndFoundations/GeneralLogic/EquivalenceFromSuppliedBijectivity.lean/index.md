@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivalenceFromSuppliedBijectivity.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivalenceFromSuppliedBijectivity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivalenceFromSuppliedBijectivity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivalenceFromSuppliedBijectivity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `DAF.Comparison.Core` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Logic.Equiv.Defs` — import line 20; external provider; requires a separately pinned dependency.
-- [Comparison Predicates And Composition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ComparisonPredicatesAndComposition.lean/index.md) — import line 22; pinned internal source present.
+- [Comparison Predicates And Composition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ComparisonPredicatesAndComposition.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toEquiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivalenceFromSuppliedBijectivity.lean/declarations/toequiv.md) | 38 | `declaration-track:b744d33fb73892ac65787a0a7254b50c954c04600767a7c92f3023edf02d7da6` |
-| 2 | `theorem` | [toEquiv_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivalenceFromSuppliedBijectivity.lean/declarations/toequiv-apply.md) | 42 | `result-track:c933b2bafbfdb3b4b8bc017aed311cbbb756caf30dce7dd20102ea1d9640c6cb` |
+| 1 | `def` | [toEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivalenceFromSuppliedBijectivity.lean/declarations/toequiv.md) | 38 | `declaration-track:b744d33fb73892ac65787a0a7254b50c954c04600767a7c92f3023edf02d7da6` |
+| 2 | `theorem` | [toEquiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivalenceFromSuppliedBijectivity.lean/declarations/toequiv-apply.md) | 42 | `result-track:c933b2bafbfdb3b4b8bc017aed311cbbb756caf30dce7dd20102ea1d9640c6cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Id](../../../../../ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/id.md) | 47 | `declaration-track:f1e9e8116458f7219476f5aa11721ac1e05e0f181caa59e94db33aba37dcf33d` |
-| 2 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/instance.md) | 52 | `declaration-track:0905cd266859954ba943883dbae0543384f929677d0227d0673411869f4580ae` |
-| 3 | `def` | [hasBind](../../../../../ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/hasbind.md) | 61 | `declaration-track:fa9898d769dbc345887c1574ebe652399ed5460712afd2b5d28af3d4215f817e` |
-| 4 | `def` | [run](../../../../../ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/run.md) | 71 | `declaration-track:9e1155354079ada4fe8308f757c193ae157ea65bd4fa6441c87c1c383c3ceea9` |
-| 5 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 73 | `declaration-track:0cec0e547d02760354d1fabdb2eec348b85aea814c4554ada0069767e3a99fea` |
-| 6 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 76 | `declaration-track:80a990bde40165d78bc3c386c29911a00f438cfb49726e15eee5522527a73230` |
-| 7 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 79 | `declaration-track:cc94cca65ebf621b3a4167076a543420fb88fe46f029387d857576119debebf7` |
-| 8 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 83 | `declaration-track:5c2f68837a70953f29c81f6e11f05b380a2219eb767f569864d38561c8a22da4` |
-| 9 | `def` | [ForIn.toArray](../../../../../ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/forin-toarray.md) | 93 | `declaration-track:8f0979b69e774c8fe1492c0f31f18976db45740dc9e1051fe1d501393c82c950` |
-| 10 | `def` | [ForIn.toList](../../../../../ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/forin-tolist.md) | 97 | `declaration-track:f3ee47ce27e20595266c5fc2f1400655db5edc097e347179a1a6978ff9c50a22` |
+| 1 | `def` | [Id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/id.md) | 47 | `declaration-track:f1e9e8116458f7219476f5aa11721ac1e05e0f181caa59e94db33aba37dcf33d` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/instance.md) | 52 | `declaration-track:0905cd266859954ba943883dbae0543384f929677d0227d0673411869f4580ae` |
+| 3 | `def` | [hasBind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/hasbind.md) | 61 | `declaration-track:fa9898d769dbc345887c1574ebe652399ed5460712afd2b5d28af3d4215f817e` |
+| 4 | `def` | [run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/run.md) | 71 | `declaration-track:9e1155354079ada4fe8308f757c193ae157ea65bd4fa6441c87c1c383c3ceea9` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 73 | `declaration-track:0cec0e547d02760354d1fabdb2eec348b85aea814c4554ada0069767e3a99fea` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 76 | `declaration-track:80a990bde40165d78bc3c386c29911a00f438cfb49726e15eee5522527a73230` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 79 | `declaration-track:cc94cca65ebf621b3a4167076a543420fb88fe46f029387d857576119debebf7` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 83 | `declaration-track:5c2f68837a70953f29c81f6e11f05b380a2219eb767f569864d38561c8a22da4` |
+| 9 | `def` | [ForIn.toArray](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/forin-toarray.md) | 93 | `declaration-track:8f0979b69e774c8fe1492c0f31f18976db45740dc9e1051fe1d501393c82c950` |
+| 10 | `def` | [ForIn.toList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdNamespacedPublic.lean/declarations/forin-tolist.md) | 97 | `declaration-track:f3ee47ce27e20595266c5fc2f1400655db5edc097e347179a1a6978ff9c50a22` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

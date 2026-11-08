@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicAux1.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicAux1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicAux1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicAux1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [aux1](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicAux1.lean/declarations/aux1.md) | 41 | `result-track:582c98f0417bf05c2f968c989216d3e09d5ef76f679fd1ff416abe60a27fb197` |
-| 2 | `theorem` | [aux2](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicAux1.lean/declarations/aux2.md) | 46 | `result-track:27d770d13d4b3b630dc9ba30597ac41533402515deb6e2c4c31adaf83fb13411` |
-| 3 | `theorem` | [aux3](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicAux1.lean/declarations/aux3.md) | 51 | `result-track:eec540483dc1bcb5111d70bf57766d14957e4251502834a5913dab4ecd24b40a` |
-| 4 | `theorem` | [aux4](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicAux1.lean/declarations/aux4.md) | 58 | `result-track:1c5420b7375388464bde2763ea11730c9c21be741985da250ad3ad09e1ab8f60` |
-| 5 | `theorem` | [go_get_aux](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicAux1.lean/declarations/go-get-aux.md) | 63 | `result-track:dec97b5d6e2382c1096f8521f3506739e6ee57e77add153f06918ce051440108` |
-| 6 | `theorem` | [go_get](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicAux1.lean/declarations/go-get.md) | 83 | `result-track:e9ddfb3fef79ea71edc2bfc75179385dd0aaf0d13c273f52c0699d1956af2b7b` |
-| 7 | `theorem` | [denote_blastReplicate](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicAux1.lean/declarations/denote-blastreplicate.md) | 118 | `result-track:9680a66235763bfd5c91fed60c5353bb29d6af8d83730b002070d0e8a8721001` |
+| 1 | `theorem` | [aux1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicAux1.lean/declarations/aux1.md) | 41 | `result-track:582c98f0417bf05c2f968c989216d3e09d5ef76f679fd1ff416abe60a27fb197` |
+| 2 | `theorem` | [aux2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicAux1.lean/declarations/aux2.md) | 46 | `result-track:27d770d13d4b3b630dc9ba30597ac41533402515deb6e2c4c31adaf83fb13411` |
+| 3 | `theorem` | [aux3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicAux1.lean/declarations/aux3.md) | 51 | `result-track:eec540483dc1bcb5111d70bf57766d14957e4251502834a5913dab4ecd24b40a` |
+| 4 | `theorem` | [aux4](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicAux1.lean/declarations/aux4.md) | 58 | `result-track:1c5420b7375388464bde2763ea11730c9c21be741985da250ad3ad09e1ab8f60` |
+| 5 | `theorem` | [go_get_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicAux1.lean/declarations/go-get-aux.md) | 63 | `result-track:dec97b5d6e2382c1096f8521f3506739e6ee57e77add153f06918ce051440108` |
+| 6 | `theorem` | [go_get](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicAux1.lean/declarations/go-get.md) | 83 | `result-track:e9ddfb3fef79ea71edc2bfc75179385dd0aaf0d13c273f52c0699d1956af2b7b` |
+| 7 | `theorem` | [denote_blastReplicate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicAux1.lean/declarations/denote-blastreplicate.md) | 118 | `result-track:9680a66235763bfd5c91fed60c5353bb29d6af8d83730b002070d0e8a8721001` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

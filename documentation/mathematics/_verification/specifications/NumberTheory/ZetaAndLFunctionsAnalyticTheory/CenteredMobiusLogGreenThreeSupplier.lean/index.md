@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenThreeSupplier.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenThreeSupplier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenThreeSupplier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenThreeSupplier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenHistoricalEnergyBridge`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHistoricalEnergyBridge.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenHistoricalEnergyBridge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHistoricalEnergyBridge.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AllDyadicCenteredMobiusLogEnergyBound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenThreeSupplier.lean/declarations/alldyadiccenteredmobiuslogenergybound.md) | 15 | `declaration-track:26d316de301c232a20794890c77443c54104863190a6489802afb0ae3e8c55b1` |
-| 2 | `def` | [AllDyadicBoundarySquareBound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenThreeSupplier.lean/declarations/alldyadicboundarysquarebound.md) | 27 | `declaration-track:96f62ef118c2cd0c02c4ee6d064fae69ac01c3e310e15232cbce6cf22e840019` |
-| 3 | `theorem` | [greenFullResidualEnergyBound_le_rpow](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenThreeSupplier.lean/declarations/greenfullresidualenergybound-le-rpow.md) | 37 | `result-track:a824a0406983e60134982839c2e660756e74da515f24d722c74e5951007f2e7f` |
-| 4 | `theorem` | [thinAllDyadicAugmentedEnergyBound_of_three_suppliers](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenThreeSupplier.lean/declarations/thinalldyadicaugmentedenergybound-of-three-suppliers.md) | 82 | `result-track:f6600a0110c946e5eb65eebf32c96596c7ad3d2ecdd71f006ed723561eb10219` |
+| 1 | `def` | [AllDyadicCenteredMobiusLogEnergyBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenThreeSupplier.lean/declarations/alldyadiccenteredmobiuslogenergybound.md) | 15 | `declaration-track:26d316de301c232a20794890c77443c54104863190a6489802afb0ae3e8c55b1` |
+| 2 | `def` | [AllDyadicBoundarySquareBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenThreeSupplier.lean/declarations/alldyadicboundarysquarebound.md) | 27 | `declaration-track:96f62ef118c2cd0c02c4ee6d064fae69ac01c3e310e15232cbce6cf22e840019` |
+| 3 | `theorem` | [greenFullResidualEnergyBound_le_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenThreeSupplier.lean/declarations/greenfullresidualenergybound-le-rpow.md) | 37 | `result-track:a824a0406983e60134982839c2e660756e74da515f24d722c74e5951007f2e7f` |
+| 4 | `theorem` | [thinAllDyadicAugmentedEnergyBound_of_three_suppliers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenThreeSupplier.lean/declarations/thinalldyadicaugmentedenergybound-of-three-suppliers.md) | 82 | `result-track:f6600a0110c946e5eb65eebf32c96596c7ad3d2ecdd71f006ed723561eb10219` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

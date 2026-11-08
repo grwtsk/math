@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamples.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamples.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamples.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamples.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toyShadowLevel0](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamples.lean/declarations/toyshadowlevel0.md) | 15 | `declaration-track:e466c9c0eff987adfdab06cc94d63f46a0c82d5d922ed5f4ed6642713c6d571d` |
-| 2 | `def` | [toyRelaxedLimit](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamples.lean/declarations/toyrelaxedlimit.md) | 22 | `declaration-track:43fd9147d270b2cb4db0f7d274ec44cbb3de121be8d70d4ba14b4a3637e7ae1f` |
-| 3 | `def` | [toyShadowMap0](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamples.lean/declarations/toyshadowmap0.md) | 28 | `declaration-track:f87ae77b6e7a76da541292e5fd897e0e4cb9f6af5fbcf64f69288455e0db13a9` |
-| 4 | `def` | [toyFaithfulShadowCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamples.lean/declarations/toyfaithfulshadowcertificate.md) | 43 | `declaration-track:873cb7e4d2b3f4dd942829e3feeeeca6a73574240ef60aef0e4fa91f57224484` |
-| 5 | `theorem` | [example_faithful_shadow_recoverability](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamples.lean/declarations/example-faithful-shadow-recoverability.md) | 64 | `result-track:383db2cb6ed9405392c7a3ff903c9da3ce1e6a29d1f6035e6d13af94b10803a0` |
+| 1 | `def` | [toyShadowLevel0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamples.lean/declarations/toyshadowlevel0.md) | 15 | `declaration-track:e466c9c0eff987adfdab06cc94d63f46a0c82d5d922ed5f4ed6642713c6d571d` |
+| 2 | `def` | [toyRelaxedLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamples.lean/declarations/toyrelaxedlimit.md) | 22 | `declaration-track:43fd9147d270b2cb4db0f7d274ec44cbb3de121be8d70d4ba14b4a3637e7ae1f` |
+| 3 | `def` | [toyShadowMap0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamples.lean/declarations/toyshadowmap0.md) | 28 | `declaration-track:f87ae77b6e7a76da541292e5fd897e0e4cb9f6af5fbcf64f69288455e0db13a9` |
+| 4 | `def` | [toyFaithfulShadowCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamples.lean/declarations/toyfaithfulshadowcertificate.md) | 43 | `declaration-track:873cb7e4d2b3f4dd942829e3feeeeca6a73574240ef60aef0e4fa91f57224484` |
+| 5 | `theorem` | [example_faithful_shadow_recoverability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamples.lean/declarations/example-faithful-shadow-recoverability.md) | 64 | `result-track:383db2cb6ed9405392c7a3ff903c9da3ce1e6a29d1f6035e6d13af94b10803a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

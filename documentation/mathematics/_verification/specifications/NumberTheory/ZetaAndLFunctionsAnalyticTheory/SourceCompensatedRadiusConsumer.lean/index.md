@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumer.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [residual_tail_of_compensatedJointWork_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumer.lean/declarations/residual-tail-of-compensatedjointwork-tail.md) | 15 | `result-track:6f342db203d58e4e98e9ca70ee98ec25be15a2cfa4b6f7b837746fea7c6e7fd4` |
-| 2 | `theorem` | [estimate_of_compensatedJointWork_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumer.lean/declarations/estimate-of-compensatedjointwork-tail.md) | 24 | `result-track:095305f52c500485207a52a3ba8d88c5b844fa792f4964188401ecbd480e5dba` |
-| 3 | `theorem` | [residual_tail_of_compensatedBilinearWork_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumer.lean/declarations/residual-tail-of-compensatedbilinearwork-tail.md) | 32 | `result-track:8e59159e52366b6758d343381d339e71b4f5a17579c5b8027fef1a77ab11b240` |
-| 4 | `theorem` | [estimate_of_compensatedBilinearWork_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumer.lean/declarations/estimate-of-compensatedbilinearwork-tail.md) | 41 | `result-track:7c87e538b8da43ec47d61768a5cd93f534e6632360d739eda3cf2199af4f48b1` |
+| 1 | `theorem` | [residual_tail_of_compensatedJointWork_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumer.lean/declarations/residual-tail-of-compensatedjointwork-tail.md) | 15 | `result-track:6f342db203d58e4e98e9ca70ee98ec25be15a2cfa4b6f7b837746fea7c6e7fd4` |
+| 2 | `theorem` | [estimate_of_compensatedJointWork_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumer.lean/declarations/estimate-of-compensatedjointwork-tail.md) | 24 | `result-track:095305f52c500485207a52a3ba8d88c5b844fa792f4964188401ecbd480e5dba` |
+| 3 | `theorem` | [residual_tail_of_compensatedBilinearWork_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumer.lean/declarations/residual-tail-of-compensatedbilinearwork-tail.md) | 32 | `result-track:8e59159e52366b6758d343381d339e71b4f5a17579c5b8027fef1a77ab11b240` |
+| 4 | `theorem` | [estimate_of_compensatedBilinearWork_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumer.lean/declarations/estimate-of-compensatedbilinearwork-tail.md) | 41 | `result-track:7c87e538b8da43ec47d61768a5cd93f534e6632360d739eda3cf2199af4f48b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

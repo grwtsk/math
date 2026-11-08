@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AxiomAuditPublicEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AxiomAuditPublicEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AxiomAuditPublicEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AxiomAuditPublicEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StatementPreservationEvidence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AxiomAuditPublicEdition2.lean/declarations/statementpreservationevidence.md) | 19 | `declaration-track:c32b7311eb0448368d26406d9cdfc819d7f025b6ff36a7517f7cfef685764a20` |
-| 2 | `def` | [StatementPreservationEvidence.Valid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AxiomAuditPublicEdition2.lean/declarations/statementpreservationevidence-valid.md) | 24 | `declaration-track:e59a2a12f6a4ce0bf2c6bef8c9cfd0b73b3cae96ed0db6906625993afd06d17b` |
-| 3 | `def` | [verifyStatementPreservation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AxiomAuditPublicEdition2.lean/declarations/verifystatementpreservation.md) | 28 | `declaration-track:16ddeff0e7f76a43077aa7b1fac3bf56c81d0cf898164f10e3e871d3def6b707` |
-| 4 | `theorem` | [verifyStatementPreservation_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AxiomAuditPublicEdition2.lean/declarations/verifystatementpreservation-sound.md) | 33 | `result-track:23ec14a573e9faddd54d4105bd86f8ef21604e976c2e3e6fed14bfc0d829223c` |
-| 5 | `theorem` | [KernelReceipt.matchesTask_preserves_statement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AxiomAuditPublicEdition2.lean/declarations/kernelreceipt-matchestask-preserves-statement.md) | 43 | `result-track:6804997bbccf439209eac4f8d4eb9478f1e4b184fd09cbe819bad4aea6d8c358` |
-| 6 | `theorem` | [CheckedTrial.statement_preserved](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AxiomAuditPublicEdition2.lean/declarations/checkedtrial-statement-preserved.md) | 52 | `result-track:f3dcd4c9b0ac0c36148b20815fe2b038885ee3c77c0b0a009fa7d097ede17afb` |
-| 7 | `theorem` | [CheckedTrial.kernel_proof](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AxiomAuditPublicEdition2.lean/declarations/checkedtrial-kernel-proof.md) | 58 | `result-track:a9ea3d6b9e8550dd44b69e7984c13527adbdde26a87b6f48783a69daddcf2267` |
+| 1 | `structure` | [StatementPreservationEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AxiomAuditPublicEdition2.lean/declarations/statementpreservationevidence.md) | 19 | `declaration-track:c32b7311eb0448368d26406d9cdfc819d7f025b6ff36a7517f7cfef685764a20` |
+| 2 | `def` | [StatementPreservationEvidence.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AxiomAuditPublicEdition2.lean/declarations/statementpreservationevidence-valid.md) | 24 | `declaration-track:e59a2a12f6a4ce0bf2c6bef8c9cfd0b73b3cae96ed0db6906625993afd06d17b` |
+| 3 | `def` | [verifyStatementPreservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AxiomAuditPublicEdition2.lean/declarations/verifystatementpreservation.md) | 28 | `declaration-track:16ddeff0e7f76a43077aa7b1fac3bf56c81d0cf898164f10e3e871d3def6b707` |
+| 4 | `theorem` | [verifyStatementPreservation_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AxiomAuditPublicEdition2.lean/declarations/verifystatementpreservation-sound.md) | 33 | `result-track:23ec14a573e9faddd54d4105bd86f8ef21604e976c2e3e6fed14bfc0d829223c` |
+| 5 | `theorem` | [KernelReceipt.matchesTask_preserves_statement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AxiomAuditPublicEdition2.lean/declarations/kernelreceipt-matchestask-preserves-statement.md) | 43 | `result-track:6804997bbccf439209eac4f8d4eb9478f1e4b184fd09cbe819bad4aea6d8c358` |
+| 6 | `theorem` | [CheckedTrial.statement_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AxiomAuditPublicEdition2.lean/declarations/checkedtrial-statement-preserved.md) | 52 | `result-track:f3dcd4c9b0ac0c36148b20815fe2b038885ee3c77c0b0a009fa7d097ede17afb` |
+| 7 | `theorem` | [CheckedTrial.kernel_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AxiomAuditPublicEdition2.lean/declarations/checkedtrial-kernel-proof.md) | 58 | `result-track:a9ea3d6b9e8550dd44b69e7984c13527adbdde26a87b6f48783a69daddcf2267` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

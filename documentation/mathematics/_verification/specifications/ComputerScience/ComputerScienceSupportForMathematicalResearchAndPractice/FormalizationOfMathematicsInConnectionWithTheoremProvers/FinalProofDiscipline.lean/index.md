@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDiscipline.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDiscipline.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDiscipline.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDiscipline.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [final_policy_imports_only_theorems](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDiscipline.lean/declarations/final-policy-imports-only-theorems.md) | 19 | `result-track:8fcdea1aaa6202ae73443036252195b641a4e606cd3f45ba77733ecdf83a3c06` |
-| 2 | `theorem` | [final_policy_has_no_contracts](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDiscipline.lean/declarations/final-policy-has-no-contracts.md) | 24 | `result-track:fb90a0a657437fd42ee94088f00817cbfeff2f5cacc79aa32d59640a4fd9db50` |
-| 3 | `theorem` | [final_policy_specializes_to_zeta](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDiscipline.lean/declarations/final-policy-specializes-to-zeta.md) | 29 | `result-track:96c37ebd1e70aed8891b1e28d922eff037e70feafd7bf9346aa884eecc364f63` |
+| 1 | `theorem` | [final_policy_imports_only_theorems](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDiscipline.lean/declarations/final-policy-imports-only-theorems.md) | 19 | `result-track:8fcdea1aaa6202ae73443036252195b641a4e606cd3f45ba77733ecdf83a3c06` |
+| 2 | `theorem` | [final_policy_has_no_contracts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDiscipline.lean/declarations/final-policy-has-no-contracts.md) | 24 | `result-track:fb90a0a657437fd42ee94088f00817cbfeff2f5cacc79aa32d59640a4fd9db50` |
+| 3 | `theorem` | [final_policy_specializes_to_zeta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDiscipline.lean/declarations/final-policy-specializes-to-zeta.md) | 29 | `result-track:96c37ebd1e70aed8891b1e28d922eff037e70feafd7bf9346aa884eecc364f63` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

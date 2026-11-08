@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshTotalVariation.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshTotalVariation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshTotalVariation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshTotalVariation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshParseval`](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshParseval.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshParseval`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshParseval.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Algebra.Order.Chebyshev` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.Real.Sqrt` — import line 7; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [totalVariationFromUniform](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshTotalVariation.lean/declarations/totalvariationfromuniform.md) | 37 | `declaration-track:82f4f1502c16f432eb3316d2b36f5b1880cbea7b1adc59064f20b50bb6abb796` |
-| 2 | `theorem` | [boolCube_card_pos](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshTotalVariation.lean/declarations/boolcube-card-pos.md) | 44 | `result-track:32ec6926aad9a5510e2da40fc1da58a61a9461c9e4aea0fc3fd0d2940518eeec` |
-| 3 | `theorem` | [totalVariationFromUniform_nonneg](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshTotalVariation.lean/declarations/totalvariationfromuniform-nonneg.md) | 51 | `result-track:c759f6c5276e6e8e8d14c6db2891e2958c7b827caa31e789a345c35c347e5087` |
-| 4 | `theorem` | [scaledDeviation_l1_sq_le_card_mul_l2](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshTotalVariation.lean/declarations/scaleddeviation-l1-sq-le-card-mul-l2.md) | 61 | `result-track:dc2b640110e8f5a917e4ba745a988e0d5c74183f5e24e349dd578004778fd303` |
-| 5 | `theorem` | [scaledDeviation_l1_sq_le_energy](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshTotalVariation.lean/declarations/scaleddeviation-l1-sq-le-energy.md) | 74 | `result-track:0537a247e466e505e8b5868b4c83fa4a8da8055923a8137331ea72f83c540686` |
-| 6 | `theorem` | [two_mul_totalVariation_sq_le_energy](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshTotalVariation.lean/declarations/two-mul-totalvariation-sq-le-energy.md) | 92 | `result-track:cdf4442f6c8ac388faf0c17a2a4e190e741f8f008c620f7d0c7467d96d2ea0fa` |
-| 7 | `theorem` | [totalVariation_le_half_sqrt_energy](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshTotalVariation.lean/declarations/totalvariation-le-half-sqrt-energy.md) | 114 | `result-track:0d430c09720ffefadb041f8eb00549ac3ff0cbede963d727a200fc27ced68536` |
+| 1 | `def` | [totalVariationFromUniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshTotalVariation.lean/declarations/totalvariationfromuniform.md) | 37 | `declaration-track:82f4f1502c16f432eb3316d2b36f5b1880cbea7b1adc59064f20b50bb6abb796` |
+| 2 | `theorem` | [boolCube_card_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshTotalVariation.lean/declarations/boolcube-card-pos.md) | 44 | `result-track:32ec6926aad9a5510e2da40fc1da58a61a9461c9e4aea0fc3fd0d2940518eeec` |
+| 3 | `theorem` | [totalVariationFromUniform_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshTotalVariation.lean/declarations/totalvariationfromuniform-nonneg.md) | 51 | `result-track:c759f6c5276e6e8e8d14c6db2891e2958c7b827caa31e789a345c35c347e5087` |
+| 4 | `theorem` | [scaledDeviation_l1_sq_le_card_mul_l2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshTotalVariation.lean/declarations/scaleddeviation-l1-sq-le-card-mul-l2.md) | 61 | `result-track:dc2b640110e8f5a917e4ba745a988e0d5c74183f5e24e349dd578004778fd303` |
+| 5 | `theorem` | [scaledDeviation_l1_sq_le_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshTotalVariation.lean/declarations/scaleddeviation-l1-sq-le-energy.md) | 74 | `result-track:0537a247e466e505e8b5868b4c83fa4a8da8055923a8137331ea72f83c540686` |
+| 6 | `theorem` | [two_mul_totalVariation_sq_le_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshTotalVariation.lean/declarations/two-mul-totalvariation-sq-le-energy.md) | 92 | `result-track:cdf4442f6c8ac388faf0c17a2a4e190e741f8f008c620f7d0c7467d96d2ea0fa` |
+| 7 | `theorem` | [totalVariation_le_half_sqrt_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshTotalVariation.lean/declarations/totalvariation-le-half-sqrt-energy.md) | 114 | `result-track:0d430c09720ffefadb041f8eb00549ac3ff0cbede963d727a200fc27ced68536` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

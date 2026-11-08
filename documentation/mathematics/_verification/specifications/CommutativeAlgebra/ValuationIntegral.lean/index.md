@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ValuationIntegral.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ValuationIntegral.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ValuationIntegral.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ValuationIntegral.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_of_integral](../../../../CommutativeAlgebra/ValuationIntegral.lean/declarations/mem-of-integral.md) | 30 | `result-track:973fe9829f1942120d7922b61720f9be098994039680331eb4d516d14d959bea` |
-| 2 | `theorem` | [integralClosure](../../../../CommutativeAlgebra/ValuationIntegral.lean/declarations/integralclosure.md) | 43 | `result-track:51a05570786fbc72208018989b139e5ac75829db565c184ebf5686367c02ac50` |
-| 3 | `theorem` | [integrallyClosed](../../../../CommutativeAlgebra/ValuationIntegral.lean/declarations/integrallyclosed.md) | 58 | `result-track:882b8adfed70b5bf1aba38b8dfbccb8aaa09038c4701d97b44378fea775af4dd` |
+| 1 | `theorem` | [mem_of_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ValuationIntegral.lean/declarations/mem-of-integral.md) | 30 | `result-track:973fe9829f1942120d7922b61720f9be098994039680331eb4d516d14d959bea` |
+| 2 | `theorem` | [integralClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ValuationIntegral.lean/declarations/integralclosure.md) | 43 | `result-track:51a05570786fbc72208018989b139e5ac75829db565c184ebf5686367c02ac50` |
+| 3 | `theorem` | [integrallyClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ValuationIntegral.lean/declarations/integrallyclosed.md) | 58 | `result-track:882b8adfed70b5bf1aba38b8dfbccb8aaa09038c4701d97b44378fea775af4dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

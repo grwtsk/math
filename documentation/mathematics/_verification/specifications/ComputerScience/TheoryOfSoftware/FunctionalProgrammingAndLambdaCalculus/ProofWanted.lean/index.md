@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofWanted.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofWanted.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofWanted.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofWanted.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [«proof_wanted»](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofWanted.lean/declarations/proof-wanted.md) | 27 | `declaration-track:a5744d07105280e0b76df2c0fab6a203e97069d9408f648874f1ced6136ad1b4` |
-| 2 | `def` | [elabProofWanted](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofWanted.lean/declarations/elabproofwanted.md) | 34 | `declaration-track:e0c34cc4d12213242c4570e5b75af990bd2f157ad82419a46c8685550f71c8fc` |
-| 3 | `theorem` | [$name](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofWanted.lean/declarations/name.md) | 39 | `result-track:fc4b8050890313e3a98dd471753b2c370f47a58ecb2938b8926b698ccb7b0fb1` |
+| 1 | `def` | [«proof_wanted»](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofWanted.lean/declarations/proof-wanted.md) | 27 | `declaration-track:a5744d07105280e0b76df2c0fab6a203e97069d9408f648874f1ced6136ad1b4` |
+| 2 | `def` | [elabProofWanted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofWanted.lean/declarations/elabproofwanted.md) | 34 | `declaration-track:e0c34cc4d12213242c4570e5b75af990bd2f157ad82419a46c8685550f71c8fc` |
+| 3 | `theorem` | [$name](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofWanted.lean/declarations/name.md) | 39 | `result-track:fc4b8050890313e3a98dd471753b2c370f47a58ecb2938b8926b698ccb7b0fb1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

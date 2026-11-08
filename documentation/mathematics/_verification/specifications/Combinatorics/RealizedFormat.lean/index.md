@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RealizedFormat.lean/index.md) · [Full source](../../../../Combinatorics/RealizedFormat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RealizedFormat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RealizedFormat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `BooleanMatrix.Format` — import line 21; external provider; requires a separately pinned dependency.
-- [Lossless Codec](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LosslessCodec.lean/index.md) — import line 22; pinned internal source present.
+- [Lossless Codec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LosslessCodec.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [format](../../../../Combinatorics/RealizedFormat.lean/declarations/format.md) | 40 | `declaration-track:bb75c35e82249d9eb123cc6aafad00fa21113c5b5fd90ea8fb8d77c4976b03b7` |
+| 1 | `def` | [format](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RealizedFormat.lean/declarations/format.md) | 40 | `declaration-track:bb75c35e82249d9eb123cc6aafad00fa21113c5b5fd90ea8fb8d77c4976b03b7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

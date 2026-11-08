@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Metadata.lean/index.md) · [Full source](../../../../Combinatorics/Metadata.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Metadata.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Metadata.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [MetadataType](../../../../Combinatorics/Metadata.lean/declarations/metadatatype.md) | 9 | `declaration-track:ff77ee644bb8caa7b63c951d5eb72cf984e621c7fc547722de8a927580d6ec14` |
-| 2 | `inductive` | [PartOfSpeech](../../../../Combinatorics/Metadata.lean/declarations/partofspeech.md) | 29 | `declaration-track:3fb801f542891ac80bf9efcd20228b9c3cbeae0049886b9c421757d405d3e290` |
-| 3 | `inductive` | [Polarity](../../../../Combinatorics/Metadata.lean/declarations/polarity.md) | 43 | `declaration-track:b329984ad4301b66128a30d8c9ccff58489f13df1298bfb91c3d5cf82e088f6e` |
-| 4 | `inductive` | [Modality](../../../../Combinatorics/Metadata.lean/declarations/modality.md) | 50 | `declaration-track:6ec53206fb06d39f1fba690feeb71b45c73708396dbc423f487603966f527ce2` |
-| 5 | `inductive` | [FigurativeStatus](../../../../Combinatorics/Metadata.lean/declarations/figurativestatus.md) | 60 | `declaration-track:0a6d67656336c03d4bedc1c61d7fb64815c4bd512261451168d0cab5f0673b5f` |
-| 6 | `def` | [MetadataValue](../../../../Combinatorics/Metadata.lean/declarations/metadatavalue.md) | 68 | `declaration-track:cc6014134122f3a5a9d36236a640d8c5be16254aa190dd6ecba1254a57b6d322` |
-| 7 | `structure` | [MetadataSchema](../../../../Combinatorics/Metadata.lean/declarations/metadataschema.md) | 87 | `declaration-track:1c4a1fb46f3844775958167f0f038bf537f1ba6488c0cea9b6c21e73648f4d0c` |
+| 1 | `inductive` | [MetadataType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Metadata.lean/declarations/metadatatype.md) | 9 | `declaration-track:ff77ee644bb8caa7b63c951d5eb72cf984e621c7fc547722de8a927580d6ec14` |
+| 2 | `inductive` | [PartOfSpeech](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Metadata.lean/declarations/partofspeech.md) | 29 | `declaration-track:3fb801f542891ac80bf9efcd20228b9c3cbeae0049886b9c421757d405d3e290` |
+| 3 | `inductive` | [Polarity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Metadata.lean/declarations/polarity.md) | 43 | `declaration-track:b329984ad4301b66128a30d8c9ccff58489f13df1298bfb91c3d5cf82e088f6e` |
+| 4 | `inductive` | [Modality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Metadata.lean/declarations/modality.md) | 50 | `declaration-track:6ec53206fb06d39f1fba690feeb71b45c73708396dbc423f487603966f527ce2` |
+| 5 | `inductive` | [FigurativeStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Metadata.lean/declarations/figurativestatus.md) | 60 | `declaration-track:0a6d67656336c03d4bedc1c61d7fb64815c4bd512261451168d0cab5f0673b5f` |
+| 6 | `def` | [MetadataValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Metadata.lean/declarations/metadatavalue.md) | 68 | `declaration-track:cc6014134122f3a5a9d36236a640d8c5be16254aa190dd6ecba1254a57b6d322` |
+| 7 | `structure` | [MetadataSchema](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Metadata.lean/declarations/metadataschema.md) | 87 | `declaration-track:1c4a1fb46f3844775958167f0f038bf537f1ba6488c0cea9b6c21e73648f4d0c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Concept](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/declarations/concept.md) | 18 | `declaration-track:dabfa062b1e367572118c5f2b3e29faee90ec6e9876c43f51589648bd0cba8d1` |
-| 2 | `def` | [concepts](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/declarations/concepts.md) | 30 | `declaration-track:de1a9407b69707c1ff8283804ba9c128f44fda9c5824a773e4fc1a0d2b187820` |
-| 3 | `def` | [canonicalOwner](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/declarations/canonicalowner.md) | 42 | `declaration-track:44e2c6a290bcef7892f7e232bb4358520db1d4b8ec84fbd6cd0b22c123732720` |
-| 4 | `structure` | [RoleBoundary](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/declarations/roleboundary.md) | 53 | `declaration-track:a29550f5fd36c1122df1a272d0f83581de2242604443b642a371933dae663a47` |
-| 5 | `def` | [roleBoundaries](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/declarations/roleboundaries.md) | 61 | `declaration-track:1f197459fb85e89f01c2c34f27597b86be27bdb7dec12c3508ebfe77408bf49e` |
-| 6 | `def` | [noRoleBoundaryClaimsOwnership](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/declarations/noroleboundaryclaimsownership.md) | 94 | `declaration-track:74a2fdbde636f590e15d22699c96910f124d6c1bcbadd5951c7f7dda1e18c105` |
-| 7 | `theorem` | [concepts_count](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/declarations/concepts-count.md) | 97 | `result-track:f629360300ba13890095a26958c15169265957d4b7fb63da23cf3ed8f566aa68` |
-| 8 | `theorem` | [role_boundaries_count](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/declarations/role-boundaries-count.md) | 101 | `result-track:ac4c703a4221c43fdf380f449b02be68fc9aa0d928bc89c26ead0afbc45b836b` |
-| 9 | `theorem` | [role_boundaries_are_non_owners](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/declarations/role-boundaries-are-non-owners.md) | 105 | `result-track:3904a979b3c5aea2cc16e326103e42adebe463fe92c156dc26e44e5873f765c2` |
+| 1 | `inductive` | [Concept](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/declarations/concept.md) | 18 | `declaration-track:dabfa062b1e367572118c5f2b3e29faee90ec6e9876c43f51589648bd0cba8d1` |
+| 2 | `def` | [concepts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/declarations/concepts.md) | 30 | `declaration-track:de1a9407b69707c1ff8283804ba9c128f44fda9c5824a773e4fc1a0d2b187820` |
+| 3 | `def` | [canonicalOwner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/declarations/canonicalowner.md) | 42 | `declaration-track:44e2c6a290bcef7892f7e232bb4358520db1d4b8ec84fbd6cd0b22c123732720` |
+| 4 | `structure` | [RoleBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/declarations/roleboundary.md) | 53 | `declaration-track:a29550f5fd36c1122df1a272d0f83581de2242604443b642a371933dae663a47` |
+| 5 | `def` | [roleBoundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/declarations/roleboundaries.md) | 61 | `declaration-track:1f197459fb85e89f01c2c34f27597b86be27bdb7dec12c3508ebfe77408bf49e` |
+| 6 | `def` | [noRoleBoundaryClaimsOwnership](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/declarations/noroleboundaryclaimsownership.md) | 94 | `declaration-track:74a2fdbde636f590e15d22699c96910f124d6c1bcbadd5951c7f7dda1e18c105` |
+| 7 | `theorem` | [concepts_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/declarations/concepts-count.md) | 97 | `result-track:f629360300ba13890095a26958c15169265957d4b7fb63da23cf3ed8f566aa68` |
+| 8 | `theorem` | [role_boundaries_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/declarations/role-boundaries-count.md) | 101 | `result-track:ac4c703a4221c43fdf380f449b02be68fc9aa0d928bc89c26ead0afbc45b836b` |
+| 9 | `theorem` | [role_boundaries_are_non_owners](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptOwnershipNamespaced.lean/declarations/role-boundaries-are-non-owners.md) | 105 | `result-track:3904a979b3c5aea2cc16e326103e42adebe463fe92c156dc26e44e5873f765c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

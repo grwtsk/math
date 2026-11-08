@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [radial_boundary_energy_identity](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/declarations/radial-boundary-energy-identity.md) | 20 | `result-track:5af06af537418fce27ac2c6c6745ca39635a66ae0a81ee21d4581ab5bf3f5e21` |
-| 2 | `theorem` | [bumpMoment_derivative_pairing_nonneg](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/declarations/bumpmoment-derivative-pairing-nonneg.md) | 87 | `result-track:82c3d5bdea906b4dc5ad01e4463e08ebdc8bc54623f8d0e969296498bf1460b0` |
-| 3 | `theorem` | [bumpMoment_horizontal_norm_sq_hasDerivAt](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/declarations/bumpmoment-horizontal-norm-sq-hasderivat.md) | 110 | `result-track:1452666991ea4dc1fd6697616f1c00903dda989bb1a746d9960968b5add23f13` |
-| 4 | `theorem` | [bumpMoment_horizontal_norm_monotone](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/declarations/bumpmoment-horizontal-norm-monotone.md) | 122 | `result-track:7e650f4db10f49cd78bf5348e427ee9ea087789335259c6e55b0974d9b3bfa1e` |
-| 5 | `theorem` | [bumpMoment_horizontal_norm_le](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/declarations/bumpmoment-horizontal-norm-le.md) | 143 | `result-track:8557f5fd7206929784adab3013638d6c4be3ec93ac5d189851ef592a8e569624` |
-| 6 | `theorem` | [sourceQuadratic_horizontal_bound](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/declarations/sourcequadratic-horizontal-bound.md) | 163 | `result-track:0155f2190cf23e87b499f9d57ebb2a1657544537644f31eaa5f1f3194b9f67ba` |
-| 7 | `theorem` | [W_horizontal_multiplicative_bound](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/declarations/w-horizontal-multiplicative-bound.md) | 181 | `result-track:81ed4c20b18bd76ceeed8f3c68764708dcb087d313a876155a7918df0d85a304` |
-| 8 | `theorem` | [W_horizontal_ratio_bound](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/declarations/w-horizontal-ratio-bound.md) | 215 | `result-track:27cab892cd0b0e9682062012ec36adcb9efa8f11c7d23ffa2039dbc3a13cc9a1` |
+| 1 | `theorem` | [radial_boundary_energy_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/declarations/radial-boundary-energy-identity.md) | 20 | `result-track:5af06af537418fce27ac2c6c6745ca39635a66ae0a81ee21d4581ab5bf3f5e21` |
+| 2 | `theorem` | [bumpMoment_derivative_pairing_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/declarations/bumpmoment-derivative-pairing-nonneg.md) | 87 | `result-track:82c3d5bdea906b4dc5ad01e4463e08ebdc8bc54623f8d0e969296498bf1460b0` |
+| 3 | `theorem` | [bumpMoment_horizontal_norm_sq_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/declarations/bumpmoment-horizontal-norm-sq-hasderivat.md) | 110 | `result-track:1452666991ea4dc1fd6697616f1c00903dda989bb1a746d9960968b5add23f13` |
+| 4 | `theorem` | [bumpMoment_horizontal_norm_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/declarations/bumpmoment-horizontal-norm-monotone.md) | 122 | `result-track:7e650f4db10f49cd78bf5348e427ee9ea087789335259c6e55b0974d9b3bfa1e` |
+| 5 | `theorem` | [bumpMoment_horizontal_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/declarations/bumpmoment-horizontal-norm-le.md) | 143 | `result-track:8557f5fd7206929784adab3013638d6c4be3ec93ac5d189851ef592a8e569624` |
+| 6 | `theorem` | [sourceQuadratic_horizontal_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/declarations/sourcequadratic-horizontal-bound.md) | 163 | `result-track:0155f2190cf23e87b499f9d57ebb2a1657544537644f31eaa5f1f3194b9f67ba` |
+| 7 | `theorem` | [W_horizontal_multiplicative_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/declarations/w-horizontal-multiplicative-bound.md) | 181 | `result-track:81ed4c20b18bd76ceeed8f3c68764708dcb087d313a876155a7918df0d85a304` |
+| 8 | `theorem` | [W_horizontal_ratio_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioNamespaced.lean/declarations/w-horizontal-ratio-bound.md) | 215 | `result-track:27cab892cd0b0e9682062012ec36adcb9efa8f11c7d23ffa2039dbc3a13cc9a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

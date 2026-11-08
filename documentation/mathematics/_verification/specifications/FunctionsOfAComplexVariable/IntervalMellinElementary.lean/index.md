@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.IntervalMellinQuadrature`](../../../../MeasureAndIntegration/IntervalMellinQuadrature.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.ErrorBounds.FiniteLogEnclosure`](../../../../RealFunctions/FiniteLogEnclosure.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.ErrorBounds.ComplexTaylorEnclosure`](../../../../RealFunctions/ComplexTaylorEnclosure.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.IntervalMellinQuadrature`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntervalMellinQuadrature.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.FiniteLogEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteLogEnclosure.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.ComplexTaylorEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ComplexTaylorEnclosure.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,24 +59,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [logCenter](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/logcenter.md) | 32 | `declaration-track:2abfe7c023082694b4d7e4971e49d9a4d5f3e0e491ddae3b5bbc1f8109384f2b` |
-| 2 | `def` | [logRadius](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/logradius.md) | 35 | `declaration-track:de2987f1eee4098b66d1ba8970f14e7bd034997436ca7c7105ab58f241322e73` |
-| 3 | `theorem` | [logCenter_error](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/logcenter-error.md) | 39 | `result-track:6e52b758cd1dbd88c35d662aaaeaa42c74b5836454f2046a58625500d06f7a99` |
-| 4 | `theorem` | [logRadius_nonneg](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/logradius-nonneg.md) | 46 | `result-track:a1b3f2cc1170d2dc46b57f72b6bc3c9731b4152e5e0be1f5a28c6191d3d5d8ab` |
-| 5 | `theorem` | [logRadius_eq](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/logradius-eq.md) | 51 | `result-track:323f6f8c6ba4a6e7b85b8a7248cbaea732bb42155a5541d1276fd69f496cdac5` |
-| 6 | `def` | [nodeBound](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/nodebound.md) | 62 | `declaration-track:48278301e7ed5123428fc7f1ea26314aaee243fbfc06098747539cabf940badc` |
-| 7 | `def` | [nodeInputError](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/nodeinputerror.md) | 66 | `declaration-track:6f7f11d171831cef3d59a431589268883c47a7843a59c191edfa3147dfcd581d` |
-| 8 | `def` | [nodeValue](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/nodevalue.md) | 70 | `declaration-track:c7ee2b9fcfdf75be7e1213d6338839fa3ca304713a38280e8e7a89bd603a81ec` |
-| 9 | `def` | [nodeError](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/nodeerror.md) | 74 | `declaration-track:97b567bbe4e061c1279bc57e89e2972ba73e27f32cd1627a1db2e39629f6ec87` |
-| 10 | `theorem` | [node_argument_bounds](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/node-argument-bounds.md) | 79 | `result-track:8bfc19a0258f430f0185ecde72e0dc9c2cc26ec990bb9682f9629b251c36c972` |
-| 11 | `theorem` | [density_node_error](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/density-node-error.md) | 105 | `result-track:48f092b64893729a55428077c83feac3d95f50677ad49f1cbd1d0034a2e9a87a` |
-| 12 | `theorem` | [kernel_elementary_error](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/kernel-elementary-error.md) | 114 | `result-track:72fc0aedb6035b4128ff657c3a7ff38d9ede253dd63e23c4b989623f4ce5e2f4` |
-| 13 | `def` | [arithmeticMeshBound](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/arithmeticmeshbound.md) | 129 | `declaration-track:e01f75b6942a2a3a5277df4d80ed563ed571e946a202298868eeb8d12a1f13b0` |
-| 14 | `theorem` | [partitionError_le_arithmeticMeshBound](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/partitionerror-le-arithmeticmeshbound.md) | 133 | `result-track:c33278ea9b78215a8f29b7dfbe75331b6fce3a74f2b73558dc0f04aa604a5c62` |
-| 15 | `theorem` | [kernel_accumulated_error](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/kernel-accumulated-error.md) | 144 | `result-track:98315f5745286012ca4c3dd2350508a84b0e1bb86a9a72c4fbb4123a09f34336` |
-| 16 | `theorem` | [log_one_control](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/log-one-control.md) | 167 | `result-track:98b9ebbd5f6d822a3a0d28a175788754e64b8af8597b697e3f858c9620d985eb` |
-| 17 | `theorem` | [unit_parameter_control](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/unit-parameter-control.md) | 171 | `result-track:3f461b9aedc42191890d77ed1419106d1d322cd1d94286be86711de7bce06aab` |
-| 18 | `theorem` | [short_truncation_guard_control](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/short-truncation-guard-control.md) | 175 | `result-track:5b879cf94ab5f877220707dc63a808273354e183c2843842e60be7fc7b64e9fa` |
+| 1 | `def` | [logCenter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/logcenter.md) | 32 | `declaration-track:2abfe7c023082694b4d7e4971e49d9a4d5f3e0e491ddae3b5bbc1f8109384f2b` |
+| 2 | `def` | [logRadius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/logradius.md) | 35 | `declaration-track:de2987f1eee4098b66d1ba8970f14e7bd034997436ca7c7105ab58f241322e73` |
+| 3 | `theorem` | [logCenter_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/logcenter-error.md) | 39 | `result-track:6e52b758cd1dbd88c35d662aaaeaa42c74b5836454f2046a58625500d06f7a99` |
+| 4 | `theorem` | [logRadius_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/logradius-nonneg.md) | 46 | `result-track:a1b3f2cc1170d2dc46b57f72b6bc3c9731b4152e5e0be1f5a28c6191d3d5d8ab` |
+| 5 | `theorem` | [logRadius_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/logradius-eq.md) | 51 | `result-track:323f6f8c6ba4a6e7b85b8a7248cbaea732bb42155a5541d1276fd69f496cdac5` |
+| 6 | `def` | [nodeBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/nodebound.md) | 62 | `declaration-track:48278301e7ed5123428fc7f1ea26314aaee243fbfc06098747539cabf940badc` |
+| 7 | `def` | [nodeInputError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/nodeinputerror.md) | 66 | `declaration-track:6f7f11d171831cef3d59a431589268883c47a7843a59c191edfa3147dfcd581d` |
+| 8 | `def` | [nodeValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/nodevalue.md) | 70 | `declaration-track:c7ee2b9fcfdf75be7e1213d6338839fa3ca304713a38280e8e7a89bd603a81ec` |
+| 9 | `def` | [nodeError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/nodeerror.md) | 74 | `declaration-track:97b567bbe4e061c1279bc57e89e2972ba73e27f32cd1627a1db2e39629f6ec87` |
+| 10 | `theorem` | [node_argument_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/node-argument-bounds.md) | 79 | `result-track:8bfc19a0258f430f0185ecde72e0dc9c2cc26ec990bb9682f9629b251c36c972` |
+| 11 | `theorem` | [density_node_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/density-node-error.md) | 105 | `result-track:48f092b64893729a55428077c83feac3d95f50677ad49f1cbd1d0034a2e9a87a` |
+| 12 | `theorem` | [kernel_elementary_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/kernel-elementary-error.md) | 114 | `result-track:72fc0aedb6035b4128ff657c3a7ff38d9ede253dd63e23c4b989623f4ce5e2f4` |
+| 13 | `def` | [arithmeticMeshBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/arithmeticmeshbound.md) | 129 | `declaration-track:e01f75b6942a2a3a5277df4d80ed563ed571e946a202298868eeb8d12a1f13b0` |
+| 14 | `theorem` | [partitionError_le_arithmeticMeshBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/partitionerror-le-arithmeticmeshbound.md) | 133 | `result-track:c33278ea9b78215a8f29b7dfbe75331b6fce3a74f2b73558dc0f04aa604a5c62` |
+| 15 | `theorem` | [kernel_accumulated_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/kernel-accumulated-error.md) | 144 | `result-track:98315f5745286012ca4c3dd2350508a84b0e1bb86a9a72c4fbb4123a09f34336` |
+| 16 | `theorem` | [log_one_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/log-one-control.md) | 167 | `result-track:98b9ebbd5f6d822a3a0d28a175788754e64b8af8597b697e3f858c9620d985eb` |
+| 17 | `theorem` | [unit_parameter_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/unit-parameter-control.md) | 171 | `result-track:3f461b9aedc42191890d77ed1419106d1d322cd1d94286be86711de7bce06aab` |
+| 18 | `theorem` | [short_truncation_guard_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/declarations/short-truncation-guard-control.md) | 175 | `result-track:5b879cf94ab5f877220707dc63a808273354e183c2843842e60be7fc7b64e9fa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

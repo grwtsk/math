@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [weighted_average](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/declarations/weighted-average.md) | 22 | `result-track:58669804d7a531c799251f1092d5cd41e7e96a8812377c2ec5c9a123242eb341` |
-| 2 | `def` | [residual](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/declarations/residual.md) | 33 | `declaration-track:7296fa79872f92559018d3f00f631b24bc3a1b34d82653c777641137724847d3` |
-| 3 | `theorem` | [residual_eq](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/declarations/residual-eq.md) | 35 | `result-track:ea36c0b94a34677be1ba9edfa9902c106b25784c4a3770463f1f8950f06fb9f0` |
-| 4 | `theorem` | [nonzero_zero_mean_residual](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/declarations/nonzero-zero-mean-residual.md) | 41 | `result-track:122dda9bf3adc6fff0ebadc72c873acb3aaffae00343f7e2704638c80d6ae7c1` |
-| 5 | `theorem` | [flattened_residual_energy](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/declarations/flattened-residual-energy.md) | 56 | `result-track:78a9ded25b6222f77103fa8a1a6be8091e77509ddc8bd962a2f74de6ab96d632` |
-| 6 | `def` | [twoSampleFamily](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/declarations/twosamplefamily.md) | 66 | `declaration-track:bc8f52ca7179455f74c3bd42a268762037b128a00c8fc3ce09a92ae3120d3515` |
-| 7 | `theorem` | [hessian_at_zero](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/declarations/hessian-at-zero.md) | 72 | `result-track:a7c5d18cf535d9d6bbb19f407ca5b1a7bebcb336bc6a8d150e78e617104bbc57` |
-| 8 | `theorem` | [hessian_null_iff](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/declarations/hessian-null-iff.md) | 83 | `result-track:8197ec0ed0d0aeb490b378b435c1655a9a303ee33c1985566cd7c64e9f66cb10` |
-| 9 | `theorem` | [hessian_null_parameter_independent](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/declarations/hessian-null-parameter-independent.md) | 97 | `result-track:230075b33039282cd6ec101f71af59941c10c64e8f380e215203cb2b7cea6994` |
+| 1 | `theorem` | [weighted_average](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/declarations/weighted-average.md) | 22 | `result-track:58669804d7a531c799251f1092d5cd41e7e96a8812377c2ec5c9a123242eb341` |
+| 2 | `def` | [residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/declarations/residual.md) | 33 | `declaration-track:7296fa79872f92559018d3f00f631b24bc3a1b34d82653c777641137724847d3` |
+| 3 | `theorem` | [residual_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/declarations/residual-eq.md) | 35 | `result-track:ea36c0b94a34677be1ba9edfa9902c106b25784c4a3770463f1f8950f06fb9f0` |
+| 4 | `theorem` | [nonzero_zero_mean_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/declarations/nonzero-zero-mean-residual.md) | 41 | `result-track:122dda9bf3adc6fff0ebadc72c873acb3aaffae00343f7e2704638c80d6ae7c1` |
+| 5 | `theorem` | [flattened_residual_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/declarations/flattened-residual-energy.md) | 56 | `result-track:78a9ded25b6222f77103fa8a1a6be8091e77509ddc8bd962a2f74de6ab96d632` |
+| 6 | `def` | [twoSampleFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/declarations/twosamplefamily.md) | 66 | `declaration-track:bc8f52ca7179455f74c3bd42a268762037b128a00c8fc3ce09a92ae3120d3515` |
+| 7 | `theorem` | [hessian_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/declarations/hessian-at-zero.md) | 72 | `result-track:a7c5d18cf535d9d6bbb19f407ca5b1a7bebcb336bc6a8d150e78e617104bbc57` |
+| 8 | `theorem` | [hessian_null_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/declarations/hessian-null-iff.md) | 83 | `result-track:8197ec0ed0d0aeb490b378b435c1655a9a303ee33c1985566cd7c64e9f66cb10` |
+| 9 | `theorem` | [hessian_null_parameter_independent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteAveragingFixtureAudit.lean/declarations/hessian-null-parameter-independent.md) | 97 | `result-track:230075b33039282cd6ec101f71af59941c10c64e8f380e215203cb2b7cea6994` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

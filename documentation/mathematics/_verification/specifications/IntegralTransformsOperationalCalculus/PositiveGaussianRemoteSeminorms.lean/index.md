@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MellinTransform.GaussianRemoteSeminorms`](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianRemoteSeminorms.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.GaussianRemoteSeminorms`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianRemoteSeminorms.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [weighted_generic](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/weighted-generic.md) | 12 | `result-track:74f4e3b832ac1885376db87bca6152eb4bdc8f32dc455ff42a35685d6eac0cbd` |
-| 2 | `theorem` | [remote_generic](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/remote-generic.md) | 18 | `result-track:4b99355b482503d3c5ecdad65aa7be05d4679b014d02c75c20862c0d12eecec9` |
-| 3 | `theorem` | [remote_values_generic](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/remote-values-generic.md) | 24 | `result-track:02f99233fda1fab824ef713055a0bf432aae7cdd63c54cf8a5daa1879db3b9ec` |
-| 4 | `theorem` | [remote_values_one](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/remote-values-one.md) | 30 | `result-track:b8b066befdc2563fb1cbf61c63302bac0d0b8f8607dc4b8ff3a5991bcfad4206` |
-| 5 | `theorem` | [gaussian_positive_scale_nonzero](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/gaussian-positive-scale-nonzero.md) | 34 | `result-track:c4abe22bb77faf2a88417f3e6e8d8ff77f78819891fa8f8822df5e8c1b3d167c` |
-| 6 | `theorem` | [remote_zero_cutoff_eq](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/remote-zero-cutoff-eq.md) | 57 | `result-track:98321e60cc6f45eeef8aa8133f389db8402cc2fc789182f9fe3bbebfec710ef3` |
-| 7 | `theorem` | [remote_zero_cutoff_summable](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/remote-zero-cutoff-summable.md) | 63 | `result-track:80becb92a74a1f3d44efdad1f529d8ac6c38e14f5fe518b37c3584ebb72a3628` |
-| 8 | `theorem` | [remote_zero_cutoff_term_pos](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/remote-zero-cutoff-term-pos.md) | 68 | `result-track:f4ceab210928fe7f7c7478588b457a43e3ea6e38cd0a5bbaaa77856eca37db18` |
-| 9 | `theorem` | [remote_zero_cutoff_sum_pos](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/remote-zero-cutoff-sum-pos.md) | 72 | `result-track:9ac74ccb433b5303fa16c5c70d34a553cab2e9003f1cdc1c679e55ac2b34800f` |
-| 10 | `theorem` | [remote_zero_cutoff_bound_false](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/remote-zero-cutoff-bound-false.md) | 76 | `result-track:86983c4c2cf0f759ade79e22c33f1b3a303263f4a64b4bed679953252f0d9f99` |
+| 1 | `theorem` | [weighted_generic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/weighted-generic.md) | 12 | `result-track:74f4e3b832ac1885376db87bca6152eb4bdc8f32dc455ff42a35685d6eac0cbd` |
+| 2 | `theorem` | [remote_generic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/remote-generic.md) | 18 | `result-track:4b99355b482503d3c5ecdad65aa7be05d4679b014d02c75c20862c0d12eecec9` |
+| 3 | `theorem` | [remote_values_generic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/remote-values-generic.md) | 24 | `result-track:02f99233fda1fab824ef713055a0bf432aae7cdd63c54cf8a5daa1879db3b9ec` |
+| 4 | `theorem` | [remote_values_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/remote-values-one.md) | 30 | `result-track:b8b066befdc2563fb1cbf61c63302bac0d0b8f8607dc4b8ff3a5991bcfad4206` |
+| 5 | `theorem` | [gaussian_positive_scale_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/gaussian-positive-scale-nonzero.md) | 34 | `result-track:c4abe22bb77faf2a88417f3e6e8d8ff77f78819891fa8f8822df5e8c1b3d167c` |
+| 6 | `theorem` | [remote_zero_cutoff_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/remote-zero-cutoff-eq.md) | 57 | `result-track:98321e60cc6f45eeef8aa8133f389db8402cc2fc789182f9fe3bbebfec710ef3` |
+| 7 | `theorem` | [remote_zero_cutoff_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/remote-zero-cutoff-summable.md) | 63 | `result-track:80becb92a74a1f3d44efdad1f529d8ac6c38e14f5fe518b37c3584ebb72a3628` |
+| 8 | `theorem` | [remote_zero_cutoff_term_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/remote-zero-cutoff-term-pos.md) | 68 | `result-track:f4ceab210928fe7f7c7478588b457a43e3ea6e38cd0a5bbaaa77856eca37db18` |
+| 9 | `theorem` | [remote_zero_cutoff_sum_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/remote-zero-cutoff-sum-pos.md) | 72 | `result-track:9ac74ccb433b5303fa16c5c70d34a553cab2e9003f1cdc1c679e55ac2b34800f` |
+| 10 | `theorem` | [remote_zero_cutoff_bound_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/declarations/remote-zero-cutoff-bound-false.md) | 76 | `result-track:86983c4c2cf0f759ade79e22c33f1b3a303263f4a64b4bed679953252f0d9f99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

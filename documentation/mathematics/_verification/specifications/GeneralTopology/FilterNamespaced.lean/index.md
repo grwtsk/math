@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/FilterNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/FilterNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FilterNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FilterNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [List](../../../../GeneralTopology/FilterNamespaced.lean/declarations/list.md) | 21 | `declaration-track:7e4040e592cb790eab17be956866597cba95d17fbaa9ea1b90b74b326bc17a47` |
-| 2 | `def` | [filter](../../../../GeneralTopology/FilterNamespaced.lean/declarations/filter.md) | 28 | `declaration-track:7076da3f75ededfce6775e8a72ca90a97f2c5548b7533d1ea050d06b96e3ad7c` |
-| 3 | `theorem` | [filter_cons_true](../../../../GeneralTopology/FilterNamespaced.lean/declarations/filter-cons-true.md) | 36 | `result-track:729da0309bead8eda67db27911606ffadffc27b6d075450d9a9ad91759dcb761` |
-| 4 | `theorem` | [filter_cons_false](../../../../GeneralTopology/FilterNamespaced.lean/declarations/filter-cons-false.md) | 40 | `result-track:fe0f797ba63a6de8d8e095bed30f2839840cdc5117ef8b83f46852f16ac5732a` |
-| 5 | `inductive` | [Mem](../../../../GeneralTopology/FilterNamespaced.lean/declarations/mem.md) | 44 | `declaration-track:7724372bfe7d8f7291c9f014dbff02104bc09e19e66e358f868056adca2d1adb` |
-| 6 | `theorem` | [mem_filter](../../../../GeneralTopology/FilterNamespaced.lean/declarations/mem-filter.md) | 50 | `result-track:f9c03b2c0a6d8c8730d29efa91d8cf5ddd03a97a16f8e10244593078a642d9b1` |
+| 1 | `inductive` | [List](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FilterNamespaced.lean/declarations/list.md) | 21 | `declaration-track:7e4040e592cb790eab17be956866597cba95d17fbaa9ea1b90b74b326bc17a47` |
+| 2 | `def` | [filter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FilterNamespaced.lean/declarations/filter.md) | 28 | `declaration-track:7076da3f75ededfce6775e8a72ca90a97f2c5548b7533d1ea050d06b96e3ad7c` |
+| 3 | `theorem` | [filter_cons_true](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FilterNamespaced.lean/declarations/filter-cons-true.md) | 36 | `result-track:729da0309bead8eda67db27911606ffadffc27b6d075450d9a9ad91759dcb761` |
+| 4 | `theorem` | [filter_cons_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FilterNamespaced.lean/declarations/filter-cons-false.md) | 40 | `result-track:fe0f797ba63a6de8d8e095bed30f2839840cdc5117ef8b83f46852f16ac5732a` |
+| 5 | `inductive` | [Mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FilterNamespaced.lean/declarations/mem.md) | 44 | `declaration-track:7724372bfe7d8f7291c9f014dbff02104bc09e19e66e358f868056adca2d1adb` |
+| 6 | `theorem` | [mem_filter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FilterNamespaced.lean/declarations/mem-filter.md) | 50 | `result-track:f9c03b2c0a6d8c8730d29efa91d8cf5ddd03a97a16f8e10244593078a642d9b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

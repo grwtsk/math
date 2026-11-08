@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RatioClassBudget.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RatioClassBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RatioClassBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RatioClassBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ratioClassContribution](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RatioClassBudget.lean/declarations/ratioclasscontribution.md) | 15 | `declaration-track:92e7e34cae35b8a1fe77a463f972485dfe0c52d8b459de13374f2284e2263e8f` |
-| 2 | `theorem` | [source_harmonic_sum_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RatioClassBudget.lean/declarations/source-harmonic-sum-le.md) | 21 | `result-track:d063a0b5d24895cabbe863639d1e316699e4ba00534818a76667d5866d3a5a6c` |
-| 3 | `theorem` | [moebius_real_abs_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RatioClassBudget.lean/declarations/moebius-real-abs-le.md) | 27 | `result-track:6c33bd3149238329d07ee2f284c8bcb4d4e9e6ec7018eefdab7c1c23b493ba5f` |
-| 4 | `theorem` | [ratio_term_abs_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RatioClassBudget.lean/declarations/ratio-term-abs-le.md) | 30 | `result-track:473f312e9b3acc852e57b819903a36405e4575db8ced953e9755f829d2600b9b` |
-| 5 | `theorem` | [ratioClass_abs_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RatioClassBudget.lean/declarations/ratioclass-abs-le.md) | 61 | `result-track:d498de38166572d461ac6bdaa2b54a87f6b4969d8699395bdf1dd0dd90a058e8` |
-| 6 | `theorem` | [supported_ratio_sum_abs_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RatioClassBudget.lean/declarations/supported-ratio-sum-abs-le.md) | 96 | `result-track:6a33c1064b0708aa8f1d3f4d676475c5aa1fea8cc48abe5fec88293007205c24` |
+| 1 | `def` | [ratioClassContribution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RatioClassBudget.lean/declarations/ratioclasscontribution.md) | 15 | `declaration-track:92e7e34cae35b8a1fe77a463f972485dfe0c52d8b459de13374f2284e2263e8f` |
+| 2 | `theorem` | [source_harmonic_sum_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RatioClassBudget.lean/declarations/source-harmonic-sum-le.md) | 21 | `result-track:d063a0b5d24895cabbe863639d1e316699e4ba00534818a76667d5866d3a5a6c` |
+| 3 | `theorem` | [moebius_real_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RatioClassBudget.lean/declarations/moebius-real-abs-le.md) | 27 | `result-track:6c33bd3149238329d07ee2f284c8bcb4d4e9e6ec7018eefdab7c1c23b493ba5f` |
+| 4 | `theorem` | [ratio_term_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RatioClassBudget.lean/declarations/ratio-term-abs-le.md) | 30 | `result-track:473f312e9b3acc852e57b819903a36405e4575db8ced953e9755f829d2600b9b` |
+| 5 | `theorem` | [ratioClass_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RatioClassBudget.lean/declarations/ratioclass-abs-le.md) | 61 | `result-track:d498de38166572d461ac6bdaa2b54a87f6b4969d8699395bdf1dd0dd90a058e8` |
+| 6 | `theorem` | [supported_ratio_sum_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RatioClassBudget.lean/declarations/supported-ratio-sum-abs-le.md) | 96 | `result-track:6a33c1064b0708aa8f1d3f4d676475c5aa1fea8cc48abe5fec88293007205c24` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

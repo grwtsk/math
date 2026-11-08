@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ApertureNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ApertureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ApertureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ApertureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [closed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ApertureNamespaced.lean/declarations/closed.md) | 15 | `declaration-track:dcc4495f068169a5d558e9b6d4142d4c80fa0b8181166ebf6e815c05b6b7b782` |
-| 2 | `def` | [fullyOpen](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ApertureNamespaced.lean/declarations/fullyopen.md) | 17 | `declaration-track:3601efa8e8820e525ec0c3af8702d93081941c0931219c8e25655a2325a846fc` |
-| 3 | `def` | [isClosed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ApertureNamespaced.lean/declarations/isclosed.md) | 19 | `declaration-track:81be1749864f500ee950693750252995a9c558b694795f56803b7bc7d8889472` |
-| 4 | `def` | [isOpen](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ApertureNamespaced.lean/declarations/isopen.md) | 21 | `declaration-track:7b1beb80eeefe8fd0bcf7674dfa9b73043e9cc8876edaad6deb981ed78a870ba` |
-| 5 | `theorem` | [closed_eq_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ApertureNamespaced.lean/declarations/closed-eq-zero.md) | 23 | `result-track:718f6a6dfc14ac4f931fdd0726eb2395ce5a9dd90561ca4582aafe28f0f8f911` |
-| 6 | `theorem` | [fullyOpen_eq_255](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ApertureNamespaced.lean/declarations/fullyopen-eq-255.md) | 25 | `result-track:f22cc95e706933f45b3874236a6fc34b22c63fd05326bf3e5b9414abb4b3c901` |
+| 1 | `def` | [closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ApertureNamespaced.lean/declarations/closed.md) | 15 | `declaration-track:dcc4495f068169a5d558e9b6d4142d4c80fa0b8181166ebf6e815c05b6b7b782` |
+| 2 | `def` | [fullyOpen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ApertureNamespaced.lean/declarations/fullyopen.md) | 17 | `declaration-track:3601efa8e8820e525ec0c3af8702d93081941c0931219c8e25655a2325a846fc` |
+| 3 | `def` | [isClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ApertureNamespaced.lean/declarations/isclosed.md) | 19 | `declaration-track:81be1749864f500ee950693750252995a9c558b694795f56803b7bc7d8889472` |
+| 4 | `def` | [isOpen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ApertureNamespaced.lean/declarations/isopen.md) | 21 | `declaration-track:7b1beb80eeefe8fd0bcf7674dfa9b73043e9cc8876edaad6deb981ed78a870ba` |
+| 5 | `theorem` | [closed_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ApertureNamespaced.lean/declarations/closed-eq-zero.md) | 23 | `result-track:718f6a6dfc14ac4f931fdd0726eb2395ce5a9dd90561ca4582aafe28f0f8f911` |
+| 6 | `theorem` | [fullyOpen_eq_255](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ApertureNamespaced.lean/declarations/fullyopen-eq-255.md) | 25 | `result-track:f22cc95e706933f45b3874236a6fc34b22c63fd05326bf3e5b9414abb4b3c901` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

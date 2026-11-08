@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotFinset.lean/index.md) · [Full source](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotFinset.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotFinset.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotFinset.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_finset_range](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotFinset.lean/declarations/tendsto-finset-range.md) | 21 | `result-track:97965e376d585f82b466dce2bd71bc02476e28e78b67b35e71be03a30b4fbb41` |
-| 2 | `theorem` | [atTop_finset_eq_iInf](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotFinset.lean/declarations/attop-finset-eq-iinf.md) | 24 | `result-track:e826e227d3ee1d95a1fe27310b70a17f58dce9e63f372f55dceef51469dfd946` |
-| 3 | `theorem` | [tendsto_atTop_finset_of_monotone](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotFinset.lean/declarations/tendsto-attop-finset-of-monotone.md) | 35 | `result-track:373a276935a173dfee5a4af380d23ed2f8210c7355cd60bd54352c5cd08b452d` |
-| 4 | `theorem` | [tendsto_finset_image_atTop_atTop](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotFinset.lean/declarations/tendsto-finset-image-attop-attop.md) | 44 | `result-track:39594bfcc29bd83dde00fd1e29f587140ca4134bb7bc9e82d829964771e30e90` |
-| 5 | `theorem` | [tendsto_finset_preimage_atTop_atTop](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotFinset.lean/declarations/tendsto-finset-preimage-attop-attop.md) | 49 | `result-track:b9984f0d00c6a5bd1dba7cf60a7c220a8bc3ccde8310284820d8574f7092e978` |
-| 6 | `lemma` | [tendsto_toLeft_atTop](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotFinset.lean/declarations/tendsto-toleft-attop.md) | 54 | `result-track:7102b1edbbe4c6b53b57b3249cbd6d14f7306d1d47ddde3a41092e3b9377f74c` |
-| 7 | `lemma` | [tendsto_toRight_atTop](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotFinset.lean/declarations/tendsto-toright-attop.md) | 61 | `result-track:9a37f2d279ea64a70e5fdec58b8546ac8bc4b9508721fcde702413ebebe7ee47` |
+| 1 | `theorem` | [tendsto_finset_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotFinset.lean/declarations/tendsto-finset-range.md) | 21 | `result-track:97965e376d585f82b466dce2bd71bc02476e28e78b67b35e71be03a30b4fbb41` |
+| 2 | `theorem` | [atTop_finset_eq_iInf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotFinset.lean/declarations/attop-finset-eq-iinf.md) | 24 | `result-track:e826e227d3ee1d95a1fe27310b70a17f58dce9e63f372f55dceef51469dfd946` |
+| 3 | `theorem` | [tendsto_atTop_finset_of_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotFinset.lean/declarations/tendsto-attop-finset-of-monotone.md) | 35 | `result-track:373a276935a173dfee5a4af380d23ed2f8210c7355cd60bd54352c5cd08b452d` |
+| 4 | `theorem` | [tendsto_finset_image_atTop_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotFinset.lean/declarations/tendsto-finset-image-attop-attop.md) | 44 | `result-track:39594bfcc29bd83dde00fd1e29f587140ca4134bb7bc9e82d829964771e30e90` |
+| 5 | `theorem` | [tendsto_finset_preimage_atTop_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotFinset.lean/declarations/tendsto-finset-preimage-attop-attop.md) | 49 | `result-track:b9984f0d00c6a5bd1dba7cf60a7c220a8bc3ccde8310284820d8574f7092e978` |
+| 6 | `lemma` | [tendsto_toLeft_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotFinset.lean/declarations/tendsto-toleft-attop.md) | 54 | `result-track:7102b1edbbe4c6b53b57b3249cbd6d14f7306d1d47ddde3a41092e3b9377f74c` |
+| 7 | `lemma` | [tendsto_toRight_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotFinset.lean/declarations/tendsto-toright-attop.md) | 61 | `result-track:9a37f2d279ea64a70e5fdec58b8546ac8bc4b9508721fcde702413ebebe7ee47` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

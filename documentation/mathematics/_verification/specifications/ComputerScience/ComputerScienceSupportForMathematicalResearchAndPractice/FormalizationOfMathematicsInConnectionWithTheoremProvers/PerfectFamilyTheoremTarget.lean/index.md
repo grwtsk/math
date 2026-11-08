@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PerfectFamilyTheoremTarget.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PerfectFamilyTheoremTarget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PerfectFamilyTheoremTarget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PerfectFamilyTheoremTarget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [perfect_family_base_change_if_supplied](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PerfectFamilyTheoremTarget.lean/declarations/perfect-family-base-change-if-supplied.md) | 19 | `result-track:f3e087699abe3ff7b41483b88bb7457d67fa5e415b7b7b741bc42db83fd32aac` |
-| 2 | `theorem` | [perfect_family_perfect_if_supplied](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PerfectFamilyTheoremTarget.lean/declarations/perfect-family-perfect-if-supplied.md) | 24 | `result-track:9499b13b885bf4a6173f98fc8c4a6214a413e025af41c86e6af11a5d32bc761b` |
+| 1 | `theorem` | [perfect_family_base_change_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PerfectFamilyTheoremTarget.lean/declarations/perfect-family-base-change-if-supplied.md) | 19 | `result-track:f3e087699abe3ff7b41483b88bb7457d67fa5e415b7b7b741bc42db83fd32aac` |
+| 2 | `theorem` | [perfect_family_perfect_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PerfectFamilyTheoremTarget.lean/declarations/perfect-family-perfect-if-supplied.md) | 24 | `result-track:9499b13b885bf4a6173f98fc8c4a6214a413e025af41c86e6af11a5d32bc761b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

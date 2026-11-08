@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/GammaFactsNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/GammaFactsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GammaFactsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GammaFactsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [digamma_conj](../../../../RealFunctions/GammaFactsNamespaced.lean/declarations/digamma-conj.md) | 53 | `result-track:b250315431123669884cf07b712e55f1a0ea6589e665768b580f01f00d78da6f` |
-| 2 | `theorem` | [mu_even](../../../../RealFunctions/GammaFactsNamespaced.lean/declarations/mu-even.md) | 68 | `result-track:4e8db17ce61f908d037dad5d4816497b63a9308b29a01b6dcfef499e100802be` |
-| 3 | `lemma` | [gamma_ne_neg_nat](../../../../RealFunctions/GammaFactsNamespaced.lean/declarations/gamma-ne-neg-nat.md) | 78 | `result-track:c722da58f5334feca4f2b8a2af87c01dace4b4c229384ac622ede9163428d54f` |
-| 4 | `lemma` | [analyticAt_digamma](../../../../RealFunctions/GammaFactsNamespaced.lean/declarations/analyticat-digamma.md) | 84 | `result-track:41cb64fc3d937f6df70ca7aa283214c2f7084c099f91db8c2bfbcb6b75f2031c` |
-| 5 | `theorem` | [mu_smooth](../../../../RealFunctions/GammaFactsNamespaced.lean/declarations/mu-smooth.md) | 104 | `result-track:3efd4feeddfb68fa9b54519409631f5b828c085d0706cd4cb2560ec06c3b7253` |
+| 1 | `theorem` | [digamma_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GammaFactsNamespaced.lean/declarations/digamma-conj.md) | 53 | `result-track:b250315431123669884cf07b712e55f1a0ea6589e665768b580f01f00d78da6f` |
+| 2 | `theorem` | [mu_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GammaFactsNamespaced.lean/declarations/mu-even.md) | 68 | `result-track:4e8db17ce61f908d037dad5d4816497b63a9308b29a01b6dcfef499e100802be` |
+| 3 | `lemma` | [gamma_ne_neg_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GammaFactsNamespaced.lean/declarations/gamma-ne-neg-nat.md) | 78 | `result-track:c722da58f5334feca4f2b8a2af87c01dace4b4c229384ac622ede9163428d54f` |
+| 4 | `lemma` | [analyticAt_digamma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GammaFactsNamespaced.lean/declarations/analyticat-digamma.md) | 84 | `result-track:41cb64fc3d937f6df70ca7aa283214c2f7084c099f91db8c2bfbcb6b75f2031c` |
+| 5 | `theorem` | [mu_smooth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GammaFactsNamespaced.lean/declarations/mu-smooth.md) | 104 | `result-track:3efd4feeddfb68fa9b54519409631f5b828c085d0706cd4cb2560ec06c3b7253` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

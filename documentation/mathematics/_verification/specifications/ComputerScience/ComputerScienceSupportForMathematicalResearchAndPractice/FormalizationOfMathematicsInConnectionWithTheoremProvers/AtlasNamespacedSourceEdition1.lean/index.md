@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AtlasNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AtlasNamespacedSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AtlasNamespacedSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AtlasNamespacedSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [InterfaceSupport](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AtlasNamespacedSourceEdition1.lean/declarations/interfacesupport.md) | 22 | `declaration-track:08facfe8b1f033b607b3667f382101e5d4a1198a2ca6b07103ad2fbe7854010b` |
-| 2 | `structure` | [TotalCapabilityAtlas](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AtlasNamespacedSourceEdition1.lean/declarations/totalcapabilityatlas.md) | 26 | `declaration-track:5d9fbbb57199b5060bdd95e5838eebb412173ac349333a9a3ab58ba6aa275b86` |
-| 3 | `theorem` | [TotalCapabilityAtlas.every_interface_modeled](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AtlasNamespacedSourceEdition1.lean/declarations/totalcapabilityatlas-every-interface-modeled.md) | 33 | `result-track:a42192579106185bcbcf20b9486baa1d75df46e0330a0cb64c8bfdc25974b7e0` |
+| 1 | `inductive` | [InterfaceSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AtlasNamespacedSourceEdition1.lean/declarations/interfacesupport.md) | 22 | `declaration-track:08facfe8b1f033b607b3667f382101e5d4a1198a2ca6b07103ad2fbe7854010b` |
+| 2 | `structure` | [TotalCapabilityAtlas](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AtlasNamespacedSourceEdition1.lean/declarations/totalcapabilityatlas.md) | 26 | `declaration-track:5d9fbbb57199b5060bdd95e5838eebb412173ac349333a9a3ab58ba6aa275b86` |
+| 3 | `theorem` | [TotalCapabilityAtlas.every_interface_modeled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AtlasNamespacedSourceEdition1.lean/declarations/totalcapabilityatlas-every-interface-modeled.md) | 33 | `result-track:a42192579106185bcbcf20b9486baa1d75df46e0330a0cb64c8bfdc25974b7e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

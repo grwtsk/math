@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Vector.iterFromIdx](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicEdition1.lean/declarations/vector-iterfromidx.md) | 46 | `declaration-track:e4800df43238c56a22896601417a78c069eb80466e7e330b2317c764812aebbf` |
-| 2 | `def` | [Vector.iter](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicEdition1.lean/declarations/vector-iter.md) | 62 | `declaration-track:6bd859ce57fae455cb33288f7ac35fed27b0f8bc775180f9c9d3fc6aa94f1e1e` |
+| 1 | `def` | [Vector.iterFromIdx](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicEdition1.lean/declarations/vector-iterfromidx.md) | 46 | `declaration-track:e4800df43238c56a22896601417a78c069eb80466e7e330b2317c764812aebbf` |
+| 2 | `def` | [Vector.iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicEdition1.lean/declarations/vector-iter.md) | 62 | `declaration-track:6bd859ce57fae455cb33288f7ac35fed27b0f8bc775180f9c9d3fc6aa94f1e1e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuadraticNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuadraticNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuadraticNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuadraticNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quadratic](../../../../CommutativeAlgebra/QuadraticNamespaced.lean/declarations/quadratic.md) | 25 | `declaration-track:18a2fa39f7aa2722d12ce5eb2a2b4bdeacf7605d56b8d44c990ab11c6327f84b` |
-| 2 | `theorem` | [eval_quadratic](../../../../CommutativeAlgebra/QuadraticNamespaced.lean/declarations/eval-quadratic.md) | 28 | `result-track:f7fdd4b8f1d93be83b686ea502402c48c997a6c444cf1d8b6238a6ac9748b216` |
+| 1 | `def` | [quadratic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuadraticNamespaced.lean/declarations/quadratic.md) | 25 | `declaration-track:18a2fa39f7aa2722d12ce5eb2a2b4bdeacf7605d56b8d44c990ab11c6327f84b` |
+| 2 | `theorem` | [eval_quadratic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuadraticNamespaced.lean/declarations/eval-quadratic.md) | 28 | `result-track:f7fdd4b8f1d93be83b686ea502402c48c997a6c444cf1d8b6238a6ac9748b216` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

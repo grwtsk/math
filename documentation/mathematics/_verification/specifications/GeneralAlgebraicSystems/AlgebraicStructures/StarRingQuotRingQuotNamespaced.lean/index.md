@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarRingQuotRingQuotNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarRingQuotRingQuotNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarRingQuotRingQuotNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarRingQuotRingQuotNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Rel.star](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarRingQuotRingQuotNamespaced.lean/declarations/rel-star.md) | 31 | `result-track:512fb6887942ddb11f29df6d67de1a3feb0479b49938e2e3eb13aa2bbb2b8384` |
-| 2 | `theorem` | [star'_quot](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarRingQuotRingQuotNamespaced.lean/declarations/star-quot.md) | 45 | `result-track:6eef8c416db1f11e1e05368c4aec3f640ffa99d261512ca27f0ab72483a0b6a5` |
-| 3 | `def` | [starRing](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarRingQuotRingQuotNamespaced.lean/declarations/starring.md) | 49 | `declaration-track:180e9c43f2f50d3616f34565eea57daa69d02b6b09f4f474a8abca976d671959` |
+| 1 | `theorem` | [Rel.star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarRingQuotRingQuotNamespaced.lean/declarations/rel-star.md) | 31 | `result-track:512fb6887942ddb11f29df6d67de1a3feb0479b49938e2e3eb13aa2bbb2b8384` |
+| 2 | `theorem` | [star'_quot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarRingQuotRingQuotNamespaced.lean/declarations/star-quot.md) | 45 | `result-track:6eef8c416db1f11e1e05368c4aec3f640ffa99d261512ca27f0ab72483a0b6a5` |
+| 3 | `def` | [starRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarRingQuotRingQuotNamespaced.lean/declarations/starring.md) | 49 | `declaration-track:180e9c43f2f50d3616f34565eea57daa69d02b6b09f4f474a8abca976d671959` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

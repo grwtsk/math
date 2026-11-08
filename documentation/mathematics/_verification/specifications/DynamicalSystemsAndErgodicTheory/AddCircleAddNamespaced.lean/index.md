@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/AddCircleAddNamespaced.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/AddCircleAddNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AddCircleAddNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AddCircleAddNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ergodic_add_left](../../../../DynamicalSystemsAndErgodicTheory/AddCircleAddNamespaced.lean/declarations/ergodic-add-left.md) | 32 | `result-track:266548b39c8db2ea134e1454cdae9f18a22ec2dad7e82eb6aa82f2074d777ea0` |
-| 2 | `theorem` | [ergodic_add_right](../../../../DynamicalSystemsAndErgodicTheory/AddCircleAddNamespaced.lean/declarations/ergodic-add-right.md) | 35 | `result-track:03f0b849c29717a74ba7e011948c284c8c1fe42c1e82136e49f93360fe7e84a0` |
+| 1 | `theorem` | [ergodic_add_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AddCircleAddNamespaced.lean/declarations/ergodic-add-left.md) | 32 | `result-track:266548b39c8db2ea134e1454cdae9f18a22ec2dad7e82eb6aa82f2074d777ea0` |
+| 2 | `theorem` | [ergodic_add_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AddCircleAddNamespaced.lean/declarations/ergodic-add-right.md) | 35 | `result-track:03f0b849c29717a74ba7e011948c284c8c1fe42c1e82136e49f93360fe7e84a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

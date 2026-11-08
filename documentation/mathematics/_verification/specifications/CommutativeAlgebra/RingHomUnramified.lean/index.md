@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingHomUnramified.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingHomUnramified.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramified.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramified.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FormallyUnramified](../../../../CommutativeAlgebra/RingHomUnramified.lean/declarations/formallyunramified.md) | 24 | `declaration-track:1b8ee955c399bb3584d94eb2972f13407a0f4fe905b8762f55f0cb010d225f60` |
-| 2 | `lemma` | [formallyUnramified_algebraMap](../../../../CommutativeAlgebra/RingHomUnramified.lean/declarations/formallyunramified-algebramap.md) | 28 | `result-track:7a0c5e7ec2115d8f7d7865bc8c69c607c9d793a1ea345e96f0210e47d0bd8dd0` |
-| 3 | `lemma` | [stableUnderComposition](../../../../CommutativeAlgebra/RingHomUnramified.lean/declarations/stableundercomposition.md) | 36 | `result-track:3750010797b26e61d47ae9c794186dbcd44ecaa42f48a3dff90d6785a82d51bb` |
-| 4 | `lemma` | [respectsIso](../../../../CommutativeAlgebra/RingHomUnramified.lean/declarations/respectsiso.md) | 42 | `result-track:772244893003b262d439c3ace386e54cee1e5a65aa8435b096c2ac2f21ffa173` |
-| 5 | `lemma` | [isStableUnderBaseChange](../../../../CommutativeAlgebra/RingHomUnramified.lean/declarations/isstableunderbasechange.md) | 49 | `result-track:31e9a52834c4f08f2243fd3fba17ee8a74edc2d3e047b4f0d6e833850293d30f` |
-| 6 | `lemma` | [holdsForLocalizationAway](../../../../CommutativeAlgebra/RingHomUnramified.lean/declarations/holdsforlocalizationaway.md) | 57 | `result-track:da36fceaf98d78d0d8552497acaade1c5b179f55658d7fe0c414504f5f341f34` |
-| 7 | `lemma` | [ofLocalizationPrime](../../../../CommutativeAlgebra/RingHomUnramified.lean/declarations/oflocalizationprime.md) | 63 | `result-track:2fcb4a0870447a1c8c396364e753874db1312d2f04c7df25293d330a2563352b` |
-| 8 | `lemma` | [ofLocalizationSpanTarget](../../../../CommutativeAlgebra/RingHomUnramified.lean/declarations/oflocalizationspantarget.md) | 78 | `result-track:74cd340b88f5435bdcaecf0c166600f3fd9859165a9b5983b0bf2f281e160855` |
-| 9 | `lemma` | [propertyIsLocal](../../../../CommutativeAlgebra/RingHomUnramified.lean/declarations/propertyislocal.md) | 93 | `result-track:b98427644a41484c8aff0abdbdc71f50166f9d1389506d32aa627fc335fdc159` |
+| 1 | `def` | [FormallyUnramified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramified.lean/declarations/formallyunramified.md) | 24 | `declaration-track:1b8ee955c399bb3584d94eb2972f13407a0f4fe905b8762f55f0cb010d225f60` |
+| 2 | `lemma` | [formallyUnramified_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramified.lean/declarations/formallyunramified-algebramap.md) | 28 | `result-track:7a0c5e7ec2115d8f7d7865bc8c69c607c9d793a1ea345e96f0210e47d0bd8dd0` |
+| 3 | `lemma` | [stableUnderComposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramified.lean/declarations/stableundercomposition.md) | 36 | `result-track:3750010797b26e61d47ae9c794186dbcd44ecaa42f48a3dff90d6785a82d51bb` |
+| 4 | `lemma` | [respectsIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramified.lean/declarations/respectsiso.md) | 42 | `result-track:772244893003b262d439c3ace386e54cee1e5a65aa8435b096c2ac2f21ffa173` |
+| 5 | `lemma` | [isStableUnderBaseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramified.lean/declarations/isstableunderbasechange.md) | 49 | `result-track:31e9a52834c4f08f2243fd3fba17ee8a74edc2d3e047b4f0d6e833850293d30f` |
+| 6 | `lemma` | [holdsForLocalizationAway](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramified.lean/declarations/holdsforlocalizationaway.md) | 57 | `result-track:da36fceaf98d78d0d8552497acaade1c5b179f55658d7fe0c414504f5f341f34` |
+| 7 | `lemma` | [ofLocalizationPrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramified.lean/declarations/oflocalizationprime.md) | 63 | `result-track:2fcb4a0870447a1c8c396364e753874db1312d2f04c7df25293d330a2563352b` |
+| 8 | `lemma` | [ofLocalizationSpanTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramified.lean/declarations/oflocalizationspantarget.md) | 78 | `result-track:74cd340b88f5435bdcaecf0c166600f3fd9859165a9b5983b0bf2f281e160855` |
+| 9 | `lemma` | [propertyIsLocal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramified.lean/declarations/propertyislocal.md) | 93 | `result-track:b98427644a41484c8aff0abdbdc71f50166f9d1389506d32aa627fc335fdc159` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

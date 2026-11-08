@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/WholeCyclotomicRefinementAndExplicitBoundaryMap.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/WholeCyclotomicRefinementAndExplicitBoundaryMap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeCyclotomicRefinementAndExplicitBoundaryMap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeCyclotomicRefinementAndExplicitBoundaryMap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `DAF.Fabric.Patch` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.CategoryTheory.Functor.Basic` — import line 20; external provider; requires a separately pinned dependency.
-- [Whole Relative THHAssignment And Explicit Boundary Map](../../../../AssociativeRingsAndAlgebras/WholeRelativeTHHAssignmentAndExplicitBoundaryMap.lean/index.md) — import line 22; pinned internal source present.
+- [Whole Relative THHAssignment And Explicit Boundary Map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeRelativeTHHAssignmentAndExplicitBoundaryMap.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CyclotomicDefectTheory](../../../../AssociativeRingsAndAlgebras/WholeCyclotomicRefinementAndExplicitBoundaryMap.lean/declarations/cyclotomicdefecttheory.md) | 45 | `declaration-track:e295b3c99545fe5e4ec57d3b1285c1695d79cbc7fa1934b9dba6729557be66c8` |
-| 2 | `structure` | [CyclotomicBoundaryMap](../../../../AssociativeRingsAndAlgebras/WholeCyclotomicRefinementAndExplicitBoundaryMap.lean/declarations/cyclotomicboundarymap.md) | 54 | `declaration-track:042959c7e595919bc6708d250d95da57ba352628b851f4365b74d8fe5393c31c` |
-| 3 | `def` | [CyclotomicBoundaryMap.cyclotomicBoundaryDefect](../../../../AssociativeRingsAndAlgebras/WholeCyclotomicRefinementAndExplicitBoundaryMap.lean/declarations/cyclotomicboundarymap-cyclotomicboundarydefect.md) | 63 | `declaration-track:9b1ea842ad872f0229ce082e0529ccda2d1098756f38003aa985feaafaf88d65` |
+| 1 | `structure` | [CyclotomicDefectTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeCyclotomicRefinementAndExplicitBoundaryMap.lean/declarations/cyclotomicdefecttheory.md) | 45 | `declaration-track:e295b3c99545fe5e4ec57d3b1285c1695d79cbc7fa1934b9dba6729557be66c8` |
+| 2 | `structure` | [CyclotomicBoundaryMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeCyclotomicRefinementAndExplicitBoundaryMap.lean/declarations/cyclotomicboundarymap.md) | 54 | `declaration-track:042959c7e595919bc6708d250d95da57ba352628b851f4365b74d8fe5393c31c` |
+| 3 | `def` | [CyclotomicBoundaryMap.cyclotomicBoundaryDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeCyclotomicRefinementAndExplicitBoundaryMap.lean/declarations/cyclotomicboundarymap-cyclotomicboundarydefect.md) | 63 | `declaration-track:9b1ea842ad872f0229ce082e0529ccda2d1098756f38003aa985feaafaf88d65` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/CStarAlgebraExponential.lean/index.md) · [Full source](../../../../FunctionalAnalysis/CStarAlgebraExponential.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraExponential.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraExponential.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [selfAdjoint.expUnitary](../../../../FunctionalAnalysis/CStarAlgebraExponential.lean/declarations/selfadjoint-expunitary.md) | 33 | `declaration-track:cb15b54dffdecf4428e55bafbf37834872535483bdfb5b8f42cea0563a3a4a08` |
-| 2 | `lemma` | [selfAdjoint.expUnitary_zero](../../../../FunctionalAnalysis/CStarAlgebraExponential.lean/declarations/selfadjoint-expunitary-zero.md) | 40 | `result-track:1308a6630cbedaacccbad6bbb50dce2c7c495cdf42b93ee2b628f2afc8ec258c` |
-| 3 | `lemma` | [selfAdjoint.continuous_expUnitary](../../../../FunctionalAnalysis/CStarAlgebraExponential.lean/declarations/selfadjoint-continuous-expunitary.md) | 45 | `result-track:981e7ac2e361f7c5a57f75772c026a1473c38d782a97851b939b4710c644c241` |
-| 4 | `theorem` | [Commute.expUnitary_add](../../../../FunctionalAnalysis/CStarAlgebraExponential.lean/declarations/commute-expunitary-add.md) | 49 | `result-track:fde2910ef2a484d5f6d95300aeb6b5d8b55d0be14480fe414befac2419fddc7b` |
-| 5 | `theorem` | [Commute.expUnitary](../../../../FunctionalAnalysis/CStarAlgebraExponential.lean/declarations/commute-expunitary.md) | 57 | `result-track:de6cda7db7607b6fe7cff496531c8e83b22632d9e952254ba4b0fd68e11a6082` |
+| 1 | `def` | [selfAdjoint.expUnitary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraExponential.lean/declarations/selfadjoint-expunitary.md) | 33 | `declaration-track:cb15b54dffdecf4428e55bafbf37834872535483bdfb5b8f42cea0563a3a4a08` |
+| 2 | `lemma` | [selfAdjoint.expUnitary_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraExponential.lean/declarations/selfadjoint-expunitary-zero.md) | 40 | `result-track:1308a6630cbedaacccbad6bbb50dce2c7c495cdf42b93ee2b628f2afc8ec258c` |
+| 3 | `lemma` | [selfAdjoint.continuous_expUnitary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraExponential.lean/declarations/selfadjoint-continuous-expunitary.md) | 45 | `result-track:981e7ac2e361f7c5a57f75772c026a1473c38d782a97851b939b4710c644c241` |
+| 4 | `theorem` | [Commute.expUnitary_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraExponential.lean/declarations/commute-expunitary-add.md) | 49 | `result-track:fde2910ef2a484d5f6d95300aeb6b5d8b55d0be14480fe414befac2419fddc7b` |
+| 5 | `theorem` | [Commute.expUnitary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraExponential.lean/declarations/commute-expunitary.md) | 57 | `result-track:de6cda7db7607b6fe7cff496531c8e83b22632d9e952254ba4b0fd68e11a6082` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

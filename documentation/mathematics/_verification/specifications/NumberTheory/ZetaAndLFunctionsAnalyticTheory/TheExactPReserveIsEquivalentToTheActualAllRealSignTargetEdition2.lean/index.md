@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExactPReserveIsEquivalentToTheActualAllRealSignTargetEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExactPReserveIsEquivalentToTheActualAllRealSignTargetEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExactPReserveIsEquivalentToTheActualAllRealSignTargetEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExactPReserveIsEquivalentToTheActualAllRealSignTargetEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ExactOneRecordReserve](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExactPReserveIsEquivalentToTheActualAllRealSignTargetEdition2.lean/declarations/exactonerecordreserve.md) | 23 | `declaration-track:2ec87f761f3c3bb122a6bfe4904744ceec2a1e393d2c0bcab4f35fae64127629` |
-| 2 | `theorem` | [exact_one_reserve_iff_eventual_sign](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExactPReserveIsEquivalentToTheActualAllRealSignTargetEdition2.lean/declarations/exact-one-reserve-iff-eventual-sign.md) | 27 | `result-track:5c6f2429a3936434c68deb1fb8eb1618b915faf1914d6f54956a90fd8e01c2dd` |
-| 3 | `theorem` | [exact_reserve_and_sign_have_same_instances](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExactPReserveIsEquivalentToTheActualAllRealSignTargetEdition2.lean/declarations/exact-reserve-and-sign-have-same-instances.md) | 48 | `result-track:2ab307805df23d58f1591d93b3ad1c7cb9d0191509c8b07010dddf2065429f5f` |
+| 1 | `def` | [ExactOneRecordReserve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExactPReserveIsEquivalentToTheActualAllRealSignTargetEdition2.lean/declarations/exactonerecordreserve.md) | 23 | `declaration-track:2ec87f761f3c3bb122a6bfe4904744ceec2a1e393d2c0bcab4f35fae64127629` |
+| 2 | `theorem` | [exact_one_reserve_iff_eventual_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExactPReserveIsEquivalentToTheActualAllRealSignTargetEdition2.lean/declarations/exact-one-reserve-iff-eventual-sign.md) | 27 | `result-track:5c6f2429a3936434c68deb1fb8eb1618b915faf1914d6f54956a90fd8e01c2dd` |
+| 3 | `theorem` | [exact_reserve_and_sign_have_same_instances](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheExactPReserveIsEquivalentToTheActualAllRealSignTargetEdition2.lean/declarations/exact-reserve-and-sign-have-same-instances.md) | 48 | `result-track:2ab307805df23d58f1591d93b3ad1c7cb9d0191509c8b07010dddf2065429f5f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

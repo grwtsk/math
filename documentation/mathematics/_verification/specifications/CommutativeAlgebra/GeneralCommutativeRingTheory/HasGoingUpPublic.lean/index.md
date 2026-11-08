@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/HasGoingUpPublic.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/HasGoingUpPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/HasGoingUpPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/HasGoingUpPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Algebra.HasGoingUp](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/HasGoingUpPublic.lean/declarations/algebra-hasgoingup.md) | 37 | `declaration-track:8904fb9c0ff8cad57fb6b8f55dc994f4459301c9b8c00b9a2a92b164f75a19e6` |
-| 2 | `lemma` | [exists_ideal_ge_liesOver_of_le](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/HasGoingUpPublic.lean/declarations/exists-ideal-ge-liesover-of-le.md) | 46 | `result-track:451dfc253fc7e85184c1d6e19382ff2f537b4c1f6ea38f7be0c31cdfcb4260e7` |
-| 3 | `lemma` | [exists_ideal_gt_liesOver_of_lt](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/HasGoingUpPublic.lean/declarations/exists-ideal-gt-liesover-of-lt.md) | 55 | `result-track:c4118b9c6f29178657aa35b07fbc5c27c53e00c1f36d58abd285947b0871390d` |
-| 4 | `lemma` | [exists_ltSeries_of_hasGoingUp](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/HasGoingUpPublic.lean/declarations/exists-ltseries-of-hasgoingup.md) | 66 | `result-track:9ab43159446db793b4affc65f8cfa288edce9e2be0385229bfbb967749196ac2` |
-| 5 | `lemma` | [iff_specializingMap_primeSpectrumComap](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/HasGoingUpPublic.lean/declarations/iff-specializingmap-primespectrumcomap.md) | 97 | `result-track:d7e695c90fd38279dc823f4bc7cb40d3ac742a2fb419e7f6178b238705904504` |
-| 6 | `lemma` | [trans](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/HasGoingUpPublic.lean/declarations/trans.md) | 117 | `result-track:25f1b5b2993b3c0f802214ac985640712861f2bbf38383cbec7858482924f278` |
-| 7 | `instance` | [of_isIntegral](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/HasGoingUpPublic.lean/declarations/of-isintegral.md) | 128 | `declaration-track:66ec5b4124280522bc2c34449aa3ff3ad13c0fad4c291eb9e308a49573056257` |
+| 1 | `class` | [Algebra.HasGoingUp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/HasGoingUpPublic.lean/declarations/algebra-hasgoingup.md) | 37 | `declaration-track:8904fb9c0ff8cad57fb6b8f55dc994f4459301c9b8c00b9a2a92b164f75a19e6` |
+| 2 | `lemma` | [exists_ideal_ge_liesOver_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/HasGoingUpPublic.lean/declarations/exists-ideal-ge-liesover-of-le.md) | 46 | `result-track:451dfc253fc7e85184c1d6e19382ff2f537b4c1f6ea38f7be0c31cdfcb4260e7` |
+| 3 | `lemma` | [exists_ideal_gt_liesOver_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/HasGoingUpPublic.lean/declarations/exists-ideal-gt-liesover-of-lt.md) | 55 | `result-track:c4118b9c6f29178657aa35b07fbc5c27c53e00c1f36d58abd285947b0871390d` |
+| 4 | `lemma` | [exists_ltSeries_of_hasGoingUp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/HasGoingUpPublic.lean/declarations/exists-ltseries-of-hasgoingup.md) | 66 | `result-track:9ab43159446db793b4affc65f8cfa288edce9e2be0385229bfbb967749196ac2` |
+| 5 | `lemma` | [iff_specializingMap_primeSpectrumComap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/HasGoingUpPublic.lean/declarations/iff-specializingmap-primespectrumcomap.md) | 97 | `result-track:d7e695c90fd38279dc823f4bc7cb40d3ac742a2fb419e7f6178b238705904504` |
+| 6 | `lemma` | [trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/HasGoingUpPublic.lean/declarations/trans.md) | 117 | `result-track:25f1b5b2993b3c0f802214ac985640712861f2bbf38383cbec7858482924f278` |
+| 7 | `instance` | [of_isIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/HasGoingUpPublic.lean/declarations/of-isintegral.md) | 128 | `declaration-track:66ec5b4124280522bc2c34449aa3ff3ad13c0fad4c291eb9e308a49573056257` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

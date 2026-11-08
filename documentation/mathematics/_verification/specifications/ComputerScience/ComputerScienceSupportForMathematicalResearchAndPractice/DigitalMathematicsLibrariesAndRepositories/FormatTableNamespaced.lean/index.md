@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/FormatTableNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/FormatTableNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/FormatTableNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/FormatTableNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Alignment](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/FormatTableNamespaced.lean/declarations/alignment.md) | 24 | `declaration-track:cd1d55b49d144de00dab95220af1e7c01d01ba6fa6be81158ca2478026180b15` |
-| 2 | `def` | [String.justify](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/FormatTableNamespaced.lean/declarations/string-justify.md) | 31 | `declaration-track:9287cb2f74186fae8791d63b3b764892cd19ac9bb07a9e9622d15e9d8e479682` |
-| 3 | `def` | [formatTable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/FormatTableNamespaced.lean/declarations/formattable.md) | 44 | `declaration-track:d03044decdf4f0ce4f0e40a560d3ae35e558023842cdbf79447e95ace2029470` |
+| 1 | `inductive` | [Alignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/FormatTableNamespaced.lean/declarations/alignment.md) | 24 | `declaration-track:cd1d55b49d144de00dab95220af1e7c01d01ba6fa6be81158ca2478026180b15` |
+| 2 | `def` | [String.justify](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/FormatTableNamespaced.lean/declarations/string-justify.md) | 31 | `declaration-track:9287cb2f74186fae8791d63b3b764892cd19ac9bb07a9e9622d15e9d8e479682` |
+| 3 | `def` | [formatTable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/FormatTableNamespaced.lean/declarations/formattable.md) | 44 | `declaration-track:d03044decdf4f0ce4f0e40a560d3ae35e558023842cdbf79447e95ace2029470` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

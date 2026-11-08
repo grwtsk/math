@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PrimeExhaustionNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/PrimeExhaustionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [primesUpTo](../../../../Combinatorics/PrimeExhaustionNamespaced.lean/declarations/primesupto.md) | 26 | `declaration-track:3984ef2d03731e69fdf8881b3d7684e4fb5e360f7860591c15398c6545b584be` |
-| 2 | `theorem` | [mem_primesUpTo_iff](../../../../Combinatorics/PrimeExhaustionNamespaced.lean/declarations/mem-primesupto-iff.md) | 30 | `result-track:270da9ec3066071f2c48ef5072217da78c4492fcb0eaa7e112aaeee629998978` |
-| 3 | `theorem` | [primesUpTo_prime](../../../../Combinatorics/PrimeExhaustionNamespaced.lean/declarations/primesupto-prime.md) | 41 | `result-track:bdf9d8891cb71f73e8998637b0b422516eb106c1d06d2d805705e7987dc8d1d7` |
-| 4 | `theorem` | [primesUpTo_pos](../../../../Combinatorics/PrimeExhaustionNamespaced.lean/declarations/primesupto-pos.md) | 47 | `result-track:26f2744376c531c7dd413c48e61c42056e9e6749abd7f4be75821e4359278e95` |
-| 5 | `theorem` | [prime_factor_mem_primesUpTo_of_dvd_le](../../../../Combinatorics/PrimeExhaustionNamespaced.lean/declarations/prime-factor-mem-primesupto-of-dvd-le.md) | 53 | `result-track:4d325a1f3ca78713afaa0a7af96443e29a17da5f573f8d73fb82198c590a0923` |
-| 6 | `theorem` | [factorization_le_self](../../../../Combinatorics/PrimeExhaustionNamespaced.lean/declarations/factorization-le-self.md) | 63 | `result-track:9e1ceb129cd794d8285d6ef69dc1d8c9f8de1527688343ed68e89d9bab642960` |
-| 7 | `theorem` | [factorization_support_subset_primesUpTo](../../../../Combinatorics/PrimeExhaustionNamespaced.lean/declarations/factorization-support-subset-primesupto.md) | 80 | `result-track:377d7abf120457c9dfdb9880c7dd0e30baede9e35cceef4b20325265fd23549b` |
-| 8 | `theorem` | [nat_mem_boundedSmoothNumbers_primesUpTo_self](../../../../Combinatorics/PrimeExhaustionNamespaced.lean/declarations/nat-mem-boundedsmoothnumbers-primesupto-self.md) | 95 | `result-track:3514ec259405421bcf94c44679daffd777a31e8802f0736a0e02eb5363a0bcc8` |
-| 9 | `theorem` | [Icc_subset_boundedSmoothNumbers_primesUpTo](../../../../Combinatorics/PrimeExhaustionNamespaced.lean/declarations/icc-subset-boundedsmoothnumbers-primesupto.md) | 126 | `result-track:06d3f41b2ea096cc2cc41eaaaf2060e7f38131464a45d2a1c80d98e510c284cd` |
+| 1 | `def` | [primesUpTo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustionNamespaced.lean/declarations/primesupto.md) | 26 | `declaration-track:3984ef2d03731e69fdf8881b3d7684e4fb5e360f7860591c15398c6545b584be` |
+| 2 | `theorem` | [mem_primesUpTo_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustionNamespaced.lean/declarations/mem-primesupto-iff.md) | 30 | `result-track:270da9ec3066071f2c48ef5072217da78c4492fcb0eaa7e112aaeee629998978` |
+| 3 | `theorem` | [primesUpTo_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustionNamespaced.lean/declarations/primesupto-prime.md) | 41 | `result-track:bdf9d8891cb71f73e8998637b0b422516eb106c1d06d2d805705e7987dc8d1d7` |
+| 4 | `theorem` | [primesUpTo_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustionNamespaced.lean/declarations/primesupto-pos.md) | 47 | `result-track:26f2744376c531c7dd413c48e61c42056e9e6749abd7f4be75821e4359278e95` |
+| 5 | `theorem` | [prime_factor_mem_primesUpTo_of_dvd_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustionNamespaced.lean/declarations/prime-factor-mem-primesupto-of-dvd-le.md) | 53 | `result-track:4d325a1f3ca78713afaa0a7af96443e29a17da5f573f8d73fb82198c590a0923` |
+| 6 | `theorem` | [factorization_le_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustionNamespaced.lean/declarations/factorization-le-self.md) | 63 | `result-track:9e1ceb129cd794d8285d6ef69dc1d8c9f8de1527688343ed68e89d9bab642960` |
+| 7 | `theorem` | [factorization_support_subset_primesUpTo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustionNamespaced.lean/declarations/factorization-support-subset-primesupto.md) | 80 | `result-track:377d7abf120457c9dfdb9880c7dd0e30baede9e35cceef4b20325265fd23549b` |
+| 8 | `theorem` | [nat_mem_boundedSmoothNumbers_primesUpTo_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustionNamespaced.lean/declarations/nat-mem-boundedsmoothnumbers-primesupto-self.md) | 95 | `result-track:3514ec259405421bcf94c44679daffd777a31e8802f0736a0e02eb5363a0bcc8` |
+| 9 | `theorem` | [Icc_subset_boundedSmoothNumbers_primesUpTo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustionNamespaced.lean/declarations/icc-subset-boundedsmoothnumbers-primesupto.md) | 126 | `result-track:06d3f41b2ea096cc2cc41eaaaf2060e7f38131464a45d2a1c80d98e510c284cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

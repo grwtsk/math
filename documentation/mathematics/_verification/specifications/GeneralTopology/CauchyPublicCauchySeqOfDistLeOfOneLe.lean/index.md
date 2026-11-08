@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CauchyPublicCauchySeqOfDistLeOfOneLe.lean/index.md) · [Full source](../../../../GeneralTopology/CauchyPublicCauchySeqOfDistLeOfOneLe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauchyPublicCauchySeqOfDistLeOfOneLe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauchyPublicCauchySeqOfDistLeOfOneLe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cauchySeq_of_dist_le_of_one_le](../../../../GeneralTopology/CauchyPublicCauchySeqOfDistLeOfOneLe.lean/declarations/cauchyseq-of-dist-le-of-one-le.md) | 19 | `result-track:94d29434e885f5c29007c7cb5dcf491f306aa07fb37b46334499f82bff3c4b35` |
+| 1 | `theorem` | [cauchySeq_of_dist_le_of_one_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauchyPublicCauchySeqOfDistLeOfOneLe.lean/declarations/cauchyseq-of-dist-le-of-one-le.md) | 19 | `result-track:94d29434e885f5c29007c7cb5dcf491f306aa07fb37b46334499f82bff3c4b35` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

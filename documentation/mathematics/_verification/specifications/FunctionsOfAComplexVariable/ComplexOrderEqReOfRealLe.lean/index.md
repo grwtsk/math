@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [partialOrder](../../../../FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/partialorder.md) | 34 | `declaration-track:c02f788f1b41057f806e5088ffb84ffaea264569fd40999658db52393e51961f` |
-| 2 | `theorem` | [le_def](../../../../FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/le-def.md) | 55 | `result-track:b5eb0b74a94ec20a855ab17b347dba421ee52c6f9a43d3c4ea4f502dbd3c5f2b` |
-| 3 | `theorem` | [lt_def](../../../../FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/lt-def.md) | 59 | `result-track:f96201c03c9b6efc4943099e3e136c1bb4ded635b22d6f4c3a6aeb8436a70bed` |
-| 4 | `theorem` | [real_le_real](../../../../FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/real-le-real.md) | 65 | `result-track:c59f3ec14255635948d3041cae6cd78e84ee7ddea0a596d3e0fa1a0b9bb6e4b3` |
-| 5 | `theorem` | [real_lt_real](../../../../FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/real-lt-real.md) | 69 | `result-track:f15175a9ce7eba5e8260cd8681c66dc210023a655e42cf537f71fe4940d9d094` |
-| 6 | `theorem` | [zero_le_real](../../../../FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/zero-le-real.md) | 74 | `result-track:cf148ff381c7259cac1a509860a625aaa23b9ad3ecf802e7762e313f9e9027d7` |
-| 7 | `theorem` | [zero_lt_real](../../../../FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/zero-lt-real.md) | 79 | `result-track:56b886969b7473820f9747631a7b65180f0e3829fbd49e10402b68c1afeedfa1` |
-| 8 | `theorem` | [not_le_iff](../../../../FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/not-le-iff.md) | 83 | `result-track:54c9983be078460841fa864ce051ce5c0cb699a59e05b2bfd2dd01aad0f0631a` |
-| 9 | `theorem` | [not_lt_iff](../../../../FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/not-lt-iff.md) | 87 | `result-track:d32169eecf1aaf9f37050b3ca5ee1cbd9cc5c5935ddb3532284fd034bf81001d` |
-| 10 | `theorem` | [not_le_zero_iff](../../../../FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/not-le-zero-iff.md) | 91 | `result-track:db24b60579faa8b2cc0b915008764e9bff67ce2dbdb6831158e9f9bd30c6858e` |
-| 11 | `theorem` | [not_lt_zero_iff](../../../../FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/not-lt-zero-iff.md) | 95 | `result-track:a4a3e497b637cd5baa19d988250a555d98767e029c5736d12862dbd942505911` |
-| 12 | `theorem` | [eq_re_ofReal_le](../../../../FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/eq-re-ofreal-le.md) | 99 | `result-track:ccd718892acbf9656bfb92a31d09507fe85ba83e444d9f5bf0be0eb162f1a25f` |
+| 1 | `def` | [partialOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/partialorder.md) | 34 | `declaration-track:c02f788f1b41057f806e5088ffb84ffaea264569fd40999658db52393e51961f` |
+| 2 | `theorem` | [le_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/le-def.md) | 55 | `result-track:b5eb0b74a94ec20a855ab17b347dba421ee52c6f9a43d3c4ea4f502dbd3c5f2b` |
+| 3 | `theorem` | [lt_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/lt-def.md) | 59 | `result-track:f96201c03c9b6efc4943099e3e136c1bb4ded635b22d6f4c3a6aeb8436a70bed` |
+| 4 | `theorem` | [real_le_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/real-le-real.md) | 65 | `result-track:c59f3ec14255635948d3041cae6cd78e84ee7ddea0a596d3e0fa1a0b9bb6e4b3` |
+| 5 | `theorem` | [real_lt_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/real-lt-real.md) | 69 | `result-track:f15175a9ce7eba5e8260cd8681c66dc210023a655e42cf537f71fe4940d9d094` |
+| 6 | `theorem` | [zero_le_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/zero-le-real.md) | 74 | `result-track:cf148ff381c7259cac1a509860a625aaa23b9ad3ecf802e7762e313f9e9027d7` |
+| 7 | `theorem` | [zero_lt_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/zero-lt-real.md) | 79 | `result-track:56b886969b7473820f9747631a7b65180f0e3829fbd49e10402b68c1afeedfa1` |
+| 8 | `theorem` | [not_le_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/not-le-iff.md) | 83 | `result-track:54c9983be078460841fa864ce051ce5c0cb699a59e05b2bfd2dd01aad0f0631a` |
+| 9 | `theorem` | [not_lt_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/not-lt-iff.md) | 87 | `result-track:d32169eecf1aaf9f37050b3ca5ee1cbd9cc5c5935ddb3532284fd034bf81001d` |
+| 10 | `theorem` | [not_le_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/not-le-zero-iff.md) | 91 | `result-track:db24b60579faa8b2cc0b915008764e9bff67ce2dbdb6831158e9f9bd30c6858e` |
+| 11 | `theorem` | [not_lt_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/not-lt-zero-iff.md) | 95 | `result-track:a4a3e497b637cd5baa19d988250a555d98767e029c5736d12862dbd942505911` |
+| 12 | `theorem` | [eq_re_ofReal_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexOrderEqReOfRealLe.lean/declarations/eq-re-ofreal-le.md) | 99 | `result-track:ccd718892acbf9656bfb92a31d09507fe85ba83e444d9f5bf0be0eb162f1a25f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CubicWavePhase.lean/index.md) · [Full source](../../../../GeneralTopology/CubicWavePhase.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,23 +61,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [omega](../../../../GeneralTopology/CubicWavePhase.lean/declarations/omega.md) | 21 | `declaration-track:4ba8180d9c6b6103d9a50df83fd0cbe588eab0fcb72233d3c493a63257d558c1` |
-| 2 | `theorem` | [omega_sum](../../../../GeneralTopology/CubicWavePhase.lean/declarations/omega-sum.md) | 23 | `result-track:1602cf074f835ebc61f97ce2e8bbf09d97abbe62ea63c9449d9ebae10bf0e209` |
-| 3 | `theorem` | [omega_cube](../../../../GeneralTopology/CubicWavePhase.lean/declarations/omega-cube.md) | 27 | `result-track:618253673a5f9e8da891c48db94e30d7ba7e8daae8652ed0204a4a4f477bed55` |
-| 4 | `theorem` | [omega_im_pos](../../../../GeneralTopology/CubicWavePhase.lean/declarations/omega-im-pos.md) | 33 | `result-track:9a77987d7ff9cb428f98ba346bd8a764a12b3ccf7ef4203afe691797456ad0a6` |
-| 5 | `theorem` | [omega_not_real](../../../../GeneralTopology/CubicWavePhase.lean/declarations/omega-not-real.md) | 38 | `result-track:de3f58d0b5fa1102c45cd6c40a251d13902d765252f831e79c9a2e7982c4ef76` |
-| 6 | `theorem` | [omega_ne_one](../../../../GeneralTopology/CubicWavePhase.lean/declarations/omega-ne-one.md) | 45 | `result-track:36df7015b9efd5fdfc42e5f95f7380bc71271f8adb02e2509c7b17e984fbc820` |
-| 7 | `theorem` | [omega_normSq](../../../../GeneralTopology/CubicWavePhase.lean/declarations/omega-normsq.md) | 50 | `result-track:dc91a962392a74e2be73e6ab33387dedb5d66dc6b53d271119bdea1ecf01cc88` |
-| 8 | `def` | [omegaUnit](../../../../GeneralTopology/CubicWavePhase.lean/declarations/omegaunit.md) | 56 | `declaration-track:9299ff6c38732892dc82cb8cbe6fb104a7da1d80a563ca6d6641c47d361cf48b` |
-| 9 | `def` | [sourcePhase](../../../../GeneralTopology/CubicWavePhase.lean/declarations/sourcephase.md) | 63 | `declaration-track:0b2a64638ce6c8ba24194dc14919b0fda6051f9130edfb32c1e929bf7bf6df14` |
-| 10 | `theorem` | [sourcePhase_normSq](../../../../GeneralTopology/CubicWavePhase.lean/declarations/sourcephase-normsq.md) | 65 | `result-track:c827b6707e6a8292e7695b82ed954193dd61c8388c8e3208140117434df3b15f` |
-| 11 | `def` | [rotation](../../../../GeneralTopology/CubicWavePhase.lean/declarations/rotation.md) | 70 | `declaration-track:32c3aa76cfaae158a5e20431514fcf94c219d40128fc2539b119575a314699ee` |
-| 12 | `theorem` | [rotation_zero](../../../../GeneralTopology/CubicWavePhase.lean/declarations/rotation-zero.md) | 72 | `result-track:cfd1430996a12dc4ad774fa3dce189a1205ed7415e1b5f13ff78a16b81da97c3` |
-| 13 | `theorem` | [rotation_add](../../../../GeneralTopology/CubicWavePhase.lean/declarations/rotation-add.md) | 74 | `result-track:88b4635d8551a2e304a4fde748c94bc2e1a24bce8319213db6f930489470f75d` |
-| 14 | `theorem` | [rotation_normSq](../../../../GeneralTopology/CubicWavePhase.lean/declarations/rotation-normsq.md) | 77 | `result-track:acf7a2233b7866f1304a38c19be7b904757cab44aaa3caff62a3594f2e06baec` |
-| 15 | `theorem` | [rotation_period](../../../../GeneralTopology/CubicWavePhase.lean/declarations/rotation-period.md) | 81 | `result-track:dce11d0b22945040bd141c6ef0b91904b1f952a2da598573291078c56cba38e3` |
-| 16 | `theorem` | [rotation_ne_zero](../../../../GeneralTopology/CubicWavePhase.lean/declarations/rotation-ne-zero.md) | 84 | `result-track:f0b504a1a51157e2d70573e8246eef75ac77b005cd3acd43b13441596e1abc9c` |
-| 17 | `theorem` | [rotation_continuous](../../../../GeneralTopology/CubicWavePhase.lean/declarations/rotation-continuous.md) | 91 | `result-track:74b455c8e6a93a1b971be6fd3e6ec5ea01ca84f1d97e45dcf39e9c5732937872` |
+| 1 | `def` | [omega](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/declarations/omega.md) | 21 | `declaration-track:4ba8180d9c6b6103d9a50df83fd0cbe588eab0fcb72233d3c493a63257d558c1` |
+| 2 | `theorem` | [omega_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/declarations/omega-sum.md) | 23 | `result-track:1602cf074f835ebc61f97ce2e8bbf09d97abbe62ea63c9449d9ebae10bf0e209` |
+| 3 | `theorem` | [omega_cube](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/declarations/omega-cube.md) | 27 | `result-track:618253673a5f9e8da891c48db94e30d7ba7e8daae8652ed0204a4a4f477bed55` |
+| 4 | `theorem` | [omega_im_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/declarations/omega-im-pos.md) | 33 | `result-track:9a77987d7ff9cb428f98ba346bd8a764a12b3ccf7ef4203afe691797456ad0a6` |
+| 5 | `theorem` | [omega_not_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/declarations/omega-not-real.md) | 38 | `result-track:de3f58d0b5fa1102c45cd6c40a251d13902d765252f831e79c9a2e7982c4ef76` |
+| 6 | `theorem` | [omega_ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/declarations/omega-ne-one.md) | 45 | `result-track:36df7015b9efd5fdfc42e5f95f7380bc71271f8adb02e2509c7b17e984fbc820` |
+| 7 | `theorem` | [omega_normSq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/declarations/omega-normsq.md) | 50 | `result-track:dc91a962392a74e2be73e6ab33387dedb5d66dc6b53d271119bdea1ecf01cc88` |
+| 8 | `def` | [omegaUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/declarations/omegaunit.md) | 56 | `declaration-track:9299ff6c38732892dc82cb8cbe6fb104a7da1d80a563ca6d6641c47d361cf48b` |
+| 9 | `def` | [sourcePhase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/declarations/sourcephase.md) | 63 | `declaration-track:0b2a64638ce6c8ba24194dc14919b0fda6051f9130edfb32c1e929bf7bf6df14` |
+| 10 | `theorem` | [sourcePhase_normSq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/declarations/sourcephase-normsq.md) | 65 | `result-track:c827b6707e6a8292e7695b82ed954193dd61c8388c8e3208140117434df3b15f` |
+| 11 | `def` | [rotation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/declarations/rotation.md) | 70 | `declaration-track:32c3aa76cfaae158a5e20431514fcf94c219d40128fc2539b119575a314699ee` |
+| 12 | `theorem` | [rotation_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/declarations/rotation-zero.md) | 72 | `result-track:cfd1430996a12dc4ad774fa3dce189a1205ed7415e1b5f13ff78a16b81da97c3` |
+| 13 | `theorem` | [rotation_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/declarations/rotation-add.md) | 74 | `result-track:88b4635d8551a2e304a4fde748c94bc2e1a24bce8319213db6f930489470f75d` |
+| 14 | `theorem` | [rotation_normSq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/declarations/rotation-normsq.md) | 77 | `result-track:acf7a2233b7866f1304a38c19be7b904757cab44aaa3caff62a3594f2e06baec` |
+| 15 | `theorem` | [rotation_period](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/declarations/rotation-period.md) | 81 | `result-track:dce11d0b22945040bd141c6ef0b91904b1f952a2da598573291078c56cba38e3` |
+| 16 | `theorem` | [rotation_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/declarations/rotation-ne-zero.md) | 84 | `result-track:f0b504a1a51157e2d70573e8246eef75ac77b005cd3acd43b13441596e1abc9c` |
+| 17 | `theorem` | [rotation_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/declarations/rotation-continuous.md) | 91 | `result-track:74b455c8e6a93a1b971be6fd3e6ec5ea01ca84f1d97e45dcf39e9c5732937872` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

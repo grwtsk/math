@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ExternalProductBasicPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ExternalProductBasicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ExternalProductBasicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ExternalProductBasicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [externalProductBifunctorCurried](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ExternalProductBasicPublic.lean/declarations/externalproductbifunctorcurried.md) | 32 | `declaration-track:ca9687e8855ff6d981529dbff7d7e2e592366117af5cca6a7c3307b44379e9ad` |
-| 2 | `def` | [externalProductBifunctor](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ExternalProductBasicPublic.lean/declarations/externalproductbifunctor.md) | 38 | `declaration-track:4ffa81112ceb45315d566164753629d62381c6ed2c558840a381d276b4977383` |
-| 3 | `abbrev` | [externalProduct](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ExternalProductBasicPublic.lean/declarations/externalproduct.md) | 44 | `declaration-track:fdc61ccc31d070609656e99ee39e2d5dc969b9f685587534bcefcd7ffaf21b1d` |
-| 4 | `def` | [externalProductCompDiagIso](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ExternalProductBasicPublic.lean/declarations/externalproductcompdiagiso.md) | 66 | `declaration-track:5e538025b41165e1d1d098aefa47fea9bbd8534e75e1c6269a500c96381d506c` |
-| 5 | `def` | [externalProductSwap](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ExternalProductBasicPublic.lean/declarations/externalproductswap.md) | 79 | `declaration-track:029fbeefb9c132242a84ac7c0939bb6657f2a8a974260eddbb30f7522987547f` |
-| 6 | `def` | [externalProductFlip](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ExternalProductBasicPublic.lean/declarations/externalproductflip.md) | 89 | `declaration-track:2245321cd72ee9ba956a497e7e00271cac66254492ec71fe6aa228f7ce1f29e2` |
-| 7 | `def` | [prodCompExternalProduct](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ExternalProductBasicPublic.lean/declarations/prodcompexternalproduct.md) | 103 | `declaration-track:28171071c4c217a82d78f909ba8bb7d9d82238e052116f3b40c4fcaca6ee96e2` |
+| 1 | `def` | [externalProductBifunctorCurried](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ExternalProductBasicPublic.lean/declarations/externalproductbifunctorcurried.md) | 32 | `declaration-track:ca9687e8855ff6d981529dbff7d7e2e592366117af5cca6a7c3307b44379e9ad` |
+| 2 | `def` | [externalProductBifunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ExternalProductBasicPublic.lean/declarations/externalproductbifunctor.md) | 38 | `declaration-track:4ffa81112ceb45315d566164753629d62381c6ed2c558840a381d276b4977383` |
+| 3 | `abbrev` | [externalProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ExternalProductBasicPublic.lean/declarations/externalproduct.md) | 44 | `declaration-track:fdc61ccc31d070609656e99ee39e2d5dc969b9f685587534bcefcd7ffaf21b1d` |
+| 4 | `def` | [externalProductCompDiagIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ExternalProductBasicPublic.lean/declarations/externalproductcompdiagiso.md) | 66 | `declaration-track:5e538025b41165e1d1d098aefa47fea9bbd8534e75e1c6269a500c96381d506c` |
+| 5 | `def` | [externalProductSwap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ExternalProductBasicPublic.lean/declarations/externalproductswap.md) | 79 | `declaration-track:029fbeefb9c132242a84ac7c0939bb6657f2a8a974260eddbb30f7522987547f` |
+| 6 | `def` | [externalProductFlip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ExternalProductBasicPublic.lean/declarations/externalproductflip.md) | 89 | `declaration-track:2245321cd72ee9ba956a497e7e00271cac66254492ec71fe6aa228f7ce1f29e2` |
+| 7 | `def` | [prodCompExternalProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ExternalProductBasicPublic.lean/declarations/prodcompexternalproduct.md) | 103 | `declaration-track:28171071c4c217a82d78f909ba8bb7d9d82238e052116f3b40c4fcaca6ee96e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

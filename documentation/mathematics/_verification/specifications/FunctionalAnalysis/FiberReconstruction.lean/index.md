@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/FiberReconstruction.lean/index.md) · [Full source](../../../../FunctionalAnalysis/FiberReconstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberReconstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberReconstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [transportShell](../../../../FunctionalAnalysis/FiberReconstruction.lean/declarations/transportshell.md) | 22 | `declaration-track:120b72d8045e07597b019a7c04925bfda945688ae35961b2588494e7d0ec6278` |
-| 2 | `theorem` | [heat_residual_reconstruct](../../../../FunctionalAnalysis/FiberReconstruction.lean/declarations/heat-residual-reconstruct.md) | 29 | `result-track:a913928e757720479c9c4dcb19a6a68de9749feed2ea9f2cb25252bf91da7934` |
-| 3 | `theorem` | [torsion_inverse_reconstruct](../../../../FunctionalAnalysis/FiberReconstruction.lean/declarations/torsion-inverse-reconstruct.md) | 36 | `result-track:225fd3fae54fd4685b95ac619f3c8b06c55ab9f551a9eed65e8dfa2d34199701` |
-| 4 | `theorem` | [shell_decode_encode_reconstruct](../../../../FunctionalAnalysis/FiberReconstruction.lean/declarations/shell-decode-encode-reconstruct.md) | 44 | `result-track:30fe3a7d5786638ec5ce8508a995536444268c16cdbcddd2c3c39d22e1777b72` |
-| 5 | `def` | [reconstructedLiftedShell](../../../../FunctionalAnalysis/FiberReconstruction.lean/declarations/reconstructedliftedshell.md) | 49 | `declaration-track:2fd777368f6cb7dbc6def0254dc309fe9b611156666bb202df4000e23e19a6b1` |
-| 6 | `theorem` | [spectral_fiber_reconstruction](../../../../FunctionalAnalysis/FiberReconstruction.lean/declarations/spectral-fiber-reconstruction.md) | 61 | `result-track:22148c8f737fd656931be9b98253006eb4b3abd77e23fe776a31818740db904a` |
+| 1 | `def` | [transportShell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberReconstruction.lean/declarations/transportshell.md) | 22 | `declaration-track:120b72d8045e07597b019a7c04925bfda945688ae35961b2588494e7d0ec6278` |
+| 2 | `theorem` | [heat_residual_reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberReconstruction.lean/declarations/heat-residual-reconstruct.md) | 29 | `result-track:a913928e757720479c9c4dcb19a6a68de9749feed2ea9f2cb25252bf91da7934` |
+| 3 | `theorem` | [torsion_inverse_reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberReconstruction.lean/declarations/torsion-inverse-reconstruct.md) | 36 | `result-track:225fd3fae54fd4685b95ac619f3c8b06c55ab9f551a9eed65e8dfa2d34199701` |
+| 4 | `theorem` | [shell_decode_encode_reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberReconstruction.lean/declarations/shell-decode-encode-reconstruct.md) | 44 | `result-track:30fe3a7d5786638ec5ce8508a995536444268c16cdbcddd2c3c39d22e1777b72` |
+| 5 | `def` | [reconstructedLiftedShell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberReconstruction.lean/declarations/reconstructedliftedshell.md) | 49 | `declaration-track:2fd777368f6cb7dbc6def0254dc309fe9b611156666bb202df4000e23e19a6b1` |
+| 6 | `theorem` | [spectral_fiber_reconstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberReconstruction.lean/declarations/spectral-fiber-reconstruction.md) | 61 | `result-track:22148c8f737fd656931be9b98253006eb4b3abd77e23fe776a31818740db904a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

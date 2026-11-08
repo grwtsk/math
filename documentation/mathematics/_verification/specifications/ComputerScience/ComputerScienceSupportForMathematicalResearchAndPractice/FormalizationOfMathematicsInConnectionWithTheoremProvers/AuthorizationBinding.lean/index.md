@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBinding.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBinding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBinding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBinding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CanonicalIndexPatchAuthorization](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBinding.lean/declarations/canonicalindexpatchauthorization.md) | 12 | `declaration-track:8d52ebe8327c2864d316bae1bc14e6c54643043121b2544d82c80f383d992e7b` |
-| 2 | `structure` | [AuthorizedReviewedCanonicalIndexPatch](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBinding.lean/declarations/authorizedreviewedcanonicalindexpatch.md) | 20 | `declaration-track:c5c92f0cc588200fb95eaadb99a1685e7459fcd94e726b9aebd60fd2dbde7fc2` |
-| 3 | `theorem` | [AuthorizedReviewedCanonicalIndexPatch.same_digest](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBinding.lean/declarations/authorizedreviewedcanonicalindexpatch-same-digest.md) | 26 | `result-track:bb68b1e12062b53d58b0ae00587a5bd6edfaa5397536a758709216c63f1f857e` |
+| 1 | `structure` | [CanonicalIndexPatchAuthorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBinding.lean/declarations/canonicalindexpatchauthorization.md) | 12 | `declaration-track:8d52ebe8327c2864d316bae1bc14e6c54643043121b2544d82c80f383d992e7b` |
+| 2 | `structure` | [AuthorizedReviewedCanonicalIndexPatch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBinding.lean/declarations/authorizedreviewedcanonicalindexpatch.md) | 20 | `declaration-track:c5c92f0cc588200fb95eaadb99a1685e7459fcd94e726b9aebd60fd2dbde7fc2` |
+| 3 | `theorem` | [AuthorizedReviewedCanonicalIndexPatch.same_digest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AuthorizationBinding.lean/declarations/authorizedreviewedcanonicalindexpatch-same-digest.md) | 26 | `result-track:bb68b1e12062b53d58b0ae00587a5bd6edfaa5397536a758709216c63f1f857e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

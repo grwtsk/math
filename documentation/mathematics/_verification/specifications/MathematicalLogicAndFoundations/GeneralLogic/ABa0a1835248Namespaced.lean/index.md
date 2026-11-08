@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ABa0a1835248Namespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ABa0a1835248Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ABa0a1835248Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ABa0a1835248Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [EffectiveOrbit.finitePrefixSafe](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ABa0a1835248Namespaced.lean/declarations/effectiveorbit-finiteprefixsafe.md) | 18 | `declaration-track:6509a7c80cdd7df0da9a1ef4870b9b5bd127689cf8d027005e8c352f43480343` |
+| 1 | `def` | [EffectiveOrbit.finitePrefixSafe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ABa0a1835248Namespaced.lean/declarations/effectiveorbit-finiteprefixsafe.md) | 18 | `declaration-track:6509a7c80cdd7df0da9a1ef4870b9b5bd127689cf8d027005e8c352f43480343` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

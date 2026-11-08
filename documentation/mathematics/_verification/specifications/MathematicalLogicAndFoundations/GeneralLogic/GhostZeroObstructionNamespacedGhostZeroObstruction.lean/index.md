@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GhostZeroObstructionNamespacedGhostZeroObstruction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GhostZeroObstructionNamespacedGhostZeroObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GhostZeroObstructionNamespacedGhostZeroObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GhostZeroObstructionNamespacedGhostZeroObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GhostZeroObstruction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GhostZeroObstructionNamespacedGhostZeroObstruction.lean/declarations/ghostzeroobstruction.md) | 31 | `declaration-track:7717d70b665bb3fb91593dd2dd950eb84bbca34f765404ef23c44ecbbac123d6` |
-| 2 | `theorem` | [ghost_obstruction_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GhostZeroObstructionNamespacedGhostZeroObstruction.lean/declarations/ghost-obstruction-nonzero.md) | 41 | `result-track:bea0ecabaae1f4da516ca4d99c364b35adcc911a8f323c0f265fc1f7a1e918a5` |
-| 3 | `theorem` | [ghost_obstruction_describes_torsion_mismatch](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GhostZeroObstructionNamespacedGhostZeroObstruction.lean/declarations/ghost-obstruction-describes-torsion-mismatch.md) | 47 | `result-track:d6affef65a08f26069071f4d682e03cd9745f0d268e295e0a14a2afbb8f7cf3c` |
+| 1 | `structure` | [GhostZeroObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GhostZeroObstructionNamespacedGhostZeroObstruction.lean/declarations/ghostzeroobstruction.md) | 31 | `declaration-track:7717d70b665bb3fb91593dd2dd950eb84bbca34f765404ef23c44ecbbac123d6` |
+| 2 | `theorem` | [ghost_obstruction_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GhostZeroObstructionNamespacedGhostZeroObstruction.lean/declarations/ghost-obstruction-nonzero.md) | 41 | `result-track:bea0ecabaae1f4da516ca4d99c364b35adcc911a8f323c0f265fc1f7a1e918a5` |
+| 3 | `theorem` | [ghost_obstruction_describes_torsion_mismatch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GhostZeroObstructionNamespacedGhostZeroObstruction.lean/declarations/ghost-obstruction-describes-torsion-mismatch.md) | 47 | `result-track:d6affef65a08f26069071f4d682e03cd9745f0d268e295e0a14a2afbb8f7cf3c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

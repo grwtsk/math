@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubicNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cube_root_of_unity_sum](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubicNamespaced.lean/declarations/cube-root-of-unity-sum.md) | 62 | `result-track:998f78a75f07a1a34a89062438d45c2c23ef2a042f0b2d6fd81efc62a6ccc114` |
-| 2 | `theorem` | [cubic_basic_eq_zero_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubicNamespaced.lean/declarations/cubic-basic-eq-zero-iff.md) | 67 | `result-track:ef1876fde2d61ebb5690612f6953bb2cdbcce1fb5f84b15ccdc6bb3d24031676` |
-| 3 | `theorem` | [cubic_monic_eq_zero_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubicNamespaced.lean/declarations/cubic-monic-eq-zero-iff.md) | 86 | `result-track:b3115ff59e286caa2dc87c9b871a429b6b8f120fd908f6896f03b59e8b4f001b` |
-| 4 | `theorem` | [cubic_eq_zero_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubicNamespaced.lean/declarations/cubic-eq-zero-iff.md) | 105 | `result-track:f29703141dddf84d807b837d0cdacc9d8b3bf69dd8360b10e71dc34633df35c1` |
-| 5 | `theorem` | [cubic_eq_zero_iff_of_p_eq_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubicNamespaced.lean/declarations/cubic-eq-zero-iff-of-p-eq-zero.md) | 131 | `result-track:804e5c199a99103835b1142ceda699b911e1f784b657f8f5bed64deede84f64e` |
+| 1 | `theorem` | [cube_root_of_unity_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubicNamespaced.lean/declarations/cube-root-of-unity-sum.md) | 62 | `result-track:998f78a75f07a1a34a89062438d45c2c23ef2a042f0b2d6fd81efc62a6ccc114` |
+| 2 | `theorem` | [cubic_basic_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubicNamespaced.lean/declarations/cubic-basic-eq-zero-iff.md) | 67 | `result-track:ef1876fde2d61ebb5690612f6953bb2cdbcce1fb5f84b15ccdc6bb3d24031676` |
+| 3 | `theorem` | [cubic_monic_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubicNamespaced.lean/declarations/cubic-monic-eq-zero-iff.md) | 86 | `result-track:b3115ff59e286caa2dc87c9b871a429b6b8f120fd908f6896f03b59e8b4f001b` |
+| 4 | `theorem` | [cubic_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubicNamespaced.lean/declarations/cubic-eq-zero-iff.md) | 105 | `result-track:f29703141dddf84d807b837d0cdacc9d8b3bf69dd8360b10e71dc34633df35c1` |
+| 5 | `theorem` | [cubic_eq_zero_iff_of_p_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubicNamespaced.lean/declarations/cubic-eq-zero-iff-of-p-eq-zero.md) | 131 | `result-track:804e5c199a99103835b1142ceda699b911e1f784b657f8f5bed64deede84f64e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

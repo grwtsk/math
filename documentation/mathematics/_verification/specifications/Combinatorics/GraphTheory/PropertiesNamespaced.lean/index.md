@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/PropertiesNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/PropertiesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PropertiesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PropertiesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/PropertiesNamespaced.lean/declarations/instance.md) | 29 | `declaration-track:b8c66dd16c91a2305613280299bdab486d5f610db7d53c98870389b1001d9049` |
-| 2 | `lemma` | [end_componentCompl_infinite](../../../../../Combinatorics/GraphTheory/PropertiesNamespaced.lean/declarations/end-componentcompl-infinite.md) | 38 | `result-track:1c88dbb2c19ef20b28c06669197b4eb49b664486c670083c0f58a8ac2652ce76` |
-| 3 | `instance` | [compononentComplFunctor_nonempty_of_infinite](../../../../../Combinatorics/GraphTheory/PropertiesNamespaced.lean/declarations/compononentcomplfunctor-nonempty-of-infinite.md) | 44 | `declaration-track:46a0c4c9022ab8da2321cb579ff144d72a985f2eb3882bed3bf8dffe042a3f6e` |
-| 4 | `instance` | [componentComplFunctor_finite](../../../../../Combinatorics/GraphTheory/PropertiesNamespaced.lean/declarations/componentcomplfunctor-finite.md) | 47 | `declaration-track:9607b7d5fdc1c1f8a47c37a14909e99a1b4ffd00be30500bdd7cd50d3745ffd2` |
-| 5 | `lemma` | [nonempty_ends_of_infinite](../../../../../Combinatorics/GraphTheory/PropertiesNamespaced.lean/declarations/nonempty-ends-of-infinite.md) | 51 | `result-track:bca4c9d21662578b4d7a9f8b9657f16a323713dad75664adb6bcaaf0cbcd2e7f` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PropertiesNamespaced.lean/declarations/instance.md) | 29 | `declaration-track:b8c66dd16c91a2305613280299bdab486d5f610db7d53c98870389b1001d9049` |
+| 2 | `lemma` | [end_componentCompl_infinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PropertiesNamespaced.lean/declarations/end-componentcompl-infinite.md) | 38 | `result-track:1c88dbb2c19ef20b28c06669197b4eb49b664486c670083c0f58a8ac2652ce76` |
+| 3 | `instance` | [compononentComplFunctor_nonempty_of_infinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PropertiesNamespaced.lean/declarations/compononentcomplfunctor-nonempty-of-infinite.md) | 44 | `declaration-track:46a0c4c9022ab8da2321cb579ff144d72a985f2eb3882bed3bf8dffe042a3f6e` |
+| 4 | `instance` | [componentComplFunctor_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PropertiesNamespaced.lean/declarations/componentcomplfunctor-finite.md) | 47 | `declaration-track:9607b7d5fdc1c1f8a47c37a14909e99a1b4ffd00be30500bdd7cd50d3745ffd2` |
+| 5 | `lemma` | [nonempty_ends_of_infinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PropertiesNamespaced.lean/declarations/nonempty-ends-of-infinite.md) | 51 | `result-track:bca4c9d21662578b4d7a9f8b9657f16a323713dad75664adb6bcaaf0cbcd2e7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

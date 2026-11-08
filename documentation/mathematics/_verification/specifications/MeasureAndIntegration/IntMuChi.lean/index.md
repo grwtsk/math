@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/IntMuChi.lean/index.md) · [Full source](../../../../MeasureAndIntegration/IntMuChi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntMuChi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntMuChi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [int_g_explicit](../../../../MeasureAndIntegration/IntMuChi.lean/declarations/int-g-explicit.md) | 34 | `result-track:29a9fda71fb6f885703bdc28966e01b8303d98b874da5486c7a00ce7bdf56e7e` |
-| 2 | `theorem` | [int_g_sq_explicit](../../../../MeasureAndIntegration/IntMuChi.lean/declarations/int-g-sq-explicit.md) | 120 | `result-track:944faea4164e7a5f322784f040ae60e9ae5d28c1e0f76a7f5c335e6bd08050e5` |
-| 3 | `theorem` | [int_g_of_stirling](../../../../MeasureAndIntegration/IntMuChi.lean/declarations/int-g-of-stirling.md) | 417 | `result-track:a9ac6e654f739570753a90f12188f7f34301f3e1348415d326f455a1c03512ab` |
-| 4 | `theorem` | [int_g_sq_of_stirling](../../../../MeasureAndIntegration/IntMuChi.lean/declarations/int-g-sq-of-stirling.md) | 426 | `result-track:3a271d8187c5995299bde1453b37451293fc193d9a6aab4bb8771c1eae9e98ab` |
-| 5 | `lemma` | [ell1q_eq](../../../../MeasureAndIntegration/IntMuChi.lean/declarations/ell1q-eq.md) | 441 | `result-track:84aac63fac5e4e8319b56ebad47824215046f295220571bd0cd4913d941cb365` |
-| 6 | `theorem` | [int_muq_uniform](../../../../MeasureAndIntegration/IntMuChi.lean/declarations/int-muq-uniform.md) | 453 | `result-track:7a3c4bbc3cf5d182a9fdb8ac7632b07925020e9d5b2fa51c24d566fdc1cd99d9` |
-| 7 | `theorem` | [int_muq_sq_uniform](../../../../MeasureAndIntegration/IntMuChi.lean/declarations/int-muq-sq-uniform.md) | 500 | `result-track:022e9ffb158e28b295776845d7f74ed1f788d95cf35011dc2b8c0e9c900b2fce` |
-| 8 | `theorem` | [int_muq_of_stirling](../../../../MeasureAndIntegration/IntMuChi.lean/declarations/int-muq-of-stirling.md) | 646 | `result-track:6bbb47a37aed4be71c85ca01c2e92da3ca2957ac87a02c8f533e5000b4c9aeb2` |
-| 9 | `theorem` | [int_muq_sq_of_stirling](../../../../MeasureAndIntegration/IntMuChi.lean/declarations/int-muq-sq-of-stirling.md) | 655 | `result-track:7d50b92adf2c394875116e76908bff986471dc3a8cf25792dc93b1c67a06c94e` |
+| 1 | `theorem` | [int_g_explicit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntMuChi.lean/declarations/int-g-explicit.md) | 34 | `result-track:29a9fda71fb6f885703bdc28966e01b8303d98b874da5486c7a00ce7bdf56e7e` |
+| 2 | `theorem` | [int_g_sq_explicit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntMuChi.lean/declarations/int-g-sq-explicit.md) | 120 | `result-track:944faea4164e7a5f322784f040ae60e9ae5d28c1e0f76a7f5c335e6bd08050e5` |
+| 3 | `theorem` | [int_g_of_stirling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntMuChi.lean/declarations/int-g-of-stirling.md) | 417 | `result-track:a9ac6e654f739570753a90f12188f7f34301f3e1348415d326f455a1c03512ab` |
+| 4 | `theorem` | [int_g_sq_of_stirling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntMuChi.lean/declarations/int-g-sq-of-stirling.md) | 426 | `result-track:3a271d8187c5995299bde1453b37451293fc193d9a6aab4bb8771c1eae9e98ab` |
+| 5 | `lemma` | [ell1q_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntMuChi.lean/declarations/ell1q-eq.md) | 441 | `result-track:84aac63fac5e4e8319b56ebad47824215046f295220571bd0cd4913d941cb365` |
+| 6 | `theorem` | [int_muq_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntMuChi.lean/declarations/int-muq-uniform.md) | 453 | `result-track:7a3c4bbc3cf5d182a9fdb8ac7632b07925020e9d5b2fa51c24d566fdc1cd99d9` |
+| 7 | `theorem` | [int_muq_sq_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntMuChi.lean/declarations/int-muq-sq-uniform.md) | 500 | `result-track:022e9ffb158e28b295776845d7f74ed1f788d95cf35011dc2b8c0e9c900b2fce` |
+| 8 | `theorem` | [int_muq_of_stirling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntMuChi.lean/declarations/int-muq-of-stirling.md) | 646 | `result-track:6bbb47a37aed4be71c85ca01c2e92da3ca2957ac87a02c8f533e5000b4c9aeb2` |
+| 9 | `theorem` | [int_muq_sq_of_stirling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntMuChi.lean/declarations/int-muq-sq-of-stirling.md) | 655 | `result-track:7d50b92adf2c394875116e76908bff986471dc3a8cf25792dc93b1c67a06c94e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

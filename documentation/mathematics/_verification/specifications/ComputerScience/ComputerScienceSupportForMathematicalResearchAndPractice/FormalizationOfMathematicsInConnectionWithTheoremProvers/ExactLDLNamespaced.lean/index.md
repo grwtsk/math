@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExactLDLNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExactLDLNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExactLDLNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExactLDLNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ExactLDLCertificate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExactLDLNamespaced.lean/declarations/exactldlcertificate.md) | 20 | `declaration-track:8fa203a24f4c48a702ab3acc4dea482bfd9c40f7d66c4797d34b9329f13d23a1` |
-| 2 | `theorem` | [exactLDL_nonnegative](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExactLDLNamespaced.lean/declarations/exactldl-nonnegative.md) | 42 | `result-track:1a28fe5c67b42d46ffad7cba5f6c7736473a360d0a86056a7b30dce74220a341` |
-| 3 | `structure` | [NegativeCompressionWitness](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExactLDLNamespaced.lean/declarations/negativecompressionwitness.md) | 54 | `declaration-track:f2d474ef397f32d75dd448da39db73b51a5b52aa3e61d1da8dfbba503f90da00` |
+| 1 | `structure` | [ExactLDLCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExactLDLNamespaced.lean/declarations/exactldlcertificate.md) | 20 | `declaration-track:8fa203a24f4c48a702ab3acc4dea482bfd9c40f7d66c4797d34b9329f13d23a1` |
+| 2 | `theorem` | [exactLDL_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExactLDLNamespaced.lean/declarations/exactldl-nonnegative.md) | 42 | `result-track:1a28fe5c67b42d46ffad7cba5f6c7736473a360d0a86056a7b30dce74220a341` |
+| 3 | `structure` | [NegativeCompressionWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExactLDLNamespaced.lean/declarations/negativecompressionwitness.md) | 54 | `declaration-track:f2d474ef397f32d75dd448da39db73b51a5b52aa3e61d1da8dfbba503f90da00` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

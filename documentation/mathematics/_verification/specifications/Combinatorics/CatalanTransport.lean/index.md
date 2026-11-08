@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CatalanTransport.lean/index.md) · [Full source](../../../../Combinatorics/CatalanTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ExpandStep](../../../../Combinatorics/CatalanTransport.lean/declarations/expandstep.md) | 21 | `declaration-track:3771598f4ffa35a563f50093d11daada723e1f3977412aff23f887d01f9b3d7c` |
-| 2 | `structure` | [CatalanExpansionSystem](../../../../Combinatorics/CatalanTransport.lean/declarations/catalanexpansionsystem.md) | 24 | `declaration-track:74ca56521b7cdee26d688ec385a2e4ff4ac8a12cabd2280c9aee54db906dc856` |
-| 3 | `def` | [contractPath](../../../../Combinatorics/CatalanTransport.lean/declarations/contractpath.md) | 30 | `declaration-track:9fbcb2784252d5d4224e6a8a92737d7fe5c8764914e16f0c9ba1b30dabf16e0f` |
-| 4 | `theorem` | [expand_contract_roundtrip](../../../../Combinatorics/CatalanTransport.lean/declarations/expand-contract-roundtrip.md) | 38 | `result-track:a94ed2a2563308cd8b336bac00071a0c8e5f00bc1f5bc7579f4d870a49fac72e` |
-| 5 | `theorem` | [contract_expand_roundtrip](../../../../Combinatorics/CatalanTransport.lean/declarations/contract-expand-roundtrip.md) | 48 | `result-track:de157cf7983cedb61720bdea64f3f07864158dea1b1e51f191e5f24d3f44f07c` |
-| 6 | `structure` | [CatalanMonodromySystem](../../../../Combinatorics/CatalanTransport.lean/declarations/catalanmonodromysystem.md) | 58 | `declaration-track:f953028cbf6e36bdb105abc13dc1693334c2e6f1c3115e7f5b1553e43d6d858d` |
-| 7 | `theorem` | [torsion_transportPath_commutes](../../../../Combinatorics/CatalanTransport.lean/declarations/torsion-transportpath-commutes.md) | 77 | `result-track:a7f042f5ae9dc63c8ad5ae7cffcdb04a8141690a0b349b49cd9764fceb6ccdce` |
-| 8 | `theorem` | [catalan_elliptic_monodromy_roundtrip](../../../../Combinatorics/CatalanTransport.lean/declarations/catalan-elliptic-monodromy-roundtrip.md) | 98 | `result-track:3d0e4fd3ad2855ce967c3c2fd4253cceddd18ff6d3f8be4d9d933146ca934516` |
+| 1 | `def` | [ExpandStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTransport.lean/declarations/expandstep.md) | 21 | `declaration-track:3771598f4ffa35a563f50093d11daada723e1f3977412aff23f887d01f9b3d7c` |
+| 2 | `structure` | [CatalanExpansionSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTransport.lean/declarations/catalanexpansionsystem.md) | 24 | `declaration-track:74ca56521b7cdee26d688ec385a2e4ff4ac8a12cabd2280c9aee54db906dc856` |
+| 3 | `def` | [contractPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTransport.lean/declarations/contractpath.md) | 30 | `declaration-track:9fbcb2784252d5d4224e6a8a92737d7fe5c8764914e16f0c9ba1b30dabf16e0f` |
+| 4 | `theorem` | [expand_contract_roundtrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTransport.lean/declarations/expand-contract-roundtrip.md) | 38 | `result-track:a94ed2a2563308cd8b336bac00071a0c8e5f00bc1f5bc7579f4d870a49fac72e` |
+| 5 | `theorem` | [contract_expand_roundtrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTransport.lean/declarations/contract-expand-roundtrip.md) | 48 | `result-track:de157cf7983cedb61720bdea64f3f07864158dea1b1e51f191e5f24d3f44f07c` |
+| 6 | `structure` | [CatalanMonodromySystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTransport.lean/declarations/catalanmonodromysystem.md) | 58 | `declaration-track:f953028cbf6e36bdb105abc13dc1693334c2e6f1c3115e7f5b1553e43d6d858d` |
+| 7 | `theorem` | [torsion_transportPath_commutes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTransport.lean/declarations/torsion-transportpath-commutes.md) | 77 | `result-track:a7f042f5ae9dc63c8ad5ae7cffcdb04a8141690a0b349b49cd9764fceb6ccdce` |
+| 8 | `theorem` | [catalan_elliptic_monodromy_roundtrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTransport.lean/declarations/catalan-elliptic-monodromy-roundtrip.md) | 98 | `result-track:3d0e4fd3ad2855ce967c3c2fd4253cceddd18ff6d3f8be4d9d933146ca934516` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

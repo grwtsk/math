@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceSample.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceSample.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceSample.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceSample.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerCyclicDistanceFibers`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerCyclicDistanceFibers`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceFibers.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [triangularGeometricBlock_neg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceSample.lean/declarations/triangulargeometricblock-neg.md) | 13 | `result-track:9793d79a16c078a7b48142b1c568f5bdcda005ba405ad508f5237f7d370f8081` |
-| 2 | `theorem` | [symmetricTriangularKernel_neg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceSample.lean/declarations/symmetrictriangularkernel-neg.md) | 28 | `result-track:04a51487013cff8df67a7eb1a14f1da5e4aaad853632a4f134788825c7154cf4` |
-| 3 | `theorem` | [signedSample_le_normSample](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceSample.lean/declarations/signedsample-le-normsample.md) | 42 | `result-track:a3a90de348acd8910ee9fe6e3228e404b763e8b47cd780fcfbe624f9188dd0eb` |
-| 4 | `theorem` | [sampledKernel_reflected_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceSample.lean/declarations/sampledkernel-reflected-eq.md) | 58 | `result-track:f6b2817adc735d00732d443f64c94f92c3effdf4df4b97a733962454f35ed654` |
-| 5 | `theorem` | [cyclicFejerKernel_le_distanceSample](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceSample.lean/declarations/cyclicfejerkernel-le-distancesample.md) | 87 | `result-track:f8499584e5e002a019deec63c3288af5b052c88fe6943f7e9adda774a85c98a1` |
+| 1 | `theorem` | [triangularGeometricBlock_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceSample.lean/declarations/triangulargeometricblock-neg.md) | 13 | `result-track:9793d79a16c078a7b48142b1c568f5bdcda005ba405ad508f5237f7d370f8081` |
+| 2 | `theorem` | [symmetricTriangularKernel_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceSample.lean/declarations/symmetrictriangularkernel-neg.md) | 28 | `result-track:04a51487013cff8df67a7eb1a14f1da5e4aaad853632a4f134788825c7154cf4` |
+| 3 | `theorem` | [signedSample_le_normSample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceSample.lean/declarations/signedsample-le-normsample.md) | 42 | `result-track:a3a90de348acd8910ee9fe6e3228e404b763e8b47cd780fcfbe624f9188dd0eb` |
+| 4 | `theorem` | [sampledKernel_reflected_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceSample.lean/declarations/sampledkernel-reflected-eq.md) | 58 | `result-track:f6b2817adc735d00732d443f64c94f92c3effdf4df4b97a733962454f35ed654` |
+| 5 | `theorem` | [cyclicFejerKernel_le_distanceSample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceSample.lean/declarations/cyclicfejerkernel-le-distancesample.md) | 87 | `result-track:f8499584e5e002a019deec63c3288af5b052c88fe6943f7e9adda774a85c98a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

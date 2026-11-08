@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarConversions.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarConversions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarConversions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarConversions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ArithmeticFactorTerm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarConversions.lean/declarations/arithmeticfactorterm.md) | 36 | `declaration-track:1440886db0f6279fde52fed3931727c0a3c7339882e0e1b9b83d9e0c3d55f901` |
-| 2 | `inductive` | [CellularFactorTerm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarConversions.lean/declarations/cellularfactorterm.md) | 43 | `declaration-track:5ef686a3c2d260aac1ec632a3f4af50aff187e7dfb00673ca3e3b567d04b06e5` |
-| 3 | `def` | [arithmeticToCellular](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarConversions.lean/declarations/arithmetictocellular.md) | 50 | `declaration-track:d1cd9367d5de0265ac46b164dfcb25339efcd06e3d1d86346630adb44969efe0` |
-| 4 | `def` | [cellularToArithmetic](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarConversions.lean/declarations/cellulartoarithmetic.md) | 55 | `declaration-track:1fdf7fd3d9069c3d2d072be74ab31517ffdb15a7b00693486029b909e35d0bb3` |
-| 5 | `theorem` | [cellularToArithmetic_arithmeticToCellular](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarConversions.lean/declarations/cellulartoarithmetic-arithmetictocellular.md) | 60 | `result-track:17ac6f1faefd9e06a664fe350b2769788ac875addeb1305795df54a483f81826` |
-| 6 | `theorem` | [arithmeticToCellular_cellularToArithmetic](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarConversions.lean/declarations/arithmetictocellular-cellulartoarithmetic.md) | 68 | `result-track:2a09b149560f07127518bb0612d1b8147b2869964a8bf089351dbe5b1ecf8835` |
+| 1 | `inductive` | [ArithmeticFactorTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarConversions.lean/declarations/arithmeticfactorterm.md) | 36 | `declaration-track:1440886db0f6279fde52fed3931727c0a3c7339882e0e1b9b83d9e0c3d55f901` |
+| 2 | `inductive` | [CellularFactorTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarConversions.lean/declarations/cellularfactorterm.md) | 43 | `declaration-track:5ef686a3c2d260aac1ec632a3f4af50aff187e7dfb00673ca3e3b567d04b06e5` |
+| 3 | `def` | [arithmeticToCellular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarConversions.lean/declarations/arithmetictocellular.md) | 50 | `declaration-track:d1cd9367d5de0265ac46b164dfcb25339efcd06e3d1d86346630adb44969efe0` |
+| 4 | `def` | [cellularToArithmetic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarConversions.lean/declarations/cellulartoarithmetic.md) | 55 | `declaration-track:1fdf7fd3d9069c3d2d072be74ab31517ffdb15a7b00693486029b909e35d0bb3` |
+| 5 | `theorem` | [cellularToArithmetic_arithmeticToCellular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarConversions.lean/declarations/cellulartoarithmetic-arithmetictocellular.md) | 60 | `result-track:17ac6f1faefd9e06a664fe350b2769788ac875addeb1305795df54a483f81826` |
+| 6 | `theorem` | [arithmeticToCellular_cellularToArithmetic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarConversions.lean/declarations/arithmetictocellular-cellulartoarithmetic.md) | 68 | `result-track:2a09b149560f07127518bb0612d1b8147b2869964a8bf089351dbe5b1ecf8835` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

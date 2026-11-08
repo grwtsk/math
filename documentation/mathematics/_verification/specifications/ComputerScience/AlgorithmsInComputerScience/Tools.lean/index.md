@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Tools.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Tools.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Tools.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Tools.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Tool](../../../../../ComputerScience/AlgorithmsInComputerScience/Tools.lean/declarations/tool.md) | 9 | `declaration-track:204764316378ca5e241317859ec09cfafe9eae9d24433270e2780780372cd5b2` |
-| 2 | `def` | [Tool.publicName](../../../../../ComputerScience/AlgorithmsInComputerScience/Tools.lean/declarations/tool-publicname.md) | 22 | `declaration-track:024b73bf3d3c28d8a12dc1561a2a7fa355461ea15c93997216facb7e1656a206` |
-| 3 | `structure` | [ToolResultEnvelope](../../../../../ComputerScience/AlgorithmsInComputerScience/Tools.lean/declarations/toolresultenvelope.md) | 34 | `declaration-track:b0df1ec5ecfded632fea333a2056eee724a4d9c3379f01347d781871211666c2` |
+| 1 | `inductive` | [Tool](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Tools.lean/declarations/tool.md) | 9 | `declaration-track:204764316378ca5e241317859ec09cfafe9eae9d24433270e2780780372cd5b2` |
+| 2 | `def` | [Tool.publicName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Tools.lean/declarations/tool-publicname.md) | 22 | `declaration-track:024b73bf3d3c28d8a12dc1561a2a7fa355461ea15c93997216facb7e1656a206` |
+| 3 | `structure` | [ToolResultEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Tools.lean/declarations/toolresultenvelope.md) | 34 | `declaration-track:b0df1ec5ecfded632fea333a2056eee724a4d9c3379f01347d781871211666c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

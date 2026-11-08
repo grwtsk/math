@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ContDiffRestrictScalarsPublic.lean/index.md) · [Full source](../../../../RealFunctions/ContDiffRestrictScalarsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffRestrictScalarsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffRestrictScalarsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [fderivWithin_restrictScalars_comp](../../../../RealFunctions/ContDiffRestrictScalarsPublic.lean/declarations/fderivwithin-restrictscalars-comp.md) | 33 | `result-track:91f23d12b8a8123536b910ff9b9b8613b87cd59407509613c6d989f894ecc0e1` |
-| 2 | `theorem` | [ContDiffWithinAt.restrictScalars_iteratedFDerivWithin_eventuallyEq](../../../../RealFunctions/ContDiffRestrictScalarsPublic.lean/declarations/contdiffwithinat-restrictscalars-iteratedfderivwithin-eventuallyeq.md) | 48 | `result-track:d8f3cd6a197d562d16806ae04040e79dd9254a3770cf8a447593fae33f17a7c1` |
-| 3 | `theorem` | [ContDiffAt.restrictScalars_iteratedFDeriv_eventuallyEq](../../../../RealFunctions/ContDiffRestrictScalarsPublic.lean/declarations/contdiffat-restrictscalars-iteratedfderiv-eventuallyeq.md) | 82 | `result-track:4af5ccc8da42f1a5df9beeb19e322e9b604c73782516288d66bcfc72286e33df` |
-| 4 | `theorem` | [ContDiffAt.restrictScalars_iteratedFDeriv](../../../../RealFunctions/ContDiffRestrictScalarsPublic.lean/declarations/contdiffat-restrictscalars-iteratedfderiv.md) | 93 | `result-track:8e0f3182765f12deac48f0dbf3cd3f996ada1c681b1551e792fed803695a3ee5` |
+| 1 | `lemma` | [fderivWithin_restrictScalars_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffRestrictScalarsPublic.lean/declarations/fderivwithin-restrictscalars-comp.md) | 33 | `result-track:91f23d12b8a8123536b910ff9b9b8613b87cd59407509613c6d989f894ecc0e1` |
+| 2 | `theorem` | [ContDiffWithinAt.restrictScalars_iteratedFDerivWithin_eventuallyEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffRestrictScalarsPublic.lean/declarations/contdiffwithinat-restrictscalars-iteratedfderivwithin-eventuallyeq.md) | 48 | `result-track:d8f3cd6a197d562d16806ae04040e79dd9254a3770cf8a447593fae33f17a7c1` |
+| 3 | `theorem` | [ContDiffAt.restrictScalars_iteratedFDeriv_eventuallyEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffRestrictScalarsPublic.lean/declarations/contdiffat-restrictscalars-iteratedfderiv-eventuallyeq.md) | 82 | `result-track:4af5ccc8da42f1a5df9beeb19e322e9b604c73782516288d66bcfc72286e33df` |
+| 4 | `theorem` | [ContDiffAt.restrictScalars_iteratedFDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffRestrictScalarsPublic.lean/declarations/contdiffat-restrictscalars-iteratedfderiv.md) | 93 | `result-track:8e0f3182765f12deac48f0dbf3cd3f996ada1c681b1551e792fed803695a3ee5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

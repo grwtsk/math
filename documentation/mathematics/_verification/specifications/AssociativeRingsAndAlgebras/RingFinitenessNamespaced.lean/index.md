@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingFinitenessNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingFinitenessNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingFinitenessNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingFinitenessNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/RingFinitenessNamespaced.lean/declarations/example-source-edition-2.md) | 15 | `declaration-track:c6d4b1a58e7028098b55e49eecfa9cdc584c1bfd4d492c5e48796c91a2eb5b94` |
-| 2 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/RingFinitenessNamespaced.lean/declarations/example.md) | 16 | `declaration-track:c43c5299dfd3c227ab8f72e7f1cff43c5dd2521728a92ec4257085ebf4a573d3` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingFinitenessNamespaced.lean/declarations/example-source-edition-2.md) | 15 | `declaration-track:c6d4b1a58e7028098b55e49eecfa9cdc584c1bfd4d492c5e48796c91a2eb5b94` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingFinitenessNamespaced.lean/declarations/example.md) | 16 | `declaration-track:c43c5299dfd3c227ab8f72e7f1cff43c5dd2521728a92ec4257085ebf4a573d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

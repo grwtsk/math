@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/TruncatedConvolutionIdentityHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../CommutativeAlgebra/TruncatedConvolutionIdentityHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TruncatedConvolutionIdentityHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TruncatedConvolutionIdentityHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exact_split](../../../../CommutativeAlgebra/TruncatedConvolutionIdentityHistoricalSourceEdition2.lean/declarations/exact-split.md) | 15 | `result-track:c18f15bb4eabbef65682e5fbe39fb9dff307225059f05384fb8d6e3ac994717a` |
-| 2 | `theorem` | [large_factor](../../../../CommutativeAlgebra/TruncatedConvolutionIdentityHistoricalSourceEdition2.lean/declarations/large-factor.md) | 27 | `result-track:f2a462c9c87c092d5e2c70d213876cd39ca8c7489189fdcceda1bdd5d22597db` |
-| 3 | `theorem` | [split_on_large_window](../../../../CommutativeAlgebra/TruncatedConvolutionIdentityHistoricalSourceEdition2.lean/declarations/split-on-large-window.md) | 36 | `result-track:0c426af675ed8edf48032dd42486d79292db569013b21192aa834834c27aa0eb` |
-| 4 | `theorem` | [continuous_centering](../../../../CommutativeAlgebra/TruncatedConvolutionIdentityHistoricalSourceEdition2.lean/declarations/continuous-centering.md) | 43 | `result-track:dd44f78a87dadc1bd6c0276714cbe81d8eded9a1ef25d55ce6624dcb1dc48e6e` |
-| 5 | `theorem` | [main_profile_rewrite](../../../../CommutativeAlgebra/TruncatedConvolutionIdentityHistoricalSourceEdition2.lean/declarations/main-profile-rewrite.md) | 47 | `result-track:f44303116b980e0b9de53ac0a45e542ae6aefe518117ad76c66794cf0dc6acf8` |
+| 1 | `theorem` | [exact_split](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TruncatedConvolutionIdentityHistoricalSourceEdition2.lean/declarations/exact-split.md) | 15 | `result-track:c18f15bb4eabbef65682e5fbe39fb9dff307225059f05384fb8d6e3ac994717a` |
+| 2 | `theorem` | [large_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TruncatedConvolutionIdentityHistoricalSourceEdition2.lean/declarations/large-factor.md) | 27 | `result-track:f2a462c9c87c092d5e2c70d213876cd39ca8c7489189fdcceda1bdd5d22597db` |
+| 3 | `theorem` | [split_on_large_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TruncatedConvolutionIdentityHistoricalSourceEdition2.lean/declarations/split-on-large-window.md) | 36 | `result-track:0c426af675ed8edf48032dd42486d79292db569013b21192aa834834c27aa0eb` |
+| 4 | `theorem` | [continuous_centering](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TruncatedConvolutionIdentityHistoricalSourceEdition2.lean/declarations/continuous-centering.md) | 43 | `result-track:dd44f78a87dadc1bd6c0276714cbe81d8eded9a1ef25d55ce6624dcb1dc48e6e` |
+| 5 | `theorem` | [main_profile_rewrite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TruncatedConvolutionIdentityHistoricalSourceEdition2.lean/declarations/main-profile-rewrite.md) | 47 | `result-track:f44303116b980e0b9de53ac0a45e542ae6aefe518117ad76c66794cf0dc6acf8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

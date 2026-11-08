@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientLinearPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientLinearPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientLinearPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientLinearPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [smul](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientLinearPublic.lean/declarations/smul.md) | 37 | `declaration-track:c0af8767db1188e0d3d679109341371026307eee99d50c82b39a0026b64a74cd` |
-| 2 | `lemma` | [smul_eq](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientLinearPublic.lean/declarations/smul-eq.md) | 46 | `result-track:598ad92d21c33eb27c0c77163668e8f183733fe3e048f418199baaccd902e17c` |
-| 3 | `def` | [module'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientLinearPublic.lean/declarations/module.md) | 54 | `declaration-track:6be8d54c57ea4c4394c48beb4f09f49d7c00b83338d1e0d94a1813ed06235e7a` |
-| 4 | `def` | [module](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientLinearPublic.lean/declarations/module-source-edition-2.md) | 84 | `declaration-track:73f47b9c4ad4d46e564951b05de9227d8b9656257a69cb526c7466def107f751` |
-| 5 | `def` | [linear](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientLinearPublic.lean/declarations/linear.md) | 97 | `declaration-track:a8811c767390c45b7a5177375cb6d4ee9fc795749a9122be3b2663a24ab72e0a` |
-| 6 | `instance` | [linear_functor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientLinearPublic.lean/declarations/linear-functor.md) | 114 | `declaration-track:897463fa13ea6ead1dcf2782a815a4f81082a152ac7ea1eefcdf1a0b5de15ab5` |
+| 1 | `def` | [smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientLinearPublic.lean/declarations/smul.md) | 37 | `declaration-track:c0af8767db1188e0d3d679109341371026307eee99d50c82b39a0026b64a74cd` |
+| 2 | `lemma` | [smul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientLinearPublic.lean/declarations/smul-eq.md) | 46 | `result-track:598ad92d21c33eb27c0c77163668e8f183733fe3e048f418199baaccd902e17c` |
+| 3 | `def` | [module'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientLinearPublic.lean/declarations/module.md) | 54 | `declaration-track:6be8d54c57ea4c4394c48beb4f09f49d7c00b83338d1e0d94a1813ed06235e7a` |
+| 4 | `def` | [module](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientLinearPublic.lean/declarations/module-source-edition-2.md) | 84 | `declaration-track:73f47b9c4ad4d46e564951b05de9227d8b9656257a69cb526c7466def107f751` |
+| 5 | `def` | [linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientLinearPublic.lean/declarations/linear.md) | 97 | `declaration-track:a8811c767390c45b7a5177375cb6d4ee9fc795749a9122be3b2663a24ab72e0a` |
+| 6 | `instance` | [linear_functor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientLinearPublic.lean/declarations/linear-functor.md) | 114 | `declaration-track:897463fa13ea6ead1dcf2782a815a4f81082a152ac7ea1eefcdf1a0b5de15ab5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

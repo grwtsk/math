@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RouterReplayNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RouterReplayNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RouterReplayNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RouterReplayNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [linearDag](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RouterReplayNamespaced.lean/declarations/lineardag.md) | 20 | `declaration-track:58fa7781bedbd6876c112d2908e747a470927e95fd63eaefc269050d75540462` |
-| 2 | `def` | [linearRoute](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RouterReplayNamespaced.lean/declarations/linearroute.md) | 48 | `declaration-track:e33f4672db3780968019afdd74f7a4447bfc7806ac88cbc2be23164fd63d7ba2` |
-| 3 | `def` | [testRouter](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RouterReplayNamespaced.lean/declarations/testrouter.md) | 52 | `declaration-track:46d0f8f4463dfdf7d3e9f2a5c066715e238711cb095ad7beff2cdf850cd5f064` |
+| 1 | `def` | [linearDag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RouterReplayNamespaced.lean/declarations/lineardag.md) | 20 | `declaration-track:58fa7781bedbd6876c112d2908e747a470927e95fd63eaefc269050d75540462` |
+| 2 | `def` | [linearRoute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RouterReplayNamespaced.lean/declarations/linearroute.md) | 48 | `declaration-track:e33f4672db3780968019afdd74f7a4447bfc7806ac88cbc2be23164fd63d7ba2` |
+| 3 | `def` | [testRouter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RouterReplayNamespaced.lean/declarations/testrouter.md) | 52 | `declaration-track:46d0f8f4463dfdf7d3e9f2a5c066715e238711cb095ad7beff2cdf850cd5f064` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Imo1969Q1.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Imo1969Q1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1969Q1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1969Q1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,17 +61,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [goodNats](../../../../CommutativeAlgebra/Imo1969Q1.lean/declarations/goodnats.md) | 28 | `declaration-track:712c371a771dd7f2655a5d4becd9796950d8dbb7e86a5f7a2b850da41d8df217` |
-| 2 | `theorem` | [factorization](../../../../CommutativeAlgebra/Imo1969Q1.lean/declarations/factorization.md) | 39 | `result-track:ccaea4fb0d05863c291f6a554717a5ac31823c5c8045ad82d032889026634bdd` |
-| 3 | `theorem` | [left_factor_large](../../../../CommutativeAlgebra/Imo1969Q1.lean/declarations/left-factor-large.md) | 50 | `result-track:ecdcbe77abec5598bd9bf998ca1e67cb39b4624b020c723809cd6229a811e656` |
-| 4 | `theorem` | [right_factor_large](../../../../CommutativeAlgebra/Imo1969Q1.lean/declarations/right-factor-large.md) | 53 | `result-track:62352d25ad9f6dd00e1788f88bb4740500668b3587530d65a7d29635af392ac7` |
-| 5 | `theorem` | [int_large](../../../../CommutativeAlgebra/Imo1969Q1.lean/declarations/int-large.md) | 61 | `result-track:45535cd29fef59dfd4a4192ca5464b96cf24d2d5d96c8d0bfcf1086d3789fab7` |
-| 6 | `theorem` | [not_prime_of_int_mul'](../../../../CommutativeAlgebra/Imo1969Q1.lean/declarations/not-prime-of-int-mul.md) | 65 | `result-track:4a7675441cf7ab6d9af514e09729c68178f6d4d5406fd01dc0af6ba2b609a3f1` |
-| 7 | `theorem` | [polynomial_not_prime](../../../../CommutativeAlgebra/Imo1969Q1.lean/declarations/polynomial-not-prime.md) | 71 | `result-track:8569ca4580d61263f2039c69fe4a246af2d32a7eafb22c3cf159aa80b1f97fbb` |
-| 8 | `def` | [aChoice](../../../../CommutativeAlgebra/Imo1969Q1.lean/declarations/achoice.md) | 79 | `declaration-track:bd39575992b9ea1aea8a24f257aac0927c19d32a0c1f32ecb38fd785f9531c09` |
-| 9 | `theorem` | [aChoice_good](../../../../CommutativeAlgebra/Imo1969Q1.lean/declarations/achoice-good.md) | 83 | `result-track:40ef057a3cedd28913e0ba200136cd544fdc98a8fb3e0dd66f552139613c4a47` |
-| 10 | `theorem` | [aChoice_strictMono](../../../../CommutativeAlgebra/Imo1969Q1.lean/declarations/achoice-strictmono.md) | 89 | `result-track:7dd27ed5f8425daa37f79d585bc4ebd24e1e454692ea8e8f881d1d2c2c51cd7c` |
-| 11 | `theorem` | [imo1969_q1](../../../../CommutativeAlgebra/Imo1969Q1.lean/declarations/imo1969-q1.md) | 99 | `result-track:03ab160962ca63dfda261c2e8d9efbf35e85cfc5190fac761a083468a6b8dfb5` |
+| 1 | `def` | [goodNats](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1969Q1.lean/declarations/goodnats.md) | 28 | `declaration-track:712c371a771dd7f2655a5d4becd9796950d8dbb7e86a5f7a2b850da41d8df217` |
+| 2 | `theorem` | [factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1969Q1.lean/declarations/factorization.md) | 39 | `result-track:ccaea4fb0d05863c291f6a554717a5ac31823c5c8045ad82d032889026634bdd` |
+| 3 | `theorem` | [left_factor_large](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1969Q1.lean/declarations/left-factor-large.md) | 50 | `result-track:ecdcbe77abec5598bd9bf998ca1e67cb39b4624b020c723809cd6229a811e656` |
+| 4 | `theorem` | [right_factor_large](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1969Q1.lean/declarations/right-factor-large.md) | 53 | `result-track:62352d25ad9f6dd00e1788f88bb4740500668b3587530d65a7d29635af392ac7` |
+| 5 | `theorem` | [int_large](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1969Q1.lean/declarations/int-large.md) | 61 | `result-track:45535cd29fef59dfd4a4192ca5464b96cf24d2d5d96c8d0bfcf1086d3789fab7` |
+| 6 | `theorem` | [not_prime_of_int_mul'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1969Q1.lean/declarations/not-prime-of-int-mul.md) | 65 | `result-track:4a7675441cf7ab6d9af514e09729c68178f6d4d5406fd01dc0af6ba2b609a3f1` |
+| 7 | `theorem` | [polynomial_not_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1969Q1.lean/declarations/polynomial-not-prime.md) | 71 | `result-track:8569ca4580d61263f2039c69fe4a246af2d32a7eafb22c3cf159aa80b1f97fbb` |
+| 8 | `def` | [aChoice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1969Q1.lean/declarations/achoice.md) | 79 | `declaration-track:bd39575992b9ea1aea8a24f257aac0927c19d32a0c1f32ecb38fd785f9531c09` |
+| 9 | `theorem` | [aChoice_good](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1969Q1.lean/declarations/achoice-good.md) | 83 | `result-track:40ef057a3cedd28913e0ba200136cd544fdc98a8fb3e0dd66f552139613c4a47` |
+| 10 | `theorem` | [aChoice_strictMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1969Q1.lean/declarations/achoice-strictmono.md) | 89 | `result-track:7dd27ed5f8425daa37f79d585bc4ebd24e1e454692ea8e8f881d1d2c2c51cd7c` |
+| 11 | `theorem` | [imo1969_q1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1969Q1.lean/declarations/imo1969-q1.md) | 99 | `result-track:03ab160962ca63dfda261c2e8d9efbf35e85cfc5190fac761a083468a6b8dfb5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

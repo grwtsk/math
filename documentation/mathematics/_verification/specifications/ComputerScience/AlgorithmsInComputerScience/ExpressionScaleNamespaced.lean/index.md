@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ExpressionScaleNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ExpressionScaleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExpressionScaleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExpressionScaleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ExpressionScale](../../../../../ComputerScience/AlgorithmsInComputerScience/ExpressionScaleNamespaced.lean/declarations/expressionscale.md) | 20 | `declaration-track:423a44296acd06067327773f480c6f1e463d931de8aaf27065c975247d9273c8` |
-| 2 | `structure` | [ScaledExpression](../../../../../ComputerScience/AlgorithmsInComputerScience/ExpressionScaleNamespaced.lean/declarations/scaledexpression.md) | 26 | `declaration-track:25f999a5b78821c4cff335c6047e0aa609091218afdd286c1c6053bcf9c971bf` |
-| 3 | `def` | [ScaledExpression.UniversalWithLocalRealizations](../../../../../ComputerScience/AlgorithmsInComputerScience/ExpressionScaleNamespaced.lean/declarations/scaledexpression-universalwithlocalrealizations.md) | 35 | `declaration-track:cd53cf58a579c08bfef2a74042f74958b9faf7c4f2aa669dbf6e3bc42b0734f0` |
-| 4 | `theorem` | [ScaledExpression.universal_retains_local](../../../../../ComputerScience/AlgorithmsInComputerScience/ExpressionScaleNamespaced.lean/declarations/scaledexpression-universal-retains-local.md) | 41 | `result-track:88a6d039a3e7d6db7eb14a866917a3308dd3394451ec0904d5dd14736a1ea888` |
+| 1 | `inductive` | [ExpressionScale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExpressionScaleNamespaced.lean/declarations/expressionscale.md) | 20 | `declaration-track:423a44296acd06067327773f480c6f1e463d931de8aaf27065c975247d9273c8` |
+| 2 | `structure` | [ScaledExpression](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExpressionScaleNamespaced.lean/declarations/scaledexpression.md) | 26 | `declaration-track:25f999a5b78821c4cff335c6047e0aa609091218afdd286c1c6053bcf9c971bf` |
+| 3 | `def` | [ScaledExpression.UniversalWithLocalRealizations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExpressionScaleNamespaced.lean/declarations/scaledexpression-universalwithlocalrealizations.md) | 35 | `declaration-track:cd53cf58a579c08bfef2a74042f74958b9faf7c4f2aa669dbf6e3bc42b0734f0` |
+| 4 | `theorem` | [ScaledExpression.universal_retains_local](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExpressionScaleNamespaced.lean/declarations/scaledexpression-universal-retains-local.md) | 41 | `result-track:88a6d039a3e7d6db7eb14a866917a3308dd3394451ec0904d5dd14736a1ea888` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

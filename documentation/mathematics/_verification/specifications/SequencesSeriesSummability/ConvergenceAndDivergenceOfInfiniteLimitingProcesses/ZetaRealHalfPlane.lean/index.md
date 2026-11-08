@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaRealHalfPlane.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaRealHalfPlane.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaRealHalfPlane.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaRealHalfPlane.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [zetaRealHalfPlane](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaRealHalfPlane.lean/declarations/zetarealhalfplane.md) | 15 | `declaration-track:a467dbc18d3ab0d50a58d5ec691dbb01097a8e062192284a170725d804ff32a6` |
-| 2 | `theorem` | [zetaRealHalfPlane_summable](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaRealHalfPlane.lean/declarations/zetarealhalfplane-summable.md) | 19 | `result-track:75d22877dfb9c2aca446ce7acb4776631a0fbfcdb1990598c947e6572974683b` |
-| 3 | `theorem` | [zetaRealHalfPlane_ge_one](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaRealHalfPlane.lean/declarations/zetarealhalfplane-ge-one.md) | 25 | `result-track:fec6d10ce8e6bbeb406a76a871eded0981917462c7a1448fd3af818c62b19f3e` |
-| 4 | `theorem` | [zetaRealHalfPlane_pos](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaRealHalfPlane.lean/declarations/zetarealhalfplane-pos.md) | 42 | `result-track:ff6c6214e8bd3523ebc7d64bf2240fb33743eb077389b9bc1285717467a1040a` |
-| 5 | `theorem` | [zetaRealHalfPlane_ne_zero](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaRealHalfPlane.lean/declarations/zetarealhalfplane-ne-zero.md) | 48 | `result-track:d406e3727b38599673bd4abf0eafba5a863ddffbcbc63627695a67831ca7e750` |
+| 1 | `def` | [zetaRealHalfPlane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaRealHalfPlane.lean/declarations/zetarealhalfplane.md) | 15 | `declaration-track:a467dbc18d3ab0d50a58d5ec691dbb01097a8e062192284a170725d804ff32a6` |
+| 2 | `theorem` | [zetaRealHalfPlane_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaRealHalfPlane.lean/declarations/zetarealhalfplane-summable.md) | 19 | `result-track:75d22877dfb9c2aca446ce7acb4776631a0fbfcdb1990598c947e6572974683b` |
+| 3 | `theorem` | [zetaRealHalfPlane_ge_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaRealHalfPlane.lean/declarations/zetarealhalfplane-ge-one.md) | 25 | `result-track:fec6d10ce8e6bbeb406a76a871eded0981917462c7a1448fd3af818c62b19f3e` |
+| 4 | `theorem` | [zetaRealHalfPlane_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaRealHalfPlane.lean/declarations/zetarealhalfplane-pos.md) | 42 | `result-track:ff6c6214e8bd3523ebc7d64bf2240fb33743eb077389b9bc1285717467a1040a` |
+| 5 | `theorem` | [zetaRealHalfPlane_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ZetaRealHalfPlane.lean/declarations/zetarealhalfplane-ne-zero.md) | 48 | `result-track:d406e3727b38599673bd4abf0eafba5a863ddffbcbc63627695a67831ca7e750` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

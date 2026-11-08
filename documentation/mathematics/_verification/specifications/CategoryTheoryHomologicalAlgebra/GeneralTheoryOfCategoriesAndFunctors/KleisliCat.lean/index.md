@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [KleisliCat](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/declarations/kleislicat.md) | 31 | `declaration-track:6d8d54ea64828b72ab1f857f54c5fb835a4f25c50c4b967ea33c741eb510faa6` |
-| 2 | `def` | [KleisliCat.mk](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/declarations/kleislicat-mk.md) | 35 | `declaration-track:0011c76b6c093c27652cafc84fed4d66b6f3ab6514160882bd55cda92804abe1` |
-| 3 | `instance` | [KleisliCat.categoryStruct](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/declarations/kleislicat-categorystruct.md) | 38 | `declaration-track:6f9450927daadf91a92f014421be2efe84d2a2c92077ca02e2ca994adbbae39f` |
-| 4 | `instance` | [KleisliCat.category](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/declarations/kleislicat-category.md) | 44 | `declaration-track:fed8a6ce1c0738ab04fce6dc2082451ee552df7988767efbd103d641b2155814` |
-| 5 | `theorem` | [KleisliCat.id_def](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/declarations/kleislicat-id-def.md) | 53 | `result-track:4cd0491fbf89bb58921a380a4698e05bf05be2f32b1f22fc52ca719c37f13dbb` |
-| 6 | `theorem` | [KleisliCat.comp_def](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/declarations/kleislicat-comp-def.md) | 56 | `result-track:e57f0a31cd8bda8af836f8c8ac9121a3e6716a5bd0d5bf08518a1614ca25a98b` |
-| 7 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/declarations/instance.md) | 60 | `declaration-track:ccbe9a6a098efe8788f74280f609213afb36704f35931a5918b6597ae085b29f` |
-| 8 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/declarations/instance-source-edition-2.md) | 63 | `declaration-track:ccdbce52c72f45d8f5c55ef249184d60ccb0f64d3ba21b8f02e118a7a2159ab8` |
+| 1 | `def` | [KleisliCat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/declarations/kleislicat.md) | 31 | `declaration-track:6d8d54ea64828b72ab1f857f54c5fb835a4f25c50c4b967ea33c741eb510faa6` |
+| 2 | `def` | [KleisliCat.mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/declarations/kleislicat-mk.md) | 35 | `declaration-track:0011c76b6c093c27652cafc84fed4d66b6f3ab6514160882bd55cda92804abe1` |
+| 3 | `instance` | [KleisliCat.categoryStruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/declarations/kleislicat-categorystruct.md) | 38 | `declaration-track:6f9450927daadf91a92f014421be2efe84d2a2c92077ca02e2ca994adbbae39f` |
+| 4 | `instance` | [KleisliCat.category](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/declarations/kleislicat-category.md) | 44 | `declaration-track:fed8a6ce1c0738ab04fce6dc2082451ee552df7988767efbd103d641b2155814` |
+| 5 | `theorem` | [KleisliCat.id_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/declarations/kleislicat-id-def.md) | 53 | `result-track:4cd0491fbf89bb58921a380a4698e05bf05be2f32b1f22fc52ca719c37f13dbb` |
+| 6 | `theorem` | [KleisliCat.comp_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/declarations/kleislicat-comp-def.md) | 56 | `result-track:e57f0a31cd8bda8af836f8c8ac9121a3e6716a5bd0d5bf08518a1614ca25a98b` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/declarations/instance.md) | 60 | `declaration-track:ccbe9a6a098efe8788f74280f609213afb36704f35931a5918b6597ae085b29f` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/KleisliCat.lean/declarations/instance-source-edition-2.md) | 63 | `declaration-track:ccdbce52c72f45d8f5c55ef249184d60ccb0f64d3ba21b8f02e118a7a2159ab8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/IsCofibrantNamespaced.lean/index.md) · [Full source](../../../../AlgebraicTopology/IsCofibrantNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsCofibrantNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsCofibrantNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IsCofibrant](../../../../AlgebraicTopology/IsCofibrantNamespaced.lean/declarations/iscofibrant.md) | 38 | `declaration-track:2b209780cf3f7580f04aa99affcae471a28bc1c09b42d32d9d277c54ea1842d6` |
-| 2 | `lemma` | [isCofibrant_iff](../../../../AlgebraicTopology/IsCofibrantNamespaced.lean/declarations/iscofibrant-iff.md) | 40 | `result-track:7451b5dab333d0b489800770a27823f72617cc890e967e9d0c6057117742d93a` |
-| 3 | `lemma` | [isCofibrant_iff_of_isInitial](../../../../AlgebraicTopology/IsCofibrantNamespaced.lean/declarations/iscofibrant-iff-of-isinitial.md) | 43 | `result-track:6c44fee351442e80edcaad617b6c2e3100dfef5b6db7d35510a4f783eead8efe` |
-| 4 | `abbrev` | [IsFibrant](../../../../AlgebraicTopology/IsCofibrantNamespaced.lean/declarations/isfibrant.md) | 57 | `declaration-track:0d91b6765029ef07710d00feb0a9a5707188c34e290fbfb517874666f718fb94` |
-| 5 | `lemma` | [isFibrant_iff](../../../../AlgebraicTopology/IsCofibrantNamespaced.lean/declarations/isfibrant-iff.md) | 59 | `result-track:c3c506500044701a79c6676a35e81281eaf5fb9b601d31e4e8d90903e81b46bb` |
-| 6 | `lemma` | [isFibrant_iff_of_isTerminal](../../../../AlgebraicTopology/IsCofibrantNamespaced.lean/declarations/isfibrant-iff-of-isterminal.md) | 62 | `result-track:08b8781ee914067a4734c526dfbe049c0c2acbc036daa5ecea519413e089f95d` |
+| 1 | `abbrev` | [IsCofibrant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsCofibrantNamespaced.lean/declarations/iscofibrant.md) | 38 | `declaration-track:2b209780cf3f7580f04aa99affcae471a28bc1c09b42d32d9d277c54ea1842d6` |
+| 2 | `lemma` | [isCofibrant_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsCofibrantNamespaced.lean/declarations/iscofibrant-iff.md) | 40 | `result-track:7451b5dab333d0b489800770a27823f72617cc890e967e9d0c6057117742d93a` |
+| 3 | `lemma` | [isCofibrant_iff_of_isInitial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsCofibrantNamespaced.lean/declarations/iscofibrant-iff-of-isinitial.md) | 43 | `result-track:6c44fee351442e80edcaad617b6c2e3100dfef5b6db7d35510a4f783eead8efe` |
+| 4 | `abbrev` | [IsFibrant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsCofibrantNamespaced.lean/declarations/isfibrant.md) | 57 | `declaration-track:0d91b6765029ef07710d00feb0a9a5707188c34e290fbfb517874666f718fb94` |
+| 5 | `lemma` | [isFibrant_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsCofibrantNamespaced.lean/declarations/isfibrant-iff.md) | 59 | `result-track:c3c506500044701a79c6676a35e81281eaf5fb9b601d31e4e8d90903e81b46bb` |
+| 6 | `lemma` | [isFibrant_iff_of_isTerminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsCofibrantNamespaced.lean/declarations/isfibrant-iff-of-isterminal.md) | 62 | `result-track:08b8781ee914067a4734c526dfbe049c0c2acbc036daa5ecea519413e089f95d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

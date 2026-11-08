@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FiniteStability.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FiniteStability.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteStability.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteStability.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [baseChangeAux_surj](../../../../CommutativeAlgebra/FiniteStability.lean/declarations/basechangeaux-surj.md) | 31 | `result-track:08274ec2245d73105f60ca0916696c4ee64b8f1fb882b96a1704fea667cd95f1` |
-| 2 | `instance` | [baseChange](../../../../CommutativeAlgebra/FiniteStability.lean/declarations/basechange-source-edition-2.md) | 38 | `declaration-track:c459da7ae02ca36fb34eb6ee1292e6449935e5d21ca18676ca92678c5ab0082c` |
-| 3 | `instance` | [baseChange](../../../../CommutativeAlgebra/FiniteStability.lean/declarations/basechange.md) | 51 | `declaration-track:c0f9c9830243538aa013273af6eca363bba2480e960b88725c29945f00abd208` |
+| 1 | `theorem` | [baseChangeAux_surj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteStability.lean/declarations/basechangeaux-surj.md) | 31 | `result-track:08274ec2245d73105f60ca0916696c4ee64b8f1fb882b96a1704fea667cd95f1` |
+| 2 | `instance` | [baseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteStability.lean/declarations/basechange-source-edition-2.md) | 38 | `declaration-track:c459da7ae02ca36fb34eb6ee1292e6449935e5d21ca18676ca92678c5ab0082c` |
+| 3 | `instance` | [baseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteStability.lean/declarations/basechange.md) | 51 | `declaration-track:c0f9c9830243538aa013273af6eca363bba2480e960b88725c29945f00abd208` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

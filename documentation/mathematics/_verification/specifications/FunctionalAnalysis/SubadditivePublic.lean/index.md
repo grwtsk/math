@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SubadditivePublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SubadditivePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SubadditivePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SubadditivePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Subadditive](../../../../FunctionalAnalysis/SubadditivePublic.lean/declarations/subadditive.md) | 36 | `declaration-track:22181b985e8850c6c8fa9d9d90b6dedbb14d61bde37eaca2c7c460d877afb078` |
-| 2 | `def` | [lim](../../../../FunctionalAnalysis/SubadditivePublic.lean/declarations/lim.md) | 46 | `declaration-track:c8247aa12f254c50b7d6daee727ea16d4560550444a15af5c594ea6a7b14eb9b` |
-| 3 | `theorem` | [lim_le_div](../../../../FunctionalAnalysis/SubadditivePublic.lean/declarations/lim-le-div.md) | 49 | `result-track:27dddc998fde595466017363c0d19565a758a5f01e3ff4de51894014780a1454` |
-| 4 | `theorem` | [apply_mul_add_le](../../../../FunctionalAnalysis/SubadditivePublic.lean/declarations/apply-mul-add-le.md) | 55 | `result-track:c9755fe271706e3f66ca2df58bebdd5eeaa87b84e24d2240d2d703b7cb3d10da` |
-| 5 | `theorem` | [eventually_div_lt_of_div_lt](../../../../FunctionalAnalysis/SubadditivePublic.lean/declarations/eventually-div-lt-of-div-lt.md) | 66 | `result-track:b52ed117e02c90ccf831dce4c4968a1e7bdce8bf70bc0e3b6fab23e61b3e1742` |
-| 6 | `theorem` | [tendsto_lim](../../../../FunctionalAnalysis/SubadditivePublic.lean/declarations/tendsto-lim.md) | 89 | `result-track:f00649228a6b02bbd4acce361a475b000471d4da15c76cd758d6a9e6caa052d7` |
+| 1 | `def` | [Subadditive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SubadditivePublic.lean/declarations/subadditive.md) | 36 | `declaration-track:22181b985e8850c6c8fa9d9d90b6dedbb14d61bde37eaca2c7c460d877afb078` |
+| 2 | `def` | [lim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SubadditivePublic.lean/declarations/lim.md) | 46 | `declaration-track:c8247aa12f254c50b7d6daee727ea16d4560550444a15af5c594ea6a7b14eb9b` |
+| 3 | `theorem` | [lim_le_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SubadditivePublic.lean/declarations/lim-le-div.md) | 49 | `result-track:27dddc998fde595466017363c0d19565a758a5f01e3ff4de51894014780a1454` |
+| 4 | `theorem` | [apply_mul_add_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SubadditivePublic.lean/declarations/apply-mul-add-le.md) | 55 | `result-track:c9755fe271706e3f66ca2df58bebdd5eeaa87b84e24d2240d2d703b7cb3d10da` |
+| 5 | `theorem` | [eventually_div_lt_of_div_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SubadditivePublic.lean/declarations/eventually-div-lt-of-div-lt.md) | 66 | `result-track:b52ed117e02c90ccf831dce4c4968a1e7bdce8bf70bc0e3b6fab23e61b3e1742` |
+| 6 | `theorem` | [tendsto_lim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SubadditivePublic.lean/declarations/tendsto-lim.md) | 89 | `result-track:f00649228a6b02bbd4acce361a475b000471d4da15c76cd758d6a9e6caa052d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

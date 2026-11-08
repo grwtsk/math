@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Triangularizable.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Triangularizable.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Triangularizable.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Triangularizable.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_hasEigenvalue_of_genEigenspace_eq_top](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Triangularizable.lean/declarations/exists-haseigenvalue-of-geneigenspace-eq-top.md) | 48 | `result-track:aa2a1cbdf7d59e6da10b5ef20eb4d3ac590dadc155b767e7ffa99fc1970a3149` |
-| 2 | `theorem` | [exists_eigenvalue](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Triangularizable.lean/declarations/exists-eigenvalue.md) | 59 | `result-track:406773860a4b7f474f604e0f4d287b25acb90c7a53fbae9781857f39c8d11175` |
-| 3 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Triangularizable.lean/declarations/instance.md) | 64 | `declaration-track:7331dd5498d356c50d74704be526a6341bfb8da2b68dbc34ac3ef2e8952f05fa` |
-| 4 | `theorem` | [iSup_maxGenEigenspace_eq_top](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Triangularizable.lean/declarations/isup-maxgeneigenspace-eq-top.md) | 71 | `result-track:c2a7fcd87f2ea6415a268dd76c7fa1176aa2d9276c2b31f71364a986c23269c6` |
-| 5 | `theorem` | [inf_iSup_genEigenspace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Triangularizable.lean/declarations/inf-isup-geneigenspace.md) | 141 | `result-track:b7a644dc4a1c19111eaa00043f34b8a397369bd77ac7cfa77d54ca08d1aba8c4` |
-| 6 | `theorem` | [eq_iSup_inf_genEigenspace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Triangularizable.lean/declarations/eq-isup-inf-geneigenspace.md) | 224 | `result-track:204f470d93f466d71c2d23ff4546672923b508508a70a2408208a59431be34e3` |
-| 7 | `theorem` | [Module.End.genEigenspace_restrict_eq_top](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Triangularizable.lean/declarations/module-end-geneigenspace-restrict-eq-top.md) | 233 | `result-track:3455855c28ae52bd0c0b0d6d5c93ac62d8f9f63947da4ef62252635e97303038` |
+| 1 | `theorem` | [exists_hasEigenvalue_of_genEigenspace_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Triangularizable.lean/declarations/exists-haseigenvalue-of-geneigenspace-eq-top.md) | 48 | `result-track:aa2a1cbdf7d59e6da10b5ef20eb4d3ac590dadc155b767e7ffa99fc1970a3149` |
+| 2 | `theorem` | [exists_eigenvalue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Triangularizable.lean/declarations/exists-eigenvalue.md) | 59 | `result-track:406773860a4b7f474f604e0f4d287b25acb90c7a53fbae9781857f39c8d11175` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Triangularizable.lean/declarations/instance.md) | 64 | `declaration-track:7331dd5498d356c50d74704be526a6341bfb8da2b68dbc34ac3ef2e8952f05fa` |
+| 4 | `theorem` | [iSup_maxGenEigenspace_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Triangularizable.lean/declarations/isup-maxgeneigenspace-eq-top.md) | 71 | `result-track:c2a7fcd87f2ea6415a268dd76c7fa1176aa2d9276c2b31f71364a986c23269c6` |
+| 5 | `theorem` | [inf_iSup_genEigenspace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Triangularizable.lean/declarations/inf-isup-geneigenspace.md) | 141 | `result-track:b7a644dc4a1c19111eaa00043f34b8a397369bd77ac7cfa77d54ca08d1aba8c4` |
+| 6 | `theorem` | [eq_iSup_inf_genEigenspace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Triangularizable.lean/declarations/eq-isup-inf-geneigenspace.md) | 224 | `result-track:204f470d93f466d71c2d23ff4546672923b508508a70a2408208a59431be34e3` |
+| 7 | `theorem` | [Module.End.genEigenspace_restrict_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Triangularizable.lean/declarations/module-end-geneigenspace-restrict-eq-top.md) | 233 | `result-track:3455855c28ae52bd0c0b0d6d5c93ac62d8f9f63947da4ef62252635e97303038` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

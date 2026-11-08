@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/IsSimpleOrderNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/IsSimpleOrderNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IsSimpleOrderNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IsSimpleOrderNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Subalgebra.isSimpleOrder_of_finrank_prime](../../../../AssociativeRingsAndAlgebras/IsSimpleOrderNamespaced.lean/declarations/subalgebra-issimpleorder-of-finrank-prime.md) | 25 | `result-track:899c1bfdbf87449fc00ea1f476ac5c4f4ccf070cf80a8fe7affde9756e0dcee1` |
+| 1 | `theorem` | [Subalgebra.isSimpleOrder_of_finrank_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IsSimpleOrderNamespaced.lean/declarations/subalgebra-issimpleorder-of-finrank-prime.md) | 25 | `result-track:899c1bfdbf87449fc00ea1f476ac5c4f4ccf070cf80a8fe7affde9756e0dcee1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

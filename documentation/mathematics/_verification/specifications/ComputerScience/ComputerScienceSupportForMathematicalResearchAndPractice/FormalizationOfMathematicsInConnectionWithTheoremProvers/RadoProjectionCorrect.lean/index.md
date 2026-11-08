@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrect.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [projection_rules_cover_canonical_fibers](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrect.lean/declarations/projection-rules-cover-canonical-fibers.md) | 7 | `result-track:a2f7542ceb2a04bdfd19b1712ce64dc5ce42e8cdc62ea0c312c6b7fecb4acba7` |
-| 2 | `theorem` | [projected_core_is_center](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrect.lean/declarations/projected-core-is-center.md) | 11 | `result-track:ef6661c5c30765f7fb0f1ae17db4be8a1edd6c262747f4590610d3895e99ff64` |
-| 3 | `theorem` | [rado_projected_pass_has_residue](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrect.lean/declarations/rado-projected-pass-has-residue.md) | 16 | `result-track:191bcc80652fff91d66c649f7af0a3198c2555cc22556278b89ce207df80ec90` |
+| 1 | `theorem` | [projection_rules_cover_canonical_fibers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrect.lean/declarations/projection-rules-cover-canonical-fibers.md) | 7 | `result-track:a2f7542ceb2a04bdfd19b1712ce64dc5ce42e8cdc62ea0c312c6b7fecb4acba7` |
+| 2 | `theorem` | [projected_core_is_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrect.lean/declarations/projected-core-is-center.md) | 11 | `result-track:ef6661c5c30765f7fb0f1ae17db4be8a1edd6c262747f4590610d3895e99ff64` |
+| 3 | `theorem` | [rado_projected_pass_has_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrect.lean/declarations/rado-projected-pass-has-residue.md) | 16 | `result-track:191bcc80652fff91d66c649f7af0a3198c2555cc22556278b89ce207df80ec90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

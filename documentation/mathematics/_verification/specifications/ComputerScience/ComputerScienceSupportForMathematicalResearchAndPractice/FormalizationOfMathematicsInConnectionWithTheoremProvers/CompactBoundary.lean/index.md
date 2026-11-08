@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactBoundary.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactBoundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactBoundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactBoundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompactSurveyBoundary](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactBoundary.lean/declarations/compactsurveyboundary.md) | 5 | `declaration-track:69b4644e0a0fd488137527d454c400e71057d19e914f9eb70002296e46a3d38b` |
-| 2 | `def` | [compactSurveyBoundary](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactBoundary.lean/declarations/compactsurveyboundary-source-edition-2.md) | 12 | `declaration-track:78f377f91f4b2f05964ef9f265e462379e87c813c21f72f563ca0669ca261fc3` |
-| 3 | `theorem` | [compactSurveyBoundary_noTheoremAuthority](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactBoundary.lean/declarations/compactsurveyboundary-notheoremauthority.md) | 18 | `result-track:e3ce2a416b2c303b7ce7543af361a17588db1cfe18bb07340719143074b77fe1` |
+| 1 | `structure` | [CompactSurveyBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactBoundary.lean/declarations/compactsurveyboundary.md) | 5 | `declaration-track:69b4644e0a0fd488137527d454c400e71057d19e914f9eb70002296e46a3d38b` |
+| 2 | `def` | [compactSurveyBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactBoundary.lean/declarations/compactsurveyboundary-source-edition-2.md) | 12 | `declaration-track:78f377f91f4b2f05964ef9f265e462379e87c813c21f72f563ca0669ca261fc3` |
+| 3 | `theorem` | [compactSurveyBoundary_noTheoremAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactBoundary.lean/declarations/compactsurveyboundary-notheoremauthority.md) | 18 | `result-track:e3ce2a416b2c303b7ce7543af361a17588db1cfe18bb07340719143074b77fe1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

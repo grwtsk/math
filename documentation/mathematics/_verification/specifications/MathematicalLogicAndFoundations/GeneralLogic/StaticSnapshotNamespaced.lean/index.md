@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshotNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshotNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshotNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshotNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StaticComposite](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshotNamespaced.lean/declarations/staticcomposite.md) | 15 | `declaration-track:6b2c12d9dce0d4a67acc524d0763469c04f0803610e332812e0dcc31ef0626bf` |
-| 2 | `def` | [phaseOneStaticComposite](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshotNamespaced.lean/declarations/phaseonestaticcomposite.md) | 23 | `declaration-track:b9cb4e66fdcfefc6fe3b440dbac3bf20337e89e77385f1b9969c0f60dc19605c` |
-| 3 | `abbrev` | [DiagonalStatus](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshotNamespaced.lean/declarations/diagonalstatus.md) | 31 | `declaration-track:d46cc35c3e5aee3323077b73e21ee6ff1da667df4da73a5f1c68011b6697b75a` |
-| 4 | `structure` | [ActiveOverlay](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshotNamespaced.lean/declarations/activeoverlay.md) | 33 | `declaration-track:cfc78515e36e298a0723e9dfdfb70965bd329ceb3379e5cbf7a932a417682e8f` |
-| 5 | `structure` | [ActivationValid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshotNamespaced.lean/declarations/activationvalid.md) | 40 | `declaration-track:8c97d35bae560a38c34f3e90916db0c7098839643c71a3b739cc175be2b0a18d` |
+| 1 | `structure` | [StaticComposite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshotNamespaced.lean/declarations/staticcomposite.md) | 15 | `declaration-track:6b2c12d9dce0d4a67acc524d0763469c04f0803610e332812e0dcc31ef0626bf` |
+| 2 | `def` | [phaseOneStaticComposite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshotNamespaced.lean/declarations/phaseonestaticcomposite.md) | 23 | `declaration-track:b9cb4e66fdcfefc6fe3b440dbac3bf20337e89e77385f1b9969c0f60dc19605c` |
+| 3 | `abbrev` | [DiagonalStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshotNamespaced.lean/declarations/diagonalstatus.md) | 31 | `declaration-track:d46cc35c3e5aee3323077b73e21ee6ff1da667df4da73a5f1c68011b6697b75a` |
+| 4 | `structure` | [ActiveOverlay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshotNamespaced.lean/declarations/activeoverlay.md) | 33 | `declaration-track:cfc78515e36e298a0723e9dfdfb70965bd329ceb3379e5cbf7a932a417682e8f` |
+| 5 | `structure` | [ActivationValid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshotNamespaced.lean/declarations/activationvalid.md) | 40 | `declaration-track:8c97d35bae560a38c34f3e90916db0c7098839643c71a3b739cc175be2b0a18d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

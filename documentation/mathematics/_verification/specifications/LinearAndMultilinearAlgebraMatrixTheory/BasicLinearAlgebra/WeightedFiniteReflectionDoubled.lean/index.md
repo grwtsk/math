@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedFiniteReflectionDoubled.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedFiniteReflectionDoubled.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedFiniteReflectionDoubled.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedFiniteReflectionDoubled.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.LinearAlgebra.BilinearAndQuadraticForms.WeightedFiniteReflection`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedFiniteReflection.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Algebra.LinearAlgebra.BilinearAndQuadraticForms.WeightedFiniteReflection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedFiniteReflection.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [doubledPairing](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedFiniteReflectionDoubled.lean/declarations/doubledpairing.md) | 23 | `declaration-track:f4853ab63882a46fc5eeee36360de4918c5da6f3ea8f9d384e39dee689232eaf` |
-| 2 | `def` | [lift](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedFiniteReflectionDoubled.lean/declarations/lift.md) | 26 | `declaration-track:45c6bade8dd536df755b61e97c31ccb08c639acb30eb1da2784ef52b1e849707` |
-| 3 | `theorem` | [lift_selfAdjoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedFiniteReflectionDoubled.lean/declarations/lift-selfadjoint.md) | 29 | `result-track:c53c44b08def3872fbd8e0e8234603199efb8d48fbdc879650b99425323bf0af` |
-| 4 | `theorem` | [lift_involutive](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedFiniteReflectionDoubled.lean/declarations/lift-involutive.md) | 35 | `result-track:3cef1ddcebddbb86ef5bcc6679ef16e010808290bc6f52edaf41b53aa2e11cc1` |
-| 5 | `theorem` | [lift_selfAdjoint_and_involutive](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedFiniteReflectionDoubled.lean/declarations/lift-selfadjoint-and-involutive.md) | 45 | `result-track:0eab4f14e09ac9e9a5652b5205c1d82c3926ce3146e0cd122da704dd5546e5d5` |
+| 1 | `def` | [doubledPairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedFiniteReflectionDoubled.lean/declarations/doubledpairing.md) | 23 | `declaration-track:f4853ab63882a46fc5eeee36360de4918c5da6f3ea8f9d384e39dee689232eaf` |
+| 2 | `def` | [lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedFiniteReflectionDoubled.lean/declarations/lift.md) | 26 | `declaration-track:45c6bade8dd536df755b61e97c31ccb08c639acb30eb1da2784ef52b1e849707` |
+| 3 | `theorem` | [lift_selfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedFiniteReflectionDoubled.lean/declarations/lift-selfadjoint.md) | 29 | `result-track:c53c44b08def3872fbd8e0e8234603199efb8d48fbdc879650b99425323bf0af` |
+| 4 | `theorem` | [lift_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedFiniteReflectionDoubled.lean/declarations/lift-involutive.md) | 35 | `result-track:3cef1ddcebddbb86ef5bcc6679ef16e010808290bc6f52edaf41b53aa2e11cc1` |
+| 5 | `theorem` | [lift_selfAdjoint_and_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedFiniteReflectionDoubled.lean/declarations/lift-selfadjoint-and-involutive.md) | 45 | `result-track:0eab4f14e09ac9e9a5652b5205c1d82c3926ce3146e0cd122da704dd5546e5d5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

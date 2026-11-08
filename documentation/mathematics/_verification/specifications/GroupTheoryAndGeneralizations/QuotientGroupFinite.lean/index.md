@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/QuotientGroupFinite.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/QuotientGroupFinite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFinite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFinite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fintypeOfKerLeRange](../../../../GroupTheoryAndGeneralizations/QuotientGroupFinite.lean/declarations/fintypeofkerlerange.md) | 31 | `declaration-track:6689252ca598059e9eaf642dd73ae6c078209d972bb075e67a85092cb72c94a9` |
-| 2 | `def` | [fintypeOfKerEqRange](../../../../GroupTheoryAndGeneralizations/QuotientGroupFinite.lean/declarations/fintypeofkereqrange.md) | 39 | `declaration-track:e774d1ff9ab9c39927c4fcb403a04124807c9bc47f92b4c3aa88b36ea97a130b` |
-| 3 | `def` | [fintypeOfKerOfCodom](../../../../GroupTheoryAndGeneralizations/QuotientGroupFinite.lean/declarations/fintypeofkerofcodom.md) | 44 | `declaration-track:938d5be7f7cbefa6fa0149befa4d8aed7ef76613c33f49d03c889e67f6f6d360` |
-| 4 | `def` | [fintypeOfDomOfCoker](../../../../GroupTheoryAndGeneralizations/QuotientGroupFinite.lean/declarations/fintypeofdomofcoker.md) | 50 | `declaration-track:9d4361d4d8d8d3125e5a2b583e183494d0b286922d9896c053d30fb6b251807c` |
-| 5 | `lemma` | [_root_.Finite.of_finite_quot_finite_subgroup](../../../../GroupTheoryAndGeneralizations/QuotientGroupFinite.lean/declarations/root-finite-of-finite-quot-finite-subgroup.md) | 54 | `result-track:beab6114d175c313699d98f1cea79008fa9c6dfd8bf4b004ccd7be0f804ca5d1` |
+| 1 | `def` | [fintypeOfKerLeRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFinite.lean/declarations/fintypeofkerlerange.md) | 31 | `declaration-track:6689252ca598059e9eaf642dd73ae6c078209d972bb075e67a85092cb72c94a9` |
+| 2 | `def` | [fintypeOfKerEqRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFinite.lean/declarations/fintypeofkereqrange.md) | 39 | `declaration-track:e774d1ff9ab9c39927c4fcb403a04124807c9bc47f92b4c3aa88b36ea97a130b` |
+| 3 | `def` | [fintypeOfKerOfCodom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFinite.lean/declarations/fintypeofkerofcodom.md) | 44 | `declaration-track:938d5be7f7cbefa6fa0149befa4d8aed7ef76613c33f49d03c889e67f6f6d360` |
+| 4 | `def` | [fintypeOfDomOfCoker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFinite.lean/declarations/fintypeofdomofcoker.md) | 50 | `declaration-track:9d4361d4d8d8d3125e5a2b583e183494d0b286922d9896c053d30fb6b251807c` |
+| 5 | `lemma` | [_root_.Finite.of_finite_quot_finite_subgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFinite.lean/declarations/root-finite-of-finite-quot-finite-subgroup.md) | 54 | `result-track:beab6114d175c313699d98f1cea79008fa9c6dfd8bf4b004ccd7be0f804ca5d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

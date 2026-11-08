@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/LatticePiNamespacedPublic.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/LatticePiNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticePiNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticePiNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inf_sup](../../../../../Combinatorics/EnumerativeCombinatorics/LatticePiNamespacedPublic.lean/declarations/inf-sup.md) | 36 | `result-track:acf5d83b620aab2e2b8caf86a1c0492e607e99c32644c03193bbf9144e32a554` |
-| 2 | `theorem` | [sup_inf](../../../../../Combinatorics/EnumerativeCombinatorics/LatticePiNamespacedPublic.lean/declarations/sup-inf.md) | 63 | `result-track:acf9e9b86116b17d1ec17f41ae00018fc9545fed6c3978f94f766825501d7492` |
+| 1 | `theorem` | [inf_sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticePiNamespacedPublic.lean/declarations/inf-sup.md) | 36 | `result-track:acf5d83b620aab2e2b8caf86a1c0492e607e99c32644c03193bbf9144e32a554` |
+| 2 | `theorem` | [sup_inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticePiNamespacedPublic.lean/declarations/sup-inf.md) | 63 | `result-track:acf9e9b86116b17d1ec17f41ae00018fc9545fed6c3978f94f766825501d7492` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

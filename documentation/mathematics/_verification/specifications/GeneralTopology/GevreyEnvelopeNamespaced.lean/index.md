@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/GevreyEnvelopeNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/GevreyEnvelopeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GevreyEnvelopeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GevreyEnvelopeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [diagnosticExponent](../../../../GeneralTopology/GevreyEnvelopeNamespaced.lean/declarations/diagnosticexponent.md) | 35 | `declaration-track:e35cc59ac01f4ebec22da16a2bd7a9b210ab334762a540cc317fe4754dcd9a6f` |
-| 2 | `def` | [testPoint](../../../../GeneralTopology/GevreyEnvelopeNamespaced.lean/declarations/testpoint.md) | 39 | `declaration-track:f687f1d662a0ffae15ba483b64657f56c638f0a6ea94932bf84035106931247d` |
-| 3 | `theorem` | [diagnostic_exponent_test_point](../../../../GeneralTopology/GevreyEnvelopeNamespaced.lean/declarations/diagnostic-exponent-test-point.md) | 42 | `result-track:85c8c7a12d7dfa8eb8230cede3cb1c72b4910a8543f90026aa0d2a2d116d4022` |
-| 4 | `theorem` | [diagnostic_exponent_test_point_div](../../../../GeneralTopology/GevreyEnvelopeNamespaced.lean/declarations/diagnostic-exponent-test-point-div.md) | 62 | `result-track:19d74357ae95d7a53c69daffdb5b7a22b65f433fc2e5e9e1b3332e13abc9a975` |
-| 5 | `theorem` | [tendsto_diagnostic_exponent_test_point_div](../../../../GeneralTopology/GevreyEnvelopeNamespaced.lean/declarations/tendsto-diagnostic-exponent-test-point-div.md) | 81 | `result-track:4fd2893b09caec90b7bde7ed568ae12f6838dbe280d30e6164faa082988b86cb` |
-| 6 | `theorem` | [tendsto_diagnostic_exponent_test_point_atTop](../../../../GeneralTopology/GevreyEnvelopeNamespaced.lean/declarations/tendsto-diagnostic-exponent-test-point-attop.md) | 100 | `result-track:25c4adbeb137b740a5acd29faa8ba04fbfcf069a14aedda39a559a973ea15430` |
+| 1 | `def` | [diagnosticExponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GevreyEnvelopeNamespaced.lean/declarations/diagnosticexponent.md) | 35 | `declaration-track:e35cc59ac01f4ebec22da16a2bd7a9b210ab334762a540cc317fe4754dcd9a6f` |
+| 2 | `def` | [testPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GevreyEnvelopeNamespaced.lean/declarations/testpoint.md) | 39 | `declaration-track:f687f1d662a0ffae15ba483b64657f56c638f0a6ea94932bf84035106931247d` |
+| 3 | `theorem` | [diagnostic_exponent_test_point](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GevreyEnvelopeNamespaced.lean/declarations/diagnostic-exponent-test-point.md) | 42 | `result-track:85c8c7a12d7dfa8eb8230cede3cb1c72b4910a8543f90026aa0d2a2d116d4022` |
+| 4 | `theorem` | [diagnostic_exponent_test_point_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GevreyEnvelopeNamespaced.lean/declarations/diagnostic-exponent-test-point-div.md) | 62 | `result-track:19d74357ae95d7a53c69daffdb5b7a22b65f433fc2e5e9e1b3332e13abc9a975` |
+| 5 | `theorem` | [tendsto_diagnostic_exponent_test_point_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GevreyEnvelopeNamespaced.lean/declarations/tendsto-diagnostic-exponent-test-point-div.md) | 81 | `result-track:4fd2893b09caec90b7bde7ed568ae12f6838dbe280d30e6164faa082988b86cb` |
+| 6 | `theorem` | [tendsto_diagnostic_exponent_test_point_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GevreyEnvelopeNamespaced.lean/declarations/tendsto-diagnostic-exponent-test-point-attop.md) | 100 | `result-track:25c4adbeb137b740a5acd29faa8ba04fbfcf069a14aedda39a559a973ea15430` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

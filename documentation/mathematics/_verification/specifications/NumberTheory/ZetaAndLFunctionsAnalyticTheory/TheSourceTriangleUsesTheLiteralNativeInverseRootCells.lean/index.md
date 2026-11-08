@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheSourceTriangleUsesTheLiteralNativeInverseRootCells.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheSourceTriangleUsesTheLiteralNativeInverseRootCells.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheSourceTriangleUsesTheLiteralNativeInverseRootCells.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheSourceTriangleUsesTheLiteralNativeInverseRootCells.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exact_native_rationalization](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheSourceTriangleUsesTheLiteralNativeInverseRootCells.lean/declarations/exact-native-rationalization.md) | 20 | `result-track:5077893044fa7ff6f45a38b2096bbe210becc86567e4c6ae41191f063e9a1f0f` |
-| 2 | `theorem` | [literal_pulse_cell_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheSourceTriangleUsesTheLiteralNativeInverseRootCells.lean/declarations/literal-pulse-cell-bounds.md) | 34 | `result-track:180711d231ef502e6e6506723c4bf76e8979034bad779dcdf2a9c24d6c2ca00d` |
-| 3 | `theorem` | [retained_central_indices_belong](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheSourceTriangleUsesTheLiteralNativeInverseRootCells.lean/declarations/retained-central-indices-belong.md) | 71 | `result-track:257eeacf8dd59009958b5fe62866c5a3646b482912e744225079d99976577a79` |
-| 4 | `theorem` | [retained_central_storage_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheSourceTriangleUsesTheLiteralNativeInverseRootCells.lean/declarations/retained-central-storage-lower.md) | 75 | `result-track:fc69cd80f8d185ef316103b297e30e2ddc644ac5eff74640d5148c07d19022b3` |
+| 1 | `theorem` | [exact_native_rationalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheSourceTriangleUsesTheLiteralNativeInverseRootCells.lean/declarations/exact-native-rationalization.md) | 20 | `result-track:5077893044fa7ff6f45a38b2096bbe210becc86567e4c6ae41191f063e9a1f0f` |
+| 2 | `theorem` | [literal_pulse_cell_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheSourceTriangleUsesTheLiteralNativeInverseRootCells.lean/declarations/literal-pulse-cell-bounds.md) | 34 | `result-track:180711d231ef502e6e6506723c4bf76e8979034bad779dcdf2a9c24d6c2ca00d` |
+| 3 | `theorem` | [retained_central_indices_belong](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheSourceTriangleUsesTheLiteralNativeInverseRootCells.lean/declarations/retained-central-indices-belong.md) | 71 | `result-track:257eeacf8dd59009958b5fe62866c5a3646b482912e744225079d99976577a79` |
+| 4 | `theorem` | [retained_central_storage_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheSourceTriangleUsesTheLiteralNativeInverseRootCells.lean/declarations/retained-central-storage-lower.md) | 75 | `result-track:fc69cd80f8d185ef316103b297e30e2ddc644ac5eff74640d5148c07d19022b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

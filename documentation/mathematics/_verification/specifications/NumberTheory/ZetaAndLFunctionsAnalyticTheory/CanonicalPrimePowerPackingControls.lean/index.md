@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalPrimePowerPacking`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalPrimePowerPacking`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [concrete_stage_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingControls.lean/declarations/concrete-stage-nonnegative.md) | 13 | `result-track:6fe325800fa99606fa0fed4952d096cdfb586e9811028c03c678e69ec7f60705` |
-| 2 | `theorem` | [concrete_schedule_strict](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingControls.lean/declarations/concrete-schedule-strict.md) | 17 | `result-track:bfb0e85dd62d5b0a98ade44c15be00608cc59dd1ccf58de851dd4befd1abb3f7` |
+| 1 | `theorem` | [concrete_stage_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingControls.lean/declarations/concrete-stage-nonnegative.md) | 13 | `result-track:6fe325800fa99606fa0fed4952d096cdfb586e9811028c03c678e69ec7f60705` |
+| 2 | `theorem` | [concrete_schedule_strict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPackingControls.lean/declarations/concrete-schedule-strict.md) | 17 | `result-track:bfb0e85dd62d5b0a98ade44c15be00608cc59dd1ccf58de851dd4befd1abb3f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

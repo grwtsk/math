@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupSubmoduleNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupSubmoduleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupSubmoduleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupSubmoduleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [seminormedAddCommGroup](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupSubmoduleNamespaced.lean/declarations/seminormedaddcommgroup.md) | 26 | `declaration-track:d4993604ff4003f6f663a1d1b32bbef79cf092c2e9bcaf80a7cf5020c7f5d07a` |
-| 2 | `theorem` | [coe_norm](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupSubmoduleNamespaced.lean/declarations/coe-norm.md) | 33 | `result-track:679d122dcf481dddb9db0a856e0ec4431de431d0611951eac3732929e23db428` |
-| 3 | `theorem` | [norm_coe](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupSubmoduleNamespaced.lean/declarations/norm-coe.md) | 42 | `result-track:156bc29d5f156b3adfd643e9eabf08dbc693865e291e35b7b866d4130dd01a83` |
-| 4 | `instance` | [normedAddCommGroup](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupSubmoduleNamespaced.lean/declarations/normedaddcommgroup.md) | 47 | `declaration-track:e3e8601f3cb94f96daa70c21a22be267ff4430ba0e244069efadccae90bb7049` |
+| 1 | `instance` | [seminormedAddCommGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupSubmoduleNamespaced.lean/declarations/seminormedaddcommgroup.md) | 26 | `declaration-track:d4993604ff4003f6f663a1d1b32bbef79cf092c2e9bcaf80a7cf5020c7f5d07a` |
+| 2 | `theorem` | [coe_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupSubmoduleNamespaced.lean/declarations/coe-norm.md) | 33 | `result-track:679d122dcf481dddb9db0a856e0ec4431de431d0611951eac3732929e23db428` |
+| 3 | `theorem` | [norm_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupSubmoduleNamespaced.lean/declarations/norm-coe.md) | 42 | `result-track:156bc29d5f156b3adfd643e9eabf08dbc693865e291e35b7b866d4130dd01a83` |
+| 4 | `instance` | [normedAddCommGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupSubmoduleNamespaced.lean/declarations/normedaddcommgroup.md) | 47 | `declaration-track:e3e8601f3cb94f96daa70c21a22be267ff4430ba0e244069efadccae90bb7049` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

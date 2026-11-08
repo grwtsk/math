@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSubarray.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSubarray.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSubarray.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSubarray.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Array.MergeSort.Internal.merge](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSubarray.lean/declarations/array-mergesort-internal-merge.md) | 23 | `declaration-track:f6fa8eb4949cb9a467408f720eb1f26fb382f1e3881d6eced9d75b9b2c361927` |
-| 2 | `def` | [Subarray.mergeSort](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSubarray.lean/declarations/subarray-mergesort.md) | 48 | `declaration-track:fe6dd1915ce8588481c8a3cb0e6cd4fc4822e3bc7a69f5748ee09df10fd58ef3` |
-| 3 | `def` | [Array.mergeSort](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSubarray.lean/declarations/array-mergesort.md) | 62 | `declaration-track:825080c7de170e09f8145663976606d6040f1d078eb8fd0ec6a1788922cfe46b` |
+| 1 | `def` | [Array.MergeSort.Internal.merge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSubarray.lean/declarations/array-mergesort-internal-merge.md) | 23 | `declaration-track:f6fa8eb4949cb9a467408f720eb1f26fb382f1e3881d6eced9d75b9b2c361927` |
+| 2 | `def` | [Subarray.mergeSort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSubarray.lean/declarations/subarray-mergesort.md) | 48 | `declaration-track:fe6dd1915ce8588481c8a3cb0e6cd4fc4822e3bc7a69f5748ee09df10fd58ef3` |
+| 3 | `def` | [Array.mergeSort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSubarray.lean/declarations/array-mergesort.md) | 62 | `declaration-track:825080c7de170e09f8145663976606d6040f1d078eb8fd0ec6a1788922cfe46b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

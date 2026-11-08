@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteRegistry](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/declarations/finiteregistry.md) | 23 | `declaration-track:dcaf6f9c10d3c9443d36525bcb0a10d1a7854af34d9266e52a384df4f2e2f54f` |
-| 2 | `theorem` | [find?_mem](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/declarations/find-mem.md) | 35 | `result-track:a44b6f81a8a0381822048a5f814328f05fbd24981cc5dba0f4c8b08fc80888c6` |
-| 3 | `def` | [Contains](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/declarations/contains.md) | 51 | `declaration-track:b3628ef4ac1a5dad11a3316db6c989db61a1e4dff8901bc3b3694883a831c6d2` |
-| 4 | `def` | [lookup](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/declarations/lookup.md) | 55 | `declaration-track:f4193ac73751674978d1644d4685d30167ef1a2d6252f5034d079000a4935edf` |
-| 5 | `theorem` | [key_injective_on_entries](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/declarations/key-injective-on-entries.md) | 59 | `result-track:7a4a86bb94d336f7e39557ea99a429311cc7ebb0cb9089bd45f468af77a7128f` |
-| 6 | `theorem` | [lookup_key](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/declarations/lookup-key.md) | 69 | `result-track:a1a38670a217fb6f966003fd84601ec0ebfb72b8de769e0221daf3d78ac2e1df` |
-| 7 | `theorem` | [lookup_mem](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/declarations/lookup-mem.md) | 80 | `result-track:802ca98957320bd980e0e93399af14115cf6c6fe520a69212447e10531d6dea3` |
-| 8 | `def` | [empty](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/declarations/empty.md) | 89 | `declaration-track:7c4cd6f8e9dd0486f3d47ce27543f43521beafb3b487005d67c165ef2bf06cd8` |
-| 9 | `def` | [singleton](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/declarations/singleton.md) | 95 | `declaration-track:3a70e1bf7fae421ad0b4f25c50e71cd222408ebaaba37a63b64a4aef48cf95b4` |
+| 1 | `structure` | [FiniteRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/declarations/finiteregistry.md) | 23 | `declaration-track:dcaf6f9c10d3c9443d36525bcb0a10d1a7854af34d9266e52a384df4f2e2f54f` |
+| 2 | `theorem` | [find?_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/declarations/find-mem.md) | 35 | `result-track:a44b6f81a8a0381822048a5f814328f05fbd24981cc5dba0f4c8b08fc80888c6` |
+| 3 | `def` | [Contains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/declarations/contains.md) | 51 | `declaration-track:b3628ef4ac1a5dad11a3316db6c989db61a1e4dff8901bc3b3694883a831c6d2` |
+| 4 | `def` | [lookup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/declarations/lookup.md) | 55 | `declaration-track:f4193ac73751674978d1644d4685d30167ef1a2d6252f5034d079000a4935edf` |
+| 5 | `theorem` | [key_injective_on_entries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/declarations/key-injective-on-entries.md) | 59 | `result-track:7a4a86bb94d336f7e39557ea99a429311cc7ebb0cb9089bd45f468af77a7128f` |
+| 6 | `theorem` | [lookup_key](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/declarations/lookup-key.md) | 69 | `result-track:a1a38670a217fb6f966003fd84601ec0ebfb72b8de769e0221daf3d78ac2e1df` |
+| 7 | `theorem` | [lookup_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/declarations/lookup-mem.md) | 80 | `result-track:802ca98957320bd980e0e93399af14115cf6c6fe520a69212447e10531d6dea3` |
+| 8 | `def` | [empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/declarations/empty.md) | 89 | `declaration-track:7c4cd6f8e9dd0486f3d47ce27543f43521beafb3b487005d67c165ef2bf06cd8` |
+| 9 | `def` | [singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistryNamespaced.lean/declarations/singleton.md) | 95 | `declaration-track:3a70e1bf7fae421ad0b4f25c50e71cd222408ebaaba37a63b64a4aef48cf95b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

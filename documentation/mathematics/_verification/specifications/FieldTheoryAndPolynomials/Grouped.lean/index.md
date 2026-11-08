@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/Grouped.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/Grouped.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Grouped.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Grouped.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.FiniteField.GF128.Arithmetic`](../../../../FieldTheoryAndPolynomials/Arithmetic.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Arithmetic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Arithmetic.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mulFuel_add](../../../../FieldTheoryAndPolynomials/Grouped.lean/declarations/mulfuel-add.md) | 10 | `result-track:bf390b66596dd49a526b87d814b203ff74eb6b728b4c0bcbdfe21a34beba7889` |
-| 2 | `def` | [groupedFuel](../../../../FieldTheoryAndPolynomials/Grouped.lean/declarations/groupedfuel.md) | 21 | `declaration-track:3e579dd47182952c4bfc30d2782a1bed1f33fd822469bcf8e7d3a52beae9de3f` |
-| 3 | `theorem` | [groupedFuel_eq](../../../../FieldTheoryAndPolynomials/Grouped.lean/declarations/groupedfuel-eq.md) | 26 | `result-track:91304717891ca4ed486edf1c07bedf2cdd82f682264e02628ba6597888de801c` |
-| 4 | `theorem` | [nibble_grouping](../../../../FieldTheoryAndPolynomials/Grouped.lean/declarations/nibble-grouping.md) | 35 | `result-track:a8d730ef5024394222660271531c21b581551b19ff843f7f7599be6c90323d91` |
-| 5 | `theorem` | [byte_grouping](../../../../FieldTheoryAndPolynomials/Grouped.lean/declarations/byte-grouping.md) | 40 | `result-track:14d69829ae227360d8794d96665468dac80e3f409078672a955a2e278edfe498` |
+| 1 | `theorem` | [mulFuel_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Grouped.lean/declarations/mulfuel-add.md) | 10 | `result-track:bf390b66596dd49a526b87d814b203ff74eb6b728b4c0bcbdfe21a34beba7889` |
+| 2 | `def` | [groupedFuel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Grouped.lean/declarations/groupedfuel.md) | 21 | `declaration-track:3e579dd47182952c4bfc30d2782a1bed1f33fd822469bcf8e7d3a52beae9de3f` |
+| 3 | `theorem` | [groupedFuel_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Grouped.lean/declarations/groupedfuel-eq.md) | 26 | `result-track:91304717891ca4ed486edf1c07bedf2cdd82f682264e02628ba6597888de801c` |
+| 4 | `theorem` | [nibble_grouping](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Grouped.lean/declarations/nibble-grouping.md) | 35 | `result-track:a8d730ef5024394222660271531c21b581551b19ff843f7f7599be6c90323d91` |
+| 5 | `theorem` | [byte_grouping](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Grouped.lean/declarations/byte-grouping.md) | 40 | `result-track:14d69829ae227360d8794d96665468dac80e3f409078672a955a2e278edfe498` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

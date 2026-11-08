@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/ActionSubmonoid.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/ActionSubmonoid.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionSubmonoid.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionSubmonoid.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FixedPoints.addSubmonoid](../../../../AssociativeRingsAndAlgebras/ActionSubmonoid.lean/declarations/fixedpoints-addsubmonoid.md) | 19 | `declaration-track:f689c522430523e98bc24f36ca97e48e4990114ffc2612444c419a0caab34803` |
-| 2 | `lemma` | [FixedPoints.mem_addSubmonoid](../../../../AssociativeRingsAndAlgebras/ActionSubmonoid.lean/declarations/fixedpoints-mem-addsubmonoid.md) | 25 | `result-track:22c3e1ca70b78dcf4f40c7da6ba64d1aab4c2f1468f32dbbca8af441a97e6054` |
-| 3 | `def` | [FixedPoints.addSubgroup](../../../../AssociativeRingsAndAlgebras/ActionSubmonoid.lean/declarations/fixedpoints-addsubgroup.md) | 34 | `declaration-track:40afe04ab23576a0105af117c78968df620043945e4d6e5436a7dc61717054ee` |
-| 4 | `lemma` | [FixedPoints.mem_addSubgroup](../../../../AssociativeRingsAndAlgebras/ActionSubmonoid.lean/declarations/fixedpoints-mem-addsubgroup.md) | 42 | `result-track:844b4b599a71c7baa14350b8678f315454d355ac5279103556aae82717e6aee6` |
-| 5 | `lemma` | [FixedPoints.addSubgroup_toAddSubmonoid](../../../../AssociativeRingsAndAlgebras/ActionSubmonoid.lean/declarations/fixedpoints-addsubgroup-toaddsubmonoid.md) | 46 | `result-track:83f1b615f450b8112babb56485bcdc6833b1f455b6022fa10284291bd14d21fe` |
+| 1 | `def` | [FixedPoints.addSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionSubmonoid.lean/declarations/fixedpoints-addsubmonoid.md) | 19 | `declaration-track:f689c522430523e98bc24f36ca97e48e4990114ffc2612444c419a0caab34803` |
+| 2 | `lemma` | [FixedPoints.mem_addSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionSubmonoid.lean/declarations/fixedpoints-mem-addsubmonoid.md) | 25 | `result-track:22c3e1ca70b78dcf4f40c7da6ba64d1aab4c2f1468f32dbbca8af441a97e6054` |
+| 3 | `def` | [FixedPoints.addSubgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionSubmonoid.lean/declarations/fixedpoints-addsubgroup.md) | 34 | `declaration-track:40afe04ab23576a0105af117c78968df620043945e4d6e5436a7dc61717054ee` |
+| 4 | `lemma` | [FixedPoints.mem_addSubgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionSubmonoid.lean/declarations/fixedpoints-mem-addsubgroup.md) | 42 | `result-track:844b4b599a71c7baa14350b8678f315454d355ac5279103556aae82717e6aee6` |
+| 5 | `lemma` | [FixedPoints.addSubgroup_toAddSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionSubmonoid.lean/declarations/fixedpoints-addsubgroup-toaddsubmonoid.md) | 46 | `result-track:83f1b615f450b8112babb56485bcdc6833b1f455b6022fa10284291bd14d21fe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

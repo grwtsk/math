@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonAdjunctionMapping.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonAdjunctionMapping.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionMapping.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionMapping.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionUniversal`](../../../../GeneralTopology/SurfacePolygonAdjunctionUniversal.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionUniversal`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionUniversal.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CompatibleContinuousPair](../../../../GeneralTopology/SurfacePolygonAdjunctionMapping.lean/declarations/compatiblecontinuouspair.md) | 34 | `declaration-track:d7d3e5523063a74871bef8127f647f16db8f6e80133d32e92d77608fe1ce9d42` |
-| 2 | `def` | [restrictContinuousPair](../../../../GeneralTopology/SurfacePolygonAdjunctionMapping.lean/declarations/restrictcontinuouspair.md) | 42 | `declaration-track:19520087eccdae1789d52908dd91feb88b34b802384ad7205ff5eaf9b54ae4f7` |
-| 3 | `def` | [extendContinuousPair](../../../../GeneralTopology/SurfacePolygonAdjunctionMapping.lean/declarations/extendcontinuouspair.md) | 54 | `declaration-track:c91a442989ce57e1e63309f5ca5cb71a2a509b489621c663a95f31e9e78c24f2` |
-| 4 | `theorem` | [restrict_extendContinuousPair](../../../../GeneralTopology/SurfacePolygonAdjunctionMapping.lean/declarations/restrict-extendcontinuouspair.md) | 63 | `result-track:d32e138b5554afdbd8dc69ba0b57231ecb722c10640a5a5a7e681076f66e7e7f` |
-| 5 | `theorem` | [extend_restrictContinuousPair](../../../../GeneralTopology/SurfacePolygonAdjunctionMapping.lean/declarations/extend-restrictcontinuouspair.md) | 78 | `result-track:ad9d1e87c238481fdb90b551e48f8b6ba8019ac7a4031a72116024101be43f84` |
-| 6 | `def` | [continuousMappingEquiv](../../../../GeneralTopology/SurfacePolygonAdjunctionMapping.lean/declarations/continuousmappingequiv.md) | 93 | `declaration-track:f3ad1f3661900016b3c71072f41ab3b1e6e3307e083dee6e689b361bacc02728` |
+| 1 | `def` | [CompatibleContinuousPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionMapping.lean/declarations/compatiblecontinuouspair.md) | 34 | `declaration-track:d7d3e5523063a74871bef8127f647f16db8f6e80133d32e92d77608fe1ce9d42` |
+| 2 | `def` | [restrictContinuousPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionMapping.lean/declarations/restrictcontinuouspair.md) | 42 | `declaration-track:19520087eccdae1789d52908dd91feb88b34b802384ad7205ff5eaf9b54ae4f7` |
+| 3 | `def` | [extendContinuousPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionMapping.lean/declarations/extendcontinuouspair.md) | 54 | `declaration-track:c91a442989ce57e1e63309f5ca5cb71a2a509b489621c663a95f31e9e78c24f2` |
+| 4 | `theorem` | [restrict_extendContinuousPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionMapping.lean/declarations/restrict-extendcontinuouspair.md) | 63 | `result-track:d32e138b5554afdbd8dc69ba0b57231ecb722c10640a5a5a7e681076f66e7e7f` |
+| 5 | `theorem` | [extend_restrictContinuousPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionMapping.lean/declarations/extend-restrictcontinuouspair.md) | 78 | `result-track:ad9d1e87c238481fdb90b551e48f8b6ba8019ac7a4031a72116024101be43f84` |
+| 6 | `def` | [continuousMappingEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionMapping.lean/declarations/continuousmappingequiv.md) | 93 | `declaration-track:f3ad1f3661900016b3c71072f41ab3b1e6e3307e083dee6e689b361bacc02728` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

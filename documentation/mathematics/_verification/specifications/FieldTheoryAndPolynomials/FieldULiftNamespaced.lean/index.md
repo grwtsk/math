@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instNNRatCast](../../../../FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/instnnratcast.md) | 31 | `declaration-track:67a6c44c8b9a57c56c8fe23544c92fe664a5fad5fff24401a13ccf7ccf7ac41e` |
-| 2 | `instance` | [instRatCast](../../../../FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/instratcast.md) | 32 | `declaration-track:b43124a797dee1e5fe00ecd15a60e13a715945f977d9b0753802e19ea0b5bc71` |
-| 3 | `lemma` | [up_nnratCast](../../../../FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/up-nnratcast.md) | 34 | `result-track:b0e414d7ef115f89f81aeb9c27a5edef0d3583930fcee09b17d21cd7e4e90666` |
-| 4 | `lemma` | [down_nnratCast](../../../../FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/down-nnratcast.md) | 35 | `result-track:2d500636c5e43541c031e43c197f065b9d2aeb3745d635d73e642ad71d3a8db5` |
-| 5 | `lemma` | [up_ratCast](../../../../FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/up-ratcast.md) | 36 | `result-track:ccb824f2fe0e943c9ebb9b03796b7fa9e55eff9525a59241ea3ca6fabe5ec382` |
-| 6 | `lemma` | [down_ratCast](../../../../FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/down-ratcast.md) | 37 | `result-track:edf555ddd8761cccce945aac691a3216cfd9b982a3e0b9515f4a94153334ad6f` |
-| 7 | `instance` | [divisionSemiring](../../../../FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/divisionsemiring.md) | 39 | `declaration-track:39cea2fb40ab670f487c8c4fdf9bd73acec142e5d4dbe7fc0c5960f5932999d7` |
-| 8 | `instance` | [semifield](../../../../FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/semifield.md) | 44 | `declaration-track:9177a3f824d959e127778fc5b63e302bbffac1bdb1ef7ab578525be1518ba518` |
-| 9 | `instance` | [divisionRing](../../../../FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/divisionring.md) | 47 | `declaration-track:7ec4f807c229864d9db1cceb06a455fe7c80ec1bcaad25f6bc21421e5668747e` |
-| 10 | `instance` | [field](../../../../FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/field.md) | 57 | `declaration-track:6906f28c24b1ddd416697664336d726979a99001f5aa49b57f58cd9cf92dff99` |
+| 1 | `instance` | [instNNRatCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/instnnratcast.md) | 31 | `declaration-track:67a6c44c8b9a57c56c8fe23544c92fe664a5fad5fff24401a13ccf7ccf7ac41e` |
+| 2 | `instance` | [instRatCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/instratcast.md) | 32 | `declaration-track:b43124a797dee1e5fe00ecd15a60e13a715945f977d9b0753802e19ea0b5bc71` |
+| 3 | `lemma` | [up_nnratCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/up-nnratcast.md) | 34 | `result-track:b0e414d7ef115f89f81aeb9c27a5edef0d3583930fcee09b17d21cd7e4e90666` |
+| 4 | `lemma` | [down_nnratCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/down-nnratcast.md) | 35 | `result-track:2d500636c5e43541c031e43c197f065b9d2aeb3745d635d73e642ad71d3a8db5` |
+| 5 | `lemma` | [up_ratCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/up-ratcast.md) | 36 | `result-track:ccb824f2fe0e943c9ebb9b03796b7fa9e55eff9525a59241ea3ca6fabe5ec382` |
+| 6 | `lemma` | [down_ratCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/down-ratcast.md) | 37 | `result-track:edf555ddd8761cccce945aac691a3216cfd9b982a3e0b9515f4a94153334ad6f` |
+| 7 | `instance` | [divisionSemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/divisionsemiring.md) | 39 | `declaration-track:39cea2fb40ab670f487c8c4fdf9bd73acec142e5d4dbe7fc0c5960f5932999d7` |
+| 8 | `instance` | [semifield](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/semifield.md) | 44 | `declaration-track:9177a3f824d959e127778fc5b63e302bbffac1bdb1ef7ab578525be1518ba518` |
+| 9 | `instance` | [divisionRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/divisionring.md) | 47 | `declaration-track:7ec4f807c229864d9db1cceb06a455fe7c80ec1bcaad25f6bc21421e5668747e` |
+| 10 | `instance` | [field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldULiftNamespaced.lean/declarations/field.md) | 57 | `declaration-track:6906f28c24b1ddd416697664336d726979a99001f5aa49b57f58cd9cf92dff99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

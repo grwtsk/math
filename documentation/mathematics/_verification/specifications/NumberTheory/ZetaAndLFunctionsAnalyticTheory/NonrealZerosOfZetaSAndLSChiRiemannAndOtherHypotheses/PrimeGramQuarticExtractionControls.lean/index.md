@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimeGramQuarticExtractionControls.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimeGramQuarticExtractionControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimeGramQuarticExtractionControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimeGramQuarticExtractionControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PrimeGramQuarticExtraction`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimeGramQuarticExtraction.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PrimeGramQuarticExtraction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimeGramQuarticExtraction.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finite_gram_cannot_be_negative](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimeGramQuarticExtractionControls.lean/declarations/finite-gram-cannot-be-negative.md) | 14 | `result-track:e7325bb29689ec33c89782427facdf661223c8f1e6c550d50e95ca39333e9b86` |
-| 2 | `theorem` | [negative_one_not_square_sum](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimeGramQuarticExtractionControls.lean/declarations/negative-one-not-square-sum.md) | 19 | `result-track:f5bd733b9f580b94438c9885f641ddfb67fe07f6158687e4351962a15732c17a` |
-| 3 | `def` | [explicit_gram_forgets_to_quartic](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimeGramQuarticExtractionControls.lean/declarations/explicit-gram-forgets-to-quartic.md) | 27 | `declaration-track:0d06293702d1d77cfe5a2209107b2d1b46d5ee3c2985c15c24b5746d8b9553b2` |
-| 4 | `theorem` | [explicit_gram_closure_is_conditional](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimeGramQuarticExtractionControls.lean/declarations/explicit-gram-closure-is-conditional.md) | 32 | `result-track:b1e7ddfc83a3470c715ca165c0331cd703ff79b12cd3511e4a94477cf5d0a704` |
+| 1 | `theorem` | [finite_gram_cannot_be_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimeGramQuarticExtractionControls.lean/declarations/finite-gram-cannot-be-negative.md) | 14 | `result-track:e7325bb29689ec33c89782427facdf661223c8f1e6c550d50e95ca39333e9b86` |
+| 2 | `theorem` | [negative_one_not_square_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimeGramQuarticExtractionControls.lean/declarations/negative-one-not-square-sum.md) | 19 | `result-track:f5bd733b9f580b94438c9885f641ddfb67fe07f6158687e4351962a15732c17a` |
+| 3 | `def` | [explicit_gram_forgets_to_quartic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimeGramQuarticExtractionControls.lean/declarations/explicit-gram-forgets-to-quartic.md) | 27 | `declaration-track:0d06293702d1d77cfe5a2209107b2d1b46d5ee3c2985c15c24b5746d8b9553b2` |
+| 4 | `theorem` | [explicit_gram_closure_is_conditional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimeGramQuarticExtractionControls.lean/declarations/explicit-gram-closure-is-conditional.md) | 32 | `result-track:b1e7ddfc83a3470c715ca165c0331cd703ff79b12cd3511e4a94477cf5d0a704` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

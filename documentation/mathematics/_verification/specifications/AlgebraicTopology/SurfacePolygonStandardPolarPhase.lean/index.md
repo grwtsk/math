@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonStandardPolarPhase.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonStandardPolarPhase.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarPhase.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarPhase.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardPolarPeriodicity`](../../../../AlgebraicTopology/SurfacePolygonStandardPolarPeriodicity.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardPolarPeriodicity`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarPeriodicity.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Tactic` — import line 9; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [phase_eq_of_realAnglePolar_eq](../../../../AlgebraicTopology/SurfacePolygonStandardPolarPhase.lean/declarations/phase-eq-of-realanglepolar-eq.md) | 33 | `result-track:9582260e6f63a3abba0b31290ab3025119deb941e7ab65c10aa663e1a50ae4a9` |
-| 2 | `theorem` | [radius_and_phase_eq_of_polar_eq](../../../../AlgebraicTopology/SurfacePolygonStandardPolarPhase.lean/declarations/radius-and-phase-eq-of-polar-eq.md) | 43 | `result-track:f54ec83af182a24e2d6c89e19b41a80cff76e32dfecf58e14affc4c025b960f8` |
+| 1 | `theorem` | [phase_eq_of_realAnglePolar_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarPhase.lean/declarations/phase-eq-of-realanglepolar-eq.md) | 33 | `result-track:9582260e6f63a3abba0b31290ab3025119deb941e7ab65c10aa663e1a50ae4a9` |
+| 2 | `theorem` | [radius_and_phase_eq_of_polar_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarPhase.lean/declarations/radius-and-phase-eq-of-polar-eq.md) | 43 | `result-track:f54ec83af182a24e2d6c89e19b41a80cff76e32dfecf58e14affc4c025b960f8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

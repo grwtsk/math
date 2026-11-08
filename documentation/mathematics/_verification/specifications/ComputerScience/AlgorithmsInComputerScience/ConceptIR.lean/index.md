@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptIR.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptIR.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptIR.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptIR.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ConceptExpr](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptIR.lean/declarations/conceptexpr.md) | 7 | `declaration-track:83d7f65e8cc128c1dc261a9a3eb8543bce22809e6d91cf81ec4d35621851cf19` |
-| 2 | `inductive` | [ConceptIRKind](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptIR.lean/declarations/conceptirkind.md) | 23 | `declaration-track:8df45270f7912e0d835da2b1baeac8be1389cc0eb9e05a87fd2db811e91ad9bf` |
-| 3 | `structure` | [ConceptIR](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptIR.lean/declarations/conceptir.md) | 30 | `declaration-track:fa31dc9c7142c9b144b287d7b1d5557af6db7c4272d259a1210ca10fc1a902cb` |
-| 4 | `def` | [ConceptIR.hasFabricatedIdentity](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptIR.lean/declarations/conceptir-hasfabricatedidentity.md) | 47 | `declaration-track:15f62c6a69387735372f11ff289e351d2d21c946062f9e1b900b7b1ad960c467` |
+| 1 | `inductive` | [ConceptExpr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptIR.lean/declarations/conceptexpr.md) | 7 | `declaration-track:83d7f65e8cc128c1dc261a9a3eb8543bce22809e6d91cf81ec4d35621851cf19` |
+| 2 | `inductive` | [ConceptIRKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptIR.lean/declarations/conceptirkind.md) | 23 | `declaration-track:8df45270f7912e0d835da2b1baeac8be1389cc0eb9e05a87fd2db811e91ad9bf` |
+| 3 | `structure` | [ConceptIR](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptIR.lean/declarations/conceptir.md) | 30 | `declaration-track:fa31dc9c7142c9b144b287d7b1d5557af6db7c4272d259a1210ca10fc1a902cb` |
+| 4 | `def` | [ConceptIR.hasFabricatedIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptIR.lean/declarations/conceptir-hasfabricatedidentity.md) | 47 | `declaration-track:15f62c6a69387735372f11ff289e351d2d21c946062f9e1b900b7b1ad960c467` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

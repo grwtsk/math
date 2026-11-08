@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CertificationSolverChoice.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CertificationSolverChoice.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CertificationSolverChoice.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CertificationSolverChoice.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [solverChoiceComparison](../../../../GroupTheoryAndGeneralizations/CertificationSolverChoice.lean/declarations/solverchoicecomparison.md) | 35 | `declaration-track:125457ddb9a69cbf52b8749ec371f0d0e1b656c86e254785451a393ae59ae7dc` |
-| 2 | `theorem` | [solverChoiceComparison_eq_refl](../../../../GroupTheoryAndGeneralizations/CertificationSolverChoice.lean/declarations/solverchoicecomparison-eq-refl.md) | 38 | `result-track:8fe930f665b5f18fc24aeb55f048fe5380b7daf0806ebd0a736762dfe070d3ed` |
-| 3 | `theorem` | [solverChoiceComparison_pairing](../../../../GroupTheoryAndGeneralizations/CertificationSolverChoice.lean/declarations/solverchoicecomparison-pairing.md) | 48 | `result-track:afb3932383d785f23ccdfefa79f6587ffab420683f00b1df1da7d08eba887afb` |
+| 1 | `def` | [solverChoiceComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CertificationSolverChoice.lean/declarations/solverchoicecomparison.md) | 35 | `declaration-track:125457ddb9a69cbf52b8749ec371f0d0e1b656c86e254785451a393ae59ae7dc` |
+| 2 | `theorem` | [solverChoiceComparison_eq_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CertificationSolverChoice.lean/declarations/solverchoicecomparison-eq-refl.md) | 38 | `result-track:8fe930f665b5f18fc24aeb55f048fe5380b7daf0806ebd0a736762dfe070d3ed` |
+| 3 | `theorem` | [solverChoiceComparison_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CertificationSolverChoice.lean/declarations/solverchoicecomparison-pairing.md) | 48 | `result-track:afb3932383d785f23ccdfefa79f6587ffab420683f00b1df1da7d08eba887afb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

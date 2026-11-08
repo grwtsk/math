@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementChart.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementChart.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementChart.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementChart.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.KernelRetractionResidual`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelRetractionResidual.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.KernelRetractionResidual`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelRetractionResidual.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [kernelCoordinateOfChart](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementChart.lean/declarations/kernelcoordinateofchart.md) | 29 | `declaration-track:0bda5c86fc22c3ae28a64e27d4ca8c71ee98fb30c4183a0e4f3b453185d8ec2a` |
-| 2 | `theorem` | [kernelCoordinateOfChart_retracts](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementChart.lean/declarations/kernelcoordinateofchart-retracts.md) | 36 | `result-track:1796c478d38bffc8082205dfe14a60eb1fdab60cb8eda972edf620d7c6135e2b` |
-| 3 | `theorem` | [sharp_joint_of_kernel_chart](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementChart.lean/declarations/sharp-joint-of-kernel-chart.md) | 46 | `result-track:98a26cc4962811b320d501291149a29e2d2bfd90051169a65c40e090db8fa4df` |
+| 1 | `def` | [kernelCoordinateOfChart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementChart.lean/declarations/kernelcoordinateofchart.md) | 29 | `declaration-track:0bda5c86fc22c3ae28a64e27d4ca8c71ee98fb30c4183a0e4f3b453185d8ec2a` |
+| 2 | `theorem` | [kernelCoordinateOfChart_retracts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementChart.lean/declarations/kernelcoordinateofchart-retracts.md) | 36 | `result-track:1796c478d38bffc8082205dfe14a60eb1fdab60cb8eda972edf620d7c6135e2b` |
+| 3 | `theorem` | [sharp_joint_of_kernel_chart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementChart.lean/declarations/sharp-joint-of-kernel-chart.md) | 46 | `result-track:98a26cc4962811b320d501291149a29e2d2bfd90051169a65c40e090db8fa4df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

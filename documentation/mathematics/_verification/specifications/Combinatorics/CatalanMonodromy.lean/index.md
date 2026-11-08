@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CatalanMonodromy.lean/index.md) · [Full source](../../../../Combinatorics/CatalanMonodromy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanMonodromy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanMonodromy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [catalan_torsion_transportPath_commutes](../../../../Combinatorics/CatalanMonodromy.lean/declarations/catalan-torsion-transportpath-commutes.md) | 19 | `result-track:4378eff0e67097a2acae4845c815b1ab9e8eb929eb49555e5f1025fd0f43ad64` |
-| 2 | `theorem` | [catalan_torsion_monodromy_roundtrip](../../../../Combinatorics/CatalanMonodromy.lean/declarations/catalan-torsion-monodromy-roundtrip.md) | 36 | `result-track:fcb58897a69ca60197aafc49c12a3bc4b6eaa2e18cfde0520797ccd0c8af7730` |
+| 1 | `theorem` | [catalan_torsion_transportPath_commutes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanMonodromy.lean/declarations/catalan-torsion-transportpath-commutes.md) | 19 | `result-track:4378eff0e67097a2acae4845c815b1ab9e8eb929eb49555e5f1025fd0f43ad64` |
+| 2 | `theorem` | [catalan_torsion_monodromy_roundtrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanMonodromy.lean/declarations/catalan-torsion-monodromy-roundtrip.md) | 36 | `result-track:fcb58897a69ca60197aafc49c12a3bc4b6eaa2e18cfde0520797ccd0c8af7730` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

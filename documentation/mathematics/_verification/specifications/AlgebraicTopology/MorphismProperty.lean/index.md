@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/MorphismProperty.lean/index.md) · [Full source](../../../../AlgebraicTopology/MorphismProperty.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/MorphismProperty.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/MorphismProperty.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Truncated.morphismProperty_eq_top](../../../../AlgebraicTopology/MorphismProperty.lean/declarations/truncated-morphismproperty-eq-top.md) | 25 | `result-track:1ef140751cca2508a1eb40bc173080f0abac44b9c32268453a94b6f3e64b65e9` |
-| 2 | `lemma` | [morphismProperty_eq_top](../../../../AlgebraicTopology/MorphismProperty.lean/declarations/morphismproperty-eq-top.md) | 69 | `result-track:16f3a21ec74bfebffe016980bb754223ccd81d1844178c3ec0048870780b7adb` |
+| 1 | `lemma` | [Truncated.morphismProperty_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/MorphismProperty.lean/declarations/truncated-morphismproperty-eq-top.md) | 25 | `result-track:1ef140751cca2508a1eb40bc173080f0abac44b9c32268453a94b6f3e64b65e9` |
+| 2 | `lemma` | [morphismProperty_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/MorphismProperty.lean/declarations/morphismproperty-eq-top.md) | 69 | `result-track:16f3a21ec74bfebffe016980bb754223ccd81d1844178c3ec0048870780b7adb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

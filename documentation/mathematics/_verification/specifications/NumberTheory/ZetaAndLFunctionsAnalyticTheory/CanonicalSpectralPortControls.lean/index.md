@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralPortControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralPortControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralPortControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralPortControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CanonicalSpectralPort.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CanonicalSpectralPort.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [square_two_exact_spectral_gram](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralPortControls.lean/declarations/square-two-exact-spectral-gram.md) | 18 | `result-track:c963690190aa35e4ceccb64c9caa5fab99ae8d055908e29bd0683296a300f309` |
-| 2 | `theorem` | [square_two_spectral_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralPortControls.lean/declarations/square-two-spectral-nonnegative.md) | 24 | `result-track:2a562bdd8136e34850b0ac67e9c6490315086f09264ad5ac869e71c3937e7149` |
-| 3 | `theorem` | [no_canonical_comparison_at_unit_displacement](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralPortControls.lean/declarations/no-canonical-comparison-at-unit-displacement.md) | 30 | `result-track:aba60b7be0df32198cf9755e513804810f6d0bd245f2e5aa57bee6f576aad740` |
-| 4 | `theorem` | [canonical_stage_is_source_fixed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralPortControls.lean/declarations/canonical-stage-is-source-fixed.md) | 37 | `result-track:c28ae099157603ea954c6409a9cae5f5f19f7a1e5149e164d71440c2a297a6d3` |
-| 5 | `theorem` | [triangle_remains_three](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralPortControls.lean/declarations/triangle-remains-three.md) | 42 | `result-track:30ed6904dab14872ae755ff8d213008f15092fb629132969863729d89b1979f5` |
+| 1 | `theorem` | [square_two_exact_spectral_gram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralPortControls.lean/declarations/square-two-exact-spectral-gram.md) | 18 | `result-track:c963690190aa35e4ceccb64c9caa5fab99ae8d055908e29bd0683296a300f309` |
+| 2 | `theorem` | [square_two_spectral_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralPortControls.lean/declarations/square-two-spectral-nonnegative.md) | 24 | `result-track:2a562bdd8136e34850b0ac67e9c6490315086f09264ad5ac869e71c3937e7149` |
+| 3 | `theorem` | [no_canonical_comparison_at_unit_displacement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralPortControls.lean/declarations/no-canonical-comparison-at-unit-displacement.md) | 30 | `result-track:aba60b7be0df32198cf9755e513804810f6d0bd245f2e5aa57bee6f576aad740` |
+| 4 | `theorem` | [canonical_stage_is_source_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralPortControls.lean/declarations/canonical-stage-is-source-fixed.md) | 37 | `result-track:c28ae099157603ea954c6409a9cae5f5f19f7a1e5149e164d71440c2a297a6d3` |
+| 5 | `theorem` | [triangle_remains_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralPortControls.lean/declarations/triangle-remains-three.md) | 42 | `result-track:30ed6904dab14872ae755ff8d213008f15092fb629132969863729d89b1979f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

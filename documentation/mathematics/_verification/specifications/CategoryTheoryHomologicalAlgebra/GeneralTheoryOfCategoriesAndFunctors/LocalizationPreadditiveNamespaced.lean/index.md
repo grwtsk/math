@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationPreadditiveNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationPreadditiveNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationPreadditiveNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationPreadditiveNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [liftNatTrans_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationPreadditiveNamespaced.lean/declarations/liftnattrans-zero.md) | 32 | `result-track:8dedc6aafbd42ea50f8797c456c44bb6a70b63ed61a414ed17ca6a474a40997c` |
-| 2 | `lemma` | [liftNatTrans_add](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationPreadditiveNamespaced.lean/declarations/liftnattrans-add.md) | 40 | `result-track:410312d5b16a975fffe3ad4834cb11603812537fe68b5655c8a562e8c837f51f` |
+| 1 | `lemma` | [liftNatTrans_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationPreadditiveNamespaced.lean/declarations/liftnattrans-zero.md) | 32 | `result-track:8dedc6aafbd42ea50f8797c456c44bb6a70b63ed61a414ed17ca6a474a40997c` |
+| 2 | `lemma` | [liftNatTrans_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationPreadditiveNamespaced.lean/declarations/liftnattrans-add.md) | 40 | `result-track:410312d5b16a975fffe3ad4834cb11603812537fe68b5655c8a562e8c837f51f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

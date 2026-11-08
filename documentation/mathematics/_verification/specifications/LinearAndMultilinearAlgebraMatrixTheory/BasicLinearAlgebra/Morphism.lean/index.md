@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Morphism.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Morphism.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Morphism.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Morphism.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BinaryLogicMatrixMorphism](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Morphism.lean/declarations/binarylogicmatrixmorphism.md) | 7 | `declaration-track:f7a97a3c8001f466b34fb770aa946cb8eccab38347c0b5ba737f2595db278aa1` |
-| 2 | `abbrev` | [BinaryLogicMatrixEndomorphism](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Morphism.lean/declarations/binarylogicmatrixendomorphism.md) | 14 | `declaration-track:4dfea53c63a66b1d2879a0191fdc2a7b1ced35f9b5897908204e3f51581fee2c` |
-| 3 | `theorem` | [nonbijective_adapter_not_flow](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Morphism.lean/declarations/nonbijective-adapter-not-flow.md) | 17 | `result-track:22ae619c76d29c100c6c1609cc066fd86080b542ed7ce3dde7b28b2af050823b` |
-| 4 | `theorem` | [morphism_boundary_visible](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Morphism.lean/declarations/morphism-boundary-visible.md) | 27 | `result-track:0997c579b5705a85afb26d07a7994491d77ef68a573fc133ae14192f461e071c` |
+| 1 | `structure` | [BinaryLogicMatrixMorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Morphism.lean/declarations/binarylogicmatrixmorphism.md) | 7 | `declaration-track:f7a97a3c8001f466b34fb770aa946cb8eccab38347c0b5ba737f2595db278aa1` |
+| 2 | `abbrev` | [BinaryLogicMatrixEndomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Morphism.lean/declarations/binarylogicmatrixendomorphism.md) | 14 | `declaration-track:4dfea53c63a66b1d2879a0191fdc2a7b1ced35f9b5897908204e3f51581fee2c` |
+| 3 | `theorem` | [nonbijective_adapter_not_flow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Morphism.lean/declarations/nonbijective-adapter-not-flow.md) | 17 | `result-track:22ae619c76d29c100c6c1609cc066fd86080b542ed7ce3dde7b28b2af050823b` |
+| 4 | `theorem` | [morphism_boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Morphism.lean/declarations/morphism-boundary-visible.md) | 27 | `result-track:0997c579b5705a85afb26d07a7994491d77ef68a573fc133ae14192f461e071c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AlgebraicallyClosedNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AlgebraicallyClosedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicallyClosedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicallyClosedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [hasEnoughRootsOfUnity](../../../../CommutativeAlgebra/AlgebraicallyClosedNamespaced.lean/declarations/hasenoughrootsofunity.md) | 29 | `declaration-track:e95d784b18dbc130a8fe5e84312f14574e3af133adb781b74d20bf95b916736f` |
+| 1 | `instance` | [hasEnoughRootsOfUnity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicallyClosedNamespaced.lean/declarations/hasenoughrootsofunity.md) | 29 | `declaration-track:e95d784b18dbc130a8fe5e84312f14574e3af133adb781b74d20bf95b916736f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

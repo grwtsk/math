@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/TraceDefs.lean/index.md) · [Full source](../../../../CommutativeAlgebra/TraceDefs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,24 +59,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [trace](../../../../CommutativeAlgebra/TraceDefs.lean/declarations/trace.md) | 67 | `declaration-track:a73899f676354bdfc5f019531fec59803537139d228f8ccbb137bd125362f009` |
-| 2 | `theorem` | [trace_apply](../../../../CommutativeAlgebra/TraceDefs.lean/declarations/trace-apply.md) | 74 | `result-track:630909dfe3da6651fe3dea17a6df4b9246bc7d10d65e74c23ac656739b6ba7fe` |
-| 3 | `theorem` | [trace_eq_zero_of_not_exists_basis](../../../../CommutativeAlgebra/TraceDefs.lean/declarations/trace-eq-zero-of-not-exists-basis.md) | 77 | `result-track:9562acd9956eb8cb75ab35885a930a6bd28ea6862996b13c55dd43088aad7e6f` |
-| 4 | `theorem` | [trace_eq_matrix_trace](../../../../CommutativeAlgebra/TraceDefs.lean/declarations/trace-eq-matrix-trace.md) | 83 | `result-track:4b71d8c9bfa7343fe6ed970f18b9a275a839d4e1ee81cacbad489ebee66a7419` |
-| 5 | `theorem` | [trace_algebraMap_of_basis](../../../../CommutativeAlgebra/TraceDefs.lean/declarations/trace-algebramap-of-basis.md) | 88 | `result-track:e18c59e694497a93723d8f9f553b8aa31ff0ea20b75c25fd07d15ec3213193b1` |
-| 6 | `theorem` | [trace_self](../../../../CommutativeAlgebra/TraceDefs.lean/declarations/trace-self.md) | 97 | `result-track:2e0ac4b0672a984bf629c2c97a237aa154306bc4db133fb30840b5f1b939f5ce` |
-| 7 | `theorem` | [trace_self_apply](../../../../CommutativeAlgebra/TraceDefs.lean/declarations/trace-self-apply.md) | 100 | `result-track:d72363f321a854fe91c349e45d7f8c1fb112a716eacc7eac1bf540279a95fb5b` |
-| 8 | `theorem` | [trace_algebraMap](../../../../CommutativeAlgebra/TraceDefs.lean/declarations/trace-algebramap.md) | 107 | `result-track:b9ac46852a8feea0231f46cef46f76c0776ca333a1bf98003c565896f04f08f2` |
-| 9 | `theorem` | [trace_trace_of_basis](../../../../CommutativeAlgebra/TraceDefs.lean/declarations/trace-trace-of-basis.md) | 113 | `result-track:803a59a7dd9d24089aa488fd56f3d0ebbc165021e6d17e1adf68ab6a03d59ed6` |
-| 10 | `theorem` | [trace_comp_trace_of_basis](../../../../CommutativeAlgebra/TraceDefs.lean/declarations/trace-comp-trace-of-basis.md) | 126 | `result-track:e8479332ed9a225f9c5185e02bd41f66aac8abc45ef1bec58fe6b92a8e3fd46a` |
-| 11 | `theorem` | [trace_trace](../../../../CommutativeAlgebra/TraceDefs.lean/declarations/trace-trace.md) | 133 | `result-track:9919ee36e29e90bb1827661f866b2abe1f9589f0d943b6ecc601e4101c97250d` |
-| 12 | `theorem` | [trace_comp_trace](../../../../CommutativeAlgebra/TraceDefs.lean/declarations/trace-comp-trace.md) | 141 | `result-track:8670c9b68d44ae9f1a71809636616aeaa04bbff1b1ef28816cd8e428d8b77d15` |
-| 13 | `theorem` | [trace_prod_apply](../../../../CommutativeAlgebra/TraceDefs.lean/declarations/trace-prod-apply.md) | 147 | `result-track:c78c9ca6dc78e855d4ded0d538fc54d9186e1162a260c2e56411b0cf980692cd` |
-| 14 | `theorem` | [trace_prod](../../../../CommutativeAlgebra/TraceDefs.lean/declarations/trace-prod.md) | 156 | `result-track:a430253bd9bbcf9fbe1ecb01815b9a800d67c24db08f74cbd5e688a1352ce7fe` |
-| 15 | `def` | [traceForm](../../../../CommutativeAlgebra/TraceDefs.lean/declarations/traceform.md) | 167 | `declaration-track:6acf4ce241cb95e8d343cf46a16aa0af476de79da9f9c1409d4c921345c2b65a` |
-| 16 | `theorem` | [traceForm_apply](../../../../CommutativeAlgebra/TraceDefs.lean/declarations/traceform-apply.md) | 174 | `result-track:b5dcbb6984768a2cc694af9cddef0235f2c340efcefbd9ae98003098cd6fe638` |
-| 17 | `theorem` | [traceForm_isSymm](../../../../CommutativeAlgebra/TraceDefs.lean/declarations/traceform-issymm.md) | 177 | `result-track:7c18e054bb73850d396e51bc306f230d1e252cda8f2541403a9ec4f1362ed240` |
-| 18 | `theorem` | [traceForm_toMatrix](../../../../CommutativeAlgebra/TraceDefs.lean/declarations/traceform-tomatrix.md) | 179 | `result-track:a70cb15845c7ca96d9f6ceee90d9000d5af8eb28fb0f783e21b1cd7552b8eb88` |
+| 1 | `def` | [trace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/declarations/trace.md) | 67 | `declaration-track:a73899f676354bdfc5f019531fec59803537139d228f8ccbb137bd125362f009` |
+| 2 | `theorem` | [trace_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/declarations/trace-apply.md) | 74 | `result-track:630909dfe3da6651fe3dea17a6df4b9246bc7d10d65e74c23ac656739b6ba7fe` |
+| 3 | `theorem` | [trace_eq_zero_of_not_exists_basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/declarations/trace-eq-zero-of-not-exists-basis.md) | 77 | `result-track:9562acd9956eb8cb75ab35885a930a6bd28ea6862996b13c55dd43088aad7e6f` |
+| 4 | `theorem` | [trace_eq_matrix_trace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/declarations/trace-eq-matrix-trace.md) | 83 | `result-track:4b71d8c9bfa7343fe6ed970f18b9a275a839d4e1ee81cacbad489ebee66a7419` |
+| 5 | `theorem` | [trace_algebraMap_of_basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/declarations/trace-algebramap-of-basis.md) | 88 | `result-track:e18c59e694497a93723d8f9f553b8aa31ff0ea20b75c25fd07d15ec3213193b1` |
+| 6 | `theorem` | [trace_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/declarations/trace-self.md) | 97 | `result-track:2e0ac4b0672a984bf629c2c97a237aa154306bc4db133fb30840b5f1b939f5ce` |
+| 7 | `theorem` | [trace_self_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/declarations/trace-self-apply.md) | 100 | `result-track:d72363f321a854fe91c349e45d7f8c1fb112a716eacc7eac1bf540279a95fb5b` |
+| 8 | `theorem` | [trace_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/declarations/trace-algebramap.md) | 107 | `result-track:b9ac46852a8feea0231f46cef46f76c0776ca333a1bf98003c565896f04f08f2` |
+| 9 | `theorem` | [trace_trace_of_basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/declarations/trace-trace-of-basis.md) | 113 | `result-track:803a59a7dd9d24089aa488fd56f3d0ebbc165021e6d17e1adf68ab6a03d59ed6` |
+| 10 | `theorem` | [trace_comp_trace_of_basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/declarations/trace-comp-trace-of-basis.md) | 126 | `result-track:e8479332ed9a225f9c5185e02bd41f66aac8abc45ef1bec58fe6b92a8e3fd46a` |
+| 11 | `theorem` | [trace_trace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/declarations/trace-trace.md) | 133 | `result-track:9919ee36e29e90bb1827661f866b2abe1f9589f0d943b6ecc601e4101c97250d` |
+| 12 | `theorem` | [trace_comp_trace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/declarations/trace-comp-trace.md) | 141 | `result-track:8670c9b68d44ae9f1a71809636616aeaa04bbff1b1ef28816cd8e428d8b77d15` |
+| 13 | `theorem` | [trace_prod_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/declarations/trace-prod-apply.md) | 147 | `result-track:c78c9ca6dc78e855d4ded0d538fc54d9186e1162a260c2e56411b0cf980692cd` |
+| 14 | `theorem` | [trace_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/declarations/trace-prod.md) | 156 | `result-track:a430253bd9bbcf9fbe1ecb01815b9a800d67c24db08f74cbd5e688a1352ce7fe` |
+| 15 | `def` | [traceForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/declarations/traceform.md) | 167 | `declaration-track:6acf4ce241cb95e8d343cf46a16aa0af476de79da9f9c1409d4c921345c2b65a` |
+| 16 | `theorem` | [traceForm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/declarations/traceform-apply.md) | 174 | `result-track:b5dcbb6984768a2cc694af9cddef0235f2c340efcefbd9ae98003098cd6fe638` |
+| 17 | `theorem` | [traceForm_isSymm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/declarations/traceform-issymm.md) | 177 | `result-track:7c18e054bb73850d396e51bc306f230d1e252cda8f2541403a9ec4f1362ed240` |
+| 18 | `theorem` | [traceForm_toMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceDefs.lean/declarations/traceform-tomatrix.md) | 179 | `result-track:a70cb15845c7ca96d9f6ceee90d9000d5af8eb28fb0f783e21b1cd7552b8eb88` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

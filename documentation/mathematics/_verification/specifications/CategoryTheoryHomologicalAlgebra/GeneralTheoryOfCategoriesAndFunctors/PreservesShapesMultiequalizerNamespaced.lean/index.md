@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesMultiequalizerNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesMultiequalizerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesMultiequalizerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesMultiequalizerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [MultispanIndex.map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesMultiequalizerNamespaced.lean/declarations/multispanindex-map.md) | 44 | `declaration-track:7d72287775fcf7ad4fc7c2ceba4e581ae0145ae95ce1d31a791d1fcf61ca7483` |
-| 2 | `def` | [MultispanIndex.multispanMapIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesMultiequalizerNamespaced.lean/declarations/multispanindex-multispanmapiso.md) | 53 | `declaration-track:f968fdefecbb7ed3f5ba29c9dc5ef62814236126250851939b53410574bddeef` |
-| 3 | `def` | [Multicofork.map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesMultiequalizerNamespaced.lean/declarations/multicofork-map.md) | 65 | `declaration-track:ec890fabc9a4836503d07500016d3d9e0d65c64081a2e546ca5c2be83a485f5c` |
-| 4 | `def` | [Multicofork.isColimitMapEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesMultiequalizerNamespaced.lean/declarations/multicofork-iscolimitmapequiv.md) | 72 | `declaration-track:ce99eda67408916b4c192b26416a2268e0e06b536961deaec2e613b03bb68a79` |
-| 5 | `def` | [Multicofork.isColimitMapOfPreserves](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesMultiequalizerNamespaced.lean/declarations/multicofork-iscolimitmapofpreserves.md) | 81 | `declaration-track:92d5e5935d40322d0bfd308150ceb0125369d53b715eca53d5ceb75ba08caba0` |
+| 1 | `def` | [MultispanIndex.map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesMultiequalizerNamespaced.lean/declarations/multispanindex-map.md) | 44 | `declaration-track:7d72287775fcf7ad4fc7c2ceba4e581ae0145ae95ce1d31a791d1fcf61ca7483` |
+| 2 | `def` | [MultispanIndex.multispanMapIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesMultiequalizerNamespaced.lean/declarations/multispanindex-multispanmapiso.md) | 53 | `declaration-track:f968fdefecbb7ed3f5ba29c9dc5ef62814236126250851939b53410574bddeef` |
+| 3 | `def` | [Multicofork.map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesMultiequalizerNamespaced.lean/declarations/multicofork-map.md) | 65 | `declaration-track:ec890fabc9a4836503d07500016d3d9e0d65c64081a2e546ca5c2be83a485f5c` |
+| 4 | `def` | [Multicofork.isColimitMapEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesMultiequalizerNamespaced.lean/declarations/multicofork-iscolimitmapequiv.md) | 72 | `declaration-track:ce99eda67408916b4c192b26416a2268e0e06b536961deaec2e613b03bb68a79` |
+| 5 | `def` | [Multicofork.isColimitMapOfPreserves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesMultiequalizerNamespaced.lean/declarations/multicofork-iscolimitmapofpreserves.md) | 81 | `declaration-track:92d5e5935d40322d0bfd308150ceb0125369d53b715eca53d5ceb75ba08caba0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

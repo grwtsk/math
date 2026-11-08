@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Domain](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.lean/declarations/domain.md) | 18 | `declaration-track:03a7fe08019a630250b2b33833f415179f2ae4509badf845860b7ab69d7bf589` |
-| 2 | `inductive` | [Expr](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.lean/declarations/expr.md) | 21 | `declaration-track:d52f6949b6bc8e3bc633c9f4c335b5cfad2e55df730348e6d8adec4b6bbc1fea` |
-| 3 | `abbrev` | [Meaning](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.lean/declarations/meaning.md) | 31 | `declaration-track:88ceff863cca01d0a63c2980983098c9476e9eab820c18058fb5af7a37ec1e08` |
-| 4 | `def` | [eval](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.lean/declarations/eval.md) | 35 | `declaration-track:c2e80230441c498455ce2db0a8c5357e044281230e1c03ad2a181056b3d590f2` |
-| 5 | `inductive` | [Step](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.lean/declarations/step.md) | 47 | `declaration-track:9bd0ca342852d58831e76f663d8976ffb1286d5fe3a22f56c6946c215c595ca0` |
-| 6 | `theorem` | [sound](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.lean/declarations/sound.md) | 79 | `result-track:639889dfdec592a0df5b306323bddc88b2fae664c51cb583fea13ff9636accaa` |
-| 7 | `theorem` | [append_does_not_commute](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.lean/declarations/append-does-not-commute.md) | 114 | `result-track:53f8ed4e260b8e0cecb4f0ed03022646c93fc526f2c17ffd1697d2019656a697` |
+| 1 | `inductive` | [Domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.lean/declarations/domain.md) | 18 | `declaration-track:03a7fe08019a630250b2b33833f415179f2ae4509badf845860b7ab69d7bf589` |
+| 2 | `inductive` | [Expr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.lean/declarations/expr.md) | 21 | `declaration-track:d52f6949b6bc8e3bc633c9f4c335b5cfad2e55df730348e6d8adec4b6bbc1fea` |
+| 3 | `abbrev` | [Meaning](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.lean/declarations/meaning.md) | 31 | `declaration-track:88ceff863cca01d0a63c2980983098c9476e9eab820c18058fb5af7a37ec1e08` |
+| 4 | `def` | [eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.lean/declarations/eval.md) | 35 | `declaration-track:c2e80230441c498455ce2db0a8c5357e044281230e1c03ad2a181056b3d590f2` |
+| 5 | `inductive` | [Step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.lean/declarations/step.md) | 47 | `declaration-track:9bd0ca342852d58831e76f663d8976ffb1286d5fe3a22f56c6946c215c595ca0` |
+| 6 | `theorem` | [sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.lean/declarations/sound.md) | 79 | `result-track:639889dfdec592a0df5b306323bddc88b2fae664c51cb583fea13ff9636accaa` |
+| 7 | `theorem` | [append_does_not_commute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.lean/declarations/append-does-not-commute.md) | 114 | `result-track:53f8ed4e260b8e0cecb4f0ed03022646c93fc526f2c17ffd1697d2019656a697` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

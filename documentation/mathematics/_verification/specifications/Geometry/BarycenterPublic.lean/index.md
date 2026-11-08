@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/BarycenterPublic.lean/index.md) · [Full source](../../../../Geometry/BarycenterPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/BarycenterPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/BarycenterPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [subBarycenter](../../../../Geometry/BarycenterPublic.lean/declarations/subbarycenter.md) | 24 | `declaration-track:c702b26d33347c45125e06cf24dea5c5e34e66f035b654bed34ae9fa45156309` |
-| 2 | `lemma` | [subBarycenter_weights_apply_eq_zero](../../../../Geometry/BarycenterPublic.lean/declarations/subbarycenter-weights-apply-eq-zero.md) | 31 | `result-track:af1bb9b067c78a02616e61fef9ec939a78dd47ec60c99e7e66137a34515bce47` |
-| 3 | `lemma` | [subBarycenter_singleton](../../../../Geometry/BarycenterPublic.lean/declarations/subbarycenter-singleton.md) | 42 | `result-track:b11433ec97d5037d0e80534775e1671740da4f86954973a7eca9926ae12b1d4c` |
-| 4 | `abbrev` | [barycenter](../../../../Geometry/BarycenterPublic.lean/declarations/barycenter.md) | 48 | `declaration-track:9d2b3ed5b3b98576c5820c2baa3365abc13e1e27d506d56ce3942a69b27426ed` |
-| 5 | `lemma` | [weights_barycenter_apply](../../../../Geometry/BarycenterPublic.lean/declarations/weights-barycenter-apply.md) | 51 | `result-track:c6af5012d2c7359de7f56184a4da036a01f82787970d09e2148c392c80f345ab` |
-| 6 | `lemma` | [barycenter_of_unique](../../../../Geometry/BarycenterPublic.lean/declarations/barycenter-of-unique.md) | 55 | `result-track:93d0805bc04815bcfe2cf04369210504cdc2968c5be5d3977df5717c5a4da752` |
-| 7 | `lemma` | [barycenter_fin_one](../../../../Geometry/BarycenterPublic.lean/declarations/barycenter-fin-one.md) | 60 | `result-track:5d766431ee187c49940dc76a1228d239a35a40738b8820f024a191e96020fbde` |
+| 1 | `def` | [subBarycenter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/BarycenterPublic.lean/declarations/subbarycenter.md) | 24 | `declaration-track:c702b26d33347c45125e06cf24dea5c5e34e66f035b654bed34ae9fa45156309` |
+| 2 | `lemma` | [subBarycenter_weights_apply_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/BarycenterPublic.lean/declarations/subbarycenter-weights-apply-eq-zero.md) | 31 | `result-track:af1bb9b067c78a02616e61fef9ec939a78dd47ec60c99e7e66137a34515bce47` |
+| 3 | `lemma` | [subBarycenter_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/BarycenterPublic.lean/declarations/subbarycenter-singleton.md) | 42 | `result-track:b11433ec97d5037d0e80534775e1671740da4f86954973a7eca9926ae12b1d4c` |
+| 4 | `abbrev` | [barycenter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/BarycenterPublic.lean/declarations/barycenter.md) | 48 | `declaration-track:9d2b3ed5b3b98576c5820c2baa3365abc13e1e27d506d56ce3942a69b27426ed` |
+| 5 | `lemma` | [weights_barycenter_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/BarycenterPublic.lean/declarations/weights-barycenter-apply.md) | 51 | `result-track:c6af5012d2c7359de7f56184a4da036a01f82787970d09e2148c392c80f345ab` |
+| 6 | `lemma` | [barycenter_of_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/BarycenterPublic.lean/declarations/barycenter-of-unique.md) | 55 | `result-track:93d0805bc04815bcfe2cf04369210504cdc2968c5be5d3977df5717c5a4da752` |
+| 7 | `lemma` | [barycenter_fin_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/BarycenterPublic.lean/declarations/barycenter-fin-one.md) | 60 | `result-track:5d766431ee187c49940dc76a1228d239a35a40738b8820f024a191e96020fbde` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

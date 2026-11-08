@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/XiStrip.lean/index.md) · [Full source](../../../../Combinatorics/XiStrip.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiStrip.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiStrip.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [re_multiset_sum](../../../../Combinatorics/XiStrip.lean/declarations/re-multiset-sum.md) | 6 | `result-track:3b964764f1d71ae1ca5adcce1e005384ce4cce71b1839f3e349bbe2fc29fe3e9` |
-| 2 | `lemma` | [esymm_one_eq_sum](../../../../Combinatorics/XiStrip.lean/declarations/esymm-one-eq-sum.md) | 11 | `result-track:0307ec90a3dc9f7420bb48b38a458b640011269897d74744a945a62bbbdce1da` |
-| 3 | `lemma` | [multiset_cs](../../../../Combinatorics/XiStrip.lean/declarations/multiset-cs.md) | 14 | `result-track:41a5eb743faf73ca47c1d8ffce8defca9469fd2e609ab71ad2a431cefb62d30a` |
-| 4 | `lemma` | [sum_strip_lower](../../../../Combinatorics/XiStrip.lean/declarations/sum-strip-lower.md) | 34 | `result-track:9865d8502e6e6a5152c1b3a7cf01abebe76bad0ddae43224e1e53a91fb64ece5` |
-| 5 | `theorem` | [sectionPolynomial_roots_sum](../../../../Combinatorics/XiStrip.lean/declarations/sectionpolynomial-roots-sum.md) | 47 | `result-track:0565b7bf6c73a9d7d0cc7e76005c479c7eed22533ae358155bdcbb7fc4441b1b` |
-| 6 | `theorem` | [spectralSection_strip_necessary](../../../../Combinatorics/XiStrip.lean/declarations/spectralsection-strip-necessary.md) | 62 | `result-track:f58200301c395093ac2957a5d9c26d35ea235e59053424f4988c724b3e47185e` |
+| 1 | `lemma` | [re_multiset_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiStrip.lean/declarations/re-multiset-sum.md) | 6 | `result-track:3b964764f1d71ae1ca5adcce1e005384ce4cce71b1839f3e349bbe2fc29fe3e9` |
+| 2 | `lemma` | [esymm_one_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiStrip.lean/declarations/esymm-one-eq-sum.md) | 11 | `result-track:0307ec90a3dc9f7420bb48b38a458b640011269897d74744a945a62bbbdce1da` |
+| 3 | `lemma` | [multiset_cs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiStrip.lean/declarations/multiset-cs.md) | 14 | `result-track:41a5eb743faf73ca47c1d8ffce8defca9469fd2e609ab71ad2a431cefb62d30a` |
+| 4 | `lemma` | [sum_strip_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiStrip.lean/declarations/sum-strip-lower.md) | 34 | `result-track:9865d8502e6e6a5152c1b3a7cf01abebe76bad0ddae43224e1e53a91fb64ece5` |
+| 5 | `theorem` | [sectionPolynomial_roots_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiStrip.lean/declarations/sectionpolynomial-roots-sum.md) | 47 | `result-track:0565b7bf6c73a9d7d0cc7e76005c479c7eed22533ae358155bdcbb7fc4441b1b` |
+| 6 | `theorem` | [spectralSection_strip_necessary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiStrip.lean/declarations/spectralsection-strip-necessary.md) | 62 | `result-track:f58200301c395093ac2957a5d9c26d35ea235e59053424f4988c724b3e47185e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

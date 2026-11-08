@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RhB3LaplaceKernel.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RhB3LaplaceKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RhB3LaplaceKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RhB3LaplaceKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/RhB3LaplaceKernel.lean/declarations/example.md) | 8 | `declaration-track:4f2e1d2fc6aa2b94152d980dfb34f59995c2b1dcc52d305c9001705f761977cb` |
-| 2 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/RhB3LaplaceKernel.lean/declarations/example-source-edition-3.md) | 12 | `declaration-track:95b459e028c4bcbcdbf55f3550f37c268f65de6f6312a0e4e534a7652fe07a50` |
-| 3 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/RhB3LaplaceKernel.lean/declarations/example-source-edition-2.md) | 16 | `declaration-track:731d11368e6f49f9ea11859ba238a3f5034531ca47419e3650c2ede4bdacdc9e` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RhB3LaplaceKernel.lean/declarations/example.md) | 8 | `declaration-track:4f2e1d2fc6aa2b94152d980dfb34f59995c2b1dcc52d305c9001705f761977cb` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RhB3LaplaceKernel.lean/declarations/example-source-edition-3.md) | 12 | `declaration-track:95b459e028c4bcbcdbf55f3550f37c268f65de6f6312a0e4e534a7652fe07a50` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RhB3LaplaceKernel.lean/declarations/example-source-edition-2.md) | 16 | `declaration-track:731d11368e6f49f9ea11859ba238a3f5034531ca47419e3650c2ede4bdacdc9e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

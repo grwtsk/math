@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cube_root_of_unity_sum](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubic.lean/declarations/cube-root-of-unity-sum.md) | 54 | `result-track:59cf1dc5ec54722f5a3f617a366ebecab9f9f621dd3a3b41d522cb8c82cc3062` |
-| 2 | `theorem` | [cubic_basic_eq_zero_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubic.lean/declarations/cubic-basic-eq-zero-iff.md) | 59 | `result-track:cd9a993986ad92ecfeebb3b5659729451afe159864e3f5c7184af11ca7f7167c` |
-| 3 | `theorem` | [cubic_monic_eq_zero_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubic.lean/declarations/cubic-monic-eq-zero-iff.md) | 78 | `result-track:ae986ccb2c9ca09927ccb4127e86c078b8167227b5cdd3031f5dbf795810e0dd` |
-| 4 | `theorem` | [cubic_eq_zero_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubic.lean/declarations/cubic-eq-zero-iff.md) | 97 | `result-track:25f4eb93b00103480a0f01c07438a01a69741c7097ca3ab17352d85bbc963607` |
-| 5 | `theorem` | [cubic_eq_zero_iff_of_p_eq_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubic.lean/declarations/cubic-eq-zero-iff-of-p-eq-zero.md) | 123 | `result-track:0740d51016ca3906da9a04fad59bcbc381bce9ce1116072994f8793960b40102` |
+| 1 | `theorem` | [cube_root_of_unity_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubic.lean/declarations/cube-root-of-unity-sum.md) | 54 | `result-track:59cf1dc5ec54722f5a3f617a366ebecab9f9f621dd3a3b41d522cb8c82cc3062` |
+| 2 | `theorem` | [cubic_basic_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubic.lean/declarations/cubic-basic-eq-zero-iff.md) | 59 | `result-track:cd9a993986ad92ecfeebb3b5659729451afe159864e3f5c7184af11ca7f7167c` |
+| 3 | `theorem` | [cubic_monic_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubic.lean/declarations/cubic-monic-eq-zero-iff.md) | 78 | `result-track:ae986ccb2c9ca09927ccb4127e86c078b8167227b5cdd3031f5dbf795810e0dd` |
+| 4 | `theorem` | [cubic_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubic.lean/declarations/cubic-eq-zero-iff.md) | 97 | `result-track:25f4eb93b00103480a0f01c07438a01a69741c7097ca3ab17352d85bbc963607` |
+| 5 | `theorem` | [cubic_eq_zero_iff_of_p_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SolutionOfCubic.lean/declarations/cubic-eq-zero-iff-of-p-eq-zero.md) | 123 | `result-track:0740d51016ca3906da9a04fad59bcbc381bce9ce1116072994f8793960b40102` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

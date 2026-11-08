@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/UpperProductSummatorySigns.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/UpperProductSummatorySigns.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/UpperProductSummatorySigns.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/UpperProductSummatorySigns.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [upperProductCoefficient_sign](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/UpperProductSummatorySigns.lean/declarations/upperproductcoefficient-sign.md) | 13 | `result-track:a8b97aa388501ba01738df5672f09d17cc69f06709bc0bf1972e97e56c4e3e1b` |
-| 2 | `theorem` | [upperProductSummatory_10_36](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/UpperProductSummatorySigns.lean/declarations/upperproductsummatory-10-36.md) | 21 | `result-track:fdc12368997a81851e59e47f6f264ec7e8fd939ac06696ca7acda6939bfa9eda` |
-| 3 | `theorem` | [upperProductSummatory_10_42](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/UpperProductSummatorySigns.lean/declarations/upperproductsummatory-10-42.md) | 29 | `result-track:877bfde84d3711175cdb8f79755de3ee0a4edfa7c683cae0b3fa83c4d52598a1` |
-| 4 | `theorem` | [not_upperProductSummatory_nonneg](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/UpperProductSummatorySigns.lean/declarations/not-upperproductsummatory-nonneg.md) | 37 | `result-track:084bbb5dbc2fcbca10d33938435da7902040c46eb041d6e0cb3f2802b7b52c2c` |
-| 5 | `theorem` | [actual_signed_cumulative_negative_in_two_channel](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/UpperProductSummatorySigns.lean/declarations/actual-signed-cumulative-negative-in-two-channel.md) | 45 | `result-track:f9849c30e6b72b4cf7cf6687b524b9ede8c8ad09b439716b45ed5995a649bb0f` |
+| 1 | `theorem` | [upperProductCoefficient_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/UpperProductSummatorySigns.lean/declarations/upperproductcoefficient-sign.md) | 13 | `result-track:a8b97aa388501ba01738df5672f09d17cc69f06709bc0bf1972e97e56c4e3e1b` |
+| 2 | `theorem` | [upperProductSummatory_10_36](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/UpperProductSummatorySigns.lean/declarations/upperproductsummatory-10-36.md) | 21 | `result-track:fdc12368997a81851e59e47f6f264ec7e8fd939ac06696ca7acda6939bfa9eda` |
+| 3 | `theorem` | [upperProductSummatory_10_42](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/UpperProductSummatorySigns.lean/declarations/upperproductsummatory-10-42.md) | 29 | `result-track:877bfde84d3711175cdb8f79755de3ee0a4edfa7c683cae0b3fa83c4d52598a1` |
+| 4 | `theorem` | [not_upperProductSummatory_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/UpperProductSummatorySigns.lean/declarations/not-upperproductsummatory-nonneg.md) | 37 | `result-track:084bbb5dbc2fcbca10d33938435da7902040c46eb041d6e0cb3f2802b7b52c2c` |
+| 5 | `theorem` | [actual_signed_cumulative_negative_in_two_channel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/UpperProductSummatorySigns.lean/declarations/actual-signed-cumulative-negative-in-two-channel.md) | 45 | `result-track:f9849c30e6b72b4cf7cf6687b524b9ede8c8ad09b439716b45ed5995a649bb0f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

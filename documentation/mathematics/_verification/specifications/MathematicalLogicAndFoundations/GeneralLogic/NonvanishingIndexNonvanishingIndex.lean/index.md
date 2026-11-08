@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonvanishingIndexNonvanishingIndex.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonvanishingIndexNonvanishingIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonvanishingIndexNonvanishingIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonvanishingIndexNonvanishingIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [NonvanishingIndex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonvanishingIndexNonvanishingIndex.lean/declarations/nonvanishingindex.md) | 24 | `declaration-track:2945dac6d9e72eef8d9d96d8911ffa81573cf7168ba01aafa15b19d807f87656` |
-| 2 | `theorem` | [nonvanishing_index_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonvanishingIndexNonvanishingIndex.lean/declarations/nonvanishing-index-nonzero.md) | 40 | `result-track:9f40a720418833b3eadfb5a399b78a7196be220624795385110f02763a0a0884` |
-| 3 | `theorem` | [nonvanishing_index_forces_kernel_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonvanishingIndexNonvanishingIndex.lean/declarations/nonvanishing-index-forces-kernel-if-supplied.md) | 51 | `result-track:fbca45e67aa1365790f6e1cc8153607aaf9694cdf7460b181dcd7fa9e4ed946e` |
-| 4 | `structure` | [NonvanishingWittIndex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonvanishingIndexNonvanishingIndex.lean/declarations/nonvanishingwittindex.md) | 64 | `declaration-track:043a4dd4de27c2bc2ed69609b8653e9a6420b345e987ee098eca4d2d98a673c2` |
-| 5 | `theorem` | [nonvanishing_witt_index_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonvanishingIndexNonvanishingIndex.lean/declarations/nonvanishing-witt-index-nonzero.md) | 75 | `result-track:215cdb49fa733c5b26b2c6797964f40d546610037b97fb12ab1a5979d9f29ab1` |
+| 1 | `structure` | [NonvanishingIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonvanishingIndexNonvanishingIndex.lean/declarations/nonvanishingindex.md) | 24 | `declaration-track:2945dac6d9e72eef8d9d96d8911ffa81573cf7168ba01aafa15b19d807f87656` |
+| 2 | `theorem` | [nonvanishing_index_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonvanishingIndexNonvanishingIndex.lean/declarations/nonvanishing-index-nonzero.md) | 40 | `result-track:9f40a720418833b3eadfb5a399b78a7196be220624795385110f02763a0a0884` |
+| 3 | `theorem` | [nonvanishing_index_forces_kernel_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonvanishingIndexNonvanishingIndex.lean/declarations/nonvanishing-index-forces-kernel-if-supplied.md) | 51 | `result-track:fbca45e67aa1365790f6e1cc8153607aaf9694cdf7460b181dcd7fa9e4ed946e` |
+| 4 | `structure` | [NonvanishingWittIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonvanishingIndexNonvanishingIndex.lean/declarations/nonvanishingwittindex.md) | 64 | `declaration-track:043a4dd4de27c2bc2ed69609b8653e9a6420b345e987ee098eca4d2d98a673c2` |
+| 5 | `theorem` | [nonvanishing_witt_index_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonvanishingIndexNonvanishingIndex.lean/declarations/nonvanishing-witt-index-nonzero.md) | 75 | `result-track:215cdb49fa733c5b26b2c6797964f40d546610037b97fb12ab1a5979d9f29ab1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

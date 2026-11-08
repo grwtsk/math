@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArrowNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArrowNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArrowNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArrowNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RetractArrow₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArrowNamespacedPublic.lean/declarations/retractarrow.md) | 42 | `declaration-track:7ed09a745d3e9a7df4c008af8323a2daa1e06f9f363ff43275dbb6906dd3999f` |
-| 2 | `lemma` | [comm'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArrowNamespacedPublic.lean/declarations/comm.md) | 68 | `result-track:12658e0ab29518d65e3900a8890a98fb07bae214a35ae36711fe69dfaf7c58e6` |
-| 3 | `def` | [map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArrowNamespacedPublic.lean/declarations/map.md) | 81 | `declaration-track:6093b5cc00aa3e1757620526b8777b8f67e49b737f2368f94217eb3305e2c4c3` |
-| 4 | `def` | [equivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArrowNamespacedPublic.lean/declarations/equivalence.md) | 102 | `declaration-track:cc4549c0dbccf8538aa0fa2754ec5e8c2a48e86fe0319f56d3eaee2bd6a3f9bf` |
-| 5 | `def` | [RetractArrow.toLoc](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArrowNamespacedPublic.lean/declarations/retractarrow-toloc.md) | 148 | `declaration-track:d9e48f861677b50988dca1e1fe57b9aba98cc7274b1c3deb38ebf028b8df988c` |
+| 1 | `structure` | [RetractArrow₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArrowNamespacedPublic.lean/declarations/retractarrow.md) | 42 | `declaration-track:7ed09a745d3e9a7df4c008af8323a2daa1e06f9f363ff43275dbb6906dd3999f` |
+| 2 | `lemma` | [comm'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArrowNamespacedPublic.lean/declarations/comm.md) | 68 | `result-track:12658e0ab29518d65e3900a8890a98fb07bae214a35ae36711fe69dfaf7c58e6` |
+| 3 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArrowNamespacedPublic.lean/declarations/map.md) | 81 | `declaration-track:6093b5cc00aa3e1757620526b8777b8f67e49b737f2368f94217eb3305e2c4c3` |
+| 4 | `def` | [equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArrowNamespacedPublic.lean/declarations/equivalence.md) | 102 | `declaration-track:cc4549c0dbccf8538aa0fa2754ec5e8c2a48e86fe0319f56d3eaee2bd6a3f9bf` |
+| 5 | `def` | [RetractArrow.toLoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArrowNamespacedPublic.lean/declarations/retractarrow-toloc.md) | 148 | `declaration-track:d9e48f861677b50988dca1e1fe57b9aba98cc7274b1c3deb38ebf028b8df988c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

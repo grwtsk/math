@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/FloorPow.lean/index.md) · [Full source](../../../../FunctionalAnalysis/FloorPow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_div_of_monotone_of_exists_subseq_tendsto_div](../../../../FunctionalAnalysis/FloorPow.lean/declarations/tendsto-div-of-monotone-of-exists-subseq-tendsto-div.md) | 26 | `result-track:bc1c0350c6e1691b67a789ce4faa6e1b9d6d4a7b5fb863e75325ac987260cb13` |
-| 2 | `theorem` | [tendsto_div_of_monotone_of_tendsto_div_floor_pow](../../../../FunctionalAnalysis/FloorPow.lean/declarations/tendsto-div-of-monotone-of-tendsto-div-floor-pow.md) | 185 | `result-track:070aaf4ff083c76880b30bde3030d4e59d5c5af4d5b768ac3ac245b63b45d44a` |
-| 3 | `theorem` | [sum_div_pow_sq_le_div_sq](../../../../FunctionalAnalysis/FloorPow.lean/declarations/sum-div-pow-sq-le-div-sq.md) | 218 | `result-track:85614db74aa992761acf949f02124a520c275bf82986f496ef8c9344d6216e18` |
-| 4 | `theorem` | [mul_pow_le_nat_floor_pow](../../../../FunctionalAnalysis/FloorPow.lean/declarations/mul-pow-le-nat-floor-pow.md) | 266 | `result-track:8f88af677629becc8b7720b7245057359155b2f0f0729c8c69424efd6a5a2562` |
-| 5 | `theorem` | [sum_div_nat_floor_pow_sq_le_div_sq](../../../../FunctionalAnalysis/FloorPow.lean/declarations/sum-div-nat-floor-pow-sq-le-div-sq.md) | 279 | `result-track:d119b64335623f7800991b30ed8878180d322fb9bd093b723c5736b1a32e952c` |
+| 1 | `theorem` | [tendsto_div_of_monotone_of_exists_subseq_tendsto_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPow.lean/declarations/tendsto-div-of-monotone-of-exists-subseq-tendsto-div.md) | 26 | `result-track:bc1c0350c6e1691b67a789ce4faa6e1b9d6d4a7b5fb863e75325ac987260cb13` |
+| 2 | `theorem` | [tendsto_div_of_monotone_of_tendsto_div_floor_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPow.lean/declarations/tendsto-div-of-monotone-of-tendsto-div-floor-pow.md) | 185 | `result-track:070aaf4ff083c76880b30bde3030d4e59d5c5af4d5b768ac3ac245b63b45d44a` |
+| 3 | `theorem` | [sum_div_pow_sq_le_div_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPow.lean/declarations/sum-div-pow-sq-le-div-sq.md) | 218 | `result-track:85614db74aa992761acf949f02124a520c275bf82986f496ef8c9344d6216e18` |
+| 4 | `theorem` | [mul_pow_le_nat_floor_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPow.lean/declarations/mul-pow-le-nat-floor-pow.md) | 266 | `result-track:8f88af677629becc8b7720b7245057359155b2f0f0729c8c69424efd6a5a2562` |
+| 5 | `theorem` | [sum_div_nat_floor_pow_sq_le_div_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPow.lean/declarations/sum-div-nat-floor-pow-sq-le-div-sq.md) | 279 | `result-track:d119b64335623f7800991b30ed8878180d322fb9bd093b723c5736b1a32e952c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

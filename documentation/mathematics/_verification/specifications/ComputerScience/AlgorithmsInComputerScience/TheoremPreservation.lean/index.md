@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremPreservation.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremPreservation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremPreservation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremPreservation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PreservedTheorem](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremPreservation.lean/declarations/preservedtheorem.md) | 9 | `declaration-track:717206c83b6ab705e82d7e18e9604d7d96d128a6681bb394ebeff78d77669a49` |
-| 2 | `structure` | [TheoremPreservationCheck](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremPreservation.lean/declarations/theorempreservationcheck.md) | 19 | `declaration-track:615be66b5330cc66825545caf7bef4bb79ef036d222d858e3ff9e617dd5e795a` |
-| 3 | `theorem` | [target_statement](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremPreservation.lean/declarations/target-statement.md) | 31 | `result-track:7a22a36bf67dfe97227f84fe6fedd487dee57ada62c77e473a8e94a30d87f348` |
-| 4 | `theorem` | [target_sorry_absent](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremPreservation.lean/declarations/target-sorry-absent.md) | 36 | `result-track:c8c5943aec2b2ad9e94acd8950816bac7fcbc5479c6e7b744c21dbcdf58c97c9` |
+| 1 | `structure` | [PreservedTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremPreservation.lean/declarations/preservedtheorem.md) | 9 | `declaration-track:717206c83b6ab705e82d7e18e9604d7d96d128a6681bb394ebeff78d77669a49` |
+| 2 | `structure` | [TheoremPreservationCheck](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremPreservation.lean/declarations/theorempreservationcheck.md) | 19 | `declaration-track:615be66b5330cc66825545caf7bef4bb79ef036d222d858e3ff9e617dd5e795a` |
+| 3 | `theorem` | [target_statement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremPreservation.lean/declarations/target-statement.md) | 31 | `result-track:7a22a36bf67dfe97227f84fe6fedd487dee57ada62c77e473a8e94a30d87f348` |
+| 4 | `theorem` | [target_sorry_absent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremPreservation.lean/declarations/target-sorry-absent.md) | 36 | `result-track:c8c5943aec2b2ad9e94acd8950816bac7fcbc5479c6e7b744c21dbcdf58c97c9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

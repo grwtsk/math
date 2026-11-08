@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AdicCompletionNoetherian.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AdicCompletionNoetherian.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionNoetherian.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionNoetherian.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IsHausdorff.of_le_jacobson](../../../../CommutativeAlgebra/AdicCompletionNoetherian.lean/declarations/ishausdorff-of-le-jacobson.md) | 18 | `result-track:063739a973bd0204eab3967e1204e69110101e500600bbaa8e704bf34b6a65d7` |
-| 2 | `theorem` | [IsHausdorff.of_isLocalRing](../../../../CommutativeAlgebra/AdicCompletionNoetherian.lean/declarations/ishausdorff-of-islocalring.md) | 21 | `result-track:696d0b8fc5e4e58e5e4ddb6e7008b209b94f9576774e487b831f174b66804c83` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/AdicCompletionNoetherian.lean/declarations/instance.md) | 24 | `declaration-track:901b66c3fbffb4b0a905b83b9a07befd4422329195061388277f7665e94a030f` |
-| 4 | `theorem` | [IsHausdorff.of_noZeroSMulDivisors](../../../../CommutativeAlgebra/AdicCompletionNoetherian.lean/declarations/ishausdorff-of-nozerosmuldivisors.md) | 27 | `result-track:8a87f0987642dcea7085c7bcaf192c4afd0d4bcbc4712c1d93bc31c15888380a` |
-| 5 | `theorem` | [IsHausdorff.of_isDomain](../../../../CommutativeAlgebra/AdicCompletionNoetherian.lean/declarations/ishausdorff-of-isdomain.md) | 30 | `result-track:5ebb777a86a4bc7cce8e92fe883373f057e2bed74084f6ed56a14bbba801a86a` |
+| 1 | `lemma` | [IsHausdorff.of_le_jacobson](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionNoetherian.lean/declarations/ishausdorff-of-le-jacobson.md) | 18 | `result-track:063739a973bd0204eab3967e1204e69110101e500600bbaa8e704bf34b6a65d7` |
+| 2 | `theorem` | [IsHausdorff.of_isLocalRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionNoetherian.lean/declarations/ishausdorff-of-islocalring.md) | 21 | `result-track:696d0b8fc5e4e58e5e4ddb6e7008b209b94f9576774e487b831f174b66804c83` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionNoetherian.lean/declarations/instance.md) | 24 | `declaration-track:901b66c3fbffb4b0a905b83b9a07befd4422329195061388277f7665e94a030f` |
+| 4 | `theorem` | [IsHausdorff.of_noZeroSMulDivisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionNoetherian.lean/declarations/ishausdorff-of-nozerosmuldivisors.md) | 27 | `result-track:8a87f0987642dcea7085c7bcaf192c4afd0d4bcbc4712c1d93bc31c15888380a` |
+| 5 | `theorem` | [IsHausdorff.of_isDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionNoetherian.lean/declarations/ishausdorff-of-isdomain.md) | 30 | `result-track:5ebb777a86a4bc7cce8e92fe883373f057e2bed74084f6ed56a14bbba801a86a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialPackingRecurrenceControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialPackingRecurrenceControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialPackingRecurrenceControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialPackingRecurrenceControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.SequentialPackingRecurrence`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialPackingRecurrence.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.SequentialPackingRecurrence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialPackingRecurrence.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [arbitrary_append_preserves_nonnegativity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialPackingRecurrenceControls.lean/declarations/arbitrary-append-preserves-nonnegativity.md) | 14 | `result-track:ce95df1d116ccff542b56e04c2846ac03f49eb61d1cefcc340cbf17ad69aeef0` |
-| 2 | `theorem` | [recurrence_has_two_point_memory](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialPackingRecurrenceControls.lean/declarations/recurrence-has-two-point-memory.md) | 21 | `result-track:878cab7555280283a10d135fba96e9f3c71acfa8f7a89c9ceed8b3ea09954cfb` |
+| 1 | `theorem` | [arbitrary_append_preserves_nonnegativity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialPackingRecurrenceControls.lean/declarations/arbitrary-append-preserves-nonnegativity.md) | 14 | `result-track:ce95df1d116ccff542b56e04c2846ac03f49eb61d1cefcc340cbf17ad69aeef0` |
+| 2 | `theorem` | [recurrence_has_two_point_memory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialPackingRecurrenceControls.lean/declarations/recurrence-has-two-point-memory.md) | 21 | `result-track:878cab7555280283a10d135fba96e9f3c71acfa8f7a89c9ceed8b3ea09954cfb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

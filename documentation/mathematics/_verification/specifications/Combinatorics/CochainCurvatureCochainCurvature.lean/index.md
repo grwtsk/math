@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CochainCurvatureCochainCurvature.lean/index.md) · [Full source](../../../../Combinatorics/CochainCurvatureCochainCurvature.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CochainCurvatureCochainCurvature.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CochainCurvatureCochainCurvature.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cochainCurvature](../../../../Combinatorics/CochainCurvatureCochainCurvature.lean/declarations/cochaincurvature.md) | 12 | `declaration-track:4787592f5978b769809f82a3bee2aae4dd85187f46ae36a3464d040b4000ea1b` |
-| 2 | `theorem` | [exact_capacity_cochain_curvature_zero](../../../../Combinatorics/CochainCurvatureCochainCurvature.lean/declarations/exact-capacity-cochain-curvature-zero.md) | 25 | `result-track:8649af6970a82f22e3ec6b84170493985d73b69cdf10e6dd259063c3dfbd62fd` |
+| 1 | `def` | [cochainCurvature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CochainCurvatureCochainCurvature.lean/declarations/cochaincurvature.md) | 12 | `declaration-track:4787592f5978b769809f82a3bee2aae4dd85187f46ae36a3464d040b4000ea1b` |
+| 2 | `theorem` | [exact_capacity_cochain_curvature_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CochainCurvatureCochainCurvature.lean/declarations/exact-capacity-cochain-curvature-zero.md) | 25 | `result-track:8649af6970a82f22e3ec6b84170493985d73b69cdf10e6dd259063c3dfbd62fd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

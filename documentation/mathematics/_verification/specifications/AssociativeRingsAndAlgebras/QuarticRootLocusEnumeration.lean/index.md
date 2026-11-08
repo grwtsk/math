@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/QuarticRootLocusEnumeration.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/QuarticRootLocusEnumeration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticRootLocusEnumeration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticRootLocusEnumeration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticRootLocus`](../../../../AssociativeRingsAndAlgebras/QuarticRootLocus.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Algebra.QuarticRootPermutation`](../../../../AssociativeRingsAndAlgebras/QuarticRootPermutation.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticRootLocus`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticRootLocus.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticRootPermutation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticRootPermutation.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rootLocus_eq_range_of_enumeration](../../../../AssociativeRingsAndAlgebras/QuarticRootLocusEnumeration.lean/declarations/rootlocus-eq-range-of-enumeration.md) | 27 | `result-track:3f8ab4fd64bc65b22842da3601064a3556bad4ee3ca7b92f59997bb1023aecee` |
-| 2 | `theorem` | [exists_unique_root_permutation_of_rootLocus](../../../../AssociativeRingsAndAlgebras/QuarticRootLocusEnumeration.lean/declarations/exists-unique-root-permutation-of-rootlocus.md) | 48 | `result-track:208caa67a9d961c45fba800fc7ae5d87dd5a22bb581330281a74846f1aad2f3e` |
+| 1 | `theorem` | [rootLocus_eq_range_of_enumeration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticRootLocusEnumeration.lean/declarations/rootlocus-eq-range-of-enumeration.md) | 27 | `result-track:3f8ab4fd64bc65b22842da3601064a3556bad4ee3ca7b92f59997bb1023aecee` |
+| 2 | `theorem` | [exists_unique_root_permutation_of_rootLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticRootLocusEnumeration.lean/declarations/exists-unique-root-permutation-of-rootlocus.md) | 48 | `result-track:208caa67a9d961c45fba800fc7ae5d87dd5a22bb581330281a74846f1aad2f3e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

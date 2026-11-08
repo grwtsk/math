@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/LocalJensenControls.lean/index.md) · [Full source](../../../../NumberTheory/LocalJensenControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LocalJensenControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LocalJensenControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.LocalJensenCount`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LocalJensenCount.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.LocalJensenCount`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LocalJensenCount.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [radius_zero_rejected](../../../../NumberTheory/LocalJensenControls.lean/declarations/radius-zero-rejected.md) | 22 | `result-track:1d2d9622731d62b0434106e1ab91aa1bea93d8d6b5c8bdab372c88e7d7b8d38f` |
-| 2 | `theorem` | [equal_radius_log_zero](../../../../NumberTheory/LocalJensenControls.lean/declarations/equal-radius-log-zero.md) | 25 | `result-track:57896e955189f438388c5204b2dadafaec60c9a35db8ac22dfed3868e3f60e2a` |
-| 3 | `theorem` | [zero_anchor_rejected](../../../../NumberTheory/LocalJensenControls.lean/declarations/zero-anchor-rejected.md) | 28 | `result-track:f0ef239cd0b15e18269db4d5cddb7c73dce07b2443ed94976ed73cfb3f71565a` |
-| 4 | `theorem` | [first_upper_disk_contains_one](../../../../NumberTheory/LocalJensenControls.lean/declarations/first-upper-disk-contains-one.md) | 31 | `result-track:c2068078e09a5b78721a0806b63777918523f882cf1ee206d8335a842dcda38b` |
-| 5 | `theorem` | [distinct_location_not_multiplicity](../../../../NumberTheory/LocalJensenControls.lean/declarations/distinct-location-not-multiplicity.md) | 37 | `result-track:758be8b37acaba50e10f663e784220c0438395e035d375c74bd5916827117964` |
-| 6 | `theorem` | [opposite_points_distinct](../../../../NumberTheory/LocalJensenControls.lean/declarations/opposite-points-distinct.md) | 40 | `result-track:e397779f2dd3796ea06d6d7f22ba5db9fb1649dcaf90f6847c580591c3c5c6b6` |
-| 7 | `theorem` | [extreme_box_corner_distance](../../../../NumberTheory/LocalJensenControls.lean/declarations/extreme-box-corner-distance.md) | 46 | `result-track:803397e31f470cfc82ad28cffa401934014ae9e7719ef0e5519b090b1230f929` |
-| 8 | `theorem` | [regular_term_not_bounded_by_zero_count](../../../../NumberTheory/LocalJensenControls.lean/declarations/regular-term-not-bounded-by-zero-count.md) | 52 | `result-track:dadd64b544ce5258694eebf322f7ea74313bf0ad8d7091374d770df950e72f56` |
+| 1 | `theorem` | [radius_zero_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LocalJensenControls.lean/declarations/radius-zero-rejected.md) | 22 | `result-track:1d2d9622731d62b0434106e1ab91aa1bea93d8d6b5c8bdab372c88e7d7b8d38f` |
+| 2 | `theorem` | [equal_radius_log_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LocalJensenControls.lean/declarations/equal-radius-log-zero.md) | 25 | `result-track:57896e955189f438388c5204b2dadafaec60c9a35db8ac22dfed3868e3f60e2a` |
+| 3 | `theorem` | [zero_anchor_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LocalJensenControls.lean/declarations/zero-anchor-rejected.md) | 28 | `result-track:f0ef239cd0b15e18269db4d5cddb7c73dce07b2443ed94976ed73cfb3f71565a` |
+| 4 | `theorem` | [first_upper_disk_contains_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LocalJensenControls.lean/declarations/first-upper-disk-contains-one.md) | 31 | `result-track:c2068078e09a5b78721a0806b63777918523f882cf1ee206d8335a842dcda38b` |
+| 5 | `theorem` | [distinct_location_not_multiplicity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LocalJensenControls.lean/declarations/distinct-location-not-multiplicity.md) | 37 | `result-track:758be8b37acaba50e10f663e784220c0438395e035d375c74bd5916827117964` |
+| 6 | `theorem` | [opposite_points_distinct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LocalJensenControls.lean/declarations/opposite-points-distinct.md) | 40 | `result-track:e397779f2dd3796ea06d6d7f22ba5db9fb1649dcaf90f6847c580591c3c5c6b6` |
+| 7 | `theorem` | [extreme_box_corner_distance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LocalJensenControls.lean/declarations/extreme-box-corner-distance.md) | 46 | `result-track:803397e31f470cfc82ad28cffa401934014ae9e7719ef0e5519b090b1230f929` |
+| 8 | `theorem` | [regular_term_not_bounded_by_zero_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LocalJensenControls.lean/declarations/regular-term-not-bounded-by-zero-count.md) | 52 | `result-track:dadd64b544ce5258694eebf322f7ea74313bf0ad8d7091374d770df950e72f56` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

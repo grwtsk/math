@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsPullbacksNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsPullbacksNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsPullbacksNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsPullbacksNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasLimit_cospan_of_hasLimit_pair_of_hasLimit_parallelPair](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsPullbacksNamespaced.lean/declarations/haslimit-cospan-of-haslimit-pair-of-haslimit-parallelpair.md) | 34 | `result-track:2f45dc5ea74ba1540f339e1c3d44f65f92c30b7c1cad29dc72a180f5d0a4b9ff` |
-| 2 | `theorem` | [hasPullbacks_of_hasBinaryProducts_of_hasEqualizers](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsPullbacksNamespaced.lean/declarations/haspullbacks-of-hasbinaryproducts-of-hasequalizers.md) | 62 | `result-track:ade79b05d9df2bd34a0fecd885422c695cf44eb06b184e6b27ab2195237b1c5a` |
-| 3 | `theorem` | [hasColimit_span_of_hasColimit_pair_of_hasColimit_parallelPair](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsPullbacksNamespaced.lean/declarations/hascolimit-span-of-hascolimit-pair-of-hascolimit-parallelpair.md) | 70 | `result-track:1484629b582bb49c765496752979bd93cbd3ee5bb9c215bdb0e926a45eee8567` |
-| 4 | `theorem` | [hasPushouts_of_hasBinaryCoproducts_of_hasCoequalizers](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsPullbacksNamespaced.lean/declarations/haspushouts-of-hasbinarycoproducts-of-hascoequalizers.md) | 98 | `result-track:a21076f5c8ee84ab686b546a0034e7ecf02d7638fa32621b1d763625bfedcc35` |
+| 1 | `theorem` | [hasLimit_cospan_of_hasLimit_pair_of_hasLimit_parallelPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsPullbacksNamespaced.lean/declarations/haslimit-cospan-of-haslimit-pair-of-haslimit-parallelpair.md) | 34 | `result-track:2f45dc5ea74ba1540f339e1c3d44f65f92c30b7c1cad29dc72a180f5d0a4b9ff` |
+| 2 | `theorem` | [hasPullbacks_of_hasBinaryProducts_of_hasEqualizers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsPullbacksNamespaced.lean/declarations/haspullbacks-of-hasbinaryproducts-of-hasequalizers.md) | 62 | `result-track:ade79b05d9df2bd34a0fecd885422c695cf44eb06b184e6b27ab2195237b1c5a` |
+| 3 | `theorem` | [hasColimit_span_of_hasColimit_pair_of_hasColimit_parallelPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsPullbacksNamespaced.lean/declarations/hascolimit-span-of-hascolimit-pair-of-hascolimit-parallelpair.md) | 70 | `result-track:1484629b582bb49c765496752979bd93cbd3ee5bb9c215bdb0e926a45eee8567` |
+| 4 | `theorem` | [hasPushouts_of_hasBinaryCoproducts_of_hasCoequalizers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsPullbacksNamespaced.lean/declarations/haspushouts-of-hasbinarycoproducts-of-hascoequalizers.md) | 98 | `result-track:a21076f5c8ee84ab686b546a0034e7ecf02d7638fa32621b1d763625bfedcc35` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

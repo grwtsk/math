@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertPublicElabMRevert.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertPublicElabMRevert.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertPublicElabMRevert.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertPublicElabMRevert.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mRevert](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertPublicElabMRevert.lean/declarations/mrevert.md) | 20 | `declaration-track:7c10ed109a4a387f1460e91c39014bebe5ff9e067c83285637940067b02a0d87` |
-| 2 | `def` | [mRevertForallN](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertPublicElabMRevert.lean/declarations/mrevertforalln.md) | 40 | `declaration-track:f04589455159f22097ae02297eefe7ec1d21dad1fb3b50b819479c701acdc4b4` |
-| 3 | `def` | [elabMRevert](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertPublicElabMRevert.lean/declarations/elabmrevert.md) | 85 | `declaration-track:d5ff70bca56c0c3317204eedfa29a956492e5ad867f64ee337919307cc900557` |
+| 1 | `def` | [mRevert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertPublicElabMRevert.lean/declarations/mrevert.md) | 20 | `declaration-track:7c10ed109a4a387f1460e91c39014bebe5ff9e067c83285637940067b02a0d87` |
+| 2 | `def` | [mRevertForallN](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertPublicElabMRevert.lean/declarations/mrevertforalln.md) | 40 | `declaration-track:f04589455159f22097ae02297eefe7ec1d21dad1fb3b50b819479c701acdc4b4` |
+| 3 | `def` | [elabMRevert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RevertPublicElabMRevert.lean/declarations/elabmrevert.md) | 85 | `declaration-track:d5ff70bca56c0c3317204eedfa29a956492e5ad867f64ee337919307cc900557` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

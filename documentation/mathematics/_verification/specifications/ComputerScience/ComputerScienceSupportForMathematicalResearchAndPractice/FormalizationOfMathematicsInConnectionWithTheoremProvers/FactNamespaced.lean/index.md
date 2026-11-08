@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FactNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FactNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FactNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FactNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TimeScope](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FactNamespaced.lean/declarations/timescope.md) | 15 | `declaration-track:a9fb6cf30a29c97b5e45abf0356f9e8e85de773f614729df25333f8d953c93c1` |
-| 2 | `structure` | [TimeScopedFact](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FactNamespaced.lean/declarations/timescopedfact.md) | 22 | `declaration-track:d8e63663b070cb725d8b686958433bbbe76be26764991b0b06856074b57b43fe` |
-| 3 | `def` | [TimeScopedFact.tripleKey](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FactNamespaced.lean/declarations/timescopedfact-triplekey.md) | 31 | `declaration-track:561df41458cc69b33d8d8c16ebeb5020f0eef7b8a3b73689e1e81ca0b40eadd6` |
+| 1 | `structure` | [TimeScope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FactNamespaced.lean/declarations/timescope.md) | 15 | `declaration-track:a9fb6cf30a29c97b5e45abf0356f9e8e85de773f614729df25333f8d953c93c1` |
+| 2 | `structure` | [TimeScopedFact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FactNamespaced.lean/declarations/timescopedfact.md) | 22 | `declaration-track:d8e63663b070cb725d8b686958433bbbe76be26764991b0b06856074b57b43fe` |
+| 3 | `def` | [TimeScopedFact.tripleKey](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FactNamespaced.lean/declarations/timescopedfact-triplekey.md) | 31 | `declaration-track:561df41458cc69b33d8d8c16ebeb5020f0eef7b8a3b73689e1e81ca0b40eadd6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

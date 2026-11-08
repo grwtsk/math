@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ComplementaryWeakAdmissibility.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ComplementaryWeakAdmissibility.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ComplementaryWeakAdmissibility.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ComplementaryWeakAdmissibility.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.Hodge.DegreeOneSlope`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/index.md) — import line 9; pinned internal source present.
-- [`GRWTSK.LinearAlgebra.FilteredProjectorSplit`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FilteredProjectorSplit.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.Hodge.DegreeOneSlope`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.FilteredProjectorSplit`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FilteredProjectorSplit.lean/index.md) — import line 10; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ComplementaryNumerics](../../../../GroupTheoryAndGeneralizations/ComplementaryWeakAdmissibility.lean/declarations/complementarynumerics.md) | 16 | `declaration-track:8408f3346d3b014f7e0d9107f086d3df2b549a6cea02b38833dcbf566e1320f2` |
-| 2 | `def` | [ofFilteredProjector](../../../../GroupTheoryAndGeneralizations/ComplementaryWeakAdmissibility.lean/declarations/offilteredprojector.md) | 34 | `declaration-track:26ec1cbdf51e666f55dab2aa99fb10ae7eacd2a5f96f26d31ee0754e2362e148` |
-| 3 | `theorem` | [component_equalities](../../../../GroupTheoryAndGeneralizations/ComplementaryWeakAdmissibility.lean/declarations/component-equalities.md) | 56 | `result-track:986807b3169ab9fa0bc1fc77c87b2a69e4a4eaa153e1fb06b729d92b4f3192c7` |
-| 4 | `theorem` | [left_eq](../../../../GroupTheoryAndGeneralizations/ComplementaryWeakAdmissibility.lean/declarations/left-eq.md) | 60 | `result-track:a0dfbad362e9d63f62094f3770edf0a671684837faaab3a28f5f4c66d5def6b5` |
-| 5 | `theorem` | [right_eq](../../../../GroupTheoryAndGeneralizations/ComplementaryWeakAdmissibility.lean/declarations/right-eq.md) | 64 | `result-track:62a76e266bd0d30e6f8611efca67ffc6544860e1942b699cbe49046c1c41c4f3` |
-| 6 | `theorem` | [component_equalities_of_filteredProjector](../../../../GroupTheoryAndGeneralizations/ComplementaryWeakAdmissibility.lean/declarations/component-equalities-of-filteredprojector.md) | 71 | `result-track:495e5dfa8b4239a98fd0f40eae283123f49b6a9b81f16a03d99fd95f68c5b28d` |
-| 7 | `theorem` | [pureType_of_complementary_projector](../../../../GroupTheoryAndGeneralizations/ComplementaryWeakAdmissibility.lean/declarations/puretype-of-complementary-projector.md) | 86 | `result-track:1625d95eddbcec81a6c93ed4512d7765e56a3b0f2f271d1087d0055306097ca7` |
+| 1 | `structure` | [ComplementaryNumerics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ComplementaryWeakAdmissibility.lean/declarations/complementarynumerics.md) | 16 | `declaration-track:8408f3346d3b014f7e0d9107f086d3df2b549a6cea02b38833dcbf566e1320f2` |
+| 2 | `def` | [ofFilteredProjector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ComplementaryWeakAdmissibility.lean/declarations/offilteredprojector.md) | 34 | `declaration-track:26ec1cbdf51e666f55dab2aa99fb10ae7eacd2a5f96f26d31ee0754e2362e148` |
+| 3 | `theorem` | [component_equalities](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ComplementaryWeakAdmissibility.lean/declarations/component-equalities.md) | 56 | `result-track:986807b3169ab9fa0bc1fc77c87b2a69e4a4eaa153e1fb06b729d92b4f3192c7` |
+| 4 | `theorem` | [left_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ComplementaryWeakAdmissibility.lean/declarations/left-eq.md) | 60 | `result-track:a0dfbad362e9d63f62094f3770edf0a671684837faaab3a28f5f4c66d5def6b5` |
+| 5 | `theorem` | [right_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ComplementaryWeakAdmissibility.lean/declarations/right-eq.md) | 64 | `result-track:62a76e266bd0d30e6f8611efca67ffc6544860e1942b699cbe49046c1c41c4f3` |
+| 6 | `theorem` | [component_equalities_of_filteredProjector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ComplementaryWeakAdmissibility.lean/declarations/component-equalities-of-filteredprojector.md) | 71 | `result-track:495e5dfa8b4239a98fd0f40eae283123f49b6a9b81f16a03d99fd95f68c5b28d` |
+| 7 | `theorem` | [pureType_of_complementary_projector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ComplementaryWeakAdmissibility.lean/declarations/puretype-of-complementary-projector.md) | 86 | `result-track:1625d95eddbcec81a6c93ed4512d7765e56a3b0f2f271d1087d0055306097ca7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/MonotoneCountermodelNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/MonotoneCountermodelNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MonotoneCountermodelNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MonotoneCountermodelNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceModeMoment_dictionary](../../../../MeasureAndIntegration/MonotoneCountermodelNamespaced.lean/declarations/sourcemodemoment-dictionary.md) | 28 | `result-track:efb13d414da7acee61dd8ac4425335b1887fa5d209388a09e73cdd06a7eb6e09` |
-| 2 | `theorem` | [sourceReadout_actual_square](../../../../MeasureAndIntegration/MonotoneCountermodelNamespaced.lean/declarations/sourcereadout-actual-square.md) | 44 | `result-track:2f27a97407f358ce64683ddb7a4e4b911fde9ca60d36dd2ef28bc5f96f7a16af` |
-| 3 | `theorem` | [actual_sourceReadout_tendsto](../../../../MeasureAndIntegration/MonotoneCountermodelNamespaced.lean/declarations/actual-sourcereadout-tendsto.md) | 48 | `result-track:e892f758427926fe6cd320ef8852841b4b989ee6a3fc820b699430f122ea8fbf` |
-| 4 | `theorem` | [actual_sourceReadout_scaled_limit](../../../../MeasureAndIntegration/MonotoneCountermodelNamespaced.lean/declarations/actual-sourcereadout-scaled-limit.md) | 52 | `result-track:a7913bc53edcb10c01b4dbc6404769a04807d04e8f54b0a78a6640fe7e80d7f6` |
-| 5 | `theorem` | [actual_sourceReadout_boundary_limit](../../../../MeasureAndIntegration/MonotoneCountermodelNamespaced.lean/declarations/actual-sourcereadout-boundary-limit.md) | 68 | `result-track:03125fd1077aea2a7983dd3f3d1ce673c132e8ff46a4fb93a2fc8c7e4b305f7a` |
-| 6 | `theorem` | [model_counting_power_saving](../../../../MeasureAndIntegration/MonotoneCountermodelNamespaced.lean/declarations/model-counting-power-saving.md) | 81 | `result-track:1b8557b65a795a348f64456965c25dd2200b3771450e64513cb2a9175cd3b16d` |
+| 1 | `theorem` | [sourceModeMoment_dictionary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MonotoneCountermodelNamespaced.lean/declarations/sourcemodemoment-dictionary.md) | 28 | `result-track:efb13d414da7acee61dd8ac4425335b1887fa5d209388a09e73cdd06a7eb6e09` |
+| 2 | `theorem` | [sourceReadout_actual_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MonotoneCountermodelNamespaced.lean/declarations/sourcereadout-actual-square.md) | 44 | `result-track:2f27a97407f358ce64683ddb7a4e4b911fde9ca60d36dd2ef28bc5f96f7a16af` |
+| 3 | `theorem` | [actual_sourceReadout_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MonotoneCountermodelNamespaced.lean/declarations/actual-sourcereadout-tendsto.md) | 48 | `result-track:e892f758427926fe6cd320ef8852841b4b989ee6a3fc820b699430f122ea8fbf` |
+| 4 | `theorem` | [actual_sourceReadout_scaled_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MonotoneCountermodelNamespaced.lean/declarations/actual-sourcereadout-scaled-limit.md) | 52 | `result-track:a7913bc53edcb10c01b4dbc6404769a04807d04e8f54b0a78a6640fe7e80d7f6` |
+| 5 | `theorem` | [actual_sourceReadout_boundary_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MonotoneCountermodelNamespaced.lean/declarations/actual-sourcereadout-boundary-limit.md) | 68 | `result-track:03125fd1077aea2a7983dd3f3d1ce673c132e8ff46a4fb93a2fc8c7e4b305f7a` |
+| 6 | `theorem` | [model_counting_power_saving](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MonotoneCountermodelNamespaced.lean/declarations/model-counting-power-saving.md) | 81 | `result-track:1b8557b65a795a348f64456965c25dd2200b3771450e64513cb2a9175cd3b16d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

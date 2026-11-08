@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualNegativeEdgeCorrelationNative03.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualNegativeEdgeCorrelationNative03.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualNegativeEdgeCorrelationNative03.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualNegativeEdgeCorrelationNative03.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [leadingAntiderivative](../../../../MeasureAndIntegration/SourceActualNegativeEdgeCorrelationNative03.lean/declarations/leadingantiderivative.md) | 26 | `declaration-track:26037cb365ec961ed893b3268943c3afcda31096f2bb4e5c095678fe4b6ba6fa` |
-| 2 | `theorem` | [actualLeadingEdgeConvolution_eq](../../../../MeasureAndIntegration/SourceActualNegativeEdgeCorrelationNative03.lean/declarations/actualleadingedgeconvolution-eq.md) | 34 | `result-track:dd9a6577c7cef5f95469c723b43318623ff793c665fdc6206faac43b15d4925c` |
-| 3 | `theorem` | [actualLeadingEdgeConvolution_le_neg_hundred](../../../../MeasureAndIntegration/SourceActualNegativeEdgeCorrelationNative03.lean/declarations/actualleadingedgeconvolution-le-neg-hundred.md) | 56 | `result-track:13a75392dc0b42ca50d2d9285dc007fa731f40cd06f46550184e8ee38b59cec6` |
-| 4 | `theorem` | [normalization_le_forty_one](../../../../MeasureAndIntegration/SourceActualNegativeEdgeCorrelationNative03.lean/declarations/normalization-le-forty-one.md) | 67 | `result-track:885b75829553d373a3a45d62be6904018936bb1a45e7746e255ca67884d1ee88` |
-| 5 | `theorem` | [endpoint_error](../../../../MeasureAndIntegration/SourceActualNegativeEdgeCorrelationNative03.lean/declarations/endpoint-error.md) | 80 | `result-track:04f80babf5a9bc786c15473788dd6d12c1f721de238738664bec2c3089a86e3b` |
-| 6 | `theorem` | [endpointProduct_integral_uniform_error](../../../../MeasureAndIntegration/SourceActualNegativeEdgeCorrelationNative03.lean/declarations/endpointproduct-integral-uniform-error.md) | 141 | `result-track:b823c763033d82558f489e0dbc3c62231425539d8fbf943e84aa9ca74b0f3f2b` |
-| 7 | `theorem` | [actualCorrelation_negative_edge](../../../../MeasureAndIntegration/SourceActualNegativeEdgeCorrelationNative03.lean/declarations/actualcorrelation-negative-edge.md) | 203 | `result-track:e8a742e622ed0e6b9d3d6a383ab180e8cf97d5e3df08bf7b66dcb5c8ed928517` |
+| 1 | `def` | [leadingAntiderivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualNegativeEdgeCorrelationNative03.lean/declarations/leadingantiderivative.md) | 26 | `declaration-track:26037cb365ec961ed893b3268943c3afcda31096f2bb4e5c095678fe4b6ba6fa` |
+| 2 | `theorem` | [actualLeadingEdgeConvolution_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualNegativeEdgeCorrelationNative03.lean/declarations/actualleadingedgeconvolution-eq.md) | 34 | `result-track:dd9a6577c7cef5f95469c723b43318623ff793c665fdc6206faac43b15d4925c` |
+| 3 | `theorem` | [actualLeadingEdgeConvolution_le_neg_hundred](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualNegativeEdgeCorrelationNative03.lean/declarations/actualleadingedgeconvolution-le-neg-hundred.md) | 56 | `result-track:13a75392dc0b42ca50d2d9285dc007fa731f40cd06f46550184e8ee38b59cec6` |
+| 4 | `theorem` | [normalization_le_forty_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualNegativeEdgeCorrelationNative03.lean/declarations/normalization-le-forty-one.md) | 67 | `result-track:885b75829553d373a3a45d62be6904018936bb1a45e7746e255ca67884d1ee88` |
+| 5 | `theorem` | [endpoint_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualNegativeEdgeCorrelationNative03.lean/declarations/endpoint-error.md) | 80 | `result-track:04f80babf5a9bc786c15473788dd6d12c1f721de238738664bec2c3089a86e3b` |
+| 6 | `theorem` | [endpointProduct_integral_uniform_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualNegativeEdgeCorrelationNative03.lean/declarations/endpointproduct-integral-uniform-error.md) | 141 | `result-track:b823c763033d82558f489e0dbc3c62231425539d8fbf943e84aa9ca74b0f3f2b` |
+| 7 | `theorem` | [actualCorrelation_negative_edge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualNegativeEdgeCorrelationNative03.lean/declarations/actualcorrelation-negative-edge.md) | 203 | `result-track:e8a742e622ed0e6b9d3d6a383ab180e8cf97d5e3df08bf7b66dcb5c8ed928517` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

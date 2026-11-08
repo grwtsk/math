@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/instance.md) | 33 | `declaration-track:2481d72d3c8549a5124d44df6e7d5a229f442f88bae62924fdec07cb77db3e77` |
-| 2 | `theorem` | [add_eq_zero_iff](../../../../../NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/add-eq-zero-iff.md) | 35 | `result-track:02bbc931dae4dd001e128e5b87c4bc3350c5a52d294fbf95d1aa76ed0ae911b5` |
-| 3 | `theorem` | [add_eq_one_iff](../../../../../NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/add-eq-one-iff.md) | 42 | `result-track:106d714ee0164326c9bead50498414d333414ba43f27497f5e72e494f13ca214` |
-| 4 | `theorem` | [add_eq_two_iff](../../../../../NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/add-eq-two-iff.md) | 49 | `result-track:ad1e5f9f3518fcacdd48bdc95ff77bdf655317fcf772fd323737a2a62715d367` |
-| 5 | `theorem` | [add_eq_three_iff](../../../../../NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/add-eq-three-iff.md) | 57 | `result-track:79e5049a254a469a06a299b123bfa16c1d98ec1dc45dffd3f1e66cfdbf86887a` |
-| 6 | `theorem` | [coe_nonneg](../../../../../NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/coe-nonneg.md) | 65 | `result-track:4a73f693c38cabbe72a567b002fbc1261840aa9ca4c44be3fc7101c8520ae42c` |
-| 7 | `theorem` | [lt_zero_iff](../../../../../NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/lt-zero-iff.md) | 70 | `result-track:af4c6a674ce45541024cd603ddddd0ba970f2d3ba7c613211d41748f19ab411c` |
-| 8 | `theorem` | [one_le_iff_zero_lt](../../../../../NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/one-le-iff-zero-lt.md) | 72 | `result-track:84d00046a92ce3d1d84306cdc5b547abe5dc6d7f592680c3b3626fb96776f36a` |
-| 9 | `theorem` | [lt_one_iff_le_zero](../../../../../NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/lt-one-iff-le-zero.md) | 79 | `result-track:03d5d92bd5c39154053dc00b0c0bcbd0a76a74ee1a487ba133a3832de5a472ca` |
-| 10 | `theorem` | [add_one_le_of_lt](../../../../../NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/add-one-le-of-lt.md) | 82 | `result-track:4b952f71aaec8f1ee42487835c5117eea7c214cacb1aaaadebcbc5d84b336144` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/instance.md) | 33 | `declaration-track:2481d72d3c8549a5124d44df6e7d5a229f442f88bae62924fdec07cb77db3e77` |
+| 2 | `theorem` | [add_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/add-eq-zero-iff.md) | 35 | `result-track:02bbc931dae4dd001e128e5b87c4bc3350c5a52d294fbf95d1aa76ed0ae911b5` |
+| 3 | `theorem` | [add_eq_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/add-eq-one-iff.md) | 42 | `result-track:106d714ee0164326c9bead50498414d333414ba43f27497f5e72e494f13ca214` |
+| 4 | `theorem` | [add_eq_two_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/add-eq-two-iff.md) | 49 | `result-track:ad1e5f9f3518fcacdd48bdc95ff77bdf655317fcf772fd323737a2a62715d367` |
+| 5 | `theorem` | [add_eq_three_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/add-eq-three-iff.md) | 57 | `result-track:79e5049a254a469a06a299b123bfa16c1d98ec1dc45dffd3f1e66cfdbf86887a` |
+| 6 | `theorem` | [coe_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/coe-nonneg.md) | 65 | `result-track:4a73f693c38cabbe72a567b002fbc1261840aa9ca4c44be3fc7101c8520ae42c` |
+| 7 | `theorem` | [lt_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/lt-zero-iff.md) | 70 | `result-track:af4c6a674ce45541024cd603ddddd0ba970f2d3ba7c613211d41748f19ab411c` |
+| 8 | `theorem` | [one_le_iff_zero_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/one-le-iff-zero-lt.md) | 72 | `result-track:84d00046a92ce3d1d84306cdc5b547abe5dc6d7f592680c3b3626fb96776f36a` |
+| 9 | `theorem` | [lt_one_iff_le_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/lt-one-iff-le-zero.md) | 79 | `result-track:03d5d92bd5c39154053dc00b0c0bcbd0a76a74ee1a487ba133a3832de5a472ca` |
+| 10 | `theorem` | [add_one_le_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatWithBotNamespacedPublic.lean/declarations/add-one-le-of-lt.md) | 82 | `result-track:4b952f71aaec8f1ee42487835c5117eea7c214cacb1aaaadebcbc5d84b336144` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

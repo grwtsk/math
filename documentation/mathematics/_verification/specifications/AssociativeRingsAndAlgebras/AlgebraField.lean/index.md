@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/AlgebraField.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/AlgebraField.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraField.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraField.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coe_inj](../../../../AssociativeRingsAndAlgebras/AlgebraField.lean/declarations/coe-inj.md) | 22 | `result-track:7d0f5626bfc90ed664e8d7c897889567a605f0134b19b63ccdaeaa62c185fe9b` |
-| 2 | `theorem` | [lift_map_eq_zero_iff](../../../../AssociativeRingsAndAlgebras/AlgebraField.lean/declarations/lift-map-eq-zero-iff.md) | 26 | `result-track:572f0577b9fedf1d4a39cbc7832afa19d5318c51120d8ceccdce72b637628852` |
-| 3 | `theorem` | [coe_inv](../../../../AssociativeRingsAndAlgebras/AlgebraField.lean/declarations/coe-inv.md) | 35 | `result-track:b66ce2dbf12b54e3727b60563d7c62cd2f0dbff2b47b27ab1eef2c184495b580` |
-| 4 | `theorem` | [coe_div](../../../../AssociativeRingsAndAlgebras/AlgebraField.lean/declarations/coe-div.md) | 39 | `result-track:719f31a78647eab042acf919d98aa51a99f33f9435900209cc0ddbb61000cb8b` |
-| 5 | `theorem` | [coe_zpow](../../../../AssociativeRingsAndAlgebras/AlgebraField.lean/declarations/coe-zpow.md) | 43 | `result-track:595fac4df0faaa201b841d53b1f22bdaa08a2e99d60d8c6660bd01249d7317d0` |
-| 6 | `theorem` | [coe_ratCast](../../../../AssociativeRingsAndAlgebras/AlgebraField.lean/declarations/coe-ratcast.md) | 53 | `result-track:98b3be57d77e9ea118943d0268be1ad5014c67cff93993d23bf405a0cb17c727` |
+| 1 | `theorem` | [coe_inj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraField.lean/declarations/coe-inj.md) | 22 | `result-track:7d0f5626bfc90ed664e8d7c897889567a605f0134b19b63ccdaeaa62c185fe9b` |
+| 2 | `theorem` | [lift_map_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraField.lean/declarations/lift-map-eq-zero-iff.md) | 26 | `result-track:572f0577b9fedf1d4a39cbc7832afa19d5318c51120d8ceccdce72b637628852` |
+| 3 | `theorem` | [coe_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraField.lean/declarations/coe-inv.md) | 35 | `result-track:b66ce2dbf12b54e3727b60563d7c62cd2f0dbff2b47b27ab1eef2c184495b580` |
+| 4 | `theorem` | [coe_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraField.lean/declarations/coe-div.md) | 39 | `result-track:719f31a78647eab042acf919d98aa51a99f33f9435900209cc0ddbb61000cb8b` |
+| 5 | `theorem` | [coe_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraField.lean/declarations/coe-zpow.md) | 43 | `result-track:595fac4df0faaa201b841d53b1f22bdaa08a2e99d60d8c6660bd01249d7317d0` |
+| 6 | `theorem` | [coe_ratCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraField.lean/declarations/coe-ratcast.md) | 53 | `result-track:98b3be57d77e9ea118943d0268be1ad5014c67cff93993d23bf405a0cb17c727` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerQuadraticPortControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerQuadraticPortControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerQuadraticPortControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerQuadraticPortControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerQuadraticPort.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerQuadraticPort.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [two_and_four_have_same_weight](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerQuadraticPortControls.lean/declarations/two-and-four-have-same-weight.md) | 18 | `result-track:aedfc368a3edd79c034baef5f8587220d3bd5c48aa87ecbd7764e745e2ddcf43` |
-| 2 | `theorem` | [four_weight_is_not_two_times_two_weight](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerQuadraticPortControls.lean/declarations/four-weight-is-not-two-times-two-weight.md) | 25 | `result-track:734a9decff57980e27684fc47a81058f51ba594a73847f3fb1eb14cd68d3fcb7` |
-| 3 | `theorem` | [arbitrary_stage_energy_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerQuadraticPortControls.lean/declarations/arbitrary-stage-energy-nonnegative.md) | 31 | `result-track:67d501ec53957170d05290dec613479af4affb08ee8b13b82adeff0b14a9d89a` |
-| 4 | `theorem` | [zero_test_has_zero_energy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerQuadraticPortControls.lean/declarations/zero-test-has-zero-energy.md) | 37 | `result-track:dfe6fff09066bc82eeafab5480a892df5bcff109124a1b46ac13aba389c00830` |
-| 5 | `theorem` | [no_extraction_at_unit_horizontal_displacement](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerQuadraticPortControls.lean/declarations/no-extraction-at-unit-horizontal-displacement.md) | 45 | `result-track:02e39b178bbf0401cc310f7e4ee4cbe5ae0945415797d1b0906c3cdeb64dafdf` |
-| 6 | `theorem` | [collapse_witness_survives_in_source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerQuadraticPortControls.lean/declarations/collapse-witness-survives-in-source.md) | 54 | `result-track:de9321004f6fd2775643bb664e81058ab4ff7607a7229a1624672256f1700d88` |
-| 7 | `theorem` | [triangular_base_cardinality](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerQuadraticPortControls.lean/declarations/triangular-base-cardinality.md) | 61 | `result-track:6a0490efcdd69902dcdab2e6bb013c4f4c1134797feb3180ce1e698dc2e5a338` |
+| 1 | `theorem` | [two_and_four_have_same_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerQuadraticPortControls.lean/declarations/two-and-four-have-same-weight.md) | 18 | `result-track:aedfc368a3edd79c034baef5f8587220d3bd5c48aa87ecbd7764e745e2ddcf43` |
+| 2 | `theorem` | [four_weight_is_not_two_times_two_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerQuadraticPortControls.lean/declarations/four-weight-is-not-two-times-two-weight.md) | 25 | `result-track:734a9decff57980e27684fc47a81058f51ba594a73847f3fb1eb14cd68d3fcb7` |
+| 3 | `theorem` | [arbitrary_stage_energy_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerQuadraticPortControls.lean/declarations/arbitrary-stage-energy-nonnegative.md) | 31 | `result-track:67d501ec53957170d05290dec613479af4affb08ee8b13b82adeff0b14a9d89a` |
+| 4 | `theorem` | [zero_test_has_zero_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerQuadraticPortControls.lean/declarations/zero-test-has-zero-energy.md) | 37 | `result-track:dfe6fff09066bc82eeafab5480a892df5bcff109124a1b46ac13aba389c00830` |
+| 5 | `theorem` | [no_extraction_at_unit_horizontal_displacement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerQuadraticPortControls.lean/declarations/no-extraction-at-unit-horizontal-displacement.md) | 45 | `result-track:02e39b178bbf0401cc310f7e4ee4cbe5ae0945415797d1b0906c3cdeb64dafdf` |
+| 6 | `theorem` | [collapse_witness_survives_in_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerQuadraticPortControls.lean/declarations/collapse-witness-survives-in-source.md) | 54 | `result-track:de9321004f6fd2775643bb664e81058ab4ff7607a7229a1624672256f1700d88` |
+| 7 | `theorem` | [triangular_base_cardinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerQuadraticPortControls.lean/declarations/triangular-base-cardinality.md) | 61 | `result-track:6a0490efcdd69902dcdab2e6bb013c4f4c1134797feb3180ce1e698dc2e5a338` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

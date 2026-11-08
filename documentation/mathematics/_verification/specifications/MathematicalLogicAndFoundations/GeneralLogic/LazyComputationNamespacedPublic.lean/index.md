@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LazyComputationNamespacedPublic.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LazyComputationNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LazyComputationNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LazyComputationNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MetaMStringCont](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LazyComputationNamespacedPublic.lean/declarations/metamstringcont.md) | 19 | `declaration-track:f60a4048d65e4bd904522b8594e94c9e093aa0e8a9b591cb4dc409df3380907a` |
-| 2 | `structure` | [RunnerWidgetProps](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LazyComputationNamespacedPublic.lean/declarations/runnerwidgetprops.md) | 26 | `declaration-track:3cc84a74a3b0e944e5139eb4a4dac3ee80e935c384ce6134aabb0b5a0880deed` |
-| 3 | `def` | [runMetaMStringCont](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LazyComputationNamespacedPublic.lean/declarations/runmetamstringcont.md) | 33 | `declaration-track:35f5b00e1c5c8ea22db2ee6371dbb931220c40efe62634ad89196e949dad280e` |
-| 4 | `def` | [runnerWidget](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LazyComputationNamespacedPublic.lean/declarations/runnerwidget.md) | 39 | `declaration-track:23a4adcc1988c7da0862d54dd3c3384a093d68646a2e95d640efdc6569a58d32` |
-| 5 | `syntax` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LazyComputationNamespacedPublic.lean/declarations/syntax.md) | 57 | `declaration-track:e66ac15d7d81b2c43d08f926301cb1b631647c6067470f81d60d4eb69dc37d79` |
-| 6 | `def` | [makeRunner](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LazyComputationNamespacedPublic.lean/declarations/makerunner.md) | 59 | `declaration-track:4d9d3267a227e23012b3f57f65f550d522b7d78d657f9e66d7bcf26e6337c49e` |
-| 7 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LazyComputationNamespacedPublic.lean/declarations/example.md) | 75 | `declaration-track:7bf98efd6a8182d5e1768786bff88def27b8365b8d9bbc24eeb6b4920e35a7cd` |
+| 1 | `structure` | [MetaMStringCont](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LazyComputationNamespacedPublic.lean/declarations/metamstringcont.md) | 19 | `declaration-track:f60a4048d65e4bd904522b8594e94c9e093aa0e8a9b591cb4dc409df3380907a` |
+| 2 | `structure` | [RunnerWidgetProps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LazyComputationNamespacedPublic.lean/declarations/runnerwidgetprops.md) | 26 | `declaration-track:3cc84a74a3b0e944e5139eb4a4dac3ee80e935c384ce6134aabb0b5a0880deed` |
+| 3 | `def` | [runMetaMStringCont](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LazyComputationNamespacedPublic.lean/declarations/runmetamstringcont.md) | 33 | `declaration-track:35f5b00e1c5c8ea22db2ee6371dbb931220c40efe62634ad89196e949dad280e` |
+| 4 | `def` | [runnerWidget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LazyComputationNamespacedPublic.lean/declarations/runnerwidget.md) | 39 | `declaration-track:23a4adcc1988c7da0862d54dd3c3384a093d68646a2e95d640efdc6569a58d32` |
+| 5 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LazyComputationNamespacedPublic.lean/declarations/syntax.md) | 57 | `declaration-track:e66ac15d7d81b2c43d08f926301cb1b631647c6067470f81d60d4eb69dc37d79` |
+| 6 | `def` | [makeRunner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LazyComputationNamespacedPublic.lean/declarations/makerunner.md) | 59 | `declaration-track:4d9d3267a227e23012b3f57f65f550d522b7d78d657f9e66d7bcf26e6337c49e` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LazyComputationNamespacedPublic.lean/declarations/example.md) | 75 | `declaration-track:7bf98efd6a8182d5e1768786bff88def27b8365b8d9bbc24eeb6b4920e35a7cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

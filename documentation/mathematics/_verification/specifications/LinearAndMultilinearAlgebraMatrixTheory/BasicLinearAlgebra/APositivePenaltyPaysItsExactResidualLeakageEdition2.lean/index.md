@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/APositivePenaltyPaysItsExactResidualLeakageEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/APositivePenaltyPaysItsExactResidualLeakageEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/APositivePenaltyPaysItsExactResidualLeakageEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/APositivePenaltyPaysItsExactResidualLeakageEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quadratic](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/APositivePenaltyPaysItsExactResidualLeakageEdition2.lean/declarations/quadratic.md) | 23 | `declaration-track:b5168f139881d8f2a01a4d54c2605860be993fa0551c351303d08ba607dae1b0` |
-| 2 | `theorem` | [normalized_penalty_leakage](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/APositivePenaltyPaysItsExactResidualLeakageEdition2.lean/declarations/normalized-penalty-leakage.md) | 26 | `result-track:27ddd76732bce34fd2ed9a48a93884ac313ddf35af0ebc27d8ee1e725ee1f1b9` |
-| 3 | `theorem` | [exact_annihilation_has_no_penalty](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/APositivePenaltyPaysItsExactResidualLeakageEdition2.lean/declarations/exact-annihilation-has-no-penalty.md) | 50 | `result-track:28a9d06df48a68a30bbe6516d014003adfaa4c77aa5174bee173547b3e16cd6c` |
-| 4 | `theorem` | [norm_payment_consumer](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/APositivePenaltyPaysItsExactResidualLeakageEdition2.lean/declarations/norm-payment-consumer.md) | 59 | `result-track:0eec5da70cbe4090a0a7922c3d1a306340560635b812f35fda452d931b657d6e` |
-| 5 | `theorem` | [norm_payment_is_sharp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/APositivePenaltyPaysItsExactResidualLeakageEdition2.lean/declarations/norm-payment-is-sharp.md) | 65 | `result-track:fb8a67930548ae6244be7c923c858ab126f40fb2fc4c9b297679cc1f643dea55` |
+| 1 | `def` | [quadratic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/APositivePenaltyPaysItsExactResidualLeakageEdition2.lean/declarations/quadratic.md) | 23 | `declaration-track:b5168f139881d8f2a01a4d54c2605860be993fa0551c351303d08ba607dae1b0` |
+| 2 | `theorem` | [normalized_penalty_leakage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/APositivePenaltyPaysItsExactResidualLeakageEdition2.lean/declarations/normalized-penalty-leakage.md) | 26 | `result-track:27ddd76732bce34fd2ed9a48a93884ac313ddf35af0ebc27d8ee1e725ee1f1b9` |
+| 3 | `theorem` | [exact_annihilation_has_no_penalty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/APositivePenaltyPaysItsExactResidualLeakageEdition2.lean/declarations/exact-annihilation-has-no-penalty.md) | 50 | `result-track:28a9d06df48a68a30bbe6516d014003adfaa4c77aa5174bee173547b3e16cd6c` |
+| 4 | `theorem` | [norm_payment_consumer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/APositivePenaltyPaysItsExactResidualLeakageEdition2.lean/declarations/norm-payment-consumer.md) | 59 | `result-track:0eec5da70cbe4090a0a7922c3d1a306340560635b812f35fda452d931b657d6e` |
+| 5 | `theorem` | [norm_payment_is_sharp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/APositivePenaltyPaysItsExactResidualLeakageEdition2.lean/declarations/norm-payment-is-sharp.md) | 65 | `result-track:fb8a67930548ae6244be7c923c858ab126f40fb2fc4c9b297679cc1f643dea55` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

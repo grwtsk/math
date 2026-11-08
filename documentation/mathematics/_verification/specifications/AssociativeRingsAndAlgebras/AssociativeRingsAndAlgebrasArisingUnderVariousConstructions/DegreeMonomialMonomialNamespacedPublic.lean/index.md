@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DegreeMonomialMonomialNamespacedPublic.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DegreeMonomialMonomialNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DegreeMonomialMonomialNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DegreeMonomialMonomialNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [natDegree_le_pred](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DegreeMonomialMonomialNamespacedPublic.lean/declarations/natdegree-le-pred.md) | 40 | `result-track:50c8d4cbaf0783ef9043e295afdd40fd690cd573b5fd616a15c2094b256ee123` |
-| 2 | `theorem` | [monomial_natDegree_leadingCoeff_eq_self](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DegreeMonomialMonomialNamespacedPublic.lean/declarations/monomial-natdegree-leadingcoeff-eq-self.md) | 47 | `result-track:a598f4a2d185e766b9894721190c653225e0ed18ea78f5e707f1baa5cc61f6d0` |
-| 3 | `theorem` | [C_mul_X_pow_eq_self](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DegreeMonomialMonomialNamespacedPublic.lean/declarations/c-mul-x-pow-eq-self.md) | 53 | `result-track:28b7741f31a058dca48ede4a83633c9918300d411319901f91ca9c7c937705f5` |
+| 1 | `lemma` | [natDegree_le_pred](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DegreeMonomialMonomialNamespacedPublic.lean/declarations/natdegree-le-pred.md) | 40 | `result-track:50c8d4cbaf0783ef9043e295afdd40fd690cd573b5fd616a15c2094b256ee123` |
+| 2 | `theorem` | [monomial_natDegree_leadingCoeff_eq_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DegreeMonomialMonomialNamespacedPublic.lean/declarations/monomial-natdegree-leadingcoeff-eq-self.md) | 47 | `result-track:a598f4a2d185e766b9894721190c653225e0ed18ea78f5e707f1baa5cc61f6d0` |
+| 3 | `theorem` | [C_mul_X_pow_eq_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DegreeMonomialMonomialNamespacedPublic.lean/declarations/c-mul-x-pow-eq-self.md) | 53 | `result-track:28b7741f31a058dca48ede4a83633c9918300d411319901f91ca9c7c937705f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

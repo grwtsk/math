@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/EllipticCurvePublic.lean/index.md) · [Full source](../../../../NumberTheory/EllipticCurvePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurvePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurvePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Point.naiveHeight](../../../../NumberTheory/EllipticCurvePublic.lean/declarations/point-naiveheight.md) | 38 | `declaration-track:0ac21fc5f66e935dcc7c465058a5800b85d0c910c60c60bd245bfbfaa9bd5f13` |
-| 2 | `lemma` | [Point.naiveHeight_eq_logHeight](../../../../NumberTheory/EllipticCurvePublic.lean/declarations/point-naiveheight-eq-logheight.md) | 41 | `result-track:55312809ae6782a4688349f06da03ea2b50f8ba244d7b0c195365f099154b485` |
-| 3 | `lemma` | [Point.naiveHeight_eq_logHeight₁](../../../../NumberTheory/EllipticCurvePublic.lean/declarations/point-naiveheight-eq-logheight-source-edition-2.md) | 44 | `result-track:e01a076f69b386b55008f093fc249bc5a8dd94a0293a45f2a5c0fbd3c59720b6` |
-| 4 | `lemma` | [abs_logHeight_sym2x_sub_le](../../../../NumberTheory/EllipticCurvePublic.lean/declarations/abs-logheight-sym2x-sub-le.md) | 52 | `result-track:f1cd1db72762da9eca9b67fe24f544ace8b72f63d2aba4cc0d671d0f009049c7` |
-| 5 | `theorem` | [abs_logHeight_addSubMap_sub_two_mul_logHeight_le](../../../../NumberTheory/EllipticCurvePublic.lean/declarations/abs-logheight-addsubmap-sub-two-mul-logheight-le.md) | 71 | `result-track:5f07098589332e78af269b91befbc5ea92839aa7459df437eec3e8f753f3bbf7` |
-| 6 | `theorem` | [approx_parallelogram_law](../../../../NumberTheory/EllipticCurvePublic.lean/declarations/approx-parallelogram-law.md) | 81 | `result-track:02146844468496414f985f644c40c8f8e316d9082335066604608f45fe41144e` |
-| 7 | `instance` | [(anonymous)](../../../../NumberTheory/EllipticCurvePublic.lean/declarations/instance.md) | 104 | `declaration-track:898bdacc379e1476332af83342e82ef8def6c30ba2dce2f13d519f23178cff21` |
-| 8 | `lemma` | [finite_naiveHeight_le](../../../../NumberTheory/EllipticCurvePublic.lean/declarations/finite-naiveheight-le.md) | 117 | `result-track:96b44fd2403030fa0ad57b6a392f0e5a691630f32f7891a81a4f244d2d3a20db` |
-| 9 | `theorem` | [finite_torsion](../../../../NumberTheory/EllipticCurvePublic.lean/declarations/finite-torsion.md) | 124 | `result-track:7af398438b7a198508f4d7fa4a9573c97eb7d6cec16af61cb886227f00570564` |
+| 1 | `def` | [Point.naiveHeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurvePublic.lean/declarations/point-naiveheight.md) | 38 | `declaration-track:0ac21fc5f66e935dcc7c465058a5800b85d0c910c60c60bd245bfbfaa9bd5f13` |
+| 2 | `lemma` | [Point.naiveHeight_eq_logHeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurvePublic.lean/declarations/point-naiveheight-eq-logheight.md) | 41 | `result-track:55312809ae6782a4688349f06da03ea2b50f8ba244d7b0c195365f099154b485` |
+| 3 | `lemma` | [Point.naiveHeight_eq_logHeight₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurvePublic.lean/declarations/point-naiveheight-eq-logheight-source-edition-2.md) | 44 | `result-track:e01a076f69b386b55008f093fc249bc5a8dd94a0293a45f2a5c0fbd3c59720b6` |
+| 4 | `lemma` | [abs_logHeight_sym2x_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurvePublic.lean/declarations/abs-logheight-sym2x-sub-le.md) | 52 | `result-track:f1cd1db72762da9eca9b67fe24f544ace8b72f63d2aba4cc0d671d0f009049c7` |
+| 5 | `theorem` | [abs_logHeight_addSubMap_sub_two_mul_logHeight_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurvePublic.lean/declarations/abs-logheight-addsubmap-sub-two-mul-logheight-le.md) | 71 | `result-track:5f07098589332e78af269b91befbc5ea92839aa7459df437eec3e8f753f3bbf7` |
+| 6 | `theorem` | [approx_parallelogram_law](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurvePublic.lean/declarations/approx-parallelogram-law.md) | 81 | `result-track:02146844468496414f985f644c40c8f8e316d9082335066604608f45fe41144e` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurvePublic.lean/declarations/instance.md) | 104 | `declaration-track:898bdacc379e1476332af83342e82ef8def6c30ba2dce2f13d519f23178cff21` |
+| 8 | `lemma` | [finite_naiveHeight_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurvePublic.lean/declarations/finite-naiveheight-le.md) | 117 | `result-track:96b44fd2403030fa0ad57b6a392f0e5a691630f32f7891a81a4f244d2d3a20db` |
+| 9 | `theorem` | [finite_torsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurvePublic.lean/declarations/finite-torsion.md) | 124 | `result-track:7af398438b7a198508f4d7fa4a9573c97eb7d6cec16af61cb886227f00570564` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

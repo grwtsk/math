@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ExactCompensation.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ExactCompensation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ExactCompensation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ExactCompensation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ExactTraceCompensation](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ExactCompensation.lean/declarations/exacttracecompensation.md) | 13 | `declaration-track:a19b55d361c31c824f9deed90c048d23dca03ed84ad26fc36a184e037064b2c7` |
-| 2 | `theorem` | [packetEnergy_invariant_of_exactCompensation](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ExactCompensation.lean/declarations/packetenergy-invariant-of-exactcompensation.md) | 28 | `result-track:dd18c25e849aa62ed4464c074cae97ee60efa4ec4f9be2acaceb23b41eabce12` |
+| 1 | `structure` | [ExactTraceCompensation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ExactCompensation.lean/declarations/exacttracecompensation.md) | 13 | `declaration-track:a19b55d361c31c824f9deed90c048d23dca03ed84ad26fc36a184e037064b2c7` |
+| 2 | `theorem` | [packetEnergy_invariant_of_exactCompensation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ExactCompensation.lean/declarations/packetenergy-invariant-of-exactcompensation.md) | 28 | `result-track:dd18c25e849aa62ed4464c074cae97ee60efa4ec4f9be2acaceb23b41eabce12` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

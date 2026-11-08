@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CompactWeightedDerivativeMoments.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CompactWeightedDerivativeMoments.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactWeightedDerivativeMoments.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactWeightedDerivativeMoments.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,12 +61,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [compact_weight_integrable](../../../../MeasureAndIntegration/CompactWeightedDerivativeMoments.lean/declarations/compact-weight-integrable.md) | 27 | `result-track:c50b1287d36b54f47fee37dd153812c9accae8ebbe5bb5dcf3e706b9493695d9` |
-| 2 | `theorem` | [weighted_deriv_integral](../../../../MeasureAndIntegration/CompactWeightedDerivativeMoments.lean/declarations/weighted-deriv-integral.md) | 32 | `result-track:a287a16d2f9dd64987c4620f75513a995c5be79fe0dca3ee43d3feb8d964960d` |
-| 3 | `theorem` | [first_weighted_deriv_integral](../../../../MeasureAndIntegration/CompactWeightedDerivativeMoments.lean/declarations/first-weighted-deriv-integral.md) | 53 | `result-track:6a0307a756178508c917d5d0b00213da65eb82b074bb60e516126de63d6753ee` |
-| 4 | `theorem` | [weighted_second_deriv_integral](../../../../MeasureAndIntegration/CompactWeightedDerivativeMoments.lean/declarations/weighted-second-deriv-integral.md) | 101 | `result-track:0bccb21bdd2945d24da8cee7680c404dd0ee64ffe36ceae544457d342b20ccd2` |
-| 5 | `theorem` | [first_weighted_second_deriv_integral](../../../../MeasureAndIntegration/CompactWeightedDerivativeMoments.lean/declarations/first-weighted-second-deriv-integral.md) | 112 | `result-track:98fb61d11922310a36ef7e69d07fa07313e762125a7212a28341c7e7096e66de` |
-| 6 | `theorem` | [differential_moments_zero](../../../../MeasureAndIntegration/CompactWeightedDerivativeMoments.lean/declarations/differential-moments-zero.md) | 124 | `result-track:a58390bcc0db328e0b40be0473b6521296858374633ab59346e964d142718f99` |
+| 1 | `theorem` | [compact_weight_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactWeightedDerivativeMoments.lean/declarations/compact-weight-integrable.md) | 27 | `result-track:c50b1287d36b54f47fee37dd153812c9accae8ebbe5bb5dcf3e706b9493695d9` |
+| 2 | `theorem` | [weighted_deriv_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactWeightedDerivativeMoments.lean/declarations/weighted-deriv-integral.md) | 32 | `result-track:a287a16d2f9dd64987c4620f75513a995c5be79fe0dca3ee43d3feb8d964960d` |
+| 3 | `theorem` | [first_weighted_deriv_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactWeightedDerivativeMoments.lean/declarations/first-weighted-deriv-integral.md) | 53 | `result-track:6a0307a756178508c917d5d0b00213da65eb82b074bb60e516126de63d6753ee` |
+| 4 | `theorem` | [weighted_second_deriv_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactWeightedDerivativeMoments.lean/declarations/weighted-second-deriv-integral.md) | 101 | `result-track:0bccb21bdd2945d24da8cee7680c404dd0ee64ffe36ceae544457d342b20ccd2` |
+| 5 | `theorem` | [first_weighted_second_deriv_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactWeightedDerivativeMoments.lean/declarations/first-weighted-second-deriv-integral.md) | 112 | `result-track:98fb61d11922310a36ef7e69d07fa07313e762125a7212a28341c7e7096e66de` |
+| 6 | `theorem` | [differential_moments_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactWeightedDerivativeMoments.lean/declarations/differential-moments-zero.md) | 124 | `result-track:a58390bcc0db328e0b40be0473b6521296858374633ab59346e964d142718f99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

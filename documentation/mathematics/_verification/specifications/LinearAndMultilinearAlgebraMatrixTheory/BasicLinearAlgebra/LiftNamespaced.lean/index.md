@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LiftNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LiftNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LiftNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LiftNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [liftOr](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LiftNamespaced.lean/declarations/liftor.md) | 30 | `declaration-track:860295e2b8cae6956efc7095ea3ce0c11a5a029b623d043dbae60820d0c1cdc1` |
-| 2 | `theorem` | [liftOr_encode](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LiftNamespaced.lean/declarations/liftor-encode.md) | 42 | `result-track:f9ad0e0ab860b26424fc774776791380c981425f47f9fbf6b161f938a97cd9d9` |
-| 3 | `def` | [lift](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LiftNamespaced.lean/declarations/lift.md) | 54 | `declaration-track:267917dbfd04366b922d80f90ceadf76283e6a8a5ee603238e8c71863833d3e4` |
-| 4 | `theorem` | [lift_encode](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LiftNamespaced.lean/declarations/lift-encode.md) | 62 | `result-track:7dbe63a632b2377c76868f776927da915979151684cdf21d179f56ec1bf582c8` |
-| 5 | `def` | [typedLift](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LiftNamespaced.lean/declarations/typedlift.md) | 73 | `declaration-track:929877862611a24558e0ace7301e3c2faaefc80b3d33788e98c07bfc2c338572` |
+| 1 | `def` | [liftOr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LiftNamespaced.lean/declarations/liftor.md) | 30 | `declaration-track:860295e2b8cae6956efc7095ea3ce0c11a5a029b623d043dbae60820d0c1cdc1` |
+| 2 | `theorem` | [liftOr_encode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LiftNamespaced.lean/declarations/liftor-encode.md) | 42 | `result-track:f9ad0e0ab860b26424fc774776791380c981425f47f9fbf6b161f938a97cd9d9` |
+| 3 | `def` | [lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LiftNamespaced.lean/declarations/lift.md) | 54 | `declaration-track:267917dbfd04366b922d80f90ceadf76283e6a8a5ee603238e8c71863833d3e4` |
+| 4 | `theorem` | [lift_encode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LiftNamespaced.lean/declarations/lift-encode.md) | 62 | `result-track:7dbe63a632b2377c76868f776927da915979151684cdf21d179f56ec1bf582c8` |
+| 5 | `def` | [typedLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LiftNamespaced.lean/declarations/typedlift.md) | 73 | `declaration-track:929877862611a24558e0ace7301e3c2faaefc80b3d33788e98c07bfc2c338572` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

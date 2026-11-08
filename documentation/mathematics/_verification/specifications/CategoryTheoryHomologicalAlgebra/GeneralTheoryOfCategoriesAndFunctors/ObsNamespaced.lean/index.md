@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Obs](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/declarations/obs.md) | 33 | `declaration-track:50d24dc077399a3e89f905aebda1b60d8235e90e1f6091030b763eecd2995c4d` |
-| 2 | `inductive` | [Generator](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/declarations/generator.md) | 46 | `declaration-track:7e3f2d808cb9e275f746d6fb642dccd51f031df43d12b7290fee70b09ab16248` |
-| 3 | `inductive` | [Path](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/declarations/path.md) | 55 | `declaration-track:f8fc2349d622138d37fa008f8284cbec9cd8585508e3526e39cc05ed6bfc5ea5` |
-| 4 | `def` | [append](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/declarations/append.md) | 61 | `declaration-track:cc752692ee449f4656e79c0d6e405b0188b4f5511be37147bf7f4484f69db3fa` |
-| 5 | `theorem` | [nil_append](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/declarations/nil-append.md) | 66 | `result-track:f97a6c0bd72f3027c9e0643eaf81675027f68d454b2e30fdab3913ce3f498fbf` |
-| 6 | `theorem` | [append_nil](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/declarations/append-nil.md) | 71 | `result-track:0652dc58921281d0e621a9ad8734ddbf6cb40c8cc3853c5b901cbc58fc10a3d3` |
-| 7 | `theorem` | [append_assoc](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/declarations/append-assoc.md) | 79 | `result-track:473bc9ed9555a5b572a8e90affa23c53ce510eb9c81a38fcebd91f9e51dd9054` |
-| 8 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/declarations/instance.md) | 89 | `declaration-track:9af89f015acd1da5cd8480840846d407bb005bce2679bf403cfa3b9ff090b192` |
+| 1 | `inductive` | [Obs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/declarations/obs.md) | 33 | `declaration-track:50d24dc077399a3e89f905aebda1b60d8235e90e1f6091030b763eecd2995c4d` |
+| 2 | `inductive` | [Generator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/declarations/generator.md) | 46 | `declaration-track:7e3f2d808cb9e275f746d6fb642dccd51f031df43d12b7290fee70b09ab16248` |
+| 3 | `inductive` | [Path](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/declarations/path.md) | 55 | `declaration-track:f8fc2349d622138d37fa008f8284cbec9cd8585508e3526e39cc05ed6bfc5ea5` |
+| 4 | `def` | [append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/declarations/append.md) | 61 | `declaration-track:cc752692ee449f4656e79c0d6e405b0188b4f5511be37147bf7f4484f69db3fa` |
+| 5 | `theorem` | [nil_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/declarations/nil-append.md) | 66 | `result-track:f97a6c0bd72f3027c9e0643eaf81675027f68d454b2e30fdab3913ce3f498fbf` |
+| 6 | `theorem` | [append_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/declarations/append-nil.md) | 71 | `result-track:0652dc58921281d0e621a9ad8734ddbf6cb40c8cc3853c5b901cbc58fc10a3d3` |
+| 7 | `theorem` | [append_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/declarations/append-assoc.md) | 79 | `result-track:473bc9ed9555a5b572a8e90affa23c53ce510eb9c81a38fcebd91f9e51dd9054` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObsNamespaced.lean/declarations/instance.md) | 89 | `declaration-track:9af89f015acd1da5cd8480840846d407bb005bce2679bf403cfa3b9ff090b192` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

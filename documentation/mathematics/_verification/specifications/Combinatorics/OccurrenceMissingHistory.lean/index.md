@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/OccurrenceMissingHistory.lean/index.md) · [Full source](../../../../Combinatorics/OccurrenceMissingHistory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OccurrenceMissingHistory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OccurrenceMissingHistory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.Checks.Positive.OccurrencePrefix`](../../../../Combinatorics/GraphTheory/PositiveOccurrencePrefixHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.Checks.Positive.OccurrencePrefix`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PositiveOccurrencePrefixHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Combinatorics/OccurrenceMissingHistory.lean/declarations/example.md) | 13 | `declaration-track:e351bfa373f4d203fa9a3fa1cf5cd282a5511999ad03b3a775984d01c8c99f83` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OccurrenceMissingHistory.lean/declarations/example.md) | 13 | `declaration-track:e351bfa373f4d203fa9a3fa1cf5cd282a5511999ad03b3a775984d01c8c99f83` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

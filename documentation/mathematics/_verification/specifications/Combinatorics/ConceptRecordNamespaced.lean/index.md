@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ConceptRecordNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ConceptRecordNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptRecordNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptRecordNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,12 +61,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Record](../../../../Combinatorics/ConceptRecordNamespaced.lean/declarations/record.md) | 21 | `declaration-track:67dd89c2729b454af04cc4f1f2dd9d2e8258fc8ed1a506a5b1212c66268edb81` |
-| 2 | `def` | [SameIdentity](../../../../Combinatorics/ConceptRecordNamespaced.lean/declarations/sameidentity.md) | 42 | `declaration-track:210acbfabd87be54aba83c358ff598bc7df4c315359f65dcb02ce59928c455ba` |
-| 3 | `instance` | [(anonymous)](../../../../Combinatorics/ConceptRecordNamespaced.lean/declarations/instance.md) | 44 | `declaration-track:d32f58dda8d39e9bcd2223788c630507412152d87cb6965c4694ceac1bd42069` |
-| 4 | `def` | [AcceptsEntity](../../../../Combinatorics/ConceptRecordNamespaced.lean/declarations/acceptsentity.md) | 48 | `declaration-track:a37d0c38562b300ace11e3435957fd34130f9f6bbc393bef19c4cedea009faec` |
-| 5 | `theorem` | [sameIdentity_of_id_eq](../../../../Combinatorics/ConceptRecordNamespaced.lean/declarations/sameidentity-of-id-eq.md) | 52 | `result-track:ff4158418b6ad20cfcd2936843fc937251923cfd210fb1e3fe55421339c6b3db` |
-| 6 | `def` | [SameName](../../../../Combinatorics/ConceptRecordNamespaced.lean/declarations/samename.md) | 57 | `declaration-track:d7a1d5613db882f6f22acc896e9c077eedd7368ee548366fc47634f8c83666b3` |
+| 1 | `structure` | [Record](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptRecordNamespaced.lean/declarations/record.md) | 21 | `declaration-track:67dd89c2729b454af04cc4f1f2dd9d2e8258fc8ed1a506a5b1212c66268edb81` |
+| 2 | `def` | [SameIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptRecordNamespaced.lean/declarations/sameidentity.md) | 42 | `declaration-track:210acbfabd87be54aba83c358ff598bc7df4c315359f65dcb02ce59928c455ba` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptRecordNamespaced.lean/declarations/instance.md) | 44 | `declaration-track:d32f58dda8d39e9bcd2223788c630507412152d87cb6965c4694ceac1bd42069` |
+| 4 | `def` | [AcceptsEntity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptRecordNamespaced.lean/declarations/acceptsentity.md) | 48 | `declaration-track:a37d0c38562b300ace11e3435957fd34130f9f6bbc393bef19c4cedea009faec` |
+| 5 | `theorem` | [sameIdentity_of_id_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptRecordNamespaced.lean/declarations/sameidentity-of-id-eq.md) | 52 | `result-track:ff4158418b6ad20cfcd2936843fc937251923cfd210fb1e3fe55421339c6b3db` |
+| 6 | `def` | [SameName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptRecordNamespaced.lean/declarations/samename.md) | 57 | `declaration-track:d7a1d5613db882f6f22acc896e9c077eedd7368ee548366fc47634f8c83666b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

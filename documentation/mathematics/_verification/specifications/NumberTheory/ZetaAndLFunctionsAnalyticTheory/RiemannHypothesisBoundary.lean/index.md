@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannHypothesisBoundary.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannHypothesisBoundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannHypothesisBoundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannHypothesisBoundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [conditional_grh_via_spectral_heat_contract](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannHypothesisBoundary.lean/declarations/conditional-grh-via-spectral-heat-contract.md) | 20 | `result-track:692a9b8fcbf353efba3aa83463819ea8a9ca05f69ddd73258e3391c5b83f826e` |
-| 2 | `theorem` | [grh_contract_has_analytic_continuation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannHypothesisBoundary.lean/declarations/grh-contract-has-analytic-continuation.md) | 25 | `result-track:e96d01718fbb9886016fda4df1379a7980bd03de222ca0b0bc072ca1d9388385` |
-| 3 | `theorem` | [grh_contract_has_functional_equation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannHypothesisBoundary.lean/declarations/grh-contract-has-functional-equation.md) | 30 | `result-track:7cf63c61390e8fda7b59efd54f5cf384640c9736060071a1b46dcd84110218bf` |
+| 1 | `theorem` | [conditional_grh_via_spectral_heat_contract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannHypothesisBoundary.lean/declarations/conditional-grh-via-spectral-heat-contract.md) | 20 | `result-track:692a9b8fcbf353efba3aa83463819ea8a9ca05f69ddd73258e3391c5b83f826e` |
+| 2 | `theorem` | [grh_contract_has_analytic_continuation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannHypothesisBoundary.lean/declarations/grh-contract-has-analytic-continuation.md) | 25 | `result-track:e96d01718fbb9886016fda4df1379a7980bd03de222ca0b0bc072ca1d9388385` |
+| 3 | `theorem` | [grh_contract_has_functional_equation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannHypothesisBoundary.lean/declarations/grh-contract-has-functional-equation.md) | 30 | `result-track:7cf63c61390e8fda7b59efd54f5cf384640c9736060071a1b46dcd84110218bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

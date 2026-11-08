@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Lifecycle.lean/index.md) · [Full source](../../../../Combinatorics/Lifecycle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Lifecycle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Lifecycle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Lifecycle](../../../../Combinatorics/Lifecycle.lean/declarations/lifecycle.md) | 9 | `declaration-track:49203a1d67159d1890ca1bf22e1c40c757bdf734e4ba1375f63155555fee2199` |
+| 1 | `inductive` | [Lifecycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Lifecycle.lean/declarations/lifecycle.md) | 9 | `declaration-track:49203a1d67159d1890ca1bf22e1c40c757bdf734e4ba1375f63155555fee2199` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

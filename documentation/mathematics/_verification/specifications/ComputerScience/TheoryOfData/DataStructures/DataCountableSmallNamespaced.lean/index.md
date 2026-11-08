@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataCountableSmallNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataCountableSmallNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataCountableSmallNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataCountableSmallNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataCountableSmallNamespaced.lean/declarations/instance.md) | 25 | `declaration-track:9dfa8ff1548ad4f8d985cbd5ff7d2797a947f12e0f04eb7500eae6191457cb9b` |
-| 2 | `theorem` | [Uncountable.of_not_small](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataCountableSmallNamespaced.lean/declarations/uncountable-of-not-small.md) | 29 | `result-track:eae17d973414dff926ac401c9edee60fe9b4ba221b76333386c643c0cfefa6e3` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataCountableSmallNamespaced.lean/declarations/instance.md) | 25 | `declaration-track:9dfa8ff1548ad4f8d985cbd5ff7d2797a947f12e0f04eb7500eae6191457cb9b` |
+| 2 | `theorem` | [Uncountable.of_not_small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataCountableSmallNamespaced.lean/declarations/uncountable-of-not-small.md) | 29 | `result-track:eae17d973414dff926ac401c9edee60fe9b4ba221b76333386c643c0cfefa6e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/HomologyZeroPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/HomologyZeroPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomologyZeroPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomologyZeroPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [π₀.fromChainComplexXZero](../../../../AlgebraicTopology/HomologyZeroPublic.lean/declarations/fromchaincomplexxzero.md) | 38 | `declaration-track:22b2d4bcd9c1d5607c4bb3a39454e40630813acd3d6ea6bd8e4357610ad1901f` |
-| 2 | `lemma` | [π₀.comp_fromChainComplexXZero](../../../../AlgebraicTopology/HomologyZeroPublic.lean/declarations/comp-fromchaincomplexxzero.md) | 43 | `result-track:68ba58bc5509c34e55ab3c8c1e833637887e7a87bab7c8690280fb026fe57405` |
-| 3 | `lemma` | [π₀.d_fromChainComplexXZero](../../../../AlgebraicTopology/HomologyZeroPublic.lean/declarations/d-fromchaincomplexxzero.md) | 49 | `result-track:6331aa4b60a0f868794be0ae06422f9178dee456772ea95a5079a2092a47e06e` |
-| 4 | `def` | [isColimitCokernelCoforkChainComplexDOneZero](../../../../AlgebraicTopology/HomologyZeroPublic.lean/declarations/iscolimitcokernelcoforkchaincomplexdonezero.md) | 61 | `declaration-track:6f9f3b25d9a2f854ff3b54b5f485bc0c6baa1bdc4f18048b7bf3919c2491bdb2` |
-| 5 | `def` | [homologyData₀](../../../../AlgebraicTopology/HomologyZeroPublic.lean/declarations/homologydata.md) | 77 | `declaration-track:a8f6f951f0631ea3fe37bdef79378da087f4aeff33ed6eab18752fb68abc4f71` |
-| 6 | `lemma` | [homologyData₀_left_π](../../../../AlgebraicTopology/HomologyZeroPublic.lean/declarations/homologydata-left.md) | 84 | `result-track:7730bdc848fd6c7e470b0d1b3612812ed8dafb7c8b9601c59a97fbce53675e4f` |
-| 7 | `lemma` | [homologyData₀_left_i](../../../../AlgebraicTopology/HomologyZeroPublic.lean/declarations/homologydata-left-i.md) | 89 | `result-track:5fa8013c8efc8db362d2b2faef736a94e4ecd05cc7adf1a7de5a5bc1dc1ceb04` |
-| 8 | `lemma` | [homologyData₀_left_liftK](../../../../AlgebraicTopology/HomologyZeroPublic.lean/declarations/homologydata-left-liftk.md) | 94 | `result-track:5677d06feed8ea93dbda877f07e151b0484c37ad3a234d78f455a7ca71ee6705` |
-| 9 | `def` | [homology₀Iso](../../../../AlgebraicTopology/HomologyZeroPublic.lean/declarations/homology-iso.md) | 102 | `declaration-track:a858481b37ab968bdf30334eb64f1e23d89a6b1a78e6c5cbb6ea84f405613816` |
-| 10 | `lemma` | [liftCycles_ιChainComplex_homologyπ_homology₀Iso_hom](../../../../AlgebraicTopology/HomologyZeroPublic.lean/declarations/liftcycles-chaincomplex-homology-homology-iso-hom.md) | 110 | `result-track:5888f51c9a32cec292d82d94609dd7cf232cbb2e43eddfad95ce60e6647b5dbb` |
-| 11 | `def` | [homology₀ε](../../../../AlgebraicTopology/HomologyZeroPublic.lean/declarations/homology.md) | 118 | `declaration-track:6dcf9dd858cf7eb8ee12b7ef0a0cc111bd4ad1c6e1c8fcfc2de379862df3cccc` |
-| 12 | `lemma` | [liftCycles_ιChainComplex_homologyπ_homology₀ε](../../../../AlgebraicTopology/HomologyZeroPublic.lean/declarations/liftcycles-chaincomplex-homology-homology.md) | 122 | `result-track:1fe74c5573bf973dd08da9e85122541fd36f1bd1ea298ac924a0b6072c1d41e5` |
-| 13 | `instance` | [(anonymous)](../../../../AlgebraicTopology/HomologyZeroPublic.lean/declarations/instance.md) | 127 | `declaration-track:92733b38632994055ff85a08962caf6ee7d6dfa6c430cd4f256b44392ee8110a` |
+| 1 | `def` | [π₀.fromChainComplexXZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomologyZeroPublic.lean/declarations/fromchaincomplexxzero.md) | 38 | `declaration-track:22b2d4bcd9c1d5607c4bb3a39454e40630813acd3d6ea6bd8e4357610ad1901f` |
+| 2 | `lemma` | [π₀.comp_fromChainComplexXZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomologyZeroPublic.lean/declarations/comp-fromchaincomplexxzero.md) | 43 | `result-track:68ba58bc5509c34e55ab3c8c1e833637887e7a87bab7c8690280fb026fe57405` |
+| 3 | `lemma` | [π₀.d_fromChainComplexXZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomologyZeroPublic.lean/declarations/d-fromchaincomplexxzero.md) | 49 | `result-track:6331aa4b60a0f868794be0ae06422f9178dee456772ea95a5079a2092a47e06e` |
+| 4 | `def` | [isColimitCokernelCoforkChainComplexDOneZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomologyZeroPublic.lean/declarations/iscolimitcokernelcoforkchaincomplexdonezero.md) | 61 | `declaration-track:6f9f3b25d9a2f854ff3b54b5f485bc0c6baa1bdc4f18048b7bf3919c2491bdb2` |
+| 5 | `def` | [homologyData₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomologyZeroPublic.lean/declarations/homologydata.md) | 77 | `declaration-track:a8f6f951f0631ea3fe37bdef79378da087f4aeff33ed6eab18752fb68abc4f71` |
+| 6 | `lemma` | [homologyData₀_left_π](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomologyZeroPublic.lean/declarations/homologydata-left.md) | 84 | `result-track:7730bdc848fd6c7e470b0d1b3612812ed8dafb7c8b9601c59a97fbce53675e4f` |
+| 7 | `lemma` | [homologyData₀_left_i](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomologyZeroPublic.lean/declarations/homologydata-left-i.md) | 89 | `result-track:5fa8013c8efc8db362d2b2faef736a94e4ecd05cc7adf1a7de5a5bc1dc1ceb04` |
+| 8 | `lemma` | [homologyData₀_left_liftK](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomologyZeroPublic.lean/declarations/homologydata-left-liftk.md) | 94 | `result-track:5677d06feed8ea93dbda877f07e151b0484c37ad3a234d78f455a7ca71ee6705` |
+| 9 | `def` | [homology₀Iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomologyZeroPublic.lean/declarations/homology-iso.md) | 102 | `declaration-track:a858481b37ab968bdf30334eb64f1e23d89a6b1a78e6c5cbb6ea84f405613816` |
+| 10 | `lemma` | [liftCycles_ιChainComplex_homologyπ_homology₀Iso_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomologyZeroPublic.lean/declarations/liftcycles-chaincomplex-homology-homology-iso-hom.md) | 110 | `result-track:5888f51c9a32cec292d82d94609dd7cf232cbb2e43eddfad95ce60e6647b5dbb` |
+| 11 | `def` | [homology₀ε](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomologyZeroPublic.lean/declarations/homology.md) | 118 | `declaration-track:6dcf9dd858cf7eb8ee12b7ef0a0cc111bd4ad1c6e1c8fcfc2de379862df3cccc` |
+| 12 | `lemma` | [liftCycles_ιChainComplex_homologyπ_homology₀ε](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomologyZeroPublic.lean/declarations/liftcycles-chaincomplex-homology-homology.md) | 122 | `result-track:1fe74c5573bf973dd08da9e85122541fd36f1bd1ea298ac924a0b6072c1d41e5` |
+| 13 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomologyZeroPublic.lean/declarations/instance.md) | 127 | `declaration-track:92733b38632994055ff85a08962caf6ee7d6dfa6c430cd4f256b44392ee8110a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

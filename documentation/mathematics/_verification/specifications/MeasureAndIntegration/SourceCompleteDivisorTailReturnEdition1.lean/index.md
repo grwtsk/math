@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceCompleteDivisorTailReturnEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceCompleteDivisorTailReturnEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteDivisorTailReturnEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteDivisorTailReturnEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [completeXiHead](../../../../MeasureAndIntegration/SourceCompleteDivisorTailReturnEdition1.lean/declarations/completexihead.md) | 25 | `declaration-track:81b629f8d0221d4387dfd5e8fb575c5df2912aa8d3aacdde24a1d72f0252a557` |
-| 2 | `theorem` | [remaining_work_eq_gamma_head_tail](../../../../MeasureAndIntegration/SourceCompleteDivisorTailReturnEdition1.lean/declarations/remaining-work-eq-gamma-head-tail.md) | 27 | `result-track:82665f80e83ea1caea084d7d6fe5de7235f09b7e12364911f9ee07761df43f2d` |
-| 3 | `theorem` | [complete_tail_eq_residual_corrections](../../../../MeasureAndIntegration/SourceCompleteDivisorTailReturnEdition1.lean/declarations/complete-tail-eq-residual-corrections.md) | 55 | `result-track:ff44a487f130db41770e509f3b26793c9ef4bdffe34df0fa46a7ed1377a21c89` |
-| 4 | `theorem` | [residual_upper_implies_complete_tail_lower](../../../../MeasureAndIntegration/SourceCompleteDivisorTailReturnEdition1.lean/declarations/residual-upper-implies-complete-tail-lower.md) | 66 | `result-track:a65a01133662ef11afa3372f96878c1b352fc8c828da2f8b61e156f40fd4db79` |
+| 1 | `def` | [completeXiHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteDivisorTailReturnEdition1.lean/declarations/completexihead.md) | 25 | `declaration-track:81b629f8d0221d4387dfd5e8fb575c5df2912aa8d3aacdde24a1d72f0252a557` |
+| 2 | `theorem` | [remaining_work_eq_gamma_head_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteDivisorTailReturnEdition1.lean/declarations/remaining-work-eq-gamma-head-tail.md) | 27 | `result-track:82665f80e83ea1caea084d7d6fe5de7235f09b7e12364911f9ee07761df43f2d` |
+| 3 | `theorem` | [complete_tail_eq_residual_corrections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteDivisorTailReturnEdition1.lean/declarations/complete-tail-eq-residual-corrections.md) | 55 | `result-track:ff44a487f130db41770e509f3b26793c9ef4bdffe34df0fa46a7ed1377a21c89` |
+| 4 | `theorem` | [residual_upper_implies_complete_tail_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteDivisorTailReturnEdition1.lean/declarations/residual-upper-implies-complete-tail-lower.md) | 66 | `result-track:a65a01133662ef11afa3372f96878c1b352fc8c828da2f8b61e156f40fd4db79` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

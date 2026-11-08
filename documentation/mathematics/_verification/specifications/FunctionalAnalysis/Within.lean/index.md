@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/Within.lean/index.md) · [Full source](../../../../FunctionalAnalysis/Within.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Within.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Within.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [analyticWithinAt_of_singleton_mem](../../../../FunctionalAnalysis/Within.lean/declarations/analyticwithinat-of-singleton-mem.md) | 40 | `result-track:5ad90ed389d3d365222a59d4646c8c227f0d117a30f0e748a78737cfe45408a6` |
-| 2 | `lemma` | [analyticOn_of_locally_analyticOn](../../../../FunctionalAnalysis/Within.lean/declarations/analyticon-of-locally-analyticon.md) | 60 | `result-track:1eb4c66ca001e22dd9435665805925cbebc1b4f31e2f34199824bd25b50ad70d` |
-| 3 | `lemma` | [IsOpen.analyticOn_iff_analyticOnNhd](../../../../FunctionalAnalysis/Within.lean/declarations/isopen-analyticon-iff-analyticonnhd.md) | 83 | `result-track:66b8534002f056f3e8944a854c2f9f2e4e9c8bdad57f5af34bd23cabb9870439` |
-| 4 | `lemma` | [hasFPowerSeriesWithinOnBall_iff_exists_hasFPowerSeriesOnBall](../../../../FunctionalAnalysis/Within.lean/declarations/hasfpowerserieswithinonball-iff-exists-hasfpowerseriesonball.md) | 111 | `result-track:c5d2f5232cbcc28863c580627794d04a27aebde2062e857bf4b25e557805960b` |
-| 5 | `lemma` | [hasFPowerSeriesWithinAt_iff_exists_hasFPowerSeriesAt](../../../../FunctionalAnalysis/Within.lean/declarations/hasfpowerserieswithinat-iff-exists-hasfpowerseriesat.md) | 144 | `result-track:fc508cf21721641e11de24e7c9b84890cff624d0f3f3d069ef80282bfba8a3f1` |
-| 6 | `lemma` | [analyticWithinAt_iff_exists_analyticAt](../../../../FunctionalAnalysis/Within.lean/declarations/analyticwithinat-iff-exists-analyticat-source-edition-2.md) | 166 | `result-track:7f9ad482d7fd32c2f6daf1934e5b5d8ae869b68f42d554704101f95086378f01` |
-| 7 | `lemma` | [analyticWithinAt_iff_exists_analyticAt'](../../../../FunctionalAnalysis/Within.lean/declarations/analyticwithinat-iff-exists-analyticat.md) | 174 | `result-track:5caeefa8561eb1fb9efeb075eea82eee408209e3812efb0940f6fc3fa8eeb07e` |
-| 8 | `lemma` | [AnalyticWithinAt.exists_mem_nhdsWithin_analyticOn](../../../../FunctionalAnalysis/Within.lean/declarations/analyticwithinat-exists-mem-nhdswithin-analyticon.md) | 198 | `result-track:9b3c262a32319f9f0a3559544070b570acb48a90023158f6481391c6fbba3872` |
+| 1 | `lemma` | [analyticWithinAt_of_singleton_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Within.lean/declarations/analyticwithinat-of-singleton-mem.md) | 40 | `result-track:5ad90ed389d3d365222a59d4646c8c227f0d117a30f0e748a78737cfe45408a6` |
+| 2 | `lemma` | [analyticOn_of_locally_analyticOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Within.lean/declarations/analyticon-of-locally-analyticon.md) | 60 | `result-track:1eb4c66ca001e22dd9435665805925cbebc1b4f31e2f34199824bd25b50ad70d` |
+| 3 | `lemma` | [IsOpen.analyticOn_iff_analyticOnNhd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Within.lean/declarations/isopen-analyticon-iff-analyticonnhd.md) | 83 | `result-track:66b8534002f056f3e8944a854c2f9f2e4e9c8bdad57f5af34bd23cabb9870439` |
+| 4 | `lemma` | [hasFPowerSeriesWithinOnBall_iff_exists_hasFPowerSeriesOnBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Within.lean/declarations/hasfpowerserieswithinonball-iff-exists-hasfpowerseriesonball.md) | 111 | `result-track:c5d2f5232cbcc28863c580627794d04a27aebde2062e857bf4b25e557805960b` |
+| 5 | `lemma` | [hasFPowerSeriesWithinAt_iff_exists_hasFPowerSeriesAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Within.lean/declarations/hasfpowerserieswithinat-iff-exists-hasfpowerseriesat.md) | 144 | `result-track:fc508cf21721641e11de24e7c9b84890cff624d0f3f3d069ef80282bfba8a3f1` |
+| 6 | `lemma` | [analyticWithinAt_iff_exists_analyticAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Within.lean/declarations/analyticwithinat-iff-exists-analyticat-source-edition-2.md) | 166 | `result-track:7f9ad482d7fd32c2f6daf1934e5b5d8ae869b68f42d554704101f95086378f01` |
+| 7 | `lemma` | [analyticWithinAt_iff_exists_analyticAt'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Within.lean/declarations/analyticwithinat-iff-exists-analyticat.md) | 174 | `result-track:5caeefa8561eb1fb9efeb075eea82eee408209e3812efb0940f6fc3fa8eeb07e` |
+| 8 | `lemma` | [AnalyticWithinAt.exists_mem_nhdsWithin_analyticOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Within.lean/declarations/analyticwithinat-exists-mem-nhdswithin-analyticon.md) | 198 | `result-track:9b3c262a32319f9f0a3559544070b570acb48a90023158f6481391c6fbba3872` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

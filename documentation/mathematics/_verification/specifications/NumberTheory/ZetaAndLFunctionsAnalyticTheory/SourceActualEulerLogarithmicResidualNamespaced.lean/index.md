@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEulerLogarithmicResidualNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEulerLogarithmicResidualNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEulerLogarithmicResidualNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEulerLogarithmicResidualNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualEulerLogBoundaryConstant_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEulerLogarithmicResidualNamespaced.lean/declarations/actualeulerlogboundaryconstant-nonneg.md) | 29 | `result-track:10af4abaebaa5be9dbcf9eeb444e370786f606fb335c711af8d93041f9a50cf9` |
-| 2 | `theorem` | [actualResidual_sub_logBulk_norm_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEulerLogarithmicResidualNamespaced.lean/declarations/actualresidual-sub-logbulk-norm-le.md) | 38 | `result-track:32541e3fde59aae6327c3de18785658889b974a40d3a550381dddd8528b80ac8` |
-| 3 | `theorem` | [actualResidual_sub_logBulk_tendsto_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEulerLogarithmicResidualNamespaced.lean/declarations/actualresidual-sub-logbulk-tendsto-zero.md) | 64 | `result-track:f5f4a6854071a3d2498e24fd3c3a213133ccb408b2182af81784da340c1efec4` |
+| 1 | `theorem` | [actualEulerLogBoundaryConstant_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEulerLogarithmicResidualNamespaced.lean/declarations/actualeulerlogboundaryconstant-nonneg.md) | 29 | `result-track:10af4abaebaa5be9dbcf9eeb444e370786f606fb335c711af8d93041f9a50cf9` |
+| 2 | `theorem` | [actualResidual_sub_logBulk_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEulerLogarithmicResidualNamespaced.lean/declarations/actualresidual-sub-logbulk-norm-le.md) | 38 | `result-track:32541e3fde59aae6327c3de18785658889b974a40d3a550381dddd8528b80ac8` |
+| 3 | `theorem` | [actualResidual_sub_logBulk_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEulerLogarithmicResidualNamespaced.lean/declarations/actualresidual-sub-logbulk-tendsto-zero.md) | 64 | `result-track:f5f4a6854071a3d2498e24fd3c3a213133ccb408b2182af81784da340c1efec4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

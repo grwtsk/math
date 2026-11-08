@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIReduction.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIReduction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIReduction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIReduction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [MobiusLogHighGCDReducedDivisorTupleIndex](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIReduction.lean/declarations/mobiusloghighgcdreduceddivisortupleindex.md) | 28 | `declaration-track:0089e3a9284425c98c875b684c7c7cd8f4d5f328fc75e6b9cc069528d6da6f4c` |
-| 2 | `def` | [mobiusLogHighGCDReducedDivisorTupleSet](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIReduction.lean/declarations/mobiusloghighgcdreduceddivisortupleset.md) | 33 | `declaration-track:968d57c6285259b8006355eaba85edf26c4dd8e5be2bf401662dd961a7b638fc` |
-| 3 | `def` | [mobiusLogHighGCDReduceTerm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIReduction.lean/declarations/mobiusloghighgcdreduceterm.md) | 41 | `declaration-track:294631278f620e4073637f5236f2d2d46bb29e21fa5e648bdec4546c6bcf0dc0` |
-| 4 | `theorem` | [mobiusLogHighGCDReduceTerm_mapsTo](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIReduction.lean/declarations/mobiusloghighgcdreduceterm-mapsto.md) | 52 | `result-track:d2abf0ae76501c8bb41f05ef647984dc3fefb0ce09a5ee91b113d9e9c3bea3c3` |
-| 5 | `theorem` | [mobiusLogHighGCDReduceTerm_injOn](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIReduction.lean/declarations/mobiusloghighgcdreduceterm-injon.md) | 131 | `result-track:0ada2789fd653486c58d5d9ae73a221fcf9dd20f3e7d7a35766872dfbef1db14` |
-| 6 | `theorem` | [mobiusLogAbsoluteHighGCDTypeIITermIndexSet_card_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIReduction.lean/declarations/mobiuslogabsolutehighgcdtypeiitermindexset-card-le.md) | 240 | `result-track:0f5a2f9f757d2cc6fa7ac06d661c3653c52c830ab36f76d282294da077c161da` |
-| 7 | `theorem` | [mobiusLogHighGCDReducedDivisorTupleSet_card](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIReduction.lean/declarations/mobiusloghighgcdreduceddivisortupleset-card.md) | 252 | `result-track:2274031dafab8c75616d1c963eb90c8fd3e7c4936ea62232b7e0d6ef45d78268` |
+| 1 | `abbrev` | [MobiusLogHighGCDReducedDivisorTupleIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIReduction.lean/declarations/mobiusloghighgcdreduceddivisortupleindex.md) | 28 | `declaration-track:0089e3a9284425c98c875b684c7c7cd8f4d5f328fc75e6b9cc069528d6da6f4c` |
+| 2 | `def` | [mobiusLogHighGCDReducedDivisorTupleSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIReduction.lean/declarations/mobiusloghighgcdreduceddivisortupleset.md) | 33 | `declaration-track:968d57c6285259b8006355eaba85edf26c4dd8e5be2bf401662dd961a7b638fc` |
+| 3 | `def` | [mobiusLogHighGCDReduceTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIReduction.lean/declarations/mobiusloghighgcdreduceterm.md) | 41 | `declaration-track:294631278f620e4073637f5236f2d2d46bb29e21fa5e648bdec4546c6bcf0dc0` |
+| 4 | `theorem` | [mobiusLogHighGCDReduceTerm_mapsTo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIReduction.lean/declarations/mobiusloghighgcdreduceterm-mapsto.md) | 52 | `result-track:d2abf0ae76501c8bb41f05ef647984dc3fefb0ce09a5ee91b113d9e9c3bea3c3` |
+| 5 | `theorem` | [mobiusLogHighGCDReduceTerm_injOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIReduction.lean/declarations/mobiusloghighgcdreduceterm-injon.md) | 131 | `result-track:0ada2789fd653486c58d5d9ae73a221fcf9dd20f3e7d7a35766872dfbef1db14` |
+| 6 | `theorem` | [mobiusLogAbsoluteHighGCDTypeIITermIndexSet_card_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIReduction.lean/declarations/mobiuslogabsolutehighgcdtypeiitermindexset-card-le.md) | 240 | `result-track:0f5a2f9f757d2cc6fa7ac06d661c3653c52c830ab36f76d282294da077c161da` |
+| 7 | `theorem` | [mobiusLogHighGCDReducedDivisorTupleSet_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIReduction.lean/declarations/mobiusloghighgcdreduceddivisortupleset-card.md) | 252 | `result-track:2274031dafab8c75616d1c963eb90c8fd3e7c4936ea62232b7e0d6ef45d78268` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

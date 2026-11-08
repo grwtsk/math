@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/index.md) · [Full source](../../../../RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [decoderPrice](../../../../RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/declarations/decoderprice.md) | 21 | `declaration-track:aedf7b0f5ac1bc1243bbca7ac64892b6414d96c78dd074269d664d4a80586efa` |
-| 2 | `theorem` | [price_nonnegative](../../../../RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/declarations/price-nonnegative.md) | 23 | `result-track:4da954cabcba664393610d7e23d6a8d9459adb6abd6b7eb182fac721a317edfb` |
-| 3 | `theorem` | [completed_norm_bound](../../../../RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/declarations/completed-norm-bound.md) | 26 | `result-track:cae385c63c671ba791dbc99e42ae9cf04e1bd49cc921e1bf02090dd7f3ef0fc4` |
-| 4 | `theorem` | [inverse_price_bound](../../../../RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/declarations/inverse-price-bound.md) | 39 | `result-track:bdf74ae19dbb10a674643c770e2df869ef7ec727efc207fcaa7d1fecaba6c15e` |
-| 5 | `theorem` | [residual_norm_bound](../../../../RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/declarations/residual-norm-bound.md) | 46 | `result-track:a55969253db862042384700812d1ca79964fdcf67abe14f34d9279ab0489fab4` |
-| 6 | `theorem` | [residual_positive_part](../../../../RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/declarations/residual-positive-part.md) | 54 | `result-track:f7a4ba7a825ee24b8db0637b62dd7ccaac59b5e542c5ff0bb12a898729a629ad` |
-| 7 | `theorem` | [cardinality_price](../../../../RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/declarations/cardinality-price.md) | 61 | `result-track:982a6d052bf7d370c157c18ca382d2f4af52fd0fbbbea22e7ee8c5b46cef8db2` |
-| 8 | `theorem` | [scalar_decoder_preserves_polarity](../../../../RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/declarations/scalar-decoder-preserves-polarity.md) | 68 | `result-track:15f725219f343740611fe706d02574bcd75cf9c407f9a01dca495560cca4ac26` |
-| 9 | `theorem` | [signed_decoder_can_reverse_polarity](../../../../RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/declarations/signed-decoder-can-reverse-polarity.md) | 74 | `result-track:caf74867f223766e35ead8402978c527dbf6eb6886ce91bdad6f911fc912ff5d` |
+| 1 | `def` | [decoderPrice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/declarations/decoderprice.md) | 21 | `declaration-track:aedf7b0f5ac1bc1243bbca7ac64892b6414d96c78dd074269d664d4a80586efa` |
+| 2 | `theorem` | [price_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/declarations/price-nonnegative.md) | 23 | `result-track:4da954cabcba664393610d7e23d6a8d9459adb6abd6b7eb182fac721a317edfb` |
+| 3 | `theorem` | [completed_norm_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/declarations/completed-norm-bound.md) | 26 | `result-track:cae385c63c671ba791dbc99e42ae9cf04e1bd49cc921e1bf02090dd7f3ef0fc4` |
+| 4 | `theorem` | [inverse_price_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/declarations/inverse-price-bound.md) | 39 | `result-track:bdf74ae19dbb10a674643c770e2df869ef7ec727efc207fcaa7d1fecaba6c15e` |
+| 5 | `theorem` | [residual_norm_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/declarations/residual-norm-bound.md) | 46 | `result-track:a55969253db862042384700812d1ca79964fdcf67abe14f34d9279ab0489fab4` |
+| 6 | `theorem` | [residual_positive_part](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/declarations/residual-positive-part.md) | 54 | `result-track:f7a4ba7a825ee24b8db0637b62dd7ccaac59b5e542c5ff0bb12a898729a629ad` |
+| 7 | `theorem` | [cardinality_price](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/declarations/cardinality-price.md) | 61 | `result-track:982a6d052bf7d370c157c18ca382d2f4af52fd0fbbbea22e7ee8c5b46cef8db2` |
+| 8 | `theorem` | [scalar_decoder_preserves_polarity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/declarations/scalar-decoder-preserves-polarity.md) | 68 | `result-track:15f725219f343740611fe706d02574bcd75cf9c407f9a01dca495560cca4ac26` |
+| 9 | `theorem` | [signed_decoder_can_reverse_polarity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompletedModeArraysRetainTheirDecoderPriceAndResidual.lean/declarations/signed-decoder-can-reverse-polarity.md) | 74 | `result-track:caf74867f223766e35ead8402978c527dbf6eb6886ce91bdad6f911fc912ff5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

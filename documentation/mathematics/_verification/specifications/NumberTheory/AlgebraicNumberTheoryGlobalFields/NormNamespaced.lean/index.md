@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [norm](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/declarations/norm.md) | 43 | `declaration-track:73eca90819936a8da27fa480b54820b63399ba484a8bb5103ddd08f4aa278f9c` |
-| 2 | `theorem` | [coe_algebraMap_norm](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/declarations/coe-algebramap-norm.md) | 47 | `result-track:2e6389871384e126313794460847673732a9fb8d5d5b7df891d01b7024c36b49` |
-| 3 | `theorem` | [coe_norm_algebraMap](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/declarations/coe-norm-algebramap.md) | 52 | `result-track:e69a503afc2d90baa3f8cf2f7999c53ca29d803140c999fdb30a4fbe0749a9f4` |
-| 4 | `theorem` | [norm_algebraMap](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/declarations/norm-algebramap.md) | 57 | `result-track:022ec5272fc1d2573f97a33daf103999e062211e48a8cc8fd35fe143c61b5e04` |
-| 5 | `theorem` | [isUnit_norm_of_isGalois](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/declarations/isunit-norm-of-isgalois.md) | 63 | `result-track:32aa56740062edff20eb34aa597c76a0bb0c097de5e5f83e52ac56a0ab116a96` |
-| 6 | `theorem` | [dvd_norm](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/declarations/dvd-norm.md) | 81 | `result-track:50a24ebbbc843f34e214d4a726f314b16a61ad1c9b4c502c49201d084f22bdfd` |
-| 7 | `theorem` | [norm_norm](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/declarations/norm-norm.md) | 93 | `result-track:28a9a57c323236569a3916e2d5a1373c650e8c35bdf38031fbe456c7811e4db0` |
-| 8 | `theorem` | [isUnit_norm](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/declarations/isunit-norm.md) | 100 | `result-track:54e71522bdbfd51dfa489a1a9c8dfd84548d366a5c030da98ed877c950127b72` |
+| 1 | `def` | [norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/declarations/norm.md) | 43 | `declaration-track:73eca90819936a8da27fa480b54820b63399ba484a8bb5103ddd08f4aa278f9c` |
+| 2 | `theorem` | [coe_algebraMap_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/declarations/coe-algebramap-norm.md) | 47 | `result-track:2e6389871384e126313794460847673732a9fb8d5d5b7df891d01b7024c36b49` |
+| 3 | `theorem` | [coe_norm_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/declarations/coe-norm-algebramap.md) | 52 | `result-track:e69a503afc2d90baa3f8cf2f7999c53ca29d803140c999fdb30a4fbe0749a9f4` |
+| 4 | `theorem` | [norm_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/declarations/norm-algebramap.md) | 57 | `result-track:022ec5272fc1d2573f97a33daf103999e062211e48a8cc8fd35fe143c61b5e04` |
+| 5 | `theorem` | [isUnit_norm_of_isGalois](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/declarations/isunit-norm-of-isgalois.md) | 63 | `result-track:32aa56740062edff20eb34aa597c76a0bb0c097de5e5f83e52ac56a0ab116a96` |
+| 6 | `theorem` | [dvd_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/declarations/dvd-norm.md) | 81 | `result-track:50a24ebbbc843f34e214d4a726f314b16a61ad1c9b4c502c49201d084f22bdfd` |
+| 7 | `theorem` | [norm_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/declarations/norm-norm.md) | 93 | `result-track:28a9a57c323236569a3916e2d5a1373c650e8c35bdf38031fbe456c7811e4db0` |
+| 8 | `theorem` | [isUnit_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/NormNamespaced.lean/declarations/isunit-norm.md) | 100 | `result-track:54e71522bdbfd51dfa489a1a9c8dfd84548d366a5c030da98ed877c950127b72` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

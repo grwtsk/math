@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MellinTransform.ReverseInversion`](../../../../MeasureAndIntegration/MellinTransformReverseInversion.lean/index.md) — import line 24; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.ReverseInversion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformReverseInversion.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [logarithmicGaussianWith](../../../../IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/logarithmicgaussianwith.md) | 31 | `declaration-track:f083ac6263f6a89c90e103b586c3ad0908dccc832cb37468bc740b52c1995aa4` |
-| 2 | `def` | [gaussianMellinWith](../../../../IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/gaussianmellinwith.md) | 34 | `declaration-track:f01190d6c803736580743c3c2df7b47b84930030d83c26ce278de7dc6a5cfad5` |
-| 3 | `lemma` | [exponential_mellin_kernel](../../../../IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/exponential-mellin-kernel.md) | 37 | `result-track:e621206c000f618dd0a2d9a579d620bc669d18363b14ea8b74edf09321ca6f15` |
-| 4 | `lemma` | [logarithmicGaussian_kernel](../../../../IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/logarithmicgaussian-kernel.md) | 52 | `result-track:562a48b73c9c922d6bef9b831fd301ed983458c1a69011cc37ed264996837984` |
-| 5 | `lemma` | [exponential_neg_image](../../../../IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/exponential-neg-image.md) | 62 | `result-track:3f41e0d8e9869cd16d49e7768594ca3641d1a9efbabbd36f769751f743bf1877` |
-| 6 | `lemma` | [exponential_neg_deriv](../../../../IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/exponential-neg-deriv.md) | 66 | `result-track:8567915a4c3e6b2d1cd99f5ac192c5b90a48ed81c576c82da48bb9f506d911fe` |
-| 7 | `lemma` | [exponential_neg_inj](../../../../IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/exponential-neg-inj.md) | 71 | `result-track:3ead320c5c1512137d2c43143a7e1be042ba99bdaa83b04754670513d3f3554f` |
-| 8 | `theorem` | [logarithmicGaussianWith_convergent](../../../../IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/logarithmicgaussianwith-convergent.md) | 75 | `result-track:97a5c12f6be71d714b7d319fc6e008e8a703486df5de5573f94d6fbc362e5c2e` |
-| 9 | `theorem` | [logarithmicGaussianWith_mellin](../../../../IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/logarithmicgaussianwith-mellin.md) | 84 | `result-track:6cf59c472d130193a01a7da6d6939939f029a22e6ae36f61d6b34ca044b85569` |
-| 10 | `theorem` | [logarithmicGaussian_mellin_all](../../../../IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/logarithmicgaussian-mellin-all.md) | 94 | `result-track:7ec9ac440a6b3411acae354a11d3a957e86468b79953bf9bebf6611597d42d96` |
-| 11 | `theorem` | [logarithmicGaussian_convergent_all](../../../../IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/logarithmicgaussian-convergent-all.md) | 100 | `result-track:99783f7ed620c2fd39b1e685a938fe596cb5fdfe23cf956f017c2cd3230ea612` |
-| 12 | `theorem` | [logarithmicGaussian_mellin_ne_zero](../../../../IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/logarithmicgaussian-mellin-ne-zero.md) | 105 | `result-track:d9d98a094d8f236b9fc3ae0eb6fa3812ab5460e8a5d24a6acd09826c5fed0cb4` |
+| 1 | `def` | [logarithmicGaussianWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/logarithmicgaussianwith.md) | 31 | `declaration-track:f083ac6263f6a89c90e103b586c3ad0908dccc832cb37468bc740b52c1995aa4` |
+| 2 | `def` | [gaussianMellinWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/gaussianmellinwith.md) | 34 | `declaration-track:f01190d6c803736580743c3c2df7b47b84930030d83c26ce278de7dc6a5cfad5` |
+| 3 | `lemma` | [exponential_mellin_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/exponential-mellin-kernel.md) | 37 | `result-track:e621206c000f618dd0a2d9a579d620bc669d18363b14ea8b74edf09321ca6f15` |
+| 4 | `lemma` | [logarithmicGaussian_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/logarithmicgaussian-kernel.md) | 52 | `result-track:562a48b73c9c922d6bef9b831fd301ed983458c1a69011cc37ed264996837984` |
+| 5 | `lemma` | [exponential_neg_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/exponential-neg-image.md) | 62 | `result-track:3f41e0d8e9869cd16d49e7768594ca3641d1a9efbabbd36f769751f743bf1877` |
+| 6 | `lemma` | [exponential_neg_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/exponential-neg-deriv.md) | 66 | `result-track:8567915a4c3e6b2d1cd99f5ac192c5b90a48ed81c576c82da48bb9f506d911fe` |
+| 7 | `lemma` | [exponential_neg_inj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/exponential-neg-inj.md) | 71 | `result-track:3ead320c5c1512137d2c43143a7e1be042ba99bdaa83b04754670513d3f3554f` |
+| 8 | `theorem` | [logarithmicGaussianWith_convergent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/logarithmicgaussianwith-convergent.md) | 75 | `result-track:97a5c12f6be71d714b7d319fc6e008e8a703486df5de5573f94d6fbc362e5c2e` |
+| 9 | `theorem` | [logarithmicGaussianWith_mellin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/logarithmicgaussianwith-mellin.md) | 84 | `result-track:6cf59c472d130193a01a7da6d6939939f029a22e6ae36f61d6b34ca044b85569` |
+| 10 | `theorem` | [logarithmicGaussian_mellin_all](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/logarithmicgaussian-mellin-all.md) | 94 | `result-track:7ec9ac440a6b3411acae354a11d3a957e86468b79953bf9bebf6611597d42d96` |
+| 11 | `theorem` | [logarithmicGaussian_convergent_all](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/logarithmicgaussian-convergent-all.md) | 100 | `result-track:99783f7ed620c2fd39b1e685a938fe596cb5fdfe23cf956f017c2cd3230ea612` |
+| 12 | `theorem` | [logarithmicGaussian_mellin_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicGaussian.lean/declarations/logarithmicgaussian-mellin-ne-zero.md) | 105 | `result-track:d9d98a094d8f236b9fc3ae0eb6fa3812ab5460e8a5d24a6acd09826c5fed0cb4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

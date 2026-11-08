@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalfCutoffTailAudit.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalfCutoffTailAudit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalfCutoffTailAudit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalfCutoffTailAudit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [reciprocal_half_cutoff_tail_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalfCutoffTailAudit.lean/declarations/reciprocal-half-cutoff-tail-le.md) | 12 | `result-track:616fd6c3ec00dc2a35a5705508e31044a433ac2164d0d9aacb87c631c4e60d8a` |
-| 2 | `theorem` | [sqrt_square_scale](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalfCutoffTailAudit.lean/declarations/sqrt-square-scale.md) | 29 | `result-track:3e5a05bb010a4375bb8951acac80346805c351faf98c186bb29f6a48ddf474ef` |
-| 3 | `theorem` | [thetaRemainder_half_cutoff_tail_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalfCutoffTailAudit.lean/declarations/thetaremainder-half-cutoff-tail-abs-le.md) | 34 | `result-track:5e1e32782b8a7122210683509511c954820a24f959b556328d54b7f3e1ca431e` |
+| 1 | `theorem` | [reciprocal_half_cutoff_tail_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalfCutoffTailAudit.lean/declarations/reciprocal-half-cutoff-tail-le.md) | 12 | `result-track:616fd6c3ec00dc2a35a5705508e31044a433ac2164d0d9aacb87c631c4e60d8a` |
+| 2 | `theorem` | [sqrt_square_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalfCutoffTailAudit.lean/declarations/sqrt-square-scale.md) | 29 | `result-track:3e5a05bb010a4375bb8951acac80346805c351faf98c186bb29f6a48ddf474ef` |
+| 3 | `theorem` | [thetaRemainder_half_cutoff_tail_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HalfCutoffTailAudit.lean/declarations/thetaremainder-half-cutoff-tail-abs-le.md) | 34 | `result-track:5e1e32782b8a7122210683509511c954820a24f959b556328d54b7f3e1ca431e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

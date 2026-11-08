@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReservoirPublicReservoirResp.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReservoirPublicReservoirResp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReservoirPublicReservoirResp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReservoirPublicReservoirResp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Reservoir.lakeHeaders](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReservoirPublicReservoirResp.lean/declarations/reservoir-lakeheaders.md) | 15 | `declaration-track:ad4accca0a795ab0064c75b02c89cc57485d5c44113dfc7de24ad6863455f136` |
-| 2 | `inductive` | [ReservoirResp](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReservoirPublicReservoirResp.lean/declarations/reservoirresp.md) | 21 | `declaration-track:bd69a3dded089f49de4ee703d80f96049e98fdce20a28662b9184795f778c028` |
-| 3 | `def` | [ReservoirResp.fromJson?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReservoirPublicReservoirResp.lean/declarations/reservoirresp-fromjson.md) | 25 | `declaration-track:065d3ba493ded5dcdb854a817a9ccf09231b3473c6d7b4a9c2edad4271a3f29e` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReservoirPublicReservoirResp.lean/declarations/instance.md) | 38 | `declaration-track:33ab253b8793f9f5bb7372f1e4094d33467960966a6529b4772c05d883569ff6` |
+| 1 | `def` | [Reservoir.lakeHeaders](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReservoirPublicReservoirResp.lean/declarations/reservoir-lakeheaders.md) | 15 | `declaration-track:ad4accca0a795ab0064c75b02c89cc57485d5c44113dfc7de24ad6863455f136` |
+| 2 | `inductive` | [ReservoirResp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReservoirPublicReservoirResp.lean/declarations/reservoirresp.md) | 21 | `declaration-track:bd69a3dded089f49de4ee703d80f96049e98fdce20a28662b9184795f778c028` |
+| 3 | `def` | [ReservoirResp.fromJson?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReservoirPublicReservoirResp.lean/declarations/reservoirresp-fromjson.md) | 25 | `declaration-track:065d3ba493ded5dcdb854a817a9ccf09231b3473c6d7b4a9c2edad4271a3f29e` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReservoirPublicReservoirResp.lean/declarations/instance.md) | 38 | `declaration-track:33ab253b8793f9f5bb7372f1e4094d33467960966a6529b4772c05d883569ff6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProofBoundary.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProofBoundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProofBoundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProofBoundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [crossesProofBoundary](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProofBoundary.lean/declarations/crossesproofboundary.md) | 9 | `declaration-track:8faa165466b08f7e7079049a43437eb8582ff187742144cd7c503a576e9839ea` |
-| 2 | `theorem` | [finite_witness_stays_below_boundary](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProofBoundary.lean/declarations/finite-witness-stays-below-boundary.md) | 12 | `result-track:b70013e4db7548654a6d2ab8463815d80ad06434d7969cdd1280d46417fd22cf` |
-| 3 | `theorem` | [checked_theorem_crosses_boundary](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProofBoundary.lean/declarations/checked-theorem-crosses-boundary.md) | 15 | `result-track:0c30823bdd8486aa7a6bc25412494c91985b50de74fd84fc07877b3090a2e481` |
+| 1 | `def` | [crossesProofBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProofBoundary.lean/declarations/crossesproofboundary.md) | 9 | `declaration-track:8faa165466b08f7e7079049a43437eb8582ff187742144cd7c503a576e9839ea` |
+| 2 | `theorem` | [finite_witness_stays_below_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProofBoundary.lean/declarations/finite-witness-stays-below-boundary.md) | 12 | `result-track:b70013e4db7548654a6d2ab8463815d80ad06434d7969cdd1280d46417fd22cf` |
+| 3 | `theorem` | [checked_theorem_crosses_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProofBoundary.lean/declarations/checked-theorem-crosses-boundary.md) | 15 | `result-track:0c30823bdd8486aa7a6bc25412494c91985b50de74fd84fc07877b3090a2e481` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

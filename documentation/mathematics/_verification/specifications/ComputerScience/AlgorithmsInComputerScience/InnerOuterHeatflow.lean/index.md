@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BoundaryMemoryContext](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/declarations/boundarymemorycontext.md) | 7 | `declaration-track:48092772af84911aac17c634c0f654e554c454624c00dbf3aba0bd6aefb296ce` |
-| 2 | `def` | [defaultContext](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/declarations/defaultcontext.md) | 16 | `declaration-track:958334c36918c373ab49f06c1543c7aa1fab0d693c763ce03502825b909ba2f6` |
-| 3 | `def` | [finalClaim](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/declarations/finalclaim.md) | 40 | `declaration-track:23c80e45903deae7538681c95d573db4a16ac492617a3197f8e261ad7274518b` |
-| 4 | `def` | [boundaryMemoryResidue](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/declarations/boundarymemoryresidue.md) | 43 | `declaration-track:4ae2d5501150bfb6ae8664fed95cdda5bb1b52d265921074a2562b1ce0ff797d` |
-| 5 | `def` | [finalWitness](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/declarations/finalwitness.md) | 52 | `declaration-track:d97b1517175d25d9d5fb90c26b43869e92187de2975348029b1eec24f1a05d4e` |
-| 6 | `theorem` | [finalWitness_hasResidue](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/declarations/finalwitness-hasresidue.md) | 56 | `result-track:7850f36457aee41e5ce516974f5203fa43a05a0486dc9a697a1214ef5d875277` |
-| 7 | `theorem` | [recallOperators_count](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/declarations/recalloperators-count.md) | 60 | `result-track:f998f43e6f5acafec55dad25e7a355c79207c6658f2505f2fce927d49aeda647` |
-| 8 | `theorem` | [consolidationOperators_count](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/declarations/consolidationoperators-count.md) | 64 | `result-track:4d5e07f68e596adeda2184bb5a0e4214df5eeb1d49209977269f1cfb5bdf0918` |
+| 1 | `structure` | [BoundaryMemoryContext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/declarations/boundarymemorycontext.md) | 7 | `declaration-track:48092772af84911aac17c634c0f654e554c454624c00dbf3aba0bd6aefb296ce` |
+| 2 | `def` | [defaultContext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/declarations/defaultcontext.md) | 16 | `declaration-track:958334c36918c373ab49f06c1543c7aa1fab0d693c763ce03502825b909ba2f6` |
+| 3 | `def` | [finalClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/declarations/finalclaim.md) | 40 | `declaration-track:23c80e45903deae7538681c95d573db4a16ac492617a3197f8e261ad7274518b` |
+| 4 | `def` | [boundaryMemoryResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/declarations/boundarymemoryresidue.md) | 43 | `declaration-track:4ae2d5501150bfb6ae8664fed95cdda5bb1b52d265921074a2562b1ce0ff797d` |
+| 5 | `def` | [finalWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/declarations/finalwitness.md) | 52 | `declaration-track:d97b1517175d25d9d5fb90c26b43869e92187de2975348029b1eec24f1a05d4e` |
+| 6 | `theorem` | [finalWitness_hasResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/declarations/finalwitness-hasresidue.md) | 56 | `result-track:7850f36457aee41e5ce516974f5203fa43a05a0486dc9a697a1214ef5d875277` |
+| 7 | `theorem` | [recallOperators_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/declarations/recalloperators-count.md) | 60 | `result-track:f998f43e6f5acafec55dad25e7a355c79207c6658f2505f2fce927d49aeda647` |
+| 8 | `theorem` | [consolidationOperators_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterHeatflow.lean/declarations/consolidationoperators-count.md) | 64 | `result-track:4d5e07f68e596adeda2184bb5a0e4214df5eeb1d49209977269f1cfb5bdf0918` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

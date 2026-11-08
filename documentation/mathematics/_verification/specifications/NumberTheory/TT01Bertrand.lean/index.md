@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/TT01Bertrand.lean/index.md) · [Full source](../../../../NumberTheory/TT01Bertrand.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TT01Bertrand.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TT01Bertrand.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tt01_bertrand](../../../../NumberTheory/TT01Bertrand.lean/declarations/tt01-bertrand.md) | 6 | `result-track:b83dc3e6249d5b6a24ed7668ab419e59ab850d93d2e5cca9940cce583b195275` |
+| 1 | `theorem` | [tt01_bertrand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TT01Bertrand.lean/declarations/tt01-bertrand.md) | 6 | `result-track:b83dc3e6249d5b6a24ed7668ab419e59ab850d93d2e5cca9940cce583b195275` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

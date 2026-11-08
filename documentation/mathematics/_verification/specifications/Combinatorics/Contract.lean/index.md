@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Contract.lean/index.md) · [Full source](../../../../Combinatorics/Contract.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Contract.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Contract.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [OrdinalStratumMode](../../../../Combinatorics/Contract.lean/declarations/ordinalstratummode.md) | 11 | `declaration-track:601aa81ceff65efc328e3a17f4aba8eff6ef756ce9cb3e5c1ba932fe3a0ab664` |
-| 2 | `inductive` | [ReducedTraceMode](../../../../Combinatorics/Contract.lean/declarations/reducedtracemode.md) | 16 | `declaration-track:8d2ca025cd7f101261ab3aecc602482f5eb2ac4ab8f1e47bb70353eeb07a9da6` |
-| 3 | `inductive` | [LimitSpectralMode](../../../../Combinatorics/Contract.lean/declarations/limitspectralmode.md) | 21 | `declaration-track:67db6472fa21b860b6ea58a6305ccbfb4cf24207461f24cb52a56ee01e7fa3d1` |
-| 4 | `structure` | [StratifiedBoundaryTraceContract](../../../../Combinatorics/Contract.lean/declarations/stratifiedboundarytracecontract.md) | 26 | `declaration-track:7c5a229d7075b42bffdc720d62d4adea676a9976bff2002da9c641d02f1e309a` |
+| 1 | `inductive` | [OrdinalStratumMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Contract.lean/declarations/ordinalstratummode.md) | 11 | `declaration-track:601aa81ceff65efc328e3a17f4aba8eff6ef756ce9cb3e5c1ba932fe3a0ab664` |
+| 2 | `inductive` | [ReducedTraceMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Contract.lean/declarations/reducedtracemode.md) | 16 | `declaration-track:8d2ca025cd7f101261ab3aecc602482f5eb2ac4ab8f1e47bb70353eeb07a9da6` |
+| 3 | `inductive` | [LimitSpectralMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Contract.lean/declarations/limitspectralmode.md) | 21 | `declaration-track:67db6472fa21b860b6ea58a6305ccbfb4cf24207461f24cb52a56ee01e7fa3d1` |
+| 4 | `structure` | [StratifiedBoundaryTraceContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Contract.lean/declarations/stratifiedboundarytracecontract.md) | 26 | `declaration-track:7c5a229d7075b42bffdc720d62d4adea676a9976bff2002da9c641d02f1e309a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

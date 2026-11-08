@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FixedKernelMomentFragmentNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FixedKernelMomentFragmentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelMomentFragmentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelMomentFragmentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [weighted_translate](../../../../MeasureAndIntegration/FixedKernelMomentFragmentNamespaced.lean/declarations/weighted-translate.md) | 21 | `result-track:d69e3530a596b705b864dce1bd13356eb6ff0f1c0b8e42e84c7ad93380cf00d4` |
-| 2 | `theorem` | [weighted_translated_integrable](../../../../MeasureAndIntegration/FixedKernelMomentFragmentNamespaced.lean/declarations/weighted-translated-integrable.md) | 30 | `result-track:41c25f09f214f05620e10ff0542322cf529525452c4c53debdb72385edcf1a48` |
-| 3 | `theorem` | [weighted_translated_integral_zero](../../../../MeasureAndIntegration/FixedKernelMomentFragmentNamespaced.lean/declarations/weighted-translated-integral-zero.md) | 37 | `result-track:094d381376e8712893145607007e3d49c3615feda44bd50c3768fb23b83bddd9` |
-| 4 | `theorem` | [logSample_integral_zero](../../../../MeasureAndIntegration/FixedKernelMomentFragmentNamespaced.lean/declarations/logsample-integral-zero.md) | 45 | `result-track:a41ea0c15b8f853affd34a9f07e3dc246e77bda867309ea4d2862f80cd056a08` |
-| 5 | `theorem` | [logSample_integrableOn_and_integral_zero](../../../../MeasureAndIntegration/FixedKernelMomentFragmentNamespaced.lean/declarations/logsample-integrableon-and-integral-zero.md) | 59 | `result-track:d7b164898a2051ea3bebadf7641ac50fd13a721491bd22c676796cdf3a911f3f` |
+| 1 | `theorem` | [weighted_translate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelMomentFragmentNamespaced.lean/declarations/weighted-translate.md) | 21 | `result-track:d69e3530a596b705b864dce1bd13356eb6ff0f1c0b8e42e84c7ad93380cf00d4` |
+| 2 | `theorem` | [weighted_translated_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelMomentFragmentNamespaced.lean/declarations/weighted-translated-integrable.md) | 30 | `result-track:41c25f09f214f05620e10ff0542322cf529525452c4c53debdb72385edcf1a48` |
+| 3 | `theorem` | [weighted_translated_integral_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelMomentFragmentNamespaced.lean/declarations/weighted-translated-integral-zero.md) | 37 | `result-track:094d381376e8712893145607007e3d49c3615feda44bd50c3768fb23b83bddd9` |
+| 4 | `theorem` | [logSample_integral_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelMomentFragmentNamespaced.lean/declarations/logsample-integral-zero.md) | 45 | `result-track:a41ea0c15b8f853affd34a9f07e3dc246e77bda867309ea4d2862f80cd056a08` |
+| 5 | `theorem` | [logSample_integrableOn_and_integral_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelMomentFragmentNamespaced.lean/declarations/logsample-integrableon-and-integral-zero.md) | 59 | `result-track:d7b164898a2051ea3bebadf7641ac50fd13a721491bd22c676796cdf3a911f3f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/Imo1959Q1.lean/index.md) · [Full source](../../../../NumberTheory/Imo1959Q1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo1959Q1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo1959Q1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [calculation](../../../../NumberTheory/Imo1959Q1.lean/declarations/calculation.md) | 25 | `result-track:b3b005b62dfa1fdcfa37aab1f9bb6b09ff72b920aad5da43d198e665ef6cdd5b` |
-| 2 | `theorem` | [imo1959_q1](../../../../NumberTheory/Imo1959Q1.lean/declarations/imo1959-q1.md) | 36 | `result-track:51f308f50be4f9015f55748f9f7664d0e1f6e0cd526e01654681b987c35ab245` |
+| 1 | `theorem` | [calculation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo1959Q1.lean/declarations/calculation.md) | 25 | `result-track:b3b005b62dfa1fdcfa37aab1f9bb6b09ff72b920aad5da43d198e665ef6cdd5b` |
+| 2 | `theorem` | [imo1959_q1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo1959Q1.lean/declarations/imo1959-q1.md) | 36 | `result-track:51f308f50be4f9015f55748f9f7664d0e1f6e0cd526e01654681b987c35ab245` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

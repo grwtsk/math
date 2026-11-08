@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BoundaryCanonical.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BoundaryCanonical.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BoundaryCanonical.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BoundaryCanonical.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [BoundaryMemoryAction](../../../../../ComputerScience/AlgorithmsInComputerScience/BoundaryCanonical.lean/declarations/boundarymemoryaction.md) | 7 | `declaration-track:af7d5dceec74e103ac599245bd7fdde87d4ba5fe21e990cd8ecb995756ba0e0e` |
-| 2 | `structure` | [BoundaryCanonicalRule](../../../../../ComputerScience/AlgorithmsInComputerScience/BoundaryCanonical.lean/declarations/boundarycanonicalrule.md) | 15 | `declaration-track:01de77ceee583bb742beac9bb49642a05e4424dba2d9fbc97140c1c9717ac2df` |
-| 3 | `def` | [boundaryCanonicalRules](../../../../../ComputerScience/AlgorithmsInComputerScience/BoundaryCanonical.lean/declarations/boundarycanonicalrules.md) | 21 | `declaration-track:b96efdeef20b39aaa79f6fd090f478e5f623cf24dd527aa77449f756576d45f4` |
-| 4 | `theorem` | [boundaryCanonicalRules_count](../../../../../ComputerScience/AlgorithmsInComputerScience/BoundaryCanonical.lean/declarations/boundarycanonicalrules-count.md) | 39 | `result-track:cb763b7ba171d3ec4c1533394f746b5b5685a5a6f2f8c6c0b79c3d4ee67d7ae9` |
+| 1 | `inductive` | [BoundaryMemoryAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BoundaryCanonical.lean/declarations/boundarymemoryaction.md) | 7 | `declaration-track:af7d5dceec74e103ac599245bd7fdde87d4ba5fe21e990cd8ecb995756ba0e0e` |
+| 2 | `structure` | [BoundaryCanonicalRule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BoundaryCanonical.lean/declarations/boundarycanonicalrule.md) | 15 | `declaration-track:01de77ceee583bb742beac9bb49642a05e4424dba2d9fbc97140c1c9717ac2df` |
+| 3 | `def` | [boundaryCanonicalRules](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BoundaryCanonical.lean/declarations/boundarycanonicalrules.md) | 21 | `declaration-track:b96efdeef20b39aaa79f6fd090f478e5f623cf24dd527aa77449f756576d45f4` |
+| 4 | `theorem` | [boundaryCanonicalRules_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BoundaryCanonical.lean/declarations/boundarycanonicalrules-count.md) | 39 | `result-track:cb763b7ba171d3ec4c1533394f746b5b5685a5a6f2f8c6c0b79c3d4ee67d7ae9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

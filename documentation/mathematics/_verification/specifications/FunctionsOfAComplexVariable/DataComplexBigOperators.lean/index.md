@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/DataComplexBigOperators.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/DataComplexBigOperators.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DataComplexBigOperators.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DataComplexBigOperators.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ofReal_prod](../../../../FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/ofreal-prod.md) | 21 | `result-track:47267e100de0c69f49c909808f387658835439fc34e3e30a8ff63cb8da61c01d` |
-| 2 | `theorem` | [ofReal_sum](../../../../FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/ofreal-sum.md) | 25 | `result-track:44a842789994140c962e1430bc04be81f321fdccf034b13fbe5fcdf58ae91b16` |
-| 3 | `lemma` | [ofReal_expect](../../../../FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/ofreal-expect.md) | 29 | `result-track:dafa5307ffd56cd719ee679f0f5543a7c86f13cd8315874babfe17e667ab4c17` |
-| 4 | `lemma` | [ofReal_balance](../../../../FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/ofreal-balance.md) | 33 | `result-track:52b053cc7226a504c4af9441513552a0c9d54fb94fcc38b5e5a6e0146e33599b` |
-| 5 | `lemma` | [ofReal_comp_balance](../../../../FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/ofreal-comp-balance.md) | 36 | `result-track:ad4ed051cb0031a9c247673163129e5baa0d2c710e8adc87f26b3b0850680b59` |
-| 6 | `theorem` | [re_sum](../../../../FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/re-sum.md) | 40 | `result-track:ae4ad3ef4a36e1dce1103691789b46cec83ca114cd3b3b7d64ce5cca817189b6` |
-| 7 | `lemma` | [re_expect](../../../../FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/re-expect.md) | 44 | `result-track:9d0bf71f1a1eef01b78459aac8211d7983390ef35ef42959beab9c9da34a7744` |
-| 8 | `lemma` | [re_balance](../../../../FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/re-balance.md) | 48 | `result-track:8dc154472a5191862ace3e30d7db064297fb019b5723921374d503c1508822f8` |
-| 9 | `lemma` | [re_comp_balance](../../../../FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/re-comp-balance.md) | 51 | `result-track:31daa1b1d6a3aa572ebe599d329d50093cb5766744fa2fad3921c5cfa03dcc0c` |
-| 10 | `theorem` | [im_sum](../../../../FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/im-sum.md) | 55 | `result-track:2230958a4a9500efe7266ca684a42b0d87a7fbbaf223842430baca9acafe4878` |
-| 11 | `lemma` | [im_expect](../../../../FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/im-expect.md) | 59 | `result-track:830aa9b1e5a642eb822a4d8295e0356a785d9262a2ffe26ca66a6f0596715d9f` |
-| 12 | `lemma` | [im_balance](../../../../FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/im-balance.md) | 63 | `result-track:251d525a957330b856f9be7524400c87ae3c74ed97e73746a65862c9f84869b4` |
-| 13 | `lemma` | [im_comp_balance](../../../../FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/im-comp-balance.md) | 66 | `result-track:930b3fc29769801c08bdc26dac57067fdaae17a7d3816abe2edb5ebc23dc3013` |
+| 1 | `theorem` | [ofReal_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/ofreal-prod.md) | 21 | `result-track:47267e100de0c69f49c909808f387658835439fc34e3e30a8ff63cb8da61c01d` |
+| 2 | `theorem` | [ofReal_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/ofreal-sum.md) | 25 | `result-track:44a842789994140c962e1430bc04be81f321fdccf034b13fbe5fcdf58ae91b16` |
+| 3 | `lemma` | [ofReal_expect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/ofreal-expect.md) | 29 | `result-track:dafa5307ffd56cd719ee679f0f5543a7c86f13cd8315874babfe17e667ab4c17` |
+| 4 | `lemma` | [ofReal_balance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/ofreal-balance.md) | 33 | `result-track:52b053cc7226a504c4af9441513552a0c9d54fb94fcc38b5e5a6e0146e33599b` |
+| 5 | `lemma` | [ofReal_comp_balance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/ofreal-comp-balance.md) | 36 | `result-track:ad4ed051cb0031a9c247673163129e5baa0d2c710e8adc87f26b3b0850680b59` |
+| 6 | `theorem` | [re_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/re-sum.md) | 40 | `result-track:ae4ad3ef4a36e1dce1103691789b46cec83ca114cd3b3b7d64ce5cca817189b6` |
+| 7 | `lemma` | [re_expect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/re-expect.md) | 44 | `result-track:9d0bf71f1a1eef01b78459aac8211d7983390ef35ef42959beab9c9da34a7744` |
+| 8 | `lemma` | [re_balance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/re-balance.md) | 48 | `result-track:8dc154472a5191862ace3e30d7db064297fb019b5723921374d503c1508822f8` |
+| 9 | `lemma` | [re_comp_balance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/re-comp-balance.md) | 51 | `result-track:31daa1b1d6a3aa572ebe599d329d50093cb5766744fa2fad3921c5cfa03dcc0c` |
+| 10 | `theorem` | [im_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/im-sum.md) | 55 | `result-track:2230958a4a9500efe7266ca684a42b0d87a7fbbaf223842430baca9acafe4878` |
+| 11 | `lemma` | [im_expect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/im-expect.md) | 59 | `result-track:830aa9b1e5a642eb822a4d8295e0356a785d9262a2ffe26ca66a6f0596715d9f` |
+| 12 | `lemma` | [im_balance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/im-balance.md) | 63 | `result-track:251d525a957330b856f9be7524400c87ae3c74ed97e73746a65862c9f84869b4` |
+| 13 | `lemma` | [im_comp_balance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DataComplexBigOperators.lean/declarations/im-comp-balance.md) | 66 | `result-track:930b3fc29769801c08bdc26dac57067fdaae17a7d3816abe2edb5ebc23dc3013` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CeilingNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CeilingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CeilingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CeilingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ceiling_of_valid_at](../../../../MeasureAndIntegration/CeilingNamespaced.lean/declarations/ceiling-of-valid-at.md) | 36 | `result-track:9ae90169b5fc5750c980feac5d6f9dbc7139be5ffcb2644b5b18628a4f7de04f` |
-| 2 | `theorem` | [ceiling_numeric](../../../../MeasureAndIntegration/CeilingNamespaced.lean/declarations/ceiling-numeric.md) | 52 | `result-track:f52d68ad88ad6136cc9afec7cb9fb2ed54d5fc8df08d356d4d2e03c07146a036` |
+| 1 | `theorem` | [ceiling_of_valid_at](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CeilingNamespaced.lean/declarations/ceiling-of-valid-at.md) | 36 | `result-track:9ae90169b5fc5750c980feac5d6f9dbc7139be5ffcb2644b5b18628a4f7de04f` |
+| 2 | `theorem` | [ceiling_numeric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CeilingNamespaced.lean/declarations/ceiling-numeric.md) | 52 | `result-track:f52d68ad88ad6136cc9afec7cb9fb2ed54d5fc8df08d356d4d2e03c07146a036` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

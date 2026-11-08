@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../HarmonicAnalysisOnEuclideanSpaces/InversionPublic.lean/index.md) · [Full source](../../../../HarmonicAnalysisOnEuclideanSpaces/InversionPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/InversionPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/InversionPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [tendsto_integral_cexp_sq_smul](../../../../HarmonicAnalysisOnEuclideanSpaces/InversionPublic.lean/declarations/tendsto-integral-cexp-sq-smul.md) | 54 | `result-track:c7d9774a857143faaecbcf662a9c3b0bcb0102d8da345bd90531d12ec21c396c` |
-| 2 | `lemma` | [tendsto_integral_gaussian_smul](../../../../HarmonicAnalysisOnEuclideanSpaces/InversionPublic.lean/declarations/tendsto-integral-gaussian-smul.md) | 76 | `result-track:aaf236491916287ed9d569ca438370e53fc3771405a5b7c0e91553947927cb96` |
-| 3 | `lemma` | [tendsto_integral_gaussian_smul'](../../../../HarmonicAnalysisOnEuclideanSpaces/InversionPublic.lean/declarations/tendsto-integral-gaussian-smul-source-edition-2.md) | 109 | `result-track:df0ce45aa9b073afb07ffed62ff0a949e54c477218b02423b30cf100219f4a06` |
-| 4 | `theorem` | [MeasureTheory.Integrable.fourierInv_fourier_eq](../../../../HarmonicAnalysisOnEuclideanSpaces/InversionPublic.lean/declarations/measuretheory-integrable-fourierinv-fourier-eq.md) | 165 | `result-track:d36211ef9ba98811ee93a1b24f92bc727bd310add5fc1a47d7ef4e662337ca35` |
-| 5 | `theorem` | [Continuous.fourierInv_fourier_eq](../../../../HarmonicAnalysisOnEuclideanSpaces/InversionPublic.lean/declarations/continuous-fourierinv-fourier-eq.md) | 174 | `result-track:34cfda8e3e49c8b58ea52e1c52739af4003fd430ad777820012d7056c50941e7` |
-| 6 | `theorem` | [MeasureTheory.Integrable.fourier_fourierInv_eq](../../../../HarmonicAnalysisOnEuclideanSpaces/InversionPublic.lean/declarations/measuretheory-integrable-fourier-fourierinv-eq.md) | 183 | `result-track:d0bcd173c7088dbce9e215439379b9c1d0d329abad10195bb549735b5c82a486` |
-| 7 | `theorem` | [Continuous.fourier_fourierInv_eq](../../../../HarmonicAnalysisOnEuclideanSpaces/InversionPublic.lean/declarations/continuous-fourier-fourierinv-eq.md) | 192 | `result-track:bdc5a551ba40e930c2084269437673af04a000ba1a395f8255c57393a0197a15` |
+| 1 | `lemma` | [tendsto_integral_cexp_sq_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/InversionPublic.lean/declarations/tendsto-integral-cexp-sq-smul.md) | 54 | `result-track:c7d9774a857143faaecbcf662a9c3b0bcb0102d8da345bd90531d12ec21c396c` |
+| 2 | `lemma` | [tendsto_integral_gaussian_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/InversionPublic.lean/declarations/tendsto-integral-gaussian-smul.md) | 76 | `result-track:aaf236491916287ed9d569ca438370e53fc3771405a5b7c0e91553947927cb96` |
+| 3 | `lemma` | [tendsto_integral_gaussian_smul'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/InversionPublic.lean/declarations/tendsto-integral-gaussian-smul-source-edition-2.md) | 109 | `result-track:df0ce45aa9b073afb07ffed62ff0a949e54c477218b02423b30cf100219f4a06` |
+| 4 | `theorem` | [MeasureTheory.Integrable.fourierInv_fourier_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/InversionPublic.lean/declarations/measuretheory-integrable-fourierinv-fourier-eq.md) | 165 | `result-track:d36211ef9ba98811ee93a1b24f92bc727bd310add5fc1a47d7ef4e662337ca35` |
+| 5 | `theorem` | [Continuous.fourierInv_fourier_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/InversionPublic.lean/declarations/continuous-fourierinv-fourier-eq.md) | 174 | `result-track:34cfda8e3e49c8b58ea52e1c52739af4003fd430ad777820012d7056c50941e7` |
+| 6 | `theorem` | [MeasureTheory.Integrable.fourier_fourierInv_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/InversionPublic.lean/declarations/measuretheory-integrable-fourier-fourierinv-eq.md) | 183 | `result-track:d0bcd173c7088dbce9e215439379b9c1d0d329abad10195bb549735b5c82a486` |
+| 7 | `theorem` | [Continuous.fourier_fourierInv_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/InversionPublic.lean/declarations/continuous-fourier-fourierinv-eq.md) | 192 | `result-track:bdc5a551ba40e930c2084269437673af04a000ba1a395f8255c57393a0197a15` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

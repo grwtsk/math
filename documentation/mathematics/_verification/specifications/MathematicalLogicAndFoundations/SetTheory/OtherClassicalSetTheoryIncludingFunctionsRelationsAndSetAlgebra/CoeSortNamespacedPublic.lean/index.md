@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/CoeSortNamespacedPublic.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/CoeSortNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/CoeSortNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/CoeSortNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Elem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/CoeSortNamespacedPublic.lean/declarations/elem.md) | 45 | `declaration-track:ea7f4d2329d04804b2603cf62f21f036ef4c88235b2de459e7d96f49ce0e86a0` |
-| 2 | `instance` | [(anonymous)](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/CoeSortNamespacedPublic.lean/declarations/instance.md) | 48 | `declaration-track:14eeec925d9b09ac8d3a70e31fa3dbe8c741a103cf757c62b6c84c2ee808648f` |
-| 3 | `theorem` | [elem_mem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/CoeSortNamespacedPublic.lean/declarations/elem-mem.md) | 50 | `result-track:41f9d4314984358cd537a30e7b18b6965500846bd1d6959af63d1ac2a2966866` |
+| 1 | `def` | [Elem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/CoeSortNamespacedPublic.lean/declarations/elem.md) | 45 | `declaration-track:ea7f4d2329d04804b2603cf62f21f036ef4c88235b2de459e7d96f49ce0e86a0` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/CoeSortNamespacedPublic.lean/declarations/instance.md) | 48 | `declaration-track:14eeec925d9b09ac8d3a70e31fa3dbe8c741a103cf757c62b6c84c2ee808648f` |
+| 3 | `theorem` | [elem_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/CoeSortNamespacedPublic.lean/declarations/elem-mem.md) | 50 | `result-track:41f9d4314984358cd537a30e7b18b6965500846bd1d6959af63d1ac2a2966866` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

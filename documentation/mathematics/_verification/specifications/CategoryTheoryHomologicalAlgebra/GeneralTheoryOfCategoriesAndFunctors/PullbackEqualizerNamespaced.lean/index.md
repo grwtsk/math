@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PullbackEqualizerNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PullbackEqualizerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PullbackEqualizerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PullbackEqualizerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isPullback_equalizer_prod](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PullbackEqualizerNamespaced.lean/declarations/ispullback-equalizer-prod.md) | 31 | `result-track:5b853997045f905ffbbc4648f2e3c0c38558d389dc376e5536d89cf92d2f31fa` |
-| 2 | `lemma` | [isPushout_coequalizer_coprod](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PullbackEqualizerNamespaced.lean/declarations/ispushout-coequalizer-coprod.md) | 44 | `result-track:8e811dcb5fa975916704837d71b4632c82d30f4a8b8c1684d991347de606da41` |
+| 1 | `lemma` | [isPullback_equalizer_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PullbackEqualizerNamespaced.lean/declarations/ispullback-equalizer-prod.md) | 31 | `result-track:5b853997045f905ffbbc4648f2e3c0c38558d389dc376e5536d89cf92d2f31fa` |
+| 2 | `lemma` | [isPushout_coequalizer_coprod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PullbackEqualizerNamespaced.lean/declarations/ispushout-coequalizer-coprod.md) | 44 | `result-track:8e811dcb5fa975916704837d71b4632c82d30f4a8b8c1684d991347de606da41` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

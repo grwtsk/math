@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicBasicNamespacedPublicLawfulMonadLift.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicBasicNamespacedPublicLawfulMonadLift.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicBasicNamespacedPublicLawfulMonadLift.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicBasicNamespacedPublicLawfulMonadLift.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [LawfulMonadLift](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicBasicNamespacedPublicLawfulMonadLift.lean/declarations/lawfulmonadlift.md) | 37 | `declaration-track:04f95bcff062cd5007146dfd352be0eb2f8c375391de1a5ed4d62b51f319b2ab` |
-| 2 | `class` | [LawfulMonadLiftT](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicBasicNamespacedPublicLawfulMonadLift.lean/declarations/lawfulmonadliftt.md) | 52 | `declaration-track:17202c81ebd5d2af6eaa2a21bf67b24aacf87681e3c8f5b71542428772a34624` |
+| 1 | `class` | [LawfulMonadLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicBasicNamespacedPublicLawfulMonadLift.lean/declarations/lawfulmonadlift.md) | 37 | `declaration-track:04f95bcff062cd5007146dfd352be0eb2f8c375391de1a5ed4d62b51f319b2ab` |
+| 2 | `class` | [LawfulMonadLiftT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicBasicNamespacedPublicLawfulMonadLift.lean/declarations/lawfulmonadliftt.md) | 52 | `declaration-track:17202c81ebd5d2af6eaa2a21bf67b24aacf87681e3c8f5b71542428772a34624` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

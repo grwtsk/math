@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/ActionSubmonoidNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/ActionSubmonoidNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionSubmonoidNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionSubmonoidNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FixedPoints.addSubmonoid](../../../../AssociativeRingsAndAlgebras/ActionSubmonoidNamespaced.lean/declarations/fixedpoints-addsubmonoid.md) | 27 | `declaration-track:c69681baaf4cd9df38d6f24d4a3587082de259aea8fb9021ca2c72b4d2297537` |
-| 2 | `lemma` | [FixedPoints.mem_addSubmonoid](../../../../AssociativeRingsAndAlgebras/ActionSubmonoidNamespaced.lean/declarations/fixedpoints-mem-addsubmonoid.md) | 33 | `result-track:5dd4996d42ebbfe678e49fa68a6da2c3d0db30bf5b9225858f8ade4885544429` |
-| 3 | `def` | [FixedPoints.addSubgroup](../../../../AssociativeRingsAndAlgebras/ActionSubmonoidNamespaced.lean/declarations/fixedpoints-addsubgroup.md) | 42 | `declaration-track:74cc2fc8c7f898e0815198644701b2770b6cf0bdb270036c8771c07ee4ff42bc` |
-| 4 | `lemma` | [FixedPoints.mem_addSubgroup](../../../../AssociativeRingsAndAlgebras/ActionSubmonoidNamespaced.lean/declarations/fixedpoints-mem-addsubgroup.md) | 50 | `result-track:a275d848d6688315071957598926a6512fc55d466426437af2d9d24c95b15d4b` |
-| 5 | `lemma` | [FixedPoints.addSubgroup_toAddSubmonoid](../../../../AssociativeRingsAndAlgebras/ActionSubmonoidNamespaced.lean/declarations/fixedpoints-addsubgroup-toaddsubmonoid.md) | 54 | `result-track:ebc29ac0f32e6ac4f431f32189384be0f32811928c8abfcdb3190277af9e1081` |
+| 1 | `def` | [FixedPoints.addSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionSubmonoidNamespaced.lean/declarations/fixedpoints-addsubmonoid.md) | 27 | `declaration-track:c69681baaf4cd9df38d6f24d4a3587082de259aea8fb9021ca2c72b4d2297537` |
+| 2 | `lemma` | [FixedPoints.mem_addSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionSubmonoidNamespaced.lean/declarations/fixedpoints-mem-addsubmonoid.md) | 33 | `result-track:5dd4996d42ebbfe678e49fa68a6da2c3d0db30bf5b9225858f8ade4885544429` |
+| 3 | `def` | [FixedPoints.addSubgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionSubmonoidNamespaced.lean/declarations/fixedpoints-addsubgroup.md) | 42 | `declaration-track:74cc2fc8c7f898e0815198644701b2770b6cf0bdb270036c8771c07ee4ff42bc` |
+| 4 | `lemma` | [FixedPoints.mem_addSubgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionSubmonoidNamespaced.lean/declarations/fixedpoints-mem-addsubgroup.md) | 50 | `result-track:a275d848d6688315071957598926a6512fc55d466426437af2d9d24c95b15d4b` |
+| 5 | `lemma` | [FixedPoints.addSubgroup_toAddSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionSubmonoidNamespaced.lean/declarations/fixedpoints-addsubgroup-toaddsubmonoid.md) | 54 | `result-track:ebc29ac0f32e6ac4f431f32189384be0f32811928c8abfcdb3190277af9e1081` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

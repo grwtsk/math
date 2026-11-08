@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ContDiffFiniteDimensionNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/ContDiffFiniteDimensionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffFiniteDimensionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffFiniteDimensionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [contDiffOn_clm_apply](../../../../RealFunctions/ContDiffFiniteDimensionNamespaced.lean/declarations/contdiffon-clm-apply.md) | 45 | `result-track:392393765f8456316b76446b81afae64009ecdc53c549e3eeaf07b336d774f67` |
-| 2 | `theorem` | [contDiff_clm_apply_iff](../../../../RealFunctions/ContDiffFiniteDimensionNamespaced.lean/declarations/contdiff-clm-apply-iff.md) | 55 | `result-track:fa1677a8b9ca849a9f437627be26836befd0d4ad3cccc219c4788cae46435820` |
-| 3 | `theorem` | [contDiff_succ_iff_fderiv_apply](../../../../RealFunctions/ContDiffFiniteDimensionNamespaced.lean/declarations/contdiff-succ-iff-fderiv-apply.md) | 68 | `result-track:ed63bdbfecf5bc38a880f15faf22a3985b7b8a06f8f38d9099c298325c709882` |
-| 4 | `theorem` | [contDiffOn_succ_of_fderiv_apply](../../../../RealFunctions/ContDiffFiniteDimensionNamespaced.lean/declarations/contdiffon-succ-of-fderiv-apply.md) | 73 | `result-track:fe43a262e860c91f43d70d9df6bee6dc829b11a54e4b34f09ce127c5d2414753` |
-| 5 | `theorem` | [contDiffOn_succ_iff_fderiv_apply](../../../../RealFunctions/ContDiffFiniteDimensionNamespaced.lean/declarations/contdiffon-succ-iff-fderiv-apply.md) | 79 | `result-track:533cf6e3d3f7b4abf393c705f5f0465b054ecbe6b55fc41becaee8d1ef287700` |
+| 1 | `theorem` | [contDiffOn_clm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffFiniteDimensionNamespaced.lean/declarations/contdiffon-clm-apply.md) | 45 | `result-track:392393765f8456316b76446b81afae64009ecdc53c549e3eeaf07b336d774f67` |
+| 2 | `theorem` | [contDiff_clm_apply_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffFiniteDimensionNamespaced.lean/declarations/contdiff-clm-apply-iff.md) | 55 | `result-track:fa1677a8b9ca849a9f437627be26836befd0d4ad3cccc219c4788cae46435820` |
+| 3 | `theorem` | [contDiff_succ_iff_fderiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffFiniteDimensionNamespaced.lean/declarations/contdiff-succ-iff-fderiv-apply.md) | 68 | `result-track:ed63bdbfecf5bc38a880f15faf22a3985b7b8a06f8f38d9099c298325c709882` |
+| 4 | `theorem` | [contDiffOn_succ_of_fderiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffFiniteDimensionNamespaced.lean/declarations/contdiffon-succ-of-fderiv-apply.md) | 73 | `result-track:fe43a262e860c91f43d70d9df6bee6dc829b11a54e4b34f09ce127c5d2414753` |
+| 5 | `theorem` | [contDiffOn_succ_iff_fderiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffFiniteDimensionNamespaced.lean/declarations/contdiffon-succ-iff-fderiv-apply.md) | 79 | `result-track:533cf6e3d3f7b4abf393c705f5f0465b054ecbe6b55fc41becaee8d1ef287700` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OutputNamespacedExactness.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OutputNamespacedExactness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OutputNamespacedExactness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OutputNamespacedExactness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Exactness](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OutputNamespacedExactness.lean/declarations/exactness.md) | 20 | `declaration-track:2ea72edc36ef6490a01c8d375bf79ac43c37a9726871eb359a066c27e531606b` |
-| 2 | `structure` | [ModeOutputFamily](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OutputNamespacedExactness.lean/declarations/modeoutputfamily.md) | 28 | `declaration-track:d080dfc7020ee71519f96c63b5e647bcc07476a658ebb60ba46cc7453f4bd883` |
-| 3 | `structure` | [CertifiedModeOutput](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OutputNamespacedExactness.lean/declarations/certifiedmodeoutput.md) | 38 | `declaration-track:68c1a1495cc009c7908745b7ef9b17708c5b0b56bf265c4940f9623fb020d130` |
-| 4 | `def` | [CertifiedModeOutput.exactness](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OutputNamespacedExactness.lean/declarations/certifiedmodeoutput-exactness.md) | 48 | `declaration-track:8a54e418c6f3e59e3891f85b35d5ddc1877a520c6e6c1dce32b01f53caaf00a7` |
+| 1 | `inductive` | [Exactness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OutputNamespacedExactness.lean/declarations/exactness.md) | 20 | `declaration-track:2ea72edc36ef6490a01c8d375bf79ac43c37a9726871eb359a066c27e531606b` |
+| 2 | `structure` | [ModeOutputFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OutputNamespacedExactness.lean/declarations/modeoutputfamily.md) | 28 | `declaration-track:d080dfc7020ee71519f96c63b5e647bcc07476a658ebb60ba46cc7453f4bd883` |
+| 3 | `structure` | [CertifiedModeOutput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OutputNamespacedExactness.lean/declarations/certifiedmodeoutput.md) | 38 | `declaration-track:68c1a1495cc009c7908745b7ef9b17708c5b0b56bf265c4940f9623fb020d130` |
+| 4 | `def` | [CertifiedModeOutput.exactness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OutputNamespacedExactness.lean/declarations/certifiedmodeoutput-exactness.md) | 48 | `declaration-track:8a54e418c6f3e59e3891f85b35d5ddc1877a520c6e6c1dce32b01f53caaf00a7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

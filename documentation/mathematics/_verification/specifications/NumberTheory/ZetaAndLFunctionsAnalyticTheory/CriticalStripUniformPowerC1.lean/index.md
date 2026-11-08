@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRationalPowerEvaluation`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripRationalPowerEvaluation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRationalPowerEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripRationalPowerEvaluation.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,22 +57,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [expTaylor_hasDerivAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/exptaylor-hasderivat.md) | 24 | `result-track:81c65906d881601f11ca7033e620dd2ea46e2e181d1be548a7d4f8fe793eeb17` |
-| 2 | `def` | [power](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/power.md) | 39 | `declaration-track:4a8f86d1f1237593e29e0a0b9ca144771d7e32a948b0eef43d72fe7389ca708a` |
-| 3 | `def` | [poly](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/poly.md) | 40 | `declaration-track:5ed4ec715b5e52268a4bff8a3f60a1cbc159546c2b72ae657242db26753b38f9` |
-| 4 | `def` | [slope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/slope.md) | 42 | `declaration-track:7f558c742f39a858663f5575614b22d8c52459e62e0dff16b1166d10b36f95ef` |
-| 5 | `lemma` | [power_hasDerivAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/power-hasderivat.md) | 45 | `result-track:5c038ef0a197826ce65c180441745c97a78478277aa04b73b78ae4ac8d081e49` |
-| 6 | `lemma` | [poly_hasDerivAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/poly-hasderivat.md) | 56 | `result-track:2fd72133408defeca7e2fbb0aaa9fcd5a389496ed86eba9fa29d52f2ee167448` |
-| 7 | `def` | [argumentBound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/argumentbound.md) | 63 | `declaration-track:809d01d148b4f2dc5f51f45fdf3ace88593314f31ad3bd3983f1eadbee55cea3` |
-| 8 | `def` | [termRadius](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/termradius.md) | 64 | `declaration-track:36c152c43d66a692a892c7f4182e0e5d2e6bfa28852f300b61b37c88010e3f56` |
-| 9 | `def` | [valueRadius](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/valueradius.md) | 66 | `declaration-track:f008503df9f8ead5bca6311e00b8c507acb09e3e378194cac5d722af3f0eca8b` |
-| 10 | `def` | [derivativeRadius](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/derivativeradius.md) | 67 | `declaration-track:f1d0e047d2c8f2dfdfa00a6c6b5e009ba5e89f8284a194ed836fd517a46d8600` |
-| 11 | `def` | [Guard](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/guard.md) | 70 | `declaration-track:b06dcda627c10253a504c9131bc160ea32f7ab0c7337403e0e2d7d85ee48540b` |
-| 12 | `lemma` | [logRadius_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/logradius-nonneg.md) | 75 | `result-track:7410825568b098a0f19271f049ad1ede2b0c42c1fedf5b14cd61cd78cec80405` |
-| 13 | `lemma` | [termRadius_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/termradius-nonneg.md) | 80 | `result-track:c5a7095f1eda009350551565df4abbc292f99af9dc33123ab583889e4e26cd74` |
-| 14 | `lemma` | [radii_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/radii-nonneg.md) | 87 | `result-track:257851adfdeb7393e2790f610989152625a462b12376626dd613e5d4468321bf` |
-| 15 | `lemma` | [shorter_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/shorter-error.md) | 94 | `result-track:110f53b38c91112773ec5e00b3c91a87fd38d5e7d2d4f5fd6ad16c371bd05c67` |
-| 16 | `theorem` | [errors](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/errors.md) | 118 | `result-track:ee7af31b4fa451affe4d3794d51a7724bd5176c4b75f9bf2ff3859bc0ab07b95` |
+| 1 | `lemma` | [expTaylor_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/exptaylor-hasderivat.md) | 24 | `result-track:81c65906d881601f11ca7033e620dd2ea46e2e181d1be548a7d4f8fe793eeb17` |
+| 2 | `def` | [power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/power.md) | 39 | `declaration-track:4a8f86d1f1237593e29e0a0b9ca144771d7e32a948b0eef43d72fe7389ca708a` |
+| 3 | `def` | [poly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/poly.md) | 40 | `declaration-track:5ed4ec715b5e52268a4bff8a3f60a1cbc159546c2b72ae657242db26753b38f9` |
+| 4 | `def` | [slope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/slope.md) | 42 | `declaration-track:7f558c742f39a858663f5575614b22d8c52459e62e0dff16b1166d10b36f95ef` |
+| 5 | `lemma` | [power_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/power-hasderivat.md) | 45 | `result-track:5c038ef0a197826ce65c180441745c97a78478277aa04b73b78ae4ac8d081e49` |
+| 6 | `lemma` | [poly_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/poly-hasderivat.md) | 56 | `result-track:2fd72133408defeca7e2fbb0aaa9fcd5a389496ed86eba9fa29d52f2ee167448` |
+| 7 | `def` | [argumentBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/argumentbound.md) | 63 | `declaration-track:809d01d148b4f2dc5f51f45fdf3ace88593314f31ad3bd3983f1eadbee55cea3` |
+| 8 | `def` | [termRadius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/termradius.md) | 64 | `declaration-track:36c152c43d66a692a892c7f4182e0e5d2e6bfa28852f300b61b37c88010e3f56` |
+| 9 | `def` | [valueRadius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/valueradius.md) | 66 | `declaration-track:f008503df9f8ead5bca6311e00b8c507acb09e3e378194cac5d722af3f0eca8b` |
+| 10 | `def` | [derivativeRadius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/derivativeradius.md) | 67 | `declaration-track:f1d0e047d2c8f2dfdfa00a6c6b5e009ba5e89f8284a194ed836fd517a46d8600` |
+| 11 | `def` | [Guard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/guard.md) | 70 | `declaration-track:b06dcda627c10253a504c9131bc160ea32f7ab0c7337403e0e2d7d85ee48540b` |
+| 12 | `lemma` | [logRadius_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/logradius-nonneg.md) | 75 | `result-track:7410825568b098a0f19271f049ad1ede2b0c42c1fedf5b14cd61cd78cec80405` |
+| 13 | `lemma` | [termRadius_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/termradius-nonneg.md) | 80 | `result-track:c5a7095f1eda009350551565df4abbc292f99af9dc33123ab583889e4e26cd74` |
+| 14 | `lemma` | [radii_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/radii-nonneg.md) | 87 | `result-track:257851adfdeb7393e2790f610989152625a462b12376626dd613e5d4468321bf` |
+| 15 | `lemma` | [shorter_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/shorter-error.md) | 94 | `result-track:110f53b38c91112773ec5e00b3c91a87fd38d5e7d2d4f5fd6ad16c371bd05c67` |
+| 16 | `theorem` | [errors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPowerC1.lean/declarations/errors.md) | 118 | `result-track:ee7af31b4fa451affe4d3794d51a7724bd5176c4b75f9bf2ff3859bc0ab07b95` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

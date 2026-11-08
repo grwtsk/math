@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/WarshallNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/WarshallNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WarshallNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WarshallNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [BoolMatrix.warshallStep](../../../../../ComputerScience/AlgorithmsInComputerScience/WarshallNamespaced.lean/declarations/boolmatrix-warshallstep.md) | 19 | `declaration-track:81fcd037b8bdc7029244ddb990937d08c24ab70a1ad2ee05aad121fdcff8452b` |
-| 2 | `theorem` | [BoolMatrix.entry_warshallStep](../../../../../ComputerScience/AlgorithmsInComputerScience/WarshallNamespaced.lean/declarations/boolmatrix-entry-warshallstep.md) | 26 | `result-track:dadbffc4c68c122a476d0971f38357d2081910346c18dcaa95f27fc6856517d1` |
-| 3 | `def` | [BoolMatrix.warshallAux](../../../../../ComputerScience/AlgorithmsInComputerScience/WarshallNamespaced.lean/declarations/boolmatrix-warshallaux.md) | 43 | `declaration-track:7c0e71b2eb632e751c801df144f553bd9f881a9b7b5286bc8b2574e2e4a917bb` |
-| 4 | `def` | [BoolMatrix.warshall](../../../../../ComputerScience/AlgorithmsInComputerScience/WarshallNamespaced.lean/declarations/boolmatrix-warshall.md) | 63 | `declaration-track:d7ad16ae5ae0c5922c36d017b4cb352904987b535cc37f04870f0d83fe33eb11` |
-| 5 | `theorem` | [BoolMatrix.warshallAux_zero](../../../../../ComputerScience/AlgorithmsInComputerScience/WarshallNamespaced.lean/declarations/boolmatrix-warshallaux-zero.md) | 69 | `result-track:67df5511e819a98b903eca3001f6df05b577746051fd4e86b9648cc23cd9d1b9` |
+| 1 | `def` | [BoolMatrix.warshallStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WarshallNamespaced.lean/declarations/boolmatrix-warshallstep.md) | 19 | `declaration-track:81fcd037b8bdc7029244ddb990937d08c24ab70a1ad2ee05aad121fdcff8452b` |
+| 2 | `theorem` | [BoolMatrix.entry_warshallStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WarshallNamespaced.lean/declarations/boolmatrix-entry-warshallstep.md) | 26 | `result-track:dadbffc4c68c122a476d0971f38357d2081910346c18dcaa95f27fc6856517d1` |
+| 3 | `def` | [BoolMatrix.warshallAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WarshallNamespaced.lean/declarations/boolmatrix-warshallaux.md) | 43 | `declaration-track:7c0e71b2eb632e751c801df144f553bd9f881a9b7b5286bc8b2574e2e4a917bb` |
+| 4 | `def` | [BoolMatrix.warshall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WarshallNamespaced.lean/declarations/boolmatrix-warshall.md) | 63 | `declaration-track:d7ad16ae5ae0c5922c36d017b4cb352904987b535cc37f04870f0d83fe33eb11` |
+| 5 | `theorem` | [BoolMatrix.warshallAux_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WarshallNamespaced.lean/declarations/boolmatrix-warshallaux-zero.md) | 69 | `result-track:67df5511e819a98b903eca3001f6df05b577746051fd4e86b9648cc23cd9d1b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

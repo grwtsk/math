@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeList.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeList.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeList.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeList.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [lists](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeList.lean/declarations/lists.md) | 31 | `declaration-track:378e7838e57a2eb98cb5282d75fa04f9b90ac313d416f019b0899744a7938bb5` |
-| 2 | `theorem` | [lists_coe](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeList.lean/declarations/lists-coe.md) | 38 | `result-track:6a810885eca28aa832c59f00d39ce1251db13b2fae3884b944970820f915f1fe` |
-| 3 | `theorem` | [lists_nodup_finset](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeList.lean/declarations/lists-nodup-finset.md) | 42 | `result-track:3fc93abfacc51aadc3630c822a1327ed69b6c22672a5a05922c9eaf4b963e9b5` |
-| 4 | `theorem` | [mem_lists_iff](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeList.lean/declarations/mem-lists-iff.md) | 49 | `result-track:6f9926a62b34941062658afd79dcc556d0dfe5cd187ba0ae77d0e100e00c9f73` |
-| 5 | `theorem` | [perm_toList](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeList.lean/declarations/perm-tolist.md) | 56 | `result-track:8c803795f0d6d9aed5037f2c2a0eecac0f32eea89b00e9902a6f3aa0a3d003f9` |
-| 6 | `instance` | [fintypeNodupList](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeList.lean/declarations/fintypenoduplist.md) | 60 | `declaration-track:75f71207d8c2434a166bca13f621e29a2a4243f2094731adc3d2b813bda340a1` |
+| 1 | `def` | [lists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeList.lean/declarations/lists.md) | 31 | `declaration-track:378e7838e57a2eb98cb5282d75fa04f9b90ac313d416f019b0899744a7938bb5` |
+| 2 | `theorem` | [lists_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeList.lean/declarations/lists-coe.md) | 38 | `result-track:6a810885eca28aa832c59f00d39ce1251db13b2fae3884b944970820f915f1fe` |
+| 3 | `theorem` | [lists_nodup_finset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeList.lean/declarations/lists-nodup-finset.md) | 42 | `result-track:3fc93abfacc51aadc3630c822a1327ed69b6c22672a5a05922c9eaf4b963e9b5` |
+| 4 | `theorem` | [mem_lists_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeList.lean/declarations/mem-lists-iff.md) | 49 | `result-track:6f9926a62b34941062658afd79dcc556d0dfe5cd187ba0ae77d0e100e00c9f73` |
+| 5 | `theorem` | [perm_toList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeList.lean/declarations/perm-tolist.md) | 56 | `result-track:8c803795f0d6d9aed5037f2c2a0eecac0f32eea89b00e9902a6f3aa0a3d003f9` |
+| 6 | `instance` | [fintypeNodupList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeList.lean/declarations/fintypenoduplist.md) | 60 | `declaration-track:75f71207d8c2434a166bca13f621e29a2a4243f2094731adc3d2b813bda340a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionIntegrals.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionIntegrals.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionIntegrals.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionIntegrals.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integral_eq_tsum](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionIntegrals.lean/declarations/integral-eq-tsum.md) | 28 | `result-track:ca63c5f0245c7cb5522a89fa3c0d17c4e0a43795f56429f15b60e701ac1600be` |
-| 2 | `theorem` | [integral_eq_sum](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionIntegrals.lean/declarations/integral-eq-sum.md) | 43 | `result-track:d6e609d6d562a440129d9d40ec1a68b23e1b37329582dc9adb6ab365126657a8` |
-| 3 | `theorem` | [bernoulli_expectation](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionIntegrals.lean/declarations/bernoulli-expectation.md) | 53 | `result-track:170071a36f676a63a1821f6c384ff2a4cbe21d7ace43517709a1e4281d2c446e` |
+| 1 | `theorem` | [integral_eq_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionIntegrals.lean/declarations/integral-eq-tsum.md) | 28 | `result-track:ca63c5f0245c7cb5522a89fa3c0d17c4e0a43795f56429f15b60e701ac1600be` |
+| 2 | `theorem` | [integral_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionIntegrals.lean/declarations/integral-eq-sum.md) | 43 | `result-track:d6e609d6d562a440129d9d40ec1a68b23e1b37329582dc9adb6ab365126657a8` |
+| 3 | `theorem` | [bernoulli_expectation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionIntegrals.lean/declarations/bernoulli-expectation.md) | 53 | `result-track:170071a36f676a63a1821f6c384ff2a4cbe21d7ace43517709a1e4281d2c446e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

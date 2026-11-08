@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Cut.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Cut.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Cut.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Cut.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpectralClosureCut](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Cut.lean/declarations/spectralclosurecut.md) | 12 | `declaration-track:85ac357054ceb86234783f7d849685c4c5bb9e415b3421e57a18b308ee66b3f2` |
+| 1 | `structure` | [SpectralClosureCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Cut.lean/declarations/spectralclosurecut.md) | 12 | `declaration-track:85ac357054ceb86234783f7d849685c4c5bb9e415b3421e57a18b308ee66b3f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [timeRow](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/declarations/timerow.md) | 26 | `declaration-track:0c806e194a64865bd3dcb3dd0d7ab5edfbcf837c6162bac87bff2a1c324e3e0c` |
-| 2 | `def` | [columnRow](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/declarations/columnrow.md) | 31 | `declaration-track:ea3080c2943e21ec7990a6c3419621e11f97e28cc326b87d2b663fde2d9a4d08` |
-| 3 | `def` | [actualBilinearWork](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/declarations/actualbilinearwork.md) | 39 | `declaration-track:98cb00dfe3c7ec76d5cd2d263b3f9cf17867f016c77b95c6f789d9565eba1714` |
-| 4 | `theorem` | [actualBilinearWork_eq_jointMangoldtErrorWork](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/declarations/actualbilinearwork-eq-jointmangoldterrorwork.md) | 44 | `result-track:6f87f9c55e7705198461a49b1f8fd1e420cc2c121512dfe660d678ca02edb617` |
-| 5 | `def` | [compensatedBilinearWork](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/declarations/compensatedbilinearwork.md) | 50 | `declaration-track:825c784ff33e213bcb26f247eb4240d953c300ed7cb0ede6e98da1822fc97479` |
-| 6 | `theorem` | [compensatedBilinearWork_eq_compensatedJointWork](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/declarations/compensatedbilinearwork-eq-compensatedjointwork.md) | 57 | `result-track:cd892c9640c4fe6520fc6a2449646e6fef8153b7f4092008067289ea9deacf4e` |
-| 7 | `theorem` | [residual_tail_of_compensatedBilinearWork_tail](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/declarations/residual-tail-of-compensatedbilinearwork-tail.md) | 63 | `result-track:134486e4326cb422bf92b75b9803755d30d7bb6072ee6479c7c54a62546a379a` |
-| 8 | `theorem` | [estimate_of_compensatedBilinearWork_tail](../../../../MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/declarations/estimate-of-compensatedbilinearwork-tail.md) | 74 | `result-track:95353eb9990896ffe5034de5d91c6b03b889bdd5f0d82c19356b50467289cec4` |
+| 1 | `def` | [timeRow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/declarations/timerow.md) | 26 | `declaration-track:0c806e194a64865bd3dcb3dd0d7ab5edfbcf837c6162bac87bff2a1c324e3e0c` |
+| 2 | `def` | [columnRow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/declarations/columnrow.md) | 31 | `declaration-track:ea3080c2943e21ec7990a6c3419621e11f97e28cc326b87d2b663fde2d9a4d08` |
+| 3 | `def` | [actualBilinearWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/declarations/actualbilinearwork.md) | 39 | `declaration-track:98cb00dfe3c7ec76d5cd2d263b3f9cf17867f016c77b95c6f789d9565eba1714` |
+| 4 | `theorem` | [actualBilinearWork_eq_jointMangoldtErrorWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/declarations/actualbilinearwork-eq-jointmangoldterrorwork.md) | 44 | `result-track:6f87f9c55e7705198461a49b1f8fd1e420cc2c121512dfe660d678ca02edb617` |
+| 5 | `def` | [compensatedBilinearWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/declarations/compensatedbilinearwork.md) | 50 | `declaration-track:825c784ff33e213bcb26f247eb4240d953c300ed7cb0ede6e98da1822fc97479` |
+| 6 | `theorem` | [compensatedBilinearWork_eq_compensatedJointWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/declarations/compensatedbilinearwork-eq-compensatedjointwork.md) | 57 | `result-track:cd892c9640c4fe6520fc6a2449646e6fef8153b7f4092008067289ea9deacf4e` |
+| 7 | `theorem` | [residual_tail_of_compensatedBilinearWork_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/declarations/residual-tail-of-compensatedbilinearwork-tail.md) | 63 | `result-track:134486e4326cb422bf92b75b9803755d30d7bb6072ee6479c7c54a62546a379a` |
+| 8 | `theorem` | [estimate_of_compensatedBilinearWork_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompensatedBilinearConsumer.lean/declarations/estimate-of-compensatedbilinearwork-tail.md) | 74 | `result-track:95353eb9990896ffe5034de5d91c6b03b889bdd5f0d82c19356b50467289cec4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

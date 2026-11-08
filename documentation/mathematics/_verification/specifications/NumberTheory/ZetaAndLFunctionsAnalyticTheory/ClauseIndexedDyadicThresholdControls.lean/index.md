@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ClauseIndexedDyadicThresholdControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ClauseIndexedDyadicThresholdControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ClauseIndexedDyadicThresholdControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ClauseIndexedDyadicThresholdControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ClauseIndexedDyadicThreshold`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ClauseIndexedDyadicThreshold.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ClauseIndexedDyadicThreshold`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ClauseIndexedDyadicThreshold.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [positiveClausePolarity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ClauseIndexedDyadicThresholdControls.lean/declarations/positiveclausepolarity.md) | 16 | `declaration-track:bc729d071ab31c9b5c067ac69faf79b3e4c7289697a1f19d45985de45ead48e3` |
-| 2 | `theorem` | [positive_three_clause_satisfying_card](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ClauseIndexedDyadicThresholdControls.lean/declarations/positive-three-clause-satisfying-card.md) | 20 | `result-track:8795eef99061d8adc146d5fd181f1082e810693f2e7f136e293a0d22c00eabf8` |
-| 3 | `theorem` | [positive_three_clause_falsifying_card](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ClauseIndexedDyadicThresholdControls.lean/declarations/positive-three-clause-falsifying-card.md) | 30 | `result-track:29cfc267288d9e329d2f43eea6b374077c954edf51768462e171bd90d39c8f02` |
-| 4 | `theorem` | [concrete_clause_thresholds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ClauseIndexedDyadicThresholdControls.lean/declarations/concrete-clause-thresholds.md) | 37 | `result-track:128d37143c31443155539dc9ca1120374a780502ac0c8c6e05fa9203a07a877b` |
-| 5 | `theorem` | [concrete_clause_reverse_ladder](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ClauseIndexedDyadicThresholdControls.lean/declarations/concrete-clause-reverse-ladder.md) | 44 | `result-track:030a50f6f5a119bf692163cb4c5ec5e3257806cb8218498268ff69e85e7704c8` |
-| 6 | `def` | [requiredAnalyticPremises](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ClauseIndexedDyadicThresholdControls.lean/declarations/requiredanalyticpremises.md) | 55 | `declaration-track:7968e7e36e89f1b187bf161847812c51096fc5f1acab6984524460fd7233b55d` |
-| 7 | `def` | [prohibitedPromotions](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ClauseIndexedDyadicThresholdControls.lean/declarations/prohibitedpromotions.md) | 62 | `declaration-track:02920510ab20c711aff402d5f0cf98e2afe82d9d97a13942e64c877a3bf99a6c` |
+| 1 | `def` | [positiveClausePolarity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ClauseIndexedDyadicThresholdControls.lean/declarations/positiveclausepolarity.md) | 16 | `declaration-track:bc729d071ab31c9b5c067ac69faf79b3e4c7289697a1f19d45985de45ead48e3` |
+| 2 | `theorem` | [positive_three_clause_satisfying_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ClauseIndexedDyadicThresholdControls.lean/declarations/positive-three-clause-satisfying-card.md) | 20 | `result-track:8795eef99061d8adc146d5fd181f1082e810693f2e7f136e293a0d22c00eabf8` |
+| 3 | `theorem` | [positive_three_clause_falsifying_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ClauseIndexedDyadicThresholdControls.lean/declarations/positive-three-clause-falsifying-card.md) | 30 | `result-track:29cfc267288d9e329d2f43eea6b374077c954edf51768462e171bd90d39c8f02` |
+| 4 | `theorem` | [concrete_clause_thresholds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ClauseIndexedDyadicThresholdControls.lean/declarations/concrete-clause-thresholds.md) | 37 | `result-track:128d37143c31443155539dc9ca1120374a780502ac0c8c6e05fa9203a07a877b` |
+| 5 | `theorem` | [concrete_clause_reverse_ladder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ClauseIndexedDyadicThresholdControls.lean/declarations/concrete-clause-reverse-ladder.md) | 44 | `result-track:030a50f6f5a119bf692163cb4c5ec5e3257806cb8218498268ff69e85e7704c8` |
+| 6 | `def` | [requiredAnalyticPremises](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ClauseIndexedDyadicThresholdControls.lean/declarations/requiredanalyticpremises.md) | 55 | `declaration-track:7968e7e36e89f1b187bf161847812c51096fc5f1acab6984524460fd7233b55d` |
+| 7 | `def` | [prohibitedPromotions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ClauseIndexedDyadicThresholdControls.lean/declarations/prohibitedpromotions.md) | 62 | `declaration-track:02920510ab20c711aff402d5f0cf98e2afe82d9d97a13942e64c877a3bf99a6c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

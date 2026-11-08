@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sym2](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/sym2.md) | 49 | `declaration-track:39d0304141bb66773641919a82106ae3e2ab383766634ce656ae816cfcff8d6e` |
-| 2 | `theorem` | [sym2_coe](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/sym2-coe.md) | 52 | `result-track:a4c5a3f215657e08e30ccdc468a11d0813c8a297e03a9cee2e67df9bc93683af` |
-| 3 | `theorem` | [sym2_eq_zero_iff](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/sym2-eq-zero-iff.md) | 55 | `result-track:afa7e7384f80977e8605729eaad0f8a3cc9d939ab3ec2107aabf920426931f19` |
-| 4 | `theorem` | [sym2_zero](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/sym2-zero.md) | 59 | `result-track:270ef6088010952cae37df19033359b60501771120d0b183076fb8085794f11a` |
-| 5 | `theorem` | [sym2_cons](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/sym2-cons.md) | 61 | `result-track:26c311162d47c021fa006fa06431f31c6b8f15e006cd370304aaf5d5ff2ba527` |
-| 6 | `theorem` | [sym2_map](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/sym2-map.md) | 65 | `result-track:943647e36651e116c57dc7358ae36a74e3be6c87eff915ba1bb382ae79e08683` |
-| 7 | `theorem` | [mk_mem_sym2_iff](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/mk-mem-sym2-iff.md) | 69 | `result-track:ecb76e24e886082cdb4e747c607eb71f9ccd5d097093fccfc04c89b0b5baadac` |
-| 8 | `theorem` | [mem_sym2_iff](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/mem-sym2-iff.md) | 73 | `result-track:dfa48b794fe7c157f56e2d8c7447a1ff0d9bfb547a21316fc00562113afa2e1e` |
-| 9 | `theorem` | [Nodup.sym2](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/nodup-sym2.md) | 77 | `result-track:b8cede93308b33619c3a33649afe0e892d602dd130bd9517195cc4e39c5c364e` |
-| 10 | `theorem` | [sym2_mono](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/sym2-mono.md) | 82 | `result-track:bd8f87c3507ae920eab33e8713e5dbb17dfb5f1f34c6c31fbfce898a164f8f9b` |
-| 11 | `theorem` | [monotone_sym2](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/monotone-sym2.md) | 87 | `result-track:dde3cd6d1cc8887ad229a8dc8945ef9a0ae57b4d149bc625877048f290cfc04c` |
-| 12 | `theorem` | [card_sym2](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/card-sym2.md) | 89 | `result-track:0375f0022e8101ffc59b3467e5b6cb0d3bb57e364e7f852ba8227fa608d02b83` |
-| 13 | `theorem` | [dedup_sym2](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/dedup-sym2.md) | 94 | `result-track:3c9be397e59e394631ecff18ce380510749094216a78d9f86597de4fdd94a009` |
+| 1 | `def` | [sym2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/sym2.md) | 49 | `declaration-track:39d0304141bb66773641919a82106ae3e2ab383766634ce656ae816cfcff8d6e` |
+| 2 | `theorem` | [sym2_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/sym2-coe.md) | 52 | `result-track:a4c5a3f215657e08e30ccdc468a11d0813c8a297e03a9cee2e67df9bc93683af` |
+| 3 | `theorem` | [sym2_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/sym2-eq-zero-iff.md) | 55 | `result-track:afa7e7384f80977e8605729eaad0f8a3cc9d939ab3ec2107aabf920426931f19` |
+| 4 | `theorem` | [sym2_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/sym2-zero.md) | 59 | `result-track:270ef6088010952cae37df19033359b60501771120d0b183076fb8085794f11a` |
+| 5 | `theorem` | [sym2_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/sym2-cons.md) | 61 | `result-track:26c311162d47c021fa006fa06431f31c6b8f15e006cd370304aaf5d5ff2ba527` |
+| 6 | `theorem` | [sym2_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/sym2-map.md) | 65 | `result-track:943647e36651e116c57dc7358ae36a74e3be6c87eff915ba1bb382ae79e08683` |
+| 7 | `theorem` | [mk_mem_sym2_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/mk-mem-sym2-iff.md) | 69 | `result-track:ecb76e24e886082cdb4e747c607eb71f9ccd5d097093fccfc04c89b0b5baadac` |
+| 8 | `theorem` | [mem_sym2_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/mem-sym2-iff.md) | 73 | `result-track:dfa48b794fe7c157f56e2d8c7447a1ff0d9bfb547a21316fc00562113afa2e1e` |
+| 9 | `theorem` | [Nodup.sym2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/nodup-sym2.md) | 77 | `result-track:b8cede93308b33619c3a33649afe0e892d602dd130bd9517195cc4e39c5c364e` |
+| 10 | `theorem` | [sym2_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/sym2-mono.md) | 82 | `result-track:bd8f87c3507ae920eab33e8713e5dbb17dfb5f1f34c6c31fbfce898a164f8f9b` |
+| 11 | `theorem` | [monotone_sym2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/monotone-sym2.md) | 87 | `result-track:dde3cd6d1cc8887ad229a8dc8945ef9a0ae57b4d149bc625877048f290cfc04c` |
+| 12 | `theorem` | [card_sym2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/card-sym2.md) | 89 | `result-track:0375f0022e8101ffc59b3467e5b6cb0d3bb57e364e7f852ba8227fa608d02b83` |
+| 13 | `theorem` | [dedup_sym2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSymNamespaced.lean/declarations/dedup-sym2.md) | 94 | `result-track:3c9be397e59e394631ecff18ce380510749094216a78d9f86597de4fdd94a009` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

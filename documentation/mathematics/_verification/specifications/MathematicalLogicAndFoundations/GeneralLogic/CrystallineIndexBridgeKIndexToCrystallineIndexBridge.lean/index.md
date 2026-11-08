@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineIndexBridgeKIndexToCrystallineIndexBridge.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineIndexBridgeKIndexToCrystallineIndexBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineIndexBridgeKIndexToCrystallineIndexBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineIndexBridgeKIndexToCrystallineIndexBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [KIndexToCrystallineIndexBridge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineIndexBridgeKIndexToCrystallineIndexBridge.lean/declarations/kindextocrystallineindexbridge.md) | 19 | `declaration-track:03528ff86d172ddc180fc4cb34a2a964c931c37c4fdcbfe20d62a2613e962a85` |
-| 2 | `theorem` | [k_index_to_crystalline_index_compatible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineIndexBridgeKIndexToCrystallineIndexBridge.lean/declarations/k-index-to-crystalline-index-compatible.md) | 29 | `result-track:67f4619983cbce720462754454f1c3e2ef841e47a2ccb89e7b56813abd21a8ca` |
+| 1 | `structure` | [KIndexToCrystallineIndexBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineIndexBridgeKIndexToCrystallineIndexBridge.lean/declarations/kindextocrystallineindexbridge.md) | 19 | `declaration-track:03528ff86d172ddc180fc4cb34a2a964c931c37c4fdcbfe20d62a2613e962a85` |
+| 2 | `theorem` | [k_index_to_crystalline_index_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineIndexBridgeKIndexToCrystallineIndexBridge.lean/declarations/k-index-to-crystalline-index-compatible.md) | 29 | `result-track:67f4619983cbce720462754454f1c3e2ef841e47a2ccb89e7b56813abd21a8ca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

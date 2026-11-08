@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/StablePointEmbedding.lean/index.md) · [Full source](../../../../GeneralTopology/StablePointEmbedding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbedding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbedding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StableProbeFamily](../../../../GeneralTopology/StablePointEmbedding.lean/declarations/stableprobefamily.md) | 21 | `declaration-track:a71d2fdff3a2965653787c217ba4416ba673de874594645709c6177eadd02afe` |
-| 2 | `def` | [profile](../../../../GeneralTopology/StablePointEmbedding.lean/declarations/profile.md) | 37 | `declaration-track:401e0a28b2d26225c5fd22d0bec3c8a7f702611dbc827fea375cef72dedcb3d6` |
-| 3 | `structure` | [Rigid](../../../../GeneralTopology/StablePointEmbedding.lean/declarations/rigid.md) | 44 | `declaration-track:0c7882cd033ba77e70d2e9b2681145291cb2e2f711a32d6319924a0d4dd5f511` |
-| 4 | `theorem` | [Rigid.isEmbedding](../../../../GeneralTopology/StablePointEmbedding.lean/declarations/rigid-isembedding.md) | 52 | `result-track:32cdb73d40ba369576b7577e75347d0cd551c38a4decf34ed83c790f4349fbe7` |
-| 5 | `theorem` | [Rigid.injective](../../../../GeneralTopology/StablePointEmbedding.lean/declarations/rigid-injective.md) | 58 | `result-track:70507b45762db1fe338ca0871b517a7d76a818d93d03fc5629a726bfbbf8f3da` |
-| 6 | `def` | [CompactProbeRigidityStatement](../../../../GeneralTopology/StablePointEmbedding.lean/declarations/compactproberigiditystatement.md) | 69 | `declaration-track:215444efbc3225647dfd9f484689e2a52e613048522e760d907b31a470f3b6c6` |
-| 7 | `def` | [compactProbeRigidityOpenElement](../../../../GeneralTopology/StablePointEmbedding.lean/declarations/compactproberigidityopenelement.md) | 81 | `declaration-track:a7a8472391d559a412fe2da458e1896c747c2ae7de8fb78d361d17ee8d73d1fb` |
-| 8 | `theorem` | [compactProbeRigidity](../../../../GeneralTopology/StablePointEmbedding.lean/declarations/compactproberigidity.md) | 103 | `result-track:e4dd56024e5417f8abc0228d0707f2c735d14fe9326abfc4ba724aec50bbfd58` |
-| 9 | `def` | [compactProbeRigidityTheoremElement](../../../../GeneralTopology/StablePointEmbedding.lean/declarations/compactproberigiditytheoremelement.md) | 116 | `declaration-track:03c4452b6bf1172b293fcd52692f8a7e638269a728b98fce406eba4d8dc10030` |
+| 1 | `structure` | [StableProbeFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbedding.lean/declarations/stableprobefamily.md) | 21 | `declaration-track:a71d2fdff3a2965653787c217ba4416ba673de874594645709c6177eadd02afe` |
+| 2 | `def` | [profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbedding.lean/declarations/profile.md) | 37 | `declaration-track:401e0a28b2d26225c5fd22d0bec3c8a7f702611dbc827fea375cef72dedcb3d6` |
+| 3 | `structure` | [Rigid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbedding.lean/declarations/rigid.md) | 44 | `declaration-track:0c7882cd033ba77e70d2e9b2681145291cb2e2f711a32d6319924a0d4dd5f511` |
+| 4 | `theorem` | [Rigid.isEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbedding.lean/declarations/rigid-isembedding.md) | 52 | `result-track:32cdb73d40ba369576b7577e75347d0cd551c38a4decf34ed83c790f4349fbe7` |
+| 5 | `theorem` | [Rigid.injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbedding.lean/declarations/rigid-injective.md) | 58 | `result-track:70507b45762db1fe338ca0871b517a7d76a818d93d03fc5629a726bfbbf8f3da` |
+| 6 | `def` | [CompactProbeRigidityStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbedding.lean/declarations/compactproberigiditystatement.md) | 69 | `declaration-track:215444efbc3225647dfd9f484689e2a52e613048522e760d907b31a470f3b6c6` |
+| 7 | `def` | [compactProbeRigidityOpenElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbedding.lean/declarations/compactproberigidityopenelement.md) | 81 | `declaration-track:a7a8472391d559a412fe2da458e1896c747c2ae7de8fb78d361d17ee8d73d1fb` |
+| 8 | `theorem` | [compactProbeRigidity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbedding.lean/declarations/compactproberigidity.md) | 103 | `result-track:e4dd56024e5417f8abc0228d0707f2c735d14fe9326abfc4ba724aec50bbfd58` |
+| 9 | `def` | [compactProbeRigidityTheoremElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbedding.lean/declarations/compactproberigiditytheoremelement.md) | 116 | `declaration-track:03c4452b6bf1172b293fcd52692f8a7e638269a728b98fce406eba4d8dc10030` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

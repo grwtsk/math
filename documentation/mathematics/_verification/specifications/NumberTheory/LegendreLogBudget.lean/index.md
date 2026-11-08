@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/LegendreLogBudget.lean/index.md) · [Full source](../../../../NumberTheory/LegendreLogBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.HigherPrimePowerSource`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/HigherPrimePowerSource.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ProperPrimePowerCorrection.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.HigherPrimePowerSource`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/HigherPrimePowerSource.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ProperPrimePowerCorrection.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,22 +58,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [squareIncrement_eq_nat_source](../../../../NumberTheory/LegendreLogBudget.lean/declarations/squareincrement-eq-nat-source.md) | 38 | `result-track:272609610582f9bb2b7d4872d7b57f28e8541963488e4bb8ef397d96eca412cc` |
-| 2 | `theorem` | [properMass_eq_higherMass](../../../../NumberTheory/LegendreLogBudget.lean/declarations/propermass-eq-highermass.md) | 45 | `result-track:700585192ec5e670119096d33ba8014b2af2271f169f1de6297fb44f3583ecf2` |
-| 3 | `theorem` | [squarePrimeIncrement_pos_iff_count](../../../../NumberTheory/LegendreLogBudget.lean/declarations/squareprimeincrement-pos-iff-count.md) | 56 | `result-track:74b8ebc7716f3607e8d964f5ea222f1faa0814586cb2c365bd141f36f26748be` |
-| 4 | `theorem` | [squarePrimeIncrement_nonneg](../../../../NumberTheory/LegendreLogBudget.lean/declarations/squareprimeincrement-nonneg.md) | 61 | `result-track:81cc23cec50e4c3c9dd72234b3de04962948da3a80eacf6631503b534e073cf9` |
-| 5 | `theorem` | [squarePrimeIncrement_eq_zero_iff_count_zero](../../../../NumberTheory/LegendreLogBudget.lean/declarations/squareprimeincrement-eq-zero-iff-count-zero.md) | 67 | `result-track:ac1d6112cefdc72af12f9ec5c36eb3e8b06b51eef71fd1996d488c0ba0f1e620` |
-| 6 | `def` | [squareCorrectionBudget](../../../../NumberTheory/LegendreLogBudget.lean/declarations/squarecorrectionbudget.md) | 83 | `declaration-track:da8990f73d62118c4c31dca2ae5a4e64401554ee7cadc2a0df9d56f292a851db` |
-| 7 | `theorem` | [properMass_le_log_budget](../../../../NumberTheory/LegendreLogBudget.lean/declarations/propermass-le-log-budget.md) | 87 | `result-track:cf328ac60ab0f7663b10a5b7043e56f193e60085b522333e1ad458fe115217f6` |
-| 8 | `theorem` | [squareCorrectionBudget_nonneg](../../../../NumberTheory/LegendreLogBudget.lean/declarations/squarecorrectionbudget-nonneg.md) | 93 | `result-track:80af3c267849ba8ad882e0358d72b385d9fbb3feae16902d6d5b34b28e289329` |
-| 9 | `theorem` | [squareCount_pos_of_log_budget](../../../../NumberTheory/LegendreLogBudget.lean/declarations/squarecount-pos-of-log-budget.md) | 98 | `result-track:a9e17fcf2407ae8d8477923b095637adc3722a12ce7c3d26a0087023a396d318` |
-| 10 | `theorem` | [prime_in_square_of_log_budget](../../../../NumberTheory/LegendreLogBudget.lean/declarations/prime-in-square-of-log-budget.md) | 107 | `result-track:9e60f33ff9ff6a98f41c9d3a203be5fdb5cd0bc9a8a3e94323be9d6dd045a020` |
-| 11 | `theorem` | [squareCount_pos_of_shifted_log_budget](../../../../NumberTheory/LegendreLogBudget.lean/declarations/squarecount-pos-of-shifted-log-budget.md) | 114 | `result-track:d03cb971a54db9b2f187050505da15cceb42bcd5236661a9c1a838a65239202e` |
-| 12 | `theorem` | [legendre_of_prefix_and_log_budgets](../../../../NumberTheory/LegendreLogBudget.lean/declarations/legendre-of-prefix-and-log-budgets.md) | 122 | `result-track:37b22df87986d7ee22b510b24e056d4e60fa7d60082c508eb55d8ac5abf5a67c` |
-| 13 | `theorem` | [prime_free_forces_error](../../../../NumberTheory/LegendreLogBudget.lean/declarations/prime-free-forces-error.md) | 132 | `result-track:fa2a4c1da9c5e870cf2f3ea620d391a0cae4a611fc3b28e35b084084c5a6ec09` |
-| 14 | `theorem` | [prime_free_obstructs_margin](../../../../NumberTheory/LegendreLogBudget.lean/declarations/prime-free-obstructs-margin.md) | 144 | `result-track:73864dcc2f95a1cb50f2a7385bbd23aff529456bd1b2fab850985160d194b7cc` |
-| 15 | `theorem` | [prime_free_card_mul_sq_le](../../../../NumberTheory/LegendreLogBudget.lean/declarations/prime-free-card-mul-sq-le.md) | 152 | `result-track:bdaf5572b95252c37d1601f14c592f8d4573f5a054a32351554d2a253b4d78a0` |
-| 16 | `theorem` | [squareCount_pos_on_finset_of_budget_lt](../../../../NumberTheory/LegendreLogBudget.lean/declarations/squarecount-pos-on-finset-of-budget-lt.md) | 167 | `result-track:98fd4704c16b13c7bf1ef00d5cc26c564329ad08cc514eb4d49e113ac1c63cf3` |
+| 1 | `theorem` | [squareIncrement_eq_nat_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/declarations/squareincrement-eq-nat-source.md) | 38 | `result-track:272609610582f9bb2b7d4872d7b57f28e8541963488e4bb8ef397d96eca412cc` |
+| 2 | `theorem` | [properMass_eq_higherMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/declarations/propermass-eq-highermass.md) | 45 | `result-track:700585192ec5e670119096d33ba8014b2af2271f169f1de6297fb44f3583ecf2` |
+| 3 | `theorem` | [squarePrimeIncrement_pos_iff_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/declarations/squareprimeincrement-pos-iff-count.md) | 56 | `result-track:74b8ebc7716f3607e8d964f5ea222f1faa0814586cb2c365bd141f36f26748be` |
+| 4 | `theorem` | [squarePrimeIncrement_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/declarations/squareprimeincrement-nonneg.md) | 61 | `result-track:81cc23cec50e4c3c9dd72234b3de04962948da3a80eacf6631503b534e073cf9` |
+| 5 | `theorem` | [squarePrimeIncrement_eq_zero_iff_count_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/declarations/squareprimeincrement-eq-zero-iff-count-zero.md) | 67 | `result-track:ac1d6112cefdc72af12f9ec5c36eb3e8b06b51eef71fd1996d488c0ba0f1e620` |
+| 6 | `def` | [squareCorrectionBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/declarations/squarecorrectionbudget.md) | 83 | `declaration-track:da8990f73d62118c4c31dca2ae5a4e64401554ee7cadc2a0df9d56f292a851db` |
+| 7 | `theorem` | [properMass_le_log_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/declarations/propermass-le-log-budget.md) | 87 | `result-track:cf328ac60ab0f7663b10a5b7043e56f193e60085b522333e1ad458fe115217f6` |
+| 8 | `theorem` | [squareCorrectionBudget_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/declarations/squarecorrectionbudget-nonneg.md) | 93 | `result-track:80af3c267849ba8ad882e0358d72b385d9fbb3feae16902d6d5b34b28e289329` |
+| 9 | `theorem` | [squareCount_pos_of_log_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/declarations/squarecount-pos-of-log-budget.md) | 98 | `result-track:a9e17fcf2407ae8d8477923b095637adc3722a12ce7c3d26a0087023a396d318` |
+| 10 | `theorem` | [prime_in_square_of_log_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/declarations/prime-in-square-of-log-budget.md) | 107 | `result-track:9e60f33ff9ff6a98f41c9d3a203be5fdb5cd0bc9a8a3e94323be9d6dd045a020` |
+| 11 | `theorem` | [squareCount_pos_of_shifted_log_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/declarations/squarecount-pos-of-shifted-log-budget.md) | 114 | `result-track:d03cb971a54db9b2f187050505da15cceb42bcd5236661a9c1a838a65239202e` |
+| 12 | `theorem` | [legendre_of_prefix_and_log_budgets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/declarations/legendre-of-prefix-and-log-budgets.md) | 122 | `result-track:37b22df87986d7ee22b510b24e056d4e60fa7d60082c508eb55d8ac5abf5a67c` |
+| 13 | `theorem` | [prime_free_forces_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/declarations/prime-free-forces-error.md) | 132 | `result-track:fa2a4c1da9c5e870cf2f3ea620d391a0cae4a611fc3b28e35b084084c5a6ec09` |
+| 14 | `theorem` | [prime_free_obstructs_margin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/declarations/prime-free-obstructs-margin.md) | 144 | `result-track:73864dcc2f95a1cb50f2a7385bbd23aff529456bd1b2fab850985160d194b7cc` |
+| 15 | `theorem` | [prime_free_card_mul_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/declarations/prime-free-card-mul-sq-le.md) | 152 | `result-track:bdaf5572b95252c37d1601f14c592f8d4573f5a054a32351554d2a253b4d78a0` |
+| 16 | `theorem` | [squareCount_pos_on_finset_of_budget_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/declarations/squarecount-pos-on-finset-of-budget-lt.md) | 167 | `result-track:98fd4704c16b13c7bf1ef00d5cc26c564329ad08cc514eb4d49e113ac1c63cf3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

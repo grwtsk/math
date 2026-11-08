@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationDefect.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationDefect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationDefect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationDefect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [PolarTraceSystem.compensationDefect](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationDefect.lean/declarations/polartracesystem-compensationdefect.md) | 15 | `declaration-track:946c8328df743b348b9b8af394c4faa7edb74a53d0839884d543280fccabd5cb` |
-| 2 | `theorem` | [packetEnergy_difference_eq_compensationDefect](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationDefect.lean/declarations/packetenergy-difference-eq-compensationdefect.md) | 32 | `result-track:47a44e5e3ceac2becfa719b6b9e8a64efa0354c780a36d6013c10ce563918ec7` |
+| 1 | `def` | [PolarTraceSystem.compensationDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationDefect.lean/declarations/polartracesystem-compensationdefect.md) | 15 | `declaration-track:946c8328df743b348b9b8af394c4faa7edb74a53d0839884d543280fccabd5cb` |
+| 2 | `theorem` | [packetEnergy_difference_eq_compensationDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationDefect.lean/declarations/packetenergy-difference-eq-compensationdefect.md) | 32 | `result-track:47a44e5e3ceac2becfa719b6b9e8a64efa0354c780a36d6013c10ce563918ec7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

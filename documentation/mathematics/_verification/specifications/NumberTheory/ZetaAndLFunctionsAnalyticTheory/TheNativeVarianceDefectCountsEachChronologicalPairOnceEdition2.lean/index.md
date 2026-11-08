@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheNativeVarianceDefectCountsEachChronologicalPairOnceEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheNativeVarianceDefectCountsEachChronologicalPairOnceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheNativeVarianceDefectCountsEachChronologicalPairOnceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheNativeVarianceDefectCountsEachChronologicalPairOnceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [chronologicalVariance](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheNativeVarianceDefectCountsEachChronologicalPairOnceEdition2.lean/declarations/chronologicalvariance.md) | 22 | `declaration-track:db6e1d8d8f0076f6b1cbe9dd440c447a462de7f11d738598b2b7ea7d2ba4dffb` |
-| 2 | `theorem` | [new_pair_expansion](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheNativeVarianceDefectCountsEachChronologicalPairOnceEdition2.lean/declarations/new-pair-expansion.md) | 25 | `result-track:6561733de7adae72da64abcb113297a1b54db80b749acacd0fa422a061f3b6d6` |
-| 3 | `theorem` | [chronological_variance_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheNativeVarianceDefectCountsEachChronologicalPairOnceEdition2.lean/declarations/chronological-variance-identity.md) | 40 | `result-track:888379f36b37b2a6247fa8c2dfb83174b9a6b214f2441ff6178598e4d75b8331` |
-| 4 | `theorem` | [chronologicalVariance_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheNativeVarianceDefectCountsEachChronologicalPairOnceEdition2.lean/declarations/chronologicalvariance-nonneg.md) | 51 | `result-track:8cc810d42b0652a8121294bc26010d98ef30c55e968bf2a8b7f3c1abaa5de04f` |
+| 1 | `def` | [chronologicalVariance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheNativeVarianceDefectCountsEachChronologicalPairOnceEdition2.lean/declarations/chronologicalvariance.md) | 22 | `declaration-track:db6e1d8d8f0076f6b1cbe9dd440c447a462de7f11d738598b2b7ea7d2ba4dffb` |
+| 2 | `theorem` | [new_pair_expansion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheNativeVarianceDefectCountsEachChronologicalPairOnceEdition2.lean/declarations/new-pair-expansion.md) | 25 | `result-track:6561733de7adae72da64abcb113297a1b54db80b749acacd0fa422a061f3b6d6` |
+| 3 | `theorem` | [chronological_variance_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheNativeVarianceDefectCountsEachChronologicalPairOnceEdition2.lean/declarations/chronological-variance-identity.md) | 40 | `result-track:888379f36b37b2a6247fa8c2dfb83174b9a6b214f2441ff6178598e4d75b8331` |
+| 4 | `theorem` | [chronologicalVariance_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheNativeVarianceDefectCountsEachChronologicalPairOnceEdition2.lean/declarations/chronologicalvariance-nonneg.md) | 51 | `result-track:8cc810d42b0652a8121294bc26010d98ef30c55e968bf2a8b7f3c1abaa5de04f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

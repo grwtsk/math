@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDisciplineNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDisciplineNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDisciplineNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDisciplineNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [final_policy_imports_only_theorems](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDisciplineNamespaced.lean/declarations/final-policy-imports-only-theorems.md) | 27 | `result-track:2b0f31ba685ce5d4cb13e64ba61c0e430ba8597db4cc2b60fd73fe939d069b90` |
-| 2 | `theorem` | [final_policy_has_no_contracts](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDisciplineNamespaced.lean/declarations/final-policy-has-no-contracts.md) | 32 | `result-track:037bf35a2a0619342e4c693fc53e4518b6d8a83fd77dd3f8f728af01b41e0136` |
-| 3 | `theorem` | [final_policy_specializes_to_zeta](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDisciplineNamespaced.lean/declarations/final-policy-specializes-to-zeta.md) | 37 | `result-track:2c53e3dc6843aa1d543e47284f3af0b6cbd1dea2b72801e328d4e5d758042748` |
+| 1 | `theorem` | [final_policy_imports_only_theorems](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDisciplineNamespaced.lean/declarations/final-policy-imports-only-theorems.md) | 27 | `result-track:2b0f31ba685ce5d4cb13e64ba61c0e430ba8597db4cc2b60fd73fe939d069b90` |
+| 2 | `theorem` | [final_policy_has_no_contracts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDisciplineNamespaced.lean/declarations/final-policy-has-no-contracts.md) | 32 | `result-track:037bf35a2a0619342e4c693fc53e4518b6d8a83fd77dd3f8f728af01b41e0136` |
+| 3 | `theorem` | [final_policy_specializes_to_zeta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FinalProofDisciplineNamespaced.lean/declarations/final-policy-specializes-to-zeta.md) | 37 | `result-track:2c53e3dc6843aa1d543e47284f3af0b6cbd1dea2b72801e328d4e5d758042748` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

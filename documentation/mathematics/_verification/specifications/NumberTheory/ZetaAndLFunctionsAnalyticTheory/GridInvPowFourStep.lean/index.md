@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridInvPowFourStep.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridInvPowFourStep.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridInvPowFourStep.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridInvPowFourStep.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [inv_pow_four_step](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridInvPowFourStep.lean/declarations/inv-pow-four-step.md) | 29 | `result-track:2bb34e3ea89c3ced4ba0f55b1f03ea96bb590dbf657a9a32722b014765eb8329` |
-| 2 | `lemma` | [sum_inv_pow_four_le_telescope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridInvPowFourStep.lean/declarations/sum-inv-pow-four-le-telescope.md) | 41 | `result-track:0c2bea9fc579b1607f9c7ae58c064edbe89c8399c5ddf32e0e2acf126089db7d` |
-| 3 | `lemma` | [sum_inv_pow_four_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridInvPowFourStep.lean/declarations/sum-inv-pow-four-le.md) | 63 | `result-track:1346884ec0d6c94ccb7d293880328442d335066bd4380ccb76d9761bbb29cbf2` |
-| 4 | `lemma` | [grid_const_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridInvPowFourStep.lean/declarations/grid-const-bound.md) | 75 | `result-track:5f47b0daa3f3627704b7848321be42a98484d522b1c42e3700cf341ee4c8a020` |
-| 5 | `theorem` | [grid_sum_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridInvPowFourStep.lean/declarations/grid-sum-le.md) | 95 | `result-track:df140e90457834c5b3570b4afbc5b2951b480707e7296bbcd01e227ac2f43545` |
+| 1 | `lemma` | [inv_pow_four_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridInvPowFourStep.lean/declarations/inv-pow-four-step.md) | 29 | `result-track:2bb34e3ea89c3ced4ba0f55b1f03ea96bb590dbf657a9a32722b014765eb8329` |
+| 2 | `lemma` | [sum_inv_pow_four_le_telescope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridInvPowFourStep.lean/declarations/sum-inv-pow-four-le-telescope.md) | 41 | `result-track:0c2bea9fc579b1607f9c7ae58c064edbe89c8399c5ddf32e0e2acf126089db7d` |
+| 3 | `lemma` | [sum_inv_pow_four_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridInvPowFourStep.lean/declarations/sum-inv-pow-four-le.md) | 63 | `result-track:1346884ec0d6c94ccb7d293880328442d335066bd4380ccb76d9761bbb29cbf2` |
+| 4 | `lemma` | [grid_const_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridInvPowFourStep.lean/declarations/grid-const-bound.md) | 75 | `result-track:5f47b0daa3f3627704b7848321be42a98484d522b1c42e3700cf341ee4c8a020` |
+| 5 | `theorem` | [grid_sum_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridInvPowFourStep.lean/declarations/grid-sum-le.md) | 95 | `result-track:df140e90457834c5b3570b4afbc5b2951b480707e7296bbcd01e227ac2f43545` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

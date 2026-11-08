@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectralBoundaryCriterionNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralBoundaryCriterionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralBoundaryCriterionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralBoundaryCriterionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [positivity_rules_out_offcritical_resonances](../../../../FunctionalAnalysis/SpectralBoundaryCriterionNamespaced.lean/declarations/positivity-rules-out-offcritical-resonances.md) | 27 | `result-track:0712cfb784d8031d148c3911800212cf7b0efde625d0eafcd259bcf1d44e8b41` |
-| 2 | `theorem` | [spectral_boundary_alignment_if_supplied](../../../../FunctionalAnalysis/SpectralBoundaryCriterionNamespaced.lean/declarations/spectral-boundary-alignment-if-supplied.md) | 32 | `result-track:668841c57d819a3867d41ad5a17dd426afeeb67c295f673464bcea07bc6679b0` |
+| 1 | `theorem` | [positivity_rules_out_offcritical_resonances](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralBoundaryCriterionNamespaced.lean/declarations/positivity-rules-out-offcritical-resonances.md) | 27 | `result-track:0712cfb784d8031d148c3911800212cf7b0efde625d0eafcd259bcf1d44e8b41` |
+| 2 | `theorem` | [spectral_boundary_alignment_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralBoundaryCriterionNamespaced.lean/declarations/spectral-boundary-alignment-if-supplied.md) | 32 | `result-track:668841c57d819a3867d41ad5a17dd426afeeb67c295f673464bcea07bc6679b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

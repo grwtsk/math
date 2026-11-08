@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualMomentDictionary.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualMomentDictionary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMomentDictionary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMomentDictionary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_normalized_even](../../../../MeasureAndIntegration/ActualMomentDictionary.lean/declarations/actual-normalized-even.md) | 12 | `result-track:e93b64c86804aac0ae0e5a61a355009f16870233235efea86973fb100f230bc4` |
-| 2 | `theorem` | [real_transform_dictionary](../../../../MeasureAndIntegration/ActualMomentDictionary.lean/declarations/real-transform-dictionary.md) | 23 | `result-track:c674d34e6f5d16cd36e51a5677f81c22a4c43000f43f6d0b4f0210bf658758be` |
-| 3 | `theorem` | [full_correlation_square](../../../../MeasureAndIntegration/ActualMomentDictionary.lean/declarations/full-correlation-square.md) | 34 | `result-track:2ed11e0232932963b368842be09ff475222f0de9eaab19ca23280bf7c0a45221` |
-| 4 | `theorem` | [interval_correlation_square](../../../../MeasureAndIntegration/ActualMomentDictionary.lean/declarations/interval-correlation-square.md) | 52 | `result-track:61f20ca2137ac901fdd2523ee4f3cdd80eac15c61ac0b8d72408bf2c394e73c9` |
+| 1 | `theorem` | [actual_normalized_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMomentDictionary.lean/declarations/actual-normalized-even.md) | 12 | `result-track:e93b64c86804aac0ae0e5a61a355009f16870233235efea86973fb100f230bc4` |
+| 2 | `theorem` | [real_transform_dictionary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMomentDictionary.lean/declarations/real-transform-dictionary.md) | 23 | `result-track:c674d34e6f5d16cd36e51a5677f81c22a4c43000f43f6d0b4f0210bf658758be` |
+| 3 | `theorem` | [full_correlation_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMomentDictionary.lean/declarations/full-correlation-square.md) | 34 | `result-track:2ed11e0232932963b368842be09ff475222f0de9eaab19ca23280bf7c0a45221` |
+| 4 | `theorem` | [interval_correlation_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMomentDictionary.lean/declarations/interval-correlation-square.md) | 52 | `result-track:61f20ca2137ac901fdd2523ee4f3cdd80eac15c61ac0b8d72408bf2c394e73c9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Real.lean/index.md) · [Full source](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Real.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Real.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Real.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [isometryEquivSignWeightedSumSquares](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Real.lean/declarations/isometryequivsignweightedsumsquares.md) | 35 | `declaration-track:e6359826a5e81f8946e762869813a7089ddb9f89500d9933c269520389443398` |
-| 2 | `theorem` | [equivalent_one_neg_one_weighted_sum_squared](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Real.lean/declarations/equivalent-one-neg-one-weighted-sum-squared.md) | 80 | `result-track:a527ab8451345ed7ab4822a6b451ef714dbdaeba1f9d018f4938740ee4c2b57e` |
-| 3 | `theorem` | [equivalent_one_zero_neg_one_weighted_sum_squared](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Real.lean/declarations/equivalent-one-zero-neg-one-weighted-sum-squared.md) | 91 | `result-track:82754d5dfb393cc45fbec20eef75e3f7c77e1a0eac5013e6df91ecf5539a2568` |
+| 1 | `def` | [isometryEquivSignWeightedSumSquares](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Real.lean/declarations/isometryequivsignweightedsumsquares.md) | 35 | `declaration-track:e6359826a5e81f8946e762869813a7089ddb9f89500d9933c269520389443398` |
+| 2 | `theorem` | [equivalent_one_neg_one_weighted_sum_squared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Real.lean/declarations/equivalent-one-neg-one-weighted-sum-squared.md) | 80 | `result-track:a527ab8451345ed7ab4822a6b451ef714dbdaeba1f9d018f4938740ee4c2b57e` |
+| 3 | `theorem` | [equivalent_one_zero_neg_one_weighted_sum_squared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/Real.lean/declarations/equivalent-one-zero-neg-one-weighted-sum-squared.md) | 91 | `result-track:82754d5dfb393cc45fbec20eef75e3f7c77e1a0eac5013e6df91ecf5539a2568` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

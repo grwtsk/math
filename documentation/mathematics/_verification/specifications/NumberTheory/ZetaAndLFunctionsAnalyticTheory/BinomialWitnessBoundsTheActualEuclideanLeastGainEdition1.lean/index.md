@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BinomialWitnessBoundsTheActualEuclideanLeastGainEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BinomialWitnessBoundsTheActualEuclideanLeastGainEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BinomialWitnessBoundsTheActualEuclideanLeastGainEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BinomialWitnessBoundsTheActualEuclideanLeastGainEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [leastGain](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BinomialWitnessBoundsTheActualEuclideanLeastGainEdition1.lean/declarations/leastgain.md) | 21 | `declaration-track:9b6d44ddf4493b39980f3d9b901c9bfcb88512f64eeb5f502027c4c468410a80` |
-| 2 | `theorem` | [response_smul](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BinomialWitnessBoundsTheActualEuclideanLeastGainEdition1.lean/declarations/response-smul.md) | 24 | `result-track:5cb6e54568329e27393cfa2d0ff3490f7c72403c9d54e2e4f3ebaf70e2e98082` |
-| 3 | `theorem` | [leastGain_le_unit_response](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BinomialWitnessBoundsTheActualEuclideanLeastGainEdition1.lean/declarations/leastgain-le-unit-response.md) | 34 | `result-track:078d42cc975f0414a3592136989b69df4495cba93e42c5f51748e2e18d1be313` |
-| 4 | `theorem` | [leastGain_le_ratio](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BinomialWitnessBoundsTheActualEuclideanLeastGainEdition1.lean/declarations/leastgain-le-ratio.md) | 42 | `result-track:278680978fe34f34396eb7145d346fc16945bfab0aafe878f6d2b1c39795fbf7` |
-| 5 | `theorem` | [binomial_least_gain_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BinomialWitnessBoundsTheActualEuclideanLeastGainEdition1.lean/declarations/binomial-least-gain-bound.md) | 53 | `result-track:2ce29dba65cddb791f02c15421e29bf29083207d15bd8faeba66a48c9a319284` |
+| 1 | `def` | [leastGain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BinomialWitnessBoundsTheActualEuclideanLeastGainEdition1.lean/declarations/leastgain.md) | 21 | `declaration-track:9b6d44ddf4493b39980f3d9b901c9bfcb88512f64eeb5f502027c4c468410a80` |
+| 2 | `theorem` | [response_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BinomialWitnessBoundsTheActualEuclideanLeastGainEdition1.lean/declarations/response-smul.md) | 24 | `result-track:5cb6e54568329e27393cfa2d0ff3490f7c72403c9d54e2e4f3ebaf70e2e98082` |
+| 3 | `theorem` | [leastGain_le_unit_response](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BinomialWitnessBoundsTheActualEuclideanLeastGainEdition1.lean/declarations/leastgain-le-unit-response.md) | 34 | `result-track:078d42cc975f0414a3592136989b69df4495cba93e42c5f51748e2e18d1be313` |
+| 4 | `theorem` | [leastGain_le_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BinomialWitnessBoundsTheActualEuclideanLeastGainEdition1.lean/declarations/leastgain-le-ratio.md) | 42 | `result-track:278680978fe34f34396eb7145d346fc16945bfab0aafe878f6d2b1c39795fbf7` |
+| 5 | `theorem` | [binomial_least_gain_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BinomialWitnessBoundsTheActualEuclideanLeastGainEdition1.lean/declarations/binomial-least-gain-bound.md) | 53 | `result-track:2ce29dba65cddb791f02c15421e29bf29083207d15bd8faeba66a48c9a319284` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

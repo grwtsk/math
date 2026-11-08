@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AttachNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AttachNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AttachNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AttachNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pmap](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AttachNamespaced.lean/declarations/pmap.md) | 22 | `declaration-track:a700aba20767780bca2ea0696676fd1368651905f445107f71bd67ed629b91d2` |
-| 2 | `def` | [attachImpl](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AttachNamespaced.lean/declarations/attachimpl.md) | 31 | `declaration-track:9f70e8fc71aa9609d2bfee8f2007dbc71b5b22825818ebdb133da8fc553fe0e5` |
-| 3 | `def` | [attach](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AttachNamespaced.lean/declarations/attach.md) | 35 | `declaration-track:344bc2c0dce83509971e65533bad1b70da1e1dface25dad1983ae3165029e0ac` |
-| 4 | `def` | [pmapImpl](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AttachNamespaced.lean/declarations/pmapimpl.md) | 39 | `declaration-track:dd6dc89deeea09a545b9a31b297361f1a07886e13a33aeb89c00bc67e62de6fd` |
-| 5 | `theorem` | [pmap_eq_pmapImpl](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AttachNamespaced.lean/declarations/pmap-eq-pmapimpl.md) | 42 | `result-track:8c4eb7edab6e12b5da821c896061d93dbd549f823e7b44716c25e8031cc09471` |
+| 1 | `def` | [pmap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AttachNamespaced.lean/declarations/pmap.md) | 22 | `declaration-track:a700aba20767780bca2ea0696676fd1368651905f445107f71bd67ed629b91d2` |
+| 2 | `def` | [attachImpl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AttachNamespaced.lean/declarations/attachimpl.md) | 31 | `declaration-track:9f70e8fc71aa9609d2bfee8f2007dbc71b5b22825818ebdb133da8fc553fe0e5` |
+| 3 | `def` | [attach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AttachNamespaced.lean/declarations/attach.md) | 35 | `declaration-track:344bc2c0dce83509971e65533bad1b70da1e1dface25dad1983ae3165029e0ac` |
+| 4 | `def` | [pmapImpl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AttachNamespaced.lean/declarations/pmapimpl.md) | 39 | `declaration-track:dd6dc89deeea09a545b9a31b297361f1a07886e13a33aeb89c00bc67e62de6fd` |
+| 5 | `theorem` | [pmap_eq_pmapImpl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AttachNamespaced.lean/declarations/pmap-eq-pmapimpl.md) | 42 | `result-track:8c4eb7edab6e12b5da821c896061d93dbd549f823e7b44716c25e8031cc09471` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

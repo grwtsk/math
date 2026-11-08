@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/IntervalsPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/IntervalsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/IntervalsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/IntervalsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isCompactElement](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/IntervalsPublic.lean/declarations/iscompactelement.md) | 21 | `result-track:2c90de014a51faef2dffa50406dbf863ad513f581a9572de3ed2c2100ed9e26d` |
-| 2 | `instance` | [instIsCompactlyGenerated](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/IntervalsPublic.lean/declarations/instiscompactlygenerated.md) | 30 | `declaration-track:85a5cc97ba3c140be1fe93fa37c52f468f6419e1d4ad3a7c40ab9090e2a5a62d` |
-| 3 | `theorem` | [complementedLattice_of_complementedLattice_Iic](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/IntervalsPublic.lean/declarations/complementedlattice-of-complementedlattice-iic.md) | 49 | `result-track:a2c20ba0e9fe9237b25be5e34c9e4bc343e8290ce3e954fa476b784fe961a833` |
+| 1 | `theorem` | [isCompactElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/IntervalsPublic.lean/declarations/iscompactelement.md) | 21 | `result-track:2c90de014a51faef2dffa50406dbf863ad513f581a9572de3ed2c2100ed9e26d` |
+| 2 | `instance` | [instIsCompactlyGenerated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/IntervalsPublic.lean/declarations/instiscompactlygenerated.md) | 30 | `declaration-track:85a5cc97ba3c140be1fe93fa37c52f468f6419e1d4ad3a7c40ab9090e2a5a62d` |
+| 3 | `theorem` | [complementedLattice_of_complementedLattice_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/IntervalsPublic.lean/declarations/complementedlattice-of-complementedlattice-iic.md) | 49 | `result-track:a2c20ba0e9fe9237b25be5e34c9e4bc343e8290ce3e954fa476b784fe961a833` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

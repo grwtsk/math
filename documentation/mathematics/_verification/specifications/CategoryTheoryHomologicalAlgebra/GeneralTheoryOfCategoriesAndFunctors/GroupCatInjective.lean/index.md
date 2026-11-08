@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatInjective.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatInjective.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatInjective.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatInjective.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [injective_of_injective_as_module](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatInjective.lean/declarations/injective-of-injective-as-module.md) | 36 | `result-track:5bfaa0f2dacb79eac0e992388e03856557083a394b310540e5db76d8e8cc03b5` |
-| 2 | `theorem` | [injective_as_module_of_injective_as_Ab](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatInjective.lean/declarations/injective-as-module-of-injective-as-ab.md) | 71 | `result-track:026560e1418ff22948d22908abf993e26618efa2934540d22681e9b7ce09c51e` |
-| 3 | `instance` | [injective_of_divisible](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatInjective.lean/declarations/injective-of-divisible.md) | 109 | `declaration-track:b5300052fa5e1aae847e8bb9b082a6d1801c3d55423faa96843e613d32ff1939` |
+| 1 | `theorem` | [injective_of_injective_as_module](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatInjective.lean/declarations/injective-of-injective-as-module.md) | 36 | `result-track:5bfaa0f2dacb79eac0e992388e03856557083a394b310540e5db76d8e8cc03b5` |
+| 2 | `theorem` | [injective_as_module_of_injective_as_Ab](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatInjective.lean/declarations/injective-as-module-of-injective-as-ab.md) | 71 | `result-track:026560e1418ff22948d22908abf993e26618efa2934540d22681e9b7ce09c51e` |
+| 3 | `instance` | [injective_of_divisible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatInjective.lean/declarations/injective-of-divisible.md) | 109 | `declaration-track:b5300052fa5e1aae847e8bb9b082a6d1801c3d55423faa96843e613d32ff1939` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

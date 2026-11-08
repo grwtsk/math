@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [norm_map_le_sqrt_opNorm_mul](../../../../FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/declarations/norm-map-le-sqrt-opnorm-mul.md) | 35 | `result-track:cc26ca3375153ee9c6c6cd39e9312ddc6a66acd7cda045e50bea05620bb1f3d4` |
-| 2 | `theorem` | [nnnorm_map_le_sqrt_opNNNorm_mul](../../../../FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/declarations/nnnorm-map-le-sqrt-opnnnorm-mul.md) | 44 | `result-track:36fc54a998eb3fa48724ef65c8f4e57a81d4390678eff6cdf352bea23847fb01` |
-| 3 | `theorem` | [norm_map_sq_le_opNorm_mul](../../../../FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/declarations/norm-map-sq-le-opnorm-mul.md) | 48 | `result-track:c25dc4f92e6b9d3eb28f4f0edbe3a3615fe5ac8096872464dec5de6d081f75d0` |
-| 4 | `theorem` | [nnnorm_map_sq_le_opNNNorm_mul](../../../../FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/declarations/nnnorm-map-sq-le-opnnnorm-mul.md) | 52 | `result-track:36d798467929e1fdb74bc749c248a3de3c275845756a975e9174d730a306c98c` |
-| 5 | `theorem` | [tendsto_nhds_opNorm](../../../../FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/declarations/tendsto-nhds-opnorm.md) | 56 | `result-track:181c5ed6426240f4f65e98c91285ddbadca9de0713fc234c6e9dea62facb4ac7` |
-| 6 | `theorem` | [ofReal_opNorm_eq_map_one](../../../../FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/declarations/ofreal-opnorm-eq-map-one.md) | 82 | `result-track:38ef14101e665991ddfa8d528679238e474d2841b60914ab1fe13611bf1cf62b` |
-| 7 | `lemma` | [im_apply_eq_zero_of_tendsto_nhds_opNorm](../../../../FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/declarations/im-apply-eq-zero-of-tendsto-nhds-opnorm.md) | 95 | `result-track:b0158db7f0b67910ada795ca33e7cfa7e499799d88451bac54372d2baa1e2768` |
-| 8 | `theorem` | [monotone_iff_tendsto_nhds_opNorm](../../../../FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/declarations/monotone-iff-tendsto-nhds-opnorm.md) | 123 | `result-track:162aa6ebadeec1e679200dba01fe69b07984e70bd5dc8434f7f759c2ae0b79c6` |
-| 9 | `theorem` | [monotone_iff_opNorm_eq_map_one](../../../../FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/declarations/monotone-iff-opnorm-eq-map-one.md) | 138 | `result-track:dcf1337f0d40a6f7db48a0283c1ca600947d330ddb678957cfb451c0741346ff` |
+| 1 | `theorem` | [norm_map_le_sqrt_opNorm_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/declarations/norm-map-le-sqrt-opnorm-mul.md) | 35 | `result-track:cc26ca3375153ee9c6c6cd39e9312ddc6a66acd7cda045e50bea05620bb1f3d4` |
+| 2 | `theorem` | [nnnorm_map_le_sqrt_opNNNorm_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/declarations/nnnorm-map-le-sqrt-opnnnorm-mul.md) | 44 | `result-track:36fc54a998eb3fa48724ef65c8f4e57a81d4390678eff6cdf352bea23847fb01` |
+| 3 | `theorem` | [norm_map_sq_le_opNorm_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/declarations/norm-map-sq-le-opnorm-mul.md) | 48 | `result-track:c25dc4f92e6b9d3eb28f4f0edbe3a3615fe5ac8096872464dec5de6d081f75d0` |
+| 4 | `theorem` | [nnnorm_map_sq_le_opNNNorm_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/declarations/nnnorm-map-sq-le-opnnnorm-mul.md) | 52 | `result-track:36d798467929e1fdb74bc749c248a3de3c275845756a975e9174d730a306c98c` |
+| 5 | `theorem` | [tendsto_nhds_opNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/declarations/tendsto-nhds-opnorm.md) | 56 | `result-track:181c5ed6426240f4f65e98c91285ddbadca9de0713fc234c6e9dea62facb4ac7` |
+| 6 | `theorem` | [ofReal_opNorm_eq_map_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/declarations/ofreal-opnorm-eq-map-one.md) | 82 | `result-track:38ef14101e665991ddfa8d528679238e474d2841b60914ab1fe13611bf1cf62b` |
+| 7 | `lemma` | [im_apply_eq_zero_of_tendsto_nhds_opNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/declarations/im-apply-eq-zero-of-tendsto-nhds-opnorm.md) | 95 | `result-track:b0158db7f0b67910ada795ca33e7cfa7e499799d88451bac54372d2baa1e2768` |
+| 8 | `theorem` | [monotone_iff_tendsto_nhds_opNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/declarations/monotone-iff-tendsto-nhds-opnorm.md) | 123 | `result-track:162aa6ebadeec1e679200dba01fe69b07984e70bd5dc8434f7f759c2ae0b79c6` |
+| 9 | `theorem` | [monotone_iff_opNorm_eq_map_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositiveLinearFunctionalNamespacedPublic.lean/declarations/monotone-iff-opnorm-eq-map-one.md) | 138 | `result-track:dcf1337f0d40a6f7db48a0283c1ca600947d330ddb678957cfb451c0741346ff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LowMassSpecifications.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LowMassSpecifications.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowMassSpecifications.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowMassSpecifications.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathlib` — import line 9; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Analysis.Spectral.TwoHeightMoments`](../../../../OperatorTheory/TwoHeightMoments.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.Analysis.Spectral.TwoHeightMoments`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/TwoHeightMoments.lean/index.md) — import line 10; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [lowMass](../../../../MeasureAndIntegration/LowMassSpecifications.lean/declarations/lowmass.md) | 24 | `declaration-track:013ec92e2ff1b62c2562ae7d65de979b57664bfb6ecdb55d7b68c8eb4c3a3ed6` |
-| 2 | `def` | [response](../../../../MeasureAndIntegration/LowMassSpecifications.lean/declarations/response.md) | 28 | `declaration-track:be50d38f27ca2482a5d823c98db9094e3da72fd34c7f9607a5caeaa6e69d5cde` |
-| 3 | `def` | [inverseMoment](../../../../MeasureAndIntegration/LowMassSpecifications.lean/declarations/inversemoment.md) | 30 | `declaration-track:7689ac2627907454414350b1a2262372e68ce5829c623fcd3069493757bcde37` |
-| 4 | `def` | [GapFreeInverseMomentGoal](../../../../MeasureAndIntegration/LowMassSpecifications.lean/declarations/gapfreeinversemomentgoal.md) | 32 | `declaration-track:2819271a8b08a107cbdb06dd2eff5ed41d92a55de70d7c5911e9e0828e94d0ca` |
+| 1 | `def` | [lowMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowMassSpecifications.lean/declarations/lowmass.md) | 24 | `declaration-track:013ec92e2ff1b62c2562ae7d65de979b57664bfb6ecdb55d7b68c8eb4c3a3ed6` |
+| 2 | `def` | [response](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowMassSpecifications.lean/declarations/response.md) | 28 | `declaration-track:be50d38f27ca2482a5d823c98db9094e3da72fd34c7f9607a5caeaa6e69d5cde` |
+| 3 | `def` | [inverseMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowMassSpecifications.lean/declarations/inversemoment.md) | 30 | `declaration-track:7689ac2627907454414350b1a2262372e68ce5829c623fcd3069493757bcde37` |
+| 4 | `def` | [GapFreeInverseMomentGoal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowMassSpecifications.lean/declarations/gapfreeinversemomentgoal.md) | 32 | `declaration-track:2819271a8b08a107cbdb06dd2eff5ed41d92a55de70d7c5911e9e0828e94d0ca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MapBijectivePublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MapBijectivePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MapBijectivePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MapBijectivePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Functor.mapExt_bijective_of_preservesProjectiveObjects](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MapBijectivePublic.lean/declarations/functor-mapext-bijective-of-preservesprojectiveobjects.md) | 43 | `result-track:44848e38643e0f5b6dfa1c71b8646021ab320640c01746209c3ea70d3c1b2419` |
-| 2 | `lemma` | [Functor.mapExt_bijective_of_preservesInjectiveObjects](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MapBijectivePublic.lean/declarations/functor-mapext-bijective-of-preservesinjectiveobjects.md) | 65 | `result-track:cc0b2d9888baebde9e26687430c434450d57fcec5a9640ffa9f26c76b8a2ebdb` |
+| 1 | `lemma` | [Functor.mapExt_bijective_of_preservesProjectiveObjects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MapBijectivePublic.lean/declarations/functor-mapext-bijective-of-preservesprojectiveobjects.md) | 43 | `result-track:44848e38643e0f5b6dfa1c71b8646021ab320640c01746209c3ea70d3c1b2419` |
+| 2 | `lemma` | [Functor.mapExt_bijective_of_preservesInjectiveObjects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MapBijectivePublic.lean/declarations/functor-mapext-bijective-of-preservesinjectiveobjects.md) | 65 | `result-track:cc0b2d9888baebde9e26687430c434450d57fcec5a9640ffa9f26c76b8a2ebdb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/MomentPathPublic.lean/index.md) · [Full source](../../../../Combinatorics/MomentPathPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MomentPathPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MomentPathPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,21 +57,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [VaughanAtomKind](../../../../Combinatorics/MomentPathPublic.lean/declarations/vaughanatomkind.md) | 34 | `declaration-track:1f4c1ff0edc389644352ff120d6077465f2448cd3e59b9eef1f189cb08e5c10f` |
-| 2 | `structure` | [ConductorThreeCoefficientPacketFrame](../../../../Combinatorics/MomentPathPublic.lean/declarations/conductorthreecoefficientpacketframe.md) | 44 | `declaration-track:97bb4b7b9d8bee1ea03aaa8f9938c5d32e0c33a2902d7598444dfbe6603338f0` |
-| 3 | `def` | [entryFiber](../../../../Combinatorics/MomentPathPublic.lean/declarations/entryfiber.md) | 61 | `declaration-track:71f534c6e4b00b530485628207a0f9ca4eaff976c3e87b27b6f2cc3661022328` |
-| 4 | `theorem` | [entryFiber_disjoint_of_ne](../../../../Combinatorics/MomentPathPublic.lean/declarations/entryfiber-disjoint-of-ne.md) | 69 | `result-track:e3ed98b1524173bb7a76e9e70085ecce56afbc65d2b7a4682d19090a3ed9da09` |
-| 5 | `theorem` | [momentClock_covers_atoms](../../../../Combinatorics/MomentPathPublic.lean/declarations/momentclock-covers-atoms.md) | 82 | `result-track:a342836b78c675647e92e4fed649df3bda3377e4d57f99cade4f656bfca4dad4` |
-| 6 | `def` | [entryState](../../../../Combinatorics/MomentPathPublic.lean/declarations/entrystate.md) | 93 | `declaration-track:55a0bac6a434be75fe98edbbaf44a227530eea6f8ecad682f157cfff9f9e0529` |
-| 7 | `def` | [packetSynthesis](../../../../Combinatorics/MomentPathPublic.lean/declarations/packetsynthesis.md) | 100 | `declaration-track:4332b56ffed6c42df28d9cc250f12d6a968127cb2ea69f044d53ce65e9dcca8d` |
-| 8 | `def` | [momentCoefficients](../../../../Combinatorics/MomentPathPublic.lean/declarations/momentcoefficients.md) | 114 | `declaration-track:b8260ed9544d0e0c8bda30ef586d5fb2a8d07a8175cd0965ca6f98b333ec44be` |
-| 9 | `def` | [momentState](../../../../Combinatorics/MomentPathPublic.lean/declarations/momentstate.md) | 122 | `declaration-track:b99e0ef5bcfb1531d97820d84726e9a34703203d0007d6ce52bbc5fd4951d6c3` |
-| 10 | `theorem` | [packetSynthesis_momentCoefficients](../../../../Combinatorics/MomentPathPublic.lean/declarations/packetsynthesis-momentcoefficients.md) | 129 | `result-track:5e742bc9a240676d65ef8e4376ba96bc7fe6f4b24f53ef6359e4c151decda560` |
-| 11 | `theorem` | [atom_enters_at_unique_moment](../../../../Combinatorics/MomentPathPublic.lean/declarations/atom-enters-at-unique-moment.md) | 143 | `result-track:44c9a7d47a3f154c1c01bd6dba09cef8c9fe4cd2bfade9285c5d0edefb71338b` |
-| 12 | `theorem` | [amplitude_moment_eq_psi](../../../../Combinatorics/MomentPathPublic.lean/declarations/amplitude-moment-eq-psi.md) | 153 | `result-track:0cbb64139a6ea76697f0a61a893b295a0a5d444afcd3dca4175d49bf4eceaea6` |
-| 13 | `theorem` | [readout_momentState](../../../../Combinatorics/MomentPathPublic.lean/declarations/readout-momentstate.md) | 240 | `result-track:db24f4542083ca25613094cc41a965fc037abe54e4e42c9e8b47f1ef7b527e42` |
-| 14 | `theorem` | [momentState_succ_sub](../../../../Combinatorics/MomentPathPublic.lean/declarations/momentstate-succ-sub.md) | 262 | `result-track:d072379af440159391f032276e7dafada03a0961f5382bf360ba5f2b79476900` |
-| 15 | `def` | [canonicalRankOneCoefficientFrame](../../../../Combinatorics/MomentPathPublic.lean/declarations/canonicalrankonecoefficientframe.md) | 297 | `declaration-track:f488f1b9b2e847ebc03635a1a413d308b8927eb8045e41b2d351d786fd66a9cf` |
+| 1 | `inductive` | [VaughanAtomKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MomentPathPublic.lean/declarations/vaughanatomkind.md) | 34 | `declaration-track:1f4c1ff0edc389644352ff120d6077465f2448cd3e59b9eef1f189cb08e5c10f` |
+| 2 | `structure` | [ConductorThreeCoefficientPacketFrame](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MomentPathPublic.lean/declarations/conductorthreecoefficientpacketframe.md) | 44 | `declaration-track:97bb4b7b9d8bee1ea03aaa8f9938c5d32e0c33a2902d7598444dfbe6603338f0` |
+| 3 | `def` | [entryFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MomentPathPublic.lean/declarations/entryfiber.md) | 61 | `declaration-track:71f534c6e4b00b530485628207a0f9ca4eaff976c3e87b27b6f2cc3661022328` |
+| 4 | `theorem` | [entryFiber_disjoint_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MomentPathPublic.lean/declarations/entryfiber-disjoint-of-ne.md) | 69 | `result-track:e3ed98b1524173bb7a76e9e70085ecce56afbc65d2b7a4682d19090a3ed9da09` |
+| 5 | `theorem` | [momentClock_covers_atoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MomentPathPublic.lean/declarations/momentclock-covers-atoms.md) | 82 | `result-track:a342836b78c675647e92e4fed649df3bda3377e4d57f99cade4f656bfca4dad4` |
+| 6 | `def` | [entryState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MomentPathPublic.lean/declarations/entrystate.md) | 93 | `declaration-track:55a0bac6a434be75fe98edbbaf44a227530eea6f8ecad682f157cfff9f9e0529` |
+| 7 | `def` | [packetSynthesis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MomentPathPublic.lean/declarations/packetsynthesis.md) | 100 | `declaration-track:4332b56ffed6c42df28d9cc250f12d6a968127cb2ea69f044d53ce65e9dcca8d` |
+| 8 | `def` | [momentCoefficients](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MomentPathPublic.lean/declarations/momentcoefficients.md) | 114 | `declaration-track:b8260ed9544d0e0c8bda30ef586d5fb2a8d07a8175cd0965ca6f98b333ec44be` |
+| 9 | `def` | [momentState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MomentPathPublic.lean/declarations/momentstate.md) | 122 | `declaration-track:b99e0ef5bcfb1531d97820d84726e9a34703203d0007d6ce52bbc5fd4951d6c3` |
+| 10 | `theorem` | [packetSynthesis_momentCoefficients](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MomentPathPublic.lean/declarations/packetsynthesis-momentcoefficients.md) | 129 | `result-track:5e742bc9a240676d65ef8e4376ba96bc7fe6f4b24f53ef6359e4c151decda560` |
+| 11 | `theorem` | [atom_enters_at_unique_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MomentPathPublic.lean/declarations/atom-enters-at-unique-moment.md) | 143 | `result-track:44c9a7d47a3f154c1c01bd6dba09cef8c9fe4cd2bfade9285c5d0edefb71338b` |
+| 12 | `theorem` | [amplitude_moment_eq_psi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MomentPathPublic.lean/declarations/amplitude-moment-eq-psi.md) | 153 | `result-track:0cbb64139a6ea76697f0a61a893b295a0a5d444afcd3dca4175d49bf4eceaea6` |
+| 13 | `theorem` | [readout_momentState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MomentPathPublic.lean/declarations/readout-momentstate.md) | 240 | `result-track:db24f4542083ca25613094cc41a965fc037abe54e4e42c9e8b47f1ef7b527e42` |
+| 14 | `theorem` | [momentState_succ_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MomentPathPublic.lean/declarations/momentstate-succ-sub.md) | 262 | `result-track:d072379af440159391f032276e7dafada03a0961f5382bf360ba5f2b79476900` |
+| 15 | `def` | [canonicalRankOneCoefficientFrame](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MomentPathPublic.lean/declarations/canonicalrankonecoefficientframe.md) | 297 | `declaration-track:f488f1b9b2e847ebc03635a1a413d308b8927eb8045e41b2d351d786fd66a9cf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSq.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSq.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSq.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSq.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [exact_shortComplex](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSq.lean/declarations/exact-shortcomplex.md) | 37 | `result-track:0783864f0c5e4862f8f73bbc0ed3c35a7617d001d6f705d392f818d9cbc0edea` |
-| 2 | `lemma` | [hom_eq_add_up_to_refinements](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSq.lean/declarations/hom-eq-add-up-to-refinements.md) | 52 | `result-track:d7c413fe44c7b7ec955bb0ed92e6e39bfdcff886ccedc8c3bacf75fdef06a3b8` |
-| 3 | `lemma` | [mono_of_isPullback_of_mono](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSq.lean/declarations/mono-of-ispullback-of-mono.md) | 78 | `result-track:647a56bf6d5b791515f44b544c8c093e3345842e4943a638d0247a5c99a3dbda` |
-| 4 | `lemma` | [exact_shortComplex'](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSq.lean/declarations/exact-shortcomplex-source-edition-2.md) | 99 | `result-track:47e15c92551647a7a8024d6b997d2a58670e8c49b643c28deedf5e872bc9ba94` |
+| 1 | `lemma` | [exact_shortComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSq.lean/declarations/exact-shortcomplex.md) | 37 | `result-track:0783864f0c5e4862f8f73bbc0ed3c35a7617d001d6f705d392f818d9cbc0edea` |
+| 2 | `lemma` | [hom_eq_add_up_to_refinements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSq.lean/declarations/hom-eq-add-up-to-refinements.md) | 52 | `result-track:d7c413fe44c7b7ec955bb0ed92e6e39bfdcff886ccedc8c3bacf75fdef06a3b8` |
+| 3 | `lemma` | [mono_of_isPullback_of_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSq.lean/declarations/mono-of-ispullback-of-mono.md) | 78 | `result-track:647a56bf6d5b791515f44b544c8c093e3345842e4943a638d0247a5c99a3dbda` |
+| 4 | `lemma` | [exact_shortComplex'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSq.lean/declarations/exact-shortcomplex-source-edition-2.md) | 99 | `result-track:47e15c92551647a7a8024d6b997d2a58670e8c49b643c28deedf5e872bc9ba94` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

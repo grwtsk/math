@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedRecipeFixedPoint.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedRecipeFixedPoint.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedRecipeFixedPoint.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedRecipeFixedPoint.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Archive.RuleEngine` — import line 19; external provider; requires a separately pinned dependency.
-- [Fixed Point And Copy Data](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedPointAndCopyData.lean/index.md) — import line 21; pinned internal source present.
+- [Fixed Point And Copy Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedPointAndCopyData.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FixedPointRecipe](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedRecipeFixedPoint.lean/declarations/fixedpointrecipe.md) | 39 | `declaration-track:c675afef96211b89954b524c917c9f6e133beae51dcc131f4671af75fc02aef8` |
-| 2 | `theorem` | [fixedPointRecipe_realizes_self](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedRecipeFixedPoint.lean/declarations/fixedpointrecipe-realizes-self.md) | 51 | `result-track:2745834dc07071c7220e029344382184e99ea7f38043efb6665b5c21454cbe42` |
+| 1 | `structure` | [FixedPointRecipe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedRecipeFixedPoint.lean/declarations/fixedpointrecipe.md) | 39 | `declaration-track:c675afef96211b89954b524c917c9f6e133beae51dcc131f4671af75fc02aef8` |
+| 2 | `theorem` | [fixedPointRecipe_realizes_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedRecipeFixedPoint.lean/declarations/fixedpointrecipe-realizes-self.md) | 51 | `result-track:2745834dc07071c7220e029344382184e99ea7f38043efb6665b5c21454cbe42` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

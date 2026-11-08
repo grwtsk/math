@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LocalPropertiesIntegrallyClosed.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LocalPropertiesIntegrallyClosed.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesIntegrallyClosed.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesIntegrallyClosed.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsIntegrallyClosed.iInf](../../../../CommutativeAlgebra/LocalPropertiesIntegrallyClosed.lean/declarations/isintegrallyclosed-iinf.md) | 27 | `result-track:f27211c1b884edfbd062aa81f3548809720dbb99a9374c6fa4006a694eca0366` |
-| 2 | `theorem` | [IsIntegrallyClosed.of_iInf_eq_bot](../../../../CommutativeAlgebra/LocalPropertiesIntegrallyClosed.lean/declarations/isintegrallyclosed-of-iinf-eq-bot.md) | 38 | `result-track:fa5e4e74279cccec8e296ad45366b9fd8fce76cfd45dbc1fc0497072821fed99` |
-| 3 | `theorem` | [IsIntegrallyClosed.of_localization_submonoid](../../../../CommutativeAlgebra/LocalPropertiesIntegrallyClosed.lean/declarations/isintegrallyclosed-of-localization-submonoid.md) | 44 | `result-track:f16ea5e5e8ae3671a62a787005c03c8efb97f10a64fb1ce3d9daa4180dc1b467` |
-| 4 | `theorem` | [IsIntegrallyClosed.of_localization](../../../../CommutativeAlgebra/LocalPropertiesIntegrallyClosed.lean/declarations/isintegrallyclosed-of-localization.md) | 54 | `result-track:108310fcff082b051c9cc509b9f56f8e962ab1305e2f013cbd01bf1d6047c6d1` |
-| 5 | `theorem` | [IsIntegrallyClosed.of_localization_maximal](../../../../CommutativeAlgebra/LocalPropertiesIntegrallyClosed.lean/declarations/isintegrallyclosed-of-localization-maximal.md) | 65 | `result-track:4822787386f5007472de36f56280fb0cbebebc38c83dd5531e2418faae51290a` |
-| 6 | `theorem` | [isIntegrallyClosed_ofLocalizationMaximal](../../../../CommutativeAlgebra/LocalPropertiesIntegrallyClosed.lean/declarations/isintegrallyclosed-oflocalizationmaximal.md) | 77 | `result-track:92df4b40a1bdd805aef7e5d383f255b51d574d8e2f5ee450cf351cfdd40465ef` |
+| 1 | `theorem` | [IsIntegrallyClosed.iInf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesIntegrallyClosed.lean/declarations/isintegrallyclosed-iinf.md) | 27 | `result-track:f27211c1b884edfbd062aa81f3548809720dbb99a9374c6fa4006a694eca0366` |
+| 2 | `theorem` | [IsIntegrallyClosed.of_iInf_eq_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesIntegrallyClosed.lean/declarations/isintegrallyclosed-of-iinf-eq-bot.md) | 38 | `result-track:fa5e4e74279cccec8e296ad45366b9fd8fce76cfd45dbc1fc0497072821fed99` |
+| 3 | `theorem` | [IsIntegrallyClosed.of_localization_submonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesIntegrallyClosed.lean/declarations/isintegrallyclosed-of-localization-submonoid.md) | 44 | `result-track:f16ea5e5e8ae3671a62a787005c03c8efb97f10a64fb1ce3d9daa4180dc1b467` |
+| 4 | `theorem` | [IsIntegrallyClosed.of_localization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesIntegrallyClosed.lean/declarations/isintegrallyclosed-of-localization.md) | 54 | `result-track:108310fcff082b051c9cc509b9f56f8e962ab1305e2f013cbd01bf1d6047c6d1` |
+| 5 | `theorem` | [IsIntegrallyClosed.of_localization_maximal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesIntegrallyClosed.lean/declarations/isintegrallyclosed-of-localization-maximal.md) | 65 | `result-track:4822787386f5007472de36f56280fb0cbebebc38c83dd5531e2418faae51290a` |
+| 6 | `theorem` | [isIntegrallyClosed_ofLocalizationMaximal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesIntegrallyClosed.lean/declarations/isintegrallyclosed-oflocalizationmaximal.md) | 77 | `result-track:92df4b40a1bdd805aef7e5d383f255b51d574d8e2f5ee450cf351cfdd40465ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

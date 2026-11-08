@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryBridge.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedConstructedBasePrism](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryBridge.lean/declarations/certifiedconstructedbaseprism.md) | 20 | `declaration-track:d735c19f574572088609f7d2e97b5c327e78ce79cf99a0131859d63583c1a38b` |
-| 2 | `structure` | [PrismaticSurgeryWitness](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryBridge.lean/declarations/prismaticsurgerywitness.md) | 29 | `declaration-track:5ce56303a2d95da0f0817bc92f1c00d3f73dbc60abab6f4405b2f85d4b3daff1` |
-| 3 | `theorem` | [targets_same_global_locus](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryBridge.lean/declarations/targets-same-global-locus.md) | 50 | `result-track:8f64d9152a1a8e1f104bd72bd38fde7478d99965fefe5c64213882eceef05966` |
-| 4 | `theorem` | [fabric_boundary_compatible](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryBridge.lean/declarations/fabric-boundary-compatible.md) | 61 | `result-track:125db004804b38aed6a5d720fe892fc3829245c89501b70f6827fc3b4dca42a3` |
-| 5 | `theorem` | [realization_commutes](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryBridge.lean/declarations/realization-commutes.md) | 72 | `result-track:d20d6d794da42a4f1989f9bfd88f6e3572622dba3e02fcd35f3a662f19a305cb` |
+| 1 | `structure` | [CertifiedConstructedBasePrism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryBridge.lean/declarations/certifiedconstructedbaseprism.md) | 20 | `declaration-track:d735c19f574572088609f7d2e97b5c327e78ce79cf99a0131859d63583c1a38b` |
+| 2 | `structure` | [PrismaticSurgeryWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryBridge.lean/declarations/prismaticsurgerywitness.md) | 29 | `declaration-track:5ce56303a2d95da0f0817bc92f1c00d3f73dbc60abab6f4405b2f85d4b3daff1` |
+| 3 | `theorem` | [targets_same_global_locus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryBridge.lean/declarations/targets-same-global-locus.md) | 50 | `result-track:8f64d9152a1a8e1f104bd72bd38fde7478d99965fefe5c64213882eceef05966` |
+| 4 | `theorem` | [fabric_boundary_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryBridge.lean/declarations/fabric-boundary-compatible.md) | 61 | `result-track:125db004804b38aed6a5d720fe892fc3829245c89501b70f6827fc3b4dca42a3` |
+| 5 | `theorem` | [realization_commutes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryBridge.lean/declarations/realization-commutes.md) | 72 | `result-track:d20d6d794da42a4f1989f9bfd88f6e3572622dba3e02fcd35f3a662f19a305cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

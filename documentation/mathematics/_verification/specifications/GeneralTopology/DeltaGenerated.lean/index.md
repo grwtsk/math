@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/DeltaGenerated.lean/index.md) · [Full source](../../../../GeneralTopology/DeltaGenerated.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeltaGenerated.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeltaGenerated.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,22 +59,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DeltaGenerated](../../../../GeneralTopology/DeltaGenerated.lean/declarations/deltagenerated.md) | 28 | `declaration-track:e370ba5bfe14952a6c9429d047bec8c03d4295c13cf494e9ae7effef35fe7063` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/DeltaGenerated.lean/declarations/instance.md) | 36 | `declaration-track:06ee2bf63edac9b3c779d87b2102c6be715462896c121c0e9affb193f0e357f7` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/DeltaGenerated.lean/declarations/instance-source-edition-6.md) | 41 | `declaration-track:ca1e1f249aba5a280e2d44320f57cfd34a78e46cdf5722ada73c5b4db1f4df5a` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/DeltaGenerated.lean/declarations/instance-source-edition-2.md) | 44 | `declaration-track:560bb921af4a8a9f69828d49e0b54a4cbc243239fdec903c8b4bd2ade735397d` |
-| 5 | `abbrev` | [of](../../../../GeneralTopology/DeltaGenerated.lean/declarations/of.md) | 48 | `declaration-track:71405613c0a377808339b10971f493135ccc3cb226d880b042ba03c8ebdb8df4` |
-| 6 | `def` | [deltaGeneratedToTop](../../../../GeneralTopology/DeltaGenerated.lean/declarations/deltageneratedtotop.md) | 54 | `declaration-track:07bf0e0c06cb5b100080452b4c6a35dba3d06b40daa6b4d2d00bfd413534f580` |
-| 7 | `def` | [fullyFaithfulDeltaGeneratedToTop](../../../../GeneralTopology/DeltaGenerated.lean/declarations/fullyfaithfuldeltageneratedtotop.md) | 58 | `declaration-track:cf4f1804a77d8c64505da9a8079f3d02036851c4003f062e0831d10e82a5114b` |
-| 8 | `instance` | [(anonymous)](../../../../GeneralTopology/DeltaGenerated.lean/declarations/instance-source-edition-4.md) | 61 | `declaration-track:845daf3dd4b59ce06425550bc14671b54187574eed01f037bd341927e7b38f3d` |
-| 9 | `instance` | [(anonymous)](../../../../GeneralTopology/DeltaGenerated.lean/declarations/instance-source-edition-5.md) | 63 | `declaration-track:9ceea74f64c62015319181ce137030e30a4afadfb9ed25845b2a9b55d54edc31` |
-| 10 | `def` | [topToDeltaGenerated](../../../../GeneralTopology/DeltaGenerated.lean/declarations/toptodeltagenerated.md) | 68 | `declaration-track:111b44069b1398cdd448a62cc9b62f1e2a2237467cf9f5b492ecc9c11e7aa878` |
-| 11 | `instance` | [(anonymous)](../../../../GeneralTopology/DeltaGenerated.lean/declarations/instance-source-edition-3.md) | 73 | `declaration-track:75e3351ebdb370e84e538a9bcf4a2573a4c9d984b7d0b14fe77782bf9b51529f` |
-| 12 | `def` | [coreflectorAdjunction](../../../../GeneralTopology/DeltaGenerated.lean/declarations/coreflectoradjunction.md) | 77 | `declaration-track:87b936ad445b7ded67358cae1adb2aafb3f0410ded13c65227ffca498d0b7526` |
-| 13 | `instance` | [deltaGeneratedToTop.coreflective](../../../../GeneralTopology/DeltaGenerated.lean/declarations/deltageneratedtotop-coreflective.md) | 85 | `declaration-track:164c664f70764dd6b2cbbcc31c1d98f6e45c7b916a019c09a55893364e720cc5` |
-| 14 | `instance` | [deltaGeneratedToTop.createsColimits](../../../../GeneralTopology/DeltaGenerated.lean/declarations/deltageneratedtotop-createscolimits.md) | 89 | `declaration-track:78a6741412f035f0cbebf332e12b68117b10a10de23112c8972ac8d3245daa26` |
-| 15 | `instance` | [hasLimits](../../../../GeneralTopology/DeltaGenerated.lean/declarations/haslimits.md) | 92 | `declaration-track:844a9c0992ce6562b30331b34da65ac7fbfe965648d0d24f9437257fa2afbb48` |
-| 16 | `instance` | [hasColimits](../../../../GeneralTopology/DeltaGenerated.lean/declarations/hascolimits.md) | 95 | `declaration-track:e87bfe867b3a4a85963cf871eb738b2e5765c6981c66aee00464bc4fc0a6fecc` |
+| 1 | `structure` | [DeltaGenerated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeltaGenerated.lean/declarations/deltagenerated.md) | 28 | `declaration-track:e370ba5bfe14952a6c9429d047bec8c03d4295c13cf494e9ae7effef35fe7063` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeltaGenerated.lean/declarations/instance.md) | 36 | `declaration-track:06ee2bf63edac9b3c779d87b2102c6be715462896c121c0e9affb193f0e357f7` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeltaGenerated.lean/declarations/instance-source-edition-6.md) | 41 | `declaration-track:ca1e1f249aba5a280e2d44320f57cfd34a78e46cdf5722ada73c5b4db1f4df5a` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeltaGenerated.lean/declarations/instance-source-edition-2.md) | 44 | `declaration-track:560bb921af4a8a9f69828d49e0b54a4cbc243239fdec903c8b4bd2ade735397d` |
+| 5 | `abbrev` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeltaGenerated.lean/declarations/of.md) | 48 | `declaration-track:71405613c0a377808339b10971f493135ccc3cb226d880b042ba03c8ebdb8df4` |
+| 6 | `def` | [deltaGeneratedToTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeltaGenerated.lean/declarations/deltageneratedtotop.md) | 54 | `declaration-track:07bf0e0c06cb5b100080452b4c6a35dba3d06b40daa6b4d2d00bfd413534f580` |
+| 7 | `def` | [fullyFaithfulDeltaGeneratedToTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeltaGenerated.lean/declarations/fullyfaithfuldeltageneratedtotop.md) | 58 | `declaration-track:cf4f1804a77d8c64505da9a8079f3d02036851c4003f062e0831d10e82a5114b` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeltaGenerated.lean/declarations/instance-source-edition-4.md) | 61 | `declaration-track:845daf3dd4b59ce06425550bc14671b54187574eed01f037bd341927e7b38f3d` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeltaGenerated.lean/declarations/instance-source-edition-5.md) | 63 | `declaration-track:9ceea74f64c62015319181ce137030e30a4afadfb9ed25845b2a9b55d54edc31` |
+| 10 | `def` | [topToDeltaGenerated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeltaGenerated.lean/declarations/toptodeltagenerated.md) | 68 | `declaration-track:111b44069b1398cdd448a62cc9b62f1e2a2237467cf9f5b492ecc9c11e7aa878` |
+| 11 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeltaGenerated.lean/declarations/instance-source-edition-3.md) | 73 | `declaration-track:75e3351ebdb370e84e538a9bcf4a2573a4c9d984b7d0b14fe77782bf9b51529f` |
+| 12 | `def` | [coreflectorAdjunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeltaGenerated.lean/declarations/coreflectoradjunction.md) | 77 | `declaration-track:87b936ad445b7ded67358cae1adb2aafb3f0410ded13c65227ffca498d0b7526` |
+| 13 | `instance` | [deltaGeneratedToTop.coreflective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeltaGenerated.lean/declarations/deltageneratedtotop-coreflective.md) | 85 | `declaration-track:164c664f70764dd6b2cbbcc31c1d98f6e45c7b916a019c09a55893364e720cc5` |
+| 14 | `instance` | [deltaGeneratedToTop.createsColimits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeltaGenerated.lean/declarations/deltageneratedtotop-createscolimits.md) | 89 | `declaration-track:78a6741412f035f0cbebf332e12b68117b10a10de23112c8972ac8d3245daa26` |
+| 15 | `instance` | [hasLimits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeltaGenerated.lean/declarations/haslimits.md) | 92 | `declaration-track:844a9c0992ce6562b30331b34da65ac7fbfe965648d0d24f9437257fa2afbb48` |
+| 16 | `instance` | [hasColimits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeltaGenerated.lean/declarations/hascolimits.md) | 95 | `declaration-track:e87bfe867b3a4a85963cf871eb738b2e5765c6981c66aee00464bc4fc0a6fecc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaRecurrenceSupplier`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThetaRecurrenceSupplier.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaRecurrenceSupplier`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThetaRecurrenceSupplier.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [thetaPrimeWindow](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/thetaprimewindow.md) | 40 | `declaration-track:3de0fb5a64a2a606001d6b0145fb7199900cd1cba1bd43fbd7005778e02d932b` |
-| 2 | `theorem` | [thetaPrimeWindow_mem_octave](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/thetaprimewindow-mem-octave.md) | 45 | `result-track:e71d4c507700a699908c7357082ee107f28a3c606ae75a568447f4b3845dd4e1` |
-| 3 | `structure` | [PrimeThetaQuadraticKernelStage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/primethetaquadratickernelstage.md) | 57 | `declaration-track:0f017b8ac6aedd7df8f35076f09e41d23c9df522b5576be8ff10ab90f790e3c3` |
-| 4 | `def` | [kernelMass](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/kernelmass.md) | 68 | `declaration-track:692542074931e100478965f1b56b14b314953a79a4f458e6db8baa67f222ec2c` |
-| 5 | `def` | [response](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/response.md) | 76 | `declaration-track:086ecfd9315c5a4811ed6fc2942331fe6ff14d71772d797dda080d65200e94e7` |
-| 6 | `theorem` | [kernelMass_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/kernelmass-nonnegative.md) | 85 | `result-track:ce7a542cc66de3772d4965045f6aa474930078ef324fabe3395022fd60bd410e` |
-| 7 | `theorem` | [abs_response_le_kernelMass_mul_sq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/abs-response-le-kernelmass-mul-sq.md) | 95 | `result-track:5ca49fe0c58c2ed960a5a41d55a2358812adaad801f69699f82179b0cb72d1be` |
-| 8 | `def` | [PrimeThetaQuadraticKernelCriterionAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/primethetaquadratickernelcriterionat.md) | 164 | `declaration-track:e3f3a6415bc063c5be837aa803cb4b1f029efe16f62b6e7c74e8093aede1d7f7` |
-| 9 | `theorem` | [primeThetaQuadraticKernelCriterion_to_recurrence](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/primethetaquadratickernelcriterion-to-recurrence.md) | 191 | `result-track:0afb4e0a5630d3f9320db8b9099ff5ce79d853ca0b83f27a9c875c6ecb426d25` |
-| 10 | `theorem` | [primeThetaQuadraticKernelCriterion_to_descent](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/primethetaquadratickernelcriterion-to-descent.md) | 221 | `result-track:ea9dc243cadc7ae21ed7a100bf1d13376b65281c5e0cabe3c2f6d8e47a751518` |
+| 1 | `def` | [thetaPrimeWindow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/thetaprimewindow.md) | 40 | `declaration-track:3de0fb5a64a2a606001d6b0145fb7199900cd1cba1bd43fbd7005778e02d932b` |
+| 2 | `theorem` | [thetaPrimeWindow_mem_octave](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/thetaprimewindow-mem-octave.md) | 45 | `result-track:e71d4c507700a699908c7357082ee107f28a3c606ae75a568447f4b3845dd4e1` |
+| 3 | `structure` | [PrimeThetaQuadraticKernelStage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/primethetaquadratickernelstage.md) | 57 | `declaration-track:0f017b8ac6aedd7df8f35076f09e41d23c9df522b5576be8ff10ab90f790e3c3` |
+| 4 | `def` | [kernelMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/kernelmass.md) | 68 | `declaration-track:692542074931e100478965f1b56b14b314953a79a4f458e6db8baa67f222ec2c` |
+| 5 | `def` | [response](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/response.md) | 76 | `declaration-track:086ecfd9315c5a4811ed6fc2942331fe6ff14d71772d797dda080d65200e94e7` |
+| 6 | `theorem` | [kernelMass_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/kernelmass-nonnegative.md) | 85 | `result-track:ce7a542cc66de3772d4965045f6aa474930078ef324fabe3395022fd60bd410e` |
+| 7 | `theorem` | [abs_response_le_kernelMass_mul_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/abs-response-le-kernelmass-mul-sq.md) | 95 | `result-track:5ca49fe0c58c2ed960a5a41d55a2358812adaad801f69699f82179b0cb72d1be` |
+| 8 | `def` | [PrimeThetaQuadraticKernelCriterionAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/primethetaquadratickernelcriterionat.md) | 164 | `declaration-track:e3f3a6415bc063c5be837aa803cb4b1f029efe16f62b6e7c74e8093aede1d7f7` |
+| 9 | `theorem` | [primeThetaQuadraticKernelCriterion_to_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/primethetaquadratickernelcriterion-to-recurrence.md) | 191 | `result-track:0afb4e0a5630d3f9320db8b9099ff5ce79d853ca0b83f27a9c875c6ecb426d25` |
+| 10 | `theorem` | [primeThetaQuadraticKernelCriterion_to_descent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterion.lean/declarations/primethetaquadratickernelcriterion-to-descent.md) | 221 | `result-track:ea9dc243cadc7ae21ed7a100bf1d13376b65281c5e0cabe3c2f6d8e47a751518` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

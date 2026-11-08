@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullObservationCausalQuotient.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullObservationCausalQuotient.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullObservationCausalQuotient.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullObservationCausalQuotient.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ringSystem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullObservationCausalQuotient.lean/declarations/ringsystem.md) | 50 | `declaration-track:ad1167b6259d3433d4d1aaf16017a004fda585e17b9999cf42ead1edc704385f` |
-| 2 | `def` | [fullObservation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullObservationCausalQuotient.lean/declarations/fullobservation.md) | 60 | `declaration-track:bd5ad4cccd0bcf2389707aa0c8cd88bd4826d51ea8c1123f633bf7b0ea4c2ce1` |
-| 3 | `theorem` | [fullObservation_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullObservationCausalQuotient.lean/declarations/fullobservation-injective.md) | 65 | `result-track:81cf0bb2581bfc98cecc44bc9e87a9bdd7a9954be2b66be1fa11c07cb29cf67b` |
-| 4 | `theorem` | [causalEquivalent_eq_of_fullObservation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullObservationCausalQuotient.lean/declarations/causalequivalent-eq-of-fullobservation.md) | 73 | `result-track:5c66755ecb4408cf880425e7ab6d44184524c038c427629c58a665f8a4cfcf4a` |
-| 5 | `def` | [causalStateEquivRingState](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullObservationCausalQuotient.lean/declarations/causalstateequivringstate.md) | 82 | `declaration-track:2ca9d5b5493f243d16efd9dbcdba430882251496398ce0ec9acf69d171c0e61d` |
+| 1 | `def` | [ringSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullObservationCausalQuotient.lean/declarations/ringsystem.md) | 50 | `declaration-track:ad1167b6259d3433d4d1aaf16017a004fda585e17b9999cf42ead1edc704385f` |
+| 2 | `def` | [fullObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullObservationCausalQuotient.lean/declarations/fullobservation.md) | 60 | `declaration-track:bd5ad4cccd0bcf2389707aa0c8cd88bd4826d51ea8c1123f633bf7b0ea4c2ce1` |
+| 3 | `theorem` | [fullObservation_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullObservationCausalQuotient.lean/declarations/fullobservation-injective.md) | 65 | `result-track:81cf0bb2581bfc98cecc44bc9e87a9bdd7a9954be2b66be1fa11c07cb29cf67b` |
+| 4 | `theorem` | [causalEquivalent_eq_of_fullObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullObservationCausalQuotient.lean/declarations/causalequivalent-eq-of-fullobservation.md) | 73 | `result-track:5c66755ecb4408cf880425e7ab6d44184524c038c427629c58a665f8a4cfcf4a` |
+| 5 | `def` | [causalStateEquivRingState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullObservationCausalQuotient.lean/declarations/causalstateequivringstate.md) | 82 | `declaration-track:2ca9d5b5493f243d16efd9dbcdba430882251496398ce0ec9acf69d171c0e61d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrierControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrierControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrierControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrierControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrier`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrier.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrier`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrier.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exactFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrierControls.lean/declarations/exactfrontier.md) | 13 | `declaration-track:b275715414f2df19659dd0c38f1addc6993275e3bbbdceb4e9fb4ad6308aee7a` |
-| 2 | `theorem` | [highGCDAnchorExclusionClosed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrierControls.lean/declarations/highgcdanchorexclusionclosed.md) | 28 | `result-track:c68bff4932e0670a61d0c210fb865f1204db0a765fc4ffb381b96393517e1c03` |
-| 3 | `theorem` | [absoluteTypeIAnchorBarrierClosed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrierControls.lean/declarations/absolutetypeianchorbarrierclosed.md) | 38 | `result-track:042cfa0bbca3e237994f4dfccd01d2ee6e6cd655bffda6b5f4ee5994c25240a7` |
-| 4 | `def` | [remainingSignedTypeIFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrierControls.lean/declarations/remainingsignedtypeifrontier.md) | 43 | `declaration-track:f472937aba371e787fdf21d59ccbd5bd4a21cd532a9d81e8eaed43f1d2011399` |
-| 5 | `def` | [remainingAbsoluteTypeIIFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrierControls.lean/declarations/remainingabsolutetypeiifrontier.md) | 46 | `declaration-track:4396332271016f025d7b8abb26c3de86398b1f0344d3b1fd9f42775de7449fb3` |
+| 1 | `def` | [exactFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrierControls.lean/declarations/exactfrontier.md) | 13 | `declaration-track:b275715414f2df19659dd0c38f1addc6993275e3bbbdceb4e9fb4ad6308aee7a` |
+| 2 | `theorem` | [highGCDAnchorExclusionClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrierControls.lean/declarations/highgcdanchorexclusionclosed.md) | 28 | `result-track:c68bff4932e0670a61d0c210fb865f1204db0a765fc4ffb381b96393517e1c03` |
+| 3 | `theorem` | [absoluteTypeIAnchorBarrierClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrierControls.lean/declarations/absolutetypeianchorbarrierclosed.md) | 38 | `result-track:042cfa0bbca3e237994f4dfccd01d2ee6e6cd655bffda6b5f4ee5994c25240a7` |
+| 4 | `def` | [remainingSignedTypeIFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrierControls.lean/declarations/remainingsignedtypeifrontier.md) | 43 | `declaration-track:f472937aba371e787fdf21d59ccbd5bd4a21cd532a9d81e8eaed43f1d2011399` |
+| 5 | `def` | [remainingAbsoluteTypeIIFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrierControls.lean/declarations/remainingabsolutetypeiifrontier.md) | 46 | `declaration-track:4396332271016f025d7b8abb26c3de86398b1f0344d3b1fd9f42775de7449fb3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

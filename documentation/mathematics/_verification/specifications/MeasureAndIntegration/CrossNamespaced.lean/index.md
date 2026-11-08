@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CrossNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CrossNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Mform_u_Pc_eq](../../../../MeasureAndIntegration/CrossNamespaced.lean/declarations/mform-u-pc-eq.md) | 42 | `result-track:27fe83aea6dff01e2d02ddbae5b6cb02ca8c14bb869d0c0e14b8d3809205883b` |
-| 2 | `theorem` | [cross_muPc](../../../../MeasureAndIntegration/CrossNamespaced.lean/declarations/cross-mupc.md) | 79 | `result-track:fab5d69c4893a921053e23217324d831adaa593f8c5cafde034461daccf944d8` |
+| 1 | `lemma` | [Mform_u_Pc_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossNamespaced.lean/declarations/mform-u-pc-eq.md) | 42 | `result-track:27fe83aea6dff01e2d02ddbae5b6cb02ca8c14bb869d0c0e14b8d3809205883b` |
+| 2 | `theorem` | [cross_muPc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossNamespaced.lean/declarations/cross-mupc.md) | 79 | `result-track:fab5d69c4893a921053e23217324d831adaa593f8c5cafde034461daccf944d8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

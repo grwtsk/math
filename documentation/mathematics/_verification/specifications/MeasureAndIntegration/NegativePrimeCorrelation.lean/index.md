@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/NegativePrimeCorrelation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/NegativePrimeCorrelation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativePrimeCorrelation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativePrimeCorrelation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.PrimeBlockEnergy`](../../../../MeasureAndIntegration/PrimeBlockEnergy.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.PrimePrefixGrowth`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePrefixGrowth.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.PrimeBlockEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeBlockEnergy.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.PrimePrefixGrowth`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePrefixGrowth.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic.NormNum.Prime` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [source11_primes](../../../../MeasureAndIntegration/NegativePrimeCorrelation.lean/declarations/source11-primes.md) | 16 | `result-track:4e3ab3af1a3a45b9518fa5382310711e9a57cfc9e3ebabfcccd6dcbad0f81459` |
-| 2 | `theorem` | [source11_cell](../../../../MeasureAndIntegration/NegativePrimeCorrelation.lean/declarations/source11-cell.md) | 21 | `result-track:7c8cd514747635547659c527434318ff0adb870eb471665f62418db848dddc0a` |
-| 3 | `theorem` | [source11_radical_bound](../../../../MeasureAndIntegration/NegativePrimeCorrelation.lean/declarations/source11-radical-bound.md) | 72 | `result-track:b573cadac92133f409b32514d79731ecc6094ab302eaa56d3500377d3ed6d312` |
-| 4 | `theorem` | [source11_negative_on_cell](../../../../MeasureAndIntegration/NegativePrimeCorrelation.lean/declarations/source11-negative-on-cell.md) | 86 | `result-track:d4c83cc4641cee652c483e5ef10f5337f5c38a7025b61107466e10e4fc51251b` |
-| 5 | `theorem` | [primePrefix_eleven](../../../../MeasureAndIntegration/NegativePrimeCorrelation.lean/declarations/primeprefix-eleven.md) | 101 | `result-track:369fb2ceb9015804f2698123d0eb3866fe25e9e3f2496f8b35e3039f9e73e086` |
-| 6 | `theorem` | [source11_shift_positive](../../../../MeasureAndIntegration/NegativePrimeCorrelation.lean/declarations/source11-shift-positive.md) | 103 | `result-track:fac40b13c0219be879789f43f714691e34e0042f5ef814f9ab930d8432333a62` |
-| 7 | `theorem` | [primePrefix_eleven_negative_correlation](../../../../MeasureAndIntegration/NegativePrimeCorrelation.lean/declarations/primeprefix-eleven-negative-correlation.md) | 122 | `result-track:59bfbb6941776292f33fba3d5aad892d67a0c22222143622473b3772dd33ad3f` |
-| 8 | `theorem` | [not_all_prefix_correlations_nonnegative](../../../../MeasureAndIntegration/NegativePrimeCorrelation.lean/declarations/not-all-prefix-correlations-nonnegative.md) | 165 | `result-track:5ccd455133f97b375228f5562502dde993c4678cdf050969a087f04b91069ed9` |
+| 1 | `theorem` | [source11_primes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativePrimeCorrelation.lean/declarations/source11-primes.md) | 16 | `result-track:4e3ab3af1a3a45b9518fa5382310711e9a57cfc9e3ebabfcccd6dcbad0f81459` |
+| 2 | `theorem` | [source11_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativePrimeCorrelation.lean/declarations/source11-cell.md) | 21 | `result-track:7c8cd514747635547659c527434318ff0adb870eb471665f62418db848dddc0a` |
+| 3 | `theorem` | [source11_radical_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativePrimeCorrelation.lean/declarations/source11-radical-bound.md) | 72 | `result-track:b573cadac92133f409b32514d79731ecc6094ab302eaa56d3500377d3ed6d312` |
+| 4 | `theorem` | [source11_negative_on_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativePrimeCorrelation.lean/declarations/source11-negative-on-cell.md) | 86 | `result-track:d4c83cc4641cee652c483e5ef10f5337f5c38a7025b61107466e10e4fc51251b` |
+| 5 | `theorem` | [primePrefix_eleven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativePrimeCorrelation.lean/declarations/primeprefix-eleven.md) | 101 | `result-track:369fb2ceb9015804f2698123d0eb3866fe25e9e3f2496f8b35e3039f9e73e086` |
+| 6 | `theorem` | [source11_shift_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativePrimeCorrelation.lean/declarations/source11-shift-positive.md) | 103 | `result-track:fac40b13c0219be879789f43f714691e34e0042f5ef814f9ab930d8432333a62` |
+| 7 | `theorem` | [primePrefix_eleven_negative_correlation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativePrimeCorrelation.lean/declarations/primeprefix-eleven-negative-correlation.md) | 122 | `result-track:59bfbb6941776292f33fba3d5aad892d67a0c22222143622473b3772dd33ad3f` |
+| 8 | `theorem` | [not_all_prefix_correlations_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativePrimeCorrelation.lean/declarations/not-all-prefix-correlations-nonnegative.md) | 165 | `result-track:5ccd455133f97b375228f5562502dde993c4678cdf050969a087f04b91069ed9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualMuntzBoundAttempt01.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualMuntzBoundAttempt01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMuntzBoundAttempt01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMuntzBoundAttempt01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_source_interval_integral_zero](../../../../MeasureAndIntegration/ActualMuntzBoundAttempt01.lean/declarations/actual-source-interval-integral-zero.md) | 13 | `result-track:6d137a30b95728b7a48445d86474e8e6bd6b4f56be9694a1fa20782d3004dbc8` |
-| 2 | `theorem` | [scaled_source_interval_integral_zero](../../../../MeasureAndIntegration/ActualMuntzBoundAttempt01.lean/declarations/scaled-source-interval-integral-zero.md) | 37 | `result-track:c697f8a50f58cb7ed3e4b55e09f90dcbed97d5923d0340b60688ed54146b773f` |
-| 3 | `theorem` | [actual_scaled_Abel](../../../../MeasureAndIntegration/ActualMuntzBoundAttempt01.lean/declarations/actual-scaled-abel.md) | 42 | `result-track:491fae331816dd61cbd87526964480b0b4cdf9a160921c50dacbed47496bf353` |
-| 4 | `theorem` | [actual_scaled_linear_derivative_integral_zero](../../../../MeasureAndIntegration/ActualMuntzBoundAttempt01.lean/declarations/actual-scaled-linear-derivative-integral-zero.md) | 69 | `result-track:767c5ff572424f4c73c9f8a892fe10ebaea9b9ea476b966ead23e955772abd78` |
+| 1 | `theorem` | [actual_source_interval_integral_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMuntzBoundAttempt01.lean/declarations/actual-source-interval-integral-zero.md) | 13 | `result-track:6d137a30b95728b7a48445d86474e8e6bd6b4f56be9694a1fa20782d3004dbc8` |
+| 2 | `theorem` | [scaled_source_interval_integral_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMuntzBoundAttempt01.lean/declarations/scaled-source-interval-integral-zero.md) | 37 | `result-track:c697f8a50f58cb7ed3e4b55e09f90dcbed97d5923d0340b60688ed54146b773f` |
+| 3 | `theorem` | [actual_scaled_Abel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMuntzBoundAttempt01.lean/declarations/actual-scaled-abel.md) | 42 | `result-track:491fae331816dd61cbd87526964480b0b4cdf9a160921c50dacbed47496bf353` |
+| 4 | `theorem` | [actual_scaled_linear_derivative_integral_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMuntzBoundAttempt01.lean/declarations/actual-scaled-linear-derivative-integral-zero.md) | 69 | `result-track:767c5ff572424f4c73c9f8a892fe10ebaea9b9ea476b966ead23e955772abd78` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

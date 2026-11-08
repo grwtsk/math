@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectralRealizationNamespacedOperatorDataHasHilbertType.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralRealizationNamespacedOperatorDataHasHilbertType.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationNamespacedOperatorDataHasHilbertType.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationNamespacedOperatorDataHasHilbertType.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [operator_data_has_hilbert_type](../../../../FunctionalAnalysis/SpectralRealizationNamespacedOperatorDataHasHilbertType.lean/declarations/operator-data-has-hilbert-type.md) | 28 | `result-track:a2acf4a6f06a84f4c34cddc5119f979f677286df52e873179137fac415ec23fa` |
-| 2 | `theorem` | [operator_data_domain_dense](../../../../FunctionalAnalysis/SpectralRealizationNamespacedOperatorDataHasHilbertType.lean/declarations/operator-data-domain-dense.md) | 33 | `result-track:56406b4312f02ea84246c4c7e9c4d4c502f1f2777b2fedebade0ae91411da8d2` |
-| 3 | `theorem` | [D_selfAdjoint](../../../../FunctionalAnalysis/SpectralRealizationNamespacedOperatorDataHasHilbertType.lean/declarations/d-selfadjoint.md) | 38 | `result-track:b1d7098b3aee6b9faec4b185a378ecdd9efd0d298b498ac7f519663c138ab1f8` |
-| 4 | `theorem` | [D_compactResolvent](../../../../FunctionalAnalysis/SpectralRealizationNamespacedOperatorDataHasHilbertType.lean/declarations/d-compactresolvent.md) | 44 | `result-track:c5742262bc1e0220df5a9b5273ced906d0c014a10c5f085b1c7d63be98fec839` |
-| 5 | `theorem` | [spectrum_real_of_selfAdjoint](../../../../FunctionalAnalysis/SpectralRealizationNamespacedOperatorDataHasHilbertType.lean/declarations/spectrum-real-of-selfadjoint.md) | 50 | `result-track:bbad4012946297615f10475a44ea221f0a19df50ad3788cd7f7c67f629ba334f` |
-| 6 | `theorem` | [zero_spectrum_realization_has_parameter_map](../../../../FunctionalAnalysis/SpectralRealizationNamespacedOperatorDataHasHilbertType.lean/declarations/zero-spectrum-realization-has-parameter-map.md) | 57 | `result-track:33147cb915ac3499373671f6c207ff41437826ea34b1fc908664fb83a4acd657` |
-| 7 | `theorem` | [h0_zero_iff_spectral_point](../../../../FunctionalAnalysis/SpectralRealizationNamespacedOperatorDataHasHilbertType.lean/declarations/h0-zero-iff-spectral-point.md) | 63 | `result-track:d16dc737787b12d0c916d021ac79fbf6f1a432975878dbb7d767c28b9e90a791` |
+| 1 | `theorem` | [operator_data_has_hilbert_type](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationNamespacedOperatorDataHasHilbertType.lean/declarations/operator-data-has-hilbert-type.md) | 28 | `result-track:a2acf4a6f06a84f4c34cddc5119f979f677286df52e873179137fac415ec23fa` |
+| 2 | `theorem` | [operator_data_domain_dense](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationNamespacedOperatorDataHasHilbertType.lean/declarations/operator-data-domain-dense.md) | 33 | `result-track:56406b4312f02ea84246c4c7e9c4d4c502f1f2777b2fedebade0ae91411da8d2` |
+| 3 | `theorem` | [D_selfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationNamespacedOperatorDataHasHilbertType.lean/declarations/d-selfadjoint.md) | 38 | `result-track:b1d7098b3aee6b9faec4b185a378ecdd9efd0d298b498ac7f519663c138ab1f8` |
+| 4 | `theorem` | [D_compactResolvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationNamespacedOperatorDataHasHilbertType.lean/declarations/d-compactresolvent.md) | 44 | `result-track:c5742262bc1e0220df5a9b5273ced906d0c014a10c5f085b1c7d63be98fec839` |
+| 5 | `theorem` | [spectrum_real_of_selfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationNamespacedOperatorDataHasHilbertType.lean/declarations/spectrum-real-of-selfadjoint.md) | 50 | `result-track:bbad4012946297615f10475a44ea221f0a19df50ad3788cd7f7c67f629ba334f` |
+| 6 | `theorem` | [zero_spectrum_realization_has_parameter_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationNamespacedOperatorDataHasHilbertType.lean/declarations/zero-spectrum-realization-has-parameter-map.md) | 57 | `result-track:33147cb915ac3499373671f6c207ff41437826ea34b1fc908664fb83a4acd657` |
+| 7 | `theorem` | [h0_zero_iff_spectral_point](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationNamespacedOperatorDataHasHilbertType.lean/declarations/h0-zero-iff-spectral-point.md) | 63 | `result-track:d16dc737787b12d0c916d021ac79fbf6f1a432975878dbb7d767c28b9e90a791` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Assembly.lean/index.md) · [Full source](../../../../GeneralTopology/Assembly.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Assembly.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Assembly.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [assembleControlledSphericalHierarchy](../../../../GeneralTopology/Assembly.lean/declarations/assemblecontrolledsphericalhierarchy.md) | 15 | `declaration-track:748f6fa46b43fa5016f03478cc19141ff6077ab3c8eb97367be84d9206985c47` |
-| 2 | `def` | [controlled_spherical_scoped_hierarchy](../../../../GeneralTopology/Assembly.lean/declarations/controlled-spherical-scoped-hierarchy.md) | 57 | `declaration-track:e8b5e8c5b91a2a2088fe34e34c830c9463cf1f2e713b60f053ea3a8a053e758e` |
-| 3 | `structure` | [VertexCompatibleS2HierarchyResult](../../../../GeneralTopology/Assembly.lean/declarations/vertexcompatibles2hierarchyresult.md) | 77 | `declaration-track:78ca4ace8ca10b7ce34d24e4fdd01375c1cb1a2bc14bd0d0e40db3b7f9e450cf` |
-| 4 | `def` | [controlled_spherical_vertex_compatible_s2_hierarchy](../../../../GeneralTopology/Assembly.lean/declarations/controlled-spherical-vertex-compatible-s2-hierarchy.md) | 98 | `declaration-track:742d93fc98d2197da3f7ab8dbd3716996a9f3842da6d21b4dddb8cdf1ccf1d15` |
+| 1 | `def` | [assembleControlledSphericalHierarchy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Assembly.lean/declarations/assemblecontrolledsphericalhierarchy.md) | 15 | `declaration-track:748f6fa46b43fa5016f03478cc19141ff6077ab3c8eb97367be84d9206985c47` |
+| 2 | `def` | [controlled_spherical_scoped_hierarchy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Assembly.lean/declarations/controlled-spherical-scoped-hierarchy.md) | 57 | `declaration-track:e8b5e8c5b91a2a2088fe34e34c830c9463cf1f2e713b60f053ea3a8a053e758e` |
+| 3 | `structure` | [VertexCompatibleS2HierarchyResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Assembly.lean/declarations/vertexcompatibles2hierarchyresult.md) | 77 | `declaration-track:78ca4ace8ca10b7ce34d24e4fdd01375c1cb1a2bc14bd0d0e40db3b7f9e450cf` |
+| 4 | `def` | [controlled_spherical_vertex_compatible_s2_hierarchy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Assembly.lean/declarations/controlled-spherical-vertex-compatible-s2-hierarchy.md) | 98 | `declaration-track:742d93fc98d2197da3f7ab8dbd3716996a9f3842da6d21b4dddb8cdf1ccf1d15` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

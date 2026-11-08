@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreHostile.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreHostile.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreHostile.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreHostile.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `axiom` | [localAx](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreHostile.lean/declarations/localax.md) | 5 | `declaration-track:7d51cd84a5756e58b3cf845d0a9e23b93ac524b4d5d220ae6287e91ed7aaa064` |
-| 2 | `theorem` | [usesAx](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreHostile.lean/declarations/usesax.md) | 6 | `result-track:a17d9d61784a208b73faefe65e6707689632c727bc9130d664359f96241cc969` |
-| 3 | `theorem` | [placeholder](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreHostile.lean/declarations/placeholder.md) | 7 | `result-track:c954829b3df9a15d0c1c736b32f249b369bc53bad75211bee584bb5a2f76eba7` |
-| 4 | `theorem` | [clean](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreHostile.lean/declarations/clean.md) | 8 | `result-track:f0c9f4422f68809633e5da25e55c83aeb90151353fa2e440a7467ae84749e902` |
-| 5 | `def` | [identity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreHostile.lean/declarations/identity.md) | 10 | `declaration-track:a8309f4c83cde7199383ded27431af30c214040f084ef3d8fd620de528da4d5f` |
-| 6 | `def` | [identity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreHostile.lean/declarations/identity-source-edition-2.md) | 13 | `declaration-track:eddc3f342f707b377fbcabb89c3a7e0b0b10259ad3ea9018ef81eb1f37b51bf1` |
+| 1 | `axiom` | [localAx](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreHostile.lean/declarations/localax.md) | 5 | `declaration-track:7d51cd84a5756e58b3cf845d0a9e23b93ac524b4d5d220ae6287e91ed7aaa064` |
+| 2 | `theorem` | [usesAx](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreHostile.lean/declarations/usesax.md) | 6 | `result-track:a17d9d61784a208b73faefe65e6707689632c727bc9130d664359f96241cc969` |
+| 3 | `theorem` | [placeholder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreHostile.lean/declarations/placeholder.md) | 7 | `result-track:c954829b3df9a15d0c1c736b32f249b369bc53bad75211bee584bb5a2f76eba7` |
+| 4 | `theorem` | [clean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreHostile.lean/declarations/clean.md) | 8 | `result-track:f0c9f4422f68809633e5da25e55c83aeb90151353fa2e440a7467ae84749e902` |
+| 5 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreHostile.lean/declarations/identity.md) | 10 | `declaration-track:a8309f4c83cde7199383ded27431af30c214040f084ef3d8fd620de528da4d5f` |
+| 6 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreHostile.lean/declarations/identity-source-edition-2.md) | 13 | `declaration-track:eddc3f342f707b377fbcabb89c3a7e0b0b10259ad3ea9018ef81eb1f37b51bf1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

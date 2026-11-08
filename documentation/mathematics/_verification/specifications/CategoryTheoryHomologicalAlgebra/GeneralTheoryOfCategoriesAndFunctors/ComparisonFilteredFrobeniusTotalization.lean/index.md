@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ComparisonFilteredFrobeniusTotalization.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ComparisonFilteredFrobeniusTotalization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ComparisonFilteredFrobeniusTotalization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ComparisonFilteredFrobeniusTotalization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FilteredFrobeniusTotalization](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ComparisonFilteredFrobeniusTotalization.lean/declarations/filteredfrobeniustotalization.md) | 23 | `declaration-track:f03580cc1441caf872943a4ced68d1d26a45adc3bb426a8d46fcc55c3267084c` |
-| 2 | `theorem` | [totalized_frobenius_compatible](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ComparisonFilteredFrobeniusTotalization.lean/declarations/totalized-frobenius-compatible.md) | 51 | `result-track:62c3d83f52d25e35689082ef92820935a2943ffa18bf76a059e548427b613cf5` |
-| 3 | `theorem` | [totalized_nygaard_compatible](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ComparisonFilteredFrobeniusTotalization.lean/declarations/totalized-nygaard-compatible.md) | 62 | `result-track:6d6a6f3454f0194e77f2bab391e7b9f5c20b3a45ec925697ba02ec1277d497ae` |
+| 1 | `structure` | [FilteredFrobeniusTotalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ComparisonFilteredFrobeniusTotalization.lean/declarations/filteredfrobeniustotalization.md) | 23 | `declaration-track:f03580cc1441caf872943a4ced68d1d26a45adc3bb426a8d46fcc55c3267084c` |
+| 2 | `theorem` | [totalized_frobenius_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ComparisonFilteredFrobeniusTotalization.lean/declarations/totalized-frobenius-compatible.md) | 51 | `result-track:62c3d83f52d25e35689082ef92820935a2943ffa18bf76a059e548427b613cf5` |
+| 3 | `theorem` | [totalized_nygaard_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ComparisonFilteredFrobeniusTotalization.lean/declarations/totalized-nygaard-compatible.md) | 62 | `result-track:6d6a6f3454f0194e77f2bab391e7b9f5c20b3a45ec925697ba02ec1277d497ae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

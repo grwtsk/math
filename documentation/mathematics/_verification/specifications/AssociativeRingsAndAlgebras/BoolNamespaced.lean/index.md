@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/BoolNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/BoolNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/BoolNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/BoolNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instBoolAlgebra](../../../../AssociativeRingsAndAlgebras/BoolNamespaced.lean/declarations/instboolalgebra.md) | 15 | `declaration-track:f52b163f8d89029895d68c78de09a92217169bc546c2748d326221a10e3d516c` |
+| 1 | `instance` | [instBoolAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/BoolNamespaced.lean/declarations/instboolalgebra.md) | 15 | `declaration-track:f52b163f8d89029895d68c78de09a92217169bc546c2748d326221a10e3d516c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

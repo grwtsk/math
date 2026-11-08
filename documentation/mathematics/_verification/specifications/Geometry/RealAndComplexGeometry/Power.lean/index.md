@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Geometry/RealAndComplexGeometry/Power.lean/index.md) · [Full source](../../../../../Geometry/RealAndComplexGeometry/Power.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/Power.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/Power.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mul_norm_eq_abs_sub_sq_norm](../../../../../Geometry/RealAndComplexGeometry/Power.lean/declarations/mul-norm-eq-abs-sub-sq-norm.md) | 38 | `result-track:77dc58f33191c09d1c65d77391dcab370067ca7b44a37aab2c679d333e21962c` |
-| 2 | `theorem` | [mul_dist_eq_abs_sub_sq_dist](../../../../../Geometry/RealAndComplexGeometry/Power.lean/declarations/mul-dist-eq-abs-sub-sq-dist.md) | 81 | `result-track:78803944e1777d9d25f7162f42fcb1fb3916de8952839af8ddf477a3e45b9f79` |
-| 3 | `theorem` | [mul_dist_eq_mul_dist_of_cospherical](../../../../../Geometry/RealAndComplexGeometry/Power.lean/declarations/mul-dist-eq-mul-dist-of-cospherical.md) | 97 | `result-track:ed5a17f0b336143c93f6d80aa981b4918227f6d47fc304dddedb549a8f4632dc` |
-| 4 | `theorem` | [mul_dist_eq_mul_dist_of_cospherical_of_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/Power.lean/declarations/mul-dist-eq-mul-dist-of-cospherical-of-angle-eq-pi.md) | 108 | `result-track:febad4bb11755d16d496d0f8e9e89e50613420336266b671d758a9cca0c888c7` |
-| 5 | `theorem` | [mul_dist_eq_mul_dist_of_cospherical_of_angle_eq_zero](../../../../../Geometry/RealAndComplexGeometry/Power.lean/declarations/mul-dist-eq-mul-dist-of-cospherical-of-angle-eq-zero.md) | 116 | `result-track:4fa2143289954b19b8906e11b2b55af7c94f3acbd5acfaa4c1866ad54a630c99` |
+| 1 | `theorem` | [mul_norm_eq_abs_sub_sq_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/Power.lean/declarations/mul-norm-eq-abs-sub-sq-norm.md) | 38 | `result-track:77dc58f33191c09d1c65d77391dcab370067ca7b44a37aab2c679d333e21962c` |
+| 2 | `theorem` | [mul_dist_eq_abs_sub_sq_dist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/Power.lean/declarations/mul-dist-eq-abs-sub-sq-dist.md) | 81 | `result-track:78803944e1777d9d25f7162f42fcb1fb3916de8952839af8ddf477a3e45b9f79` |
+| 3 | `theorem` | [mul_dist_eq_mul_dist_of_cospherical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/Power.lean/declarations/mul-dist-eq-mul-dist-of-cospherical.md) | 97 | `result-track:ed5a17f0b336143c93f6d80aa981b4918227f6d47fc304dddedb549a8f4632dc` |
+| 4 | `theorem` | [mul_dist_eq_mul_dist_of_cospherical_of_angle_eq_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/Power.lean/declarations/mul-dist-eq-mul-dist-of-cospherical-of-angle-eq-pi.md) | 108 | `result-track:febad4bb11755d16d496d0f8e9e89e50613420336266b671d758a9cca0c888c7` |
+| 5 | `theorem` | [mul_dist_eq_mul_dist_of_cospherical_of_angle_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/Power.lean/declarations/mul-dist-eq-mul-dist-of-cospherical-of-angle-eq-zero.md) | 116 | `result-track:4fa2143289954b19b8906e11b2b55af7c94f3acbd5acfaa4c1866ad54a630c99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

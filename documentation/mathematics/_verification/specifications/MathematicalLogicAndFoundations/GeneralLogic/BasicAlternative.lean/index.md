@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [FormalizationScope](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/declarations/formalizationscope.md) | 10 | `declaration-track:5a94b4146440293c9c5d941413ce4a8e4cf34ec027e30fcf4cad5ebbc1145770` |
-| 2 | `inductive` | [ProofStatus](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/declarations/proofstatus.md) | 16 | `declaration-track:7a38cc616252524ef7409f18792ef24941d16a889be7fa931dea4ba39f9620e6` |
-| 3 | `structure` | [FormalTheorem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/declarations/formaltheorem.md) | 23 | `declaration-track:915098628d9afca8efe747a3f1ac712afe7c873c201d800f6bf2db89d956c6e6` |
-| 4 | `def` | [currentScope](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/declarations/currentscope.md) | 30 | `declaration-track:53c67e6442c36303881a1093868fbe343b1b2c864867152c71d557450bcff111` |
-| 5 | `theorem` | [currentScope_is_actual_theorem_formalization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/declarations/currentscope-is-actual-theorem-formalization.md) | 33 | `result-track:9281bf516d62d83289c14e6d915ff3264180f68dc68639d6afc811fd6f930374` |
-| 6 | `def` | [FormalTheorem.hasCompleteProof](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/declarations/formaltheorem-hascompleteproof.md) | 37 | `declaration-track:e4e77ccd08b8bea7cfdc3fb4db2d203552b4918b27dd04535962e4f44e5d27ea` |
-| 7 | `theorem` | [checked_isProved_true_hasResidue_false](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/declarations/checked-isproved-true-hasresidue-false.md) | 40 | `result-track:df5734081be9499c4b0f24189367dc2cab2f72a50f4e0d92719bb28a8c90db62` |
-| 8 | `theorem` | [FormalTheorem.complete_has_no_residue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/declarations/formaltheorem-complete-has-no-residue.md) | 51 | `result-track:1dc412720e605087b4372bc951edc5dc193b8c3febbf7c5a923f20c1e25e36da` |
+| 1 | `inductive` | [FormalizationScope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/declarations/formalizationscope.md) | 10 | `declaration-track:5a94b4146440293c9c5d941413ce4a8e4cf34ec027e30fcf4cad5ebbc1145770` |
+| 2 | `inductive` | [ProofStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/declarations/proofstatus.md) | 16 | `declaration-track:7a38cc616252524ef7409f18792ef24941d16a889be7fa931dea4ba39f9620e6` |
+| 3 | `structure` | [FormalTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/declarations/formaltheorem.md) | 23 | `declaration-track:915098628d9afca8efe747a3f1ac712afe7c873c201d800f6bf2db89d956c6e6` |
+| 4 | `def` | [currentScope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/declarations/currentscope.md) | 30 | `declaration-track:53c67e6442c36303881a1093868fbe343b1b2c864867152c71d557450bcff111` |
+| 5 | `theorem` | [currentScope_is_actual_theorem_formalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/declarations/currentscope-is-actual-theorem-formalization.md) | 33 | `result-track:9281bf516d62d83289c14e6d915ff3264180f68dc68639d6afc811fd6f930374` |
+| 6 | `def` | [FormalTheorem.hasCompleteProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/declarations/formaltheorem-hascompleteproof.md) | 37 | `declaration-track:e4e77ccd08b8bea7cfdc3fb4db2d203552b4918b27dd04535962e4f44e5d27ea` |
+| 7 | `theorem` | [checked_isProved_true_hasResidue_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/declarations/checked-isproved-true-hasresidue-false.md) | 40 | `result-track:df5734081be9499c4b0f24189367dc2cab2f72a50f4e0d92719bb28a8c90db62` |
+| 8 | `theorem` | [FormalTheorem.complete_has_no_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicAlternative.lean/declarations/formaltheorem-complete-has-no-residue.md) | 51 | `result-track:1dc412720e605087b4372bc951edc5dc193b8c3febbf7c5a923f20c1e25e36da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LocalizationCardinalityCardinality.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LocalizationCardinalityCardinality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationCardinalityCardinality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationCardinalityCardinality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lift_cardinalMk_le](../../../../CommutativeAlgebra/LocalizationCardinalityCardinality.lean/declarations/lift-cardinalmk-le.md) | 37 | `result-track:92a8cf0e43d61d559bd03af4e24eaefb2a49ee12bb1a931d03e763cca1d518e7` |
-| 2 | `theorem` | [cardinalMk_le](../../../../CommutativeAlgebra/LocalizationCardinalityCardinality.lean/declarations/cardinalmk-le.md) | 43 | `result-track:64111793b89087a5f67fc4328ea03a18e1e889f25ab3a4aeeb94b553528572d9` |
-| 3 | `theorem` | [cardinalMk](../../../../CommutativeAlgebra/LocalizationCardinalityCardinality.lean/declarations/cardinalmk.md) | 59 | `result-track:043e53ecee70b5ca84655b8b0da19aa8dfb0ee9bafb1d3049902fddfa586249d` |
-| 4 | `theorem` | [lift_cardinalMk](../../../../CommutativeAlgebra/LocalizationCardinalityCardinality.lean/declarations/lift-cardinalmk-source-edition-2.md) | 73 | `result-track:d333d750fe57a6f2c20aff319371a57b5b3f9e723dd5549e81128f4cca3e8f39` |
-| 5 | `theorem` | [cardinalMk](../../../../CommutativeAlgebra/LocalizationCardinalityCardinality.lean/declarations/cardinalmk-source-edition-3.md) | 79 | `result-track:df659174347717a333b0082e2971a5cb6a6623ab4217a6634e569bbc5154b618` |
-| 6 | `theorem` | [Cardinal.mk_fractionRing](../../../../CommutativeAlgebra/LocalizationCardinalityCardinality.lean/declarations/cardinal-mk-fractionring.md) | 88 | `result-track:ddecb568abbc6609fed5b8107ed634ec1fe1c5a391a4781a4c2b1f0223812d81` |
-| 7 | `theorem` | [lift_cardinalMk](../../../../CommutativeAlgebra/LocalizationCardinalityCardinality.lean/declarations/lift-cardinalmk.md) | 97 | `result-track:0b22fd10a5dbcbd056c68fa7288b726de3b3526ccf8e375353b5c785301d1241` |
-| 8 | `theorem` | [cardinalMk](../../../../CommutativeAlgebra/LocalizationCardinalityCardinality.lean/declarations/cardinalmk-source-edition-2.md) | 100 | `result-track:620a8a6c3ef20b43640a73bf10256a14ffe54528e416b3764fb20e219e0d9291` |
+| 1 | `theorem` | [lift_cardinalMk_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationCardinalityCardinality.lean/declarations/lift-cardinalmk-le.md) | 37 | `result-track:92a8cf0e43d61d559bd03af4e24eaefb2a49ee12bb1a931d03e763cca1d518e7` |
+| 2 | `theorem` | [cardinalMk_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationCardinalityCardinality.lean/declarations/cardinalmk-le.md) | 43 | `result-track:64111793b89087a5f67fc4328ea03a18e1e889f25ab3a4aeeb94b553528572d9` |
+| 3 | `theorem` | [cardinalMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationCardinalityCardinality.lean/declarations/cardinalmk.md) | 59 | `result-track:043e53ecee70b5ca84655b8b0da19aa8dfb0ee9bafb1d3049902fddfa586249d` |
+| 4 | `theorem` | [lift_cardinalMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationCardinalityCardinality.lean/declarations/lift-cardinalmk-source-edition-2.md) | 73 | `result-track:d333d750fe57a6f2c20aff319371a57b5b3f9e723dd5549e81128f4cca3e8f39` |
+| 5 | `theorem` | [cardinalMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationCardinalityCardinality.lean/declarations/cardinalmk-source-edition-3.md) | 79 | `result-track:df659174347717a333b0082e2971a5cb6a6623ab4217a6634e569bbc5154b618` |
+| 6 | `theorem` | [Cardinal.mk_fractionRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationCardinalityCardinality.lean/declarations/cardinal-mk-fractionring.md) | 88 | `result-track:ddecb568abbc6609fed5b8107ed634ec1fe1c5a391a4781a4c2b1f0223812d81` |
+| 7 | `theorem` | [lift_cardinalMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationCardinalityCardinality.lean/declarations/lift-cardinalmk.md) | 97 | `result-track:0b22fd10a5dbcbd056c68fa7288b726de3b3526ccf8e375353b5c785301d1241` |
+| 8 | `theorem` | [cardinalMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationCardinalityCardinality.lean/declarations/cardinalmk-source-edition-2.md) | 100 | `result-track:620a8a6c3ef20b43640a73bf10256a14ffe54528e416b3764fb20e219e0d9291` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

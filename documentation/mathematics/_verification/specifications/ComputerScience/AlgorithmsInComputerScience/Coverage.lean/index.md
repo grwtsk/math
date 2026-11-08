@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Coverage.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Coverage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Coverage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Coverage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coveredPhases](../../../../../ComputerScience/AlgorithmsInComputerScience/Coverage.lean/declarations/coveredphases.md) | 10 | `declaration-track:5cd38fe807ba069d449b801ee80a2835f2394dc7101fe8ab3d44d68197fd6360` |
-| 2 | `theorem` | [coveredPhases_eq_centerSpine](../../../../../ComputerScience/AlgorithmsInComputerScience/Coverage.lean/declarations/coveredphases-eq-centerspine.md) | 13 | `result-track:fe8e9094b91b6bc3dce940f90c1f09b76d541004f33d6dbd372d1abafe5f1256` |
-| 3 | `theorem` | [every_center_phase_covered](../../../../../ComputerScience/AlgorithmsInComputerScience/Coverage.lean/declarations/every-center-phase-covered.md) | 17 | `result-track:0c9b45c0c362d24c60bb9115f2cc3d7967dfbcca5dbf163be4fa49ea766f58c3` |
+| 1 | `def` | [coveredPhases](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Coverage.lean/declarations/coveredphases.md) | 10 | `declaration-track:5cd38fe807ba069d449b801ee80a2835f2394dc7101fe8ab3d44d68197fd6360` |
+| 2 | `theorem` | [coveredPhases_eq_centerSpine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Coverage.lean/declarations/coveredphases-eq-centerspine.md) | 13 | `result-track:fe8e9094b91b6bc3dce940f90c1f09b76d541004f33d6dbd372d1abafe5f1256` |
+| 3 | `theorem` | [every_center_phase_covered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Coverage.lean/declarations/every-center-phase-covered.md) | 17 | `result-track:0c9b45c0c362d24c60bb9115f2cc3d7967dfbcca5dbf163be4fa49ea766f58c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

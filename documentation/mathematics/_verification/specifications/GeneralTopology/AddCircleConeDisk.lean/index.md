@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/AddCircleConeDisk.lean/index.md) · [Full source](../../../../GeneralTopology/AddCircleConeDisk.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleConeDisk.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleConeDisk.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.CircleBoundaryAdapters`](../../../../AlgebraicTopology/CircleBoundaryAdapters.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Topology.AlgebraicTopology.ConeCongruence`](../../../../GeneralTopology/ConeCongruence.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Topology.AlgebraicTopology.ComplexDisk`](../../../../GeneralTopology/ComplexDisk.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.CircleBoundaryAdapters`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CircleBoundaryAdapters.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.ConeCongruence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConeCongruence.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.ComplexDisk`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ComplexDisk.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [boundaryHomeomorph](../../../../GeneralTopology/AddCircleConeDisk.lean/declarations/boundaryhomeomorph.md) | 25 | `declaration-track:5205c650b8905062662ce99f7217b4d83ff9f9457f72e7da7f7f21ad91a7b681` |
-| 2 | `def` | [homeomorph](../../../../GeneralTopology/AddCircleConeDisk.lean/declarations/homeomorph.md) | 30 | `declaration-track:74b95cc89adec59bc144fbd6704359ac761039412a9a3c4f9541f20539d335a8` |
-| 3 | `theorem` | [boundaryHomeomorph_zero](../../../../GeneralTopology/AddCircleConeDisk.lean/declarations/boundaryhomeomorph-zero.md) | 34 | `result-track:ffb5d1a40e66b15e5ae7527ee91b35a8934084cfcb576c40e0ddf1c937bbfb20` |
-| 4 | `theorem` | [boundaryHomeomorph_one](../../../../GeneralTopology/AddCircleConeDisk.lean/declarations/boundaryhomeomorph-one.md) | 41 | `result-track:05cec53e7f8a573faa01a4ce9c6842719bdc769e6d58d7e95dc4871302710c80` |
-| 5 | `theorem` | [boundaryHomeomorph_coe_zero](../../../../GeneralTopology/AddCircleConeDisk.lean/declarations/boundaryhomeomorph-coe-zero.md) | 49 | `result-track:7b0f1d3be4d2fcbb61f29fda930229129e0014097bff952fd0649ab1ab5cb280` |
-| 6 | `theorem` | [boundaryHomeomorph_coe_one](../../../../GeneralTopology/AddCircleConeDisk.lean/declarations/boundaryhomeomorph-coe-one.md) | 56 | `result-track:3352b38aab3e30783aff7d9daceac4d51008f66413a8d807d723eea38a48fbed` |
-| 7 | `theorem` | [homeomorph_boundary](../../../../GeneralTopology/AddCircleConeDisk.lean/declarations/homeomorph-boundary.md) | 63 | `result-track:48d2f1498010b6106a781e0d4de6eb09b8b12e649615ad2f293d9c4268b57bd2` |
-| 8 | `theorem` | [homeomorph_coneMk_zero](../../../../GeneralTopology/AddCircleConeDisk.lean/declarations/homeomorph-conemk-zero.md) | 70 | `result-track:fa4b9e113637d3dcb655b1508de5a18292030b9401f42ce8ff1d825e7b5b2427` |
-| 9 | `theorem` | [homeomorph_coneMk_one](../../../../GeneralTopology/AddCircleConeDisk.lean/declarations/homeomorph-conemk-one.md) | 77 | `result-track:4089ee13b0cb870149d72e1421a03d9c4f05b3d762cfabb041dd246bfe0789dd` |
-| 10 | `theorem` | [norm_homeomorph](../../../../GeneralTopology/AddCircleConeDisk.lean/declarations/norm-homeomorph.md) | 85 | `result-track:18ab3ffc50d13a71237e63dd289a61746c7e21ed048860591b7415d86b868f6c` |
-| 11 | `theorem` | [homeomorph_apex](../../../../GeneralTopology/AddCircleConeDisk.lean/declarations/homeomorph-apex.md) | 98 | `result-track:2165a478c4dcb63937df165b8ed3b082cce932d14c590b13d52c3ab9c807a751` |
+| 1 | `def` | [boundaryHomeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleConeDisk.lean/declarations/boundaryhomeomorph.md) | 25 | `declaration-track:5205c650b8905062662ce99f7217b4d83ff9f9457f72e7da7f7f21ad91a7b681` |
+| 2 | `def` | [homeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleConeDisk.lean/declarations/homeomorph.md) | 30 | `declaration-track:74b95cc89adec59bc144fbd6704359ac761039412a9a3c4f9541f20539d335a8` |
+| 3 | `theorem` | [boundaryHomeomorph_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleConeDisk.lean/declarations/boundaryhomeomorph-zero.md) | 34 | `result-track:ffb5d1a40e66b15e5ae7527ee91b35a8934084cfcb576c40e0ddf1c937bbfb20` |
+| 4 | `theorem` | [boundaryHomeomorph_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleConeDisk.lean/declarations/boundaryhomeomorph-one.md) | 41 | `result-track:05cec53e7f8a573faa01a4ce9c6842719bdc769e6d58d7e95dc4871302710c80` |
+| 5 | `theorem` | [boundaryHomeomorph_coe_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleConeDisk.lean/declarations/boundaryhomeomorph-coe-zero.md) | 49 | `result-track:7b0f1d3be4d2fcbb61f29fda930229129e0014097bff952fd0649ab1ab5cb280` |
+| 6 | `theorem` | [boundaryHomeomorph_coe_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleConeDisk.lean/declarations/boundaryhomeomorph-coe-one.md) | 56 | `result-track:3352b38aab3e30783aff7d9daceac4d51008f66413a8d807d723eea38a48fbed` |
+| 7 | `theorem` | [homeomorph_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleConeDisk.lean/declarations/homeomorph-boundary.md) | 63 | `result-track:48d2f1498010b6106a781e0d4de6eb09b8b12e649615ad2f293d9c4268b57bd2` |
+| 8 | `theorem` | [homeomorph_coneMk_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleConeDisk.lean/declarations/homeomorph-conemk-zero.md) | 70 | `result-track:fa4b9e113637d3dcb655b1508de5a18292030b9401f42ce8ff1d825e7b5b2427` |
+| 9 | `theorem` | [homeomorph_coneMk_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleConeDisk.lean/declarations/homeomorph-conemk-one.md) | 77 | `result-track:4089ee13b0cb870149d72e1421a03d9c4f05b3d762cfabb041dd246bfe0789dd` |
+| 10 | `theorem` | [norm_homeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleConeDisk.lean/declarations/norm-homeomorph.md) | 85 | `result-track:18ab3ffc50d13a71237e63dd289a61746c7e21ed048860591b7415d86b868f6c` |
+| 11 | `theorem` | [homeomorph_apex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleConeDisk.lean/declarations/homeomorph-apex.md) | 98 | `result-track:2165a478c4dcb63937df165b8ed3b082cce932d14c590b13d52c3ab9c807a751` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

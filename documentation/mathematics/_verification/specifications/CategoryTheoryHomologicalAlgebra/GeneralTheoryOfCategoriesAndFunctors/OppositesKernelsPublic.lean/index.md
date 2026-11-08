@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CokernelCofork.IsColimit.ofπOp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsPublic.lean/declarations/cokernelcofork-iscolimit-of-op.md) | 38 | `declaration-track:074caa1905e912c3a7eaeee4f5a0821bde72f5a71608f8276ba06d309f04e397` |
-| 2 | `def` | [CokernelCofork.IsColimit.ofπUnop](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsPublic.lean/declarations/cokernelcofork-iscolimit-of-unop.md) | 49 | `declaration-track:9567243a662c47d810a33ecb4d94d1744d20bf0f0c4bacce7dc235094fced2b7` |
-| 3 | `def` | [KernelFork.IsLimit.ofιOp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsPublic.lean/declarations/kernelfork-islimit-of-op.md) | 59 | `declaration-track:e3ce97632d57b854c6d73e6a04582ca3378a6179f9436056fcaf03eb7788a6e1` |
-| 4 | `def` | [KernelFork.IsLimit.ofιUnop](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsPublic.lean/declarations/kernelfork-islimit-of-unop.md) | 71 | `declaration-track:84a864d2c97083e071de786a3d2b234f3f2cad887ad4e3b7e95fd68bcb4bea4b` |
+| 1 | `def` | [CokernelCofork.IsColimit.ofπOp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsPublic.lean/declarations/cokernelcofork-iscolimit-of-op.md) | 38 | `declaration-track:074caa1905e912c3a7eaeee4f5a0821bde72f5a71608f8276ba06d309f04e397` |
+| 2 | `def` | [CokernelCofork.IsColimit.ofπUnop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsPublic.lean/declarations/cokernelcofork-iscolimit-of-unop.md) | 49 | `declaration-track:9567243a662c47d810a33ecb4d94d1744d20bf0f0c4bacce7dc235094fced2b7` |
+| 3 | `def` | [KernelFork.IsLimit.ofιOp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsPublic.lean/declarations/kernelfork-islimit-of-op.md) | 59 | `declaration-track:e3ce97632d57b854c6d73e6a04582ca3378a6179f9436056fcaf03eb7788a6e1` |
+| 4 | `def` | [KernelFork.IsLimit.ofιUnop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsPublic.lean/declarations/kernelfork-islimit-of-unop.md) | 71 | `declaration-track:84a864d2c97083e071de786a3d2b234f3f2cad887ad4e3b7e95fd68bcb4bea4b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

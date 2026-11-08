@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ReplayScopeNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ReplayScopeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ReplayScopeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ReplayScopeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [d4_graph_numbering](../../../../Combinatorics/ReplayScopeNamespaced.lean/declarations/d4-graph-numbering.md) | 16 | `result-track:87dd0b2284dd92b58bba95acfe4b15f613d4ad51324100ee999b49f117087c38` |
-| 2 | `theorem` | [e8_graph_numbering](../../../../Combinatorics/ReplayScopeNamespaced.lean/declarations/e8-graph-numbering.md) | 18 | `result-track:8937aa7cd7674064e7bd54915be08aacd4bb9ac2fe1bc12cf1e7c5590a0a01f0` |
-| 3 | `theorem` | [d4_geometry_link](../../../../Combinatorics/ReplayScopeNamespaced.lean/declarations/d4-geometry-link.md) | 20 | `result-track:3071cdd0083ff7ad55ca53658a0e14dd9fb5497e591c01cc7917a007c52f8d99` |
-| 4 | `theorem` | [e8_geometry_link](../../../../Combinatorics/ReplayScopeNamespaced.lean/declarations/e8-geometry-link.md) | 22 | `result-track:539439273f9106e0b556ca8908ed4022b68c3f72e7d64d98149a4c57ee1ab0dc` |
-| 5 | `theorem` | [d4_seed_orbit_exact](../../../../Combinatorics/ReplayScopeNamespaced.lean/declarations/d4-seed-orbit-exact.md) | 24 | `result-track:674fc624ce794d343085445ddd4890bb11c7f60b8d7b555c6266a4a7a472ed15` |
-| 6 | `theorem` | [e8_seed_orbit_exact](../../../../Combinatorics/ReplayScopeNamespaced.lean/declarations/e8-seed-orbit-exact.md) | 26 | `result-track:e55e60a82ea07e53ff4359f4f3ca994b0a41b1d67e5084ee697eee62c1e45a40` |
-| 7 | `theorem` | [generated_root_counts](../../../../Combinatorics/ReplayScopeNamespaced.lean/declarations/generated-root-counts.md) | 28 | `result-track:03edd4aa72768080b497a04d5601e69edb52d4d90dc7e4f2b06035464b202daf` |
-| 8 | `theorem` | [generated_sign_counts](../../../../Combinatorics/ReplayScopeNamespaced.lean/declarations/generated-sign-counts.md) | 30 | `result-track:51e709bd17d8ebe4fd4dac924acd63a5c982450380c83b6fda80438ba33f50a8` |
+| 1 | `theorem` | [d4_graph_numbering](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ReplayScopeNamespaced.lean/declarations/d4-graph-numbering.md) | 16 | `result-track:87dd0b2284dd92b58bba95acfe4b15f613d4ad51324100ee999b49f117087c38` |
+| 2 | `theorem` | [e8_graph_numbering](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ReplayScopeNamespaced.lean/declarations/e8-graph-numbering.md) | 18 | `result-track:8937aa7cd7674064e7bd54915be08aacd4bb9ac2fe1bc12cf1e7c5590a0a01f0` |
+| 3 | `theorem` | [d4_geometry_link](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ReplayScopeNamespaced.lean/declarations/d4-geometry-link.md) | 20 | `result-track:3071cdd0083ff7ad55ca53658a0e14dd9fb5497e591c01cc7917a007c52f8d99` |
+| 4 | `theorem` | [e8_geometry_link](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ReplayScopeNamespaced.lean/declarations/e8-geometry-link.md) | 22 | `result-track:539439273f9106e0b556ca8908ed4022b68c3f72e7d64d98149a4c57ee1ab0dc` |
+| 5 | `theorem` | [d4_seed_orbit_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ReplayScopeNamespaced.lean/declarations/d4-seed-orbit-exact.md) | 24 | `result-track:674fc624ce794d343085445ddd4890bb11c7f60b8d7b555c6266a4a7a472ed15` |
+| 6 | `theorem` | [e8_seed_orbit_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ReplayScopeNamespaced.lean/declarations/e8-seed-orbit-exact.md) | 26 | `result-track:e55e60a82ea07e53ff4359f4f3ca994b0a41b1d67e5084ee697eee62c1e45a40` |
+| 7 | `theorem` | [generated_root_counts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ReplayScopeNamespaced.lean/declarations/generated-root-counts.md) | 28 | `result-track:03edd4aa72768080b497a04d5601e69edb52d4d90dc7e4f2b06035464b202daf` |
+| 8 | `theorem` | [generated_sign_counts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ReplayScopeNamespaced.lean/declarations/generated-sign-counts.md) | 30 | `result-track:51e709bd17d8ebe4fd4dac924acd63a5c982450380c83b6fda80438ba33f50a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/ToMkOnePublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/ToMkOnePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ToMkOnePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ToMkOnePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toMk₁](../../../../AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk.md) | 32 | `declaration-track:a838f483d921e6e964ad1cbdf03c9c44f51bbccf2dfdb7ab4903880e1ee250f5` |
-| 2 | `lemma` | [toMk₁_apply](../../../../AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk-apply.md) | 40 | `result-track:6f6a7129b280b37772b6e2a359ec35e99b951346f10f84c2a50f031c53404802` |
-| 3 | `lemma` | [toMk₁_apply_eq_zero_iff](../../../../AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk-apply-eq-zero-iff.md) | 48 | `result-track:830cb343e076720d5af67eb6bae625d2236cc66f32203cc1a1d2c4acae68dfbf` |
-| 4 | `lemma` | [toMk₁_of_castSucc_lt](../../../../AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk-of-castsucc-lt.md) | 52 | `result-track:b4d14c328563926077c55130243e55105d854668b99c6c21cca7fb31c1b064d9` |
-| 5 | `lemma` | [toMk₁_apply_eq_one_iff](../../../../AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk-apply-eq-one-iff.md) | 56 | `result-track:63ee18c33569ae3cee7c87f48eff2a31d6b02af5914a371291d4881523982ebc` |
-| 6 | `lemma` | [toMk₁_of_le_castSucc](../../../../AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk-of-le-castsucc.md) | 60 | `result-track:b7b60b4c30130559f86a69426e749e253c13f55f63fae494b98120f18d9d55d2` |
-| 7 | `lemma` | [δ_comp_toMk₁_of_le](../../../../AlgebraicTopology/ToMkOnePublic.lean/declarations/comp-tomk-of-le-source-edition-2.md) | 64 | `result-track:ebd65d84eda3f4e8ccf9f6c524a89daf3d895e7e3c7eef00dac9e0c3b6decf17` |
-| 8 | `lemma` | [δ_comp_toMk₁_of_lt](../../../../AlgebraicTopology/ToMkOnePublic.lean/declarations/comp-tomk-of-lt-source-edition-2.md) | 76 | `result-track:fd6b705b29c77904cf2ce62d11c66a69a278b681c7c2515e8096299b9e3c6b68` |
-| 9 | `lemma` | [σ_comp_toMk₁_of_le](../../../../AlgebraicTopology/ToMkOnePublic.lean/declarations/comp-tomk-of-le.md) | 85 | `result-track:92e3d494a033a1ff136206fbe8731edfc63382e4095e86eea1286b33daaf3f02` |
-| 10 | `lemma` | [σ_comp_toMk₁_of_lt](../../../../AlgebraicTopology/ToMkOnePublic.lean/declarations/comp-tomk-of-lt.md) | 97 | `result-track:175eb973efce6d87ee61a0c3bcdd3f12cd916835ca1f9b6c5eda3a62b4607b26` |
-| 11 | `lemma` | [toMk₁_injective](../../../../AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk-injective.md) | 111 | `result-track:fd70535ff5a1d2dc5d1ee7bb5023b4b96398ddf060c30146d0d52853394aa831` |
-| 12 | `lemma` | [toMk₁_surjective](../../../../AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk-surjective.md) | 118 | `result-track:ba82f7c52e478e4cf9f124484472423f478509ddc0a60d4f5c5df802234a4a8e` |
-| 13 | `lemma` | [toMk₁_bijective](../../../../AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk-bijective.md) | 150 | `result-track:d087a09b66e0f1ea22f5f7a793f8b76d6f02593f7a30fc825dfa93c6baf079d7` |
-| 14 | `def` | [toMk₁Equiv](../../../../AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk-equiv.md) | 157 | `declaration-track:89126a066eff76e2d241b6459f0afd3d0a850328021d1611249536367e434fba` |
+| 1 | `def` | [toMk₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk.md) | 32 | `declaration-track:a838f483d921e6e964ad1cbdf03c9c44f51bbccf2dfdb7ab4903880e1ee250f5` |
+| 2 | `lemma` | [toMk₁_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk-apply.md) | 40 | `result-track:6f6a7129b280b37772b6e2a359ec35e99b951346f10f84c2a50f031c53404802` |
+| 3 | `lemma` | [toMk₁_apply_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk-apply-eq-zero-iff.md) | 48 | `result-track:830cb343e076720d5af67eb6bae625d2236cc66f32203cc1a1d2c4acae68dfbf` |
+| 4 | `lemma` | [toMk₁_of_castSucc_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk-of-castsucc-lt.md) | 52 | `result-track:b4d14c328563926077c55130243e55105d854668b99c6c21cca7fb31c1b064d9` |
+| 5 | `lemma` | [toMk₁_apply_eq_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk-apply-eq-one-iff.md) | 56 | `result-track:63ee18c33569ae3cee7c87f48eff2a31d6b02af5914a371291d4881523982ebc` |
+| 6 | `lemma` | [toMk₁_of_le_castSucc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk-of-le-castsucc.md) | 60 | `result-track:b7b60b4c30130559f86a69426e749e253c13f55f63fae494b98120f18d9d55d2` |
+| 7 | `lemma` | [δ_comp_toMk₁_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ToMkOnePublic.lean/declarations/comp-tomk-of-le-source-edition-2.md) | 64 | `result-track:ebd65d84eda3f4e8ccf9f6c524a89daf3d895e7e3c7eef00dac9e0c3b6decf17` |
+| 8 | `lemma` | [δ_comp_toMk₁_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ToMkOnePublic.lean/declarations/comp-tomk-of-lt-source-edition-2.md) | 76 | `result-track:fd6b705b29c77904cf2ce62d11c66a69a278b681c7c2515e8096299b9e3c6b68` |
+| 9 | `lemma` | [σ_comp_toMk₁_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ToMkOnePublic.lean/declarations/comp-tomk-of-le.md) | 85 | `result-track:92e3d494a033a1ff136206fbe8731edfc63382e4095e86eea1286b33daaf3f02` |
+| 10 | `lemma` | [σ_comp_toMk₁_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ToMkOnePublic.lean/declarations/comp-tomk-of-lt.md) | 97 | `result-track:175eb973efce6d87ee61a0c3bcdd3f12cd916835ca1f9b6c5eda3a62b4607b26` |
+| 11 | `lemma` | [toMk₁_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk-injective.md) | 111 | `result-track:fd70535ff5a1d2dc5d1ee7bb5023b4b96398ddf060c30146d0d52853394aa831` |
+| 12 | `lemma` | [toMk₁_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk-surjective.md) | 118 | `result-track:ba82f7c52e478e4cf9f124484472423f478509ddc0a60d4f5c5df802234a4a8e` |
+| 13 | `lemma` | [toMk₁_bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk-bijective.md) | 150 | `result-track:d087a09b66e0f1ea22f5f7a793f8b76d6f02593f7a30fc825dfa93c6baf079d7` |
+| 14 | `def` | [toMk₁Equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ToMkOnePublic.lean/declarations/tomk-equiv.md) | 157 | `declaration-track:89126a066eff76e2d241b6459f0afd3d0a850328021d1611249536367e434fba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

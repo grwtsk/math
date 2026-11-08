@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/UpperBoundaryHyperbolaGainStatements.lean/index.md) · [Full source](../../../../MeasureAndIntegration/UpperBoundaryHyperbolaGainStatements.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperBoundaryHyperbolaGainStatements.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperBoundaryHyperbolaGainStatements.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/UpperBoundaryHyperbolaGainStatements.lean/declarations/example-source-edition-3.md) | 11 | `declaration-track:c389ff59ee6e40831a176d53ea12bff6d04735ee0ac9c55a876ea2e07d3e8d25` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/UpperBoundaryHyperbolaGainStatements.lean/declarations/example-source-edition-5.md) | 15 | `declaration-track:cbc049463e5d72452d83cc7ab0817d83b9dbc0b42b3b35c829ff8dc0866cce68` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/UpperBoundaryHyperbolaGainStatements.lean/declarations/example-source-edition-6.md) | 19 | `declaration-track:f0faa3d6939a891b50328f6d6121b62dce9b26a71308a8093cdc7508eaebaec3` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/UpperBoundaryHyperbolaGainStatements.lean/declarations/example-source-edition-2.md) | 24 | `declaration-track:203a6686f508977896bd01bf5bf6f040599acbe14ac8016d7b3bb129198f74f4` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/UpperBoundaryHyperbolaGainStatements.lean/declarations/example.md) | 29 | `declaration-track:1e46ed889af924cdf9666d8919d8510e275646d17392458e0282b230474aa952` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/UpperBoundaryHyperbolaGainStatements.lean/declarations/example-source-edition-4.md) | 36 | `declaration-track:c651bdf2ea9cf86bd0864c55c94e85581d46f0ce80066550fff1d7559bc1d5da` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperBoundaryHyperbolaGainStatements.lean/declarations/example-source-edition-3.md) | 11 | `declaration-track:c389ff59ee6e40831a176d53ea12bff6d04735ee0ac9c55a876ea2e07d3e8d25` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperBoundaryHyperbolaGainStatements.lean/declarations/example-source-edition-5.md) | 15 | `declaration-track:cbc049463e5d72452d83cc7ab0817d83b9dbc0b42b3b35c829ff8dc0866cce68` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperBoundaryHyperbolaGainStatements.lean/declarations/example-source-edition-6.md) | 19 | `declaration-track:f0faa3d6939a891b50328f6d6121b62dce9b26a71308a8093cdc7508eaebaec3` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperBoundaryHyperbolaGainStatements.lean/declarations/example-source-edition-2.md) | 24 | `declaration-track:203a6686f508977896bd01bf5bf6f040599acbe14ac8016d7b3bb129198f74f4` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperBoundaryHyperbolaGainStatements.lean/declarations/example.md) | 29 | `declaration-track:1e46ed889af924cdf9666d8919d8510e275646d17392458e0282b230474aa952` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperBoundaryHyperbolaGainStatements.lean/declarations/example-source-edition-4.md) | 36 | `declaration-track:c651bdf2ea9cf86bd0864c55c94e85581d46f0ce80066550fff1d7559bc1d5da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

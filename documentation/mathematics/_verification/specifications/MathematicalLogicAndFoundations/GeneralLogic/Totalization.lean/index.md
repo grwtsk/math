@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Totalization.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Totalization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Totalization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Totalization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TotalizationTheory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Totalization.lean/declarations/totalizationtheory.md) | 20 | `declaration-track:c584189b12471f8fd67515cf13f9394668820e178021e369d750b9c0618b756b` |
-| 2 | `def` | [fabricPrismaticValue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Totalization.lean/declarations/fabricprismaticvalue.md) | 26 | `declaration-track:8b0f5041e65cb81a61237c3b56461a715740ecedcd4d99237df9c3532589fb10` |
-| 3 | `def` | [prismaticReactionMap](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Totalization.lean/declarations/prismaticreactionmap.md) | 37 | `declaration-track:40c5861de01d145c5262f0613bdf41a98df9af3ae1daea35af7e0f7ee14277dc` |
-| 4 | `theorem` | [prismaticReactionMap_id](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Totalization.lean/declarations/prismaticreactionmap-id.md) | 47 | `result-track:c09fd970fc2d481b50831ee4dd75a6b292213ff9f49d974008dcde907341b814` |
-| 5 | `theorem` | [prismaticReactionMap_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Totalization.lean/declarations/prismaticreactionmap-comp.md) | 55 | `result-track:9ee18389be837627e37d81cda184fbece10c87d1c9a2d09ad92814d4fa1b9114` |
-| 6 | `structure` | [PrismaticDescentCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Totalization.lean/declarations/prismaticdescentcertificate.md) | 72 | `declaration-track:720c8323d90b0b346c6e8dc3f33e6e26cb396617088bed2cd0b3d78420d633bc` |
+| 1 | `structure` | [TotalizationTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Totalization.lean/declarations/totalizationtheory.md) | 20 | `declaration-track:c584189b12471f8fd67515cf13f9394668820e178021e369d750b9c0618b756b` |
+| 2 | `def` | [fabricPrismaticValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Totalization.lean/declarations/fabricprismaticvalue.md) | 26 | `declaration-track:8b0f5041e65cb81a61237c3b56461a715740ecedcd4d99237df9c3532589fb10` |
+| 3 | `def` | [prismaticReactionMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Totalization.lean/declarations/prismaticreactionmap.md) | 37 | `declaration-track:40c5861de01d145c5262f0613bdf41a98df9af3ae1daea35af7e0f7ee14277dc` |
+| 4 | `theorem` | [prismaticReactionMap_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Totalization.lean/declarations/prismaticreactionmap-id.md) | 47 | `result-track:c09fd970fc2d481b50831ee4dd75a6b292213ff9f49d974008dcde907341b814` |
+| 5 | `theorem` | [prismaticReactionMap_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Totalization.lean/declarations/prismaticreactionmap-comp.md) | 55 | `result-track:9ee18389be837627e37d81cda184fbece10c87d1c9a2d09ad92814d4fa1b9114` |
+| 6 | `structure` | [PrismaticDescentCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Totalization.lean/declarations/prismaticdescentcertificate.md) | 72 | `declaration-track:720c8323d90b0b346c6e8dc3f33e6e26cb396617088bed2cd0b3d78420d633bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

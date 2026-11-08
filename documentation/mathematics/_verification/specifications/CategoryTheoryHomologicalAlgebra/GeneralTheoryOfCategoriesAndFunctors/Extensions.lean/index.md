@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Extensions.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Extensions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Extensions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Extensions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsClosedUnderExtensions](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Extensions.lean/declarations/isclosedunderextensions.md) | 37 | `declaration-track:809eaa7e9d9cbadc94a0d50b0b8b656a27864e5f7a40a891aa87bf4956cd28d7` |
-| 2 | `lemma` | [prop_X₂_of_shortExact](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Extensions.lean/declarations/prop-x-of-shortexact.md) | 41 | `result-track:627411328af625c3a66e39c13e487745df7855a516df165939f51c7f3471562f` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Extensions.lean/declarations/instance-source-edition-3.md) | 46 | `declaration-track:7d8a3bf459ec9b8adfe0a898acd904b83cbb6125295312182ac58ab9909d4524` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Extensions.lean/declarations/instance-source-edition-2.md) | 49 | `declaration-track:77105d5eed6e358c97ada40a8b48c54f09aa08624bc4251ebc087ae4bf2824e0` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Extensions.lean/declarations/instance.md) | 53 | `declaration-track:310aae6457824582cf407ab48750bbaa05e7f731916faacaa1663f2c97172c13` |
-| 6 | `lemma` | [prop_biprod](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Extensions.lean/declarations/prop-biprod.md) | 64 | `result-track:79fb0475e9d18530b48237c2de5420bdd04cfebe5395995d944e1a278564cbf3` |
+| 1 | `class` | [IsClosedUnderExtensions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Extensions.lean/declarations/isclosedunderextensions.md) | 37 | `declaration-track:809eaa7e9d9cbadc94a0d50b0b8b656a27864e5f7a40a891aa87bf4956cd28d7` |
+| 2 | `lemma` | [prop_X₂_of_shortExact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Extensions.lean/declarations/prop-x-of-shortexact.md) | 41 | `result-track:627411328af625c3a66e39c13e487745df7855a516df165939f51c7f3471562f` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Extensions.lean/declarations/instance-source-edition-3.md) | 46 | `declaration-track:7d8a3bf459ec9b8adfe0a898acd904b83cbb6125295312182ac58ab9909d4524` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Extensions.lean/declarations/instance-source-edition-2.md) | 49 | `declaration-track:77105d5eed6e358c97ada40a8b48c54f09aa08624bc4251ebc087ae4bf2824e0` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Extensions.lean/declarations/instance.md) | 53 | `declaration-track:310aae6457824582cf407ab48750bbaa05e7f731916faacaa1663f2c97172c13` |
+| 6 | `lemma` | [prop_biprod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Extensions.lean/declarations/prop-biprod.md) | 64 | `result-track:79fb0475e9d18530b48237c2de5420bdd04cfebe5395995d944e1a278564cbf3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

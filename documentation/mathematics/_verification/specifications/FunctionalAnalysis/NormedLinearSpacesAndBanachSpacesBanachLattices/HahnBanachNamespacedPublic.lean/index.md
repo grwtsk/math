@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/HahnBanachNamespacedPublic.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/HahnBanachNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/HahnBanachNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/HahnBanachNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_extension_norm_eq](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/HahnBanachNamespacedPublic.lean/declarations/exists-extension-norm-eq.md) | 52 | `result-track:7fddd90896220e0897a13dfae533c9394af97fce7d2051b1472b2fb237bea0ed` |
-| 2 | `theorem` | [exists_dual_vector](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/HahnBanachNamespacedPublic.lean/declarations/exists-dual-vector.md) | 75 | `result-track:00955e4e106eb064b8ca7fb7d492d7f6bdfc54951a47aab8535f3c11f3f6b816` |
-| 3 | `theorem` | [exists_dual_vector''](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/HahnBanachNamespacedPublic.lean/declarations/exists-dual-vector-source-edition-3.md) | 94 | `result-track:86df9dfd4181db71ba514e537da02f2306ab9ef81af002aa33b0924cecb14283` |
-| 4 | `theorem` | [exists_dual_vector'](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/HahnBanachNamespacedPublic.lean/declarations/exists-dual-vector-source-edition-2.md) | 106 | `result-track:7fe75ce6333c2a8e22ee8c4c150163813ad52b0df03d5056e961e44b869015cd` |
+| 1 | `theorem` | [exists_extension_norm_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/HahnBanachNamespacedPublic.lean/declarations/exists-extension-norm-eq.md) | 52 | `result-track:7fddd90896220e0897a13dfae533c9394af97fce7d2051b1472b2fb237bea0ed` |
+| 2 | `theorem` | [exists_dual_vector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/HahnBanachNamespacedPublic.lean/declarations/exists-dual-vector.md) | 75 | `result-track:00955e4e106eb064b8ca7fb7d492d7f6bdfc54951a47aab8535f3c11f3f6b816` |
+| 3 | `theorem` | [exists_dual_vector''](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/HahnBanachNamespacedPublic.lean/declarations/exists-dual-vector-source-edition-3.md) | 94 | `result-track:86df9dfd4181db71ba514e537da02f2306ab9ef81af002aa33b0924cecb14283` |
+| 4 | `theorem` | [exists_dual_vector'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/HahnBanachNamespacedPublic.lean/declarations/exists-dual-vector-source-edition-2.md) | 106 | `result-track:7fe75ce6333c2a8e22ee8c4c150163813ad52b0df03d5056e961e44b869015cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SquareCompensation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SquareCompensation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SquareCompensation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SquareCompensation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [correlation_deriv_zero](../../../../MeasureAndIntegration/SquareCompensation.lean/declarations/correlation-deriv-zero.md) | 27 | `result-track:37bf30f7cb0b46dc764794a5c49a2004ee267f713eedf0c93dbbf668529176f4` |
-| 2 | `def` | [squareCurvatureCoefficient](../../../../MeasureAndIntegration/SquareCompensation.lean/declarations/squarecurvaturecoefficient.md) | 43 | `declaration-track:2f9a2162eb654c6833722996cb7b6dbc97ef715b798dbb59052b88a4908949b6` |
-| 3 | `theorem` | [diagonal_deriv_linear_bound](../../../../MeasureAndIntegration/SquareCompensation.lean/declarations/diagonal-deriv-linear-bound.md) | 45 | `result-track:f8657f4170968d38d19ecdaa3d2068b0c064a969c9c4887a13c1be8c555fd5dd` |
-| 4 | `theorem` | [centered_square_error_eq](../../../../MeasureAndIntegration/SquareCompensation.lean/declarations/centered-square-error-eq.md) | 57 | `result-track:dc97ec0c2914b055354797ef700d9349fc491d6982829ee28553a9eadfdf94e2` |
-| 5 | `theorem` | [square_error_le_weighted_moment](../../../../MeasureAndIntegration/SquareCompensation.lean/declarations/square-error-le-weighted-moment.md) | 79 | `result-track:1dcfd1eac3a78c049a1d44cbd5027b8ac08d25658194427a1c5835f32efe184c` |
-| 6 | `theorem` | [square_error_uniform_of_weighted_moment](../../../../MeasureAndIntegration/SquareCompensation.lean/declarations/square-error-uniform-of-weighted-moment.md) | 117 | `result-track:eba56b0e074a41a01c00ec6c00b41a7ce131be68097da0f81e90e47a8783aa38` |
+| 1 | `theorem` | [correlation_deriv_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SquareCompensation.lean/declarations/correlation-deriv-zero.md) | 27 | `result-track:37bf30f7cb0b46dc764794a5c49a2004ee267f713eedf0c93dbbf668529176f4` |
+| 2 | `def` | [squareCurvatureCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SquareCompensation.lean/declarations/squarecurvaturecoefficient.md) | 43 | `declaration-track:2f9a2162eb654c6833722996cb7b6dbc97ef715b798dbb59052b88a4908949b6` |
+| 3 | `theorem` | [diagonal_deriv_linear_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SquareCompensation.lean/declarations/diagonal-deriv-linear-bound.md) | 45 | `result-track:f8657f4170968d38d19ecdaa3d2068b0c064a969c9c4887a13c1be8c555fd5dd` |
+| 4 | `theorem` | [centered_square_error_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SquareCompensation.lean/declarations/centered-square-error-eq.md) | 57 | `result-track:dc97ec0c2914b055354797ef700d9349fc491d6982829ee28553a9eadfdf94e2` |
+| 5 | `theorem` | [square_error_le_weighted_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SquareCompensation.lean/declarations/square-error-le-weighted-moment.md) | 79 | `result-track:1dcfd1eac3a78c049a1d44cbd5027b8ac08d25658194427a1c5835f32efe184c` |
+| 6 | `theorem` | [square_error_uniform_of_weighted_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SquareCompensation.lean/declarations/square-error-uniform-of-weighted-moment.md) | 117 | `result-track:eba56b0e074a41a01c00ec6c00b41a7ce131be68097da0f81e90e47a8783aa38` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FiniteEulerProduct.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FiniteEulerProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteEulerProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteEulerProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteEulerFactor](../../../../CommutativeAlgebra/FiniteEulerProduct.lean/declarations/finiteeulerfactor.md) | 16 | `declaration-track:36c94c3a73ef1b261b0c060746b16d5691b0f8c28df509a8b93e7bba2efb26b1` |
-| 2 | `def` | [finiteEulerProduct](../../../../CommutativeAlgebra/FiniteEulerProduct.lean/declarations/finiteeulerproduct.md) | 22 | `declaration-track:4298bade3c70a99b301d105595d8ac3cda5fe1127c19a74c4d5b7e074577c7d7` |
-| 3 | `def` | [exponentVectors](../../../../CommutativeAlgebra/FiniteEulerProduct.lean/declarations/exponentvectors.md) | 29 | `declaration-track:657c1810f85a43c47ccd45bd89f5b3112ceceed9e42589d5aa3fb44ad81d868e` |
-| 4 | `theorem` | [finite_euler_product_expands_as_sum_over_exponents](../../../../CommutativeAlgebra/FiniteEulerProduct.lean/declarations/finite-euler-product-expands-as-sum-over-exponents.md) | 40 | `result-track:d26987114bf47ac781b806190ff8d0f04fbd4c1c41432d0fd4bd5e65d9599de2` |
+| 1 | `def` | [finiteEulerFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteEulerProduct.lean/declarations/finiteeulerfactor.md) | 16 | `declaration-track:36c94c3a73ef1b261b0c060746b16d5691b0f8c28df509a8b93e7bba2efb26b1` |
+| 2 | `def` | [finiteEulerProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteEulerProduct.lean/declarations/finiteeulerproduct.md) | 22 | `declaration-track:4298bade3c70a99b301d105595d8ac3cda5fe1127c19a74c4d5b7e074577c7d7` |
+| 3 | `def` | [exponentVectors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteEulerProduct.lean/declarations/exponentvectors.md) | 29 | `declaration-track:657c1810f85a43c47ccd45bd89f5b3112ceceed9e42589d5aa3fb44ad81d868e` |
+| 4 | `theorem` | [finite_euler_product_expands_as_sum_over_exponents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteEulerProduct.lean/declarations/finite-euler-product-expands-as-sum-over-exponents.md) | 40 | `result-track:d26987114bf47ac781b806190ff8d0f04fbd4c1c41432d0fd4bd5e65d9599de2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

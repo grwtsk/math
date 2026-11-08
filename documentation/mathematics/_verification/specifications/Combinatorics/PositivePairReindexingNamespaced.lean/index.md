@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PositivePairReindexingNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/PositivePairReindexingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePairReindexingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePairReindexingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PositiveFactorPair](../../../../Combinatorics/PositivePairReindexingNamespaced.lean/declarations/positivefactorpair.md) | 30 | `declaration-track:b14b229048db75447960c8fa80da67c100c8771012daee39e1bc1bdeff9e6486` |
-| 2 | `instance` | [(anonymous)](../../../../Combinatorics/PositivePairReindexingNamespaced.lean/declarations/instance.md) | 38 | `declaration-track:b65af539b0cf084be9da3c8e1b019c6fa05ff0aa3002d6a2a21a7749946de2ef` |
-| 3 | `def` | [left](../../../../Combinatorics/PositivePairReindexingNamespaced.lean/declarations/left.md) | 53 | `declaration-track:ab5d6bab55d6f6416618879407825f736445099e23273a063a5b746ed7fbeeef` |
-| 4 | `def` | [right](../../../../Combinatorics/PositivePairReindexingNamespaced.lean/declarations/right.md) | 58 | `declaration-track:6af747ce4df079bd74c2380a2e324012a5279293ae3a70af3480c2d8d3d285f7` |
-| 5 | `theorem` | [left_pos](../../../../Combinatorics/PositivePairReindexingNamespaced.lean/declarations/left-pos.md) | 63 | `result-track:b58987359c734b585542d653bcc928e4e3d7c1966306a4d813b90a358a68678e` |
-| 6 | `theorem` | [right_pos](../../../../Combinatorics/PositivePairReindexingNamespaced.lean/declarations/right-pos.md) | 69 | `result-track:61201323d83e0937c82938d7fc2e6e3bbb869e8d68640f8e56f332817d765c14` |
-| 7 | `theorem` | [mul_eq](../../../../Combinatorics/PositivePairReindexingNamespaced.lean/declarations/mul-eq.md) | 78 | `result-track:a00f67ba6af4df81936dc781570d46b0016704f952d19da3adf656d117610f98` |
-| 8 | `def` | [productFiberSum](../../../../Combinatorics/PositivePairReindexingNamespaced.lean/declarations/productfibersum.md) | 86 | `declaration-track:fc41f0ff8bff9dd9bf6b1dd6ee4ac92cbdaddc31f41c51559f31954750f5751a` |
-| 9 | `theorem` | [productFiberSum_eq_sum_positive_pairs](../../../../Combinatorics/PositivePairReindexingNamespaced.lean/declarations/productfibersum-eq-sum-positive-pairs.md) | 97 | `result-track:642154aaa59b08c471285859b2dda034ceb77072a769ec093cd61deb785bef21` |
+| 1 | `structure` | [PositiveFactorPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePairReindexingNamespaced.lean/declarations/positivefactorpair.md) | 30 | `declaration-track:b14b229048db75447960c8fa80da67c100c8771012daee39e1bc1bdeff9e6486` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePairReindexingNamespaced.lean/declarations/instance.md) | 38 | `declaration-track:b65af539b0cf084be9da3c8e1b019c6fa05ff0aa3002d6a2a21a7749946de2ef` |
+| 3 | `def` | [left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePairReindexingNamespaced.lean/declarations/left.md) | 53 | `declaration-track:ab5d6bab55d6f6416618879407825f736445099e23273a063a5b746ed7fbeeef` |
+| 4 | `def` | [right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePairReindexingNamespaced.lean/declarations/right.md) | 58 | `declaration-track:6af747ce4df079bd74c2380a2e324012a5279293ae3a70af3480c2d8d3d285f7` |
+| 5 | `theorem` | [left_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePairReindexingNamespaced.lean/declarations/left-pos.md) | 63 | `result-track:b58987359c734b585542d653bcc928e4e3d7c1966306a4d813b90a358a68678e` |
+| 6 | `theorem` | [right_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePairReindexingNamespaced.lean/declarations/right-pos.md) | 69 | `result-track:61201323d83e0937c82938d7fc2e6e3bbb869e8d68640f8e56f332817d765c14` |
+| 7 | `theorem` | [mul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePairReindexingNamespaced.lean/declarations/mul-eq.md) | 78 | `result-track:a00f67ba6af4df81936dc781570d46b0016704f952d19da3adf656d117610f98` |
+| 8 | `def` | [productFiberSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePairReindexingNamespaced.lean/declarations/productfibersum.md) | 86 | `declaration-track:fc41f0ff8bff9dd9bf6b1dd6ee4ac92cbdaddc31f41c51559f31954750f5751a` |
+| 9 | `theorem` | [productFiberSum_eq_sum_positive_pairs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePairReindexingNamespaced.lean/declarations/productfibersum-eq-sum-positive-pairs.md) | 97 | `result-track:642154aaa59b08c471285859b2dda034ceb77072a769ec093cd61deb785bef21` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

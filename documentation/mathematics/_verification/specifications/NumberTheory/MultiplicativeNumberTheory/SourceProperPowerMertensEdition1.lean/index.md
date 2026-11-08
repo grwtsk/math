@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceProperPowerMertensEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceProperPowerMertensEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceProperPowerMertensEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceProperPowerMertensEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tailProperMass_one_eq](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceProperPowerMertensEdition1.lean/declarations/tailpropermass-one-eq.md) | 13 | `result-track:0fe7341e832e1a4efcfb5efe2b0245af02a1910ddb014e309e4543ff7eed82b6` |
-| 2 | `theorem` | [weighted_difference_le_three_halves](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceProperPowerMertensEdition1.lean/declarations/weighted-difference-le-three-halves.md) | 24 | `result-track:4e2883a95d7468e44379deedbab7f25eb92c8d23ba8467c26bd168867adcf955` |
-| 3 | `theorem` | [weightedPrime_sub_log_bounds](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceProperPowerMertensEdition1.lean/declarations/weightedprime-sub-log-bounds.md) | 31 | `result-track:3227c16877f2d8b9455ecbe8d8703fb8c51b3a180c02f876df41811ee11a5973` |
-| 4 | `theorem` | [weightedPrime_mertens_real_fixed](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceProperPowerMertensEdition1.lean/declarations/weightedprime-mertens-real-fixed.md) | 40 | `result-track:9200950b1a921947a7694ae759cad140ea9a06d297d665c0c415a6c70d4d8a46` |
-| 5 | `theorem` | [weightedPrime_logcutoff_fixed](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceProperPowerMertensEdition1.lean/declarations/weightedprime-logcutoff-fixed.md) | 58 | `result-track:2e20ccddb7389476ee0cee657715f9a1ce038aa0ce619fb6172cf3d3e92c37b5` |
+| 1 | `theorem` | [tailProperMass_one_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceProperPowerMertensEdition1.lean/declarations/tailpropermass-one-eq.md) | 13 | `result-track:0fe7341e832e1a4efcfb5efe2b0245af02a1910ddb014e309e4543ff7eed82b6` |
+| 2 | `theorem` | [weighted_difference_le_three_halves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceProperPowerMertensEdition1.lean/declarations/weighted-difference-le-three-halves.md) | 24 | `result-track:4e2883a95d7468e44379deedbab7f25eb92c8d23ba8467c26bd168867adcf955` |
+| 3 | `theorem` | [weightedPrime_sub_log_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceProperPowerMertensEdition1.lean/declarations/weightedprime-sub-log-bounds.md) | 31 | `result-track:3227c16877f2d8b9455ecbe8d8703fb8c51b3a180c02f876df41811ee11a5973` |
+| 4 | `theorem` | [weightedPrime_mertens_real_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceProperPowerMertensEdition1.lean/declarations/weightedprime-mertens-real-fixed.md) | 40 | `result-track:9200950b1a921947a7694ae759cad140ea9a06d297d665c0c415a6c70d4d8a46` |
+| 5 | `theorem` | [weightedPrime_logcutoff_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceProperPowerMertensEdition1.lean/declarations/weightedprime-logcutoff-fixed.md) | 58 | `result-track:2e20ccddb7389476ee0cee657715f9a1ce038aa0ce619fb6172cf3d3e92c37b5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

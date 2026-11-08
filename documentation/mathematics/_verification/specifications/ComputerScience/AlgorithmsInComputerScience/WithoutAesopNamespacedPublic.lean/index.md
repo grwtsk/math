@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/WithoutAesopNamespacedPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/WithoutAesopNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WithoutAesopNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WithoutAesopNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eval_ite_ite'](../../../../../ComputerScience/AlgorithmsInComputerScience/WithoutAesopNamespacedPublic.lean/declarations/eval-ite-ite.md) | 35 | `result-track:d4cf27ca7efe616f36008b5fc1691a1245e1b385c2baef33c71c6c846ba6b161` |
-| 2 | `def` | [normSize'](../../../../../ComputerScience/AlgorithmsInComputerScience/WithoutAesopNamespacedPublic.lean/declarations/normsize.md) | 40 | `declaration-track:57612543e7cc71f6a1483049d1fdf46b54d64089e1fee263cef565ede0ddd11b` |
-| 3 | `def` | [normalize'](../../../../../ComputerScience/AlgorithmsInComputerScience/WithoutAesopNamespacedPublic.lean/declarations/normalize.md) | 47 | `declaration-track:8e7c6bea9bbaa2ef78398edbdad7f418ac95cb9996cf784208a55adf4e4ae449` |
-| 4 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/WithoutAesopNamespacedPublic.lean/declarations/example.md) | 131 | `declaration-track:0475154d50b9c8076ac6961b772b37c2f427b6b0632bcd18ea0a12b33eab2664` |
+| 1 | `theorem` | [eval_ite_ite'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WithoutAesopNamespacedPublic.lean/declarations/eval-ite-ite.md) | 35 | `result-track:d4cf27ca7efe616f36008b5fc1691a1245e1b385c2baef33c71c6c846ba6b161` |
+| 2 | `def` | [normSize'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WithoutAesopNamespacedPublic.lean/declarations/normsize.md) | 40 | `declaration-track:57612543e7cc71f6a1483049d1fdf46b54d64089e1fee263cef565ede0ddd11b` |
+| 3 | `def` | [normalize'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WithoutAesopNamespacedPublic.lean/declarations/normalize.md) | 47 | `declaration-track:8e7c6bea9bbaa2ef78398edbdad7f418ac95cb9996cf784208a55adf4e4ae449` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WithoutAesopNamespacedPublic.lean/declarations/example.md) | 131 | `declaration-track:0475154d50b9c8076ac6961b772b37c2f427b6b0632bcd18ea0a12b33eab2664` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/GaussianConsumerOfTheUnchangedSourceCorrelation.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/GaussianConsumerOfTheUnchangedSourceCorrelation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/GaussianConsumerOfTheUnchangedSourceCorrelation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/GaussianConsumerOfTheUnchangedSourceCorrelation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [gaussian_correlation_error](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/GaussianConsumerOfTheUnchangedSourceCorrelation.lean/declarations/gaussian-correlation-error.md) | 24 | `result-track:91e07acf6b112011562de4b2179461fa3db49d25f90e9da325e023a861698023` |
-| 2 | `theorem` | [gaussian_slope_error](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/GaussianConsumerOfTheUnchangedSourceCorrelation.lean/declarations/gaussian-slope-error.md) | 33 | `result-track:44ad01ab607edddd7584ea5e2f9c66473c5c67047bc84a14c7530f6741c93096` |
-| 3 | `theorem` | [gaussian_finite_tangent_error](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/GaussianConsumerOfTheUnchangedSourceCorrelation.lean/declarations/gaussian-finite-tangent-error.md) | 42 | `result-track:6eb2437bdb47438bde2525608a932f2c9571118053223e3bfe622d3b8ffefb85` |
+| 1 | `theorem` | [gaussian_correlation_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/GaussianConsumerOfTheUnchangedSourceCorrelation.lean/declarations/gaussian-correlation-error.md) | 24 | `result-track:91e07acf6b112011562de4b2179461fa3db49d25f90e9da325e023a861698023` |
+| 2 | `theorem` | [gaussian_slope_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/GaussianConsumerOfTheUnchangedSourceCorrelation.lean/declarations/gaussian-slope-error.md) | 33 | `result-track:44ad01ab607edddd7584ea5e2f9c66473c5c67047bc84a14c7530f6741c93096` |
+| 3 | `theorem` | [gaussian_finite_tangent_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/GaussianConsumerOfTheUnchangedSourceCorrelation.lean/declarations/gaussian-finite-tangent-error.md) | 42 | `result-track:6eb2437bdb47438bde2525608a932f2c9571118053223e3bfe622d3b8ffefb85` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

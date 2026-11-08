@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectSpectrumObject.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectSpectrumObject.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectSpectrumObject.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectSpectrumObject.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpectrumObject](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectSpectrumObject.lean/declarations/spectrumobject.md) | 18 | `declaration-track:e49c4c991b75a8aef1f50d7c4ff72dcf52fb468c4d9677575064ffbafaa7989a` |
-| 2 | `structure` | [SpectrumMorphism](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectSpectrumObject.lean/declarations/spectrummorphism.md) | 26 | `declaration-track:c27f6bdd5f7c8e9136c71b988bcc1b24b15a5fd91602566073da0e298b0c82e8` |
-| 3 | `theorem` | [spectrum_object_stable](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectSpectrumObject.lean/declarations/spectrum-object-stable.md) | 33 | `result-track:e49d9bcdad72b0b9e71ae0cfaf2dec02df9e16855be8954622ec0997c611b7d5` |
-| 4 | `theorem` | [spectrum_morphism_preserves_stability](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectSpectrumObject.lean/declarations/spectrum-morphism-preserves-stability.md) | 38 | `result-track:e1bcb28cc4586a09a29a523602ca0c0fb2705791f4291a4461ba48338451ccfc` |
+| 1 | `structure` | [SpectrumObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectSpectrumObject.lean/declarations/spectrumobject.md) | 18 | `declaration-track:e49c4c991b75a8aef1f50d7c4ff72dcf52fb468c4d9677575064ffbafaa7989a` |
+| 2 | `structure` | [SpectrumMorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectSpectrumObject.lean/declarations/spectrummorphism.md) | 26 | `declaration-track:c27f6bdd5f7c8e9136c71b988bcc1b24b15a5fd91602566073da0e298b0c82e8` |
+| 3 | `theorem` | [spectrum_object_stable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectSpectrumObject.lean/declarations/spectrum-object-stable.md) | 33 | `result-track:e49d9bcdad72b0b9e71ae0cfaf2dec02df9e16855be8954622ec0997c611b7d5` |
+| 4 | `theorem` | [spectrum_morphism_preserves_stability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectSpectrumObject.lean/declarations/spectrum-morphism-preserves-stability.md) | 38 | `result-track:e1bcb28cc4586a09a29a523602ca0c0fb2705791f4291a4461ba48338451ccfc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

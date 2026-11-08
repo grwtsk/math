@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/CompletelyPositiveMapPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/CompletelyPositiveMapPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CompletelyPositiveMapPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CompletelyPositiveMapPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompletelyPositiveMap](../../../../FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/completelypositivemap.md) | 50 | `declaration-track:f406ea56228c46298df73542c6306b2df68f461963b070e7657f93b0babacbd9` |
-| 2 | `class` | [CompletelyPositiveMapClass](../../../../FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/completelypositivemapclass.md) | 65 | `declaration-track:7ec147bab4450ed1f3e29f1a72c56274aeba017713343fbefed17b2346ead47a` |
-| 3 | `def` | [toCompletelyPositiveLinearMap](../../../../FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/tocompletelypositivelinearmap.md) | 83 | `declaration-track:327b0eaada38da9a6cb98c68a29c6ffe55991369ff9727bda8d0d2be45e41cff` |
-| 4 | `instance` | [instCoeToCompletelyPositiveMap](../../../../FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/instcoetocompletelypositivemap.md) | 89 | `declaration-track:dd913747b034414a03af47b8fac2917415c3869c12beb0703c67dca0beafd393` |
-| 5 | `lemma` | [_root_.OrderHomClass.of_map_cstarMatrix_nonneg](../../../../FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/root-orderhomclass-of-map-cstarmatrix-nonneg.md) | 96 | `result-track:1c304349817cd7cfea98b5a27b3350f7d06c117c1cd3f449028dffdeb67e81dc` |
-| 6 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/instance-source-edition-2.md) | 103 | `declaration-track:337c490d73030ca7506bf46a45da9288dd4011aed74fd323f735236c1ecfcdbb` |
-| 7 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/instance-source-edition-3.md) | 115 | `declaration-track:4986842e8499de8d7079cd5a40dd9bb709b976ef0c97421792a0d4a52d9ffe06` |
-| 8 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/instance-source-edition-4.md) | 124 | `declaration-track:f7ddeb95b5a839c233dfa6bbc183929bd907cd396440880de2f8154344d12183` |
-| 9 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/instance.md) | 128 | `declaration-track:0ea0be2bd9e5374a25f1f79d4408638d445fcb341761c8b3caa45bc1db876f0d` |
-| 10 | `lemma` | [map_cstarMatrix_nonneg](../../../../FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/map-cstarmatrix-nonneg.md) | 132 | `result-track:3a8729760f531ac6905313b9c48af3ec280c00db46a800c084aaef03fbd92910` |
-| 11 | `instance` | [instCompletelyPositiveMapClass](../../../../FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/instcompletelypositivemapclass.md) | 152 | `declaration-track:8f338fe44bdf7b0ca596c6922ceea823b8d72e60eb3791a46738b7ebb2ed4ad9` |
+| 1 | `structure` | [CompletelyPositiveMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/completelypositivemap.md) | 50 | `declaration-track:f406ea56228c46298df73542c6306b2df68f461963b070e7657f93b0babacbd9` |
+| 2 | `class` | [CompletelyPositiveMapClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/completelypositivemapclass.md) | 65 | `declaration-track:7ec147bab4450ed1f3e29f1a72c56274aeba017713343fbefed17b2346ead47a` |
+| 3 | `def` | [toCompletelyPositiveLinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/tocompletelypositivelinearmap.md) | 83 | `declaration-track:327b0eaada38da9a6cb98c68a29c6ffe55991369ff9727bda8d0d2be45e41cff` |
+| 4 | `instance` | [instCoeToCompletelyPositiveMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/instcoetocompletelypositivemap.md) | 89 | `declaration-track:dd913747b034414a03af47b8fac2917415c3869c12beb0703c67dca0beafd393` |
+| 5 | `lemma` | [_root_.OrderHomClass.of_map_cstarMatrix_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/root-orderhomclass-of-map-cstarmatrix-nonneg.md) | 96 | `result-track:1c304349817cd7cfea98b5a27b3350f7d06c117c1cd3f449028dffdeb67e81dc` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/instance-source-edition-2.md) | 103 | `declaration-track:337c490d73030ca7506bf46a45da9288dd4011aed74fd323f735236c1ecfcdbb` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/instance-source-edition-3.md) | 115 | `declaration-track:4986842e8499de8d7079cd5a40dd9bb709b976ef0c97421792a0d4a52d9ffe06` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/instance-source-edition-4.md) | 124 | `declaration-track:f7ddeb95b5a839c233dfa6bbc183929bd907cd396440880de2f8154344d12183` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/instance.md) | 128 | `declaration-track:0ea0be2bd9e5374a25f1f79d4408638d445fcb341761c8b3caa45bc1db876f0d` |
+| 10 | `lemma` | [map_cstarMatrix_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/map-cstarmatrix-nonneg.md) | 132 | `result-track:3a8729760f531ac6905313b9c48af3ec280c00db46a800c084aaef03fbd92910` |
+| 11 | `instance` | [instCompletelyPositiveMapClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CompletelyPositiveMapPublic.lean/declarations/instcompletelypositivemapclass.md) | 152 | `declaration-track:8f338fe44bdf7b0ca596c6922ceea823b8d72e60eb3791a46738b7ebb2ed4ad9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

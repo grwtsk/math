@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Color.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Color.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Color.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Color.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -68,9 +68,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [projectNamespace](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Color.lean/declarations/projectnamespace.md) | 16 | `declaration-track:b58a9217472aec01618bc3ab689ce8852d276a8940dae8cbc40473927d9c1a74` |
-| 2 | `def` | [formalSurfaceEnabled](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Color.lean/declarations/formalsurfaceenabled.md) | 18 | `declaration-track:6c24975533cace59f3d983d7bc87f38bb2581aa2f0129d6c42c9272a00085630` |
-| 3 | `theorem` | [formalSurfaceEnabled_eq_true](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Color.lean/declarations/formalsurfaceenabled-eq-true.md) | 20 | `result-track:1d09b93376256d26227c4deacd7465c29df064fb61145578ebd06e349144d6b8` |
+| 1 | `def` | [projectNamespace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Color.lean/declarations/projectnamespace.md) | 16 | `declaration-track:b58a9217472aec01618bc3ab689ce8852d276a8940dae8cbc40473927d9c1a74` |
+| 2 | `def` | [formalSurfaceEnabled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Color.lean/declarations/formalsurfaceenabled.md) | 18 | `declaration-track:6c24975533cace59f3d983d7bc87f38bb2581aa2f0129d6c42c9272a00085630` |
+| 3 | `theorem` | [formalSurfaceEnabled_eq_true](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Color.lean/declarations/formalsurfaceenabled-eq-true.md) | 20 | `result-track:1d09b93376256d26227c4deacd7465c29df064fb61145578ebd06e349144d6b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

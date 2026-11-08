@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -68,14 +68,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [functionWeightMass](../../../../ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/declarations/functionweightmass.md) | 72 | `declaration-track:4aabe6e58c977918c8684521b5aba19b546e14350d53b77c3a8ea91b839ea03a` |
-| 2 | `def` | [permutationWeightMass](../../../../ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/declarations/permutationweightmass.md) | 79 | `declaration-track:8ba55f8f068b096104c3c0b43ef30bd8b25b10ee12756070dfe1ae7d7adac68e` |
-| 3 | `theorem` | [functionWeightMass_sum](../../../../ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/declarations/functionweightmass-sum.md) | 88 | `result-track:5ae9ef0a0295f6212d92aa8c16db3c51dac290ed3ad471ec95f3fb39f746ef82` |
-| 4 | `theorem` | [permutationWeightMass_zero](../../../../ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/declarations/permutationweightmass-zero.md) | 96 | `result-track:478cce993e4fb6ad9e6d81631ca154acdf4a270e8cbe7df8eddefaf00691f49a` |
-| 5 | `theorem` | [permutationWeightMass_sum](../../../../ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/declarations/permutationweightmass-sum.md) | 101 | `result-track:8e839330c645cf4eed479364556feb2e6dba4f4b08f63762d546a72bbcc4b601` |
-| 6 | `theorem` | [permutationWeightMass_eq_conditioned](../../../../ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/declarations/permutationweightmass-eq-conditioned.md) | 127 | `result-track:8266e8feec0d0390d483225e13f5d625177ac26f82ac50bda5f3115c9ed5e8da` |
-| 7 | `def` | [permutationMarginal](../../../../ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/declarations/permutationmarginal.md) | 142 | `declaration-track:c71dbc9bd3621c0d4ab0d2586ac48bff27634f5cb1456581257fa9c2d32f322f` |
-| 8 | `theorem` | [permutationMarginal_sub_half](../../../../ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/declarations/permutationmarginal-sub-half.md) | 146 | `result-track:d5ad01635e877e969ec0a3eaaec5299d02b7f92af87ab314f6b1ec15081e0bf3` |
+| 1 | `def` | [functionWeightMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/declarations/functionweightmass.md) | 72 | `declaration-track:4aabe6e58c977918c8684521b5aba19b546e14350d53b77c3a8ea91b839ea03a` |
+| 2 | `def` | [permutationWeightMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/declarations/permutationweightmass.md) | 79 | `declaration-track:8ba55f8f068b096104c3c0b43ef30bd8b25b10ee12756070dfe1ae7d7adac68e` |
+| 3 | `theorem` | [functionWeightMass_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/declarations/functionweightmass-sum.md) | 88 | `result-track:5ae9ef0a0295f6212d92aa8c16db3c51dac290ed3ad471ec95f3fb39f746ef82` |
+| 4 | `theorem` | [permutationWeightMass_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/declarations/permutationweightmass-zero.md) | 96 | `result-track:478cce993e4fb6ad9e6d81631ca154acdf4a270e8cbe7df8eddefaf00691f49a` |
+| 5 | `theorem` | [permutationWeightMass_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/declarations/permutationweightmass-sum.md) | 101 | `result-track:8e839330c645cf4eed479364556feb2e6dba4f4b08f63762d546a72bbcc4b601` |
+| 6 | `theorem` | [permutationWeightMass_eq_conditioned](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/declarations/permutationweightmass-eq-conditioned.md) | 127 | `result-track:8266e8feec0d0390d483225e13f5d625177ac26f82ac50bda5f3115c9ed5e8da` |
+| 7 | `def` | [permutationMarginal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/declarations/permutationmarginal.md) | 142 | `declaration-track:c71dbc9bd3621c0d4ab0d2586ac48bff27634f5cb1456581257fa9c2d32f322f` |
+| 8 | `theorem` | [permutationMarginal_sub_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FixedEdgeBinomialMassFormulas.lean/declarations/permutationmarginal-sub-half.md) | 146 | `result-track:d5ad01635e877e969ec0a3eaaec5299d02b7f92af87ab314f6b1ec15081e0bf3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

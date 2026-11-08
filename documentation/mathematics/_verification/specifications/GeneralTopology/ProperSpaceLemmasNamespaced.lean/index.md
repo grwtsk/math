@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ProperSpaceLemmasNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ProperSpaceLemmasNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceLemmasNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceLemmasNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_pos_lt_subset_ball](../../../../GeneralTopology/ProperSpaceLemmasNamespaced.lean/declarations/exists-pos-lt-subset-ball.md) | 38 | `result-track:96f6ce901c14f1528c1a8d10cf8f372f5a5bbba11ecadca4e4b3b69a1f56070b` |
-| 2 | `theorem` | [exists_lt_subset_ball](../../../../GeneralTopology/ProperSpaceLemmasNamespaced.lean/declarations/exists-lt-subset-ball.md) | 52 | `result-track:ee75391da3440b13d7aa87e5add94a6989c2fe058adfac37b0b4674df5e65c61` |
-| 3 | `theorem` | [Metric.exists_isLocalMin_mem_ball](../../../../GeneralTopology/ProperSpaceLemmasNamespaced.lean/declarations/metric-exists-islocalmin-mem-ball.md) | 59 | `result-track:51f69d1b80975801a561495a5711348d2a340f241407dce203a7d2bc3312ff77` |
+| 1 | `theorem` | [exists_pos_lt_subset_ball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceLemmasNamespaced.lean/declarations/exists-pos-lt-subset-ball.md) | 38 | `result-track:96f6ce901c14f1528c1a8d10cf8f372f5a5bbba11ecadca4e4b3b69a1f56070b` |
+| 2 | `theorem` | [exists_lt_subset_ball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceLemmasNamespaced.lean/declarations/exists-lt-subset-ball.md) | 52 | `result-track:ee75391da3440b13d7aa87e5add94a6989c2fe058adfac37b0b4674df5e65c61` |
+| 3 | `theorem` | [Metric.exists_isLocalMin_mem_ball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceLemmasNamespaced.lean/declarations/metric-exists-islocalmin-mem-ball.md) | 59 | `result-track:51f69d1b80975801a561495a5711348d2a340f241407dce203a7d2bc3312ff77` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

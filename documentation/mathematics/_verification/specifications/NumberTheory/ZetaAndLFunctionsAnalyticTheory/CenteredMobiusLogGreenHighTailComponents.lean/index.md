@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHighTailComponents.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHighTailComponents.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHighTailComponents.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHighTailComponents.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenResidualSquareBounds`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenResidualSquareBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualSquareBounds.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Analysis.PSeries` — import line 8; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 9; external provider; requires a separately pinned dependency.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_reciprocalSquareFourthPartialSumBounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHighTailComponents.lean/declarations/exists-reciprocalsquarefourthpartialsumbounds.md) | 17 | `result-track:d567e45488f791baff0e6633a70068f69eaf218375f6e5c9fb7d66261de400e6` |
-| 2 | `def` | [greenHighA2Majorant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHighTailComponents.lean/declarations/greenhigha2majorant.md) | 30 | `declaration-track:e1433420b9380bd8008b4fb90321a365ab9787abcb020bc514c08f06f0811375` |
-| 3 | `def` | [greenHighC2Majorant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHighTailComponents.lean/declarations/greenhighc2majorant.md) | 37 | `declaration-track:9341039006af22b4ca6008ec0c755bbf4946cc0b2985d2d9ab8159c687664d33` |
-| 4 | `theorem` | [greenHighB2_eq_residueMajorant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHighTailComponents.lean/declarations/greenhighb2-eq-residuemajorant.md) | 44 | `result-track:4e8738fb7e90fc7e5832fc7aa789db1e185d8144e0789a63ca038ced9ec537d9` |
-| 5 | `theorem` | [greenHighA2Majorant_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHighTailComponents.lean/declarations/greenhigha2majorant-le.md) | 71 | `result-track:dc92d2eb8f8c5da50853c72ebbf704bafd420612b58095d8a61a7c9c8e939885` |
-| 6 | `theorem` | [greenHighC2Majorant_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHighTailComponents.lean/declarations/greenhighc2majorant-le.md) | 102 | `result-track:341465f4c1207e77214c5f6c2b4e2a2c3ac172998fd825e4ce56cc7baf885b2c` |
+| 1 | `theorem` | [exists_reciprocalSquareFourthPartialSumBounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHighTailComponents.lean/declarations/exists-reciprocalsquarefourthpartialsumbounds.md) | 17 | `result-track:d567e45488f791baff0e6633a70068f69eaf218375f6e5c9fb7d66261de400e6` |
+| 2 | `def` | [greenHighA2Majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHighTailComponents.lean/declarations/greenhigha2majorant.md) | 30 | `declaration-track:e1433420b9380bd8008b4fb90321a365ab9787abcb020bc514c08f06f0811375` |
+| 3 | `def` | [greenHighC2Majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHighTailComponents.lean/declarations/greenhighc2majorant.md) | 37 | `declaration-track:9341039006af22b4ca6008ec0c755bbf4946cc0b2985d2d9ab8159c687664d33` |
+| 4 | `theorem` | [greenHighB2_eq_residueMajorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHighTailComponents.lean/declarations/greenhighb2-eq-residuemajorant.md) | 44 | `result-track:4e8738fb7e90fc7e5832fc7aa789db1e185d8144e0789a63ca038ced9ec537d9` |
+| 5 | `theorem` | [greenHighA2Majorant_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHighTailComponents.lean/declarations/greenhigha2majorant-le.md) | 71 | `result-track:dc92d2eb8f8c5da50853c72ebbf704bafd420612b58095d8a61a7c9c8e939885` |
+| 6 | `theorem` | [greenHighC2Majorant_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHighTailComponents.lean/declarations/greenhighc2majorant-le.md) | 102 | `result-track:341465f4c1207e77214c5f6c2b4e2a2c3ac172998fd825e4ce56cc7baf885b2c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [instComonObjOfCartesian](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianNamespacedPublic.lean/declarations/instcomonobjofcartesian.md) | 49 | `declaration-track:8043f1d0ef46aee344cb67bc21a2dddc8b96b4fedc8f1b9af688cf1382994d39` |
-| 2 | `instance` | [instIsCommComonObjOfCartesian](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianNamespacedPublic.lean/declarations/instiscommcomonobjofcartesian.md) | 57 | `declaration-track:7a6e1adf881eac6604214b51584bc3dcbc2019392a92b023473ebb8e801c389d` |
-| 3 | `abbrev` | [ofCartesianMonoidalCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianNamespacedPublic.lean/declarations/ofcartesianmonoidalcategory.md) | 60 | `declaration-track:295f6b0b3b6e5e07ce6b145e81366ee19afe74e4554d829a37f59ec88dcd70ea` |
-| 4 | `instance` | [instDeterministic](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianNamespacedPublic.lean/declarations/instdeterministic.md) | 65 | `declaration-track:6e4d672702d4624181c955f7149ae9fe1783dfb91c1432622ff1b9b57649d296` |
+| 1 | `abbrev` | [instComonObjOfCartesian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianNamespacedPublic.lean/declarations/instcomonobjofcartesian.md) | 49 | `declaration-track:8043f1d0ef46aee344cb67bc21a2dddc8b96b4fedc8f1b9af688cf1382994d39` |
+| 2 | `instance` | [instIsCommComonObjOfCartesian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianNamespacedPublic.lean/declarations/instiscommcomonobjofcartesian.md) | 57 | `declaration-track:7a6e1adf881eac6604214b51584bc3dcbc2019392a92b023473ebb8e801c389d` |
+| 3 | `abbrev` | [ofCartesianMonoidalCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianNamespacedPublic.lean/declarations/ofcartesianmonoidalcategory.md) | 60 | `declaration-track:295f6b0b3b6e5e07ce6b145e81366ee19afe74e4554d829a37f59ec88dcd70ea` |
+| 4 | `instance` | [instDeterministic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryCartesianNamespacedPublic.lean/declarations/instdeterministic.md) | 65 | `declaration-track:6e4d672702d4624181c955f7149ae9fe1783dfb91c1432622ff1b9b57649d296` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

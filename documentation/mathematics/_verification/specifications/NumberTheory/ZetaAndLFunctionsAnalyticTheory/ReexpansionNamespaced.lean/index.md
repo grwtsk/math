@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [eXi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionNamespaced.lean/declarations/exi.md) | 34 | `declaration-track:e23a2bb5501624e4dab5f47b8a85cd909eacd8aeb33ebd907077f8253a1d1ebb` |
-| 2 | `theorem` | [xiReexpansion_eXi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionNamespaced.lean/declarations/xireexpansion-exi.md) | 37 | `result-track:2851ecea2ec8e82e698d5db87bea54ab7f457c0a0085d9a77c6e057ae4b80417` |
-| 3 | `theorem` | [xiReexpansion](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionNamespaced.lean/declarations/xireexpansion.md) | 50 | `result-track:3a53810f54cc16b012913643513847d2a7c3a56c3bd0d1224235295359fb89c4` |
+| 1 | `def` | [eXi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionNamespaced.lean/declarations/exi.md) | 34 | `declaration-track:e23a2bb5501624e4dab5f47b8a85cd909eacd8aeb33ebd907077f8253a1d1ebb` |
+| 2 | `theorem` | [xiReexpansion_eXi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionNamespaced.lean/declarations/xireexpansion-exi.md) | 37 | `result-track:2851ecea2ec8e82e698d5db87bea54ab7f457c0a0085d9a77c6e057ae4b80417` |
+| 3 | `theorem` | [xiReexpansion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReexpansionNamespaced.lean/declarations/xireexpansion.md) | 50 | `result-track:3a53810f54cc16b012913643513847d2a7c3a56c3bd0d1224235295359fb89c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

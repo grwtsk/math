@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/StableInvariantTrace.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/StableInvariantTrace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/StableInvariantTrace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/StableInvariantTrace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StableInvariantTrace](../../../../AssociativeRingsAndAlgebras/StableInvariantTrace.lean/declarations/stableinvarianttrace.md) | 12 | `declaration-track:82abc0028b3029841c8f2d90ebe7bc4427de945cc5a3a78abdf54656823d35fc` |
-| 2 | `theorem` | [StableInvariantTrace.trace_tracial](../../../../AssociativeRingsAndAlgebras/StableInvariantTrace.lean/declarations/trace-tracial.md) | 42 | `result-track:ada4d5ef9f0ce47df62121dfa599a60674b933c1b982e9de30e1fc7a51ef9888` |
-| 3 | `theorem` | [StableInvariantTrace.trace_positive](../../../../AssociativeRingsAndAlgebras/StableInvariantTrace.lean/declarations/trace-positive.md) | 52 | `result-track:be7de9108fe76f548b9d9d6d0045c8f3984235fd9cd58b2cea7727bd9d9f8a92` |
+| 1 | `structure` | [StableInvariantTrace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/StableInvariantTrace.lean/declarations/stableinvarianttrace.md) | 12 | `declaration-track:82abc0028b3029841c8f2d90ebe7bc4427de945cc5a3a78abdf54656823d35fc` |
+| 2 | `theorem` | [StableInvariantTrace.trace_tracial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/StableInvariantTrace.lean/declarations/trace-tracial.md) | 42 | `result-track:ada4d5ef9f0ce47df62121dfa599a60674b933c1b982e9de30e1fc7a51ef9888` |
+| 3 | `theorem` | [StableInvariantTrace.trace_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/StableInvariantTrace.lean/declarations/trace-positive.md) | 52 | `result-track:be7de9108fe76f548b9d9d6d0045c8f3984235fd9cd58b2cea7727bd9d9f8a92` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,16 +60,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/instance.md) | 40 | `declaration-track:4243f7fd2a1a0d278c6903ebde2ffba78f2923fff06f4bf658adc1f74c1f0906` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/instance-source-edition-2.md) | 42 | `declaration-track:732b837a1efa96a61fe668f8a866c3fc6c7f5be5e7a06c7e2c65c66f6713b4c1` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/instance-source-edition-5.md) | 50 | `declaration-track:f426ecf0391fb381dca9215969e3bf236048f225866e49e72750947619c8ffc5` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/instance-source-edition-4.md) | 57 | `declaration-track:b88d79628aa765c80f35092808e4847cbb5fb450ab8655962e9ed1f2441a1a72` |
-| 5 | `lemma` | [FormallyUnramified.isField_quotient_map_maximalIdeal](../../../../CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/formallyunramified-isfield-quotient-map-maximalideal.md) | 61 | `result-track:c969ead4c857b56098fbaae34cc52a5c3bff2d83b2904a7c33af9d2b3fb09a5c` |
-| 6 | `lemma` | [FormallyUnramified.map_maximalIdeal](../../../../CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/formallyunramified-map-maximalideal.md) | 81 | `result-track:f7b64495bbe7b74ea2c944900d5b00f9a577c05dbe8b3a12ab6d474d6ba4ead0` |
-| 7 | `lemma` | [FormallyUnramified.of_map_maximalIdeal](../../../../CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/formallyunramified-of-map-maximalideal.md) | 88 | `result-track:49cb20117942883edee957c802688237f2ea5604fb3261d3ea62125af93a09fb` |
-| 8 | `lemma` | [FormallyUnramified.iff_map_maximalIdeal_eq](../../../../CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/formallyunramified-iff-map-maximalideal-eq.md) | 110 | `result-track:c1350d546a8705e63c6735fe96791f7f20daa2d6714bdfaa6b41ba8198ded223` |
-| 9 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/instance-source-edition-3.md) | 123 | `declaration-track:7d06fdbcb7bb07071729b56bf9ae3a6b100a2181d63f5b31c00977595f9bef2d` |
-| 10 | `lemma` | [isUnramifiedAt_iff_map_eq](../../../../CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/isunramifiedat-iff-map-eq.md) | 129 | `result-track:d1d2d99aa0c619f77f8b70c3c08fc9886e9d92baf862f1a6854436e516d86d61` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/instance.md) | 40 | `declaration-track:4243f7fd2a1a0d278c6903ebde2ffba78f2923fff06f4bf658adc1f74c1f0906` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/instance-source-edition-2.md) | 42 | `declaration-track:732b837a1efa96a61fe668f8a866c3fc6c7f5be5e7a06c7e2c65c66f6713b4c1` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/instance-source-edition-5.md) | 50 | `declaration-track:f426ecf0391fb381dca9215969e3bf236048f225866e49e72750947619c8ffc5` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/instance-source-edition-4.md) | 57 | `declaration-track:b88d79628aa765c80f35092808e4847cbb5fb450ab8655962e9ed1f2441a1a72` |
+| 5 | `lemma` | [FormallyUnramified.isField_quotient_map_maximalIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/formallyunramified-isfield-quotient-map-maximalideal.md) | 61 | `result-track:c969ead4c857b56098fbaae34cc52a5c3bff2d83b2904a7c33af9d2b3fb09a5c` |
+| 6 | `lemma` | [FormallyUnramified.map_maximalIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/formallyunramified-map-maximalideal.md) | 81 | `result-track:f7b64495bbe7b74ea2c944900d5b00f9a577c05dbe8b3a12ab6d474d6ba4ead0` |
+| 7 | `lemma` | [FormallyUnramified.of_map_maximalIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/formallyunramified-of-map-maximalideal.md) | 88 | `result-track:49cb20117942883edee957c802688237f2ea5604fb3261d3ea62125af93a09fb` |
+| 8 | `lemma` | [FormallyUnramified.iff_map_maximalIdeal_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/formallyunramified-iff-map-maximalideal-eq.md) | 110 | `result-track:c1350d546a8705e63c6735fe96791f7f20daa2d6714bdfaa6b41ba8198ded223` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/instance-source-edition-3.md) | 123 | `declaration-track:7d06fdbcb7bb07071729b56bf9ae3a6b100a2181d63f5b31c00977595f9bef2d` |
+| 10 | `lemma` | [isUnramifiedAt_iff_map_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocalRingNamespaced.lean/declarations/isunramifiedat-iff-map-eq.md) | 129 | `result-track:d1d2d99aa0c619f77f8b70c3c08fc9886e9d92baf862f1a6854436e516d86d61` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

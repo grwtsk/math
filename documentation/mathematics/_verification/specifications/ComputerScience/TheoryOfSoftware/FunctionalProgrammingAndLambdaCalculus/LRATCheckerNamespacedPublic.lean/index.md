@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerNamespacedPublic.lean/declarations/result.md) | 26 | `declaration-track:0f355a9efd08945a9baaf87d78336803e73665101274bd3e05ce4dea1ed1a562` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerNamespacedPublic.lean/declarations/instance.md) | 32 | `declaration-track:77cf11bcd9e5a67976e37241aab0beb1f10a7f92f620e8d30701085c6dee8619` |
-| 3 | `def` | [lratChecker](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerNamespacedPublic.lean/declarations/lratchecker.md) | 40 | `declaration-track:b99bfab06c7071c9b727ba8145ee6e1d56fcf5b9a84b108b03baa4ad95fa38eb` |
+| 1 | `inductive` | [Result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerNamespacedPublic.lean/declarations/result.md) | 26 | `declaration-track:0f355a9efd08945a9baaf87d78336803e73665101274bd3e05ce4dea1ed1a562` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerNamespacedPublic.lean/declarations/instance.md) | 32 | `declaration-track:77cf11bcd9e5a67976e37241aab0beb1f10a7f92f620e8d30701085c6dee8619` |
+| 3 | `def` | [lratChecker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LRATCheckerNamespacedPublic.lean/declarations/lratchecker.md) | 40 | `declaration-track:b99bfab06c7071c9b727ba8145ee6e1d56fcf5b9a84b108b03baa4ad95fa38eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

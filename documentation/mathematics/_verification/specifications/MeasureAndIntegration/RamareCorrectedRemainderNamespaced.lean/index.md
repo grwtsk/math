@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [firstMertensRemainder](../../../../MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/declarations/firstmertensremainder.md) | 41 | `declaration-track:dff098200de1d8c774b287a08c88a2a5f607c94491e9627382df72943389c541` |
-| 2 | `def` | [chebyshevRemainder](../../../../MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/declarations/chebyshevremainder.md) | 45 | `declaration-track:14abceb80b39d93986194a8f052c9120186bf859bef6226ca834c6565699d0b4` |
-| 3 | `def` | [correctedRemainder](../../../../MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/declarations/correctedremainder.md) | 49 | `declaration-track:53c1273cfe6784840517876cdfac1fc31451a4a7d9ff3bd24efad4c46affa047` |
-| 4 | `theorem` | [correctedRemainder_sub_anchor](../../../../MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/declarations/correctedremainder-sub-anchor.md) | 55 | `result-track:d32ec792c16d37fd0452fbd4ce8da4354cc82a75747c01ec98a514fd5c10c2d0` |
-| 5 | `theorem` | [correctedRemainder_drift_abs_le_of_integral](../../../../MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/declarations/correctedremainder-drift-abs-le-of-integral.md) | 65 | `result-track:659b261fdd6abca5e3b30f1ec7ceaf1e1b1cbbf21307a78a1f29621cc890ae4f` |
-| 6 | `theorem` | [correctedRemainder_drift_abs_le_sqrt](../../../../MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/declarations/correctedremainder-drift-abs-le-sqrt.md) | 75 | `result-track:adba9130051001a85fa5321f6061fa3154e216a3c26c4923a28b7341ca6091bc` |
-| 7 | `theorem` | [correctedRemainder_drift_abs_le_linear_sqrt](../../../../MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/declarations/correctedremainder-drift-abs-le-linear-sqrt.md) | 130 | `result-track:66ffc2ab341f3917685005a42e9297eec7bd7289d4bd806fc58e28416c48bba5` |
-| 8 | `theorem` | [correctedRemainder_drift_abs_le_log_cube](../../../../MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/declarations/correctedremainder-drift-abs-le-log-cube.md) | 207 | `result-track:67efae9fb8c8ea2d3b63c019c5fdd2e5cf32a10a8c817fb6764949b486fed7f6` |
+| 1 | `def` | [firstMertensRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/declarations/firstmertensremainder.md) | 41 | `declaration-track:dff098200de1d8c774b287a08c88a2a5f607c94491e9627382df72943389c541` |
+| 2 | `def` | [chebyshevRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/declarations/chebyshevremainder.md) | 45 | `declaration-track:14abceb80b39d93986194a8f052c9120186bf859bef6226ca834c6565699d0b4` |
+| 3 | `def` | [correctedRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/declarations/correctedremainder.md) | 49 | `declaration-track:53c1273cfe6784840517876cdfac1fc31451a4a7d9ff3bd24efad4c46affa047` |
+| 4 | `theorem` | [correctedRemainder_sub_anchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/declarations/correctedremainder-sub-anchor.md) | 55 | `result-track:d32ec792c16d37fd0452fbd4ce8da4354cc82a75747c01ec98a514fd5c10c2d0` |
+| 5 | `theorem` | [correctedRemainder_drift_abs_le_of_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/declarations/correctedremainder-drift-abs-le-of-integral.md) | 65 | `result-track:659b261fdd6abca5e3b30f1ec7ceaf1e1b1cbbf21307a78a1f29621cc890ae4f` |
+| 6 | `theorem` | [correctedRemainder_drift_abs_le_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/declarations/correctedremainder-drift-abs-le-sqrt.md) | 75 | `result-track:adba9130051001a85fa5321f6061fa3154e216a3c26c4923a28b7341ca6091bc` |
+| 7 | `theorem` | [correctedRemainder_drift_abs_le_linear_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/declarations/correctedremainder-drift-abs-le-linear-sqrt.md) | 130 | `result-track:66ffc2ab341f3917685005a42e9297eec7bd7289d4bd806fc58e28416c48bba5` |
+| 8 | `theorem` | [correctedRemainder_drift_abs_le_log_cube](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainderNamespaced.lean/declarations/correctedremainder-drift-abs-le-log-cube.md) | 207 | `result-track:67efae9fb8c8ea2d3b63c019c5fdd2e5cf32a10a8c817fb6764949b486fed7f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

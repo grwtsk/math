@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanNotationNamespacedLatexSectionOrderSorted.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanNotationNamespacedLatexSectionOrderSorted.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanNotationNamespacedLatexSectionOrderSorted.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanNotationNamespacedLatexSectionOrderSorted.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [leanLatexNotation_escapesSpecialChars](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanNotationNamespacedLatexSectionOrderSorted.lean/declarations/leanlatexnotation-escapesspecialchars.md) | 28 | `result-track:b96cbbbe859149a721e9d87c239adc18924809a8fa4c5c319f7635f52a67e4c2` |
-| 2 | `theorem` | [latex_section_order_sorted](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanNotationNamespacedLatexSectionOrderSorted.lean/declarations/latex-section-order-sorted.md) | 33 | `result-track:c39381f0d2db71906799723882bf3339e36832a776229e89738e684e04a361ca` |
+| 1 | `theorem` | [leanLatexNotation_escapesSpecialChars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanNotationNamespacedLatexSectionOrderSorted.lean/declarations/leanlatexnotation-escapesspecialchars.md) | 28 | `result-track:b96cbbbe859149a721e9d87c239adc18924809a8fa4c5c319f7635f52a67e4c2` |
+| 2 | `theorem` | [latex_section_order_sorted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanNotationNamespacedLatexSectionOrderSorted.lean/declarations/latex-section-order-sorted.md) | 33 | `result-track:c39381f0d2db71906799723882bf3339e36832a776229e89738e684e04a361ca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

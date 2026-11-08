@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/QueryNamespacedCanonicalIndexQueryResult.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/QueryNamespacedCanonicalIndexQueryResult.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/QueryNamespacedCanonicalIndexQueryResult.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/QueryNamespacedCanonicalIndexQueryResult.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CanonicalIndexQueryResult](../../../../../ComputerScience/AlgorithmsInComputerScience/QueryNamespacedCanonicalIndexQueryResult.lean/declarations/canonicalindexqueryresult.md) | 21 | `declaration-track:097765397d533ccb530ac6d19b223ffa265e753bd9115ff7fe8fa98bd21db654` |
-| 2 | `def` | [CanonicalIndex.queryObject](../../../../../ComputerScience/AlgorithmsInComputerScience/QueryNamespacedCanonicalIndexQueryResult.lean/declarations/canonicalindex-queryobject.md) | 30 | `declaration-track:86b17602a11e1124e415a3f4c8ef2b6aba68a9da4e62d76ee168d231f7be06cb` |
-| 3 | `theorem` | [CanonicalIndex.mem_queryObject_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/QueryNamespacedCanonicalIndexQueryResult.lean/declarations/canonicalindex-mem-queryobject-iff.md) | 35 | `result-track:ab156656d9495eb8429c46ad8277c7441f0da3e2bac4512627509a87f3938baa` |
+| 1 | `inductive` | [CanonicalIndexQueryResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/QueryNamespacedCanonicalIndexQueryResult.lean/declarations/canonicalindexqueryresult.md) | 21 | `declaration-track:097765397d533ccb530ac6d19b223ffa265e753bd9115ff7fe8fa98bd21db654` |
+| 2 | `def` | [CanonicalIndex.queryObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/QueryNamespacedCanonicalIndexQueryResult.lean/declarations/canonicalindex-queryobject.md) | 30 | `declaration-track:86b17602a11e1124e415a3f4c8ef2b6aba68a9da4e62d76ee168d231f7be06cb` |
+| 3 | `theorem` | [CanonicalIndex.mem_queryObject_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/QueryNamespacedCanonicalIndexQueryResult.lean/declarations/canonicalindex-mem-queryobject-iff.md) | 35 | `result-track:ab156656d9495eb8429c46ad8277c7441f0da3e2bac4512627509a87f3938baa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

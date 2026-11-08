@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/RectangleLogDeriv.lean/index.md) · [Full source](../../../../GeneralTopology/RectangleLogDeriv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangleLogDeriv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangleLogDeriv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [residueTheorem_finset](../../../../GeneralTopology/RectangleLogDeriv.lean/declarations/residuetheorem-finset.md) | 31 | `result-track:11606f3a3507867c213ca6b60610748b284917248f83607718f4285de28ab9f1` |
-| 2 | `theorem` | [finite_zeros_rectangle](../../../../GeneralTopology/RectangleLogDeriv.lean/declarations/finite-zeros-rectangle.md) | 143 | `result-track:88f5144daa3f41803e24bbc2707cc9842033ba43a01bb392dd2ce803faa8b295` |
-| 3 | `theorem` | [rectangleIntegral'_mul_logDeriv_of_poles](../../../../GeneralTopology/RectangleLogDeriv.lean/declarations/rectangleintegral-mul-logderiv-of-poles.md) | 168 | `result-track:c8f87fe4f3a76393d9e42165ed4b58782c3a8eda554a40022ca4c7d58ba637b5` |
-| 4 | `theorem` | [rectangleIntegral'_mul_logDeriv](../../../../GeneralTopology/RectangleLogDeriv.lean/declarations/rectangleintegral-mul-logderiv-source-edition-2.md) | 352 | `result-track:7625ef0fc8412afee8d7cc5566f639d8e1eb1dedd8ee0c6eda938bab4734ec00` |
-| 5 | `theorem` | [rectangleIntegral'_mul_logDeriv'](../../../../GeneralTopology/RectangleLogDeriv.lean/declarations/rectangleintegral-mul-logderiv.md) | 365 | `result-track:2d5a1ea94ea2791c105f4fbfd084de3992f0fa38f4be9ebe576bba7d226d275d` |
+| 1 | `theorem` | [residueTheorem_finset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangleLogDeriv.lean/declarations/residuetheorem-finset.md) | 31 | `result-track:11606f3a3507867c213ca6b60610748b284917248f83607718f4285de28ab9f1` |
+| 2 | `theorem` | [finite_zeros_rectangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangleLogDeriv.lean/declarations/finite-zeros-rectangle.md) | 143 | `result-track:88f5144daa3f41803e24bbc2707cc9842033ba43a01bb392dd2ce803faa8b295` |
+| 3 | `theorem` | [rectangleIntegral'_mul_logDeriv_of_poles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangleLogDeriv.lean/declarations/rectangleintegral-mul-logderiv-of-poles.md) | 168 | `result-track:c8f87fe4f3a76393d9e42165ed4b58782c3a8eda554a40022ca4c7d58ba637b5` |
+| 4 | `theorem` | [rectangleIntegral'_mul_logDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangleLogDeriv.lean/declarations/rectangleintegral-mul-logderiv-source-edition-2.md) | 352 | `result-track:7625ef0fc8412afee8d7cc5566f639d8e1eb1dedd8ee0c6eda938bab4734ec00` |
+| 5 | `theorem` | [rectangleIntegral'_mul_logDeriv'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangleLogDeriv.lean/declarations/rectangleintegral-mul-logderiv.md) | 365 | `result-track:2d5a1ea94ea2791c105f4fbfd084de3992f0fa38f4be9ebe576bba7d226d275d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

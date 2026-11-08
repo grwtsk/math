@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/FDerivPi.lean/index.md) · [Full source](../../../../RealFunctions/FDerivPi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivPi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivPi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasFDerivAt_update](../../../../RealFunctions/FDerivPi.lean/declarations/hasfderivat-update.md) | 16 | `result-track:e1a84b4cef7aa9eeb4d185b7e7194c81f183d9d9df4ac93d7a23df1775572cf2` |
-| 2 | `theorem` | [hasFDerivAt_single](../../../../RealFunctions/FDerivPi.lean/declarations/hasfderivat-single.md) | 31 | `result-track:002d1b7f158f5531c43b799c879a23d685839e2574d2ea2f68f0e2902072b0bb` |
-| 3 | `theorem` | [fderiv_update](../../../../RealFunctions/FDerivPi.lean/declarations/fderiv-update.md) | 35 | `result-track:0ee3848c3d70aadd16e44eb6bb492b898680b4f134d1753d23161cfe729de7e0` |
-| 4 | `theorem` | [fderiv_single](../../../../RealFunctions/FDerivPi.lean/declarations/fderiv-single.md) | 39 | `result-track:239fb26796fd129bf4bd1191c905313d6f3944c4cb75b4f17b19becc69bd5fbc` |
+| 1 | `theorem` | [hasFDerivAt_update](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivPi.lean/declarations/hasfderivat-update.md) | 16 | `result-track:e1a84b4cef7aa9eeb4d185b7e7194c81f183d9d9df4ac93d7a23df1775572cf2` |
+| 2 | `theorem` | [hasFDerivAt_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivPi.lean/declarations/hasfderivat-single.md) | 31 | `result-track:002d1b7f158f5531c43b799c879a23d685839e2574d2ea2f68f0e2902072b0bb` |
+| 3 | `theorem` | [fderiv_update](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivPi.lean/declarations/fderiv-update.md) | 35 | `result-track:0ee3848c3d70aadd16e44eb6bb492b898680b4f134d1753d23161cfe729de7e0` |
+| 4 | `theorem` | [fderiv_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivPi.lean/declarations/fderiv-single.md) | 39 | `result-track:239fb26796fd129bf4bd1191c905313d6f3944c4cb75b4f17b19becc69bd5fbc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

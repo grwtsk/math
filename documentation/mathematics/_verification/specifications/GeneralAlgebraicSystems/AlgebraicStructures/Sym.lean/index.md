@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Sym.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Sym.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Sym.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Sym.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sum_sym2_filter_not_isDiag](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Sym.lean/declarations/sum-sym2-filter-not-isdiag.md) | 18 | `result-track:acf9518449e2243e8c01aa7c88cb93b385d8d25e269793b4766218188fe5498f` |
-| 2 | `theorem` | [sum_count_of_mem_sym](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Sym.lean/declarations/sum-count-of-mem-sym.md) | 26 | `result-track:f8ffb25c4d7869507fd08f909fab00de5ed99ec18be42fa2752a8db4f8a77c27` |
+| 1 | `theorem` | [sum_sym2_filter_not_isDiag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Sym.lean/declarations/sum-sym2-filter-not-isdiag.md) | 18 | `result-track:acf9518449e2243e8c01aa7c88cb93b385d8d25e269793b4766218188fe5498f` |
+| 2 | `theorem` | [sum_count_of_mem_sym](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Sym.lean/declarations/sum-count-of-mem-sym.md) | 26 | `result-track:f8ffb25c4d7869507fd08f909fab00de5ed99ec18be42fa2752a8db4f8a77c27` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [syntheticRelativeProbe](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/declarations/syntheticrelativeprobe.md) | 34 | `declaration-track:890d8bfc9e81c3146fad99d3b5cdc0ea51616d10a4e6b1cd088165910b53d1e8` |
-| 2 | `def` | [actualKernelProbeReadout](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/declarations/actualkernelprobereadout.md) | 38 | `declaration-track:c1917670eda27c8e836fd48bd4143960e7b5a023161ccb1ee1a9a2c0a7e008b2` |
-| 3 | `theorem` | [actualKernelProbeReadout_intervalIntegrable](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/declarations/actualkernelprobereadout-intervalintegrable.md) | 43 | `result-track:be36746b2c1ae1e0078c38860f93ae29a2ac1fb16b004085f6bd10844b0ff2a4` |
-| 4 | `theorem` | [halfTransform_real](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/declarations/halftransform-real.md) | 53 | `result-track:1d503ed3340472e4e44b842677ae72043df0416fa74297fd2f02e519e34e2d63` |
-| 5 | `theorem` | [actual_real_mode](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/declarations/actual-real-mode.md) | 68 | `result-track:fe98b65b554ea4ca274c26916596ca869db6020666619589fdd13b4d3b09c858` |
-| 6 | `theorem` | [actualKernelProbeReadout_eq](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/declarations/actualkernelprobereadout-eq.md) | 111 | `result-track:08e03d675bd8363b278f0391bdf50498f56776b76ae647f01636adc985b8c2c4` |
-| 7 | `theorem` | [actual_half_real_scaled](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/declarations/actual-half-real-scaled.md) | 144 | `result-track:a7e5fc764f9bfbd0e72251a2709eb34c8988cd9f6e1f4b7c325c1eff1ee23833` |
-| 8 | `theorem` | [actualKernelProbeReadout_normalized_tendsto](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/declarations/actualkernelprobereadout-normalized-tendsto.md) | 177 | `result-track:5c810704790ffc1a2b250376fe34d3ab3233a14d225ceb97fb37b0ac977684ab` |
+| 1 | `def` | [syntheticRelativeProbe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/declarations/syntheticrelativeprobe.md) | 34 | `declaration-track:890d8bfc9e81c3146fad99d3b5cdc0ea51616d10a4e6b1cd088165910b53d1e8` |
+| 2 | `def` | [actualKernelProbeReadout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/declarations/actualkernelprobereadout.md) | 38 | `declaration-track:c1917670eda27c8e836fd48bd4143960e7b5a023161ccb1ee1a9a2c0a7e008b2` |
+| 3 | `theorem` | [actualKernelProbeReadout_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/declarations/actualkernelprobereadout-intervalintegrable.md) | 43 | `result-track:be36746b2c1ae1e0078c38860f93ae29a2ac1fb16b004085f6bd10844b0ff2a4` |
+| 4 | `theorem` | [halfTransform_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/declarations/halftransform-real.md) | 53 | `result-track:1d503ed3340472e4e44b842677ae72043df0416fa74297fd2f02e519e34e2d63` |
+| 5 | `theorem` | [actual_real_mode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/declarations/actual-real-mode.md) | 68 | `result-track:fe98b65b554ea4ca274c26916596ca869db6020666619589fdd13b4d3b09c858` |
+| 6 | `theorem` | [actualKernelProbeReadout_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/declarations/actualkernelprobereadout-eq.md) | 111 | `result-track:08e03d675bd8363b278f0391bdf50498f56776b76ae647f01636adc985b8c2c4` |
+| 7 | `theorem` | [actual_half_real_scaled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/declarations/actual-half-real-scaled.md) | 144 | `result-track:a7e5fc764f9bfbd0e72251a2709eb34c8988cd9f6e1f4b7c325c1eff1ee23833` |
+| 8 | `theorem` | [actualKernelProbeReadout_normalized_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeFrozenNamespaced.lean/declarations/actualkernelprobereadout-normalized-tendsto.md) | 177 | `result-track:5c810704790ffc1a2b250376fe34d3ab3233a14d225ceb97fb37b0ac977684ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Planes.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Planes.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Planes.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Planes.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [descriptor](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Planes.lean/declarations/descriptor.md) | 9 | `declaration-track:09f03674f404600702231a95eaae89eac8babc095e6d7e6b3a659fa4af40bde6` |
-| 2 | `structure` | [StaticPlanes](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Planes.lean/declarations/staticplanes-source-edition-2.md) | 20 | `declaration-track:53c8f812533f0688706da14ff5d62345f0838743bfe0a006146804f7f24fd74a` |
-| 3 | `def` | [conflictResolvedSquare](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Planes.lean/declarations/conflictresolvedsquare.md) | 43 | `declaration-track:63c9237b7eddfcc9f99f33a906bb3d9b1698f24266f42aa76805078f2e2f53b0` |
-| 4 | `def` | [staticPlanes](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Planes.lean/declarations/staticplanes.md) | 50 | `declaration-track:1648a4a6e825cb85aff7f2805deee55154cb2742a005407833aa3fd0203cc11d` |
+| 1 | `def` | [descriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Planes.lean/declarations/descriptor.md) | 9 | `declaration-track:09f03674f404600702231a95eaae89eac8babc095e6d7e6b3a659fa4af40bde6` |
+| 2 | `structure` | [StaticPlanes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Planes.lean/declarations/staticplanes-source-edition-2.md) | 20 | `declaration-track:53c8f812533f0688706da14ff5d62345f0838743bfe0a006146804f7f24fd74a` |
+| 3 | `def` | [conflictResolvedSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Planes.lean/declarations/conflictresolvedsquare.md) | 43 | `declaration-track:63c9237b7eddfcc9f99f33a906bb3d9b1698f24266f42aa76805078f2e2f53b0` |
+| 4 | `def` | [staticPlanes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Planes.lean/declarations/staticplanes.md) | 50 | `declaration-track:1648a4a6e825cb85aff7f2805deee55154cb2742a005407833aa3fd0203cc11d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

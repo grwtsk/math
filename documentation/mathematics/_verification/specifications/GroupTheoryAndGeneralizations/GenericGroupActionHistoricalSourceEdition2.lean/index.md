@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GenericGroupActionHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GenericGroupActionHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GenericGroupActionHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GenericGroupActionHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.GaugeState`](../../../../GroupTheoryAndGeneralizations/GaugeState.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.GaugeState`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaugeState.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/GenericGroupActionHistoricalSourceEdition2.lean/declarations/example.md) | 4 | `declaration-track:1976b5e9a72b36466abeca3ef0c4d754b2e71944d34c3b568c80c1785d8c006d` |
-| 2 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/GenericGroupActionHistoricalSourceEdition2.lean/declarations/example-source-edition-2.md) | 7 | `declaration-track:f20c542d443b10538f52be52c94695ab7c12444ef154f57ed427fcd8d149f8a3` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GenericGroupActionHistoricalSourceEdition2.lean/declarations/example.md) | 4 | `declaration-track:1976b5e9a72b36466abeca3ef0c4d754b2e71944d34c3b568c80c1785d8c006d` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GenericGroupActionHistoricalSourceEdition2.lean/declarations/example-source-edition-2.md) | 7 | `declaration-track:f20c542d443b10538f52be52c94695ab7c12444ef154f57ed427fcd8d149f8a3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LiftToFinsetNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LiftToFinsetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LiftToFinsetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LiftToFinsetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finiteSubcoproductsCocone_ι_app_eq_sum](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LiftToFinsetNamespaced.lean/declarations/finitesubcoproductscocone-app-eq-sum.md) | 38 | `result-track:104e3cd23aa8d5858eca76f0b56555b011b422da2a557fdde4cd712804cdea8e` |
-| 2 | `theorem` | [finiteSubproductsCocone_π_app_eq_sum](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LiftToFinsetNamespaced.lean/declarations/finitesubproductscocone-app-eq-sum.md) | 57 | `result-track:b72ebdfd5b6c9d0be5935376de5fd1a49c7fd68aa3615c8dfe875b6968433d8f` |
+| 1 | `theorem` | [finiteSubcoproductsCocone_ι_app_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LiftToFinsetNamespaced.lean/declarations/finitesubcoproductscocone-app-eq-sum.md) | 38 | `result-track:104e3cd23aa8d5858eca76f0b56555b011b422da2a557fdde4cd712804cdea8e` |
+| 2 | `theorem` | [finiteSubproductsCocone_π_app_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LiftToFinsetNamespaced.lean/declarations/finitesubproductscocone-app-eq-sum.md) | 57 | `result-track:b72ebdfd5b6c9d0be5935376de5fd1a49c7fd68aa3615c8dfe875b6968433d8f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [BooleanNetwork.trajectory](../../../../../ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/declarations/booleannetwork-trajectory.md) | 6 | `declaration-track:f8d2da12a20fb52b67aed84d35aba66ec9e37b34954a1490f214805f25f5ecb6` |
-| 2 | `def` | [BooleanNetwork.FixedPoint](../../../../../ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/declarations/booleannetwork-fixedpoint.md) | 15 | `declaration-track:8c756a93b01627c3bf7e35f2bad58be9d9c15316c6db074391b304c19ddd0c65` |
-| 3 | `def` | [BooleanNetwork.PeriodicPoint](../../../../../ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/declarations/booleannetwork-periodicpoint.md) | 22 | `declaration-track:c1e131d9e42d90c83ba56408f0d7a3041b2aa4f3ff028129d6810a303ac796da` |
-| 4 | `def` | [BooleanNetwork.EventuallyReaches](../../../../../ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/declarations/booleannetwork-eventuallyreaches.md) | 30 | `declaration-track:31375bd2bd975e20fec3f0950937f8e5574a7fb0e36d675c105c3557e0783369` |
-| 5 | `def` | [BooleanNetwork.Basin](../../../../../ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/declarations/booleannetwork-basin.md) | 37 | `declaration-track:9236232bc8289c427143b17144b594634411bd996171ee43d1383deda7c4fef9` |
-| 6 | `theorem` | [BooleanNetwork.iterate_zero](../../../../../ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/declarations/booleannetwork-iterate-zero.md) | 44 | `result-track:3ae8463ddbb012e24a2253f4b3be5034c973d30d121a350f6c8c308fe6e1d6e7` |
-| 7 | `theorem` | [BooleanNetwork.iterate_succ](../../../../../ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/declarations/booleannetwork-iterate-succ.md) | 49 | `result-track:bce257fd00e4662790da5061f84738227065d2fb88227df977ee9d125d24134e` |
-| 8 | `theorem` | [BooleanNetwork.fixedPoint_iterate](../../../../../ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/declarations/booleannetwork-fixedpoint-iterate.md) | 56 | `result-track:fbb208ef3d297185237dba1212ecb55ad141f817473f1c0704c53b385de61a51` |
-| 9 | `theorem` | [BooleanNetwork.fixedPoint_periodic](../../../../../ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/declarations/booleannetwork-fixedpoint-periodic.md) | 68 | `result-track:9a6690a670cec56dfb7fcb748ae1b83970958a8a4d62a1fc7d9229bdceaf6589` |
+| 1 | `def` | [BooleanNetwork.trajectory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/declarations/booleannetwork-trajectory.md) | 6 | `declaration-track:f8d2da12a20fb52b67aed84d35aba66ec9e37b34954a1490f214805f25f5ecb6` |
+| 2 | `def` | [BooleanNetwork.FixedPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/declarations/booleannetwork-fixedpoint.md) | 15 | `declaration-track:8c756a93b01627c3bf7e35f2bad58be9d9c15316c6db074391b304c19ddd0c65` |
+| 3 | `def` | [BooleanNetwork.PeriodicPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/declarations/booleannetwork-periodicpoint.md) | 22 | `declaration-track:c1e131d9e42d90c83ba56408f0d7a3041b2aa4f3ff028129d6810a303ac796da` |
+| 4 | `def` | [BooleanNetwork.EventuallyReaches](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/declarations/booleannetwork-eventuallyreaches.md) | 30 | `declaration-track:31375bd2bd975e20fec3f0950937f8e5574a7fb0e36d675c105c3557e0783369` |
+| 5 | `def` | [BooleanNetwork.Basin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/declarations/booleannetwork-basin.md) | 37 | `declaration-track:9236232bc8289c427143b17144b594634411bd996171ee43d1383deda7c4fef9` |
+| 6 | `theorem` | [BooleanNetwork.iterate_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/declarations/booleannetwork-iterate-zero.md) | 44 | `result-track:3ae8463ddbb012e24a2253f4b3be5034c973d30d121a350f6c8c308fe6e1d6e7` |
+| 7 | `theorem` | [BooleanNetwork.iterate_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/declarations/booleannetwork-iterate-succ.md) | 49 | `result-track:bce257fd00e4662790da5061f84738227065d2fb88227df977ee9d125d24134e` |
+| 8 | `theorem` | [BooleanNetwork.fixedPoint_iterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/declarations/booleannetwork-fixedpoint-iterate.md) | 56 | `result-track:fbb208ef3d297185237dba1212ecb55ad141f817473f1c0704c53b385de61a51` |
+| 9 | `theorem` | [BooleanNetwork.fixedPoint_periodic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Dynamics.lean/declarations/booleannetwork-fixedpoint-periodic.md) | 68 | `result-track:9a6690a670cec56dfb7fcb748ae1b83970958a8a4d62a1fc7d9229bdceaf6589` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

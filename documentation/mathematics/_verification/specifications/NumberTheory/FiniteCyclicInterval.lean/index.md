@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/FiniteCyclicInterval.lean/index.md) · [Full source](../../../../NumberTheory/FiniteCyclicInterval.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicInterval.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicInterval.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [stdAddChar_neg_nat_succ_mul](../../../../NumberTheory/FiniteCyclicInterval.lean/declarations/stdaddchar-neg-nat-succ-mul.md) | 28 | `result-track:cb755ad0fb010839c4e129b7fd14e1a82c2be1558fef09d68aa73851135115d7` |
-| 2 | `theorem` | [stdAddChar_neg_Ico_mul](../../../../NumberTheory/FiniteCyclicInterval.lean/declarations/stdaddchar-neg-ico-mul.md) | 38 | `result-track:d624fb303c2606924689fb7be4d9102b45718fa1a9512d2541a5d2b7591bc571` |
-| 3 | `theorem` | [norm_sum_stdAddChar_neg_Ico_le](../../../../NumberTheory/FiniteCyclicInterval.lean/declarations/norm-sum-stdaddchar-neg-ico-le.md) | 58 | `result-track:6b20a9d9fa13efd9c68f7b3cb389a29445df182dc92d49cc138dfdb9a4f28d9c` |
-| 4 | `theorem` | [sum_stdAddChar_neg_Ico_zero](../../../../NumberTheory/FiniteCyclicInterval.lean/declarations/sum-stdaddchar-neg-ico-zero.md) | 106 | `result-track:8d2309e4497a21c782b20fa65866ef2b79ae82a5bbfa9b8c7aa3f14fd1dbd85e` |
-| 5 | `theorem` | [stdAddChar_phase_matched_weights](../../../../NumberTheory/FiniteCyclicInterval.lean/declarations/stdaddchar-phase-matched-weights.md) | 114 | `result-track:cf94ed62e07bdfa2cb484f966c1e36e598f1b42a362cd05a7ed7d70e6a3d7855` |
+| 1 | `theorem` | [stdAddChar_neg_nat_succ_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicInterval.lean/declarations/stdaddchar-neg-nat-succ-mul.md) | 28 | `result-track:cb755ad0fb010839c4e129b7fd14e1a82c2be1558fef09d68aa73851135115d7` |
+| 2 | `theorem` | [stdAddChar_neg_Ico_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicInterval.lean/declarations/stdaddchar-neg-ico-mul.md) | 38 | `result-track:d624fb303c2606924689fb7be4d9102b45718fa1a9512d2541a5d2b7591bc571` |
+| 3 | `theorem` | [norm_sum_stdAddChar_neg_Ico_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicInterval.lean/declarations/norm-sum-stdaddchar-neg-ico-le.md) | 58 | `result-track:6b20a9d9fa13efd9c68f7b3cb389a29445df182dc92d49cc138dfdb9a4f28d9c` |
+| 4 | `theorem` | [sum_stdAddChar_neg_Ico_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicInterval.lean/declarations/sum-stdaddchar-neg-ico-zero.md) | 106 | `result-track:8d2309e4497a21c782b20fa65866ef2b79ae82a5bbfa9b8c7aa3f14fd1dbd85e` |
+| 5 | `theorem` | [stdAddChar_phase_matched_weights](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicInterval.lean/declarations/stdaddchar-phase-matched-weights.md) | 114 | `result-track:cf94ed62e07bdfa2cb484f966c1e36e598f1b42a362cd05a7ed7d70e6a3d7855` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

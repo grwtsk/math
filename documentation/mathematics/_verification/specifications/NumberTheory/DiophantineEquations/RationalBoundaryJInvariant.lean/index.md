@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/RationalBoundaryJInvariant.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/RationalBoundaryJInvariant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/RationalBoundaryJInvariant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/RationalBoundaryJInvariant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.UnitEquation.RationalBoundaryCycle`](../../../../../NumberTheory/DiophantineEquations/RationalBoundaryCycle.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.UnitEquation.RationalBoundaryCycle`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/RationalBoundaryCycle.lean/index.md) — import line 10; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [invariant](../../../../../NumberTheory/DiophantineEquations/RationalBoundaryJInvariant.lean/declarations/invariant.md) | 20 | `declaration-track:35b9b1ff66c4b692f15f8d59185ac71a0531efe77cee5e3cde7faf717b436096` |
-| 2 | `theorem` | [mirror_invariant](../../../../../NumberTheory/DiophantineEquations/RationalBoundaryJInvariant.lean/declarations/mirror-invariant.md) | 23 | `result-track:65b0ab41b332f3a171d7afe382f08230ff4dfcbfc8532d3bd7e8ae567bb3d730` |
-| 3 | `theorem` | [cycle_invariant](../../../../../NumberTheory/DiophantineEquations/RationalBoundaryJInvariant.lean/declarations/cycle-invariant.md) | 27 | `result-track:627fea2fa527208a3220e807c63ff2f345b23d293ea007d7b5d99e372cd6f707` |
-| 4 | `theorem` | [chart_invariant](../../../../../NumberTheory/DiophantineEquations/RationalBoundaryJInvariant.lean/declarations/chart-invariant.md) | 36 | `result-track:e88ed90d5b4527492dc754a4faee7af11c223003efae13c09303d27575545081` |
-| 5 | `theorem` | [invariant_sub_1728](../../../../../NumberTheory/DiophantineEquations/RationalBoundaryJInvariant.lean/declarations/invariant-sub-1728.md) | 42 | `result-track:471573c8296153047ef3eec78206532c4f743e109df2387a13b495b537ca51f1` |
-| 6 | `theorem` | [invariant_ge_1728](../../../../../NumberTheory/DiophantineEquations/RationalBoundaryJInvariant.lean/declarations/invariant-ge-1728.md) | 53 | `result-track:00b5ef0b2aef5754e2cf28b9c850e131e021f50e356bbd7de5ab7d6466f52b93` |
-| 7 | `theorem` | [degree_six_equation](../../../../../NumberTheory/DiophantineEquations/RationalBoundaryJInvariant.lean/declarations/degree-six-equation.md) | 58 | `result-track:fa79271adfb439e68983b5ac920d586807aa77ffcfa09a9b0737894849c441cd` |
+| 1 | `def` | [invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/RationalBoundaryJInvariant.lean/declarations/invariant.md) | 20 | `declaration-track:35b9b1ff66c4b692f15f8d59185ac71a0531efe77cee5e3cde7faf717b436096` |
+| 2 | `theorem` | [mirror_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/RationalBoundaryJInvariant.lean/declarations/mirror-invariant.md) | 23 | `result-track:65b0ab41b332f3a171d7afe382f08230ff4dfcbfc8532d3bd7e8ae567bb3d730` |
+| 3 | `theorem` | [cycle_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/RationalBoundaryJInvariant.lean/declarations/cycle-invariant.md) | 27 | `result-track:627fea2fa527208a3220e807c63ff2f345b23d293ea007d7b5d99e372cd6f707` |
+| 4 | `theorem` | [chart_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/RationalBoundaryJInvariant.lean/declarations/chart-invariant.md) | 36 | `result-track:e88ed90d5b4527492dc754a4faee7af11c223003efae13c09303d27575545081` |
+| 5 | `theorem` | [invariant_sub_1728](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/RationalBoundaryJInvariant.lean/declarations/invariant-sub-1728.md) | 42 | `result-track:471573c8296153047ef3eec78206532c4f743e109df2387a13b495b537ca51f1` |
+| 6 | `theorem` | [invariant_ge_1728](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/RationalBoundaryJInvariant.lean/declarations/invariant-ge-1728.md) | 53 | `result-track:00b5ef0b2aef5754e2cf28b9c850e131e021f50e356bbd7de5ab7d6466f52b93` |
+| 7 | `theorem` | [degree_six_equation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/RationalBoundaryJInvariant.lean/declarations/degree-six-equation.md) | 58 | `result-track:fa79271adfb439e68983b5ac920d586807aa77ffcfa09a9b0737894849c441cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

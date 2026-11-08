@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/InsertionNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/InsertionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InsertionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InsertionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimeInsertionEdge](../../../../Combinatorics/InsertionNamespaced.lean/declarations/primeinsertionedge.md) | 17 | `declaration-track:5ce4c81e446e011ea4423b18023544845e77abc5747aef6fb8ddb657875398ce` |
-| 2 | `def` | [PrimeInsertionEdge.target](../../../../Combinatorics/InsertionNamespaced.lean/declarations/primeinsertionedge-target.md) | 23 | `declaration-track:24806677e2e06aa6a1a2172fc4837cc0be0c137584f11270c80dd0a4f0d9f7ce` |
-| 3 | `theorem` | [PrimeInsertionEdge.source_subset_target](../../../../Combinatorics/InsertionNamespaced.lean/declarations/primeinsertionedge-source-subset-target.md) | 29 | `result-track:4befef062be2e93e83b46643fa2f9760056b7bc059f0f4e7dc1c1e4382dcebc0` |
-| 4 | `theorem` | [PrimeInsertionEdge.prime_mem_target](../../../../Combinatorics/InsertionNamespaced.lean/declarations/primeinsertionedge-prime-mem-target.md) | 37 | `result-track:770e82a625fd4562acd3b53b590d60b5b15df5ffb82a0b1a5c8a1362415738d9` |
-| 5 | `theorem` | [PrimeInsertionEdge.target_card](../../../../Combinatorics/InsertionNamespaced.lean/declarations/primeinsertionedge-target-card.md) | 44 | `result-track:ee5aedb41eb3154de7c964cfa5d8710708e0e95568fd6862d976c04e981000a2` |
+| 1 | `structure` | [PrimeInsertionEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InsertionNamespaced.lean/declarations/primeinsertionedge.md) | 17 | `declaration-track:5ce4c81e446e011ea4423b18023544845e77abc5747aef6fb8ddb657875398ce` |
+| 2 | `def` | [PrimeInsertionEdge.target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InsertionNamespaced.lean/declarations/primeinsertionedge-target.md) | 23 | `declaration-track:24806677e2e06aa6a1a2172fc4837cc0be0c137584f11270c80dd0a4f0d9f7ce` |
+| 3 | `theorem` | [PrimeInsertionEdge.source_subset_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InsertionNamespaced.lean/declarations/primeinsertionedge-source-subset-target.md) | 29 | `result-track:4befef062be2e93e83b46643fa2f9760056b7bc059f0f4e7dc1c1e4382dcebc0` |
+| 4 | `theorem` | [PrimeInsertionEdge.prime_mem_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InsertionNamespaced.lean/declarations/primeinsertionedge-prime-mem-target.md) | 37 | `result-track:770e82a625fd4562acd3b53b590d60b5b15df5ffb82a0b1a5c8a1362415738d9` |
+| 5 | `theorem` | [PrimeInsertionEdge.target_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InsertionNamespaced.lean/declarations/primeinsertionedge-target-card.md) | 44 | `result-track:ee5aedb41eb3154de7c964cfa5d8710708e0e95568fd6862d976c04e981000a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

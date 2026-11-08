@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ProfiniteExtend.lean/index.md) · [Full source](../../../../GeneralTopology/ProfiniteExtend.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,25 +59,25 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [exists_hom](../../../../GeneralTopology/ProfiniteExtend.lean/declarations/exists-hom.md) | 39 | `result-track:0d53715d66020c3db4da665e83a230dc6a9d743de8649de0d668a9acb0d0a19d` |
-| 2 | `def` | [functor](../../../../GeneralTopology/ProfiniteExtend.lean/declarations/functor.md) | 57 | `declaration-track:db68b48a5c63c46bd7a2c220cde27c7d78eef6eeb1563646bb9d6dda8292b729` |
-| 3 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteExtend.lean/declarations/example-source-edition-4.md) | 62 | `declaration-track:e82b4501ad422ad85f90b0c16483a562973e022b32673f3b7ae45acd6c8b4f4d` |
-| 4 | `def` | [functorOp](../../../../GeneralTopology/ProfiniteExtend.lean/declarations/functorop.md) | 70 | `declaration-track:64deaec85a3cf244ad0a2cfe308077669079a16d6485caf488dc83793ddc1544` |
-| 5 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteExtend.lean/declarations/example-source-edition-2.md) | 74 | `declaration-track:bfb4ea161be29b8380e5eef9a515a4c095423bc58fbe86a32bc0d4444bd3ab64` |
-| 6 | `lemma` | [functor_initial](../../../../GeneralTopology/ProfiniteExtend.lean/declarations/functor-initial.md) | 83 | `result-track:2c304acfcce51c116fcfdf20c85e98c35209946da2a1de9224da51d8f7a70a60` |
-| 7 | `lemma` | [functorOp_final](../../../../GeneralTopology/ProfiniteExtend.lean/declarations/functorop-final.md) | 104 | `result-track:b78e3a96e3aa276f8a7560f4148811fc1e52f527d04f725a7f7790d1b025f412` |
-| 8 | `def` | [cone](../../../../GeneralTopology/ProfiniteExtend.lean/declarations/cone.md) | 122 | `declaration-track:5e8ff15a2b5d210acfb28256a1c992a592018414399a464cae74abafab2642c4` |
-| 9 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteExtend.lean/declarations/example-source-edition-3.md) | 129 | `declaration-track:db8c558765eaf1fef718e86a167667451e6710bca41d6e498e44069abe27b8fe` |
-| 10 | `def` | [isLimitCone](../../../../GeneralTopology/ProfiniteExtend.lean/declarations/islimitcone.md) | 136 | `declaration-track:e72b72624ce3110e1cffb13f43b3a156a5090ebeee24c155d80fd0c7a6c676b7` |
-| 11 | `def` | [cocone](../../../../GeneralTopology/ProfiniteExtend.lean/declarations/cocone.md) | 153 | `declaration-track:f9c748b451020b37a634748cafbf6f8237ec2cf4810acd80a9af29fe8a8a394b` |
-| 12 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteExtend.lean/declarations/example.md) | 164 | `declaration-track:52caf7d1bc608369d2f1c204120e141028a2beb58609336c71df188613fe8710` |
-| 13 | `def` | [isColimitCocone](../../../../GeneralTopology/ProfiniteExtend.lean/declarations/iscolimitcocone.md) | 171 | `declaration-track:9cb1a0117d5f12f82b9cc9ded89847b9d8d6f27963fd5567b706cd983a52cf34` |
-| 14 | `abbrev` | [fintypeDiagram'](../../../../GeneralTopology/ProfiniteExtend.lean/declarations/fintypediagram.md) | 188 | `declaration-track:22a7dfb3639f76c559a8f2dc8277e3e2946b0fe2cf05cdfa611e4ded3cff3881` |
-| 15 | `abbrev` | [diagram'](../../../../GeneralTopology/ProfiniteExtend.lean/declarations/diagram.md) | 192 | `declaration-track:298efecc630fdad68bfd12c1bbfffc524e34d8316e46b7a4233925eaae433ce6` |
-| 16 | `abbrev` | [asLimitCone'](../../../../GeneralTopology/ProfiniteExtend.lean/declarations/aslimitcone.md) | 196 | `declaration-track:91325fea822dc667e4fdf41eda5590f06b53b82a1923d2f13808d6bcfba00d5e` |
-| 17 | `instance` | [(anonymous)](../../../../GeneralTopology/ProfiniteExtend.lean/declarations/instance.md) | 198 | `declaration-track:990a8fed86b32a72e1117e33c21ef4ae22ef86698a9c587ca2a6d5e3caee2c98` |
-| 18 | `def` | [asLimit'](../../../../GeneralTopology/ProfiniteExtend.lean/declarations/aslimit.md) | 202 | `declaration-track:cb42c791dc74aea324377797cd0f6a8c18d10b2980bae09028af9d355a1f10c0` |
-| 19 | `def` | [lim'](../../../../GeneralTopology/ProfiniteExtend.lean/declarations/lim.md) | 205 | `declaration-track:9d78ff7b72433050c298bbdddad7738f759c6fbc5f9748e84ad5abab4830ff3b` |
+| 1 | `lemma` | [exists_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/declarations/exists-hom.md) | 39 | `result-track:0d53715d66020c3db4da665e83a230dc6a9d743de8649de0d668a9acb0d0a19d` |
+| 2 | `def` | [functor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/declarations/functor.md) | 57 | `declaration-track:db68b48a5c63c46bd7a2c220cde27c7d78eef6eeb1563646bb9d6dda8292b729` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/declarations/example-source-edition-4.md) | 62 | `declaration-track:e82b4501ad422ad85f90b0c16483a562973e022b32673f3b7ae45acd6c8b4f4d` |
+| 4 | `def` | [functorOp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/declarations/functorop.md) | 70 | `declaration-track:64deaec85a3cf244ad0a2cfe308077669079a16d6485caf488dc83793ddc1544` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/declarations/example-source-edition-2.md) | 74 | `declaration-track:bfb4ea161be29b8380e5eef9a515a4c095423bc58fbe86a32bc0d4444bd3ab64` |
+| 6 | `lemma` | [functor_initial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/declarations/functor-initial.md) | 83 | `result-track:2c304acfcce51c116fcfdf20c85e98c35209946da2a1de9224da51d8f7a70a60` |
+| 7 | `lemma` | [functorOp_final](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/declarations/functorop-final.md) | 104 | `result-track:b78e3a96e3aa276f8a7560f4148811fc1e52f527d04f725a7f7790d1b025f412` |
+| 8 | `def` | [cone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/declarations/cone.md) | 122 | `declaration-track:5e8ff15a2b5d210acfb28256a1c992a592018414399a464cae74abafab2642c4` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/declarations/example-source-edition-3.md) | 129 | `declaration-track:db8c558765eaf1fef718e86a167667451e6710bca41d6e498e44069abe27b8fe` |
+| 10 | `def` | [isLimitCone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/declarations/islimitcone.md) | 136 | `declaration-track:e72b72624ce3110e1cffb13f43b3a156a5090ebeee24c155d80fd0c7a6c676b7` |
+| 11 | `def` | [cocone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/declarations/cocone.md) | 153 | `declaration-track:f9c748b451020b37a634748cafbf6f8237ec2cf4810acd80a9af29fe8a8a394b` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/declarations/example.md) | 164 | `declaration-track:52caf7d1bc608369d2f1c204120e141028a2beb58609336c71df188613fe8710` |
+| 13 | `def` | [isColimitCocone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/declarations/iscolimitcocone.md) | 171 | `declaration-track:9cb1a0117d5f12f82b9cc9ded89847b9d8d6f27963fd5567b706cd983a52cf34` |
+| 14 | `abbrev` | [fintypeDiagram'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/declarations/fintypediagram.md) | 188 | `declaration-track:22a7dfb3639f76c559a8f2dc8277e3e2946b0fe2cf05cdfa611e4ded3cff3881` |
+| 15 | `abbrev` | [diagram'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/declarations/diagram.md) | 192 | `declaration-track:298efecc630fdad68bfd12c1bbfffc524e34d8316e46b7a4233925eaae433ce6` |
+| 16 | `abbrev` | [asLimitCone'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/declarations/aslimitcone.md) | 196 | `declaration-track:91325fea822dc667e4fdf41eda5590f06b53b82a1923d2f13808d6bcfba00d5e` |
+| 17 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/declarations/instance.md) | 198 | `declaration-track:990a8fed86b32a72e1117e33c21ef4ae22ef86698a9c587ca2a6d5e3caee2c98` |
+| 18 | `def` | [asLimit'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/declarations/aslimit.md) | 202 | `declaration-track:cb42c791dc74aea324377797cd0f6a8c18d10b2980bae09028af9d355a1f10c0` |
+| 19 | `def` | [lim'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteExtend.lean/declarations/lim.md) | 205 | `declaration-track:9d78ff7b72433050c298bbdddad7738f759c6fbc5f9748e84ad5abab4830ff3b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualXiDampedOrdinaryLimit.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualXiDampedOrdinaryLimit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiDampedOrdinaryLimit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiDampedOrdinaryLimit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_physical_integral_eq_value](../../../../MeasureAndIntegration/SourceActualXiDampedOrdinaryLimit.lean/declarations/actual-physical-integral-eq-value.md) | 23 | `result-track:4cebff95265b8729b897396e35726a672470b15bab401bcd26d29c05e596c507` |
-| 2 | `theorem` | [actualDampedXiFinitePrimitive_half_tendsto_value](../../../../MeasureAndIntegration/SourceActualXiDampedOrdinaryLimit.lean/declarations/actualdampedxifiniteprimitive-half-tendsto-value.md) | 30 | `result-track:b6acd3e18f1b49c97a1bc543d2d84ba57c397ada81df4c71047e2588b2d3ed82` |
-| 3 | `theorem` | [actualDampedXiFinitePrimitive_tendsto_value](../../../../MeasureAndIntegration/SourceActualXiDampedOrdinaryLimit.lean/declarations/actualdampedxifiniteprimitive-tendsto-value.md) | 45 | `result-track:6aa87a697b56f46006a82e2107044d99cf11ed32e63e53ccbb1d61150fd750c0` |
-| 4 | `theorem` | [actualDampedXiFinitePrimitive_centered_tendsto_zero](../../../../MeasureAndIntegration/SourceActualXiDampedOrdinaryLimit.lean/declarations/actualdampedxifiniteprimitive-centered-tendsto-zero.md) | 52 | `result-track:610678563502053a3ac1117917e695a1c6fce7ec72a58745af0ad158d3659751` |
+| 1 | `theorem` | [actual_physical_integral_eq_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiDampedOrdinaryLimit.lean/declarations/actual-physical-integral-eq-value.md) | 23 | `result-track:4cebff95265b8729b897396e35726a672470b15bab401bcd26d29c05e596c507` |
+| 2 | `theorem` | [actualDampedXiFinitePrimitive_half_tendsto_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiDampedOrdinaryLimit.lean/declarations/actualdampedxifiniteprimitive-half-tendsto-value.md) | 30 | `result-track:b6acd3e18f1b49c97a1bc543d2d84ba57c397ada81df4c71047e2588b2d3ed82` |
+| 3 | `theorem` | [actualDampedXiFinitePrimitive_tendsto_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiDampedOrdinaryLimit.lean/declarations/actualdampedxifiniteprimitive-tendsto-value.md) | 45 | `result-track:6aa87a697b56f46006a82e2107044d99cf11ed32e63e53ccbb1d61150fd750c0` |
+| 4 | `theorem` | [actualDampedXiFinitePrimitive_centered_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiDampedOrdinaryLimit.lean/declarations/actualdampedxifiniteprimitive-centered-tendsto-zero.md) | 52 | `result-track:610678563502053a3ac1117917e695a1c6fce7ec72a58745af0ad158d3659751` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

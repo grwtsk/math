@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/Degenerate.lean/index.md) · [Full source](../../../../AlgebraicTopology/Degenerate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Degenerate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Degenerate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [degenerate](../../../../AlgebraicTopology/Degenerate.lean/declarations/degenerate.md) | 32 | `declaration-track:631b7177f0fa57fcdc01d5bf15d64dff08ed0987f6557bf4d8827bd4dc14051d` |
-| 2 | `def` | [nonDegenerate](../../../../AlgebraicTopology/Degenerate.lean/declarations/nondegenerate.md) | 38 | `declaration-track:3e8406bcfc6a0d0fe4741affa86cb5a92fe3c8b35cfbb69a70da2b1a21e24064` |
-| 3 | `lemma` | [degenerate_zero](../../../../AlgebraicTopology/Degenerate.lean/declarations/degenerate-zero.md) | 41 | `result-track:084fdcf07b3195ae30a8758c82eb53b8166b8b8a0c3bf9c761868f477bd15c4e` |
-| 4 | `lemma` | [nondegenerate_zero](../../../../AlgebraicTopology/Degenerate.lean/declarations/nondegenerate-zero.md) | 48 | `result-track:ad14cb472aa7db192b97bc1f46dfc6af28437d0c216f1e1357bf062f7d250869` |
-| 5 | `lemma` | [mem_nonDegenerate_iff_notMem_degenerate](../../../../AlgebraicTopology/Degenerate.lean/declarations/mem-nondegenerate-iff-notmem-degenerate.md) | 53 | `result-track:c724a3428ffb8e6ac0b64dbb47c7cdff049a6736e3ca334289d7ea1f9e156d05` |
-| 6 | `lemma` | [mem_degenerate_iff_notMem_nonDegenerate](../../../../AlgebraicTopology/Degenerate.lean/declarations/mem-degenerate-iff-notmem-nondegenerate.md) | 59 | `result-track:4b91052a6d9ae0ce7e770fcddeadf4e7e96bb19b19fa2315bcb5f4794e61cf32` |
-| 7 | `lemma` | [σ_mem_degenerate](../../../../AlgebraicTopology/Degenerate.lean/declarations/mem-degenerate.md) | 66 | `result-track:6d3ab18a014acd265789bb46773723e5ab85022005ea7c9962fc8710fca64106` |
-| 8 | `lemma` | [mem_degenerate_iff](../../../../AlgebraicTopology/Degenerate.lean/declarations/mem-degenerate-iff.md) | 70 | `result-track:3e4d278e6d382871b3378f839218c9a4a77a24372d14e513a90a0f9402c08912` |
-| 9 | `lemma` | [degenerate_eq_iUnion_range_σ](../../../../AlgebraicTopology/Degenerate.lean/declarations/degenerate-eq-iunion-range.md) | 81 | `result-track:de9f0fd6f9cc12bdc55480f9d6b35b3f2e0e504d4497b66bb671148b416e43f9` |
-| 10 | `lemma` | [exists_nonDegenerate](../../../../AlgebraicTopology/Degenerate.lean/declarations/exists-nondegenerate.md) | 98 | `result-track:36f83465654ec1333493ab0218c35914c764152e7fcc1128310837422a04942d` |
-| 11 | `lemma` | [isIso_of_nonDegenerate](../../../../AlgebraicTopology/Degenerate.lean/declarations/isiso-of-nondegenerate.md) | 113 | `result-track:2c25ce52b2e12d3655754cdc8e7688cc1b6ea9c8031942a9c2fccbf641fd4fce` |
+| 1 | `def` | [degenerate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Degenerate.lean/declarations/degenerate.md) | 32 | `declaration-track:631b7177f0fa57fcdc01d5bf15d64dff08ed0987f6557bf4d8827bd4dc14051d` |
+| 2 | `def` | [nonDegenerate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Degenerate.lean/declarations/nondegenerate.md) | 38 | `declaration-track:3e8406bcfc6a0d0fe4741affa86cb5a92fe3c8b35cfbb69a70da2b1a21e24064` |
+| 3 | `lemma` | [degenerate_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Degenerate.lean/declarations/degenerate-zero.md) | 41 | `result-track:084fdcf07b3195ae30a8758c82eb53b8166b8b8a0c3bf9c761868f477bd15c4e` |
+| 4 | `lemma` | [nondegenerate_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Degenerate.lean/declarations/nondegenerate-zero.md) | 48 | `result-track:ad14cb472aa7db192b97bc1f46dfc6af28437d0c216f1e1357bf062f7d250869` |
+| 5 | `lemma` | [mem_nonDegenerate_iff_notMem_degenerate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Degenerate.lean/declarations/mem-nondegenerate-iff-notmem-degenerate.md) | 53 | `result-track:c724a3428ffb8e6ac0b64dbb47c7cdff049a6736e3ca334289d7ea1f9e156d05` |
+| 6 | `lemma` | [mem_degenerate_iff_notMem_nonDegenerate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Degenerate.lean/declarations/mem-degenerate-iff-notmem-nondegenerate.md) | 59 | `result-track:4b91052a6d9ae0ce7e770fcddeadf4e7e96bb19b19fa2315bcb5f4794e61cf32` |
+| 7 | `lemma` | [σ_mem_degenerate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Degenerate.lean/declarations/mem-degenerate.md) | 66 | `result-track:6d3ab18a014acd265789bb46773723e5ab85022005ea7c9962fc8710fca64106` |
+| 8 | `lemma` | [mem_degenerate_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Degenerate.lean/declarations/mem-degenerate-iff.md) | 70 | `result-track:3e4d278e6d382871b3378f839218c9a4a77a24372d14e513a90a0f9402c08912` |
+| 9 | `lemma` | [degenerate_eq_iUnion_range_σ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Degenerate.lean/declarations/degenerate-eq-iunion-range.md) | 81 | `result-track:de9f0fd6f9cc12bdc55480f9d6b35b3f2e0e504d4497b66bb671148b416e43f9` |
+| 10 | `lemma` | [exists_nonDegenerate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Degenerate.lean/declarations/exists-nondegenerate.md) | 98 | `result-track:36f83465654ec1333493ab0218c35914c764152e7fcc1128310837422a04942d` |
+| 11 | `lemma` | [isIso_of_nonDegenerate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Degenerate.lean/declarations/isiso-of-nondegenerate.md) | 113 | `result-track:2c25ce52b2e12d3655754cdc8e7688cc1b6ea9c8031942a9c2fccbf641fd4fce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

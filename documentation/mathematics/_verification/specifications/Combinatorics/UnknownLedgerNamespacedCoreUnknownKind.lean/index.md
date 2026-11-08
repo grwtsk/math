@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/UnknownLedgerNamespacedCoreUnknownKind.lean/index.md) · [Full source](../../../../Combinatorics/UnknownLedgerNamespacedCoreUnknownKind.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerNamespacedCoreUnknownKind.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerNamespacedCoreUnknownKind.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CoreUnknownKind](../../../../Combinatorics/UnknownLedgerNamespacedCoreUnknownKind.lean/declarations/coreunknownkind.md) | 21 | `declaration-track:803783dc5774363583ca2a0d0d38b8bf2bdfe31333e584d89242b5406ccbef2a` |
-| 2 | `inductive` | [ArithmeticUnknownKind](../../../../Combinatorics/UnknownLedgerNamespacedCoreUnknownKind.lean/declarations/arithmeticunknownkind.md) | 65 | `declaration-track:e7382c2c502ade2b348d54de94eb6f23dab03c6cffe2a427903ce0605bb38fc1` |
-| 3 | `inductive` | [AnalyticUnknownKind](../../../../Combinatorics/UnknownLedgerNamespacedCoreUnknownKind.lean/declarations/analyticunknownkind.md) | 79 | `declaration-track:705c9ea053b99e540e7c663b34b01167a49aa2bc6ea66ac06276930f5209cf2c` |
-| 4 | `inductive` | [SecurityUnknownKind](../../../../Combinatorics/UnknownLedgerNamespacedCoreUnknownKind.lean/declarations/securityunknownkind.md) | 99 | `declaration-track:801a10ecbc8b9803d2f11c3640b6401c272f2e6e21ea3c3715cf0e80edb8ae3d` |
-| 5 | `inductive` | [ContractiveBoundaryUnknownKind](../../../../Combinatorics/UnknownLedgerNamespacedCoreUnknownKind.lean/declarations/contractiveboundaryunknownkind.md) | 117 | `declaration-track:e820456f981de0d5a091127f924fe0aa520406aa1e483b89ac7dac5635cacd21` |
-| 6 | `inductive` | [MobiusOntologyUnknownKind](../../../../Combinatorics/UnknownLedgerNamespacedCoreUnknownKind.lean/declarations/mobiusontologyunknownkind.md) | 153 | `declaration-track:36ddbc6938da4471457876c03c011cc75023a3680be27247ac4ba6c9d0569f9b` |
-| 7 | `def` | [terminalBridgeUnknowns](../../../../Combinatorics/UnknownLedgerNamespacedCoreUnknownKind.lean/declarations/terminalbridgeunknowns.md) | 164 | `declaration-track:c084ac937d6469848d5ff05000ef2cb120b4b8e979d0cbf6669807da026fb317` |
+| 1 | `inductive` | [CoreUnknownKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerNamespacedCoreUnknownKind.lean/declarations/coreunknownkind.md) | 21 | `declaration-track:803783dc5774363583ca2a0d0d38b8bf2bdfe31333e584d89242b5406ccbef2a` |
+| 2 | `inductive` | [ArithmeticUnknownKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerNamespacedCoreUnknownKind.lean/declarations/arithmeticunknownkind.md) | 65 | `declaration-track:e7382c2c502ade2b348d54de94eb6f23dab03c6cffe2a427903ce0605bb38fc1` |
+| 3 | `inductive` | [AnalyticUnknownKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerNamespacedCoreUnknownKind.lean/declarations/analyticunknownkind.md) | 79 | `declaration-track:705c9ea053b99e540e7c663b34b01167a49aa2bc6ea66ac06276930f5209cf2c` |
+| 4 | `inductive` | [SecurityUnknownKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerNamespacedCoreUnknownKind.lean/declarations/securityunknownkind.md) | 99 | `declaration-track:801a10ecbc8b9803d2f11c3640b6401c272f2e6e21ea3c3715cf0e80edb8ae3d` |
+| 5 | `inductive` | [ContractiveBoundaryUnknownKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerNamespacedCoreUnknownKind.lean/declarations/contractiveboundaryunknownkind.md) | 117 | `declaration-track:e820456f981de0d5a091127f924fe0aa520406aa1e483b89ac7dac5635cacd21` |
+| 6 | `inductive` | [MobiusOntologyUnknownKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerNamespacedCoreUnknownKind.lean/declarations/mobiusontologyunknownkind.md) | 153 | `declaration-track:36ddbc6938da4471457876c03c011cc75023a3680be27247ac4ba6c9d0569f9b` |
+| 7 | `def` | [terminalBridgeUnknowns](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerNamespacedCoreUnknownKind.lean/declarations/terminalbridgeunknowns.md) | 164 | `declaration-track:c084ac937d6469848d5ff05000ef2cb120b4b8e979d0cbf6669807da026fb317` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

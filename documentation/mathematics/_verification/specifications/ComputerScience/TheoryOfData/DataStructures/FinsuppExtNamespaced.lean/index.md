@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppExtNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppExtNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppExtNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppExtNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [add_closure_setOf_eq_single](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppExtNamespaced.lean/declarations/add-closure-setof-eq-single.md) | 37 | `result-track:3ba1023372d047316c4daf3a9fd7dde9ceb53beb3cf0de943054387ac26bab10` |
-| 2 | `theorem` | [addHom_ext](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppExtNamespaced.lean/declarations/addhom-ext-source-edition-2.md) | 45 | `result-track:ec74f1fd2bebdf226938fa79333874a7a0ad8a9bd59fef37622d66d245906a10` |
-| 3 | `theorem` | [addHom_ext'](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppExtNamespaced.lean/declarations/addhom-ext.md) | 58 | `result-track:eb0676321cb7fdb757b6415e2155bba05dfe46e9a9947fbfcf2e9ca0c74441e5` |
-| 4 | `theorem` | [mulHom_ext](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppExtNamespaced.lean/declarations/mulhom-ext-source-edition-2.md) | 62 | `result-track:bea23adf038810b16ed7f382dc4aefac30296728e65537e63718fc436527b77d` |
-| 5 | `theorem` | [mulHom_ext'](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppExtNamespaced.lean/declarations/mulhom-ext.md) | 74 | `result-track:97eecb465e9ffa840828caabafc16c8d53eab0c0c056aabb8d60225505a2bf4d` |
+| 1 | `theorem` | [add_closure_setOf_eq_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppExtNamespaced.lean/declarations/add-closure-setof-eq-single.md) | 37 | `result-track:3ba1023372d047316c4daf3a9fd7dde9ceb53beb3cf0de943054387ac26bab10` |
+| 2 | `theorem` | [addHom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppExtNamespaced.lean/declarations/addhom-ext-source-edition-2.md) | 45 | `result-track:ec74f1fd2bebdf226938fa79333874a7a0ad8a9bd59fef37622d66d245906a10` |
+| 3 | `theorem` | [addHom_ext'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppExtNamespaced.lean/declarations/addhom-ext.md) | 58 | `result-track:eb0676321cb7fdb757b6415e2155bba05dfe46e9a9947fbfcf2e9ca0c74441e5` |
+| 4 | `theorem` | [mulHom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppExtNamespaced.lean/declarations/mulhom-ext-source-edition-2.md) | 62 | `result-track:bea23adf038810b16ed7f382dc4aefac30296728e65537e63718fc436527b77d` |
+| 5 | `theorem` | [mulHom_ext'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppExtNamespaced.lean/declarations/mulhom-ext.md) | 74 | `result-track:97eecb465e9ffa840828caabafc16c8d53eab0c0c056aabb8d60225505a2bf4d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

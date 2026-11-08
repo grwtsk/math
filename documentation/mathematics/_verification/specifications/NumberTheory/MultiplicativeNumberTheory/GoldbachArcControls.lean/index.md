@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.GoldbachArcDecomposition`](../../../../../MeasureAndIntegration/GoldbachArcDecomposition.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachArcDecomposition`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachArcDecomposition.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.NormNum` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prime_cutoff_five](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/declarations/prime-cutoff-five.md) | 27 | `result-track:6c7e26571e3c137595521fd9572cbc6d59d2730d3d808d606110f9b5f0a224a1` |
-| 2 | `theorem` | [odd_prime_cutoff_five](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/declarations/odd-prime-cutoff-five.md) | 31 | `result-track:a6deea273583fd5232d24e74d7d852d5291ddf8381fcfece19d043fe7aac59ff` |
-| 3 | `theorem` | [odd_target_truncation_zero](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/declarations/odd-target-truncation-zero.md) | 35 | `result-track:7cea42e2d60e3930b298f50fef784c6fceca168b03ea6d1b0dcd16e0321c2e5a` |
-| 4 | `theorem` | [local_product_not_goldbach_witness](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/declarations/local-product-not-goldbach-witness.md) | 41 | `result-track:1e25c25686612356ca3425fa799b936822e6103e396fee2ec949310c6f092709` |
-| 5 | `theorem` | [empty_major_partition](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/declarations/empty-major-partition.md) | 49 | `result-track:eac4a252867821051a2aca76ec6bd128bb6f79eeef2db83bc4f285a9f4853479` |
-| 6 | `theorem` | [full_major_partition](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/declarations/full-major-partition.md) | 59 | `result-track:2a5d57868604292f2f9476a127fdd8fdb12dcddb72e748e786080fe794833898` |
-| 7 | `theorem` | [zero_margin_rejected](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/declarations/zero-margin-rejected.md) | 64 | `result-track:5f043347ff15a3af227323a48dd774dcdf84bdbe8dfe69500c3a6c140954342d` |
-| 8 | `theorem` | [truncated_scale_alone_not_count](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/declarations/truncated-scale-alone-not-count.md) | 69 | `result-track:ca788d2a374b5b059bd141b68ea187588f7c54bc54ac50f36a4ecca342a64c7a` |
+| 1 | `theorem` | [prime_cutoff_five](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/declarations/prime-cutoff-five.md) | 27 | `result-track:6c7e26571e3c137595521fd9572cbc6d59d2730d3d808d606110f9b5f0a224a1` |
+| 2 | `theorem` | [odd_prime_cutoff_five](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/declarations/odd-prime-cutoff-five.md) | 31 | `result-track:a6deea273583fd5232d24e74d7d852d5291ddf8381fcfece19d043fe7aac59ff` |
+| 3 | `theorem` | [odd_target_truncation_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/declarations/odd-target-truncation-zero.md) | 35 | `result-track:7cea42e2d60e3930b298f50fef784c6fceca168b03ea6d1b0dcd16e0321c2e5a` |
+| 4 | `theorem` | [local_product_not_goldbach_witness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/declarations/local-product-not-goldbach-witness.md) | 41 | `result-track:1e25c25686612356ca3425fa799b936822e6103e396fee2ec949310c6f092709` |
+| 5 | `theorem` | [empty_major_partition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/declarations/empty-major-partition.md) | 49 | `result-track:eac4a252867821051a2aca76ec6bd128bb6f79eeef2db83bc4f285a9f4853479` |
+| 6 | `theorem` | [full_major_partition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/declarations/full-major-partition.md) | 59 | `result-track:2a5d57868604292f2f9476a127fdd8fdb12dcddb72e748e786080fe794833898` |
+| 7 | `theorem` | [zero_margin_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/declarations/zero-margin-rejected.md) | 64 | `result-track:5f043347ff15a3af227323a48dd774dcdf84bdbe8dfe69500c3a6c140954342d` |
+| 8 | `theorem` | [truncated_scale_alone_not_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachArcControls.lean/declarations/truncated-scale-alone-not-count.md) | 69 | `result-track:ca788d2a374b5b059bd141b68ea187588f7c54bc54ac50f36a4ecca342a64c7a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

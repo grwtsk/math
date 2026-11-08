@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/IndependentFirstAtomChallenge.lean/index.md) · [Full source](../../../../MeasureAndIntegration/IndependentFirstAtomChallenge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IndependentFirstAtomChallenge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IndependentFirstAtomChallenge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [closed_atom_retained](../../../../MeasureAndIntegration/IndependentFirstAtomChallenge.lean/declarations/closed-atom-retained.md) | 16 | `result-track:e0e8b77516ec2511f6a974aa55c66855d4b92c6a0a3ffd8e887f9a807adefc6f` |
-| 2 | `theorem` | [closed_atom_not_empty_prefix](../../../../MeasureAndIntegration/IndependentFirstAtomChallenge.lean/declarations/closed-atom-not-empty-prefix.md) | 26 | `result-track:64a66be68056fedc72a99fbb12d0542ae2cafc765e94130bd8049665472753a7` |
-| 3 | `theorem` | [reversed_head](../../../../MeasureAndIntegration/IndependentFirstAtomChallenge.lean/declarations/reversed-head.md) | 31 | `result-track:4af382dfc3d0321b5e2d6ca603e0fca070c1457a6589427d67a225ee4909e956` |
-| 4 | `theorem` | [actual_head_strictly_negative](../../../../MeasureAndIntegration/IndependentFirstAtomChallenge.lean/declarations/actual-head-strictly-negative.md) | 37 | `result-track:587714ac05d7db8a4e37ab5f71d3409c504af013927b9b3874d572d41b713610` |
-| 5 | `theorem` | [remaining_lower_implies_full_at_radius](../../../../MeasureAndIntegration/IndependentFirstAtomChallenge.lean/declarations/remaining-lower-implies-full-at-radius.md) | 42 | `result-track:7c13722a42002c49b43a404042f6d85e3b21e4b80b7809b98bac3ddc79b7a184` |
-| 6 | `theorem` | [radius_forty_residual](../../../../MeasureAndIntegration/IndependentFirstAtomChallenge.lean/declarations/radius-forty-residual.md) | 46 | `result-track:5d5710243b49eb7f382be9d31fc9d9717b12ed33d665c54cbd58d1764d553fcb` |
-| 7 | `theorem` | [original_all_real_consumer](../../../../MeasureAndIntegration/IndependentFirstAtomChallenge.lean/declarations/original-all-real-consumer.md) | 50 | `result-track:6e0d4ff2bafccf16c1aef1530856a6ec30deb1364b14eaa58dd27a0e0d667c8c` |
+| 1 | `theorem` | [closed_atom_retained](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IndependentFirstAtomChallenge.lean/declarations/closed-atom-retained.md) | 16 | `result-track:e0e8b77516ec2511f6a974aa55c66855d4b92c6a0a3ffd8e887f9a807adefc6f` |
+| 2 | `theorem` | [closed_atom_not_empty_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IndependentFirstAtomChallenge.lean/declarations/closed-atom-not-empty-prefix.md) | 26 | `result-track:64a66be68056fedc72a99fbb12d0542ae2cafc765e94130bd8049665472753a7` |
+| 3 | `theorem` | [reversed_head](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IndependentFirstAtomChallenge.lean/declarations/reversed-head.md) | 31 | `result-track:4af382dfc3d0321b5e2d6ca603e0fca070c1457a6589427d67a225ee4909e956` |
+| 4 | `theorem` | [actual_head_strictly_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IndependentFirstAtomChallenge.lean/declarations/actual-head-strictly-negative.md) | 37 | `result-track:587714ac05d7db8a4e37ab5f71d3409c504af013927b9b3874d572d41b713610` |
+| 5 | `theorem` | [remaining_lower_implies_full_at_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IndependentFirstAtomChallenge.lean/declarations/remaining-lower-implies-full-at-radius.md) | 42 | `result-track:7c13722a42002c49b43a404042f6d85e3b21e4b80b7809b98bac3ddc79b7a184` |
+| 6 | `theorem` | [radius_forty_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IndependentFirstAtomChallenge.lean/declarations/radius-forty-residual.md) | 46 | `result-track:5d5710243b49eb7f382be9d31fc9d9717b12ed33d665c54cbd58d1764d553fcb` |
+| 7 | `theorem` | [original_all_real_consumer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IndependentFirstAtomChallenge.lean/declarations/original-all-real-consumer.md) | 50 | `result-track:6e0d4ff2bafccf16c1aef1530856a6ec30deb1364b14eaa58dd27a0e0d667c8c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

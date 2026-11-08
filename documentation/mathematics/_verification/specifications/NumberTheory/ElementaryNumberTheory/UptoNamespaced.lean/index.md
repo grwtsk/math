@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/UptoNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/UptoNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/UptoNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/UptoNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Upto](../../../../../NumberTheory/ElementaryNumberTheory/UptoNamespaced.lean/declarations/upto.md) | 41 | `declaration-track:92a5cb4ccbbd1094abffa1429badee521f2398f118828166edf1661775836672` |
-| 2 | `def` | [GT](../../../../../NumberTheory/ElementaryNumberTheory/UptoNamespaced.lean/declarations/gt.md) | 49 | `declaration-track:53494716cf1e74c40c0646ec04dc54d7c02ac2a44c63fccf553c131660f88c69` |
-| 3 | `instance` | [(anonymous)](../../../../../NumberTheory/ElementaryNumberTheory/UptoNamespaced.lean/declarations/instance.md) | 52 | `declaration-track:3c42208bbd63889ab4a9e99cce13e50427dac0022530ef51b3381fc7326f602c` |
-| 4 | `theorem` | [wf](../../../../../NumberTheory/ElementaryNumberTheory/UptoNamespaced.lean/declarations/wf.md) | 57 | `result-track:d96baed078a6915dfdff08077c5b1bb0d3c8637b99d164d193b16bc0bc596fb7` |
-| 5 | `def` | [zero](../../../../../NumberTheory/ElementaryNumberTheory/UptoNamespaced.lean/declarations/zero.md) | 67 | `declaration-track:7f03684701af6ea69b4eb414ddea9728c3c85ad8a337b11d721d6f87ccca7919` |
-| 6 | `def` | [succ](../../../../../NumberTheory/ElementaryNumberTheory/UptoNamespaced.lean/declarations/succ.md) | 71 | `declaration-track:aa09c1704d2621be44bc87a0f8df5b717c9e0e4039cedd25e0a1d402195db07b` |
+| 1 | `abbrev` | [Upto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/UptoNamespaced.lean/declarations/upto.md) | 41 | `declaration-track:92a5cb4ccbbd1094abffa1429badee521f2398f118828166edf1661775836672` |
+| 2 | `def` | [GT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/UptoNamespaced.lean/declarations/gt.md) | 49 | `declaration-track:53494716cf1e74c40c0646ec04dc54d7c02ac2a44c63fccf553c131660f88c69` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/UptoNamespaced.lean/declarations/instance.md) | 52 | `declaration-track:3c42208bbd63889ab4a9e99cce13e50427dac0022530ef51b3381fc7326f602c` |
+| 4 | `theorem` | [wf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/UptoNamespaced.lean/declarations/wf.md) | 57 | `result-track:d96baed078a6915dfdff08077c5b1bb0d3c8637b99d164d193b16bc0bc596fb7` |
+| 5 | `def` | [zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/UptoNamespaced.lean/declarations/zero.md) | 67 | `declaration-track:7f03684701af6ea69b4eb414ddea9728c3c85ad8a337b11d721d6f87ccca7919` |
+| 6 | `def` | [succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/UptoNamespaced.lean/declarations/succ.md) | 71 | `declaration-track:aa09c1704d2621be44bc87a0f8df5b717c9e0e4039cedd25e0a1d402195db07b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

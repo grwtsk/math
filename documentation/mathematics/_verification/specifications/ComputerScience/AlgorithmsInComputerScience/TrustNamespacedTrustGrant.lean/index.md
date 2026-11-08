@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TrustNamespacedTrustGrant.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TrustNamespacedTrustGrant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TrustNamespacedTrustGrant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TrustNamespacedTrustGrant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TrustGrant](../../../../../ComputerScience/AlgorithmsInComputerScience/TrustNamespacedTrustGrant.lean/declarations/trustgrant.md) | 22 | `declaration-track:85bc5ab4603e835a8ef66a9608e4e2f262842fcbfaed06cb92c394678d48a759` |
-| 2 | `def` | [TrustGrant.ActiveAt](../../../../../ComputerScience/AlgorithmsInComputerScience/TrustNamespacedTrustGrant.lean/declarations/trustgrant-activeat.md) | 27 | `declaration-track:58de669eec010e755a4247f8e15dd0279955f155dd777fc12b7a1c3a3acfb242` |
+| 1 | `structure` | [TrustGrant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TrustNamespacedTrustGrant.lean/declarations/trustgrant.md) | 22 | `declaration-track:85bc5ab4603e835a8ef66a9608e4e2f262842fcbfaed06cb92c394678d48a759` |
+| 2 | `def` | [TrustGrant.ActiveAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TrustNamespacedTrustGrant.lean/declarations/trustgrant-activeat.md) | 27 | `declaration-track:58de669eec010e755a4247f8e15dd0279955f155dd777fc12b7a1c3a3acfb242` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

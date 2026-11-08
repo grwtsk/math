@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatCast.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatCast.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatCast.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatCast.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [RatCast](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatCast.lean/declarations/ratcast.md) | 9 | `declaration-track:1290cf12d105b38eaadb8032996de609379d13028dd0bcca1eec0e18f4130864` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatCast.lean/declarations/instance.md) | 13 | `declaration-track:10fcbfb000fc9fd47660f907fcae4282199a74132b3bfddeccbf41aa9ad06345` |
-| 3 | `def` | [Rat.cast](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatCast.lean/declarations/rat-cast.md) | 17 | `declaration-track:63229be3e20f9c5cb39f182dd37ad93f7c7a2b06ac0965b1e59f18a624f28108` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatCast.lean/declarations/instance-source-edition-3.md) | 21 | `declaration-track:8f038eb62759f274a776353dc68265e51d518ded081501684c2a581fe2e4dc31` |
-| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatCast.lean/declarations/instance-source-edition-2.md) | 24 | `declaration-track:7013f9664cc79661b16064d7a2c89460b23c4933d0e93373ab417bf80fe55155` |
+| 1 | `class` | [RatCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatCast.lean/declarations/ratcast.md) | 9 | `declaration-track:1290cf12d105b38eaadb8032996de609379d13028dd0bcca1eec0e18f4130864` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatCast.lean/declarations/instance.md) | 13 | `declaration-track:10fcbfb000fc9fd47660f907fcae4282199a74132b3bfddeccbf41aa9ad06345` |
+| 3 | `def` | [Rat.cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatCast.lean/declarations/rat-cast.md) | 17 | `declaration-track:63229be3e20f9c5cb39f182dd37ad93f7c7a2b06ac0965b1e59f18a624f28108` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatCast.lean/declarations/instance-source-edition-3.md) | 21 | `declaration-track:8f038eb62759f274a776353dc68265e51d518ded081501684c2a581fe2e4dc31` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatCast.lean/declarations/instance-source-edition-2.md) | 24 | `declaration-track:7013f9664cc79661b16064d7a2c89460b23c4933d0e93373ab417bf80fe55155` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

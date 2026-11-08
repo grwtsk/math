@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RecursiveBoundary.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RecursiveBoundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RecursiveBoundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RecursiveBoundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [recursive_preservesCompatibility](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RecursiveBoundary.lean/declarations/recursive-preservescompatibility.md) | 19 | `result-track:ad4497ae6ee3df74fb46a4caaa02265f85f1f25c116d99b467eae632ebf3028d` |
-| 2 | `theorem` | [recursive_forbiddenEscapeDetected](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RecursiveBoundary.lean/declarations/recursive-forbiddenescapedetected.md) | 28 | `result-track:c76b4ca119b6f03bcde217832aec70f8b2c83c146e7190c8d20abe91b3eb30ef` |
-| 3 | `theorem` | [no_compatible_forbidden_escape_without_obstruction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RecursiveBoundary.lean/declarations/no-compatible-forbidden-escape-without-obstruction.md) | 37 | `result-track:0bfb41bab9afeaddbd062bd14b34da117bb8a928c120ced30d2bde73d064f398` |
-| 4 | `theorem` | [recursive_boundary_initially_compatible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RecursiveBoundary.lean/declarations/recursive-boundary-initially-compatible.md) | 48 | `result-track:e1f78a1e53557ec3ee578409b6cf25e4de142e7ae0017ea5c4ae431b05aefd6e` |
-| 5 | `theorem` | [recursive_boundary_sticky_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RecursiveBoundary.lean/declarations/recursive-boundary-sticky-if-supplied.md) | 53 | `result-track:b7f0923799ee821c3b043b550aa8b7a65be3e60a3f332aa7f6c967ae4572dfd7` |
+| 1 | `theorem` | [recursive_preservesCompatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RecursiveBoundary.lean/declarations/recursive-preservescompatibility.md) | 19 | `result-track:ad4497ae6ee3df74fb46a4caaa02265f85f1f25c116d99b467eae632ebf3028d` |
+| 2 | `theorem` | [recursive_forbiddenEscapeDetected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RecursiveBoundary.lean/declarations/recursive-forbiddenescapedetected.md) | 28 | `result-track:c76b4ca119b6f03bcde217832aec70f8b2c83c146e7190c8d20abe91b3eb30ef` |
+| 3 | `theorem` | [no_compatible_forbidden_escape_without_obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RecursiveBoundary.lean/declarations/no-compatible-forbidden-escape-without-obstruction.md) | 37 | `result-track:0bfb41bab9afeaddbd062bd14b34da117bb8a928c120ced30d2bde73d064f398` |
+| 4 | `theorem` | [recursive_boundary_initially_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RecursiveBoundary.lean/declarations/recursive-boundary-initially-compatible.md) | 48 | `result-track:e1f78a1e53557ec3ee578409b6cf25e4de142e7ae0017ea5c4ae431b05aefd6e` |
+| 5 | `theorem` | [recursive_boundary_sticky_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RecursiveBoundary.lean/declarations/recursive-boundary-sticky-if-supplied.md) | 53 | `result-track:b7f0923799ee821c3b043b550aa8b7a65be3e60a3f332aa7f6c967ae4572dfd7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/IdiomNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/IdiomNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IdiomNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IdiomNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ProtectedDifference](../../../../Combinatorics/IdiomNamespaced.lean/declarations/protecteddifference.md) | 18 | `declaration-track:9c631bde372c4bb1271fbdac69f8bf7f3dc865c6ac950234dc93d344b0468dc4` |
-| 2 | `structure` | [NoncompositionalityWitness](../../../../Combinatorics/IdiomNamespaced.lean/declarations/noncompositionalitywitness.md) | 28 | `declaration-track:073aa7fdd5a089109fa80b1086bdb8b35a7c0ae7da0faf6dcf7c03926b330ea9` |
-| 3 | `structure` | [IdiomRestrictions](../../../../Combinatorics/IdiomNamespaced.lean/declarations/idiomrestrictions.md) | 38 | `declaration-track:051b13dc488deb5394aa7812440c32be587f78fe73cf18c5248a470296b4914e` |
-| 4 | `structure` | [IdiomVariant](../../../../Combinatorics/IdiomNamespaced.lean/declarations/idiomvariant.md) | 45 | `declaration-track:96299fd1a8025552a393fd87acf7374311246d82b17d8c43e9d629f9dac7853b` |
-| 5 | `structure` | [IdiomCertificate](../../../../Combinatorics/IdiomNamespaced.lean/declarations/idiomcertificate.md) | 50 | `declaration-track:df5c076658b82279a23a8f15d326dfbef90c26cab0088ef6830cbe0ccd3b13d3` |
+| 1 | `inductive` | [ProtectedDifference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IdiomNamespaced.lean/declarations/protecteddifference.md) | 18 | `declaration-track:9c631bde372c4bb1271fbdac69f8bf7f3dc865c6ac950234dc93d344b0468dc4` |
+| 2 | `structure` | [NoncompositionalityWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IdiomNamespaced.lean/declarations/noncompositionalitywitness.md) | 28 | `declaration-track:073aa7fdd5a089109fa80b1086bdb8b35a7c0ae7da0faf6dcf7c03926b330ea9` |
+| 3 | `structure` | [IdiomRestrictions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IdiomNamespaced.lean/declarations/idiomrestrictions.md) | 38 | `declaration-track:051b13dc488deb5394aa7812440c32be587f78fe73cf18c5248a470296b4914e` |
+| 4 | `structure` | [IdiomVariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IdiomNamespaced.lean/declarations/idiomvariant.md) | 45 | `declaration-track:96299fd1a8025552a393fd87acf7374311246d82b17d8c43e9d629f9dac7853b` |
+| 5 | `structure` | [IdiomCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IdiomNamespaced.lean/declarations/idiomcertificate.md) | 50 | `declaration-track:df5c076658b82279a23a8f15d326dfbef90c26cab0088ef6830cbe0ccd3b13d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelNamespacedPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TypeIIBlockPacketModel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelNamespacedPublic.lean/declarations/typeiiblockpacketmodel.md) | 49 | `declaration-track:fd53643fbfb2c829bc184d5649bb3a39701ad417acb1da88487746d8984f4fdb` |
-| 2 | `def` | [TypeIIBlockPacketModel.packetMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelNamespacedPublic.lean/declarations/typeiiblockpacketmodel-packetmatrix.md) | 115 | `declaration-track:0eccf1ad9b1291729ffeb9fd4c38b000d77b7beec6e1fe0f786a42329cc407fb` |
-| 3 | `theorem` | [TypeIIBlockPacketModel.exactFactorization](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelNamespacedPublic.lean/declarations/typeiiblockpacketmodel-exactfactorization.md) | 127 | `result-track:7ef2cf2e12649b7bff32c3d7c97c4e91051049c1626024f601b4f6219805a10d` |
-| 4 | `theorem` | [TypeIIBlockPacketModel.exactBlockFactorization](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelNamespacedPublic.lean/declarations/typeiiblockpacketmodel-exactblockfactorization.md) | 141 | `result-track:95835e048f6853679bf894844346dc520d53e945ae507460d42e696f9bc97608` |
+| 1 | `structure` | [TypeIIBlockPacketModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelNamespacedPublic.lean/declarations/typeiiblockpacketmodel.md) | 49 | `declaration-track:fd53643fbfb2c829bc184d5649bb3a39701ad417acb1da88487746d8984f4fdb` |
+| 2 | `def` | [TypeIIBlockPacketModel.packetMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelNamespacedPublic.lean/declarations/typeiiblockpacketmodel-packetmatrix.md) | 115 | `declaration-track:0eccf1ad9b1291729ffeb9fd4c38b000d77b7beec6e1fe0f786a42329cc407fb` |
+| 3 | `theorem` | [TypeIIBlockPacketModel.exactFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelNamespacedPublic.lean/declarations/typeiiblockpacketmodel-exactfactorization.md) | 127 | `result-track:7ef2cf2e12649b7bff32c3d7c97c4e91051049c1626024f601b4f6219805a10d` |
+| 4 | `theorem` | [TypeIIBlockPacketModel.exactBlockFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelNamespacedPublic.lean/declarations/typeiiblockpacketmodel-exactblockfactorization.md) | 141 | `result-track:95835e048f6853679bf894844346dc520d53e945ae507460d42e696f9bc97608` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

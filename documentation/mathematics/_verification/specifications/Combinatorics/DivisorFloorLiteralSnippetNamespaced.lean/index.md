@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DivisorFloorLiteralSnippetNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/DivisorFloorLiteralSnippetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorFloorLiteralSnippetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorFloorLiteralSnippetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Combinatorics/DivisorFloorLiteralSnippetNamespaced.lean/declarations/example-source-edition-6.md) | 15 | `declaration-track:fba00eaa3c4ef3f86a1738f61aab9906d58f0347b627c8ee57fff8e5623850b4` |
-| 2 | `example` | [(anonymous)](../../../../Combinatorics/DivisorFloorLiteralSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:c1f9215b7de149970d05a22f4dead7eaaca50010283332baa1a16ba455d22635` |
-| 3 | `example` | [(anonymous)](../../../../Combinatorics/DivisorFloorLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 25 | `declaration-track:11a5741c538e2011bbb9583af8997149835802c0157d30c253c7c6b0460debb2` |
-| 4 | `example` | [(anonymous)](../../../../Combinatorics/DivisorFloorLiteralSnippetNamespaced.lean/declarations/example.md) | 33 | `declaration-track:05be501f8250f4dac507b501273551a50c0b3277a72447a9221b76d41c1fbeeb` |
-| 5 | `example` | [(anonymous)](../../../../Combinatorics/DivisorFloorLiteralSnippetNamespaced.lean/declarations/example-source-edition-5.md) | 39 | `declaration-track:f5d586e91ad396fed33c5993af882eb87ee76df9024dbb949e1c107aaaec54dd` |
-| 6 | `example` | [(anonymous)](../../../../Combinatorics/DivisorFloorLiteralSnippetNamespaced.lean/declarations/example-source-edition-4.md) | 43 | `declaration-track:ec8c7093d5ce44efebc51617bb94e03eb630f31fd5afc52b7f28217e7d4f980d` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorFloorLiteralSnippetNamespaced.lean/declarations/example-source-edition-6.md) | 15 | `declaration-track:fba00eaa3c4ef3f86a1738f61aab9906d58f0347b627c8ee57fff8e5623850b4` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorFloorLiteralSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:c1f9215b7de149970d05a22f4dead7eaaca50010283332baa1a16ba455d22635` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorFloorLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 25 | `declaration-track:11a5741c538e2011bbb9583af8997149835802c0157d30c253c7c6b0460debb2` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorFloorLiteralSnippetNamespaced.lean/declarations/example.md) | 33 | `declaration-track:05be501f8250f4dac507b501273551a50c0b3277a72447a9221b76d41c1fbeeb` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorFloorLiteralSnippetNamespaced.lean/declarations/example-source-edition-5.md) | 39 | `declaration-track:f5d586e91ad396fed33c5993af882eb87ee76df9024dbb949e1c107aaaec54dd` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorFloorLiteralSnippetNamespaced.lean/declarations/example-source-edition-4.md) | 43 | `declaration-track:ec8c7093d5ce44efebc51617bb94e03eb630f31fd5afc52b7f28217e7d4f980d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

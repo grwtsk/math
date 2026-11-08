@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SheavesSheafPresheaf.lean/index.md) · [Full source](../../../../GeneralTopology/SheavesSheafPresheaf.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesSheafPresheaf.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesSheafPresheaf.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,20 +59,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsSheaf](../../../../GeneralTopology/SheavesSheafPresheaf.lean/declarations/issheaf.md) | 81 | `declaration-track:a2dd7b29ca3497d1476bb9a3c50953931e6e37965389ca5f07c4e7ee30afcb8f` |
-| 2 | `theorem` | [isSheaf_unit](../../../../GeneralTopology/SheavesSheafPresheaf.lean/declarations/issheaf-unit.md) | 86 | `result-track:152d71863b78f7f6f860754589f1412222e33e8cbad3a51a88ebe8c5807b3fc7` |
-| 3 | `theorem` | [isSheaf_iso_iff](../../../../GeneralTopology/SheavesSheafPresheaf.lean/declarations/issheaf-iso-iff.md) | 89 | `result-track:f4f9e412fc7fb18807962adb4a88aeb945eea376ca6e5564fa1b65a598028e6f` |
-| 4 | `theorem` | [isSheaf_of_iso](../../../../GeneralTopology/SheavesSheafPresheaf.lean/declarations/issheaf-of-iso.md) | 94 | `result-track:d8e24d77ae428e042d476ca4d83a35a1a8b19d385ebe2aa362361866f603a394` |
-| 5 | `def` | [Sheaf](../../../../GeneralTopology/SheavesSheafPresheaf.lean/declarations/sheaf.md) | 104 | `declaration-track:4f33c950f1cf2de6864562e934570bfedc0505846c88137516db1801d2627d64` |
-| 6 | `instance` | [SheafCat](../../../../GeneralTopology/SheavesSheafPresheaf.lean/declarations/sheafcat.md) | 109 | `declaration-track:c3adcd6e33df4dd22cb7e6c4f6a174b607617b7db8d8178bdff777ea88b59386` |
-| 7 | `abbrev` | [Sheaf.presheaf](../../../../GeneralTopology/SheavesSheafPresheaf.lean/declarations/sheaf-presheaf.md) | 115 | `declaration-track:b5d60fa57b19a50ecff74b49ff61648cc81fd1c2560738ba2c3ec0d4c68e3784` |
-| 8 | `instance` | [sheafInhabited](../../../../GeneralTopology/SheavesSheafPresheaf.lean/declarations/sheafinhabited.md) | 121 | `declaration-track:7fff89cc657653ac6c28567090433521a0e42ee98d163bb9a16427374e664d69` |
-| 9 | `def` | [forget](../../../../GeneralTopology/SheavesSheafPresheaf.lean/declarations/forget.md) | 128 | `declaration-track:f6d9da70c7a0eb559129eb135484553c8265bf865e67fc673bdcc176fa8318b7` |
-| 10 | `instance` | [forget_full](../../../../GeneralTopology/SheavesSheafPresheaf.lean/declarations/forget-full.md) | 134 | `declaration-track:e9832cf081c2b197f309e6386f1bc30d2e610ca7bd11bd7d4e0bfd0ea5c3e80a` |
-| 11 | `instance` | [forgetFaithful](../../../../GeneralTopology/SheavesSheafPresheaf.lean/declarations/forgetfaithful.md) | 137 | `declaration-track:a37f83bbd9f86abd35874c68bd644d72f207c5c7704dbfcf439c7356cd717575` |
-| 12 | `theorem` | [id_app](../../../../GeneralTopology/SheavesSheafPresheaf.lean/declarations/id-app.md) | 141 | `result-track:7321aad7d3ae1623a047a88f994393a5b44ca864266dc3e4f91f18ea889f0615` |
-| 13 | `theorem` | [comp_app](../../../../GeneralTopology/SheavesSheafPresheaf.lean/declarations/comp-app.md) | 144 | `result-track:cf5f4829a14c445ecc32a0716f8d5efebb2742af3155ffb87b36e5013ca256bc` |
-| 14 | `lemma` | [Presheaf.IsSheaf.section_ext](../../../../GeneralTopology/SheavesSheafPresheaf.lean/declarations/presheaf-issheaf-section-ext.md) | 150 | `result-track:544c250dddd86a60a16dfb95a3d780ebf068071c17b8b82a8439c0423b21940a` |
+| 1 | `def` | [IsSheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesSheafPresheaf.lean/declarations/issheaf.md) | 81 | `declaration-track:a2dd7b29ca3497d1476bb9a3c50953931e6e37965389ca5f07c4e7ee30afcb8f` |
+| 2 | `theorem` | [isSheaf_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesSheafPresheaf.lean/declarations/issheaf-unit.md) | 86 | `result-track:152d71863b78f7f6f860754589f1412222e33e8cbad3a51a88ebe8c5807b3fc7` |
+| 3 | `theorem` | [isSheaf_iso_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesSheafPresheaf.lean/declarations/issheaf-iso-iff.md) | 89 | `result-track:f4f9e412fc7fb18807962adb4a88aeb945eea376ca6e5564fa1b65a598028e6f` |
+| 4 | `theorem` | [isSheaf_of_iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesSheafPresheaf.lean/declarations/issheaf-of-iso.md) | 94 | `result-track:d8e24d77ae428e042d476ca4d83a35a1a8b19d385ebe2aa362361866f603a394` |
+| 5 | `def` | [Sheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesSheafPresheaf.lean/declarations/sheaf.md) | 104 | `declaration-track:4f33c950f1cf2de6864562e934570bfedc0505846c88137516db1801d2627d64` |
+| 6 | `instance` | [SheafCat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesSheafPresheaf.lean/declarations/sheafcat.md) | 109 | `declaration-track:c3adcd6e33df4dd22cb7e6c4f6a174b607617b7db8d8178bdff777ea88b59386` |
+| 7 | `abbrev` | [Sheaf.presheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesSheafPresheaf.lean/declarations/sheaf-presheaf.md) | 115 | `declaration-track:b5d60fa57b19a50ecff74b49ff61648cc81fd1c2560738ba2c3ec0d4c68e3784` |
+| 8 | `instance` | [sheafInhabited](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesSheafPresheaf.lean/declarations/sheafinhabited.md) | 121 | `declaration-track:7fff89cc657653ac6c28567090433521a0e42ee98d163bb9a16427374e664d69` |
+| 9 | `def` | [forget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesSheafPresheaf.lean/declarations/forget.md) | 128 | `declaration-track:f6d9da70c7a0eb559129eb135484553c8265bf865e67fc673bdcc176fa8318b7` |
+| 10 | `instance` | [forget_full](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesSheafPresheaf.lean/declarations/forget-full.md) | 134 | `declaration-track:e9832cf081c2b197f309e6386f1bc30d2e610ca7bd11bd7d4e0bfd0ea5c3e80a` |
+| 11 | `instance` | [forgetFaithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesSheafPresheaf.lean/declarations/forgetfaithful.md) | 137 | `declaration-track:a37f83bbd9f86abd35874c68bd644d72f207c5c7704dbfcf439c7356cd717575` |
+| 12 | `theorem` | [id_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesSheafPresheaf.lean/declarations/id-app.md) | 141 | `result-track:7321aad7d3ae1623a047a88f994393a5b44ca864266dc3e4f91f18ea889f0615` |
+| 13 | `theorem` | [comp_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesSheafPresheaf.lean/declarations/comp-app.md) | 144 | `result-track:cf5f4829a14c445ecc32a0716f8d5efebb2742af3155ffb87b36e5013ca256bc` |
+| 14 | `lemma` | [Presheaf.IsSheaf.section_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesSheafPresheaf.lean/declarations/presheaf-issheaf-section-ext.md) | 150 | `result-track:544c250dddd86a60a16dfb95a3d780ebf068071c17b8b82a8439c0423b21940a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

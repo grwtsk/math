@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalTentScaledEvaluation.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalTentScaledEvaluation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentScaledEvaluation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentScaledEvaluation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.ScaledLogPowerEvaluation`](../../../../FunctionsOfAComplexVariable/ScaledLogPowerEvaluation.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentPrimeCriterion`](../../../../NumberTheory/CanonicalTentPrimeCriterion.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.ScaledLogPowerEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ScaledLogPowerEvaluation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentPrimeCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentPrimeCriterion.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [scaledHead](../../../../NumberTheory/CanonicalTentScaledEvaluation.lean/declarations/scaledhead.md) | 30 | `declaration-track:6683a28efe11b372e08fa171cef4b00844cf11cfdcd70011b8bac54737430060` |
-| 2 | `def` | [scaledHeadError](../../../../NumberTheory/CanonicalTentScaledEvaluation.lean/declarations/scaledheaderror.md) | 35 | `declaration-track:082f203a739ea705c39352a7209faf76881cb9b80603e06c995e95bb1bb82bf1` |
-| 3 | `theorem` | [norm_head_sub_scaled_le](../../../../NumberTheory/CanonicalTentScaledEvaluation.lean/declarations/norm-head-sub-scaled-le.md) | 41 | `result-track:451ce2f08ea39fea95591c22c3380d50b0f256e7be46b7ba862af15d0384cc9b` |
-| 4 | `theorem` | [scaledHeadError_nonneg](../../../../NumberTheory/CanonicalTentScaledEvaluation.lean/declarations/scaledheaderror-nonneg.md) | 61 | `result-track:5e2c675adb10c240375059ff9c42374fd3c996d2cfe5b7bd854bb960640acf9c` |
-| 5 | `theorem` | [norm_head_sub_rounded_le](../../../../NumberTheory/CanonicalTentScaledEvaluation.lean/declarations/norm-head-sub-rounded-le.md) | 67 | `result-track:8ee9a692e199c9fd2e2c07ffea265e5b5902c39d7c8024968a07785caf7e86ca` |
-| 6 | `theorem` | [prime_in_square_of_scaled_inputs](../../../../NumberTheory/CanonicalTentScaledEvaluation.lean/declarations/prime-in-square-of-scaled-inputs.md) | 82 | `result-track:f676a42e964d2637f547917117a2cd294d4770bcb27bef9d8e2343c6908cf0c1` |
-| 7 | `theorem` | [prime_in_square_of_rounded_scaled_inputs](../../../../NumberTheory/CanonicalTentScaledEvaluation.lean/declarations/prime-in-square-of-rounded-scaled-inputs.md) | 92 | `result-track:396c1efcbaa05e9453380654af7e6a5e25a451f05dc806bd35fdbf87e9fb2bf9` |
+| 1 | `def` | [scaledHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentScaledEvaluation.lean/declarations/scaledhead.md) | 30 | `declaration-track:6683a28efe11b372e08fa171cef4b00844cf11cfdcd70011b8bac54737430060` |
+| 2 | `def` | [scaledHeadError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentScaledEvaluation.lean/declarations/scaledheaderror.md) | 35 | `declaration-track:082f203a739ea705c39352a7209faf76881cb9b80603e06c995e95bb1bb82bf1` |
+| 3 | `theorem` | [norm_head_sub_scaled_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentScaledEvaluation.lean/declarations/norm-head-sub-scaled-le.md) | 41 | `result-track:451ce2f08ea39fea95591c22c3380d50b0f256e7be46b7ba862af15d0384cc9b` |
+| 4 | `theorem` | [scaledHeadError_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentScaledEvaluation.lean/declarations/scaledheaderror-nonneg.md) | 61 | `result-track:5e2c675adb10c240375059ff9c42374fd3c996d2cfe5b7bd854bb960640acf9c` |
+| 5 | `theorem` | [norm_head_sub_rounded_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentScaledEvaluation.lean/declarations/norm-head-sub-rounded-le.md) | 67 | `result-track:8ee9a692e199c9fd2e2c07ffea265e5b5902c39d7c8024968a07785caf7e86ca` |
+| 6 | `theorem` | [prime_in_square_of_scaled_inputs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentScaledEvaluation.lean/declarations/prime-in-square-of-scaled-inputs.md) | 82 | `result-track:f676a42e964d2637f547917117a2cd294d4770bcb27bef9d8e2343c6908cf0c1` |
+| 7 | `theorem` | [prime_in_square_of_rounded_scaled_inputs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentScaledEvaluation.lean/declarations/prime-in-square-of-rounded-scaled-inputs.md) | 92 | `result-track:396c1efcbaa05e9453380654af7e6a5e25a451f05dc806bd35fdbf87e9fb2bf9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

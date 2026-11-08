@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCrossEnergyIdentities.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCrossEnergyIdentities.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCrossEnergyIdentities.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCrossEnergyIdentities.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [signed_square_completion](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCrossEnergyIdentities.lean/declarations/signed-square-completion.md) | 29 | `result-track:9839adc0b7ffb652af6c947d7b663b03c0cff649d7594c5661d2f71aaebc74c4` |
-| 2 | `theorem` | [negative_cross_le_half_energy](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCrossEnergyIdentities.lean/declarations/negative-cross-le-half-energy.md) | 35 | `result-track:4a5b5581ec53a357dcb17a513425adf21c677bdcddb9325e856e81ce29c5aa73` |
+| 1 | `theorem` | [signed_square_completion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCrossEnergyIdentities.lean/declarations/signed-square-completion.md) | 29 | `result-track:9839adc0b7ffb652af6c947d7b663b03c0cff649d7594c5661d2f71aaebc74c4` |
+| 2 | `theorem` | [negative_cross_le_half_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCrossEnergyIdentities.lean/declarations/negative-cross-le-half-energy.md) | 35 | `result-track:4a5b5581ec53a357dcb17a513425adf21c677bdcddb9325e856e81ce29c5aa73` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

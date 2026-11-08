@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ComplexMeanValueNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ComplexMeanValueNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexMeanValueNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexMeanValueNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [circleAverage_sub_sub_inv_smul_of_differentiable_on_off_countable](../../../../FunctionsOfAComplexVariable/ComplexMeanValueNamespacedPublic.lean/declarations/circleaverage-sub-sub-inv-smul-of-differentiable-on-off-countable.md) | 49 | `result-track:5d1fc6b5003ad1bb98d22df59d30909a7cd19d52dc5084b452d2fa5cc71b6cf7` |
-| 2 | `theorem` | [DiffContOnCl.circleAverage_smul_div](../../../../FunctionsOfAComplexVariable/ComplexMeanValueNamespacedPublic.lean/declarations/diffcontoncl-circleaverage-smul-div.md) | 77 | `result-track:fe51f40076ec6f03ef8653253788985928136bfa432a198b933f06da84f7de2b` |
-| 3 | `theorem` | [circleAverage_of_differentiable_on_off_countable](../../../../FunctionsOfAComplexVariable/ComplexMeanValueNamespacedPublic.lean/declarations/circleaverage-of-differentiable-on-off-countable.md) | 101 | `result-track:6273ce68f04e53622f96258cd5759cb3f0247259fd37eae5b46a9e6709a9a4f1` |
-| 4 | `theorem` | [DiffContOnCl.circleAverage](../../../../FunctionsOfAComplexVariable/ComplexMeanValueNamespacedPublic.lean/declarations/diffcontoncl-circleaverage.md) | 116 | `result-track:38b0e3b2a90d83d876899b7db90b47925e930f1400722f6b93209c5fa8ffb724` |
+| 1 | `theorem` | [circleAverage_sub_sub_inv_smul_of_differentiable_on_off_countable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexMeanValueNamespacedPublic.lean/declarations/circleaverage-sub-sub-inv-smul-of-differentiable-on-off-countable.md) | 49 | `result-track:5d1fc6b5003ad1bb98d22df59d30909a7cd19d52dc5084b452d2fa5cc71b6cf7` |
+| 2 | `theorem` | [DiffContOnCl.circleAverage_smul_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexMeanValueNamespacedPublic.lean/declarations/diffcontoncl-circleaverage-smul-div.md) | 77 | `result-track:fe51f40076ec6f03ef8653253788985928136bfa432a198b933f06da84f7de2b` |
+| 3 | `theorem` | [circleAverage_of_differentiable_on_off_countable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexMeanValueNamespacedPublic.lean/declarations/circleaverage-of-differentiable-on-off-countable.md) | 101 | `result-track:6273ce68f04e53622f96258cd5759cb3f0247259fd37eae5b46a9e6709a9a4f1` |
+| 4 | `theorem` | [DiffContOnCl.circleAverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexMeanValueNamespacedPublic.lean/declarations/diffcontoncl-circleaverage.md) | 116 | `result-track:38b0e3b2a90d83d876899b7db90b47925e930f1400722f6b93209c5fa8ffb724` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

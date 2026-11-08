@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SleepHeartbeatsNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SleepHeartbeatsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SleepHeartbeatsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SleepHeartbeatsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sleepAtLeastHeartbeats](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SleepHeartbeatsNamespaced.lean/declarations/sleepatleastheartbeats.md) | 32 | `declaration-track:ba20e72daaf2a99547a9a2db789296f256ce0629ccd81d2dc0cd83c0015385fb` |
-| 2 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SleepHeartbeatsNamespaced.lean/declarations/elab.md) | 38 | `declaration-track:26a5427da928787ef8bd6bb048dd9bcf8182529f3d8c1241f18539c08674bc01` |
-| 3 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SleepHeartbeatsNamespaced.lean/declarations/example.md) | 45 | `declaration-track:c49dea9cdb5c145eae52fe0b7b66824ea583cd0dd08ab940aa8a89226a90002a` |
+| 1 | `def` | [sleepAtLeastHeartbeats](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SleepHeartbeatsNamespaced.lean/declarations/sleepatleastheartbeats.md) | 32 | `declaration-track:ba20e72daaf2a99547a9a2db789296f256ce0629ccd81d2dc0cd83c0015385fb` |
+| 2 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SleepHeartbeatsNamespaced.lean/declarations/elab.md) | 38 | `declaration-track:26a5427da928787ef8bd6bb048dd9bcf8182529f3d8c1241f18539c08674bc01` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SleepHeartbeatsNamespaced.lean/declarations/example.md) | 45 | `declaration-track:c49dea9cdb5c145eae52fe0b7b66824ea583cd0dd08ab940aa8a89226a90002a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

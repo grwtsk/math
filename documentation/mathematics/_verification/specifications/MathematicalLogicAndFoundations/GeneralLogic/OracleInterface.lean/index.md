@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OracleInterface.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OracleInterface.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OracleInterface.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OracleInterface.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OracleInterface](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OracleInterface.lean/declarations/oracleinterface.md) | 11 | `declaration-track:d7ddc2bd80d3f2698abf1d28242154493a499c5b7c0855ba26c3b42af4edf2e8` |
-| 2 | `def` | [OracleInterface.differsAt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OracleInterface.lean/declarations/oracleinterface-differsat.md) | 15 | `declaration-track:2d170315af3b6f31522ecb920103dc1103a3b10e2240852b94281dec2a3fd55c` |
-| 3 | `structure` | [OracleInterfaceCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OracleInterface.lean/declarations/oracleinterfacecertificate.md) | 23 | `declaration-track:a401fa845f14b41ed2d87222e9a203d9548621d4fd8a85607fa80c27555bc1b0` |
+| 1 | `structure` | [OracleInterface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OracleInterface.lean/declarations/oracleinterface.md) | 11 | `declaration-track:d7ddc2bd80d3f2698abf1d28242154493a499c5b7c0855ba26c3b42af4edf2e8` |
+| 2 | `def` | [OracleInterface.differsAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OracleInterface.lean/declarations/oracleinterface-differsat.md) | 15 | `declaration-track:2d170315af3b6f31522ecb920103dc1103a3b10e2240852b94281dec2a3fd55c` |
+| 3 | `structure` | [OracleInterfaceCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OracleInterface.lean/declarations/oracleinterfacecertificate.md) | 23 | `declaration-track:a401fa845f14b41ed2d87222e9a203d9548621d4fd8a85607fa80c27555bc1b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

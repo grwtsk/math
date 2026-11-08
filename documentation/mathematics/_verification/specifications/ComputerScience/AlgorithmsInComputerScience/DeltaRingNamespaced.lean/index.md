@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RingOps](../../../../../ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/declarations/ringops.md) | 29 | `declaration-track:4c8da3a4333139961c8102ee8fc79da0d7479caf7cde9a5a9d31d32e40ec78a2` |
-| 2 | `def` | [natMul](../../../../../ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/declarations/natmul.md) | 40 | `declaration-track:77f3b26471cfe9b8d4a807e233744f1ca9f9335591feb1f361871b198a19ef8d` |
-| 3 | `def` | [pow](../../../../../ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/declarations/pow.md) | 44 | `declaration-track:308ed59f0ff02fee2f27e46c895186baabfec5d2e16ba6b37cdc1cf755661cbc` |
-| 4 | `structure` | [DeltaRing](../../../../../ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/declarations/deltaring.md) | 51 | `declaration-track:b247a55fde61f2a7cd888fd3717c15eb62d3df91338217860e20af43d6bc706e` |
-| 5 | `theorem` | [frobenius_lift_formula](../../../../../ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/declarations/frobenius-lift-formula.md) | 80 | `result-track:baece48da69ad17a2ba7734394489057b809d4c55384ecca34f3726060c29db4` |
-| 6 | `theorem` | [delta_structure_gives_frobenius_lift](../../../../../ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/declarations/delta-structure-gives-frobenius-lift.md) | 87 | `result-track:1677fca9706b2b472103c5fce46772a125274c6848f633764bf0f2b363aa032c` |
-| 7 | `structure` | [DeltaRingHom](../../../../../ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/declarations/deltaringhom.md) | 95 | `declaration-track:61ca0dbf956e29371c7fc27de354479771751fcf398f203340959ca985082385` |
-| 8 | `def` | [unitDeltaRing](../../../../../ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/declarations/unitdeltaring.md) | 112 | `declaration-track:c3fc0430a997491d823f0b36446986076ca5efb435fba4bd7f44d312a18e07c3` |
+| 1 | `structure` | [RingOps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/declarations/ringops.md) | 29 | `declaration-track:4c8da3a4333139961c8102ee8fc79da0d7479caf7cde9a5a9d31d32e40ec78a2` |
+| 2 | `def` | [natMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/declarations/natmul.md) | 40 | `declaration-track:77f3b26471cfe9b8d4a807e233744f1ca9f9335591feb1f361871b198a19ef8d` |
+| 3 | `def` | [pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/declarations/pow.md) | 44 | `declaration-track:308ed59f0ff02fee2f27e46c895186baabfec5d2e16ba6b37cdc1cf755661cbc` |
+| 4 | `structure` | [DeltaRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/declarations/deltaring.md) | 51 | `declaration-track:b247a55fde61f2a7cd888fd3717c15eb62d3df91338217860e20af43d6bc706e` |
+| 5 | `theorem` | [frobenius_lift_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/declarations/frobenius-lift-formula.md) | 80 | `result-track:baece48da69ad17a2ba7734394489057b809d4c55384ecca34f3726060c29db4` |
+| 6 | `theorem` | [delta_structure_gives_frobenius_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/declarations/delta-structure-gives-frobenius-lift.md) | 87 | `result-track:1677fca9706b2b472103c5fce46772a125274c6848f633764bf0f2b363aa032c` |
+| 7 | `structure` | [DeltaRingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/declarations/deltaringhom.md) | 95 | `declaration-track:61ca0dbf956e29371c7fc27de354479771751fcf398f203340959ca985082385` |
+| 8 | `def` | [unitDeltaRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeltaRingNamespaced.lean/declarations/unitdeltaring.md) | 112 | `declaration-track:c3fc0430a997491d823f0b36446986076ca5efb435fba4bd7f44d312a18e07c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

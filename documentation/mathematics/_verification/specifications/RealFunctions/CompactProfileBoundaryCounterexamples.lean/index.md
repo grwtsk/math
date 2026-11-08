@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CompactProfileBoundaryCounterexamples.lean/index.md) · [Full source](../../../../RealFunctions/CompactProfileBoundaryCounterexamples.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactProfileBoundaryCounterexamples.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactProfileBoundaryCounterexamples.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Convolution.CompactProfileHigherDerivatives`](../../../../MeasureAndIntegration/CompactProfileHigherDerivatives.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Convolution.CompactProfileHigherDerivatives`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileHigherDerivatives.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [indicator_not_differentiable_at_right](../../../../RealFunctions/CompactProfileBoundaryCounterexamples.lean/declarations/indicator-not-differentiable-at-right.md) | 29 | `result-track:179494c7833fe8abcb1e5ed2d249a23c81ab73a6c7487a73a3e0582bca79c73f` |
-| 2 | `theorem` | [normalized_second_interior_right_eq](../../../../RealFunctions/CompactProfileBoundaryCounterexamples.lean/declarations/normalized-second-interior-right-eq.md) | 64 | `result-track:11b6c0b37d8952499c898058d5935de88f2d3f809d8685205eb7a9c866829550` |
-| 3 | `theorem` | [normalized_second_interior_right_pos](../../../../RealFunctions/CompactProfileBoundaryCounterexamples.lean/declarations/normalized-second-interior-right-pos.md) | 71 | `result-track:ddb0e85da6131dd29d1def5f92d1cfd1a005891092065963ec4abfcb30a5e7d0` |
-| 4 | `theorem` | [native_first_not_differentiable_at_right](../../../../RealFunctions/CompactProfileBoundaryCounterexamples.lean/declarations/native-first-not-differentiable-at-right.md) | 82 | `result-track:64a17ed0b7ffe143dc9584cb9a411e0de6353791c8b37a767bddd0aeb91b0595` |
-| 5 | `theorem` | [normalized_source_first_not_differentiable_at_right](../../../../RealFunctions/CompactProfileBoundaryCounterexamples.lean/declarations/normalized-source-first-not-differentiable-at-right.md) | 94 | `result-track:32822212fcdebac89b3b31e30d9b9f7aeb72acaa41ce0b9c4058165ba2d9873b` |
-| 6 | `theorem` | [normalized_source_not_contDiff_two](../../../../RealFunctions/CompactProfileBoundaryCounterexamples.lean/declarations/normalized-source-not-contdiff-two.md) | 100 | `result-track:b7b0f0914c09f0c493f2bbb9903c651496936a28bbbf0db2b236b3ca34365264` |
+| 1 | `theorem` | [indicator_not_differentiable_at_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactProfileBoundaryCounterexamples.lean/declarations/indicator-not-differentiable-at-right.md) | 29 | `result-track:179494c7833fe8abcb1e5ed2d249a23c81ab73a6c7487a73a3e0582bca79c73f` |
+| 2 | `theorem` | [normalized_second_interior_right_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactProfileBoundaryCounterexamples.lean/declarations/normalized-second-interior-right-eq.md) | 64 | `result-track:11b6c0b37d8952499c898058d5935de88f2d3f809d8685205eb7a9c866829550` |
+| 3 | `theorem` | [normalized_second_interior_right_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactProfileBoundaryCounterexamples.lean/declarations/normalized-second-interior-right-pos.md) | 71 | `result-track:ddb0e85da6131dd29d1def5f92d1cfd1a005891092065963ec4abfcb30a5e7d0` |
+| 4 | `theorem` | [native_first_not_differentiable_at_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactProfileBoundaryCounterexamples.lean/declarations/native-first-not-differentiable-at-right.md) | 82 | `result-track:64a17ed0b7ffe143dc9584cb9a411e0de6353791c8b37a767bddd0aeb91b0595` |
+| 5 | `theorem` | [normalized_source_first_not_differentiable_at_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactProfileBoundaryCounterexamples.lean/declarations/normalized-source-first-not-differentiable-at-right.md) | 94 | `result-track:32822212fcdebac89b3b31e30d9b9f7aeb72acaa41ce0b9c4058165ba2d9873b` |
+| 6 | `theorem` | [normalized_source_not_contDiff_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactProfileBoundaryCounterexamples.lean/declarations/normalized-source-not-contdiff-two.md) | 100 | `result-track:b7b0f0914c09f0c493f2bbb9903c651496936a28bbbf0db2b236b3ca34365264` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

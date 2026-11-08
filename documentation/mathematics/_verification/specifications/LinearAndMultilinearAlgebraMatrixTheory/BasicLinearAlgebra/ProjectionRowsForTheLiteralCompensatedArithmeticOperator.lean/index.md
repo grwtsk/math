@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProjectionRowsForTheLiteralCompensatedArithmeticOperator.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProjectionRowsForTheLiteralCompensatedArithmeticOperator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProjectionRowsForTheLiteralCompensatedArithmeticOperator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProjectionRowsForTheLiteralCompensatedArithmeticOperator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [compensatedInteraction_inner_symmetric](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProjectionRowsForTheLiteralCompensatedArithmeticOperator.lean/declarations/compensatedinteraction-inner-symmetric.md) | 29 | `result-track:cf3c672255fd07ff9adae0df2d9964a6ae246c9d8dd40b09624211fa51ee6856` |
-| 2 | `theorem` | [compensatedInteraction_selfAdjoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProjectionRowsForTheLiteralCompensatedArithmeticOperator.lean/declarations/compensatedinteraction-selfadjoint.md) | 35 | `result-track:edc9b460cc29cdb112cb0d6331a00f239552eb44ca9a485686c6c73e4e5faebf` |
-| 3 | `theorem` | [compensated_abs_le_of_projection_rows](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProjectionRowsForTheLiteralCompensatedArithmeticOperator.lean/declarations/compensated-abs-le-of-projection-rows.md) | 43 | `result-track:782f3b1ae0378e65260594d90fd3275d1ccb08fb1d227a3232dff95aeb5319d9` |
-| 4 | `theorem` | [estimate_of_uniform_projection_rows](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProjectionRowsForTheLiteralCompensatedArithmeticOperator.lean/declarations/estimate-of-uniform-projection-rows.md) | 55 | `result-track:d9c51439b0965759517761cc4eb65653e0152baa75cdecd265dbaacfd76b0834` |
+| 1 | `theorem` | [compensatedInteraction_inner_symmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProjectionRowsForTheLiteralCompensatedArithmeticOperator.lean/declarations/compensatedinteraction-inner-symmetric.md) | 29 | `result-track:cf3c672255fd07ff9adae0df2d9964a6ae246c9d8dd40b09624211fa51ee6856` |
+| 2 | `theorem` | [compensatedInteraction_selfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProjectionRowsForTheLiteralCompensatedArithmeticOperator.lean/declarations/compensatedinteraction-selfadjoint.md) | 35 | `result-track:edc9b460cc29cdb112cb0d6331a00f239552eb44ca9a485686c6c73e4e5faebf` |
+| 3 | `theorem` | [compensated_abs_le_of_projection_rows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProjectionRowsForTheLiteralCompensatedArithmeticOperator.lean/declarations/compensated-abs-le-of-projection-rows.md) | 43 | `result-track:782f3b1ae0378e65260594d90fd3275d1ccb08fb1d227a3232dff95aeb5319d9` |
+| 4 | `theorem` | [estimate_of_uniform_projection_rows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProjectionRowsForTheLiteralCompensatedArithmeticOperator.lean/declarations/estimate-of-uniform-projection-rows.md) | 55 | `result-track:d9c51439b0965759517761cc4eb65653e0152baa75cdecd265dbaacfd76b0834` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

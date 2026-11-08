@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/MorphismsOpenImmersion.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/MorphismsOpenImmersion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/MorphismsOpenImmersion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/MorphismsOpenImmersion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isOpenImmersion_SpecMap_iff_of_surjective](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/MorphismsOpenImmersion.lean/declarations/isopenimmersion-specmap-iff-of-surjective.md) | 30 | `result-track:be70e7453d0fe6f3fadba6b3db6a2eade2ca0ed5aa0ddf7d669482a6ea6aca9c` |
-| 2 | `theorem` | [isOpenImmersion_iff_stalk](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/MorphismsOpenImmersion.lean/declarations/isopenimmersion-iff-stalk.md) | 64 | `result-track:ac34016b9bb0295b23896f6b6b7526ec95c9c507a9164aa640feccd34f7bc434` |
-| 3 | `theorem` | [isOpenImmersion_eq_inf](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/MorphismsOpenImmersion.lean/declarations/isopenimmersion-eq-inf.md) | 70 | `result-track:1833772522c5c74a98779d033bbf21f78fe37e80f1828cd8962193f1e751e9d4` |
-| 4 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/MorphismsOpenImmersion.lean/declarations/instance.md) | 77 | `declaration-track:dc4f460cdb8180cc6fa125dbd848f4c6fe2c47d68fb8ae5b852569ba9631d802` |
-| 5 | `instance` | [isOpenImmersion_isLocalAtTarget](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/MorphismsOpenImmersion.lean/declarations/isopenimmersion-islocalattarget.md) | 84 | `declaration-track:7140f138e4c8f93d6347ca72495f179f78f1f4efb06c182aa21e46859ac48412` |
+| 1 | `lemma` | [isOpenImmersion_SpecMap_iff_of_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/MorphismsOpenImmersion.lean/declarations/isopenimmersion-specmap-iff-of-surjective.md) | 30 | `result-track:be70e7453d0fe6f3fadba6b3db6a2eade2ca0ed5aa0ddf7d669482a6ea6aca9c` |
+| 2 | `theorem` | [isOpenImmersion_iff_stalk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/MorphismsOpenImmersion.lean/declarations/isopenimmersion-iff-stalk.md) | 64 | `result-track:ac34016b9bb0295b23896f6b6b7526ec95c9c507a9164aa640feccd34f7bc434` |
+| 3 | `theorem` | [isOpenImmersion_eq_inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/MorphismsOpenImmersion.lean/declarations/isopenimmersion-eq-inf.md) | 70 | `result-track:1833772522c5c74a98779d033bbf21f78fe37e80f1828cd8962193f1e751e9d4` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/MorphismsOpenImmersion.lean/declarations/instance.md) | 77 | `declaration-track:dc4f460cdb8180cc6fa125dbd848f4c6fe2c47d68fb8ae5b852569ba9631d802` |
+| 5 | `instance` | [isOpenImmersion_isLocalAtTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/MorphismsOpenImmersion.lean/declarations/isopenimmersion-islocalattarget.md) | 84 | `declaration-track:7140f138e4c8f93d6347ca72495f179f78f1f4efb06c182aa21e46859ac48412` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

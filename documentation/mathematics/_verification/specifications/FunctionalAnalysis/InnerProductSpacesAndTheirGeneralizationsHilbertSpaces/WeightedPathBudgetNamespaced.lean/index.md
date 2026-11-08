@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudgetNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudgetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudgetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudgetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [weightedCompensationBudget](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudgetNamespaced.lean/declarations/weightedcompensationbudget.md) | 25 | `declaration-track:85a3c6dd62fabe961731ab87fe8e9e35b679ace2b2b446824cb2d2e60a235a08` |
-| 2 | `theorem` | [weightedCompensationBudget_nonnegative](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudgetNamespaced.lean/declarations/weightedcompensationbudget-nonnegative.md) | 46 | `result-track:732b4e15ae30c0705431c2f674647b11852c8b84e1aef6f8dcf60574262a592a` |
-| 3 | `theorem` | [pathCompensationBudget_le_weighted](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudgetNamespaced.lean/declarations/pathcompensationbudget-le-weighted.md) | 71 | `result-track:a759242565bf64cdd3428caba75177b968b847bdee50d8477a24f10db00d5138` |
-| 4 | `theorem` | [pathEnergy_weighted_compensation_bound](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudgetNamespaced.lean/declarations/pathenergy-weighted-compensation-bound.md) | 148 | `result-track:c7f6088062fd9c8666e14cf3c389e0dca37ee3f24b716d9ba12e9db4a5ff390c` |
+| 1 | `def` | [weightedCompensationBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudgetNamespaced.lean/declarations/weightedcompensationbudget.md) | 25 | `declaration-track:85a3c6dd62fabe961731ab87fe8e9e35b679ace2b2b446824cb2d2e60a235a08` |
+| 2 | `theorem` | [weightedCompensationBudget_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudgetNamespaced.lean/declarations/weightedcompensationbudget-nonnegative.md) | 46 | `result-track:732b4e15ae30c0705431c2f674647b11852c8b84e1aef6f8dcf60574262a592a` |
+| 3 | `theorem` | [pathCompensationBudget_le_weighted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudgetNamespaced.lean/declarations/pathcompensationbudget-le-weighted.md) | 71 | `result-track:a759242565bf64cdd3428caba75177b968b847bdee50d8477a24f10db00d5138` |
+| 4 | `theorem` | [pathEnergy_weighted_compensation_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedPathBudgetNamespaced.lean/declarations/pathenergy-weighted-compensation-bound.md) | 148 | `result-track:c7f6088062fd9c8666e14cf3c389e0dca37ee3f24b716d9ba12e9db4a5ff390c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

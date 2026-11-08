@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instContinuousSMulRealComplex](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/declarations/instcontinuoussmulrealcomplex.md) | 29 | `declaration-track:c02f4388919840ba0e3df3ae17511f9a4e2434c9810ce918b7f881a3f1e47cbc` |
-| 2 | `theorem` | [analyticOrderAt_hardyW_ne_top](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/declarations/analyticorderat-hardyw-ne-top.md) | 37 | `result-track:694f5fab6366727c01e9e1c8e0f1f5f4291462bc4c7b234f9690fd339aa0d8f8` |
-| 3 | `theorem` | [wMult_cast](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/declarations/wmult-cast.md) | 55 | `result-track:277990290feabde92cc50ac22aae007e16d186ba6badf663cd5151e2969875cb` |
-| 4 | `theorem` | [analyticOrderNatAt_hardyW](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/declarations/analyticordernatat-hardyw.md) | 58 | `result-track:7042d48aec9f6938058016534ebd7efa49d529706c9e83f794a319bbde6e5133` |
-| 5 | `theorem` | [one_le_wMult_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/declarations/one-le-wmult-iff.md) | 61 | `result-track:3e097da2a437a2612b5f9f4fec4182156ac7686d0909f536428149739714f98c` |
-| 6 | `theorem` | [finite_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/declarations/finite-upper.md) | 73 | `result-track:e5f89e8cecf1fca9212f71d1e660b2070faa3471c35dc684f4d2f5fd72e21782` |
-| 7 | `theorem` | [finite_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/declarations/finite-lower.md) | 107 | `result-track:786627ca59cae96ef2022abfcb24bc0c9a972fb2a8d104c87ece1aca0e094943` |
-| 8 | `theorem` | [finite_window_W](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/declarations/finite-window-w.md) | 116 | `result-track:3f162bb4a8a8f24526a6c05750c67c2df3e90efc49b1bcde5a0cbde2b58496a8` |
-| 9 | `theorem` | [wSeam_of_strip](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/declarations/wseam-of-strip.md) | 127 | `result-track:1ed8f702d4ad11abeafe6c8587adc930ecaa397e92c444d7983672cf633c9580` |
+| 1 | `instance` | [instContinuousSMulRealComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/declarations/instcontinuoussmulrealcomplex.md) | 29 | `declaration-track:c02f4388919840ba0e3df3ae17511f9a4e2434c9810ce918b7f881a3f1e47cbc` |
+| 2 | `theorem` | [analyticOrderAt_hardyW_ne_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/declarations/analyticorderat-hardyw-ne-top.md) | 37 | `result-track:694f5fab6366727c01e9e1c8e0f1f5f4291462bc4c7b234f9690fd339aa0d8f8` |
+| 3 | `theorem` | [wMult_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/declarations/wmult-cast.md) | 55 | `result-track:277990290feabde92cc50ac22aae007e16d186ba6badf663cd5151e2969875cb` |
+| 4 | `theorem` | [analyticOrderNatAt_hardyW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/declarations/analyticordernatat-hardyw.md) | 58 | `result-track:7042d48aec9f6938058016534ebd7efa49d529706c9e83f794a319bbde6e5133` |
+| 5 | `theorem` | [one_le_wMult_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/declarations/one-le-wmult-iff.md) | 61 | `result-track:3e097da2a437a2612b5f9f4fec4182156ac7686d0909f536428149739714f98c` |
+| 6 | `theorem` | [finite_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/declarations/finite-upper.md) | 73 | `result-track:e5f89e8cecf1fca9212f71d1e660b2070faa3471c35dc684f4d2f5fd72e21782` |
+| 7 | `theorem` | [finite_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/declarations/finite-lower.md) | 107 | `result-track:786627ca59cae96ef2022abfcb24bc0c9a972fb2a8d104c87ece1aca0e094943` |
+| 8 | `theorem` | [finite_window_W](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/declarations/finite-window-w.md) | 116 | `result-track:3f162bb4a8a8f24526a6c05750c67c2df3e90efc49b1bcde5a0cbde2b58496a8` |
+| 9 | `theorem` | [wSeam_of_strip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Seam.lean/declarations/wseam-of-strip.md) | 127 | `result-track:1ed8f702d4ad11abeafe6c8587adc930ecaa397e92c444d7983672cf633c9580` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

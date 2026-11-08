@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuarticMatchingWeight.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuarticMatchingWeight.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticMatchingWeight.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticMatchingWeight.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticMatchingAction`](../../../../GeneralAlgebraicSystems/AlgebraicStructures/QuarticMatchingAction.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticMatchingAction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/QuarticMatchingAction.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [matchingWeight](../../../../CommutativeAlgebra/QuarticMatchingWeight.lean/declarations/matchingweight.md) | 23 | `declaration-track:bbb4c36acab568a23d88c5ec70403359b5770558ef74052f8d7c5952472fe073` |
-| 2 | `theorem` | [matchingWeight_relabel](../../../../CommutativeAlgebra/QuarticMatchingWeight.lean/declarations/matchingweight-relabel.md) | 28 | `result-track:b58ea101c699445debb7cbc3396d8f076a37551e2988f173735ce16e991fafae` |
-| 3 | `theorem` | [matchingWeight_first](../../../../CommutativeAlgebra/QuarticMatchingWeight.lean/declarations/matchingweight-first.md) | 44 | `result-track:7cce9202159baf4b40cd50589e1d5e8038289e56958c370c89ef4287cbf67aa0` |
-| 4 | `theorem` | [matchingWeight_second](../../../../CommutativeAlgebra/QuarticMatchingWeight.lean/declarations/matchingweight-second.md) | 49 | `result-track:b365ac9aa1f1ee9ccd20ac5a3cc20a8dee9048706f485f3211deb0ec49632992` |
-| 5 | `theorem` | [matchingWeight_third](../../../../CommutativeAlgebra/QuarticMatchingWeight.lean/declarations/matchingweight-third.md) | 54 | `result-track:f4e5c9d2bc1079e3b60700d28a422b8a4b80506d5cae7b27423ac293e0969ef2` |
-| 6 | `theorem` | [actual_quartic_matching_weight_relabel](../../../../CommutativeAlgebra/QuarticMatchingWeight.lean/declarations/actual-quartic-matching-weight-relabel.md) | 63 | `result-track:989572529a3f4e460f96a076190e97d7a253b909ef4dd415686823de28ca939d` |
+| 1 | `def` | [matchingWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticMatchingWeight.lean/declarations/matchingweight.md) | 23 | `declaration-track:bbb4c36acab568a23d88c5ec70403359b5770558ef74052f8d7c5952472fe073` |
+| 2 | `theorem` | [matchingWeight_relabel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticMatchingWeight.lean/declarations/matchingweight-relabel.md) | 28 | `result-track:b58ea101c699445debb7cbc3396d8f076a37551e2988f173735ce16e991fafae` |
+| 3 | `theorem` | [matchingWeight_first](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticMatchingWeight.lean/declarations/matchingweight-first.md) | 44 | `result-track:7cce9202159baf4b40cd50589e1d5e8038289e56958c370c89ef4287cbf67aa0` |
+| 4 | `theorem` | [matchingWeight_second](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticMatchingWeight.lean/declarations/matchingweight-second.md) | 49 | `result-track:b365ac9aa1f1ee9ccd20ac5a3cc20a8dee9048706f485f3211deb0ec49632992` |
+| 5 | `theorem` | [matchingWeight_third](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticMatchingWeight.lean/declarations/matchingweight-third.md) | 54 | `result-track:f4e5c9d2bc1079e3b60700d28a422b8a4b80506d5cae7b27423ac293e0969ef2` |
+| 6 | `theorem` | [actual_quartic_matching_weight_relabel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticMatchingWeight.lean/declarations/actual-quartic-matching-weight-relabel.md) | 63 | `result-track:989572529a3f4e460f96a076190e97d7a253b909ef4dd415686823de28ca939d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

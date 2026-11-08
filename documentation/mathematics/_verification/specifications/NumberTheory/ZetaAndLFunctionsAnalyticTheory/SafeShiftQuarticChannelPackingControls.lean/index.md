@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticChannelPackingControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticChannelPackingControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticChannelPackingControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticChannelPackingControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.SafeShiftQuarticChannelPacking`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticChannelPacking.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.SafeShiftQuarticChannelPacking`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticChannelPacking.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [structured_source_is_positive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticChannelPackingControls.lean/declarations/structured-source-is-positive.md) | 14 | `result-track:e86d422484804b3c5af17f93e2e30f0c6c0a65361df881738d85120f05a5b2f7` |
-| 2 | `theorem` | [transverse_channel_dies_at_zero_height](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticChannelPackingControls.lean/declarations/transverse-channel-dies-at-zero-height.md) | 18 | `result-track:10fdac14baa152aaa98d8ca2cd8f9335874d5a18cedac16a5663e23525a4f3c0` |
+| 1 | `theorem` | [structured_source_is_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticChannelPackingControls.lean/declarations/structured-source-is-positive.md) | 14 | `result-track:e86d422484804b3c5af17f93e2e30f0c6c0a65361df881738d85120f05a5b2f7` |
+| 2 | `theorem` | [transverse_channel_dies_at_zero_height](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticChannelPackingControls.lean/declarations/transverse-channel-dies-at-zero-height.md) | 18 | `result-track:10fdac14baa152aaa98d8ca2cd8f9335874d5a18cedac16a5663e23525a4f3c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

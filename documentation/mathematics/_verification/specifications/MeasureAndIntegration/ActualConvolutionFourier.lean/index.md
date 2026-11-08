@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualConvolutionFourier.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualConvolutionFourier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualConvolutionFourier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualConvolutionFourier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [convolutionFunction_eq](../../../../MeasureAndIntegration/ActualConvolutionFourier.lean/declarations/convolutionfunction-eq.md) | 17 | `result-track:0529c51b76bbb3d64cb9234d9627d1abd35cadf54541608a45aceb931480c187` |
-| 2 | `theorem` | [actualFull_integrable](../../../../MeasureAndIntegration/ActualConvolutionFourier.lean/declarations/actualfull-integrable.md) | 25 | `result-track:48bcc4647827d24c92bf578b12006aaccbc33ee155a6118f9a8dec5ae826e21c` |
-| 3 | `theorem` | [fixedKernel_fourier](../../../../MeasureAndIntegration/ActualConvolutionFourier.lean/declarations/fixedkernel-fourier.md) | 36 | `result-track:6e450695724c04f06a8a2f6d939a13c7e8cd889e0e7e02aa56460f2fd057f15f` |
-| 4 | `theorem` | [actualFull_fourier](../../../../MeasureAndIntegration/ActualConvolutionFourier.lean/declarations/actualfull-fourier.md) | 53 | `result-track:3884069e2db5d64a0b31fdc217e71ecc99e7d2e990425e6eec670ed656d9abef` |
-| 5 | `theorem` | [zeroExtension_sourceOperator_integrable](../../../../MeasureAndIntegration/ActualConvolutionFourier.lean/declarations/zeroextension-sourceoperator-integrable.md) | 62 | `result-track:e9c3d5098ecfeebfefc0fc9d917800eda358f05d77d7fca5176758490b287d14` |
-| 6 | `theorem` | [sourceOperator_fourier](../../../../MeasureAndIntegration/ActualConvolutionFourier.lean/declarations/sourceoperator-fourier.md) | 69 | `result-track:ff7e3d354a481fd8b277a72f5272a2bf6235a7eb1ac79a1ef786b24f1dee7ad1` |
+| 1 | `theorem` | [convolutionFunction_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualConvolutionFourier.lean/declarations/convolutionfunction-eq.md) | 17 | `result-track:0529c51b76bbb3d64cb9234d9627d1abd35cadf54541608a45aceb931480c187` |
+| 2 | `theorem` | [actualFull_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualConvolutionFourier.lean/declarations/actualfull-integrable.md) | 25 | `result-track:48bcc4647827d24c92bf578b12006aaccbc33ee155a6118f9a8dec5ae826e21c` |
+| 3 | `theorem` | [fixedKernel_fourier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualConvolutionFourier.lean/declarations/fixedkernel-fourier.md) | 36 | `result-track:6e450695724c04f06a8a2f6d939a13c7e8cd889e0e7e02aa56460f2fd057f15f` |
+| 4 | `theorem` | [actualFull_fourier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualConvolutionFourier.lean/declarations/actualfull-fourier.md) | 53 | `result-track:3884069e2db5d64a0b31fdc217e71ecc99e7d2e990425e6eec670ed656d9abef` |
+| 5 | `theorem` | [zeroExtension_sourceOperator_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualConvolutionFourier.lean/declarations/zeroextension-sourceoperator-integrable.md) | 62 | `result-track:e9c3d5098ecfeebfefc0fc9d917800eda358f05d77d7fca5176758490b287d14` |
+| 6 | `theorem` | [sourceOperator_fourier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualConvolutionFourier.lean/declarations/sourceoperator-fourier.md) | 69 | `result-track:ff7e3d354a481fd8b277a72f5272a2bf6235a7eb1ac79a1ef786b24f1dee7ad1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

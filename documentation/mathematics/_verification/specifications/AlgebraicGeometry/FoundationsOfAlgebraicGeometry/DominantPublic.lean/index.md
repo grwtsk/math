@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [isDominant_restrict_hom](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/declarations/isdominant-restrict-hom.md) | 39 | `declaration-track:82c4f956e8bd7dd81003a0c73d7807f1d4c8cce8c7522b835009d14ec301d4a3` |
-| 2 | `lemma` | [isDominant_hom_of_isDominant_restrict_hom](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/declarations/isdominant-hom-of-isdominant-restrict-hom.md) | 46 | `result-track:d812b770d3ab314fb1b2e8e1d16f13774ecd90c42448ead135e2f0edab6065e4` |
-| 3 | `lemma` | [isDominant_hom_iff_isDominant_restrict_hom](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/declarations/isdominant-hom-iff-isdominant-restrict-hom.md) | 52 | `result-track:c5f220535bb3439fe24780e40d9dc9a2c186c38b2f0e98ffea971b47bc8ac492` |
-| 4 | `lemma` | [isDominant_hom_iff_of_equiv](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/declarations/isdominant-hom-iff-of-equiv.md) | 60 | `result-track:5346d8364236aa63c8a5c1269f84d023b837d5e2de00529381e9571d08e868a7` |
-| 5 | `class` | [RationalMap.IsDominant](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/declarations/rationalmap-isdominant.md) | 73 | `declaration-track:de1c8c4f7e633e5d9396df37e87cfbeeb4ccd53f753f925b8c7f3e4fc2060710` |
-| 6 | `lemma` | [PartialMap.isDominant_toRationalMap_iff](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/declarations/partialmap-isdominant-torationalmap-iff.md) | 78 | `result-track:8a8207e883c188f7b53ab90b862232e0add1c0d93e9aae8567e3542ebcfeb686` |
-| 7 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/declarations/instance-source-edition-2.md) | 82 | `declaration-track:fc8cf74c24c5b96813ea1c2edea25f0a53a0df4ce5da53a6d6d01d8614c0c98c` |
-| 8 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/declarations/instance.md) | 86 | `declaration-track:e7e8e373f24121a9ba0f55e7213d93905967d72bbc8e988186433220edf0e338` |
+| 1 | `instance` | [isDominant_restrict_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/declarations/isdominant-restrict-hom.md) | 39 | `declaration-track:82c4f956e8bd7dd81003a0c73d7807f1d4c8cce8c7522b835009d14ec301d4a3` |
+| 2 | `lemma` | [isDominant_hom_of_isDominant_restrict_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/declarations/isdominant-hom-of-isdominant-restrict-hom.md) | 46 | `result-track:d812b770d3ab314fb1b2e8e1d16f13774ecd90c42448ead135e2f0edab6065e4` |
+| 3 | `lemma` | [isDominant_hom_iff_isDominant_restrict_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/declarations/isdominant-hom-iff-isdominant-restrict-hom.md) | 52 | `result-track:c5f220535bb3439fe24780e40d9dc9a2c186c38b2f0e98ffea971b47bc8ac492` |
+| 4 | `lemma` | [isDominant_hom_iff_of_equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/declarations/isdominant-hom-iff-of-equiv.md) | 60 | `result-track:5346d8364236aa63c8a5c1269f84d023b837d5e2de00529381e9571d08e868a7` |
+| 5 | `class` | [RationalMap.IsDominant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/declarations/rationalmap-isdominant.md) | 73 | `declaration-track:de1c8c4f7e633e5d9396df37e87cfbeeb4ccd53f753f925b8c7f3e4fc2060710` |
+| 6 | `lemma` | [PartialMap.isDominant_toRationalMap_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/declarations/partialmap-isdominant-torationalmap-iff.md) | 78 | `result-track:8a8207e883c188f7b53ab90b862232e0add1c0d93e9aae8567e3542ebcfeb686` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/declarations/instance-source-edition-2.md) | 82 | `declaration-track:fc8cf74c24c5b96813ea1c2edea25f0a53a0df4ce5da53a6d6d01d8614c0c98c` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/DominantPublic.lean/declarations/instance.md) | 86 | `declaration-track:e7e8e373f24121a9ba0f55e7213d93905967d72bbc8e988186433220edf0e338` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

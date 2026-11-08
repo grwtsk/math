@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GraphRealization.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GraphRealization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GraphRealization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GraphRealization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GraphRealization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GraphRealization.lean/declarations/graphrealization.md) | 13 | `declaration-track:4441669f6884e1831cfc195646c28939bfbed1a4af31ed14135199a72e58d037` |
-| 2 | `def` | [RealizesEdge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GraphRealization.lean/declarations/realizesedge.md) | 21 | `declaration-track:0b228e1767cd6c6857575c7ba97bd2dcc16fe76a94bbb92283554a6e4defdae7` |
-| 3 | `structure` | [SieveRealizationCompatible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GraphRealization.lean/declarations/sieverealizationcompatible.md) | 31 | `declaration-track:c1d2e7f7cdd83f1a365af6e4457cb11c39193ad6bcdd07a4605aec6a01df2d66` |
+| 1 | `structure` | [GraphRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GraphRealization.lean/declarations/graphrealization.md) | 13 | `declaration-track:4441669f6884e1831cfc195646c28939bfbed1a4af31ed14135199a72e58d037` |
+| 2 | `def` | [RealizesEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GraphRealization.lean/declarations/realizesedge.md) | 21 | `declaration-track:0b228e1767cd6c6857575c7ba97bd2dcc16fe76a94bbb92283554a6e4defdae7` |
+| 3 | `structure` | [SieveRealizationCompatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GraphRealization.lean/declarations/sieverealizationcompatible.md) | 31 | `declaration-track:c1d2e7f7cdd83f1a365af6e4457cb11c39193ad6bcdd07a4605aec6a01df2d66` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

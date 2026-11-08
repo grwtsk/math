@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompleteCodomainPublic.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompleteCodomainPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompleteCodomainPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompleteCodomainPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [completeSpace_of_completeSpace_continuousLinearMap](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompleteCodomainPublic.lean/declarations/completespace-of-completespace-continuouslinearmap.md) | 35 | `result-track:f44084e7cf1edce3589ae4ac717649b4fe2cc0c08ebd0f057db8bcf5e49e97f2` |
-| 2 | `lemma` | [completeSpace_continuousLinearMap_iff](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompleteCodomainPublic.lean/declarations/completespace-continuouslinearmap-iff.md) | 49 | `result-track:5ed1e98eef1576a56b1dbbe9f4222241e042f60dac0308856f4f6a63b67f4880` |
-| 3 | `lemma` | [completeSpace_of_completeSpace_continuousMultilinearMap](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompleteCodomainPublic.lean/declarations/completespace-of-completespace-continuousmultilinearmap.md) | 60 | `result-track:0a431f5cb31432bdd621470a7595f58a13391c571e6356655a67aaa4d33a4422` |
-| 4 | `lemma` | [completeSpace_continuousMultilinearMap_iff](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompleteCodomainPublic.lean/declarations/completespace-continuousmultilinearmap-iff.md) | 78 | `result-track:e6d5689a48151b4b39c868b1e5f28c7bb91d5b1ac7b94e84b6db998094eff425` |
+| 1 | `lemma` | [completeSpace_of_completeSpace_continuousLinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompleteCodomainPublic.lean/declarations/completespace-of-completespace-continuouslinearmap.md) | 35 | `result-track:f44084e7cf1edce3589ae4ac717649b4fe2cc0c08ebd0f057db8bcf5e49e97f2` |
+| 2 | `lemma` | [completeSpace_continuousLinearMap_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompleteCodomainPublic.lean/declarations/completespace-continuouslinearmap-iff.md) | 49 | `result-track:5ed1e98eef1576a56b1dbbe9f4222241e042f60dac0308856f4f6a63b67f4880` |
+| 3 | `lemma` | [completeSpace_of_completeSpace_continuousMultilinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompleteCodomainPublic.lean/declarations/completespace-of-completespace-continuousmultilinearmap.md) | 60 | `result-track:0a431f5cb31432bdd621470a7595f58a13391c571e6356655a67aaa4d33a4422` |
+| 4 | `lemma` | [completeSpace_continuousMultilinearMap_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompleteCodomainPublic.lean/declarations/completespace-continuousmultilinearmap-iff.md) | 78 | `result-track:e6d5689a48151b4b39c868b1e5f28c7bb91d5b1ac7b94e84b6db998094eff425` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

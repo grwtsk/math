@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ProjIccNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/ProjIccNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProjIccNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProjIccNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Filter.Tendsto.IccExtend](../../../../GeneralTopology/ProjIccNamespacedPublic.lean/declarations/filter-tendsto-iccextend.md) | 33 | `result-track:667ed1fb7856c5b540210a2261559ed9ac62dee3e4af21a8f8a740b3ce07e96e` |
-| 2 | `theorem` | [continuous_projIcc](../../../../GeneralTopology/ProjIccNamespacedPublic.lean/declarations/continuous-projicc.md) | 41 | `result-track:b2ec2f760a1ab00f9d0dcc61975c8d19ad5c2b29a495a096b2400cdd747f502c` |
-| 3 | `theorem` | [isQuotientMap_projIcc](../../../../GeneralTopology/ProjIccNamespacedPublic.lean/declarations/isquotientmap-projicc.md) | 43 | `result-track:cd98ef6ea166800bca80bb6245d0fc82f44abf7d178c02c1de2f226e527286df` |
-| 4 | `theorem` | [continuous_IccExtend_iff](../../../../GeneralTopology/ProjIccNamespacedPublic.lean/declarations/continuous-iccextend-iff.md) | 49 | `result-track:1430921ebf3bf081f9d4b5013ed6519ab294b4ad6cf56bde75be90151176b509` |
-| 5 | `theorem` | [Continuous.IccExtend](../../../../GeneralTopology/ProjIccNamespacedPublic.lean/declarations/continuous-iccextend.md) | 54 | `result-track:ccc24818ecf3b87126a767225221e286a154af6f6680855841ebf45c57316227` |
-| 6 | `theorem` | [Continuous.Icc_extend'](../../../../GeneralTopology/ProjIccNamespacedPublic.lean/declarations/continuous-icc-extend.md) | 61 | `result-track:90a4ce2f274477da1e031ca2a260fd9381b564bb310c155f89514dc8e59664be` |
-| 7 | `theorem` | [ContinuousAt.IccExtend](../../../../GeneralTopology/ProjIccNamespacedPublic.lean/declarations/continuousat-iccextend.md) | 66 | `result-track:52f701449475c4a9704a5434a8f2abd608238d48a127968a52c16ae4746342cd` |
+| 1 | `theorem` | [Filter.Tendsto.IccExtend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProjIccNamespacedPublic.lean/declarations/filter-tendsto-iccextend.md) | 33 | `result-track:667ed1fb7856c5b540210a2261559ed9ac62dee3e4af21a8f8a740b3ce07e96e` |
+| 2 | `theorem` | [continuous_projIcc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProjIccNamespacedPublic.lean/declarations/continuous-projicc.md) | 41 | `result-track:b2ec2f760a1ab00f9d0dcc61975c8d19ad5c2b29a495a096b2400cdd747f502c` |
+| 3 | `theorem` | [isQuotientMap_projIcc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProjIccNamespacedPublic.lean/declarations/isquotientmap-projicc.md) | 43 | `result-track:cd98ef6ea166800bca80bb6245d0fc82f44abf7d178c02c1de2f226e527286df` |
+| 4 | `theorem` | [continuous_IccExtend_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProjIccNamespacedPublic.lean/declarations/continuous-iccextend-iff.md) | 49 | `result-track:1430921ebf3bf081f9d4b5013ed6519ab294b4ad6cf56bde75be90151176b509` |
+| 5 | `theorem` | [Continuous.IccExtend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProjIccNamespacedPublic.lean/declarations/continuous-iccextend.md) | 54 | `result-track:ccc24818ecf3b87126a767225221e286a154af6f6680855841ebf45c57316227` |
+| 6 | `theorem` | [Continuous.Icc_extend'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProjIccNamespacedPublic.lean/declarations/continuous-icc-extend.md) | 61 | `result-track:90a4ce2f274477da1e031ca2a260fd9381b564bb310c155f89514dc8e59664be` |
+| 7 | `theorem` | [ContinuousAt.IccExtend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProjIccNamespacedPublic.lean/declarations/continuousat-iccextend.md) | 66 | `result-track:52f701449475c4a9704a5434a8f2abd608238d48a127968a52c16ae4746342cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

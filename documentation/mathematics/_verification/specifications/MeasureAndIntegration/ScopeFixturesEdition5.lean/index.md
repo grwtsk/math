@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ScopeFixturesEdition5.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ScopeFixturesEdition5.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesEdition5.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesEdition5.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [boundary_mass_correction_required](../../../../MeasureAndIntegration/ScopeFixturesEdition5.lean/declarations/boundary-mass-correction-required.md) | 17 | `result-track:75b42f222a835e5aebb4c7d7d072668e4af63a6a55b4ad8e2704d6e5690ebe7d` |
-| 2 | `theorem` | [actual_preprime_mass_not_balanced](../../../../MeasureAndIntegration/ScopeFixturesEdition5.lean/declarations/actual-preprime-mass-not-balanced.md) | 27 | `result-track:ed9d9a408dbef0d1f8bd858a1c245f47d5448506382490f012d5446c9892ba5f` |
-| 3 | `theorem` | [actual_opposite_signed_source_integrals](../../../../MeasureAndIntegration/ScopeFixturesEdition5.lean/declarations/actual-opposite-signed-source-integrals.md) | 40 | `result-track:8b8f61549f0665b83306287711b182b49087f90177d6a2b6ca0d44a5e4eded88` |
-| 4 | `theorem` | [actual_bounded_density_increases_signed_integral](../../../../MeasureAndIntegration/ScopeFixturesEdition5.lean/declarations/actual-bounded-density-increases-signed-integral.md) | 54 | `result-track:819f84033382c46ad9cdb084e5f0e29bc48c5e4cdba289bce0d47622f32f2529` |
-| 5 | `theorem` | [actual_negative_axis_density](../../../../MeasureAndIntegration/ScopeFixturesEdition5.lean/declarations/actual-negative-axis-density.md) | 65 | `result-track:7603f3e3b89ceb6fc7766612cd9c8428929ee763a38a3b3d734351c31c6d1e4d` |
+| 1 | `theorem` | [boundary_mass_correction_required](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesEdition5.lean/declarations/boundary-mass-correction-required.md) | 17 | `result-track:75b42f222a835e5aebb4c7d7d072668e4af63a6a55b4ad8e2704d6e5690ebe7d` |
+| 2 | `theorem` | [actual_preprime_mass_not_balanced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesEdition5.lean/declarations/actual-preprime-mass-not-balanced.md) | 27 | `result-track:ed9d9a408dbef0d1f8bd858a1c245f47d5448506382490f012d5446c9892ba5f` |
+| 3 | `theorem` | [actual_opposite_signed_source_integrals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesEdition5.lean/declarations/actual-opposite-signed-source-integrals.md) | 40 | `result-track:8b8f61549f0665b83306287711b182b49087f90177d6a2b6ca0d44a5e4eded88` |
+| 4 | `theorem` | [actual_bounded_density_increases_signed_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesEdition5.lean/declarations/actual-bounded-density-increases-signed-integral.md) | 54 | `result-track:819f84033382c46ad9cdb084e5f0e29bc48c5e4cdba289bce0d47622f32f2529` |
+| 5 | `theorem` | [actual_negative_axis_density](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesEdition5.lean/declarations/actual-negative-axis-density.md) | 65 | `result-track:7603f3e3b89ceb6fc7766612cd9c8428929ee763a38a3b3d734351c31c6d1e4d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

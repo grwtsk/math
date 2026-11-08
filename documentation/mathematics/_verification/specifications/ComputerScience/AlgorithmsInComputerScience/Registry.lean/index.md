@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Registry.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Registry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Registry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Registry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProjectSnapshotKey](../../../../../ComputerScience/AlgorithmsInComputerScience/Registry.lean/declarations/projectsnapshotkey.md) | 8 | `declaration-track:05b54d6d8025cda36519555573dc107eb0ea5c850e4837b129c76bf2e1310d4b` |
-| 2 | `def` | [ProjectSnapshot.key](../../../../../ComputerScience/AlgorithmsInComputerScience/Registry.lean/declarations/projectsnapshot-key.md) | 13 | `declaration-track:04b0345a5eced9b6308e7bfbf34dcf6c3f987668e6e0dd7e0f9be1e45b3f9339` |
-| 3 | `structure` | [Registry](../../../../../ComputerScience/AlgorithmsInComputerScience/Registry.lean/declarations/registry.md) | 17 | `declaration-track:1d58a61bd663555f9cf0543faa2d809478447f5cb3d7a5b3a9b1fbdf788c1fd4` |
-| 4 | `def` | [find?](../../../../../ComputerScience/AlgorithmsInComputerScience/Registry.lean/declarations/find.md) | 25 | `declaration-track:4fe9d31a1de94867a18a3cd8f9fd02d1e240fff608407184c4a28427ba162f86` |
+| 1 | `structure` | [ProjectSnapshotKey](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Registry.lean/declarations/projectsnapshotkey.md) | 8 | `declaration-track:05b54d6d8025cda36519555573dc107eb0ea5c850e4837b129c76bf2e1310d4b` |
+| 2 | `def` | [ProjectSnapshot.key](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Registry.lean/declarations/projectsnapshot-key.md) | 13 | `declaration-track:04b0345a5eced9b6308e7bfbf34dcf6c3f987668e6e0dd7e0f9be1e45b3f9339` |
+| 3 | `structure` | [Registry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Registry.lean/declarations/registry.md) | 17 | `declaration-track:1d58a61bd663555f9cf0543faa2d809478447f5cb3d7a5b3a9b1fbdf788c1fd4` |
+| 4 | `def` | [find?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Registry.lean/declarations/find.md) | 25 | `declaration-track:4fe9d31a1de94867a18a3cd8f9fd02d1e240fff608407184c4a28427ba162f86` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

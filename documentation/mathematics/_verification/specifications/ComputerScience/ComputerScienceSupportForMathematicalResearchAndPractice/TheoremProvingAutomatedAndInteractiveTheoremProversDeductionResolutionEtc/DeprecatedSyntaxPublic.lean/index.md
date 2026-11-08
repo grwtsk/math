@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SyntaxDeprecationEntry](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxPublic.lean/declarations/syntaxdeprecationentry.md) | 27 | `declaration-track:089cf9f90c2984d3b33ba763472fe541619ac061a62520358f3bb8957dac1d50` |
-| 2 | `builtin_initialize` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxPublic.lean/declarations/builtin-initialize.md) | 35 | `declaration-track:b40022a8b982ef0c94fe98c6fe09f42f55175cf107b0d84264c3e080481b943c` |
-| 3 | `def` | [checkDeprecatedSyntax](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxPublic.lean/declarations/checkdeprecatedsyntax.md) | 48 | `declaration-track:515eda34719a8d5d71bd10c0b574ca3236ed4471613a4414788b0d5d86d48643` |
+| 1 | `structure` | [SyntaxDeprecationEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxPublic.lean/declarations/syntaxdeprecationentry.md) | 27 | `declaration-track:089cf9f90c2984d3b33ba763472fe541619ac061a62520358f3bb8957dac1d50` |
+| 2 | `builtin_initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxPublic.lean/declarations/builtin-initialize.md) | 35 | `declaration-track:b40022a8b982ef0c94fe98c6fe09f42f55175cf107b0d84264c3e080481b943c` |
+| 3 | `def` | [checkDeprecatedSyntax](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxPublic.lean/declarations/checkdeprecatedsyntax.md) | 48 | `declaration-track:515eda34719a8d5d71bd10c0b574ca3236ed4471613a4414788b0d5d86d48643` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

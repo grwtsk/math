@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerMassOneReduction`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMassOneReduction.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerMassOneReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMassOneReduction.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Algebra.Field.GeomSum` — import line 4; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.SpecialFunctions.Complex.Log` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [periodFourXModeRatio](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/declarations/periodfourxmoderatio.md) | 14 | `declaration-track:68affdcde7d192095ef4e1499558ae3b92d24695350a59d4cc30a4d962cddd69` |
-| 2 | `theorem` | [periodFourXModeRatio_pow_period](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/declarations/periodfourxmoderatio-pow-period.md) | 20 | `result-track:4fc25948ae937ca8835fd322ce313efa92eb37292377c58732aae952edaec6a6` |
-| 3 | `theorem` | [periodFourXModeRatio_ne_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/declarations/periodfourxmoderatio-ne-one.md) | 37 | `result-track:446028652f2c3de0c2085d3035e56faf99b0f1b761b0a668d08ca13fa77e3c40` |
-| 4 | `theorem` | [fourier_periodFourX_lattice_eq_pow](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/declarations/fourier-periodfourx-lattice-eq-pow.md) | 62 | `result-track:50609ff7ed7808742b90703e68e4a7b79b5b6ffc6d633cb8a143da16364b4b81` |
-| 5 | `theorem` | [intervalFrequency_nonzero_mod_octavePeriod](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/declarations/intervalfrequency-nonzero-mod-octaveperiod.md) | 83 | `result-track:419f0403efd0f09c492ad803a1db8d738bf0d63dbe83180c76d70de0831fb8e9` |
-| 6 | `theorem` | [periodFourXFourierModeOrthogonality](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/declarations/periodfourxfouriermodeorthogonality.md) | 106 | `result-track:436bce8a585eaeebd2f141cbbf30c60d7015156e8936a15389ca7da9a8b000a1` |
-| 7 | `theorem` | [periodFourXSampledKernelMassOne](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/declarations/periodfourxsampledkernelmassone.md) | 120 | `result-track:3ffbc38006bfdbecc2a53bc47f4134730320ae2838423428a1f9b799b6869e27` |
-| 8 | `def` | [nonAliasingFejerDiscreteReproductionData](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/declarations/nonaliasingfejerdiscretereproductiondata.md) | 125 | `declaration-track:a2f073022a0c8f6929b33223a6ff41da5e37b11575f1888f67e84b25207e50c3` |
+| 1 | `def` | [periodFourXModeRatio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/declarations/periodfourxmoderatio.md) | 14 | `declaration-track:68affdcde7d192095ef4e1499558ae3b92d24695350a59d4cc30a4d962cddd69` |
+| 2 | `theorem` | [periodFourXModeRatio_pow_period](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/declarations/periodfourxmoderatio-pow-period.md) | 20 | `result-track:4fc25948ae937ca8835fd322ce313efa92eb37292377c58732aae952edaec6a6` |
+| 3 | `theorem` | [periodFourXModeRatio_ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/declarations/periodfourxmoderatio-ne-one.md) | 37 | `result-track:446028652f2c3de0c2085d3035e56faf99b0f1b761b0a668d08ca13fa77e3c40` |
+| 4 | `theorem` | [fourier_periodFourX_lattice_eq_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/declarations/fourier-periodfourx-lattice-eq-pow.md) | 62 | `result-track:50609ff7ed7808742b90703e68e4a7b79b5b6ffc6d633cb8a143da16364b4b81` |
+| 5 | `theorem` | [intervalFrequency_nonzero_mod_octavePeriod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/declarations/intervalfrequency-nonzero-mod-octaveperiod.md) | 83 | `result-track:419f0403efd0f09c492ad803a1db8d738bf0d63dbe83180c76d70de0831fb8e9` |
+| 6 | `theorem` | [periodFourXFourierModeOrthogonality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/declarations/periodfourxfouriermodeorthogonality.md) | 106 | `result-track:436bce8a585eaeebd2f141cbbf30c60d7015156e8936a15389ca7da9a8b000a1` |
+| 7 | `theorem` | [periodFourXSampledKernelMassOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/declarations/periodfourxsampledkernelmassone.md) | 120 | `result-track:3ffbc38006bfdbecc2a53bc47f4134730320ae2838423428a1f9b799b6869e27` |
+| 8 | `def` | [nonAliasingFejerDiscreteReproductionData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteOrthogonality.lean/declarations/nonaliasingfejerdiscretereproductiondata.md) | 125 | `declaration-track:a2f073022a0c8f6929b33223a6ff41da5e37b11575f1888f67e84b25207e50c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

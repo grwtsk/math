@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceJointWorkSupport.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceJointWorkSupport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualJointSupportUpper](../../../../MeasureAndIntegration/SourceJointWorkSupport.lean/declarations/actualjointsupportupper.md) | 25 | `declaration-track:f0a9ff38988203eeaa311bd3c82341ba39ec4f5de6d24350d7cd67f9a5c74483` |
-| 2 | `theorem` | [actual_jointTest_zero_of_support_upper_le](../../../../MeasureAndIntegration/SourceJointWorkSupport.lean/declarations/actual-jointtest-zero-of-support-upper-le.md) | 28 | `result-track:5a05259b075765e447711135a7b5e6dc14d6783f2db72062ad3ecbe63e869ecf` |
-| 3 | `theorem` | [actual_jointTest_deriv_zero_of_support_upper_le](../../../../MeasureAndIntegration/SourceJointWorkSupport.lean/declarations/actual-jointtest-deriv-zero-of-support-upper-le.md) | 51 | `result-track:9750c9e53b1845adb42b9df4a1efe3aaab7cf3642931401a673c975a6119573a` |
-| 4 | `theorem` | [actualJointSupportUpper_le_log_sourceCutoff](../../../../MeasureAndIntegration/SourceJointWorkSupport.lean/declarations/actualjointsupportupper-le-log-sourcecutoff.md) | 63 | `result-track:2d1d3324fcf57814682d0a58dff9b471db125318b29166eacfaf1da6fa88b89b` |
-| 5 | `theorem` | [shiftedWork_intervalIntegrable](../../../../MeasureAndIntegration/SourceJointWorkSupport.lean/declarations/shiftedwork-intervalintegrable.md) | 82 | `result-track:be215062a08a0cfe9586ba80c983a58c29d962d4cb2a95c083deceb439598ee0` |
-| 6 | `theorem` | [centeredErrorWork_eq_support_integral](../../../../MeasureAndIntegration/SourceJointWorkSupport.lean/declarations/centerederrorwork-eq-support-integral.md) | 96 | `result-track:b323f465103cd020560249f9c3b6978ee808e887bccbc904141bc083ef1e6cd1` |
-| 7 | `theorem` | [jointMangoldtErrorWork_eq_support_integral](../../../../MeasureAndIntegration/SourceJointWorkSupport.lean/declarations/jointmangoldterrorwork-eq-support-integral.md) | 120 | `result-track:8674b2416886be84f27ab252c725cef26ad0378ba537c85d3a0b03be791d3355` |
-| 8 | `theorem` | [centeredErrorWork_zero_of_support_le_lower](../../../../MeasureAndIntegration/SourceJointWorkSupport.lean/declarations/centerederrorwork-zero-of-support-le-lower.md) | 128 | `result-track:df243414f84a00009ac9fcd2cf3ea7581a4b23278166d50b242890d1c110680f` |
+| 1 | `def` | [actualJointSupportUpper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupport.lean/declarations/actualjointsupportupper.md) | 25 | `declaration-track:f0a9ff38988203eeaa311bd3c82341ba39ec4f5de6d24350d7cd67f9a5c74483` |
+| 2 | `theorem` | [actual_jointTest_zero_of_support_upper_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupport.lean/declarations/actual-jointtest-zero-of-support-upper-le.md) | 28 | `result-track:5a05259b075765e447711135a7b5e6dc14d6783f2db72062ad3ecbe63e869ecf` |
+| 3 | `theorem` | [actual_jointTest_deriv_zero_of_support_upper_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupport.lean/declarations/actual-jointtest-deriv-zero-of-support-upper-le.md) | 51 | `result-track:9750c9e53b1845adb42b9df4a1efe3aaab7cf3642931401a673c975a6119573a` |
+| 4 | `theorem` | [actualJointSupportUpper_le_log_sourceCutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupport.lean/declarations/actualjointsupportupper-le-log-sourcecutoff.md) | 63 | `result-track:2d1d3324fcf57814682d0a58dff9b471db125318b29166eacfaf1da6fa88b89b` |
+| 5 | `theorem` | [shiftedWork_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupport.lean/declarations/shiftedwork-intervalintegrable.md) | 82 | `result-track:be215062a08a0cfe9586ba80c983a58c29d962d4cb2a95c083deceb439598ee0` |
+| 6 | `theorem` | [centeredErrorWork_eq_support_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupport.lean/declarations/centerederrorwork-eq-support-integral.md) | 96 | `result-track:b323f465103cd020560249f9c3b6978ee808e887bccbc904141bc083ef1e6cd1` |
+| 7 | `theorem` | [jointMangoldtErrorWork_eq_support_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupport.lean/declarations/jointmangoldterrorwork-eq-support-integral.md) | 120 | `result-track:8674b2416886be84f27ab252c725cef26ad0378ba537c85d3a0b03be791d3355` |
+| 8 | `theorem` | [centeredErrorWork_zero_of_support_le_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupport.lean/declarations/centerederrorwork-zero-of-support-le-lower.md) | 128 | `result-track:df243414f84a00009ac9fcd2cf3ea7581a4b23278166d50b242890d1c110680f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

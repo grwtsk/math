@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BoundaryCochain.lean/index.md) · [Full source](../../../../Combinatorics/BoundaryCochain.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryCochain.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryCochain.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [capacity_increment_square_closed](../../../../Combinatorics/BoundaryCochain.lean/declarations/capacity-increment-square-closed.md) | 13 | `result-track:7e60469caff920cc69661d925f6737b3608c1a32c93b3c965d22e016fdf3861b` |
-| 2 | `theorem` | [capacity_increment_two_step_telescope](../../../../Combinatorics/BoundaryCochain.lean/declarations/capacity-increment-two-step-telescope.md) | 34 | `result-track:1a25610ba06a9ac181b4ae6358e328e23a7b79b0b20c8a75fcea48b58d34a0df` |
+| 1 | `theorem` | [capacity_increment_square_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryCochain.lean/declarations/capacity-increment-square-closed.md) | 13 | `result-track:7e60469caff920cc69661d925f6737b3608c1a32c93b3c965d22e016fdf3861b` |
+| 2 | `theorem` | [capacity_increment_two_step_telescope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryCochain.lean/declarations/capacity-increment-two-step-telescope.md) | 34 | `result-track:1a25610ba06a9ac181b4ae6358e328e23a7b79b0b20c8a75fcea48b58d34a0df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

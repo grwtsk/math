@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/Typicality.lean/index.md) · [Full source](../../../../FunctionalAnalysis/Typicality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Typicality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Typicality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TestClassUniformization](../../../../FunctionalAnalysis/Typicality.lean/declarations/testclassuniformization.md) | 9 | `declaration-track:598fb593a5165cbd1858ef39a6bc3104b380d9fc67463bb96ef12da7c157cc43` |
-| 2 | `structure` | [SimultaneousTypicalityObligation](../../../../FunctionalAnalysis/Typicality.lean/declarations/simultaneoustypicalityobligation.md) | 18 | `declaration-track:e4b23b055ad9b091cd42603cba47405ef884fcfb4d68371a9adabce26abca7da` |
-| 3 | `structure` | [TypicalRealizationProposal](../../../../FunctionalAnalysis/Typicality.lean/declarations/typicalrealizationproposal.md) | 25 | `declaration-track:b37fe2c8b66d6de3bdac2d4b938858b6dbcfd7b705d42b25e5437704f572ceb0` |
-| 4 | `inductive` | [RealizationAdmission](../../../../FunctionalAnalysis/Typicality.lean/declarations/realizationadmission.md) | 33 | `declaration-track:4c715a3516599c0dc0ecc886ebdc68087e1661114808ecc91e879d2a6bbed0c7` |
-| 5 | `def` | [RealizationAdmission.committed](../../../../FunctionalAnalysis/Typicality.lean/declarations/realizationadmission-committed.md) | 39 | `declaration-track:85a87c3faf3abfd92fb9f82782b9689dbddfc002f87213f04eb58551b980332f` |
-| 6 | `theorem` | [proposed_realization_cannot_self_commit](../../../../FunctionalAnalysis/Typicality.lean/declarations/proposed-realization-cannot-self-commit.md) | 45 | `result-track:977a818004ec50bb2042cb5c0fe9d6a0e974d0e57b3d1a1d568c544ca919ef05` |
+| 1 | `inductive` | [TestClassUniformization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Typicality.lean/declarations/testclassuniformization.md) | 9 | `declaration-track:598fb593a5165cbd1858ef39a6bc3104b380d9fc67463bb96ef12da7c157cc43` |
+| 2 | `structure` | [SimultaneousTypicalityObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Typicality.lean/declarations/simultaneoustypicalityobligation.md) | 18 | `declaration-track:e4b23b055ad9b091cd42603cba47405ef884fcfb4d68371a9adabce26abca7da` |
+| 3 | `structure` | [TypicalRealizationProposal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Typicality.lean/declarations/typicalrealizationproposal.md) | 25 | `declaration-track:b37fe2c8b66d6de3bdac2d4b938858b6dbcfd7b705d42b25e5437704f572ceb0` |
+| 4 | `inductive` | [RealizationAdmission](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Typicality.lean/declarations/realizationadmission.md) | 33 | `declaration-track:4c715a3516599c0dc0ecc886ebdc68087e1661114808ecc91e879d2a6bbed0c7` |
+| 5 | `def` | [RealizationAdmission.committed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Typicality.lean/declarations/realizationadmission-committed.md) | 39 | `declaration-track:85a87c3faf3abfd92fb9f82782b9689dbddfc002f87213f04eb58551b980332f` |
+| 6 | `theorem` | [proposed_realization_cannot_self_commit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Typicality.lean/declarations/proposed-realization-cannot-self-commit.md) | 45 | `result-track:977a818004ec50bb2042cb5c0fe9d6a0e974d0e57b3d1a1d568c544ca919ef05` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [small_subtype](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/declarations/small-subtype.md) | 22 | `declaration-track:c73abd6a8edfb0af9cbdd2b223b298d352efa710ff3c0892db75c1f65d560237` |
-| 2 | `theorem` | [small_of_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/declarations/small-of-injective.md) | 25 | `result-track:9825d68eb275e008f4bd030ddc5dbe4b1dfc62caa6bd5161e03f9c1e70a1afde` |
-| 3 | `theorem` | [small_of_surjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/declarations/small-of-surjective.md) | 29 | `result-track:8cd4f487edb2ac2941b009b6a311636fcc04445643153f5602872caa0a372782` |
-| 4 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/declarations/instance.md) | 33 | `declaration-track:bdf5fdca1221f1cc7d93765ca12ad79752a05f725c8393017418936cfe1aac8b` |
-| 5 | `theorem` | [small_of_injective_of_exists](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/declarations/small-of-injective-of-exists.md) | 41 | `result-track:f420ac0f7b2400e44885c7af1b2c68439d8e64b6d1a4fd31ed3505701eeb0550` |
-| 6 | `instance` | [small_Pi](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/declarations/small-pi.md) | 55 | `declaration-track:ff569fd84ae3d4b3d296fef02f0d70d435118b9fd8a633a9ce97277e75ca967f` |
-| 7 | `instance` | [small_prod](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/declarations/small-prod.md) | 60 | `declaration-track:a4863f0a4210b40d9cf3103ec0d975c8dd6abfd6f11bf092d48db1cc42fbbb0e` |
-| 8 | `instance` | [small_sum](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/declarations/small-sum.md) | 63 | `declaration-track:d62a7ab3046a1abef2e7cb1c2c5e32d1e504c6f26c11a83a2888b0ce6ceca698` |
-| 9 | `instance` | [small_set](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/declarations/small-set.md) | 66 | `declaration-track:24598a944351dab7038f3fde480265d5343fa8078f5259dc5f6dca36ca63c3e4` |
+| 1 | `instance` | [small_subtype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/declarations/small-subtype.md) | 22 | `declaration-track:c73abd6a8edfb0af9cbdd2b223b298d352efa710ff3c0892db75c1f65d560237` |
+| 2 | `theorem` | [small_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/declarations/small-of-injective.md) | 25 | `result-track:9825d68eb275e008f4bd030ddc5dbe4b1dfc62caa6bd5161e03f9c1e70a1afde` |
+| 3 | `theorem` | [small_of_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/declarations/small-of-surjective.md) | 29 | `result-track:8cd4f487edb2ac2941b009b6a311636fcc04445643153f5602872caa0a372782` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/declarations/instance.md) | 33 | `declaration-track:bdf5fdca1221f1cc7d93765ca12ad79752a05f725c8393017418936cfe1aac8b` |
+| 5 | `theorem` | [small_of_injective_of_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/declarations/small-of-injective-of-exists.md) | 41 | `result-track:f420ac0f7b2400e44885c7af1b2c68439d8e64b6d1a4fd31ed3505701eeb0550` |
+| 6 | `instance` | [small_Pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/declarations/small-pi.md) | 55 | `declaration-track:ff569fd84ae3d4b3d296fef02f0d70d435118b9fd8a633a9ce97277e75ca967f` |
+| 7 | `instance` | [small_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/declarations/small-prod.md) | 60 | `declaration-track:a4863f0a4210b40d9cf3103ec0d975c8dd6abfd6f11bf092d48db1cc42fbbb0e` |
+| 8 | `instance` | [small_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/declarations/small-sum.md) | 63 | `declaration-track:d62a7ab3046a1abef2e7cb1c2c5e32d1e504c6f26c11a83a2888b0ce6ceca698` |
+| 9 | `instance` | [small_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmallBasicSmallOfInjectiveOfExists.lean/declarations/small-set.md) | 66 | `declaration-track:24598a944351dab7038f3fde480265d5343fa8078f5259dc5f6dca36ca63c3e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

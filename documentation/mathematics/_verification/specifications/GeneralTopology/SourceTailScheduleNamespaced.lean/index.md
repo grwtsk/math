@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SourceTailScheduleNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/SourceTailScheduleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [logScale](../../../../GeneralTopology/SourceTailScheduleNamespaced.lean/declarations/logscale.md) | 22 | `declaration-track:109136e89072a069d7b3c6b7234bd74d6e4d5f87dcbcd844868ad59c53a4134e` |
-| 2 | `def` | [epsilonSchedule](../../../../GeneralTopology/SourceTailScheduleNamespaced.lean/declarations/epsilonschedule.md) | 25 | `declaration-track:e043a3d4cecee46cd2fb49d01f2ef9fb2818807ce88d0148aaedf1d7d41a1a1f` |
-| 3 | `def` | [cutoffSchedule](../../../../GeneralTopology/SourceTailScheduleNamespaced.lean/declarations/cutoffschedule.md) | 28 | `declaration-track:d94efb509fb7b4dfbb701036b7bb41f10d27590d6eba3ff67cd364e2f80baea9` |
-| 4 | `theorem` | [schedule_admissible](../../../../GeneralTopology/SourceTailScheduleNamespaced.lean/declarations/schedule-admissible.md) | 31 | `result-track:8ef5e9b43ae37ffc18b33e59585d2917ff815870ad4d5d99c61a580c31acdfb5` |
-| 5 | `theorem` | [scheduled_endpoint_bounds](../../../../GeneralTopology/SourceTailScheduleNamespaced.lean/declarations/scheduled-endpoint-bounds.md) | 47 | `result-track:a7829a5042b7febc05fbe4a01e94622c52c2e560d2fccd7d3cb4b6a3555b4d58` |
-| 6 | `theorem` | [explicit_tail_bounds_tendsto](../../../../GeneralTopology/SourceTailScheduleNamespaced.lean/declarations/explicit-tail-bounds-tendsto.md) | 81 | `result-track:eaefde9dd1c88e8e26e19d9873701632cd35d9dc54f4b0573dd430366c5a27ca` |
-| 7 | `theorem` | [scheduled_actual_tails_tendsto](../../../../GeneralTopology/SourceTailScheduleNamespaced.lean/declarations/scheduled-actual-tails-tendsto.md) | 92 | `result-track:e3278481224e9489e81ec3c2b12842478f1f5d8ba895101f3f4220470496a11a` |
-| 8 | `theorem` | [epsilonSchedule_tendsto_zero](../../../../GeneralTopology/SourceTailScheduleNamespaced.lean/declarations/epsilonschedule-tendsto-zero.md) | 107 | `result-track:45741c3ee22479325c7ace3c313cc6d97f1e67625528bab1bd7fdfdbc30c3a28` |
-| 9 | `theorem` | [cutoffSchedule_tendsto_atTop](../../../../GeneralTopology/SourceTailScheduleNamespaced.lean/declarations/cutoffschedule-tendsto-attop.md) | 115 | `result-track:36c1c636aa6bd7f329715e30a98e7b5e336e31960106f3e8b03d0cb7cc98b549` |
+| 1 | `def` | [logScale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleNamespaced.lean/declarations/logscale.md) | 22 | `declaration-track:109136e89072a069d7b3c6b7234bd74d6e4d5f87dcbcd844868ad59c53a4134e` |
+| 2 | `def` | [epsilonSchedule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleNamespaced.lean/declarations/epsilonschedule.md) | 25 | `declaration-track:e043a3d4cecee46cd2fb49d01f2ef9fb2818807ce88d0148aaedf1d7d41a1a1f` |
+| 3 | `def` | [cutoffSchedule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleNamespaced.lean/declarations/cutoffschedule.md) | 28 | `declaration-track:d94efb509fb7b4dfbb701036b7bb41f10d27590d6eba3ff67cd364e2f80baea9` |
+| 4 | `theorem` | [schedule_admissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleNamespaced.lean/declarations/schedule-admissible.md) | 31 | `result-track:8ef5e9b43ae37ffc18b33e59585d2917ff815870ad4d5d99c61a580c31acdfb5` |
+| 5 | `theorem` | [scheduled_endpoint_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleNamespaced.lean/declarations/scheduled-endpoint-bounds.md) | 47 | `result-track:a7829a5042b7febc05fbe4a01e94622c52c2e560d2fccd7d3cb4b6a3555b4d58` |
+| 6 | `theorem` | [explicit_tail_bounds_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleNamespaced.lean/declarations/explicit-tail-bounds-tendsto.md) | 81 | `result-track:eaefde9dd1c88e8e26e19d9873701632cd35d9dc54f4b0573dd430366c5a27ca` |
+| 7 | `theorem` | [scheduled_actual_tails_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleNamespaced.lean/declarations/scheduled-actual-tails-tendsto.md) | 92 | `result-track:e3278481224e9489e81ec3c2b12842478f1f5d8ba895101f3f4220470496a11a` |
+| 8 | `theorem` | [epsilonSchedule_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleNamespaced.lean/declarations/epsilonschedule-tendsto-zero.md) | 107 | `result-track:45741c3ee22479325c7ace3c313cc6d97f1e67625528bab1bd7fdfdbc30c3a28` |
+| 9 | `theorem` | [cutoffSchedule_tendsto_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleNamespaced.lean/declarations/cutoffschedule-tendsto-attop.md) | 115 | `result-track:36c1c636aa6bd7f329715e30a98e7b5e336e31960106f3e8b03d0cb7cc98b549` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

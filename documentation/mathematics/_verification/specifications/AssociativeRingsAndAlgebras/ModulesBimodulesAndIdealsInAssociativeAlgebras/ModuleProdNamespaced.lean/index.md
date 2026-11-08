@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleProdNamespaced.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleProdNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleProdNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleProdNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [smulWithZero](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleProdNamespaced.lean/declarations/smulwithzero.md) | 28 | `declaration-track:c32ae554a89955af247799716d48f979bd90801d3a7f142a79bab024051d5e39` |
-| 2 | `instance` | [mulActionWithZero](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleProdNamespaced.lean/declarations/mulactionwithzero.md) | 33 | `declaration-track:428f910152ff12e1343134d1a593cdecfe660e6f0266980664fd4b1254162c94` |
-| 3 | `instance` | [instModule](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleProdNamespaced.lean/declarations/instmodule.md) | 37 | `declaration-track:933b0b812123d7c422d1a7a15638dfef6fb137f59f4a6cfc858bf72732c14c91` |
+| 1 | `instance` | [smulWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleProdNamespaced.lean/declarations/smulwithzero.md) | 28 | `declaration-track:c32ae554a89955af247799716d48f979bd90801d3a7f142a79bab024051d5e39` |
+| 2 | `instance` | [mulActionWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleProdNamespaced.lean/declarations/mulactionwithzero.md) | 33 | `declaration-track:428f910152ff12e1343134d1a593cdecfe660e6f0266980664fd4b1254162c94` |
+| 3 | `instance` | [instModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleProdNamespaced.lean/declarations/instmodule.md) | 37 | `declaration-track:933b0b812123d7c422d1a7a15638dfef6fb137f59f4a6cfc858bf72732c14c91` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/BorelizeNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/BorelizeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BorelizeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BorelizeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/BorelizeNamespaced.lean/declarations/example-source-edition-3.md) | 13 | `declaration-track:6fbb8cb6a37913c522984a3e38179cadda1527067b1cf604958f4024b192b32f` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/BorelizeNamespaced.lean/declarations/example-source-edition-2.md) | 20 | `declaration-track:6a95e1432bf64be1017360dce813be5d87a8729f682a925c5109da7ec741e393` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/BorelizeNamespaced.lean/declarations/example.md) | 26 | `declaration-track:01a69c2419b0654f23412d480891ca4e5aa36deb55917e70dde7f82f5d233e47` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/BorelizeNamespaced.lean/declarations/example-source-edition-4.md) | 33 | `declaration-track:7d2aad7417abd6c5fdedef4e01fd24b2353919002d4d8090af581401cc4ca7ad` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/BorelizeNamespaced.lean/declarations/example-source-edition-5.md) | 40 | `declaration-track:a9bf96aed952dd9e4f07eaad3bf9108b12fad8059bdd129da6da2629def048eb` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BorelizeNamespaced.lean/declarations/example-source-edition-3.md) | 13 | `declaration-track:6fbb8cb6a37913c522984a3e38179cadda1527067b1cf604958f4024b192b32f` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BorelizeNamespaced.lean/declarations/example-source-edition-2.md) | 20 | `declaration-track:6a95e1432bf64be1017360dce813be5d87a8729f682a925c5109da7ec741e393` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BorelizeNamespaced.lean/declarations/example.md) | 26 | `declaration-track:01a69c2419b0654f23412d480891ca4e5aa36deb55917e70dde7f82f5d233e47` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BorelizeNamespaced.lean/declarations/example-source-edition-4.md) | 33 | `declaration-track:7d2aad7417abd6c5fdedef4e01fd24b2353919002d4d8090af581401cc4ca7ad` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BorelizeNamespaced.lean/declarations/example-source-edition-5.md) | 40 | `declaration-track:a9bf96aed952dd9e4f07eaad3bf9108b12fad8059bdd129da6da2629def048eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

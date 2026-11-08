@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAudit.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAudit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAudit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAudit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [annihilator_error_bound](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAudit.lean/declarations/annihilator-error-bound.md) | 34 | `result-track:08ebd3cc261f226ddf6ac8113f1d3632b1fbb520071129320548ea05247ea1e6` |
-| 2 | `theorem` | [transferred_error_bound](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAudit.lean/declarations/transferred-error-bound.md) | 45 | `result-track:b9ad028f8bdf481b8a4a9338dd3b4466dd1a96212edc4791b906073711df9536` |
-| 3 | `theorem` | [transferred_kernel](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAudit.lean/declarations/transferred-kernel.md) | 53 | `result-track:77efb54b58093a12ea1506cbc40ba50606798e7381b8caace2d0757e7c1c574a` |
-| 4 | `theorem` | [native_readout_transfer](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAudit.lean/declarations/native-readout-transfer.md) | 63 | `result-track:2eb3da118e7a06892145a4c73e91b459e59c29422e7e35adcb763d346919f510` |
+| 1 | `theorem` | [annihilator_error_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAudit.lean/declarations/annihilator-error-bound.md) | 34 | `result-track:08ebd3cc261f226ddf6ac8113f1d3632b1fbb520071129320548ea05247ea1e6` |
+| 2 | `theorem` | [transferred_error_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAudit.lean/declarations/transferred-error-bound.md) | 45 | `result-track:b9ad028f8bdf481b8a4a9338dd3b4466dd1a96212edc4791b906073711df9536` |
+| 3 | `theorem` | [transferred_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAudit.lean/declarations/transferred-kernel.md) | 53 | `result-track:77efb54b58093a12ea1506cbc40ba50606798e7381b8caace2d0757e7c1c574a` |
+| 4 | `theorem` | [native_readout_transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/KQHPoleRelativeFormAudit.lean/declarations/native-readout-transfer.md) | 63 | `result-track:2eb3da118e7a06892145a4c73e91b459e59c29422e7e35adcb763d346919f510` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

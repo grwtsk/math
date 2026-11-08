@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PositiveSchwartzMoments.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PositiveSchwartzMoments.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveSchwartzMoments.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveSchwartzMoments.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Fourier.SchwartzMoments`](../../../../MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.Analysis.MellinTransform.CompactGaussianWindow`](../../../../IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.SchwartzMoments`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.CompactGaussianWindow`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_zero_integrable](../../../../MeasureAndIntegration/PositiveSchwartzMoments.lean/declarations/actual-zero-integrable.md) | 13 | `result-track:924529acd93c18a3933d07b0c8b3820b998cdd4037e2fd87f6bb3fdb1aa0bf6c` |
-| 2 | `theorem` | [actual_zero_source_bound](../../../../MeasureAndIntegration/PositiveSchwartzMoments.lean/declarations/actual-zero-source-bound.md) | 17 | `result-track:fa4a43eaf9ea6c19c3a5ad2a994b601e761617ca8f8969808cbb0b1e14d54e17` |
-| 3 | `theorem` | [actual_zero_moment_bound](../../../../MeasureAndIntegration/PositiveSchwartzMoments.lean/declarations/actual-zero-moment-bound.md) | 24 | `result-track:a95b8f30f474f91dc5adf7708ce1d499aaa8c00d8851a1e7711f4deff832ee68` |
-| 4 | `theorem` | [source_bound_zero_false_of_nonzero](../../../../MeasureAndIntegration/PositiveSchwartzMoments.lean/declarations/source-bound-zero-false-of-nonzero.md) | 30 | `result-track:11c2d0d6b04c7a54caf6d06c3aea3290b0d86a109441d13db1766215f79a9174` |
-| 5 | `theorem` | [actual_gaussian_nonzero](../../../../MeasureAndIntegration/PositiveSchwartzMoments.lean/declarations/actual-gaussian-nonzero.md) | 42 | `result-track:840954ccdc7bbd27f80c556f4cfca10a988c9536cc78300b17e5cd3bfcfebebd` |
-| 6 | `theorem` | [actual_gaussian_source_bound_zero_false](../../../../MeasureAndIntegration/PositiveSchwartzMoments.lean/declarations/actual-gaussian-source-bound-zero-false.md) | 66 | `result-track:2de1d1ada7ca91385ee27ba38a095959cc208f0e4d82129aece2febfd232de5a` |
+| 1 | `theorem` | [actual_zero_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveSchwartzMoments.lean/declarations/actual-zero-integrable.md) | 13 | `result-track:924529acd93c18a3933d07b0c8b3820b998cdd4037e2fd87f6bb3fdb1aa0bf6c` |
+| 2 | `theorem` | [actual_zero_source_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveSchwartzMoments.lean/declarations/actual-zero-source-bound.md) | 17 | `result-track:fa4a43eaf9ea6c19c3a5ad2a994b601e761617ca8f8969808cbb0b1e14d54e17` |
+| 3 | `theorem` | [actual_zero_moment_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveSchwartzMoments.lean/declarations/actual-zero-moment-bound.md) | 24 | `result-track:a95b8f30f474f91dc5adf7708ce1d499aaa8c00d8851a1e7711f4deff832ee68` |
+| 4 | `theorem` | [source_bound_zero_false_of_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveSchwartzMoments.lean/declarations/source-bound-zero-false-of-nonzero.md) | 30 | `result-track:11c2d0d6b04c7a54caf6d06c3aea3290b0d86a109441d13db1766215f79a9174` |
+| 5 | `theorem` | [actual_gaussian_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveSchwartzMoments.lean/declarations/actual-gaussian-nonzero.md) | 42 | `result-track:840954ccdc7bbd27f80c556f4cfca10a988c9536cc78300b17e5cd3bfcfebebd` |
+| 6 | `theorem` | [actual_gaussian_source_bound_zero_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveSchwartzMoments.lean/declarations/actual-gaussian-source-bound-zero-false.md) | 66 | `result-track:2de1d1ada7ca91385ee27ba38a095959cc208f0e4d82129aece2febfd232de5a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

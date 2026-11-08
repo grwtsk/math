@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/BasicBasicNamespacedWindowUnion.lean/index.md) · [Full source](../../../../GeneralTopology/BasicBasicNamespacedWindowUnion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BasicBasicNamespacedWindowUnion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BasicBasicNamespacedWindowUnion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [window_union](../../../../GeneralTopology/BasicBasicNamespacedWindowUnion.lean/declarations/window-union.md) | 35 | `result-track:7d3853e9af35e6aa9fd75d1e7fed283c5f7e90b33025f2d1fbc584876f6aae1f` |
-| 2 | `lemma` | [N_add](../../../../GeneralTopology/BasicBasicNamespacedWindowUnion.lean/declarations/n-add.md) | 48 | `result-track:adcb9ce9ca7c8d202b7008215515ed6940917f93d50ed6182c58f0a228bec578` |
-| 3 | `lemma` | [N_mono](../../../../GeneralTopology/BasicBasicNamespacedWindowUnion.lean/declarations/n-mono.md) | 56 | `result-track:77ccd216cb065906771b3c991ee3d907f89869a7af9eb7fa0555ed5dd03fe400` |
-| 4 | `lemma` | [one_le_log_add_three](../../../../GeneralTopology/BasicBasicNamespacedWindowUnion.lean/declarations/one-le-log-add-three.md) | 66 | `result-track:42c7ea95085e2a727a70ba741fb3a94a08194677b33a2dc64533bd70838124ae` |
-| 5 | `lemma` | [continuousAt_logDeriv_of_analyticAt](../../../../GeneralTopology/BasicBasicNamespacedWindowUnion.lean/declarations/continuousat-logderiv-of-analyticat.md) | 72 | `result-track:0bd3d4cb4e2bf00a37920a7d5b3f75b6ecc14fa4494caac869c32126e2199117` |
-| 6 | `lemma` | [N_unit_windows](../../../../GeneralTopology/BasicBasicNamespacedWindowUnion.lean/declarations/n-unit-windows.md) | 78 | `result-track:78edb245a877c919fcac265d8dd341e1fe7a75f32be8c039010199681355d461` |
+| 1 | `lemma` | [window_union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BasicBasicNamespacedWindowUnion.lean/declarations/window-union.md) | 35 | `result-track:7d3853e9af35e6aa9fd75d1e7fed283c5f7e90b33025f2d1fbc584876f6aae1f` |
+| 2 | `lemma` | [N_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BasicBasicNamespacedWindowUnion.lean/declarations/n-add.md) | 48 | `result-track:adcb9ce9ca7c8d202b7008215515ed6940917f93d50ed6182c58f0a228bec578` |
+| 3 | `lemma` | [N_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BasicBasicNamespacedWindowUnion.lean/declarations/n-mono.md) | 56 | `result-track:77ccd216cb065906771b3c991ee3d907f89869a7af9eb7fa0555ed5dd03fe400` |
+| 4 | `lemma` | [one_le_log_add_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BasicBasicNamespacedWindowUnion.lean/declarations/one-le-log-add-three.md) | 66 | `result-track:42c7ea95085e2a727a70ba741fb3a94a08194677b33a2dc64533bd70838124ae` |
+| 5 | `lemma` | [continuousAt_logDeriv_of_analyticAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BasicBasicNamespacedWindowUnion.lean/declarations/continuousat-logderiv-of-analyticat.md) | 72 | `result-track:0bd3d4cb4e2bf00a37920a7d5b3f75b6ecc14fa4494caac869c32126e2199117` |
+| 6 | `lemma` | [N_unit_windows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BasicBasicNamespacedWindowUnion.lean/declarations/n-unit-windows.md) | 78 | `result-track:78edb245a877c919fcac265d8dd341e1fe7a75f32be8c039010199681355d461` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

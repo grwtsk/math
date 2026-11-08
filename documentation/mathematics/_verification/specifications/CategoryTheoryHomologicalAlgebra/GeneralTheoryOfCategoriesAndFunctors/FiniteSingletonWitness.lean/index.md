@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteSingletonWitness.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteSingletonWitness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteSingletonWitness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteSingletonWitness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.CategoryTheory.Equivalence` — import line 17; external provider; requires a separately pinned dependency.
 - `Mathlib.CategoryTheory.Limits.Shapes.ZeroMorphisms` — import line 18; external provider; requires a separately pinned dependency.
 - `Mathlib.CategoryTheory.Types.Basic` — import line 19; external provider; requires a separately pinned dependency.
-- [Hom Comparison Cancellation](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomComparisonCancellation.lean/index.md) — import line 21; pinned internal source present.
+- [Hom Comparison Cancellation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomComparisonCancellation.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteBoundaryToUnit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteSingletonWitness.lean/declarations/finiteboundarytounit.md) | 37 | `declaration-track:27eed68130713311d169ca8995404c976f248a04d2eb20752b88651d719b4874` |
-| 2 | `def` | [finiteBoundaryToFinOne](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteSingletonWitness.lean/declarations/finiteboundarytofinone.md) | 39 | `declaration-track:dc6db2dbc95dc80c5ea0d948a2ad21ecbd0f08b1b3999e95b3a3340f700d0f6e` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteSingletonWitness.lean/declarations/instance.md) | 41 | `declaration-track:d015b39731709e25fee418eeee65f34d9303bfeea36be7e9a9096442c65d4074` |
-| 4 | `def` | [finiteClosedHomComparison](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteSingletonWitness.lean/declarations/finiteclosedhomcomparison.md) | 48 | `declaration-track:22c0ae1c93a3996353dbd871356e3c794f5304a3c5e176fb231bfc6af029f95b` |
-| 5 | `theorem` | [finite_boundary_epi](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteSingletonWitness.lean/declarations/finite-boundary-epi.md) | 59 | `result-track:19656cdb913fedf361f9a3d0ab544169721f51e763d3ead5462805ae967319c1` |
+| 1 | `def` | [finiteBoundaryToUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteSingletonWitness.lean/declarations/finiteboundarytounit.md) | 37 | `declaration-track:27eed68130713311d169ca8995404c976f248a04d2eb20752b88651d719b4874` |
+| 2 | `def` | [finiteBoundaryToFinOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteSingletonWitness.lean/declarations/finiteboundarytofinone.md) | 39 | `declaration-track:dc6db2dbc95dc80c5ea0d948a2ad21ecbd0f08b1b3999e95b3a3340f700d0f6e` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteSingletonWitness.lean/declarations/instance.md) | 41 | `declaration-track:d015b39731709e25fee418eeee65f34d9303bfeea36be7e9a9096442c65d4074` |
+| 4 | `def` | [finiteClosedHomComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteSingletonWitness.lean/declarations/finiteclosedhomcomparison.md) | 48 | `declaration-track:22c0ae1c93a3996353dbd871356e3c794f5304a3c5e176fb231bfc6af029f95b` |
+| 5 | `theorem` | [finite_boundary_epi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteSingletonWitness.lean/declarations/finite-boundary-epi.md) | 59 | `result-track:19656cdb913fedf361f9a3d0ab544169721f51e763d3ead5462805ae967319c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

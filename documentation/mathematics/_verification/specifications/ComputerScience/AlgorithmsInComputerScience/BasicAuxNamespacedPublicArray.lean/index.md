@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Array.of_push_eq_push](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/declarations/array-of-push-eq-push.md) | 27 | `result-track:741ae3e1321cf87e54dbc374641d486e75e876ceafc11e0a55f98b246cdf6821` |
-| 2 | `theorem` | [List.size_toArrayAux](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/declarations/list-size-toarrayaux.md) | 33 | `result-track:3c5e0bd29b462ef15d60a94a1cbed5ff8d763a86fc109117f6d86ce211125f36` |
-| 3 | `theorem` | [List.of_toArrayAux_eq_toArrayAux](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/declarations/list-of-toarrayaux-eq-toarrayaux.md) | 38 | `result-track:abb70ea0c4401f4ef6d865142e69bc83ef5da1765ef6fa017318685ab878af26` |
-| 4 | `theorem` | [List.toArray_eq_toArray_eq](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/declarations/list-toarray-eq-toarray-eq.md) | 51 | `result-track:42571d275df5fa00659f97d727f049c981a0a1a2d07ca607c6e4901e95110b1b` |
-| 5 | `def` | [Array.mapM'](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/declarations/array-mapm.md) | 59 | `declaration-track:b9da2874b96497165bbe25b5d4750a09eb0994de9b33fd65d3939ec803ea812e` |
-| 6 | `def` | [mapMonoMImp](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/declarations/mapmonomimp.md) | 72 | `declaration-track:b7ca5dfeac91a23a43d73400743e78454e6c5fcde51982043ca85a0a8dd14eb9` |
-| 7 | `def` | [Array.mapMonoM](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/declarations/array-mapmonom.md) | 92 | `declaration-track:8cd5c402f6bfa5b4669d1bf245e7ac4408ecde8e3b9c380fcb580690ef898595` |
-| 8 | `def` | [Array.mapMono](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/declarations/array-mapmono.md) | 101 | `declaration-track:20dbc0ae6bd7155c6eecbc9f7723ed4fe21a6ded5832e427754628e71fa06afb` |
+| 1 | `theorem` | [Array.of_push_eq_push](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/declarations/array-of-push-eq-push.md) | 27 | `result-track:741ae3e1321cf87e54dbc374641d486e75e876ceafc11e0a55f98b246cdf6821` |
+| 2 | `theorem` | [List.size_toArrayAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/declarations/list-size-toarrayaux.md) | 33 | `result-track:3c5e0bd29b462ef15d60a94a1cbed5ff8d763a86fc109117f6d86ce211125f36` |
+| 3 | `theorem` | [List.of_toArrayAux_eq_toArrayAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/declarations/list-of-toarrayaux-eq-toarrayaux.md) | 38 | `result-track:abb70ea0c4401f4ef6d865142e69bc83ef5da1765ef6fa017318685ab878af26` |
+| 4 | `theorem` | [List.toArray_eq_toArray_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/declarations/list-toarray-eq-toarray-eq.md) | 51 | `result-track:42571d275df5fa00659f97d727f049c981a0a1a2d07ca607c6e4901e95110b1b` |
+| 5 | `def` | [Array.mapM'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/declarations/array-mapm.md) | 59 | `declaration-track:b9da2874b96497165bbe25b5d4750a09eb0994de9b33fd65d3939ec803ea812e` |
+| 6 | `def` | [mapMonoMImp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/declarations/mapmonomimp.md) | 72 | `declaration-track:b7ca5dfeac91a23a43d73400743e78454e6c5fcde51982043ca85a0a8dd14eb9` |
+| 7 | `def` | [Array.mapMonoM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/declarations/array-mapmonom.md) | 92 | `declaration-track:8cd5c402f6bfa5b4669d1bf245e7ac4408ecde8e3b9c380fcb580690ef898595` |
+| 8 | `def` | [Array.mapMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxNamespacedPublicArray.lean/declarations/array-mapmono.md) | 101 | `declaration-track:20dbc0ae6bd7155c6eecbc9f7723ed4fe21a6ded5832e427754628e71fa06afb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AgentPool20250705182243AgentPool.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AgentPool20250705182243AgentPool.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AgentPool20250705182243AgentPool.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AgentPool20250705182243AgentPool.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,10 +62,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GptAgent](../../../../../ComputerScience/AlgorithmsInComputerScience/AgentPool20250705182243AgentPool.lean/declarations/gptagent.md) | 19 | `declaration-track:a767d69f6a33f9266978900ec143dc9b5ea1d795c6326b6c07664eae081afefc` |
-| 2 | `structure` | [AgentPool](../../../../../ComputerScience/AlgorithmsInComputerScience/AgentPool20250705182243AgentPool.lean/declarations/agentpool.md) | 28 | `declaration-track:4c9f05f0ca7c234a8682a4927893d82d2850490df44d187efbafb8a6474ccf74` |
-| 3 | `def` | [AgentPool.register](../../../../../ComputerScience/AlgorithmsInComputerScience/AgentPool20250705182243AgentPool.lean/declarations/agentpool-register.md) | 38 | `declaration-track:b3abffc0ca573d6c25c7043cdd3c53892d9bae37996c42a70cf332124a24e74f` |
-| 4 | `def` | [AgentPool.observeAll](../../../../../ComputerScience/AlgorithmsInComputerScience/AgentPool20250705182243AgentPool.lean/declarations/agentpool-observeall.md) | 46 | `declaration-track:13f5a3a26f097411306182054d4a50743d9fe0b714f4d0751e2baa790c3913de` |
+| 1 | `structure` | [GptAgent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AgentPool20250705182243AgentPool.lean/declarations/gptagent.md) | 19 | `declaration-track:a767d69f6a33f9266978900ec143dc9b5ea1d795c6326b6c07664eae081afefc` |
+| 2 | `structure` | [AgentPool](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AgentPool20250705182243AgentPool.lean/declarations/agentpool.md) | 28 | `declaration-track:4c9f05f0ca7c234a8682a4927893d82d2850490df44d187efbafb8a6474ccf74` |
+| 3 | `def` | [AgentPool.register](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AgentPool20250705182243AgentPool.lean/declarations/agentpool-register.md) | 38 | `declaration-track:b3abffc0ca573d6c25c7043cdd3c53892d9bae37996c42a70cf332124a24e74f` |
+| 4 | `def` | [AgentPool.observeAll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AgentPool20250705182243AgentPool.lean/declarations/agentpool-observeall.md) | 46 | `declaration-track:13f5a3a26f097411306182054d4a50743d9fe0b714f4d0751e2baa790c3913de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

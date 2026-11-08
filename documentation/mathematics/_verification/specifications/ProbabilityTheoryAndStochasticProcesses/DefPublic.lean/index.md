@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/DefPublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/DefPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/DefPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/DefPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProbabilityTheory.HasGaussianLaw](../../../../ProbabilityTheoryAndStochasticProcesses/DefPublic.lean/declarations/probabilitytheory-hasgaussianlaw.md) | 30 | `declaration-track:3c029baa262864fd3acfe9bd3642e86e0cf9aed68adb5afa5e887c14da7d7222` |
+| 1 | `structure` | [ProbabilityTheory.HasGaussianLaw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/DefPublic.lean/declarations/probabilitytheory-hasgaussianlaw.md) | 30 | `declaration-track:3c029baa262864fd3acfe9bd3642e86e0cf9aed68adb5afa5e887c14da7d7222` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

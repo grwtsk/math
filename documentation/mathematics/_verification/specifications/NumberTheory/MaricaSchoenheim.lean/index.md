@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/MaricaSchoenheim.lean/index.md) · [Full source](../../../../NumberTheory/MaricaSchoenheim.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MaricaSchoenheim.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MaricaSchoenheim.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [GrahamConjecture](../../../../NumberTheory/MaricaSchoenheim.lean/declarations/grahamconjecture.md) | 30 | `declaration-track:424bcd177003ea28e853b6fc6f93fda0b535ea532a63aaa6dd2db6e9fa8c06f9` |
-| 2 | `lemma` | [grahamConjecture_of_squarefree](../../../../NumberTheory/MaricaSchoenheim.lean/declarations/grahamconjecture-of-squarefree.md) | 34 | `result-track:01f240942685b2616c04d2c2e55c8b0a917251acff69ce2cb730173b19447591` |
+| 1 | `def` | [GrahamConjecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MaricaSchoenheim.lean/declarations/grahamconjecture.md) | 30 | `declaration-track:424bcd177003ea28e853b6fc6f93fda0b535ea532a63aaa6dd2db6e9fa8c06f9` |
+| 2 | `lemma` | [grahamConjecture_of_squarefree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MaricaSchoenheim.lean/declarations/grahamconjecture-of-squarefree.md) | 34 | `result-track:01f240942685b2616c04d2c2e55c8b0a917251acff69ce2cb730173b19447591` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

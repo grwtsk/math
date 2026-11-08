@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualCenteringAttemptpeer01.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualCenteringAttemptpeer01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringAttemptpeer01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringAttemptpeer01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_remainder_tendsto_integral](../../../../MeasureAndIntegration/ActualCenteringAttemptpeer01.lean/declarations/actual-remainder-tendsto-integral.md) | 21 | `result-track:b4788dde6d498f26d134b5d0da064efe83e17538b45ace907f2d7ca73a503d51` |
-| 2 | `theorem` | [actual_scaled_laplace_tendsto_zero](../../../../MeasureAndIntegration/ActualCenteringAttemptpeer01.lean/declarations/actual-scaled-laplace-tendsto-zero.md) | 35 | `result-track:b6fe9762dd9e44d7c58ffa9f1ac485b4313b6f11e5005ee12939f1d5f4f94ee1` |
-| 3 | `theorem` | [actual_euler_centering](../../../../MeasureAndIntegration/ActualCenteringAttemptpeer01.lean/declarations/actual-euler-centering.md) | 41 | `result-track:4bda79135279d471199befa5ed01509f93323a25456283f56da4e9a60bde5741` |
-| 4 | `theorem` | [actual_remainder_tendsto_zero](../../../../MeasureAndIntegration/ActualCenteringAttemptpeer01.lean/declarations/actual-remainder-tendsto-zero.md) | 54 | `result-track:4b702363706170f6581ee8f3174c8d305fa60197782c12aea4d510138a16ed3c` |
-| 5 | `theorem` | [actual_remainder_eq_tail](../../../../MeasureAndIntegration/ActualCenteringAttemptpeer01.lean/declarations/actual-remainder-eq-tail.md) | 58 | `result-track:6f927b246db548bfc50c2799b21ccd1f4fccb3fc80d928f33ecf69d5086dbe7b` |
+| 1 | `theorem` | [actual_remainder_tendsto_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringAttemptpeer01.lean/declarations/actual-remainder-tendsto-integral.md) | 21 | `result-track:b4788dde6d498f26d134b5d0da064efe83e17538b45ace907f2d7ca73a503d51` |
+| 2 | `theorem` | [actual_scaled_laplace_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringAttemptpeer01.lean/declarations/actual-scaled-laplace-tendsto-zero.md) | 35 | `result-track:b6fe9762dd9e44d7c58ffa9f1ac485b4313b6f11e5005ee12939f1d5f4f94ee1` |
+| 3 | `theorem` | [actual_euler_centering](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringAttemptpeer01.lean/declarations/actual-euler-centering.md) | 41 | `result-track:4bda79135279d471199befa5ed01509f93323a25456283f56da4e9a60bde5741` |
+| 4 | `theorem` | [actual_remainder_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringAttemptpeer01.lean/declarations/actual-remainder-tendsto-zero.md) | 54 | `result-track:4b702363706170f6581ee8f3174c8d305fa60197782c12aea4d510138a16ed3c` |
+| 5 | `theorem` | [actual_remainder_eq_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringAttemptpeer01.lean/declarations/actual-remainder-eq-tail.md) | 58 | `result-track:6f927b246db548bfc50c2799b21ccd1f4fccb3fc80d928f33ecf69d5086dbe7b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

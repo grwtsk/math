@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LieNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LieNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LieNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LieNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/LieNamespacedPublic.lean/declarations/instance.md) | 44 | `declaration-track:075555505035dde614cc978357411be9b19c2966ce9f3c9b1d88c5b69c665a23` |
-| 2 | `theorem` | [commutator_coe_linear_map](../../../../CommutativeAlgebra/LieNamespacedPublic.lean/declarations/commutator-coe-linear-map.md) | 52 | `result-track:da68bebcd91294e6ce9f474a823d44b3ae60da192e38e92c8d4de0a58bb456fd` |
-| 3 | `theorem` | [commutator_apply](../../../../CommutativeAlgebra/LieNamespacedPublic.lean/declarations/commutator-apply.md) | 55 | `result-track:8c6707be54118d5ea20b5ca78f4a9934c36a78747f489095cb40d2955992ea73` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/LieNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 58 | `declaration-track:daedee152ea6931b149c757860aee7d79df878318fa34adeaff0b9335446c38e` |
-| 5 | `instance` | [instLieAlgebra](../../../../CommutativeAlgebra/LieNamespacedPublic.lean/declarations/instliealgebra.md) | 64 | `declaration-track:7a501376e03203b3727bd4dc8ed21f9e43a2cba9ce94e3a2fe628eb02bd2e855` |
-| 6 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/LieNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 69 | `declaration-track:6e219ddce3135123417ae85415d181f9527def600654fffe9d58963ebc229a99` |
-| 7 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/LieNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 75 | `declaration-track:73f42cf8c17172e49237ef25ccd022feda4d7df630d16933bceb15297ea72ebd` |
-| 8 | `lemma` | [bracket_eq_fun](../../../../CommutativeAlgebra/LieNamespacedPublic.lean/declarations/bracket-eq-fun.md) | 80 | `result-track:29a4d426dc9fd2b4cec225d3cb569a59c2c9f059674956b791b72f64a76b155a` |
-| 9 | `def` | [couple](../../../../CommutativeAlgebra/LieNamespacedPublic.lean/declarations/couple.md) | 90 | `declaration-track:dd34ebd6b37216cadf29f0099094954b349dc238e97ec129e1dadd16ffde2a62` |
-| 10 | `lemma` | [mem](../../../../CommutativeAlgebra/LieNamespacedPublic.lean/declarations/mem.md) | 103 | `result-track:d0b11add4ca93d8b76e069fe0244f2a106d135f2e8aff00668ce75e4be063ee0` |
-| 11 | `def` | [mk](../../../../CommutativeAlgebra/LieNamespacedPublic.lean/declarations/mk.md) | 110 | `declaration-track:e26eaa544ee7e74fc69c36511a0d5a5682b0b0a8ae93859436f117f5f0dbce2e` |
-| 12 | `lemma` | [mk_left](../../../../CommutativeAlgebra/LieNamespacedPublic.lean/declarations/mk-left.md) | 114 | `result-track:4f315cdac1134f7980e7fa35d4367d37c6383e92019b41d5ca0ae30a267033f7` |
-| 13 | `lemma` | [mk_right](../../../../CommutativeAlgebra/LieNamespacedPublic.lean/declarations/mk-right.md) | 117 | `result-track:09057b1d6289e33e3fa135a14ea6bf5842451aae8238bee6853f642192bc42f5` |
-| 14 | `lemma` | [apply](../../../../CommutativeAlgebra/LieNamespacedPublic.lean/declarations/apply.md) | 120 | `result-track:da7da29abbcb3b35ad809db3e95573d4e306f38fcaf48f102a31e9f44ed3045a` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LieNamespacedPublic.lean/declarations/instance.md) | 44 | `declaration-track:075555505035dde614cc978357411be9b19c2966ce9f3c9b1d88c5b69c665a23` |
+| 2 | `theorem` | [commutator_coe_linear_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LieNamespacedPublic.lean/declarations/commutator-coe-linear-map.md) | 52 | `result-track:da68bebcd91294e6ce9f474a823d44b3ae60da192e38e92c8d4de0a58bb456fd` |
+| 3 | `theorem` | [commutator_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LieNamespacedPublic.lean/declarations/commutator-apply.md) | 55 | `result-track:8c6707be54118d5ea20b5ca78f4a9934c36a78747f489095cb40d2955992ea73` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LieNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 58 | `declaration-track:daedee152ea6931b149c757860aee7d79df878318fa34adeaff0b9335446c38e` |
+| 5 | `instance` | [instLieAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LieNamespacedPublic.lean/declarations/instliealgebra.md) | 64 | `declaration-track:7a501376e03203b3727bd4dc8ed21f9e43a2cba9ce94e3a2fe628eb02bd2e855` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LieNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 69 | `declaration-track:6e219ddce3135123417ae85415d181f9527def600654fffe9d58963ebc229a99` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LieNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 75 | `declaration-track:73f42cf8c17172e49237ef25ccd022feda4d7df630d16933bceb15297ea72ebd` |
+| 8 | `lemma` | [bracket_eq_fun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LieNamespacedPublic.lean/declarations/bracket-eq-fun.md) | 80 | `result-track:29a4d426dc9fd2b4cec225d3cb569a59c2c9f059674956b791b72f64a76b155a` |
+| 9 | `def` | [couple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LieNamespacedPublic.lean/declarations/couple.md) | 90 | `declaration-track:dd34ebd6b37216cadf29f0099094954b349dc238e97ec129e1dadd16ffde2a62` |
+| 10 | `lemma` | [mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LieNamespacedPublic.lean/declarations/mem.md) | 103 | `result-track:d0b11add4ca93d8b76e069fe0244f2a106d135f2e8aff00668ce75e4be063ee0` |
+| 11 | `def` | [mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LieNamespacedPublic.lean/declarations/mk.md) | 110 | `declaration-track:e26eaa544ee7e74fc69c36511a0d5a5682b0b0a8ae93859436f117f5f0dbce2e` |
+| 12 | `lemma` | [mk_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LieNamespacedPublic.lean/declarations/mk-left.md) | 114 | `result-track:4f315cdac1134f7980e7fa35d4367d37c6383e92019b41d5ca0ae30a267033f7` |
+| 13 | `lemma` | [mk_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LieNamespacedPublic.lean/declarations/mk-right.md) | 117 | `result-track:09057b1d6289e33e3fa135a14ea6bf5842451aae8238bee6853f642192bc42f5` |
+| 14 | `lemma` | [apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LieNamespacedPublic.lean/declarations/apply.md) | 120 | `result-track:da7da29abbcb3b35ad809db3e95573d4e306f38fcaf48f102a31e9f44ed3045a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

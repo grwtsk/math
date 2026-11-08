@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ExactWeightedArithmeticSpectrumEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ExactWeightedArithmeticSpectrumEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactWeightedArithmeticSpectrumEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactWeightedArithmeticSpectrumEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [negativeAngularTransform](../../../../MeasureAndIntegration/ExactWeightedArithmeticSpectrumEdition2.lean/declarations/negativeangulartransform.md) | 23 | `declaration-track:2214d769a79c076682a4306c00b2950282804f5c15c8421a74b1d130381cc918` |
-| 2 | `def` | [arithmeticSpectrum](../../../../MeasureAndIntegration/ExactWeightedArithmeticSpectrumEdition2.lean/declarations/arithmeticspectrum.md) | 25 | `declaration-track:243f124342161eff56ff9dbde705aa134c0e4421b85452135feba1e7c42eecf6` |
-| 3 | `theorem` | [sourceFourier_translate](../../../../MeasureAndIntegration/ExactWeightedArithmeticSpectrumEdition2.lean/declarations/sourcefourier-translate.md) | 29 | `result-track:33bdbff9249846414e29e588c07d2f45ffacd31b4b39456b7e50907f53a33042` |
-| 4 | `theorem` | [source_phase_integrable](../../../../MeasureAndIntegration/ExactWeightedArithmeticSpectrumEdition2.lean/declarations/source-phase-integrable.md) | 48 | `result-track:15f50e93cdfb5a7e89eab4ffb982f227a22222199bf65c7f1ee56a26ccca65d7` |
-| 5 | `theorem` | [actual_sourceFourier_finite_sum](../../../../MeasureAndIntegration/ExactWeightedArithmeticSpectrumEdition2.lean/declarations/actual-sourcefourier-finite-sum.md) | 61 | `result-track:5572b159466aca87cb9bbf2a539713b00266cb9e87a083c222e5f000b5721989` |
-| 6 | `theorem` | [exact_weighted_spectrum](../../../../MeasureAndIntegration/ExactWeightedArithmeticSpectrumEdition2.lean/declarations/exact-weighted-spectrum.md) | 83 | `result-track:e1a489244f09776c145af29aa38090ceb8153a36076021d6ff1f92ee002881db` |
-| 7 | `theorem` | [exact_weighted_spectral_square](../../../../MeasureAndIntegration/ExactWeightedArithmeticSpectrumEdition2.lean/declarations/exact-weighted-spectral-square.md) | 97 | `result-track:bce851f7c01fdaa395f676914a6bc76935bd354336408e2ba2302b5ae67d57db` |
+| 1 | `def` | [negativeAngularTransform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactWeightedArithmeticSpectrumEdition2.lean/declarations/negativeangulartransform.md) | 23 | `declaration-track:2214d769a79c076682a4306c00b2950282804f5c15c8421a74b1d130381cc918` |
+| 2 | `def` | [arithmeticSpectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactWeightedArithmeticSpectrumEdition2.lean/declarations/arithmeticspectrum.md) | 25 | `declaration-track:243f124342161eff56ff9dbde705aa134c0e4421b85452135feba1e7c42eecf6` |
+| 3 | `theorem` | [sourceFourier_translate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactWeightedArithmeticSpectrumEdition2.lean/declarations/sourcefourier-translate.md) | 29 | `result-track:33bdbff9249846414e29e588c07d2f45ffacd31b4b39456b7e50907f53a33042` |
+| 4 | `theorem` | [source_phase_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactWeightedArithmeticSpectrumEdition2.lean/declarations/source-phase-integrable.md) | 48 | `result-track:15f50e93cdfb5a7e89eab4ffb982f227a22222199bf65c7f1ee56a26ccca65d7` |
+| 5 | `theorem` | [actual_sourceFourier_finite_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactWeightedArithmeticSpectrumEdition2.lean/declarations/actual-sourcefourier-finite-sum.md) | 61 | `result-track:5572b159466aca87cb9bbf2a539713b00266cb9e87a083c222e5f000b5721989` |
+| 6 | `theorem` | [exact_weighted_spectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactWeightedArithmeticSpectrumEdition2.lean/declarations/exact-weighted-spectrum.md) | 83 | `result-track:e1a489244f09776c145af29aa38090ceb8153a36076021d6ff1f92ee002881db` |
+| 7 | `theorem` | [exact_weighted_spectral_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactWeightedArithmeticSpectrumEdition2.lean/declarations/exact-weighted-spectral-square.md) | 97 | `result-track:bce851f7c01fdaa395f676914a6bc76935bd354336408e2ba2302b5ae67d57db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

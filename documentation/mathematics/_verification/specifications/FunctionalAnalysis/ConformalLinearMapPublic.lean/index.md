@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ConformalLinearMapPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ConformalLinearMapPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ConformalLinearMapPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ConformalLinearMapPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isConformalMap_iff](../../../../FunctionalAnalysis/ConformalLinearMapPublic.lean/declarations/isconformalmap-iff.md) | 31 | `result-track:4fc6da23fb78e0ff2e33232c43066533d99570fad68182cdfeb8775d2dcfbc8d` |
+| 1 | `theorem` | [isConformalMap_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ConformalLinearMapPublic.lean/declarations/isconformalmap-iff.md) | 31 | `result-track:4fc6da23fb78e0ff2e33232c43066533d99570fad68182cdfeb8775d2dcfbc8d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

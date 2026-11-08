@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearRedundantMeasurements.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearRedundantMeasurements.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearRedundantMeasurements.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearRedundantMeasurements.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.LinearObservationKernels`](../../../../../GroupTheoryAndGeneralizations/LinearObservationKernels.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.LinearObservationKernels`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LinearObservationKernels.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [postprocessed_linear_observation_kernel_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearRedundantMeasurements.lean/declarations/postprocessed-linear-observation-kernel-iff.md) | 31 | `result-track:6dbfdea21cf3b0854ca714d1e629594789d41e6565db74e3e9fcf64c52ec10ea` |
-| 2 | `theorem` | [postprocessed_augmented_reconstruction_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearRedundantMeasurements.lean/declarations/postprocessed-augmented-reconstruction-iff.md) | 43 | `result-track:ecf9a74bc5e03eb2dfc9133e0a94179f64d3a820f1d7017095c23e105c476b19` |
-| 3 | `theorem` | [detecting_invisible_direction_not_postprocessed](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearRedundantMeasurements.lean/declarations/detecting-invisible-direction-not-postprocessed.md) | 55 | `result-track:b2376e989bfc8caa309ad63f16f97aa73d4f161f2b6f295d72656b27a7c4656c` |
+| 1 | `theorem` | [postprocessed_linear_observation_kernel_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearRedundantMeasurements.lean/declarations/postprocessed-linear-observation-kernel-iff.md) | 31 | `result-track:6dbfdea21cf3b0854ca714d1e629594789d41e6565db74e3e9fcf64c52ec10ea` |
+| 2 | `theorem` | [postprocessed_augmented_reconstruction_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearRedundantMeasurements.lean/declarations/postprocessed-augmented-reconstruction-iff.md) | 43 | `result-track:ecf9a74bc5e03eb2dfc9133e0a94179f64d3a820f1d7017095c23e105c476b19` |
+| 3 | `theorem` | [detecting_invisible_direction_not_postprocessed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearRedundantMeasurements.lean/declarations/detecting-invisible-direction-not-postprocessed.md) | 55 | `result-track:b2376e989bfc8caa309ad63f16f97aa73d4f161f2b6f295d72656b27a7c4656c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

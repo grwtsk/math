@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnifyEqNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnifyEqNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnifyEqNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnifyEqNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [heqToEq'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnifyEqNamespacedPublic.lean/declarations/heqtoeq.md) | 25 | `declaration-track:6f103561841727099d533afe867a9277dfc0f503159753e5bd868859a17db274` |
-| 2 | `structure` | [UnifyEqResult](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnifyEqNamespacedPublic.lean/declarations/unifyeqresult.md) | 32 | `declaration-track:1378cfcb203c5eb21855308bdf99578ac9834a6b576fdfc4ccfc454f8832804d` |
-| 3 | `def` | [toOffset?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnifyEqNamespacedPublic.lean/declarations/tooffset.md) | 37 | `declaration-track:7de68bb5d8d38030492a8c553e8e672de25a64ede9f23341a33a6493a8e0e758` |
-| 4 | `def` | [unifyEq?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnifyEqNamespacedPublic.lean/declarations/unifyeq.md) | 56 | `declaration-track:e127991410af5158d93b0fa61a0838d6a5e59cffee07acf57c7a61a568126d64` |
+| 1 | `def` | [heqToEq'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnifyEqNamespacedPublic.lean/declarations/heqtoeq.md) | 25 | `declaration-track:6f103561841727099d533afe867a9277dfc0f503159753e5bd868859a17db274` |
+| 2 | `structure` | [UnifyEqResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnifyEqNamespacedPublic.lean/declarations/unifyeqresult.md) | 32 | `declaration-track:1378cfcb203c5eb21855308bdf99578ac9834a6b576fdfc4ccfc454f8832804d` |
+| 3 | `def` | [toOffset?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnifyEqNamespacedPublic.lean/declarations/tooffset.md) | 37 | `declaration-track:7de68bb5d8d38030492a8c553e8e672de25a64ede9f23341a33a6493a8e0e758` |
+| 4 | `def` | [unifyEq?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnifyEqNamespacedPublic.lean/declarations/unifyeq.md) | 56 | `declaration-track:e127991410af5158d93b0fa61a0838d6a5e59cffee07acf57c7a61a568126d64` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

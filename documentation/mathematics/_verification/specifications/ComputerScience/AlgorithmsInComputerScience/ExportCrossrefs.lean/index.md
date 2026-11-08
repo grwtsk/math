@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ExportCrossrefs.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ExportCrossrefs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExportCrossrefs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExportCrossrefs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [declLocation](../../../../../ComputerScience/AlgorithmsInComputerScience/ExportCrossrefs.lean/declarations/decllocation.md) | 31 | `declaration-track:b6a4c2384c1cb74994c02bf52ef1d4025c52353221cb388fb0c57f3261ee034a` |
-| 2 | `def` | [buildEntries](../../../../../ComputerScience/AlgorithmsInComputerScience/ExportCrossrefs.lean/declarations/buildentries.md) | 40 | `declaration-track:355db9ae3ff8e3565c6bf0cc5b953b16e4911e4ca59c7ea1e11cf32ce6518e7f` |
+| 1 | `def` | [declLocation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExportCrossrefs.lean/declarations/decllocation.md) | 31 | `declaration-track:b6a4c2384c1cb74994c02bf52ef1d4025c52353221cb388fb0c57f3261ee034a` |
+| 2 | `def` | [buildEntries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExportCrossrefs.lean/declarations/buildentries.md) | 40 | `declaration-track:355db9ae3ff8e3565c6bf0cc5b953b16e4911e4ca59c7ea1e11cf32ce6518e7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

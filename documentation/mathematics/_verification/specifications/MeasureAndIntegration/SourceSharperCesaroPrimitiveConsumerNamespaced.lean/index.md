@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceSharperCesaroPrimitiveConsumerNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceSharperCesaroPrimitiveConsumerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSharperCesaroPrimitiveConsumerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSharperCesaroPrimitiveConsumerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [remainingAtomWork_lower_of_sharper_cesaro](../../../../MeasureAndIntegration/SourceSharperCesaroPrimitiveConsumerNamespaced.lean/declarations/remainingatomwork-lower-of-sharper-cesaro.md) | 36 | `result-track:0a0985b124e56088607596a7c8015129787b12b553f5aa46c6c359434f658029` |
-| 2 | `theorem` | [estimate_of_sharper_cesaro_global](../../../../MeasureAndIntegration/SourceSharperCesaroPrimitiveConsumerNamespaced.lean/declarations/estimate-of-sharper-cesaro-global.md) | 79 | `result-track:51517443ed11b602ae1043e11f03db6eb62abf713281ff0f1d8c4e1b57f1def7` |
-| 3 | `theorem` | [all_real_source_lower_of_sharper_cesaro_global](../../../../MeasureAndIntegration/SourceSharperCesaroPrimitiveConsumerNamespaced.lean/declarations/all-real-source-lower-of-sharper-cesaro-global.md) | 88 | `result-track:314009bfaa51eaa81a65f90a55b235094646eeab03d1117e0b35edde5375b7f2` |
-| 4 | `theorem` | [estimate_of_sharper_cesaro_global_exists](../../../../MeasureAndIntegration/SourceSharperCesaroPrimitiveConsumerNamespaced.lean/declarations/estimate-of-sharper-cesaro-global-exists.md) | 101 | `result-track:da7d74ff6de10ac8bd3b8cadaa38f87ef9647724baeef6e3b8b01ed84ea90987` |
+| 1 | `theorem` | [remainingAtomWork_lower_of_sharper_cesaro](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSharperCesaroPrimitiveConsumerNamespaced.lean/declarations/remainingatomwork-lower-of-sharper-cesaro.md) | 36 | `result-track:0a0985b124e56088607596a7c8015129787b12b553f5aa46c6c359434f658029` |
+| 2 | `theorem` | [estimate_of_sharper_cesaro_global](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSharperCesaroPrimitiveConsumerNamespaced.lean/declarations/estimate-of-sharper-cesaro-global.md) | 79 | `result-track:51517443ed11b602ae1043e11f03db6eb62abf713281ff0f1d8c4e1b57f1def7` |
+| 3 | `theorem` | [all_real_source_lower_of_sharper_cesaro_global](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSharperCesaroPrimitiveConsumerNamespaced.lean/declarations/all-real-source-lower-of-sharper-cesaro-global.md) | 88 | `result-track:314009bfaa51eaa81a65f90a55b235094646eeab03d1117e0b35edde5375b7f2` |
+| 4 | `theorem` | [estimate_of_sharper_cesaro_global_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSharperCesaroPrimitiveConsumerNamespaced.lean/declarations/estimate-of-sharper-cesaro-global-exists.md) | 101 | `result-track:da7d74ff6de10ac8bd3b8cadaa38f87ef9647724baeef6e3b8b01ed84ea90987` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/ShapeNamespaced.lean/index.md) · [Full source](../../../../AlgebraicTopology/ShapeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ShapeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ShapeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,22 +58,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Shape](../../../../AlgebraicTopology/ShapeNamespaced.lean/declarations/shape.md) | 33 | `declaration-track:5cf138252059f74ad54c36821d504f228393ac04b242a3adb86d0360ad0eeb95` |
-| 2 | `abbrev` | [SimplexOperator](../../../../AlgebraicTopology/ShapeNamespaced.lean/declarations/simplexoperator.md) | 36 | `declaration-track:f56e2fff4792586b97e1b3026b3a928aaf262428873fa2310bf828fd8b39ec53` |
-| 3 | `abbrev` | [Cell](../../../../AlgebraicTopology/ShapeNamespaced.lean/declarations/cell.md) | 42 | `declaration-track:3daba3873ff2f0efa79963cef2c477e5d3197d69f6ca1665de7250584b3fd498` |
-| 4 | `def` | [restrict](../../../../AlgebraicTopology/ShapeNamespaced.lean/declarations/restrict.md) | 46 | `declaration-track:ff05269103499284b704e01c13c59a0d85907f9cfe8140f6995ab83b5cb56cfe` |
-| 5 | `def` | [face](../../../../AlgebraicTopology/ShapeNamespaced.lean/declarations/face.md) | 51 | `declaration-track:6b343b74035f748115187aabda512e1ae26421361e52c7439c4ff6959ef213b3` |
-| 6 | `def` | [degeneracy](../../../../AlgebraicTopology/ShapeNamespaced.lean/declarations/degeneracy.md) | 56 | `declaration-track:fe06c6f9967f439f6a677faefd5fca9f9152b6e8628ba2d0dec2c809dc8fb55b` |
-| 7 | `theorem` | [restrict_id](../../../../AlgebraicTopology/ShapeNamespaced.lean/declarations/restrict-id.md) | 61 | `result-track:f732993cae711e317f2bb53f18ed365d260eb4b3f48fdddc218ab2f29a658ae0` |
-| 8 | `theorem` | [restrict_comp](../../../../AlgebraicTopology/ShapeNamespaced.lean/declarations/restrict-comp.md) | 66 | `result-track:c5a88df9513e139c1c59834eb62eb4f4c0bdc595a5f2588de4fae9f0644d63b1` |
-| 9 | `theorem` | [restrict_naturality](../../../../AlgebraicTopology/ShapeNamespaced.lean/declarations/restrict-naturality.md) | 73 | `result-track:dae270f13204758f68956df94ac280a9f2e505f5ba79a3158cb2316ed706696d` |
-| 10 | `abbrev` | [compMap](../../../../AlgebraicTopology/ShapeNamespaced.lean/declarations/compmap.md) | 84 | `declaration-track:f8f071b3c1c9264911bcc4ec1278d952e1a647a6fcff1c3a9f8f90e1ba6b9b7c` |
-| 11 | `theorem` | [compMap_app_apply](../../../../AlgebraicTopology/ShapeNamespaced.lean/declarations/compmap-app-apply.md) | 88 | `result-track:937dbc29bcb474ec77e8128657a18761e1c98c6fb647defae15e07c50ea842e6` |
-| 12 | `theorem` | [face_eq_map](../../../../AlgebraicTopology/ShapeNamespaced.lean/declarations/face-eq-map.md) | 94 | `result-track:f834db20a2da840c6a58959b45c1ba777e5b30ff3c06d915481fbfe3680d50ce` |
-| 13 | `theorem` | [degeneracy_eq_map](../../../../AlgebraicTopology/ShapeNamespaced.lean/declarations/degeneracy-eq-map.md) | 100 | `result-track:de4535e4390fc265a3e6e85286b28f2246ceb5c1a4ff87788e7e759cfec6e1c8` |
-| 14 | `structure` | [FiniteShape](../../../../AlgebraicTopology/ShapeNamespaced.lean/declarations/finiteshape.md) | 108 | `declaration-track:19e291f48e8381f72fe74cd072170e719228d9f98386b850b05868291d3cddd0` |
-| 15 | `structure` | [TruncatedShape](../../../../AlgebraicTopology/ShapeNamespaced.lean/declarations/truncatedshape.md) | 113 | `declaration-track:f7d9b12eb6b1bc2b3b2b510aad8a2f03fa50454a368d45189080312a2f1a10f3` |
-| 16 | `def` | [Cell](../../../../AlgebraicTopology/ShapeNamespaced.lean/declarations/cell-source-edition-2.md) | 119 | `declaration-track:dcc4da108e0b9d047c0e487d1d0ec8d471cc16ef812eb57ce67ea90df7088eb7` |
+| 1 | `abbrev` | [Shape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ShapeNamespaced.lean/declarations/shape.md) | 33 | `declaration-track:5cf138252059f74ad54c36821d504f228393ac04b242a3adb86d0360ad0eeb95` |
+| 2 | `abbrev` | [SimplexOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ShapeNamespaced.lean/declarations/simplexoperator.md) | 36 | `declaration-track:f56e2fff4792586b97e1b3026b3a928aaf262428873fa2310bf828fd8b39ec53` |
+| 3 | `abbrev` | [Cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ShapeNamespaced.lean/declarations/cell.md) | 42 | `declaration-track:3daba3873ff2f0efa79963cef2c477e5d3197d69f6ca1665de7250584b3fd498` |
+| 4 | `def` | [restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ShapeNamespaced.lean/declarations/restrict.md) | 46 | `declaration-track:ff05269103499284b704e01c13c59a0d85907f9cfe8140f6995ab83b5cb56cfe` |
+| 5 | `def` | [face](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ShapeNamespaced.lean/declarations/face.md) | 51 | `declaration-track:6b343b74035f748115187aabda512e1ae26421361e52c7439c4ff6959ef213b3` |
+| 6 | `def` | [degeneracy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ShapeNamespaced.lean/declarations/degeneracy.md) | 56 | `declaration-track:fe06c6f9967f439f6a677faefd5fca9f9152b6e8628ba2d0dec2c809dc8fb55b` |
+| 7 | `theorem` | [restrict_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ShapeNamespaced.lean/declarations/restrict-id.md) | 61 | `result-track:f732993cae711e317f2bb53f18ed365d260eb4b3f48fdddc218ab2f29a658ae0` |
+| 8 | `theorem` | [restrict_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ShapeNamespaced.lean/declarations/restrict-comp.md) | 66 | `result-track:c5a88df9513e139c1c59834eb62eb4f4c0bdc595a5f2588de4fae9f0644d63b1` |
+| 9 | `theorem` | [restrict_naturality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ShapeNamespaced.lean/declarations/restrict-naturality.md) | 73 | `result-track:dae270f13204758f68956df94ac280a9f2e505f5ba79a3158cb2316ed706696d` |
+| 10 | `abbrev` | [compMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ShapeNamespaced.lean/declarations/compmap.md) | 84 | `declaration-track:f8f071b3c1c9264911bcc4ec1278d952e1a647a6fcff1c3a9f8f90e1ba6b9b7c` |
+| 11 | `theorem` | [compMap_app_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ShapeNamespaced.lean/declarations/compmap-app-apply.md) | 88 | `result-track:937dbc29bcb474ec77e8128657a18761e1c98c6fb647defae15e07c50ea842e6` |
+| 12 | `theorem` | [face_eq_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ShapeNamespaced.lean/declarations/face-eq-map.md) | 94 | `result-track:f834db20a2da840c6a58959b45c1ba777e5b30ff3c06d915481fbfe3680d50ce` |
+| 13 | `theorem` | [degeneracy_eq_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ShapeNamespaced.lean/declarations/degeneracy-eq-map.md) | 100 | `result-track:de4535e4390fc265a3e6e85286b28f2246ceb5c1a4ff87788e7e759cfec6e1c8` |
+| 14 | `structure` | [FiniteShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ShapeNamespaced.lean/declarations/finiteshape.md) | 108 | `declaration-track:19e291f48e8381f72fe74cd072170e719228d9f98386b850b05868291d3cddd0` |
+| 15 | `structure` | [TruncatedShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ShapeNamespaced.lean/declarations/truncatedshape.md) | 113 | `declaration-track:f7d9b12eb6b1bc2b3b2b510aad8a2f03fa50454a368d45189080312a2f1a10f3` |
+| 16 | `def` | [Cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ShapeNamespaced.lean/declarations/cell-source-edition-2.md) | 119 | `declaration-track:dcc4da108e0b9d047c0e487d1d0ec8d471cc16ef812eb57ce67ea90df7088eb7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

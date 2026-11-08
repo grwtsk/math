@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IsTrivialOnPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IsTrivialOnPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsTrivialOnPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsTrivialOnPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [valuation_aeval_monomial_eq_valuation_pow](../../../../CommutativeAlgebra/IsTrivialOnPublic.lean/declarations/valuation-aeval-monomial-eq-valuation-pow.md) | 41 | `result-track:d36bd60b40cb0582876b3d66b21719d8629ba6b9cd74f5e3eded7a850fa5f70a` |
-| 2 | `theorem` | [valuation_aeval_eq_valuation_X_pow_natDegree_of_one_lt_valuation_X](../../../../CommutativeAlgebra/IsTrivialOnPublic.lean/declarations/valuation-aeval-eq-valuation-x-pow-natdegree-of-one-lt-valuation-x.md) | 45 | `result-track:13600821653a011ee920fac73f6b8c4d93c63e1198c570b5d3984141384a354c` |
-| 3 | `theorem` | [Valuation.transcendental_of_ne_one](../../../../CommutativeAlgebra/IsTrivialOnPublic.lean/declarations/valuation-transcendental-of-ne-one.md) | 74 | `result-track:513da354d64516d3cc8043f974a65ba35c079d6e04f763d9b67493d5d1177c80` |
+| 1 | `lemma` | [valuation_aeval_monomial_eq_valuation_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsTrivialOnPublic.lean/declarations/valuation-aeval-monomial-eq-valuation-pow.md) | 41 | `result-track:d36bd60b40cb0582876b3d66b21719d8629ba6b9cd74f5e3eded7a850fa5f70a` |
+| 2 | `theorem` | [valuation_aeval_eq_valuation_X_pow_natDegree_of_one_lt_valuation_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsTrivialOnPublic.lean/declarations/valuation-aeval-eq-valuation-x-pow-natdegree-of-one-lt-valuation-x.md) | 45 | `result-track:13600821653a011ee920fac73f6b8c4d93c63e1198c570b5d3984141384a354c` |
+| 3 | `theorem` | [Valuation.transcendental_of_ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsTrivialOnPublic.lean/declarations/valuation-transcendental-of-ne-one.md) | 74 | `result-track:513da354d64516d3cc8043f974a65ba35c079d6e04f763d9b67493d5d1177c80` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

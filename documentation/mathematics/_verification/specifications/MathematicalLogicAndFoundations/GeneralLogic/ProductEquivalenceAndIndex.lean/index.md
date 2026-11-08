@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProductEquivalenceAndIndex.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProductEquivalenceAndIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProductEquivalenceAndIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProductEquivalenceAndIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GridCell](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProductEquivalenceAndIndex.lean/declarations/gridcell.md) | 35 | `declaration-track:77666dc76859b1fe43d745c22e35936ac2735d3ca2c1c669422c082e43a5a50c` |
-| 2 | `def` | [gridCellEquiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProductEquivalenceAndIndex.lean/declarations/gridcellequiv.md) | 42 | `declaration-track:51d1fd7d5210edef9bfa30e5df5b9a6c1577ce84bebcc61046f0233aa1a584ed` |
-| 3 | `instance` | [gridCellFintype](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProductEquivalenceAndIndex.lean/declarations/gridcellfintype.md) | 49 | `declaration-track:1a83a148e6b0daa83adef85b0fb31c1d78c3d6506f61e6c22535b7a47a65399b` |
-| 4 | `def` | [GridCell.rowMajorIndex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProductEquivalenceAndIndex.lean/declarations/gridcell-rowmajorindex.md) | 54 | `declaration-track:dc5c3fe04ce5b76cecdc54abe0d0644b8f64b2b05f572ad13516b7c9ec495fb5` |
+| 1 | `structure` | [GridCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProductEquivalenceAndIndex.lean/declarations/gridcell.md) | 35 | `declaration-track:77666dc76859b1fe43d745c22e35936ac2735d3ca2c1c669422c082e43a5a50c` |
+| 2 | `def` | [gridCellEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProductEquivalenceAndIndex.lean/declarations/gridcellequiv.md) | 42 | `declaration-track:51d1fd7d5210edef9bfa30e5df5b9a6c1577ce84bebcc61046f0233aa1a584ed` |
+| 3 | `instance` | [gridCellFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProductEquivalenceAndIndex.lean/declarations/gridcellfintype.md) | 49 | `declaration-track:1a83a148e6b0daa83adef85b0fb31c1d78c3d6506f61e6c22535b7a47a65399b` |
+| 4 | `def` | [GridCell.rowMajorIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProductEquivalenceAndIndex.lean/declarations/gridcell-rowmajorindex.md) | 54 | `declaration-track:dc5c3fe04ce5b76cecdc54abe0d0644b8f64b2b05f572ad13516b7c9ec495fb5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

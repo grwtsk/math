@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ZetaHalfPlaneScaffoldNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/ZetaHalfPlaneScaffoldNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ZetaHalfPlaneScaffoldNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ZetaHalfPlaneScaffoldNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ZetaSeriesConvergesOnRealHalfPlane](../../../../RealFunctions/ZetaHalfPlaneScaffoldNamespaced.lean/declarations/zetaseriesconvergesonrealhalfplane.md) | 25 | `declaration-track:f9836bf26a5ff847abadba8a1adc5813be40e6ee1304e5233c4747e90ae64270` |
-| 2 | `def` | [EulerProductForZetaHalfPlaneTarget](../../../../RealFunctions/ZetaHalfPlaneScaffoldNamespaced.lean/declarations/eulerproductforzetahalfplanetarget.md) | 30 | `declaration-track:a07e872670b9256a18c3fee913dd3d28b30772a68bbdd4d6b88ff1e887bcc482` |
-| 3 | `def` | [ZetaNonzeroOnRealGreaterThanOneTarget](../../../../RealFunctions/ZetaHalfPlaneScaffoldNamespaced.lean/declarations/zetanonzeroonrealgreaterthanonetarget.md) | 35 | `declaration-track:b0b84d6503d4db23e522c7410454ff512bcf897033d59376f0ea530a780bc6f2` |
-| 4 | `def` | [PrimeNumberTheoremTarget](../../../../RealFunctions/ZetaHalfPlaneScaffoldNamespaced.lean/declarations/primenumbertheoremtarget.md) | 40 | `declaration-track:1b7d9d127b780401225d639cb9b79d4ab45a51a37c3b8d303a3a76da55ca12c4` |
-| 5 | `theorem` | [finite_partial_zeta_sum_nonnegative](../../../../RealFunctions/ZetaHalfPlaneScaffoldNamespaced.lean/declarations/finite-partial-zeta-sum-nonnegative.md) | 45 | `result-track:89524f00161d765cec3798d565ff8ed8b0c90b718a41f5d22bf08f9e4eba67af` |
+| 1 | `def` | [ZetaSeriesConvergesOnRealHalfPlane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ZetaHalfPlaneScaffoldNamespaced.lean/declarations/zetaseriesconvergesonrealhalfplane.md) | 25 | `declaration-track:f9836bf26a5ff847abadba8a1adc5813be40e6ee1304e5233c4747e90ae64270` |
+| 2 | `def` | [EulerProductForZetaHalfPlaneTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ZetaHalfPlaneScaffoldNamespaced.lean/declarations/eulerproductforzetahalfplanetarget.md) | 30 | `declaration-track:a07e872670b9256a18c3fee913dd3d28b30772a68bbdd4d6b88ff1e887bcc482` |
+| 3 | `def` | [ZetaNonzeroOnRealGreaterThanOneTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ZetaHalfPlaneScaffoldNamespaced.lean/declarations/zetanonzeroonrealgreaterthanonetarget.md) | 35 | `declaration-track:b0b84d6503d4db23e522c7410454ff512bcf897033d59376f0ea530a780bc6f2` |
+| 4 | `def` | [PrimeNumberTheoremTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ZetaHalfPlaneScaffoldNamespaced.lean/declarations/primenumbertheoremtarget.md) | 40 | `declaration-track:1b7d9d127b780401225d639cb9b79d4ab45a51a37c3b8d303a3a76da55ca12c4` |
+| 5 | `theorem` | [finite_partial_zeta_sum_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ZetaHalfPlaneScaffoldNamespaced.lean/declarations/finite-partial-zeta-sum-nonnegative.md) | 45 | `result-track:89524f00161d765cec3798d565ff8ed8b0c90b718a41f5d22bf08f9e4eba67af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

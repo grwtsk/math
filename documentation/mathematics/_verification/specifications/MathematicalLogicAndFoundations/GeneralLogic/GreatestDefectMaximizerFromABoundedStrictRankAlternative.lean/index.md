@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRankAlternative.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRankAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRankAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRankAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_maximizer_of_finite_values](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRankAlternative.lean/declarations/exists-maximizer-of-finite-values.md) | 29 | `result-track:f3149e9d5df4827dac009b96ff6be5a213619de67a040dd202002086d001aa1d` |
-| 2 | `theorem` | [exists_unique_greatest_maximizer_of_bounded_rank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRankAlternative.lean/declarations/exists-unique-greatest-maximizer-of-bounded-rank.md) | 43 | `result-track:91e272bbb34a3c991ee087d95721ad7d86fb69e0c4cfc69bb9d76521fe372da5` |
-| 3 | `theorem` | [exists_greatest_maximizer_fixed_of_bounded_rank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRankAlternative.lean/declarations/exists-greatest-maximizer-fixed-of-bounded-rank.md) | 75 | `result-track:7c88d42cad832731eabb5cc14e2ed96f4630e221ff75e03f4806d8881fdcc51b` |
-| 4 | `theorem` | [exists_greatest_maximizer_fixed_of_finite_values_bounded_rank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRankAlternative.lean/declarations/exists-greatest-maximizer-fixed-of-finite-values-bounded-rank.md) | 88 | `result-track:357a95d339f48302cc6a485e93937339adc173e298a16aa4ff8a1cf018f7fc0e` |
+| 1 | `theorem` | [exists_maximizer_of_finite_values](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRankAlternative.lean/declarations/exists-maximizer-of-finite-values.md) | 29 | `result-track:f3149e9d5df4827dac009b96ff6be5a213619de67a040dd202002086d001aa1d` |
+| 2 | `theorem` | [exists_unique_greatest_maximizer_of_bounded_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRankAlternative.lean/declarations/exists-unique-greatest-maximizer-of-bounded-rank.md) | 43 | `result-track:91e272bbb34a3c991ee087d95721ad7d86fb69e0c4cfc69bb9d76521fe372da5` |
+| 3 | `theorem` | [exists_greatest_maximizer_fixed_of_bounded_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRankAlternative.lean/declarations/exists-greatest-maximizer-fixed-of-bounded-rank.md) | 75 | `result-track:7c88d42cad832731eabb5cc14e2ed96f4630e221ff75e03f4806d8881fdcc51b` |
+| 4 | `theorem` | [exists_greatest_maximizer_fixed_of_finite_values_bounded_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRankAlternative.lean/declarations/exists-greatest-maximizer-fixed-of-finite-values-bounded-rank.md) | 88 | `result-track:357a95d339f48302cc6a485e93937339adc173e298a16aa4ff8a1cf018f7fc0e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

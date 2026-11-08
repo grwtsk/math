@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/ArchitectureAudit.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/ArchitectureAudit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ArchitectureAudit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ArchitectureAudit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Prime.LeastPrime`](../../../../../NumberTheory/MultiplicativeNumberTheory/LeastPrime.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Prime.LeastPrime`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LeastPrime.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/ArchitectureAudit.lean/declarations/example.md) | 4 | `declaration-track:19f1b08b6cfd5ab394981513240e0b7ebd697331548ca25809a50d3e17c60925` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/ArchitectureAudit.lean/declarations/example-source-edition-3.md) | 6 | `declaration-track:e0e8f6641a7f5619db06b6299b4c294a4edc226c538135caafcac87a1aa997b9` |
-| 3 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/ArchitectureAudit.lean/declarations/example-source-edition-4.md) | 9 | `declaration-track:ed863fa045bbd247c947f8a50ea463ea82d81ee31bdac6259f4a8baf2cc5d95a` |
-| 4 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/ArchitectureAudit.lean/declarations/example-source-edition-2.md) | 12 | `declaration-track:3528c0aeabe0221b437d8255aaf255ff675e3dc015f4175deac26bd29acc6358` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ArchitectureAudit.lean/declarations/example.md) | 4 | `declaration-track:19f1b08b6cfd5ab394981513240e0b7ebd697331548ca25809a50d3e17c60925` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ArchitectureAudit.lean/declarations/example-source-edition-3.md) | 6 | `declaration-track:e0e8f6641a7f5619db06b6299b4c294a4edc226c538135caafcac87a1aa997b9` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ArchitectureAudit.lean/declarations/example-source-edition-4.md) | 9 | `declaration-track:ed863fa045bbd247c947f8a50ea463ea82d81ee31bdac6259f4a8baf2cc5d95a` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ArchitectureAudit.lean/declarations/example-source-edition-2.md) | 12 | `declaration-track:3528c0aeabe0221b437d8255aaf255ff675e3dc015f4175deac26bd29acc6358` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

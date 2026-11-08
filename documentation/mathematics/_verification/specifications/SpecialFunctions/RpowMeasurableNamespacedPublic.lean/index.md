@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/RpowMeasurableNamespacedPublic.lean/index.md) · [Full source](../../../../SpecialFunctions/RpowMeasurableNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RpowMeasurableNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RpowMeasurableNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [measurable_sqrt](../../../../SpecialFunctions/RpowMeasurableNamespacedPublic.lean/declarations/measurable-sqrt.md) | 36 | `result-track:65f8ffd57db10c8cb4c73f60f6da71f1af118e3d074fa62f650bb050976d6d85` |
+| 1 | `lemma` | [measurable_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RpowMeasurableNamespacedPublic.lean/declarations/measurable-sqrt.md) | 36 | `result-track:65f8ffd57db10c8cb4c73f60f6da71f1af118e3d074fa62f650bb050976d6d85` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

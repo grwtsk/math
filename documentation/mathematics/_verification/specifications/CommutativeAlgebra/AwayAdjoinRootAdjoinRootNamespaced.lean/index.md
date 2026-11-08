@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AwayAdjoinRootAdjoinRootNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AwayAdjoinRootAdjoinRootNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AwayAdjoinRootAdjoinRootNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AwayAdjoinRootAdjoinRootNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Localization.awayEquivAdjoin](../../../../CommutativeAlgebra/AwayAdjoinRootAdjoinRootNamespaced.lean/declarations/localization-awayequivadjoin.md) | 32 | `declaration-track:72ed0ddd45f3a3ddbf1f2f237f2abfd28a68d49b10b3085740fdf3cbf457040f` |
-| 2 | `theorem` | [IsLocalization.adjoin_inv](../../../../CommutativeAlgebra/AwayAdjoinRootAdjoinRootNamespaced.lean/declarations/islocalization-adjoin-inv.md) | 47 | `result-track:88413e17c8fab60265604b9de4ab08d09d79b3dc69df65d92e1663d751733b70` |
-| 3 | `theorem` | [IsLocalization.Away.finitePresentation](../../../../CommutativeAlgebra/AwayAdjoinRootAdjoinRootNamespaced.lean/declarations/islocalization-away-finitepresentation.md) | 50 | `result-track:a09e88331aca9e889085f5af01086faaaa8857eaab71402c11749d02985a5602` |
+| 1 | `def` | [Localization.awayEquivAdjoin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AwayAdjoinRootAdjoinRootNamespaced.lean/declarations/localization-awayequivadjoin.md) | 32 | `declaration-track:72ed0ddd45f3a3ddbf1f2f237f2abfd28a68d49b10b3085740fdf3cbf457040f` |
+| 2 | `theorem` | [IsLocalization.adjoin_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AwayAdjoinRootAdjoinRootNamespaced.lean/declarations/islocalization-adjoin-inv.md) | 47 | `result-track:88413e17c8fab60265604b9de4ab08d09d79b3dc69df65d92e1663d751733b70` |
+| 3 | `theorem` | [IsLocalization.Away.finitePresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AwayAdjoinRootAdjoinRootNamespaced.lean/declarations/islocalization-away-finitepresentation.md) | 50 | `result-track:a09e88331aca9e889085f5af01086faaaa8857eaab71402c11749d02985a5602` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

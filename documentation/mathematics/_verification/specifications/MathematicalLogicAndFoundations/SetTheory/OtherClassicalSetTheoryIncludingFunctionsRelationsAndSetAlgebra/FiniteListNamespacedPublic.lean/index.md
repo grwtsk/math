@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteListNamespacedPublic.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteListNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteListNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteListNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [finite_length_eq](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteListNamespacedPublic.lean/declarations/finite-length-eq.md) | 34 | `result-track:f8a7facc8336298f13b2814e12721f0318b10ae6f51e66a4e9e415f3b4f7657f` |
-| 2 | `lemma` | [finite_length_lt](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteListNamespacedPublic.lean/declarations/finite-length-lt.md) | 37 | `result-track:6692c27d2944ac4e78080fea9da7b07c7a6514a1c15281a22fde093ccf7cf325` |
-| 3 | `lemma` | [finite_length_le](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteListNamespacedPublic.lean/declarations/finite-length-le.md) | 40 | `result-track:2fe5bc5ef69cabe714236b277ecfb69716ad4cfcbdc5c78b1a686cfc735573fb` |
+| 1 | `lemma` | [finite_length_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteListNamespacedPublic.lean/declarations/finite-length-eq.md) | 34 | `result-track:f8a7facc8336298f13b2814e12721f0318b10ae6f51e66a4e9e415f3b4f7657f` |
+| 2 | `lemma` | [finite_length_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteListNamespacedPublic.lean/declarations/finite-length-lt.md) | 37 | `result-track:6692c27d2944ac4e78080fea9da7b07c7a6514a1c15281a22fde093ccf7cf325` |
+| 3 | `lemma` | [finite_length_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteListNamespacedPublic.lean/declarations/finite-length-le.md) | 40 | `result-track:2fe5bc5ef69cabe714236b277ecfb69716ad4cfcbdc5c78b1a686cfc735573fb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

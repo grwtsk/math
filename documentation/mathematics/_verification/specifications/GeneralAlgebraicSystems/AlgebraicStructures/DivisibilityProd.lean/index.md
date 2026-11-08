@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProd.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prod_dvd_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProd.lean/declarations/prod-dvd-iff.md) | 16 | `result-track:85cccdb27f87522e8c2b12d122d961b682bdc4d3bd285307e825fdb7b01ecf7a` |
-| 2 | `theorem` | [Prod.mk_dvd_mk](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProd.lean/declarations/prod-mk-dvd-mk.md) | 23 | `result-track:f0f9079eb7bdbcc3252c77f61b763e6247cfd006187a53fe0febfe9308813949` |
-| 3 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProd.lean/declarations/instance-source-edition-2.md) | 27 | `declaration-track:e385f79e965617ea90772cae9b37777e432c6cb0a5abed4089212b02dd73b6bb` |
-| 4 | `theorem` | [pi_dvd_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProd.lean/declarations/pi-dvd-iff.md) | 35 | `result-track:d2f27c2571a2751fb6e36a49b50cd520dbba836245292352e856bb5861f4ca51` |
-| 5 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProd.lean/declarations/instance.md) | 38 | `declaration-track:affda769313a3ecafa2f2dde88fb18b882047f884e89095235adbc1936796123` |
+| 1 | `theorem` | [prod_dvd_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProd.lean/declarations/prod-dvd-iff.md) | 16 | `result-track:85cccdb27f87522e8c2b12d122d961b682bdc4d3bd285307e825fdb7b01ecf7a` |
+| 2 | `theorem` | [Prod.mk_dvd_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProd.lean/declarations/prod-mk-dvd-mk.md) | 23 | `result-track:f0f9079eb7bdbcc3252c77f61b763e6247cfd006187a53fe0febfe9308813949` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProd.lean/declarations/instance-source-edition-2.md) | 27 | `declaration-track:e385f79e965617ea90772cae9b37777e432c6cb0a5abed4089212b02dd73b6bb` |
+| 4 | `theorem` | [pi_dvd_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProd.lean/declarations/pi-dvd-iff.md) | 35 | `result-track:d2f27c2571a2751fb6e36a49b50cd520dbba836245292352e856bb5861f4ca51` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityProd.lean/declarations/instance.md) | 38 | `declaration-track:affda769313a3ecafa2f2dde88fb18b882047f884e89095235adbc1936796123` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

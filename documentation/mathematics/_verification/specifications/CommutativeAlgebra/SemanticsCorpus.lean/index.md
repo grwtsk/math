@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SemanticsCorpus.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SemanticsCorpus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SemanticsCorpus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SemanticsCorpus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [source](../../../../CommutativeAlgebra/SemanticsCorpus.lean/declarations/source.md) | 19 | `declaration-track:72ba81954ad4825692170398d351d40eb710bb3da349a79bfd4bf29b19ecf209` |
-| 2 | `def` | [witnessCarrier](../../../../CommutativeAlgebra/SemanticsCorpus.lean/declarations/witnesscarrier.md) | 44 | `declaration-track:b027670c710673da0494fc54bba8d9cd45327063bfac99dd34aa60a7cf487a7d` |
-| 3 | `def` | [endpointCorrectness](../../../../CommutativeAlgebra/SemanticsCorpus.lean/declarations/endpointcorrectness.md) | 63 | `declaration-track:69fb0e0baebd28559ce49d01c7cb5f5dcc3ed2c0673cc99bb297443945e17941` |
-| 4 | `def` | [integralCorrectness](../../../../CommutativeAlgebra/SemanticsCorpus.lean/declarations/integralcorrectness.md) | 83 | `declaration-track:89efba3396262c6a3df2b6441a43be8e71940267911232600c2223e47fe92a2f` |
-| 5 | `def` | [links](../../../../CommutativeAlgebra/SemanticsCorpus.lean/declarations/links.md) | 102 | `declaration-track:b7605f959e483e7675e675567aa7dc7b3fd545c5d99178a5f16a8bcdc58ccc7f` |
-| 6 | `theorem` | [links_length](../../../../CommutativeAlgebra/SemanticsCorpus.lean/declarations/links-length.md) | 108 | `result-track:00200a2e7a670f8672a33370d2164ebcb31f5d9cd8b39e43a413ddfe7fc625e7` |
+| 1 | `def` | [source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SemanticsCorpus.lean/declarations/source.md) | 19 | `declaration-track:72ba81954ad4825692170398d351d40eb710bb3da349a79bfd4bf29b19ecf209` |
+| 2 | `def` | [witnessCarrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SemanticsCorpus.lean/declarations/witnesscarrier.md) | 44 | `declaration-track:b027670c710673da0494fc54bba8d9cd45327063bfac99dd34aa60a7cf487a7d` |
+| 3 | `def` | [endpointCorrectness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SemanticsCorpus.lean/declarations/endpointcorrectness.md) | 63 | `declaration-track:69fb0e0baebd28559ce49d01c7cb5f5dcc3ed2c0673cc99bb297443945e17941` |
+| 4 | `def` | [integralCorrectness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SemanticsCorpus.lean/declarations/integralcorrectness.md) | 83 | `declaration-track:89efba3396262c6a3df2b6441a43be8e71940267911232600c2223e47fe92a2f` |
+| 5 | `def` | [links](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SemanticsCorpus.lean/declarations/links.md) | 102 | `declaration-track:b7605f959e483e7675e675567aa7dc7b3fd545c5d99178a5f16a8bcdc58ccc7f` |
+| 6 | `theorem` | [links_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SemanticsCorpus.lean/declarations/links-length.md) | 108 | `result-track:00200a2e7a670f8672a33370d2164ebcb31f5d9cd8b39e43a413ddfe7fc625e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

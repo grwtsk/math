@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SignedInformationNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SignedInformationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SignedInformationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SignedInformationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [absoluteValueObstruction](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SignedInformationNamespaced.lean/declarations/absolutevalueobstruction.md) | 29 | `declaration-track:687bee00c6f0ea7b28b531334f12e4d4bd3fa6122053481ee527e73dcb9189d7` |
-| 2 | `theorem` | [absoluteValue_not_descends](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SignedInformationNamespaced.lean/declarations/absolutevalue-not-descends.md) | 36 | `result-track:883041aca2fd4a62f53bccb8258686ec8b36147465be3521fe5095340bf28944` |
-| 3 | `def` | [coordinatewiseAbs](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SignedInformationNamespaced.lean/declarations/coordinatewiseabs.md) | 40 | `declaration-track:7c04ef83dcc08899cc43993b18c0cba980c0d62a97dc0ac94341fd530415d50e` |
-| 4 | `def` | [signedSum](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SignedInformationNamespaced.lean/declarations/signedsum.md) | 44 | `declaration-track:0ae8938624be8056a228767160168469fa2f1a3d42364ff7eb8c03e68c93f8a9` |
-| 5 | `def` | [singleCoordinate](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SignedInformationNamespaced.lean/declarations/singlecoordinate.md) | 48 | `declaration-track:e5b0bbe85b3282bbfd944410da740a315cdf6b3bfb3f71742b4ba0d4c8071106` |
-| 6 | `def` | [coordinatewiseAbsSumObstruction](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SignedInformationNamespaced.lean/declarations/coordinatewiseabssumobstruction.md) | 54 | `declaration-track:945e20c2bacb27de277eddb581da25e7884e12894630884ab9404a76a48631c1` |
-| 7 | `theorem` | [coordinatewiseAbs_sum_not_descends](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SignedInformationNamespaced.lean/declarations/coordinatewiseabs-sum-not-descends.md) | 65 | `result-track:70140f69c6bff3e573d2ce88b73d865b269f35d2f175bed97afb22e71370145e` |
+| 1 | `def` | [absoluteValueObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SignedInformationNamespaced.lean/declarations/absolutevalueobstruction.md) | 29 | `declaration-track:687bee00c6f0ea7b28b531334f12e4d4bd3fa6122053481ee527e73dcb9189d7` |
+| 2 | `theorem` | [absoluteValue_not_descends](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SignedInformationNamespaced.lean/declarations/absolutevalue-not-descends.md) | 36 | `result-track:883041aca2fd4a62f53bccb8258686ec8b36147465be3521fe5095340bf28944` |
+| 3 | `def` | [coordinatewiseAbs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SignedInformationNamespaced.lean/declarations/coordinatewiseabs.md) | 40 | `declaration-track:7c04ef83dcc08899cc43993b18c0cba980c0d62a97dc0ac94341fd530415d50e` |
+| 4 | `def` | [signedSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SignedInformationNamespaced.lean/declarations/signedsum.md) | 44 | `declaration-track:0ae8938624be8056a228767160168469fa2f1a3d42364ff7eb8c03e68c93f8a9` |
+| 5 | `def` | [singleCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SignedInformationNamespaced.lean/declarations/singlecoordinate.md) | 48 | `declaration-track:e5b0bbe85b3282bbfd944410da740a315cdf6b3bfb3f71742b4ba0d4c8071106` |
+| 6 | `def` | [coordinatewiseAbsSumObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SignedInformationNamespaced.lean/declarations/coordinatewiseabssumobstruction.md) | 54 | `declaration-track:945e20c2bacb27de277eddb581da25e7884e12894630884ab9404a76a48631c1` |
+| 7 | `theorem` | [coordinatewiseAbs_sum_not_descends](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SignedInformationNamespaced.lean/declarations/coordinatewiseabs-sum-not-descends.md) | 65 | `result-track:70140f69c6bff3e573d2ce88b73d865b269f35d2f175bed97afb22e71370145e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

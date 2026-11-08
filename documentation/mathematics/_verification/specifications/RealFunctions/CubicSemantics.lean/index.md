@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CubicSemantics.lean/index.md) · [Full source](../../../../RealFunctions/CubicSemantics.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CubicSemantics.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CubicSemantics.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CubicCellSemantics](../../../../RealFunctions/CubicSemantics.lean/declarations/cubiccellsemantics.md) | 19 | `declaration-track:9abee426b2f73f5c98c6d8adc616a659e8debf7c0d7d0d1d7ccc61abe3208084` |
-| 2 | `theorem` | [CubicCellSemantics.correct](../../../../RealFunctions/CubicSemantics.lean/declarations/cubiccellsemantics-correct.md) | 26 | `result-track:174e1351145b37e810b8ce0b25d503385898ad1eb06cc2a6ccfa5fb501897521` |
+| 1 | `structure` | [CubicCellSemantics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CubicSemantics.lean/declarations/cubiccellsemantics.md) | 19 | `declaration-track:9abee426b2f73f5c98c6d8adc616a659e8debf7c0d7d0d1d7ccc61abe3208084` |
+| 2 | `theorem` | [CubicCellSemantics.correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CubicSemantics.lean/declarations/cubiccellsemantics-correct.md) | 26 | `result-track:174e1351145b37e810b8ce0b25d503385898ad1eb06cc2a6ccfa5fb501897521` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

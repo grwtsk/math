@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/TorsionPeriodicityIterateAct.lean/index.md) · [Full source](../../../../Combinatorics/TorsionPeriodicityIterateAct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionPeriodicityIterateAct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionPeriodicityIterateAct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [iterateAct](../../../../Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/iterateact.md) | 21 | `declaration-track:f85a2decc8eb2d90cd8206bf0e81440d48a10197a35b8217e1ebd4a9a4de3b4f` |
-| 2 | `theorem` | [iterateAct_zero](../../../../Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/iterateact-zero.md) | 33 | `result-track:6de5a37fb1fc47be409ce3d7435a750d29dfd1fcf0d543264dc0b460dd54412c` |
-| 3 | `theorem` | [iterateAct_succ](../../../../Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/iterateact-succ.md) | 45 | `result-track:578c138dd0b451c36b112171518179a3339e47204c3eb6576dc516ffebede471` |
-| 4 | `theorem` | [act_nsmulPoint_apply](../../../../Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/act-nsmulpoint-apply.md) | 58 | `result-track:8e18f934063513c64fe010640a48e00e9676bb11150189ce7cfcc60e3aebe33e` |
-| 5 | `def` | [HasPeriodDividing](../../../../Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/hasperioddividing.md) | 79 | `declaration-track:f1654c5d7c60eb6a1cafb9d344e9c72b8d1c52deeb2f98aa43f5f0d57ffde776` |
-| 6 | `theorem` | [period_dividing_of_nsmul_eq_zero](../../../../Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/period-dividing-of-nsmul-eq-zero.md) | 89 | `result-track:b2ae6bbff6446fee447cacea0869cba77fdfa1cf80b0e3a107b5c5095080cb41` |
-| 7 | `theorem` | [period_dividing_of_hasOrder](../../../../Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/period-dividing-of-hasorder.md) | 105 | `result-track:fb9ca6a1a9c6e904cf97ded746532cf48311cd5506a35a48fe74e6e590efd52f` |
-| 8 | `theorem` | [exists_period_dividing_of_isTorsion](../../../../Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/exists-period-dividing-of-istorsion.md) | 117 | `result-track:bd66fc68d2ea82440e52ea120987c289d90a454ace9275f44101160fd8ddc3cd` |
-| 9 | `theorem` | [catalan_torsion_period_dividing_of_hasOrder](../../../../Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/catalan-torsion-period-dividing-of-hasorder.md) | 131 | `result-track:df39260ab25e848f423f7f7f82d1db403c68c804a375ec1485d8f6edaebea748` |
-| 10 | `theorem` | [catalan_torsion_period_on_transported_of_hasOrder](../../../../Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/catalan-torsion-period-on-transported-of-hasorder.md) | 145 | `result-track:6d9749dd472fdd20f9b14da3d2ab43526fbb5b3599db2113249432766839a7b7` |
+| 1 | `def` | [iterateAct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/iterateact.md) | 21 | `declaration-track:f85a2decc8eb2d90cd8206bf0e81440d48a10197a35b8217e1ebd4a9a4de3b4f` |
+| 2 | `theorem` | [iterateAct_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/iterateact-zero.md) | 33 | `result-track:6de5a37fb1fc47be409ce3d7435a750d29dfd1fcf0d543264dc0b460dd54412c` |
+| 3 | `theorem` | [iterateAct_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/iterateact-succ.md) | 45 | `result-track:578c138dd0b451c36b112171518179a3339e47204c3eb6576dc516ffebede471` |
+| 4 | `theorem` | [act_nsmulPoint_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/act-nsmulpoint-apply.md) | 58 | `result-track:8e18f934063513c64fe010640a48e00e9676bb11150189ce7cfcc60e3aebe33e` |
+| 5 | `def` | [HasPeriodDividing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/hasperioddividing.md) | 79 | `declaration-track:f1654c5d7c60eb6a1cafb9d344e9c72b8d1c52deeb2f98aa43f5f0d57ffde776` |
+| 6 | `theorem` | [period_dividing_of_nsmul_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/period-dividing-of-nsmul-eq-zero.md) | 89 | `result-track:b2ae6bbff6446fee447cacea0869cba77fdfa1cf80b0e3a107b5c5095080cb41` |
+| 7 | `theorem` | [period_dividing_of_hasOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/period-dividing-of-hasorder.md) | 105 | `result-track:fb9ca6a1a9c6e904cf97ded746532cf48311cd5506a35a48fe74e6e590efd52f` |
+| 8 | `theorem` | [exists_period_dividing_of_isTorsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/exists-period-dividing-of-istorsion.md) | 117 | `result-track:bd66fc68d2ea82440e52ea120987c289d90a454ace9275f44101160fd8ddc3cd` |
+| 9 | `theorem` | [catalan_torsion_period_dividing_of_hasOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/catalan-torsion-period-dividing-of-hasorder.md) | 131 | `result-track:df39260ab25e848f423f7f7f82d1db403c68c804a375ec1485d8f6edaebea748` |
+| 10 | `theorem` | [catalan_torsion_period_on_transported_of_hasOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionPeriodicityIterateAct.lean/declarations/catalan-torsion-period-on-transported-of-hasorder.md) | 145 | `result-track:6d9749dd472fdd20f9b14da3d2ab43526fbb5b3599db2113249432766839a7b7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

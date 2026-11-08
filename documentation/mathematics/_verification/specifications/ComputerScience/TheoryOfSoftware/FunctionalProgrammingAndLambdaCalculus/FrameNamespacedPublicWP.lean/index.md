@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FrameNamespacedPublicWP.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FrameNamespacedPublicWP.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FrameNamespacedPublicWP.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FrameNamespacedPublicWP.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [WP.Frames](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FrameNamespacedPublicWP.lean/declarations/wp-frames.md) | 39 | `declaration-track:f1cf5a7ab2d6a28a4365245cabff06d3aabab6ee6d51f84b98b52b6c20583e71` |
-| 2 | `theorem` | [WP.Frames.op_wp_upperAdjoint_le_wp](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FrameNamespacedPublicWP.lean/declarations/wp-frames-op-wp-upperadjoint-le-wp.md) | 46 | `result-track:5261def08635ec298363cb04c36bef4a2fe8b8287cb4e03f68085ef7e9a7cfbf` |
-| 3 | `theorem` | [WP.Frames.le_frameClosure](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FrameNamespacedPublicWP.lean/declarations/wp-frames-le-frameclosure.md) | 58 | `result-track:495cedc07f3b1ca5427fb6c2cbafe846e0fa9d9e4fd8d6b1189d75badf60c986` |
-| 4 | `theorem` | [WP.Frames.of_frameClosure](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FrameNamespacedPublicWP.lean/declarations/wp-frames-of-frameclosure.md) | 67 | `result-track:e7f80ec8ac29c9e4960752afa8dce9dceeec276611e6a336118dbc724bdd5193` |
-| 5 | `theorem` | [WP.Frames.of_wp_conjunctive](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FrameNamespacedPublicWP.lean/declarations/wp-frames-of-wp-conjunctive.md) | 81 | `result-track:dfd70894c6dfc13a66348baf7dbb648f78117a1e3b309f6ccb4709b849fd0855` |
-| 6 | `def` | [WPMonad.of_frameClosure](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FrameNamespacedPublicWP.lean/declarations/wpmonad-of-frameclosure.md) | 98 | `declaration-track:943a8d2c92fb3557ae282f9c860bc1871f8e0017a4e0f894649a1a6512fc3489` |
+| 1 | `structure` | [WP.Frames](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FrameNamespacedPublicWP.lean/declarations/wp-frames.md) | 39 | `declaration-track:f1cf5a7ab2d6a28a4365245cabff06d3aabab6ee6d51f84b98b52b6c20583e71` |
+| 2 | `theorem` | [WP.Frames.op_wp_upperAdjoint_le_wp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FrameNamespacedPublicWP.lean/declarations/wp-frames-op-wp-upperadjoint-le-wp.md) | 46 | `result-track:5261def08635ec298363cb04c36bef4a2fe8b8287cb4e03f68085ef7e9a7cfbf` |
+| 3 | `theorem` | [WP.Frames.le_frameClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FrameNamespacedPublicWP.lean/declarations/wp-frames-le-frameclosure.md) | 58 | `result-track:495cedc07f3b1ca5427fb6c2cbafe846e0fa9d9e4fd8d6b1189d75badf60c986` |
+| 4 | `theorem` | [WP.Frames.of_frameClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FrameNamespacedPublicWP.lean/declarations/wp-frames-of-frameclosure.md) | 67 | `result-track:e7f80ec8ac29c9e4960752afa8dce9dceeec276611e6a336118dbc724bdd5193` |
+| 5 | `theorem` | [WP.Frames.of_wp_conjunctive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FrameNamespacedPublicWP.lean/declarations/wp-frames-of-wp-conjunctive.md) | 81 | `result-track:dfd70894c6dfc13a66348baf7dbb648f78117a1e3b309f6ccb4709b849fd0855` |
+| 6 | `def` | [WPMonad.of_frameClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FrameNamespacedPublicWP.lean/declarations/wpmonad-of-frameclosure.md) | 98 | `declaration-track:943a8d2c92fb3557ae282f9c860bc1871f8e0017a4e0f894649a1a6512fc3489` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

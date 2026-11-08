@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ZeroNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ZeroNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ZeroNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ZeroNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isZero_of_subsingleton](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ZeroNamespaced.lean/declarations/iszero-of-subsingleton.md) | 34 | `result-track:7c6bb85ac8d254420663972f976ef22ea765867ebd71897930a2e58352ba4921` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ZeroNamespaced.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:ab283ed6db512ed07f9b6e91cd503230636ae049718c6392a5868934bb764a67` |
-| 3 | `theorem` | [isZero_of_subsingleton](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ZeroNamespaced.lean/declarations/iszero-of-subsingleton-source-edition-2.md) | 51 | `result-track:df4b62169e6f93fef80d6f8e0052beb582c9f68498e74c27c39adf1de59f8485` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ZeroNamespaced.lean/declarations/instance.md) | 60 | `declaration-track:a92af1a1e0042d7447d58841b925457c2815ee506bf5860623c0e277d2ef94ec` |
+| 1 | `theorem` | [isZero_of_subsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ZeroNamespaced.lean/declarations/iszero-of-subsingleton.md) | 34 | `result-track:7c6bb85ac8d254420663972f976ef22ea765867ebd71897930a2e58352ba4921` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ZeroNamespaced.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:ab283ed6db512ed07f9b6e91cd503230636ae049718c6392a5868934bb764a67` |
+| 3 | `theorem` | [isZero_of_subsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ZeroNamespaced.lean/declarations/iszero-of-subsingleton-source-edition-2.md) | 51 | `result-track:df4b62169e6f93fef80d6f8e0052beb582c9f68498e74c27c39adf1de59f8485` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ZeroNamespaced.lean/declarations/instance.md) | 60 | `declaration-track:a92af1a1e0042d7447d58841b925457c2815ee506bf5860623c0e277d2ef94ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

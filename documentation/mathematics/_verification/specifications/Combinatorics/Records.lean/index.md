@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Records.lean/index.md) · [Full source](../../../../Combinatorics/Records.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Records.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Records.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [RequiredRecordFamily](../../../../Combinatorics/Records.lean/declarations/requiredrecordfamily.md) | 14 | `declaration-track:13a3c3c968d483dc48677f5949f2aea8201e010d5ea7dfc4da224eff05003596` |
-| 2 | `def` | [all](../../../../Combinatorics/Records.lean/declarations/all.md) | 64 | `declaration-track:4a1a687ef04cf6650d8a32175832a7510dc6af29aafdb16c3b14947571a7e223` |
-| 3 | `theorem` | [card_all](../../../../Combinatorics/Records.lean/declarations/card-all.md) | 67 | `result-track:89d1b5f5dcb158b4374c0041113ecba688b61940f0a48971baaeab3f7c3aad8c` |
-| 4 | `theorem` | [mem_all](../../../../Combinatorics/Records.lean/declarations/mem-all.md) | 70 | `result-track:14e9a547ccd777d2541f7bed07dce1616d676601584c3329efd6aa784c070150` |
-| 5 | `structure` | [TopologyComparisonRecord](../../../../Combinatorics/Records.lean/declarations/topologycomparisonrecord.md) | 75 | `declaration-track:9727359f93572546bc64f589ea62122a37b8baf2447fb41cdc4a721e4014da76` |
-| 6 | `structure` | [ReflectiveMutationRecord](../../../../Combinatorics/Records.lean/declarations/reflectivemutationrecord.md) | 87 | `declaration-track:7185937ba3381e4549681123e33cf9303e96e847fcff36629697e94e890bfae5` |
-| 7 | `def` | [Complete](../../../../Combinatorics/Records.lean/declarations/complete.md) | 114 | `declaration-track:04c9b31ce12191951ea1facc046a4cfc0eecefc59b34ca545d63078810ad0e7d` |
-| 8 | `inductive` | [ComponentEvidenceStatus](../../../../Combinatorics/Records.lean/declarations/componentevidencestatus.md) | 130 | `declaration-track:017e8fb9d5c25889176364e64ef2c726e6e31133f5d9c1dc51c462847da4fd3e` |
-| 9 | `structure` | [ComponentEvidenceEntry](../../../../Combinatorics/Records.lean/declarations/componentevidenceentry.md) | 140 | `declaration-track:881540649fe69d91dff4b8d53d2f176d3444f0c4857a1afcdf0a53a6115f2171` |
-| 10 | `structure` | [ComponentEvidenceReport](../../../../Combinatorics/Records.lean/declarations/componentevidencereport.md) | 148 | `declaration-track:7441823c39383a3b22a9c93a5e57dac9a19b88247aaf688d1150d85c2c8374b7` |
-| 11 | `def` | [Scoped](../../../../Combinatorics/Records.lean/declarations/scoped.md) | 162 | `declaration-track:86683a473dcabbae4fc198b8eb831224709873fe521e3a5feffbd3ed57241578` |
+| 1 | `inductive` | [RequiredRecordFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Records.lean/declarations/requiredrecordfamily.md) | 14 | `declaration-track:13a3c3c968d483dc48677f5949f2aea8201e010d5ea7dfc4da224eff05003596` |
+| 2 | `def` | [all](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Records.lean/declarations/all.md) | 64 | `declaration-track:4a1a687ef04cf6650d8a32175832a7510dc6af29aafdb16c3b14947571a7e223` |
+| 3 | `theorem` | [card_all](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Records.lean/declarations/card-all.md) | 67 | `result-track:89d1b5f5dcb158b4374c0041113ecba688b61940f0a48971baaeab3f7c3aad8c` |
+| 4 | `theorem` | [mem_all](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Records.lean/declarations/mem-all.md) | 70 | `result-track:14e9a547ccd777d2541f7bed07dce1616d676601584c3329efd6aa784c070150` |
+| 5 | `structure` | [TopologyComparisonRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Records.lean/declarations/topologycomparisonrecord.md) | 75 | `declaration-track:9727359f93572546bc64f589ea62122a37b8baf2447fb41cdc4a721e4014da76` |
+| 6 | `structure` | [ReflectiveMutationRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Records.lean/declarations/reflectivemutationrecord.md) | 87 | `declaration-track:7185937ba3381e4549681123e33cf9303e96e847fcff36629697e94e890bfae5` |
+| 7 | `def` | [Complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Records.lean/declarations/complete.md) | 114 | `declaration-track:04c9b31ce12191951ea1facc046a4cfc0eecefc59b34ca545d63078810ad0e7d` |
+| 8 | `inductive` | [ComponentEvidenceStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Records.lean/declarations/componentevidencestatus.md) | 130 | `declaration-track:017e8fb9d5c25889176364e64ef2c726e6e31133f5d9c1dc51c462847da4fd3e` |
+| 9 | `structure` | [ComponentEvidenceEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Records.lean/declarations/componentevidenceentry.md) | 140 | `declaration-track:881540649fe69d91dff4b8d53d2f176d3444f0c4857a1afcdf0a53a6115f2171` |
+| 10 | `structure` | [ComponentEvidenceReport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Records.lean/declarations/componentevidencereport.md) | 148 | `declaration-track:7441823c39383a3b22a9c93a5e57dac9a19b88247aaf688d1150d85c2c8374b7` |
+| 11 | `def` | [Scoped](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Records.lean/declarations/scoped.md) | 162 | `declaration-track:86683a473dcabbae4fc198b8eb831224709873fe521e3a5feffbd3ed57241578` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

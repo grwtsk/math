@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/index.md) · [Full source](../../../../HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [expect_eq_ite](../../../../HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/expect-eq-ite.md) | 39 | `result-track:027c6ab38106856f209879c15cc183ab300c2856bb02270d6e7634b83da2f92c` |
-| 2 | `lemma` | [expect_eq_zero_iff_ne_zero](../../../../HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/expect-eq-zero-iff-ne-zero.md) | 42 | `result-track:8d47e72d6cf91493429ef38d9d755db24ff5cc8efbb8aa7fe4a047fc14c62a66` |
-| 3 | `lemma` | [expect_ne_zero_iff_eq_zero](../../../../HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/expect-ne-zero-iff-eq-zero.md) | 45 | `result-track:101a2c066a20856f42e32c8da4ed9cfc4c4efeb2640ea3edc17cd515ceef3f94` |
-| 4 | `lemma` | [wInner_cWeight_self](../../../../HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/winner-cweight-self.md) | 52 | `result-track:bc8cf190d3a93859b84205389f8abbf3feacafd91fae6222963dea504812c99a` |
-| 5 | `lemma` | [wInner_cWeight_eq_boole](../../../../HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/winner-cweight-eq-boole.md) | 64 | `result-track:3229f4e68b3dec97988f0be08ebb7b5dfcf2e261cb128dea59bc83d4570b5a68` |
-| 6 | `lemma` | [wInner_cWeight_eq_zero_iff_ne](../../../../HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/winner-cweight-eq-zero-iff-ne.md) | 72 | `result-track:0401082ac30e1292efe56e7bf93645efdf3f7e9bbef3e31891698113d3ae2431` |
-| 7 | `lemma` | [wInner_cWeight_eq_one_iff_eq](../../../../HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/winner-cweight-eq-one-iff-eq.md) | 75 | `result-track:16b5f8f127acabe8db34c813787f31d6c3c8746bb399ca3ee55aa21213ee9b9e` |
-| 8 | `lemma` | [linearIndependent](../../../../HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/linearindependent.md) | 80 | `result-track:8da6d82c9e5112e235c59c10f280e511263e163cfeeed700f55cd23f1c4df902` |
-| 9 | `instance` | [instFintype](../../../../HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/instfintype.md) | 85 | `declaration-track:9a706c3eba27ae4e47257c8b0a48a85fe40ecb5f07554f15cb7083e22cd62518` |
-| 10 | `lemma` | [card_addChar_le](../../../../HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/card-addchar-le.md) | 88 | `result-track:e888ad93976f21d307db7ebdc4954420d0ade6b6bad40d3bdb7d3b3de1a4cc3c` |
+| 1 | `lemma` | [expect_eq_ite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/expect-eq-ite.md) | 39 | `result-track:027c6ab38106856f209879c15cc183ab300c2856bb02270d6e7634b83da2f92c` |
+| 2 | `lemma` | [expect_eq_zero_iff_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/expect-eq-zero-iff-ne-zero.md) | 42 | `result-track:8d47e72d6cf91493429ef38d9d755db24ff5cc8efbb8aa7fe4a047fc14c62a66` |
+| 3 | `lemma` | [expect_ne_zero_iff_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/expect-ne-zero-iff-eq-zero.md) | 45 | `result-track:101a2c066a20856f42e32c8da4ed9cfc4c4efeb2640ea3edc17cd515ceef3f94` |
+| 4 | `lemma` | [wInner_cWeight_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/winner-cweight-self.md) | 52 | `result-track:bc8cf190d3a93859b84205389f8abbf3feacafd91fae6222963dea504812c99a` |
+| 5 | `lemma` | [wInner_cWeight_eq_boole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/winner-cweight-eq-boole.md) | 64 | `result-track:3229f4e68b3dec97988f0be08ebb7b5dfcf2e261cb128dea59bc83d4570b5a68` |
+| 6 | `lemma` | [wInner_cWeight_eq_zero_iff_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/winner-cweight-eq-zero-iff-ne.md) | 72 | `result-track:0401082ac30e1292efe56e7bf93645efdf3f7e9bbef3e31891698113d3ae2431` |
+| 7 | `lemma` | [wInner_cWeight_eq_one_iff_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/winner-cweight-eq-one-iff-eq.md) | 75 | `result-track:16b5f8f127acabe8db34c813787f31d6c3c8746bb399ca3ee55aa21213ee9b9e` |
+| 8 | `lemma` | [linearIndependent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/linearindependent.md) | 80 | `result-track:8da6d82c9e5112e235c59c10f280e511263e163cfeeed700f55cd23f1c4df902` |
+| 9 | `instance` | [instFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/instfintype.md) | 85 | `declaration-track:9a706c3eba27ae4e47257c8b0a48a85fe40ecb5f07554f15cb7083e22cd62518` |
+| 10 | `lemma` | [card_addChar_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/OrthogonalityNamespaced.lean/declarations/card-addchar-le.md) | 88 | `result-track:e888ad93976f21d307db7ebdc4954420d0ade6b6bad40d3bdb7d3b3de1a4cc3c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

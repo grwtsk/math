@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetUnion.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetUnion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetUnion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetUnion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Ioc_subset_biUnion_Ioc](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetUnion.lean/declarations/ioc-subset-biunion-ioc.md) | 21 | `result-track:d42464750dbaef4c087b0bacb8cca9440cf52bc56f5d8122e48180e460f27889` |
-| 2 | `theorem` | [Ico_subset_biUnion_Ico](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetUnion.lean/declarations/ico-subset-biunion-ico.md) | 30 | `result-track:cfcc206cb05981af145ec90074b88d4b0285adcb073140ed3c0e31cde82ac0b1` |
+| 1 | `theorem` | [Ioc_subset_biUnion_Ioc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetUnion.lean/declarations/ioc-subset-biunion-ioc.md) | 21 | `result-track:d42464750dbaef4c087b0bacb8cca9440cf52bc56f5d8122e48180e460f27889` |
+| 2 | `theorem` | [Ico_subset_biUnion_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetUnion.lean/declarations/ico-subset-biunion-ico.md) | 30 | `result-track:cfcc206cb05981af145ec90074b88d4b0285adcb073140ed3c0e31cde82ac0b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

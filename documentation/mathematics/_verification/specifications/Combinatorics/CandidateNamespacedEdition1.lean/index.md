@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CandidateNamespacedEdition1.lean/index.md) · [Full source](../../../../Combinatorics/CandidateNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CandidateNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CandidateNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ParentSelectionKey](../../../../Combinatorics/CandidateNamespacedEdition1.lean/declarations/parentselectionkey.md) | 23 | `declaration-track:012ba1137ee5113b4a47dd7b8c3763333b0091f4b8730fc156807a7757272993` |
-| 2 | `inductive` | [ParentKind](../../../../Combinatorics/CandidateNamespacedEdition1.lean/declarations/parentkind.md) | 34 | `declaration-track:6def345c08a83d6c024fb7a39bcf25235a281283c1d8f2ba7cca424055b7b172` |
-| 3 | `structure` | [ParentCandidate](../../../../Combinatorics/CandidateNamespacedEdition1.lean/declarations/parentcandidate.md) | 40 | `declaration-track:7e5ce15c85a6696c2e5d1094a7f8ad72c46d91fd15176fc197c12e8eee4966f8` |
-| 4 | `structure` | [ParentExplanation](../../../../Combinatorics/CandidateNamespacedEdition1.lean/declarations/parentexplanation.md) | 51 | `declaration-track:3281c1e966f758adf78df101e538677806738a444505196866236946c7d7ef11` |
+| 1 | `structure` | [ParentSelectionKey](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CandidateNamespacedEdition1.lean/declarations/parentselectionkey.md) | 23 | `declaration-track:012ba1137ee5113b4a47dd7b8c3763333b0091f4b8730fc156807a7757272993` |
+| 2 | `inductive` | [ParentKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CandidateNamespacedEdition1.lean/declarations/parentkind.md) | 34 | `declaration-track:6def345c08a83d6c024fb7a39bcf25235a281283c1d8f2ba7cca424055b7b172` |
+| 3 | `structure` | [ParentCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CandidateNamespacedEdition1.lean/declarations/parentcandidate.md) | 40 | `declaration-track:7e5ce15c85a6696c2e5d1094a7f8ad72c46d91fd15176fc197c12e8eee4966f8` |
+| 4 | `structure` | [ParentExplanation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CandidateNamespacedEdition1.lean/declarations/parentexplanation.md) | 51 | `declaration-track:3281c1e966f758adf78df101e538677806738a444505196866236946c7d7ef11` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

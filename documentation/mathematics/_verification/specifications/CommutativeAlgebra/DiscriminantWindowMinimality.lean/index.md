@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/DiscriminantWindowMinimality.lean/index.md) · [Full source](../../../../CommutativeAlgebra/DiscriminantWindowMinimality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscriminantWindowMinimality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscriminantWindowMinimality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.EllipticCurve.UnitInvariantMinimality`](../../../../CommutativeAlgebra/UnitInvariantMinimality.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.EllipticCurve.UnitInvariantMinimality`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnitInvariantMinimality.lean/index.md) — import line 11; pinned internal source present.
 - `Mathlib.Tactic.Ring` — import line 12; external provider; requires a separately pinned dependency.
 - `Lean.Elab.Tactic.Omega` — import line 13; external provider; requires a separately pinned dependency.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [discriminantExponent](../../../../CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/discriminantexponent.md) | 27 | `declaration-track:019ebafa9c873a8ece540a8b4ec0b00d5b0f3f74fad26f843a9805d7ce4bab96` |
-| 2 | `theorem` | [delta_value_ne_zero](../../../../CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/delta-value-ne-zero.md) | 30 | `result-track:513b5b6ff8c42556040bb61af3295a4e9475aed9ffc3db504bf3cf0bcdf052bb` |
-| 3 | `theorem` | [delta_value_eq_exp](../../../../CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/delta-value-eq-exp.md) | 34 | `result-track:93101d003d2f4c5496939168b83298b7d85d0f4db8bc155f7b363770e7e04ea2` |
-| 4 | `theorem` | [exponent_nonneg](../../../../CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/exponent-nonneg.md) | 39 | `result-track:c7b3552007b23c80f2a125b282d4538e460d0801be142de4bfc235ebefe713fa` |
-| 5 | `theorem` | [changed_delta_ne_zero](../../../../CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/changed-delta-ne-zero.md) | 45 | `result-track:8551f2fac0e2dd38cf255337c6890d0efb122f815572274f0888ba4cf68a15c8` |
-| 6 | `theorem` | [exponent_change](../../../../CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/exponent-change.md) | 51 | `result-track:7e73a9b088ded9dc2e01bd2d6f211df5843f5544aad04b93526bc01565225fd9` |
-| 7 | `theorem` | [exponent_difference_multiple](../../../../CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/exponent-difference-multiple.md) | 66 | `result-track:fcdd00abd0f74b2d4ae91925065874994a92c69ba113b37ac033cd629eb80a54` |
-| 8 | `theorem` | [scale_log_nonneg_of_window](../../../../CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/scale-log-nonneg-of-window.md) | 73 | `result-track:fbdf9f82aaa78d67fc9ffaf2b586e40d820d56ac5ea256f07c4c34760ce68351` |
-| 9 | `theorem` | [delta_value_le_of_window](../../../../CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/delta-value-le-of-window.md) | 83 | `result-track:140c0e4f8c07659da268ea58e989d191ae81f99f7d1470705af34b80f6a0b4cd` |
-| 10 | `theorem` | [minimal_of_exponent_lt_twelve](../../../../CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/minimal-of-exponent-lt-twelve.md) | 94 | `result-track:93ae707afa62e124fd4ee58864c618d77aee2a9e8e6677dc6f1260ed74f77dd6` |
+| 1 | `def` | [discriminantExponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/discriminantexponent.md) | 27 | `declaration-track:019ebafa9c873a8ece540a8b4ec0b00d5b0f3f74fad26f843a9805d7ce4bab96` |
+| 2 | `theorem` | [delta_value_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/delta-value-ne-zero.md) | 30 | `result-track:513b5b6ff8c42556040bb61af3295a4e9475aed9ffc3db504bf3cf0bcdf052bb` |
+| 3 | `theorem` | [delta_value_eq_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/delta-value-eq-exp.md) | 34 | `result-track:93101d003d2f4c5496939168b83298b7d85d0f4db8bc155f7b363770e7e04ea2` |
+| 4 | `theorem` | [exponent_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/exponent-nonneg.md) | 39 | `result-track:c7b3552007b23c80f2a125b282d4538e460d0801be142de4bfc235ebefe713fa` |
+| 5 | `theorem` | [changed_delta_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/changed-delta-ne-zero.md) | 45 | `result-track:8551f2fac0e2dd38cf255337c6890d0efb122f815572274f0888ba4cf68a15c8` |
+| 6 | `theorem` | [exponent_change](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/exponent-change.md) | 51 | `result-track:7e73a9b088ded9dc2e01bd2d6f211df5843f5544aad04b93526bc01565225fd9` |
+| 7 | `theorem` | [exponent_difference_multiple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/exponent-difference-multiple.md) | 66 | `result-track:fcdd00abd0f74b2d4ae91925065874994a92c69ba113b37ac033cd629eb80a54` |
+| 8 | `theorem` | [scale_log_nonneg_of_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/scale-log-nonneg-of-window.md) | 73 | `result-track:fbdf9f82aaa78d67fc9ffaf2b586e40d820d56ac5ea256f07c4c34760ce68351` |
+| 9 | `theorem` | [delta_value_le_of_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/delta-value-le-of-window.md) | 83 | `result-track:140c0e4f8c07659da268ea58e989d191ae81f99f7d1470705af34b80f6a0b4cd` |
+| 10 | `theorem` | [minimal_of_exponent_lt_twelve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscriminantWindowMinimality.lean/declarations/minimal-of-exponent-lt-twelve.md) | 94 | `result-track:93ae707afa62e124fd4ee58864c618d77aee2a9e8e6677dc6f1260ed74f77dd6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/StrongerGroup.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/StrongerGroup.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/StrongerGroup.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/StrongerGroup.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.OrderedProductGauge`](../../../../GroupTheoryAndGeneralizations/OrderedProductGauge.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.OrderedProductGauge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProductGauge.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [strengthened](../../../../GroupTheoryAndGeneralizations/StrongerGroup.lean/declarations/strengthened.md) | 5 | `result-track:94a077c0be950c86ff30e62d295de5c3f9220ecca7e9d8c69bac52e2dc5ea1ac` |
-| 2 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/StrongerGroup.lean/declarations/example.md) | 6 | `declaration-track:caf2a75cd3a08a5e3dbe102aa338ca79aa0c2c054b41da76264dd94a63b737fc` |
+| 1 | `theorem` | [strengthened](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/StrongerGroup.lean/declarations/strengthened.md) | 5 | `result-track:94a077c0be950c86ff30e62d295de5c3f9220ecca7e9d8c69bac52e2dc5ea1ac` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/StrongerGroup.lean/declarations/example.md) | 6 | `declaration-track:caf2a75cd3a08a5e3dbe102aa338ca79aa0c2c054b41da76264dd94a63b737fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

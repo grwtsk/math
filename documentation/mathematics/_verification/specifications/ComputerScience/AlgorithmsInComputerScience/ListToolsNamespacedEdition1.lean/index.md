@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ListToolsNamespacedEdition1.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ListToolsNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListToolsNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListToolsNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ListTools.countTrue](../../../../../ComputerScience/AlgorithmsInComputerScience/ListToolsNamespacedEdition1.lean/declarations/listtools-counttrue.md) | 12 | `declaration-track:9b2cddf6bc9962760f34617442d2a14ff48985937a6fa43154fe280c876f14ac` |
-| 2 | `def` | [ListTools.anyTrue](../../../../../ComputerScience/AlgorithmsInComputerScience/ListToolsNamespacedEdition1.lean/declarations/listtools-anytrue.md) | 16 | `declaration-track:897eebafa7c740657fcbee094678ff0034bcefed7c8d87281ab867ea42a20fc0` |
-| 3 | `def` | [ListTools.allTrue](../../../../../ComputerScience/AlgorithmsInComputerScience/ListToolsNamespacedEdition1.lean/declarations/listtools-alltrue.md) | 20 | `declaration-track:cfff49cf29eaf8a8f653ed68401a7696c1360de5e27e9c9fff85d2fe98b047b5` |
-| 4 | `def` | [ListTools.sumNat](../../../../../ComputerScience/AlgorithmsInComputerScience/ListToolsNamespacedEdition1.lean/declarations/listtools-sumnat.md) | 24 | `declaration-track:fa42ee48a1b365cb99029063c34ecb8d9537a5d059d659914763b32626550f5d` |
-| 5 | `def` | [ListTools.sumInt](../../../../../ComputerScience/AlgorithmsInComputerScience/ListToolsNamespacedEdition1.lean/declarations/listtools-sumint.md) | 28 | `declaration-track:60f9dbd935b66984e549cc61d8c7c2bb884e405c0842f0cda490114ccfae56c4` |
-| 6 | `def` | [ListTools.prodInt](../../../../../ComputerScience/AlgorithmsInComputerScience/ListToolsNamespacedEdition1.lean/declarations/listtools-prodint.md) | 32 | `declaration-track:2a68cfbf118cdeeed8714298e086659dd2ff273f431795155cceeee1fceed402` |
+| 1 | `def` | [ListTools.countTrue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListToolsNamespacedEdition1.lean/declarations/listtools-counttrue.md) | 12 | `declaration-track:9b2cddf6bc9962760f34617442d2a14ff48985937a6fa43154fe280c876f14ac` |
+| 2 | `def` | [ListTools.anyTrue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListToolsNamespacedEdition1.lean/declarations/listtools-anytrue.md) | 16 | `declaration-track:897eebafa7c740657fcbee094678ff0034bcefed7c8d87281ab867ea42a20fc0` |
+| 3 | `def` | [ListTools.allTrue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListToolsNamespacedEdition1.lean/declarations/listtools-alltrue.md) | 20 | `declaration-track:cfff49cf29eaf8a8f653ed68401a7696c1360de5e27e9c9fff85d2fe98b047b5` |
+| 4 | `def` | [ListTools.sumNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListToolsNamespacedEdition1.lean/declarations/listtools-sumnat.md) | 24 | `declaration-track:fa42ee48a1b365cb99029063c34ecb8d9537a5d059d659914763b32626550f5d` |
+| 5 | `def` | [ListTools.sumInt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListToolsNamespacedEdition1.lean/declarations/listtools-sumint.md) | 28 | `declaration-track:60f9dbd935b66984e549cc61d8c7c2bb884e405c0842f0cda490114ccfae56c4` |
+| 6 | `def` | [ListTools.prodInt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListToolsNamespacedEdition1.lean/declarations/listtools-prodint.md) | 32 | `declaration-track:2a68cfbf118cdeeed8714298e086659dd2ff273f431795155cceeee1fceed402` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Presentation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/declarations/presentation.md) | 21 | `declaration-track:deba619d76e850b3d05ce2df6bc88e32f5673103c5392d5806dee509c9b71104` |
-| 2 | `def` | [ValidState](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/declarations/validstate.md) | 34 | `declaration-track:905be2649e90adec16543d25c4cddde47786d14085bdc21f2591d7e4b30c0adf` |
-| 3 | `structure` | [Hom](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/declarations/hom.md) | 42 | `declaration-track:be5758b857f0d6bd81af824e062b3794c34d5fb364b4149f26653524fad32027` |
-| 4 | `def` | [id](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/declarations/id.md) | 51 | `declaration-track:a766adbc9bccc6a6d89a0a453c19e55307e5a2e445a02126508fcbfd6e697500` |
-| 5 | `def` | [comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/declarations/comp.md) | 58 | `declaration-track:497b5b1adf7d23b629c1a6bb6f12b504959b575429ea0d93981dd2ba2702a0e5` |
-| 6 | `theorem` | [ext](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/declarations/ext.md) | 66 | `result-track:01915bc8fc3a3a003aa2d0350cdda8b511a166c77442e379415cbec675eb8dbd` |
-| 7 | `theorem` | [id_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/declarations/id-comp.md) | 82 | `result-track:8992a3d270871e22fad89158cf218a875116a53140f3cc2c45064d83f14f05b8` |
-| 8 | `theorem` | [comp_id](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/declarations/comp-id.md) | 87 | `result-track:cd0339520cedd10cceda13dd9d302d7724f7b63e571fde1a7ff9a778b742f537` |
-| 9 | `theorem` | [comp_assoc](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/declarations/comp-assoc.md) | 91 | `result-track:2d71cd46bf0edb174e3960a3fbaec602ead3eb145a75a6e3363ee81e4758a23d` |
+| 1 | `structure` | [Presentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/declarations/presentation.md) | 21 | `declaration-track:deba619d76e850b3d05ce2df6bc88e32f5673103c5392d5806dee509c9b71104` |
+| 2 | `def` | [ValidState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/declarations/validstate.md) | 34 | `declaration-track:905be2649e90adec16543d25c4cddde47786d14085bdc21f2591d7e4b30c0adf` |
+| 3 | `structure` | [Hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/declarations/hom.md) | 42 | `declaration-track:be5758b857f0d6bd81af824e062b3794c34d5fb364b4149f26653524fad32027` |
+| 4 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/declarations/id.md) | 51 | `declaration-track:a766adbc9bccc6a6d89a0a453c19e55307e5a2e445a02126508fcbfd6e697500` |
+| 5 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/declarations/comp.md) | 58 | `declaration-track:497b5b1adf7d23b629c1a6bb6f12b504959b575429ea0d93981dd2ba2702a0e5` |
+| 6 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/declarations/ext.md) | 66 | `result-track:01915bc8fc3a3a003aa2d0350cdda8b511a166c77442e379415cbec675eb8dbd` |
+| 7 | `theorem` | [id_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/declarations/id-comp.md) | 82 | `result-track:8992a3d270871e22fad89158cf218a875116a53140f3cc2c45064d83f14f05b8` |
+| 8 | `theorem` | [comp_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/declarations/comp-id.md) | 87 | `result-track:cd0339520cedd10cceda13dd9d302d7724f7b63e571fde1a7ff9a778b742f537` |
+| 9 | `theorem` | [comp_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Presentation.lean/declarations/comp-assoc.md) | 91 | `result-track:2d71cd46bf0edb174e3960a3fbaec602ead3eb145a75a6e3363ee81e4758a23d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

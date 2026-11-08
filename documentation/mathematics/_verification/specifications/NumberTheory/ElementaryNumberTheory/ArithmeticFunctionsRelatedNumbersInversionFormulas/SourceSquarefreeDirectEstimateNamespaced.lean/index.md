@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSquarefreeDirectEstimateNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSquarefreeDirectEstimateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSquarefreeDirectEstimateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSquarefreeDirectEstimateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [all_real_lower_of_readout_squarefree](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSquarefreeDirectEstimateNamespaced.lean/declarations/all-real-lower-of-readout-squarefree.md) | 29 | `result-track:f63cdaa2f9154b2aed2f8cd77181af580378d974bed3014167b76c8c9403f2a0` |
-| 2 | `theorem` | [actual_negative_defect_cap_squarefree](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSquarefreeDirectEstimateNamespaced.lean/declarations/actual-negative-defect-cap-squarefree.md) | 49 | `result-track:a9029d9d96810ffc94283429210490d9a6d2a1530c87463b274eba9d24965d1b` |
-| 3 | `theorem` | [estimate_of_readout_squarefree_direct](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSquarefreeDirectEstimateNamespaced.lean/declarations/estimate-of-readout-squarefree-direct.md) | 62 | `result-track:1b0f4a7aff0f3ce40a12d0833a6ac6185b2795a97a4df0f1a655491c45ff2cc1` |
+| 1 | `theorem` | [all_real_lower_of_readout_squarefree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSquarefreeDirectEstimateNamespaced.lean/declarations/all-real-lower-of-readout-squarefree.md) | 29 | `result-track:f63cdaa2f9154b2aed2f8cd77181af580378d974bed3014167b76c8c9403f2a0` |
+| 2 | `theorem` | [actual_negative_defect_cap_squarefree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSquarefreeDirectEstimateNamespaced.lean/declarations/actual-negative-defect-cap-squarefree.md) | 49 | `result-track:a9029d9d96810ffc94283429210490d9a6d2a1530c87463b274eba9d24965d1b` |
+| 3 | `theorem` | [estimate_of_readout_squarefree_direct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSquarefreeDirectEstimateNamespaced.lean/declarations/estimate-of-readout-squarefree-direct.md) | 62 | `result-track:1b0f4a7aff0f3ce40a12d0833a6ac6185b2795a97a4df0f1a655491c45ff2cc1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

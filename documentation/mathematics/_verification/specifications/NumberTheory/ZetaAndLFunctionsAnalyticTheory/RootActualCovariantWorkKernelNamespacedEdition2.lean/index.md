@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualCovariantWorkKernelNamespacedEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualCovariantWorkKernelNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualCovariantWorkKernelNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualCovariantWorkKernelNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [twistedTimeWork](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualCovariantWorkKernelNamespacedEdition2.lean/declarations/twistedtimework.md) | 26 | `declaration-track:fbf356b8174093dc4941903c4ee8d314736722ea745d2cb4e40c17caee4c3fa9` |
-| 2 | `theorem` | [jet_hasDerivAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualCovariantWorkKernelNamespacedEdition2.lean/declarations/jet-hasderivat.md) | 31 | `result-track:83bca349b79986006b44e380712cba7d7b947f576455e10d4531acd5f3ec0360` |
-| 3 | `theorem` | [time_work_twisted](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualCovariantWorkKernelNamespacedEdition2.lean/declarations/time-work-twisted.md) | 39 | `result-track:9cbc28dd308abd1e184040cc489faef54ed8df46f579e022e4eab279db7904aa` |
-| 4 | `theorem` | [actual_covariant_ordinary_work_kernel](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualCovariantWorkKernelNamespacedEdition2.lean/declarations/actual-covariant-ordinary-work-kernel.md) | 59 | `result-track:890041c348d9baed3911dfd41f0681a542603b8a0dd8bc0e119e526974d22b7b` |
-| 5 | `theorem` | [actual_covariant_ordinary_work_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualCovariantWorkKernelNamespacedEdition2.lean/declarations/actual-covariant-ordinary-work-abs-le.md) | 81 | `result-track:0d0ba6defce5eabb4cdc594de77d9f186be7dbddc29ab37cba50df7251e6766f` |
-| 6 | `theorem` | [actual_covariant_ordinary_work_eq_fourth_sub_second](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualCovariantWorkKernelNamespacedEdition2.lean/declarations/actual-covariant-ordinary-work-eq-fourth-sub-second.md) | 100 | `result-track:5cd1e5b7ee0812952cd93931ee8f69baf593b09c7fb37f106abb71d59d5df1b5` |
+| 1 | `def` | [twistedTimeWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualCovariantWorkKernelNamespacedEdition2.lean/declarations/twistedtimework.md) | 26 | `declaration-track:fbf356b8174093dc4941903c4ee8d314736722ea745d2cb4e40c17caee4c3fa9` |
+| 2 | `theorem` | [jet_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualCovariantWorkKernelNamespacedEdition2.lean/declarations/jet-hasderivat.md) | 31 | `result-track:83bca349b79986006b44e380712cba7d7b947f576455e10d4531acd5f3ec0360` |
+| 3 | `theorem` | [time_work_twisted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualCovariantWorkKernelNamespacedEdition2.lean/declarations/time-work-twisted.md) | 39 | `result-track:9cbc28dd308abd1e184040cc489faef54ed8df46f579e022e4eab279db7904aa` |
+| 4 | `theorem` | [actual_covariant_ordinary_work_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualCovariantWorkKernelNamespacedEdition2.lean/declarations/actual-covariant-ordinary-work-kernel.md) | 59 | `result-track:890041c348d9baed3911dfd41f0681a542603b8a0dd8bc0e119e526974d22b7b` |
+| 5 | `theorem` | [actual_covariant_ordinary_work_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualCovariantWorkKernelNamespacedEdition2.lean/declarations/actual-covariant-ordinary-work-abs-le.md) | 81 | `result-track:0d0ba6defce5eabb4cdc594de77d9f186be7dbddc29ab37cba50df7251e6766f` |
+| 6 | `theorem` | [actual_covariant_ordinary_work_eq_fourth_sub_second](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualCovariantWorkKernelNamespacedEdition2.lean/declarations/actual-covariant-ordinary-work-eq-fourth-sub-second.md) | 100 | `result-track:5cd1e5b7ee0812952cd93931ee8f69baf593b09c7fb37f106abb71d59d5df1b5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

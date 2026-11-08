@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/LeanProjection.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/LeanProjection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeanProjection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeanProjection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [LeanDeclKind](../../../../../ComputerScience/AlgorithmsInComputerScience/LeanProjection.lean/declarations/leandeclkind.md) | 18 | `declaration-track:abe5b2401cf3e65c635a2f3cdd394f9b2a24faa07d523292181ab2c87252e0cb` |
-| 2 | `structure` | [LeanDeclarationProjection](../../../../../ComputerScience/AlgorithmsInComputerScience/LeanProjection.lean/declarations/leandeclarationprojection.md) | 29 | `declaration-track:e44e9e84c21c275c6e2901bc02eb474dd7b143b131cfadfd3918b74dd0eaf790` |
-| 3 | `structure` | [LeanModuleProjection](../../../../../ComputerScience/AlgorithmsInComputerScience/LeanProjection.lean/declarations/leanmoduleprojection.md) | 37 | `declaration-track:87a2c55e961126ce104fde54f426f64dfbe3a6a89385c2e7f34742fe72efc2a3` |
-| 4 | `def` | [LeanModuleProjection.hasFailure](../../../../../ComputerScience/AlgorithmsInComputerScience/LeanProjection.lean/declarations/leanmoduleprojection-hasfailure.md) | 44 | `declaration-track:091fe8e39cde662a28cf2159ddb39db25a7c7786ea610a2de55401c3925fdf21` |
-| 5 | `theorem` | [declaration_projection_has_name](../../../../../ComputerScience/AlgorithmsInComputerScience/LeanProjection.lean/declarations/declaration-projection-has-name.md) | 48 | `result-track:17c0693f6a8f830dbad79340e56d4b092a83a3ddccf221cfddda9ad0eb6c185d` |
+| 1 | `inductive` | [LeanDeclKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeanProjection.lean/declarations/leandeclkind.md) | 18 | `declaration-track:abe5b2401cf3e65c635a2f3cdd394f9b2a24faa07d523292181ab2c87252e0cb` |
+| 2 | `structure` | [LeanDeclarationProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeanProjection.lean/declarations/leandeclarationprojection.md) | 29 | `declaration-track:e44e9e84c21c275c6e2901bc02eb474dd7b143b131cfadfd3918b74dd0eaf790` |
+| 3 | `structure` | [LeanModuleProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeanProjection.lean/declarations/leanmoduleprojection.md) | 37 | `declaration-track:87a2c55e961126ce104fde54f426f64dfbe3a6a89385c2e7f34742fe72efc2a3` |
+| 4 | `def` | [LeanModuleProjection.hasFailure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeanProjection.lean/declarations/leanmoduleprojection-hasfailure.md) | 44 | `declaration-track:091fe8e39cde662a28cf2159ddb39db25a7c7786ea610a2de55401c3925fdf21` |
+| 5 | `theorem` | [declaration_projection_has_name](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeanProjection.lean/declarations/declaration-projection-has-name.md) | 48 | `result-track:17c0693f6a8f830dbad79340e56d4b092a83a3ddccf221cfddda9ad0eb6c185d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

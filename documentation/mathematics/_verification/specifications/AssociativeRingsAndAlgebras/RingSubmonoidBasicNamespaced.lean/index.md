@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingSubmonoidBasicNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingSubmonoidBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSubmonoidBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSubmonoidBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [mul_right_mem_add_closure](../../../../AssociativeRingsAndAlgebras/RingSubmonoidBasicNamespaced.lean/declarations/mul-right-mem-add-closure.md) | 28 | `result-track:639dea2aae743eda966f2c32134dad3ac856db8ab74942bbdbf15b25da047b06` |
-| 2 | `lemma` | [mul_mem_add_closure](../../../../AssociativeRingsAndAlgebras/RingSubmonoidBasicNamespaced.lean/declarations/mul-mem-add-closure.md) | 37 | `result-track:37405b337a473d068871ca4b300af459af63797f0087431f7077b9cba86e48a2` |
-| 3 | `lemma` | [mul_left_mem_add_closure](../../../../AssociativeRingsAndAlgebras/RingSubmonoidBasicNamespaced.lean/declarations/mul-left-mem-add-closure.md) | 46 | `result-track:7a86b7b050ba33f07b2565c4557f7ca03f9a85fb98f9b0534425e86bd68207bc` |
+| 1 | `lemma` | [mul_right_mem_add_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSubmonoidBasicNamespaced.lean/declarations/mul-right-mem-add-closure.md) | 28 | `result-track:639dea2aae743eda966f2c32134dad3ac856db8ab74942bbdbf15b25da047b06` |
+| 2 | `lemma` | [mul_mem_add_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSubmonoidBasicNamespaced.lean/declarations/mul-mem-add-closure.md) | 37 | `result-track:37405b337a473d068871ca4b300af459af63797f0087431f7077b9cba86e48a2` |
+| 3 | `lemma` | [mul_left_mem_add_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSubmonoidBasicNamespaced.lean/declarations/mul-left-mem-add-closure.md) | 46 | `result-track:7a86b7b050ba33f07b2565c4557f7ca03f9a85fb98f9b0534425e86bd68207bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

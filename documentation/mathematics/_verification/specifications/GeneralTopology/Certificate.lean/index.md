@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Certificate.lean/index.md) · [Full source](../../../../GeneralTopology/Certificate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Certificate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Certificate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TransportedRangeNesting](../../../../GeneralTopology/Certificate.lean/declarations/transportedrangenesting.md) | 9 | `declaration-track:899fafc6fa33d4bec36fa380c37d486b96fe5ca15ef43fba1d76260c2eeca0b1` |
-| 2 | `structure` | [TransportedRangeClosed](../../../../GeneralTopology/Certificate.lean/declarations/transportedrangeclosed.md) | 19 | `declaration-track:6efed243e3c7cfb91a73c012eeac6b91c82d1063740633bfee1f25eefcfa9d18` |
-| 3 | `structure` | [SoninConnectorGeometry](../../../../GeneralTopology/Certificate.lean/declarations/soninconnectorgeometry.md) | 29 | `declaration-track:d7b3cb1d45793a5232be4049e1060e690e727fef0428cfcde1fa9dd14f3c9ecd` |
-| 4 | `theorem` | [transportedRange_mono](../../../../GeneralTopology/Certificate.lean/declarations/transportedrange-mono.md) | 38 | `result-track:34311bf028518db30957a28fd38228ffc7c78b875cfac0baad8c00a87c1c75cf` |
-| 5 | `theorem` | [transportedRange_isClosed](../../../../GeneralTopology/Certificate.lean/declarations/transportedrange-isclosed.md) | 48 | `result-track:32ede5e8efd1803b7e077f8232b4a5d0c9d5819f0f7732ca52a07dacaddd659b` |
+| 1 | `structure` | [TransportedRangeNesting](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Certificate.lean/declarations/transportedrangenesting.md) | 9 | `declaration-track:899fafc6fa33d4bec36fa380c37d486b96fe5ca15ef43fba1d76260c2eeca0b1` |
+| 2 | `structure` | [TransportedRangeClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Certificate.lean/declarations/transportedrangeclosed.md) | 19 | `declaration-track:6efed243e3c7cfb91a73c012eeac6b91c82d1063740633bfee1f25eefcfa9d18` |
+| 3 | `structure` | [SoninConnectorGeometry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Certificate.lean/declarations/soninconnectorgeometry.md) | 29 | `declaration-track:d7b3cb1d45793a5232be4049e1060e690e727fef0428cfcde1fa9dd14f3c9ecd` |
+| 4 | `theorem` | [transportedRange_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Certificate.lean/declarations/transportedrange-mono.md) | 38 | `result-track:34311bf028518db30957a28fd38228ffc7c78b875cfac0baad8c00a87c1c75cf` |
+| 5 | `theorem` | [transportedRange_isClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Certificate.lean/declarations/transportedrange-isclosed.md) | 48 | `result-track:32ede5e8efd1803b7e077f8232b4a5d0c9d5819f0f7732ca52a07dacaddd659b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightBasicNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [LightCondensed](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightBasicNamespaced.lean/declarations/lightcondensed.md) | 33 | `declaration-track:ed8539e7f8a98cb56e343595361f13a98a14e7fc6fbbc130ef24dfa8ab6f2a81` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightBasicNamespaced.lean/declarations/instance.md) | 36 | `declaration-track:38732895c497e4c42f4390ce5a4f9862483d07b69b198b23205429c26a99b01a` |
-| 3 | `abbrev` | [LightCondSet](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightBasicNamespaced.lean/declarations/lightcondset.md) | 43 | `declaration-track:6cc4e347b7d3c319a209af4cc7f6d6aea7d5c0a51bfcc3ba941c57c89ee8310b` |
-| 4 | `lemma` | [id_val](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightBasicNamespaced.lean/declarations/id-val.md) | 50 | `result-track:ce0c2f0ace44fafcd28843e262e2dd1cce5cddd8361deac598de9ee3107d1478` |
-| 5 | `lemma` | [comp_val](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightBasicNamespaced.lean/declarations/comp-val.md) | 53 | `result-track:f14957f54aebbea0bcb4c6cfd06ce7793a630e582b00a535529cf10083ea8ddb` |
-| 6 | `lemma` | [hom_ext](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightBasicNamespaced.lean/declarations/hom-ext.md) | 58 | `result-track:2c972335df63a331b7b11280a435eddcbc4aac023112ea21e0726ad2b2ad8618` |
-| 7 | `lemma` | [hom_naturality_apply](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightBasicNamespaced.lean/declarations/hom-naturality-apply.md) | 72 | `result-track:c600f3ae0cb2cfe4ea41ad400155b3f8c25b8d59ccd5ff45de3a1e8bdcf206db` |
+| 1 | `def` | [LightCondensed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightBasicNamespaced.lean/declarations/lightcondensed.md) | 33 | `declaration-track:ed8539e7f8a98cb56e343595361f13a98a14e7fc6fbbc130ef24dfa8ab6f2a81` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightBasicNamespaced.lean/declarations/instance.md) | 36 | `declaration-track:38732895c497e4c42f4390ce5a4f9862483d07b69b198b23205429c26a99b01a` |
+| 3 | `abbrev` | [LightCondSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightBasicNamespaced.lean/declarations/lightcondset.md) | 43 | `declaration-track:6cc4e347b7d3c319a209af4cc7f6d6aea7d5c0a51bfcc3ba941c57c89ee8310b` |
+| 4 | `lemma` | [id_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightBasicNamespaced.lean/declarations/id-val.md) | 50 | `result-track:ce0c2f0ace44fafcd28843e262e2dd1cce5cddd8361deac598de9ee3107d1478` |
+| 5 | `lemma` | [comp_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightBasicNamespaced.lean/declarations/comp-val.md) | 53 | `result-track:f14957f54aebbea0bcb4c6cfd06ce7793a630e582b00a535529cf10083ea8ddb` |
+| 6 | `lemma` | [hom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightBasicNamespaced.lean/declarations/hom-ext.md) | 58 | `result-track:2c972335df63a331b7b11280a435eddcbc4aac023112ea21e0726ad2b2ad8618` |
+| 7 | `lemma` | [hom_naturality_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightBasicNamespaced.lean/declarations/hom-naturality-apply.md) | 72 | `result-track:c600f3ae0cb2cfe4ea41ad400155b3f8c25b8d59ccd5ff45de3a1e8bdcf206db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

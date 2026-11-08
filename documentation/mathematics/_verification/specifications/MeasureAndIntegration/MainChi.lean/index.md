@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/MainChi.lean/index.md) · [Full source](../../../../MeasureAndIntegration/MainChi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MainChi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MainChi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inv_coeff_eq_conj](../../../../MeasureAndIntegration/MainChi.lean/declarations/inv-coeff-eq-conj.md) | 28 | `result-track:dbbb032a0e30b13f39dc138e5f4bedd9cd423a7d523a19d217c055eca2c11ed2` |
-| 2 | `theorem` | [EF_lit_chi_L](../../../../MeasureAndIntegration/MainChi.lean/declarations/ef-lit-chi-l.md) | 37 | `result-track:ed52f10c6cf818aaef1becba9bc775db29330195948a7297cbfa8a73127a05a0` |
+| 1 | `theorem` | [inv_coeff_eq_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MainChi.lean/declarations/inv-coeff-eq-conj.md) | 28 | `result-track:dbbb032a0e30b13f39dc138e5f4bedd9cd423a7d523a19d217c055eca2c11ed2` |
+| 2 | `theorem` | [EF_lit_chi_L](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MainChi.lean/declarations/ef-lit-chi-l.md) | 37 | `result-track:ed52f10c6cf818aaef1becba9bc775db29330195948a7297cbfa8a73127a05a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

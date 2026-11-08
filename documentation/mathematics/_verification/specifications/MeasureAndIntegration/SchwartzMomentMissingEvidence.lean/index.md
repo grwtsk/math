@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SchwartzMomentMissingEvidence.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SchwartzMomentMissingEvidence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SchwartzMomentMissingEvidence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SchwartzMomentMissingEvidence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Fourier.Checks.Positive.SchwartzMoments`](../../../../MeasureAndIntegration/PositiveSchwartzMoments.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.Checks.Positive.SchwartzMoments`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveSchwartzMoments.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SchwartzMomentMissingEvidence.lean/declarations/example.md) | 7 | `declaration-track:2df50cd4a3bd09a59eae34e6dfbeb920de2ca79e28a0c49068ed02cadf7feab5` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SchwartzMomentMissingEvidence.lean/declarations/example.md) | 7 | `declaration-track:2df50cd4a3bd09a59eae34e6dfbeb920de2ca79e28a0c49068ed02cadf7feab5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteReindexingIndex.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteReindexingIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteReindexingIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteReindexingIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exponentVectorInjectivityAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteReindexingIndex.lean/declarations/exponentvectorinjectivityanchor.md) | 15 | `declaration-track:23a82536dd4149d0f73b11ac6ae3791176fe90f7474b27bd716f126ac0861f36` |
-| 2 | `def` | [smoothNumberReindexingCheckedAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteReindexingIndex.lean/declarations/smoothnumberreindexingcheckedanchor.md) | 25 | `declaration-track:b7b73c15cbae9ea51967e5684ac301f03f4cacc8b1a1caf74aa44fefaaf577fd` |
-| 3 | `def` | [boundedDirichletConvolutionReindexingAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteReindexingIndex.lean/declarations/boundeddirichletconvolutionreindexinganchor.md) | 35 | `declaration-track:0c0b2f1d884dbabee57c6c9d7637ee307a0b58f07bad6494e57e9f00c2b870de` |
-| 4 | `def` | [weightedCauchyBoundedConvAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteReindexingIndex.lean/declarations/weightedcauchyboundedconvanchor.md) | 45 | `declaration-track:71e8b519b1ab1289a8791e1bf88181c86bdce2d81ca6a9ddf9fe48b87b3b5f6f` |
-| 5 | `def` | [infiniteDirichletCauchyProductTargetAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteReindexingIndex.lean/declarations/infinitedirichletcauchyproducttargetanchor.md) | 55 | `declaration-track:4d0a3ef361fc426f041537be7f32f2130dd647990baba7b70326e284183c4c52` |
-| 6 | `def` | [finiteReindexingAnchors](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteReindexingIndex.lean/declarations/finitereindexinganchors.md) | 65 | `declaration-track:d291061cf751d081a21b3a05e4c1eab39a320aeea25264641a172eb31d3c03cc` |
+| 1 | `def` | [exponentVectorInjectivityAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteReindexingIndex.lean/declarations/exponentvectorinjectivityanchor.md) | 15 | `declaration-track:23a82536dd4149d0f73b11ac6ae3791176fe90f7474b27bd716f126ac0861f36` |
+| 2 | `def` | [smoothNumberReindexingCheckedAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteReindexingIndex.lean/declarations/smoothnumberreindexingcheckedanchor.md) | 25 | `declaration-track:b7b73c15cbae9ea51967e5684ac301f03f4cacc8b1a1caf74aa44fefaaf577fd` |
+| 3 | `def` | [boundedDirichletConvolutionReindexingAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteReindexingIndex.lean/declarations/boundeddirichletconvolutionreindexinganchor.md) | 35 | `declaration-track:0c0b2f1d884dbabee57c6c9d7637ee307a0b58f07bad6494e57e9f00c2b870de` |
+| 4 | `def` | [weightedCauchyBoundedConvAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteReindexingIndex.lean/declarations/weightedcauchyboundedconvanchor.md) | 45 | `declaration-track:71e8b519b1ab1289a8791e1bf88181c86bdce2d81ca6a9ddf9fe48b87b3b5f6f` |
+| 5 | `def` | [infiniteDirichletCauchyProductTargetAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteReindexingIndex.lean/declarations/infinitedirichletcauchyproducttargetanchor.md) | 55 | `declaration-track:4d0a3ef361fc426f041537be7f32f2130dd647990baba7b70326e284183c4c52` |
+| 6 | `def` | [finiteReindexingAnchors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteReindexingIndex.lean/declarations/finitereindexinganchors.md) | 65 | `declaration-track:d291061cf751d081a21b3a05e4c1eab39a320aeea25264641a172eb31d3c03cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

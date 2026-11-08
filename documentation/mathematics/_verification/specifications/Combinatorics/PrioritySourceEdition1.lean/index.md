@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PrioritySourceEdition1.lean/index.md) · [Full source](../../../../Combinatorics/PrioritySourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrioritySourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrioritySourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PriorityKey](../../../../Combinatorics/PrioritySourceEdition1.lean/declarations/prioritykey.md) | 16 | `declaration-track:d9c495b1da544ef103d5e33f90e5780f5d3d87d81f381b68f477490cc975dfa5` |
-| 2 | `def` | [BeaconFamily.priorityKey](../../../../Combinatorics/PrioritySourceEdition1.lean/declarations/beaconfamily-prioritykey.md) | 24 | `declaration-track:aee115cd5887a26f3e50f34a085e8f320d99c6f3757155f760fa0499df83a4fe` |
-| 3 | `inductive` | [ComparatorOrderKind](../../../../Combinatorics/PrioritySourceEdition1.lean/declarations/comparatororderkind.md) | 55 | `declaration-track:d8bb8f5b5c238a242c7bc3f93ffe975bf5c306e354352125400be4b3883599c2` |
-| 4 | `structure` | [ProofCarryingComparator](../../../../Combinatorics/PrioritySourceEdition1.lean/declarations/proofcarryingcomparator.md) | 61 | `declaration-track:1c61bc9ecbb3722304b6489956548bc475ef19abc904766b6d37581958145f00` |
-| 5 | `def` | [PriorityLess](../../../../Combinatorics/PrioritySourceEdition1.lean/declarations/priorityless.md) | 76 | `declaration-track:a6482e4704cd394f2c1222bce041088dfd3ca40e39052f92e380a7bcd8ceeabe` |
-| 6 | `theorem` | [priorityLess_iff_compare](../../../../Combinatorics/PrioritySourceEdition1.lean/declarations/priorityless-iff-compare.md) | 83 | `result-track:adb4373767e339442d5fa08e900c4e57e53f32f45864c4bd47d76573c1d4191d` |
-| 7 | `theorem` | [priorityLess_irreflexive](../../../../Combinatorics/PrioritySourceEdition1.lean/declarations/priorityless-irreflexive.md) | 92 | `result-track:4ff2706bcc8e167a438e806a0020084e673aa694da1e55fc2d9036e84c168ea8` |
-| 8 | `theorem` | [priorityLess_transitive](../../../../Combinatorics/PrioritySourceEdition1.lean/declarations/priorityless-transitive.md) | 100 | `result-track:c43eee0a9a56d9888e0c0bc536eae5ddf231a6a54cf589d4ff7caae9272e34cd` |
+| 1 | `structure` | [PriorityKey](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrioritySourceEdition1.lean/declarations/prioritykey.md) | 16 | `declaration-track:d9c495b1da544ef103d5e33f90e5780f5d3d87d81f381b68f477490cc975dfa5` |
+| 2 | `def` | [BeaconFamily.priorityKey](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrioritySourceEdition1.lean/declarations/beaconfamily-prioritykey.md) | 24 | `declaration-track:aee115cd5887a26f3e50f34a085e8f320d99c6f3757155f760fa0499df83a4fe` |
+| 3 | `inductive` | [ComparatorOrderKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrioritySourceEdition1.lean/declarations/comparatororderkind.md) | 55 | `declaration-track:d8bb8f5b5c238a242c7bc3f93ffe975bf5c306e354352125400be4b3883599c2` |
+| 4 | `structure` | [ProofCarryingComparator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrioritySourceEdition1.lean/declarations/proofcarryingcomparator.md) | 61 | `declaration-track:1c61bc9ecbb3722304b6489956548bc475ef19abc904766b6d37581958145f00` |
+| 5 | `def` | [PriorityLess](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrioritySourceEdition1.lean/declarations/priorityless.md) | 76 | `declaration-track:a6482e4704cd394f2c1222bce041088dfd3ca40e39052f92e380a7bcd8ceeabe` |
+| 6 | `theorem` | [priorityLess_iff_compare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrioritySourceEdition1.lean/declarations/priorityless-iff-compare.md) | 83 | `result-track:adb4373767e339442d5fa08e900c4e57e53f32f45864c4bd47d76573c1d4191d` |
+| 7 | `theorem` | [priorityLess_irreflexive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrioritySourceEdition1.lean/declarations/priorityless-irreflexive.md) | 92 | `result-track:4ff2706bcc8e167a438e806a0020084e673aa694da1e55fc2d9036e84c168ea8` |
+| 8 | `theorem` | [priorityLess_transitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrioritySourceEdition1.lean/declarations/priorityless-transitive.md) | 100 | `result-track:c43eee0a9a56d9888e0c0bc536eae5ddf231a6a54cf589d4ff7caae9272e34cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

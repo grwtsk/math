@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AA3e6857a6d9ce94fNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AA3e6857a6d9ce94fNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AA3e6857a6d9ce94fNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AA3e6857a6d9ce94fNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -64,7 +64,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MotifObservation](../../../../../ComputerScience/AlgorithmsInComputerScience/AA3e6857a6d9ce94fNamespaced.lean/declarations/motifobservation.md) | 25 | `declaration-track:ccd113e76bbf319fb7a2bdb86eb25866a1b9eceaaea28a01943f9bc09b08ba26` |
+| 1 | `structure` | [MotifObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AA3e6857a6d9ce94fNamespaced.lean/declarations/motifobservation.md) | 25 | `declaration-track:ccd113e76bbf319fb7a2bdb86eb25866a1b9eceaaea28a01943f9bc09b08ba26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

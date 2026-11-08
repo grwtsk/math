@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [primeCounting](../../../../../NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/declarations/primecounting.md) | 16 | `declaration-track:c6b6120d57961f00930a44a37e8d4955d003cfc8b710d8a7a003d7fb501cbbbd` |
-| 2 | `def` | [chebyshevTheta](../../../../../NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/declarations/chebyshevtheta.md) | 20 | `declaration-track:45fb26062ee7a579b23d8cefa04ae143267761d4d685db16f3c4b29416855905` |
-| 3 | `theorem` | [primeCounting_eq_card_primesUpTo](../../../../../NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/declarations/primecounting-eq-card-primesupto.md) | 24 | `result-track:0195f850e0c8782837c3693ce06e2499cc50ee961d2e4a139a6bc83c0eb17d91` |
-| 4 | `theorem` | [chebyshevTheta_nonneg](../../../../../NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/declarations/chebyshevtheta-nonneg.md) | 29 | `result-track:535e3b16ceed51a06628f68b7a3a87ab7df6e98f4f172ff012b0bd139540e516` |
-| 5 | `theorem` | [chebyshevTheta_mono](../../../../../NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/declarations/chebyshevtheta-mono.md) | 39 | `result-track:3f7d02a103113ccb362e5e979524e96b8a980358efb8612abc5638309e7470d4` |
-| 6 | `theorem` | [chebyshevTheta_le_primeCounting_mul_log](../../../../../NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/declarations/chebyshevtheta-le-primecounting-mul-log.md) | 50 | `result-track:ffd6efffd329576db006da3c495f746c52cea40a4ee94e7b499a6caf8a87ebfc` |
-| 7 | `theorem` | [primeCounting_mul_log_two_le_chebyshevTheta](../../../../../NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/declarations/primecounting-mul-log-two-le-chebyshevtheta.md) | 66 | `result-track:e3af9d861f9af37985930d22cdb15caa5426daca40b8940651edb87d8b26598c` |
-| 8 | `def` | [ChebyshevThetaUpperBoundTarget](../../../../../NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/declarations/chebyshevthetaupperboundtarget.md) | 83 | `declaration-track:93af2d0b30d2a5daa853d91c8b9718a65f812ef6e44b7e82f3b13c238075c347` |
-| 9 | `def` | [ChebyshevPrimeCountingBoundsTarget](../../../../../NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/declarations/chebyshevprimecountingboundstarget.md) | 87 | `declaration-track:e8da01b5b18c322987ce91b3a8d51586ef13a658cae54025ba2685ca3e6477cb` |
+| 1 | `def` | [primeCounting](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/declarations/primecounting.md) | 16 | `declaration-track:c6b6120d57961f00930a44a37e8d4955d003cfc8b710d8a7a003d7fb501cbbbd` |
+| 2 | `def` | [chebyshevTheta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/declarations/chebyshevtheta.md) | 20 | `declaration-track:45fb26062ee7a579b23d8cefa04ae143267761d4d685db16f3c4b29416855905` |
+| 3 | `theorem` | [primeCounting_eq_card_primesUpTo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/declarations/primecounting-eq-card-primesupto.md) | 24 | `result-track:0195f850e0c8782837c3693ce06e2499cc50ee961d2e4a139a6bc83c0eb17d91` |
+| 4 | `theorem` | [chebyshevTheta_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/declarations/chebyshevtheta-nonneg.md) | 29 | `result-track:535e3b16ceed51a06628f68b7a3a87ab7df6e98f4f172ff012b0bd139540e516` |
+| 5 | `theorem` | [chebyshevTheta_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/declarations/chebyshevtheta-mono.md) | 39 | `result-track:3f7d02a103113ccb362e5e979524e96b8a980358efb8612abc5638309e7470d4` |
+| 6 | `theorem` | [chebyshevTheta_le_primeCounting_mul_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/declarations/chebyshevtheta-le-primecounting-mul-log.md) | 50 | `result-track:ffd6efffd329576db006da3c495f746c52cea40a4ee94e7b499a6caf8a87ebfc` |
+| 7 | `theorem` | [primeCounting_mul_log_two_le_chebyshevTheta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/declarations/primecounting-mul-log-two-le-chebyshevtheta.md) | 66 | `result-track:e3af9d861f9af37985930d22cdb15caa5426daca40b8940651edb87d8b26598c` |
+| 8 | `def` | [ChebyshevThetaUpperBoundTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/declarations/chebyshevthetaupperboundtarget.md) | 83 | `declaration-track:93af2d0b30d2a5daa853d91c8b9718a65f812ef6e44b7e82f3b13c238075c347` |
+| 9 | `def` | [ChebyshevPrimeCountingBoundsTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChebyshevFunctions.lean/declarations/chebyshevprimecountingboundstarget.md) | 87 | `declaration-track:e8da01b5b18c322987ce91b3a8d51586ef13a658cae54025ba2685ca3e6477cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

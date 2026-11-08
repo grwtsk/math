@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AB20a3092c60d7.lean/index.md) · [Full source](../../../../RealFunctions/AB20a3092c60d7.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AB20a3092c60d7.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AB20a3092c60d7.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,7 +62,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [regularizedKernel](../../../../RealFunctions/AB20a3092c60d7.lean/declarations/regularizedkernel.md) | 27 | `declaration-track:4f672dfdfc6163554c039af42079d201a138cf36661fa740d911b16d0ce0278b` |
+| 1 | `def` | [regularizedKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AB20a3092c60d7.lean/declarations/regularizedkernel.md) | 27 | `declaration-track:4f672dfdfc6163554c039af42079d201a138cf36661fa740d911b16d0ce0278b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

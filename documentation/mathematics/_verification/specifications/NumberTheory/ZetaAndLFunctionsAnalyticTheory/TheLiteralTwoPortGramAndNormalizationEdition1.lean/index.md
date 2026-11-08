@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheLiteralTwoPortGramAndNormalizationEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheLiteralTwoPortGramAndNormalizationEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheLiteralTwoPortGramAndNormalizationEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheLiteralTwoPortGramAndNormalizationEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [nativeGram](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheLiteralTwoPortGramAndNormalizationEdition1.lean/declarations/nativegram.md) | 22 | `declaration-track:6f77416678b9449b153fe280cbac38c287b5df0a2b98497af7dada9b4ae34b8d` |
-| 2 | `theorem` | [gram_square_completion](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheLiteralTwoPortGramAndNormalizationEdition1.lean/declarations/gram-square-completion.md) | 26 | `result-track:bdda509484b302d0112c9d740f97e1e8048083946f6f31dfefa73bef37e20aa2` |
-| 3 | `theorem` | [nativeGram_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheLiteralTwoPortGramAndNormalizationEdition1.lean/declarations/nativegram-nonneg.md) | 32 | `result-track:2d50de68b4badf50005316a5b0869e9de4d27a909fb48d866c4c6fc0c10f2de3` |
-| 4 | `theorem` | [actual_direction_normalization](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheLiteralTwoPortGramAndNormalizationEdition1.lean/declarations/actual-direction-normalization.md) | 37 | `result-track:bdb3c6695b11aa3c65204dbdbd1669772cff2a42cba20e4221fbfb7acb604cd3` |
+| 1 | `def` | [nativeGram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheLiteralTwoPortGramAndNormalizationEdition1.lean/declarations/nativegram.md) | 22 | `declaration-track:6f77416678b9449b153fe280cbac38c287b5df0a2b98497af7dada9b4ae34b8d` |
+| 2 | `theorem` | [gram_square_completion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheLiteralTwoPortGramAndNormalizationEdition1.lean/declarations/gram-square-completion.md) | 26 | `result-track:bdda509484b302d0112c9d740f97e1e8048083946f6f31dfefa73bef37e20aa2` |
+| 3 | `theorem` | [nativeGram_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheLiteralTwoPortGramAndNormalizationEdition1.lean/declarations/nativegram-nonneg.md) | 32 | `result-track:2d50de68b4badf50005316a5b0869e9de4d27a909fb48d866c4c6fc0c10f2de3` |
+| 4 | `theorem` | [actual_direction_normalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheLiteralTwoPortGramAndNormalizationEdition1.lean/declarations/actual-direction-normalization.md) | 37 | `result-track:bdb3c6695b11aa3c65204dbdbd1669772cff2a42cba20e4221fbfb7acb604cd3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

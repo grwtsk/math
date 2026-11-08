@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cast_eq_zero](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/declarations/cast-eq-zero.md) | 31 | `result-track:d51a82df16caab4da3432e0e8aab99d9e4d042669ec4d7060ce1227127eb6508` |
-| 2 | `theorem` | [cast_inj](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/declarations/cast-inj.md) | 42 | `result-track:5f5608326cab1468103bbf233ff8ee91de54f011a6e372e2034fee2c1d82dcf5` |
-| 3 | `theorem` | [cast_injective](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/declarations/cast-injective.md) | 46 | `result-track:3cf4ddaeb545018ea855497261f1a81db305a160c593da85f3223f66456ee80f` |
-| 4 | `theorem` | [cast_ne_zero](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/declarations/cast-ne-zero.md) | 50 | `result-track:1dc9226a74a380466ffbee717ce0f82b953651a7563b14e6b5c4d1e1dc4d9e04` |
-| 5 | `theorem` | [cast_eq_one](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/declarations/cast-eq-one.md) | 55 | `result-track:878a0c93b535f8310a02c18a54bfccdce480457467fcdfdaea7beee6cdec37b1` |
-| 6 | `theorem` | [cast_ne_one](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/declarations/cast-ne-one.md) | 59 | `result-track:c16d4092d5fc8627a170b2125e117d01f438438027e5809ab2ac534fd96aaff8` |
-| 7 | `theorem` | [cast_div_charZero](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/declarations/cast-div-charzero.md) | 64 | `result-track:5544ecc596e3d56fb09ae5ab71c759a308ae9ec7f864ba857a4ecb742bf5163d` |
-| 8 | `theorem` | [RingHom.injective_int](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/declarations/ringhom-injective-int.md) | 73 | `result-track:495b9c6c0906a12e367ec1762bb2ec570516fbc3b81f92e20e3c2520ba1bc5e5` |
+| 1 | `theorem` | [cast_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/declarations/cast-eq-zero.md) | 31 | `result-track:d51a82df16caab4da3432e0e8aab99d9e4d042669ec4d7060ce1227127eb6508` |
+| 2 | `theorem` | [cast_inj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/declarations/cast-inj.md) | 42 | `result-track:5f5608326cab1468103bbf233ff8ee91de54f011a6e372e2034fee2c1d82dcf5` |
+| 3 | `theorem` | [cast_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/declarations/cast-injective.md) | 46 | `result-track:3cf4ddaeb545018ea855497261f1a81db305a160c593da85f3223f66456ee80f` |
+| 4 | `theorem` | [cast_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/declarations/cast-ne-zero.md) | 50 | `result-track:1dc9226a74a380466ffbee717ce0f82b953651a7563b14e6b5c4d1e1dc4d9e04` |
+| 5 | `theorem` | [cast_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/declarations/cast-eq-one.md) | 55 | `result-track:878a0c93b535f8310a02c18a54bfccdce480457467fcdfdaea7beee6cdec37b1` |
+| 6 | `theorem` | [cast_ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/declarations/cast-ne-one.md) | 59 | `result-track:c16d4092d5fc8627a170b2125e117d01f438438027e5809ab2ac534fd96aaff8` |
+| 7 | `theorem` | [cast_div_charZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/declarations/cast-div-charzero.md) | 64 | `result-track:5544ecc596e3d56fb09ae5ab71c759a308ae9ec7f864ba857a4ecb742bf5163d` |
+| 8 | `theorem` | [RingHom.injective_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastEqZero.lean/declarations/ringhom-injective-int.md) | 73 | `result-track:495b9c6c0906a12e367ec1762bb2ec570516fbc3b81f92e20e3c2520ba1bc5e5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

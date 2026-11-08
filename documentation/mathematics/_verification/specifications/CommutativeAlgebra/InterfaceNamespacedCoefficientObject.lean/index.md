@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/InterfaceNamespacedCoefficientObject.lean/index.md) · [Full source](../../../../CommutativeAlgebra/InterfaceNamespacedCoefficientObject.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InterfaceNamespacedCoefficientObject.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InterfaceNamespacedCoefficientObject.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CoefficientObject](../../../../CommutativeAlgebra/InterfaceNamespacedCoefficientObject.lean/declarations/coefficientobject.md) | 43 | `declaration-track:b79ff843ecb94ba7e8e9397768ff63a584440bfce7078a486915148f2ead7d20` |
-| 2 | `structure` | [RepresentationDatum](../../../../CommutativeAlgebra/InterfaceNamespacedCoefficientObject.lean/declarations/representationdatum.md) | 53 | `declaration-track:d141922d228493c087e5e8c6be3237970ea7cd1cce8fb1c60b9ef317c60f759b` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/InterfaceNamespacedCoefficientObject.lean/declarations/instance.md) | 67 | `declaration-track:3b4ef620a669649c1638f19d6cf04473dae4047dad1daff486b6c2f5d858091c` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/InterfaceNamespacedCoefficientObject.lean/declarations/instance-source-edition-2.md) | 70 | `declaration-track:ded96e61e53f3ef81dc65335d738f1bbd2e098c925de07d1acaa1b6f0a94a83f` |
-| 5 | `theorem` | [groupRingMap_of](../../../../CommutativeAlgebra/InterfaceNamespacedCoefficientObject.lean/declarations/groupringmap-of.md) | 75 | `result-track:05f6114d9eb7c0b7b783f7afd54ac92b924ccf7fc493aabd2b7169e1af8f6527` |
-| 6 | `structure` | [KTheoryFunctoriality](../../../../CommutativeAlgebra/InterfaceNamespacedCoefficientObject.lean/declarations/ktheoryfunctoriality.md) | 92 | `declaration-track:f15ebfab8d1a12da06f1c988649ce938c1a3680ba477b54ba86fa518a357c2f5` |
-| 7 | `structure` | [EtaleComparisonDatum](../../../../CommutativeAlgebra/InterfaceNamespacedCoefficientObject.lean/declarations/etalecomparisondatum.md) | 112 | `declaration-track:ed240f8d94d37e494f098578d8fff65ffe94cbe88146da2e06be1c5d99f5e3f2` |
+| 1 | `structure` | [CoefficientObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InterfaceNamespacedCoefficientObject.lean/declarations/coefficientobject.md) | 43 | `declaration-track:b79ff843ecb94ba7e8e9397768ff63a584440bfce7078a486915148f2ead7d20` |
+| 2 | `structure` | [RepresentationDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InterfaceNamespacedCoefficientObject.lean/declarations/representationdatum.md) | 53 | `declaration-track:d141922d228493c087e5e8c6be3237970ea7cd1cce8fb1c60b9ef317c60f759b` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InterfaceNamespacedCoefficientObject.lean/declarations/instance.md) | 67 | `declaration-track:3b4ef620a669649c1638f19d6cf04473dae4047dad1daff486b6c2f5d858091c` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InterfaceNamespacedCoefficientObject.lean/declarations/instance-source-edition-2.md) | 70 | `declaration-track:ded96e61e53f3ef81dc65335d738f1bbd2e098c925de07d1acaa1b6f0a94a83f` |
+| 5 | `theorem` | [groupRingMap_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InterfaceNamespacedCoefficientObject.lean/declarations/groupringmap-of.md) | 75 | `result-track:05f6114d9eb7c0b7b783f7afd54ac92b924ccf7fc493aabd2b7169e1af8f6527` |
+| 6 | `structure` | [KTheoryFunctoriality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InterfaceNamespacedCoefficientObject.lean/declarations/ktheoryfunctoriality.md) | 92 | `declaration-track:f15ebfab8d1a12da06f1c988649ce938c1a3680ba477b54ba86fa518a357c2f5` |
+| 7 | `structure` | [EtaleComparisonDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InterfaceNamespacedCoefficientObject.lean/declarations/etalecomparisondatum.md) | 112 | `declaration-track:ed240f8d94d37e494f098578d8fff65ffe94cbe88146da2e06be1c5d99f5e3f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

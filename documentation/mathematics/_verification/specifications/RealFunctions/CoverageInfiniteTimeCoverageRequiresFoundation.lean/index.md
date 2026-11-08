@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CoverageInfiniteTimeCoverageRequiresFoundation.lean/index.md) · [Full source](../../../../RealFunctions/CoverageInfiniteTimeCoverageRequiresFoundation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoverageInfiniteTimeCoverageRequiresFoundation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoverageInfiniteTimeCoverageRequiresFoundation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [infiniteTimeCoverage_requires_foundation](../../../../RealFunctions/CoverageInfiniteTimeCoverageRequiresFoundation.lean/declarations/infinitetimecoverage-requires-foundation.md) | 25 | `result-track:145e4d35c195696ef17eea384fd27a3e798787cb5d3af610abc69c62ca35f761` |
+| 1 | `theorem` | [infiniteTimeCoverage_requires_foundation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoverageInfiniteTimeCoverageRequiresFoundation.lean/declarations/infinitetimecoverage-requires-foundation.md) | 25 | `result-track:145e4d35c195696ef17eea384fd27a3e798787cb5d3af610abc69c62ca35f761` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

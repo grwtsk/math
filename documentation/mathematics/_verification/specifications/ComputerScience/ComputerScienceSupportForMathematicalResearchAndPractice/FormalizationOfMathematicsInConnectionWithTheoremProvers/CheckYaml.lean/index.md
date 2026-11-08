@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckYaml.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckYaml.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckYaml.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckYaml.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [DBFile](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckYaml.lean/declarations/dbfile.md) | 20 | `declaration-track:f6c10755245af928171d110b46a7a81480207650e4ac23c2b8814ab501f6c406` |
-| 2 | `def` | [readJsonFile](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckYaml.lean/declarations/readjsonfile.md) | 22 | `declaration-track:0823bf63c442101f907760a897a7bbd789ef4abad017f974b2338bb0466e34a4` |
-| 3 | `def` | [databases](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckYaml.lean/declarations/databases.md) | 26 | `declaration-track:493710d4eae4ab8403a34a3a9971887cb1a3dd3758dfc12bd3d762c908068b7c` |
-| 4 | `def` | [processDb](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckYaml.lean/declarations/processdb.md) | 29 | `declaration-track:9a81e99dbcf47982afdc080b2b02e15f2bda7143f1d54c177d5035221ef1b822` |
-| 5 | `def` | [main](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckYaml.lean/declarations/main.md) | 43 | `declaration-track:e679bbb3068fa2357a8a55b3d0ec75a05e91b98757a21a755ec1f79a33780e6f` |
+| 1 | `abbrev` | [DBFile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckYaml.lean/declarations/dbfile.md) | 20 | `declaration-track:f6c10755245af928171d110b46a7a81480207650e4ac23c2b8814ab501f6c406` |
+| 2 | `def` | [readJsonFile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckYaml.lean/declarations/readjsonfile.md) | 22 | `declaration-track:0823bf63c442101f907760a897a7bbd789ef4abad017f974b2338bb0466e34a4` |
+| 3 | `def` | [databases](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckYaml.lean/declarations/databases.md) | 26 | `declaration-track:493710d4eae4ab8403a34a3a9971887cb1a3dd3758dfc12bd3d762c908068b7c` |
+| 4 | `def` | [processDb](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckYaml.lean/declarations/processdb.md) | 29 | `declaration-track:9a81e99dbcf47982afdc080b2b02e15f2bda7143f1d54c177d5035221ef1b822` |
+| 5 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckYaml.lean/declarations/main.md) | 43 | `declaration-track:e679bbb3068fa2357a8a55b3d0ec75a05e91b98757a21a755ec1f79a33780e6f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UniqueProds.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UniqueProds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UniqueProds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UniqueProds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [FreeMonoid.instTwoUniqueProds](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UniqueProds.lean/declarations/freemonoid-insttwouniqueprods.md) | 19 | `declaration-track:d9599ed26b119c8a06c12501db68d6268ba578072f6f2ebe7ad1a2b9dbd35550` |
-| 2 | `instance` | [FreeAddMonoid.instTwoUniqueSums](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UniqueProds.lean/declarations/freeaddmonoid-insttwouniquesums.md) | 24 | `declaration-track:d69d129e9452941fe58226c18add263b7a605d29699e4a38af9702a76bff3ca2` |
+| 1 | `instance` | [FreeMonoid.instTwoUniqueProds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UniqueProds.lean/declarations/freemonoid-insttwouniqueprods.md) | 19 | `declaration-track:d9599ed26b119c8a06c12501db68d6268ba578072f6f2ebe7ad1a2b9dbd35550` |
+| 2 | `instance` | [FreeAddMonoid.instTwoUniqueSums](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UniqueProds.lean/declarations/freeaddmonoid-insttwouniquesums.md) | 24 | `declaration-track:d69d129e9452941fe58226c18add263b7a605d29699e4a38af9702a76bff3ca2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

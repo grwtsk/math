@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/OperationSignature.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/OperationSignature.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/OperationSignature.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/OperationSignature.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [KTheorySpace](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/OperationSignature.lean/declarations/ktheoryspace.md) | 31 | `declaration-track:85c2b4a64c23514f10ca490f03c0c5a003be3d8558a034d5ed1815044645684d` |
+| 1 | `structure` | [KTheorySpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/OperationSignature.lean/declarations/ktheoryspace.md) | 31 | `declaration-track:85c2b4a64c23514f10ca490f03c0c5a003be3d8558a034d5ed1815044645684d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

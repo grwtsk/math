@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NamedObservableNaturality.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NamedObservableNaturality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NamedObservableNaturality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NamedObservableNaturality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [content_byteLength_natural](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NamedObservableNaturality.lean/declarations/content-bytelength-natural.md) | 38 | `result-track:7c6dbc83562aa89f24e06a80f71e2c05a1b27f6430959e951453f3542a01c592` |
-| 2 | `theorem` | [diagnostic_severity_natural](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NamedObservableNaturality.lean/declarations/diagnostic-severity-natural.md) | 47 | `result-track:ee8810137af1a9b6c898f67a534ba780074a416ec53a0c035e32b47e4978d22f` |
-| 3 | `theorem` | [file_path_natural](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NamedObservableNaturality.lean/declarations/file-path-natural.md) | 56 | `result-track:671eac4226198cb67b26addd7a6e26baf8d9b05d10ddfed432a1144fa649298b` |
+| 1 | `theorem` | [content_byteLength_natural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NamedObservableNaturality.lean/declarations/content-bytelength-natural.md) | 38 | `result-track:7c6dbc83562aa89f24e06a80f71e2c05a1b27f6430959e951453f3542a01c592` |
+| 2 | `theorem` | [diagnostic_severity_natural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NamedObservableNaturality.lean/declarations/diagnostic-severity-natural.md) | 47 | `result-track:ee8810137af1a9b6c898f67a534ba780074a416ec53a0c035e32b47e4978d22f` |
+| 3 | `theorem` | [file_path_natural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NamedObservableNaturality.lean/declarations/file-path-natural.md) | 56 | `result-track:671eac4226198cb67b26addd7a6e26baf8d9b05d10ddfed432a1144fa649298b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

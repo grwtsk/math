@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/AF9934fd151bd8fabNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/AF9934fd151bd8fabNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AF9934fd151bd8fabNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AF9934fd151bd8fabNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ExternalRigidifierCert](../../../../Combinatorics/AF9934fd151bd8fabNamespaced.lean/declarations/externalrigidifiercert.md) | 24 | `declaration-track:2b61418c5f725d64537bbd0663bb4a20cd654ee3add5d3cc6439061609e47ae9` |
+| 1 | `structure` | [ExternalRigidifierCert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AF9934fd151bd8fabNamespaced.lean/declarations/externalrigidifiercert.md) | 24 | `declaration-track:2b61418c5f725d64537bbd0663bb4a20cd654ee3add5d3cc6439061609e47ae9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

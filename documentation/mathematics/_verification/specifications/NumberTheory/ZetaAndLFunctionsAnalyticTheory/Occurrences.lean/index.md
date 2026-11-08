@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Occurrences.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Occurrences.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Occurrences.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Occurrences.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sourcePointEquiv](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Occurrences.lean/declarations/sourcepointequiv.md) | 22 | `declaration-track:f5ff25d299836481277a2272b7cd8453e5f33c5eb8ea0e2be87db6774c0b903f` |
-| 2 | `theorem` | [sourcePointEquiv_val](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Occurrences.lean/declarations/sourcepointequiv-val.md) | 25 | `result-track:aeb23a8ea28781d09833114e5b37b64afc3e9b2bb2b6c0fcb6739348681c9889` |
-| 3 | `theorem` | [sourcePointEquiv_mult](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Occurrences.lean/declarations/sourcepointequiv-mult.md) | 28 | `result-track:05283867999bc9c8428d1b28285f58f69c1a534133bc5f8bf6f3e20316732a8b` |
-| 4 | `theorem` | [occurrence_tsum_eq_weighted](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Occurrences.lean/declarations/occurrence-tsum-eq-weighted.md) | 32 | `result-track:393b96a1ba66465cde859bdc1a53385d745257c8e7126df14e0d464747ed2f2a` |
-| 5 | `theorem` | [weighted_source_sum_eq_occurrences](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Occurrences.lean/declarations/weighted-source-sum-eq-occurrences.md) | 43 | `result-track:6b15e8f3b81712e217d69a988eca8e3b22b53e6cd4434429db3c9da83daa9e1e` |
+| 1 | `def` | [sourcePointEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Occurrences.lean/declarations/sourcepointequiv.md) | 22 | `declaration-track:f5ff25d299836481277a2272b7cd8453e5f33c5eb8ea0e2be87db6774c0b903f` |
+| 2 | `theorem` | [sourcePointEquiv_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Occurrences.lean/declarations/sourcepointequiv-val.md) | 25 | `result-track:aeb23a8ea28781d09833114e5b37b64afc3e9b2bb2b6c0fcb6739348681c9889` |
+| 3 | `theorem` | [sourcePointEquiv_mult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Occurrences.lean/declarations/sourcepointequiv-mult.md) | 28 | `result-track:05283867999bc9c8428d1b28285f58f69c1a534133bc5f8bf6f3e20316732a8b` |
+| 4 | `theorem` | [occurrence_tsum_eq_weighted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Occurrences.lean/declarations/occurrence-tsum-eq-weighted.md) | 32 | `result-track:393b96a1ba66465cde859bdc1a53385d745257c8e7126df14e0d464747ed2f2a` |
+| 5 | `theorem` | [weighted_source_sum_eq_occurrences](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Occurrences.lean/declarations/weighted-source-sum-eq-occurrences.md) | 43 | `result-track:6b15e8f3b81712e217d69a988eca8e3b22b53e6cd4434429db3c9da83daa9e1e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

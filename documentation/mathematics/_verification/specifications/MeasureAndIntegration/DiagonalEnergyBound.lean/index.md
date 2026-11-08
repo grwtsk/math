@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/DiagonalEnergyBound.lean/index.md) · [Full source](../../../../MeasureAndIntegration/DiagonalEnergyBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DiagonalEnergyBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DiagonalEnergyBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.InnerProductSpace.MoebiusResponseGramExpansion`](../../../../GeneralTopology/MoebiusResponseGramExpansion.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.MoebiusResponseGramExpansion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MoebiusResponseGramExpansion.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.NumberTheory.Harmonic.Bounds` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [atom_upper_bound](../../../../MeasureAndIntegration/DiagonalEnergyBound.lean/declarations/atom-upper-bound.md) | 16 | `result-track:17a477221d98b485cd9d27fd4328e7e8d425c260cba75a707f42ef9b755dc818` |
-| 2 | `theorem` | [atom_square_bound](../../../../MeasureAndIntegration/DiagonalEnergyBound.lean/declarations/atom-square-bound.md) | 24 | `result-track:894d29bc5148141abfef0d775019b49cc07fbc28b417eeeef077e2a8c2a9e3af` |
-| 3 | `theorem` | [gram_diagonal_bound](../../../../MeasureAndIntegration/DiagonalEnergyBound.lean/declarations/gram-diagonal-bound.md) | 36 | `result-track:8420baef75aca1bfe1840ef60d05682002cdd9174b65bf15cc0e8cd5ec4b7873` |
-| 4 | `theorem` | [realMoebius_square_le_one](../../../../MeasureAndIntegration/DiagonalEnergyBound.lean/declarations/realmoebius-square-le-one.md) | 50 | `result-track:b9f3c99477b945c22d2ae9550438cefa2f337532a64c2d967349a4edc7f0aa9d` |
-| 5 | `theorem` | [inventory_reciprocal_sum_bound](../../../../MeasureAndIntegration/DiagonalEnergyBound.lean/declarations/inventory-reciprocal-sum-bound.md) | 53 | `result-track:c55ba6147d9fcd80b18dac4fa04cb96b9052be1939724c69946020eea50cfc0d` |
-| 6 | `theorem` | [diagonal_quadratic_bound](../../../../MeasureAndIntegration/DiagonalEnergyBound.lean/declarations/diagonal-quadratic-bound.md) | 61 | `result-track:4d4af1f7bf1e966d923f4429e022915a7c0a786824029c4b571406f2d73141ee` |
-| 7 | `theorem` | [diagonal_polynomial_bound](../../../../MeasureAndIntegration/DiagonalEnergyBound.lean/declarations/diagonal-polynomial-bound.md) | 74 | `result-track:9fe38b8d4e2e8c66d4b5e0ed6996e80c350b7c1fb1f81de4a0dbb44e16e533c7` |
-| 8 | `theorem` | [P04_implies_energy_polynomial](../../../../MeasureAndIntegration/DiagonalEnergyBound.lean/declarations/p04-implies-energy-polynomial.md) | 82 | `result-track:9a7e02a12ad0f61a71b67a6b2647ff4c3d93f4decdd6ce0756d0b9db91d2e7e9` |
-| 9 | `theorem` | [P04_iff_energy_polynomial](../../../../MeasureAndIntegration/DiagonalEnergyBound.lean/declarations/p04-iff-energy-polynomial.md) | 104 | `result-track:0f96169a661dfa3489bc27e23d3a389f3ab0819ade582bc0a52807ab04cfa26a` |
+| 1 | `theorem` | [atom_upper_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DiagonalEnergyBound.lean/declarations/atom-upper-bound.md) | 16 | `result-track:17a477221d98b485cd9d27fd4328e7e8d425c260cba75a707f42ef9b755dc818` |
+| 2 | `theorem` | [atom_square_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DiagonalEnergyBound.lean/declarations/atom-square-bound.md) | 24 | `result-track:894d29bc5148141abfef0d775019b49cc07fbc28b417eeeef077e2a8c2a9e3af` |
+| 3 | `theorem` | [gram_diagonal_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DiagonalEnergyBound.lean/declarations/gram-diagonal-bound.md) | 36 | `result-track:8420baef75aca1bfe1840ef60d05682002cdd9174b65bf15cc0e8cd5ec4b7873` |
+| 4 | `theorem` | [realMoebius_square_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DiagonalEnergyBound.lean/declarations/realmoebius-square-le-one.md) | 50 | `result-track:b9f3c99477b945c22d2ae9550438cefa2f337532a64c2d967349a4edc7f0aa9d` |
+| 5 | `theorem` | [inventory_reciprocal_sum_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DiagonalEnergyBound.lean/declarations/inventory-reciprocal-sum-bound.md) | 53 | `result-track:c55ba6147d9fcd80b18dac4fa04cb96b9052be1939724c69946020eea50cfc0d` |
+| 6 | `theorem` | [diagonal_quadratic_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DiagonalEnergyBound.lean/declarations/diagonal-quadratic-bound.md) | 61 | `result-track:4d4af1f7bf1e966d923f4429e022915a7c0a786824029c4b571406f2d73141ee` |
+| 7 | `theorem` | [diagonal_polynomial_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DiagonalEnergyBound.lean/declarations/diagonal-polynomial-bound.md) | 74 | `result-track:9fe38b8d4e2e8c66d4b5e0ed6996e80c350b7c1fb1f81de4a0dbb44e16e533c7` |
+| 8 | `theorem` | [P04_implies_energy_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DiagonalEnergyBound.lean/declarations/p04-implies-energy-polynomial.md) | 82 | `result-track:9a7e02a12ad0f61a71b67a6b2647ff4c3d93f4decdd6ce0756d0b9db91d2e7e9` |
+| 9 | `theorem` | [P04_iff_energy_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DiagonalEnergyBound.lean/declarations/p04-iff-energy-polynomial.md) | 104 | `result-track:0f96169a661dfa3489bc27e23d3a389f3ab0819ade582bc0a52807ab04cfa26a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

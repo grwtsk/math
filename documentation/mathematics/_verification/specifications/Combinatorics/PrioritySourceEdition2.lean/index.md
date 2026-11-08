@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PrioritySourceEdition2.lean/index.md) · [Full source](../../../../Combinatorics/PrioritySourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrioritySourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrioritySourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpectralPriorityPolicy](../../../../Combinatorics/PrioritySourceEdition2.lean/declarations/spectralprioritypolicy.md) | 14 | `declaration-track:dbe15f0a687399610ca734e3be47618dde7a9e74c84daec669e2aa770e2a9312` |
-| 2 | `def` | [AnalyticFrontierComplete](../../../../Combinatorics/PrioritySourceEdition2.lean/declarations/analyticfrontiercomplete.md) | 24 | `declaration-track:c737103175f13dd6f08ce1c44949bd9d4f07b91653ba5f355cf0bf8f290a1db3` |
-| 3 | `theorem` | [spectralPriority_preserves_completeFrontier](../../../../Combinatorics/PrioritySourceEdition2.lean/declarations/spectralpriority-preserves-completefrontier.md) | 36 | `result-track:3e6f56f20a3e465af764207cbd9ac4b8365bc288277baf423300e9e4b7bb4425` |
-| 4 | `theorem` | [spectral_priority_preserves_analytic_frontier](../../../../Combinatorics/PrioritySourceEdition2.lean/declarations/spectral-priority-preserves-analytic-frontier.md) | 59 | `result-track:798bb13d4b3dd6880aa5fceb3c1561d2b919aaa424d554a56350b98f47672295` |
+| 1 | `structure` | [SpectralPriorityPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrioritySourceEdition2.lean/declarations/spectralprioritypolicy.md) | 14 | `declaration-track:dbe15f0a687399610ca734e3be47618dde7a9e74c84daec669e2aa770e2a9312` |
+| 2 | `def` | [AnalyticFrontierComplete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrioritySourceEdition2.lean/declarations/analyticfrontiercomplete.md) | 24 | `declaration-track:c737103175f13dd6f08ce1c44949bd9d4f07b91653ba5f355cf0bf8f290a1db3` |
+| 3 | `theorem` | [spectralPriority_preserves_completeFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrioritySourceEdition2.lean/declarations/spectralpriority-preserves-completefrontier.md) | 36 | `result-track:3e6f56f20a3e465af764207cbd9ac4b8365bc288277baf423300e9e4b7bb4425` |
+| 4 | `theorem` | [spectral_priority_preserves_analytic_frontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrioritySourceEdition2.lean/declarations/spectral-priority-preserves-analytic-frontier.md) | 59 | `result-track:798bb13d4b3dd6880aa5fceb3c1561d2b919aaa424d554a56350b98f47672295` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

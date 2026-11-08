@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmissionNamespacedAlternative.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmissionNamespacedAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmissionNamespacedAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmissionNamespacedAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AdmissionRecord](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmissionNamespacedAlternative.lean/declarations/admissionrecord.md) | 18 | `declaration-track:fe5a190302a295313a5311f5d6927d2171d244e6ddd10e974f806b7f26b73556` |
-| 2 | `def` | [admittedAsTheorem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmissionNamespacedAlternative.lean/declarations/admittedastheorem.md) | 24 | `declaration-track:693577092fa7c1487f21c4113e7c0713ee00db4993c7a95a249a11b188bf9789` |
-| 3 | `theorem` | [theorem_admission_crosses_boundary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmissionNamespacedAlternative.lean/declarations/theorem-admission-crosses-boundary.md) | 29 | `result-track:cce2b1500b2a8df4384c861dcc9d74ec4198b0cfeaae8e683467cb6c9b7253e7` |
-| 4 | `theorem` | [finite_witness_not_admitted_as_theorem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmissionNamespacedAlternative.lean/declarations/finite-witness-not-admitted-as-theorem.md) | 37 | `result-track:3834345bea01c1b274cb7463853da78cc1ab1cd2758f232e3e4f2f23fec1d70c` |
+| 1 | `structure` | [AdmissionRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmissionNamespacedAlternative.lean/declarations/admissionrecord.md) | 18 | `declaration-track:fe5a190302a295313a5311f5d6927d2171d244e6ddd10e974f806b7f26b73556` |
+| 2 | `def` | [admittedAsTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmissionNamespacedAlternative.lean/declarations/admittedastheorem.md) | 24 | `declaration-track:693577092fa7c1487f21c4113e7c0713ee00db4993c7a95a249a11b188bf9789` |
+| 3 | `theorem` | [theorem_admission_crosses_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmissionNamespacedAlternative.lean/declarations/theorem-admission-crosses-boundary.md) | 29 | `result-track:cce2b1500b2a8df4384c861dcc9d74ec4198b0cfeaae8e683467cb6c9b7253e7` |
+| 4 | `theorem` | [finite_witness_not_admitted_as_theorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmissionNamespacedAlternative.lean/declarations/finite-witness-not-admitted-as-theorem.md) | 37 | `result-track:3834345bea01c1b274cb7463853da78cc1ab1cd2758f232e3e4f2f23fec1d70c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

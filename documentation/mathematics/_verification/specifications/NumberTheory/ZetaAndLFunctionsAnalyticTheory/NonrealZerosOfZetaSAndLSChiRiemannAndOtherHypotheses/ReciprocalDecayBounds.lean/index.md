@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalDecayBounds.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalDecayBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalDecayBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalDecayBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.MoebiusEulerProduct`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusEulerProduct.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.AsymptoticAnalysis.SignedEnergyDecomposition`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SignedEnergyDecompositionHistoricalSourceEdition2.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.MoebiusEulerProduct`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusEulerProduct.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.AsymptoticAnalysis.SignedEnergyDecomposition`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SignedEnergyDecompositionHistoricalSourceEdition2.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [absoluteDirichletBudget](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalDecayBounds.lean/declarations/absolutedirichletbudget.md) | 12 | `declaration-track:e37740eff905fae9dde03bf70e2d5169b273a0c883581428254e72b5ad8610e3` |
-| 2 | `theorem` | [absoluteDirichletBudget_nonnegative](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalDecayBounds.lean/declarations/absolutedirichletbudget-nonnegative.md) | 15 | `result-track:11a0b4477859cf79f7e14f0623f8f5ed6eea4caaf9182091b18225974b3009c8` |
-| 3 | `theorem` | [reciprocal_zeta_uniform_bound](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalDecayBounds.lean/declarations/reciprocal-zeta-uniform-bound.md) | 18 | `result-track:17108d816584e501c0c8145534b222531b36b5bb4195a9f360297b813c26a2ff` |
-| 4 | `def` | [pickupKernel](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalDecayBounds.lean/declarations/pickupkernel.md) | 31 | `declaration-track:3d8be8980691d3823fb85881fac974b48fe0ad10610e8414ee374c8ca800b114` |
-| 5 | `theorem` | [pickupKernel_norm_decay](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalDecayBounds.lean/declarations/pickupkernel-norm-decay.md) | 35 | `result-track:c7d4e8182f1bef4f2cff4a6382076bb83b92c7ccc1769035e72311bc6eb919ca` |
-| 6 | `theorem` | [pickupKernel_continuous](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalDecayBounds.lean/declarations/pickupkernel-continuous.md) | 58 | `result-track:9c5bc25aca577e9ab8a280516e750acee07c2cc97e0bcca328448b27c5ce4896` |
-| 7 | `theorem` | [pickupKernel_right_tail](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalDecayBounds.lean/declarations/pickupkernel-right-tail.md) | 85 | `result-track:b45c5fe9fd4422bd68f9763b8325c8100b83643931e7d00823cde17274fab593` |
+| 1 | `def` | [absoluteDirichletBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalDecayBounds.lean/declarations/absolutedirichletbudget.md) | 12 | `declaration-track:e37740eff905fae9dde03bf70e2d5169b273a0c883581428254e72b5ad8610e3` |
+| 2 | `theorem` | [absoluteDirichletBudget_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalDecayBounds.lean/declarations/absolutedirichletbudget-nonnegative.md) | 15 | `result-track:11a0b4477859cf79f7e14f0623f8f5ed6eea4caaf9182091b18225974b3009c8` |
+| 3 | `theorem` | [reciprocal_zeta_uniform_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalDecayBounds.lean/declarations/reciprocal-zeta-uniform-bound.md) | 18 | `result-track:17108d816584e501c0c8145534b222531b36b5bb4195a9f360297b813c26a2ff` |
+| 4 | `def` | [pickupKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalDecayBounds.lean/declarations/pickupkernel.md) | 31 | `declaration-track:3d8be8980691d3823fb85881fac974b48fe0ad10610e8414ee374c8ca800b114` |
+| 5 | `theorem` | [pickupKernel_norm_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalDecayBounds.lean/declarations/pickupkernel-norm-decay.md) | 35 | `result-track:c7d4e8182f1bef4f2cff4a6382076bb83b92c7ccc1769035e72311bc6eb919ca` |
+| 6 | `theorem` | [pickupKernel_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalDecayBounds.lean/declarations/pickupkernel-continuous.md) | 58 | `result-track:9c5bc25aca577e9ab8a280516e750acee07c2cc97e0bcca328448b27c5ce4896` |
+| 7 | `theorem` | [pickupKernel_right_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalDecayBounds.lean/declarations/pickupkernel-right-tail.md) | 85 | `result-track:b45c5fe9fd4422bd68f9763b8325c8100b83643931e7d00823cde17274fab593` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

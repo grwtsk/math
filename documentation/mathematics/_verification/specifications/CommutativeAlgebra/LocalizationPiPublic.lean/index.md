@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LocalizationPiPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LocalizationPiPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationPiPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationPiPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/LocalizationPiPublic.lean/declarations/instance.md) | 43 | `declaration-track:7943044f323694bebc40ea97d2ad58a5f54f0a475724f43c3a5e0dfd8951235d` |
-| 2 | `theorem` | [iff_map_piEvalRingHom](../../../../CommutativeAlgebra/LocalizationPiPublic.lean/declarations/iff-map-pievalringhom.md) | 55 | `result-track:11e07c1b65cfc471edd978ba25d048dc548dc0fe347f90d14d43d85c9b1e9074` |
-| 3 | `lemma` | [isUnit_piRingHom_algebraMap_comp_piEvalRingHom](../../../../CommutativeAlgebra/LocalizationPiPublic.lean/declarations/isunit-piringhom-algebramap-comp-pievalringhom.md) | 70 | `result-track:4bafa4c005cd03e542d202b0651591bba66b96000e681704ca8f1328efef3f77` |
-| 4 | `theorem` | [bijective_lift_piRingHom_algebraMap_comp_piEvalRingHom](../../../../CommutativeAlgebra/LocalizationPiPublic.lean/declarations/bijective-lift-piringhom-algebramap-comp-pievalringhom.md) | 78 | `result-track:7f4789a4d5dc00512de4088b2c59d005dcf1f570eed550e52cdff2f3eaad82f1` |
-| 5 | `lemma` | [surjective_piRingHom_algebraMap_comp_piEvalRingHom](../../../../CommutativeAlgebra/LocalizationPiPublic.lean/declarations/surjective-piringhom-algebramap-comp-pievalringhom.md) | 88 | `result-track:ffdac7d59e86242f2e5b52b458bccbedb186d6990412f7e4f381ad3688393fda` |
-| 6 | `lemma` | [algebraMap_pi_surjective_of_isLocalization](../../../../CommutativeAlgebra/LocalizationPiPublic.lean/declarations/algebramap-pi-surjective-of-islocalization.md) | 101 | `result-track:dc4d48f6c3b72fdeb3785d332bae6edc784f0543d129a94c50197363805b2eec` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationPiPublic.lean/declarations/instance.md) | 43 | `declaration-track:7943044f323694bebc40ea97d2ad58a5f54f0a475724f43c3a5e0dfd8951235d` |
+| 2 | `theorem` | [iff_map_piEvalRingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationPiPublic.lean/declarations/iff-map-pievalringhom.md) | 55 | `result-track:11e07c1b65cfc471edd978ba25d048dc548dc0fe347f90d14d43d85c9b1e9074` |
+| 3 | `lemma` | [isUnit_piRingHom_algebraMap_comp_piEvalRingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationPiPublic.lean/declarations/isunit-piringhom-algebramap-comp-pievalringhom.md) | 70 | `result-track:4bafa4c005cd03e542d202b0651591bba66b96000e681704ca8f1328efef3f77` |
+| 4 | `theorem` | [bijective_lift_piRingHom_algebraMap_comp_piEvalRingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationPiPublic.lean/declarations/bijective-lift-piringhom-algebramap-comp-pievalringhom.md) | 78 | `result-track:7f4789a4d5dc00512de4088b2c59d005dcf1f570eed550e52cdff2f3eaad82f1` |
+| 5 | `lemma` | [surjective_piRingHom_algebraMap_comp_piEvalRingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationPiPublic.lean/declarations/surjective-piringhom-algebramap-comp-pievalringhom.md) | 88 | `result-track:ffdac7d59e86242f2e5b52b458bccbedb186d6990412f7e4f381ad3688393fda` |
+| 6 | `lemma` | [algebraMap_pi_surjective_of_isLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationPiPublic.lean/declarations/algebramap-pi-surjective-of-islocalization.md) | 101 | `result-track:dc4d48f6c3b72fdeb3785d332bae6edc784f0543d129a94c50197363805b2eec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

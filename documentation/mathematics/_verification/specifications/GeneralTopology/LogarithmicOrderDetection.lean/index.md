@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LogarithmicOrderDetection.lean/index.md) · [Full source](../../../../GeneralTopology/LogarithmicOrderDetection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicOrderDetection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicOrderDetection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.LogarithmicPrincipalPart`](../../../../GeneralTopology/LogarithmicPrincipalPart.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.LogarithmicPrincipalPart`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicPrincipalPart.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.Tactic` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [scaled_coefficient_unique](../../../../GeneralTopology/LogarithmicOrderDetection.lean/declarations/scaled-coefficient-unique.md) | 12 | `result-track:847b6a53242e226d3d20236bbdb17596476164cf913ad7662691a327a3489c47` |
-| 2 | `theorem` | [order_eq_zero_of_continuous_extension](../../../../GeneralTopology/LogarithmicOrderDetection.lean/declarations/order-eq-zero-of-continuous-extension.md) | 22 | `result-track:b6c87d25ae1a0d27a64b374be8529073c6b3fd1230fc3575772e93cf8f4f19a6` |
-| 3 | `theorem` | [no_continuous_extension_of_nonzero_order](../../../../GeneralTopology/LogarithmicOrderDetection.lean/declarations/no-continuous-extension-of-nonzero-order.md) | 40 | `result-track:dff4d88ad8784424844f1202867032a8f729a289acbe4fbe171dd3da69bf3cf3` |
+| 1 | `theorem` | [scaled_coefficient_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicOrderDetection.lean/declarations/scaled-coefficient-unique.md) | 12 | `result-track:847b6a53242e226d3d20236bbdb17596476164cf913ad7662691a327a3489c47` |
+| 2 | `theorem` | [order_eq_zero_of_continuous_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicOrderDetection.lean/declarations/order-eq-zero-of-continuous-extension.md) | 22 | `result-track:b6c87d25ae1a0d27a64b374be8529073c6b3fd1230fc3575772e93cf8f4f19a6` |
+| 3 | `theorem` | [no_continuous_extension_of_nonzero_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicOrderDetection.lean/declarations/no-continuous-extension-of-nonzero-order.md) | 40 | `result-track:dff4d88ad8784424844f1202867032a8f729a289acbe4fbe171dd3da69bf3cf3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

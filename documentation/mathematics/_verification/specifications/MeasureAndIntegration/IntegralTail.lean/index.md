@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/IntegralTail.lean/index.md) · [Full source](../../../../MeasureAndIntegration/IntegralTail.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTail.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTail.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,18 +60,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [integralTail](../../../../MeasureAndIntegration/IntegralTail.lean/declarations/integraltail.md) | 11 | `declaration-track:2c9ceac5126290d34f5e97c1ead15fffae1b1d25f73a2634ae25550849e1e32b` |
-| 2 | `theorem` | [integrableOn_Ici_of_continuous](../../../../MeasureAndIntegration/IntegralTail.lean/declarations/integrableon-ici-of-continuous.md) | 13 | `result-track:e33a2c43ed4934c7bd75104201375c3ea76cb25a55837b36ed6a305f47515d8f` |
-| 3 | `theorem` | [integralTail_eq_sub](../../../../MeasureAndIntegration/IntegralTail.lean/declarations/integraltail-eq-sub.md) | 24 | `result-track:03886ee414ce885e8105fb89448a89771359c473c36b98d55b87baeb1d0d66f4` |
-| 4 | `theorem` | [hasDerivAt_integralTail](../../../../MeasureAndIntegration/IntegralTail.lean/declarations/hasderivat-integraltail.md) | 32 | `result-track:663f31d5cf5db932ddfbd3f764925f2efecdb63ffd96a2e63c58af7e53aad916` |
-| 5 | `theorem` | [integralTail_positive](../../../../MeasureAndIntegration/IntegralTail.lean/declarations/integraltail-positive.md) | 42 | `result-track:fab57d2009b6b89915b4e2d92c0b323128b7ad72cfa0ba9063edeea84ca833ed` |
-| 6 | `theorem` | [logSlope_cross_nonnegative](../../../../MeasureAndIntegration/IntegralTail.lean/declarations/logslope-cross-nonnegative.md) | 56 | `result-track:5219e5831fc118a7b3ca865b3d57616d92552bd2c7797083755385afa6c4d32a` |
-| 7 | `theorem` | [integral_deriv_Ici_eq_neg](../../../../MeasureAndIntegration/IntegralTail.lean/declarations/integral-deriv-ici-eq-neg.md) | 65 | `result-track:702c3e832bf878e3dbf44970f726a9d61c6c542cc0fa4f3df92e501717caf271` |
-| 8 | `theorem` | [integralTail_logSlope_identity](../../../../MeasureAndIntegration/IntegralTail.lean/declarations/integraltail-logslope-identity.md) | 75 | `result-track:db95ba64902a4fd170f0ce125ccea7279c3ccd3548bbb7a43c34659193b192d1` |
-| 9 | `theorem` | [integralTail_logSlope_nonnegative](../../../../MeasureAndIntegration/IntegralTail.lean/declarations/integraltail-logslope-nonnegative.md) | 88 | `result-track:a717d06cb5d55d97be2a41810dc7df2c9f76438ab16bcd21f2ff9b0c38111b4a` |
-| 10 | `theorem` | [hasDerivAt_integralTail_ratio](../../../../MeasureAndIntegration/IntegralTail.lean/declarations/hasderivat-integraltail-ratio.md) | 100 | `result-track:4143435635bc4977c11b7c982c6df8683af607e53488f8e8520c56c4513e9021` |
-| 11 | `theorem` | [integralTail_ratio_antitone](../../../../MeasureAndIntegration/IntegralTail.lean/declarations/integraltail-ratio-antitone.md) | 107 | `result-track:796a31ccfe9d3ad35034ea5eaf00abaf3d399d9c538af8bdd98c7e23e0411fd4` |
-| 12 | `theorem` | [integralTail_logSlope_antitone](../../../../MeasureAndIntegration/IntegralTail.lean/declarations/integraltail-logslope-antitone.md) | 126 | `result-track:069c2d6f58656a2bd9735dce2b4a3fec5b7e1c7c924d09f1e5e5ed5b1ae7e495` |
+| 1 | `def` | [integralTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTail.lean/declarations/integraltail.md) | 11 | `declaration-track:2c9ceac5126290d34f5e97c1ead15fffae1b1d25f73a2634ae25550849e1e32b` |
+| 2 | `theorem` | [integrableOn_Ici_of_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTail.lean/declarations/integrableon-ici-of-continuous.md) | 13 | `result-track:e33a2c43ed4934c7bd75104201375c3ea76cb25a55837b36ed6a305f47515d8f` |
+| 3 | `theorem` | [integralTail_eq_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTail.lean/declarations/integraltail-eq-sub.md) | 24 | `result-track:03886ee414ce885e8105fb89448a89771359c473c36b98d55b87baeb1d0d66f4` |
+| 4 | `theorem` | [hasDerivAt_integralTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTail.lean/declarations/hasderivat-integraltail.md) | 32 | `result-track:663f31d5cf5db932ddfbd3f764925f2efecdb63ffd96a2e63c58af7e53aad916` |
+| 5 | `theorem` | [integralTail_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTail.lean/declarations/integraltail-positive.md) | 42 | `result-track:fab57d2009b6b89915b4e2d92c0b323128b7ad72cfa0ba9063edeea84ca833ed` |
+| 6 | `theorem` | [logSlope_cross_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTail.lean/declarations/logslope-cross-nonnegative.md) | 56 | `result-track:5219e5831fc118a7b3ca865b3d57616d92552bd2c7797083755385afa6c4d32a` |
+| 7 | `theorem` | [integral_deriv_Ici_eq_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTail.lean/declarations/integral-deriv-ici-eq-neg.md) | 65 | `result-track:702c3e832bf878e3dbf44970f726a9d61c6c542cc0fa4f3df92e501717caf271` |
+| 8 | `theorem` | [integralTail_logSlope_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTail.lean/declarations/integraltail-logslope-identity.md) | 75 | `result-track:db95ba64902a4fd170f0ce125ccea7279c3ccd3548bbb7a43c34659193b192d1` |
+| 9 | `theorem` | [integralTail_logSlope_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTail.lean/declarations/integraltail-logslope-nonnegative.md) | 88 | `result-track:a717d06cb5d55d97be2a41810dc7df2c9f76438ab16bcd21f2ff9b0c38111b4a` |
+| 10 | `theorem` | [hasDerivAt_integralTail_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTail.lean/declarations/hasderivat-integraltail-ratio.md) | 100 | `result-track:4143435635bc4977c11b7c982c6df8683af607e53488f8e8520c56c4513e9021` |
+| 11 | `theorem` | [integralTail_ratio_antitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTail.lean/declarations/integraltail-ratio-antitone.md) | 107 | `result-track:796a31ccfe9d3ad35034ea5eaf00abaf3d399d9c538af8bdd98c7e23e0411fd4` |
+| 12 | `theorem` | [integralTail_logSlope_antitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTail.lean/declarations/integraltail-logslope-antitone.md) | 126 | `result-track:069c2d6f58656a2bd9735dce2b4a3fec5b7e1c7c924d09f1e5e5ed5b1ae7e495` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

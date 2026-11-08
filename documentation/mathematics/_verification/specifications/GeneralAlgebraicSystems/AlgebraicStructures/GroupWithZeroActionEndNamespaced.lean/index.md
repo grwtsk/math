@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionEndNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionEndNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionEndNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionEndNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Function.Surjective.distribMulActionLeft](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionEndNamespaced.lean/declarations/function-surjective-distribmulactionleft.md) | 32 | `declaration-track:a5e9ff613002cef859f0eb21a5199eae8039090fb179b0fb63e495dd68e59ed4` |
-| 2 | `abbrev` | [DistribMulAction.compHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionEndNamespaced.lean/declarations/distribmulaction-comphom.md) | 43 | `declaration-track:535d7ae9bf91b4ef01e994fac3adf5db12a8d5b65452755e47a72625eec96e1a` |
-| 3 | `abbrev` | [MulDistribMulAction.compHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionEndNamespaced.lean/declarations/muldistribmulaction-comphom.md) | 54 | `declaration-track:eea23441dc02c47446f754ebdf7076fe33c3893e7a397790b31ca35d49f0c186` |
-| 4 | `instance` | [AddMonoid.End.applyDistribMulAction](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionEndNamespaced.lean/declarations/addmonoid-end-applydistribmulaction.md) | 64 | `declaration-track:43fec2440ff8d1378266ae916d2b69c9507d7d4bbd004d7f21da9433ac4d59c5` |
-| 5 | `theorem` | [AddMonoid.End.smul_def](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionEndNamespaced.lean/declarations/addmonoid-end-smul-def.md) | 73 | `result-track:69a357c1522398c89914fd21b54d63a814866a839121d8375e3e8a990f304130` |
-| 6 | `instance` | [AddMonoid.End.applyFaithfulSMul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionEndNamespaced.lean/declarations/addmonoid-end-applyfaithfulsmul.md) | 77 | `declaration-track:878ee2bdbcd9ee60b729ee65cd8c140006c1fb3fa8a484f2f6d6de38c94f61a6` |
-| 7 | `def` | [DistribMulAction.toAddEquiv₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionEndNamespaced.lean/declarations/distribmulaction-toaddequiv.md) | 84 | `declaration-track:14ad0c943cf931d1b510edbac9a3acbf256ef6d283461a1c7b1d6ad952399f27` |
+| 1 | `abbrev` | [Function.Surjective.distribMulActionLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionEndNamespaced.lean/declarations/function-surjective-distribmulactionleft.md) | 32 | `declaration-track:a5e9ff613002cef859f0eb21a5199eae8039090fb179b0fb63e495dd68e59ed4` |
+| 2 | `abbrev` | [DistribMulAction.compHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionEndNamespaced.lean/declarations/distribmulaction-comphom.md) | 43 | `declaration-track:535d7ae9bf91b4ef01e994fac3adf5db12a8d5b65452755e47a72625eec96e1a` |
+| 3 | `abbrev` | [MulDistribMulAction.compHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionEndNamespaced.lean/declarations/muldistribmulaction-comphom.md) | 54 | `declaration-track:eea23441dc02c47446f754ebdf7076fe33c3893e7a397790b31ca35d49f0c186` |
+| 4 | `instance` | [AddMonoid.End.applyDistribMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionEndNamespaced.lean/declarations/addmonoid-end-applydistribmulaction.md) | 64 | `declaration-track:43fec2440ff8d1378266ae916d2b69c9507d7d4bbd004d7f21da9433ac4d59c5` |
+| 5 | `theorem` | [AddMonoid.End.smul_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionEndNamespaced.lean/declarations/addmonoid-end-smul-def.md) | 73 | `result-track:69a357c1522398c89914fd21b54d63a814866a839121d8375e3e8a990f304130` |
+| 6 | `instance` | [AddMonoid.End.applyFaithfulSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionEndNamespaced.lean/declarations/addmonoid-end-applyfaithfulsmul.md) | 77 | `declaration-track:878ee2bdbcd9ee60b729ee65cd8c140006c1fb3fa8a484f2f6d6de38c94f61a6` |
+| 7 | `def` | [DistribMulAction.toAddEquiv₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionEndNamespaced.lean/declarations/distribmulaction-toaddequiv.md) | 84 | `declaration-track:14ad0c943cf931d1b510edbac9a3acbf256ef6d283461a1c7b1d6ad952399f27` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

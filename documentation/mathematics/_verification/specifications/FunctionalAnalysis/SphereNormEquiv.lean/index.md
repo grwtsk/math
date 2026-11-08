@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SphereNormEquiv.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SphereNormEquiv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SphereNormEquiv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SphereNormEquiv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [homeomorphUnitSphereProd](../../../../FunctionalAnalysis/SphereNormEquiv.lean/declarations/homeomorphunitsphereprod.md) | 29 | `declaration-track:10ab77cba49b1a6ae06c16b4f12436ea3c7cbbfca2ee0be083f584c67e2503a9` |
+| 1 | `def` | [homeomorphUnitSphereProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SphereNormEquiv.lean/declarations/homeomorphunitsphereprod.md) | 29 | `declaration-track:10ab77cba49b1a6ae06c16b4f12436ea3c7cbbfca2ee0be083f584c67e2503a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SemiSimplexCategoryPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/SemiSimplexCategoryPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SemiSimplexCategoryPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SemiSimplexCategoryPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SemiSimplexCategory](../../../../AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/semisimplexcategory.md) | 31 | `declaration-track:28c079f1d6ed2d22bb0b95b6e1fe43f4c6ef3b2682f408a695453cf73422ed28` |
-| 2 | `def` | [Hom](../../../../AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/hom.md) | 45 | `declaration-track:345771b59796293fefc30fe277d038de379a077a70865db97cea6023a485ce32` |
-| 3 | `instance` | [smallCategory](../../../../AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/smallcategory.md) | 47 | `declaration-track:894e8444e1378298493d4e77b5c14c0f2f7d182a83022b1f01a73e3a26096fba` |
-| 4 | `def` | [homEquiv](../../../../AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/homequiv.md) | 54 | `declaration-track:e13cfbb00cfdeb90d696a90a0399719c2b8d93cc359e8246d38a9d74ade6dd0f` |
-| 5 | `lemma` | [homEquiv_id](../../../../AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/homequiv-id.md) | 59 | `result-track:a7a26dfad67e9791a105103796e9f99c0ce2843ee345235ddd8756d6b2129939` |
-| 6 | `lemma` | [homEquiv_comp](../../../../AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/homequiv-comp.md) | 63 | `result-track:dde5595d4270475d99d86035a6677fb940631e61b62d0c1f606f2651dfc205e9` |
-| 7 | `theorem` | [hom_ext](../../../../AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/hom-ext.md) | 69 | `result-track:a198e029da7628bf7a18556ed771134a86ae5afac515544ec3b05becb0edf836` |
-| 8 | `def` | [toSimplexCategory](../../../../AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/tosimplexcategory.md) | 74 | `declaration-track:c5c654d91c6552c273890aeb95ab1bfc219e22ebb3cadf8ee7f1a19ea56f7378` |
-| 9 | `lemma` | [toSimplexCategory_obj](../../../../AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/tosimplexcategory-obj.md) | 79 | `result-track:bdbb6cc17ec7c23533fa05dc215d8311593479c661c0e09103d8b32e0a06b891` |
-| 10 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/instance-source-edition-2.md) | 82 | `declaration-track:6d7657277299f0a095bb3f2d369932a3415ab1a6f35c42cf79d1b2f0eb79c3d7` |
-| 11 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/instance.md) | 87 | `declaration-track:29cc46bf0bbdc87138c6f6d3c1f5eb89f30a9883f60e5a0668a9fbc009b88f57` |
-| 12 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/instance-source-edition-3.md) | 91 | `declaration-track:f11c3cbb503dd0daa9b3491218cc142e47f943d8e3cadf2ca94446bf354307e1` |
-| 13 | `def` | [homOfMono](../../../../AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/homofmono.md) | 98 | `declaration-track:68a42bec906a958307360ec6f314f8e953ebaaefbff04f86a51a6a88110de4bf` |
-| 14 | `lemma` | [toSimplexCategory_map_homOfMono](../../../../AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/tosimplexcategory-map-homofmono.md) | 105 | `result-track:dbe1d15556ee4f983a723ddf35101078125f818d0b6fdfd59d9d69614a3d1e05` |
+| 1 | `structure` | [SemiSimplexCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/semisimplexcategory.md) | 31 | `declaration-track:28c079f1d6ed2d22bb0b95b6e1fe43f4c6ef3b2682f408a695453cf73422ed28` |
+| 2 | `def` | [Hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/hom.md) | 45 | `declaration-track:345771b59796293fefc30fe277d038de379a077a70865db97cea6023a485ce32` |
+| 3 | `instance` | [smallCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/smallcategory.md) | 47 | `declaration-track:894e8444e1378298493d4e77b5c14c0f2f7d182a83022b1f01a73e3a26096fba` |
+| 4 | `def` | [homEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/homequiv.md) | 54 | `declaration-track:e13cfbb00cfdeb90d696a90a0399719c2b8d93cc359e8246d38a9d74ade6dd0f` |
+| 5 | `lemma` | [homEquiv_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/homequiv-id.md) | 59 | `result-track:a7a26dfad67e9791a105103796e9f99c0ce2843ee345235ddd8756d6b2129939` |
+| 6 | `lemma` | [homEquiv_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/homequiv-comp.md) | 63 | `result-track:dde5595d4270475d99d86035a6677fb940631e61b62d0c1f606f2651dfc205e9` |
+| 7 | `theorem` | [hom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/hom-ext.md) | 69 | `result-track:a198e029da7628bf7a18556ed771134a86ae5afac515544ec3b05becb0edf836` |
+| 8 | `def` | [toSimplexCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/tosimplexcategory.md) | 74 | `declaration-track:c5c654d91c6552c273890aeb95ab1bfc219e22ebb3cadf8ee7f1a19ea56f7378` |
+| 9 | `lemma` | [toSimplexCategory_obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/tosimplexcategory-obj.md) | 79 | `result-track:bdbb6cc17ec7c23533fa05dc215d8311593479c661c0e09103d8b32e0a06b891` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/instance-source-edition-2.md) | 82 | `declaration-track:6d7657277299f0a095bb3f2d369932a3415ab1a6f35c42cf79d1b2f0eb79c3d7` |
+| 11 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/instance.md) | 87 | `declaration-track:29cc46bf0bbdc87138c6f6d3c1f5eb89f30a9883f60e5a0668a9fbc009b88f57` |
+| 12 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/instance-source-edition-3.md) | 91 | `declaration-track:f11c3cbb503dd0daa9b3491218cc142e47f943d8e3cadf2ca94446bf354307e1` |
+| 13 | `def` | [homOfMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/homofmono.md) | 98 | `declaration-track:68a42bec906a958307360ec6f314f8e953ebaaefbff04f86a51a6a88110de4bf` |
+| 14 | `lemma` | [toSimplexCategory_map_homOfMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SemiSimplexCategoryPublic.lean/declarations/tosimplexcategory-map-homofmono.md) | 105 | `result-track:dbe1d15556ee4f983a723ddf35101078125f818d0b6fdfd59d9d69614a3d1e05` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

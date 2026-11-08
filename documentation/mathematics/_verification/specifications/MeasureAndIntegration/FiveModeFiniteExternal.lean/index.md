@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FiveModeFiniteExternal.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FiveModeFiniteExternal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeFiniteExternal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeFiniteExternal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_finite_bounds_of_verified_height_and_sixth_tail](../../../../MeasureAndIntegration/FiveModeFiniteExternal.lean/declarations/actual-finite-bounds-of-verified-height-and-sixth-tail.md) | 24 | `result-track:7c6d3b2077b70b3e63d68c1e55a2b97376ff69ab0f16fe50ea97dc2722a43d44` |
-| 2 | `theorem` | [actual_finite_bounds_of_external_zero_inputs](../../../../MeasureAndIntegration/FiveModeFiniteExternal.lean/declarations/actual-finite-bounds-of-external-zero-inputs.md) | 44 | `result-track:4de6c20c0c81a1c433f8790f6459167aaac333742b897fbc7a36138139a5eea9` |
+| 1 | `theorem` | [actual_finite_bounds_of_verified_height_and_sixth_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeFiniteExternal.lean/declarations/actual-finite-bounds-of-verified-height-and-sixth-tail.md) | 24 | `result-track:7c6d3b2077b70b3e63d68c1e55a2b97376ff69ab0f16fe50ea97dc2722a43d44` |
+| 2 | `theorem` | [actual_finite_bounds_of_external_zero_inputs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeFiniteExternal.lean/declarations/actual-finite-bounds-of-external-zero-inputs.md) | 44 | `result-track:4de6c20c0c81a1c433f8790f6459167aaac333742b897fbc7a36138139a5eea9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

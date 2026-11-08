@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RuntimeContractNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RuntimeContractNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RuntimeContractNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RuntimeContractNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ShaderRuntimeContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RuntimeContractNamespaced.lean/declarations/shaderruntimecontract.md) | 26 | `declaration-track:dc07847f4e42259b1e71472636465b69aff4b4da639de4f46a30330cd147df8e` |
-| 2 | `theorem` | [shader_does_not_prove_modularity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RuntimeContractNamespaced.lean/declarations/shader-does-not-prove-modularity.md) | 35 | `result-track:75c9a193940d62a09f271cf7b01cbcd0d054e691f1726b312d7d58ec52df55e1` |
-| 3 | `theorem` | [shader_does_not_prove_bsd](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RuntimeContractNamespaced.lean/declarations/shader-does-not-prove-bsd.md) | 40 | `result-track:329334699103328dfb75dcf48d7c1cb93df190105fe8619ae823597784a19406` |
+| 1 | `structure` | [ShaderRuntimeContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RuntimeContractNamespaced.lean/declarations/shaderruntimecontract.md) | 26 | `declaration-track:dc07847f4e42259b1e71472636465b69aff4b4da639de4f46a30330cd147df8e` |
+| 2 | `theorem` | [shader_does_not_prove_modularity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RuntimeContractNamespaced.lean/declarations/shader-does-not-prove-modularity.md) | 35 | `result-track:75c9a193940d62a09f271cf7b01cbcd0d054e691f1726b312d7d58ec52df55e1` |
+| 3 | `theorem` | [shader_does_not_prove_bsd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RuntimeContractNamespaced.lean/declarations/shader-does-not-prove-bsd.md) | 40 | `result-track:329334699103328dfb75dcf48d7c1cb93df190105fe8619ae823597784a19406` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

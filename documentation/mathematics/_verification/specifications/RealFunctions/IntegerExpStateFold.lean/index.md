@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/IntegerExpStateFold.lean/index.md) · [Full source](../../../../RealFunctions/IntegerExpStateFold.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegerExpStateFold.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegerExpStateFold.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare`](../../../../RealFunctions/IntegerDyadicSquare.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegerDyadicSquare.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [initial](../../../../RealFunctions/IntegerExpStateFold.lean/declarations/initial.md) | 24 | `declaration-track:2410d787a0a5b5271cd6c4b1dc8d0fecf472a880f867652ab387a13e19f1e87c` |
-| 2 | `theorem` | [initial_refines](../../../../RealFunctions/IntegerExpStateFold.lean/declarations/initial-refines.md) | 31 | `result-track:f70c71569ba2f3f60245f39b3ae6725f15902ad56e11563e26442821377b534f` |
-| 3 | `theorem` | [run_refines](../../../../RealFunctions/IntegerExpStateFold.lean/declarations/run-refines.md) | 37 | `result-track:fc357f9ce59f8480de6d5f7df5f4b4639bedc78418c13bfff2d37060d2cebe1c` |
-| 4 | `def` | [exponential](../../../../RealFunctions/IntegerExpStateFold.lean/declarations/exponential.md) | 46 | `declaration-track:5950a441206f1aa6aa7abcbb7d61f395582a21dcdc41bd116676bcc6e90abf33` |
-| 5 | `theorem` | [exponential_eq](../../../../RealFunctions/IntegerExpStateFold.lean/declarations/exponential-eq.md) | 49 | `result-track:6b75d7990b7762817ad7b8b50f6801f1ba6d3e73b06f27fb658088d3c9336763` |
-| 6 | `theorem` | [exponential_eq_reference](../../../../RealFunctions/IntegerExpStateFold.lean/declarations/exponential-eq-reference.md) | 54 | `result-track:839de3dd4c033c7eecc277fa4e3046fdcea3c73dfe98688fb830f51e9d9cbc37` |
-| 7 | `def` | [withLog](../../../../RealFunctions/IntegerExpStateFold.lean/declarations/withlog.md) | 58 | `declaration-track:9d9ae259ff6f6e43d1c11670bf3095c0b6c562e61524448c24af4dc02294845d` |
-| 8 | `def` | [powerValue](../../../../RealFunctions/IntegerExpStateFold.lean/declarations/powervalue.md) | 63 | `declaration-track:12fe4b780e314b21a3b754c83546310e39b51e5c285dd75556be14283e8e520d` |
-| 9 | `theorem` | [powerValue_eq](../../../../RealFunctions/IntegerExpStateFold.lean/declarations/powervalue-eq.md) | 66 | `result-track:3deedbb64e2db53535073e4d7801062c57a11dfbce9865446a0256882848fae7` |
-| 10 | `theorem` | [powerValue_sound](../../../../RealFunctions/IntegerExpStateFold.lean/declarations/powervalue-sound.md) | 72 | `result-track:18bd64ca078e4e8c5dde1268d785e598903456f756622bcd924d5bf927aacdff` |
+| 1 | `def` | [initial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegerExpStateFold.lean/declarations/initial.md) | 24 | `declaration-track:2410d787a0a5b5271cd6c4b1dc8d0fecf472a880f867652ab387a13e19f1e87c` |
+| 2 | `theorem` | [initial_refines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegerExpStateFold.lean/declarations/initial-refines.md) | 31 | `result-track:f70c71569ba2f3f60245f39b3ae6725f15902ad56e11563e26442821377b534f` |
+| 3 | `theorem` | [run_refines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegerExpStateFold.lean/declarations/run-refines.md) | 37 | `result-track:fc357f9ce59f8480de6d5f7df5f4b4639bedc78418c13bfff2d37060d2cebe1c` |
+| 4 | `def` | [exponential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegerExpStateFold.lean/declarations/exponential.md) | 46 | `declaration-track:5950a441206f1aa6aa7abcbb7d61f395582a21dcdc41bd116676bcc6e90abf33` |
+| 5 | `theorem` | [exponential_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegerExpStateFold.lean/declarations/exponential-eq.md) | 49 | `result-track:6b75d7990b7762817ad7b8b50f6801f1ba6d3e73b06f27fb658088d3c9336763` |
+| 6 | `theorem` | [exponential_eq_reference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegerExpStateFold.lean/declarations/exponential-eq-reference.md) | 54 | `result-track:839de3dd4c033c7eecc277fa4e3046fdcea3c73dfe98688fb830f51e9d9cbc37` |
+| 7 | `def` | [withLog](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegerExpStateFold.lean/declarations/withlog.md) | 58 | `declaration-track:9d9ae259ff6f6e43d1c11670bf3095c0b6c562e61524448c24af4dc02294845d` |
+| 8 | `def` | [powerValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegerExpStateFold.lean/declarations/powervalue.md) | 63 | `declaration-track:12fe4b780e314b21a3b754c83546310e39b51e5c285dd75556be14283e8e520d` |
+| 9 | `theorem` | [powerValue_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegerExpStateFold.lean/declarations/powervalue-eq.md) | 66 | `result-track:3deedbb64e2db53535073e4d7801062c57a11dfbce9865446a0256882848fae7` |
+| 10 | `theorem` | [powerValue_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegerExpStateFold.lean/declarations/powervalue-sound.md) | 72 | `result-track:18bd64ca078e4e8c5dde1268d785e598903456f756622bcd924d5bf927aacdff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

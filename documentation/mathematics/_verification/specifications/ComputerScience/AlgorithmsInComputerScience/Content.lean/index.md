@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Content.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Content.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Content.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Content.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [BlueprintContent](../../../../../ComputerScience/AlgorithmsInComputerScience/Content.lean/declarations/blueprintcontent.md) | 20 | `declaration-track:3789c2ae0e5915110f8bf049480bb7480454a4ffe8b08d628530c186643345c6` |
-| 2 | `def` | [BlueprintContent.declarationRange](../../../../../ComputerScience/AlgorithmsInComputerScience/Content.lean/declarations/blueprintcontent-declarationrange.md) | 25 | `declaration-track:6218f04dc8b755c3e6e1fd6bcc63d093c1b3227c01117f8ab031da1cba48a679` |
-| 3 | `def` | [BlueprintContent.order](../../../../../ComputerScience/AlgorithmsInComputerScience/Content.lean/declarations/blueprintcontent-order.md) | 30 | `declaration-track:b637a491ef4d7867e927c52ef68221ef2dc0987c6a8a452c82182a766e9b702f` |
-| 4 | `def` | [getMainModuleBlueprintContents](../../../../../ComputerScience/AlgorithmsInComputerScience/Content.lean/declarations/getmainmoduleblueprintcontents.md) | 37 | `declaration-track:8d5e503ade3d43786785eb1f0cd67d2bdc78e895b0d3dceee271e729859c96a2` |
-| 5 | `def` | [getBlueprintContents](../../../../../ComputerScience/AlgorithmsInComputerScience/Content.lean/declarations/getblueprintcontents.md) | 44 | `declaration-track:01d42c70b8c877982bc3f33fc82f512da5ebb7d8c361e9efe41806df579d97de` |
+| 1 | `inductive` | [BlueprintContent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Content.lean/declarations/blueprintcontent.md) | 20 | `declaration-track:3789c2ae0e5915110f8bf049480bb7480454a4ffe8b08d628530c186643345c6` |
+| 2 | `def` | [BlueprintContent.declarationRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Content.lean/declarations/blueprintcontent-declarationrange.md) | 25 | `declaration-track:6218f04dc8b755c3e6e1fd6bcc63d093c1b3227c01117f8ab031da1cba48a679` |
+| 3 | `def` | [BlueprintContent.order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Content.lean/declarations/blueprintcontent-order.md) | 30 | `declaration-track:b637a491ef4d7867e927c52ef68221ef2dc0987c6a8a452c82182a766e9b702f` |
+| 4 | `def` | [getMainModuleBlueprintContents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Content.lean/declarations/getmainmoduleblueprintcontents.md) | 37 | `declaration-track:8d5e503ade3d43786785eb1f0cd67d2bdc78e895b0d3dceee271e729859c96a2` |
+| 5 | `def` | [getBlueprintContents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Content.lean/declarations/getblueprintcontents.md) | 44 | `declaration-track:01d42c70b8c877982bc3f33fc82f512da5ebb7d8c361e9efe41806df579d97de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/index.md) · [Full source](../../../../Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FinitePrimeUniverse](../../../../Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/declarations/finiteprimeuniverse.md) | 26 | `declaration-track:208784f9718af839df78205bb9b74035a8f815a4376466dc89ea4423ad5a3420` |
-| 2 | `structure` | [PrimeUniverseEmbedding](../../../../Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/declarations/primeuniverseembedding.md) | 40 | `declaration-track:51605945ac316f39fa0a5ae1a7301332d8ef8b3dd71c185a97f4609fa41a70d4` |
-| 3 | `structure` | [PrimeInsertionEdge](../../../../Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/declarations/primeinsertionedge.md) | 49 | `declaration-track:06e1a9e05b17a9d97a1c06b59f1aa7853de50fa756ef57d2784bcda5741b6627` |
-| 4 | `def` | [PrimeInsertionEdge.target](../../../../Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/declarations/primeinsertionedge-target.md) | 56 | `declaration-track:dedfea0127e6b38406c5f148481f648e96b769471c9fc7442ca2eb08075b94fd` |
-| 5 | `theorem` | [PrimeInsertionEdge.source_ssubset_target](../../../../Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/declarations/primeinsertionedge-source-ssubset-target.md) | 62 | `result-track:a4ee17c860129c194c404e7645e626820a291f26240f6e5bf08896f09a218cc1` |
-| 6 | `instance` | [(anonymous)](../../../../Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/declarations/instance-source-edition-2.md) | 75 | `declaration-track:e1b76874235b887beed6e6f564f5c251ff62c32a46d57fe004d66923e0869808` |
-| 7 | `instance` | [(anonymous)](../../../../Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/declarations/instance.md) | 98 | `declaration-track:0a557b4fb2dcc955ff304b5bd4cdd3b42d758d818679b9ea6309b5c02c5ff9c0` |
-| 8 | `theorem` | [finitePrimeUniverse_node_count](../../../../Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/declarations/finiteprimeuniverse-node-count.md) | 103 | `result-track:071cbf5a24eebc1a707af371f4ee17ebe7201ab7d78fe6ffe0e25f6d866a814c` |
-| 9 | `structure` | [PrimeCutCardinalityCertificate](../../../../Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/declarations/primecutcardinalitycertificate.md) | 109 | `declaration-track:838ccc99dc294f73f7c74fbd66345f5d7c65fce6934d5af8aae019139aed7437` |
+| 1 | `structure` | [FinitePrimeUniverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/declarations/finiteprimeuniverse.md) | 26 | `declaration-track:208784f9718af839df78205bb9b74035a8f815a4376466dc89ea4423ad5a3420` |
+| 2 | `structure` | [PrimeUniverseEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/declarations/primeuniverseembedding.md) | 40 | `declaration-track:51605945ac316f39fa0a5ae1a7301332d8ef8b3dd71c185a97f4609fa41a70d4` |
+| 3 | `structure` | [PrimeInsertionEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/declarations/primeinsertionedge.md) | 49 | `declaration-track:06e1a9e05b17a9d97a1c06b59f1aa7853de50fa756ef57d2784bcda5741b6627` |
+| 4 | `def` | [PrimeInsertionEdge.target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/declarations/primeinsertionedge-target.md) | 56 | `declaration-track:dedfea0127e6b38406c5f148481f648e96b769471c9fc7442ca2eb08075b94fd` |
+| 5 | `theorem` | [PrimeInsertionEdge.source_ssubset_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/declarations/primeinsertionedge-source-ssubset-target.md) | 62 | `result-track:a4ee17c860129c194c404e7645e626820a291f26240f6e5bf08896f09a218cc1` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/declarations/instance-source-edition-2.md) | 75 | `declaration-track:e1b76874235b887beed6e6f564f5c251ff62c32a46d57fe004d66923e0869808` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/declarations/instance.md) | 98 | `declaration-track:0a557b4fb2dcc955ff304b5bd4cdd3b42d758d818679b9ea6309b5c02c5ff9c0` |
+| 8 | `theorem` | [finitePrimeUniverse_node_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/declarations/finiteprimeuniverse-node-count.md) | 103 | `result-track:071cbf5a24eebc1a707af371f4ee17ebe7201ab7d78fe6ffe0e25f6d866a814c` |
+| 9 | `structure` | [PrimeCutCardinalityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeUniverseNamespacedPrimeUniverseEmbedding.lean/declarations/primecutcardinalitycertificate.md) | 109 | `declaration-track:838ccc99dc294f73f7c74fbd66345f5d7c65fce6934d5af8aae019139aed7437` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

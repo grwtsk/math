@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MaximalBasic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MaximalBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [equivSubtype](../../../../CommutativeAlgebra/MaximalBasic.lean/declarations/equivsubtype.md) | 23 | `declaration-track:de3c418008e3d16b0de145e1ee896b4ab7f76001718ab8ea4baea6dd86500339` |
-| 2 | `theorem` | [range_asIdeal](../../../../CommutativeAlgebra/MaximalBasic.lean/declarations/range-asideal.md) | 29 | `result-track:d786c6af9dabbdeb06a864abf21ad099fb853feed635356909519a5c92cf64a3` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/MaximalBasic.lean/declarations/instance.md) | 36 | `declaration-track:e340b663a4587eb3d57c100b0747ebf8dc0e3bf10524697e59d9b1647ca49684` |
-| 4 | `def` | [toPrimeSpectrum](../../../../CommutativeAlgebra/MaximalBasic.lean/declarations/toprimespectrum.md) | 41 | `declaration-track:7ac5a96fc502f10f644beaa43f3c2a662a5194dc51c2f9202cbe281feb55261d` |
-| 5 | `theorem` | [toPrimeSpectrum_injective](../../../../CommutativeAlgebra/MaximalBasic.lean/declarations/toprimespectrum-injective.md) | 44 | `result-track:8a7cea596f89792b6ce3a7c3890d8e328febc3f8f3a20537146c5da46fa8831c` |
+| 1 | `def` | [equivSubtype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasic.lean/declarations/equivsubtype.md) | 23 | `declaration-track:de3c418008e3d16b0de145e1ee896b4ab7f76001718ab8ea4baea6dd86500339` |
+| 2 | `theorem` | [range_asIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasic.lean/declarations/range-asideal.md) | 29 | `result-track:d786c6af9dabbdeb06a864abf21ad099fb853feed635356909519a5c92cf64a3` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasic.lean/declarations/instance.md) | 36 | `declaration-track:e340b663a4587eb3d57c100b0747ebf8dc0e3bf10524697e59d9b1647ca49684` |
+| 4 | `def` | [toPrimeSpectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasic.lean/declarations/toprimespectrum.md) | 41 | `declaration-track:7ac5a96fc502f10f644beaa43f3c2a662a5194dc51c2f9202cbe281feb55261d` |
+| 5 | `theorem` | [toPrimeSpectrum_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasic.lean/declarations/toprimespectrum-injective.md) | 44 | `result-track:8a7cea596f89792b6ce3a7c3890d8e328febc3f8f3a20537146c5da46fa8831c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AdmissiblePowerNonnegativity.lean/index.md) · [Full source](../../../../RealFunctions/AdmissiblePowerNonnegativity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissiblePowerNonnegativity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissiblePowerNonnegativity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrecessionInvocation](../../../../RealFunctions/AdmissiblePowerNonnegativity.lean/declarations/precessioninvocation.md) | 44 | `declaration-track:0413132178496045eb6fc791f9d7ec219093c1bab19e134228688aa6643ff280` |
-| 2 | `def` | [executePrecession](../../../../RealFunctions/AdmissiblePowerNonnegativity.lean/declarations/executeprecession.md) | 50 | `declaration-track:b3b41bc0b9ea8f0fd3b30f64348f4c04df6df8df5e4f80b3c381e4dd3b2064f2` |
-| 3 | `def` | [precessionRepresentation](../../../../RealFunctions/AdmissiblePowerNonnegativity.lean/declarations/precessionrepresentation.md) | 54 | `declaration-track:e326ff91b17abd8904b86ca7581d22b2ab2fc1d4fdcf2a8d5372b0c8d29b652c` |
-| 4 | `theorem` | [executePrecession_represents](../../../../RealFunctions/AdmissiblePowerNonnegativity.lean/declarations/executeprecession-represents.md) | 61 | `result-track:c489e5af22d1dc5b58b73a656cfe5b249b7c9ae61bdbc6b2f79adb293916be1d` |
-| 5 | `theorem` | [executePrecession_nonnegative](../../../../RealFunctions/AdmissiblePowerNonnegativity.lean/declarations/executeprecession-nonnegative.md) | 70 | `result-track:945acba5d30f2b83633c28b4f999cd430156725aa112c4e61818f21eefbdc792` |
+| 1 | `structure` | [PrecessionInvocation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissiblePowerNonnegativity.lean/declarations/precessioninvocation.md) | 44 | `declaration-track:0413132178496045eb6fc791f9d7ec219093c1bab19e134228688aa6643ff280` |
+| 2 | `def` | [executePrecession](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissiblePowerNonnegativity.lean/declarations/executeprecession.md) | 50 | `declaration-track:b3b41bc0b9ea8f0fd3b30f64348f4c04df6df8df5e4f80b3c381e4dd3b2064f2` |
+| 3 | `def` | [precessionRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissiblePowerNonnegativity.lean/declarations/precessionrepresentation.md) | 54 | `declaration-track:e326ff91b17abd8904b86ca7581d22b2ab2fc1d4fdcf2a8d5372b0c8d29b652c` |
+| 4 | `theorem` | [executePrecession_represents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissiblePowerNonnegativity.lean/declarations/executeprecession-represents.md) | 61 | `result-track:c489e5af22d1dc5b58b73a656cfe5b249b7c9ae61bdbc6b2f79adb293916be1d` |
+| 5 | `theorem` | [executePrecession_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissiblePowerNonnegativity.lean/declarations/executeprecession-nonnegative.md) | 70 | `result-track:945acba5d30f2b83633c28b4f999cd430156725aa112c4e61818f21eefbdc792` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

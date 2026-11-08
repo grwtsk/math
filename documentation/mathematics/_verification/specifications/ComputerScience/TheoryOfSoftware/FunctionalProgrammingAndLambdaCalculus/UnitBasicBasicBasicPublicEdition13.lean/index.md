@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnitBasicBasicBasicPublicEdition13.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnitBasicBasicBasicPublicEdition13.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnitBasicBasicBasicPublicEdition13.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnitBasicBasicBasicPublicEdition13.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ofWeeks](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnitBasicBasicBasicPublicEdition13.lean/declarations/ofweeks.md) | 33 | `declaration-track:0f470068e32f8f029cbec561e1070e1cc5a163eb72c70faee9c0d6e128389716` |
-| 2 | `def` | [toWeeks](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnitBasicBasicBasicPublicEdition13.lean/declarations/toweeks.md) | 40 | `declaration-track:b4352d546b95cc869175d43d23f5192c994d0bb30e925992905552ddcc4bcc01` |
+| 1 | `def` | [ofWeeks](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnitBasicBasicBasicPublicEdition13.lean/declarations/ofweeks.md) | 33 | `declaration-track:0f470068e32f8f029cbec561e1070e1cc5a163eb72c70faee9c0d6e128389716` |
+| 2 | `def` | [toWeeks](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnitBasicBasicBasicPublicEdition13.lean/declarations/toweeks.md) | 40 | `declaration-track:b4352d546b95cc869175d43d23f5192c994d0bb30e925992905552ddcc4bcc01` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

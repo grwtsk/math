@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/FiniteEulerExponentData.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/FiniteEulerExponentData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteEulerExponentData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteEulerExponentData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -53,7 +53,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.NumberTheory.ArithmeticFunction.Moebius` — import line 24; external provider; requires a separately pinned dependency.
 - `Mathlib.Algebra.BigOperators.Group.Finset.Basic` — import line 25; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Finsupp.Defs` — import line 26; external provider; requires a separately pinned dependency.
-- [Conjugacy And Finite Bounds](../../../../GroupTheoryAndGeneralizations/ConjugacyAndFiniteBounds.lean/index.md) — import line 28; pinned internal source present.
+- [Conjugacy And Finite Bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ConjugacyAndFiniteBounds.lean/index.md) — import line 28; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -64,10 +64,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cycleEulerFactorData](../../../../GroupTheoryAndGeneralizations/FiniteEulerExponentData.lean/declarations/cycleeulerfactordata.md) | 61 | `declaration-track:00ed0dc570fb85fa60d8f88080b72b6684a78631ccc0f0a1686da156aa35ba44` |
-| 2 | `theorem` | [cycleEulerFactorData_apply](../../../../GroupTheoryAndGeneralizations/FiniteEulerExponentData.lean/declarations/cycleeulerfactordata-apply.md) | 76 | `result-track:5b7082f0a7a2a6aba003539d2c5778fd9e97e6d3a257cb8af926c7a823b83626` |
-| 3 | `theorem` | [cycleEulerFactorData_support_subset](../../../../GroupTheoryAndGeneralizations/FiniteEulerExponentData.lean/declarations/cycleeulerfactordata-support-subset.md) | 83 | `result-track:33a32c04d612c5c5799257265b252a4a85902a7c27f65cfd63be67a70dbcf752` |
-| 4 | `theorem` | [cycleEulerFactorData_conjugate](../../../../GroupTheoryAndGeneralizations/FiniteEulerExponentData.lean/declarations/cycleeulerfactordata-conjugate.md) | 89 | `result-track:75fdcc5bcc9c4cc6ff209c9c18ec1067537f92611ac5a647c05a471e6c7e341f` |
+| 1 | `def` | [cycleEulerFactorData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteEulerExponentData.lean/declarations/cycleeulerfactordata.md) | 61 | `declaration-track:00ed0dc570fb85fa60d8f88080b72b6684a78631ccc0f0a1686da156aa35ba44` |
+| 2 | `theorem` | [cycleEulerFactorData_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteEulerExponentData.lean/declarations/cycleeulerfactordata-apply.md) | 76 | `result-track:5b7082f0a7a2a6aba003539d2c5778fd9e97e6d3a257cb8af926c7a823b83626` |
+| 3 | `theorem` | [cycleEulerFactorData_support_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteEulerExponentData.lean/declarations/cycleeulerfactordata-support-subset.md) | 83 | `result-track:33a32c04d612c5c5799257265b252a4a85902a7c27f65cfd63be67a70dbcf752` |
+| 4 | `theorem` | [cycleEulerFactorData_conjugate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteEulerExponentData.lean/declarations/cycleeulerfactordata-conjugate.md) | 89 | `result-track:75fdcc5bcc9c4cc6ff209c9c18ec1067537f92611ac5a647c05a471e6c7e341f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

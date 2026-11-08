@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FiniteFactorizationPlumbing.lean/index.md) · [Full source](../../../../Combinatorics/FiniteFactorizationPlumbing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteFactorizationPlumbing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteFactorizationPlumbing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [factorization_prime_power_eval](../../../../Combinatorics/FiniteFactorizationPlumbing.lean/declarations/factorization-prime-power-eval.md) | 17 | `result-track:5542a9c988a8974a7fef3a2ab2296f03dd49e5810b25e69fd3958d93dc330a9b` |
-| 2 | `theorem` | [factorization_exponentVectorNat](../../../../Combinatorics/FiniteFactorizationPlumbing.lean/declarations/factorization-exponentvectornat.md) | 36 | `result-track:72b835866e26c7b42346f349b02e89512a307337f53245965ef659ae1c344114` |
-| 3 | `theorem` | [factorization_exponentVectorNat_at_mem](../../../../Combinatorics/FiniteFactorizationPlumbing.lean/declarations/factorization-exponentvectornat-at-mem.md) | 99 | `result-track:6a93de73ba15bd2c8001f432de2add2d51af1371a995b6aebddf273cbe981b78` |
-| 4 | `theorem` | [factorization_exponentVectorNat_at_not_mem](../../../../Combinatorics/FiniteFactorizationPlumbing.lean/declarations/factorization-exponentvectornat-at-not-mem.md) | 111 | `result-track:869493fc8ae914a3462de94869bd6984e8bebd32b568f2532f0349bb0aa20d52` |
-| 5 | `theorem` | [exponentVectorNat_injective_of_prime_set](../../../../Combinatorics/FiniteFactorizationPlumbing.lean/declarations/exponentvectornat-injective-of-prime-set.md) | 129 | `result-track:75b72db36984b18f3fa07b6b2b4228bff03dce43576adae22a41ddd8cc1a0869` |
+| 1 | `theorem` | [factorization_prime_power_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteFactorizationPlumbing.lean/declarations/factorization-prime-power-eval.md) | 17 | `result-track:5542a9c988a8974a7fef3a2ab2296f03dd49e5810b25e69fd3958d93dc330a9b` |
+| 2 | `theorem` | [factorization_exponentVectorNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteFactorizationPlumbing.lean/declarations/factorization-exponentvectornat.md) | 36 | `result-track:72b835866e26c7b42346f349b02e89512a307337f53245965ef659ae1c344114` |
+| 3 | `theorem` | [factorization_exponentVectorNat_at_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteFactorizationPlumbing.lean/declarations/factorization-exponentvectornat-at-mem.md) | 99 | `result-track:6a93de73ba15bd2c8001f432de2add2d51af1371a995b6aebddf273cbe981b78` |
+| 4 | `theorem` | [factorization_exponentVectorNat_at_not_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteFactorizationPlumbing.lean/declarations/factorization-exponentvectornat-at-not-mem.md) | 111 | `result-track:869493fc8ae914a3462de94869bd6984e8bebd32b568f2532f0349bb0aa20d52` |
+| 5 | `theorem` | [exponentVectorNat_injective_of_prime_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteFactorizationPlumbing.lean/declarations/exponentvectornat-injective-of-prime-set.md) | 129 | `result-track:75b72db36984b18f3fa07b6b2b4228bff03dce43576adae22a41ddd8cc1a0869` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

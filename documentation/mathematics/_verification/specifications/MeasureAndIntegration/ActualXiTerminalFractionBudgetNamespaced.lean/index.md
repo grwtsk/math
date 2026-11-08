@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualXiTerminalFraction](../../../../MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/declarations/actualxiterminalfraction.md) | 29 | `declaration-track:d1141bc91258612e805ca6b504b0da455fedd7d9a98c6fb665e90aae6a59c18f` |
-| 2 | `theorem` | [terminal_orders](../../../../MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/declarations/terminal-orders.md) | 33 | `result-track:de5a744a90d6f306c76cc7c65a8ff10b5e8c3fdad60663b48c4699e4f146689c` |
-| 3 | `theorem` | [actualXiTerminalFraction_nonneg](../../../../MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/declarations/actualxiterminalfraction-nonneg.md) | 48 | `result-track:942b9d907017f4e39c777723ceab0218937bd928631e6499db73a7b5f5416913` |
-| 4 | `theorem` | [actualXiTerminalFraction_le_inverse_sqrt](../../../../MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/declarations/actualxiterminalfraction-le-inverse-sqrt.md) | 53 | `result-track:57d445184a8966458541c2c00255ec4efad902e8d8811f814a95b3bd3418f35b` |
-| 5 | `theorem` | [sqrt_exp_half](../../../../MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/declarations/sqrt-exp-half.md) | 95 | `result-track:045fab1e85f01d800c0168fd2fca21d73366d28fd9496ab7f49ad14095f0b8da` |
-| 6 | `theorem` | [actualXiTerminalFraction_le_exponential](../../../../MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/declarations/actualxiterminalfraction-le-exponential.md) | 104 | `result-track:fcd7681d40031aa4cf3ad1a2a98144159070865aa6ac00f7d689d60ab49cf880` |
-| 7 | `theorem` | [actualXiTerminalFraction_tendsto_zero](../../../../MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/declarations/actualxiterminalfraction-tendsto-zero.md) | 130 | `result-track:3db5f5a9c2beae40cf6da06242955300dc34b3392b981bd8abcd9740a61b35d3` |
-| 8 | `theorem` | [actualXiPrimitive_mean_prefix_error](../../../../MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/declarations/actualxiprimitive-mean-prefix-error.md) | 148 | `result-track:f1f45922cbb41749e80a21c5e324bb77e492cbf4fe7278792da5b9ffbcba06df` |
+| 1 | `def` | [actualXiTerminalFraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/declarations/actualxiterminalfraction.md) | 29 | `declaration-track:d1141bc91258612e805ca6b504b0da455fedd7d9a98c6fb665e90aae6a59c18f` |
+| 2 | `theorem` | [terminal_orders](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/declarations/terminal-orders.md) | 33 | `result-track:de5a744a90d6f306c76cc7c65a8ff10b5e8c3fdad60663b48c4699e4f146689c` |
+| 3 | `theorem` | [actualXiTerminalFraction_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/declarations/actualxiterminalfraction-nonneg.md) | 48 | `result-track:942b9d907017f4e39c777723ceab0218937bd928631e6499db73a7b5f5416913` |
+| 4 | `theorem` | [actualXiTerminalFraction_le_inverse_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/declarations/actualxiterminalfraction-le-inverse-sqrt.md) | 53 | `result-track:57d445184a8966458541c2c00255ec4efad902e8d8811f814a95b3bd3418f35b` |
+| 5 | `theorem` | [sqrt_exp_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/declarations/sqrt-exp-half.md) | 95 | `result-track:045fab1e85f01d800c0168fd2fca21d73366d28fd9496ab7f49ad14095f0b8da` |
+| 6 | `theorem` | [actualXiTerminalFraction_le_exponential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/declarations/actualxiterminalfraction-le-exponential.md) | 104 | `result-track:fcd7681d40031aa4cf3ad1a2a98144159070865aa6ac00f7d689d60ab49cf880` |
+| 7 | `theorem` | [actualXiTerminalFraction_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/declarations/actualxiterminalfraction-tendsto-zero.md) | 130 | `result-track:3db5f5a9c2beae40cf6da06242955300dc34b3392b981bd8abcd9740a61b35d3` |
+| 8 | `theorem` | [actualXiPrimitive_mean_prefix_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualXiTerminalFractionBudgetNamespaced.lean/declarations/actualxiprimitive-mean-prefix-error.md) | 148 | `result-track:f1f45922cbb41749e80a21c5e324bb77e492cbf4fe7278792da5b9ffbcba06df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

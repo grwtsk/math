@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeterminantLinePropagationDeterminantLineFamily.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeterminantLinePropagationDeterminantLineFamily.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeterminantLinePropagationDeterminantLineFamily.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeterminantLinePropagationDeterminantLineFamily.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DeterminantLineFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeterminantLinePropagationDeterminantLineFamily.lean/declarations/determinantlinefamily.md) | 18 | `declaration-track:4e9c73a09828b074fc80013330b9360e8d0e4d96b4e1c44822a0e7178b8e773b` |
-| 2 | `theorem` | [determinant_line_propagates_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeterminantLinePropagationDeterminantLineFamily.lean/declarations/determinant-line-propagates-if-supplied.md) | 29 | `result-track:ccd0f40f0b8a7dcd9dd4eb9cfda0139277704a35dcfd187076194eb47ca30e8a` |
-| 3 | `theorem` | [determinant_line_has_nonzero_anchor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeterminantLinePropagationDeterminantLineFamily.lean/declarations/determinant-line-has-nonzero-anchor.md) | 35 | `result-track:330e3a094bacf34b973977b0e1f9612b5795815e05a9bfa32cbdc07239357105` |
+| 1 | `structure` | [DeterminantLineFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeterminantLinePropagationDeterminantLineFamily.lean/declarations/determinantlinefamily.md) | 18 | `declaration-track:4e9c73a09828b074fc80013330b9360e8d0e4d96b4e1c44822a0e7178b8e773b` |
+| 2 | `theorem` | [determinant_line_propagates_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeterminantLinePropagationDeterminantLineFamily.lean/declarations/determinant-line-propagates-if-supplied.md) | 29 | `result-track:ccd0f40f0b8a7dcd9dd4eb9cfda0139277704a35dcfd187076194eb47ca30e8a` |
+| 3 | `theorem` | [determinant_line_has_nonzero_anchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeterminantLinePropagationDeterminantLineFamily.lean/declarations/determinant-line-has-nonzero-anchor.md) | 35 | `result-track:330e3a094bacf34b973977b0e1f9612b5795815e05a9bfa32cbdc07239357105` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

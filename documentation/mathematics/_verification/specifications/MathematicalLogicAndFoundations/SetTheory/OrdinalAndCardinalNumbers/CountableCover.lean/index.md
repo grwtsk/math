@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCover.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCover.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCover.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCover.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [mk_subtype_le_of_countable_eventually_mem_aux](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCover.lean/declarations/mk-subtype-le-of-countable-eventually-mem-aux.md) | 31 | `result-track:a0002725a5fb5bf3a4b01545a1b1a78a47a101ce50c7c5377993b94237913026` |
-| 2 | `lemma` | [mk_subtype_le_of_countable_eventually_mem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCover.lean/declarations/mk-subtype-le-of-countable-eventually-mem.md) | 66 | `result-track:d1f93974b9314c266aff5fbf9c99d2164fef7c6de13f9eb4a11a4e9eef9f8a85` |
-| 3 | `lemma` | [mk_le_of_countable_eventually_mem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCover.lean/declarations/mk-le-of-countable-eventually-mem.md) | 82 | `result-track:ad5617e988d2eb5939f0bd9c95be9774cf6b425dd217dc550851a64d869cf9e2` |
-| 4 | `lemma` | [mk_of_countable_eventually_mem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCover.lean/declarations/mk-of-countable-eventually-mem.md) | 90 | `result-track:07c9d5d66e4cfdfd0380cd6f2620917cde98b9cbcca3acf08803a8341a68a67d` |
+| 1 | `lemma` | [mk_subtype_le_of_countable_eventually_mem_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCover.lean/declarations/mk-subtype-le-of-countable-eventually-mem-aux.md) | 31 | `result-track:a0002725a5fb5bf3a4b01545a1b1a78a47a101ce50c7c5377993b94237913026` |
+| 2 | `lemma` | [mk_subtype_le_of_countable_eventually_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCover.lean/declarations/mk-subtype-le-of-countable-eventually-mem.md) | 66 | `result-track:d1f93974b9314c266aff5fbf9c99d2164fef7c6de13f9eb4a11a4e9eef9f8a85` |
+| 3 | `lemma` | [mk_le_of_countable_eventually_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCover.lean/declarations/mk-le-of-countable-eventually-mem.md) | 82 | `result-track:ad5617e988d2eb5939f0bd9c95be9774cf6b425dd217dc550851a64d869cf9e2` |
+| 4 | `lemma` | [mk_of_countable_eventually_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCover.lean/declarations/mk-of-countable-eventually-mem.md) | 90 | `result-track:07c9d5d66e4cfdfd0380cd6f2620917cde98b9cbcca3acf08803a8341a68a67d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

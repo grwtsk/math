@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [syntheticRelativeProbe](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/declarations/syntheticrelativeprobe.md) | 26 | `declaration-track:2691a0a55aa8458405c69d3764d17b998fcfaa2693c268a81c9267dc1a79b444` |
-| 2 | `def` | [actualKernelProbeReadout](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/declarations/actualkernelprobereadout.md) | 30 | `declaration-track:d245b7b1b49c2415a62181a935e404706dde109cac9be6cc7ed3b50868a2b35d` |
-| 3 | `theorem` | [actualKernelProbeReadout_intervalIntegrable](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/declarations/actualkernelprobereadout-intervalintegrable.md) | 35 | `result-track:dee120475712579629bc63c131be407ec014c569a72c6a425ea614eb6f08c742` |
-| 4 | `theorem` | [halfTransform_real](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/declarations/halftransform-real.md) | 45 | `result-track:7aa6a522b2a2cc699836f0f8044e621f81430d9c968e4c527566ab96128122ed` |
-| 5 | `theorem` | [actual_real_mode](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/declarations/actual-real-mode.md) | 60 | `result-track:246a928e2e6f9aa3c46c63966af2568149e2e1bde803b7deccf7686100a34c7e` |
-| 6 | `theorem` | [actualKernelProbeReadout_eq](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/declarations/actualkernelprobereadout-eq.md) | 102 | `result-track:374b370118fa18eda192bc241bb16fb89d9301881f6f7c10d945958473668f28` |
-| 7 | `theorem` | [actual_half_real_scaled](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/declarations/actual-half-real-scaled.md) | 135 | `result-track:b1db36bf988d212cd9ece15ccd4b158d321b3ae2e1ae65072fd3454f448f0ba0` |
-| 8 | `theorem` | [actualKernelProbeReadout_normalized_tendsto](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/declarations/actualkernelprobereadout-normalized-tendsto.md) | 168 | `result-track:d614b82441e6ccab4926cf039d64688b7aabf85fada24e7de6f51ed0427aecbf` |
+| 1 | `def` | [syntheticRelativeProbe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/declarations/syntheticrelativeprobe.md) | 26 | `declaration-track:2691a0a55aa8458405c69d3764d17b998fcfaa2693c268a81c9267dc1a79b444` |
+| 2 | `def` | [actualKernelProbeReadout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/declarations/actualkernelprobereadout.md) | 30 | `declaration-track:d245b7b1b49c2415a62181a935e404706dde109cac9be6cc7ed3b50868a2b35d` |
+| 3 | `theorem` | [actualKernelProbeReadout_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/declarations/actualkernelprobereadout-intervalintegrable.md) | 35 | `result-track:dee120475712579629bc63c131be407ec014c569a72c6a425ea614eb6f08c742` |
+| 4 | `theorem` | [halfTransform_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/declarations/halftransform-real.md) | 45 | `result-track:7aa6a522b2a2cc699836f0f8044e621f81430d9c968e4c527566ab96128122ed` |
+| 5 | `theorem` | [actual_real_mode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/declarations/actual-real-mode.md) | 60 | `result-track:246a928e2e6f9aa3c46c63966af2568149e2e1bde803b7deccf7686100a34c7e` |
+| 6 | `theorem` | [actualKernelProbeReadout_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/declarations/actualkernelprobereadout-eq.md) | 102 | `result-track:374b370118fa18eda192bc241bb16fb89d9301881f6f7c10d945958473668f28` |
+| 7 | `theorem` | [actual_half_real_scaled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/declarations/actual-half-real-scaled.md) | 135 | `result-track:b1db36bf988d212cd9ece15ccd4b158d321b3ae2e1ae65072fd3454f448f0ba0` |
+| 8 | `theorem` | [actualKernelProbeReadout_normalized_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative05.lean/declarations/actualkernelprobereadout-normalized-tendsto.md) | 168 | `result-track:d614b82441e6ccab4926cf039d64688b7aabf85fada24e7de6f51ed0427aecbf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

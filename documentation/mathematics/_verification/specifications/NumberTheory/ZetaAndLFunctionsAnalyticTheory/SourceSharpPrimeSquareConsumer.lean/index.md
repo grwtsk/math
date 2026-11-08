@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpPrimeSquareConsumer.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpPrimeSquareConsumer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpPrimeSquareConsumer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpPrimeSquareConsumer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [primeSquareMoment_tail_main_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpPrimeSquareConsumer.lean/declarations/primesquaremoment-tail-main-error.md) | 15 | `result-track:b27d6f0521b27c73cec67dba3c9a1ebe862e33277395f5d52fcd0d184fc9f3c0` |
-| 2 | `theorem` | [primeSquareMoment_ninety_one_error_lt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpPrimeSquareConsumer.lean/declarations/primesquaremoment-ninety-one-error-lt.md) | 29 | `result-track:f65593fc55715c174797007191c6a3ae50c4b9cb9306007657ea2a4774e78583` |
+| 1 | `theorem` | [primeSquareMoment_tail_main_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpPrimeSquareConsumer.lean/declarations/primesquaremoment-tail-main-error.md) | 15 | `result-track:b27d6f0521b27c73cec67dba3c9a1ebe862e33277395f5d52fcd0d184fc9f3c0` |
+| 2 | `theorem` | [primeSquareMoment_ninety_one_error_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpPrimeSquareConsumer.lean/declarations/primesquaremoment-ninety-one-error-lt.md) | 29 | `result-track:f65593fc55715c174797007191c6a3ae50c4b9cb9306007657ea2a4774e78583` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SourceRegenerator.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SourceRegenerator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SourceRegenerator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SourceRegenerator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PolarRegeneratedStreamSource](../../../../../ComputerScience/AlgorithmsInComputerScience/SourceRegenerator.lean/declarations/polarregeneratedstreamsource.md) | 9 | `declaration-track:d1e2850bb45e10cad3479e3b8adcd99373f37d2e57fd2d1ebab46f5ff4e5f8c6` |
-| 2 | `theorem` | [polarRegeneratedSource_no_migration_residue](../../../../../ComputerScience/AlgorithmsInComputerScience/SourceRegenerator.lean/declarations/polarregeneratedsource-no-migration-residue.md) | 26 | `result-track:b80fe4a1dc906f57b4f75103b4263cf9d9d66ff2f851ad3767515c6a1611f2c3` |
-| 3 | `theorem` | [polarRegeneratedSource_no_boundary_weakening](../../../../../ComputerScience/AlgorithmsInComputerScience/SourceRegenerator.lean/declarations/polarregeneratedsource-no-boundary-weakening.md) | 31 | `result-track:158c1b467e244b6d0499d4a6ad4d2e1ab660640625bb973544da87c031e26c8e` |
-| 4 | `theorem` | [polarRegeneratedSource_no_analytic_overclaim](../../../../../ComputerScience/AlgorithmsInComputerScience/SourceRegenerator.lean/declarations/polarregeneratedsource-no-analytic-overclaim.md) | 36 | `result-track:5e101b011276658a9ca50da8f98c871d20905dcbc4e5f8b57c3b2317c7c18a28` |
+| 1 | `structure` | [PolarRegeneratedStreamSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SourceRegenerator.lean/declarations/polarregeneratedstreamsource.md) | 9 | `declaration-track:d1e2850bb45e10cad3479e3b8adcd99373f37d2e57fd2d1ebab46f5ff4e5f8c6` |
+| 2 | `theorem` | [polarRegeneratedSource_no_migration_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SourceRegenerator.lean/declarations/polarregeneratedsource-no-migration-residue.md) | 26 | `result-track:b80fe4a1dc906f57b4f75103b4263cf9d9d66ff2f851ad3767515c6a1611f2c3` |
+| 3 | `theorem` | [polarRegeneratedSource_no_boundary_weakening](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SourceRegenerator.lean/declarations/polarregeneratedsource-no-boundary-weakening.md) | 31 | `result-track:158c1b467e244b6d0499d4a6ad4d2e1ab660640625bb973544da87c031e26c8e` |
+| 4 | `theorem` | [polarRegeneratedSource_no_analytic_overclaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SourceRegenerator.lean/declarations/polarregeneratedsource-no-analytic-overclaim.md) | 36 | `result-track:5e101b011276658a9ca50da8f98c871d20905dcbc4e5f8b57c3b2317c7c18a28` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

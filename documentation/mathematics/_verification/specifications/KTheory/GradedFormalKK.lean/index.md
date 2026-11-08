@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../KTheory/GradedFormalKK.lean/index.md) · [Full source](../../../../KTheory/GradedFormalKK.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/GradedFormalKK.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/GradedFormalKK.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.KTheory.FormalKK`](../../../../KTheory/FormalKK.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.KTheory.FormalKK`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/FormalKK.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Theory](../../../../KTheory/GradedFormalKK.lean/declarations/theory-source-edition-2.md) | 11 | `declaration-track:5f3434fda2d25c95863cdd958952cec35af17b88f90ea0cb89c1aea24125a921` |
-| 2 | `structure` | [Equivalence](../../../../KTheory/GradedFormalKK.lean/declarations/equivalence.md) | 29 | `declaration-track:f8809a22a142db831e120e1ed900c6f0d775fc510977d019533f6c3a65396810` |
-| 3 | `theorem` | [forward_backward_even](../../../../KTheory/GradedFormalKK.lean/declarations/forward-backward-even.md) | 40 | `result-track:e79c4a454c549346b773fbcecf58837243d6bdd37f6d6a98c47f45da3a94fa3a` |
-| 4 | `theorem` | [backward_forward_even](../../../../KTheory/GradedFormalKK.lean/declarations/backward-forward-even.md) | 50 | `result-track:a45d805752fedca838624dd066e3a6947967ddb892041ab54784cc1f051f58c0` |
-| 5 | `inductive` | [ProductPath](../../../../KTheory/GradedFormalKK.lean/declarations/productpath.md) | 62 | `declaration-track:cc285c2bb94b4a6bcdc8fdcefd3ce8aaabbc3342f0c9d4e45e81e18e6e40f097` |
-| 6 | `def` | [evaluate](../../../../KTheory/GradedFormalKK.lean/declarations/evaluate.md) | 73 | `declaration-track:34b117add683e69f21f132f0eaa55a237e40cade7db5753390756786a030b8f9` |
-| 7 | `def` | [totalDegree](../../../../KTheory/GradedFormalKK.lean/declarations/totaldegree.md) | 78 | `declaration-track:629e58dd2c1537a51afdeb8d0422c402b25eb30ceaac66245e3cf6e5c240ad72` |
-| 8 | `theorem` | [degree_evaluate](../../../../KTheory/GradedFormalKK.lean/declarations/degree-evaluate.md) | 83 | `result-track:566e3b88763fdfdc9959031110be723167b13c439b1e21bf4bb7cabbb378ab0f` |
-| 9 | `structure` | [TaggedFunction](../../../../KTheory/GradedFormalKK.lean/declarations/taggedfunction.md) | 102 | `declaration-track:99c2eab71a21bce9f95cc379bd66d4298e2af734577e3bc76f8359bf84b90cea` |
-| 10 | `def` | [theory](../../../../KTheory/GradedFormalKK.lean/declarations/theory.md) | 107 | `declaration-track:484435b3748d1573689b15fb5869395f66fa3e0b5d7b4762c89680cb30c70335` |
+| 1 | `structure` | [Theory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/GradedFormalKK.lean/declarations/theory-source-edition-2.md) | 11 | `declaration-track:5f3434fda2d25c95863cdd958952cec35af17b88f90ea0cb89c1aea24125a921` |
+| 2 | `structure` | [Equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/GradedFormalKK.lean/declarations/equivalence.md) | 29 | `declaration-track:f8809a22a142db831e120e1ed900c6f0d775fc510977d019533f6c3a65396810` |
+| 3 | `theorem` | [forward_backward_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/GradedFormalKK.lean/declarations/forward-backward-even.md) | 40 | `result-track:e79c4a454c549346b773fbcecf58837243d6bdd37f6d6a98c47f45da3a94fa3a` |
+| 4 | `theorem` | [backward_forward_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/GradedFormalKK.lean/declarations/backward-forward-even.md) | 50 | `result-track:a45d805752fedca838624dd066e3a6947967ddb892041ab54784cc1f051f58c0` |
+| 5 | `inductive` | [ProductPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/GradedFormalKK.lean/declarations/productpath.md) | 62 | `declaration-track:cc285c2bb94b4a6bcdc8fdcefd3ce8aaabbc3342f0c9d4e45e81e18e6e40f097` |
+| 6 | `def` | [evaluate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/GradedFormalKK.lean/declarations/evaluate.md) | 73 | `declaration-track:34b117add683e69f21f132f0eaa55a237e40cade7db5753390756786a030b8f9` |
+| 7 | `def` | [totalDegree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/GradedFormalKK.lean/declarations/totaldegree.md) | 78 | `declaration-track:629e58dd2c1537a51afdeb8d0422c402b25eb30ceaac66245e3cf6e5c240ad72` |
+| 8 | `theorem` | [degree_evaluate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/GradedFormalKK.lean/declarations/degree-evaluate.md) | 83 | `result-track:566e3b88763fdfdc9959031110be723167b13c439b1e21bf4bb7cabbb378ab0f` |
+| 9 | `structure` | [TaggedFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/GradedFormalKK.lean/declarations/taggedfunction.md) | 102 | `declaration-track:99c2eab71a21bce9f95cc379bd66d4298e2af734577e3bc76f8359bf84b90cea` |
+| 10 | `def` | [theory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/GradedFormalKK.lean/declarations/theory.md) | 107 | `declaration-track:484435b3748d1573689b15fb5869395f66fa3e0b5d7b4762c89680cb30c70335` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/CompactSpaceStdSimplexPublic.lean/index.md) · [Full source](../../../../Geometry/CompactSpaceStdSimplexPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CompactSpaceStdSimplexPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CompactSpaceStdSimplexPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [range_toFun_comp_weights_subset_closedBall](../../../../Geometry/CompactSpaceStdSimplexPublic.lean/declarations/range-tofun-comp-weights-subset-closedball.md) | 25 | `result-track:e47cf93e3776dca8b5e60af44ade0c0913e8f5694b068b3732daadb0bfbceb79` |
-| 2 | `lemma` | [isBounded_range_toFun_comp_weights](../../../../Geometry/CompactSpaceStdSimplexPublic.lean/declarations/isbounded-range-tofun-comp-weights.md) | 30 | `result-track:32cc69b23e699ebf682044d81d3de1e2ea4057e85c66eb29f94927eb52c9c3a3` |
-| 3 | `lemma` | [diam_range_toFun_comp_weights_subset_closedBall](../../../../Geometry/CompactSpaceStdSimplexPublic.lean/declarations/diam-range-tofun-comp-weights-subset-closedball.md) | 36 | `result-track:33d111142a3c2c8d40cb8df00f5dbe44e0bb9ae01b0a2e65f8638e2eb5017ea8` |
-| 4 | `lemma` | [diam_range_toFun_comp_weights_subset_closedBall_eq_zero](../../../../Geometry/CompactSpaceStdSimplexPublic.lean/declarations/diam-range-tofun-comp-weights-subset-closedball-eq-zero.md) | 45 | `result-track:e3619db59dd68e16e7da945481a1466fba217aeca55b9a3601d437c8c2f43d01` |
-| 5 | `lemma` | [diam_range_toFun_comp_weights_subset_closedBall_eq_one](../../../../Geometry/CompactSpaceStdSimplexPublic.lean/declarations/diam-range-tofun-comp-weights-subset-closedball-eq-one.md) | 54 | `result-track:76d1c5f66d09edcc2ac5246ba6974bed024a48af1a0897a039bc56bb9e96c767` |
-| 6 | `instance` | [compactSpace](../../../../Geometry/CompactSpaceStdSimplexPublic.lean/declarations/compactspace.md) | 68 | `declaration-track:e4b7dfd2423b20bfba041540d50bbd15c4927b50fa18b96c94b98e541c70ecca` |
+| 1 | `lemma` | [range_toFun_comp_weights_subset_closedBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CompactSpaceStdSimplexPublic.lean/declarations/range-tofun-comp-weights-subset-closedball.md) | 25 | `result-track:e47cf93e3776dca8b5e60af44ade0c0913e8f5694b068b3732daadb0bfbceb79` |
+| 2 | `lemma` | [isBounded_range_toFun_comp_weights](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CompactSpaceStdSimplexPublic.lean/declarations/isbounded-range-tofun-comp-weights.md) | 30 | `result-track:32cc69b23e699ebf682044d81d3de1e2ea4057e85c66eb29f94927eb52c9c3a3` |
+| 3 | `lemma` | [diam_range_toFun_comp_weights_subset_closedBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CompactSpaceStdSimplexPublic.lean/declarations/diam-range-tofun-comp-weights-subset-closedball.md) | 36 | `result-track:33d111142a3c2c8d40cb8df00f5dbe44e0bb9ae01b0a2e65f8638e2eb5017ea8` |
+| 4 | `lemma` | [diam_range_toFun_comp_weights_subset_closedBall_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CompactSpaceStdSimplexPublic.lean/declarations/diam-range-tofun-comp-weights-subset-closedball-eq-zero.md) | 45 | `result-track:e3619db59dd68e16e7da945481a1466fba217aeca55b9a3601d437c8c2f43d01` |
+| 5 | `lemma` | [diam_range_toFun_comp_weights_subset_closedBall_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CompactSpaceStdSimplexPublic.lean/declarations/diam-range-tofun-comp-weights-subset-closedball-eq-one.md) | 54 | `result-track:76d1c5f66d09edcc2ac5246ba6974bed024a48af1a0897a039bc56bb9e96c767` |
+| 6 | `instance` | [compactSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CompactSpaceStdSimplexPublic.lean/declarations/compactspace.md) | 68 | `declaration-track:e4b7dfd2423b20bfba041540d50bbd15c4927b50fa18b96c94b98e541c70ecca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

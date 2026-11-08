@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/TangentConeDefsPublic.lean/index.md) · [Full source](../../../../RealFunctions/TangentConeDefsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TangentConeDefsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TangentConeDefsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_tangentConeAt_of_frequently](../../../../RealFunctions/TangentConeDefsPublic.lean/declarations/mem-tangentconeat-of-frequently.md) | 83 | `result-track:417b63dc1eea8210e3ce35e4caf5a42d5935777d593bf9873ceb78c9572f9818` |
-| 2 | `theorem` | [mem_tangentConeAt_of_seq](../../../../RealFunctions/TangentConeDefsPublic.lean/declarations/mem-tangentconeat-of-seq.md) | 96 | `result-track:4b74660c0ca29a14bbceefb5ad9fa8602f08d3924a46355ac687c1059472fb34` |
-| 3 | `theorem` | [exists_fun_of_mem_tangentConeAt](../../../../RealFunctions/TangentConeDefsPublic.lean/declarations/exists-fun-of-mem-tangentconeat.md) | 113 | `result-track:5626f44bf43d437c792e6ab164923e257e6f7585b62102b20e06bf947f1f68b8` |
-| 4 | `abbrev` | [posTangentConeAt](../../../../RealFunctions/TangentConeDefsPublic.lean/declarations/postangentconeat.md) | 131 | `declaration-track:0ab6a22639370153f97d210876ce5fb5cba4bcaf1f11b1916da64fec82fc0c2a` |
-| 5 | `structure` | [UniqueDiffWithinAt](../../../../RealFunctions/TangentConeDefsPublic.lean/declarations/uniquediffwithinat.md) | 144 | `declaration-track:d4ca37d169189e7a11613956efd3894adbea83f24d636150a74151f36cd1969c` |
-| 6 | `def` | [UniqueDiffOn](../../../../RealFunctions/TangentConeDefsPublic.lean/declarations/uniquediffon.md) | 152 | `declaration-track:f2b7e7da8548925f01dc2c09a35c9276e4bd19478300f2e5f99f8fce651d0335` |
-| 7 | `theorem` | [UniqueDiffOn.uniqueDiffWithinAt](../../../../RealFunctions/TangentConeDefsPublic.lean/declarations/uniquediffon-uniquediffwithinat.md) | 156 | `result-track:10466f90a9f73d9a0475569431d5761d8373b91f786016fce1df99507d9fc12e` |
+| 1 | `theorem` | [mem_tangentConeAt_of_frequently](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TangentConeDefsPublic.lean/declarations/mem-tangentconeat-of-frequently.md) | 83 | `result-track:417b63dc1eea8210e3ce35e4caf5a42d5935777d593bf9873ceb78c9572f9818` |
+| 2 | `theorem` | [mem_tangentConeAt_of_seq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TangentConeDefsPublic.lean/declarations/mem-tangentconeat-of-seq.md) | 96 | `result-track:4b74660c0ca29a14bbceefb5ad9fa8602f08d3924a46355ac687c1059472fb34` |
+| 3 | `theorem` | [exists_fun_of_mem_tangentConeAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TangentConeDefsPublic.lean/declarations/exists-fun-of-mem-tangentconeat.md) | 113 | `result-track:5626f44bf43d437c792e6ab164923e257e6f7585b62102b20e06bf947f1f68b8` |
+| 4 | `abbrev` | [posTangentConeAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TangentConeDefsPublic.lean/declarations/postangentconeat.md) | 131 | `declaration-track:0ab6a22639370153f97d210876ce5fb5cba4bcaf1f11b1916da64fec82fc0c2a` |
+| 5 | `structure` | [UniqueDiffWithinAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TangentConeDefsPublic.lean/declarations/uniquediffwithinat.md) | 144 | `declaration-track:d4ca37d169189e7a11613956efd3894adbea83f24d636150a74151f36cd1969c` |
+| 6 | `def` | [UniqueDiffOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TangentConeDefsPublic.lean/declarations/uniquediffon.md) | 152 | `declaration-track:f2b7e7da8548925f01dc2c09a35c9276e4bd19478300f2e5f99f8fce651d0335` |
+| 7 | `theorem` | [UniqueDiffOn.uniqueDiffWithinAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TangentConeDefsPublic.lean/declarations/uniquediffon-uniquediffwithinat.md) | 156 | `result-track:10466f90a9f73d9a0475569431d5761d8373b91f786016fce1df99507d9fc12e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

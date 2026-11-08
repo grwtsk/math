@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ApproximateSubgroupNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ApproximateSubgroupNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ApproximateSubgroupNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ApproximateSubgroupNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,19 +60,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IsApproximateAddSubgroup](../../../../Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/isapproximateaddsubgroup.md) | 55 | `declaration-track:af8f651dbba8fb167bad2416d504d412b5125234c0f39b632fd730a85740dd7b` |
-| 2 | `structure` | [IsApproximateSubgroup](../../../../Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/isapproximatesubgroup.md) | 67 | `declaration-track:3bdbac74629170eca6b25c39cbfed9de90a0979ce721be6879db3bdd427e88a9` |
-| 3 | `lemma` | [nonempty](../../../../Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/nonempty.md) | 74 | `result-track:23afa6e73cbfd23ce7ff4f6daf69671d72c29b50eca22d9235adebe37894dd5e` |
-| 4 | `lemma` | [one_le](../../../../Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/one-le.md) | 77 | `result-track:7076b107b2d116a7c8293b3db7fa1c6581123f82616d8158057f09d98c77fa49` |
-| 5 | `lemma` | [mono](../../../../Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/mono.md) | 83 | `result-track:a77fae2f3c9754a51cf8ac8ec6b0f425e4fbd43ff17db940c61a413df23b0cb2` |
-| 6 | `lemma` | [card_pow_le](../../../../Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/card-pow-le.md) | 89 | `result-track:7914e027e7238d5ec290fb24bad09dd3631c5e125f991a82f36a8de53b72d7d6` |
-| 7 | `lemma` | [card_mul_self_le](../../../../Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/card-mul-self-le.md) | 103 | `result-track:32ac865f58e98c42c48a3dd1e4ed299cafa4a7e5226e00ccb3c90bde47097b45` |
-| 8 | `lemma` | [image](../../../../Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/image.md) | 107 | `result-track:ececb7ccf21df2f607315871028a43ee3a0758283ebef08616ceab600f98ece7` |
-| 9 | `lemma` | [subgroup](../../../../Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/subgroup.md) | 122 | `result-track:ee71b0a76c736d7b4773c20edc592e7c3775370dc69f37db8e1b762ccde9dcca` |
-| 10 | `lemma` | [of_small_tripling](../../../../Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/of-small-tripling.md) | 130 | `result-track:73d19b53f5a1f8d02a5828e0ddcf2e48fba01d55a9427a9f2ddc023d159f8b35` |
-| 11 | `lemma` | [pow_inter_pow_covBySMul_sq_inter_sq](../../../../Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/pow-inter-pow-covbysmul-sq-inter-sq.md) | 144 | `result-track:6136912176f920a37e4bf52c188aaf6f8b3e848988cd9030e8d1b9a43b261fbd` |
-| 12 | `lemma` | [pow_inter_pow](../../../../Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/pow-inter-pow.md) | 172 | `result-track:4106df1bbcce93efeb78d157cdf128127532800773b2e92669acead0c44e2f52` |
-| 13 | `lemma` | [isApproximateSubgroup_one](../../../../Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/isapproximatesubgroup-one.md) | 190 | `result-track:e6da46ebf98b7a437b6ad36ba8f5ecdef6e72e58a90515a11181bab2627d37eb` |
+| 1 | `structure` | [IsApproximateAddSubgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/isapproximateaddsubgroup.md) | 55 | `declaration-track:af8f651dbba8fb167bad2416d504d412b5125234c0f39b632fd730a85740dd7b` |
+| 2 | `structure` | [IsApproximateSubgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/isapproximatesubgroup.md) | 67 | `declaration-track:3bdbac74629170eca6b25c39cbfed9de90a0979ce721be6879db3bdd427e88a9` |
+| 3 | `lemma` | [nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/nonempty.md) | 74 | `result-track:23afa6e73cbfd23ce7ff4f6daf69671d72c29b50eca22d9235adebe37894dd5e` |
+| 4 | `lemma` | [one_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/one-le.md) | 77 | `result-track:7076b107b2d116a7c8293b3db7fa1c6581123f82616d8158057f09d98c77fa49` |
+| 5 | `lemma` | [mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/mono.md) | 83 | `result-track:a77fae2f3c9754a51cf8ac8ec6b0f425e4fbd43ff17db940c61a413df23b0cb2` |
+| 6 | `lemma` | [card_pow_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/card-pow-le.md) | 89 | `result-track:7914e027e7238d5ec290fb24bad09dd3631c5e125f991a82f36a8de53b72d7d6` |
+| 7 | `lemma` | [card_mul_self_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/card-mul-self-le.md) | 103 | `result-track:32ac865f58e98c42c48a3dd1e4ed299cafa4a7e5226e00ccb3c90bde47097b45` |
+| 8 | `lemma` | [image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/image.md) | 107 | `result-track:ececb7ccf21df2f607315871028a43ee3a0758283ebef08616ceab600f98ece7` |
+| 9 | `lemma` | [subgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/subgroup.md) | 122 | `result-track:ee71b0a76c736d7b4773c20edc592e7c3775370dc69f37db8e1b762ccde9dcca` |
+| 10 | `lemma` | [of_small_tripling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/of-small-tripling.md) | 130 | `result-track:73d19b53f5a1f8d02a5828e0ddcf2e48fba01d55a9427a9f2ddc023d159f8b35` |
+| 11 | `lemma` | [pow_inter_pow_covBySMul_sq_inter_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/pow-inter-pow-covbysmul-sq-inter-sq.md) | 144 | `result-track:6136912176f920a37e4bf52c188aaf6f8b3e848988cd9030e8d1b9a43b261fbd` |
+| 12 | `lemma` | [pow_inter_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/pow-inter-pow.md) | 172 | `result-track:4106df1bbcce93efeb78d157cdf128127532800773b2e92669acead0c44e2f52` |
+| 13 | `lemma` | [isApproximateSubgroup_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ApproximateSubgroupNamespaced.lean/declarations/isapproximatesubgroup-one.md) | 190 | `result-track:e6da46ebf98b7a437b6ad36ba8f5ecdef6e72e58a90515a11181bab2627d37eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

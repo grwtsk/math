@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BraidAbsorption.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BraidAbsorption.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BraidAbsorption.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BraidAbsorption.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [declaredBraidAbsorbsDeclaredIds](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BraidAbsorption.lean/declarations/declaredbraidabsorbsdeclaredids.md) | 9 | `declaration-track:b0275d149ced9e11d51a578eaebc455aa07948e994b36150875eb318eada7b8a` |
-| 2 | `theorem` | [declared_braid_absorbs_declared_ids](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BraidAbsorption.lean/declarations/declared-braid-absorbs-declared-ids.md) | 12 | `result-track:32cbcfc91f981c4c15333bad060ca9684076ee8ac66adcabcfc845e4c61319a7` |
+| 1 | `def` | [declaredBraidAbsorbsDeclaredIds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BraidAbsorption.lean/declarations/declaredbraidabsorbsdeclaredids.md) | 9 | `declaration-track:b0275d149ced9e11d51a578eaebc455aa07948e994b36150875eb318eada7b8a` |
+| 2 | `theorem` | [declared_braid_absorbs_declared_ids](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BraidAbsorption.lean/declarations/declared-braid-absorbs-declared-ids.md) | 12 | `result-track:32cbcfc91f981c4c15333bad060ca9684076ee8ac66adcabcfc845e4c61319a7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

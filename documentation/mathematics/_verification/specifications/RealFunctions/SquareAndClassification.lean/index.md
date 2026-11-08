@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SquareAndClassification.lean/index.md) · [Full source](../../../../RealFunctions/SquareAndClassification.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareAndClassification.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareAndClassification.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RhetoricalCoordinate](../../../../RealFunctions/SquareAndClassification.lean/declarations/rhetoricalcoordinate.md) | 35 | `declaration-track:329f46b3516e34fd8719b018614673e7eee6f02bc88ed093632c5fb02bed6873` |
-| 2 | `def` | [origin](../../../../RealFunctions/SquareAndClassification.lean/declarations/origin.md) | 44 | `declaration-track:c71fd127757c89465f08bcc02bebf35a91eadbabf0e58e48dabe0427346fca3b` |
-| 3 | `inductive` | [RhetoricalMode](../../../../RealFunctions/SquareAndClassification.lean/declarations/rhetoricalmode.md) | 53 | `declaration-track:090c5f7a385773c8f4521b4c14738163daacffd1da8a4b4564c4404eea2edab8` |
-| 4 | `inductive` | [RhetoricalRegion](../../../../RealFunctions/SquareAndClassification.lean/declarations/rhetoricalregion.md) | 61 | `declaration-track:350b84f571b67a4abd009ba99be6201bf4d04da85ad5a7ff8b13c90056d67f20` |
-| 5 | `def` | [classify](../../../../RealFunctions/SquareAndClassification.lean/declarations/classify.md) | 74 | `declaration-track:b4db09198e82ca43d2811bb0d05d225a63418e4831b1b6c7c6069ce5a3290939` |
+| 1 | `structure` | [RhetoricalCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareAndClassification.lean/declarations/rhetoricalcoordinate.md) | 35 | `declaration-track:329f46b3516e34fd8719b018614673e7eee6f02bc88ed093632c5fb02bed6873` |
+| 2 | `def` | [origin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareAndClassification.lean/declarations/origin.md) | 44 | `declaration-track:c71fd127757c89465f08bcc02bebf35a91eadbabf0e58e48dabe0427346fca3b` |
+| 3 | `inductive` | [RhetoricalMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareAndClassification.lean/declarations/rhetoricalmode.md) | 53 | `declaration-track:090c5f7a385773c8f4521b4c14738163daacffd1da8a4b4564c4404eea2edab8` |
+| 4 | `inductive` | [RhetoricalRegion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareAndClassification.lean/declarations/rhetoricalregion.md) | 61 | `declaration-track:350b84f571b67a4abd009ba99be6201bf4d04da85ad5a7ff8b13c90056d67f20` |
+| 5 | `def` | [classify](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareAndClassification.lean/declarations/classify.md) | 74 | `declaration-track:b4db09198e82ca43d2811bb0d05d225a63418e4831b1b6c7c6069ce5a3290939` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

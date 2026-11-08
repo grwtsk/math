@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/NormPowNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/NormPowNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPowNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPowNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasFDerivAt_norm_rpow](../../../../FunctionalAnalysis/NormPowNamespaced.lean/declarations/hasfderivat-norm-rpow.md) | 36 | `result-track:4347d92ec3104d5eb5c0981586073d535a40cc184fff5f4d453efbe04de9452e` |
-| 2 | `theorem` | [differentiable_norm_rpow](../../../../FunctionalAnalysis/NormPowNamespaced.lean/declarations/differentiable-norm-rpow-source-edition-2.md) | 59 | `result-track:5c2e3d503d16ed5c47b43f26538a72757743026c5ed836aef2ae8e95654d14a3` |
-| 3 | `theorem` | [hasDerivAt_norm_rpow](../../../../FunctionalAnalysis/NormPowNamespaced.lean/declarations/hasderivat-norm-rpow.md) | 63 | `result-track:1d167ed4ba2004d7e1721d87363125445a91a4fbe9705df3e55c9df0b41f9316` |
-| 4 | `theorem` | [hasDerivAt_abs_rpow](../../../../FunctionalAnalysis/NormPowNamespaced.lean/declarations/hasderivat-abs-rpow.md) | 67 | `result-track:24c53b6e484d546719af4933b7063c5624fa2aa633c09a70ea5972463c04889e` |
-| 5 | `theorem` | [fderiv_norm_rpow](../../../../FunctionalAnalysis/NormPowNamespaced.lean/declarations/fderiv-norm-rpow.md) | 71 | `result-track:8810f6bc06a1653aa4dc81eea64f6d2a180d4f997625dbe813f3646e4bb89052` |
-| 6 | `theorem` | [Differentiable.fderiv_norm_rpow](../../../../FunctionalAnalysis/NormPowNamespaced.lean/declarations/differentiable-fderiv-norm-rpow.md) | 75 | `result-track:bbea5a5bf6a0cd730eab5f9924398d1e15b6670b1531fa0040421a857ea6a7ec` |
-| 7 | `theorem` | [norm_fderiv_norm_rpow_le](../../../../FunctionalAnalysis/NormPowNamespaced.lean/declarations/norm-fderiv-norm-rpow-le.md) | 81 | `result-track:d155854e6ac3316d50f2758302d60704796d371bd1615c6ada35790c46b4ab8a` |
-| 8 | `theorem` | [norm_fderiv_norm_id_rpow](../../../../FunctionalAnalysis/NormPowNamespaced.lean/declarations/norm-fderiv-norm-id-rpow.md) | 93 | `result-track:2966379683db626948c4b5001e733bb0131c70c58cd94b2a6ab014d16569ea4b` |
-| 9 | `theorem` | [nnnorm_fderiv_norm_rpow_le](../../../../FunctionalAnalysis/NormPowNamespaced.lean/declarations/nnnorm-fderiv-norm-rpow-le.md) | 101 | `result-track:c2b07639888ade562c491ecc180dbdc3aff5b13ef84cccd6f07683117dbf1204` |
-| 10 | `lemma` | [enorm_fderiv_norm_rpow_le](../../../../FunctionalAnalysis/NormPowNamespaced.lean/declarations/enorm-fderiv-norm-rpow-le.md) | 106 | `result-track:e185800b883c44690d14c9cec755b4078cdf4bc63e3338bfe00a6145354531a2` |
-| 11 | `theorem` | [contDiff_norm_rpow](../../../../FunctionalAnalysis/NormPowNamespaced.lean/declarations/contdiff-norm-rpow.md) | 112 | `result-track:1ac8d9f4f472dbcdcf1ff9d4d5c239a744c0522c3e056c1f418637db691cf8a8` |
-| 12 | `theorem` | [ContDiff.norm_rpow](../../../../FunctionalAnalysis/NormPowNamespaced.lean/declarations/contdiff-norm-rpow-source-edition-2.md) | 128 | `result-track:e37a7f0a7d46ef8632471ee067cbd7094f17b85a55389e919415e198d73a3261` |
-| 13 | `theorem` | [Differentiable.norm_rpow](../../../../FunctionalAnalysis/NormPowNamespaced.lean/declarations/differentiable-norm-rpow.md) | 132 | `result-track:3a1251043307e9ae9d0fd8f25ef73ea696d850bb31d22698b8a90cf2a1a0bbfa` |
+| 1 | `theorem` | [hasFDerivAt_norm_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPowNamespaced.lean/declarations/hasfderivat-norm-rpow.md) | 36 | `result-track:4347d92ec3104d5eb5c0981586073d535a40cc184fff5f4d453efbe04de9452e` |
+| 2 | `theorem` | [differentiable_norm_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPowNamespaced.lean/declarations/differentiable-norm-rpow-source-edition-2.md) | 59 | `result-track:5c2e3d503d16ed5c47b43f26538a72757743026c5ed836aef2ae8e95654d14a3` |
+| 3 | `theorem` | [hasDerivAt_norm_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPowNamespaced.lean/declarations/hasderivat-norm-rpow.md) | 63 | `result-track:1d167ed4ba2004d7e1721d87363125445a91a4fbe9705df3e55c9df0b41f9316` |
+| 4 | `theorem` | [hasDerivAt_abs_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPowNamespaced.lean/declarations/hasderivat-abs-rpow.md) | 67 | `result-track:24c53b6e484d546719af4933b7063c5624fa2aa633c09a70ea5972463c04889e` |
+| 5 | `theorem` | [fderiv_norm_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPowNamespaced.lean/declarations/fderiv-norm-rpow.md) | 71 | `result-track:8810f6bc06a1653aa4dc81eea64f6d2a180d4f997625dbe813f3646e4bb89052` |
+| 6 | `theorem` | [Differentiable.fderiv_norm_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPowNamespaced.lean/declarations/differentiable-fderiv-norm-rpow.md) | 75 | `result-track:bbea5a5bf6a0cd730eab5f9924398d1e15b6670b1531fa0040421a857ea6a7ec` |
+| 7 | `theorem` | [norm_fderiv_norm_rpow_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPowNamespaced.lean/declarations/norm-fderiv-norm-rpow-le.md) | 81 | `result-track:d155854e6ac3316d50f2758302d60704796d371bd1615c6ada35790c46b4ab8a` |
+| 8 | `theorem` | [norm_fderiv_norm_id_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPowNamespaced.lean/declarations/norm-fderiv-norm-id-rpow.md) | 93 | `result-track:2966379683db626948c4b5001e733bb0131c70c58cd94b2a6ab014d16569ea4b` |
+| 9 | `theorem` | [nnnorm_fderiv_norm_rpow_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPowNamespaced.lean/declarations/nnnorm-fderiv-norm-rpow-le.md) | 101 | `result-track:c2b07639888ade562c491ecc180dbdc3aff5b13ef84cccd6f07683117dbf1204` |
+| 10 | `lemma` | [enorm_fderiv_norm_rpow_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPowNamespaced.lean/declarations/enorm-fderiv-norm-rpow-le.md) | 106 | `result-track:e185800b883c44690d14c9cec755b4078cdf4bc63e3338bfe00a6145354531a2` |
+| 11 | `theorem` | [contDiff_norm_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPowNamespaced.lean/declarations/contdiff-norm-rpow.md) | 112 | `result-track:1ac8d9f4f472dbcdcf1ff9d4d5c239a744c0522c3e056c1f418637db691cf8a8` |
+| 12 | `theorem` | [ContDiff.norm_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPowNamespaced.lean/declarations/contdiff-norm-rpow-source-edition-2.md) | 128 | `result-track:e37a7f0a7d46ef8632471ee067cbd7094f17b85a55389e919415e198d73a3261` |
+| 13 | `theorem` | [Differentiable.norm_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPowNamespaced.lean/declarations/differentiable-norm-rpow.md) | 132 | `result-track:3a1251043307e9ae9d0fd8f25ef73ea696d850bb31d22698b8a90cf2a1a0bbfa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

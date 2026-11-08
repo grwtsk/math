@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo2019Q4Namespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo2019Q4Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo2019Q4Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo2019Q4Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [upper_bound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo2019Q4Namespaced.lean/declarations/upper-bound.md) | 45 | `result-track:2f53c212ebc91d4bbcc59f3d6457082e2ddadfddefe4e01458b8d75c05faf824` |
-| 2 | `theorem` | [imo2019_q4](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo2019Q4Namespaced.lean/declarations/imo2019-q4.md) | 89 | `result-track:1a503533434f2e54e5c98ddfff424a6426d24529cb3de8e5422aa17b2d8c5402` |
+| 1 | `theorem` | [upper_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo2019Q4Namespaced.lean/declarations/upper-bound.md) | 45 | `result-track:2f53c212ebc91d4bbcc59f3d6457082e2ddadfddefe4e01458b8d75c05faf824` |
+| 2 | `theorem` | [imo2019_q4](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo2019Q4Namespaced.lean/declarations/imo2019-q4.md) | 89 | `result-track:1a503533434f2e54e5c98ddfff424a6426d24529cb3de8e5422aa17b2d8c5402` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

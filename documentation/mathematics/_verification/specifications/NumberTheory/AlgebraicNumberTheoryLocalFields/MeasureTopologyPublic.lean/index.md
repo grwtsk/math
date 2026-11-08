@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/MeasureTopologyPublic.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/MeasureTopologyPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/MeasureTopologyPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/MeasureTopologyPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [WeakTopology](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/MeasureTopologyPublic.lean/declarations/weaktopology.md) | 40 | `declaration-track:6fe8372e709d7eaf1b24f50f9ec6ceacaaa5e89fabeb2a1fc5a79ae1444cc912` |
-| 2 | `def` | [StrongTopology](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/MeasureTopologyPublic.lean/declarations/strongtopology.md) | 48 | `declaration-track:30677170a84f8fdcb0d27ce1bb18709f2484af12f85e2a325a708e4a4f0fd3e6` |
+| 1 | `def` | [WeakTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/MeasureTopologyPublic.lean/declarations/weaktopology.md) | 40 | `declaration-track:6fe8372e709d7eaf1b24f50f9ec6ceacaaa5e89fabeb2a1fc5a79ae1444cc912` |
+| 2 | `def` | [StrongTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/MeasureTopologyPublic.lean/declarations/strongtopology.md) | 48 | `declaration-track:30677170a84f8fdcb0d27ce1bb18709f2484af12f85e2a325a708e4a4f0fd3e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

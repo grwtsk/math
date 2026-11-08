@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceAccessEffect.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceAccessEffect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceAccessEffect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceAccessEffect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AccessEffect](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceAccessEffect.lean/declarations/accesseffect.md) | 12 | `declaration-track:ef6862652d301b30a64cda1ee77604670a28902bd69cd528504641ab6f32bd33` |
-| 2 | `def` | [MachineResolution.authoritativeEffect](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceAccessEffect.lean/declarations/machineresolution-authoritativeeffect.md) | 16 | `declaration-track:e54533ee5838798e455e8839934ed0aba1872addc251b6bc4859f190cd25abb9` |
-| 3 | `theorem` | [accessMachine_has_no_authoritative_effect](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceAccessEffect.lean/declarations/accessmachine-has-no-authoritative-effect.md) | 26 | `result-track:1e4d6705cb4367d96d222ea4158feef18708bcdd2778201e3ab58105a015ca5f` |
+| 1 | `inductive` | [AccessEffect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceAccessEffect.lean/declarations/accesseffect.md) | 12 | `declaration-track:ef6862652d301b30a64cda1ee77604670a28902bd69cd528504641ab6f32bd33` |
+| 2 | `def` | [MachineResolution.authoritativeEffect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceAccessEffect.lean/declarations/machineresolution-authoritativeeffect.md) | 16 | `declaration-track:e54533ee5838798e455e8839934ed0aba1872addc251b6bc4859f190cd25abb9` |
+| 3 | `theorem` | [accessMachine_has_no_authoritative_effect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceAccessEffect.lean/declarations/accessmachine-has-no-authoritative-effect.md) | 26 | `result-track:1e4d6705cb4367d96d222ea4158feef18708bcdd2778201e3ab58105a015ca5f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

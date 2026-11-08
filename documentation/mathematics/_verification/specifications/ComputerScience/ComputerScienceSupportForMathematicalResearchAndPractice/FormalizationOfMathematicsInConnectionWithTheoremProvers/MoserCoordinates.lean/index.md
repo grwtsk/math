@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MoserCoordinates.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MoserCoordinates.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MoserCoordinates.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MoserCoordinates.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sqrt_three_mul_sqrt_eleven](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MoserCoordinates.lean/declarations/sqrt-three-mul-sqrt-eleven.md) | 9 | `result-track:f3cb609876e2cfca26f4bdd480e72c8b3be29283da7f7868f33614c50e94aa3e` |
-| 2 | `def` | [packetCoordinates](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MoserCoordinates.lean/declarations/packetcoordinates.md) | 14 | `declaration-track:d7dd49382314ddbb5fdeb28597126c604cff46418b16c590ae136e415b6f9025` |
-| 3 | `theorem` | [moserPoint_coordinates](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MoserCoordinates.lean/declarations/moserpoint-coordinates.md) | 26 | `result-track:c2c845bc785b0f5957e85c931b42214d91467de16b1450e81ec8c5ce2e31b35b` |
+| 1 | `theorem` | [sqrt_three_mul_sqrt_eleven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MoserCoordinates.lean/declarations/sqrt-three-mul-sqrt-eleven.md) | 9 | `result-track:f3cb609876e2cfca26f4bdd480e72c8b3be29283da7f7868f33614c50e94aa3e` |
+| 2 | `def` | [packetCoordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MoserCoordinates.lean/declarations/packetcoordinates.md) | 14 | `declaration-track:d7dd49382314ddbb5fdeb28597126c604cff46418b16c590ae136e415b6f9025` |
+| 3 | `theorem` | [moserPoint_coordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MoserCoordinates.lean/declarations/moserpoint-coordinates.md) | 26 | `result-track:c2c845bc785b0f5957e85c931b42214d91467de16b1450e81ec8c5ce2e31b35b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

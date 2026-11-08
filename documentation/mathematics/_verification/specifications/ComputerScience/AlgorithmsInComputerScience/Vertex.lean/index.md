@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Vertex.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Vertex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Vertex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Vertex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [MemoryKind](../../../../../ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/memorykind.md) | 8 | `declaration-track:e54ef9db1776f1c4cb8a16a84c4a875fee9d37a6ca6f8dd434444c907090dd79` |
-| 2 | `def` | [MemoryKind.defaultSide](../../../../../ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/memorykind-defaultside.md) | 21 | `declaration-track:0bcc8cfbac9e89d88247c47c0d0a96a4b06d0dc5af120e083f4c49f853973555` |
-| 3 | `structure` | [MemoryVertex](../../../../../ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/memoryvertex.md) | 33 | `declaration-track:864d4c3740b065658b11992a9789de56461ce7d13edb8d1b3968f13e386c778e` |
-| 4 | `def` | [noopVertex](../../../../../ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/noopvertex.md) | 45 | `declaration-track:613d243179d1ad2bec1bd7f03fe87e033a274239067b1d903686c629f926ae04` |
-| 5 | `def` | [MemoryVertex.usesDefaultBoundary](../../../../../ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/memoryvertex-usesdefaultboundary.md) | 56 | `declaration-track:7d8c86cf6902540cceb03a11bd5feaabe351a65d9b75043f99ab28c447ea27df` |
-| 6 | `def` | [MemoryVertex.isBridgeWitness](../../../../../ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/memoryvertex-isbridgewitness.md) | 59 | `declaration-track:4f79f8d4642383c48cc87b6c606590e541d4bf1d20b6e01695f73ae0e4d23dbb` |
-| 7 | `def` | [supportBounded](../../../../../ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/supportbounded.md) | 64 | `declaration-track:56b26ddf04eb5dc5ad0b184238097df9eaab90d8ce25bbadac379ec0a2547e3d` |
-| 8 | `theorem` | [residueWitness_defaults_bridge](../../../../../ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/residuewitness-defaults-bridge.md) | 67 | `result-track:8787cdb10abe3b12b49e71111d67ab474932bb0dc0d114f520b877150c9967e1` |
-| 9 | `theorem` | [refusalWitness_defaults_bridge](../../../../../ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/refusalwitness-defaults-bridge.md) | 71 | `result-track:ce0652f685be1d01bd321c7c68bd80cf8b027450bc24e57799f37b1eb33407a0` |
-| 10 | `theorem` | [sourceTreeNode_defaults_bridge](../../../../../ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/sourcetreenode-defaults-bridge.md) | 75 | `result-track:7da1a54a07d3d44b603274498b661943fe6ab1d11df08ab21dac676d56d5e687` |
-| 11 | `theorem` | [noopVertex_is_default_boundary](../../../../../ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/noopvertex-is-default-boundary.md) | 79 | `result-track:23ed3d7b83ba864f8844efe5dc6c2b46993eb9ab099203fd3206b9646c6eb842` |
+| 1 | `inductive` | [MemoryKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/memorykind.md) | 8 | `declaration-track:e54ef9db1776f1c4cb8a16a84c4a875fee9d37a6ca6f8dd434444c907090dd79` |
+| 2 | `def` | [MemoryKind.defaultSide](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/memorykind-defaultside.md) | 21 | `declaration-track:0bcc8cfbac9e89d88247c47c0d0a96a4b06d0dc5af120e083f4c49f853973555` |
+| 3 | `structure` | [MemoryVertex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/memoryvertex.md) | 33 | `declaration-track:864d4c3740b065658b11992a9789de56461ce7d13edb8d1b3968f13e386c778e` |
+| 4 | `def` | [noopVertex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/noopvertex.md) | 45 | `declaration-track:613d243179d1ad2bec1bd7f03fe87e033a274239067b1d903686c629f926ae04` |
+| 5 | `def` | [MemoryVertex.usesDefaultBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/memoryvertex-usesdefaultboundary.md) | 56 | `declaration-track:7d8c86cf6902540cceb03a11bd5feaabe351a65d9b75043f99ab28c447ea27df` |
+| 6 | `def` | [MemoryVertex.isBridgeWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/memoryvertex-isbridgewitness.md) | 59 | `declaration-track:4f79f8d4642383c48cc87b6c606590e541d4bf1d20b6e01695f73ae0e4d23dbb` |
+| 7 | `def` | [supportBounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/supportbounded.md) | 64 | `declaration-track:56b26ddf04eb5dc5ad0b184238097df9eaab90d8ce25bbadac379ec0a2547e3d` |
+| 8 | `theorem` | [residueWitness_defaults_bridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/residuewitness-defaults-bridge.md) | 67 | `result-track:8787cdb10abe3b12b49e71111d67ab474932bb0dc0d114f520b877150c9967e1` |
+| 9 | `theorem` | [refusalWitness_defaults_bridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/refusalwitness-defaults-bridge.md) | 71 | `result-track:ce0652f685be1d01bd321c7c68bd80cf8b027450bc24e57799f37b1eb33407a0` |
+| 10 | `theorem` | [sourceTreeNode_defaults_bridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/sourcetreenode-defaults-bridge.md) | 75 | `result-track:7da1a54a07d3d44b603274498b661943fe6ab1d11df08ab21dac676d56d5e687` |
+| 11 | `theorem` | [noopVertex_is_default_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Vertex.lean/declarations/noopvertex-is-default-boundary.md) | 79 | `result-track:23ed3d7b83ba864f8844efe5dc6c2b46993eb9ab099203fd3206b9646c6eb842` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

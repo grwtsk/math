@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [σ000](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/declarations/000.md) | 32 | `declaration-track:ae011af3419ed91b9e9970689467b5a694bc8ef2fde7f3025f10f521256f457b` |
-| 2 | `def` | [σ011](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/declarations/011.md) | 38 | `declaration-track:4325b9bdcd35c63f0fec14ac82fc7bf20fbb8b12e0a686dae981fcea16faf81f` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/declarations/example-source-edition-2.md) | 44 | `declaration-track:566a0be3fe0e5fed4ede0da9c30ba22d172f68b0a957eba8e617bfd3619cce53` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/declarations/example-source-edition-4.md) | 47 | `declaration-track:89912e872b55529094e57144428c57bd78ab0cffc574e7a1f8430b5d5a0d0938` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/declarations/example.md) | 50 | `declaration-track:2fc677c5ef14729cfa99edaf9ca48253b07a98107aa95c9508ff4d646b2156fc` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/declarations/example-source-edition-3.md) | 54 | `declaration-track:6718c211bffdd3f16a6a13a74948bf5b4c3116b2bfd0e1abc70c8758cc5c6bf8` |
-| 7 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/declarations/example-source-edition-6.md) | 59 | `declaration-track:de7a576b3f7b08f2eb1b76360d605ef54c9e5ebfef512db4f573e2822c0c0ddf` |
-| 8 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/declarations/example-source-edition-5.md) | 64 | `declaration-track:d91f3947a6b2e9b39ba98101d50ef250325f529ddac6b7f2cd92a06c4e836e05` |
+| 1 | `def` | [σ000](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/declarations/000.md) | 32 | `declaration-track:ae011af3419ed91b9e9970689467b5a694bc8ef2fde7f3025f10f521256f457b` |
+| 2 | `def` | [σ011](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/declarations/011.md) | 38 | `declaration-track:4325b9bdcd35c63f0fec14ac82fc7bf20fbb8b12e0a686dae981fcea16faf81f` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/declarations/example-source-edition-2.md) | 44 | `declaration-track:566a0be3fe0e5fed4ede0da9c30ba22d172f68b0a957eba8e617bfd3619cce53` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/declarations/example-source-edition-4.md) | 47 | `declaration-track:89912e872b55529094e57144428c57bd78ab0cffc574e7a1f8430b5d5a0d0938` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/declarations/example.md) | 50 | `declaration-track:2fc677c5ef14729cfa99edaf9ca48253b07a98107aa95c9508ff4d646b2156fc` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/declarations/example-source-edition-3.md) | 54 | `declaration-track:6718c211bffdd3f16a6a13a74948bf5b4c3116b2bfd0e1abc70c8758cc5c6bf8` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/declarations/example-source-edition-6.md) | 59 | `declaration-track:de7a576b3f7b08f2eb1b76360d605ef54c9e5ebfef512db4f573e2822c0c0ddf` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GateClausesAndClauseBound.lean/declarations/example-source-edition-5.md) | 64 | `declaration-track:d91f3947a6b2e9b39ba98101d50ef250325f529ddac6b7f2cd92a06c4e836e05` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

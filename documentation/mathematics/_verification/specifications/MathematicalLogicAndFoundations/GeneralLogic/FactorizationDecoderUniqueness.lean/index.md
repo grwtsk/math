@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationDecoderUniqueness.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationDecoderUniqueness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationDecoderUniqueness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationDecoderUniqueness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.FactorizationFiberCompleteness`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.FactorizationFiberCompleteness`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/index.md) — import line 9; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [decoder_eq_on_range](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationDecoderUniqueness.lean/declarations/decoder-eq-on-range.md) | 31 | `result-track:6404cb5ae8123f353be95a13f758b2fdebc5a429f5d96fc9212ed8e07c051f34` |
-| 2 | `theorem` | [decoder_unique_of_surjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationDecoderUniqueness.lean/declarations/decoder-unique-of-surjective.md) | 48 | `result-track:f30b59a88cfb25330e54f9b2732b6197738aaf31233e4e70dd9713d147b27c5e` |
-| 3 | `theorem` | [observedProfile_decoder_unique](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationDecoderUniqueness.lean/declarations/observedprofile-decoder-unique.md) | 62 | `result-track:c4679153d44e2c8f503835fb49f12cb36b498d0203245b6e8d8741acb7e810c5` |
+| 1 | `theorem` | [decoder_eq_on_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationDecoderUniqueness.lean/declarations/decoder-eq-on-range.md) | 31 | `result-track:6404cb5ae8123f353be95a13f758b2fdebc5a429f5d96fc9212ed8e07c051f34` |
+| 2 | `theorem` | [decoder_unique_of_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationDecoderUniqueness.lean/declarations/decoder-unique-of-surjective.md) | 48 | `result-track:f30b59a88cfb25330e54f9b2732b6197738aaf31233e4e70dd9713d147b27c5e` |
+| 3 | `theorem` | [observedProfile_decoder_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationDecoderUniqueness.lean/declarations/observedprofile-decoder-unique.md) | 62 | `result-track:c4679153d44e2c8f503835fb49f12cb36b498d0203245b6e8d8741acb7e810c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

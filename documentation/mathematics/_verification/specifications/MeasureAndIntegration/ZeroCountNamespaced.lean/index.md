@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ZeroCountNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ZeroCountNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroCountNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroCountNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [halfContour_xiDeriv_split](../../../../MeasureAndIntegration/ZeroCountNamespaced.lean/declarations/halfcontour-xideriv-split.md) | 51 | `result-track:ecc02708c627b1add97ab28d308b17c4f2425695f618c66f67a82ffdf1f4aa3b` |
-| 2 | `theorem` | [halfContour_Yfn_bound](../../../../MeasureAndIntegration/ZeroCountNamespaced.lean/declarations/halfcontour-yfn-bound.md) | 119 | `result-track:51cdc8344332ddfdf91ba87ab467809f566bbb0a08b393ec6f052739376aa7dc` |
-| 3 | `theorem` | [xiDeriv_rvM_main](../../../../MeasureAndIntegration/ZeroCountNamespaced.lean/declarations/xideriv-rvm-main.md) | 157 | `result-track:3f0fe959e64e529e6f5192c4523689f33cf28b7e2c164cb13059d87ced7759de` |
-| 4 | `theorem` | [xiDeriv_riemannVonMangoldt](../../../../MeasureAndIntegration/ZeroCountNamespaced.lean/declarations/xideriv-riemannvonmangoldt-source-edition-2.md) | 173 | `result-track:c0f05545045a24bfee544b40c7e8d273cf433eb9f57d17d526c049894db0921d` |
-| 5 | `theorem` | [xiDeriv_riemannVonMangoldt'](../../../../MeasureAndIntegration/ZeroCountNamespaced.lean/declarations/xideriv-riemannvonmangoldt.md) | 177 | `result-track:41d874ff9b7d7d1d4d7c9933389bf12238207d28b97f92c524c65400655fd720` |
+| 1 | `theorem` | [halfContour_xiDeriv_split](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroCountNamespaced.lean/declarations/halfcontour-xideriv-split.md) | 51 | `result-track:ecc02708c627b1add97ab28d308b17c4f2425695f618c66f67a82ffdf1f4aa3b` |
+| 2 | `theorem` | [halfContour_Yfn_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroCountNamespaced.lean/declarations/halfcontour-yfn-bound.md) | 119 | `result-track:51cdc8344332ddfdf91ba87ab467809f566bbb0a08b393ec6f052739376aa7dc` |
+| 3 | `theorem` | [xiDeriv_rvM_main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroCountNamespaced.lean/declarations/xideriv-rvm-main.md) | 157 | `result-track:3f0fe959e64e529e6f5192c4523689f33cf28b7e2c164cb13059d87ced7759de` |
+| 4 | `theorem` | [xiDeriv_riemannVonMangoldt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroCountNamespaced.lean/declarations/xideriv-riemannvonmangoldt-source-edition-2.md) | 173 | `result-track:c0f05545045a24bfee544b40c7e8d273cf433eb9f57d17d526c049894db0921d` |
+| 5 | `theorem` | [xiDeriv_riemannVonMangoldt'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroCountNamespaced.lean/declarations/xideriv-riemannvonmangoldt.md) | 177 | `result-track:41d874ff9b7d7d1d4d7c9933389bf12238207d28b97f92c524c65400655fd720` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

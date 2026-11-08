@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MvPolynomialTower.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MvPolynomialTower.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialTower.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialTower.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [aeval_map_algebraMap](../../../../CommutativeAlgebra/MvPolynomialTower.lean/declarations/aeval-map-algebramap.md) | 33 | `result-track:2e9afc90702cfa5c9cacd2fc029fbf6f48fe133184e1276baf19ae1d5eaa606b` |
-| 2 | `theorem` | [aeval_algebraMap_apply](../../../../CommutativeAlgebra/MvPolynomialTower.lean/declarations/aeval-algebramap-apply.md) | 45 | `result-track:16592e5811ff9090ab44a4633f366b85869cfaa71c7df69fe9ae698b81c34bd7` |
-| 3 | `theorem` | [aeval_algebraMap_eq_zero_iff](../../../../CommutativeAlgebra/MvPolynomialTower.lean/declarations/aeval-algebramap-eq-zero-iff.md) | 52 | `result-track:508527b7f847b0b3cfb26720c6e1bb4958452f6bbeb859fdf58cb27282eb59b4` |
-| 4 | `theorem` | [aeval_algebraMap_eq_zero_iff_of_injective](../../../../CommutativeAlgebra/MvPolynomialTower.lean/declarations/aeval-algebramap-eq-zero-iff-of-injective.md) | 57 | `result-track:e5f2f24f289f2c5d0dc0b91b6aaf12d97e6b23efa5fcdf2909594b2d364c06f7` |
-| 5 | `theorem` | [mvPolynomial_aeval_coe](../../../../CommutativeAlgebra/MvPolynomialTower.lean/declarations/mvpolynomial-aeval-coe.md) | 75 | `result-track:672a05a05d27c9b52ba7e8ae9c99b177f63723544776beabe64b820377112719` |
+| 1 | `theorem` | [aeval_map_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialTower.lean/declarations/aeval-map-algebramap.md) | 33 | `result-track:2e9afc90702cfa5c9cacd2fc029fbf6f48fe133184e1276baf19ae1d5eaa606b` |
+| 2 | `theorem` | [aeval_algebraMap_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialTower.lean/declarations/aeval-algebramap-apply.md) | 45 | `result-track:16592e5811ff9090ab44a4633f366b85869cfaa71c7df69fe9ae698b81c34bd7` |
+| 3 | `theorem` | [aeval_algebraMap_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialTower.lean/declarations/aeval-algebramap-eq-zero-iff.md) | 52 | `result-track:508527b7f847b0b3cfb26720c6e1bb4958452f6bbeb859fdf58cb27282eb59b4` |
+| 4 | `theorem` | [aeval_algebraMap_eq_zero_iff_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialTower.lean/declarations/aeval-algebramap-eq-zero-iff-of-injective.md) | 57 | `result-track:e5f2f24f289f2c5d0dc0b91b6aaf12d97e6b23efa5fcdf2909594b2d364c06f7` |
+| 5 | `theorem` | [mvPolynomial_aeval_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialTower.lean/declarations/mvpolynomial-aeval-coe.md) | 75 | `result-track:672a05a05d27c9b52ba7e8ae9c99b177f63723544776beabe64b820377112719` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

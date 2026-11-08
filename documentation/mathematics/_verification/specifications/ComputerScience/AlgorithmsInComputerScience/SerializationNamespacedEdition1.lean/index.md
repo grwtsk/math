@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SerializationNamespacedEdition1.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SerializationNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SerializationNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SerializationNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CanonicalFileReceipt](../../../../../ComputerScience/AlgorithmsInComputerScience/SerializationNamespacedEdition1.lean/declarations/canonicalfilereceipt.md) | 23 | `declaration-track:45a7d31bc094e731d3acdc86409dc14251b02f5c6681a5a286beb0e38144e29c` |
-| 2 | `structure` | [CanonicalPayloadReceipt](../../../../../ComputerScience/AlgorithmsInComputerScience/SerializationNamespacedEdition1.lean/declarations/canonicalpayloadreceipt.md) | 29 | `declaration-track:8a495b18f4da0da9f312161809129a3d029a1158dbfac3f551bbca6df230aa6c` |
-| 3 | `structure` | [MerkleReceipt](../../../../../ComputerScience/AlgorithmsInComputerScience/SerializationNamespacedEdition1.lean/declarations/merklereceipt.md) | 36 | `declaration-track:f275747b1b0cc6b1e5d41a18892d05b18909833b3ba1782a7dfb277756286994` |
-| 4 | `def` | [Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/SerializationNamespacedEdition1.lean/declarations/valid-source-edition-2.md) | 43 | `declaration-track:5752fa1e690fa588cc7b0d28c42049455ba732b869da8f459a6197cd1f7bf5f2` |
-| 5 | `def` | [Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/SerializationNamespacedEdition1.lean/declarations/valid-source-edition-3.md) | 50 | `declaration-track:b2c2495c4b8cb47f3c2c5f16b4da95185e9bc41a9ac7f4496537bda3db8b325e` |
-| 6 | `def` | [Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/SerializationNamespacedEdition1.lean/declarations/valid.md) | 61 | `declaration-track:4ec829fe736e60b6c3fa723958835c6843d6906bd83bec774f2231375863efa5` |
+| 1 | `structure` | [CanonicalFileReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SerializationNamespacedEdition1.lean/declarations/canonicalfilereceipt.md) | 23 | `declaration-track:45a7d31bc094e731d3acdc86409dc14251b02f5c6681a5a286beb0e38144e29c` |
+| 2 | `structure` | [CanonicalPayloadReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SerializationNamespacedEdition1.lean/declarations/canonicalpayloadreceipt.md) | 29 | `declaration-track:8a495b18f4da0da9f312161809129a3d029a1158dbfac3f551bbca6df230aa6c` |
+| 3 | `structure` | [MerkleReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SerializationNamespacedEdition1.lean/declarations/merklereceipt.md) | 36 | `declaration-track:f275747b1b0cc6b1e5d41a18892d05b18909833b3ba1782a7dfb277756286994` |
+| 4 | `def` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SerializationNamespacedEdition1.lean/declarations/valid-source-edition-2.md) | 43 | `declaration-track:5752fa1e690fa588cc7b0d28c42049455ba732b869da8f459a6197cd1f7bf5f2` |
+| 5 | `def` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SerializationNamespacedEdition1.lean/declarations/valid-source-edition-3.md) | 50 | `declaration-track:b2c2495c4b8cb47f3c2c5f16b4da95185e9bc41a9ac7f4496537bda3db8b325e` |
+| 6 | `def` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SerializationNamespacedEdition1.lean/declarations/valid.md) | 61 | `declaration-track:4ec829fe736e60b6c3fa723958835c6843d6906bd83bec774f2231375863efa5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

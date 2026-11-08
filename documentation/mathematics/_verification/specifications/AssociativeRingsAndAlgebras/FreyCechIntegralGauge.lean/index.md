@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.ThreeCellIntegralMinimum`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThreeCellIntegralMinimum.lean/index.md) — import line 10; pinned internal source present.
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyArchimedeanRealization`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyArchimedeanRealization.lean/index.md) — import line 11; pinned internal source present.
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechGaugeMetric`](../../../../NumberTheory/DiophantineEquations/FreyCechGaugeMetric.lean/index.md) — import line 12; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.ThreeCellIntegralMinimum`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThreeCellIntegralMinimum.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyArchimedeanRealization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyArchimedeanRealization.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechGaugeMetric`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyCechGaugeMetric.lean/index.md) — import line 12; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IntegerCell](../../../../AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/integercell.md) | 26 | `declaration-track:da7e4645797bba84c0cf6299efaed1e0e7b88a3e5990778ada64ef074da65209` |
-| 2 | `abbrev` | [RealCell](../../../../AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/realcell.md) | 27 | `declaration-track:75a3c350e8e68a80ee72d368790044ce86e60a6aceff3c08b0259fe54683818e` |
-| 3 | `def` | [realize](../../../../AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/realize.md) | 31 | `declaration-track:8483061be10e8852e5dd7fe434f250f316089c6dbd9332bbacc11926d18e4b7c` |
-| 4 | `def` | [scalarCell](../../../../AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/scalarcell.md) | 34 | `declaration-track:e01534a35f201dc4790d261cbe927c1f46797f6decf99c7410812809adcf630b` |
-| 5 | `theorem` | [coefficient_realize](../../../../AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/coefficient-realize.md) | 37 | `result-track:49643a2233cb11d15e1310f4c6557fa9a42b3e8db636c9e0630e84132c0d1d70` |
-| 6 | `theorem` | [fields_ext](../../../../AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/fields-ext.md) | 46 | `result-track:5608c3a6c1cb7ae3bf4e22e9d6c6c69a43d24a8d3e3f76fc570f6610710bb3da` |
-| 7 | `theorem` | [in_realized_lattice_iff](../../../../AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/in-realized-lattice-iff.md) | 61 | `result-track:47e1cad862ad7e795a54a6f3d3cf30aacdf68bdbf99cb3696b3d82e1b35e6174` |
-| 8 | `theorem` | [normalForm_integral_iff](../../../../AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/normalform-integral-iff.md) | 78 | `result-track:bc27cd0cbdb8f946f1fd64255e3d206cba61b8500829f366d2d9861988f34b8c` |
-| 9 | `theorem` | [realized_full_recovery](../../../../AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/realized-full-recovery.md) | 92 | `result-track:1875409bd627990464e813a649f02031425c2d8a86f4b351352ee7a0a05adac8` |
-| 10 | `theorem` | [realize_anchor](../../../../AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/realize-anchor.md) | 96 | `result-track:48dd36b8cadb104bea1dc15bc38847e47338551fa7d62f1c80f6fe2c2e51fd50` |
-| 11 | `def` | [integerPort](../../../../AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/integerport.md) | 102 | `declaration-track:e68f785481646d4a56583cc2a3a29a2dfa6a810762d378c4acd7fd42cd16c126` |
-| 12 | `theorem` | [integerPort_reduction](../../../../AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/integerport-reduction.md) | 105 | `result-track:065bbc03173f8682da3c0c34ea808a68f7df365db739a363d15c3dd9ecee900c` |
-| 13 | `theorem` | [realize_integerPort](../../../../AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/realize-integerport.md) | 112 | `result-track:b2b491225ddb4da063c26ea6872be1e7f004403fec962d89dc08448ea1779701` |
+| 1 | `abbrev` | [IntegerCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/integercell.md) | 26 | `declaration-track:da7e4645797bba84c0cf6299efaed1e0e7b88a3e5990778ada64ef074da65209` |
+| 2 | `abbrev` | [RealCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/realcell.md) | 27 | `declaration-track:75a3c350e8e68a80ee72d368790044ce86e60a6aceff3c08b0259fe54683818e` |
+| 3 | `def` | [realize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/realize.md) | 31 | `declaration-track:8483061be10e8852e5dd7fe434f250f316089c6dbd9332bbacc11926d18e4b7c` |
+| 4 | `def` | [scalarCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/scalarcell.md) | 34 | `declaration-track:e01534a35f201dc4790d261cbe927c1f46797f6decf99c7410812809adcf630b` |
+| 5 | `theorem` | [coefficient_realize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/coefficient-realize.md) | 37 | `result-track:49643a2233cb11d15e1310f4c6557fa9a42b3e8db636c9e0630e84132c0d1d70` |
+| 6 | `theorem` | [fields_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/fields-ext.md) | 46 | `result-track:5608c3a6c1cb7ae3bf4e22e9d6c6c69a43d24a8d3e3f76fc570f6610710bb3da` |
+| 7 | `theorem` | [in_realized_lattice_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/in-realized-lattice-iff.md) | 61 | `result-track:47e1cad862ad7e795a54a6f3d3cf30aacdf68bdbf99cb3696b3d82e1b35e6174` |
+| 8 | `theorem` | [normalForm_integral_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/normalform-integral-iff.md) | 78 | `result-track:bc27cd0cbdb8f946f1fd64255e3d206cba61b8500829f366d2d9861988f34b8c` |
+| 9 | `theorem` | [realized_full_recovery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/realized-full-recovery.md) | 92 | `result-track:1875409bd627990464e813a649f02031425c2d8a86f4b351352ee7a0a05adac8` |
+| 10 | `theorem` | [realize_anchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/realize-anchor.md) | 96 | `result-track:48dd36b8cadb104bea1dc15bc38847e47338551fa7d62f1c80f6fe2c2e51fd50` |
+| 11 | `def` | [integerPort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/integerport.md) | 102 | `declaration-track:e68f785481646d4a56583cc2a3a29a2dfa6a810762d378c4acd7fd42cd16c126` |
+| 12 | `theorem` | [integerPort_reduction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/integerport-reduction.md) | 105 | `result-track:065bbc03173f8682da3c0c34ea808a68f7df365db739a363d15c3dd9ecee900c` |
+| 13 | `theorem` | [realize_integerPort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FreyCechIntegralGauge.lean/declarations/realize-integerport.md) | 112 | `result-track:b2b491225ddb4da063c26ea6872be1e7f004403fec962d89dc08448ea1779701` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

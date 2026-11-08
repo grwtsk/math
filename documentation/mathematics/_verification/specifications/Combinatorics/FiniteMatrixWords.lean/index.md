@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FiniteMatrixWords.lean/index.md) · [Full source](../../../../Combinatorics/FiniteMatrixWords.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteMatrixWords.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteMatrixWords.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,22 +57,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BinaryMatrixStream](../../../../Combinatorics/FiniteMatrixWords.lean/declarations/binarymatrixstream.md) | 36 | `declaration-track:b54f683620f13b812a080c3ec889f9b7602949e972c477d601b594143a5b0b19` |
-| 2 | `theorem` | [ext](../../../../Combinatorics/FiniteMatrixWords.lean/declarations/ext.md) | 42 | `result-track:15a3ca4997e1ee790b1f1570d2646ed3e460799fb099a51bb9694c82d2457438` |
-| 3 | `def` | [length](../../../../Combinatorics/FiniteMatrixWords.lean/declarations/length.md) | 62 | `declaration-track:5f8bd2fdfd47df710ed39e42a52e45dcbfcaf1c68f5a00650848829cf558fb45` |
-| 4 | `def` | [get](../../../../Combinatorics/FiniteMatrixWords.lean/declarations/get.md) | 65 | `declaration-track:3abdd5e496f7741a6f4390df2953aa1f80ac98af6ad5835ba1ea588295dcd758` |
-| 5 | `def` | [empty](../../../../Combinatorics/FiniteMatrixWords.lean/declarations/empty.md) | 68 | `declaration-track:bdda3191f9211cbfe22b07efe99171507b7fcdc3a072010261d7c232b7627e70` |
-| 6 | `def` | [concat](../../../../Combinatorics/FiniteMatrixWords.lean/declarations/concat.md) | 72 | `declaration-track:cf9eeca0869d8fc6405debbdd7a6bc462147963ee808c8d609a495653523d082` |
-| 7 | `def` | [restrict](../../../../Combinatorics/FiniteMatrixWords.lean/declarations/restrict.md) | 82 | `declaration-track:70da28037b15b44c94b12675b8a294f9d545aeed97d689d5bcf1b089b8fa72c3` |
-| 8 | `def` | [mapMatrix](../../../../Combinatorics/FiniteMatrixWords.lean/declarations/mapmatrix.md) | 93 | `declaration-track:085edcf8bf733491846fbf4ecdabf16b182bd9a37602ad865c6639a12d0ec11b` |
-| 9 | `theorem` | [length_empty](../../../../Combinatorics/FiniteMatrixWords.lean/declarations/length-empty.md) | 101 | `result-track:c49ed799801a019ef7a65215b0e805028bb7289c70bc59298ff618b5b2db4946` |
-| 10 | `theorem` | [length_concat](../../../../Combinatorics/FiniteMatrixWords.lean/declarations/length-concat.md) | 105 | `result-track:695054e4f693aaa9e6926eb5166d6a0c3978761beeac0c39d4abef0365edf895` |
-| 11 | `theorem` | [length_restrict](../../../../Combinatorics/FiniteMatrixWords.lean/declarations/length-restrict.md) | 110 | `result-track:1dcfc112a36ad9b71fb7b6126d7ef17c2675d9fe201973ca3025ed630259fed3` |
-| 12 | `theorem` | [length_mapMatrix](../../../../Combinatorics/FiniteMatrixWords.lean/declarations/length-mapmatrix.md) | 118 | `result-track:f4aeffa5992c17f7c8eec85d9cbf6bfb6a2a35edf17ef636da069e625966dd50` |
-| 13 | `theorem` | [get_mapMatrix](../../../../Combinatorics/FiniteMatrixWords.lean/declarations/get-mapmatrix.md) | 125 | `result-track:3bae52a82b6e2752f089e93f6b3ec69d32aee9cbe0cccd3b932256496feb8cbc` |
-| 14 | `theorem` | [get_concat_left](../../../../Combinatorics/FiniteMatrixWords.lean/declarations/get-concat-left.md) | 132 | `result-track:f7d88c0e9e00399065337484860dca945a5698637abb7bf521865b0f87697302` |
-| 15 | `theorem` | [get_concat_right](../../../../Combinatorics/FiniteMatrixWords.lean/declarations/get-concat-right.md) | 141 | `result-track:16cd731aae57b4bc545b627d576aca684f3ca8d7955690a653f30bcdd215b162` |
-| 16 | `theorem` | [get_restrict](../../../../Combinatorics/FiniteMatrixWords.lean/declarations/get-restrict.md) | 152 | `result-track:025e4be30a0ad33720ff46c031cf41bbc014bcfa2d7cc4275d1e112ffddb482e` |
+| 1 | `structure` | [BinaryMatrixStream](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteMatrixWords.lean/declarations/binarymatrixstream.md) | 36 | `declaration-track:b54f683620f13b812a080c3ec889f9b7602949e972c477d601b594143a5b0b19` |
+| 2 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteMatrixWords.lean/declarations/ext.md) | 42 | `result-track:15a3ca4997e1ee790b1f1570d2646ed3e460799fb099a51bb9694c82d2457438` |
+| 3 | `def` | [length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteMatrixWords.lean/declarations/length.md) | 62 | `declaration-track:5f8bd2fdfd47df710ed39e42a52e45dcbfcaf1c68f5a00650848829cf558fb45` |
+| 4 | `def` | [get](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteMatrixWords.lean/declarations/get.md) | 65 | `declaration-track:3abdd5e496f7741a6f4390df2953aa1f80ac98af6ad5835ba1ea588295dcd758` |
+| 5 | `def` | [empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteMatrixWords.lean/declarations/empty.md) | 68 | `declaration-track:bdda3191f9211cbfe22b07efe99171507b7fcdc3a072010261d7c232b7627e70` |
+| 6 | `def` | [concat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteMatrixWords.lean/declarations/concat.md) | 72 | `declaration-track:cf9eeca0869d8fc6405debbdd7a6bc462147963ee808c8d609a495653523d082` |
+| 7 | `def` | [restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteMatrixWords.lean/declarations/restrict.md) | 82 | `declaration-track:70da28037b15b44c94b12675b8a294f9d545aeed97d689d5bcf1b089b8fa72c3` |
+| 8 | `def` | [mapMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteMatrixWords.lean/declarations/mapmatrix.md) | 93 | `declaration-track:085edcf8bf733491846fbf4ecdabf16b182bd9a37602ad865c6639a12d0ec11b` |
+| 9 | `theorem` | [length_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteMatrixWords.lean/declarations/length-empty.md) | 101 | `result-track:c49ed799801a019ef7a65215b0e805028bb7289c70bc59298ff618b5b2db4946` |
+| 10 | `theorem` | [length_concat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteMatrixWords.lean/declarations/length-concat.md) | 105 | `result-track:695054e4f693aaa9e6926eb5166d6a0c3978761beeac0c39d4abef0365edf895` |
+| 11 | `theorem` | [length_restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteMatrixWords.lean/declarations/length-restrict.md) | 110 | `result-track:1dcfc112a36ad9b71fb7b6126d7ef17c2675d9fe201973ca3025ed630259fed3` |
+| 12 | `theorem` | [length_mapMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteMatrixWords.lean/declarations/length-mapmatrix.md) | 118 | `result-track:f4aeffa5992c17f7c8eec85d9cbf6bfb6a2a35edf17ef636da069e625966dd50` |
+| 13 | `theorem` | [get_mapMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteMatrixWords.lean/declarations/get-mapmatrix.md) | 125 | `result-track:3bae52a82b6e2752f089e93f6b3ec69d32aee9cbe0cccd3b932256496feb8cbc` |
+| 14 | `theorem` | [get_concat_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteMatrixWords.lean/declarations/get-concat-left.md) | 132 | `result-track:f7d88c0e9e00399065337484860dca945a5698637abb7bf521865b0f87697302` |
+| 15 | `theorem` | [get_concat_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteMatrixWords.lean/declarations/get-concat-right.md) | 141 | `result-track:16cd731aae57b4bc545b627d576aca684f3ca8d7955690a653f30bcdd215b162` |
+| 16 | `theorem` | [get_restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteMatrixWords.lean/declarations/get-restrict.md) | 152 | `result-track:025e4be30a0ad33720ff46c031cf41bbc014bcfa2d7cc4275d1e112ffddb482e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

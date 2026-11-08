@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ProfileNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ProfileNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProfileNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProfileNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FormalProfile](../../../../Combinatorics/ProfileNamespaced.lean/declarations/formalprofile.md) | 14 | `declaration-track:cb9b9de0f013b954fa27a7cbdadd9bd7135ae3bb3a3ef53ff0f83d0a2484d785` |
-| 2 | `def` | [pinnedProfile](../../../../Combinatorics/ProfileNamespaced.lean/declarations/pinnedprofile.md) | 33 | `declaration-track:00ee37685f79ad22d5bd3d98e6bcd46867ed4817a676e7fd42cbf71f0f6a3ae1` |
+| 1 | `structure` | [FormalProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProfileNamespaced.lean/declarations/formalprofile.md) | 14 | `declaration-track:cb9b9de0f013b954fa27a7cbdadd9bd7135ae3bb3a3ef53ff0f83d0a2484d785` |
+| 2 | `def` | [pinnedProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProfileNamespaced.lean/declarations/pinnedprofile.md) | 33 | `declaration-track:00ee37685f79ad22d5bd3d98e6bcd46867ed4817a676e7fd42cbf71f0f6a3ae1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

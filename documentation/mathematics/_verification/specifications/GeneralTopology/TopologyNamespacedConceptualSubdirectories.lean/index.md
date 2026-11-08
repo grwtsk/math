@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopologyNamespacedConceptualSubdirectories.lean/index.md) · [Full source](../../../../GeneralTopology/TopologyNamespacedConceptualSubdirectories.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyNamespacedConceptualSubdirectories.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyNamespacedConceptualSubdirectories.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [conceptualSubdirectories](../../../../GeneralTopology/TopologyNamespacedConceptualSubdirectories.lean/declarations/conceptualsubdirectories.md) | 17 | `declaration-track:9ad32624883e494a19ef0c6877ae83fc285b250195003f76feb162076b81363f` |
-| 2 | `theorem` | [conceptualSubdirectories_count](../../../../GeneralTopology/TopologyNamespacedConceptualSubdirectories.lean/declarations/conceptualsubdirectories-count.md) | 21 | `result-track:25c0642064eb37fd5670aa29c27b9c386c834702c4a23dfef0cc8d44933909ef` |
+| 1 | `def` | [conceptualSubdirectories](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyNamespacedConceptualSubdirectories.lean/declarations/conceptualsubdirectories.md) | 17 | `declaration-track:9ad32624883e494a19ef0c6877ae83fc285b250195003f76feb162076b81363f` |
+| 2 | `theorem` | [conceptualSubdirectories_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyNamespacedConceptualSubdirectories.lean/declarations/conceptualsubdirectories-count.md) | 21 | `result-track:25c0642064eb37fd5670aa29c27b9c386c834702c4a23dfef0cc8d44933909ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicToAsciiByteArray.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicToAsciiByteArray.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicToAsciiByteArray.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicToAsciiByteArray.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicToAsciiByteArray.lean/declarations/instance.md) | 18 | `declaration-track:b4d590dfc04b2018051e02823e95acb311fe46ef637febeadd85fc08a483c04a` |
-| 2 | `def` | [count](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicToAsciiByteArray.lean/declarations/count.md) | 23 | `declaration-track:6359128ffe0a9b347660684d77908b460ea7a60b89abdc54c90f1573b5725112` |
-| 3 | `def` | [toAsciiByteArray](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicToAsciiByteArray.lean/declarations/toasciibytearray.md) | 33 | `declaration-track:e9c50d95a31c3b3ed6085fa91fb98b90eaf602d906daa4f0c82ad31a4e8e5c7c` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicToAsciiByteArray.lean/declarations/instance.md) | 18 | `declaration-track:b4d590dfc04b2018051e02823e95acb311fe46ef637febeadd85fc08a483c04a` |
+| 2 | `def` | [count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicToAsciiByteArray.lean/declarations/count.md) | 23 | `declaration-track:6359128ffe0a9b347660684d77908b460ea7a60b89abdc54c90f1573b5725112` |
+| 3 | `def` | [toAsciiByteArray](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicToAsciiByteArray.lean/declarations/toasciibytearray.md) | 33 | `declaration-track:e9c50d95a31c3b3ed6085fa91fb98b90eaf602d906daa4f0c82ad31a4e8e5c7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

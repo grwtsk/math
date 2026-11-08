@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SeparationProfiniteNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/SeparationProfiniteNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationProfiniteNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationProfiniteNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [totallySeparatedSpace_of_t0_of_basis_clopen](../../../../GeneralTopology/SeparationProfiniteNamespacedPublic.lean/declarations/totallyseparatedspace-of-t0-of-basis-clopen.md) | 35 | `result-track:3be214768387ece970f057ba1cc4e5c5505eb284bdc1920fb17c699263005f4b` |
-| 2 | `theorem` | [nhds_basis_clopen](../../../../GeneralTopology/SeparationProfiniteNamespacedPublic.lean/declarations/nhds-basis-clopen.md) | 51 | `result-track:e864fac0eaef3f6f00393ff89fcd6138121bb62341d8ea394cc5ca0b999c68a0` |
-| 3 | `theorem` | [isTopologicalBasis_isClopen](../../../../GeneralTopology/SeparationProfiniteNamespacedPublic.lean/declarations/istopologicalbasis-isclopen.md) | 74 | `result-track:54c827952b8616951d84d66d5f0591a878a18d7d57e548b0ca8868b4b0af2fbc` |
-| 4 | `theorem` | [compact_exists_isClopen_in_isOpen](../../../../GeneralTopology/SeparationProfiniteNamespacedPublic.lean/declarations/compact-exists-isclopen-in-isopen.md) | 84 | `result-track:0777aca180acc37c136c278d95f4621fad060bdb90d0cbcea20c9b9e11b6aff1` |
-| 5 | `theorem` | [loc_compact_Haus_tot_disc_of_zero_dim](../../../../GeneralTopology/SeparationProfiniteNamespacedPublic.lean/declarations/loc-compact-haus-tot-disc-of-zero-dim.md) | 95 | `result-track:a1200ff115317e617a6b70270ec6bea85fdfc3e495ada21e8e55e58ca2b02f58` |
-| 6 | `theorem` | [loc_compact_t2_tot_disc_iff_tot_sep](../../../../GeneralTopology/SeparationProfiniteNamespacedPublic.lean/declarations/loc-compact-t2-tot-disc-iff-tot-sep.md) | 126 | `result-track:9d6003c963aa93e0d8169a6ea7df9dcc9c400ad09221e55b41f44529c0671da7` |
-| 7 | `instance` | [(anonymous)](../../../../GeneralTopology/SeparationProfiniteNamespacedPublic.lean/declarations/instance.md) | 134 | `declaration-track:d3028b69eb0fdc5f9a2ec5c789e3d0e62063e7b4ace529311440c7b9e6ce2086` |
-| 8 | `lemma` | [exists_clopen_of_closed_subset_open](../../../../GeneralTopology/SeparationProfiniteNamespacedPublic.lean/declarations/exists-clopen-of-closed-subset-open.md) | 139 | `result-track:d19f2ccf7163c1f40a9a1c7a39605a5d1cf551d632e3fa8aaddedc3b283e2f13` |
-| 9 | `lemma` | [exists_clopen_partition_of_clopen_cover](../../../../GeneralTopology/SeparationProfiniteNamespacedPublic.lean/declarations/exists-clopen-partition-of-clopen-cover.md) | 155 | `result-track:df9b70e8dc11024e699e3cc6416214d10a5ec4142d3a4d29ed3371cf856ea42f` |
+| 1 | `theorem` | [totallySeparatedSpace_of_t0_of_basis_clopen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationProfiniteNamespacedPublic.lean/declarations/totallyseparatedspace-of-t0-of-basis-clopen.md) | 35 | `result-track:3be214768387ece970f057ba1cc4e5c5505eb284bdc1920fb17c699263005f4b` |
+| 2 | `theorem` | [nhds_basis_clopen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationProfiniteNamespacedPublic.lean/declarations/nhds-basis-clopen.md) | 51 | `result-track:e864fac0eaef3f6f00393ff89fcd6138121bb62341d8ea394cc5ca0b999c68a0` |
+| 3 | `theorem` | [isTopologicalBasis_isClopen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationProfiniteNamespacedPublic.lean/declarations/istopologicalbasis-isclopen.md) | 74 | `result-track:54c827952b8616951d84d66d5f0591a878a18d7d57e548b0ca8868b4b0af2fbc` |
+| 4 | `theorem` | [compact_exists_isClopen_in_isOpen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationProfiniteNamespacedPublic.lean/declarations/compact-exists-isclopen-in-isopen.md) | 84 | `result-track:0777aca180acc37c136c278d95f4621fad060bdb90d0cbcea20c9b9e11b6aff1` |
+| 5 | `theorem` | [loc_compact_Haus_tot_disc_of_zero_dim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationProfiniteNamespacedPublic.lean/declarations/loc-compact-haus-tot-disc-of-zero-dim.md) | 95 | `result-track:a1200ff115317e617a6b70270ec6bea85fdfc3e495ada21e8e55e58ca2b02f58` |
+| 6 | `theorem` | [loc_compact_t2_tot_disc_iff_tot_sep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationProfiniteNamespacedPublic.lean/declarations/loc-compact-t2-tot-disc-iff-tot-sep.md) | 126 | `result-track:9d6003c963aa93e0d8169a6ea7df9dcc9c400ad09221e55b41f44529c0671da7` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationProfiniteNamespacedPublic.lean/declarations/instance.md) | 134 | `declaration-track:d3028b69eb0fdc5f9a2ec5c789e3d0e62063e7b4ace529311440c7b9e6ce2086` |
+| 8 | `lemma` | [exists_clopen_of_closed_subset_open](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationProfiniteNamespacedPublic.lean/declarations/exists-clopen-of-closed-subset-open.md) | 139 | `result-track:d19f2ccf7163c1f40a9a1c7a39605a5d1cf551d632e3fa8aaddedc3b283e2f13` |
+| 9 | `lemma` | [exists_clopen_partition_of_clopen_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationProfiniteNamespacedPublic.lean/declarations/exists-clopen-partition-of-clopen-cover.md) | 155 | `result-track:df9b70e8dc11024e699e3cc6416214d10a5ec4142d3a4d29ed3371cf856ea42f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

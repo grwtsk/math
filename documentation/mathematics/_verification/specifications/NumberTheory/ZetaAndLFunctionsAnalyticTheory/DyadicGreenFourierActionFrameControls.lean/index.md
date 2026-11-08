@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenFourierActionFrameControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenFourierActionFrameControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenFourierActionFrameControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenFourierActionFrameControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenFourierActionFrame`](../../../../../MeasureAndIntegration/DyadicGreenFourierActionFrame.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenFourierActionFrame`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenFourierActionFrame.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [zero_mode_is_centered_out](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenFourierActionFrameControls.lean/declarations/zero-mode-is-centered-out.md) | 15 | `result-track:c414ad7265acdb420901cf5e4981300db5641bf36a0484c8e3bf5d5f259f8efa` |
-| 2 | `theorem` | [action_frame_captures_augmented_energy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenFourierActionFrameControls.lean/declarations/action-frame-captures-augmented-energy.md) | 20 | `result-track:2de0d22954f561b7da61ba86b07ee13b74fb1709e2aea662288bce94389072ba` |
+| 1 | `theorem` | [zero_mode_is_centered_out](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenFourierActionFrameControls.lean/declarations/zero-mode-is-centered-out.md) | 15 | `result-track:c414ad7265acdb420901cf5e4981300db5641bf36a0484c8e3bf5d5f259f8efa` |
+| 2 | `theorem` | [action_frame_captures_augmented_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenFourierActionFrameControls.lean/declarations/action-frame-captures-augmented-energy.md) | 20 | `result-track:2de0d22954f561b7da61ba86b07ee13b74fb1709e2aea662288bce94389072ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

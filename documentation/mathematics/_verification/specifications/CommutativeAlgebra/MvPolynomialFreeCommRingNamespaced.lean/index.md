@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MvPolynomialFreeCommRingNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MvPolynomialFreeCommRingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialFreeCommRingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialFreeCommRingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [genericPolyMap](../../../../CommutativeAlgebra/MvPolynomialFreeCommRingNamespaced.lean/declarations/genericpolymap.md) | 46 | `declaration-track:0309efb2279691e692d3f99e1b7ae007c3dcf7fc6dc21a805cfeb15dc425b829` |
-| 2 | `def` | [mvPolynomialSupportLEEquiv](../../../../CommutativeAlgebra/MvPolynomialFreeCommRingNamespaced.lean/declarations/mvpolynomialsupportleequiv.md) | 55 | `declaration-track:7b741b61fcf07285fad4f06594eaed7dadf97a8b37cae86292e6e325ec4c810c` |
-| 3 | `theorem` | [MvPolynomialSupportLEEquiv_symm_apply_coeff](../../../../CommutativeAlgebra/MvPolynomialFreeCommRingNamespaced.lean/declarations/mvpolynomialsupportleequiv-symm-apply-coeff.md) | 75 | `result-track:660baf199c9e1e63293cd346f4cdfe1c140c839ff36cb9d4a542ff50d10b9144` |
-| 4 | `theorem` | [lift_genericPolyMap](../../../../CommutativeAlgebra/MvPolynomialFreeCommRingNamespaced.lean/declarations/lift-genericpolymap.md) | 82 | `result-track:fd5523499a8a93f422527b839736d2e6becdfa8728dd68317d15b4b50f74e84a` |
+| 1 | `def` | [genericPolyMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialFreeCommRingNamespaced.lean/declarations/genericpolymap.md) | 46 | `declaration-track:0309efb2279691e692d3f99e1b7ae007c3dcf7fc6dc21a805cfeb15dc425b829` |
+| 2 | `def` | [mvPolynomialSupportLEEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialFreeCommRingNamespaced.lean/declarations/mvpolynomialsupportleequiv.md) | 55 | `declaration-track:7b741b61fcf07285fad4f06594eaed7dadf97a8b37cae86292e6e325ec4c810c` |
+| 3 | `theorem` | [MvPolynomialSupportLEEquiv_symm_apply_coeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialFreeCommRingNamespaced.lean/declarations/mvpolynomialsupportleequiv-symm-apply-coeff.md) | 75 | `result-track:660baf199c9e1e63293cd346f4cdfe1c140c839ff36cb9d4a542ff50d10b9144` |
+| 4 | `theorem` | [lift_genericPolyMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialFreeCommRingNamespaced.lean/declarations/lift-genericpolymap.md) | 82 | `result-track:fd5523499a8a93f422527b839736d2e6becdfa8728dd68317d15b4b50f74e84a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

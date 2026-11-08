@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Filter.Tendsto.integral_sub_linear_isLittleO_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusPublic.lean/declarations/filter-tendsto-integral-sub-linear-islittleo-ae.md) | 43 | `result-track:7b2b48b3edd3609a832155932a3f3f3dec13c41a8d8362c01873c1dba7e43dd5` |
-| 2 | `theorem` | [ContinuousWithinAt.integral_sub_linear_isLittleO_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusPublic.lean/declarations/continuouswithinat-integral-sub-linear-islittleo-ae.md) | 75 | `result-track:fff2ce495e6994262f977e93f202854ec46bbc6d83b50de2e82a55136187630b` |
-| 3 | `theorem` | [ContinuousAt.integral_sub_linear_isLittleO_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusPublic.lean/declarations/continuousat-integral-sub-linear-islittleo-ae.md) | 95 | `result-track:0495f3f6a5c324a3b7b9923c9357cdd1590c7b33c8ec61f5d07f68369e13cb8c` |
-| 4 | `theorem` | [ContinuousOn.integral_sub_linear_isLittleO_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusPublic.lean/declarations/continuouson-integral-sub-linear-islittleo-ae.md) | 111 | `result-track:688e19a308a2083d71b0dedc48d54d98c978ec66939be863afdac5b4b2acc465` |
+| 1 | `theorem` | [Filter.Tendsto.integral_sub_linear_isLittleO_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusPublic.lean/declarations/filter-tendsto-integral-sub-linear-islittleo-ae.md) | 43 | `result-track:7b2b48b3edd3609a832155932a3f3f3dec13c41a8d8362c01873c1dba7e43dd5` |
+| 2 | `theorem` | [ContinuousWithinAt.integral_sub_linear_isLittleO_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusPublic.lean/declarations/continuouswithinat-integral-sub-linear-islittleo-ae.md) | 75 | `result-track:fff2ce495e6994262f977e93f202854ec46bbc6d83b50de2e82a55136187630b` |
+| 3 | `theorem` | [ContinuousAt.integral_sub_linear_isLittleO_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusPublic.lean/declarations/continuousat-integral-sub-linear-islittleo-ae.md) | 95 | `result-track:0495f3f6a5c324a3b7b9923c9357cdd1590c7b33c8ec61f5d07f68369e13cb8c` |
+| 4 | `theorem` | [ContinuousOn.integral_sub_linear_isLittleO_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusPublic.lean/declarations/continuouson-integral-sub-linear-islittleo-ae.md) | 111 | `result-track:688e19a308a2083d71b0dedc48d54d98c978ec66939be863afdac5b4b2acc465` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

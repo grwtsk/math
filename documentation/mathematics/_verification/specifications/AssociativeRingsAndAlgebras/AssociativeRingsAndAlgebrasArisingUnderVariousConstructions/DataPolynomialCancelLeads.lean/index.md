@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialCancelLeads.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialCancelLeads.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialCancelLeads.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialCancelLeads.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cancelLeads](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialCancelLeads.lean/declarations/cancelleads.md) | 39 | `declaration-track:342c1854702cd202abb4e9c67a95126443277cec6c1dafce7fc9635cc346c9b0` |
-| 2 | `theorem` | [neg_cancelLeads](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialCancelLeads.lean/declarations/neg-cancelleads.md) | 47 | `result-track:a8981cac34fc48f532b49b3dd07cd4f3528e3abb32e9c056a55bb82815194d46` |
-| 3 | `theorem` | [natDegree_cancelLeads_lt_of_natDegree_le_natDegree_of_comm](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialCancelLeads.lean/declarations/natdegree-cancelleads-lt-of-natdegree-le-natdegree-of-comm.md) | 51 | `result-track:b9e2460ad2eda4aa8f867fd5f129f42022cf7ec799a9d05c82fd184d20296c78` |
-| 4 | `theorem` | [dvd_cancelLeads_of_dvd_of_dvd](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialCancelLeads.lean/declarations/dvd-cancelleads-of-dvd-of-dvd.md) | 82 | `result-track:6bdb1ecc745e513c4f90e272acc027836816d7f100b24696a0bf61a61e9cc701` |
-| 5 | `theorem` | [natDegree_cancelLeads_lt_of_natDegree_le_natDegree](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialCancelLeads.lean/declarations/natdegree-cancelleads-lt-of-natdegree-le-natdegree.md) | 86 | `result-track:e2eb35c2926be5dd639f6d4c31463436fa160d9bd2bec95d4b6e4664858dd5a9` |
+| 1 | `def` | [cancelLeads](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialCancelLeads.lean/declarations/cancelleads.md) | 39 | `declaration-track:342c1854702cd202abb4e9c67a95126443277cec6c1dafce7fc9635cc346c9b0` |
+| 2 | `theorem` | [neg_cancelLeads](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialCancelLeads.lean/declarations/neg-cancelleads.md) | 47 | `result-track:a8981cac34fc48f532b49b3dd07cd4f3528e3abb32e9c056a55bb82815194d46` |
+| 3 | `theorem` | [natDegree_cancelLeads_lt_of_natDegree_le_natDegree_of_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialCancelLeads.lean/declarations/natdegree-cancelleads-lt-of-natdegree-le-natdegree-of-comm.md) | 51 | `result-track:b9e2460ad2eda4aa8f867fd5f129f42022cf7ec799a9d05c82fd184d20296c78` |
+| 4 | `theorem` | [dvd_cancelLeads_of_dvd_of_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialCancelLeads.lean/declarations/dvd-cancelleads-of-dvd-of-dvd.md) | 82 | `result-track:6bdb1ecc745e513c4f90e272acc027836816d7f100b24696a0bf61a61e9cc701` |
+| 5 | `theorem` | [natDegree_cancelLeads_lt_of_natDegree_le_natDegree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialCancelLeads.lean/declarations/natdegree-cancelleads-lt-of-natdegree-le-natdegree.md) | 86 | `result-track:e2eb35c2926be5dd639f6d4c31463436fa160d9bd2bec95d4b6e4664858dd5a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

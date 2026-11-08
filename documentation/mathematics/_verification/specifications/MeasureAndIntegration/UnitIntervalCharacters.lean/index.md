@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/UnitIntervalCharacters.lean/index.md) · [Full source](../../../../MeasureAndIntegration/UnitIntervalCharacters.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UnitIntervalCharacters.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UnitIntervalCharacters.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [unitPeriodPositive](../../../../MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/unitperiodpositive.md) | 30 | `declaration-track:fb19264750b5f5d2aefa34b4abe873fe56eabfa5466c742d01ad9f533486b404` |
-| 2 | `def` | [unitCharacter](../../../../MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/unitcharacter.md) | 34 | `declaration-track:e6368dad69adceab285b64d0e6da6b17887914fbaf29ef730d701a2f47c58e5c` |
-| 3 | `theorem` | [unitCharacter_zero](../../../../MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/unitcharacter-zero.md) | 38 | `result-track:8f14bc4b56409f137a33ee831c819a044f9955da76bfb3cf5d78a0d32b49c151` |
-| 4 | `theorem` | [unitCharacter_add](../../../../MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/unitcharacter-add.md) | 42 | `result-track:2d5afc8ba92458929937bacda33d5356786662b0050ff3a1bc89c547099b5b1c` |
-| 5 | `theorem` | [continuous_unitCharacter](../../../../MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/continuous-unitcharacter.md) | 49 | `result-track:7af67a33e369cff357200abbf9fecaf96157e44b32a7eda1d8ccb6f2d678c71a` |
-| 6 | `theorem` | [intervalIntegrable_unitCharacter](../../../../MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/intervalintegrable-unitcharacter.md) | 54 | `result-track:972b7a1f793f04f382fe83f0d93e315c7ffb0e03172c0ea70a0bc80a45a63dec` |
-| 7 | `theorem` | [integral_unitCharacter_eq_single](../../../../MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/integral-unitcharacter-eq-single.md) | 60 | `result-track:c588b59fc029eae839c7f73c1cb0fb1f18ba15c177df08534fc11df283f2417b` |
-| 8 | `theorem` | [integral_unitCharacter](../../../../MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/integral-unitcharacter.md) | 68 | `result-track:c3fe3bda111bc9f9180814019ed138571e82b62527907e57e340752898477f94` |
-| 9 | `theorem` | [integral_unitCharacter_eq_zero](../../../../MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/integral-unitcharacter-eq-zero.md) | 78 | `result-track:e3561171042a577a46695d2959e429184f4752dd665d36f7492e933620c19fb7` |
-| 10 | `theorem` | [pairFrequency_zero_iff](../../../../MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/pairfrequency-zero-iff.md) | 84 | `result-track:148f3fdb1cba0ce66444dabe60e18288d658eae0d754e99837c4aac53cc86edc` |
+| 1 | `instance` | [unitPeriodPositive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/unitperiodpositive.md) | 30 | `declaration-track:fb19264750b5f5d2aefa34b4abe873fe56eabfa5466c742d01ad9f533486b404` |
+| 2 | `def` | [unitCharacter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/unitcharacter.md) | 34 | `declaration-track:e6368dad69adceab285b64d0e6da6b17887914fbaf29ef730d701a2f47c58e5c` |
+| 3 | `theorem` | [unitCharacter_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/unitcharacter-zero.md) | 38 | `result-track:8f14bc4b56409f137a33ee831c819a044f9955da76bfb3cf5d78a0d32b49c151` |
+| 4 | `theorem` | [unitCharacter_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/unitcharacter-add.md) | 42 | `result-track:2d5afc8ba92458929937bacda33d5356786662b0050ff3a1bc89c547099b5b1c` |
+| 5 | `theorem` | [continuous_unitCharacter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/continuous-unitcharacter.md) | 49 | `result-track:7af67a33e369cff357200abbf9fecaf96157e44b32a7eda1d8ccb6f2d678c71a` |
+| 6 | `theorem` | [intervalIntegrable_unitCharacter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/intervalintegrable-unitcharacter.md) | 54 | `result-track:972b7a1f793f04f382fe83f0d93e315c7ffb0e03172c0ea70a0bc80a45a63dec` |
+| 7 | `theorem` | [integral_unitCharacter_eq_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/integral-unitcharacter-eq-single.md) | 60 | `result-track:c588b59fc029eae839c7f73c1cb0fb1f18ba15c177df08534fc11df283f2417b` |
+| 8 | `theorem` | [integral_unitCharacter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/integral-unitcharacter.md) | 68 | `result-track:c3fe3bda111bc9f9180814019ed138571e82b62527907e57e340752898477f94` |
+| 9 | `theorem` | [integral_unitCharacter_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/integral-unitcharacter-eq-zero.md) | 78 | `result-track:e3561171042a577a46695d2959e429184f4752dd665d36f7492e933620c19fb7` |
+| 10 | `theorem` | [pairFrequency_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UnitIntervalCharacters.lean/declarations/pairfrequency-zero-iff.md) | 84 | `result-track:148f3fdb1cba0ce66444dabe60e18288d658eae0d754e99837c4aac53cc86edc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

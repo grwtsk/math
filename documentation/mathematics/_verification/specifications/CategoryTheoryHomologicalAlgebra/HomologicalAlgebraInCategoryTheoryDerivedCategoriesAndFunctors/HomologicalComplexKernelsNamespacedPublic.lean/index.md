@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomologicalComplexKernelsNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomologicalComplexKernelsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomologicalComplexKernelsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomologicalComplexKernelsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [hasKernel_of_hasKernel_f](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomologicalComplexKernelsNamespacedPublic.lean/declarations/haskernel-of-haskernel-f.md) | 32 | `result-track:816f5c3e88f855235105b02b8fb05099775df591c650fda29af224d803e6c08b` |
-| 2 | `lemma` | [hasCokernel_of_hasCokernel_f](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomologicalComplexKernelsNamespacedPublic.lean/declarations/hascokernel-of-hascokernel-f.md) | 38 | `result-track:a3dc68d79e56a5ce72f5c89e6ef0c0d5bba5f6e98c2b4f7114601c8609840314` |
-| 3 | `lemma` | [eval_preservesLimit_of_hasKernel_f](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomologicalComplexKernelsNamespacedPublic.lean/declarations/eval-preserveslimit-of-haskernel-f.md) | 44 | `result-track:22be0662d980c8cf3e0ad0f4bb60438c79daf624f0672a07803f068a30f70082` |
-| 4 | `lemma` | [eval_preservesColimit_of_hasCokernel_f](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomologicalComplexKernelsNamespacedPublic.lean/declarations/eval-preservescolimit-of-hascokernel-f.md) | 52 | `result-track:aa485dbacdea22dc742dcb2650599b6c1fb966787c48510f671c49ccf9edc6b7` |
+| 1 | `lemma` | [hasKernel_of_hasKernel_f](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomologicalComplexKernelsNamespacedPublic.lean/declarations/haskernel-of-haskernel-f.md) | 32 | `result-track:816f5c3e88f855235105b02b8fb05099775df591c650fda29af224d803e6c08b` |
+| 2 | `lemma` | [hasCokernel_of_hasCokernel_f](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomologicalComplexKernelsNamespacedPublic.lean/declarations/hascokernel-of-hascokernel-f.md) | 38 | `result-track:a3dc68d79e56a5ce72f5c89e6ef0c0d5bba5f6e98c2b4f7114601c8609840314` |
+| 3 | `lemma` | [eval_preservesLimit_of_hasKernel_f](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomologicalComplexKernelsNamespacedPublic.lean/declarations/eval-preserveslimit-of-haskernel-f.md) | 44 | `result-track:22be0662d980c8cf3e0ad0f4bb60438c79daf624f0672a07803f068a30f70082` |
+| 4 | `lemma` | [eval_preservesColimit_of_hasCokernel_f](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomologicalComplexKernelsNamespacedPublic.lean/declarations/eval-preservescolimit-of-hascokernel-f.md) | 52 | `result-track:aa485dbacdea22dc742dcb2650599b6c1fb966787c48510f671c49ccf9edc6b7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

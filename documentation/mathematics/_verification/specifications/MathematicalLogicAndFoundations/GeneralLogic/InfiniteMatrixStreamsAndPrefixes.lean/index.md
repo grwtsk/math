@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InfiniteMatrixStreamsAndPrefixes.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InfiniteMatrixStreamsAndPrefixes.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InfiniteMatrixStreamsAndPrefixes.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InfiniteMatrixStreamsAndPrefixes.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Carrier.BinaryMatrix` — import line 19; external provider; requires a separately pinned dependency.
-- [Fixed Shape Finite Matrix Words](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedShapeFiniteMatrixWords.lean/index.md) — import line 20; pinned internal source present.
+- [Fixed Shape Finite Matrix Words](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedShapeFiniteMatrixWords.lean/index.md) — import line 20; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [InfiniteBinaryMatrixStream](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InfiniteMatrixStreamsAndPrefixes.lean/declarations/infinitebinarymatrixstream.md) | 43 | `declaration-track:a1a740a6704e74cb895a4cc919a4ff5d93047614fd3ef883aaadf09b2c4aac81` |
-| 2 | `def` | [frameAt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InfiniteMatrixStreamsAndPrefixes.lean/declarations/frameat.md) | 48 | `declaration-track:36705d0d9328cee8cdad2fa07da6c68b0482402c47e9f8feca9a62affd7c7ed1` |
-| 3 | `def` | [HasFixedWidth](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InfiniteMatrixStreamsAndPrefixes.lean/declarations/hasfixedwidth.md) | 56 | `declaration-track:4bb52a7d8664b05c22d7cd3358e67d850fffea05c9b8e5ec91b1a242c737d0f9` |
-| 4 | `def` | [«prefix»](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InfiniteMatrixStreamsAndPrefixes.lean/declarations/prefix.md) | 64 | `declaration-track:10d6a7308c8c37891f5f56346546c40f2768ae0053876597fe461a2ae3542f1b` |
-| 5 | `theorem` | [prefix_timeLength](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InfiniteMatrixStreamsAndPrefixes.lean/declarations/prefix-timelength.md) | 69 | `result-track:e40e3be6eba91ad6614aa2076619777a203a5aeb81efb05755cc816faa9ddbaa` |
-| 6 | `theorem` | [prefix_frameAt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InfiniteMatrixStreamsAndPrefixes.lean/declarations/prefix-frameat.md) | 74 | `result-track:4451c462c4b2e2e91ff6acfb120d826c61b6c454d481b9515c7465d8a2ae9345` |
-| 7 | `theorem` | [prefix_hasFixedWidth](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InfiniteMatrixStreamsAndPrefixes.lean/declarations/prefix-hasfixedwidth.md) | 83 | `result-track:4bc7e6c1a16337720cc9fcda892597bb1e441b749590d3b7af5457b1e80b74e6` |
+| 1 | `structure` | [InfiniteBinaryMatrixStream](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InfiniteMatrixStreamsAndPrefixes.lean/declarations/infinitebinarymatrixstream.md) | 43 | `declaration-track:a1a740a6704e74cb895a4cc919a4ff5d93047614fd3ef883aaadf09b2c4aac81` |
+| 2 | `def` | [frameAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InfiniteMatrixStreamsAndPrefixes.lean/declarations/frameat.md) | 48 | `declaration-track:36705d0d9328cee8cdad2fa07da6c68b0482402c47e9f8feca9a62affd7c7ed1` |
+| 3 | `def` | [HasFixedWidth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InfiniteMatrixStreamsAndPrefixes.lean/declarations/hasfixedwidth.md) | 56 | `declaration-track:4bb52a7d8664b05c22d7cd3358e67d850fffea05c9b8e5ec91b1a242c737d0f9` |
+| 4 | `def` | [«prefix»](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InfiniteMatrixStreamsAndPrefixes.lean/declarations/prefix.md) | 64 | `declaration-track:10d6a7308c8c37891f5f56346546c40f2768ae0053876597fe461a2ae3542f1b` |
+| 5 | `theorem` | [prefix_timeLength](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InfiniteMatrixStreamsAndPrefixes.lean/declarations/prefix-timelength.md) | 69 | `result-track:e40e3be6eba91ad6614aa2076619777a203a5aeb81efb05755cc816faa9ddbaa` |
+| 6 | `theorem` | [prefix_frameAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InfiniteMatrixStreamsAndPrefixes.lean/declarations/prefix-frameat.md) | 74 | `result-track:4451c462c4b2e2e91ff6acfb120d826c61b6c454d481b9515c7465d8a2ae9345` |
+| 7 | `theorem` | [prefix_hasFixedWidth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InfiniteMatrixStreamsAndPrefixes.lean/declarations/prefix-hasfixedwidth.md) | 83 | `result-track:4bc7e6c1a16337720cc9fcda892597bb1e441b749590d3b7af5457b1e80b74e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteRegistry](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/declarations/finiteregistry.md) | 15 | `declaration-track:2b7bd9fa396647d75b4dc7df1895806ae8d7cf3396ae3d53a80a09805cbcffbe` |
-| 2 | `theorem` | [find?_mem](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/declarations/find-mem.md) | 27 | `result-track:e1a440f6abc3dd63a89ad924a76f564dc8476f43096b7ea96f7347f1d08a67e8` |
-| 3 | `def` | [Contains](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/declarations/contains.md) | 43 | `declaration-track:afeb5cde91f66e564aca2f58849b62dff46eb37e578a5304bbcf25389bf18d97` |
-| 4 | `def` | [lookup](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/declarations/lookup.md) | 47 | `declaration-track:c0ec4b388acf838a42e14cdc76a138944d8c3771fec379ea69cbfbd7d0304461` |
-| 5 | `theorem` | [key_injective_on_entries](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/declarations/key-injective-on-entries.md) | 51 | `result-track:19f2d5d8c5944a4762566099b930e8708cc27290ccd3c0df29a2927ab9e398fa` |
-| 6 | `theorem` | [lookup_key](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/declarations/lookup-key.md) | 61 | `result-track:157d47fe3225d9dc05ab3bd7be848bf121daab8f9e80353f1c2991bfd2cecc36` |
-| 7 | `theorem` | [lookup_mem](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/declarations/lookup-mem.md) | 72 | `result-track:d61009e09c66d0c1ffb34048c163b23aa611ec062f11814a90c686901b2b84da` |
-| 8 | `def` | [empty](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/declarations/empty.md) | 81 | `declaration-track:12dbfdc32e276bd252acc26210f63f92e8c991b956760c0fb82744f18be6a5b1` |
-| 9 | `def` | [singleton](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/declarations/singleton.md) | 87 | `declaration-track:40b22525428d9701f209c22b4aefd1c6aedb961b3e4d86e99f12d9633087b501` |
+| 1 | `structure` | [FiniteRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/declarations/finiteregistry.md) | 15 | `declaration-track:2b7bd9fa396647d75b4dc7df1895806ae8d7cf3396ae3d53a80a09805cbcffbe` |
+| 2 | `theorem` | [find?_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/declarations/find-mem.md) | 27 | `result-track:e1a440f6abc3dd63a89ad924a76f564dc8476f43096b7ea96f7347f1d08a67e8` |
+| 3 | `def` | [Contains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/declarations/contains.md) | 43 | `declaration-track:afeb5cde91f66e564aca2f58849b62dff46eb37e578a5304bbcf25389bf18d97` |
+| 4 | `def` | [lookup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/declarations/lookup.md) | 47 | `declaration-track:c0ec4b388acf838a42e14cdc76a138944d8c3771fec379ea69cbfbd7d0304461` |
+| 5 | `theorem` | [key_injective_on_entries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/declarations/key-injective-on-entries.md) | 51 | `result-track:19f2d5d8c5944a4762566099b930e8708cc27290ccd3c0df29a2927ab9e398fa` |
+| 6 | `theorem` | [lookup_key](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/declarations/lookup-key.md) | 61 | `result-track:157d47fe3225d9dc05ab3bd7be848bf121daab8f9e80353f1c2991bfd2cecc36` |
+| 7 | `theorem` | [lookup_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/declarations/lookup-mem.md) | 72 | `result-track:d61009e09c66d0c1ffb34048c163b23aa611ec062f11814a90c686901b2b84da` |
+| 8 | `def` | [empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/declarations/empty.md) | 81 | `declaration-track:12dbfdc32e276bd252acc26210f63f92e8c991b956760c0fb82744f18be6a5b1` |
+| 9 | `def` | [singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/declarations/singleton.md) | 87 | `declaration-track:40b22525428d9701f209c22b4aefd1c6aedb961b3e4d86e99f12d9633087b501` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

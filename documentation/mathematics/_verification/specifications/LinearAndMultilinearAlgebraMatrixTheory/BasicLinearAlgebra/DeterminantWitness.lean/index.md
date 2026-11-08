@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantWitness.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantWitness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantWitness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantWitness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DeterminantWitness](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantWitness.lean/declarations/determinantwitness.md) | 19 | `declaration-track:596eb1ce8f17306df532f0d87f49c88ae4f8589e4f973eb564f4a5b5dcfa6696` |
-| 2 | `theorem` | [determinant_witness_correct](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantWitness.lean/declarations/determinant-witness-correct.md) | 27 | `result-track:5d90fb46e123ee0bf86bdc14fb179e3b1c8d0922821cfd6b5fd4418ccbdd22c6` |
+| 1 | `structure` | [DeterminantWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantWitness.lean/declarations/determinantwitness.md) | 19 | `declaration-track:596eb1ce8f17306df532f0d87f49c88ae4f8589e4f973eb564f4a5b5dcfa6696` |
+| 2 | `theorem` | [determinant_witness_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantWitness.lean/declarations/determinant-witness-correct.md) | 27 | `result-track:5d90fb46e123ee0bf86bdc14fb179e3b1c8d0922821cfd6b5fd4418ccbdd22c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

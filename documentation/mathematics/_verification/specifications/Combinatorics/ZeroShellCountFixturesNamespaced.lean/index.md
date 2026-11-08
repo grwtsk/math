@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ZeroShellCountFixturesNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ZeroShellCountFixturesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZeroShellCountFixturesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZeroShellCountFixturesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [each_synthetic_shell_finite](../../../../Combinatorics/ZeroShellCountFixturesNamespaced.lean/declarations/each-synthetic-shell-finite.md) | 22 | `result-track:b99165cfa504693c9d270e8c050737698ff9376a306e26dedbf2e247a80beafa` |
-| 2 | `theorem` | [finite_shells_not_quartic](../../../../Combinatorics/ZeroShellCountFixturesNamespaced.lean/declarations/finite-shells-not-quartic.md) | 25 | `result-track:5456d16f562c2e9a7dbe8e59f8685f563fcd34dac91ac5aab7d35108fbd3a1d4` |
-| 3 | `def` | [SyntheticOccurrences](../../../../Combinatorics/ZeroShellCountFixturesNamespaced.lean/declarations/syntheticoccurrences.md) | 41 | `declaration-track:80ef586ebf226639018588eb891f2cb3201d8fe030fc3b362f5d713e6929ebb6` |
-| 4 | `theorem` | [multiplicity_slots_three](../../../../Combinatorics/ZeroShellCountFixturesNamespaced.lean/declarations/multiplicity-slots-three.md) | 44 | `result-track:e64c1d59fd15a7d29b195cbdaf1b1705cfa3995cff158a0c4d187188c03ed8d6` |
-| 5 | `theorem` | [point_count_two](../../../../Combinatorics/ZeroShellCountFixturesNamespaced.lean/declarations/point-count-two.md) | 50 | `result-track:38ef06ba8bef1496264cab4fd46a6b20d5fa499b41ecf145e514b2703ce604e5` |
-| 6 | `theorem` | [forgetting_multiplicity_changes_count](../../../../Combinatorics/ZeroShellCountFixturesNamespaced.lean/declarations/forgetting-multiplicity-changes-count.md) | 53 | `result-track:c1c79f00384998c2ab91ae2a551f7ddc327da5e0d38e502c206f4b8fd0454cfc` |
-| 7 | `theorem` | [shifted_shell_boundary](../../../../Combinatorics/ZeroShellCountFixturesNamespaced.lean/declarations/shifted-shell-boundary.md) | 59 | `result-track:70bc83bdd9ba7371a31acfa18a48e176a1d1464a9300dbcf8b370327315839cb` |
-| 8 | `theorem` | [shifted_boundary_not_previous_shell](../../../../Combinatorics/ZeroShellCountFixturesNamespaced.lean/declarations/shifted-boundary-not-previous-shell.md) | 63 | `result-track:1a90f37de46e9bab1df769896d90a64a539cda2c28e1296193c41af91b49d342` |
-| 9 | `theorem` | [omitting_shift_changes_shell](../../../../Combinatorics/ZeroShellCountFixturesNamespaced.lean/declarations/omitting-shift-changes-shell.md) | 69 | `result-track:9e7f0e5547fa85e981dc4142401aef391e236f9140cd844076823eb2eaff7ce1` |
+| 1 | `theorem` | [each_synthetic_shell_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZeroShellCountFixturesNamespaced.lean/declarations/each-synthetic-shell-finite.md) | 22 | `result-track:b99165cfa504693c9d270e8c050737698ff9376a306e26dedbf2e247a80beafa` |
+| 2 | `theorem` | [finite_shells_not_quartic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZeroShellCountFixturesNamespaced.lean/declarations/finite-shells-not-quartic.md) | 25 | `result-track:5456d16f562c2e9a7dbe8e59f8685f563fcd34dac91ac5aab7d35108fbd3a1d4` |
+| 3 | `def` | [SyntheticOccurrences](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZeroShellCountFixturesNamespaced.lean/declarations/syntheticoccurrences.md) | 41 | `declaration-track:80ef586ebf226639018588eb891f2cb3201d8fe030fc3b362f5d713e6929ebb6` |
+| 4 | `theorem` | [multiplicity_slots_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZeroShellCountFixturesNamespaced.lean/declarations/multiplicity-slots-three.md) | 44 | `result-track:e64c1d59fd15a7d29b195cbdaf1b1705cfa3995cff158a0c4d187188c03ed8d6` |
+| 5 | `theorem` | [point_count_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZeroShellCountFixturesNamespaced.lean/declarations/point-count-two.md) | 50 | `result-track:38ef06ba8bef1496264cab4fd46a6b20d5fa499b41ecf145e514b2703ce604e5` |
+| 6 | `theorem` | [forgetting_multiplicity_changes_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZeroShellCountFixturesNamespaced.lean/declarations/forgetting-multiplicity-changes-count.md) | 53 | `result-track:c1c79f00384998c2ab91ae2a551f7ddc327da5e0d38e502c206f4b8fd0454cfc` |
+| 7 | `theorem` | [shifted_shell_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZeroShellCountFixturesNamespaced.lean/declarations/shifted-shell-boundary.md) | 59 | `result-track:70bc83bdd9ba7371a31acfa18a48e176a1d1464a9300dbcf8b370327315839cb` |
+| 8 | `theorem` | [shifted_boundary_not_previous_shell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZeroShellCountFixturesNamespaced.lean/declarations/shifted-boundary-not-previous-shell.md) | 63 | `result-track:1a90f37de46e9bab1df769896d90a64a539cda2c28e1296193c41af91b49d342` |
+| 9 | `theorem` | [omitting_shift_changes_shell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZeroShellCountFixturesNamespaced.lean/declarations/omitting-shift-changes-shell.md) | 69 | `result-track:9e7f0e5547fa85e981dc4142401aef391e236f9140cd844076823eb2eaff7ce1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

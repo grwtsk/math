@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/Variants.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/Variants.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Variants.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Variants.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mean](../../../../ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/mean.md) | 26 | `declaration-track:743eff49702b2b6cd11934d1be46512ac4e4ad1dcbe35e8ea7da5cef3a4c0a5e` |
-| 2 | `def` | [centered](../../../../ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/centered.md) | 28 | `declaration-track:3f224b4039566fef8cf49c5885570c2c28578d044d8da851b0b5cbe729c2ea50` |
-| 3 | `def` | [energy](../../../../ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/energy.md) | 30 | `declaration-track:85825138e697a3268778c41ad044ff2f45e88e074a34176da78babae68686237` |
-| 4 | `theorem` | [integral_centered](../../../../ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/integral-centered.md) | 32 | `result-track:214116a989d7a144de30a458b99784f95344fe6e6ee45a34db3dd304234f5703` |
-| 5 | `theorem` | [centered_integrable](../../../../ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/centered-integrable.md) | 38 | `result-track:e36309f8a2a0b1608f525023736938a42ac33e96134c6af787444ac930e9b6be` |
-| 6 | `theorem` | [shifted_square_integrable](../../../../ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/shifted-square-integrable.md) | 42 | `result-track:3f7b864ef88a1ee5ffa89ca624edcbaea0bb829fb33a983744a86d95fadf5d60` |
-| 7 | `theorem` | [integral_shifted_square](../../../../ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/integral-shifted-square.md) | 52 | `result-track:5bfcc552a94cafa5007144942336896cf5e98159cc04feab4c4c062c8ff6e9e2` |
-| 8 | `theorem` | [energy_nonneg](../../../../ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/energy-nonneg.md) | 64 | `result-track:682e9af90c9fb0f190616d9dfd17fc2a1a00261452054e9941fdca53745c5326` |
-| 9 | `theorem` | [energy_eq_second_moment_sub_mean_sq](../../../../ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/energy-eq-second-moment-sub-mean-sq.md) | 67 | `result-track:472a3db6f974df460404a8e9a522f38589e23ee5d4d7a2251ae57878b2e036fa` |
-| 10 | `theorem` | [reconstruct_second_moment](../../../../ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/reconstruct-second-moment.md) | 74 | `result-track:6f7a37f11dacec6fff9741c6955dd2a41a512eb5671f167ccf2848a0d941dd00` |
-| 11 | `theorem` | [center_is_minimizer](../../../../ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/center-is-minimizer.md) | 80 | `result-track:3212b68343dcb5edd8dd0d08454fb8459c174d9e32a3646d30ad5a37678d0ff9` |
-| 12 | `theorem` | [center_minimal](../../../../ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/center-minimal.md) | 87 | `result-track:8d062d5c3a36bbfe3018209ea0d9d2e4ae8975ef2ee79c22fd3d75c6ecd1294f` |
+| 1 | `def` | [mean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/mean.md) | 26 | `declaration-track:743eff49702b2b6cd11934d1be46512ac4e4ad1dcbe35e8ea7da5cef3a4c0a5e` |
+| 2 | `def` | [centered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/centered.md) | 28 | `declaration-track:3f224b4039566fef8cf49c5885570c2c28578d044d8da851b0b5cbe729c2ea50` |
+| 3 | `def` | [energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/energy.md) | 30 | `declaration-track:85825138e697a3268778c41ad044ff2f45e88e074a34176da78babae68686237` |
+| 4 | `theorem` | [integral_centered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/integral-centered.md) | 32 | `result-track:214116a989d7a144de30a458b99784f95344fe6e6ee45a34db3dd304234f5703` |
+| 5 | `theorem` | [centered_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/centered-integrable.md) | 38 | `result-track:e36309f8a2a0b1608f525023736938a42ac33e96134c6af787444ac930e9b6be` |
+| 6 | `theorem` | [shifted_square_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/shifted-square-integrable.md) | 42 | `result-track:3f7b864ef88a1ee5ffa89ca624edcbaea0bb829fb33a983744a86d95fadf5d60` |
+| 7 | `theorem` | [integral_shifted_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/integral-shifted-square.md) | 52 | `result-track:5bfcc552a94cafa5007144942336896cf5e98159cc04feab4c4c062c8ff6e9e2` |
+| 8 | `theorem` | [energy_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/energy-nonneg.md) | 64 | `result-track:682e9af90c9fb0f190616d9dfd17fc2a1a00261452054e9941fdca53745c5326` |
+| 9 | `theorem` | [energy_eq_second_moment_sub_mean_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/energy-eq-second-moment-sub-mean-sq.md) | 67 | `result-track:472a3db6f974df460404a8e9a522f38589e23ee5d4d7a2251ae57878b2e036fa` |
+| 10 | `theorem` | [reconstruct_second_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/reconstruct-second-moment.md) | 74 | `result-track:6f7a37f11dacec6fff9741c6955dd2a41a512eb5671f167ccf2848a0d941dd00` |
+| 11 | `theorem` | [center_is_minimizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/center-is-minimizer.md) | 80 | `result-track:3212b68343dcb5edd8dd0d08454fb8459c174d9e32a3646d30ad5a37678d0ff9` |
+| 12 | `theorem` | [center_minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Variants.lean/declarations/center-minimal.md) | 87 | `result-track:8d062d5c3a36bbfe3018209ea0d9d2e4ae8975ef2ee79c22fd3d75c6ecd1294f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

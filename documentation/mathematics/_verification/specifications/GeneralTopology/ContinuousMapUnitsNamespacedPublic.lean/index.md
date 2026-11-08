@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [unitsLift](../../../../GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/unitslift.md) | 46 | `declaration-track:0f7205587560d3cd472429ca44d1f2ff20045f1e3058216559305aaaf3cb2116` |
-| 2 | `lemma` | [unitsLift_apply_inv_apply](../../../../GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/unitslift-apply-inv-apply.md) | 61 | `result-track:35a70f4ed320db85fcbaa438e8d4c7c1041849ae3186f1ac0f8d9a97fba40d95` |
-| 3 | `lemma` | [unitsLift_symm_apply_apply_inv'](../../../../GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/unitslift-symm-apply-apply-inv.md) | 66 | `result-track:ac16f0911bd663fc3cbcd25695bf3532b6e75398ae148e3fcc3b0bece0d69a0f` |
-| 4 | `theorem` | [continuous_isUnit_unit](../../../../GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/continuous-isunit-unit.md) | 76 | `result-track:129bc5d17fdc9c0888a349444f6ab1564aee204062eda8641681ba5d6ec67466` |
-| 5 | `def` | [unitsOfForallIsUnit](../../../../GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/unitsofforallisunit.md) | 90 | `declaration-track:0a3f4655054b5964cb300c2b5d93814b3745964476628b6350d4b588c6637c17` |
-| 6 | `instance` | [canLift](../../../../GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/canlift.md) | 94 | `declaration-track:86bce5181668ef6b939315c63622d0359be92a8156f277fe6d86bdb5224be64d` |
-| 7 | `theorem` | [isUnit_iff_forall_isUnit](../../../../GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/isunit-iff-forall-isunit.md) | 99 | `result-track:2b6f624258dec198b3f76a6e82ba0ddf912c749d4b07b4201c31e1381ef1b457` |
-| 8 | `theorem` | [isUnit_iff_forall_ne_zero](../../../../GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/isunit-iff-forall-ne-zero.md) | 109 | `result-track:30b695f62028323f7514f6e1804afcbe4c4fa60fd6e79e6fd9198b05a309d9d9` |
-| 9 | `theorem` | [spectrum_eq_preimage_range](../../../../GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/spectrum-eq-preimage-range.md) | 112 | `result-track:d4569890601ba5a13580d4058cea902c98f4629e3ea5a07b36160a1302fae1c1` |
-| 10 | `theorem` | [spectrum_eq_range](../../../../GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/spectrum-eq-range.md) | 120 | `result-track:8df242988c0872835901819c6fad1bf3eecbb4ca786db3e5ffbc187492b79a5a` |
+| 1 | `def` | [unitsLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/unitslift.md) | 46 | `declaration-track:0f7205587560d3cd472429ca44d1f2ff20045f1e3058216559305aaaf3cb2116` |
+| 2 | `lemma` | [unitsLift_apply_inv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/unitslift-apply-inv-apply.md) | 61 | `result-track:35a70f4ed320db85fcbaa438e8d4c7c1041849ae3186f1ac0f8d9a97fba40d95` |
+| 3 | `lemma` | [unitsLift_symm_apply_apply_inv'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/unitslift-symm-apply-apply-inv.md) | 66 | `result-track:ac16f0911bd663fc3cbcd25695bf3532b6e75398ae148e3fcc3b0bece0d69a0f` |
+| 4 | `theorem` | [continuous_isUnit_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/continuous-isunit-unit.md) | 76 | `result-track:129bc5d17fdc9c0888a349444f6ab1564aee204062eda8641681ba5d6ec67466` |
+| 5 | `def` | [unitsOfForallIsUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/unitsofforallisunit.md) | 90 | `declaration-track:0a3f4655054b5964cb300c2b5d93814b3745964476628b6350d4b588c6637c17` |
+| 6 | `instance` | [canLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/canlift.md) | 94 | `declaration-track:86bce5181668ef6b939315c63622d0359be92a8156f277fe6d86bdb5224be64d` |
+| 7 | `theorem` | [isUnit_iff_forall_isUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/isunit-iff-forall-isunit.md) | 99 | `result-track:2b6f624258dec198b3f76a6e82ba0ddf912c749d4b07b4201c31e1381ef1b457` |
+| 8 | `theorem` | [isUnit_iff_forall_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/isunit-iff-forall-ne-zero.md) | 109 | `result-track:30b695f62028323f7514f6e1804afcbe4c4fa60fd6e79e6fd9198b05a309d9d9` |
+| 9 | `theorem` | [spectrum_eq_preimage_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/spectrum-eq-preimage-range.md) | 112 | `result-track:d4569890601ba5a13580d4058cea902c98f4629e3ea5a07b36160a1302fae1c1` |
+| 10 | `theorem` | [spectrum_eq_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapUnitsNamespacedPublic.lean/declarations/spectrum-eq-range.md) | 120 | `result-track:8df242988c0872835901819c6fad1bf3eecbb4ca786db3e5ffbc187492b79a5a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

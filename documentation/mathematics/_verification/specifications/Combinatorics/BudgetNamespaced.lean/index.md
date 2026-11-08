@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BudgetNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/BudgetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BudgetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BudgetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TraversalBudget](../../../../Combinatorics/BudgetNamespaced.lean/declarations/traversalbudget.md) | 21 | `declaration-track:2e316e27c843407d84ee09c5d0dd37e51d43c7db44cef5c18e6883e0fe08f148` |
-| 2 | `structure` | [TraversalUsage](../../../../Combinatorics/BudgetNamespaced.lean/declarations/traversalusage.md) | 31 | `declaration-track:b00a4c9b641c3400f956bae97b15fe441680706b2f7c2fe9541f70ce9d16d3fc` |
-| 3 | `def` | [TraversalUsage.zero](../../../../Combinatorics/BudgetNamespaced.lean/declarations/traversalusage-zero.md) | 41 | `declaration-track:28a7cf03c6a822330963b21c460b6b3b2444223fc33fb9bfec47564c70401204` |
-| 4 | `def` | [WithinBudget](../../../../Combinatorics/BudgetNamespaced.lean/declarations/withinbudget.md) | 50 | `declaration-track:85ef139bbb46607931615339c7e23d4edd28ee34fc46a29bf6b0176d8c69577b` |
-| 5 | `instance` | [(anonymous)](../../../../Combinatorics/BudgetNamespaced.lean/declarations/instance.md) | 62 | `declaration-track:b3f480464eded9c31ae160d5b2719ece47f31d1927b96726d9de08392036c3b4` |
-| 6 | `inductive` | [BudgetDimension](../../../../Combinatorics/BudgetNamespaced.lean/declarations/budgetdimension.md) | 70 | `declaration-track:fce2791e92800b151f94e933b9d349fad2de65860c04d807f4c640a7f6f468a5` |
-| 7 | `def` | [BudgetDimension.exceeded](../../../../Combinatorics/BudgetNamespaced.lean/declarations/budgetdimension-exceeded.md) | 80 | `declaration-track:91f9e139f1d7b38de1f4fc45bfdcc4b6a8e7bb2d3659098e632445084a07009b` |
-| 8 | `def` | [exceededDimensions](../../../../Combinatorics/BudgetNamespaced.lean/declarations/exceededdimensions.md) | 109 | `declaration-track:93106aed4831a84c3899d7086381c627e680964fb07f2b842b6bee651bf6f6c5` |
-| 9 | `theorem` | [withinBudget_iff_no_exceeded](../../../../Combinatorics/BudgetNamespaced.lean/declarations/withinbudget-iff-no-exceeded.md) | 116 | `result-track:3fb72151e365f0dc7027e6c8eb19ce72b24351e61307870d2c6d7073ea52ec61` |
-| 10 | `def` | [UsageMonotone](../../../../Combinatorics/BudgetNamespaced.lean/declarations/usagemonotone.md) | 172 | `declaration-track:7d11413812296d35a6150ecf092ba4cd76f63361a806c015d03be73d7660357d` |
+| 1 | `structure` | [TraversalBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BudgetNamespaced.lean/declarations/traversalbudget.md) | 21 | `declaration-track:2e316e27c843407d84ee09c5d0dd37e51d43c7db44cef5c18e6883e0fe08f148` |
+| 2 | `structure` | [TraversalUsage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BudgetNamespaced.lean/declarations/traversalusage.md) | 31 | `declaration-track:b00a4c9b641c3400f956bae97b15fe441680706b2f7c2fe9541f70ce9d16d3fc` |
+| 3 | `def` | [TraversalUsage.zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BudgetNamespaced.lean/declarations/traversalusage-zero.md) | 41 | `declaration-track:28a7cf03c6a822330963b21c460b6b3b2444223fc33fb9bfec47564c70401204` |
+| 4 | `def` | [WithinBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BudgetNamespaced.lean/declarations/withinbudget.md) | 50 | `declaration-track:85ef139bbb46607931615339c7e23d4edd28ee34fc46a29bf6b0176d8c69577b` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BudgetNamespaced.lean/declarations/instance.md) | 62 | `declaration-track:b3f480464eded9c31ae160d5b2719ece47f31d1927b96726d9de08392036c3b4` |
+| 6 | `inductive` | [BudgetDimension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BudgetNamespaced.lean/declarations/budgetdimension.md) | 70 | `declaration-track:fce2791e92800b151f94e933b9d349fad2de65860c04d807f4c640a7f6f468a5` |
+| 7 | `def` | [BudgetDimension.exceeded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BudgetNamespaced.lean/declarations/budgetdimension-exceeded.md) | 80 | `declaration-track:91f9e139f1d7b38de1f4fc45bfdcc4b6a8e7bb2d3659098e632445084a07009b` |
+| 8 | `def` | [exceededDimensions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BudgetNamespaced.lean/declarations/exceededdimensions.md) | 109 | `declaration-track:93106aed4831a84c3899d7086381c627e680964fb07f2b842b6bee651bf6f6c5` |
+| 9 | `theorem` | [withinBudget_iff_no_exceeded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BudgetNamespaced.lean/declarations/withinbudget-iff-no-exceeded.md) | 116 | `result-track:3fb72151e365f0dc7027e6c8eb19ce72b24351e61307870d2c6d7073ea52ec61` |
+| 10 | `def` | [UsageMonotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BudgetNamespaced.lean/declarations/usagemonotone.md) | 172 | `declaration-track:7d11413812296d35a6150ecf092ba4cd76f63361a806c015d03be73d7660357d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

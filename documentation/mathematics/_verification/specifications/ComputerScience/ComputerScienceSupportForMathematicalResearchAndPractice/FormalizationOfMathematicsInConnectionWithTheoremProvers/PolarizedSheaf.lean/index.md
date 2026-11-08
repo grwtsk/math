@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PolarizedSheaf.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PolarizedSheaf.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PolarizedSheaf.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PolarizedSheaf.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PolarizedSection](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PolarizedSheaf.lean/declarations/polarizedsection.md) | 13 | `declaration-track:f783512db411315006879db5214812b1b09e4f0f545b36a4eadf8766a47d02fd` |
-| 2 | `structure` | [PolarizedTransport](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PolarizedSheaf.lean/declarations/polarizedtransport.md) | 18 | `declaration-track:1498f241af6cb82d56eda2a6b6ae23eed679a17214bbb51cd3b160e5129276d2` |
-| 3 | `def` | [PolarizedSection.transport](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PolarizedSheaf.lean/declarations/polarizedsection-transport.md) | 26 | `declaration-track:c8007e88dca1109266d48cdc0bdd52aba5500b706f8acdfe1ed9f53cc595a986` |
-| 4 | `theorem` | [PolarizedSection.transport_amplitude_positive](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PolarizedSheaf.lean/declarations/polarizedsection-transport-amplitude-positive.md) | 47 | `result-track:166872406171849f3d5fbb530972c88479b60054a30d931976390b877dfed8a7` |
+| 1 | `structure` | [PolarizedSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PolarizedSheaf.lean/declarations/polarizedsection.md) | 13 | `declaration-track:f783512db411315006879db5214812b1b09e4f0f545b36a4eadf8766a47d02fd` |
+| 2 | `structure` | [PolarizedTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PolarizedSheaf.lean/declarations/polarizedtransport.md) | 18 | `declaration-track:1498f241af6cb82d56eda2a6b6ae23eed679a17214bbb51cd3b160e5129276d2` |
+| 3 | `def` | [PolarizedSection.transport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PolarizedSheaf.lean/declarations/polarizedsection-transport.md) | 26 | `declaration-track:c8007e88dca1109266d48cdc0bdd52aba5500b706f8acdfe1ed9f53cc595a986` |
+| 4 | `theorem` | [PolarizedSection.transport_amplitude_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PolarizedSheaf.lean/declarations/polarizedsection-transport-amplitude-positive.md) | 47 | `result-track:166872406171849f3d5fbb530972c88479b60054a30d931976390b877dfed8a7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

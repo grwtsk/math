@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpEnoughInjectives.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpEnoughInjectives.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpEnoughInjectives.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpEnoughInjectives.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [enoughInjectives](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpEnoughInjectives.lean/declarations/enoughinjectives-source-edition-2.md) | 32 | `declaration-track:6efbd0ee3366582de31fb11b82127e4fc90af3cac468f4ccb3cf812cff9331dd` |
-| 2 | `instance` | [enoughInjectives](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpEnoughInjectives.lean/declarations/enoughinjectives.md) | 45 | `declaration-track:4880646ca6d39f8a8fcf14105ebc1f7eb232abb5ba036fef66e0ca43fe675595` |
+| 1 | `instance` | [enoughInjectives](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpEnoughInjectives.lean/declarations/enoughinjectives-source-edition-2.md) | 32 | `declaration-track:6efbd0ee3366582de31fb11b82127e4fc90af3cac468f4ccb3cf812cff9331dd` |
+| 2 | `instance` | [enoughInjectives](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpEnoughInjectives.lean/declarations/enoughinjectives.md) | 45 | `declaration-track:4880646ca6d39f8a8fcf14105ebc1f7eb232abb5ba036fef66e0ca43fe675595` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

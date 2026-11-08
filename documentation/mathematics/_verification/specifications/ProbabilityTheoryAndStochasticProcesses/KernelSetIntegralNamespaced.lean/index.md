@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/KernelSetIntegralNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/KernelSetIntegralNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/KernelSetIntegralNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/KernelSetIntegralNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [integral_integral_indicator](../../../../ProbabilityTheoryAndStochasticProcesses/KernelSetIntegralNamespaced.lean/declarations/integral-integral-indicator.md) | 30 | `result-track:2ab494d85e560b521a40b427aed8f54901cde312021d7063988db7a6f8e0a913` |
+| 1 | `lemma` | [integral_integral_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/KernelSetIntegralNamespaced.lean/declarations/integral-integral-indicator.md) | 30 | `result-track:2ab494d85e560b521a40b427aed8f54901cde312021d7063988db7a6f8e0a913` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

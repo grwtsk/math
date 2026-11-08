@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/WeightedSubsetBudget.lean/index.md) · [Full source](../../../../Combinatorics/WeightedSubsetBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.WeightedPairBudget`](../../../../Combinatorics/WeightedPairBudget.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Combinatorics.WeightedPairBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedPairBudget.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Algebra.BigOperators.Group.Finset.Basic` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,23 +59,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mass_mono](../../../../Combinatorics/WeightedSubsetBudget.lean/declarations/mass-mono.md) | 27 | `result-track:513ae1e82e45bc8aada2034522746cc0e87206c73bdf693fed92f61e452e98cf` |
-| 2 | `theorem` | [remaining_add_known](../../../../Combinatorics/WeightedSubsetBudget.lean/declarations/remaining-add-known.md) | 32 | `result-track:6cb1d2ba4663f7461b43e4e1b85facc19eddd8882766873323235965cb898745` |
-| 3 | `theorem` | [remaining_eq_sub](../../../../Combinatorics/WeightedSubsetBudget.lean/declarations/remaining-eq-sub.md) | 38 | `result-track:f0945b1cf730dd80bf329cc05937701fd2cfdc4d68a905e8e6c14d5c00f852d9` |
-| 4 | `theorem` | [lower_le_upper](../../../../Combinatorics/WeightedSubsetBudget.lean/declarations/lower-le-upper.md) | 45 | `result-track:9a5a89c635c884a9c5b29aafad44cd0ea9aa9dc25f38bdbc340528b9ef22a7ca` |
-| 5 | `theorem` | [remaining_le_budget](../../../../Combinatorics/WeightedSubsetBudget.lean/declarations/remaining-le-budget.md) | 51 | `result-track:a95fac0649dc4bfd7fc4971e11112506a2788b0c0a130d11fbd9a0d96fe9e44f` |
-| 6 | `theorem` | [lower_weights_le_mass](../../../../Combinatorics/WeightedSubsetBudget.lean/declarations/lower-weights-le-mass.md) | 59 | `result-track:ff90558f3675da419677de50b60c96df6e87a3a0559250aadf44cc917a8cb7e5` |
-| 7 | `theorem` | [known_add_pair_le_mass](../../../../Combinatorics/WeightedSubsetBudget.lean/declarations/known-add-pair-le-mass.md) | 64 | `result-track:bfba9be0c13b8032ac24652e853dd6a104ccddc5ce7010dc6de3b1340aa5408e` |
-| 8 | `theorem` | [weight_le_mass](../../../../Combinatorics/WeightedSubsetBudget.lean/declarations/weight-le-mass.md) | 75 | `result-track:e1509a749900ae4c584aa15391f9af10ed993a4effebfee1873b7ee1eebd0d8a` |
-| 9 | `theorem` | [eq_of_mass_eq](../../../../Combinatorics/WeightedSubsetBudget.lean/declarations/eq-of-mass-eq.md) | 81 | `result-track:3968518de1f7215336444cf75af595f3faa9293e2b781b97ff3061b80e8edfc7` |
-| 10 | `theorem` | [one_missing_fixed_point_fixture](../../../../Combinatorics/WeightedSubsetBudget.lean/declarations/one-missing-fixed-point-fixture.md) | 94 | `result-track:88fc5fa3f15ffce207d584f641873f96f7148d2c35995346383ffb0c02292f4d` |
-| 11 | `theorem` | [two_missing_exchanged_points_fixture](../../../../Combinatorics/WeightedSubsetBudget.lean/declarations/two-missing-exchanged-points-fixture.md) | 100 | `result-track:59ec45cdf99081250bae771742c257acdf57090920dc46bf47a64a3968a55c7f` |
-| 12 | `theorem` | [contaminated_known_set_fixture](../../../../Combinatorics/WeightedSubsetBudget.lean/declarations/contaminated-known-set-fixture.md) | 106 | `result-track:a8405a416db37d6798e6109c4c6ac393445c49d5b346a60f14c3b9c09319b2c9` |
-| 13 | `theorem` | [outside_known_set_fixture](../../../../Combinatorics/WeightedSubsetBudget.lean/declarations/outside-known-set-fixture.md) | 112 | `result-track:17149400fef4f03a84bb4bdb94dcb029b521f48765a52fa98fc6af7aa0e55c60` |
-| 14 | `theorem` | [overlapping_reports_fixture](../../../../Combinatorics/WeightedSubsetBudget.lean/declarations/overlapping-reports-fixture.md) | 119 | `result-track:140368d2d21792ba1a514a8d2d9df67185ee55dc534f63f366a3a5aa4f0da125` |
-| 15 | `theorem` | [zero_weight_exhaustion_fixture](../../../../Combinatorics/WeightedSubsetBudget.lean/declarations/zero-weight-exhaustion-fixture.md) | 124 | `result-track:8c39d1a65599f8d04f154026c2e03448485f67c8c229165e132e5114b4694b6d` |
-| 16 | `theorem` | [overclaimed_lower_fixture](../../../../Combinatorics/WeightedSubsetBudget.lean/declarations/overclaimed-lower-fixture.md) | 129 | `result-track:fd82afa830d25fffff2522763facc5a3b941d64537e5eebcc0fe8008bc03a747` |
-| 17 | `theorem` | [repeated_fixed_point_inconclusive_fixture](../../../../Combinatorics/WeightedSubsetBudget.lean/declarations/repeated-fixed-point-inconclusive-fixture.md) | 135 | `result-track:75ec0dde415906711d13d6c56438be23787c7c0525d3426327fe861061211cac` |
+| 1 | `theorem` | [mass_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/declarations/mass-mono.md) | 27 | `result-track:513ae1e82e45bc8aada2034522746cc0e87206c73bdf693fed92f61e452e98cf` |
+| 2 | `theorem` | [remaining_add_known](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/declarations/remaining-add-known.md) | 32 | `result-track:6cb1d2ba4663f7461b43e4e1b85facc19eddd8882766873323235965cb898745` |
+| 3 | `theorem` | [remaining_eq_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/declarations/remaining-eq-sub.md) | 38 | `result-track:f0945b1cf730dd80bf329cc05937701fd2cfdc4d68a905e8e6c14d5c00f852d9` |
+| 4 | `theorem` | [lower_le_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/declarations/lower-le-upper.md) | 45 | `result-track:9a5a89c635c884a9c5b29aafad44cd0ea9aa9dc25f38bdbc340528b9ef22a7ca` |
+| 5 | `theorem` | [remaining_le_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/declarations/remaining-le-budget.md) | 51 | `result-track:a95fac0649dc4bfd7fc4971e11112506a2788b0c0a130d11fbd9a0d96fe9e44f` |
+| 6 | `theorem` | [lower_weights_le_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/declarations/lower-weights-le-mass.md) | 59 | `result-track:ff90558f3675da419677de50b60c96df6e87a3a0559250aadf44cc917a8cb7e5` |
+| 7 | `theorem` | [known_add_pair_le_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/declarations/known-add-pair-le-mass.md) | 64 | `result-track:bfba9be0c13b8032ac24652e853dd6a104ccddc5ce7010dc6de3b1340aa5408e` |
+| 8 | `theorem` | [weight_le_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/declarations/weight-le-mass.md) | 75 | `result-track:e1509a749900ae4c584aa15391f9af10ed993a4effebfee1873b7ee1eebd0d8a` |
+| 9 | `theorem` | [eq_of_mass_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/declarations/eq-of-mass-eq.md) | 81 | `result-track:3968518de1f7215336444cf75af595f3faa9293e2b781b97ff3061b80e8edfc7` |
+| 10 | `theorem` | [one_missing_fixed_point_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/declarations/one-missing-fixed-point-fixture.md) | 94 | `result-track:88fc5fa3f15ffce207d584f641873f96f7148d2c35995346383ffb0c02292f4d` |
+| 11 | `theorem` | [two_missing_exchanged_points_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/declarations/two-missing-exchanged-points-fixture.md) | 100 | `result-track:59ec45cdf99081250bae771742c257acdf57090920dc46bf47a64a3968a55c7f` |
+| 12 | `theorem` | [contaminated_known_set_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/declarations/contaminated-known-set-fixture.md) | 106 | `result-track:a8405a416db37d6798e6109c4c6ac393445c49d5b346a60f14c3b9c09319b2c9` |
+| 13 | `theorem` | [outside_known_set_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/declarations/outside-known-set-fixture.md) | 112 | `result-track:17149400fef4f03a84bb4bdb94dcb029b521f48765a52fa98fc6af7aa0e55c60` |
+| 14 | `theorem` | [overlapping_reports_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/declarations/overlapping-reports-fixture.md) | 119 | `result-track:140368d2d21792ba1a514a8d2d9df67185ee55dc534f63f366a3a5aa4f0da125` |
+| 15 | `theorem` | [zero_weight_exhaustion_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/declarations/zero-weight-exhaustion-fixture.md) | 124 | `result-track:8c39d1a65599f8d04f154026c2e03448485f67c8c229165e132e5114b4694b6d` |
+| 16 | `theorem` | [overclaimed_lower_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/declarations/overclaimed-lower-fixture.md) | 129 | `result-track:fd82afa830d25fffff2522763facc5a3b941d64537e5eebcc0fe8008bc03a747` |
+| 17 | `theorem` | [repeated_fixed_point_inconclusive_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/declarations/repeated-fixed-point-inconclusive-fixture.md) | 135 | `result-track:75ec0dde415906711d13d6c56438be23787c7c0525d3426327fe861061211cac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

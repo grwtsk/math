@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamingSutureNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamingSutureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamingSutureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamingSutureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [NamingSuture](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamingSutureNamespaced.lean/declarations/namingsuture.md) | 17 | `declaration-track:43dcd78fc3f5ec36c7f9bf8b282091cfb21184f3772f78a2e303aea96a47cdea` |
-| 2 | `def` | [NamingSuture.acceptedName](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamingSutureNamespaced.lean/declarations/namingsuture-acceptedname.md) | 26 | `declaration-track:fd6fdd3785ac24ce6e5a289b3278b2a435742c7c6ff2be90889b3b6318625bb0` |
-| 3 | `theorem` | [model_agreement_does_not_change_element_identity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamingSutureNamespaced.lean/declarations/model-agreement-does-not-change-element-identity.md) | 29 | `result-track:406ff64a327a7559922ea7dd42a5ac70ea4093c91ec8e46cbff429d0c3437c5b` |
-| 4 | `theorem` | [naming_suture_does_not_imply_concept_identity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamingSutureNamespaced.lean/declarations/naming-suture-does-not-imply-concept-identity.md) | 32 | `result-track:119c6a3d07ca462890117cf9759c539b8fcb4e6af9b9b4e4836647b88c671a3b` |
-| 5 | `theorem` | [naming_suture_does_not_imply_theorem_authority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamingSutureNamespaced.lean/declarations/naming-suture-does-not-imply-theorem-authority.md) | 35 | `result-track:6dd131aa1c1bc5e3610dcba3c5969a6a7076df8080b31c003b7ec124418f5194` |
+| 1 | `structure` | [NamingSuture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamingSutureNamespaced.lean/declarations/namingsuture.md) | 17 | `declaration-track:43dcd78fc3f5ec36c7f9bf8b282091cfb21184f3772f78a2e303aea96a47cdea` |
+| 2 | `def` | [NamingSuture.acceptedName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamingSutureNamespaced.lean/declarations/namingsuture-acceptedname.md) | 26 | `declaration-track:fd6fdd3785ac24ce6e5a289b3278b2a435742c7c6ff2be90889b3b6318625bb0` |
+| 3 | `theorem` | [model_agreement_does_not_change_element_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamingSutureNamespaced.lean/declarations/model-agreement-does-not-change-element-identity.md) | 29 | `result-track:406ff64a327a7559922ea7dd42a5ac70ea4093c91ec8e46cbff429d0c3437c5b` |
+| 4 | `theorem` | [naming_suture_does_not_imply_concept_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamingSutureNamespaced.lean/declarations/naming-suture-does-not-imply-concept-identity.md) | 32 | `result-track:119c6a3d07ca462890117cf9759c539b8fcb4e6af9b9b4e4836647b88c671a3b` |
+| 5 | `theorem` | [naming_suture_does_not_imply_theorem_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamingSutureNamespaced.lean/declarations/naming-suture-does-not-imply-theorem-authority.md) | 35 | `result-track:6dd131aa1c1bc5e3610dcba3c5969a6a7076df8080b31c003b7ec124418f5194` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

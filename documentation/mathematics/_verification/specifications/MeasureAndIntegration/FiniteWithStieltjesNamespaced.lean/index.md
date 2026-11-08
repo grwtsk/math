@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FiniteWithStieltjesNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FiniteWithStieltjesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteWithStieltjesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteWithStieltjesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_finite_bounds_with_proved_stieltjes](../../../../MeasureAndIntegration/FiniteWithStieltjesNamespaced.lean/declarations/actual-finite-bounds-with-proved-stieltjes.md) | 27 | `result-track:3ec632bb7cd6a43d9960bb716a96e91199186aaf30498a6661b8f7f9b1c1bec1` |
+| 1 | `theorem` | [actual_finite_bounds_with_proved_stieltjes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteWithStieltjesNamespaced.lean/declarations/actual-finite-bounds-with-proved-stieltjes.md) | 27 | `result-track:3ec632bb7cd6a43d9960bb716a96e91199186aaf30498a6661b8f7f9b1c1bec1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

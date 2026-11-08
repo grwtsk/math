@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedIncidenceSingleton](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/declarations/certifiedincidencesingleton.md) | 34 | `declaration-track:14f75a0fa9c79c7192c1d46e213700d165afa0816cd2614ee95fbe62cf02a898` |
-| 2 | `def` | [code](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/declarations/code.md) | 53 | `declaration-track:28c4de1700bb6d495c8c18296fe5cc0524ebd62703058e35f4e0163990f1ed1c` |
-| 3 | `theorem` | [code_fixed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/declarations/code-fixed.md) | 57 | `result-track:8c8e4636c0f438b1f4844d9dbd4fb8409f3d935e5e683325cc613b9a50c5ae0a` |
-| 4 | `def` | [BooleanAdjacent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/declarations/booleanadjacent.md) | 65 | `declaration-track:32b13a51a1bca84e3a59cb4448e0685a845bca37e1c5549bb6ca0bfff27c6b72` |
-| 5 | `inductive` | [CertifiedIncidenceWalk](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/declarations/certifiedincidencewalk.md) | 74 | `declaration-track:629ce9eee205c493a5f69da0cb7ce0c8c7ebb27a0369cdd224449cb7ee084844` |
-| 6 | `structure` | [IncidenceAnchorNetwork](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/declarations/incidenceanchornetwork.md) | 96 | `declaration-track:e11103ccc43a0e8f7cec901ede21fabbef7123be7c7e7b6b3585bc0497e86fd5` |
-| 7 | `structure` | [CertifiedIncidenceMidpointElement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/declarations/certifiedincidencemidpointelement.md) | 116 | `declaration-track:f6d4832152949c142565fcc2a0c63c6a1469aaefa03b598ba45e1fc20ee69628` |
-| 8 | `structure` | [CertifiedMidpointRealizationTower](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/declarations/certifiedmidpointrealizationtower.md) | 134 | `declaration-track:d1603cd44b6af09814213f72a1e31b513b35a25d477566f98897f546be2a4ce5` |
+| 1 | `structure` | [CertifiedIncidenceSingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/declarations/certifiedincidencesingleton.md) | 34 | `declaration-track:14f75a0fa9c79c7192c1d46e213700d165afa0816cd2614ee95fbe62cf02a898` |
+| 2 | `def` | [code](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/declarations/code.md) | 53 | `declaration-track:28c4de1700bb6d495c8c18296fe5cc0524ebd62703058e35f4e0163990f1ed1c` |
+| 3 | `theorem` | [code_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/declarations/code-fixed.md) | 57 | `result-track:8c8e4636c0f438b1f4844d9dbd4fb8409f3d935e5e683325cc613b9a50c5ae0a` |
+| 4 | `def` | [BooleanAdjacent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/declarations/booleanadjacent.md) | 65 | `declaration-track:32b13a51a1bca84e3a59cb4448e0685a845bca37e1c5549bb6ca0bfff27c6b72` |
+| 5 | `inductive` | [CertifiedIncidenceWalk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/declarations/certifiedincidencewalk.md) | 74 | `declaration-track:629ce9eee205c493a5f69da0cb7ce0c8c7ebb27a0369cdd224449cb7ee084844` |
+| 6 | `structure` | [IncidenceAnchorNetwork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/declarations/incidenceanchornetwork.md) | 96 | `declaration-track:e11103ccc43a0e8f7cec901ede21fabbef7123be7c7e7b6b3585bc0497e86fd5` |
+| 7 | `structure` | [CertifiedIncidenceMidpointElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/declarations/certifiedincidencemidpointelement.md) | 116 | `declaration-track:f6d4832152949c142565fcc2a0c63c6a1469aaefa03b598ba45e1fc20ee69628` |
+| 8 | `structure` | [CertifiedMidpointRealizationTower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetworkNamespaced.lean/declarations/certifiedmidpointrealizationtower.md) | 134 | `declaration-track:d1603cd44b6af09814213f72a1e31b513b35a25d477566f98897f546be2a4ce5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

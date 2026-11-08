@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactSourceProfileAtTheSupportEdgeEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactSourceProfileAtTheSupportEdgeEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactSourceProfileAtTheSupportEdgeEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactSourceProfileAtTheSupportEdgeEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [edgeFactor](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactSourceProfileAtTheSupportEdgeEdition1.lean/declarations/edgefactor.md) | 25 | `declaration-track:cd0f7aa38c29c3b4a013c40f663db24cf748b5bc0fd4642fd4e356c16beff939` |
-| 2 | `theorem` | [exact_source_edge_factorization](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactSourceProfileAtTheSupportEdgeEdition1.lean/declarations/exact-source-edge-factorization.md) | 29 | `result-track:7df7bc9004438dcbfbb6fc096c62bf24a37e3be1acdd78cce77ce34cb7523732` |
-| 3 | `theorem` | [complete_edge_factor_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactSourceProfileAtTheSupportEdgeEdition1.lean/declarations/complete-edge-factor-lower.md) | 36 | `result-track:e309690232dac465f0084c0ef28b2731b07e1c7586f700837222ee198cf045f9` |
-| 4 | `theorem` | [source_normalization_le_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactSourceProfileAtTheSupportEdgeEdition1.lean/declarations/source-normalization-le-one.md) | 53 | `result-track:e56875b6dcb67955e1c9236f75a0e51550513515b00514927463fb81014c4f62` |
-| 5 | `theorem` | [actual_source_edge_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactSourceProfileAtTheSupportEdgeEdition1.lean/declarations/actual-source-edge-lower.md) | 67 | `result-track:d71fd913b5fd7d8aadc42499853c712ebaa76a64cd61d08e5484c90aeed0e64f` |
-| 6 | `theorem` | [actual_normalized_edge_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactSourceProfileAtTheSupportEdgeEdition1.lean/declarations/actual-normalized-edge-lower.md) | 77 | `result-track:ef967d7a54338960d9b9b2d4c045768c81b1eda97ed3466b8e052a43c2b22f46` |
+| 1 | `def` | [edgeFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactSourceProfileAtTheSupportEdgeEdition1.lean/declarations/edgefactor.md) | 25 | `declaration-track:cd0f7aa38c29c3b4a013c40f663db24cf748b5bc0fd4642fd4e356c16beff939` |
+| 2 | `theorem` | [exact_source_edge_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactSourceProfileAtTheSupportEdgeEdition1.lean/declarations/exact-source-edge-factorization.md) | 29 | `result-track:7df7bc9004438dcbfbb6fc096c62bf24a37e3be1acdd78cce77ce34cb7523732` |
+| 3 | `theorem` | [complete_edge_factor_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactSourceProfileAtTheSupportEdgeEdition1.lean/declarations/complete-edge-factor-lower.md) | 36 | `result-track:e309690232dac465f0084c0ef28b2731b07e1c7586f700837222ee198cf045f9` |
+| 4 | `theorem` | [source_normalization_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactSourceProfileAtTheSupportEdgeEdition1.lean/declarations/source-normalization-le-one.md) | 53 | `result-track:e56875b6dcb67955e1c9236f75a0e51550513515b00514927463fb81014c4f62` |
+| 5 | `theorem` | [actual_source_edge_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactSourceProfileAtTheSupportEdgeEdition1.lean/declarations/actual-source-edge-lower.md) | 67 | `result-track:d71fd913b5fd7d8aadc42499853c712ebaa76a64cd61d08e5484c90aeed0e64f` |
+| 6 | `theorem` | [actual_normalized_edge_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactSourceProfileAtTheSupportEdgeEdition1.lean/declarations/actual-normalized-edge-lower.md) | 77 | `result-track:ef967d7a54338960d9b9b2d4c045768c81b1eda97ed3466b8e052a43c2b22f46` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

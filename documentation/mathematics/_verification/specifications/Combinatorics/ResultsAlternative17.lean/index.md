@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ResultsAlternative17.lean/index.md) · [Full source](../../../../Combinatorics/ResultsAlternative17.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResultsAlternative17.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResultsAlternative17.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PolyHierarchy](../../../../Combinatorics/ResultsAlternative17.lean/declarations/polyhierarchy.md) | 23 | `declaration-track:79cb40d18adec03f6189e644ac084f76ea1fef72053d7826e45862753c07e6ce` |
-| 2 | `inductive` | [ProposalAuthority](../../../../Combinatorics/ResultsAlternative17.lean/declarations/proposalauthority.md) | 47 | `declaration-track:919afa1af2aa2a207b6fb6817493cc0b5db564a9bcd55df99d625a8297283d2d` |
-| 3 | `theorem` | [proposal_is_not_fact_authority](../../../../Combinatorics/ResultsAlternative17.lean/declarations/proposal-is-not-fact-authority.md) | 54 | `result-track:0669d07cd4d3d3c73c4d34e090f5eb9551096cf512ca8151213717605aa8fcc8` |
+| 1 | `structure` | [PolyHierarchy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResultsAlternative17.lean/declarations/polyhierarchy.md) | 23 | `declaration-track:79cb40d18adec03f6189e644ac084f76ea1fef72053d7826e45862753c07e6ce` |
+| 2 | `inductive` | [ProposalAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResultsAlternative17.lean/declarations/proposalauthority.md) | 47 | `declaration-track:919afa1af2aa2a207b6fb6817493cc0b5db564a9bcd55df99d625a8297283d2d` |
+| 3 | `theorem` | [proposal_is_not_fact_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResultsAlternative17.lean/declarations/proposal-is-not-fact-authority.md) | 54 | `result-track:0669d07cd4d3d3c73c4d34e090f5eb9551096cf512ca8151213717605aa8fcc8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

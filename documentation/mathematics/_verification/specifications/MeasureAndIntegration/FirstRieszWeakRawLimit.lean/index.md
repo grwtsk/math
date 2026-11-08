@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FirstRieszWeakRawLimit.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FirstRieszWeakRawLimit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FirstRieszWeakRawLimit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FirstRieszWeakRawLimit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.ClassicalRieszNormalization`](../../../../NumberTheory/ClassicalRieszNormalization.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.NormalizedRieszFiniteEvaluation`](../../../../NumberTheory/NormalizedRieszFiniteEvaluation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.ClassicalRieszNormalization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassicalRieszNormalization.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.NormalizedRieszFiniteEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedRieszFiniteEvaluation.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rawClassicalHead](../../../../MeasureAndIntegration/FirstRieszWeakRawLimit.lean/declarations/rawclassicalhead.md) | 21 | `declaration-track:fdd374a4bed753904b1caa0439e9b131f8378588543dada6a8072099fe995de9` |
-| 2 | `def` | [finiteClassicalPrimitive](../../../../MeasureAndIntegration/FirstRieszWeakRawLimit.lean/declarations/finiteclassicalprimitive.md) | 24 | `declaration-track:af937d50d2220a748726797d64c9415b653c10b8fa89befe69ee386f5f4a3bf7` |
-| 3 | `theorem` | [hasDerivAt_finiteClassicalPrimitive](../../../../MeasureAndIntegration/FirstRieszWeakRawLimit.lean/declarations/hasderivat-finiteclassicalprimitive.md) | 27 | `result-track:0ab6dd63236950507909b4b233c00b9185eb09327c852956a723a66df0a5d862` |
-| 4 | `theorem` | [continuousAt_rawClassicalHead](../../../../MeasureAndIntegration/FirstRieszWeakRawLimit.lean/declarations/continuousat-rawclassicalhead.md) | 35 | `result-track:ba05718c2a4a95387acc4afce95bc071989c651d384b0a884c9a277bf5dc360c` |
-| 5 | `theorem` | [integral_rawClassicalHead](../../../../MeasureAndIntegration/FirstRieszWeakRawLimit.lean/declarations/integral-rawclassicalhead.md) | 42 | `result-track:b4cb979ad3ad83afc202e6e85896086e01b632a6e6fb14814b6893b90393d11f` |
-| 6 | `theorem` | [norm_primitive_error_le](../../../../MeasureAndIntegration/FirstRieszWeakRawLimit.lean/declarations/norm-primitive-error-le.md) | 50 | `result-track:a00875153f78147f4fb4c49732d154aa4a9404359d65bb6a87203b0cfc23d44b` |
-| 7 | `theorem` | [norm_integral_error_le](../../../../MeasureAndIntegration/FirstRieszWeakRawLimit.lean/declarations/norm-integral-error-le.md) | 61 | `result-track:ad1b20327c51d3aba652905909820efe3121a0ce314ae898cf454d6138952dfc` |
-| 8 | `theorem` | [integral_rawClassicalHead_tendsto_source](../../../../MeasureAndIntegration/FirstRieszWeakRawLimit.lean/declarations/integral-rawclassicalhead-tendsto-source.md) | 74 | `result-track:310253ca73253e3240c4a0160e2fa8c5cd7b3859f3d9786ae9d9c6880d382cea` |
+| 1 | `def` | [rawClassicalHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FirstRieszWeakRawLimit.lean/declarations/rawclassicalhead.md) | 21 | `declaration-track:fdd374a4bed753904b1caa0439e9b131f8378588543dada6a8072099fe995de9` |
+| 2 | `def` | [finiteClassicalPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FirstRieszWeakRawLimit.lean/declarations/finiteclassicalprimitive.md) | 24 | `declaration-track:af937d50d2220a748726797d64c9415b653c10b8fa89befe69ee386f5f4a3bf7` |
+| 3 | `theorem` | [hasDerivAt_finiteClassicalPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FirstRieszWeakRawLimit.lean/declarations/hasderivat-finiteclassicalprimitive.md) | 27 | `result-track:0ab6dd63236950507909b4b233c00b9185eb09327c852956a723a66df0a5d862` |
+| 4 | `theorem` | [continuousAt_rawClassicalHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FirstRieszWeakRawLimit.lean/declarations/continuousat-rawclassicalhead.md) | 35 | `result-track:ba05718c2a4a95387acc4afce95bc071989c651d384b0a884c9a277bf5dc360c` |
+| 5 | `theorem` | [integral_rawClassicalHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FirstRieszWeakRawLimit.lean/declarations/integral-rawclassicalhead.md) | 42 | `result-track:b4cb979ad3ad83afc202e6e85896086e01b632a6e6fb14814b6893b90393d11f` |
+| 6 | `theorem` | [norm_primitive_error_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FirstRieszWeakRawLimit.lean/declarations/norm-primitive-error-le.md) | 50 | `result-track:a00875153f78147f4fb4c49732d154aa4a9404359d65bb6a87203b0cfc23d44b` |
+| 7 | `theorem` | [norm_integral_error_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FirstRieszWeakRawLimit.lean/declarations/norm-integral-error-le.md) | 61 | `result-track:ad1b20327c51d3aba652905909820efe3121a0ce314ae898cf454d6138952dfc` |
+| 8 | `theorem` | [integral_rawClassicalHead_tendsto_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FirstRieszWeakRawLimit.lean/declarations/integral-rawclassicalhead-tendsto-source.md) | 74 | `result-track:310253ca73253e3240c4a0160e2fa8c5cd7b3859f3d9786ae9d9c6880d382cea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [OpenConjectureAuthority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/declarations/openconjectureauthority.md) | 25 | `declaration-track:e9ba5aa2706b15afb5d4c631ac7c68829b0a025c552c23f8ebba1e29f4d8ff17` |
-| 2 | `structure` | [OpenConjectureElement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/declarations/openconjectureelement.md) | 30 | `declaration-track:73651de99f3200908aa214790c4d591b96c14adb33e4a1c5624f45e84c911147` |
-| 3 | `structure` | [LeanTheoremElement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/declarations/leantheoremelement.md) | 44 | `declaration-track:2458a0f8209d93e53fc3d21d692fed8cbaedf79eca6be9f61c9fa2117665d972` |
-| 4 | `structure` | [ExtractedOpenConjectureEnvelope](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/declarations/extractedopenconjectureenvelope.md) | 57 | `declaration-track:09b83f1f4f043c8020030e4e15b644ae832b8bb02680961f18cac7a91a34fd07` |
-| 5 | `inductive` | [OpenEvidenceProducer](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/declarations/openevidenceproducer.md) | 70 | `declaration-track:1d252789db9035516c339a0805a60f3236499aadaed08747c1622dadf3ac6d2a` |
-| 6 | `structure` | [OpenConjectureEvidence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/declarations/openconjectureevidence.md) | 82 | `declaration-track:9756a7eefff9a22b7b65590ed890df07b9c611e561dc342b99b37de2e8a32322` |
-| 7 | `inductive` | [OpenConjectureEvidenceHistory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/declarations/openconjectureevidencehistory.md) | 100 | `declaration-track:c2ea356a516187d251a062e6ef083833e49748b5196e5436bc3f071fde65fd03` |
-| 8 | `structure` | [KernelCertifiedTheoremElement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/declarations/kernelcertifiedtheoremelement.md) | 121 | `declaration-track:7e0716edc2af73539cbb3954d087736be9fb1993aa541e8f6aff58b297672db7` |
+| 1 | `inductive` | [OpenConjectureAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/declarations/openconjectureauthority.md) | 25 | `declaration-track:e9ba5aa2706b15afb5d4c631ac7c68829b0a025c552c23f8ebba1e29f4d8ff17` |
+| 2 | `structure` | [OpenConjectureElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/declarations/openconjectureelement.md) | 30 | `declaration-track:73651de99f3200908aa214790c4d591b96c14adb33e4a1c5624f45e84c911147` |
+| 3 | `structure` | [LeanTheoremElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/declarations/leantheoremelement.md) | 44 | `declaration-track:2458a0f8209d93e53fc3d21d692fed8cbaedf79eca6be9f61c9fa2117665d972` |
+| 4 | `structure` | [ExtractedOpenConjectureEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/declarations/extractedopenconjectureenvelope.md) | 57 | `declaration-track:09b83f1f4f043c8020030e4e15b644ae832b8bb02680961f18cac7a91a34fd07` |
+| 5 | `inductive` | [OpenEvidenceProducer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/declarations/openevidenceproducer.md) | 70 | `declaration-track:1d252789db9035516c339a0805a60f3236499aadaed08747c1622dadf3ac6d2a` |
+| 6 | `structure` | [OpenConjectureEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/declarations/openconjectureevidence.md) | 82 | `declaration-track:9756a7eefff9a22b7b65590ed890df07b9c611e561dc342b99b37de2e8a32322` |
+| 7 | `inductive` | [OpenConjectureEvidenceHistory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/declarations/openconjectureevidencehistory.md) | 100 | `declaration-track:c2ea356a516187d251a062e6ef083833e49748b5196e5436bc3f071fde65fd03` |
+| 8 | `structure` | [KernelCertifiedTheoremElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpenElementNamespaced.lean/declarations/kernelcertifiedtheoremelement.md) | 121 | `declaration-track:7e0716edc2af73539cbb3954d087736be9fb1993aa541e8f6aff58b297672db7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

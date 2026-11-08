@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.PortFiberEvaluationTopology`](../../../../../GeneralTopology/PortFiberEvaluationTopology.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.AlgebraicGeometry.AnalyticAffineGluing`](../../../../../GeneralTopology/AnalyticAffineGluing.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberEvaluationTopology`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberEvaluationTopology.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.AnalyticAffineGluing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineGluing.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AddedIndex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/declarations/addedindex.md) | 21 | `declaration-track:67f9293cf14465475eda2d88cbf299c1b320e0d7cfdb4094cdbec470aea21ab6` |
-| 2 | `def` | [AddedClaim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/declarations/addedclaim.md) | 29 | `declaration-track:f8fb012da02e255363d6142ba7c6759772c9a0c7b5881282a79eb878ff03cfc4` |
-| 3 | `theorem` | [addedClaim_proof](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/declarations/addedclaim-proof.md) | 49 | `result-track:8a49de21e01855f21647f3467950e848cad23a6e0fa46808fc3ccd7086117583` |
-| 4 | `def` | [portfolio](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/declarations/portfolio.md) | 65 | `declaration-track:0ba5fffb2e3cce5286d7aef3257a399874b600c075295dc3f2923756f3b81de8` |
-| 5 | `def` | [architecture](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/declarations/architecture.md) | 69 | `declaration-track:738e2cbf35863c21a358e20e5ff383f8f624c691434d0adf6b9ed57700e7d684` |
-| 6 | `theorem` | [original_branch_unchanged](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/declarations/original-branch-unchanged.md) | 74 | `result-track:b5ca0298189891d874ee8d95d220f2cb103c0a2906f83f8006e2bbf6cb252252` |
-| 7 | `theorem` | [new_branch_proved](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/declarations/new-branch-proved.md) | 83 | `result-track:15a3675f10bfe3e04fb44d67cb06d3f5e0cfe9560a637fb68b13cc9a439cd84a` |
-| 8 | `theorem` | [target_unchanged](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/declarations/target-unchanged.md) | 89 | `result-track:bd3b09b15696e0d5d1f548da81b5fcbdefe14d5c48ab7fb598c0578d5231d71e` |
-| 9 | `theorem` | [retarget_preserves_new](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/declarations/retarget-preserves-new.md) | 95 | `result-track:f583e0b53ba648d08ce7b4bfa1d3df91f7648e949e06019a2e0c6d26c92a1099` |
+| 1 | `inductive` | [AddedIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/declarations/addedindex.md) | 21 | `declaration-track:67f9293cf14465475eda2d88cbf299c1b320e0d7cfdb4094cdbec470aea21ab6` |
+| 2 | `def` | [AddedClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/declarations/addedclaim.md) | 29 | `declaration-track:f8fb012da02e255363d6142ba7c6759772c9a0c7b5881282a79eb878ff03cfc4` |
+| 3 | `theorem` | [addedClaim_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/declarations/addedclaim-proof.md) | 49 | `result-track:8a49de21e01855f21647f3467950e848cad23a6e0fa46808fc3ccd7086117583` |
+| 4 | `def` | [portfolio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/declarations/portfolio.md) | 65 | `declaration-track:0ba5fffb2e3cce5286d7aef3257a399874b600c075295dc3f2923756f3b81de8` |
+| 5 | `def` | [architecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/declarations/architecture.md) | 69 | `declaration-track:738e2cbf35863c21a358e20e5ff383f8f624c691434d0adf6b9ed57700e7d684` |
+| 6 | `theorem` | [original_branch_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/declarations/original-branch-unchanged.md) | 74 | `result-track:b5ca0298189891d874ee8d95d220f2cb103c0a2906f83f8006e2bbf6cb252252` |
+| 7 | `theorem` | [new_branch_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/declarations/new-branch-proved.md) | 83 | `result-track:15a3675f10bfe3e04fb44d67cb06d3f5e0cfe9560a637fb68b13cc9a439cd84a` |
+| 8 | `theorem` | [target_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/declarations/target-unchanged.md) | 89 | `result-track:bd3b09b15696e0d5d1f548da81b5fcbdefe14d5c48ab7fb598c0578d5231d71e` |
+| 9 | `theorem` | [retarget_preserves_new](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/declarations/retarget-preserves-new.md) | 95 | `result-track:f583e0b53ba648d08ce7b4bfa1d3df91f7648e949e06019a2e0c6d26c92a1099` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

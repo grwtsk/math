@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOffDiagonalReductionControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOffDiagonalReductionControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOffDiagonalReductionControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOffDiagonalReductionControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerOffDiagonalReduction`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOffDiagonalReduction.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerOffDiagonalReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOffDiagonalReduction.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exactFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOffDiagonalReductionControls.lean/declarations/exactfrontier.md) | 13 | `declaration-track:dc6af194e3ff16ea07008fb7eac4d5ae7d6e9186b6ecc55c945322a3de4e6d2b` |
-| 2 | `theorem` | [diagonalTargetClosed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOffDiagonalReductionControls.lean/declarations/diagonaltargetclosed.md) | 27 | `result-track:a90e20f221e47e2ef4424828496c87a2cfa49dfe298a6bfb4f93fe9776d64e26` |
-| 3 | `theorem` | [signedOffDiagonalSuffices](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOffDiagonalReductionControls.lean/declarations/signedoffdiagonalsuffices.md) | 45 | `result-track:dcd94cfe861409779744849d840841e682d592b5bbe23d75f3313816262b632d` |
-| 4 | `def` | [remainingArithmeticFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOffDiagonalReductionControls.lean/declarations/remainingarithmeticfrontier.md) | 50 | `declaration-track:55309e99f008cbd3d97bd35cd2b9962edae1fe68a8240b16892c017fc944c999` |
+| 1 | `def` | [exactFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOffDiagonalReductionControls.lean/declarations/exactfrontier.md) | 13 | `declaration-track:dc6af194e3ff16ea07008fb7eac4d5ae7d6e9186b6ecc55c945322a3de4e6d2b` |
+| 2 | `theorem` | [diagonalTargetClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOffDiagonalReductionControls.lean/declarations/diagonaltargetclosed.md) | 27 | `result-track:a90e20f221e47e2ef4424828496c87a2cfa49dfe298a6bfb4f93fe9776d64e26` |
+| 3 | `theorem` | [signedOffDiagonalSuffices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOffDiagonalReductionControls.lean/declarations/signedoffdiagonalsuffices.md) | 45 | `result-track:dcd94cfe861409779744849d840841e682d592b5bbe23d75f3313816262b632d` |
+| 4 | `def` | [remainingArithmeticFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOffDiagonalReductionControls.lean/declarations/remainingarithmeticfrontier.md) | 50 | `declaration-track:55309e99f008cbd3d97bd35cd2b9962edae1fe68a8240b16892c017fc944c999` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

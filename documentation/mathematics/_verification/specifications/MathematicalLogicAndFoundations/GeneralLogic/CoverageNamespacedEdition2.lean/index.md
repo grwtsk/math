@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [InvariantTheory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/declarations/invarianttheory.md) | 22 | `declaration-track:864cdc5cfe021db5a0a31a56aa9fa7bb50978000a24f9a74f8f16d0092d99c6e` |
-| 2 | `structure` | [SourceSpecialization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/declarations/sourcespecialization.md) | 29 | `declaration-track:41b248e368edddaa1bc2091a198cbb492d78cdc18b076ead25494037e4e9c1e3` |
-| 3 | `def` | [quadrantCoordinate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/declarations/quadrantcoordinate.md) | 34 | `declaration-track:49e765f07bbb796774a032ade601d12394f44c450f3479d7a37142470f958b90` |
-| 4 | `def` | [fourModePresentation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/declarations/fourmodepresentation.md) | 49 | `declaration-track:66449162314ac80ce8fc4e000a59ffb0ba214887129cbecad2b4d052f173fd48` |
-| 5 | `theorem` | [four_mode_coverage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/declarations/four-mode-coverage.md) | 78 | `result-track:2bf9dbb1214aead2f01c11a1a19f95ac35e4e71cab870aef9366a277ba981625` |
-| 6 | `theorem` | [source_relative_scalar_exists_unique](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/declarations/source-relative-scalar-exists-unique.md) | 101 | `result-track:a5dc38e5d3cc8875d688f12235b80f8caa07d45cfae844baad456f586a1cde69` |
-| 7 | `def` | [validityRestrictedEquiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/declarations/validityrestrictedequiv.md) | 118 | `declaration-track:56d39c90d1738f8e98c0716b43b1009522adc06758248709955e9387ae414ded` |
-| 8 | `def` | [TransformationCardinalityBoundary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/declarations/transformationcardinalityboundary.md) | 151 | `declaration-track:98b264b03d6cdd28aaaa7f340b8960369c0effe47e93a9d654a04236c49d13f6` |
+| 1 | `structure` | [InvariantTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/declarations/invarianttheory.md) | 22 | `declaration-track:864cdc5cfe021db5a0a31a56aa9fa7bb50978000a24f9a74f8f16d0092d99c6e` |
+| 2 | `structure` | [SourceSpecialization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/declarations/sourcespecialization.md) | 29 | `declaration-track:41b248e368edddaa1bc2091a198cbb492d78cdc18b076ead25494037e4e9c1e3` |
+| 3 | `def` | [quadrantCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/declarations/quadrantcoordinate.md) | 34 | `declaration-track:49e765f07bbb796774a032ade601d12394f44c450f3479d7a37142470f958b90` |
+| 4 | `def` | [fourModePresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/declarations/fourmodepresentation.md) | 49 | `declaration-track:66449162314ac80ce8fc4e000a59ffb0ba214887129cbecad2b4d052f173fd48` |
+| 5 | `theorem` | [four_mode_coverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/declarations/four-mode-coverage.md) | 78 | `result-track:2bf9dbb1214aead2f01c11a1a19f95ac35e4e71cab870aef9366a277ba981625` |
+| 6 | `theorem` | [source_relative_scalar_exists_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/declarations/source-relative-scalar-exists-unique.md) | 101 | `result-track:a5dc38e5d3cc8875d688f12235b80f8caa07d45cfae844baad456f586a1cde69` |
+| 7 | `def` | [validityRestrictedEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/declarations/validityrestrictedequiv.md) | 118 | `declaration-track:56d39c90d1738f8e98c0716b43b1009522adc06758248709955e9387ae414ded` |
+| 8 | `def` | [TransformationCardinalityBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageNamespacedEdition2.lean/declarations/transformationcardinalityboundary.md) | 151 | `declaration-track:98b264b03d6cdd28aaaa7f340b8960369c0effe47e93a9d654a04236c49d13f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

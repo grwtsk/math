@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/index.md) · [Full source](../../../../NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Ico_map_valMinAbs_natAbs_eq_Ico_map_id](../../../../NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/ico-map-valminabs-natabs-eq-ico-map-id.md) | 40 | `result-track:55776a17f8771db454f18b6132dd8c7951cd5d776108c0204385f6b0848de311` |
-| 2 | `theorem` | [gauss_lemma_aux₁](../../../../NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/gauss-lemma-aux.md) | 70 | `result-track:0d204916d038e300afebc05409ffc2df1d23f26b426ae08ab1f6163f090ef1d7` |
-| 3 | `theorem` | [gauss_lemma_aux](../../../../NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/gauss-lemma-aux-source-edition-2.md) | 93 | `result-track:65815da25c7665d35151bb6bed39662566976828fb05a0ad931283acbec816f3` |
-| 4 | `theorem` | [gauss_lemma](../../../../NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/gauss-lemma.md) | 103 | `result-track:b09ebe7ec94fa6e9087088bfbd9e2f19f54605b9bf6a4340dbcec16c0b716877` |
-| 5 | `theorem` | [eisenstein_lemma_aux₁](../../../../NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/eisenstein-lemma-aux-source-edition-2.md) | 113 | `result-track:fed8efd33b3358e7885fd2eeba151ec71570b6a87208cd1be6f4cc8b9c08c006` |
-| 6 | `theorem` | [eisenstein_lemma_aux](../../../../NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/eisenstein-lemma-aux.md) | 141 | `result-track:d505c7bf1e64c532523c528e5df70437d6691efe63014aa7b7a6909a6ecdbc25` |
-| 7 | `theorem` | [div_eq_filter_card](../../../../NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/div-eq-filter-card.md) | 151 | `result-track:a8a8a89dff6a659dce3f3327ee5a626ebdfb17dca55c9846fcf89db01e991b77` |
-| 8 | `theorem` | [sum_Ico_eq_card_lt](../../../../NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/sum-ico-eq-card-lt.md) | 162 | `result-track:419d6f9d67b4177c21ee437293a14cbada2f3aaaba8590877de6cf6b6a9629c7` |
-| 9 | `theorem` | [sum_mul_div_add_sum_mul_div_eq_mul](../../../../NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/sum-mul-div-add-sum-mul-div-eq-mul.md) | 179 | `result-track:8782d4af46a849d533a94aa6e2b29de3414e1c7427338c6dd5e7d6363065ce85` |
-| 10 | `theorem` | [eisenstein_lemma](../../../../NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/eisenstein-lemma.md) | 213 | `result-track:3efd94e4c5cc12607007c282812d03b6d04ec54a342cc8210fee7fbb94ff0f6d` |
+| 1 | `theorem` | [Ico_map_valMinAbs_natAbs_eq_Ico_map_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/ico-map-valminabs-natabs-eq-ico-map-id.md) | 40 | `result-track:55776a17f8771db454f18b6132dd8c7951cd5d776108c0204385f6b0848de311` |
+| 2 | `theorem` | [gauss_lemma_aux₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/gauss-lemma-aux.md) | 70 | `result-track:0d204916d038e300afebc05409ffc2df1d23f26b426ae08ab1f6163f090ef1d7` |
+| 3 | `theorem` | [gauss_lemma_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/gauss-lemma-aux-source-edition-2.md) | 93 | `result-track:65815da25c7665d35151bb6bed39662566976828fb05a0ad931283acbec816f3` |
+| 4 | `theorem` | [gauss_lemma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/gauss-lemma.md) | 103 | `result-track:b09ebe7ec94fa6e9087088bfbd9e2f19f54605b9bf6a4340dbcec16c0b716877` |
+| 5 | `theorem` | [eisenstein_lemma_aux₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/eisenstein-lemma-aux-source-edition-2.md) | 113 | `result-track:fed8efd33b3358e7885fd2eeba151ec71570b6a87208cd1be6f4cc8b9c08c006` |
+| 6 | `theorem` | [eisenstein_lemma_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/eisenstein-lemma-aux.md) | 141 | `result-track:d505c7bf1e64c532523c528e5df70437d6691efe63014aa7b7a6909a6ecdbc25` |
+| 7 | `theorem` | [div_eq_filter_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/div-eq-filter-card.md) | 151 | `result-track:a8a8a89dff6a659dce3f3327ee5a626ebdfb17dca55c9846fcf89db01e991b77` |
+| 8 | `theorem` | [sum_Ico_eq_card_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/sum-ico-eq-card-lt.md) | 162 | `result-track:419d6f9d67b4177c21ee437293a14cbada2f3aaaba8590877de6cf6b6a9629c7` |
+| 9 | `theorem` | [sum_mul_div_add_sum_mul_div_eq_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/sum-mul-div-add-sum-mul-div-eq-mul.md) | 179 | `result-track:8782d4af46a849d533a94aa6e2b29de3414e1c7427338c6dd5e7d6363065ce85` |
+| 10 | `theorem` | [eisenstein_lemma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussEisensteinLemmasNamespacedPublic.lean/declarations/eisenstein-lemma.md) | 213 | `result-track:3efd94e4c5cc12607007c282812d03b6d04ec54a342cc8210fee7fbb94ff0f6d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

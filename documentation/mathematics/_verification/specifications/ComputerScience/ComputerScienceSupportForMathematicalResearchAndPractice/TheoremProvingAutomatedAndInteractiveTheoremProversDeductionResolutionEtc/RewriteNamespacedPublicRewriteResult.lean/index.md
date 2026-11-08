@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RewriteNamespacedPublicRewriteResult.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RewriteNamespacedPublicRewriteResult.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RewriteNamespacedPublicRewriteResult.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RewriteNamespacedPublicRewriteResult.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RewriteResult](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RewriteNamespacedPublicRewriteResult.lean/declarations/rewriteresult.md) | 27 | `declaration-track:63cf53e05c5d48c63c4a0773485abee8790f2b826b4a98a2cabfbeb68ba5ce10` |
-| 2 | `def` | [Rewrite Namespaced Public Rewrite Result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RewriteNamespacedPublicRewriteResult.lean/declarations/root-grwtsk-foundationslogicandtypetheory-formallibraryengineering-rewri.md) | 36 | `declaration-track:d94c0b171b2348c27444f9908728e63d9fe705dd8096fde553302e0eaa84c207` |
+| 1 | `structure` | [RewriteResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RewriteNamespacedPublicRewriteResult.lean/declarations/rewriteresult.md) | 27 | `declaration-track:63cf53e05c5d48c63c4a0773485abee8790f2b826b4a98a2cabfbeb68ba5ce10` |
+| 2 | `def` | [Rewrite Namespaced Public Rewrite Result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RewriteNamespacedPublicRewriteResult.lean/declarations/root-grwtsk-foundationslogicandtypetheory-formallibraryengineering-rewri.md) | 36 | `declaration-track:d94c0b171b2348c27444f9908728e63d9fe705dd8096fde553302e0eaa84c207` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafSpectrumOperator.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafSpectrumOperator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafSpectrumOperator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafSpectrumOperator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SheafSpectrumOperator](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafSpectrumOperator.lean/declarations/sheafspectrumoperator.md) | 29 | `declaration-track:153581a84a4650adc9ce262de66cb581f13926afcaf97b5e114779ca0b1a691e` |
-| 2 | `theorem` | [sheaf_operator_fredholm_analogue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafSpectrumOperator.lean/declarations/sheaf-operator-fredholm-analogue.md) | 44 | `result-track:d1b50686dcc20676ca76c26d37c775c7b4b9cfe2c1e0f54c64b7ac25d516e2b7` |
-| 3 | `theorem` | [sheaf_operator_dirac_type](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafSpectrumOperator.lean/declarations/sheaf-operator-dirac-type.md) | 52 | `result-track:1acbf1d6ec6577a3ec4b80bfca59bdc91fec1e59cefab30588dad5b601f23d52` |
+| 1 | `structure` | [SheafSpectrumOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafSpectrumOperator.lean/declarations/sheafspectrumoperator.md) | 29 | `declaration-track:153581a84a4650adc9ce262de66cb581f13926afcaf97b5e114779ca0b1a691e` |
+| 2 | `theorem` | [sheaf_operator_fredholm_analogue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafSpectrumOperator.lean/declarations/sheaf-operator-fredholm-analogue.md) | 44 | `result-track:d1b50686dcc20676ca76c26d37c775c7b4b9cfe2c1e0f54c64b7ac25d516e2b7` |
+| 3 | `theorem` | [sheaf_operator_dirac_type](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafSpectrumOperator.lean/declarations/sheaf-operator-dirac-type.md) | 52 | `result-track:1acbf1d6ec6577a3ec4b80bfca59bdc91fec1e59cefab30588dad5b601f23d52` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

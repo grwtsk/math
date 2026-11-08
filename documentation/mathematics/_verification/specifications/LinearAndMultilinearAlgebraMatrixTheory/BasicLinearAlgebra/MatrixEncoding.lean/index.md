@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEncoding.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEncoding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEncoding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEncoding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Tree.cellVariableTree](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEncoding.lean/declarations/tree-cellvariabletree.md) | 9 | `declaration-track:2b4bbca56db432613be33d459f12094a0b39a14f52556b8aff4d51d84edbd753` |
-| 2 | `def` | [Tree.cellConstTree](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEncoding.lean/declarations/tree-cellconsttree.md) | 17 | `declaration-track:25d591e8e39b09ce5f0c62da181cf19535f461638ba593af989568be93b83a88` |
-| 3 | `def` | [Tree.cellConstNetwork](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEncoding.lean/declarations/tree-cellconstnetwork.md) | 28 | `declaration-track:57ee6681493b4db7253db472f0ab105836b8d521675f90c310c47ae33f50ce27` |
-| 4 | `def` | [Tree.rowSupportTree](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEncoding.lean/declarations/tree-rowsupporttree.md) | 38 | `declaration-track:394bc85408d5761d4948bbcad69aa3e47bd50ca9fb7a5741ccb041a07cc1333c` |
-| 5 | `def` | [Tree.supportTree](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEncoding.lean/declarations/tree-supporttree.md) | 53 | `declaration-track:2c083b54dd2a3125eef009e50196f9a77ad132db7bbbe3e6512aa56eb8e4a6be` |
-| 6 | `def` | [Tree.anyTrueTree](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEncoding.lean/declarations/tree-anytruetree.md) | 65 | `declaration-track:2a78e2b3be4f1cf52f99bbe3c55c7043ad8235f8ee265a98a7b6b50ec3c729c3` |
+| 1 | `def` | [Tree.cellVariableTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEncoding.lean/declarations/tree-cellvariabletree.md) | 9 | `declaration-track:2b4bbca56db432613be33d459f12094a0b39a14f52556b8aff4d51d84edbd753` |
+| 2 | `def` | [Tree.cellConstTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEncoding.lean/declarations/tree-cellconsttree.md) | 17 | `declaration-track:25d591e8e39b09ce5f0c62da181cf19535f461638ba593af989568be93b83a88` |
+| 3 | `def` | [Tree.cellConstNetwork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEncoding.lean/declarations/tree-cellconstnetwork.md) | 28 | `declaration-track:57ee6681493b4db7253db472f0ab105836b8d521675f90c310c47ae33f50ce27` |
+| 4 | `def` | [Tree.rowSupportTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEncoding.lean/declarations/tree-rowsupporttree.md) | 38 | `declaration-track:394bc85408d5761d4948bbcad69aa3e47bd50ca9fb7a5741ccb041a07cc1333c` |
+| 5 | `def` | [Tree.supportTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEncoding.lean/declarations/tree-supporttree.md) | 53 | `declaration-track:2c083b54dd2a3125eef009e50196f9a77ad132db7bbbe3e6512aa56eb8e4a6be` |
+| 6 | `def` | [Tree.anyTrueTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEncoding.lean/declarations/tree-anytruetree.md) | 65 | `declaration-track:2a78e2b3be4f1cf52f99bbe3c55c7043ad8235f8ee265a98a7b6b50ec3c729c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

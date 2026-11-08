@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/AggregateSACScoreEqualities.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/AggregateSACScoreEqualities.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AggregateSACScoreEqualities.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AggregateSACScoreEqualities.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Algebra.Symmetry` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Logic.Equiv.Fin.Rotate` — import line 20; external provider; requires a separately pinned dependency.
-- [Translated Coordinate Distance Equality](../../../../Geometry/MetricGeometry/TranslatedCoordinateDistanceEquality.lean/index.md) — import line 22; pinned internal source present.
+- [Translated Coordinate Distance Equality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/TranslatedCoordinateDistanceEquality.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [symmetryTransformation3](../../../../GroupTheoryAndGeneralizations/AggregateSACScoreEqualities.lean/declarations/symmetrytransformation3.md) | 41 | `declaration-track:35bb2b2ae0abaf2331ecd7833299fef0bf559a965f09c8035c15af9207ad599d` |
-| 2 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/AggregateSACScoreEqualities.lean/declarations/example-source-edition-2.md) | 44 | `declaration-track:d741f5e62c7dce58976387b60e4ae34851439d69e7183bfa2e7530666fd02b04` |
-| 3 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/AggregateSACScoreEqualities.lean/declarations/example.md) | 50 | `declaration-track:b9837464fc6a0dd5ca3a8661a0a55de170276a1464dd893a6a323c3d0c2ca848` |
+| 1 | `def` | [symmetryTransformation3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AggregateSACScoreEqualities.lean/declarations/symmetrytransformation3.md) | 41 | `declaration-track:35bb2b2ae0abaf2331ecd7833299fef0bf559a965f09c8035c15af9207ad599d` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AggregateSACScoreEqualities.lean/declarations/example-source-edition-2.md) | 44 | `declaration-track:d741f5e62c7dce58976387b60e4ae34851439d69e7183bfa2e7530666fd02b04` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AggregateSACScoreEqualities.lean/declarations/example.md) | 50 | `declaration-track:b9837464fc6a0dd5ca3a8661a0a55de170276a1464dd893a6a323c3d0c2ca848` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/MobiusInteraction.lean/index.md) · [Full source](../../../../Combinatorics/MobiusInteraction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MobiusInteraction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MobiusInteraction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mobiusSign](../../../../Combinatorics/MobiusInteraction.lean/declarations/mobiussign.md) | 16 | `declaration-track:4647a422c467b73e50a53c165765c9814e9a1691c85362f08a7d0a9cd8361044` |
-| 2 | `def` | [higherDifference](../../../../Combinatorics/MobiusInteraction.lean/declarations/higherdifference.md) | 19 | `declaration-track:d68f026a06e7e06e935f4a5345c68c3456bee21ae199cfba8b43dad827a12f6c` |
-| 3 | `def` | [mobiusInteraction](../../../../Combinatorics/MobiusInteraction.lean/declarations/mobiusinteraction.md) | 32 | `declaration-track:8d8fa348897fc79d876b0961dc5324ef716ece8948193f92d7d81092d499c6ba` |
-| 4 | `structure` | [MobiusReconstructionCertificate](../../../../Combinatorics/MobiusInteraction.lean/declarations/mobiusreconstructioncertificate.md) | 42 | `declaration-track:048369291e8ff414642dc8b3b830be3cd953798c678e7d493552419e332dd725` |
-| 5 | `structure` | [CompletelyPositiveInteraction](../../../../Combinatorics/MobiusInteraction.lean/declarations/completelypositiveinteraction.md) | 54 | `declaration-track:e9cda2d463402df038ae3142764f91e589b724ddb6ad9b3aab396b4367992048` |
+| 1 | `def` | [mobiusSign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MobiusInteraction.lean/declarations/mobiussign.md) | 16 | `declaration-track:4647a422c467b73e50a53c165765c9814e9a1691c85362f08a7d0a9cd8361044` |
+| 2 | `def` | [higherDifference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MobiusInteraction.lean/declarations/higherdifference.md) | 19 | `declaration-track:d68f026a06e7e06e935f4a5345c68c3456bee21ae199cfba8b43dad827a12f6c` |
+| 3 | `def` | [mobiusInteraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MobiusInteraction.lean/declarations/mobiusinteraction.md) | 32 | `declaration-track:8d8fa348897fc79d876b0961dc5324ef716ece8948193f92d7d81092d499c6ba` |
+| 4 | `structure` | [MobiusReconstructionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MobiusInteraction.lean/declarations/mobiusreconstructioncertificate.md) | 42 | `declaration-track:048369291e8ff414642dc8b3b830be3cd953798c678e7d493552419e332dd725` |
+| 5 | `structure` | [CompletelyPositiveInteraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MobiusInteraction.lean/declarations/completelypositiveinteraction.md) | 54 | `declaration-track:e9cda2d463402df038ae3142764f91e589b724ddb6ad9b3aab396b4367992048` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

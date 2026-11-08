@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ABc341195c3f06.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ABc341195c3f06.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ABc341195c3f06.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ABc341195c3f06.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [transport_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ABc341195c3f06.lean/declarations/transport-injective.md) | 15 | `result-track:cea390870e6c77639d9025f4a6f24367bc7e22a8c17e6a0025a38341983a6dfb` |
+| 1 | `theorem` | [transport_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ABc341195c3f06.lean/declarations/transport-injective.md) | 15 | `result-track:cea390870e6c77639d9025f4a6f24367bc7e22a8c17e6a0025a38341983a6dfb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/TeichmullerSeriesPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/TeichmullerSeriesPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TeichmullerSeriesPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TeichmullerSeriesPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sum_coeff_eq_coeff_sum](../../../../CommutativeAlgebra/TeichmullerSeriesPublic.lean/declarations/sum-coeff-eq-coeff-sum.md) | 43 | `result-track:12aa07cb66637ad549717c6c67eaecbb5e4da4f2f2ba7bd5a49078cfc6f2cd3b` |
-| 2 | `theorem` | [teichmuller_mul_pow_coeff](../../../../CommutativeAlgebra/TeichmullerSeriesPublic.lean/declarations/teichmuller-mul-pow-coeff.md) | 73 | `result-track:5d82837bf564fc8c795bed8c2d4abd6252191836233a9c3da21ec2cc96bef68d` |
-| 3 | `theorem` | [teichmuller_mul_pow_coeff_of_ne](../../../../CommutativeAlgebra/TeichmullerSeriesPublic.lean/declarations/teichmuller-mul-pow-coeff-of-ne.md) | 77 | `result-track:64f1bae6fa8fa3b19637b462ab207c55596e3f2b0f1b22d6db83f202d15aa04a` |
-| 4 | `theorem` | [dvd_sub_sum_teichmuller_iterateFrobeniusEquiv_coeff](../../../../CommutativeAlgebra/TeichmullerSeriesPublic.lean/declarations/dvd-sub-sum-teichmuller-iteratefrobeniusequiv-coeff.md) | 93 | `result-track:2b8afcff30cbf45e2efe949fe689ae2610c0b753d2da4175f9579b37cb4f3f65` |
-| 5 | `theorem` | [eq_of_apply_teichmuller_eq](../../../../CommutativeAlgebra/TeichmullerSeriesPublic.lean/declarations/eq-of-apply-teichmuller-eq.md) | 118 | `result-track:f5626173839ae4476f0756b18fadfdd125bbc001ece804c03c963a9d6d9ca684` |
+| 1 | `theorem` | [sum_coeff_eq_coeff_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TeichmullerSeriesPublic.lean/declarations/sum-coeff-eq-coeff-sum.md) | 43 | `result-track:12aa07cb66637ad549717c6c67eaecbb5e4da4f2f2ba7bd5a49078cfc6f2cd3b` |
+| 2 | `theorem` | [teichmuller_mul_pow_coeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TeichmullerSeriesPublic.lean/declarations/teichmuller-mul-pow-coeff.md) | 73 | `result-track:5d82837bf564fc8c795bed8c2d4abd6252191836233a9c3da21ec2cc96bef68d` |
+| 3 | `theorem` | [teichmuller_mul_pow_coeff_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TeichmullerSeriesPublic.lean/declarations/teichmuller-mul-pow-coeff-of-ne.md) | 77 | `result-track:64f1bae6fa8fa3b19637b462ab207c55596e3f2b0f1b22d6db83f202d15aa04a` |
+| 4 | `theorem` | [dvd_sub_sum_teichmuller_iterateFrobeniusEquiv_coeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TeichmullerSeriesPublic.lean/declarations/dvd-sub-sum-teichmuller-iteratefrobeniusequiv-coeff.md) | 93 | `result-track:2b8afcff30cbf45e2efe949fe689ae2610c0b753d2da4175f9579b37cb4f3f65` |
+| 5 | `theorem` | [eq_of_apply_teichmuller_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TeichmullerSeriesPublic.lean/declarations/eq-of-apply-teichmuller-eq.md) | 118 | `result-track:f5626173839ae4476f0756b18fadfdd125bbc001ece804c03c963a9d6d9ca684` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

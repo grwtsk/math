@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/NullstellensatzNamespacedPublic.lean/index.md) · [Full source](../../../../Combinatorics/NullstellensatzNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NullstellensatzNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NullstellensatzNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eq_zero_of_eval_zero_at_prod_finset](../../../../Combinatorics/NullstellensatzNamespacedPublic.lean/declarations/eq-zero-of-eval-zero-at-prod-finset.md) | 75 | `result-track:b7529a73d90e5f66fa2d1f7156e87e6f97dcf8c01e8d7c46c7d6d64b718b58cc` |
-| 2 | `def` | [Alon.P](../../../../Combinatorics/NullstellensatzNamespacedPublic.lean/declarations/alon-p.md) | 158 | `declaration-track:ee876429b8d20f0674f270a329ae69d961460ab65d63ecd1d6eca385067584e8` |
-| 3 | `theorem` | [Alon.degree_P](../../../../Combinatorics/NullstellensatzNamespacedPublic.lean/declarations/alon-degree-p.md) | 163 | `result-track:bdf5dbe947b0d7443c9b50a9b47df1ba4021fc16fbb797b501eec18a2c009e73` |
-| 4 | `theorem` | [Alon.monic_P](../../../../Combinatorics/NullstellensatzNamespacedPublic.lean/declarations/alon-monic-p.md) | 173 | `result-track:57dd92c96280b0975a74962c8912dc9162e1c8e4e96d739097089c8f2cc8a2ae` |
-| 5 | `lemma` | [Alon.of_mem_P_support](../../../../Combinatorics/NullstellensatzNamespacedPublic.lean/declarations/alon-of-mem-p-support.md) | 179 | `result-track:198f5bdaa18a7e7be5909377dbaf2714efaccf6f6b04a75c1ebc3e819dcb0039` |
-| 6 | `theorem` | [combinatorial_nullstellensatz_exists_linearCombination](../../../../Combinatorics/NullstellensatzNamespacedPublic.lean/declarations/combinatorial-nullstellensatz-exists-linearcombination.md) | 213 | `result-track:b9dc8ff699491c72c7022e5434fcd00e45c110b139dd484fc015fc7595b19519` |
-| 7 | `theorem` | [combinatorial_nullstellensatz_exists_eval_nonzero](../../../../Combinatorics/NullstellensatzNamespacedPublic.lean/declarations/combinatorial-nullstellensatz-exists-eval-nonzero.md) | 248 | `result-track:a8aeee09ed3d589ec445be090a51fd9c0ac419647751653456bd4e74c6977e88` |
+| 1 | `theorem` | [eq_zero_of_eval_zero_at_prod_finset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NullstellensatzNamespacedPublic.lean/declarations/eq-zero-of-eval-zero-at-prod-finset.md) | 75 | `result-track:b7529a73d90e5f66fa2d1f7156e87e6f97dcf8c01e8d7c46c7d6d64b718b58cc` |
+| 2 | `def` | [Alon.P](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NullstellensatzNamespacedPublic.lean/declarations/alon-p.md) | 158 | `declaration-track:ee876429b8d20f0674f270a329ae69d961460ab65d63ecd1d6eca385067584e8` |
+| 3 | `theorem` | [Alon.degree_P](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NullstellensatzNamespacedPublic.lean/declarations/alon-degree-p.md) | 163 | `result-track:bdf5dbe947b0d7443c9b50a9b47df1ba4021fc16fbb797b501eec18a2c009e73` |
+| 4 | `theorem` | [Alon.monic_P](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NullstellensatzNamespacedPublic.lean/declarations/alon-monic-p.md) | 173 | `result-track:57dd92c96280b0975a74962c8912dc9162e1c8e4e96d739097089c8f2cc8a2ae` |
+| 5 | `lemma` | [Alon.of_mem_P_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NullstellensatzNamespacedPublic.lean/declarations/alon-of-mem-p-support.md) | 179 | `result-track:198f5bdaa18a7e7be5909377dbaf2714efaccf6f6b04a75c1ebc3e819dcb0039` |
+| 6 | `theorem` | [combinatorial_nullstellensatz_exists_linearCombination](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NullstellensatzNamespacedPublic.lean/declarations/combinatorial-nullstellensatz-exists-linearcombination.md) | 213 | `result-track:b9dc8ff699491c72c7022e5434fcd00e45c110b139dd484fc015fc7595b19519` |
+| 7 | `theorem` | [combinatorial_nullstellensatz_exists_eval_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NullstellensatzNamespacedPublic.lean/declarations/combinatorial-nullstellensatz-exists-eval-nonzero.md) | 248 | `result-track:a8aeee09ed3d589ec445be090a51fd9c0ac419647751653456bd4e74c6977e88` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

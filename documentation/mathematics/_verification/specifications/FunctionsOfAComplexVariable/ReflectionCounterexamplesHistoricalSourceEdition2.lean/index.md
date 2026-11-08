@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ReflectionCounterexamplesHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ReflectionCounterexamplesHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ReflectionCounterexamplesHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ReflectionCounterexamplesHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.CriticalReflection`](../../../../FunctionsOfAComplexVariable/CriticalReflectionHistoricalSourceEdition2.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.CriticalReflection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CriticalReflectionHistoricalSourceEdition2.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Tactic.NormNum` — import line 9; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [critical_reflection_is_not_gaussian_rotation](../../../../FunctionsOfAComplexVariable/ReflectionCounterexamplesHistoricalSourceEdition2.lean/declarations/critical-reflection-is-not-gaussian-rotation.md) | 25 | `result-track:d587bb9cd40aecec674951916a285a893b807248bd51b9bc6f66e08fcf0bcbcc` |
+| 1 | `theorem` | [critical_reflection_is_not_gaussian_rotation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ReflectionCounterexamplesHistoricalSourceEdition2.lean/declarations/critical-reflection-is-not-gaussian-rotation.md) | 25 | `result-track:d587bb9cd40aecec674951916a285a893b807248bd51b9bc6f66e08fcf0bcbcc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

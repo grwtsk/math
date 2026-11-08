@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Semiprimary.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Semiprimary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Semiprimary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Semiprimary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsSimpleModule.jacobson_eq_bot](../../../../CommutativeAlgebra/Semiprimary.lean/declarations/issimplemodule-jacobson-eq-bot.md) | 24 | `result-track:e1e1f058d0e21950e200af242d3d1f10cb8ca7194e74f2c927338e445a63fb60` |
-| 2 | `theorem` | [IsSemisimpleModule.jacobson_eq_bot](../../../../CommutativeAlgebra/Semiprimary.lean/declarations/issemisimplemodule-jacobson-eq-bot.md) | 27 | `result-track:8400c74c5d3d124626dfc20ccc367a97bc5612bd6196dab27511b0eebb2103d0` |
-| 3 | `theorem` | [IsSemisimpleRing.jacobson_eq_bot](../../../../CommutativeAlgebra/Semiprimary.lean/declarations/issemisimplering-jacobson-eq-bot.md) | 34 | `result-track:e4db153aa5129542ce563a3e49eb8993f3054ff5cfa61e9effb6f7f0a8af0e1a` |
-| 4 | `theorem` | [IsSemisimpleModule.jacobson_le_ker](../../../../CommutativeAlgebra/Semiprimary.lean/declarations/issemisimplemodule-jacobson-le-ker.md) | 37 | `result-track:b90693ad7ae98dc012c36de62c7da2811fd55156151ecba8531763f9e00f9d0f` |
-| 5 | `theorem` | [IsSemisimpleModule.jacobson_le_annihilator](../../../../CommutativeAlgebra/Semiprimary.lean/declarations/issemisimplemodule-jacobson-le-annihilator.md) | 42 | `result-track:da4dba33c2dd6c72b96b86e8f3de158721ad6a5753aac6a485bf7ef77f517743` |
-| 6 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/Semiprimary.lean/declarations/instance.md) | 48 | `declaration-track:63cc711beb50a028d6d6a40fe8bd984b8c1acbe80ee89b7d3e23c1aabb90854b` |
-| 7 | `class` | [IsSemiprimaryRing](../../../../CommutativeAlgebra/Semiprimary.lean/declarations/issemiprimaryring.md) | 54 | `declaration-track:8b3e1aa28f908eebe3248d06c202291156f798ec97556b3744b174539c7f15c5` |
+| 1 | `theorem` | [IsSimpleModule.jacobson_eq_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Semiprimary.lean/declarations/issimplemodule-jacobson-eq-bot.md) | 24 | `result-track:e1e1f058d0e21950e200af242d3d1f10cb8ca7194e74f2c927338e445a63fb60` |
+| 2 | `theorem` | [IsSemisimpleModule.jacobson_eq_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Semiprimary.lean/declarations/issemisimplemodule-jacobson-eq-bot.md) | 27 | `result-track:8400c74c5d3d124626dfc20ccc367a97bc5612bd6196dab27511b0eebb2103d0` |
+| 3 | `theorem` | [IsSemisimpleRing.jacobson_eq_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Semiprimary.lean/declarations/issemisimplering-jacobson-eq-bot.md) | 34 | `result-track:e4db153aa5129542ce563a3e49eb8993f3054ff5cfa61e9effb6f7f0a8af0e1a` |
+| 4 | `theorem` | [IsSemisimpleModule.jacobson_le_ker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Semiprimary.lean/declarations/issemisimplemodule-jacobson-le-ker.md) | 37 | `result-track:b90693ad7ae98dc012c36de62c7da2811fd55156151ecba8531763f9e00f9d0f` |
+| 5 | `theorem` | [IsSemisimpleModule.jacobson_le_annihilator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Semiprimary.lean/declarations/issemisimplemodule-jacobson-le-annihilator.md) | 42 | `result-track:da4dba33c2dd6c72b96b86e8f3de158721ad6a5753aac6a485bf7ef77f517743` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Semiprimary.lean/declarations/instance.md) | 48 | `declaration-track:63cc711beb50a028d6d6a40fe8bd984b8c1acbe80ee89b7d3e23c1aabb90854b` |
+| 7 | `class` | [IsSemiprimaryRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Semiprimary.lean/declarations/issemiprimaryring.md) | 54 | `declaration-track:8b3e1aa28f908eebe3248d06c202291156f798ec97556b3744b174539c7f15c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

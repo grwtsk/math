@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianInfSemilatticeNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianInfSemilatticeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianInfSemilatticeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianInfSemilatticeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [cartesianMonoidalCategory](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianInfSemilatticeNamespaced.lean/declarations/cartesianmonoidalcategory.md) | 38 | `declaration-track:3cef68fa64d5d55a3892b533a5d28985fb71f43750f54e0102fbb762a9b0be53` |
-| 2 | `instance` | [braidedCategory](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianInfSemilatticeNamespaced.lean/declarations/braidedcategory.md) | 42 | `declaration-track:ad07debcf6b16b09af2b0664c325ee4d561dc9ed3de122668e81d32de65109e0` |
-| 3 | `lemma` | [tensorObj](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianInfSemilatticeNamespaced.lean/declarations/tensorobj.md) | 44 | `result-track:a96068222b73c6b11967230445d6d561e1b09c492626a2f4024baf2639f7edf5` |
-| 4 | `lemma` | [tensorUnit](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianInfSemilatticeNamespaced.lean/declarations/tensorunit.md) | 46 | `result-track:18e6e50903ca0a90bbaadcf6274c5ae050d7155f705b65ea57aefbd1f6f30531` |
+| 1 | `instance` | [cartesianMonoidalCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianInfSemilatticeNamespaced.lean/declarations/cartesianmonoidalcategory.md) | 38 | `declaration-track:3cef68fa64d5d55a3892b533a5d28985fb71f43750f54e0102fbb762a9b0be53` |
+| 2 | `instance` | [braidedCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianInfSemilatticeNamespaced.lean/declarations/braidedcategory.md) | 42 | `declaration-track:ad07debcf6b16b09af2b0664c325ee4d561dc9ed3de122668e81d32de65109e0` |
+| 3 | `lemma` | [tensorObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianInfSemilatticeNamespaced.lean/declarations/tensorobj.md) | 44 | `result-track:a96068222b73c6b11967230445d6d561e1b09c492626a2f4024baf2639f7edf5` |
+| 4 | `lemma` | [tensorUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianInfSemilatticeNamespaced.lean/declarations/tensorunit.md) | 46 | `result-track:18e6e50903ca0a90bbaadcf6274c5ae050d7155f705b65ea57aefbd1f6f30531` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

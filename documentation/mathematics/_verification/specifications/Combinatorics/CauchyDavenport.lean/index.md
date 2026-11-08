@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CauchyDavenport.lean/index.md) · [Full source](../../../../Combinatorics/CauchyDavenport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [DevosMulRel](../../../../Combinatorics/CauchyDavenport.lean/declarations/devosmulrel.md) | 73 | `declaration-track:12488d47391824b3738450ccf6c62cbff1d88f25122d72480ab9e5ae5b476d21` |
-| 2 | `lemma` | [devosMulRel_iff](../../../../Combinatorics/CauchyDavenport.lean/declarations/devosmulrel-iff.md) | 77 | `result-track:bae64268d551d5a63b859ec17519ba95400cb970a8da85b1d57cb20bd5757163` |
-| 3 | `lemma` | [devosMulRel_of_le](../../../../Combinatorics/CauchyDavenport.lean/declarations/devosmulrel-of-le.md) | 85 | `result-track:b1d1922aae9d86eb59139454a41eefd2d37068437855494f7544bf77583d7a92` |
-| 4 | `lemma` | [devosMulRel_of_le_of_le](../../../../Combinatorics/CauchyDavenport.lean/declarations/devosmulrel-of-le-of-le.md) | 90 | `result-track:764ddd89f0cb19261fc2aaf57c956509b6a57dc12854aed4e74d9ee9008db59b` |
-| 5 | `lemma` | [wellFoundedOn_devosMulRel](../../../../Combinatorics/CauchyDavenport.lean/declarations/wellfoundedon-devosmulrel.md) | 96 | `result-track:d98174fd37f35cce352b657473c6986129c8ef0032dc25f06d816ea189794888` |
-| 6 | `lemma` | [cauchy_davenport_minOrder_mul](../../../../Combinatorics/CauchyDavenport.lean/declarations/cauchy-davenport-minorder-mul.md) | 112 | `result-track:e29b3c64082e7c15f594b7d89c09f2318e57ccdaabc86fb8e7702c50f9c853f9` |
-| 7 | `lemma` | [cauchy_davenport_mul_of_isTorsionFree](../../../../Combinatorics/CauchyDavenport.lean/declarations/cauchy-davenport-mul-of-istorsionfree.md) | 184 | `result-track:60a6383a3a7326a4f52331f67c832eda2b749f397d479ce11e05d738652858af` |
-| 8 | `lemma` | [ZMod.cauchy_davenport](../../../../Combinatorics/CauchyDavenport.lean/declarations/zmod-cauchy-davenport.md) | 195 | `result-track:727a52d159b7efe9f1227a4d3ecd516b37fa226c7b65576456fff2d9c3d260ac` |
-| 9 | `lemma` | [cauchy_davenport_mul_of_linearOrder_isCancelMul](../../../../Combinatorics/CauchyDavenport.lean/declarations/cauchy-davenport-mul-of-linearorder-iscancelmul.md) | 207 | `result-track:8926c30bf1b8c9ce3e128169cbb0c50a0e013cf7cd2bad71becbb888a1db1aa4` |
+| 1 | `def` | [DevosMulRel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenport.lean/declarations/devosmulrel.md) | 73 | `declaration-track:12488d47391824b3738450ccf6c62cbff1d88f25122d72480ab9e5ae5b476d21` |
+| 2 | `lemma` | [devosMulRel_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenport.lean/declarations/devosmulrel-iff.md) | 77 | `result-track:bae64268d551d5a63b859ec17519ba95400cb970a8da85b1d57cb20bd5757163` |
+| 3 | `lemma` | [devosMulRel_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenport.lean/declarations/devosmulrel-of-le.md) | 85 | `result-track:b1d1922aae9d86eb59139454a41eefd2d37068437855494f7544bf77583d7a92` |
+| 4 | `lemma` | [devosMulRel_of_le_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenport.lean/declarations/devosmulrel-of-le-of-le.md) | 90 | `result-track:764ddd89f0cb19261fc2aaf57c956509b6a57dc12854aed4e74d9ee9008db59b` |
+| 5 | `lemma` | [wellFoundedOn_devosMulRel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenport.lean/declarations/wellfoundedon-devosmulrel.md) | 96 | `result-track:d98174fd37f35cce352b657473c6986129c8ef0032dc25f06d816ea189794888` |
+| 6 | `lemma` | [cauchy_davenport_minOrder_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenport.lean/declarations/cauchy-davenport-minorder-mul.md) | 112 | `result-track:e29b3c64082e7c15f594b7d89c09f2318e57ccdaabc86fb8e7702c50f9c853f9` |
+| 7 | `lemma` | [cauchy_davenport_mul_of_isTorsionFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenport.lean/declarations/cauchy-davenport-mul-of-istorsionfree.md) | 184 | `result-track:60a6383a3a7326a4f52331f67c832eda2b749f397d479ce11e05d738652858af` |
+| 8 | `lemma` | [ZMod.cauchy_davenport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenport.lean/declarations/zmod-cauchy-davenport.md) | 195 | `result-track:727a52d159b7efe9f1227a4d3ecd516b37fa226c7b65576456fff2d9c3d260ac` |
+| 9 | `lemma` | [cauchy_davenport_mul_of_linearOrder_isCancelMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenport.lean/declarations/cauchy-davenport-mul-of-linearorder-iscancelmul.md) | 207 | `result-track:8926c30bf1b8c9ce3e128169cbb0c50a0e013cf7cd2bad71becbb888a1db1aa4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

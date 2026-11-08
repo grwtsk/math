@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicBasicPublicEdition4.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicBasicPublicEdition4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicBasicPublicEdition4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicBasicPublicEdition4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [«forall»](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicBasicPublicEdition4.lean/declarations/forall.md) | 19 | `result-track:f7edf6fa2df462dd2c27ec90e27c9f3682c5f67d3be74038d7aef70a18d1e8e6` |
-| 2 | `theorem` | [«exists»](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicBasicPublicEdition4.lean/declarations/exists.md) | 23 | `result-track:e2ae26db6368bc328200cb230fdb4c5a04d3477e449af6fee70d4a3553c69502` |
+| 1 | `theorem` | [«forall»](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicBasicPublicEdition4.lean/declarations/forall.md) | 19 | `result-track:f7edf6fa2df462dd2c27ec90e27c9f3682c5f67d3be74038d7aef70a18d1e8e6` |
+| 2 | `theorem` | [«exists»](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicBasicPublicEdition4.lean/declarations/exists.md) | 23 | `result-track:e2ae26db6368bc328200cb230fdb4c5a04d3477e449af6fee70d4a3553c69502` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

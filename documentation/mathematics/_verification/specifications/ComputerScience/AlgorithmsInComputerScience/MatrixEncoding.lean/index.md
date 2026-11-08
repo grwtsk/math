@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MatrixEncoding.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MatrixEncoding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MatrixEncoding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MatrixEncoding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FormulaTree.cellVariableTree](../../../../../ComputerScience/AlgorithmsInComputerScience/MatrixEncoding.lean/declarations/formulatree-cellvariabletree.md) | 8 | `declaration-track:9375d3cd2b5d22e804d33cfa12d11e2139a6ea363056b05c39979306d93f787a` |
-| 2 | `def` | [FormulaTree.cellConstTree](../../../../../ComputerScience/AlgorithmsInComputerScience/MatrixEncoding.lean/declarations/formulatree-cellconsttree.md) | 16 | `declaration-track:afb1fd11390cd63bd010c50a598c49935dd9e10f219c93e8c621642c6b80e734` |
-| 3 | `def` | [FormulaTree.cellConstNetwork](../../../../../ComputerScience/AlgorithmsInComputerScience/MatrixEncoding.lean/declarations/formulatree-cellconstnetwork.md) | 27 | `declaration-track:8587f597b4e01e235b00b76516f1adba4ca164c50bc180e4a834284d650faaba` |
-| 4 | `def` | [FormulaTree.rowSupportTree](../../../../../ComputerScience/AlgorithmsInComputerScience/MatrixEncoding.lean/declarations/formulatree-rowsupporttree.md) | 37 | `declaration-track:eca2f4e1816e41784b800db157365b67bbe8a5abe82408a722074d0f67df9359` |
-| 5 | `def` | [FormulaTree.supportTree](../../../../../ComputerScience/AlgorithmsInComputerScience/MatrixEncoding.lean/declarations/formulatree-supporttree.md) | 52 | `declaration-track:83f63350cbaf5c147e33077b4801f7ad221ab71417022edcf3d5e29e6948b6dc` |
-| 6 | `def` | [FormulaTree.anyTrueTree](../../../../../ComputerScience/AlgorithmsInComputerScience/MatrixEncoding.lean/declarations/formulatree-anytruetree.md) | 64 | `declaration-track:7415cc6f515693a5b9e0938baa3122d015c13d256bdcbb5f2b9c9d8730993e7b` |
+| 1 | `def` | [FormulaTree.cellVariableTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MatrixEncoding.lean/declarations/formulatree-cellvariabletree.md) | 8 | `declaration-track:9375d3cd2b5d22e804d33cfa12d11e2139a6ea363056b05c39979306d93f787a` |
+| 2 | `def` | [FormulaTree.cellConstTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MatrixEncoding.lean/declarations/formulatree-cellconsttree.md) | 16 | `declaration-track:afb1fd11390cd63bd010c50a598c49935dd9e10f219c93e8c621642c6b80e734` |
+| 3 | `def` | [FormulaTree.cellConstNetwork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MatrixEncoding.lean/declarations/formulatree-cellconstnetwork.md) | 27 | `declaration-track:8587f597b4e01e235b00b76516f1adba4ca164c50bc180e4a834284d650faaba` |
+| 4 | `def` | [FormulaTree.rowSupportTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MatrixEncoding.lean/declarations/formulatree-rowsupporttree.md) | 37 | `declaration-track:eca2f4e1816e41784b800db157365b67bbe8a5abe82408a722074d0f67df9359` |
+| 5 | `def` | [FormulaTree.supportTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MatrixEncoding.lean/declarations/formulatree-supporttree.md) | 52 | `declaration-track:83f63350cbaf5c147e33077b4801f7ad221ab71417022edcf3d5e29e6948b6dc` |
+| 6 | `def` | [FormulaTree.anyTrueTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MatrixEncoding.lean/declarations/formulatree-anytruetree.md) | 64 | `declaration-track:7415cc6f515693a5b9e0938baa3122d015c13d256bdcbb5f2b9c9d8730993e7b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

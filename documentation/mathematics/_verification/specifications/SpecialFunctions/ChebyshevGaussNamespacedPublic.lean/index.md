@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/index.md) · [Full source](../../../../SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [exp_sub_one_ne_zero](../../../../SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/declarations/exp-sub-one-ne-zero.md) | 47 | `result-track:9de404ec7e0420dee27a1915571e8689543cbb6144283771c5b2a86e8152e8ca` |
-| 2 | `theorem` | [sum_exp](../../../../SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/declarations/sum-exp.md) | 56 | `result-track:6ff256f59ab63b2b6f07dfead831d6fe302c406bcd385abcfebe5da7eb002ed1` |
-| 3 | `def` | [sumZeroes](../../../../SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/declarations/sumzeroes.md) | 76 | `declaration-track:8ec271045e00f358ffafac31bb139a938f18fa8b99a2926bd0f20908b5de1b1d` |
-| 4 | `theorem` | [sumZeroes_sum](../../../../SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/declarations/sumzeroes-sum.md) | 80 | `result-track:6b1b5233e9801e47e14b8ccf1612549a0534c09544a766f9941d30d6e2ebdbb3` |
-| 5 | `theorem` | [sumZeroes_smul](../../../../SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/declarations/sumzeroes-smul.md) | 86 | `result-track:2ec9f1925ae0ce6793054045009f8472adae3e2ba4605cf8992392cadb1570fa` |
-| 6 | `theorem` | [sumZeroes_T_zero](../../../../SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/declarations/sumzeroes-t-zero.md) | 90 | `result-track:ba1885369c5ca5a183b17a3d9305805493419d42f5cff89c2b8ca963beb50b3a` |
-| 7 | `theorem` | [sumZeroes_T_of_not_dvd](../../../../SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/declarations/sumzeroes-t-of-not-dvd.md) | 93 | `result-track:575277df941c7bda1016f9197e6f9cd86ccabf55c8e7ae6e63606d9bda48f8aa` |
-| 8 | `theorem` | [integral_eq_sumZeroes](../../../../SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/declarations/integral-eq-sumzeroes.md) | 117 | `result-track:30aa15e2ec76d5c63c1562d273ba8b43524e95cdee1f5afc0e207f34503308d9` |
+| 1 | `lemma` | [exp_sub_one_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/declarations/exp-sub-one-ne-zero.md) | 47 | `result-track:9de404ec7e0420dee27a1915571e8689543cbb6144283771c5b2a86e8152e8ca` |
+| 2 | `theorem` | [sum_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/declarations/sum-exp.md) | 56 | `result-track:6ff256f59ab63b2b6f07dfead831d6fe302c406bcd385abcfebe5da7eb002ed1` |
+| 3 | `def` | [sumZeroes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/declarations/sumzeroes.md) | 76 | `declaration-track:8ec271045e00f358ffafac31bb139a938f18fa8b99a2926bd0f20908b5de1b1d` |
+| 4 | `theorem` | [sumZeroes_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/declarations/sumzeroes-sum.md) | 80 | `result-track:6b1b5233e9801e47e14b8ccf1612549a0534c09544a766f9941d30d6e2ebdbb3` |
+| 5 | `theorem` | [sumZeroes_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/declarations/sumzeroes-smul.md) | 86 | `result-track:2ec9f1925ae0ce6793054045009f8472adae3e2ba4605cf8992392cadb1570fa` |
+| 6 | `theorem` | [sumZeroes_T_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/declarations/sumzeroes-t-zero.md) | 90 | `result-track:ba1885369c5ca5a183b17a3d9305805493419d42f5cff89c2b8ca963beb50b3a` |
+| 7 | `theorem` | [sumZeroes_T_of_not_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/declarations/sumzeroes-t-of-not-dvd.md) | 93 | `result-track:575277df941c7bda1016f9197e6f9cd86ccabf55c8e7ae6e63606d9bda48f8aa` |
+| 8 | `theorem` | [integral_eq_sumZeroes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ChebyshevGaussNamespacedPublic.lean/declarations/integral-eq-sumzeroes.md) | 117 | `result-track:30aa15e2ec76d5c63c1562d273ba8b43524e95cdee1f5afc0e207f34503308d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

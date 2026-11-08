@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FiniteStateCausalPermutation.lean/index.md) · [Full source](../../../../Combinatorics/FiniteStateCausalPermutation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteStateCausalPermutation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteStateCausalPermutation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,8 +48,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `DAF.Causal.CausalState` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.GroupTheory.OrderOfElement` — import line 20; external provider; requires a separately pinned dependency.
-- [Bilateral Quotient Permutation](../../../../MathematicalLogicAndFoundations/GeneralLogic/BilateralQuotientPermutation.lean/index.md) — import line 21; pinned internal source present.
-- [Positive Order Causal Equivalence](../../../../Combinatorics/PositiveOrderCausalEquivalence.lean/index.md) — import line 22; pinned internal source present.
+- [Bilateral Quotient Permutation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BilateralQuotientPermutation.lean/index.md) — import line 21; pinned internal source present.
+- [Positive Order Causal Equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveOrderCausalEquivalence.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [forward_eq_bilateral_of_finite](../../../../Combinatorics/FiniteStateCausalPermutation.lean/declarations/forward-eq-bilateral-of-finite.md) | 47 | `result-track:7f6eafe072bbfa281d675eddcec871ec70bfc4fcfff2009759d8869f9b04b57b` |
-| 2 | `def` | [forwardCausalStateEquivBilateralOfFinite](../../../../Combinatorics/FiniteStateCausalPermutation.lean/declarations/forwardcausalstateequivbilateraloffinite.md) | 56 | `declaration-track:b7a14ec91c830cbdfb22c5010ca24bc554892bd79f524601737424751f048ab8` |
-| 3 | `def` | [forwardStepPermOfFinite](../../../../Combinatorics/FiniteStateCausalPermutation.lean/declarations/forwardsteppermoffinite.md) | 65 | `declaration-track:7aeb2cb5ea3fae85b5b736cfa5841af918d1329213acb08a248b68c542a0c2f0` |
-| 4 | `theorem` | [forwardStepPermOfFinite_mk](../../../../Combinatorics/FiniteStateCausalPermutation.lean/declarations/forwardsteppermoffinite-mk.md) | 74 | `result-track:ee7586c26b4243a065e7cf3eb1bb79b2113970e3e17982cf1ed92ced82d6a017` |
+| 1 | `theorem` | [forward_eq_bilateral_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteStateCausalPermutation.lean/declarations/forward-eq-bilateral-of-finite.md) | 47 | `result-track:7f6eafe072bbfa281d675eddcec871ec70bfc4fcfff2009759d8869f9b04b57b` |
+| 2 | `def` | [forwardCausalStateEquivBilateralOfFinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteStateCausalPermutation.lean/declarations/forwardcausalstateequivbilateraloffinite.md) | 56 | `declaration-track:b7a14ec91c830cbdfb22c5010ca24bc554892bd79f524601737424751f048ab8` |
+| 3 | `def` | [forwardStepPermOfFinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteStateCausalPermutation.lean/declarations/forwardsteppermoffinite.md) | 65 | `declaration-track:7aeb2cb5ea3fae85b5b736cfa5841af918d1329213acb08a248b68c542a0c2f0` |
+| 4 | `theorem` | [forwardStepPermOfFinite_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteStateCausalPermutation.lean/declarations/forwardsteppermoffinite-mk.md) | 74 | `result-track:ee7586c26b4243a065e7cf3eb1bb79b2113970e3e17982cf1ed92ced82d6a017` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

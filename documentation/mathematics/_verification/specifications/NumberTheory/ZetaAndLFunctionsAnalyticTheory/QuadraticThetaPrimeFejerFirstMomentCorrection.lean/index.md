@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentCorrection.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentCorrection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentCorrection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentCorrection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerPeriodCorrection`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerPeriodCorrection.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerPeriodCorrection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerPeriodCorrection.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.NumberTheory.Harmonic.Bounds` — import line 4; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [nonAliasingFejerFirstMomentBudget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentCorrection.lean/declarations/nonaliasingfejerfirstmomentbudget.md) | 16 | `declaration-track:7955511e083aea6795defb602aa5be05719f068b99ea4b83264dfdce9d846411` |
-| 2 | `def` | [NonAliasingPrimePrefixFejerFirstMomentComparison](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentCorrection.lean/declarations/nonaliasingprimeprefixfejerfirstmomentcomparison.md) | 26 | `declaration-track:03cbdbe373e47e3f73c0c11825fdaf239dd9143a6fe81dbbe8a996c0031a4767` |
-| 3 | `theorem` | [distance_mul_sampledTriangularKernelAtOctavePeriod_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentCorrection.lean/declarations/distance-mul-sampledtriangularkernelatoctaveperiod-le.md) | 34 | `result-track:604ec18b9a5a0cb9691509669a784976ff5f53e11c5b8c250138ade0b17d3605` |
-| 4 | `def` | [NonAliasingFejerFirstMomentHarmonicBoundClaim](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentCorrection.lean/declarations/nonaliasingfejerfirstmomentharmonicboundclaim.md) | 63 | `declaration-track:5cd77cf51960e4c8e7286e25569f080f8d0801f3489d41971433cf5c4c43e72a` |
-| 5 | `structure` | [NonAliasingFejerFirstMomentAccepted](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentCorrection.lean/declarations/nonaliasingfejerfirstmomentaccepted.md) | 75 | `declaration-track:913d872ed1ce276fa4fcd6cdbfe5590b9ba792b52030dcb2be6a140188c5ff56` |
+| 1 | `def` | [nonAliasingFejerFirstMomentBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentCorrection.lean/declarations/nonaliasingfejerfirstmomentbudget.md) | 16 | `declaration-track:7955511e083aea6795defb602aa5be05719f068b99ea4b83264dfdce9d846411` |
+| 2 | `def` | [NonAliasingPrimePrefixFejerFirstMomentComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentCorrection.lean/declarations/nonaliasingprimeprefixfejerfirstmomentcomparison.md) | 26 | `declaration-track:03cbdbe373e47e3f73c0c11825fdaf239dd9143a6fe81dbbe8a996c0031a4767` |
+| 3 | `theorem` | [distance_mul_sampledTriangularKernelAtOctavePeriod_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentCorrection.lean/declarations/distance-mul-sampledtriangularkernelatoctaveperiod-le.md) | 34 | `result-track:604ec18b9a5a0cb9691509669a784976ff5f53e11c5b8c250138ade0b17d3605` |
+| 4 | `def` | [NonAliasingFejerFirstMomentHarmonicBoundClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentCorrection.lean/declarations/nonaliasingfejerfirstmomentharmonicboundclaim.md) | 63 | `declaration-track:5cd77cf51960e4c8e7286e25569f080f8d0801f3489d41971433cf5c4c43e72a` |
+| 5 | `structure` | [NonAliasingFejerFirstMomentAccepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentCorrection.lean/declarations/nonaliasingfejerfirstmomentaccepted.md) | 75 | `declaration-track:913d872ed1ce276fa4fcd6cdbfe5590b9ba792b52030dcb2be6a140188c5ff56` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

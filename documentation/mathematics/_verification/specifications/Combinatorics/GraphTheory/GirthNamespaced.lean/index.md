@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/GirthNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/GirthNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GirthNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GirthNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [egirth](../../../../../Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/egirth.md) | 40 | `declaration-track:34388b449ac23be62bf96f3f86834d90680650481edb24e7cd3efbd2188e6ca8` |
-| 2 | `lemma` | [le_egirth](../../../../../Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/le-egirth.md) | 44 | `result-track:103203403bb43f535ffa47f9b8bfbf1025bac2b93c524e5408b66a955474dae6` |
-| 3 | `lemma` | [egirth_eq_top](../../../../../Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/egirth-eq-top.md) | 48 | `result-track:0f3832b0fcef8246cb28357644fbae7ce196ff72177b853ff12ef4a95f0126c7` |
-| 4 | `lemma` | [egirth_anti](../../../../../Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/egirth-anti.md) | 52 | `result-track:ae687bf32bd07d50e5ceef599b3399658cee72dd2934c950752493c238c6515b` |
-| 5 | `lemma` | [exists_egirth_eq_length](../../../../../Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/exists-egirth-eq-length.md) | 55 | `result-track:c3cdb51bce026fcc01bf4f3302fea43d57f8ffbfdae4f03603c872432a7bfe28` |
-| 6 | `lemma` | [three_le_egirth](../../../../../Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/three-le-egirth.md) | 64 | `result-track:09e830b766340565760c7484eddc0a98e04577afdf8b69f9b9a6bfd6a58936b4` |
-| 7 | `lemma` | [egirth_bot](../../../../../Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/egirth-bot.md) | 73 | `result-track:170000daf43fe2524ab62e87f877d247cde7dd1e40edc27cd02af140294ca1ab` |
-| 8 | `def` | [girth](../../../../../Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/girth.md) | 84 | `declaration-track:eb568edfa96432cf19baa02a9fa8cec5f71e254cb2400d946357f6a30a599a80` |
-| 9 | `lemma` | [three_le_girth](../../../../../Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/three-le-girth.md) | 87 | `result-track:8836a688cd04b085ed1a7253e1489192516f7d68af0d32e1379103744e3ed537` |
-| 10 | `lemma` | [girth_eq_zero](../../../../../Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/girth-eq-zero.md) | 90 | `result-track:df941407c902a1180d1a374230a885dac48be383e469bfd00896ace26b8e7611` |
-| 11 | `lemma` | [girth_anti](../../../../../Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/girth-anti.md) | 95 | `result-track:d0f780b7f723e404b8648aa3798510f0269f94bdb25fd2326e737a2ddf54cd9b` |
-| 12 | `lemma` | [exists_girth_eq_length](../../../../../Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/exists-girth-eq-length.md) | 98 | `result-track:6348a879e23d693c8b2804a418669b4968273c56f57aec34aff109daacf4ed93` |
-| 13 | `lemma` | [girth_bot](../../../../../Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/girth-bot.md) | 105 | `result-track:14430d6c482d53fe7428c0714c0577175707b648b59eca37635363961218e0be` |
+| 1 | `def` | [egirth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/egirth.md) | 40 | `declaration-track:34388b449ac23be62bf96f3f86834d90680650481edb24e7cd3efbd2188e6ca8` |
+| 2 | `lemma` | [le_egirth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/le-egirth.md) | 44 | `result-track:103203403bb43f535ffa47f9b8bfbf1025bac2b93c524e5408b66a955474dae6` |
+| 3 | `lemma` | [egirth_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/egirth-eq-top.md) | 48 | `result-track:0f3832b0fcef8246cb28357644fbae7ce196ff72177b853ff12ef4a95f0126c7` |
+| 4 | `lemma` | [egirth_anti](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/egirth-anti.md) | 52 | `result-track:ae687bf32bd07d50e5ceef599b3399658cee72dd2934c950752493c238c6515b` |
+| 5 | `lemma` | [exists_egirth_eq_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/exists-egirth-eq-length.md) | 55 | `result-track:c3cdb51bce026fcc01bf4f3302fea43d57f8ffbfdae4f03603c872432a7bfe28` |
+| 6 | `lemma` | [three_le_egirth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/three-le-egirth.md) | 64 | `result-track:09e830b766340565760c7484eddc0a98e04577afdf8b69f9b9a6bfd6a58936b4` |
+| 7 | `lemma` | [egirth_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/egirth-bot.md) | 73 | `result-track:170000daf43fe2524ab62e87f877d247cde7dd1e40edc27cd02af140294ca1ab` |
+| 8 | `def` | [girth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/girth.md) | 84 | `declaration-track:eb568edfa96432cf19baa02a9fa8cec5f71e254cb2400d946357f6a30a599a80` |
+| 9 | `lemma` | [three_le_girth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/three-le-girth.md) | 87 | `result-track:8836a688cd04b085ed1a7253e1489192516f7d68af0d32e1379103744e3ed537` |
+| 10 | `lemma` | [girth_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/girth-eq-zero.md) | 90 | `result-track:df941407c902a1180d1a374230a885dac48be383e469bfd00896ace26b8e7611` |
+| 11 | `lemma` | [girth_anti](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/girth-anti.md) | 95 | `result-track:d0f780b7f723e404b8648aa3798510f0269f94bdb25fd2326e737a2ddf54cd9b` |
+| 12 | `lemma` | [exists_girth_eq_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/exists-girth-eq-length.md) | 98 | `result-track:6348a879e23d693c8b2804a418669b4968273c56f57aec34aff109daacf4ed93` |
+| 13 | `lemma` | [girth_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GirthNamespaced.lean/declarations/girth-bot.md) | 105 | `result-track:14430d6c482d53fe7428c0714c0577175707b648b59eca37635363961218e0be` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

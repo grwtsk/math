@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ADdda83bd1a214a12Namespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ADdda83bd1a214a12Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ADdda83bd1a214a12Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ADdda83bd1a214a12Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,7 +61,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [NamingEventKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ADdda83bd1a214a12Namespaced.lean/declarations/namingeventkind.md) | 28 | `declaration-track:0fedc501ecb7a5a4fc808c13f3d90c979f9d7b2d639991c131fc13cdc9d1fcf3` |
+| 1 | `inductive` | [NamingEventKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ADdda83bd1a214a12Namespaced.lean/declarations/namingeventkind.md) | 28 | `declaration-track:0fedc501ecb7a5a4fc808c13f3d90c979f9d7b2d639991c131fc13cdc9d1fcf3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

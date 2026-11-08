@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/HopfAlgebraTensorProductNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/HopfAlgebraTensorProductNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraTensorProductNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraTensorProductNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/HopfAlgebraTensorProductNamespaced.lean/declarations/instance.md) | 32 | `declaration-track:61667b8778246a98af563eb566709f9b415fc3c27e984e70da1e2f8167ba633d` |
-| 2 | `theorem` | [antipode_def](../../../../CommutativeAlgebra/HopfAlgebraTensorProductNamespaced.lean/declarations/antipode-def.md) | 56 | `result-track:f2b752b6e76a99e70432a928b03627d0ed7a84abf61bc90449e617f59bb86d49` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraTensorProductNamespaced.lean/declarations/instance.md) | 32 | `declaration-track:61667b8778246a98af563eb566709f9b415fc3c27e984e70da1e2f8167ba633d` |
+| 2 | `theorem` | [antipode_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraTensorProductNamespaced.lean/declarations/antipode-def.md) | 56 | `result-track:f2b752b6e76a99e70432a928b03627d0ed7a84abf61bc90449e617f59bb86d49` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

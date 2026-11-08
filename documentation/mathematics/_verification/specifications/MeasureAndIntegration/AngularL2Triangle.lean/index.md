@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/AngularL2Triangle.lean/index.md) · [Full source](../../../../MeasureAndIntegration/AngularL2Triangle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AngularL2Triangle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AngularL2Triangle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sqrt_normalized_integral_eq_norm](../../../../MeasureAndIntegration/AngularL2Triangle.lean/declarations/sqrt-normalized-integral-eq-norm.md) | 11 | `result-track:b6d828374430939b6db5ea0eaa12842efd1630819b894eacd6005973a0096148` |
-| 2 | `theorem` | [sqrt_normalized_integral_add_le](../../../../MeasureAndIntegration/AngularL2Triangle.lean/declarations/sqrt-normalized-integral-add-le.md) | 17 | `result-track:fff907b3eebf3264a46611e66926dfdcd8f8a0dedb7ef37c32d7cec897e4e665` |
+| 1 | `theorem` | [sqrt_normalized_integral_eq_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AngularL2Triangle.lean/declarations/sqrt-normalized-integral-eq-norm.md) | 11 | `result-track:b6d828374430939b6db5ea0eaa12842efd1630819b894eacd6005973a0096148` |
+| 2 | `theorem` | [sqrt_normalized_integral_add_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AngularL2Triangle.lean/declarations/sqrt-normalized-integral-add-le.md) | 17 | `result-track:fff907b3eebf3264a46611e66926dfdcd8f8a0dedb7ef37c32d7cec897e4e665` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

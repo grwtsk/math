@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceResidualNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceResidualNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceResidualNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceResidualNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ResidualTraceCompensation](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceResidualNamespaced.lean/declarations/residualtracecompensation.md) | 25 | `declaration-track:7b13ff6deb8fd72977fe1ce98ecbb2c5546c4ad0336611388f04640bad93ff78` |
-| 2 | `theorem` | [residual_packet_identity](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceResidualNamespaced.lean/declarations/residual-packet-identity.md) | 67 | `result-track:34d4379b585cf491484f8b56e889c6aa6852ff89484c65877e33060dc902cb0b` |
-| 3 | `theorem` | [residual_packet_bound](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceResidualNamespaced.lean/declarations/residual-packet-bound.md) | 88 | `result-track:80b5920757e14efa491521506963c2fc67abe5f6dacf352fe253ac4a067cd717` |
+| 1 | `structure` | [ResidualTraceCompensation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceResidualNamespaced.lean/declarations/residualtracecompensation.md) | 25 | `declaration-track:7b13ff6deb8fd72977fe1ce98ecbb2c5546c4ad0336611388f04640bad93ff78` |
+| 2 | `theorem` | [residual_packet_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceResidualNamespaced.lean/declarations/residual-packet-identity.md) | 67 | `result-track:34d4379b585cf491484f8b56e889c6aa6852ff89484c65877e33060dc902cb0b` |
+| 3 | `theorem` | [residual_packet_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceResidualNamespaced.lean/declarations/residual-packet-bound.md) | 88 | `result-track:80b5920757e14efa491521506963c2fc67abe5f6dacf352fe253ac4a067cd717` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

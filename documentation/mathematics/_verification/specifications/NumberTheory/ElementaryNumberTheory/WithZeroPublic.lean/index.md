@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toNNReal](../../../../../NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/declarations/tonnreal.md) | 45 | `declaration-track:fe3c1822996297ecac2c27b45b98c412d47cd00d5272fffd386f3cd2cbc24780` |
-| 2 | `theorem` | [toNNReal_pos_apply](../../../../../NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/declarations/tonnreal-pos-apply.md) | 62 | `result-track:93a58da2c4992aec53f35cec9de3a29d465db56474fce746cf056eb1c611da0e` |
-| 3 | `theorem` | [toNNReal_neg_apply](../../../../../NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/declarations/tonnreal-neg-apply.md) | 67 | `result-track:6d26454da1676cd1ee87d65d02f5f8dc9fa038d1a0c730ec760fd14d52e5affa` |
-| 4 | `theorem` | [toNNReal_ne_zero](../../../../../NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/declarations/tonnreal-ne-zero.md) | 72 | `result-track:915f98161b4817726d0a8b0e7a9723372da63af1b0831575651b35c02e2457f7` |
-| 5 | `theorem` | [toNNReal_pos](../../../../../NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/declarations/tonnreal-pos.md) | 76 | `result-track:ea179d58803bf943cbac82a5b09956b42947ea57fba8e188251362d6f9324d94` |
-| 6 | `theorem` | [toNNReal_strictMono](../../../../../NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/declarations/tonnreal-strictmono.md) | 81 | `result-track:f30112f594ed5436f6ffdf97c67f1e71ea27d4042639dfdda95d5e5782e5d725` |
-| 7 | `theorem` | [toNNReal_eq_one_iff](../../../../../NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/declarations/tonnreal-eq-one-iff.md) | 90 | `result-track:f411092878764fb0085b69afd21d9a5201819a928f5829dac8e310dea9cea394` |
-| 8 | `theorem` | [toNNReal_lt_one_iff](../../../../../NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/declarations/tonnreal-lt-one-iff.md) | 98 | `result-track:7c545171ded7a25b05a6933c3390bca4edb7a1cd18fb5e21b7d878008458d23f` |
-| 9 | `theorem` | [toNNReal_le_one_iff](../../../../../NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/declarations/tonnreal-le-one-iff.md) | 102 | `result-track:c52476474a005ca5d23334722a0abf997a91d185bfe56ef34329e0179edcf982` |
+| 1 | `def` | [toNNReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/declarations/tonnreal.md) | 45 | `declaration-track:fe3c1822996297ecac2c27b45b98c412d47cd00d5272fffd386f3cd2cbc24780` |
+| 2 | `theorem` | [toNNReal_pos_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/declarations/tonnreal-pos-apply.md) | 62 | `result-track:93a58da2c4992aec53f35cec9de3a29d465db56474fce746cf056eb1c611da0e` |
+| 3 | `theorem` | [toNNReal_neg_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/declarations/tonnreal-neg-apply.md) | 67 | `result-track:6d26454da1676cd1ee87d65d02f5f8dc9fa038d1a0c730ec760fd14d52e5affa` |
+| 4 | `theorem` | [toNNReal_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/declarations/tonnreal-ne-zero.md) | 72 | `result-track:915f98161b4817726d0a8b0e7a9723372da63af1b0831575651b35c02e2457f7` |
+| 5 | `theorem` | [toNNReal_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/declarations/tonnreal-pos.md) | 76 | `result-track:ea179d58803bf943cbac82a5b09956b42947ea57fba8e188251362d6f9324d94` |
+| 6 | `theorem` | [toNNReal_strictMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/declarations/tonnreal-strictmono.md) | 81 | `result-track:f30112f594ed5436f6ffdf97c67f1e71ea27d4042639dfdda95d5e5782e5d725` |
+| 7 | `theorem` | [toNNReal_eq_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/declarations/tonnreal-eq-one-iff.md) | 90 | `result-track:f411092878764fb0085b69afd21d9a5201819a928f5829dac8e310dea9cea394` |
+| 8 | `theorem` | [toNNReal_lt_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/declarations/tonnreal-lt-one-iff.md) | 98 | `result-track:7c545171ded7a25b05a6933c3390bca4edb7a1cd18fb5e21b7d878008458d23f` |
+| 9 | `theorem` | [toNNReal_le_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZeroPublic.lean/declarations/tonnreal-le-one-iff.md) | 102 | `result-track:c52476474a005ca5d23334722a0abf997a91d185bfe56ef34329e0179edcf982` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/CircumcircleNamespaced.lean/index.md) · [Full source](../../../../Geometry/CircumcircleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CircumcircleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CircumcircleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CircumcircleDatum](../../../../Geometry/CircumcircleNamespaced.lean/declarations/circumcircledatum.md) | 23 | `declaration-track:98d64bb5241e04de9f23f53f1786ed9159bea5616484a018ff7a92c7e656c088` |
+| 1 | `structure` | [CircumcircleDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CircumcircleNamespaced.lean/declarations/circumcircledatum.md) | 23 | `declaration-track:98d64bb5241e04de9f23f53f1786ed9159bea5616484a018ff7a92c7e656c088` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

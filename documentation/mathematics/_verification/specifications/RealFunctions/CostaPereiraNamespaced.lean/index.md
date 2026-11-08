@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CostaPereiraNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/CostaPereiraNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereiraNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereiraNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sublemma_1_1](../../../../RealFunctions/CostaPereiraNamespaced.lean/declarations/sublemma-1-1.md) | 38 | `result-track:7b4fecda5b28918fcb1c1ac25778f1529aeaba586d89c2eb49467aa4baef8358` |
-| 2 | `theorem` | [sublemma_1_2](../../../../RealFunctions/CostaPereiraNamespaced.lean/declarations/sublemma-1-2.md) | 99 | `result-track:d2877528821ecb15b59ba2d0d033bbc00f748400533bc772a83b93f9cfd06e7c` |
-| 3 | `theorem` | [sublemma_1_3](../../../../RealFunctions/CostaPereiraNamespaced.lean/declarations/sublemma-1-3.md) | 120 | `result-track:9c99bb8252e3c348f7951b5501e36db26c7bedc7bea4cfba2f5d820345e66bd9` |
-| 4 | `theorem` | [sublemma_1_4](../../../../RealFunctions/CostaPereiraNamespaced.lean/declarations/sublemma-1-4.md) | 163 | `result-track:781416b597b696789aa111bdfc3870cb286b28b80c0715700745c9bf0a65e589` |
-| 5 | `theorem` | [sublemma_1_5](../../../../RealFunctions/CostaPereiraNamespaced.lean/declarations/sublemma-1-5.md) | 240 | `result-track:f3666821e9339063d0dc2c891c0619d2b569bfc23237fa8ebef81e608d0b31f1` |
-| 6 | `theorem` | [sublemma_1_6](../../../../RealFunctions/CostaPereiraNamespaced.lean/declarations/sublemma-1-6.md) | 345 | `result-track:52cc7d8b8889c3e894fda79f2e2e115553bfcff4a3196cfa40b6047421cbeb19` |
-| 7 | `theorem` | [sublemma_1_7](../../../../RealFunctions/CostaPereiraNamespaced.lean/declarations/sublemma-1-7.md) | 375 | `result-track:8c6d41a11c0d36084f3039a59adcd7ab89d73c03be62eb6f405dd946dd607647` |
-| 8 | `theorem` | [sublemma_1_8](../../../../RealFunctions/CostaPereiraNamespaced.lean/declarations/sublemma-1-8.md) | 494 | `result-track:f6eb1de7901e0ddd7a2c466ac39a3c15948b40121a26e86731a2207d43abbc27` |
-| 9 | `theorem` | [theorem_1a](../../../../RealFunctions/CostaPereiraNamespaced.lean/declarations/theorem-1a.md) | 670 | `result-track:2d0bfff6f4e242348166c27fd385688ac43611ee33df15675fb4b34b6573bb62` |
-| 10 | `theorem` | [theorem_1b](../../../../RealFunctions/CostaPereiraNamespaced.lean/declarations/theorem-1b.md) | 687 | `result-track:ce473b9bc29761574450945054acf282d59eee017c0d487486991cc287b17d2a` |
+| 1 | `theorem` | [sublemma_1_1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereiraNamespaced.lean/declarations/sublemma-1-1.md) | 38 | `result-track:7b4fecda5b28918fcb1c1ac25778f1529aeaba586d89c2eb49467aa4baef8358` |
+| 2 | `theorem` | [sublemma_1_2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereiraNamespaced.lean/declarations/sublemma-1-2.md) | 99 | `result-track:d2877528821ecb15b59ba2d0d033bbc00f748400533bc772a83b93f9cfd06e7c` |
+| 3 | `theorem` | [sublemma_1_3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereiraNamespaced.lean/declarations/sublemma-1-3.md) | 120 | `result-track:9c99bb8252e3c348f7951b5501e36db26c7bedc7bea4cfba2f5d820345e66bd9` |
+| 4 | `theorem` | [sublemma_1_4](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereiraNamespaced.lean/declarations/sublemma-1-4.md) | 163 | `result-track:781416b597b696789aa111bdfc3870cb286b28b80c0715700745c9bf0a65e589` |
+| 5 | `theorem` | [sublemma_1_5](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereiraNamespaced.lean/declarations/sublemma-1-5.md) | 240 | `result-track:f3666821e9339063d0dc2c891c0619d2b569bfc23237fa8ebef81e608d0b31f1` |
+| 6 | `theorem` | [sublemma_1_6](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereiraNamespaced.lean/declarations/sublemma-1-6.md) | 345 | `result-track:52cc7d8b8889c3e894fda79f2e2e115553bfcff4a3196cfa40b6047421cbeb19` |
+| 7 | `theorem` | [sublemma_1_7](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereiraNamespaced.lean/declarations/sublemma-1-7.md) | 375 | `result-track:8c6d41a11c0d36084f3039a59adcd7ab89d73c03be62eb6f405dd946dd607647` |
+| 8 | `theorem` | [sublemma_1_8](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereiraNamespaced.lean/declarations/sublemma-1-8.md) | 494 | `result-track:f6eb1de7901e0ddd7a2c466ac39a3c15948b40121a26e86731a2207d43abbc27` |
+| 9 | `theorem` | [theorem_1a](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereiraNamespaced.lean/declarations/theorem-1a.md) | 670 | `result-track:2d0bfff6f4e242348166c27fd385688ac43611ee33df15675fb4b34b6573bb62` |
+| 10 | `theorem` | [theorem_1b](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereiraNamespaced.lean/declarations/theorem-1b.md) | 687 | `result-track:ce473b9bc29761574450945054acf282d59eee017c0d487486991cc287b17d2a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

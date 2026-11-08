@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/PrimeInfinitePublic.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/PrimeInfinitePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeInfinitePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeInfinitePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_infinite_primes](../../../../../NumberTheory/ElementaryNumberTheory/PrimeInfinitePublic.lean/declarations/exists-infinite-primes.md) | 35 | `result-track:3a899575f6dc531722c3d615301a0de4e1c5483c5cb9dc4864d547da2486b4db` |
-| 2 | `theorem` | [not_bddAbove_setOfPred_prime](../../../../../NumberTheory/ElementaryNumberTheory/PrimeInfinitePublic.lean/declarations/not-bddabove-setofpred-prime.md) | 47 | `result-track:f23a6bc7993a40f0ffd6c5e190904cdf5d883ebf203cf127bbcf572b4020ab2d` |
+| 1 | `theorem` | [exists_infinite_primes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeInfinitePublic.lean/declarations/exists-infinite-primes.md) | 35 | `result-track:3a899575f6dc531722c3d615301a0de4e1c5483c5cb9dc4864d547da2486b4db` |
+| 2 | `theorem` | [not_bddAbove_setOfPred_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeInfinitePublic.lean/declarations/not-bddabove-setofpred-prime.md) | 47 | `result-track:f23a6bc7993a40f0ffd6c5e190904cdf5d883ebf203cf127bbcf572b4020ab2d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

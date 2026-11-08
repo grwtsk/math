@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TotalIngestionNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TotalIngestionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TotalIngestionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TotalIngestionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FederatedIngestion](../../../../../ComputerScience/AlgorithmsInComputerScience/TotalIngestionNamespaced.lean/declarations/federatedingestion.md) | 23 | `declaration-track:ae0f70f9fa4f8cda9c8af18ad10964d7f2746e3161753d2f3f3dab9f80ff1e11` |
-| 2 | `structure` | [Sound](../../../../../ComputerScience/AlgorithmsInComputerScience/TotalIngestionNamespaced.lean/declarations/sound.md) | 46 | `declaration-track:8147e58a6bdd8af521fcc2d13e2ae620c3408c305ef4d93f2edea8f1fa83c5a8` |
-| 3 | `theorem` | [sound](../../../../../ComputerScience/AlgorithmsInComputerScience/TotalIngestionNamespaced.lean/declarations/sound-source-edition-2.md) | 65 | `result-track:a0259da81145ad9253e83a9f9fab59e1ff310756774815475eeafcc5c3606438` |
+| 1 | `structure` | [FederatedIngestion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TotalIngestionNamespaced.lean/declarations/federatedingestion.md) | 23 | `declaration-track:ae0f70f9fa4f8cda9c8af18ad10964d7f2746e3161753d2f3f3dab9f80ff1e11` |
+| 2 | `structure` | [Sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TotalIngestionNamespaced.lean/declarations/sound.md) | 46 | `declaration-track:8147e58a6bdd8af521fcc2d13e2ae620c3408c305ef4d93f2edea8f1fa83c5a8` |
+| 3 | `theorem` | [sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TotalIngestionNamespaced.lean/declarations/sound-source-edition-2.md) | 65 | `result-track:a0259da81145ad9253e83a9f9fab59e1ff310756774815475eeafcc5c3606438` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

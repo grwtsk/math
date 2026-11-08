@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/IntUnits.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/IntUnits.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntUnits.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntUnits.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [units_eq_one_or](../../../../AssociativeRingsAndAlgebras/IntUnits.lean/declarations/units-eq-one-or.md) | 28 | `result-track:660b1b89c2a44f1a3f09a226ded07bc303ff40d3610b1834a6ca725d45b85f5c` |
-| 2 | `lemma` | [units_ne_iff_eq_neg](../../../../AssociativeRingsAndAlgebras/IntUnits.lean/declarations/units-ne-iff-eq-neg.md) | 31 | `result-track:33e95771a02aef12d02689a44638bc24ac72845cb16bfd6f03596dc2b244b77b` |
+| 1 | `lemma` | [units_eq_one_or](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntUnits.lean/declarations/units-eq-one-or.md) | 28 | `result-track:660b1b89c2a44f1a3f09a226ded07bc303ff40d3610b1834a6ca725d45b85f5c` |
+| 2 | `lemma` | [units_ne_iff_eq_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntUnits.lean/declarations/units-ne-iff-eq-neg.md) | 31 | `result-track:33e95771a02aef12d02689a44638bc24ac72845cb16bfd6f03596dc2b244b77b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

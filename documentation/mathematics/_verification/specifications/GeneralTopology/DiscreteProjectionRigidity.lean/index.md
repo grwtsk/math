@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/DiscreteProjectionRigidity.lean/index.md) · [Full source](../../../../GeneralTopology/DiscreteProjectionRigidity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteProjectionRigidity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteProjectionRigidity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.Algebra.DiscreteProjection`](../../../../GeneralTopology/DiscreteProjection.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.Topology.Algebra.DiscreteProjection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteProjection.lean/index.md) — import line 10; pinned internal source present.
 - `Mathlib.Topology.LocallyConstant.Basic` — import line 11; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [observation_eq](../../../../GeneralTopology/DiscreteProjectionRigidity.lean/declarations/observation-eq.md) | 23 | `result-track:eee033159ecde7f7526ee2d1940cf9cf7b7c27a935eb9d556ba6f9b13671c29e` |
-| 2 | `theorem` | [path_eq](../../../../GeneralTopology/DiscreteProjectionRigidity.lean/declarations/path-eq.md) | 35 | `result-track:d1a123c317078e50881421f1055260f7dd83530169f7bcca3b0a04b12443c144` |
-| 3 | `theorem` | [not_continuous_of_observation_ne](../../../../GeneralTopology/DiscreteProjectionRigidity.lean/declarations/not-continuous-of-observation-ne.md) | 45 | `result-track:cecab582fa315d3ce09f8fffdf96cf41cbcababb8c0f79c67aa7c05d341f4393` |
+| 1 | `theorem` | [observation_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteProjectionRigidity.lean/declarations/observation-eq.md) | 23 | `result-track:eee033159ecde7f7526ee2d1940cf9cf7b7c27a935eb9d556ba6f9b13671c29e` |
+| 2 | `theorem` | [path_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteProjectionRigidity.lean/declarations/path-eq.md) | 35 | `result-track:d1a123c317078e50881421f1055260f7dd83530169f7bcca3b0a04b12443c144` |
+| 3 | `theorem` | [not_continuous_of_observation_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteProjectionRigidity.lean/declarations/not-continuous-of-observation-ne.md) | 45 | `result-track:cecab582fa315d3ce09f8fffdf96cf41cbcababb8c0f79c67aa7c05d341f4393` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/ReLU.lean/index.md) · [Full source](../../../../Geometry/ReLU.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,24 +57,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LinearBound](../../../../Geometry/ReLU.lean/declarations/linearbound.md) | 48 | `declaration-track:ed8a0093af37a0e7d1ab8f58ba038f05c275cce9efb4be560d2cfdf759af4bf5` |
-| 2 | `def` | [LinearBound.eval](../../../../Geometry/ReLU.lean/declarations/linearbound-eval.md) | 54 | `declaration-track:e766fed456c6c7b92dc16cba7188802330fed36b5f592c47981a8e51913186ca` |
-| 3 | `def` | [crossingUpperBound](../../../../Geometry/ReLU.lean/declarations/crossingupperbound.md) | 61 | `declaration-track:0328894ca9ee89feb171cb4ac2b9d821042d33d45391f92bc24ccc00f0861505` |
-| 4 | `theorem` | [crossingUpperBound_eval](../../../../Geometry/ReLU.lean/declarations/crossingupperbound-eval.md) | 67 | `result-track:e0bbd126c26fca26d5163c3ccbaa1260953c14b9ff1e7fbd02f138ee2a06fdd9` |
-| 5 | `theorem` | [upper_bound_valid](../../../../Geometry/ReLU.lean/declarations/upper-bound-valid.md) | 83 | `result-track:df7674120893f9a0f70738f6b734e5db1cd1a968292485b66eade88e3c3dc7ca` |
-| 6 | `structure` | [SymbolicBound](../../../../Geometry/ReLU.lean/declarations/symbolicbound.md) | 124 | `declaration-track:013f3fbf872521e90c1c6e08dc70fac896cc70c9aa67fbf4a2db182b1cce6d5a` |
-| 7 | `def` | [getReLURelaxation](../../../../Geometry/ReLU.lean/declarations/getrelurelaxation.md) | 132 | `declaration-track:e0da04a1da84596ead8a26afe4bb6dab1c1caec25ec8b7bb4ae1135c68d0e695` |
-| 8 | `theorem` | [lower_bound_crossing](../../../../Geometry/ReLU.lean/declarations/lower-bound-crossing.md) | 147 | `result-track:131ce2f7bdcd1d666c7a2b14764bc63e686c3f572e309424187b1cfc7ae68a3f` |
-| 9 | `theorem` | [relu_relaxation_sound](../../../../Geometry/ReLU.lean/declarations/relu-relaxation-sound.md) | 156 | `result-track:7dcd2631204cd73f1582b62290dd63910d24ebdc4b33930eb074456a4f79d58f` |
-| 10 | `def` | [LinearBound.identity](../../../../Geometry/ReLU.lean/declarations/linearbound-identity.md) | 191 | `declaration-track:207f675d15b6e53549bea5dee9a72c40636cbe4149859016598623ece568f548` |
-| 11 | `def` | [LinearBound.zero](../../../../Geometry/ReLU.lean/declarations/linearbound-zero.md) | 194 | `declaration-track:68e8c7827493e059d659e9fd942c5e190312b653c49232f5a6b7d656bcd71efc` |
-| 12 | `theorem` | [LinearBound.eval_identity](../../../../Geometry/ReLU.lean/declarations/linearbound-eval-identity.md) | 197 | `result-track:f6b18fcb97925d16b17216d204d9fd90fdc36a4ab95a098d4a7ac0cbd5bc5aa1` |
-| 13 | `theorem` | [LinearBound.eval_zero](../../../../Geometry/ReLU.lean/declarations/linearbound-eval-zero.md) | 201 | `result-track:912aa2791206ed5438762ded75b6164099af345ea8957d1a7eb5d4b9afc69a50` |
-| 14 | `def` | [LinearBound.compose](../../../../Geometry/ReLU.lean/declarations/linearbound-compose.md) | 205 | `declaration-track:d9c3373b37bd5ef1ff4857385a37687d64b5319843f9efc3ae0b2d2e61349626` |
-| 15 | `theorem` | [LinearBound.eval_compose](../../../../Geometry/ReLU.lean/declarations/linearbound-eval-compose.md) | 209 | `result-track:41985f18cdf452790e7ffde311dcd1882bc629c8cc499b04e00b6e88e795e303` |
-| 16 | `def` | [outputWidth](../../../../Geometry/ReLU.lean/declarations/outputwidth.md) | 219 | `declaration-track:49106769eee22b395ebbeb3782f477f4cadc8d7c3f5b7e344f15e34e9cda9f97` |
-| 17 | `theorem` | [crossingUpperBound_at_u](../../../../Geometry/ReLU.lean/declarations/crossingupperbound-at-u.md) | 225 | `result-track:c361d661f7f7e0ea8a0bc2fd8c0d80854c06136d9636cf6988ddbf963da1f2c7` |
-| 18 | `theorem` | [crossingUpperBound_at_l](../../../../Geometry/ReLU.lean/declarations/crossingupperbound-at-l.md) | 233 | `result-track:25f939766c01e5beb2b4e746ce2a2689b02bf5561a983de329573a46d393e06e` |
+| 1 | `structure` | [LinearBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/declarations/linearbound.md) | 48 | `declaration-track:ed8a0093af37a0e7d1ab8f58ba038f05c275cce9efb4be560d2cfdf759af4bf5` |
+| 2 | `def` | [LinearBound.eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/declarations/linearbound-eval.md) | 54 | `declaration-track:e766fed456c6c7b92dc16cba7188802330fed36b5f592c47981a8e51913186ca` |
+| 3 | `def` | [crossingUpperBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/declarations/crossingupperbound.md) | 61 | `declaration-track:0328894ca9ee89feb171cb4ac2b9d821042d33d45391f92bc24ccc00f0861505` |
+| 4 | `theorem` | [crossingUpperBound_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/declarations/crossingupperbound-eval.md) | 67 | `result-track:e0bbd126c26fca26d5163c3ccbaa1260953c14b9ff1e7fbd02f138ee2a06fdd9` |
+| 5 | `theorem` | [upper_bound_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/declarations/upper-bound-valid.md) | 83 | `result-track:df7674120893f9a0f70738f6b734e5db1cd1a968292485b66eade88e3c3dc7ca` |
+| 6 | `structure` | [SymbolicBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/declarations/symbolicbound.md) | 124 | `declaration-track:013f3fbf872521e90c1c6e08dc70fac896cc70c9aa67fbf4a2db182b1cce6d5a` |
+| 7 | `def` | [getReLURelaxation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/declarations/getrelurelaxation.md) | 132 | `declaration-track:e0da04a1da84596ead8a26afe4bb6dab1c1caec25ec8b7bb4ae1135c68d0e695` |
+| 8 | `theorem` | [lower_bound_crossing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/declarations/lower-bound-crossing.md) | 147 | `result-track:131ce2f7bdcd1d666c7a2b14764bc63e686c3f572e309424187b1cfc7ae68a3f` |
+| 9 | `theorem` | [relu_relaxation_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/declarations/relu-relaxation-sound.md) | 156 | `result-track:7dcd2631204cd73f1582b62290dd63910d24ebdc4b33930eb074456a4f79d58f` |
+| 10 | `def` | [LinearBound.identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/declarations/linearbound-identity.md) | 191 | `declaration-track:207f675d15b6e53549bea5dee9a72c40636cbe4149859016598623ece568f548` |
+| 11 | `def` | [LinearBound.zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/declarations/linearbound-zero.md) | 194 | `declaration-track:68e8c7827493e059d659e9fd942c5e190312b653c49232f5a6b7d656bcd71efc` |
+| 12 | `theorem` | [LinearBound.eval_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/declarations/linearbound-eval-identity.md) | 197 | `result-track:f6b18fcb97925d16b17216d204d9fd90fdc36a4ab95a098d4a7ac0cbd5bc5aa1` |
+| 13 | `theorem` | [LinearBound.eval_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/declarations/linearbound-eval-zero.md) | 201 | `result-track:912aa2791206ed5438762ded75b6164099af345ea8957d1a7eb5d4b9afc69a50` |
+| 14 | `def` | [LinearBound.compose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/declarations/linearbound-compose.md) | 205 | `declaration-track:d9c3373b37bd5ef1ff4857385a37687d64b5319843f9efc3ae0b2d2e61349626` |
+| 15 | `theorem` | [LinearBound.eval_compose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/declarations/linearbound-eval-compose.md) | 209 | `result-track:41985f18cdf452790e7ffde311dcd1882bc629c8cc499b04e00b6e88e795e303` |
+| 16 | `def` | [outputWidth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/declarations/outputwidth.md) | 219 | `declaration-track:49106769eee22b395ebbeb3782f477f4cadc8d7c3f5b7e344f15e34e9cda9f97` |
+| 17 | `theorem` | [crossingUpperBound_at_u](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/declarations/crossingupperbound-at-u.md) | 225 | `result-track:c361d661f7f7e0ea8a0bc2fd8c0d80854c06136d9636cf6988ddbf963da1f2c7` |
+| 18 | `theorem` | [crossingUpperBound_at_l](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ReLU.lean/declarations/crossingupperbound-at-l.md) | 233 | `result-track:25f939766c01e5beb2b4e746ce2a2689b02bf5561a983de329573a46d393e06e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

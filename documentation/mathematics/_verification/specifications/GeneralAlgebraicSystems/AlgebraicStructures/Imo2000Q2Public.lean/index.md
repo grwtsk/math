@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo2000Q2Public.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo2000Q2Public.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo2000Q2Public.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo2000Q2Public.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [prod_sub_add_le](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo2000Q2Public.lean/declarations/prod-sub-add-le.md) | 42 | `result-track:25638f833ec6f693d696448573c125ff6c42ea9b03986b8184e2295b3bc7c5ee` |
-| 2 | `theorem` | [imo2000_q2](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo2000Q2Public.lean/declarations/imo2000-q2.md) | 77 | `result-track:1479e5288e29d779cf7512d7083a4451e3f30573430549eebe4871f2b721cc17` |
+| 1 | `lemma` | [prod_sub_add_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo2000Q2Public.lean/declarations/prod-sub-add-le.md) | 42 | `result-track:25638f833ec6f693d696448573c125ff6c42ea9b03986b8184e2295b3bc7c5ee` |
+| 2 | `theorem` | [imo2000_q2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo2000Q2Public.lean/declarations/imo2000-q2.md) | 77 | `result-track:1479e5288e29d779cf7512d7083a4451e3f30573430549eebe4871f2b721cc17` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

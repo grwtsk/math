@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessModularMonodromyWitnessCertified.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessModularMonodromyWitnessCertified.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessModularMonodromyWitnessCertified.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessModularMonodromyWitnessCertified.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [modular_monodromy_witness_certified](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessModularMonodromyWitnessCertified.lean/declarations/modular-monodromy-witness-certified.md) | 19 | `result-track:9e0a689c5db8b6d690c198d8b94ffe6fd6ea7d2c2f0b23e8af7aef1c05408ec6` |
+| 1 | `theorem` | [modular_monodromy_witness_certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessModularMonodromyWitnessCertified.lean/declarations/modular-monodromy-witness-certified.md) | 19 | `result-track:9e0a689c5db8b6d690c198d8b94ffe6fd6ea7d2c2f0b23e8af7aef1c05408ec6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

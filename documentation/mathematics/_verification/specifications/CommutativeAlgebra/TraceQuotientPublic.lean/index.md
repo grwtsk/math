@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/TraceQuotientPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/TraceQuotientPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceQuotientPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceQuotientPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Algebra.trace_quotient_mk](../../../../CommutativeAlgebra/TraceQuotientPublic.lean/declarations/algebra-trace-quotient-mk.md) | 40 | `result-track:48b4aff813656d0e4f8e56ca39b0b1e208308f4d790e5c09ca7f3619f1b668cc` |
-| 2 | `lemma` | [trace_quotient_eq_trace_localization_quotient](../../../../CommutativeAlgebra/TraceQuotientPublic.lean/declarations/trace-quotient-eq-trace-localization-quotient.md) | 69 | `result-track:c500211f6fb8d472ad588f7ed404b1886a31a08b6a5b93823ab260691c09753f` |
-| 3 | `lemma` | [Algebra.trace_quotient_eq_of_isDedekindDomain](../../../../CommutativeAlgebra/TraceQuotientPublic.lean/declarations/algebra-trace-quotient-eq-of-isdedekinddomain.md) | 89 | `result-track:cd0fffed07fe080417d6c3c5f82475bfcd2689993382590e4cd3aab0c85fd01f` |
+| 1 | `lemma` | [Algebra.trace_quotient_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceQuotientPublic.lean/declarations/algebra-trace-quotient-mk.md) | 40 | `result-track:48b4aff813656d0e4f8e56ca39b0b1e208308f4d790e5c09ca7f3619f1b668cc` |
+| 2 | `lemma` | [trace_quotient_eq_trace_localization_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceQuotientPublic.lean/declarations/trace-quotient-eq-trace-localization-quotient.md) | 69 | `result-track:c500211f6fb8d472ad588f7ed404b1886a31a08b6a5b93823ab260691c09753f` |
+| 3 | `lemma` | [Algebra.trace_quotient_eq_of_isDedekindDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceQuotientPublic.lean/declarations/algebra-trace-quotient-eq-of-isdedekinddomain.md) | 89 | `result-track:cd0fffed07fe080417d6c3c5f82475bfcd2689993382590e4cd3aab0c85fd01f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

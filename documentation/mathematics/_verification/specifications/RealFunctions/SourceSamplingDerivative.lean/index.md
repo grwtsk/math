@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SourceSamplingDerivative.lean/index.md) · [Full source](../../../../RealFunctions/SourceSamplingDerivative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [source_derivative_zero_right](../../../../RealFunctions/SourceSamplingDerivative.lean/declarations/source-derivative-zero-right.md) | 16 | `result-track:faec4cd714c26eed4892f923c1e1da9d96ef0ab269afcfd5e14b3e7343baefc1` |
-| 2 | `theorem` | [source_difference_zero_right](../../../../RealFunctions/SourceSamplingDerivative.lean/declarations/source-difference-zero-right.md) | 25 | `result-track:87def654f30d8727b45c27227de8be4175ab01a257e9690df2989299c08a089c` |
-| 3 | `theorem` | [sampling_term_hasDerivAt](../../../../RealFunctions/SourceSamplingDerivative.lean/declarations/sampling-term-hasderivat.md) | 31 | `result-track:47eb3b5b9b0aa054daf77653897dc99a6b5228ea3f9bdbf857737a4e6408544e` |
-| 4 | `theorem` | [samplingIndices_subset_fixed](../../../../RealFunctions/SourceSamplingDerivative.lean/declarations/samplingindices-subset-fixed.md) | 51 | `result-track:2552d48183eb70ee0d3830edbac9cb1088dc5e3bd3597d4fb3de942f07ee0d5a` |
-| 5 | `theorem` | [kernel_eq_fixed_sum](../../../../RealFunctions/SourceSamplingDerivative.lean/declarations/kernel-eq-fixed-sum.md) | 61 | `result-track:aff35e96fe2e41e823273179bcc576e2923c75960c2425e6bb55e01bd3a93d00` |
-| 6 | `theorem` | [difference_sum_eq_fixed_sum](../../../../RealFunctions/SourceSamplingDerivative.lean/declarations/difference-sum-eq-fixed-sum.md) | 77 | `result-track:4d53f1872fa556ad7d0cebdfc03a7954cd3ddf61b232900c69a9093f5569a11f` |
-| 7 | `theorem` | [sourceSamplingKernel_hasDerivAt](../../../../RealFunctions/SourceSamplingDerivative.lean/declarations/sourcesamplingkernel-hasderivat.md) | 93 | `result-track:86d77d25ff43ff14c497275129ff9bcec9ea27eedc537b968fbce85f43657578` |
-| 8 | `theorem` | [sourceSamplingKernel_deriv](../../../../RealFunctions/SourceSamplingDerivative.lean/declarations/sourcesamplingkernel-deriv.md) | 119 | `result-track:cf3948945c934c2198af4273af80ed27be96f5ebf8f6048394a7089465a1fef9` |
-| 9 | `theorem` | [sourceSamplingKernel_differentiableOn](../../../../RealFunctions/SourceSamplingDerivative.lean/declarations/sourcesamplingkernel-differentiableon.md) | 126 | `result-track:822a78d34a2fe1558697019c4c83686f1b99b2d3d00920f7b674deac2b437f6f` |
+| 1 | `theorem` | [source_derivative_zero_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivative.lean/declarations/source-derivative-zero-right.md) | 16 | `result-track:faec4cd714c26eed4892f923c1e1da9d96ef0ab269afcfd5e14b3e7343baefc1` |
+| 2 | `theorem` | [source_difference_zero_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivative.lean/declarations/source-difference-zero-right.md) | 25 | `result-track:87def654f30d8727b45c27227de8be4175ab01a257e9690df2989299c08a089c` |
+| 3 | `theorem` | [sampling_term_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivative.lean/declarations/sampling-term-hasderivat.md) | 31 | `result-track:47eb3b5b9b0aa054daf77653897dc99a6b5228ea3f9bdbf857737a4e6408544e` |
+| 4 | `theorem` | [samplingIndices_subset_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivative.lean/declarations/samplingindices-subset-fixed.md) | 51 | `result-track:2552d48183eb70ee0d3830edbac9cb1088dc5e3bd3597d4fb3de942f07ee0d5a` |
+| 5 | `theorem` | [kernel_eq_fixed_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivative.lean/declarations/kernel-eq-fixed-sum.md) | 61 | `result-track:aff35e96fe2e41e823273179bcc576e2923c75960c2425e6bb55e01bd3a93d00` |
+| 6 | `theorem` | [difference_sum_eq_fixed_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivative.lean/declarations/difference-sum-eq-fixed-sum.md) | 77 | `result-track:4d53f1872fa556ad7d0cebdfc03a7954cd3ddf61b232900c69a9093f5569a11f` |
+| 7 | `theorem` | [sourceSamplingKernel_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivative.lean/declarations/sourcesamplingkernel-hasderivat.md) | 93 | `result-track:86d77d25ff43ff14c497275129ff9bcec9ea27eedc537b968fbce85f43657578` |
+| 8 | `theorem` | [sourceSamplingKernel_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivative.lean/declarations/sourcesamplingkernel-deriv.md) | 119 | `result-track:cf3948945c934c2198af4273af80ed27be96f5ebf8f6048394a7089465a1fef9` |
+| 9 | `theorem` | [sourceSamplingKernel_differentiableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivative.lean/declarations/sourcesamplingkernel-differentiableon.md) | 126 | `result-track:822a78d34a2fe1558697019c4c83686f1b99b2d3d00920f7b674deac2b437f6f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

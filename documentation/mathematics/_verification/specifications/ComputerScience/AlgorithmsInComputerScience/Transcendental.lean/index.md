@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exp](../../../../../ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/exp.md) | 47 | `declaration-track:47588b788fd61dfc7f872cb5310b33c2439ce46153de5f261f46b4cc0430063e` |
-| 2 | `def` | [expChebyshev](../../../../../ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/expchebyshev.md) | 66 | `declaration-track:5b64d4bf39cacf37dbe75b28819091b1054354707d543f0c0ebb614b9779c77c` |
-| 3 | `def` | [tanh](../../../../../ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/tanh.md) | 103 | `declaration-track:e62f125ae932e526e3b3770a545be74ab760112f3707632f874e6bf48835b81d` |
-| 4 | `def` | [tanhChebyshev](../../../../../ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/tanhchebyshev.md) | 123 | `declaration-track:db8a245e7b7aacec5a4bb04dff0c7f6ba99b747e61d6bc7fb2163f0363f83e19` |
-| 5 | `def` | [log](../../../../../ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/log.md) | 154 | `declaration-track:db896cbbc9a19f994e2ffbf0c51deb9acab7d6244c363510cdf151026d103ab8` |
-| 6 | `def` | [logChebyshev](../../../../../ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/logchebyshev.md) | 173 | `declaration-track:60270f158761efbcd2bce4ac985b46728ce3d50c3d3b8e2661d8ce973e8d585d` |
-| 7 | `def` | [sinh](../../../../../ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/sinh.md) | 211 | `declaration-track:2f2b89891d3ffa02ee432acba74e5fa6a920449ddb579f4fc0881ff24bd3a5f1` |
-| 8 | `def` | [cosh](../../../../../ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/cosh.md) | 223 | `declaration-track:dce50a4c66c4d12348d8174c1174ad2c36f499d1e3d65646d5fc3fd1385dc215` |
-| 9 | `theorem` | [mem_exp](../../../../../ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/mem-exp.md) | 234 | `result-track:dec9408286aea470f88b4a3504f9532d24ae22ec25355601009f56c4a020dd25` |
-| 10 | `theorem` | [mem_tanh](../../../../../ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/mem-tanh.md) | 302 | `result-track:0f1d0a52b7c9ecde7fe54176f78337eb888a7d823b95c997717a512c3e601c5e` |
-| 11 | `theorem` | [mem_sinh](../../../../../ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/mem-sinh.md) | 350 | `result-track:89ecc9ef425993915f4c43914e700b2916ba36bb71293daa495ca74659b58481` |
-| 12 | `theorem` | [mem_cosh](../../../../../ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/mem-cosh.md) | 361 | `result-track:79320968a77fcf7da1676b4352fd8af2fc9c918acc4015e1f3e6b2a8ffc1f33f` |
-| 13 | `theorem` | [mem_log](../../../../../ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/mem-log.md) | 371 | `result-track:d34d83d725e96e8d95c920e7334e1b5b64d6354849f60aba44f299e06132aa7d` |
+| 1 | `def` | [exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/exp.md) | 47 | `declaration-track:47588b788fd61dfc7f872cb5310b33c2439ce46153de5f261f46b4cc0430063e` |
+| 2 | `def` | [expChebyshev](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/expchebyshev.md) | 66 | `declaration-track:5b64d4bf39cacf37dbe75b28819091b1054354707d543f0c0ebb614b9779c77c` |
+| 3 | `def` | [tanh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/tanh.md) | 103 | `declaration-track:e62f125ae932e526e3b3770a545be74ab760112f3707632f874e6bf48835b81d` |
+| 4 | `def` | [tanhChebyshev](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/tanhchebyshev.md) | 123 | `declaration-track:db8a245e7b7aacec5a4bb04dff0c7f6ba99b747e61d6bc7fb2163f0363f83e19` |
+| 5 | `def` | [log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/log.md) | 154 | `declaration-track:db896cbbc9a19f994e2ffbf0c51deb9acab7d6244c363510cdf151026d103ab8` |
+| 6 | `def` | [logChebyshev](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/logchebyshev.md) | 173 | `declaration-track:60270f158761efbcd2bce4ac985b46728ce3d50c3d3b8e2661d8ce973e8d585d` |
+| 7 | `def` | [sinh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/sinh.md) | 211 | `declaration-track:2f2b89891d3ffa02ee432acba74e5fa6a920449ddb579f4fc0881ff24bd3a5f1` |
+| 8 | `def` | [cosh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/cosh.md) | 223 | `declaration-track:dce50a4c66c4d12348d8174c1174ad2c36f499d1e3d65646d5fc3fd1385dc215` |
+| 9 | `theorem` | [mem_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/mem-exp.md) | 234 | `result-track:dec9408286aea470f88b4a3504f9532d24ae22ec25355601009f56c4a020dd25` |
+| 10 | `theorem` | [mem_tanh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/mem-tanh.md) | 302 | `result-track:0f1d0a52b7c9ecde7fe54176f78337eb888a7d823b95c997717a512c3e601c5e` |
+| 11 | `theorem` | [mem_sinh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/mem-sinh.md) | 350 | `result-track:89ecc9ef425993915f4c43914e700b2916ba36bb71293daa495ca74659b58481` |
+| 12 | `theorem` | [mem_cosh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/mem-cosh.md) | 361 | `result-track:79320968a77fcf7da1676b4352fd8af2fc9c918acc4015e1f3e6b2a8ffc1f33f` |
+| 13 | `theorem` | [mem_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Transcendental.lean/declarations/mem-log.md) | 371 | `result-track:d34d83d725e96e8d95c920e7334e1b5b64d6354849f60aba44f299e06132aa7d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

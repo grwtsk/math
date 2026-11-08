@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/UnionPublic.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/UnionPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/UnionPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/UnionPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Submodule.iUnion_ssubset_of_forall_ne_top_of_card_lt](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/UnionPublic.lean/declarations/submodule-iunion-ssubset-of-forall-ne-top-of-card-lt.md) | 31 | `result-track:b86f423aa3b5c4c0570d63d92c6f00fb247401390bb801cd147945df67b6d223` |
-| 2 | `lemma` | [Submodule.exists_forall_notMem_of_forall_ne_top](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/UnionPublic.lean/declarations/submodule-exists-forall-notmem-of-forall-ne-top.md) | 88 | `result-track:6a5774c238674d364eab335e7dae668fd6001470cbeee6008fac464d7656b49b` |
-| 3 | `lemma` | [Module.Dual.exists_forall_ne_zero_of_forall_exists](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/UnionPublic.lean/declarations/module-dual-exists-forall-ne-zero-of-forall-exists.md) | 94 | `result-track:1a54574c514cf28d824029a831b8072b799a38d1f843cec94ec768b60be7c5b5` |
-| 4 | `lemma` | [Module.Dual.exists_forall_mem_ne_zero_of_forall_exists](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/UnionPublic.lean/declarations/module-dual-exists-forall-mem-ne-zero-of-forall-exists.md) | 104 | `result-track:e84d841d8b485722ae2dc9a548e825c58b34d65bfbd81d085bbee09752dc375b` |
-| 5 | `lemma` | [Module.exists_dual_forall_apply_ne_zero](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/UnionPublic.lean/declarations/module-exists-dual-forall-apply-ne-zero.md) | 112 | `result-track:fbaa186863bdb949e1548125a552a99203f5e5c8af3abddad3a0c2560bb26306` |
+| 1 | `lemma` | [Submodule.iUnion_ssubset_of_forall_ne_top_of_card_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/UnionPublic.lean/declarations/submodule-iunion-ssubset-of-forall-ne-top-of-card-lt.md) | 31 | `result-track:b86f423aa3b5c4c0570d63d92c6f00fb247401390bb801cd147945df67b6d223` |
+| 2 | `lemma` | [Submodule.exists_forall_notMem_of_forall_ne_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/UnionPublic.lean/declarations/submodule-exists-forall-notmem-of-forall-ne-top.md) | 88 | `result-track:6a5774c238674d364eab335e7dae668fd6001470cbeee6008fac464d7656b49b` |
+| 3 | `lemma` | [Module.Dual.exists_forall_ne_zero_of_forall_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/UnionPublic.lean/declarations/module-dual-exists-forall-ne-zero-of-forall-exists.md) | 94 | `result-track:1a54574c514cf28d824029a831b8072b799a38d1f843cec94ec768b60be7c5b5` |
+| 4 | `lemma` | [Module.Dual.exists_forall_mem_ne_zero_of_forall_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/UnionPublic.lean/declarations/module-dual-exists-forall-mem-ne-zero-of-forall-exists.md) | 104 | `result-track:e84d841d8b485722ae2dc9a548e825c58b34d65bfbd81d085bbee09752dc375b` |
+| 5 | `lemma` | [Module.exists_dual_forall_apply_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/UnionPublic.lean/declarations/module-exists-dual-forall-apply-ne-zero.md) | 112 | `result-track:fbaa186863bdb949e1548125a552a99203f5e5c8af3abddad3a0c2560bb26306` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

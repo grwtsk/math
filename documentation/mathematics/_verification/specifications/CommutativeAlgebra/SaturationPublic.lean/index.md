@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SaturationPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SaturationPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SaturationPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SaturationPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_saturation_iff_isUnit_algebraMap](../../../../CommutativeAlgebra/SaturationPublic.lean/declarations/mem-saturation-iff-isunit-algebramap.md) | 28 | `result-track:a4e3c42f292f10b23210cbfb629f7efc57c51c5bd6d47f9fd14e5df43d883f6c` |
-| 2 | `theorem` | [saturation_iff](../../../../CommutativeAlgebra/SaturationPublic.lean/declarations/saturation-iff.md) | 33 | `result-track:7b4a9354b0e78ac8615cfce92829d41197efad0783ec8f5eb83c1b3939efb712` |
-| 3 | `theorem` | [of_saturation_eq](../../../../CommutativeAlgebra/SaturationPublic.lean/declarations/of-saturation-eq.md) | 38 | `result-track:997b84700597ead40a312dd8c81295cd0ea636ac9dbc87d2633e3270476a95c7` |
-| 4 | `theorem` | [isLocalization_iff_of_saturation_eq](../../../../CommutativeAlgebra/SaturationPublic.lean/declarations/islocalization-iff-of-saturation-eq.md) | 43 | `result-track:c87cb179b256a182032842aee4e782ee0299d026692bd1bcd1b16f7bb068f1f5` |
-| 5 | `theorem` | [ext_saturation](../../../../CommutativeAlgebra/SaturationPublic.lean/declarations/ext-saturation.md) | 48 | `result-track:9bcfff324c124ad585b5513079be47e49b30836b29c8a17c03c38d824e1f3ebb` |
+| 1 | `theorem` | [mem_saturation_iff_isUnit_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SaturationPublic.lean/declarations/mem-saturation-iff-isunit-algebramap.md) | 28 | `result-track:a4e3c42f292f10b23210cbfb629f7efc57c51c5bd6d47f9fd14e5df43d883f6c` |
+| 2 | `theorem` | [saturation_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SaturationPublic.lean/declarations/saturation-iff.md) | 33 | `result-track:7b4a9354b0e78ac8615cfce92829d41197efad0783ec8f5eb83c1b3939efb712` |
+| 3 | `theorem` | [of_saturation_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SaturationPublic.lean/declarations/of-saturation-eq.md) | 38 | `result-track:997b84700597ead40a312dd8c81295cd0ea636ac9dbc87d2633e3270476a95c7` |
+| 4 | `theorem` | [isLocalization_iff_of_saturation_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SaturationPublic.lean/declarations/islocalization-iff-of-saturation-eq.md) | 43 | `result-track:c87cb179b256a182032842aee4e782ee0299d026692bd1bcd1b16f7bb068f1f5` |
+| 5 | `theorem` | [ext_saturation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SaturationPublic.lean/declarations/ext-saturation.md) | 48 | `result-track:9bcfff324c124ad585b5513079be47e49b30836b29c8a17c03c38d824e1f3ebb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

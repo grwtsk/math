@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ZerothHomotopyNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/ZerothHomotopyNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZerothHomotopyNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZerothHomotopyNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toSSetObj₁Equiv](../../../../GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/tossetobj-equiv.md) | 42 | `declaration-track:9771b908cff1841d6ac99c69aed19a81ea58ecef0108f5eb27f360705044b97c` |
-| 2 | `lemma` | [toSSetObj₁Equiv_apply_zero](../../../../GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/tossetobj-equiv-apply-zero.md) | 51 | `result-track:a90711781c6ff80dfaa0308f07d4819b15f5e23e524dd631c88aedc9b042fe4c` |
-| 3 | `lemma` | [toSSetObj₁Equiv_apply_one](../../../../GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/tossetobj-equiv-apply-one.md) | 57 | `result-track:796fa91a4b3fdb0f8ebeadf09001442ce3ec2477371e134effdea114613d862f` |
-| 4 | `lemma` | [δ_one_toSSetObj₁Equiv.symm](../../../../GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/one-tossetobj-equiv-symm.md) | 63 | `result-track:ee1f513b0064998013a29f9f8f87e064065da29da243b9ca08599469a147ba3f` |
-| 5 | `lemma` | [δ_zero_toSSetObj₁Equiv.symm](../../../../GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/zero-tossetobj-equiv-symm.md) | 69 | `result-track:252d20bffea682272ae81ff7dab60b0b356c5f1e051dbb4ea442600d9c7b20b2` |
-| 6 | `def` | [toSSetObjEdgeEquiv](../../../../GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/tossetobjedgeequiv.md) | 78 | `declaration-track:d5c4c810a52f59d2edf4f2a1276ec46ff33fe7e982df5f4c2d670bccf729fbb5` |
-| 7 | `def` | [zerothHomotopyEquiv](../../../../GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/zerothhomotopyequiv.md) | 87 | `declaration-track:f63471bd3db96ec6889bd2373780fdf4637b9dcac112850b96182ce59ad11d7b` |
-| 8 | `lemma` | [zerothHomotopyEquiv_mk](../../../../GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/zerothhomotopyequiv-mk.md) | 99 | `result-track:0fd0bc6bb5974d77ac31d709c4ee9e5976d55022862074e124c2bd29a96d2a8b` |
-| 9 | `lemma` | [zerothHomotopyEquiv_symm_mk](../../../../GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/zerothhomotopyequiv-symm-mk.md) | 103 | `result-track:e0da6914bcc184d5c30935234dea95a5e20051d84dd8cb4db3202f6b21299fb6` |
-| 10 | `instance` | [(anonymous)](../../../../GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/instance.md) | 106 | `declaration-track:eb8fdede7ea8d68601d3578b5c5d8b2eed07f91c92f1168ac961f7b2d5aa1081` |
+| 1 | `def` | [toSSetObj₁Equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/tossetobj-equiv.md) | 42 | `declaration-track:9771b908cff1841d6ac99c69aed19a81ea58ecef0108f5eb27f360705044b97c` |
+| 2 | `lemma` | [toSSetObj₁Equiv_apply_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/tossetobj-equiv-apply-zero.md) | 51 | `result-track:a90711781c6ff80dfaa0308f07d4819b15f5e23e524dd631c88aedc9b042fe4c` |
+| 3 | `lemma` | [toSSetObj₁Equiv_apply_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/tossetobj-equiv-apply-one.md) | 57 | `result-track:796fa91a4b3fdb0f8ebeadf09001442ce3ec2477371e134effdea114613d862f` |
+| 4 | `lemma` | [δ_one_toSSetObj₁Equiv.symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/one-tossetobj-equiv-symm.md) | 63 | `result-track:ee1f513b0064998013a29f9f8f87e064065da29da243b9ca08599469a147ba3f` |
+| 5 | `lemma` | [δ_zero_toSSetObj₁Equiv.symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/zero-tossetobj-equiv-symm.md) | 69 | `result-track:252d20bffea682272ae81ff7dab60b0b356c5f1e051dbb4ea442600d9c7b20b2` |
+| 6 | `def` | [toSSetObjEdgeEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/tossetobjedgeequiv.md) | 78 | `declaration-track:d5c4c810a52f59d2edf4f2a1276ec46ff33fe7e982df5f4c2d670bccf729fbb5` |
+| 7 | `def` | [zerothHomotopyEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/zerothhomotopyequiv.md) | 87 | `declaration-track:f63471bd3db96ec6889bd2373780fdf4637b9dcac112850b96182ce59ad11d7b` |
+| 8 | `lemma` | [zerothHomotopyEquiv_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/zerothhomotopyequiv-mk.md) | 99 | `result-track:0fd0bc6bb5974d77ac31d709c4ee9e5976d55022862074e124c2bd29a96d2a8b` |
+| 9 | `lemma` | [zerothHomotopyEquiv_symm_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/zerothhomotopyequiv-symm-mk.md) | 103 | `result-track:e0da6914bcc184d5c30935234dea95a5e20051d84dd8cb4db3202f6b21299fb6` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZerothHomotopyNamespacedPublic.lean/declarations/instance.md) | 106 | `declaration-track:eb8fdede7ea8d68601d3578b5c5d8b2eed07f91c92f1168ac961f7b2d5aa1081` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

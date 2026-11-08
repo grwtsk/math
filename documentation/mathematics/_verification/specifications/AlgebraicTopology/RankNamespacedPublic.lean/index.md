@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/RankNamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/RankNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RankFunction](../../../../AlgebraicTopology/RankNamespacedPublic.lean/declarations/rankfunction-source-edition-2.md) | 55 | `declaration-track:c1efcf1eb947842b4e37ae22c88dc7c0338c1310225e536c53670344777169c7` |
-| 2 | `lemma` | [wf_ancestralRel](../../../../AlgebraicTopology/RankNamespacedPublic.lean/declarations/wf-ancestralrel-source-edition-2.md) | 66 | `result-track:af3d30b7d07d959bb632b776742cbaee3e90fa8379ba73cd310c960888e513fb` |
-| 3 | `lemma` | [isRegular](../../../../AlgebraicTopology/RankNamespacedPublic.lean/declarations/isregular-source-edition-2.md) | 71 | `result-track:a561b6f249e78b4862aa45158b3bbc07c33df84f0823c885742ab9f964fe88e9` |
-| 4 | `structure` | [WeakRankFunction](../../../../AlgebraicTopology/RankNamespacedPublic.lean/declarations/weakrankfunction.md) | 79 | `declaration-track:4a7e20e6e6a9256c07a465ef1492c526a6ce5fc90e70b7bc992ee2ec279a3c77` |
-| 5 | `lemma` | [wf_ancestralRel](../../../../AlgebraicTopology/RankNamespacedPublic.lean/declarations/wf-ancestralrel.md) | 91 | `result-track:941c7e10b0f490a06f4b066c75027c10e0d8b88a31c4158735b678bec060124e` |
-| 6 | `lemma` | [isRegular](../../../../AlgebraicTopology/RankNamespacedPublic.lean/declarations/isregular.md) | 104 | `result-track:77bf8dd4c6754111288557bcabd18edc196b581fbdb17710259b70887fcaa55c` |
-| 7 | `def` | [RankFunction.toWeakRankFunction](../../../../AlgebraicTopology/RankNamespacedPublic.lean/declarations/rankfunction-toweakrankfunction.md) | 111 | `declaration-track:d09b183090c9e5c34868d9608887fc601e49c1df6c52ffc85dc8c040f7af2fa7` |
-| 8 | `structure` | [RankFunction](../../../../AlgebraicTopology/RankNamespacedPublic.lean/declarations/rankfunction.md) | 125 | `declaration-track:934e9af2ca77238aee00e4f45e2d1efb2f387dc8c6ee2233e2d3303b26d67372` |
-| 9 | `structure` | [WeakRankFunction](../../../../AlgebraicTopology/RankNamespacedPublic.lean/declarations/weakrankfunction-source-edition-2.md) | 133 | `declaration-track:95f82d30eb2a6d284ba8f124046588ba1a8fa174ca4a52868a6b5633bc60ade5` |
-| 10 | `def` | [rankFunctionEquiv](../../../../AlgebraicTopology/RankNamespacedPublic.lean/declarations/rankfunctionequiv.md) | 140 | `declaration-track:c2d37ed2828b8e6d367a65beba946f1a44f0359eb6b353021605850f39f276a3` |
-| 11 | `def` | [weakRankFunctionEquiv](../../../../AlgebraicTopology/RankNamespacedPublic.lean/declarations/weakrankfunctionequiv.md) | 159 | `declaration-track:01daba2f3c43a924053a434f92640fb96f3f4f1808be2da9eecac032f35f9636` |
-| 12 | `lemma` | [RankFunction.isRegular](../../../../AlgebraicTopology/RankNamespacedPublic.lean/declarations/rankfunction-isregular.md) | 178 | `result-track:7193b4ed0b50401e41c2f3d8299d30d9568cce6020f77f8367e8bbea69734852` |
-| 13 | `lemma` | [WeakRankFunction.isRegular](../../../../AlgebraicTopology/RankNamespacedPublic.lean/declarations/weakrankfunction-isregular.md) | 182 | `result-track:32ebbd007846f11151272e055525356310ebade834ab4e44ccfddb41521db72d` |
+| 1 | `structure` | [RankFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNamespacedPublic.lean/declarations/rankfunction-source-edition-2.md) | 55 | `declaration-track:c1efcf1eb947842b4e37ae22c88dc7c0338c1310225e536c53670344777169c7` |
+| 2 | `lemma` | [wf_ancestralRel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNamespacedPublic.lean/declarations/wf-ancestralrel-source-edition-2.md) | 66 | `result-track:af3d30b7d07d959bb632b776742cbaee3e90fa8379ba73cd310c960888e513fb` |
+| 3 | `lemma` | [isRegular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNamespacedPublic.lean/declarations/isregular-source-edition-2.md) | 71 | `result-track:a561b6f249e78b4862aa45158b3bbc07c33df84f0823c885742ab9f964fe88e9` |
+| 4 | `structure` | [WeakRankFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNamespacedPublic.lean/declarations/weakrankfunction.md) | 79 | `declaration-track:4a7e20e6e6a9256c07a465ef1492c526a6ce5fc90e70b7bc992ee2ec279a3c77` |
+| 5 | `lemma` | [wf_ancestralRel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNamespacedPublic.lean/declarations/wf-ancestralrel.md) | 91 | `result-track:941c7e10b0f490a06f4b066c75027c10e0d8b88a31c4158735b678bec060124e` |
+| 6 | `lemma` | [isRegular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNamespacedPublic.lean/declarations/isregular.md) | 104 | `result-track:77bf8dd4c6754111288557bcabd18edc196b581fbdb17710259b70887fcaa55c` |
+| 7 | `def` | [RankFunction.toWeakRankFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNamespacedPublic.lean/declarations/rankfunction-toweakrankfunction.md) | 111 | `declaration-track:d09b183090c9e5c34868d9608887fc601e49c1df6c52ffc85dc8c040f7af2fa7` |
+| 8 | `structure` | [RankFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNamespacedPublic.lean/declarations/rankfunction.md) | 125 | `declaration-track:934e9af2ca77238aee00e4f45e2d1efb2f387dc8c6ee2233e2d3303b26d67372` |
+| 9 | `structure` | [WeakRankFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNamespacedPublic.lean/declarations/weakrankfunction-source-edition-2.md) | 133 | `declaration-track:95f82d30eb2a6d284ba8f124046588ba1a8fa174ca4a52868a6b5633bc60ade5` |
+| 10 | `def` | [rankFunctionEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNamespacedPublic.lean/declarations/rankfunctionequiv.md) | 140 | `declaration-track:c2d37ed2828b8e6d367a65beba946f1a44f0359eb6b353021605850f39f276a3` |
+| 11 | `def` | [weakRankFunctionEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNamespacedPublic.lean/declarations/weakrankfunctionequiv.md) | 159 | `declaration-track:01daba2f3c43a924053a434f92640fb96f3f4f1808be2da9eecac032f35f9636` |
+| 12 | `lemma` | [RankFunction.isRegular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNamespacedPublic.lean/declarations/rankfunction-isregular.md) | 178 | `result-track:7193b4ed0b50401e41c2f3d8299d30d9568cce6020f77f8367e8bbea69734852` |
+| 13 | `lemma` | [WeakRankFunction.isRegular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNamespacedPublic.lean/declarations/weakrankfunction-isregular.md) | 182 | `result-track:32ebbd007846f11151272e055525356310ebade834ab4e44ccfddb41521db72d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

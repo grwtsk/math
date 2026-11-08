@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/QuantizationNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/QuantizationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/QuantizationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/QuantizationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [QuantizationCertificate](../../../../GeneralTopology/QuantizationNamespaced.lean/declarations/quantizationcertificate.md) | 20 | `declaration-track:56598c547dc4f951ed33a4c463584b16214c277bb005645404bae787f512165d` |
-| 2 | `structure` | [EquivariantQuantizationCertificate](../../../../GeneralTopology/QuantizationNamespaced.lean/declarations/equivariantquantizationcertificate.md) | 38 | `declaration-track:2eca057a60a8b13ac1caf3e96f5921c0c853f65324a063a6d0e44929bcde9a31` |
+| 1 | `structure` | [QuantizationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/QuantizationNamespaced.lean/declarations/quantizationcertificate.md) | 20 | `declaration-track:56598c547dc4f951ed33a4c463584b16214c277bb005645404bae787f512165d` |
+| 2 | `structure` | [EquivariantQuantizationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/QuantizationNamespaced.lean/declarations/equivariantquantizationcertificate.md) | 38 | `declaration-track:2eca057a60a8b13ac1caf3e96f5921c0c853f65324a063a6d0e44929bcde9a31` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

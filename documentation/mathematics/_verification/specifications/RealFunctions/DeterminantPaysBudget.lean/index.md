@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DeterminantPaysBudget.lean/index.md) · [Full source](../../../../RealFunctions/DeterminantPaysBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DeterminantPaysBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DeterminantPaysBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,13 +46,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.AlmostMathieu`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlmostMathieu.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold`](../../../../GeneralTopology/ExponentialThreshold.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.ComparisonEnergy`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ComparisonEnergy.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/IntegerSampleGrowthHistoricalSourceEdition2.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.UnsignedEnergyBound`](../../../../MeasureAndIntegration/UnsignedEnergyBound.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.AlmostMathieu`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlmostMathieu.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExponentialThreshold.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.ComparisonEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ComparisonEnergy.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/IntegerSampleGrowthHistoricalSourceEdition2.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.UnsignedEnergyBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UnsignedEnergyBound.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -63,7 +63,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../RealFunctions/DeterminantPaysBudget.lean/declarations/example.md) | 11 | `declaration-track:63ac18b0cc77a95b5a55588984dd451747d65d1607c880b0c172f5ed68ce3e41` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DeterminantPaysBudget.lean/declarations/example.md) | 11 | `declaration-track:63ac18b0cc77a95b5a55588984dd451747d65d1607c880b0c172f5ed68ce3e41` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

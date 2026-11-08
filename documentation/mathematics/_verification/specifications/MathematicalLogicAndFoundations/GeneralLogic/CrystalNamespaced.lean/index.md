@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystalNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Crystal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystalNamespaced.lean/declarations/crystal.md) | 33 | `declaration-track:60b807659afbfa7c697daabc1ce45e04a5f0f5b80b7e40f7838e68582d755864` |
-| 2 | `theorem` | [crystal_has_compatibility](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystalNamespaced.lean/declarations/crystal-has-compatibility.md) | 45 | `result-track:31762d73965e6723eeaafab0c38cae7480ed09fcead38c427bab4df129927a6f` |
-| 3 | `theorem` | [crystal_has_infinitesimal_rigidity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystalNamespaced.lean/declarations/crystal-has-infinitesimal-rigidity.md) | 51 | `result-track:db62ce04f3fbedb2617c3ca1fc0ac53d3f04af9988d354e193eda81e573d1bc6` |
+| 1 | `structure` | [Crystal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystalNamespaced.lean/declarations/crystal.md) | 33 | `declaration-track:60b807659afbfa7c697daabc1ce45e04a5f0f5b80b7e40f7838e68582d755864` |
+| 2 | `theorem` | [crystal_has_compatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystalNamespaced.lean/declarations/crystal-has-compatibility.md) | 45 | `result-track:31762d73965e6723eeaafab0c38cae7480ed09fcead38c427bab4df129927a6f` |
+| 3 | `theorem` | [crystal_has_infinitesimal_rigidity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystalNamespaced.lean/declarations/crystal-has-infinitesimal-rigidity.md) | 51 | `result-track:db62ce04f3fbedb2617c3ca1fc0ac53d3f04af9988d354e193eda81e573d1bc6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

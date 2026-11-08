@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SeparableNotSecondCountablePublic.lean/index.md) · [Full source](../../../../GeneralTopology/SeparableNotSecondCountablePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparableNotSecondCountablePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparableNotSecondCountablePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instTopologicalSpace](../../../../GeneralTopology/SeparableNotSecondCountablePublic.lean/declarations/insttopologicalspace.md) | 27 | `declaration-track:fe07fd7820de9a49623d8b41aeff696b2fc9d711e63e8bb963954ddf6a97e18c` |
-| 2 | `instance` | [instOrderTopology](../../../../GeneralTopology/SeparableNotSecondCountablePublic.lean/declarations/instordertopology.md) | 28 | `declaration-track:eaececc168de705983fa2074a65760de2956279b0e42c56ec73d7a310827e122` |
-| 3 | `instance` | [instLinearOrder](../../../../GeneralTopology/SeparableNotSecondCountablePublic.lean/declarations/instlinearorder.md) | 29 | `declaration-track:6d7b030ea76357fe4580eae7461503ada4cefae52bff592eaae6a0cfd4ec72cf` |
-| 4 | `instance` | [instSeparableSpace](../../../../GeneralTopology/SeparableNotSecondCountablePublic.lean/declarations/instseparablespace.md) | 31 | `declaration-track:13e647aa5c84ca9ddf237d85d507cfb745d3019398ea1c01342489a330065355` |
-| 5 | `theorem` | [not_secondCountableTopology](../../../../GeneralTopology/SeparableNotSecondCountablePublic.lean/declarations/not-secondcountabletopology.md) | 48 | `result-track:48c410a5019bc230f60895dbf9e630448567c94bfc87a87d56a7608e50a7a374` |
+| 1 | `instance` | [instTopologicalSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparableNotSecondCountablePublic.lean/declarations/insttopologicalspace.md) | 27 | `declaration-track:fe07fd7820de9a49623d8b41aeff696b2fc9d711e63e8bb963954ddf6a97e18c` |
+| 2 | `instance` | [instOrderTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparableNotSecondCountablePublic.lean/declarations/instordertopology.md) | 28 | `declaration-track:eaececc168de705983fa2074a65760de2956279b0e42c56ec73d7a310827e122` |
+| 3 | `instance` | [instLinearOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparableNotSecondCountablePublic.lean/declarations/instlinearorder.md) | 29 | `declaration-track:6d7b030ea76357fe4580eae7461503ada4cefae52bff592eaae6a0cfd4ec72cf` |
+| 4 | `instance` | [instSeparableSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparableNotSecondCountablePublic.lean/declarations/instseparablespace.md) | 31 | `declaration-track:13e647aa5c84ca9ddf237d85d507cfb745d3019398ea1c01342489a330065355` |
+| 5 | `theorem` | [not_secondCountableTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparableNotSecondCountablePublic.lean/declarations/not-secondcountabletopology.md) | 48 | `result-track:48c410a5019bc230f60895dbf9e630448567c94bfc87a87d56a7608e50a7a374` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

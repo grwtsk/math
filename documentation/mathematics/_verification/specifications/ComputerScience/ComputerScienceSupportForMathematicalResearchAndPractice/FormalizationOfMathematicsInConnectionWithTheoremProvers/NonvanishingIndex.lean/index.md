@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndex.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nonvanishing_index_nonzero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndex.lean/declarations/nonvanishing-index-nonzero.md) | 20 | `result-track:bc5f1d1c925108416b1b6c52abcfbbb6ff48bb850f2d462639069d9bf4640340` |
-| 2 | `theorem` | [nonvanishing_index_forces_kernel_if_supplied](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndex.lean/declarations/nonvanishing-index-forces-kernel-if-supplied.md) | 31 | `result-track:c85a588deac8aaabbd2b5c41fc1e1b10fee3887666c9ef937e10895e06f54cb4` |
-| 3 | `theorem` | [nonvanishing_witt_index_nonzero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndex.lean/declarations/nonvanishing-witt-index-nonzero.md) | 42 | `result-track:a87c12cf8fe10b04a6e4176b2b9f6c7f3662a995ddc3df0afadf724e4fff184d` |
+| 1 | `theorem` | [nonvanishing_index_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndex.lean/declarations/nonvanishing-index-nonzero.md) | 20 | `result-track:bc5f1d1c925108416b1b6c52abcfbbb6ff48bb850f2d462639069d9bf4640340` |
+| 2 | `theorem` | [nonvanishing_index_forces_kernel_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndex.lean/declarations/nonvanishing-index-forces-kernel-if-supplied.md) | 31 | `result-track:c85a588deac8aaabbd2b5c41fc1e1b10fee3887666c9ef937e10895e06f54cb4` |
+| 3 | `theorem` | [nonvanishing_witt_index_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndex.lean/declarations/nonvanishing-witt-index-nonzero.md) | 42 | `result-track:a87c12cf8fe10b04a6e4176b2b9f6c7f3662a995ddc3df0afadf724e4fff184d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/IndexNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/IndexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [PhysicalConfiguration](../../../../Combinatorics/IndexNamespaced.lean/declarations/physicalconfiguration.md) | 22 | `declaration-track:2debe38dad3631947c31ede929f4c81e0a95f389451ccf772ea84cacea33c297` |
-| 2 | `theorem` | [physicalConfiguration_card](../../../../Combinatorics/IndexNamespaced.lean/declarations/physicalconfiguration-card.md) | 26 | `result-track:c56f3896521c5f7a36b4aab0d97179d2783182cc5170883b32896739219a93b0` |
-| 3 | `theorem` | [qubitConfiguration_card](../../../../Combinatorics/IndexNamespaced.lean/declarations/qubitconfiguration-card.md) | 31 | `result-track:f5799de320a8bebe0cb89a1f0ad0eee0577848ab7bfdafb6a9d5c2f14be8dbe4` |
-| 4 | `structure` | [BondProfile](../../../../Combinatorics/IndexNamespaced.lean/declarations/bondprofile.md) | 36 | `declaration-track:bf58c0417a060f01bc5a57f431ecaf3d972cd50ce06f67c92654360c216908ae` |
-| 5 | `def` | [BondProfile.UniformlyBounded](../../../../Combinatorics/IndexNamespaced.lean/declarations/bondprofile-uniformlybounded.md) | 45 | `declaration-track:58cc41c1836d0cc9f24dc0ad3686a1dedd5d7802d001979644b74ca1298b5a88` |
-| 6 | `abbrev` | [VirtualConfiguration](../../../../Combinatorics/IndexNamespaced.lean/declarations/virtualconfiguration.md) | 52 | `declaration-track:416285904102c253efa8f4d16a59ceb13f34c904cf34cf30fbd4afaff775c626` |
+| 1 | `abbrev` | [PhysicalConfiguration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexNamespaced.lean/declarations/physicalconfiguration.md) | 22 | `declaration-track:2debe38dad3631947c31ede929f4c81e0a95f389451ccf772ea84cacea33c297` |
+| 2 | `theorem` | [physicalConfiguration_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexNamespaced.lean/declarations/physicalconfiguration-card.md) | 26 | `result-track:c56f3896521c5f7a36b4aab0d97179d2783182cc5170883b32896739219a93b0` |
+| 3 | `theorem` | [qubitConfiguration_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexNamespaced.lean/declarations/qubitconfiguration-card.md) | 31 | `result-track:f5799de320a8bebe0cb89a1f0ad0eee0577848ab7bfdafb6a9d5c2f14be8dbe4` |
+| 4 | `structure` | [BondProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexNamespaced.lean/declarations/bondprofile.md) | 36 | `declaration-track:bf58c0417a060f01bc5a57f431ecaf3d972cd50ce06f67c92654360c216908ae` |
+| 5 | `def` | [BondProfile.UniformlyBounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexNamespaced.lean/declarations/bondprofile-uniformlybounded.md) | 45 | `declaration-track:58cc41c1836d0cc9f24dc0ad3686a1dedd5d7802d001979644b74ca1298b5a88` |
+| 6 | `abbrev` | [VirtualConfiguration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexNamespaced.lean/declarations/virtualconfiguration.md) | 52 | `declaration-track:416285904102c253efa8f4d16a59ceb13f34c904cf34cf30fbd4afaff775c626` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

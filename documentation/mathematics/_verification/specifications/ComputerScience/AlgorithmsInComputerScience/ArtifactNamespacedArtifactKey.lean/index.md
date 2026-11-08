@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactKey.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactKey.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactKey.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactKey.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ArtifactKey](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactKey.lean/declarations/artifactkey.md) | 14 | `declaration-track:84ea36d879aabe84c0e5f3ef91376ad5c45d5a7c6c6b97e56331f27fb6174308` |
-| 2 | `inductive` | [ArtifactAction](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactKey.lean/declarations/artifactaction.md) | 20 | `declaration-track:a85cccb494e213858010c6e0924a60bb384f7c7c275e65e5bf9814e4a44372b1` |
-| 3 | `structure` | [ArtifactPlanEntry](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactKey.lean/declarations/artifactplanentry.md) | 27 | `declaration-track:79f5580bc62ec71a612649388552baf3ab372cbc1e681d607b9f195d65dbc3cb` |
-| 4 | `structure` | [ArtifactReuseCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactKey.lean/declarations/artifactreusecertificate.md) | 37 | `declaration-track:2237bc75ee606b65240ac1f660d96b323421050aac99ac900f0f6b44fcd9e647` |
-| 5 | `theorem` | [unchangedModule_has_identical_artifact_hash](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactKey.lean/declarations/unchangedmodule-has-identical-artifact-hash.md) | 45 | `result-track:99e1e712d934c09765880c43806ccb2d20becc2ed37966aaa66cca3981b223bf` |
+| 1 | `structure` | [ArtifactKey](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactKey.lean/declarations/artifactkey.md) | 14 | `declaration-track:84ea36d879aabe84c0e5f3ef91376ad5c45d5a7c6c6b97e56331f27fb6174308` |
+| 2 | `inductive` | [ArtifactAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactKey.lean/declarations/artifactaction.md) | 20 | `declaration-track:a85cccb494e213858010c6e0924a60bb384f7c7c275e65e5bf9814e4a44372b1` |
+| 3 | `structure` | [ArtifactPlanEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactKey.lean/declarations/artifactplanentry.md) | 27 | `declaration-track:79f5580bc62ec71a612649388552baf3ab372cbc1e681d607b9f195d65dbc3cb` |
+| 4 | `structure` | [ArtifactReuseCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactKey.lean/declarations/artifactreusecertificate.md) | 37 | `declaration-track:2237bc75ee606b65240ac1f660d96b323421050aac99ac900f0f6b44fcd9e647` |
+| 5 | `theorem` | [unchangedModule_has_identical_artifact_hash](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactKey.lean/declarations/unchangedmodule-has-identical-artifact-hash.md) | 45 | `result-track:99e1e712d934c09765880c43806ccb2d20becc2ed37966aaa66cca3981b223bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScanOrderNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScanOrderNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScanOrderNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScanOrderNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ScanOrder](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScanOrderNamespaced.lean/declarations/scanorder.md) | 27 | `declaration-track:026886da41faef25040342035143c7a2754fc686698ec522d0d829e8b6e740a9` |
-| 2 | `structure` | [OrientedEdge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScanOrderNamespaced.lean/declarations/orientededge.md) | 31 | `declaration-track:2f4b7ae2ec13eaeac8bbd98a01c81125a90f4c7c08705d0d5ebadedc38635a55` |
-| 3 | `def` | [scanForward](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScanOrderNamespaced.lean/declarations/scanforward.md) | 36 | `declaration-track:961b3a5a71d87ec4123a0192c01bd8c4ccfb9bbcb96ffe93ff9d2e215d832360` |
-| 4 | `structure` | [ScanTwist](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScanOrderNamespaced.lean/declarations/scantwist.md) | 41 | `declaration-track:9d3db508a7536ee1b1407f96395445fe2e8f35e8381e4547d6bff433b828d95b` |
+| 1 | `structure` | [ScanOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScanOrderNamespaced.lean/declarations/scanorder.md) | 27 | `declaration-track:026886da41faef25040342035143c7a2754fc686698ec522d0d829e8b6e740a9` |
+| 2 | `structure` | [OrientedEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScanOrderNamespaced.lean/declarations/orientededge.md) | 31 | `declaration-track:2f4b7ae2ec13eaeac8bbd98a01c81125a90f4c7c08705d0d5ebadedc38635a55` |
+| 3 | `def` | [scanForward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScanOrderNamespaced.lean/declarations/scanforward.md) | 36 | `declaration-track:961b3a5a71d87ec4123a0192c01bd8c4ccfb9bbcb96ffe93ff9d2e215d832360` |
+| 4 | `structure` | [ScanTwist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScanOrderNamespaced.lean/declarations/scantwist.md) | 41 | `declaration-track:9d3db508a7536ee1b1407f96395445fe2e8f35e8381e4547d6bff433b828d95b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

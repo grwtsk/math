@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SimplexPoint](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/declarations/simplexpoint.md) | 37 | `declaration-track:464ac03c33e55b772db7b1b1ce50a397f052a6a21d2ba0945677bd5ee41c8450` |
-| 2 | `instance` | [instCoeFunSimplexPoint](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/declarations/instcoefunsimplexpoint.md) | 46 | `declaration-track:b8b61b938c93fdaf7286bca95dcde066006ef45471c4db2cad6fd29f6504ea8c` |
-| 3 | `theorem` | [ext](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/declarations/ext.md) | 50 | `result-track:0608782eec1985283d4e0eefc3b1e68665fe05e52b201c5292d39e4a3ba7d6e5` |
-| 4 | `def` | [reindex](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/declarations/reindex.md) | 61 | `declaration-track:7b7c492d2a37e15d202c0b8040b3ca371de673369e7a0fff97162de9da1ba675` |
-| 5 | `theorem` | [reindex_apply](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/declarations/reindex-apply.md) | 69 | `result-track:57fcc3b751e30604f547c4614fa02df9281cfde1056a3bc56ff3843188c93416` |
-| 6 | `theorem` | [reindex_refl](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/declarations/reindex-refl.md) | 74 | `result-track:abb3d63ee89341bc6fcaf3198a9b332ae00aabc6f32eb0465933c4b8f5d1857b` |
-| 7 | `theorem` | [reindex_trans](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/declarations/reindex-trans.md) | 80 | `result-track:a8b32ca2391eea70cbcaa429b8f97351c8161ba532a348e8f135387cc344389a` |
+| 1 | `structure` | [SimplexPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/declarations/simplexpoint.md) | 37 | `declaration-track:464ac03c33e55b772db7b1b1ce50a397f052a6a21d2ba0945677bd5ee41c8450` |
+| 2 | `instance` | [instCoeFunSimplexPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/declarations/instcoefunsimplexpoint.md) | 46 | `declaration-track:b8b61b938c93fdaf7286bca95dcde066006ef45471c4db2cad6fd29f6504ea8c` |
+| 3 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/declarations/ext.md) | 50 | `result-track:0608782eec1985283d4e0eefc3b1e68665fe05e52b201c5292d39e4a3ba7d6e5` |
+| 4 | `def` | [reindex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/declarations/reindex.md) | 61 | `declaration-track:7b7c492d2a37e15d202c0b8040b3ca371de673369e7a0fff97162de9da1ba675` |
+| 5 | `theorem` | [reindex_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/declarations/reindex-apply.md) | 69 | `result-track:57fcc3b751e30604f547c4614fa02df9281cfde1056a3bc56ff3843188c93416` |
+| 6 | `theorem` | [reindex_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/declarations/reindex-refl.md) | 74 | `result-track:abb3d63ee89341bc6fcaf3198a9b332ae00aabc6f32eb0465933c4b8f5d1857b` |
+| 7 | `theorem` | [reindex_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/declarations/reindex-trans.md) | 80 | `result-track:a8b32ca2391eea70cbcaa429b8f97351c8161ba532a348e8f135387cc344389a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

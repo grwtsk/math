@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SuppliedStrictOptimum.lean/index.md) · [Full source](../../../../RealFunctions/SuppliedStrictOptimum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SuppliedStrictOptimum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SuppliedStrictOptimum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Mathlib.Data.Real.Basic` — import line 20; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.NormNum` — import line 21; external provider; requires a separately pinned dependency.
-- [Square And Classification](../../../../RealFunctions/SquareAndClassification.lean/index.md) — import line 23; pinned internal source present.
+- [Square And Classification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareAndClassification.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CommunicationObjective](../../../../RealFunctions/SuppliedStrictOptimum.lean/declarations/communicationobjective.md) | 37 | `declaration-track:df2aa791de026d78ba251e145d7239230257367832b4d192a5a06d770f9499b1` |
-| 2 | `structure` | [ObjectiveEquilibrium](../../../../RealFunctions/SuppliedStrictOptimum.lean/declarations/objectiveequilibrium.md) | 41 | `declaration-track:590cccbd3f87c6098ffc828bcad6ea63eb345222a644497630557ec739a9ef17` |
+| 1 | `structure` | [CommunicationObjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SuppliedStrictOptimum.lean/declarations/communicationobjective.md) | 37 | `declaration-track:df2aa791de026d78ba251e145d7239230257367832b4d192a5a06d770f9499b1` |
+| 2 | `structure` | [ObjectiveEquilibrium](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SuppliedStrictOptimum.lean/declarations/objectiveequilibrium.md) | 41 | `declaration-track:590cccbd3f87c6098ffc828bcad6ea63eb345222a644497630557ec739a9ef17` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

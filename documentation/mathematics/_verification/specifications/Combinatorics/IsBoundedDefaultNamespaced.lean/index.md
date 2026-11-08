@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/IsBoundedDefaultNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/IsBoundedDefaultNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IsBoundedDefaultNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IsBoundedDefaultNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Combinatorics/IsBoundedDefaultNamespaced.lean/declarations/example-source-edition-2.md) | 16 | `declaration-track:5790c02fe46cb45c85179561354e908f30a6b7ab478e64f0a6028936f51e5ae9` |
-| 2 | `example` | [(anonymous)](../../../../Combinatorics/IsBoundedDefaultNamespaced.lean/declarations/example.md) | 19 | `declaration-track:539937e3e95fcaf8a08a5b30a3e4b5d7d65446022b0b86a162ec505be4546d0a` |
-| 3 | `example` | [(anonymous)](../../../../Combinatorics/IsBoundedDefaultNamespaced.lean/declarations/example-source-edition-3.md) | 22 | `declaration-track:78cfbbdba96a26a8cc227d85e60c01263b51719d6fa7810c3733d5cc047f52ed` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IsBoundedDefaultNamespaced.lean/declarations/example-source-edition-2.md) | 16 | `declaration-track:5790c02fe46cb45c85179561354e908f30a6b7ab478e64f0a6028936f51e5ae9` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IsBoundedDefaultNamespaced.lean/declarations/example.md) | 19 | `declaration-track:539937e3e95fcaf8a08a5b30a3e4b5d7d65446022b0b86a162ec505be4546d0a` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IsBoundedDefaultNamespaced.lean/declarations/example-source-edition-3.md) | 22 | `declaration-track:78cfbbdba96a26a8cc227d85e60c01263b51719d6fa7810c3733d5cc047f52ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

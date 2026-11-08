@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/DeBruijnNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/DeBruijnNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeBruijnNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeBruijnNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DeBruijnCoverageCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/DeBruijnNamespaced.lean/declarations/debruijncoveragecertificate.md) | 15 | `declaration-track:a03c03b5ff75e24011720f1ae8c5d17e27697570c2d02d8bb7344f251454ad9a` |
-| 2 | `theorem` | [debruijn_covers_every_action_window](../../../../../ComputerScience/AlgorithmsInComputerScience/DeBruijnNamespaced.lean/declarations/debruijn-covers-every-action-window.md) | 25 | `result-track:61a3696ba9ffd3adb4f361b0d89a93dd26b495f2d6b5c395e4a48ee685058106` |
+| 1 | `structure` | [DeBruijnCoverageCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeBruijnNamespaced.lean/declarations/debruijncoveragecertificate.md) | 15 | `declaration-track:a03c03b5ff75e24011720f1ae8c5d17e27697570c2d02d8bb7344f251454ad9a` |
+| 2 | `theorem` | [debruijn_covers_every_action_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeBruijnNamespaced.lean/declarations/debruijn-covers-every-action-window.md) | 25 | `result-track:61a3696ba9ffd3adb4f361b0d89a93dd26b495f2d6b5c395e4a48ee685058106` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

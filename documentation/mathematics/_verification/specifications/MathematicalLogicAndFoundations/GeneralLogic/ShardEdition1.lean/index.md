@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ShardEdition1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ShardEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ShardEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ShardEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ModuleShard](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ShardEdition1.lean/declarations/moduleshard.md) | 11 | `declaration-track:4275bd84a220ce0c1d656e4448dc4819e04472207ed200b44355591bc0a84980` |
-| 2 | `def` | [ModuleShard.ReusableWith](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ShardEdition1.lean/declarations/moduleshard-reusablewith.md) | 29 | `declaration-track:8745387e4bc23079f1ba03b4b3ab2e69dd9185996ea182ff88f46c55e9f23b3b` |
+| 1 | `structure` | [ModuleShard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ShardEdition1.lean/declarations/moduleshard.md) | 11 | `declaration-track:4275bd84a220ce0c1d656e4448dc4819e04472207ed200b44355591bc0a84980` |
+| 2 | `def` | [ModuleShard.ReusableWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ShardEdition1.lean/declarations/moduleshard-reusablewith.md) | 29 | `declaration-track:8745387e4bc23079f1ba03b4b3ab2e69dd9185996ea182ff88f46c55e9f23b3b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Triangle.rotate](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/declarations/triangle-rotate.md) | 49 | `declaration-track:00c2b4b9b34e203d0309c2384ba067ce0cd60ca70320e5b8e1b8a20d8eb3ef16` |
-| 2 | `def` | [Triangle.invRotate](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/declarations/triangle-invrotate.md) | 68 | `declaration-track:5c0f62c3445d8a48d4f54c9c8cb75a76d373fc48b0939c1a3175cf7cba6ded1a` |
-| 3 | `def` | [rotate](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/declarations/rotate.md) | 83 | `declaration-track:571a06c53e33d171df94eddbcb5146508992f736899f65f491248ad2a246000a` |
-| 4 | `def` | [invRotate](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/declarations/invrotate.md) | 96 | `declaration-track:f760f32a3ff0c4ec5bae2f8fc91e9b31b05457364ac68726aa2887eb72f7ee6b` |
-| 5 | `def` | [rotCompInvRot](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/declarations/rotcompinvrot.md) | 114 | `declaration-track:3f06a8a53c5fb408371d4962cd33c48714f9900a10d65d728ed4ebd40ffb216a` |
-| 6 | `def` | [invRotCompRot](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/declarations/invrotcomprot.md) | 121 | `declaration-track:9d1fe13146379c8d5ba581c3c5926cc9e53a76a21d49fe7a89870f4e667cb74a` |
-| 7 | `def` | [triangleRotation](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/declarations/trianglerotation.md) | 129 | `declaration-track:daabfcb0ba0fe161f4222ff4d30b9c5a857bd52801e32b10d413be06a9364cd2` |
-| 8 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/declarations/instance.md) | 135 | `declaration-track:c82b9b0c93feb07c1e164fbfe3c591ed121c294cc55eb5c28a934949502b277f` |
-| 9 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/declarations/instance-source-edition-2.md) | 139 | `declaration-track:e0d6f0fe43e9d558fd9ac9d3f052202ab03e1174434f2c3ef833ea4f94d7a374` |
+| 1 | `def` | [Triangle.rotate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/declarations/triangle-rotate.md) | 49 | `declaration-track:00c2b4b9b34e203d0309c2384ba067ce0cd60ca70320e5b8e1b8a20d8eb3ef16` |
+| 2 | `def` | [Triangle.invRotate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/declarations/triangle-invrotate.md) | 68 | `declaration-track:5c0f62c3445d8a48d4f54c9c8cb75a76d373fc48b0939c1a3175cf7cba6ded1a` |
+| 3 | `def` | [rotate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/declarations/rotate.md) | 83 | `declaration-track:571a06c53e33d171df94eddbcb5146508992f736899f65f491248ad2a246000a` |
+| 4 | `def` | [invRotate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/declarations/invrotate.md) | 96 | `declaration-track:f760f32a3ff0c4ec5bae2f8fc91e9b31b05457364ac68726aa2887eb72f7ee6b` |
+| 5 | `def` | [rotCompInvRot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/declarations/rotcompinvrot.md) | 114 | `declaration-track:3f06a8a53c5fb408371d4962cd33c48714f9900a10d65d728ed4ebd40ffb216a` |
+| 6 | `def` | [invRotCompRot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/declarations/invrotcomprot.md) | 121 | `declaration-track:9d1fe13146379c8d5ba581c3c5926cc9e53a76a21d49fe7a89870f4e667cb74a` |
+| 7 | `def` | [triangleRotation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/declarations/trianglerotation.md) | 129 | `declaration-track:daabfcb0ba0fe161f4222ff4d30b9c5a857bd52801e32b10d413be06a9364cd2` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/declarations/instance.md) | 135 | `declaration-track:c82b9b0c93feb07c1e164fbfe3c591ed121c294cc55eb5c28a934949502b277f` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Rotate.lean/declarations/instance-source-edition-2.md) | 139 | `declaration-track:e0d6f0fe43e9d558fd9ac9d3f052202ab03e1174434f2c3ef833ea4f94d7a374` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

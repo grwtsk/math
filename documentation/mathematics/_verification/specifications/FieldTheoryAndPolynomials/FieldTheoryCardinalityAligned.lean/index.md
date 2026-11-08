@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinalityAligned.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinalityAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinalityAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinalityAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -64,11 +64,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Fintype.isPrimePow_card_of_field](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinalityAligned.lean/declarations/fintype-isprimepow-card-of-field.md) | 40 | `result-track:7ffd680793c17e7f178d6cb8e8defd42678d9f44c1c5cde93b840bd9d8246400` |
-| 2 | `theorem` | [Fintype.nonempty_field_iff](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinalityAligned.lean/declarations/fintype-nonempty-field-iff.md) | 53 | `result-track:65873de27f8e915d39b226d86471f1ba9c20fd890ba23efd0479663d5b976daa` |
-| 3 | `theorem` | [Fintype.not_isField_of_card_not_prime_pow](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinalityAligned.lean/declarations/fintype-not-isfield-of-card-not-prime-pow.md) | 60 | `result-track:6e05d6650a0c218c090dedbbcf42f0c35fcd4d9ded0f7e3d88031432fefc6432` |
-| 4 | `theorem` | [Infinite.nonempty_field](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinalityAligned.lean/declarations/infinite-nonempty-field.md) | 67 | `result-track:a804240aee26c70fd2d672aec2098e1b8120a980db3ec11d97c614ffc8c37de6` |
-| 5 | `theorem` | [Field.nonempty_iff](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinalityAligned.lean/declarations/field-nonempty-iff.md) | 81 | `result-track:8a590053bc3098fb9c0519af161a991bc267fb7c9f2400580e25a286830a9353` |
+| 1 | `theorem` | [Fintype.isPrimePow_card_of_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinalityAligned.lean/declarations/fintype-isprimepow-card-of-field.md) | 40 | `result-track:7ffd680793c17e7f178d6cb8e8defd42678d9f44c1c5cde93b840bd9d8246400` |
+| 2 | `theorem` | [Fintype.nonempty_field_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinalityAligned.lean/declarations/fintype-nonempty-field-iff.md) | 53 | `result-track:65873de27f8e915d39b226d86471f1ba9c20fd890ba23efd0479663d5b976daa` |
+| 3 | `theorem` | [Fintype.not_isField_of_card_not_prime_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinalityAligned.lean/declarations/fintype-not-isfield-of-card-not-prime-pow.md) | 60 | `result-track:6e05d6650a0c218c090dedbbcf42f0c35fcd4d9ded0f7e3d88031432fefc6432` |
+| 4 | `theorem` | [Infinite.nonempty_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinalityAligned.lean/declarations/infinite-nonempty-field.md) | 67 | `result-track:a804240aee26c70fd2d672aec2098e1b8120a980db3ec11d97c614ffc8c37de6` |
+| 5 | `theorem` | [Field.nonempty_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinalityAligned.lean/declarations/field-nonempty-iff.md) | 81 | `result-track:8a590053bc3098fb9c0519af161a991bc267fb7c9f2400580e25a286830a9353` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

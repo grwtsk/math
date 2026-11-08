@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalPositiveTuringPairedTent.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalPositiveTuringPairedTent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringPairedTent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringPairedTent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.RationalConjugatePairAccumulation`](../../../../FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalPositiveTuringEnumeration`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPositiveTuringEnumeration.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalRationalTentEvaluation`](../../../../NumberTheory/CanonicalRationalTentEvaluation.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalConjugatePairAccumulation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalPositiveTuringEnumeration`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPositiveTuringEnumeration.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalRationalTentEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalRationalTentEvaluation.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PositivePairRowAlignment](../../../../NumberTheory/CanonicalPositiveTuringPairedTent.lean/declarations/positivepairrowalignment.md) | 55 | `declaration-track:81b21180c27e5b51a2758794ed697fca17a5bd76821c6fcfd9f78dddd50ec3ab` |
-| 2 | `theorem` | [row_count_eq_index_card](../../../../NumberTheory/CanonicalPositiveTuringPairedTent.lean/declarations/row-count-eq-index-card.md) | 69 | `result-track:9713a105bd86711bdeac3d6a3493335d5bb5254380656f56d05a41526f132f9a` |
-| 3 | `theorem` | [full_tent_sum_eq_positive_rows_of_gap_eq_zero](../../../../NumberTheory/CanonicalPositiveTuringPairedTent.lean/declarations/full-tent-sum-eq-positive-rows-of-gap-eq-zero.md) | 80 | `result-track:3dd001684b09a2dcaf26089df6f02a7b97c9bdea2e5c7494e7cd675aa45dd04c` |
-| 4 | `theorem` | [verified_head_of_positive_pair_packet](../../../../NumberTheory/CanonicalPositiveTuringPairedTent.lean/declarations/verified-head-of-positive-pair-packet.md) | 111 | `result-track:06a50988fbd50bdd1c18ddd408aa8721cb9dcaba1b980b35665ecc01b40dc4ae` |
-| 5 | `theorem` | [prime_in_square_of_positive_pair_packet](../../../../NumberTheory/CanonicalPositiveTuringPairedTent.lean/declarations/prime-in-square-of-positive-pair-packet.md) | 137 | `result-track:061d26d1093e45c583522c3503368e95ac5f1db1a576e649df9175adfd9a6e02` |
-| 6 | `theorem` | [matching_count_not_alignment_fixture](../../../../NumberTheory/CanonicalPositiveTuringPairedTent.lean/declarations/matching-count-not-alignment-fixture.md) | 161 | `result-track:4e0c01e4c5ffcf97ac3ff5da69d2d619cf7bdcde2419c670326cde10af6acc5f` |
+| 1 | `structure` | [PositivePairRowAlignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringPairedTent.lean/declarations/positivepairrowalignment.md) | 55 | `declaration-track:81b21180c27e5b51a2758794ed697fca17a5bd76821c6fcfd9f78dddd50ec3ab` |
+| 2 | `theorem` | [row_count_eq_index_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringPairedTent.lean/declarations/row-count-eq-index-card.md) | 69 | `result-track:9713a105bd86711bdeac3d6a3493335d5bb5254380656f56d05a41526f132f9a` |
+| 3 | `theorem` | [full_tent_sum_eq_positive_rows_of_gap_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringPairedTent.lean/declarations/full-tent-sum-eq-positive-rows-of-gap-eq-zero.md) | 80 | `result-track:3dd001684b09a2dcaf26089df6f02a7b97c9bdea2e5c7494e7cd675aa45dd04c` |
+| 4 | `theorem` | [verified_head_of_positive_pair_packet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringPairedTent.lean/declarations/verified-head-of-positive-pair-packet.md) | 111 | `result-track:06a50988fbd50bdd1c18ddd408aa8721cb9dcaba1b980b35665ecc01b40dc4ae` |
+| 5 | `theorem` | [prime_in_square_of_positive_pair_packet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringPairedTent.lean/declarations/prime-in-square-of-positive-pair-packet.md) | 137 | `result-track:061d26d1093e45c583522c3503368e95ac5f1db1a576e649df9175adfd9a6e02` |
+| 6 | `theorem` | [matching_count_not_alignment_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringPairedTent.lean/declarations/matching-count-not-alignment-fixture.md) | 161 | `result-track:4e0c01e4c5ffcf97ac3ff5da69d2d619cf7bdcde2419c670326cde10af6acc5f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

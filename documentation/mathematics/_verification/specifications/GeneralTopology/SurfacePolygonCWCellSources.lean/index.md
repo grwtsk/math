@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonCWCellSources.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonCWCellSources.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonCWCellSources.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonCWCellSources.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionMapping`](../../../../GeneralTopology/SurfacePolygonAdjunctionMapping.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionMapping`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionMapping.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [polygonZeroCell](../../../../GeneralTopology/SurfacePolygonCWCellSources.lean/declarations/polygonzerocell.md) | 28 | `declaration-track:e091c5d087362486350a4a6d4d370ca8c45b1d23ea53e184a646e1279a5f8723` |
-| 2 | `theorem` | [allCorners_eq_polygonZeroCell](../../../../GeneralTopology/SurfacePolygonCWCellSources.lean/declarations/allcorners-eq-polygonzerocell.md) | 33 | `result-track:d85c60fd1c99a3732d4e325a0624ddce7c5f58821365dd40fef099b48e77af3c` |
-| 3 | `def` | [positiveOneCell](../../../../GeneralTopology/SurfacePolygonCWCellSources.lean/declarations/positiveonecell.md) | 43 | `declaration-track:b32162f3b4329a19f238e106452aa99030b7b09817d1209617a244891cb50fcc` |
-| 4 | `theorem` | [positiveOneCell_continuous](../../../../GeneralTopology/SurfacePolygonCWCellSources.lean/declarations/positiveonecell-continuous.md) | 51 | `result-track:ba4f70a0a3aac40208c8afd352a65dd89e5a1e986cd0b9cba2d15463902d1b15` |
-| 5 | `theorem` | [negativeA_eq_positiveA_reverse](../../../../GeneralTopology/SurfacePolygonCWCellSources.lean/declarations/negativea-eq-positivea-reverse.md) | 60 | `result-track:33eb4b96777a5e4b5da1241632f6608a535374fd3f22533cb14389bdcc9b9556` |
-| 6 | `theorem` | [negativeB_eq_positiveB_reverse](../../../../GeneralTopology/SurfacePolygonCWCellSources.lean/declarations/negativeb-eq-positiveb-reverse.md) | 67 | `result-track:2da16e57436d0f475a312112a2123ed90351af3a2d314cb92bc3bdd2249fd1d5` |
-| 7 | `theorem` | [positiveOneCell_zero](../../../../GeneralTopology/SurfacePolygonCWCellSources.lean/declarations/positiveonecell-zero.md) | 75 | `result-track:c03c2e1a940dae2a4c561b8c4108067f61c2d73782e2cae7cadf198b17c05b87` |
+| 1 | `def` | [polygonZeroCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonCWCellSources.lean/declarations/polygonzerocell.md) | 28 | `declaration-track:e091c5d087362486350a4a6d4d370ca8c45b1d23ea53e184a646e1279a5f8723` |
+| 2 | `theorem` | [allCorners_eq_polygonZeroCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonCWCellSources.lean/declarations/allcorners-eq-polygonzerocell.md) | 33 | `result-track:d85c60fd1c99a3732d4e325a0624ddce7c5f58821365dd40fef099b48e77af3c` |
+| 3 | `def` | [positiveOneCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonCWCellSources.lean/declarations/positiveonecell.md) | 43 | `declaration-track:b32162f3b4329a19f238e106452aa99030b7b09817d1209617a244891cb50fcc` |
+| 4 | `theorem` | [positiveOneCell_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonCWCellSources.lean/declarations/positiveonecell-continuous.md) | 51 | `result-track:ba4f70a0a3aac40208c8afd352a65dd89e5a1e986cd0b9cba2d15463902d1b15` |
+| 5 | `theorem` | [negativeA_eq_positiveA_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonCWCellSources.lean/declarations/negativea-eq-positivea-reverse.md) | 60 | `result-track:33eb4b96777a5e4b5da1241632f6608a535374fd3f22533cb14389bdcc9b9556` |
+| 6 | `theorem` | [negativeB_eq_positiveB_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonCWCellSources.lean/declarations/negativeb-eq-positiveb-reverse.md) | 67 | `result-track:2da16e57436d0f475a312112a2123ed90351af3a2d314cb92bc3bdd2249fd1d5` |
+| 7 | `theorem` | [positiveOneCell_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonCWCellSources.lean/declarations/positiveonecell-zero.md) | 75 | `result-track:c03c2e1a940dae2a4c561b8c4108067f61c2d73782e2cae7cadf198b17c05b87` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

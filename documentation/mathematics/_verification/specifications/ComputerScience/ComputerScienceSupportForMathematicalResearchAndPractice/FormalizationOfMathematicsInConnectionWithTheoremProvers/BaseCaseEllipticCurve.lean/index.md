@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurve.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurve.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurve.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurve.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedBaseCaseEllipticCurve](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurve.lean/declarations/certifiedbasecaseellipticcurve.md) | 26 | `declaration-track:858c7ce2e9f648d42b1ff704def52d0dacf3f9d6e6344f768562ce9dd298c1a8` |
-| 2 | `theorem` | [certified_base_curve_lvalue_nonzero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurve.lean/declarations/certified-base-curve-lvalue-nonzero.md) | 39 | `result-track:504ccc2d98c9ed51a92bc6ba919f911080b1ffd18fe66e08d7e0bc9c2a4ec34b` |
-| 3 | `theorem` | [certified_base_curve_center_normalized](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurve.lean/declarations/certified-base-curve-center-normalized.md) | 44 | `result-track:57c3e276656998373862a81de9dea5a98c7874eb2ac1b31e20bed3c3ec11cf24` |
+| 1 | `structure` | [CertifiedBaseCaseEllipticCurve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurve.lean/declarations/certifiedbasecaseellipticcurve.md) | 26 | `declaration-track:858c7ce2e9f648d42b1ff704def52d0dacf3f9d6e6344f768562ce9dd298c1a8` |
+| 2 | `theorem` | [certified_base_curve_lvalue_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurve.lean/declarations/certified-base-curve-lvalue-nonzero.md) | 39 | `result-track:504ccc2d98c9ed51a92bc6ba919f911080b1ffd18fe66e08d7e0bc9c2a4ec34b` |
+| 3 | `theorem` | [certified_base_curve_center_normalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurve.lean/declarations/certified-base-curve-center-normalized.md) | 44 | `result-track:57c3e276656998373862a81de9dea5a98c7874eb2ac1b31e20bed3c3ec11cf24` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

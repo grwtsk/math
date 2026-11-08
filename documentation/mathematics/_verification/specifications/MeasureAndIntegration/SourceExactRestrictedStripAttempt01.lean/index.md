@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceExactRestrictedStripAttempt01.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceExactRestrictedStripAttempt01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceExactRestrictedStripAttempt01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceExactRestrictedStripAttempt01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [restrictedDerivativePairing_abs_le_tail](../../../../MeasureAndIntegration/SourceExactRestrictedStripAttempt01.lean/declarations/restrictedderivativepairing-abs-le-tail.md) | 41 | `result-track:2bf1b8fe6c2a60f06a0e210b9c4f24a4013806167a2ebd6e3d8390c4e0aeec43` |
-| 2 | `theorem` | [actual_derivative_low_sector_abs_le_tail](../../../../MeasureAndIntegration/SourceExactRestrictedStripAttempt01.lean/declarations/actual-derivative-low-sector-abs-le-tail.md) | 49 | `result-track:26b06a64d176bd503fd08251392234a80a1e00fb45184597cf958039d0677778` |
-| 3 | `theorem` | [actual_low_mixed_restricted_abs_le_tail](../../../../MeasureAndIntegration/SourceExactRestrictedStripAttempt01.lean/declarations/actual-low-mixed-restricted-abs-le-tail.md) | 64 | `result-track:70028232dc2a9f5da05c9661956da0c7eb3e363af9ce3f5a65895691bce2bc09` |
-| 4 | `theorem` | [actual_retained_spatial_strip_abs_le_tail](../../../../MeasureAndIntegration/SourceExactRestrictedStripAttempt01.lean/declarations/actual-retained-spatial-strip-abs-le-tail.md) | 111 | `result-track:53abba2702b39ca8f445adf40247ff2380b9cdd01ad98c8fdc24a178cb1c2376` |
-| 5 | `theorem` | [actual_retained_spatial_strip_abs_le_uniform](../../../../MeasureAndIntegration/SourceExactRestrictedStripAttempt01.lean/declarations/actual-retained-spatial-strip-abs-le-uniform.md) | 122 | `result-track:fa48189a1567e8acb542fff551f259be97b9c49eb613fd85cb9f3f9fc796ab10` |
-| 6 | `theorem` | [actual_surplus_le_remainingOverlap_add_exact_strip](../../../../MeasureAndIntegration/SourceExactRestrictedStripAttempt01.lean/declarations/actual-surplus-le-remainingoverlap-add-exact-strip.md) | 134 | `result-track:8b9da6af3a32f686304f623e46cfac6892d5da3c509d252133b4e5d7025eeb74` |
-| 7 | `theorem` | [remainingOverlap_le_actual_surplus_add_exact_strip](../../../../MeasureAndIntegration/SourceExactRestrictedStripAttempt01.lean/declarations/remainingoverlap-le-actual-surplus-add-exact-strip.md) | 145 | `result-track:cb72ecd56868062717ad447af60016de865f0c1b8fd5d809f4327a7e34fa70a5` |
+| 1 | `theorem` | [restrictedDerivativePairing_abs_le_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceExactRestrictedStripAttempt01.lean/declarations/restrictedderivativepairing-abs-le-tail.md) | 41 | `result-track:2bf1b8fe6c2a60f06a0e210b9c4f24a4013806167a2ebd6e3d8390c4e0aeec43` |
+| 2 | `theorem` | [actual_derivative_low_sector_abs_le_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceExactRestrictedStripAttempt01.lean/declarations/actual-derivative-low-sector-abs-le-tail.md) | 49 | `result-track:26b06a64d176bd503fd08251392234a80a1e00fb45184597cf958039d0677778` |
+| 3 | `theorem` | [actual_low_mixed_restricted_abs_le_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceExactRestrictedStripAttempt01.lean/declarations/actual-low-mixed-restricted-abs-le-tail.md) | 64 | `result-track:70028232dc2a9f5da05c9661956da0c7eb3e363af9ce3f5a65895691bce2bc09` |
+| 4 | `theorem` | [actual_retained_spatial_strip_abs_le_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceExactRestrictedStripAttempt01.lean/declarations/actual-retained-spatial-strip-abs-le-tail.md) | 111 | `result-track:53abba2702b39ca8f445adf40247ff2380b9cdd01ad98c8fdc24a178cb1c2376` |
+| 5 | `theorem` | [actual_retained_spatial_strip_abs_le_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceExactRestrictedStripAttempt01.lean/declarations/actual-retained-spatial-strip-abs-le-uniform.md) | 122 | `result-track:fa48189a1567e8acb542fff551f259be97b9c49eb613fd85cb9f3f9fc796ab10` |
+| 6 | `theorem` | [actual_surplus_le_remainingOverlap_add_exact_strip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceExactRestrictedStripAttempt01.lean/declarations/actual-surplus-le-remainingoverlap-add-exact-strip.md) | 134 | `result-track:8b9da6af3a32f686304f623e46cfac6892d5da3c509d252133b4e5d7025eeb74` |
+| 7 | `theorem` | [remainingOverlap_le_actual_surplus_add_exact_strip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceExactRestrictedStripAttempt01.lean/declarations/remainingoverlap-le-actual-surplus-add-exact-strip.md) | 145 | `result-track:cb72ecd56868062717ad447af60016de865f0c1b8fd5d809f4327a7e34fa70a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

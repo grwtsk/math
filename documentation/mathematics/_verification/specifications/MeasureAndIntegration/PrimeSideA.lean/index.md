@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PrimeSideA.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PrimeSideA.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSideA.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSideA.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prop_trace_mu](../../../../MeasureAndIntegration/PrimeSideA.lean/declarations/prop-trace-mu.md) | 58 | `result-track:96e356798ff6758b30c50c35dc43af748c2c8793a3af01bc6e4950e4d272faed` |
-| 2 | `theorem` | [prop_trace](../../../../MeasureAndIntegration/PrimeSideA.lean/declarations/prop-trace.md) | 300 | `result-track:e9ee1cbe66d4ff952ada2b385a7e958c11b07c0afe6582007ef6f871ad43ea73` |
-| 3 | `theorem` | [eq_Msplit](../../../../MeasureAndIntegration/PrimeSideA.lean/declarations/eq-msplit.md) | 380 | `result-track:a6f9a13830ecf79f5a3c34189024c0ec46081c59d178959751ca82790f0b0c02` |
-| 4 | `theorem` | [prop_cross_muPi](../../../../MeasureAndIntegration/PrimeSideA.lean/declarations/prop-cross-mupi.md) | 408 | `result-track:7e310b44c7fdd9573bf4a0452086071d6814ea24f28dfda62f721ab6590ad401` |
-| 5 | `theorem` | [prop_cross_PPi](../../../../MeasureAndIntegration/PrimeSideA.lean/declarations/prop-cross-ppi.md) | 428 | `result-track:535edeaa757bcb1644d81127c5c3e75bae83fbb3a93504955809c82616c4b028` |
-| 6 | `theorem` | [prop_cross_PiPi](../../../../MeasureAndIntegration/PrimeSideA.lean/declarations/prop-cross-pipi.md) | 449 | `result-track:e56d12556a3c3ec007110a1e8d488be96dd307bde54cb252804273ab53c5d717` |
+| 1 | `theorem` | [prop_trace_mu](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSideA.lean/declarations/prop-trace-mu.md) | 58 | `result-track:96e356798ff6758b30c50c35dc43af748c2c8793a3af01bc6e4950e4d272faed` |
+| 2 | `theorem` | [prop_trace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSideA.lean/declarations/prop-trace.md) | 300 | `result-track:e9ee1cbe66d4ff952ada2b385a7e958c11b07c0afe6582007ef6f871ad43ea73` |
+| 3 | `theorem` | [eq_Msplit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSideA.lean/declarations/eq-msplit.md) | 380 | `result-track:a6f9a13830ecf79f5a3c34189024c0ec46081c59d178959751ca82790f0b0c02` |
+| 4 | `theorem` | [prop_cross_muPi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSideA.lean/declarations/prop-cross-mupi.md) | 408 | `result-track:7e310b44c7fdd9573bf4a0452086071d6814ea24f28dfda62f721ab6590ad401` |
+| 5 | `theorem` | [prop_cross_PPi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSideA.lean/declarations/prop-cross-ppi.md) | 428 | `result-track:535edeaa757bcb1644d81127c5c3e75bae83fbb3a93504955809c82616c4b028` |
+| 6 | `theorem` | [prop_cross_PiPi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSideA.lean/declarations/prop-cross-pipi.md) | 449 | `result-track:e56d12556a3c3ec007110a1e8d488be96dd307bde54cb252804273ab53c5d717` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

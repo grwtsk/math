@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredColumnUnitRefinement.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredColumnUnitRefinement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredColumnUnitRefinement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredColumnUnitRefinement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualCenteredBeta_interval_eq_nonunit_floor](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredColumnUnitRefinement.lean/declarations/actualcenteredbeta-interval-eq-nonunit-floor.md) | 20 | `result-track:613578b61095f51dbbd12b1ef2824514a11868c337e13ea3b7499ca815a8692f` |
-| 2 | `theorem` | [actualCenteredBeta_interval_abs_le_nonunit_mass](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredColumnUnitRefinement.lean/declarations/actualcenteredbeta-interval-abs-le-nonunit-mass.md) | 39 | `result-track:905fa4f0d06ce0d1aabdd226ff6b25310fe0089fd2a83de132fc5924b7657f63` |
-| 3 | `theorem` | [actualCenteredBeta_interval_abs_le_cutoff_sub_one](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredColumnUnitRefinement.lean/declarations/actualcenteredbeta-interval-abs-le-cutoff-sub-one.md) | 54 | `result-track:f6e4b2bd4cc6b25be8c0e209b77b6b533ab330ee19e1f5123aa6b5d34ebf7227` |
-| 4 | `theorem` | [actualVaughanCenteredColumn_prefix_abs_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredColumnUnitRefinement.lean/declarations/actualvaughancenteredcolumn-prefix-abs-le.md) | 71 | `result-track:980d2b4d75774febbcb783927365e379f4bb70db77aaf6239a0caf3b88517e23` |
+| 1 | `theorem` | [actualCenteredBeta_interval_eq_nonunit_floor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredColumnUnitRefinement.lean/declarations/actualcenteredbeta-interval-eq-nonunit-floor.md) | 20 | `result-track:613578b61095f51dbbd12b1ef2824514a11868c337e13ea3b7499ca815a8692f` |
+| 2 | `theorem` | [actualCenteredBeta_interval_abs_le_nonunit_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredColumnUnitRefinement.lean/declarations/actualcenteredbeta-interval-abs-le-nonunit-mass.md) | 39 | `result-track:905fa4f0d06ce0d1aabdd226ff6b25310fe0089fd2a83de132fc5924b7657f63` |
+| 3 | `theorem` | [actualCenteredBeta_interval_abs_le_cutoff_sub_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredColumnUnitRefinement.lean/declarations/actualcenteredbeta-interval-abs-le-cutoff-sub-one.md) | 54 | `result-track:f6e4b2bd4cc6b25be8c0e209b77b6b533ab330ee19e1f5123aa6b5d34ebf7227` |
+| 4 | `theorem` | [actualVaughanCenteredColumn_prefix_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredColumnUnitRefinement.lean/declarations/actualvaughancenteredcolumn-prefix-abs-le.md) | 71 | `result-track:980d2b4d75774febbcb783927365e379f4bb70db77aaf6239a0caf3b88517e23` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

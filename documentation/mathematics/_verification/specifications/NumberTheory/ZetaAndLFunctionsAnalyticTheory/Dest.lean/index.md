@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Dest.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Dest.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Dest.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Dest.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StagedUploadDest](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Dest.lean/declarations/stageduploaddest.md) | 31 | `declaration-track:1b7813fc21fbf54a50632a5b79b18d7261a4750c67db9a313ec32026ab57204d` |
-| 2 | `def` | [StagedUploadDest.fileURL](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Dest.lean/declarations/stageduploaddest-fileurl.md) | 40 | `declaration-track:1f9cfb8b869d549cbb587beaca907cd6f05737b0dd41ed99298e6d83c7190409` |
-| 3 | `def` | [StagedUploadDest.markerURL](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Dest.lean/declarations/stageduploaddest-markerurl.md) | 45 | `declaration-track:6e7a0789a481f688d51a0eeb2e3a3a0d427393cc74144e7e732d7ade518750c4` |
-| 4 | `def` | [containerUploadDest](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Dest.lean/declarations/containeruploaddest.md) | 55 | `declaration-track:6268d21263465b33ed345235a5a32ce06bb43f2f45e499e3698d88243b570530` |
+| 1 | `structure` | [StagedUploadDest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Dest.lean/declarations/stageduploaddest.md) | 31 | `declaration-track:1b7813fc21fbf54a50632a5b79b18d7261a4750c67db9a313ec32026ab57204d` |
+| 2 | `def` | [StagedUploadDest.fileURL](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Dest.lean/declarations/stageduploaddest-fileurl.md) | 40 | `declaration-track:1f9cfb8b869d549cbb587beaca907cd6f05737b0dd41ed99298e6d83c7190409` |
+| 3 | `def` | [StagedUploadDest.markerURL](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Dest.lean/declarations/stageduploaddest-markerurl.md) | 45 | `declaration-track:6e7a0789a481f688d51a0eeb2e3a3a0d427393cc74144e7e732d7ade518750c4` |
+| 4 | `def` | [containerUploadDest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Dest.lean/declarations/containeruploaddest.md) | 55 | `declaration-track:6268d21263465b33ed345235a5a32ce06bb43f2f45e499e3698d88243b570530` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

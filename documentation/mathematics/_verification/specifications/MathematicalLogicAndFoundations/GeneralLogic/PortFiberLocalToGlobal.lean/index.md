@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.HolomorphicRestrictionGluing`](../../../../../FunctionsOfAComplexVariable/HolomorphicRestrictionGluing.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PortFiberArchitecture`](../../../../../AssociativeRingsAndAlgebras/PortFiberArchitecture.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicRestrictionGluing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicRestrictionGluing.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PortFiberArchitecture`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/PortFiberArchitecture.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,21 +58,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [LocalIndex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/localindex.md) | 12 | `declaration-track:8cc124545e2ce979cea85668d997da6f9bdd5355ea5edbe07ff47d4be479e0eb` |
-| 2 | `def` | [restrictionClaim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/restrictionclaim.md) | 19 | `declaration-track:fd650825e6cfad54800989798e1595bc5712b0f5e1fef90a08fb3e453911d0b3` |
-| 3 | `def` | [gluingClaim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/gluingclaim.md) | 24 | `declaration-track:245ffcea0e0577824b1d37701a5e79401221285fde7255868772538651bfa162` |
-| 4 | `def` | [holomorphicBoundaryClaim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/holomorphicboundaryclaim.md) | 37 | `declaration-track:920ca92ae5eb9a001bfb7a2e94b525021559c3607dcc1e9e034307fef1d7d5cc` |
-| 5 | `theorem` | [restrictionClaim_proof](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/restrictionclaim-proof.md) | 48 | `result-track:8fe8aec21465659d4a1814cee407c7aa4c4b519abffda9118cca5404484c6a16` |
-| 6 | `theorem` | [gluingClaim_proof](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/gluingclaim-proof.md) | 52 | `result-track:e7280871dc455565710ff0a1914193e8f3967f8ab06aee2d133802bcd94ad032` |
-| 7 | `theorem` | [holomorphicBoundaryClaim_proof](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/holomorphicboundaryclaim-proof.md) | 59 | `result-track:4a68e66c88613f0ad3e8c416bee7cd7384bc1cc30941238f9b8bce59cced92f3` |
-| 8 | `def` | [restrictionStage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/restrictionstage.md) | 66 | `declaration-track:4acfe20bdf2ee1aba68a34e828353524d2a8ebae3dfb5dcbbf1847cfeec615b8` |
-| 9 | `def` | [gluingStage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/gluingstage.md) | 85 | `declaration-track:5fff9a8fea634fa52e37b91218a5c2c48fc1e8cfe10795acbbf73222af6b64c4` |
-| 10 | `def` | [holomorphicBoundaryStage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/holomorphicboundarystage.md) | 108 | `declaration-track:4d2f58e7b6eb2bedec639897e63523a036effe608a7b045f5faf962fd0b8606f` |
-| 11 | `def` | [stage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/stage.md) | 128 | `declaration-track:49cf2325fdf716dd8bbb38ff84adaffdf842c02b60407aeb1756bd092c7d6335` |
-| 12 | `def` | [architecture](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/architecture.md) | 134 | `declaration-track:8efd95bbae1ccb2eef58aa1bf095ff60b8c616f1604e5f17126373906822ca76` |
-| 13 | `theorem` | [all_local](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/all-local.md) | 140 | `result-track:a129684e9854e0a2cc4b429b357aaf1bd8f1a093f86254729b4f3a495ec054df` |
-| 14 | `theorem` | [all_local_under_target_disposition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/all-local-under-target-disposition.md) | 145 | `result-track:4f92bba6e0d6d97cf3dbf51b2613a1340880a1cca27a2cc69e631f525b2fafc4` |
-| 15 | `theorem` | [rh_remains_unresolved](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/rh-remains-unresolved.md) | 151 | `result-track:983f57ebb240a8f64aa50e9094f82acdd076280d404fc2147afb24265c57d7d9` |
+| 1 | `inductive` | [LocalIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/localindex.md) | 12 | `declaration-track:8cc124545e2ce979cea85668d997da6f9bdd5355ea5edbe07ff47d4be479e0eb` |
+| 2 | `def` | [restrictionClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/restrictionclaim.md) | 19 | `declaration-track:fd650825e6cfad54800989798e1595bc5712b0f5e1fef90a08fb3e453911d0b3` |
+| 3 | `def` | [gluingClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/gluingclaim.md) | 24 | `declaration-track:245ffcea0e0577824b1d37701a5e79401221285fde7255868772538651bfa162` |
+| 4 | `def` | [holomorphicBoundaryClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/holomorphicboundaryclaim.md) | 37 | `declaration-track:920ca92ae5eb9a001bfb7a2e94b525021559c3607dcc1e9e034307fef1d7d5cc` |
+| 5 | `theorem` | [restrictionClaim_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/restrictionclaim-proof.md) | 48 | `result-track:8fe8aec21465659d4a1814cee407c7aa4c4b519abffda9118cca5404484c6a16` |
+| 6 | `theorem` | [gluingClaim_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/gluingclaim-proof.md) | 52 | `result-track:e7280871dc455565710ff0a1914193e8f3967f8ab06aee2d133802bcd94ad032` |
+| 7 | `theorem` | [holomorphicBoundaryClaim_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/holomorphicboundaryclaim-proof.md) | 59 | `result-track:4a68e66c88613f0ad3e8c416bee7cd7384bc1cc30941238f9b8bce59cced92f3` |
+| 8 | `def` | [restrictionStage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/restrictionstage.md) | 66 | `declaration-track:4acfe20bdf2ee1aba68a34e828353524d2a8ebae3dfb5dcbbf1847cfeec615b8` |
+| 9 | `def` | [gluingStage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/gluingstage.md) | 85 | `declaration-track:5fff9a8fea634fa52e37b91218a5c2c48fc1e8cfe10795acbbf73222af6b64c4` |
+| 10 | `def` | [holomorphicBoundaryStage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/holomorphicboundarystage.md) | 108 | `declaration-track:4d2f58e7b6eb2bedec639897e63523a036effe608a7b045f5faf962fd0b8606f` |
+| 11 | `def` | [stage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/stage.md) | 128 | `declaration-track:49cf2325fdf716dd8bbb38ff84adaffdf842c02b60407aeb1756bd092c7d6335` |
+| 12 | `def` | [architecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/architecture.md) | 134 | `declaration-track:8efd95bbae1ccb2eef58aa1bf095ff60b8c616f1604e5f17126373906822ca76` |
+| 13 | `theorem` | [all_local](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/all-local.md) | 140 | `result-track:a129684e9854e0a2cc4b429b357aaf1bd8f1a093f86254729b4f3a495ec054df` |
+| 14 | `theorem` | [all_local_under_target_disposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/all-local-under-target-disposition.md) | 145 | `result-track:4f92bba6e0d6d97cf3dbf51b2613a1340880a1cca27a2cc69e631f525b2fafc4` |
+| 15 | `theorem` | [rh_remains_unresolved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/declarations/rh-remains-unresolved.md) | 151 | `result-track:983f57ebb240a8f64aa50e9094f82acdd076280d404fc2147afb24265c57d7d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArtifactDerivationHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArtifactDerivationHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArtifactDerivationHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArtifactDerivationHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.Inference.RuleSoundness`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SoundInterpretedRulesAndCertificateCheckersHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Logic.Inference.RuleSoundness`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SoundInterpretedRulesAndCertificateCheckersHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ArtifactRule](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArtifactDerivationHistoricalSourceEdition2.lean/declarations/artifactrule.md) | 27 | `declaration-track:b5be77d611ac5b0aee476380dd272385f5c3fe5fc6358969137d14dad819fda2` |
-| 2 | `def` | [ArtifactRule.ExactAt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArtifactDerivationHistoricalSourceEdition2.lean/declarations/artifactrule-exactat.md) | 33 | `declaration-track:0755ecc3fe4641e6b2800146d32834fd539e9794c11ea3bb349b21676c5dd223` |
-| 3 | `inductive` | [ReconstructionDerivation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArtifactDerivationHistoricalSourceEdition2.lean/declarations/reconstructionderivation.md) | 41 | `declaration-track:b11b35be9244508405aa888391b83ca279ab698fad6d235c768ff5868f730fef` |
-| 4 | `def` | [ReconstructionDerivation.evaluate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArtifactDerivationHistoricalSourceEdition2.lean/declarations/reconstructionderivation-evaluate.md) | 55 | `declaration-track:76866282a653b9d0a28c1525c44a69448a223f87903036e60345854f2c507bab` |
-| 5 | `theorem` | [reconstruction_exact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArtifactDerivationHistoricalSourceEdition2.lean/declarations/reconstruction-exact.md) | 71 | `result-track:634243e78175ed306f80ff361d4fe8b594ec427ed4be7910761fb05ac1699f80` |
+| 1 | `structure` | [ArtifactRule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArtifactDerivationHistoricalSourceEdition2.lean/declarations/artifactrule.md) | 27 | `declaration-track:b5be77d611ac5b0aee476380dd272385f5c3fe5fc6358969137d14dad819fda2` |
+| 2 | `def` | [ArtifactRule.ExactAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArtifactDerivationHistoricalSourceEdition2.lean/declarations/artifactrule-exactat.md) | 33 | `declaration-track:0755ecc3fe4641e6b2800146d32834fd539e9794c11ea3bb349b21676c5dd223` |
+| 3 | `inductive` | [ReconstructionDerivation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArtifactDerivationHistoricalSourceEdition2.lean/declarations/reconstructionderivation.md) | 41 | `declaration-track:b11b35be9244508405aa888391b83ca279ab698fad6d235c768ff5868f730fef` |
+| 4 | `def` | [ReconstructionDerivation.evaluate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArtifactDerivationHistoricalSourceEdition2.lean/declarations/reconstructionderivation-evaluate.md) | 55 | `declaration-track:76866282a653b9d0a28c1525c44a69448a223f87903036e60345854f2c507bab` |
+| 5 | `theorem` | [reconstruction_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArtifactDerivationHistoricalSourceEdition2.lean/declarations/reconstruction-exact.md) | 71 | `result-track:634243e78175ed306f80ff361d4fe8b594ec427ed4be7910761fb05ac1699f80` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

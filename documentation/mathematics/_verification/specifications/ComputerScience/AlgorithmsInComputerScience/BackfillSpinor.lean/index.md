@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BackfillSpinor.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BackfillSpinor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BackfillSpinor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BackfillSpinor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [backfill_limit](../../../../../ComputerScience/AlgorithmsInComputerScience/BackfillSpinor.lean/declarations/backfill-limit.md) | 14 | `declaration-track:fd226aa0371db6814b406871296753525c074f19b57cc44242a5000fe993934a` |
-| 2 | `structure` | [BackfillResult](../../../../../ComputerScience/AlgorithmsInComputerScience/BackfillSpinor.lean/declarations/backfillresult.md) | 17 | `declaration-track:6cfebff31c4fd8071cf034c3ea735474c227578dcb66d96168a8e3f008418bad` |
-| 3 | `def` | [homotopyWitness](../../../../../ComputerScience/AlgorithmsInComputerScience/BackfillSpinor.lean/declarations/homotopywitness.md) | 24 | `declaration-track:1f8ecd717534f206846b05430ecacd9cf9a7f1ad963353e11759bab5c75364ce` |
-| 4 | `def` | [backfill](../../../../../ComputerScience/AlgorithmsInComputerScience/BackfillSpinor.lean/declarations/backfill.md) | 30 | `declaration-track:c7e05eec70431fb3d3e20b0fe8c8eb133879d9430fa9ad48688175ff93fa52a9` |
-| 5 | `theorem` | [dense_reduction](../../../../../ComputerScience/AlgorithmsInComputerScience/BackfillSpinor.lean/declarations/dense-reduction.md) | 67 | `result-track:88124498aa40b78c16fa47ee0b2bd15a7a84475e194662e35d5ab36411a9450c` |
+| 1 | `def` | [backfill_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BackfillSpinor.lean/declarations/backfill-limit.md) | 14 | `declaration-track:fd226aa0371db6814b406871296753525c074f19b57cc44242a5000fe993934a` |
+| 2 | `structure` | [BackfillResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BackfillSpinor.lean/declarations/backfillresult.md) | 17 | `declaration-track:6cfebff31c4fd8071cf034c3ea735474c227578dcb66d96168a8e3f008418bad` |
+| 3 | `def` | [homotopyWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BackfillSpinor.lean/declarations/homotopywitness.md) | 24 | `declaration-track:1f8ecd717534f206846b05430ecacd9cf9a7f1ad963353e11759bab5c75364ce` |
+| 4 | `def` | [backfill](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BackfillSpinor.lean/declarations/backfill.md) | 30 | `declaration-track:c7e05eec70431fb3d3e20b0fe8c8eb133879d9430fa9ad48688175ff93fa52a9` |
+| 5 | `theorem` | [dense_reduction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BackfillSpinor.lean/declarations/dense-reduction.md) | 67 | `result-track:88124498aa40b78c16fa47ee0b2bd15a7a84475e194662e35d5ab36411a9450c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

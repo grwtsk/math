@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.GoldbachTwoArcThetaTransfer`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaTransfer.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.GoldbachDirectionalMinorBoundary`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachTwoArcThetaTransfer`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaTransfer.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachDirectionalMinorBoundary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [goldbachThetaConservativeCutoff](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/declarations/goldbachthetaconservativecutoff.md) | 34 | `declaration-track:5943f483898a2715e31d7fe79e76abb42da1d719b4771c25e5934daaeecf43d8` |
-| 2 | `def` | [GoldbachThetaCoarseEstimates](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/declarations/goldbachthetacoarseestimates.md) | 38 | `declaration-track:e1136968e53abc654c094b7ae8e1ba03a8ce3ab9297b8fa432dc850a35405553` |
-| 3 | `theorem` | [theta_prefix_abs_le_succ_of_global](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/declarations/theta-prefix-abs-le-succ-of-global.md) | 45 | `result-track:039b9b485919784d5f968caa4c16d1c6bf0f2510d2fcd5efa7e02e23ac4544a6` |
-| 4 | `theorem` | [theta_all_prefix_one_percent_of_coarse](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/declarations/theta-all-prefix-one-percent-of-coarse.md) | 56 | `result-track:59f01706a77baaca08c53ebc61db344334790d688c55a0c7371a627bacc3b4da` |
-| 5 | `theorem` | [goldbachThetaPrefixSupplier_one_percent_of_coarse](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/declarations/goldbachthetaprefixsupplier-one-percent-of-coarse.md) | 71 | `result-track:72ec29b25954603a38e2049e805bce1c5a458b28ef16edcb2dc41211275aa744` |
-| 6 | `theorem` | [goldbachReducedPrefixSupplier_two_of_coarse](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/declarations/goldbachreducedprefixsupplier-two-of-coarse.md) | 80 | `result-track:8db3f9693386d6c7a8c29fbf4eef95c8e60a8e79fe98613fdffc11418a83b988` |
-| 7 | `theorem` | [goldbachCount_pos_of_coarse_theta_and_two_arc_bridges](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/declarations/goldbachcount-pos-of-coarse-theta-and-two-arc-bridges.md) | 90 | `result-track:d03a9708b13138570763c20685702dac51b7226f7c51452e2350d05428fb2d24` |
-| 8 | `theorem` | [goldbachCount_pos_above_of_coarse_theta_and_two_arc_bridges](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/declarations/goldbachcount-pos-above-of-coarse-theta-and-two-arc-bridges.md) | 113 | `result-track:5349c04314b8e8143511dcd8a942641123c39d7515131292c604ea390327c794` |
+| 1 | `def` | [goldbachThetaConservativeCutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/declarations/goldbachthetaconservativecutoff.md) | 34 | `declaration-track:5943f483898a2715e31d7fe79e76abb42da1d719b4771c25e5934daaeecf43d8` |
+| 2 | `def` | [GoldbachThetaCoarseEstimates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/declarations/goldbachthetacoarseestimates.md) | 38 | `declaration-track:e1136968e53abc654c094b7ae8e1ba03a8ce3ab9297b8fa432dc850a35405553` |
+| 3 | `theorem` | [theta_prefix_abs_le_succ_of_global](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/declarations/theta-prefix-abs-le-succ-of-global.md) | 45 | `result-track:039b9b485919784d5f968caa4c16d1c6bf0f2510d2fcd5efa7e02e23ac4544a6` |
+| 4 | `theorem` | [theta_all_prefix_one_percent_of_coarse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/declarations/theta-all-prefix-one-percent-of-coarse.md) | 56 | `result-track:59f01706a77baaca08c53ebc61db344334790d688c55a0c7371a627bacc3b4da` |
+| 5 | `theorem` | [goldbachThetaPrefixSupplier_one_percent_of_coarse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/declarations/goldbachthetaprefixsupplier-one-percent-of-coarse.md) | 71 | `result-track:72ec29b25954603a38e2049e805bce1c5a458b28ef16edcb2dc41211275aa744` |
+| 6 | `theorem` | [goldbachReducedPrefixSupplier_two_of_coarse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/declarations/goldbachreducedprefixsupplier-two-of-coarse.md) | 80 | `result-track:8db3f9693386d6c7a8c29fbf4eef95c8e60a8e79fe98613fdffc11418a83b988` |
+| 7 | `theorem` | [goldbachCount_pos_of_coarse_theta_and_two_arc_bridges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/declarations/goldbachcount-pos-of-coarse-theta-and-two-arc-bridges.md) | 90 | `result-track:d03a9708b13138570763c20685702dac51b7226f7c51452e2350d05428fb2d24` |
+| 8 | `theorem` | [goldbachCount_pos_above_of_coarse_theta_and_two_arc_bridges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/declarations/goldbachcount-pos-above-of-coarse-theta-and-two-arc-bridges.md) | 113 | `result-track:5349c04314b8e8143511dcd8a942641123c39d7515131292c604ea390327c794` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

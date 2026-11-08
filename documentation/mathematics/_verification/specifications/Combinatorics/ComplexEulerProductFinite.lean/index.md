@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ComplexEulerProductFinite.lean/index.md) · [Full source](../../../../Combinatorics/ComplexEulerProductFinite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexEulerProductFinite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexEulerProductFinite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteZetaEulerFactorComplex](../../../../Combinatorics/ComplexEulerProductFinite.lean/declarations/finitezetaeulerfactorcomplex.md) | 17 | `declaration-track:54a973660d09e725d0ea1f7ea1215b2d2308c16acd98351950a02b041c3e045c` |
-| 2 | `def` | [finiteZetaEulerProductComplex](../../../../Combinatorics/ComplexEulerProductFinite.lean/declarations/finitezetaeulerproductcomplex.md) | 23 | `declaration-track:7c5418281b3d618df97a6effd896228f9337ad53e2e9688cbfe3b800695626f5` |
-| 3 | `theorem` | [finiteZetaEulerProductComplex_expands_boundedSmoothNumbers](../../../../Combinatorics/ComplexEulerProductFinite.lean/declarations/finitezetaeulerproductcomplex-expands-boundedsmoothnumbers.md) | 29 | `result-track:25dfe662b9a8742a65b9626386eb2b1863ddfdbc60808470a5ec47243c482854` |
-| 4 | `def` | [zetaEulerApproxComplex](../../../../Combinatorics/ComplexEulerProductFinite.lean/declarations/zetaeulerapproxcomplex.md) | 45 | `declaration-track:45c4f756f3105356d488f596553663be285448c98f8d8315190dc2c5be8ada10` |
-| 5 | `theorem` | [zetaEulerApproxComplex_expands_boundedSmoothNumbers](../../../../Combinatorics/ComplexEulerProductFinite.lean/declarations/zetaeulerapproxcomplex-expands-boundedsmoothnumbers.md) | 50 | `result-track:963d4477ac4aaf92c248f4039e4e56ed79d2cc78b3c8101f63784a122487bd4c` |
+| 1 | `def` | [finiteZetaEulerFactorComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexEulerProductFinite.lean/declarations/finitezetaeulerfactorcomplex.md) | 17 | `declaration-track:54a973660d09e725d0ea1f7ea1215b2d2308c16acd98351950a02b041c3e045c` |
+| 2 | `def` | [finiteZetaEulerProductComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexEulerProductFinite.lean/declarations/finitezetaeulerproductcomplex.md) | 23 | `declaration-track:7c5418281b3d618df97a6effd896228f9337ad53e2e9688cbfe3b800695626f5` |
+| 3 | `theorem` | [finiteZetaEulerProductComplex_expands_boundedSmoothNumbers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexEulerProductFinite.lean/declarations/finitezetaeulerproductcomplex-expands-boundedsmoothnumbers.md) | 29 | `result-track:25dfe662b9a8742a65b9626386eb2b1863ddfdbc60808470a5ec47243c482854` |
+| 4 | `def` | [zetaEulerApproxComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexEulerProductFinite.lean/declarations/zetaeulerapproxcomplex.md) | 45 | `declaration-track:45c4f756f3105356d488f596553663be285448c98f8d8315190dc2c5be8ada10` |
+| 5 | `theorem` | [zetaEulerApproxComplex_expands_boundedSmoothNumbers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexEulerProductFinite.lean/declarations/zetaeulerapproxcomplex-expands-boundedsmoothnumbers.md) | 50 | `result-track:963d4477ac4aaf92c248f4039e4e56ed79d2cc78b3c8101f63784a122487bd4c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

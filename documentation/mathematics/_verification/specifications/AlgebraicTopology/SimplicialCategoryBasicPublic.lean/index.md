@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SimplicialCategoryBasicPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/SimplicialCategoryBasicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialCategoryBasicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialCategoryBasicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [SimplicialCategory](../../../../AlgebraicTopology/SimplicialCategoryBasicPublic.lean/declarations/simplicialcategory.md) | 52 | `declaration-track:a25e4cb929bbb3761130e3a5d5c15b5e2defe20fc442fbb6c6331a9b89aaa6ed` |
-| 2 | `abbrev` | [sHom](../../../../AlgebraicTopology/SimplicialCategoryBasicPublic.lean/declarations/shom.md) | 61 | `declaration-track:d5477fa339223e8b1fa5fc6a516b12d6ce4a548042173038b832ba6352f2f892` |
-| 3 | `abbrev` | [sHomComp](../../../../AlgebraicTopology/SimplicialCategoryBasicPublic.lean/declarations/shomcomp.md) | 64 | `declaration-track:27d5e574ac1702a74fd1578d1cbfe9ef8eda15dc5d2d60972aa8f96c8d77684a` |
-| 4 | `def` | [homEquiv'](../../../../AlgebraicTopology/SimplicialCategoryBasicPublic.lean/declarations/homequiv.md) | 68 | `declaration-track:ffea0c8ca03693b72eaed3307bf4984bb500a97e2f5924d36d9271e7818c5101` |
-| 5 | `abbrev` | [sHomFunctor](../../../../AlgebraicTopology/SimplicialCategoryBasicPublic.lean/declarations/shomfunctor.md) | 73 | `declaration-track:afc58f66c06eaa16f0c1b1e805f5e0f2da998cfb8be8ec622a70bc31b032608c` |
+| 1 | `abbrev` | [SimplicialCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialCategoryBasicPublic.lean/declarations/simplicialcategory.md) | 52 | `declaration-track:a25e4cb929bbb3761130e3a5d5c15b5e2defe20fc442fbb6c6331a9b89aaa6ed` |
+| 2 | `abbrev` | [sHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialCategoryBasicPublic.lean/declarations/shom.md) | 61 | `declaration-track:d5477fa339223e8b1fa5fc6a516b12d6ce4a548042173038b832ba6352f2f892` |
+| 3 | `abbrev` | [sHomComp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialCategoryBasicPublic.lean/declarations/shomcomp.md) | 64 | `declaration-track:27d5e574ac1702a74fd1578d1cbfe9ef8eda15dc5d2d60972aa8f96c8d77684a` |
+| 4 | `def` | [homEquiv'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialCategoryBasicPublic.lean/declarations/homequiv.md) | 68 | `declaration-track:ffea0c8ca03693b72eaed3307bf4984bb500a97e2f5924d36d9271e7818c5101` |
+| 5 | `abbrev` | [sHomFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialCategoryBasicPublic.lean/declarations/shomfunctor.md) | 73 | `declaration-track:afc58f66c06eaa16f0c1b1e805f5e0f2da998cfb8be8ec622a70bc31b032608c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

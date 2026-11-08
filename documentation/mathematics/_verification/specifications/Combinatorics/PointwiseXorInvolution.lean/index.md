@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PointwiseXorInvolution.lean/index.md) · [Full source](../../../../Combinatorics/PointwiseXorInvolution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PointwiseXorInvolution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PointwiseXorInvolution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `BitMatrix.Carrier.Address` — import line 17; external provider; requires a separately pinned dependency.
-- [Boolean Function Data And Xor](../../../../Combinatorics/BooleanFunctionDataAndXor.lean/index.md) — import line 19; pinned internal source present.
+- [Boolean Function Data And Xor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanFunctionDataAndXor.lean/index.md) — import line 19; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [stateTransformationInterpreter](../../../../Combinatorics/PointwiseXorInvolution.lean/declarations/statetransformationinterpreter.md) | 38 | `declaration-track:2e2291d9540bd80e89455db195896bd21fbf2ee3af8d6eaa9d00c51b9a5fac93` |
-| 2 | `theorem` | [stateTransformationInterpreter_zero](../../../../Combinatorics/PointwiseXorInvolution.lean/declarations/statetransformationinterpreter-zero.md) | 44 | `result-track:912c8ea4c2b110cba8f3899f869842a3747f030a1baadb285fcd73bcb67aa67b` |
-| 3 | `theorem` | [stateTransformationInterpreter_involutive](../../../../Combinatorics/PointwiseXorInvolution.lean/declarations/statetransformationinterpreter-involutive.md) | 52 | `result-track:257c914d1759deb958cf61a4b89dc961b60df2c3b2704a94c95753505a298b8f` |
+| 1 | `def` | [stateTransformationInterpreter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PointwiseXorInvolution.lean/declarations/statetransformationinterpreter.md) | 38 | `declaration-track:2e2291d9540bd80e89455db195896bd21fbf2ee3af8d6eaa9d00c51b9a5fac93` |
+| 2 | `theorem` | [stateTransformationInterpreter_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PointwiseXorInvolution.lean/declarations/statetransformationinterpreter-zero.md) | 44 | `result-track:912c8ea4c2b110cba8f3899f869842a3747f030a1baadb285fcd73bcb67aa67b` |
+| 3 | `theorem` | [stateTransformationInterpreter_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PointwiseXorInvolution.lean/declarations/statetransformationinterpreter-involutive.md) | 52 | `result-track:257c914d1759deb958cf61a4b89dc961b60df2c3b2704a94c95753505a298b8f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

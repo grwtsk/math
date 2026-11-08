@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsCompatibleWithShift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/declarations/iscompatiblewithshift.md) | 35 | `declaration-track:765dd411a2047071cbc6f5f2e28b78c50e48017e14642f4d9e35eb5c2e97512a` |
-| 2 | `instance` | [HasShift.quotient](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/declarations/hasshift-quotient.md) | 45 | `declaration-track:b3946853d1474cd8d578ee997e92fdaa932b49b99d5ad474f3aa1b4bf11ae793` |
-| 3 | `instance` | [Quotient.functor_commShift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/declarations/quotient-functor-commshift.md) | 53 | `declaration-track:57a114bb24360f9ed42c33b992a68db2651807d157b0bc27469bf9e40f333fc7` |
-| 4 | `def` | [iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/declarations/iso.md) | 70 | `declaration-track:162e38ae9f5c2a1cc5c5c7f62b7c3af483e2a3dd3e19073580cfe299db3136e1` |
-| 5 | `lemma` | [iso_hom_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/declarations/iso-hom-app.md) | 78 | `result-track:3c3eebd5d76616c3f256abbf5d636afdd02e57cdf4f729b5bd715bf1fe68d6c8` |
-| 6 | `lemma` | [iso_inv_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/declarations/iso-inv-app.md) | 88 | `result-track:41b44cd4ffddcfbb29610eb921839f2c12f6a1eec65f615debd7b058f5f71642` |
-| 7 | `instance` | [liftCommShift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/declarations/liftcommshift.md) | 104 | `declaration-track:3d231847a4aa02b6668dfed689750ac132a6087f8333a812fb3f791b2413bda0` |
-| 8 | `instance` | [liftCommShift_compatibility](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/declarations/liftcommshift-compatibility.md) | 137 | `declaration-track:c7f2fb4a9c3f1c184c4972beadb2943e91a69ea9642c640e823f90c15f91c528` |
+| 1 | `class` | [IsCompatibleWithShift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/declarations/iscompatiblewithshift.md) | 35 | `declaration-track:765dd411a2047071cbc6f5f2e28b78c50e48017e14642f4d9e35eb5c2e97512a` |
+| 2 | `instance` | [HasShift.quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/declarations/hasshift-quotient.md) | 45 | `declaration-track:b3946853d1474cd8d578ee997e92fdaa932b49b99d5ad474f3aa1b4bf11ae793` |
+| 3 | `instance` | [Quotient.functor_commShift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/declarations/quotient-functor-commshift.md) | 53 | `declaration-track:57a114bb24360f9ed42c33b992a68db2651807d157b0bc27469bf9e40f333fc7` |
+| 4 | `def` | [iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/declarations/iso.md) | 70 | `declaration-track:162e38ae9f5c2a1cc5c5c7f62b7c3af483e2a3dd3e19073580cfe299db3136e1` |
+| 5 | `lemma` | [iso_hom_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/declarations/iso-hom-app.md) | 78 | `result-track:3c3eebd5d76616c3f256abbf5d636afdd02e57cdf4f729b5bd715bf1fe68d6c8` |
+| 6 | `lemma` | [iso_inv_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/declarations/iso-inv-app.md) | 88 | `result-track:41b44cd4ffddcfbb29610eb921839f2c12f6a1eec65f615debd7b058f5f71642` |
+| 7 | `instance` | [liftCommShift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/declarations/liftcommshift.md) | 104 | `declaration-track:3d231847a4aa02b6668dfed689750ac132a6087f8333a812fb3f791b2413bda0` |
+| 8 | `instance` | [liftCommShift_compatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftQuotient.lean/declarations/liftcommshift-compatibility.md) | 137 | `declaration-track:c7f2fb4a9c3f1c184c4972beadb2943e91a69ea9642c640e823f90c15f91c528` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

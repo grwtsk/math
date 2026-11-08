@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMkEdge.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMkEdge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMkEdge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMkEdge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mkEdge](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMkEdge.lean/declarations/mkedge.md) | 22 | `declaration-track:bc6c340ddc4fc2b73f7366dc87fc83adb017612d36f802c4c39699bb990bbd05` |
-| 2 | `def` | [complete](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMkEdge.lean/declarations/complete.md) | 35 | `declaration-track:68d892c93f0d51368df174ff092b36f5d00f6dd843f9efc4c75f70a56b2ea86a` |
-| 3 | `def` | [K₁₀](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMkEdge.lean/declarations/k.md) | 45 | `declaration-track:99bc337cb9fff0120f06bbda84367bebf46d850f5590e9ba584494b47f4d621a` |
+| 1 | `def` | [mkEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMkEdge.lean/declarations/mkedge.md) | 22 | `declaration-track:bc6c340ddc4fc2b73f7366dc87fc83adb017612d36f802c4c39699bb990bbd05` |
+| 2 | `def` | [complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMkEdge.lean/declarations/complete.md) | 35 | `declaration-track:68d892c93f0d51368df174ff092b36f5d00f6dd843f9efc4c75f70a56b2ea86a` |
+| 3 | `def` | [K₁₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMkEdge.lean/declarations/k.md) | 45 | `declaration-track:99bc337cb9fff0120f06bbda84367bebf46d850f5590e9ba584494b47f4d621a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NumericNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NumericNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NumericNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NumericNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ArbitraryPrecisionInteger](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NumericNamespaced.lean/declarations/arbitraryprecisioninteger.md) | 18 | `declaration-track:097d512f62bc0df34ed246e6f3811f21a0d090ff3842ecb4122fcfd87b667c4d` |
-| 2 | `structure` | [Tolerance](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NumericNamespaced.lean/declarations/tolerance.md) | 21 | `declaration-track:44e804ea4a254661dba1f0cd7f3a11119a42b425d9549e20a9343e245e7bc4c7` |
-| 3 | `def` | [Tolerance.NearlyEqual](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NumericNamespaced.lean/declarations/tolerance-nearlyequal.md) | 28 | `declaration-track:158e3f58363678365b7ae9d67a12154896bf96889732fb3004557509b907ceef` |
-| 4 | `def` | [CheckedNaturalConversion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NumericNamespaced.lean/declarations/checkednaturalconversion.md) | 33 | `declaration-track:b67444536cdbad9e348c42f82425e64cbae0d22c1f81d1663e9876c66751b5ab` |
+| 1 | `abbrev` | [ArbitraryPrecisionInteger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NumericNamespaced.lean/declarations/arbitraryprecisioninteger.md) | 18 | `declaration-track:097d512f62bc0df34ed246e6f3811f21a0d090ff3842ecb4122fcfd87b667c4d` |
+| 2 | `structure` | [Tolerance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NumericNamespaced.lean/declarations/tolerance.md) | 21 | `declaration-track:44e804ea4a254661dba1f0cd7f3a11119a42b425d9549e20a9343e245e7bc4c7` |
+| 3 | `def` | [Tolerance.NearlyEqual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NumericNamespaced.lean/declarations/tolerance-nearlyequal.md) | 28 | `declaration-track:158e3f58363678365b7ae9d67a12154896bf96889732fb3004557509b907ceef` |
+| 4 | `def` | [CheckedNaturalConversion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NumericNamespaced.lean/declarations/checkednaturalconversion.md) | 33 | `declaration-track:b67444536cdbad9e348c42f82425e64cbae0d22c1f81d1663e9876c66751b5ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/QuarticResolventActionKernel.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/QuarticResolventActionKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticResolventActionKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticResolventActionKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticResolventRootEquiv`](../../../../AssociativeRingsAndAlgebras/QuarticResolventRootEquiv.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticResolventRootEquiv`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticResolventRootEquiv.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fixes_adjacency_iff_matching_kernel](../../../../AssociativeRingsAndAlgebras/QuarticResolventActionKernel.lean/declarations/fixes-adjacency-iff-matching-kernel.md) | 30 | `result-track:05ea8e0294684e3de8592bdb47f62bc9c6cd59e2c5efca0f5468597dfef82331` |
-| 2 | `theorem` | [fixes_adjacency_iff_double_transposition](../../../../AssociativeRingsAndAlgebras/QuarticResolventActionKernel.lean/declarations/fixes-adjacency-iff-double-transposition.md) | 49 | `result-track:af92902af908accc33f1e60a120155af32f2f5e5c2cf7eee90c7afe73ec6aaf5` |
-| 3 | `theorem` | [actual_quartic_fixes_adjacency_iff_kernel](../../../../AssociativeRingsAndAlgebras/QuarticResolventActionKernel.lean/declarations/actual-quartic-fixes-adjacency-iff-kernel.md) | 62 | `result-track:ea649ea1673d53ace6acff4f04950acff44b5451a49a2c42646296eb68ab4727` |
+| 1 | `theorem` | [fixes_adjacency_iff_matching_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticResolventActionKernel.lean/declarations/fixes-adjacency-iff-matching-kernel.md) | 30 | `result-track:05ea8e0294684e3de8592bdb47f62bc9c6cd59e2c5efca0f5468597dfef82331` |
+| 2 | `theorem` | [fixes_adjacency_iff_double_transposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticResolventActionKernel.lean/declarations/fixes-adjacency-iff-double-transposition.md) | 49 | `result-track:af92902af908accc33f1e60a120155af32f2f5e5c2cf7eee90c7afe73ec6aaf5` |
+| 3 | `theorem` | [actual_quartic_fixes_adjacency_iff_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticResolventActionKernel.lean/declarations/actual-quartic-fixes-adjacency-iff-kernel.md) | 62 | `result-track:ea649ea1673d53ace6acff4f04950acff44b5451a49a2c42646296eb68ab4727` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

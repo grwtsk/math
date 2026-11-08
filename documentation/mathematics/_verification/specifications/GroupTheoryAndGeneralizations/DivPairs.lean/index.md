@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/DivPairs.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/DivPairs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DivPairs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DivPairs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [divPairs](../../../../GroupTheoryAndGeneralizations/DivPairs.lean/declarations/divpairs.md) | 28 | `declaration-track:f0f482f7db15bbe3e744f154df4a78ad0ae9af43f64842000270c92af82c0d6c` |
-| 2 | `lemma` | [mem_divPairs](../../../../GroupTheoryAndGeneralizations/DivPairs.lean/declarations/mem-divpairs.md) | 31 | `result-track:b8113d4cf7f5e68006d2bc03f17bc12477c520ea9a1b113569740092288a90b6` |
-| 3 | `lemma` | [divPairs_comap](../../../../GroupTheoryAndGeneralizations/DivPairs.lean/declarations/divpairs-comap.md) | 36 | `result-track:1261133b33737b225a873ef468baa56d34529dcd20b356c17858fa6679cd1c0a` |
+| 1 | `def` | [divPairs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DivPairs.lean/declarations/divpairs.md) | 28 | `declaration-track:f0f482f7db15bbe3e744f154df4a78ad0ae9af43f64842000270c92af82c0d6c` |
+| 2 | `lemma` | [mem_divPairs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DivPairs.lean/declarations/mem-divpairs.md) | 31 | `result-track:b8113d4cf7f5e68006d2bc03f17bc12477c520ea9a1b113569740092288a90b6` |
+| 3 | `lemma` | [divPairs_comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DivPairs.lean/declarations/divpairs-comap.md) | 36 | `result-track:1261133b33737b225a873ef468baa56d34529dcd20b356c17858fa6679cd1c0a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

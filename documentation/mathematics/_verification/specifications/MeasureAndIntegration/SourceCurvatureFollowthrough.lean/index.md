@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceCurvatureFollowthrough.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceCurvatureFollowthrough.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCurvatureFollowthrough.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCurvatureFollowthrough.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [remaining_lower_of_actual_finite_row_five](../../../../MeasureAndIntegration/SourceCurvatureFollowthrough.lean/declarations/remaining-lower-of-actual-finite-row-five.md) | 23 | `result-track:e7adb00ded7b02f3a44a384f8b753790c0e84e4a75f69d50574c7e2053138249` |
-| 2 | `theorem` | [estimate_of_actual_finite_row_five](../../../../MeasureAndIntegration/SourceCurvatureFollowthrough.lean/declarations/estimate-of-actual-finite-row-five.md) | 33 | `result-track:81e1ae7c60882c7e8d9f8b9581730145441f75b609b960bee4168fad53d716e6` |
-| 3 | `theorem` | [signed_pairing_eq_actual_finite_row](../../../../MeasureAndIntegration/SourceCurvatureFollowthrough.lean/declarations/signed-pairing-eq-actual-finite-row.md) | 43 | `result-track:2a668f57b36ecbca0e15fd67ecfa3aff606426418631d0a0395e5b351a8ceeb3` |
-| 4 | `theorem` | [cesaro_growth_of_global_first_primitive](../../../../MeasureAndIntegration/SourceCurvatureFollowthrough.lean/declarations/cesaro-growth-of-global-first-primitive.md) | 58 | `result-track:d1d5814dc759e6ed8ea046142c2bad4db9e6324d4c26041f4435188e2b35622e` |
-| 5 | `theorem` | [remaining_lower_of_global_first_primitive_five](../../../../MeasureAndIntegration/SourceCurvatureFollowthrough.lean/declarations/remaining-lower-of-global-first-primitive-five.md) | 78 | `result-track:e22bc48666e06472bc185eff46a0475bc6a31f0e2d91d53e32eb837f824dcca7` |
-| 6 | `theorem` | [estimate_of_global_first_primitive_five](../../../../MeasureAndIntegration/SourceCurvatureFollowthrough.lean/declarations/estimate-of-global-first-primitive-five.md) | 87 | `result-track:233ddf220c7728ffb55a5ce9fa7bb3bcf873ffae2e7b30ef06151d4e36b0457b` |
-| 7 | `theorem` | [estimate_of_actual_finite_signed_pairing](../../../../MeasureAndIntegration/SourceCurvatureFollowthrough.lean/declarations/estimate-of-actual-finite-signed-pairing.md) | 94 | `result-track:ad84e4b9e3a0695e91714e88f631ab5274fd6a74d5a5ee83905082fd69695f85` |
+| 1 | `theorem` | [remaining_lower_of_actual_finite_row_five](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCurvatureFollowthrough.lean/declarations/remaining-lower-of-actual-finite-row-five.md) | 23 | `result-track:e7adb00ded7b02f3a44a384f8b753790c0e84e4a75f69d50574c7e2053138249` |
+| 2 | `theorem` | [estimate_of_actual_finite_row_five](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCurvatureFollowthrough.lean/declarations/estimate-of-actual-finite-row-five.md) | 33 | `result-track:81e1ae7c60882c7e8d9f8b9581730145441f75b609b960bee4168fad53d716e6` |
+| 3 | `theorem` | [signed_pairing_eq_actual_finite_row](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCurvatureFollowthrough.lean/declarations/signed-pairing-eq-actual-finite-row.md) | 43 | `result-track:2a668f57b36ecbca0e15fd67ecfa3aff606426418631d0a0395e5b351a8ceeb3` |
+| 4 | `theorem` | [cesaro_growth_of_global_first_primitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCurvatureFollowthrough.lean/declarations/cesaro-growth-of-global-first-primitive.md) | 58 | `result-track:d1d5814dc759e6ed8ea046142c2bad4db9e6324d4c26041f4435188e2b35622e` |
+| 5 | `theorem` | [remaining_lower_of_global_first_primitive_five](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCurvatureFollowthrough.lean/declarations/remaining-lower-of-global-first-primitive-five.md) | 78 | `result-track:e22bc48666e06472bc185eff46a0475bc6a31f0e2d91d53e32eb837f824dcca7` |
+| 6 | `theorem` | [estimate_of_global_first_primitive_five](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCurvatureFollowthrough.lean/declarations/estimate-of-global-first-primitive-five.md) | 87 | `result-track:233ddf220c7728ffb55a5ce9fa7bb3bcf873ffae2e7b30ef06151d4e36b0457b` |
+| 7 | `theorem` | [estimate_of_actual_finite_signed_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCurvatureFollowthrough.lean/declarations/estimate-of-actual-finite-signed-pairing.md) | 94 | `result-track:ad84e4b9e3a0695e91714e88f631ab5274fd6a74d5a5ee83905082fd69695f85` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

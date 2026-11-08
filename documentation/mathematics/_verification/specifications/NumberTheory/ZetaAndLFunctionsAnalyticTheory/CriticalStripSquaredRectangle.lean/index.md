@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSquaredCover`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredCover.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFourTermRectangle`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFourTermRectangle.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSquaredCover`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredCover.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFourTermRectangle`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFourTermRectangle.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [box](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/box.md) | 25 | `declaration-track:65eccc8909c0f870f16e83e94f0fdae0b7fb97aacaa0df8c18d2adeda51249c6` |
-| 2 | `lemma` | [squared_leaf_accepts](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/squared-leaf-accepts.md) | 32 | `result-track:924ad5c7cdf409d7fcc6c84c3cac15ee7db21da6a6e74c866271d8aec2e395f6` |
-| 3 | `lemma` | [old_leaf_rejects](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/old-leaf-rejects.md) | 38 | `result-track:5b7d7d4b83ea82eccdad657d59d45c8e1db0a7017e08201f0be40323e98ba508` |
-| 4 | `lemma` | [search_accepts](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/search-accepts.md) | 43 | `result-track:17cc8a5192f0b1cb4194f3e3987f74400dc0abc3ee5d89ba1098942918d1809c` |
-| 5 | `def` | [certificate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/certificate.md) | 48 | `declaration-track:50b76e2351448c5057081f208d7f3135bffe7740e42c1f8790faef898f2c2c43` |
-| 6 | `def` | [cover](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/cover.md) | 52 | `declaration-track:2909e6946553cdb0ebe028cb46a5f6957d35a2e754f8eb0e4885bd5a727b5d5e` |
-| 7 | `lemma` | [box_subset_disk](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/box-subset-disk.md) | 57 | `result-track:6cedd2f3cdb3fe7647836bd3cb18e5bb443a4204f1f056d8968becf1ac64c8e0` |
-| 8 | `theorem` | [norm_lower_on_box](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/norm-lower-on-box.md) | 63 | `result-track:bafa80f4fa3680dc08454e235d47ebea79115ea89026febe5d2accfbe65c5698` |
-| 9 | `theorem` | [noTargetZero_box](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/notargetzero-box.md) | 67 | `result-track:c5cd25c1e1944ad062a49cc410719c745e75e36575a1995641da1df1bdddb738` |
-| 10 | `theorem` | [old_box_subset](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/old-box-subset.md) | 72 | `result-track:e0b9caef5605e05bd2ecdacd4654084b5a2e93f393afa7e61346cfeb8c01467c` |
-| 11 | `theorem` | [strict_extension](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/strict-extension.md) | 85 | `result-track:1cdecf9f40b82391d2096153c60752a05faeaeca2cff89ad4f019e23fc7d39ac` |
-| 12 | `theorem` | [ambient_point_outside](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/ambient-point-outside.md) | 91 | `result-track:a96f28504eec3b436c3e924a98b058d9b7316834f863753192d16705c5175795` |
+| 1 | `def` | [box](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/box.md) | 25 | `declaration-track:65eccc8909c0f870f16e83e94f0fdae0b7fb97aacaa0df8c18d2adeda51249c6` |
+| 2 | `lemma` | [squared_leaf_accepts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/squared-leaf-accepts.md) | 32 | `result-track:924ad5c7cdf409d7fcc6c84c3cac15ee7db21da6a6e74c866271d8aec2e395f6` |
+| 3 | `lemma` | [old_leaf_rejects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/old-leaf-rejects.md) | 38 | `result-track:5b7d7d4b83ea82eccdad657d59d45c8e1db0a7017e08201f0be40323e98ba508` |
+| 4 | `lemma` | [search_accepts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/search-accepts.md) | 43 | `result-track:17cc8a5192f0b1cb4194f3e3987f74400dc0abc3ee5d89ba1098942918d1809c` |
+| 5 | `def` | [certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/certificate.md) | 48 | `declaration-track:50b76e2351448c5057081f208d7f3135bffe7740e42c1f8790faef898f2c2c43` |
+| 6 | `def` | [cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/cover.md) | 52 | `declaration-track:2909e6946553cdb0ebe028cb46a5f6957d35a2e754f8eb0e4885bd5a727b5d5e` |
+| 7 | `lemma` | [box_subset_disk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/box-subset-disk.md) | 57 | `result-track:6cedd2f3cdb3fe7647836bd3cb18e5bb443a4204f1f056d8968becf1ac64c8e0` |
+| 8 | `theorem` | [norm_lower_on_box](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/norm-lower-on-box.md) | 63 | `result-track:bafa80f4fa3680dc08454e235d47ebea79115ea89026febe5d2accfbe65c5698` |
+| 9 | `theorem` | [noTargetZero_box](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/notargetzero-box.md) | 67 | `result-track:c5cd25c1e1944ad062a49cc410719c745e75e36575a1995641da1df1bdddb738` |
+| 10 | `theorem` | [old_box_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/old-box-subset.md) | 72 | `result-track:e0b9caef5605e05bd2ecdacd4654084b5a2e93f393afa7e61346cfeb8c01467c` |
+| 11 | `theorem` | [strict_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/strict-extension.md) | 85 | `result-track:1cdecf9f40b82391d2096153c60752a05faeaeca2cff89ad4f019e23fc7d39ac` |
+| 12 | `theorem` | [ambient_point_outside](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredRectangle.lean/declarations/ambient-point-outside.md) | 91 | `result-track:a96f28504eec3b436c3e924a98b058d9b7316834f863753192d16705c5175795` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

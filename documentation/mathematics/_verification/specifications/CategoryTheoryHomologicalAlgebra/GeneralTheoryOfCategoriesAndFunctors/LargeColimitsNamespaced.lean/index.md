@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LargeColimitsNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LargeColimitsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LargeColimitsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LargeColimitsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isColimit_iff_bijective_desc](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LargeColimitsNamespaced.lean/declarations/iscolimit-iff-bijective-desc.md) | 41 | `result-track:4eb95345586d879a325433f54106957157e4064ac66015bd40ab9ee263e92f80` |
-| 2 | `lemma` | [hasColimit_iff_small_quot](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LargeColimitsNamespaced.lean/declarations/hascolimit-iff-small-quot.md) | 76 | `result-track:6410e0c1ab5bb436ab191ca4dc7910b66328b915a0c42da60f15c6c40ba05c45` |
+| 1 | `lemma` | [isColimit_iff_bijective_desc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LargeColimitsNamespaced.lean/declarations/iscolimit-iff-bijective-desc.md) | 41 | `result-track:4eb95345586d879a325433f54106957157e4064ac66015bd40ab9ee263e92f80` |
+| 2 | `lemma` | [hasColimit_iff_small_quot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LargeColimitsNamespaced.lean/declarations/hascolimit-iff-small-quot.md) | 76 | `result-track:6410e0c1ab5bb436ab191ca4dc7910b66328b915a0c42da60f15c6c40ba05c45` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

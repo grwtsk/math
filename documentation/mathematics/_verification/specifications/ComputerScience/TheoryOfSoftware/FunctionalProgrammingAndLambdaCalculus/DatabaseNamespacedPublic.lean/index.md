@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DatabaseNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DatabaseNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DatabaseNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DatabaseNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [defaultGetZoneRules](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DatabaseNamespacedPublic.lean/declarations/defaultgetzonerules.md) | 37 | `declaration-track:674405056bab0893cc78195edafccf927ac231e3f6502def108a552196dd1998` |
-| 2 | `def` | [defaultGetLocalZoneRules](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DatabaseNamespacedPublic.lean/declarations/defaultgetlocalzonerules.md) | 47 | `declaration-track:57adf22bbfbec4915f6019a2375b4806b352e9c4354dabf540f420452b7dcdb5` |
+| 1 | `def` | [defaultGetZoneRules](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DatabaseNamespacedPublic.lean/declarations/defaultgetzonerules.md) | 37 | `declaration-track:674405056bab0893cc78195edafccf927ac231e3f6502def108a552196dd1998` |
+| 2 | `def` | [defaultGetLocalZoneRules](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DatabaseNamespacedPublic.lean/declarations/defaultgetlocalzonerules.md) | 47 | `declaration-track:57adf22bbfbec4915f6019a2375b4806b352e9c4354dabf540f420452b7dcdb5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

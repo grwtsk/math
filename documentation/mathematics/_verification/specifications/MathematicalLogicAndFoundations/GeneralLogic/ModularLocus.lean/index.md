@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModularLocus.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModularLocus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModularLocus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModularLocus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ModularFormLocus](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModularLocus.lean/declarations/modularformlocus.md) | 19 | `declaration-track:a9405904952f9e624e8b1bea64bbaa9111a54e0b1b85f6517d30bb954eccf889` |
-| 2 | `structure` | [ModularLocusPoint](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModularLocus.lean/declarations/modularlocuspoint.md) | 26 | `declaration-track:ff70be23f2f0c46904485828be8e38ffa08340fd41a227e9793c126fc33434c5` |
-| 3 | `theorem` | [modular_locus_point_certified](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModularLocus.lean/declarations/modular-locus-point-certified.md) | 32 | `result-track:29af02630380725b477a8db39cde7b5051835e439b981fddb64f30e89df0b182` |
+| 1 | `structure` | [ModularFormLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModularLocus.lean/declarations/modularformlocus.md) | 19 | `declaration-track:a9405904952f9e624e8b1bea64bbaa9111a54e0b1b85f6517d30bb954eccf889` |
+| 2 | `structure` | [ModularLocusPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModularLocus.lean/declarations/modularlocuspoint.md) | 26 | `declaration-track:ff70be23f2f0c46904485828be8e38ffa08340fd41a227e9793c126fc33434c5` |
+| 3 | `theorem` | [modular_locus_point_certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModularLocus.lean/declarations/modular-locus-point-certified.md) | 32 | `result-track:29af02630380725b477a8db39cde7b5051835e439b981fddb64f30e89df0b182` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

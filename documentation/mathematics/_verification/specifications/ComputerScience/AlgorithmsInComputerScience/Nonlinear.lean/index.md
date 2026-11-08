@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [inv](../../../../../ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/inv.md) | 47 | `declaration-track:782ff1e11d8d0e946b773ce64c7e0fa5a8b5fe5b05967aa7abcf9540e9dd7fc6` |
-| 2 | `def` | [invChebyshev](../../../../../ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/invchebyshev.md) | 103 | `declaration-track:944ca02401c1733bfcb8dced1e145bc82c49289cba122750dbe2b38f481a7368` |
-| 3 | `def` | [sqrt](../../../../../ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/sqrt.md) | 137 | `declaration-track:d6eb29ada73e16a9460905b277e8539aeaa3686311aea0fa3f3c12438074ec47` |
-| 4 | `def` | [sqrtChebyshev](../../../../../ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/sqrtchebyshev.md) | 165 | `declaration-track:13a9df7ee9d2dca7c4d214a569e75d83c700fdd92af095c6c84aefa48d247e0a` |
-| 5 | `def` | [div](../../../../../ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/div.md) | 202 | `declaration-track:5ca9a862705e42c074763ac6c8aecdb6735c9ce0586685127e4aeffee1f6e89b` |
-| 6 | `def` | [divChebyshev](../../../../../ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/divchebyshev.md) | 206 | `declaration-track:e5d39046a39a1f9d1b4c3fdf8827eb71c1ba9dad6c26c5999ca4097d90442894` |
-| 7 | `def` | [pow](../../../../../ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/pow.md) | 212 | `declaration-track:7015a799b82686fd72cb85e169646ef084046ca0e07fd8b349e58c8e681c44ab` |
-| 8 | `theorem` | [mem_inv](../../../../../ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/mem-inv.md) | 224 | `result-track:c35a33abec27472368df490823418bcd638b439e1453f58661f78e3ec466a7ab` |
-| 9 | `theorem` | [mem_sqrt](../../../../../ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/mem-sqrt-source-edition-2.md) | 290 | `result-track:48d8400b6c7ed74722958bfc3f173691f60f559e93f18cf84615d8efb2a3affe` |
-| 10 | `theorem` | [mem_sqrt'](../../../../../ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/mem-sqrt.md) | 361 | `result-track:144262608f0ed209091fb8b72a1bccfc77cd101ceb0f3cc740d051f850ad2f57` |
+| 1 | `def` | [inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/inv.md) | 47 | `declaration-track:782ff1e11d8d0e946b773ce64c7e0fa5a8b5fe5b05967aa7abcf9540e9dd7fc6` |
+| 2 | `def` | [invChebyshev](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/invchebyshev.md) | 103 | `declaration-track:944ca02401c1733bfcb8dced1e145bc82c49289cba122750dbe2b38f481a7368` |
+| 3 | `def` | [sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/sqrt.md) | 137 | `declaration-track:d6eb29ada73e16a9460905b277e8539aeaa3686311aea0fa3f3c12438074ec47` |
+| 4 | `def` | [sqrtChebyshev](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/sqrtchebyshev.md) | 165 | `declaration-track:13a9df7ee9d2dca7c4d214a569e75d83c700fdd92af095c6c84aefa48d247e0a` |
+| 5 | `def` | [div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/div.md) | 202 | `declaration-track:5ca9a862705e42c074763ac6c8aecdb6735c9ce0586685127e4aeffee1f6e89b` |
+| 6 | `def` | [divChebyshev](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/divchebyshev.md) | 206 | `declaration-track:e5d39046a39a1f9d1b4c3fdf8827eb71c1ba9dad6c26c5999ca4097d90442894` |
+| 7 | `def` | [pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/pow.md) | 212 | `declaration-track:7015a799b82686fd72cb85e169646ef084046ca0e07fd8b349e58c8e681c44ab` |
+| 8 | `theorem` | [mem_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/mem-inv.md) | 224 | `result-track:c35a33abec27472368df490823418bcd638b439e1453f58661f78e3ec466a7ab` |
+| 9 | `theorem` | [mem_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/mem-sqrt-source-edition-2.md) | 290 | `result-track:48d8400b6c7ed74722958bfc3f173691f60f559e93f18cf84615d8efb2a3affe` |
+| 10 | `theorem` | [mem_sqrt'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nonlinear.lean/declarations/mem-sqrt.md) | 361 | `result-track:144262608f0ed209091fb8b72a1bccfc77cd101ceb0f3cc740d051f850ad2f57` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

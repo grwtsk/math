@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResidueNamespacedParentResidue.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResidueNamespacedParentResidue.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResidueNamespacedParentResidue.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResidueNamespacedParentResidue.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ParentResidue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResidueNamespacedParentResidue.lean/declarations/parentresidue.md) | 15 | `declaration-track:125dc846412c0cbef553fa5d217e95f6fb0937cf8a6ddafbda4b745f9fcce6c3` |
-| 2 | `def` | [phaseTableResidue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResidueNamespacedParentResidue.lean/declarations/phasetableresidue.md) | 24 | `declaration-track:e95ca31ff8abe3cbb3f43ee14c640073f3aacbe570d9088154a0fbf6e862abfc` |
+| 1 | `structure` | [ParentResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResidueNamespacedParentResidue.lean/declarations/parentresidue.md) | 15 | `declaration-track:125dc846412c0cbef553fa5d217e95f6fb0937cf8a6ddafbda4b745f9fcce6c3` |
+| 2 | `def` | [phaseTableResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResidueNamespacedParentResidue.lean/declarations/phasetableresidue.md) | 24 | `declaration-track:e95ca31ff8abe3cbb3f43ee14c640073f3aacbe570d9088154a0fbf6e862abfc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

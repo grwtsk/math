@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,17 +60,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AmpleSet](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/ampleset.md) | 57 | `declaration-track:29f8d6225e8396ab52a2db83ed0345ed1249fae538755ee2b3037a012f78c3da` |
-| 2 | `theorem` | [ampleSet_univ](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/ampleset-univ.md) | 62 | `result-track:e5a6ec90c3c9ecfa38be7cebd9c81fbdc219de9c6637119ce9e29d8fab5b73aa` |
-| 3 | `theorem` | [ampleSet_empty](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/ampleset-empty.md) | 69 | `result-track:16028cfc75aa7c17aae018b87b5e8ef0ea946594670ccb8c8e1467949bc8ba34` |
-| 4 | `theorem` | [union](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/union.md) | 74 | `result-track:cedbb08ac4e187026b06b8dc778f928280528cf193b22f41b25c68d511dc6b65` |
-| 5 | `theorem` | [image](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/image.md) | 88 | `result-track:2c229f7750531505eb2619ed5a62bb3e8aee563c91282046e85b2db64e483a11` |
-| 6 | `theorem` | [image_iff](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/image-iff.md) | 98 | `result-track:d77d659f5b6f1fe62585309889b98eae81f70858e0f0c698e563306f44aa553a` |
-| 7 | `theorem` | [preimage](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/preimage.md) | 103 | `result-track:373f6edd19d9c6a0ca69b80ad5b75c916aa0cf9af34a5099da740e20a35e50ad` |
-| 8 | `theorem` | [preimage_iff](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/preimage-iff.md) | 108 | `result-track:0e420e544a210d2e3d264f279991a83f47e148549c4bf1666df7a469623bcef6` |
-| 9 | `theorem` | [vadd](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/vadd.md) | 115 | `result-track:3ea3956e583fed1454a8356498b9d2fa1466f590cd2c40a3a3a401ef6db54cdb` |
-| 10 | `theorem` | [vadd_iff](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/vadd-iff.md) | 120 | `result-track:c938f21a2bd990ed47512baf75473aaeb9d8030f21e0ce0d829c425a921803bb` |
-| 11 | `theorem` | [of_one_lt_codim](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/of-one-lt-codim.md) | 129 | `result-track:702dee9ee574d173ae80e756de38e07ea95c6967a93584af4e3297dc6c2247da` |
+| 1 | `def` | [AmpleSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/ampleset.md) | 57 | `declaration-track:29f8d6225e8396ab52a2db83ed0345ed1249fae538755ee2b3037a012f78c3da` |
+| 2 | `theorem` | [ampleSet_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/ampleset-univ.md) | 62 | `result-track:e5a6ec90c3c9ecfa38be7cebd9c81fbdc219de9c6637119ce9e29d8fab5b73aa` |
+| 3 | `theorem` | [ampleSet_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/ampleset-empty.md) | 69 | `result-track:16028cfc75aa7c17aae018b87b5e8ef0ea946594670ccb8c8e1467949bc8ba34` |
+| 4 | `theorem` | [union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/union.md) | 74 | `result-track:cedbb08ac4e187026b06b8dc778f928280528cf193b22f41b25c68d511dc6b65` |
+| 5 | `theorem` | [image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/image.md) | 88 | `result-track:2c229f7750531505eb2619ed5a62bb3e8aee563c91282046e85b2db64e483a11` |
+| 6 | `theorem` | [image_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/image-iff.md) | 98 | `result-track:d77d659f5b6f1fe62585309889b98eae81f70858e0f0c698e563306f44aa553a` |
+| 7 | `theorem` | [preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/preimage.md) | 103 | `result-track:373f6edd19d9c6a0ca69b80ad5b75c916aa0cf9af34a5099da740e20a35e50ad` |
+| 8 | `theorem` | [preimage_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/preimage-iff.md) | 108 | `result-track:0e420e544a210d2e3d264f279991a83f47e148549c4bf1666df7a469623bcef6` |
+| 9 | `theorem` | [vadd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/vadd.md) | 115 | `result-track:3ea3956e583fed1454a8356498b9d2fa1466f590cd2c40a3a3a401ef6db54cdb` |
+| 10 | `theorem` | [vadd_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/vadd-iff.md) | 120 | `result-track:c938f21a2bd990ed47512baf75473aaeb9d8030f21e0ce0d829c425a921803bb` |
+| 11 | `theorem` | [of_one_lt_codim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/AmpleSetNamespaced.lean/declarations/of-one-lt-codim.md) | 129 | `result-track:702dee9ee574d173ae80e756de38e07ea95c6967a93584af4e3297dc6c2247da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

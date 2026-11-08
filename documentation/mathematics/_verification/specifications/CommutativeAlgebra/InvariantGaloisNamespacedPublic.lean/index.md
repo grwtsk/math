@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsIntegralClosure.MulSemiringAction](../../../../CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/declarations/mulsemiringaction.md) | 41 | `declaration-track:1977ef7b8cc30582bb1aebc4daf14f4c62471f6566a67a92ca564b0e697fdd7c` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/declarations/anonymous-instance.md) | 45 | `declaration-track:3596bc6fb7a73283899b4ba2c346470926292337edde75d57538e2eea11ba85d` |
-| 3 | `theorem` | [Algebra.isInvariant_of_isGalois](../../../../CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/declarations/isinvariant-of-isgalois-source-line-53-occurrence-2.md) | 53 | `result-track:f20ab5e4c13bc2b6258980c0712c5db7a8696d350234951d424249f781e5605f` |
-| 4 | `theorem` | [Algebra.isInvariant_of_isGalois'](../../../../CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/declarations/isinvariant-of-isgalois.md) | 72 | `result-track:745f1a1568553c19390ca3177b0c78ded3aca9380b7472611c52c3c3249bd391` |
-| 5 | `lemma` | [normal](../../../../CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/declarations/normal.md) | 92 | `result-track:756a64c75b0f9af198f751e5e4efa0006f13e80078bbcf21c82f15abd6aad434` |
-| 6 | `lemma` | [finite_of_isInvariant](../../../../CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/declarations/finite-of-isinvariant.md) | 134 | `result-track:1e0d68529d8544765c0e8271348a5f49cfb639337bca5e5ecad8753a71490a81` |
-| 7 | `lemma` | [Ideal.Quotient.normal](../../../../CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/declarations/normal-source-line-147-occurrence-2.md) | 147 | `result-track:39617cfe9e155d12e4dc6a0839d3ad924d1bcd701a2339bafa5d89dd6a9c91ab` |
-| 8 | `lemma` | [Ideal.Quotient.finite_of_isInvariant](../../../../CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/declarations/finite-of-isinvariant-source-line-154-occurrence-2.md) | 154 | `result-track:cd2dea5d724aa889c4145a177685c1ea19f853982840f3e301fa5c401b13e82c` |
+| 1 | `def` | [IsIntegralClosure.MulSemiringAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/declarations/mulsemiringaction.md) | 41 | `declaration-track:1977ef7b8cc30582bb1aebc4daf14f4c62471f6566a67a92ca564b0e697fdd7c` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/declarations/anonymous-instance.md) | 45 | `declaration-track:3596bc6fb7a73283899b4ba2c346470926292337edde75d57538e2eea11ba85d` |
+| 3 | `theorem` | [Algebra.isInvariant_of_isGalois](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/declarations/isinvariant-of-isgalois-source-line-53-occurrence-2.md) | 53 | `result-track:f20ab5e4c13bc2b6258980c0712c5db7a8696d350234951d424249f781e5605f` |
+| 4 | `theorem` | [Algebra.isInvariant_of_isGalois'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/declarations/isinvariant-of-isgalois.md) | 72 | `result-track:745f1a1568553c19390ca3177b0c78ded3aca9380b7472611c52c3c3249bd391` |
+| 5 | `lemma` | [normal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/declarations/normal.md) | 92 | `result-track:756a64c75b0f9af198f751e5e4efa0006f13e80078bbcf21c82f15abd6aad434` |
+| 6 | `lemma` | [finite_of_isInvariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/declarations/finite-of-isinvariant.md) | 134 | `result-track:1e0d68529d8544765c0e8271348a5f49cfb639337bca5e5ecad8753a71490a81` |
+| 7 | `lemma` | [Ideal.Quotient.normal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/declarations/normal-source-line-147-occurrence-2.md) | 147 | `result-track:39617cfe9e155d12e4dc6a0839d3ad924d1bcd701a2339bafa5d89dd6a9c91ab` |
+| 8 | `lemma` | [Ideal.Quotient.finite_of_isInvariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvariantGaloisNamespacedPublic.lean/declarations/finite-of-isinvariant-source-line-154-occurrence-2.md) | 154 | `result-track:cd2dea5d724aa889c4145a177685c1ea19f853982840f3e301fa5c401b13e82c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

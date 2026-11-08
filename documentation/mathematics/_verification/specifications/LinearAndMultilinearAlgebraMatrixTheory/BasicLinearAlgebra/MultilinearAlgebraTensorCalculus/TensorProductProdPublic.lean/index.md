@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductProdPublic.lean/index.md) · [Full source](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductProdPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductProdPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductProdPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [prodRight](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductProdPublic.lean/declarations/prodright.md) | 40 | `declaration-track:5ccc1d8c2ef77882dfa3bd67d1e3c8d06b4fd365ebc02c4dc33d94ab1c79ea1e` |
-| 2 | `theorem` | [prodRight_tmul](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductProdPublic.lean/declarations/prodright-tmul.md) | 51 | `result-track:32487143f3f92495d3ba6118ed3eb2d01ba4d8554812e185aaa8f2ed5d8eb538` |
-| 3 | `theorem` | [prodRight_symm_tmul](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductProdPublic.lean/declarations/prodright-symm-tmul.md) | 55 | `result-track:36838ef978be1720c1fedb4ea4a8478065990ffc702bddc46e568fef475347f0` |
-| 4 | `def` | [prodLeft](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductProdPublic.lean/declarations/prodleft.md) | 62 | `declaration-track:9abd6254833ca1db3734504005360b9c581c3efad68599d9bf832e4beb6124b3` |
-| 5 | `theorem` | [prodLeft_tmul](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductProdPublic.lean/declarations/prodleft-tmul.md) | 68 | `result-track:c489afb150fc34ef603512484fb020a180cb2db046a9948f23268b18d880a0d3` |
-| 6 | `theorem` | [prodLeft_symm_tmul](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductProdPublic.lean/declarations/prodleft-symm-tmul.md) | 72 | `result-track:c449924f00d99d54215536347582ab10c453444b2a91c1f0d8bc0986cd8d8b71` |
+| 1 | `def` | [prodRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductProdPublic.lean/declarations/prodright.md) | 40 | `declaration-track:5ccc1d8c2ef77882dfa3bd67d1e3c8d06b4fd365ebc02c4dc33d94ab1c79ea1e` |
+| 2 | `theorem` | [prodRight_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductProdPublic.lean/declarations/prodright-tmul.md) | 51 | `result-track:32487143f3f92495d3ba6118ed3eb2d01ba4d8554812e185aaa8f2ed5d8eb538` |
+| 3 | `theorem` | [prodRight_symm_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductProdPublic.lean/declarations/prodright-symm-tmul.md) | 55 | `result-track:36838ef978be1720c1fedb4ea4a8478065990ffc702bddc46e568fef475347f0` |
+| 4 | `def` | [prodLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductProdPublic.lean/declarations/prodleft.md) | 62 | `declaration-track:9abd6254833ca1db3734504005360b9c581c3efad68599d9bf832e4beb6124b3` |
+| 5 | `theorem` | [prodLeft_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductProdPublic.lean/declarations/prodleft-tmul.md) | 68 | `result-track:c489afb150fc34ef603512484fb020a180cb2db046a9948f23268b18d880a0d3` |
+| 6 | `theorem` | [prodLeft_symm_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductProdPublic.lean/declarations/prodleft-symm-tmul.md) | 72 | `result-track:c449924f00d99d54215536347582ab10c453444b2a91c1f0d8bc0986cd8d8b71` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

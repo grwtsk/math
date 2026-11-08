@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualXiPntAtOne.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualXiPntAtOne.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPntAtOne.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPntAtOne.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualXiInverseSquareTimeDensity](../../../../MeasureAndIntegration/SourceActualXiPntAtOne.lean/declarations/actualxiinversesquaretimedensity.md) | 19 | `declaration-track:ece1181f06f13106d777a862bee53c4a4857535e7d86941d545b2652fdb966ee` |
-| 2 | `theorem` | [actualXiInverseSquareTimeDensity_eq_relative](../../../../MeasureAndIntegration/SourceActualXiPntAtOne.lean/declarations/actualxiinversesquaretimedensity-eq-relative.md) | 23 | `result-track:1346afde5ea68c41c51544a1bbd008aaf5ce43d80b57d7c882bc54fa80a05f98` |
-| 3 | `theorem` | [actualXiInverseSquareTimeDensity_integrableOn](../../../../MeasureAndIntegration/SourceActualXiPntAtOne.lean/declarations/actualxiinversesquaretimedensity-integrableon.md) | 30 | `result-track:8707f7ecd530f999b95800b22d897daa701d47bbfcb5d6c5c20bf2bcbb5d105a` |
-| 4 | `theorem` | [actualXiInverseSquareTimeDensity_tendsto_zero](../../../../MeasureAndIntegration/SourceActualXiPntAtOne.lean/declarations/actualxiinversesquaretimedensity-tendsto-zero.md) | 43 | `result-track:b638c9a7774bfa6c60c0ac90d3aae20469e80037e45014df837c0897851c9ca6` |
-| 5 | `theorem` | [inverse_square_exp](../../../../MeasureAndIntegration/SourceActualXiPntAtOne.lean/declarations/inverse-square-exp.md) | 51 | `result-track:6885a6233a0009948174fe6fc75b2b4ab31dabad02ae8fcc31c4642dd0da0287` |
-| 6 | `theorem` | [actualXiInverseSquarePhysical_integrableOn](../../../../MeasureAndIntegration/SourceActualXiPntAtOne.lean/declarations/actualxiinversesquarephysical-integrableon.md) | 59 | `result-track:d2bb022cd43c9d2365264aebc0a7842705f5233d141532497e1d28c595643a60` |
-| 7 | `theorem` | [actualXiInverseSquarePhysical_integral_eq_time](../../../../MeasureAndIntegration/SourceActualXiPntAtOne.lean/declarations/actualxiinversesquarephysical-integral-eq-time.md) | 72 | `result-track:551e2301c90e497ab1be9889a570315c4ec049b088971f3e97a21f853d95cb10` |
+| 1 | `def` | [actualXiInverseSquareTimeDensity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPntAtOne.lean/declarations/actualxiinversesquaretimedensity.md) | 19 | `declaration-track:ece1181f06f13106d777a862bee53c4a4857535e7d86941d545b2652fdb966ee` |
+| 2 | `theorem` | [actualXiInverseSquareTimeDensity_eq_relative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPntAtOne.lean/declarations/actualxiinversesquaretimedensity-eq-relative.md) | 23 | `result-track:1346afde5ea68c41c51544a1bbd008aaf5ce43d80b57d7c882bc54fa80a05f98` |
+| 3 | `theorem` | [actualXiInverseSquareTimeDensity_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPntAtOne.lean/declarations/actualxiinversesquaretimedensity-integrableon.md) | 30 | `result-track:8707f7ecd530f999b95800b22d897daa701d47bbfcb5d6c5c20bf2bcbb5d105a` |
+| 4 | `theorem` | [actualXiInverseSquareTimeDensity_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPntAtOne.lean/declarations/actualxiinversesquaretimedensity-tendsto-zero.md) | 43 | `result-track:b638c9a7774bfa6c60c0ac90d3aae20469e80037e45014df837c0897851c9ca6` |
+| 5 | `theorem` | [inverse_square_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPntAtOne.lean/declarations/inverse-square-exp.md) | 51 | `result-track:6885a6233a0009948174fe6fc75b2b4ab31dabad02ae8fcc31c4642dd0da0287` |
+| 6 | `theorem` | [actualXiInverseSquarePhysical_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPntAtOne.lean/declarations/actualxiinversesquarephysical-integrableon.md) | 59 | `result-track:d2bb022cd43c9d2365264aebc0a7842705f5233d141532497e1d28c595643a60` |
+| 7 | `theorem` | [actualXiInverseSquarePhysical_integral_eq_time](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPntAtOne.lean/declarations/actualxiinversesquarephysical-integral-eq-time.md) | 72 | `result-track:551e2301c90e497ab1be9889a570315c4ec049b088971f3e97a21f853d95cb10` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingULift.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingULift.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingULift.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingULift.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,21 +58,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [mulZeroClass](../../../../AssociativeRingsAndAlgebras/RingULift.lean/declarations/mulzeroclass.md) | 25 | `declaration-track:e2cd119178c589298cb229f469e8030e389b3176520d510efa642b74afd83afa` |
-| 2 | `instance` | [distrib](../../../../AssociativeRingsAndAlgebras/RingULift.lean/declarations/distrib.md) | 29 | `declaration-track:e9b7dacf481a1068ab49abb0978eb7659e264b0ce0e03d89cb75760ee721299d` |
-| 3 | `instance` | [nonUnitalNonAssocSemiring](../../../../AssociativeRingsAndAlgebras/RingULift.lean/declarations/nonunitalnonassocsemiring.md) | 34 | `declaration-track:4d949dfad7251d6b59c5d3b135982cbdc8b96c4a1f428775816b71e773d30d63` |
-| 4 | `instance` | [nonAssocSemiring](../../../../AssociativeRingsAndAlgebras/RingULift.lean/declarations/nonassocsemiring.md) | 42 | `declaration-track:2d4c8eb5c61db25b50d67edf775936868e4bd91baa069d620e43b9e1713c6846` |
-| 5 | `instance` | [nonUnitalSemiring](../../../../AssociativeRingsAndAlgebras/RingULift.lean/declarations/nonunitalsemiring.md) | 47 | `declaration-track:49952d299be13a03a229fd42af84922447c48b84f39fe58cd6798ba40af9017d` |
-| 6 | `instance` | [semiring](../../../../AssociativeRingsAndAlgebras/RingULift.lean/declarations/semiring.md) | 53 | `declaration-track:5c5fd59a5d81b6b1c9fdebc7cb43a6adce9b970e69f3f568d2bf3f20fdeb5778` |
-| 7 | `def` | [ringEquiv](../../../../AssociativeRingsAndAlgebras/RingULift.lean/declarations/ringequiv.md) | 61 | `declaration-track:23249d24a1bfca42b03ec00d176c44f4a43b6f1a44d826fdfc70f2b4ece1bf98` |
-| 8 | `instance` | [nonUnitalCommSemiring](../../../../AssociativeRingsAndAlgebras/RingULift.lean/declarations/nonunitalcommsemiring.md) | 69 | `declaration-track:b8e24edd60931f5e9f4985afe394905022e3add7f29222230b0b6e5b9b6c3885` |
-| 9 | `instance` | [commSemiring](../../../../AssociativeRingsAndAlgebras/RingULift.lean/declarations/commsemiring.md) | 75 | `declaration-track:5ec9e46df37c0781d635996a74866f4fac4d867de72273032dd77102785ccad8` |
-| 10 | `instance` | [nonUnitalNonAssocRing](../../../../AssociativeRingsAndAlgebras/RingULift.lean/declarations/nonunitalnonassocring.md) | 79 | `declaration-track:5f37002eb265ed5f0e743a2c785ab6a0fa82cc22d9eba7c08f318f80c7a78940` |
-| 11 | `instance` | [nonUnitalRing](../../../../AssociativeRingsAndAlgebras/RingULift.lean/declarations/nonunitalring.md) | 88 | `declaration-track:83586a58304b02b6a01317504443a0b50dfbf4a9965668072a1cb008a6648336` |
-| 12 | `instance` | [nonAssocRing](../../../../AssociativeRingsAndAlgebras/RingULift.lean/declarations/nonassocring.md) | 97 | `declaration-track:d0b72e25e40debd8ee239fae4a162ce63f76e7c6313747240e085245d918bb23` |
-| 13 | `instance` | [ring](../../../../AssociativeRingsAndAlgebras/RingULift.lean/declarations/ring.md) | 110 | `declaration-track:c8e91a36cfe4c9d023519f7fa40ecda2e56eda5847df180a13c93e5614504470` |
-| 14 | `instance` | [nonUnitalCommRing](../../../../AssociativeRingsAndAlgebras/RingULift.lean/declarations/nonunitalcommring.md) | 122 | `declaration-track:24728cc7d018ce2b586a4fd25de5bd5e89e45f60dde42b1d0759efb967f4d8db` |
-| 15 | `instance` | [commRing](../../../../AssociativeRingsAndAlgebras/RingULift.lean/declarations/commring.md) | 132 | `declaration-track:db1b85406d252dcd3e14615f63e19033f6c607e152ec813148badd7d19e9054b` |
+| 1 | `instance` | [mulZeroClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingULift.lean/declarations/mulzeroclass.md) | 25 | `declaration-track:e2cd119178c589298cb229f469e8030e389b3176520d510efa642b74afd83afa` |
+| 2 | `instance` | [distrib](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingULift.lean/declarations/distrib.md) | 29 | `declaration-track:e9b7dacf481a1068ab49abb0978eb7659e264b0ce0e03d89cb75760ee721299d` |
+| 3 | `instance` | [nonUnitalNonAssocSemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingULift.lean/declarations/nonunitalnonassocsemiring.md) | 34 | `declaration-track:4d949dfad7251d6b59c5d3b135982cbdc8b96c4a1f428775816b71e773d30d63` |
+| 4 | `instance` | [nonAssocSemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingULift.lean/declarations/nonassocsemiring.md) | 42 | `declaration-track:2d4c8eb5c61db25b50d67edf775936868e4bd91baa069d620e43b9e1713c6846` |
+| 5 | `instance` | [nonUnitalSemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingULift.lean/declarations/nonunitalsemiring.md) | 47 | `declaration-track:49952d299be13a03a229fd42af84922447c48b84f39fe58cd6798ba40af9017d` |
+| 6 | `instance` | [semiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingULift.lean/declarations/semiring.md) | 53 | `declaration-track:5c5fd59a5d81b6b1c9fdebc7cb43a6adce9b970e69f3f568d2bf3f20fdeb5778` |
+| 7 | `def` | [ringEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingULift.lean/declarations/ringequiv.md) | 61 | `declaration-track:23249d24a1bfca42b03ec00d176c44f4a43b6f1a44d826fdfc70f2b4ece1bf98` |
+| 8 | `instance` | [nonUnitalCommSemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingULift.lean/declarations/nonunitalcommsemiring.md) | 69 | `declaration-track:b8e24edd60931f5e9f4985afe394905022e3add7f29222230b0b6e5b9b6c3885` |
+| 9 | `instance` | [commSemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingULift.lean/declarations/commsemiring.md) | 75 | `declaration-track:5ec9e46df37c0781d635996a74866f4fac4d867de72273032dd77102785ccad8` |
+| 10 | `instance` | [nonUnitalNonAssocRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingULift.lean/declarations/nonunitalnonassocring.md) | 79 | `declaration-track:5f37002eb265ed5f0e743a2c785ab6a0fa82cc22d9eba7c08f318f80c7a78940` |
+| 11 | `instance` | [nonUnitalRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingULift.lean/declarations/nonunitalring.md) | 88 | `declaration-track:83586a58304b02b6a01317504443a0b50dfbf4a9965668072a1cb008a6648336` |
+| 12 | `instance` | [nonAssocRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingULift.lean/declarations/nonassocring.md) | 97 | `declaration-track:d0b72e25e40debd8ee239fae4a162ce63f76e7c6313747240e085245d918bb23` |
+| 13 | `instance` | [ring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingULift.lean/declarations/ring.md) | 110 | `declaration-track:c8e91a36cfe4c9d023519f7fa40ecda2e56eda5847df180a13c93e5614504470` |
+| 14 | `instance` | [nonUnitalCommRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingULift.lean/declarations/nonunitalcommring.md) | 122 | `declaration-track:24728cc7d018ce2b586a4fd25de5bd5e89e45f60dde42b1d0759efb967f4d8db` |
+| 15 | `instance` | [commRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingULift.lean/declarations/commring.md) | 132 | `declaration-track:db1b85406d252dcd3e14615f63e19033f6c607e152ec813148badd7d19e9054b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BooleanFunctionDataAndXor.lean/index.md) · [Full source](../../../../Combinatorics/BooleanFunctionDataAndXor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanFunctionDataAndXor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanFunctionDataAndXor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [BitStream](../../../../Combinatorics/BooleanFunctionDataAndXor.lean/declarations/bitstream.md) | 32 | `declaration-track:08131fe5b3b3610b75ab00c4320227b658ee661c58d3ac1a6c4b46c419c8908c` |
-| 2 | `abbrev` | [BooleanState](../../../../Combinatorics/BooleanFunctionDataAndXor.lean/declarations/booleanstate.md) | 35 | `declaration-track:5fefb8853366948f4b50a3b57d69d0e482f4ccaddf685265a02e3d3052c782af` |
-| 3 | `def` | [xorBit](../../../../Combinatorics/BooleanFunctionDataAndXor.lean/declarations/xorbit.md) | 38 | `declaration-track:ae105d94d424d087c5e8ebdd414d648b684f3795f7f605b35b3b3ad924323f35` |
-| 4 | `theorem` | [xorBit_self](../../../../Combinatorics/BooleanFunctionDataAndXor.lean/declarations/xorbit-self.md) | 41 | `result-track:ae6498c66994229bbdc8f5dd441a7ab00fc304f57fbb8052a6a184db4623fe3b` |
-| 5 | `theorem` | [xorBit_false_right](../../../../Combinatorics/BooleanFunctionDataAndXor.lean/declarations/xorbit-false-right.md) | 45 | `result-track:71889259c1110cf81ab18ee31e63b468a9d2e2d6b7af45a7b55d8112dcbfc5e1` |
-| 6 | `theorem` | [xorBit_cancel_left](../../../../Combinatorics/BooleanFunctionDataAndXor.lean/declarations/xorbit-cancel-left.md) | 49 | `result-track:ad2882dfeb8788d37af14c8dc4c1b653c65f7973551926707b6001bbc5493389` |
+| 1 | `abbrev` | [BitStream](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanFunctionDataAndXor.lean/declarations/bitstream.md) | 32 | `declaration-track:08131fe5b3b3610b75ab00c4320227b658ee661c58d3ac1a6c4b46c419c8908c` |
+| 2 | `abbrev` | [BooleanState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanFunctionDataAndXor.lean/declarations/booleanstate.md) | 35 | `declaration-track:5fefb8853366948f4b50a3b57d69d0e482f4ccaddf685265a02e3d3052c782af` |
+| 3 | `def` | [xorBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanFunctionDataAndXor.lean/declarations/xorbit.md) | 38 | `declaration-track:ae105d94d424d087c5e8ebdd414d648b684f3795f7f605b35b3b3ad924323f35` |
+| 4 | `theorem` | [xorBit_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanFunctionDataAndXor.lean/declarations/xorbit-self.md) | 41 | `result-track:ae6498c66994229bbdc8f5dd441a7ab00fc304f57fbb8052a6a184db4623fe3b` |
+| 5 | `theorem` | [xorBit_false_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanFunctionDataAndXor.lean/declarations/xorbit-false-right.md) | 45 | `result-track:71889259c1110cf81ab18ee31e63b468a9d2e2d6b7af45a7b55d8112dcbfc5e1` |
+| 6 | `theorem` | [xorBit_cancel_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanFunctionDataAndXor.lean/declarations/xorbit-cancel-left.md) | 49 | `result-track:ad2882dfeb8788d37af14c8dc4c1b653c65f7973551926707b6001bbc5493389` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

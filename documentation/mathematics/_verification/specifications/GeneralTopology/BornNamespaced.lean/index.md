@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/BornNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/BornNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Born](../../../../GeneralTopology/BornNamespaced.lean/declarations/born.md) | 29 | `declaration-track:e76fc342ed9168aa66f4b08d8d52d11515c4fc280a5e651346f36f8c65798079` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/BornNamespaced.lean/declarations/instance-source-edition-4.md) | 38 | `declaration-track:a148a6d073e8b964ded9ee421de7c418faa5f44542ed8906e2aa01d7268fe161` |
-| 3 | `abbrev` | [of](../../../../GeneralTopology/BornNamespaced.lean/declarations/of.md) | 42 | `declaration-track:a536c7f31b8c5c70659aa5f1d78f02ac2942c06d99a4747070186d68d45ddbe1` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/BornNamespaced.lean/declarations/instance.md) | 45 | `declaration-track:07673c4edb54682f98d0c7341e8c72ab4e9428af1d7f19a030908a870c2aa17a` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/BornNamespaced.lean/declarations/instance-source-edition-2.md) | 48 | `declaration-track:484ec6e25940b3a5058125bff9206c949bae335bd735082ad343ae5d0d2ca408` |
-| 6 | `instance` | [(anonymous)](../../../../GeneralTopology/BornNamespaced.lean/declarations/instance-source-edition-3.md) | 53 | `declaration-track:512706381813320ec9917f0c21a4c1a1b8a60136e72b3325e820edb6f995bcfc` |
+| 1 | `structure` | [Born](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornNamespaced.lean/declarations/born.md) | 29 | `declaration-track:e76fc342ed9168aa66f4b08d8d52d11515c4fc280a5e651346f36f8c65798079` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornNamespaced.lean/declarations/instance-source-edition-4.md) | 38 | `declaration-track:a148a6d073e8b964ded9ee421de7c418faa5f44542ed8906e2aa01d7268fe161` |
+| 3 | `abbrev` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornNamespaced.lean/declarations/of.md) | 42 | `declaration-track:a536c7f31b8c5c70659aa5f1d78f02ac2942c06d99a4747070186d68d45ddbe1` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornNamespaced.lean/declarations/instance.md) | 45 | `declaration-track:07673c4edb54682f98d0c7341e8c72ab4e9428af1d7f19a030908a870c2aa17a` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornNamespaced.lean/declarations/instance-source-edition-2.md) | 48 | `declaration-track:484ec6e25940b3a5058125bff9206c949bae335bd735082ad343ae5d0d2ca408` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornNamespaced.lean/declarations/instance-source-edition-3.md) | 53 | `declaration-track:512706381813320ec9917f0c21a4c1a1b8a60136e72b3325e820edb6f995bcfc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

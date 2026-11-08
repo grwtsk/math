@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetGeometryLinearization`](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryLinearization.lean/index.md) — import line 16; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetGeometryLinearization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryLinearization.lean/index.md) — import line 16; pinned internal source present.
 - `Mathlib.Tactic` — import line 17; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coordinate_pos_of_paperDyadic](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/declarations/coordinate-pos-of-paperdyadic.md) | 32 | `result-track:d5074fd99373a8f6f0c1c0a659aa1cbb849e2ae666c7d1cc15d6bcfbac94ccc9` |
-| 2 | `theorem` | [paperSelectedMonomial_pos](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/declarations/paperselectedmonomial-pos.md) | 37 | `result-track:677f564f377e4b9c4c8dd28a63bcdbc11ed6273c23eecf016442210a2d92a801` |
-| 3 | `theorem` | [paperComplementMonomial_pos](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/declarations/papercomplementmonomial-pos.md) | 47 | `result-track:484e7f88cd1b624682cbc57285df179b6594aa0fffc32d2a2c145e4ff55b404c` |
-| 4 | `structure` | [GeometryPositiveFactors](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/declarations/geometrypositivefactors.md) | 58 | `declaration-track:6149b67645f0cbca8a5100ba903ec5c137dce3fefd70d6d7b87205e38092616b` |
-| 5 | `theorem` | [geometryPositiveFactors_of_mem_paperBoxFinset](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/declarations/geometrypositivefactors-of-mem-paperboxfinset.md) | 70 | `result-track:3c243946d68f8a01f5d1e1dade8212df2dc9edf6df1db854dfa6ec450794c891` |
-| 6 | `theorem` | [geometryPositiveFactors_of_paperAdmissible](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/declarations/geometrypositivefactors-of-paperadmissible.md) | 106 | `result-track:25dc5a673e894bad5c213ae40ea1b7bd93b744dc95d2c31d1675bd845b0e5137` |
-| 7 | `structure` | [PositiveGeometryLinearization](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/declarations/positivegeometrylinearization.md) | 117 | `declaration-track:a1d02547deb336b003f650ee35dcb702cfaf30bf415e8afcf35f79cae728f8d5` |
-| 8 | `theorem` | [positiveGeometryLinearization_of_paperAdmissible](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/declarations/positivegeometrylinearization-of-paperadmissible.md) | 125 | `result-track:4b1afce92c7e27163085a83e8cfbb2e6f683595289fb1357c66274f3525990f2` |
-| 9 | `theorem` | [positive_factors_do_not_encode_coprimality_fixture](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/declarations/positive-factors-do-not-encode-coprimality-fixture.md) | 138 | `result-track:3bf01d1efcee850bff2e2ef9e2da808bcd5500d7c4452ea21ca9fcfe760820ec` |
+| 1 | `theorem` | [coordinate_pos_of_paperDyadic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/declarations/coordinate-pos-of-paperdyadic.md) | 32 | `result-track:d5074fd99373a8f6f0c1c0a659aa1cbb849e2ae666c7d1cc15d6bcfbac94ccc9` |
+| 2 | `theorem` | [paperSelectedMonomial_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/declarations/paperselectedmonomial-pos.md) | 37 | `result-track:677f564f377e4b9c4c8dd28a63bcdbc11ed6273c23eecf016442210a2d92a801` |
+| 3 | `theorem` | [paperComplementMonomial_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/declarations/papercomplementmonomial-pos.md) | 47 | `result-track:484e7f88cd1b624682cbc57285df179b6594aa0fffc32d2a2c145e4ff55b404c` |
+| 4 | `structure` | [GeometryPositiveFactors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/declarations/geometrypositivefactors.md) | 58 | `declaration-track:6149b67645f0cbca8a5100ba903ec5c137dce3fefd70d6d7b87205e38092616b` |
+| 5 | `theorem` | [geometryPositiveFactors_of_mem_paperBoxFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/declarations/geometrypositivefactors-of-mem-paperboxfinset.md) | 70 | `result-track:3c243946d68f8a01f5d1e1dade8212df2dc9edf6df1db854dfa6ec450794c891` |
+| 6 | `theorem` | [geometryPositiveFactors_of_paperAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/declarations/geometrypositivefactors-of-paperadmissible.md) | 106 | `result-track:25dc5a673e894bad5c213ae40ea1b7bd93b744dc95d2c31d1675bd845b0e5137` |
+| 7 | `structure` | [PositiveGeometryLinearization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/declarations/positivegeometrylinearization.md) | 117 | `declaration-track:a1d02547deb336b003f650ee35dcb702cfaf30bf415e8afcf35f79cae728f8d5` |
+| 8 | `theorem` | [positiveGeometryLinearization_of_paperAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/declarations/positivegeometrylinearization-of-paperadmissible.md) | 125 | `result-track:4b1afce92c7e27163085a83e8cfbb2e6f683595289fb1357c66274f3525990f2` |
+| 9 | `theorem` | [positive_factors_do_not_encode_coprimality_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryPositivity.lean/declarations/positive-factors-do-not-encode-coprimality-fixture.md) | 138 | `result-track:3bf01d1efcee850bff2e2ef9e2da808bcd5500d7c4452ea21ca9fcfe760820ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

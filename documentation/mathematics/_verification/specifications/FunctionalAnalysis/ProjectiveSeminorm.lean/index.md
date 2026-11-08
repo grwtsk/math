@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ProjectiveSeminorm.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ProjectiveSeminorm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminorm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminorm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [projectiveSeminormAux](../../../../FunctionalAnalysis/ProjectiveSeminorm.lean/declarations/projectiveseminormaux.md) | 51 | `declaration-track:fad79db0719e5cbb92369515eda598da68853ecea1196d3272eca71df431bb36` |
-| 2 | `theorem` | [projectiveSeminormAux_nonneg](../../../../FunctionalAnalysis/ProjectiveSeminorm.lean/declarations/projectiveseminormaux-nonneg.md) | 54 | `result-track:59f180d3f4891d2cd446ca3f2aa1e7b0a74d943395cad368f8ef211ccc014794` |
-| 3 | `theorem` | [projectiveSeminormAux_add_le](../../../../FunctionalAnalysis/ProjectiveSeminorm.lean/declarations/projectiveseminormaux-add-le.md) | 65 | `result-track:c0a2baaedaa016b48204a9c7346051483c6e2c6cbb257f907f51f75cbac08628` |
-| 4 | `theorem` | [projectiveSeminormAux_smul](../../../../FunctionalAnalysis/ProjectiveSeminorm.lean/declarations/projectiveseminormaux-smul.md) | 69 | `result-track:4da9d4ebd973821654ceb774534069f53ea06fb6811fbbe2baa3c8dffe3fafd3` |
-| 5 | `theorem` | [bddBelow_projectiveSemiNormAux](../../../../FunctionalAnalysis/ProjectiveSeminorm.lean/declarations/bddbelow-projectiveseminormaux.md) | 76 | `result-track:353515e9d4acb081e7074c718a7522b6f31e5914ea32fbf1a5910c82580d55f3` |
-| 6 | `def` | [projectiveSeminorm](../../../../FunctionalAnalysis/ProjectiveSeminorm.lean/declarations/projectiveseminorm.md) | 88 | `declaration-track:1ca9b317154a20b2398d343765ed4c52251ee3a0bbb6d6a450e01758eb0497cf` |
-| 7 | `theorem` | [projectiveSeminorm_apply](../../../../FunctionalAnalysis/ProjectiveSeminorm.lean/declarations/projectiveseminorm-apply.md) | 108 | `result-track:52955eefe524c8250950d7632b0393aa4ad8ddd19f2e4929d3d025e7adcd06a1` |
-| 8 | `theorem` | [projectiveSeminorm_tprod_le](../../../../FunctionalAnalysis/ProjectiveSeminorm.lean/declarations/projectiveseminorm-tprod-le.md) | 111 | `result-track:5034bb0acafd7bb63d867f7e06abd0e73bb2518741acf2506c4839ad3a600850` |
-| 9 | `theorem` | [norm_eval_le_projectiveSeminorm](../../../../FunctionalAnalysis/ProjectiveSeminorm.lean/declarations/norm-eval-le-projectiveseminorm.md) | 118 | `result-track:622b5436481221b6a1280bf3d299a9ac1bc5d12cf167d5191cfe05dd6c709e62` |
+| 1 | `def` | [projectiveSeminormAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminorm.lean/declarations/projectiveseminormaux.md) | 51 | `declaration-track:fad79db0719e5cbb92369515eda598da68853ecea1196d3272eca71df431bb36` |
+| 2 | `theorem` | [projectiveSeminormAux_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminorm.lean/declarations/projectiveseminormaux-nonneg.md) | 54 | `result-track:59f180d3f4891d2cd446ca3f2aa1e7b0a74d943395cad368f8ef211ccc014794` |
+| 3 | `theorem` | [projectiveSeminormAux_add_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminorm.lean/declarations/projectiveseminormaux-add-le.md) | 65 | `result-track:c0a2baaedaa016b48204a9c7346051483c6e2c6cbb257f907f51f75cbac08628` |
+| 4 | `theorem` | [projectiveSeminormAux_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminorm.lean/declarations/projectiveseminormaux-smul.md) | 69 | `result-track:4da9d4ebd973821654ceb774534069f53ea06fb6811fbbe2baa3c8dffe3fafd3` |
+| 5 | `theorem` | [bddBelow_projectiveSemiNormAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminorm.lean/declarations/bddbelow-projectiveseminormaux.md) | 76 | `result-track:353515e9d4acb081e7074c718a7522b6f31e5914ea32fbf1a5910c82580d55f3` |
+| 6 | `def` | [projectiveSeminorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminorm.lean/declarations/projectiveseminorm.md) | 88 | `declaration-track:1ca9b317154a20b2398d343765ed4c52251ee3a0bbb6d6a450e01758eb0497cf` |
+| 7 | `theorem` | [projectiveSeminorm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminorm.lean/declarations/projectiveseminorm-apply.md) | 108 | `result-track:52955eefe524c8250950d7632b0393aa4ad8ddd19f2e4929d3d025e7adcd06a1` |
+| 8 | `theorem` | [projectiveSeminorm_tprod_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminorm.lean/declarations/projectiveseminorm-tprod-le.md) | 111 | `result-track:5034bb0acafd7bb63d867f7e06abd0e73bb2518741acf2506c4839ad3a600850` |
+| 9 | `theorem` | [norm_eval_le_projectiveSeminorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProjectiveSeminorm.lean/declarations/norm-eval-le-projectiveseminorm.md) | 118 | `result-track:622b5436481221b6a1280bf3d299a9ac1bc5d12cf167d5191cfe05dd6c709e62` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

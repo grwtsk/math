@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeNamespacedEdition1.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [symmetric_mulVec_mem_range_of_kernel_orthogonal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeNamespacedEdition1.lean/declarations/symmetric-mulvec-mem-range-of-kernel-orthogonal.md) | 39 | `result-track:b8ebe3c5448d9b5b04bcf6fa33ff76073ee1a347b78115303c87468474736532` |
-| 2 | `theorem` | [compatible_provenanceMatrix_isSymm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeNamespacedEdition1.lean/declarations/compatible-provenancematrix-issymm.md) | 73 | `result-track:027a8e0b33848b56d2de884850f0ea70e728260b8bb2f3ac139c4ccd094830a7` |
-| 3 | `theorem` | [cross_mem_provenance_range](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeNamespacedEdition1.lean/declarations/cross-mem-provenance-range.md) | 94 | `result-track:0b19a39c81506914154a0b3592cad4cbb6d5b43e0497c3b22ea1fdedfff0a83a` |
-| 4 | `theorem` | [exists_provenance_solution](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeNamespacedEdition1.lean/declarations/exists-provenance-solution.md) | 112 | `result-track:50236c730611663308ed6470a8642e47b5c39ab892c194ba022238bdf276fd0e` |
+| 1 | `theorem` | [symmetric_mulVec_mem_range_of_kernel_orthogonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeNamespacedEdition1.lean/declarations/symmetric-mulvec-mem-range-of-kernel-orthogonal.md) | 39 | `result-track:b8ebe3c5448d9b5b04bcf6fa33ff76073ee1a347b78115303c87468474736532` |
+| 2 | `theorem` | [compatible_provenanceMatrix_isSymm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeNamespacedEdition1.lean/declarations/compatible-provenancematrix-issymm.md) | 73 | `result-track:027a8e0b33848b56d2de884850f0ea70e728260b8bb2f3ac139c4ccd094830a7` |
+| 3 | `theorem` | [cross_mem_provenance_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeNamespacedEdition1.lean/declarations/cross-mem-provenance-range.md) | 94 | `result-track:0b19a39c81506914154a0b3592cad4cbb6d5b43e0497c3b22ea1fdedfff0a83a` |
+| 4 | `theorem` | [exists_provenance_solution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeNamespacedEdition1.lean/declarations/exists-provenance-solution.md) | 112 | `result-track:50236c730611663308ed6470a8642e47b5c39ab892c194ba022238bdf276fd0e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

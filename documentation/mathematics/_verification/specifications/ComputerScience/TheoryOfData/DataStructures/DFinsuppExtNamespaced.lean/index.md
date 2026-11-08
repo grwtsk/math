@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppExtNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppExtNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppExtNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppExtNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [add_closure_iUnion_range_single](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppExtNamespaced.lean/declarations/add-closure-iunion-range-single.md) | 41 | `result-track:09f6e74033787f34268bcf774261243768be3b6ee89d6ce0cd2365158a0fc413` |
-| 2 | `theorem` | [addHom_ext](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppExtNamespaced.lean/declarations/addhom-ext.md) | 52 | `result-track:4b19743d8eec26b257168679db5f11b2445f020150a96d543591074495601c50` |
-| 3 | `theorem` | [addHom_ext'](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppExtNamespaced.lean/declarations/addhom-ext-source-edition-2.md) | 64 | `result-track:f49491abad8bd091de65bbca7e66646174f2eaef624f3906cb4412a0601185d7` |
+| 1 | `theorem` | [add_closure_iUnion_range_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppExtNamespaced.lean/declarations/add-closure-iunion-range-single.md) | 41 | `result-track:09f6e74033787f34268bcf774261243768be3b6ee89d6ce0cd2365158a0fc413` |
+| 2 | `theorem` | [addHom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppExtNamespaced.lean/declarations/addhom-ext.md) | 52 | `result-track:4b19743d8eec26b257168679db5f11b2445f020150a96d543591074495601c50` |
+| 3 | `theorem` | [addHom_ext'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppExtNamespaced.lean/declarations/addhom-ext-source-edition-2.md) | 64 | `result-track:f49491abad8bd091de65bbca7e66646174f2eaef624f3906cb4412a0601185d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

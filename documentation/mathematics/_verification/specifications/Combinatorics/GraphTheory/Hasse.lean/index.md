@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/Hasse.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/Hasse.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Hasse.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Hasse.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [hasse](../../../../../Combinatorics/GraphTheory/Hasse.lean/declarations/hasse.md) | 36 | `declaration-track:26e9b9b6f5456bada4b550f9977930c4a1435d39cb4328ef0ab388e567a24f50` |
-| 2 | `theorem` | [hasse_adj](../../../../../Combinatorics/GraphTheory/Hasse.lean/declarations/hasse-adj.md) | 45 | `result-track:02725a6fbfdb6844ff5661f49208e0be192ca401ae75432ae5b6e17e646cdef9` |
-| 3 | `def` | [hasseDualIso](../../../../../Combinatorics/GraphTheory/Hasse.lean/declarations/hassedualiso.md) | 50 | `declaration-track:589d655db93005b1cc2c999f2832517337376fbbede5268431415f8f6331b77b` |
-| 4 | `theorem` | [hasseDualIso_apply](../../../../../Combinatorics/GraphTheory/Hasse.lean/declarations/hassedualiso-apply.md) | 55 | `result-track:f92e970c7410ba5aaf3dabf3abd208106026eb153de8a41f59d61fb274a95ef9` |
-| 5 | `theorem` | [hasseDualIso_symm_apply](../../../../../Combinatorics/GraphTheory/Hasse.lean/declarations/hassedualiso-symm-apply.md) | 60 | `result-track:62970dee3fbc898782a365b9901969a42c41eb1ebe457d60f6b7a4957f0d0f75` |
-| 6 | `theorem` | [hasse_prod](../../../../../Combinatorics/GraphTheory/Hasse.lean/declarations/hasse-prod.md) | 71 | `result-track:1dad1b41b13f7384a15ba584e3ffc67d7ff3297decf33e4dd11b29d01b456f7c` |
-| 7 | `theorem` | [hasse_preconnected_of_succ](../../../../../Combinatorics/GraphTheory/Hasse.lean/declarations/hasse-preconnected-of-succ.md) | 83 | `result-track:c1998444d09fe83d0cde364c17366118f072f293f5d9267e588f7434b2d80e1b` |
-| 8 | `theorem` | [hasse_preconnected_of_pred](../../../../../Combinatorics/GraphTheory/Hasse.lean/declarations/hasse-preconnected-of-pred.md) | 91 | `result-track:1e407445ccee319e3901ea3ad435f7e31a9751920f54859b6d4e4ae073c8f46b` |
-| 9 | `def` | [pathGraph](../../../../../Combinatorics/GraphTheory/Hasse.lean/declarations/pathgraph.md) | 102 | `declaration-track:26520777bf0076222f59573532c8b88fd95546aacebca47ad9d273c8dc3b0f3f` |
-| 10 | `theorem` | [pathGraph_preconnected](../../../../../Combinatorics/GraphTheory/Hasse.lean/declarations/pathgraph-preconnected.md) | 106 | `result-track:40907d16abde359e261f5ee96c87b3457b15f2af9bfc2cad34301ec33c010cde` |
-| 11 | `theorem` | [pathGraph_connected](../../../../../Combinatorics/GraphTheory/Hasse.lean/declarations/pathgraph-connected.md) | 110 | `result-track:0e08e4cf1d621e7109733fc6154650c75550ed46d19c4e5b90e4f79b91d74739` |
+| 1 | `def` | [hasse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Hasse.lean/declarations/hasse.md) | 36 | `declaration-track:26e9b9b6f5456bada4b550f9977930c4a1435d39cb4328ef0ab388e567a24f50` |
+| 2 | `theorem` | [hasse_adj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Hasse.lean/declarations/hasse-adj.md) | 45 | `result-track:02725a6fbfdb6844ff5661f49208e0be192ca401ae75432ae5b6e17e646cdef9` |
+| 3 | `def` | [hasseDualIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Hasse.lean/declarations/hassedualiso.md) | 50 | `declaration-track:589d655db93005b1cc2c999f2832517337376fbbede5268431415f8f6331b77b` |
+| 4 | `theorem` | [hasseDualIso_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Hasse.lean/declarations/hassedualiso-apply.md) | 55 | `result-track:f92e970c7410ba5aaf3dabf3abd208106026eb153de8a41f59d61fb274a95ef9` |
+| 5 | `theorem` | [hasseDualIso_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Hasse.lean/declarations/hassedualiso-symm-apply.md) | 60 | `result-track:62970dee3fbc898782a365b9901969a42c41eb1ebe457d60f6b7a4957f0d0f75` |
+| 6 | `theorem` | [hasse_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Hasse.lean/declarations/hasse-prod.md) | 71 | `result-track:1dad1b41b13f7384a15ba584e3ffc67d7ff3297decf33e4dd11b29d01b456f7c` |
+| 7 | `theorem` | [hasse_preconnected_of_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Hasse.lean/declarations/hasse-preconnected-of-succ.md) | 83 | `result-track:c1998444d09fe83d0cde364c17366118f072f293f5d9267e588f7434b2d80e1b` |
+| 8 | `theorem` | [hasse_preconnected_of_pred](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Hasse.lean/declarations/hasse-preconnected-of-pred.md) | 91 | `result-track:1e407445ccee319e3901ea3ad435f7e31a9751920f54859b6d4e4ae073c8f46b` |
+| 9 | `def` | [pathGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Hasse.lean/declarations/pathgraph.md) | 102 | `declaration-track:26520777bf0076222f59573532c8b88fd95546aacebca47ad9d273c8dc3b0f3f` |
+| 10 | `theorem` | [pathGraph_preconnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Hasse.lean/declarations/pathgraph-preconnected.md) | 106 | `result-track:40907d16abde359e261f5ee96c87b3457b15f2af9bfc2cad34301ec33c010cde` |
+| 11 | `theorem` | [pathGraph_connected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Hasse.lean/declarations/pathgraph-connected.md) | 110 | `result-track:0e08e4cf1d621e7109733fc6154650c75550ed46d19c4e5b90e4f79b91d74739` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

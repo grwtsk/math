@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/Whiskering.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/Whiskering.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Whiskering.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Whiskering.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/Whiskering.lean/declarations/example-source-edition-2.md) | 14 | `declaration-track:1db4046ccdf9ae8fda9f44232a393d5e15e010e9fcc2960079243a24c89aefd0` |
-| 2 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/Whiskering.lean/declarations/example.md) | 22 | `declaration-track:017221beb5254411222fccbd49eb5b47f1da908a35f5d052592e0cfa8e43db0b` |
-| 3 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/Whiskering.lean/declarations/example-source-edition-3.md) | 26 | `declaration-track:dce23e59f5bbb413d73c84cbef7e3ea6b2e4eb2607f95e0cd43c4f94cdfebb44` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Whiskering.lean/declarations/example-source-edition-2.md) | 14 | `declaration-track:1db4046ccdf9ae8fda9f44232a393d5e15e010e9fcc2960079243a24c89aefd0` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Whiskering.lean/declarations/example.md) | 22 | `declaration-track:017221beb5254411222fccbd49eb5b47f1da908a35f5d052592e0cfa8e43db0b` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Whiskering.lean/declarations/example-source-edition-3.md) | 26 | `declaration-track:dce23e59f5bbb413d73c84cbef7e3ea6b2e4eb2607f95e0cd43c4f94cdfebb44` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

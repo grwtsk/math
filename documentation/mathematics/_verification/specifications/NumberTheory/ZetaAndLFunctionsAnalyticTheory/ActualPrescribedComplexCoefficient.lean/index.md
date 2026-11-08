@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPrescribedComplexCoefficient.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPrescribedComplexCoefficient.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPrescribedComplexCoefficient.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPrescribedComplexCoefficient.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualPrescribedComplexMode](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPrescribedComplexCoefficient.lean/declarations/actualprescribedcomplexmode.md) | 15 | `declaration-track:edd7fae0354adb1d769ad622f7cd6af82bb93cbd19e1eea80a2b34d36eceeb93` |
-| 2 | `theorem` | [actualPrescribedComplexMode_re_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPrescribedComplexCoefficient.lean/declarations/actualprescribedcomplexmode-re-pos.md) | 18 | `result-track:851351fcb94b0e24e1835543ae0760d22b14a1f783b7eaca493eac448ffd4aed` |
-| 3 | `theorem` | [actualLeadingComplexCoefficient_at_prescribed_mode](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPrescribedComplexCoefficient.lean/declarations/actualleadingcomplexcoefficient-at-prescribed-mode.md) | 22 | `result-track:12adc8f4021df396152d53a5cf42e72e238f358df95569c24bcc84ef43c1783f` |
-| 4 | `theorem` | [actualLeadingComplexCoefficient_prescribed_square_re](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPrescribedComplexCoefficient.lean/declarations/actualleadingcomplexcoefficient-prescribed-square-re.md) | 30 | `result-track:47db5e990171d621a6cbc7933fe93dd4c6b9cd2f48a9623e6a79dcc65550ff68` |
-| 5 | `theorem` | [actualLeadingComplexCoefficient_prescribed_square_re_neg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPrescribedComplexCoefficient.lean/declarations/actualleadingcomplexcoefficient-prescribed-square-re-neg.md) | 36 | `result-track:9927ec8e04c57a94704a03a12cfb528e618147f751e8afc805c73bb9d284bbe2` |
+| 1 | `def` | [actualPrescribedComplexMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPrescribedComplexCoefficient.lean/declarations/actualprescribedcomplexmode.md) | 15 | `declaration-track:edd7fae0354adb1d769ad622f7cd6af82bb93cbd19e1eea80a2b34d36eceeb93` |
+| 2 | `theorem` | [actualPrescribedComplexMode_re_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPrescribedComplexCoefficient.lean/declarations/actualprescribedcomplexmode-re-pos.md) | 18 | `result-track:851351fcb94b0e24e1835543ae0760d22b14a1f783b7eaca493eac448ffd4aed` |
+| 3 | `theorem` | [actualLeadingComplexCoefficient_at_prescribed_mode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPrescribedComplexCoefficient.lean/declarations/actualleadingcomplexcoefficient-at-prescribed-mode.md) | 22 | `result-track:12adc8f4021df396152d53a5cf42e72e238f358df95569c24bcc84ef43c1783f` |
+| 4 | `theorem` | [actualLeadingComplexCoefficient_prescribed_square_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPrescribedComplexCoefficient.lean/declarations/actualleadingcomplexcoefficient-prescribed-square-re.md) | 30 | `result-track:47db5e990171d621a6cbc7933fe93dd4c6b9cd2f48a9623e6a79dcc65550ff68` |
+| 5 | `theorem` | [actualLeadingComplexCoefficient_prescribed_square_re_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPrescribedComplexCoefficient.lean/declarations/actualleadingcomplexcoefficient-prescribed-square-re-neg.md) | 36 | `result-track:9927ec8e04c57a94704a03a12cfb528e618147f751e8afc805c73bb9d284bbe2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

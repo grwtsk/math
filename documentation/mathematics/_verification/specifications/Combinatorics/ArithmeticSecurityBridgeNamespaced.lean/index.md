@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ArithmeticSecurityBridgeNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ArithmeticSecurityBridgeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ArithmeticSecurityBridgeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ArithmeticSecurityBridgeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ArithmeticSecurityBridgeStatus](../../../../Combinatorics/ArithmeticSecurityBridgeNamespaced.lean/declarations/arithmeticsecuritybridgestatus.md) | 23 | `declaration-track:5fafe553dfc159c6be4305357722fbc4e70b27e770e32ec9943bde8cb4a2401d` |
-| 2 | `def` | [unknowns](../../../../Combinatorics/ArithmeticSecurityBridgeNamespaced.lean/declarations/unknowns.md) | 37 | `declaration-track:7662538abc9b9eb845dbe0fa5013b533c6f0245b00e23436731644f28eba3359` |
-| 3 | `def` | [terminalArithmeticSecurityBridgeStatus](../../../../Combinatorics/ArithmeticSecurityBridgeNamespaced.lean/declarations/terminalarithmeticsecuritybridgestatus.md) | 50 | `declaration-track:4067edf8af86f92bca4222b5bf193c32e8e97c8e6542ffb347408637c43240f0` |
-| 4 | `theorem` | [terminalArithmeticSecurityBridgeStatus_unknowns](../../../../Combinatorics/ArithmeticSecurityBridgeNamespaced.lean/declarations/terminalarithmeticsecuritybridgestatus-unknowns.md) | 57 | `result-track:4b52b0dc0c89fc3e56d5f52e4194fe71dd57265085a893db5a9ee9034bb50dc9` |
+| 1 | `inductive` | [ArithmeticSecurityBridgeStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ArithmeticSecurityBridgeNamespaced.lean/declarations/arithmeticsecuritybridgestatus.md) | 23 | `declaration-track:5fafe553dfc159c6be4305357722fbc4e70b27e770e32ec9943bde8cb4a2401d` |
+| 2 | `def` | [unknowns](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ArithmeticSecurityBridgeNamespaced.lean/declarations/unknowns.md) | 37 | `declaration-track:7662538abc9b9eb845dbe0fa5013b533c6f0245b00e23436731644f28eba3359` |
+| 3 | `def` | [terminalArithmeticSecurityBridgeStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ArithmeticSecurityBridgeNamespaced.lean/declarations/terminalarithmeticsecuritybridgestatus.md) | 50 | `declaration-track:4067edf8af86f92bca4222b5bf193c32e8e97c8e6542ffb347408637c43240f0` |
+| 4 | `theorem` | [terminalArithmeticSecurityBridgeStatus_unknowns](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ArithmeticSecurityBridgeNamespaced.lean/declarations/terminalarithmeticsecuritybridgestatus-unknowns.md) | 57 | `result-track:4b52b0dc0c89fc3e56d5f52e4194fe71dd57265085a893db5a9ee9034bb50dc9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

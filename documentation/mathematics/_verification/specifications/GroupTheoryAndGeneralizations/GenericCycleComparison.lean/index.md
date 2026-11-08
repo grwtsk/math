@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GenericCycleComparison.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GenericCycleComparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GenericCycleComparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GenericCycleComparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -53,8 +53,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.NumberTheory.ArithmeticFunction.Moebius` — import line 24; external provider; requires a separately pinned dependency.
 - `Mathlib.Algebra.BigOperators.Group.Finset.Basic` — import line 25; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Finsupp.Defs` — import line 26; external provider; requires a separately pinned dependency.
-- [Exact Periods And Complete Cycles](../../../../GroupTheoryAndGeneralizations/ExactPeriodsAndCompleteCycles.lean/index.md) — import line 28; pinned internal source present.
-- [Finite Euler Exponent Data](../../../../GroupTheoryAndGeneralizations/FiniteEulerExponentData.lean/index.md) — import line 29; pinned internal source present.
+- [Exact Periods And Complete Cycles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ExactPeriodsAndCompleteCycles.lean/index.md) — import line 28; pinned internal source present.
+- [Finite Euler Exponent Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteEulerExponentData.lean/index.md) — import line 29; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -65,11 +65,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fixedPointCount_eq_generic](../../../../GroupTheoryAndGeneralizations/GenericCycleComparison.lean/declarations/fixedpointcount-eq-generic.md) | 63 | `result-track:f90f5c957b377458e667095486a4e9d9f22914f18769fda0ca65365bf2eeb777` |
-| 2 | `theorem` | [hasExactPeriod_iff_generic](../../../../GroupTheoryAndGeneralizations/GenericCycleComparison.lean/declarations/hasexactperiod-iff-generic.md) | 69 | `result-track:dc5b8d2063274b8e67f2437af70f1f7a0fe1a10df2f243abbf9ec2d86a94d042` |
-| 3 | `theorem` | [exactPeriodCount_eq_generic](../../../../GroupTheoryAndGeneralizations/GenericCycleComparison.lean/declarations/exactperiodcount-eq-generic.md) | 75 | `result-track:b2680d76947cadefc05b5c5edc5be8654eb04d09f20b5c62d6005e1dde44fb83` |
-| 4 | `theorem` | [cycleCount_eq_generic](../../../../GroupTheoryAndGeneralizations/GenericCycleComparison.lean/declarations/cyclecount-eq-generic.md) | 81 | `result-track:a6fbb0de824dbb1cf180185c8951f94c9e664f28d180b7b69f44e8c4a0aa470b` |
-| 5 | `theorem` | [cycleEulerFactorData_apply_eq_generic](../../../../GroupTheoryAndGeneralizations/GenericCycleComparison.lean/declarations/cycleeulerfactordata-apply-eq-generic.md) | 87 | `result-track:d1675638f99a798529db97cc30de93e9750425750b257f55b392e1b670885647` |
+| 1 | `theorem` | [fixedPointCount_eq_generic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GenericCycleComparison.lean/declarations/fixedpointcount-eq-generic.md) | 63 | `result-track:f90f5c957b377458e667095486a4e9d9f22914f18769fda0ca65365bf2eeb777` |
+| 2 | `theorem` | [hasExactPeriod_iff_generic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GenericCycleComparison.lean/declarations/hasexactperiod-iff-generic.md) | 69 | `result-track:dc5b8d2063274b8e67f2437af70f1f7a0fe1a10df2f243abbf9ec2d86a94d042` |
+| 3 | `theorem` | [exactPeriodCount_eq_generic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GenericCycleComparison.lean/declarations/exactperiodcount-eq-generic.md) | 75 | `result-track:b2680d76947cadefc05b5c5edc5be8654eb04d09f20b5c62d6005e1dde44fb83` |
+| 4 | `theorem` | [cycleCount_eq_generic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GenericCycleComparison.lean/declarations/cyclecount-eq-generic.md) | 81 | `result-track:a6fbb0de824dbb1cf180185c8951f94c9e664f28d180b7b69f44e8c4a0aa470b` |
+| 5 | `theorem` | [cycleEulerFactorData_apply_eq_generic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GenericCycleComparison.lean/declarations/cycleeulerfactordata-apply-eq-generic.md) | 87 | `result-track:d1675638f99a798529db97cc30de93e9750425750b257f55b392e1b670885647` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

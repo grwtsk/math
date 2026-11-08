@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LaplaceConvergenceHelpersNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/LaplaceConvergenceHelpersNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LaplaceConvergenceHelpersNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LaplaceConvergenceHelpersNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../GeneralTopology/LaplaceConvergenceHelpersNamespaced.lean/declarations/example.md) | 17 | `declaration-track:66401b0645c38f7560eadb58b75ecb21a534cd52370ff3494d7f206327fad76a` |
-| 2 | `example` | [(anonymous)](../../../../GeneralTopology/LaplaceConvergenceHelpersNamespaced.lean/declarations/example-source-edition-3.md) | 29 | `declaration-track:eb003639a530371c4e7c523dbe122bf8d1f511331628ca359540603fc004961c` |
-| 3 | `example` | [(anonymous)](../../../../GeneralTopology/LaplaceConvergenceHelpersNamespaced.lean/declarations/example-source-edition-2.md) | 33 | `declaration-track:860db86aec5cf8adc0255148fce38e58a4763c9b824256ada06ffb76f56fdc65` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LaplaceConvergenceHelpersNamespaced.lean/declarations/example.md) | 17 | `declaration-track:66401b0645c38f7560eadb58b75ecb21a534cd52370ff3494d7f206327fad76a` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LaplaceConvergenceHelpersNamespaced.lean/declarations/example-source-edition-3.md) | 29 | `declaration-track:eb003639a530371c4e7c523dbe122bf8d1f511331628ca359540603fc004961c` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LaplaceConvergenceHelpersNamespaced.lean/declarations/example-source-edition-2.md) | 33 | `declaration-track:860db86aec5cf8adc0255148fce38e58a4763c9b824256ada06ffb76f56fdc65` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

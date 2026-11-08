@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AF75e0e7c0e2e8acfNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AF75e0e7c0e2e8acfNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AF75e0e7c0e2e8acfNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AF75e0e7c0e2e8acfNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rawToKernelSpace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AF75e0e7c0e2e8acfNamespaced.lean/declarations/rawtokernelspace.md) | 29 | `declaration-track:09c5b5c36ff55aab51d4e61bf9b044e7df56dcefa057f61bc5ddaef0ba71b682` |
+| 1 | `def` | [rawToKernelSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AF75e0e7c0e2e8acfNamespaced.lean/declarations/rawtokernelspace.md) | 29 | `declaration-track:09c5b5c36ff55aab51d4e61bf9b044e7df56dcefa057f61bc5ddaef0ba71b682` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

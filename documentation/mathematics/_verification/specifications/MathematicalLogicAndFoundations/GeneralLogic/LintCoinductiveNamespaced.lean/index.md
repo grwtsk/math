@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LintCoinductiveNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LintCoinductiveNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LintCoinductiveNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LintCoinductiveNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `coinductive` | [MyStream](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LintCoinductiveNamespaced.lean/declarations/mystream.md) | 14 | `declaration-track:588aba53f859745f710a5723823a146639aa13853fa44cf983d367f9d940189c` |
-| 2 | `coinductive` | [tick](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LintCoinductiveNamespaced.lean/declarations/tick.md) | 19 | `declaration-track:18f643b77257551b5da84191271393c1ca1bd5e39b1d0585458e51bc5882324c` |
-| 3 | `inductive` | [tock](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LintCoinductiveNamespaced.lean/declarations/tock.md) | 23 | `declaration-track:9ee634532bd85ddc0ac6d7fbd8aee744494c87f9f480e5a7eb380789b20219f0` |
+| 1 | `coinductive` | [MyStream](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LintCoinductiveNamespaced.lean/declarations/mystream.md) | 14 | `declaration-track:588aba53f859745f710a5723823a146639aa13853fa44cf983d367f9d940189c` |
+| 2 | `coinductive` | [tick](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LintCoinductiveNamespaced.lean/declarations/tick.md) | 19 | `declaration-track:18f643b77257551b5da84191271393c1ca1bd5e39b1d0585458e51bc5882324c` |
+| 3 | `inductive` | [tock](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LintCoinductiveNamespaced.lean/declarations/tock.md) | 23 | `declaration-track:9ee634532bd85ddc0ac6d7fbd8aee744494c87f9f480e5a7eb380789b20219f0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ActualSqrtSieveBoundsNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ActualSqrtSieveBoundsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ActualSqrtSieveBoundsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ActualSqrtSieveBoundsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [reciprocalSqrt_upper_step](../../../../Combinatorics/ActualSqrtSieveBoundsNamespaced.lean/declarations/reciprocalsqrt-upper-step.md) | 25 | `result-track:0287f0c2255ebf15c94d536642b07fba258d45131a7bdde71b8fe2abd7d8c238` |
-| 2 | `theorem` | [reciprocalSqrt_sum_upper](../../../../Combinatorics/ActualSqrtSieveBoundsNamespaced.lean/declarations/reciprocalsqrt-sum-upper.md) | 37 | `result-track:f75a360f30937a62561e164f03f95ff6f8db611b13846b16194523180f6a9829` |
-| 3 | `theorem` | [reciprocalSqrt_sum_upper_total](../../../../Combinatorics/ActualSqrtSieveBoundsNamespaced.lean/declarations/reciprocalsqrt-sum-upper-total.md) | 47 | `result-track:bdf916336d5a27fcf2a6ab524cca58483a3f6df7ebc58f0e0ccc2ed8a29b2ad1` |
-| 4 | `theorem` | [reciprocalSqrt_lower_step](../../../../Combinatorics/ActualSqrtSieveBoundsNamespaced.lean/declarations/reciprocalsqrt-lower-step.md) | 55 | `result-track:36bb4014c4302bdfba61160d06578ab3e35c94b2251e40105740eccbdf268d64` |
-| 5 | `theorem` | [reciprocalSqrt_sum_lower](../../../../Combinatorics/ActualSqrtSieveBoundsNamespaced.lean/declarations/reciprocalsqrt-sum-lower.md) | 68 | `result-track:90bf64da597b9c0e254d6ad45533aa9d2503c715bab2d98bf251663e93d41a64` |
-| 6 | `theorem` | [reciprocalSquare_sum_upper](../../../../Combinatorics/ActualSqrtSieveBoundsNamespaced.lean/declarations/reciprocalsquare-sum-upper.md) | 84 | `result-track:1b014a544f6b58e28f5efa313e4d4701f60f27b4494a10ca9d61b68c606bb31b` |
-| 7 | `theorem` | [reciprocal_small_square_divisor_bonus](../../../../Combinatorics/ActualSqrtSieveBoundsNamespaced.lean/declarations/reciprocal-small-square-divisor-bonus.md) | 108 | `result-track:66e8cb6982b7695b5704b8fceecc7dc870e5f67ed8341f46ba44804f77bdf41f` |
+| 1 | `theorem` | [reciprocalSqrt_upper_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ActualSqrtSieveBoundsNamespaced.lean/declarations/reciprocalsqrt-upper-step.md) | 25 | `result-track:0287f0c2255ebf15c94d536642b07fba258d45131a7bdde71b8fe2abd7d8c238` |
+| 2 | `theorem` | [reciprocalSqrt_sum_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ActualSqrtSieveBoundsNamespaced.lean/declarations/reciprocalsqrt-sum-upper.md) | 37 | `result-track:f75a360f30937a62561e164f03f95ff6f8db611b13846b16194523180f6a9829` |
+| 3 | `theorem` | [reciprocalSqrt_sum_upper_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ActualSqrtSieveBoundsNamespaced.lean/declarations/reciprocalsqrt-sum-upper-total.md) | 47 | `result-track:bdf916336d5a27fcf2a6ab524cca58483a3f6df7ebc58f0e0ccc2ed8a29b2ad1` |
+| 4 | `theorem` | [reciprocalSqrt_lower_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ActualSqrtSieveBoundsNamespaced.lean/declarations/reciprocalsqrt-lower-step.md) | 55 | `result-track:36bb4014c4302bdfba61160d06578ab3e35c94b2251e40105740eccbdf268d64` |
+| 5 | `theorem` | [reciprocalSqrt_sum_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ActualSqrtSieveBoundsNamespaced.lean/declarations/reciprocalsqrt-sum-lower.md) | 68 | `result-track:90bf64da597b9c0e254d6ad45533aa9d2503c715bab2d98bf251663e93d41a64` |
+| 6 | `theorem` | [reciprocalSquare_sum_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ActualSqrtSieveBoundsNamespaced.lean/declarations/reciprocalsquare-sum-upper.md) | 84 | `result-track:1b014a544f6b58e28f5efa313e4d4701f60f27b4494a10ca9d61b68c606bb31b` |
+| 7 | `theorem` | [reciprocal_small_square_divisor_bonus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ActualSqrtSieveBoundsNamespaced.lean/declarations/reciprocal-small-square-divisor-bonus.md) | 108 | `result-track:66e8cb6982b7695b5704b8fceecc7dc870e5f67ed8341f46ba44804f77bdf41f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalPullbacksNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalPullbacksNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalPullbacksNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalPullbacksNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [HasConicalPullback](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalPullbacksNamespaced.lean/declarations/hasconicalpullback.md) | 31 | `declaration-track:2412ba993ff32aef896ec80aa0dd0661982d28a8083c117a0458cdba9be88e17` |
-| 2 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalPullbacksNamespaced.lean/declarations/example-source-edition-2.md) | 35 | `declaration-track:cc1e622a35849d3803a569a6fb848f503ad9516532f48dac15ec4048be0bccfb` |
-| 3 | `abbrev` | [HasConicalPullbacks](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalPullbacksNamespaced.lean/declarations/hasconicalpullbacks.md) | 44 | `declaration-track:c4c33e1c3d6e818f67f262c271ff088f6d86261277961524ce1d90420312ed6c` |
-| 4 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalPullbacksNamespaced.lean/declarations/example.md) | 47 | `declaration-track:606082303ee08f5824c269b9aef78f77db8f550008c228e5472bee44e8a5dd47` |
+| 1 | `abbrev` | [HasConicalPullback](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalPullbacksNamespaced.lean/declarations/hasconicalpullback.md) | 31 | `declaration-track:2412ba993ff32aef896ec80aa0dd0661982d28a8083c117a0458cdba9be88e17` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalPullbacksNamespaced.lean/declarations/example-source-edition-2.md) | 35 | `declaration-track:cc1e622a35849d3803a569a6fb848f503ad9516532f48dac15ec4048be0bccfb` |
+| 3 | `abbrev` | [HasConicalPullbacks](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalPullbacksNamespaced.lean/declarations/hasconicalpullbacks.md) | 44 | `declaration-track:c4c33e1c3d6e818f67f262c271ff088f6d86261277961524ce1d90420312ed6c` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalPullbacksNamespaced.lean/declarations/example.md) | 47 | `declaration-track:606082303ee08f5824c269b9aef78f77db8f550008c228e5472bee44e8a5dd47` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

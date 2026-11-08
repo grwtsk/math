@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CompTypeclasses.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CompTypeclasses.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompTypeclasses.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompTypeclasses.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [CompTriple](../../../../GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/comptriple.md) | 42 | `declaration-track:8e927719d4a2522c9c8897d52477f5fa9d68d8018b1ccffe65d583a79d21f484` |
-| 2 | `class` | [IsId](../../../../GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/isid.md) | 54 | `declaration-track:be0b14644464d72674055f6024eafc3ad57ef6165334427d7e3ce08a15bb4ee5` |
-| 3 | `instance` | [instIsId](../../../../GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/instisid.md) | 57 | `declaration-track:60227def59077af995bc2e394085a354497f24e242b6e12242385d77949bd5fe` |
-| 4 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/instance.md) | 60 | `declaration-track:992e2d5f5d38cda81d6b6007f02a8e4e9463222aa56a150eb1eb718a2ffa481f` |
-| 5 | `instance` | [instComp_id](../../../../GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/instcomp-id.md) | 63 | `declaration-track:1e16c831fa7e5ec0a1eb2dd73e941324c50c245e00a003f4a92a3e0eefcea5d9` |
-| 6 | `instance` | [instId_comp](../../../../GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/instid-comp.md) | 68 | `declaration-track:e65476525bb922319dd586d58befc29bcd8421701de70dc44315b293e25c8376` |
-| 7 | `lemma` | [comp_inv](../../../../GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/comp-inv.md) | 73 | `result-track:080f598619e920e723915881f4fd8dcbd889d226c06693c603619af96ea31d76` |
-| 8 | `instance` | [instRootCompTriple](../../../../GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/instrootcomptriple.md) | 78 | `declaration-track:e6dae55cc69c7ec0ea330e017377ddf625ac8a314457d4a5039ed447f8e7c62e` |
-| 9 | `theorem` | [comp](../../../../GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/comp.md) | 85 | `result-track:5e34ded848161513a45d60911eb13af540c60c72d624a3014a516031c3ab149d` |
-| 10 | `lemma` | [comp_apply](../../../../GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/comp-apply.md) | 89 | `result-track:4a3e3022aea152f98132d10efc0af101e6b80e4b387661db7def31828261b77e` |
-| 11 | `theorem` | [comp_assoc](../../../../GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/comp-assoc.md) | 94 | `result-track:464b70277963879ab07a911ca3ea55adcbccfbcf9e97085d5dea2d26dc4d92a4` |
+| 1 | `class` | [CompTriple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/comptriple.md) | 42 | `declaration-track:8e927719d4a2522c9c8897d52477f5fa9d68d8018b1ccffe65d583a79d21f484` |
+| 2 | `class` | [IsId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/isid.md) | 54 | `declaration-track:be0b14644464d72674055f6024eafc3ad57ef6165334427d7e3ce08a15bb4ee5` |
+| 3 | `instance` | [instIsId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/instisid.md) | 57 | `declaration-track:60227def59077af995bc2e394085a354497f24e242b6e12242385d77949bd5fe` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/instance.md) | 60 | `declaration-track:992e2d5f5d38cda81d6b6007f02a8e4e9463222aa56a150eb1eb718a2ffa481f` |
+| 5 | `instance` | [instComp_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/instcomp-id.md) | 63 | `declaration-track:1e16c831fa7e5ec0a1eb2dd73e941324c50c245e00a003f4a92a3e0eefcea5d9` |
+| 6 | `instance` | [instId_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/instid-comp.md) | 68 | `declaration-track:e65476525bb922319dd586d58befc29bcd8421701de70dc44315b293e25c8376` |
+| 7 | `lemma` | [comp_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/comp-inv.md) | 73 | `result-track:080f598619e920e723915881f4fd8dcbd889d226c06693c603619af96ea31d76` |
+| 8 | `instance` | [instRootCompTriple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/instrootcomptriple.md) | 78 | `declaration-track:e6dae55cc69c7ec0ea330e017377ddf625ac8a314457d4a5039ed447f8e7c62e` |
+| 9 | `theorem` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/comp.md) | 85 | `result-track:5e34ded848161513a45d60911eb13af540c60c72d624a3014a516031c3ab149d` |
+| 10 | `lemma` | [comp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/comp-apply.md) | 89 | `result-track:4a3e3022aea152f98132d10efc0af101e6b80e4b387661db7def31828261b77e` |
+| 11 | `theorem` | [comp_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompTypeclasses.lean/declarations/comp-assoc.md) | 94 | `result-track:464b70277963879ab07a911ca3ea55adcbccfbcf9e97085d5dea2d26dc4d92a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/StdSimplexOnePublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/StdSimplexOnePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOnePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOnePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [objMk₁](../../../../AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk.md) | 33 | `declaration-track:1103bd22814d99a36a04c298fb1776aac58b37d1b6f1c264bab628711c3f5f5a` |
-| 2 | `lemma` | [objMk₁_apply](../../../../AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-apply.md) | 40 | `result-track:4cf0c29d086512b6b5731544fc0bb58beabc1051d1be9020dc1542c327200a0e` |
-| 3 | `lemma` | [objMk₁_apply_eq_zero_iff](../../../../AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-apply-eq-zero-iff.md) | 43 | `result-track:f1f7772d8b48449454ec4ceaea65b20368e7b3a10a896e5b82b4e1722ed6360c` |
-| 4 | `lemma` | [objMk₁_of_castSucc_lt](../../../../AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-of-castsucc-lt.md) | 47 | `result-track:93cd697be153e2e75071eff9e56fda63f67631b064d19329a224ceec0a2158dc` |
-| 5 | `lemma` | [objMk₁_apply_eq_one_iff](../../../../AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-apply-eq-one-iff.md) | 51 | `result-track:d96023ab0c1aba423a53fb6ba3b2c87796046b6c7b6c0a560c05d5e97e6510b5` |
-| 6 | `lemma` | [objMk₁_of_le_castSucc](../../../../AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-of-le-castsucc.md) | 55 | `result-track:2e47b70276b62b4f2bcd4893277b687fa8aa8193086f0411ae5f8440fce6b353` |
-| 7 | `lemma` | [δ_objMk₁_of_le](../../../../AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-of-le.md) | 59 | `result-track:506b48f7e0c8e93300cf4c14909dd365b14691ac9eb5b158f75405f5b86d392f` |
-| 8 | `lemma` | [δ_objMk₁_of_lt](../../../../AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-of-lt-source-edition-2.md) | 65 | `result-track:35d3be1c21d9b09290402c1a34d159d6d00dbd1422e08f86ddddd327ffc5506e` |
-| 9 | `lemma` | [σ_objMk₁_of_le](../../../../AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-of-le-source-edition-2.md) | 70 | `result-track:65c9c5f9e571843a53cb26e217565f58f9870d924995e74fd953c9832053856f` |
-| 10 | `lemma` | [σ_objMk₁_of_lt](../../../../AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-of-lt.md) | 75 | `result-track:107eb5016ed64d3497c88f0b9ececcbbbacd91351b3073c6d8353eff8dcae62e` |
-| 11 | `lemma` | [objMk₁_bijective](../../../../AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-bijective.md) | 80 | `result-track:d59416dc7ebf1857b5dd3ad351652b03b25b29489f94469383da477fc769c33c` |
-| 12 | `lemma` | [objMk₁_injective](../../../../AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-injective.md) | 83 | `result-track:a8883ff3c49a90d497cbd47c424c0bd8df2463d798ac4eeadaaaf33d288033aa` |
-| 13 | `lemma` | [objMk₁_surjective](../../../../AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-surjective.md) | 86 | `result-track:d6c2970e1720ba982dae83b60f5d5fb2e17220030b2e36f2e3755d729eb1e27a` |
+| 1 | `def` | [objMk₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk.md) | 33 | `declaration-track:1103bd22814d99a36a04c298fb1776aac58b37d1b6f1c264bab628711c3f5f5a` |
+| 2 | `lemma` | [objMk₁_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-apply.md) | 40 | `result-track:4cf0c29d086512b6b5731544fc0bb58beabc1051d1be9020dc1542c327200a0e` |
+| 3 | `lemma` | [objMk₁_apply_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-apply-eq-zero-iff.md) | 43 | `result-track:f1f7772d8b48449454ec4ceaea65b20368e7b3a10a896e5b82b4e1722ed6360c` |
+| 4 | `lemma` | [objMk₁_of_castSucc_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-of-castsucc-lt.md) | 47 | `result-track:93cd697be153e2e75071eff9e56fda63f67631b064d19329a224ceec0a2158dc` |
+| 5 | `lemma` | [objMk₁_apply_eq_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-apply-eq-one-iff.md) | 51 | `result-track:d96023ab0c1aba423a53fb6ba3b2c87796046b6c7b6c0a560c05d5e97e6510b5` |
+| 6 | `lemma` | [objMk₁_of_le_castSucc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-of-le-castsucc.md) | 55 | `result-track:2e47b70276b62b4f2bcd4893277b687fa8aa8193086f0411ae5f8440fce6b353` |
+| 7 | `lemma` | [δ_objMk₁_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-of-le.md) | 59 | `result-track:506b48f7e0c8e93300cf4c14909dd365b14691ac9eb5b158f75405f5b86d392f` |
+| 8 | `lemma` | [δ_objMk₁_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-of-lt-source-edition-2.md) | 65 | `result-track:35d3be1c21d9b09290402c1a34d159d6d00dbd1422e08f86ddddd327ffc5506e` |
+| 9 | `lemma` | [σ_objMk₁_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-of-le-source-edition-2.md) | 70 | `result-track:65c9c5f9e571843a53cb26e217565f58f9870d924995e74fd953c9832053856f` |
+| 10 | `lemma` | [σ_objMk₁_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-of-lt.md) | 75 | `result-track:107eb5016ed64d3497c88f0b9ececcbbbacd91351b3073c6d8353eff8dcae62e` |
+| 11 | `lemma` | [objMk₁_bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-bijective.md) | 80 | `result-track:d59416dc7ebf1857b5dd3ad351652b03b25b29489f94469383da477fc769c33c` |
+| 12 | `lemma` | [objMk₁_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-injective.md) | 83 | `result-track:a8883ff3c49a90d497cbd47c424c0bd8df2463d798ac4eeadaaaf33d288033aa` |
+| 13 | `lemma` | [objMk₁_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOnePublic.lean/declarations/objmk-surjective.md) | 86 | `result-track:d6c2970e1720ba982dae83b60f5d5fb2e17220030b2e36f2e3755d729eb1e27a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

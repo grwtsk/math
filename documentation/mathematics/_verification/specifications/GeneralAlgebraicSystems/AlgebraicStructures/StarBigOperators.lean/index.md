@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarBigOperators.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarBigOperators.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarBigOperators.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarBigOperators.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [star_prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarBigOperators.lean/declarations/star-prod.md) | 18 | `result-track:1908b240e6ccab5ddce66c84d7690e9481b19281b1272cd9558b5696a5ea0aac` |
-| 2 | `theorem` | [star_sum](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarBigOperators.lean/declarations/star-sum.md) | 22 | `result-track:7fc510b4ff251cee45aa8d28540c5b3e8a7e537b4b45f57a53978cbac7b52074` |
+| 1 | `theorem` | [star_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarBigOperators.lean/declarations/star-prod.md) | 18 | `result-track:1908b240e6ccab5ddce66c84d7690e9481b19281b1272cd9558b5696a5ea0aac` |
+| 2 | `theorem` | [star_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarBigOperators.lean/declarations/star-sum.md) | 22 | `result-track:7fc510b4ff251cee45aa8d28540c5b3e8a7e537b4b45f57a53978cbac7b52074` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

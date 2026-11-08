@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticTreeNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticTreeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticTreeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticTreeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CellularArithmeticTree](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticTreeNamespaced.lean/declarations/cellulararithmetictree.md) | 26 | `declaration-track:aff44f66cc753bca1aa78b95c046b9f47677106f299219bda32342faf74ef50c` |
-| 2 | `def` | [decode](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticTreeNamespaced.lean/declarations/decode.md) | 31 | `declaration-track:d974eb9e84c947843ecccf6d98acd9b60ceb116e2c8a2a4181c637ce29349835` |
-| 3 | `def` | [PrimeStrictlyIncreasing](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticTreeNamespaced.lean/declarations/primestrictlyincreasing.md) | 34 | `declaration-track:d1e9dfcffcc6f60207f48cf0cb6bcb2f9aabcd373910ee3723d47d369a52c578` |
-| 4 | `def` | [Canonical](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticTreeNamespaced.lean/declarations/canonical.md) | 38 | `declaration-track:503ff89f0b72ac217dd163cb9551481e72ef24c54b13b3646fda7600679e9b2d` |
-| 5 | `theorem` | [decode_empty](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticTreeNamespaced.lean/declarations/decode-empty.md) | 43 | `result-track:07d0baa429eae641a85935ff075407d9676917f51acff509a62f83922d75fdfd` |
-| 6 | `theorem` | [decode_cons](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticTreeNamespaced.lean/declarations/decode-cons.md) | 47 | `result-track:d122dde392dd001aed7c0b68e32a56e2e36530f17eaf57b8c0b5a3980cfc892e` |
+| 1 | `structure` | [CellularArithmeticTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticTreeNamespaced.lean/declarations/cellulararithmetictree.md) | 26 | `declaration-track:aff44f66cc753bca1aa78b95c046b9f47677106f299219bda32342faf74ef50c` |
+| 2 | `def` | [decode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticTreeNamespaced.lean/declarations/decode.md) | 31 | `declaration-track:d974eb9e84c947843ecccf6d98acd9b60ceb116e2c8a2a4181c637ce29349835` |
+| 3 | `def` | [PrimeStrictlyIncreasing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticTreeNamespaced.lean/declarations/primestrictlyincreasing.md) | 34 | `declaration-track:d1e9dfcffcc6f60207f48cf0cb6bcb2f9aabcd373910ee3723d47d369a52c578` |
+| 4 | `def` | [Canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticTreeNamespaced.lean/declarations/canonical.md) | 38 | `declaration-track:503ff89f0b72ac217dd163cb9551481e72ef24c54b13b3646fda7600679e9b2d` |
+| 5 | `theorem` | [decode_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticTreeNamespaced.lean/declarations/decode-empty.md) | 43 | `result-track:07d0baa429eae641a85935ff075407d9676917f51acff509a62f83922d75fdfd` |
+| 6 | `theorem` | [decode_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticTreeNamespaced.lean/declarations/decode-cons.md) | 47 | `result-track:d122dde392dd001aed7c0b68e32a56e2e36530f17eaf57b8c0b5a3980cfc892e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

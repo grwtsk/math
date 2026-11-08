@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AEc412097e16ee1a8Namespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AEc412097e16ee1a8Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AEc412097e16ee1a8Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AEc412097e16ee1a8Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CanonicalPath](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AEc412097e16ee1a8Namespaced.lean/declarations/canonicalpath.md) | 20 | `declaration-track:39c7a925b2a2bc274b8ad2ef9d49d00036709a9176914a7889e6324ff326f211` |
-| 2 | `def` | [CanonicalPath.Valid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AEc412097e16ee1a8Namespaced.lean/declarations/canonicalpath-valid.md) | 25 | `declaration-track:7f169ca6633a7c22fd9274408438c7f96d9fe20585206554c386cd58544f3026` |
+| 1 | `structure` | [CanonicalPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AEc412097e16ee1a8Namespaced.lean/declarations/canonicalpath.md) | 20 | `declaration-track:39c7a925b2a2bc274b8ad2ef9d49d00036709a9176914a7889e6324ff326f211` |
+| 2 | `def` | [CanonicalPath.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AEc412097e16ee1a8Namespaced.lean/declarations/canonicalpath-valid.md) | 25 | `declaration-track:7f169ca6633a7c22fd9274408438c7f96d9fe20585206554c386cd58544f3026` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

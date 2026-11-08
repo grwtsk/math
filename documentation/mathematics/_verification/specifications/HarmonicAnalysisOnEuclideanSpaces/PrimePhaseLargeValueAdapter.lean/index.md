@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../HarmonicAnalysisOnEuclideanSpaces/PrimePhaseLargeValueAdapter.lean/index.md) · [Full source](../../../../HarmonicAnalysisOnEuclideanSpaces/PrimePhaseLargeValueAdapter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/PrimePhaseLargeValueAdapter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/PrimePhaseLargeValueAdapter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Fourier.PrimePhaseMultiplierBounds`](../../../../MeasureAndIntegration/PrimePhaseMultiplierBounds.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.PrimePhaseMultiplierBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimePhaseMultiplierBounds.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coefficient](../../../../HarmonicAnalysisOnEuclideanSpaces/PrimePhaseLargeValueAdapter.lean/declarations/coefficient.md) | 17 | `declaration-track:d20250d59177fe211505e57cb8cd3ff50b29c3451422caecc403bc69680f965f` |
-| 2 | `def` | [polynomial](../../../../HarmonicAnalysisOnEuclideanSpaces/PrimePhaseLargeValueAdapter.lean/declarations/polynomial.md) | 19 | `declaration-track:cd3bbf85789346977793e9fd01bc19d5a71ad1ea941ba415ad05603e77f2a195` |
-| 3 | `theorem` | [source_identity](../../../../HarmonicAnalysisOnEuclideanSpaces/PrimePhaseLargeValueAdapter.lean/declarations/source-identity.md) | 22 | `result-track:0f296dabd3e4b4986caf545e2c83c41805ff9f82b6f3489d333fa113c1cd6a3f` |
-| 4 | `theorem` | [coefficient_square](../../../../HarmonicAnalysisOnEuclideanSpaces/PrimePhaseLargeValueAdapter.lean/declarations/coefficient-square.md) | 27 | `result-track:956a29aeb7df038d5c3a8ebf6268fdd6d41c56a07776784b5e707ae9d1596603` |
-| 5 | `theorem` | [coefficient_bound](../../../../HarmonicAnalysisOnEuclideanSpaces/PrimePhaseLargeValueAdapter.lean/declarations/coefficient-bound.md) | 31 | `result-track:3c322aca7613beba0e8f59b008d845db1bf75580ecb2af80332b6c2aec4c81cb` |
-| 6 | `theorem` | [narrow_implies_large_modulus](../../../../HarmonicAnalysisOnEuclideanSpaces/PrimePhaseLargeValueAdapter.lean/declarations/narrow-implies-large-modulus.md) | 43 | `result-track:8fff9430f91b0f24670c07b014fc232395854dab11ee57c7ddccf927b6aef772` |
-| 7 | `theorem` | [squared_readout](../../../../HarmonicAnalysisOnEuclideanSpaces/PrimePhaseLargeValueAdapter.lean/declarations/squared-readout.md) | 51 | `result-track:54e64736ebad9ea669b49a1280594630d420953e90e83f9d198a984607908c36` |
+| 1 | `def` | [coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/PrimePhaseLargeValueAdapter.lean/declarations/coefficient.md) | 17 | `declaration-track:d20250d59177fe211505e57cb8cd3ff50b29c3451422caecc403bc69680f965f` |
+| 2 | `def` | [polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/PrimePhaseLargeValueAdapter.lean/declarations/polynomial.md) | 19 | `declaration-track:cd3bbf85789346977793e9fd01bc19d5a71ad1ea941ba415ad05603e77f2a195` |
+| 3 | `theorem` | [source_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/PrimePhaseLargeValueAdapter.lean/declarations/source-identity.md) | 22 | `result-track:0f296dabd3e4b4986caf545e2c83c41805ff9f82b6f3489d333fa113c1cd6a3f` |
+| 4 | `theorem` | [coefficient_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/PrimePhaseLargeValueAdapter.lean/declarations/coefficient-square.md) | 27 | `result-track:956a29aeb7df038d5c3a8ebf6268fdd6d41c56a07776784b5e707ae9d1596603` |
+| 5 | `theorem` | [coefficient_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/PrimePhaseLargeValueAdapter.lean/declarations/coefficient-bound.md) | 31 | `result-track:3c322aca7613beba0e8f59b008d845db1bf75580ecb2af80332b6c2aec4c81cb` |
+| 6 | `theorem` | [narrow_implies_large_modulus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/PrimePhaseLargeValueAdapter.lean/declarations/narrow-implies-large-modulus.md) | 43 | `result-track:8fff9430f91b0f24670c07b014fc232395854dab11ee57c7ddccf927b6aef772` |
+| 7 | `theorem` | [squared_readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/PrimePhaseLargeValueAdapter.lean/declarations/squared-readout.md) | 51 | `result-track:54e64736ebad9ea669b49a1280594630d420953e90e83f9d198a984607908c36` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

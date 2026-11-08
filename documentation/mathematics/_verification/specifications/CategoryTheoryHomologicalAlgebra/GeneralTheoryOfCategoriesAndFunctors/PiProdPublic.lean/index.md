@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PiProdPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PiProdPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PiProdPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PiProdPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Pi.binaryFanOfProp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PiProdPublic.lean/declarations/pi-binaryfanofprop.md) | 36 | `declaration-track:778a44bf53bda19887df903369b9e63cd1a9010913f1df031d8ac293dbc25d66` |
-| 2 | `def` | [Pi.binaryFanOfPropIsLimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PiProdPublic.lean/declarations/pi-binaryfanofpropislimit.md) | 46 | `declaration-track:13da499315d26837008924b5b400040bd05f852cac4f16bc0e1a3435e37e9eea` |
-| 3 | `lemma` | [hasBinaryProduct_of_products](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PiProdPublic.lean/declarations/hasbinaryproduct-of-products.md) | 58 | `result-track:ddb24d33b5dd6096252da3b7d39cdf645174fb45f4eea18949910e3b465ddaab` |
-| 4 | `lemma` | [Pi.map_eq_prod_map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PiProdPublic.lean/declarations/pi-map-eq-prod-map.md) | 65 | `result-track:2fe95b59efde5fae9a0a1fbccdd56bc43f2392ba199228f3e0ebdaf9910f63f2` |
+| 1 | `def` | [Pi.binaryFanOfProp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PiProdPublic.lean/declarations/pi-binaryfanofprop.md) | 36 | `declaration-track:778a44bf53bda19887df903369b9e63cd1a9010913f1df031d8ac293dbc25d66` |
+| 2 | `def` | [Pi.binaryFanOfPropIsLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PiProdPublic.lean/declarations/pi-binaryfanofpropislimit.md) | 46 | `declaration-track:13da499315d26837008924b5b400040bd05f852cac4f16bc0e1a3435e37e9eea` |
+| 3 | `lemma` | [hasBinaryProduct_of_products](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PiProdPublic.lean/declarations/hasbinaryproduct-of-products.md) | 58 | `result-track:ddb24d33b5dd6096252da3b7d39cdf645174fb45f4eea18949910e3b465ddaab` |
+| 4 | `lemma` | [Pi.map_eq_prod_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PiProdPublic.lean/declarations/pi-map-eq-prod-map.md) | 65 | `result-track:2fe95b59efde5fae9a0a1fbccdd56bc43f2392ba199228f3e0ebdaf9910f63f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

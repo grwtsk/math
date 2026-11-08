@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/LeaseNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/LeaseNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeaseNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeaseNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Lease](../../../../../ComputerScience/AlgorithmsInComputerScience/LeaseNamespaced.lean/declarations/lease.md) | 20 | `declaration-track:6f9c0fb8fb19599960a05652012c9ffe75158fa3185b09543967f5ac694d003b` |
-| 2 | `structure` | [Revocation](../../../../../ComputerScience/AlgorithmsInComputerScience/LeaseNamespaced.lean/declarations/revocation.md) | 31 | `declaration-track:1233262f3878875dfebdbbc38f8a9c1661864bf39e4b9c2888310efd8c0e6d02` |
-| 3 | `structure` | [ValidAt](../../../../../ComputerScience/AlgorithmsInComputerScience/LeaseNamespaced.lean/declarations/validat.md) | 39 | `declaration-track:2ace48aa05b1cd07ed41ee5edfcb42fe9828b930d5f58dcdad9c051b8bf13b6f` |
-| 4 | `theorem` | [not_valid_at_or_after_revocation](../../../../../ComputerScience/AlgorithmsInComputerScience/LeaseNamespaced.lean/declarations/not-valid-at-or-after-revocation.md) | 50 | `result-track:4ab5338d57fad9253f6fb396ca616650525fabf2389b72590ce30ac13c4496c3` |
-| 5 | `structure` | [DelegatedLease](../../../../../ComputerScience/AlgorithmsInComputerScience/LeaseNamespaced.lean/declarations/delegatedlease.md) | 66 | `declaration-track:3e2bc34dd72bbbf10829f32f86b1cd3ce0c213229ca0f27030c2a37388bac01b` |
-| 6 | `theorem` | [scope_nonamplifying](../../../../../ComputerScience/AlgorithmsInComputerScience/LeaseNamespaced.lean/declarations/scope-nonamplifying.md) | 78 | `result-track:c96e0f93d5ef73274b2321b1c3e670a5c2448a11cd97e290fbcd49163f53fa72` |
-| 7 | `theorem` | [effects_nonamplifying](../../../../../ComputerScience/AlgorithmsInComputerScience/LeaseNamespaced.lean/declarations/effects-nonamplifying.md) | 84 | `result-track:2c12c451cec56c56f8e70bb09ee1571d76f6e8b3168726cb774b54b1d66dbdff` |
+| 1 | `structure` | [Lease](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeaseNamespaced.lean/declarations/lease.md) | 20 | `declaration-track:6f9c0fb8fb19599960a05652012c9ffe75158fa3185b09543967f5ac694d003b` |
+| 2 | `structure` | [Revocation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeaseNamespaced.lean/declarations/revocation.md) | 31 | `declaration-track:1233262f3878875dfebdbbc38f8a9c1661864bf39e4b9c2888310efd8c0e6d02` |
+| 3 | `structure` | [ValidAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeaseNamespaced.lean/declarations/validat.md) | 39 | `declaration-track:2ace48aa05b1cd07ed41ee5edfcb42fe9828b930d5f58dcdad9c051b8bf13b6f` |
+| 4 | `theorem` | [not_valid_at_or_after_revocation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeaseNamespaced.lean/declarations/not-valid-at-or-after-revocation.md) | 50 | `result-track:4ab5338d57fad9253f6fb396ca616650525fabf2389b72590ce30ac13c4496c3` |
+| 5 | `structure` | [DelegatedLease](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeaseNamespaced.lean/declarations/delegatedlease.md) | 66 | `declaration-track:3e2bc34dd72bbbf10829f32f86b1cd3ce0c213229ca0f27030c2a37388bac01b` |
+| 6 | `theorem` | [scope_nonamplifying](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeaseNamespaced.lean/declarations/scope-nonamplifying.md) | 78 | `result-track:c96e0f93d5ef73274b2321b1c3e670a5c2448a11cd97e290fbcd49163f53fa72` |
+| 7 | `theorem` | [effects_nonamplifying](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeaseNamespaced.lean/declarations/effects-nonamplifying.md) | 84 | `result-track:2c12c451cec56c56f8e70bb09ee1571d76f6e8b3168726cb774b54b1d66dbdff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

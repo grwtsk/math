@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CenterNamespacedEdition1.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CenterNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CenterNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CenterNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Set.star_mem_center](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CenterNamespacedEdition1.lean/declarations/set-star-mem-center.md) | 23 | `result-track:1dc21b924d97e44a02ab11aa3ac2e1a71c680a6be483f7531c89e6541e45e434` |
-| 2 | `theorem` | [Set.star_mem_centralizer'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CenterNamespacedEdition1.lean/declarations/set-star-mem-centralizer-source-edition-2.md) | 27 | `result-track:8266343b0c70304a7a142b0f13378ad3b6894c142fde7a2d08ec3eb05015b612` |
-| 3 | `theorem` | [Set.star_mem_centralizer](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CenterNamespacedEdition1.lean/declarations/set-star-mem-centralizer.md) | 32 | `result-track:72dc0cb898a338d9606d80b9f769a885ba498b37ac41275a57631c8fa200de8f` |
+| 1 | `theorem` | [Set.star_mem_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CenterNamespacedEdition1.lean/declarations/set-star-mem-center.md) | 23 | `result-track:1dc21b924d97e44a02ab11aa3ac2e1a71c680a6be483f7531c89e6541e45e434` |
+| 2 | `theorem` | [Set.star_mem_centralizer'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CenterNamespacedEdition1.lean/declarations/set-star-mem-centralizer-source-edition-2.md) | 27 | `result-track:8266343b0c70304a7a142b0f13378ad3b6894c142fde7a2d08ec3eb05015b612` |
+| 3 | `theorem` | [Set.star_mem_centralizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CenterNamespacedEdition1.lean/declarations/set-star-mem-centralizer.md) | 32 | `result-track:72dc0cb898a338d9606d80b9f769a885ba498b37ac41275a57631c8fa200de8f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

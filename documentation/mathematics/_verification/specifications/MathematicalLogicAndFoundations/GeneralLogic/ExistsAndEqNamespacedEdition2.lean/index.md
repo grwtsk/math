@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExistsAndEqNamespacedEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExistsAndEqNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExistsAndEqNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExistsAndEqNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExistsAndEqNamespacedEdition2.lean/declarations/example-source-edition-3.md) | 14 | `declaration-track:e724b3995eb1fa7385f0d2a248b1628a65f3979bf380f7679a9395062e8c145a` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExistsAndEqNamespacedEdition2.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:3bd2aaf1d9c1011c3664b6cd1591a5024ec18e96f184e3d1945dd7cca39b5d41` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExistsAndEqNamespacedEdition2.lean/declarations/example-source-edition-4.md) | 26 | `declaration-track:f4a561fb7cb93af2b83b33ecf0b4b8cb2fb0477925973b893433d8c635ea4303` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExistsAndEqNamespacedEdition2.lean/declarations/example.md) | 33 | `declaration-track:070e5479e576e96198cbf3494964a765755b3d0ffc7f582523319b70736f0f0b` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExistsAndEqNamespacedEdition2.lean/declarations/example-source-edition-3.md) | 14 | `declaration-track:e724b3995eb1fa7385f0d2a248b1628a65f3979bf380f7679a9395062e8c145a` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExistsAndEqNamespacedEdition2.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:3bd2aaf1d9c1011c3664b6cd1591a5024ec18e96f184e3d1945dd7cca39b5d41` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExistsAndEqNamespacedEdition2.lean/declarations/example-source-edition-4.md) | 26 | `declaration-track:f4a561fb7cb93af2b83b33ecf0b4b8cb2fb0477925973b893433d8c635ea4303` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExistsAndEqNamespacedEdition2.lean/declarations/example.md) | 33 | `declaration-track:070e5479e576e96198cbf3494964a765755b3d0ffc7f582523319b70736f0f0b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

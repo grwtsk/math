@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Panel.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Panel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Panel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Panel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `opaque` | [PanelWidgetProps](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Panel.lean/declarations/panelwidgetprops.md) | 19 | `declaration-track:246fd486932064248e50d61a6ea5befe9dae1f5ac60989ea2098334d0ff6310e` |
-| 2 | `def` | [processIdent](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Panel.lean/declarations/processident.md) | 21 | `declaration-track:81d9771f63265b4c77fa37d3654a2486b196dd28992e9b6d4fd5a187477eb56d` |
-| 3 | `syntax` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Panel.lean/declarations/syntax.md) | 43 | `declaration-track:19fd2da5c00287297842a4854d928b9fb093f83beb4b885c2821840b6c1a1b84` |
-| 4 | `def` | [withPanelWidgets](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Panel.lean/declarations/withpanelwidgets.md) | 46 | `declaration-track:9b3257ebbfbf3d183d31a93f101ae21742808c5336507816f4a13d3924799a98` |
+| 1 | `opaque` | [PanelWidgetProps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Panel.lean/declarations/panelwidgetprops.md) | 19 | `declaration-track:246fd486932064248e50d61a6ea5befe9dae1f5ac60989ea2098334d0ff6310e` |
+| 2 | `def` | [processIdent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Panel.lean/declarations/processident.md) | 21 | `declaration-track:81d9771f63265b4c77fa37d3654a2486b196dd28992e9b6d4fd5a187477eb56d` |
+| 3 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Panel.lean/declarations/syntax.md) | 43 | `declaration-track:19fd2da5c00287297842a4854d928b9fb093f83beb4b885c2821840b6c1a1b84` |
+| 4 | `def` | [withPanelWidgets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Panel.lean/declarations/withpanelwidgets.md) | 46 | `declaration-track:9b3257ebbfbf3d183d31a93f101ae21742808c5336507816f4a13d3924799a98` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

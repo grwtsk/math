@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryNamespaced.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IsPrimary](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryNamespaced.lean/declarations/isprimary.md) | 37 | `declaration-track:a49c65c36ce464f53dd20e8b6fbe7a27abf2dbcec108fa23277ce86e4cabc155` |
-| 2 | `lemma` | [isPrimary_iff](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryNamespaced.lean/declarations/isprimary-iff.md) | 41 | `result-track:dd8e52227bdb87147948638783f0594307b2dd9c1f66347ab558ce032a0e4cf8` |
-| 3 | `theorem` | [IsPrime.isPrimary](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryNamespaced.lean/declarations/isprime-isprimary.md) | 47 | `result-track:86e00a29a51cb75bd3c206e974fe00fb8e4b3e9001a9c5609ef740f0d34a3eff` |
-| 4 | `theorem` | [isPrime_radical](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryNamespaced.lean/declarations/isprime-radical.md) | 51 | `result-track:95d8e488b1e38c42c8c35fc22d19fffc92d8fb80f62c16b880d63868947f54d7` |
-| 5 | `theorem` | [isPrimary_inf](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryNamespaced.lean/declarations/isprimary-inf.md) | 58 | `result-track:64fe671117e04429a29019c2d5866d609542115f04cbc299e8e6468e51118fb2` |
-| 6 | `lemma` | [isPrimary_finset_inf](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryNamespaced.lean/declarations/isprimary-finset-inf.md) | 72 | `result-track:a804288dbd26e5f589afa8f1d56b48957855413baf9403e882c6bb5feec85d6c` |
+| 1 | `abbrev` | [IsPrimary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryNamespaced.lean/declarations/isprimary.md) | 37 | `declaration-track:a49c65c36ce464f53dd20e8b6fbe7a27abf2dbcec108fa23277ce86e4cabc155` |
+| 2 | `lemma` | [isPrimary_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryNamespaced.lean/declarations/isprimary-iff.md) | 41 | `result-track:dd8e52227bdb87147948638783f0594307b2dd9c1f66347ab558ce032a0e4cf8` |
+| 3 | `theorem` | [IsPrime.isPrimary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryNamespaced.lean/declarations/isprime-isprimary.md) | 47 | `result-track:86e00a29a51cb75bd3c206e974fe00fb8e4b3e9001a9c5609ef740f0d34a3eff` |
+| 4 | `theorem` | [isPrime_radical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryNamespaced.lean/declarations/isprime-radical.md) | 51 | `result-track:95d8e488b1e38c42c8c35fc22d19fffc92d8fb80f62c16b880d63868947f54d7` |
+| 5 | `theorem` | [isPrimary_inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryNamespaced.lean/declarations/isprimary-inf.md) | 58 | `result-track:64fe671117e04429a29019c2d5866d609542115f04cbc299e8e6468e51118fb2` |
+| 6 | `lemma` | [isPrimary_finset_inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryNamespaced.lean/declarations/isprimary-finset-inf.md) | 72 | `result-track:a804288dbd26e5f589afa8f1d56b48957855413baf9403e882c6bb5feec85d6c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SupportAligned.lean/index.md) · [Full source](../../../../RealFunctions/SupportAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SupportAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SupportAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [support_deriv_subset](../../../../RealFunctions/SupportAligned.lean/declarations/support-deriv-subset.md) | 38 | `result-track:26f8e41f028a37acd3e5920fdb234fc90cf14bdfb47df7e28c040887256d6440` |
-| 2 | `theorem` | [HasCompactSupport.deriv](../../../../RealFunctions/SupportAligned.lean/declarations/hascompactsupport-deriv.md) | 46 | `result-track:e5e2b62421999dea59b8a8da2d760e6769b1a66860b0e4770c42e8a45d7cedb9` |
+| 1 | `theorem` | [support_deriv_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SupportAligned.lean/declarations/support-deriv-subset.md) | 38 | `result-track:26f8e41f028a37acd3e5920fdb234fc90cf14bdfb47df7e28c040887256d6440` |
+| 2 | `theorem` | [HasCompactSupport.deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SupportAligned.lean/declarations/hascompactsupport-deriv.md) | 46 | `result-track:e5e2b62421999dea59b8a8da2d760e6769b1a66860b0e4770c42e8a45d7cedb9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

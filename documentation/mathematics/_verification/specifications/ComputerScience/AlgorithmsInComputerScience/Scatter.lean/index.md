@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Scatter.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Scatter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Scatter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Scatter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ScatterRole](../../../../../ComputerScience/AlgorithmsInComputerScience/Scatter.lean/declarations/scatterrole.md) | 5 | `declaration-track:92440274159f205fb0745aebaeca6c20e5733f83a53a524b6a641e3fcb3ee730` |
-| 2 | `structure` | [FormalSurface](../../../../../ComputerScience/AlgorithmsInComputerScience/Scatter.lean/declarations/formalsurface.md) | 13 | `declaration-track:6b507ad6fc0e2b5a23235c148a22a9fd3576a91f9999fa5c9d57070eb710a8d2` |
-| 3 | `structure` | [ProofAtom](../../../../../ComputerScience/AlgorithmsInComputerScience/Scatter.lean/declarations/proofatom.md) | 25 | `declaration-track:085524c7636705ad4b651709e6bf7315502100f4346f6416110ba727dbf0def5` |
-| 4 | `def` | [formalSurfaceAccepts](../../../../../ComputerScience/AlgorithmsInComputerScience/Scatter.lean/declarations/formalsurfaceaccepts.md) | 33 | `declaration-track:ae09747d2b4d94fc01ff7c8f8c66ad084c530f8bc2262e183d7116367f2d7a73` |
-| 5 | `def` | [rootSurface](../../../../../ComputerScience/AlgorithmsInComputerScience/Scatter.lean/declarations/rootsurface.md) | 36 | `declaration-track:1a02d719c58f163692da9e0fa2b5afcace9438a9a2796fc1dbb4d77eafa56178` |
-| 6 | `theorem` | [rootSurface_enabled](../../../../../ComputerScience/AlgorithmsInComputerScience/Scatter.lean/declarations/rootsurface-enabled.md) | 47 | `result-track:59118e4c3d493153625583586876cb1624f9cf25157ebecc803c437260837272` |
+| 1 | `inductive` | [ScatterRole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Scatter.lean/declarations/scatterrole.md) | 5 | `declaration-track:92440274159f205fb0745aebaeca6c20e5733f83a53a524b6a641e3fcb3ee730` |
+| 2 | `structure` | [FormalSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Scatter.lean/declarations/formalsurface.md) | 13 | `declaration-track:6b507ad6fc0e2b5a23235c148a22a9fd3576a91f9999fa5c9d57070eb710a8d2` |
+| 3 | `structure` | [ProofAtom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Scatter.lean/declarations/proofatom.md) | 25 | `declaration-track:085524c7636705ad4b651709e6bf7315502100f4346f6416110ba727dbf0def5` |
+| 4 | `def` | [formalSurfaceAccepts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Scatter.lean/declarations/formalsurfaceaccepts.md) | 33 | `declaration-track:ae09747d2b4d94fc01ff7c8f8c66ad084c530f8bc2262e183d7116367f2d7a73` |
+| 5 | `def` | [rootSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Scatter.lean/declarations/rootsurface.md) | 36 | `declaration-track:1a02d719c58f163692da9e0fa2b5afcace9438a9a2796fc1dbb4d77eafa56178` |
+| 6 | `theorem` | [rootSurface_enabled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Scatter.lean/declarations/rootsurface-enabled.md) | 47 | `result-track:59118e4c3d493153625583586876cb1624f9cf25157ebecc803c437260837272` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

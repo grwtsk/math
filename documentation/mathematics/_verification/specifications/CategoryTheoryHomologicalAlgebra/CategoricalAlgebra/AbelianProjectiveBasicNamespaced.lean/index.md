@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianProjectiveBasicNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianProjectiveBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianProjectiveBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianProjectiveBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [preservesHomology_preadditiveCoyonedaObj_of_projective](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianProjectiveBasicNamespaced.lean/declarations/preserveshomology-preadditivecoyonedaobj-of-projective.md) | 37 | `declaration-track:8869b5c5e2993a87181a8cf08f1e253be6926a52ef34e82985b4bda9ff9754b5` |
-| 2 | `instance` | [preservesFiniteColimits_preadditiveCoyonedaObj_of_projective](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianProjectiveBasicNamespaced.lean/declarations/preservesfinitecolimits-preadditivecoyonedaobj-of-projective.md) | 44 | `declaration-track:c49978aef4a390c080d55439e59bb739912aac851644896b0eca72b2f8fc135c` |
-| 3 | `theorem` | [projective_of_preservesFiniteColimits_preadditiveCoyonedaObj](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianProjectiveBasicNamespaced.lean/declarations/projective-of-preservesfinitecolimits-preadditivecoyonedaobj.md) | 50 | `result-track:08b5c066d1e9e458348dd35575949e0b39295e262d284fb7267f861e4cde6e10` |
+| 1 | `instance` | [preservesHomology_preadditiveCoyonedaObj_of_projective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianProjectiveBasicNamespaced.lean/declarations/preserveshomology-preadditivecoyonedaobj-of-projective.md) | 37 | `declaration-track:8869b5c5e2993a87181a8cf08f1e253be6926a52ef34e82985b4bda9ff9754b5` |
+| 2 | `instance` | [preservesFiniteColimits_preadditiveCoyonedaObj_of_projective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianProjectiveBasicNamespaced.lean/declarations/preservesfinitecolimits-preadditivecoyonedaobj-of-projective.md) | 44 | `declaration-track:c49978aef4a390c080d55439e59bb739912aac851644896b0eca72b2f8fc135c` |
+| 3 | `theorem` | [projective_of_preservesFiniteColimits_preadditiveCoyonedaObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianProjectiveBasicNamespaced.lean/declarations/projective-of-preservesfinitecolimits-preadditivecoyonedaobj.md) | 50 | `result-track:08b5c066d1e9e458348dd35575949e0b39295e262d284fb7267f861e4cde6e10` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

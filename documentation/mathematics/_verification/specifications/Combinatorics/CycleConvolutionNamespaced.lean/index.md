@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CycleConvolutionNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/CycleConvolutionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolutionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolutionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [CycleKernel](../../../../Combinatorics/CycleConvolutionNamespaced.lean/declarations/cyclekernel.md) | 28 | `declaration-track:eaf7f89fdd5024d746aadafd760cc88cb1aa961596706c9e8dd0f401b825c2b8` |
-| 2 | `def` | [cycleConvolution](../../../../Combinatorics/CycleConvolutionNamespaced.lean/declarations/cycleconvolution.md) | 33 | `declaration-track:650c2ba69ba43b46eb9c97cca78f916c1d3c3632665850ad64c9e903ddb20dae` |
-| 3 | `theorem` | [cycleConvolution_apply](../../../../Combinatorics/CycleConvolutionNamespaced.lean/declarations/cycleconvolution-apply.md) | 41 | `result-track:09d9883216bc4ae4e691a459512dfa5bfdca3089617b256d4941757d1e74df0c` |
-| 4 | `def` | [cycleConvolutionLinear](../../../../Combinatorics/CycleConvolutionNamespaced.lean/declarations/cycleconvolutionlinear.md) | 51 | `declaration-track:171480ea6725cf147b9431ad7864072a2458f60c65309396ae00a31c52c45e34` |
-| 5 | `theorem` | [cycleConvolutionLinear_apply](../../../../Combinatorics/CycleConvolutionNamespaced.lean/declarations/cycleconvolutionlinear-apply.md) | 73 | `result-track:38dc2ba8627ee4282d7a964c45c0807cdfffc277c7eecea9af1dbc175a8e1f5b` |
-| 6 | `theorem` | [cycleConvolution_add_kernel](../../../../Combinatorics/CycleConvolutionNamespaced.lean/declarations/cycleconvolution-add-kernel.md) | 82 | `result-track:c52c433d8ec16c7c0b76c75f09f038591c982f04186c36a16e16ae48eddfc4d2` |
-| 7 | `theorem` | [cycleConvolution_smul_kernel](../../../../Combinatorics/CycleConvolutionNamespaced.lean/declarations/cycleconvolution-smul-kernel.md) | 93 | `result-track:9b7e3fc2d7d08f51265a6fa67c4b5d6abce977e30a63cc3d871bf4cc8cbbd172` |
-| 8 | `def` | [identityCycleKernel](../../../../Combinatorics/CycleConvolutionNamespaced.lean/declarations/identitycyclekernel.md) | 111 | `declaration-track:a13b3741c92b324868b32c9096fda2a42618e0dc9b4899297b1167490697c65a` |
-| 9 | `theorem` | [cycleConvolution_identityKernel](../../../../Combinatorics/CycleConvolutionNamespaced.lean/declarations/cycleconvolution-identitykernel.md) | 115 | `result-track:e64d78e0cdee4c23b550c05badc20c209384fb0fd1f4b036b59b7e4a62d19802` |
+| 1 | `abbrev` | [CycleKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolutionNamespaced.lean/declarations/cyclekernel.md) | 28 | `declaration-track:eaf7f89fdd5024d746aadafd760cc88cb1aa961596706c9e8dd0f401b825c2b8` |
+| 2 | `def` | [cycleConvolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolutionNamespaced.lean/declarations/cycleconvolution.md) | 33 | `declaration-track:650c2ba69ba43b46eb9c97cca78f916c1d3c3632665850ad64c9e903ddb20dae` |
+| 3 | `theorem` | [cycleConvolution_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolutionNamespaced.lean/declarations/cycleconvolution-apply.md) | 41 | `result-track:09d9883216bc4ae4e691a459512dfa5bfdca3089617b256d4941757d1e74df0c` |
+| 4 | `def` | [cycleConvolutionLinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolutionNamespaced.lean/declarations/cycleconvolutionlinear.md) | 51 | `declaration-track:171480ea6725cf147b9431ad7864072a2458f60c65309396ae00a31c52c45e34` |
+| 5 | `theorem` | [cycleConvolutionLinear_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolutionNamespaced.lean/declarations/cycleconvolutionlinear-apply.md) | 73 | `result-track:38dc2ba8627ee4282d7a964c45c0807cdfffc277c7eecea9af1dbc175a8e1f5b` |
+| 6 | `theorem` | [cycleConvolution_add_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolutionNamespaced.lean/declarations/cycleconvolution-add-kernel.md) | 82 | `result-track:c52c433d8ec16c7c0b76c75f09f038591c982f04186c36a16e16ae48eddfc4d2` |
+| 7 | `theorem` | [cycleConvolution_smul_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolutionNamespaced.lean/declarations/cycleconvolution-smul-kernel.md) | 93 | `result-track:9b7e3fc2d7d08f51265a6fa67c4b5d6abce977e30a63cc3d871bf4cc8cbbd172` |
+| 8 | `def` | [identityCycleKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolutionNamespaced.lean/declarations/identitycyclekernel.md) | 111 | `declaration-track:a13b3741c92b324868b32c9096fda2a42618e0dc9b4899297b1167490697c65a` |
+| 9 | `theorem` | [cycleConvolution_identityKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolutionNamespaced.lean/declarations/cycleconvolution-identitykernel.md) | 115 | `result-track:e64d78e0cdee4c23b550c05badc20c209384fb0fd1f4b036b59b7e4a62d19802` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/RationalPowerControls.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/RationalPowerControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.RationalPowerEvaluation`](../../../../FunctionsOfAComplexVariable/RationalPowerEvaluation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalPowerEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerEvaluation.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [negative_component](../../../../FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/negative-component.md) | 17 | `result-track:d480a3fb7781223dfc4053f119d0b3bf8fbf0fac2636ce0f666d5b9994ed5eeb` |
-| 2 | `theorem` | [upward_negative_component](../../../../FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/upward-negative-component.md) | 20 | `result-track:a7f1dde42a66e496c802d47806870144b9184bae3a8aec63187be5f59816148c` |
-| 3 | `theorem` | [both_components_needed](../../../../FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/both-components-needed.md) | 23 | `result-track:46d7dd46b8d8ae32a6cd09424f77a14d29c8f2e6239b8f118c8780e11cb248a4` |
-| 4 | `theorem` | [zero_squarings_rounds_seed](../../../../FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/zero-squarings-rounds-seed.md) | 25 | `result-track:be6f8eb96b71c884a0f9865654797ee1ad24069dc12300363bc61e17ebd9f071` |
-| 5 | `theorem` | [upward_error_storage](../../../../FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/upward-error-storage.md) | 29 | `result-track:8b734f2cfb947bb13954289cf477a5a38a5147baab73e00e5176d865c3f67fbd` |
-| 6 | `theorem` | [quadratic_error_not_optional](../../../../FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/quadratic-error-not-optional.md) | 33 | `result-track:36a48e1079da939a99635e3f7c447c17ac58ca92e336d5c2240de65c17368cb2` |
-| 7 | `theorem` | [zero_degree_rejected](../../../../FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/zero-degree-rejected.md) | 36 | `result-track:f482b744d887e73ae12b768c76dcdd48ba6e2c0023a9cd5359c3c275c37a2e81` |
-| 8 | `theorem` | [invalid_mantissa_rejected](../../../../FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/invalid-mantissa-rejected.md) | 44 | `result-track:bc4bc99ac9dc8f5f804410a27860779b6d26c9bbb536e74e90fce467cb0b8556` |
-| 9 | `theorem` | [excessive_radius_rejected](../../../../FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/excessive-radius-rejected.md) | 50 | `result-track:9bc37fb60bb5a8c3a93e4af141a9c7ba79b2dcada28e0198e0f96eca4a983834` |
-| 10 | `theorem` | [empty_search](../../../../FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/empty-search.md) | 55 | `result-track:adc3747026a2faad6603ef51966b4ce8af2fa50c7f0200c70aa13d84bc24061d` |
-| 11 | `theorem` | [equal_tolerance_passes](../../../../FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/equal-tolerance-passes.md) | 59 | `result-track:a3162c0e2b2e16a831cd69efb67f644ccc545ad248d95f408a6324131f4a2580` |
-| 12 | `theorem` | [forged_output_rejected](../../../../FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/forged-output-rejected.md) | 65 | `result-track:c614fa8e465c2afe8e9a86c72ddd4107bdef4d7b147a5f8abd784450ad788d04` |
+| 1 | `theorem` | [negative_component](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/negative-component.md) | 17 | `result-track:d480a3fb7781223dfc4053f119d0b3bf8fbf0fac2636ce0f666d5b9994ed5eeb` |
+| 2 | `theorem` | [upward_negative_component](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/upward-negative-component.md) | 20 | `result-track:a7f1dde42a66e496c802d47806870144b9184bae3a8aec63187be5f59816148c` |
+| 3 | `theorem` | [both_components_needed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/both-components-needed.md) | 23 | `result-track:46d7dd46b8d8ae32a6cd09424f77a14d29c8f2e6239b8f118c8780e11cb248a4` |
+| 4 | `theorem` | [zero_squarings_rounds_seed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/zero-squarings-rounds-seed.md) | 25 | `result-track:be6f8eb96b71c884a0f9865654797ee1ad24069dc12300363bc61e17ebd9f071` |
+| 5 | `theorem` | [upward_error_storage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/upward-error-storage.md) | 29 | `result-track:8b734f2cfb947bb13954289cf477a5a38a5147baab73e00e5176d865c3f67fbd` |
+| 6 | `theorem` | [quadratic_error_not_optional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/quadratic-error-not-optional.md) | 33 | `result-track:36a48e1079da939a99635e3f7c447c17ac58ca92e336d5c2240de65c17368cb2` |
+| 7 | `theorem` | [zero_degree_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/zero-degree-rejected.md) | 36 | `result-track:f482b744d887e73ae12b768c76dcdd48ba6e2c0023a9cd5359c3c275c37a2e81` |
+| 8 | `theorem` | [invalid_mantissa_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/invalid-mantissa-rejected.md) | 44 | `result-track:bc4bc99ac9dc8f5f804410a27860779b6d26c9bbb536e74e90fce467cb0b8556` |
+| 9 | `theorem` | [excessive_radius_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/excessive-radius-rejected.md) | 50 | `result-track:9bc37fb60bb5a8c3a93e4af141a9c7ba79b2dcada28e0198e0f96eca4a983834` |
+| 10 | `theorem` | [empty_search](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/empty-search.md) | 55 | `result-track:adc3747026a2faad6603ef51966b4ce8af2fa50c7f0200c70aa13d84bc24061d` |
+| 11 | `theorem` | [equal_tolerance_passes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/equal-tolerance-passes.md) | 59 | `result-track:a3162c0e2b2e16a831cd69efb67f644ccc545ad248d95f408a6324131f4a2580` |
+| 12 | `theorem` | [forged_output_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerControls.lean/declarations/forged-output-rejected.md) | 65 | `result-track:c614fa8e465c2afe8e9a86c72ddd4107bdef4d7b147a5f8abd784450ad788d04` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

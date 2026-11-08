@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LaurentRankOneBar.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LaurentRankOneBar.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LaurentRankOneBar.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LaurentRankOneBar.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.Hecke.RankOneBarCoordinates`](../../../../../CommutativeAlgebra/RankOneBarCoordinates.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.Hecke.RankOneBarCoordinates`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankOneBarCoordinates.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.Algebra.Polynomial.Laurent` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [laurentRankOneBar](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LaurentRankOneBar.lean/declarations/laurentrankonebar.md) | 10 | `declaration-track:b87654f4fe8c1c6b80c5a6b0bd169a7406072957375ec36e0e8db48d5ff7147c` |
-| 2 | `theorem` | [laurentRankOneBar_involutive](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LaurentRankOneBar.lean/declarations/laurentrankonebar-involutive.md) | 15 | `result-track:92abe40750e4c71444843bcd42fde007154e4e814b6cbbecdfffaa62cf9b0e53` |
-| 3 | `theorem` | [laurentRankOneBar_mul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LaurentRankOneBar.lean/declarations/laurentrankonebar-mul.md) | 23 | `result-track:01fe7d24784e02cc353ef987a25387ce9d5cef85c090899d9fef432daf0faff8` |
-| 4 | `theorem` | [laurentRankOneBar_normalized_fixed](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LaurentRankOneBar.lean/declarations/laurentrankonebar-normalized-fixed.md) | 32 | `result-track:18a4449fb4e95ed0540f7b4fdd8b95d7e545ade5e1f8080eabf96745a7179eac` |
-| 5 | `theorem` | [laurentRankOne_normalized_existsUnique](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LaurentRankOneBar.lean/declarations/laurentrankone-normalized-existsunique.md) | 41 | `result-track:c55bb4d1454565d72ab7a5ea582c79272a862506ad5e984256b99f39079919f3` |
+| 1 | `def` | [laurentRankOneBar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LaurentRankOneBar.lean/declarations/laurentrankonebar.md) | 10 | `declaration-track:b87654f4fe8c1c6b80c5a6b0bd169a7406072957375ec36e0e8db48d5ff7147c` |
+| 2 | `theorem` | [laurentRankOneBar_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LaurentRankOneBar.lean/declarations/laurentrankonebar-involutive.md) | 15 | `result-track:92abe40750e4c71444843bcd42fde007154e4e814b6cbbecdfffaa62cf9b0e53` |
+| 3 | `theorem` | [laurentRankOneBar_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LaurentRankOneBar.lean/declarations/laurentrankonebar-mul.md) | 23 | `result-track:01fe7d24784e02cc353ef987a25387ce9d5cef85c090899d9fef432daf0faff8` |
+| 4 | `theorem` | [laurentRankOneBar_normalized_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LaurentRankOneBar.lean/declarations/laurentrankonebar-normalized-fixed.md) | 32 | `result-track:18a4449fb4e95ed0540f7b4fdd8b95d7e545ade5e1f8080eabf96745a7179eac` |
+| 5 | `theorem` | [laurentRankOne_normalized_existsUnique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LaurentRankOneBar.lean/declarations/laurentrankone-normalized-existsunique.md) | 41 | `result-track:c55bb4d1454565d72ab7a5ea582c79272a862506ad5e984256b99f39079919f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandBernstein.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandBernstein.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandBernstein.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandBernstein.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSixteenBandEnclosure`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandEnclosure.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSixteenBandEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandEnclosure.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coefficients](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandBernstein.lean/declarations/coefficients.md) | 20 | `declaration-track:19c6c9de694b2025beeb9e4bad426e5833fa4b283697e61e7702351504c51e1b` |
-| 2 | `def` | [basis](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandBernstein.lean/declarations/basis.md) | 23 | `declaration-track:c46c58ef65995744dbc0fa292bf11d9125e2d33e976afbe288323b2235141e98` |
-| 3 | `def` | [value](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandBernstein.lean/declarations/value.md) | 24 | `declaration-track:8b2034f25337f19416b753ef42733a395875efe8f474f9a0afc5a5ee04be5e82` |
-| 4 | `lemma` | [value_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandBernstein.lean/declarations/value-nonneg.md) | 27 | `result-track:ae7735badb531449325c7f051b3ea80f666afe9a926c042862685da8e2d47427` |
-| 5 | `theorem` | [tensor_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandBernstein.lean/declarations/tensor-identity.md) | 39 | `result-track:a4adade0522c24e45fc1fa43e55f572d60b2479559ba9737eec8b9650691df85` |
-| 6 | `theorem` | [polynomial_projection](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandBernstein.lean/declarations/polynomial-projection.md) | 46 | `result-track:6a761fb2c642880fa34528fdc28a6beef22423aac136db6ed6977c70af603782` |
-| 7 | `theorem` | [projection_failure_below_band](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandBernstein.lean/declarations/projection-failure-below-band.md) | 57 | `result-track:14943d5c03ac9ece686dbd4e9e8c3852b8b5a5cf917e8a906c45c84bd0bda8eb` |
+| 1 | `def` | [coefficients](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandBernstein.lean/declarations/coefficients.md) | 20 | `declaration-track:19c6c9de694b2025beeb9e4bad426e5833fa4b283697e61e7702351504c51e1b` |
+| 2 | `def` | [basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandBernstein.lean/declarations/basis.md) | 23 | `declaration-track:c46c58ef65995744dbc0fa292bf11d9125e2d33e976afbe288323b2235141e98` |
+| 3 | `def` | [value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandBernstein.lean/declarations/value.md) | 24 | `declaration-track:8b2034f25337f19416b753ef42733a395875efe8f474f9a0afc5a5ee04be5e82` |
+| 4 | `lemma` | [value_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandBernstein.lean/declarations/value-nonneg.md) | 27 | `result-track:ae7735badb531449325c7f051b3ea80f666afe9a926c042862685da8e2d47427` |
+| 5 | `theorem` | [tensor_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandBernstein.lean/declarations/tensor-identity.md) | 39 | `result-track:a4adade0522c24e45fc1fa43e55f572d60b2479559ba9737eec8b9650691df85` |
+| 6 | `theorem` | [polynomial_projection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandBernstein.lean/declarations/polynomial-projection.md) | 46 | `result-track:6a761fb2c642880fa34528fdc28a6beef22423aac136db6ed6977c70af603782` |
+| 7 | `theorem` | [projection_failure_below_band](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSixteenBandBernstein.lean/declarations/projection-failure-below-band.md) | 57 | `result-track:14943d5c03ac9ece686dbd4e9e8c3852b8b5a5cf917e8a906c45c84bd0bda8eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

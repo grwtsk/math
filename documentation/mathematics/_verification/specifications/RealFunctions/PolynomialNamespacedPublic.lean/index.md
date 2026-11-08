@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/PolynomialNamespacedPublic.lean/index.md) · [Full source](../../../../RealFunctions/PolynomialNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PolynomialNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PolynomialNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [logDeriv_exp_eval](../../../../RealFunctions/PolynomialNamespacedPublic.lean/declarations/logderiv-exp-eval.md) | 28 | `result-track:7f984bb3250610196213146d003c890be72ca965f211ae0fc66f27f3e93bd187` |
+| 1 | `theorem` | [logDeriv_exp_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PolynomialNamespacedPublic.lean/declarations/logderiv-exp-eval.md) | 28 | `result-track:7f984bb3250610196213146d003c890be72ca965f211ae0fc66f27f3e93bd187` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

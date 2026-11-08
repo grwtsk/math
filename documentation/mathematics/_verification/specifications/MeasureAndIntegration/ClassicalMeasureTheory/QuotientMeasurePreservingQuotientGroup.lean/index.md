@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/QuotientMeasurePreservingQuotientGroup.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/QuotientMeasurePreservingQuotientGroup.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/QuotientMeasurePreservingQuotientGroup.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/QuotientMeasurePreservingQuotientGroup.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [QuotientGroup.measurableSMul](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/QuotientMeasurePreservingQuotientGroup.lean/declarations/quotientgroup-measurablesmul.md) | 45 | `declaration-track:baf8d91616b456aca224b0c656ad00611a87cd26376b8d9dbcb8ffcf156e6b68` |
-| 2 | `theorem` | [MeasureTheory.IsFundamentalDomain.smulInvariantMeasure_map](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/QuotientMeasurePreservingQuotientGroup.lean/declarations/smulinvariantmeasure-map.md) | 61 | `result-track:81e9734d76911b7c6e089262abca358cc97d6190e175e93aefd9cc2d6de688f0` |
-| 3 | `theorem` | [MeasureTheory.IsFundamentalDomain.isMulLeftInvariant_map](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/QuotientMeasurePreservingQuotientGroup.lean/declarations/ismulleftinvariant-map.md) | 100 | `result-track:6da1bf0b501d3157cec6e64941ca411a7d7c05e4811cae04b8b4a4e74c0bc808` |
-| 4 | `theorem` | [MeasureTheory.IsFundamentalDomain.map_restrict_quotient](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/QuotientMeasurePreservingQuotientGroup.lean/declarations/measuretheory-isfundamentaldomain-map-restrict-quotient.md) | 125 | `result-track:fa303ac151c30281d8c83e6a6b029376fb554f6b7941808da3a4abd1be5a25de` |
-| 5 | `theorem` | [MeasurePreservingQuotientGroup.mk'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/QuotientMeasurePreservingQuotientGroup.lean/declarations/measurepreservingquotientgroup-mk.md) | 150 | `result-track:5c9fc7b200e087b9abeda5b3baef37fdc12182e7d806c3a4d4442c9e6b4a1851` |
+| 1 | `instance` | [QuotientGroup.measurableSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/QuotientMeasurePreservingQuotientGroup.lean/declarations/quotientgroup-measurablesmul.md) | 45 | `declaration-track:baf8d91616b456aca224b0c656ad00611a87cd26376b8d9dbcb8ffcf156e6b68` |
+| 2 | `theorem` | [MeasureTheory.IsFundamentalDomain.smulInvariantMeasure_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/QuotientMeasurePreservingQuotientGroup.lean/declarations/smulinvariantmeasure-map.md) | 61 | `result-track:81e9734d76911b7c6e089262abca358cc97d6190e175e93aefd9cc2d6de688f0` |
+| 3 | `theorem` | [MeasureTheory.IsFundamentalDomain.isMulLeftInvariant_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/QuotientMeasurePreservingQuotientGroup.lean/declarations/ismulleftinvariant-map.md) | 100 | `result-track:6da1bf0b501d3157cec6e64941ca411a7d7c05e4811cae04b8b4a4e74c0bc808` |
+| 4 | `theorem` | [MeasureTheory.IsFundamentalDomain.map_restrict_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/QuotientMeasurePreservingQuotientGroup.lean/declarations/measuretheory-isfundamentaldomain-map-restrict-quotient.md) | 125 | `result-track:fa303ac151c30281d8c83e6a6b029376fb554f6b7941808da3a4abd1be5a25de` |
+| 5 | `theorem` | [MeasurePreservingQuotientGroup.mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/QuotientMeasurePreservingQuotientGroup.lean/declarations/measurepreservingquotientgroup-mk.md) | 150 | `result-track:5c9fc7b200e087b9abeda5b3baef37fdc12182e7d806c3a4d4442c9e6b4a1851` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

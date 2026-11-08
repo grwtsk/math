@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/KrullDimension.lean/index.md) · [Full source](../../../../GeneralTopology/KrullDimension.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KrullDimension.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KrullDimension.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [topologicalKrullDim](../../../../GeneralTopology/KrullDimension.lean/declarations/topologicalkrulldim.md) | 24 | `declaration-track:7250669e202ff7f3cfe4e1755ff5f02cc3d2015da0ea97077d5fe86a121e0e58` |
-| 2 | `def` | [IrreducibleCloseds.map](../../../../GeneralTopology/KrullDimension.lean/declarations/irreduciblecloseds-map.md) | 34 | `declaration-track:1b55cca51090721f396102ef8e14012a0ddb8110a88f1fc17d5b2e10c7322f5c` |
-| 3 | `lemma` | [IrreducibleCloseds.map_strictMono](../../../../GeneralTopology/KrullDimension.lean/declarations/irreduciblecloseds-map-strictmono.md) | 44 | `result-track:fe924aeca9ea58303d5debdee4987f40f9d15dccac8b730cf6e675b51d317789` |
-| 4 | `theorem` | [IsClosedEmbedding.topologicalKrullDim_le](../../../../GeneralTopology/KrullDimension.lean/declarations/isclosedembedding-topologicalkrulldim-le.md) | 52 | `result-track:b03993d610c2504563513b71c95a7dc6f0bfb13e9b395f1b32340f18a6d092c4` |
-| 5 | `theorem` | [IsHomeomorph.topologicalKrullDim_eq](../../../../GeneralTopology/KrullDimension.lean/declarations/ishomeomorph-topologicalkrulldim-eq.md) | 57 | `result-track:d0215a4a2dc16c3c68d6287dcc65a9b137590a18da977e275d287c01d5b612e2` |
+| 1 | `def` | [topologicalKrullDim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KrullDimension.lean/declarations/topologicalkrulldim.md) | 24 | `declaration-track:7250669e202ff7f3cfe4e1755ff5f02cc3d2015da0ea97077d5fe86a121e0e58` |
+| 2 | `def` | [IrreducibleCloseds.map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KrullDimension.lean/declarations/irreduciblecloseds-map.md) | 34 | `declaration-track:1b55cca51090721f396102ef8e14012a0ddb8110a88f1fc17d5b2e10c7322f5c` |
+| 3 | `lemma` | [IrreducibleCloseds.map_strictMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KrullDimension.lean/declarations/irreduciblecloseds-map-strictmono.md) | 44 | `result-track:fe924aeca9ea58303d5debdee4987f40f9d15dccac8b730cf6e675b51d317789` |
+| 4 | `theorem` | [IsClosedEmbedding.topologicalKrullDim_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KrullDimension.lean/declarations/isclosedembedding-topologicalkrulldim-le.md) | 52 | `result-track:b03993d610c2504563513b71c95a7dc6f0bfb13e9b395f1b32340f18a6d092c4` |
+| 5 | `theorem` | [IsHomeomorph.topologicalKrullDim_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KrullDimension.lean/declarations/ishomeomorph-topologicalkrulldim-eq.md) | 57 | `result-track:d0215a4a2dc16c3c68d6287dcc65a9b137590a18da977e275d287c01d5b612e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

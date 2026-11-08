@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/MellinInversion.lean/index.md) · [Full source](../../../../FunctionalAnalysis/MellinInversion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MellinInversion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MellinInversion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rexp_neg_deriv_aux](../../../../FunctionalAnalysis/MellinInversion.lean/declarations/rexp-neg-deriv-aux.md) | 24 | `result-track:167ed6ab4d7b7154c818b836fabb0eaa4e7b490d09f34cc2f5b4df16e09324a0` |
-| 2 | `theorem` | [rexp_neg_image_aux](../../../../FunctionalAnalysis/MellinInversion.lean/declarations/rexp-neg-image-aux.md) | 29 | `result-track:848a944d0724176cd42e0c652f44a6a28510d2872c663ff3aa199e1935c5ee5a` |
-| 3 | `theorem` | [rexp_neg_injOn_aux](../../../../FunctionalAnalysis/MellinInversion.lean/declarations/rexp-neg-injon-aux.md) | 32 | `result-track:fa1e6c4fef771919122adce9635d7f462ffbcd4688f39d947607957e010c8bb4` |
-| 4 | `theorem` | [rexp_cexp_aux](../../../../FunctionalAnalysis/MellinInversion.lean/declarations/rexp-cexp-aux.md) | 35 | `result-track:3ea504c9fca4e45be80f922a43a91307e0c189d3309e694540c17fba8f8fcdf8` |
-| 5 | `theorem` | [mellin_eq_fourierIntegral](../../../../FunctionalAnalysis/MellinInversion.lean/declarations/mellin-eq-fourierintegral.md) | 45 | `result-track:425bd3494530771bcc4e892a9f4ad5164039503d7b8aa6b835d8b5127b375000` |
-| 6 | `theorem` | [mellinInv_eq_fourierIntegralInv](../../../../FunctionalAnalysis/MellinInversion.lean/declarations/mellininv-eq-fourierintegralinv.md) | 70 | `result-track:64e70cbdf0319759b98d21899d70f4d1b1ebcf857f1b6eebf6dac5ed61617314` |
-| 7 | `theorem` | [mellin_inversion](../../../../FunctionalAnalysis/MellinInversion.lean/declarations/mellin-inversion.md) | 90 | `result-track:499ef288b211f3a2b23a6046e97412f076a905938a8e401b4f713fc190fe8ca8` |
+| 1 | `theorem` | [rexp_neg_deriv_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MellinInversion.lean/declarations/rexp-neg-deriv-aux.md) | 24 | `result-track:167ed6ab4d7b7154c818b836fabb0eaa4e7b490d09f34cc2f5b4df16e09324a0` |
+| 2 | `theorem` | [rexp_neg_image_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MellinInversion.lean/declarations/rexp-neg-image-aux.md) | 29 | `result-track:848a944d0724176cd42e0c652f44a6a28510d2872c663ff3aa199e1935c5ee5a` |
+| 3 | `theorem` | [rexp_neg_injOn_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MellinInversion.lean/declarations/rexp-neg-injon-aux.md) | 32 | `result-track:fa1e6c4fef771919122adce9635d7f462ffbcd4688f39d947607957e010c8bb4` |
+| 4 | `theorem` | [rexp_cexp_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MellinInversion.lean/declarations/rexp-cexp-aux.md) | 35 | `result-track:3ea504c9fca4e45be80f922a43a91307e0c189d3309e694540c17fba8f8fcdf8` |
+| 5 | `theorem` | [mellin_eq_fourierIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MellinInversion.lean/declarations/mellin-eq-fourierintegral.md) | 45 | `result-track:425bd3494530771bcc4e892a9f4ad5164039503d7b8aa6b835d8b5127b375000` |
+| 6 | `theorem` | [mellinInv_eq_fourierIntegralInv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MellinInversion.lean/declarations/mellininv-eq-fourierintegralinv.md) | 70 | `result-track:64e70cbdf0319759b98d21899d70f4d1b1ebcf857f1b6eebf6dac5ed61617314` |
+| 7 | `theorem` | [mellin_inversion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MellinInversion.lean/declarations/mellin-inversion.md) | 90 | `result-track:499ef288b211f3a2b23a6046e97412f076a905938a8e401b4f713fc190fe8ca8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

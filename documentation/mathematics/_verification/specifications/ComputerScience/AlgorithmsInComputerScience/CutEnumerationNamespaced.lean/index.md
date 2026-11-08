@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CutEnumerationNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CutEnumerationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CutEnumerationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CutEnumerationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CutEnumeration](../../../../../ComputerScience/AlgorithmsInComputerScience/CutEnumerationNamespaced.lean/declarations/cutenumeration.md) | 20 | `declaration-track:42831f0ec0141197783b55de6e75b130990c364386f6376c41eeedbec62e2590` |
-| 2 | `def` | [CutEnumeration.prefixCut](../../../../../ComputerScience/AlgorithmsInComputerScience/CutEnumerationNamespaced.lean/declarations/cutenumeration-prefixcut.md) | 31 | `declaration-track:87b77dffacbcf877b3925a07381101fbbb12b483ee2194a7fe5e8ecd57e9ef05` |
-| 3 | `theorem` | [CutEnumeration.prefixCut_zero](../../../../../ComputerScience/AlgorithmsInComputerScience/CutEnumerationNamespaced.lean/declarations/cutenumeration-prefixcut-zero.md) | 40 | `result-track:064e15843aab2afc283790061f3fdfba0635e3522435773105614c6fb7984e7f` |
-| 4 | `theorem` | [CutEnumeration.prefixCut_length](../../../../../ComputerScience/AlgorithmsInComputerScience/CutEnumerationNamespaced.lean/declarations/cutenumeration-prefixcut-length.md) | 48 | `result-track:922dede735db3d5e0fc981f5e70cbb0def3a5c68d31e00310e60fb373099bf10` |
+| 1 | `structure` | [CutEnumeration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CutEnumerationNamespaced.lean/declarations/cutenumeration.md) | 20 | `declaration-track:42831f0ec0141197783b55de6e75b130990c364386f6376c41eeedbec62e2590` |
+| 2 | `def` | [CutEnumeration.prefixCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CutEnumerationNamespaced.lean/declarations/cutenumeration-prefixcut.md) | 31 | `declaration-track:87b77dffacbcf877b3925a07381101fbbb12b483ee2194a7fe5e8ecd57e9ef05` |
+| 3 | `theorem` | [CutEnumeration.prefixCut_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CutEnumerationNamespaced.lean/declarations/cutenumeration-prefixcut-zero.md) | 40 | `result-track:064e15843aab2afc283790061f3fdfba0635e3522435773105614c6fb7984e7f` |
+| 4 | `theorem` | [CutEnumeration.prefixCut_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CutEnumerationNamespaced.lean/declarations/cutenumeration-prefixcut-length.md) | 48 | `result-track:922dede735db3d5e0fc981f5e70cbb0def3a5c68d31e00310e60fb373099bf10` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

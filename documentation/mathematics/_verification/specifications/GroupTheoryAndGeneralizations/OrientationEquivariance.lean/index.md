@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/OrientationEquivariance.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/OrientationEquivariance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrientationEquivariance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrientationEquivariance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OrientationEquivariance](../../../../GroupTheoryAndGeneralizations/OrientationEquivariance.lean/declarations/orientationequivariance.md) | 16 | `declaration-track:68c214af87b0b43eb6cb9ded72d06437b38e726a1b6d1283ebbf3b4c7a367ac4` |
-| 2 | `theorem` | [equalDepthIndex_invariant](../../../../GroupTheoryAndGeneralizations/OrientationEquivariance.lean/declarations/equaldepthindex-invariant.md) | 57 | `result-track:fec96a81eaddad09ef44b97644236614e9ae53af2ad44d66741452c704a90984` |
-| 3 | `theorem` | [selfDelimitingIndex_invariant](../../../../GroupTheoryAndGeneralizations/OrientationEquivariance.lean/declarations/selfdelimitingindex-invariant.md) | 80 | `result-track:768a4eee70770d9fc8b9680b317496ecd8f665984724c58441edd2f09303b18d` |
+| 1 | `structure` | [OrientationEquivariance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrientationEquivariance.lean/declarations/orientationequivariance.md) | 16 | `declaration-track:68c214af87b0b43eb6cb9ded72d06437b38e726a1b6d1283ebbf3b4c7a367ac4` |
+| 2 | `theorem` | [equalDepthIndex_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrientationEquivariance.lean/declarations/equaldepthindex-invariant.md) | 57 | `result-track:fec96a81eaddad09ef44b97644236614e9ae53af2ad44d66741452c704a90984` |
+| 3 | `theorem` | [selfDelimitingIndex_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrientationEquivariance.lean/declarations/selfdelimitingindex-invariant.md) | 80 | `result-track:768a4eee70770d9fc8b9680b317496ecd8f665984724c58441edd2f09303b18d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

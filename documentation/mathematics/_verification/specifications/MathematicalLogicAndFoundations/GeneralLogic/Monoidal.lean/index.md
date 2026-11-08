@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Monoidal.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Monoidal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Monoidal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Monoidal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MonoidalInformationReceipt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Monoidal.lean/declarations/monoidalinformationreceipt.md) | 13 | `declaration-track:327c053fcfeed4eb454794166e31c125d3d7ad4e3614f41fcb8073b7a99d6bb9` |
-| 2 | `def` | [MonoidalInformationReceipt.accepted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Monoidal.lean/declarations/monoidalinformationreceipt-accepted.md) | 25 | `declaration-track:a17720c57929a83636ed089d629d662284a90d3617801c76bf1d3c8bd6bac2e8` |
-| 3 | `def` | [MonoidalInformationReceipt.fastCheck](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Monoidal.lean/declarations/monoidalinformationreceipt-fastcheck.md) | 29 | `declaration-track:4e6c6dcc215a1698f2bd87108d630cd3c5c2dbb5567b9d4440cbff8bd848d614` |
-| 4 | `theorem` | [MonoidalInformationReceipt.no_tensor_equality_if_accepted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Monoidal.lean/declarations/monoidalinformationreceipt-no-tensor-equality-if-accepted.md) | 33 | `result-track:3a9bc1c70ce0faa3660f3a2c8e83fff9f0fcf65433312239bb06f5412f59d876` |
-| 5 | `def` | [MonoidalInformationReceipt.associatorIso](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Monoidal.lean/declarations/monoidalinformationreceipt-associatoriso.md) | 41 | `declaration-track:915b5d5a42bb162c89984544d25ef0a6f257a0552aa24cb1736b520822e401d9` |
-| 6 | `theorem` | [MonoidalInformationReceipt.unit_coherence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Monoidal.lean/declarations/monoidalinformationreceipt-unit-coherence.md) | 49 | `result-track:f227e27a9ba26c9e8575badabc0a00d63c528edd3a2737209fb5c934932ebdbf` |
-| 7 | `theorem` | [MonoidalInformationReceipt.receipt_is_not_structure](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Monoidal.lean/declarations/monoidalinformationreceipt-receipt-is-not-structure.md) | 57 | `result-track:36d4d8a9e846da20185804a517089697be8136676e9ecff8031e57fab82eb485` |
+| 1 | `structure` | [MonoidalInformationReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Monoidal.lean/declarations/monoidalinformationreceipt.md) | 13 | `declaration-track:327c053fcfeed4eb454794166e31c125d3d7ad4e3614f41fcb8073b7a99d6bb9` |
+| 2 | `def` | [MonoidalInformationReceipt.accepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Monoidal.lean/declarations/monoidalinformationreceipt-accepted.md) | 25 | `declaration-track:a17720c57929a83636ed089d629d662284a90d3617801c76bf1d3c8bd6bac2e8` |
+| 3 | `def` | [MonoidalInformationReceipt.fastCheck](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Monoidal.lean/declarations/monoidalinformationreceipt-fastcheck.md) | 29 | `declaration-track:4e6c6dcc215a1698f2bd87108d630cd3c5c2dbb5567b9d4440cbff8bd848d614` |
+| 4 | `theorem` | [MonoidalInformationReceipt.no_tensor_equality_if_accepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Monoidal.lean/declarations/monoidalinformationreceipt-no-tensor-equality-if-accepted.md) | 33 | `result-track:3a9bc1c70ce0faa3660f3a2c8e83fff9f0fcf65433312239bb06f5412f59d876` |
+| 5 | `def` | [MonoidalInformationReceipt.associatorIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Monoidal.lean/declarations/monoidalinformationreceipt-associatoriso.md) | 41 | `declaration-track:915b5d5a42bb162c89984544d25ef0a6f257a0552aa24cb1736b520822e401d9` |
+| 6 | `theorem` | [MonoidalInformationReceipt.unit_coherence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Monoidal.lean/declarations/monoidalinformationreceipt-unit-coherence.md) | 49 | `result-track:f227e27a9ba26c9e8575badabc0a00d63c528edd3a2737209fb5c934932ebdbf` |
+| 7 | `theorem` | [MonoidalInformationReceipt.receipt_is_not_structure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Monoidal.lean/declarations/monoidalinformationreceipt-receipt-is-not-structure.md) | 57 | `result-track:36d4d8a9e846da20185804a517089697be8136676e9ecff8031e57fab82eb485` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

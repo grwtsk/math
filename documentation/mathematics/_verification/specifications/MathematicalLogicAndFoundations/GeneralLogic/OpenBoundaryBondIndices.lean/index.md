@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpenBoundaryBondIndices.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpenBoundaryBondIndices.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpenBoundaryBondIndices.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpenBoundaryBondIndices.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BondProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpenBoundaryBondIndices.lean/declarations/bondprofile.md) | 27 | `declaration-track:5d5785d8518a034174d2a65868a884337a316ea346039ff95d1f47ca70c5168b` |
-| 2 | `def` | [BondProfile.UniformlyBounded](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpenBoundaryBondIndices.lean/declarations/bondprofile-uniformlybounded.md) | 36 | `declaration-track:d7a3fd31002eda18650e17877da74576c10d6abed4fe545d3eac60f55c3f098c` |
-| 3 | `abbrev` | [VirtualConfiguration](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpenBoundaryBondIndices.lean/declarations/virtualconfiguration.md) | 43 | `declaration-track:8617c1b7c6f83823b9c332c9f0b4616b8593535e688deb95748cc74e9c34a4d3` |
+| 1 | `structure` | [BondProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpenBoundaryBondIndices.lean/declarations/bondprofile.md) | 27 | `declaration-track:5d5785d8518a034174d2a65868a884337a316ea346039ff95d1f47ca70c5168b` |
+| 2 | `def` | [BondProfile.UniformlyBounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpenBoundaryBondIndices.lean/declarations/bondprofile-uniformlybounded.md) | 36 | `declaration-track:d7a3fd31002eda18650e17877da74576c10d6abed4fe545d3eac60f55c3f098c` |
+| 3 | `abbrev` | [VirtualConfiguration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpenBoundaryBondIndices.lean/declarations/virtualconfiguration.md) | 43 | `declaration-track:8617c1b7c6f83823b9c332c9f0b4616b8593535e688deb95748cc74e9c34a4d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

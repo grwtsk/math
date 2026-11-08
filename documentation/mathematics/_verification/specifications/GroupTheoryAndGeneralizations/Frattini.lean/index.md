@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/Frattini.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/Frattini.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Frattini.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Frattini.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [frattini](../../../../GroupTheoryAndGeneralizations/Frattini.lean/declarations/frattini.md) | 20 | `declaration-track:f0fbfcf02284f3fa8bc62311b42177e6cf5996b367c8fc64ced23d72203f449c` |
-| 2 | `lemma` | [frattini_le_coatom](../../../../GroupTheoryAndGeneralizations/Frattini.lean/declarations/frattini-le-coatom.md) | 25 | `result-track:bbb80ed02e1640a85d667f66782a1ef17d653fcc10afb3d9c23af1d4910dac3b` |
-| 3 | `lemma` | [frattini_le_comap_frattini_of_surjective](../../../../GroupTheoryAndGeneralizations/Frattini.lean/declarations/frattini-le-comap-frattini-of-surjective.md) | 30 | `result-track:7fbcdf9b8e5217577a5f6029c30a86541788920f47d67d430d65e3506ff8b2c0` |
-| 4 | `instance` | [frattini_characteristic](../../../../GroupTheoryAndGeneralizations/Frattini.lean/declarations/frattini-characteristic.md) | 38 | `declaration-track:a4bd7f78b76477e8086d4e0f7285753b6d99113b1690845a02b6eadcf232ef51` |
-| 5 | `theorem` | [frattini_nongenerating](../../../../GroupTheoryAndGeneralizations/Frattini.lean/declarations/frattini-nongenerating.md) | 49 | `result-track:889eb9fcf034902c80dc5d85116a8e779746271cacbad213d91a83e10f135a8c` |
-| 6 | `theorem` | [frattini_nilpotent](../../../../GroupTheoryAndGeneralizations/Frattini.lean/declarations/frattini-nilpotent.md) | 54 | `result-track:808dbacbefe762229cace5bdb2bf837214c9e6d28d40dee262e333b5ea6b867d` |
+| 1 | `def` | [frattini](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Frattini.lean/declarations/frattini.md) | 20 | `declaration-track:f0fbfcf02284f3fa8bc62311b42177e6cf5996b367c8fc64ced23d72203f449c` |
+| 2 | `lemma` | [frattini_le_coatom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Frattini.lean/declarations/frattini-le-coatom.md) | 25 | `result-track:bbb80ed02e1640a85d667f66782a1ef17d653fcc10afb3d9c23af1d4910dac3b` |
+| 3 | `lemma` | [frattini_le_comap_frattini_of_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Frattini.lean/declarations/frattini-le-comap-frattini-of-surjective.md) | 30 | `result-track:7fbcdf9b8e5217577a5f6029c30a86541788920f47d67d430d65e3506ff8b2c0` |
+| 4 | `instance` | [frattini_characteristic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Frattini.lean/declarations/frattini-characteristic.md) | 38 | `declaration-track:a4bd7f78b76477e8086d4e0f7285753b6d99113b1690845a02b6eadcf232ef51` |
+| 5 | `theorem` | [frattini_nongenerating](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Frattini.lean/declarations/frattini-nongenerating.md) | 49 | `result-track:889eb9fcf034902c80dc5d85116a8e779746271cacbad213d91a83e10f135a8c` |
+| 6 | `theorem` | [frattini_nilpotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Frattini.lean/declarations/frattini-nilpotent.md) | 54 | `result-track:808dbacbefe762229cace5bdb2bf837214c9e6d28d40dee262e333b5ea6b867d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DehnFilling.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DehnFilling.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DehnFilling.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DehnFilling.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OrientedFillingPresentationCapability](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DehnFilling.lean/declarations/orientedfillingpresentationcapability.md) | 31 | `declaration-track:dea9aa7cd4f14251156ea1c0f858f9cdaee527d1fd49caf2cb0e9c3e5659bc7a` |
-| 2 | `theorem` | [orientation_reversing](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DehnFilling.lean/declarations/orientation-reversing.md) | 74 | `result-track:562f526db4d84343771f109e1d853881d8aeaa32fd8084189eaa97e33ac6fe1f` |
-| 3 | `theorem` | [meridian_maps_to_marked_slope](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DehnFilling.lean/declarations/meridian-maps-to-marked-slope.md) | 82 | `result-track:55643dba239a64f454abc43c09f317d4c19e2781d748f655c55d0f3c1f82b018` |
-| 4 | `def` | [same_marked_slope_homeomorphism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DehnFilling.lean/declarations/same-marked-slope-homeomorphism.md) | 93 | `declaration-track:2ec102331c41a39d1aba2004c93d3b6fa60dacaa28fa3a2da7d074ace4f7b197` |
-| 5 | `theorem` | [same_marked_slope_homeomorphism_fixed_on_exterior](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DehnFilling.lean/declarations/same-marked-slope-homeomorphism-fixed-on-exterior.md) | 102 | `result-track:1ea94bb0cf60c7d838c1cba2a032978d97ce7e001d72e26c414f4c4668d0b0ad` |
-| 6 | `def` | [meridional_filling_homeomorphism_sphereThree](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DehnFilling.lean/declarations/meridional-filling-homeomorphism-spherethree.md) | 113 | `declaration-track:0bc1440318584a6fd65b83a6fd98d2a4fe4a56665a362332739a072e903f8759` |
-| 7 | `theorem` | [original_gluing_is_valid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DehnFilling.lean/declarations/original-gluing-is-valid.md) | 123 | `result-track:f6a43c170183971f2ffc30695bcf8b142053356c2bd9160e72844054c6bd14e7` |
+| 1 | `structure` | [OrientedFillingPresentationCapability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DehnFilling.lean/declarations/orientedfillingpresentationcapability.md) | 31 | `declaration-track:dea9aa7cd4f14251156ea1c0f858f9cdaee527d1fd49caf2cb0e9c3e5659bc7a` |
+| 2 | `theorem` | [orientation_reversing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DehnFilling.lean/declarations/orientation-reversing.md) | 74 | `result-track:562f526db4d84343771f109e1d853881d8aeaa32fd8084189eaa97e33ac6fe1f` |
+| 3 | `theorem` | [meridian_maps_to_marked_slope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DehnFilling.lean/declarations/meridian-maps-to-marked-slope.md) | 82 | `result-track:55643dba239a64f454abc43c09f317d4c19e2781d748f655c55d0f3c1f82b018` |
+| 4 | `def` | [same_marked_slope_homeomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DehnFilling.lean/declarations/same-marked-slope-homeomorphism.md) | 93 | `declaration-track:2ec102331c41a39d1aba2004c93d3b6fa60dacaa28fa3a2da7d074ace4f7b197` |
+| 5 | `theorem` | [same_marked_slope_homeomorphism_fixed_on_exterior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DehnFilling.lean/declarations/same-marked-slope-homeomorphism-fixed-on-exterior.md) | 102 | `result-track:1ea94bb0cf60c7d838c1cba2a032978d97ce7e001d72e26c414f4c4668d0b0ad` |
+| 6 | `def` | [meridional_filling_homeomorphism_sphereThree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DehnFilling.lean/declarations/meridional-filling-homeomorphism-spherethree.md) | 113 | `declaration-track:0bc1440318584a6fd65b83a6fd98d2a4fe4a56665a362332739a072e903f8759` |
+| 7 | `theorem` | [original_gluing_is_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DehnFilling.lean/declarations/original-gluing-is-valid.md) | 123 | `result-track:f6a43c170183971f2ffc30695bcf8b142053356c2bd9160e72844054c6bd14e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

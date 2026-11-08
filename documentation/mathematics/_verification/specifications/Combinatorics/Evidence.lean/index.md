@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Evidence.lean/index.md) · [Full source](../../../../Combinatorics/Evidence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Evidence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Evidence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [EvidenceSourceKind](../../../../Combinatorics/Evidence.lean/declarations/evidencesourcekind.md) | 10 | `declaration-track:fdec2bb4bd439427cbc3337fe9d98b4b47a38b4d87eb9dce45c1261ac1b58d2d` |
-| 2 | `inductive` | [EvidenceLocation](../../../../Combinatorics/Evidence.lean/declarations/evidencelocation.md) | 21 | `declaration-track:29911965b9c2cdb06426da6bf8ab014cc3c594ce04cb4923baed151e3c088e77` |
-| 3 | `inductive` | [ContextField](../../../../Combinatorics/Evidence.lean/declarations/contextfield.md) | 27 | `declaration-track:d93d5c06d24860bdf575e13f5a974f1a3460a0858a637c37234e2b96e517bab3` |
-| 4 | `structure` | [EvidenceScope](../../../../Combinatorics/Evidence.lean/declarations/evidencescope.md) | 38 | `declaration-track:4ef51eafda1dae3389048746d7e398f0141beeb60478ddbba9f4abc6c3ce8407` |
-| 5 | `structure` | [EvidenceRef](../../../../Combinatorics/Evidence.lean/declarations/evidenceref.md) | 44 | `declaration-track:d5a1e8f172e71b1d29513cce1e665fe49e9063cf6c9f66b02b14e720cd9e2a7c` |
-| 6 | `structure` | [EvidenceRegistry](../../../../Combinatorics/Evidence.lean/declarations/evidenceregistry.md) | 54 | `declaration-track:a8ca0719dd8ea46901e5fd84e864e7c3605ee198f54686e4228c875f06b24e01` |
-| 7 | `def` | [EvidenceRegistry.HasId](../../../../Combinatorics/Evidence.lean/declarations/evidenceregistry-hasid.md) | 59 | `declaration-track:3e033e834f5856d4d424fcfd505a274951ccf6f99fa9a28fad879a75bb70b029` |
+| 1 | `inductive` | [EvidenceSourceKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Evidence.lean/declarations/evidencesourcekind.md) | 10 | `declaration-track:fdec2bb4bd439427cbc3337fe9d98b4b47a38b4d87eb9dce45c1261ac1b58d2d` |
+| 2 | `inductive` | [EvidenceLocation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Evidence.lean/declarations/evidencelocation.md) | 21 | `declaration-track:29911965b9c2cdb06426da6bf8ab014cc3c594ce04cb4923baed151e3c088e77` |
+| 3 | `inductive` | [ContextField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Evidence.lean/declarations/contextfield.md) | 27 | `declaration-track:d93d5c06d24860bdf575e13f5a974f1a3460a0858a637c37234e2b96e517bab3` |
+| 4 | `structure` | [EvidenceScope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Evidence.lean/declarations/evidencescope.md) | 38 | `declaration-track:4ef51eafda1dae3389048746d7e398f0141beeb60478ddbba9f4abc6c3ce8407` |
+| 5 | `structure` | [EvidenceRef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Evidence.lean/declarations/evidenceref.md) | 44 | `declaration-track:d5a1e8f172e71b1d29513cce1e665fe49e9063cf6c9f66b02b14e720cd9e2a7c` |
+| 6 | `structure` | [EvidenceRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Evidence.lean/declarations/evidenceregistry.md) | 54 | `declaration-track:a8ca0719dd8ea46901e5fd84e864e7c3605ee198f54686e4228c875f06b24e01` |
+| 7 | `def` | [EvidenceRegistry.HasId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Evidence.lean/declarations/evidenceregistry-hasid.md) | 59 | `declaration-track:3e033e834f5856d4d424fcfd505a274951ccf6f99fa9a28fad879a75bb70b029` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

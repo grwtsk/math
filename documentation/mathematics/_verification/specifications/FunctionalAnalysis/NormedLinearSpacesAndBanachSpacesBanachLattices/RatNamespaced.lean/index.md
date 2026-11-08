@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RatNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RatNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RatNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RatNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instNormedAddCommGroup](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RatNamespaced.lean/declarations/instnormedaddcommgroup.md) | 22 | `declaration-track:68bf2a8122cc8e175b10195b41997b06f579000669ebc2cc576f9f829df8c6fb` |
-| 2 | `theorem` | [norm_cast_real](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RatNamespaced.lean/declarations/norm-cast-real.md) | 28 | `result-track:48bb438a5c6286c9babc55f69fc5b4d1c3124f85cc3571e25024de2177966574` |
-| 3 | `theorem` | [Rat Namespaced](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RatNamespaced.lean/declarations/root-grwtsk-analysis-functionalanalysis-banachspaces-normedspaces-normca.md) | 32 | `result-track:bda7cfc2b51888ac980b5fe68c54b44505d64bfc428c1581ba7a68a10e0486df` |
+| 1 | `instance` | [instNormedAddCommGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RatNamespaced.lean/declarations/instnormedaddcommgroup.md) | 22 | `declaration-track:68bf2a8122cc8e175b10195b41997b06f579000669ebc2cc576f9f829df8c6fb` |
+| 2 | `theorem` | [norm_cast_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RatNamespaced.lean/declarations/norm-cast-real.md) | 28 | `result-track:48bb438a5c6286c9babc55f69fc5b4d1c3124f85cc3571e25024de2177966574` |
+| 3 | `theorem` | [Rat Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RatNamespaced.lean/declarations/root-grwtsk-analysis-functionalanalysis-banachspaces-normedspaces-normca.md) | 32 | `result-track:bda7cfc2b51888ac980b5fe68c54b44505d64bfc428c1581ba7a68a10e0486df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

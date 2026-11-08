@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/GrothendieckPort.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/GrothendieckPort.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GrothendieckPort.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GrothendieckPort.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [GrothendieckKZero](../../../../AssociativeRingsAndAlgebras/GrothendieckPort.lean/declarations/grothendieckkzero.md) | 11 | `declaration-track:2ec5c5ea330ada53382f60477b1f764522800efc38a2fe6b010f7e0e120ae7f7` |
-| 2 | `def` | [map](../../../../AssociativeRingsAndAlgebras/GrothendieckPort.lean/declarations/map.md) | 20 | `declaration-track:1c8ee4048db1742efe9534eb851304bb79b947e7b8cf5c6ff094b17b38a45a76` |
-| 3 | `theorem` | [map_of](../../../../AssociativeRingsAndAlgebras/GrothendieckPort.lean/declarations/map-of.md) | 25 | `result-track:59a79614daba9423b6568c55766b18419a2251e7ad3098c0ea5f5bbf0ae8b2b0` |
-| 4 | `theorem` | [map_comp](../../../../AssociativeRingsAndAlgebras/GrothendieckPort.lean/declarations/map-comp.md) | 33 | `result-track:d08ff55c7fbf9872719d525ab05209121e5bd7884e45e5a16559ff0cc171c319` |
-| 5 | `theorem` | [map_id](../../../../AssociativeRingsAndAlgebras/GrothendieckPort.lean/declarations/map-id.md) | 42 | `result-track:8eba1fb369a8f265962aaf50a9bb549dbea9768e0509cbb653fa8181b7f5a615` |
-| 6 | `structure` | [StablePort](../../../../AssociativeRingsAndAlgebras/GrothendieckPort.lean/declarations/stableport.md) | 53 | `declaration-track:367086dfba964273eee8292e58a31a9b5439c4933c701c573332b9f2a4fccf01` |
-| 7 | `def` | [comp](../../../../AssociativeRingsAndAlgebras/GrothendieckPort.lean/declarations/comp.md) | 62 | `declaration-track:942cd7acd35642daf0ae8c2ede6b4ac025a8d782ad7cd3c0f5e68c4b2ebaf3d8` |
-| 8 | `def` | [kZeroMap](../../../../AssociativeRingsAndAlgebras/GrothendieckPort.lean/declarations/kzeromap.md) | 66 | `declaration-track:b6c039f63a7a82053ccdf6eaa776b78d21019102f11ab66c8c72820c7cd959a9` |
-| 9 | `theorem` | [kZeroMap_comp](../../../../AssociativeRingsAndAlgebras/GrothendieckPort.lean/declarations/kzeromap-comp.md) | 71 | `result-track:6eae80169e700a381a1139f6cab10e057401db56be723d34f1f71133191f45c6` |
+| 1 | `abbrev` | [GrothendieckKZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GrothendieckPort.lean/declarations/grothendieckkzero.md) | 11 | `declaration-track:2ec5c5ea330ada53382f60477b1f764522800efc38a2fe6b010f7e0e120ae7f7` |
+| 2 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GrothendieckPort.lean/declarations/map.md) | 20 | `declaration-track:1c8ee4048db1742efe9534eb851304bb79b947e7b8cf5c6ff094b17b38a45a76` |
+| 3 | `theorem` | [map_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GrothendieckPort.lean/declarations/map-of.md) | 25 | `result-track:59a79614daba9423b6568c55766b18419a2251e7ad3098c0ea5f5bbf0ae8b2b0` |
+| 4 | `theorem` | [map_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GrothendieckPort.lean/declarations/map-comp.md) | 33 | `result-track:d08ff55c7fbf9872719d525ab05209121e5bd7884e45e5a16559ff0cc171c319` |
+| 5 | `theorem` | [map_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GrothendieckPort.lean/declarations/map-id.md) | 42 | `result-track:8eba1fb369a8f265962aaf50a9bb549dbea9768e0509cbb653fa8181b7f5a615` |
+| 6 | `structure` | [StablePort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GrothendieckPort.lean/declarations/stableport.md) | 53 | `declaration-track:367086dfba964273eee8292e58a31a9b5439c4933c701c573332b9f2a4fccf01` |
+| 7 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GrothendieckPort.lean/declarations/comp.md) | 62 | `declaration-track:942cd7acd35642daf0ae8c2ede6b4ac025a8d782ad7cd3c0f5e68c4b2ebaf3d8` |
+| 8 | `def` | [kZeroMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GrothendieckPort.lean/declarations/kzeromap.md) | 66 | `declaration-track:b6c039f63a7a82053ccdf6eaa776b78d21019102f11ab66c8c72820c7cd959a9` |
+| 9 | `theorem` | [kZeroMap_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GrothendieckPort.lean/declarations/kzeromap-comp.md) | 71 | `result-track:6eae80169e700a381a1139f6cab10e057401db56be723d34f1f71133191f45c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

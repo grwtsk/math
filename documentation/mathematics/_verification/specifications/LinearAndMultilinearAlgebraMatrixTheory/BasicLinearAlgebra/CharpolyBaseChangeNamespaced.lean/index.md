@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CharpolyBaseChangeNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CharpolyBaseChangeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CharpolyBaseChangeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CharpolyBaseChangeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [LinearMap.charpoly_baseChange](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CharpolyBaseChangeNamespaced.lean/declarations/linearmap-charpoly-basechange.md) | 22 | `result-track:69eb6291e4fa90c1709a88204268f339dfb0b1ae3622f79cfd9100cc737b87e3` |
-| 2 | `lemma` | [LinearMap.det_eq_sign_charpoly_coeff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CharpolyBaseChangeNamespaced.lean/declarations/linearmap-det-eq-sign-charpoly-coeff.md) | 36 | `result-track:99272901f94e11085d7013ba7f3aad97ba82e069cb108caf0f5ec91a7613e8ba` |
-| 3 | `lemma` | [LinearMap.det_baseChange](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CharpolyBaseChangeNamespaced.lean/declarations/linearmap-det-basechange.md) | 43 | `result-track:7ee01849ad978f2f8f72965959acbbbc11d24b2d67aaec503edc367126f78261` |
+| 1 | `lemma` | [LinearMap.charpoly_baseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CharpolyBaseChangeNamespaced.lean/declarations/linearmap-charpoly-basechange.md) | 22 | `result-track:69eb6291e4fa90c1709a88204268f339dfb0b1ae3622f79cfd9100cc737b87e3` |
+| 2 | `lemma` | [LinearMap.det_eq_sign_charpoly_coeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CharpolyBaseChangeNamespaced.lean/declarations/linearmap-det-eq-sign-charpoly-coeff.md) | 36 | `result-track:99272901f94e11085d7013ba7f3aad97ba82e069cb108caf0f5ec91a7613e8ba` |
+| 3 | `lemma` | [LinearMap.det_baseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CharpolyBaseChangeNamespaced.lean/declarations/linearmap-det-basechange.md) | 43 | `result-track:7ee01849ad978f2f8f72965959acbbbc11d24b2d67aaec503edc367126f78261` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

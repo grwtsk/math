@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualTiltEnergyNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualTiltEnergyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualUnitTilt](../../../../MeasureAndIntegration/SourceActualTiltEnergyNamespaced.lean/declarations/actualunittilt.md) | 29 | `declaration-track:6041c3a8dff7cb10563875603e28d039443880d63cc592d842188fbcd5d23338` |
-| 2 | `def` | [actualUnitTiltEnergy](../../../../MeasureAndIntegration/SourceActualTiltEnergyNamespaced.lean/declarations/actualunittiltenergy.md) | 33 | `declaration-track:65284378019c895d3443359ecd80e5248fb5feb999b019910b57a04bb15caff8` |
-| 3 | `theorem` | [actualUnitTilt_transform](../../../../MeasureAndIntegration/SourceActualTiltEnergyNamespaced.lean/declarations/actualunittilt-transform.md) | 37 | `result-track:b84a90c1f3491abbd7b1cda3dabc724ae7b41e413a5668511a5a8f34c5e547ff` |
-| 4 | `theorem` | [actualUnitTilt_integral_sq_le](../../../../MeasureAndIntegration/SourceActualTiltEnergyNamespaced.lean/declarations/actualunittilt-integral-sq-le.md) | 45 | `result-track:a77e408f0bd9c8806d16cec2f0cb30528b34d3e3e5e19216372497172e30af6e` |
-| 5 | `theorem` | [actualUnitTiltEnergy_eventually_ge](../../../../MeasureAndIntegration/SourceActualTiltEnergyNamespaced.lean/declarations/actualunittiltenergy-eventually-ge.md) | 75 | `result-track:8675e85ae876ac197431513f8011b58d8e64a5f74bc538aac69fb7a8dbebeb86` |
-| 6 | `theorem` | [actualUnitTiltEnergy_tendsto_atTop](../../../../MeasureAndIntegration/SourceActualTiltEnergyNamespaced.lean/declarations/actualunittiltenergy-tendsto-attop.md) | 125 | `result-track:749a8a75027d0fcc9bc6310a98cbfe2a59eb1c19161d51833aaded7321cc569c` |
+| 1 | `def` | [actualUnitTilt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyNamespaced.lean/declarations/actualunittilt.md) | 29 | `declaration-track:6041c3a8dff7cb10563875603e28d039443880d63cc592d842188fbcd5d23338` |
+| 2 | `def` | [actualUnitTiltEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyNamespaced.lean/declarations/actualunittiltenergy.md) | 33 | `declaration-track:65284378019c895d3443359ecd80e5248fb5feb999b019910b57a04bb15caff8` |
+| 3 | `theorem` | [actualUnitTilt_transform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyNamespaced.lean/declarations/actualunittilt-transform.md) | 37 | `result-track:b84a90c1f3491abbd7b1cda3dabc724ae7b41e413a5668511a5a8f34c5e547ff` |
+| 4 | `theorem` | [actualUnitTilt_integral_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyNamespaced.lean/declarations/actualunittilt-integral-sq-le.md) | 45 | `result-track:a77e408f0bd9c8806d16cec2f0cb30528b34d3e3e5e19216372497172e30af6e` |
+| 5 | `theorem` | [actualUnitTiltEnergy_eventually_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyNamespaced.lean/declarations/actualunittiltenergy-eventually-ge.md) | 75 | `result-track:8675e85ae876ac197431513f8011b58d8e64a5f74bc538aac69fb7a8dbebeb86` |
+| 6 | `theorem` | [actualUnitTiltEnergy_tendsto_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyNamespaced.lean/declarations/actualunittiltenergy-tendsto-attop.md) | 125 | `result-track:749a8a75027d0fcc9bc6310a98cbfe2a59eb1c19161d51833aaded7321cc569c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

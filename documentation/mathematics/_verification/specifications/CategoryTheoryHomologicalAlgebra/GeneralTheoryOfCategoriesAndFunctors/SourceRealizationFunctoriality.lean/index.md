@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SourceRealizationFunctoriality.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SourceRealizationFunctoriality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SourceRealizationFunctoriality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SourceRealizationFunctoriality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SourceRealization.Hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SourceRealizationFunctoriality.lean/declarations/sourcerealization-hom.md) | 22 | `declaration-track:d84a8977abed04625576971bb4421a43061a9f6c2a775d57d12cf50bfab60110` |
-| 2 | `def` | [id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SourceRealizationFunctoriality.lean/declarations/id.md) | 39 | `declaration-track:aa846cd11c9655942c11a2ac8122322fb9359cb041fd806eebaa3666f9658373` |
-| 3 | `def` | [comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SourceRealizationFunctoriality.lean/declarations/comp.md) | 50 | `declaration-track:14ee1a537393e5d9e6e6b86df8764a86e0300106b3532c47fe12c2c84a4ab186` |
-| 4 | `def` | [toPrismaticMap](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SourceRealizationFunctoriality.lean/declarations/toprismaticmap.md) | 64 | `declaration-track:519ebb6afcca0be0a49751ad270a38970c380a036220ea09b7a4388971277e15` |
-| 5 | `theorem` | [toPrismaticMap_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SourceRealizationFunctoriality.lean/declarations/toprismaticmap-id.md) | 76 | `result-track:807a9d21c5ba939ebe137a700d7a00078e6bb5ef1dcc384f136c93c57c4c4ddc` |
-| 6 | `theorem` | [toPrismaticMap_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SourceRealizationFunctoriality.lean/declarations/toprismaticmap-comp.md) | 86 | `result-track:2f58763ec240ee5d2b75f1ea8ce6e745827e478a7529b5efbe6c6a12ce46bd45` |
+| 1 | `structure` | [SourceRealization.Hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SourceRealizationFunctoriality.lean/declarations/sourcerealization-hom.md) | 22 | `declaration-track:d84a8977abed04625576971bb4421a43061a9f6c2a775d57d12cf50bfab60110` |
+| 2 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SourceRealizationFunctoriality.lean/declarations/id.md) | 39 | `declaration-track:aa846cd11c9655942c11a2ac8122322fb9359cb041fd806eebaa3666f9658373` |
+| 3 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SourceRealizationFunctoriality.lean/declarations/comp.md) | 50 | `declaration-track:14ee1a537393e5d9e6e6b86df8764a86e0300106b3532c47fe12c2c84a4ab186` |
+| 4 | `def` | [toPrismaticMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SourceRealizationFunctoriality.lean/declarations/toprismaticmap.md) | 64 | `declaration-track:519ebb6afcca0be0a49751ad270a38970c380a036220ea09b7a4388971277e15` |
+| 5 | `theorem` | [toPrismaticMap_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SourceRealizationFunctoriality.lean/declarations/toprismaticmap-id.md) | 76 | `result-track:807a9d21c5ba939ebe137a700d7a00078e6bb5ef1dcc384f136c93c57c4c4ddc` |
+| 6 | `theorem` | [toPrismaticMap_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SourceRealizationFunctoriality.lean/declarations/toprismaticmap-comp.md) | 86 | `result-track:2f58763ec240ee5d2b75f1ea8ce6e745827e478a7529b5efbe6c6a12ce46bd45` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

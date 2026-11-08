@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleDefsNamespaced.lean/index.md) · [Full source](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleDefsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleDefsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleDefsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [LieModule.IsIrreducible](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleDefsNamespaced.lean/declarations/liemodule-isirreducible.md) | 37 | `declaration-track:8a82672cd81d8109d8cba933bd95ea0d0be3ab0dac5ef001078cff39d1757aef` |
-| 2 | `lemma` | [LieSubmodule.eq_top_of_isIrreducible](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleDefsNamespaced.lean/declarations/liesubmodule-eq-top-of-isirreducible.md) | 40 | `result-track:9e6b65e381179867da667d005972839211bb7436830194fa17e7f69787b717fb` |
-| 3 | `class` | [HasTrivialRadical](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleDefsNamespaced.lean/declarations/hastrivialradical.md) | 63 | `declaration-track:21420d3764430d1531c87973bfe8a8382f9dd4e0ce47c90b96aa17b9b664ff22` |
-| 4 | `class` | [HasCentralRadical](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleDefsNamespaced.lean/declarations/hascentralradical.md) | 74 | `declaration-track:4c9d6465db67ffb64575b3bee8cf320395391eaf56ef36c3fefbae3d6fb5bc29` |
-| 5 | `lemma` | [hasCentralRadical_of_radical_le](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleDefsNamespaced.lean/declarations/hascentralradical-of-radical-le.md) | 77 | `result-track:a721f552da0fd54b1e40c187fd68fc5563faf0e2b646c5d17fc01b0d06b0c216` |
-| 6 | `class` | [IsSimple](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleDefsNamespaced.lean/declarations/issimple.md) | 86 | `declaration-track:96ce2783062779a562e512133ef3a390364789953dcb82f373eeb7858751452c` |
-| 7 | `class` | [IsSemisimple](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleDefsNamespaced.lean/declarations/issemisimple.md) | 101 | `declaration-track:795a8773926378fa39018cb4a29f2f7a5aa4314c3c68cfe3cbf791f4c3648a62` |
+| 1 | `abbrev` | [LieModule.IsIrreducible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleDefsNamespaced.lean/declarations/liemodule-isirreducible.md) | 37 | `declaration-track:8a82672cd81d8109d8cba933bd95ea0d0be3ab0dac5ef001078cff39d1757aef` |
+| 2 | `lemma` | [LieSubmodule.eq_top_of_isIrreducible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleDefsNamespaced.lean/declarations/liesubmodule-eq-top-of-isirreducible.md) | 40 | `result-track:9e6b65e381179867da667d005972839211bb7436830194fa17e7f69787b717fb` |
+| 3 | `class` | [HasTrivialRadical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleDefsNamespaced.lean/declarations/hastrivialradical.md) | 63 | `declaration-track:21420d3764430d1531c87973bfe8a8382f9dd4e0ce47c90b96aa17b9b664ff22` |
+| 4 | `class` | [HasCentralRadical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleDefsNamespaced.lean/declarations/hascentralradical.md) | 74 | `declaration-track:4c9d6465db67ffb64575b3bee8cf320395391eaf56ef36c3fefbae3d6fb5bc29` |
+| 5 | `lemma` | [hasCentralRadical_of_radical_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleDefsNamespaced.lean/declarations/hascentralradical-of-radical-le.md) | 77 | `result-track:a721f552da0fd54b1e40c187fd68fc5563faf0e2b646c5d17fc01b0d06b0c216` |
+| 6 | `class` | [IsSimple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleDefsNamespaced.lean/declarations/issimple.md) | 86 | `declaration-track:96ce2783062779a562e512133ef3a390364789953dcb82f373eeb7858751452c` |
+| 7 | `class` | [IsSemisimple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/SemisimpleDefsNamespaced.lean/declarations/issemisimple.md) | 101 | `declaration-track:795a8773926378fa39018cb4a29f2f7a5aa4314c3c68cfe3cbf791f4c3648a62` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

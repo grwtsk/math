@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/DeterminantFiber.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/DeterminantFiber.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeterminantFiber.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeterminantFiber.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ReductionCandidate](../../../../../ComputerScience/AlgorithmsInComputerScience/DeterminantFiber.lean/declarations/reductioncandidate.md) | 7 | `declaration-track:4bca81e6399e55b9d58fc86d968c294df7d02f55e30ab0fc6035ff724efc7b70` |
-| 2 | `structure` | [DeterminantFiber](../../../../../ComputerScience/AlgorithmsInComputerScience/DeterminantFiber.lean/declarations/determinantfiber.md) | 13 | `declaration-track:54b5930e8add4ae9dccbf05b99f5f98344afa51d4e26a40f6715962a73c9e7a9` |
-| 3 | `theorem` | [determinantFiber_square_required](../../../../../ComputerScience/AlgorithmsInComputerScience/DeterminantFiber.lean/declarations/determinantfiber-square-required.md) | 19 | `result-track:cd955817c3bc51ba2b4677d6006816f92bfaf95a0c12a648c9eced261948d515` |
-| 4 | `theorem` | [determinantFiber_boundary_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/DeterminantFiber.lean/declarations/determinantfiber-boundary-visible.md) | 25 | `result-track:a29766323af65bb03fabcce1e32ba29029356d160e80148f6c3b240ecbcda3b0` |
+| 1 | `structure` | [ReductionCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeterminantFiber.lean/declarations/reductioncandidate.md) | 7 | `declaration-track:4bca81e6399e55b9d58fc86d968c294df7d02f55e30ab0fc6035ff724efc7b70` |
+| 2 | `structure` | [DeterminantFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeterminantFiber.lean/declarations/determinantfiber.md) | 13 | `declaration-track:54b5930e8add4ae9dccbf05b99f5f98344afa51d4e26a40f6715962a73c9e7a9` |
+| 3 | `theorem` | [determinantFiber_square_required](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeterminantFiber.lean/declarations/determinantfiber-square-required.md) | 19 | `result-track:cd955817c3bc51ba2b4677d6006816f92bfaf95a0c12a648c9eced261948d515` |
+| 4 | `theorem` | [determinantFiber_boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeterminantFiber.lean/declarations/determinantfiber-boundary-visible.md) | 25 | `result-track:a29766323af65bb03fabcce1e32ba29029356d160e80148f6c3b240ecbcda3b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/AlgebraZMod.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/AlgebraZMod.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraZMod.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraZMod.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/AlgebraZMod.lean/declarations/instance.md) | 19 | `declaration-track:ca4f55b2c2ab240235e76c08c68932c8eaaff4e61558cc458c335187a0fd0b65` |
-| 2 | `abbrev` | [algebra'](../../../../AssociativeRingsAndAlgebras/AlgebraZMod.lean/declarations/algebra.md) | 28 | `declaration-track:01c51ae9c98ababcad91e2b58d8a9286a1548e8474375360ceb957aac2c2765a` |
-| 3 | `abbrev` | [algebra](../../../../AssociativeRingsAndAlgebras/AlgebraZMod.lean/declarations/algebra-source-edition-2.md) | 43 | `declaration-track:cdd9abc96be11088640cd01f2e18e0fd5487c53b74d5341177eadadd781e1f76` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraZMod.lean/declarations/instance.md) | 19 | `declaration-track:ca4f55b2c2ab240235e76c08c68932c8eaaff4e61558cc458c335187a0fd0b65` |
+| 2 | `abbrev` | [algebra'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraZMod.lean/declarations/algebra.md) | 28 | `declaration-track:01c51ae9c98ababcad91e2b58d8a9286a1548e8474375360ceb957aac2c2765a` |
+| 3 | `abbrev` | [algebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraZMod.lean/declarations/algebra-source-edition-2.md) | 43 | `declaration-track:cdd9abc96be11088640cd01f2e18e0fd5487c53b74d5341177eadadd781e1f76` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

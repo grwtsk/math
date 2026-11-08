@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesProductsNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesProductsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesProductsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesProductsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [piObjIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesProductsNamespacedPublic.lean/declarations/piobjiso.md) | 41 | `declaration-track:0fe18322a266dbb4f1e9bb4718fc3287aca62c2a7737f096e5e2c5f6eb73791c` |
-| 2 | `theorem` | [piObjIso_hom_comp_π](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesProductsNamespacedPublic.lean/declarations/piobjiso-hom-comp.md) | 47 | `result-track:59f93fb4ec795f0fa7d5067e7850f9a9569c72d9ec139290d0205223730bb6be` |
-| 3 | `theorem` | [piObjIso_inv_comp_π](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesProductsNamespacedPublic.lean/declarations/piobjiso-inv-comp.md) | 53 | `result-track:25857ed3980ba3d6d217d22e3322b5816383a56355ca8453f660b401e8ff3092` |
-| 4 | `def` | [sigmaObjIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesProductsNamespacedPublic.lean/declarations/sigmaobjiso.md) | 64 | `declaration-track:b18c9842bff68fda5a538d8dd2f9945db7899674dab5331f938124505f941b89` |
-| 5 | `theorem` | [ι_comp_sigmaObjIso_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesProductsNamespacedPublic.lean/declarations/comp-sigmaobjiso-hom.md) | 70 | `result-track:800546c485d3c658363c2817b88e6f4793b73050ce312c37a9b04daccf020390` |
-| 6 | `theorem` | [ι_comp_sigmaObjIso_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesProductsNamespacedPublic.lean/declarations/comp-sigmaobjiso-inv.md) | 76 | `result-track:c497a845fff37a7f4cda665b0c24f540287f6f50cf3382c6975eccc60c511392` |
+| 1 | `def` | [piObjIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesProductsNamespacedPublic.lean/declarations/piobjiso.md) | 41 | `declaration-track:0fe18322a266dbb4f1e9bb4718fc3287aca62c2a7737f096e5e2c5f6eb73791c` |
+| 2 | `theorem` | [piObjIso_hom_comp_π](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesProductsNamespacedPublic.lean/declarations/piobjiso-hom-comp.md) | 47 | `result-track:59f93fb4ec795f0fa7d5067e7850f9a9569c72d9ec139290d0205223730bb6be` |
+| 3 | `theorem` | [piObjIso_inv_comp_π](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesProductsNamespacedPublic.lean/declarations/piobjiso-inv-comp.md) | 53 | `result-track:25857ed3980ba3d6d217d22e3322b5816383a56355ca8453f660b401e8ff3092` |
+| 4 | `def` | [sigmaObjIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesProductsNamespacedPublic.lean/declarations/sigmaobjiso.md) | 64 | `declaration-track:b18c9842bff68fda5a538d8dd2f9945db7899674dab5331f938124505f941b89` |
+| 5 | `theorem` | [ι_comp_sigmaObjIso_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesProductsNamespacedPublic.lean/declarations/comp-sigmaobjiso-hom.md) | 70 | `result-track:800546c485d3c658363c2817b88e6f4793b73050ce312c37a9b04daccf020390` |
+| 6 | `theorem` | [ι_comp_sigmaObjIso_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesProductsNamespacedPublic.lean/declarations/comp-sigmaobjiso-inv.md) | 76 | `result-track:c497a845fff37a7f4cda665b0c24f540287f6f50cf3382c6975eccc60c511392` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

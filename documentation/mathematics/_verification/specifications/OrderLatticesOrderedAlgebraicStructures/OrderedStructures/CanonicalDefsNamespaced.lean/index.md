@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CanonicalDefsNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CanonicalDefsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CanonicalDefsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CanonicalDefsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [CanonicallyLinearOrderedSemifield](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CanonicalDefsNamespaced.lean/declarations/canonicallylinearorderedsemifield.md) | 29 | `declaration-track:01eed94332791f2c78c712bcd915c0a5ee4cc649013ad904e4a157636f7f47be` |
-| 2 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CanonicalDefsNamespaced.lean/declarations/instance-source-edition-2.md) | 34 | `declaration-track:7e584d2b2337670e2b4fa0d71cbce4680f9df9443e3456a9d719d582f8cbc5f3` |
-| 3 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CanonicalDefsNamespaced.lean/declarations/instance.md) | 41 | `declaration-track:3d12986e983fc335ca7c501a7406005d8fb147fce704dcd5f5998c4871b0b719` |
+| 1 | `class` | [CanonicallyLinearOrderedSemifield](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CanonicalDefsNamespaced.lean/declarations/canonicallylinearorderedsemifield.md) | 29 | `declaration-track:01eed94332791f2c78c712bcd915c0a5ee4cc649013ad904e4a157636f7f47be` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CanonicalDefsNamespaced.lean/declarations/instance-source-edition-2.md) | 34 | `declaration-track:7e584d2b2337670e2b4fa0d71cbce4680f9df9443e3456a9d719d582f8cbc5f3` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/CanonicalDefsNamespaced.lean/declarations/instance.md) | 41 | `declaration-track:3d12986e983fc335ca7c501a7406005d8fb147fce704dcd5f5998c4871b0b719` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

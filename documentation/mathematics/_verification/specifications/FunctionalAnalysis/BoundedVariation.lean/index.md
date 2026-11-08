@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/BoundedVariation.lean/index.md) · [Full source](../../../../FunctionalAnalysis/BoundedVariation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundedVariation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundedVariation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,14 +61,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ae_differentiableWithinAt_of_mem_real](../../../../FunctionalAnalysis/BoundedVariation.lean/declarations/ae-differentiablewithinat-of-mem-real.md) | 42 | `result-track:2c6ae12832febe9249d34baa5ddd75accfd78e438f9662c01b4f5590849ecdd4` |
-| 2 | `theorem` | [ae_differentiableWithinAt_of_mem_pi](../../../../FunctionalAnalysis/BoundedVariation.lean/declarations/ae-differentiablewithinat-of-mem-pi.md) | 52 | `result-track:f4f008eacd3c1bf977280b6d2e699d7cd52661e4b1d49d9741a6e2dca2512b43` |
-| 3 | `theorem` | [ae_differentiableWithinAt_of_mem](../../../../FunctionalAnalysis/BoundedVariation.lean/declarations/ae-differentiablewithinat-of-mem.md) | 63 | `result-track:cbd2fe856c92b7873e9245550689bc2130b2434e95bd6332a228c82680222297` |
-| 4 | `theorem` | [ae_differentiableWithinAt](../../../../FunctionalAnalysis/BoundedVariation.lean/declarations/ae-differentiablewithinat.md) | 77 | `result-track:033aa44eac8f3f91ae709ef8d69f0e3c2c4e3011c6013a923a9592e78b35a5b8` |
-| 5 | `theorem` | [ae_differentiableAt](../../../../FunctionalAnalysis/BoundedVariation.lean/declarations/ae-differentiableat.md) | 84 | `result-track:7686aaa674e607f48292fb78970f3db30f38a560e6ccc7dfcbbbf9514e57cab1` |
-| 6 | `theorem` | [LipschitzOnWith.ae_differentiableWithinAt_of_mem_real](../../../../FunctionalAnalysis/BoundedVariation.lean/declarations/lipschitzonwith-ae-differentiablewithinat-of-mem-real.md) | 96 | `result-track:7625c097d148f3719dba85d73e85f120210e2e297eeeec7a2b9380f263069ae8` |
-| 7 | `theorem` | [LipschitzOnWith.ae_differentiableWithinAt_real](../../../../FunctionalAnalysis/BoundedVariation.lean/declarations/lipschitzonwith-ae-differentiablewithinat-real.md) | 103 | `result-track:e28bb34db0cd81d1e91e44717e19440fcdf21dad382a0793fb35b11af57dc2bb` |
-| 8 | `theorem` | [LipschitzWith.ae_differentiableAt_real](../../../../FunctionalAnalysis/BoundedVariation.lean/declarations/lipschitzwith-ae-differentiableat-real.md) | 111 | `result-track:82cd59f294932e155f581aff48fb7ac26e1a680e2e865f589f69391e93a44b59` |
+| 1 | `theorem` | [ae_differentiableWithinAt_of_mem_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundedVariation.lean/declarations/ae-differentiablewithinat-of-mem-real.md) | 42 | `result-track:2c6ae12832febe9249d34baa5ddd75accfd78e438f9662c01b4f5590849ecdd4` |
+| 2 | `theorem` | [ae_differentiableWithinAt_of_mem_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundedVariation.lean/declarations/ae-differentiablewithinat-of-mem-pi.md) | 52 | `result-track:f4f008eacd3c1bf977280b6d2e699d7cd52661e4b1d49d9741a6e2dca2512b43` |
+| 3 | `theorem` | [ae_differentiableWithinAt_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundedVariation.lean/declarations/ae-differentiablewithinat-of-mem.md) | 63 | `result-track:cbd2fe856c92b7873e9245550689bc2130b2434e95bd6332a228c82680222297` |
+| 4 | `theorem` | [ae_differentiableWithinAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundedVariation.lean/declarations/ae-differentiablewithinat.md) | 77 | `result-track:033aa44eac8f3f91ae709ef8d69f0e3c2c4e3011c6013a923a9592e78b35a5b8` |
+| 5 | `theorem` | [ae_differentiableAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundedVariation.lean/declarations/ae-differentiableat.md) | 84 | `result-track:7686aaa674e607f48292fb78970f3db30f38a560e6ccc7dfcbbbf9514e57cab1` |
+| 6 | `theorem` | [LipschitzOnWith.ae_differentiableWithinAt_of_mem_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundedVariation.lean/declarations/lipschitzonwith-ae-differentiablewithinat-of-mem-real.md) | 96 | `result-track:7625c097d148f3719dba85d73e85f120210e2e297eeeec7a2b9380f263069ae8` |
+| 7 | `theorem` | [LipschitzOnWith.ae_differentiableWithinAt_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundedVariation.lean/declarations/lipschitzonwith-ae-differentiablewithinat-real.md) | 103 | `result-track:e28bb34db0cd81d1e91e44717e19440fcdf21dad382a0793fb35b11af57dc2bb` |
+| 8 | `theorem` | [LipschitzWith.ae_differentiableAt_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundedVariation.lean/declarations/lipschitzwith-ae-differentiableat-real.md) | 111 | `result-track:82cd59f294932e155f581aff48fb7ac26e1a680e2e865f589f69391e93a44b59` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

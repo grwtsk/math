@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PrimeCutGraphAnchoredPrimeCut.lean/index.md) · [Full source](../../../../Combinatorics/PrimeCutGraphAnchoredPrimeCut.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeCutGraphAnchoredPrimeCut.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeCutGraphAnchoredPrimeCut.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AnchoredPrimeCut.insertPrime](../../../../Combinatorics/PrimeCutGraphAnchoredPrimeCut.lean/declarations/anchoredprimecut-insertprime.md) | 13 | `declaration-track:00a968d3b3dfad325ac2878da048dda91600eb5c80a7648bff58a2f023778dfc` |
-| 2 | `theorem` | [insertPrime_preserves_archimedean_anchor](../../../../Combinatorics/PrimeCutGraphAnchoredPrimeCut.lean/declarations/insertprime-preserves-archimedean-anchor.md) | 26 | `result-track:c2430fc4588578410ca0fe85dd457ee6141459182ee8dd0b34855d3ed97d4f27` |
-| 3 | `theorem` | [insertPrime_finite_places](../../../../Combinatorics/PrimeCutGraphAnchoredPrimeCut.lean/declarations/insertprime-finite-places.md) | 36 | `result-track:01b15ce329fb254b98bb6e6d91851299518fec836ab8eafee96e3234b2efc091` |
-| 4 | `theorem` | [insertPrime_card](../../../../Combinatorics/PrimeCutGraphAnchoredPrimeCut.lean/declarations/insertprime-card.md) | 46 | `result-track:f41d34f892a35377009bcfa1716baedf7359a898de10529af1610c98e36b3afe` |
+| 1 | `def` | [AnchoredPrimeCut.insertPrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeCutGraphAnchoredPrimeCut.lean/declarations/anchoredprimecut-insertprime.md) | 13 | `declaration-track:00a968d3b3dfad325ac2878da048dda91600eb5c80a7648bff58a2f023778dfc` |
+| 2 | `theorem` | [insertPrime_preserves_archimedean_anchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeCutGraphAnchoredPrimeCut.lean/declarations/insertprime-preserves-archimedean-anchor.md) | 26 | `result-track:c2430fc4588578410ca0fe85dd457ee6141459182ee8dd0b34855d3ed97d4f27` |
+| 3 | `theorem` | [insertPrime_finite_places](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeCutGraphAnchoredPrimeCut.lean/declarations/insertprime-finite-places.md) | 36 | `result-track:01b15ce329fb254b98bb6e6d91851299518fec836ab8eafee96e3234b2efc091` |
+| 4 | `theorem` | [insertPrime_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeCutGraphAnchoredPrimeCut.lean/declarations/insertprime-card.md) | 46 | `result-track:f41d34f892a35377009bcfa1716baedf7359a898de10529af1610c98e36b3afe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

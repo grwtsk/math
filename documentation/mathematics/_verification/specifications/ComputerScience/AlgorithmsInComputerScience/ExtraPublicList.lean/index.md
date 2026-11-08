@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraPublicList.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraPublicList.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraPublicList.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraPublicList.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [List.toString](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraPublicList.lean/declarations/list-tostring.md) | 28 | `declaration-track:7de393eb473cfcf296b1ffbd032e3e8517b13eb33f2c89ab136cb62c4a3abc47` |
-| 2 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraPublicList.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:58f06c00ed0ee76679bc2c01e1dae7668af445fdeea305b242288fbd78adb9da` |
-| 3 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraPublicList.lean/declarations/instance-source-edition-3.md) | 36 | `declaration-track:9de6de75d55a1a469c06944fc59d4619bdf37c4172712ad4670cb1df661b1419` |
-| 4 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraPublicList.lean/declarations/instance.md) | 39 | `declaration-track:4d2b80c9b6e7f48c6902df7704bc7194b2695e75e8e8981f5326a1c71508960f` |
-| 5 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraPublicList.lean/declarations/instance-source-edition-4.md) | 41 | `declaration-track:c5fcf2582471c9d050caf501dd513390d2911fa5455570ea04c868c59c7397c3` |
+| 1 | `def` | [List.toString](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraPublicList.lean/declarations/list-tostring.md) | 28 | `declaration-track:7de393eb473cfcf296b1ffbd032e3e8517b13eb33f2c89ab136cb62c4a3abc47` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraPublicList.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:58f06c00ed0ee76679bc2c01e1dae7668af445fdeea305b242288fbd78adb9da` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraPublicList.lean/declarations/instance-source-edition-3.md) | 36 | `declaration-track:9de6de75d55a1a469c06944fc59d4619bdf37c4172712ad4670cb1df661b1419` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraPublicList.lean/declarations/instance.md) | 39 | `declaration-track:4d2b80c9b6e7f48c6902df7704bc7194b2695e75e8e8981f5326a1c71508960f` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraPublicList.lean/declarations/instance-source-edition-4.md) | 41 | `declaration-track:c5fcf2582471c9d050caf501dd513390d2911fa5455570ea04c868c59c7397c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

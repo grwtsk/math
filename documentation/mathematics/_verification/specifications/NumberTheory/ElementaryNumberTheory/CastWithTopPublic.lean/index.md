@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/CastWithTopPublic.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/CastWithTopPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastWithTopPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastWithTopPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../NumberTheory/ElementaryNumberTheory/CastWithTopPublic.lean/declarations/instance.md) | 19 | `declaration-track:c7675502d6fd5feea155c6c909fe5a7fd6653038044679e1c533b7b80d4490cd` |
-| 2 | `theorem` | [Nat.cast_withTop](../../../../../NumberTheory/ElementaryNumberTheory/CastWithTopPublic.lean/declarations/nat-cast-withtop.md) | 21 | `result-track:a357316720433db197b51033f50d604fba196a2227659fb7481281c6b50ceaa4` |
-| 3 | `theorem` | [Nat.cast_withBot](../../../../../NumberTheory/ElementaryNumberTheory/CastWithTopPublic.lean/declarations/nat-cast-withbot.md) | 24 | `result-track:a9d88d40d0838c56a86f62797233d4766f13abf53a932111142395832195a95c` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastWithTopPublic.lean/declarations/instance.md) | 19 | `declaration-track:c7675502d6fd5feea155c6c909fe5a7fd6653038044679e1c533b7b80d4490cd` |
+| 2 | `theorem` | [Nat.cast_withTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastWithTopPublic.lean/declarations/nat-cast-withtop.md) | 21 | `result-track:a357316720433db197b51033f50d604fba196a2227659fb7481281c6b50ceaa4` |
+| 3 | `theorem` | [Nat.cast_withBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastWithTopPublic.lean/declarations/nat-cast-withbot.md) | 24 | `result-track:a9d88d40d0838c56a86f62797233d4766f13abf53a932111142395832195a95c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

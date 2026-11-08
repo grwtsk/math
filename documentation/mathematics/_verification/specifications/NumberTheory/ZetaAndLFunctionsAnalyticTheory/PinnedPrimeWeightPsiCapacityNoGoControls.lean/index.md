@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGoControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGoControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGoControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGoControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightPsiCapacityNoGo`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightPsiCapacityNoGo`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PNTThetaOctaveProfile](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGoControls.lean/declarations/pntthetaoctaveprofile.md) | 17 | `declaration-track:dfeb56f75b646ec336d338cb7f4477d75680ac9f3771aaa21da412a4877bbbae` |
-| 2 | `def` | [ActualPsiCapacityToEnvelopeRecurrence](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGoControls.lean/declarations/actualpsicapacitytoenveloperecurrence.md) | 30 | `declaration-track:7e3c4f1173629e8076d94bce879e0b93818bfda9aa47303080f42bc8b4cd6203` |
-| 3 | `theorem` | [no_fixed_integerPsiCapacity_under_classical_inputs](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGoControls.lean/declarations/no-fixed-integerpsicapacity-under-classical-inputs.md) | 40 | `result-track:f96968b4181252e5faf1b6d4ac43e012da189ae2639b4710c1627ae16936c278` |
-| 4 | `theorem` | [no_integerPsiCapacity_under_classical_inputs](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGoControls.lean/declarations/no-integerpsicapacity-under-classical-inputs.md) | 60 | `result-track:b230ecccbd74c78facecacbc5a7cc42e3459671b8735402c6e7ca75f9cadedb5` |
-| 5 | `def` | [remainingFormalNoGoSuppliers](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGoControls.lean/declarations/remainingformalnogosuppliers.md) | 75 | `declaration-track:f0f02fc2a5e3ab3d11a4e26efea5419052068cf255e25b803a78a0e7f3f86fb5` |
-| 6 | `def` | [prohibitedPromotions](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGoControls.lean/declarations/prohibitedpromotions.md) | 83 | `declaration-track:620eca8e81f45f176852fc6f6078242e672afd733830e68d85e8f9c794935f2f` |
+| 1 | `structure` | [PNTThetaOctaveProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGoControls.lean/declarations/pntthetaoctaveprofile.md) | 17 | `declaration-track:dfeb56f75b646ec336d338cb7f4477d75680ac9f3771aaa21da412a4877bbbae` |
+| 2 | `def` | [ActualPsiCapacityToEnvelopeRecurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGoControls.lean/declarations/actualpsicapacitytoenveloperecurrence.md) | 30 | `declaration-track:7e3c4f1173629e8076d94bce879e0b93818bfda9aa47303080f42bc8b4cd6203` |
+| 3 | `theorem` | [no_fixed_integerPsiCapacity_under_classical_inputs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGoControls.lean/declarations/no-fixed-integerpsicapacity-under-classical-inputs.md) | 40 | `result-track:f96968b4181252e5faf1b6d4ac43e012da189ae2639b4710c1627ae16936c278` |
+| 4 | `theorem` | [no_integerPsiCapacity_under_classical_inputs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGoControls.lean/declarations/no-integerpsicapacity-under-classical-inputs.md) | 60 | `result-track:b230ecccbd74c78facecacbc5a7cc42e3459671b8735402c6e7ca75f9cadedb5` |
+| 5 | `def` | [remainingFormalNoGoSuppliers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGoControls.lean/declarations/remainingformalnogosuppliers.md) | 75 | `declaration-track:f0f02fc2a5e3ab3d11a4e26efea5419052068cf255e25b803a78a0e7f3f86fb5` |
+| 6 | `def` | [prohibitedPromotions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGoControls.lean/declarations/prohibitedpromotions.md) | 83 | `declaration-track:620eca8e81f45f176852fc6f6078242e672afd733830e68d85e8f9c794935f2f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

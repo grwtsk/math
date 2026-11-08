@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AbstractSourceTreeNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AbstractSourceTreeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AbstractSourceTreeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AbstractSourceTreeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AbstractSourceNode](../../../../../ComputerScience/AlgorithmsInComputerScience/AbstractSourceTreeNamespaced.lean/declarations/abstractsourcenode.md) | 24 | `declaration-track:3058b12d9beb41bce7f9bdfeaf7f21c1bb1d0bff2983fcd1658805b282bec81f` |
-| 2 | `structure` | [AbstractSourceTree](../../../../../ComputerScience/AlgorithmsInComputerScience/AbstractSourceTreeNamespaced.lean/declarations/abstractsourcetree.md) | 30 | `declaration-track:8c8d81bda172888bb526830dc87ccefbefe2f1e802c606539c491f2c2e0cc556` |
-| 3 | `theorem` | [source_root](../../../../../ComputerScience/AlgorithmsInComputerScience/AbstractSourceTreeNamespaced.lean/declarations/source-root.md) | 60 | `result-track:634e73ad2a19bfcec49166a7560aa42908126cee80194150a137dd611e64960b` |
-| 4 | `theorem` | [node_has_source](../../../../../ComputerScience/AlgorithmsInComputerScience/AbstractSourceTreeNamespaced.lean/declarations/node-has-source.md) | 70 | `result-track:726c1e83478f9b8cbcbbebf2808181aa8827ae0b85374b296b7af8bba0d6d2c6` |
+| 1 | `structure` | [AbstractSourceNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AbstractSourceTreeNamespaced.lean/declarations/abstractsourcenode.md) | 24 | `declaration-track:3058b12d9beb41bce7f9bdfeaf7f21c1bb1d0bff2983fcd1658805b282bec81f` |
+| 2 | `structure` | [AbstractSourceTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AbstractSourceTreeNamespaced.lean/declarations/abstractsourcetree.md) | 30 | `declaration-track:8c8d81bda172888bb526830dc87ccefbefe2f1e802c606539c491f2c2e0cc556` |
+| 3 | `theorem` | [source_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AbstractSourceTreeNamespaced.lean/declarations/source-root.md) | 60 | `result-track:634e73ad2a19bfcec49166a7560aa42908126cee80194150a137dd611e64960b` |
+| 4 | `theorem` | [node_has_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AbstractSourceTreeNamespaced.lean/declarations/node-has-source.md) | 70 | `result-track:726c1e83478f9b8cbcbbebf2808181aa8827ae0b85374b296b7af8bba0d6d2c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

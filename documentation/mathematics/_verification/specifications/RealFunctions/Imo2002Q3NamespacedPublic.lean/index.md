@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Imo2002Q3NamespacedPublic.lean/index.md) · [Full source](../../../../RealFunctions/Imo2002Q3NamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2002Q3NamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2002Q3NamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [natDegree_numerpol](../../../../RealFunctions/Imo2002Q3NamespacedPublic.lean/declarations/natdegree-numerpol.md) | 48 | `result-track:95e3dce014a921c694cd9740fb1057ecab7cab366f65a0fb4e919be8fc61dff4` |
-| 2 | `lemma` | [monic_numerpol](../../../../RealFunctions/Imo2002Q3NamespacedPublic.lean/declarations/monic-numerpol.md) | 52 | `result-track:e500805bda03fbbd60c8be2f2944fd1a2603f8c8d3b065b002e8156e401fa056` |
-| 3 | `lemma` | [natDegree_denompol](../../../../RealFunctions/Imo2002Q3NamespacedPublic.lean/declarations/natdegree-denompol.md) | 64 | `result-track:4cc51f8073eb04c741578c0223c7b732499ece88aa802199bdae11c30b035620` |
-| 4 | `lemma` | [monic_denompol](../../../../RealFunctions/Imo2002Q3NamespacedPublic.lean/declarations/monic-denompol.md) | 68 | `result-track:817b9bc8b43df5ff41406b85863c33b11c8e42c7efda3798364b4b700721066a` |
-| 5 | `lemma` | [proof_body](../../../../RealFunctions/Imo2002Q3NamespacedPublic.lean/declarations/proof-body.md) | 80 | `result-track:9e619600e5c9a2abb134f787d178007223756aaec2c9c56c89689ab8ca21c10d` |
-| 6 | `theorem` | [result](../../../../RealFunctions/Imo2002Q3NamespacedPublic.lean/declarations/result.md) | 122 | `result-track:b68bf03c96772d0bc7e372fe1c9614ef591da623f255e307eafd07f0cc442750` |
+| 1 | `lemma` | [natDegree_numerpol](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2002Q3NamespacedPublic.lean/declarations/natdegree-numerpol.md) | 48 | `result-track:95e3dce014a921c694cd9740fb1057ecab7cab366f65a0fb4e919be8fc61dff4` |
+| 2 | `lemma` | [monic_numerpol](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2002Q3NamespacedPublic.lean/declarations/monic-numerpol.md) | 52 | `result-track:e500805bda03fbbd60c8be2f2944fd1a2603f8c8d3b065b002e8156e401fa056` |
+| 3 | `lemma` | [natDegree_denompol](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2002Q3NamespacedPublic.lean/declarations/natdegree-denompol.md) | 64 | `result-track:4cc51f8073eb04c741578c0223c7b732499ece88aa802199bdae11c30b035620` |
+| 4 | `lemma` | [monic_denompol](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2002Q3NamespacedPublic.lean/declarations/monic-denompol.md) | 68 | `result-track:817b9bc8b43df5ff41406b85863c33b11c8e42c7efda3798364b4b700721066a` |
+| 5 | `lemma` | [proof_body](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2002Q3NamespacedPublic.lean/declarations/proof-body.md) | 80 | `result-track:9e619600e5c9a2abb134f787d178007223756aaec2c9c56c89689ab8ca21c10d` |
+| 6 | `theorem` | [result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2002Q3NamespacedPublic.lean/declarations/result.md) | 122 | `result-track:b68bf03c96772d0bc7e372fe1c9614ef591da623f255e307eafd07f0cc442750` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

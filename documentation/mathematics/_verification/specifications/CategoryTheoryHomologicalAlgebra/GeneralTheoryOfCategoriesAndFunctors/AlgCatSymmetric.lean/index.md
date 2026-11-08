@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatSymmetric.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatSymmetric.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatSymmetric.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatSymmetric.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatSymmetric.lean/declarations/instance-source-edition-2.md) | 27 | `declaration-track:978b97c92140a11d80133cc842945894adc44387fe8ab84afb75d2daa1a40125` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatSymmetric.lean/declarations/instance.md) | 32 | `declaration-track:8f1f53e001cc0de007780fe7c2cabbd6c05235ee972aaa69ebb911454915cca6` |
-| 3 | `instance` | [instSymmetricCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatSymmetric.lean/declarations/instsymmetriccategory.md) | 34 | `declaration-track:54bc4e4fb63a2403e6f2abe51ba255cc7ca1df031eb526a683509ecd810f55fe` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatSymmetric.lean/declarations/instance-source-edition-2.md) | 27 | `declaration-track:978b97c92140a11d80133cc842945894adc44387fe8ab84afb75d2daa1a40125` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatSymmetric.lean/declarations/instance.md) | 32 | `declaration-track:8f1f53e001cc0de007780fe7c2cabbd6c05235ee972aaa69ebb911454915cca6` |
+| 3 | `instance` | [instSymmetricCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatSymmetric.lean/declarations/instsymmetriccategory.md) | 34 | `declaration-track:54bc4e4fb63a2403e6f2abe51ba255cc7ca1df031eb526a683509ecd810f55fe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

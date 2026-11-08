@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ContractingResidualBudget.lean/index.md) · [Full source](../../../../RealFunctions/ContractingResidualBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractingResidualBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractingResidualBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.ErrorBounds.FixedWitnessBudget`](../../../../RealFunctions/FixedWitnessBudget.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.ErrorBounds.FiniteResidualTelescope`](../../../../GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.FixedWitnessBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedWitnessBudget.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.FiniteResidualTelescope`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Analysis.SpecificLimits.Basic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,21 +59,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [forcingResponse](../../../../RealFunctions/ContractingResidualBudget.lean/declarations/forcingresponse.md) | 42 | `declaration-track:1c8514be8075e7bede4f0a519938f0b6644d210ee43f15cf7ecf2ded90f477f1` |
-| 2 | `theorem` | [variable_budget_majorant](../../../../RealFunctions/ContractingResidualBudget.lean/declarations/variable-budget-majorant.md) | 47 | `result-track:d80b617858dc9711287b2ca80aa6b1dd36ae8da1b36ff7aa4dae36ad1fe9c65b` |
-| 3 | `theorem` | [restart_budget_majorant](../../../../RealFunctions/ContractingResidualBudget.lean/declarations/restart-budget-majorant.md) | 63 | `result-track:817b557530cc3d80d03157fe81b471da43b25dc8af419e3cf65948824320fc91` |
-| 4 | `theorem` | [variable_budget_vanishes](../../../../RealFunctions/ContractingResidualBudget.lean/declarations/variable-budget-vanishes.md) | 80 | `result-track:3dfdd67dde5fe2f2ad658cc1a50d51288e5d18dcca104a419c721b3069caae15` |
-| 5 | `theorem` | [no_fixed_negative_of_variable_forcing](../../../../RealFunctions/ContractingResidualBudget.lean/declarations/no-fixed-negative-of-variable-forcing.md) | 114 | `result-track:3218de6c9cd66c373fb6c86b678048675297d01bb0d039eb81162fd955bd3554` |
-| 6 | `def` | [channelMass](../../../../RealFunctions/ContractingResidualBudget.lean/declarations/channelmass.md) | 137 | `declaration-track:dd0a1312166c9c09f4e8141750923df1dcc962c7ab9ba8c8da53e7d26416de5e` |
-| 7 | `theorem` | [channelMass_nonnegative](../../../../RealFunctions/ContractingResidualBudget.lean/declarations/channelmass-nonnegative.md) | 140 | `result-track:991a5f375dab591b9ecfb8ca64f132b782843de389a47a7a66a0c374623a1176` |
-| 8 | `theorem` | [readout_error_bound](../../../../RealFunctions/ContractingResidualBudget.lean/declarations/readout-error-bound.md) | 147 | `result-track:3c5c992053baab036e83b0359c4ab226574dd1e67a4ca0b2125449352a203574` |
-| 9 | `theorem` | [channel_mass_step](../../../../RealFunctions/ContractingResidualBudget.lean/declarations/channel-mass-step.md) | 164 | `result-track:32d7f28d9aa4910cd8b563d83118dec559875238e6ee8a980a620208807518ee` |
-| 10 | `theorem` | [no_fixed_negative_of_weighted_channel_contraction](../../../../RealFunctions/ContractingResidualBudget.lean/declarations/no-fixed-negative-of-weighted-channel-contraction.md) | 210 | `result-track:c313f055ee1db98ebe48f5914a159007ae7d8403f1343ac2c067d7d55f2d9ff5` |
-| 11 | `theorem` | [constant_one_not_vanishing](../../../../RealFunctions/ContractingResidualBudget.lean/declarations/constant-one-not-vanishing.md) | 238 | `result-track:3c727ec9737057ae1950ae40890d84a0310c3fffb756cf2f3ccf87d893938f31` |
-| 12 | `theorem` | [geometric_forcing_recurrence](../../../../RealFunctions/ContractingResidualBudget.lean/declarations/geometric-forcing-recurrence.md) | 246 | `result-track:38b8304952e8bb4583308968e1e19a4155fbe15c9d16dc046f0edbf66ce44ade` |
-| 13 | `theorem` | [geometric_forcing_stage_four](../../../../RealFunctions/ContractingResidualBudget.lean/declarations/geometric-forcing-stage-four.md) | 254 | `result-track:7d9fef7884bd4c99cff9231d9424682bb683328e17b8c7583116e2e5d436a10d` |
-| 14 | `def` | [rowBoundCounterexample](../../../../RealFunctions/ContractingResidualBudget.lean/declarations/rowboundcounterexample.md) | 260 | `declaration-track:5d6a2c9e9074a6180c8903f4565916d65bc797b66850751d04aeaa2008afea30` |
-| 15 | `theorem` | [row_bounds_do_not_give_column_contraction](../../../../RealFunctions/ContractingResidualBudget.lean/declarations/row-bounds-do-not-give-column-contraction.md) | 264 | `result-track:a742b4f7cb9cd274b15c05131b5819842e84058be7c00827cfb17cc68c64ccb9` |
+| 1 | `def` | [forcingResponse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractingResidualBudget.lean/declarations/forcingresponse.md) | 42 | `declaration-track:1c8514be8075e7bede4f0a519938f0b6644d210ee43f15cf7ecf2ded90f477f1` |
+| 2 | `theorem` | [variable_budget_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractingResidualBudget.lean/declarations/variable-budget-majorant.md) | 47 | `result-track:d80b617858dc9711287b2ca80aa6b1dd36ae8da1b36ff7aa4dae36ad1fe9c65b` |
+| 3 | `theorem` | [restart_budget_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractingResidualBudget.lean/declarations/restart-budget-majorant.md) | 63 | `result-track:817b557530cc3d80d03157fe81b471da43b25dc8af419e3cf65948824320fc91` |
+| 4 | `theorem` | [variable_budget_vanishes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractingResidualBudget.lean/declarations/variable-budget-vanishes.md) | 80 | `result-track:3dfdd67dde5fe2f2ad658cc1a50d51288e5d18dcca104a419c721b3069caae15` |
+| 5 | `theorem` | [no_fixed_negative_of_variable_forcing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractingResidualBudget.lean/declarations/no-fixed-negative-of-variable-forcing.md) | 114 | `result-track:3218de6c9cd66c373fb6c86b678048675297d01bb0d039eb81162fd955bd3554` |
+| 6 | `def` | [channelMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractingResidualBudget.lean/declarations/channelmass.md) | 137 | `declaration-track:dd0a1312166c9c09f4e8141750923df1dcc962c7ab9ba8c8da53e7d26416de5e` |
+| 7 | `theorem` | [channelMass_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractingResidualBudget.lean/declarations/channelmass-nonnegative.md) | 140 | `result-track:991a5f375dab591b9ecfb8ca64f132b782843de389a47a7a66a0c374623a1176` |
+| 8 | `theorem` | [readout_error_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractingResidualBudget.lean/declarations/readout-error-bound.md) | 147 | `result-track:3c5c992053baab036e83b0359c4ab226574dd1e67a4ca0b2125449352a203574` |
+| 9 | `theorem` | [channel_mass_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractingResidualBudget.lean/declarations/channel-mass-step.md) | 164 | `result-track:32d7f28d9aa4910cd8b563d83118dec559875238e6ee8a980a620208807518ee` |
+| 10 | `theorem` | [no_fixed_negative_of_weighted_channel_contraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractingResidualBudget.lean/declarations/no-fixed-negative-of-weighted-channel-contraction.md) | 210 | `result-track:c313f055ee1db98ebe48f5914a159007ae7d8403f1343ac2c067d7d55f2d9ff5` |
+| 11 | `theorem` | [constant_one_not_vanishing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractingResidualBudget.lean/declarations/constant-one-not-vanishing.md) | 238 | `result-track:3c727ec9737057ae1950ae40890d84a0310c3fffb756cf2f3ccf87d893938f31` |
+| 12 | `theorem` | [geometric_forcing_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractingResidualBudget.lean/declarations/geometric-forcing-recurrence.md) | 246 | `result-track:38b8304952e8bb4583308968e1e19a4155fbe15c9d16dc046f0edbf66ce44ade` |
+| 13 | `theorem` | [geometric_forcing_stage_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractingResidualBudget.lean/declarations/geometric-forcing-stage-four.md) | 254 | `result-track:7d9fef7884bd4c99cff9231d9424682bb683328e17b8c7583116e2e5d436a10d` |
+| 14 | `def` | [rowBoundCounterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractingResidualBudget.lean/declarations/rowboundcounterexample.md) | 260 | `declaration-track:5d6a2c9e9074a6180c8903f4565916d65bc797b66850751d04aeaa2008afea30` |
+| 15 | `theorem` | [row_bounds_do_not_give_column_contraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractingResidualBudget.lean/declarations/row-bounds-do-not-give-column-contraction.md) | 264 | `result-track:a742b4f7cb9cd274b15c05131b5819842e84058be7c00827cfb17cc68c64ccb9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

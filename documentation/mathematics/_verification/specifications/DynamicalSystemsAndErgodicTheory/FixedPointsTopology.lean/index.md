@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/FixedPointsTopology.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/FixedPointsTopology.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FixedPointsTopology.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FixedPointsTopology.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isFixedPt_of_tendsto_iterate](../../../../DynamicalSystemsAndErgodicTheory/FixedPointsTopology.lean/declarations/isfixedpt-of-tendsto-iterate.md) | 31 | `result-track:c459f83cc43ec685d4db24a788d5c86779bfc7bfcbfd0d11399e1900e713a6e4` |
-| 2 | `theorem` | [isClosed_fixedPoints](../../../../DynamicalSystemsAndErgodicTheory/FixedPointsTopology.lean/declarations/isclosed-fixedpoints.md) | 38 | `result-track:cafb99b5502f89706b9e1e5ba72b914a142ba829063a9edc6563b31a02282785` |
+| 1 | `theorem` | [isFixedPt_of_tendsto_iterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FixedPointsTopology.lean/declarations/isfixedpt-of-tendsto-iterate.md) | 31 | `result-track:c459f83cc43ec685d4db24a788d5c86779bfc7bfcbfd0d11399e1900e713a6e4` |
+| 2 | `theorem` | [isClosed_fixedPoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FixedPointsTopology.lean/declarations/isclosed-fixedpoints.md) | 38 | `result-track:cafb99b5502f89706b9e1e5ba72b914a142ba829063a9edc6563b31a02282785` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

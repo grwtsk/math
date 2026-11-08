@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensLogThresholdFiniteBudget.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensLogThresholdFiniteBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensLogThresholdFiniteBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensLogThresholdFiniteBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.MertensLogThresholdShortBudget`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensLogThresholdShortBudget.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.MertensLogThresholdShortBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensLogThresholdShortBudget.lean/index.md) — import line 11; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [logThresholdDepthSummand_nonneg](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensLogThresholdFiniteBudget.lean/declarations/logthresholddepthsummand-nonneg.md) | 20 | `result-track:1abab0fa3f25274c88de5811fd192183bd0e134a3d3c0d209786163034f4ae7b` |
-| 2 | `theorem` | [logThresholdDepthSummand_le_leftInv](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensLogThresholdFiniteBudget.lean/declarations/logthresholddepthsummand-le-leftinv.md) | 37 | `result-track:1a634973ad19fa2932651e92d6ddd0ac92eb93d5d2623ee3789dc336cdbc4a91` |
-| 3 | `theorem` | [logThresholdFiniteDepthSum_le_two](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensLogThresholdFiniteBudget.lean/declarations/logthresholdfinitedepthsum-le-two.md) | 82 | `result-track:8a8ae667febcf3b00d7653506676166024f5f65f17e40e7a61150b31f22cac0a` |
-| 4 | `theorem` | [logThresholdFiniteDepthBudget](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensLogThresholdFiniteBudget.lean/declarations/logthresholdfinitedepthbudget.md) | 109 | `result-track:d941e315976ec18e726230521f0afe7459136412c7ae22e4238a7c73464011ee` |
-| 5 | `theorem` | [normalizedShortPacketBudget_le_four_logThreshold](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensLogThresholdFiniteBudget.lean/declarations/normalizedshortpacketbudget-le-four-logthreshold.md) | 117 | `result-track:8f2fcedb4dda4f2dd4ea5c4e067c0dfe0395eb561b4c5c2d31b57ac5cd573352` |
+| 1 | `theorem` | [logThresholdDepthSummand_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensLogThresholdFiniteBudget.lean/declarations/logthresholddepthsummand-nonneg.md) | 20 | `result-track:1abab0fa3f25274c88de5811fd192183bd0e134a3d3c0d209786163034f4ae7b` |
+| 2 | `theorem` | [logThresholdDepthSummand_le_leftInv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensLogThresholdFiniteBudget.lean/declarations/logthresholddepthsummand-le-leftinv.md) | 37 | `result-track:1a634973ad19fa2932651e92d6ddd0ac92eb93d5d2623ee3789dc336cdbc4a91` |
+| 3 | `theorem` | [logThresholdFiniteDepthSum_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensLogThresholdFiniteBudget.lean/declarations/logthresholdfinitedepthsum-le-two.md) | 82 | `result-track:8a8ae667febcf3b00d7653506676166024f5f65f17e40e7a61150b31f22cac0a` |
+| 4 | `theorem` | [logThresholdFiniteDepthBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensLogThresholdFiniteBudget.lean/declarations/logthresholdfinitedepthbudget.md) | 109 | `result-track:d941e315976ec18e726230521f0afe7459136412c7ae22e4238a7c73464011ee` |
+| 5 | `theorem` | [normalizedShortPacketBudget_le_four_logThreshold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensLogThresholdFiniteBudget.lean/declarations/normalizedshortpacketbudget-le-four-logthreshold.md) | 117 | `result-track:8f2fcedb4dda4f2dd4ea5c4e067c0dfe0395eb561b4c5c2d31b57ac5cd573352` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

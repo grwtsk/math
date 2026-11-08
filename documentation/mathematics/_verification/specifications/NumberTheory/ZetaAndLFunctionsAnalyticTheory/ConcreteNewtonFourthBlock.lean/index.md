@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonFourthBlockSeeds`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlockSeeds.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonFourthBlockSeeds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlockSeeds.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,21 +57,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [output](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/output.md) | 15 | `declaration-track:e525124ebd15dc29a89611f40c7e2061bd33a607debaf15f08faae198ddff698` |
-| 2 | `theorem` | [endpoint_compute](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/endpoint-compute.md) | 17 | `result-track:b68e22f610a687782d8eeb60396f617bf8c424ad4c61b2c051041b4650903a52` |
-| 3 | `theorem` | [endpoint_enclosure](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/endpoint-enclosure.md) | 22 | `result-track:c44c4b9b1ba1b86c2b5c8dd531566d0a2ea886655efc1263a789f8655a267c32` |
-| 4 | `def` | [prefixIndex](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/prefixindex.md) | 29 | `declaration-track:c00acd020d2feeb2ed3fcd92aa536bab1fe2904645b6f8935897ccf73b0d59d6` |
-| 5 | `theorem` | [base_at_index](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/base-at-index.md) | 32 | `result-track:0da4ff06ea6048e7b7300d147e3f527e3d3e41190bd2c05d81d695d64fd76652` |
-| 6 | `theorem` | [rational_base_at_index](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/rational-base-at-index.md) | 34 | `result-track:7144ddc5436094cd9fbce134397bd5db3a7ac4ce458bcd523ab45407fdcf1070` |
-| 7 | `theorem` | [schedule_at_index](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/schedule-at-index.md) | 38 | `result-track:cd9d1e00ad5d0f58b99da464ce3f3bd50b8aafcfb2ad496e217ba31c94dd09c9` |
-| 8 | `theorem` | [mem_fourth_block](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/mem-fourth-block.md) | 40 | `result-track:a21f1bc4ed20204e6679a9995dd7dfa168858415d1ba4fcb34ada114c8cd01d8` |
-| 9 | `theorem` | [index_mem](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/index-mem.md) | 45 | `result-track:b694c3d8cca080c41a263c6def297928d701ef9b84aa542bf23cfe9c3d81bf49` |
-| 10 | `theorem` | [index_cover](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/index-cover.md) | 51 | `result-track:3979611bc5fd2662db535dd26a384e93917015a3fc3f5a5d68d3d31e2df02b3f` |
-| 11 | `theorem` | [fourth_block_of_records](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/fourth-block-of-records.md) | 60 | `result-track:967a68a0dd7f7bcd24621c82433fcd6325a51b202ecf3b58e04b456a05964130` |
-| 12 | `def` | [fill](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/fill.md) | 69 | `declaration-track:932f910fe0f8b890715bf5b756c3e250dd0fa7f2b8d493d6bba84756e7de72f7` |
-| 13 | `theorem` | [fill_record](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/fill-record.md) | 74 | `result-track:7ba79f0f090f7cffdf38ab499c08ac7ae831d485017c62c4b596b261c8a195ac` |
-| 14 | `theorem` | [fourth_block_check](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/fourth-block-check.md) | 82 | `result-track:ac285bff91d190b6b5828be1afccd8ca6c77d827811adce82ba28e284904f551` |
-| 15 | `theorem` | [fill_preserves_outside](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/fill-preserves-outside.md) | 87 | `result-track:4858b0174eae2239c0282ba2f6b0940e74ce44653f3ee524e47a59ba796696f8` |
+| 1 | `def` | [output](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/output.md) | 15 | `declaration-track:e525124ebd15dc29a89611f40c7e2061bd33a607debaf15f08faae198ddff698` |
+| 2 | `theorem` | [endpoint_compute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/endpoint-compute.md) | 17 | `result-track:b68e22f610a687782d8eeb60396f617bf8c424ad4c61b2c051041b4650903a52` |
+| 3 | `theorem` | [endpoint_enclosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/endpoint-enclosure.md) | 22 | `result-track:c44c4b9b1ba1b86c2b5c8dd531566d0a2ea886655efc1263a789f8655a267c32` |
+| 4 | `def` | [prefixIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/prefixindex.md) | 29 | `declaration-track:c00acd020d2feeb2ed3fcd92aa536bab1fe2904645b6f8935897ccf73b0d59d6` |
+| 5 | `theorem` | [base_at_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/base-at-index.md) | 32 | `result-track:0da4ff06ea6048e7b7300d147e3f527e3d3e41190bd2c05d81d695d64fd76652` |
+| 6 | `theorem` | [rational_base_at_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/rational-base-at-index.md) | 34 | `result-track:7144ddc5436094cd9fbce134397bd5db3a7ac4ce458bcd523ab45407fdcf1070` |
+| 7 | `theorem` | [schedule_at_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/schedule-at-index.md) | 38 | `result-track:cd9d1e00ad5d0f58b99da464ce3f3bd50b8aafcfb2ad496e217ba31c94dd09c9` |
+| 8 | `theorem` | [mem_fourth_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/mem-fourth-block.md) | 40 | `result-track:a21f1bc4ed20204e6679a9995dd7dfa168858415d1ba4fcb34ada114c8cd01d8` |
+| 9 | `theorem` | [index_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/index-mem.md) | 45 | `result-track:b694c3d8cca080c41a263c6def297928d701ef9b84aa542bf23cfe9c3d81bf49` |
+| 10 | `theorem` | [index_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/index-cover.md) | 51 | `result-track:3979611bc5fd2662db535dd26a384e93917015a3fc3f5a5d68d3d31e2df02b3f` |
+| 11 | `theorem` | [fourth_block_of_records](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/fourth-block-of-records.md) | 60 | `result-track:967a68a0dd7f7bcd24621c82433fcd6325a51b202ecf3b58e04b456a05964130` |
+| 12 | `def` | [fill](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/fill.md) | 69 | `declaration-track:932f910fe0f8b890715bf5b756c3e250dd0fa7f2b8d493d6bba84756e7de72f7` |
+| 13 | `theorem` | [fill_record](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/fill-record.md) | 74 | `result-track:7ba79f0f090f7cffdf38ab499c08ac7ae831d485017c62c4b596b261c8a195ac` |
+| 14 | `theorem` | [fourth_block_check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/fourth-block-check.md) | 82 | `result-track:ac285bff91d190b6b5828be1afccd8ca6c77d827811adce82ba28e284904f551` |
+| 15 | `theorem` | [fill_preserves_outside](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlock.lean/declarations/fill-preserves-outside.md) | 87 | `result-track:4858b0174eae2239c0282ba2f6b0940e74ce44653f3ee524e47a59ba796696f8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

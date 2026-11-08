@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CanonicalSquareTentSixteenMomentGaps.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CanonicalSquareTentSixteenMomentGaps.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CanonicalSquareTentSixteenMomentGaps.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CanonicalSquareTentSixteenMomentGaps.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenGapIntegralPositive`](../../../../MeasureAndIntegration/CanonicalSquareTentSixteenGapIntegralPositive.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentStrictRatioBridge`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentStrictRatioBridge.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenGapIntegralPositive`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CanonicalSquareTentSixteenGapIntegralPositive.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentStrictRatioBridge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentStrictRatioBridge.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [stageThree_multiplicative_gt_sixteen_pivot](../../../../MeasureAndIntegration/CanonicalSquareTentSixteenMomentGaps.lean/declarations/stagethree-multiplicative-gt-sixteen-pivot.md) | 31 | `result-track:5880767ffd24655d35fd016216d03e8633ee552460919a1e450c0be30393ab45` |
-| 2 | `theorem` | [stageFour_multiplicative_lt_sixteen_pivot](../../../../MeasureAndIntegration/CanonicalSquareTentSixteenMomentGaps.lean/declarations/stagefour-multiplicative-lt-sixteen-pivot.md) | 47 | `result-track:2ef3e499990baf2cc6dcfd4007ac5db030c5a1c7300619062d2b086a10b01c02` |
-| 3 | `theorem` | [cofactorZero_ne_zero_from_sixteen_support](../../../../MeasureAndIntegration/CanonicalSquareTentSixteenMomentGaps.lean/declarations/cofactorzero-ne-zero-from-sixteen-support.md) | 65 | `result-track:388cb612ed4f238f401b04844f4ff592f9205dcf9cedeb4bb193bb1867367245` |
+| 1 | `theorem` | [stageThree_multiplicative_gt_sixteen_pivot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CanonicalSquareTentSixteenMomentGaps.lean/declarations/stagethree-multiplicative-gt-sixteen-pivot.md) | 31 | `result-track:5880767ffd24655d35fd016216d03e8633ee552460919a1e450c0be30393ab45` |
+| 2 | `theorem` | [stageFour_multiplicative_lt_sixteen_pivot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CanonicalSquareTentSixteenMomentGaps.lean/declarations/stagefour-multiplicative-lt-sixteen-pivot.md) | 47 | `result-track:2ef3e499990baf2cc6dcfd4007ac5db030c5a1c7300619062d2b086a10b01c02` |
+| 3 | `theorem` | [cofactorZero_ne_zero_from_sixteen_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CanonicalSquareTentSixteenMomentGaps.lean/declarations/cofactorzero-ne-zero-from-sixteen-support.md) | 65 | `result-track:388cb612ed4f238f401b04844f4ff592f9205dcf9cedeb4bb193bb1867367245` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

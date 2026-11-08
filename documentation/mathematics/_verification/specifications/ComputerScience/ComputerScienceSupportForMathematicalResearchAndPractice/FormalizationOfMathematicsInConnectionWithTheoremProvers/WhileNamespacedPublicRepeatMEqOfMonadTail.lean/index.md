@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhileNamespacedPublicRepeatMEqOfMonadTail.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhileNamespacedPublicRepeatMEqOfMonadTail.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhileNamespacedPublicRepeatMEqOfMonadTail.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhileNamespacedPublicRepeatMEqOfMonadTail.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [repeatM.body_monotone_of_monadTail](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhileNamespacedPublicRepeatMEqOfMonadTail.lean/declarations/repeatm-body-monotone-of-monadtail.md) | 38 | `result-track:f287a867de5bb5169664aa744bc1abde6c36a10aa5aebb28742ca59977ac2749` |
-| 2 | `theorem` | [repeatM_eq_of_monadTail](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhileNamespacedPublicRepeatMEqOfMonadTail.lean/declarations/repeatm-eq-of-monadtail.md) | 46 | `result-track:b8bf95a745237cd2c0e56606d597c60f4e232ce7b4a2d986a64c22d587d31faa` |
-| 3 | `theorem` | [Loop.forIn_eq_of_monadTail](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhileNamespacedPublicRepeatMEqOfMonadTail.lean/declarations/loop-forin-eq-of-monadtail.md) | 55 | `result-track:1042388f9d856709af4b929c6512aa886e098866d1283f0597af13d53d65543b` |
+| 1 | `theorem` | [repeatM.body_monotone_of_monadTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhileNamespacedPublicRepeatMEqOfMonadTail.lean/declarations/repeatm-body-monotone-of-monadtail.md) | 38 | `result-track:f287a867de5bb5169664aa744bc1abde6c36a10aa5aebb28742ca59977ac2749` |
+| 2 | `theorem` | [repeatM_eq_of_monadTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhileNamespacedPublicRepeatMEqOfMonadTail.lean/declarations/repeatm-eq-of-monadtail.md) | 46 | `result-track:b8bf95a745237cd2c0e56606d597c60f4e232ce7b4a2d986a64c22d587d31faa` |
+| 3 | `theorem` | [Loop.forIn_eq_of_monadTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhileNamespacedPublicRepeatMEqOfMonadTail.lean/declarations/loop-forin-eq-of-monadtail.md) | 55 | `result-track:1042388f9d856709af4b929c6512aa886e098866d1283f0597af13d53d65543b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

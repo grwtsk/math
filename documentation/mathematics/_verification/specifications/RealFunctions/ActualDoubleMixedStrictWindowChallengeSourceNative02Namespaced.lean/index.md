@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ActualDoubleMixedStrictWindowChallengeSourceNative02Namespaced.lean/index.md) · [Full source](../../../../RealFunctions/ActualDoubleMixedStrictWindowChallengeSourceNative02Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualDoubleMixedStrictWindowChallengeSourceNative02Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualDoubleMixedStrictWindowChallengeSourceNative02Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualMixed_rectangle_correlation_lower](../../../../RealFunctions/ActualDoubleMixedStrictWindowChallengeSourceNative02Namespaced.lean/declarations/actualmixed-rectangle-correlation-lower.md) | 31 | `result-track:b08653a7b811fe3281e6f7f2ed66938c0d3c4030550fef005ee5685ba58a0443` |
-| 2 | `theorem` | [actualDoubleMixed_firstColumn_kernel_lower](../../../../RealFunctions/ActualDoubleMixedStrictWindowChallengeSourceNative02Namespaced.lean/declarations/actualdoublemixed-firstcolumn-kernel-lower.md) | 49 | `result-track:476c631405e6e149e4b3e1729e8f2efa019d9431409379df311f495a85af32b8` |
-| 3 | `theorem` | [actualMixed_rectangle_exp_prefactor_lower](../../../../RealFunctions/ActualDoubleMixedStrictWindowChallengeSourceNative02Namespaced.lean/declarations/actualmixed-rectangle-exp-prefactor-lower.md) | 78 | `result-track:e6739984850f899964646752cb65d82d375911df2288c45e92e1ac1e6f9b39e0` |
-| 4 | `theorem` | [actualDoubleMixed_rectangle_density_lower](../../../../RealFunctions/ActualDoubleMixedStrictWindowChallengeSourceNative02Namespaced.lean/declarations/actualdoublemixed-rectangle-density-lower.md) | 104 | `result-track:ea5c1fd67466d767075682bb7e827243446090f1149f2d404acec54a8423b11e` |
-| 5 | `theorem` | [actualDoubleMixed_rectangle_strict_support](../../../../RealFunctions/ActualDoubleMixedStrictWindowChallengeSourceNative02Namespaced.lean/declarations/actualdoublemixed-rectangle-strict-support.md) | 120 | `result-track:d3aa883e96640a7ebdb1ea7a7c27b72ce9a2bb7a7d963999e3603a3572f19a92` |
-| 6 | `theorem` | [actualMixed_firstColumn_not_curvature_only](../../../../RealFunctions/ActualDoubleMixedStrictWindowChallengeSourceNative02Namespaced.lean/declarations/actualmixed-firstcolumn-not-curvature-only.md) | 132 | `result-track:d40b4facdc230e533685b2a927a6e5ca2ec9efbb4eeb333b321be8822b23f2ef` |
+| 1 | `theorem` | [actualMixed_rectangle_correlation_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualDoubleMixedStrictWindowChallengeSourceNative02Namespaced.lean/declarations/actualmixed-rectangle-correlation-lower.md) | 31 | `result-track:b08653a7b811fe3281e6f7f2ed66938c0d3c4030550fef005ee5685ba58a0443` |
+| 2 | `theorem` | [actualDoubleMixed_firstColumn_kernel_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualDoubleMixedStrictWindowChallengeSourceNative02Namespaced.lean/declarations/actualdoublemixed-firstcolumn-kernel-lower.md) | 49 | `result-track:476c631405e6e149e4b3e1729e8f2efa019d9431409379df311f495a85af32b8` |
+| 3 | `theorem` | [actualMixed_rectangle_exp_prefactor_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualDoubleMixedStrictWindowChallengeSourceNative02Namespaced.lean/declarations/actualmixed-rectangle-exp-prefactor-lower.md) | 78 | `result-track:e6739984850f899964646752cb65d82d375911df2288c45e92e1ac1e6f9b39e0` |
+| 4 | `theorem` | [actualDoubleMixed_rectangle_density_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualDoubleMixedStrictWindowChallengeSourceNative02Namespaced.lean/declarations/actualdoublemixed-rectangle-density-lower.md) | 104 | `result-track:ea5c1fd67466d767075682bb7e827243446090f1149f2d404acec54a8423b11e` |
+| 5 | `theorem` | [actualDoubleMixed_rectangle_strict_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualDoubleMixedStrictWindowChallengeSourceNative02Namespaced.lean/declarations/actualdoublemixed-rectangle-strict-support.md) | 120 | `result-track:d3aa883e96640a7ebdb1ea7a7c27b72ce9a2bb7a7d963999e3603a3572f19a92` |
+| 6 | `theorem` | [actualMixed_firstColumn_not_curvature_only](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualDoubleMixedStrictWindowChallengeSourceNative02Namespaced.lean/declarations/actualmixed-firstcolumn-not-curvature-only.md) | 132 | `result-track:d40b4facdc230e533685b2a927a6e5ca2ec9efbb4eeb333b321be8822b23f2ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

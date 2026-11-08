@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BuildReceipt.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BuildReceipt.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BuildReceipt.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BuildReceipt.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [BuildStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/BuildReceipt.lean/declarations/buildstatus.md) | 7 | `declaration-track:6f321dbcdbbf5ac604add1315833428de7d223c61998665d309b31845d913923` |
-| 2 | `structure` | [BuildReceipt](../../../../../ComputerScience/AlgorithmsInComputerScience/BuildReceipt.lean/declarations/buildreceipt.md) | 14 | `declaration-track:ff60d7698ccfbc43826f02bd69ea180f3c6f344aa9418d2de9022897f974f419` |
-| 3 | `def` | [BuildReceipt.IsRetainedFailure](../../../../../ComputerScience/AlgorithmsInComputerScience/BuildReceipt.lean/declarations/buildreceipt-isretainedfailure.md) | 26 | `declaration-track:2b2b62c712c2b3382a6c1b9f1835ad6f4cd1fbf8dbdae7b3fda97a47d58323bc` |
+| 1 | `inductive` | [BuildStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BuildReceipt.lean/declarations/buildstatus.md) | 7 | `declaration-track:6f321dbcdbbf5ac604add1315833428de7d223c61998665d309b31845d913923` |
+| 2 | `structure` | [BuildReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BuildReceipt.lean/declarations/buildreceipt.md) | 14 | `declaration-track:ff60d7698ccfbc43826f02bd69ea180f3c6f344aa9418d2de9022897f974f419` |
+| 3 | `def` | [BuildReceipt.IsRetainedFailure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BuildReceipt.lean/declarations/buildreceipt-isretainedfailure.md) | 26 | `declaration-track:2b2b62c712c2b3382a6c1b9f1835ad6f4cd1fbf8dbdae7b3fda97a47d58323bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

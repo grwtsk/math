@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CatalanTreeNamespacedPublic.lean/index.md) · [Full source](../../../../Combinatorics/CatalanTreeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [pairwiseNode](../../../../Combinatorics/CatalanTreeNamespacedPublic.lean/declarations/pairwisenode.md) | 41 | `declaration-track:32e22eca54e2681813ebf7a7b54bd4db3eba4d4833fdec51577faf59ea5e1525` |
-| 2 | `def` | [treesOfNumNodesEq](../../../../Combinatorics/CatalanTreeNamespacedPublic.lean/declarations/treesofnumnodeseq.md) | 45 | `declaration-track:2b1a74a896c8985ada6e86b10612e2834420457202a5b40459ff80b10439394a` |
-| 3 | `abbrev` | [Catalan Tree Namespaced Public](../../../../Combinatorics/CatalanTreeNamespacedPublic.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-enumerativecombinatorics.md) | 56 | `declaration-track:342dc650709d7d4ab13047627db3fc0806568ea0349895b0525738af92f03cee` |
-| 4 | `theorem` | [treesOfNumNodesEq_zero](../../../../Combinatorics/CatalanTreeNamespacedPublic.lean/declarations/treesofnumnodeseq-zero.md) | 60 | `result-track:879d843fb8f49ffe2d08223f3edcc496116beb1727a88c6763801d65e39433d9` |
-| 5 | `theorem` | [treesOfNumNodesEq_succ](../../../../Combinatorics/CatalanTreeNamespacedPublic.lean/declarations/treesofnumnodeseq-succ.md) | 62 | `result-track:f05f2a5c9caf4615be381988b3c72a1df78c7143b5be57c6366aa9f6a69f0d16` |
-| 6 | `theorem` | [mem_treesOfNumNodesEq](../../../../Combinatorics/CatalanTreeNamespacedPublic.lean/declarations/mem-treesofnumnodeseq.md) | 72 | `result-track:ac14a83cc06de97b9e0d5d33f0cf96b7f81c984c5a0707f8c717a9ec2785961c` |
-| 7 | `theorem` | [mem_treesOfNumNodesEq_numNodes](../../../../Combinatorics/CatalanTreeNamespacedPublic.lean/declarations/mem-treesofnumnodeseq-numnodes.md) | 77 | `result-track:c458441fab30f8ca75c674964eca38b2f9539eb0986b37cabd7158ad8707cdc7` |
-| 8 | `theorem` | [coe_treesOfNumNodesEq](../../../../Combinatorics/CatalanTreeNamespacedPublic.lean/declarations/coe-treesofnumnodeseq.md) | 81 | `result-track:bdf1d86154971abb6799b7c553f5605e8737344ad055be84ca036bdfe4352087` |
-| 9 | `theorem` | [treesOfNumNodesEq_card_eq_catalan](../../../../Combinatorics/CatalanTreeNamespacedPublic.lean/declarations/treesofnumnodeseq-card-eq-catalan.md) | 85 | `result-track:8af2d61fa40311729ac76f98111c3b29d37aa3634821b8442929267573217f29` |
+| 1 | `abbrev` | [pairwiseNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreeNamespacedPublic.lean/declarations/pairwisenode.md) | 41 | `declaration-track:32e22eca54e2681813ebf7a7b54bd4db3eba4d4833fdec51577faf59ea5e1525` |
+| 2 | `def` | [treesOfNumNodesEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreeNamespacedPublic.lean/declarations/treesofnumnodeseq.md) | 45 | `declaration-track:2b1a74a896c8985ada6e86b10612e2834420457202a5b40459ff80b10439394a` |
+| 3 | `abbrev` | [Catalan Tree Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreeNamespacedPublic.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-enumerativecombinatorics.md) | 56 | `declaration-track:342dc650709d7d4ab13047627db3fc0806568ea0349895b0525738af92f03cee` |
+| 4 | `theorem` | [treesOfNumNodesEq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreeNamespacedPublic.lean/declarations/treesofnumnodeseq-zero.md) | 60 | `result-track:879d843fb8f49ffe2d08223f3edcc496116beb1727a88c6763801d65e39433d9` |
+| 5 | `theorem` | [treesOfNumNodesEq_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreeNamespacedPublic.lean/declarations/treesofnumnodeseq-succ.md) | 62 | `result-track:f05f2a5c9caf4615be381988b3c72a1df78c7143b5be57c6366aa9f6a69f0d16` |
+| 6 | `theorem` | [mem_treesOfNumNodesEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreeNamespacedPublic.lean/declarations/mem-treesofnumnodeseq.md) | 72 | `result-track:ac14a83cc06de97b9e0d5d33f0cf96b7f81c984c5a0707f8c717a9ec2785961c` |
+| 7 | `theorem` | [mem_treesOfNumNodesEq_numNodes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreeNamespacedPublic.lean/declarations/mem-treesofnumnodeseq-numnodes.md) | 77 | `result-track:c458441fab30f8ca75c674964eca38b2f9539eb0986b37cabd7158ad8707cdc7` |
+| 8 | `theorem` | [coe_treesOfNumNodesEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreeNamespacedPublic.lean/declarations/coe-treesofnumnodeseq.md) | 81 | `result-track:bdf1d86154971abb6799b7c553f5605e8737344ad055be84ca036bdfe4352087` |
+| 9 | `theorem` | [treesOfNumNodesEq_card_eq_catalan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreeNamespacedPublic.lean/declarations/treesofnumnodeseq-card-eq-catalan.md) | 85 | `result-track:8af2d61fa40311729ac76f98111c3b29d37aa3634821b8442929267573217f29` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [banach_unique](../../../../FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/banach-unique.md) | 37 | `result-track:9a0ae6e06ff789ec094afedc235ad98083d9e7e035aeb48b5d70d94d9f8c5d6a` |
-| 2 | `abbrev` | [banachPoint](../../../../FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/banachpoint.md) | 49 | `declaration-track:6e0875804456127693ae8c3fb08477562486c342afa7d045fe4438af72eda828` |
-| 3 | `theorem` | [banach_exists](../../../../FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/banach-exists.md) | 53 | `result-track:44e0b4976490ff68628a6e122abeb8d89f6513203616bc94d017a91b15122d0f` |
-| 4 | `theorem` | [banach_fixed](../../../../FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/banach-fixed.md) | 57 | `result-track:ed4ad66f8063528d8f9b0a4c7aa1ef4dab027811ddf1706407e487672592740b` |
-| 5 | `theorem` | [banach_iteration](../../../../FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/banach-iteration.md) | 61 | `result-track:2d33651fde6771f10f81ef4a725d617406f8bc15810f49aea2ed20f99ee76405` |
-| 6 | `abbrev` | [knasterTarskiFixedPointLattice](../../../../FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/knastertarskifixedpointlattice.md) | 73 | `declaration-track:7bc68950206e7a8c2bc11032c3f2f6f406265f82315fe0342833c911c73b37a3` |
-| 7 | `theorem` | [knasterTarski_least_fixed](../../../../FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/knastertarski-least-fixed.md) | 78 | `result-track:711dd5492922e116d9c9e2890ca3b1dc166f2b97cbe9b3df7f71c5f26a2503b2` |
-| 8 | `theorem` | [knasterTarski_greatest_fixed](../../../../FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/knastertarski-greatest-fixed.md) | 82 | `result-track:7d602ec66a34f7efa7f2f8d84cbb01d350bd1d577880e08b62b23051bd65813e` |
-| 9 | `theorem` | [knasterTarski_least](../../../../FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/knastertarski-least.md) | 86 | `result-track:32013c92dc064f7b1d2d4e47b75ef962121412eabe5b951b1f5c8b972e9a1b84` |
-| 10 | `theorem` | [knasterTarski_greatest](../../../../FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/knastertarski-greatest.md) | 90 | `result-track:bac887defcc5266d559f2d9c4108a4f8fb47cc4f80d3b624a6f21d140730c563` |
-| 11 | `theorem` | [kleene_completeLattice_iteration](../../../../FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/kleene-completelattice-iteration.md) | 96 | `result-track:600bb2977b5b2847f76b56d747ed7ffc71960237ea52984cb3f0d4b2f22f887f` |
+| 1 | `theorem` | [banach_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/banach-unique.md) | 37 | `result-track:9a0ae6e06ff789ec094afedc235ad98083d9e7e035aeb48b5d70d94d9f8c5d6a` |
+| 2 | `abbrev` | [banachPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/banachpoint.md) | 49 | `declaration-track:6e0875804456127693ae8c3fb08477562486c342afa7d045fe4438af72eda828` |
+| 3 | `theorem` | [banach_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/banach-exists.md) | 53 | `result-track:44e0b4976490ff68628a6e122abeb8d89f6513203616bc94d017a91b15122d0f` |
+| 4 | `theorem` | [banach_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/banach-fixed.md) | 57 | `result-track:ed4ad66f8063528d8f9b0a4c7aa1ef4dab027811ddf1706407e487672592740b` |
+| 5 | `theorem` | [banach_iteration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/banach-iteration.md) | 61 | `result-track:2d33651fde6771f10f81ef4a725d617406f8bc15810f49aea2ed20f99ee76405` |
+| 6 | `abbrev` | [knasterTarskiFixedPointLattice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/knastertarskifixedpointlattice.md) | 73 | `declaration-track:7bc68950206e7a8c2bc11032c3f2f6f406265f82315fe0342833c911c73b37a3` |
+| 7 | `theorem` | [knasterTarski_least_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/knastertarski-least-fixed.md) | 78 | `result-track:711dd5492922e116d9c9e2890ca3b1dc166f2b97cbe9b3df7f71c5f26a2503b2` |
+| 8 | `theorem` | [knasterTarski_greatest_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/knastertarski-greatest-fixed.md) | 82 | `result-track:7d602ec66a34f7efa7f2f8d84cbb01d350bd1d577880e08b62b23051bd65813e` |
+| 9 | `theorem` | [knasterTarski_least](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/knastertarski-least.md) | 86 | `result-track:32013c92dc064f7b1d2d4e47b75ef962121412eabe5b951b1f5c8b972e9a1b84` |
+| 10 | `theorem` | [knasterTarski_greatest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/knastertarski-greatest.md) | 90 | `result-track:bac887defcc5266d559f2d9c4108a4f8fb47cc4f80d3b624a6f21d140730c563` |
+| 11 | `theorem` | [kleene_completeLattice_iteration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FixedPointAuthorityNamespaced.lean/declarations/kleene-completelattice-iteration.md) | 96 | `result-track:600bb2977b5b2847f76b56d747ed7ffc71960237ea52984cb3f0d4b2f22f887f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

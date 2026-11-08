@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/WilsonNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/WilsonNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [wilsons_lemma](../../../../NumberTheory/WilsonNamespaced.lean/declarations/wilsons-lemma.md) | 47 | `result-track:8c85406c37591dbd8d9ea0114a832f24e4903e3f3486dda5f8be7aab388febff` |
-| 2 | `theorem` | [prod_Ico_one_prime](../../../../NumberTheory/WilsonNamespaced.lean/declarations/prod-ico-one-prime.md) | 75 | `result-track:8a66827b7b4bce8238ac9dfa779724e4e243ba2b72f171c7b20c792bced108be` |
-| 3 | `theorem` | [prime_of_fac_equiv_neg_one](../../../../NumberTheory/WilsonNamespaced.lean/declarations/prime-of-fac-equiv-neg-one.md) | 90 | `result-track:53624a9b249637354cebbe33bcc7c6c58918187d8728fa76de543089f3c7784d` |
-| 4 | `theorem` | [prime_iff_fac_equiv_neg_one](../../../../NumberTheory/WilsonNamespaced.lean/declarations/prime-iff-fac-equiv-neg-one.md) | 101 | `result-track:a5b6bd9b1275f57686652fe651315d54a3dc06d72f6c107eafe51d21feaa96d5` |
+| 1 | `theorem` | [wilsons_lemma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonNamespaced.lean/declarations/wilsons-lemma.md) | 47 | `result-track:8c85406c37591dbd8d9ea0114a832f24e4903e3f3486dda5f8be7aab388febff` |
+| 2 | `theorem` | [prod_Ico_one_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonNamespaced.lean/declarations/prod-ico-one-prime.md) | 75 | `result-track:8a66827b7b4bce8238ac9dfa779724e4e243ba2b72f171c7b20c792bced108be` |
+| 3 | `theorem` | [prime_of_fac_equiv_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonNamespaced.lean/declarations/prime-of-fac-equiv-neg-one.md) | 90 | `result-track:53624a9b249637354cebbe33bcc7c6c58918187d8728fa76de543089f3c7784d` |
+| 4 | `theorem` | [prime_iff_fac_equiv_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonNamespaced.lean/declarations/prime-iff-fac-equiv-neg-one.md) | 101 | `result-track:a5b6bd9b1275f57686652fe651315d54a3dc06d72f6c107eafe51d21feaa96d5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

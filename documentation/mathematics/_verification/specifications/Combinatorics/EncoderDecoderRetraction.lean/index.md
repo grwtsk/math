@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/EncoderDecoderRetraction.lean/index.md) · [Full source](../../../../Combinatorics/EncoderDecoderRetraction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EncoderDecoderRetraction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EncoderDecoderRetraction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [manifest_serializer_decode_encode_with](../../../../Combinatorics/EncoderDecoderRetraction.lean/declarations/manifest-serializer-decode-encode-with.md) | 39 | `result-track:f98c94e7acb5e776dcce5aa59bc5b6c7cbacf707fa81e33858435d512fddb0bb` |
-| 2 | `theorem` | [manifest_serializer_decode_encode_copy](../../../../Combinatorics/EncoderDecoderRetraction.lean/declarations/manifest-serializer-decode-encode-copy.md) | 46 | `result-track:e4a8e5cb9bfd14020a99e1d79f01a07d8c3539b10d8ede5f50ab702738012cb9` |
+| 1 | `theorem` | [manifest_serializer_decode_encode_with](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EncoderDecoderRetraction.lean/declarations/manifest-serializer-decode-encode-with.md) | 39 | `result-track:f98c94e7acb5e776dcce5aa59bc5b6c7cbacf707fa81e33858435d512fddb0bb` |
+| 2 | `theorem` | [manifest_serializer_decode_encode_copy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EncoderDecoderRetraction.lean/declarations/manifest-serializer-decode-encode-copy.md) | 46 | `result-track:e4a8e5cb9bfd14020a99e1d79f01a07d8c3539b10d8ede5f50ab702738012cb9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

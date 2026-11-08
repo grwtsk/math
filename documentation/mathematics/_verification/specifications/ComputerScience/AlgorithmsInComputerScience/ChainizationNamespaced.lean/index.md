@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ChainizationNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ChainizationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ChainizationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ChainizationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SemanticGraphSkeleton](../../../../../ComputerScience/AlgorithmsInComputerScience/ChainizationNamespaced.lean/declarations/semanticgraphskeleton.md) | 23 | `declaration-track:3fafe35d74d0c7ec06d70cc0c6b59b09fede15f8eb3354fe333821ef1a3b6c92` |
-| 2 | `structure` | [GraphChainizationCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/ChainizationNamespaced.lean/declarations/graphchainizationcertificate.md) | 38 | `declaration-track:51b6e453568b58d47d9f086940c25df43ca374caefa0b7467152a0dbf7def3e2` |
-| 3 | `theorem` | [GraphChainizationCertificate.recovers](../../../../../ComputerScience/AlgorithmsInComputerScience/ChainizationNamespaced.lean/declarations/graphchainizationcertificate-recovers.md) | 55 | `result-track:6cfba92819154bd61cc9516160fc75e472676b39d88a810e562310745f563d4f` |
-| 4 | `structure` | [ApproximateGraphChainizationCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/ChainizationNamespaced.lean/declarations/approximategraphchainizationcertificate.md) | 62 | `declaration-track:0e1ad45798fe18aa20559bfa74e4e6a46e23e3059b476cbd66d03fc8c45e3342` |
+| 1 | `structure` | [SemanticGraphSkeleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ChainizationNamespaced.lean/declarations/semanticgraphskeleton.md) | 23 | `declaration-track:3fafe35d74d0c7ec06d70cc0c6b59b09fede15f8eb3354fe333821ef1a3b6c92` |
+| 2 | `structure` | [GraphChainizationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ChainizationNamespaced.lean/declarations/graphchainizationcertificate.md) | 38 | `declaration-track:51b6e453568b58d47d9f086940c25df43ca374caefa0b7467152a0dbf7def3e2` |
+| 3 | `theorem` | [GraphChainizationCertificate.recovers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ChainizationNamespaced.lean/declarations/graphchainizationcertificate-recovers.md) | 55 | `result-track:6cfba92819154bd61cc9516160fc75e472676b39d88a810e562310745f563d4f` |
+| 4 | `structure` | [ApproximateGraphChainizationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ChainizationNamespaced.lean/declarations/approximategraphchainizationcertificate.md) | 62 | `declaration-track:0e1ad45798fe18aa20559bfa74e4e6a46e23e3059b476cbd66d03fc8c45e3342` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

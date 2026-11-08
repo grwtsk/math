@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FirstMomentConvolution.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FirstMomentConvolution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FirstMomentConvolution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FirstMomentConvolution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [first_moment_convolution_ae](../../../../MeasureAndIntegration/FirstMomentConvolution.lean/declarations/first-moment-convolution-ae.md) | 25 | `result-track:a868cd31098b66092149938a4a4693e18b4b09292a370b8a1a2079aae604d8c9` |
-| 2 | `theorem` | [first_moment_convolution_integrable](../../../../MeasureAndIntegration/FirstMomentConvolution.lean/declarations/first-moment-convolution-integrable.md) | 48 | `result-track:017c5a455a3cdfd4794b9c7f229e64c351022cb475819c7b8d9e6022193a1348` |
-| 3 | `theorem` | [first_moment_convolution_integral](../../../../MeasureAndIntegration/FirstMomentConvolution.lean/declarations/first-moment-convolution-integral.md) | 58 | `result-track:1b13a7abf50667148209cf5d712f44a54e6f32efdca74c6e30919e9bb6728e1c` |
-| 4 | `theorem` | [first_moment_convolution_integral_zero](../../../../MeasureAndIntegration/FirstMomentConvolution.lean/declarations/first-moment-convolution-integral-zero.md) | 73 | `result-track:e376110cb069c8fc9445856f51bd88e1a565ba0242365f3a7353392a287454b7` |
+| 1 | `theorem` | [first_moment_convolution_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FirstMomentConvolution.lean/declarations/first-moment-convolution-ae.md) | 25 | `result-track:a868cd31098b66092149938a4a4693e18b4b09292a370b8a1a2079aae604d8c9` |
+| 2 | `theorem` | [first_moment_convolution_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FirstMomentConvolution.lean/declarations/first-moment-convolution-integrable.md) | 48 | `result-track:017c5a455a3cdfd4794b9c7f229e64c351022cb475819c7b8d9e6022193a1348` |
+| 3 | `theorem` | [first_moment_convolution_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FirstMomentConvolution.lean/declarations/first-moment-convolution-integral.md) | 58 | `result-track:1b13a7abf50667148209cf5d712f44a54e6f32efdca74c6e30919e9bb6728e1c` |
+| 4 | `theorem` | [first_moment_convolution_integral_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FirstMomentConvolution.lean/declarations/first-moment-convolution-integral-zero.md) | 73 | `result-track:e376110cb069c8fc9445856f51bd88e1a565ba0242365f3a7353392a287454b7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

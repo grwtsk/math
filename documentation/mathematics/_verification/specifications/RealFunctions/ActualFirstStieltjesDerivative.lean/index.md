@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ActualFirstStieltjesDerivative.lean/index.md) · [Full source](../../../../RealFunctions/ActualFirstStieltjesDerivative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFirstStieltjesDerivative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFirstStieltjesDerivative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_firstStieltjes_deriv](../../../../RealFunctions/ActualFirstStieltjesDerivative.lean/declarations/actual-firststieltjes-deriv.md) | 14 | `result-track:989d43c9abfd199849ca7c7321d460d61d592ba22ed658bd91484fea04658ded` |
-| 2 | `theorem` | [actual_firstStieltjes_hasDerivAt](../../../../RealFunctions/ActualFirstStieltjesDerivative.lean/declarations/actual-firststieltjes-hasderivat.md) | 20 | `result-track:28c0d8514249f064842b88c7ba32aabb651024a8e51aa1be0ddcde2837fc96fb` |
+| 1 | `theorem` | [actual_firstStieltjes_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFirstStieltjesDerivative.lean/declarations/actual-firststieltjes-deriv.md) | 14 | `result-track:989d43c9abfd199849ca7c7321d460d61d592ba22ed658bd91484fea04658ded` |
+| 2 | `theorem` | [actual_firstStieltjes_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFirstStieltjesDerivative.lean/declarations/actual-firststieltjes-hasderivat.md) | 20 | `result-track:28c0d8514249f064842b88c7ba32aabb651024a8e51aa1be0ddcde2837fc96fb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

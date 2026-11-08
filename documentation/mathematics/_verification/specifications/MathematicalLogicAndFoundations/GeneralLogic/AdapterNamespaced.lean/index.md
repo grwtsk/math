@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdapterNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdapterNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdapterNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdapterNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TransferAdapter](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdapterNamespaced.lean/declarations/transferadapter.md) | 16 | `declaration-track:8c52b7a625219e21c36dc21712d900bad2c0cd538cbedfad652aeffa0e31671b` |
-| 2 | `def` | [adapt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdapterNamespaced.lean/declarations/adapt.md) | 21 | `declaration-track:88931b3d3170615243f853193cdd39a2229ef75e813fd8d1c5f170ed486c243a` |
-| 3 | `theorem` | [bridge_applies](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdapterNamespaced.lean/declarations/bridge-applies.md) | 27 | `result-track:1cb858d97bd3244af0e068601dae40de587df1e3a78ac5e003968f1a8c156f69` |
+| 1 | `structure` | [TransferAdapter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdapterNamespaced.lean/declarations/transferadapter.md) | 16 | `declaration-track:8c52b7a625219e21c36dc21712d900bad2c0cd538cbedfad652aeffa0e31671b` |
+| 2 | `def` | [adapt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdapterNamespaced.lean/declarations/adapt.md) | 21 | `declaration-track:88931b3d3170615243f853193cdd39a2229ef75e813fd8d1c5f170ed486c243a` |
+| 3 | `theorem` | [bridge_applies](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdapterNamespaced.lean/declarations/bridge-applies.md) | 27 | `result-track:1cb858d97bd3244af0e068601dae40de587df1e3a78ac5e003968f1a8c156f69` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

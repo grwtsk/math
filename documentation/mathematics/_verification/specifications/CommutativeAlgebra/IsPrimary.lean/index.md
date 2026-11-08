@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IsPrimary.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IsPrimary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsPrimary](../../../../CommutativeAlgebra/IsPrimary.lean/declarations/isprimary.md) | 45 | `declaration-track:341c2b079a319ad049b46af58f6d7c7e8d0e9f43da7d29b3644495d703b31bce` |
-| 2 | `lemma` | [IsPrimary.ne_top](../../../../CommutativeAlgebra/IsPrimary.lean/declarations/isprimary-ne-top.md) | 50 | `result-track:057441f2fb27773447448978613be523531be2caea5015c11cd3289789b005b2` |
-| 3 | `lemma` | [isPrimary_iff_zero_divisor_quotient_imp_nilpotent_smul](../../../../CommutativeAlgebra/IsPrimary.lean/declarations/isprimary-iff-zero-divisor-quotient-imp-nilpotent-smul.md) | 58 | `result-track:03e1917264eaab71c2de7b32390958e2834c84da2ae01aefa86e1ab80a88a949` |
+| 1 | `def` | [IsPrimary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimary.lean/declarations/isprimary.md) | 45 | `declaration-track:341c2b079a319ad049b46af58f6d7c7e8d0e9f43da7d29b3644495d703b31bce` |
+| 2 | `lemma` | [IsPrimary.ne_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimary.lean/declarations/isprimary-ne-top.md) | 50 | `result-track:057441f2fb27773447448978613be523531be2caea5015c11cd3289789b005b2` |
+| 3 | `lemma` | [isPrimary_iff_zero_divisor_quotient_imp_nilpotent_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimary.lean/declarations/isprimary-iff-zero-divisor-quotient-imp-nilpotent-smul.md) | 58 | `result-track:03e1917264eaab71c2de7b32390958e2834c84da2ae01aefa86e1ab80a88a949` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

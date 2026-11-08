@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PositiveIndexData.lean/index.md) · [Full source](../../../../NumberTheory/PositiveIndexData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PositiveIndexData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PositiveIndexData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FactorTreeLayerIndex](../../../../NumberTheory/PositiveIndexData.lean/declarations/factortreelayerindex.md) | 37 | `declaration-track:ea84382b26a7c826e478fce9169122158a01586c93fcc09b4909d6fe01ccadea` |
-| 2 | `def` | [FactorTreeLayerIndex.asPositiveNat](../../../../NumberTheory/PositiveIndexData.lean/declarations/factortreelayerindex-aspositivenat.md) | 42 | `declaration-track:94448cd35bd770d04bb733c0410b634274f867a56af8de46c50cba38884f821e` |
+| 1 | `structure` | [FactorTreeLayerIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PositiveIndexData.lean/declarations/factortreelayerindex.md) | 37 | `declaration-track:ea84382b26a7c826e478fce9169122158a01586c93fcc09b4909d6fe01ccadea` |
+| 2 | `def` | [FactorTreeLayerIndex.asPositiveNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PositiveIndexData.lean/declarations/factortreelayerindex-aspositivenat.md) | 42 | `declaration-track:94448cd35bd770d04bb733c0410b634274f867a56af8de46c50cba38884f821e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

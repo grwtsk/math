@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SignTiesAndOptionalSelection.lean/index.md) · [Full source](../../../../RealFunctions/SignTiesAndOptionalSelection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignTiesAndOptionalSelection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignTiesAndOptionalSelection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -66,15 +66,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TiePolicy](../../../../RealFunctions/SignTiesAndOptionalSelection.lean/declarations/tiepolicy.md) | 44 | `declaration-track:4bc361c6968e7ffe8420e1177ff1d7b529595d749c0ab21120286eafa3530bd8` |
-| 2 | `structure` | [OwnershipTiePolicies](../../../../RealFunctions/SignTiesAndOptionalSelection.lean/declarations/ownershiptiepolicies.md) | 51 | `declaration-track:dd1802852bed68e642f51b3c7e5f032156f9b6705a75be69dbd9c137932bcedc` |
-| 3 | `def` | [resolveThreshold](../../../../RealFunctions/SignTiesAndOptionalSelection.lean/declarations/resolvethreshold.md) | 57 | `declaration-track:98aab6518c70a91c717cbd5550b90b4e62fbd88fcac3f8e250e51bcb8295c5a8` |
-| 4 | `theorem` | [resolveThreshold_positive_tie](../../../../RealFunctions/SignTiesAndOptionalSelection.lean/declarations/resolvethreshold-positive-tie.md) | 69 | `result-track:596c67ea05f3a8ee85ed1562e1c480bb77fffa0edda1c20c9827b9144de64a38` |
-| 5 | `theorem` | [resolveThreshold_negative_tie](../../../../RealFunctions/SignTiesAndOptionalSelection.lean/declarations/resolvethreshold-negative-tie.md) | 75 | `result-track:2df9005114fac9cdbb4e6e57d878b76b90ff9877f426cc63d53a0c928cd2d08b` |
-| 6 | `theorem` | [resolveThreshold_zero_tie](../../../../RealFunctions/SignTiesAndOptionalSelection.lean/declarations/resolvethreshold-zero-tie.md) | 81 | `result-track:d390c6dcd9e7a246ed0e77b89a32c9b19d542587626c1105320649ebcbf3d032` |
-| 7 | `def` | [resolveRasterBit](../../../../RealFunctions/SignTiesAndOptionalSelection.lean/declarations/resolverasterbit.md) | 89 | `declaration-track:dfad8ce1f8cb6f85bc308114052319e4616be57275082af9bda63368f09f8285` |
-| 8 | `theorem` | [resolveRasterBit_owner_tie](../../../../RealFunctions/SignTiesAndOptionalSelection.lean/declarations/resolverasterbit-owner-tie.md) | 96 | `result-track:35ba45654faae34261f9e392fc4ed874a3ba6c20175b33a8b27ab0b4ba25c740` |
-| 9 | `theorem` | [resolveRasterBit_without_owner](../../../../RealFunctions/SignTiesAndOptionalSelection.lean/declarations/resolverasterbit-without-owner.md) | 102 | `result-track:56ccdae33eeb92bc92356c715958e2f6bdeb74a68be08e0c8911127bc6a8c3d1` |
+| 1 | `inductive` | [TiePolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignTiesAndOptionalSelection.lean/declarations/tiepolicy.md) | 44 | `declaration-track:4bc361c6968e7ffe8420e1177ff1d7b529595d749c0ab21120286eafa3530bd8` |
+| 2 | `structure` | [OwnershipTiePolicies](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignTiesAndOptionalSelection.lean/declarations/ownershiptiepolicies.md) | 51 | `declaration-track:dd1802852bed68e642f51b3c7e5f032156f9b6705a75be69dbd9c137932bcedc` |
+| 3 | `def` | [resolveThreshold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignTiesAndOptionalSelection.lean/declarations/resolvethreshold.md) | 57 | `declaration-track:98aab6518c70a91c717cbd5550b90b4e62fbd88fcac3f8e250e51bcb8295c5a8` |
+| 4 | `theorem` | [resolveThreshold_positive_tie](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignTiesAndOptionalSelection.lean/declarations/resolvethreshold-positive-tie.md) | 69 | `result-track:596c67ea05f3a8ee85ed1562e1c480bb77fffa0edda1c20c9827b9144de64a38` |
+| 5 | `theorem` | [resolveThreshold_negative_tie](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignTiesAndOptionalSelection.lean/declarations/resolvethreshold-negative-tie.md) | 75 | `result-track:2df9005114fac9cdbb4e6e57d878b76b90ff9877f426cc63d53a0c928cd2d08b` |
+| 6 | `theorem` | [resolveThreshold_zero_tie](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignTiesAndOptionalSelection.lean/declarations/resolvethreshold-zero-tie.md) | 81 | `result-track:d390c6dcd9e7a246ed0e77b89a32c9b19d542587626c1105320649ebcbf3d032` |
+| 7 | `def` | [resolveRasterBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignTiesAndOptionalSelection.lean/declarations/resolverasterbit.md) | 89 | `declaration-track:dfad8ce1f8cb6f85bc308114052319e4616be57275082af9bda63368f09f8285` |
+| 8 | `theorem` | [resolveRasterBit_owner_tie](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignTiesAndOptionalSelection.lean/declarations/resolverasterbit-owner-tie.md) | 96 | `result-track:35ba45654faae34261f9e392fc4ed874a3ba6c20175b33a8b27ab0b4ba25c740` |
+| 9 | `theorem` | [resolveRasterBit_without_owner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignTiesAndOptionalSelection.lean/declarations/resolverasterbit-without-owner.md) | 102 | `result-track:56ccdae33eeb92bc92356c715958e2f6bdeb74a68be08e0c8911127bc6a8c3d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

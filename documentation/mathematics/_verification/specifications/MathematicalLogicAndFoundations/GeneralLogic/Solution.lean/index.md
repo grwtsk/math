@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Solution.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Solution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Solution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Solution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Solution.lean/declarations/hex.md) | 1 | `result-track:a4457b3302b22c2a72c1d23df2ec01248a6c9275f361da1f3ff41e5d4dd11242` |
-| 2 | `def` | [w](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Solution.lean/declarations/w.md) | 3 | `declaration-track:461464403a7284d98b7adb1716aaddec9288df646e6b920dfd26f8a1f365d758` |
-| 3 | `theorem` | [hw](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Solution.lean/declarations/hw.md) | 5 | `result-track:c4361620dbc75f17f7abd84dc2e82242a228d3cdc41bb23df2ace0b8444305e7` |
+| 1 | `theorem` | [hex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Solution.lean/declarations/hex.md) | 1 | `result-track:a4457b3302b22c2a72c1d23df2ec01248a6c9275f361da1f3ff41e5d4dd11242` |
+| 2 | `def` | [w](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Solution.lean/declarations/w.md) | 3 | `declaration-track:461464403a7284d98b7adb1716aaddec9288df646e6b920dfd26f8a1f365d758` |
+| 3 | `theorem` | [hw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Solution.lean/declarations/hw.md) | 5 | `result-track:c4361620dbc75f17f7abd84dc2e82242a228d3cdc41bb23df2ace0b8444305e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

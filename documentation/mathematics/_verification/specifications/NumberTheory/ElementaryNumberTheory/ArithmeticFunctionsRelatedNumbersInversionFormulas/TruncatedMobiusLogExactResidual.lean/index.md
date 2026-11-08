@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMobiusLogExactResidual.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMobiusLogExactResidual.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMobiusLogExactResidual.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMobiusLogExactResidual.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.TruncatedMobiusLogReconstruction`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMobiusLogReconstruction.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.TruncatedMobiusLogReconstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMobiusLogReconstruction.lean/index.md) — import line 9; pinned internal source present.
 - `Mathlib.Tactic` — import line 10; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mobiusLogDivisorRow_two_mul_decomposition](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMobiusLogExactResidual.lean/declarations/mobiuslogdivisorrow-two-mul-decomposition.md) | 20 | `result-track:56e0c9dbe3c764eb65a80d59ef0469ea6664f7ab39078e55e3e53ad90f1cdcaa` |
-| 2 | `theorem` | [mobiusLogReconstructionResidual_eq_a_mul_log_two](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMobiusLogExactResidual.lean/declarations/mobiuslogreconstructionresidual-eq-a-mul-log-two.md) | 64 | `result-track:144f48a647f461b1f7c08ea34eea6204b80058742000305a2d5899215de28e65` |
-| 3 | `theorem` | [mobiusLogReconstruction_coefficient_formula](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMobiusLogExactResidual.lean/declarations/mobiuslogreconstruction-coefficient-formula.md) | 73 | `result-track:7ac13a603ce9063a8765d14dc07222607cb0ffb8a21e32368133a5488cc89c5f` |
+| 1 | `theorem` | [mobiusLogDivisorRow_two_mul_decomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMobiusLogExactResidual.lean/declarations/mobiuslogdivisorrow-two-mul-decomposition.md) | 20 | `result-track:56e0c9dbe3c764eb65a80d59ef0469ea6664f7ab39078e55e3e53ad90f1cdcaa` |
+| 2 | `theorem` | [mobiusLogReconstructionResidual_eq_a_mul_log_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMobiusLogExactResidual.lean/declarations/mobiuslogreconstructionresidual-eq-a-mul-log-two.md) | 64 | `result-track:144f48a647f461b1f7c08ea34eea6204b80058742000305a2d5899215de28e65` |
+| 3 | `theorem` | [mobiusLogReconstruction_coefficient_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMobiusLogExactResidual.lean/declarations/mobiuslogreconstruction-coefficient-formula.md) | 73 | `result-track:7ac13a603ce9063a8765d14dc07222607cb0ffb8a21e32368133a5488cc89c5f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

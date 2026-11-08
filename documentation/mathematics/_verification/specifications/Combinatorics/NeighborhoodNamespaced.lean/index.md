@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/NeighborhoodNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/NeighborhoodNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NeighborhoodNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NeighborhoodNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cutShell](../../../../Combinatorics/NeighborhoodNamespaced.lean/declarations/cutshell.md) | 22 | `declaration-track:c66cf3f5748746dc249f60a9f63f1d695e9b6a35684e35695e83e8d9c86e09e0` |
-| 2 | `def` | [downstreamCone](../../../../Combinatorics/NeighborhoodNamespaced.lean/declarations/downstreamcone.md) | 29 | `declaration-track:483de35a8d0b43f6a7e2092e81823ad4126bdb1bedf879616fb7d1f71db45501` |
-| 3 | `structure` | [PrimeCutCombinatorics](../../../../Combinatorics/NeighborhoodNamespaced.lean/declarations/primecutcombinatorics.md) | 36 | `declaration-track:2470c60ab3bcdf449338f39d3adda8a12e464e24ab0d01cffaac123e5e32a8c2` |
+| 1 | `def` | [cutShell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NeighborhoodNamespaced.lean/declarations/cutshell.md) | 22 | `declaration-track:c66cf3f5748746dc249f60a9f63f1d695e9b6a35684e35695e83e8d9c86e09e0` |
+| 2 | `def` | [downstreamCone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NeighborhoodNamespaced.lean/declarations/downstreamcone.md) | 29 | `declaration-track:483de35a8d0b43f6a7e2092e81823ad4126bdb1bedf879616fb7d1f71db45501` |
+| 3 | `structure` | [PrimeCutCombinatorics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NeighborhoodNamespaced.lean/declarations/primecutcombinatorics.md) | 36 | `declaration-track:2470c60ab3bcdf449338f39d3adda8a12e464e24ab0d01cffaac123e5e32a8c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

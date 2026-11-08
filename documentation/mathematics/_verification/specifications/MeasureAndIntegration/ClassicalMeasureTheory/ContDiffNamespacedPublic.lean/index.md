@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContDiffNamespacedPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContDiffNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContDiffNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContDiffNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integral_deriv_of_contDiffOn_Icc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContDiffNamespacedPublic.lean/declarations/integral-deriv-of-contdiffon-icc.md) | 42 | `result-track:7a39d204b2af969471e422f87065dc68982de52115752209d9d9d6bf08032531` |
-| 2 | `theorem` | [integral_derivWithin_Icc_of_contDiffOn_Icc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContDiffNamespacedPublic.lean/declarations/integral-derivwithin-icc-of-contdiffon-icc.md) | 60 | `result-track:c9e5c50b1446e32d5b01423b1070db1f1eef67cd3e0462c0eed2c2a4e6d06322` |
-| 3 | `theorem` | [integral_deriv_of_contDiffOn_uIcc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContDiffNamespacedPublic.lean/declarations/integral-deriv-of-contdiffon-uicc.md) | 71 | `result-track:33f0e60f2a32574a0b0dc4c4fb6ca430b8ac2ffc2e7537fe275688e210525957` |
-| 4 | `theorem` | [integral_derivWithin_uIcc_of_contDiffOn_uIcc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContDiffNamespacedPublic.lean/declarations/integral-derivwithin-uicc-of-contdiffon-uicc.md) | 82 | `result-track:95ed88f12c4d80756ea75fca0b1a7ea2a675cd26b10fe509738af10af5e78672` |
-| 5 | `theorem` | [enorm_sub_le_lintegral_deriv_of_contDiffOn_Icc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContDiffNamespacedPublic.lean/declarations/enorm-sub-le-lintegral-deriv-of-contdiffon-icc.md) | 95 | `result-track:ef5c68e3040bbe316f4f7f86bbf0fb2082ada4f64fbac0a0bfb5466283c19d10` |
-| 6 | `theorem` | [enorm_sub_le_lintegral_derivWithin_Icc_of_contDiffOn_Icc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContDiffNamespacedPublic.lean/declarations/enorm-sub-le-lintegral-derivwithin-icc-of-contdiffon-icc.md) | 117 | `result-track:d69f797a6f9e41a114255fec3cf6d39f6213096ab6317eb0c4359b51fdd513d2` |
+| 1 | `theorem` | [integral_deriv_of_contDiffOn_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContDiffNamespacedPublic.lean/declarations/integral-deriv-of-contdiffon-icc.md) | 42 | `result-track:7a39d204b2af969471e422f87065dc68982de52115752209d9d9d6bf08032531` |
+| 2 | `theorem` | [integral_derivWithin_Icc_of_contDiffOn_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContDiffNamespacedPublic.lean/declarations/integral-derivwithin-icc-of-contdiffon-icc.md) | 60 | `result-track:c9e5c50b1446e32d5b01423b1070db1f1eef67cd3e0462c0eed2c2a4e6d06322` |
+| 3 | `theorem` | [integral_deriv_of_contDiffOn_uIcc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContDiffNamespacedPublic.lean/declarations/integral-deriv-of-contdiffon-uicc.md) | 71 | `result-track:33f0e60f2a32574a0b0dc4c4fb6ca430b8ac2ffc2e7537fe275688e210525957` |
+| 4 | `theorem` | [integral_derivWithin_uIcc_of_contDiffOn_uIcc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContDiffNamespacedPublic.lean/declarations/integral-derivwithin-uicc-of-contdiffon-uicc.md) | 82 | `result-track:95ed88f12c4d80756ea75fca0b1a7ea2a675cd26b10fe509738af10af5e78672` |
+| 5 | `theorem` | [enorm_sub_le_lintegral_deriv_of_contDiffOn_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContDiffNamespacedPublic.lean/declarations/enorm-sub-le-lintegral-deriv-of-contdiffon-icc.md) | 95 | `result-track:ef5c68e3040bbe316f4f7f86bbf0fb2082ada4f64fbac0a0bfb5466283c19d10` |
+| 6 | `theorem` | [enorm_sub_le_lintegral_derivWithin_Icc_of_contDiffOn_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContDiffNamespacedPublic.lean/declarations/enorm-sub-le-lintegral-derivwithin-icc-of-contdiffon-icc.md) | 117 | `result-track:d69f797a6f9e41a114255fec3cf6d39f6213096ab6317eb0c4359b51fdd513d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

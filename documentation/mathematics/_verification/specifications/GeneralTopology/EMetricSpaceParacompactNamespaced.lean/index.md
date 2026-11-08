@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/EMetricSpaceParacompactNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/EMetricSpaceParacompactNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EMetricSpaceParacompactNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EMetricSpaceParacompactNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/EMetricSpaceParacompactNamespaced.lean/declarations/instance.md) | 48 | `declaration-track:5682139fdf7f754cb536636d664046fc4fdd64c3e83bb573920e503c50e53b6b` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/EMetricSpaceParacompactNamespaced.lean/declarations/instance-source-edition-2.md) | 177 | `declaration-track:6b7a13f46653f02c2d88d94dee50f7ff692f8fc53672a6ee11a478d1a3ecb63a` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EMetricSpaceParacompactNamespaced.lean/declarations/instance.md) | 48 | `declaration-track:5682139fdf7f754cb536636d664046fc4fdd64c3e83bb573920e503c50e53b6b` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EMetricSpaceParacompactNamespaced.lean/declarations/instance-source-edition-2.md) | 177 | `declaration-track:6b7a13f46653f02c2d88d94dee50f7ff692f8fc53672a6ee11a478d1a3ecb63a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

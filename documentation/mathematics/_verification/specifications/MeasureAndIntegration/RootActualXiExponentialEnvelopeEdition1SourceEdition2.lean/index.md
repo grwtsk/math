@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RootActualXiExponentialEnvelopeEdition1SourceEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RootActualXiExponentialEnvelopeEdition1SourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiExponentialEnvelopeEdition1SourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiExponentialEnvelopeEdition1SourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualXiExponentialEnvelopeConstant](../../../../MeasureAndIntegration/RootActualXiExponentialEnvelopeEdition1SourceEdition2.lean/declarations/actualxiexponentialenvelopeconstant.md) | 20 | `declaration-track:4a198b050c7ca1210a7ecbf6bb1e82304df7ae5511c85ce7dc7b243bdb5f6ee8` |
-| 2 | `theorem` | [coefficient_nonneg](../../../../MeasureAndIntegration/RootActualXiExponentialEnvelopeEdition1SourceEdition2.lean/declarations/coefficient-nonneg.md) | 23 | `result-track:a2d483bafdfb997ca1341bcbf073393bb2274d66781f1dae53b375e5ef01d9fe` |
-| 3 | `theorem` | [actualXiTailTimeDensity_abs_le](../../../../MeasureAndIntegration/RootActualXiExponentialEnvelopeEdition1SourceEdition2.lean/declarations/actualxitailtimedensity-abs-le.md) | 28 | `result-track:c85d1efc83a1223d979e567c1bec71d6d579ebab59584c09e7773359e0617441` |
-| 4 | `theorem` | [actualAnchoredXiTailPrimitive_abs_le](../../../../MeasureAndIntegration/RootActualXiExponentialEnvelopeEdition1SourceEdition2.lean/declarations/actualanchoredxitailprimitive-abs-le.md) | 50 | `result-track:959f636caf53c1d153a6f6fb094e2043c767876c974c35980c4135c5bc20c6c3` |
+| 1 | `def` | [actualXiExponentialEnvelopeConstant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiExponentialEnvelopeEdition1SourceEdition2.lean/declarations/actualxiexponentialenvelopeconstant.md) | 20 | `declaration-track:4a198b050c7ca1210a7ecbf6bb1e82304df7ae5511c85ce7dc7b243bdb5f6ee8` |
+| 2 | `theorem` | [coefficient_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiExponentialEnvelopeEdition1SourceEdition2.lean/declarations/coefficient-nonneg.md) | 23 | `result-track:a2d483bafdfb997ca1341bcbf073393bb2274d66781f1dae53b375e5ef01d9fe` |
+| 3 | `theorem` | [actualXiTailTimeDensity_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiExponentialEnvelopeEdition1SourceEdition2.lean/declarations/actualxitailtimedensity-abs-le.md) | 28 | `result-track:c85d1efc83a1223d979e567c1bec71d6d579ebab59584c09e7773359e0617441` |
+| 4 | `theorem` | [actualAnchoredXiTailPrimitive_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiExponentialEnvelopeEdition1SourceEdition2.lean/declarations/actualanchoredxitailprimitive-abs-le.md) | 50 | `result-track:959f636caf53c1d153a6f6fb094e2043c767876c974c35980c4135c5bc20c6c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

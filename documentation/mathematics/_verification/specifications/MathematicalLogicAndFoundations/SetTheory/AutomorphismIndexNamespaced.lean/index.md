@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/SetTheory/AutomorphismIndexNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/SetTheory/AutomorphismIndexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/AutomorphismIndexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/AutomorphismIndexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OrbitLocalRank](../../../../../MathematicalLogicAndFoundations/SetTheory/AutomorphismIndexNamespaced.lean/declarations/orbitlocalrank.md) | 19 | `declaration-track:2376ca1d72941c2e7c51822e37b4bc30b2ba38931b327e775585de7ed4d5d54a` |
-| 2 | `def` | [orbitFrontierIndex](../../../../../MathematicalLogicAndFoundations/SetTheory/AutomorphismIndexNamespaced.lean/declarations/orbitfrontierindex.md) | 28 | `declaration-track:66a72c80b6edccfa6dd0c54309af75633751d1b9600068e3bb72fb7efa6b71aa` |
-| 3 | `theorem` | [orbit_index_invariant](../../../../../MathematicalLogicAndFoundations/SetTheory/AutomorphismIndexNamespaced.lean/declarations/orbit-index-invariant.md) | 38 | `result-track:5c8b1245568f10d3a2d2390613124d80031e0c358b96ffcdcc24ab5149e8b4c1` |
+| 1 | `structure` | [OrbitLocalRank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/AutomorphismIndexNamespaced.lean/declarations/orbitlocalrank.md) | 19 | `declaration-track:2376ca1d72941c2e7c51822e37b4bc30b2ba38931b327e775585de7ed4d5d54a` |
+| 2 | `def` | [orbitFrontierIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/AutomorphismIndexNamespaced.lean/declarations/orbitfrontierindex.md) | 28 | `declaration-track:66a72c80b6edccfa6dd0c54309af75633751d1b9600068e3bb72fb7efa6b71aa` |
+| 3 | `theorem` | [orbit_index_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/AutomorphismIndexNamespaced.lean/declarations/orbit-index-invariant.md) | 38 | `result-track:5c8b1245568f10d3a2d2390613124d80031e0c358b96ffcdcc24ab5149e8b4c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

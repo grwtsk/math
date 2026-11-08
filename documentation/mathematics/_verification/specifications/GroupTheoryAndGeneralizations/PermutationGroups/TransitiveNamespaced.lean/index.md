@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TransitiveNamespaced.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TransitiveNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/TransitiveNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/TransitiveNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isPretransitive_iff_base](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TransitiveNamespaced.lean/declarations/ispretransitive-iff-base.md) | 47 | `result-track:70cb0109a2021206e45b04acf3e62acfbdf71c248eb67d4b16324331c2cf650c` |
-| 2 | `theorem` | [isPretransitive_iff_orbit_eq_univ](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TransitiveNamespaced.lean/declarations/ispretransitive-iff-orbit-eq-univ.md) | 58 | `result-track:73c0970afbb56d419745ead4687499f2d5ac8464d9fe892aaf35619385556d89` |
-| 3 | `theorem` | [IsPretransitive.of_surjective_map](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TransitiveNamespaced.lean/declarations/ispretransitive-of-surjective-map.md) | 68 | `result-track:9806d62ed7777bd3b6ac9ce07558726b23342d27c7a918fc6335bc45ee5345df` |
-| 4 | `theorem` | [isPretransitive_congr](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TransitiveNamespaced.lean/declarations/ispretransitive-congr.md) | 79 | `result-track:81ef18f33313f40071123b3e26c53e73207176bf391857055319ca137289c93b` |
+| 1 | `theorem` | [isPretransitive_iff_base](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/TransitiveNamespaced.lean/declarations/ispretransitive-iff-base.md) | 47 | `result-track:70cb0109a2021206e45b04acf3e62acfbdf71c248eb67d4b16324331c2cf650c` |
+| 2 | `theorem` | [isPretransitive_iff_orbit_eq_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/TransitiveNamespaced.lean/declarations/ispretransitive-iff-orbit-eq-univ.md) | 58 | `result-track:73c0970afbb56d419745ead4687499f2d5ac8464d9fe892aaf35619385556d89` |
+| 3 | `theorem` | [IsPretransitive.of_surjective_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/TransitiveNamespaced.lean/declarations/ispretransitive-of-surjective-map.md) | 68 | `result-track:9806d62ed7777bd3b6ac9ce07558726b23342d27c7a918fc6335bc45ee5345df` |
+| 4 | `theorem` | [isPretransitive_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/TransitiveNamespaced.lean/declarations/ispretransitive-congr.md) | 79 | `result-track:81ef18f33313f40071123b3e26c53e73207176bf391857055319ca137289c93b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

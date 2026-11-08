@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalCheckedPoleJet`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CheckedJetContour`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CheckedJetContour.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalCheckedPoleJet`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CheckedJetContour`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CheckedJetContour.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [packets](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/declarations/packets.md) | 25 | `declaration-track:dc1dc3554f10eac0a09ee41fd1c694bff03678e0c7f563b36a688909d4eff8b1` |
-| 2 | `theorem` | [packets_length](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/declarations/packets-length.md) | 28 | `result-track:0ae21c2a0027803bce71b4dec1048cce8d8c855a11ca6a42f1d1c2b3b316885e` |
-| 3 | `theorem` | [packetAt_packets](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/declarations/packetat-packets.md) | 32 | `result-track:4330a62c01768ae3427ca89df78016bc70ddef3058752e487c1986f9437fbd9a` |
-| 4 | `theorem` | [edgeCheck_packets](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/declarations/edgecheck-packets.md) | 41 | `result-track:b492e06ea62997273ff9dd611bcc4c950f9019a9dd111564d7181a4e582586f5` |
-| 5 | `theorem` | [check_packets](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/declarations/check-packets.md) | 53 | `result-track:ec9e1122e5ef27876725818306dd1b50eeda17a237583444e46225f5e8b524ca` |
-| 6 | `theorem` | [evaluate_packets](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/declarations/evaluate-packets.md) | 66 | `result-track:fa28e8c5a989dbd698a53877f6499a43531d57683564d27a63e6de0329b8846e` |
-| 7 | `theorem` | [evaluate_packets_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/declarations/evaluate-packets-eq.md) | 73 | `result-track:c5d1e6a8167add17bec7e20cfae058f891f4536553b8db0111673efdabc74ba7` |
-| 8 | `theorem` | [evaluateRectangle_packets_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/declarations/evaluaterectangle-packets-eq.md) | 86 | `result-track:0671f62759216bdd7481ccebbc92b4f508a346cde172858209a4676f762730a6` |
-| 9 | `theorem` | [count_eq_of_packets](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/declarations/count-eq-of-packets.md) | 98 | `result-track:e48c15232f24b83b4f206886cce170058aef813190646d961bf2c164b917a216` |
+| 1 | `def` | [packets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/declarations/packets.md) | 25 | `declaration-track:dc1dc3554f10eac0a09ee41fd1c694bff03678e0c7f563b36a688909d4eff8b1` |
+| 2 | `theorem` | [packets_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/declarations/packets-length.md) | 28 | `result-track:0ae21c2a0027803bce71b4dec1048cce8d8c855a11ca6a42f1d1c2b3b316885e` |
+| 3 | `theorem` | [packetAt_packets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/declarations/packetat-packets.md) | 32 | `result-track:4330a62c01768ae3427ca89df78016bc70ddef3058752e487c1986f9437fbd9a` |
+| 4 | `theorem` | [edgeCheck_packets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/declarations/edgecheck-packets.md) | 41 | `result-track:b492e06ea62997273ff9dd611bcc4c950f9019a9dd111564d7181a4e582586f5` |
+| 5 | `theorem` | [check_packets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/declarations/check-packets.md) | 53 | `result-track:ec9e1122e5ef27876725818306dd1b50eeda17a237583444e46225f5e8b524ca` |
+| 6 | `theorem` | [evaluate_packets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/declarations/evaluate-packets.md) | 66 | `result-track:fa28e8c5a989dbd698a53877f6499a43531d57683564d27a63e6de0329b8846e` |
+| 7 | `theorem` | [evaluate_packets_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/declarations/evaluate-packets-eq.md) | 73 | `result-track:c5d1e6a8167add17bec7e20cfae058f891f4536553b8db0111673efdabc74ba7` |
+| 8 | `theorem` | [evaluateRectangle_packets_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/declarations/evaluaterectangle-packets-eq.md) | 86 | `result-track:0671f62759216bdd7481ccebbc92b4f508a346cde172858209a4676f762730a6` |
+| 9 | `theorem` | [count_eq_of_packets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetContour.lean/declarations/count-eq-of-packets.md) | 98 | `result-track:e48c15232f24b83b4f206886cce170058aef813190646d961bf2c164b917a216` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

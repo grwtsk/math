@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicReturn.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicReturn.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicReturn.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicReturn.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Return](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicReturn.lean/declarations/return.md) | 24 | `declaration-track:bff056777e59903528addae368fd321783ab7456913c2241f52617f1511f52c6` |
-| 2 | `def` | [bitblast](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicReturn.lean/declarations/bitblast.md) | 30 | `declaration-track:73aa669e7d2a1d433209b91377a6d1f7c9753739e86c9b5704d64fbebfac51fa` |
-| 3 | `theorem` | [bitblast_decl_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicReturn.lean/declarations/bitblast-decl-eq.md) | 65 | `result-track:5006ff10bf30b434a72ad05a5835d18740dc52d04d1f0338071012b247cd81c2` |
-| 4 | `theorem` | [bitblast_le_size](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicReturn.lean/declarations/bitblast-le-size.md) | 97 | `result-track:4245318caf5d9a18e38774b47d662241b013cf9d5b86e8fce7d761d36e1314f3` |
+| 1 | `structure` | [Return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicReturn.lean/declarations/return.md) | 24 | `declaration-track:bff056777e59903528addae368fd321783ab7456913c2241f52617f1511f52c6` |
+| 2 | `def` | [bitblast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicReturn.lean/declarations/bitblast.md) | 30 | `declaration-track:73aa669e7d2a1d433209b91377a6d1f7c9753739e86c9b5704d64fbebfac51fa` |
+| 3 | `theorem` | [bitblast_decl_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicReturn.lean/declarations/bitblast-decl-eq.md) | 65 | `result-track:5006ff10bf30b434a72ad05a5835d18740dc52d04d1f0338071012b247cd81c2` |
+| 4 | `theorem` | [bitblast_le_size](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredPublicReturn.lean/declarations/bitblast-le-size.md) | 97 | `result-track:4245318caf5d9a18e38774b47d662241b013cf9d5b86e8fce7d761d36e1314f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

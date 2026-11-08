@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KNullBridge.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KNullBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KNullBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KNullBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [KEqual128](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KNullBridge.lean/declarations/kequal128.md) | 6 | `declaration-track:433c336de3f3e15a10afb8a963a2a4dfec7057c89eca3ff3d52a2b4a60f0d851` |
-| 2 | `def` | [KResidueHeat128](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KNullBridge.lean/declarations/kresidueheat128.md) | 9 | `declaration-track:3727ba735bb82ce88a744dd9b86d040f8503e0ebc8d618820719a80d35d779f9` |
-| 3 | `def` | [KNull](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KNullBridge.lean/declarations/knull.md) | 12 | `declaration-track:a15286f11c68e741396b4198cb9054185a8a756de920ace8531f9e6cc4a1c365` |
-| 4 | `theorem` | [k_null_iff_zero_residue](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KNullBridge.lean/declarations/k-null-iff-zero-residue.md) | 15 | `result-track:ce170f770ff69c4e0c24fc7addfc1eb7d8d99bf0002d7fbdf4c26758478fbe59` |
-| 5 | `theorem` | [exact_null_transports_to_k_null](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KNullBridge.lean/declarations/exact-null-transports-to-k-null.md) | 25 | `result-track:cf5ed8b0b63aa87cc7c0fc34d52968e7f1db345a373863a17b4a79c58d99bb7f` |
-| 6 | `theorem` | [force_density_bridge_null](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KNullBridge.lean/declarations/force-density-bridge-null.md) | 35 | `result-track:7061a3bd9b203749fc803479407f3fb78aee7f28f50d1b31b018177f8488538e` |
+| 1 | `def` | [KEqual128](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KNullBridge.lean/declarations/kequal128.md) | 6 | `declaration-track:433c336de3f3e15a10afb8a963a2a4dfec7057c89eca3ff3d52a2b4a60f0d851` |
+| 2 | `def` | [KResidueHeat128](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KNullBridge.lean/declarations/kresidueheat128.md) | 9 | `declaration-track:3727ba735bb82ce88a744dd9b86d040f8503e0ebc8d618820719a80d35d779f9` |
+| 3 | `def` | [KNull](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KNullBridge.lean/declarations/knull.md) | 12 | `declaration-track:a15286f11c68e741396b4198cb9054185a8a756de920ace8531f9e6cc4a1c365` |
+| 4 | `theorem` | [k_null_iff_zero_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KNullBridge.lean/declarations/k-null-iff-zero-residue.md) | 15 | `result-track:ce170f770ff69c4e0c24fc7addfc1eb7d8d99bf0002d7fbdf4c26758478fbe59` |
+| 5 | `theorem` | [exact_null_transports_to_k_null](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KNullBridge.lean/declarations/exact-null-transports-to-k-null.md) | 25 | `result-track:cf5ed8b0b63aa87cc7c0fc34d52968e7f1db345a373863a17b4a79c58d99bb7f` |
+| 6 | `theorem` | [force_density_bridge_null](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KNullBridge.lean/declarations/force-density-bridge-null.md) | 35 | `result-track:7061a3bd9b203749fc803479407f3fb78aee7f28f50d1b31b018177f8488538e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

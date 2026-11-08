@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenL2Comparison.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenL2Comparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenL2Comparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenL2Comparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFullResidualEnergy`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFullResidualEnergy.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFullResidualEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFullResidualEnergy.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [greenCenteredMobiusLogComparisonEnergy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenL2Comparison.lean/declarations/greencenteredmobiuslogcomparisonenergy.md) | 17 | `declaration-track:3f2fb94821c8f44f11fd85da5374b8d553048fc724d4b8c37f22cbb9da0c9a2b` |
-| 2 | `theorem` | [sq_norm_green_plus_centered_eq_residual](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenL2Comparison.lean/declarations/sq-norm-green-plus-centered-eq-residual.md) | 24 | `result-track:47fc0873124385c84de95f9657844a265bbbb25f30334d0db2bf23048ea29755` |
-| 3 | `theorem` | [summable_greenCenteredMobiusLogComparisonEnergy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenL2Comparison.lean/declarations/summable-greencenteredmobiuslogcomparisonenergy.md) | 32 | `result-track:110056bb21ce8f7f9f346797b6125c6aa5b2cf20240211829d573f63224b7d86` |
-| 4 | `theorem` | [greenCenteredMobiusLogComparisonEnergy_eq_residualEnergy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenL2Comparison.lean/declarations/greencenteredmobiuslogcomparisonenergy-eq-residualenergy.md) | 46 | `result-track:d05f25bc6e912c5d8f159e068ec181455db692205f6fc95e0e28691c5f9a8d73` |
-| 5 | `theorem` | [greenCenteredMobiusLogComparisonEnergy_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenL2Comparison.lean/declarations/greencenteredmobiuslogcomparisonenergy-le.md) | 61 | `result-track:6fd25a44b54920c077a9ea12613db689ec955d484272f5df14b30ad97087d366` |
-| 6 | `theorem` | [greenCenteredMobiusLogComparisonEnergy_eventually_small](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenL2Comparison.lean/declarations/greencenteredmobiuslogcomparisonenergy-eventually-small.md) | 69 | `result-track:018eb88ed70fde5363f94b02014bd9669d22a86c1fd1cc6e190bae002e0797e7` |
+| 1 | `def` | [greenCenteredMobiusLogComparisonEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenL2Comparison.lean/declarations/greencenteredmobiuslogcomparisonenergy.md) | 17 | `declaration-track:3f2fb94821c8f44f11fd85da5374b8d553048fc724d4b8c37f22cbb9da0c9a2b` |
+| 2 | `theorem` | [sq_norm_green_plus_centered_eq_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenL2Comparison.lean/declarations/sq-norm-green-plus-centered-eq-residual.md) | 24 | `result-track:47fc0873124385c84de95f9657844a265bbbb25f30334d0db2bf23048ea29755` |
+| 3 | `theorem` | [summable_greenCenteredMobiusLogComparisonEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenL2Comparison.lean/declarations/summable-greencenteredmobiuslogcomparisonenergy.md) | 32 | `result-track:110056bb21ce8f7f9f346797b6125c6aa5b2cf20240211829d573f63224b7d86` |
+| 4 | `theorem` | [greenCenteredMobiusLogComparisonEnergy_eq_residualEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenL2Comparison.lean/declarations/greencenteredmobiuslogcomparisonenergy-eq-residualenergy.md) | 46 | `result-track:d05f25bc6e912c5d8f159e068ec181455db692205f6fc95e0e28691c5f9a8d73` |
+| 5 | `theorem` | [greenCenteredMobiusLogComparisonEnergy_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenL2Comparison.lean/declarations/greencenteredmobiuslogcomparisonenergy-le.md) | 61 | `result-track:6fd25a44b54920c077a9ea12613db689ec955d484272f5df14b30ad97087d366` |
+| 6 | `theorem` | [greenCenteredMobiusLogComparisonEnergy_eventually_small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenL2Comparison.lean/declarations/greencenteredmobiuslogcomparisonenergy-eventually-small.md) | 69 | `result-track:018eb88ed70fde5363f94b02014bd9669d22a86c1fd1cc6e190bae002e0797e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

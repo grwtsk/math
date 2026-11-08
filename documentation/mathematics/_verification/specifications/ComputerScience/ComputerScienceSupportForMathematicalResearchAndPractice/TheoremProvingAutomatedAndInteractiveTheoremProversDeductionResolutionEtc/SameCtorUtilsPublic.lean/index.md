@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [occursOrInType](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsPublic.lean/declarations/occursorintype.md) | 44 | `declaration-track:582c00b3fd0d049198b031df718806e0cf4bf492aa2cfcecf818ea63267d9e86` |
-| 2 | `def` | [occursInCtorTypeMask](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsPublic.lean/declarations/occursinctortypemask.md) | 56 | `declaration-track:15fcaafc13b59225671bb29934faee4e7feba16d95503abbcc7aeeec6eb8e788` |
-| 3 | `def` | [withSharedCtorIndices](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsPublic.lean/declarations/withsharedctorindices.md) | 76 | `declaration-track:b89c4c774096362bb8ee4a86e1bbc2acd545dce8ecd3741a977b5c43e0f4595c` |
+| 1 | `def` | [occursOrInType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsPublic.lean/declarations/occursorintype.md) | 44 | `declaration-track:582c00b3fd0d049198b031df718806e0cf4bf492aa2cfcecf818ea63267d9e86` |
+| 2 | `def` | [occursInCtorTypeMask](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsPublic.lean/declarations/occursinctortypemask.md) | 56 | `declaration-track:15fcaafc13b59225671bb29934faee4e7feba16d95503abbcc7aeeec6eb8e788` |
+| 3 | `def` | [withSharedCtorIndices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SameCtorUtilsPublic.lean/declarations/withsharedctorindices.md) | 76 | `declaration-track:b89c4c774096362bb8ee4a86e1bbc2acd545dce8ecd3741a977b5c43e0f4595c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/EquivalenceAdditiveNamespaced.lean/index.md) · [Full source](../../../../AlgebraicTopology/EquivalenceAdditiveNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalenceAdditiveNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalenceAdditiveNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [N](../../../../AlgebraicTopology/EquivalenceAdditiveNamespaced.lean/declarations/n.md) | 42 | `declaration-track:8fb46cc092299a60ac38c1b477ef71a5d4bfd342cd7de22d1f99c544881f1db3` |
-| 2 | `def` | [Γ](../../../../AlgebraicTopology/EquivalenceAdditiveNamespaced.lean/declarations/anonymous.md) | 50 | `declaration-track:1f71e9ea84307044f08e82f609927597b40721424f21187a08a3b5e234b3f4d3` |
-| 3 | `def` | [equivalence](../../../../AlgebraicTopology/EquivalenceAdditiveNamespaced.lean/declarations/equivalence.md) | 56 | `declaration-track:a7b7750b25fe8a21ef0d3218ecc50dad4faa27e53ec4c308a632b7aac3a36a96` |
+| 1 | `def` | [N](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalenceAdditiveNamespaced.lean/declarations/n.md) | 42 | `declaration-track:8fb46cc092299a60ac38c1b477ef71a5d4bfd342cd7de22d1f99c544881f1db3` |
+| 2 | `def` | [Γ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalenceAdditiveNamespaced.lean/declarations/anonymous.md) | 50 | `declaration-track:1f71e9ea84307044f08e82f609927597b40721424f21187a08a3b5e234b3f4d3` |
+| 3 | `def` | [equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalenceAdditiveNamespaced.lean/declarations/equivalence.md) | 56 | `declaration-track:a7b7750b25fe8a21ef0d3218ecc50dad4faa27e53ec4c308a632b7aac3a36a96` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

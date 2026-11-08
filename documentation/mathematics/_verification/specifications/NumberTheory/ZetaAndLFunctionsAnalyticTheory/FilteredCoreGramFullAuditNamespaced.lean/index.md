@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FilteredCoreGramFullAuditNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FilteredCoreGramFullAuditNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FilteredCoreGramFullAuditNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FilteredCoreGramFullAuditNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coreBasisFunction](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FilteredCoreGramFullAuditNamespaced.lean/declarations/corebasisfunction.md) | 22 | `declaration-track:6ba407b89ba7032be7fa332101a43fa54108ddb4abf87df17e58b81b6c22831a` |
-| 2 | `theorem` | [coreBasisFunction_memLp](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FilteredCoreGramFullAuditNamespaced.lean/declarations/corebasisfunction-memlp.md) | 28 | `result-track:ff7eab36a9204acfd4fadab003240b3ab0e5a68f47ee9b0ffae35eedede31ad8` |
-| 3 | `def` | [coreBasisVector](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FilteredCoreGramFullAuditNamespaced.lean/declarations/corebasisvector.md) | 57 | `declaration-track:1a4e83d3cc2e5c58fa11748588af119a15fc78d3cd1c74861a261ab3d5e03d3c` |
-| 4 | `theorem` | [coreBasisVector_ae](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FilteredCoreGramFullAuditNamespaced.lean/declarations/corebasisvector-ae.md) | 61 | `result-track:7d86d183578bae12c225bac40750eaad1f485d36a3bccfa2dc8931d869c7d5f7` |
-| 5 | `theorem` | [sum_coe_ae](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FilteredCoreGramFullAuditNamespaced.lean/declarations/sum-coe-ae.md) | 65 | `result-track:90fed59da81e41f426a20a7f8e289762b9c238caf1b68c31e82bcf8e0dd27676` |
-| 6 | `theorem` | [coreResidualVector_eq_basis_sum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FilteredCoreGramFullAuditNamespaced.lean/declarations/coreresidualvector-eq-basis-sum.md) | 78 | `result-track:194a2e145e5e8563e91217ebe8feddbcb0ef5e326264bc92ad0737049327fcc5` |
-| 7 | `theorem` | [filtered_core_norm_sq_gram](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FilteredCoreGramFullAuditNamespaced.lean/declarations/filtered-core-norm-sq-gram.md) | 113 | `result-track:4d0c26bcbac2271534b989506c752ec9aa49b59c50ce67f4fd14b6ce22675bce` |
+| 1 | `def` | [coreBasisFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FilteredCoreGramFullAuditNamespaced.lean/declarations/corebasisfunction.md) | 22 | `declaration-track:6ba407b89ba7032be7fa332101a43fa54108ddb4abf87df17e58b81b6c22831a` |
+| 2 | `theorem` | [coreBasisFunction_memLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FilteredCoreGramFullAuditNamespaced.lean/declarations/corebasisfunction-memlp.md) | 28 | `result-track:ff7eab36a9204acfd4fadab003240b3ab0e5a68f47ee9b0ffae35eedede31ad8` |
+| 3 | `def` | [coreBasisVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FilteredCoreGramFullAuditNamespaced.lean/declarations/corebasisvector.md) | 57 | `declaration-track:1a4e83d3cc2e5c58fa11748588af119a15fc78d3cd1c74861a261ab3d5e03d3c` |
+| 4 | `theorem` | [coreBasisVector_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FilteredCoreGramFullAuditNamespaced.lean/declarations/corebasisvector-ae.md) | 61 | `result-track:7d86d183578bae12c225bac40750eaad1f485d36a3bccfa2dc8931d869c7d5f7` |
+| 5 | `theorem` | [sum_coe_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FilteredCoreGramFullAuditNamespaced.lean/declarations/sum-coe-ae.md) | 65 | `result-track:90fed59da81e41f426a20a7f8e289762b9c238caf1b68c31e82bcf8e0dd27676` |
+| 6 | `theorem` | [coreResidualVector_eq_basis_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FilteredCoreGramFullAuditNamespaced.lean/declarations/coreresidualvector-eq-basis-sum.md) | 78 | `result-track:194a2e145e5e8563e91217ebe8feddbcb0ef5e326264bc92ad0737049327fcc5` |
+| 7 | `theorem` | [filtered_core_norm_sq_gram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FilteredCoreGramFullAuditNamespaced.lean/declarations/filtered-core-norm-sq-gram.md) | 113 | `result-track:4d0c26bcbac2271534b989506c752ec9aa49b59c50ce67f4fd14b6ce22675bce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/BasicBasicWindowUnion.lean/index.md) · [Full source](../../../../GeneralTopology/BasicBasicWindowUnion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BasicBasicWindowUnion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BasicBasicWindowUnion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [window_union](../../../../GeneralTopology/BasicBasicWindowUnion.lean/declarations/window-union.md) | 27 | `result-track:3016737ba5bd2a65cec986dd5874115405807bfb365bd5c218832b427eca6ebb` |
-| 2 | `lemma` | [N_add](../../../../GeneralTopology/BasicBasicWindowUnion.lean/declarations/n-add.md) | 40 | `result-track:cb7089163568a7a3db74f0438545d9b60eaa5a908d41e72401f5f84876056cc5` |
-| 3 | `lemma` | [N_mono](../../../../GeneralTopology/BasicBasicWindowUnion.lean/declarations/n-mono.md) | 48 | `result-track:856505552630580670a39276a6d9afcb51b71e3b5c2c492569f981c3fccfb353` |
-| 4 | `lemma` | [one_le_log_add_three](../../../../GeneralTopology/BasicBasicWindowUnion.lean/declarations/one-le-log-add-three.md) | 58 | `result-track:53195a72f81b38b84441fb4059aff846f2e29108ae4af2bc45ac79bb735217e0` |
-| 5 | `lemma` | [continuousAt_logDeriv_of_analyticAt](../../../../GeneralTopology/BasicBasicWindowUnion.lean/declarations/continuousat-logderiv-of-analyticat.md) | 64 | `result-track:ef80316a65b08bbba84e98cf68faa1e33f1bab2b89d3fd002a0af45f140e53f9` |
-| 6 | `lemma` | [N_unit_windows](../../../../GeneralTopology/BasicBasicWindowUnion.lean/declarations/n-unit-windows.md) | 70 | `result-track:8253202076bdb552e949b689d3fea7bef79f15ce8fef9edf96b9eb45223fc93a` |
+| 1 | `lemma` | [window_union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BasicBasicWindowUnion.lean/declarations/window-union.md) | 27 | `result-track:3016737ba5bd2a65cec986dd5874115405807bfb365bd5c218832b427eca6ebb` |
+| 2 | `lemma` | [N_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BasicBasicWindowUnion.lean/declarations/n-add.md) | 40 | `result-track:cb7089163568a7a3db74f0438545d9b60eaa5a908d41e72401f5f84876056cc5` |
+| 3 | `lemma` | [N_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BasicBasicWindowUnion.lean/declarations/n-mono.md) | 48 | `result-track:856505552630580670a39276a6d9afcb51b71e3b5c2c492569f981c3fccfb353` |
+| 4 | `lemma` | [one_le_log_add_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BasicBasicWindowUnion.lean/declarations/one-le-log-add-three.md) | 58 | `result-track:53195a72f81b38b84441fb4059aff846f2e29108ae4af2bc45ac79bb735217e0` |
+| 5 | `lemma` | [continuousAt_logDeriv_of_analyticAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BasicBasicWindowUnion.lean/declarations/continuousat-logderiv-of-analyticat.md) | 64 | `result-track:ef80316a65b08bbba84e98cf68faa1e33f1bab2b89d3fd002a0af45f140e53f9` |
+| 6 | `lemma` | [N_unit_windows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BasicBasicWindowUnion.lean/declarations/n-unit-windows.md) | 70 | `result-track:8253202076bdb552e949b689d3fea7bef79f15ce8fef9edf96b9eb45223fc93a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

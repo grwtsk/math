@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/SerreClassBasic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/SerreClassBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/SerreClassBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/SerreClassBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,13 +61,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsSerreClass](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/SerreClassBasic.lean/declarations/isserreclass.md) | 43 | `declaration-track:b5e1900810e6749ae756f92ad6cd83438455fa2c589737ec73a8abe320648ec9` |
-| 2 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/SerreClassBasic.lean/declarations/example.md) | 49 | `declaration-track:20610a41d25a48d0f75c34b7964a9058d91097810b946b4161c875243f9f5777` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/SerreClassBasic.lean/declarations/instance-source-edition-2.md) | 51 | `declaration-track:9f264d7a65d19506a06c41ec90d550e3f8ec4a77ee5dfddc776ecc4db62b35a5` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/SerreClassBasic.lean/declarations/instance.md) | 53 | `declaration-track:1aa338f8f3db44aa111c4b3784b6e0c1c3fdf48b81e892d8d27fbba193cbc7a3` |
-| 5 | `lemma` | [prop_iff_of_shortExact](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/SerreClassBasic.lean/declarations/prop-iff-of-shortexact.md) | 55 | `result-track:15eca3ca1c580a14aef8346595007dd84abb41976632de372672aefa32926d60` |
-| 6 | `lemma` | [prop_X₂_of_exact](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/SerreClassBasic.lean/declarations/prop-x-of-exact.md) | 60 | `result-track:976c497ebcd44f027e09925048bfde8c8f25ff0ce6b3dd3d07441eb9437e9747` |
-| 7 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/SerreClassBasic.lean/declarations/instance-source-edition-3.md) | 68 | `declaration-track:a5f239ef50d4e17a1802fe3bdefd1d29b53d4e29f27080f749f8d293bca4205c` |
+| 1 | `class` | [IsSerreClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/SerreClassBasic.lean/declarations/isserreclass.md) | 43 | `declaration-track:b5e1900810e6749ae756f92ad6cd83438455fa2c589737ec73a8abe320648ec9` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/SerreClassBasic.lean/declarations/example.md) | 49 | `declaration-track:20610a41d25a48d0f75c34b7964a9058d91097810b946b4161c875243f9f5777` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/SerreClassBasic.lean/declarations/instance-source-edition-2.md) | 51 | `declaration-track:9f264d7a65d19506a06c41ec90d550e3f8ec4a77ee5dfddc776ecc4db62b35a5` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/SerreClassBasic.lean/declarations/instance.md) | 53 | `declaration-track:1aa338f8f3db44aa111c4b3784b6e0c1c3fdf48b81e892d8d27fbba193cbc7a3` |
+| 5 | `lemma` | [prop_iff_of_shortExact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/SerreClassBasic.lean/declarations/prop-iff-of-shortexact.md) | 55 | `result-track:15eca3ca1c580a14aef8346595007dd84abb41976632de372672aefa32926d60` |
+| 6 | `lemma` | [prop_X₂_of_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/SerreClassBasic.lean/declarations/prop-x-of-exact.md) | 60 | `result-track:976c497ebcd44f027e09925048bfde8c8f25ff0ce6b3dd3d07441eb9437e9747` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/SerreClassBasic.lean/declarations/instance-source-edition-3.md) | 68 | `declaration-track:a5f239ef50d4e17a1802fe3bdefd1d29b53d4e29f27080f749f8d293bca4205c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

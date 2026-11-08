@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Softmax.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Softmax.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Softmax.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Softmax.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [expVector](../../../../../ComputerScience/AlgorithmsInComputerScience/Softmax.lean/declarations/expvector.md) | 35 | `declaration-track:9196808fa4e8729f34daa932b36d77ff1d55d1e4aac6829c8f180b663ace891d` |
-| 2 | `def` | [logSumExp](../../../../../ComputerScience/AlgorithmsInComputerScience/Softmax.lean/declarations/logsumexp.md) | 49 | `declaration-track:2b963de25438546bd1785711decc1d7cdba298ba33e3b67f5179f5a7b5ef5054` |
-| 3 | `def` | [softmaxComponent](../../../../../ComputerScience/AlgorithmsInComputerScience/Softmax.lean/declarations/softmaxcomponent.md) | 84 | `declaration-track:02bb64f7c18e943f10a025061cf8a580ef6b275af27499fd888f39cad4f33a5e` |
-| 4 | `def` | [softmax](../../../../../ComputerScience/AlgorithmsInComputerScience/Softmax.lean/declarations/softmax.md) | 114 | `declaration-track:dfcde57e60ceaf619b9866209c8066993b3a9f667c2095061c26ac33918d82e3` |
-| 5 | `theorem` | [mem_foldl_add](../../../../../ComputerScience/AlgorithmsInComputerScience/Softmax.lean/declarations/mem-foldl-add.md) | 124 | `result-track:ded311a99775283616d927512cbab9532fa904c166fd2c0df0cee57931492be6` |
-| 6 | `def` | [Real.softmax](../../../../../ComputerScience/AlgorithmsInComputerScience/Softmax.lean/declarations/real-softmax.md) | 154 | `declaration-track:1637f9ae477f015ff5b56907322ff0f319c6062d45188324c8c92d451814225c` |
-| 7 | `theorem` | [softmax_algebraic_identity](../../../../../ComputerScience/AlgorithmsInComputerScience/Softmax.lean/declarations/softmax-algebraic-identity.md) | 168 | `result-track:a0f396f5b0e2dc6d1a814b4d15ed360608cda95d3f9e558c0d51391d87a6313a` |
-| 8 | `theorem` | [mem_softmax](../../../../../ComputerScience/AlgorithmsInComputerScience/Softmax.lean/declarations/mem-softmax.md) | 203 | `result-track:a02888a0e69825172fb1f411989090bbd3a354d9f4c68c72ca8d90cb2f534317` |
+| 1 | `def` | [expVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Softmax.lean/declarations/expvector.md) | 35 | `declaration-track:9196808fa4e8729f34daa932b36d77ff1d55d1e4aac6829c8f180b663ace891d` |
+| 2 | `def` | [logSumExp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Softmax.lean/declarations/logsumexp.md) | 49 | `declaration-track:2b963de25438546bd1785711decc1d7cdba298ba33e3b67f5179f5a7b5ef5054` |
+| 3 | `def` | [softmaxComponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Softmax.lean/declarations/softmaxcomponent.md) | 84 | `declaration-track:02bb64f7c18e943f10a025061cf8a580ef6b275af27499fd888f39cad4f33a5e` |
+| 4 | `def` | [softmax](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Softmax.lean/declarations/softmax.md) | 114 | `declaration-track:dfcde57e60ceaf619b9866209c8066993b3a9f667c2095061c26ac33918d82e3` |
+| 5 | `theorem` | [mem_foldl_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Softmax.lean/declarations/mem-foldl-add.md) | 124 | `result-track:ded311a99775283616d927512cbab9532fa904c166fd2c0df0cee57931492be6` |
+| 6 | `def` | [Real.softmax](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Softmax.lean/declarations/real-softmax.md) | 154 | `declaration-track:1637f9ae477f015ff5b56907322ff0f319c6062d45188324c8c92d451814225c` |
+| 7 | `theorem` | [softmax_algebraic_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Softmax.lean/declarations/softmax-algebraic-identity.md) | 168 | `result-track:a0f396f5b0e2dc6d1a814b4d15ed360608cda95d3f9e558c0d51391d87a6313a` |
+| 8 | `theorem` | [mem_softmax](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Softmax.lean/declarations/mem-softmax.md) | 203 | `result-track:a02888a0e69825172fb1f411989090bbd3a354d9f4c68c72ca8d90cb2f534317` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

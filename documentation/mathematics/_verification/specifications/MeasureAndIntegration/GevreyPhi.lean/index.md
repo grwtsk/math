@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/GevreyPhi.lean/index.md) · [Full source](../../../../MeasureAndIntegration/GevreyPhi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GevreyPhi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GevreyPhi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Params.GevreyPhiBound](../../../../MeasureAndIntegration/GevreyPhi.lean/declarations/params-gevreyphibound.md) | 19 | `declaration-track:9943a1f958fa66064746fa68aa38d07911a59dc45943b5a48a1dd01bcb13c3bf` |
+| 1 | `structure` | [Params.GevreyPhiBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GevreyPhi.lean/declarations/params-gevreyphibound.md) | 19 | `declaration-track:9943a1f958fa66064746fa68aa38d07911a59dc45943b5a48a1dd01bcb13c3bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

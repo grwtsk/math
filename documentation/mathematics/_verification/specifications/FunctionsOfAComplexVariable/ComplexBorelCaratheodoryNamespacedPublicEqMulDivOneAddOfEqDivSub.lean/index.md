@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicEqMulDivOneAddOfEqDivSub.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicEqMulDivOneAddOfEqDivSub.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicEqMulDivOneAddOfEqDivSub.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicEqMulDivOneAddOfEqDivSub.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [eq_mul_div_one_add_of_eq_div_sub](../../../../FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicEqMulDivOneAddOfEqDivSub.lean/declarations/eq-mul-div-one-add-of-eq-div-sub.md) | 52 | `result-track:e5a035d4bdd6ef9a2291afa76d4dc94c7c6675f002d7b6914c65874a84258914` |
-| 2 | `lemma` | [norm_two_mul_div_one_add_le](../../../../FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicEqMulDivOneAddOfEqDivSub.lean/declarations/norm-two-mul-div-one-add-le.md) | 58 | `result-track:658683f4f3139a7222815bda33719da32f391b7df4f0382ad6798c0a7ed0f68d` |
-| 3 | `lemma` | [norm_le_norm_two_mul_sub](../../../../FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicEqMulDivOneAddOfEqDivSub.lean/declarations/norm-le-norm-two-mul-sub.md) | 66 | `result-track:3782e08c7d2cab84b14090dd8bb9890949439db9711022b12d2fd7d2d7605a13` |
-| 4 | `lemma` | [schwarz_applied](../../../../FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicEqMulDivOneAddOfEqDivSub.lean/declarations/schwarz-applied.md) | 74 | `result-track:bd90c8dea4ef23d52e7a60ed089ba5f905a8441f199cdab18ed31177f2bed671` |
-| 5 | `theorem` | [borelCaratheodory_zero](../../../../FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicEqMulDivOneAddOfEqDivSub.lean/declarations/borelcaratheodory-zero.md) | 94 | `result-track:6006fcd7de24b8df59bf2e019663d4e43ac4fc6d5ebd29341e0395ba7de279c8` |
-| 6 | `theorem` | [borelCaratheodory](../../../../FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicEqMulDivOneAddOfEqDivSub.lean/declarations/borelcaratheodory.md) | 117 | `result-track:9e5c5109489880aa04f14faf344b0e56d021fdae86f57776e3698d951b0d964d` |
+| 1 | `lemma` | [eq_mul_div_one_add_of_eq_div_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicEqMulDivOneAddOfEqDivSub.lean/declarations/eq-mul-div-one-add-of-eq-div-sub.md) | 52 | `result-track:e5a035d4bdd6ef9a2291afa76d4dc94c7c6675f002d7b6914c65874a84258914` |
+| 2 | `lemma` | [norm_two_mul_div_one_add_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicEqMulDivOneAddOfEqDivSub.lean/declarations/norm-two-mul-div-one-add-le.md) | 58 | `result-track:658683f4f3139a7222815bda33719da32f391b7df4f0382ad6798c0a7ed0f68d` |
+| 3 | `lemma` | [norm_le_norm_two_mul_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicEqMulDivOneAddOfEqDivSub.lean/declarations/norm-le-norm-two-mul-sub.md) | 66 | `result-track:3782e08c7d2cab84b14090dd8bb9890949439db9711022b12d2fd7d2d7605a13` |
+| 4 | `lemma` | [schwarz_applied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicEqMulDivOneAddOfEqDivSub.lean/declarations/schwarz-applied.md) | 74 | `result-track:bd90c8dea4ef23d52e7a60ed089ba5f905a8441f199cdab18ed31177f2bed671` |
+| 5 | `theorem` | [borelCaratheodory_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicEqMulDivOneAddOfEqDivSub.lean/declarations/borelcaratheodory-zero.md) | 94 | `result-track:6006fcd7de24b8df59bf2e019663d4e43ac4fc6d5ebd29341e0395ba7de279c8` |
+| 6 | `theorem` | [borelCaratheodory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexBorelCaratheodoryNamespacedPublicEqMulDivOneAddOfEqDivSub.lean/declarations/borelcaratheodory.md) | 117 | `result-track:9e5c5109489880aa04f14faf344b0e56d021fdae86f57776e3698d951b0d964d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

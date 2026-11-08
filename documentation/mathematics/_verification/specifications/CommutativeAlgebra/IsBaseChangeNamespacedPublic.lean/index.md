@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IsBaseChangeNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IsBaseChangeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsBaseChangeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsBaseChangeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IsBaseChange.of_left_exact](../../../../CommutativeAlgebra/IsBaseChangeNamespacedPublic.lean/declarations/isbasechange-of-left-exact.md) | 55 | `result-track:6d4ab069e7b02cdc8318c7a67d138dd43a2ddd926e1194ef272eb5783e303a13` |
+| 1 | `lemma` | [IsBaseChange.of_left_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsBaseChangeNamespacedPublic.lean/declarations/isbasechange-of-left-exact.md) | 55 | `result-track:6d4ab069e7b02cdc8318c7a67d138dd43a2ddd926e1194ef272eb5783e303a13` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

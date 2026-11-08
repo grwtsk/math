@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CubicRemainderControls.lean/index.md) · [Full source](../../../../NumberTheory/CubicRemainderControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicRemainderControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicRemainderControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CubicRemainderHolomorphic`](../../../../MeasureAndIntegration/CubicRemainderHolomorphic.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CubicRemainderHolomorphic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicRemainderHolomorphic.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [empty_prefix_retains_budget](../../../../NumberTheory/CubicRemainderControls.lean/declarations/empty-prefix-retains-budget.md) | 19 | `result-track:1853e1784aa7d6b3833ef2feed3ada555364d2506446996808e2c675a51bf133` |
-| 2 | `theorem` | [one_cell_tail_bound](../../../../NumberTheory/CubicRemainderControls.lean/declarations/one-cell-tail-bound.md) | 24 | `result-track:905d5d7b92accc74622b2ac0cb55f77ae7b1228363d384b9dc5517e563fbc2ff` |
-| 3 | `theorem` | [remainder_analytic_at_one](../../../../NumberTheory/CubicRemainderControls.lean/declarations/remainder-analytic-at-one.md) | 29 | `result-track:decbf4574354c920aa5f7674c93e0c9a15804fc6a46d33afb165736578f64c38` |
-| 4 | `theorem` | [remainder_bound_at_one](../../../../NumberTheory/CubicRemainderControls.lean/declarations/remainder-bound-at-one.md) | 32 | `result-track:b4ef0df6e2be4c1786d2b7bbedc4f7f53d1ebb1d087ac9d90df1a8dfff86e42f` |
-| 5 | `theorem` | [zero_margin_totalizes](../../../../NumberTheory/CubicRemainderControls.lean/declarations/zero-margin-totalizes.md) | 36 | `result-track:02df9e78c4e2b331a387dc6c0bd073c1fa0bd51d8e81a63dab22e33c87a65843` |
-| 6 | `theorem` | [below_one_reverses_exponent_bound](../../../../NumberTheory/CubicRemainderControls.lean/declarations/below-one-reverses-exponent-bound.md) | 39 | `result-track:64addcf81b3bcb772913e89f38895aa938addada2647ae6a43ae9ce0243c0fa9` |
-| 7 | `theorem` | [zero_prefactor_does_not_identify_remainder](../../../../NumberTheory/CubicRemainderControls.lean/declarations/zero-prefactor-does-not-identify-remainder.md) | 43 | `result-track:d0cecf4d8a213360371eafb3e992e7c67c5cfbec5b2f6cb13f7d1a5ceebb74e2` |
-| 8 | `theorem` | [same_bound_distinct_constants](../../../../NumberTheory/CubicRemainderControls.lean/declarations/same-bound-distinct-constants.md) | 48 | `result-track:b1b2b91f91277b8e2061bc4c91fc4f241228dad5ccb522898aab52998dd45f61` |
+| 1 | `theorem` | [empty_prefix_retains_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicRemainderControls.lean/declarations/empty-prefix-retains-budget.md) | 19 | `result-track:1853e1784aa7d6b3833ef2feed3ada555364d2506446996808e2c675a51bf133` |
+| 2 | `theorem` | [one_cell_tail_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicRemainderControls.lean/declarations/one-cell-tail-bound.md) | 24 | `result-track:905d5d7b92accc74622b2ac0cb55f77ae7b1228363d384b9dc5517e563fbc2ff` |
+| 3 | `theorem` | [remainder_analytic_at_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicRemainderControls.lean/declarations/remainder-analytic-at-one.md) | 29 | `result-track:decbf4574354c920aa5f7674c93e0c9a15804fc6a46d33afb165736578f64c38` |
+| 4 | `theorem` | [remainder_bound_at_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicRemainderControls.lean/declarations/remainder-bound-at-one.md) | 32 | `result-track:b4ef0df6e2be4c1786d2b7bbedc4f7f53d1ebb1d087ac9d90df1a8dfff86e42f` |
+| 5 | `theorem` | [zero_margin_totalizes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicRemainderControls.lean/declarations/zero-margin-totalizes.md) | 36 | `result-track:02df9e78c4e2b331a387dc6c0bd073c1fa0bd51d8e81a63dab22e33c87a65843` |
+| 6 | `theorem` | [below_one_reverses_exponent_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicRemainderControls.lean/declarations/below-one-reverses-exponent-bound.md) | 39 | `result-track:64addcf81b3bcb772913e89f38895aa938addada2647ae6a43ae9ce0243c0fa9` |
+| 7 | `theorem` | [zero_prefactor_does_not_identify_remainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicRemainderControls.lean/declarations/zero-prefactor-does-not-identify-remainder.md) | 43 | `result-track:d0cecf4d8a213360371eafb3e992e7c67c5cfbec5b2f6cb13f7d1a5ceebb74e2` |
+| 8 | `theorem` | [same_bound_distinct_constants](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicRemainderControls.lean/declarations/same-bound-distinct-constants.md) | 48 | `result-track:b1b2b91f91277b8e2061bc4c91fc4f241228dad5ccb522898aab52998dd45f61` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

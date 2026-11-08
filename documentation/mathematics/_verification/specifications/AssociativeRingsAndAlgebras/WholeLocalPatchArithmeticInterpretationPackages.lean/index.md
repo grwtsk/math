@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/WholeLocalPatchArithmeticInterpretationPackages.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/WholeLocalPatchArithmeticInterpretationPackages.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeLocalPatchArithmeticInterpretationPackages.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeLocalPatchArithmeticInterpretationPackages.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,9 +48,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `DAF.Fabric.Patch` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.CategoryTheory.Functor.Basic` — import line 20; external provider; requires a separately pinned dependency.
-- [Whole Cotangent Assignment And Explicit Boundary Map](../../../../AssociativeRingsAndAlgebras/WholeCotangentAssignmentAndExplicitBoundaryMap.lean/index.md) — import line 22; pinned internal source present.
-- [Whole Relative THHAssignment And Explicit Boundary Map](../../../../AssociativeRingsAndAlgebras/WholeRelativeTHHAssignmentAndExplicitBoundaryMap.lean/index.md) — import line 23; pinned internal source present.
-- [Whole Cyclotomic Refinement And Explicit Boundary Map](../../../../AssociativeRingsAndAlgebras/WholeCyclotomicRefinementAndExplicitBoundaryMap.lean/index.md) — import line 24; pinned internal source present.
+- [Whole Cotangent Assignment And Explicit Boundary Map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeCotangentAssignmentAndExplicitBoundaryMap.lean/index.md) — import line 22; pinned internal source present.
+- [Whole Relative THHAssignment And Explicit Boundary Map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeRelativeTHHAssignmentAndExplicitBoundaryMap.lean/index.md) — import line 23; pinned internal source present.
+- [Whole Cyclotomic Refinement And Explicit Boundary Map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeCyclotomicRefinementAndExplicitBoundaryMap.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -61,12 +61,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CotangentBoundaryData](../../../../AssociativeRingsAndAlgebras/WholeLocalPatchArithmeticInterpretationPackages.lean/declarations/cotangentboundarydata.md) | 57 | `declaration-track:508407e288ef906d1c32e64bffd9973f4588b2cd39b2c180dbeea0cfa9d417f4` |
-| 2 | `def` | [cotangentBoundaryDefect](../../../../AssociativeRingsAndAlgebras/WholeLocalPatchArithmeticInterpretationPackages.lean/declarations/cotangentboundarydefect.md) | 69 | `declaration-track:fb8022df264260afc86b554d7e2d3f0bbfc37a8b07be27d3224700e5048a9088` |
-| 3 | `structure` | [RelativeTHHBoundaryData](../../../../AssociativeRingsAndAlgebras/WholeLocalPatchArithmeticInterpretationPackages.lean/declarations/relativethhboundarydata.md) | 80 | `declaration-track:5a594ebbdce9917cffa729c0eff8229e5dd79c9107d2a89a30019932fb0630e9` |
-| 4 | `def` | [relativeTHHBoundaryDefect](../../../../AssociativeRingsAndAlgebras/WholeLocalPatchArithmeticInterpretationPackages.lean/declarations/relativethhboundarydefect.md) | 92 | `declaration-track:bf20677de6bc94190675345367874fe088999e8defc380d8d5e9deb10f27f3cc` |
-| 5 | `structure` | [CyclotomicBoundaryData](../../../../AssociativeRingsAndAlgebras/WholeLocalPatchArithmeticInterpretationPackages.lean/declarations/cyclotomicboundarydata.md) | 103 | `declaration-track:304855f7d6073bbceca0389fc316ad4a989afe1a0b439a74f530e12188c61e8e` |
-| 6 | `def` | [cyclotomicBoundaryDefect](../../../../AssociativeRingsAndAlgebras/WholeLocalPatchArithmeticInterpretationPackages.lean/declarations/cyclotomicboundarydefect.md) | 115 | `declaration-track:2d6a4b4336cf7c699f2ec1336cd5921040ffb19035cac2a39e34ec194edfaf4d` |
+| 1 | `structure` | [CotangentBoundaryData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeLocalPatchArithmeticInterpretationPackages.lean/declarations/cotangentboundarydata.md) | 57 | `declaration-track:508407e288ef906d1c32e64bffd9973f4588b2cd39b2c180dbeea0cfa9d417f4` |
+| 2 | `def` | [cotangentBoundaryDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeLocalPatchArithmeticInterpretationPackages.lean/declarations/cotangentboundarydefect.md) | 69 | `declaration-track:fb8022df264260afc86b554d7e2d3f0bbfc37a8b07be27d3224700e5048a9088` |
+| 3 | `structure` | [RelativeTHHBoundaryData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeLocalPatchArithmeticInterpretationPackages.lean/declarations/relativethhboundarydata.md) | 80 | `declaration-track:5a594ebbdce9917cffa729c0eff8229e5dd79c9107d2a89a30019932fb0630e9` |
+| 4 | `def` | [relativeTHHBoundaryDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeLocalPatchArithmeticInterpretationPackages.lean/declarations/relativethhboundarydefect.md) | 92 | `declaration-track:bf20677de6bc94190675345367874fe088999e8defc380d8d5e9deb10f27f3cc` |
+| 5 | `structure` | [CyclotomicBoundaryData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeLocalPatchArithmeticInterpretationPackages.lean/declarations/cyclotomicboundarydata.md) | 103 | `declaration-track:304855f7d6073bbceca0389fc316ad4a989afe1a0b439a74f530e12188c61e8e` |
+| 6 | `def` | [cyclotomicBoundaryDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeLocalPatchArithmeticInterpretationPackages.lean/declarations/cyclotomicboundarydefect.md) | 115 | `declaration-track:2d6a4b4336cf7c699f2ec1336cd5921040ffb19035cac2a39e34ec194edfaf4d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

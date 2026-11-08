@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ProdApproximation.lean/index.md) · [Full source](../../../../GeneralTopology/ProdApproximation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProdApproximation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProdApproximation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [exists_finite_sum_smul_approximation_of_mem_uniformity](../../../../GeneralTopology/ProdApproximation.lean/declarations/exists-finite-sum-smul-approximation-of-mem-uniformity.md) | 34 | `result-track:64eff1b73863ff9cab4b344466201c60b4ac4a570df16fc4777722c2ea8bbde7` |
-| 2 | `lemma` | [exists_finite_sum_mul_approximation_of_mem_uniformity](../../../../GeneralTopology/ProdApproximation.lean/declarations/exists-finite-sum-mul-approximation-of-mem-uniformity.md) | 55 | `result-track:81ccdf1e541e8861a6d98d800b1e43f32b3e020265381a574e50466cfe445b42` |
+| 1 | `lemma` | [exists_finite_sum_smul_approximation_of_mem_uniformity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProdApproximation.lean/declarations/exists-finite-sum-smul-approximation-of-mem-uniformity.md) | 34 | `result-track:64eff1b73863ff9cab4b344466201c60b4ac4a570df16fc4777722c2ea8bbde7` |
+| 2 | `lemma` | [exists_finite_sum_mul_approximation_of_mem_uniformity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProdApproximation.lean/declarations/exists-finite-sum-mul-approximation-of-mem-uniformity.md) | 55 | `result-track:81ccdf1e541e8861a6d98d800b1e43f32b3e020265381a574e50466cfe445b42` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

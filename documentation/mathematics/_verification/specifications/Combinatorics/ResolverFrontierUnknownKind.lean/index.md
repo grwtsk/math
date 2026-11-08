@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ResolverFrontierUnknownKind.lean/index.md) · [Full source](../../../../Combinatorics/ResolverFrontierUnknownKind.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverFrontierUnknownKind.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverFrontierUnknownKind.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,15 +63,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [FrontierUnknownKind](../../../../Combinatorics/ResolverFrontierUnknownKind.lean/declarations/frontierunknownkind.md) | 24 | `declaration-track:fc7559417a9c1d9b99d3b8e5f8a18de43a546d4524ce241e5f1bbbb7cc92496c` |
-| 2 | `inductive` | [RefinementRejection](../../../../Combinatorics/ResolverFrontierUnknownKind.lean/declarations/refinementrejection.md) | 39 | `declaration-track:5e41a82c6c2dd454181e835e2dc9b58b9846778534434fbb7e79d41f9ba35e2f` |
-| 3 | `inductive` | [FrontierResolution](../../../../Combinatorics/ResolverFrontierUnknownKind.lean/declarations/frontierresolution.md) | 51 | `declaration-track:ae8206a91c0c9686f5cbfaa4e7216c0d6f6baaa6864828fc644f67e11f2339e4` |
-| 4 | `structure` | [CertifiedFrontierLeaf](../../../../Combinatorics/ResolverFrontierUnknownKind.lean/declarations/certifiedfrontierleaf.md) | 68 | `declaration-track:d02d01cf011557af42c3ad660aa15cad9bdef0e6d929dba1c9be9066dcafd023` |
-| 5 | `structure` | [FiniteResolverCut](../../../../Combinatorics/ResolverFrontierUnknownKind.lean/declarations/finiteresolvercut.md) | 99 | `declaration-track:f495b5b163148457bbdabff3603fec8a1fc842cd577b157a00bd022b8c02bb0b` |
-| 6 | `def` | [resolve](../../../../Combinatorics/ResolverFrontierUnknownKind.lean/declarations/resolve.md) | 125 | `declaration-track:b05b48565d57256b531aebf4721ac5050b3412c478cdaffb51e870ac6064fc41` |
-| 7 | `theorem` | [finite_certified_resolver_total](../../../../Combinatorics/ResolverFrontierUnknownKind.lean/declarations/finite-certified-resolver-total.md) | 151 | `result-track:3627aa65a9f8995dbdb193da4ecedb66c38d215ec086bf655541c2ee17e21907` |
-| 8 | `theorem` | [resolver_rejected_only_from_structure](../../../../Combinatorics/ResolverFrontierUnknownKind.lean/declarations/resolver-rejected-only-from-structure.md) | 165 | `result-track:38011112bcf9cb9d13013002eb6f4f430463ccbcac3035949e46c13f3e8bc4e0` |
-| 9 | `theorem` | [resolver_unknown_has_named_frontier](../../../../Combinatorics/ResolverFrontierUnknownKind.lean/declarations/resolver-unknown-has-named-frontier.md) | 202 | `result-track:a9f5aeb0e86b82c7d64f9f6d1b24e9083709103f32f8c99c3fc4a7f727d35b24` |
+| 1 | `inductive` | [FrontierUnknownKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverFrontierUnknownKind.lean/declarations/frontierunknownkind.md) | 24 | `declaration-track:fc7559417a9c1d9b99d3b8e5f8a18de43a546d4524ce241e5f1bbbb7cc92496c` |
+| 2 | `inductive` | [RefinementRejection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverFrontierUnknownKind.lean/declarations/refinementrejection.md) | 39 | `declaration-track:5e41a82c6c2dd454181e835e2dc9b58b9846778534434fbb7e79d41f9ba35e2f` |
+| 3 | `inductive` | [FrontierResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverFrontierUnknownKind.lean/declarations/frontierresolution.md) | 51 | `declaration-track:ae8206a91c0c9686f5cbfaa4e7216c0d6f6baaa6864828fc644f67e11f2339e4` |
+| 4 | `structure` | [CertifiedFrontierLeaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverFrontierUnknownKind.lean/declarations/certifiedfrontierleaf.md) | 68 | `declaration-track:d02d01cf011557af42c3ad660aa15cad9bdef0e6d929dba1c9be9066dcafd023` |
+| 5 | `structure` | [FiniteResolverCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverFrontierUnknownKind.lean/declarations/finiteresolvercut.md) | 99 | `declaration-track:f495b5b163148457bbdabff3603fec8a1fc842cd577b157a00bd022b8c02bb0b` |
+| 6 | `def` | [resolve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverFrontierUnknownKind.lean/declarations/resolve.md) | 125 | `declaration-track:b05b48565d57256b531aebf4721ac5050b3412c478cdaffb51e870ac6064fc41` |
+| 7 | `theorem` | [finite_certified_resolver_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverFrontierUnknownKind.lean/declarations/finite-certified-resolver-total.md) | 151 | `result-track:3627aa65a9f8995dbdb193da4ecedb66c38d215ec086bf655541c2ee17e21907` |
+| 8 | `theorem` | [resolver_rejected_only_from_structure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverFrontierUnknownKind.lean/declarations/resolver-rejected-only-from-structure.md) | 165 | `result-track:38011112bcf9cb9d13013002eb6f4f430463ccbcac3035949e46c13f3e8bc4e0` |
+| 9 | `theorem` | [resolver_unknown_has_named_frontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverFrontierUnknownKind.lean/declarations/resolver-unknown-has-named-frontier.md) | 202 | `result-track:a9f5aeb0e86b82c7d64f9f6d1b24e9083709103f32f8c99c3fc4a7f727d35b24` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

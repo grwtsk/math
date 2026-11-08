@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [FormalizationScope](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/declarations/formalizationscope.md) | 18 | `declaration-track:c031ba0774d6865d01c98434e64b18432d27599f87fb36acd5a451fcd28484fa` |
-| 2 | `inductive` | [ProofStatus](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/declarations/proofstatus.md) | 24 | `declaration-track:d5cf72b61b12a7646d99858ad76945641c9c573e38c4abdb0272d9c778132486` |
-| 3 | `structure` | [FormalTheorem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/declarations/formaltheorem.md) | 31 | `declaration-track:312538c694e048f94b883a94b3e59643e74de4ce0d5170995f5352e1efecd790` |
-| 4 | `def` | [currentScope](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/declarations/currentscope.md) | 38 | `declaration-track:e7d833d6ef0fbce5dc1186938a1adc8f0d4d674f4acf7e6b265420a092c4e7df` |
-| 5 | `theorem` | [currentScope_is_actual_theorem_formalization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/declarations/currentscope-is-actual-theorem-formalization.md) | 41 | `result-track:2f4c102d50f2453968669e77d74a23bb7027699846ea443fbed1da6b1b5b87af` |
-| 6 | `def` | [FormalTheorem.hasCompleteProof](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/declarations/formaltheorem-hascompleteproof.md) | 45 | `declaration-track:bffd5b03975c4eff18cbcc92430e0ea4ad1bd07a6b7da1d3d71eb9f8803418cc` |
-| 7 | `theorem` | [checked_isProved_true_hasResidue_false](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/declarations/checked-isproved-true-hasresidue-false.md) | 48 | `result-track:e63c3ec4366553d3f865e4bb209cd989516ce8e412b349dc7080f03c634c3bd6` |
-| 8 | `theorem` | [FormalTheorem.complete_has_no_residue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/declarations/formaltheorem-complete-has-no-residue.md) | 59 | `result-track:748727b3a728e2cb35a9454b07670e7bc5221a9e8599f850252e57e68e1481f5` |
+| 1 | `inductive` | [FormalizationScope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/declarations/formalizationscope.md) | 18 | `declaration-track:c031ba0774d6865d01c98434e64b18432d27599f87fb36acd5a451fcd28484fa` |
+| 2 | `inductive` | [ProofStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/declarations/proofstatus.md) | 24 | `declaration-track:d5cf72b61b12a7646d99858ad76945641c9c573e38c4abdb0272d9c778132486` |
+| 3 | `structure` | [FormalTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/declarations/formaltheorem.md) | 31 | `declaration-track:312538c694e048f94b883a94b3e59643e74de4ce0d5170995f5352e1efecd790` |
+| 4 | `def` | [currentScope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/declarations/currentscope.md) | 38 | `declaration-track:e7d833d6ef0fbce5dc1186938a1adc8f0d4d674f4acf7e6b265420a092c4e7df` |
+| 5 | `theorem` | [currentScope_is_actual_theorem_formalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/declarations/currentscope-is-actual-theorem-formalization.md) | 41 | `result-track:2f4c102d50f2453968669e77d74a23bb7027699846ea443fbed1da6b1b5b87af` |
+| 6 | `def` | [FormalTheorem.hasCompleteProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/declarations/formaltheorem-hascompleteproof.md) | 45 | `declaration-track:bffd5b03975c4eff18cbcc92430e0ea4ad1bd07a6b7da1d3d71eb9f8803418cc` |
+| 7 | `theorem` | [checked_isProved_true_hasResidue_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/declarations/checked-isproved-true-hasresidue-false.md) | 48 | `result-track:e63c3ec4366553d3f865e4bb209cd989516ce8e412b349dc7080f03c634c3bd6` |
+| 8 | `theorem` | [FormalTheorem.complete_has_no_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicNamespacedAlternative.lean/declarations/formaltheorem-complete-has-no-residue.md) | 59 | `result-track:748727b3a728e2cb35a9454b07670e7bc5221a9e8599f850252e57e68e1481f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeSurface.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeSurface.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeSurface.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeSurface.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Face](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeSurface.lean/declarations/face.md) | 11 | `declaration-track:a253dc9b2eb9f07b796f00d3c7079ea3813d008959e38b58f7921deec5f64388` |
-| 2 | `structure` | [Presentation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeSurface.lean/declarations/presentation.md) | 21 | `declaration-track:3740b560cc0f5f38b69690f4c5f2cf7a2627e0914b30cf3f1826fd9ca2bde3e9` |
-| 3 | `def` | [Presentation.surfaceCapacity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeSurface.lean/declarations/presentation-surfacecapacity.md) | 29 | `declaration-track:48815d2ea106aef2002d33ee64fcfa513f061dbe442ab37fd42664839317ccb7` |
-| 4 | `def` | [Presentation.paddingBitCount](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeSurface.lean/declarations/presentation-paddingbitcount.md) | 33 | `declaration-track:acfa14d9a7a1e81e620bdc348d3d5374ffc8f9d147f8df612df5c107be911195` |
+| 1 | `inductive` | [Face](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeSurface.lean/declarations/face.md) | 11 | `declaration-track:a253dc9b2eb9f07b796f00d3c7079ea3813d008959e38b58f7921deec5f64388` |
+| 2 | `structure` | [Presentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeSurface.lean/declarations/presentation.md) | 21 | `declaration-track:3740b560cc0f5f38b69690f4c5f2cf7a2627e0914b30cf3f1826fd9ca2bde3e9` |
+| 3 | `def` | [Presentation.surfaceCapacity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeSurface.lean/declarations/presentation-surfacecapacity.md) | 29 | `declaration-track:48815d2ea106aef2002d33ee64fcfa513f061dbe442ab37fd42664839317ccb7` |
+| 4 | `def` | [Presentation.paddingBitCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeSurface.lean/declarations/presentation-paddingbitcount.md) | 33 | `declaration-track:acfa14d9a7a1e81e620bdc348d3d5374ffc8f9d147f8df612df5c107be911195` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

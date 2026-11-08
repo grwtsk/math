@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasicNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [CatCenter](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasicNamespaced.lean/declarations/catcenter.md) | 37 | `declaration-track:0a7ea23b5bd15792f22ba414483259be227cbde9ba5f2315570f25ceffc00835` |
-| 2 | `lemma` | [ext](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasicNamespaced.lean/declarations/ext.md) | 44 | `result-track:68fca54fb7e608eb07f3e70e857b551975115dad86263892c0c64d2df5cfc50c` |
-| 3 | `lemma` | [mul_app'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasicNamespaced.lean/declarations/mul-app.md) | 48 | `result-track:147d7acae73474bf88951c869a51e539b964ecff833da094ec0790664c30ad73` |
-| 4 | `lemma` | [mul_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasicNamespaced.lean/declarations/mul-app-source-edition-2.md) | 51 | `result-track:f08b25051091618fc7aa7d2b99d848cf6de76f7a24eede0e3778d2a61a3a5c60` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasicNamespaced.lean/declarations/instance.md) | 55 | `declaration-track:f239096bbdb8dac98830b75946bc7ba1e439a935a3084acf62cdaaf28baf0d8e` |
+| 1 | `abbrev` | [CatCenter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasicNamespaced.lean/declarations/catcenter.md) | 37 | `declaration-track:0a7ea23b5bd15792f22ba414483259be227cbde9ba5f2315570f25ceffc00835` |
+| 2 | `lemma` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasicNamespaced.lean/declarations/ext.md) | 44 | `result-track:68fca54fb7e608eb07f3e70e857b551975115dad86263892c0c64d2df5cfc50c` |
+| 3 | `lemma` | [mul_app'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasicNamespaced.lean/declarations/mul-app.md) | 48 | `result-track:147d7acae73474bf88951c869a51e539b964ecff833da094ec0790664c30ad73` |
+| 4 | `lemma` | [mul_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasicNamespaced.lean/declarations/mul-app-source-edition-2.md) | 51 | `result-track:f08b25051091618fc7aa7d2b99d848cf6de76f7a24eede0e3778d2a61a3a5c60` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasicNamespaced.lean/declarations/instance.md) | 55 | `declaration-track:f239096bbdb8dac98830b75946bc7ba1e439a935a3084acf62cdaaf28baf0d8e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

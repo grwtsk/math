@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CertifiedPrime.lean/index.md) · [Full source](../../../../NumberTheory/CertifiedPrime.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CertifiedPrime.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CertifiedPrime.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedPrime](../../../../NumberTheory/CertifiedPrime.lean/declarations/certifiedprime.md) | 15 | `declaration-track:3cb0b8191d2458e351d615c25616b67cb6afc11b3afe11c8acbd881d9cdbfbe9` |
-| 2 | `theorem` | [two_le](../../../../NumberTheory/CertifiedPrime.lean/declarations/two-le.md) | 24 | `result-track:81ef08541b17aa599e786f4738aba41c047292470b21a8fccb7beabbe76b888b` |
-| 3 | `theorem` | [ne_zero](../../../../NumberTheory/CertifiedPrime.lean/declarations/ne-zero.md) | 27 | `result-track:2899ccaa231c5e3e77b2ef1ada32219a899d704c3061379b39297d588a90cae4` |
-| 4 | `theorem` | [ne_one](../../../../NumberTheory/CertifiedPrime.lean/declarations/ne-one.md) | 30 | `result-track:dca7c5838d3bdb85258811def8310acc59188adc7cc05da5cca2fc77727fae9a` |
+| 1 | `structure` | [CertifiedPrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CertifiedPrime.lean/declarations/certifiedprime.md) | 15 | `declaration-track:3cb0b8191d2458e351d615c25616b67cb6afc11b3afe11c8acbd881d9cdbfbe9` |
+| 2 | `theorem` | [two_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CertifiedPrime.lean/declarations/two-le.md) | 24 | `result-track:81ef08541b17aa599e786f4738aba41c047292470b21a8fccb7beabbe76b888b` |
+| 3 | `theorem` | [ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CertifiedPrime.lean/declarations/ne-zero.md) | 27 | `result-track:2899ccaa231c5e3e77b2ef1ada32219a899d704c3061379b39297d588a90cae4` |
+| 4 | `theorem` | [ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CertifiedPrime.lean/declarations/ne-one.md) | 30 | `result-track:dca7c5838d3bdb85258811def8310acc59188adc7cc05da5cca2fc77727fae9a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

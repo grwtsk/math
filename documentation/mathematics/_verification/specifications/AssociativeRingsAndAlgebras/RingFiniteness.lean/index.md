@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingFiniteness.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingFiniteness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingFiniteness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingFiniteness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/RingFiniteness.lean/declarations/example-source-edition-2.md) | 7 | `declaration-track:471884e772b60fada3dcdf66d950d34192d9c1293db861f2e33772b2c428b4c5` |
-| 2 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/RingFiniteness.lean/declarations/example.md) | 8 | `declaration-track:1523cbf5b0a299b3062d2211c04786035cdabc5f7cee2dc6f4036e4b6d23bee0` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingFiniteness.lean/declarations/example-source-edition-2.md) | 7 | `declaration-track:471884e772b60fada3dcdf66d950d34192d9c1293db861f2e33772b2c428b4c5` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingFiniteness.lean/declarations/example.md) | 8 | `declaration-track:1523cbf5b0a299b3062d2211c04786035cdabc5f7cee2dc6f4036e4b6d23bee0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EnableUnfold.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EnableUnfold.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EnableUnfold.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EnableUnfold.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [T](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EnableUnfold.lean/declarations/t.md) | 13 | `declaration-track:71ffd194e230b695f4d157f3a4238030c99582b6357e7d781d25587f82d866dd` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EnableUnfold.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:e7d4433bf86c2e666c66806d5ea92b8c686bd5d2786d1fce37414616ddf08697` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EnableUnfold.lean/declarations/example.md) | 22 | `declaration-track:0cc78c196ffc1a2549bb0ba75fbed466ca4e7d57f228bbf1ebc23f8f180b7f72` |
+| 1 | `def` | [T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EnableUnfold.lean/declarations/t.md) | 13 | `declaration-track:71ffd194e230b695f4d157f3a4238030c99582b6357e7d781d25587f82d866dd` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EnableUnfold.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:e7d4433bf86c2e666c66806d5ea92b8c686bd5d2786d1fce37414616ddf08697` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EnableUnfold.lean/declarations/example.md) | 22 | `declaration-track:0cc78c196ffc1a2549bb0ba75fbed466ca4e7d57f228bbf1ebc23f8f180b7f72` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

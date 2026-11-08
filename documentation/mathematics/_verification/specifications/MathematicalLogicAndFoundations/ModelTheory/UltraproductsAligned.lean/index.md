@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [setoidPrestructure](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/declarations/setoidprestructure.md) | 46 | `declaration-track:98adcf58df7996d7260c00096e3f1a89c103c00b9d7a9522a1ba243ebd87fc90` |
-| 2 | `instance` | [«structure»](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/declarations/structure.md) | 72 | `declaration-track:1af8c8e8c9fb9d12e741d557ac967b2e5656a56cbf87fac805434b0ef52671c4` |
-| 3 | `theorem` | [funMap_cast](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/declarations/funmap-cast.md) | 77 | `result-track:83155190d7ac7a5ea8d4cad0ce2b25507b004b5a80f4f175406e6b118ca019c6` |
-| 4 | `theorem` | [term_realize_cast](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/declarations/term-realize-cast.md) | 83 | `result-track:218d2be83c056121fa1d31146533798fab6e49b20083ea5f211e1ca7479f91e2` |
-| 5 | `theorem` | [boundedFormula_realize_cast](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/declarations/boundedformula-realize-cast.md) | 99 | `result-track:345e25585cedda04c22730f5a667f1f133fa68758944b88c02e8669445cfbe75` |
-| 6 | `theorem` | [realize_formula_cast](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/declarations/realize-formula-cast.md) | 150 | `result-track:7a6c3af91edc4775019cf7bb7ef1c8ff7bf492ba78b7c5c08930f13eb391d15c` |
-| 7 | `theorem` | [sentence_realize](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/declarations/sentence-realize.md) | 159 | `result-track:2b2207fc78fbc00ba8e0e23a05e139bd80ec5020115edf7ab4cae557f3a3f6d3` |
-| 8 | `instance` | [Product.instNonempty](../../../../../MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/declarations/product-instnonempty.md) | 166 | `declaration-track:f5a91617e83e002d9ccb1745d82bd506fd91b5c8ce23b93a6e26bfede65473a2` |
+| 1 | `instance` | [setoidPrestructure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/declarations/setoidprestructure.md) | 46 | `declaration-track:98adcf58df7996d7260c00096e3f1a89c103c00b9d7a9522a1ba243ebd87fc90` |
+| 2 | `instance` | [«structure»](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/declarations/structure.md) | 72 | `declaration-track:1af8c8e8c9fb9d12e741d557ac967b2e5656a56cbf87fac805434b0ef52671c4` |
+| 3 | `theorem` | [funMap_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/declarations/funmap-cast.md) | 77 | `result-track:83155190d7ac7a5ea8d4cad0ce2b25507b004b5a80f4f175406e6b118ca019c6` |
+| 4 | `theorem` | [term_realize_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/declarations/term-realize-cast.md) | 83 | `result-track:218d2be83c056121fa1d31146533798fab6e49b20083ea5f211e1ca7479f91e2` |
+| 5 | `theorem` | [boundedFormula_realize_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/declarations/boundedformula-realize-cast.md) | 99 | `result-track:345e25585cedda04c22730f5a667f1f133fa68758944b88c02e8669445cfbe75` |
+| 6 | `theorem` | [realize_formula_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/declarations/realize-formula-cast.md) | 150 | `result-track:7a6c3af91edc4775019cf7bb7ef1c8ff7bf492ba78b7c5c08930f13eb391d15c` |
+| 7 | `theorem` | [sentence_realize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/declarations/sentence-realize.md) | 159 | `result-track:2b2207fc78fbc00ba8e0e23a05e139bd80ec5020115edf7ab4cae557f3a3f6d3` |
+| 8 | `instance` | [Product.instNonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/UltraproductsAligned.lean/declarations/product-instnonempty.md) | 166 | `declaration-track:f5a91617e83e002d9ccb1745d82bd506fd91b5c8ce23b93a6e26bfede65473a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

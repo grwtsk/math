@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FinalNamespacedFinalRHConeDeclarationName.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FinalNamespacedFinalRHConeDeclarationName.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FinalNamespacedFinalRHConeDeclarationName.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FinalNamespacedFinalRHConeDeclarationName.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FinalRHConeDeclarationName](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FinalNamespacedFinalRHConeDeclarationName.lean/declarations/finalrhconedeclarationname.md) | 29 | `declaration-track:5fea42d77bb5300161e247929854c3744506e6504183805e9fb33deeadf2d8ee` |
-| 2 | `theorem` | [final_cone_declaration_name_fixed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FinalNamespacedFinalRHConeDeclarationName.lean/declarations/final-cone-declaration-name-fixed.md) | 32 | `result-track:03e88a5e56239558b76e2ea19ac17985961939ac68cfff8b723bfea8fc55e30d` |
-| 3 | `def` | [FinalRHConeClosed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FinalNamespacedFinalRHConeDeclarationName.lean/declarations/finalrhconeclosed.md) | 43 | `declaration-track:62d2764ed456d4f0508d971152ae08c83f5d890229d0464e5fe840412d1577b8` |
-| 4 | `theorem` | [current_final_rh_cone_rejects_unconditional_rh](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FinalNamespacedFinalRHConeDeclarationName.lean/declarations/current-final-rh-cone-rejects-unconditional-rh.md) | 46 | `result-track:6cec336037bfbba6989f5d8d672f529d207832f76a61588811fd4ace2ef1446a` |
+| 1 | `def` | [FinalRHConeDeclarationName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FinalNamespacedFinalRHConeDeclarationName.lean/declarations/finalrhconedeclarationname.md) | 29 | `declaration-track:5fea42d77bb5300161e247929854c3744506e6504183805e9fb33deeadf2d8ee` |
+| 2 | `theorem` | [final_cone_declaration_name_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FinalNamespacedFinalRHConeDeclarationName.lean/declarations/final-cone-declaration-name-fixed.md) | 32 | `result-track:03e88a5e56239558b76e2ea19ac17985961939ac68cfff8b723bfea8fc55e30d` |
+| 3 | `def` | [FinalRHConeClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FinalNamespacedFinalRHConeDeclarationName.lean/declarations/finalrhconeclosed.md) | 43 | `declaration-track:62d2764ed456d4f0508d971152ae08c83f5d890229d0464e5fe840412d1577b8` |
+| 4 | `theorem` | [current_final_rh_cone_rejects_unconditional_rh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FinalNamespacedFinalRHConeDeclarationName.lean/declarations/current-final-rh-cone-rejects-unconditional-rh.md) | 46 | `result-track:6cec336037bfbba6989f5d8d672f529d207832f76a61588811fd4ace2ef1446a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

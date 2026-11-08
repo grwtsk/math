@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDecay.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDecay.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDecay.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDecay.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeSymmetricTriangularKernel`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernel.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeSymmetricTriangularKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernel.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds` — import line 4; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [abs_sin_pi_mul_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDecay.lean/declarations/abs-sin-pi-mul-lower.md) | 14 | `result-track:e8f9e34d579bd46889fd4ba1912398c6e88cd717fd2122080c2e7ee3a4daa130` |
-| 2 | `theorem` | [symmetricTriangularKernelDecay_of_closedForm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDecay.lean/declarations/symmetrictriangularkerneldecay-of-closedform.md) | 32 | `result-track:12577293db6f02c5f79e9f74abd3dce8e1d390dc27885fa8155961aa1b85ace6` |
-| 3 | `theorem` | [closedForm_discharge_pointwise_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDecay.lean/declarations/closedform-discharge-pointwise-decay.md) | 83 | `result-track:f3236241db915ea72ebe6351cbd130a6bdbc4889a47269840355cfe7d3e15e70` |
+| 1 | `theorem` | [abs_sin_pi_mul_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDecay.lean/declarations/abs-sin-pi-mul-lower.md) | 14 | `result-track:e8f9e34d579bd46889fd4ba1912398c6e88cd717fd2122080c2e7ee3a4daa130` |
+| 2 | `theorem` | [symmetricTriangularKernelDecay_of_closedForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDecay.lean/declarations/symmetrictriangularkerneldecay-of-closedform.md) | 32 | `result-track:12577293db6f02c5f79e9f74abd3dce8e1d390dc27885fa8155961aa1b85ace6` |
+| 3 | `theorem` | [closedForm_discharge_pointwise_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDecay.lean/declarations/closedform-discharge-pointwise-decay.md) | 83 | `result-track:f3236241db915ea72ebe6351cbd130a6bdbc4889a47269840355cfe7d3e15e70` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

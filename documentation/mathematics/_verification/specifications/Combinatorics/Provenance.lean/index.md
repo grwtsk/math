@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Provenance.lean/index.md) · [Full source](../../../../Combinatorics/Provenance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Provenance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Provenance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedPrimitiveCore](../../../../Combinatorics/Provenance.lean/declarations/certifiedprimitivecore.md) | 17 | `declaration-track:c0bc804072d059509b3db5ad5fc0366cbb4d5cd9e3073f827758655b2ea2aba0` |
-| 2 | `theorem` | [CertifiedPrimitiveCore.infeasible](../../../../Combinatorics/Provenance.lean/declarations/certifiedprimitivecore-infeasible.md) | 41 | `result-track:843436c677c875934ee17678839a8babc4566225243b239e0cbeafaea7990937` |
+| 1 | `structure` | [CertifiedPrimitiveCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Provenance.lean/declarations/certifiedprimitivecore.md) | 17 | `declaration-track:c0bc804072d059509b3db5ad5fc0366cbb4d5cd9e3073f827758655b2ea2aba0` |
+| 2 | `theorem` | [CertifiedPrimitiveCore.infeasible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Provenance.lean/declarations/certifiedprimitivecore-infeasible.md) | 41 | `result-track:843436c677c875934ee17678839a8babc4566225243b239e0cbeafaea7990937` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

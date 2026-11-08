@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexTheoremContractCrystallineIndexTheoremContract.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexTheoremContractCrystallineIndexTheoremContract.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexTheoremContractCrystallineIndexTheoremContract.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexTheoremContractCrystallineIndexTheoremContract.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CrystallineIndexTheoremContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexTheoremContractCrystallineIndexTheoremContract.lean/declarations/crystallineindextheoremcontract.md) | 27 | `declaration-track:9a4ce0309bd55b7d17fe4458386ecf5eabaf24ee3ef1597321047cf7b1ab5dfc` |
-| 2 | `theorem` | [index_formula_certified](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexTheoremContractCrystallineIndexTheoremContract.lean/declarations/index-formula-certified.md) | 46 | `result-track:91c75436ed5c32cc5bca5f1761a2a8c821bb0d072b274d7bda027dc872881f51` |
-| 3 | `theorem` | [index_theorem_characteristic_formula](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexTheoremContractCrystallineIndexTheoremContract.lean/declarations/index-theorem-characteristic-formula.md) | 56 | `result-track:9ec3ac8f70f5751e1a2042d320c4944bee18c251567d9b578a0c5a9935cb4488` |
+| 1 | `structure` | [CrystallineIndexTheoremContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexTheoremContractCrystallineIndexTheoremContract.lean/declarations/crystallineindextheoremcontract.md) | 27 | `declaration-track:9a4ce0309bd55b7d17fe4458386ecf5eabaf24ee3ef1597321047cf7b1ab5dfc` |
+| 2 | `theorem` | [index_formula_certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexTheoremContractCrystallineIndexTheoremContract.lean/declarations/index-formula-certified.md) | 46 | `result-track:91c75436ed5c32cc5bca5f1761a2a8c821bb0d072b274d7bda027dc872881f51` |
+| 3 | `theorem` | [index_theorem_characteristic_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexTheoremContractCrystallineIndexTheoremContract.lean/declarations/index-theorem-characteristic-formula.md) | 56 | `result-track:9ec3ac8f70f5751e1a2042d320c4944bee18c251567d9b578a0c5a9935cb4488` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

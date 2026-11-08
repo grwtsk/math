@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ExponentialEnergy.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ExponentialEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExponentialEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExponentialEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy`](../../../../MeasureAndIntegration/PolynomialEnergy.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialEnergy.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Algebra.Order.Star.Real` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integrableOn_sq_tilt_of_energy_exponential](../../../../MeasureAndIntegration/ExponentialEnergy.lean/declarations/integrableon-sq-tilt-of-energy-exponential.md) | 14 | `result-track:2f9d5baefce399b640327ff13c5013a440ad13a16dc1d243d7c0c8e4596a5cb4` |
+| 1 | `theorem` | [integrableOn_sq_tilt_of_energy_exponential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExponentialEnergy.lean/declarations/integrableon-sq-tilt-of-energy-exponential.md) | 14 | `result-track:2f9d5baefce399b640327ff13c5013a440ad13a16dc1d243d7c0c8e4596a5cb4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

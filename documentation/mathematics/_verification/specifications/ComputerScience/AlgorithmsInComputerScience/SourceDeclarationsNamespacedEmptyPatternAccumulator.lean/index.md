@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SourceDeclarationsNamespacedEmptyPatternAccumulator.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SourceDeclarationsNamespacedEmptyPatternAccumulator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SourceDeclarationsNamespacedEmptyPatternAccumulator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SourceDeclarationsNamespacedEmptyPatternAccumulator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [empty_pattern_accumulator](../../../../../ComputerScience/AlgorithmsInComputerScience/SourceDeclarationsNamespacedEmptyPatternAccumulator.lean/declarations/empty-pattern-accumulator.md) | 34 | `result-track:6a40dd1371f04b04d0809d0f0461afab60696a6a271c78d036f01bd1bf975948` |
-| 2 | `theorem` | [bitRado_fresh_pattern_copies_of_length](../../../../../ComputerScience/AlgorithmsInComputerScience/SourceDeclarationsNamespacedEmptyPatternAccumulator.lean/declarations/bitrado-fresh-pattern-copies-of-length.md) | 42 | `result-track:ee0ea9b0af0bacaf37b7f5206449305d8006cf577c603023a0191e407d4530af` |
-| 3 | `theorem` | [bitRado_fresh_pattern_copies_extending_accumulator_of_length](../../../../../ComputerScience/AlgorithmsInComputerScience/SourceDeclarationsNamespacedEmptyPatternAccumulator.lean/declarations/bitrado-fresh-pattern-copies-extending-accumulator-of-length.md) | 53 | `result-track:bbefc77c39858f8fa9aecd01ce651ebbc3b512d3537840ed132437175c09f582` |
-| 4 | `theorem` | [bitRado_fresh_pattern_copies_extending_accumulator_members_pair_bundle](../../../../../ComputerScience/AlgorithmsInComputerScience/SourceDeclarationsNamespacedEmptyPatternAccumulator.lean/declarations/bitrado-fresh-pattern-copies-extending-accumulator-members-pair-bundle.md) | 65 | `result-track:5d2bffe890608aa65a61d12e35478e16a0aa6dc8e6bdb0e1aaf0308d697ae7a6` |
+| 1 | `theorem` | [empty_pattern_accumulator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SourceDeclarationsNamespacedEmptyPatternAccumulator.lean/declarations/empty-pattern-accumulator.md) | 34 | `result-track:6a40dd1371f04b04d0809d0f0461afab60696a6a271c78d036f01bd1bf975948` |
+| 2 | `theorem` | [bitRado_fresh_pattern_copies_of_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SourceDeclarationsNamespacedEmptyPatternAccumulator.lean/declarations/bitrado-fresh-pattern-copies-of-length.md) | 42 | `result-track:ee0ea9b0af0bacaf37b7f5206449305d8006cf577c603023a0191e407d4530af` |
+| 3 | `theorem` | [bitRado_fresh_pattern_copies_extending_accumulator_of_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SourceDeclarationsNamespacedEmptyPatternAccumulator.lean/declarations/bitrado-fresh-pattern-copies-extending-accumulator-of-length.md) | 53 | `result-track:bbefc77c39858f8fa9aecd01ce651ebbc3b512d3537840ed132437175c09f582` |
+| 4 | `theorem` | [bitRado_fresh_pattern_copies_extending_accumulator_members_pair_bundle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SourceDeclarationsNamespacedEmptyPatternAccumulator.lean/declarations/bitrado-fresh-pattern-copies-extending-accumulator-members-pair-bundle.md) | 65 | `result-track:5d2bffe890608aa65a61d12e35478e16a0aa6dc8e6bdb0e1aaf0308d697ae7a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

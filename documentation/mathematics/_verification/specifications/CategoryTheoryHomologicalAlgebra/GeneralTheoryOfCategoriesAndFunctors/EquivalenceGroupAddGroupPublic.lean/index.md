@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivalenceGroupAddGroupPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivalenceGroupAddGroupPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivalenceGroupAddGroupPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivalenceGroupAddGroupPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toAddGrp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivalenceGroupAddGroupPublic.lean/declarations/toaddgrp.md) | 30 | `declaration-track:61f2e95ab20755d54b9a94006d0dbe59f4be33553cd6d0cea49a7fed6d34e93d` |
-| 2 | `def` | [toAddCommGrp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivalenceGroupAddGroupPublic.lean/declarations/toaddcommgrp.md) | 41 | `declaration-track:055e0e412315fe377dd0d52ec0d6308ae0eeac8971e0212f8f67b11ea1c4e256` |
-| 3 | `def` | [toGrp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivalenceGroupAddGroupPublic.lean/declarations/togrp.md) | 52 | `declaration-track:f1345d366ac3a9d9b904650a3d3c8a7c117647ae35af8f3f97dcc6e10a711d49` |
-| 4 | `def` | [toCommGrp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivalenceGroupAddGroupPublic.lean/declarations/tocommgrp.md) | 63 | `declaration-track:7031093ed8c733fa8dae6c4c935b995597dfa94322bdacb2cfb3b3ecfc3d62eb` |
-| 5 | `def` | [groupAddGroupEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivalenceGroupAddGroupPublic.lean/declarations/groupaddgroupequivalence.md) | 72 | `declaration-track:e29c897572c14b5d0537bf479dcc9e67d0093fe1a0d1b8ec80166b31d8849849` |
-| 6 | `def` | [commGroupAddCommGroupEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivalenceGroupAddGroupPublic.lean/declarations/commgroupaddcommgroupequivalence.md) | 81 | `declaration-track:6d275e31e580d62c5728422237051659523d9803e32c4baf47437e7dce389eb1` |
+| 1 | `def` | [toAddGrp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivalenceGroupAddGroupPublic.lean/declarations/toaddgrp.md) | 30 | `declaration-track:61f2e95ab20755d54b9a94006d0dbe59f4be33553cd6d0cea49a7fed6d34e93d` |
+| 2 | `def` | [toAddCommGrp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivalenceGroupAddGroupPublic.lean/declarations/toaddcommgrp.md) | 41 | `declaration-track:055e0e412315fe377dd0d52ec0d6308ae0eeac8971e0212f8f67b11ea1c4e256` |
+| 3 | `def` | [toGrp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivalenceGroupAddGroupPublic.lean/declarations/togrp.md) | 52 | `declaration-track:f1345d366ac3a9d9b904650a3d3c8a7c117647ae35af8f3f97dcc6e10a711d49` |
+| 4 | `def` | [toCommGrp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivalenceGroupAddGroupPublic.lean/declarations/tocommgrp.md) | 63 | `declaration-track:7031093ed8c733fa8dae6c4c935b995597dfa94322bdacb2cfb3b3ecfc3d62eb` |
+| 5 | `def` | [groupAddGroupEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivalenceGroupAddGroupPublic.lean/declarations/groupaddgroupequivalence.md) | 72 | `declaration-track:e29c897572c14b5d0537bf479dcc9e67d0093fe1a0d1b8ec80166b31d8849849` |
+| 6 | `def` | [commGroupAddCommGroupEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EquivalenceGroupAddGroupPublic.lean/declarations/commgroupaddcommgroupequivalence.md) | 81 | `declaration-track:6d275e31e580d62c5728422237051659523d9803e32c4baf47437e7dce389eb1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectralTripleBridgeNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectralTripleBridgeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectralTripleBridgeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectralTripleBridgeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [spectral_triple_metric](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectralTripleBridgeNamespaced.lean/declarations/spectral-triple-metric.md) | 28 | `result-track:86b5fa956dd557b8bb330c45e2ee2741580e5d5e2c07ecb558408ece97b24c45` |
-| 2 | `theorem` | [zero_spectrum_bridge_matches](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectralTripleBridgeNamespaced.lean/declarations/zero-spectrum-bridge-matches.md) | 33 | `result-track:5592e1059a0d67ec3574bfa2fe72b326cc34c5e877b89f004e37993ec4ba3d94` |
+| 1 | `theorem` | [spectral_triple_metric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectralTripleBridgeNamespaced.lean/declarations/spectral-triple-metric.md) | 28 | `result-track:86b5fa956dd557b8bb330c45e2ee2741580e5d5e2c07ecb558408ece97b24c45` |
+| 2 | `theorem` | [zero_spectrum_bridge_matches](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectralTripleBridgeNamespaced.lean/declarations/zero-spectrum-bridge-matches.md) | 33 | `result-track:5592e1059a0d67ec3574bfa2fe72b326cc34c5e877b89f004e37993ec4ba3d94` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

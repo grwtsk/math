@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RuleSet.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RuleSet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RuleSet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RuleSet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SourceRegenerationRule](../../../../../ComputerScience/AlgorithmsInComputerScience/RuleSet.lean/declarations/sourceregenerationrule.md) | 8 | `declaration-track:54d4603d2a32ff8bea6f3c7e72031e6e685afea6c2eb4806e94b96d03388af00` |
-| 2 | `structure` | [RuleSet](../../../../../ComputerScience/AlgorithmsInComputerScience/RuleSet.lean/declarations/ruleset.md) | 24 | `declaration-track:74a4f795eeb6a11f6914f0b39baa5fd906b0888328e41234fe114dfeb6b17c74` |
-| 3 | `theorem` | [ruleset_boundary_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/RuleSet.lean/declarations/ruleset-boundary-visible.md) | 38 | `result-track:be4ccc67e22e2f9d28ccb78886d04cc9071ca9a0f88e7d3fcd470de064667057` |
+| 1 | `structure` | [SourceRegenerationRule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RuleSet.lean/declarations/sourceregenerationrule.md) | 8 | `declaration-track:54d4603d2a32ff8bea6f3c7e72031e6e685afea6c2eb4806e94b96d03388af00` |
+| 2 | `structure` | [RuleSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RuleSet.lean/declarations/ruleset.md) | 24 | `declaration-track:74a4f795eeb6a11f6914f0b39baa5fd906b0888328e41234fe114dfeb6b17c74` |
+| 3 | `theorem` | [ruleset_boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RuleSet.lean/declarations/ruleset-boundary-visible.md) | 38 | `result-track:be4ccc67e22e2f9d28ccb78886d04cc9071ca9a0f88e7d3fcd470de064667057` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

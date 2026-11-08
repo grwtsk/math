@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ModeBounds.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ModeBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ModeBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ModeBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ModeBounds.lean/declarations/example.md) | 4 | `declaration-track:4367f5a8a31b2a4ccba2a1c62725f71756415d68327cf20400082e16615fcdd1` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ModeBounds.lean/declarations/example-source-edition-3.md) | 8 | `declaration-track:918a9f0e0867ca358d7d8536a39404700e703574e15a07d25a5e69abcc0b25fc` |
-| 3 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ModeBounds.lean/declarations/example-source-edition-4.md) | 13 | `declaration-track:b9c220b5ffc546bbaffb670ff1ddd26364e46e1a566ab1075e89f8674a395b73` |
-| 4 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ModeBounds.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:6b10a0dd534362ad2a4f0020addeafc740d322acece6edbfc92ee34c9fb9b262` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ModeBounds.lean/declarations/example.md) | 4 | `declaration-track:4367f5a8a31b2a4ccba2a1c62725f71756415d68327cf20400082e16615fcdd1` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ModeBounds.lean/declarations/example-source-edition-3.md) | 8 | `declaration-track:918a9f0e0867ca358d7d8536a39404700e703574e15a07d25a5e69abcc0b25fc` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ModeBounds.lean/declarations/example-source-edition-4.md) | 13 | `declaration-track:b9c220b5ffc546bbaffb670ff1ddd26364e46e1a566ab1075e89f8674a395b73` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ModeBounds.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:6b10a0dd534362ad2a4f0020addeafc740d322acece6edbfc92ee34c9fb9b262` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

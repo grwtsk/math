@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ExpansionIndexNamespacedExpandAtInternal.lean/index.md) · [Full source](../../../../Combinatorics/ExpansionIndexNamespacedExpandAtInternal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexNamespacedExpandAtInternal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexNamespacedExpandAtInternal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [expandAt_internal](../../../../Combinatorics/ExpansionIndexNamespacedExpandAtInternal.lean/declarations/expandat-internal.md) | 27 | `result-track:43181ef258211c0b8e6f61ff27d7c76f1a3ee860c93aa590bef7fce024328c9a` |
-| 2 | `theorem` | [expandAt_leaves](../../../../Combinatorics/ExpansionIndexNamespacedExpandAtInternal.lean/declarations/expandat-leaves.md) | 35 | `result-track:def3a5796b98ae8d40ed4917693b6272ebcdb4458d85c532ae46169e00e23803` |
+| 1 | `theorem` | [expandAt_internal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexNamespacedExpandAtInternal.lean/declarations/expandat-internal.md) | 27 | `result-track:43181ef258211c0b8e6f61ff27d7c76f1a3ee860c93aa590bef7fce024328c9a` |
+| 2 | `theorem` | [expandAt_leaves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexNamespacedExpandAtInternal.lean/declarations/expandat-leaves.md) | 35 | `result-track:def3a5796b98ae8d40ed4917693b6272ebcdb4458d85c532ae46169e00e23803` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

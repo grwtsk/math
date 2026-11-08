@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/FunctionTopologyPublic.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/FunctionTopologyPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/FunctionTopologyPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/FunctionTopologyPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isClosed_setOfPred_convexOn](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/FunctionTopologyPublic.lean/declarations/isclosed-setofpred-convexon.md) | 32 | `result-track:26d3bcc4e20de60085178a9e8e48ed6a939e941896908a0e8ba9448b6cf26c7a` |
-| 2 | `theorem` | [isClosed_setOfPred_concaveOn](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/FunctionTopologyPublic.lean/declarations/isclosed-setofpred-concaveon.md) | 45 | `result-track:cf64fa5b9ec11e98c84615667de37b8f0d8f138c0f398a0d9f2e5c13a2d40ddd` |
+| 1 | `theorem` | [isClosed_setOfPred_convexOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/FunctionTopologyPublic.lean/declarations/isclosed-setofpred-convexon.md) | 32 | `result-track:26d3bcc4e20de60085178a9e8e48ed6a939e941896908a0e8ba9448b6cf26c7a` |
+| 2 | `theorem` | [isClosed_setOfPred_concaveOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/FunctionTopologyPublic.lean/declarations/isclosed-setofpred-concaveon.md) | 45 | `result-track:cf64fa5b9ec11e98c84615667de37b8f0d8f138c0f398a0d9f2e5c13a2d40ddd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

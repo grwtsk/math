@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftCoefficientDecayControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftCoefficientDecayControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftCoefficientDecayControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftCoefficientDecayControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.SafeShiftCoefficientDecay`](../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SafeShiftCoefficientDecay.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.SafeShiftCoefficientDecay`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SafeShiftCoefficientDecay.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [axial_unrenormalized_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftCoefficientDecayControls.lean/declarations/axial-unrenormalized-decay.md) | 15 | `result-track:c32303a82c4e0ced1a2d4b67d8618988e27a91619862a17d8fcadd36560898a2` |
-| 2 | `theorem` | [transverse_unrenormalized_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftCoefficientDecayControls.lean/declarations/transverse-unrenormalized-decay.md) | 19 | `result-track:cf602297ab1a24c37f63870a89df0b3cb61b7fcd8bbdd79d5a47656976505789` |
+| 1 | `theorem` | [axial_unrenormalized_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftCoefficientDecayControls.lean/declarations/axial-unrenormalized-decay.md) | 15 | `result-track:c32303a82c4e0ced1a2d4b67d8618988e27a91619862a17d8fcadd36560898a2` |
+| 2 | `theorem` | [transverse_unrenormalized_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftCoefficientDecayControls.lean/declarations/transverse-unrenormalized-decay.md) | 19 | `result-track:cf602297ab1a24c37f63870a89df0b3cb61b7fcd8bbdd79d5a47656976505789` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

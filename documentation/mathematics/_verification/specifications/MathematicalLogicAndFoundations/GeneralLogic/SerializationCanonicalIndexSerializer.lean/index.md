@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SerializationCanonicalIndexSerializer.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SerializationCanonicalIndexSerializer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SerializationCanonicalIndexSerializer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SerializationCanonicalIndexSerializer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CanonicalIndexSerializer](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SerializationCanonicalIndexSerializer.lean/declarations/canonicalindexserializer.md) | 18 | `declaration-track:c87da43e31db34500232d034d2b504003df4864f8a0c2c1bc86d9839155a2da3` |
-| 2 | `theorem` | [CanonicalIndexSerializer.encode_deterministic](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SerializationCanonicalIndexSerializer.lean/declarations/canonicalindexserializer-encode-deterministic.md) | 27 | `result-track:cf914c3b2d61fecd3abdfc597a1848bd994241951fa022598877c1ca5c573392` |
-| 3 | `structure` | [SerializedCanonicalIndex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SerializationCanonicalIndexSerializer.lean/declarations/serializedcanonicalindex.md) | 39 | `declaration-track:a89658a24eff93a023940e9b82432a0ed26b258ac143f1190356b7c5dac8a344` |
-| 4 | `theorem` | [SerializedCanonicalIndex.representation_chain](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SerializationCanonicalIndexSerializer.lean/declarations/serializedcanonicalindex-representation-chain.md) | 52 | `result-track:610c3b31da23285a00fac8c5ac8059cf9bc549aee90a798f3b92492b28d7e84f` |
+| 1 | `structure` | [CanonicalIndexSerializer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SerializationCanonicalIndexSerializer.lean/declarations/canonicalindexserializer.md) | 18 | `declaration-track:c87da43e31db34500232d034d2b504003df4864f8a0c2c1bc86d9839155a2da3` |
+| 2 | `theorem` | [CanonicalIndexSerializer.encode_deterministic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SerializationCanonicalIndexSerializer.lean/declarations/canonicalindexserializer-encode-deterministic.md) | 27 | `result-track:cf914c3b2d61fecd3abdfc597a1848bd994241951fa022598877c1ca5c573392` |
+| 3 | `structure` | [SerializedCanonicalIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SerializationCanonicalIndexSerializer.lean/declarations/serializedcanonicalindex.md) | 39 | `declaration-track:a89658a24eff93a023940e9b82432a0ed26b258ac143f1190356b7c5dac8a344` |
+| 4 | `theorem` | [SerializedCanonicalIndex.representation_chain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SerializationCanonicalIndexSerializer.lean/declarations/serializedcanonicalindex-representation-chain.md) | 52 | `result-track:610c3b31da23285a00fac8c5ac8059cf9bc549aee90a798f3b92492b28d7e84f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

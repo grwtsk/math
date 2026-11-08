@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PUnit.lean/index.md) · [Full source](../../../../GeneralTopology/PUnit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PUnit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PUnit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isSheaf_of_isTerminal_of_indiscrete](../../../../GeneralTopology/PUnit.lean/declarations/issheaf-of-isterminal-of-indiscrete.md) | 23 | `result-track:00bfb3b23f11b29a773d4cd3092fc05fd75d1c5a06a9c3250408ea3821c62e02` |
-| 2 | `theorem` | [isSheaf_iff_isTerminal_of_indiscrete](../../../../GeneralTopology/PUnit.lean/declarations/issheaf-iff-isterminal-of-indiscrete.md) | 42 | `result-track:24b7f91227bfc7097af7dafa063bc5e66e5881a3cb9d4dafb2b5bc4dfd233b1b` |
-| 3 | `theorem` | [isSheaf_on_punit_of_isTerminal](../../../../GeneralTopology/PUnit.lean/declarations/issheaf-on-punit-of-isterminal.md) | 47 | `result-track:02a978b69949f245f457ede3ca305107598e8767d7e9a5c6a9561faaf99afe3c` |
-| 4 | `theorem` | [isSheaf_on_punit_iff_isTerminal](../../../../GeneralTopology/PUnit.lean/declarations/issheaf-on-punit-iff-isterminal.md) | 51 | `result-track:c2f187e5597b9cdf253e72cd884591e6f8a1542d0f315660e2b9fe4507e8ecab` |
+| 1 | `theorem` | [isSheaf_of_isTerminal_of_indiscrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PUnit.lean/declarations/issheaf-of-isterminal-of-indiscrete.md) | 23 | `result-track:00bfb3b23f11b29a773d4cd3092fc05fd75d1c5a06a9c3250408ea3821c62e02` |
+| 2 | `theorem` | [isSheaf_iff_isTerminal_of_indiscrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PUnit.lean/declarations/issheaf-iff-isterminal-of-indiscrete.md) | 42 | `result-track:24b7f91227bfc7097af7dafa063bc5e66e5881a3cb9d4dafb2b5bc4dfd233b1b` |
+| 3 | `theorem` | [isSheaf_on_punit_of_isTerminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PUnit.lean/declarations/issheaf-on-punit-of-isterminal.md) | 47 | `result-track:02a978b69949f245f457ede3ca305107598e8767d7e9a5c6a9561faaf99afe3c` |
+| 4 | `theorem` | [isSheaf_on_punit_iff_isTerminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PUnit.lean/declarations/issheaf-on-punit-iff-isterminal.md) | 51 | `result-track:c2f187e5597b9cdf253e72cd884591e6f8a1542d0f315660e2b9fe4507e8ecab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

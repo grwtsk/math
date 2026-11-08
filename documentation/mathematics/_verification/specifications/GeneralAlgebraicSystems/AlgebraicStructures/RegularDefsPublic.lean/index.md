@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsLeftRegular](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsPublic.lean/declarations/isleftregular.md) | 28 | `declaration-track:cfa84c8f51816af56336ece1b3a8ca1a28ffc4057b31d9ef43c205a073669632` |
-| 2 | `def` | [IsRightRegular](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsPublic.lean/declarations/isrightregular.md) | 36 | `declaration-track:fbaaf22f76fc5ef1e30df2661949a73be7d24c65c807dcfe5507dfe487bef766` |
-| 3 | `structure` | [IsAddRegular](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsPublic.lean/declarations/isaddregular.md) | 41 | `declaration-track:4832627e82d2ee35a54f27368c9a4a23e58104247128270a34f4a8828a1383cd` |
-| 4 | `structure` | [IsRegular](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsPublic.lean/declarations/isregular.md) | 49 | `declaration-track:f8e1a5e08d10cb8a4de1f78b8425006fc50f02a1b31d2462c92fdd6cb190ce93` |
-| 5 | `theorem` | [isRegular_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsPublic.lean/declarations/isregular-iff.md) | 60 | `result-track:dab039c7ebcbded5c76897733db043dfaea5a8a247bba08a7d6c700a0d10d6d4` |
+| 1 | `def` | [IsLeftRegular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsPublic.lean/declarations/isleftregular.md) | 28 | `declaration-track:cfa84c8f51816af56336ece1b3a8ca1a28ffc4057b31d9ef43c205a073669632` |
+| 2 | `def` | [IsRightRegular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsPublic.lean/declarations/isrightregular.md) | 36 | `declaration-track:fbaaf22f76fc5ef1e30df2661949a73be7d24c65c807dcfe5507dfe487bef766` |
+| 3 | `structure` | [IsAddRegular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsPublic.lean/declarations/isaddregular.md) | 41 | `declaration-track:4832627e82d2ee35a54f27368c9a4a23e58104247128270a34f4a8828a1383cd` |
+| 4 | `structure` | [IsRegular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsPublic.lean/declarations/isregular.md) | 49 | `declaration-track:f8e1a5e08d10cb8a4de1f78b8425006fc50f02a1b31d2462c92fdd6cb190ce93` |
+| 5 | `theorem` | [isRegular_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsPublic.lean/declarations/isregular-iff.md) | 60 | `result-track:dab039c7ebcbded5c76897733db043dfaea5a8a247bba08a7d6c700a0d10d6d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

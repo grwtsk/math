@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ReesPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ReesPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [smul_top_quotSMulTop_ne_top_of_smul_top_ne_top](../../../../CommutativeAlgebra/ReesPublic.lean/declarations/smul-top-quotsmultop-ne-top-of-smul-top-ne-top.md) | 47 | `result-track:c1a35f969148a3e2473f045a7feb18d966c257847ad1c080debfad9290bfe0dc` |
-| 2 | `lemma` | [exists_isRegular_of_exists_subsingleton_ext](../../../../CommutativeAlgebra/ReesPublic.lean/declarations/exists-isregular-of-exists-subsingleton-ext.md) | 63 | `result-track:5fb425f8efa47ce4fcdbe74cf2cab3dfbd0b8cd0986c66cfefba04f782b77355` |
-| 3 | `lemma` | [subsingleton_ext_of_exists_isRegular](../../../../CommutativeAlgebra/ReesPublic.lean/declarations/subsingleton-ext-of-exists-isregular.md) | 101 | `result-track:62ab0a498fdce216b53b07efc6536d1bcc693339de6b59040c4d895b8016b0ca` |
-| 4 | `lemma` | [exists_isRegular_tfae](../../../../CommutativeAlgebra/ReesPublic.lean/declarations/exists-isregular-tfae.md) | 158 | `result-track:470e60929e227b682b15c64cbdcf25a32deb70941ec04187fa6acf25537b3c06` |
+| 1 | `lemma` | [smul_top_quotSMulTop_ne_top_of_smul_top_ne_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesPublic.lean/declarations/smul-top-quotsmultop-ne-top-of-smul-top-ne-top.md) | 47 | `result-track:c1a35f969148a3e2473f045a7feb18d966c257847ad1c080debfad9290bfe0dc` |
+| 2 | `lemma` | [exists_isRegular_of_exists_subsingleton_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesPublic.lean/declarations/exists-isregular-of-exists-subsingleton-ext.md) | 63 | `result-track:5fb425f8efa47ce4fcdbe74cf2cab3dfbd0b8cd0986c66cfefba04f782b77355` |
+| 3 | `lemma` | [subsingleton_ext_of_exists_isRegular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesPublic.lean/declarations/subsingleton-ext-of-exists-isregular.md) | 101 | `result-track:62ab0a498fdce216b53b07efc6536d1bcc693339de6b59040c4d895b8016b0ca` |
+| 4 | `lemma` | [exists_isRegular_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesPublic.lean/declarations/exists-isregular-tfae.md) | 158 | `result-track:470e60929e227b682b15c64cbdcf25a32deb70941ec04187fa6acf25537b3c06` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

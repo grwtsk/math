@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesNamespacedCrystallineIndexUnresolvedIssues.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesNamespacedCrystallineIndexUnresolvedIssues.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesNamespacedCrystallineIndexUnresolvedIssues.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesNamespacedCrystallineIndexUnresolvedIssues.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CrystallineIndexUnresolvedIssues](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesNamespacedCrystallineIndexUnresolvedIssues.lean/declarations/crystallineindexunresolvedissues.md) | 26 | `declaration-track:96be941533a9c96586ac486c36e2e8e9278dbcf21dcf039675f39c644a312eff` |
-| 2 | `def` | [unresolvedIssues](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesNamespacedCrystallineIndexUnresolvedIssues.lean/declarations/unresolvedissues.md) | 42 | `declaration-track:5912ad7301dfa6ef6692cbbb2495b4c7952b6800ed391ce2b0862d77bb7d8bb1` |
+| 1 | `structure` | [CrystallineIndexUnresolvedIssues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesNamespacedCrystallineIndexUnresolvedIssues.lean/declarations/crystallineindexunresolvedissues.md) | 26 | `declaration-track:96be941533a9c96586ac486c36e2e8e9278dbcf21dcf039675f39c644a312eff` |
+| 2 | `def` | [unresolvedIssues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesNamespacedCrystallineIndexUnresolvedIssues.lean/declarations/unresolvedissues.md) | 42 | `declaration-track:5912ad7301dfa6ef6692cbbb2495b4c7952b6800ed391ce2b0862d77bb7d8bb1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

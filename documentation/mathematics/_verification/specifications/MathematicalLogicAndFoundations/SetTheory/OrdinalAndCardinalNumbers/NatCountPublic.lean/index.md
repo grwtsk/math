@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/NatCountPublic.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/NatCountPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/NatCountPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/NatCountPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [count_le_cardinal](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/NatCountPublic.lean/declarations/count-le-cardinal.md) | 25 | `result-track:35ef9e950be836fa79e24b3c9dab277a50bcd2032784b9107f1b4ed6c3edcec5` |
-| 2 | `theorem` | [count_le_setENCard](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/NatCountPublic.lean/declarations/count-le-setencard.md) | 29 | `result-track:7d0984f347b33c1b19ee1155f5729b2c5cf5d4141b1bafdc0dc324ea0ac3ec6f` |
-| 3 | `theorem` | [count_le_setNCard](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/NatCountPublic.lean/declarations/count-le-setncard.md) | 33 | `result-track:fd2375ab5c2056e7674195bb767ace09ef5983f8cc5c3c277c1ebaf14931be2e` |
+| 1 | `theorem` | [count_le_cardinal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/NatCountPublic.lean/declarations/count-le-cardinal.md) | 25 | `result-track:35ef9e950be836fa79e24b3c9dab277a50bcd2032784b9107f1b4ed6c3edcec5` |
+| 2 | `theorem` | [count_le_setENCard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/NatCountPublic.lean/declarations/count-le-setencard.md) | 29 | `result-track:7d0984f347b33c1b19ee1155f5729b2c5cf5d4141b1bafdc0dc324ea0ac3ec6f` |
+| 3 | `theorem` | [count_le_setNCard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/NatCountPublic.lean/declarations/count-le-setncard.md) | 33 | `result-track:fd2375ab5c2056e7674195bb767ace09ef5983f8cc5c3c277c1ebaf14931be2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

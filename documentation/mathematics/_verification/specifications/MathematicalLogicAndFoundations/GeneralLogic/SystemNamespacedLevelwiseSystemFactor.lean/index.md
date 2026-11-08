@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SystemNamespacedLevelwiseSystemFactor.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SystemNamespacedLevelwiseSystemFactor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SystemNamespacedLevelwiseSystemFactor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SystemNamespacedLevelwiseSystemFactor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LevelwiseSystemFactor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SystemNamespacedLevelwiseSystemFactor.lean/declarations/levelwisesystemfactor.md) | 23 | `declaration-track:21f338f30fe36c4a55aa309575ac6965e7c6e76474dca33797e1b28af1d8a642` |
-| 2 | `def` | [factor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SystemNamespacedLevelwiseSystemFactor.lean/declarations/factor.md) | 33 | `declaration-track:e315d09ae1df3361004dd5f469f972d5e36548a3309b206b4e867d04cc654eef` |
-| 3 | `theorem` | [factor_toHom](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SystemNamespacedLevelwiseSystemFactor.lean/declarations/factor-tohom.md) | 46 | `result-track:c9f020c12c020dc6309b6be2e600f94493c29791765eed692ba7c57cd253cca9` |
-| 4 | `def` | [id](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SystemNamespacedLevelwiseSystemFactor.lean/declarations/id.md) | 56 | `declaration-track:5b1ce8abb9018cf61ab17830ab14f81bd51f44ac122201ab238ecfdfaf8313f9` |
+| 1 | `structure` | [LevelwiseSystemFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SystemNamespacedLevelwiseSystemFactor.lean/declarations/levelwisesystemfactor.md) | 23 | `declaration-track:21f338f30fe36c4a55aa309575ac6965e7c6e76474dca33797e1b28af1d8a642` |
+| 2 | `def` | [factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SystemNamespacedLevelwiseSystemFactor.lean/declarations/factor.md) | 33 | `declaration-track:e315d09ae1df3361004dd5f469f972d5e36548a3309b206b4e867d04cc654eef` |
+| 3 | `theorem` | [factor_toHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SystemNamespacedLevelwiseSystemFactor.lean/declarations/factor-tohom.md) | 46 | `result-track:c9f020c12c020dc6309b6be2e600f94493c29791765eed692ba7c57cd253cca9` |
+| 4 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SystemNamespacedLevelwiseSystemFactor.lean/declarations/id.md) | 56 | `declaration-track:5b1ce8abb9018cf61ab17830ab14f81bd51f44ac122201ab238ecfdfaf8313f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

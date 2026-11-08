@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InvariantSingletonFixedPointNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InvariantSingletonFixedPointNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InvariantSingletonFixedPointNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InvariantSingletonFixedPointNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [flowTimeOperator](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InvariantSingletonFixedPointNamespaced.lean/declarations/flowtimeoperator.md) | 27 | `declaration-track:0b8ce06c6727b1ab6c1cb5425af51d6c6efe1a1c9d2d32bc4a1e581d030e7e43` |
-| 2 | `def` | [CertifiedInvariantSingleton.toCertifiedFixedPoint](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InvariantSingletonFixedPointNamespaced.lean/declarations/tocertifiedfixedpoint.md) | 39 | `declaration-track:9952d2103c5da7201e581bb7cc09adc0e716fda651fa93f5c3b3d175977967ff` |
+| 1 | `def` | [flowTimeOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InvariantSingletonFixedPointNamespaced.lean/declarations/flowtimeoperator.md) | 27 | `declaration-track:0b8ce06c6727b1ab6c1cb5425af51d6c6efe1a1c9d2d32bc4a1e581d030e7e43` |
+| 2 | `def` | [CertifiedInvariantSingleton.toCertifiedFixedPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InvariantSingletonFixedPointNamespaced.lean/declarations/tocertifiedfixedpoint.md) | 39 | `declaration-track:9952d2103c5da7201e581bb7cc09adc0e716fda651fa93f5c3b3d175977967ff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

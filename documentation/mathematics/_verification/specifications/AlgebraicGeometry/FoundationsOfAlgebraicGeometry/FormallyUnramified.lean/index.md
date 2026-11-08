@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Algebra.FormallyUnramified.isOpenImmersion_SpecMap_lmul](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/declarations/algebra-formallyunramified-isopenimmersion-specmap-lmul.md) | 31 | `declaration-track:a9fa834b9dda69dd783c03b6eed9c4d9a155b37fa4736205185b41fd923dc4a2` |
-| 2 | `class` | [FormallyUnramified](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/declarations/formallyunramified.md) | 46 | `declaration-track:e909a41237a0a4c089ad10ae03dcb3c2be61ed5ba625149a4f72a8a41728c359` |
-| 3 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/declarations/instance-source-edition-2.md) | 53 | `declaration-track:12663a75319993bb964d37458f123625ee07fbffd8cd3cddc9b65c5749360c23` |
-| 4 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/declarations/instance-source-edition-3.md) | 59 | `declaration-track:2ef33557b7472c7498fd27aaa3a1a002320b679e697999791151f755fb176b48` |
-| 5 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/declarations/instance-source-edition-5.md) | 65 | `declaration-track:98086dd7e48d4bb0baff20ddbdc83bc0732820c04dc232cc9428f56a70ba628a` |
-| 6 | `theorem` | [of_comp](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/declarations/of-comp.md) | 97 | `result-track:170ce43ccc78750a4efb742ea3849e2fdca4cabfa1e155cd1be7c685376302a3` |
-| 7 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/declarations/instance-source-edition-4.md) | 103 | `declaration-track:5083eeb0149b65ae89706a07bdc0ffa34e948adb4fc1e0edbce4c4dc793ae9f8` |
-| 8 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/declarations/instance.md) | 106 | `declaration-track:097de114d9fd48641ea168b43f03261901ab1ea81682527dcc69794bd154e558` |
-| 9 | `instance` | [isOpenImmersion_diagonal](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/declarations/isopenimmersion-diagonal.md) | 111 | `declaration-track:388346134fc9de2d609bdbd6c16652ce3c89ce364d848e9de31478ebd386755a` |
+| 1 | `instance` | [Algebra.FormallyUnramified.isOpenImmersion_SpecMap_lmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/declarations/algebra-formallyunramified-isopenimmersion-specmap-lmul.md) | 31 | `declaration-track:a9fa834b9dda69dd783c03b6eed9c4d9a155b37fa4736205185b41fd923dc4a2` |
+| 2 | `class` | [FormallyUnramified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/declarations/formallyunramified.md) | 46 | `declaration-track:e909a41237a0a4c089ad10ae03dcb3c2be61ed5ba625149a4f72a8a41728c359` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/declarations/instance-source-edition-2.md) | 53 | `declaration-track:12663a75319993bb964d37458f123625ee07fbffd8cd3cddc9b65c5749360c23` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/declarations/instance-source-edition-3.md) | 59 | `declaration-track:2ef33557b7472c7498fd27aaa3a1a002320b679e697999791151f755fb176b48` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/declarations/instance-source-edition-5.md) | 65 | `declaration-track:98086dd7e48d4bb0baff20ddbdc83bc0732820c04dc232cc9428f56a70ba628a` |
+| 6 | `theorem` | [of_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/declarations/of-comp.md) | 97 | `result-track:170ce43ccc78750a4efb742ea3849e2fdca4cabfa1e155cd1be7c685376302a3` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/declarations/instance-source-edition-4.md) | 103 | `declaration-track:5083eeb0149b65ae89706a07bdc0ffa34e948adb4fc1e0edbce4c4dc793ae9f8` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/declarations/instance.md) | 106 | `declaration-track:097de114d9fd48641ea168b43f03261901ab1ea81682527dcc69794bd154e558` |
+| 9 | `instance` | [isOpenImmersion_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/FormallyUnramified.lean/declarations/isopenimmersion-diagonal.md) | 111 | `declaration-track:388346134fc9de2d609bdbd6c16652ce3c89ce364d848e9de31478ebd386755a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

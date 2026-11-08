@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/index.md) · [Full source](../../../../../GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Cardinal.mk_ultrafilter_of_finite](../../../../../GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/declarations/cardinal-mk-ultrafilter-of-finite.md) | 26 | `result-track:d927f8020caacc81f25b1b0743091be8ea2a61fd7b43f958d29b70d4d3b91cb9` |
-| 2 | `theorem` | [Cardinal.mk_filter_of_finite](../../../../../GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/declarations/cardinal-mk-filter-of-finite.md) | 31 | `result-track:39059d1097e4eacc20763855ecd2f2cd176040f475aead54c9369dc425b2c493` |
-| 3 | `def` | [interPair](../../../../../GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/declarations/interpair.md) | 41 | `declaration-track:e050f467871db20663d1720d0ae79d24e95b0c016671f5165202022ceca1f545` |
-| 4 | `def` | [interPairsFilter](../../../../../GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/declarations/interpairsfilter.md) | 44 | `declaration-track:de6e7866287e183b25d1f2a5cd7c5d89291ba16f62e131dd4c1a6e4fbeb589cd` |
-| 5 | `instance` | [interPairsFilter_neBot](../../../../../GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/declarations/interpairsfilter-nebot.md) | 47 | `declaration-track:ba618cef818fcea16d5315a4b9855e9d6380e57e00c5130cab7ab112feef970a` |
-| 6 | `theorem` | [interPairsFilter_pairwiseDisjoint](../../../../../GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/declarations/interpairsfilter-pairwisedisjoint.md) | 85 | `result-track:78b270a5659a5ccade533d1616a9cfb8e6fcbf423ca8a96d4219cc73d76cab74` |
-| 7 | `theorem` | [Cardinal.mk_ultrafilter_of_infinite](../../../../../GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/declarations/cardinal-mk-ultrafilter-of-infinite.md) | 105 | `result-track:3ff9730dfe86becb3e4c58e75c8939073f4665833fa902f1ef10b96b203af71d` |
-| 8 | `theorem` | [Cardinal.mk_filter_of_infinite](../../../../../GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/declarations/cardinal-mk-filter-of-infinite.md) | 122 | `result-track:b6190d57ab6aa67497f75b2f169e46159276849f98786c5ac17d55a1e97f8d0f` |
+| 1 | `theorem` | [Cardinal.mk_ultrafilter_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/declarations/cardinal-mk-ultrafilter-of-finite.md) | 26 | `result-track:d927f8020caacc81f25b1b0743091be8ea2a61fd7b43f958d29b70d4d3b91cb9` |
+| 2 | `theorem` | [Cardinal.mk_filter_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/declarations/cardinal-mk-filter-of-finite.md) | 31 | `result-track:39059d1097e4eacc20763855ecd2f2cd176040f475aead54c9369dc425b2c493` |
+| 3 | `def` | [interPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/declarations/interpair.md) | 41 | `declaration-track:e050f467871db20663d1720d0ae79d24e95b0c016671f5165202022ceca1f545` |
+| 4 | `def` | [interPairsFilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/declarations/interpairsfilter.md) | 44 | `declaration-track:de6e7866287e183b25d1f2a5cd7c5d89291ba16f62e131dd4c1a6e4fbeb589cd` |
+| 5 | `instance` | [interPairsFilter_neBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/declarations/interpairsfilter-nebot.md) | 47 | `declaration-track:ba618cef818fcea16d5315a4b9855e9d6380e57e00c5130cab7ab112feef970a` |
+| 6 | `theorem` | [interPairsFilter_pairwiseDisjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/declarations/interpairsfilter-pairwisedisjoint.md) | 85 | `result-track:78b270a5659a5ccade533d1616a9cfb8e6fcbf423ca8a96d4219cc73d76cab74` |
+| 7 | `theorem` | [Cardinal.mk_ultrafilter_of_infinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/declarations/cardinal-mk-ultrafilter-of-infinite.md) | 105 | `result-track:3ff9730dfe86becb3e4c58e75c8939073f4665833fa902f1ef10b96b203af71d` |
+| 8 | `theorem` | [Cardinal.mk_filter_of_infinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/UltrafilterCardinalityPublic.lean/declarations/cardinal-mk-filter-of-infinite.md) | 122 | `result-track:b6190d57ab6aa67497f75b2f169e46159276849f98786c5ac17d55a1e97f8d0f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

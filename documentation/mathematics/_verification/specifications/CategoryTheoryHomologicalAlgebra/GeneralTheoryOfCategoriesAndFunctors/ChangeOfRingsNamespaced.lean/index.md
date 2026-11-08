@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [restrictScalarsObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsNamespaced.lean/declarations/restrictscalarsobj.md) | 36 | `declaration-track:476fe6153147a0e3396da4bd435b66232831ad92de4b16e2ae3659ccc818c455` |
-| 2 | `def` | [restrictScalars](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsNamespaced.lean/declarations/restrictscalars.md) | 56 | `declaration-track:899d5492246d0bd03a936e6753f4f85bb9f8ad1c19ab9bf520ce260b0afdf2e3` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsNamespaced.lean/declarations/instance-source-edition-3.md) | 65 | `declaration-track:ac1a7816d63c758345c7b276c44812117a7631a84a4b760db1c7d38c3489043f` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsNamespaced.lean/declarations/instance.md) | 67 | `declaration-track:327065aff3205943afc670c7f9cfcd880bca0dac7ba038d6092d98d8f1910f92` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsNamespaced.lean/declarations/instance-source-edition-2.md) | 69 | `declaration-track:5c28899e25fc0c13b79d40c0d01d0791cbd317cf10ff585e61fc6c139852272b` |
-| 6 | `def` | [restrictScalarsCompToPresheaf](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsNamespaced.lean/declarations/restrictscalarscomptopresheaf.md) | 74 | `declaration-track:826d3bdcf4eaf5c1d6086db1fff4577394596279062d4a590ea7057ae31fa3f1` |
+| 1 | `def` | [restrictScalarsObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsNamespaced.lean/declarations/restrictscalarsobj.md) | 36 | `declaration-track:476fe6153147a0e3396da4bd435b66232831ad92de4b16e2ae3659ccc818c455` |
+| 2 | `def` | [restrictScalars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsNamespaced.lean/declarations/restrictscalars.md) | 56 | `declaration-track:899d5492246d0bd03a936e6753f4f85bb9f8ad1c19ab9bf520ce260b0afdf2e3` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsNamespaced.lean/declarations/instance-source-edition-3.md) | 65 | `declaration-track:ac1a7816d63c758345c7b276c44812117a7631a84a4b760db1c7d38c3489043f` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsNamespaced.lean/declarations/instance.md) | 67 | `declaration-track:327065aff3205943afc670c7f9cfcd880bca0dac7ba038d6092d98d8f1910f92` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsNamespaced.lean/declarations/instance-source-edition-2.md) | 69 | `declaration-track:5c28899e25fc0c13b79d40c0d01d0791cbd317cf10ff585e61fc6c139852272b` |
+| 6 | `def` | [restrictScalarsCompToPresheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsNamespaced.lean/declarations/restrictscalarscomptopresheaf.md) | 74 | `declaration-track:826d3bdcf4eaf5c1d6086db1fff4577394596279062d4a590ea7057ae31fa3f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

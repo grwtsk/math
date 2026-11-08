@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/QuadraticError.lean/index.md) · [Full source](../../../../FunctionalAnalysis/QuadraticError.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/QuadraticError.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/QuadraticError.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [reconstruction_energy_error](../../../../FunctionalAnalysis/QuadraticError.lean/declarations/reconstruction-energy-error.md) | 13 | `result-track:8afaa05e81e798e1a9bc4322b617a5cba82517b0fd8ac367fb0c83625e43b8eb` |
-| 2 | `theorem` | [reconstructed_cross_error](../../../../FunctionalAnalysis/QuadraticError.lean/declarations/reconstructed-cross-error.md) | 26 | `result-track:2598cd1f2431efa98ab1de597aa715a3e9d6759120e8349d1ec65717eef3000c` |
+| 1 | `theorem` | [reconstruction_energy_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/QuadraticError.lean/declarations/reconstruction-energy-error.md) | 13 | `result-track:8afaa05e81e798e1a9bc4322b617a5cba82517b0fd8ac367fb0c83625e43b8eb` |
+| 2 | `theorem` | [reconstructed_cross_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/QuadraticError.lean/declarations/reconstructed-cross-error.md) | 26 | `result-track:2598cd1f2431efa98ab1de597aa715a3e9d6759120e8349d1ec65717eef3000c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rodgers_tao_transport_is_quasi_isomorphism](../../../../ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespaced.lean/declarations/rodgers-tao-transport-is-quasi-isomorphism.md) | 27 | `result-track:302530b8cef73680c5caadc57e8016d4bd161dd537e415e2e42a7989f60d8223` |
-| 2 | `theorem` | [rodgers_tao_transport_preserves_euler](../../../../ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespaced.lean/declarations/rodgers-tao-transport-preserves-euler.md) | 33 | `result-track:470ddd4cce4159b1ace56aae133bb5106a506601afcf5fefaf702ed2bfa6f052` |
-| 3 | `theorem` | [rodgers_tao_transport_preserves_k_index](../../../../ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespaced.lean/declarations/rodgers-tao-transport-preserves-k-index.md) | 40 | `result-track:76c1abc7c9ae1cd69302a1c8cfde98c7e54ec56c8c5b549c908b181c9b231389` |
+| 1 | `theorem` | [rodgers_tao_transport_is_quasi_isomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespaced.lean/declarations/rodgers-tao-transport-is-quasi-isomorphism.md) | 27 | `result-track:302530b8cef73680c5caadc57e8016d4bd161dd537e415e2e42a7989f60d8223` |
+| 2 | `theorem` | [rodgers_tao_transport_preserves_euler](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespaced.lean/declarations/rodgers-tao-transport-preserves-euler.md) | 33 | `result-track:470ddd4cce4159b1ace56aae133bb5106a506601afcf5fefaf702ed2bfa6f052` |
+| 3 | `theorem` | [rodgers_tao_transport_preserves_k_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespaced.lean/declarations/rodgers-tao-transport-preserves-k-index.md) | 40 | `result-track:76c1abc7c9ae1cd69302a1c8cfde98c7e54ec56c8c5b549c908b181c9b231389` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

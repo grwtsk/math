@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/index.md) · [Full source](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [P](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/declarations/p.md) | 52 | `declaration-track:6666d84e98bffb456bfc0db94282a3b87464b6f1e0d51c53964bc6c3b35f9a69` |
-| 2 | `def` | [U](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/declarations/u.md) | 57 | `declaration-track:7eb8adaaa8904b1055b317f51445cea42e8509634419de148cfb16e9c70c880a` |
-| 3 | `def` | [M](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/declarations/m.md) | 62 | `declaration-track:730437d679c739c2a5e1845ddb8fd4dc515960ff4ae1b8f56d1e08d649f6cd05` |
-| 4 | `theorem` | [sum_lt_half_of_not_tendsto](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/declarations/sum-lt-half-of-not-tendsto.md) | 71 | `result-track:6f95da98f7e487d7f4820c3d237e46937dc6eae732b17befc97f07b13f58f4b6` |
-| 5 | `theorem` | [range_sdiff_eq_biUnion](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/declarations/range-sdiff-eq-biunion.md) | 101 | `result-track:4d5bf328caa332a3cbea629e75487a35dd5d10a4fa71a152864291817405c4aa` |
-| 6 | `theorem` | [card_le_mul_sum](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/declarations/card-le-mul-sum.md) | 118 | `result-track:f6f0a6915fb460d7d2632646dcfe301550498209ffbac3e73f4bfa3c320e0b84` |
-| 7 | `theorem` | [card_le_two_pow](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/declarations/card-le-two-pow.md) | 133 | `result-track:fc55808a5b5afc59f7dc2537187021bd9f4fc5b6b123d6f39c6126072b10b629` |
-| 8 | `theorem` | [card_le_two_pow_mul_sqrt](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/declarations/card-le-two-pow-mul-sqrt.md) | 166 | `result-track:1520360f1f27e105e58e5f3540098d3f895d6a6aaa9ed959f6a162b2d934f364` |
-| 9 | `theorem` | [Real.tendsto_sum_one_div_prime_atTop](../../../../GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/declarations/real-tendsto-sum-one-div-prime-attop.md) | 198 | `result-track:5c68567a65afddfc42f6eb2ff2a4f970292f71adeb3857e7e88110b1d7e937e0` |
+| 1 | `def` | [P](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/declarations/p.md) | 52 | `declaration-track:6666d84e98bffb456bfc0db94282a3b87464b6f1e0d51c53964bc6c3b35f9a69` |
+| 2 | `def` | [U](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/declarations/u.md) | 57 | `declaration-track:7eb8adaaa8904b1055b317f51445cea42e8509634419de148cfb16e9c70c880a` |
+| 3 | `def` | [M](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/declarations/m.md) | 62 | `declaration-track:730437d679c739c2a5e1845ddb8fd4dc515960ff4ae1b8f56d1e08d649f6cd05` |
+| 4 | `theorem` | [sum_lt_half_of_not_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/declarations/sum-lt-half-of-not-tendsto.md) | 71 | `result-track:6f95da98f7e487d7f4820c3d237e46937dc6eae732b17befc97f07b13f58f4b6` |
+| 5 | `theorem` | [range_sdiff_eq_biUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/declarations/range-sdiff-eq-biunion.md) | 101 | `result-track:4d5bf328caa332a3cbea629e75487a35dd5d10a4fa71a152864291817405c4aa` |
+| 6 | `theorem` | [card_le_mul_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/declarations/card-le-mul-sum.md) | 118 | `result-track:f6f0a6915fb460d7d2632646dcfe301550498209ffbac3e73f4bfa3c320e0b84` |
+| 7 | `theorem` | [card_le_two_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/declarations/card-le-two-pow.md) | 133 | `result-track:fc55808a5b5afc59f7dc2537187021bd9f4fc5b6b123d6f39c6126072b10b629` |
+| 8 | `theorem` | [card_le_two_pow_mul_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/declarations/card-le-two-pow-mul-sqrt.md) | 166 | `result-track:1520360f1f27e105e58e5f3540098d3f895d6a6aaa9ed959f6a162b2d934f364` |
+| 9 | `theorem` | [Real.tendsto_sum_one_div_prime_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDivergesPublic.lean/declarations/real-tendsto-sum-one-div-prime-attop.md) | 198 | `result-track:5c68567a65afddfc42f6eb2ff2a4f970292f71adeb3857e7e88110b1d7e937e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

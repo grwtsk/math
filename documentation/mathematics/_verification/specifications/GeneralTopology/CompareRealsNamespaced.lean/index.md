@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CompareRealsNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/CompareRealsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompareRealsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompareRealsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Rat.uniformSpace_eq](../../../../GeneralTopology/CompareRealsNamespaced.lean/declarations/rat-uniformspace-eq.md) | 65 | `result-track:dcf7e2acfc7bea829ca6bdbe5bc9cfaf3d2cc98fa9e1df8565a2ab920db893e9` |
-| 2 | `def` | [rationalCauSeqPkg](../../../../GeneralTopology/CompareRealsNamespaced.lean/declarations/rationalcauseqpkg.md) | 73 | `declaration-track:15806c521a37e5f7a26d3a8ba8c8caa9ba55b9d058676f3d17cf542c283f2cc1` |
-| 3 | `def` | [Q](../../../../GeneralTopology/CompareRealsNamespaced.lean/declarations/q.md) | 91 | `declaration-track:3d990af9f7d6bd2e50b80cf4457dc42fe2c0353bf9bb310142ff58cc5347eb8e` |
-| 4 | `instance` | [uniformSpace](../../../../GeneralTopology/CompareRealsNamespaced.lean/declarations/uniformspace.md) | 94 | `declaration-track:947728f1106947707bc5d4e2521bffdca80204174626e6c96c4f86722534849c` |
-| 5 | `def` | [Bourbakiℝ](../../../../GeneralTopology/CompareRealsNamespaced.lean/declarations/bourbaki.md) | 98 | `declaration-track:efe21adfcc808f294296a3cfe4eedb8e304fe53d3c2440bfa50bb5d85cfd4383` |
-| 6 | `instance` | [Bourbaki.uniformSpace](../../../../GeneralTopology/CompareRealsNamespaced.lean/declarations/bourbaki-uniformspace.md) | 101 | `declaration-track:5af577dd6619e754f922daf1a87c7659982e117e34c7b1ef4d15342b68f4f814` |
-| 7 | `def` | [bourbakiPkg](../../../../GeneralTopology/CompareRealsNamespaced.lean/declarations/bourbakipkg.md) | 105 | `declaration-track:ff8fdd0df49ec12a7661a5235a1c47884c00cf91ef08a90e20e0426414f65b30` |
-| 8 | `def` | [compareEquiv](../../../../GeneralTopology/CompareRealsNamespaced.lean/declarations/compareequiv.md) | 109 | `declaration-track:ca58dfb9dfe2c6aeb40dd1bffab76612d0152cf1888aa4e334995f769002b523` |
-| 9 | `theorem` | [compare_uc](../../../../GeneralTopology/CompareRealsNamespaced.lean/declarations/compare-uc.md) | 112 | `result-track:68c7571a0268be6b010e0e92a1831029bf22c927f22685d3c8ae4c6c672da265` |
-| 10 | `theorem` | [compare_uc_symm](../../../../GeneralTopology/CompareRealsNamespaced.lean/declarations/compare-uc-symm.md) | 115 | `result-track:1f6eb0f7adf1d8bbb4d3020961296c6359ae9f473c97be6273ea1d6bdc5fd2d5` |
+| 1 | `theorem` | [Rat.uniformSpace_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompareRealsNamespaced.lean/declarations/rat-uniformspace-eq.md) | 65 | `result-track:dcf7e2acfc7bea829ca6bdbe5bc9cfaf3d2cc98fa9e1df8565a2ab920db893e9` |
+| 2 | `def` | [rationalCauSeqPkg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompareRealsNamespaced.lean/declarations/rationalcauseqpkg.md) | 73 | `declaration-track:15806c521a37e5f7a26d3a8ba8c8caa9ba55b9d058676f3d17cf542c283f2cc1` |
+| 3 | `def` | [Q](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompareRealsNamespaced.lean/declarations/q.md) | 91 | `declaration-track:3d990af9f7d6bd2e50b80cf4457dc42fe2c0353bf9bb310142ff58cc5347eb8e` |
+| 4 | `instance` | [uniformSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompareRealsNamespaced.lean/declarations/uniformspace.md) | 94 | `declaration-track:947728f1106947707bc5d4e2521bffdca80204174626e6c96c4f86722534849c` |
+| 5 | `def` | [Bourbakiℝ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompareRealsNamespaced.lean/declarations/bourbaki.md) | 98 | `declaration-track:efe21adfcc808f294296a3cfe4eedb8e304fe53d3c2440bfa50bb5d85cfd4383` |
+| 6 | `instance` | [Bourbaki.uniformSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompareRealsNamespaced.lean/declarations/bourbaki-uniformspace.md) | 101 | `declaration-track:5af577dd6619e754f922daf1a87c7659982e117e34c7b1ef4d15342b68f4f814` |
+| 7 | `def` | [bourbakiPkg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompareRealsNamespaced.lean/declarations/bourbakipkg.md) | 105 | `declaration-track:ff8fdd0df49ec12a7661a5235a1c47884c00cf91ef08a90e20e0426414f65b30` |
+| 8 | `def` | [compareEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompareRealsNamespaced.lean/declarations/compareequiv.md) | 109 | `declaration-track:ca58dfb9dfe2c6aeb40dd1bffab76612d0152cf1888aa4e334995f769002b523` |
+| 9 | `theorem` | [compare_uc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompareRealsNamespaced.lean/declarations/compare-uc.md) | 112 | `result-track:68c7571a0268be6b010e0e92a1831029bf22c927f22685d3c8ae4c6c672da265` |
+| 10 | `theorem` | [compare_uc_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompareRealsNamespaced.lean/declarations/compare-uc-symm.md) | 115 | `result-track:1f6eb0f7adf1d8bbb4d3020961296c6359ae9f473c97be6273ea1d6bdc5fd2d5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

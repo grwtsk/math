@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/index.md) · [Full source](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [lieCharpoly](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/declarations/liecharpoly.md) | 78 | `declaration-track:121e559230923017771b41178f0d6ed171186603667c51ff29a3810582b6c894` |
-| 2 | `lemma` | [lieCharpoly_monic](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/declarations/liecharpoly-monic.md) | 83 | `result-track:6f9fb6cdcc05b03f19f72d7507af73aaafb2ae7796041958f0b0f3bf6238d276` |
-| 3 | `lemma` | [lieCharpoly_natDegree](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/declarations/liecharpoly-natdegree.md) | 86 | `result-track:56045cbf2df1bed5952729ef8cfb9cf79ce7c25a4b23c009071b813bdb74185e` |
-| 4 | `lemma` | [lieCharpoly_map_eval](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/declarations/liecharpoly-map-eval.md) | 90 | `result-track:e53d220e237ee7f7a83527cbdae014b96f185743de439f2d755d588d64256aec` |
-| 5 | `lemma` | [lieCharpoly_coeff_natDegree](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/declarations/liecharpoly-coeff-natdegree.md) | 100 | `result-track:57c749fba1e2d1689653875d1c27da0f2231cb8601e4fbcb0434344b43b3b17b` |
-| 6 | `lemma` | [engel_isBot_of_isMin](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/declarations/engel-isbot-of-ismin.md) | 128 | `result-track:0931e02fdc91ba4f4d670a396ab08d836a6617412fe724109bbb6c9b2dac2484` |
-| 7 | `lemma` | [exists_isCartanSubalgebra_engel_of_finrank_le_card](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/declarations/exists-iscartansubalgebra-engel-of-finrank-le-card.md) | 348 | `result-track:2e5965350a213a48c8605593170f16c5f103f0118b29a1b34953dd9d59220032` |
-| 8 | `lemma` | [exists_isCartanSubalgebra_engel](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/declarations/exists-iscartansubalgebra-engel.md) | 366 | `result-track:e00ecf428cf439eacdd733207058480d9d14f1a6a11b2b9ffa0d1af38562431a` |
+| 1 | `def` | [lieCharpoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/declarations/liecharpoly.md) | 78 | `declaration-track:121e559230923017771b41178f0d6ed171186603667c51ff29a3810582b6c894` |
+| 2 | `lemma` | [lieCharpoly_monic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/declarations/liecharpoly-monic.md) | 83 | `result-track:6f9fb6cdcc05b03f19f72d7507af73aaafb2ae7796041958f0b0f3bf6238d276` |
+| 3 | `lemma` | [lieCharpoly_natDegree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/declarations/liecharpoly-natdegree.md) | 86 | `result-track:56045cbf2df1bed5952729ef8cfb9cf79ce7c25a4b23c009071b813bdb74185e` |
+| 4 | `lemma` | [lieCharpoly_map_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/declarations/liecharpoly-map-eval.md) | 90 | `result-track:e53d220e237ee7f7a83527cbdae014b96f185743de439f2d755d588d64256aec` |
+| 5 | `lemma` | [lieCharpoly_coeff_natDegree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/declarations/liecharpoly-coeff-natdegree.md) | 100 | `result-track:57c749fba1e2d1689653875d1c27da0f2231cb8601e4fbcb0434344b43b3b17b` |
+| 6 | `lemma` | [engel_isBot_of_isMin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/declarations/engel-isbot-of-ismin.md) | 128 | `result-track:0931e02fdc91ba4f4d670a396ab08d836a6617412fe724109bbb6c9b2dac2484` |
+| 7 | `lemma` | [exists_isCartanSubalgebra_engel_of_finrank_le_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/declarations/exists-iscartansubalgebra-engel-of-finrank-le-card.md) | 348 | `result-track:2e5965350a213a48c8605593170f16c5f103f0118b29a1b34953dd9d59220032` |
+| 8 | `lemma` | [exists_isCartanSubalgebra_engel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanExists.lean/declarations/exists-iscartansubalgebra-engel.md) | 366 | `result-track:e00ecf428cf439eacdd733207058480d9d14f1a6a11b2b9ffa0d1af38562431a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

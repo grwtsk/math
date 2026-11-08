@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TorsionRoundedShellNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TorsionRoundedShellNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TorsionRoundedShellNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TorsionRoundedShellNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ContinuousTorsionFiberProposal](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TorsionRoundedShellNamespaced.lean/declarations/continuoustorsionfiberproposal.md) | 31 | `declaration-track:8a5aaf261bda054afaf3e55241efa0676ad2c2a2eca6aef18f2c78be1e549a43` |
-| 2 | `def` | [phaseTorsion](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TorsionRoundedShellNamespaced.lean/declarations/phasetorsion.md) | 80 | `declaration-track:bf225f491e109bd38f2ef0da7b18e2c0c4abfede03656092055af9c0dd72f8d0` |
-| 3 | `theorem` | [phaseTorsion_preserved](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TorsionRoundedShellNamespaced.lean/declarations/phasetorsion-preserved.md) | 85 | `result-track:652c708527119db24012dbb3dcbd883513f09ead9fb51aa6b1a950e362687c06` |
-| 4 | `structure` | [DiscreteTorsionSurgeryRequest](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TorsionRoundedShellNamespaced.lean/declarations/discretetorsionsurgeryrequest.md) | 98 | `declaration-track:d3c7ee21e0fabfd4c20bed9fb45457e03d87a6b4ae18eb9b83b440b48d532e81` |
+| 1 | `structure` | [ContinuousTorsionFiberProposal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TorsionRoundedShellNamespaced.lean/declarations/continuoustorsionfiberproposal.md) | 31 | `declaration-track:8a5aaf261bda054afaf3e55241efa0676ad2c2a2eca6aef18f2c78be1e549a43` |
+| 2 | `def` | [phaseTorsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TorsionRoundedShellNamespaced.lean/declarations/phasetorsion.md) | 80 | `declaration-track:bf225f491e109bd38f2ef0da7b18e2c0c4abfede03656092055af9c0dd72f8d0` |
+| 3 | `theorem` | [phaseTorsion_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TorsionRoundedShellNamespaced.lean/declarations/phasetorsion-preserved.md) | 85 | `result-track:652c708527119db24012dbb3dcbd883513f09ead9fb51aa6b1a950e362687c06` |
+| 4 | `structure` | [DiscreteTorsionSurgeryRequest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TorsionRoundedShellNamespaced.lean/declarations/discretetorsionsurgeryrequest.md) | 98 | `declaration-track:d3c7ee21e0fabfd4c20bed9fb45457e03d87a6b4ae18eb9b83b440b48d532e81` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

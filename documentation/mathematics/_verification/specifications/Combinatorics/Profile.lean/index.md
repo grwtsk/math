@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Profile.lean/index.md) · [Full source](../../../../Combinatorics/Profile.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Profile.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Profile.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FormalProfile](../../../../Combinatorics/Profile.lean/declarations/formalprofile.md) | 6 | `declaration-track:2818e2fa04fb283c23ade31456b952818484e3d2a3662e1b33c234b5fbf2e861` |
-| 2 | `def` | [pinnedProfile](../../../../Combinatorics/Profile.lean/declarations/pinnedprofile.md) | 25 | `declaration-track:bed2cb4567950d9cdd12e836ebacb19135e9b0eaf05c85d9d754f20597dd5ad4` |
+| 1 | `structure` | [FormalProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Profile.lean/declarations/formalprofile.md) | 6 | `declaration-track:2818e2fa04fb283c23ade31456b952818484e3d2a3662e1b33c234b5fbf2e861` |
+| 2 | `def` | [pinnedProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Profile.lean/declarations/pinnedprofile.md) | 25 | `declaration-track:bed2cb4567950d9cdd12e836ebacb19135e9b0eaf05c85d9d754f20597dd5ad4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

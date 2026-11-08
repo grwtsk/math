@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LineEndingNormalization.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LineEndingNormalization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LineEndingNormalization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LineEndingNormalization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [normalizeLineEndings](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LineEndingNormalization.lean/declarations/normalizelineendings.md) | 38 | `declaration-track:ddd42d1892707caadd3cec19895c276a1c5d04a6aa15974a8cfac9b27c165d7c` |
-| 2 | `def` | [CanonicalLineEndings](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LineEndingNormalization.lean/declarations/canonicallineendings.md) | 46 | `declaration-track:6b486c3e0eb89c92dd0d1178914d9b018b018fcb0692137661a88a2fc8a49591` |
-| 3 | `theorem` | [normalizeLineEndings_canonical](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LineEndingNormalization.lean/declarations/normalizelineendings-canonical.md) | 51 | `result-track:96d0a4f36620e0865a02e892098d49aefb13fdb87d3ba7fd677c1a4bb3e8083d` |
-| 4 | `theorem` | [normalizeLineEndings_eq_self_of_canonical](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LineEndingNormalization.lean/declarations/normalizelineendings-eq-self-of-canonical.md) | 70 | `result-track:b57a2adbc1a495b9bf36400892ed8dc0c208c3e1646bbcbd3e258b84f02db9a3` |
-| 5 | `theorem` | [normalizeLineEndings_idempotent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LineEndingNormalization.lean/declarations/normalizelineendings-idempotent.md) | 91 | `result-track:6feedc785c63af77019c3e46375623757ef91bb43197b43ecb8ad74311507c48` |
+| 1 | `def` | [normalizeLineEndings](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LineEndingNormalization.lean/declarations/normalizelineendings.md) | 38 | `declaration-track:ddd42d1892707caadd3cec19895c276a1c5d04a6aa15974a8cfac9b27c165d7c` |
+| 2 | `def` | [CanonicalLineEndings](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LineEndingNormalization.lean/declarations/canonicallineendings.md) | 46 | `declaration-track:6b486c3e0eb89c92dd0d1178914d9b018b018fcb0692137661a88a2fc8a49591` |
+| 3 | `theorem` | [normalizeLineEndings_canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LineEndingNormalization.lean/declarations/normalizelineendings-canonical.md) | 51 | `result-track:96d0a4f36620e0865a02e892098d49aefb13fdb87d3ba7fd677c1a4bb3e8083d` |
+| 4 | `theorem` | [normalizeLineEndings_eq_self_of_canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LineEndingNormalization.lean/declarations/normalizelineendings-eq-self-of-canonical.md) | 70 | `result-track:b57a2adbc1a495b9bf36400892ed8dc0c208c3e1646bbcbd3e258b84f02db9a3` |
+| 5 | `theorem` | [normalizeLineEndings_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LineEndingNormalization.lean/declarations/normalizelineendings-idempotent.md) | 91 | `result-track:6feedc785c63af77019c3e46375623757ef91bb43197b43ecb8ad74311507c48` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

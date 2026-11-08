@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ExampleNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ExampleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExampleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExampleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [runExampleCmd](../../../../../ComputerScience/AlgorithmsInComputerScience/ExampleNamespaced.lean/declarations/runexamplecmd.md) | 13 | `declaration-track:8046ee19f65ca9bf0c1b128d47e5da64ad65f56439ac02aded455100b138737e` |
-| 2 | `def` | [installCmd](../../../../../ComputerScience/AlgorithmsInComputerScience/ExampleNamespaced.lean/declarations/installcmd.md) | 37 | `declaration-track:7bdd1b6912c4c4fbe43b3d185fb269788ceaab3d2fe0279bb843ee2f19d27476` |
-| 3 | `def` | [testCmd](../../../../../ComputerScience/AlgorithmsInComputerScience/ExampleNamespaced.lean/declarations/testcmd.md) | 43 | `declaration-track:c9562f808578797d8e0a6bc6d4c1afa0bc060467bdae8abdd4f1313317416478` |
-| 4 | `def` | [exampleCmd](../../../../../ComputerScience/AlgorithmsInComputerScience/ExampleNamespaced.lean/declarations/examplecmd.md) | 48 | `declaration-track:65d9783d5aa6ba32826b5f9a67ca9b82d4e7def7630d00cb376ca524aac14e22` |
-| 5 | `def` | [main](../../../../../ComputerScience/AlgorithmsInComputerScience/ExampleNamespaced.lean/declarations/main.md) | 83 | `declaration-track:fc359639aa5f4f95a125501464e80ac0530398f12bd5628052d8e9d1219ba52a` |
+| 1 | `def` | [runExampleCmd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExampleNamespaced.lean/declarations/runexamplecmd.md) | 13 | `declaration-track:8046ee19f65ca9bf0c1b128d47e5da64ad65f56439ac02aded455100b138737e` |
+| 2 | `def` | [installCmd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExampleNamespaced.lean/declarations/installcmd.md) | 37 | `declaration-track:7bdd1b6912c4c4fbe43b3d185fb269788ceaab3d2fe0279bb843ee2f19d27476` |
+| 3 | `def` | [testCmd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExampleNamespaced.lean/declarations/testcmd.md) | 43 | `declaration-track:c9562f808578797d8e0a6bc6d4c1afa0bc060467bdae8abdd4f1313317416478` |
+| 4 | `def` | [exampleCmd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExampleNamespaced.lean/declarations/examplecmd.md) | 48 | `declaration-track:65d9783d5aa6ba32826b5f9a67ca9b82d4e7def7630d00cb376ca524aac14e22` |
+| 5 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExampleNamespaced.lean/declarations/main.md) | 83 | `declaration-track:fc359639aa5f4f95a125501464e80ac0530398f12bd5628052d8e9d1219ba52a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

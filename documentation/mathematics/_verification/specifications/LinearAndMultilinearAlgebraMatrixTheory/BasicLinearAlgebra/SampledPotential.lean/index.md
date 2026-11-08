@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotential.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotential.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotential.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotential.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sampledPotential](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotential.lean/declarations/sampledpotential.md) | 18 | `declaration-track:0b0c0316f9721683dc95ec34ec3e71121b9694616b47a2e2e353eefb7d94b9f8` |
-| 2 | `def` | [transfer](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotential.lean/declarations/transfer.md) | 20 | `declaration-track:d26bfea68798dfa3e3fe83f1509383aa72f57c6a89872853816b21063a7dc9e2` |
-| 3 | `theorem` | [transfer_det](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotential.lean/declarations/transfer-det.md) | 22 | `result-track:33c482dfb0e3ff77121770885e5f8973791f2e88b10a989a54d6d399554b172b` |
-| 4 | `theorem` | [transfer_trace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotential.lean/declarations/transfer-trace.md) | 24 | `result-track:cb2ae753a3ab5ae7e0c68e0bd93d531458fb089ce113a78e2e6538a7bc366ded` |
-| 5 | `theorem` | [transfer_unbounded_trace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotential.lean/declarations/transfer-unbounded-trace.md) | 26 | `result-track:400fde0642dceb615e410e6fa243260593cf342579026992a4dd41e1eb520a49` |
+| 1 | `def` | [sampledPotential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotential.lean/declarations/sampledpotential.md) | 18 | `declaration-track:0b0c0316f9721683dc95ec34ec3e71121b9694616b47a2e2e353eefb7d94b9f8` |
+| 2 | `def` | [transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotential.lean/declarations/transfer.md) | 20 | `declaration-track:d26bfea68798dfa3e3fe83f1509383aa72f57c6a89872853816b21063a7dc9e2` |
+| 3 | `theorem` | [transfer_det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotential.lean/declarations/transfer-det.md) | 22 | `result-track:33c482dfb0e3ff77121770885e5f8973791f2e88b10a989a54d6d399554b172b` |
+| 4 | `theorem` | [transfer_trace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotential.lean/declarations/transfer-trace.md) | 24 | `result-track:cb2ae753a3ab5ae7e0c68e0bd93d531458fb089ce113a78e2e6538a7bc366ded` |
+| 5 | `theorem` | [transfer_unbounded_trace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotential.lean/declarations/transfer-unbounded-trace.md) | 26 | `result-track:400fde0642dceb615e410e6fa243260593cf342579026992a4dd41e1eb520a49` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarFree.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarFree.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarFree.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarFree.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarFree.lean/declarations/instance.md) | 24 | `declaration-track:519a9cee9daa20f64c1f54e3ff7a02ddf84735c0d9098048098dc275cd008a10` |
-| 2 | `theorem` | [star_of](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarFree.lean/declarations/star-of.md) | 30 | `result-track:d4b11a7b1888a99400b4fc0a407d00ec5f42da3a6d48140076eb35f927bd9da7` |
-| 3 | `theorem` | [star_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarFree.lean/declarations/star-one.md) | 35 | `result-track:5e51cd8729cc6844ba09ff36cb501d224459c81129b8c7e85f2690b35c1d85b3` |
-| 4 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarFree.lean/declarations/instance-source-edition-2.md) | 45 | `declaration-track:d6d2f5cd2ef90495115daadeb89e26a8bd619db9c68fac4134eb8ae91ee0ce67` |
-| 5 | `theorem` | [star_ι](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarFree.lean/declarations/star.md) | 63 | `result-track:8d066d1169f1b47606846b6d2faaee1b66b8b079cae4af2730483295e77fc281` |
-| 6 | `theorem` | [star_algebraMap](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarFree.lean/declarations/star-algebramap.md) | 66 | `result-track:7e42ee2dfb5a73bfa07217ea4fa95f112c242aba47f3d00150ed6f78ad513775` |
-| 7 | `def` | [starHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarFree.lean/declarations/starhom.md) | 70 | `declaration-track:c9e5d6f9060d005ce3d3bf36d07a0f2805bbf9a96da6dcbc4aa76010441e1b4c` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarFree.lean/declarations/instance.md) | 24 | `declaration-track:519a9cee9daa20f64c1f54e3ff7a02ddf84735c0d9098048098dc275cd008a10` |
+| 2 | `theorem` | [star_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarFree.lean/declarations/star-of.md) | 30 | `result-track:d4b11a7b1888a99400b4fc0a407d00ec5f42da3a6d48140076eb35f927bd9da7` |
+| 3 | `theorem` | [star_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarFree.lean/declarations/star-one.md) | 35 | `result-track:5e51cd8729cc6844ba09ff36cb501d224459c81129b8c7e85f2690b35c1d85b3` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarFree.lean/declarations/instance-source-edition-2.md) | 45 | `declaration-track:d6d2f5cd2ef90495115daadeb89e26a8bd619db9c68fac4134eb8ae91ee0ce67` |
+| 5 | `theorem` | [star_ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarFree.lean/declarations/star.md) | 63 | `result-track:8d066d1169f1b47606846b6d2faaee1b66b8b079cae4af2730483295e77fc281` |
+| 6 | `theorem` | [star_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarFree.lean/declarations/star-algebramap.md) | 66 | `result-track:7e42ee2dfb5a73bfa07217ea4fa95f112c242aba47f3d00150ed6f78ad513775` |
+| 7 | `def` | [starHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarFree.lean/declarations/starhom.md) | 70 | `declaration-track:c9e5d6f9060d005ce3d3bf36d07a0f2805bbf9a96da6dcbc4aa76010441e1b4c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [avgRisk_countable](../../../../ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/avgrisk-countable-source-edition-2.md) | 31 | `result-track:b64f9215f345746dd603641c69ac6e38ec5c3541f47ac50b66c76af4d28b2478` |
-| 2 | `lemma` | [avgRisk_fintype](../../../../ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/avgrisk-fintype.md) | 35 | `result-track:1e895061b79695f02ed4905b692375eab83836b8dd23ee1d52ba087a2d22586b` |
-| 3 | `lemma` | [avgRisk_countable'](../../../../ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/avgrisk-countable.md) | 39 | `result-track:ac2a5e4d5dc727126a89d1e0523ee5d61751898904d7ae2fef070d9d3049f48d` |
-| 4 | `lemma` | [avgRisk_fintype'](../../../../ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/avgrisk-fintype-source-edition-2.md) | 47 | `result-track:5d3eabbbbcad7afb738edaeaf587219153b54063040f1f3916fcfa7e3f9d044b` |
-| 5 | `lemma` | [bayesRisk_countable](../../../../ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/bayesrisk-countable.md) | 51 | `result-track:6c3dd225302a793880d8deb06d2064b65b0ac38291c013bb8f459c22ac6d769f` |
-| 6 | `lemma` | [bayesRisk_fintype](../../../../ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/bayesrisk-fintype-source-edition-2.md) | 56 | `result-track:666a3561119a3e50761ec4a6f2f1fa6036bbf4ed275dc7d2fe2e4d773549d1c7` |
-| 7 | `lemma` | [bayesRisk_countable'](../../../../ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/bayesrisk-countable-source-edition-2.md) | 61 | `result-track:fb6ddd22642ac536d0ee765f2009e107c427a2abcd828268c3b8cc844fadbe92` |
-| 8 | `lemma` | [bayesRisk_fintype'](../../../../ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/bayesrisk-fintype.md) | 66 | `result-track:400e80de7711c65ec7be9879541916b565186298373f33b957ac6ba60faeb829` |
-| 9 | `lemma` | [avgRisk_const_of_countable](../../../../ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/avgrisk-const-of-countable.md) | 73 | `result-track:97fce3fdd8dd5405d5f7ac7b925b561c32488b148dccdee55b619a5ebf7c113e` |
-| 10 | `lemma` | [avgRisk_const_of_fintype](../../../../ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/avgrisk-const-of-fintype.md) | 78 | `result-track:272cb77e49a040b80c797625437ce697be1327fa3fbcee412b40187279069888` |
+| 1 | `lemma` | [avgRisk_countable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/avgrisk-countable-source-edition-2.md) | 31 | `result-track:b64f9215f345746dd603641c69ac6e38ec5c3541f47ac50b66c76af4d28b2478` |
+| 2 | `lemma` | [avgRisk_fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/avgrisk-fintype.md) | 35 | `result-track:1e895061b79695f02ed4905b692375eab83836b8dd23ee1d52ba087a2d22586b` |
+| 3 | `lemma` | [avgRisk_countable'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/avgrisk-countable.md) | 39 | `result-track:ac2a5e4d5dc727126a89d1e0523ee5d61751898904d7ae2fef070d9d3049f48d` |
+| 4 | `lemma` | [avgRisk_fintype'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/avgrisk-fintype-source-edition-2.md) | 47 | `result-track:5d3eabbbbcad7afb738edaeaf587219153b54063040f1f3916fcfa7e3f9d044b` |
+| 5 | `lemma` | [bayesRisk_countable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/bayesrisk-countable.md) | 51 | `result-track:6c3dd225302a793880d8deb06d2064b65b0ac38291c013bb8f459c22ac6d769f` |
+| 6 | `lemma` | [bayesRisk_fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/bayesrisk-fintype-source-edition-2.md) | 56 | `result-track:666a3561119a3e50761ec4a6f2f1fa6036bbf4ed275dc7d2fe2e4d773549d1c7` |
+| 7 | `lemma` | [bayesRisk_countable'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/bayesrisk-countable-source-edition-2.md) | 61 | `result-track:fb6ddd22642ac536d0ee765f2009e107c427a2abcd828268c3b8cc844fadbe92` |
+| 8 | `lemma` | [bayesRisk_fintype'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/bayesrisk-fintype.md) | 66 | `result-track:400e80de7711c65ec7be9879541916b565186298373f33b957ac6ba60faeb829` |
+| 9 | `lemma` | [avgRisk_const_of_countable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/avgrisk-const-of-countable.md) | 73 | `result-track:97fce3fdd8dd5405d5f7ac7b925b561c32488b148dccdee55b619a5ebf7c113e` |
+| 10 | `lemma` | [avgRisk_const_of_fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountablePublic.lean/declarations/avgrisk-const-of-fintype.md) | 78 | `result-track:272cb77e49a040b80c797625437ce697be1327fa3fbcee412b40187279069888` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/FiniteCutNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/FiniteCutNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCutNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCutNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteReflectiveCut](../../../../AssociativeRingsAndAlgebras/FiniteCutNamespaced.lean/declarations/finitereflectivecut.md) | 27 | `declaration-track:ba759a08b5c6c796bf5dce2dd22e5ff8588818412b0b6a45cc31ebf2de492e0c` |
-| 2 | `abbrev` | [State](../../../../AssociativeRingsAndAlgebras/FiniteCutNamespaced.lean/declarations/state.md) | 52 | `declaration-track:4ca45feacc78346dc0c96caeec818e72c69e46a68609afe59b852713756f5a3f` |
-| 3 | `abbrev` | [Law](../../../../AssociativeRingsAndAlgebras/FiniteCutNamespaced.lean/declarations/law.md) | 62 | `declaration-track:a9edb9e2690d6bdd43b2ac0e059ca3bc17ddcaab61b6edea7307c9da1f4f86f5` |
-| 4 | `abbrev` | [Automorphism](../../../../AssociativeRingsAndAlgebras/FiniteCutNamespaced.lean/declarations/automorphism.md) | 72 | `declaration-track:e6456a5acc93fa9eaaeb1af1bef5e7195c0d43128ba969cf31c75adcfac4e515` |
-| 5 | `abbrev` | [Algebra](../../../../AssociativeRingsAndAlgebras/FiniteCutNamespaced.lean/declarations/algebra.md) | 82 | `declaration-track:b3024fecf00b83652cdf403d9194dddceb0c2486fb7e841db222f7684c10ad62` |
-| 6 | `def` | [stableTrace](../../../../AssociativeRingsAndAlgebras/FiniteCutNamespaced.lean/declarations/stabletrace.md) | 95 | `declaration-track:97b77055c920e49ac786e883f0685b82764ce2dc7ef606a077a9410a88d0cb59` |
-| 7 | `theorem` | [stableTrace_eq_canonical](../../../../AssociativeRingsAndAlgebras/FiniteCutNamespaced.lean/declarations/stabletrace-eq-canonical.md) | 107 | `result-track:6c53e5a3ae4ab729f435a9fd11a2a5f8e83ca0902ea098e5eda8c345b839ab92` |
+| 1 | `structure` | [FiniteReflectiveCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCutNamespaced.lean/declarations/finitereflectivecut.md) | 27 | `declaration-track:ba759a08b5c6c796bf5dce2dd22e5ff8588818412b0b6a45cc31ebf2de492e0c` |
+| 2 | `abbrev` | [State](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCutNamespaced.lean/declarations/state.md) | 52 | `declaration-track:4ca45feacc78346dc0c96caeec818e72c69e46a68609afe59b852713756f5a3f` |
+| 3 | `abbrev` | [Law](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCutNamespaced.lean/declarations/law.md) | 62 | `declaration-track:a9edb9e2690d6bdd43b2ac0e059ca3bc17ddcaab61b6edea7307c9da1f4f86f5` |
+| 4 | `abbrev` | [Automorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCutNamespaced.lean/declarations/automorphism.md) | 72 | `declaration-track:e6456a5acc93fa9eaaeb1af1bef5e7195c0d43128ba969cf31c75adcfac4e515` |
+| 5 | `abbrev` | [Algebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCutNamespaced.lean/declarations/algebra.md) | 82 | `declaration-track:b3024fecf00b83652cdf403d9194dddceb0c2486fb7e841db222f7684c10ad62` |
+| 6 | `def` | [stableTrace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCutNamespaced.lean/declarations/stabletrace.md) | 95 | `declaration-track:97b77055c920e49ac786e883f0685b82764ce2dc7ef606a077a9410a88d0cb59` |
+| 7 | `theorem` | [stableTrace_eq_canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCutNamespaced.lean/declarations/stabletrace-eq-canonical.md) | 107 | `result-track:6c53e5a3ae4ab729f435a9fd11a2a5f8e83ca0902ea098e5eda8c345b839ab92` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

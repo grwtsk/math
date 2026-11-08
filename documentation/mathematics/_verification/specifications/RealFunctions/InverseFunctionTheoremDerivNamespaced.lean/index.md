@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/InverseFunctionTheoremDerivNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/InverseFunctionTheoremDerivNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InverseFunctionTheoremDerivNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InverseFunctionTheoremDerivNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [localInverse](../../../../RealFunctions/InverseFunctionTheoremDerivNamespaced.lean/declarations/localinverse.md) | 37 | `declaration-track:3e64f3922c001b4bd679e61203fa7c858d73a587850e2c12df83e4418c7560a4` |
-| 2 | `theorem` | [map_nhds_eq](../../../../RealFunctions/InverseFunctionTheoremDerivNamespaced.lean/declarations/map-nhds-eq.md) | 42 | `result-track:e60836c0116224d9d6ce99b725ce3222210ebd984cf7606fe4372d29ed988c9a` |
-| 3 | `theorem` | [to_localInverse](../../../../RealFunctions/InverseFunctionTheoremDerivNamespaced.lean/declarations/to-localinverse.md) | 45 | `result-track:4c9af812191996ac8f554c216ea2144e8df9c0cf3afda90bafc09f7ecdb1d107` |
-| 4 | `theorem` | [to_local_left_inverse](../../../../RealFunctions/InverseFunctionTheoremDerivNamespaced.lean/declarations/to-local-left-inverse.md) | 48 | `result-track:9e34110783bbaf512d82f316027ce7eabf86e88904a12938a3c7b9de218a1f7b` |
-| 5 | `theorem` | [isOpenMap_of_hasStrictDerivAt](../../../../RealFunctions/InverseFunctionTheoremDerivNamespaced.lean/declarations/isopenmap-of-hasstrictderivat.md) | 57 | `result-track:2da4134c41b813aed4a6dbf3d3985da1cc093f01890c68beb690f758829b9038` |
+| 1 | `abbrev` | [localInverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InverseFunctionTheoremDerivNamespaced.lean/declarations/localinverse.md) | 37 | `declaration-track:3e64f3922c001b4bd679e61203fa7c858d73a587850e2c12df83e4418c7560a4` |
+| 2 | `theorem` | [map_nhds_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InverseFunctionTheoremDerivNamespaced.lean/declarations/map-nhds-eq.md) | 42 | `result-track:e60836c0116224d9d6ce99b725ce3222210ebd984cf7606fe4372d29ed988c9a` |
+| 3 | `theorem` | [to_localInverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InverseFunctionTheoremDerivNamespaced.lean/declarations/to-localinverse.md) | 45 | `result-track:4c9af812191996ac8f554c216ea2144e8df9c0cf3afda90bafc09f7ecdb1d107` |
+| 4 | `theorem` | [to_local_left_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InverseFunctionTheoremDerivNamespaced.lean/declarations/to-local-left-inverse.md) | 48 | `result-track:9e34110783bbaf512d82f316027ce7eabf86e88904a12938a3c7b9de218a1f7b` |
+| 5 | `theorem` | [isOpenMap_of_hasStrictDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InverseFunctionTheoremDerivNamespaced.lean/declarations/isopenmap-of-hasstrictderivat.md) | 57 | `result-track:2da4134c41b813aed4a6dbf3d3985da1cc093f01890c68beb690f758829b9038` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

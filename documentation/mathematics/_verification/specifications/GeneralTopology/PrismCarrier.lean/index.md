@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PrismCarrier.lean/index.md) · [Full source](../../../../GeneralTopology/PrismCarrier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrismCarrier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrismCarrier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GeometricPrismCarrier](../../../../GeneralTopology/PrismCarrier.lean/declarations/geometricprismcarrier.md) | 18 | `declaration-track:a135f4c74fec2f6633b5c4e1efd9981d641c7e3363d999d172938df9e91e0184` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/PrismCarrier.lean/declarations/instance.md) | 39 | `declaration-track:60b1ecad1a15bb64ce53a11d26019b163294719819b1d345dd84cb73320f19d7` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/PrismCarrier.lean/declarations/instance-source-edition-2.md) | 42 | `declaration-track:914c32c67de29a75a8e9c8f534c7fe3d2a4883978016e7099404a204bc9946d1` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/PrismCarrier.lean/declarations/instance-source-edition-3.md) | 45 | `declaration-track:bb6f6ba53cd64cdc98d97c547a5ea8cd46ab81436153e0048ff59a1a4b21f517` |
-| 5 | `abbrev` | [CarrierPoint](../../../../GeneralTopology/PrismCarrier.lean/declarations/carrierpoint.md) | 49 | `declaration-track:893ed3770b6455f94c579ca2c05c17f5fec343f9d5b709a8bd941ad27ffa98b7` |
-| 6 | `def` | [cellPoint](../../../../GeneralTopology/PrismCarrier.lean/declarations/cellpoint.md) | 53 | `declaration-track:fab78940572725095bd83aece08c26e4e9267b908571fd1b8107ef84c996a5ed` |
-| 7 | `theorem` | [exists_cell](../../../../GeneralTopology/PrismCarrier.lean/declarations/exists-cell.md) | 62 | `result-track:1db74e567b4ef0ad66ea74fa18f356157e09e3f4e1bc9975b751323adce1207b` |
+| 1 | `structure` | [GeometricPrismCarrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrismCarrier.lean/declarations/geometricprismcarrier.md) | 18 | `declaration-track:a135f4c74fec2f6633b5c4e1efd9981d641c7e3363d999d172938df9e91e0184` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrismCarrier.lean/declarations/instance.md) | 39 | `declaration-track:60b1ecad1a15bb64ce53a11d26019b163294719819b1d345dd84cb73320f19d7` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrismCarrier.lean/declarations/instance-source-edition-2.md) | 42 | `declaration-track:914c32c67de29a75a8e9c8f534c7fe3d2a4883978016e7099404a204bc9946d1` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrismCarrier.lean/declarations/instance-source-edition-3.md) | 45 | `declaration-track:bb6f6ba53cd64cdc98d97c547a5ea8cd46ab81436153e0048ff59a1a4b21f517` |
+| 5 | `abbrev` | [CarrierPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrismCarrier.lean/declarations/carrierpoint.md) | 49 | `declaration-track:893ed3770b6455f94c579ca2c05c17f5fec343f9d5b709a8bd941ad27ffa98b7` |
+| 6 | `def` | [cellPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrismCarrier.lean/declarations/cellpoint.md) | 53 | `declaration-track:fab78940572725095bd83aece08c26e4e9267b908571fd1b8107ef84c996a5ed` |
+| 7 | `theorem` | [exists_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrismCarrier.lean/declarations/exists-cell.md) | 62 | `result-track:1db74e567b4ef0ad66ea74fa18f356157e09e3f4e1bc9975b751323adce1207b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataHashMap.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataHashMap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataHashMap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataHashMap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [keys](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataHashMap.lean/declarations/keys.md) | 32 | `declaration-track:97687cb88f154e331bf8ab11ff87c824fa46d6180781146c5903290230528759` |
-| 2 | `def` | [values](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataHashMap.lean/declarations/values.md) | 36 | `declaration-track:d34da0860a490999a6358e80a44fd07fb7910e5adcc3a7ce7e87e7023e87d3c2` |
-| 3 | `def` | [consVal](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataHashMap.lean/declarations/consval.md) | 40 | `declaration-track:31fb1e5cb49950cd83d1c0af2a7dd698ebffef34f09f884bce70cae5a958070f` |
-| 4 | `def` | [insertList](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataHashMap.lean/declarations/insertlist.md) | 50 | `declaration-track:4a162cf08921eb34d8f7fa9ae4474687564026638019a8a3bfdd45691b4a04c0` |
+| 1 | `def` | [keys](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataHashMap.lean/declarations/keys.md) | 32 | `declaration-track:97687cb88f154e331bf8ab11ff87c824fa46d6180781146c5903290230528759` |
+| 2 | `def` | [values](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataHashMap.lean/declarations/values.md) | 36 | `declaration-track:d34da0860a490999a6358e80a44fd07fb7910e5adcc3a7ce7e87e7023e87d3c2` |
+| 3 | `def` | [consVal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataHashMap.lean/declarations/consval.md) | 40 | `declaration-track:31fb1e5cb49950cd83d1c0af2a7dd698ebffef34f09f884bce70cae5a958070f` |
+| 4 | `def` | [insertList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataHashMap.lean/declarations/insertlist.md) | 50 | `declaration-track:4a162cf08921eb34d8f7fa9ae4474687564026638019a8a3bfdd45691b4a04c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

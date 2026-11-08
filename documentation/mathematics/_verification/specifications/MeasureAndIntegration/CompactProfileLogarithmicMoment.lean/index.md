@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CompactProfileLogarithmicMoment.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CompactProfileLogarithmicMoment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileLogarithmicMoment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileLogarithmicMoment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Convolution.CompactProfileDifferentialMoments`](../../../../MeasureAndIntegration/CompactProfileDifferentialMoments.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.IntegralTransforms.LogarithmicMomentSubstitution`](../../../../MeasureAndIntegration/LogarithmicMomentSubstitution.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Convolution.CompactProfileDifferentialMoments`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileDifferentialMoments.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.IntegralTransforms.LogarithmicMomentSubstitution`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicMomentSubstitution.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_logarithmic_integral_zero](../../../../MeasureAndIntegration/CompactProfileLogarithmicMoment.lean/declarations/actual-logarithmic-integral-zero.md) | 25 | `result-track:6f68391a2d0e5611a09d0c24886e073009482e92d80466ee3f6f1aef53ca9f10` |
+| 1 | `theorem` | [actual_logarithmic_integral_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileLogarithmicMoment.lean/declarations/actual-logarithmic-integral-zero.md) | 25 | `result-track:6f68391a2d0e5611a09d0c24886e073009482e92d80466ee3f6f1aef53ca9f10` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

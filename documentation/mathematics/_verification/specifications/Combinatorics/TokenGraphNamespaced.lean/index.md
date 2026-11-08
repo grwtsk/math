@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/TokenGraphNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/TokenGraphNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TokenGraphNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TokenGraphNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TokenNode](../../../../Combinatorics/TokenGraphNamespaced.lean/declarations/tokennode.md) | 18 | `declaration-track:3460fa7dfa1afde2db8a426d2d6dd1d5672f99db0c974a650e3a8eaf4cc2b432` |
-| 2 | `structure` | [SemanticEdge](../../../../Combinatorics/TokenGraphNamespaced.lean/declarations/semanticedge.md) | 29 | `declaration-track:09a49a5e2d185299f2d00a59cf3ca1b261067b21761100cd025ea8fff1c6fb24` |
-| 3 | `structure` | [TokenGraph](../../../../Combinatorics/TokenGraphNamespaced.lean/declarations/tokengraph.md) | 42 | `declaration-track:037939b18d4817e4469c4898e2d47c875800e8082a886112da210ddda431fc64` |
-| 4 | `inductive` | [SemanticPath](../../../../Combinatorics/TokenGraphNamespaced.lean/declarations/semanticpath.md) | 62 | `declaration-track:8133bdbe55eca5e7da3a2edecb6bcbd4d3cc5fb23942fd11ecdde7cfe22f58ba` |
-| 5 | `structure` | [TokenConnectivityCertificate](../../../../Combinatorics/TokenGraphNamespaced.lean/declarations/tokenconnectivitycertificate.md) | 76 | `declaration-track:788aaba11439f8b5c43f80360b2708a69f5cb57feb2cfbc6e1b1cffb8ff0517c` |
-| 6 | `theorem` | [tokenGraph_edge_evidence](../../../../Combinatorics/TokenGraphNamespaced.lean/declarations/tokengraph-edge-evidence.md) | 90 | `result-track:834553522c32a835920a0b6fba9401d95aa948d2b19692280003b97f3e828bd6` |
+| 1 | `structure` | [TokenNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TokenGraphNamespaced.lean/declarations/tokennode.md) | 18 | `declaration-track:3460fa7dfa1afde2db8a426d2d6dd1d5672f99db0c974a650e3a8eaf4cc2b432` |
+| 2 | `structure` | [SemanticEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TokenGraphNamespaced.lean/declarations/semanticedge.md) | 29 | `declaration-track:09a49a5e2d185299f2d00a59cf3ca1b261067b21761100cd025ea8fff1c6fb24` |
+| 3 | `structure` | [TokenGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TokenGraphNamespaced.lean/declarations/tokengraph.md) | 42 | `declaration-track:037939b18d4817e4469c4898e2d47c875800e8082a886112da210ddda431fc64` |
+| 4 | `inductive` | [SemanticPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TokenGraphNamespaced.lean/declarations/semanticpath.md) | 62 | `declaration-track:8133bdbe55eca5e7da3a2edecb6bcbd4d3cc5fb23942fd11ecdde7cfe22f58ba` |
+| 5 | `structure` | [TokenConnectivityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TokenGraphNamespaced.lean/declarations/tokenconnectivitycertificate.md) | 76 | `declaration-track:788aaba11439f8b5c43f80360b2708a69f5cb57feb2cfbc6e1b1cffb8ff0517c` |
+| 6 | `theorem` | [tokenGraph_edge_evidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TokenGraphNamespaced.lean/declarations/tokengraph-edge-evidence.md) | 90 | `result-track:834553522c32a835920a0b6fba9401d95aa948d2b19692280003b97f3e828bd6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

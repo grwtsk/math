@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveFieldNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveFieldNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveFieldNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveFieldNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Subtype.inv](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveFieldNamespaced.lean/declarations/subtype-inv.md) | 29 | `declaration-track:fc631dfcaeb83992191fe1c5d916dec137b1a47c7a0a356396ddd75256c0884c` |
-| 2 | `theorem` | [coe_inv](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveFieldNamespaced.lean/declarations/coe-inv.md) | 32 | `result-track:05546539b36f8b67064e48a744cd10e898d6e5368d91da563079410ba8e3b5b2` |
-| 3 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveFieldNamespaced.lean/declarations/instance-source-edition-2.md) | 35 | `declaration-track:f302bf64a1c5cc9f10a7014f82f846f2561c45f61f8077f8428c02cddcd2ac08` |
-| 4 | `theorem` | [coe_zpow](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveFieldNamespaced.lean/declarations/coe-zpow.md) | 39 | `result-track:70a1acad3675acda709c99afd0126bb23d67bce11914324b960ecf3256c28368` |
-| 5 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveFieldNamespaced.lean/declarations/instance.md) | 42 | `declaration-track:8199252ccf6245ce7bb6a403a229a748579b6eaad808caf8da9c01bb10c3b6d2` |
+| 1 | `instance` | [Subtype.inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveFieldNamespaced.lean/declarations/subtype-inv.md) | 29 | `declaration-track:fc631dfcaeb83992191fe1c5d916dec137b1a47c7a0a356396ddd75256c0884c` |
+| 2 | `theorem` | [coe_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveFieldNamespaced.lean/declarations/coe-inv.md) | 32 | `result-track:05546539b36f8b67064e48a744cd10e898d6e5368d91da563079410ba8e3b5b2` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveFieldNamespaced.lean/declarations/instance-source-edition-2.md) | 35 | `declaration-track:f302bf64a1c5cc9f10a7014f82f846f2561c45f61f8077f8428c02cddcd2ac08` |
+| 4 | `theorem` | [coe_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveFieldNamespaced.lean/declarations/coe-zpow.md) | 39 | `result-track:70a1acad3675acda709c99afd0126bb23d67bce11914324b960ecf3256c28368` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveFieldNamespaced.lean/declarations/instance.md) | 42 | `declaration-track:8199252ccf6245ce7bb6a403a229a748579b6eaad808caf8da9c01bb10c3b6d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

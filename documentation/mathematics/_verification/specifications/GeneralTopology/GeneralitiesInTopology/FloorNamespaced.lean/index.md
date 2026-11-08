@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/GeneralitiesInTopology/FloorNamespaced.lean/index.md) · [Full source](../../../../../GeneralTopology/GeneralitiesInTopology/FloorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FloorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FloorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [FloorSemiring.eventually_mul_pow_lt_factorial_sub](../../../../../GeneralTopology/GeneralitiesInTopology/FloorNamespaced.lean/declarations/floorsemiring-eventually-mul-pow-lt-factorial-sub.md) | 26 | `result-track:aa0ecbbbbbf902154f5344ae10a604bac32c29991e3e0ef35911a2cd26e2817d` |
+| 1 | `theorem` | [FloorSemiring.eventually_mul_pow_lt_factorial_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FloorNamespaced.lean/declarations/floorsemiring-eventually-mul-pow-lt-factorial-sub.md) | 26 | `result-track:aa0ecbbbbbf902154f5344ae10a604bac32c29991e3e0ef35911a2cd26e2817d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidWithTopLeSelfAdd.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidWithTopLeSelfAdd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidWithTopLeSelfAdd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidWithTopLeSelfAdd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [isOrderedAddMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidWithTopLeSelfAdd.lean/declarations/isorderedaddmonoid-source-edition-2.md) | 20 | `declaration-track:f2a435d4b0af3695426bae8e353a2a100faef75c29e792dfd8eee9bb64d043ba` |
-| 2 | `instance` | [canonicallyOrderedAdd](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidWithTopLeSelfAdd.lean/declarations/canonicallyorderedadd.md) | 24 | `declaration-track:05cc09c0ba5afe2b5006e016dc110100ee960a7be1053189baa2ef0178739e85` |
-| 3 | `instance` | [isOrderedAddMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidWithTopLeSelfAdd.lean/declarations/isorderedaddmonoid.md) | 38 | `declaration-track:a71d9536bbec04ca86fcffa61e5a888c2663a33a1aaf916812b021d1ce98be3b` |
-| 4 | `theorem` | [le_self_add](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidWithTopLeSelfAdd.lean/declarations/le-self-add.md) | 42 | `result-track:af175af2c168d1d8ad9b2cef9d6f747171966509e2390f7296600e60cc8e047c` |
-| 5 | `theorem` | [le_add_self](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidWithTopLeSelfAdd.lean/declarations/le-add-self.md) | 52 | `result-track:14fdc6a486fe5c04d59293795efb0ff1fc8fd72adcb1397047f057a940dcb6f9` |
+| 1 | `instance` | [isOrderedAddMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidWithTopLeSelfAdd.lean/declarations/isorderedaddmonoid-source-edition-2.md) | 20 | `declaration-track:f2a435d4b0af3695426bae8e353a2a100faef75c29e792dfd8eee9bb64d043ba` |
+| 2 | `instance` | [canonicallyOrderedAdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidWithTopLeSelfAdd.lean/declarations/canonicallyorderedadd.md) | 24 | `declaration-track:05cc09c0ba5afe2b5006e016dc110100ee960a7be1053189baa2ef0178739e85` |
+| 3 | `instance` | [isOrderedAddMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidWithTopLeSelfAdd.lean/declarations/isorderedaddmonoid.md) | 38 | `declaration-track:a71d9536bbec04ca86fcffa61e5a888c2663a33a1aaf916812b021d1ce98be3b` |
+| 4 | `theorem` | [le_self_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidWithTopLeSelfAdd.lean/declarations/le-self-add.md) | 42 | `result-track:af175af2c168d1d8ad9b2cef9d6f747171966509e2390f7296600e60cc8e047c` |
+| 5 | `theorem` | [le_add_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidWithTopLeSelfAdd.lean/declarations/le-add-self.md) | 52 | `result-track:14fdc6a486fe5c04d59293795efb0ff1fc8fd72adcb1397047f057a940dcb6f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

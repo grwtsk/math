@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalPrimeMarginControls.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalPrimeMarginControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPrimeMarginControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPrimeMarginControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentPrimeCoverage`](../../../../NumberTheory/CanonicalTentPrimeCoverage.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentPrimeCoverage`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentPrimeCoverage.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.NormNum` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [omitted_scale_false_positive](../../../../NumberTheory/CanonicalPrimeMarginControls.lean/declarations/omitted-scale-false-positive.md) | 24 | `result-track:85377696c245e91d4b3c16fbadbefd98c86b9b45ccc58c8e4c5f27992546830b` |
-| 2 | `theorem` | [proper_power_mass_not_prime_margin](../../../../NumberTheory/CanonicalPrimeMarginControls.lean/declarations/proper-power-mass-not-prime-margin.md) | 28 | `result-track:b492eee69b82bc1ec6c47941871450538016c58b64798c1967ae99751cd989c7` |
-| 3 | `theorem` | [signed_correction_false_positive](../../../../NumberTheory/CanonicalPrimeMarginControls.lean/declarations/signed-correction-false-positive.md) | 32 | `result-track:57f552af8751a51b2c3153487bc479459c3b7e60aa5dcc8e563191d0d4f56f25` |
-| 4 | `theorem` | [prefix_is_not_lower_enclosure](../../../../NumberTheory/CanonicalPrimeMarginControls.lean/declarations/prefix-is-not-lower-enclosure.md) | 36 | `result-track:7836c3bb755de83c4debcef49bc8945dd40fda56b9d9f2ce4aeb4a90ab7d1c7c` |
-| 5 | `theorem` | [omitted_evaluation_error_false_positive](../../../../NumberTheory/CanonicalPrimeMarginControls.lean/declarations/omitted-evaluation-error-false-positive.md) | 40 | `result-track:19cf1e2c9d2e100a5b479fd77ce1af28ef40af51da55c871eb156d7e6533bc3d` |
-| 6 | `theorem` | [zero_margin_is_rejected](../../../../NumberTheory/CanonicalPrimeMarginControls.lean/declarations/zero-margin-is-rejected.md) | 44 | `result-track:2967995dd2dc239ec4baf51fc08fccf42f09cfafbf4469d90bc0306f03e35559` |
-| 7 | `theorem` | [same_cardinality_wrong_inventory](../../../../NumberTheory/CanonicalPrimeMarginControls.lean/declarations/same-cardinality-wrong-inventory.md) | 47 | `result-track:8d12b8addd39917ce4d31faf90637328e98e7b0404209d522c1a2d0da45ae995` |
-| 8 | `theorem` | [multiplicity_cannot_be_cardinality](../../../../NumberTheory/CanonicalPrimeMarginControls.lean/declarations/multiplicity-cannot-be-cardinality.md) | 57 | `result-track:280683317e981969b907e4c20dc42f17e0f06089eb6400bf028b1c6ccca6abee` |
-| 9 | `theorem` | [empty_prefix_keeps_budget](../../../../NumberTheory/CanonicalPrimeMarginControls.lean/declarations/empty-prefix-keeps-budget.md) | 61 | `result-track:8410b7a97d9b09fb0871f29ff67c69b7711efcd53731b6b2b88e03b9993cd578` |
-| 10 | `theorem` | [first_square_stage_separate](../../../../NumberTheory/CanonicalPrimeMarginControls.lean/declarations/first-square-stage-separate.md) | 65 | `result-track:bea9bb695b1f6646166a38391e01a4b2a9e15358736631431c34a41d6626065b` |
-| 11 | `theorem` | [fixed_threshold_preserves_domain](../../../../NumberTheory/CanonicalPrimeMarginControls.lean/declarations/fixed-threshold-preserves-domain.md) | 73 | `result-track:8637283ae177fdd238de113cb1395df0dddcd8c846cc4d0076a96fa730d9a63d` |
-| 12 | `theorem` | [finite_samples_not_universal](../../../../NumberTheory/CanonicalPrimeMarginControls.lean/declarations/finite-samples-not-universal.md) | 77 | `result-track:f0e7343fc8ed77168e9d1034852a4bf175f40b22368ce21798d8970212553efe` |
+| 1 | `theorem` | [omitted_scale_false_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPrimeMarginControls.lean/declarations/omitted-scale-false-positive.md) | 24 | `result-track:85377696c245e91d4b3c16fbadbefd98c86b9b45ccc58c8e4c5f27992546830b` |
+| 2 | `theorem` | [proper_power_mass_not_prime_margin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPrimeMarginControls.lean/declarations/proper-power-mass-not-prime-margin.md) | 28 | `result-track:b492eee69b82bc1ec6c47941871450538016c58b64798c1967ae99751cd989c7` |
+| 3 | `theorem` | [signed_correction_false_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPrimeMarginControls.lean/declarations/signed-correction-false-positive.md) | 32 | `result-track:57f552af8751a51b2c3153487bc479459c3b7e60aa5dcc8e563191d0d4f56f25` |
+| 4 | `theorem` | [prefix_is_not_lower_enclosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPrimeMarginControls.lean/declarations/prefix-is-not-lower-enclosure.md) | 36 | `result-track:7836c3bb755de83c4debcef49bc8945dd40fda56b9d9f2ce4aeb4a90ab7d1c7c` |
+| 5 | `theorem` | [omitted_evaluation_error_false_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPrimeMarginControls.lean/declarations/omitted-evaluation-error-false-positive.md) | 40 | `result-track:19cf1e2c9d2e100a5b479fd77ce1af28ef40af51da55c871eb156d7e6533bc3d` |
+| 6 | `theorem` | [zero_margin_is_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPrimeMarginControls.lean/declarations/zero-margin-is-rejected.md) | 44 | `result-track:2967995dd2dc239ec4baf51fc08fccf42f09cfafbf4469d90bc0306f03e35559` |
+| 7 | `theorem` | [same_cardinality_wrong_inventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPrimeMarginControls.lean/declarations/same-cardinality-wrong-inventory.md) | 47 | `result-track:8d12b8addd39917ce4d31faf90637328e98e7b0404209d522c1a2d0da45ae995` |
+| 8 | `theorem` | [multiplicity_cannot_be_cardinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPrimeMarginControls.lean/declarations/multiplicity-cannot-be-cardinality.md) | 57 | `result-track:280683317e981969b907e4c20dc42f17e0f06089eb6400bf028b1c6ccca6abee` |
+| 9 | `theorem` | [empty_prefix_keeps_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPrimeMarginControls.lean/declarations/empty-prefix-keeps-budget.md) | 61 | `result-track:8410b7a97d9b09fb0871f29ff67c69b7711efcd53731b6b2b88e03b9993cd578` |
+| 10 | `theorem` | [first_square_stage_separate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPrimeMarginControls.lean/declarations/first-square-stage-separate.md) | 65 | `result-track:bea9bb695b1f6646166a38391e01a4b2a9e15358736631431c34a41d6626065b` |
+| 11 | `theorem` | [fixed_threshold_preserves_domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPrimeMarginControls.lean/declarations/fixed-threshold-preserves-domain.md) | 73 | `result-track:8637283ae177fdd238de113cb1395df0dddcd8c846cc4d0076a96fa730d9a63d` |
+| 12 | `theorem` | [finite_samples_not_universal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPrimeMarginControls.lean/declarations/finite-samples-not-universal.md) | 77 | `result-track:f0e7343fc8ed77168e9d1034852a4bf175f40b22368ce21798d8970212553efe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

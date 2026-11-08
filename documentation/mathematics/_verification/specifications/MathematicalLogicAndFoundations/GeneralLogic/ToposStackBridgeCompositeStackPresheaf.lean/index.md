@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ToposStackBridgeCompositeStackPresheaf.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ToposStackBridgeCompositeStackPresheaf.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ToposStackBridgeCompositeStackPresheaf.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ToposStackBridgeCompositeStackPresheaf.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompositeStackPresheaf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ToposStackBridgeCompositeStackPresheaf.lean/declarations/compositestackpresheaf.md) | 21 | `declaration-track:29577efe915e0a0b551816d30bee18e45fd826c2222082a1a55fb4deda1cade1` |
-| 2 | `structure` | [ToposStackBridge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ToposStackBridgeCompositeStackPresheaf.lean/declarations/toposstackbridge.md) | 27 | `declaration-track:415aa2335d5b13cb83de5e231216b5a6fb571d7bc5d665a9a50daf1aa7ee2cea` |
-| 3 | `theorem` | [topos_stack_global_section](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ToposStackBridgeCompositeStackPresheaf.lean/declarations/topos-stack-global-section.md) | 36 | `result-track:fea3644f5d10b95e4de0b8b2fb15d4fce10e847627b90b1f1592b3b674eedde4` |
+| 1 | `structure` | [CompositeStackPresheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ToposStackBridgeCompositeStackPresheaf.lean/declarations/compositestackpresheaf.md) | 21 | `declaration-track:29577efe915e0a0b551816d30bee18e45fd826c2222082a1a55fb4deda1cade1` |
+| 2 | `structure` | [ToposStackBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ToposStackBridgeCompositeStackPresheaf.lean/declarations/toposstackbridge.md) | 27 | `declaration-track:415aa2335d5b13cb83de5e231216b5a6fb571d7bc5d665a9a50daf1aa7ee2cea` |
+| 3 | `theorem` | [topos_stack_global_section](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ToposStackBridgeCompositeStackPresheaf.lean/declarations/topos-stack-global-section.md) | 36 | `result-track:fea3644f5d10b95e4de0b8b2fb15d4fce10e847627b90b1f1592b3b674eedde4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

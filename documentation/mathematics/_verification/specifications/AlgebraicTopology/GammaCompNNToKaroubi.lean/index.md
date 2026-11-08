@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/GammaCompNNToKaroubi.lean/index.md) · [Full source](../../../../AlgebraicTopology/GammaCompNNToKaroubi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/GammaCompNNToKaroubi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/GammaCompNNToKaroubi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Γ₀NondegComplexIso](../../../../AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/nondegcomplexiso.md) | 35 | `declaration-track:e71cb3340f21c097bed741d7da8d9ab0c5c7d55b19c66d7ea3336cfbc8e6aea2` |
-| 2 | `def` | [Γ₀'CompNondegComplexFunctor](../../../../AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/compnondegcomplexfunctor.md) | 59 | `declaration-track:d50acc01001122e13aff5f8c46c8a6a848570d6e50f65a70c12db220a83ca4a9` |
-| 3 | `def` | [N₁Γ₀](../../../../AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-source-edition-2.md) | 64 | `declaration-track:f0b2d00e781f175e6753f71e9e15d4aaa2857d47f71b7e8e12dfb7caf53ed6bb` |
-| 4 | `theorem` | [N₁Γ₀_app](../../../../AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-app.md) | 75 | `result-track:2a6f29382f76e8184bd989313d7495a7f47df224e497520c43620ef641fc47b6` |
-| 5 | `theorem` | [N₁Γ₀_hom_app](../../../../AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-hom-app.md) | 85 | `result-track:2b036679c77f89ed1ba92971df689493eb60401bd18fc70191ffe4250a2d8826` |
-| 6 | `theorem` | [N₁Γ₀_inv_app](../../../../AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-inv-app.md) | 94 | `result-track:530d8f1009efbfdab723a1aff9a0fb25da164b196a65611ccb023b5f072a88aa` |
-| 7 | `theorem` | [N₁Γ₀_hom_app_f_f](../../../../AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-hom-app-f-f.md) | 104 | `result-track:4cccd5a89912c10f963c62c5083fd611975f9f0dd817fd810b79944dc8cba4ec` |
-| 8 | `theorem` | [N₁Γ₀_inv_app_f_f](../../../../AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-inv-app-f-f.md) | 112 | `result-track:0b6c72d48f9ee2b5f418aa85c0bacef123cc2e940a6243c386f5d9920d0a1a22` |
-| 9 | `theorem` | [N₂Γ₂_toKaroubi](../../../../AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-tokaroubi.md) | 122 | `result-track:4f79f9cf2ee0f87daa5681de91cc38641aaf10594fe3bf361f5ae93aa08dfd7f` |
-| 10 | `def` | [N₂Γ₂ToKaroubiIso](../../../../AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-tokaroubiiso.md) | 135 | `declaration-track:3118add19eef4a89c2cbceca03899ae37d99d25aede91eb4794f41950b8b1af1` |
-| 11 | `def` | [N₂Γ₂](../../../../AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n.md) | 144 | `declaration-track:1f593bb435fd1e38db232b55b4f7d5a0011e5d07892f1d8086bcb5eabc3958fd` |
-| 12 | `theorem` | [N₂Γ₂_inv_app_f_f](../../../../AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-inv-app-f-f-source-edition-2.md) | 151 | `result-track:beaa15bae6b2471ef4610fbdf5053c22a6db44b1384700e8abef3656f53efc89` |
-| 13 | `lemma` | [whiskerLeft_toKaroubi_N₂Γ₂_hom](../../../../AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/whiskerleft-tokaroubi-n-hom.md) | 168 | `result-track:6fd723957c49927acb6cf2526424dbf0c0fbb88e8d3bb077a2346b29cb1b7b28` |
-| 14 | `theorem` | [N₂Γ₂_compatible_with_N₁Γ₀](../../../../AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-compatible-with-n.md) | 179 | `result-track:a22ad46ed8f2bb427fe5637902e06fb7a1cb637083816aa2cb15653e44cc22b0` |
+| 1 | `def` | [Γ₀NondegComplexIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/nondegcomplexiso.md) | 35 | `declaration-track:e71cb3340f21c097bed741d7da8d9ab0c5c7d55b19c66d7ea3336cfbc8e6aea2` |
+| 2 | `def` | [Γ₀'CompNondegComplexFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/compnondegcomplexfunctor.md) | 59 | `declaration-track:d50acc01001122e13aff5f8c46c8a6a848570d6e50f65a70c12db220a83ca4a9` |
+| 3 | `def` | [N₁Γ₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-source-edition-2.md) | 64 | `declaration-track:f0b2d00e781f175e6753f71e9e15d4aaa2857d47f71b7e8e12dfb7caf53ed6bb` |
+| 4 | `theorem` | [N₁Γ₀_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-app.md) | 75 | `result-track:2a6f29382f76e8184bd989313d7495a7f47df224e497520c43620ef641fc47b6` |
+| 5 | `theorem` | [N₁Γ₀_hom_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-hom-app.md) | 85 | `result-track:2b036679c77f89ed1ba92971df689493eb60401bd18fc70191ffe4250a2d8826` |
+| 6 | `theorem` | [N₁Γ₀_inv_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-inv-app.md) | 94 | `result-track:530d8f1009efbfdab723a1aff9a0fb25da164b196a65611ccb023b5f072a88aa` |
+| 7 | `theorem` | [N₁Γ₀_hom_app_f_f](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-hom-app-f-f.md) | 104 | `result-track:4cccd5a89912c10f963c62c5083fd611975f9f0dd817fd810b79944dc8cba4ec` |
+| 8 | `theorem` | [N₁Γ₀_inv_app_f_f](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-inv-app-f-f.md) | 112 | `result-track:0b6c72d48f9ee2b5f418aa85c0bacef123cc2e940a6243c386f5d9920d0a1a22` |
+| 9 | `theorem` | [N₂Γ₂_toKaroubi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-tokaroubi.md) | 122 | `result-track:4f79f9cf2ee0f87daa5681de91cc38641aaf10594fe3bf361f5ae93aa08dfd7f` |
+| 10 | `def` | [N₂Γ₂ToKaroubiIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-tokaroubiiso.md) | 135 | `declaration-track:3118add19eef4a89c2cbceca03899ae37d99d25aede91eb4794f41950b8b1af1` |
+| 11 | `def` | [N₂Γ₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n.md) | 144 | `declaration-track:1f593bb435fd1e38db232b55b4f7d5a0011e5d07892f1d8086bcb5eabc3958fd` |
+| 12 | `theorem` | [N₂Γ₂_inv_app_f_f](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-inv-app-f-f-source-edition-2.md) | 151 | `result-track:beaa15bae6b2471ef4610fbdf5053c22a6db44b1384700e8abef3656f53efc89` |
+| 13 | `lemma` | [whiskerLeft_toKaroubi_N₂Γ₂_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/whiskerleft-tokaroubi-n-hom.md) | 168 | `result-track:6fd723957c49927acb6cf2526424dbf0c0fbb88e8d3bb077a2346b29cb1b7b28` |
+| 14 | `theorem` | [N₂Γ₂_compatible_with_N₁Γ₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/GammaCompNNToKaroubi.lean/declarations/n-compatible-with-n.md) | 179 | `result-track:a22ad46ed8f2bb427fe5637902e06fb7a1cb637083816aa2cb15653e44cc22b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

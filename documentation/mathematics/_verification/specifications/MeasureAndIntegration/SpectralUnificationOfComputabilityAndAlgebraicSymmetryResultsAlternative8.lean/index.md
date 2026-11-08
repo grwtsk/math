@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative8.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative8.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative8.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative8.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceSlopeBound_exists](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative8.lean/declarations/sourceslopebound-exists.md) | 25 | `result-track:576f20de12cd0fcfbac6505f2b602db07f479019715283ceaf46c1bda47e671c` |
-| 2 | `theorem` | [invSqrtPrimitive_hasDerivAt](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative8.lean/declarations/invsqrtprimitive-hasderivat.md) | 43 | `result-track:3c691ee98a354a5d0a9b32ba135cf604fa9c389bb3e7a5be761abfcdefaba6f7` |
-| 3 | `theorem` | [reciprocalWeight_integral](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative8.lean/declarations/reciprocalweight-integral.md) | 57 | `result-track:5052281991800585f315366c1bfd19cdba5350209da3ad16b4e71f3d25e89aff` |
-| 4 | `theorem` | [sourceVariationCost_le](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative8.lean/declarations/sourcevariationcost-le.md) | 72 | `result-track:f3e373329354ac80d4c2d6d463ca6af214604fcdcc7210f128aecf51fcba04de` |
+| 1 | `theorem` | [sourceSlopeBound_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative8.lean/declarations/sourceslopebound-exists.md) | 25 | `result-track:576f20de12cd0fcfbac6505f2b602db07f479019715283ceaf46c1bda47e671c` |
+| 2 | `theorem` | [invSqrtPrimitive_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative8.lean/declarations/invsqrtprimitive-hasderivat.md) | 43 | `result-track:3c691ee98a354a5d0a9b32ba135cf604fa9c389bb3e7a5be761abfcdefaba6f7` |
+| 3 | `theorem` | [reciprocalWeight_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative8.lean/declarations/reciprocalweight-integral.md) | 57 | `result-track:5052281991800585f315366c1bfd19cdba5350209da3ad16b4e71f3d25e89aff` |
+| 4 | `theorem` | [sourceVariationCost_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative8.lean/declarations/sourcevariationcost-le.md) | 72 | `result-track:f3e373329354ac80d4c2d6d463ca6af214604fcdcc7210f128aecf51fcba04de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Imo2006Q5.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Imo2006Q5.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo2006Q5.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo2006Q5.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Int.natAbs_eq_of_chain_dvd](../../../../CommutativeAlgebra/Imo2006Q5.lean/declarations/int-natabs-eq-of-chain-dvd.md) | 48 | `result-track:dba890c4f64dea64cedd6db7bdf32b82c01227f61338d01b5e06304c79fb36c3` |
-| 2 | `theorem` | [Int.add_eq_add_of_natAbs_eq_of_natAbs_eq](../../../../CommutativeAlgebra/Imo2006Q5.lean/declarations/int-add-eq-add-of-natabs-eq-of-natabs-eq.md) | 53 | `result-track:e62d0df36fdfd2e6e8f94e09ef567db7da92c7bdc84b7663829086b6f3882b66` |
-| 3 | `theorem` | [Polynomial.isPeriodicPt_eval_two](../../../../CommutativeAlgebra/Imo2006Q5.lean/declarations/polynomial-isperiodicpt-eval-two.md) | 63 | `result-track:00441d174569aaa9cb8a124326288b48281ad08e3a7622a3ec7669a7d99be121` |
-| 4 | `theorem` | [Polynomial.iterate_comp_sub_X_ne](../../../../CommutativeAlgebra/Imo2006Q5.lean/declarations/polynomial-iterate-comp-sub-x-ne.md) | 121 | `result-track:adaa1dabf11dbde3298869698c3c239bcceda5a44bec709f2a57e369ba3c3543` |
-| 5 | `theorem` | [imo2006_q5'](../../../../CommutativeAlgebra/Imo2006Q5.lean/declarations/imo2006-q5-source-edition-2.md) | 128 | `result-track:d73b721ea0a93e51f12ff4cbf2642eae1b1e0d580d62663ed565ebe6d972fccf` |
-| 6 | `theorem` | [imo2006_q5](../../../../CommutativeAlgebra/Imo2006Q5.lean/declarations/imo2006-q5.md) | 190 | `result-track:1d4fe6e27243d63f8f29cdbe3a09071eaedf93cd4f23addcb0882f7dba9cc762` |
+| 1 | `theorem` | [Int.natAbs_eq_of_chain_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo2006Q5.lean/declarations/int-natabs-eq-of-chain-dvd.md) | 48 | `result-track:dba890c4f64dea64cedd6db7bdf32b82c01227f61338d01b5e06304c79fb36c3` |
+| 2 | `theorem` | [Int.add_eq_add_of_natAbs_eq_of_natAbs_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo2006Q5.lean/declarations/int-add-eq-add-of-natabs-eq-of-natabs-eq.md) | 53 | `result-track:e62d0df36fdfd2e6e8f94e09ef567db7da92c7bdc84b7663829086b6f3882b66` |
+| 3 | `theorem` | [Polynomial.isPeriodicPt_eval_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo2006Q5.lean/declarations/polynomial-isperiodicpt-eval-two.md) | 63 | `result-track:00441d174569aaa9cb8a124326288b48281ad08e3a7622a3ec7669a7d99be121` |
+| 4 | `theorem` | [Polynomial.iterate_comp_sub_X_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo2006Q5.lean/declarations/polynomial-iterate-comp-sub-x-ne.md) | 121 | `result-track:adaa1dabf11dbde3298869698c3c239bcceda5a44bec709f2a57e369ba3c3543` |
+| 5 | `theorem` | [imo2006_q5'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo2006Q5.lean/declarations/imo2006-q5-source-edition-2.md) | 128 | `result-track:d73b721ea0a93e51f12ff4cbf2642eae1b1e0d580d62663ed565ebe6d972fccf` |
+| 6 | `theorem` | [imo2006_q5](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo2006Q5.lean/declarations/imo2006-q5.md) | 190 | `result-track:1d4fe6e27243d63f8f29cdbe3a09071eaedf93cd4f23addcb0882f7dba9cc762` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

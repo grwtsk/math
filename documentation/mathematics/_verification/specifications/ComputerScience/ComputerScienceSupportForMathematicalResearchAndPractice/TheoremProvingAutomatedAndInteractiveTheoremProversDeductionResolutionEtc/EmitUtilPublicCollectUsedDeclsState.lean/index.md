@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EmitUtilPublicCollectUsedDeclsState.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EmitUtilPublicCollectUsedDeclsState.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EmitUtilPublicCollectUsedDeclsState.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EmitUtilPublicCollectUsedDeclsState.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CollectUsedDeclsState](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EmitUtilPublicCollectUsedDeclsState.lean/declarations/collectuseddeclsstate.md) | 15 | `declaration-track:297bccc1340a22b0162e3f2987689c3c9cf55c3583db1ebbbacdc754452002c2` |
-| 2 | `def` | [collectUsedDecls](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EmitUtilPublicCollectUsedDeclsState.lean/declarations/collectuseddecls.md) | 24 | `declaration-track:fe3ec509a6ff392f8d24b2af50b3357b524b12bc8789e9f7c0a456a519469023` |
-| 3 | `def` | [usesModuleFrom](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EmitUtilPublicCollectUsedDeclsState.lean/declarations/usesmodulefrom.md) | 53 | `declaration-track:8aeae38ad5064d5dfa987d086ab4b5d3cc6ba2eb59c5bc6af8ae0f1716d24446` |
+| 1 | `structure` | [CollectUsedDeclsState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EmitUtilPublicCollectUsedDeclsState.lean/declarations/collectuseddeclsstate.md) | 15 | `declaration-track:297bccc1340a22b0162e3f2987689c3c9cf55c3583db1ebbbacdc754452002c2` |
+| 2 | `def` | [collectUsedDecls](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EmitUtilPublicCollectUsedDeclsState.lean/declarations/collectuseddecls.md) | 24 | `declaration-track:fe3ec509a6ff392f8d24b2af50b3357b524b12bc8789e9f7c0a456a519469023` |
+| 3 | `def` | [usesModuleFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EmitUtilPublicCollectUsedDeclsState.lean/declarations/usesmodulefrom.md) | 53 | `declaration-track:8aeae38ad5064d5dfa987d086ab4b5d3cc6ba2eb59c5bc6af8ae0f1716d24446` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

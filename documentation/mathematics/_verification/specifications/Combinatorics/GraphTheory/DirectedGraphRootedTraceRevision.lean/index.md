@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.ParentTraceDictionary`](../../../../../Combinatorics/GraphTheory/DirectedGraphParentTraceDictionary.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.DecisionCertificate`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.ParentTraceDictionary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphParentTraceDictionary.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.DecisionCertificate`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,22 +58,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [RootedTrace](../../../../../Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/rootedtrace.md) | 33 | `declaration-track:759f664a35c45fb37d8b956c1f8e39d3135217156a52ab44237ca085611c660c` |
-| 2 | `def` | [rootedRows](../../../../../Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/rootedrows.md) | 35 | `declaration-track:bdf0c38c21c30188add665fb5184da234f1cfcf91924a5f89880439c44110061` |
-| 3 | `def` | [eraseRoots](../../../../../Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/eraseroots.md) | 38 | `declaration-track:7b1ccc134342dd8451f9b05f90097eb3ea4a51b2f20b9dad8e0ee412232b1cc7` |
-| 4 | `theorem` | [eraseRoots_rootedRows](../../../../../Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/eraseroots-rootedrows.md) | 42 | `result-track:5442e351dfc1a2e73034f61c1a1c705f2344972d1272f5c6f99c4ebf733eaef4` |
-| 5 | `def` | [liftPacked](../../../../../Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/liftpacked.md) | 47 | `declaration-track:df7c99ae49174e9213257bda948f67ff8d4f935a7cc306c608c8f47f77b4e512` |
-| 6 | `theorem` | [unpack_liftPacked](../../../../../Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/unpack-liftpacked.md) | 52 | `result-track:b5e5d493d0b646c080ee97526cbdf4af3c8f00b2a5a48aabb172b8e807c7e907` |
-| 7 | `def` | [expandRevision](../../../../../Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/expandrevision.md) | 68 | `declaration-track:5f81c698ced03f366a33eeace4672275df480a2b03b617774231fd5511ad8e92` |
-| 8 | `def` | [beforePacked](../../../../../Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/beforepacked.md) | 75 | `declaration-track:95e8272a048ce44661a2a69bcac4775c77aabd7c486fb7b3c66f16b9c28abff2` |
-| 9 | `def` | [afterPacked](../../../../../Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/afterpacked.md) | 79 | `declaration-track:8b1d8f8e975588573fcbcbef817add8e6c7c18033241be23962899c4831bc2cc` |
-| 10 | `theorem` | [expandRevision_encode](../../../../../Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/expandrevision-encode.md) | 84 | `result-track:236b595fde84ef275e86bfabd16a849732e1176290cd4c89d019592924940cbf` |
-| 11 | `theorem` | [unpack_before](../../../../../Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/unpack-before.md) | 91 | `result-track:73836ea392b4c50beabda2f6de68f7d187b2a7743b6c5a9384f4d2ff5d906ff1` |
-| 12 | `theorem` | [lifted_agreement](../../../../../Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/lifted-agreement.md) | 97 | `result-track:f10925c002fcc94f6686e64f23cb07230d5355a929763afb48aed603724cde99` |
-| 13 | `theorem` | [unpack_after](../../../../../Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/unpack-after.md) | 110 | `result-track:101936322710190a2355d5a463d7451ff27ff695f9baadebf1ac7fe8896eb800` |
-| 14 | `theorem` | [revised_valid](../../../../../Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/revised-valid.md) | 120 | `result-track:8c996c8dceea6c27aafa82553f117ef03e37759414b15c03a95f85f3cc59c50a` |
-| 15 | `theorem` | [revised_recovers](../../../../../Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/revised-recovers.md) | 138 | `result-track:e50da7c4a16365557702a5cae7d5c483f47d287d2178d049dafd6c7105d39439` |
-| 16 | `theorem` | [certified_revision](../../../../../Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/certified-revision.md) | 161 | `result-track:1c11cd5286e312677e4fe08c9aaff9266187862d48e8078d8d1908c1be7f30e3` |
+| 1 | `abbrev` | [RootedTrace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/rootedtrace.md) | 33 | `declaration-track:759f664a35c45fb37d8b956c1f8e39d3135217156a52ab44237ca085611c660c` |
+| 2 | `def` | [rootedRows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/rootedrows.md) | 35 | `declaration-track:bdf0c38c21c30188add665fb5184da234f1cfcf91924a5f89880439c44110061` |
+| 3 | `def` | [eraseRoots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/eraseroots.md) | 38 | `declaration-track:7b1ccc134342dd8451f9b05f90097eb3ea4a51b2f20b9dad8e0ee412232b1cc7` |
+| 4 | `theorem` | [eraseRoots_rootedRows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/eraseroots-rootedrows.md) | 42 | `result-track:5442e351dfc1a2e73034f61c1a1c705f2344972d1272f5c6f99c4ebf733eaef4` |
+| 5 | `def` | [liftPacked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/liftpacked.md) | 47 | `declaration-track:df7c99ae49174e9213257bda948f67ff8d4f935a7cc306c608c8f47f77b4e512` |
+| 6 | `theorem` | [unpack_liftPacked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/unpack-liftpacked.md) | 52 | `result-track:b5e5d493d0b646c080ee97526cbdf4af3c8f00b2a5a48aabb172b8e807c7e907` |
+| 7 | `def` | [expandRevision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/expandrevision.md) | 68 | `declaration-track:5f81c698ced03f366a33eeace4672275df480a2b03b617774231fd5511ad8e92` |
+| 8 | `def` | [beforePacked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/beforepacked.md) | 75 | `declaration-track:95e8272a048ce44661a2a69bcac4775c77aabd7c486fb7b3c66f16b9c28abff2` |
+| 9 | `def` | [afterPacked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/afterpacked.md) | 79 | `declaration-track:8b1d8f8e975588573fcbcbef817add8e6c7c18033241be23962899c4831bc2cc` |
+| 10 | `theorem` | [expandRevision_encode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/expandrevision-encode.md) | 84 | `result-track:236b595fde84ef275e86bfabd16a849732e1176290cd4c89d019592924940cbf` |
+| 11 | `theorem` | [unpack_before](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/unpack-before.md) | 91 | `result-track:73836ea392b4c50beabda2f6de68f7d187b2a7743b6c5a9384f4d2ff5d906ff1` |
+| 12 | `theorem` | [lifted_agreement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/lifted-agreement.md) | 97 | `result-track:f10925c002fcc94f6686e64f23cb07230d5355a929763afb48aed603724cde99` |
+| 13 | `theorem` | [unpack_after](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/unpack-after.md) | 110 | `result-track:101936322710190a2355d5a463d7451ff27ff695f9baadebf1ac7fe8896eb800` |
+| 14 | `theorem` | [revised_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/revised-valid.md) | 120 | `result-track:8c996c8dceea6c27aafa82553f117ef03e37759414b15c03a95f85f3cc59c50a` |
+| 15 | `theorem` | [revised_recovers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/revised-recovers.md) | 138 | `result-track:e50da7c4a16365557702a5cae7d5c483f47d287d2178d049dafd6c7105d39439` |
+| 16 | `theorem` | [certified_revision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphRootedTraceRevision.lean/declarations/certified-revision.md) | 161 | `result-track:1c11cd5286e312677e4fe08c9aaff9266187862d48e8078d8d1908c1be7f30e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

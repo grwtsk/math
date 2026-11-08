@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSiteStableSphere.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSiteStableSphere.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSiteStableSphere.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSiteStableSphere.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StableSphere](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSiteStableSphere.lean/declarations/stablesphere.md) | 18 | `declaration-track:5998971b5e88915ddd45e30e174659ac96684e2f543b095150e98158e781ddc1` |
-| 2 | `structure` | [StableSphereCollapse](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSiteStableSphere.lean/declarations/stablespherecollapse.md) | 23 | `declaration-track:bb43d89f5ddb60579b9383085409046fb29956db1591f73fcee10ea6f144e6cb` |
-| 3 | `theorem` | [stable_sphere_collapse_has_target](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSiteStableSphere.lean/declarations/stable-sphere-collapse-has-target.md) | 30 | `result-track:6f877a67a5023b97a7af985496b2da74b3a47268e4aa0f32c0b9607d1292bc45` |
-| 4 | `theorem` | [stable_sphere_collapse_torsion_killed](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSiteStableSphere.lean/declarations/stable-sphere-collapse-torsion-killed.md) | 35 | `result-track:95f4311654ebb2d92ffece1b17ae6cc0b65ac6bb9adb9dd65ae6002ea633a4e3` |
+| 1 | `structure` | [StableSphere](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSiteStableSphere.lean/declarations/stablesphere.md) | 18 | `declaration-track:5998971b5e88915ddd45e30e174659ac96684e2f543b095150e98158e781ddc1` |
+| 2 | `structure` | [StableSphereCollapse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSiteStableSphere.lean/declarations/stablespherecollapse.md) | 23 | `declaration-track:bb43d89f5ddb60579b9383085409046fb29956db1591f73fcee10ea6f144e6cb` |
+| 3 | `theorem` | [stable_sphere_collapse_has_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSiteStableSphere.lean/declarations/stable-sphere-collapse-has-target.md) | 30 | `result-track:6f877a67a5023b97a7af985496b2da74b3a47268e4aa0f32c0b9607d1292bc45` |
+| 4 | `theorem` | [stable_sphere_collapse_torsion_killed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSiteStableSphere.lean/declarations/stable-sphere-collapse-torsion-killed.md) | 35 | `result-track:95f4311654ebb2d92ffece1b17ae6cc0b65ac6bb9adb9dd65ae6002ea633a4e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

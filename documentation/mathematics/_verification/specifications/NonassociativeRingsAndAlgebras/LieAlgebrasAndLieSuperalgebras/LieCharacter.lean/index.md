@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieCharacter.lean/index.md) · [Full source](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieCharacter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieCharacter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieCharacter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [LieCharacter](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieCharacter.lean/declarations/liecharacter.md) | 35 | `declaration-track:93fc7dfbdc70ed5c6bba10e7991eb7bce70772a596cbc5ec16a9c72e1f56f206` |
-| 2 | `theorem` | [lieCharacter_apply_lie](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieCharacter.lean/declarations/liecharacter-apply-lie.md) | 40 | `result-track:4b8aa67ceae9835690bab886e139dda55df207e1598edc97e7f55283e28f3a19` |
-| 3 | `theorem` | [lieCharacter_apply_lie'](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieCharacter.lean/declarations/liecharacter-apply-lie-source-edition-2.md) | 44 | `result-track:9a46a0369bc0a2e9f8062ce7bdb093fd5cac9be9cd5097a9021c59b5e43cfa9e` |
-| 4 | `theorem` | [lieCharacter_apply_of_mem_derived](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieCharacter.lean/declarations/liecharacter-apply-of-mem-derived.md) | 47 | `result-track:5786a7f13bacd2d0df252d5f4580678ad534018cbbc96cd3cd0bfdf946105a32` |
-| 5 | `def` | [lieCharacterEquivLinearDual](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieCharacter.lean/declarations/liecharacterequivlineardual.md) | 59 | `declaration-track:01a86a204d88cb36e61a9c28e4d38e1a2d7f6a25f90b6220c61326a7afa88bc3` |
+| 1 | `abbrev` | [LieCharacter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieCharacter.lean/declarations/liecharacter.md) | 35 | `declaration-track:93fc7dfbdc70ed5c6bba10e7991eb7bce70772a596cbc5ec16a9c72e1f56f206` |
+| 2 | `theorem` | [lieCharacter_apply_lie](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieCharacter.lean/declarations/liecharacter-apply-lie.md) | 40 | `result-track:4b8aa67ceae9835690bab886e139dda55df207e1598edc97e7f55283e28f3a19` |
+| 3 | `theorem` | [lieCharacter_apply_lie'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieCharacter.lean/declarations/liecharacter-apply-lie-source-edition-2.md) | 44 | `result-track:9a46a0369bc0a2e9f8062ce7bdb093fd5cac9be9cd5097a9021c59b5e43cfa9e` |
+| 4 | `theorem` | [lieCharacter_apply_of_mem_derived](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieCharacter.lean/declarations/liecharacter-apply-of-mem-derived.md) | 47 | `result-track:5786a7f13bacd2d0df252d5f4580678ad534018cbbc96cd3cd0bfdf946105a32` |
+| 5 | `def` | [lieCharacterEquivLinearDual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieCharacter.lean/declarations/liecharacterequivlineardual.md) | 59 | `declaration-track:01a86a204d88cb36e61a9c28e4d38e1a2d7f6a25f90b6220c61326a7afa88bc3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

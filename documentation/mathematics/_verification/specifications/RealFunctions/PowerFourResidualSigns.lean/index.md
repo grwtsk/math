@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/PowerFourResidualSigns.lean/index.md) · [Full source](../../../../RealFunctions/PowerFourResidualSigns.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowerFourResidualSigns.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowerFourResidualSigns.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Convolution.CompactProfileHigherDerivatives`](../../../../MeasureAndIntegration/CompactProfileHigherDerivatives.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Convolution.CompactProfileHigherDerivatives`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileHigherDerivatives.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [normalized_source_closed_factor](../../../../RealFunctions/PowerFourResidualSigns.lean/declarations/normalized-source-closed-factor.md) | 21 | `result-track:9cdaf4606a8c2150b569956498ecfcfcdfe745a4b62a9a1f23d29dd4cf41cf63` |
-| 2 | `theorem` | [normalized_source_deriv_closed_factor](../../../../RealFunctions/PowerFourResidualSigns.lean/declarations/normalized-source-deriv-closed-factor.md) | 30 | `result-track:51d96436c49d35a5dfbd68824d63b262528c4e48ade04f088e99b80e573a4d95` |
-| 3 | `theorem` | [right_strip_coordinate_bounds](../../../../RealFunctions/PowerFourResidualSigns.lean/declarations/right-strip-coordinate-bounds.md) | 43 | `result-track:9d9a2b3345d63a4fbf4fe2817c97ccaea2dc7a1f8bb71fea5e6863f410dacab7` |
-| 4 | `theorem` | [right_strip_bracket_signs](../../../../RealFunctions/PowerFourResidualSigns.lean/declarations/right-strip-bracket-signs.md) | 64 | `result-track:f67c2c67d588c0d46326e1a8028eff471bfc7908153309b595d54ca1d6d43e04` |
-| 5 | `theorem` | [normalized_source_right_strip_signs](../../../../RealFunctions/PowerFourResidualSigns.lean/declarations/normalized-source-right-strip-signs.md) | 90 | `result-track:837907804fbc7740ec1337a3f0cee301d3a57cef7966e3a6f8c6c575988b660c` |
-| 6 | `theorem` | [normalized_source_reflected_on_support](../../../../RealFunctions/PowerFourResidualSigns.lean/declarations/normalized-source-reflected-on-support.md) | 107 | `result-track:e5ef9839b97d243a273333a7543dccf78a576b1e59a0336e355cae3d18151ec1` |
-| 7 | `theorem` | [normalized_source_left_strip_signs](../../../../RealFunctions/PowerFourResidualSigns.lean/declarations/normalized-source-left-strip-signs.md) | 120 | `result-track:2ceeabe5598031c55f658f83952871cc9a14850404c0c0de1a40b95b51170027` |
-| 8 | `theorem` | [normalized_source_deriv_zero_outside](../../../../RealFunctions/PowerFourResidualSigns.lean/declarations/normalized-source-deriv-zero-outside.md) | 134 | `result-track:aa54e889869dd508b113a40d16f39b02b2362da65b5a18ca559b42baca1f7047` |
-| 9 | `theorem` | [normalized_source_endpoint_zero](../../../../RealFunctions/PowerFourResidualSigns.lean/declarations/normalized-source-endpoint-zero.md) | 141 | `result-track:a8d687793db547d8ff2d9f56ec3d6129bd60bd39081cad7b43e16e0f48220794` |
+| 1 | `theorem` | [normalized_source_closed_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowerFourResidualSigns.lean/declarations/normalized-source-closed-factor.md) | 21 | `result-track:9cdaf4606a8c2150b569956498ecfcfcdfe745a4b62a9a1f23d29dd4cf41cf63` |
+| 2 | `theorem` | [normalized_source_deriv_closed_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowerFourResidualSigns.lean/declarations/normalized-source-deriv-closed-factor.md) | 30 | `result-track:51d96436c49d35a5dfbd68824d63b262528c4e48ade04f088e99b80e573a4d95` |
+| 3 | `theorem` | [right_strip_coordinate_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowerFourResidualSigns.lean/declarations/right-strip-coordinate-bounds.md) | 43 | `result-track:9d9a2b3345d63a4fbf4fe2817c97ccaea2dc7a1f8bb71fea5e6863f410dacab7` |
+| 4 | `theorem` | [right_strip_bracket_signs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowerFourResidualSigns.lean/declarations/right-strip-bracket-signs.md) | 64 | `result-track:f67c2c67d588c0d46326e1a8028eff471bfc7908153309b595d54ca1d6d43e04` |
+| 5 | `theorem` | [normalized_source_right_strip_signs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowerFourResidualSigns.lean/declarations/normalized-source-right-strip-signs.md) | 90 | `result-track:837907804fbc7740ec1337a3f0cee301d3a57cef7966e3a6f8c6c575988b660c` |
+| 6 | `theorem` | [normalized_source_reflected_on_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowerFourResidualSigns.lean/declarations/normalized-source-reflected-on-support.md) | 107 | `result-track:e5ef9839b97d243a273333a7543dccf78a576b1e59a0336e355cae3d18151ec1` |
+| 7 | `theorem` | [normalized_source_left_strip_signs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowerFourResidualSigns.lean/declarations/normalized-source-left-strip-signs.md) | 120 | `result-track:2ceeabe5598031c55f658f83952871cc9a14850404c0c0de1a40b95b51170027` |
+| 8 | `theorem` | [normalized_source_deriv_zero_outside](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowerFourResidualSigns.lean/declarations/normalized-source-deriv-zero-outside.md) | 134 | `result-track:aa54e889869dd508b113a40d16f39b02b2362da65b5a18ca559b42baca1f7047` |
+| 9 | `theorem` | [normalized_source_endpoint_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowerFourResidualSigns.lean/declarations/normalized-source-endpoint-zero.md) | 141 | `result-track:a8d687793db547d8ff2d9f56ec3d6129bd60bd39081cad7b43e16e0f48220794` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

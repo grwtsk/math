@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InputsNII.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InputsNII.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InputsNII.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InputsNII.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [NII](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InputsNII.lean/declarations/nii.md) | 33 | `declaration-track:65bcbc173e4e50515e74b1160a277e58468fdff6cd9c116ffc90a2004298df60` |
-| 2 | `structure` | [BlockInputs](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InputsNII.lean/declarations/blockinputs.md) | 42 | `declaration-track:8c25b29ad807a26451766e000424c2c6318ce2da87b36951c1bba9b6266a52e5` |
-| 3 | `structure` | [TailInputs](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InputsNII.lean/declarations/tailinputs.md) | 57 | `declaration-track:e3a2a83159813e5d2c5b8a78550fadd0222e38d10f10378473d05546f3a73026` |
+| 1 | `def` | [NII](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InputsNII.lean/declarations/nii.md) | 33 | `declaration-track:65bcbc173e4e50515e74b1160a277e58468fdff6cd9c116ffc90a2004298df60` |
+| 2 | `structure` | [BlockInputs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InputsNII.lean/declarations/blockinputs.md) | 42 | `declaration-track:8c25b29ad807a26451766e000424c2c6318ce2da87b36951c1bba9b6266a52e5` |
+| 3 | `structure` | [TailInputs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InputsNII.lean/declarations/tailinputs.md) | 57 | `declaration-track:e3a2a83159813e5d2c5b8a78550fadd0222e38d10f10378473d05546f3a73026` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

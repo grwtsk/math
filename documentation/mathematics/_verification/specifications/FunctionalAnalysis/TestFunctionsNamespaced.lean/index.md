@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/TestFunctionsNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/TestFunctionsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TestFunctionsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TestFunctionsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RHTestFunction](../../../../FunctionalAnalysis/TestFunctionsNamespaced.lean/declarations/rhtestfunction.md) | 34 | `declaration-track:7956fb693681e1113030ec19e13560f40d63b0778d76deb978fbc654ef46c3e1` |
-| 2 | `theorem` | [rh_test_function_has_schwartz_map](../../../../FunctionalAnalysis/TestFunctionsNamespaced.lean/declarations/rh-test-function-has-schwartz-map.md) | 38 | `result-track:1e7cbeed003c91081bb808f1226ddb31fcecb51860205ef01034a0ee1d284c03` |
+| 1 | `structure` | [RHTestFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TestFunctionsNamespaced.lean/declarations/rhtestfunction.md) | 34 | `declaration-track:7956fb693681e1113030ec19e13560f40d63b0778d76deb978fbc654ef46c3e1` |
+| 2 | `theorem` | [rh_test_function_has_schwartz_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TestFunctionsNamespaced.lean/declarations/rh-test-function-has-schwartz-map.md) | 38 | `result-track:1e7cbeed003c91081bb808f1226ddb31fcecb51860205ef01034a0ee1d284c03` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

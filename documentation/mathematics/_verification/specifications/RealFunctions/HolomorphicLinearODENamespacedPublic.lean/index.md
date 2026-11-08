@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/HolomorphicLinearODENamespacedPublic.lean/index.md) · [Full source](../../../../RealFunctions/HolomorphicLinearODENamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HolomorphicLinearODENamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HolomorphicLinearODENamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nowhereZero_of_deriv_eq_mul](../../../../RealFunctions/HolomorphicLinearODENamespacedPublic.lean/declarations/nowherezero-of-deriv-eq-mul.md) | 42 | `result-track:7f0b75f96338b40cb5fb1392df79ec3a8f5f47edb5a8a52059fe79e1000bc9e7` |
+| 1 | `theorem` | [nowhereZero_of_deriv_eq_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HolomorphicLinearODENamespacedPublic.lean/declarations/nowherezero-of-deriv-eq-mul.md) | 42 | `result-track:7f0b75f96338b40cb5fb1392df79ec3a8f5f47edb5a8a52059fe79e1000bc9e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

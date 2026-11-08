@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:4ac98f9e8078874fc3102927ae9c2246d853364168a46675f9c03e15d03bc082` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/declarations/instance.md) | 46 | `declaration-track:23ddecfbc44083026380e86fbfca6c14f6016c541363a07155ec7929dc44db6a` |
-| 3 | `lemma` | [exact_shortComplex](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/declarations/exact-shortcomplex.md) | 55 | `result-track:659b200ae1154813aa002c9292f9b694866cb210924dec16141796e5ddf4dd16` |
-| 4 | `lemma` | [hom_eq_add_up_to_refinements](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/declarations/hom-eq-add-up-to-refinements.md) | 72 | `result-track:aff3c83657c94d37f46dfef6fc33bce7c8b693b3a57c3dd0434994233a497a69` |
-| 5 | `lemma` | [mono_of_isPullback_of_mono](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/declarations/mono-of-ispullback-of-mono.md) | 98 | `result-track:0de7126260ca004e6690cc72a6edd2ec536f539608782ea3db7d11755619bf7f` |
-| 6 | `lemma` | [exact_shortComplex'](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/declarations/exact-shortcomplex-source-edition-2.md) | 119 | `result-track:c1fc1f5e459501259b03230479360599065e941f3dff3de80daa225b4235312e` |
-| 7 | `lemma` | [mono_cokernel_map_of_isPullback](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/declarations/mono-cokernel-map-of-ispullback.md) | 137 | `result-track:e2d879c51dea59c49f58e79ad1c805e1638c8f80a90e557ca90f48ef101194a2` |
-| 8 | `lemma` | [epi_kernel_map_of_isPushout](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/declarations/epi-kernel-map-of-ispushout.md) | 150 | `result-track:3d904d57e700bda8cffe160c77365176f9f914f5adc1de8801dbf4dd4caa576e` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:4ac98f9e8078874fc3102927ae9c2246d853364168a46675f9c03e15d03bc082` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/declarations/instance.md) | 46 | `declaration-track:23ddecfbc44083026380e86fbfca6c14f6016c541363a07155ec7929dc44db6a` |
+| 3 | `lemma` | [exact_shortComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/declarations/exact-shortcomplex.md) | 55 | `result-track:659b200ae1154813aa002c9292f9b694866cb210924dec16141796e5ddf4dd16` |
+| 4 | `lemma` | [hom_eq_add_up_to_refinements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/declarations/hom-eq-add-up-to-refinements.md) | 72 | `result-track:aff3c83657c94d37f46dfef6fc33bce7c8b693b3a57c3dd0434994233a497a69` |
+| 5 | `lemma` | [mono_of_isPullback_of_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/declarations/mono-of-ispullback-of-mono.md) | 98 | `result-track:0de7126260ca004e6690cc72a6edd2ec536f539608782ea3db7d11755619bf7f` |
+| 6 | `lemma` | [exact_shortComplex'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/declarations/exact-shortcomplex-source-edition-2.md) | 119 | `result-track:c1fc1f5e459501259b03230479360599065e941f3dff3de80daa225b4235312e` |
+| 7 | `lemma` | [mono_cokernel_map_of_isPullback](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/declarations/mono-cokernel-map-of-ispullback.md) | 137 | `result-track:e2d879c51dea59c49f58e79ad1c805e1638c8f80a90e557ca90f48ef101194a2` |
+| 8 | `lemma` | [epi_kernel_map_of_isPushout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianCommSqPublic.lean/declarations/epi-kernel-map-of-ispushout.md) | 150 | `result-track:3d904d57e700bda8cffe160c77365176f9f914f5adc1de8801dbf4dd4caa576e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

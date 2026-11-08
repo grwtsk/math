@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PrimeSums.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PrimeSums.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSums.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSums.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mertens_monomial](../../../../MeasureAndIntegration/PrimeSums.lean/declarations/mertens-monomial.md) | 25 | `result-track:ebae9aa83bf6e03027dafcbb2565689065082d4c4f7a4ccb340e9e262bcc7a4f` |
-| 2 | `lemma` | [sum_not_prime_lam_logpow_div_le](../../../../MeasureAndIntegration/PrimeSums.lean/declarations/sum-not-prime-lam-logpow-div-le.md) | 64 | `result-track:a1ef36c6819f9bee8736b25fa8ec15c0034bd7653265fe61bf644a4b6756953a` |
-| 3 | `lemma` | [sum_prime_logpow_eq](../../../../MeasureAndIntegration/PrimeSums.lean/declarations/sum-prime-logpow-eq.md) | 100 | `result-track:4b35f596ea76950654f88a39ad8bbd7b5ada50d72edcb45d4d25df9d599fe699` |
-| 4 | `theorem` | [prime_logpow_sum](../../../../MeasureAndIntegration/PrimeSums.lean/declarations/prime-logpow-sum.md) | 112 | `result-track:247ab6c0905829f9008b85bdc3b0ade6af2891117e928431e1059163c4e27584` |
+| 1 | `theorem` | [mertens_monomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSums.lean/declarations/mertens-monomial.md) | 25 | `result-track:ebae9aa83bf6e03027dafcbb2565689065082d4c4f7a4ccb340e9e262bcc7a4f` |
+| 2 | `lemma` | [sum_not_prime_lam_logpow_div_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSums.lean/declarations/sum-not-prime-lam-logpow-div-le.md) | 64 | `result-track:a1ef36c6819f9bee8736b25fa8ec15c0034bd7653265fe61bf644a4b6756953a` |
+| 3 | `lemma` | [sum_prime_logpow_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSums.lean/declarations/sum-prime-logpow-eq.md) | 100 | `result-track:4b35f596ea76950654f88a39ad8bbd7b5ada50d72edcb45d4d25df9d599fe699` |
+| 4 | `theorem` | [prime_logpow_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSums.lean/declarations/prime-logpow-sum.md) | 112 | `result-track:247ab6c0905829f9008b85bdc3b0ade6af2891117e928431e1059163c4e27584` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

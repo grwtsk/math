@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.IntervalMellinRangeReduction`](../../../../FunctionsOfAComplexVariable/IntervalMellinRangeReduction.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.ErrorBounds.ComplexExpScaling`](../../../../RealFunctions/ComplexExpScaling.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.IntervalMellinRangeReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinRangeReduction.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.ComplexExpScaling`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ComplexExpScaling.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [scaledNodeValue](../../../../FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/declarations/scalednodevalue.md) | 32 | `declaration-track:97d6ae047bf1a012454a1cd0150c642b1303d8abc75ec9af4b868631211cbaeb` |
-| 2 | `def` | [scaledNodeError](../../../../FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/declarations/scalednodeerror.md) | 36 | `declaration-track:8187b5db017af908facea9d024de900e11c4affae504e33f0330ea432afe4d7b` |
-| 3 | `theorem` | [reduced_exponent_re_nonpos](../../../../FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/declarations/reduced-exponent-re-nonpos.md) | 41 | `result-track:8f595734688c768d54d935dbbac87f02a0846e9cbdae028051ee1744f4c0c5f5` |
-| 4 | `theorem` | [density_to_reduced_exponential](../../../../FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/declarations/density-to-reduced-exponential.md) | 50 | `result-track:9bba81df61b98c8ba55a10ac9139870968ba2bf0093fb1a9fe7f4664ddd91317` |
-| 5 | `theorem` | [density_scaled_node_error](../../../../FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/declarations/density-scaled-node-error.md) | 62 | `result-track:cda807530f181695ff189810ed93d799df8214148d64eb9f48edc04cd2eaa7b3` |
-| 6 | `theorem` | [density_scaled_trace_error](../../../../FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/declarations/density-scaled-trace-error.md) | 79 | `result-track:62420401642ee7c9589e26695a33f8a6a05b11ac688d530b51ce7f0918623394` |
-| 7 | `theorem` | [kernel_scaled_error](../../../../FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/declarations/kernel-scaled-error.md) | 100 | `result-track:eb4d72a7306377affac6f090ac4154e5ae18cd6f9b26a07df09d55c41563a47c` |
-| 8 | `theorem` | [kernel_scaled_accumulated_error](../../../../FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/declarations/kernel-scaled-accumulated-error.md) | 121 | `result-track:627c9d31a42d9c48d6c325f5b4f7115e429d4a275e0c67788f3077898020c190` |
-| 9 | `theorem` | [unit_parameter_scaled_exact](../../../../FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/declarations/unit-parameter-scaled-exact.md) | 148 | `result-track:311ffe65ee2573d6eca2f478756a0152fc290441dda4b91009f466222c7fe465` |
+| 1 | `def` | [scaledNodeValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/declarations/scalednodevalue.md) | 32 | `declaration-track:97d6ae047bf1a012454a1cd0150c642b1303d8abc75ec9af4b868631211cbaeb` |
+| 2 | `def` | [scaledNodeError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/declarations/scalednodeerror.md) | 36 | `declaration-track:8187b5db017af908facea9d024de900e11c4affae504e33f0330ea432afe4d7b` |
+| 3 | `theorem` | [reduced_exponent_re_nonpos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/declarations/reduced-exponent-re-nonpos.md) | 41 | `result-track:8f595734688c768d54d935dbbac87f02a0846e9cbdae028051ee1744f4c0c5f5` |
+| 4 | `theorem` | [density_to_reduced_exponential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/declarations/density-to-reduced-exponential.md) | 50 | `result-track:9bba81df61b98c8ba55a10ac9139870968ba2bf0093fb1a9fe7f4664ddd91317` |
+| 5 | `theorem` | [density_scaled_node_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/declarations/density-scaled-node-error.md) | 62 | `result-track:cda807530f181695ff189810ed93d799df8214148d64eb9f48edc04cd2eaa7b3` |
+| 6 | `theorem` | [density_scaled_trace_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/declarations/density-scaled-trace-error.md) | 79 | `result-track:62420401642ee7c9589e26695a33f8a6a05b11ac688d530b51ce7f0918623394` |
+| 7 | `theorem` | [kernel_scaled_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/declarations/kernel-scaled-error.md) | 100 | `result-track:eb4d72a7306377affac6f090ac4154e5ae18cd6f9b26a07df09d55c41563a47c` |
+| 8 | `theorem` | [kernel_scaled_accumulated_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/declarations/kernel-scaled-accumulated-error.md) | 121 | `result-track:627c9d31a42d9c48d6c325f5b4f7115e429d4a275e0c67788f3077898020c190` |
+| 9 | `theorem` | [unit_parameter_scaled_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinScaledExponential.lean/declarations/unit-parameter-scaled-exact.md) | 148 | `result-track:311ffe65ee2573d6eca2f478756a0152fc290441dda4b91009f466222c7fe465` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/index.md) · [Full source](../../../../DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [partialHomeomorph](../../../../DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/declarations/partialhomeomorph.md) | 32 | `declaration-track:45e20db81c025c52f6f6740ac5d4e0e545eb937f31a017cb70da708d17d9111d` |
-| 2 | `theorem` | [trans_partialHomeomorph_apply](../../../../DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/declarations/trans-partialhomeomorph-apply.md) | 57 | `result-track:fbb10b7c6c0a4a69615a718833b60569fbc91369009340a84770d1a5085343d6` |
-| 3 | `theorem` | [source_trans_partialHomeomorph](../../../../DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/declarations/source-trans-partialhomeomorph.md) | 70 | `result-track:260655b5a5d71960154608ad6fe39487efb7f90f4e16f52e6882612a17638008` |
-| 4 | `theorem` | [target_trans_partialHomeomorph](../../../../DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/declarations/target-trans-partialhomeomorph.md) | 82 | `result-track:b193ceaa677ef582731cd08951b542181061cde1ad1844a66ba1876971b10c33` |
-| 5 | `theorem` | [ContMDiffFiberwiseLinear.locality_aux₁](../../../../DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/declarations/contmdifffiberwiselinear-locality-aux.md) | 103 | `result-track:3ae90d848a477f344789fae128dd5043ef5aeedcc73daa12053ea01140b838c2` |
-| 6 | `theorem` | [ContMDiffFiberwiseLinear.locality_aux₂](../../../../DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/declarations/contmdifffiberwiselinear-locality-aux-source-edition-2.md) | 158 | `result-track:ba6716843c904c07fb74d305b47d27d50130f845bb09dd40cc20bab0cafb5182` |
-| 7 | `theorem` | [mem_aux](../../../../DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/declarations/mem-aux.md) | 226 | `result-track:4a136e1c13a3f836948236e7d57edeb5f797501db6711654c6197d524eea8235` |
-| 8 | `def` | [contMDiffFiberwiseLinear](../../../../DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/declarations/contmdifffiberwiselinear.md) | 245 | `declaration-track:6706cf91f13fd788ad223b1e173154a5b8130e559847a1b2a04f33b1b7409b5d` |
-| 9 | `theorem` | [mem_contMDiffFiberwiseLinear_iff](../../../../DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/declarations/mem-contmdifffiberwiselinear-iff.md) | 294 | `result-track:c5e795bf9a3f9dd6ebb42c7e4b4d3cf5a885e74dcb4cbf656e8cd36adeb73576` |
+| 1 | `def` | [partialHomeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/declarations/partialhomeomorph.md) | 32 | `declaration-track:45e20db81c025c52f6f6740ac5d4e0e545eb937f31a017cb70da708d17d9111d` |
+| 2 | `theorem` | [trans_partialHomeomorph_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/declarations/trans-partialhomeomorph-apply.md) | 57 | `result-track:fbb10b7c6c0a4a69615a718833b60569fbc91369009340a84770d1a5085343d6` |
+| 3 | `theorem` | [source_trans_partialHomeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/declarations/source-trans-partialhomeomorph.md) | 70 | `result-track:260655b5a5d71960154608ad6fe39487efb7f90f4e16f52e6882612a17638008` |
+| 4 | `theorem` | [target_trans_partialHomeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/declarations/target-trans-partialhomeomorph.md) | 82 | `result-track:b193ceaa677ef582731cd08951b542181061cde1ad1844a66ba1876971b10c33` |
+| 5 | `theorem` | [ContMDiffFiberwiseLinear.locality_aux₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/declarations/contmdifffiberwiselinear-locality-aux.md) | 103 | `result-track:3ae90d848a477f344789fae128dd5043ef5aeedcc73daa12053ea01140b838c2` |
+| 6 | `theorem` | [ContMDiffFiberwiseLinear.locality_aux₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/declarations/contmdifffiberwiselinear-locality-aux-source-edition-2.md) | 158 | `result-track:ba6716843c904c07fb74d305b47d27d50130f845bb09dd40cc20bab0cafb5182` |
+| 7 | `theorem` | [mem_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/declarations/mem-aux.md) | 226 | `result-track:4a136e1c13a3f836948236e7d57edeb5f797501db6711654c6197d524eea8235` |
+| 8 | `def` | [contMDiffFiberwiseLinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/declarations/contmdifffiberwiselinear.md) | 245 | `declaration-track:6706cf91f13fd788ad223b1e173154a5b8130e559847a1b2a04f33b1b7409b5d` |
+| 9 | `theorem` | [mem_contMDiffFiberwiseLinear_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearPartialHomeomorph.lean/declarations/mem-contmdifffiberwiselinear-iff.md) | 294 | `result-track:c5e795bf9a3f9dd6ebb42c7e4b4d3cf5a885e74dcb4cbf656e8cd36adeb73576` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instLocallyFiniteOrder](../../../../../../ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/declarations/instlocallyfiniteorder.md) | 42 | `declaration-track:7f0ab188fddbe67c21d90ccb1ce397b8a07fba9015b500214b37183132ccafaf` |
-| 2 | `theorem` | [card_Icc](../../../../../../ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/declarations/card-icc.md) | 66 | `result-track:cd241786bd62ec857afc96ab438a7a5801ed6af2b1f34d3b33e75e62c8c355f3` |
-| 3 | `theorem` | [card_Ico](../../../../../../ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/declarations/card-ico.md) | 69 | `result-track:9e14998916cb075dbda2f2e7742a7b7667e6212433c40e147ee26bbf628a75c4` |
-| 4 | `theorem` | [card_Ioc](../../../../../../ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/declarations/card-ioc.md) | 72 | `result-track:cd892299eb3bbb1f65a0f698cadbf9b2ca2cb5f88a1b54724f0e08839af0d00a` |
-| 5 | `theorem` | [card_Ioo](../../../../../../ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/declarations/card-ioo.md) | 75 | `result-track:a9499db32956b3bd0bf6690ab00a5c2b259135138d31bfd4e14909b711e0699b` |
-| 6 | `theorem` | [Icc_mk_mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/declarations/icc-mk-mk.md) | 83 | `result-track:cbd9272ef090376a9b3b5309976c7af30b5e599475f2942c4ebd495676b1c096` |
-| 7 | `theorem` | [Ico_mk_mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/declarations/ico-mk-mk.md) | 87 | `result-track:9fa8df2a88bafddb055e43e4df5ca7f31a36d1d79cbf41dfe4e0682b2c3f7abe` |
-| 8 | `theorem` | [Ioc_mk_mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/declarations/ioc-mk-mk.md) | 91 | `result-track:7e19fb7cb14d9108648c5cb385ca5ce51198e9aa005924d6b3c740a9c3c61b85` |
-| 9 | `theorem` | [Ioo_mk_mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/declarations/ioo-mk-mk.md) | 95 | `result-track:3c53dcd91483e504f9adadc150ddedc9d7de84bccb54f4dc4871cd98d8dd236a` |
+| 1 | `instance` | [instLocallyFiniteOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/declarations/instlocallyfiniteorder.md) | 42 | `declaration-track:7f0ab188fddbe67c21d90ccb1ce397b8a07fba9015b500214b37183132ccafaf` |
+| 2 | `theorem` | [card_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/declarations/card-icc.md) | 66 | `result-track:cd241786bd62ec857afc96ab438a7a5801ed6af2b1f34d3b33e75e62c8c355f3` |
+| 3 | `theorem` | [card_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/declarations/card-ico.md) | 69 | `result-track:9e14998916cb075dbda2f2e7742a7b7667e6212433c40e147ee26bbf628a75c4` |
+| 4 | `theorem` | [card_Ioc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/declarations/card-ioc.md) | 72 | `result-track:cd892299eb3bbb1f65a0f698cadbf9b2ca2cb5f88a1b54724f0e08839af0d00a` |
+| 5 | `theorem` | [card_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/declarations/card-ioo.md) | 75 | `result-track:a9499db32956b3bd0bf6690ab00a5c2b259135138d31bfd4e14909b711e0699b` |
+| 6 | `theorem` | [Icc_mk_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/declarations/icc-mk-mk.md) | 83 | `result-track:cbd9272ef090376a9b3b5309976c7af30b5e599475f2942c4ebd495676b1c096` |
+| 7 | `theorem` | [Ico_mk_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/declarations/ico-mk-mk.md) | 87 | `result-track:9fa8df2a88bafddb055e43e4df5ca7f31a36d1d79cbf41dfe4e0682b2c3f7abe` |
+| 8 | `theorem` | [Ioc_mk_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/declarations/ioc-mk-mk.md) | 91 | `result-track:7e19fb7cb14d9108648c5cb385ca5ce51198e9aa005924d6b3c740a9c3c61b85` |
+| 9 | `theorem` | [Ioo_mk_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SigmaIntervalNamespaced.lean/declarations/ioo-mk-mk.md) | 95 | `result-track:3c53dcd91483e504f9adadc150ddedc9d7de84bccb54f4dc4871cd98d8dd236a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

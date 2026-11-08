@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/DeterministicDirichletMeanMixtures.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/DeterministicDirichletMeanMixtures.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/DeterministicDirichletMeanMixtures.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/DeterministicDirichletMeanMixtures.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [dirichletMeanPoint](../../../../ProbabilityTheoryAndStochasticProcesses/DeterministicDirichletMeanMixtures.lean/declarations/dirichletmeanpoint.md) | 52 | `declaration-track:c436910f43760356003121394052178981cb42a7c1a699538a02b890e22f388a` |
-| 2 | `theorem` | [dirichletMeanPoint_apply](../../../../ProbabilityTheoryAndStochasticProcesses/DeterministicDirichletMeanMixtures.lean/declarations/dirichletmeanpoint-apply.md) | 58 | `result-track:db457d197477222fbfea6aabc257e665554bfe7b3fa2fdf06cb9d57f3b46aa03` |
-| 3 | `theorem` | [dirichletMeanPoint_reindex](../../../../ProbabilityTheoryAndStochasticProcesses/DeterministicDirichletMeanMixtures.lean/declarations/dirichletmeanpoint-reindex.md) | 63 | `result-track:2aa9b28b8cb528394a0d147954183f9192b5b303dbb9fdeaa0e759cd31170f59` |
-| 4 | `def` | [dirichletMeanMixture](../../../../ProbabilityTheoryAndStochasticProcesses/DeterministicDirichletMeanMixtures.lean/declarations/dirichletmeanmixture.md) | 75 | `declaration-track:62c7739491e7c0193293272393a09f47f6aba343fd783dd35c193f6ee7f17166` |
-| 5 | `theorem` | [dirichletMeanMixture_normalized](../../../../ProbabilityTheoryAndStochasticProcesses/DeterministicDirichletMeanMixtures.lean/declarations/dirichletmeanmixture-normalized.md) | 80 | `result-track:78a6c1f3bced2a85f4fc2896793eb22a4f16be3f911ec1cc58cf032c7fadd8c9` |
-| 6 | `theorem` | [dirichletMeanMixture_spectralExpectation](../../../../ProbabilityTheoryAndStochasticProcesses/DeterministicDirichletMeanMixtures.lean/declarations/dirichletmeanmixture-spectralexpectation.md) | 87 | `result-track:95d2d2cc9b3413948de8cdd5d56c09b69518083c44dfdab73a35b6b8fc9fb712` |
-| 7 | `theorem` | [dirichletMeanMixture_turnCovariant](../../../../ProbabilityTheoryAndStochasticProcesses/DeterministicDirichletMeanMixtures.lean/declarations/dirichletmeanmixture-turncovariant.md) | 99 | `result-track:62594d1e94ce1def6f511d7118dce5edda9745193de5815eab2bb3cf126873a6` |
+| 1 | `def` | [dirichletMeanPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/DeterministicDirichletMeanMixtures.lean/declarations/dirichletmeanpoint.md) | 52 | `declaration-track:c436910f43760356003121394052178981cb42a7c1a699538a02b890e22f388a` |
+| 2 | `theorem` | [dirichletMeanPoint_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/DeterministicDirichletMeanMixtures.lean/declarations/dirichletmeanpoint-apply.md) | 58 | `result-track:db457d197477222fbfea6aabc257e665554bfe7b3fa2fdf06cb9d57f3b46aa03` |
+| 3 | `theorem` | [dirichletMeanPoint_reindex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/DeterministicDirichletMeanMixtures.lean/declarations/dirichletmeanpoint-reindex.md) | 63 | `result-track:2aa9b28b8cb528394a0d147954183f9192b5b303dbb9fdeaa0e759cd31170f59` |
+| 4 | `def` | [dirichletMeanMixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/DeterministicDirichletMeanMixtures.lean/declarations/dirichletmeanmixture.md) | 75 | `declaration-track:62c7739491e7c0193293272393a09f47f6aba343fd783dd35c193f6ee7f17166` |
+| 5 | `theorem` | [dirichletMeanMixture_normalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/DeterministicDirichletMeanMixtures.lean/declarations/dirichletmeanmixture-normalized.md) | 80 | `result-track:78a6c1f3bced2a85f4fc2896793eb22a4f16be3f911ec1cc58cf032c7fadd8c9` |
+| 6 | `theorem` | [dirichletMeanMixture_spectralExpectation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/DeterministicDirichletMeanMixtures.lean/declarations/dirichletmeanmixture-spectralexpectation.md) | 87 | `result-track:95d2d2cc9b3413948de8cdd5d56c09b69518083c44dfdab73a35b6b8fc9fb712` |
+| 7 | `theorem` | [dirichletMeanMixture_turnCovariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/DeterministicDirichletMeanMixtures.lean/declarations/dirichletmeanmixture-turncovariant.md) | 99 | `result-track:62594d1e94ce1def6f511d7118dce5edda9745193de5815eab2bb3cf126873a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

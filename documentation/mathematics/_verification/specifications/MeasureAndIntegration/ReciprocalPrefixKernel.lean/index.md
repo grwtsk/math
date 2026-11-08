@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ReciprocalPrefixKernel.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ReciprocalPrefixKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.ReciprocalPrefixDensityAdapter`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixDensityAdapterHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.ReciprocalPrefixDensityAdapter`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixDensityAdapterHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reciprocalFluxWeight](../../../../MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/reciprocalfluxweight.md) | 28 | `declaration-track:6aeef04eccd42c754968f94fdb4d398eb75242886b9f2e57143dbac7e22e95ae` |
-| 2 | `theorem` | [pickupWeightedPrefix_eq_reciprocalPartialSummation](../../../../MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/pickupweightedprefix-eq-reciprocalpartialsummation.md) | 34 | `result-track:0473bd907eef39714f7a5cecf52927cc9cbb1a439ae2f295cfb1ca2fbe0ef488` |
-| 3 | `theorem` | [sum_sqrt_increment](../../../../MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/sum-sqrt-increment.md) | 73 | `result-track:b2cf0f7f9ed59bbc777d41b2402e8f2b3b8946c256dcfdc0bf8da1ddddd141c3` |
-| 4 | `theorem` | [reciprocalFluxWeight_sum_zero](../../../../MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/reciprocalfluxweight-sum-zero.md) | 84 | `result-track:1e10f29bfd9f65af4e7488f0369fe73c5fbf827d38ae67f717aa17ba373f02ac` |
-| 5 | `theorem` | [pickupFlux_eq_reciprocalKernel](../../../../MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/pickupflux-eq-reciprocalkernel.md) | 96 | `result-track:f67cdfb04a4230fb1408945a1959bc83692519c86c3f5ef56cb571318a2a2c8c` |
-| 6 | `theorem` | [pickupFlux_eq_reciprocalVariationKernel](../../../../MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/pickupflux-eq-reciprocalvariationkernel.md) | 124 | `result-track:b881999b0b835500aaf8a05298f62f2c4de5138443e73f25448077d83fab8ab5` |
-| 7 | `theorem` | [wholePickup_eq_reciprocalVariationKernel](../../../../MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/wholepickup-eq-reciprocalvariationkernel.md) | 149 | `result-track:8044bf33b53c65f1cf00adf01cff707a56558da1261cfbdf2520b2f9d851ca05` |
-| 8 | `def` | [reciprocalVariationBlock](../../../../MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/reciprocalvariationblock.md) | 160 | `declaration-track:c4115d17c152979f871d57d327923738fa0025988cd5e6dac0dbbd1861e8fe5b` |
-| 9 | `theorem` | [criticalIntervalBlock_eq_reciprocalVariationKernel](../../../../MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/criticalintervalblock-eq-reciprocalvariationkernel.md) | 169 | `result-track:580320a979a98f105d5bff876c540e629a2bfdf4f1e1c6f4e7aea3c2c444711b` |
-| 10 | `def` | [ReciprocalVariationBlockUniform](../../../../MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/reciprocalvariationblockuniform.md) | 182 | `declaration-track:51d9d6261bdd2cd3bb089b31b7c037ecea9d78249d1b1c5bb9eb4214784e7dc4` |
-| 11 | `theorem` | [criticalIntervalBlockUniform_iff_reciprocalVariationBlockUniform](../../../../MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/criticalintervalblockuniform-iff-reciprocalvariationblockuniform.md) | 186 | `result-track:c836c19b9a72c2fe2f85d31b62ed556d50953d0d383d471d7cc67f7d87622a4d` |
-| 12 | `theorem` | [criticalBoundary_iff_reciprocalVariationBlockUniform](../../../../MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/criticalboundary-iff-reciprocalvariationblockuniform.md) | 202 | `result-track:5c06d44c54cb3ab126f7bae764bab4c4ba6992c63e5b2533ead24390540fb7b0` |
+| 1 | `def` | [reciprocalFluxWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/reciprocalfluxweight.md) | 28 | `declaration-track:6aeef04eccd42c754968f94fdb4d398eb75242886b9f2e57143dbac7e22e95ae` |
+| 2 | `theorem` | [pickupWeightedPrefix_eq_reciprocalPartialSummation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/pickupweightedprefix-eq-reciprocalpartialsummation.md) | 34 | `result-track:0473bd907eef39714f7a5cecf52927cc9cbb1a439ae2f295cfb1ca2fbe0ef488` |
+| 3 | `theorem` | [sum_sqrt_increment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/sum-sqrt-increment.md) | 73 | `result-track:b2cf0f7f9ed59bbc777d41b2402e8f2b3b8946c256dcfdc0bf8da1ddddd141c3` |
+| 4 | `theorem` | [reciprocalFluxWeight_sum_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/reciprocalfluxweight-sum-zero.md) | 84 | `result-track:1e10f29bfd9f65af4e7488f0369fe73c5fbf827d38ae67f717aa17ba373f02ac` |
+| 5 | `theorem` | [pickupFlux_eq_reciprocalKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/pickupflux-eq-reciprocalkernel.md) | 96 | `result-track:f67cdfb04a4230fb1408945a1959bc83692519c86c3f5ef56cb571318a2a2c8c` |
+| 6 | `theorem` | [pickupFlux_eq_reciprocalVariationKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/pickupflux-eq-reciprocalvariationkernel.md) | 124 | `result-track:b881999b0b835500aaf8a05298f62f2c4de5138443e73f25448077d83fab8ab5` |
+| 7 | `theorem` | [wholePickup_eq_reciprocalVariationKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/wholepickup-eq-reciprocalvariationkernel.md) | 149 | `result-track:8044bf33b53c65f1cf00adf01cff707a56558da1261cfbdf2520b2f9d851ca05` |
+| 8 | `def` | [reciprocalVariationBlock](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/reciprocalvariationblock.md) | 160 | `declaration-track:c4115d17c152979f871d57d327923738fa0025988cd5e6dac0dbbd1861e8fe5b` |
+| 9 | `theorem` | [criticalIntervalBlock_eq_reciprocalVariationKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/criticalintervalblock-eq-reciprocalvariationkernel.md) | 169 | `result-track:580320a979a98f105d5bff876c540e629a2bfdf4f1e1c6f4e7aea3c2c444711b` |
+| 10 | `def` | [ReciprocalVariationBlockUniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/reciprocalvariationblockuniform.md) | 182 | `declaration-track:51d9d6261bdd2cd3bb089b31b7c037ecea9d78249d1b1c5bb9eb4214784e7dc4` |
+| 11 | `theorem` | [criticalIntervalBlockUniform_iff_reciprocalVariationBlockUniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/criticalintervalblockuniform-iff-reciprocalvariationblockuniform.md) | 186 | `result-track:c836c19b9a72c2fe2f85d31b62ed556d50953d0d383d471d7cc67f7d87622a4d` |
+| 12 | `theorem` | [criticalBoundary_iff_reciprocalVariationBlockUniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixKernel.lean/declarations/criticalboundary-iff-reciprocalvariationblockuniform.md) | 202 | `result-track:5c06d44c54cb3ab126f7bae764bab4c4ba6992c63e5b2533ead24390540fb7b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

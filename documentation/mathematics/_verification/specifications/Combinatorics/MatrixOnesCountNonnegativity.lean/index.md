@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/MatrixOnesCountNonnegativity.lean/index.md) · [Full source](../../../../Combinatorics/MatrixOnesCountNonnegativity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MatrixOnesCountNonnegativity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MatrixOnesCountNonnegativity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [matrixEnergy](../../../../Combinatorics/MatrixOnesCountNonnegativity.lean/declarations/matrixenergy.md) | 39 | `declaration-track:e803ed4d7aa74fe5a8cd45f1aa386d55ce786414ac20b9990cb529b00faeab2b` |
-| 2 | `theorem` | [matrixEnergy_nonnegative](../../../../Combinatorics/MatrixOnesCountNonnegativity.lean/declarations/matrixenergy-nonnegative.md) | 42 | `result-track:edc5dcc32d37c5459f151745408c3cb84ee8f44a1b1d801d6f704ca59af58e5d` |
+| 1 | `def` | [matrixEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MatrixOnesCountNonnegativity.lean/declarations/matrixenergy.md) | 39 | `declaration-track:e803ed4d7aa74fe5a8cd45f1aa386d55ce786414ac20b9990cb529b00faeab2b` |
+| 2 | `theorem` | [matrixEnergy_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MatrixOnesCountNonnegativity.lean/declarations/matrixenergy-nonnegative.md) | 42 | `result-track:edc5dcc32d37c5459f151745408c3cb84ee8f44a1b1d801d6f704ca59af58e5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

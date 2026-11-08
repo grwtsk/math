@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/ComplexNamespacedAligned.lean/index.md) · [Full source](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/ComplexNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/ComplexNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/ComplexNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [isometryEquivSumSquares](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/ComplexNamespacedAligned.lean/declarations/isometryequivsumsquares.md) | 38 | `declaration-track:b0726beb2845fc1148cd578116c3641eaf5717318b08af0e48ad1704fdbd4efd` |
-| 2 | `def` | [isometryEquivSumSquaresUnits](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/ComplexNamespacedAligned.lean/declarations/isometryequivsumsquaresunits.md) | 75 | `declaration-track:33b1e97f5859a164811df4029b1d7a33f65e64d5e4d37a65004ffa59ee15d97e` |
-| 3 | `theorem` | [equivalent_sum_squares](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/ComplexNamespacedAligned.lean/declarations/equivalent-sum-squares.md) | 82 | `result-track:8d87021020554660ab44897f1970d03cbf2bc463e500354d6a3927af5fccae12` |
-| 4 | `theorem` | [complex_equivalent](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/ComplexNamespacedAligned.lean/declarations/complex-equivalent.md) | 90 | `result-track:94e33f63b5bcc87a306582544ae98e11353184d83d694fa77d49120a3d246243` |
+| 1 | `def` | [isometryEquivSumSquares](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/ComplexNamespacedAligned.lean/declarations/isometryequivsumsquares.md) | 38 | `declaration-track:b0726beb2845fc1148cd578116c3641eaf5717318b08af0e48ad1704fdbd4efd` |
+| 2 | `def` | [isometryEquivSumSquaresUnits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/ComplexNamespacedAligned.lean/declarations/isometryequivsumsquaresunits.md) | 75 | `declaration-track:33b1e97f5859a164811df4029b1d7a33f65e64d5e4d37a65004ffa59ee15d97e` |
+| 3 | `theorem` | [equivalent_sum_squares](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/ComplexNamespacedAligned.lean/declarations/equivalent-sum-squares.md) | 82 | `result-track:8d87021020554660ab44897f1970d03cbf2bc463e500354d6a3927af5fccae12` |
+| 4 | `theorem` | [complex_equivalent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/ComplexNamespacedAligned.lean/declarations/complex-equivalent.md) | 90 | `result-track:94e33f63b5bcc87a306582544ae98e11353184d83d694fa77d49120a3d246243` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/UniqueFactorizationDomainNatNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/UniqueFactorizationDomainNatNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainNatNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainNatNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instWfDvdMonoid](../../../../CommutativeAlgebra/UniqueFactorizationDomainNatNamespaced.lean/declarations/instwfdvdmonoid.md) | 30 | `declaration-track:01491f58aa6da18e3880948293297c5e5e533a4f22f365cbe084d611db37b69d` |
-| 2 | `instance` | [instUniqueFactorizationMonoid](../../../../CommutativeAlgebra/UniqueFactorizationDomainNatNamespaced.lean/declarations/instuniquefactorizationmonoid.md) | 46 | `declaration-track:4165a78928ad7d4931f48f0797852c5ae91ac243e2694eb923fbfe192919024b` |
-| 3 | `lemma` | [factors_eq](../../../../CommutativeAlgebra/UniqueFactorizationDomainNatNamespaced.lean/declarations/factors-eq.md) | 51 | `result-track:f116fc885a570d9359e8aa6abdf91215f088568197f6c14c745e873cb437eff8` |
-| 4 | `lemma` | [factors_multiset_prod_of_irreducible](../../../../CommutativeAlgebra/UniqueFactorizationDomainNatNamespaced.lean/declarations/factors-multiset-prod-of-irreducible.md) | 62 | `result-track:8dc16080785485c88e138ca9f40590ced4e798252f81a7eb45afba578e124ecb` |
+| 1 | `instance` | [instWfDvdMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainNatNamespaced.lean/declarations/instwfdvdmonoid.md) | 30 | `declaration-track:01491f58aa6da18e3880948293297c5e5e533a4f22f365cbe084d611db37b69d` |
+| 2 | `instance` | [instUniqueFactorizationMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainNatNamespaced.lean/declarations/instuniquefactorizationmonoid.md) | 46 | `declaration-track:4165a78928ad7d4931f48f0797852c5ae91ac243e2694eb923fbfe192919024b` |
+| 3 | `lemma` | [factors_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainNatNamespaced.lean/declarations/factors-eq.md) | 51 | `result-track:f116fc885a570d9359e8aa6abdf91215f088568197f6c14c745e873cb437eff8` |
+| 4 | `lemma` | [factors_multiset_prod_of_irreducible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainNatNamespaced.lean/declarations/factors-multiset-prod-of-irreducible.md) | 62 | `result-track:8dc16080785485c88e138ca9f40590ced4e798252f81a7eb45afba578e124ecb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

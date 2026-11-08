@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [monoFactorisation](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesPublic.lean/declarations/monofactorisation.md) | 29 | `declaration-track:5efe5c97604d0d6cdef5d9cd3a2880f2e5dfb8b37e4228da02877283fb971c4b` |
-| 2 | `def` | [monoFactorisationIsImage](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesPublic.lean/declarations/monofactorisationisimage.md) | 38 | `declaration-track:c420e59004aad83e49139a4344902ea36ba01100212919d092c8ab8b6e57c84a` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesPublic.lean/declarations/instance.md) | 52 | `declaration-track:0ffd9bcc2bdfd77e953410f07f7b3e782636a45b07dc87bc487c58ed388e2baf` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesPublic.lean/declarations/instance-source-edition-2.md) | 55 | `declaration-track:2817a1ce6a793e14cc5e18f462524d2d06ca1001a0834109b82f3bff4a49fa7d` |
+| 1 | `def` | [monoFactorisation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesPublic.lean/declarations/monofactorisation.md) | 29 | `declaration-track:5efe5c97604d0d6cdef5d9cd3a2880f2e5dfb8b37e4228da02877283fb971c4b` |
+| 2 | `def` | [monoFactorisationIsImage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesPublic.lean/declarations/monofactorisationisimage.md) | 38 | `declaration-track:c420e59004aad83e49139a4344902ea36ba01100212919d092c8ab8b6e57c84a` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesPublic.lean/declarations/instance.md) | 52 | `declaration-track:0ffd9bcc2bdfd77e953410f07f7b3e782636a45b07dc87bc487c58ed388e2baf` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesPublic.lean/declarations/instance-source-edition-2.md) | 55 | `declaration-track:2817a1ce6a793e14cc5e18f462524d2d06ca1001a0834109b82f3bff4a49fa7d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

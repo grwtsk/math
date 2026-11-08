@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeArithmeticBoundaryIndexBridge.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeArithmeticBoundaryIndexBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeArithmeticBoundaryIndexBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeArithmeticBoundaryIndexBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ArithmeticBoundaryIndexBridge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeArithmeticBoundaryIndexBridge.lean/declarations/arithmeticboundaryindexbridge.md) | 29 | `declaration-track:fa85e688b2c5d29df20f4c35c4a2b401e7d824cbc30a38ed317f04835ab9b174` |
-| 2 | `theorem` | [arithmetic_bridge_supports_index](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeArithmeticBoundaryIndexBridge.lean/declarations/arithmetic-bridge-supports-index.md) | 44 | `result-track:ec49b3ca7de61cb4c30ae2428eb7af6b9e985b16fb14d29a36a139fe4027f7f8` |
-| 3 | `theorem` | [arithmetic_bridge_has_witt_index](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeArithmeticBoundaryIndexBridge.lean/declarations/arithmetic-bridge-has-witt-index.md) | 54 | `result-track:b44354e94de26ea6a404151169aaee5412f74b9ce6565bedf79ca6262297602d` |
+| 1 | `structure` | [ArithmeticBoundaryIndexBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeArithmeticBoundaryIndexBridge.lean/declarations/arithmeticboundaryindexbridge.md) | 29 | `declaration-track:fa85e688b2c5d29df20f4c35c4a2b401e7d824cbc30a38ed317f04835ab9b174` |
+| 2 | `theorem` | [arithmetic_bridge_supports_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeArithmeticBoundaryIndexBridge.lean/declarations/arithmetic-bridge-supports-index.md) | 44 | `result-track:ec49b3ca7de61cb4c30ae2428eb7af6b9e985b16fb14d29a36a139fe4027f7f8` |
+| 3 | `theorem` | [arithmetic_bridge_has_witt_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeArithmeticBoundaryIndexBridge.lean/declarations/arithmetic-bridge-has-witt-index.md) | 54 | `result-track:b44354e94de26ea6a404151169aaee5412f74b9ce6565bedf79ca6262297602d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

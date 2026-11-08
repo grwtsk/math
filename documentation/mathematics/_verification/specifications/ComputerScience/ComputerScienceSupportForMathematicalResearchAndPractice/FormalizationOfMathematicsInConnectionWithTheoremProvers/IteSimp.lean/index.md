@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IteSimp.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IteSimp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IteSimp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IteSimp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [if_true_right_eq_or](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IteSimp.lean/declarations/if-true-right-eq-or.md) | 21 | `result-track:a10ef295f6b262296287266c43785e00a19e1be59d3188257f398e8d9d8c7990` |
-| 2 | `theorem` | [if_true_left_eq_or](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IteSimp.lean/declarations/if-true-left-eq-or.md) | 26 | `result-track:876e2ca15cc3b591bd25554b5df879a38e27eb43f808665bf6f544a2c7466361` |
-| 3 | `theorem` | [if_false_right_eq_and](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IteSimp.lean/declarations/if-false-right-eq-and.md) | 31 | `result-track:b5a5af712fc9c2782de48a55a75e2a3c7866d7c401e043a5d43d6ee331d81b45` |
-| 4 | `theorem` | [if_false_left_eq_and](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IteSimp.lean/declarations/if-false-left-eq-and.md) | 36 | `result-track:eca5158862208da3930bd4f4d16e527ded8d138357ed203860569d11c2214c9b` |
+| 1 | `theorem` | [if_true_right_eq_or](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IteSimp.lean/declarations/if-true-right-eq-or.md) | 21 | `result-track:a10ef295f6b262296287266c43785e00a19e1be59d3188257f398e8d9d8c7990` |
+| 2 | `theorem` | [if_true_left_eq_or](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IteSimp.lean/declarations/if-true-left-eq-or.md) | 26 | `result-track:876e2ca15cc3b591bd25554b5df879a38e27eb43f808665bf6f544a2c7466361` |
+| 3 | `theorem` | [if_false_right_eq_and](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IteSimp.lean/declarations/if-false-right-eq-and.md) | 31 | `result-track:b5a5af712fc9c2782de48a55a75e2a3c7866d7c401e043a5d43d6ee331d81b45` |
+| 4 | `theorem` | [if_false_left_eq_and](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IteSimp.lean/declarations/if-false-left-eq-and.md) | 36 | `result-track:eca5158862208da3930bd4f4d16e527ded8d138357ed203860569d11c2214c9b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

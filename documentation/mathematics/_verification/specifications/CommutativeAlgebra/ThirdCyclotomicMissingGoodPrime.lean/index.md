@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ThirdCyclotomicMissingGoodPrime.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ThirdCyclotomicMissingGoodPrime.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicMissingGoodPrime.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicMissingGoodPrime.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicReduction`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThirdCyclotomicReduction.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThirdCyclotomicReduction.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../CommutativeAlgebra/ThirdCyclotomicMissingGoodPrime.lean/declarations/example.md) | 8 | `declaration-track:5d4517018d9f34d367249a09b1e79a552c6d54c4e93fb6e22909c71d97eb039c` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicMissingGoodPrime.lean/declarations/example.md) | 8 | `declaration-track:5d4517018d9f34d367249a09b1e79a552c6d54c4e93fb6e22909c71d97eb039c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

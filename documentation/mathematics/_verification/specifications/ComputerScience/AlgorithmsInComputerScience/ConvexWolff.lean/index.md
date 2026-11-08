@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ConvexWolff.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ConvexWolff.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConvexWolff.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConvexWolff.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ConvexWolffFactorization](../../../../../ComputerScience/AlgorithmsInComputerScience/ConvexWolff.lean/declarations/convexwolfffactorization.md) | 18 | `declaration-track:0e25eca261ac1a0b909858c602746e2c186d35b0bdb1823b8a2b1ce0d9ce0929` |
-| 2 | `def` | [ConvexWolffFactorization.usableForMajorProof](../../../../../ComputerScience/AlgorithmsInComputerScience/ConvexWolff.lean/declarations/convexwolfffactorization-usableformajorproof.md) | 25 | `declaration-track:a373d350b31f6a03347a292f1125cf1dd13ddf5e490f75e30bd5629a6a774d75` |
-| 3 | `theorem` | [ConvexWolffFactorization.usableForMajorProof_of_fields](../../../../../ComputerScience/AlgorithmsInComputerScience/ConvexWolff.lean/declarations/convexwolfffactorization-usableformajorproof-of-fields.md) | 31 | `result-track:ea33737f14226e8cbb3e6d2e31cda48af07da4ac55010aa1cfb7b677d26c212b` |
+| 1 | `structure` | [ConvexWolffFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConvexWolff.lean/declarations/convexwolfffactorization.md) | 18 | `declaration-track:0e25eca261ac1a0b909858c602746e2c186d35b0bdb1823b8a2b1ce0d9ce0929` |
+| 2 | `def` | [ConvexWolffFactorization.usableForMajorProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConvexWolff.lean/declarations/convexwolfffactorization-usableformajorproof.md) | 25 | `declaration-track:a373d350b31f6a03347a292f1125cf1dd13ddf5e490f75e30bd5629a6a774d75` |
+| 3 | `theorem` | [ConvexWolffFactorization.usableForMajorProof_of_fields](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConvexWolff.lean/declarations/convexwolfffactorization-usableformajorproof-of-fields.md) | 31 | `result-track:ea33737f14226e8cbb3e6d2e31cda48af07da4ac55010aa1cfb7b677d26c212b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

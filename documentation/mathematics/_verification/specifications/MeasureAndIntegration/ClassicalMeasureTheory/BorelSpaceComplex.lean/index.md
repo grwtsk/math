@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceComplex.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceComplex.lean/declarations/instance-source-edition-2.md) | 14 | `declaration-track:df789a03a247357897fbdb238a7a6144a976b8725f85eaf70adfaa73bf299ec3` |
-| 2 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceComplex.lean/declarations/instance.md) | 17 | `declaration-track:57bd699945ddc1d69b3fc9c98e03c3e1f2e6fcc224afe3a6598f49dc7d327766` |
-| 3 | `instance` | [Complex.measurableSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceComplex.lean/declarations/complex-measurablespace.md) | 20 | `declaration-track:4a0e73c91707957a05ad7dd0ecfb1c0307634f4576bf116777c45f308c901c58` |
-| 4 | `instance` | [Complex.borelSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceComplex.lean/declarations/complex-borelspace.md) | 23 | `declaration-track:c03a614efc64693b2d63d4b9e0bc3135c664f3f217123a05892cb1bdd092d67f` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceComplex.lean/declarations/instance-source-edition-2.md) | 14 | `declaration-track:df789a03a247357897fbdb238a7a6144a976b8725f85eaf70adfaa73bf299ec3` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceComplex.lean/declarations/instance.md) | 17 | `declaration-track:57bd699945ddc1d69b3fc9c98e03c3e1f2e6fcc224afe3a6598f49dc7d327766` |
+| 3 | `instance` | [Complex.measurableSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceComplex.lean/declarations/complex-measurablespace.md) | 20 | `declaration-track:4a0e73c91707957a05ad7dd0ecfb1c0307634f4576bf116777c45f308c901c58` |
+| 4 | `instance` | [Complex.borelSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceComplex.lean/declarations/complex-borelspace.md) | 23 | `declaration-track:c03a614efc64693b2d63d4b9e0bc3135c664f3f217123a05892cb1bdd092d67f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

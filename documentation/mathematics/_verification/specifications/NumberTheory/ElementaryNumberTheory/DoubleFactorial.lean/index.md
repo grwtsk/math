@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,17 +60,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [doubleFactorial](../../../../../NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/doublefactorial.md) | 29 | `declaration-track:6dbb077dc4061e6e0b646aa55600d9beb60809b3ee7626b596caa9a0eb887ae7` |
-| 2 | `lemma` | [doubleFactorial_pos](../../../../../NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/doublefactorial-pos.md) | 37 | `result-track:47f324fb9bf636b64227d1694cadb05e26df6fa015200dcb766fe7a545e699ec` |
-| 3 | `theorem` | [doubleFactorial_add_two](../../../../../NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/doublefactorial-add-two.md) | 41 | `result-track:9d0cd6a87640af58d07a77064e53c5ebefe1569700a1715a659d7460e1d93523` |
-| 4 | `theorem` | [doubleFactorial_add_one](../../../../../NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/doublefactorial-add-one.md) | 44 | `result-track:28cceb7ece2939318de309ba77d4838bcd090a81f15f8a5eb44859dfbf2d3483` |
-| 5 | `theorem` | [factorial_eq_mul_doubleFactorial](../../../../../NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/factorial-eq-mul-doublefactorial.md) | 46 | `result-track:f3d35f1156dab88447b5cb2ebfa99f84999f79efe6542339261c6270a7935bd9` |
-| 6 | `lemma` | [doubleFactorial_le_factorial](../../../../../NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/doublefactorial-le-factorial.md) | 52 | `result-track:d12191a425658ec77f7ba280bb1839a34d86dd4040285e6b63afd19852c0f969` |
-| 7 | `theorem` | [doubleFactorial_two_mul](../../../../../NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/doublefactorial-two-mul.md) | 57 | `result-track:7857f96b9abb51dd20e1e8584fc9e3195de10438327aeddd55d3dc965c7eba44` |
-| 8 | `theorem` | [doubleFactorial_eq_prod_even](../../../../../NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/doublefactorial-eq-prod-even.md) | 64 | `result-track:5ea60e41c3b8ea598f280cdceb977acccc5c2afa0016f07628b89b3d738c588d` |
-| 9 | `theorem` | [doubleFactorial_eq_prod_odd](../../../../../NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/doublefactorial-eq-prod-odd.md) | 71 | `result-track:8c8b99ff032c0f805695979269873ae46f7720d3ccda7b827e5affc2ed514bbc` |
-| 10 | `def` | [evalDoubleFactorial](../../../../../NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/evaldoublefactorial.md) | 86 | `declaration-track:b9a79ecd933177e172bd8b70c6ead1d3559bab47f56cea719da2f2b3c3e8dfa8` |
-| 11 | `example` | [(anonymous)](../../../../../NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/example.md) | 93 | `declaration-track:b5bf9b4bbb393b97e398ddcb8af3e357896abbc386209556a83f0b2cfd033509` |
+| 1 | `def` | [doubleFactorial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/doublefactorial.md) | 29 | `declaration-track:6dbb077dc4061e6e0b646aa55600d9beb60809b3ee7626b596caa9a0eb887ae7` |
+| 2 | `lemma` | [doubleFactorial_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/doublefactorial-pos.md) | 37 | `result-track:47f324fb9bf636b64227d1694cadb05e26df6fa015200dcb766fe7a545e699ec` |
+| 3 | `theorem` | [doubleFactorial_add_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/doublefactorial-add-two.md) | 41 | `result-track:9d0cd6a87640af58d07a77064e53c5ebefe1569700a1715a659d7460e1d93523` |
+| 4 | `theorem` | [doubleFactorial_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/doublefactorial-add-one.md) | 44 | `result-track:28cceb7ece2939318de309ba77d4838bcd090a81f15f8a5eb44859dfbf2d3483` |
+| 5 | `theorem` | [factorial_eq_mul_doubleFactorial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/factorial-eq-mul-doublefactorial.md) | 46 | `result-track:f3d35f1156dab88447b5cb2ebfa99f84999f79efe6542339261c6270a7935bd9` |
+| 6 | `lemma` | [doubleFactorial_le_factorial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/doublefactorial-le-factorial.md) | 52 | `result-track:d12191a425658ec77f7ba280bb1839a34d86dd4040285e6b63afd19852c0f969` |
+| 7 | `theorem` | [doubleFactorial_two_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/doublefactorial-two-mul.md) | 57 | `result-track:7857f96b9abb51dd20e1e8584fc9e3195de10438327aeddd55d3dc965c7eba44` |
+| 8 | `theorem` | [doubleFactorial_eq_prod_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/doublefactorial-eq-prod-even.md) | 64 | `result-track:5ea60e41c3b8ea598f280cdceb977acccc5c2afa0016f07628b89b3d738c588d` |
+| 9 | `theorem` | [doubleFactorial_eq_prod_odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/doublefactorial-eq-prod-odd.md) | 71 | `result-track:8c8b99ff032c0f805695979269873ae46f7720d3ccda7b827e5affc2ed514bbc` |
+| 10 | `def` | [evalDoubleFactorial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/evaldoublefactorial.md) | 86 | `declaration-track:b9a79ecd933177e172bd8b70c6ead1d3559bab47f56cea719da2f2b3c3e8dfa8` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DoubleFactorial.lean/declarations/example.md) | 93 | `declaration-track:b5bf9b4bbb393b97e398ddcb8af3e357896abbc386209556a83f0b2cfd033509` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

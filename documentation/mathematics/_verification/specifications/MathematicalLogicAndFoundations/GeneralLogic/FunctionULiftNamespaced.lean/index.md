@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FunctionULiftNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FunctionULiftNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FunctionULiftNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FunctionULiftNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ULift.down_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FunctionULiftNamespaced.lean/declarations/ulift-down-injective.md) | 20 | `result-track:ce5886b24a0f06dfa4ceed1037c99bd02b14cbc4e16200a7b11024ff6d91b717` |
-| 2 | `theorem` | [ULift.down_inj](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FunctionULiftNamespaced.lean/declarations/ulift-down-inj.md) | 23 | `result-track:ee76ac4d42eaa2f09cf5e63d359a771e09e891818a73ccd7c19c128787add3bb` |
-| 3 | `theorem` | [PLift.down_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FunctionULiftNamespaced.lean/declarations/plift-down-injective.md) | 28 | `result-track:0a20b37ee61f514dcc4bdfbc946fe63b7870f2d9f99a6dedae4f9b7606daef11` |
-| 4 | `theorem` | [PLift.down_inj](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FunctionULiftNamespaced.lean/declarations/plift-down-inj.md) | 31 | `result-track:2e6a126040a80e9f19776b9bf4bc92d3d94c956b1aebb5e0776b4a776bab5e9b` |
+| 1 | `theorem` | [ULift.down_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FunctionULiftNamespaced.lean/declarations/ulift-down-injective.md) | 20 | `result-track:ce5886b24a0f06dfa4ceed1037c99bd02b14cbc4e16200a7b11024ff6d91b717` |
+| 2 | `theorem` | [ULift.down_inj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FunctionULiftNamespaced.lean/declarations/ulift-down-inj.md) | 23 | `result-track:ee76ac4d42eaa2f09cf5e63d359a771e09e891818a73ccd7c19c128787add3bb` |
+| 3 | `theorem` | [PLift.down_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FunctionULiftNamespaced.lean/declarations/plift-down-injective.md) | 28 | `result-track:0a20b37ee61f514dcc4bdfbc946fe63b7870f2d9f99a6dedae4f9b7606daef11` |
+| 4 | `theorem` | [PLift.down_inj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FunctionULiftNamespaced.lean/declarations/plift-down-inj.md) | 31 | `result-track:2e6a126040a80e9f19776b9bf4bc92d3d94c956b1aebb5e0776b4a776bab5e9b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

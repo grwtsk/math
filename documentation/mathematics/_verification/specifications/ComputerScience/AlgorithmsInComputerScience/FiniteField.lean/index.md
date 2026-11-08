@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [F2Elements](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f2elements.md) | 12 | `declaration-track:9a953fc5b1fbb1b9c14e317d9fe3b53f9531a20146f1e50dda6ee8594937652a` |
-| 2 | `theorem` | [F2Elements_nodup](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f2elements-nodup.md) | 15 | `result-track:27c4b59a8a75d7146dee9ca65fcd110ec2c327c89241377320067b8a79491576` |
-| 3 | `theorem` | [F2Elements_exhaustive](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f2elements-exhaustive.md) | 18 | `result-track:6de096a45aa2433d6fc3d17803e297ef66d61acaca4488e9dadb0cc7aba47473` |
-| 4 | `def` | [F3Elements](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f3elements.md) | 31 | `declaration-track:4194001f90cd7acf8d88880140cb80c22b02a8ebe4d3e06809ff9baab45382ed` |
-| 5 | `theorem` | [F3Elements_nodup](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f3elements-nodup.md) | 34 | `result-track:912cb9c2c9ff2a75051730ada2e016dfab6b636e8075692c268b33d00b216ad7` |
-| 6 | `theorem` | [F3Elements_exhaustive](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f3elements-exhaustive.md) | 37 | `result-track:4428438a7983753a86bf0c61b0202ac514c789a3930cbf2610c81d5ff31c1718` |
-| 7 | `def` | [F5Elements](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f5elements.md) | 55 | `declaration-track:c727849973b761b6940b89518a59e8b9c739a6e29ae854511551dfc49b6db9bb` |
-| 8 | `theorem` | [F5Elements_nodup](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f5elements-nodup.md) | 59 | `result-track:a413b32d05d4716c025901a3e09dc28ebbbb06456e3a1527b9403b70b41606a6` |
-| 9 | `theorem` | [F5Elements_exhaustive](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f5elements-exhaustive.md) | 62 | `result-track:074992f4441bfde00854bd61031b82f0270919ca578f7ab72410eaa99e881f0e` |
-| 10 | `def` | [F2](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f2.md) | 93 | `declaration-track:24076c83ab95605f27c3bbe2886a9e52446f5506e88c0b810d7b120dd3b17514` |
-| 11 | `def` | [F3](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f3.md) | 111 | `declaration-track:a531493abbe0828979597b96cfb42b697114c87c75b2c19d5208389324221b5a` |
-| 12 | `def` | [F5](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f5.md) | 129 | `declaration-track:1ba5d681fc6595753eaac569babdf3a9c4d8fb51d1352a62173d36186335e6e9` |
-| 13 | `def` | [finiteSumNat](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/finitesumnat.md) | 147 | `declaration-track:d6a675d87cb6d36735de14678b7425da7ca3cfc64cc460aba72602768a035ab8` |
+| 1 | `def` | [F2Elements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f2elements.md) | 12 | `declaration-track:9a953fc5b1fbb1b9c14e317d9fe3b53f9531a20146f1e50dda6ee8594937652a` |
+| 2 | `theorem` | [F2Elements_nodup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f2elements-nodup.md) | 15 | `result-track:27c4b59a8a75d7146dee9ca65fcd110ec2c327c89241377320067b8a79491576` |
+| 3 | `theorem` | [F2Elements_exhaustive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f2elements-exhaustive.md) | 18 | `result-track:6de096a45aa2433d6fc3d17803e297ef66d61acaca4488e9dadb0cc7aba47473` |
+| 4 | `def` | [F3Elements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f3elements.md) | 31 | `declaration-track:4194001f90cd7acf8d88880140cb80c22b02a8ebe4d3e06809ff9baab45382ed` |
+| 5 | `theorem` | [F3Elements_nodup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f3elements-nodup.md) | 34 | `result-track:912cb9c2c9ff2a75051730ada2e016dfab6b636e8075692c268b33d00b216ad7` |
+| 6 | `theorem` | [F3Elements_exhaustive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f3elements-exhaustive.md) | 37 | `result-track:4428438a7983753a86bf0c61b0202ac514c789a3930cbf2610c81d5ff31c1718` |
+| 7 | `def` | [F5Elements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f5elements.md) | 55 | `declaration-track:c727849973b761b6940b89518a59e8b9c739a6e29ae854511551dfc49b6db9bb` |
+| 8 | `theorem` | [F5Elements_nodup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f5elements-nodup.md) | 59 | `result-track:a413b32d05d4716c025901a3e09dc28ebbbb06456e3a1527b9403b70b41606a6` |
+| 9 | `theorem` | [F5Elements_exhaustive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f5elements-exhaustive.md) | 62 | `result-track:074992f4441bfde00854bd61031b82f0270919ca578f7ab72410eaa99e881f0e` |
+| 10 | `def` | [F2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f2.md) | 93 | `declaration-track:24076c83ab95605f27c3bbe2886a9e52446f5506e88c0b810d7b120dd3b17514` |
+| 11 | `def` | [F3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f3.md) | 111 | `declaration-track:a531493abbe0828979597b96cfb42b697114c87c75b2c19d5208389324221b5a` |
+| 12 | `def` | [F5](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/f5.md) | 129 | `declaration-track:1ba5d681fc6595753eaac569babdf3a9c4d8fb51d1352a62173d36186335e6e9` |
+| 13 | `def` | [finiteSumNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteField.lean/declarations/finitesumnat.md) | 147 | `declaration-track:d6a675d87cb6d36735de14678b7425da7ca3cfc64cc460aba72602768a035ab8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

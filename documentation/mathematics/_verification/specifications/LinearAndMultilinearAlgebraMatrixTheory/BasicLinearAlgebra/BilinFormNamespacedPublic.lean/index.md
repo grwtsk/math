@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BilinFormNamespacedPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BilinFormNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BilinFormNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BilinFormNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exteriorPower](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BilinFormNamespacedPublic.lean/declarations/exteriorpower.md) | 42 | `declaration-track:39ed575b5c877e5664165ee78e048024c51f2c9a0e317ce8214442802b9174e0` |
-| 2 | `lemma` | [bilinForm_ιMulti_ιMulti](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BilinFormNamespacedPublic.lean/declarations/bilinform-multi-multi.md) | 45 | `result-track:9d42451d92fe92b50d4967f0cc8f63abb23293feacd647838e8f9d6c17a7eef2` |
-| 3 | `lemma` | [bijective_exteriorPower](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BilinFormNamespacedPublic.lean/declarations/bijective-exteriorpower.md) | 49 | `result-track:536c4552df396a84ae8e9aaf04f716b8ffeb84bf167f2e430eaa109033b45054` |
+| 1 | `def` | [exteriorPower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BilinFormNamespacedPublic.lean/declarations/exteriorpower.md) | 42 | `declaration-track:39ed575b5c877e5664165ee78e048024c51f2c9a0e317ce8214442802b9174e0` |
+| 2 | `lemma` | [bilinForm_ιMulti_ιMulti](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BilinFormNamespacedPublic.lean/declarations/bilinform-multi-multi.md) | 45 | `result-track:9d42451d92fe92b50d4967f0cc8f63abb23293feacd647838e8f9d6c17a7eef2` |
+| 3 | `lemma` | [bijective_exteriorPower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BilinFormNamespacedPublic.lean/declarations/bijective-exteriorpower.md) | 49 | `result-track:536c4552df396a84ae8e9aaf04f716b8ffeb84bf167f2e430eaa109033b45054` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

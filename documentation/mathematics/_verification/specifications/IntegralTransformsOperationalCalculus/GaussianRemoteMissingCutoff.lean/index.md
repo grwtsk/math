@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/GaussianRemoteMissingCutoff.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/GaussianRemoteMissingCutoff.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/GaussianRemoteMissingCutoff.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/GaussianRemoteMissingCutoff.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianRemoteSeminorms`](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianRemoteSeminorms`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianRemoteSeminorms.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../IntegralTransformsOperationalCalculus/GaussianRemoteMissingCutoff.lean/declarations/example.md) | 4 | `declaration-track:71f1a9bc316ed8bd10a4585f3f0e27c864756cb095456f7f44a34a1341abd2fb` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/GaussianRemoteMissingCutoff.lean/declarations/example.md) | 4 | `declaration-track:71f1a9bc316ed8bd10a4585f3f0e27c864756cb095456f7f44a34a1341abd2fb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

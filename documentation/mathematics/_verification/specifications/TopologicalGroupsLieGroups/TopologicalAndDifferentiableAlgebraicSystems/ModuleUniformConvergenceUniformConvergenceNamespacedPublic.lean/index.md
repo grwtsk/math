@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleUniformConvergenceUniformConvergenceNamespacedPublic.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleUniformConvergenceUniformConvergenceNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleUniformConvergenceUniformConvergenceNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleUniformConvergenceUniformConvergenceNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [UniformFun.continuousSMul_induced_of_range_bounded](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleUniformConvergenceUniformConvergenceNamespacedPublic.lean/declarations/uniformfun-continuoussmul-induced-of-range-bounded.md) | 70 | `result-track:d3ec353c117714f9352ace985bbb5e1142030a409bddec1f143824ae75abd533` |
-| 2 | `lemma` | [UniformOnFun.continuousSMul_induced_of_image_bounded](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleUniformConvergenceUniformConvergenceNamespacedPublic.lean/declarations/uniformonfun-continuoussmul-induced-of-image-bounded.md) | 105 | `result-track:4f800d41e469a7f28c30511ae10238c2fc6c98ca3ce836ef43329ed99f9bd00a` |
-| 3 | `theorem` | [UniformOnFun.continuousSMul_submodule_of_image_bounded](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleUniformConvergenceUniformConvergenceNamespacedPublic.lean/declarations/uniformonfun-continuoussmul-submodule-of-image-bounded.md) | 125 | `result-track:f99ec8c1b60158f61c961f5ffad5bc4809a7feb7f3d100379b976c1003a28de5` |
+| 1 | `lemma` | [UniformFun.continuousSMul_induced_of_range_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleUniformConvergenceUniformConvergenceNamespacedPublic.lean/declarations/uniformfun-continuoussmul-induced-of-range-bounded.md) | 70 | `result-track:d3ec353c117714f9352ace985bbb5e1142030a409bddec1f143824ae75abd533` |
+| 2 | `lemma` | [UniformOnFun.continuousSMul_induced_of_image_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleUniformConvergenceUniformConvergenceNamespacedPublic.lean/declarations/uniformonfun-continuoussmul-induced-of-image-bounded.md) | 105 | `result-track:4f800d41e469a7f28c30511ae10238c2fc6c98ca3ce836ef43329ed99f9bd00a` |
+| 3 | `theorem` | [UniformOnFun.continuousSMul_submodule_of_image_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleUniformConvergenceUniformConvergenceNamespacedPublic.lean/declarations/uniformonfun-continuoussmul-submodule-of-image-bounded.md) | 125 | `result-track:f99ec8c1b60158f61c961f5ffad5bc4809a7feb7f3d100379b976c1003a28de5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

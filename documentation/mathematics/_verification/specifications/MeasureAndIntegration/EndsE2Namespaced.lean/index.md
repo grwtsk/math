@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/EndsE2Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/EndsE2Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsE2Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsE2Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [abs_trG2integrand_le](../../../../MeasureAndIntegration/EndsE2Namespaced.lean/declarations/abs-trg2integrand-le.md) | 37 | `result-track:644684f6804856b3a82b6ad888f081f182216bd8869a75471edd249f798e1a2b` |
-| 2 | `def` | [majK2](../../../../MeasureAndIntegration/EndsE2Namespaced.lean/declarations/majk2.md) | 60 | `declaration-track:f14be84b524997de1861a8b31b178ef9804aadb1cd508b9962400139f99572bd` |
-| 3 | `theorem` | [abs_trG2integrand_le_majK2](../../../../MeasureAndIntegration/EndsE2Namespaced.lean/declarations/abs-trg2integrand-le-majk2.md) | 64 | `result-track:52926b3accadcec6525893ba63cdecc102cefef120c7e354d4adb5bd0c3e4f8c` |
-| 4 | `theorem` | [majK2_integrable](../../../../MeasureAndIntegration/EndsE2Namespaced.lean/declarations/majk2-integrable.md) | 68 | `result-track:aa6028226c48e1cdb2781f62cbc56bf198837f33517dc507ae4989470491a8a7` |
-| 5 | `theorem` | [abs_calE2_le_maj](../../../../MeasureAndIntegration/EndsE2Namespaced.lean/declarations/abs-cale2-le-maj.md) | 92 | `result-track:1bcb980b222aa99745f53b113cab00069053782b7549ce62c45aab58cb8d6f2a` |
-| 6 | `theorem` | [setIntegral_compl_sqI_majK2_le](../../../../MeasureAndIntegration/EndsE2Namespaced.lean/declarations/setintegral-compl-sqi-majk2-le.md) | 109 | `result-track:571e0f12f347b408f71e98ff89f97568e7c3e09ed939e2996cde417b152ca76f` |
-| 7 | `theorem` | [calE2_maj_bound](../../../../MeasureAndIntegration/EndsE2Namespaced.lean/declarations/cale2-maj-bound.md) | 274 | `result-track:32a98fd5a95b33fab1c3887e235362220b4ebb07dd1201c26f0604e4e6c138ed` |
-| 8 | `theorem` | [calE2_maj_bound_L](../../../../MeasureAndIntegration/EndsE2Namespaced.lean/declarations/cale2-maj-bound-l.md) | 361 | `result-track:64f9149b35b813555676f7713207b73f2d32f3482706a9359352597ce9ac076f` |
-| 9 | `theorem` | [calE2_bound](../../../../MeasureAndIntegration/EndsE2Namespaced.lean/declarations/cale2-bound.md) | 445 | `result-track:f4239209a04ea2c7f16c56e6fb0cd71d5f31034716854fceaf5401dc80df63ab` |
+| 1 | `theorem` | [abs_trG2integrand_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsE2Namespaced.lean/declarations/abs-trg2integrand-le.md) | 37 | `result-track:644684f6804856b3a82b6ad888f081f182216bd8869a75471edd249f798e1a2b` |
+| 2 | `def` | [majK2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsE2Namespaced.lean/declarations/majk2.md) | 60 | `declaration-track:f14be84b524997de1861a8b31b178ef9804aadb1cd508b9962400139f99572bd` |
+| 3 | `theorem` | [abs_trG2integrand_le_majK2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsE2Namespaced.lean/declarations/abs-trg2integrand-le-majk2.md) | 64 | `result-track:52926b3accadcec6525893ba63cdecc102cefef120c7e354d4adb5bd0c3e4f8c` |
+| 4 | `theorem` | [majK2_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsE2Namespaced.lean/declarations/majk2-integrable.md) | 68 | `result-track:aa6028226c48e1cdb2781f62cbc56bf198837f33517dc507ae4989470491a8a7` |
+| 5 | `theorem` | [abs_calE2_le_maj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsE2Namespaced.lean/declarations/abs-cale2-le-maj.md) | 92 | `result-track:1bcb980b222aa99745f53b113cab00069053782b7549ce62c45aab58cb8d6f2a` |
+| 6 | `theorem` | [setIntegral_compl_sqI_majK2_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsE2Namespaced.lean/declarations/setintegral-compl-sqi-majk2-le.md) | 109 | `result-track:571e0f12f347b408f71e98ff89f97568e7c3e09ed939e2996cde417b152ca76f` |
+| 7 | `theorem` | [calE2_maj_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsE2Namespaced.lean/declarations/cale2-maj-bound.md) | 274 | `result-track:32a98fd5a95b33fab1c3887e235362220b4ebb07dd1201c26f0604e4e6c138ed` |
+| 8 | `theorem` | [calE2_maj_bound_L](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsE2Namespaced.lean/declarations/cale2-maj-bound-l.md) | 361 | `result-track:64f9149b35b813555676f7713207b73f2d32f3482706a9359352597ce9ac076f` |
+| 9 | `theorem` | [calE2_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsE2Namespaced.lean/declarations/cale2-bound.md) | 445 | `result-track:f4239209a04ea2c7f16c56e6fb0cd71d5f31034716854fceaf5401dc80df63ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

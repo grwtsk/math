@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ExtrClosureNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ExtrClosureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsMaxOn.closure](../../../../GeneralTopology/ExtrClosureNamespaced.lean/declarations/ismaxon-closure.md) | 33 | `result-track:b256735cc529f69e971af9311c1e321e4f184c2246bf48f079c4e024b2f0a542` |
-| 2 | `theorem` | [IsMinOn.closure](../../../../GeneralTopology/ExtrClosureNamespaced.lean/declarations/isminon-closure.md) | 37 | `result-track:92500bcd40f295c6cb505a0b7973416de380ff975c41587f37e2c9f52c35b99c` |
-| 3 | `theorem` | [IsExtrOn.closure](../../../../GeneralTopology/ExtrClosureNamespaced.lean/declarations/isextron-closure.md) | 41 | `result-track:1e49cd4651a18c537682ebbbc915de0e14227dd2e3e6c7581ec2625f58d222e9` |
-| 4 | `theorem` | [IsLocalMaxOn.closure](../../../../GeneralTopology/ExtrClosureNamespaced.lean/declarations/islocalmaxon-closure.md) | 45 | `result-track:bee6ca4df1c846d543b885375bdb5f9b181595ec4991fc4cb4b75dd3f019d8b8` |
-| 5 | `theorem` | [IsLocalMinOn.closure](../../../../GeneralTopology/ExtrClosureNamespaced.lean/declarations/islocalminon-closure.md) | 56 | `result-track:093642b8cab1e0c9806c0cbb303477b92c58a40c4efad41878a7178de0c74f41` |
-| 6 | `theorem` | [IsLocalExtrOn.closure](../../../../GeneralTopology/ExtrClosureNamespaced.lean/declarations/islocalextron-closure.md) | 60 | `result-track:d082e2155158c453a2815cbdbaac2f8c0bb6063b2202d29275c1d62d679f722d` |
+| 1 | `theorem` | [IsMaxOn.closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosureNamespaced.lean/declarations/ismaxon-closure.md) | 33 | `result-track:b256735cc529f69e971af9311c1e321e4f184c2246bf48f079c4e024b2f0a542` |
+| 2 | `theorem` | [IsMinOn.closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosureNamespaced.lean/declarations/isminon-closure.md) | 37 | `result-track:92500bcd40f295c6cb505a0b7973416de380ff975c41587f37e2c9f52c35b99c` |
+| 3 | `theorem` | [IsExtrOn.closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosureNamespaced.lean/declarations/isextron-closure.md) | 41 | `result-track:1e49cd4651a18c537682ebbbc915de0e14227dd2e3e6c7581ec2625f58d222e9` |
+| 4 | `theorem` | [IsLocalMaxOn.closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosureNamespaced.lean/declarations/islocalmaxon-closure.md) | 45 | `result-track:bee6ca4df1c846d543b885375bdb5f9b181595ec4991fc4cb4b75dd3f019d8b8` |
+| 5 | `theorem` | [IsLocalMinOn.closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosureNamespaced.lean/declarations/islocalminon-closure.md) | 56 | `result-track:093642b8cab1e0c9806c0cbb303477b92c58a40c4efad41878a7178de0c74f41` |
+| 6 | `theorem` | [IsLocalExtrOn.closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosureNamespaced.lean/declarations/islocalextron-closure.md) | 60 | `result-track:d082e2155158c453a2815cbdbaac2f8c0bb6063b2202d29275c1d62d679f722d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

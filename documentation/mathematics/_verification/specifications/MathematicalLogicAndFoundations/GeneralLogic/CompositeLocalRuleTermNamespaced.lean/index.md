@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [A](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/declarations/a.md) | 22 | `declaration-track:dbbeb7bf2d3359ee0a45a94e03b7410658aab40393e458f4e37e3b7ba5f32b27` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/declarations/example-source-edition-5.md) | 28 | `declaration-track:bce72204e949d2d82127c862e22809181bb208161b239897b0791f77f423c237` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/declarations/example-source-edition-3.md) | 31 | `declaration-track:9beba96faa43f5c5e60c595200dd33c67928350ff7f9b09ab0bcc6194f5fdd42` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/declarations/example-source-edition-2.md) | 34 | `declaration-track:36bec84480e53ea3d9c884c0f8499bb64d3d08df05cd1d3406f440132cebdf66` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/declarations/example.md) | 43 | `declaration-track:1bf6eeea63e5363674eba8b50b9032cb0cfb13af3de38fd7edb9c031fd28a473` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/declarations/example-source-edition-6.md) | 46 | `declaration-track:d7cdbf94e1c80e1c7ce52475cdb909ead4bf8270a24354d21cc0c3f4810feb50` |
-| 7 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/declarations/example-source-edition-7.md) | 53 | `declaration-track:ff663264b78a367212963fd60f319df2972b6aa7235aa0199506721cd0accaf6` |
-| 8 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/declarations/example-source-edition-4.md) | 56 | `declaration-track:bb3c2054b61db4c68eee4f56c3125eaa0eeb44466a34c7d907e44e3f215a65a7` |
+| 1 | `structure` | [A](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/declarations/a.md) | 22 | `declaration-track:dbbeb7bf2d3359ee0a45a94e03b7410658aab40393e458f4e37e3b7ba5f32b27` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/declarations/example-source-edition-5.md) | 28 | `declaration-track:bce72204e949d2d82127c862e22809181bb208161b239897b0791f77f423c237` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/declarations/example-source-edition-3.md) | 31 | `declaration-track:9beba96faa43f5c5e60c595200dd33c67928350ff7f9b09ab0bcc6194f5fdd42` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/declarations/example-source-edition-2.md) | 34 | `declaration-track:36bec84480e53ea3d9c884c0f8499bb64d3d08df05cd1d3406f440132cebdf66` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/declarations/example.md) | 43 | `declaration-track:1bf6eeea63e5363674eba8b50b9032cb0cfb13af3de38fd7edb9c031fd28a473` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/declarations/example-source-edition-6.md) | 46 | `declaration-track:d7cdbf94e1c80e1c7ce52475cdb909ead4bf8270a24354d21cc0c3f4810feb50` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/declarations/example-source-edition-7.md) | 53 | `declaration-track:ff663264b78a367212963fd60f319df2972b6aa7235aa0199506721cd0accaf6` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTermNamespaced.lean/declarations/example-source-edition-4.md) | 56 | `declaration-track:bb3c2054b61db4c68eee4f56c3125eaa0eeb44466a34c7d907e44e3f215a65a7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

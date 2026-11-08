@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PIDNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PIDNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PIDNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PIDNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Ideal.eq_span_singleton_of_mem_of_notMem_sq_of_notMem_prime_ne](../../../../CommutativeAlgebra/PIDNamespaced.lean/declarations/ideal-eq-span-singleton-of-mem-of-notmem-sq-of-notmem-prime-ne.md) | 44 | `result-track:521ba95a439a9d62af0554c9cd991cf43a92f7a1a2ecbe63aae050a30d11d707` |
-| 2 | `theorem` | [FractionalIdeal.isPrincipal_of_unit_of_comap_mul_span_singleton_eq_top](../../../../CommutativeAlgebra/PIDNamespaced.lean/declarations/fractionalideal-isprincipal-of-unit-of-comap-mul-span-singleton-eq-top.md) | 86 | `result-track:820d87232c8551d8630947630feb3836184cde471d9deaf3606b2a8b63fbaa91` |
-| 3 | `theorem` | [FractionalIdeal.isPrincipal.of_finite_maximals_of_inv](../../../../CommutativeAlgebra/PIDNamespaced.lean/declarations/fractionalideal-isprincipal-of-finite-maximals-of-inv.md) | 116 | `result-track:45852eb7c20ee7d2715faf8fdc2be428bebc815b1c1431b3e4849a3188b3c3b9` |
-| 4 | `theorem` | [Ideal.IsPrincipal.of_finite_maximals_of_isUnit](../../../../CommutativeAlgebra/PIDNamespaced.lean/declarations/ideal-isprincipal-of-finite-maximals-of-isunit.md) | 180 | `result-track:525e55e5ceac86b14bfa9ebce6755a7753f89433759f8665caaedc326345be3d` |
-| 5 | `theorem` | [IsPrincipalIdealRing.of_finite_primes](../../../../CommutativeAlgebra/PIDNamespaced.lean/declarations/isprincipalidealring-of-finite-primes.md) | 187 | `result-track:88ed802bca7343c03c5d6d7c0b893ac7cfd40351a3ed850273abca07e7b91018` |
-| 6 | `theorem` | [IsLocalization.OverPrime.mem_normalizedFactors_of_isPrime](../../../../CommutativeAlgebra/PIDNamespaced.lean/declarations/islocalization-overprime-mem-normalizedfactors-of-isprime.md) | 211 | `result-track:6c4a619f0640339aa628612b194bafa90e99701d8b6bfa55f23063a93563e742` |
-| 7 | `theorem` | [IsDedekindDomain.isPrincipalIdealRing_localization_over_prime](../../../../CommutativeAlgebra/PIDNamespaced.lean/declarations/isdedekinddomain-isprincipalidealring-localization-over-prime.md) | 251 | `result-track:e0e19eaa4b5b25bd4a61f61d0b8c68680d799abc6f827241a7c1a39e12746d6d` |
+| 1 | `theorem` | [Ideal.eq_span_singleton_of_mem_of_notMem_sq_of_notMem_prime_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PIDNamespaced.lean/declarations/ideal-eq-span-singleton-of-mem-of-notmem-sq-of-notmem-prime-ne.md) | 44 | `result-track:521ba95a439a9d62af0554c9cd991cf43a92f7a1a2ecbe63aae050a30d11d707` |
+| 2 | `theorem` | [FractionalIdeal.isPrincipal_of_unit_of_comap_mul_span_singleton_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PIDNamespaced.lean/declarations/fractionalideal-isprincipal-of-unit-of-comap-mul-span-singleton-eq-top.md) | 86 | `result-track:820d87232c8551d8630947630feb3836184cde471d9deaf3606b2a8b63fbaa91` |
+| 3 | `theorem` | [FractionalIdeal.isPrincipal.of_finite_maximals_of_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PIDNamespaced.lean/declarations/fractionalideal-isprincipal-of-finite-maximals-of-inv.md) | 116 | `result-track:45852eb7c20ee7d2715faf8fdc2be428bebc815b1c1431b3e4849a3188b3c3b9` |
+| 4 | `theorem` | [Ideal.IsPrincipal.of_finite_maximals_of_isUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PIDNamespaced.lean/declarations/ideal-isprincipal-of-finite-maximals-of-isunit.md) | 180 | `result-track:525e55e5ceac86b14bfa9ebce6755a7753f89433759f8665caaedc326345be3d` |
+| 5 | `theorem` | [IsPrincipalIdealRing.of_finite_primes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PIDNamespaced.lean/declarations/isprincipalidealring-of-finite-primes.md) | 187 | `result-track:88ed802bca7343c03c5d6d7c0b893ac7cfd40351a3ed850273abca07e7b91018` |
+| 6 | `theorem` | [IsLocalization.OverPrime.mem_normalizedFactors_of_isPrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PIDNamespaced.lean/declarations/islocalization-overprime-mem-normalizedfactors-of-isprime.md) | 211 | `result-track:6c4a619f0640339aa628612b194bafa90e99701d8b6bfa55f23063a93563e742` |
+| 7 | `theorem` | [IsDedekindDomain.isPrincipalIdealRing_localization_over_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PIDNamespaced.lean/declarations/isdedekinddomain-isprincipalidealring-localization-over-prime.md) | 251 | `result-track:e0e19eaa4b5b25bd4a61f61d0b8c68680d799abc6f827241a7c1a39e12746d6d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

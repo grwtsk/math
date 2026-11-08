@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/TransportInvarianceRodgersTaoKIndexTransport.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/TransportInvarianceRodgersTaoKIndexTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TransportInvarianceRodgersTaoKIndexTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TransportInvarianceRodgersTaoKIndexTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RodgersTaoKIndexTransport](../../../../ProbabilityTheoryAndStochasticProcesses/TransportInvarianceRodgersTaoKIndexTransport.lean/declarations/rodgerstaokindextransport.md) | 26 | `declaration-track:0ae98bb38ba8c001bcca5c68b5c81d5a4f147f0951a88979680517d1e98297c4` |
-| 2 | `theorem` | [rodgers_tao_transport_is_quasi_isomorphism](../../../../ProbabilityTheoryAndStochasticProcesses/TransportInvarianceRodgersTaoKIndexTransport.lean/declarations/rodgers-tao-transport-is-quasi-isomorphism.md) | 35 | `result-track:c783fe38f0e17d97bf15efcc639829c1ef633147f6f101ef7bbedf4bdd7b5deb` |
-| 3 | `theorem` | [rodgers_tao_transport_preserves_euler](../../../../ProbabilityTheoryAndStochasticProcesses/TransportInvarianceRodgersTaoKIndexTransport.lean/declarations/rodgers-tao-transport-preserves-euler.md) | 41 | `result-track:9f48c927ff5d42cabbc9a8980513130f1f691b58b7ad9b181ebaa4e817464b16` |
-| 4 | `theorem` | [rodgers_tao_transport_preserves_k_index](../../../../ProbabilityTheoryAndStochasticProcesses/TransportInvarianceRodgersTaoKIndexTransport.lean/declarations/rodgers-tao-transport-preserves-k-index.md) | 48 | `result-track:314a76676a40998be8bbc6fbd68ad808349f1741cf4ca910940ba23b06711bb7` |
+| 1 | `structure` | [RodgersTaoKIndexTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TransportInvarianceRodgersTaoKIndexTransport.lean/declarations/rodgerstaokindextransport.md) | 26 | `declaration-track:0ae98bb38ba8c001bcca5c68b5c81d5a4f147f0951a88979680517d1e98297c4` |
+| 2 | `theorem` | [rodgers_tao_transport_is_quasi_isomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TransportInvarianceRodgersTaoKIndexTransport.lean/declarations/rodgers-tao-transport-is-quasi-isomorphism.md) | 35 | `result-track:c783fe38f0e17d97bf15efcc639829c1ef633147f6f101ef7bbedf4bdd7b5deb` |
+| 3 | `theorem` | [rodgers_tao_transport_preserves_euler](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TransportInvarianceRodgersTaoKIndexTransport.lean/declarations/rodgers-tao-transport-preserves-euler.md) | 41 | `result-track:9f48c927ff5d42cabbc9a8980513130f1f691b58b7ad9b181ebaa4e817464b16` |
+| 4 | `theorem` | [rodgers_tao_transport_preserves_k_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TransportInvarianceRodgersTaoKIndexTransport.lean/declarations/rodgers-tao-transport-preserves-k-index.md) | 48 | `result-track:314a76676a40998be8bbc6fbd68ad808349f1741cf4ca910940ba23b06711bb7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

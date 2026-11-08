@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CompactSupportContact.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CompactSupportContact.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactSupportContact.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactSupportContact.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [closedProfile](../../../../MeasureAndIntegration/CompactSupportContact.lean/declarations/closedprofile.md) | 29 | `declaration-track:37efd059edb084b4eb2e73a989634001988df3ba2b93ed2999e38a6990993f76` |
-| 2 | `theorem` | [correlation_zero_of_shift_ge_width](../../../../MeasureAndIntegration/CompactSupportContact.lean/declarations/correlation-zero-of-shift-ge-width.md) | 32 | `result-track:2cd582187b52884345b8c50a23f91880217fe15f2979ca14370fcc93caacfe9f` |
-| 3 | `theorem` | [short_overlap_product_nonneg](../../../../MeasureAndIntegration/CompactSupportContact.lean/declarations/short-overlap-product-nonneg.md) | 48 | `result-track:5f416a3cdc24eeefff1177097442ab1c2cecffdb93ae763efc344f0626eee6ae` |
-| 4 | `theorem` | [overlap_product_lower_bound](../../../../MeasureAndIntegration/CompactSupportContact.lean/declarations/overlap-product-lower-bound.md) | 66 | `result-track:a4c55d6ab370cc2481dd631d9a42613e92908089874f99e02463061b4364d8b4` |
-| 5 | `theorem` | [positive_traces_eventual_overlap_lower_bound](../../../../MeasureAndIntegration/CompactSupportContact.lean/declarations/positive-traces-eventual-overlap-lower-bound.md) | 100 | `result-track:9cab9ea19cec67c7366f739150a17e47c1cfd8e7fed3dc48e418832b4298b0fe` |
+| 1 | `def` | [closedProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactSupportContact.lean/declarations/closedprofile.md) | 29 | `declaration-track:37efd059edb084b4eb2e73a989634001988df3ba2b93ed2999e38a6990993f76` |
+| 2 | `theorem` | [correlation_zero_of_shift_ge_width](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactSupportContact.lean/declarations/correlation-zero-of-shift-ge-width.md) | 32 | `result-track:2cd582187b52884345b8c50a23f91880217fe15f2979ca14370fcc93caacfe9f` |
+| 3 | `theorem` | [short_overlap_product_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactSupportContact.lean/declarations/short-overlap-product-nonneg.md) | 48 | `result-track:5f416a3cdc24eeefff1177097442ab1c2cecffdb93ae763efc344f0626eee6ae` |
+| 4 | `theorem` | [overlap_product_lower_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactSupportContact.lean/declarations/overlap-product-lower-bound.md) | 66 | `result-track:a4c55d6ab370cc2481dd631d9a42613e92908089874f99e02463061b4364d8b4` |
+| 5 | `theorem` | [positive_traces_eventual_overlap_lower_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactSupportContact.lean/declarations/positive-traces-eventual-overlap-lower-bound.md) | 100 | `result-track:9cab9ea19cec67c7366f739150a17e47c1cfd8e7fed3dc48e418832b4298b0fe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

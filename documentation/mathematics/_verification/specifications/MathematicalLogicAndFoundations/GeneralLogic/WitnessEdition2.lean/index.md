@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WitnessEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WitnessEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WitnessEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WitnessEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CollapseWitness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WitnessEdition2.lean/declarations/collapsewitness.md) | 9 | `declaration-track:fcf2ae7eb3eba0e41acc9d71abce9d41a428ed14a2a69f8b766bc135af8b35b3` |
-| 2 | `def` | [CollapseWitness.Valid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WitnessEdition2.lean/declarations/collapsewitness-valid.md) | 26 | `declaration-track:73acbef7d15703221a299df7cc6cc58634097a1821174dec9a8d5f974ae25d2e` |
+| 1 | `structure` | [CollapseWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WitnessEdition2.lean/declarations/collapsewitness.md) | 9 | `declaration-track:fcf2ae7eb3eba0e41acc9d71abce9d41a428ed14a2a69f8b766bc135af8b35b3` |
+| 2 | `def` | [CollapseWitness.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WitnessEdition2.lean/declarations/collapsewitness-valid.md) | 26 | `declaration-track:73acbef7d15703221a299df7cc6cc58634097a1821174dec9a8d5f974ae25d2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

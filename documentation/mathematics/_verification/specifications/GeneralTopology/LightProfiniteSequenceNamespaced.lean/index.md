@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LightProfiniteSequenceNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/LightProfiniteSequenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteSequenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteSequenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [natUnionInftyEmbedding](../../../../GeneralTopology/LightProfiniteSequenceNamespaced.lean/declarations/natunioninftyembedding.md) | 29 | `declaration-track:31208547fdaf86847600427cbb5f1bc1cd9c59405c42bb58a6230606fbd2decf` |
-| 2 | `lemma` | [isClosedEmbedding_natUnionInftyEmbedding](../../../../GeneralTopology/LightProfiniteSequenceNamespaced.lean/declarations/isclosedembedding-natunioninftyembedding.md) | 40 | `result-track:ee833bf8268a18bf6974d92716c88c2262e0d1c8cffa99eb64e308889b56fb8f` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/LightProfiniteSequenceNamespaced.lean/declarations/instance-source-edition-2.md) | 56 | `declaration-track:971e9ab634ad95203068ce98981562a562769cf4f9c6b71f2b6c2fe5846a0538` |
-| 4 | `abbrev` | [NatUnionInfty](../../../../GeneralTopology/LightProfiniteSequenceNamespaced.lean/declarations/natunioninfty.md) | 59 | `declaration-track:6007557acbfae657ffdf6855fc6b9ff2a34a7dfe934617bfe36d757147043a32` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/LightProfiniteSequenceNamespaced.lean/declarations/instance.md) | 64 | `declaration-track:200385e0f1759321c87df45f42f6deca391ae78e16eec1aea61c843cab90b746` |
-| 6 | `lemma` | [continuous_iff_convergent](../../../../GeneralTopology/LightProfiniteSequenceNamespaced.lean/declarations/continuous-iff-convergent.md) | 68 | `result-track:b31fa94ca300837f03de1043e0613e6aa0b7cdd642ec0a59542165f59a5efa1c` |
+| 1 | `def` | [natUnionInftyEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteSequenceNamespaced.lean/declarations/natunioninftyembedding.md) | 29 | `declaration-track:31208547fdaf86847600427cbb5f1bc1cd9c59405c42bb58a6230606fbd2decf` |
+| 2 | `lemma` | [isClosedEmbedding_natUnionInftyEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteSequenceNamespaced.lean/declarations/isclosedembedding-natunioninftyembedding.md) | 40 | `result-track:ee833bf8268a18bf6974d92716c88c2262e0d1c8cffa99eb64e308889b56fb8f` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteSequenceNamespaced.lean/declarations/instance-source-edition-2.md) | 56 | `declaration-track:971e9ab634ad95203068ce98981562a562769cf4f9c6b71f2b6c2fe5846a0538` |
+| 4 | `abbrev` | [NatUnionInfty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteSequenceNamespaced.lean/declarations/natunioninfty.md) | 59 | `declaration-track:6007557acbfae657ffdf6855fc6b9ff2a34a7dfe934617bfe36d757147043a32` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteSequenceNamespaced.lean/declarations/instance.md) | 64 | `declaration-track:200385e0f1759321c87df45f42f6deca391ae78e16eec1aea61c843cab90b746` |
+| 6 | `lemma` | [continuous_iff_convergent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteSequenceNamespaced.lean/declarations/continuous-iff-convergent.md) | 68 | `result-track:b31fa94ca300837f03de1043e0613e6aa0b7cdd642ec0a59542165f59a5efa1c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

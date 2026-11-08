@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixStorageFixturesNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixStorageFixturesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixStorageFixturesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixStorageFixturesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [wraparound_difference_is_not_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixStorageFixturesNamespaced.lean/declarations/wraparound-difference-is-not-zero.md) | 21 | `result-track:d6ef3997d4bbddec1f6495698319fec6f372a6ce546dd04b0c286399cfd7b24c` |
-| 2 | `theorem` | [actual_signed_prefix_mean_two_nonzero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixStorageFixturesNamespaced.lean/declarations/actual-signed-prefix-mean-two-nonzero.md) | 25 | `result-track:a14f304d68cee8aee1a766ae4d77850749d2e4d79a41ca56e938758038c4ea83` |
-| 3 | `theorem` | [mean_cannot_be_erased_from_divisor_prefix](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixStorageFixturesNamespaced.lean/declarations/mean-cannot-be-erased-from-divisor-prefix.md) | 30 | `result-track:d58abb9d284b89c8fc80369ebc24a3e299dc934534fa22f263d2218cff355425` |
-| 4 | `theorem` | [lower_abel_endpoint_cannot_be_erased](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixStorageFixturesNamespaced.lean/declarations/lower-abel-endpoint-cannot-be-erased.md) | 34 | `result-track:612a9d8632017274d9d0bfad50fdd0dd9efba763e4bed742fcde22e10ee268d8` |
+| 1 | `theorem` | [wraparound_difference_is_not_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixStorageFixturesNamespaced.lean/declarations/wraparound-difference-is-not-zero.md) | 21 | `result-track:d6ef3997d4bbddec1f6495698319fec6f372a6ce546dd04b0c286399cfd7b24c` |
+| 2 | `theorem` | [actual_signed_prefix_mean_two_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixStorageFixturesNamespaced.lean/declarations/actual-signed-prefix-mean-two-nonzero.md) | 25 | `result-track:a14f304d68cee8aee1a766ae4d77850749d2e4d79a41ca56e938758038c4ea83` |
+| 3 | `theorem` | [mean_cannot_be_erased_from_divisor_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixStorageFixturesNamespaced.lean/declarations/mean-cannot-be-erased-from-divisor-prefix.md) | 30 | `result-track:d58abb9d284b89c8fc80369ebc24a3e299dc934534fa22f263d2218cff355425` |
+| 4 | `theorem` | [lower_abel_endpoint_cannot_be_erased](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixStorageFixturesNamespaced.lean/declarations/lower-abel-endpoint-cannot-be-erased.md) | 34 | `result-track:612a9d8632017274d9d0bfad50fdd0dd9efba763e4bed742fcde22e10ee268d8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

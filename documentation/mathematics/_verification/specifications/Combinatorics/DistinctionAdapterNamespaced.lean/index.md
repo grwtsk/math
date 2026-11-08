@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DistinctionAdapterNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/DistinctionAdapterNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DistinctionAdapterNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DistinctionAdapterNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DistinctionCoordinate](../../../../Combinatorics/DistinctionAdapterNamespaced.lean/declarations/distinctioncoordinate.md) | 21 | `declaration-track:12e41bee7bb9ef3e93d512fe566d57fd4a50f4fff9bdbd20689ce993a12bfd10` |
-| 2 | `structure` | [DistinctionRegistry](../../../../Combinatorics/DistinctionAdapterNamespaced.lean/declarations/distinctionregistry.md) | 34 | `declaration-track:019f2c9b61e35f8631a67a70f7c14225b6504a471d4c05cb1e438ba7865a9b58` |
-| 3 | `structure` | [PresentationRefinementStep](../../../../Combinatorics/DistinctionAdapterNamespaced.lean/declarations/presentationrefinementstep.md) | 41 | `declaration-track:000aa8ea72da59e6d6e6a3042d4698935fb75935a473b768cd28117a5b0b7be4` |
-| 4 | `structure` | [PresentationRefinementChain](../../../../Combinatorics/DistinctionAdapterNamespaced.lean/declarations/presentationrefinementchain.md) | 47 | `declaration-track:58c467582da008ef28f32f498ec93990332c754a1c91612fc985d03afa1be24c` |
-| 5 | `def` | [presentation_refinement_step_changes_one_coordinate](../../../../Combinatorics/DistinctionAdapterNamespaced.lean/declarations/presentation-refinement-step-changes-one-coordinate.md) | 58 | `declaration-track:e3bbecc3cc65f4c8211bc650dc627f760d78e44c7551c840074e08f27edc68a6` |
+| 1 | `structure` | [DistinctionCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DistinctionAdapterNamespaced.lean/declarations/distinctioncoordinate.md) | 21 | `declaration-track:12e41bee7bb9ef3e93d512fe566d57fd4a50f4fff9bdbd20689ce993a12bfd10` |
+| 2 | `structure` | [DistinctionRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DistinctionAdapterNamespaced.lean/declarations/distinctionregistry.md) | 34 | `declaration-track:019f2c9b61e35f8631a67a70f7c14225b6504a471d4c05cb1e438ba7865a9b58` |
+| 3 | `structure` | [PresentationRefinementStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DistinctionAdapterNamespaced.lean/declarations/presentationrefinementstep.md) | 41 | `declaration-track:000aa8ea72da59e6d6e6a3042d4698935fb75935a473b768cd28117a5b0b7be4` |
+| 4 | `structure` | [PresentationRefinementChain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DistinctionAdapterNamespaced.lean/declarations/presentationrefinementchain.md) | 47 | `declaration-track:58c467582da008ef28f32f498ec93990332c754a1c91612fc985d03afa1be24c` |
+| 5 | `def` | [presentation_refinement_step_changes_one_coordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DistinctionAdapterNamespaced.lean/declarations/presentation-refinement-step-changes-one-coordinate.md) | 58 | `declaration-track:e3bbecc3cc65f4c8211bc650dc627f760d78e44c7551c840074e08f27edc68a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

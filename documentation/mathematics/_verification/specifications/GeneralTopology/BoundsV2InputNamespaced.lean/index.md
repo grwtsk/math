@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/BoundsV2InputNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/BoundsV2InputNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundsV2InputNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundsV2InputNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../GeneralTopology/BoundsV2InputNamespaced.lean/declarations/example-source-edition-2.md) | 18 | `declaration-track:3514ff7ef7a62f786d3efd7cb008fbda622c1928330a5448a6c2b99312404430` |
-| 2 | `example` | [(anonymous)](../../../../GeneralTopology/BoundsV2InputNamespaced.lean/declarations/example-source-edition-3.md) | 26 | `declaration-track:4f7ea3b0a7772f38ecaf32ae20f88c1cad5c4805d2f892558c6fe44404138781` |
-| 3 | `example` | [(anonymous)](../../../../GeneralTopology/BoundsV2InputNamespaced.lean/declarations/example.md) | 37 | `declaration-track:003aff4d39978a471c25595ba0c970b683fe95b494b91d60eaf57bcba692b92b` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundsV2InputNamespaced.lean/declarations/example-source-edition-2.md) | 18 | `declaration-track:3514ff7ef7a62f786d3efd7cb008fbda622c1928330a5448a6c2b99312404430` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundsV2InputNamespaced.lean/declarations/example-source-edition-3.md) | 26 | `declaration-track:4f7ea3b0a7772f38ecaf32ae20f88c1cad5c4805d2f892558c6fe44404138781` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundsV2InputNamespaced.lean/declarations/example.md) | 37 | `declaration-track:003aff4d39978a471c25595ba0c970b683fe95b494b91d60eaf57bcba692b92b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

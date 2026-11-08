@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SymmetrySourceEdition1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SymmetrySourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SymmetrySourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SymmetrySourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteSymmetryGroup](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SymmetrySourceEdition1.lean/declarations/finitesymmetrygroup.md) | 5 | `declaration-track:c3704e731e81fbfe60f327cfff72fcf7fb4852cd020bc8e9ced642b30fc59df7` |
-| 2 | `structure` | [FiberTwist](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SymmetrySourceEdition1.lean/declarations/fibertwist.md) | 12 | `declaration-track:d04193164c11a83407f740af3f4724a3e8eadd90d27d94787223506972bc17f3` |
-| 3 | `theorem` | [finiteSymmetryGroup_requires_laws](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SymmetrySourceEdition1.lean/declarations/finitesymmetrygroup-requires-laws.md) | 18 | `result-track:d60bf590d5d051399b12a525cb7725407fa8aa0b4925f5a82873ca1f988cd4df` |
-| 4 | `theorem` | [fiberTwist_requires_action_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SymmetrySourceEdition1.lean/declarations/fibertwist-requires-action-sound.md) | 24 | `result-track:45f8c0080a860af99dcb35f4f34a79a089784a42e462b5914ba04d0d800c6c88` |
+| 1 | `structure` | [FiniteSymmetryGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SymmetrySourceEdition1.lean/declarations/finitesymmetrygroup.md) | 5 | `declaration-track:c3704e731e81fbfe60f327cfff72fcf7fb4852cd020bc8e9ced642b30fc59df7` |
+| 2 | `structure` | [FiberTwist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SymmetrySourceEdition1.lean/declarations/fibertwist.md) | 12 | `declaration-track:d04193164c11a83407f740af3f4724a3e8eadd90d27d94787223506972bc17f3` |
+| 3 | `theorem` | [finiteSymmetryGroup_requires_laws](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SymmetrySourceEdition1.lean/declarations/finitesymmetrygroup-requires-laws.md) | 18 | `result-track:d60bf590d5d051399b12a525cb7725407fa8aa0b4925f5a82873ca1f988cd4df` |
+| 4 | `theorem` | [fiberTwist_requires_action_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SymmetrySourceEdition1.lean/declarations/fibertwist-requires-action-sound.md) | 24 | `result-track:45f8c0080a860af99dcb35f4f34a79a089784a42e462b5914ba04d0d800c6c88` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

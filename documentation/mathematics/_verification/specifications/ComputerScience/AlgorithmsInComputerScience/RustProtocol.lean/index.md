@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RustProtocol.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RustProtocol.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RustProtocol.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RustProtocol.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RustIncrementalRequestFrame](../../../../../ComputerScience/AlgorithmsInComputerScience/RustProtocol.lean/declarations/rustincrementalrequestframe.md) | 6 | `declaration-track:f93e5d476521f94315f1cf347a15d171badbea6d0ded565deb9ce7d415d40f59` |
-| 2 | `structure` | [RustIncrementalResultFrame](../../../../../ComputerScience/AlgorithmsInComputerScience/RustProtocol.lean/declarations/rustincrementalresultframe.md) | 16 | `declaration-track:4b485d2ee8a11d627392461f5595076f1bd5c2f3ff15096474613dcc24cac907` |
-| 3 | `theorem` | [rustIncrementalResult_is_transport_not_authority](../../../../../ComputerScience/AlgorithmsInComputerScience/RustProtocol.lean/declarations/rustincrementalresult-is-transport-not-authority.md) | 26 | `result-track:46a304c16d9d3b92fd7fbe64fd6de53056fa2ade36331622224b7318d9626a40` |
+| 1 | `structure` | [RustIncrementalRequestFrame](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RustProtocol.lean/declarations/rustincrementalrequestframe.md) | 6 | `declaration-track:f93e5d476521f94315f1cf347a15d171badbea6d0ded565deb9ce7d415d40f59` |
+| 2 | `structure` | [RustIncrementalResultFrame](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RustProtocol.lean/declarations/rustincrementalresultframe.md) | 16 | `declaration-track:4b485d2ee8a11d627392461f5595076f1bd5c2f3ff15096474613dcc24cac907` |
+| 3 | `theorem` | [rustIncrementalResult_is_transport_not_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RustProtocol.lean/declarations/rustincrementalresult-is-transport-not-authority.md) | 26 | `result-track:46a304c16d9d3b92fd7fbe64fd6de53056fa2ade36331622224b7318d9626a40` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

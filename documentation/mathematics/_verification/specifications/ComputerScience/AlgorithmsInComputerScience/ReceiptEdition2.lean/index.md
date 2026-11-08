@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptEdition2.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Receipt](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptEdition2.lean/declarations/receipt.md) | 9 | `declaration-track:dda2e7879e0d1dc4a4efbc4f2e74b2cea5a37ac8ffa1ce3eb7caa1297ff38871` |
-| 2 | `def` | [Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptEdition2.lean/declarations/valid.md) | 31 | `declaration-track:3625395734f3eece416c1f79568495e4ffb4a062089b5e2bc306fb923023a0f2` |
-| 3 | `structure` | [DyadicVector](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptEdition2.lean/declarations/dyadicvector.md) | 51 | `declaration-track:ea36fef489e6771a53a24a5c7f6e039e69311911935e825c290807e895404947` |
-| 4 | `def` | [ValidFor](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptEdition2.lean/declarations/validfor.md) | 61 | `declaration-track:c74174939566a59a9446de2a49c0163d65e3024a0c6c59d53456d19fd880e111` |
-| 5 | `structure` | [Snapshot](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptEdition2.lean/declarations/snapshot.md) | 70 | `declaration-track:7dce6b3915f4c65e6651adaa1ccad8b959ec69a6e103c32d047297e599669f0c` |
-| 6 | `def` | [Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptEdition2.lean/declarations/valid-source-edition-2.md) | 79 | `declaration-track:928aefcc33baf89309129ef3f38f8f51a3c1185ef76bab0ee935a43c4a77d17b` |
+| 1 | `structure` | [Receipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptEdition2.lean/declarations/receipt.md) | 9 | `declaration-track:dda2e7879e0d1dc4a4efbc4f2e74b2cea5a37ac8ffa1ce3eb7caa1297ff38871` |
+| 2 | `def` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptEdition2.lean/declarations/valid.md) | 31 | `declaration-track:3625395734f3eece416c1f79568495e4ffb4a062089b5e2bc306fb923023a0f2` |
+| 3 | `structure` | [DyadicVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptEdition2.lean/declarations/dyadicvector.md) | 51 | `declaration-track:ea36fef489e6771a53a24a5c7f6e039e69311911935e825c290807e895404947` |
+| 4 | `def` | [ValidFor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptEdition2.lean/declarations/validfor.md) | 61 | `declaration-track:c74174939566a59a9446de2a49c0163d65e3024a0c6c59d53456d19fd880e111` |
+| 5 | `structure` | [Snapshot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptEdition2.lean/declarations/snapshot.md) | 70 | `declaration-track:7dce6b3915f4c65e6651adaa1ccad8b959ec69a6e103c32d047297e599669f0c` |
+| 6 | `def` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptEdition2.lean/declarations/valid-source-edition-2.md) | 79 | `declaration-track:928aefcc33baf89309129ef3f38f8f51a3c1185ef76bab0ee935a43c4a77d17b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

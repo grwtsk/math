@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimitiveDirichletCharacter](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/declarations/primitivedirichletcharacter.md) | 37 | `declaration-track:2558f0baed891b504e2791da6e667a99ebe464c3f9a2438c538d2108a1d2fafe` |
-| 2 | `def` | [parityExponent](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/declarations/parityexponent.md) | 48 | `declaration-track:6b78c8211710f20a09253ce4e70c3d38bb9e64bcf89dbf2b8058c6c3740cbfdf` |
-| 3 | `theorem` | [parityExponent_lt_two](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/declarations/parityexponent-lt-two.md) | 50 | `result-track:a34d635f292ef4db77cb216ac49eb85b201a3bffa5666fb553208bdf548ac74d` |
-| 4 | `def` | [conjugate](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/declarations/conjugate.md) | 55 | `declaration-track:094389845cb7ebbb17abfabffc91f76c2a7805e067c33fc3976d45bc4c8fe0fe` |
-| 5 | `theorem` | [conjugate_conductor](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/declarations/conjugate-conductor.md) | 73 | `result-track:91cda1b902f63a2bc850e25310c081e26e72a4b2b56cd16fc25d6a17d5faac6c` |
-| 6 | `theorem` | [conjugate_parity](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/declarations/conjugate-parity.md) | 78 | `result-track:26beaee2095e49d725dfd49c0680c18e20f778dd6130cc7df5b26eb0ba5c61e4` |
-| 7 | `theorem` | [conjugate_character](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/declarations/conjugate-character.md) | 83 | `result-track:346e816a66b239c89d36878fa9cae54c6fec83bb882fdff46b0f286fd4d6c26a` |
-| 8 | `theorem` | [conjugate_conjugate](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/declarations/conjugate-conjugate.md) | 88 | `result-track:ced8313736a3ed3cc198173db964349af9bdd01f6a7d535ae3e847697cf33709` |
+| 1 | `structure` | [PrimitiveDirichletCharacter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/declarations/primitivedirichletcharacter.md) | 37 | `declaration-track:2558f0baed891b504e2791da6e667a99ebe464c3f9a2438c538d2108a1d2fafe` |
+| 2 | `def` | [parityExponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/declarations/parityexponent.md) | 48 | `declaration-track:6b78c8211710f20a09253ce4e70c3d38bb9e64bcf89dbf2b8058c6c3740cbfdf` |
+| 3 | `theorem` | [parityExponent_lt_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/declarations/parityexponent-lt-two.md) | 50 | `result-track:a34d635f292ef4db77cb216ac49eb85b201a3bffa5666fb553208bdf548ac74d` |
+| 4 | `def` | [conjugate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/declarations/conjugate.md) | 55 | `declaration-track:094389845cb7ebbb17abfabffc91f76c2a7805e067c33fc3976d45bc4c8fe0fe` |
+| 5 | `theorem` | [conjugate_conductor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/declarations/conjugate-conductor.md) | 73 | `result-track:91cda1b902f63a2bc850e25310c081e26e72a4b2b56cd16fc25d6a17d5faac6c` |
+| 6 | `theorem` | [conjugate_parity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/declarations/conjugate-parity.md) | 78 | `result-track:26beaee2095e49d725dfd49c0680c18e20f778dd6130cc7df5b26eb0ba5c61e4` |
+| 7 | `theorem` | [conjugate_character](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/declarations/conjugate-character.md) | 83 | `result-track:346e816a66b239c89d36878fa9cae54c6fec83bb882fdff46b0f286fd4d6c26a` |
+| 8 | `theorem` | [conjugate_conjugate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PrimitiveCharacterProfileAndConjugation.lean/declarations/conjugate-conjugate.md) | 88 | `result-track:ced8313736a3ed3cc198173db964349af9bdd01f6a7d535ae3e847697cf33709` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

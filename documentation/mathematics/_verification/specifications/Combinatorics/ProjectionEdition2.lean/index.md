@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ProjectionEdition2.lean/index.md) · [Full source](../../../../Combinatorics/ProjectionEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProjectionEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProjectionEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [MultipleInheritancePolicy](../../../../Combinatorics/ProjectionEdition2.lean/declarations/multipleinheritancepolicy.md) | 14 | `declaration-track:a6d28b20fa057152aba28c44ffabf5c0cccfdd41c55e30a545829d755568aa67` |
-| 2 | `structure` | [NavigationProjection](../../../../Combinatorics/ProjectionEdition2.lean/declarations/navigationprojection.md) | 20 | `declaration-track:824c901fe053da2aa16682a52a502047c5a747a64295fe08e38c834ac4fc7108` |
+| 1 | `inductive` | [MultipleInheritancePolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProjectionEdition2.lean/declarations/multipleinheritancepolicy.md) | 14 | `declaration-track:a6d28b20fa057152aba28c44ffabf5c0cccfdd41c55e30a545829d755568aa67` |
+| 2 | `structure` | [NavigationProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProjectionEdition2.lean/declarations/navigationprojection.md) | 20 | `declaration-track:824c901fe053da2aa16682a52a502047c5a747a64295fe08e38c834ac4fc7108` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

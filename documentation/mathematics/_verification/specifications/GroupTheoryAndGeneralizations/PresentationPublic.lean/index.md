@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/PresentationPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/PresentationPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentationPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentationPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Group.Presentation](../../../../GroupTheoryAndGeneralizations/PresentationPublic.lean/declarations/group-presentation.md) | 50 | `declaration-track:0853f2358909cb6f3495ac5a7d934909824fd211a432d42f60727c96b97a88ce` |
-| 2 | `def` | [ofFreeGroupHom](../../../../GroupTheoryAndGeneralizations/PresentationPublic.lean/declarations/offreegrouphom.md) | 63 | `declaration-track:b3ca837bacd6f927d6b8a2a76ce2b8bb8975ea7ebeb46a5a7abec61ea3e9ee94` |
-| 3 | `lemma` | [ofFreeGroupHom_toGenerators](../../../../GroupTheoryAndGeneralizations/PresentationPublic.lean/declarations/offreegrouphom-togenerators.md) | 70 | `result-track:4c30ec5c1ed0ff2460ad1079ce0edd53c6a70c71f50c488fda3e0a92273bf2c8` |
-| 4 | `lemma` | [ker_lift](../../../../GroupTheoryAndGeneralizations/PresentationPublic.lean/declarations/ker-lift.md) | 75 | `result-track:c7a42a3d75d242497aaa2ee796a10183d4e5ae3d69b6e3679a5fbd0237cbd4f1` |
-| 5 | `theorem` | [lift_rel_eq_one](../../../../GroupTheoryAndGeneralizations/PresentationPublic.lean/declarations/lift-rel-eq-one.md) | 79 | `result-track:15a3efd0a72d5a4fbdb24ad3d6adbb358dd2f22b8480eb23cd5ea9b371165984` |
-| 6 | `lemma` | [isFinitelyNormallyGenerated_ker_lift](../../../../GroupTheoryAndGeneralizations/PresentationPublic.lean/declarations/isfinitelynormallygenerated-ker-lift.md) | 83 | `result-track:da88ffb2a27e9e352b1f87c37ef74656bef8774a8aedc8821a7e9b105d6b8ef9` |
-| 7 | `def` | [presentedGroupEquiv](../../../../GroupTheoryAndGeneralizations/PresentationPublic.lean/declarations/presentedgroupequiv.md) | 87 | `declaration-track:637c91377c215111171972c5ef2d6c3ff48cb5e7498ba67fb43693e18c92bc57` |
-| 8 | `theorem` | [isFinitelyPresented](../../../../GroupTheoryAndGeneralizations/PresentationPublic.lean/declarations/isfinitelypresented.md) | 92 | `result-track:973dc17a3b62045434248e87e62608f194d59f8b2e7588e5603c4002113a0c8f` |
-| 9 | `theorem` | [isFinitelyPresented_iff_exists_finite_presentation](../../../../GroupTheoryAndGeneralizations/PresentationPublic.lean/declarations/isfinitelypresented-iff-exists-finite-presentation.md) | 97 | `result-track:91438f21f77b681ebdc225309ae4c21a93fd149ffd67b0e909a96c3ddf137206` |
+| 1 | `structure` | [Group.Presentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentationPublic.lean/declarations/group-presentation.md) | 50 | `declaration-track:0853f2358909cb6f3495ac5a7d934909824fd211a432d42f60727c96b97a88ce` |
+| 2 | `def` | [ofFreeGroupHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentationPublic.lean/declarations/offreegrouphom.md) | 63 | `declaration-track:b3ca837bacd6f927d6b8a2a76ce2b8bb8975ea7ebeb46a5a7abec61ea3e9ee94` |
+| 3 | `lemma` | [ofFreeGroupHom_toGenerators](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentationPublic.lean/declarations/offreegrouphom-togenerators.md) | 70 | `result-track:4c30ec5c1ed0ff2460ad1079ce0edd53c6a70c71f50c488fda3e0a92273bf2c8` |
+| 4 | `lemma` | [ker_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentationPublic.lean/declarations/ker-lift.md) | 75 | `result-track:c7a42a3d75d242497aaa2ee796a10183d4e5ae3d69b6e3679a5fbd0237cbd4f1` |
+| 5 | `theorem` | [lift_rel_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentationPublic.lean/declarations/lift-rel-eq-one.md) | 79 | `result-track:15a3efd0a72d5a4fbdb24ad3d6adbb358dd2f22b8480eb23cd5ea9b371165984` |
+| 6 | `lemma` | [isFinitelyNormallyGenerated_ker_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentationPublic.lean/declarations/isfinitelynormallygenerated-ker-lift.md) | 83 | `result-track:da88ffb2a27e9e352b1f87c37ef74656bef8774a8aedc8821a7e9b105d6b8ef9` |
+| 7 | `def` | [presentedGroupEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentationPublic.lean/declarations/presentedgroupequiv.md) | 87 | `declaration-track:637c91377c215111171972c5ef2d6c3ff48cb5e7498ba67fb43693e18c92bc57` |
+| 8 | `theorem` | [isFinitelyPresented](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentationPublic.lean/declarations/isfinitelypresented.md) | 92 | `result-track:973dc17a3b62045434248e87e62608f194d59f8b2e7588e5603c4002113a0c8f` |
+| 9 | `theorem` | [isFinitelyPresented_iff_exists_finite_presentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentationPublic.lean/declarations/isfinitelypresented-iff-exists-finite-presentation.md) | 97 | `result-track:91438f21f77b681ebdc225309ae4c21a93fd149ffd67b0e909a96c3ddf137206` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespacedSpectrumObject.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespacedSpectrumObject.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespacedSpectrumObject.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespacedSpectrumObject.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpectrumObject](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespacedSpectrumObject.lean/declarations/spectrumobject.md) | 26 | `declaration-track:b9e6526642e7e3f00de0588618376ea54d3323307b93d1079ee84554ee6d5d40` |
-| 2 | `structure` | [SpectrumMorphism](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespacedSpectrumObject.lean/declarations/spectrummorphism.md) | 34 | `declaration-track:0bbf6e96c3f2cf8ccab2c86640091f91ca920e8d66d1ec6ce4f63b1bd9bf4e5d` |
-| 3 | `theorem` | [spectrum_object_stable](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespacedSpectrumObject.lean/declarations/spectrum-object-stable.md) | 41 | `result-track:c7c26c273964ad1bca99ae1146bdc4f467392374d73621a72fcfa90622912f47` |
-| 4 | `theorem` | [spectrum_morphism_preserves_stability](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespacedSpectrumObject.lean/declarations/spectrum-morphism-preserves-stability.md) | 46 | `result-track:3bd03eef6d7e0913535326934f88c2ebceb13879d5b356219abdad3c12f767c2` |
+| 1 | `structure` | [SpectrumObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespacedSpectrumObject.lean/declarations/spectrumobject.md) | 26 | `declaration-track:b9e6526642e7e3f00de0588618376ea54d3323307b93d1079ee84554ee6d5d40` |
+| 2 | `structure` | [SpectrumMorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespacedSpectrumObject.lean/declarations/spectrummorphism.md) | 34 | `declaration-track:0bbf6e96c3f2cf8ccab2c86640091f91ca920e8d66d1ec6ce4f63b1bd9bf4e5d` |
+| 3 | `theorem` | [spectrum_object_stable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespacedSpectrumObject.lean/declarations/spectrum-object-stable.md) | 41 | `result-track:c7c26c273964ad1bca99ae1146bdc4f467392374d73621a72fcfa90622912f47` |
+| 4 | `theorem` | [spectrum_morphism_preserves_stability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespacedSpectrumObject.lean/declarations/spectrum-morphism-preserves-stability.md) | 46 | `result-track:3bd03eef6d7e0913535326934f88c2ebceb13879d5b356219abdad3c12f767c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

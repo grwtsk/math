@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualJointClosedReadoutEdition3.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualJointClosedReadoutEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualJointClosedReadoutEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualJointClosedReadoutEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_half_log_sum_eq_closed](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualJointClosedReadoutEdition3.lean/declarations/actual-half-log-sum-eq-closed.md) | 18 | `result-track:0c35b7c236ae32574138fac62c6e1fd05ddcb245448229f730d413d9a4d5a05b` |
-| 2 | `theorem` | [actual_full_log_sum_eq_closed_psi](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualJointClosedReadoutEdition3.lean/declarations/actual-full-log-sum-eq-closed-psi.md) | 48 | `result-track:fe7f760e333e1c15bec069dfc83cf35f61dad926883bab8c87bcf439f3ccae8f` |
-| 3 | `theorem` | [actual_closed_readout_eq_joint](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualJointClosedReadoutEdition3.lean/declarations/actual-closed-readout-eq-joint.md) | 72 | `result-track:27d4437d921ad995b8d7ea6ab309b789624d5c3ee07ef59690a770d3ce31dc68` |
-| 4 | `theorem` | [actual_closed_readout_eq_centered_integral](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualJointClosedReadoutEdition3.lean/declarations/actual-closed-readout-eq-centered-integral.md) | 94 | `result-track:0fad85031fece848aab0d9441595bcf3f42374b0299d7724d4c600e1035ddded` |
+| 1 | `theorem` | [actual_half_log_sum_eq_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualJointClosedReadoutEdition3.lean/declarations/actual-half-log-sum-eq-closed.md) | 18 | `result-track:0c35b7c236ae32574138fac62c6e1fd05ddcb245448229f730d413d9a4d5a05b` |
+| 2 | `theorem` | [actual_full_log_sum_eq_closed_psi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualJointClosedReadoutEdition3.lean/declarations/actual-full-log-sum-eq-closed-psi.md) | 48 | `result-track:fe7f760e333e1c15bec069dfc83cf35f61dad926883bab8c87bcf439f3ccae8f` |
+| 3 | `theorem` | [actual_closed_readout_eq_joint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualJointClosedReadoutEdition3.lean/declarations/actual-closed-readout-eq-joint.md) | 72 | `result-track:27d4437d921ad995b8d7ea6ab309b789624d5c3ee07ef59690a770d3ce31dc68` |
+| 4 | `theorem` | [actual_closed_readout_eq_centered_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualJointClosedReadoutEdition3.lean/declarations/actual-closed-readout-eq-centered-integral.md) | 94 | `result-track:0fad85031fece848aab0d9441595bcf3f42374b0299d7724d4c600e1035ddded` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

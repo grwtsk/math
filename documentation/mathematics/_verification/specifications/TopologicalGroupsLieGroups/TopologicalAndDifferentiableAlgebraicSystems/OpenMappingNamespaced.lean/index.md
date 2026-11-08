@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OpenMappingNamespaced.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OpenMappingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OpenMappingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OpenMappingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [smul_singleton_mem_nhds_of_sigmaCompact](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OpenMappingNamespaced.lean/declarations/smul-singleton-mem-nhds-of-sigmacompact.md) | 45 | `result-track:115e9b05d83699397ccea8314ebe7445cb1d51ba7ff100a67c190ffee3ca4b9b` |
-| 2 | `theorem` | [isOpenMap_smul_of_sigmaCompact](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OpenMappingNamespaced.lean/declarations/isopenmap-smul-of-sigmacompact.md) | 102 | `result-track:3a6bb35afdba88b3ac8baa5126c05f32bae113ad66208458e821d06c5cd64719` |
-| 3 | `theorem` | [MonoidHom.isOpenMap_of_sigmaCompact](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OpenMappingNamespaced.lean/declarations/monoidhom-isopenmap-of-sigmacompact.md) | 118 | `result-track:294f5ae6aaa48a143fcfe61116c7c2951b79f38289587e1d3ad0f3f5234455f2` |
+| 1 | `theorem` | [smul_singleton_mem_nhds_of_sigmaCompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OpenMappingNamespaced.lean/declarations/smul-singleton-mem-nhds-of-sigmacompact.md) | 45 | `result-track:115e9b05d83699397ccea8314ebe7445cb1d51ba7ff100a67c190ffee3ca4b9b` |
+| 2 | `theorem` | [isOpenMap_smul_of_sigmaCompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OpenMappingNamespaced.lean/declarations/isopenmap-smul-of-sigmacompact.md) | 102 | `result-track:3a6bb35afdba88b3ac8baa5126c05f32bae113ad66208458e821d06c5cd64719` |
+| 3 | `theorem` | [MonoidHom.isOpenMap_of_sigmaCompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OpenMappingNamespaced.lean/declarations/monoidhom-isopenmap-of-sigmacompact.md) | 118 | `result-track:294f5ae6aaa48a143fcfe61116c7c2951b79f38289587e1d3ad0f3f5234455f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

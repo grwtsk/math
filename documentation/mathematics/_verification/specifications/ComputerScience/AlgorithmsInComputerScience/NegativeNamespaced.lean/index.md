@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/NegativeNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/NegativeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NegativeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NegativeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [EpistemicDisposition](../../../../../ComputerScience/AlgorithmsInComputerScience/NegativeNamespaced.lean/declarations/epistemicdisposition.md) | 21 | `declaration-track:06b43f61a18e735c79318fe6b5a7a5349e1c94127406538411b98cbc424d62ab` |
-| 2 | `structure` | [NegativeElement](../../../../../ComputerScience/AlgorithmsInComputerScience/NegativeNamespaced.lean/declarations/negativeelement.md) | 37 | `declaration-track:3df0366c22c45e1b8ac683760ec93f655d3d776648a06cec731c078ff2a0f62c` |
-| 3 | `def` | [NegativeElement.SameSubject](../../../../../ComputerScience/AlgorithmsInComputerScience/NegativeNamespaced.lean/declarations/negativeelement-samesubject.md) | 49 | `declaration-track:e2258eae68f7cbb5b7c0cb16e7d4bd735a7891ee9db9d737f103f4c6b0ea8cab` |
+| 1 | `inductive` | [EpistemicDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NegativeNamespaced.lean/declarations/epistemicdisposition.md) | 21 | `declaration-track:06b43f61a18e735c79318fe6b5a7a5349e1c94127406538411b98cbc424d62ab` |
+| 2 | `structure` | [NegativeElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NegativeNamespaced.lean/declarations/negativeelement.md) | 37 | `declaration-track:3df0366c22c45e1b8ac683760ec93f655d3d776648a06cec731c078ff2a0f62c` |
+| 3 | `def` | [NegativeElement.SameSubject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NegativeNamespaced.lean/declarations/negativeelement-samesubject.md) | 49 | `declaration-track:e2258eae68f7cbb5b7c0cb16e7d4bd735a7891ee9db9d737f103f4c6b0ea8cab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

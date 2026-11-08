@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationBoundNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationBoundNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationBoundNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationBoundNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TraceCompensationBudget](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationBoundNamespaced.lean/declarations/tracecompensationbudget.md) | 21 | `declaration-track:bab8b334a4d13edcab5d7752a33db95358654a2705b7a96e99f15649105cebc5` |
-| 2 | `structure` | [PositiveTraceCompensation](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationBoundNamespaced.lean/declarations/positivetracecompensation.md) | 41 | `declaration-track:b0d0bd9136a2f5c2afe9fbb3dde33f58a7de293f7fe076b4b2327c290f380b6e` |
-| 3 | `theorem` | [packetEnergy_compensation_bound](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationBoundNamespaced.lean/declarations/packetenergy-compensation-bound.md) | 56 | `result-track:adbebc571d08ef154ec247ceef00715a4d5b55988c22a3a7f33fd0586db99df7` |
-| 4 | `theorem` | [packetEnergy_monotone_of_positiveCompensation](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationBoundNamespaced.lean/declarations/packetenergy-monotone-of-positivecompensation.md) | 89 | `result-track:b33bb6dde159263d74a93dd4d8090799bd475f0fc2478e98458b52df72a32ad0` |
+| 1 | `structure` | [TraceCompensationBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationBoundNamespaced.lean/declarations/tracecompensationbudget.md) | 21 | `declaration-track:bab8b334a4d13edcab5d7752a33db95358654a2705b7a96e99f15649105cebc5` |
+| 2 | `structure` | [PositiveTraceCompensation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationBoundNamespaced.lean/declarations/positivetracecompensation.md) | 41 | `declaration-track:b0d0bd9136a2f5c2afe9fbb3dde33f58a7de293f7fe076b4b2327c290f380b6e` |
+| 3 | `theorem` | [packetEnergy_compensation_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationBoundNamespaced.lean/declarations/packetenergy-compensation-bound.md) | 56 | `result-track:adbebc571d08ef154ec247ceef00715a4d5b55988c22a3a7f33fd0586db99df7` |
+| 4 | `theorem` | [packetEnergy_monotone_of_positiveCompensation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompensationBoundNamespaced.lean/declarations/packetenergy-monotone-of-positivecompensation.md) | 89 | `result-track:b33bb6dde159263d74a93dd4d8090799bd475f0fc2478e98458b52df72a32ad0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SigmaTau.lean/index.md) · [Full source](../../../../Combinatorics/SigmaTau.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SigmaTau.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SigmaTau.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [tau](../../../../Combinatorics/SigmaTau.lean/declarations/tau.md) | 16 | `declaration-track:eea8f4cb8b03f0bf3e345a39364358bf89951fd02cc575a058e989d344d96d43` |
-| 2 | `def` | [sigma](../../../../Combinatorics/SigmaTau.lean/declarations/sigma.md) | 19 | `declaration-track:8db9460541445f39f77d085422ef3696cbd1c6d5bbe280f0cf483573a3686066` |
-| 3 | `theorem` | [tau_one](../../../../Combinatorics/SigmaTau.lean/declarations/tau-one.md) | 22 | `result-track:52142a6e982676b8f11843652ff8002ee75c6a4ada09ee76718db48bce699601` |
-| 4 | `theorem` | [sigma_one](../../../../Combinatorics/SigmaTau.lean/declarations/sigma-one.md) | 25 | `result-track:5883eb1e9b5ae41d212dce6290d6cd75d61124aa8670d8779a329e73c2b084ee` |
-| 5 | `theorem` | [tau_prime](../../../../Combinatorics/SigmaTau.lean/declarations/tau-prime.md) | 28 | `result-track:dda9308dabd4067dd726f9588635a8d24da5614cdbed04596fbed1226544800a` |
-| 6 | `theorem` | [sigma_prime](../../../../Combinatorics/SigmaTau.lean/declarations/sigma-prime.md) | 35 | `result-track:a3b7c59701ad419913a6d9084a0b9ac12632d5283d56d0d30d07f4dab23a9a24` |
-| 7 | `theorem` | [tau_prime_power](../../../../Combinatorics/SigmaTau.lean/declarations/tau-prime-power.md) | 42 | `result-track:21674b63a04155e2d0c4ae5716fb6033324caf81dca9870cfa6a6505a6770818` |
-| 8 | `theorem` | [sigma_prime_power](../../../../Combinatorics/SigmaTau.lean/declarations/sigma-prime-power.md) | 48 | `result-track:1fd55c54fb94f7ad199688562933e8c1aa58d5ffa8c9745246e79e350b28de9a` |
+| 1 | `def` | [tau](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SigmaTau.lean/declarations/tau.md) | 16 | `declaration-track:eea8f4cb8b03f0bf3e345a39364358bf89951fd02cc575a058e989d344d96d43` |
+| 2 | `def` | [sigma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SigmaTau.lean/declarations/sigma.md) | 19 | `declaration-track:8db9460541445f39f77d085422ef3696cbd1c6d5bbe280f0cf483573a3686066` |
+| 3 | `theorem` | [tau_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SigmaTau.lean/declarations/tau-one.md) | 22 | `result-track:52142a6e982676b8f11843652ff8002ee75c6a4ada09ee76718db48bce699601` |
+| 4 | `theorem` | [sigma_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SigmaTau.lean/declarations/sigma-one.md) | 25 | `result-track:5883eb1e9b5ae41d212dce6290d6cd75d61124aa8670d8779a329e73c2b084ee` |
+| 5 | `theorem` | [tau_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SigmaTau.lean/declarations/tau-prime.md) | 28 | `result-track:dda9308dabd4067dd726f9588635a8d24da5614cdbed04596fbed1226544800a` |
+| 6 | `theorem` | [sigma_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SigmaTau.lean/declarations/sigma-prime.md) | 35 | `result-track:a3b7c59701ad419913a6d9084a0b9ac12632d5283d56d0d30d07f4dab23a9a24` |
+| 7 | `theorem` | [tau_prime_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SigmaTau.lean/declarations/tau-prime-power.md) | 42 | `result-track:21674b63a04155e2d0c4ae5716fb6033324caf81dca9870cfa6a6505a6770818` |
+| 8 | `theorem` | [sigma_prime_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SigmaTau.lean/declarations/sigma-prime-power.md) | 48 | `result-track:1fd55c54fb94f7ad199688562933e8c1aa58d5ffa8c9745246e79e350b28de9a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

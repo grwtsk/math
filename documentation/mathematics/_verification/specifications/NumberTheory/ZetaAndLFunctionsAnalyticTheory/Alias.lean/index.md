@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [foo](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/foo.md) | 10 | `result-track:45339b4e7723776a5af186d7ea8afe8f66b8bbaa5f06424f37c9f055840f8e86` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/example.md) | 18 | `declaration-track:8927e9b522d5826acba5fca09256d0dee35c374ad189e420b7e343e6742a79eb` |
-| 3 | `def` | [bar](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/bar.md) | 31 | `declaration-track:a2b1661bf6fa381b55909eb945644309fd2290dca8dc5d256275c6bdbe130dfa` |
-| 4 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/example-source-edition-7.md) | 34 | `declaration-track:fb87557ee838d6f093fc7551d8105d26667160c02e9f919eefc7648e7c425126` |
-| 5 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/example-source-edition-2.md) | 35 | `declaration-track:894068b3e8a7e6893e5ddc29b37ad07972ca2d77cd3e421c5d4cbca9bf717dfb` |
-| 6 | `theorem` | [baz](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/baz.md) | 37 | `result-track:11e54ebaea50377a7cca25b2168761808386303193c659ffc0026304200a03e2` |
-| 7 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/example-source-edition-3.md) | 39 | `declaration-track:af99991d649b9dcbe39b5e2544430a90b5981326ea46cbd22dab3b7d8c212e69` |
-| 8 | `def` | [foobar](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/foobar.md) | 42 | `declaration-track:0dbaa19a488e9c52c1143ff92462fc9e540454fcdf85d4b41c4b138e97cbfa38` |
-| 9 | `def` | [foobar3](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/foobar3.md) | 46 | `declaration-track:6f89cbdb01987e75a723fc6dcbc8948a7e8dc66c69fb032cd9351537cd7cf75c` |
-| 10 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/example-source-edition-5.md) | 50 | `declaration-track:d1659219944deb0d474af763dffc1efcd02bd73068fcbd5c405476fd22951011` |
-| 11 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/example-source-edition-6.md) | 51 | `declaration-track:eb01728ca26d45fe5ae3844a071b47145e02c9021be75478c012f0ea73a7b4f1` |
-| 12 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/example-source-edition-4.md) | 59 | `declaration-track:bf7fa64013a666fa051192056583a335727d55740f5827c53fd94a43b617c114` |
-| 13 | `def` | [foobaz](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/foobaz.md) | 64 | `declaration-track:8574e4476f1413a7083861ae9d32cdf1845b1747d678b4cde69c811c24fd7b8b` |
-| 14 | `def` | [barbaz](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/barbaz.md) | 77 | `declaration-track:7f2673ac80e3b89e3536160d132d2348de8ba2a73c57b32a9b926b3ca5fb7252` |
+| 1 | `theorem` | [foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/foo.md) | 10 | `result-track:45339b4e7723776a5af186d7ea8afe8f66b8bbaa5f06424f37c9f055840f8e86` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/example.md) | 18 | `declaration-track:8927e9b522d5826acba5fca09256d0dee35c374ad189e420b7e343e6742a79eb` |
+| 3 | `def` | [bar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/bar.md) | 31 | `declaration-track:a2b1661bf6fa381b55909eb945644309fd2290dca8dc5d256275c6bdbe130dfa` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/example-source-edition-7.md) | 34 | `declaration-track:fb87557ee838d6f093fc7551d8105d26667160c02e9f919eefc7648e7c425126` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/example-source-edition-2.md) | 35 | `declaration-track:894068b3e8a7e6893e5ddc29b37ad07972ca2d77cd3e421c5d4cbca9bf717dfb` |
+| 6 | `theorem` | [baz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/baz.md) | 37 | `result-track:11e54ebaea50377a7cca25b2168761808386303193c659ffc0026304200a03e2` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/example-source-edition-3.md) | 39 | `declaration-track:af99991d649b9dcbe39b5e2544430a90b5981326ea46cbd22dab3b7d8c212e69` |
+| 8 | `def` | [foobar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/foobar.md) | 42 | `declaration-track:0dbaa19a488e9c52c1143ff92462fc9e540454fcdf85d4b41c4b138e97cbfa38` |
+| 9 | `def` | [foobar3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/foobar3.md) | 46 | `declaration-track:6f89cbdb01987e75a723fc6dcbc8948a7e8dc66c69fb032cd9351537cd7cf75c` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/example-source-edition-5.md) | 50 | `declaration-track:d1659219944deb0d474af763dffc1efcd02bd73068fcbd5c405476fd22951011` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/example-source-edition-6.md) | 51 | `declaration-track:eb01728ca26d45fe5ae3844a071b47145e02c9021be75478c012f0ea73a7b4f1` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/example-source-edition-4.md) | 59 | `declaration-track:bf7fa64013a666fa051192056583a335727d55740f5827c53fd94a43b617c114` |
+| 13 | `def` | [foobaz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/foobaz.md) | 64 | `declaration-track:8574e4476f1413a7083861ae9d32cdf1845b1747d678b4cde69c811c24fd7b8b` |
+| 14 | `def` | [barbaz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Alias.lean/declarations/barbaz.md) | 77 | `declaration-track:7f2673ac80e3b89e3536160d132d2348de8ba2a73c57b32a9b926b3ca5fb7252` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

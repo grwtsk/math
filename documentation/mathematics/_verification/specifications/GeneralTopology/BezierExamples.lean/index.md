@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/BezierExamples.lean/index.md) · [Full source](../../../../GeneralTopology/BezierExamples.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamples.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamples.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [weightedLine](../../../../GeneralTopology/BezierExamples.lean/declarations/weightedline.md) | 17 | `declaration-track:bf92fd8c0564a2524805e95efa294c35a0a29a15bb839237d9d2684ff52bf06c` |
-| 2 | `example` | [(anonymous)](../../../../GeneralTopology/BezierExamples.lean/declarations/example-source-edition-4.md) | 23 | `declaration-track:a7e839bed660875c3df8ca5aa68631777dfc258c196ddadfe025de91bc0e920b` |
-| 3 | `example` | [(anonymous)](../../../../GeneralTopology/BezierExamples.lean/declarations/example-source-edition-2.md) | 26 | `declaration-track:6485c4b134591b93317f3d957c879cb2648dd115bcf14049c1041f94f096dda9` |
-| 4 | `example` | [(anonymous)](../../../../GeneralTopology/BezierExamples.lean/declarations/example-source-edition-3.md) | 29 | `declaration-track:7f3436ab525fc99135affd63bb31048b7115bfe900dd0976c88b23c5f71c7eb6` |
-| 5 | `example` | [(anonymous)](../../../../GeneralTopology/BezierExamples.lean/declarations/example.md) | 32 | `declaration-track:4784fd282fb60659c76f618d6545a59627227b9455e862515e5d5612e6e28fee` |
-| 6 | `example` | [(anonymous)](../../../../GeneralTopology/BezierExamples.lean/declarations/example-source-edition-5.md) | 37 | `declaration-track:b281cfed71b66b3285ccac6219da3fe138db7e41f8d01d5f6a17ebe726a446e8` |
-| 7 | `example` | [(anonymous)](../../../../GeneralTopology/BezierExamples.lean/declarations/example-source-edition-6.md) | 42 | `declaration-track:eaf8d83af8ace12b07b8077e46a6b5b0da45ba4e78185431242957c430a0b088` |
+| 1 | `def` | [weightedLine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamples.lean/declarations/weightedline.md) | 17 | `declaration-track:bf92fd8c0564a2524805e95efa294c35a0a29a15bb839237d9d2684ff52bf06c` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamples.lean/declarations/example-source-edition-4.md) | 23 | `declaration-track:a7e839bed660875c3df8ca5aa68631777dfc258c196ddadfe025de91bc0e920b` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamples.lean/declarations/example-source-edition-2.md) | 26 | `declaration-track:6485c4b134591b93317f3d957c879cb2648dd115bcf14049c1041f94f096dda9` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamples.lean/declarations/example-source-edition-3.md) | 29 | `declaration-track:7f3436ab525fc99135affd63bb31048b7115bfe900dd0976c88b23c5f71c7eb6` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamples.lean/declarations/example.md) | 32 | `declaration-track:4784fd282fb60659c76f618d6545a59627227b9455e862515e5d5612e6e28fee` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamples.lean/declarations/example-source-edition-5.md) | 37 | `declaration-track:b281cfed71b66b3285ccac6219da3fe138db7e41f8d01d5f6a17ebe726a446e8` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamples.lean/declarations/example-source-edition-6.md) | 42 | `declaration-track:eaf8d83af8ace12b07b8077e46a6b5b0da45ba4e78185431242957c430a0b088` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

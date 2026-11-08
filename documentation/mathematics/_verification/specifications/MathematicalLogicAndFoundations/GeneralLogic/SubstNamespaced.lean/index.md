@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example-source-edition-4.md) | 26 | `declaration-track:3d94004ce75066b33942ee0fdeaadf1bd494b80cc6e6d09674a5293ba8b6e425` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example-source-edition-5.md) | 30 | `declaration-track:5666e87d9181226e196ce829651f0d2eaeaaf0d3311d12d0fb1583d18d4b1ab3` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example-source-edition-8.md) | 39 | `declaration-track:aa8705bc650b58e65825a8b57c317b358cc4e0c0dbd4408730f978577abc2e8e` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example-source-edition-6.md) | 43 | `declaration-track:79db2d79cdf654e0bd3124c32572371aecec8ccd4022492528156be2cb859c51` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example-source-edition-9.md) | 50 | `declaration-track:d591cd5c2fecd5ea10329b27b7ae1c937c9c79ca1b48baab6a523d2915162950` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example-source-edition-2.md) | 57 | `declaration-track:0fe81a8a7ae5e9d02a11f335be5cb97d623254e18ffb37f7b90576ec50b37a83` |
-| 7 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example-source-edition-10.md) | 70 | `declaration-track:de1f195e9c2208f46575507b8cd043805ac82eddfd2c6d25e9476c902353a835` |
-| 8 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example.md) | 74 | `declaration-track:0d1fbe879d8ff120d0fa1986aaee226437e879e84098a6de86f266f03768d131` |
-| 9 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example-source-edition-7.md) | 84 | `declaration-track:a82601b055ad5ec868d2ceb68536391a119e024929dc1ac759def0a56014fcd9` |
-| 10 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example-source-edition-3.md) | 89 | `declaration-track:3d8211697d7c29fd183ce76fcc9fbb6c93c1fce30fcaf2aa2d498b2ff6d9e5a2` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example-source-edition-4.md) | 26 | `declaration-track:3d94004ce75066b33942ee0fdeaadf1bd494b80cc6e6d09674a5293ba8b6e425` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example-source-edition-5.md) | 30 | `declaration-track:5666e87d9181226e196ce829651f0d2eaeaaf0d3311d12d0fb1583d18d4b1ab3` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example-source-edition-8.md) | 39 | `declaration-track:aa8705bc650b58e65825a8b57c317b358cc4e0c0dbd4408730f978577abc2e8e` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example-source-edition-6.md) | 43 | `declaration-track:79db2d79cdf654e0bd3124c32572371aecec8ccd4022492528156be2cb859c51` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example-source-edition-9.md) | 50 | `declaration-track:d591cd5c2fecd5ea10329b27b7ae1c937c9c79ca1b48baab6a523d2915162950` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example-source-edition-2.md) | 57 | `declaration-track:0fe81a8a7ae5e9d02a11f335be5cb97d623254e18ffb37f7b90576ec50b37a83` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example-source-edition-10.md) | 70 | `declaration-track:de1f195e9c2208f46575507b8cd043805ac82eddfd2c6d25e9476c902353a835` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example.md) | 74 | `declaration-track:0d1fbe879d8ff120d0fa1986aaee226437e879e84098a6de86f266f03768d131` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example-source-edition-7.md) | 84 | `declaration-track:a82601b055ad5ec868d2ceb68536391a119e024929dc1ac759def0a56014fcd9` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstNamespaced.lean/declarations/example-source-edition-3.md) | 89 | `declaration-track:3d8211697d7c29fd183ce76fcc9fbb6c93c1fce30fcaf2aa2d498b2ff6d9e5a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LaplaceEndpointScratchNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LaplaceEndpointScratchNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LaplaceEndpointScratchNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LaplaceEndpointScratchNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [endpointPrimitive](../../../../MeasureAndIntegration/LaplaceEndpointScratchNamespaced.lean/declarations/endpointprimitive.md) | 18 | `declaration-track:10ab9fe5607373999aa1e8aa7daa04c735d42b06ae568468850b56f5f37f8c52` |
-| 2 | `theorem` | [endpoint_antiderivative](../../../../MeasureAndIntegration/LaplaceEndpointScratchNamespaced.lean/declarations/endpoint-antiderivative.md) | 29 | `result-track:435477b830b5a9657edc7798b279bd681ec59d62c27075e56231d06b08151e42` |
-| 3 | `theorem` | [exponential_bump_integral](../../../../MeasureAndIntegration/LaplaceEndpointScratchNamespaced.lean/declarations/exponential-bump-integral.md) | 65 | `result-track:a6ca648eb6cadce265e57026dc4c3d141f000ed5be7daaec87feb1f5ace556a0` |
+| 1 | `def` | [endpointPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LaplaceEndpointScratchNamespaced.lean/declarations/endpointprimitive.md) | 18 | `declaration-track:10ab9fe5607373999aa1e8aa7daa04c735d42b06ae568468850b56f5f37f8c52` |
+| 2 | `theorem` | [endpoint_antiderivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LaplaceEndpointScratchNamespaced.lean/declarations/endpoint-antiderivative.md) | 29 | `result-track:435477b830b5a9657edc7798b279bd681ec59d62c27075e56231d06b08151e42` |
+| 3 | `theorem` | [exponential_bump_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LaplaceEndpointScratchNamespaced.lean/declarations/exponential-bump-integral.md) | 65 | `result-track:a6ca648eb6cadce265e57026dc4c3d141f000ed5be7daaec87feb1f5ace556a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

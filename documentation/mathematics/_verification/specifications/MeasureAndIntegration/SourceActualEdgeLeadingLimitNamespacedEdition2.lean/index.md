@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualEdgeLeadingLimitNamespacedEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualEdgeLeadingLimitNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualEdgeLeadingLimitNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualEdgeLeadingLimitNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualLeadingEndpointPolynomial](../../../../MeasureAndIntegration/SourceActualEdgeLeadingLimitNamespacedEdition2.lean/declarations/actualleadingendpointpolynomial.md) | 32 | `declaration-track:224d3e8bbcc38d3742e6c60cbc38e9ec0ddec72dcbbb1840fb3e13ca9cb8aef3` |
-| 2 | `theorem` | [endpointPolynomial_tendsto_leading](../../../../MeasureAndIntegration/SourceActualEdgeLeadingLimitNamespacedEdition2.lean/declarations/endpointpolynomial-tendsto-leading.md) | 35 | `result-track:0171642084f95dda479332b533e7bd9f023377e34af836ba84e22cd99345159f` |
-| 3 | `theorem` | [actual_normalizedTest_scaled_edge_tendsto](../../../../MeasureAndIntegration/SourceActualEdgeLeadingLimitNamespacedEdition2.lean/declarations/actual-normalizedtest-scaled-edge-tendsto.md) | 52 | `result-track:c3fb591929c96480c2fe860fc9d8c0243753bf68fff754bd467352c094f83dc8` |
-| 4 | `def` | [actualLeadingEdgeConvolution](../../../../MeasureAndIntegration/SourceActualEdgeLeadingLimitNamespacedEdition2.lean/declarations/actualleadingedgeconvolution.md) | 73 | `declaration-track:a73dbfd4353ef32115cebf63b02be4206bbc1c769829187727d24396ee2b1963` |
-| 5 | `theorem` | [actualLeadingEdgeProduct_intervalIntegrable](../../../../MeasureAndIntegration/SourceActualEdgeLeadingLimitNamespacedEdition2.lean/declarations/actualleadingedgeproduct-intervalintegrable.md) | 77 | `result-track:51bc685dbc8427b73ffdf9bde26a62dfd2daba3edabdc1c2ab8896a7c7bfbcf4` |
-| 6 | `theorem` | [endpointProduct_integral_tendsto_leading](../../../../MeasureAndIntegration/SourceActualEdgeLeadingLimitNamespacedEdition2.lean/declarations/endpointproduct-integral-tendsto-leading.md) | 83 | `result-track:1506194b1b05b50ad22bf4eb5f24f9b2102fc20f62672a2784626510f04a9241` |
-| 7 | `theorem` | [actual_correlation_scaled_edge_tendsto](../../../../MeasureAndIntegration/SourceActualEdgeLeadingLimitNamespacedEdition2.lean/declarations/actual-correlation-scaled-edge-tendsto.md) | 120 | `result-track:861d3d5ad26039672023a48ea97a2fca49ba3cb540b3c11ee180edf0ec0b04e2` |
+| 1 | `def` | [actualLeadingEndpointPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualEdgeLeadingLimitNamespacedEdition2.lean/declarations/actualleadingendpointpolynomial.md) | 32 | `declaration-track:224d3e8bbcc38d3742e6c60cbc38e9ec0ddec72dcbbb1840fb3e13ca9cb8aef3` |
+| 2 | `theorem` | [endpointPolynomial_tendsto_leading](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualEdgeLeadingLimitNamespacedEdition2.lean/declarations/endpointpolynomial-tendsto-leading.md) | 35 | `result-track:0171642084f95dda479332b533e7bd9f023377e34af836ba84e22cd99345159f` |
+| 3 | `theorem` | [actual_normalizedTest_scaled_edge_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualEdgeLeadingLimitNamespacedEdition2.lean/declarations/actual-normalizedtest-scaled-edge-tendsto.md) | 52 | `result-track:c3fb591929c96480c2fe860fc9d8c0243753bf68fff754bd467352c094f83dc8` |
+| 4 | `def` | [actualLeadingEdgeConvolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualEdgeLeadingLimitNamespacedEdition2.lean/declarations/actualleadingedgeconvolution.md) | 73 | `declaration-track:a73dbfd4353ef32115cebf63b02be4206bbc1c769829187727d24396ee2b1963` |
+| 5 | `theorem` | [actualLeadingEdgeProduct_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualEdgeLeadingLimitNamespacedEdition2.lean/declarations/actualleadingedgeproduct-intervalintegrable.md) | 77 | `result-track:51bc685dbc8427b73ffdf9bde26a62dfd2daba3edabdc1c2ab8896a7c7bfbcf4` |
+| 6 | `theorem` | [endpointProduct_integral_tendsto_leading](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualEdgeLeadingLimitNamespacedEdition2.lean/declarations/endpointproduct-integral-tendsto-leading.md) | 83 | `result-track:1506194b1b05b50ad22bf4eb5f24f9b2102fc20f62672a2784626510f04a9241` |
+| 7 | `theorem` | [actual_correlation_scaled_edge_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualEdgeLeadingLimitNamespacedEdition2.lean/declarations/actual-correlation-scaled-edge-tendsto.md) | 120 | `result-track:861d3d5ad26039672023a48ea97a2fca49ba3cb540b3c11ee180edf0ec0b04e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

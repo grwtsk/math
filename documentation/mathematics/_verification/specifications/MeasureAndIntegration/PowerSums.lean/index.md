@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PowerSums.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PowerSums.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PowerSums.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PowerSums.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Sdiv](../../../../MeasureAndIntegration/PowerSums.lean/declarations/sdiv.md) | 28 | `declaration-track:842de781644f6ff7c4d9b3234adbfc5e04f1dfa3cf776f67d5b2c2d1d3bc7fb4` |
-| 2 | `lemma` | [Sdiv_nonneg](../../../../MeasureAndIntegration/PowerSums.lean/declarations/sdiv-nonneg.md) | 30 | `result-track:05b5825c79d90d8349d1297a4b145ebae893cfd75f6120d7eb1df9b7cbd021c0` |
-| 3 | `lemma` | [one_le_floor_exp](../../../../MeasureAndIntegration/PowerSums.lean/declarations/one-le-floor-exp.md) | 33 | `result-track:5374c6c401be661b3177815c0441833348c46097435b7793af4f94a58442f954` |
-| 4 | `lemma` | [log_le_of_mem_Ioc_floor_exp](../../../../MeasureAndIntegration/PowerSums.lean/declarations/log-le-of-mem-ioc-floor-exp.md) | 36 | `result-track:9b07003a18864b9338388db5fb72e109ee59ef2d52591ca0a45d4bde80c87a34` |
-| 5 | `lemma` | [log_nonneg_of_mem_Ioc](../../../../MeasureAndIntegration/PowerSums.lean/declarations/log-nonneg-of-mem-ioc.md) | 43 | `result-track:3076c58ca779ab884fb6a9f08a29509c22756e805a9a6f676e408963b06ff4ac` |
-| 6 | `lemma` | [floor_exp_div](../../../../MeasureAndIntegration/PowerSums.lean/declarations/floor-exp-div.md) | 46 | `result-track:bd5651dd0f543ebad79d63ab4bca716658592685e6316d4a32df25a51b19e703` |
-| 7 | `lemma` | [Sdiv_one](../../../../MeasureAndIntegration/PowerSums.lean/declarations/sdiv-one.md) | 51 | `result-track:eac7fdece9154ec228bbc4c47426b4c353f17ab48baa2a79fc2b0846f328da08` |
-| 8 | `lemma` | [Sdiv_mul](../../../../MeasureAndIntegration/PowerSums.lean/declarations/sdiv-mul.md) | 60 | `result-track:e82b94dea92b78a0ff2bd88e91ab34dfa13eb1dab4b97c1ded37a3f219521b9c` |
-| 9 | `lemma` | [integral_const_sub_pow](../../../../MeasureAndIntegration/PowerSums.lean/declarations/integral-const-sub-pow.md) | 73 | `result-track:01dae9a7f849a8cd6f6d1c76be4cf717959fa03d15eb34c5df2edeab072e82b5` |
-| 10 | `lemma` | [pow_add_mul_pow_le](../../../../MeasureAndIntegration/PowerSums.lean/declarations/pow-add-mul-pow-le.md) | 79 | `result-track:6e8aad4dac4a78bf78cbfa335f6c93fffd902a7ec804379b2f77436e71028233` |
-| 11 | `theorem` | [Sdiv_lamPow_le](../../../../MeasureAndIntegration/PowerSums.lean/declarations/sdiv-lampow-le.md) | 94 | `result-track:1ea0f5ccf40b917e123e3033d75f46aea9ffb1dbe0554c42e0dc31856b77ff76` |
-| 12 | `lemma` | [Sdiv_mono](../../../../MeasureAndIntegration/PowerSums.lean/declarations/sdiv-mono.md) | 170 | `result-track:b82cc9cdb70137c7daa19b5c665494f2716399cc73a5dd6588af16bcaf438f32` |
-| 13 | `lemma` | [Sdiv_lam_le](../../../../MeasureAndIntegration/PowerSums.lean/declarations/sdiv-lam-le.md) | 178 | `result-track:8ac1fad0cdf90c6e9922991cf325506080109baeb0229bfc3dc71575bcc8d041` |
+| 1 | `def` | [Sdiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PowerSums.lean/declarations/sdiv.md) | 28 | `declaration-track:842de781644f6ff7c4d9b3234adbfc5e04f1dfa3cf776f67d5b2c2d1d3bc7fb4` |
+| 2 | `lemma` | [Sdiv_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PowerSums.lean/declarations/sdiv-nonneg.md) | 30 | `result-track:05b5825c79d90d8349d1297a4b145ebae893cfd75f6120d7eb1df9b7cbd021c0` |
+| 3 | `lemma` | [one_le_floor_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PowerSums.lean/declarations/one-le-floor-exp.md) | 33 | `result-track:5374c6c401be661b3177815c0441833348c46097435b7793af4f94a58442f954` |
+| 4 | `lemma` | [log_le_of_mem_Ioc_floor_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PowerSums.lean/declarations/log-le-of-mem-ioc-floor-exp.md) | 36 | `result-track:9b07003a18864b9338388db5fb72e109ee59ef2d52591ca0a45d4bde80c87a34` |
+| 5 | `lemma` | [log_nonneg_of_mem_Ioc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PowerSums.lean/declarations/log-nonneg-of-mem-ioc.md) | 43 | `result-track:3076c58ca779ab884fb6a9f08a29509c22756e805a9a6f676e408963b06ff4ac` |
+| 6 | `lemma` | [floor_exp_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PowerSums.lean/declarations/floor-exp-div.md) | 46 | `result-track:bd5651dd0f543ebad79d63ab4bca716658592685e6316d4a32df25a51b19e703` |
+| 7 | `lemma` | [Sdiv_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PowerSums.lean/declarations/sdiv-one.md) | 51 | `result-track:eac7fdece9154ec228bbc4c47426b4c353f17ab48baa2a79fc2b0846f328da08` |
+| 8 | `lemma` | [Sdiv_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PowerSums.lean/declarations/sdiv-mul.md) | 60 | `result-track:e82b94dea92b78a0ff2bd88e91ab34dfa13eb1dab4b97c1ded37a3f219521b9c` |
+| 9 | `lemma` | [integral_const_sub_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PowerSums.lean/declarations/integral-const-sub-pow.md) | 73 | `result-track:01dae9a7f849a8cd6f6d1c76be4cf717959fa03d15eb34c5df2edeab072e82b5` |
+| 10 | `lemma` | [pow_add_mul_pow_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PowerSums.lean/declarations/pow-add-mul-pow-le.md) | 79 | `result-track:6e8aad4dac4a78bf78cbfa335f6c93fffd902a7ec804379b2f77436e71028233` |
+| 11 | `theorem` | [Sdiv_lamPow_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PowerSums.lean/declarations/sdiv-lampow-le.md) | 94 | `result-track:1ea0f5ccf40b917e123e3033d75f46aea9ffb1dbe0554c42e0dc31856b77ff76` |
+| 12 | `lemma` | [Sdiv_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PowerSums.lean/declarations/sdiv-mono.md) | 170 | `result-track:b82cc9cdb70137c7daa19b5c665494f2716399cc73a5dd6588af16bcaf438f32` |
+| 13 | `lemma` | [Sdiv_lam_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PowerSums.lean/declarations/sdiv-lam-le.md) | 178 | `result-track:8ac1fad0cdf90c6e9922991cf325506080109baeb0229bfc3dc71575bcc8d041` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

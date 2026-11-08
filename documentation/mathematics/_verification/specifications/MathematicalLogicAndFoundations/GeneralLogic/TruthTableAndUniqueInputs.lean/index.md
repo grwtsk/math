@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Mathlib.Data.Fintype.Pi` — import line 20; external provider; requires a separately pinned dependency.
 - `Lean.Elab.Tactic.Omega` — import line 21; external provider; requires a separately pinned dependency.
-- [Supplied Implementation Reduction](../../../../../ComputerScience/AlgorithmsInComputerScience/SuppliedImplementationReduction.lean/index.md) — import line 23; pinned internal source present.
+- [Supplied Implementation Reduction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SuppliedImplementationReduction.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [blockingClause](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/declarations/blockingclause.md) | 58 | `declaration-track:4cd4fa9d2101375d3080c8d619f729ffa3f033163f38258f42c9a947dc81ebdc` |
-| 2 | `theorem` | [blockingClause_correct](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/declarations/blockingclause-correct.md) | 62 | `result-track:e5e732efc3aa01fb467d7dc42068efe19f17b93bdfe933a84c7d4cc58847d98e` |
-| 3 | `def` | [truthTableCNF](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/declarations/truthtablecnf.md) | 93 | `declaration-track:702042e94504baa596171c49aa78bd1ca260a75e16d7fbec0b8f379d3c911204` |
-| 4 | `theorem` | [truthTableCNF_correct](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/declarations/truthtablecnf-correct.md) | 103 | `result-track:7d77fdd8fdd41a963376b07c5e2a9d263288de6ae533e007e2d0f82496bd5ab6` |
-| 5 | `theorem` | [every_fixed_width_function_reduces_to_sat](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/declarations/every-fixed-width-function-reduces-to-sat.md) | 152 | `result-track:dbcc972b9b7b9848e9352067129c5276df0801a4707939f827ede5828a6895f4` |
-| 6 | `theorem` | [bijective_has_unique_preimage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/declarations/bijective-has-unique-preimage.md) | 171 | `result-track:69cb59e5438514850d890a0ed3bb303ebc4166afc5136ddd8a8626e7d0aea7e8` |
-| 7 | `theorem` | [bijective_circuit_has_unique_sat_input](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/declarations/bijective-circuit-has-unique-sat-input.md) | 186 | `result-track:d7a6a53f31bd476579b206308deb4ebc78e74a56965af39847a63736bc3dc846` |
-| 8 | `theorem` | [bijective_truthTable_has_unique_sat_input](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/declarations/bijective-truthtable-has-unique-sat-input.md) | 205 | `result-track:c7a58609097a6509e346118da75b058459ad88a66e2b88dc4b6127c0b52ee0ee` |
+| 1 | `def` | [blockingClause](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/declarations/blockingclause.md) | 58 | `declaration-track:4cd4fa9d2101375d3080c8d619f729ffa3f033163f38258f42c9a947dc81ebdc` |
+| 2 | `theorem` | [blockingClause_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/declarations/blockingclause-correct.md) | 62 | `result-track:e5e732efc3aa01fb467d7dc42068efe19f17b93bdfe933a84c7d4cc58847d98e` |
+| 3 | `def` | [truthTableCNF](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/declarations/truthtablecnf.md) | 93 | `declaration-track:702042e94504baa596171c49aa78bd1ca260a75e16d7fbec0b8f379d3c911204` |
+| 4 | `theorem` | [truthTableCNF_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/declarations/truthtablecnf-correct.md) | 103 | `result-track:7d77fdd8fdd41a963376b07c5e2a9d263288de6ae533e007e2d0f82496bd5ab6` |
+| 5 | `theorem` | [every_fixed_width_function_reduces_to_sat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/declarations/every-fixed-width-function-reduces-to-sat.md) | 152 | `result-track:dbcc972b9b7b9848e9352067129c5276df0801a4707939f827ede5828a6895f4` |
+| 6 | `theorem` | [bijective_has_unique_preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/declarations/bijective-has-unique-preimage.md) | 171 | `result-track:69cb59e5438514850d890a0ed3bb303ebc4166afc5136ddd8a8626e7d0aea7e8` |
+| 7 | `theorem` | [bijective_circuit_has_unique_sat_input](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/declarations/bijective-circuit-has-unique-sat-input.md) | 186 | `result-track:d7a6a53f31bd476579b206308deb4ebc78e74a56965af39847a63736bc3dc846` |
+| 8 | `theorem` | [bijective_truthTable_has_unique_sat_input](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TruthTableAndUniqueInputs.lean/declarations/bijective-truthtable-has-unique-sat-input.md) | 205 | `result-track:c7a58609097a6509e346118da75b058459ad88a66e2b88dc4b6127c0b52ee0ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

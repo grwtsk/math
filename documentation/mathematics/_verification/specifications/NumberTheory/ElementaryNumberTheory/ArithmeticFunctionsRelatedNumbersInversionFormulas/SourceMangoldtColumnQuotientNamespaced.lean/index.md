@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_mangoldt_column_eq_zero_of_quotient_lt](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespaced.lean/declarations/actual-mangoldt-column-eq-zero-of-quotient-lt.md) | 31 | `result-track:6acf64b438b8db4ce8b15aa582acdabfd96c312acd9e8ce6a75a630f33101926` |
-| 2 | `theorem` | [mangoldt_inner_eq_quotient_truncated_column_increments](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespaced.lean/declarations/mangoldt-inner-eq-quotient-truncated-column-increments.md) | 50 | `result-track:fff1d9108bbfbd8d78d7fd0b4e10c9bfbfca3fb9283f60e7ec2fc5a9f298290a` |
-| 3 | `theorem` | [covariance_sub_main_eq_quotient_truncated_column_increments](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespaced.lean/declarations/covariance-sub-main-eq-quotient-truncated-column-increments.md) | 92 | `result-track:d797162d4b8c2c212b046a7bd21a859eed2d398c53f2f5144716848e1e979d50` |
+| 1 | `theorem` | [actual_mangoldt_column_eq_zero_of_quotient_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespaced.lean/declarations/actual-mangoldt-column-eq-zero-of-quotient-lt.md) | 31 | `result-track:6acf64b438b8db4ce8b15aa582acdabfd96c312acd9e8ce6a75a630f33101926` |
+| 2 | `theorem` | [mangoldt_inner_eq_quotient_truncated_column_increments](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespaced.lean/declarations/mangoldt-inner-eq-quotient-truncated-column-increments.md) | 50 | `result-track:fff1d9108bbfbd8d78d7fd0b4e10c9bfbfca3fb9283f60e7ec2fc5a9f298290a` |
+| 3 | `theorem` | [covariance_sub_main_eq_quotient_truncated_column_increments](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespaced.lean/declarations/covariance-sub-main-eq-quotient-truncated-column-increments.md) | 92 | `result-track:d797162d4b8c2c212b046a7bd21a859eed2d398c53f2f5144716848e1e979d50` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

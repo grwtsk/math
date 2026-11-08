@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedDyadicEnergyHalfPlaneControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedDyadicEnergyHalfPlaneControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedDyadicEnergyHalfPlaneControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedDyadicEnergyHalfPlaneControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.GradedDyadicEnergyHalfPlane`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GradedDyadicEnergyHalfPlane.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.GradedDyadicEnergyHalfPlane`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GradedDyadicEnergyHalfPlane.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [half_threshold_recovers_original](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedDyadicEnergyHalfPlaneControls.lean/declarations/half-threshold-recovers-original.md) | 13 | `result-track:d04a0792d27b814d685dcf2095caa67a6cfcf498c3d531f73dba7607f58314d3` |
-| 2 | `theorem` | [seven_eighths_energy_returns_seven_eighths_zero_free](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedDyadicEnergyHalfPlaneControls.lean/declarations/seven-eighths-energy-returns-seven-eighths-zero-free.md) | 18 | `result-track:82e7ed74bb52649d3fb0ceee64ad21a102381c936f22f46f86ab586c98130670` |
+| 1 | `theorem` | [half_threshold_recovers_original](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedDyadicEnergyHalfPlaneControls.lean/declarations/half-threshold-recovers-original.md) | 13 | `result-track:d04a0792d27b814d685dcf2095caa67a6cfcf498c3d531f73dba7607f58314d3` |
+| 2 | `theorem` | [seven_eighths_energy_returns_seven_eighths_zero_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedDyadicEnergyHalfPlaneControls.lean/declarations/seven-eighths-energy-returns-seven-eighths-zero-free.md) | 18 | `result-track:82e7ed74bb52649d3fb0ceee64ad21a102381c936f22f46f86ab586c98130670` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

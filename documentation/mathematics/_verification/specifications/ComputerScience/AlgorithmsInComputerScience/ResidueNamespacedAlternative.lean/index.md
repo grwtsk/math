@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ResidueNamespacedAlternative.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ResidueNamespacedAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResidueNamespacedAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResidueNamespacedAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [phaseResidues](../../../../../ComputerScience/AlgorithmsInComputerScience/ResidueNamespacedAlternative.lean/declarations/phaseresidues.md) | 18 | `declaration-track:e5d92480f126fe5cf3134246fb1ff02c08a35bf1106caa8bd06cf1f7ca45f994` |
-| 2 | `def` | [checkpointResidues](../../../../../ComputerScience/AlgorithmsInComputerScience/ResidueNamespacedAlternative.lean/declarations/checkpointresidues.md) | 21 | `declaration-track:f2bfff626c929e55489986f228b868a9f2a02ce913c73d9cedea73310212309b` |
-| 3 | `def` | [pipelineResidues](../../../../../ComputerScience/AlgorithmsInComputerScience/ResidueNamespacedAlternative.lean/declarations/pipelineresidues.md) | 24 | `declaration-track:1e8edbb6c8dfe0132c0391d9e53a6fed0c402ccbcbd6b084885a19e64f74290b` |
-| 4 | `theorem` | [phaseResidues_targets_correct](../../../../../ComputerScience/AlgorithmsInComputerScience/ResidueNamespacedAlternative.lean/declarations/phaseresidues-targets-correct.md) | 27 | `result-track:1f7dd678df8cd8de9e0277783e7547986ae6079c3b0c09a73eb852824fb71073` |
-| 5 | `theorem` | [checkpointResidues_targets_correct](../../../../../ComputerScience/AlgorithmsInComputerScience/ResidueNamespacedAlternative.lean/declarations/checkpointresidues-targets-correct.md) | 31 | `result-track:7588929108549640d7e58319a4b297d28470e1380d713f4d95e2d94b640ff000` |
-| 6 | `theorem` | [pipelineResidues_count](../../../../../ComputerScience/AlgorithmsInComputerScience/ResidueNamespacedAlternative.lean/declarations/pipelineresidues-count.md) | 35 | `result-track:b609fcfe8ffbaf925f1405d30c9ea9c112cd9d558db997083852410181b203f7` |
-| 7 | `theorem` | [pipelineResidues_targets_correct](../../../../../ComputerScience/AlgorithmsInComputerScience/ResidueNamespacedAlternative.lean/declarations/pipelineresidues-targets-correct.md) | 39 | `result-track:03b0ed45147a28569e45793258d6e65e92d3c2b2553243708a9212ad8d0f4cb0` |
+| 1 | `def` | [phaseResidues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResidueNamespacedAlternative.lean/declarations/phaseresidues.md) | 18 | `declaration-track:e5d92480f126fe5cf3134246fb1ff02c08a35bf1106caa8bd06cf1f7ca45f994` |
+| 2 | `def` | [checkpointResidues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResidueNamespacedAlternative.lean/declarations/checkpointresidues.md) | 21 | `declaration-track:f2bfff626c929e55489986f228b868a9f2a02ce913c73d9cedea73310212309b` |
+| 3 | `def` | [pipelineResidues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResidueNamespacedAlternative.lean/declarations/pipelineresidues.md) | 24 | `declaration-track:1e8edbb6c8dfe0132c0391d9e53a6fed0c402ccbcbd6b084885a19e64f74290b` |
+| 4 | `theorem` | [phaseResidues_targets_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResidueNamespacedAlternative.lean/declarations/phaseresidues-targets-correct.md) | 27 | `result-track:1f7dd678df8cd8de9e0277783e7547986ae6079c3b0c09a73eb852824fb71073` |
+| 5 | `theorem` | [checkpointResidues_targets_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResidueNamespacedAlternative.lean/declarations/checkpointresidues-targets-correct.md) | 31 | `result-track:7588929108549640d7e58319a4b297d28470e1380d713f4d95e2d94b640ff000` |
+| 6 | `theorem` | [pipelineResidues_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResidueNamespacedAlternative.lean/declarations/pipelineresidues-count.md) | 35 | `result-track:b609fcfe8ffbaf925f1405d30c9ea9c112cd9d558db997083852410181b203f7` |
+| 7 | `theorem` | [pipelineResidues_targets_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResidueNamespacedAlternative.lean/declarations/pipelineresidues-targets-correct.md) | 39 | `result-track:03b0ed45147a28569e45793258d6e65e92d3c2b2553243708a9212ad8d0f4cb0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

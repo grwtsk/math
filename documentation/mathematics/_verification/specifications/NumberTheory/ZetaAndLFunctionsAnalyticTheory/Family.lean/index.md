@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Family.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Family.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Family.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Family.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [admFamily_phiV_quartic](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Family.lean/declarations/admfamily-phiv-quartic.md) | 23 | `result-track:5f3a2f812f80313b5eaf3804843063f68be7a4c8f118405ada251c6ac05dcc8b` |
-| 2 | `theorem` | [admFamily_atV_quartic](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Family.lean/declarations/admfamily-atv-quartic.md) | 28 | `result-track:b97714393ac4348e165fdd322d8ec44003574d579e0c3d124a71ebf9fb108ab8` |
+| 1 | `theorem` | [admFamily_phiV_quartic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Family.lean/declarations/admfamily-phiv-quartic.md) | 23 | `result-track:5f3a2f812f80313b5eaf3804843063f68be7a4c8f118405ada251c6ac05dcc8b` |
+| 2 | `theorem` | [admFamily_atV_quartic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Family.lean/declarations/admfamily-atv-quartic.md) | 28 | `result-track:b97714393ac4348e165fdd322d8ec44003574d579e0c3d124a71ebf9fb108ab8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

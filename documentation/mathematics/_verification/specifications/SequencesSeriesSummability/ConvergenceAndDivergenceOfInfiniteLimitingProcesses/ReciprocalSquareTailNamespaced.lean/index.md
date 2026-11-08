@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ReciprocalSquareTailNamespaced.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ReciprocalSquareTailNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ReciprocalSquareTailNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ReciprocalSquareTailNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [reciprocal_square_tail_le](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ReciprocalSquareTailNamespaced.lean/declarations/reciprocal-square-tail-le.md) | 27 | `result-track:c32c6fd83d462db22cd85e3ad02183f9cae79f4fd2394abec0be2299b87069e4` |
-| 2 | `theorem` | [sqrt_cutoff_tail_le](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ReciprocalSquareTailNamespaced.lean/declarations/sqrt-cutoff-tail-le.md) | 34 | `result-track:11a748f3af8426e82f009dc11266c6383d37d028da199e1782418b7812976835` |
-| 3 | `theorem` | [floor_sqrt_cutoff_tail_le](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ReciprocalSquareTailNamespaced.lean/declarations/floor-sqrt-cutoff-tail-le.md) | 56 | `result-track:deebd6b7c5e6ae302d4bc9a17027b5f2bcc06361bff1624cbe911cb4ed1edade` |
+| 1 | `theorem` | [reciprocal_square_tail_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ReciprocalSquareTailNamespaced.lean/declarations/reciprocal-square-tail-le.md) | 27 | `result-track:c32c6fd83d462db22cd85e3ad02183f9cae79f4fd2394abec0be2299b87069e4` |
+| 2 | `theorem` | [sqrt_cutoff_tail_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ReciprocalSquareTailNamespaced.lean/declarations/sqrt-cutoff-tail-le.md) | 34 | `result-track:11a748f3af8426e82f009dc11266c6383d37d028da199e1782418b7812976835` |
+| 3 | `theorem` | [floor_sqrt_cutoff_tail_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ReciprocalSquareTailNamespaced.lean/declarations/floor-sqrt-cutoff-tail-le.md) | 56 | `result-track:deebd6b7c5e6ae302d4bc9a17027b5f2bcc06361bff1624cbe911cb4ed1edade` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

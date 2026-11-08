@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicEdition3.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Vector Namespaced Public Edition3](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicEdition3.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-theoreticalalgorithms-ro.md) | 46 | `declaration-track:a586e59122d5baa8aa516da26fc5c311b2d1f88c98166193077db70adf1eead1` |
-| 2 | `def` | [Vector.iterM](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicEdition3.lean/declarations/vector-iterm.md) | 64 | `declaration-track:88d280d1d542451141f20c1c917fab6231c3bb0e19c6a74ff0e0e489df5c9ec9` |
+| 1 | `def` | [Vector Namespaced Public Edition3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicEdition3.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-theoreticalalgorithms-ro.md) | 46 | `declaration-track:a586e59122d5baa8aa516da26fc5c311b2d1f88c98166193077db70adf1eead1` |
+| 2 | `def` | [Vector.iterM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VectorNamespacedPublicEdition3.lean/declarations/vector-iterm.md) | 64 | `declaration-track:88d280d1d542451141f20c1c917fab6231c3bb0e19c6a74ff0e0e489df5c9ec9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/Core.lean/index.md) · [Full source](../../../../Geometry/Core.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Core.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Core.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Spec](../../../../Geometry/Core.lean/declarations/spec.md) | 15 | `declaration-track:180e712dfc52fd2fbe6c9bec879845de99289a51eb47261c514e08aa592dd8dc` |
-| 2 | `def` | [id](../../../../Geometry/Core.lean/declarations/id.md) | 21 | `declaration-track:bc3cb0052d2791b6f2209155cfe70773d0b70090f566357ce65ae6c14a35c251` |
-| 3 | `def` | [comp](../../../../Geometry/Core.lean/declarations/comp.md) | 25 | `declaration-track:40605bd97db449a2dc338fa7bbc118a5167d9077a3ab623e8424db168eb300c0` |
-| 4 | `theorem` | [id_apply](../../../../Geometry/Core.lean/declarations/id-apply.md) | 29 | `result-track:d582d9117c61264f1395b57eefe50cff34aeb2cdfd9a6135c6395bc053f17e22` |
-| 5 | `theorem` | [comp_apply](../../../../Geometry/Core.lean/declarations/comp-apply.md) | 33 | `result-track:8d0cb714285ce8a711c7435e2cc7a82cc26008dcac29898ffa163198aa17b74c` |
-| 6 | `theorem` | [ext](../../../../Geometry/Core.lean/declarations/ext.md) | 38 | `result-track:1f3363a8c287e645bdc7aea485e2de2a12f147d32e7486d8e171b7728cec1b7d` |
-| 7 | `theorem` | [comp_assoc](../../../../Geometry/Core.lean/declarations/comp-assoc.md) | 44 | `result-track:6eed843fce99ed6f59446c43432800bcb4576fb41b2e4cd68dcb2146197f1099` |
-| 8 | `theorem` | [id_comp](../../../../Geometry/Core.lean/declarations/id-comp.md) | 49 | `result-track:0975485b3fafc70649614fedc8562625f2746a1ca1ecfffb82294d1457bddcdc` |
-| 9 | `theorem` | [comp_id](../../../../Geometry/Core.lean/declarations/comp-id.md) | 53 | `result-track:7b8ddbf0c5cd853b650ad4b063bb336c2ab41e77e2eb5b6bdb35b6eef473356c` |
+| 1 | `structure` | [Spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Core.lean/declarations/spec.md) | 15 | `declaration-track:180e712dfc52fd2fbe6c9bec879845de99289a51eb47261c514e08aa592dd8dc` |
+| 2 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Core.lean/declarations/id.md) | 21 | `declaration-track:bc3cb0052d2791b6f2209155cfe70773d0b70090f566357ce65ae6c14a35c251` |
+| 3 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Core.lean/declarations/comp.md) | 25 | `declaration-track:40605bd97db449a2dc338fa7bbc118a5167d9077a3ab623e8424db168eb300c0` |
+| 4 | `theorem` | [id_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Core.lean/declarations/id-apply.md) | 29 | `result-track:d582d9117c61264f1395b57eefe50cff34aeb2cdfd9a6135c6395bc053f17e22` |
+| 5 | `theorem` | [comp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Core.lean/declarations/comp-apply.md) | 33 | `result-track:8d0cb714285ce8a711c7435e2cc7a82cc26008dcac29898ffa163198aa17b74c` |
+| 6 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Core.lean/declarations/ext.md) | 38 | `result-track:1f3363a8c287e645bdc7aea485e2de2a12f147d32e7486d8e171b7728cec1b7d` |
+| 7 | `theorem` | [comp_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Core.lean/declarations/comp-assoc.md) | 44 | `result-track:6eed843fce99ed6f59446c43432800bcb4576fb41b2e4cd68dcb2146197f1099` |
+| 8 | `theorem` | [id_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Core.lean/declarations/id-comp.md) | 49 | `result-track:0975485b3fafc70649614fedc8562625f2746a1ca1ecfffb82294d1457bddcdc` |
+| 9 | `theorem` | [comp_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Core.lean/declarations/comp-id.md) | 53 | `result-track:7b8ddbf0c5cd853b650ad4b063bb336c2ab41e77e2eb5b6bdb35b6eef473356c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

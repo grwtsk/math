@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Definition.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Definition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Definition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Definition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HorizonEmbedding](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Definition.lean/declarations/horizonembedding.md) | 9 | `declaration-track:1ed4576e654f82952e83d43083d5643ceec97e9b21596f57fefccd89085ccd0f` |
-| 2 | `def` | [HorizonEmbedding.mapCut](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Definition.lean/declarations/horizonembedding-mapcut.md) | 24 | `declaration-track:9170e76eed2f9721b43c8394d78839324cc4a0b2c8d86f87e5e788b17fe4a6e2` |
-| 3 | `theorem` | [HorizonEmbedding.mapCut_empty](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Definition.lean/declarations/horizonembedding-mapcut-empty.md) | 32 | `result-track:21f6ed341e5e7daec88420c73a7cda2437889c1fd5d2b5d17ce3e90971d584dc` |
-| 4 | `theorem` | [HorizonEmbedding.mapCut_insert](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Definition.lean/declarations/horizonembedding-mapcut-insert.md) | 39 | `result-track:256168db4e59057be67a5b6ddf20df19e670ad83be241fb2926ae27100c3ec3f` |
-| 5 | `theorem` | [HorizonEmbedding.mapCut_inj](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Definition.lean/declarations/horizonembedding-mapcut-inj.md) | 50 | `result-track:7e4712628828ea4494cdfc81148551a425038cfac17c70ad0be2b5541154295c` |
+| 1 | `structure` | [HorizonEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Definition.lean/declarations/horizonembedding.md) | 9 | `declaration-track:1ed4576e654f82952e83d43083d5643ceec97e9b21596f57fefccd89085ccd0f` |
+| 2 | `def` | [HorizonEmbedding.mapCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Definition.lean/declarations/horizonembedding-mapcut.md) | 24 | `declaration-track:9170e76eed2f9721b43c8394d78839324cc4a0b2c8d86f87e5e788b17fe4a6e2` |
+| 3 | `theorem` | [HorizonEmbedding.mapCut_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Definition.lean/declarations/horizonembedding-mapcut-empty.md) | 32 | `result-track:21f6ed341e5e7daec88420c73a7cda2437889c1fd5d2b5d17ce3e90971d584dc` |
+| 4 | `theorem` | [HorizonEmbedding.mapCut_insert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Definition.lean/declarations/horizonembedding-mapcut-insert.md) | 39 | `result-track:256168db4e59057be67a5b6ddf20df19e670ad83be241fb2926ae27100c3ec3f` |
+| 5 | `theorem` | [HorizonEmbedding.mapCut_inj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Definition.lean/declarations/horizonembedding-mapcut-inj.md) | 50 | `result-track:7e4712628828ea4494cdfc81148551a425038cfac17c70ad0be2b5541154295c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

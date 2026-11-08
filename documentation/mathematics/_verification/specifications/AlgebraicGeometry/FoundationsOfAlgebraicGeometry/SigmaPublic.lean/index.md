@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SigmaPublic.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SigmaPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SigmaPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SigmaPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sigma](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SigmaPublic.lean/declarations/sigma.md) | 30 | `declaration-track:d3186e3693478989e606f96e296bbd8f5c1e7c02797bea31098add98c0992ef3` |
-| 2 | `lemma` | [presieve₀_sigma](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SigmaPublic.lean/declarations/presieve-sigma.md) | 41 | `result-track:01a265b75ffa73a41d7e41981a47fc4c2dd3b6b65d5dedd3aae77c99784f08ff` |
-| 3 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SigmaPublic.lean/declarations/instance.md) | 51 | `declaration-track:b132829f3a7e465125873c23ba7d2b9c4388f9156fde4500ef74c748f7702ea9` |
-| 4 | `def` | [toSigma](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SigmaPublic.lean/declarations/tosigma.md) | 56 | `declaration-track:20e0cf6eb050233ff21be9300dd35850b13147b31ad55c0a9bca630f6dda8d89` |
-| 5 | `def` | [Hom.sigma](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SigmaPublic.lean/declarations/hom-sigma.md) | 63 | `declaration-track:fcb6a06b825db4c0d4a46604b5ed79489f79c701b31b09c83ea2d9012c3d8e12` |
-| 6 | `def` | [sigmaFunctor](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SigmaPublic.lean/declarations/sigmafunctor.md) | 72 | `declaration-track:3e8ac6b1c9e96ef15b07381f46c2b4b2f131dfc40e5029c9ba0a0d2576f0efce` |
+| 1 | `def` | [sigma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SigmaPublic.lean/declarations/sigma.md) | 30 | `declaration-track:d3186e3693478989e606f96e296bbd8f5c1e7c02797bea31098add98c0992ef3` |
+| 2 | `lemma` | [presieve₀_sigma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SigmaPublic.lean/declarations/presieve-sigma.md) | 41 | `result-track:01a265b75ffa73a41d7e41981a47fc4c2dd3b6b65d5dedd3aae77c99784f08ff` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SigmaPublic.lean/declarations/instance.md) | 51 | `declaration-track:b132829f3a7e465125873c23ba7d2b9c4388f9156fde4500ef74c748f7702ea9` |
+| 4 | `def` | [toSigma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SigmaPublic.lean/declarations/tosigma.md) | 56 | `declaration-track:20e0cf6eb050233ff21be9300dd35850b13147b31ad55c0a9bca630f6dda8d89` |
+| 5 | `def` | [Hom.sigma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SigmaPublic.lean/declarations/hom-sigma.md) | 63 | `declaration-track:fcb6a06b825db4c0d4a46604b5ed79489f79c701b31b09c83ea2d9012c3d8e12` |
+| 6 | `def` | [sigmaFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SigmaPublic.lean/declarations/sigmafunctor.md) | 72 | `declaration-track:3e8ac6b1c9e96ef15b07381f46c2b4b2f131dfc40e5029c9ba0a0d2576f0efce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RectangleContourPublicEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RectangleContourPublicEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RectangleContourPublicEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RectangleContourPublicEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [closedRectangle](../../../../MeasureAndIntegration/RectangleContourPublicEdition1.lean/declarations/closedrectangle.md) | 30 | `declaration-track:aff7fe3f0a2845e2716d16bb76271c7bcdc103fc3cce51d54b0cd9c09afb5e28` |
-| 2 | `theorem` | [isCompact_closedRectangle](../../../../MeasureAndIntegration/RectangleContourPublicEdition1.lean/declarations/iscompact-closedrectangle.md) | 34 | `result-track:3dfa7b9e62e1cc597c5ec647a779c7675a06424b1930a585968d0cb3867bb8ac` |
-| 3 | `def` | [rectangleHorizontalIntegral](../../../../MeasureAndIntegration/RectangleContourPublicEdition1.lean/declarations/rectanglehorizontalintegral.md) | 40 | `declaration-track:e5b3a0ac8926c39e4b710cd3d8151d470d2b70838b8ef787c0c92d56b7c385a5` |
-| 4 | `def` | [rectangleVerticalIntegral](../../../../MeasureAndIntegration/RectangleContourPublicEdition1.lean/declarations/rectangleverticalintegral.md) | 47 | `declaration-track:053b60d25e68ef26aef533b675fe8a47db68d53623d75a665ca7cdb69043c5ba` |
-| 5 | `def` | [rectangleBoundaryIntegral](../../../../MeasureAndIntegration/RectangleContourPublicEdition1.lean/declarations/rectangleboundaryintegral.md) | 54 | `declaration-track:f2d7620a16faa0e193e0b819319debfdab706e40edef307f0ab564e5972c7e63` |
-| 6 | `theorem` | [rectangleBoundaryIntegral_eq_zero_of_differentiableOn](../../../../MeasureAndIntegration/RectangleContourPublicEdition1.lean/declarations/rectangleboundaryintegral-eq-zero-of-differentiableon.md) | 64 | `result-track:13bda6056333b504b83e355d0116b0c05ed0bdb9d73e2b8cdc9cd1be23195f4a` |
-| 7 | `theorem` | [rectangleVerticalShift_eq_horizontalDifference](../../../../MeasureAndIntegration/RectangleContourPublicEdition1.lean/declarations/rectangleverticalshift-eq-horizontaldifference.md) | 73 | `result-track:0a4db79e52cb4f45394949913788d89b3507a37ee18d0a36ed96033a7930e87d` |
-| 8 | `theorem` | [rectangleBoundaryIntegral_eq_zero_of_continuousOn_of_differentiableOn](../../../../MeasureAndIntegration/RectangleContourPublicEdition1.lean/declarations/rectangleboundaryintegral-eq-zero-of-continuouson-of-differentiableon.md) | 97 | `result-track:69035a0b57b76c91141d810e76d13b65b0a3f7b372005c21cd333cf140d4f5e5` |
+| 1 | `def` | [closedRectangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RectangleContourPublicEdition1.lean/declarations/closedrectangle.md) | 30 | `declaration-track:aff7fe3f0a2845e2716d16bb76271c7bcdc103fc3cce51d54b0cd9c09afb5e28` |
+| 2 | `theorem` | [isCompact_closedRectangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RectangleContourPublicEdition1.lean/declarations/iscompact-closedrectangle.md) | 34 | `result-track:3dfa7b9e62e1cc597c5ec647a779c7675a06424b1930a585968d0cb3867bb8ac` |
+| 3 | `def` | [rectangleHorizontalIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RectangleContourPublicEdition1.lean/declarations/rectanglehorizontalintegral.md) | 40 | `declaration-track:e5b3a0ac8926c39e4b710cd3d8151d470d2b70838b8ef787c0c92d56b7c385a5` |
+| 4 | `def` | [rectangleVerticalIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RectangleContourPublicEdition1.lean/declarations/rectangleverticalintegral.md) | 47 | `declaration-track:053b60d25e68ef26aef533b675fe8a47db68d53623d75a665ca7cdb69043c5ba` |
+| 5 | `def` | [rectangleBoundaryIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RectangleContourPublicEdition1.lean/declarations/rectangleboundaryintegral.md) | 54 | `declaration-track:f2d7620a16faa0e193e0b819319debfdab706e40edef307f0ab564e5972c7e63` |
+| 6 | `theorem` | [rectangleBoundaryIntegral_eq_zero_of_differentiableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RectangleContourPublicEdition1.lean/declarations/rectangleboundaryintegral-eq-zero-of-differentiableon.md) | 64 | `result-track:13bda6056333b504b83e355d0116b0c05ed0bdb9d73e2b8cdc9cd1be23195f4a` |
+| 7 | `theorem` | [rectangleVerticalShift_eq_horizontalDifference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RectangleContourPublicEdition1.lean/declarations/rectangleverticalshift-eq-horizontaldifference.md) | 73 | `result-track:0a4db79e52cb4f45394949913788d89b3507a37ee18d0a36ed96033a7930e87d` |
+| 8 | `theorem` | [rectangleBoundaryIntegral_eq_zero_of_continuousOn_of_differentiableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RectangleContourPublicEdition1.lean/declarations/rectangleboundaryintegral-eq-zero-of-continuouson-of-differentiableon.md) | 97 | `result-track:69035a0b57b76c91141d810e76d13b65b0a3f7b372005c21cd333cf140d4f5e5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

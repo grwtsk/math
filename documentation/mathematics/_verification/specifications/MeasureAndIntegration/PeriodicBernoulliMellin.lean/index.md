@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PeriodicBernoulliMellin.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PeriodicBernoulliMellin.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PeriodicBernoulliMellin.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PeriodicBernoulliMellin.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli`](../../../../GeneralTopology/PeriodicBernoulli.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.PochhammerJet`](../../../../FunctionsOfAComplexVariable/PochhammerJet.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PeriodicBernoulli.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.PochhammerJet`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PochhammerJet.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.ImproperIntegrals` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.MeasureTheory.Integral.IntegralEqImproper` — import line 7; external provider; requires a separately pinned dependency.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [integrand](../../../../MeasureAndIntegration/PeriodicBernoulliMellin.lean/declarations/integrand.md) | 27 | `declaration-track:60509d3b2e39a1db94c6083d57fb4c6c7e127a35c2889ff4f2d34eaf71e9bd54` |
-| 2 | `def` | [tail](../../../../MeasureAndIntegration/PeriodicBernoulliMellin.lean/declarations/tail.md) | 30 | `declaration-track:0936c04a0ec303a41a6fe4bc9dcc8c42b04e5e46d2987476d1b131baeb9aa2c1` |
-| 3 | `theorem` | [norm_integrand_le](../../../../MeasureAndIntegration/PeriodicBernoulliMellin.lean/declarations/norm-integrand-le.md) | 33 | `result-track:4d92da88b903c6918fc8e4c1da00b55c569e9486cd88aa0228fcc7afcdf5b7ed` |
-| 4 | `theorem` | [integrable_tail](../../../../MeasureAndIntegration/PeriodicBernoulliMellin.lean/declarations/integrable-tail.md) | 45 | `result-track:2cfb4bf5d14e14f4638f0f193c156bcdc364165b1e76c0186b07910a013dcf02` |
-| 5 | `theorem` | [tail_norm_le](../../../../MeasureAndIntegration/PeriodicBernoulliMellin.lean/declarations/tail-norm-le.md) | 65 | `result-track:e8e9de798693386d0bfd862bfeac3c98a060cf9b07e9dd6792002fd0f700fc9a` |
-| 6 | `theorem` | [tail_norm_le_nat](../../../../MeasureAndIntegration/PeriodicBernoulliMellin.lean/declarations/tail-norm-le-nat.md) | 88 | `result-track:2e9415de8e6904efc6540c1397b9976af1a53df3f968de9d231e959756b5b67c` |
-| 7 | `theorem` | [pochhammer_norm_le](../../../../MeasureAndIntegration/PeriodicBernoulliMellin.lean/declarations/pochhammer-norm-le.md) | 103 | `result-track:d881bfc0d775ead1333d1f71b536285ad962a1f73f4be2ab505b6298c3d87258` |
-| 8 | `def` | [remainder](../../../../MeasureAndIntegration/PeriodicBernoulliMellin.lean/declarations/remainder.md) | 116 | `declaration-track:e31ea22f3115d5280345cc5e35dee25074362fd7d1fe51d68d8439cdd4db7b79` |
-| 9 | `theorem` | [remainder_norm_le_nat](../../../../MeasureAndIntegration/PeriodicBernoulliMellin.lean/declarations/remainder-norm-le-nat.md) | 120 | `result-track:c5403f9536b25d585bee7e2d21d8799f1aa6d933c0a0dc70398b89cbc606136b` |
+| 1 | `def` | [integrand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PeriodicBernoulliMellin.lean/declarations/integrand.md) | 27 | `declaration-track:60509d3b2e39a1db94c6083d57fb4c6c7e127a35c2889ff4f2d34eaf71e9bd54` |
+| 2 | `def` | [tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PeriodicBernoulliMellin.lean/declarations/tail.md) | 30 | `declaration-track:0936c04a0ec303a41a6fe4bc9dcc8c42b04e5e46d2987476d1b131baeb9aa2c1` |
+| 3 | `theorem` | [norm_integrand_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PeriodicBernoulliMellin.lean/declarations/norm-integrand-le.md) | 33 | `result-track:4d92da88b903c6918fc8e4c1da00b55c569e9486cd88aa0228fcc7afcdf5b7ed` |
+| 4 | `theorem` | [integrable_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PeriodicBernoulliMellin.lean/declarations/integrable-tail.md) | 45 | `result-track:2cfb4bf5d14e14f4638f0f193c156bcdc364165b1e76c0186b07910a013dcf02` |
+| 5 | `theorem` | [tail_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PeriodicBernoulliMellin.lean/declarations/tail-norm-le.md) | 65 | `result-track:e8e9de798693386d0bfd862bfeac3c98a060cf9b07e9dd6792002fd0f700fc9a` |
+| 6 | `theorem` | [tail_norm_le_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PeriodicBernoulliMellin.lean/declarations/tail-norm-le-nat.md) | 88 | `result-track:2e9415de8e6904efc6540c1397b9976af1a53df3f968de9d231e959756b5b67c` |
+| 7 | `theorem` | [pochhammer_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PeriodicBernoulliMellin.lean/declarations/pochhammer-norm-le.md) | 103 | `result-track:d881bfc0d775ead1333d1f71b536285ad962a1f73f4be2ab505b6298c3d87258` |
+| 8 | `def` | [remainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PeriodicBernoulliMellin.lean/declarations/remainder.md) | 116 | `declaration-track:e31ea22f3115d5280345cc5e35dee25074362fd7d1fe51d68d8439cdd4db7b79` |
+| 9 | `theorem` | [remainder_norm_le_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PeriodicBernoulliMellin.lean/declarations/remainder-norm-le-nat.md) | 120 | `result-track:c5403f9536b25d585bee7e2d21d8799f1aa6d933c0a0dc70398b89cbc606136b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

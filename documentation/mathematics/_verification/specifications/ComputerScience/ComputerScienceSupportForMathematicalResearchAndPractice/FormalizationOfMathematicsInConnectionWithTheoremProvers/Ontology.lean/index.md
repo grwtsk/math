@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Ontology.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Ontology.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Ontology.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Ontology.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [OntologyStatus](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Ontology.lean/declarations/ontologystatus.md) | 18 | `declaration-track:063dcd0d401f13f3c67705515941a1ece642f4fc2cfee47f1c7896aa6b1d5bc4` |
-| 2 | `inductive` | [OntologyKind](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Ontology.lean/declarations/ontologykind.md) | 28 | `declaration-track:487089fd56c56a8356ea3cba72795ce4210bacb8a3945c693b0a37eab78ab9ec` |
-| 3 | `structure` | [OntologyEntity](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Ontology.lean/declarations/ontologyentity.md) | 42 | `declaration-track:960afdeddebc5ba50c877f18fba68bba2495fdd8acef95842f52d7426f477dcc` |
-| 4 | `structure` | [OntologyRelation](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Ontology.lean/declarations/ontologyrelation.md) | 51 | `declaration-track:4c1389a54f8478773f6976fb983919e8e0257ad11389844264c5c4d08e04286c` |
+| 1 | `inductive` | [OntologyStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Ontology.lean/declarations/ontologystatus.md) | 18 | `declaration-track:063dcd0d401f13f3c67705515941a1ece642f4fc2cfee47f1c7896aa6b1d5bc4` |
+| 2 | `inductive` | [OntologyKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Ontology.lean/declarations/ontologykind.md) | 28 | `declaration-track:487089fd56c56a8356ea3cba72795ce4210bacb8a3945c693b0a37eab78ab9ec` |
+| 3 | `structure` | [OntologyEntity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Ontology.lean/declarations/ontologyentity.md) | 42 | `declaration-track:960afdeddebc5ba50c877f18fba68bba2495fdd8acef95842f52d7426f477dcc` |
+| 4 | `structure` | [OntologyRelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Ontology.lean/declarations/ontologyrelation.md) | 51 | `declaration-track:4c1389a54f8478773f6976fb983919e8e0257ad11389844264c5c4d08e04286c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

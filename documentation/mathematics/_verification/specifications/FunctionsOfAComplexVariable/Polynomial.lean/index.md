@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/Polynomial.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/Polynomial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Polynomial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Polynomial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_root](../../../../FunctionsOfAComplexVariable/Polynomial.lean/declarations/exists-root.md) | 29 | `result-track:67536c2008e24f15811304a855bbc84260de310898a9f625a378effffb95bd8e` |
-| 2 | `instance` | [isAlgClosed](../../../../FunctionsOfAComplexVariable/Polynomial.lean/declarations/isalgclosed.md) | 40 | `declaration-track:0312dc2c0e981f1445c0daaf8b227c58194b48a68df11f0a4398d9ca5e83a620` |
+| 1 | `theorem` | [exists_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Polynomial.lean/declarations/exists-root.md) | 29 | `result-track:67536c2008e24f15811304a855bbc84260de310898a9f625a378effffb95bd8e` |
+| 2 | `instance` | [isAlgClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Polynomial.lean/declarations/isalgclosed.md) | 40 | `declaration-track:0312dc2c0e981f1445c0daaf8b227c58194b48a68df11f0a4398d9ca5e83a620` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

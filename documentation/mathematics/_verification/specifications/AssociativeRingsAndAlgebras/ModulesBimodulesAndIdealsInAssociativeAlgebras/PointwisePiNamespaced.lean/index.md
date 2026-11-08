@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PointwisePiNamespaced.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PointwisePiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PointwisePiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PointwisePiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [smul_pi_subset](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PointwisePiNamespaced.lean/declarations/smul-pi-subset.md) | 36 | `result-track:81422ca7789f8fb2db331331b528ecb8ef1b7a0dec55fc58bfedb6297ab894bd` |
-| 2 | `theorem` | [smul_univ_pi](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PointwisePiNamespaced.lean/declarations/smul-univ-pi.md) | 41 | `result-track:a73586cc54c647240f7eef82955254d236a824dc564da7794be5a2154a472fe8` |
-| 3 | `theorem` | [smul_pi](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PointwisePiNamespaced.lean/declarations/smul-pi-source-edition-2.md) | 46 | `result-track:4fcb03f22fa89c547a658ba84cb326892edc18c7bd2f5a8cb784efa67a3f9568` |
-| 4 | `theorem` | [smul_pi₀](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PointwisePiNamespaced.lean/declarations/smul-pi.md) | 50 | `result-track:4169539e8549659a6917db29f43bf2e5fe713481734668be98283de0561392a6` |
+| 1 | `theorem` | [smul_pi_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PointwisePiNamespaced.lean/declarations/smul-pi-subset.md) | 36 | `result-track:81422ca7789f8fb2db331331b528ecb8ef1b7a0dec55fc58bfedb6297ab894bd` |
+| 2 | `theorem` | [smul_univ_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PointwisePiNamespaced.lean/declarations/smul-univ-pi.md) | 41 | `result-track:a73586cc54c647240f7eef82955254d236a824dc564da7794be5a2154a472fe8` |
+| 3 | `theorem` | [smul_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PointwisePiNamespaced.lean/declarations/smul-pi-source-edition-2.md) | 46 | `result-track:4fcb03f22fa89c547a658ba84cb326892edc18c7bd2f5a8cb784efa67a3f9568` |
+| 4 | `theorem` | [smul_pi₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PointwisePiNamespaced.lean/declarations/smul-pi.md) | 50 | `result-track:4169539e8549659a6917db29f43bf2e5fe713481734668be98283de0561392a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

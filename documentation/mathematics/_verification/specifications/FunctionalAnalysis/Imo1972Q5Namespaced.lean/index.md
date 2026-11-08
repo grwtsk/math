@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/Imo1972Q5Namespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/Imo1972Q5Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Imo1972Q5Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Imo1972Q5Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [imo1972_q5](../../../../FunctionalAnalysis/Imo1972Q5Namespaced.lean/declarations/imo1972-q5.md) | 33 | `result-track:30f665a5544721a4b8363b952920d62655d53e45078e6446968de88b4d7db7bb` |
-| 2 | `theorem` | [imo1972_q5'](../../../../FunctionalAnalysis/Imo1972Q5Namespaced.lean/declarations/imo1972-q5-source-edition-2.md) | 89 | `result-track:4175502cf42b4e70fe1d6f4af373ff32bd46fc41c37333f449088d82d00949d5` |
+| 1 | `theorem` | [imo1972_q5](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Imo1972Q5Namespaced.lean/declarations/imo1972-q5.md) | 33 | `result-track:30f665a5544721a4b8363b952920d62655d53e45078e6446968de88b4d7db7bb` |
+| 2 | `theorem` | [imo1972_q5'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Imo1972Q5Namespaced.lean/declarations/imo1972-q5-source-edition-2.md) | 89 | `result-track:4175502cf42b4e70fe1d6f4af373ff32bd46fc41c37333f449088d82d00949d5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryNakayama.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryNakayama.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryNakayama.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryNakayama.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eq_smul_of_le_smul_of_le_jacobson](../../../../CommutativeAlgebra/RingTheoryNakayama.lean/declarations/eq-smul-of-le-smul-of-le-jacobson.md) | 52 | `result-track:c79172f80c4b944c6e7189873776496a014247dd57ff539d42146cc91837aa21` |
-| 2 | `theorem` | [eq_bot_of_le_smul_of_le_jacobson_bot](../../../../CommutativeAlgebra/RingTheoryNakayama.lean/declarations/eq-bot-of-le-smul-of-le-jacobson-bot.md) | 68 | `result-track:c4f4aca1bb7ceb0e9f73c3b6e65b8fe41eb5405d21fa1e37c3a4a4e4a2c3b131` |
-| 3 | `theorem` | [smul_sup_eq_smul_sup_of_le_smul_of_le_jacobson](../../../../CommutativeAlgebra/RingTheoryNakayama.lean/declarations/smul-sup-eq-smul-sup-of-le-smul-of-le-jacobson.md) | 76 | `result-track:5af6651421f9777fc8bf9ab3cc6d9c39ebfa378a684c1779cbe7df08598ed8c5` |
-| 4 | `theorem` | [smul_sup_le_of_le_smul_of_le_jacobson_bot](../../../../CommutativeAlgebra/RingTheoryNakayama.lean/declarations/smul-sup-le-of-le-smul-of-le-jacobson-bot.md) | 96 | `result-track:3e642c294a0b1b7011cc3893e1dd778ad536d0e31ec97de28114726efbf7ca5d` |
+| 1 | `theorem` | [eq_smul_of_le_smul_of_le_jacobson](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryNakayama.lean/declarations/eq-smul-of-le-smul-of-le-jacobson.md) | 52 | `result-track:c79172f80c4b944c6e7189873776496a014247dd57ff539d42146cc91837aa21` |
+| 2 | `theorem` | [eq_bot_of_le_smul_of_le_jacobson_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryNakayama.lean/declarations/eq-bot-of-le-smul-of-le-jacobson-bot.md) | 68 | `result-track:c4f4aca1bb7ceb0e9f73c3b6e65b8fe41eb5405d21fa1e37c3a4a4e4a2c3b131` |
+| 3 | `theorem` | [smul_sup_eq_smul_sup_of_le_smul_of_le_jacobson](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryNakayama.lean/declarations/smul-sup-eq-smul-sup-of-le-smul-of-le-jacobson.md) | 76 | `result-track:5af6651421f9777fc8bf9ab3cc6d9c39ebfa378a684c1779cbe7df08598ed8c5` |
+| 4 | `theorem` | [smul_sup_le_of_le_smul_of_le_jacobson_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryNakayama.lean/declarations/smul-sup-le-of-le-smul-of-le-jacobson-bot.md) | 96 | `result-track:3e642c294a0b1b7011cc3893e1dd778ad536d0e31ec97de28114726efbf7ca5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Field.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Field.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Field.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Field.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Multiset.sum_map_div](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Field.lean/declarations/multiset-sum-map-div.md) | 18 | `result-track:208b0729a26c568964fa660ab94e0392b727284d8b4bfbea3e0730722f02864c` |
-| 2 | `lemma` | [Finset.sum_div](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Field.lean/declarations/finset-sum-div.md) | 22 | `result-track:986d6432b9afd26f7b5515d9fe29e63b2a70392db8044d65e2ec419d601e4365` |
-| 3 | `lemma` | [dens_disjiUnion](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Field.lean/declarations/dens-disjiunion.md) | 31 | `result-track:1348754cbf1cc17a5e77f153774e9c8dde8b74d9b51e11c5b9e17fd746975782` |
-| 4 | `lemma` | [dens_biUnion](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Field.lean/declarations/dens-biunion.md) | 36 | `result-track:a616cf27b6d1acae1ad9100cda92e8c97b943f3de33e20c70465ad936b4e925e` |
-| 5 | `lemma` | [dens_biUnion_le](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Field.lean/declarations/dens-biunion-le.md) | 40 | `result-track:5c7ddc20d650ff803c2c9ab49e4ca4b501cf6eecf1a0de34731e977cd171b925` |
-| 6 | `lemma` | [dens_eq_sum_dens_fiberwise](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Field.lean/declarations/dens-eq-sum-dens-fiberwise.md) | 46 | `result-track:2cfe3ca5f775bb4a01f18406edab423a03fcd90101de11e4b7bc30d9e0fa25b9` |
-| 7 | `lemma` | [dens_eq_sum_dens_image](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Field.lean/declarations/dens-eq-sum-dens-image.md) | 50 | `result-track:7ac0d5b9f521d5cf2856f6e17a1cd9ecc9a6760ab1eb8507f924ec2189bd23b4` |
+| 1 | `lemma` | [Multiset.sum_map_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Field.lean/declarations/multiset-sum-map-div.md) | 18 | `result-track:208b0729a26c568964fa660ab94e0392b727284d8b4bfbea3e0730722f02864c` |
+| 2 | `lemma` | [Finset.sum_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Field.lean/declarations/finset-sum-div.md) | 22 | `result-track:986d6432b9afd26f7b5515d9fe29e63b2a70392db8044d65e2ec419d601e4365` |
+| 3 | `lemma` | [dens_disjiUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Field.lean/declarations/dens-disjiunion.md) | 31 | `result-track:1348754cbf1cc17a5e77f153774e9c8dde8b74d9b51e11c5b9e17fd746975782` |
+| 4 | `lemma` | [dens_biUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Field.lean/declarations/dens-biunion.md) | 36 | `result-track:a616cf27b6d1acae1ad9100cda92e8c97b943f3de33e20c70465ad936b4e925e` |
+| 5 | `lemma` | [dens_biUnion_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Field.lean/declarations/dens-biunion-le.md) | 40 | `result-track:5c7ddc20d650ff803c2c9ab49e4ca4b501cf6eecf1a0de34731e977cd171b925` |
+| 6 | `lemma` | [dens_eq_sum_dens_fiberwise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Field.lean/declarations/dens-eq-sum-dens-fiberwise.md) | 46 | `result-track:2cfe3ca5f775bb4a01f18406edab423a03fcd90101de11e4b7bc30d9e0fa25b9` |
+| 7 | `lemma` | [dens_eq_sum_dens_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Field.lean/declarations/dens-eq-sum-dens-image.md) | 50 | `result-track:7ac0d5b9f521d5cf2856f6e17a1cd9ecc9a6760ab1eb8507f924ec2189bd23b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

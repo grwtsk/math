@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/BooleanIdealNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/BooleanIdealNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BooleanIdealNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BooleanIdealNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [BooleanCoordinateRing](../../../../CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/booleancoordinatering.md) | 23 | `declaration-track:74acc0938da40e81ad8a3d52c998c7c0872fe4a99a3131090d33aedce1d0d25c` |
-| 2 | `def` | [bitfieldCoordinate](../../../../CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/bitfieldcoordinate.md) | 26 | `declaration-track:6565b47ffe3f568c98f9b3b9e7492f78dc4fa7eaa770e1ab8070fe2ef75eb1d6` |
-| 3 | `structure` | [BooleanIdeal](../../../../CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/booleanideal.md) | 31 | `declaration-track:4c7083434a4cc29a487bfe550902ff8e0d3a83b09417ea8b80ec79a3adadfab4` |
-| 4 | `def` | [BooleanIdeal.IsModel](../../../../CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/booleanideal-ismodel.md) | 37 | `declaration-track:c14b45e852cfabc12c91528ec91fcfc6756c12005311fb87ee0333a5a47fd524` |
-| 5 | `abbrev` | [BooleanVariety](../../../../CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/booleanvariety.md) | 44 | `declaration-track:cf30e876e4a0a35984358d0d37402dfc89bf72a211be93e9f64e1501ce415e93` |
-| 6 | `theorem` | [BooleanIdeal.variety_empty_of_one_mem](../../../../CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/booleanideal-variety-empty-of-one-mem.md) | 47 | `result-track:dcbb367121619fd663c63712c385fe6a93ce61296914793bc63cbd7ecf044431` |
-| 7 | `structure` | [BooleanNullstellensatzCertificate](../../../../CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/booleannullstellensatzcertificate.md) | 57 | `declaration-track:e97a97eeb57dbb31f767db46a3842a5ff4e0e0c921cc39241cb4524302fab507` |
-| 8 | `theorem` | [boolean_variety_empty_iff_one_mem](../../../../CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/boolean-variety-empty-iff-one-mem.md) | 63 | `result-track:831d9bbecbc3ebaffb3e27ba4bad72963e02b347615c733dc12320cd14685146` |
-| 9 | `structure` | [TypedBooleanIdealSystem](../../../../CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/typedbooleanidealsystem.md) | 73 | `declaration-track:32204c36669fb2787f91823d5186d059568acb0ae1d62b6bd2e8dbee3a55cefd` |
-| 10 | `structure` | [HammingBudgetCertificate](../../../../CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/hammingbudgetcertificate.md) | 82 | `declaration-track:5a3fdefaa2eab83e7fe694fa1055d3473fe4ad93a8c6d4f1594914bdc5e3a5e0` |
+| 1 | `abbrev` | [BooleanCoordinateRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/booleancoordinatering.md) | 23 | `declaration-track:74acc0938da40e81ad8a3d52c998c7c0872fe4a99a3131090d33aedce1d0d25c` |
+| 2 | `def` | [bitfieldCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/bitfieldcoordinate.md) | 26 | `declaration-track:6565b47ffe3f568c98f9b3b9e7492f78dc4fa7eaa770e1ab8070fe2ef75eb1d6` |
+| 3 | `structure` | [BooleanIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/booleanideal.md) | 31 | `declaration-track:4c7083434a4cc29a487bfe550902ff8e0d3a83b09417ea8b80ec79a3adadfab4` |
+| 4 | `def` | [BooleanIdeal.IsModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/booleanideal-ismodel.md) | 37 | `declaration-track:c14b45e852cfabc12c91528ec91fcfc6756c12005311fb87ee0333a5a47fd524` |
+| 5 | `abbrev` | [BooleanVariety](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/booleanvariety.md) | 44 | `declaration-track:cf30e876e4a0a35984358d0d37402dfc89bf72a211be93e9f64e1501ce415e93` |
+| 6 | `theorem` | [BooleanIdeal.variety_empty_of_one_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/booleanideal-variety-empty-of-one-mem.md) | 47 | `result-track:dcbb367121619fd663c63712c385fe6a93ce61296914793bc63cbd7ecf044431` |
+| 7 | `structure` | [BooleanNullstellensatzCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/booleannullstellensatzcertificate.md) | 57 | `declaration-track:e97a97eeb57dbb31f767db46a3842a5ff4e0e0c921cc39241cb4524302fab507` |
+| 8 | `theorem` | [boolean_variety_empty_iff_one_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/boolean-variety-empty-iff-one-mem.md) | 63 | `result-track:831d9bbecbc3ebaffb3e27ba4bad72963e02b347615c733dc12320cd14685146` |
+| 9 | `structure` | [TypedBooleanIdealSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/typedbooleanidealsystem.md) | 73 | `declaration-track:32204c36669fb2787f91823d5186d059568acb0ae1d62b6bd2e8dbee3a55cefd` |
+| 10 | `structure` | [HammingBudgetCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BooleanIdealNamespaced.lean/declarations/hammingbudgetcertificate.md) | 82 | `declaration-track:5a3fdefaa2eab83e7fe694fa1055d3473fe4ad93a8c6d4f1594914bdc5e3a5e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

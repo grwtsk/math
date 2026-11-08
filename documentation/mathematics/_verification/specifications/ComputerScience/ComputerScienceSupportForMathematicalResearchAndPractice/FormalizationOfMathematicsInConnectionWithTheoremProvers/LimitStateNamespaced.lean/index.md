@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitStateNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitStateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitStateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitStateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProjectiveLimitPoint](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitStateNamespaced.lean/declarations/projectivelimitpoint.md) | 17 | `declaration-track:3d0784b815f7724b0304dec1722258ec3c8da2df7655cac22b1103ae732c11f1` |
-| 2 | `def` | [witnessedProjectiveLimitPoint](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitStateNamespaced.lean/declarations/witnessedprojectivelimitpoint.md) | 27 | `declaration-track:d4ab0418207b98f63258b3ce338bed6792cd5bbaf078441d0754aef6b883279d` |
-| 3 | `theorem` | [projective_limit_inhabited](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitStateNamespaced.lean/declarations/projective-limit-inhabited.md) | 34 | `result-track:3354d7ecf0340ae7e04af08c841aa276e3143bd99b3956afe1f3549fc0b5135c` |
+| 1 | `structure` | [ProjectiveLimitPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitStateNamespaced.lean/declarations/projectivelimitpoint.md) | 17 | `declaration-track:3d0784b815f7724b0304dec1722258ec3c8da2df7655cac22b1103ae732c11f1` |
+| 2 | `def` | [witnessedProjectiveLimitPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitStateNamespaced.lean/declarations/witnessedprojectivelimitpoint.md) | 27 | `declaration-track:d4ab0418207b98f63258b3ce338bed6792cd5bbaf078441d0754aef6b883279d` |
+| 3 | `theorem` | [projective_limit_inhabited](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitStateNamespaced.lean/declarations/projective-limit-inhabited.md) | 34 | `result-track:3354d7ecf0340ae7e04af08c841aa276e3143bd99b3956afe1f3549fc0b5135c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

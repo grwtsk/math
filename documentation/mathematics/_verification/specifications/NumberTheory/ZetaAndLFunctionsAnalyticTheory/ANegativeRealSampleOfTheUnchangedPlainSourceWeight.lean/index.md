@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ANegativeRealSampleOfTheUnchangedPlainSourceWeight.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ANegativeRealSampleOfTheUnchangedPlainSourceWeight.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ANegativeRealSampleOfTheUnchangedPlainSourceWeight.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ANegativeRealSampleOfTheUnchangedPlainSourceWeight.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourcePlainWeight_exists_neg_in_real_support](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ANegativeRealSampleOfTheUnchangedPlainSourceWeight.lean/declarations/sourceplainweight-exists-neg-in-real-support.md) | 26 | `result-track:fc9a9b5ef8d123e4336e025b10b43de2ab46f0e2f949f499ed7028c056781a01` |
+| 1 | `theorem` | [sourcePlainWeight_exists_neg_in_real_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ANegativeRealSampleOfTheUnchangedPlainSourceWeight.lean/declarations/sourceplainweight-exists-neg-in-real-support.md) | 26 | `result-track:fc9a9b5ef8d123e4336e025b10b43de2ab46f0e2f949f499ed7028c056781a01` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/CompStructTruncatedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/CompStructTruncatedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CompStructTruncatedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CompStructTruncatedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Edge](../../../../AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/edge.md) | 38 | `declaration-track:febd31f08c10b6de00f86c18be6af99e686ae812832291e1db4400178cbcf3ae` |
-| 2 | `def` | [mk'](../../../../AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/mk.md) | 52 | `declaration-track:3bf3e2d728e5f0142dd5eb884496a36dec675ed01262b07b24b4398ea0390830` |
-| 3 | `lemma` | [exists_of_simplex](../../../../AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/exists-of-simplex-source-edition-2.md) | 55 | `result-track:60164f9964d148f88fdd4cccf6ffa1b1f3ac527cb57ade245b299ff19d113a65` |
-| 4 | `def` | [id](../../../../AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/id.md) | 61 | `declaration-track:3cc38bd63321cb489df8d25f7cf4b784864e4c45deba62e5934d6849cca68249` |
-| 5 | `def` | [map](../../../../AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/map.md) | 68 | `declaration-track:8fa310832b11db61090b6be2c9e44bdab5f117c1d3a775bcad31fe298b1f56d6` |
-| 6 | `lemma` | [map_id](../../../../AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/map-id.md) | 75 | `result-track:28d58226e8ab85824d7b312d67b2e46a8cce9193b61058a529ad5d502d4b40c9` |
-| 7 | `instance` | [(anonymous)](../../../../AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/instance.md) | 80 | `declaration-track:3ce72639a79f4b340e0aba3a99972985b320c61d7c032a076adc764fc43f3946` |
-| 8 | `structure` | [CompStruct](../../../../AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/compstruct.md) | 91 | `declaration-track:de2b97eeba5f90e96de9b372bae06fbb6e47bd83f106ce0e8989be5636690a5e` |
-| 9 | `lemma` | [exists_of_simplex](../../../../AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/exists-of-simplex.md) | 103 | `result-track:0c21cb44a752e62156860826a248d8010b7fe0d3beca2fea52a6d670305405c9` |
-| 10 | `def` | [idComp](../../../../AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/idcomp.md) | 116 | `declaration-track:6dc614b1d0fbb4d9aea2331ac1307684b28514ec734e67b4485f4c81e378b8ee` |
-| 11 | `def` | [compId](../../../../AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/compid.md) | 130 | `declaration-track:0e77a4ab35c3edd64b3c660a7fbd721ecfe621ee3f36a301caf0fcdb1413e960` |
-| 12 | `def` | [idCompId](../../../../AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/idcompid.md) | 145 | `declaration-track:a42906fc1d3eaeac2b1040efecb62db06af5fe5e8d646e942d6ff44554c11ead` |
-| 13 | `def` | [map](../../../../AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/map-source-edition-2.md) | 153 | `declaration-track:eb67d8f4b7d2c9e8704972aa0c4a87376e544452dc0c77a2db39323ba764949e` |
+| 1 | `structure` | [Edge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/edge.md) | 38 | `declaration-track:febd31f08c10b6de00f86c18be6af99e686ae812832291e1db4400178cbcf3ae` |
+| 2 | `def` | [mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/mk.md) | 52 | `declaration-track:3bf3e2d728e5f0142dd5eb884496a36dec675ed01262b07b24b4398ea0390830` |
+| 3 | `lemma` | [exists_of_simplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/exists-of-simplex-source-edition-2.md) | 55 | `result-track:60164f9964d148f88fdd4cccf6ffa1b1f3ac527cb57ade245b299ff19d113a65` |
+| 4 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/id.md) | 61 | `declaration-track:3cc38bd63321cb489df8d25f7cf4b784864e4c45deba62e5934d6849cca68249` |
+| 5 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/map.md) | 68 | `declaration-track:8fa310832b11db61090b6be2c9e44bdab5f117c1d3a775bcad31fe298b1f56d6` |
+| 6 | `lemma` | [map_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/map-id.md) | 75 | `result-track:28d58226e8ab85824d7b312d67b2e46a8cce9193b61058a529ad5d502d4b40c9` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/instance.md) | 80 | `declaration-track:3ce72639a79f4b340e0aba3a99972985b320c61d7c032a076adc764fc43f3946` |
+| 8 | `structure` | [CompStruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/compstruct.md) | 91 | `declaration-track:de2b97eeba5f90e96de9b372bae06fbb6e47bd83f106ce0e8989be5636690a5e` |
+| 9 | `lemma` | [exists_of_simplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/exists-of-simplex.md) | 103 | `result-track:0c21cb44a752e62156860826a248d8010b7fe0d3beca2fea52a6d670305405c9` |
+| 10 | `def` | [idComp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/idcomp.md) | 116 | `declaration-track:6dc614b1d0fbb4d9aea2331ac1307684b28514ec734e67b4485f4c81e378b8ee` |
+| 11 | `def` | [compId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/compid.md) | 130 | `declaration-track:0e77a4ab35c3edd64b3c660a7fbd721ecfe621ee3f36a301caf0fcdb1413e960` |
+| 12 | `def` | [idCompId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/idcompid.md) | 145 | `declaration-track:a42906fc1d3eaeac2b1040efecb62db06af5fe5e8d646e942d6ff44554c11ead` |
+| 13 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CompStructTruncatedPublic.lean/declarations/map-source-edition-2.md) | 153 | `declaration-track:eb67d8f4b7d2c9e8704972aa0c4a87376e544452dc0c77a2db39323ba764949e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

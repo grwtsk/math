@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicPsiOctaveEnergySupplier.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicPsiOctaveEnergySupplier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicPsiOctaveEnergySupplier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicPsiOctaveEnergySupplier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicPsiAbelReconstruction`](../../../../../../MeasureAndIntegration/DyadicPsiAbelReconstruction.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.DyadicGreenReturn`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicGreenReturn.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicPsiAbelReconstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicPsiAbelReconstruction.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.DyadicGreenReturn`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicGreenReturn.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cumulative_one_eq_mass0](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicPsiOctaveEnergySupplier.lean/declarations/cumulative-one-eq-mass0.md) | 54 | `result-track:83de7d0cd2685d38bb1a2bacf7e43d32dc37ba3cc551a4f6a1739fb0cf909438` |
-| 2 | `theorem` | [augmentedEnergy_le_of_cumulative_uniform](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicPsiOctaveEnergySupplier.lean/declarations/augmentedenergy-le-of-cumulative-uniform.md) | 74 | `result-track:424469fe7aa2bf98ac72ee7d0add9a27a59f3cf4fc53cf5dae5d0769d13d8df1` |
-| 3 | `theorem` | [augmentedEnergy_le_of_psiEnvelope](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicPsiOctaveEnergySupplier.lean/declarations/augmentedenergy-le-of-psienvelope.md) | 141 | `result-track:bb6c122e84ae78ccf1c6235d0e9e1e038d2aca8a4cd42cfb377a5c5c97896767` |
-| 4 | `def` | [AllDyadicPsiOctaveSquareRootBound](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicPsiOctaveEnergySupplier.lean/declarations/alldyadicpsioctavesquarerootbound.md) | 159 | `declaration-track:88dee13ec30e6f2eaab8e510cbf3be39693b4165ca5d514f204c26c1d7eaf2a1` |
-| 5 | `theorem` | [psiOctaveSquareRootBound_to_allDyadicEnergyBound](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicPsiOctaveEnergySupplier.lean/declarations/psioctavesquarerootbound-to-alldyadicenergybound.md) | 170 | `result-track:5f513dda1f7a7193ff1d1e06be5546d9bc32dac0607403b08e7e6373e863788e` |
-| 6 | `theorem` | [riemannHypothesis_of_psiOctaveSquareRootBound](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicPsiOctaveEnergySupplier.lean/declarations/riemannhypothesis-of-psioctavesquarerootbound.md) | 243 | `result-track:1ce303a5b1a9fe652de8d905557998b72c76b2a8faf6cd4eaf99d2f78ad010b7` |
+| 1 | `theorem` | [cumulative_one_eq_mass0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicPsiOctaveEnergySupplier.lean/declarations/cumulative-one-eq-mass0.md) | 54 | `result-track:83de7d0cd2685d38bb1a2bacf7e43d32dc37ba3cc551a4f6a1739fb0cf909438` |
+| 2 | `theorem` | [augmentedEnergy_le_of_cumulative_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicPsiOctaveEnergySupplier.lean/declarations/augmentedenergy-le-of-cumulative-uniform.md) | 74 | `result-track:424469fe7aa2bf98ac72ee7d0add9a27a59f3cf4fc53cf5dae5d0769d13d8df1` |
+| 3 | `theorem` | [augmentedEnergy_le_of_psiEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicPsiOctaveEnergySupplier.lean/declarations/augmentedenergy-le-of-psienvelope.md) | 141 | `result-track:bb6c122e84ae78ccf1c6235d0e9e1e038d2aca8a4cd42cfb377a5c5c97896767` |
+| 4 | `def` | [AllDyadicPsiOctaveSquareRootBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicPsiOctaveEnergySupplier.lean/declarations/alldyadicpsioctavesquarerootbound.md) | 159 | `declaration-track:88dee13ec30e6f2eaab8e510cbf3be39693b4165ca5d514f204c26c1d7eaf2a1` |
+| 5 | `theorem` | [psiOctaveSquareRootBound_to_allDyadicEnergyBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicPsiOctaveEnergySupplier.lean/declarations/psioctavesquarerootbound-to-alldyadicenergybound.md) | 170 | `result-track:5f513dda1f7a7193ff1d1e06be5546d9bc32dac0607403b08e7e6373e863788e` |
+| 6 | `theorem` | [riemannHypothesis_of_psiOctaveSquareRootBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicPsiOctaveEnergySupplier.lean/declarations/riemannhypothesis-of-psioctavesquarerootbound.md) | 243 | `result-track:1ce303a5b1a9fe652de8d905557998b72c76b2a8faf6cd4eaf99d2f78ad010b7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

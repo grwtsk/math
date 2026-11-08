@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineClaimAndSuppliedProofs.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineClaimAndSuppliedProofs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineClaimAndSuppliedProofs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineClaimAndSuppliedProofs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpecialValueClaim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineClaimAndSuppliedProofs.lean/declarations/specialvalueclaim.md) | 48 | `declaration-track:e21aa1abd76ab41673fa850e153bc5ee20103aa506be2abd64e1dc606beaf328` |
-| 2 | `def` | [spec](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineClaimAndSuppliedProofs.lean/declarations/spec.md) | 66 | `declaration-track:d67c7421c1d62b765b89fcb679028f3427599c183f3288fd0f9e4f2cbc72656a` |
-| 3 | `theorem` | [spec_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineClaimAndSuppliedProofs.lean/declarations/spec-apply.md) | 72 | `result-track:860b5024fad0f85c9f84ff42c41f3328873eaeaf18c1617d036a12e9b2f00d1c` |
-| 4 | `def` | [claim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineClaimAndSuppliedProofs.lean/declarations/claim.md) | 79 | `declaration-track:0628782b589a61506f982ea562300119082f996de6ea5c4b8eef93a8dfe2be9a` |
-| 5 | `theorem` | [certificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineClaimAndSuppliedProofs.lean/declarations/certificate.md) | 85 | `result-track:bcd01acf77446501a9b949752c510d12214f906535e2a9a999ebcf92f4351f19` |
-| 6 | `def` | [conditionalCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineClaimAndSuppliedProofs.lean/declarations/conditionalcertificate.md) | 92 | `declaration-track:df08f80dbd9815545c5f1c27010bb15277f864cc5980d60b3c87e255ca624dbe` |
+| 1 | `structure` | [SpecialValueClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineClaimAndSuppliedProofs.lean/declarations/specialvalueclaim.md) | 48 | `declaration-track:e21aa1abd76ab41673fa850e153bc5ee20103aa506be2abd64e1dc606beaf328` |
+| 2 | `def` | [spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineClaimAndSuppliedProofs.lean/declarations/spec.md) | 66 | `declaration-track:d67c7421c1d62b765b89fcb679028f3427599c183f3288fd0f9e4f2cbc72656a` |
+| 3 | `theorem` | [spec_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineClaimAndSuppliedProofs.lean/declarations/spec-apply.md) | 72 | `result-track:860b5024fad0f85c9f84ff42c41f3328873eaeaf18c1617d036a12e9b2f00d1c` |
+| 4 | `def` | [claim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineClaimAndSuppliedProofs.lean/declarations/claim.md) | 79 | `declaration-track:0628782b589a61506f982ea562300119082f996de6ea5c4b8eef93a8dfe2be9a` |
+| 5 | `theorem` | [certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineClaimAndSuppliedProofs.lean/declarations/certificate.md) | 85 | `result-track:bcd01acf77446501a9b949752c510d12214f906535e2a9a999ebcf92f4351f19` |
+| 6 | `def` | [conditionalCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineClaimAndSuppliedProofs.lean/declarations/conditionalcertificate.md) | 92 | `declaration-track:df08f80dbd9815545c5f1c27010bb15277f864cc5980d60b3c87e255ca624dbe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

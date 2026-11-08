@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationScopeNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationScopeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationScopeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationScopeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RelationScope](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationScopeNamespaced.lean/declarations/relationscope.md) | 20 | `declaration-track:deac7b2eb014c1638de0316708d877a049f9296d43db210cf3ad5d74fe83ec52` |
-| 2 | `def` | [InScope](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationScopeNamespaced.lean/declarations/inscope.md) | 25 | `declaration-track:af8682501bf0170464537ba3fce3b94e1e3d78e9c63db2cee8104ea1da5b63c2` |
-| 3 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationScopeNamespaced.lean/declarations/instance.md) | 32 | `declaration-track:8b7959f509870f89548f0437c399697de7959f279c5b5374cb1af6c5227e2019` |
-| 4 | `def` | [RelationScope.forwardOnly](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationScopeNamespaced.lean/declarations/relationscope-forwardonly.md) | 41 | `declaration-track:5d9ce828d5dd3df36e155ef7a8c8ae7b8f156d14fc6837fb572aa0d29334dea9` |
-| 5 | `def` | [RelationScope.bidirectional](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationScopeNamespaced.lean/declarations/relationscope-bidirectional.md) | 51 | `declaration-track:16c8853737cdf061087222d3aee9f7aeee89aa6f97abd1f74d21814d8f22ded3` |
+| 1 | `structure` | [RelationScope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationScopeNamespaced.lean/declarations/relationscope.md) | 20 | `declaration-track:deac7b2eb014c1638de0316708d877a049f9296d43db210cf3ad5d74fe83ec52` |
+| 2 | `def` | [InScope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationScopeNamespaced.lean/declarations/inscope.md) | 25 | `declaration-track:af8682501bf0170464537ba3fce3b94e1e3d78e9c63db2cee8104ea1da5b63c2` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationScopeNamespaced.lean/declarations/instance.md) | 32 | `declaration-track:8b7959f509870f89548f0437c399697de7959f279c5b5374cb1af6c5227e2019` |
+| 4 | `def` | [RelationScope.forwardOnly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationScopeNamespaced.lean/declarations/relationscope-forwardonly.md) | 41 | `declaration-track:5d9ce828d5dd3df36e155ef7a8c8ae7b8f156d14fc6837fb572aa0d29334dea9` |
+| 5 | `def` | [RelationScope.bidirectional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationScopeNamespaced.lean/declarations/relationscope-bidirectional.md) | 51 | `declaration-track:16c8853737cdf061087222d3aee9f7aeee89aa6f97abd1f74d21814d8f22ded3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

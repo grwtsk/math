@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,17 +60,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [smulZeroClass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/smulzeroclass-source-edition-2.md) | 34 | `declaration-track:dff3f7a3d0b11e43d47681b5c77de7f6a3cd3435e1c1426aa067e7c4fc227302` |
-| 2 | `instance` | [smulZeroClass'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/smulzeroclass.md) | 38 | `declaration-track:b07e498ebbc48cf55fc14c68ed6ecd4c9f486ef184bed145d0dda1075bd12782` |
-| 3 | `instance` | [distribSMul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/distribsmul.md) | 42 | `declaration-track:ccb4c5b5af11310d6b116245a94715ef3e6ca63c63dc77e27aa926630bec1590` |
-| 4 | `instance` | [distribSMul'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/distribsmul-source-edition-2.md) | 47 | `declaration-track:ebf8c82c2547b3a65ae71a4c8cc0713506a6834cd32956f62c1080f1dd45b6fd` |
-| 5 | `instance` | [distribMulAction](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/distribmulaction-source-edition-2.md) | 53 | `declaration-track:8fab33ccec774d9efeb57de2e28e5e9ca876b727057a5087e79d7ccb59b6bf53` |
-| 6 | `instance` | [distribMulAction'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/distribmulaction.md) | 57 | `declaration-track:2dfb4d9ab0e26fa7d3bf486787fe4aa061c42a6708ac51c0485e01358a5a2d0d` |
-| 7 | `theorem` | [single_smul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/single-smul-source-edition-3.md) | 62 | `result-track:c142aeb70e4002cdeb8722ca2917fd38f3c3f05023c11bb653a07a8a1e314ad4` |
-| 8 | `theorem` | [single_smul'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/single-smul-source-edition-2.md) | 69 | `result-track:a198226c6624e9bd3a9c4dfde1302d94f1131bbb22481b0c5c7c4b83294e7835` |
-| 9 | `theorem` | [single_smul₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/single-smul.md) | 73 | `result-track:5fb76e4395c18463de853956a136c7b813d8007b875b6c74bf03f8c56c062190` |
-| 10 | `instance` | [mulDistribMulAction](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/muldistribmulaction-source-edition-2.md) | 78 | `declaration-track:841e2229654f4af45c227d8f5d5560b75b7ea9a58225d5a9c97f869b6febde3a` |
-| 11 | `instance` | [mulDistribMulAction'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/muldistribmulaction.md) | 85 | `declaration-track:100d3643cdfadcd81fcd5ba1df0285930f0e102bbabb16eb72b796133e04c119` |
+| 1 | `instance` | [smulZeroClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/smulzeroclass-source-edition-2.md) | 34 | `declaration-track:dff3f7a3d0b11e43d47681b5c77de7f6a3cd3435e1c1426aa067e7c4fc227302` |
+| 2 | `instance` | [smulZeroClass'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/smulzeroclass.md) | 38 | `declaration-track:b07e498ebbc48cf55fc14c68ed6ecd4c9f486ef184bed145d0dda1075bd12782` |
+| 3 | `instance` | [distribSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/distribsmul.md) | 42 | `declaration-track:ccb4c5b5af11310d6b116245a94715ef3e6ca63c63dc77e27aa926630bec1590` |
+| 4 | `instance` | [distribSMul'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/distribsmul-source-edition-2.md) | 47 | `declaration-track:ebf8c82c2547b3a65ae71a4c8cc0713506a6834cd32956f62c1080f1dd45b6fd` |
+| 5 | `instance` | [distribMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/distribmulaction-source-edition-2.md) | 53 | `declaration-track:8fab33ccec774d9efeb57de2e28e5e9ca876b727057a5087e79d7ccb59b6bf53` |
+| 6 | `instance` | [distribMulAction'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/distribmulaction.md) | 57 | `declaration-track:2dfb4d9ab0e26fa7d3bf486787fe4aa061c42a6708ac51c0485e01358a5a2d0d` |
+| 7 | `theorem` | [single_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/single-smul-source-edition-3.md) | 62 | `result-track:c142aeb70e4002cdeb8722ca2917fd38f3c3f05023c11bb653a07a8a1e314ad4` |
+| 8 | `theorem` | [single_smul'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/single-smul-source-edition-2.md) | 69 | `result-track:a198226c6624e9bd3a9c4dfde1302d94f1131bbb22481b0c5c7c4b83294e7835` |
+| 9 | `theorem` | [single_smul₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/single-smul.md) | 73 | `result-track:5fb76e4395c18463de853956a136c7b813d8007b875b6c74bf03f8c56c062190` |
+| 10 | `instance` | [mulDistribMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/muldistribmulaction-source-edition-2.md) | 78 | `declaration-track:841e2229654f4af45c227d8f5d5560b75b7ea9a58225d5a9c97f869b6febde3a` |
+| 11 | `instance` | [mulDistribMulAction'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionPi.lean/declarations/muldistribmulaction.md) | 85 | `declaration-track:100d3643cdfadcd81fcd5ba1df0285930f0e102bbabb16eb72b796133e04c119` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

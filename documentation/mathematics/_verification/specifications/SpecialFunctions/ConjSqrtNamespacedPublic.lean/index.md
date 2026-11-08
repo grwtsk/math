@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/ConjSqrtNamespacedPublic.lean/index.md) · [Full source](../../../../SpecialFunctions/ConjSqrtNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ConjSqrtNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ConjSqrtNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [conjSqrt](../../../../SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/conjsqrt.md) | 40 | `declaration-track:001ef1774d5c870f76adb0b1e7c3c23a25a84ca041244fdcf27debc6113cd17d` |
-| 2 | `lemma` | [toLinearMap_conjSqrt](../../../../SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/tolinearmap-conjsqrt.md) | 43 | `result-track:2c80ef2301894d7bfebd1d58faa7887e5bf9a5a784c084aabf8e231b2539e4b7` |
-| 3 | `lemma` | [conjSqrt_apply](../../../../SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/conjsqrt-apply.md) | 46 | `result-track:d96ffd04a3efbd9fb01365090b6cd6852eb53d23ec8501cd05ca44f9cfd97f17` |
-| 4 | `lemma` | [conjSqrt_of_not_nonneg](../../../../SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/conjsqrt-of-not-nonneg.md) | 48 | `result-track:2aef316423ed11237c119beb606bed1dc2f3fc65c0d4b73fcd768a02e7e8f3e7` |
-| 5 | `lemma` | [conjSqrt_monotone](../../../../SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/conjsqrt-monotone.md) | 51 | `result-track:0ca7591208ca604c8a922d23838fa65919487ec5a61ac29fad2d63c4d9afac13` |
-| 6 | `lemma` | [conjSqrt_le_conjSqrt](../../../../SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/conjsqrt-le-conjsqrt.md) | 58 | `result-track:be263875cd42c5b72fcdc48b03f0d887ee4110402a8e8642ba9f506bf9b42401` |
-| 7 | `lemma` | [isStrictlyPositive_conjSqrt_iff](../../../../SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/isstrictlypositive-conjsqrt-iff.md) | 66 | `result-track:c11eb7087a4c9d7dfbeef985c75fd756762b96a935ef2545f706379a641b6543` |
-| 8 | `lemma` | [ringInverse_conjSqrt](../../../../SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/ringinverse-conjsqrt.md) | 73 | `result-track:95250e8287eff01aa55190e4f4c0e5c88d146d7d3cf77ee96667283eeb36c87d` |
-| 9 | `lemma` | [conjSqrt_ringInverse_conjSqrt](../../../../SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/conjsqrt-ringinverse-conjsqrt.md) | 81 | `result-track:bd6388b549b12d29b80cb61826b3c633795faa45db3865cb0e482c977e1ec76d` |
-| 10 | `lemma` | [conjSqrt_conjSqrt_ringInverse](../../../../SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/conjsqrt-conjsqrt-ringinverse.md) | 90 | `result-track:090554ff312745ba0900fc3346ee652e51242cdc231b152ab8c04610143b5fd5` |
-| 11 | `lemma` | [conjSqrt_one](../../../../SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/conjsqrt-one.md) | 95 | `result-track:4a69ea5ec5ccc8dd20cf72a43848ecb6d3457433a34368d4e990ab8dbef22186` |
-| 12 | `lemma` | [conjSqrt_ringInverse_self](../../../../SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/conjsqrt-ringinverse-self.md) | 99 | `result-track:97cbff1e0daf93748b6060027238e1cecc34fb2eab68c5b9e47852f878931c26` |
+| 1 | `def` | [conjSqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/conjsqrt.md) | 40 | `declaration-track:001ef1774d5c870f76adb0b1e7c3c23a25a84ca041244fdcf27debc6113cd17d` |
+| 2 | `lemma` | [toLinearMap_conjSqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/tolinearmap-conjsqrt.md) | 43 | `result-track:2c80ef2301894d7bfebd1d58faa7887e5bf9a5a784c084aabf8e231b2539e4b7` |
+| 3 | `lemma` | [conjSqrt_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/conjsqrt-apply.md) | 46 | `result-track:d96ffd04a3efbd9fb01365090b6cd6852eb53d23ec8501cd05ca44f9cfd97f17` |
+| 4 | `lemma` | [conjSqrt_of_not_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/conjsqrt-of-not-nonneg.md) | 48 | `result-track:2aef316423ed11237c119beb606bed1dc2f3fc65c0d4b73fcd768a02e7e8f3e7` |
+| 5 | `lemma` | [conjSqrt_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/conjsqrt-monotone.md) | 51 | `result-track:0ca7591208ca604c8a922d23838fa65919487ec5a61ac29fad2d63c4d9afac13` |
+| 6 | `lemma` | [conjSqrt_le_conjSqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/conjsqrt-le-conjsqrt.md) | 58 | `result-track:be263875cd42c5b72fcdc48b03f0d887ee4110402a8e8642ba9f506bf9b42401` |
+| 7 | `lemma` | [isStrictlyPositive_conjSqrt_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/isstrictlypositive-conjsqrt-iff.md) | 66 | `result-track:c11eb7087a4c9d7dfbeef985c75fd756762b96a935ef2545f706379a641b6543` |
+| 8 | `lemma` | [ringInverse_conjSqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/ringinverse-conjsqrt.md) | 73 | `result-track:95250e8287eff01aa55190e4f4c0e5c88d146d7d3cf77ee96667283eeb36c87d` |
+| 9 | `lemma` | [conjSqrt_ringInverse_conjSqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/conjsqrt-ringinverse-conjsqrt.md) | 81 | `result-track:bd6388b549b12d29b80cb61826b3c633795faa45db3865cb0e482c977e1ec76d` |
+| 10 | `lemma` | [conjSqrt_conjSqrt_ringInverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/conjsqrt-conjsqrt-ringinverse.md) | 90 | `result-track:090554ff312745ba0900fc3346ee652e51242cdc231b152ab8c04610143b5fd5` |
+| 11 | `lemma` | [conjSqrt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/conjsqrt-one.md) | 95 | `result-track:4a69ea5ec5ccc8dd20cf72a43848ecb6d3457433a34368d4e990ab8dbef22186` |
+| 12 | `lemma` | [conjSqrt_ringInverse_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ConjSqrtNamespacedPublic.lean/declarations/conjsqrt-ringinverse-self.md) | 99 | `result-track:97cbff1e0daf93748b6060027238e1cecc34fb2eab68c5b9e47852f878931c26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

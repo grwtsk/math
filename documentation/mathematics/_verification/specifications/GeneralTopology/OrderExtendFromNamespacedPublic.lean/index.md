@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/OrderExtendFromNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/OrderExtendFromNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderExtendFromNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderExtendFromNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [continuousOn_Icc_extendFrom_Ioo](../../../../GeneralTopology/OrderExtendFromNamespacedPublic.lean/declarations/continuouson-icc-extendfrom-ioo.md) | 36 | `result-track:f0e0b0d064b57f21ef19cdb3faf5131a8b15ec41ba3c50f0638318f4afba1ccb` |
-| 2 | `theorem` | [continuousOn_uIcc_extendFrom_uIoo](../../../../GeneralTopology/OrderExtendFromNamespacedPublic.lean/declarations/continuouson-uicc-extendfrom-uioo.md) | 49 | `result-track:225c24fa4594333cc5be47a1b1cf770f2b4533e7cb4919001fbcb64bf6cd19fa` |
-| 3 | `theorem` | [continuousOn_Ico_extendFrom_Ioo](../../../../GeneralTopology/OrderExtendFromNamespacedPublic.lean/declarations/continuouson-ico-extendfrom-ioo.md) | 63 | `result-track:5b766af49f5e46491017fd055c45dcd0d8bae00cf72555847fb956c23910f879` |
-| 4 | `theorem` | [continuousOn_Ioc_extendFrom_Ioo](../../../../GeneralTopology/OrderExtendFromNamespacedPublic.lean/declarations/continuouson-ioc-extendfrom-ioo.md) | 77 | `result-track:ce7e3ee41a70560c2c06e2c091f9acd78630898a460eb4f7c76eb8c7cd3cd3d0` |
-| 5 | `theorem` | [eq_lim_at_left_extendFrom_Ioo](../../../../GeneralTopology/OrderExtendFromNamespacedPublic.lean/declarations/eq-lim-at-left-extendfrom-ioo.md) | 91 | `result-track:51101e7a466d7469068d68ef3d837680330c46e86f7ecfed3479e20716f01d03` |
-| 6 | `theorem` | [eq_lim_at_right_extendFrom_Ioo](../../../../GeneralTopology/OrderExtendFromNamespacedPublic.lean/declarations/eq-lim-at-right-extendfrom-ioo.md) | 98 | `result-track:15cdd85a942eb8e9fa658d8a2d6dcedd341683384bbc94713927644bf8c5635c` |
-| 7 | `theorem` | [eq_lim_at_left_extendFrom_uIoo](../../../../GeneralTopology/OrderExtendFromNamespacedPublic.lean/declarations/eq-lim-at-left-extendfrom-uioo.md) | 105 | `result-track:dbf928ed7dfd8ed215024855b5d407fdc4194cf618de7975571fd2fb4ad5032a` |
-| 8 | `theorem` | [eq_lim_at_right_extendFrom_uIoo](../../../../GeneralTopology/OrderExtendFromNamespacedPublic.lean/declarations/eq-lim-at-right-extendfrom-uioo.md) | 109 | `result-track:abdf2d506217b37b68fa70d5d1d0f094c3a30f0f943077e187516df87944ba30` |
+| 1 | `theorem` | [continuousOn_Icc_extendFrom_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderExtendFromNamespacedPublic.lean/declarations/continuouson-icc-extendfrom-ioo.md) | 36 | `result-track:f0e0b0d064b57f21ef19cdb3faf5131a8b15ec41ba3c50f0638318f4afba1ccb` |
+| 2 | `theorem` | [continuousOn_uIcc_extendFrom_uIoo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderExtendFromNamespacedPublic.lean/declarations/continuouson-uicc-extendfrom-uioo.md) | 49 | `result-track:225c24fa4594333cc5be47a1b1cf770f2b4533e7cb4919001fbcb64bf6cd19fa` |
+| 3 | `theorem` | [continuousOn_Ico_extendFrom_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderExtendFromNamespacedPublic.lean/declarations/continuouson-ico-extendfrom-ioo.md) | 63 | `result-track:5b766af49f5e46491017fd055c45dcd0d8bae00cf72555847fb956c23910f879` |
+| 4 | `theorem` | [continuousOn_Ioc_extendFrom_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderExtendFromNamespacedPublic.lean/declarations/continuouson-ioc-extendfrom-ioo.md) | 77 | `result-track:ce7e3ee41a70560c2c06e2c091f9acd78630898a460eb4f7c76eb8c7cd3cd3d0` |
+| 5 | `theorem` | [eq_lim_at_left_extendFrom_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderExtendFromNamespacedPublic.lean/declarations/eq-lim-at-left-extendfrom-ioo.md) | 91 | `result-track:51101e7a466d7469068d68ef3d837680330c46e86f7ecfed3479e20716f01d03` |
+| 6 | `theorem` | [eq_lim_at_right_extendFrom_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderExtendFromNamespacedPublic.lean/declarations/eq-lim-at-right-extendfrom-ioo.md) | 98 | `result-track:15cdd85a942eb8e9fa658d8a2d6dcedd341683384bbc94713927644bf8c5635c` |
+| 7 | `theorem` | [eq_lim_at_left_extendFrom_uIoo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderExtendFromNamespacedPublic.lean/declarations/eq-lim-at-left-extendfrom-uioo.md) | 105 | `result-track:dbf928ed7dfd8ed215024855b5d407fdc4194cf618de7975571fd2fb4ad5032a` |
+| 8 | `theorem` | [eq_lim_at_right_extendFrom_uIoo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderExtendFromNamespacedPublic.lean/declarations/eq-lim-at-right-extendfrom-uioo.md) | 109 | `result-track:abdf2d506217b37b68fa70d5d1d0f094c3a30f0f943077e187516df87944ba30` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

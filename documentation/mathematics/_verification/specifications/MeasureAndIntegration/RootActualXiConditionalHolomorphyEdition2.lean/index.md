@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RootActualXiConditionalHolomorphyEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RootActualXiConditionalHolomorphyEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiConditionalHolomorphyEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiConditionalHolomorphyEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [time_exp_bound](../../../../MeasureAndIntegration/RootActualXiConditionalHolomorphyEdition2.lean/declarations/time-exp-bound.md) | 20 | `result-track:be12628897ce541a51c5729cf2f6ee18278bb8ac40c7fc58c595e33e91daf00e` |
-| 2 | `theorem` | [derivative_norm_bound](../../../../MeasureAndIntegration/RootActualXiConditionalHolomorphyEdition2.lean/declarations/derivative-norm-bound.md) | 27 | `result-track:b69691b87de4d9f82636ad06649a9a4ac3f9f3fa6fb26c7f307deef629ae992e` |
-| 3 | `theorem` | [kernel_hasDerivAt](../../../../MeasureAndIntegration/RootActualXiConditionalHolomorphyEdition2.lean/declarations/kernel-hasderivat.md) | 50 | `result-track:a701f60d3edbc49b17c13905a435822fce7c1364d39ef88bd2b4701be3c798ef` |
-| 4 | `theorem` | [actualXiComplexLaplace_hasDerivAt_of_future_average](../../../../MeasureAndIntegration/RootActualXiConditionalHolomorphyEdition2.lean/declarations/actualxicomplexlaplace-hasderivat-of-future-average.md) | 60 | `result-track:29997396feaa9502e84078fab5a721a1998797af54fff54c129cd93ddc53fcac` |
-| 5 | `theorem` | [actualXiComplexLaplace_analyticOnNhd_of_future_average](../../../../MeasureAndIntegration/RootActualXiConditionalHolomorphyEdition2.lean/declarations/actualxicomplexlaplace-analyticonnhd-of-future-average.md) | 112 | `result-track:9abfdde9c6bc19a0665f26095719e6408fd0fb0fb8c06a3ace5f6f1e6f73ece6` |
+| 1 | `theorem` | [time_exp_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiConditionalHolomorphyEdition2.lean/declarations/time-exp-bound.md) | 20 | `result-track:be12628897ce541a51c5729cf2f6ee18278bb8ac40c7fc58c595e33e91daf00e` |
+| 2 | `theorem` | [derivative_norm_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiConditionalHolomorphyEdition2.lean/declarations/derivative-norm-bound.md) | 27 | `result-track:b69691b87de4d9f82636ad06649a9a4ac3f9f3fa6fb26c7f307deef629ae992e` |
+| 3 | `theorem` | [kernel_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiConditionalHolomorphyEdition2.lean/declarations/kernel-hasderivat.md) | 50 | `result-track:a701f60d3edbc49b17c13905a435822fce7c1364d39ef88bd2b4701be3c798ef` |
+| 4 | `theorem` | [actualXiComplexLaplace_hasDerivAt_of_future_average](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiConditionalHolomorphyEdition2.lean/declarations/actualxicomplexlaplace-hasderivat-of-future-average.md) | 60 | `result-track:29997396feaa9502e84078fab5a721a1998797af54fff54c129cd93ddc53fcac` |
+| 5 | `theorem` | [actualXiComplexLaplace_analyticOnNhd_of_future_average](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiConditionalHolomorphyEdition2.lean/declarations/actualxicomplexlaplace-analyticonnhd-of-future-average.md) | 112 | `result-track:9abfdde9c6bc19a0665f26095719e6408fd0fb0fb8c06a3ace5f6f1e6f73ece6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

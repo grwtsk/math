@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,14 +62,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IsNilpotent.charpoly_eq_X_pow_finrank](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/declarations/isnilpotent-charpoly-eq-x-pow-finrank.md) | 47 | `result-track:d721c727f6731d095704a324e78eb7341d551d546512fc7cfc5bf77ebaeca144` |
-| 2 | `lemma` | [isNilpotent_iff_charpoly](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/declarations/isnilpotent-iff-charpoly.md) | 57 | `result-track:eba647e1a3790cda7c7829264834c26381c86e680fe4e81fb0a2af304860ac2d` |
-| 3 | `lemma` | [charpoly_nilpotent_tfae](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/declarations/charpoly-nilpotent-tfae.md) | 63 | `result-track:617c55c5c50bc9511e2bb5c05dc14eac66289a399eeaffb9f19f3f8a2dc156d8` |
-| 4 | `lemma` | [charpoly_eq_X_pow_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/declarations/charpoly-eq-x-pow-iff.md) | 88 | `result-track:ea953d516611126e8d0306530686ec5c8b44158d23d1c86cf999c3bbe6372a04` |
-| 5 | `lemma` | [hasEigenvalue_zero_tfae](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/declarations/haseigenvalue-zero-tfae.md) | 93 | `result-track:981d158a631db703d06095a704d07cdef922b712fa97ca3f5c3ba07474c19ee0` |
-| 6 | `lemma` | [charpoly_constantCoeff_eq_zero_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/declarations/charpoly-constantcoeff-eq-zero-iff.md) | 124 | `result-track:a2da67c7cab3f1e8a404fe38b863ab8368a7e7765e7438e387d2fd199eea8407` |
-| 7 | `lemma` | [not_hasEigenvalue_zero_tfae](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/declarations/not-haseigenvalue-zero-tfae.md) | 129 | `result-track:a0001fde621303ea217706186ce4f07cc9ea56442ae3ec494407eabd75fb4b2d` |
-| 8 | `lemma` | [finrank_maxGenEigenspace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/declarations/finrank-maxgeneigenspace.md) | 145 | `result-track:d80577199c4cd9e82ba18016a24ec5c395671066bd20fd30bb6167eba29326c0` |
+| 1 | `lemma` | [IsNilpotent.charpoly_eq_X_pow_finrank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/declarations/isnilpotent-charpoly-eq-x-pow-finrank.md) | 47 | `result-track:d721c727f6731d095704a324e78eb7341d551d546512fc7cfc5bf77ebaeca144` |
+| 2 | `lemma` | [isNilpotent_iff_charpoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/declarations/isnilpotent-iff-charpoly.md) | 57 | `result-track:eba647e1a3790cda7c7829264834c26381c86e680fe4e81fb0a2af304860ac2d` |
+| 3 | `lemma` | [charpoly_nilpotent_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/declarations/charpoly-nilpotent-tfae.md) | 63 | `result-track:617c55c5c50bc9511e2bb5c05dc14eac66289a399eeaffb9f19f3f8a2dc156d8` |
+| 4 | `lemma` | [charpoly_eq_X_pow_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/declarations/charpoly-eq-x-pow-iff.md) | 88 | `result-track:ea953d516611126e8d0306530686ec5c8b44158d23d1c86cf999c3bbe6372a04` |
+| 5 | `lemma` | [hasEigenvalue_zero_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/declarations/haseigenvalue-zero-tfae.md) | 93 | `result-track:981d158a631db703d06095a704d07cdef922b712fa97ca3f5c3ba07474c19ee0` |
+| 6 | `lemma` | [charpoly_constantCoeff_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/declarations/charpoly-constantcoeff-eq-zero-iff.md) | 124 | `result-track:a2da67c7cab3f1e8a404fe38b863ab8368a7e7765e7438e387d2fd199eea8407` |
+| 7 | `lemma` | [not_hasEigenvalue_zero_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/declarations/not-haseigenvalue-zero-tfae.md) | 129 | `result-track:a0001fde621303ea217706186ce4f07cc9ea56442ae3ec494407eabd75fb4b2d` |
+| 8 | `lemma` | [finrank_maxGenEigenspace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroNamespaced.lean/declarations/finrank-maxgeneigenspace.md) | 145 | `result-track:d80577199c4cd9e82ba18016a24ec5c395671066bd20fd30bb6167eba29326c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

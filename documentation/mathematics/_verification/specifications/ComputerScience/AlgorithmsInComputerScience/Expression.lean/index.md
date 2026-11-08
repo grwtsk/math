@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Expression.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Expression.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Expression.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Expression.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ExpressionView](../../../../../ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/expressionview.md) | 14 | `declaration-track:d7c79fa3e19c2a78716fc1db2875e0f2254284db5c23c098227b0d303afb4c1d` |
-| 2 | `structure` | [ExpressionReference](../../../../../ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/expressionreference.md) | 19 | `declaration-track:01f4670c291a056da1d9f9f6f0c3636498c679656e8894e95de9f5682f433afb` |
-| 3 | `def` | [binderInfoName](../../../../../ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/binderinfoname.md) | 28 | `declaration-track:03454448b9967df452f94483c125c0b08f84dc556bb045a8c135ff6f0897ec8b` |
-| 4 | `def` | [parameterPosition?](../../../../../ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/parameterposition.md) | 34 | `declaration-track:34bcc8d4301c6188ebac2317f3423958262efd134289d6a013ee8ff93769bb09` |
-| 5 | `def` | [emitLevel](../../../../../ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/emitlevel.md) | 41 | `declaration-track:6c397e4b64d7ce753ab2852dab584942a686a8074b50d01d7153824a9f34e9ee` |
-| 6 | `def` | [emitLevels](../../../../../ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/emitlevels.md) | 64 | `declaration-track:2dfd3f0511e7f80435627f719442b4f3975bce766017e0f52806466579644c00` |
-| 7 | `def` | [emitExpressionView](../../../../../ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/emitexpressionview.md) | 71 | `declaration-track:adf3989887cf8e60ef08622f7375f0554938b3d3b1242ffb9ff6ed445ed2c9db` |
-| 8 | `def` | [metadataPayloads](../../../../../ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/metadatapayloads.md) | 144 | `declaration-track:d54526000167e6a4636f731e5186cd412d3b60e2f67da3b1dd4113285cd2d5d3` |
-| 9 | `def` | [containsFreeVariable](../../../../../ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/containsfreevariable.md) | 154 | `declaration-track:43be68ad87c20f64c4e55f3f2f74e6b54ec3ee69f1645965b77dceda056fd3ad` |
-| 10 | `def` | [containsMetavariable](../../../../../ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/containsmetavariable.md) | 165 | `declaration-track:58dd65d69b3713f15b574d25c56bd7185e96670a7a9547852ac1d905718fe42b` |
-| 11 | `def` | [emitMetadata](../../../../../ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/emitmetadata.md) | 176 | `declaration-track:74cf4adc4526e85b9bd619d3607918701ac447d7aa025c39fdffe9e5357863f7` |
-| 12 | `def` | [emitExpression](../../../../../ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/emitexpression.md) | 184 | `declaration-track:c60a2a2800b4ba3a9d9e73e299cf805f1a476f13484a1cedc2ec4135c103b35e` |
+| 1 | `inductive` | [ExpressionView](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/expressionview.md) | 14 | `declaration-track:d7c79fa3e19c2a78716fc1db2875e0f2254284db5c23c098227b0d303afb4c1d` |
+| 2 | `structure` | [ExpressionReference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/expressionreference.md) | 19 | `declaration-track:01f4670c291a056da1d9f9f6f0c3636498c679656e8894e95de9f5682f433afb` |
+| 3 | `def` | [binderInfoName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/binderinfoname.md) | 28 | `declaration-track:03454448b9967df452f94483c125c0b08f84dc556bb045a8c135ff6f0897ec8b` |
+| 4 | `def` | [parameterPosition?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/parameterposition.md) | 34 | `declaration-track:34bcc8d4301c6188ebac2317f3423958262efd134289d6a013ee8ff93769bb09` |
+| 5 | `def` | [emitLevel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/emitlevel.md) | 41 | `declaration-track:6c397e4b64d7ce753ab2852dab584942a686a8074b50d01d7153824a9f34e9ee` |
+| 6 | `def` | [emitLevels](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/emitlevels.md) | 64 | `declaration-track:2dfd3f0511e7f80435627f719442b4f3975bce766017e0f52806466579644c00` |
+| 7 | `def` | [emitExpressionView](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/emitexpressionview.md) | 71 | `declaration-track:adf3989887cf8e60ef08622f7375f0554938b3d3b1242ffb9ff6ed445ed2c9db` |
+| 8 | `def` | [metadataPayloads](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/metadatapayloads.md) | 144 | `declaration-track:d54526000167e6a4636f731e5186cd412d3b60e2f67da3b1dd4113285cd2d5d3` |
+| 9 | `def` | [containsFreeVariable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/containsfreevariable.md) | 154 | `declaration-track:43be68ad87c20f64c4e55f3f2f74e6b54ec3ee69f1645965b77dceda056fd3ad` |
+| 10 | `def` | [containsMetavariable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/containsmetavariable.md) | 165 | `declaration-track:58dd65d69b3713f15b574d25c56bd7185e96670a7a9547852ac1d905718fe42b` |
+| 11 | `def` | [emitMetadata](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/emitmetadata.md) | 176 | `declaration-track:74cf4adc4526e85b9bd619d3607918701ac447d7aa025c39fdffe9e5357863f7` |
+| 12 | `def` | [emitExpression](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Expression.lean/declarations/emitexpression.md) | 184 | `declaration-track:c60a2a2800b4ba3a9d9e73e299cf805f1a476f13484a1cedc2ec4135c103b35e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

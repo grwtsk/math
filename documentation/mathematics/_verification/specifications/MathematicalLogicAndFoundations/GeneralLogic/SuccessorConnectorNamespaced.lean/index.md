@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuccessorConnectorNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuccessorConnectorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuccessorConnectorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuccessorConnectorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SuccessorStateConnector](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuccessorConnectorNamespaced.lean/declarations/successorstateconnector.md) | 19 | `declaration-track:39d6483ac52909d3a6aab7b302f2c535b1bda89ef33ce631d379d75882da6d01` |
-| 2 | `theorem` | [successor_projection_surjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuccessorConnectorNamespaced.lean/declarations/successor-projection-surjective.md) | 33 | `result-track:861c733d8b9a890e709d92668ebe1f547a7ad5803359a6b5e5aa5044ff986287` |
-| 3 | `structure` | [SuccessorInvariantLawProjection](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuccessorConnectorNamespaced.lean/declarations/successorinvariantlawprojection.md) | 41 | `declaration-track:b5e949283aed282a66d3209fc18b2f29e3805c01aad0e9f5cfca575bd28bb9dd` |
-| 4 | `theorem` | [successor_invariant_law_projects](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuccessorConnectorNamespaced.lean/declarations/successor-invariant-law-projects.md) | 51 | `result-track:fce31c66443d0f1eef3228efea2db4bbd7327a65310f821d3a93d3318567cd94` |
+| 1 | `structure` | [SuccessorStateConnector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuccessorConnectorNamespaced.lean/declarations/successorstateconnector.md) | 19 | `declaration-track:39d6483ac52909d3a6aab7b302f2c535b1bda89ef33ce631d379d75882da6d01` |
+| 2 | `theorem` | [successor_projection_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuccessorConnectorNamespaced.lean/declarations/successor-projection-surjective.md) | 33 | `result-track:861c733d8b9a890e709d92668ebe1f547a7ad5803359a6b5e5aa5044ff986287` |
+| 3 | `structure` | [SuccessorInvariantLawProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuccessorConnectorNamespaced.lean/declarations/successorinvariantlawprojection.md) | 41 | `declaration-track:b5e949283aed282a66d3209fc18b2f29e3805c01aad0e9f5cfca575bd28bb9dd` |
+| 4 | `theorem` | [successor_invariant_law_projects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuccessorConnectorNamespaced.lean/declarations/successor-invariant-law-projects.md) | 51 | `result-track:fce31c66443d0f1eef3228efea2db4bbd7327a65310f821d3a93d3318567cd94` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

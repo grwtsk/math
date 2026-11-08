@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/EmbeddingNamespaced.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/EmbeddingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/EmbeddingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/EmbeddingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_embedding_disjoint_range_of_add_le_ENat_card](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/EmbeddingNamespaced.lean/declarations/exists-embedding-disjoint-range-of-add-le-enat-card.md) | 49 | `result-track:f864f30e696163c98b9e3b94b773e3d53bec9fd29e10304c2889a54d800e0b51` |
-| 2 | `theorem` | [exists_embedding_disjoint_range_of_add_le_Nat_card](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/EmbeddingNamespaced.lean/declarations/exists-embedding-disjoint-range-of-add-le-nat-card.md) | 67 | `result-track:78db5a3e2045f15b21e2b12f11392665dc9b833d93d2885bc9addcac756acdce` |
-| 3 | `theorem` | [restrictSurjective_of_add_le_ENatCard](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/EmbeddingNamespaced.lean/declarations/restrictsurjective-of-add-le-enatcard.md) | 73 | `result-track:86b977200777ccababee4e74d7a91c5ede84597782ee569220cd60a4b5e68dd8` |
-| 4 | `theorem` | [restrictSurjective_of_add_le_natCard](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/EmbeddingNamespaced.lean/declarations/restrictsurjective-of-add-le-natcard.md) | 83 | `result-track:8544589a35b10e88acc48e3d9385199c1554943bac11126d97a38d5cc2f8f59d` |
+| 1 | `theorem` | [exists_embedding_disjoint_range_of_add_le_ENat_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/EmbeddingNamespaced.lean/declarations/exists-embedding-disjoint-range-of-add-le-enat-card.md) | 49 | `result-track:f864f30e696163c98b9e3b94b773e3d53bec9fd29e10304c2889a54d800e0b51` |
+| 2 | `theorem` | [exists_embedding_disjoint_range_of_add_le_Nat_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/EmbeddingNamespaced.lean/declarations/exists-embedding-disjoint-range-of-add-le-nat-card.md) | 67 | `result-track:78db5a3e2045f15b21e2b12f11392665dc9b833d93d2885bc9addcac756acdce` |
+| 3 | `theorem` | [restrictSurjective_of_add_le_ENatCard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/EmbeddingNamespaced.lean/declarations/restrictsurjective-of-add-le-enatcard.md) | 73 | `result-track:86b977200777ccababee4e74d7a91c5ede84597782ee569220cd60a4b5e68dd8` |
+| 4 | `theorem` | [restrictSurjective_of_add_le_natCard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/EmbeddingNamespaced.lean/declarations/restrictsurjective-of-add-le-natcard.md) | 83 | `result-track:8544589a35b10e88acc48e3d9385199c1554943bac11126d97a38d5cc2f8f59d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

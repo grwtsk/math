@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LocalizationFreeNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LocalizationFreeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationFreeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationFreeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Module.FinitePresentation.exists_basis_localizedModule_powers](../../../../CommutativeAlgebra/LocalizationFreeNamespaced.lean/declarations/module-finitepresentation-exists-basis-localizedmodule-powers.md) | 46 | `result-track:7fd89763db1be7449767d8e26fa287c70a18e24cae0bc415fa2d6d1885526522` |
-| 2 | `lemma` | [Module.FinitePresentation.exists_free_localizedModule_powers](../../../../CommutativeAlgebra/LocalizationFreeNamespaced.lean/declarations/module-finitepresentation-exists-free-localizedmodule-powers.md) | 83 | `result-track:908a84344cede9f6323ef36c210c6fd3815545580c61a50f5b934d6e27ca8095` |
+| 1 | `lemma` | [Module.FinitePresentation.exists_basis_localizedModule_powers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationFreeNamespaced.lean/declarations/module-finitepresentation-exists-basis-localizedmodule-powers.md) | 46 | `result-track:7fd89763db1be7449767d8e26fa287c70a18e24cae0bc415fa2d6d1885526522` |
+| 2 | `lemma` | [Module.FinitePresentation.exists_free_localizedModule_powers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationFreeNamespaced.lean/declarations/module-finitepresentation-exists-free-localizedmodule-powers.md) | 83 | `result-track:908a84344cede9f6323ef36c210c6fd3815545580c61a50f5b934d6e27ca8095` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

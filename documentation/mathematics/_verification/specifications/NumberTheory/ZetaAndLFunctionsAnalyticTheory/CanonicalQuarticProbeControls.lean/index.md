@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalQuarticProbeControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalQuarticProbeControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalQuarticProbeControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalQuarticProbeControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CanonicalQuarticProbe.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CanonicalQuarticProbe.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [critical_line_probe_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalQuarticProbeControls.lean/declarations/critical-line-probe-zero.md) | 18 | `result-track:789dd58a6b5b038f3052503dc69dcf2da2e4152babba12d676b3859301936bdf` |
-| 2 | `theorem` | [critical_line_energy_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalQuarticProbeControls.lean/declarations/critical-line-energy-zero.md) | 23 | `result-track:1a0f030cf9188f3f61eb3bf010a4e6c6cd093687bee659fa958630d76d10448f` |
-| 3 | `theorem` | [sign_witness_control](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalQuarticProbeControls.lean/declarations/sign-witness-control.md) | 28 | `result-track:2490b7ac434287c7d98dfd0b425fe4f76565929f930775d5e096650d66cdc24f` |
-| 4 | `theorem` | [no_positive_exact_orientation_at_unit](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalQuarticProbeControls.lean/declarations/no-positive-exact-orientation-at-unit.md) | 33 | `result-track:68a2f8aa2fb4cefcf66f9bfed75d3b771827018b3dca57ca87412a26cdaa256c` |
-| 5 | `theorem` | [stage_source_fixed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalQuarticProbeControls.lean/declarations/stage-source-fixed.md) | 42 | `result-track:241b5a486c4041b9b5c8b77a1d6663d0f8016514e0fe9e8ea13dd4eb22fb7fbe` |
-| 6 | `theorem` | [triangle_remains_three](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalQuarticProbeControls.lean/declarations/triangle-remains-three.md) | 48 | `result-track:5e9e65fce46a7bfff97b081f64ffcb94961e2b0e3eb04c7a6d6b280e504de4f7` |
+| 1 | `theorem` | [critical_line_probe_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalQuarticProbeControls.lean/declarations/critical-line-probe-zero.md) | 18 | `result-track:789dd58a6b5b038f3052503dc69dcf2da2e4152babba12d676b3859301936bdf` |
+| 2 | `theorem` | [critical_line_energy_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalQuarticProbeControls.lean/declarations/critical-line-energy-zero.md) | 23 | `result-track:1a0f030cf9188f3f61eb3bf010a4e6c6cd093687bee659fa958630d76d10448f` |
+| 3 | `theorem` | [sign_witness_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalQuarticProbeControls.lean/declarations/sign-witness-control.md) | 28 | `result-track:2490b7ac434287c7d98dfd0b425fe4f76565929f930775d5e096650d66cdc24f` |
+| 4 | `theorem` | [no_positive_exact_orientation_at_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalQuarticProbeControls.lean/declarations/no-positive-exact-orientation-at-unit.md) | 33 | `result-track:68a2f8aa2fb4cefcf66f9bfed75d3b771827018b3dca57ca87412a26cdaa256c` |
+| 5 | `theorem` | [stage_source_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalQuarticProbeControls.lean/declarations/stage-source-fixed.md) | 42 | `result-track:241b5a486c4041b9b5c8b77a1d6663d0f8016514e0fe9e8ea13dd4eb22fb7fbe` |
+| 6 | `theorem` | [triangle_remains_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalQuarticProbeControls.lean/declarations/triangle-remains-three.md) | 48 | `result-track:5e9e65fce46a7bfff97b081f64ffcb94961e2b0e3eb04c7a6d6b280e504de4f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/RingInverseOrderNamespacedPublic.lean/index.md) · [Full source](../../../../SpecialFunctions/RingInverseOrderNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RingInverseOrderNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RingInverseOrderNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [convexOn_ringInverse](../../../../SpecialFunctions/RingInverseOrderNamespacedPublic.lean/declarations/convexon-ringinverse.md) | 43 | `result-track:46428c4a84a6bbada4f2bb985b35b33d81e330a2f0ff4fcce43603f5e28fb1b7` |
-| 2 | `lemma` | [convexOn_ringInverse_algebraMap_add](../../../../SpecialFunctions/RingInverseOrderNamespacedPublic.lean/declarations/convexon-ringinverse-algebramap-add.md) | 114 | `result-track:c6fa60494b4c1e93517b7b0b745ebffcd0692527edf88d616560dff5cd7563e3` |
+| 1 | `lemma` | [convexOn_ringInverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RingInverseOrderNamespacedPublic.lean/declarations/convexon-ringinverse.md) | 43 | `result-track:46428c4a84a6bbada4f2bb985b35b33d81e330a2f0ff4fcce43603f5e28fb1b7` |
+| 2 | `lemma` | [convexOn_ringInverse_algebraMap_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RingInverseOrderNamespacedPublic.lean/declarations/convexon-ringinverse-algebramap-add.md) | 114 | `result-track:c6fa60494b4c1e93517b7b0b745ebffcd0692527edf88d616560dff5cd7563e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

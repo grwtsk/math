@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpNamespacedMkEqSymm.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpNamespacedMkEqSymm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpNamespacedMkEqSymm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpNamespacedMkEqSymm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mkEqSymm](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpNamespacedMkEqSymm.lean/declarations/mkeqsymm.md) | 29 | `declaration-track:a018d8ef4d381d71e1fbb2e0e95aa2d94ab72ca48fbbb8234d1edae0c6554a75` |
-| 2 | `def` | [mkCast](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpNamespacedMkEqSymm.lean/declarations/mkcast.md) | 36 | `declaration-track:85eb2d3bdcee506e71310644a522479a09c17a885e560f3d743e0a37fb254c36` |
-| 3 | `def` | [mkSimpContext'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpNamespacedMkEqSymm.lean/declarations/mksimpcontext.md) | 50 | `declaration-track:a75cb3f504e253f2c2da6f6d45356aea940332ce26786a1327d2055a94820ffd` |
+| 1 | `def` | [mkEqSymm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpNamespacedMkEqSymm.lean/declarations/mkeqsymm.md) | 29 | `declaration-track:a018d8ef4d381d71e1fbb2e0e95aa2d94ab72ca48fbbb8234d1edae0c6554a75` |
+| 2 | `def` | [mkCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpNamespacedMkEqSymm.lean/declarations/mkcast.md) | 36 | `declaration-track:85eb2d3bdcee506e71310644a522479a09c17a885e560f3d743e0a37fb254c36` |
+| 3 | `def` | [mkSimpContext'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpNamespacedMkEqSymm.lean/declarations/mksimpcontext.md) | 50 | `declaration-track:a75cb3f504e253f2c2da6f6d45356aea940332ce26786a1327d2055a94820ffd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

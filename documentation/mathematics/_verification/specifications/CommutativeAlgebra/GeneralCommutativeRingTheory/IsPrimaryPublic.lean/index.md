@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IsPrimary](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/declarations/isprimary.md) | 34 | `declaration-track:5b9ee74d71b0bec67aae169e82e93dab844c4e86861de4885f47f47cb4cb06ea` |
-| 2 | `lemma` | [isPrimary_iff](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/declarations/isprimary-iff.md) | 38 | `result-track:6a991d876924f236795aaa87d6ca0863993f3cd6fa57441ec48559aa1bab5bef` |
-| 3 | `theorem` | [IsPrime.isPrimary](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/declarations/isprime-isprimary.md) | 44 | `result-track:010a869eb6984c682ab52830655d7b7fc09b8285bd2e6903d07ed50aac2d40ba` |
-| 4 | `theorem` | [isPrime_radical](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/declarations/isprime-radical.md) | 48 | `result-track:c83437a2e8c406df15c739f64cedd611783fe222ace378bd5142eaf33f20dd44` |
-| 5 | `theorem` | [isPrimary_of_isMaximal_radical](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/declarations/isprimary-of-ismaximal-radical.md) | 51 | `result-track:56e15dd380ac14f6cf7928809a7729283210d34c23a1452379a649235eb6bc3e` |
-| 6 | `theorem` | [IsPrimary.inf](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/declarations/isprimary-inf.md) | 66 | `result-track:517b6e2070acd7c7968dc1f7e298d262c945513784ca8933980be5c7fc354d89` |
-| 7 | `lemma` | [isPrimary_finsetInf](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/declarations/isprimary-finsetinf.md) | 70 | `result-track:f682606720b344f95e675181978a98313e36d5505356551b32ede93a85c43c89` |
-| 8 | `lemma` | [IsPrimary.comap](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/declarations/isprimary-comap.md) | 76 | `result-track:1ad947c51de533547113906b1b60466b1e5b01affe8ed99c07edb0ae8c045c3f` |
+| 1 | `abbrev` | [IsPrimary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/declarations/isprimary.md) | 34 | `declaration-track:5b9ee74d71b0bec67aae169e82e93dab844c4e86861de4885f47f47cb4cb06ea` |
+| 2 | `lemma` | [isPrimary_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/declarations/isprimary-iff.md) | 38 | `result-track:6a991d876924f236795aaa87d6ca0863993f3cd6fa57441ec48559aa1bab5bef` |
+| 3 | `theorem` | [IsPrime.isPrimary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/declarations/isprime-isprimary.md) | 44 | `result-track:010a869eb6984c682ab52830655d7b7fc09b8285bd2e6903d07ed50aac2d40ba` |
+| 4 | `theorem` | [isPrime_radical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/declarations/isprime-radical.md) | 48 | `result-track:c83437a2e8c406df15c739f64cedd611783fe222ace378bd5142eaf33f20dd44` |
+| 5 | `theorem` | [isPrimary_of_isMaximal_radical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/declarations/isprimary-of-ismaximal-radical.md) | 51 | `result-track:56e15dd380ac14f6cf7928809a7729283210d34c23a1452379a649235eb6bc3e` |
+| 6 | `theorem` | [IsPrimary.inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/declarations/isprimary-inf.md) | 66 | `result-track:517b6e2070acd7c7968dc1f7e298d262c945513784ca8933980be5c7fc354d89` |
+| 7 | `lemma` | [isPrimary_finsetInf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/declarations/isprimary-finsetinf.md) | 70 | `result-track:f682606720b344f95e675181978a98313e36d5505356551b32ede93a85c43c89` |
+| 8 | `lemma` | [IsPrimary.comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrimaryPublic.lean/declarations/isprimary-comap.md) | 76 | `result-track:1ad947c51de533547113906b1b60466b1e5b01affe8ed99c07edb0ae8c045c3f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

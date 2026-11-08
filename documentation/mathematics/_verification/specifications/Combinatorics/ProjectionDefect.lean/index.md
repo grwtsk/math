@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ProjectionDefect.lean/index.md) · [Full source](../../../../Combinatorics/ProjectionDefect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProjectionDefect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProjectionDefect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SoninProjectionDefectRealization](../../../../Combinatorics/ProjectionDefect.lean/declarations/soninprojectiondefectrealization.md) | 14 | `declaration-track:48ecf0e521e30f64997677c254716c42c3fff07889a47a803df1313f46408787` |
-| 2 | `def` | [soninProjectionIncrement](../../../../Combinatorics/ProjectionDefect.lean/declarations/soninprojectionincrement.md) | 40 | `declaration-track:4f91132612e4d6e50fab6e036d0cfbf1a8e74c470705b14801e3bfd4b15babb9` |
-| 3 | `theorem` | [soninProjectionIncrement_nonnegative](../../../../Combinatorics/ProjectionDefect.lean/declarations/soninprojectionincrement-nonnegative.md) | 55 | `result-track:419346c3eec0126d70e6ddd20cdd4d91e18496f640ecf34137701c29ade53a4c` |
+| 1 | `structure` | [SoninProjectionDefectRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProjectionDefect.lean/declarations/soninprojectiondefectrealization.md) | 14 | `declaration-track:48ecf0e521e30f64997677c254716c42c3fff07889a47a803df1313f46408787` |
+| 2 | `def` | [soninProjectionIncrement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProjectionDefect.lean/declarations/soninprojectionincrement.md) | 40 | `declaration-track:4f91132612e4d6e50fab6e036d0cfbf1a8e74c470705b14801e3bfd4b15babb9` |
+| 3 | `theorem` | [soninProjectionIncrement_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProjectionDefect.lean/declarations/soninprojectionincrement-nonnegative.md) | 55 | `result-track:419346c3eec0126d70e6ddd20cdd4d91e18496f640ecf34137701c29ade53a4c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

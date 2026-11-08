@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrierNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrierNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrierNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrierNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ProposedDeloopingSource](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrierNamespaced.lean/declarations/proposeddeloopingsource.md) | 26 | `declaration-track:ed162f047b1cb663b3552f005ea8ac24c91e636f662c06aab24a6494bcfbff1d` |
-| 2 | `structure` | [LoopObjectOperation](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrierNamespaced.lean/declarations/loopobjectoperation.md) | 37 | `declaration-track:b895261555a4774a3cb44a899d761b3a4f4963efb7b886f06a92711c3a0ffb36` |
-| 3 | `structure` | [DeloopingSequenceCandidate](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrierNamespaced.lean/declarations/deloopingsequencecandidate.md) | 46 | `declaration-track:6813023114f2104690fd14ffbc51c6dd04f0e11be3054385a7f8e011c66643ef` |
-| 4 | `structure` | [RepeatedTransitionCycle](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrierNamespaced.lean/declarations/repeatedtransitioncycle.md) | 60 | `declaration-track:01ce0eb2f26eb69bd6b96fd4a73cffe35ebddc8e0947008c9114fef8a5f0abdb` |
+| 1 | `inductive` | [ProposedDeloopingSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrierNamespaced.lean/declarations/proposeddeloopingsource.md) | 26 | `declaration-track:ed162f047b1cb663b3552f005ea8ac24c91e636f662c06aab24a6494bcfbff1d` |
+| 2 | `structure` | [LoopObjectOperation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrierNamespaced.lean/declarations/loopobjectoperation.md) | 37 | `declaration-track:b895261555a4774a3cb44a899d761b3a4f4963efb7b886f06a92711c3a0ffb36` |
+| 3 | `structure` | [DeloopingSequenceCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrierNamespaced.lean/declarations/deloopingsequencecandidate.md) | 46 | `declaration-track:6813023114f2104690fd14ffbc51c6dd04f0e11be3054385a7f8e011c66643ef` |
+| 4 | `structure` | [RepeatedTransitionCycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrierNamespaced.lean/declarations/repeatedtransitioncycle.md) | 60 | `declaration-track:01ce0eb2f26eb69bd6b96fd4a73cffe35ebddc8e0947008c9114fef8a5f0abdb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

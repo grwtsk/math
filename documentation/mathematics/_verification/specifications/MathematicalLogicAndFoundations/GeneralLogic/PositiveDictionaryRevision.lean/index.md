@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveDictionaryRevision.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveDictionaryRevision.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveDictionaryRevision.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveDictionaryRevision.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.FiniteSequences.DictionaryRevision`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDictionaryRevisionHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Logic.FiniteSequences.DictionaryRevision`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDictionaryRevisionHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveDictionaryRevision.lean/declarations/example.md) | 8 | `declaration-track:07783a0266a994984b5f562890101647114be09f573009598bdf432a1057d68f` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveDictionaryRevision.lean/declarations/example-source-edition-6.md) | 14 | `declaration-track:bdf798b3a90d7ade9655d5fffdcadbd6c18ec6f08d99b482dce6406e2e797126` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveDictionaryRevision.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:46624ebb76c43a34bad580d36725f5fcb65c54fb8d84652d9c212d89e17d1e96` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveDictionaryRevision.lean/declarations/example-source-edition-4.md) | 30 | `declaration-track:63334ccb684566c710c6b4db2bd374f9d3470c878fc9f38a02bd17a956b9f792` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveDictionaryRevision.lean/declarations/example-source-edition-2.md) | 39 | `declaration-track:0c8352904b3e8c2226d8da95f162bda920b88462bec6bdb074b0037f4712df28` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveDictionaryRevision.lean/declarations/example-source-edition-5.md) | 48 | `declaration-track:64599ea587674302e75320e4c7130b259856f607b1b2796667753cb20a1d308b` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveDictionaryRevision.lean/declarations/example.md) | 8 | `declaration-track:07783a0266a994984b5f562890101647114be09f573009598bdf432a1057d68f` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveDictionaryRevision.lean/declarations/example-source-edition-6.md) | 14 | `declaration-track:bdf798b3a90d7ade9655d5fffdcadbd6c18ec6f08d99b482dce6406e2e797126` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveDictionaryRevision.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:46624ebb76c43a34bad580d36725f5fcb65c54fb8d84652d9c212d89e17d1e96` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveDictionaryRevision.lean/declarations/example-source-edition-4.md) | 30 | `declaration-track:63334ccb684566c710c6b4db2bd374f9d3470c878fc9f38a02bd17a956b9f792` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveDictionaryRevision.lean/declarations/example-source-edition-2.md) | 39 | `declaration-track:0c8352904b3e8c2226d8da95f162bda920b88462bec6bdb074b0037f4712df28` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveDictionaryRevision.lean/declarations/example-source-edition-5.md) | 48 | `declaration-track:64599ea587674302e75320e4c7130b259856f607b1b2796667753cb20a1d308b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

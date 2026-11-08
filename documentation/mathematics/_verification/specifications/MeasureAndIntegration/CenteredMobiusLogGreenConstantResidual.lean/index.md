@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenOscillatoryResidual`](../../../../MeasureAndIntegration/CenteredMobiusLogGreenOscillatoryResidual.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenOscillatoryResidual`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenOscillatoryResidual.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reciprocalOnePlus](../../../../MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/declarations/reciprocaloneplus.md) | 16 | `declaration-track:079d1a008a4c2f20e66a47f82fb15eac65a11883fbe459e137173171f2a21843` |
-| 2 | `theorem` | [reciprocalOnePlus_antitoneOn](../../../../MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/declarations/reciprocaloneplus-antitoneon.md) | 18 | `result-track:734568e3f095e67fbdb82b7479354a5dee890dab9fbc2897055ced49ad957fad` |
-| 3 | `theorem` | [reciprocalOnePlus_zero](../../../../MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/declarations/reciprocaloneplus-zero.md) | 24 | `result-track:9fa36e230932fc89529f1476927563adb8725513d395da76bf7976a2cd9d5f93` |
-| 4 | `theorem` | [reciprocalOnePlus_one](../../../../MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/declarations/reciprocaloneplus-one.md) | 27 | `result-track:e0b4c4b3ec11fae48cf92f9f7cdd5de16eb6f873b62a3e624034cf6f8b5e5536` |
-| 5 | `def` | [greenConstantHarmonicResidualReal](../../../../MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/declarations/greenconstantharmonicresidualreal.md) | 31 | `declaration-track:24d84fd7dd7a669743bf1efa7923492011775a7a460cb0176c5182512905d008` |
-| 6 | `theorem` | [greenConstantHarmonicResidual_eq_ofReal](../../../../MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/declarations/greenconstantharmonicresidual-eq-ofreal.md) | 37 | `result-track:d49b2e972fd6f07d805239a52941805eab718fb28e712896a6297efd9cace60b` |
-| 7 | `theorem` | [greenConstantHarmonicResidualReal_nonneg_le](../../../../MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/declarations/greenconstantharmonicresidualreal-nonneg-le.md) | 52 | `result-track:92cb4667d908623a3abe0a00823d5b48267754cf875cf04db00b0513247439e3` |
-| 8 | `theorem` | [norm_greenConstantHarmonicResidual_le](../../../../MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/declarations/norm-greenconstantharmonicresidual-le.md) | 107 | `result-track:dadc6654752833b177475eb7845a2205ac1a7517a30176d910ff430c62b6397d` |
+| 1 | `def` | [reciprocalOnePlus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/declarations/reciprocaloneplus.md) | 16 | `declaration-track:079d1a008a4c2f20e66a47f82fb15eac65a11883fbe459e137173171f2a21843` |
+| 2 | `theorem` | [reciprocalOnePlus_antitoneOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/declarations/reciprocaloneplus-antitoneon.md) | 18 | `result-track:734568e3f095e67fbdb82b7479354a5dee890dab9fbc2897055ced49ad957fad` |
+| 3 | `theorem` | [reciprocalOnePlus_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/declarations/reciprocaloneplus-zero.md) | 24 | `result-track:9fa36e230932fc89529f1476927563adb8725513d395da76bf7976a2cd9d5f93` |
+| 4 | `theorem` | [reciprocalOnePlus_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/declarations/reciprocaloneplus-one.md) | 27 | `result-track:e0b4c4b3ec11fae48cf92f9f7cdd5de16eb6f873b62a3e624034cf6f8b5e5536` |
+| 5 | `def` | [greenConstantHarmonicResidualReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/declarations/greenconstantharmonicresidualreal.md) | 31 | `declaration-track:24d84fd7dd7a669743bf1efa7923492011775a7a460cb0176c5182512905d008` |
+| 6 | `theorem` | [greenConstantHarmonicResidual_eq_ofReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/declarations/greenconstantharmonicresidual-eq-ofreal.md) | 37 | `result-track:d49b2e972fd6f07d805239a52941805eab718fb28e712896a6297efd9cace60b` |
+| 7 | `theorem` | [greenConstantHarmonicResidualReal_nonneg_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/declarations/greenconstantharmonicresidualreal-nonneg-le.md) | 52 | `result-track:92cb4667d908623a3abe0a00823d5b48267754cf875cf04db00b0513247439e3` |
+| 8 | `theorem` | [norm_greenConstantHarmonicResidual_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/declarations/norm-greenconstantharmonicresidual-le.md) | 107 | `result-track:dadc6654752833b177475eb7845a2205ac1a7517a30176d910ff430c62b6397d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

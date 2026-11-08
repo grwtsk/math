@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ListMatrixFunctions.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ListMatrixFunctions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ListMatrixFunctions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ListMatrixFunctions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bytesToMatrixWith](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ListMatrixFunctions.lean/declarations/bytestomatrixwith.md) | 39 | `declaration-track:0a6092dd1360c388e8180165588752d54f26609472eb1986d832e801342eefd4` |
-| 2 | `def` | [matrixToBytesWith](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ListMatrixFunctions.lean/declarations/matrixtobyteswith.md) | 47 | `declaration-track:02aa588c1f31ace3b7ce78412f8368f79234e70f774f9492bf17ab8b724d6ed8` |
+| 1 | `def` | [bytesToMatrixWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ListMatrixFunctions.lean/declarations/bytestomatrixwith.md) | 39 | `declaration-track:0a6092dd1360c388e8180165588752d54f26609472eb1986d832e801342eefd4` |
+| 2 | `def` | [matrixToBytesWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ListMatrixFunctions.lean/declarations/matrixtobyteswith.md) | 47 | `declaration-track:02aa588c1f31ace3b7ce78412f8368f79234e70f774f9492bf17ab8b724d6ed8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

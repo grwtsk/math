@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/NormPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/NormPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [supNorm](../../../../FunctionalAnalysis/NormPublic.lean/declarations/supnorm.md) | 53 | `declaration-track:fe68e4c5ab80a3efaeee62ecace13e500f4d10679dbea08767971156b1a2c2e9` |
-| 2 | `lemma` | [supNorm_def'](../../../../FunctionalAnalysis/NormPublic.lean/declarations/supnorm-def.md) | 56 | `result-track:da4162be303fba9e676d2c4a6f851d1488d547a94a4348fe42256c35b81cc38a` |
-| 3 | `lemma` | [supNorm_zero](../../../../FunctionalAnalysis/NormPublic.lean/declarations/supnorm-zero.md) | 64 | `result-track:44969a8430141f9d4983deb4090cf9f368c22bd9d232f495cbda0d09c2a5bf78` |
-| 4 | `lemma` | [supNorm_nonneg](../../../../FunctionalAnalysis/NormPublic.lean/declarations/supnorm-nonneg.md) | 66 | `result-track:57ba5d52872a6449ee5fb5f6cf5f6b4cf2703b8aee13a0ed819bf91f0bb014f8` |
-| 5 | `lemma` | [supNorm_C](../../../../FunctionalAnalysis/NormPublic.lean/declarations/supnorm-c.md) | 71 | `result-track:b6b822abdfb8e691602bdccfcaa157644ce5cee9d15e54eae3a68aaf607fe3c0` |
-| 6 | `lemma` | [supNorm_monomial](../../../../FunctionalAnalysis/NormPublic.lean/declarations/supnorm-monomial.md) | 74 | `result-track:d4ec628db994815e1089eaa434c0f5a7ce97051084acb6471f5e39992aef8a26` |
-| 7 | `lemma` | [supNorm_X](../../../../FunctionalAnalysis/NormPublic.lean/declarations/supnorm-x.md) | 80 | `result-track:e12c296a905b5c1dcf04c44e3f18b969f121cf38575ce21f9ebc1b37a8e79501` |
-| 8 | `lemma` | [le_supNorm](../../../../FunctionalAnalysis/NormPublic.lean/declarations/le-supnorm.md) | 83 | `result-track:ba266eeae490344b55773e3ecfe44796ab85b15fb1eb304d3cdd98ce6c30f57f` |
-| 9 | `lemma` | [exists_eq_supNorm](../../../../FunctionalAnalysis/NormPublic.lean/declarations/exists-eq-supnorm.md) | 86 | `result-track:9ca6a6e2aff6b1b076c5e7e0c2c8a2c671a589a0bc1c31501ea41a12dd4220fe` |
-| 10 | `lemma` | [isGreatest_supNorm](../../../../FunctionalAnalysis/NormPublic.lean/declarations/isgreatest-supnorm.md) | 89 | `result-track:3de4d654c559d0879c802f5683274f68d9371f1e9cb8d8f77e835cde269eb63f` |
-| 11 | `lemma` | [supNorm_eq_iSup](../../../../FunctionalAnalysis/NormPublic.lean/declarations/supnorm-eq-isup.md) | 94 | `result-track:246b9a75bbfaffb947628a5619479ad334f9416162c2c51f43b0fbbae5133795` |
-| 12 | `lemma` | [supNorm_eq_zero_iff](../../../../FunctionalAnalysis/NormPublic.lean/declarations/supnorm-eq-zero-iff.md) | 105 | `result-track:f0836dd93c3521a507de6faff0a2b8b26464674c0dddcc802516e43d8eff7522` |
+| 1 | `def` | [supNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPublic.lean/declarations/supnorm.md) | 53 | `declaration-track:fe68e4c5ab80a3efaeee62ecace13e500f4d10679dbea08767971156b1a2c2e9` |
+| 2 | `lemma` | [supNorm_def'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPublic.lean/declarations/supnorm-def.md) | 56 | `result-track:da4162be303fba9e676d2c4a6f851d1488d547a94a4348fe42256c35b81cc38a` |
+| 3 | `lemma` | [supNorm_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPublic.lean/declarations/supnorm-zero.md) | 64 | `result-track:44969a8430141f9d4983deb4090cf9f368c22bd9d232f495cbda0d09c2a5bf78` |
+| 4 | `lemma` | [supNorm_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPublic.lean/declarations/supnorm-nonneg.md) | 66 | `result-track:57ba5d52872a6449ee5fb5f6cf5f6b4cf2703b8aee13a0ed819bf91f0bb014f8` |
+| 5 | `lemma` | [supNorm_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPublic.lean/declarations/supnorm-c.md) | 71 | `result-track:b6b822abdfb8e691602bdccfcaa157644ce5cee9d15e54eae3a68aaf607fe3c0` |
+| 6 | `lemma` | [supNorm_monomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPublic.lean/declarations/supnorm-monomial.md) | 74 | `result-track:d4ec628db994815e1089eaa434c0f5a7ce97051084acb6471f5e39992aef8a26` |
+| 7 | `lemma` | [supNorm_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPublic.lean/declarations/supnorm-x.md) | 80 | `result-track:e12c296a905b5c1dcf04c44e3f18b969f121cf38575ce21f9ebc1b37a8e79501` |
+| 8 | `lemma` | [le_supNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPublic.lean/declarations/le-supnorm.md) | 83 | `result-track:ba266eeae490344b55773e3ecfe44796ab85b15fb1eb304d3cdd98ce6c30f57f` |
+| 9 | `lemma` | [exists_eq_supNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPublic.lean/declarations/exists-eq-supnorm.md) | 86 | `result-track:9ca6a6e2aff6b1b076c5e7e0c2c8a2c671a589a0bc1c31501ea41a12dd4220fe` |
+| 10 | `lemma` | [isGreatest_supNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPublic.lean/declarations/isgreatest-supnorm.md) | 89 | `result-track:3de4d654c559d0879c802f5683274f68d9371f1e9cb8d8f77e835cde269eb63f` |
+| 11 | `lemma` | [supNorm_eq_iSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPublic.lean/declarations/supnorm-eq-isup.md) | 94 | `result-track:246b9a75bbfaffb947628a5619479ad334f9416162c2c51f43b0fbbae5133795` |
+| 12 | `lemma` | [supNorm_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormPublic.lean/declarations/supnorm-eq-zero-iff.md) | 105 | `result-track:f0836dd93c3521a507de6faff0a2b8b26464674c0dddcc802516e43d8eff7522` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

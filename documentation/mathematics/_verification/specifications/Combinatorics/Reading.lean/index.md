@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Reading.lean/index.md) · [Full source](../../../../Combinatorics/Reading.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Reading.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Reading.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LiteralReading](../../../../Combinatorics/Reading.lean/declarations/literalreading.md) | 9 | `declaration-track:4bbb4b16719fd22de790713c19faff53dab839d8c72345ab82f3b5d2baafcd12` |
-| 2 | `structure` | [ContextualReading](../../../../Combinatorics/Reading.lean/declarations/contextualreading.md) | 16 | `declaration-track:c905a08180ad4347758d6c36ce1910017d2c42b53ae9f5a4a87edff946605327` |
-| 3 | `theorem` | [certified_interpretation_has_external_source](../../../../Combinatorics/Reading.lean/declarations/certified-interpretation-has-external-source.md) | 27 | `result-track:333937aff7280a0b86cf40f200e8e240a4801ea36b0cd29d48b21cd14c9e63a1` |
-| 4 | `theorem` | [model_candidate_not_theorem_authority](../../../../Combinatorics/Reading.lean/declarations/model-candidate-not-theorem-authority.md) | 35 | `result-track:97903d01415b25a96f9463661f5da0e9d5b7589823c9f0a12349ac557a341600` |
+| 1 | `structure` | [LiteralReading](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Reading.lean/declarations/literalreading.md) | 9 | `declaration-track:4bbb4b16719fd22de790713c19faff53dab839d8c72345ab82f3b5d2baafcd12` |
+| 2 | `structure` | [ContextualReading](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Reading.lean/declarations/contextualreading.md) | 16 | `declaration-track:c905a08180ad4347758d6c36ce1910017d2c42b53ae9f5a4a87edff946605327` |
+| 3 | `theorem` | [certified_interpretation_has_external_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Reading.lean/declarations/certified-interpretation-has-external-source.md) | 27 | `result-track:333937aff7280a0b86cf40f200e8e240a4801ea36b0cd29d48b21cd14c9e63a1` |
+| 4 | `theorem` | [model_candidate_not_theorem_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Reading.lean/declarations/model-candidate-not-theorem-authority.md) | 35 | `result-track:97903d01415b25a96f9463661f5da0e9d5b7589823c9f0a12349ac557a341600` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

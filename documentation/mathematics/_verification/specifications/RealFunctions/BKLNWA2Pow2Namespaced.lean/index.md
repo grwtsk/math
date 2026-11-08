@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/BKLNWA2Pow2Namespaced.lean/index.md) · [Full source](../../../../RealFunctions/BKLNWA2Pow2Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2Pow2Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2Pow2Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,20 +59,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [f](../../../../RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/f.md) | 33 | `declaration-track:58c7eaa6d07fa257ff38e8dda3b407432af64845283c28710b6e256f7dedbd31` |
-| 2 | `lemma` | [two_pow_eq_exp_log](../../../../RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/two-pow-eq-exp-log.md) | 37 | `result-track:ac4a1aceea186257f7f4917b7aa0e90482a1cd3ad9ed2248ec38edc7780a8cdf` |
-| 3 | `lemma` | [floor_log_two_pow](../../../../RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/floor-log-two-pow.md) | 41 | `result-track:665fb6167321fa756d8fc2e80ee3ce3d1dbb7740be3c864f1f0e32de6031a0e5` |
-| 4 | `theorem` | [pow29_upper](../../../../RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow29-upper.md) | 46 | `result-track:7162ba808028de83e09be31cfe967232485ed90d662859aceb0d90fdab957bc0` |
-| 5 | `theorem` | [pow37_upper](../../../../RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow37-upper.md) | 56 | `result-track:1cefdcaa966f1f8f3ab14198f364ecd68c5696be6dade9e754d535ff937320fa` |
-| 6 | `theorem` | [pow44_upper](../../../../RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow44-upper.md) | 66 | `result-track:feff4b5d0597b22fa9cba04a72e2a0efd8851c65a37cfe32b088294a8eea5028` |
-| 7 | `theorem` | [pow51_upper](../../../../RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow51-upper.md) | 76 | `result-track:ab80bcc6d04dbf889218ae41c8d7a4035b2405f72b2d4ce2c9296996c7770c91` |
-| 8 | `theorem` | [pow58_upper](../../../../RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow58-upper.md) | 86 | `result-track:f1f167729affcb6f59377fe9408bc568bce1fa0ed033c656a0a03ca11bd05097` |
-| 9 | `theorem` | [pow63_upper](../../../../RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow63-upper.md) | 96 | `result-track:e583b01f443de766d2601ef7783ef3f12cfe981faaf42235e4328f457c93dd45` |
-| 10 | `theorem` | [pow145_upper](../../../../RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow145-upper.md) | 113 | `result-track:963aed11c3c9aed6ba81edfbd3627c057567bd0bc391db4a5ced6ab52f0864a3` |
-| 11 | `theorem` | [pow217_upper](../../../../RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow217-upper.md) | 117 | `result-track:d667ceb8b1cd287ecc850b4367c96a0dfa02fd96dbd1c976342a65a10b4fd616` |
-| 12 | `theorem` | [pow289_upper](../../../../RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow289-upper.md) | 121 | `result-track:5bbc815b781887788899f12ed02ba316a7fe675718faaa4ea327ff66484e5ab4` |
-| 13 | `theorem` | [pow361_upper](../../../../RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow361-upper.md) | 125 | `result-track:2a950d9017d90777c0c1d76684a7c9f974efb6808667d5f945c3d9963d32844f` |
-| 14 | `theorem` | [pow433_upper](../../../../RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow433-upper.md) | 129 | `result-track:2a360c41a739334f10181c1fda0125b167b87aa868bc40f195c8c61ee3ea6fce` |
+| 1 | `def` | [f](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/f.md) | 33 | `declaration-track:58c7eaa6d07fa257ff38e8dda3b407432af64845283c28710b6e256f7dedbd31` |
+| 2 | `lemma` | [two_pow_eq_exp_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/two-pow-eq-exp-log.md) | 37 | `result-track:ac4a1aceea186257f7f4917b7aa0e90482a1cd3ad9ed2248ec38edc7780a8cdf` |
+| 3 | `lemma` | [floor_log_two_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/floor-log-two-pow.md) | 41 | `result-track:665fb6167321fa756d8fc2e80ee3ce3d1dbb7740be3c864f1f0e32de6031a0e5` |
+| 4 | `theorem` | [pow29_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow29-upper.md) | 46 | `result-track:7162ba808028de83e09be31cfe967232485ed90d662859aceb0d90fdab957bc0` |
+| 5 | `theorem` | [pow37_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow37-upper.md) | 56 | `result-track:1cefdcaa966f1f8f3ab14198f364ecd68c5696be6dade9e754d535ff937320fa` |
+| 6 | `theorem` | [pow44_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow44-upper.md) | 66 | `result-track:feff4b5d0597b22fa9cba04a72e2a0efd8851c65a37cfe32b088294a8eea5028` |
+| 7 | `theorem` | [pow51_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow51-upper.md) | 76 | `result-track:ab80bcc6d04dbf889218ae41c8d7a4035b2405f72b2d4ce2c9296996c7770c91` |
+| 8 | `theorem` | [pow58_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow58-upper.md) | 86 | `result-track:f1f167729affcb6f59377fe9408bc568bce1fa0ed033c656a0a03ca11bd05097` |
+| 9 | `theorem` | [pow63_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow63-upper.md) | 96 | `result-track:e583b01f443de766d2601ef7783ef3f12cfe981faaf42235e4328f457c93dd45` |
+| 10 | `theorem` | [pow145_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow145-upper.md) | 113 | `result-track:963aed11c3c9aed6ba81edfbd3627c057567bd0bc391db4a5ced6ab52f0864a3` |
+| 11 | `theorem` | [pow217_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow217-upper.md) | 117 | `result-track:d667ceb8b1cd287ecc850b4367c96a0dfa02fd96dbd1c976342a65a10b4fd616` |
+| 12 | `theorem` | [pow289_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow289-upper.md) | 121 | `result-track:5bbc815b781887788899f12ed02ba316a7fe675718faaa4ea327ff66484e5ab4` |
+| 13 | `theorem` | [pow361_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow361-upper.md) | 125 | `result-track:2a950d9017d90777c0c1d76684a7c9f974efb6808667d5f945c3d9963d32844f` |
+| 14 | `theorem` | [pow433_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2Pow2Namespaced.lean/declarations/pow433-upper.md) | 129 | `result-track:2a360c41a739334f10181c1fda0125b167b87aa868bc40f195c8c61ee3ea6fce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MPS.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MPS.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MPS.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MPS.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OpenMPS](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MPS.lean/declarations/openmps.md) | 17 | `declaration-track:4c72b9a31226f8b9a3f9aa7bfde8a45a7f7df3a8bf591cb0253203cf4e3a2ee1` |
-| 2 | `def` | [OpenMPS.contract](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MPS.lean/declarations/openmps-contract.md) | 27 | `declaration-track:6bbd08d150a0b41108ae9788b9d0f2d6cd6e960234ec473773cf8455e573138c` |
-| 3 | `def` | [ExactMPSRepresentation](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MPS.lean/declarations/exactmpsrepresentation.md) | 39 | `declaration-track:aebc6919245eb8a25275f535bf2b9e8c1255581f8c4445a6e4b74adb8d972e15` |
-| 4 | `def` | [tensorL1Distance](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MPS.lean/declarations/tensorl1distance.md) | 45 | `declaration-track:2cd098bdfa50ed34af97dd554b6123a1c703e86b9ea2c443fdca3aabe9e9142f` |
-| 5 | `structure` | [ApproxMPSRepresentation](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MPS.lean/declarations/approxmpsrepresentation.md) | 51 | `declaration-track:620ff4efe6877f7d2beb5d540c211f7863bd04df023f5ac6999f7c3faecdc1b2` |
-| 6 | `inductive` | [MPSRepresentationCertificate](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MPS.lean/declarations/mpsrepresentationcertificate.md) | 60 | `declaration-track:36606b3fe4e967dec55e8cf0b8abf09d42e558a241498e22278fd0140e8a7b2d` |
-| 7 | `def` | [ExactMPSRepresentation.toApprox](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MPS.lean/declarations/exactmpsrepresentation-toapprox.md) | 67 | `declaration-track:3d0649ee6cacd292dd1128d713bc575506e1aece4c691daa83082c2dd4935ed3` |
+| 1 | `structure` | [OpenMPS](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MPS.lean/declarations/openmps.md) | 17 | `declaration-track:4c72b9a31226f8b9a3f9aa7bfde8a45a7f7df3a8bf591cb0253203cf4e3a2ee1` |
+| 2 | `def` | [OpenMPS.contract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MPS.lean/declarations/openmps-contract.md) | 27 | `declaration-track:6bbd08d150a0b41108ae9788b9d0f2d6cd6e960234ec473773cf8455e573138c` |
+| 3 | `def` | [ExactMPSRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MPS.lean/declarations/exactmpsrepresentation.md) | 39 | `declaration-track:aebc6919245eb8a25275f535bf2b9e8c1255581f8c4445a6e4b74adb8d972e15` |
+| 4 | `def` | [tensorL1Distance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MPS.lean/declarations/tensorl1distance.md) | 45 | `declaration-track:2cd098bdfa50ed34af97dd554b6123a1c703e86b9ea2c443fdca3aabe9e9142f` |
+| 5 | `structure` | [ApproxMPSRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MPS.lean/declarations/approxmpsrepresentation.md) | 51 | `declaration-track:620ff4efe6877f7d2beb5d540c211f7863bd04df023f5ac6999f7c3faecdc1b2` |
+| 6 | `inductive` | [MPSRepresentationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MPS.lean/declarations/mpsrepresentationcertificate.md) | 60 | `declaration-track:36606b3fe4e967dec55e8cf0b8abf09d42e558a241498e22278fd0140e8a7b2d` |
+| 7 | `def` | [ExactMPSRepresentation.toApprox](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MPS.lean/declarations/exactmpsrepresentation-toapprox.md) | 67 | `declaration-track:3d0649ee6cacd292dd1128d713bc575506e1aece4c691daa83082c2dd4935ed3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/SourceHeatBoundaries.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/SourceHeatBoundaries.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SourceHeatBoundaries.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SourceHeatBoundaries.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [signedHeatRemainder_eq_filtered_integral](../../../../ProbabilityTheoryAndStochasticProcesses/SourceHeatBoundaries.lean/declarations/signedheatremainder-eq-filtered-integral.md) | 34 | `result-track:db77b7bc91b15fffb67b5683e026896435514cd650c59586a332325e55dcbc18` |
-| 2 | `theorem` | [signedHeatRemainder_abs_le](../../../../ProbabilityTheoryAndStochasticProcesses/SourceHeatBoundaries.lean/declarations/signedheatremainder-abs-le.md) | 51 | `result-track:1271f48bb369583b42c2697c0b72f0a8326533d09755bbcf76f7e9c480876ab6` |
-| 3 | `theorem` | [sourceHeatRemainder_abs_le](../../../../ProbabilityTheoryAndStochasticProcesses/SourceHeatBoundaries.lean/declarations/sourceheatremainder-abs-le.md) | 65 | `result-track:8dc45a035deba8fc99889f40830b8a06de72bd4943814fdae008710609bc6f87` |
-| 4 | `theorem` | [sourceSymbolBound_eq_coefficientVariation](../../../../ProbabilityTheoryAndStochasticProcesses/SourceHeatBoundaries.lean/declarations/sourcesymbolbound-eq-coefficientvariation.md) | 72 | `result-track:faf20838922518bad770352c53f0609af441b0f22a6654b3affb05a93328b65e` |
-| 5 | `theorem` | [sourceSymbolBound_lower](../../../../ProbabilityTheoryAndStochasticProcesses/SourceHeatBoundaries.lean/declarations/sourcesymbolbound-lower.md) | 87 | `result-track:ac6d64262364a1237a9ac5b01a8bd99ce83b8130ff9d4169f611ccab2519cb64` |
+| 1 | `theorem` | [signedHeatRemainder_eq_filtered_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SourceHeatBoundaries.lean/declarations/signedheatremainder-eq-filtered-integral.md) | 34 | `result-track:db77b7bc91b15fffb67b5683e026896435514cd650c59586a332325e55dcbc18` |
+| 2 | `theorem` | [signedHeatRemainder_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SourceHeatBoundaries.lean/declarations/signedheatremainder-abs-le.md) | 51 | `result-track:1271f48bb369583b42c2697c0b72f0a8326533d09755bbcf76f7e9c480876ab6` |
+| 3 | `theorem` | [sourceHeatRemainder_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SourceHeatBoundaries.lean/declarations/sourceheatremainder-abs-le.md) | 65 | `result-track:8dc45a035deba8fc99889f40830b8a06de72bd4943814fdae008710609bc6f87` |
+| 4 | `theorem` | [sourceSymbolBound_eq_coefficientVariation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SourceHeatBoundaries.lean/declarations/sourcesymbolbound-eq-coefficientvariation.md) | 72 | `result-track:faf20838922518bad770352c53f0609af441b0f22a6654b3affb05a93328b65e` |
+| 5 | `theorem` | [sourceSymbolBound_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SourceHeatBoundaries.lean/declarations/sourcesymbolbound-lower.md) | 87 | `result-track:ac6d64262364a1237a9ac5b01a8bd99ce83b8130ff9d4169f611ccab2519cb64` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteCechComplex](../../../../GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/finitecechcomplex.md) | 17 | `declaration-track:f89831da389cba8ac1db81eea288b6d386c2617ce7fd37faeec702b52461fafc` |
-| 2 | `def` | [Cocycle1](../../../../GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/cocycle1.md) | 46 | `declaration-track:c3d057ca3febbaac532c69ab6cc0ebe0b55f0c0c664a896e9da85ebbd9b392e7` |
-| 3 | `def` | [Coboundary1](../../../../GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/coboundary1.md) | 49 | `declaration-track:f212fd234d863f3f13de662c3fc27a4934ebd5dfdbc5b34eb34ff0c97fff41d9` |
-| 4 | `def` | [cocycles1](../../../../GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/cocycles1.md) | 53 | `declaration-track:03186ad729ebdb15622bce91ee8a4861c5702517773ac2cb2c2703b09873ddf7` |
-| 5 | `def` | [coboundaries1](../../../../GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/coboundaries1.md) | 61 | `declaration-track:1065cb3b9dfd5e404d188499b743d81a118962e84fef30d2cfb0644a0e3c89e5` |
-| 6 | `theorem` | [mem_cocycles1_iff](../../../../GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/mem-cocycles1-iff.md) | 71 | `result-track:cdbd45b9c71cfd8d55b60dea707d81c1776c1791380d47f300e4997803f724f4` |
-| 7 | `theorem` | [mem_coboundaries1_iff](../../../../GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/mem-coboundaries1-iff.md) | 80 | `result-track:06ffdbdbe41bb1889c4d411716802f30959c0ed95722ae468917f36c124d8bb3` |
-| 8 | `theorem` | [differential_sq_zero](../../../../GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/differential-sq-zero.md) | 90 | `result-track:d7d3c616f91e207061d42e3c786e1bdc3ca1bd8cd577ef233fd0f5d0f79a569e` |
-| 9 | `theorem` | [coboundary_is_cocycle](../../../../GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/coboundary-is-cocycle.md) | 97 | `result-track:6c22a7ab4f804a4bce2ae06ff67f844432c14d4b07a192b6fec9177dd2975872` |
-| 10 | `structure` | [FiniteCechPresentation](../../../../GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/finitecechpresentation.md) | 112 | `declaration-track:a45b7ad0bca76404eb58da602c585e288e181fa7bf705b3a455a96a04568e221` |
+| 1 | `structure` | [FiniteCechComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/finitecechcomplex.md) | 17 | `declaration-track:f89831da389cba8ac1db81eea288b6d386c2617ce7fd37faeec702b52461fafc` |
+| 2 | `def` | [Cocycle1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/cocycle1.md) | 46 | `declaration-track:c3d057ca3febbaac532c69ab6cc0ebe0b55f0c0c664a896e9da85ebbd9b392e7` |
+| 3 | `def` | [Coboundary1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/coboundary1.md) | 49 | `declaration-track:f212fd234d863f3f13de662c3fc27a4934ebd5dfdbc5b34eb34ff0c97fff41d9` |
+| 4 | `def` | [cocycles1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/cocycles1.md) | 53 | `declaration-track:03186ad729ebdb15622bce91ee8a4861c5702517773ac2cb2c2703b09873ddf7` |
+| 5 | `def` | [coboundaries1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/coboundaries1.md) | 61 | `declaration-track:1065cb3b9dfd5e404d188499b743d81a118962e84fef30d2cfb0644a0e3c89e5` |
+| 6 | `theorem` | [mem_cocycles1_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/mem-cocycles1-iff.md) | 71 | `result-track:cdbd45b9c71cfd8d55b60dea707d81c1776c1791380d47f300e4997803f724f4` |
+| 7 | `theorem` | [mem_coboundaries1_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/mem-coboundaries1-iff.md) | 80 | `result-track:06ffdbdbe41bb1889c4d411716802f30959c0ed95722ae468917f36c124d8bb3` |
+| 8 | `theorem` | [differential_sq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/differential-sq-zero.md) | 90 | `result-track:d7d3c616f91e207061d42e3c786e1bdc3ca1bd8cd577ef233fd0f5d0f79a569e` |
+| 9 | `theorem` | [coboundary_is_cocycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/coboundary-is-cocycle.md) | 97 | `result-track:6c22a7ab4f804a4bce2ae06ff67f844432c14d4b07a192b6fec9177dd2975872` |
+| 10 | `structure` | [FiniteCechPresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CechFiniteCechComplex.lean/declarations/finitecechpresentation.md) | 112 | `declaration-track:a45b7ad0bca76404eb58da602c585e288e181fa7bf705b3a455a96a04568e221` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/NorthcottPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/NorthcottPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/NorthcottPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/NorthcottPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Northcott](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/NorthcottPublic.lean/declarations/northcott.md) | 36 | `declaration-track:ecdd4f3f00dc3ae5ccdec9db3e24f3d83617f6b88eef0a13596d74d052ff043a` |
-| 2 | `theorem` | [northcott_iff_tendsto](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/NorthcottPublic.lean/declarations/northcott-iff-tendsto.md) | 40 | `result-track:cd396ece3d4335ba7255c03a6926416a79b1d44801ceda9eb8974262bd492669` |
-| 3 | `theorem` | [exists_min_image](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/NorthcottPublic.lean/declarations/exists-min-image.md) | 49 | `result-track:cb7cc1a6862b1f85ab14a355b54430b74e71fb1c0c1c14edd113414f4fb86193` |
-| 4 | `lemma` | [comp_of_bddAbove](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/NorthcottPublic.lean/declarations/comp-of-bddabove.md) | 58 | `result-track:b2952037fe502466b1842947df413a5cd8469c621ad4af398235ae4166583812` |
-| 5 | `lemma` | [comp_of_finite_fibers](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/NorthcottPublic.lean/declarations/comp-of-finite-fibers.md) | 65 | `result-track:b2c74a15f573ce28241bcdae0cf4a436af6378a571a079c8d82b44f286c23c05` |
+| 1 | `class` | [Northcott](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/NorthcottPublic.lean/declarations/northcott.md) | 36 | `declaration-track:ecdd4f3f00dc3ae5ccdec9db3e24f3d83617f6b88eef0a13596d74d052ff043a` |
+| 2 | `theorem` | [northcott_iff_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/NorthcottPublic.lean/declarations/northcott-iff-tendsto.md) | 40 | `result-track:cd396ece3d4335ba7255c03a6926416a79b1d44801ceda9eb8974262bd492669` |
+| 3 | `theorem` | [exists_min_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/NorthcottPublic.lean/declarations/exists-min-image.md) | 49 | `result-track:cb7cc1a6862b1f85ab14a355b54430b74e71fb1c0c1c14edd113414f4fb86193` |
+| 4 | `lemma` | [comp_of_bddAbove](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/NorthcottPublic.lean/declarations/comp-of-bddabove.md) | 58 | `result-track:b2952037fe502466b1842947df413a5cd8469c621ad4af398235ae4166583812` |
+| 5 | `lemma` | [comp_of_finite_fibers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/NorthcottPublic.lean/declarations/comp-of-finite-fibers.md) | 65 | `result-track:b2c74a15f573ce28241bcdae0cf4a436af6378a571a079c8d82b44f286c23c05` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

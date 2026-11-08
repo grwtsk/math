@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [OuterMeasure.toMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/declarations/outermeasure-tomeasure.md) | 40 | `declaration-track:ed5c548777bb81c48c353e049abe4f1ec76b5697e7716bd0a07efb630fa8783b` |
-| 2 | `theorem` | [le_toOuterMeasure_caratheodory](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/declarations/le-tooutermeasure-caratheodory.md) | 45 | `result-track:16878042b71b1225283d235a0b96dab2254b634620b6e3ba58f78d68831bf043` |
-| 3 | `theorem` | [toMeasure_toOuterMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/declarations/tomeasure-tooutermeasure.md) | 49 | `result-track:114fbfbebded562cea74e8f945464a89e13679bc386fcda1c66a59e75430f01b` |
-| 4 | `theorem` | [toMeasure_apply](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/declarations/tomeasure-apply.md) | 54 | `result-track:3306edc3d02b1aafa9444bd5018ab900ebac3f4d4144ec2bade5e6042e7adf89` |
-| 5 | `theorem` | [le_toMeasure_apply](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/declarations/le-tomeasure-apply.md) | 58 | `result-track:983a7c5c986309779e6f786627f7f5469c15c24376d7415aa425e3b6717bd52a` |
-| 6 | `theorem` | [toMeasure_apply₀](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/declarations/tomeasure-apply-source-edition-2.md) | 62 | `result-track:505da284b3cfabd23eb1f9323010c1981a15ac88219d9b36f427a77db4987055` |
-| 7 | `theorem` | [toOuterMeasure_toMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/declarations/tooutermeasure-tomeasure.md) | 72 | `result-track:2ef8115b779aa4d3fdce7d8a4a2135cfeeebbef4fc78b5358f8752729c5cf6c6` |
-| 8 | `theorem` | [boundedBy_measure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/declarations/boundedby-measure.md) | 77 | `result-track:1aede57e50407bc8fca0764fd98157e782dd7614c33754f84792df442f944995` |
+| 1 | `def` | [OuterMeasure.toMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/declarations/outermeasure-tomeasure.md) | 40 | `declaration-track:ed5c548777bb81c48c353e049abe4f1ec76b5697e7716bd0a07efb630fa8783b` |
+| 2 | `theorem` | [le_toOuterMeasure_caratheodory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/declarations/le-tooutermeasure-caratheodory.md) | 45 | `result-track:16878042b71b1225283d235a0b96dab2254b634620b6e3ba58f78d68831bf043` |
+| 3 | `theorem` | [toMeasure_toOuterMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/declarations/tomeasure-tooutermeasure.md) | 49 | `result-track:114fbfbebded562cea74e8f945464a89e13679bc386fcda1c66a59e75430f01b` |
+| 4 | `theorem` | [toMeasure_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/declarations/tomeasure-apply.md) | 54 | `result-track:3306edc3d02b1aafa9444bd5018ab900ebac3f4d4144ec2bade5e6042e7adf89` |
+| 5 | `theorem` | [le_toMeasure_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/declarations/le-tomeasure-apply.md) | 58 | `result-track:983a7c5c986309779e6f786627f7f5469c15c24376d7415aa425e3b6717bd52a` |
+| 6 | `theorem` | [toMeasure_apply₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/declarations/tomeasure-apply-source-edition-2.md) | 62 | `result-track:505da284b3cfabd23eb1f9323010c1981a15ac88219d9b36f427a77db4987055` |
+| 7 | `theorem` | [toOuterMeasure_toMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/declarations/tooutermeasure-tomeasure.md) | 72 | `result-track:2ef8115b779aa4d3fdce7d8a4a2135cfeeebbef4fc78b5358f8752729c5cf6c6` |
+| 8 | `theorem` | [boundedBy_measure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureNamespacedPublic.lean/declarations/boundedby-measure.md) | 77 | `result-track:1aede57e50407bc8fca0764fd98157e782dd7614c33754f84792df442f944995` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

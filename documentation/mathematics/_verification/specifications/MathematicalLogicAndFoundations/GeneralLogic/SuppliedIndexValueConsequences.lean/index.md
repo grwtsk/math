@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedIndexValueConsequences.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedIndexValueConsequences.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedIndexValueConsequences.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedIndexValueConsequences.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [base_case_euler_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedIndexValueConsequences.lean/declarations/base-case-euler-nonzero.md) | 33 | `result-track:82a08aded34055feff8383ae55d27f7b9544362862b092bc8059a3c23773bc27` |
-| 2 | `theorem` | [base_case_derived_index_euler_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedIndexValueConsequences.lean/declarations/base-case-derived-index-euler-nonzero.md) | 38 | `result-track:1713325aef0e5daace472e3da88e7da4db11fc07508f3fb0e05232f70c04f040` |
-| 3 | `theorem` | [base_case_derived_index_same_complex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedIndexValueConsequences.lean/declarations/base-case-derived-index-same-complex.md) | 43 | `result-track:8a4df79c808b9f9b908db1c9900223bb3ced39f2a844e7c58c2026fce30a4766` |
+| 1 | `theorem` | [base_case_euler_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedIndexValueConsequences.lean/declarations/base-case-euler-nonzero.md) | 33 | `result-track:82a08aded34055feff8383ae55d27f7b9544362862b092bc8059a3c23773bc27` |
+| 2 | `theorem` | [base_case_derived_index_euler_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedIndexValueConsequences.lean/declarations/base-case-derived-index-euler-nonzero.md) | 38 | `result-track:1713325aef0e5daace472e3da88e7da4db11fc07508f3fb0e05232f70c04f040` |
+| 3 | `theorem` | [base_case_derived_index_same_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedIndexValueConsequences.lean/declarations/base-case-derived-index-same-complex.md) | 43 | `result-track:8a4df79c808b9f9b908db1c9900223bb3ced39f2a844e7c58c2026fce30a4766` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

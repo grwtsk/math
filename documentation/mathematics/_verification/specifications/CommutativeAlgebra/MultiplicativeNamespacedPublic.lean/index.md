@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MultiplicativeNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MultiplicativeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MultiplicativeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MultiplicativeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prime_pow_coprime_prod_of_coprime_insert](../../../../CommutativeAlgebra/MultiplicativeNamespacedPublic.lean/declarations/prime-pow-coprime-prod-of-coprime-insert.md) | 41 | `result-track:4e87b4bce1bbe20e79adc660d9cacbfc8cba8a68eeb220784ebac5271b819749` |
-| 2 | `theorem` | [induction_on_prime_power](../../../../CommutativeAlgebra/MultiplicativeNamespacedPublic.lean/declarations/induction-on-prime-power.md) | 62 | `result-track:ae09cd545e832d744c92f8a2bf514cad6ed5ef9a2bc56479191ac5c7092920ab` |
-| 3 | `theorem` | [induction_on_coprime](../../../../CommutativeAlgebra/MultiplicativeNamespacedPublic.lean/declarations/induction-on-coprime.md) | 82 | `result-track:5b6e05c5b8a1eb29b99cf333bb9ffa64d4e6c2fcdf4cb793841d0085039f9315` |
-| 4 | `theorem` | [multiplicative_prime_power](../../../../CommutativeAlgebra/MultiplicativeNamespacedPublic.lean/declarations/multiplicative-prime-power.md) | 101 | `result-track:6b6656ce3f7e5a58836e8eacf82f66849ef461dea7c79c03ba0e0f9ca5d2032e` |
-| 5 | `theorem` | [multiplicative_of_coprime](../../../../CommutativeAlgebra/MultiplicativeNamespacedPublic.lean/declarations/multiplicative-of-coprime.md) | 122 | `result-track:242cfae01a88ae4211241a32a95edc0fdbe4bd677b060dd472e105c8da20887d` |
+| 1 | `theorem` | [prime_pow_coprime_prod_of_coprime_insert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MultiplicativeNamespacedPublic.lean/declarations/prime-pow-coprime-prod-of-coprime-insert.md) | 41 | `result-track:4e87b4bce1bbe20e79adc660d9cacbfc8cba8a68eeb220784ebac5271b819749` |
+| 2 | `theorem` | [induction_on_prime_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MultiplicativeNamespacedPublic.lean/declarations/induction-on-prime-power.md) | 62 | `result-track:ae09cd545e832d744c92f8a2bf514cad6ed5ef9a2bc56479191ac5c7092920ab` |
+| 3 | `theorem` | [induction_on_coprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MultiplicativeNamespacedPublic.lean/declarations/induction-on-coprime.md) | 82 | `result-track:5b6e05c5b8a1eb29b99cf333bb9ffa64d4e6c2fcdf4cb793841d0085039f9315` |
+| 4 | `theorem` | [multiplicative_prime_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MultiplicativeNamespacedPublic.lean/declarations/multiplicative-prime-power.md) | 101 | `result-track:6b6656ce3f7e5a58836e8eacf82f66849ef461dea7c79c03ba0e0f9ca5d2032e` |
+| 5 | `theorem` | [multiplicative_of_coprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MultiplicativeNamespacedPublic.lean/declarations/multiplicative-of-coprime.md) | 122 | `result-track:242cfae01a88ae4211241a32a95edc0fdbe4bd677b060dd472e105c8da20887d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

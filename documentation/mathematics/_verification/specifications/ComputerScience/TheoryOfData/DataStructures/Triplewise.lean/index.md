@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Triplewise](../../../../../../ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise.md) | 26 | `declaration-track:4b8ed7e79b3dc7b4afb3b65266e8ef3fc9e77e2425744e50f696ce49269231b6` |
-| 2 | `lemma` | [triplewise_cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-cons.md) | 34 | `result-track:9d7fc9e0ef9a84db1c2509e87b4a9328c1868b1c03c305bdfa195fe2df62dc13` |
-| 3 | `lemma` | [triplewise_singleton](../../../../../../ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-singleton.md) | 39 | `result-track:bd0b4669eec0d6f9d6bf2915bd74aa4bd237088e6855bb3dfe553f8054a6cc4f` |
-| 4 | `lemma` | [triplewise_pair](../../../../../../ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-pair.md) | 42 | `result-track:3ba4f95188734d855fb95e635c1fc12938b7b23b155c5701d50532d1537fb5f2` |
-| 5 | `lemma` | [triplewise_triple](../../../../../../ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-triple.md) | 47 | `result-track:03d78edb2a301f24e2f186f030dd74a82d817c47460091f988ea693f0b2131f4` |
-| 6 | `lemma` | [Triplewise.imp](../../../../../../ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-imp.md) | 50 | `result-track:b901ecd8d214aa2585ebf04df380f5ba31500bcc7db39b04015ab619ab2c2d38` |
-| 7 | `lemma` | [triplewise_map](../../../../../../ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-map-source-edition-2.md) | 56 | `result-track:d34202a8dfb25708f570e2bdd379f1d20a9804683dc7e2f869743be29e38f127` |
-| 8 | `lemma` | [Triplewise.of_map](../../../../../../ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-of-map.md) | 62 | `result-track:3d5f951700db4f53f132ff6ccbe847c67ac8a3e656280b7c5363a0e294541594` |
-| 9 | `lemma` | [Triplewise.map](../../../../../../ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-map.md) | 68 | `result-track:158b05d9b1e05649dc964fdc13cf25fc41715ae53df4cc26c51eb94ea3bd2493` |
-| 10 | `lemma` | [triplewise_iff_getElem](../../../../../../ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-iff-getelem.md) | 72 | `result-track:c8d6602887a5fbde4be888af7bc64eb20ab3a469eb50004eafe008aac092a90e` |
-| 11 | `lemma` | [triplewise_append](../../../../../../ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-append.md) | 92 | `result-track:efef32ee0ac2ab8ecc8d5158ef5dc09ab83ec6ae2c723597d207cacb868151ff` |
-| 12 | `lemma` | [triplewise_reverse](../../../../../../ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-reverse.md) | 100 | `result-track:c9800a3811111f9b063b14668d38596035cbf48ab9ffbf60a7d3baa9bfeb71b1` |
+| 1 | `inductive` | [Triplewise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise.md) | 26 | `declaration-track:4b8ed7e79b3dc7b4afb3b65266e8ef3fc9e77e2425744e50f696ce49269231b6` |
+| 2 | `lemma` | [triplewise_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-cons.md) | 34 | `result-track:9d7fc9e0ef9a84db1c2509e87b4a9328c1868b1c03c305bdfa195fe2df62dc13` |
+| 3 | `lemma` | [triplewise_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-singleton.md) | 39 | `result-track:bd0b4669eec0d6f9d6bf2915bd74aa4bd237088e6855bb3dfe553f8054a6cc4f` |
+| 4 | `lemma` | [triplewise_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-pair.md) | 42 | `result-track:3ba4f95188734d855fb95e635c1fc12938b7b23b155c5701d50532d1537fb5f2` |
+| 5 | `lemma` | [triplewise_triple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-triple.md) | 47 | `result-track:03d78edb2a301f24e2f186f030dd74a82d817c47460091f988ea693f0b2131f4` |
+| 6 | `lemma` | [Triplewise.imp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-imp.md) | 50 | `result-track:b901ecd8d214aa2585ebf04df380f5ba31500bcc7db39b04015ab619ab2c2d38` |
+| 7 | `lemma` | [triplewise_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-map-source-edition-2.md) | 56 | `result-track:d34202a8dfb25708f570e2bdd379f1d20a9804683dc7e2f869743be29e38f127` |
+| 8 | `lemma` | [Triplewise.of_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-of-map.md) | 62 | `result-track:3d5f951700db4f53f132ff6ccbe847c67ac8a3e656280b7c5363a0e294541594` |
+| 9 | `lemma` | [Triplewise.map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-map.md) | 68 | `result-track:158b05d9b1e05649dc964fdc13cf25fc41715ae53df4cc26c51eb94ea3bd2493` |
+| 10 | `lemma` | [triplewise_iff_getElem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-iff-getelem.md) | 72 | `result-track:c8d6602887a5fbde4be888af7bc64eb20ab3a469eb50004eafe008aac092a90e` |
+| 11 | `lemma` | [triplewise_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-append.md) | 92 | `result-track:efef32ee0ac2ab8ecc8d5158ef5dc09ab83ec6ae2c723597d207cacb868151ff` |
+| 12 | `lemma` | [triplewise_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Triplewise.lean/declarations/triplewise-reverse.md) | 100 | `result-track:c9800a3811111f9b063b14668d38596035cbf48ab9ffbf60a7d3baa9bfeb71b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

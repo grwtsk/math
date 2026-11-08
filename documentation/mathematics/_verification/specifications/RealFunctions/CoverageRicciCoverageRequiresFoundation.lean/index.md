@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CoverageRicciCoverageRequiresFoundation.lean/index.md) · [Full source](../../../../RealFunctions/CoverageRicciCoverageRequiresFoundation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoverageRicciCoverageRequiresFoundation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoverageRicciCoverageRequiresFoundation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ricciCoverage_requires_foundation](../../../../RealFunctions/CoverageRicciCoverageRequiresFoundation.lean/declarations/riccicoverage-requires-foundation.md) | 7 | `result-track:98d7e7d99b27925599ba3124519cf3bf6f89e572e91c4ec160bc0ad18535d8a4` |
+| 1 | `theorem` | [ricciCoverage_requires_foundation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoverageRicciCoverageRequiresFoundation.lean/declarations/riccicoverage-requires-foundation.md) | 7 | `result-track:98d7e7d99b27925599ba3124519cf3bf6f89e572e91c4ec160bc0ad18535d8a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

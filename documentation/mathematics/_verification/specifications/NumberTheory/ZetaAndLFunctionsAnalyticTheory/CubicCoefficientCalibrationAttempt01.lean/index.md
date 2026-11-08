@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fourthDisplacementEnergyPolynomial](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01.lean/declarations/fourthdisplacementenergypolynomial.md) | 19 | `declaration-track:8367e08a06e4368aef7c5cd150992fc7a29a975257a71aa534c66ec6c7db48c5` |
-| 2 | `theorem` | [cubic_energy_ratio_le_sixty_seven](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01.lean/declarations/cubic-energy-ratio-le-sixty-seven.md) | 23 | `result-track:231458c6ce6bc5be65f12c1618cc8c23b934dc08f92072cd50878b08da0c84a0` |
-| 3 | `theorem` | [cubic_energy_ratio_le_sixty_seven_of_scale](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01.lean/declarations/cubic-energy-ratio-le-sixty-seven-of-scale.md) | 32 | `result-track:a884cfa4f13b42c67f674953eca46e5a10b8715d605efe67cf61a2058fe04d90` |
-| 4 | `theorem` | [refined_cubic_calibration_budget_lt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01.lean/declarations/refined-cubic-calibration-budget-lt.md) | 41 | `result-track:59bdffdf5c6271d2de57cfdbb8028af9ef8939b582c5d110d5d9e7f4e0eb33bf` |
+| 1 | `def` | [fourthDisplacementEnergyPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01.lean/declarations/fourthdisplacementenergypolynomial.md) | 19 | `declaration-track:8367e08a06e4368aef7c5cd150992fc7a29a975257a71aa534c66ec6c7db48c5` |
+| 2 | `theorem` | [cubic_energy_ratio_le_sixty_seven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01.lean/declarations/cubic-energy-ratio-le-sixty-seven.md) | 23 | `result-track:231458c6ce6bc5be65f12c1618cc8c23b934dc08f92072cd50878b08da0c84a0` |
+| 3 | `theorem` | [cubic_energy_ratio_le_sixty_seven_of_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01.lean/declarations/cubic-energy-ratio-le-sixty-seven-of-scale.md) | 32 | `result-track:a884cfa4f13b42c67f674953eca46e5a10b8715d605efe67cf61a2058fe04d90` |
+| 4 | `theorem` | [refined_cubic_calibration_budget_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationAttempt01.lean/declarations/refined-cubic-calibration-budget-lt.md) | 41 | `result-track:59bdffdf5c6271d2de57cfdbb8028af9ef8939b582c5d110d5d9e7f4e0eb33bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

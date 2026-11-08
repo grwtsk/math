@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopModuleCat.lean/index.md) · [Full source](../../../../GeneralTopology/TopModuleCat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopModuleCat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopModuleCat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,23 +57,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-4.md) | 14 | `declaration-track:2fcabd3f11b00019b45793065899951ba5d63bff5fcdbe5661ef3264f41a27ca` |
-| 2 | `example` | [(anonymous)](../../../../GeneralTopology/TopModuleCat.lean/declarations/example.md) | 17 | `declaration-track:18049f2ae1a4702aba94da554684473118ca7344c8d3c4856955735bd9cdbc67` |
-| 3 | `example` | [(anonymous)](../../../../GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-15.md) | 23 | `declaration-track:c8bca51c6d986609c54980c37557d979922e688761b63bc290604eaf73ec212a` |
-| 4 | `example` | [(anonymous)](../../../../GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-10.md) | 28 | `declaration-track:a12bbf70769b3f485b8d03adbd50cf0474ea5dde4a98fcef3adeef818d7a87da` |
-| 5 | `example` | [(anonymous)](../../../../GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-13.md) | 30 | `declaration-track:b6f78db19ff9354ba6a47654d1a1fd1e88079706bc422a4bec89a0961326d3fb` |
-| 6 | `example` | [(anonymous)](../../../../GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-9.md) | 37 | `declaration-track:819ed4ada699efe54769caf77fe0de52ee4f28385e483be57bef0501e32199cc` |
-| 7 | `example` | [(anonymous)](../../../../GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-5.md) | 44 | `declaration-track:35ad0d9f06d2897035ebf8a2559bdae5572cfcad39ec99833da9812b3cbdd9a7` |
-| 8 | `example` | [(anonymous)](../../../../GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-17.md) | 49 | `declaration-track:df73dd2930777f34c699ad0c141ae655cea3831e51fd63be1b804f413bf1a6ff` |
-| 9 | `example` | [(anonymous)](../../../../GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-2.md) | 55 | `declaration-track:1cd2b49c6e78c0527c721f27e3dd504b1be520962cee740268c76f5706d88c4e` |
-| 10 | `example` | [(anonymous)](../../../../GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-8.md) | 57 | `declaration-track:5bbaaf415b1a5e6707fc1bc6cd8effbaba235c70bb2dda6530c777da1fb6d05e` |
-| 11 | `example` | [(anonymous)](../../../../GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-16.md) | 59 | `declaration-track:dc3feb39ee59a67b9d8b12050461e89d49f300672c3bbed6212504a61eeee7be` |
-| 12 | `example` | [(anonymous)](../../../../GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-7.md) | 61 | `declaration-track:470f1901a38a84eea223b548d8f4529bd6683b97b6eb695b64627b961bfa7813` |
-| 13 | `example` | [(anonymous)](../../../../GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-12.md) | 63 | `declaration-track:afcb9d15b9a23007b2c7b7a1f68d479650da4f7848a26e1361e8c8792fa39cfa` |
-| 14 | `example` | [(anonymous)](../../../../GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-11.md) | 66 | `declaration-track:af8ea52881f1b247accde6ce643e42b7919f9a6be30d605cd99630e12acaee03` |
-| 15 | `example` | [(anonymous)](../../../../GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-6.md) | 69 | `declaration-track:409e93d4a3983b001091308a5dc524285ecb63fa40dcc4a245b62a987d0d391d` |
-| 16 | `example` | [(anonymous)](../../../../GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-14.md) | 72 | `declaration-track:b766df39a9cf8662b89c76ee12ee24648bfae14044293a6f5964bc6c31674c40` |
-| 17 | `example` | [(anonymous)](../../../../GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-3.md) | 74 | `declaration-track:22bdf63b43ad06dcc69c6c8f7ecd25ba3f0136b35f8435cffcee86794912618d` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-4.md) | 14 | `declaration-track:2fcabd3f11b00019b45793065899951ba5d63bff5fcdbe5661ef3264f41a27ca` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopModuleCat.lean/declarations/example.md) | 17 | `declaration-track:18049f2ae1a4702aba94da554684473118ca7344c8d3c4856955735bd9cdbc67` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-15.md) | 23 | `declaration-track:c8bca51c6d986609c54980c37557d979922e688761b63bc290604eaf73ec212a` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-10.md) | 28 | `declaration-track:a12bbf70769b3f485b8d03adbd50cf0474ea5dde4a98fcef3adeef818d7a87da` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-13.md) | 30 | `declaration-track:b6f78db19ff9354ba6a47654d1a1fd1e88079706bc422a4bec89a0961326d3fb` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-9.md) | 37 | `declaration-track:819ed4ada699efe54769caf77fe0de52ee4f28385e483be57bef0501e32199cc` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-5.md) | 44 | `declaration-track:35ad0d9f06d2897035ebf8a2559bdae5572cfcad39ec99833da9812b3cbdd9a7` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-17.md) | 49 | `declaration-track:df73dd2930777f34c699ad0c141ae655cea3831e51fd63be1b804f413bf1a6ff` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-2.md) | 55 | `declaration-track:1cd2b49c6e78c0527c721f27e3dd504b1be520962cee740268c76f5706d88c4e` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-8.md) | 57 | `declaration-track:5bbaaf415b1a5e6707fc1bc6cd8effbaba235c70bb2dda6530c777da1fb6d05e` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-16.md) | 59 | `declaration-track:dc3feb39ee59a67b9d8b12050461e89d49f300672c3bbed6212504a61eeee7be` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-7.md) | 61 | `declaration-track:470f1901a38a84eea223b548d8f4529bd6683b97b6eb695b64627b961bfa7813` |
+| 13 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-12.md) | 63 | `declaration-track:afcb9d15b9a23007b2c7b7a1f68d479650da4f7848a26e1361e8c8792fa39cfa` |
+| 14 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-11.md) | 66 | `declaration-track:af8ea52881f1b247accde6ce643e42b7919f9a6be30d605cd99630e12acaee03` |
+| 15 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-6.md) | 69 | `declaration-track:409e93d4a3983b001091308a5dc524285ecb63fa40dcc4a245b62a987d0d391d` |
+| 16 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-14.md) | 72 | `declaration-track:b766df39a9cf8662b89c76ee12ee24648bfae14044293a6f5964bc6c31674c40` |
+| 17 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopModuleCat.lean/declarations/example-source-edition-3.md) | 74 | `declaration-track:22bdf63b43ad06dcc69c6c8f7ecd25ba3f0136b35f8435cffcee86794912618d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridTail.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridTail.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridTail.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridTail.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenResidueMajorantObstruction`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueMajorantObstruction.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenResidueMajorantObstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueMajorantObstruction.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [greenPositivePrincipalResidues](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridTail.lean/declarations/greenpositiveprincipalresidues.md) | 17 | `declaration-track:3d22659855567f5d73871f71a51db15360a12d50a942ec93bf43b6fe74665418` |
-| 2 | `def` | [greenHighQuotientResidueMajorant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridTail.lean/declarations/greenhighquotientresiduemajorant.md) | 21 | `declaration-track:d0ebbafc783a531ef878f48b3944a4c625b2477f1992d26852ff1a760509f773` |
-| 3 | `theorem` | [principal_residue_denominator_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridTail.lean/declarations/principal-residue-denominator-lower.md) | 30 | `result-track:0842f80e0664e460a01281cbf0f49382e6edd40887c77de99c75d000babc15bf` |
-| 4 | `theorem` | [greenHighQuotientResidueMajorant_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridTail.lean/declarations/greenhighquotientresiduemajorant-le.md) | 44 | `result-track:30ec084841c6fa3b180b361029029eea03457dd76ea5b38562ebd98508da9257` |
+| 1 | `def` | [greenPositivePrincipalResidues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridTail.lean/declarations/greenpositiveprincipalresidues.md) | 17 | `declaration-track:3d22659855567f5d73871f71a51db15360a12d50a942ec93bf43b6fe74665418` |
+| 2 | `def` | [greenHighQuotientResidueMajorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridTail.lean/declarations/greenhighquotientresiduemajorant.md) | 21 | `declaration-track:d0ebbafc783a531ef878f48b3944a4c625b2477f1992d26852ff1a760509f773` |
+| 3 | `theorem` | [principal_residue_denominator_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridTail.lean/declarations/principal-residue-denominator-lower.md) | 30 | `result-track:0842f80e0664e460a01281cbf0f49382e6edd40887c77de99c75d000babc15bf` |
+| 4 | `theorem` | [greenHighQuotientResidueMajorant_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHybridTail.lean/declarations/greenhighquotientresiduemajorant-le.md) | 44 | `result-track:30ec084841c6fa3b180b361029029eea03457dd76ea5b38562ebd98508da9257` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasureDecompositionHahnNamespacedPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasureDecompositionHahnNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasureDecompositionHahnNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasureDecompositionHahnNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hahn_decomposition](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasureDecompositionHahnNamespacedPublic.lean/declarations/hahn-decomposition.md) | 55 | `result-track:fac0273bdc377afc8abb2e57c4f05f6deb07c02b736d5471e4a4ef19f990fe4a` |
-| 2 | `structure` | [IsHahnDecomposition](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasureDecompositionHahnNamespacedPublic.lean/declarations/ishahndecomposition.md) | 185 | `declaration-track:b2e3b1de1bd17d0c255f6288a54bed8a67dd0d632df7a22dd84403d2f7ef6507` |
-| 3 | `lemma` | [IsHahnDecomposition.compl](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasureDecompositionHahnNamespacedPublic.lean/declarations/ishahndecomposition-compl.md) | 190 | `result-track:fce5e4c99dffde11c8c77cecb91946727647faf48cf2f8cbc5852d0a512db828` |
-| 4 | `lemma` | [exists_isHahnDecomposition](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasureDecompositionHahnNamespacedPublic.lean/declarations/exists-ishahndecomposition.md) | 196 | `result-track:3ea25726428deea0b79148241b26a002a0fdf330d32d47e3aff0e32a7a8d6301` |
+| 1 | `theorem` | [hahn_decomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasureDecompositionHahnNamespacedPublic.lean/declarations/hahn-decomposition.md) | 55 | `result-track:fac0273bdc377afc8abb2e57c4f05f6deb07c02b736d5471e4a4ef19f990fe4a` |
+| 2 | `structure` | [IsHahnDecomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasureDecompositionHahnNamespacedPublic.lean/declarations/ishahndecomposition.md) | 185 | `declaration-track:b2e3b1de1bd17d0c255f6288a54bed8a67dd0d632df7a22dd84403d2f7ef6507` |
+| 3 | `lemma` | [IsHahnDecomposition.compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasureDecompositionHahnNamespacedPublic.lean/declarations/ishahndecomposition-compl.md) | 190 | `result-track:fce5e4c99dffde11c8c77cecb91946727647faf48cf2f8cbc5852d0a512db828` |
+| 4 | `lemma` | [exists_isHahnDecomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasureDecompositionHahnNamespacedPublic.lean/declarations/exists-ishahndecomposition.md) | 196 | `result-track:3ea25726428deea0b79148241b26a002a0fdf330d32d47e3aff0e32a7a8d6301` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

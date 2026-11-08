@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PreorderRestrict.lean/index.md) · [Full source](../../../../GeneralTopology/PreorderRestrict.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PreorderRestrict.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PreorderRestrict.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [continuous_restrictLe](../../../../GeneralTopology/PreorderRestrict.lean/declarations/continuous-restrictle-source-edition-2.md) | 21 | `result-track:c915c965234a02aa0e4125978fd94ff9768f1c8b6480607e9469d2f9d6794956` |
-| 2 | `theorem` | [continuous_restrictLe₂](../../../../GeneralTopology/PreorderRestrict.lean/declarations/continuous-restrictle.md) | 25 | `result-track:019323eae6a46880bd1778f2b965ebf9519f7ef86c8fafa9fc3f46d0fc7c399d` |
-| 3 | `theorem` | [continuous_frestrictLe](../../../../GeneralTopology/PreorderRestrict.lean/declarations/continuous-frestrictle-source-edition-2.md) | 31 | `result-track:4c67a9b787f83d8ef629557397a68c63c8637346ffd7de3bb1bcdb40374c43a2` |
-| 4 | `theorem` | [continuous_frestrictLe₂](../../../../GeneralTopology/PreorderRestrict.lean/declarations/continuous-frestrictle.md) | 35 | `result-track:48dd4b166b91c82e8f6d77ed945c15fe382bab1ba6207c87cded1fcda3fcb8ea` |
+| 1 | `theorem` | [continuous_restrictLe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PreorderRestrict.lean/declarations/continuous-restrictle-source-edition-2.md) | 21 | `result-track:c915c965234a02aa0e4125978fd94ff9768f1c8b6480607e9469d2f9d6794956` |
+| 2 | `theorem` | [continuous_restrictLe₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PreorderRestrict.lean/declarations/continuous-restrictle.md) | 25 | `result-track:019323eae6a46880bd1778f2b965ebf9519f7ef86c8fafa9fc3f46d0fc7c399d` |
+| 3 | `theorem` | [continuous_frestrictLe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PreorderRestrict.lean/declarations/continuous-frestrictle-source-edition-2.md) | 31 | `result-track:4c67a9b787f83d8ef629557397a68c63c8637346ffd7de3bb1bcdb40374c43a2` |
+| 4 | `theorem` | [continuous_frestrictLe₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PreorderRestrict.lean/declarations/continuous-frestrictle.md) | 35 | `result-track:48dd4b166b91c82e8f6d77ed945c15fe382bab1ba6207c87cded1fcda3fcb8ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

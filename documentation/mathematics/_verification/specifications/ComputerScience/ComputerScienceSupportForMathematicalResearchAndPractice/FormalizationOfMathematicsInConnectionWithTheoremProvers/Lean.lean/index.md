@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Lean.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Lean.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Lean.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Lean.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Nat.toHexDigits](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Lean.lean/declarations/nat-tohexdigits.md) | 19 | `declaration-track:2e41faa0634a8e9df894d15fdaa34ec3c67f6ad6f2ae6bc3f12dc30a241f1ac4` |
-| 2 | `def` | [UInt64.asLTar](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Lean.lean/declarations/uint64-asltar.md) | 27 | `declaration-track:55793d3c4998859a31457669aab6367879d1b3c71dffa9d158796fc3ce2c9250` |
-| 3 | `def` | [Lean.Name.fromComponents](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Lean.lean/declarations/lean-name-fromcomponents.md) | 32 | `declaration-track:6b5b6a191c852ea3c1bc6d3dc3f88970e03ed636cc5ffec499931553583c5373` |
-| 4 | `def` | [findWithExtBase](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Lean.lean/declarations/findwithextbase.md) | 51 | `declaration-track:c30125b60d4de618e7cf0cd66de94f3cbfa9674f36ab035fcd845bb5c3808a63` |
-| 5 | `def` | [withoutParent](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Lean.lean/declarations/withoutparent.md) | 61 | `declaration-track:8f6411a7bd58b0fb39f6034fe05590955211dcc47e6cf1bb0de8a20a7cc56980` |
+| 1 | `def` | [Nat.toHexDigits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Lean.lean/declarations/nat-tohexdigits.md) | 19 | `declaration-track:2e41faa0634a8e9df894d15fdaa34ec3c67f6ad6f2ae6bc3f12dc30a241f1ac4` |
+| 2 | `def` | [UInt64.asLTar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Lean.lean/declarations/uint64-asltar.md) | 27 | `declaration-track:55793d3c4998859a31457669aab6367879d1b3c71dffa9d158796fc3ce2c9250` |
+| 3 | `def` | [Lean.Name.fromComponents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Lean.lean/declarations/lean-name-fromcomponents.md) | 32 | `declaration-track:6b5b6a191c852ea3c1bc6d3dc3f88970e03ed636cc5ffec499931553583c5373` |
+| 4 | `def` | [findWithExtBase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Lean.lean/declarations/findwithextbase.md) | 51 | `declaration-track:c30125b60d4de618e7cf0cd66de94f3cbfa9674f36ab035fcd845bb5c3808a63` |
+| 5 | `def` | [withoutParent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Lean.lean/declarations/withoutparent.md) | 61 | `declaration-track:8f6411a7bd58b0fb39f6034fe05590955211dcc47e6cf1bb0de8a20a7cc56980` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

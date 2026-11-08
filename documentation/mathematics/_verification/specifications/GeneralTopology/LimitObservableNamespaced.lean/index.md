@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LimitObservableNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/LimitObservableNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitObservableNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitObservableNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [SpectralLimitMode](../../../../GeneralTopology/LimitObservableNamespaced.lean/declarations/spectrallimitmode.md) | 28 | `declaration-track:beb2c31b4916ae57578e738edd59612e580c13ae81c99c9165896c53f11ccb04` |
-| 2 | `structure` | [TraceObservableLimitCertificate](../../../../GeneralTopology/LimitObservableNamespaced.lean/declarations/traceobservablelimitcertificate.md) | 33 | `declaration-track:7b755dafb2f1a150f1d1b63a39d7d7ac186ceae039ed6aa00106bb7c527ef33e` |
-| 3 | `structure` | [LimitSpectralOperatorCertificate](../../../../GeneralTopology/LimitObservableNamespaced.lean/declarations/limitspectraloperatorcertificate.md) | 59 | `declaration-track:ac93ab8b20a3ba601510a80c4518cb368075e54b4f83f8309f91e1ee4b3689ce` |
+| 1 | `inductive` | [SpectralLimitMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitObservableNamespaced.lean/declarations/spectrallimitmode.md) | 28 | `declaration-track:beb2c31b4916ae57578e738edd59612e580c13ae81c99c9165896c53f11ccb04` |
+| 2 | `structure` | [TraceObservableLimitCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitObservableNamespaced.lean/declarations/traceobservablelimitcertificate.md) | 33 | `declaration-track:7b755dafb2f1a150f1d1b63a39d7d7ac186ceae039ed6aa00106bb7c527ef33e` |
+| 3 | `structure` | [LimitSpectralOperatorCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitObservableNamespaced.lean/declarations/limitspectraloperatorcertificate.md) | 59 | `declaration-track:ac93ab8b20a3ba601510a80c4518cb368075e54b4f83f8309f91e1ee4b3689ce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

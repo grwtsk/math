@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CompletionEquivarianceNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CompletionEquivarianceNamespacedSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompletionEquivarianceNamespacedSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompletionEquivarianceNamespacedSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompletionEquivariance](../../../../GroupTheoryAndGeneralizations/CompletionEquivarianceNamespacedSourceEdition2.lean/declarations/completionequivariance.md) | 22 | `declaration-track:3b42eaf64c479416f92e17aac9b89b1074d5d834bbb914c01b1102113fe09699` |
-| 2 | `theorem` | [completion_equivariance_preserves_feasibility](../../../../GroupTheoryAndGeneralizations/CompletionEquivarianceNamespacedSourceEdition2.lean/declarations/completion-equivariance-preserves-feasibility.md) | 79 | `result-track:dab0d9fbf54a627205557a410bc2397c0f605ef745869f3a9cb5ef101685a695` |
-| 3 | `theorem` | [completion_equivariance_preserves_infeasibility](../../../../GroupTheoryAndGeneralizations/CompletionEquivarianceNamespacedSourceEdition2.lean/declarations/completion-equivariance-preserves-infeasibility.md) | 97 | `result-track:8f2bd55df8a08f121393eeaac98ab2ff3a87ae884b20b36c59f8b1dfe8245927` |
+| 1 | `structure` | [CompletionEquivariance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompletionEquivarianceNamespacedSourceEdition2.lean/declarations/completionequivariance.md) | 22 | `declaration-track:3b42eaf64c479416f92e17aac9b89b1074d5d834bbb914c01b1102113fe09699` |
+| 2 | `theorem` | [completion_equivariance_preserves_feasibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompletionEquivarianceNamespacedSourceEdition2.lean/declarations/completion-equivariance-preserves-feasibility.md) | 79 | `result-track:dab0d9fbf54a627205557a410bc2397c0f605ef745869f3a9cb5ef101685a695` |
+| 3 | `theorem` | [completion_equivariance_preserves_infeasibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompletionEquivarianceNamespacedSourceEdition2.lean/declarations/completion-equivariance-preserves-infeasibility.md) | 97 | `result-track:8f2bd55df8a08f121393eeaac98ab2ff3a87ae884b20b36c59f8b1dfe8245927` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

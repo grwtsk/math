@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [mono_of_isColimit_monoOver](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespacedPublic.lean/declarations/mono-of-iscolimit-monoover.md) | 60 | `result-track:b7d7698761edc1d613ee0e9c956bfa418adcd2f051accef8b400b9d86be123a6` |
-| 2 | `lemma` | [subobjectMk_of_isColimit_eq_iSup](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespacedPublic.lean/declarations/subobjectmk-of-iscolimit-eq-isup.md) | 71 | `result-track:d23f2ad8f0b23f865bae7c2717dbc448b1a07e9fe05f88d2fc2e7a10a74b3a97` |
-| 3 | `def` | [isColimitMapCoconeOfSubobjectMkEqISup](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespacedPublic.lean/declarations/iscolimitmapcoconeofsubobjectmkeqisup.md) | 101 | `declaration-track:c4f82c2552ac479b22c5968d1fb3e865022c12cfb011e6342eec3d19edab7ad2` |
-| 4 | `lemma` | [exists_isIso_of_functor_from_monoOver](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespacedPublic.lean/declarations/exists-isiso-of-functor-from-monoover.md) | 124 | `result-track:754e12808daf177465472751ad17913e1f042486946ae393b203fc7603e39e6c` |
+| 1 | `lemma` | [mono_of_isColimit_monoOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespacedPublic.lean/declarations/mono-of-iscolimit-monoover.md) | 60 | `result-track:b7d7698761edc1d613ee0e9c956bfa418adcd2f051accef8b400b9d86be123a6` |
+| 2 | `lemma` | [subobjectMk_of_isColimit_eq_iSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespacedPublic.lean/declarations/subobjectmk-of-iscolimit-eq-isup.md) | 71 | `result-track:d23f2ad8f0b23f865bae7c2717dbc448b1a07e9fe05f88d2fc2e7a10a74b3a97` |
+| 3 | `def` | [isColimitMapCoconeOfSubobjectMkEqISup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespacedPublic.lean/declarations/iscolimitmapcoconeofsubobjectmkeqisup.md) | 101 | `declaration-track:c4f82c2552ac479b22c5968d1fb3e865022c12cfb011e6342eec3d19edab7ad2` |
+| 4 | `lemma` | [exists_isIso_of_functor_from_monoOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectNamespacedPublic.lean/declarations/exists-isiso-of-functor-from-monoover.md) | 124 | `result-track:754e12808daf177465472751ad17913e1f042486946ae393b203fc7603e39e6c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

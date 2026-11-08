@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GaloisDescentNamespacedDescentTransportCompatibility.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GaloisDescentNamespacedDescentTransportCompatibility.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescentNamespacedDescentTransportCompatibility.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescentNamespacedDescentTransportCompatibility.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [GaloisCocycle](../../../../GroupTheoryAndGeneralizations/GaloisDescentNamespacedDescentTransportCompatibility.lean/declarations/galoiscocycle.md) | 19 | `declaration-track:366f6a076efb3f9a8a3f627a36cff680c2293d90b5c3a561088dc5ffbaf5a4e3` |
-| 2 | `abbrev` | [GaloisDescentDatum](../../../../GroupTheoryAndGeneralizations/GaloisDescentNamespacedDescentTransportCompatibility.lean/declarations/galoisdescentdatum.md) | 24 | `declaration-track:91e3d0885e3c7b208ace2da2fd24fe418b4f2a6dbf5b1bb5f8c2d7caf4f01553` |
-| 3 | `abbrev` | [EffectiveDescentCertificate](../../../../GroupTheoryAndGeneralizations/GaloisDescentNamespacedDescentTransportCompatibility.lean/declarations/effectivedescentcertificate.md) | 30 | `declaration-track:226dfa96cb7ad22cef2915e0f89030e10e284db8eea05f33e09d105c28378669` |
-| 4 | `structure` | [DescentTransportCompatibility](../../../../GroupTheoryAndGeneralizations/GaloisDescentNamespacedDescentTransportCompatibility.lean/declarations/descenttransportcompatibility.md) | 39 | `declaration-track:5d6e546d8a09e1c92674e13187ac964136d65c7f5b6555b7d19117a1d8b573f4` |
+| 1 | `abbrev` | [GaloisCocycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescentNamespacedDescentTransportCompatibility.lean/declarations/galoiscocycle.md) | 19 | `declaration-track:366f6a076efb3f9a8a3f627a36cff680c2293d90b5c3a561088dc5ffbaf5a4e3` |
+| 2 | `abbrev` | [GaloisDescentDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescentNamespacedDescentTransportCompatibility.lean/declarations/galoisdescentdatum.md) | 24 | `declaration-track:91e3d0885e3c7b208ace2da2fd24fe418b4f2a6dbf5b1bb5f8c2d7caf4f01553` |
+| 3 | `abbrev` | [EffectiveDescentCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescentNamespacedDescentTransportCompatibility.lean/declarations/effectivedescentcertificate.md) | 30 | `declaration-track:226dfa96cb7ad22cef2915e0f89030e10e284db8eea05f33e09d105c28378669` |
+| 4 | `structure` | [DescentTransportCompatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescentNamespacedDescentTransportCompatibility.lean/declarations/descenttransportcompatibility.md) | 39 | `declaration-track:5d6e546d8a09e1c92674e13187ac964136d65c7f5b6555b7d19117a1d8b573f4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SourceFilterDeltaFragment.lean/index.md) · [Full source](../../../../RealFunctions/SourceFilterDeltaFragment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceFilterDeltaFragment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceFilterDeltaFragment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [W_zero_set_countable](../../../../RealFunctions/SourceFilterDeltaFragment.lean/declarations/w-zero-set-countable.md) | 12 | `result-track:bcdfb30c621ebaeec1702fac58cf37ce6052f562dfdb19d8046e3cbe4d81cbb8` |
-| 2 | `theorem` | [boundaryW_ae_ne_zero](../../../../RealFunctions/SourceFilterDeltaFragment.lean/declarations/boundaryw-ae-ne-zero.md) | 33 | `result-track:8f89e83924b24513d1594f18790193c7c78a4e9ac39c71ed15f59d32881475a0` |
-| 3 | `def` | [boundaryFilter](../../../../RealFunctions/SourceFilterDeltaFragment.lean/declarations/boundaryfilter.md) | 40 | `declaration-track:9305abda10e0d08f6f0fc33b5ec1a31c0a8689534c19c54b735e23e4ed565bf9` |
+| 1 | `theorem` | [W_zero_set_countable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceFilterDeltaFragment.lean/declarations/w-zero-set-countable.md) | 12 | `result-track:bcdfb30c621ebaeec1702fac58cf37ce6052f562dfdb19d8046e3cbe4d81cbb8` |
+| 2 | `theorem` | [boundaryW_ae_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceFilterDeltaFragment.lean/declarations/boundaryw-ae-ne-zero.md) | 33 | `result-track:8f89e83924b24513d1594f18790193c7c78a4e9ac39c71ed15f59d32881475a0` |
+| 3 | `def` | [boundaryFilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceFilterDeltaFragment.lean/declarations/boundaryfilter.md) | 40 | `declaration-track:9305abda10e0d08f6f0fc33b5ec1a31c0a8689534c19c54b735e23e4ed565bf9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Digest](../../../../../ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/digest.md) | 19 | `declaration-track:ee2a2502c36ddba1f584ac110d0c7ff6e99cce69bd239681f8d4c4c6baf34b5d` |
-| 2 | `def` | [Digest.Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/digest-valid.md) | 24 | `declaration-track:4be74569c42a65aae8d37f90e3963174f9616f3339dd1c4fe1e99004261633bc` |
-| 3 | `structure` | [StableId](../../../../../ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/stableid.md) | 31 | `declaration-track:d79d979915f6fedec011bd891ad8f141f50d3e26fc616993bc4b4cfba2261cdf` |
-| 4 | `def` | [StableId.Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/stableid-valid.md) | 35 | `declaration-track:f69880a20c57159991b5fba0a73e0e2abe7836b435ae74f4e6396fd1ee19506c` |
-| 5 | `structure` | [SnapshotId](../../../../../ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/snapshotid.md) | 38 | `declaration-track:32d1af704f5407a76e5d00e175671d173b09067245aef046a7f9dc69d25cdab0` |
-| 6 | `structure` | [SourceLocation](../../../../../ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/sourcelocation.md) | 42 | `declaration-track:9646ee579ef5e2994f5f45f5e6ecec25d9f29492255c1937c1f86d3b5a8a4610` |
-| 7 | `structure` | [RawTextCarrier](../../../../../ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/rawtextcarrier.md) | 48 | `declaration-track:b8b05440a134c1f493b8057706084c50425dc5423b566cad4deb5bf85037997e` |
-| 8 | `structure` | [TextCarrier](../../../../../ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/textcarrier.md) | 53 | `declaration-track:9a838797973ff4c4f50db50a3b20e4cb39155c53eb0bad0f3b55ecff4ff63404` |
-| 9 | `def` | [TextCarrier.length](../../../../../ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/textcarrier-length.md) | 58 | `declaration-track:bdde0bdc79259382dc561592ddb2b137a9167ab39b17b26cdce9c4433d9422bf` |
-| 10 | `theorem` | [TextCarrier.length_eq_size](../../../../../ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/textcarrier-length-eq-size.md) | 61 | `result-track:945e344e2044e06745deb0bcb9e1084db9602e879beb5661665abe45e8d99ab0` |
+| 1 | `structure` | [Digest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/digest.md) | 19 | `declaration-track:ee2a2502c36ddba1f584ac110d0c7ff6e99cce69bd239681f8d4c4c6baf34b5d` |
+| 2 | `def` | [Digest.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/digest-valid.md) | 24 | `declaration-track:4be74569c42a65aae8d37f90e3963174f9616f3339dd1c4fe1e99004261633bc` |
+| 3 | `structure` | [StableId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/stableid.md) | 31 | `declaration-track:d79d979915f6fedec011bd891ad8f141f50d3e26fc616993bc4b4cfba2261cdf` |
+| 4 | `def` | [StableId.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/stableid-valid.md) | 35 | `declaration-track:f69880a20c57159991b5fba0a73e0e2abe7836b435ae74f4e6396fd1ee19506c` |
+| 5 | `structure` | [SnapshotId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/snapshotid.md) | 38 | `declaration-track:32d1af704f5407a76e5d00e175671d173b09067245aef046a7f9dc69d25cdab0` |
+| 6 | `structure` | [SourceLocation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/sourcelocation.md) | 42 | `declaration-track:9646ee579ef5e2994f5f45f5e6ecec25d9f29492255c1937c1f86d3b5a8a4610` |
+| 7 | `structure` | [RawTextCarrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/rawtextcarrier.md) | 48 | `declaration-track:b8b05440a134c1f493b8057706084c50425dc5423b566cad4deb5bf85037997e` |
+| 8 | `structure` | [TextCarrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/textcarrier.md) | 53 | `declaration-track:9a838797973ff4c4f50db50a3b20e4cb39155c53eb0bad0f3b55ecff4ff63404` |
+| 9 | `def` | [TextCarrier.length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/textcarrier-length.md) | 58 | `declaration-track:bdde0bdc79259382dc561592ddb2b137a9167ab39b17b26cdce9c4433d9422bf` |
+| 10 | `theorem` | [TextCarrier.length_eq_size](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TextCarrierDigest.lean/declarations/textcarrier-length-eq-size.md) | 61 | `result-track:945e344e2044e06745deb0bcb9e1084db9602e879beb5661665abe45e8d99ab0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CompleteMetricExistenceAndPicardIteration.lean/index.md) · [Full source](../../../../RealFunctions/CompleteMetricExistenceAndPicardIteration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompleteMetricExistenceAndPicardIteration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompleteMetricExistenceAndPicardIteration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [banachPoint](../../../../RealFunctions/CompleteMetricExistenceAndPicardIteration.lean/declarations/banachpoint.md) | 44 | `declaration-track:37583bdd19db1503606010d5fc34628547b111996c79647592703f392d35213a` |
-| 2 | `theorem` | [banach_exists](../../../../RealFunctions/CompleteMetricExistenceAndPicardIteration.lean/declarations/banach-exists.md) | 48 | `result-track:9b397a7cab9622268e73a77a32f1bc51bdb14f0878141c2c3d92e9633e165020` |
-| 3 | `theorem` | [banach_fixed](../../../../RealFunctions/CompleteMetricExistenceAndPicardIteration.lean/declarations/banach-fixed.md) | 52 | `result-track:f11ac9e961d9ca7e049d053dedccd38c15af01dbd0ee9aa33c8a5d03657ab0a5` |
-| 4 | `theorem` | [banach_iteration](../../../../RealFunctions/CompleteMetricExistenceAndPicardIteration.lean/declarations/banach-iteration.md) | 56 | `result-track:025bc9a076c02a49e20a850d03dee224e10678de58a7adb02c605a1ff067d973` |
+| 1 | `abbrev` | [banachPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompleteMetricExistenceAndPicardIteration.lean/declarations/banachpoint.md) | 44 | `declaration-track:37583bdd19db1503606010d5fc34628547b111996c79647592703f392d35213a` |
+| 2 | `theorem` | [banach_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompleteMetricExistenceAndPicardIteration.lean/declarations/banach-exists.md) | 48 | `result-track:9b397a7cab9622268e73a77a32f1bc51bdb14f0878141c2c3d92e9633e165020` |
+| 3 | `theorem` | [banach_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompleteMetricExistenceAndPicardIteration.lean/declarations/banach-fixed.md) | 52 | `result-track:f11ac9e961d9ca7e049d053dedccd38c15af01dbd0ee9aa33c8a5d03657ab0a5` |
+| 4 | `theorem` | [banach_iteration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompleteMetricExistenceAndPicardIteration.lean/declarations/banach-iteration.md) | 56 | `result-track:025bc9a076c02a49e20a850d03dee224e10678de58a7adb02c605a1ff067d973` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

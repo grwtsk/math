@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ConstantFour.lean/index.md) · [Full source](../../../../NumberTheory/ConstantFour.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ConstantFour.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ConstantFour.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [regularTetrahedronBaseVertexCount](../../../../NumberTheory/ConstantFour.lean/declarations/regulartetrahedronbasevertexcount.md) | 34 | `declaration-track:97b805b7b88da816244d0915cb3dea39cd961aa6a347f8db05025efa145cad61` |
-| 2 | `theorem` | [regular_tetrahedron_base_vertex_count_eq](../../../../NumberTheory/ConstantFour.lean/declarations/regular-tetrahedron-base-vertex-count-eq.md) | 38 | `result-track:bf0d73f05fa76bd2e67a40de87a8c827844afb7f17d65375912f0cd9f57d2940` |
+| 1 | `def` | [regularTetrahedronBaseVertexCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ConstantFour.lean/declarations/regulartetrahedronbasevertexcount.md) | 34 | `declaration-track:97b805b7b88da816244d0915cb3dea39cd961aa6a347f8db05025efa145cad61` |
+| 2 | `theorem` | [regular_tetrahedron_base_vertex_count_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ConstantFour.lean/declarations/regular-tetrahedron-base-vertex-count-eq.md) | 38 | `result-track:bf0d73f05fa76bd2e67a40de87a8c827844afb7f17d65375912f0cd9f57d2940` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

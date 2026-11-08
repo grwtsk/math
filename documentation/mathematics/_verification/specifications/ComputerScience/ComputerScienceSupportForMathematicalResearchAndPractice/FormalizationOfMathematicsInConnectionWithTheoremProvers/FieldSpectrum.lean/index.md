@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FieldSpectrum.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FieldSpectrum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FieldSpectrum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FieldSpectrum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FieldSpectrumReference](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FieldSpectrum.lean/declarations/fieldspectrumreference.md) | 12 | `declaration-track:a30c8a58b04f332303b193ec2a0771972c5971e9e2e86758a7471902baf55b06` |
-| 2 | `def` | [specKFieldEtale](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FieldSpectrum.lean/declarations/speckfieldetale.md) | 17 | `declaration-track:7a127624e90610b6d44deeada91be16250e4cf7c3aa0a933f29ff65e9b92e593` |
-| 3 | `def` | [absoluteGaloisGroupLabel](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FieldSpectrum.lean/declarations/absolutegaloisgrouplabel.md) | 20 | `declaration-track:244382131e51429552aca47a2a485d6cab0a95f2ee99d171fed3dc8a4c126f6b` |
-| 4 | `def` | [zariskiTooCoarseForClientArithmeticInvariant](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FieldSpectrum.lean/declarations/zariskitoocoarseforclientarithmeticinvariant.md) | 23 | `declaration-track:47feae58bce5ab28f74b11c193426b6049f19ad6ddc324dd69bdd338478a01a1` |
+| 1 | `structure` | [FieldSpectrumReference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FieldSpectrum.lean/declarations/fieldspectrumreference.md) | 12 | `declaration-track:a30c8a58b04f332303b193ec2a0771972c5971e9e2e86758a7471902baf55b06` |
+| 2 | `def` | [specKFieldEtale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FieldSpectrum.lean/declarations/speckfieldetale.md) | 17 | `declaration-track:7a127624e90610b6d44deeada91be16250e4cf7c3aa0a933f29ff65e9b92e593` |
+| 3 | `def` | [absoluteGaloisGroupLabel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FieldSpectrum.lean/declarations/absolutegaloisgrouplabel.md) | 20 | `declaration-track:244382131e51429552aca47a2a485d6cab0a95f2ee99d171fed3dc8a4c126f6b` |
+| 4 | `def` | [zariskiTooCoarseForClientArithmeticInvariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FieldSpectrum.lean/declarations/zariskitoocoarseforclientarithmeticinvariant.md) | 23 | `declaration-track:47feae58bce5ab28f74b11c193426b6049f19ad6ddc324dd69bdd338478a01a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

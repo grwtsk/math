@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BicategoryBasic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BicategoryBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BicategoryBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BicategoryBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bicategoryNf](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BicategoryBasic.lean/declarations/bicategorynf.md) | 31 | `declaration-track:65a820db8e9e84add732f04f49644525736fa20b5fd0d7d78eb95cd0b02e8441` |
-| 2 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BicategoryBasic.lean/declarations/elab.md) | 35 | `declaration-track:239e2b0931c0220e392c63aff9e2858ea577d2d1fd0849ffe89e9f269a938197` |
-| 3 | `def` | [bicategory](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BicategoryBasic.lean/declarations/bicategory.md) | 48 | `declaration-track:7396b7b9e33fcd9c0d8b43a57951180ea3440e0b43a9a83aba7dd0ca514d76f9` |
-| 4 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BicategoryBasic.lean/declarations/elab-source-edition-2.md) | 52 | `declaration-track:6993cf1f6f1cb6c3e654b7c1a76dcb9ef557aeafb826a5d7df9e685d46eba0f0` |
+| 1 | `def` | [bicategoryNf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BicategoryBasic.lean/declarations/bicategorynf.md) | 31 | `declaration-track:65a820db8e9e84add732f04f49644525736fa20b5fd0d7d78eb95cd0b02e8441` |
+| 2 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BicategoryBasic.lean/declarations/elab.md) | 35 | `declaration-track:239e2b0931c0220e392c63aff9e2858ea577d2d1fd0849ffe89e9f269a938197` |
+| 3 | `def` | [bicategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BicategoryBasic.lean/declarations/bicategory.md) | 48 | `declaration-track:7396b7b9e33fcd9c0d8b43a57951180ea3440e0b43a9a83aba7dd0ca514d76f9` |
+| 4 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BicategoryBasic.lean/declarations/elab-source-edition-2.md) | 52 | `declaration-track:6993cf1f6f1cb6c3e654b7c1a76dcb9ef557aeafb826a5d7df9e685d46eba0f0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

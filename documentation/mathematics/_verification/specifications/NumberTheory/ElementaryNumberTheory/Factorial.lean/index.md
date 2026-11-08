@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/Factorial.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/Factorial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Factorial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Factorial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Prime.dvd_factorial](../../../../../NumberTheory/ElementaryNumberTheory/Factorial.lean/declarations/prime-dvd-factorial.md) | 19 | `result-track:56d213632f357b7627637e65107fdb3f300d8b20edd662eda420e9c20abcf81c` |
-| 2 | `theorem` | [coprime_factorial_iff](../../../../../NumberTheory/ElementaryNumberTheory/Factorial.lean/declarations/coprime-factorial-iff.md) | 27 | `result-track:d380310c477c4f8e3a25b90da9eadc67fdd930d20ef426ac2ffc4e81773ae213` |
+| 1 | `theorem` | [Prime.dvd_factorial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Factorial.lean/declarations/prime-dvd-factorial.md) | 19 | `result-track:56d213632f357b7627637e65107fdb3f300d8b20edd662eda420e9c20abcf81c` |
+| 2 | `theorem` | [coprime_factorial_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Factorial.lean/declarations/coprime-factorial-iff.md) | 27 | `result-track:d380310c477c4f8e3a25b90da9eadc67fdd930d20ef426ac2ffc4e81773ae213` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

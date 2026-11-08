@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TreeProjection.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TreeProjection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TreeProjection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TreeProjection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ForestReplayCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TreeProjection.lean/declarations/forestreplaycertificate.md) | 5 | `declaration-track:b72a74e7d0ff65f598b35b84829e4bad2f398dd970efc5ad70d2414930628d93` |
-| 2 | `def` | [Replays](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TreeProjection.lean/declarations/replays.md) | 14 | `declaration-track:63ec37f3cecfc9d40d9b1fa80ff688f8f3dfa8ce1193faff0aaa31ede8c068d9` |
+| 1 | `structure` | [ForestReplayCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TreeProjection.lean/declarations/forestreplaycertificate.md) | 5 | `declaration-track:b72a74e7d0ff65f598b35b84829e4bad2f398dd970efc5ad70d2414930628d93` |
+| 2 | `def` | [Replays](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TreeProjection.lean/declarations/replays.md) | 14 | `declaration-track:63ec37f3cecfc9d40d9b1fa80ff688f8f3dfa8ce1193faff0aaa31ede8c068d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

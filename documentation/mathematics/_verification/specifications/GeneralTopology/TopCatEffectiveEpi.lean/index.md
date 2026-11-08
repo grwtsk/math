@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopCatEffectiveEpi.lean/index.md) · [Full source](../../../../GeneralTopology/TopCatEffectiveEpi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatEffectiveEpi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatEffectiveEpi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [effectiveEpiStructOfQuotientMap](../../../../GeneralTopology/TopCatEffectiveEpi.lean/declarations/effectiveepistructofquotientmap.md) | 29 | `declaration-track:4a389a72e0bd70ccc430de66302d00c4503491b3c75b3d1197849077c7185194` |
-| 2 | `theorem` | [effectiveEpi_iff_isQuotientMap](../../../../GeneralTopology/TopCatEffectiveEpi.lean/declarations/effectiveepi-iff-isquotientmap.md) | 59 | `result-track:9ae1fdcfc3dbf72fc4f320f34336d815a0fb7005f458795e61a27287fcab8f55` |
+| 1 | `def` | [effectiveEpiStructOfQuotientMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatEffectiveEpi.lean/declarations/effectiveepistructofquotientmap.md) | 29 | `declaration-track:4a389a72e0bd70ccc430de66302d00c4503491b3c75b3d1197849077c7185194` |
+| 2 | `theorem` | [effectiveEpi_iff_isQuotientMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatEffectiveEpi.lean/declarations/effectiveepi-iff-isquotientmap.md) | 59 | `result-track:9ae1fdcfc3dbf72fc4f320f34336d815a0fb7005f458795e61a27287fcab8f55` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

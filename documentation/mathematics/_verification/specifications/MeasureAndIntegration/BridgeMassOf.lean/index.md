@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/BridgeMassOf.lean/index.md) · [Full source](../../../../MeasureAndIntegration/BridgeMassOf.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeMassOf.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeMassOf.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [massOf](../../../../MeasureAndIntegration/BridgeMassOf.lean/declarations/massof.md) | 31 | `declaration-track:57e87776db118aaf18057118b58e4f0adc4a2fe602111d511c5dffc2109a3628` |
-| 2 | `lemma` | [Csum_massOf](../../../../MeasureAndIntegration/BridgeMassOf.lean/declarations/csum-massof.md) | 33 | `result-track:546ded349fa0e9f356e0b89f8022984c77fbddd24c21f86fa98d00f569b052ff` |
-| 3 | `lemma` | [Dfun_grid_eq_Dright](../../../../MeasureAndIntegration/BridgeMassOf.lean/declarations/dfun-grid-eq-dright.md) | 39 | `result-track:7506f52e00e7626d9c4990a66348c0a4f17e64a473fe26672e5f4ac27deab36c` |
-| 4 | `lemma` | [Dfun_cell_bounds](../../../../MeasureAndIntegration/BridgeMassOf.lean/declarations/dfun-cell-bounds.md) | 46 | `result-track:effafaf51bf95abd263ef9d7618891754f6e6d21a2bb398cad65d8bbbbfd1933` |
-| 5 | `theorem` | [abs_Dfun_le_of_grid](../../../../MeasureAndIntegration/BridgeMassOf.lean/declarations/abs-dfun-le-of-grid.md) | 66 | `result-track:825a702efaa733432039b018def2d1383bd0e9d2b4d56c5db0152fe48d49dfa5` |
-| 6 | `lemma` | [Efun_grid_eq_Egrid](../../../../MeasureAndIntegration/BridgeMassOf.lean/declarations/efun-grid-eq-egrid.md) | 104 | `result-track:6d55b4545d8d6f17199ba4a581a82065fce2ad1844b675dca666937a498c9527` |
-| 7 | `theorem` | [abs_Efun_le_of_grid](../../../../MeasureAndIntegration/BridgeMassOf.lean/declarations/abs-efun-le-of-grid.md) | 119 | `result-track:9208a72f00e001c46a06b9157cee2cd6137d43ec74559f37b46bb30495aa11e4` |
-| 8 | `theorem` | [package_of_check](../../../../MeasureAndIntegration/BridgeMassOf.lean/declarations/package-of-check.md) | 206 | `result-track:f3a0be067b268fa50375ed497f6f1b93924f817b2a2e614422b0db46c693a33b` |
+| 1 | `def` | [massOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeMassOf.lean/declarations/massof.md) | 31 | `declaration-track:57e87776db118aaf18057118b58e4f0adc4a2fe602111d511c5dffc2109a3628` |
+| 2 | `lemma` | [Csum_massOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeMassOf.lean/declarations/csum-massof.md) | 33 | `result-track:546ded349fa0e9f356e0b89f8022984c77fbddd24c21f86fa98d00f569b052ff` |
+| 3 | `lemma` | [Dfun_grid_eq_Dright](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeMassOf.lean/declarations/dfun-grid-eq-dright.md) | 39 | `result-track:7506f52e00e7626d9c4990a66348c0a4f17e64a473fe26672e5f4ac27deab36c` |
+| 4 | `lemma` | [Dfun_cell_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeMassOf.lean/declarations/dfun-cell-bounds.md) | 46 | `result-track:effafaf51bf95abd263ef9d7618891754f6e6d21a2bb398cad65d8bbbbfd1933` |
+| 5 | `theorem` | [abs_Dfun_le_of_grid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeMassOf.lean/declarations/abs-dfun-le-of-grid.md) | 66 | `result-track:825a702efaa733432039b018def2d1383bd0e9d2b4d56c5db0152fe48d49dfa5` |
+| 6 | `lemma` | [Efun_grid_eq_Egrid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeMassOf.lean/declarations/efun-grid-eq-egrid.md) | 104 | `result-track:6d55b4545d8d6f17199ba4a581a82065fce2ad1844b675dca666937a498c9527` |
+| 7 | `theorem` | [abs_Efun_le_of_grid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeMassOf.lean/declarations/abs-efun-le-of-grid.md) | 119 | `result-track:9208a72f00e001c46a06b9157cee2cd6137d43ec74559f37b46bb30495aa11e4` |
+| 8 | `theorem` | [package_of_check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeMassOf.lean/declarations/package-of-check.md) | 206 | `result-track:f3a0be067b268fa50375ed497f6f1b93924f817b2a2e614422b0db46c693a33b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GistNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GistNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GistNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GistNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TimeAwareGist](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GistNamespaced.lean/declarations/timeawaregist.md) | 15 | `declaration-track:ae471518f2945a8eb0a9e53dc0e97202b52ce68769400703a23f899c593fe88e` |
-| 2 | `def` | [TimeAwareGist.validBridge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GistNamespaced.lean/declarations/timeawaregist-validbridge.md) | 22 | `declaration-track:4697c2af02b140e14db5b92452308f8f1972f69a8d5e18abeabfad175d1e3c95` |
+| 1 | `structure` | [TimeAwareGist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GistNamespaced.lean/declarations/timeawaregist.md) | 15 | `declaration-track:ae471518f2945a8eb0a9e53dc0e97202b52ce68769400703a23f899c593fe88e` |
+| 2 | `def` | [TimeAwareGist.validBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GistNamespaced.lean/declarations/timeawaregist-validbridge.md) | 22 | `declaration-track:4697c2af02b140e14db5b92452308f8f1972f69a8d5e18abeabfad175d1e3c95` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

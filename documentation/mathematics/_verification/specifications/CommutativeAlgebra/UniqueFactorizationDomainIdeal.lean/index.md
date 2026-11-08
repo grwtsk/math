@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/UniqueFactorizationDomainIdeal.lean/index.md) · [Full source](../../../../CommutativeAlgebra/UniqueFactorizationDomainIdeal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainIdeal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainIdeal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Ideal.IsPrime.exists_mem_prime_of_ne_bot](../../../../CommutativeAlgebra/UniqueFactorizationDomainIdeal.lean/declarations/ideal-isprime-exists-mem-prime-of-ne-bot.md) | 22 | `result-track:b83c14bab4da437cd7e149b1b37608ce6164d1623e85362387106f2def965238` |
-| 2 | `lemma` | [Ideal.setOf_isPrincipal_wellFoundedOn_gt](../../../../CommutativeAlgebra/UniqueFactorizationDomainIdeal.lean/declarations/ideal-setof-isprincipal-wellfoundedon-gt.md) | 37 | `result-track:1ae13d31a06c6e2c06e84891a78f9abec15057933958ff07b820a13151f08e7d` |
-| 3 | `lemma` | [WfDvdMonoid.of_setOf_isPrincipal_wellFoundedOn_gt](../../../../CommutativeAlgebra/UniqueFactorizationDomainIdeal.lean/declarations/wfdvdmonoid-of-setof-isprincipal-wellfoundedon-gt.md) | 49 | `result-track:187b599ddf8412a8645d2384c88ce97ffddcf9563c30c99f26adf5ddfb469265` |
+| 1 | `theorem` | [Ideal.IsPrime.exists_mem_prime_of_ne_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainIdeal.lean/declarations/ideal-isprime-exists-mem-prime-of-ne-bot.md) | 22 | `result-track:b83c14bab4da437cd7e149b1b37608ce6164d1623e85362387106f2def965238` |
+| 2 | `lemma` | [Ideal.setOf_isPrincipal_wellFoundedOn_gt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainIdeal.lean/declarations/ideal-setof-isprincipal-wellfoundedon-gt.md) | 37 | `result-track:1ae13d31a06c6e2c06e84891a78f9abec15057933958ff07b820a13151f08e7d` |
+| 3 | `lemma` | [WfDvdMonoid.of_setOf_isPrincipal_wellFoundedOn_gt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainIdeal.lean/declarations/wfdvdmonoid-of-setof-isprincipal-wellfoundedon-gt.md) | 49 | `result-track:187b599ddf8412a8645d2384c88ce97ffddcf9563c30c99f26adf5ddfb469265` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/ComparatorSolutionNamespaced.lean/index.md) · [Full source](../../../../Geometry/ComparatorSolutionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ComparatorSolutionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ComparatorSolutionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [navier_stokes_breakdown_R3](../../../../Geometry/ComparatorSolutionNamespaced.lean/declarations/navier-stokes-breakdown-r3.md) | 24 | `result-track:8a7369b96c79c30565b4b76eefdb12ef4aeae6770e6f73c00b769c027c2d3579` |
-| 2 | `theorem` | [navier_stokes_breakdown_periodic](../../../../Geometry/ComparatorSolutionNamespaced.lean/declarations/navier-stokes-breakdown-periodic.md) | 31 | `result-track:6f88bf405e8dbc9405a7bd60351e0422a28ec65517839845657dbc5419745799` |
+| 1 | `theorem` | [navier_stokes_breakdown_R3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ComparatorSolutionNamespaced.lean/declarations/navier-stokes-breakdown-r3.md) | 24 | `result-track:8a7369b96c79c30565b4b76eefdb12ef4aeae6770e6f73c00b769c027c2d3579` |
+| 2 | `theorem` | [navier_stokes_breakdown_periodic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ComparatorSolutionNamespaced.lean/declarations/navier-stokes-breakdown-periodic.md) | 31 | `result-track:6f88bf405e8dbc9405a7bd60351e0422a28ec65517839845657dbc5419745799` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

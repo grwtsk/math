@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PrimeCutGraphNamespacedPrimeCutGraphAdapter.lean/index.md) · [Full source](../../../../Combinatorics/PrimeCutGraphNamespacedPrimeCutGraphAdapter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeCutGraphNamespacedPrimeCutGraphAdapter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeCutGraphNamespacedPrimeCutGraphAdapter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimeCutGraphAdapter](../../../../Combinatorics/PrimeCutGraphNamespacedPrimeCutGraphAdapter.lean/declarations/primecutgraphadapter.md) | 26 | `declaration-track:eade3bbf59b3323fdb6e704796eba187b9751c2585f3fca71643dce4951ab623` |
-| 2 | `theorem` | [PrimeCutGraphAdapter.edge_strictly_enlarges](../../../../Combinatorics/PrimeCutGraphNamespacedPrimeCutGraphAdapter.lean/declarations/primecutgraphadapter-edge-strictly-enlarges.md) | 53 | `result-track:4dc12083fb8f9e76288a16c2d76f7fd1d39964bfbe6200bb642d44171fbb9961` |
+| 1 | `structure` | [PrimeCutGraphAdapter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeCutGraphNamespacedPrimeCutGraphAdapter.lean/declarations/primecutgraphadapter.md) | 26 | `declaration-track:eade3bbf59b3323fdb6e704796eba187b9751c2585f3fca71643dce4951ab623` |
+| 2 | `theorem` | [PrimeCutGraphAdapter.edge_strictly_enlarges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeCutGraphNamespacedPrimeCutGraphAdapter.lean/declarations/primecutgraphadapter-edge-strictly-enlarges.md) | 53 | `result-track:4dc12083fb8f9e76288a16c2d76f7fd1d39964bfbe6200bb642d44171fbb9961` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

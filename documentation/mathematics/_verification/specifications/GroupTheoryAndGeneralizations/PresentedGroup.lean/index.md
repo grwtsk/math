@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/PresentedGroup.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/PresentedGroup.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroup.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroup.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [PresentedGroup](../../../../GroupTheoryAndGeneralizations/PresentedGroup.lean/declarations/presentedgroup.md) | 35 | `declaration-track:06fbc5738351045bcf54c2402784aa522fe01c3efdb4f560dadd914f5c56bf17` |
-| 2 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/PresentedGroup.lean/declarations/instance-source-edition-2.md) | 41 | `declaration-track:cba45dd7b55b42a65467bb9a8c03852d462550f918e08def6a43c626459b6d65` |
-| 3 | `def` | [of](../../../../GroupTheoryAndGeneralizations/PresentedGroup.lean/declarations/of.md) | 46 | `declaration-track:8456c997a6846aa571da0c9513b5f3880550539518a08da48976c15d78750aca` |
-| 4 | `theorem` | [closure_rels_subset_ker](../../../../GroupTheoryAndGeneralizations/PresentedGroup.lean/declarations/closure-rels-subset-ker.md) | 65 | `result-track:cbf6946bc9233670173da3b06be9b1eb20e86dfc7c43dc86a340f2716d4175ae` |
-| 5 | `theorem` | [to_group_eq_one_of_mem_closure](../../../../GroupTheoryAndGeneralizations/PresentedGroup.lean/declarations/to-group-eq-one-of-mem-closure.md) | 69 | `result-track:6c6b1a75057e1ff40cb40a356c609e5c7fb48447a0342cf4f4e2f1f6f05758fc` |
-| 6 | `def` | [toGroup](../../../../GroupTheoryAndGeneralizations/PresentedGroup.lean/declarations/togroup.md) | 75 | `declaration-track:cb9ed05b7b896d02a756fd3818a5624c591ed0db1b99bdf79936c8521acb8182` |
-| 7 | `theorem` | [toGroup.of](../../../../GroupTheoryAndGeneralizations/PresentedGroup.lean/declarations/togroup-of.md) | 80 | `result-track:5aa9027e7339c48f5014aeacd880098d17538f550bef2cbae7190feb4e9cd8b6` |
-| 8 | `theorem` | [toGroup.unique](../../../../GroupTheoryAndGeneralizations/PresentedGroup.lean/declarations/togroup-unique.md) | 84 | `result-track:81ee6b54a3f5fb5bcb3d6ab4240cc876f9c248906e3b4420636cd70df3790390` |
-| 9 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/PresentedGroup.lean/declarations/instance.md) | 93 | `declaration-track:a03f259b74b5db0b85c67fccf6c0d4c2259f28746d8d505fe0fba463b459a79d` |
+| 1 | `def` | [PresentedGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroup.lean/declarations/presentedgroup.md) | 35 | `declaration-track:06fbc5738351045bcf54c2402784aa522fe01c3efdb4f560dadd914f5c56bf17` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroup.lean/declarations/instance-source-edition-2.md) | 41 | `declaration-track:cba45dd7b55b42a65467bb9a8c03852d462550f918e08def6a43c626459b6d65` |
+| 3 | `def` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroup.lean/declarations/of.md) | 46 | `declaration-track:8456c997a6846aa571da0c9513b5f3880550539518a08da48976c15d78750aca` |
+| 4 | `theorem` | [closure_rels_subset_ker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroup.lean/declarations/closure-rels-subset-ker.md) | 65 | `result-track:cbf6946bc9233670173da3b06be9b1eb20e86dfc7c43dc86a340f2716d4175ae` |
+| 5 | `theorem` | [to_group_eq_one_of_mem_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroup.lean/declarations/to-group-eq-one-of-mem-closure.md) | 69 | `result-track:6c6b1a75057e1ff40cb40a356c609e5c7fb48447a0342cf4f4e2f1f6f05758fc` |
+| 6 | `def` | [toGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroup.lean/declarations/togroup.md) | 75 | `declaration-track:cb9ed05b7b896d02a756fd3818a5624c591ed0db1b99bdf79936c8521acb8182` |
+| 7 | `theorem` | [toGroup.of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroup.lean/declarations/togroup-of.md) | 80 | `result-track:5aa9027e7339c48f5014aeacd880098d17538f550bef2cbae7190feb4e9cd8b6` |
+| 8 | `theorem` | [toGroup.unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroup.lean/declarations/togroup-unique.md) | 84 | `result-track:81ee6b54a3f5fb5bcb3d6ab4240cc876f9c248906e3b4420636cd70df3790390` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroup.lean/declarations/instance.md) | 93 | `declaration-track:a03f259b74b5db0b85c67fccf6c0d4c2259f28746d8d505fe0fba463b459a79d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

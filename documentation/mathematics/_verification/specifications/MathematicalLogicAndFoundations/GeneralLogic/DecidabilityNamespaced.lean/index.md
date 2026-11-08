@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompleteOrientedHomeomorphismDecision](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/declarations/completeorientedhomeomorphismdecision.md) | 44 | `declaration-track:bbeca9a93327ab9ce7b87a5040d29634530e5ccd75d94257a05583bbacd634ad` |
-| 2 | `def` | [decideFillingsHomeomorphic](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/declarations/decidefillingshomeomorphic.md) | 54 | `declaration-track:23ab8febaf8d2e75d02e22137738730b582691f69d794bc1212f6066246426c0` |
-| 3 | `structure` | [FixedKnotDecisionCapability](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/declarations/fixedknotdecisioncapability.md) | 72 | `declaration-track:815142d48505264154534433e1dd1b1279f689d57287762da29bb7b21f66bb3e` |
-| 4 | `def` | [decideFixedKnotResidualCounterexample](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/declarations/decidefixedknotresidualcounterexample.md) | 84 | `declaration-track:b410bf5f2ec041aa2db75ec844267e40ff58bddac387911e54d7314eeaa254be` |
-| 5 | `def` | [decideKnotCounterexample](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/declarations/decideknotcounterexample.md) | 100 | `declaration-track:a2ae739f942c905dfbde8b4f4d8cad2ef82c5a645643cef7794558b930de4443` |
-| 6 | `def` | [FixedKnotProblem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/declarations/fixedknotproblem.md) | 118 | `declaration-track:d29675fceb70675b0c99409d3fad09824c4bdea14c12183fffc85f03409dfc94` |
-| 7 | `def` | [decideFixedKnotProblem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/declarations/decidefixedknotproblem.md) | 127 | `declaration-track:fbcc13d19c8f26d414480b1e18c43bc3a64b823380a61af907255394112c18e8` |
-| 8 | `def` | [fixedKnotProblem_decidable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/declarations/fixedknotproblem-decidable.md) | 143 | `declaration-track:0bba1422d22febd0a288fa58fe0ffaf49a8e2174a35a9cd95a612d95d670d339` |
+| 1 | `structure` | [CompleteOrientedHomeomorphismDecision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/declarations/completeorientedhomeomorphismdecision.md) | 44 | `declaration-track:bbeca9a93327ab9ce7b87a5040d29634530e5ccd75d94257a05583bbacd634ad` |
+| 2 | `def` | [decideFillingsHomeomorphic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/declarations/decidefillingshomeomorphic.md) | 54 | `declaration-track:23ab8febaf8d2e75d02e22137738730b582691f69d794bc1212f6066246426c0` |
+| 3 | `structure` | [FixedKnotDecisionCapability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/declarations/fixedknotdecisioncapability.md) | 72 | `declaration-track:815142d48505264154534433e1dd1b1279f689d57287762da29bb7b21f66bb3e` |
+| 4 | `def` | [decideFixedKnotResidualCounterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/declarations/decidefixedknotresidualcounterexample.md) | 84 | `declaration-track:b410bf5f2ec041aa2db75ec844267e40ff58bddac387911e54d7314eeaa254be` |
+| 5 | `def` | [decideKnotCounterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/declarations/decideknotcounterexample.md) | 100 | `declaration-track:a2ae739f942c905dfbde8b4f4d8cad2ef82c5a645643cef7794558b930de4443` |
+| 6 | `def` | [FixedKnotProblem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/declarations/fixedknotproblem.md) | 118 | `declaration-track:d29675fceb70675b0c99409d3fad09824c4bdea14c12183fffc85f03409dfc94` |
+| 7 | `def` | [decideFixedKnotProblem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/declarations/decidefixedknotproblem.md) | 127 | `declaration-track:fbcc13d19c8f26d414480b1e18c43bc3a64b823380a61af907255394112c18e8` |
+| 8 | `def` | [fixedKnotProblem_decidable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DecidabilityNamespaced.lean/declarations/fixedknotproblem-decidable.md) | 143 | `declaration-track:0bba1422d22febd0a288fa58fe0ffaf49a8e2174a35a9cd95a612d95d670d339` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

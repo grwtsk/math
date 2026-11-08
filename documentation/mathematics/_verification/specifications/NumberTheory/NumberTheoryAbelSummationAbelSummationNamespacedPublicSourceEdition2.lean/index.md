@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/NumberTheoryAbelSummationAbelSummationNamespacedPublicSourceEdition2.lean/index.md) · [Full source](../../../../NumberTheory/NumberTheoryAbelSummationAbelSummationNamespacedPublicSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryAbelSummationAbelSummationNamespacedPublicSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryAbelSummationAbelSummationNamespacedPublicSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Number Theory Abel Summation Abel Summation Namespaced Public Source Edition2](../../../../NumberTheory/NumberTheoryAbelSummationAbelSummationNamespacedPublicSourceEdition2.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-rootfinsetsumicconeeqsum-source-edition-3.md) | 33 | `result-track:c1db88e4ce465ab5ff5b9977e0baaff0cc8786d35dd4ae9156d0e4027735891a` |
-| 2 | `theorem` | [Number Theory Abel Summation Abel Summation Namespaced Public Source Edition2](../../../../NumberTheory/NumberTheoryAbelSummationAbelSummationNamespacedPublicSourceEdition2.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-rootfinsetsumicconeeqsum-source-edition-2.md) | 56 | `result-track:c10b23147ac446acc85485f8c9b4ba4d3ab1987bba24e6703c0e71fa0df9300e` |
-| 3 | `theorem` | [Number Theory Abel Summation Abel Summation Namespaced Public Source Edition2](../../../../NumberTheory/NumberTheoryAbelSummationAbelSummationNamespacedPublicSourceEdition2.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-rootfinsetsumicconeeqsum-source-edition-4.md) | 71 | `result-track:ccc53a2b42b4c728d2825ef004e353428225c6070f414f23a7910ab9f3ba5689` |
-| 4 | `theorem` | [Number Theory Abel Summation Abel Summation Namespaced Public Source Edition2](../../../../NumberTheory/NumberTheoryAbelSummationAbelSummationNamespacedPublicSourceEdition2.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-rootfinsetsumicconeeqsum.md) | 76 | `result-track:6dee0317436fd616e90db2063cfde95dd1597c0aabe689f59ccee5039df383cb` |
+| 1 | `theorem` | [Number Theory Abel Summation Abel Summation Namespaced Public Source Edition2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryAbelSummationAbelSummationNamespacedPublicSourceEdition2.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-rootfinsetsumicconeeqsum-source-edition-3.md) | 33 | `result-track:c1db88e4ce465ab5ff5b9977e0baaff0cc8786d35dd4ae9156d0e4027735891a` |
+| 2 | `theorem` | [Number Theory Abel Summation Abel Summation Namespaced Public Source Edition2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryAbelSummationAbelSummationNamespacedPublicSourceEdition2.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-rootfinsetsumicconeeqsum-source-edition-2.md) | 56 | `result-track:c10b23147ac446acc85485f8c9b4ba4d3ab1987bba24e6703c0e71fa0df9300e` |
+| 3 | `theorem` | [Number Theory Abel Summation Abel Summation Namespaced Public Source Edition2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryAbelSummationAbelSummationNamespacedPublicSourceEdition2.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-rootfinsetsumicconeeqsum-source-edition-4.md) | 71 | `result-track:ccc53a2b42b4c728d2825ef004e353428225c6070f414f23a7910ab9f3ba5689` |
+| 4 | `theorem` | [Number Theory Abel Summation Abel Summation Namespaced Public Source Edition2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryAbelSummationAbelSummationNamespacedPublicSourceEdition2.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-rootfinsetsumicconeeqsum.md) | 76 | `result-track:6dee0317436fd616e90db2063cfde95dd1597c0aabe689f59ccee5039df383cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

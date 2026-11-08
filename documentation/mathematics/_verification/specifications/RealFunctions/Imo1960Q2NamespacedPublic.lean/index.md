@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Imo1960Q2NamespacedPublic.lean/index.md) · [Full source](../../../../RealFunctions/Imo1960Q2NamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1960Q2NamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1960Q2NamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IsGood](../../../../RealFunctions/Imo1960Q2NamespacedPublic.lean/declarations/isgood.md) | 43 | `declaration-track:66cbb5b1b1677b61dddc8e135751f44c0c023ffadd06240f23d5e2dd8703931a` |
-| 2 | `theorem` | [isGood_iff](../../../../RealFunctions/Imo1960Q2NamespacedPublic.lean/declarations/isgood-iff.md) | 53 | `result-track:ffdc0e921ac5a936e6ce0597f58f851334cf3b3da21972616e45ae0daf2d2cd0` |
+| 1 | `structure` | [IsGood](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1960Q2NamespacedPublic.lean/declarations/isgood.md) | 43 | `declaration-track:66cbb5b1b1677b61dddc8e135751f44c0c023ffadd06240f23d5e2dd8703931a` |
+| 2 | `theorem` | [isGood_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1960Q2NamespacedPublic.lean/declarations/isgood-iff.md) | 53 | `result-track:ffdc0e921ac5a936e6ce0597f58f851334cf3b3da21972616e45ae0daf2d2cd0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

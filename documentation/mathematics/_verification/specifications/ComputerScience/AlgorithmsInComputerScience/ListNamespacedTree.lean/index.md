@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ListNamespacedTree.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ListNamespacedTree.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListNamespacedTree.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListNamespacedTree.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Tree.conjList](../../../../../ComputerScience/AlgorithmsInComputerScience/ListNamespacedTree.lean/declarations/tree-conjlist.md) | 16 | `declaration-track:7bc438cbf3abf1171c21fb45d691dcde01b5703ba7431a91eedf2004b11977b0` |
-| 2 | `def` | [Tree.disjList](../../../../../ComputerScience/AlgorithmsInComputerScience/ListNamespacedTree.lean/declarations/tree-disjlist.md) | 21 | `declaration-track:119bae90d752a2c872d893e74f7799bc29f00e2ed65d13280eaa79660aca9534` |
+| 1 | `def` | [Tree.conjList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListNamespacedTree.lean/declarations/tree-conjlist.md) | 16 | `declaration-track:7bc438cbf3abf1171c21fb45d691dcde01b5703ba7431a91eedf2004b11977b0` |
+| 2 | `def` | [Tree.disjList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListNamespacedTree.lean/declarations/tree-disjlist.md) | 21 | `declaration-track:119bae90d752a2c872d893e74f7799bc29f00e2ed65d13280eaa79660aca9534` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

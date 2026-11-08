@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Public.lean/index.md) · [Full source](../../../../GeneralTopology/Public.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Public.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Public.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [erdos208.s](../../../../GeneralTopology/Public.lean/declarations/erdos208-s.md) | 32 | `declaration-track:9a95cb24cfb8e1d9d4f29c70cf00832e7b12d35df0b8cd1157fff733c61c07d6` |
-| 2 | `theorem` | [erdos_208.parts.i](../../../../GeneralTopology/Public.lean/declarations/erdos-208-parts-i.md) | 41 | `result-track:ccfe94bb08f6e17122456cfb2f23f61ff9c5b332bf1cd618c94beb0ec21598c6` |
-| 3 | `theorem` | [erdos_208.parts.ii](../../../../GeneralTopology/Public.lean/declarations/erdos-208-parts-ii.md) | 49 | `result-track:0d9bf567e216f5836123adde39ec210f0156c116bfedd79f608ed7b773d8b2f7` |
-| 4 | `theorem` | [erdos_208.variants.log_bound](../../../../GeneralTopology/Public.lean/declarations/log-bound.md) | 59 | `result-track:07881cff63eb7d13972f391968d3f879745c6181f46051bb81d1eeb27f75300e` |
+| 1 | `def` | [erdos208.s](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Public.lean/declarations/erdos208-s.md) | 32 | `declaration-track:9a95cb24cfb8e1d9d4f29c70cf00832e7b12d35df0b8cd1157fff733c61c07d6` |
+| 2 | `theorem` | [erdos_208.parts.i](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Public.lean/declarations/erdos-208-parts-i.md) | 41 | `result-track:ccfe94bb08f6e17122456cfb2f23f61ff9c5b332bf1cd618c94beb0ec21598c6` |
+| 3 | `theorem` | [erdos_208.parts.ii](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Public.lean/declarations/erdos-208-parts-ii.md) | 49 | `result-track:0d9bf567e216f5836123adde39ec210f0156c116bfedd79f608ed7b773d8b2f7` |
+| 4 | `theorem` | [erdos_208.variants.log_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Public.lean/declarations/log-bound.md) | 59 | `result-track:07881cff63eb7d13972f391968d3f879745c6181f46051bb81d1eeb27f75300e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

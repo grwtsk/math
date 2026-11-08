@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceBumpAdapterFragment.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceBumpAdapterFragment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpAdapterFragment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpAdapterFragment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bumpPrimitive_hasDerivAt](../../../../MeasureAndIntegration/SourceBumpAdapterFragment.lean/declarations/bumpprimitive-hasderivat.md) | 10 | `result-track:a4f9e2510394f19283ed2be298e67b98a0def03e9b8e6f1f1113eb37099c9367` |
-| 2 | `theorem` | [bumpMoment_closedFormula](../../../../MeasureAndIntegration/SourceBumpAdapterFragment.lean/declarations/bumpmoment-closedformula.md) | 25 | `result-track:2ad6f4d0e9444cbd939459b9538cf7dbc232467f97a3fa92c791771e6f66fd89` |
-| 3 | `theorem` | [V_zero](../../../../MeasureAndIntegration/SourceBumpAdapterFragment.lean/declarations/v-zero.md) | 50 | `result-track:7fc48e3181eee2ed6569cbde71d8a18174d6a6c1c73f307772230be98ed6ddc4` |
-| 4 | `theorem` | [V_eq_bumpMoment](../../../../MeasureAndIntegration/SourceBumpAdapterFragment.lean/declarations/v-eq-bumpmoment.md) | 59 | `result-track:660fff7ea709533ebf997f06b026770c120064fe7b40052bd01dfd58bc07dd3e` |
-| 5 | `theorem` | [W_eq_bumpMoment](../../../../MeasureAndIntegration/SourceBumpAdapterFragment.lean/declarations/w-eq-bumpmoment.md) | 72 | `result-track:99344e8a4d37f71e7131e300dfe68ea5fb71cd06d3b18c53c11113fa62eb0834` |
+| 1 | `theorem` | [bumpPrimitive_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpAdapterFragment.lean/declarations/bumpprimitive-hasderivat.md) | 10 | `result-track:a4f9e2510394f19283ed2be298e67b98a0def03e9b8e6f1f1113eb37099c9367` |
+| 2 | `theorem` | [bumpMoment_closedFormula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpAdapterFragment.lean/declarations/bumpmoment-closedformula.md) | 25 | `result-track:2ad6f4d0e9444cbd939459b9538cf7dbc232467f97a3fa92c791771e6f66fd89` |
+| 3 | `theorem` | [V_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpAdapterFragment.lean/declarations/v-zero.md) | 50 | `result-track:7fc48e3181eee2ed6569cbde71d8a18174d6a6c1c73f307772230be98ed6ddc4` |
+| 4 | `theorem` | [V_eq_bumpMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpAdapterFragment.lean/declarations/v-eq-bumpmoment.md) | 59 | `result-track:660fff7ea709533ebf997f06b026770c120064fe7b40052bd01dfd58bc07dd3e` |
+| 5 | `theorem` | [W_eq_bumpMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpAdapterFragment.lean/declarations/w-eq-bumpmoment.md) | 72 | `result-track:99344e8a4d37f71e7131e300dfe68ea5fb71cd06d3b18c53c11113fa62eb0834` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopologyExtendFrom.lean/index.md) · [Full source](../../../../GeneralTopology/TopologyExtendFrom.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyExtendFrom.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyExtendFrom.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [extendFrom](../../../../GeneralTopology/TopologyExtendFrom.lean/declarations/extendfrom.md) | 37 | `declaration-track:1dec83131ac7775d415e07ca0c3814dbe2d1d193dac3e0417491014cf685a68c` |
-| 2 | `theorem` | [tendsto_extendFrom](../../../../GeneralTopology/TopologyExtendFrom.lean/declarations/tendsto-extendfrom.md) | 42 | `result-track:313949cd3056192b4e8d41324c1494f0f150b817d6d58dcedbd6f1ef0ee061fe` |
-| 3 | `theorem` | [extendFrom_eq](../../../../GeneralTopology/TopologyExtendFrom.lean/declarations/extendfrom-eq.md) | 46 | `result-track:e19dd664b56000bfea08fdb8105287afa21160dc2ed3e3018403ba9ad6f3b84f` |
-| 4 | `theorem` | [extendFrom_extends](../../../../GeneralTopology/TopologyExtendFrom.lean/declarations/extendfrom-extends.md) | 51 | `result-track:29d4da04bf11c298461b5ecb45a84418bf8e2d5452f353ca5fb7ff7102024137` |
-| 5 | `theorem` | [continuousOn_extendFrom](../../../../GeneralTopology/TopologyExtendFrom.lean/declarations/continuouson-extendfrom.md) | 57 | `result-track:e426da73dd4481e1b0d5c07aedcb0e7331bd769d2e37b225d3556e27f02be688` |
-| 6 | `theorem` | [continuous_extendFrom](../../../../GeneralTopology/TopologyExtendFrom.lean/declarations/continuous-extendfrom.md) | 79 | `result-track:77dd8fdde8211290700d92af3ce09000e89aef08b821acd127011bcbdc0e97c0` |
+| 1 | `def` | [extendFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyExtendFrom.lean/declarations/extendfrom.md) | 37 | `declaration-track:1dec83131ac7775d415e07ca0c3814dbe2d1d193dac3e0417491014cf685a68c` |
+| 2 | `theorem` | [tendsto_extendFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyExtendFrom.lean/declarations/tendsto-extendfrom.md) | 42 | `result-track:313949cd3056192b4e8d41324c1494f0f150b817d6d58dcedbd6f1ef0ee061fe` |
+| 3 | `theorem` | [extendFrom_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyExtendFrom.lean/declarations/extendfrom-eq.md) | 46 | `result-track:e19dd664b56000bfea08fdb8105287afa21160dc2ed3e3018403ba9ad6f3b84f` |
+| 4 | `theorem` | [extendFrom_extends](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyExtendFrom.lean/declarations/extendfrom-extends.md) | 51 | `result-track:29d4da04bf11c298461b5ecb45a84418bf8e2d5452f353ca5fb7ff7102024137` |
+| 5 | `theorem` | [continuousOn_extendFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyExtendFrom.lean/declarations/continuouson-extendfrom.md) | 57 | `result-track:e426da73dd4481e1b0d5c07aedcb0e7331bd769d2e37b225d3556e27f02be688` |
+| 6 | `theorem` | [continuous_extendFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyExtendFrom.lean/declarations/continuous-extendfrom.md) | 79 | `result-track:77dd8fdde8211290700d92af3ce09000e89aef08b821acd127011bcbdc0e97c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

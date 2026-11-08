@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/TransverseNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/TransverseNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TransverseNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TransverseNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,20 +60,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reflect](../../../../RealFunctions/TransverseNamespaced.lean/declarations/reflect.md) | 27 | `declaration-track:5d6f2866967a86c0ac17e2c59d2db6e2e94991bab31ff0e33958f38265dca1f9` |
-| 2 | `def` | [centeredSquare](../../../../RealFunctions/TransverseNamespaced.lean/declarations/centeredsquare.md) | 30 | `declaration-track:8e08b7ae3178a4666543acdf74dbd52d7ee217d8ae6687a3229cc100a8c5809c` |
-| 3 | `def` | [displacement](../../../../RealFunctions/TransverseNamespaced.lean/declarations/displacement.md) | 33 | `declaration-track:42704d994b18308ac6ab85bc913301d64c9921bb819cd02db7c16a57fae73245` |
-| 4 | `theorem` | [reflect_involutive](../../../../RealFunctions/TransverseNamespaced.lean/declarations/reflect-involutive.md) | 36 | `result-track:2964b21da2da50aabac91d8a19e1eee5ad6b3e345d8000e8ed41ae6608a0d404` |
-| 5 | `theorem` | [displacement_reflect](../../../../RealFunctions/TransverseNamespaced.lean/declarations/displacement-reflect.md) | 40 | `result-track:51a0db62a276cce7831624f0831a270d8aa7e195971a63144bad2d554d2991b7` |
-| 6 | `theorem` | [centeredSquare_one_sub](../../../../RealFunctions/TransverseNamespaced.lean/declarations/centeredsquare-one-sub.md) | 45 | `result-track:a6a18d57c30151a33cc118a50dda27d731afdf44dd9d5d346c0118e6af986954` |
-| 7 | `theorem` | [centeredSquare_re](../../../../RealFunctions/TransverseNamespaced.lean/declarations/centeredsquare-re.md) | 50 | `result-track:3592ec43927d9d5dc67b2d83b5fc70ac364c508b04f45c26a3f747aeda49e5e3` |
-| 8 | `theorem` | [centeredSquare_im](../../../../RealFunctions/TransverseNamespaced.lean/declarations/centeredsquare-im.md) | 55 | `result-track:71a70510662b45fc2cdff418c54cfc29c6bfcf17e534553e90da697d604aa8be` |
-| 9 | `theorem` | [centeredSquare_im_zero_iff](../../../../RealFunctions/TransverseNamespaced.lean/declarations/centeredsquare-im-zero-iff.md) | 61 | `result-track:9f5c4edbeaf01320a75f8a99324983170baf68f7d46c7e3516f94684c5513aa6` |
-| 10 | `theorem` | [centeredSquare_negative_axis_iff](../../../../RealFunctions/TransverseNamespaced.lean/declarations/centeredsquare-negative-axis-iff.md) | 73 | `result-track:cee7df11181b2038a5d1c209beed37eea4316b2bb79f5e35e00917ad77c3c094` |
-| 11 | `theorem` | [two_reflection_laws](../../../../RealFunctions/TransverseNamespaced.lean/declarations/two-reflection-laws.md) | 86 | `result-track:08a0ced8337e94f4fbe15d8cb580d903c9143dacc9ee9eaac84c4c1def3292c2` |
-| 12 | `def` | [phaseUnit](../../../../RealFunctions/TransverseNamespaced.lean/declarations/phaseunit.md) | 92 | `declaration-track:ed72db51d0f33294e2ece5f871506f9a0ee12a6f101a231e69745ba15b4abf5e` |
-| 13 | `theorem` | [phaseUnit_positive](../../../../RealFunctions/TransverseNamespaced.lean/declarations/phaseunit-positive.md) | 95 | `result-track:d726289e13844efc27c4e40b87c8e6de1f91877ec3628ac546b409d7aae6dc2d` |
-| 14 | `theorem` | [phase_normalization_preserves_pfInfinity](../../../../RealFunctions/TransverseNamespaced.lean/declarations/phase-normalization-preserves-pfinfinity.md) | 100 | `result-track:f592ed924bfee215fda0e71b9442f1c0efebc6034c5f7391d1a0bc7ab4fa4b5f` |
+| 1 | `def` | [reflect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TransverseNamespaced.lean/declarations/reflect.md) | 27 | `declaration-track:5d6f2866967a86c0ac17e2c59d2db6e2e94991bab31ff0e33958f38265dca1f9` |
+| 2 | `def` | [centeredSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TransverseNamespaced.lean/declarations/centeredsquare.md) | 30 | `declaration-track:8e08b7ae3178a4666543acdf74dbd52d7ee217d8ae6687a3229cc100a8c5809c` |
+| 3 | `def` | [displacement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TransverseNamespaced.lean/declarations/displacement.md) | 33 | `declaration-track:42704d994b18308ac6ab85bc913301d64c9921bb819cd02db7c16a57fae73245` |
+| 4 | `theorem` | [reflect_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TransverseNamespaced.lean/declarations/reflect-involutive.md) | 36 | `result-track:2964b21da2da50aabac91d8a19e1eee5ad6b3e345d8000e8ed41ae6608a0d404` |
+| 5 | `theorem` | [displacement_reflect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TransverseNamespaced.lean/declarations/displacement-reflect.md) | 40 | `result-track:51a0db62a276cce7831624f0831a270d8aa7e195971a63144bad2d554d2991b7` |
+| 6 | `theorem` | [centeredSquare_one_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TransverseNamespaced.lean/declarations/centeredsquare-one-sub.md) | 45 | `result-track:a6a18d57c30151a33cc118a50dda27d731afdf44dd9d5d346c0118e6af986954` |
+| 7 | `theorem` | [centeredSquare_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TransverseNamespaced.lean/declarations/centeredsquare-re.md) | 50 | `result-track:3592ec43927d9d5dc67b2d83b5fc70ac364c508b04f45c26a3f747aeda49e5e3` |
+| 8 | `theorem` | [centeredSquare_im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TransverseNamespaced.lean/declarations/centeredsquare-im.md) | 55 | `result-track:71a70510662b45fc2cdff418c54cfc29c6bfcf17e534553e90da697d604aa8be` |
+| 9 | `theorem` | [centeredSquare_im_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TransverseNamespaced.lean/declarations/centeredsquare-im-zero-iff.md) | 61 | `result-track:9f5c4edbeaf01320a75f8a99324983170baf68f7d46c7e3516f94684c5513aa6` |
+| 10 | `theorem` | [centeredSquare_negative_axis_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TransverseNamespaced.lean/declarations/centeredsquare-negative-axis-iff.md) | 73 | `result-track:cee7df11181b2038a5d1c209beed37eea4316b2bb79f5e35e00917ad77c3c094` |
+| 11 | `theorem` | [two_reflection_laws](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TransverseNamespaced.lean/declarations/two-reflection-laws.md) | 86 | `result-track:08a0ced8337e94f4fbe15d8cb580d903c9143dacc9ee9eaac84c4c1def3292c2` |
+| 12 | `def` | [phaseUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TransverseNamespaced.lean/declarations/phaseunit.md) | 92 | `declaration-track:ed72db51d0f33294e2ece5f871506f9a0ee12a6f101a231e69745ba15b4abf5e` |
+| 13 | `theorem` | [phaseUnit_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TransverseNamespaced.lean/declarations/phaseunit-positive.md) | 95 | `result-track:d726289e13844efc27c4e40b87c8e6de1f91877ec3628ac546b409d7aae6dc2d` |
+| 14 | `theorem` | [phase_normalization_preserves_pfInfinity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TransverseNamespaced.lean/declarations/phase-normalization-preserves-pfinfinity.md) | 100 | `result-track:f592ed924bfee215fda0e71b9442f1c0efebc6034c5f7391d1a0bc7ab4fa4b5f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

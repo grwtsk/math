@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ExactSecondPrimitiveOfTheActualSourceCorrelation.lean/index.md) · [Full source](../../../../RealFunctions/ExactSecondPrimitiveOfTheActualSourceCorrelation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactSecondPrimitiveOfTheActualSourceCorrelation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactSecondPrimitiveOfTheActualSourceCorrelation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sourcePeanoPrimitive](../../../../RealFunctions/ExactSecondPrimitiveOfTheActualSourceCorrelation.lean/declarations/sourcepeanoprimitive.md) | 19 | `declaration-track:6249f5fd8c4a2a43c04f542cb8ea2ad4a1cbd72ab62dedf41ad2e11ddbe51989` |
-| 2 | `theorem` | [primitiveCorrelationZero_fourth_deriv](../../../../RealFunctions/ExactSecondPrimitiveOfTheActualSourceCorrelation.lean/declarations/primitivecorrelationzero-fourth-deriv.md) | 25 | `result-track:1934ca9523aef9e2d76fcef8aae21b409f5db0fc7907a75c71b0490ed359f126` |
-| 3 | `theorem` | [sourcePeanoPrimitive_second_deriv](../../../../RealFunctions/ExactSecondPrimitiveOfTheActualSourceCorrelation.lean/declarations/sourcepeanoprimitive-second-deriv.md) | 38 | `result-track:6b37f76c8e28d8f8a6a36c14ecdceb172f403e43cf74cffbc3e6a2f6e18d4f35` |
-| 4 | `theorem` | [sourcePeanoPrimitive_contDiff_two](../../../../RealFunctions/ExactSecondPrimitiveOfTheActualSourceCorrelation.lean/declarations/sourcepeanoprimitive-contdiff-two.md) | 82 | `result-track:d2daeeb120f86897d33868ef47ba48b39da2ba53da04f52b5d3e396640fa2451` |
+| 1 | `def` | [sourcePeanoPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactSecondPrimitiveOfTheActualSourceCorrelation.lean/declarations/sourcepeanoprimitive.md) | 19 | `declaration-track:6249f5fd8c4a2a43c04f542cb8ea2ad4a1cbd72ab62dedf41ad2e11ddbe51989` |
+| 2 | `theorem` | [primitiveCorrelationZero_fourth_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactSecondPrimitiveOfTheActualSourceCorrelation.lean/declarations/primitivecorrelationzero-fourth-deriv.md) | 25 | `result-track:1934ca9523aef9e2d76fcef8aae21b409f5db0fc7907a75c71b0490ed359f126` |
+| 3 | `theorem` | [sourcePeanoPrimitive_second_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactSecondPrimitiveOfTheActualSourceCorrelation.lean/declarations/sourcepeanoprimitive-second-deriv.md) | 38 | `result-track:6b37f76c8e28d8f8a6a36c14ecdceb172f403e43cf74cffbc3e6a2f6e18d4f35` |
+| 4 | `theorem` | [sourcePeanoPrimitive_contDiff_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactSecondPrimitiveOfTheActualSourceCorrelation.lean/declarations/sourcepeanoprimitive-contdiff-two.md) | 82 | `result-track:d2daeeb120f86897d33868ef47ba48b39da2ba53da04f52b5d3e396640fa2451` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/KernelCoordinateCertificate.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/KernelCoordinateCertificate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KernelCoordinateCertificate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KernelCoordinateCertificate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.KernelComplementChart`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementChart.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.KernelComplementChart`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementChart.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [residual_zero_of_kernel_coordinate_certificate](../../../../GroupTheoryAndGeneralizations/KernelCoordinateCertificate.lean/declarations/residual-zero-of-kernel-coordinate-certificate.md) | 28 | `result-track:377d682975fca5fd8beef6528e5704c8c5f8602f5dbd74f9004711a473ffbcae` |
-| 2 | `theorem` | [jointly_identifiable_of_kernel_coordinate_certificate](../../../../GroupTheoryAndGeneralizations/KernelCoordinateCertificate.lean/declarations/jointly-identifiable-of-kernel-coordinate-certificate.md) | 37 | `result-track:060fff0a727e56ea9dab9dd0c561ba929a6d1a4205a2252bccfdc9c7dc424aab` |
+| 1 | `theorem` | [residual_zero_of_kernel_coordinate_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KernelCoordinateCertificate.lean/declarations/residual-zero-of-kernel-coordinate-certificate.md) | 28 | `result-track:377d682975fca5fd8beef6528e5704c8c5f8602f5dbd74f9004711a473ffbcae` |
+| 2 | `theorem` | [jointly_identifiable_of_kernel_coordinate_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KernelCoordinateCertificate.lean/declarations/jointly-identifiable-of-kernel-coordinate-certificate.md) | 37 | `result-track:060fff0a727e56ea9dab9dd0c561ba929a6d1a4205a2252bccfdc9c7dc424aab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

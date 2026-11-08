@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OffCriticalDisplacementNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OffCriticalDisplacementNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OffCriticalDisplacementNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OffCriticalDisplacementNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CriticalLine](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OffCriticalDisplacementNamespaced.lean/declarations/criticalline.md) | 27 | `declaration-track:dc5c7b84d999d3482330c06f0ee47d524f2eeca53ca23f03bf2b25b61a389473` |
-| 2 | `structure` | [SpectralPoint](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OffCriticalDisplacementNamespaced.lean/declarations/spectralpoint.md) | 31 | `declaration-track:9c18f70c8e2ff4a120b39b6e47cf776135929fe003f0cff5669fdba47e6ac8c7` |
-| 3 | `structure` | [OffCritical](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OffCriticalDisplacementNamespaced.lean/declarations/offcritical.md) | 35 | `declaration-track:f31dacba8862e48aa5d687414fd8e8ca0fac54bec5be92d641f65475c5ef97ff` |
-| 4 | `structure` | [SpectralDisplacement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OffCriticalDisplacementNamespaced.lean/declarations/spectraldisplacement.md) | 39 | `declaration-track:9edcb4b642d535832636002fe954758b54bbbfe7dd341cef688b49c6e320a7b9` |
-| 5 | `structure` | [OffCriticalDisplacementObstruction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OffCriticalDisplacementNamespaced.lean/declarations/offcriticaldisplacementobstruction.md) | 49 | `declaration-track:c70368273cfc18ae56b5d5e7f243773cdc9a9463d3d3dab3eb3d667a998662e1` |
-| 6 | `theorem` | [offcritical_displacement_changes_trace_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OffCriticalDisplacementNamespaced.lean/declarations/offcritical-displacement-changes-trace-if-supplied.md) | 63 | `result-track:230252ebfa7bba8787f1f5313422d44610f11b595cff5deadf4fba8f6bda32b0` |
+| 1 | `structure` | [CriticalLine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OffCriticalDisplacementNamespaced.lean/declarations/criticalline.md) | 27 | `declaration-track:dc5c7b84d999d3482330c06f0ee47d524f2eeca53ca23f03bf2b25b61a389473` |
+| 2 | `structure` | [SpectralPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OffCriticalDisplacementNamespaced.lean/declarations/spectralpoint.md) | 31 | `declaration-track:9c18f70c8e2ff4a120b39b6e47cf776135929fe003f0cff5669fdba47e6ac8c7` |
+| 3 | `structure` | [OffCritical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OffCriticalDisplacementNamespaced.lean/declarations/offcritical.md) | 35 | `declaration-track:f31dacba8862e48aa5d687414fd8e8ca0fac54bec5be92d641f65475c5ef97ff` |
+| 4 | `structure` | [SpectralDisplacement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OffCriticalDisplacementNamespaced.lean/declarations/spectraldisplacement.md) | 39 | `declaration-track:9edcb4b642d535832636002fe954758b54bbbfe7dd341cef688b49c6e320a7b9` |
+| 5 | `structure` | [OffCriticalDisplacementObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OffCriticalDisplacementNamespaced.lean/declarations/offcriticaldisplacementobstruction.md) | 49 | `declaration-track:c70368273cfc18ae56b5d5e7f243773cdc9a9463d3d3dab3eb3d667a998662e1` |
+| 6 | `theorem` | [offcritical_displacement_changes_trace_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OffCriticalDisplacementNamespaced.lean/declarations/offcritical-displacement-changes-trace-if-supplied.md) | 63 | `result-track:230252ebfa7bba8787f1f5313422d44610f11b595cff5deadf4fba8f6bda32b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

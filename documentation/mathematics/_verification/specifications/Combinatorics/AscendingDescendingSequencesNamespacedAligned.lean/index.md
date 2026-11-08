@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/AscendingDescendingSequencesNamespacedAligned.lean/index.md) · [Full source](../../../../Combinatorics/AscendingDescendingSequencesNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AscendingDescendingSequencesNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AscendingDescendingSequencesNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [erdos_szekeres](../../../../Combinatorics/AscendingDescendingSequencesNamespacedAligned.lean/declarations/erdos-szekeres.md) | 53 | `result-track:df9f44e75a7966045c997f91ee166125eef9126977ed6adf02adc5ca89d8823e` |
+| 1 | `theorem` | [erdos_szekeres](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AscendingDescendingSequencesNamespacedAligned.lean/declarations/erdos-szekeres.md) | 53 | `result-track:df9f44e75a7966045c997f91ee166125eef9126977ed6adf02adc5ca89d8823e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

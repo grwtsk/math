@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToeplitzNamespacedSourceEdition3.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToeplitzNamespacedSourceEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToeplitzNamespacedSourceEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToeplitzNamespacedSourceEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [minor_amplitude](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToeplitzNamespacedSourceEdition3.lean/declarations/minor-amplitude.md) | 28 | `result-track:5ce053405ea1fb1b1f1c077e79a5d45546205337075db911b0b1453737e8ce49` |
-| 2 | `theorem` | [pfInfinity_amplitude_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToeplitzNamespacedSourceEdition3.lean/declarations/pfinfinity-amplitude-iff.md) | 41 | `result-track:df8c129794b8dcb949933e77fb0fa791f1ec836c1f77e8c427c80bf06fbb612c` |
-| 3 | `theorem` | [continuous_minor](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToeplitzNamespacedSourceEdition3.lean/declarations/continuous-minor.md) | 53 | `result-track:bcef60ec746ebccab51aa28403a5a206fd46a8808f9f296fe543d8d92b24ca5c` |
-| 4 | `theorem` | [minor_tendsto](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToeplitzNamespacedSourceEdition3.lean/declarations/minor-tendsto.md) | 69 | `result-track:340e5f998c1becde165b2e9d5119b6ec0630da8dfbd211851fe1f3ed5de4b520` |
-| 5 | `theorem` | [pfInfinity_of_eventually_minor_nonnegative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToeplitzNamespacedSourceEdition3.lean/declarations/pfinfinity-of-eventually-minor-nonnegative.md) | 76 | `result-track:e05d6df911faf18422d58f6e5b3b62779bdd1429a7deadc529f3dd896802f78b` |
-| 6 | `theorem` | [pfInfinity_of_coefficientwise_limit](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToeplitzNamespacedSourceEdition3.lean/declarations/pfinfinity-of-coefficientwise-limit.md) | 85 | `result-track:31092680e2470cd7e8edb59227c4ed91dfc6011809137ed221b4339f19be5f4a` |
+| 1 | `theorem` | [minor_amplitude](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToeplitzNamespacedSourceEdition3.lean/declarations/minor-amplitude.md) | 28 | `result-track:5ce053405ea1fb1b1f1c077e79a5d45546205337075db911b0b1453737e8ce49` |
+| 2 | `theorem` | [pfInfinity_amplitude_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToeplitzNamespacedSourceEdition3.lean/declarations/pfinfinity-amplitude-iff.md) | 41 | `result-track:df8c129794b8dcb949933e77fb0fa791f1ec836c1f77e8c427c80bf06fbb612c` |
+| 3 | `theorem` | [continuous_minor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToeplitzNamespacedSourceEdition3.lean/declarations/continuous-minor.md) | 53 | `result-track:bcef60ec746ebccab51aa28403a5a206fd46a8808f9f296fe543d8d92b24ca5c` |
+| 4 | `theorem` | [minor_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToeplitzNamespacedSourceEdition3.lean/declarations/minor-tendsto.md) | 69 | `result-track:340e5f998c1becde165b2e9d5119b6ec0630da8dfbd211851fe1f3ed5de4b520` |
+| 5 | `theorem` | [pfInfinity_of_eventually_minor_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToeplitzNamespacedSourceEdition3.lean/declarations/pfinfinity-of-eventually-minor-nonnegative.md) | 76 | `result-track:e05d6df911faf18422d58f6e5b3b62779bdd1429a7deadc529f3dd896802f78b` |
+| 6 | `theorem` | [pfInfinity_of_coefficientwise_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToeplitzNamespacedSourceEdition3.lean/declarations/pfinfinity-of-coefficientwise-limit.md) | 85 | `result-track:31092680e2470cd7e8edb59227c4ed91dfc6011809137ed221b4339f19be5f4a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentFiniteHeadGram.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentFiniteHeadGram.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentFiniteHeadGram.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentFiniteHeadGram.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CanonicalSpectralPort.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CanonicalSpectralPort.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteHeadCorrection](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentFiniteHeadGram.lean/declarations/finiteheadcorrection.md) | 46 | `declaration-track:c017be67c0042f173ad3cbf75572e5b245da3de699e1db0af1d23530de64e66e` |
-| 2 | `theorem` | [finiteHeadCorrection_sub_canonicalCorrection_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentFiniteHeadGram.lean/declarations/finiteheadcorrection-sub-canonicalcorrection-eq.md) | 56 | `result-track:5f1ab8e4277fe081d3a1109d5b5fb4f520a10e6b6caf1b20a197d6aea545203c` |
-| 3 | `theorem` | [wrong_sign_defect](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentFiniteHeadGram.lean/declarations/wrong-sign-defect.md) | 71 | `result-track:bab5c22ed5d36d5fd815f1766f9d8900fa1ab9311833f27e3904f31e2d116f15` |
-| 4 | `theorem` | [norm_finiteHeadCorrection_sub_canonicalCorrection_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentFiniteHeadGram.lean/declarations/norm-finiteheadcorrection-sub-canonicalcorrection-le.md) | 85 | `result-track:3c7c6853fd73f842a57153a4a402e1633f51f9b76a48d1b56c876cd8bfccd6c1` |
-| 5 | `theorem` | [norm_finiteHeadCorrection_sub_sourceGram_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentFiniteHeadGram.lean/declarations/norm-finiteheadcorrection-sub-sourcegram-le.md) | 97 | `result-track:745ab7d104086fd583fc620d00f0736d527235ed30f77882fc129030e85e34eb` |
+| 1 | `def` | [finiteHeadCorrection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentFiniteHeadGram.lean/declarations/finiteheadcorrection.md) | 46 | `declaration-track:c017be67c0042f173ad3cbf75572e5b245da3de699e1db0af1d23530de64e66e` |
+| 2 | `theorem` | [finiteHeadCorrection_sub_canonicalCorrection_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentFiniteHeadGram.lean/declarations/finiteheadcorrection-sub-canonicalcorrection-eq.md) | 56 | `result-track:5f1ab8e4277fe081d3a1109d5b5fb4f520a10e6b6caf1b20a197d6aea545203c` |
+| 3 | `theorem` | [wrong_sign_defect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentFiniteHeadGram.lean/declarations/wrong-sign-defect.md) | 71 | `result-track:bab5c22ed5d36d5fd815f1766f9d8900fa1ab9311833f27e3904f31e2d116f15` |
+| 4 | `theorem` | [norm_finiteHeadCorrection_sub_canonicalCorrection_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentFiniteHeadGram.lean/declarations/norm-finiteheadcorrection-sub-canonicalcorrection-le.md) | 85 | `result-track:3c7c6853fd73f842a57153a4a402e1633f51f9b76a48d1b56c876cd8bfccd6c1` |
+| 5 | `theorem` | [norm_finiteHeadCorrection_sub_sourceGram_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentFiniteHeadGram.lean/declarations/norm-finiteheadcorrection-sub-sourcegram-le.md) | 97 | `result-track:745ab7d104086fd583fc620d00f0736d527235ed30f77882fc129030e85e34eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

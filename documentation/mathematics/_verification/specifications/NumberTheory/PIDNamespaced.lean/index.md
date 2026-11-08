@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PIDNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/PIDNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PIDNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PIDNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [three_pid](../../../../NumberTheory/PIDNamespaced.lean/declarations/three-pid.md) | 38 | `result-track:dc5c8c83b28b76bcf25ba27a6d3b0fd68601f1ea060702ebc2beab03d3259ec8` |
-| 2 | `theorem` | [five_pid](../../../../NumberTheory/PIDNamespaced.lean/declarations/five-pid.md) | 52 | `result-track:f8932b51119c26684d114fcab5e6f718ba2aaf153936393548dd6b1fcca57b3f` |
+| 1 | `theorem` | [three_pid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PIDNamespaced.lean/declarations/three-pid.md) | 38 | `result-track:dc5c8c83b28b76bcf25ba27a6d3b0fd68601f1ea060702ebc2beab03d3259ec8` |
+| 2 | `theorem` | [five_pid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PIDNamespaced.lean/declarations/five-pid.md) | 52 | `result-track:f8932b51119c26684d114fcab5e6f718ba2aaf153936393548dd6b1fcca57b3f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Scope](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/scope.md) | 17 | `declaration-track:4782e400547c4d886e409c0050b2920519e0cbd07075b1bb857bcdc3109297e6` |
-| 2 | `def` | [comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/comp.md) | 27 | `declaration-track:35de5db5a545b99cadb52ddfb45a13773a13962b245d9b30699d5cf2a1fcb9f7` |
-| 3 | `theorem` | [comp_framework_framework](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/comp-framework-framework.md) | 37 | `result-track:b7d345466060345e2920a41fd3978a4e475538c46afbac48507b47588ccc3206` |
-| 4 | `structure` | [ScopedSpec](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/scopedspec.md) | 44 | `declaration-track:48d72619fd0259fa96003806d537bf51f122339294888e8247086bc347ddc21a` |
-| 5 | `structure` | [Certified](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/certified.md) | 52 | `declaration-track:20855133f83c6bee40d35ec3347f93898b373afcb35d94cb0401b5ea30b65a03` |
-| 6 | `structure` | [UnconditionalCertified](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/unconditionalcertified.md) | 62 | `declaration-track:7a3f07265f67bd07558cf7884d8287f0a4e76c1010af24c77178ba024860b4e6` |
-| 7 | `abbrev` | [ConditionalCertified](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/conditionalcertified.md) | 71 | `declaration-track:a3f58971f286d211841e8ee0927edf32a4b0e4dd36bb78c6faea94ec9ecde9fb` |
-| 8 | `def` | [toCertified](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/tocertified.md) | 76 | `declaration-track:e8cf52fb54909a6bca0c77f58a56cdc85a8e7a26e5feee23b7d8399b0318c242` |
-| 9 | `def` | [ofProof](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/ofproof.md) | 90 | `declaration-track:e627b97bcbe5190fee242a533f81e98cb4ad40b226a38e3255474b4444832ddd` |
-| 10 | `def` | [ofConditional](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/ofconditional.md) | 105 | `declaration-track:6288d0a2957bdd670ec11f19aaf957c5a677d522ee3dead1d9bfb4fa8b9dfd5d` |
+| 1 | `inductive` | [Scope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/scope.md) | 17 | `declaration-track:4782e400547c4d886e409c0050b2920519e0cbd07075b1bb857bcdc3109297e6` |
+| 2 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/comp.md) | 27 | `declaration-track:35de5db5a545b99cadb52ddfb45a13773a13962b245d9b30699d5cf2a1fcb9f7` |
+| 3 | `theorem` | [comp_framework_framework](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/comp-framework-framework.md) | 37 | `result-track:b7d345466060345e2920a41fd3978a4e475538c46afbac48507b47588ccc3206` |
+| 4 | `structure` | [ScopedSpec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/scopedspec.md) | 44 | `declaration-track:48d72619fd0259fa96003806d537bf51f122339294888e8247086bc347ddc21a` |
+| 5 | `structure` | [Certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/certified.md) | 52 | `declaration-track:20855133f83c6bee40d35ec3347f93898b373afcb35d94cb0401b5ea30b65a03` |
+| 6 | `structure` | [UnconditionalCertified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/unconditionalcertified.md) | 62 | `declaration-track:7a3f07265f67bd07558cf7884d8287f0a4e76c1010af24c77178ba024860b4e6` |
+| 7 | `abbrev` | [ConditionalCertified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/conditionalcertified.md) | 71 | `declaration-track:a3f58971f286d211841e8ee0927edf32a4b0e4dd36bb78c6faea94ec9ecde9fb` |
+| 8 | `def` | [toCertified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/tocertified.md) | 76 | `declaration-track:e8cf52fb54909a6bca0c77f58a56cdc85a8e7a26e5feee23b7d8399b0318c242` |
+| 9 | `def` | [ofProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/ofproof.md) | 90 | `declaration-track:e627b97bcbe5190fee242a533f81e98cb4ad40b226a38e3255474b4444832ddd` |
+| 10 | `def` | [ofConditional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScopeScope.lean/declarations/ofconditional.md) | 105 | `declaration-track:6288d0a2957bdd670ec11f19aaf957c5a677d522ee3dead1d9bfb4fa8b9dfd5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

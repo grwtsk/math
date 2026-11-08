@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectHalfClosure`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfClosure.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectHalfClosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfClosure.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [half08_zero_rejected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfControls.lean/declarations/half08-zero-rejected.md) | 21 | `result-track:c1d20c982cc69adb988a1eb5455e31b1d89cc554de5884c8939ce3a6e8e027a2` |
-| 2 | `theorem` | [half00_one_rejected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfControls.lean/declarations/half00-one-rejected.md) | 26 | `result-track:2492ec455b55b084ca05db75fa4ef11371738a89f9bf35e78109c0785315a9d8` |
-| 3 | `theorem` | [final_suffix_present](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfControls.lean/declarations/final-suffix-present.md) | 32 | `result-track:3d1d2b33f266acf87feb35ca21852c873e815dcc7562d2debace735e8f374f7b` |
-| 4 | `theorem` | [exact_exhaustion](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfControls.lean/declarations/exact-exhaustion.md) | 36 | `result-track:e1fe8c38aa0c57ed61d78b558a6706f4056772fe34338225b9176e25a92ad5c1` |
-| 5 | `theorem` | [none_ne_successful_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfControls.lean/declarations/none-ne-successful-zero.md) | 40 | `result-track:0f1c3e1710999ebfe934e63c1c1a5795487a150694e10482475f7e8ff2344ff7` |
-| 6 | `theorem` | [positive_block_exact](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfControls.lean/declarations/positive-block-exact.md) | 43 | `result-track:5409d7193f4c77060b453f7ca3a679fb7dca6252900cf4b12be22f453c780940` |
+| 1 | `theorem` | [half08_zero_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfControls.lean/declarations/half08-zero-rejected.md) | 21 | `result-track:c1d20c982cc69adb988a1eb5455e31b1d89cc554de5884c8939ce3a6e8e027a2` |
+| 2 | `theorem` | [half00_one_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfControls.lean/declarations/half00-one-rejected.md) | 26 | `result-track:2492ec455b55b084ca05db75fa4ef11371738a89f9bf35e78109c0785315a9d8` |
+| 3 | `theorem` | [final_suffix_present](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfControls.lean/declarations/final-suffix-present.md) | 32 | `result-track:3d1d2b33f266acf87feb35ca21852c873e815dcc7562d2debace735e8f374f7b` |
+| 4 | `theorem` | [exact_exhaustion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfControls.lean/declarations/exact-exhaustion.md) | 36 | `result-track:e1fe8c38aa0c57ed61d78b558a6706f4056772fe34338225b9176e25a92ad5c1` |
+| 5 | `theorem` | [none_ne_successful_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfControls.lean/declarations/none-ne-successful-zero.md) | 40 | `result-track:0f1c3e1710999ebfe934e63c1c1a5795487a150694e10482475f7e8ff2344ff7` |
+| 6 | `theorem` | [positive_block_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfControls.lean/declarations/positive-block-exact.md) | 43 | `result-track:5409d7193f4c77060b453f7ca3a679fb7dca6252900cf4b12be22f453c780940` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

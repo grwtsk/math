@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridge.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [shell_weil_compatible](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridge.lean/declarations/shell-weil-compatible.md) | 21 | `result-track:ef787248f710e367eacd6e3536c557eb6f0cbb7b3fe4e5ea31aef7669a9a621b` |
-| 2 | `theorem` | [selected_shell_twist_has_preimage](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridge.lean/declarations/selected-shell-twist-has-preimage.md) | 32 | `result-track:efa9080a27e419f5bab50e2fec5bfab85e36e02e044051490847f3c3b68188d0` |
+| 1 | `theorem` | [shell_weil_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridge.lean/declarations/shell-weil-compatible.md) | 21 | `result-track:ef787248f710e367eacd6e3536c557eb6f0cbb7b3fe4e5ea31aef7669a9a621b` |
+| 2 | `theorem` | [selected_shell_twist_has_preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridge.lean/declarations/selected-shell-twist-has-preimage.md) | 32 | `result-track:efa9080a27e419f5bab50e2fec5bfab85e36e02e044051490847f3c3b68188d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesPushforwardNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesPushforwardNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesPushforwardNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesPushforwardNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesPushforwardNamespaced.lean/declarations/instance-source-edition-2.md) | 47 | `declaration-track:a4f8140c487c45c39a016fb41da7df98e8559aa19c2bd1fd03597e25a4266b9c` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesPushforwardNamespaced.lean/declarations/instance.md) | 56 | `declaration-track:52eef2a35d4f281d6cf9fa175e65a861d9a8155bd1015e4a0cf0eaa7d05ad242` |
-| 3 | `def` | [Sites.pushforward](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesPushforwardNamespaced.lean/declarations/sites-pushforward.md) | 62 | `declaration-track:c3c63675e5d1f61d110bf7cf9aab2533cc2066f5924f108a469d61ef072fd84e` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesPushforwardNamespaced.lean/declarations/instance-source-edition-3.md) | 66 | `declaration-track:f056eeaa8a3305a827965f160a518702ecbb97afc2f4d0031d1d915680cd0cc7` |
-| 5 | `def` | [Sites.pullbackPushforwardAdjunction](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesPushforwardNamespaced.lean/declarations/sites-pullbackpushforwardadjunction.md) | 72 | `declaration-track:289da1daef5e88010acffad681c42e80fd2b101d1d50a0519b7931f3c895baf4` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesPushforwardNamespaced.lean/declarations/instance-source-edition-2.md) | 47 | `declaration-track:a4f8140c487c45c39a016fb41da7df98e8559aa19c2bd1fd03597e25a4266b9c` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesPushforwardNamespaced.lean/declarations/instance.md) | 56 | `declaration-track:52eef2a35d4f281d6cf9fa175e65a861d9a8155bd1015e4a0cf0eaa7d05ad242` |
+| 3 | `def` | [Sites.pushforward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesPushforwardNamespaced.lean/declarations/sites-pushforward.md) | 62 | `declaration-track:c3c63675e5d1f61d110bf7cf9aab2533cc2066f5924f108a469d61ef072fd84e` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesPushforwardNamespaced.lean/declarations/instance-source-edition-3.md) | 66 | `declaration-track:f056eeaa8a3305a827965f160a518702ecbb97afc2f4d0031d1d915680cd0cc7` |
+| 5 | `def` | [Sites.pullbackPushforwardAdjunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesPushforwardNamespaced.lean/declarations/sites-pullbackpushforwardadjunction.md) | 72 | `declaration-track:289da1daef5e88010acffad681c42e80fd2b101d1d50a0519b7931f3c895baf4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

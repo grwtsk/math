@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespacedControlledSphericalResearchRegistry.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespacedControlledSphericalResearchRegistry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespacedControlledSphericalResearchRegistry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespacedControlledSphericalResearchRegistry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ControlledSphericalResearchRegistry](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespacedControlledSphericalResearchRegistry.lean/declarations/controlledsphericalresearchregistry.md) | 24 | `declaration-track:565a5bae4efcdd071b4fd488a87d87a51f53d8fdc2891467afc6447639f3e2ef` |
+| 1 | `structure` | [ControlledSphericalResearchRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RegistryNamespacedControlledSphericalResearchRegistry.lean/declarations/controlledsphericalresearchregistry.md) | 24 | `declaration-track:565a5bae4efcdd071b4fd488a87d87a51f53d8fdc2891467afc6447639f3e2ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

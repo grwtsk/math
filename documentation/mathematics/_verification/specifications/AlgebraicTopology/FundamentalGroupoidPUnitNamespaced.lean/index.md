@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/FundamentalGroupoidPUnitNamespaced.lean/index.md) · [Full source](../../../../AlgebraicTopology/FundamentalGroupoidPUnitNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidPUnitNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidPUnitNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../AlgebraicTopology/FundamentalGroupoidPUnitNamespaced.lean/declarations/instance.md) | 34 | `declaration-track:61ff789601a13036dc27eb93cd0084fada9518439d997f8c645952b6542e0eba` |
-| 2 | `instance` | [(anonymous)](../../../../AlgebraicTopology/FundamentalGroupoidPUnitNamespaced.lean/declarations/instance-source-edition-2.md) | 41 | `declaration-track:e6f793ad44a939169161e2bfe1ad9ab69027d47803031baac3411ce9a0981de1` |
-| 3 | `def` | [punitEquivDiscretePUnit](../../../../AlgebraicTopology/FundamentalGroupoidPUnitNamespaced.lean/declarations/punitequivdiscretepunit.md) | 46 | `declaration-track:d0989ea8b6a12da4195dba1b5f6051b388f9c198cb3c4a71fe57d3179b8221d0` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidPUnitNamespaced.lean/declarations/instance.md) | 34 | `declaration-track:61ff789601a13036dc27eb93cd0084fada9518439d997f8c645952b6542e0eba` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidPUnitNamespaced.lean/declarations/instance-source-edition-2.md) | 41 | `declaration-track:e6f793ad44a939169161e2bfe1ad9ab69027d47803031baac3411ce9a0981de1` |
+| 3 | `def` | [punitEquivDiscretePUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidPUnitNamespaced.lean/declarations/punitequivdiscretepunit.md) | 46 | `declaration-track:d0989ea8b6a12da4195dba1b5f6051b388f9c198cb3c4a71fe57d3179b8221d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

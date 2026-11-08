@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FiveModeActualDictionaryNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FiveModeActualDictionaryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeActualDictionaryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeActualDictionaryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_source_matrix_dictionary](../../../../MeasureAndIntegration/FiveModeActualDictionaryNamespaced.lean/declarations/actual-source-matrix-dictionary.md) | 26 | `result-track:33274e32102d5cfa9c3a9bd7a013adc5d662eadcf4a6ba9cbc2aaae7bbd81fd0` |
-| 2 | `theorem` | [actual_spectral_matrix_dictionary](../../../../MeasureAndIntegration/FiveModeActualDictionaryNamespaced.lean/declarations/actual-spectral-matrix-dictionary.md) | 33 | `result-track:136f10cf234b76b6ba5c7e15e4401b0b9a216b919d3355ec5e42e31b9bc191ac` |
-| 3 | `theorem` | [actual_angular_parseval](../../../../MeasureAndIntegration/FiveModeActualDictionaryNamespaced.lean/declarations/actual-angular-parseval.md) | 38 | `result-track:4c12abad8f3861e21e2739b74a7edbe157d727b06d5fc9b9eecd43c040578d6d` |
-| 4 | `theorem` | [actual_estimate_of_matrix_tail](../../../../MeasureAndIntegration/FiveModeActualDictionaryNamespaced.lean/declarations/actual-estimate-of-matrix-tail.md) | 46 | `result-track:e2c86c886609b1ca5b5eba23d6054155de6186c80a9b963bdcfef795cef0a78e` |
-| 5 | `theorem` | [actual_residual_upper_of_matrix_lower](../../../../MeasureAndIntegration/FiveModeActualDictionaryNamespaced.lean/declarations/actual-residual-upper-of-matrix-lower.md) | 53 | `result-track:59141b938f1f1f6dacaa8dbab010ffc98df60229b46906cf764e3a7c5902a440` |
+| 1 | `theorem` | [actual_source_matrix_dictionary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeActualDictionaryNamespaced.lean/declarations/actual-source-matrix-dictionary.md) | 26 | `result-track:33274e32102d5cfa9c3a9bd7a013adc5d662eadcf4a6ba9cbc2aaae7bbd81fd0` |
+| 2 | `theorem` | [actual_spectral_matrix_dictionary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeActualDictionaryNamespaced.lean/declarations/actual-spectral-matrix-dictionary.md) | 33 | `result-track:136f10cf234b76b6ba5c7e15e4401b0b9a216b919d3355ec5e42e31b9bc191ac` |
+| 3 | `theorem` | [actual_angular_parseval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeActualDictionaryNamespaced.lean/declarations/actual-angular-parseval.md) | 38 | `result-track:4c12abad8f3861e21e2739b74a7edbe157d727b06d5fc9b9eecd43c040578d6d` |
+| 4 | `theorem` | [actual_estimate_of_matrix_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeActualDictionaryNamespaced.lean/declarations/actual-estimate-of-matrix-tail.md) | 46 | `result-track:e2c86c886609b1ca5b5eba23d6054155de6186c80a9b963bdcfef795cef0a78e` |
+| 5 | `theorem` | [actual_residual_upper_of_matrix_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeActualDictionaryNamespaced.lean/declarations/actual-residual-upper-of-matrix-lower.md) | 53 | `result-track:59141b938f1f1f6dacaa8dbab010ffc98df60229b46906cf764e3a7c5902a440` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

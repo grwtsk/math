@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenPositiveCellControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenPositiveCellControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenPositiveCellControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenPositiveCellControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenPositiveCell`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenPositiveCell.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenPositiveCell`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenPositiveCell.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cell275_zero_rejected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenPositiveCellControls.lean/declarations/cell275-zero-rejected.md) | 15 | `result-track:adc79d46b9b98a5d218d93998de0b41237dae044de85af2066615ca007f6a6ab` |
-| 2 | `theorem` | [cell274_one_rejected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenPositiveCellControls.lean/declarations/cell274-one-rejected.md) | 19 | `result-track:c6d183a2bc5ae233a80217e8c9222cc403526597f1116842d525011104ef35d4` |
-| 3 | `theorem` | [exact_four_reconstruction](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenPositiveCellControls.lean/declarations/exact-four-reconstruction.md) | 23 | `result-track:e807b6a23b8932057ac77200dd07f57883a220c4e9e5e521e165c01f59bd34bc` |
-| 4 | `theorem` | [signed_term_not_absolute](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenPositiveCellControls.lean/declarations/signed-term-not-absolute.md) | 26 | `result-track:dbba8dc100c0825d1018cf70eca4730cba6ed5726f145ea6d9c255c3d17caba7` |
-| 5 | `theorem` | [none_ne_successful_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenPositiveCellControls.lean/declarations/none-ne-successful-zero.md) | 28 | `result-track:cd97a119e2bbeef85093542a9581358e569544008bafe996cd7c6506cd02631e` |
+| 1 | `theorem` | [cell275_zero_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenPositiveCellControls.lean/declarations/cell275-zero-rejected.md) | 15 | `result-track:adc79d46b9b98a5d218d93998de0b41237dae044de85af2066615ca007f6a6ab` |
+| 2 | `theorem` | [cell274_one_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenPositiveCellControls.lean/declarations/cell274-one-rejected.md) | 19 | `result-track:c6d183a2bc5ae233a80217e8c9222cc403526597f1116842d525011104ef35d4` |
+| 3 | `theorem` | [exact_four_reconstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenPositiveCellControls.lean/declarations/exact-four-reconstruction.md) | 23 | `result-track:e807b6a23b8932057ac77200dd07f57883a220c4e9e5e521e165c01f59bd34bc` |
+| 4 | `theorem` | [signed_term_not_absolute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenPositiveCellControls.lean/declarations/signed-term-not-absolute.md) | 26 | `result-track:dbba8dc100c0825d1018cf70eca4730cba6ed5726f145ea6d9c255c3d17caba7` |
+| 5 | `theorem` | [none_ne_successful_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenPositiveCellControls.lean/declarations/none-ne-successful-zero.md) | 28 | `result-track:cd97a119e2bbeef85093542a9581358e569544008bafe996cd7c6506cd02631e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

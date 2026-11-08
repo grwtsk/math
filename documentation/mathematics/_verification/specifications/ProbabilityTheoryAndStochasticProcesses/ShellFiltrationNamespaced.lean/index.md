@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/ShellFiltrationNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/ShellFiltrationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ShellFiltrationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ShellFiltrationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [all_boundary_level_zero](../../../../ProbabilityTheoryAndStochasticProcesses/ShellFiltrationNamespaced.lean/declarations/all-boundary-level-zero.md) | 30 | `result-track:50d2da1c317da8c24c19ef65ff7edf68214dd4bf8e91c888feccb3de817e374e` |
-| 2 | `theorem` | [cubeAdjacent_symm](../../../../ProbabilityTheoryAndStochasticProcesses/ShellFiltrationNamespaced.lean/declarations/cubeadjacent-symm.md) | 37 | `result-track:c971362353ccef3e9aef21a2be7b4c1610c078b868f9364075b0eaf55e24dc87` |
-| 3 | `theorem` | [cubeAdjacent_irrefl](../../../../ProbabilityTheoryAndStochasticProcesses/ShellFiltrationNamespaced.lean/declarations/cubeadjacent-irrefl.md) | 44 | `result-track:dd7e9fcfab0dd0ce0fb7b436f69486886f7f88509eaa54b5f7b005197f091eb8` |
+| 1 | `theorem` | [all_boundary_level_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ShellFiltrationNamespaced.lean/declarations/all-boundary-level-zero.md) | 30 | `result-track:50d2da1c317da8c24c19ef65ff7edf68214dd4bf8e91c888feccb3de817e374e` |
+| 2 | `theorem` | [cubeAdjacent_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ShellFiltrationNamespaced.lean/declarations/cubeadjacent-symm.md) | 37 | `result-track:c971362353ccef3e9aef21a2be7b4c1610c078b868f9364075b0eaf55e24dc87` |
+| 3 | `theorem` | [cubeAdjacent_irrefl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ShellFiltrationNamespaced.lean/declarations/cubeadjacent-irrefl.md) | 44 | `result-track:dd7e9fcfab0dd0ce0fb7b436f69486886f7f88509eaa54b5f7b005197f091eb8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

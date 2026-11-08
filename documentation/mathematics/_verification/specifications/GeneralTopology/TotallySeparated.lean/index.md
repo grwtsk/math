@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TotallySeparated.lean/index.md) · [Full source](../../../../GeneralTopology/TotallySeparated.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TotallySeparated.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TotallySeparated.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/TotallySeparated.lean/declarations/instance.md) | 21 | `declaration-track:37ff7af9d26c63dd0c0be37e1e7ad953a80b503e499825680c6e918e1ae33cac` |
-| 2 | `example` | [(anonymous)](../../../../GeneralTopology/TotallySeparated.lean/declarations/example.md) | 28 | `declaration-track:e802787289b002cb6b5c437f39419b25e939225a386fc4e218f9a0d9ebc812c7` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TotallySeparated.lean/declarations/instance.md) | 21 | `declaration-track:37ff7af9d26c63dd0c0be37e1e7ad953a80b503e499825680c6e918e1ae33cac` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TotallySeparated.lean/declarations/example.md) | 28 | `declaration-track:e802787289b002cb6b5c437f39419b25e939225a386fc4e218f9a0d9ebc812c7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

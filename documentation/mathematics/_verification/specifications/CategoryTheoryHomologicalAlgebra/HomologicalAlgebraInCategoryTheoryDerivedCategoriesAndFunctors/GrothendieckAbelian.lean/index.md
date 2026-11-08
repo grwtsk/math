@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/GrothendieckAbelian.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/GrothendieckAbelian.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/GrothendieckAbelian.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/GrothendieckAbelian.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [locallySmall](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/GrothendieckAbelian.lean/declarations/locallysmall.md) | 32 | `declaration-track:12f4d64259e6b1d2a7c3ea6133dbb56b5fe811b71efab4392d3b49c901c94078` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/GrothendieckAbelian.lean/declarations/instance.md) | 42 | `declaration-track:0198f3aa5a6e7b3e0fbc1729436c68b22fd4db1c68ba307008885e8fac467e4a` |
-| 3 | `instance` | [hasExactColimitsOfShape](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/GrothendieckAbelian.lean/declarations/hasexactcolimitsofshape.md) | 46 | `declaration-track:21b0c1f90cdb2b96880915006e4c5bd078db6dab103c1be28aec838d341ffbaa` |
-| 4 | `instance` | [ab5OfSize](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/GrothendieckAbelian.lean/declarations/ab5ofsize.md) | 57 | `declaration-track:0710fad8befda8c3963e968ce190b26110c1702ea3aaffd4a80f2b84d2a7ca42` |
-| 5 | `instance` | [isGrothendieckAbelian](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/GrothendieckAbelian.lean/declarations/isgrothendieckabelian.md) | 64 | `declaration-track:e64552a3de7b978afc929143b437957404a3eb208ee4f74a048fd2979b75666d` |
+| 1 | `instance` | [locallySmall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/GrothendieckAbelian.lean/declarations/locallysmall.md) | 32 | `declaration-track:12f4d64259e6b1d2a7c3ea6133dbb56b5fe811b71efab4392d3b49c901c94078` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/GrothendieckAbelian.lean/declarations/instance.md) | 42 | `declaration-track:0198f3aa5a6e7b3e0fbc1729436c68b22fd4db1c68ba307008885e8fac467e4a` |
+| 3 | `instance` | [hasExactColimitsOfShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/GrothendieckAbelian.lean/declarations/hasexactcolimitsofshape.md) | 46 | `declaration-track:21b0c1f90cdb2b96880915006e4c5bd078db6dab103c1be28aec838d341ffbaa` |
+| 4 | `instance` | [ab5OfSize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/GrothendieckAbelian.lean/declarations/ab5ofsize.md) | 57 | `declaration-track:0710fad8befda8c3963e968ce190b26110c1702ea3aaffd4a80f2b84d2a7ca42` |
+| 5 | `instance` | [isGrothendieckAbelian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/GrothendieckAbelian.lean/declarations/isgrothendieckabelian.md) | 64 | `declaration-track:e64552a3de7b978afc929143b437957404a3eb208ee4f74a048fd2979b75666d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

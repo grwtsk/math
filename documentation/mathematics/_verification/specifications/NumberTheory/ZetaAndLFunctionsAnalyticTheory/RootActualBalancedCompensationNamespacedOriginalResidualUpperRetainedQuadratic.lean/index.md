@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespacedOriginalResidualUpperRetainedQuadratic.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespacedOriginalResidualUpperRetainedQuadratic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespacedOriginalResidualUpperRetainedQuadratic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespacedOriginalResidualUpperRetainedQuadratic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualLowerStripInterior_quadratic_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespacedOriginalResidualUpperRetainedQuadratic.lean/declarations/actuallowerstripinterior-quadratic-abs-le.md) | 28 | `result-track:a7698b963679e7e45c7bfb481e172371f9d667760125ec17ea969604003e055d` |
-| 2 | `theorem` | [compensatedJointWork_sub_retained_balanced_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespacedOriginalResidualUpperRetainedQuadratic.lean/declarations/compensatedjointwork-sub-retained-balanced-abs-le.md) | 47 | `result-track:087142b8dd555127f5304413028d33e6b03f8a525f387dfe2c2b82252fd73fcc` |
-| 3 | `theorem` | [compensatedJointWork_sub_retained_quadratic_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespacedOriginalResidualUpperRetainedQuadratic.lean/declarations/compensatedjointwork-sub-retained-quadratic-abs-le.md) | 57 | `result-track:16afde9b3b850d77625fe1d60fd2087e04879eb42989474240ff158109cc59d9` |
-| 4 | `theorem` | [originalResidual_upper_retained_quadratic](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespacedOriginalResidualUpperRetainedQuadratic.lean/declarations/originalresidual-upper-retained-quadratic.md) | 67 | `result-track:91a5cfbf8804ce50658a642834db0f2b923644109ba3fb6c934583442a8d0817` |
+| 1 | `theorem` | [actualLowerStripInterior_quadratic_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespacedOriginalResidualUpperRetainedQuadratic.lean/declarations/actuallowerstripinterior-quadratic-abs-le.md) | 28 | `result-track:a7698b963679e7e45c7bfb481e172371f9d667760125ec17ea969604003e055d` |
+| 2 | `theorem` | [compensatedJointWork_sub_retained_balanced_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespacedOriginalResidualUpperRetainedQuadratic.lean/declarations/compensatedjointwork-sub-retained-balanced-abs-le.md) | 47 | `result-track:087142b8dd555127f5304413028d33e6b03f8a525f387dfe2c2b82252fd73fcc` |
+| 3 | `theorem` | [compensatedJointWork_sub_retained_quadratic_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespacedOriginalResidualUpperRetainedQuadratic.lean/declarations/compensatedjointwork-sub-retained-quadratic-abs-le.md) | 57 | `result-track:16afde9b3b850d77625fe1d60fd2087e04879eb42989474240ff158109cc59d9` |
+| 4 | `theorem` | [originalResidual_upper_retained_quadratic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespacedOriginalResidualUpperRetainedQuadratic.lean/declarations/originalresidual-upper-retained-quadratic.md) | 67 | `result-track:91a5cfbf8804ce50658a642834db0f2b923644109ba3fb6c934583442a8d0817` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

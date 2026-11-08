@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sigma.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sigma.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sigma.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sigma.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Sigma](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/sigma.md) | 25 | `declaration-track:4bd51e2c49e44a754ae3ce1a59ad4c6ad41331ba598f27201d3a65e3f024c3d1` |
-| 2 | `def` | [Pi](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/pi.md) | 30 | `declaration-track:436a2c6a0f54c49094125974a6f3f3f3071e164800a53af1602d61fe5c9548b9` |
-| 3 | `instance` | [Sigma.inhabited](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/sigma-inhabited.md) | 33 | `declaration-track:f80a9b36a636c548f3ebda4def50a6cce046a18e791630e3a15aaf2356f0efa2` |
-| 4 | `instance` | [Pi.inhabited](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/pi-inhabited.md) | 36 | `declaration-track:d056d4c6fb472545cfff73f943ef5984a840398be0fe189d56e08eb821644ace` |
-| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/instance-source-edition-2.md) | 41 | `declaration-track:411a67700b756c919a05a56b2d1cc30467d0d552504cf0b3261317f8f7587ce2` |
-| 6 | `def` | [P](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/p-source-edition-2.md) | 48 | `declaration-track:2d5b48347619a85f228c1461709d7c5d87aee801c77fed1d6c31d5cc8ca40644` |
-| 7 | `def` | [abs](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/abs.md) | 52 | `declaration-track:05b857e19b0f70ebb254962b77fe0550ec9531ddae060905c6f329bc1c8b395a` |
-| 8 | `def` | [repr](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/repr-source-edition-2.md) | 56 | `declaration-track:824e1477688f69057c6292c66fbc778dc3b3a765f9ef91d67485f1de601fbaec` |
-| 9 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/instance-source-edition-3.md) | 61 | `declaration-track:486b18e7b020818c874f6ebf9f0b98b15dd9344c937b3cb22bdca521e828e080` |
-| 10 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/instance.md) | 73 | `declaration-track:18796a53d91febcdf9d08b3b7befe07d9ed6aceeb5915adb7aa725bd3acc424f` |
-| 11 | `def` | [P](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/p.md) | 78 | `declaration-track:1f2a95d382a45db138a888cc3c1dd4497df9c9b9395f435d7679df42bd9aae8a` |
-| 12 | `def` | [abs](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/abs-source-edition-2.md) | 82 | `declaration-track:06e12f901699c519fe014a011c12b6c956cda26edc54fb5d57a0d1b08a51d123` |
-| 13 | `def` | [repr](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/repr.md) | 86 | `declaration-track:6e35e26bd94252b76ebf9509455b13b9543412a22d797d2eec168fe53a88e6d1` |
-| 14 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/instance-source-edition-4.md) | 89 | `declaration-track:f80fa5d634a3e13b1d419441cd0218b2a9180f9a4d2f1963a3da4633d2da0004` |
+| 1 | `def` | [Sigma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/sigma.md) | 25 | `declaration-track:4bd51e2c49e44a754ae3ce1a59ad4c6ad41331ba598f27201d3a65e3f024c3d1` |
+| 2 | `def` | [Pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/pi.md) | 30 | `declaration-track:436a2c6a0f54c49094125974a6f3f3f3071e164800a53af1602d61fe5c9548b9` |
+| 3 | `instance` | [Sigma.inhabited](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/sigma-inhabited.md) | 33 | `declaration-track:f80a9b36a636c548f3ebda4def50a6cce046a18e791630e3a15aaf2356f0efa2` |
+| 4 | `instance` | [Pi.inhabited](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/pi-inhabited.md) | 36 | `declaration-track:d056d4c6fb472545cfff73f943ef5984a840398be0fe189d56e08eb821644ace` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/instance-source-edition-2.md) | 41 | `declaration-track:411a67700b756c919a05a56b2d1cc30467d0d552504cf0b3261317f8f7587ce2` |
+| 6 | `def` | [P](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/p-source-edition-2.md) | 48 | `declaration-track:2d5b48347619a85f228c1461709d7c5d87aee801c77fed1d6c31d5cc8ca40644` |
+| 7 | `def` | [abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/abs.md) | 52 | `declaration-track:05b857e19b0f70ebb254962b77fe0550ec9531ddae060905c6f329bc1c8b395a` |
+| 8 | `def` | [repr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/repr-source-edition-2.md) | 56 | `declaration-track:824e1477688f69057c6292c66fbc778dc3b3a765f9ef91d67485f1de601fbaec` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/instance-source-edition-3.md) | 61 | `declaration-track:486b18e7b020818c874f6ebf9f0b98b15dd9344c937b3cb22bdca521e828e080` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/instance.md) | 73 | `declaration-track:18796a53d91febcdf9d08b3b7befe07d9ed6aceeb5915adb7aa725bd3acc424f` |
+| 11 | `def` | [P](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/p.md) | 78 | `declaration-track:1f2a95d382a45db138a888cc3c1dd4497df9c9b9395f435d7679df42bd9aae8a` |
+| 12 | `def` | [abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/abs-source-edition-2.md) | 82 | `declaration-track:06e12f901699c519fe014a011c12b6c956cda26edc54fb5d57a0d1b08a51d123` |
+| 13 | `def` | [repr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/repr.md) | 86 | `declaration-track:6e35e26bd94252b76ebf9509455b13b9543412a22d797d2eec168fe53a88e6d1` |
+| 14 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sigma.lean/declarations/instance-source-edition-4.md) | 89 | `declaration-track:f80fa5d634a3e13b1d419441cd0218b2a9180f9a4d2f1963a3da4633d2da0004` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

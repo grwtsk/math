@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternFreshNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternFreshNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternFreshNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternFreshNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [not_mem_cons_of_not_mem](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternFreshNamespaced.lean/declarations/not-mem-cons-of-not-mem.md) | 30 | `result-track:a1838047a16bce9d69d82de2b1529e33e91d53b3fccb4307379a235232374ab9` |
-| 2 | `theorem` | [pattern_copy_nonadjacent_to_self_slot](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternFreshNamespaced.lean/declarations/pattern-copy-nonadjacent-to-self-slot.md) | 40 | `result-track:48fe4bf6a5f50d83c6f9d0f767114f5479c8ef92c5f058a48c156546e912b9fd` |
-| 3 | `theorem` | [bitRado_copy_finite_pattern_avoiding_self_and_list](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternFreshNamespaced.lean/declarations/bitrado-copy-finite-pattern-avoiding-self-and-list.md) | 50 | `result-track:44de98b04aea25adb34b1f53716b4107175fad956d68964cf4206a175b63ce84` |
+| 1 | `theorem` | [not_mem_cons_of_not_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternFreshNamespaced.lean/declarations/not-mem-cons-of-not-mem.md) | 30 | `result-track:a1838047a16bce9d69d82de2b1529e33e91d53b3fccb4307379a235232374ab9` |
+| 2 | `theorem` | [pattern_copy_nonadjacent_to_self_slot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternFreshNamespaced.lean/declarations/pattern-copy-nonadjacent-to-self-slot.md) | 40 | `result-track:48fe4bf6a5f50d83c6f9d0f767114f5479c8ef92c5f058a48c156546e912b9fd` |
+| 3 | `theorem` | [bitRado_copy_finite_pattern_avoiding_self_and_list](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternFreshNamespaced.lean/declarations/bitrado-copy-finite-pattern-avoiding-self-and-list.md) | 50 | `result-track:44de98b04aea25adb34b1f53716b4107175fad956d68964cf4206a175b63ce84` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

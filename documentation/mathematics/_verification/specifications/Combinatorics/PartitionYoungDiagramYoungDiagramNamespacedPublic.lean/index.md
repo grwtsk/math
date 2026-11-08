@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/index.md) · [Full source](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toPartition](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/declarations/topartition.md) | 38 | `declaration-track:c480c5830efda47a6f090bedf80484291160dd60b6722f82fe6771c821962b74` |
-| 2 | `def` | [ofPartition](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/declarations/ofpartition.md) | 44 | `declaration-track:1afa0ae9cf156349a2ca50c1445253ddb452536136700f304b84feeae1fa4bbf` |
-| 3 | `theorem` | [rowLens_ofPartition_eq_sort_parts](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/declarations/rowlens-ofpartition-eq-sort-parts.md) | 50 | `result-track:16a639ee3d96cde4f204837d7e6786c1f1aeb868ea8f9f2590cab91c68e94bcf` |
-| 4 | `theorem` | [card_ofPartition](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/declarations/card-ofpartition.md) | 55 | `result-track:76c26a875215ba168eb4910d7744e02690e2cafee32569832740df34d40a53a1` |
-| 5 | `theorem` | [ofPartition_toPartition](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/declarations/ofpartition-topartition.md) | 61 | `result-track:15b4752c1cbfcfd3154d71efeafae7c225e38e73862c9fb5b47417b4f3a6d6bb` |
-| 6 | `theorem` | [toPartition_ofPartition](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/declarations/topartition-ofpartition.md) | 67 | `result-track:083d77a53068b0f2a5c82c04270d2584fa40044d67bc140c9652bf83fa5dd0c7` |
-| 7 | `def` | [equivPartition](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/declarations/equivpartition.md) | 73 | `declaration-track:c8e68e441fe8cd08fedd0ff038c4f6ebde5bcc6765aa3607f96d6cc3b94ae70e` |
-| 8 | `def` | [conjugate](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/declarations/conjugate.md) | 84 | `declaration-track:f26a92888c65fd3e8eb234aa3b36d6eb06d0dd7800ae65dac1fc62af27389c2f` |
-| 9 | `theorem` | [conjugate_conjugate](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/declarations/conjugate-conjugate.md) | 89 | `result-track:c6a6a71967ebbd9579ed1b1648b48da59ea145fcc53bba83992a3251932ca652` |
+| 1 | `def` | [toPartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/declarations/topartition.md) | 38 | `declaration-track:c480c5830efda47a6f090bedf80484291160dd60b6722f82fe6771c821962b74` |
+| 2 | `def` | [ofPartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/declarations/ofpartition.md) | 44 | `declaration-track:1afa0ae9cf156349a2ca50c1445253ddb452536136700f304b84feeae1fa4bbf` |
+| 3 | `theorem` | [rowLens_ofPartition_eq_sort_parts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/declarations/rowlens-ofpartition-eq-sort-parts.md) | 50 | `result-track:16a639ee3d96cde4f204837d7e6786c1f1aeb868ea8f9f2590cab91c68e94bcf` |
+| 4 | `theorem` | [card_ofPartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/declarations/card-ofpartition.md) | 55 | `result-track:76c26a875215ba168eb4910d7744e02690e2cafee32569832740df34d40a53a1` |
+| 5 | `theorem` | [ofPartition_toPartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/declarations/ofpartition-topartition.md) | 61 | `result-track:15b4752c1cbfcfd3154d71efeafae7c225e38e73862c9fb5b47417b4f3a6d6bb` |
+| 6 | `theorem` | [toPartition_ofPartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/declarations/topartition-ofpartition.md) | 67 | `result-track:083d77a53068b0f2a5c82c04270d2584fa40044d67bc140c9652bf83fa5dd0c7` |
+| 7 | `def` | [equivPartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/declarations/equivpartition.md) | 73 | `declaration-track:c8e68e441fe8cd08fedd0ff038c4f6ebde5bcc6765aa3607f96d6cc3b94ae70e` |
+| 8 | `def` | [conjugate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/declarations/conjugate.md) | 84 | `declaration-track:f26a92888c65fd3e8eb234aa3b36d6eb06d0dd7800ae65dac1fc62af27389c2f` |
+| 9 | `theorem` | [conjugate_conjugate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramNamespacedPublic.lean/declarations/conjugate-conjugate.md) | 89 | `result-track:c6a6a71967ebbd9579ed1b1648b48da59ea145fcc53bba83992a3251932ca652` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

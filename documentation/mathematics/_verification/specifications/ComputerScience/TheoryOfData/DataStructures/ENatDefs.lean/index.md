@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ENatDefs.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ENatDefs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ENatDefs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ENatDefs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ENat](../../../../../../ComputerScience/TheoryOfData/DataStructures/ENatDefs.lean/declarations/enat.md) | 13 | `declaration-track:9e348132826886bdf4d94361a6cd6d09fa63e588dae44c130d4f310d4533a90b` |
-| 2 | `instance` | [instNatCast](../../../../../../ComputerScience/TheoryOfData/DataStructures/ENatDefs.lean/declarations/instnatcast.md) | 19 | `declaration-track:7fbb26a82bcb96a124b2e286098446c2c7a2fdb639e9282e21a75e71ec498377` |
-| 3 | `def` | [recTopCoe](../../../../../../ComputerScience/TheoryOfData/DataStructures/ENatDefs.lean/declarations/rectopcoe.md) | 23 | `declaration-track:25290c335ff0a02214490f25bfb58f18d47c5a0085d62c87b8f228006d201612` |
-| 4 | `theorem` | [recTopCoe_top](../../../../../../ComputerScience/TheoryOfData/DataStructures/ENatDefs.lean/declarations/rectopcoe-top.md) | 28 | `result-track:cfcd8bd92b2f74786d4f986782713b1a15684294f591df85783a51d70e8c6148` |
-| 5 | `theorem` | [recTopCoe_coe](../../../../../../ComputerScience/TheoryOfData/DataStructures/ENatDefs.lean/declarations/rectopcoe-coe.md) | 33 | `result-track:21516663ab43f11169c6c09e9ec0b669d107a7a36189751936737e972cdf9530` |
+| 1 | `def` | [ENat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ENatDefs.lean/declarations/enat.md) | 13 | `declaration-track:9e348132826886bdf4d94361a6cd6d09fa63e588dae44c130d4f310d4533a90b` |
+| 2 | `instance` | [instNatCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ENatDefs.lean/declarations/instnatcast.md) | 19 | `declaration-track:7fbb26a82bcb96a124b2e286098446c2c7a2fdb639e9282e21a75e71ec498377` |
+| 3 | `def` | [recTopCoe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ENatDefs.lean/declarations/rectopcoe.md) | 23 | `declaration-track:25290c335ff0a02214490f25bfb58f18d47c5a0085d62c87b8f228006d201612` |
+| 4 | `theorem` | [recTopCoe_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ENatDefs.lean/declarations/rectopcoe-top.md) | 28 | `result-track:cfcd8bd92b2f74786d4f986782713b1a15684294f591df85783a51d70e8c6148` |
+| 5 | `theorem` | [recTopCoe_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ENatDefs.lean/declarations/rectopcoe-coe.md) | 33 | `result-track:21516663ab43f11169c6c09e9ec0b669d107a7a36189751936737e972cdf9530` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

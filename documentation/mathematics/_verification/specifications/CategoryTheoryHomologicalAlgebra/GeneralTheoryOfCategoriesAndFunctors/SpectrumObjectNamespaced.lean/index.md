@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [spectrum_object_stable](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespaced.lean/declarations/spectrum-object-stable.md) | 28 | `result-track:5bc67bbe7ae7957edaaa0ceca2b61e4a5da7e62e0b0a472d9e883258ecc10f0d` |
-| 2 | `theorem` | [spectrum_morphism_preserves_stability](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespaced.lean/declarations/spectrum-morphism-preserves-stability.md) | 33 | `result-track:82ceca746345390a41a9e4a0a4a9c31889a093c8f3cd4f2ec46270e17aa08336` |
+| 1 | `theorem` | [spectrum_object_stable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespaced.lean/declarations/spectrum-object-stable.md) | 28 | `result-track:5bc67bbe7ae7957edaaa0ceca2b61e4a5da7e62e0b0a472d9e883258ecc10f0d` |
+| 2 | `theorem` | [spectrum_morphism_preserves_stability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SpectrumObjectNamespaced.lean/declarations/spectrum-morphism-preserves-stability.md) | 33 | `result-track:82ceca746345390a41a9e4a0a4a9c31889a093c8f3cd4f2ec46270e17aa08336` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

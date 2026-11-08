@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/BijectiveNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/BijectiveNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BijectiveNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BijectiveNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [containsIdentities](../../../../CommutativeAlgebra/BijectiveNamespacedPublic.lean/declarations/containsidentities.md) | 36 | `result-track:9567699d367c74f9c229738d5eddb8c343b755fb8c663a102b1abc9cd72a34b2` |
-| 2 | `lemma` | [stableUnderComposition](../../../../CommutativeAlgebra/BijectiveNamespacedPublic.lean/declarations/stableundercomposition.md) | 39 | `result-track:a548ddb8df410f35a83df51051d3c0f67dc5fd0de6fb5f72a7f7cc9a7b920b67` |
-| 3 | `lemma` | [respectsIso](../../../../CommutativeAlgebra/BijectiveNamespacedPublic.lean/declarations/respectsiso.md) | 42 | `result-track:7da69a165cc550d25e15d9493f8b45d8eedd0e336620ac200c61930c9c7e23f6` |
-| 4 | `lemma` | [isStableUnderBaseChange](../../../../CommutativeAlgebra/BijectiveNamespacedPublic.lean/declarations/isstableunderbasechange.md) | 45 | `result-track:a5d7172e216fafd901f7a7e73874c3f37e803bc581c2d72bcbd2f76723bbc973` |
-| 5 | `lemma` | [ofLocalizationSpan](../../../../CommutativeAlgebra/BijectiveNamespacedPublic.lean/declarations/oflocalizationspan.md) | 49 | `result-track:41f49e9050c4aab58ec5d12e37c00ce68ce983ee952f9ea7833c0378468e6100` |
+| 1 | `lemma` | [containsIdentities](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BijectiveNamespacedPublic.lean/declarations/containsidentities.md) | 36 | `result-track:9567699d367c74f9c229738d5eddb8c343b755fb8c663a102b1abc9cd72a34b2` |
+| 2 | `lemma` | [stableUnderComposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BijectiveNamespacedPublic.lean/declarations/stableundercomposition.md) | 39 | `result-track:a548ddb8df410f35a83df51051d3c0f67dc5fd0de6fb5f72a7f7cc9a7b920b67` |
+| 3 | `lemma` | [respectsIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BijectiveNamespacedPublic.lean/declarations/respectsiso.md) | 42 | `result-track:7da69a165cc550d25e15d9493f8b45d8eedd0e336620ac200c61930c9c7e23f6` |
+| 4 | `lemma` | [isStableUnderBaseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BijectiveNamespacedPublic.lean/declarations/isstableunderbasechange.md) | 45 | `result-track:a5d7172e216fafd901f7a7e73874c3f37e803bc581c2d72bcbd2f76723bbc973` |
+| 5 | `lemma` | [ofLocalizationSpan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BijectiveNamespacedPublic.lean/declarations/oflocalizationspan.md) | 49 | `result-track:41f49e9050c4aab58ec5d12e37c00ce68ce983ee952f9ea7833c0378468e6100` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AuxiliaryProfileNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AuxiliaryProfileNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuxiliaryProfileNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuxiliaryProfileNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AuxiliaryFiberKind](../../../../../ComputerScience/AlgorithmsInComputerScience/AuxiliaryProfileNamespaced.lean/declarations/auxiliaryfiberkind.md) | 15 | `declaration-track:881d6bbf8a81cf3299a54b4752b1d0b163ae805fe82654b87954eea6b807d4fd` |
-| 2 | `structure` | [AuxiliaryProfile](../../../../../ComputerScience/AlgorithmsInComputerScience/AuxiliaryProfileNamespaced.lean/declarations/auxiliaryprofile.md) | 22 | `declaration-track:d14c97f1a13f85570c30f91ed5133bcd9fa8d829798ee749623338373abaea93` |
+| 1 | `inductive` | [AuxiliaryFiberKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuxiliaryProfileNamespaced.lean/declarations/auxiliaryfiberkind.md) | 15 | `declaration-track:881d6bbf8a81cf3299a54b4752b1d0b163ae805fe82654b87954eea6b807d4fd` |
+| 2 | `structure` | [AuxiliaryProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuxiliaryProfileNamespaced.lean/declarations/auxiliaryprofile.md) | 22 | `declaration-track:d14c97f1a13f85570c30f91ed5133bcd9fa8d829798ee749623338373abaea93` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

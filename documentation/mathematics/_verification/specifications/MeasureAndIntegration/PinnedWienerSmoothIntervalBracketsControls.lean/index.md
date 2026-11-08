@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PinnedWienerSmoothIntervalBracketsControls.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PinnedWienerSmoothIntervalBracketsControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothIntervalBracketsControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothIntervalBracketsControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedWienerSmoothIntervalBrackets`](../../../../MeasureAndIntegration/PinnedWienerSmoothIntervalBrackets.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedWienerSmoothIntervalBrackets`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothIntervalBrackets.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [half_to_one_has_smooth_brackets](../../../../MeasureAndIntegration/PinnedWienerSmoothIntervalBracketsControls.lean/declarations/half-to-one-has-smooth-brackets.md) | 18 | `result-track:0e28066adc110db57a1ad9fd6b85a9c29fc957a0ebe77f00089fee2a1eaf3360` |
-| 2 | `theorem` | [positiveFiniteWeightedSum_sandwich](../../../../MeasureAndIntegration/PinnedWienerSmoothIntervalBracketsControls.lean/declarations/positivefiniteweightedsum-sandwich.md) | 29 | `result-track:e555131cb19dd1c220b0b4920d19071c87862ea9ea9b0e4a691b9960221d0f5c` |
-| 3 | `theorem` | [concrete_smooth_brackets_give_finite_sum_bounds](../../../../MeasureAndIntegration/PinnedWienerSmoothIntervalBracketsControls.lean/declarations/concrete-smooth-brackets-give-finite-sum-bounds.md) | 62 | `result-track:89c8e63e0dd968629f0645be1b818de99a5c3c58bcbbc680d6addee3d4071286` |
-| 4 | `def` | [remainingSmoothWienerObligations](../../../../MeasureAndIntegration/PinnedWienerSmoothIntervalBracketsControls.lean/declarations/remainingsmoothwienerobligations.md) | 96 | `declaration-track:f0627590f52b36096743b9340787f4a40c073ec73935f943616579511fdc48af` |
-| 5 | `def` | [prohibitedPromotions](../../../../MeasureAndIntegration/PinnedWienerSmoothIntervalBracketsControls.lean/declarations/prohibitedpromotions.md) | 104 | `declaration-track:0da21abf19736347cc1f1a1da27326052509c9793bd9f5fc867a0f068b666f14` |
+| 1 | `theorem` | [half_to_one_has_smooth_brackets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothIntervalBracketsControls.lean/declarations/half-to-one-has-smooth-brackets.md) | 18 | `result-track:0e28066adc110db57a1ad9fd6b85a9c29fc957a0ebe77f00089fee2a1eaf3360` |
+| 2 | `theorem` | [positiveFiniteWeightedSum_sandwich](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothIntervalBracketsControls.lean/declarations/positivefiniteweightedsum-sandwich.md) | 29 | `result-track:e555131cb19dd1c220b0b4920d19071c87862ea9ea9b0e4a691b9960221d0f5c` |
+| 3 | `theorem` | [concrete_smooth_brackets_give_finite_sum_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothIntervalBracketsControls.lean/declarations/concrete-smooth-brackets-give-finite-sum-bounds.md) | 62 | `result-track:89c8e63e0dd968629f0645be1b818de99a5c3c58bcbbc680d6addee3d4071286` |
+| 4 | `def` | [remainingSmoothWienerObligations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothIntervalBracketsControls.lean/declarations/remainingsmoothwienerobligations.md) | 96 | `declaration-track:f0627590f52b36096743b9340787f4a40c073ec73935f943616579511fdc48af` |
+| 5 | `def` | [prohibitedPromotions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothIntervalBracketsControls.lean/declarations/prohibitedpromotions.md) | 104 | `declaration-track:0da21abf19736347cc1f1a1da27326052509c9793bd9f5fc867a0f068b666f14` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

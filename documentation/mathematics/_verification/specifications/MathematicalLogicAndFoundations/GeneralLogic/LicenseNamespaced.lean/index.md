@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LicenseNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LicenseNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LicenseNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LicenseNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [LicenseDisposition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LicenseNamespaced.lean/declarations/licensedisposition.md) | 16 | `declaration-track:c4e4140027a39e2a75ed37a0b5dfe1fb3011460f24d4e54e3bc98bce42574629` |
-| 2 | `structure` | [LicenseRecord](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LicenseNamespaced.lean/declarations/licenserecord.md) | 23 | `declaration-track:a36656e1662d8ed0d8739d4150e0023682c682a65b71b13dd3ebe6341c42f442` |
-| 3 | `def` | [LicenseRecord.LegallyAdmissible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LicenseNamespaced.lean/declarations/licenserecord-legallyadmissible.md) | 34 | `declaration-track:05e21d4ff04a12c60bd3e8155f197644ae897e157f880ea320be0a13d9a8455f` |
-| 4 | `theorem` | [LicenseRecord.review_is_not_admission](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LicenseNamespaced.lean/declarations/licenserecord-review-is-not-admission.md) | 37 | `result-track:8d2c335439547612ca208810871b76cac1d977a2fbc50a0439556e4bbe44f856` |
+| 1 | `inductive` | [LicenseDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LicenseNamespaced.lean/declarations/licensedisposition.md) | 16 | `declaration-track:c4e4140027a39e2a75ed37a0b5dfe1fb3011460f24d4e54e3bc98bce42574629` |
+| 2 | `structure` | [LicenseRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LicenseNamespaced.lean/declarations/licenserecord.md) | 23 | `declaration-track:a36656e1662d8ed0d8739d4150e0023682c682a65b71b13dd3ebe6341c42f442` |
+| 3 | `def` | [LicenseRecord.LegallyAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LicenseNamespaced.lean/declarations/licenserecord-legallyadmissible.md) | 34 | `declaration-track:05e21d4ff04a12c60bd3e8155f197644ae897e157f880ea320be0a13d9a8455f` |
+| 4 | `theorem` | [LicenseRecord.review_is_not_admission](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LicenseNamespaced.lean/declarations/licenserecord-review-is-not-admission.md) | 37 | `result-track:8d2c335439547612ca208810871b76cac1d977a2fbc50a0439556e4bbe44f856` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

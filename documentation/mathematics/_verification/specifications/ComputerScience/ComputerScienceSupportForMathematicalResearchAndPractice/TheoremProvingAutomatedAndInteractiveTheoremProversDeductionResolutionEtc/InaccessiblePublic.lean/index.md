@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InaccessiblePublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InaccessiblePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InaccessiblePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InaccessiblePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Lean.LocalContext.inaccessibleFVars](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InaccessiblePublic.lean/declarations/lean-localcontext-inaccessiblefvars.md) | 19 | `declaration-track:8529c0d1d49c29a4ccebb63c21e32741f035dd4fb39ee8dae9c61bb146ab1065` |
-| 2 | `def` | [Lean.Meta.getInaccessibleFVars](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InaccessiblePublic.lean/declarations/lean-meta-getinaccessiblefvars.md) | 41 | `declaration-track:8b1f42b0f5ee606fbfe1bcbac6aeea3ee0866188f9b1fb0bf3276e874e27c992` |
-| 3 | `def` | [Lean.MVarId.renameInaccessibleFVars](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InaccessiblePublic.lean/declarations/lean-mvarid-renameinaccessiblefvars.md) | 51 | `declaration-track:c130c9ba84b96d9617c2b3d804ac0a65a7fb7a4af504d8ec52f44c10e3df3455` |
+| 1 | `def` | [Lean.LocalContext.inaccessibleFVars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InaccessiblePublic.lean/declarations/lean-localcontext-inaccessiblefvars.md) | 19 | `declaration-track:8529c0d1d49c29a4ccebb63c21e32741f035dd4fb39ee8dae9c61bb146ab1065` |
+| 2 | `def` | [Lean.Meta.getInaccessibleFVars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InaccessiblePublic.lean/declarations/lean-meta-getinaccessiblefvars.md) | 41 | `declaration-track:8b1f42b0f5ee606fbfe1bcbac6aeea3ee0866188f9b1fb0bf3276e874e27c992` |
+| 3 | `def` | [Lean.MVarId.renameInaccessibleFVars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InaccessiblePublic.lean/declarations/lean-mvarid-renameinaccessiblefvars.md) | 51 | `declaration-track:c130c9ba84b96d9617c2b3d804ac0a65a7fb7a4af504d8ec52f44c10e3df3455` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

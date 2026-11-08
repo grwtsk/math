@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplace.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [primitive_continuousOn_Ici](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplace.lean/declarations/primitive-continuouson-ici.md) | 19 | `result-track:1c21273542f23c4d29b8dcffaf2a5399167bdc898af22469fa1a2c35e07e636a` |
-| 2 | `theorem` | [actualXiComplexLaplaceKernel_norm_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplace.lean/declarations/actualxicomplexlaplacekernel-norm-eq.md) | 32 | `result-track:5de51d771ed3e46f5173261d97c2a3c9e311cf345518c54dd230c911a3d7af2f` |
-| 3 | `theorem` | [actualXiComplexLaplace_integrableOn_of_future_average](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplace.lean/declarations/actualxicomplexlaplace-integrableon-of-future-average.md) | 40 | `result-track:915d21bb5b629e3bbaf0ff3cf629d1df11555a9434d6baec611fcb90aaa701d1` |
-| 4 | `theorem` | [actualXiComplexLaplace_norm_le_of_future_average](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplace.lean/declarations/actualxicomplexlaplace-norm-le-of-future-average.md) | 56 | `result-track:4bac5a9cd8b8aaa6a4cd8c184286df4bba0a704a07442c08bbd4acd9b75107f0` |
+| 1 | `theorem` | [primitive_continuousOn_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplace.lean/declarations/primitive-continuouson-ici.md) | 19 | `result-track:1c21273542f23c4d29b8dcffaf2a5399167bdc898af22469fa1a2c35e07e636a` |
+| 2 | `theorem` | [actualXiComplexLaplaceKernel_norm_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplace.lean/declarations/actualxicomplexlaplacekernel-norm-eq.md) | 32 | `result-track:5de51d771ed3e46f5173261d97c2a3c9e311cf345518c54dd230c911a3d7af2f` |
+| 3 | `theorem` | [actualXiComplexLaplace_integrableOn_of_future_average](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplace.lean/declarations/actualxicomplexlaplace-integrableon-of-future-average.md) | 40 | `result-track:915d21bb5b629e3bbaf0ff3cf629d1df11555a9434d6baec611fcb90aaa701d1` |
+| 4 | `theorem` | [actualXiComplexLaplace_norm_le_of_future_average](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplace.lean/declarations/actualxicomplexlaplace-norm-le-of-future-average.md) | 56 | `result-track:4bac5a9cd8b8aaa6a4cd8c184286df4bba0a704a07442c08bbd4acd9b75107f0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

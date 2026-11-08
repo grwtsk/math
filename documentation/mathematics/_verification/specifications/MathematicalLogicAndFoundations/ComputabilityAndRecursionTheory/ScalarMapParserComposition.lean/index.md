@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ScalarMapParserComposition.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ScalarMapParserComposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ScalarMapParserComposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ScalarMapParserComposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.FoundationsLogicAndTypeTheory.Computability.RecursiveFunctions.ArrayParserComposition`](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ArrayParserComposition.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.Computability.RecursiveFunctions.ArrayParserComposition`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ArrayParserComposition.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [signed_no_separator](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ScalarMapParserComposition.lean/declarations/signed-no-separator.md) | 5 | `result-track:35926594ecf7552e7572264b9e3edee88dd15cf847bcd08e640551d35e88451f` |
-| 2 | `theorem` | [parse_int_suffix](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ScalarMapParserComposition.lean/declarations/parse-int-suffix.md) | 14 | `result-track:11431ce57a229c36eff4defb96ccd9ce6a7decdc177f1f95b758c2a740647e3e` |
-| 3 | `theorem` | [parse_rational_suffix](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ScalarMapParserComposition.lean/declarations/parse-rational-suffix.md) | 20 | `result-track:ba760118e2e6a24e99e218ab0931dc83bd12608bb4e2c1bb59c7620a43ccf434` |
-| 4 | `theorem` | [readPairs_emit_suffix](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ScalarMapParserComposition.lean/declarations/readpairs-emit-suffix.md) | 27 | `result-track:8ac51ce375cf0024471afe1c628e695d37d34f2be5dcf1ef233990347c31a3d3` |
-| 5 | `theorem` | [parse_map_suffix](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ScalarMapParserComposition.lean/declarations/parse-map-suffix.md) | 46 | `result-track:2f5fc6ea1d4fb3dba7d62562202e4796ca61630c8f14ee3dcb6fdeebf2758704` |
-| 6 | `theorem` | [parse_empty_map_suffix](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ScalarMapParserComposition.lean/declarations/parse-empty-map-suffix.md) | 61 | `result-track:0d976fb6648ad0da6012842c4c64bea67622133b2c932c316aad5e1e6ba690e7` |
+| 1 | `theorem` | [signed_no_separator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ScalarMapParserComposition.lean/declarations/signed-no-separator.md) | 5 | `result-track:35926594ecf7552e7572264b9e3edee88dd15cf847bcd08e640551d35e88451f` |
+| 2 | `theorem` | [parse_int_suffix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ScalarMapParserComposition.lean/declarations/parse-int-suffix.md) | 14 | `result-track:11431ce57a229c36eff4defb96ccd9ce6a7decdc177f1f95b758c2a740647e3e` |
+| 3 | `theorem` | [parse_rational_suffix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ScalarMapParserComposition.lean/declarations/parse-rational-suffix.md) | 20 | `result-track:ba760118e2e6a24e99e218ab0931dc83bd12608bb4e2c1bb59c7620a43ccf434` |
+| 4 | `theorem` | [readPairs_emit_suffix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ScalarMapParserComposition.lean/declarations/readpairs-emit-suffix.md) | 27 | `result-track:8ac51ce375cf0024471afe1c628e695d37d34f2be5dcf1ef233990347c31a3d3` |
+| 5 | `theorem` | [parse_map_suffix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ScalarMapParserComposition.lean/declarations/parse-map-suffix.md) | 46 | `result-track:2f5fc6ea1d4fb3dba7d62562202e4796ca61630c8f14ee3dcb6fdeebf2758704` |
+| 6 | `theorem` | [parse_empty_map_suffix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ScalarMapParserComposition.lean/declarations/parse-empty-map-suffix.md) | 61 | `result-track:0d976fb6648ad0da6012842c4c64bea67622133b2c932c316aad5e1e6ba690e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

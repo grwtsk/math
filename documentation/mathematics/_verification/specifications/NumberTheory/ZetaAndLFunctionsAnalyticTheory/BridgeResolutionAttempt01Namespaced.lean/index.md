@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeResolutionAttempt01Namespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeResolutionAttempt01Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeResolutionAttempt01Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeResolutionAttempt01Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bridgeResolutionCount](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeResolutionAttempt01Namespaced.lean/declarations/bridgeresolutioncount.md) | 20 | `declaration-track:e650dd68b043f0a397954842f50ef0012b8096724e023e8edeee96fe11d4bf6b` |
-| 2 | `theorem` | [bridgeResolutionCount_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeResolutionAttempt01Namespaced.lean/declarations/bridgeresolutioncount-pos.md) | 22 | `result-track:804fc6d3d60b5ce154ceb6d8d55a8d5d09967503a4182c23bbd2b08148b08fad` |
-| 3 | `theorem` | [bridgeResolutionCount_mono](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeResolutionAttempt01Namespaced.lean/declarations/bridgeresolutioncount-mono.md) | 26 | `result-track:2ff9376d8f8352e17e7113560f652295432a5c62979d1a907defa436b7c8996b` |
-| 4 | `theorem` | [actual_mesh_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeResolutionAttempt01Namespaced.lean/declarations/actual-mesh-error.md) | 34 | `result-track:43258ed7287e7a59f6f4a35535a1b02162dcf1c6b1040ac21b70ea939c696814` |
-| 5 | `theorem` | [selected_mesh_budget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeResolutionAttempt01Namespaced.lean/declarations/selected-mesh-budget.md) | 45 | `result-track:6e307f3046f7537112b14cb87a9a79963f1f09c7233147e8ed739cdadaafef2c` |
-| 6 | `theorem` | [actual_joint_mesh_accuracy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeResolutionAttempt01Namespaced.lean/declarations/actual-joint-mesh-accuracy.md) | 60 | `result-track:7616ba01f59a751066c6514811aabd4a522fa4ae2a431d78fc8d67d0ed504d45` |
+| 1 | `def` | [bridgeResolutionCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeResolutionAttempt01Namespaced.lean/declarations/bridgeresolutioncount.md) | 20 | `declaration-track:e650dd68b043f0a397954842f50ef0012b8096724e023e8edeee96fe11d4bf6b` |
+| 2 | `theorem` | [bridgeResolutionCount_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeResolutionAttempt01Namespaced.lean/declarations/bridgeresolutioncount-pos.md) | 22 | `result-track:804fc6d3d60b5ce154ceb6d8d55a8d5d09967503a4182c23bbd2b08148b08fad` |
+| 3 | `theorem` | [bridgeResolutionCount_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeResolutionAttempt01Namespaced.lean/declarations/bridgeresolutioncount-mono.md) | 26 | `result-track:2ff9376d8f8352e17e7113560f652295432a5c62979d1a907defa436b7c8996b` |
+| 4 | `theorem` | [actual_mesh_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeResolutionAttempt01Namespaced.lean/declarations/actual-mesh-error.md) | 34 | `result-track:43258ed7287e7a59f6f4a35535a1b02162dcf1c6b1040ac21b70ea939c696814` |
+| 5 | `theorem` | [selected_mesh_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeResolutionAttempt01Namespaced.lean/declarations/selected-mesh-budget.md) | 45 | `result-track:6e307f3046f7537112b14cb87a9a79963f1f09c7233147e8ed739cdadaafef2c` |
+| 6 | `theorem` | [actual_joint_mesh_accuracy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeResolutionAttempt01Namespaced.lean/declarations/actual-joint-mesh-accuracy.md) | 60 | `result-track:7616ba01f59a751066c6514811aabd4a522fa4ae2a431d78fc8d67d0ed504d45` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/RiemannZeroSymmetry.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/RiemannZeroSymmetry.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Algebra.Order.Archimedean.Basic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [RHThrough](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/declarations/rhthrough.md) | 19 | `declaration-track:8f020f4a3fafe74856a558fb232f61c363eb35f92272d6e89d0472b07bb18090` |
-| 2 | `theorem` | [riemannHypothesis_iff_all_heights](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/declarations/riemannhypothesis-iff-all-heights.md) | 22 | `result-track:8d08bbebf40ee742f74c93841baa711cfc413cb6fa6b821a1f0045bb64a7eab4` |
-| 3 | `theorem` | [RHThrough.mono](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/declarations/rhthrough-mono.md) | 31 | `result-track:902d8b1f9207051af43b9fec1468b0ccb389b35596a2e3140e4093a23c06b303` |
-| 4 | `structure` | [HeightScheme](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/declarations/heightscheme.md) | 36 | `declaration-track:f0937dd9eb3324f6952d07e036445e4df82f66d434dfd61df662ca4030829315` |
-| 5 | `def` | [HeightScheme.state](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/declarations/heightscheme-state.md) | 43 | `declaration-track:321815343228e87e2f6757226f72f9e8a7c8ae0c809bc7a38169894fb0a922c9` |
-| 6 | `theorem` | [HeightScheme.riemannHypothesis](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/declarations/heightscheme-riemannhypothesis.md) | 46 | `result-track:f0efca7b4e755eab24c04d582311d4f8f10136acd93c2fe0ba6dbb199f205664` |
-| 7 | `def` | [OffLineRectangle](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/declarations/offlinerectangle.md) | 51 | `declaration-track:985f0871b5f13ce22b35842da89fdf463a26d7707b3b7b2c024ff069c5d3e40f` |
-| 8 | `theorem` | [riemannHypothesis_iff_rectangle_exclusion](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/declarations/riemannhypothesis-iff-rectangle-exclusion.md) | 55 | `result-track:50165ad114c6bacf45e3be07b0af27994122176c023d09d8ce2899cdeaedb3ea` |
+| 1 | `def` | [RHThrough](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/declarations/rhthrough.md) | 19 | `declaration-track:8f020f4a3fafe74856a558fb232f61c363eb35f92272d6e89d0472b07bb18090` |
+| 2 | `theorem` | [riemannHypothesis_iff_all_heights](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/declarations/riemannhypothesis-iff-all-heights.md) | 22 | `result-track:8d08bbebf40ee742f74c93841baa711cfc413cb6fa6b821a1f0045bb64a7eab4` |
+| 3 | `theorem` | [RHThrough.mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/declarations/rhthrough-mono.md) | 31 | `result-track:902d8b1f9207051af43b9fec1468b0ccb389b35596a2e3140e4093a23c06b303` |
+| 4 | `structure` | [HeightScheme](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/declarations/heightscheme.md) | 36 | `declaration-track:f0937dd9eb3324f6952d07e036445e4df82f66d434dfd61df662ca4030829315` |
+| 5 | `def` | [HeightScheme.state](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/declarations/heightscheme-state.md) | 43 | `declaration-track:321815343228e87e2f6757226f72f9e8a7c8ae0c809bc7a38169894fb0a922c9` |
+| 6 | `theorem` | [HeightScheme.riemannHypothesis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/declarations/heightscheme-riemannhypothesis.md) | 46 | `result-track:f0efca7b4e755eab24c04d582311d4f8f10136acd93c2fe0ba6dbb199f205664` |
+| 7 | `def` | [OffLineRectangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/declarations/offlinerectangle.md) | 51 | `declaration-track:985f0871b5f13ce22b35842da89fdf463a26d7707b3b7b2c024ff069c5d3e40f` |
+| 8 | `theorem` | [riemannHypothesis_iff_rectangle_exclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/declarations/riemannhypothesis-iff-rectangle-exclusion.md) | 55 | `result-track:50165ad114c6bacf45e3be07b0af27994122176c023d09d8ce2899cdeaedb3ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

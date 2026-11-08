@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePartialIso.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePartialIso.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePartialIso.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePartialIso.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FinitePartialIsoData](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePartialIso.lean/declarations/finitepartialisodata.md) | 21 | `declaration-track:046e60d4f910232a79bcc42af476d152eed35c19ed4e2967889d0b9d0076bb99` |
-| 2 | `theorem` | [finitePartialIso_domain_nodup](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePartialIso.lean/declarations/finitepartialiso-domain-nodup.md) | 37 | `result-track:bf9954bbe5b9228f064b241689ca0e080e7ccb80b28edd8785cf58e3e1c2761d` |
-| 3 | `theorem` | [finitePartialIso_image_nodup](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePartialIso.lean/declarations/finitepartialiso-image-nodup.md) | 42 | `result-track:f9e804bd619669e066ff9e32903a84cb90f07619c37c70d206723a8d77bf4125` |
-| 4 | `theorem` | [finitePartialIso_maps_domain_to_image](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePartialIso.lean/declarations/finitepartialiso-maps-domain-to-image.md) | 47 | `result-track:ee2c1aa5420a5affeea3da820c058959b76d49d03bcee86328ef7a2953395650` |
-| 5 | `theorem` | [finitePartialIso_preserves_listed_edges](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePartialIso.lean/declarations/finitepartialiso-preserves-listed-edges.md) | 54 | `result-track:7241e62e533732284a4e68743d4e53a3177d98b73bf9e98426100537753b9e3e` |
-| 6 | `theorem` | [finitePartialIso_source_edge_to_bitRadoEdge](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePartialIso.lean/declarations/finitepartialiso-source-edge-to-bitradoedge.md) | 63 | `result-track:7e5a40516a3121e51bb582660d0bf4c4b799f372adb1155579b5d3c51ae1eb18` |
-| 7 | `theorem` | [finitePartialIso_bitRadoEdge_to_source_edge](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePartialIso.lean/declarations/finitepartialiso-bitradoedge-to-source-edge.md) | 73 | `result-track:5133cccde5daa4c86bda4a025db9b0ee3320091c386c2f27c8908c4a99fc1ee5` |
+| 1 | `structure` | [FinitePartialIsoData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePartialIso.lean/declarations/finitepartialisodata.md) | 21 | `declaration-track:046e60d4f910232a79bcc42af476d152eed35c19ed4e2967889d0b9d0076bb99` |
+| 2 | `theorem` | [finitePartialIso_domain_nodup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePartialIso.lean/declarations/finitepartialiso-domain-nodup.md) | 37 | `result-track:bf9954bbe5b9228f064b241689ca0e080e7ccb80b28edd8785cf58e3e1c2761d` |
+| 3 | `theorem` | [finitePartialIso_image_nodup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePartialIso.lean/declarations/finitepartialiso-image-nodup.md) | 42 | `result-track:f9e804bd619669e066ff9e32903a84cb90f07619c37c70d206723a8d77bf4125` |
+| 4 | `theorem` | [finitePartialIso_maps_domain_to_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePartialIso.lean/declarations/finitepartialiso-maps-domain-to-image.md) | 47 | `result-track:ee2c1aa5420a5affeea3da820c058959b76d49d03bcee86328ef7a2953395650` |
+| 5 | `theorem` | [finitePartialIso_preserves_listed_edges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePartialIso.lean/declarations/finitepartialiso-preserves-listed-edges.md) | 54 | `result-track:7241e62e533732284a4e68743d4e53a3177d98b73bf9e98426100537753b9e3e` |
+| 6 | `theorem` | [finitePartialIso_source_edge_to_bitRadoEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePartialIso.lean/declarations/finitepartialiso-source-edge-to-bitradoedge.md) | 63 | `result-track:7e5a40516a3121e51bb582660d0bf4c4b799f372adb1155579b5d3c51ae1eb18` |
+| 7 | `theorem` | [finitePartialIso_bitRadoEdge_to_source_edge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePartialIso.lean/declarations/finitepartialiso-bitradoedge-to-source-edge.md) | 73 | `result-track:5133cccde5daa4c86bda4a025db9b0ee3320091c386c2f27c8908c4a99fc1ee5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

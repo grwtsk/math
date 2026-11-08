@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/FactorialBigOperatorsNamespacedMonotoneFactorial.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/FactorialBigOperatorsNamespacedMonotoneFactorial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialBigOperatorsNamespacedMonotoneFactorial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialBigOperatorsNamespacedMonotoneFactorial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [monotone_factorial](../../../../../NumberTheory/ElementaryNumberTheory/FactorialBigOperatorsNamespacedMonotoneFactorial.lean/declarations/monotone-factorial.md) | 33 | `result-track:6d65b8782aab058e0b238eb7bdb3884245f5998c082ca75dddd5248a5bc63763` |
-| 2 | `theorem` | [prod_factorial_pos](../../../../../NumberTheory/ElementaryNumberTheory/FactorialBigOperatorsNamespacedMonotoneFactorial.lean/declarations/prod-factorial-pos.md) | 37 | `result-track:1f09deed3bdafc888e9653f52e435af83fdd214e7aa016a96faefac15a0063a7` |
-| 3 | `theorem` | [prod_factorial_dvd_factorial_sum](../../../../../NumberTheory/ElementaryNumberTheory/FactorialBigOperatorsNamespacedMonotoneFactorial.lean/declarations/prod-factorial-dvd-factorial-sum.md) | 39 | `result-track:14bc175fa1f645fc276277758ba0d54bf835c3e94d62e34dea3934c113a64531` |
-| 4 | `theorem` | [ascFactorial_eq_prod_range](../../../../../NumberTheory/ElementaryNumberTheory/FactorialBigOperatorsNamespacedMonotoneFactorial.lean/declarations/ascfactorial-eq-prod-range.md) | 45 | `result-track:0a5001afc984620165324ce3a5f3ce64a25914f8ef91a9a4b0cefb13a78c9f82` |
-| 5 | `theorem` | [descFactorial_eq_prod_range](../../../../../NumberTheory/ElementaryNumberTheory/FactorialBigOperatorsNamespacedMonotoneFactorial.lean/declarations/descfactorial-eq-prod-range.md) | 49 | `result-track:b33d3c0dac851e85cb62e453f261dfc434eb731fb081a6522b83714cd7e112b1` |
-| 6 | `lemma` | [factorial_coe_dvd_prod](../../../../../NumberTheory/ElementaryNumberTheory/FactorialBigOperatorsNamespacedMonotoneFactorial.lean/declarations/factorial-coe-dvd-prod.md) | 54 | `result-track:71e5805f388dde5b7878e22147c2248241705e4342982e036c19ab0e3ff73710` |
+| 1 | `lemma` | [monotone_factorial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialBigOperatorsNamespacedMonotoneFactorial.lean/declarations/monotone-factorial.md) | 33 | `result-track:6d65b8782aab058e0b238eb7bdb3884245f5998c082ca75dddd5248a5bc63763` |
+| 2 | `theorem` | [prod_factorial_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialBigOperatorsNamespacedMonotoneFactorial.lean/declarations/prod-factorial-pos.md) | 37 | `result-track:1f09deed3bdafc888e9653f52e435af83fdd214e7aa016a96faefac15a0063a7` |
+| 3 | `theorem` | [prod_factorial_dvd_factorial_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialBigOperatorsNamespacedMonotoneFactorial.lean/declarations/prod-factorial-dvd-factorial-sum.md) | 39 | `result-track:14bc175fa1f645fc276277758ba0d54bf835c3e94d62e34dea3934c113a64531` |
+| 4 | `theorem` | [ascFactorial_eq_prod_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialBigOperatorsNamespacedMonotoneFactorial.lean/declarations/ascfactorial-eq-prod-range.md) | 45 | `result-track:0a5001afc984620165324ce3a5f3ce64a25914f8ef91a9a4b0cefb13a78c9f82` |
+| 5 | `theorem` | [descFactorial_eq_prod_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialBigOperatorsNamespacedMonotoneFactorial.lean/declarations/descfactorial-eq-prod-range.md) | 49 | `result-track:b33d3c0dac851e85cb62e453f261dfc434eb731fb081a6522b83714cd7e112b1` |
+| 6 | `lemma` | [factorial_coe_dvd_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialBigOperatorsNamespacedMonotoneFactorial.lean/declarations/factorial-coe-dvd-prod.md) | 54 | `result-track:71e5805f388dde5b7878e22147c2248241705e4342982e036c19ab0e3ff73710` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

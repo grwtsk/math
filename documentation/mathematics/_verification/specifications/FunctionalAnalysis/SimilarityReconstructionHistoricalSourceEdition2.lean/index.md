@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SimilarityReconstructionHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SimilarityReconstructionHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SimilarityReconstructionHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SimilarityReconstructionHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Mathlib.Analysis.Normed.Ring.Basic` — import line 1; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.GCongr` — import line 2; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Analysis.AsymptoticAnalysis.SublinearDyadic`](../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SublinearDyadic.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.AsymptoticAnalysis.SublinearDyadic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SublinearDyadic.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [source_eq](../../../../FunctionalAnalysis/SimilarityReconstructionHistoricalSourceEdition2.lean/declarations/source-eq.md) | 18 | `result-track:99cf9150fcfb285d7f9b44ccee98f590361cc72700f3e3851860c860f9a904d0` |
-| 2 | `theorem` | [norm_return](../../../../FunctionalAnalysis/SimilarityReconstructionHistoricalSourceEdition2.lean/declarations/norm-return.md) | 26 | `result-track:f37a16d0d538cc438d545d20ee95a944d4fc047fb64d5244dbbb954e80b55434` |
-| 3 | `theorem` | [log_budget](../../../../FunctionalAnalysis/SimilarityReconstructionHistoricalSourceEdition2.lean/declarations/log-budget.md) | 39 | `result-track:ed38e458b6c9625ddadf55aae9059d5464c9a99cbfbad0c450e6c682140a8960` |
-| 4 | `theorem` | [relative_upperSublinear](../../../../FunctionalAnalysis/SimilarityReconstructionHistoricalSourceEdition2.lean/declarations/relative-uppersublinear.md) | 48 | `result-track:2c46e377e1320ba30ed63775581e6fe9cfa19013e5027d6311128d70a9ee6aee` |
-| 5 | `theorem` | [sublinear_log_of_tensor_budget](../../../../FunctionalAnalysis/SimilarityReconstructionHistoricalSourceEdition2.lean/declarations/sublinear-log-of-tensor-budget.md) | 59 | `result-track:b75960fdbe7f83d94596b9cce9f8fe8e83a592af2133332f0ae60421e19cdca4` |
+| 1 | `theorem` | [source_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SimilarityReconstructionHistoricalSourceEdition2.lean/declarations/source-eq.md) | 18 | `result-track:99cf9150fcfb285d7f9b44ccee98f590361cc72700f3e3851860c860f9a904d0` |
+| 2 | `theorem` | [norm_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SimilarityReconstructionHistoricalSourceEdition2.lean/declarations/norm-return.md) | 26 | `result-track:f37a16d0d538cc438d545d20ee95a944d4fc047fb64d5244dbbb954e80b55434` |
+| 3 | `theorem` | [log_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SimilarityReconstructionHistoricalSourceEdition2.lean/declarations/log-budget.md) | 39 | `result-track:ed38e458b6c9625ddadf55aae9059d5464c9a99cbfbad0c450e6c682140a8960` |
+| 4 | `theorem` | [relative_upperSublinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SimilarityReconstructionHistoricalSourceEdition2.lean/declarations/relative-uppersublinear.md) | 48 | `result-track:2c46e377e1320ba30ed63775581e6fe9cfa19013e5027d6311128d70a9ee6aee` |
+| 5 | `theorem` | [sublinear_log_of_tensor_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SimilarityReconstructionHistoricalSourceEdition2.lean/declarations/sublinear-log-of-tensor-budget.md) | 59 | `result-track:b75960fdbe7f83d94596b9cce9f8fe8e83a592af2133332f0ae60421e19cdca4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

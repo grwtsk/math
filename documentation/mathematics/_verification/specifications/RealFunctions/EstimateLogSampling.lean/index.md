@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/EstimateLogSampling.lean/index.md) · [Full source](../../../../RealFunctions/EstimateLogSampling.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EstimateLogSampling.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EstimateLogSampling.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [logSamplingTerm](../../../../RealFunctions/EstimateLogSampling.lean/declarations/logsamplingterm.md) | 32 | `declaration-track:93bd5ce08dc0619b35fedc6c6707b478ba986dd0d142f0ce02c8ceeef278b97d` |
-| 2 | `def` | [logSamplingDerivative](../../../../RealFunctions/EstimateLogSampling.lean/declarations/logsamplingderivative.md) | 37 | `declaration-track:26ee2c2fa8944252b6ff044478a0600e455f7376390134385166da3b7ace3dca` |
-| 3 | `theorem` | [logSamplingTerm_contDiffOn_pos](../../../../RealFunctions/EstimateLogSampling.lean/declarations/logsamplingterm-contdiffon-pos.md) | 44 | `result-track:ce896afd8cb682f7ddc105639ca1f38ceec6efbf9bff0b621d70246133fd6f73` |
-| 4 | `theorem` | [logSamplingTerm_hasDerivAt](../../../../RealFunctions/EstimateLogSampling.lean/declarations/logsamplingterm-hasderivat.md) | 74 | `result-track:32bed25f14443fd813062c3e9b305e4ba81e0225364f4f0a378c7eda18bd96c3` |
-| 5 | `theorem` | [deriv_logSamplingTerm](../../../../RealFunctions/EstimateLogSampling.lean/declarations/deriv-logsamplingterm.md) | 115 | `result-track:1c60c2f42331b4f30da70d187aee8b3ab8eb0c7f708f52ccd7f4b80f9a95df41` |
-| 6 | `theorem` | [logSamplingTerm_source_eq](../../../../RealFunctions/EstimateLogSampling.lean/declarations/logsamplingterm-source-eq.md) | 124 | `result-track:fd8e0c1d8e62acc5b495c1bc5b35dabdf9a9674ce62ad41c8311e85d9fe0147b` |
-| 7 | `theorem` | [leftSampleSum_source_eq](../../../../RealFunctions/EstimateLogSampling.lean/declarations/leftsamplesum-source-eq.md) | 137 | `result-track:4f44c5f59ebc42331ae8dfb9991b024d2c7813c162ecc177c23ce82100030c74` |
-| 8 | `def` | [ProfileSupBounds](../../../../RealFunctions/EstimateLogSampling.lean/declarations/profilesupbounds.md) | 153 | `declaration-track:4cbfc6fee252266d4d4698a7639755be54acf1114bce0909de43b145733747a5` |
-| 9 | `def` | [logSamplingDerivativeMajorant](../../../../RealFunctions/EstimateLogSampling.lean/declarations/logsamplingderivativemajorant.md) | 159 | `declaration-track:2fc3a9a14b01f91644c34a855ef86d1b3f058b0622b418d5d77d4a8b06b8b4b2` |
-| 10 | `theorem` | [abs_logSamplingDerivative_le](../../../../RealFunctions/EstimateLogSampling.lean/declarations/abs-logsamplingderivative-le.md) | 167 | `result-track:15a7e846fec6ad2d2477a9e9aea5c2336abf115450392427bc21ffbd0e31de06` |
-| 11 | `def` | [LogSamplingCheckpoint](../../../../RealFunctions/EstimateLogSampling.lean/declarations/logsamplingcheckpoint.md) | 233 | `declaration-track:466f0c4ac8f0af4489da8ff4efc39c0bc57ebb9a7081ba9ffd256e9a2795ad6a` |
-| 12 | `theorem` | [log_sampling_checkpoint](../../../../RealFunctions/EstimateLogSampling.lean/declarations/log-sampling-checkpoint.md) | 247 | `result-track:57b957ffe777046b81eed83f9446d1b835a55f2876abf9e11adaed2b9d83b83a` |
+| 1 | `def` | [logSamplingTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EstimateLogSampling.lean/declarations/logsamplingterm.md) | 32 | `declaration-track:93bd5ce08dc0619b35fedc6c6707b478ba986dd0d142f0ce02c8ceeef278b97d` |
+| 2 | `def` | [logSamplingDerivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EstimateLogSampling.lean/declarations/logsamplingderivative.md) | 37 | `declaration-track:26ee2c2fa8944252b6ff044478a0600e455f7376390134385166da3b7ace3dca` |
+| 3 | `theorem` | [logSamplingTerm_contDiffOn_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EstimateLogSampling.lean/declarations/logsamplingterm-contdiffon-pos.md) | 44 | `result-track:ce896afd8cb682f7ddc105639ca1f38ceec6efbf9bff0b621d70246133fd6f73` |
+| 4 | `theorem` | [logSamplingTerm_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EstimateLogSampling.lean/declarations/logsamplingterm-hasderivat.md) | 74 | `result-track:32bed25f14443fd813062c3e9b305e4ba81e0225364f4f0a378c7eda18bd96c3` |
+| 5 | `theorem` | [deriv_logSamplingTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EstimateLogSampling.lean/declarations/deriv-logsamplingterm.md) | 115 | `result-track:1c60c2f42331b4f30da70d187aee8b3ab8eb0c7f708f52ccd7f4b80f9a95df41` |
+| 6 | `theorem` | [logSamplingTerm_source_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EstimateLogSampling.lean/declarations/logsamplingterm-source-eq.md) | 124 | `result-track:fd8e0c1d8e62acc5b495c1bc5b35dabdf9a9674ce62ad41c8311e85d9fe0147b` |
+| 7 | `theorem` | [leftSampleSum_source_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EstimateLogSampling.lean/declarations/leftsamplesum-source-eq.md) | 137 | `result-track:4f44c5f59ebc42331ae8dfb9991b024d2c7813c162ecc177c23ce82100030c74` |
+| 8 | `def` | [ProfileSupBounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EstimateLogSampling.lean/declarations/profilesupbounds.md) | 153 | `declaration-track:4cbfc6fee252266d4d4698a7639755be54acf1114bce0909de43b145733747a5` |
+| 9 | `def` | [logSamplingDerivativeMajorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EstimateLogSampling.lean/declarations/logsamplingderivativemajorant.md) | 159 | `declaration-track:2fc3a9a14b01f91644c34a855ef86d1b3f058b0622b418d5d77d4a8b06b8b4b2` |
+| 10 | `theorem` | [abs_logSamplingDerivative_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EstimateLogSampling.lean/declarations/abs-logsamplingderivative-le.md) | 167 | `result-track:15a7e846fec6ad2d2477a9e9aea5c2336abf115450392427bc21ffbd0e31de06` |
+| 11 | `def` | [LogSamplingCheckpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EstimateLogSampling.lean/declarations/logsamplingcheckpoint.md) | 233 | `declaration-track:466f0c4ac8f0af4489da8ff4efc39c0bc57ebb9a7081ba9ffd256e9a2795ad6a` |
+| 12 | `theorem` | [log_sampling_checkpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EstimateLogSampling.lean/declarations/log-sampling-checkpoint.md) | 247 | `result-track:57b957ffe777046b81eed83f9446d1b835a55f2876abf9e11adaed2b9d83b83a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

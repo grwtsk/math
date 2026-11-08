@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremConeStyle.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremConeStyle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremConeStyle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremConeStyle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TheoremConeId](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremConeStyle.lean/declarations/theoremconeid.md) | 13 | `declaration-track:190ea442188a8ed45cf693bcb5b3ed455a39993280080de562dbe6147d2ad951` |
-| 2 | `structure` | [AnnalsTheoremPage](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremConeStyle.lean/declarations/annalstheorempage.md) | 27 | `declaration-track:1029f8d07ff5ae99920a2b37fb68452c2089fe0517fad54f551802a49c513486` |
-| 3 | `def` | [AnnalsTheoremPage.hasExactStatement](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremConeStyle.lean/declarations/annalstheorempage-hasexactstatement.md) | 41 | `declaration-track:4d4870004a8c55b10c0b225edc2554af67c4f8d058c2dc938048f73ccc67aac6` |
-| 4 | `def` | [AnnalsTheoremPage.hasNonclaimBoundary](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremConeStyle.lean/declarations/annalstheorempage-hasnonclaimboundary.md) | 46 | `declaration-track:1bb078a511b63d3706d446c2699d5da8c6f6cfe8ecb6ff233412784d11b4ec79` |
-| 5 | `theorem` | [AnnalsTheoremPage.refereeStyle_of_fields](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremConeStyle.lean/declarations/annalstheorempage-refereestyle-of-fields.md) | 51 | `result-track:aec088d3890e84101113b9184b00c92fecb0e5f1c26d44f72d511fdec745d5e8` |
+| 1 | `inductive` | [TheoremConeId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremConeStyle.lean/declarations/theoremconeid.md) | 13 | `declaration-track:190ea442188a8ed45cf693bcb5b3ed455a39993280080de562dbe6147d2ad951` |
+| 2 | `structure` | [AnnalsTheoremPage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremConeStyle.lean/declarations/annalstheorempage.md) | 27 | `declaration-track:1029f8d07ff5ae99920a2b37fb68452c2089fe0517fad54f551802a49c513486` |
+| 3 | `def` | [AnnalsTheoremPage.hasExactStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremConeStyle.lean/declarations/annalstheorempage-hasexactstatement.md) | 41 | `declaration-track:4d4870004a8c55b10c0b225edc2554af67c4f8d058c2dc938048f73ccc67aac6` |
+| 4 | `def` | [AnnalsTheoremPage.hasNonclaimBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremConeStyle.lean/declarations/annalstheorempage-hasnonclaimboundary.md) | 46 | `declaration-track:1bb078a511b63d3706d446c2699d5da8c6f6cfe8ecb6ff233412784d11b4ec79` |
+| 5 | `theorem` | [AnnalsTheoremPage.refereeStyle_of_fields](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremConeStyle.lean/declarations/annalstheorempage-refereestyle-of-fields.md) | 51 | `result-track:aec088d3890e84101113b9184b00c92fecb0e5f1c26d44f72d511fdec745d5e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

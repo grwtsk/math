@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AdicCompletionExactnessExactness.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AdicCompletionExactnessExactness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionExactnessExactness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionExactnessExactness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mapPreimageDelta](../../../../CommutativeAlgebra/AdicCompletionExactnessExactness.lean/declarations/mappreimagedelta.md) | 46 | `declaration-track:bd7f69133cdeceef012dc46189f9cfdc5980bc0079c7c397bc181986bc87d0c6` |
-| 2 | `def` | [mapPreimage](../../../../CommutativeAlgebra/AdicCompletionExactnessExactness.lean/declarations/mappreimage.md) | 56 | `declaration-track:4f9921654103aa723f7e8d5fe16337be18336fe5c8204e6ee1770d09786b822a` |
-| 3 | `theorem` | [map_surjective](../../../../CommutativeAlgebra/AdicCompletionExactnessExactness.lean/declarations/map-surjective.md) | 68 | `result-track:be83c7f9a2b2b7774ddb0c2b8de1d1ce52e179c0a177fdbfd712eb7457454fdc` |
-| 4 | `theorem` | [map_injective](../../../../CommutativeAlgebra/AdicCompletionExactnessExactness.lean/declarations/map-injective.md) | 90 | `result-track:353c97ee37387132ac2ee3502302807799c87a52985ab058d0c10ed772bbaf31` |
-| 5 | `def` | [mapExactAuxDelta](../../../../CommutativeAlgebra/AdicCompletionExactnessExactness.lean/declarations/mapexactauxdelta.md) | 122 | `declaration-track:803d858601dd527b62a224828739ad3ef20aa999fc146eae962eb87820f64b3a` |
-| 6 | `def` | [mapExactAux](../../../../CommutativeAlgebra/AdicCompletionExactnessExactness.lean/declarations/mapexactaux.md) | 151 | `declaration-track:1ee1251fc02c78d49d19e4fd316be115e2ad85e644472ac166a8e4f98ed740be` |
-| 7 | `theorem` | [map_exact](../../../../CommutativeAlgebra/AdicCompletionExactnessExactness.lean/declarations/map-exact.md) | 182 | `result-track:40f318fd3aa1b435b481b5cb0d3275bec299e8ce2873a1e5d1df2710dbce043a` |
+| 1 | `def` | [mapPreimageDelta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionExactnessExactness.lean/declarations/mappreimagedelta.md) | 46 | `declaration-track:bd7f69133cdeceef012dc46189f9cfdc5980bc0079c7c397bc181986bc87d0c6` |
+| 2 | `def` | [mapPreimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionExactnessExactness.lean/declarations/mappreimage.md) | 56 | `declaration-track:4f9921654103aa723f7e8d5fe16337be18336fe5c8204e6ee1770d09786b822a` |
+| 3 | `theorem` | [map_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionExactnessExactness.lean/declarations/map-surjective.md) | 68 | `result-track:be83c7f9a2b2b7774ddb0c2b8de1d1ce52e179c0a177fdbfd712eb7457454fdc` |
+| 4 | `theorem` | [map_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionExactnessExactness.lean/declarations/map-injective.md) | 90 | `result-track:353c97ee37387132ac2ee3502302807799c87a52985ab058d0c10ed772bbaf31` |
+| 5 | `def` | [mapExactAuxDelta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionExactnessExactness.lean/declarations/mapexactauxdelta.md) | 122 | `declaration-track:803d858601dd527b62a224828739ad3ef20aa999fc146eae962eb87820f64b3a` |
+| 6 | `def` | [mapExactAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionExactnessExactness.lean/declarations/mapexactaux.md) | 151 | `declaration-track:1ee1251fc02c78d49d19e4fd316be115e2ad85e644472ac166a8e4f98ed740be` |
+| 7 | `theorem` | [map_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionExactnessExactness.lean/declarations/map-exact.md) | 182 | `result-track:40f318fd3aa1b435b481b5cb0d3275bec299e8ce2873a1e5d1df2710dbce043a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

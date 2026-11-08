@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDTwistWitness.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDTwistWitness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDTwistWitness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDTwistWitness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [QuadraticTwistFamilyWitness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDTwistWitness.lean/declarations/quadratictwistfamilywitness.md) | 24 | `declaration-track:0a4eacd1f2fcb58ec624ab35f10a31ff2cdc4172a9a92b9996b6a0fc1ba8b7f9` |
-| 2 | `def` | [AllTwistsCertified](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDTwistWitness.lean/declarations/alltwistscertified.md) | 37 | `declaration-track:2761b15416efdf4ba373fa8d3662a0e4713397cf4886697aae774ff7a289e3d6` |
-| 3 | `structure` | [CertifiedQuadraticTwistFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDTwistWitness.lean/declarations/certifiedquadratictwistfamily.md) | 41 | `declaration-track:dd5078f0ad2e97b322fa007693dd39bb72c96f7441dfa0aa0c8d8feab9ff7568` |
-| 4 | `theorem` | [certified_twist_family_all_certified](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDTwistWitness.lean/declarations/certified-twist-family-all-certified.md) | 46 | `result-track:b92963b3e23f7b169ad1f69f839448274f78dc09b829ab4cb2a3713226a283c4` |
-| 5 | `theorem` | [certified_twist_family_infinite](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDTwistWitness.lean/declarations/certified-twist-family-infinite.md) | 51 | `result-track:2418c2eda311683ee2d2da458b7314fd5208a96d64f037d8c0be22c710cd41f5` |
-| 6 | `structure` | [BSDMonodromyParameterSource](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDTwistWitness.lean/declarations/bsdmonodromyparametersource.md) | 56 | `declaration-track:1cd4ea3e5477895deaf71aefc36c01e3da05965cf0039e9998bf33d9f6dcb2c7` |
+| 1 | `structure` | [QuadraticTwistFamilyWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDTwistWitness.lean/declarations/quadratictwistfamilywitness.md) | 24 | `declaration-track:0a4eacd1f2fcb58ec624ab35f10a31ff2cdc4172a9a92b9996b6a0fc1ba8b7f9` |
+| 2 | `def` | [AllTwistsCertified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDTwistWitness.lean/declarations/alltwistscertified.md) | 37 | `declaration-track:2761b15416efdf4ba373fa8d3662a0e4713397cf4886697aae774ff7a289e3d6` |
+| 3 | `structure` | [CertifiedQuadraticTwistFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDTwistWitness.lean/declarations/certifiedquadratictwistfamily.md) | 41 | `declaration-track:dd5078f0ad2e97b322fa007693dd39bb72c96f7441dfa0aa0c8d8feab9ff7568` |
+| 4 | `theorem` | [certified_twist_family_all_certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDTwistWitness.lean/declarations/certified-twist-family-all-certified.md) | 46 | `result-track:b92963b3e23f7b169ad1f69f839448274f78dc09b829ab4cb2a3713226a283c4` |
+| 5 | `theorem` | [certified_twist_family_infinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDTwistWitness.lean/declarations/certified-twist-family-infinite.md) | 51 | `result-track:2418c2eda311683ee2d2da458b7314fd5208a96d64f037d8c0be22c710cd41f5` |
+| 6 | `structure` | [BSDMonodromyParameterSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDTwistWitness.lean/declarations/bsdmonodromyparametersource.md) | 56 | `declaration-track:1cd4ea3e5477895deaf71aefc36c01e3da05965cf0039e9998bf33d9f6dcb2c7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

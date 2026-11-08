@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingPointwiseSetPublic.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingPointwiseSetPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingPointwiseSetPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingPointwiseSetPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [hasDistribNeg](../../../../AssociativeRingsAndAlgebras/RingPointwiseSetPublic.lean/declarations/hasdistribneg.md) | 34 | `declaration-track:962d490cf2d66ee5c85af0039276ce02a7d3d3b7d17c36954dc5cc472cac7dd5` |
-| 2 | `lemma` | [mul_add_subset](../../../../AssociativeRingsAndAlgebras/RingPointwiseSetPublic.lean/declarations/mul-add-subset.md) | 49 | `result-track:32dd89b1d43a59ef236215ed1760420142720c94ac1f0849139446ecf1823142` |
-| 3 | `lemma` | [add_mul_subset](../../../../AssociativeRingsAndAlgebras/RingPointwiseSetPublic.lean/declarations/add-mul-subset.md) | 50 | `result-track:82c023dd11c44c27738597a1db1b56b45300d801f37f4b8c2a0d2db2c5449f17` |
+| 1 | `def` | [hasDistribNeg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingPointwiseSetPublic.lean/declarations/hasdistribneg.md) | 34 | `declaration-track:962d490cf2d66ee5c85af0039276ce02a7d3d3b7d17c36954dc5cc472cac7dd5` |
+| 2 | `lemma` | [mul_add_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingPointwiseSetPublic.lean/declarations/mul-add-subset.md) | 49 | `result-track:32dd89b1d43a59ef236215ed1760420142720c94ac1f0849139446ecf1823142` |
+| 3 | `lemma` | [add_mul_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingPointwiseSetPublic.lean/declarations/add-mul-subset.md) | 50 | `result-track:82c023dd11c44c27738597a1db1b56b45300d801f37f4b8c2a0d2db2c5449f17` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

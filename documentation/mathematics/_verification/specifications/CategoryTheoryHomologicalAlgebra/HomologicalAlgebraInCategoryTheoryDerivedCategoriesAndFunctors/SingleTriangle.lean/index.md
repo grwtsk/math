@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangle.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [singleδ](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangle.lean/declarations/single.md) | 41 | `declaration-track:80c6087cd6ca09c3d7f8a2ebdb821b75e1126ee29fec524f1cd4aff61dd4be1c` |
-| 2 | `def` | [singleTriangle](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangle.lean/declarations/singletriangle.md) | 51 | `declaration-track:06509bde3f2bebf6d3160a093f140731d932791c41d07c57bacd298ad9591273` |
-| 3 | `def` | [singleTriangleIso](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangle.lean/declarations/singletriangleiso.md) | 60 | `declaration-track:260881629e57ffe582b81f056d2433afd9e35121e3707ae61463bc3af4a784d0` |
-| 4 | `lemma` | [singleTriangle_distinguished](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangle.lean/declarations/singletriangle-distinguished.md) | 74 | `result-track:cafdda814988ed77520f10545599f4834c3a0efb0ca1b435d927d1595e51cb84` |
+| 1 | `def` | [singleδ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangle.lean/declarations/single.md) | 41 | `declaration-track:80c6087cd6ca09c3d7f8a2ebdb821b75e1126ee29fec524f1cd4aff61dd4be1c` |
+| 2 | `def` | [singleTriangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangle.lean/declarations/singletriangle.md) | 51 | `declaration-track:06509bde3f2bebf6d3160a093f140731d932791c41d07c57bacd298ad9591273` |
+| 3 | `def` | [singleTriangleIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangle.lean/declarations/singletriangleiso.md) | 60 | `declaration-track:260881629e57ffe582b81f056d2433afd9e35121e3707ae61463bc3af4a784d0` |
+| 4 | `lemma` | [singleTriangle_distinguished](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangle.lean/declarations/singletriangle-distinguished.md) | 74 | `result-track:cafdda814988ed77520f10545599f4834c3a0efb0ca1b435d927d1595e51cb84` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

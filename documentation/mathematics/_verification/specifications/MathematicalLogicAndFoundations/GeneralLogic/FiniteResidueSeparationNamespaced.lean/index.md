@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteResidueSeparationNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteResidueSeparationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteResidueSeparationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteResidueSeparationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FiniteResidueSeparationStatement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteResidueSeparationNamespaced.lean/declarations/finiteresidueseparationstatement.md) | 28 | `declaration-track:240befc13d78c5bacf350a6fe3f76b486840b804d51a1535ea6f91b0c21532c1` |
-| 2 | `def` | [finiteResidueSeparationOpenElement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteResidueSeparationNamespaced.lean/declarations/finiteresidueseparationopenelement.md) | 43 | `declaration-track:c289603558e10a26c0582fc06085745d1183fb07589f467638c383088aae2d48` |
-| 3 | `theorem` | [finiteResidueSeparation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteResidueSeparationNamespaced.lean/declarations/finiteresidueseparation.md) | 63 | `result-track:e9a53b15fc09639da5685468e2e4b970b4ffbec585a0342aaa9fdcc4a00f1879` |
-| 4 | `def` | [finiteResidueSeparationTheoremElement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteResidueSeparationNamespaced.lean/declarations/finiteresidueseparationtheoremelement.md) | 96 | `declaration-track:1a98b14c07cb4f66ce32562dc5f3b1b8b5f127bc12d7cbe6105e4af181ba3139` |
+| 1 | `def` | [FiniteResidueSeparationStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteResidueSeparationNamespaced.lean/declarations/finiteresidueseparationstatement.md) | 28 | `declaration-track:240befc13d78c5bacf350a6fe3f76b486840b804d51a1535ea6f91b0c21532c1` |
+| 2 | `def` | [finiteResidueSeparationOpenElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteResidueSeparationNamespaced.lean/declarations/finiteresidueseparationopenelement.md) | 43 | `declaration-track:c289603558e10a26c0582fc06085745d1183fb07589f467638c383088aae2d48` |
+| 3 | `theorem` | [finiteResidueSeparation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteResidueSeparationNamespaced.lean/declarations/finiteresidueseparation.md) | 63 | `result-track:e9a53b15fc09639da5685468e2e4b970b4ffbec585a0342aaa9fdcc4a00f1879` |
+| 4 | `def` | [finiteResidueSeparationTheoremElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteResidueSeparationNamespaced.lean/declarations/finiteresidueseparationtheoremelement.md) | 96 | `declaration-track:1a98b14c07cb4f66ce32562dc5f3b1b8b5f127bc12d7cbe6105e4af181ba3139` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelSplittingSharpness.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelSplittingSharpness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelSplittingSharpness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelSplittingSharpness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.KernelRetractionSharpness`](../../../../../GroupTheoryAndGeneralizations/KernelRetractionSharpness.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.KernelRetractionSharpness`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KernelRetractionSharpness.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [kernel_retraction_of_left_inverse](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelSplittingSharpness.lean/declarations/kernel-retraction-of-left-inverse.md) | 28 | `result-track:5b62918eace73e17161f7d3a74ae0ccb82172a2a0aee4a9caebb359ac4d9c1dc` |
-| 2 | `theorem` | [sharp_joint_observation_of_left_inverse](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelSplittingSharpness.lean/declarations/sharp-joint-observation-of-left-inverse.md) | 39 | `result-track:69d192961b747e8859ae82d1a115501aad7f792b3deff3fa173992ab2080ef39` |
+| 1 | `theorem` | [kernel_retraction_of_left_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelSplittingSharpness.lean/declarations/kernel-retraction-of-left-inverse.md) | 28 | `result-track:5b62918eace73e17161f7d3a74ae0ccb82172a2a0aee4a9caebb359ac4d9c1dc` |
+| 2 | `theorem` | [sharp_joint_observation_of_left_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelSplittingSharpness.lean/declarations/sharp-joint-observation-of-left-inverse.md) | 39 | `result-track:69d192961b747e8859ae82d1a115501aad7f792b3deff3fa173992ab2080ef39` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

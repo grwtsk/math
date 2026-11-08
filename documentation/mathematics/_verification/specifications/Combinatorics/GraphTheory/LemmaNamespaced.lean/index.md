@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/LemmaNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/LemmaNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LemmaNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LemmaNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [szemeredi_regularity](../../../../../Combinatorics/GraphTheory/LemmaNamespaced.lean/declarations/szemeredi-regularity.md) | 80 | `result-track:179917a358591df5daf6c82b412bbe6f19fd2eecc79b480818d6134ecc49fd2e` |
+| 1 | `theorem` | [szemeredi_regularity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LemmaNamespaced.lean/declarations/szemeredi-regularity.md) | 80 | `result-track:179917a358591df5daf6c82b412bbe6f19fd2eecc79b480818d6134ecc49fd2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

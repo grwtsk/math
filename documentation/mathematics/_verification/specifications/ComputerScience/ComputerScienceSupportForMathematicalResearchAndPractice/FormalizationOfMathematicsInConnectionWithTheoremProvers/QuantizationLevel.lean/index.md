@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/QuantizationLevel.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/QuantizationLevel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/QuantizationLevel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/QuantizationLevel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [QuantizationEncoding](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/QuantizationLevel.lean/declarations/quantizationencoding.md) | 18 | `declaration-track:80b885a9d748c1e7ac63863ef35ed92090dcc102b2025cca40f83e82891bfd16` |
-| 2 | `inductive` | [QuantizationOverflowPolicy](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/QuantizationLevel.lean/declarations/quantizationoverflowpolicy.md) | 24 | `declaration-track:e674fb7ebc5a29df7546bc6e3d8e2def38b538c90e8cdd633c9c99f6706e32b3` |
-| 3 | `inductive` | [QuantizationRoundingPolicy](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/QuantizationLevel.lean/declarations/quantizationroundingpolicy.md) | 30 | `declaration-track:6dc9b209659f5bbaddb16363702aacb2c50501c7ce8d0a1dfb88c69a9a5ea009` |
+| 1 | `inductive` | [QuantizationEncoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/QuantizationLevel.lean/declarations/quantizationencoding.md) | 18 | `declaration-track:80b885a9d748c1e7ac63863ef35ed92090dcc102b2025cca40f83e82891bfd16` |
+| 2 | `inductive` | [QuantizationOverflowPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/QuantizationLevel.lean/declarations/quantizationoverflowpolicy.md) | 24 | `declaration-track:e674fb7ebc5a29df7546bc6e3d8e2def38b538c90e8cdd633c9c99f6706e32b3` |
+| 3 | `inductive` | [QuantizationRoundingPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/QuantizationLevel.lean/declarations/quantizationroundingpolicy.md) | 30 | `declaration-track:6dc9b209659f5bbaddb16363702aacb2c50501c7ce8d0a1dfb88c69a9a5ea009` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

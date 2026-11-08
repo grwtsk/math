@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.CocycleProduct`](../../../../GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/index.md) — import line 12; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.CocycleProduct`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/index.md) — import line 12; pinned internal source present.
 - `Mathlib.Tactic` — import line 13; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsPureCoboundary](../../../../GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/declarations/ispurecoboundary.md) | 57 | `declaration-track:d5df211cf07c67380b6a6603f1923b68c0dfea05d13d4e8dd3ed88ebfa50b1c6` |
-| 2 | `theorem` | [cocycleProduct_one](../../../../GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/declarations/cocycleproduct-one.md) | 62 | `result-track:9c1dbf120eea5ff65a271b7ae632ccdc91ebe084f302693ab608231577cf903a` |
-| 3 | `theorem` | [pureCoboundary_product](../../../../GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/declarations/purecoboundary-product.md) | 73 | `result-track:45fd205888ca3d398a9631f7ad4eda779e4e61619cec007313620ffaea20cd4e` |
-| 4 | `theorem` | [pureCoboundary_periodic_identity](../../../../GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/declarations/purecoboundary-periodic-identity.md) | 89 | `result-track:133c3fc14d0808469d624320b198569a40b2bd8215239503bdefa63697093892` |
-| 5 | `theorem` | [nontrivial_periodic_product_not_coboundary](../../../../GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/declarations/nontrivial-periodic-product-not-coboundary.md) | 104 | `result-track:f52feb41a61faebedbb18c480d5216b1a4ff0beb5a47c40d9b4c7e979ce67bb0` |
-| 6 | `theorem` | [periodic_gauge_product_conjugate](../../../../GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/declarations/periodic-gauge-product-conjugate.md) | 116 | `result-track:d7dd113281cd27086ff17403851c8ec814fe24d674fca77cee1d7c124b7c8000` |
-| 7 | `theorem` | [periodic_gauge_product_one_iff](../../../../GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/declarations/periodic-gauge-product-one-iff.md) | 126 | `result-track:5f93b7dd4efd86db7937d3d93cd6b07e0632ecd30638eb17b12f564343bbc519` |
-| 8 | `theorem` | [periodic_nontrivial_persists_under_gauge](../../../../GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/declarations/periodic-nontrivial-persists-under-gauge.md) | 143 | `result-track:9b63df2cffc19062f415b0cd96df8e13258db837f7286267e29bc86d700671b8` |
-| 9 | `theorem` | [no_gauge_trivializes_nontrivial_period](../../../../GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/declarations/no-gauge-trivializes-nontrivial-period.md) | 154 | `result-track:c7333bb547d187d1148a71582c105ef2731cb98f07e2ca5ae7e016466cd1268f` |
+| 1 | `def` | [IsPureCoboundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/declarations/ispurecoboundary.md) | 57 | `declaration-track:d5df211cf07c67380b6a6603f1923b68c0dfea05d13d4e8dd3ed88ebfa50b1c6` |
+| 2 | `theorem` | [cocycleProduct_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/declarations/cocycleproduct-one.md) | 62 | `result-track:9c1dbf120eea5ff65a271b7ae632ccdc91ebe084f302693ab608231577cf903a` |
+| 3 | `theorem` | [pureCoboundary_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/declarations/purecoboundary-product.md) | 73 | `result-track:45fd205888ca3d398a9631f7ad4eda779e4e61619cec007313620ffaea20cd4e` |
+| 4 | `theorem` | [pureCoboundary_periodic_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/declarations/purecoboundary-periodic-identity.md) | 89 | `result-track:133c3fc14d0808469d624320b198569a40b2bd8215239503bdefa63697093892` |
+| 5 | `theorem` | [nontrivial_periodic_product_not_coboundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/declarations/nontrivial-periodic-product-not-coboundary.md) | 104 | `result-track:f52feb41a61faebedbb18c480d5216b1a4ff0beb5a47c40d9b4c7e979ce67bb0` |
+| 6 | `theorem` | [periodic_gauge_product_conjugate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/declarations/periodic-gauge-product-conjugate.md) | 116 | `result-track:d7dd113281cd27086ff17403851c8ec814fe24d674fca77cee1d7c124b7c8000` |
+| 7 | `theorem` | [periodic_gauge_product_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/declarations/periodic-gauge-product-one-iff.md) | 126 | `result-track:5f93b7dd4efd86db7937d3d93cd6b07e0632ecd30638eb17b12f564343bbc519` |
+| 8 | `theorem` | [periodic_nontrivial_persists_under_gauge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/declarations/periodic-nontrivial-persists-under-gauge.md) | 143 | `result-track:9b63df2cffc19062f415b0cd96df8e13258db837f7286267e29bc86d700671b8` |
+| 9 | `theorem` | [no_gauge_trivializes_nontrivial_period](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PeriodicCocycleData.lean/declarations/no-gauge-trivializes-nontrivial-period.md) | 154 | `result-track:c7333bb547d187d1148a71582c105ef2731cb98f07e2ca5ae7e016466cd1268f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

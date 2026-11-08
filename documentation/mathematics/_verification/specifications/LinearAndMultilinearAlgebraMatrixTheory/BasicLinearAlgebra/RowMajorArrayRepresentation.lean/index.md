@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Mathlib.Data.Matrix.Basic` — import line 19; external provider; requires a separately pinned dependency.
 - `Init.Data.Array.MapIdx` — import line 20; external provider; requires a separately pinned dependency.
-- [Declarative Boolean Matrices](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeclarativeBooleanMatrices.lean/index.md) — import line 22; pinned internal source present.
+- [Declarative Boolean Matrices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeclarativeBooleanMatrices.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BitMatrix.ArrayBacked](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/bitmatrix-arraybacked.md) | 55 | `declaration-track:79efb2935ebb6317f0098b5c559aa9afa63906bcc7b36ccf9eeedc08f60e9f9a` |
-| 2 | `def` | [flatIdx](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/flatidx.md) | 69 | `declaration-track:f82bba6d4f675e4907c7ec666f3c0a0e7d9da31cc0b691e09b462be558c35952` |
-| 3 | `def` | [ofArray?](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/ofarray.md) | 88 | `declaration-track:e029466c527d9e320fa6120a6dd7b9f4ae06caf314f55a4c81b461f683a1c842` |
-| 4 | `def` | [fill](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/fill.md) | 99 | `declaration-track:e94939faead3f726c0f905ef836d68b4bffff2c28f4677a0565d33013f2ce1a6` |
-| 5 | `def` | [get](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/get.md) | 112 | `declaration-track:cd3030ade4779100ca3375a1858c7233a15537bdd45b276009bdbf3a1642f4b9` |
-| 6 | `def` | [toMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/tomatrix.md) | 122 | `declaration-track:68770bfbb3c1464e579a50e179fbe6e2ba4a412997a49dbad284f475201a2935` |
-| 7 | `def` | [mapInPlace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/mapinplace.md) | 134 | `declaration-track:294568d7e279729234f5e559a563c49df7af7af62ee927eec14b6be6a2bd888f` |
-| 8 | `def` | [zipWithInPlace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/zipwithinplace.md) | 148 | `declaration-track:960cecd2c3aaafc2cf663870229a916d394f77f8ae1591a2b91551cea1744734` |
-| 9 | `def` | [andInPlace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/andinplace.md) | 162 | `declaration-track:eac7b27010567f6e8e02b820b47a1c42791da31dc0fe0cd3e18bff72438d5b51` |
-| 10 | `def` | [orInPlace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/orinplace.md) | 168 | `declaration-track:e4a734bd321285905808dc64ce26716c469ceeadbbd21a49915603f766a4e93f` |
-| 11 | `def` | [xorInPlace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/xorinplace.md) | 174 | `declaration-track:d8d79b20dc161a13d22804459cfb0a0b1a6d164b2aae507c8a736d00d5408526` |
-| 12 | `def` | [notInPlace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/notinplace.md) | 180 | `declaration-track:04dc69027f395d5e43c3e6d82b8ad069f3a5b2076b264b6be859f7c663700296` |
+| 1 | `structure` | [BitMatrix.ArrayBacked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/bitmatrix-arraybacked.md) | 55 | `declaration-track:79efb2935ebb6317f0098b5c559aa9afa63906bcc7b36ccf9eeedc08f60e9f9a` |
+| 2 | `def` | [flatIdx](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/flatidx.md) | 69 | `declaration-track:f82bba6d4f675e4907c7ec666f3c0a0e7d9da31cc0b691e09b462be558c35952` |
+| 3 | `def` | [ofArray?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/ofarray.md) | 88 | `declaration-track:e029466c527d9e320fa6120a6dd7b9f4ae06caf314f55a4c81b461f683a1c842` |
+| 4 | `def` | [fill](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/fill.md) | 99 | `declaration-track:e94939faead3f726c0f905ef836d68b4bffff2c28f4677a0565d33013f2ce1a6` |
+| 5 | `def` | [get](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/get.md) | 112 | `declaration-track:cd3030ade4779100ca3375a1858c7233a15537bdd45b276009bdbf3a1642f4b9` |
+| 6 | `def` | [toMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/tomatrix.md) | 122 | `declaration-track:68770bfbb3c1464e579a50e179fbe6e2ba4a412997a49dbad284f475201a2935` |
+| 7 | `def` | [mapInPlace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/mapinplace.md) | 134 | `declaration-track:294568d7e279729234f5e559a563c49df7af7af62ee927eec14b6be6a2bd888f` |
+| 8 | `def` | [zipWithInPlace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/zipwithinplace.md) | 148 | `declaration-track:960cecd2c3aaafc2cf663870229a916d394f77f8ae1591a2b91551cea1744734` |
+| 9 | `def` | [andInPlace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/andinplace.md) | 162 | `declaration-track:eac7b27010567f6e8e02b820b47a1c42791da31dc0fe0cd3e18bff72438d5b51` |
+| 10 | `def` | [orInPlace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/orinplace.md) | 168 | `declaration-track:e4a734bd321285905808dc64ce26716c469ceeadbbd21a49915603f766a4e93f` |
+| 11 | `def` | [xorInPlace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/xorinplace.md) | 174 | `declaration-track:d8d79b20dc161a13d22804459cfb0a0b1a6d164b2aae507c8a736d00d5408526` |
+| 12 | `def` | [notInPlace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/declarations/notinplace.md) | 180 | `declaration-track:04dc69027f395d5e43c3e6d82b8ad069f3a5b2076b264b6be859f7c663700296` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

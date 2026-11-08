@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/RealCompleteField.lean/index.md) · [Full source](../../../../RealFunctions/RealCompleteField.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealCompleteField.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealCompleteField.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../RealFunctions/RealCompleteField.lean/declarations/instance.md) | 14 | `declaration-track:03cc180da955b4d6f62cb1223edbd1b5421400d08e6c83381dc2ede7d497577e` |
-| 2 | `instance` | [Real.RingHom.unique](../../../../RealFunctions/RealCompleteField.lean/declarations/real-ringhom-unique.md) | 17 | `declaration-track:a386f03ca55ccf8121b257b3b235ad8d4e02eed2baac0a2486f33746d63e35ee` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealCompleteField.lean/declarations/instance.md) | 14 | `declaration-track:03cc180da955b4d6f62cb1223edbd1b5421400d08e6c83381dc2ede7d497577e` |
+| 2 | `instance` | [Real.RingHom.unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealCompleteField.lean/declarations/real-ringhom-unique.md) | 17 | `declaration-track:a386f03ca55ccf8121b257b3b235ad8d4e02eed2baac0a2486f33746d63e35ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

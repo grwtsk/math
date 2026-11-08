@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Spec](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/declarations/spec.md) | 35 | `declaration-track:cab177f4b39d890a00db1cb0bcfc9a4a7b1c8eb2b0d6fbf139d1833b3f69e7ca` |
-| 2 | `def` | [id](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/declarations/id.md) | 41 | `declaration-track:1671fcf7081433e4c77be47dbc34f0771e00e9f1c14521eb24894ac989661501` |
-| 3 | `def` | [comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/declarations/comp.md) | 45 | `declaration-track:e4a11d88bdedd839137c80916db32be7e0cfee88cf1cc5f080d3da854a671a0d` |
-| 4 | `theorem` | [id_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/declarations/id-apply.md) | 49 | `result-track:1d410c87c3f171b0d1e0bb11be5bae245f8e82aa98575fb84865dc5d21c1549c` |
-| 5 | `theorem` | [comp_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/declarations/comp-apply.md) | 53 | `result-track:62a3ee4b1fd60b509367f1ea6b66a7422e113afc2bfcf8c273eb06bd067c588e` |
-| 6 | `theorem` | [ext](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/declarations/ext.md) | 58 | `result-track:e4af775eb35ecf04d1cfeea4bcd715ed02e820e96813b0245cf770fce26fe7c7` |
-| 7 | `theorem` | [comp_assoc](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/declarations/comp-assoc.md) | 64 | `result-track:99c792764b85978a729fb000eee3ee415a332b968015b1e0171d8043cd5550ad` |
-| 8 | `theorem` | [id_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/declarations/id-comp.md) | 69 | `result-track:28b623396baceb62fbea06c29345924735b4f36a63c6666a06e66580930e8d5f` |
-| 9 | `theorem` | [comp_id](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/declarations/comp-id.md) | 73 | `result-track:1dd2fd6d2a06ea35669227ec1817c2cdaa9c3a403d2c9d14c4971fea98b77a80` |
+| 1 | `structure` | [Spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/declarations/spec.md) | 35 | `declaration-track:cab177f4b39d890a00db1cb0bcfc9a4a7b1c8eb2b0d6fbf139d1833b3f69e7ca` |
+| 2 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/declarations/id.md) | 41 | `declaration-track:1671fcf7081433e4c77be47dbc34f0771e00e9f1c14521eb24894ac989661501` |
+| 3 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/declarations/comp.md) | 45 | `declaration-track:e4a11d88bdedd839137c80916db32be7e0cfee88cf1cc5f080d3da854a671a0d` |
+| 4 | `theorem` | [id_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/declarations/id-apply.md) | 49 | `result-track:1d410c87c3f171b0d1e0bb11be5bae245f8e82aa98575fb84865dc5d21c1549c` |
+| 5 | `theorem` | [comp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/declarations/comp-apply.md) | 53 | `result-track:62a3ee4b1fd60b509367f1ea6b66a7422e113afc2bfcf8c273eb06bd067c588e` |
+| 6 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/declarations/ext.md) | 58 | `result-track:e4af775eb35ecf04d1cfeea4bcd715ed02e820e96813b0245cf770fce26fe7c7` |
+| 7 | `theorem` | [comp_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/declarations/comp-assoc.md) | 64 | `result-track:99c792764b85978a729fb000eee3ee415a332b968015b1e0171d8043cd5550ad` |
+| 8 | `theorem` | [id_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/declarations/id-comp.md) | 69 | `result-track:28b623396baceb62fbea06c29345924735b4f36a63c6666a06e66580930e8d5f` |
+| 9 | `theorem` | [comp_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedMapCompositionAndExtensionalLaws.lean/declarations/comp-id.md) | 73 | `result-track:1dd2fd6d2a06ea35669227ec1817c2cdaa9c3a403d2c9d14c4971fea98b77a80` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

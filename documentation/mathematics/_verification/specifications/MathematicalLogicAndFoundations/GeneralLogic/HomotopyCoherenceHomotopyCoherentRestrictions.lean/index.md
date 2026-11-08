@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceHomotopyCoherentRestrictions.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceHomotopyCoherentRestrictions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceHomotopyCoherentRestrictions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceHomotopyCoherentRestrictions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HomotopyCoherentRestrictions](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceHomotopyCoherentRestrictions.lean/declarations/homotopycoherentrestrictions.md) | 18 | `declaration-track:dc6eda48ecacc573b0b46a5358d57c5d5b72b89c0e402658630ee1a3a3a25150` |
-| 2 | `theorem` | [homotopy_restrictions_identity_coherent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceHomotopyCoherentRestrictions.lean/declarations/homotopy-restrictions-identity-coherent.md) | 31 | `result-track:7898c3e2278a48f391d8afa5a2af22e58c2cf3ccb09beeb2cb206d61c9ec15bb` |
-| 3 | `theorem` | [homotopy_restrictions_composition_coherent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceHomotopyCoherentRestrictions.lean/declarations/homotopy-restrictions-composition-coherent.md) | 37 | `result-track:0415111151c702e195d16534bdc578ebf259a75864397642b7ad8b2d47aef2fb` |
-| 4 | `theorem` | [homotopy_restrictions_higher_coherent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceHomotopyCoherentRestrictions.lean/declarations/homotopy-restrictions-higher-coherent.md) | 43 | `result-track:337843a26983089399d1c1735b0825119c4522c51f259c29b76842c8e5e7b143` |
+| 1 | `structure` | [HomotopyCoherentRestrictions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceHomotopyCoherentRestrictions.lean/declarations/homotopycoherentrestrictions.md) | 18 | `declaration-track:dc6eda48ecacc573b0b46a5358d57c5d5b72b89c0e402658630ee1a3a3a25150` |
+| 2 | `theorem` | [homotopy_restrictions_identity_coherent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceHomotopyCoherentRestrictions.lean/declarations/homotopy-restrictions-identity-coherent.md) | 31 | `result-track:7898c3e2278a48f391d8afa5a2af22e58c2cf3ccb09beeb2cb206d61c9ec15bb` |
+| 3 | `theorem` | [homotopy_restrictions_composition_coherent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceHomotopyCoherentRestrictions.lean/declarations/homotopy-restrictions-composition-coherent.md) | 37 | `result-track:0415111151c702e195d16534bdc578ebf259a75864397642b7ad8b2d47aef2fb` |
+| 4 | `theorem` | [homotopy_restrictions_higher_coherent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceHomotopyCoherentRestrictions.lean/declarations/homotopy-restrictions-higher-coherent.md) | 43 | `result-track:337843a26983089399d1c1735b0825119c4522c51f259c29b76842c8e5e7b143` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

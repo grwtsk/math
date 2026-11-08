@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceNativeMellin.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceNativeMellin.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeMellin.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeMellin.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [normalizedBilateralTransform](../../../../MeasureAndIntegration/SourceNativeMellin.lean/declarations/normalizedbilateraltransform.md) | 28 | `declaration-track:b2c91aa0860fb862f103c8dce47380d3b4444aa55cd01d7c84c232856cae2ec7` |
-| 2 | `def` | [nativeMellinTransform](../../../../MeasureAndIntegration/SourceNativeMellin.lean/declarations/nativemellintransform.md) | 33 | `declaration-track:d648c8233e7a085d91cf61a3f51cb6af034787971978a3e4c16e3ea7b204cf2d` |
-| 3 | `theorem` | [normalizedTest_even](../../../../MeasureAndIntegration/SourceNativeMellin.lean/declarations/normalizedtest-even.md) | 38 | `result-track:32369ebfc604756eec2185f69d7ba804e89a53a8997a91d705fa359d10387811` |
-| 4 | `theorem` | [weighted_integrable](../../../../MeasureAndIntegration/SourceNativeMellin.lean/declarations/weighted-integrable.md) | 51 | `result-track:db5debadb98cc6406c4eba7df3c058cd35d26b934a86a04e088aedcf9e00141f` |
-| 5 | `theorem` | [normalizedBilateral_integrable](../../../../MeasureAndIntegration/SourceNativeMellin.lean/declarations/normalizedbilateral-integrable.md) | 61 | `result-track:0b0792252069f19e9db34e3ae897cf208c8b2983852bcc44104f8100ade01903` |
-| 6 | `theorem` | [nativeMellin_integrable](../../../../MeasureAndIntegration/SourceNativeMellin.lean/declarations/nativemellin-integrable.md) | 68 | `result-track:10cc7781cfa96d85f053217938d52ea8d2ed0750253219e5dd0f8c1dd26a8339` |
-| 7 | `theorem` | [normalizedBilateral_eq_original](../../../../MeasureAndIntegration/SourceNativeMellin.lean/declarations/normalizedbilateral-eq-original.md) | 75 | `result-track:6d12dd12a4c4df6524665ea703c34fbd905ae2ceb7ef120a9175854c9df41eb7` |
-| 8 | `theorem` | [weighted_correlation_eq_convolution](../../../../MeasureAndIntegration/SourceNativeMellin.lean/declarations/weighted-correlation-eq-convolution.md) | 82 | `result-track:c2dfa53787c8cac91b5f07bec4ddf6c42730229e80af6fa61ea6fa9c7adceb16` |
-| 9 | `theorem` | [nativeMellin_eq_square](../../../../MeasureAndIntegration/SourceNativeMellin.lean/declarations/nativemellin-eq-square.md) | 109 | `result-track:69648a06ccb20a31d2146975eaeaadd79c2b4a7260c277c6f60880a4b6cfd0d8` |
-| 10 | `theorem` | [nativeMellin_eq_dividedTransform](../../../../MeasureAndIntegration/SourceNativeMellin.lean/declarations/nativemellin-eq-dividedtransform.md) | 118 | `result-track:f9213ff444951648cf5f9011bbf50fbeab1188c75928f2d5ae53d2c8fb8b5391` |
+| 1 | `def` | [normalizedBilateralTransform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeMellin.lean/declarations/normalizedbilateraltransform.md) | 28 | `declaration-track:b2c91aa0860fb862f103c8dce47380d3b4444aa55cd01d7c84c232856cae2ec7` |
+| 2 | `def` | [nativeMellinTransform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeMellin.lean/declarations/nativemellintransform.md) | 33 | `declaration-track:d648c8233e7a085d91cf61a3f51cb6af034787971978a3e4c16e3ea7b204cf2d` |
+| 3 | `theorem` | [normalizedTest_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeMellin.lean/declarations/normalizedtest-even.md) | 38 | `result-track:32369ebfc604756eec2185f69d7ba804e89a53a8997a91d705fa359d10387811` |
+| 4 | `theorem` | [weighted_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeMellin.lean/declarations/weighted-integrable.md) | 51 | `result-track:db5debadb98cc6406c4eba7df3c058cd35d26b934a86a04e088aedcf9e00141f` |
+| 5 | `theorem` | [normalizedBilateral_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeMellin.lean/declarations/normalizedbilateral-integrable.md) | 61 | `result-track:0b0792252069f19e9db34e3ae897cf208c8b2983852bcc44104f8100ade01903` |
+| 6 | `theorem` | [nativeMellin_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeMellin.lean/declarations/nativemellin-integrable.md) | 68 | `result-track:10cc7781cfa96d85f053217938d52ea8d2ed0750253219e5dd0f8c1dd26a8339` |
+| 7 | `theorem` | [normalizedBilateral_eq_original](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeMellin.lean/declarations/normalizedbilateral-eq-original.md) | 75 | `result-track:6d12dd12a4c4df6524665ea703c34fbd905ae2ceb7ef120a9175854c9df41eb7` |
+| 8 | `theorem` | [weighted_correlation_eq_convolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeMellin.lean/declarations/weighted-correlation-eq-convolution.md) | 82 | `result-track:c2dfa53787c8cac91b5f07bec4ddf6c42730229e80af6fa61ea6fa9c7adceb16` |
+| 9 | `theorem` | [nativeMellin_eq_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeMellin.lean/declarations/nativemellin-eq-square.md) | 109 | `result-track:69648a06ccb20a31d2146975eaeaadd79c2b4a7260c277c6f60880a4b6cfd0d8` |
+| 10 | `theorem` | [nativeMellin_eq_dividedTransform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeMellin.lean/declarations/nativemellin-eq-dividedtransform.md) | 118 | `result-track:f9213ff444951648cf5f9011bbf50fbeab1188c75928f2d5ae53d2c8fb8b5391` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

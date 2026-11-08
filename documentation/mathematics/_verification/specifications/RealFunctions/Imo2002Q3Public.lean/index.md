@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Imo2002Q3Public.lean/index.md) · [Full source](../../../../RealFunctions/Imo2002Q3Public.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2002Q3Public.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2002Q3Public.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [natDegree_numerpol](../../../../RealFunctions/Imo2002Q3Public.lean/declarations/natdegree-numerpol.md) | 40 | `result-track:17989a9a9dfb04056884346b58927b07c4f4ff5d67b8baef4703329fc9d0519b` |
-| 2 | `lemma` | [monic_numerpol](../../../../RealFunctions/Imo2002Q3Public.lean/declarations/monic-numerpol.md) | 44 | `result-track:c4042e86cee4363065cd5abaefe7ae0828d1c9e6b9c3708cdf14435ec7d60bae` |
-| 3 | `lemma` | [natDegree_denompol](../../../../RealFunctions/Imo2002Q3Public.lean/declarations/natdegree-denompol.md) | 56 | `result-track:11dfcdd599921f1caa50938a130add2c80856232a722f2e5381493bf64251c0b` |
-| 4 | `lemma` | [monic_denompol](../../../../RealFunctions/Imo2002Q3Public.lean/declarations/monic-denompol.md) | 60 | `result-track:760b3163efa67953d5b837be659248ae4fc34ea0f6c3a9a761415a6bc8791fc0` |
-| 5 | `lemma` | [proof_body](../../../../RealFunctions/Imo2002Q3Public.lean/declarations/proof-body.md) | 72 | `result-track:48bbaf9d16e9e27ce0798eb11eea39da7fb1e04ee307d3dcd3983d3018614542` |
-| 6 | `theorem` | [result](../../../../RealFunctions/Imo2002Q3Public.lean/declarations/result.md) | 114 | `result-track:967c46d3f9f6eebbfb38afee10514869529e3129b5cca086f0259850b403e44b` |
+| 1 | `lemma` | [natDegree_numerpol](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2002Q3Public.lean/declarations/natdegree-numerpol.md) | 40 | `result-track:17989a9a9dfb04056884346b58927b07c4f4ff5d67b8baef4703329fc9d0519b` |
+| 2 | `lemma` | [monic_numerpol](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2002Q3Public.lean/declarations/monic-numerpol.md) | 44 | `result-track:c4042e86cee4363065cd5abaefe7ae0828d1c9e6b9c3708cdf14435ec7d60bae` |
+| 3 | `lemma` | [natDegree_denompol](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2002Q3Public.lean/declarations/natdegree-denompol.md) | 56 | `result-track:11dfcdd599921f1caa50938a130add2c80856232a722f2e5381493bf64251c0b` |
+| 4 | `lemma` | [monic_denompol](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2002Q3Public.lean/declarations/monic-denompol.md) | 60 | `result-track:760b3163efa67953d5b837be659248ae4fc34ea0f6c3a9a761415a6bc8791fc0` |
+| 5 | `lemma` | [proof_body](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2002Q3Public.lean/declarations/proof-body.md) | 72 | `result-track:48bbaf9d16e9e27ce0798eb11eea39da7fb1e04ee307d3dcd3983d3018614542` |
+| 6 | `theorem` | [result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2002Q3Public.lean/declarations/result.md) | 114 | `result-track:967c46d3f9f6eebbfb38afee10514869529e3129b5cca086f0259850b403e44b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeUnionPublic.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeUnionPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeUnionPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeUnionPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sup_biUnion](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeUnionPublic.lean/declarations/sup-biunion.md) | 35 | `result-track:22ac509b3e90688f3601e648319136760b6e852f56e584f5b5fbe48c05531185` |
-| 2 | `theorem` | [inf_biUnion](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeUnionPublic.lean/declarations/inf-biunion-source-edition-2.md) | 45 | `result-track:9151546d39518af99de16b5927aabb5976ef5dd10f87bea4fc954aa50600d88f` |
-| 3 | `theorem` | [sup'_biUnion](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeUnionPublic.lean/declarations/sup-biunion-source-edition-2.md) | 57 | `result-track:64ec0d6174a969500f60184a7468d0b3180b4e25c0af0ed094a1afafe5da88e0` |
-| 4 | `theorem` | [inf'_biUnion](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeUnionPublic.lean/declarations/inf-biunion.md) | 70 | `result-track:7530ba38ebd641e1ec136e3bd86430da30847b7ba1d2e69de6dc06db181406aa` |
-| 5 | `theorem` | [sup_eq_biUnion](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeUnionPublic.lean/declarations/sup-eq-biunion.md) | 79 | `result-track:5818afb886a66c9dbf87cd623f6ec57fa9afa7ed155bbd10e28d15370d102687` |
+| 1 | `theorem` | [sup_biUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeUnionPublic.lean/declarations/sup-biunion.md) | 35 | `result-track:22ac509b3e90688f3601e648319136760b6e852f56e584f5b5fbe48c05531185` |
+| 2 | `theorem` | [inf_biUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeUnionPublic.lean/declarations/inf-biunion-source-edition-2.md) | 45 | `result-track:9151546d39518af99de16b5927aabb5976ef5dd10f87bea4fc954aa50600d88f` |
+| 3 | `theorem` | [sup'_biUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeUnionPublic.lean/declarations/sup-biunion-source-edition-2.md) | 57 | `result-track:64ec0d6174a969500f60184a7468d0b3180b4e25c0af0ed094a1afafe5da88e0` |
+| 4 | `theorem` | [inf'_biUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeUnionPublic.lean/declarations/inf-biunion.md) | 70 | `result-track:7530ba38ebd641e1ec136e3bd86430da30847b7ba1d2e69de6dc06db181406aa` |
+| 5 | `theorem` | [sup_eq_biUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeUnionPublic.lean/declarations/sup-eq-biunion.md) | 79 | `result-track:5818afb886a66c9dbf87cd623f6ec57fa9afa7ed155bbd10e28d15370d102687` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

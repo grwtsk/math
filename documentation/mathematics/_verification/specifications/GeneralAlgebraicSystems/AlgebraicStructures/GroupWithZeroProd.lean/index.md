@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroProd.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroProd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroProd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroProd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instMulZeroClass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroProd.lean/declarations/instmulzeroclass.md) | 27 | `declaration-track:5963129521565ca1804a53e1017f5e18646dcc7b4553422a12db100122ab1c37` |
-| 2 | `instance` | [instSemigroupWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroProd.lean/declarations/instsemigroupwithzero.md) | 31 | `declaration-track:c3e4b4144e46482fddbf0afc032e399d18650ae755fad54afa456d82390e173e` |
-| 3 | `instance` | [instMulZeroOneClass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroProd.lean/declarations/instmulzerooneclass.md) | 36 | `declaration-track:079dc5f542e04ae012d1e6db53b25c7819ff5dec1aedfe81013b0b13c08ce4d3` |
-| 4 | `instance` | [instMonoidWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroProd.lean/declarations/instmonoidwithzero.md) | 41 | `declaration-track:0e9a34ab744d91e1c6972d7847f00b713c07f0bb219fe10fec6358ad0e740476` |
-| 5 | `instance` | [instCommMonoidWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroProd.lean/declarations/instcommmonoidwithzero.md) | 45 | `declaration-track:392739d1229c3df45a08943960a30104c7103a5c1ddcbbcce5b7d903b3b51c6e` |
-| 6 | `def` | [mulMonoidWithZeroHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroProd.lean/declarations/mulmonoidwithzerohom.md) | 58 | `declaration-track:645a420142f6cae3a6a269f941522cc4354baffc6d0334c924e692b063ae5152` |
-| 7 | `def` | [divMonoidWithZeroHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroProd.lean/declarations/divmonoidwithzerohom.md) | 64 | `declaration-track:f333412e81f1c4da11a6bf3b00a2697f587751027caa9890b68d0ca11fae0861` |
+| 1 | `instance` | [instMulZeroClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroProd.lean/declarations/instmulzeroclass.md) | 27 | `declaration-track:5963129521565ca1804a53e1017f5e18646dcc7b4553422a12db100122ab1c37` |
+| 2 | `instance` | [instSemigroupWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroProd.lean/declarations/instsemigroupwithzero.md) | 31 | `declaration-track:c3e4b4144e46482fddbf0afc032e399d18650ae755fad54afa456d82390e173e` |
+| 3 | `instance` | [instMulZeroOneClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroProd.lean/declarations/instmulzerooneclass.md) | 36 | `declaration-track:079dc5f542e04ae012d1e6db53b25c7819ff5dec1aedfe81013b0b13c08ce4d3` |
+| 4 | `instance` | [instMonoidWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroProd.lean/declarations/instmonoidwithzero.md) | 41 | `declaration-track:0e9a34ab744d91e1c6972d7847f00b713c07f0bb219fe10fec6358ad0e740476` |
+| 5 | `instance` | [instCommMonoidWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroProd.lean/declarations/instcommmonoidwithzero.md) | 45 | `declaration-track:392739d1229c3df45a08943960a30104c7103a5c1ddcbbcce5b7d903b3b51c6e` |
+| 6 | `def` | [mulMonoidWithZeroHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroProd.lean/declarations/mulmonoidwithzerohom.md) | 58 | `declaration-track:645a420142f6cae3a6a269f941522cc4354baffc6d0334c924e692b063ae5152` |
+| 7 | `def` | [divMonoidWithZeroHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroProd.lean/declarations/divmonoidwithzerohom.md) | 64 | `declaration-track:f333412e81f1c4da11a6bf3b00a2697f587751027caa9890b68d0ca11fae0861` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

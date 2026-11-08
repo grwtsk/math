@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/SemirealDefsNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/SemirealDefsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SemirealDefsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SemirealDefsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsSemireal](../../../../AssociativeRingsAndAlgebras/SemirealDefsNamespaced.lean/declarations/issemireal.md) | 43 | `declaration-track:d93beeb8e01fe93e53dd304d3e5137ba0596435b490a98afc6b0d6e3e9291233` |
-| 2 | `theorem` | [IsSemireal.not_isSumSq_neg_one](../../../../AssociativeRingsAndAlgebras/SemirealDefsNamespaced.lean/declarations/issemireal-not-issumsq-neg-one.md) | 47 | `result-track:d69558d22ecea55d8070de9e9e260b8e89fcb2ecd8cf8c3deba1ef062e7b0f5e` |
-| 3 | `instance` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/SemirealDefsNamespaced.lean/declarations/instance.md) | 54 | `declaration-track:6a0a5269c5b050a94367dc46f4590bdc83845e195d54f2570df57e55ad9c258b` |
+| 1 | `class` | [IsSemireal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SemirealDefsNamespaced.lean/declarations/issemireal.md) | 43 | `declaration-track:d93beeb8e01fe93e53dd304d3e5137ba0596435b490a98afc6b0d6e3e9291233` |
+| 2 | `theorem` | [IsSemireal.not_isSumSq_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SemirealDefsNamespaced.lean/declarations/issemireal-not-issumsq-neg-one.md) | 47 | `result-track:d69558d22ecea55d8070de9e9e260b8e89fcb2ecd8cf8c3deba1ef062e7b0f5e` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SemirealDefsNamespaced.lean/declarations/instance.md) | 54 | `declaration-track:6a0a5269c5b050a94367dc46f4590bdc83845e195d54f2570df57e55ad9c258b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/KonigLemma.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/KonigLemma.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/KonigLemma.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/KonigLemma.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_seq_covby_of_forall_covby_finite](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/KonigLemma.lean/declarations/exists-seq-covby-of-forall-covby-finite.md) | 61 | `result-track:1efc3131ff16681dc83871daa6ddf3f76adb92eaa92cd37ce7bc2c14732aa41b` |
-| 2 | `theorem` | [exists_orderEmbedding_covby_of_forall_covby_finite](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/KonigLemma.lean/declarations/exists-orderembedding-covby-of-forall-covby-finite.md) | 69 | `result-track:2bdc49b28417c969dcbd08f65260dc604f56c2d16a6c33223b0023b14428ef1c` |
-| 3 | `theorem` | [exists_orderEmbedding_covby_of_forall_covby_finite_of_bot](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/KonigLemma.lean/declarations/exists-orderembedding-covby-of-forall-covby-finite-of-bot.md) | 75 | `result-track:e6c82eb706ade7bece323688fea8dcc604b3ad0c8d0acca2467e0621ab00182a` |
-| 4 | `theorem` | [GradeMinOrder.exists_nat_orderEmbedding_of_forall_covby_finite](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/KonigLemma.lean/declarations/grademinorder-exists-nat-orderembedding-of-forall-covby-finite.md) | 79 | `result-track:a97815fa7c81d02ad2a7dec9ad913dc4c0b07274bcc53b4e03e2efcb1f24be76` |
-| 5 | `theorem` | [exists_seq_forall_proj_of_forall_finite](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/KonigLemma.lean/declarations/exists-seq-forall-proj-of-forall-finite.md) | 105 | `result-track:a9b55d92b4bee15bac828166bacf5ef4678a9c592685138dfc74205780fe46bb` |
+| 1 | `theorem` | [exists_seq_covby_of_forall_covby_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/KonigLemma.lean/declarations/exists-seq-covby-of-forall-covby-finite.md) | 61 | `result-track:1efc3131ff16681dc83871daa6ddf3f76adb92eaa92cd37ce7bc2c14732aa41b` |
+| 2 | `theorem` | [exists_orderEmbedding_covby_of_forall_covby_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/KonigLemma.lean/declarations/exists-orderembedding-covby-of-forall-covby-finite.md) | 69 | `result-track:2bdc49b28417c969dcbd08f65260dc604f56c2d16a6c33223b0023b14428ef1c` |
+| 3 | `theorem` | [exists_orderEmbedding_covby_of_forall_covby_finite_of_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/KonigLemma.lean/declarations/exists-orderembedding-covby-of-forall-covby-finite-of-bot.md) | 75 | `result-track:e6c82eb706ade7bece323688fea8dcc604b3ad0c8d0acca2467e0621ab00182a` |
+| 4 | `theorem` | [GradeMinOrder.exists_nat_orderEmbedding_of_forall_covby_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/KonigLemma.lean/declarations/grademinorder-exists-nat-orderembedding-of-forall-covby-finite.md) | 79 | `result-track:a97815fa7c81d02ad2a7dec9ad913dc4c0b07274bcc53b4e03e2efcb1f24be76` |
+| 5 | `theorem` | [exists_seq_forall_proj_of_forall_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/KonigLemma.lean/declarations/exists-seq-forall-proj-of-forall-finite.md) | 105 | `result-track:a9b55d92b4bee15bac828166bacf5ef4678a9c592685138dfc74205780fe46bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

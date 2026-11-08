@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/InfiniteSquareEnergyAndTheNativeDeficitRate.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/InfiniteSquareEnergyAndTheNativeDeficitRate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/InfiniteSquareEnergyAndTheNativeDeficitRate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/InfiniteSquareEnergyAndTheNativeDeficitRate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finite_square_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/InfiniteSquareEnergyAndTheNativeDeficitRate.lean/declarations/finite-square-bound.md) | 25 | `result-track:cfff5d884159d1937770fdcdc70786c2046de1df7d124943ba72f4af7c52ee4f` |
-| 2 | `theorem` | [infinite_square_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/InfiniteSquareEnergyAndTheNativeDeficitRate.lean/declarations/infinite-square-bound.md) | 37 | `result-track:58cf7db81d98c713e77aa804217e8c305e309ae6977a315c469d54a97e8831c0` |
-| 3 | `theorem` | [native_scaled_deficit_square](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/InfiniteSquareEnergyAndTheNativeDeficitRate.lean/declarations/native-scaled-deficit-square.md) | 45 | `result-track:b1cd469d8f1396d78d56d589cda8fdef5f53b7ce1db4ae54f6e418af31de3f1a` |
-| 4 | `theorem` | [native_tail_energy_forces_deficit_rate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/InfiniteSquareEnergyAndTheNativeDeficitRate.lean/declarations/native-tail-energy-forces-deficit-rate.md) | 58 | `result-track:fa4dbfcad69913d7b5ddaeb4bb8762f3a5802ce869918dc862b8d8f97a82cdc9` |
-| 5 | `theorem` | [finite_square_energy_forces_native_deficit_rate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/InfiniteSquareEnergyAndTheNativeDeficitRate.lean/declarations/finite-square-energy-forces-native-deficit-rate.md) | 75 | `result-track:46e633e9ee238d57dd67ac3d7f1a3b8b244c7ee28ad2caddc657524e80a2a6da` |
+| 1 | `theorem` | [finite_square_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/InfiniteSquareEnergyAndTheNativeDeficitRate.lean/declarations/finite-square-bound.md) | 25 | `result-track:cfff5d884159d1937770fdcdc70786c2046de1df7d124943ba72f4af7c52ee4f` |
+| 2 | `theorem` | [infinite_square_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/InfiniteSquareEnergyAndTheNativeDeficitRate.lean/declarations/infinite-square-bound.md) | 37 | `result-track:58cf7db81d98c713e77aa804217e8c305e309ae6977a315c469d54a97e8831c0` |
+| 3 | `theorem` | [native_scaled_deficit_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/InfiniteSquareEnergyAndTheNativeDeficitRate.lean/declarations/native-scaled-deficit-square.md) | 45 | `result-track:b1cd469d8f1396d78d56d589cda8fdef5f53b7ce1db4ae54f6e418af31de3f1a` |
+| 4 | `theorem` | [native_tail_energy_forces_deficit_rate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/InfiniteSquareEnergyAndTheNativeDeficitRate.lean/declarations/native-tail-energy-forces-deficit-rate.md) | 58 | `result-track:fa4dbfcad69913d7b5ddaeb4bb8762f3a5802ce869918dc862b8d8f97a82cdc9` |
+| 5 | `theorem` | [finite_square_energy_forces_native_deficit_rate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/InfiniteSquareEnergyAndTheNativeDeficitRate.lean/declarations/finite-square-energy-forces-native-deficit-rate.md) | 75 | `result-track:46e633e9ee238d57dd67ac3d7f1a3b8b244c7ee28ad2caddc657524e80a2a6da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

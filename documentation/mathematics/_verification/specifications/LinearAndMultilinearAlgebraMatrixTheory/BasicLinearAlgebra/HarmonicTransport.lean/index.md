@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicTransport.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsHarmonic](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicTransport.lean/declarations/isharmonic.md) | 20 | `declaration-track:0682c089bb818a171ef09f18f41af8121503aeec8bb36c1535771e82792137f8` |
-| 2 | `theorem` | [fold_preserves_harmonicSubspace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicTransport.lean/declarations/fold-preserves-harmonicsubspace.md) | 26 | `result-track:6b6d67001d929359185e7f5f369068afef4852e335a855bad20b4b1cd2c84b1d` |
-| 3 | `theorem` | [fold_intertwines_diffuser](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicTransport.lean/declarations/fold-intertwines-diffuser.md) | 38 | `result-track:a93809b18c1c025f4a2c40d767d46fca51da726bab224ed6ecdbf4dd09541dee` |
+| 1 | `def` | [IsHarmonic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicTransport.lean/declarations/isharmonic.md) | 20 | `declaration-track:0682c089bb818a171ef09f18f41af8121503aeec8bb36c1535771e82792137f8` |
+| 2 | `theorem` | [fold_preserves_harmonicSubspace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicTransport.lean/declarations/fold-preserves-harmonicsubspace.md) | 26 | `result-track:6b6d67001d929359185e7f5f369068afef4852e335a855bad20b4b1cd2c84b1d` |
+| 3 | `theorem` | [fold_intertwines_diffuser](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicTransport.lean/declarations/fold-intertwines-diffuser.md) | 38 | `result-track:a93809b18c1c025f4a2c40d767d46fca51da726bab224ed6ecdbf4dd09541dee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

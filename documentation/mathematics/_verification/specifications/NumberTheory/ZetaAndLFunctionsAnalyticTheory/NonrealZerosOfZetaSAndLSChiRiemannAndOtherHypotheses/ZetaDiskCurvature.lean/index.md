@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCurvature.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCurvature.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCurvature.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCurvature.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CubicZetaCircleBound`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CubicZetaCircleBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.Complex.Liouville` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [analyticOnNhd_zeta_disk](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCurvature.lean/declarations/analyticonnhd-zeta-disk.md) | 27 | `result-track:ca82d82e8d5b11257d2b5ed39c45599d009c1d01901e29bf6060af0bc2953e58` |
-| 2 | `theorem` | [half_disk_subset](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCurvature.lean/declarations/half-disk-subset.md) | 38 | `result-track:b3ac17bda1664367619dd43481ac05bec847b5aa1793c5c2be85f8e295fd1989` |
-| 3 | `theorem` | [norm_zeta_second_le](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCurvature.lean/declarations/norm-zeta-second-le.md) | 48 | `result-track:e20418973171e59452add5231a042a0796a69b1af95d12f94dbe4b6d0eba2cf3` |
-| 4 | `theorem` | [nontrivial_of_zero_in_disk](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCurvature.lean/declarations/nontrivial-of-zero-in-disk.md) | 66 | `result-track:ab6b46e01be258a51759455582bd5e7bc8a9d92884d9f35982d45e247a0b0f13` |
+| 1 | `theorem` | [analyticOnNhd_zeta_disk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCurvature.lean/declarations/analyticonnhd-zeta-disk.md) | 27 | `result-track:ca82d82e8d5b11257d2b5ed39c45599d009c1d01901e29bf6060af0bc2953e58` |
+| 2 | `theorem` | [half_disk_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCurvature.lean/declarations/half-disk-subset.md) | 38 | `result-track:b3ac17bda1664367619dd43481ac05bec847b5aa1793c5c2be85f8e295fd1989` |
+| 3 | `theorem` | [norm_zeta_second_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCurvature.lean/declarations/norm-zeta-second-le.md) | 48 | `result-track:e20418973171e59452add5231a042a0796a69b1af95d12f94dbe4b6d0eba2cf3` |
+| 4 | `theorem` | [nontrivial_of_zero_in_disk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCurvature.lean/declarations/nontrivial-of-zero-in-disk.md) | 66 | `result-track:ab6b46e01be258a51759455582bd5e7bc8a9d92884d9f35982d45e247a0b0f13` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

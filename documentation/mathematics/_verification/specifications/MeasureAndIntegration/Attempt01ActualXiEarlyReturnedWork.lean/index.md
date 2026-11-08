@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualXiEarlyReturnedWork](../../../../MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/declarations/actualxiearlyreturnedwork.md) | 26 | `declaration-track:89a900ede9d622f729dab5cc2b75527fbb89c273fd4b91669cdb8458ad387c29` |
-| 2 | `def` | [actualXiLateReturnedWork](../../../../MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/declarations/actualxilatereturnedwork.md) | 31 | `declaration-track:52d30c8a2d7f02b388bb6f628b71f502c13380c093b745a47f9004771144f75a` |
-| 3 | `def` | [actualXiEarlyReturnedBudget](../../../../MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/declarations/actualxiearlyreturnedbudget.md) | 36 | `declaration-track:db684c53333c07657ecd52058923d59ebdce23851b155ad9c5f575f887a9944d` |
-| 4 | `theorem` | [actualXiEarlyReturned_split_orders](../../../../MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/declarations/actualxiearlyreturned-split-orders.md) | 40 | `result-track:5642773dba7c84920ad38a1d4a3ea7aaeb609105f24c768f7b838123196c37c5` |
-| 5 | `theorem` | [actualXiReturnedWork_intervalIntegrable](../../../../MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/declarations/actualxireturnedwork-intervalintegrable.md) | 51 | `result-track:629f053e1ce14abf358e8a3ad209ad357453e27c0506065fd52f983ec760a7c9` |
-| 6 | `theorem` | [actualXiReturnDensity_origin_abs_le](../../../../MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/declarations/actualxireturndensity-origin-abs-le.md) | 70 | `result-track:5f6ff68ee77034933f1ec6e9bbdba32eb8f90579ac431d891982ccbf781c2017` |
-| 7 | `theorem` | [integral_half_exp](../../../../MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/declarations/integral-half-exp.md) | 91 | `result-track:651a9add001b3a8310ddfb3af1217bd4b46fd738b592f766981abd45d5881d4e` |
-| 8 | `theorem` | [actualXiEarlyReturnedWork_abs_le](../../../../MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/declarations/actualxiearlyreturnedwork-abs-le.md) | 103 | `result-track:452185d746a085ca9072d962ef359ba3ecc3f76d9406e72c0728fa28333c4297` |
-| 9 | `theorem` | [completeXiTail_eq_early_add_late](../../../../MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/declarations/completexitail-eq-early-add-late.md) | 157 | `result-track:18cacc0ffb2b3c9beae948328dc37eb5799769515a82784ccd9fd5d7c6c05612` |
+| 1 | `def` | [actualXiEarlyReturnedWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/declarations/actualxiearlyreturnedwork.md) | 26 | `declaration-track:89a900ede9d622f729dab5cc2b75527fbb89c273fd4b91669cdb8458ad387c29` |
+| 2 | `def` | [actualXiLateReturnedWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/declarations/actualxilatereturnedwork.md) | 31 | `declaration-track:52d30c8a2d7f02b388bb6f628b71f502c13380c093b745a47f9004771144f75a` |
+| 3 | `def` | [actualXiEarlyReturnedBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/declarations/actualxiearlyreturnedbudget.md) | 36 | `declaration-track:db684c53333c07657ecd52058923d59ebdce23851b155ad9c5f575f887a9944d` |
+| 4 | `theorem` | [actualXiEarlyReturned_split_orders](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/declarations/actualxiearlyreturned-split-orders.md) | 40 | `result-track:5642773dba7c84920ad38a1d4a3ea7aaeb609105f24c768f7b838123196c37c5` |
+| 5 | `theorem` | [actualXiReturnedWork_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/declarations/actualxireturnedwork-intervalintegrable.md) | 51 | `result-track:629f053e1ce14abf358e8a3ad209ad357453e27c0506065fd52f983ec760a7c9` |
+| 6 | `theorem` | [actualXiReturnDensity_origin_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/declarations/actualxireturndensity-origin-abs-le.md) | 70 | `result-track:5f6ff68ee77034933f1ec6e9bbdba32eb8f90579ac431d891982ccbf781c2017` |
+| 7 | `theorem` | [integral_half_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/declarations/integral-half-exp.md) | 91 | `result-track:651a9add001b3a8310ddfb3af1217bd4b46fd738b592f766981abd45d5881d4e` |
+| 8 | `theorem` | [actualXiEarlyReturnedWork_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/declarations/actualxiearlyreturnedwork-abs-le.md) | 103 | `result-track:452185d746a085ca9072d962ef359ba3ecc3f76d9406e72c0728fa28333c4297` |
+| 9 | `theorem` | [completeXiTail_eq_early_add_late](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualXiEarlyReturnedWork.lean/declarations/completexitail-eq-early-add-late.md) | 157 | `result-track:18cacc0ffb2b3c9beae948328dc37eb5799769515a82784ccd9fd5d7c6c05612` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

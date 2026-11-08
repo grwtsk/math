@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/HeatRicciHomologyNamespaced.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/HeatRicciHomologyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/HeatRicciHomologyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/HeatRicciHomologyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [analytic_heat_ricci_flow_preserves_declared_homology](../../../../DynamicalSystemsAndErgodicTheory/HeatRicciHomologyNamespaced.lean/declarations/analytic-heat-ricci-flow-preserves-declared-homology.md) | 37 | `result-track:1490ed4ebe15cdc390c9946a914beba0d214f5925faecae3484c5bcc499c6633` |
-| 2 | `structure` | [HilbertFlowHeatRicciHomologySeed](../../../../DynamicalSystemsAndErgodicTheory/HeatRicciHomologyNamespaced.lean/declarations/hilbertflowheatriccihomologyseed.md) | 51 | `declaration-track:37f2a23d2d40e57d28bc853599e13e59039082e496edfea31361d8e75f601e91` |
-| 3 | `def` | [HilbertFlowHeatRicciHomologySeed.certifiedForMajorProof](../../../../DynamicalSystemsAndErgodicTheory/HeatRicciHomologyNamespaced.lean/declarations/hilbertflowheatriccihomologyseed-certifiedformajorproof.md) | 67 | `declaration-track:68e21b8079010ecea4c1cd2235aacec7dd01d975156c0ba8f69b94ac3fc5cca8` |
-| 4 | `theorem` | [HilbertFlowHeatRicciHomologySeed.certifiedForMajorProof_of_fields](../../../../DynamicalSystemsAndErgodicTheory/HeatRicciHomologyNamespaced.lean/declarations/hilbertflowheatriccihomologyseed-certifiedformajorproof-of-fields.md) | 73 | `result-track:204dc6eba9c5940bafc25516a508e6f1f809b9226090a85706bac46687ba31e4` |
-| 5 | `theorem` | [HilbertFlowHeatRicciHomologySeed.implies_trace_scaffold_theoremReady](../../../../DynamicalSystemsAndErgodicTheory/HeatRicciHomologyNamespaced.lean/declarations/hilbertflowheatriccihomologyseed-implies-trace-scaffold-theoremready.md) | 83 | `result-track:9d27e1f09da42319f57d1c86af33b5b214764b4600877bdcdc726c7ad394543d` |
+| 1 | `theorem` | [analytic_heat_ricci_flow_preserves_declared_homology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/HeatRicciHomologyNamespaced.lean/declarations/analytic-heat-ricci-flow-preserves-declared-homology.md) | 37 | `result-track:1490ed4ebe15cdc390c9946a914beba0d214f5925faecae3484c5bcc499c6633` |
+| 2 | `structure` | [HilbertFlowHeatRicciHomologySeed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/HeatRicciHomologyNamespaced.lean/declarations/hilbertflowheatriccihomologyseed.md) | 51 | `declaration-track:37f2a23d2d40e57d28bc853599e13e59039082e496edfea31361d8e75f601e91` |
+| 3 | `def` | [HilbertFlowHeatRicciHomologySeed.certifiedForMajorProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/HeatRicciHomologyNamespaced.lean/declarations/hilbertflowheatriccihomologyseed-certifiedformajorproof.md) | 67 | `declaration-track:68e21b8079010ecea4c1cd2235aacec7dd01d975156c0ba8f69b94ac3fc5cca8` |
+| 4 | `theorem` | [HilbertFlowHeatRicciHomologySeed.certifiedForMajorProof_of_fields](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/HeatRicciHomologyNamespaced.lean/declarations/hilbertflowheatriccihomologyseed-certifiedformajorproof-of-fields.md) | 73 | `result-track:204dc6eba9c5940bafc25516a508e6f1f809b9226090a85706bac46687ba31e4` |
+| 5 | `theorem` | [HilbertFlowHeatRicciHomologySeed.implies_trace_scaffold_theoremReady](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/HeatRicciHomologyNamespaced.lean/declarations/hilbertflowheatriccihomologyseed-implies-trace-scaffold-theoremready.md) | 83 | `result-track:9d27e1f09da42319f57d1c86af33b5b214764b4600877bdcdc726c7ad394543d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

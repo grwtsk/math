@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [increment](../../../../../Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/declarations/increment.md) | 62 | `declaration-track:148d1d02f8a3c5d99ec83feff5da5453f2a26559da5b4b576182c60df9b2a79d` |
-| 2 | `theorem` | [card_increment](../../../../../Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/declarations/card-increment.md) | 70 | `result-track:466c2888b08f9438750584d20fadeffd93b65fb8a4958a7f57efbace87986100` |
-| 3 | `theorem` | [increment_isEquipartition](../../../../../Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/declarations/increment-isequipartition.md) | 86 | `result-track:ee669123486e44babb49bce6cae13ecc59296b4b164b982e0a544eb4b676bcce` |
-| 4 | `def` | [distinctPairs](../../../../../Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/declarations/distinctpairs.md) | 94 | `declaration-track:b89597835a7aec6cea11bf59e6587e19d98eb7766bb8d2bc87419e8422ccd2e9` |
-| 5 | `theorem` | [distinctPairs_increment](../../../../../Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/declarations/distinctpairs-increment.md) | 100 | `result-track:d5f393a4ffc89ca5729152c27ad91dfa8f63cef5c1b5a3bd0af5aa3e69cb3275` |
-| 6 | `lemma` | [pairwiseDisjoint_distinctPairs](../../../../../Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/declarations/pairwisedisjoint-distinctpairs.md) | 112 | `result-track:42c86c31ce238c9ffe98d0ce0a3d5221fe1ca93fd5c48494b2c1532be0c2c924` |
-| 7 | `lemma` | [le_sum_distinctPairs_edgeDensity_sq](../../../../../Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/declarations/le-sum-distinctpairs-edgedensity-sq.md) | 129 | `result-track:b662bfa2aa430fd3057b32b87a9c1e569f551f8ee497a7cdc2d3b67b33f0923e` |
-| 8 | `theorem` | [energy_increment](../../../../../Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/declarations/energy-increment.md) | 141 | `result-track:016c75aa121209e1870612c3c59e8b0cf4b0a842c44465ec3c18365a8e3bd54b` |
+| 1 | `def` | [increment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/declarations/increment.md) | 62 | `declaration-track:148d1d02f8a3c5d99ec83feff5da5453f2a26559da5b4b576182c60df9b2a79d` |
+| 2 | `theorem` | [card_increment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/declarations/card-increment.md) | 70 | `result-track:466c2888b08f9438750584d20fadeffd93b65fb8a4958a7f57efbace87986100` |
+| 3 | `theorem` | [increment_isEquipartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/declarations/increment-isequipartition.md) | 86 | `result-track:ee669123486e44babb49bce6cae13ecc59296b4b164b982e0a544eb4b676bcce` |
+| 4 | `def` | [distinctPairs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/declarations/distinctpairs.md) | 94 | `declaration-track:b89597835a7aec6cea11bf59e6587e19d98eb7766bb8d2bc87419e8422ccd2e9` |
+| 5 | `theorem` | [distinctPairs_increment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/declarations/distinctpairs-increment.md) | 100 | `result-track:d5f393a4ffc89ca5729152c27ad91dfa8f63cef5c1b5a3bd0af5aa3e69cb3275` |
+| 6 | `lemma` | [pairwiseDisjoint_distinctPairs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/declarations/pairwisedisjoint-distinctpairs.md) | 112 | `result-track:42c86c31ce238c9ffe98d0ce0a3d5221fe1ca93fd5c48494b2c1532be0c2c924` |
+| 7 | `lemma` | [le_sum_distinctPairs_edgeDensity_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/declarations/le-sum-distinctpairs-edgedensity-sq.md) | 129 | `result-track:b662bfa2aa430fd3057b32b87a9c1e569f551f8ee497a7cdc2d3b67b33f0923e` |
+| 8 | `theorem` | [energy_increment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RegularityIncrementIncrementNamespacedSourceEdition2.lean/declarations/energy-increment.md) | 141 | `result-track:016c75aa121209e1870612c3c59e8b0cf4b0a842c44465ec3c18365a8e3bd54b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

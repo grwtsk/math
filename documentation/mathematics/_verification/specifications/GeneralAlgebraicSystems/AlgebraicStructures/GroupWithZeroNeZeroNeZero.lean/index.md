@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNeZeroNeZero.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNeZeroNeZero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNeZeroNeZero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNeZeroNeZero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [NeZero.one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNeZeroNeZero.lean/declarations/nezero-one.md) | 23 | `declaration-track:204c0a6e30442e1194336439f071ca94ee9af5770223130ad7483c6ab80cfbf9` |
-| 2 | `theorem` | [domain_nontrivial](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNeZeroNeZero.lean/declarations/domain-nontrivial.md) | 34 | `result-track:7cb8e35b11a10ba836706795b23bf242079fce68901b67757946c19e28e4c04b` |
-| 3 | `theorem` | [inv_ne_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNeZeroNeZero.lean/declarations/inv-ne-zero.md) | 47 | `result-track:53050e5faf2a18f44b8a7f0dc620d5232dc4fb02fd023be4cbab8f8ff890a0c8` |
-| 4 | `theorem` | [inv_mul_cancel₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNeZeroNeZero.lean/declarations/inv-mul-cancel.md) | 52 | `result-track:5fa98920df542862321724caac36051f29cf77dfd304e259f5675316fadef04c` |
+| 1 | `instance` | [NeZero.one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNeZeroNeZero.lean/declarations/nezero-one.md) | 23 | `declaration-track:204c0a6e30442e1194336439f071ca94ee9af5770223130ad7483c6ab80cfbf9` |
+| 2 | `theorem` | [domain_nontrivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNeZeroNeZero.lean/declarations/domain-nontrivial.md) | 34 | `result-track:7cb8e35b11a10ba836706795b23bf242079fce68901b67757946c19e28e4c04b` |
+| 3 | `theorem` | [inv_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNeZeroNeZero.lean/declarations/inv-ne-zero.md) | 47 | `result-track:53050e5faf2a18f44b8a7f0dc620d5232dc4fb02fd023be4cbab8f8ff890a0c8` |
+| 4 | `theorem` | [inv_mul_cancel₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNeZeroNeZero.lean/declarations/inv-mul-cancel.md) | 52 | `result-track:5fa98920df542862321724caac36051f29cf77dfd304e259f5675316fadef04c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

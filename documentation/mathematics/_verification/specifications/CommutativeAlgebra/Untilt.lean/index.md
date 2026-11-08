@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Untilt.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Untilt.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Untilt.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Untilt.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [untiltAux](../../../../CommutativeAlgebra/Untilt.lean/declarations/untiltaux.md) | 48 | `declaration-track:f2eec01a7deb4e6d0998c52286acb1f19ab14a650932ecc7d88bff89014ca2ba` |
-| 2 | `lemma` | [pow_dvd_untiltAux_sub_untiltAux](../../../../CommutativeAlgebra/Untilt.lean/declarations/pow-dvd-untiltaux-sub-untiltaux.md) | 54 | `result-track:add7078f811b262ce99fbcde66f3fa382fc91d4928d9359acd9397dca2f0781f` |
-| 3 | `lemma` | [pow_dvd_one_untiltAux_sub_one](../../../../CommutativeAlgebra/Untilt.lean/declarations/pow-dvd-one-untiltaux-sub-one.md) | 72 | `result-track:db15b12c9868416f13062bd1218204c45b17cb0ae8d15506df2bd93e1dc41c59` |
-| 4 | `lemma` | [pow_dvd_mul_untiltAux_sub_untiltAux_mul](../../../../CommutativeAlgebra/Untilt.lean/declarations/pow-dvd-mul-untiltaux-sub-untiltaux-mul.md) | 83 | `result-track:1185b04026fff75c3f93fec0d738d28f4fca8bad662ffcadc1353cbe28372efb` |
-| 5 | `lemma` | [exists_smodEq_untiltAux](../../../../CommutativeAlgebra/Untilt.lean/declarations/exists-smodeq-untiltaux.md) | 97 | `result-track:140265e2f39eb3080becbaaff2062d0e676cf7a5fdf1b2a8fc3f742a637a8089` |
-| 6 | `def` | [untiltFun](../../../../CommutativeAlgebra/Untilt.lean/declarations/untiltfun.md) | 108 | `declaration-track:25e6c0f6d60ad88a5ecb3c09f13275bac850f9e3ea2d784d56a98f4bcd8dc749` |
-| 7 | `lemma` | [untiltAux_smodEq_untiltFun](../../../../CommutativeAlgebra/Untilt.lean/declarations/untiltaux-smodeq-untiltfun.md) | 111 | `result-track:f97bf034e89975c3c55aeee68c725c9eaaf1ecdd08dc1541cba02cd7ea5cd0f5` |
-| 8 | `def` | [untilt](../../../../CommutativeAlgebra/Untilt.lean/declarations/untilt.md) | 127 | `declaration-track:d241f30720595ff24c047a30130f26c663844eb881899c2f369cf18735a9ea7b` |
-| 9 | `theorem` | [mk_untilt_eq_coeff_zero](../../../../CommutativeAlgebra/Untilt.lean/declarations/mk-untilt-eq-coeff-zero.md) | 152 | `result-track:c8e52c5922ebeaed500e136c478a15faf1b0ae0d5247b8c585df3a1589b90425` |
-| 10 | `theorem` | [mk_comp_untilt_eq_coeff_zero](../../../../CommutativeAlgebra/Untilt.lean/declarations/mk-comp-untilt-eq-coeff-zero.md) | 163 | `result-track:7efded5745009a55e309c76cc800ff044a062a8aab03c4b9c1b195fb7e915d03` |
+| 1 | `def` | [untiltAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Untilt.lean/declarations/untiltaux.md) | 48 | `declaration-track:f2eec01a7deb4e6d0998c52286acb1f19ab14a650932ecc7d88bff89014ca2ba` |
+| 2 | `lemma` | [pow_dvd_untiltAux_sub_untiltAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Untilt.lean/declarations/pow-dvd-untiltaux-sub-untiltaux.md) | 54 | `result-track:add7078f811b262ce99fbcde66f3fa382fc91d4928d9359acd9397dca2f0781f` |
+| 3 | `lemma` | [pow_dvd_one_untiltAux_sub_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Untilt.lean/declarations/pow-dvd-one-untiltaux-sub-one.md) | 72 | `result-track:db15b12c9868416f13062bd1218204c45b17cb0ae8d15506df2bd93e1dc41c59` |
+| 4 | `lemma` | [pow_dvd_mul_untiltAux_sub_untiltAux_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Untilt.lean/declarations/pow-dvd-mul-untiltaux-sub-untiltaux-mul.md) | 83 | `result-track:1185b04026fff75c3f93fec0d738d28f4fca8bad662ffcadc1353cbe28372efb` |
+| 5 | `lemma` | [exists_smodEq_untiltAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Untilt.lean/declarations/exists-smodeq-untiltaux.md) | 97 | `result-track:140265e2f39eb3080becbaaff2062d0e676cf7a5fdf1b2a8fc3f742a637a8089` |
+| 6 | `def` | [untiltFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Untilt.lean/declarations/untiltfun.md) | 108 | `declaration-track:25e6c0f6d60ad88a5ecb3c09f13275bac850f9e3ea2d784d56a98f4bcd8dc749` |
+| 7 | `lemma` | [untiltAux_smodEq_untiltFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Untilt.lean/declarations/untiltaux-smodeq-untiltfun.md) | 111 | `result-track:f97bf034e89975c3c55aeee68c725c9eaaf1ecdd08dc1541cba02cd7ea5cd0f5` |
+| 8 | `def` | [untilt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Untilt.lean/declarations/untilt.md) | 127 | `declaration-track:d241f30720595ff24c047a30130f26c663844eb881899c2f369cf18735a9ea7b` |
+| 9 | `theorem` | [mk_untilt_eq_coeff_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Untilt.lean/declarations/mk-untilt-eq-coeff-zero.md) | 152 | `result-track:c8e52c5922ebeaed500e136c478a15faf1b0ae0d5247b8c585df3a1589b90425` |
+| 10 | `theorem` | [mk_comp_untilt_eq_coeff_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Untilt.lean/declarations/mk-comp-untilt-eq-coeff-zero.md) | 163 | `result-track:7efded5745009a55e309c76cc800ff044a062a8aab03c4b9c1b195fb7e915d03` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

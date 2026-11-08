@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservationalBooleanLaws.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservationalBooleanLaws.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservationalBooleanLaws.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservationalBooleanLaws.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Mathlib.Data.Matrix.Basic` — import line 19; external provider; requires a separately pinned dependency.
 - `Init.Data.Array.MapIdx` — import line 20; external provider; requires a separately pinned dependency.
-- [Pointwise Specifications](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/index.md) — import line 22; pinned internal source present.
+- [Pointwise Specifications](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [andInPlace_comm_toMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservationalBooleanLaws.lean/declarations/andinplace-comm-tomatrix.md) | 59 | `result-track:404b125602354a98bf7210bf87a7e13c1b8ee37893ad790c278b3be8103d48f3` |
-| 2 | `theorem` | [andInPlace_assoc_toMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservationalBooleanLaws.lean/declarations/andinplace-assoc-tomatrix.md) | 66 | `result-track:5e238cf6faab651d97297aa26420e54923fc816579171999db576c1f15f27123` |
-| 3 | `theorem` | [notInPlace_involutive_toMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservationalBooleanLaws.lean/declarations/notinplace-involutive-tomatrix.md) | 74 | `result-track:c4cd6ce0caf14619a1161d5aa2939b9c614fbe1b84af619a5fff78c46abc79eb` |
+| 1 | `theorem` | [andInPlace_comm_toMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservationalBooleanLaws.lean/declarations/andinplace-comm-tomatrix.md) | 59 | `result-track:404b125602354a98bf7210bf87a7e13c1b8ee37893ad790c278b3be8103d48f3` |
+| 2 | `theorem` | [andInPlace_assoc_toMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservationalBooleanLaws.lean/declarations/andinplace-assoc-tomatrix.md) | 66 | `result-track:5e238cf6faab651d97297aa26420e54923fc816579171999db576c1f15f27123` |
+| 3 | `theorem` | [notInPlace_involutive_toMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservationalBooleanLaws.lean/declarations/notinplace-involutive-tomatrix.md) | 74 | `result-track:c4cd6ce0caf14619a1161d5aa2939b9c614fbe1b84af619a5fff78c46abc79eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

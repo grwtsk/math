@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EvaluationPreservation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EvaluationPreservation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EvaluationPreservation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EvaluationPreservation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Nand Expression Translation Translation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NandExpressionTranslationTranslation.lean/index.md) — import line 20; pinned internal source present.
+- [Nand Expression Translation Translation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NandExpressionTranslationTranslation.lean/index.md) — import line 20; pinned internal source present.
 - `Folder.Boolean.NAND` — import line 21; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [compileToNand_correct](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EvaluationPreservation.lean/declarations/compiletonand-correct.md) | 41 | `result-track:e8aa0c2118bd71b3bfd34e32924e84debd996e24b2686812ed187112004b7abc` |
+| 1 | `theorem` | [compileToNand_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EvaluationPreservation.lean/declarations/compiletonand-correct.md) | 41 | `result-track:e8aa0c2118bd71b3bfd34e32924e84debd996e24b2686812ed187112004b7abc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

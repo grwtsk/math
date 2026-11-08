@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [scalar](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/declarations/scalar.md) | 28 | `declaration-track:7244078f9d2a2efb2a244960bc45ccd557be20a56dc085cca63ae1c5493db817` |
-| 2 | `def` | [weights](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/declarations/weights.md) | 30 | `declaration-track:de51aa819eb9678010a0325e140bf4c477c0a0ab2998298da13d72ae893f661a` |
-| 3 | `def` | [reducedWeightedEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/declarations/reducedweightedequiv.md) | 33 | `declaration-track:7a069f77653e404d171aab9e400fed65a9e29ddf4108af6e7d606058af73c0ca` |
-| 4 | `theorem` | [inertia_counts](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/declarations/inertia-counts.md) | 44 | `result-track:6d0936c2c82b7867408a8a5c6fde88ebadd87e0ad72fe91657034e0857cea967` |
-| 5 | `theorem` | [nonzero_shear](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/declarations/nonzero-shear.md) | 59 | `result-track:5991f940fe406faabbea9ad89e89972a1edc0cd1d2f08dcd62bdf3bda24b7a5c` |
-| 6 | `theorem` | [singular_center](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/declarations/singular-center.md) | 65 | `result-track:7fb22ea91504cc8727a61c132e5908a139eac809802d27e0a0aea3c945da0386` |
-| 7 | `theorem` | [singular_inertia](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/declarations/singular-inertia.md) | 72 | `result-track:24020c3e320836db044cbf65921e7209a8b3b40005a24f6dfb5078f44fc2b5d7` |
-| 8 | `theorem` | [indefinite_inertia](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/declarations/indefinite-inertia.md) | 92 | `result-track:596c991047f8253e2289a95d8e524f14e294ccfd20ac8dc7f50de6045d1a94ce` |
+| 1 | `def` | [scalar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/declarations/scalar.md) | 28 | `declaration-track:7244078f9d2a2efb2a244960bc45ccd557be20a56dc085cca63ae1c5493db817` |
+| 2 | `def` | [weights](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/declarations/weights.md) | 30 | `declaration-track:de51aa819eb9678010a0325e140bf4c477c0a0ab2998298da13d72ae893f661a` |
+| 3 | `def` | [reducedWeightedEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/declarations/reducedweightedequiv.md) | 33 | `declaration-track:7a069f77653e404d171aab9e400fed65a9e29ddf4108af6e7d606058af73c0ca` |
+| 4 | `theorem` | [inertia_counts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/declarations/inertia-counts.md) | 44 | `result-track:6d0936c2c82b7867408a8a5c6fde88ebadd87e0ad72fe91657034e0857cea967` |
+| 5 | `theorem` | [nonzero_shear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/declarations/nonzero-shear.md) | 59 | `result-track:5991f940fe406faabbea9ad89e89972a1edc0cd1d2f08dcd62bdf3bda24b7a5c` |
+| 6 | `theorem` | [singular_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/declarations/singular-center.md) | 65 | `result-track:7fb22ea91504cc8727a61c132e5908a139eac809802d27e0a0aea3c945da0386` |
+| 7 | `theorem` | [singular_inertia](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/declarations/singular-inertia.md) | 72 | `result-track:24020c3e320836db044cbf65921e7209a8b3b40005a24f6dfb5078f44fc2b5d7` |
+| 8 | `theorem` | [indefinite_inertia](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachInertiaAuditNamespaced.lean/declarations/indefinite-inertia.md) | 92 | `result-track:596c991047f8253e2289a95d8e524f14e294ccfd20ac8dc7f50de6045d1a94ce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

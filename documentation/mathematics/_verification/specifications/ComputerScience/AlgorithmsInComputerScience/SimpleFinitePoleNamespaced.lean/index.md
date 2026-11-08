@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SimpleFinitePoleNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SimpleFinitePoleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SimpleFinitePoleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SimpleFinitePoleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SimpleFinitePoleDescriptor](../../../../../ComputerScience/AlgorithmsInComputerScience/SimpleFinitePoleNamespaced.lean/declarations/simplefinitepoledescriptor.md) | 16 | `declaration-track:ca620316d9b79a4bc536b5e9cddb9e0c163476e8c4e60cf6c492610e9250a235` |
-| 2 | `theorem` | [simpleFinitePole_has_matrix_residue](../../../../../ComputerScience/AlgorithmsInComputerScience/SimpleFinitePoleNamespaced.lean/declarations/simplefinitepole-has-matrix-residue.md) | 29 | `result-track:52cb37bb329aa6a5b9fe24084baa8a0ae90c52d9bc0d72dac22afea96d4197cc` |
+| 1 | `structure` | [SimpleFinitePoleDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SimpleFinitePoleNamespaced.lean/declarations/simplefinitepoledescriptor.md) | 16 | `declaration-track:ca620316d9b79a4bc536b5e9cddb9e0c163476e8c4e60cf6c492610e9250a235` |
+| 2 | `theorem` | [simpleFinitePole_has_matrix_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SimpleFinitePoleNamespaced.lean/declarations/simplefinitepole-has-matrix-residue.md) | 29 | `result-track:52cb37bb329aa6a5b9fe24084baa8a0ae90c52d9bc0d72dac22afea96d4197cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

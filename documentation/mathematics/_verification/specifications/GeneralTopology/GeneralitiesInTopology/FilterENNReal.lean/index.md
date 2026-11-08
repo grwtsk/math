@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/GeneralitiesInTopology/FilterENNReal.lean/index.md) · [Full source](../../../../../GeneralTopology/GeneralitiesInTopology/FilterENNReal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterENNReal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterENNReal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eventually_le_limsup](../../../../../GeneralTopology/GeneralitiesInTopology/FilterENNReal.lean/declarations/eventually-le-limsup.md) | 23 | `result-track:653ccd5ccfa5a9964000427129e36c6eb6d025af4a10211f76a620efcb696dec` |
-| 2 | `theorem` | [limsup_eq_zero_iff](../../../../../GeneralTopology/GeneralitiesInTopology/FilterENNReal.lean/declarations/limsup-eq-zero-iff.md) | 28 | `result-track:37040341040ae3a896cd4c10ced2a36154932ad3a9d65d3d52aad3a4f13e0002` |
-| 3 | `theorem` | [limsup_const_mul_of_ne_top](../../../../../GeneralTopology/GeneralitiesInTopology/FilterENNReal.lean/declarations/limsup-const-mul-of-ne-top.md) | 33 | `result-track:5ddf145af04730d1c165bde0cca8c12089fa7cdb56dd9bd6aeeca095687b5258` |
-| 4 | `theorem` | [limsup_const_mul](../../../../../GeneralTopology/GeneralitiesInTopology/FilterENNReal.lean/declarations/limsup-const-mul.md) | 50 | `result-track:bbcfa3a5da78f7783867da2a8d21f781cf1ce36d6e75252408a37b82170306d5` |
-| 5 | `theorem` | [limsup_mul_le](../../../../../GeneralTopology/GeneralitiesInTopology/FilterENNReal.lean/declarations/limsup-mul-le.md) | 71 | `result-track:b922de5077edcd46b83f24c6c21329b144b3a2dadb3892e61250f3bb583f9e26` |
-| 6 | `theorem` | [limsup_add_le](../../../../../GeneralTopology/GeneralitiesInTopology/FilterENNReal.lean/declarations/limsup-add-le.md) | 80 | `result-track:d2c8df3fda5dd8f98e9f370b461146ce96145512903fdf94915eae18119c2fb8` |
-| 7 | `theorem` | [limsup_liminf_le_liminf_limsup](../../../../../GeneralTopology/GeneralitiesInTopology/FilterENNReal.lean/declarations/limsup-liminf-le-liminf-limsup.md) | 86 | `result-track:b22453501a137390a86418480fee429363b213b9ecfdb089048a8ce0b83f2e94` |
+| 1 | `theorem` | [eventually_le_limsup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterENNReal.lean/declarations/eventually-le-limsup.md) | 23 | `result-track:653ccd5ccfa5a9964000427129e36c6eb6d025af4a10211f76a620efcb696dec` |
+| 2 | `theorem` | [limsup_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterENNReal.lean/declarations/limsup-eq-zero-iff.md) | 28 | `result-track:37040341040ae3a896cd4c10ced2a36154932ad3a9d65d3d52aad3a4f13e0002` |
+| 3 | `theorem` | [limsup_const_mul_of_ne_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterENNReal.lean/declarations/limsup-const-mul-of-ne-top.md) | 33 | `result-track:5ddf145af04730d1c165bde0cca8c12089fa7cdb56dd9bd6aeeca095687b5258` |
+| 4 | `theorem` | [limsup_const_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterENNReal.lean/declarations/limsup-const-mul.md) | 50 | `result-track:bbcfa3a5da78f7783867da2a8d21f781cf1ce36d6e75252408a37b82170306d5` |
+| 5 | `theorem` | [limsup_mul_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterENNReal.lean/declarations/limsup-mul-le.md) | 71 | `result-track:b922de5077edcd46b83f24c6c21329b144b3a2dadb3892e61250f3bb583f9e26` |
+| 6 | `theorem` | [limsup_add_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterENNReal.lean/declarations/limsup-add-le.md) | 80 | `result-track:d2c8df3fda5dd8f98e9f370b461146ce96145512903fdf94915eae18119c2fb8` |
+| 7 | `theorem` | [limsup_liminf_le_liminf_limsup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterENNReal.lean/declarations/limsup-liminf-le-liminf-limsup.md) | 86 | `result-track:b22453501a137390a86418480fee429363b213b9ecfdb089048a8ce0b83f2e94` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

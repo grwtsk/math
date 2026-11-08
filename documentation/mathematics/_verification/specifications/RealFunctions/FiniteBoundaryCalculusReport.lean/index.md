@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/FiniteBoundaryCalculusReport.lean/index.md) · [Full source](../../../../RealFunctions/FiniteBoundaryCalculusReport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteBoundaryCalculusReport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteBoundaryCalculusReport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteBoundaryCalculusEvidenceSchema](../../../../RealFunctions/FiniteBoundaryCalculusReport.lean/declarations/finiteboundarycalculusevidenceschema.md) | 10 | `declaration-track:4a8e9d77c361f111c51f7f3cc1926f12ee1f3e536f2f9e36d15d456baae75337` |
-| 2 | `def` | [finiteBoundaryCalculusRustCommand](../../../../RealFunctions/FiniteBoundaryCalculusReport.lean/declarations/finiteboundarycalculusrustcommand.md) | 13 | `declaration-track:00b8b4ac036b8d98c75446d27ca98a6aea17099dcefa0f3d64ee8aea018d808e` |
-| 3 | `def` | [finiteBoundaryCalculusCarrierAction](../../../../RealFunctions/FiniteBoundaryCalculusReport.lean/declarations/finiteboundarycalculuscarrieraction.md) | 16 | `declaration-track:acf47ecc1b08e9e972b6559c9b4b2ab92829c06086a3a1cf882d6c110579cbaa` |
-| 4 | `def` | [finiteBoundaryCalculusReportClass](../../../../RealFunctions/FiniteBoundaryCalculusReport.lean/declarations/finiteboundarycalculusreportclass.md) | 19 | `declaration-track:d329d086ef570872608c29b4a3aa1b8ec101f23fbb341a7bc257ba5c244b67e6` |
-| 5 | `theorem` | [finite_boundary_calculus_report_names_finite_witness](../../../../RealFunctions/FiniteBoundaryCalculusReport.lean/declarations/finite-boundary-calculus-report-names-finite-witness.md) | 22 | `result-track:763febed8786eefe8099f45c9161d4566b6b8faf36169b4f08de6c2f51836009` |
-| 6 | `theorem` | [finite_boundary_calculus_report_classifies_finite_witness](../../../../RealFunctions/FiniteBoundaryCalculusReport.lean/declarations/finite-boundary-calculus-report-classifies-finite-witness.md) | 26 | `result-track:cec751a68b7527e2467163dd2b44c79b7342dbcb8e0d900f0cc9dec7b179a560` |
+| 1 | `def` | [finiteBoundaryCalculusEvidenceSchema](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteBoundaryCalculusReport.lean/declarations/finiteboundarycalculusevidenceschema.md) | 10 | `declaration-track:4a8e9d77c361f111c51f7f3cc1926f12ee1f3e536f2f9e36d15d456baae75337` |
+| 2 | `def` | [finiteBoundaryCalculusRustCommand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteBoundaryCalculusReport.lean/declarations/finiteboundarycalculusrustcommand.md) | 13 | `declaration-track:00b8b4ac036b8d98c75446d27ca98a6aea17099dcefa0f3d64ee8aea018d808e` |
+| 3 | `def` | [finiteBoundaryCalculusCarrierAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteBoundaryCalculusReport.lean/declarations/finiteboundarycalculuscarrieraction.md) | 16 | `declaration-track:acf47ecc1b08e9e972b6559c9b4b2ab92829c06086a3a1cf882d6c110579cbaa` |
+| 4 | `def` | [finiteBoundaryCalculusReportClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteBoundaryCalculusReport.lean/declarations/finiteboundarycalculusreportclass.md) | 19 | `declaration-track:d329d086ef570872608c29b4a3aa1b8ec101f23fbb341a7bc257ba5c244b67e6` |
+| 5 | `theorem` | [finite_boundary_calculus_report_names_finite_witness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteBoundaryCalculusReport.lean/declarations/finite-boundary-calculus-report-names-finite-witness.md) | 22 | `result-track:763febed8786eefe8099f45c9161d4566b6b8faf36169b4f08de6c2f51836009` |
+| 6 | `theorem` | [finite_boundary_calculus_report_classifies_finite_witness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteBoundaryCalculusReport.lean/declarations/finite-boundary-calculus-report-classifies-finite-witness.md) | 26 | `result-track:cec751a68b7527e2467163dd2b44c79b7342dbcb8e0d900f0cc9dec7b179a560` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

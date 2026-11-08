@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeBridgeNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeBridgeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeBridgeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeBridgeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsPowerTwoSquare](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeBridgeNamespaced.lean/declarations/ispowertwosquare.md) | 28 | `declaration-track:69efd5e5be5ef15cadbd2f2b2749c2dd23057d20250ec2953092892741fd46a3` |
-| 2 | `structure` | [BinaryCubeLevel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeBridgeNamespaced.lean/declarations/binarycubelevel.md) | 31 | `declaration-track:bbca73aa9a4e0028bae334c7029053163898c2a683e9c1fcb6a8d47fef5fa99f` |
-| 3 | `theorem` | [binaryCubeLevel_shape](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeBridgeNamespaced.lean/declarations/binarycubelevel-shape.md) | 36 | `result-track:d483c500383eec70e2a2fa400adef20e93cd12fbe2bcf597de6971b4775d5731` |
-| 4 | `abbrev` | [BinaryCubeSignal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeBridgeNamespaced.lean/declarations/binarycubesignal.md) | 42 | `declaration-track:7d58cc5a0df2585be0e42ab7991d8acb46a1ca743435f2a887b3ca6c4043c016` |
+| 1 | `def` | [IsPowerTwoSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeBridgeNamespaced.lean/declarations/ispowertwosquare.md) | 28 | `declaration-track:69efd5e5be5ef15cadbd2f2b2749c2dd23057d20250ec2953092892741fd46a3` |
+| 2 | `structure` | [BinaryCubeLevel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeBridgeNamespaced.lean/declarations/binarycubelevel.md) | 31 | `declaration-track:bbca73aa9a4e0028bae334c7029053163898c2a683e9c1fcb6a8d47fef5fa99f` |
+| 3 | `theorem` | [binaryCubeLevel_shape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeBridgeNamespaced.lean/declarations/binarycubelevel-shape.md) | 36 | `result-track:d483c500383eec70e2a2fa400adef20e93cd12fbe2bcf597de6971b4775d5731` |
+| 4 | `abbrev` | [BinaryCubeSignal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CubeBridgeNamespaced.lean/declarations/binarycubesignal.md) | 42 | `declaration-track:7d58cc5a0df2585be0e42ab7991d8acb46a1ca743435f2a887b3ca6c4043c016` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

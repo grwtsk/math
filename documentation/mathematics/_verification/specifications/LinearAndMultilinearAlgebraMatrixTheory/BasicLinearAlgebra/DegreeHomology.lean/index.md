@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomology.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomology.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomology.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomology.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cycles](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomology.lean/declarations/cycles.md) | 16 | `declaration-track:e6958f4cd6d134c8a1bc999d7272242d14d26f521f8eaec93bd145b07adb4b30` |
-| 2 | `theorem` | [boundary_mem_cycles](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomology.lean/declarations/boundary-mem-cycles.md) | 25 | `result-track:58813fb336c36ffbb98fc83c3b510ddcc9bfd49ec2bb54ecdba9d1812eef196b` |
-| 3 | `def` | [boundaryIntoCycles](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomology.lean/declarations/boundaryintocycles.md) | 47 | `declaration-track:7c63da0415b7f8387bf2fa0aeabae9757175254553c4fc018d0b2c5c32a5b538` |
-| 4 | `def` | [boundaries](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomology.lean/declarations/boundaries.md) | 62 | `declaration-track:75a3aed0fb0b408704158c12296a1edbc06117484c4c2ac3b0296ef00ea3be99` |
-| 5 | `abbrev` | [DegreeHomology](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomology.lean/declarations/degreehomology.md) | 68 | `declaration-track:cc7a5aa9839a9a88f4e4ebb43d280ce90079c949ad3c8434a85e1196514788a9` |
+| 1 | `def` | [cycles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomology.lean/declarations/cycles.md) | 16 | `declaration-track:e6958f4cd6d134c8a1bc999d7272242d14d26f521f8eaec93bd145b07adb4b30` |
+| 2 | `theorem` | [boundary_mem_cycles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomology.lean/declarations/boundary-mem-cycles.md) | 25 | `result-track:58813fb336c36ffbb98fc83c3b510ddcc9bfd49ec2bb54ecdba9d1812eef196b` |
+| 3 | `def` | [boundaryIntoCycles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomology.lean/declarations/boundaryintocycles.md) | 47 | `declaration-track:7c63da0415b7f8387bf2fa0aeabae9757175254553c4fc018d0b2c5c32a5b538` |
+| 4 | `def` | [boundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomology.lean/declarations/boundaries.md) | 62 | `declaration-track:75a3aed0fb0b408704158c12296a1edbc06117484c4c2ac3b0296ef00ea3be99` |
+| 5 | `abbrev` | [DegreeHomology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomology.lean/declarations/degreehomology.md) | 68 | `declaration-track:cc7a5aa9839a9a88f4e4ebb43d280ce90079c949ad3c8434a85e1196514788a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

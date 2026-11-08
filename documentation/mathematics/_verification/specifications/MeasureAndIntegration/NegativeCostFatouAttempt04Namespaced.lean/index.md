@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/NegativeCostFatouAttempt04Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/NegativeCostFatouAttempt04Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativeCostFatouAttempt04Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativeCostFatouAttempt04Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integrable_limit_of_nonnegative_uniform_integrals](../../../../MeasureAndIntegration/NegativeCostFatouAttempt04Namespaced.lean/declarations/integrable-limit-of-nonnegative-uniform-integrals.md) | 24 | `result-track:157cd99de168842a236ce8168dd68525bf4d9337af411f481ed62ed4c0004ee0` |
-| 2 | `theorem` | [no_uniform_nonnegative_integrals_of_nonintegrable_limit](../../../../MeasureAndIntegration/NegativeCostFatouAttempt04Namespaced.lean/declarations/no-uniform-nonnegative-integrals-of-nonintegrable-limit.md) | 43 | `result-track:7252254e4cb53eb6ae51e48cff16a609a98fcd537cd3dd982e51273faa0cd8cd` |
-| 3 | `theorem` | [not_integrableOn_of_positive_tail](../../../../MeasureAndIntegration/NegativeCostFatouAttempt04Namespaced.lean/declarations/not-integrableon-of-positive-tail.md) | 54 | `result-track:ba32c985c49d861a228a7e3afa638f6cb5c815e645aa36daecd93f10094f6ddb` |
+| 1 | `theorem` | [integrable_limit_of_nonnegative_uniform_integrals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativeCostFatouAttempt04Namespaced.lean/declarations/integrable-limit-of-nonnegative-uniform-integrals.md) | 24 | `result-track:157cd99de168842a236ce8168dd68525bf4d9337af411f481ed62ed4c0004ee0` |
+| 2 | `theorem` | [no_uniform_nonnegative_integrals_of_nonintegrable_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativeCostFatouAttempt04Namespaced.lean/declarations/no-uniform-nonnegative-integrals-of-nonintegrable-limit.md) | 43 | `result-track:7252254e4cb53eb6ae51e48cff16a609a98fcd537cd3dd982e51273faa0cd8cd` |
+| 3 | `theorem` | [not_integrableOn_of_positive_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativeCostFatouAttempt04Namespaced.lean/declarations/not-integrableon-of-positive-tail.md) | 54 | `result-track:ba32c985c49d861a228a7e3afa638f6cb5c815e645aa36daecd93f10094f6ddb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

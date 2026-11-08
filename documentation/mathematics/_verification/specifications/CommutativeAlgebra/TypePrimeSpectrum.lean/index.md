@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/TypePrimeSpectrum.lean/index.md) · [Full source](../../../../CommutativeAlgebra/TypePrimeSpectrum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TypePrimeSpectrum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TypePrimeSpectrum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [primitiveTypePrime](../../../../CommutativeAlgebra/TypePrimeSpectrum.lean/declarations/primitivetypeprime.md) | 10 | `declaration-track:d65b1970463ab33405be03c45f4c510bf83e3f6f8868c6ccbe31fa69fbbbcc70` |
-| 2 | `def` | [theoremMonomial](../../../../CommutativeAlgebra/TypePrimeSpectrum.lean/declarations/theoremmonomial.md) | 14 | `declaration-track:168be87b0e24525a0e1b1493ab0c9b8f000c494d9d235e0960618041d1d314e6` |
-| 3 | `def` | [theoremEdgeIdeal](../../../../CommutativeAlgebra/TypePrimeSpectrum.lean/declarations/theoremedgeideal.md) | 17 | `declaration-track:41b05e177176ec3ac6ca39ef73e815d2bd7c0a2231ae6c1533a29923ed054b2b` |
-| 4 | `def` | [IsCover](../../../../CommutativeAlgebra/TypePrimeSpectrum.lean/declarations/iscover.md) | 20 | `declaration-track:be7869ae79b2d8a7b537446e074e6c9b767a1fdb081bce6285ed70c14d971bd6` |
-| 5 | `def` | [IsMinimalCover](../../../../CommutativeAlgebra/TypePrimeSpectrum.lean/declarations/isminimalcover.md) | 23 | `declaration-track:402e6a959323720ae69a20f0235cb21baa7c38eb58a3e19fe7b3c1df29e170a3` |
-| 6 | `theorem` | [cover_characterization](../../../../CommutativeAlgebra/TypePrimeSpectrum.lean/declarations/cover-characterization.md) | 28 | `result-track:d911e86306155329e3dbaf857936d289708ab093d7d0f9ba121dd11277c562d5` |
-| 7 | `theorem` | [minimal_cover_characterization](../../../../CommutativeAlgebra/TypePrimeSpectrum.lean/declarations/minimal-cover-characterization.md) | 31 | `result-track:c1b67ac18aa941d93578b10f611d63acbcaf7db133ee8eb7b220edfc14add71e` |
+| 1 | `def` | [primitiveTypePrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TypePrimeSpectrum.lean/declarations/primitivetypeprime.md) | 10 | `declaration-track:d65b1970463ab33405be03c45f4c510bf83e3f6f8868c6ccbe31fa69fbbbcc70` |
+| 2 | `def` | [theoremMonomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TypePrimeSpectrum.lean/declarations/theoremmonomial.md) | 14 | `declaration-track:168be87b0e24525a0e1b1493ab0c9b8f000c494d9d235e0960618041d1d314e6` |
+| 3 | `def` | [theoremEdgeIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TypePrimeSpectrum.lean/declarations/theoremedgeideal.md) | 17 | `declaration-track:41b05e177176ec3ac6ca39ef73e815d2bd7c0a2231ae6c1533a29923ed054b2b` |
+| 4 | `def` | [IsCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TypePrimeSpectrum.lean/declarations/iscover.md) | 20 | `declaration-track:be7869ae79b2d8a7b537446e074e6c9b767a1fdb081bce6285ed70c14d971bd6` |
+| 5 | `def` | [IsMinimalCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TypePrimeSpectrum.lean/declarations/isminimalcover.md) | 23 | `declaration-track:402e6a959323720ae69a20f0235cb21baa7c38eb58a3e19fe7b3c1df29e170a3` |
+| 6 | `theorem` | [cover_characterization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TypePrimeSpectrum.lean/declarations/cover-characterization.md) | 28 | `result-track:d911e86306155329e3dbaf857936d289708ab093d7d0f9ba121dd11277c562d5` |
+| 7 | `theorem` | [minimal_cover_characterization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TypePrimeSpectrum.lean/declarations/minimal-cover-characterization.md) | 31 | `result-track:c1b67ac18aa941d93578b10f611d63acbcaf7db133ee8eb7b220edfc14add71e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

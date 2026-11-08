@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/StrictConvexBetweenNamespaced.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/StrictConvexBetweenNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/StrictConvexBetweenNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/StrictConvexBetweenNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Sbtw.dist_lt_max_dist](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/StrictConvexBetweenNamespaced.lean/declarations/sbtw-dist-lt-max-dist.md) | 32 | `result-track:1c07809ba8fd006a3964a65160e1c208012c225601233552104972cda743e788` |
-| 2 | `theorem` | [Wbtw.dist_le_max_dist](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/StrictConvexBetweenNamespaced.lean/declarations/wbtw-dist-le-max-dist.md) | 49 | `result-track:14e17e74b527d90e34a0962815ae1896a6b90c2633df09c3f84cce83f9098178` |
-| 3 | `theorem` | [Collinear.wbtw_of_dist_eq_of_dist_le](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/StrictConvexBetweenNamespaced.lean/declarations/collinear-wbtw-of-dist-eq-of-dist-le.md) | 59 | `result-track:d1cf9b6d31443b442c138a88f26edd8feed06b7b51cf6f42dd9276a11eb983f0` |
-| 4 | `theorem` | [Collinear.sbtw_of_dist_eq_of_dist_lt](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/StrictConvexBetweenNamespaced.lean/declarations/collinear-sbtw-of-dist-eq-of-dist-lt.md) | 80 | `result-track:9c87bf2354251627ea2581f249d25896fd25a35001f3c2d7944bc39252d73896` |
+| 1 | `theorem` | [Sbtw.dist_lt_max_dist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/StrictConvexBetweenNamespaced.lean/declarations/sbtw-dist-lt-max-dist.md) | 32 | `result-track:1c07809ba8fd006a3964a65160e1c208012c225601233552104972cda743e788` |
+| 2 | `theorem` | [Wbtw.dist_le_max_dist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/StrictConvexBetweenNamespaced.lean/declarations/wbtw-dist-le-max-dist.md) | 49 | `result-track:14e17e74b527d90e34a0962815ae1896a6b90c2633df09c3f84cce83f9098178` |
+| 3 | `theorem` | [Collinear.wbtw_of_dist_eq_of_dist_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/StrictConvexBetweenNamespaced.lean/declarations/collinear-wbtw-of-dist-eq-of-dist-le.md) | 59 | `result-track:d1cf9b6d31443b442c138a88f26edd8feed06b7b51cf6f42dd9276a11eb983f0` |
+| 4 | `theorem` | [Collinear.sbtw_of_dist_eq_of_dist_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/StrictConvexBetweenNamespaced.lean/declarations/collinear-sbtw-of-dist-eq-of-dist-lt.md) | 80 | `result-track:9c87bf2354251627ea2581f249d25896fd25a35001f3c2d7944bc39252d73896` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

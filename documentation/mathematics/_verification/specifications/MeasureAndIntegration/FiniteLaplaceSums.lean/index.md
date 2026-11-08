@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FiniteLaplaceSums.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FiniteLaplaceSums.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceSums.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceSums.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.LaplaceTransform.CausalExponentialResponse`](../../../../MeasureAndIntegration/CausalExponentialResponse.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.LaplaceTransform.CausalExponentialResponse`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalExponentialResponse.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.NumberTheory.LSeries.Dirichlet` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteSignal](../../../../MeasureAndIntegration/FiniteLaplaceSums.lean/declarations/finitesignal.md) | 25 | `declaration-track:a457dc12bdc07bcb837b974774dc1a8a9ae2892b88991a7d96e0b45270eb0592` |
-| 2 | `def` | [finiteLaplaceSignal](../../../../MeasureAndIntegration/FiniteLaplaceSums.lean/declarations/finitelaplacesignal.md) | 28 | `declaration-track:442fc7a866931414b19ffaa0bf87f6ecc7d4f22b3d39ee84442780cabba32834` |
-| 3 | `theorem` | [finite_laplace_signal_expansion](../../../../MeasureAndIntegration/FiniteLaplaceSums.lean/declarations/finite-laplace-signal-expansion.md) | 31 | `result-track:b469af2d0b4eb2ce189493f073bc69b83b63bbba8ce9cb049059db19325d0495` |
-| 4 | `theorem` | [finite_laplace_signal_integrable](../../../../MeasureAndIntegration/FiniteLaplaceSums.lean/declarations/finite-laplace-signal-integrable.md) | 43 | `result-track:57d5ff022dd7a22d68be62a088e90b4964e723610a84de91cea583e6726c69c1` |
-| 5 | `theorem` | [finite_laplace_signal_integral](../../../../MeasureAndIntegration/FiniteLaplaceSums.lean/declarations/finite-laplace-signal-integral.md) | 52 | `result-track:55f88d03e9640effbfba5082c80772a26513cce02572a50866725f2fb2338a73` |
-| 6 | `theorem` | [finite_inventory_signal_eq_pickup](../../../../MeasureAndIntegration/FiniteLaplaceSums.lean/declarations/finite-inventory-signal-eq-pickup.md) | 66 | `result-track:4c23b32e85e244400fad0cc6513b7708b65be6b12c643f425b67f190dad665a9` |
-| 7 | `theorem` | [finite_inventory_laplace_signal_eq_pickup](../../../../MeasureAndIntegration/FiniteLaplaceSums.lean/declarations/finite-inventory-laplace-signal-eq-pickup.md) | 70 | `result-track:33b4a40aeef6abfe90f06f4679a598a118fe38c1ce1eb98764f0eb298ac122de` |
-| 8 | `theorem` | [inventory_laplace_signal_integral](../../../../MeasureAndIntegration/FiniteLaplaceSums.lean/declarations/inventory-laplace-signal-integral.md) | 77 | `result-track:1bc4782f80e125cd28b4218843408c036e4267fb933eec6db8f179f75c9c5c2b` |
+| 1 | `def` | [finiteSignal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceSums.lean/declarations/finitesignal.md) | 25 | `declaration-track:a457dc12bdc07bcb837b974774dc1a8a9ae2892b88991a7d96e0b45270eb0592` |
+| 2 | `def` | [finiteLaplaceSignal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceSums.lean/declarations/finitelaplacesignal.md) | 28 | `declaration-track:442fc7a866931414b19ffaa0bf87f6ecc7d4f22b3d39ee84442780cabba32834` |
+| 3 | `theorem` | [finite_laplace_signal_expansion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceSums.lean/declarations/finite-laplace-signal-expansion.md) | 31 | `result-track:b469af2d0b4eb2ce189493f073bc69b83b63bbba8ce9cb049059db19325d0495` |
+| 4 | `theorem` | [finite_laplace_signal_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceSums.lean/declarations/finite-laplace-signal-integrable.md) | 43 | `result-track:57d5ff022dd7a22d68be62a088e90b4964e723610a84de91cea583e6726c69c1` |
+| 5 | `theorem` | [finite_laplace_signal_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceSums.lean/declarations/finite-laplace-signal-integral.md) | 52 | `result-track:55f88d03e9640effbfba5082c80772a26513cce02572a50866725f2fb2338a73` |
+| 6 | `theorem` | [finite_inventory_signal_eq_pickup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceSums.lean/declarations/finite-inventory-signal-eq-pickup.md) | 66 | `result-track:4c23b32e85e244400fad0cc6513b7708b65be6b12c643f425b67f190dad665a9` |
+| 7 | `theorem` | [finite_inventory_laplace_signal_eq_pickup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceSums.lean/declarations/finite-inventory-laplace-signal-eq-pickup.md) | 70 | `result-track:33b4a40aeef6abfe90f06f4679a598a118fe38c1ce1eb98764f0eb298ac122de` |
+| 8 | `theorem` | [inventory_laplace_signal_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLaplaceSums.lean/declarations/inventory-laplace-signal-integral.md) | 77 | `result-track:1bc4782f80e125cd28b4218843408c036e4267fb933eec6db8f179f75c9c5c2b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

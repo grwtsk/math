@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CohomologicalGluing.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CohomologicalGluing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CohomologicalGluing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CohomologicalGluing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteGluingControl](../../../../GroupTheoryAndGeneralizations/CohomologicalGluing.lean/declarations/finitegluingcontrol.md) | 18 | `declaration-track:3e2d9f5ef30fcf15c9cd8d1b62fd3da6d1a683d4d5793070a5e20bf67f032105` |
-| 2 | `structure` | [CoverTopologyChannel](../../../../GroupTheoryAndGeneralizations/CohomologicalGluing.lean/declarations/covertopologychannel.md) | 33 | `declaration-track:a97686fadff0f19ff73dc95986e3300c0adee88fa9d250293c2604bec5235d14` |
-| 3 | `structure` | [TorsionRoundedCover](../../../../GroupTheoryAndGeneralizations/CohomologicalGluing.lean/declarations/torsionroundedcover.md) | 51 | `declaration-track:dc14884a7b0c11de21ad533a23c96bc855ff70fcf0e97656688f45de443f8f94` |
-| 4 | `def` | [withMetric](../../../../GroupTheoryAndGeneralizations/CohomologicalGluing.lean/declarations/withmetric.md) | 74 | `declaration-track:1791086d5fd6f0c1bae5d157ba0761b1a614bf5ca082164f66f0933c8a04079d` |
-| 5 | `theorem` | [withMetric_topology](../../../../GroupTheoryAndGeneralizations/CohomologicalGluing.lean/declarations/withmetric-topology.md) | 83 | `result-track:6fc3e3bd83309c49b6bdb51fc92edef4aa9b15b99d39378c75a6c908554aff74` |
-| 6 | `def` | [withTopology](../../../../GroupTheoryAndGeneralizations/CohomologicalGluing.lean/declarations/withtopology.md) | 92 | `declaration-track:5c17a1c437059e57511e7ccc122f29a462ebd6a4a1422318ebbeda3dfdfa01d9` |
-| 7 | `theorem` | [withTopology_metric](../../../../GroupTheoryAndGeneralizations/CohomologicalGluing.lean/declarations/withtopology-metric.md) | 102 | `result-track:a60ffa78dee6745b6e9e402773416a8c50dbb6ce683059e2a098b21f481a2d1d` |
+| 1 | `structure` | [FiniteGluingControl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CohomologicalGluing.lean/declarations/finitegluingcontrol.md) | 18 | `declaration-track:3e2d9f5ef30fcf15c9cd8d1b62fd3da6d1a683d4d5793070a5e20bf67f032105` |
+| 2 | `structure` | [CoverTopologyChannel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CohomologicalGluing.lean/declarations/covertopologychannel.md) | 33 | `declaration-track:a97686fadff0f19ff73dc95986e3300c0adee88fa9d250293c2604bec5235d14` |
+| 3 | `structure` | [TorsionRoundedCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CohomologicalGluing.lean/declarations/torsionroundedcover.md) | 51 | `declaration-track:dc14884a7b0c11de21ad533a23c96bc855ff70fcf0e97656688f45de443f8f94` |
+| 4 | `def` | [withMetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CohomologicalGluing.lean/declarations/withmetric.md) | 74 | `declaration-track:1791086d5fd6f0c1bae5d157ba0761b1a614bf5ca082164f66f0933c8a04079d` |
+| 5 | `theorem` | [withMetric_topology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CohomologicalGluing.lean/declarations/withmetric-topology.md) | 83 | `result-track:6fc3e3bd83309c49b6bdb51fc92edef4aa9b15b99d39378c75a6c908554aff74` |
+| 6 | `def` | [withTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CohomologicalGluing.lean/declarations/withtopology.md) | 92 | `declaration-track:5c17a1c437059e57511e7ccc122f29a462ebd6a4a1422318ebbeda3dfdfa01d9` |
+| 7 | `theorem` | [withTopology_metric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CohomologicalGluing.lean/declarations/withtopology-metric.md) | 102 | `result-track:a60ffa78dee6745b6e9e402773416a8c50dbb6ce683059e2a098b21f481a2d1d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

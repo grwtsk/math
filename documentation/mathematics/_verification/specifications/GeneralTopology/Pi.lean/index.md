@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Pi.lean/index.md) · [Full source](../../../../GeneralTopology/Pi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Pi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Pi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Pi.uniformSpace](../../../../GeneralTopology/Pi.lean/declarations/pi-uniformspace.md) | 28 | `declaration-track:ebdd364f41401c9a76992ad45b846cc75c4aab6df5908ac238c52042cf5ed079` |
-| 2 | `lemma` | [Pi.uniformSpace_eq](../../../../GeneralTopology/Pi.lean/declarations/pi-uniformspace-eq.md) | 34 | `result-track:d06d1d0b307a0a26227433395f533ba2c36791eeb6e5be43841e50e36fb82d87` |
-| 3 | `theorem` | [Pi.uniformity](../../../../GeneralTopology/Pi.lean/declarations/pi-uniformity.md) | 38 | `result-track:36e526de1a24eed6a6dbb4ba9ed9fc7b85da7befd6539e3ba826f1daf0248507` |
-| 4 | `theorem` | [uniformContinuous_pi](../../../../GeneralTopology/Pi.lean/declarations/uniformcontinuous-pi.md) | 45 | `result-track:501dcf6bc544426eb1beb5b1f16646e16fc7f6a6f0c6ccdb895020fc2e8a0260` |
-| 5 | `theorem` | [Pi.uniformContinuous_proj](../../../../GeneralTopology/Pi.lean/declarations/pi-uniformcontinuous-proj.md) | 53 | `result-track:ba2bb80c17f4e72837e57a656a3503f7122b5379921a676be3bc4f88e685b035` |
-| 6 | `lemma` | [cauchy_pi_iff](../../../../GeneralTopology/Pi.lean/declarations/cauchy-pi-iff.md) | 57 | `result-track:c175d372828b40820ad8d949c545b47088247f5296638fd29cedfafa52a5514d` |
-| 7 | `lemma` | [cauchy_pi_iff'](../../../../GeneralTopology/Pi.lean/declarations/cauchy-pi-iff-source-edition-2.md) | 61 | `result-track:cfdcaa81dc09559d81e3a964a94b4b0b8a1324abf7dce6081f5dc4697be79808` |
-| 8 | `lemma` | [Cauchy.pi](../../../../GeneralTopology/Pi.lean/declarations/cauchy-pi.md) | 65 | `result-track:4b2423b32733977d4a6f7200e3fa29f65696ccd5590cdc59d69ff15c949ec89d` |
-| 9 | `instance` | [Pi.complete](../../../../GeneralTopology/Pi.lean/declarations/pi-complete.md) | 70 | `declaration-track:0cd11016002e55338811ab02748fc0d9e59dcc42c98e6eba1565acbbfb84d249` |
-| 10 | `instance` | [Pi.separated](../../../../GeneralTopology/Pi.lean/declarations/pi-separated.md) | 79 | `declaration-track:78f4007409dfc6247e254166f9581ee7c5303f5339dac499d36b474757d72a1e` |
+| 1 | `instance` | [Pi.uniformSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Pi.lean/declarations/pi-uniformspace.md) | 28 | `declaration-track:ebdd364f41401c9a76992ad45b846cc75c4aab6df5908ac238c52042cf5ed079` |
+| 2 | `lemma` | [Pi.uniformSpace_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Pi.lean/declarations/pi-uniformspace-eq.md) | 34 | `result-track:d06d1d0b307a0a26227433395f533ba2c36791eeb6e5be43841e50e36fb82d87` |
+| 3 | `theorem` | [Pi.uniformity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Pi.lean/declarations/pi-uniformity.md) | 38 | `result-track:36e526de1a24eed6a6dbb4ba9ed9fc7b85da7befd6539e3ba826f1daf0248507` |
+| 4 | `theorem` | [uniformContinuous_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Pi.lean/declarations/uniformcontinuous-pi.md) | 45 | `result-track:501dcf6bc544426eb1beb5b1f16646e16fc7f6a6f0c6ccdb895020fc2e8a0260` |
+| 5 | `theorem` | [Pi.uniformContinuous_proj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Pi.lean/declarations/pi-uniformcontinuous-proj.md) | 53 | `result-track:ba2bb80c17f4e72837e57a656a3503f7122b5379921a676be3bc4f88e685b035` |
+| 6 | `lemma` | [cauchy_pi_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Pi.lean/declarations/cauchy-pi-iff.md) | 57 | `result-track:c175d372828b40820ad8d949c545b47088247f5296638fd29cedfafa52a5514d` |
+| 7 | `lemma` | [cauchy_pi_iff'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Pi.lean/declarations/cauchy-pi-iff-source-edition-2.md) | 61 | `result-track:cfdcaa81dc09559d81e3a964a94b4b0b8a1324abf7dce6081f5dc4697be79808` |
+| 8 | `lemma` | [Cauchy.pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Pi.lean/declarations/cauchy-pi.md) | 65 | `result-track:4b2423b32733977d4a6f7200e3fa29f65696ccd5590cdc59d69ff15c949ec89d` |
+| 9 | `instance` | [Pi.complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Pi.lean/declarations/pi-complete.md) | 70 | `declaration-track:0cd11016002e55338811ab02748fc0d9e59dcc42c98e6eba1565acbbfb84d249` |
+| 10 | `instance` | [Pi.separated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Pi.lean/declarations/pi-separated.md) | 79 | `declaration-track:78f4007409dfc6247e254166f9581ee7c5303f5339dac499d36b474757d72a1e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasNotBitPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasNotBitPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasNotBitPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasNotBitPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mkHasNotBit](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasNotBitPublic.lean/declarations/mkhasnotbit.md) | 20 | `declaration-track:93f2b928b0b5fcac698a8559d33ff604497f355048786352d4fb7056b375c42c` |
-| 2 | `def` | [mkHasNotBitProof](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasNotBitPublic.lean/declarations/mkhasnotbitproof.md) | 26 | `declaration-track:b4820fcb5223ef3acd4bd2402f9e2dd71fe93bd322b1ac6a419cced6a5ff888b` |
-| 3 | `def` | [isHasNotBit?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasNotBitPublic.lean/declarations/ishasnotbit.md) | 39 | `declaration-track:b083f60d7ec9ec79d6118c711655a1b8b2d97df79a699fcc0cb82256b299e457` |
-| 4 | `def` | [refutableHasNotBit?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasNotBitPublic.lean/declarations/refutablehasnotbit.md) | 49 | `declaration-track:5713d893a6888dd8ca19b104bd1881be0b00bbe6f95d453dda10538d4d04f2ee` |
+| 1 | `def` | [mkHasNotBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasNotBitPublic.lean/declarations/mkhasnotbit.md) | 20 | `declaration-track:93f2b928b0b5fcac698a8559d33ff604497f355048786352d4fb7056b375c42c` |
+| 2 | `def` | [mkHasNotBitProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasNotBitPublic.lean/declarations/mkhasnotbitproof.md) | 26 | `declaration-track:b4820fcb5223ef3acd4bd2402f9e2dd71fe93bd322b1ac6a419cced6a5ff888b` |
+| 3 | `def` | [isHasNotBit?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasNotBitPublic.lean/declarations/ishasnotbit.md) | 39 | `declaration-track:b083f60d7ec9ec79d6118c711655a1b8b2d97df79a699fcc0cb82256b299e457` |
+| 4 | `def` | [refutableHasNotBit?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HasNotBitPublic.lean/declarations/refutablehasnotbit.md) | 49 | `declaration-track:5713d893a6888dd8ca19b104bd1881be0b00bbe6f95d453dda10538d4d04f2ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

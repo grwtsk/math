@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/StoneanAdjunctionsNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/StoneanAdjunctionsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanAdjunctionsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanAdjunctionsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [stoneCechObj](../../../../GeneralTopology/StoneanAdjunctionsNamespacedPublic.lean/declarations/stonecechobj.md) | 37 | `declaration-track:2d3d76955c4ffe6dc8a567c37e82db9eda10c8cd689b0f368c9aa49fa8237894` |
-| 2 | `def` | [stoneCechEquivalence](../../../../GeneralTopology/StoneanAdjunctionsNamespacedPublic.lean/declarations/stonecechequivalence.md) | 46 | `declaration-track:a72ef7ac0c9eb1e3e2d7dc73564eded5090294e161cd5985a666d5c7d0179e7b` |
-| 3 | `def` | [typeToStonean](../../../../GeneralTopology/StoneanAdjunctionsNamespacedPublic.lean/declarations/typetostonean.md) | 57 | `declaration-track:af6adc32cc8f4d1c70c1eff5ab149a4a6f7ac9a96758f17f72e947675c57691f` |
-| 4 | `def` | [stoneCechAdjunction](../../../../GeneralTopology/StoneanAdjunctionsNamespacedPublic.lean/declarations/stonecechadjunction.md) | 63 | `declaration-track:94af2fa69d88888b195d61b330045adc870d381d1f0ea3567a86ea4de999fc83` |
-| 5 | `instance` | [forget.preservesLimits](../../../../GeneralTopology/StoneanAdjunctionsNamespacedPublic.lean/declarations/forget-preserveslimits.md) | 67 | `declaration-track:35acf65086e443bcf84de45d4de0c7a89b9701db3abb0235754dd2368b88b838` |
+| 1 | `def` | [stoneCechObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanAdjunctionsNamespacedPublic.lean/declarations/stonecechobj.md) | 37 | `declaration-track:2d3d76955c4ffe6dc8a567c37e82db9eda10c8cd689b0f368c9aa49fa8237894` |
+| 2 | `def` | [stoneCechEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanAdjunctionsNamespacedPublic.lean/declarations/stonecechequivalence.md) | 46 | `declaration-track:a72ef7ac0c9eb1e3e2d7dc73564eded5090294e161cd5985a666d5c7d0179e7b` |
+| 3 | `def` | [typeToStonean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanAdjunctionsNamespacedPublic.lean/declarations/typetostonean.md) | 57 | `declaration-track:af6adc32cc8f4d1c70c1eff5ab149a4a6f7ac9a96758f17f72e947675c57691f` |
+| 4 | `def` | [stoneCechAdjunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanAdjunctionsNamespacedPublic.lean/declarations/stonecechadjunction.md) | 63 | `declaration-track:94af2fa69d88888b195d61b330045adc870d381d1f0ea3567a86ea4de999fc83` |
+| 5 | `instance` | [forget.preservesLimits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanAdjunctionsNamespacedPublic.lean/declarations/forget-preserveslimits.md) | 67 | `declaration-track:35acf65086e443bcf84de45d4de0c7a89b9701db3abb0235754dd2368b88b838` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

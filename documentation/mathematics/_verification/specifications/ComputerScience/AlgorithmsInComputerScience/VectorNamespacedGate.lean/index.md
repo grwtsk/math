@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/VectorNamespacedGate.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/VectorNamespacedGate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VectorNamespacedGate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VectorNamespacedGate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/VectorNamespacedGate.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:a44251000904edfc6593e921537f1228e7e1a10d542ac04d3ad2c70740809ca1` |
-| 2 | `inductive` | [Gate](../../../../../ComputerScience/AlgorithmsInComputerScience/VectorNamespacedGate.lean/declarations/gate.md) | 19 | `declaration-track:32ba4bbe9db167c95499a9567349669e505ff873a7d5801abdac6cc9861f60fd` |
-| 3 | `def` | [and](../../../../../ComputerScience/AlgorithmsInComputerScience/VectorNamespacedGate.lean/declarations/and.md) | 25 | `declaration-track:ecfbeed9219031cf4cbbe423074251cbbae7bf8482b9888d276c10c7b096610b` |
-| 4 | `def` | [eval](../../../../../ComputerScience/AlgorithmsInComputerScience/VectorNamespacedGate.lean/declarations/eval.md) | 27 | `declaration-track:859d8ce5731ca74fd3a17dfd76b122b12cc6b180548aea34254fe8f6891de915` |
-| 5 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/VectorNamespacedGate.lean/declarations/example-source-edition-3.md) | 32 | `declaration-track:a778417da3b08455000202d17d6bb61935a03d0405704de9e646077253da193a` |
-| 6 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/VectorNamespacedGate.lean/declarations/example.md) | 33 | `declaration-track:6dc8f4fdcbe4e14ede949b2e34fb061541b31a994aa7c16bc5456ecb5dcb1bcc` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VectorNamespacedGate.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:a44251000904edfc6593e921537f1228e7e1a10d542ac04d3ad2c70740809ca1` |
+| 2 | `inductive` | [Gate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VectorNamespacedGate.lean/declarations/gate.md) | 19 | `declaration-track:32ba4bbe9db167c95499a9567349669e505ff873a7d5801abdac6cc9861f60fd` |
+| 3 | `def` | [and](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VectorNamespacedGate.lean/declarations/and.md) | 25 | `declaration-track:ecfbeed9219031cf4cbbe423074251cbbae7bf8482b9888d276c10c7b096610b` |
+| 4 | `def` | [eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VectorNamespacedGate.lean/declarations/eval.md) | 27 | `declaration-track:859d8ce5731ca74fd3a17dfd76b122b12cc6b180548aea34254fe8f6891de915` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VectorNamespacedGate.lean/declarations/example-source-edition-3.md) | 32 | `declaration-track:a778417da3b08455000202d17d6bb61935a03d0405704de9e646077253da193a` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VectorNamespacedGate.lean/declarations/example.md) | 33 | `declaration-track:6dc8f4fdcbe4e14ede949b2e34fb061541b31a994aa7c16bc5456ecb5dcb1bcc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

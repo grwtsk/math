@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/HallBasicNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/HallBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [hallMatchingsOn](../../../../Combinatorics/HallBasicNamespaced.lean/declarations/hallmatchingson.md) | 66 | `declaration-track:b9be25e05ce2fa8c5137408969d590ce9f642537cee7628caa53af118d3a020a` |
-| 2 | `def` | [hallMatchingsOn.restrict](../../../../Combinatorics/HallBasicNamespaced.lean/declarations/hallmatchingson-restrict.md) | 70 | `declaration-track:f87578f572067696a91b019e103392d47f228a74afc4c74253676167e0fcdb68` |
-| 3 | `theorem` | [hallMatchingsOn.nonempty](../../../../Combinatorics/HallBasicNamespaced.lean/declarations/hallmatchingson-nonempty.md) | 80 | `result-track:bdf6bde427971471ecea9c4c824576fddbea3e11b3da7b9e95ec449289208bc7` |
-| 4 | `def` | [hallMatchingsFunctor](../../../../Combinatorics/HallBasicNamespaced.lean/declarations/hallmatchingsfunctor.md) | 93 | `declaration-track:0e77e7ee16cda9e94c8a6c40a31726e232e340e0e4349e05db5db9565b43cc19` |
-| 5 | `instance` | [hallMatchingsOn.finite](../../../../Combinatorics/HallBasicNamespaced.lean/declarations/hallmatchingson-finite.md) | 98 | `declaration-track:a7d2296eedffa3e100c7819e67edb3ea6c31575147f0eac00a02bd20fa13d9c0` |
-| 6 | `theorem` | [Finset.all_card_le_biUnion_card_iff_exists_injective](../../../../Combinatorics/HallBasicNamespaced.lean/declarations/finset-all-card-le-biunion-card-iff-exists-injective.md) | 123 | `result-track:97e34913847232c7616174bb72519780e4f55d9868bdb822a897da5aa91d5ba3` |
-| 7 | `instance` | [(anonymous)](../../../../Combinatorics/HallBasicNamespaced.lean/declarations/instance.md) | 167 | `declaration-track:b07c0ab6e28cb78bd3a16598533ff45d19a60a585540812dd8ac4bca81515889` |
-| 8 | `theorem` | [Fintype.all_card_le_rel_image_card_iff_exists_injective](../../../../Combinatorics/HallBasicNamespaced.lean/declarations/fintype-all-card-le-rel-image-card-iff-exists-injective.md) | 185 | `result-track:a1d282326051aae01a7ae4a2d7e0e5daea64dd24e5b131e34a38699af09c807f` |
-| 9 | `theorem` | [Fintype.all_card_le_filter_rel_iff_exists_injective](../../../../Combinatorics/HallBasicNamespaced.lean/declarations/fintype-all-card-le-filter-rel-iff-exists-injective.md) | 207 | `result-track:68de03002a70853b2841173a1e8c8b795f1adeb60ca507089a4e9c38568929ce` |
+| 1 | `def` | [hallMatchingsOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallBasicNamespaced.lean/declarations/hallmatchingson.md) | 66 | `declaration-track:b9be25e05ce2fa8c5137408969d590ce9f642537cee7628caa53af118d3a020a` |
+| 2 | `def` | [hallMatchingsOn.restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallBasicNamespaced.lean/declarations/hallmatchingson-restrict.md) | 70 | `declaration-track:f87578f572067696a91b019e103392d47f228a74afc4c74253676167e0fcdb68` |
+| 3 | `theorem` | [hallMatchingsOn.nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallBasicNamespaced.lean/declarations/hallmatchingson-nonempty.md) | 80 | `result-track:bdf6bde427971471ecea9c4c824576fddbea3e11b3da7b9e95ec449289208bc7` |
+| 4 | `def` | [hallMatchingsFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallBasicNamespaced.lean/declarations/hallmatchingsfunctor.md) | 93 | `declaration-track:0e77e7ee16cda9e94c8a6c40a31726e232e340e0e4349e05db5db9565b43cc19` |
+| 5 | `instance` | [hallMatchingsOn.finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallBasicNamespaced.lean/declarations/hallmatchingson-finite.md) | 98 | `declaration-track:a7d2296eedffa3e100c7819e67edb3ea6c31575147f0eac00a02bd20fa13d9c0` |
+| 6 | `theorem` | [Finset.all_card_le_biUnion_card_iff_exists_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallBasicNamespaced.lean/declarations/finset-all-card-le-biunion-card-iff-exists-injective.md) | 123 | `result-track:97e34913847232c7616174bb72519780e4f55d9868bdb822a897da5aa91d5ba3` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallBasicNamespaced.lean/declarations/instance.md) | 167 | `declaration-track:b07c0ab6e28cb78bd3a16598533ff45d19a60a585540812dd8ac4bca81515889` |
+| 8 | `theorem` | [Fintype.all_card_le_rel_image_card_iff_exists_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallBasicNamespaced.lean/declarations/fintype-all-card-le-rel-image-card-iff-exists-injective.md) | 185 | `result-track:a1d282326051aae01a7ae4a2d7e0e5daea64dd24e5b131e34a38699af09c807f` |
+| 9 | `theorem` | [Fintype.all_card_le_filter_rel_iff_exists_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallBasicNamespaced.lean/declarations/fintype-all-card-le-filter-rel-iff-exists-injective.md) | 207 | `result-track:68de03002a70853b2841173a1e8c8b795f1adeb60ca507089a4e9c38568929ce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

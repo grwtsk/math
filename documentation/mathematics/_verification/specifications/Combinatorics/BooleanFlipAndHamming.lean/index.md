@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BooleanFlipAndHamming.lean/index.md) · [Full source](../../../../Combinatorics/BooleanFlipAndHamming.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanFlipAndHamming.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanFlipAndHamming.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Boolean.Matrix` — import line 19; external provider; requires a separately pinned dependency.
 - `Boolean.Cube.ListTools` — import line 20; external provider; requires a separately pinned dependency.
-- [Finite Boolean Carriers](../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteBooleanCarriers.lean/index.md) — import line 21; pinned internal source present.
+- [Finite Boolean Carriers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteBooleanCarriers.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Hypercube.flip](../../../../Combinatorics/BooleanFlipAndHamming.lean/declarations/hypercube-flip.md) | 28 | `declaration-track:0a8bbcf5dee537adcab890107da08520f99916b3305ab46f34fec2b2af19d6c5` |
-| 2 | `theorem` | [Hypercube.flip_same](../../../../Combinatorics/BooleanFlipAndHamming.lean/declarations/hypercube-flip-same.md) | 36 | `result-track:3b9dfb357e48ab2cfe5b084519d6016f9416e980e200d28105ea71e832a2ee2e` |
-| 3 | `theorem` | [Hypercube.flip_other](../../../../Combinatorics/BooleanFlipAndHamming.lean/declarations/hypercube-flip-other.md) | 40 | `result-track:dc0c59fcd695bb3ac305dc3554a1b2a92635159f7dc02e689d1c046b089ab4ac` |
-| 4 | `theorem` | [Hypercube.eq_of_dropLast_eq_last_eq](../../../../Combinatorics/BooleanFlipAndHamming.lean/declarations/hypercube-eq-of-droplast-eq-last-eq.md) | 45 | `result-track:9ff4081113c854a483496396831e3d166c953d1d42dd7a7c9e85de46fe56935f` |
-| 5 | `def` | [Hypercube.pointEq](../../../../Combinatorics/BooleanFlipAndHamming.lean/declarations/hypercube-pointeq.md) | 62 | `declaration-track:f022cea4a773073326b374d559b142554c26d76fbfc8cfce3d71d9d7fe79cec7` |
-| 6 | `def` | [Hypercube.hammingDistance](../../../../Combinatorics/BooleanFlipAndHamming.lean/declarations/hypercube-hammingdistance.md) | 68 | `declaration-track:50f5d9b0c07c3042a523016fa5b9a69909ff681e6a485777e598c14326e3bdfc` |
+| 1 | `def` | [Hypercube.flip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanFlipAndHamming.lean/declarations/hypercube-flip.md) | 28 | `declaration-track:0a8bbcf5dee537adcab890107da08520f99916b3305ab46f34fec2b2af19d6c5` |
+| 2 | `theorem` | [Hypercube.flip_same](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanFlipAndHamming.lean/declarations/hypercube-flip-same.md) | 36 | `result-track:3b9dfb357e48ab2cfe5b084519d6016f9416e980e200d28105ea71e832a2ee2e` |
+| 3 | `theorem` | [Hypercube.flip_other](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanFlipAndHamming.lean/declarations/hypercube-flip-other.md) | 40 | `result-track:dc0c59fcd695bb3ac305dc3554a1b2a92635159f7dc02e689d1c046b089ab4ac` |
+| 4 | `theorem` | [Hypercube.eq_of_dropLast_eq_last_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanFlipAndHamming.lean/declarations/hypercube-eq-of-droplast-eq-last-eq.md) | 45 | `result-track:9ff4081113c854a483496396831e3d166c953d1d42dd7a7c9e85de46fe56935f` |
+| 5 | `def` | [Hypercube.pointEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanFlipAndHamming.lean/declarations/hypercube-pointeq.md) | 62 | `declaration-track:f022cea4a773073326b374d559b142554c26d76fbfc8cfce3d71d9d7fe79cec7` |
+| 6 | `def` | [Hypercube.hammingDistance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanFlipAndHamming.lean/declarations/hypercube-hammingdistance.md) | 68 | `declaration-track:50f5d9b0c07c3042a523016fa5b9a69909ff681e6a485777e598c14326e3bdfc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

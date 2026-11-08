@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentCriticalLineTargetData.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentCriticalLineTargetData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentCriticalLineTargetData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentCriticalLineTargetData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ClassicalZetaRHTarget](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentCriticalLineTargetData.lean/declarations/classicalzetarhtarget.md) | 40 | `declaration-track:363aebc2c30d64798d82cac81cd548f710e0d9d929c82c43c4c3de73eead1688` |
-| 2 | `theorem` | [zeta_rh_target_has_conclusion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentCriticalLineTargetData.lean/declarations/zeta-rh-target-has-conclusion.md) | 48 | `result-track:b1708327c980fa27fa7bde9e96272df2a39972c511b124174ef221916954a2ab` |
+| 1 | `structure` | [ClassicalZetaRHTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentCriticalLineTargetData.lean/declarations/classicalzetarhtarget.md) | 40 | `declaration-track:363aebc2c30d64798d82cac81cd548f710e0d9d929c82c43c4c3de73eead1688` |
+| 2 | `theorem` | [zeta_rh_target_has_conclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentCriticalLineTargetData.lean/declarations/zeta-rh-target-has-conclusion.md) | 48 | `result-track:b1708327c980fa27fa7bde9e96272df2a39972c511b124174ef221916954a2ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

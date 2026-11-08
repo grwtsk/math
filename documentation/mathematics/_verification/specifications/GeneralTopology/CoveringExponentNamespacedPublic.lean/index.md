@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CoveringExponentNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/CoveringExponentNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CoveringExponentNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CoveringExponentNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HasCoveringExponent](../../../../GeneralTopology/CoveringExponentNamespacedPublic.lean/declarations/hascoveringexponent.md) | 52 | `declaration-track:534fef0c99f3f0bb7105b902ef4ad2af54ec12356cf95c53dfe382269975d86b` |
-| 2 | `lemma` | [HasCoveringExponent.coveringNumber_lt_top](../../../../GeneralTopology/CoveringExponentNamespacedPublic.lean/declarations/hascoveringexponent-coveringnumber-lt-top.md) | 56 | `result-track:34c625f384a89d2cde235dfd489f840005e631eee74773fe04a90bc048f3ff2d` |
-| 3 | `lemma` | [HasCoveringExponent.coveringNumber_ne_top](../../../../GeneralTopology/CoveringExponentNamespacedPublic.lean/declarations/hascoveringexponent-coveringnumber-ne-top.md) | 68 | `result-track:04709d35bf7566dd984f745817376c5f8a1a9e01539169277208a4f838a5bd00` |
-| 4 | `lemma` | [HasCoveringExponent.subset](../../../../GeneralTopology/CoveringExponentNamespacedPublic.lean/declarations/hascoveringexponent-subset.md) | 73 | `result-track:b17bd52bca46064ebddb6e5472e1cb036847d875edb86c3717064c85b77cc1d6` |
+| 1 | `structure` | [HasCoveringExponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CoveringExponentNamespacedPublic.lean/declarations/hascoveringexponent.md) | 52 | `declaration-track:534fef0c99f3f0bb7105b902ef4ad2af54ec12356cf95c53dfe382269975d86b` |
+| 2 | `lemma` | [HasCoveringExponent.coveringNumber_lt_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CoveringExponentNamespacedPublic.lean/declarations/hascoveringexponent-coveringnumber-lt-top.md) | 56 | `result-track:34c625f384a89d2cde235dfd489f840005e631eee74773fe04a90bc048f3ff2d` |
+| 3 | `lemma` | [HasCoveringExponent.coveringNumber_ne_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CoveringExponentNamespacedPublic.lean/declarations/hascoveringexponent-coveringnumber-ne-top.md) | 68 | `result-track:04709d35bf7566dd984f745817376c5f8a1a9e01539169277208a4f838a5bd00` |
+| 4 | `lemma` | [HasCoveringExponent.subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CoveringExponentNamespacedPublic.lean/declarations/hascoveringexponent-subset.md) | 73 | `result-track:b17bd52bca46064ebddb6e5472e1cb036847d875edb86c3717064c85b77cc1d6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

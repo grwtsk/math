@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsAssociator.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsAssociator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsAssociator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsAssociator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [associator](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsAssociator.lean/declarations/associator.md) | 25 | `declaration-track:b949e9b1140a8121a4bc126eead54194b79f8de65611361404c0194fb53faa8d` |
-| 2 | `def` | [inverseAssociator](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsAssociator.lean/declarations/inverseassociator.md) | 32 | `declaration-track:b8447069cedc28f5a7b2d42f98c5b8dd709738b1c6f44ee4168af5a6268026b6` |
-| 3 | `def` | [associativity](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsAssociator.lean/declarations/associativity.md) | 39 | `declaration-track:a92f62eda08ede7e84cbd1861bb610c78f470443ca4d139e9c5792893642582d` |
-| 4 | `instance` | [associatorIsEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsAssociator.lean/declarations/associatorisequivalence.md) | 45 | `declaration-track:270315f3fea6ce5c262cbb69beb753943edf1a0178c402cae173a8cc0f525566` |
-| 5 | `instance` | [inverseAssociatorIsEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsAssociator.lean/declarations/inverseassociatorisequivalence.md) | 48 | `declaration-track:0584c16865f2c11ff33148720c0014eda40ebfd4a8bd1e5eb3d353d42751457e` |
-| 6 | `def` | [prodFunctorToFunctorProdAssociator](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsAssociator.lean/declarations/prodfunctortofunctorprodassociator.md) | 57 | `declaration-track:70fdfc6e8215d5cbd47260d577093e193a83b2bedbf94f0463b1237c12900f1b` |
-| 7 | `def` | [functorProdToProdFunctorAssociator](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsAssociator.lean/declarations/functorprodtoprodfunctorassociator.md) | 66 | `declaration-track:3df16a2e1fcecb0510e7cb7f652abaaaa003ac19c2a45745ebbcadc83083e370` |
+| 1 | `def` | [associator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsAssociator.lean/declarations/associator.md) | 25 | `declaration-track:b949e9b1140a8121a4bc126eead54194b79f8de65611361404c0194fb53faa8d` |
+| 2 | `def` | [inverseAssociator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsAssociator.lean/declarations/inverseassociator.md) | 32 | `declaration-track:b8447069cedc28f5a7b2d42f98c5b8dd709738b1c6f44ee4168af5a6268026b6` |
+| 3 | `def` | [associativity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsAssociator.lean/declarations/associativity.md) | 39 | `declaration-track:a92f62eda08ede7e84cbd1861bb610c78f470443ca4d139e9c5792893642582d` |
+| 4 | `instance` | [associatorIsEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsAssociator.lean/declarations/associatorisequivalence.md) | 45 | `declaration-track:270315f3fea6ce5c262cbb69beb753943edf1a0178c402cae173a8cc0f525566` |
+| 5 | `instance` | [inverseAssociatorIsEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsAssociator.lean/declarations/inverseassociatorisequivalence.md) | 48 | `declaration-track:0584c16865f2c11ff33148720c0014eda40ebfd4a8bd1e5eb3d353d42751457e` |
+| 6 | `def` | [prodFunctorToFunctorProdAssociator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsAssociator.lean/declarations/prodfunctortofunctorprodassociator.md) | 57 | `declaration-track:70fdfc6e8215d5cbd47260d577093e193a83b2bedbf94f0463b1237c12900f1b` |
+| 7 | `def` | [functorProdToProdFunctorAssociator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsAssociator.lean/declarations/functorprodtoprodfunctorassociator.md) | 66 | `declaration-track:3df16a2e1fcecb0510e7cb7f652abaaaa003ac19c2a45745ebbcadc83083e370` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

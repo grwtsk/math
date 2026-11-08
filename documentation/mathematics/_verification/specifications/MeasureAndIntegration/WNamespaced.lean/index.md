@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/WNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/WNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,17 +60,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [GentryCW_eq_GentryW](../../../../MeasureAndIntegration/WNamespaced.lean/declarations/gentrycw-eq-gentryw.md) | 45 | `result-track:a71f8bf3f3514514e275d2e32b6eea790f7c5fde63836c7f0ad6b7b62a12fa50` |
-| 2 | `def` | [L2T](../../../../MeasureAndIntegration/WNamespaced.lean/declarations/l2t.md) | 54 | `declaration-track:acd7eca47eccd8074a6ccec43c449d3ce2ef34fa948f54f80f5cfd237f898493` |
-| 3 | `theorem` | [ReexpansionW.toAt](../../../../MeasureAndIntegration/WNamespaced.lean/declarations/reexpansionw-toat.md) | 56 | `result-track:fc4b2e2c8362f8f7253a9760bda43c43449c21b8daab342cea2d7dc1b6fa8a10` |
-| 4 | `lemma` | [L2star_eq_L2T_add](../../../../MeasureAndIntegration/WNamespaced.lean/declarations/l2star-eq-l2t-add.md) | 61 | `result-track:e92b820b96fdd58ee3ffcd2426dff9b8deba4d2a8698a8705ee90255fe376386` |
-| 5 | `lemma` | [GpW1_sub_GpCW_apply](../../../../MeasureAndIntegration/WNamespaced.lean/declarations/gpw1-sub-gpcw-apply.md) | 70 | `result-track:ac5a0a87e835e81e8f563001bc69fdad33f8f5d387a9e9cf3496d09339e964c8` |
-| 6 | `lemma` | [GpCW_two_sub_GpC_apply](../../../../MeasureAndIntegration/WNamespaced.lean/declarations/gpcw-two-sub-gpc-apply.md) | 84 | `result-track:5be2c5896b8f2c680d65f3a913f2cc563aea42f692e5d9891130e4c465d69e2a` |
-| 7 | `lemma` | [integral_phiHat_sq_abs_PiX_le](../../../../MeasureAndIntegration/WNamespaced.lean/declarations/integral-phihat-sq-abs-pix-le.md) | 103 | `result-track:6cef056033e07922827e43df95548d0b0494e79950605aed8b669134c0cdff2d` |
-| 8 | `lemma` | [abs_gentryNu_PiX_le](../../../../MeasureAndIntegration/WNamespaced.lean/declarations/abs-gentrynu-pix-le.md) | 136 | `result-track:018a62f99ad5a4d6de926dfdf67d25a81dc634e67a5d4a01c479125613b5ee55` |
-| 9 | `theorem` | [hatNegligible_entryDependenceW](../../../../MeasureAndIntegration/WNamespaced.lean/declarations/hatnegligible-entrydependencew.md) | 195 | `result-track:238e082366449455ddbefd3428d7de1dce7832f9d3858f2a32a6be1cd756814d` |
-| 10 | `theorem` | [hatNegligible_piPart](../../../../MeasureAndIntegration/WNamespaced.lean/declarations/hatnegligible-pipart.md) | 220 | `result-track:0a9ba817c9bb4fdef0d68d6940a46e98f7b3ca5126000c9110f729bd34f6dce9` |
-| 11 | `theorem` | [wTraceTransfer_of](../../../../MeasureAndIntegration/WNamespaced.lean/declarations/wtracetransfer-of.md) | 349 | `result-track:a52211a0a5d0f6862d217f51508e32c30d05e0fed50916d9fa7f63f3b94ea431` |
+| 1 | `lemma` | [GentryCW_eq_GentryW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WNamespaced.lean/declarations/gentrycw-eq-gentryw.md) | 45 | `result-track:a71f8bf3f3514514e275d2e32b6eea790f7c5fde63836c7f0ad6b7b62a12fa50` |
+| 2 | `def` | [L2T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WNamespaced.lean/declarations/l2t.md) | 54 | `declaration-track:acd7eca47eccd8074a6ccec43c449d3ce2ef34fa948f54f80f5cfd237f898493` |
+| 3 | `theorem` | [ReexpansionW.toAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WNamespaced.lean/declarations/reexpansionw-toat.md) | 56 | `result-track:fc4b2e2c8362f8f7253a9760bda43c43449c21b8daab342cea2d7dc1b6fa8a10` |
+| 4 | `lemma` | [L2star_eq_L2T_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WNamespaced.lean/declarations/l2star-eq-l2t-add.md) | 61 | `result-track:e92b820b96fdd58ee3ffcd2426dff9b8deba4d2a8698a8705ee90255fe376386` |
+| 5 | `lemma` | [GpW1_sub_GpCW_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WNamespaced.lean/declarations/gpw1-sub-gpcw-apply.md) | 70 | `result-track:ac5a0a87e835e81e8f563001bc69fdad33f8f5d387a9e9cf3496d09339e964c8` |
+| 6 | `lemma` | [GpCW_two_sub_GpC_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WNamespaced.lean/declarations/gpcw-two-sub-gpc-apply.md) | 84 | `result-track:5be2c5896b8f2c680d65f3a913f2cc563aea42f692e5d9891130e4c465d69e2a` |
+| 7 | `lemma` | [integral_phiHat_sq_abs_PiX_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WNamespaced.lean/declarations/integral-phihat-sq-abs-pix-le.md) | 103 | `result-track:6cef056033e07922827e43df95548d0b0494e79950605aed8b669134c0cdff2d` |
+| 8 | `lemma` | [abs_gentryNu_PiX_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WNamespaced.lean/declarations/abs-gentrynu-pix-le.md) | 136 | `result-track:018a62f99ad5a4d6de926dfdf67d25a81dc634e67a5d4a01c479125613b5ee55` |
+| 9 | `theorem` | [hatNegligible_entryDependenceW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WNamespaced.lean/declarations/hatnegligible-entrydependencew.md) | 195 | `result-track:238e082366449455ddbefd3428d7de1dce7832f9d3858f2a32a6be1cd756814d` |
+| 10 | `theorem` | [hatNegligible_piPart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WNamespaced.lean/declarations/hatnegligible-pipart.md) | 220 | `result-track:0a9ba817c9bb4fdef0d68d6940a46e98f7b3ca5126000c9110f729bd34f6dce9` |
+| 11 | `theorem` | [wTraceTransfer_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WNamespaced.lean/declarations/wtracetransfer-of.md) | 349 | `result-track:a52211a0a5d0f6862d217f51508e32c30d05e0fed50916d9fa7f63f3b94ea431` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

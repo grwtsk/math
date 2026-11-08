@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualMoebiusCosineFrequency.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualMoebiusCosineFrequency.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualMoebiusCosineFrequency.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualMoebiusCosineFrequency.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualReciprocalMoebiusCosine](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualMoebiusCosineFrequency.lean/declarations/actualreciprocalmoebiuscosine.md) | 18 | `declaration-track:e859c7228c127a6ec1bb567c8865d8732c8099a3946e7962d305cf944f7826cc` |
-| 2 | `theorem` | [actualReciprocalMoebiusCosine_two](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualMoebiusCosineFrequency.lean/declarations/actualreciprocalmoebiuscosine-two.md) | 22 | `result-track:edf628bd88666726b491b097d7aaa9893a9d47a55a0f1094dfa6b882088a7865` |
-| 3 | `theorem` | [actualReciprocalMoebiusCosine_two_pi](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualMoebiusCosineFrequency.lean/declarations/actualreciprocalmoebiuscosine-two-pi.md) | 29 | `result-track:422c07ee55cef11a79f2be5346dfb07096f30eb3fb334bbb89b21083aa9efa7a` |
-| 4 | `theorem` | [actualReciprocalMoebiusCosine_not_uniform_unit](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualMoebiusCosineFrequency.lean/declarations/actualreciprocalmoebiuscosine-not-uniform-unit.md) | 36 | `result-track:7f6b4ce0bbb60188a771627fb5074c87369020dc77e697faceebb008a94e7bd9` |
+| 1 | `def` | [actualReciprocalMoebiusCosine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualMoebiusCosineFrequency.lean/declarations/actualreciprocalmoebiuscosine.md) | 18 | `declaration-track:e859c7228c127a6ec1bb567c8865d8732c8099a3946e7962d305cf944f7826cc` |
+| 2 | `theorem` | [actualReciprocalMoebiusCosine_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualMoebiusCosineFrequency.lean/declarations/actualreciprocalmoebiuscosine-two.md) | 22 | `result-track:edf628bd88666726b491b097d7aaa9893a9d47a55a0f1094dfa6b882088a7865` |
+| 3 | `theorem` | [actualReciprocalMoebiusCosine_two_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualMoebiusCosineFrequency.lean/declarations/actualreciprocalmoebiuscosine-two-pi.md) | 29 | `result-track:422c07ee55cef11a79f2be5346dfb07096f30eb3fb334bbb89b21083aa9efa7a` |
+| 4 | `theorem` | [actualReciprocalMoebiusCosine_not_uniform_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualMoebiusCosineFrequency.lean/declarations/actualreciprocalmoebiuscosine-not-uniform-unit.md) | 36 | `result-track:7f6b4ce0bbb60188a771627fb5074c87369020dc77e697faceebb008a94e7bd9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

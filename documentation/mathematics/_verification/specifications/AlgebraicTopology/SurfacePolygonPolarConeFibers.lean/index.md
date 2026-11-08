@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonPolarConeFibers.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonPolarConeFibers.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarConeFibers.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarConeFibers.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarStandardConeDescent`](../../../../GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/index.md) — import line 8; pinned internal source present.
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarAddCircleKernel`](../../../../AlgebraicTopology/SurfacePolygonPolarAddCircleKernel.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarStandardConeDescent`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarAddCircleKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarAddCircleKernel.lean/index.md) — import line 9; pinned internal source present.
 - `Mathlib.Tactic` — import line 10; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [jointPolar_radius_eq](../../../../AlgebraicTopology/SurfacePolygonPolarConeFibers.lean/declarations/jointpolar-radius-eq.md) | 36 | `result-track:bff3a0d117177762ae3ff206fcd5dba16952b50b784a842d3d2f7f237551c133` |
-| 2 | `theorem` | [jointPolar_angle_eq_of_ne_zero](../../../../AlgebraicTopology/SurfacePolygonPolarConeFibers.lean/declarations/jointpolar-angle-eq-of-ne-zero.md) | 61 | `result-track:c2fc3d1c65a6b6787e91ec201976a651f265a5c7436beef16370ae17e9ea64e5` |
-| 3 | `theorem` | [standardConePolarDisk_eq_iff_connected](../../../../AlgebraicTopology/SurfacePolygonPolarConeFibers.lean/declarations/standardconepolardisk-eq-iff-connected.md) | 89 | `result-track:c438a0a5783f3ea26e885ea4db9cc6022f999ddf8526ed9660cd3a7f83a452cd` |
-| 4 | `theorem` | [standardConePolarDisk_injective](../../../../AlgebraicTopology/SurfacePolygonPolarConeFibers.lean/declarations/standardconepolardisk-injective.md) | 109 | `result-track:0733a2dfdd0fb19747639c9c1a692bc3d0571f382061ccda96352d2ba40f0460` |
+| 1 | `theorem` | [jointPolar_radius_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarConeFibers.lean/declarations/jointpolar-radius-eq.md) | 36 | `result-track:bff3a0d117177762ae3ff206fcd5dba16952b50b784a842d3d2f7f237551c133` |
+| 2 | `theorem` | [jointPolar_angle_eq_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarConeFibers.lean/declarations/jointpolar-angle-eq-of-ne-zero.md) | 61 | `result-track:c2fc3d1c65a6b6787e91ec201976a651f265a5c7436beef16370ae17e9ea64e5` |
+| 3 | `theorem` | [standardConePolarDisk_eq_iff_connected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarConeFibers.lean/declarations/standardconepolardisk-eq-iff-connected.md) | 89 | `result-track:c438a0a5783f3ea26e885ea4db9cc6022f999ddf8526ed9660cd3a7f83a452cd` |
+| 4 | `theorem` | [standardConePolarDisk_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarConeFibers.lean/declarations/standardconepolardisk-injective.md) | 109 | `result-track:0733a2dfdd0fb19747639c9c1a692bc3d0571f382061ccda96352d2ba40f0460` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContinuousCompMeasurePreserving.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContinuousCompMeasurePreserving.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContinuousCompMeasurePreserving.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContinuousCompMeasurePreserving.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [compMeasurePreserving_continuous](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContinuousCompMeasurePreserving.lean/declarations/compmeasurepreserving-continuous.md) | 46 | `result-track:424bd440a90c8e480dc557bb2cf28714b4b83849c461d2dc68e6bad4ee31f78f` |
-| 2 | `theorem` | [Filter.Tendsto.compMeasurePreservingLp](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContinuousCompMeasurePreserving.lean/declarations/filter-tendsto-compmeasurepreservinglp.md) | 69 | `result-track:42a96a8ba0e004f8ed12c615012ce66b7d8bdb1814ce3c82c1258d0db3329444` |
-| 3 | `theorem` | [ContinuousWithinAt.compMeasurePreservingLp](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContinuousCompMeasurePreserving.lean/declarations/continuouswithinat-compmeasurepreservinglp.md) | 83 | `result-track:7890bb1d88d9b973ebc93ae223b066e32010d91f031c29680b0bde095448e833` |
-| 4 | `theorem` | [ContinuousAt.compMeasurePreservingLp](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContinuousCompMeasurePreserving.lean/declarations/continuousat-compmeasurepreservinglp.md) | 88 | `result-track:37d3c14f632c9632701382b1434efa8834802b38c26eba0decb725e30520fb5b` |
-| 5 | `theorem` | [ContinuousOn.compMeasurePreservingLp](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContinuousCompMeasurePreserving.lean/declarations/continuouson-compmeasurepreservinglp.md) | 93 | `result-track:6ba7386b99bf2d6112e8e261b07c19316ec46baf5c16d25fd5d481b23d061ae4` |
-| 6 | `theorem` | [Continuous.compMeasurePreservingLp](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContinuousCompMeasurePreserving.lean/declarations/continuous-compmeasurepreservinglp.md) | 98 | `result-track:d0accae003177abf98fcd75b89fc434b2972d6c15c26fc87ec7ab74ac3c5a22e` |
+| 1 | `theorem` | [compMeasurePreserving_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContinuousCompMeasurePreserving.lean/declarations/compmeasurepreserving-continuous.md) | 46 | `result-track:424bd440a90c8e480dc557bb2cf28714b4b83849c461d2dc68e6bad4ee31f78f` |
+| 2 | `theorem` | [Filter.Tendsto.compMeasurePreservingLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContinuousCompMeasurePreserving.lean/declarations/filter-tendsto-compmeasurepreservinglp.md) | 69 | `result-track:42a96a8ba0e004f8ed12c615012ce66b7d8bdb1814ce3c82c1258d0db3329444` |
+| 3 | `theorem` | [ContinuousWithinAt.compMeasurePreservingLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContinuousCompMeasurePreserving.lean/declarations/continuouswithinat-compmeasurepreservinglp.md) | 83 | `result-track:7890bb1d88d9b973ebc93ae223b066e32010d91f031c29680b0bde095448e833` |
+| 4 | `theorem` | [ContinuousAt.compMeasurePreservingLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContinuousCompMeasurePreserving.lean/declarations/continuousat-compmeasurepreservinglp.md) | 88 | `result-track:37d3c14f632c9632701382b1434efa8834802b38c26eba0decb725e30520fb5b` |
+| 5 | `theorem` | [ContinuousOn.compMeasurePreservingLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContinuousCompMeasurePreserving.lean/declarations/continuouson-compmeasurepreservinglp.md) | 93 | `result-track:6ba7386b99bf2d6112e8e261b07c19316ec46baf5c16d25fd5d481b23d061ae4` |
+| 6 | `theorem` | [Continuous.compMeasurePreservingLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContinuousCompMeasurePreserving.lean/declarations/continuous-compmeasurepreservinglp.md) | 98 | `result-track:d0accae003177abf98fcd75b89fc434b2972d6c15c26fc87ec7ab74ac3c5a22e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

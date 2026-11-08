@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Update.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Update.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Update.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Update.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [set](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Update.lean/declarations/set.md) | 11 | `declaration-track:23e4506b62a956ed713dad3a7fa1b60996211fa2c1e393be1b11e2be98153e10` |
-| 2 | `theorem` | [set_target](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Update.lean/declarations/set-target.md) | 23 | `result-track:171dae59d22bff01f281bcc62f99893bb54b831833effee49ec8f3b2d868816c` |
-| 3 | `theorem` | [set_other](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Update.lean/declarations/set-other.md) | 30 | `result-track:dc4db59981e76a8ef2d486f34f2df258551b06f9599583b642b2ddc6c83da75a` |
+| 1 | `def` | [set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Update.lean/declarations/set.md) | 11 | `declaration-track:23e4506b62a956ed713dad3a7fa1b60996211fa2c1e393be1b11e2be98153e10` |
+| 2 | `theorem` | [set_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Update.lean/declarations/set-target.md) | 23 | `result-track:171dae59d22bff01f281bcc62f99893bb54b831833effee49ec8f3b2d868816c` |
+| 3 | `theorem` | [set_other](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Update.lean/declarations/set-other.md) | 30 | `result-track:dc4db59981e76a8ef2d486f34f2df258551b06f9599583b642b2ddc6c83da75a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

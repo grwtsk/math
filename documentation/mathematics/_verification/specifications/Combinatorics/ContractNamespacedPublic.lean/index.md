@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ContractNamespacedPublic.lean/index.md) · [Full source](../../../../Combinatorics/ContractNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [transportSchemaVersionV1](../../../../Combinatorics/ContractNamespacedPublic.lean/declarations/transportschemaversionv1.md) | 27 | `declaration-track:ad133a1d9024f4da1fffd5840522273c4f06b1f1d5acd611d47c1992fc66fe9b` |
-| 2 | `def` | [transportSerializationVersionV1](../../../../Combinatorics/ContractNamespacedPublic.lean/declarations/transportserializationversionv1.md) | 28 | `declaration-track:6c514a06d9a2396c81f32903f61e95764512f652555bd5a21666d053df289991` |
-| 3 | `def` | [transportRevisionWidthV1](../../../../Combinatorics/ContractNamespacedPublic.lean/declarations/transportrevisionwidthv1.md) | 29 | `declaration-track:62422002ce7bb42fa525a8913f83090a3c0b2622fc61a1b93bcb6378bf740c9d` |
-| 4 | `def` | [traversalModeCode](../../../../Combinatorics/ContractNamespacedPublic.lean/declarations/traversalmodecode.md) | 31 | `declaration-track:f18a11185bfe177c738661d5410df928f78851062b729134f135a7849689eeec` |
-| 5 | `structure` | [TransportContract](../../../../Combinatorics/ContractNamespacedPublic.lean/declarations/transportcontract.md) | 36 | `declaration-track:8c7f0416ad01e46d82a02d635ee1ac53a16b05bc016d79c6b1f68f6c2d5488ca` |
-| 6 | `def` | [hostTableMaterial](../../../../Combinatorics/ContractNamespacedPublic.lean/declarations/hosttablematerial.md) | 52 | `declaration-track:be8d311810328c9891f54eaf7b4c0dd21cf896639d0b9d2a086710e320471ea7` |
-| 7 | `def` | [edgeTableMaterial](../../../../Combinatorics/ContractNamespacedPublic.lean/declarations/edgetablematerial.md) | 57 | `declaration-track:9d9721836b31e4bb9fbc3afbf3b45b668ade30b546d1a06c7c302996c9ca8328` |
-| 8 | `def` | [canonicalMaterial](../../../../Combinatorics/ContractNamespacedPublic.lean/declarations/canonicalmaterial.md) | 68 | `declaration-track:577c3a6e121a62f93bb217dbf476d32c9f095bdc0e1416f09531d54beae2fa60` |
-| 9 | `def` | [Valid](../../../../Combinatorics/ContractNamespacedPublic.lean/declarations/valid.md) | 93 | `declaration-track:cc2b10060f193a9e5a4209ca097ce123ef56608117b92bf8e5a454a8798350e7` |
-| 10 | `instance` | [(anonymous)](../../../../Combinatorics/ContractNamespacedPublic.lean/declarations/instance.md) | 104 | `declaration-track:2a954969cfba219e89503e5e8ad045257faa1120665cf80d7c5994198b7ccf5c` |
-| 11 | `def` | [verifyTransportContract](../../../../Combinatorics/ContractNamespacedPublic.lean/declarations/verifytransportcontract.md) | 109 | `declaration-track:8ea8a34bc2944323241484bd4502aa7e3e683376e5fde1afc64321e3e1768cb5` |
-| 12 | `theorem` | [verifyTransportContract_sound](../../../../Combinatorics/ContractNamespacedPublic.lean/declarations/verifytransportcontract-sound.md) | 115 | `result-track:e91d0abd73b30da823619c25e6766bd75db7d470f3c27c2504c11dc15a651134` |
-| 13 | `theorem` | [canonicalMaterial_deterministic](../../../../Combinatorics/ContractNamespacedPublic.lean/declarations/canonicalmaterial-deterministic.md) | 123 | `result-track:a2629e9f901509d686dd902aa105f93dd7444868a219794e1b94505414b9fdb9` |
+| 1 | `def` | [transportSchemaVersionV1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractNamespacedPublic.lean/declarations/transportschemaversionv1.md) | 27 | `declaration-track:ad133a1d9024f4da1fffd5840522273c4f06b1f1d5acd611d47c1992fc66fe9b` |
+| 2 | `def` | [transportSerializationVersionV1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractNamespacedPublic.lean/declarations/transportserializationversionv1.md) | 28 | `declaration-track:6c514a06d9a2396c81f32903f61e95764512f652555bd5a21666d053df289991` |
+| 3 | `def` | [transportRevisionWidthV1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractNamespacedPublic.lean/declarations/transportrevisionwidthv1.md) | 29 | `declaration-track:62422002ce7bb42fa525a8913f83090a3c0b2622fc61a1b93bcb6378bf740c9d` |
+| 4 | `def` | [traversalModeCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractNamespacedPublic.lean/declarations/traversalmodecode.md) | 31 | `declaration-track:f18a11185bfe177c738661d5410df928f78851062b729134f135a7849689eeec` |
+| 5 | `structure` | [TransportContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractNamespacedPublic.lean/declarations/transportcontract.md) | 36 | `declaration-track:8c7f0416ad01e46d82a02d635ee1ac53a16b05bc016d79c6b1f68f6c2d5488ca` |
+| 6 | `def` | [hostTableMaterial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractNamespacedPublic.lean/declarations/hosttablematerial.md) | 52 | `declaration-track:be8d311810328c9891f54eaf7b4c0dd21cf896639d0b9d2a086710e320471ea7` |
+| 7 | `def` | [edgeTableMaterial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractNamespacedPublic.lean/declarations/edgetablematerial.md) | 57 | `declaration-track:9d9721836b31e4bb9fbc3afbf3b45b668ade30b546d1a06c7c302996c9ca8328` |
+| 8 | `def` | [canonicalMaterial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractNamespacedPublic.lean/declarations/canonicalmaterial.md) | 68 | `declaration-track:577c3a6e121a62f93bb217dbf476d32c9f095bdc0e1416f09531d54beae2fa60` |
+| 9 | `def` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractNamespacedPublic.lean/declarations/valid.md) | 93 | `declaration-track:cc2b10060f193a9e5a4209ca097ce123ef56608117b92bf8e5a454a8798350e7` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractNamespacedPublic.lean/declarations/instance.md) | 104 | `declaration-track:2a954969cfba219e89503e5e8ad045257faa1120665cf80d7c5994198b7ccf5c` |
+| 11 | `def` | [verifyTransportContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractNamespacedPublic.lean/declarations/verifytransportcontract.md) | 109 | `declaration-track:8ea8a34bc2944323241484bd4502aa7e3e683376e5fde1afc64321e3e1768cb5` |
+| 12 | `theorem` | [verifyTransportContract_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractNamespacedPublic.lean/declarations/verifytransportcontract-sound.md) | 115 | `result-track:e91d0abd73b30da823619c25e6766bd75db7d470f3c27c2504c11dc15a651134` |
+| 13 | `theorem` | [canonicalMaterial_deterministic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractNamespacedPublic.lean/declarations/canonicalmaterial-deterministic.md) | 123 | `result-track:a2629e9f901509d686dd902aa105f93dd7444868a219794e1b94505414b9fdb9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

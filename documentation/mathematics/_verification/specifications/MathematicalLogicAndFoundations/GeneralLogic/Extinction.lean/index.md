@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FundamentalGroupDescriptor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/declarations/fundamentalgroupdescriptor.md) | 6 | `declaration-track:706c04487c05f82cb0746f097bc2553ef4ca1c6c7105821f371bd220e88a8230` |
-| 2 | `structure` | [FreeProductFiniteAndCyclicFundamentalGroup](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/declarations/freeproductfiniteandcyclicfundamentalgroup.md) | 10 | `declaration-track:c511fa1ebe3abefbfc3c3c6a7158af5511336498475f9fc67a788cdc109c5900` |
-| 3 | `structure` | [FiniteTimeExtinctionHypotheses](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/declarations/finitetimeextinctionhypotheses.md) | 15 | `declaration-track:2a07a9fe9a05fe11f07ff0c55784f6aa5c1e08edf2f9f84b90368776a0d49ea4` |
-| 4 | `def` | [TimeSliceEmpty](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/declarations/timesliceempty.md) | 24 | `declaration-track:9518105a31b875a3f1d44458381693bca5270b03b17f0c9e5cb5ca898ba45b68` |
-| 5 | `structure` | [FiniteTimeExtinctionCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/declarations/finitetimeextinctioncertificate.md) | 28 | `declaration-track:98ca1362652abe1c18f4a4e2c63de853286e77d6f0c14a37fc7d5de8236a1146` |
-| 6 | `theorem` | [ricciFlowWithSurgery_finiteTimeExtinction_under_hypotheses](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/declarations/ricciflowwithsurgery-finitetimeextinction-under-hypotheses.md) | 36 | `result-track:94a139ac8cfc610d0b6cf154623f16c10dec947ba395e7b04b50843be39b6973` |
-| 7 | `structure` | [ClaimsFiniteTimeExtinction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/declarations/claimsfinitetimeextinction.md) | 49 | `declaration-track:a22d33cbd80c2d27f148d709f09b92095f44e7d7db104773645ff99e6e0ce2bf` |
-| 8 | `theorem` | [finiteTimeExtinction_not_automatic](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/declarations/finitetimeextinction-not-automatic.md) | 53 | `result-track:70d13154adde762d639ead8b2b99782a401320f77418955754bfbd2a83052956` |
+| 1 | `structure` | [FundamentalGroupDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/declarations/fundamentalgroupdescriptor.md) | 6 | `declaration-track:706c04487c05f82cb0746f097bc2553ef4ca1c6c7105821f371bd220e88a8230` |
+| 2 | `structure` | [FreeProductFiniteAndCyclicFundamentalGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/declarations/freeproductfiniteandcyclicfundamentalgroup.md) | 10 | `declaration-track:c511fa1ebe3abefbfc3c3c6a7158af5511336498475f9fc67a788cdc109c5900` |
+| 3 | `structure` | [FiniteTimeExtinctionHypotheses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/declarations/finitetimeextinctionhypotheses.md) | 15 | `declaration-track:2a07a9fe9a05fe11f07ff0c55784f6aa5c1e08edf2f9f84b90368776a0d49ea4` |
+| 4 | `def` | [TimeSliceEmpty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/declarations/timesliceempty.md) | 24 | `declaration-track:9518105a31b875a3f1d44458381693bca5270b03b17f0c9e5cb5ca898ba45b68` |
+| 5 | `structure` | [FiniteTimeExtinctionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/declarations/finitetimeextinctioncertificate.md) | 28 | `declaration-track:98ca1362652abe1c18f4a4e2c63de853286e77d6f0c14a37fc7d5de8236a1146` |
+| 6 | `theorem` | [ricciFlowWithSurgery_finiteTimeExtinction_under_hypotheses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/declarations/ricciflowwithsurgery-finitetimeextinction-under-hypotheses.md) | 36 | `result-track:94a139ac8cfc610d0b6cf154623f16c10dec947ba395e7b04b50843be39b6973` |
+| 7 | `structure` | [ClaimsFiniteTimeExtinction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/declarations/claimsfinitetimeextinction.md) | 49 | `declaration-track:a22d33cbd80c2d27f148d709f09b92095f44e7d7db104773645ff99e6e0ce2bf` |
+| 8 | `theorem` | [finiteTimeExtinction_not_automatic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Extinction.lean/declarations/finitetimeextinction-not-automatic.md) | 53 | `result-track:70d13154adde762d639ead8b2b99782a401320f77418955754bfbd2a83052956` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

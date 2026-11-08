@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/PhaseSplitting.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/PhaseSplitting.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PhaseSplitting.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PhaseSplitting.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BocksteinSplitting](../../../../GroupTheoryAndGeneralizations/PhaseSplitting.lean/declarations/bocksteinsplitting.md) | 16 | `declaration-track:9e9d904dbbf0132461db5d1afba3e8dcc302faf23757a391df8ac2381c0f66e6` |
-| 2 | `theorem` | [section_phase](../../../../GroupTheoryAndGeneralizations/PhaseSplitting.lean/declarations/section-phase.md) | 39 | `result-track:7eae04f168adce71a1b6a4d5ad18014cd04d1b8a77a71280bcca2571c2eb43cb` |
+| 1 | `structure` | [BocksteinSplitting](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PhaseSplitting.lean/declarations/bocksteinsplitting.md) | 16 | `declaration-track:9e9d904dbbf0132461db5d1afba3e8dcc302faf23757a391df8ac2381c0f66e6` |
+| 2 | `theorem` | [section_phase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PhaseSplitting.lean/declarations/section-phase.md) | 39 | `result-track:7eae04f168adce71a1b6a4d5ad18014cd04d1b8a77a71280bcca2571c2eb43cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

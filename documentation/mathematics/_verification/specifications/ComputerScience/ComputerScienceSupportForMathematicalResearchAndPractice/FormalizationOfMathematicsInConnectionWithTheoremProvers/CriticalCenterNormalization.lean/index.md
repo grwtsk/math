@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalization.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [normalization_sends_raw_to_spectral](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalization.lean/declarations/normalization-sends-raw-to-spectral.md) | 19 | `result-track:84e1db79b68fc0554effdb9285587c88b997a262964c298564d7c5368259da1e` |
-| 2 | `theorem` | [normalization_matches_declared_center](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalization.lean/declarations/normalization-matches-declared-center.md) | 25 | `result-track:ddb938e20220b231882193ba636ed004b14294549684bb62b0c8d47b570d48f0` |
-| 3 | `theorem` | [affine_shift_sends_raw_to_spectral](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalization.lean/declarations/affine-shift-sends-raw-to-spectral.md) | 31 | `result-track:f98806d2784bb63741caa687cfbca4afde6161f99c1b168f9b597c906b2ef1a2` |
+| 1 | `theorem` | [normalization_sends_raw_to_spectral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalization.lean/declarations/normalization-sends-raw-to-spectral.md) | 19 | `result-track:84e1db79b68fc0554effdb9285587c88b997a262964c298564d7c5368259da1e` |
+| 2 | `theorem` | [normalization_matches_declared_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalization.lean/declarations/normalization-matches-declared-center.md) | 25 | `result-track:ddb938e20220b231882193ba636ed004b14294549684bb62b0c8d47b570d48f0` |
+| 3 | `theorem` | [affine_shift_sends_raw_to_spectral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalization.lean/declarations/affine-shift-sends-raw-to-spectral.md) | 31 | `result-track:f98806d2784bb63741caa687cfbca4afde6161f99c1b168f9b597c906b2ef1a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

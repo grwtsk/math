@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpInjectivePublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpInjectivePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpInjectivePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpInjectivePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Module.Baer.of_divisible](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpInjectivePublic.lean/declarations/module-baer-of-divisible.md) | 35 | `result-track:ec8ac16f7dbdf29e6f66991b0e3e8b294ac1a2f2a881dac0507f6523cafd9c23` |
-| 2 | `theorem` | [injective_as_module_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpInjectivePublic.lean/declarations/injective-as-module-iff.md) | 50 | `result-track:f1e8509e04d6bc01abbc11ba1d5667fa1e4dc681602936c8bb982851ef9d8319` |
-| 3 | `instance` | [injective_of_divisible](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpInjectivePublic.lean/declarations/injective-of-divisible.md) | 54 | `declaration-track:b4f0a8be875c3b3ef85d4c3fa9dcc0f23e722f1c5273f792e1fc062a1d076dd9` |
+| 1 | `theorem` | [Module.Baer.of_divisible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpInjectivePublic.lean/declarations/module-baer-of-divisible.md) | 35 | `result-track:ec8ac16f7dbdf29e6f66991b0e3e8b294ac1a2f2a881dac0507f6523cafd9c23` |
+| 2 | `theorem` | [injective_as_module_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpInjectivePublic.lean/declarations/injective-as-module-iff.md) | 50 | `result-track:f1e8509e04d6bc01abbc11ba1d5667fa1e4dc681602936c8bb982851ef9d8319` |
+| 3 | `instance` | [injective_of_divisible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpInjectivePublic.lean/declarations/injective-of-divisible.md) | 54 | `declaration-track:b4f0a8be875c3b3ef85d4c3fa9dcc0f23e722f1c5273f792e1fc062a1d076dd9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

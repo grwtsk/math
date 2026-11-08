@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/DelabNonCanonicalNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/DelabNonCanonicalNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/DelabNonCanonicalNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/DelabNonCanonicalNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Lean.Meta.isCanonicalInstance](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/DelabNonCanonicalNamespacedPublic.lean/declarations/lean-meta-iscanonicalinstance.md) | 32 | `declaration-track:883565481a7c09e8e5f975b30f4be341dc0e25babfdaa92b9a0ac25308269341` |
-| 2 | `def` | [delabCheckingCanonical](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/DelabNonCanonicalNamespacedPublic.lean/declarations/delabcheckingcanonical.md) | 40 | `declaration-track:363addeffd9035f890fbdd1dae70c5e881e73831bb8ca04a6e2698242945a5e6` |
-| 3 | `def` | [delabUnary](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/DelabNonCanonicalNamespacedPublic.lean/declarations/delabunary.md) | 52 | `declaration-track:c6349fc973796b0b6276e1d96bb8ffae195aff7ccf572cc84979e2085af2f246` |
-| 4 | `def` | [delabBinary](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/DelabNonCanonicalNamespacedPublic.lean/declarations/delabbinary.md) | 60 | `declaration-track:3c5a85103b3efe0f3fd86f9b6ec7a24bfd096eee8ccabc0de264aa32f3846c99` |
+| 1 | `def` | [Lean.Meta.isCanonicalInstance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/DelabNonCanonicalNamespacedPublic.lean/declarations/lean-meta-iscanonicalinstance.md) | 32 | `declaration-track:883565481a7c09e8e5f975b30f4be341dc0e25babfdaa92b9a0ac25308269341` |
+| 2 | `def` | [delabCheckingCanonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/DelabNonCanonicalNamespacedPublic.lean/declarations/delabcheckingcanonical.md) | 40 | `declaration-track:363addeffd9035f890fbdd1dae70c5e881e73831bb8ca04a6e2698242945a5e6` |
+| 3 | `def` | [delabUnary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/DelabNonCanonicalNamespacedPublic.lean/declarations/delabunary.md) | 52 | `declaration-track:c6349fc973796b0b6276e1d96bb8ffae195aff7ccf572cc84979e2085af2f246` |
+| 4 | `def` | [delabBinary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/DelabNonCanonicalNamespacedPublic.lean/declarations/delabbinary.md) | 60 | `declaration-track:3c5a85103b3efe0f3fd86f9b6ec7a24bfd096eee8ccabc0de264aa32f3846c99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixForceDensityMatrixLayout.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixForceDensityMatrixLayout.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixForceDensityMatrixLayout.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixForceDensityMatrixLayout.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ForceDensityMatrixLayout](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixForceDensityMatrixLayout.lean/declarations/forcedensitymatrixlayout.md) | 5 | `declaration-track:5c694fe30ed60af82838131feb6a74482ff3de902d4594537ed1f1c4ef4379a3` |
-| 2 | `def` | [defaultBridgeMatrixLayout](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixForceDensityMatrixLayout.lean/declarations/defaultbridgematrixlayout.md) | 11 | `declaration-track:3fb5fba646e65ca107a0c816b1257d1cd4c5b9611cc64ff8f3fe9517c4fc1729` |
-| 3 | `def` | [forceDensityEquilibriumLaw](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixForceDensityMatrixLayout.lean/declarations/forcedensityequilibriumlaw.md) | 14 | `declaration-track:59e23523fa5cee1a02d34de040d30ecca02b40d58d82ca04ffbd50fc8967a4f9` |
+| 1 | `structure` | [ForceDensityMatrixLayout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixForceDensityMatrixLayout.lean/declarations/forcedensitymatrixlayout.md) | 5 | `declaration-track:5c694fe30ed60af82838131feb6a74482ff3de902d4594537ed1f1c4ef4379a3` |
+| 2 | `def` | [defaultBridgeMatrixLayout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixForceDensityMatrixLayout.lean/declarations/defaultbridgematrixlayout.md) | 11 | `declaration-track:3fb5fba646e65ca107a0c816b1257d1cd4c5b9611cc64ff8f3fe9517c4fc1729` |
+| 3 | `def` | [forceDensityEquilibriumLaw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixForceDensityMatrixLayout.lean/declarations/forcedensityequilibriumlaw.md) | 14 | `declaration-track:59e23523fa5cee1a02d34de040d30ecca02b40d58d82ca04ffbd50fc8967a4f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

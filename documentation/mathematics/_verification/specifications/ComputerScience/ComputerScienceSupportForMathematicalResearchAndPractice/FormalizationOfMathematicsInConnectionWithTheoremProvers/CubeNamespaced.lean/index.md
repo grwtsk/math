@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CubeNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CubeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CubeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CubeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cubeSide_succ](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CubeNamespaced.lean/declarations/cubeside-succ.md) | 29 | `result-track:823e6934d8241b969d1c3eeb23cb79086d475af4b1450bfb41b8d664551d9342` |
-| 2 | `theorem` | [appendBits_coord_val](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CubeNamespaced.lean/declarations/appendbits-coord-val.md) | 35 | `result-track:44c6d5b507cdf126e0058048bc183a580968e62975b02b85e65d77dee0f9816e` |
-| 3 | `theorem` | [embedLow_coord_val](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CubeNamespaced.lean/declarations/embedlow-coord-val.md) | 44 | `result-track:461645d8f94e36981b6477a369b7806c3fadf9acf21358e0e88e6b4c3abd79f6` |
+| 1 | `theorem` | [cubeSide_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CubeNamespaced.lean/declarations/cubeside-succ.md) | 29 | `result-track:823e6934d8241b969d1c3eeb23cb79086d475af4b1450bfb41b8d664551d9342` |
+| 2 | `theorem` | [appendBits_coord_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CubeNamespaced.lean/declarations/appendbits-coord-val.md) | 35 | `result-track:44c6d5b507cdf126e0058048bc183a580968e62975b02b85e65d77dee0f9816e` |
+| 3 | `theorem` | [embedLow_coord_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CubeNamespaced.lean/declarations/embedlow-coord-val.md) | 44 | `result-track:461645d8f94e36981b6477a369b7806c3fadf9acf21358e0e88e6b4c3abd79f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

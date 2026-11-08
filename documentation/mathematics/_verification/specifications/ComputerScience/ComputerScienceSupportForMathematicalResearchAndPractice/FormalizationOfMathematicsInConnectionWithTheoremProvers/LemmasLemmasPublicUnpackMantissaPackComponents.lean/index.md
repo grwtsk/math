@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasPublicUnpackMantissaPackComponents.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasPublicUnpackMantissaPackComponents.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasPublicUnpackMantissaPackComponents.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasPublicUnpackMantissaPackComponents.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [unpackMantissa_packComponents](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasPublicUnpackMantissaPackComponents.lean/declarations/unpackmantissa-packcomponents.md) | 25 | `result-track:c27dc9ec2b8a380c539e90719856fb8c4dbbc39f1c05e68ae038fc9a593993de` |
-| 2 | `theorem` | [unpackExponent_packComponents](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasPublicUnpackMantissaPackComponents.lean/declarations/unpackexponent-packcomponents.md) | 31 | `result-track:c2af1d832381ff29f5ee522acf8f7a86e57c4d61c0dee3c51b804d67cc43fc57` |
-| 3 | `theorem` | [valid_pack](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasPublicUnpackMantissaPackComponents.lean/declarations/valid-pack.md) | 37 | `result-track:02857b7710c39b8f9f4bc0b1f4d0c7a0952c23d4e36755338ec3e3583993c80a` |
+| 1 | `theorem` | [unpackMantissa_packComponents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasPublicUnpackMantissaPackComponents.lean/declarations/unpackmantissa-packcomponents.md) | 25 | `result-track:c27dc9ec2b8a380c539e90719856fb8c4dbbc39f1c05e68ae038fc9a593993de` |
+| 2 | `theorem` | [unpackExponent_packComponents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasPublicUnpackMantissaPackComponents.lean/declarations/unpackexponent-packcomponents.md) | 31 | `result-track:c2af1d832381ff29f5ee522acf8f7a86e57c4d61c0dee3c51b804d67cc43fc57` |
+| 3 | `theorem` | [valid_pack](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasPublicUnpackMantissaPackComponents.lean/declarations/valid-pack.md) | 37 | `result-track:02857b7710c39b8f9f4bc0b1f4d0c7a0952c23d4e36755338ec3e3583993c80a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FlatDomainDomain.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FlatDomainDomain.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatDomainDomain.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatDomainDomain.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [TensorProduct.map_injective_of_flat_flat_of_isDomain](../../../../CommutativeAlgebra/FlatDomainDomain.lean/declarations/tensorproduct-map-injective-of-flat-flat-of-isdomain.md) | 28 | `result-track:80048460cd439d5aa9fe18f47bfda48deb6c91f02baa7177849ad702dc56f7c7` |
-| 2 | `lemma` | [LinearIndependent.tmul_of_isDomain](../../../../CommutativeAlgebra/FlatDomainDomain.lean/declarations/linearindependent-tmul-of-isdomain.md) | 58 | `result-track:2f6bfe1c2bd195d68c927cf9042c7d0a303991ddc78547feb894131720371f09` |
-| 3 | `lemma` | [LinearIndepOn.tmul_of_isDomain](../../../../CommutativeAlgebra/FlatDomainDomain.lean/declarations/linearindepon-tmul-of-isdomain.md) | 71 | `result-track:e2729b3c3382bbe7cc348964da2c48d7d68c675ddb9ce6e486550d38d42abf9a` |
+| 1 | `lemma` | [TensorProduct.map_injective_of_flat_flat_of_isDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatDomainDomain.lean/declarations/tensorproduct-map-injective-of-flat-flat-of-isdomain.md) | 28 | `result-track:80048460cd439d5aa9fe18f47bfda48deb6c91f02baa7177849ad702dc56f7c7` |
+| 2 | `lemma` | [LinearIndependent.tmul_of_isDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatDomainDomain.lean/declarations/linearindependent-tmul-of-isdomain.md) | 58 | `result-track:2f6bfe1c2bd195d68c927cf9042c7d0a303991ddc78547feb894131720371f09` |
+| 3 | `lemma` | [LinearIndepOn.tmul_of_isDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatDomainDomain.lean/declarations/linearindepon-tmul-of-isdomain.md) | 71 | `result-track:e2729b3c3382bbe7cc348964da2c48d7d68c675ddb9ce6e486550d38d42abf9a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

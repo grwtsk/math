@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/OnePrimeMomentNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/OnePrimeMomentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OnePrimeMomentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OnePrimeMomentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OnePrimeMomentSystem](../../../../NumberTheory/OnePrimeMomentNamespaced.lean/declarations/oneprimemomentsystem.md) | 20 | `declaration-track:2e7011cb55efc664db5a89186d186bfd7dc7e17c568cdd1b27eb2624ef929782` |
-| 2 | `def` | [OnePrimeMomentSystem.q](../../../../NumberTheory/OnePrimeMomentNamespaced.lean/declarations/oneprimemomentsystem-q.md) | 34 | `declaration-track:81875a1ca53aa21fd4a51722a394bafd8e42cd31ab1c9eaffb3cc10e34c0fbb9` |
-| 3 | `theorem` | [OnePrimeMomentSystem.q_nonnegative](../../../../NumberTheory/OnePrimeMomentNamespaced.lean/declarations/oneprimemomentsystem-q-nonnegative.md) | 38 | `result-track:610f99c249e2f21a6e2b4a09414a8e3617ac0ad8adf487125b72ea4044d387ae` |
+| 1 | `structure` | [OnePrimeMomentSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OnePrimeMomentNamespaced.lean/declarations/oneprimemomentsystem.md) | 20 | `declaration-track:2e7011cb55efc664db5a89186d186bfd7dc7e17c568cdd1b27eb2624ef929782` |
+| 2 | `def` | [OnePrimeMomentSystem.q](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OnePrimeMomentNamespaced.lean/declarations/oneprimemomentsystem-q.md) | 34 | `declaration-track:81875a1ca53aa21fd4a51722a394bafd8e42cd31ab1c9eaffb3cc10e34c0fbb9` |
+| 3 | `theorem` | [OnePrimeMomentSystem.q_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OnePrimeMomentNamespaced.lean/declarations/oneprimemomentsystem-q-nonnegative.md) | 38 | `result-track:610f99c249e2f21a6e2b4a09414a8e3617ac0ad8adf487125b72ea4044d387ae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

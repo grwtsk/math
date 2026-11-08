@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MetricSpaceSequencesPublic.lean/index.md) · [Full source](../../../../GeneralTopology/MetricSpaceSequencesPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpaceSequencesPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpaceSequencesPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_subseq_of_frequently_bounded](../../../../GeneralTopology/MetricSpaceSequencesPublic.lean/declarations/tendsto-subseq-of-frequently-bounded.md) | 29 | `result-track:7e2e4093412a936272f60e65d2efe0a2eba373a0c2acb89f688900d885937955` |
-| 2 | `theorem` | [tendsto_subseq_of_bounded](../../../../GeneralTopology/MetricSpaceSequencesPublic.lean/declarations/tendsto-subseq-of-bounded.md) | 38 | `result-track:225da0fbd51d1fa9fbcc2317fef7c937c099d197c469ce804186b671153936a8` |
+| 1 | `theorem` | [tendsto_subseq_of_frequently_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpaceSequencesPublic.lean/declarations/tendsto-subseq-of-frequently-bounded.md) | 29 | `result-track:7e2e4093412a936272f60e65d2efe0a2eba373a0c2acb89f688900d885937955` |
+| 2 | `theorem` | [tendsto_subseq_of_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpaceSequencesPublic.lean/declarations/tendsto-subseq-of-bounded.md) | 38 | `result-track:225da0fbd51d1fa9fbcc2317fef7c937c099d197c469ce804186b671153936a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

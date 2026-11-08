@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../OperatorTheory/HolomorphicLineGaugePort.lean/index.md) · [Full source](../../../../OperatorTheory/HolomorphicLineGaugePort.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineGaugePort.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineGaugePort.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Operator.HolomorphicLinePort`](../../../../GeneralTopology/HolomorphicLinePort.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicLineGaugeTopology`](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.Operator.HolomorphicLinePort`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicLineGaugeTopology`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [transport](../../../../OperatorTheory/HolomorphicLineGaugePort.lean/declarations/transport.md) | 25 | `declaration-track:25e7453ac91be0a2873a315ddfcfecc8297a8560610ed1ccf96e534961949153` |
-| 2 | `theorem` | [transport_apply](../../../../OperatorTheory/HolomorphicLineGaugePort.lean/declarations/transport-apply.md) | 42 | `result-track:2d432fa744f547a01f60f748f3e86c77908a66c5d4d4df7ef817ed57e1d97251` |
-| 3 | `theorem` | [descend_intertwines](../../../../OperatorTheory/HolomorphicLineGaugePort.lean/declarations/descend-intertwines.md) | 48 | `result-track:582d9af56cbfea5e07c5fb121de3396ba8cb7c6a2e73f675386d43e0571e4ba9` |
-| 4 | `theorem` | [descend_conjugacy](../../../../OperatorTheory/HolomorphicLineGaugePort.lean/declarations/descend-conjugacy.md) | 61 | `result-track:fd1f3b41597836b3a396c4213b69183ec3e8b30409b166502cee861bccc795dc` |
-| 5 | `theorem` | [transport_comp_descend](../../../../OperatorTheory/HolomorphicLineGaugePort.lean/declarations/transport-comp-descend.md) | 71 | `result-track:b8ee527517f57bfc3290372e756e91998537e621ecfd17dcbd8759403c95515d` |
-| 6 | `theorem` | [transport_preservesHolomorphy](../../../../OperatorTheory/HolomorphicLineGaugePort.lean/declarations/transport-preservesholomorphy.md) | 91 | `result-track:a2d603e156e02f7d3e0318abd4f34b6d83ea79d494c73751b09221c6b902a2cd` |
-| 7 | `theorem` | [mapSection_naturality](../../../../OperatorTheory/HolomorphicLineGaugePort.lean/declarations/mapsection-naturality.md) | 101 | `result-track:19d47054dba2269c65c16fdd2c5bc635b475e78347edceb6e1dd274b4cbe5fc0` |
+| 1 | `def` | [transport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineGaugePort.lean/declarations/transport.md) | 25 | `declaration-track:25e7453ac91be0a2873a315ddfcfecc8297a8560610ed1ccf96e534961949153` |
+| 2 | `theorem` | [transport_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineGaugePort.lean/declarations/transport-apply.md) | 42 | `result-track:2d432fa744f547a01f60f748f3e86c77908a66c5d4d4df7ef817ed57e1d97251` |
+| 3 | `theorem` | [descend_intertwines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineGaugePort.lean/declarations/descend-intertwines.md) | 48 | `result-track:582d9af56cbfea5e07c5fb121de3396ba8cb7c6a2e73f675386d43e0571e4ba9` |
+| 4 | `theorem` | [descend_conjugacy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineGaugePort.lean/declarations/descend-conjugacy.md) | 61 | `result-track:fd1f3b41597836b3a396c4213b69183ec3e8b30409b166502cee861bccc795dc` |
+| 5 | `theorem` | [transport_comp_descend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineGaugePort.lean/declarations/transport-comp-descend.md) | 71 | `result-track:b8ee527517f57bfc3290372e756e91998537e621ecfd17dcbd8759403c95515d` |
+| 6 | `theorem` | [transport_preservesHolomorphy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineGaugePort.lean/declarations/transport-preservesholomorphy.md) | 91 | `result-track:a2d603e156e02f7d3e0318abd4f34b6d83ea79d494c73751b09221c6b902a2cd` |
+| 7 | `theorem` | [mapSection_naturality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineGaugePort.lean/declarations/mapsection-naturality.md) | 101 | `result-track:19d47054dba2269c65c16fdd2c5bc635b475e78347edceb6e1dd274b4cbe5fc0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

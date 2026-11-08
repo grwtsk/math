@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/AnalyticAffineBridge.lean/index.md) · [Full source](../../../../Geometry/AnalyticAffineBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AnalyticAffineBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AnalyticAffineBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.HolomorphicEvaluationSpectrum`](../../../../FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Topology.PortFiber.Basic`](../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicEvaluationSpectrum`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Topology.PortFiber.Basic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Bridge](../../../../Geometry/AnalyticAffineBridge.lean/declarations/bridge.md) | 17 | `declaration-track:536f7a016272959188d8d7c8bd0b6ac788be6a5452d57aa34d0b8ab4e8dac85f` |
-| 2 | `def` | [pointMap](../../../../Geometry/AnalyticAffineBridge.lean/declarations/pointmap.md) | 24 | `declaration-track:93dd95e8cf0d759957c0450a34dcd6d021147dabf72da5bf8d8dd46908d713c5` |
-| 3 | `def` | [precomp](../../../../Geometry/AnalyticAffineBridge.lean/declarations/precomp.md) | 29 | `declaration-track:827fe84f44229a68609e9b708be355bbae50b2c26514ebf2499e8493edb9556a` |
-| 4 | `theorem` | [pointMap_precomp](../../../../Geometry/AnalyticAffineBridge.lean/declarations/pointmap-precomp.md) | 34 | `result-track:a53867346163ef9a8840e66122984b1ca30e62605e93bbb1d26a5b4a51cfed5f` |
-| 5 | `def` | [restrict](../../../../Geometry/AnalyticAffineBridge.lean/declarations/restrict.md) | 41 | `declaration-track:aadba4b54d171b19438c7367060369d03206aca56927d04bdaade2d5132233ac` |
-| 6 | `theorem` | [pointMap_restrict](../../../../Geometry/AnalyticAffineBridge.lean/declarations/pointmap-restrict.md) | 46 | `result-track:fee888de210bf6acf2f0eb7357396e055d8e0733d29c89d531afe3a065ea58dc` |
-| 7 | `theorem` | [restrict_precomp](../../../../Geometry/AnalyticAffineBridge.lean/declarations/restrict-precomp.md) | 59 | `result-track:98bff8baf30333fac1a6d93edfff21eaa71ea9dce3152f2d3342a9879e67c801` |
-| 8 | `def` | [identity](../../../../Geometry/AnalyticAffineBridge.lean/declarations/identity.md) | 66 | `declaration-track:429d304761a5102064a5db2215886174e3968375ee5b3f94dc798b5485e8dd65` |
-| 9 | `theorem` | [identity_pointMap](../../../../Geometry/AnalyticAffineBridge.lean/declarations/identity-pointmap.md) | 71 | `result-track:0ae104fd7d4370923909a12d9165f43ac186674a389f146550b07fb909d14949` |
-| 10 | `structure` | [SourceBoundBridge](../../../../Geometry/AnalyticAffineBridge.lean/declarations/sourceboundbridge.md) | 79 | `declaration-track:ea08b0116919a4dddaf9e85e00aea8cda58d934d52b11c2b573689f1d6c21508` |
-| 11 | `theorem` | [restrictionPath_pointMap](../../../../Geometry/AnalyticAffineBridge.lean/declarations/restrictionpath-pointmap.md) | 90 | `result-track:d6b08853074016ee8a277b12788687d82f79f6d4eb6bc35ba07af326931daac4` |
+| 1 | `structure` | [Bridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AnalyticAffineBridge.lean/declarations/bridge.md) | 17 | `declaration-track:536f7a016272959188d8d7c8bd0b6ac788be6a5452d57aa34d0b8ab4e8dac85f` |
+| 2 | `def` | [pointMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AnalyticAffineBridge.lean/declarations/pointmap.md) | 24 | `declaration-track:93dd95e8cf0d759957c0450a34dcd6d021147dabf72da5bf8d8dd46908d713c5` |
+| 3 | `def` | [precomp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AnalyticAffineBridge.lean/declarations/precomp.md) | 29 | `declaration-track:827fe84f44229a68609e9b708be355bbae50b2c26514ebf2499e8493edb9556a` |
+| 4 | `theorem` | [pointMap_precomp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AnalyticAffineBridge.lean/declarations/pointmap-precomp.md) | 34 | `result-track:a53867346163ef9a8840e66122984b1ca30e62605e93bbb1d26a5b4a51cfed5f` |
+| 5 | `def` | [restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AnalyticAffineBridge.lean/declarations/restrict.md) | 41 | `declaration-track:aadba4b54d171b19438c7367060369d03206aca56927d04bdaade2d5132233ac` |
+| 6 | `theorem` | [pointMap_restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AnalyticAffineBridge.lean/declarations/pointmap-restrict.md) | 46 | `result-track:fee888de210bf6acf2f0eb7357396e055d8e0733d29c89d531afe3a065ea58dc` |
+| 7 | `theorem` | [restrict_precomp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AnalyticAffineBridge.lean/declarations/restrict-precomp.md) | 59 | `result-track:98bff8baf30333fac1a6d93edfff21eaa71ea9dce3152f2d3342a9879e67c801` |
+| 8 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AnalyticAffineBridge.lean/declarations/identity.md) | 66 | `declaration-track:429d304761a5102064a5db2215886174e3968375ee5b3f94dc798b5485e8dd65` |
+| 9 | `theorem` | [identity_pointMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AnalyticAffineBridge.lean/declarations/identity-pointmap.md) | 71 | `result-track:0ae104fd7d4370923909a12d9165f43ac186674a389f146550b07fb909d14949` |
+| 10 | `structure` | [SourceBoundBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AnalyticAffineBridge.lean/declarations/sourceboundbridge.md) | 79 | `declaration-track:ea08b0116919a4dddaf9e85e00aea8cda58d934d52b11c2b573689f1d6c21508` |
+| 11 | `theorem` | [restrictionPath_pointMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AnalyticAffineBridge.lean/declarations/restrictionpath-pointmap.md) | 90 | `result-track:d6b08853074016ee8a277b12788687d82f79f6d4eb6bc35ba07af326931daac4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

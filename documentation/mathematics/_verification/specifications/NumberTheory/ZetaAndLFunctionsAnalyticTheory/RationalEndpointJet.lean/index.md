@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.EndpointCorrectedJet`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointCorrectedJet.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic`](../../../../../RealFunctions/RationalDyadicArithmetic.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.EndpointCorrectedJet`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointCorrectedJet.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalDyadicArithmetic.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [inverse](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/inverse.md) | 28 | `declaration-track:cf04608f94cd1b14c9d4bfdf24bcbdc09fe021251809a785fff6e9bde23fe433` |
-| 2 | `theorem` | [inverse_refines](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/inverse-refines.md) | 31 | `result-track:6715e5bb6ec47e2957819787db7f348f13636a3beb5d447f8cfabe361df27a53` |
-| 3 | `def` | [risingJet](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/risingjet.md) | 53 | `declaration-track:c7e4351ad81450a5eb118a12339c72653d42ff7cffee7d4c8255af86efe27f7d` |
-| 4 | `theorem` | [risingJet_refines](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/risingjet-refines.md) | 60 | `result-track:4f2da7d2c0a69eeb44908a032d531a280515c934c5a8f87bc80d6aae8f12aa2d` |
-| 5 | `def` | [coefficientJet](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/coefficientjet.md) | 71 | `declaration-track:d4d4bfd91051bcaae53b5a6be46553152f3beb523aa4f3ad632f7c6c0ca9873a` |
-| 6 | `theorem` | [coefficientJet_refines](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/coefficientjet-refines.md) | 81 | `result-track:9e87fcd1f9605f62b364a737ce7a665ede7e7b9a220d2823bf09b8222fec6e11` |
-| 7 | `def` | [point](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/point.md) | 101 | `declaration-track:ed2fcfe429322f7b53cce5e0fa7880ca2acc7d22d3ff4e969c76b18a1f0e53c6` |
-| 8 | `theorem` | [point_sound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/point-sound.md) | 103 | `result-track:eb10d34ecb9599cfd14c24df3d73fa0db601b97d677530fff791c84c95addf72` |
-| 9 | `def` | [prefix](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/prefix.md) | 107 | `declaration-track:0daa3e5abea999967e41e9f1c4e55530050a20cce90849f8a00e930847a49c8f` |
-| 10 | `theorem` | [prefix_sound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/prefix-sound.md) | 116 | `result-track:d5c59ddac34dcfe3e72125904f8208abdcadea816e3323774fba206615f93112` |
-| 11 | `def` | [assemble](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/assemble.md) | 148 | `declaration-track:74c541d70be8cc0ff54579d4250fca21652db083bf157249a7dc9ebc480f9a10` |
-| 12 | `theorem` | [assemble_sound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/assemble-sound.md) | 156 | `result-track:5b5857830d8c8d69e4d166449ebf3b19ba64857eb1e2b710fea8e52105dce0d4` |
-| 13 | `theorem` | [presented_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/presented-error.md) | 184 | `result-track:a2606eed00c4e5637ade860d63612ab3f7254d95bcd55bd51d1969470f720789` |
-| 14 | `theorem` | [rising_zero_control](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/rising-zero-control.md) | 195 | `result-track:a9de67fd407e691e8146c07c6922b75f6831f793019473dc096304e50e692a38` |
+| 1 | `def` | [inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/inverse.md) | 28 | `declaration-track:cf04608f94cd1b14c9d4bfdf24bcbdc09fe021251809a785fff6e9bde23fe433` |
+| 2 | `theorem` | [inverse_refines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/inverse-refines.md) | 31 | `result-track:6715e5bb6ec47e2957819787db7f348f13636a3beb5d447f8cfabe361df27a53` |
+| 3 | `def` | [risingJet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/risingjet.md) | 53 | `declaration-track:c7e4351ad81450a5eb118a12339c72653d42ff7cffee7d4c8255af86efe27f7d` |
+| 4 | `theorem` | [risingJet_refines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/risingjet-refines.md) | 60 | `result-track:4f2da7d2c0a69eeb44908a032d531a280515c934c5a8f87bc80d6aae8f12aa2d` |
+| 5 | `def` | [coefficientJet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/coefficientjet.md) | 71 | `declaration-track:d4d4bfd91051bcaae53b5a6be46553152f3beb523aa4f3ad632f7c6c0ca9873a` |
+| 6 | `theorem` | [coefficientJet_refines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/coefficientjet-refines.md) | 81 | `result-track:9e87fcd1f9605f62b364a737ce7a665ede7e7b9a220d2823bf09b8222fec6e11` |
+| 7 | `def` | [point](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/point.md) | 101 | `declaration-track:ed2fcfe429322f7b53cce5e0fa7880ca2acc7d22d3ff4e969c76b18a1f0e53c6` |
+| 8 | `theorem` | [point_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/point-sound.md) | 103 | `result-track:eb10d34ecb9599cfd14c24df3d73fa0db601b97d677530fff791c84c95addf72` |
+| 9 | `def` | [prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/prefix.md) | 107 | `declaration-track:0daa3e5abea999967e41e9f1c4e55530050a20cce90849f8a00e930847a49c8f` |
+| 10 | `theorem` | [prefix_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/prefix-sound.md) | 116 | `result-track:d5c59ddac34dcfe3e72125904f8208abdcadea816e3323774fba206615f93112` |
+| 11 | `def` | [assemble](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/assemble.md) | 148 | `declaration-track:74c541d70be8cc0ff54579d4250fca21652db083bf157249a7dc9ebc480f9a10` |
+| 12 | `theorem` | [assemble_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/assemble-sound.md) | 156 | `result-track:5b5857830d8c8d69e4d166449ebf3b19ba64857eb1e2b710fea8e52105dce0d4` |
+| 13 | `theorem` | [presented_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/presented-error.md) | 184 | `result-track:a2606eed00c4e5637ade860d63612ab3f7254d95bcd55bd51d1969470f720789` |
+| 14 | `theorem` | [rising_zero_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/declarations/rising-zero-control.md) | 195 | `result-track:a9de67fd407e691e8146c07c6922b75f6831f793019473dc096304e50e692a38` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

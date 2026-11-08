@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectionNamespacedProjectView.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectionNamespacedProjectView.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectionNamespacedProjectView.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectionNamespacedProjectView.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProjectView](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectionNamespacedProjectView.lean/declarations/projectview.md) | 22 | `declaration-track:e4492c1c0c83c067cb2860ee75811ad6d8de74711cc0d2387898f3a070a569d3` |
-| 2 | `structure` | [NetworkView](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectionNamespacedProjectView.lean/declarations/networkview.md) | 32 | `declaration-track:dfa9d89c53186b29d11957286cba6c83c9de13486a80ca3981adadb1b29a44c9` |
-| 3 | `structure` | [ProjectsWithinChart](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectionNamespacedProjectView.lean/declarations/projectswithinchart.md) | 39 | `declaration-track:6ee8836719264ae726f4d557efe2b257c2e291cb6218e00279e02e80f9ab5a5f` |
-| 4 | `structure` | [CertifiedNetworkProjection](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectionNamespacedProjectView.lean/declarations/certifiednetworkprojection.md) | 50 | `declaration-track:e69b66b0afb7ec155793f28ab16f7eb9fbdcea4532912ee31a01e87144cf27d2` |
-| 5 | `def` | [NetworkView.evidenceKind](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectionNamespacedProjectView.lean/declarations/networkview-evidencekind.md) | 54 | `declaration-track:0f93a61fe016bed964b65ab9938040eb68614b4cc90341b957c7b58fc6e2cdb0` |
-| 6 | `theorem` | [network_view_has_no_theorem_authority](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectionNamespacedProjectView.lean/declarations/network-view-has-no-theorem-authority.md) | 59 | `result-track:ee64bce1ba9c270b64e813c330e0a86e4d709387abcff409f30e89c2303307f7` |
-| 7 | `theorem` | [projected_project_value_validity_agree](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectionNamespacedProjectView.lean/declarations/projected-project-value-validity-agree.md) | 65 | `result-track:ed76ea684ac790172489606168c8fa51aab3bc35053c200ff1975053b324c2f8` |
+| 1 | `structure` | [ProjectView](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectionNamespacedProjectView.lean/declarations/projectview.md) | 22 | `declaration-track:e4492c1c0c83c067cb2860ee75811ad6d8de74711cc0d2387898f3a070a569d3` |
+| 2 | `structure` | [NetworkView](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectionNamespacedProjectView.lean/declarations/networkview.md) | 32 | `declaration-track:dfa9d89c53186b29d11957286cba6c83c9de13486a80ca3981adadb1b29a44c9` |
+| 3 | `structure` | [ProjectsWithinChart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectionNamespacedProjectView.lean/declarations/projectswithinchart.md) | 39 | `declaration-track:6ee8836719264ae726f4d557efe2b257c2e291cb6218e00279e02e80f9ab5a5f` |
+| 4 | `structure` | [CertifiedNetworkProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectionNamespacedProjectView.lean/declarations/certifiednetworkprojection.md) | 50 | `declaration-track:e69b66b0afb7ec155793f28ab16f7eb9fbdcea4532912ee31a01e87144cf27d2` |
+| 5 | `def` | [NetworkView.evidenceKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectionNamespacedProjectView.lean/declarations/networkview-evidencekind.md) | 54 | `declaration-track:0f93a61fe016bed964b65ab9938040eb68614b4cc90341b957c7b58fc6e2cdb0` |
+| 6 | `theorem` | [network_view_has_no_theorem_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectionNamespacedProjectView.lean/declarations/network-view-has-no-theorem-authority.md) | 59 | `result-track:ee64bce1ba9c270b64e813c330e0a86e4d709387abcff409f30e89c2303307f7` |
+| 7 | `theorem` | [projected_project_value_validity_agree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectionNamespacedProjectView.lean/declarations/projected-project-value-validity-agree.md) | 65 | `result-track:ed76ea684ac790172489606168c8fa51aab3bc35053c200ff1975053b324c2f8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

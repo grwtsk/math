@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CoordNamespacedPublic.lean/index.md) · [Full source](../../../../RealFunctions/CoordNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoordNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoordNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [smooth_barycentric_coord](../../../../RealFunctions/CoordNamespacedPublic.lean/declarations/smooth-barycentric-coord.md) | 29 | `result-track:9bbe0c5537969a5ccc4bec1dcc25b1392aac00282eebe9755f59c36a412ed25a` |
+| 1 | `theorem` | [smooth_barycentric_coord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoordNamespacedPublic.lean/declarations/smooth-barycentric-coord.md) | 29 | `result-track:9bbe0c5537969a5ccc4bec1dcc25b1392aac00282eebe9755f59c36a412ed25a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

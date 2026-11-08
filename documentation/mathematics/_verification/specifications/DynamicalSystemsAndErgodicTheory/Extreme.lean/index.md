@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/Extreme.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/Extreme.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Extreme.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Extreme.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [of_mem_extremePoints_measure_univ_eq](../../../../DynamicalSystemsAndErgodicTheory/Extreme.lean/declarations/of-mem-extremepoints-measure-univ-eq.md) | 28 | `result-track:61235dd807bf645e8da948329f15654bfd7d54f3f36edfc9b336c571d69fef8c` |
-| 2 | `theorem` | [of_mem_extremePoints](../../../../DynamicalSystemsAndErgodicTheory/Extreme.lean/declarations/of-mem-extremepoints.md) | 59 | `result-track:3ecfe6d73520a1aff10db542b88b61bb1face7230c6ca047b6a37d7439a94683` |
-| 3 | `theorem` | [eq_smul_of_absolutelyContinuous](../../../../DynamicalSystemsAndErgodicTheory/Extreme.lean/declarations/eq-smul-of-absolutelycontinuous.md) | 66 | `result-track:a7fe737111b1db2a4abc4b5f25b87c9d215ccea5f6118f59bb2c5a9669194ad3` |
-| 4 | `theorem` | [eq_of_absolutelyContinuous_measure_univ_eq](../../../../DynamicalSystemsAndErgodicTheory/Extreme.lean/declarations/eq-of-absolutelycontinuous-measure-univ-eq.md) | 77 | `result-track:dfc9b54a3199056e5b0c704c77016b00f16b443b5c9ac73c1447585f6164ada4` |
-| 5 | `theorem` | [eq_of_absolutelyContinuous](../../../../DynamicalSystemsAndErgodicTheory/Extreme.lean/declarations/eq-of-absolutelycontinuous.md) | 85 | `result-track:fcd00f38ffbe33207d7b33bdabd3449cfc1e28f7f9fad835b533cb600059f211` |
-| 6 | `theorem` | [mem_extremePoints_measure_univ_eq](../../../../DynamicalSystemsAndErgodicTheory/Extreme.lean/declarations/mem-extremepoints-measure-univ-eq.md) | 89 | `result-track:f4a6a4d75514b0cc03c704eb72b04e8aa4eb6b45f3953bd79a406b9f03a7026e` |
-| 7 | `theorem` | [mem_extremePoints](../../../../DynamicalSystemsAndErgodicTheory/Extreme.lean/declarations/mem-extremepoints.md) | 98 | `result-track:397aabaad5b973731bd4c3aec6ab2549712c5cb451f60710798fd3ff6d62eed6` |
-| 8 | `theorem` | [iff_mem_extremePoints_measure_univ_eq](../../../../DynamicalSystemsAndErgodicTheory/Extreme.lean/declarations/iff-mem-extremepoints-measure-univ-eq.md) | 102 | `result-track:4b1c0e552ce6f863fdf08c7837e62d582874c9afc014f707e4efd2a18b7b9b68` |
-| 9 | `theorem` | [iff_mem_extremePoints](../../../../DynamicalSystemsAndErgodicTheory/Extreme.lean/declarations/iff-mem-extremepoints.md) | 106 | `result-track:3c92128386365675cde57e9148907ad0ee68d26f285690762b0786a237ec588f` |
+| 1 | `theorem` | [of_mem_extremePoints_measure_univ_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Extreme.lean/declarations/of-mem-extremepoints-measure-univ-eq.md) | 28 | `result-track:61235dd807bf645e8da948329f15654bfd7d54f3f36edfc9b336c571d69fef8c` |
+| 2 | `theorem` | [of_mem_extremePoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Extreme.lean/declarations/of-mem-extremepoints.md) | 59 | `result-track:3ecfe6d73520a1aff10db542b88b61bb1face7230c6ca047b6a37d7439a94683` |
+| 3 | `theorem` | [eq_smul_of_absolutelyContinuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Extreme.lean/declarations/eq-smul-of-absolutelycontinuous.md) | 66 | `result-track:a7fe737111b1db2a4abc4b5f25b87c9d215ccea5f6118f59bb2c5a9669194ad3` |
+| 4 | `theorem` | [eq_of_absolutelyContinuous_measure_univ_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Extreme.lean/declarations/eq-of-absolutelycontinuous-measure-univ-eq.md) | 77 | `result-track:dfc9b54a3199056e5b0c704c77016b00f16b443b5c9ac73c1447585f6164ada4` |
+| 5 | `theorem` | [eq_of_absolutelyContinuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Extreme.lean/declarations/eq-of-absolutelycontinuous.md) | 85 | `result-track:fcd00f38ffbe33207d7b33bdabd3449cfc1e28f7f9fad835b533cb600059f211` |
+| 6 | `theorem` | [mem_extremePoints_measure_univ_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Extreme.lean/declarations/mem-extremepoints-measure-univ-eq.md) | 89 | `result-track:f4a6a4d75514b0cc03c704eb72b04e8aa4eb6b45f3953bd79a406b9f03a7026e` |
+| 7 | `theorem` | [mem_extremePoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Extreme.lean/declarations/mem-extremepoints.md) | 98 | `result-track:397aabaad5b973731bd4c3aec6ab2549712c5cb451f60710798fd3ff6d62eed6` |
+| 8 | `theorem` | [iff_mem_extremePoints_measure_univ_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Extreme.lean/declarations/iff-mem-extremepoints-measure-univ-eq.md) | 102 | `result-track:4b1c0e552ce6f863fdf08c7837e62d582874c9afc014f707e4efd2a18b7b9b68` |
+| 9 | `theorem` | [iff_mem_extremePoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Extreme.lean/declarations/iff-mem-extremepoints.md) | 106 | `result-track:3c92128386365675cde57e9148907ad0ee68d26f285690762b0786a237ec588f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

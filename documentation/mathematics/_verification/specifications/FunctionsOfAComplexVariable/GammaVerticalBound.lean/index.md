@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/GammaVerticalBound.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/GammaVerticalBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GammaVerticalBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GammaVerticalBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.NormalizedDiskLogarithm`](../../../../FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.TrigonometricHeightBounds`](../../../../FunctionsOfAComplexVariable/TrigonometricHeightBounds.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.NormalizedDiskLogarithm`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.TrigonometricHeightBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TrigonometricHeightBounds.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Gamma.Digamma` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [envelope](../../../../FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/envelope.md) | 31 | `declaration-track:15f0df78bc5bc30995726f7cb2534c3a4dbaec194e14367b801bfa2533837400` |
-| 2 | `theorem` | [two_le_envelope](../../../../FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/two-le-envelope.md) | 33 | `result-track:fa3823885761b95c934bf07171ba6f258ab2b7d7e48eaa62bb832cb42542e83c` |
-| 3 | `theorem` | [envelope_pos](../../../../FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/envelope-pos.md) | 39 | `result-track:53fc0e04c0178e1782ad26f831437cee20cd0d9a8612aaf0ffc97b947bc5a6c6` |
-| 4 | `theorem` | [power_le_endpoint_sum](../../../../FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/power-le-endpoint-sum.md) | 42 | `result-track:6969e36d7dba5e5150c4205ec85389edcef1b07a9cd315f4eed2a5a528d74c7f` |
-| 5 | `theorem` | [norm_Gamma_le_envelope](../../../../FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/norm-gamma-le-envelope.md) | 57 | `result-track:75bf29505710bd9265149ae38727ffea6fbff343e83b69c5ee5d8deb10a9a77b` |
-| 6 | `def` | [center](../../../../FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/center.md) | 76 | `declaration-track:4f944b89bd0c9308d0d84a2e3b80329227aeab6beae9417ecae70fc77ca218b2` |
-| 7 | `theorem` | [half_anchor_product_ge_pi](../../../../FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/half-anchor-product-ge-pi.md) | 79 | `result-track:6ef1e43df4617f4c1a7a3a3e65d1a2286d9ac53e4282dd6094103679d2b1c1a6` |
-| 8 | `theorem` | [center_norm_ge_half_anchor](../../../../FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/center-norm-ge-half-anchor.md) | 110 | `result-track:15e4ef630ff9b82cc2f60aa43793c5c559b6a665b462113e44f450364cc25657` |
-| 9 | `theorem` | [center_floor](../../../../FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/center-floor.md) | 133 | `result-track:2f4d8028cf8c00bfa020ff5c79a46698320afbfe3b73c6674bb8f71a1efdb542` |
-| 10 | `def` | [heightLogBudget](../../../../FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/heightlogbudget.md) | 150 | `declaration-track:de0959006c5ec23244015c3bdbc88a132e8cc480a9d8f44cc7d528b5b7bc960a` |
-| 11 | `theorem` | [heightLogBudget_pos](../../../../FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/heightlogbudget-pos.md) | 152 | `result-track:c9c18c26f05c04141f56e9f7bb4c6743c0906dae4ae61d58a59b38b3d5ca5e24` |
-| 12 | `theorem` | [normalized_log_deriv_le](../../../../FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/normalized-log-deriv-le.md) | 159 | `result-track:c2c167e267a546f76eea7742bc6cfd70809af73b5f2e2caf3584b124584be70e` |
-| 13 | `theorem` | [norm_digamma_le](../../../../FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/norm-digamma-le.md) | 187 | `result-track:2347912405c80234e21d6246355b3bcfc7d2f93f4ac026db03bf60b38445f803` |
+| 1 | `def` | [envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/envelope.md) | 31 | `declaration-track:15f0df78bc5bc30995726f7cb2534c3a4dbaec194e14367b801bfa2533837400` |
+| 2 | `theorem` | [two_le_envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/two-le-envelope.md) | 33 | `result-track:fa3823885761b95c934bf07171ba6f258ab2b7d7e48eaa62bb832cb42542e83c` |
+| 3 | `theorem` | [envelope_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/envelope-pos.md) | 39 | `result-track:53fc0e04c0178e1782ad26f831437cee20cd0d9a8612aaf0ffc97b947bc5a6c6` |
+| 4 | `theorem` | [power_le_endpoint_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/power-le-endpoint-sum.md) | 42 | `result-track:6969e36d7dba5e5150c4205ec85389edcef1b07a9cd315f4eed2a5a528d74c7f` |
+| 5 | `theorem` | [norm_Gamma_le_envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/norm-gamma-le-envelope.md) | 57 | `result-track:75bf29505710bd9265149ae38727ffea6fbff343e83b69c5ee5d8deb10a9a77b` |
+| 6 | `def` | [center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/center.md) | 76 | `declaration-track:4f944b89bd0c9308d0d84a2e3b80329227aeab6beae9417ecae70fc77ca218b2` |
+| 7 | `theorem` | [half_anchor_product_ge_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/half-anchor-product-ge-pi.md) | 79 | `result-track:6ef1e43df4617f4c1a7a3a3e65d1a2286d9ac53e4282dd6094103679d2b1c1a6` |
+| 8 | `theorem` | [center_norm_ge_half_anchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/center-norm-ge-half-anchor.md) | 110 | `result-track:15e4ef630ff9b82cc2f60aa43793c5c559b6a665b462113e44f450364cc25657` |
+| 9 | `theorem` | [center_floor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/center-floor.md) | 133 | `result-track:2f4d8028cf8c00bfa020ff5c79a46698320afbfe3b73c6674bb8f71a1efdb542` |
+| 10 | `def` | [heightLogBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/heightlogbudget.md) | 150 | `declaration-track:de0959006c5ec23244015c3bdbc88a132e8cc480a9d8f44cc7d528b5b7bc960a` |
+| 11 | `theorem` | [heightLogBudget_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/heightlogbudget-pos.md) | 152 | `result-track:c9c18c26f05c04141f56e9f7bb4c6743c0906dae4ae61d58a59b38b3d5ca5e24` |
+| 12 | `theorem` | [normalized_log_deriv_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/normalized-log-deriv-le.md) | 159 | `result-track:c2c167e267a546f76eea7742bc6cfd70809af73b5f2e2caf3584b124584be70e` |
+| 13 | `theorem` | [norm_digamma_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GammaVerticalBound.lean/declarations/norm-digamma-le.md) | 187 | `result-track:2347912405c80234e21d6246355b3bcfc7d2f93f4ac026db03bf60b38445f803` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

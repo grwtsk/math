@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PhasePolynomialBudgetNamespacedEdition2.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PhasePolynomialBudgetNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PhasePolynomialBudgetNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PhasePolynomialBudgetNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [phasePolynomialCoefficient](../../../../CommutativeAlgebra/PhasePolynomialBudgetNamespacedEdition2.lean/declarations/phasepolynomialcoefficient.md) | 30 | `declaration-track:94a0ce3d7b4b9f3929ab70674535ccd8a472e3ea1e0fcd0d01cb638c45a129f3` |
-| 2 | `theorem` | [phasePolynomialCoefficient_pos](../../../../CommutativeAlgebra/PhasePolynomialBudgetNamespacedEdition2.lean/declarations/phasepolynomialcoefficient-pos.md) | 33 | `result-track:d75d85b42bf46cd771d9ae7b91682a486482b06e1dd71aaa531ef3135c6363b3` |
-| 3 | `theorem` | [positiveMass_ge_taylor](../../../../CommutativeAlgebra/PhasePolynomialBudgetNamespacedEdition2.lean/declarations/positivemass-ge-taylor.md) | 38 | `result-track:ea85097152bcee55b993fea871876e28e1ee99b90b1c861f26fc6d39a0abad5c` |
-| 4 | `theorem` | [positiveMass_gt_polynomial](../../../../CommutativeAlgebra/PhasePolynomialBudgetNamespacedEdition2.lean/declarations/positivemass-gt-polynomial.md) | 53 | `result-track:af2535b09d42b36b735f2ae1953de63a0edadeb210fd74098c5e7e765683d1c6` |
-| 5 | `theorem` | [positiveMass_eventually_gt_polynomial](../../../../CommutativeAlgebra/PhasePolynomialBudgetNamespacedEdition2.lean/declarations/positivemass-eventually-gt-polynomial.md) | 70 | `result-track:e53c33ff7186a0fc30eb564625a99198bbd504f3208e74bc296b7104ead0bc43` |
-| 6 | `theorem` | [positiveMass_not_eventually_polynomial_bounded](../../../../CommutativeAlgebra/PhasePolynomialBudgetNamespacedEdition2.lean/declarations/positivemass-not-eventually-polynomial-bounded.md) | 78 | `result-track:bb24f889cdc7ce86015d0d5d92de54549e6ad72b7ba8fc455ad5431f2e45b38c` |
+| 1 | `def` | [phasePolynomialCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PhasePolynomialBudgetNamespacedEdition2.lean/declarations/phasepolynomialcoefficient.md) | 30 | `declaration-track:94a0ce3d7b4b9f3929ab70674535ccd8a472e3ea1e0fcd0d01cb638c45a129f3` |
+| 2 | `theorem` | [phasePolynomialCoefficient_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PhasePolynomialBudgetNamespacedEdition2.lean/declarations/phasepolynomialcoefficient-pos.md) | 33 | `result-track:d75d85b42bf46cd771d9ae7b91682a486482b06e1dd71aaa531ef3135c6363b3` |
+| 3 | `theorem` | [positiveMass_ge_taylor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PhasePolynomialBudgetNamespacedEdition2.lean/declarations/positivemass-ge-taylor.md) | 38 | `result-track:ea85097152bcee55b993fea871876e28e1ee99b90b1c861f26fc6d39a0abad5c` |
+| 4 | `theorem` | [positiveMass_gt_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PhasePolynomialBudgetNamespacedEdition2.lean/declarations/positivemass-gt-polynomial.md) | 53 | `result-track:af2535b09d42b36b735f2ae1953de63a0edadeb210fd74098c5e7e765683d1c6` |
+| 5 | `theorem` | [positiveMass_eventually_gt_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PhasePolynomialBudgetNamespacedEdition2.lean/declarations/positivemass-eventually-gt-polynomial.md) | 70 | `result-track:e53c33ff7186a0fc30eb564625a99198bbd504f3208e74bc296b7104ead0bc43` |
+| 6 | `theorem` | [positiveMass_not_eventually_polynomial_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PhasePolynomialBudgetNamespacedEdition2.lean/declarations/positivemass-not-eventually-polynomial-bounded.md) | 78 | `result-track:bb24f889cdc7ce86015d0d5d92de54549e6ad72b7ba8fc455ad5431f2e45b38c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

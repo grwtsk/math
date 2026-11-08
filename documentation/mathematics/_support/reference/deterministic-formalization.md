@@ -33,7 +33,7 @@ The compiler also accepts typed natural-number addition/multiplication and
 finite-list append/reverse equalities. It performs bounded rewrite search with
 independent trace checking; it is not an unrestricted algebra solver. List
 reverse uses the upstream `propext` axiom, which native replay reports explicitly.
-See the [mirrored guide](../../GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.md).
+See the [mirrored guide](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.md).
 
 Source-signal routing uses the canonical UUID subjects, including the
 [source-signal draft](../../../taxonomy/proposals/new-concepts/source-signal-subjects.md).

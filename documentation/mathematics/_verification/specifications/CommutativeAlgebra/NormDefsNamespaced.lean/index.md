@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/NormDefsNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/NormDefsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NormDefsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NormDefsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [norm](../../../../CommutativeAlgebra/NormDefsNamespaced.lean/declarations/norm.md) | 65 | `declaration-track:4b95546c3a478231529b1350227b92795f188751725f607b13b58100729b1315` |
-| 2 | `theorem` | [norm_apply](../../../../CommutativeAlgebra/NormDefsNamespaced.lean/declarations/norm-apply.md) | 68 | `result-track:6c23bfaabf1375115ca46917e9975a027978007735592d5dab5d4bff3edcf717` |
-| 3 | `theorem` | [norm_self](../../../../CommutativeAlgebra/NormDefsNamespaced.lean/declarations/norm-self.md) | 71 | `result-track:65e8ce29729db3cd12b10c814f9ccadfcf6a57e3be5fea1a613bff93829b3e95` |
-| 4 | `theorem` | [norm_eq_one_of_not_exists_basis](../../../../CommutativeAlgebra/NormDefsNamespaced.lean/declarations/norm-eq-one-of-not-exists-basis.md) | 75 | `result-track:2618c817a5969d452146cd8430b1e2bcefd58ccdbe668eb5638bc21baa34145f` |
-| 5 | `theorem` | [norm_eq_one_of_not_module_finite](../../../../CommutativeAlgebra/NormDefsNamespaced.lean/declarations/norm-eq-one-of-not-module-finite.md) | 80 | `result-track:96ff8b98d434d99ea26da2de8d9ea76a10dc673de21d989617567da8b42afc64` |
-| 6 | `theorem` | [norm_eq_matrix_det](../../../../CommutativeAlgebra/NormDefsNamespaced.lean/declarations/norm-eq-matrix-det.md) | 86 | `result-track:2542559a01164e0e5699dbde7d48eb7888b66dfd5573132ebb11f237c4cbaa3e` |
-| 7 | `theorem` | [norm_algebraMap_of_basis](../../../../CommutativeAlgebra/NormDefsNamespaced.lean/declarations/norm-algebramap-of-basis.md) | 91 | `result-track:70c92c0b542d4676fccc7a8985c751b8ba9f828f47d3c07a1ddecf0c065853e6` |
-| 8 | `theorem` | [norm_algebraMap](../../../../CommutativeAlgebra/NormDefsNamespaced.lean/declarations/norm-algebramap.md) | 104 | `result-track:9cf9cb619be0a20a24a6d7291f05c3faa14ca0e189cc20ad29c350d13d6a7586` |
+| 1 | `def` | [norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NormDefsNamespaced.lean/declarations/norm.md) | 65 | `declaration-track:4b95546c3a478231529b1350227b92795f188751725f607b13b58100729b1315` |
+| 2 | `theorem` | [norm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NormDefsNamespaced.lean/declarations/norm-apply.md) | 68 | `result-track:6c23bfaabf1375115ca46917e9975a027978007735592d5dab5d4bff3edcf717` |
+| 3 | `theorem` | [norm_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NormDefsNamespaced.lean/declarations/norm-self.md) | 71 | `result-track:65e8ce29729db3cd12b10c814f9ccadfcf6a57e3be5fea1a613bff93829b3e95` |
+| 4 | `theorem` | [norm_eq_one_of_not_exists_basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NormDefsNamespaced.lean/declarations/norm-eq-one-of-not-exists-basis.md) | 75 | `result-track:2618c817a5969d452146cd8430b1e2bcefd58ccdbe668eb5638bc21baa34145f` |
+| 5 | `theorem` | [norm_eq_one_of_not_module_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NormDefsNamespaced.lean/declarations/norm-eq-one-of-not-module-finite.md) | 80 | `result-track:96ff8b98d434d99ea26da2de8d9ea76a10dc673de21d989617567da8b42afc64` |
+| 6 | `theorem` | [norm_eq_matrix_det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NormDefsNamespaced.lean/declarations/norm-eq-matrix-det.md) | 86 | `result-track:2542559a01164e0e5699dbde7d48eb7888b66dfd5573132ebb11f237c4cbaa3e` |
+| 7 | `theorem` | [norm_algebraMap_of_basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NormDefsNamespaced.lean/declarations/norm-algebramap-of-basis.md) | 91 | `result-track:70c92c0b542d4676fccc7a8985c751b8ba9f828f47d3c07a1ddecf0c065853e6` |
+| 8 | `theorem` | [norm_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NormDefsNamespaced.lean/declarations/norm-algebramap.md) | 104 | `result-track:9cf9cb619be0a20a24a6d7291f05c3faa14ca0e189cc20ad29c350d13d6a7586` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

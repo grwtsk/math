@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FiveModeGammaUpper.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FiveModeGammaUpper.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeGammaUpper.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeGammaUpper.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,17 +60,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sourceA0](../../../../MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/sourcea0.md) | 21 | `declaration-track:10d9ad51d6f1e98f1332633f43ebcd46d595c4af020a078e0759be28e1526cf8` |
-| 2 | `theorem` | [actual_multiplier_quadratic_upper](../../../../MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/actual-multiplier-quadratic-upper.md) | 24 | `result-track:738a00187025f3b4ab1e5139db12a0a5c0fed9389f78d649edf6838e124fe82e` |
-| 3 | `theorem` | [lp_norm_square_mass](../../../../MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/lp-norm-square-mass.md) | 40 | `result-track:4ce4ea4e0ceb581a4813fa84a6a5cbf0fd1041bee2b1606abfb60abe31ddac4b` |
-| 4 | `theorem` | [standard_fourier_square_mass](../../../../MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/standard-fourier-square-mass.md) | 54 | `result-track:7cc0a70fcf4a144d072888287fbe6357a99277fe89727810afd6e14d82e4e053` |
-| 5 | `theorem` | [angular_fourier_square_mass](../../../../MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/angular-fourier-square-mass.md) | 80 | `result-track:3ab4e421a9300202561b50b3e81851152924f357f4b9468a2c90b6452ca8b511` |
-| 6 | `theorem` | [actual_derivative_parseval](../../../../MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/actual-derivative-parseval.md) | 105 | `result-track:4965ae9462f580b99439f23b8d0b394f894a8ea314f5dd7629ca80a0342439d8` |
-| 7 | `theorem` | [actual_gamma_upper_by_energy](../../../../MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/actual-gamma-upper-by-energy.md) | 127 | `result-track:c882cdfb3bde7eec15a426ef1b4ae38583018e924745c73e86831e88295ba865` |
-| 8 | `theorem` | [actual_gamma_upper](../../../../MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/actual-gamma-upper.md) | 151 | `result-track:78227e4061e01605cc952a2188953022d8ed587bad8c6dcb4fd81bc52ad1da8f` |
-| 9 | `theorem` | [actual_residual_scale_upper_of_matrix_lower](../../../../MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/actual-residual-scale-upper-of-matrix-lower.md) | 162 | `result-track:40a445cb61b6f95ae6b27a46b3db81e81da74b12c898e4091a6b3cc566c45be9` |
-| 10 | `theorem` | [sourceA0_lt_neg_four](../../../../MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/sourcea0-lt-neg-four.md) | 177 | `result-track:dfa7b452f6d53eae8cafa8e05dfe3d9a3a524cd9a0849b5c51bbb9607979e810` |
-| 11 | `theorem` | [actual_residual_upper_with_gamma_proved](../../../../MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/actual-residual-upper-with-gamma-proved.md) | 181 | `result-track:85445ab1a0c26fee57a6b83f56a99688f96e70262d78fa59545a40dea5f4fb89` |
+| 1 | `def` | [sourceA0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/sourcea0.md) | 21 | `declaration-track:10d9ad51d6f1e98f1332633f43ebcd46d595c4af020a078e0759be28e1526cf8` |
+| 2 | `theorem` | [actual_multiplier_quadratic_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/actual-multiplier-quadratic-upper.md) | 24 | `result-track:738a00187025f3b4ab1e5139db12a0a5c0fed9389f78d649edf6838e124fe82e` |
+| 3 | `theorem` | [lp_norm_square_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/lp-norm-square-mass.md) | 40 | `result-track:4ce4ea4e0ceb581a4813fa84a6a5cbf0fd1041bee2b1606abfb60abe31ddac4b` |
+| 4 | `theorem` | [standard_fourier_square_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/standard-fourier-square-mass.md) | 54 | `result-track:7cc0a70fcf4a144d072888287fbe6357a99277fe89727810afd6e14d82e4e053` |
+| 5 | `theorem` | [angular_fourier_square_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/angular-fourier-square-mass.md) | 80 | `result-track:3ab4e421a9300202561b50b3e81851152924f357f4b9468a2c90b6452ca8b511` |
+| 6 | `theorem` | [actual_derivative_parseval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/actual-derivative-parseval.md) | 105 | `result-track:4965ae9462f580b99439f23b8d0b394f894a8ea314f5dd7629ca80a0342439d8` |
+| 7 | `theorem` | [actual_gamma_upper_by_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/actual-gamma-upper-by-energy.md) | 127 | `result-track:c882cdfb3bde7eec15a426ef1b4ae38583018e924745c73e86831e88295ba865` |
+| 8 | `theorem` | [actual_gamma_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/actual-gamma-upper.md) | 151 | `result-track:78227e4061e01605cc952a2188953022d8ed587bad8c6dcb4fd81bc52ad1da8f` |
+| 9 | `theorem` | [actual_residual_scale_upper_of_matrix_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/actual-residual-scale-upper-of-matrix-lower.md) | 162 | `result-track:40a445cb61b6f95ae6b27a46b3db81e81da74b12c898e4091a6b3cc566c45be9` |
+| 10 | `theorem` | [sourceA0_lt_neg_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/sourcea0-lt-neg-four.md) | 177 | `result-track:dfa7b452f6d53eae8cafa8e05dfe3d9a3a524cd9a0849b5c51bbb9607979e810` |
+| 11 | `theorem` | [actual_residual_upper_with_gamma_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeGammaUpper.lean/declarations/actual-residual-upper-with-gamma-proved.md) | 181 | `result-track:85445ab1a0c26fee57a6b83f56a99688f96e70262d78fa59545a40dea5f4fb89` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

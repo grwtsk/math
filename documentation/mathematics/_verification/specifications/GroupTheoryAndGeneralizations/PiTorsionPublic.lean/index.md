@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/PiTorsionPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/PiTorsionPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PiTorsionPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PiTorsionPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instIsMulTorsionFree](../../../../GroupTheoryAndGeneralizations/PiTorsionPublic.lean/declarations/instismultorsionfree.md) | 26 | `declaration-track:5e4f1f394a1333e98ca3a76352d9b0baab0f253b0993ca7874aff537fc2eae5c` |
+| 1 | `instance` | [instIsMulTorsionFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PiTorsionPublic.lean/declarations/instismultorsionfree.md) | 26 | `declaration-track:5e4f1f394a1333e98ca3a76352d9b0baab0f253b0993ca7874aff537fc2eae5c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/EquitabilisePublic.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/EquitabilisePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EquitabilisePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EquitabilisePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [equitabilise_aux](../../../../../Combinatorics/GraphTheory/EquitabilisePublic.lean/declarations/equitabilise-aux.md) | 45 | `result-track:64ddaf95563e587b6ba54fb9abeff069a25e97f2f60296461e0b5499b160a74f` |
-| 2 | `def` | [equitabilise](../../../../../Combinatorics/GraphTheory/EquitabilisePublic.lean/declarations/equitabilise.md) | 149 | `declaration-track:cb6e08c67279d908698cf7d6893a948a8371c39e9472dafce2e9755e8be93e91` |
-| 3 | `theorem` | [card_eq_of_mem_parts_equitabilise](../../../../../Combinatorics/GraphTheory/EquitabilisePublic.lean/declarations/card-eq-of-mem-parts-equitabilise.md) | 154 | `result-track:61c2aeddb9c6f36b6444f470135b9697d583b717404ed9c076727accb36cd1b4` |
-| 4 | `theorem` | [equitabilise_isEquipartition](../../../../../Combinatorics/GraphTheory/EquitabilisePublic.lean/declarations/equitabilise-isequipartition.md) | 158 | `result-track:f14cfa30c7e7fa50c90a1a753c860fd7234817b59ed4b5c073d23e0db425359d` |
-| 5 | `theorem` | [card_filter_equitabilise_big](../../../../../Combinatorics/GraphTheory/EquitabilisePublic.lean/declarations/card-filter-equitabilise-big.md) | 163 | `result-track:943fbdf28cfb81ac3613d27c38071b476bfeb5fc25778ff9037860cfb0177123` |
-| 6 | `theorem` | [card_filter_equitabilise_small](../../../../../Combinatorics/GraphTheory/EquitabilisePublic.lean/declarations/card-filter-equitabilise-small.md) | 166 | `result-track:db445526bd943dddde13057383cb5dbe35bdaaf5da8eb462842ab63d4108c63c` |
-| 7 | `theorem` | [card_parts_equitabilise](../../../../../Combinatorics/GraphTheory/EquitabilisePublic.lean/declarations/card-parts-equitabilise.md) | 183 | `result-track:af7258a610b037e6d9f1a4938864d44cd6af6dca6d49495f0fd6f3e85d6a150d` |
-| 8 | `theorem` | [card_parts_equitabilise_subset_le](../../../../../Combinatorics/GraphTheory/EquitabilisePublic.lean/declarations/card-parts-equitabilise-subset-le.md) | 188 | `result-track:b5e3ae2a285a8d145415307fa0594e593ee05d3f02abc3bc250f9860bd8e9f8c` |
-| 9 | `theorem` | [exists_equipartition_card_eq](../../../../../Combinatorics/GraphTheory/EquitabilisePublic.lean/declarations/exists-equipartition-card-eq.md) | 195 | `result-track:76a794f278d0edecac78d84e4a149886551eac10fd82f6e5700f318bc5172017` |
+| 1 | `theorem` | [equitabilise_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EquitabilisePublic.lean/declarations/equitabilise-aux.md) | 45 | `result-track:64ddaf95563e587b6ba54fb9abeff069a25e97f2f60296461e0b5499b160a74f` |
+| 2 | `def` | [equitabilise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EquitabilisePublic.lean/declarations/equitabilise.md) | 149 | `declaration-track:cb6e08c67279d908698cf7d6893a948a8371c39e9472dafce2e9755e8be93e91` |
+| 3 | `theorem` | [card_eq_of_mem_parts_equitabilise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EquitabilisePublic.lean/declarations/card-eq-of-mem-parts-equitabilise.md) | 154 | `result-track:61c2aeddb9c6f36b6444f470135b9697d583b717404ed9c076727accb36cd1b4` |
+| 4 | `theorem` | [equitabilise_isEquipartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EquitabilisePublic.lean/declarations/equitabilise-isequipartition.md) | 158 | `result-track:f14cfa30c7e7fa50c90a1a753c860fd7234817b59ed4b5c073d23e0db425359d` |
+| 5 | `theorem` | [card_filter_equitabilise_big](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EquitabilisePublic.lean/declarations/card-filter-equitabilise-big.md) | 163 | `result-track:943fbdf28cfb81ac3613d27c38071b476bfeb5fc25778ff9037860cfb0177123` |
+| 6 | `theorem` | [card_filter_equitabilise_small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EquitabilisePublic.lean/declarations/card-filter-equitabilise-small.md) | 166 | `result-track:db445526bd943dddde13057383cb5dbe35bdaaf5da8eb462842ab63d4108c63c` |
+| 7 | `theorem` | [card_parts_equitabilise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EquitabilisePublic.lean/declarations/card-parts-equitabilise.md) | 183 | `result-track:af7258a610b037e6d9f1a4938864d44cd6af6dca6d49495f0fd6f3e85d6a150d` |
+| 8 | `theorem` | [card_parts_equitabilise_subset_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EquitabilisePublic.lean/declarations/card-parts-equitabilise-subset-le.md) | 188 | `result-track:b5e3ae2a285a8d145415307fa0594e593ee05d3f02abc3bc250f9860bd8e9f8c` |
+| 9 | `theorem` | [exists_equipartition_card_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EquitabilisePublic.lean/declarations/exists-equipartition-card-eq.md) | 195 | `result-track:76a794f278d0edecac78d84e4a149886551eac10fd82f6e5700f318bc5172017` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

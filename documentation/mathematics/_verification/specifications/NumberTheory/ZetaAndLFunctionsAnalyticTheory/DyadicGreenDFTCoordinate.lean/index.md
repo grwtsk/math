@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenArithmeticFourierCoordinate`](../../../../../MeasureAndIntegration/DyadicGreenArithmeticFourierCoordinate.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenArithmeticFourierCoordinate`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenArithmeticFourierCoordinate.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [greenDFTPhase](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/declarations/greendftphase.md) | 39 | `declaration-track:6107a6321d1b6f08bb9545f65ae0406883c400e3cc2dca468be2b26131ab67d5` |
-| 2 | `theorem` | [location_coe_eq_normalized_coe](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/declarations/location-coe-eq-normalized-coe.md) | 44 | `result-track:f930b00f736dcc48fe068f158018c0c482f96a3e5fbd5eacc697a378cac025b6` |
-| 3 | `theorem` | [fourier_at_location_eq_DFTPhase](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/declarations/fourier-at-location-eq-dftphase.md) | 54 | `result-track:12fe0eb2ad19395905edf19e2c00da025450195234b66574048bfbe3d66862fd` |
-| 4 | `theorem` | [greenDFTPhase_eq_exp](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/declarations/greendftphase-eq-exp.md) | 62 | `result-track:e29e24f8eeee582b76a3c21cb88c2441d42c9c15665b4d52927fb9fce53674df` |
-| 5 | `theorem` | [fourierModeValue_location_eq_DFT](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/declarations/fouriermodevalue-location-eq-dft.md) | 75 | `result-track:7e6b34a60c642124cdcc7840c520112ed1706df3875609617ec68940bcc4f5d2` |
-| 6 | `def` | [greenWeightedDFTPhaseSum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/declarations/greenweighteddftphasesum.md) | 84 | `declaration-track:043154e602c1829f1e0362df5da0c5cc6e3ced51c68bfe04c4c58e6cd1422938` |
-| 7 | `def` | [greenWindowCoefficientMassComplex](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/declarations/greenwindowcoefficientmasscomplex.md) | 89 | `declaration-track:8525188fc3c3016215e0facb7befb366cf11fcb49b3b935ee21dd64a68cb7ef6` |
-| 8 | `theorem` | [greenFourierPrimeCoordinate_eq_weightedDFT](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/declarations/greenfourierprimecoordinate-eq-weighteddft.md) | 95 | `result-track:63bcab90e9bff6fa780c253b5999c72fc9ca5809d60895c74eea9550020816c6` |
-| 9 | `theorem` | [greenArithmeticFourierCoordinate_eq_background_sub_weightedDFT](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/declarations/greenarithmeticfouriercoordinate-eq-background-sub-weighteddft.md) | 112 | `result-track:2ad4e4ff6a6bb8fbfd51cc64aacb1f8ff4ec6b24b59b0dd97a371133d8d46075` |
+| 1 | `def` | [greenDFTPhase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/declarations/greendftphase.md) | 39 | `declaration-track:6107a6321d1b6f08bb9545f65ae0406883c400e3cc2dca468be2b26131ab67d5` |
+| 2 | `theorem` | [location_coe_eq_normalized_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/declarations/location-coe-eq-normalized-coe.md) | 44 | `result-track:f930b00f736dcc48fe068f158018c0c482f96a3e5fbd5eacc697a378cac025b6` |
+| 3 | `theorem` | [fourier_at_location_eq_DFTPhase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/declarations/fourier-at-location-eq-dftphase.md) | 54 | `result-track:12fe0eb2ad19395905edf19e2c00da025450195234b66574048bfbe3d66862fd` |
+| 4 | `theorem` | [greenDFTPhase_eq_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/declarations/greendftphase-eq-exp.md) | 62 | `result-track:e29e24f8eeee582b76a3c21cb88c2441d42c9c15665b4d52927fb9fce53674df` |
+| 5 | `theorem` | [fourierModeValue_location_eq_DFT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/declarations/fouriermodevalue-location-eq-dft.md) | 75 | `result-track:7e6b34a60c642124cdcc7840c520112ed1706df3875609617ec68940bcc4f5d2` |
+| 6 | `def` | [greenWeightedDFTPhaseSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/declarations/greenweighteddftphasesum.md) | 84 | `declaration-track:043154e602c1829f1e0362df5da0c5cc6e3ced51c68bfe04c4c58e6cd1422938` |
+| 7 | `def` | [greenWindowCoefficientMassComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/declarations/greenwindowcoefficientmasscomplex.md) | 89 | `declaration-track:8525188fc3c3016215e0facb7befb366cf11fcb49b3b935ee21dd64a68cb7ef6` |
+| 8 | `theorem` | [greenFourierPrimeCoordinate_eq_weightedDFT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/declarations/greenfourierprimecoordinate-eq-weighteddft.md) | 95 | `result-track:63bcab90e9bff6fa780c253b5999c72fc9ca5809d60895c74eea9550020816c6` |
+| 9 | `theorem` | [greenArithmeticFourierCoordinate_eq_background_sub_weightedDFT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenDFTCoordinate.lean/declarations/greenarithmeticfouriercoordinate-eq-background-sub-weighteddft.md) | 112 | `result-track:2ad4e4ff6a6bb8fbfd51cc64aacb1f8ff4ec6b24b59b0dd97a371133d8d46075` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

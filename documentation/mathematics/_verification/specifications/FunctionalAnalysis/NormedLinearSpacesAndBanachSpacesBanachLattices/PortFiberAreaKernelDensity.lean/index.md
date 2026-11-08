@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.PortFiberAreaProjection`](../../../../../MeasureAndIntegration/PortFiberAreaProjection.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicAreaKernelDensity`](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/HolomorphicAreaKernelDensity.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberAreaProjection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberAreaProjection.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicAreaKernelDensity`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/HolomorphicAreaKernelDensity.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [schemaVersion](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/schemaversion.md) | 30 | `declaration-track:3af3344e25bd01f63318063b4e36a7a924281e4e177f9f0ba2ee3d7dd59bdd64` |
-| 2 | `inductive` | [AddedIndex](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/addedindex.md) | 32 | `declaration-track:7ae4b5a4e57edfbbcd594dc9f0ecbcdc76bff435797de4295b394391b5263bae` |
-| 3 | `def` | [AddedClaim](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/addedclaim.md) | 43 | `declaration-track:190aecb3e979d774c2c38df1bff5e938331c1e17955dc867c30a6606c571e28f` |
-| 4 | `theorem` | [addedClaim_proof](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/addedclaim-proof.md) | 87 | `result-track:4502ea04ba43e24e29b88c1d7e5d04c951dcebd842eef4ba2a30abe7257a24e7` |
-| 5 | `def` | [portfolio](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/portfolio.md) | 112 | `declaration-track:19693bfdd722a4fb0fc0c60de408fc68caab390ab4ac854d28fba89597e7badc` |
-| 6 | `def` | [architecture](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/architecture.md) | 115 | `declaration-track:ea9f251ccbfa3a896e960f794dc272fe2a6a6f363a6c7ce8eb349dc63126677a` |
-| 7 | `abbrev` | [PreviousIndex](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/previousindex.md) | 119 | `declaration-track:70d12d2c50a7fb6f2b69ba84dfda95bbf6ac72a75a8719bb3423c14eb0110cd6` |
-| 8 | `theorem` | [original_branch_unchanged](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/original-branch-unchanged.md) | 123 | `result-track:de4d5ac971de89bc50fd3df3a9d4cdec06cdc9076ee1d131ac47bdeadee0fb68` |
-| 9 | `theorem` | [new_branch_proved](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/new-branch-proved.md) | 129 | `result-track:069019a7daab713480d26f0f10c4c37e26f93c80348252a9b6390046e797d5d0` |
-| 10 | `theorem` | [target_unchanged](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/target-unchanged.md) | 134 | `result-track:36a4bc38844cfa91a92e6402edbc7c59fe36b311186480b8e4b27545ba587121` |
-| 11 | `theorem` | [retarget_preserves_new](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/retarget-preserves-new.md) | 139 | `result-track:7e9b2fc87f0ba13137d63b40e94eb004da1a86962388e2fc9a2c6db0e1255ac8` |
+| 1 | `def` | [schemaVersion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/schemaversion.md) | 30 | `declaration-track:3af3344e25bd01f63318063b4e36a7a924281e4e177f9f0ba2ee3d7dd59bdd64` |
+| 2 | `inductive` | [AddedIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/addedindex.md) | 32 | `declaration-track:7ae4b5a4e57edfbbcd594dc9f0ecbcdc76bff435797de4295b394391b5263bae` |
+| 3 | `def` | [AddedClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/addedclaim.md) | 43 | `declaration-track:190aecb3e979d774c2c38df1bff5e938331c1e17955dc867c30a6606c571e28f` |
+| 4 | `theorem` | [addedClaim_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/addedclaim-proof.md) | 87 | `result-track:4502ea04ba43e24e29b88c1d7e5d04c951dcebd842eef4ba2a30abe7257a24e7` |
+| 5 | `def` | [portfolio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/portfolio.md) | 112 | `declaration-track:19693bfdd722a4fb0fc0c60de408fc68caab390ab4ac854d28fba89597e7badc` |
+| 6 | `def` | [architecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/architecture.md) | 115 | `declaration-track:ea9f251ccbfa3a896e960f794dc272fe2a6a6f363a6c7ce8eb349dc63126677a` |
+| 7 | `abbrev` | [PreviousIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/previousindex.md) | 119 | `declaration-track:70d12d2c50a7fb6f2b69ba84dfda95bbf6ac72a75a8719bb3423c14eb0110cd6` |
+| 8 | `theorem` | [original_branch_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/original-branch-unchanged.md) | 123 | `result-track:de4d5ac971de89bc50fd3df3a9d4cdec06cdc9076ee1d131ac47bdeadee0fb68` |
+| 9 | `theorem` | [new_branch_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/new-branch-proved.md) | 129 | `result-track:069019a7daab713480d26f0f10c4c37e26f93c80348252a9b6390046e797d5d0` |
+| 10 | `theorem` | [target_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/target-unchanged.md) | 134 | `result-track:36a4bc38844cfa91a92e6402edbc7c59fe36b311186480b8e4b27545ba587121` |
+| 11 | `theorem` | [retarget_preserves_new](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/declarations/retarget-preserves-new.md) | 139 | `result-track:7e9b2fc87f0ba13137d63b40e94eb004da1a86962388e2fc9a2c6db0e1255ac8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

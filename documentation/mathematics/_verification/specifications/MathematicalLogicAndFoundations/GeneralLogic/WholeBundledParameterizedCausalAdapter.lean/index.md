@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeBundledParameterizedCausalAdapter.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeBundledParameterizedCausalAdapter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeBundledParameterizedCausalAdapter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeBundledParameterizedCausalAdapter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toDAF](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeBundledParameterizedCausalAdapter.lean/declarations/todaf.md) | 38 | `declaration-track:861cc42950e70c7510b3ef5bc38f6e68454bf958a1b821fe790a493eec6a9833` |
-| 2 | `def` | [toObservable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeBundledParameterizedCausalAdapter.lean/declarations/toobservable.md) | 51 | `declaration-track:c0d1aaf73f19ff5b87a7fbf3c1580f71955595449fc37e4915b4220f47549308` |
-| 3 | `theorem` | [toDAF_run](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeBundledParameterizedCausalAdapter.lean/declarations/todaf-run.md) | 59 | `result-track:975eaca9f601dc285e2ece49ab7ed92c605985ca78142b7e0dfafaed070edb6a` |
-| 4 | `theorem` | [toObservable_run](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeBundledParameterizedCausalAdapter.lean/declarations/toobservable-run.md) | 74 | `result-track:872bd4140a391b0df2c584645532466e9a5df6158b6e36b0a03851e7d799ff82` |
-| 5 | `theorem` | [toDAF_causalEquivalent_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeBundledParameterizedCausalAdapter.lean/declarations/todaf-causalequivalent-iff.md) | 87 | `result-track:98173ce60b858c55d2da50d671d3c2fabd25fe72bd869aac2cdc4876faae4b2c` |
-| 6 | `def` | [causalStateEquiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeBundledParameterizedCausalAdapter.lean/declarations/causalstateequiv.md) | 104 | `declaration-track:002762e209ac3e29e8b4769b6e32e3152cd8a08377110d540501d1357d7eb5ed` |
-| 7 | `theorem` | [causalStateEquiv_toCausal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeBundledParameterizedCausalAdapter.lean/declarations/causalstateequiv-tocausal.md) | 128 | `result-track:c66b43f331de8a9a8199c5583eee0002fa0ac8a894e6a5c6f3636a5b8762f11b` |
+| 1 | `def` | [toDAF](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeBundledParameterizedCausalAdapter.lean/declarations/todaf.md) | 38 | `declaration-track:861cc42950e70c7510b3ef5bc38f6e68454bf958a1b821fe790a493eec6a9833` |
+| 2 | `def` | [toObservable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeBundledParameterizedCausalAdapter.lean/declarations/toobservable.md) | 51 | `declaration-track:c0d1aaf73f19ff5b87a7fbf3c1580f71955595449fc37e4915b4220f47549308` |
+| 3 | `theorem` | [toDAF_run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeBundledParameterizedCausalAdapter.lean/declarations/todaf-run.md) | 59 | `result-track:975eaca9f601dc285e2ece49ab7ed92c605985ca78142b7e0dfafaed070edb6a` |
+| 4 | `theorem` | [toObservable_run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeBundledParameterizedCausalAdapter.lean/declarations/toobservable-run.md) | 74 | `result-track:872bd4140a391b0df2c584645532466e9a5df6158b6e36b0a03851e7d799ff82` |
+| 5 | `theorem` | [toDAF_causalEquivalent_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeBundledParameterizedCausalAdapter.lean/declarations/todaf-causalequivalent-iff.md) | 87 | `result-track:98173ce60b858c55d2da50d671d3c2fabd25fe72bd869aac2cdc4876faae4b2c` |
+| 6 | `def` | [causalStateEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeBundledParameterizedCausalAdapter.lean/declarations/causalstateequiv.md) | 104 | `declaration-track:002762e209ac3e29e8b4769b6e32e3152cd8a08377110d540501d1357d7eb5ed` |
+| 7 | `theorem` | [causalStateEquiv_toCausal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeBundledParameterizedCausalAdapter.lean/declarations/causalstateequiv-tocausal.md) | 128 | `result-track:c66b43f331de8a9a8199c5583eee0002fa0ac8a894e6a5c6f3636a5b8762f11b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AbsurdEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AbsurdEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AbsurdEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AbsurdEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AbsurdEdition2.lean/declarations/example.md) | 13 | `declaration-track:3550e3c7d898917a52ac6c37aa46408b029a645bf3a594c620388cc6e9b6293f` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AbsurdEdition2.lean/declarations/example-source-edition-5.md) | 24 | `declaration-track:d5d2eba957bd81fb8e4fdcf76a0efb50c2188a176af81980a5069e98f5917a5e` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AbsurdEdition2.lean/declarations/example-source-edition-4.md) | 35 | `declaration-track:bf19c3fcfadc85b556f8a7237e83db7925231ecc4503cb377c8f3e16728007f6` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AbsurdEdition2.lean/declarations/example-source-edition-3.md) | 46 | `declaration-track:a1038f6df65fb460ef8c4c14472b240bef4de49056e49f0151942b084ce90e86` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AbsurdEdition2.lean/declarations/example-source-edition-2.md) | 56 | `declaration-track:705a92508558f7c6d140a9b6e55a5b468657fcab7d4c19b771cbf84d4fab0c49` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AbsurdEdition2.lean/declarations/example-source-edition-6.md) | 69 | `declaration-track:e041a957921cedb9fdd00db9de0c08c36a6839cabc73405d90c3ac9dba6bae5b` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AbsurdEdition2.lean/declarations/example.md) | 13 | `declaration-track:3550e3c7d898917a52ac6c37aa46408b029a645bf3a594c620388cc6e9b6293f` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AbsurdEdition2.lean/declarations/example-source-edition-5.md) | 24 | `declaration-track:d5d2eba957bd81fb8e4fdcf76a0efb50c2188a176af81980a5069e98f5917a5e` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AbsurdEdition2.lean/declarations/example-source-edition-4.md) | 35 | `declaration-track:bf19c3fcfadc85b556f8a7237e83db7925231ecc4503cb377c8f3e16728007f6` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AbsurdEdition2.lean/declarations/example-source-edition-3.md) | 46 | `declaration-track:a1038f6df65fb460ef8c4c14472b240bef4de49056e49f0151942b084ce90e86` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AbsurdEdition2.lean/declarations/example-source-edition-2.md) | 56 | `declaration-track:705a92508558f7c6d140a9b6e55a5b468657fcab7d4c19b771cbf84d4fab0c49` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AbsurdEdition2.lean/declarations/example-source-edition-6.md) | 69 | `declaration-track:e041a957921cedb9fdd00db9de0c08c36a6839cabc73405d90c3ac9dba6bae5b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

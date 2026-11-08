@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SevenEighthsMechanismTrace.lean/index.md) · [Full source](../../../../GeneralTopology/SevenEighthsMechanismTrace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SevenEighthsMechanismTrace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SevenEighthsMechanismTrace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.SevenEighthsMechanismQuarticBridge`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SevenEighthsMechanismQuarticBridge.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.SevenEighthsMechanismQuarticBridge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SevenEighthsMechanismQuarticBridge.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SevenEighthsMechanismTrace](../../../../GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/seveneighthsmechanismtrace.md) | 33 | `declaration-track:1be74dae70f0197c4b8439f672100644a028505a1be9617ceeece5dfa6d732a3` |
-| 2 | `theorem` | [trace](../../../../GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/trace.md) | 47 | `result-track:1eee1e165c8aecb80404325d81f4447761c8186e7edba63cd8fc363bdf8ca57e` |
-| 3 | `theorem` | [toZeta](../../../../GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/tozeta.md) | 68 | `result-track:ba757315a288e2f9794e5d73639bc53d52b06ae3b775ba170e50541544f6b811` |
-| 4 | `theorem` | [SevenEighthsMechanismChain.trace_zeta](../../../../GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/seveneighthsmechanismchain-trace-zeta.md) | 78 | `result-track:1051a7f812d7d416ad9bf4e0e9cf2ad28b880f7563fb01473535bbdb7523bbd0` |
-| 5 | `structure` | [OpenAIMechanismSourceAlignment](../../../../GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/openaimechanismsourcealignment.md) | 86 | `declaration-track:52cc546aae5d2f3e19cb3ca160b53ddf87b4ea27110c8cd7d53bc0fc5f2b3f5e` |
-| 6 | `structure` | [SourceBoundAcceptedSevenEighthsMechanismPort](../../../../GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/sourceboundacceptedseveneighthsmechanismport.md) | 108 | `declaration-track:fa16ddee75302571520d3465577e4bf3ef5135c3b9b0b614f1f82178e6232bfc` |
-| 7 | `theorem` | [trace](../../../../GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/trace-source-edition-2.md) | 115 | `result-track:e2fd39d7ee2f2c239c9cac818cb816bf97fbb9eaa3a961ac0a02f7a7fcc89657` |
-| 8 | `theorem` | [trace_zeta_eq_terminal](../../../../GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/trace-zeta-eq-terminal.md) | 121 | `result-track:bcf95d1b229fc8dadce490c864b8fa61d8218f918778ddf953032ae944b74b54` |
-| 9 | `structure` | [MechanismTraceToLocalWitnessBridge](../../../../GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/mechanismtracetolocalwitnessbridge.md) | 133 | `declaration-track:c160d479a0e880f07d83df3e794a609ef2b6f4c78ea9fa9ff7b763dc0cc75799` |
-| 10 | `def` | [localWitness](../../../../GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/localwitness.md) | 147 | `declaration-track:0bd91cbe0f67ddeea714557c9e82d9b15c251daab97027e6f200ec23e24d359c` |
-| 11 | `structure` | [SourceBoundMechanismBridgeAccepted](../../../../GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/sourceboundmechanismbridgeaccepted.md) | 162 | `declaration-track:257f1e18b038a9280f942a390944908c01dc1f26eb2b1f343f389d68e14ae345` |
-| 12 | `def` | [toQuadraticExtraction](../../../../GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/toquadraticextraction.md) | 174 | `declaration-track:5698ff8fbfb880d8a0c779ffe6f6c28234c602c6e87aadda5dda14688ed0f7c7` |
+| 1 | `structure` | [SevenEighthsMechanismTrace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/seveneighthsmechanismtrace.md) | 33 | `declaration-track:1be74dae70f0197c4b8439f672100644a028505a1be9617ceeece5dfa6d732a3` |
+| 2 | `theorem` | [trace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/trace.md) | 47 | `result-track:1eee1e165c8aecb80404325d81f4447761c8186e7edba63cd8fc363bdf8ca57e` |
+| 3 | `theorem` | [toZeta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/tozeta.md) | 68 | `result-track:ba757315a288e2f9794e5d73639bc53d52b06ae3b775ba170e50541544f6b811` |
+| 4 | `theorem` | [SevenEighthsMechanismChain.trace_zeta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/seveneighthsmechanismchain-trace-zeta.md) | 78 | `result-track:1051a7f812d7d416ad9bf4e0e9cf2ad28b880f7563fb01473535bbdb7523bbd0` |
+| 5 | `structure` | [OpenAIMechanismSourceAlignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/openaimechanismsourcealignment.md) | 86 | `declaration-track:52cc546aae5d2f3e19cb3ca160b53ddf87b4ea27110c8cd7d53bc0fc5f2b3f5e` |
+| 6 | `structure` | [SourceBoundAcceptedSevenEighthsMechanismPort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/sourceboundacceptedseveneighthsmechanismport.md) | 108 | `declaration-track:fa16ddee75302571520d3465577e4bf3ef5135c3b9b0b614f1f82178e6232bfc` |
+| 7 | `theorem` | [trace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/trace-source-edition-2.md) | 115 | `result-track:e2fd39d7ee2f2c239c9cac818cb816bf97fbb9eaa3a961ac0a02f7a7fcc89657` |
+| 8 | `theorem` | [trace_zeta_eq_terminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/trace-zeta-eq-terminal.md) | 121 | `result-track:bcf95d1b229fc8dadce490c864b8fa61d8218f918778ddf953032ae944b74b54` |
+| 9 | `structure` | [MechanismTraceToLocalWitnessBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/mechanismtracetolocalwitnessbridge.md) | 133 | `declaration-track:c160d479a0e880f07d83df3e794a609ef2b6f4c78ea9fa9ff7b763dc0cc75799` |
+| 10 | `def` | [localWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/localwitness.md) | 147 | `declaration-track:0bd91cbe0f67ddeea714557c9e82d9b15c251daab97027e6f200ec23e24d359c` |
+| 11 | `structure` | [SourceBoundMechanismBridgeAccepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/sourceboundmechanismbridgeaccepted.md) | 162 | `declaration-track:257f1e18b038a9280f942a390944908c01dc1f26eb2b1f343f389d68e14ae345` |
+| 12 | `def` | [toQuadraticExtraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SevenEighthsMechanismTrace.lean/declarations/toquadraticextraction.md) | 174 | `declaration-track:5698ff8fbfb880d8a0c779ffe6f6c28234c602c6e87aadda5dda14688ed0f7c7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

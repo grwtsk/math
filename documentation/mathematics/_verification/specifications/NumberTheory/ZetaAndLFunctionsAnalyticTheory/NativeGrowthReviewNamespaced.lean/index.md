@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NativeGrowthReviewNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NativeGrowthReviewNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NativeGrowthReviewNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NativeGrowthReviewNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [normalization_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NativeGrowthReviewNamespaced.lean/declarations/normalization-lower.md) | 29 | `result-track:4555c9bcc81e527ef631b35c75ca5d9fcb595f474240a027600017f338848dce` |
-| 2 | `theorem` | [actual_source_growth_unscaled](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NativeGrowthReviewNamespaced.lean/declarations/actual-source-growth-unscaled.md) | 37 | `result-track:689c1f4dbc2ac927d855b1c91923fc90c6f89fa2ba2f7d8cee0aec42734d85ba` |
+| 1 | `theorem` | [normalization_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NativeGrowthReviewNamespaced.lean/declarations/normalization-lower.md) | 29 | `result-track:4555c9bcc81e527ef631b35c75ca5d9fcb595f474240a027600017f338848dce` |
+| 2 | `theorem` | [actual_source_growth_unscaled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NativeGrowthReviewNamespaced.lean/declarations/actual-source-growth-unscaled.md) | 37 | `result-track:689c1f4dbc2ac927d855b1c91923fc90c6f89fa2ba2f7d8cee0aec42734d85ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

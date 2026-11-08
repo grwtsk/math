@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SInteger.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SInteger.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SInteger.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SInteger.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [integer](../../../../CommutativeAlgebra/SInteger.lean/declarations/integer.md) | 61 | `declaration-track:2e19748cadce03b2095c4970d202224d09bb26397a7b76adba84d29c7dd8fc88` |
-| 2 | `theorem` | [integer_eq](../../../../CommutativeAlgebra/SInteger.lean/declarations/integer-eq.md) | 68 | `result-track:b3ac47a0286da41008d942ed8c3ce4e067793d3f68e0603d48866e88285173bc` |
-| 3 | `theorem` | [integer_valuation_le_one](../../../../CommutativeAlgebra/SInteger.lean/declarations/integer-valuation-le-one.md) | 73 | `result-track:5cc71fb1aafda841837cb9052e6eeb64272805880a1e83cc24cfd1906e29f0f7` |
-| 4 | `lemma` | [integer_univ](../../../../CommutativeAlgebra/SInteger.lean/declarations/integer-univ.md) | 84 | `result-track:0884875ee8f2bac5b348a9923f82376b3e6d63fd8cd29b2f71e25230e1c9f03d` |
-| 5 | `lemma` | [integer_empty](../../../../CommutativeAlgebra/SInteger.lean/declarations/integer-empty.md) | 90 | `result-track:c1bb5af4f3ee32bc8a7d942e82e573bdeaa69e277dc1cafdca15780dbabd216f` |
-| 6 | `def` | [unit](../../../../CommutativeAlgebra/SInteger.lean/declarations/unit.md) | 104 | `declaration-track:f8c03a9abce1aafcdd43842a76d57109c743b519b14998fca51a1b2edb7295ef` |
-| 7 | `theorem` | [unit_eq](../../../../CommutativeAlgebra/SInteger.lean/declarations/unit-eq.md) | 112 | `result-track:f2f6ce57e6520e5228a74962fa6247012b8ae076d1039776d5c5909ccd25ca60` |
-| 8 | `theorem` | [unit_valuation_eq_one](../../../../CommutativeAlgebra/SInteger.lean/declarations/unit-valuation-eq-one.md) | 116 | `result-track:fa73906ef7efae62df1e4afff99ae9c49eeda782740c661ddf21e6ba7f91d7fe` |
-| 9 | `def` | [unitEquivUnitsInteger](../../../../CommutativeAlgebra/SInteger.lean/declarations/unitequivunitsinteger.md) | 122 | `declaration-track:d130cf12013594a65179f43e317b0a1dfacfd771c64c70104373e84ea40f7c8b` |
+| 1 | `def` | [integer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SInteger.lean/declarations/integer.md) | 61 | `declaration-track:2e19748cadce03b2095c4970d202224d09bb26397a7b76adba84d29c7dd8fc88` |
+| 2 | `theorem` | [integer_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SInteger.lean/declarations/integer-eq.md) | 68 | `result-track:b3ac47a0286da41008d942ed8c3ce4e067793d3f68e0603d48866e88285173bc` |
+| 3 | `theorem` | [integer_valuation_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SInteger.lean/declarations/integer-valuation-le-one.md) | 73 | `result-track:5cc71fb1aafda841837cb9052e6eeb64272805880a1e83cc24cfd1906e29f0f7` |
+| 4 | `lemma` | [integer_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SInteger.lean/declarations/integer-univ.md) | 84 | `result-track:0884875ee8f2bac5b348a9923f82376b3e6d63fd8cd29b2f71e25230e1c9f03d` |
+| 5 | `lemma` | [integer_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SInteger.lean/declarations/integer-empty.md) | 90 | `result-track:c1bb5af4f3ee32bc8a7d942e82e573bdeaa69e277dc1cafdca15780dbabd216f` |
+| 6 | `def` | [unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SInteger.lean/declarations/unit.md) | 104 | `declaration-track:f8c03a9abce1aafcdd43842a76d57109c743b519b14998fca51a1b2edb7295ef` |
+| 7 | `theorem` | [unit_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SInteger.lean/declarations/unit-eq.md) | 112 | `result-track:f2f6ce57e6520e5228a74962fa6247012b8ae076d1039776d5c5909ccd25ca60` |
+| 8 | `theorem` | [unit_valuation_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SInteger.lean/declarations/unit-valuation-eq-one.md) | 116 | `result-track:fa73906ef7efae62df1e4afff99ae9c49eeda782740c661ddf21e6ba7f91d7fe` |
+| 9 | `def` | [unitEquivUnitsInteger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SInteger.lean/declarations/unitequivunitsinteger.md) | 122 | `declaration-track:d130cf12013594a65179f43e317b0a1dfacfd771c64c70104373e84ea40f7c8b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

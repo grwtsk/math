@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/FiniteGroupSections.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/FiniteGroupSections.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteGroupSections.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteGroupSections.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Mathlib.FieldTheory.IntermediateField.Adjoin.Basic` — import line 12; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Finset.Lattice.Fold` — import line 13; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.FiniteGroupInverseSystem`](../../../../GroupTheoryAndGeneralizations/FiniteGroupInverseSystem.lean/index.md) — import line 15; pinned internal source present.
+- [`GRWTSK.Algebra.GroupTheory.ProfiniteGroups.InverseLimits.InverseSystemData.FiniteGroupInverseSystem`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteGroupInverseSystem.lean/index.md) — import line 15; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CompatibleSection](../../../../GroupTheoryAndGeneralizations/FiniteGroupSections.lean/declarations/compatiblesection.md) | 28 | `declaration-track:6eac877292dd301a461352094ef68d0381da85ad8870d4f14a9cade2074b73cc` |
-| 2 | `theorem` | [compatible_section_restrict](../../../../GroupTheoryAndGeneralizations/FiniteGroupSections.lean/declarations/compatible-section-restrict.md) | 32 | `result-track:3c0eee5a40e779100cdf5a652f22a547062fa718a8a957e339aee4f3b064af0c` |
-| 3 | `def` | [sectionFromLast](../../../../GroupTheoryAndGeneralizations/FiniteGroupSections.lean/declarations/sectionfromlast.md) | 37 | `declaration-track:79d27350106c5437cf7627a8ba01ef569cffcf99d08300dd52ecc2c3d8b10a3f` |
-| 4 | `theorem` | [section_from_last_compatible](../../../../GroupTheoryAndGeneralizations/FiniteGroupSections.lean/declarations/section-from-last-compatible.md) | 42 | `result-track:13c3fb7c65349266397f71f0cfd2609f5b84adad42cdd14d85e55d7de4dad283` |
+| 1 | `def` | [CompatibleSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteGroupSections.lean/declarations/compatiblesection.md) | 28 | `declaration-track:6eac877292dd301a461352094ef68d0381da85ad8870d4f14a9cade2074b73cc` |
+| 2 | `theorem` | [compatible_section_restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteGroupSections.lean/declarations/compatible-section-restrict.md) | 32 | `result-track:3c0eee5a40e779100cdf5a652f22a547062fa718a8a957e339aee4f3b064af0c` |
+| 3 | `def` | [sectionFromLast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteGroupSections.lean/declarations/sectionfromlast.md) | 37 | `declaration-track:79d27350106c5437cf7627a8ba01ef569cffcf99d08300dd52ecc2c3d8b10a3f` |
+| 4 | `theorem` | [section_from_last_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteGroupSections.lean/declarations/section-from-last-compatible.md) | 42 | `result-track:13c3fb7c65349266397f71f0cfd2609f5b84adad42cdd14d85e55d7de4dad283` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

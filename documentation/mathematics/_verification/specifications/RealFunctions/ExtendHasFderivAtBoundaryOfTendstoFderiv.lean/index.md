@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ExtendHasFderivAtBoundaryOfTendstoFderiv.lean/index.md) · [Full source](../../../../RealFunctions/ExtendHasFderivAtBoundaryOfTendstoFderiv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendHasFderivAtBoundaryOfTendstoFderiv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendHasFderivAtBoundaryOfTendstoFderiv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [has_fderiv_at_boundary_of_tendsto_fderiv](../../../../RealFunctions/ExtendHasFderivAtBoundaryOfTendstoFderiv.lean/declarations/has-fderiv-at-boundary-of-tendsto-fderiv.md) | 37 | `result-track:4e73424885179bc087aa488e721cf3bb719a33ebfa07fa26e669d8917b4ae757` |
-| 2 | `theorem` | [has_deriv_at_interval_left_endpoint_of_tendsto_deriv](../../../../RealFunctions/ExtendHasFderivAtBoundaryOfTendstoFderiv.lean/declarations/has-deriv-at-interval-left-endpoint-of-tendsto-deriv.md) | 111 | `result-track:d953bd6355932329a680b11e6ba7954fed9222f8659c1afa88c393a3a645faa5` |
-| 3 | `theorem` | [has_deriv_at_interval_right_endpoint_of_tendsto_deriv](../../../../RealFunctions/ExtendHasFderivAtBoundaryOfTendstoFderiv.lean/declarations/has-deriv-at-interval-right-endpoint-of-tendsto-deriv.md) | 145 | `result-track:ccf20767961db3edbceeeb9a311f6af35a52b80450b6aaf8cf13a5e3c253e26e` |
-| 4 | `theorem` | [hasDerivAt_of_hasDerivAt_of_ne](../../../../RealFunctions/ExtendHasFderivAtBoundaryOfTendstoFderiv.lean/declarations/hasderivat-of-hasderivat-of-ne.md) | 180 | `result-track:0f8f5cb3d14c6fcffb96de334905051a618e314ced906f3b0692fcd3814caf9a` |
-| 5 | `theorem` | [hasDerivAt_of_hasDerivAt_of_ne'](../../../../RealFunctions/ExtendHasFderivAtBoundaryOfTendstoFderiv.lean/declarations/hasderivat-of-hasderivat-of-ne-source-edition-2.md) | 214 | `result-track:36bdaea2bb44c2a4ecca119c53db0ae8263e90ed03fb5bae51df21abc09ecf65` |
+| 1 | `theorem` | [has_fderiv_at_boundary_of_tendsto_fderiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendHasFderivAtBoundaryOfTendstoFderiv.lean/declarations/has-fderiv-at-boundary-of-tendsto-fderiv.md) | 37 | `result-track:4e73424885179bc087aa488e721cf3bb719a33ebfa07fa26e669d8917b4ae757` |
+| 2 | `theorem` | [has_deriv_at_interval_left_endpoint_of_tendsto_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendHasFderivAtBoundaryOfTendstoFderiv.lean/declarations/has-deriv-at-interval-left-endpoint-of-tendsto-deriv.md) | 111 | `result-track:d953bd6355932329a680b11e6ba7954fed9222f8659c1afa88c393a3a645faa5` |
+| 3 | `theorem` | [has_deriv_at_interval_right_endpoint_of_tendsto_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendHasFderivAtBoundaryOfTendstoFderiv.lean/declarations/has-deriv-at-interval-right-endpoint-of-tendsto-deriv.md) | 145 | `result-track:ccf20767961db3edbceeeb9a311f6af35a52b80450b6aaf8cf13a5e3c253e26e` |
+| 4 | `theorem` | [hasDerivAt_of_hasDerivAt_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendHasFderivAtBoundaryOfTendstoFderiv.lean/declarations/hasderivat-of-hasderivat-of-ne.md) | 180 | `result-track:0f8f5cb3d14c6fcffb96de334905051a618e314ced906f3b0692fcd3814caf9a` |
+| 5 | `theorem` | [hasDerivAt_of_hasDerivAt_of_ne'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendHasFderivAtBoundaryOfTendstoFderiv.lean/declarations/hasderivat-of-hasderivat-of-ne-source-edition-2.md) | 214 | `result-track:36bdaea2bb44c2a4ecca119c53db0ae8263e90ed03fb5bae51df21abc09ecf65` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

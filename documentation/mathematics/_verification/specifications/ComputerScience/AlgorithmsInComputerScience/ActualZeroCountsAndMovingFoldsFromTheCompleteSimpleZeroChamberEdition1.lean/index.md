@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ActualZeroCountsAndMovingFoldsFromTheCompleteSimpleZeroChamberEdition1.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ActualZeroCountsAndMovingFoldsFromTheCompleteSimpleZeroChamberEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ActualZeroCountsAndMovingFoldsFromTheCompleteSimpleZeroChamberEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ActualZeroCountsAndMovingFoldsFromTheCompleteSimpleZeroChamberEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [complete_census_exact_zero_count](../../../../../ComputerScience/AlgorithmsInComputerScience/ActualZeroCountsAndMovingFoldsFromTheCompleteSimpleZeroChamberEdition1.lean/declarations/complete-census-exact-zero-count.md) | 23 | `result-track:c3daeef216cc98beddc0976f02e031809ca476ceff959c4154093bd60e06c12e` |
-| 2 | `theorem` | [complete_chamber_actual_count_and_fold_consumers](../../../../../ComputerScience/AlgorithmsInComputerScience/ActualZeroCountsAndMovingFoldsFromTheCompleteSimpleZeroChamberEdition1.lean/declarations/complete-chamber-actual-count-and-fold-consumers.md) | 38 | `result-track:cbacad9cfae5c9baa8d969f991efdb0f4da2c05ddf773e8aa4a3828f5b164fab` |
-| 3 | `theorem` | [actual_zero_count_locally_constant](../../../../../ComputerScience/AlgorithmsInComputerScience/ActualZeroCountsAndMovingFoldsFromTheCompleteSimpleZeroChamberEdition1.lean/declarations/actual-zero-count-locally-constant.md) | 88 | `result-track:bb54126d0affaf992fd1b7992ed71add0233fdb88501e1b69cb44ec662dfea54` |
-| 4 | `theorem` | [zero_count_chamber_failure_requires_discriminant_or_boundary](../../../../../ComputerScience/AlgorithmsInComputerScience/ActualZeroCountsAndMovingFoldsFromTheCompleteSimpleZeroChamberEdition1.lean/declarations/zero-count-chamber-failure-requires-discriminant-or-boundary.md) | 102 | `result-track:9d1a04141ccdcd446c80a3ec442a79be2853dc2cfda850d1de997d747a8ce2e6` |
+| 1 | `theorem` | [complete_census_exact_zero_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ActualZeroCountsAndMovingFoldsFromTheCompleteSimpleZeroChamberEdition1.lean/declarations/complete-census-exact-zero-count.md) | 23 | `result-track:c3daeef216cc98beddc0976f02e031809ca476ceff959c4154093bd60e06c12e` |
+| 2 | `theorem` | [complete_chamber_actual_count_and_fold_consumers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ActualZeroCountsAndMovingFoldsFromTheCompleteSimpleZeroChamberEdition1.lean/declarations/complete-chamber-actual-count-and-fold-consumers.md) | 38 | `result-track:cbacad9cfae5c9baa8d969f991efdb0f4da2c05ddf773e8aa4a3828f5b164fab` |
+| 3 | `theorem` | [actual_zero_count_locally_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ActualZeroCountsAndMovingFoldsFromTheCompleteSimpleZeroChamberEdition1.lean/declarations/actual-zero-count-locally-constant.md) | 88 | `result-track:bb54126d0affaf992fd1b7992ed71add0233fdb88501e1b69cb44ec662dfea54` |
+| 4 | `theorem` | [zero_count_chamber_failure_requires_discriminant_or_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ActualZeroCountsAndMovingFoldsFromTheCompleteSimpleZeroChamberEdition1.lean/declarations/zero-count-chamber-failure-requires-discriminant-or-boundary.md) | 102 | `result-track:9d1a04141ccdcd446c80a3ec442a79be2853dc2cfda850d1de997d747a8ce2e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

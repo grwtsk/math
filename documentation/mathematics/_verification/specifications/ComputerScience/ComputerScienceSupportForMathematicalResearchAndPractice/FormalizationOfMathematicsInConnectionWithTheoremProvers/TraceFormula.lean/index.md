@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceFormula.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceFormula.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceFormula.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceFormula.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [trace_pairing_has_spectral_distribution](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceFormula.lean/declarations/trace-pairing-has-spectral-distribution.md) | 20 | `result-track:12b3dbfe874462f9af728e1f751e8b01395127711b26649f444ad59d93363d23` |
-| 2 | `theorem` | [trace_pairing_has_index_distribution](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceFormula.lean/declarations/trace-pairing-has-index-distribution.md) | 25 | `result-track:9108525070ad40783f76ecaf345edbe872799a6a8d420fa8cf77798a904ae136` |
-| 3 | `theorem` | [explicit_trace_formula](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceFormula.lean/declarations/explicit-trace-formula.md) | 30 | `result-track:4e30a84b7788f80893f95bebafdcabaa9420c0d804ea80f4ad48b42187cfd44c` |
+| 1 | `theorem` | [trace_pairing_has_spectral_distribution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceFormula.lean/declarations/trace-pairing-has-spectral-distribution.md) | 20 | `result-track:12b3dbfe874462f9af728e1f751e8b01395127711b26649f444ad59d93363d23` |
+| 2 | `theorem` | [trace_pairing_has_index_distribution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceFormula.lean/declarations/trace-pairing-has-index-distribution.md) | 25 | `result-track:9108525070ad40783f76ecaf345edbe872799a6a8d420fa8cf77798a904ae136` |
+| 3 | `theorem` | [explicit_trace_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceFormula.lean/declarations/explicit-trace-formula.md) | 30 | `result-track:4e30a84b7788f80893f95bebafdcabaa9420c0d804ea80f4ad48b42187cfd44c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

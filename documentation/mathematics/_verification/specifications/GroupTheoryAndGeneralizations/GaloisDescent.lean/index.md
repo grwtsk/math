@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GaloisDescent.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GaloisDescent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GaloisCocycle](../../../../GroupTheoryAndGeneralizations/GaloisDescent.lean/declarations/galoiscocycle.md) | 17 | `declaration-track:da6c8c582326f2b53128906eae0b7a4c256ceae81aaa21b190b9dfb6ab205790` |
-| 2 | `structure` | [GaloisDescentDatum](../../../../GroupTheoryAndGeneralizations/GaloisDescent.lean/declarations/galoisdescentdatum.md) | 31 | `declaration-track:3c963296869cda9585e149a9e04ef966af2db7294822ea2b07ecda323508abee` |
-| 3 | `structure` | [EffectiveDescentCertificate](../../../../GroupTheoryAndGeneralizations/GaloisDescent.lean/declarations/effectivedescentcertificate.md) | 43 | `declaration-track:90687bccf6ece811913736e7afb4289c1cb1890934eb11e6f447c89211fe0ee6` |
-| 4 | `theorem` | [EffectiveDescentCertificate.exists_descended](../../../../GroupTheoryAndGeneralizations/GaloisDescent.lean/declarations/effectivedescentcertificate-exists-descended.md) | 54 | `result-track:9b9e479b89371c8df9e9c2055cee8408a331840c439a402cbc2230bc20429e42` |
-| 5 | `theorem` | [EffectiveDescentCertificate.compatibility](../../../../GroupTheoryAndGeneralizations/GaloisDescent.lean/declarations/effectivedescentcertificate-compatibility.md) | 70 | `result-track:5066fc9dc17254270bf85e583047d4ec60377de19b586b5cfa587a895605d168` |
+| 1 | `structure` | [GaloisCocycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescent.lean/declarations/galoiscocycle.md) | 17 | `declaration-track:da6c8c582326f2b53128906eae0b7a4c256ceae81aaa21b190b9dfb6ab205790` |
+| 2 | `structure` | [GaloisDescentDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescent.lean/declarations/galoisdescentdatum.md) | 31 | `declaration-track:3c963296869cda9585e149a9e04ef966af2db7294822ea2b07ecda323508abee` |
+| 3 | `structure` | [EffectiveDescentCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescent.lean/declarations/effectivedescentcertificate.md) | 43 | `declaration-track:90687bccf6ece811913736e7afb4289c1cb1890934eb11e6f447c89211fe0ee6` |
+| 4 | `theorem` | [EffectiveDescentCertificate.exists_descended](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescent.lean/declarations/effectivedescentcertificate-exists-descended.md) | 54 | `result-track:9b9e479b89371c8df9e9c2055cee8408a331840c439a402cbc2230bc20429e42` |
+| 5 | `theorem` | [EffectiveDescentCertificate.compatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescent.lean/declarations/effectivedescentcertificate-compatibility.md) | 70 | `result-track:5066fc9dc17254270bf85e583047d4ec60377de19b586b5cfa587a895605d168` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

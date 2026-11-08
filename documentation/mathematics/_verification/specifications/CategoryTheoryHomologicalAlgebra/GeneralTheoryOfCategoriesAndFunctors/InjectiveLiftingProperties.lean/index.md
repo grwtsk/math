@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingProperties.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingProperties.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingProperties.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingProperties.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [hasLiftingProperty_of_isZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingProperties.lean/declarations/hasliftingproperty-of-iszero.md) | 28 | `result-track:1227502a2dd4ccc58e111aadbb789bb65744fbf46bd19a26957133cc9fa8aed8` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingProperties.lean/declarations/instance.md) | 35 | `declaration-track:fc5796a228195a9083cb21775d1ad186ea38a1560f6e75fabab63dc0500a1158` |
-| 3 | `lemma` | [injective_iff_rlp_monomorphisms_of_isZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingProperties.lean/declarations/injective-iff-rlp-monomorphisms-of-iszero.md) | 41 | `result-track:8d6ec3b7d3e0fd51e519c598d1e4c64408c2f12a9519f5d9356dd779d6b87766` |
-| 4 | `lemma` | [injective_iff_rlp_monomorphisms_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingProperties.lean/declarations/injective-iff-rlp-monomorphisms-zero.md) | 55 | `result-track:f54546eac3ac221e4cca7450ef09eae291d906daf6e24a79ed487eb7d287f721` |
+| 1 | `lemma` | [hasLiftingProperty_of_isZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingProperties.lean/declarations/hasliftingproperty-of-iszero.md) | 28 | `result-track:1227502a2dd4ccc58e111aadbb789bb65744fbf46bd19a26957133cc9fa8aed8` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingProperties.lean/declarations/instance.md) | 35 | `declaration-track:fc5796a228195a9083cb21775d1ad186ea38a1560f6e75fabab63dc0500a1158` |
+| 3 | `lemma` | [injective_iff_rlp_monomorphisms_of_isZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingProperties.lean/declarations/injective-iff-rlp-monomorphisms-of-iszero.md) | 41 | `result-track:8d6ec3b7d3e0fd51e519c598d1e4c64408c2f12a9519f5d9356dd779d6b87766` |
+| 4 | `lemma` | [injective_iff_rlp_monomorphisms_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingProperties.lean/declarations/injective-iff-rlp-monomorphisms-zero.md) | 55 | `result-track:f54546eac3ac221e4cca7450ef09eae291d906daf6e24a79ed487eb7d287f721` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

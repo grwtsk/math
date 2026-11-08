@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CertificateEdition3.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CertificateEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CertificateEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CertificateEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [AnalyticCertificate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CertificateEdition3.lean/declarations/analyticcertificate.md) | 13 | `declaration-track:91db226c25464ce7a2930f19ad3a869468facc702a48ec70c039b911277a2490` |
-| 2 | `abbrev` | [AnalyticBoundaryKind](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CertificateEdition3.lean/declarations/analyticboundarykind.md) | 16 | `declaration-track:1673f7c8a1d98a9d35d02dc69b3a742f397400e29dd7886870a72f444b85d9c0` |
-| 3 | `theorem` | [analytic_certificate_sound](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CertificateEdition3.lean/declarations/analytic-certificate-sound.md) | 19 | `result-track:10fea0a0941160e57e9139dd885a36079273445ea91632a34eadb1c4cade0d52` |
+| 1 | `abbrev` | [AnalyticCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CertificateEdition3.lean/declarations/analyticcertificate.md) | 13 | `declaration-track:91db226c25464ce7a2930f19ad3a869468facc702a48ec70c039b911277a2490` |
+| 2 | `abbrev` | [AnalyticBoundaryKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CertificateEdition3.lean/declarations/analyticboundarykind.md) | 16 | `declaration-track:1673f7c8a1d98a9d35d02dc69b3a742f397400e29dd7886870a72f444b85d9c0` |
+| 3 | `theorem` | [analytic_certificate_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CertificateEdition3.lean/declarations/analytic-certificate-sound.md) | 19 | `result-track:10fea0a0941160e57e9139dd885a36079273445ea91632a34eadb1c4cade0d52` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

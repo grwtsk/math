@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/NormalizedGammaBudgetNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/NormalizedGammaBudgetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedGammaBudgetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedGammaBudgetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [paperEndpoint](../../../../MeasureAndIntegration/NormalizedGammaBudgetNamespaced.lean/declarations/paperendpoint.md) | 23 | `declaration-track:399a53b8f41ea2963f4cc0130e289588469008e00b9f5c64a225129f554a1155` |
-| 2 | `theorem` | [actual_endpoint_eq_paper](../../../../MeasureAndIntegration/NormalizedGammaBudgetNamespaced.lean/declarations/actual-endpoint-eq-paper.md) | 26 | `result-track:34284a9686adad4f13c1f1a912164dc0ea50f573a635b99a9fdcba3922305dfc` |
-| 3 | `theorem` | [sourceGammaValue_identity](../../../../MeasureAndIntegration/NormalizedGammaBudgetNamespaced.lean/declarations/sourcegammavalue-identity.md) | 31 | `result-track:5b685cf14c396e53f38afdf0c25763295824f1c8657742190686e3236088982d` |
-| 4 | `theorem` | [sourceGammaValue_budget](../../../../MeasureAndIntegration/NormalizedGammaBudgetNamespaced.lean/declarations/sourcegammavalue-budget.md) | 39 | `result-track:bf86c111e363551025497c4d0e7f91733b79dc8d4c220ca4d47cf7ea6d2ae3f8` |
+| 1 | `def` | [paperEndpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedGammaBudgetNamespaced.lean/declarations/paperendpoint.md) | 23 | `declaration-track:399a53b8f41ea2963f4cc0130e289588469008e00b9f5c64a225129f554a1155` |
+| 2 | `theorem` | [actual_endpoint_eq_paper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedGammaBudgetNamespaced.lean/declarations/actual-endpoint-eq-paper.md) | 26 | `result-track:34284a9686adad4f13c1f1a912164dc0ea50f573a635b99a9fdcba3922305dfc` |
+| 3 | `theorem` | [sourceGammaValue_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedGammaBudgetNamespaced.lean/declarations/sourcegammavalue-identity.md) | 31 | `result-track:5b685cf14c396e53f38afdf0c25763295824f1c8657742190686e3236088982d` |
+| 4 | `theorem` | [sourceGammaValue_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedGammaBudgetNamespaced.lean/declarations/sourcegammavalue-budget.md) | 39 | `result-track:bf86c111e363551025497c4d0e7f91733b79dc8d4c220ca4d47cf7ea6d2ae3f8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

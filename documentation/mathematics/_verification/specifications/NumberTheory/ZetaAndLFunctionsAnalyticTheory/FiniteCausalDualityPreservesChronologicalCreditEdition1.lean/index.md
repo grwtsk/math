@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteCausalDualityPreservesChronologicalCreditEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteCausalDualityPreservesChronologicalCreditEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteCausalDualityPreservesChronologicalCreditEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteCausalDualityPreservesChronologicalCreditEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [prefixSum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteCausalDualityPreservesChronologicalCreditEdition1.lean/declarations/prefixsum.md) | 24 | `declaration-track:2d9fb3d8b7f50559c11f9d549c34686886f66899b3da0ef07e3d7156b459e54c` |
-| 2 | `theorem` | [prefixSum_step](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteCausalDualityPreservesChronologicalCreditEdition1.lean/declarations/prefixsum-step.md) | 26 | `result-track:5e469d9e3c3f065e98d07867f933da02cc0768c7e39f2df7d14aeb79de2d7fbb` |
-| 3 | `theorem` | [weighted_prefix_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteCausalDualityPreservesChronologicalCreditEdition1.lean/declarations/weighted-prefix-identity.md) | 30 | `result-track:3ba73a5789c4cbdf5e21f4baf5183bf90865c706eb38a02e427443ecdce7d731` |
-| 4 | `theorem` | [causal_weight_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteCausalDualityPreservesChronologicalCreditEdition1.lean/declarations/causal-weight-bound.md) | 40 | `result-track:e15ba64bd497e75469f28a92849f5bd22e83b93a1a58c119c6a2c90e70c1292e` |
-| 5 | `theorem` | [prefix_indicator_sum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteCausalDualityPreservesChronologicalCreditEdition1.lean/declarations/prefix-indicator-sum.md) | 65 | `result-track:dbcf3600231192a29f7907287c7f9b6d38d248d5f61b68021df9a4dccae1a5df` |
-| 6 | `theorem` | [prefixes_nonpositive_iff_causal_tests](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteCausalDualityPreservesChronologicalCreditEdition1.lean/declarations/prefixes-nonpositive-iff-causal-tests.md) | 77 | `result-track:e9abe9fdfc6d3b477da857aecadeb650ce39a5837fe31b0cf72fa3f77a9224f8` |
+| 1 | `def` | [prefixSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteCausalDualityPreservesChronologicalCreditEdition1.lean/declarations/prefixsum.md) | 24 | `declaration-track:2d9fb3d8b7f50559c11f9d549c34686886f66899b3da0ef07e3d7156b459e54c` |
+| 2 | `theorem` | [prefixSum_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteCausalDualityPreservesChronologicalCreditEdition1.lean/declarations/prefixsum-step.md) | 26 | `result-track:5e469d9e3c3f065e98d07867f933da02cc0768c7e39f2df7d14aeb79de2d7fbb` |
+| 3 | `theorem` | [weighted_prefix_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteCausalDualityPreservesChronologicalCreditEdition1.lean/declarations/weighted-prefix-identity.md) | 30 | `result-track:3ba73a5789c4cbdf5e21f4baf5183bf90865c706eb38a02e427443ecdce7d731` |
+| 4 | `theorem` | [causal_weight_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteCausalDualityPreservesChronologicalCreditEdition1.lean/declarations/causal-weight-bound.md) | 40 | `result-track:e15ba64bd497e75469f28a92849f5bd22e83b93a1a58c119c6a2c90e70c1292e` |
+| 5 | `theorem` | [prefix_indicator_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteCausalDualityPreservesChronologicalCreditEdition1.lean/declarations/prefix-indicator-sum.md) | 65 | `result-track:dbcf3600231192a29f7907287c7f9b6d38d248d5f61b68021df9a4dccae1a5df` |
+| 6 | `theorem` | [prefixes_nonpositive_iff_causal_tests](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteCausalDualityPreservesChronologicalCreditEdition1.lean/declarations/prefixes-nonpositive-iff-causal-tests.md) | 77 | `result-track:e9abe9fdfc6d3b477da857aecadeb650ce39a5837fe31b0cf72fa3f77a9224f8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

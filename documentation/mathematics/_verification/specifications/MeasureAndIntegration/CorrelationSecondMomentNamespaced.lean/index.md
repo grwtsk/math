@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CorrelationSecondMomentNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CorrelationSecondMomentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationSecondMomentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationSecondMomentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [normalizedTest_even](../../../../MeasureAndIntegration/CorrelationSecondMomentNamespaced.lean/declarations/normalizedtest-even.md) | 28 | `result-track:becdf9a4257260f607f4288ba0fa2ea0de85337de35b2cb673a3815ecb957872` |
-| 2 | `theorem` | [secondMoment_convolution](../../../../MeasureAndIntegration/CorrelationSecondMomentNamespaced.lean/declarations/secondmoment-convolution.md) | 40 | `result-track:5829ec8c55a2cc2faad07f65579ffe05c715655db56a8f4651479e2d90d171b9` |
-| 3 | `theorem` | [secondMoment_convolution_integral](../../../../MeasureAndIntegration/CorrelationSecondMomentNamespaced.lean/declarations/secondmoment-convolution-integral.md) | 66 | `result-track:d2cfcc98db1fab813fbfe908c75397b42281cf4438aabc46c19e7f966aade2e9` |
-| 4 | `theorem` | [weighted_normalizedTest_firstMoment_integrable](../../../../MeasureAndIntegration/CorrelationSecondMomentNamespaced.lean/declarations/weighted-normalizedtest-firstmoment-integrable.md) | 96 | `result-track:8406fe5602914822c649e548f4988b5a52200d5ab411b1ed34d3a7b89fcac1c3` |
-| 5 | `theorem` | [weighted_correlation_secondMoment_integrable](../../../../MeasureAndIntegration/CorrelationSecondMomentNamespaced.lean/declarations/weighted-correlation-secondmoment-integrable.md) | 104 | `result-track:eb02fd7c83f0764884128c1822a63145ffe64db92d6e3f0049a737896663afbd` |
-| 6 | `theorem` | [full_correlation_secondMoment_eq_square](../../../../MeasureAndIntegration/CorrelationSecondMomentNamespaced.lean/declarations/full-correlation-secondmoment-eq-square.md) | 112 | `result-track:0ef9cc43dfb82f0962d3917529b89fb2ebd86db2288adf51b3b940b89084d688` |
+| 1 | `theorem` | [normalizedTest_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationSecondMomentNamespaced.lean/declarations/normalizedtest-even.md) | 28 | `result-track:becdf9a4257260f607f4288ba0fa2ea0de85337de35b2cb673a3815ecb957872` |
+| 2 | `theorem` | [secondMoment_convolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationSecondMomentNamespaced.lean/declarations/secondmoment-convolution.md) | 40 | `result-track:5829ec8c55a2cc2faad07f65579ffe05c715655db56a8f4651479e2d90d171b9` |
+| 3 | `theorem` | [secondMoment_convolution_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationSecondMomentNamespaced.lean/declarations/secondmoment-convolution-integral.md) | 66 | `result-track:d2cfcc98db1fab813fbfe908c75397b42281cf4438aabc46c19e7f966aade2e9` |
+| 4 | `theorem` | [weighted_normalizedTest_firstMoment_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationSecondMomentNamespaced.lean/declarations/weighted-normalizedtest-firstmoment-integrable.md) | 96 | `result-track:8406fe5602914822c649e548f4988b5a52200d5ab411b1ed34d3a7b89fcac1c3` |
+| 5 | `theorem` | [weighted_correlation_secondMoment_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationSecondMomentNamespaced.lean/declarations/weighted-correlation-secondmoment-integrable.md) | 104 | `result-track:eb02fd7c83f0764884128c1822a63145ffe64db92d6e3f0049a737896663afbd` |
+| 6 | `theorem` | [full_correlation_secondMoment_eq_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationSecondMomentNamespaced.lean/declarations/full-correlation-secondmoment-eq-square.md) | 112 | `result-track:0ef9cc43dfb82f0962d3917529b89fb2ebd86db2288adf51b3b940b89084d688` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

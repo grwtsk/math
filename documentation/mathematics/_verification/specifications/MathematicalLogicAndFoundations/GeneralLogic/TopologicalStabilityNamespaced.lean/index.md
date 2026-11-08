@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TopologicalStabilityNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TopologicalStabilityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TopologicalStabilityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TopologicalStabilityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TopologicalStabilityDescriptor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TopologicalStabilityNamespaced.lean/declarations/topologicalstabilitydescriptor.md) | 24 | `declaration-track:6ef69e8a7c1c73dba0649595b92bee8b9d2fae90911cad84d23db27056054b4a` |
-| 2 | `theorem` | [topologicalStability_requires_convergence_certificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TopologicalStabilityNamespaced.lean/declarations/topologicalstability-requires-convergence-certificate.md) | 28 | `result-track:fa5f5427037b67a4d7dd14ed8518f69461835ae9dcb48d58143044f97c5b4112` |
+| 1 | `structure` | [TopologicalStabilityDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TopologicalStabilityNamespaced.lean/declarations/topologicalstabilitydescriptor.md) | 24 | `declaration-track:6ef69e8a7c1c73dba0649595b92bee8b9d2fae90911cad84d23db27056054b4a` |
+| 2 | `theorem` | [topologicalStability_requires_convergence_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TopologicalStabilityNamespaced.lean/declarations/topologicalstability-requires-convergence-certificate.md) | 28 | `result-track:fa5f5427037b67a4d7dd14ed8518f69461835ae9dcb48d58143044f97c5b4112` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

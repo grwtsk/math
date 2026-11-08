@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/TheoremsTheoremsNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/TheoremsTheoremsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TheoremsTheoremsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TheoremsTheoremsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [soninPacketEnergy_chain_telescope](../../../../ProbabilityTheoryAndStochasticProcesses/TheoremsTheoremsNamespaced.lean/declarations/soninpacketenergy-chain-telescope.md) | 17 | `result-track:5478849ff9e20e3d6271b05feb8547365cdb6103e878ad06ed86a627d92c705c` |
-| 2 | `theorem` | [packetIncrementSum_enumeration_independent](../../../../ProbabilityTheoryAndStochasticProcesses/TheoremsTheoremsNamespaced.lean/declarations/packetincrementsum-enumeration-independent.md) | 38 | `result-track:eef8adde0cb2eab2c14097326a989edf5ab5bb54b0a21a7bfbb851ae57ec00f9` |
+| 1 | `theorem` | [soninPacketEnergy_chain_telescope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TheoremsTheoremsNamespaced.lean/declarations/soninpacketenergy-chain-telescope.md) | 17 | `result-track:5478849ff9e20e3d6271b05feb8547365cdb6103e878ad06ed86a627d92c705c` |
+| 2 | `theorem` | [packetIncrementSum_enumeration_independent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TheoremsTheoremsNamespaced.lean/declarations/packetincrementsum-enumeration-independent.md) | 38 | `result-track:eef8adde0cb2eab2c14097326a989edf5ab5bb54b0a21a7bfbb851ae57ec00f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

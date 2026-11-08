@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/index.md) · [Full source](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/declarations/example-source-edition-8.md) | 15 | `declaration-track:f147c002c47fb07644a4fbbd709e98567fb216756a669f24e0f27b603c492a58` |
-| 2 | `example` | [(anonymous)](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/declarations/example.md) | 18 | `declaration-track:636cfc1a8b14bdba9dfaf5679c80670e794d3462ed8f7701e12eeda2127da587` |
-| 3 | `example` | [(anonymous)](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 24 | `declaration-track:a9262519a164f9c0bdeb3fff9475fb14eb6792a985dadfd08e3941da324e6c52` |
-| 4 | `example` | [(anonymous)](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/declarations/example-source-edition-7.md) | 28 | `declaration-track:e7a5d13b8f8ac2228073c2c90b9700bcaec42184f33ff91002f81cec29edefa3` |
-| 5 | `example` | [(anonymous)](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/declarations/example-source-edition-4.md) | 30 | `declaration-track:c55fd9354824f8d9b40352fd21dfd648eb1df2a6a35d4ef736ab468d1922c3d3` |
-| 6 | `example` | [(anonymous)](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/declarations/example-source-edition-5.md) | 34 | `declaration-track:d09d819873fa51b4411a76756fb507a6e7075f1e228ec7d264ff83b46134779e` |
-| 7 | `example` | [(anonymous)](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/declarations/example-source-edition-6.md) | 37 | `declaration-track:e4e4b0a90515d4c56679d7f6d184ebc8ea492413e723ecf7b165d8586199613a` |
-| 8 | `example` | [(anonymous)](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 41 | `declaration-track:8fc48d1a324b1219a864cb32f671dba485551eaca12f01586538d7bce5d3a73f` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/declarations/example-source-edition-8.md) | 15 | `declaration-track:f147c002c47fb07644a4fbbd709e98567fb216756a669f24e0f27b603c492a58` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/declarations/example.md) | 18 | `declaration-track:636cfc1a8b14bdba9dfaf5679c80670e794d3462ed8f7701e12eeda2127da587` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 24 | `declaration-track:a9262519a164f9c0bdeb3fff9475fb14eb6792a985dadfd08e3941da324e6c52` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/declarations/example-source-edition-7.md) | 28 | `declaration-track:e7a5d13b8f8ac2228073c2c90b9700bcaec42184f33ff91002f81cec29edefa3` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/declarations/example-source-edition-4.md) | 30 | `declaration-track:c55fd9354824f8d9b40352fd21dfd648eb1df2a6a35d4ef736ab468d1922c3d3` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/declarations/example-source-edition-5.md) | 34 | `declaration-track:d09d819873fa51b4411a76756fb507a6e7075f1e228ec7d264ff83b46134779e` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/declarations/example-source-edition-6.md) | 37 | `declaration-track:e4e4b0a90515d4c56679d7f6d184ebc8ea492413e723ecf7b165d8586199613a` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/SourceWeightedMultiplierLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 41 | `declaration-track:8fc48d1a324b1219a864cb32f671dba485551eaca12f01586538d7bce5d3a73f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/EnoughRootsOfUnity.lean/index.md) · [Full source](../../../../CommutativeAlgebra/EnoughRootsOfUnity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EnoughRootsOfUnity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EnoughRootsOfUnity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [HasEnoughRootsOfUnity](../../../../CommutativeAlgebra/EnoughRootsOfUnity.lean/declarations/hasenoughrootsofunity.md) | 23 | `declaration-track:0c5b208c171db34de01ef960bed1c19932f860b2f2e768982122a7c4904b78d2` |
-| 2 | `lemma` | [exists_primitiveRoot](../../../../CommutativeAlgebra/EnoughRootsOfUnity.lean/declarations/exists-primitiveroot.md) | 29 | `result-track:9af9606b9cf6a063c1dc9cd71e0016ba9b48b30b0f0ba1effd6fe584bc461d00` |
-| 3 | `instance` | [rootsOfUnity_isCyclic](../../../../CommutativeAlgebra/EnoughRootsOfUnity.lean/declarations/rootsofunity-iscyclic.md) | 33 | `declaration-track:175414a13b4912e962a88a621d6acb9f8ffb8ef6c05f1799cd4a94a991f7be3f` |
-| 4 | `lemma` | [of_dvd](../../../../CommutativeAlgebra/EnoughRootsOfUnity.lean/declarations/of-dvd.md) | 38 | `result-track:348072eca03ed262a6330fc76aca51d918e3ab9f20986162c99ad005b92b537d` |
-| 5 | `instance` | [finite_rootsOfUnity](../../../../CommutativeAlgebra/EnoughRootsOfUnity.lean/declarations/finite-rootsofunity.md) | 49 | `declaration-track:141b8743fc08748222677ab8c93f62306e663b40d25af5bcce37b18c66778d4d` |
-| 6 | `lemma` | [natCard_rootsOfUnity](../../../../CommutativeAlgebra/EnoughRootsOfUnity.lean/declarations/natcard-rootsofunity.md) | 63 | `result-track:183d6fc1a7127cbf237e375978f47854e317e185fdb0385785fe912fee24a1aa` |
-| 7 | `lemma` | [MulEquiv.hasEnoughRootsOfUnity](../../../../CommutativeAlgebra/EnoughRootsOfUnity.lean/declarations/mulequiv-hasenoughrootsofunity.md) | 80 | `result-track:eb74314c4e5a8ad5d04f02ee72246b0acc559e5712ecc0901f74d7c594a9f164` |
-| 8 | `lemma` | [IsCyclic.monoidHom_equiv_self](../../../../CommutativeAlgebra/EnoughRootsOfUnity.lean/declarations/iscyclic-monoidhom-equiv-self.md) | 95 | `result-track:e2299b1742e26e7498ca4f66d71adcf1cd8e381f883098c0e22066cfdda78851` |
+| 1 | `class` | [HasEnoughRootsOfUnity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EnoughRootsOfUnity.lean/declarations/hasenoughrootsofunity.md) | 23 | `declaration-track:0c5b208c171db34de01ef960bed1c19932f860b2f2e768982122a7c4904b78d2` |
+| 2 | `lemma` | [exists_primitiveRoot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EnoughRootsOfUnity.lean/declarations/exists-primitiveroot.md) | 29 | `result-track:9af9606b9cf6a063c1dc9cd71e0016ba9b48b30b0f0ba1effd6fe584bc461d00` |
+| 3 | `instance` | [rootsOfUnity_isCyclic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EnoughRootsOfUnity.lean/declarations/rootsofunity-iscyclic.md) | 33 | `declaration-track:175414a13b4912e962a88a621d6acb9f8ffb8ef6c05f1799cd4a94a991f7be3f` |
+| 4 | `lemma` | [of_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EnoughRootsOfUnity.lean/declarations/of-dvd.md) | 38 | `result-track:348072eca03ed262a6330fc76aca51d918e3ab9f20986162c99ad005b92b537d` |
+| 5 | `instance` | [finite_rootsOfUnity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EnoughRootsOfUnity.lean/declarations/finite-rootsofunity.md) | 49 | `declaration-track:141b8743fc08748222677ab8c93f62306e663b40d25af5bcce37b18c66778d4d` |
+| 6 | `lemma` | [natCard_rootsOfUnity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EnoughRootsOfUnity.lean/declarations/natcard-rootsofunity.md) | 63 | `result-track:183d6fc1a7127cbf237e375978f47854e317e185fdb0385785fe912fee24a1aa` |
+| 7 | `lemma` | [MulEquiv.hasEnoughRootsOfUnity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EnoughRootsOfUnity.lean/declarations/mulequiv-hasenoughrootsofunity.md) | 80 | `result-track:eb74314c4e5a8ad5d04f02ee72246b0acc559e5712ecc0901f74d7c594a9f164` |
+| 8 | `lemma` | [IsCyclic.monoidHom_equiv_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EnoughRootsOfUnity.lean/declarations/iscyclic-monoidhom-equiv-self.md) | 95 | `result-track:e2299b1742e26e7498ca4f66d71adcf1cd8e381f883098c0e22066cfdda78851` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

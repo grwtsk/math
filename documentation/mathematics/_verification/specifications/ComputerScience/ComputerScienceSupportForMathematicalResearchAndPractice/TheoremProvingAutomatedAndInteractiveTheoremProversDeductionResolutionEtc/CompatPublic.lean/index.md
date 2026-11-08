@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [LazyEncodable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatPublic.lean/declarations/lazyencodable.md) | 11 | `declaration-track:ab34445e619b3500ad1b1f8243bb18e9d0f0270c8bf12c8976a00d8fc6d2a9fa` |
-| 2 | `structure` | [ExprWithCtx](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatPublic.lean/declarations/exprwithctx.md) | 14 | `declaration-track:c492c50710e41a6e63eeb4fe359f7a60bce2fc687ccaebc06175450aa2ea4761` |
-| 3 | `def` | [ExprWithCtx.runMetaM](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatPublic.lean/declarations/exprwithctx-runmetam.md) | 21 | `declaration-track:0c0457d14072e392b2d8ced596947d3c8ad5c9f2e57bdf7947d64fcadfde8202` |
-| 4 | `def` | [ExprWithCtx.save](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatPublic.lean/declarations/exprwithctx-save.md) | 25 | `declaration-track:40f60027ef9a61ab4a62bef8f01d33e30fa9621615f887b849fabbccc2b9a75c` |
+| 1 | `abbrev` | [LazyEncodable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatPublic.lean/declarations/lazyencodable.md) | 11 | `declaration-track:ab34445e619b3500ad1b1f8243bb18e9d0f0270c8bf12c8976a00d8fc6d2a9fa` |
+| 2 | `structure` | [ExprWithCtx](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatPublic.lean/declarations/exprwithctx.md) | 14 | `declaration-track:c492c50710e41a6e63eeb4fe359f7a60bce2fc687ccaebc06175450aa2ea4761` |
+| 3 | `def` | [ExprWithCtx.runMetaM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatPublic.lean/declarations/exprwithctx-runmetam.md) | 21 | `declaration-track:0c0457d14072e392b2d8ced596947d3c8ad5c9f2e57bdf7947d64fcadfde8202` |
+| 4 | `def` | [ExprWithCtx.save](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatPublic.lean/declarations/exprwithctx-save.md) | 25 | `declaration-track:40f60027ef9a61ab4a62bef8f01d33e30fa9621615f887b849fabbccc2b9a75c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

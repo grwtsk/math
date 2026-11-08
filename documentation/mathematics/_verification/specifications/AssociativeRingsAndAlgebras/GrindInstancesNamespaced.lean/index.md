@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/GrindInstancesNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/GrindInstancesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GrindInstancesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GrindInstancesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [CommRing.toGrindCommRing](../../../../AssociativeRingsAndAlgebras/GrindInstancesNamespaced.lean/declarations/commring-togrindcommring.md) | 25 | `declaration-track:22e7385aab3e11e897be1087d60600b2296382f9abb928c1ab9db21bca80dbb2` |
-| 2 | `theorem` | [CommRing.toGrindCommRing_ofNat](../../../../AssociativeRingsAndAlgebras/GrindInstancesNamespaced.lean/declarations/commring-togrindcommring-ofnat.md) | 56 | `result-track:790b4cd6cb3070e81714e29b1d0b1439c96ccad0599a9c47b5f1d3ce98c7e7ea` |
-| 3 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/GrindInstancesNamespaced.lean/declarations/example.md) | 67 | `declaration-track:51bc74da35bb879c2e85b046edce601d026cdf2562a1018d934dad05f74fc587` |
+| 1 | `instance` | [CommRing.toGrindCommRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GrindInstancesNamespaced.lean/declarations/commring-togrindcommring.md) | 25 | `declaration-track:22e7385aab3e11e897be1087d60600b2296382f9abb928c1ab9db21bca80dbb2` |
+| 2 | `theorem` | [CommRing.toGrindCommRing_ofNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GrindInstancesNamespaced.lean/declarations/commring-togrindcommring-ofnat.md) | 56 | `result-track:790b4cd6cb3070e81714e29b1d0b1439c96ccad0599a9c47b5f1d3ce98c7e7ea` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GrindInstancesNamespaced.lean/declarations/example.md) | 67 | `declaration-track:51bc74da35bb879c2e85b046edce601d026cdf2562a1018d934dad05f74fc587` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PNTPlusProfileNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PNTPlusProfileNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PNTPlusProfileNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PNTPlusProfileNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ExactParameter](../../../../../ComputerScience/AlgorithmsInComputerScience/PNTPlusProfileNamespaced.lean/declarations/exactparameter.md) | 15 | `declaration-track:821e5bb95a70c269e899a0bf7f107fddfc521799703a258c81697570bae23555` |
-| 2 | `structure` | [ParameterEdge](../../../../../ComputerScience/AlgorithmsInComputerScience/PNTPlusProfileNamespaced.lean/declarations/parameteredge.md) | 24 | `declaration-track:22ee33b7023fab8e8e01ed6de13296004187f2678305c1fb412dd64e51b373d1` |
-| 3 | `structure` | [PNTPlusProfile](../../../../../ComputerScience/AlgorithmsInComputerScience/PNTPlusProfileNamespaced.lean/declarations/pntplusprofile.md) | 30 | `declaration-track:ea14582353138953c3af1a6b340555b6839b2240fac97b67607513a7347a1e75` |
+| 1 | `structure` | [ExactParameter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PNTPlusProfileNamespaced.lean/declarations/exactparameter.md) | 15 | `declaration-track:821e5bb95a70c269e899a0bf7f107fddfc521799703a258c81697570bae23555` |
+| 2 | `structure` | [ParameterEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PNTPlusProfileNamespaced.lean/declarations/parameteredge.md) | 24 | `declaration-track:22ee33b7023fab8e8e01ed6de13296004187f2678305c1fb412dd64e51b373d1` |
+| 3 | `structure` | [PNTPlusProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PNTPlusProfileNamespaced.lean/declarations/pntplusprofile.md) | 30 | `declaration-track:ea14582353138953c3af1a6b340555b6839b2240fac97b67607513a7347a1e75` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

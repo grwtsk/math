@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AdjoinNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AdjoinNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [aevalEquivField](../../../../CommutativeAlgebra/AdjoinNamespaced.lean/declarations/aevalequivfield.md) | 44 | `declaration-track:4cb6da2496259a9e8e6fef89157f46873f6cb47176812af6e481bba314d95650` |
-| 2 | `theorem` | [aevalEquivField_apply_coe](../../../../CommutativeAlgebra/AdjoinNamespaced.lean/declarations/aevalequivfield-apply-coe.md) | 54 | `result-track:358eaedff333c95fd9963102ab9150bda5e78073a5d21e7e20d3653509d2b894` |
-| 3 | `theorem` | [aevalEquivField_algebraMap_apply_coe](../../../../CommutativeAlgebra/AdjoinNamespaced.lean/declarations/aevalequivfield-algebramap-apply-coe.md) | 58 | `result-track:d878266d6c5da1c3734dca347e6667f460f6a7f9a294716f6d196d190d912f53` |
-| 4 | `def` | [reprField](../../../../CommutativeAlgebra/AdjoinNamespaced.lean/declarations/reprfield.md) | 64 | `declaration-track:ab3c077f40a8dafb0e0edab901f013ea45983c244debe4d2feae666bdc34d4bb` |
-| 5 | `theorem` | [lift_reprField](../../../../CommutativeAlgebra/AdjoinNamespaced.lean/declarations/lift-reprfield.md) | 68 | `result-track:292e20004e418d4628cee56d1b387adf1a9a8aceffeabb1e62ebd340d489f2a9` |
-| 6 | `theorem` | [liftAlgHom_comp_reprField](../../../../CommutativeAlgebra/AdjoinNamespaced.lean/declarations/liftalghom-comp-reprfield.md) | 72 | `result-track:874d9533d5bd17c970e9de594e4c42c1e7ccd2bd888b9db13d5dfb666f3d06b5` |
+| 1 | `def` | [aevalEquivField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinNamespaced.lean/declarations/aevalequivfield.md) | 44 | `declaration-track:4cb6da2496259a9e8e6fef89157f46873f6cb47176812af6e481bba314d95650` |
+| 2 | `theorem` | [aevalEquivField_apply_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinNamespaced.lean/declarations/aevalequivfield-apply-coe.md) | 54 | `result-track:358eaedff333c95fd9963102ab9150bda5e78073a5d21e7e20d3653509d2b894` |
+| 3 | `theorem` | [aevalEquivField_algebraMap_apply_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinNamespaced.lean/declarations/aevalequivfield-algebramap-apply-coe.md) | 58 | `result-track:d878266d6c5da1c3734dca347e6667f460f6a7f9a294716f6d196d190d912f53` |
+| 4 | `def` | [reprField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinNamespaced.lean/declarations/reprfield.md) | 64 | `declaration-track:ab3c077f40a8dafb0e0edab901f013ea45983c244debe4d2feae666bdc34d4bb` |
+| 5 | `theorem` | [lift_reprField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinNamespaced.lean/declarations/lift-reprfield.md) | 68 | `result-track:292e20004e418d4628cee56d1b387adf1a9a8aceffeabb1e62ebd340d489f2a9` |
+| 6 | `theorem` | [liftAlgHom_comp_reprField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinNamespaced.lean/declarations/liftalghom-comp-reprfield.md) | 72 | `result-track:874d9533d5bd17c970e9de594e4c42c1e7ccd2bd888b9db13d5dfb666f3d06b5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

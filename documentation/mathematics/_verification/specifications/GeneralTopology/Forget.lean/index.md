@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Forget.lean/index.md) · [Full source](../../../../GeneralTopology/Forget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Forget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Forget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isSheaf_iff_isSheaf_comp'](../../../../GeneralTopology/Forget.lean/declarations/issheaf-iff-issheaf-comp-source-edition-2.md) | 46 | `result-track:d4d8fe17cb8ca3ef640311bf6f31b7ddb3086b968dd34169a9541fe5e8fb112b` |
-| 2 | `theorem` | [isSheaf_iff_isSheaf_comp](../../../../GeneralTopology/Forget.lean/declarations/issheaf-iff-issheaf-comp.md) | 51 | `result-track:8fb452891a3754741991b55ea582793607056be2a99f69946002572c5e782bd9` |
+| 1 | `theorem` | [isSheaf_iff_isSheaf_comp'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Forget.lean/declarations/issheaf-iff-issheaf-comp-source-edition-2.md) | 46 | `result-track:d4d8fe17cb8ca3ef640311bf6f31b7ddb3086b968dd34169a9541fe5e8fb112b` |
+| 2 | `theorem` | [isSheaf_iff_isSheaf_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Forget.lean/declarations/issheaf-iff-issheaf-comp.md) | 51 | `result-track:8fb452891a3754741991b55ea582793607056be2a99f69946002572c5e782bd9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

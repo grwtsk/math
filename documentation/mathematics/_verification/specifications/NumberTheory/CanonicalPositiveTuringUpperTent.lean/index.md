@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalPositiveTuringUpperTent.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalPositiveTuringUpperTent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringUpperTent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringUpperTent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.RationalRealPairUpperBound`](../../../../FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalPositiveTuringPairedTent`](../../../../NumberTheory/CanonicalPositiveTuringPairedTent.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentPrimeCriterion`](../../../../NumberTheory/CanonicalTentPrimeCriterion.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalRealPairUpperBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalPositiveTuringPairedTent`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringPairedTent.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentPrimeCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentPrimeCriterion.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [verified_upper_of_positive_pair_packet](../../../../NumberTheory/CanonicalPositiveTuringUpperTent.lean/declarations/verified-upper-of-positive-pair-packet.md) | 54 | `result-track:9b3db397e495fde6c0bc03ecbd5229891d9a5aef8ada5d31ad49e9c270dc0f85` |
-| 2 | `theorem` | [verified_limit_of_positive_pair_packet](../../../../NumberTheory/CanonicalPositiveTuringUpperTent.lean/declarations/verified-limit-of-positive-pair-packet.md) | 82 | `result-track:43a6fa2834a2b48436dbf6d01baecf216aa0baead67d44bbc641ac1eac83efca` |
-| 3 | `theorem` | [accepted_claimed_lt_unrounded_add_grid](../../../../NumberTheory/CanonicalPositiveTuringUpperTent.lean/declarations/accepted-claimed-lt-unrounded-add-grid.md) | 99 | `result-track:b7ffca8a4f6f3a8225263c4ebc3e51508f29f524a8b34b0dd45014dfe700b23d` |
-| 4 | `theorem` | [prime_in_square_of_positive_pair_claimed_upper_packet](../../../../NumberTheory/CanonicalPositiveTuringUpperTent.lean/declarations/prime-in-square-of-positive-pair-claimed-upper-packet.md) | 116 | `result-track:cae4cfe36fe6f40092ff7d9c65835e272897c94dc14bd1d2f223eceab9a67da1` |
-| 5 | `theorem` | [prime_in_square_of_positive_pair_upper_limit_packet](../../../../NumberTheory/CanonicalPositiveTuringUpperTent.lean/declarations/prime-in-square-of-positive-pair-upper-limit-packet.md) | 141 | `result-track:c44054530f5e528570ec5390177698ed4180382bcac1745c56eb9f9cd20b6bdc` |
-| 6 | `theorem` | [upper_limit_equality_not_strict_fixture](../../../../NumberTheory/CanonicalPositiveTuringUpperTent.lean/declarations/upper-limit-equality-not-strict-fixture.md) | 164 | `result-track:63286d2eac56c6d20c58477d5bf2852cf515dacf94e1c69d017b0b7f4ec9b336` |
+| 1 | `theorem` | [verified_upper_of_positive_pair_packet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringUpperTent.lean/declarations/verified-upper-of-positive-pair-packet.md) | 54 | `result-track:9b3db397e495fde6c0bc03ecbd5229891d9a5aef8ada5d31ad49e9c270dc0f85` |
+| 2 | `theorem` | [verified_limit_of_positive_pair_packet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringUpperTent.lean/declarations/verified-limit-of-positive-pair-packet.md) | 82 | `result-track:43a6fa2834a2b48436dbf6d01baecf216aa0baead67d44bbc641ac1eac83efca` |
+| 3 | `theorem` | [accepted_claimed_lt_unrounded_add_grid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringUpperTent.lean/declarations/accepted-claimed-lt-unrounded-add-grid.md) | 99 | `result-track:b7ffca8a4f6f3a8225263c4ebc3e51508f29f524a8b34b0dd45014dfe700b23d` |
+| 4 | `theorem` | [prime_in_square_of_positive_pair_claimed_upper_packet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringUpperTent.lean/declarations/prime-in-square-of-positive-pair-claimed-upper-packet.md) | 116 | `result-track:cae4cfe36fe6f40092ff7d9c65835e272897c94dc14bd1d2f223eceab9a67da1` |
+| 5 | `theorem` | [prime_in_square_of_positive_pair_upper_limit_packet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringUpperTent.lean/declarations/prime-in-square-of-positive-pair-upper-limit-packet.md) | 141 | `result-track:c44054530f5e528570ec5390177698ed4180382bcac1745c56eb9f9cd20b6bdc` |
+| 6 | `theorem` | [upper_limit_equality_not_strict_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringUpperTent.lean/declarations/upper-limit-equality-not-strict-fixture.md) | 164 | `result-track:63286d2eac56c6d20c58477d5bf2852cf515dacf94e1c69d017b0b7f4ec9b336` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

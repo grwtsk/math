@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuccessorCorrespondenceNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuccessorCorrespondenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuccessorCorrespondenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuccessorCorrespondenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SuccessorArithmeticCorrespondence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuccessorCorrespondenceNamespaced.lean/declarations/successorarithmeticcorrespondence.md) | 17 | `declaration-track:9d772589c4ef05846f3b675dea8b80ff3d51a2a6b2d77787db4b68f219b7fa1c` |
+| 1 | `structure` | [SuccessorArithmeticCorrespondence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuccessorCorrespondenceNamespaced.lean/declarations/successorarithmeticcorrespondence.md) | 17 | `declaration-track:9d772589c4ef05846f3b675dea8b80ff3d51a2a6b2d77787db4b68f219b7fa1c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

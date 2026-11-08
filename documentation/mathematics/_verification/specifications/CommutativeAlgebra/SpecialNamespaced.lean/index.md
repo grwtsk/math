@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SpecialNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SpecialNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SpecialNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SpecialNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [erfCoeff_lo](../../../../CommutativeAlgebra/SpecialNamespaced.lean/declarations/erfcoeff-lo.md) | 47 | `declaration-track:5be086fbebb24daa66174c9c32681a7d892ba9ed9553f41729dc6061b8f01767` |
-| 2 | `def` | [erfCoeff_hi](../../../../CommutativeAlgebra/SpecialNamespaced.lean/declarations/erfcoeff-hi.md) | 50 | `declaration-track:a82bcde9df5ede3599c30d7a78abd280e4dc0c91fb0dec992cc5743bfa79cca4` |
-| 3 | `def` | [erfTaylorCoeffs](../../../../CommutativeAlgebra/SpecialNamespaced.lean/declarations/erftaylorcoeffs.md) | 54 | `declaration-track:54eb8c0400201375fa0348046a26c5d4033e7ac35429f9b7041192e75d46c454` |
-| 4 | `def` | [erfTaylorPoly](../../../../CommutativeAlgebra/SpecialNamespaced.lean/declarations/erftaylorpoly.md) | 64 | `declaration-track:e60c63a49414137406460c3fc71c3f6833b82d33259a65f9a7c18b6bee7702c3` |
-| 5 | `def` | [erfRemainderBound](../../../../CommutativeAlgebra/SpecialNamespaced.lean/declarations/erfremainderbound.md) | 69 | `declaration-track:259d962a4bcde25d7881621568af4d433915d1b4f0a9a8f4f67b09cbcf104bf6` |
-| 6 | `theorem` | [erfRemainderBound_nonneg](../../../../CommutativeAlgebra/SpecialNamespaced.lean/declarations/erfremainderbound-nonneg.md) | 78 | `result-track:d426757302ba92bbfd85bab86d1387ebdc4ec92cc72342be877c411cee8e70f7` |
-| 7 | `def` | [tmErf](../../../../CommutativeAlgebra/SpecialNamespaced.lean/declarations/tmerf.md) | 93 | `declaration-track:ce55ba8dae39a2114e45ba2d1fe7e35e357799b534eec404ed3424fd76c10abd` |
+| 1 | `def` | [erfCoeff_lo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SpecialNamespaced.lean/declarations/erfcoeff-lo.md) | 47 | `declaration-track:5be086fbebb24daa66174c9c32681a7d892ba9ed9553f41729dc6061b8f01767` |
+| 2 | `def` | [erfCoeff_hi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SpecialNamespaced.lean/declarations/erfcoeff-hi.md) | 50 | `declaration-track:a82bcde9df5ede3599c30d7a78abd280e4dc0c91fb0dec992cc5743bfa79cca4` |
+| 3 | `def` | [erfTaylorCoeffs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SpecialNamespaced.lean/declarations/erftaylorcoeffs.md) | 54 | `declaration-track:54eb8c0400201375fa0348046a26c5d4033e7ac35429f9b7041192e75d46c454` |
+| 4 | `def` | [erfTaylorPoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SpecialNamespaced.lean/declarations/erftaylorpoly.md) | 64 | `declaration-track:e60c63a49414137406460c3fc71c3f6833b82d33259a65f9a7c18b6bee7702c3` |
+| 5 | `def` | [erfRemainderBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SpecialNamespaced.lean/declarations/erfremainderbound.md) | 69 | `declaration-track:259d962a4bcde25d7881621568af4d433915d1b4f0a9a8f4f67b09cbcf104bf6` |
+| 6 | `theorem` | [erfRemainderBound_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SpecialNamespaced.lean/declarations/erfremainderbound-nonneg.md) | 78 | `result-track:d426757302ba92bbfd85bab86d1387ebdc4ec92cc72342be877c411cee8e70f7` |
+| 7 | `def` | [tmErf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SpecialNamespaced.lean/declarations/tmerf.md) | 93 | `declaration-track:ce55ba8dae39a2114e45ba2d1fe7e35e357799b534eec404ed3424fd76c10abd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

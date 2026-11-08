@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/ClassNumberNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/ClassNumberNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/ClassNumberNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/ClassNumberNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/ClassNumberNamespaced.lean/declarations/instance.md) | 39 | `declaration-track:206a59b1f9911771487d34ebb14eb993b287bda2985daf35865a1f4b36a3eba6` |
-| 2 | `def` | [classNumber](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/ClassNumberNamespaced.lean/declarations/classnumber.md) | 45 | `declaration-track:3c083d0b55bced37c6fd4965ded7eb4a51bfd031220d36c0b48fe4cc4b907b77` |
-| 3 | `theorem` | [classNumber_eq_one_iff](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/ClassNumberNamespaced.lean/declarations/classnumber-eq-one-iff.md) | 52 | `result-track:ff6c669fb93a876ea0f13731f779019c2f7600021cac9bcfc13899557e789197` |
-| 4 | `theorem` | [classNumber_eq](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/ClassNumberNamespaced.lean/declarations/classnumber-eq.md) | 62 | `result-track:2b18acbc6e68d3b8fa865ceadcdf5c4ea4549a4baed591ea2d3a48153f1ec877` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/ClassNumberNamespaced.lean/declarations/instance.md) | 39 | `declaration-track:206a59b1f9911771487d34ebb14eb993b287bda2985daf35865a1f4b36a3eba6` |
+| 2 | `def` | [classNumber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/ClassNumberNamespaced.lean/declarations/classnumber.md) | 45 | `declaration-track:3c083d0b55bced37c6fd4965ded7eb4a51bfd031220d36c0b48fe4cc4b907b77` |
+| 3 | `theorem` | [classNumber_eq_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/ClassNumberNamespaced.lean/declarations/classnumber-eq-one-iff.md) | 52 | `result-track:ff6c669fb93a876ea0f13731f779019c2f7600021cac9bcfc13899557e789197` |
+| 4 | `theorem` | [classNumber_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/ClassNumberNamespaced.lean/declarations/classnumber-eq.md) | 62 | `result-track:2b18acbc6e68d3b8fa865ceadcdf5c4ea4549a4baed591ea2d3a48153f1ec877` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlotMapNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlotMapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlotMapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlotMapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SlotEmbedding](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlotMapNamespaced.lean/declarations/slotembedding.md) | 15 | `declaration-track:ee34b9e2ed5c46635fb91cdaf14efec3daf07b54399aacba1472625223a2ef63` |
-| 2 | `theorem` | [encode_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlotMapNamespaced.lean/declarations/encode-injective.md) | 23 | `result-track:f27c6e72e1d7b9ca5aa8f9b682c12dbc31c312dae6c862684297216f71653350` |
-| 3 | `def` | [pad](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlotMapNamespaced.lean/declarations/pad.md) | 30 | `declaration-track:d6cde9419fc43a30bd0059131d87186013f3564bf5eaceb0d12530bdb0533cb8` |
-| 4 | `theorem` | [pad_on_image](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlotMapNamespaced.lean/declarations/pad-on-image.md) | 38 | `result-track:2441f9c6a0af3c4187d31e89a7a87aed169728ede7f11c9db6e7e6da6b09bd3f` |
-| 5 | `theorem` | [pad_zero_of_row_unmapped](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlotMapNamespaced.lean/declarations/pad-zero-of-row-unmapped.md) | 45 | `result-track:898e7a7447387134b4e667c824475a6d5ccdf447f8234f51f21997abef478723` |
-| 6 | `theorem` | [pad_zero_of_column_unmapped](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlotMapNamespaced.lean/declarations/pad-zero-of-column-unmapped.md) | 53 | `result-track:de72f4d200ee0d2f478c5885275a8f0ba415b60db5681ea5412234b926879731` |
+| 1 | `structure` | [SlotEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlotMapNamespaced.lean/declarations/slotembedding.md) | 15 | `declaration-track:ee34b9e2ed5c46635fb91cdaf14efec3daf07b54399aacba1472625223a2ef63` |
+| 2 | `theorem` | [encode_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlotMapNamespaced.lean/declarations/encode-injective.md) | 23 | `result-track:f27c6e72e1d7b9ca5aa8f9b682c12dbc31c312dae6c862684297216f71653350` |
+| 3 | `def` | [pad](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlotMapNamespaced.lean/declarations/pad.md) | 30 | `declaration-track:d6cde9419fc43a30bd0059131d87186013f3564bf5eaceb0d12530bdb0533cb8` |
+| 4 | `theorem` | [pad_on_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlotMapNamespaced.lean/declarations/pad-on-image.md) | 38 | `result-track:2441f9c6a0af3c4187d31e89a7a87aed169728ede7f11c9db6e7e6da6b09bd3f` |
+| 5 | `theorem` | [pad_zero_of_row_unmapped](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlotMapNamespaced.lean/declarations/pad-zero-of-row-unmapped.md) | 45 | `result-track:898e7a7447387134b4e667c824475a6d5ccdf447f8234f51f21997abef478723` |
+| 6 | `theorem` | [pad_zero_of_column_unmapped](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlotMapNamespaced.lean/declarations/pad-zero-of-column-unmapped.md) | 53 | `result-track:de72f4d200ee0d2f478c5885275a8f0ba415b60db5681ea5412234b926879731` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

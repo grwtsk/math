@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Complete.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Complete.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Complete.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Complete.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [le_coeff_eq_iff_le_sub_coeff_eq_zero](../../../../CommutativeAlgebra/Complete.lean/declarations/le-coeff-eq-iff-le-sub-coeff-eq-zero.md) | 33 | `result-track:342a8992906463ff78b0a6555b851d43a37fc1835b3315518c179ae473710ffb` |
-| 2 | `theorem` | [eq_zero_of_p_mul_eq_zero](../../../../CommutativeAlgebra/Complete.lean/declarations/eq-zero-of-p-mul-eq-zero.md) | 53 | `result-track:a7e3f9a086d100dd35f07071341b418bf1bfc61d6966f59625f72b01511edfa0` |
-| 3 | `theorem` | [mem_span_p_iff_coeff_zero_eq_zero](../../../../CommutativeAlgebra/Complete.lean/declarations/mem-span-p-iff-coeff-zero-eq-zero.md) | 61 | `result-track:a6790e5960bfd6ec4ac56aab8b1dfe447e4057bea898738131220ed82e00a9d3` |
-| 4 | `theorem` | [mem_span_p_pow_iff_le_coeff_eq_zero](../../../../CommutativeAlgebra/Complete.lean/declarations/mem-span-p-pow-iff-le-coeff-eq-zero.md) | 78 | `result-track:dc8d27c161bf651348eae3a6379167737909e51f77acf2f5b4267807546de740` |
-| 5 | `instance` | [isAdicCompleteIdealSpanP](../../../../CommutativeAlgebra/Complete.lean/declarations/isadiccompleteidealspanp.md) | 100 | `declaration-track:da50c97d03a710bac97454d041eb8814dbfef4d5e0b68fa7452750bdfd5f4eac` |
+| 1 | `theorem` | [le_coeff_eq_iff_le_sub_coeff_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Complete.lean/declarations/le-coeff-eq-iff-le-sub-coeff-eq-zero.md) | 33 | `result-track:342a8992906463ff78b0a6555b851d43a37fc1835b3315518c179ae473710ffb` |
+| 2 | `theorem` | [eq_zero_of_p_mul_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Complete.lean/declarations/eq-zero-of-p-mul-eq-zero.md) | 53 | `result-track:a7e3f9a086d100dd35f07071341b418bf1bfc61d6966f59625f72b01511edfa0` |
+| 3 | `theorem` | [mem_span_p_iff_coeff_zero_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Complete.lean/declarations/mem-span-p-iff-coeff-zero-eq-zero.md) | 61 | `result-track:a6790e5960bfd6ec4ac56aab8b1dfe447e4057bea898738131220ed82e00a9d3` |
+| 4 | `theorem` | [mem_span_p_pow_iff_le_coeff_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Complete.lean/declarations/mem-span-p-pow-iff-le-coeff-eq-zero.md) | 78 | `result-track:dc8d27c161bf651348eae3a6379167737909e51f77acf2f5b4267807546de740` |
+| 5 | `instance` | [isAdicCompleteIdealSpanP](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Complete.lean/declarations/isadiccompleteidealspanp.md) | 100 | `declaration-track:da50c97d03a710bac97454d041eb8814dbfef4d5e0b68fa7452750bdfd5f4eac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

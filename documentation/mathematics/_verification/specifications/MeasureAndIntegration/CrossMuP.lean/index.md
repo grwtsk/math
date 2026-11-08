@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CrossMuP.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CrossMuP.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuP.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuP.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Mform_mu_PX_eq](../../../../MeasureAndIntegration/CrossMuP.lean/declarations/mform-mu-px-eq.md) | 48 | `result-track:9973ce92c0a7bf09d8edb41a0b2cb2762bae10454acb72c7748d2ba9453fdab1` |
-| 2 | `theorem` | [prop_cross_muP](../../../../MeasureAndIntegration/CrossMuP.lean/declarations/prop-cross-mup.md) | 69 | `result-track:9b8d39cb440aed1a89f85e13f5c6350c0a799cbeb483962d6b4e5c52c7db9530` |
+| 1 | `lemma` | [Mform_mu_PX_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuP.lean/declarations/mform-mu-px-eq.md) | 48 | `result-track:9973ce92c0a7bf09d8edb41a0b2cb2762bae10454acb72c7748d2ba9453fdab1` |
+| 2 | `theorem` | [prop_cross_muP](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuP.lean/declarations/prop-cross-mup.md) | 69 | `result-track:9b8d39cb440aed1a89f85e13f5c6350c0a799cbeb483962d6b4e5c52c7db9530` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

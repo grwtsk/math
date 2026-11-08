@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitKernelNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitKernelNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitKernelNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitKernelNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [LimitKernelSource](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitKernelNamespaced.lean/declarations/limitkernelsource.md) | 17 | `declaration-track:f4de88e60ba12c13004001a7d4c7defe70b3580099f355557abcab014a497b2b` |
-| 2 | `structure` | [ContractiveProjectiveLimitKernel](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitKernelNamespaced.lean/declarations/contractiveprojectivelimitkernel.md) | 22 | `declaration-track:5d80c4eb340e22ff0eb885568a6c82e31d1658b0d72af18b5c0baf5d33a26890` |
-| 3 | `theorem` | [projective_limit_kernel_contractive](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitKernelNamespaced.lean/declarations/projective-limit-kernel-contractive.md) | 41 | `result-track:8f0c60b63254e88c4fba020ec150449be482c63ac3161ff7a698f74e11a0cac2` |
+| 1 | `inductive` | [LimitKernelSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitKernelNamespaced.lean/declarations/limitkernelsource.md) | 17 | `declaration-track:f4de88e60ba12c13004001a7d4c7defe70b3580099f355557abcab014a497b2b` |
+| 2 | `structure` | [ContractiveProjectiveLimitKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitKernelNamespaced.lean/declarations/contractiveprojectivelimitkernel.md) | 22 | `declaration-track:5d80c4eb340e22ff0eb885568a6c82e31d1658b0d72af18b5c0baf5d33a26890` |
+| 3 | `theorem` | [projective_limit_kernel_contractive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitKernelNamespaced.lean/declarations/projective-limit-kernel-contractive.md) | 41 | `result-track:8f0c60b63254e88c4fba020ec150449be482c63ac3161ff7a698f74e11a0cac2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

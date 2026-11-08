@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/GenericRvMNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/GenericRvMNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GenericRvMNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GenericRvMNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [horizontal_fold_of](../../../../MeasureAndIntegration/GenericRvMNamespaced.lean/declarations/horizontal-fold-of.md) | 53 | `result-track:147d25be16235b5d9b45962982fe137d24f96ec9504980a6ac18340e534b7283` |
-| 2 | `lemma` | [vertical_fold_of](../../../../MeasureAndIntegration/GenericRvMNamespaced.lean/declarations/vertical-fold-of.md) | 75 | `result-track:a02e9bf0ae7a327b85e9872fbc12dd33219315b149961b6d12587334e2820085` |
-| 3 | `theorem` | [rectangleIntegral_eq_halfContour_of_fold](../../../../MeasureAndIntegration/GenericRvMNamespaced.lean/declarations/rectangleintegral-eq-halfcontour-of-fold.md) | 85 | `result-track:2275a0ae21e4dc79ca21613fa2a04ff8021132b8757077e8e8f19bef1c15cdae` |
-| 4 | `theorem` | [natCast_eq_im_halfContour](../../../../MeasureAndIntegration/GenericRvMNamespaced.lean/declarations/natcast-eq-im-halfcontour.md) | 109 | `result-track:3049e82acb083f69dbe893156079dc1f8052c5a3ecd060dd499511529bda90a5` |
-| 5 | `theorem` | [rvM_main_of](../../../../MeasureAndIntegration/GenericRvMNamespaced.lean/declarations/rvm-main-of.md) | 126 | `result-track:bacb88371c0857db18a9463b7aabb1c3355860d947a76fd0ade500c159fad8ee` |
+| 1 | `lemma` | [horizontal_fold_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GenericRvMNamespaced.lean/declarations/horizontal-fold-of.md) | 53 | `result-track:147d25be16235b5d9b45962982fe137d24f96ec9504980a6ac18340e534b7283` |
+| 2 | `lemma` | [vertical_fold_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GenericRvMNamespaced.lean/declarations/vertical-fold-of.md) | 75 | `result-track:a02e9bf0ae7a327b85e9872fbc12dd33219315b149961b6d12587334e2820085` |
+| 3 | `theorem` | [rectangleIntegral_eq_halfContour_of_fold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GenericRvMNamespaced.lean/declarations/rectangleintegral-eq-halfcontour-of-fold.md) | 85 | `result-track:2275a0ae21e4dc79ca21613fa2a04ff8021132b8757077e8e8f19bef1c15cdae` |
+| 4 | `theorem` | [natCast_eq_im_halfContour](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GenericRvMNamespaced.lean/declarations/natcast-eq-im-halfcontour.md) | 109 | `result-track:3049e82acb083f69dbe893156079dc1f8052c5a3ecd060dd499511529bda90a5` |
+| 5 | `theorem` | [rvM_main_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GenericRvMNamespaced.lean/declarations/rvm-main-of.md) | 126 | `result-track:bacb88371c0857db18a9463b7aabb1c3355860d947a76fd0ade500c159fad8ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

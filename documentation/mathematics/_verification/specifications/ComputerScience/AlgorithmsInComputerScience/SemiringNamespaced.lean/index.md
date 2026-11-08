@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SemiringNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SemiringNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemiringNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemiringNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MemorySemiring](../../../../../ComputerScience/AlgorithmsInComputerScience/SemiringNamespaced.lean/declarations/memorysemiring.md) | 15 | `declaration-track:f5596d778762508554e064d0ba09c5e940b7b9f965c3a16e4843b4e772f1d81a` |
-| 2 | `def` | [memorySemiring](../../../../../ComputerScience/AlgorithmsInComputerScience/SemiringNamespaced.lean/declarations/memorysemiring-source-edition-2.md) | 22 | `declaration-track:ff6133e8d62cce1004a7f53394f3022da5efcddf5adb26c4a693bf73f58a4319` |
-| 3 | `structure` | [MemorySemiringLaws](../../../../../ComputerScience/AlgorithmsInComputerScience/SemiringNamespaced.lean/declarations/memorysemiringlaws.md) | 32 | `declaration-track:012a5d674066e26903ca0098ba6a50c492fc47b0a6d2e6e5f932586f1be36719` |
-| 4 | `theorem` | [memorySemiring_laws](../../../../../ComputerScience/AlgorithmsInComputerScience/SemiringNamespaced.lean/declarations/memorysemiring-laws.md) | 45 | `result-track:10eb14d9486736efed4972efab269995f454054bbdeb90ec627aba4084b9d1ca` |
-| 5 | `theorem` | [memorySemiring_marks_default](../../../../../ComputerScience/AlgorithmsInComputerScience/SemiringNamespaced.lean/declarations/memorysemiring-marks-default.md) | 53 | `result-track:2342cc98d49fa873306f6ec9c46f03a2bf7327904557202479cc948742db83ff` |
-| 6 | `theorem` | [memorySemiring_one_marks_noop](../../../../../ComputerScience/AlgorithmsInComputerScience/SemiringNamespaced.lean/declarations/memorysemiring-one-marks-noop.md) | 57 | `result-track:b1287d2688d93941d87951d3deab091c4277478a966e18a2b8abd066a8ba3ea2` |
+| 1 | `structure` | [MemorySemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemiringNamespaced.lean/declarations/memorysemiring.md) | 15 | `declaration-track:f5596d778762508554e064d0ba09c5e940b7b9f965c3a16e4843b4e772f1d81a` |
+| 2 | `def` | [memorySemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemiringNamespaced.lean/declarations/memorysemiring-source-edition-2.md) | 22 | `declaration-track:ff6133e8d62cce1004a7f53394f3022da5efcddf5adb26c4a693bf73f58a4319` |
+| 3 | `structure` | [MemorySemiringLaws](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemiringNamespaced.lean/declarations/memorysemiringlaws.md) | 32 | `declaration-track:012a5d674066e26903ca0098ba6a50c492fc47b0a6d2e6e5f932586f1be36719` |
+| 4 | `theorem` | [memorySemiring_laws](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemiringNamespaced.lean/declarations/memorysemiring-laws.md) | 45 | `result-track:10eb14d9486736efed4972efab269995f454054bbdeb90ec627aba4084b9d1ca` |
+| 5 | `theorem` | [memorySemiring_marks_default](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemiringNamespaced.lean/declarations/memorysemiring-marks-default.md) | 53 | `result-track:2342cc98d49fa873306f6ec9c46f03a2bf7327904557202479cc948742db83ff` |
+| 6 | `theorem` | [memorySemiring_one_marks_noop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemiringNamespaced.lean/declarations/memorysemiring-one-marks-noop.md) | 57 | `result-track:b1287d2688d93941d87951d3deab091c4277478a966e18a2b8abd066a8ba3ea2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

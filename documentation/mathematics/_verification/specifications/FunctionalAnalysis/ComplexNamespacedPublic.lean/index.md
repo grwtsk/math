@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ComplexNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ComplexNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ComplexNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ComplexNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [MeromorphicNFOn.Gamma](../../../../FunctionalAnalysis/ComplexNamespacedPublic.lean/declarations/meromorphicnfon-gamma.md) | 27 | `result-track:31014d49b0fa398b2d212da219f16d673c14d0353e949c265c1b1cea3ca26895` |
-| 2 | `lemma` | [Meromorphic.Gamma](../../../../FunctionalAnalysis/ComplexNamespacedPublic.lean/declarations/meromorphic-gamma.md) | 34 | `result-track:32db2645046f164e5b69e205a8ac1c414fb4e19fb043f891597785c84df4e833` |
-| 3 | `lemma` | [MeromorphicOn.Gamma](../../../../FunctionalAnalysis/ComplexNamespacedPublic.lean/declarations/meromorphicon-gamma.md) | 38 | `result-track:8c1ec70ecdb892405a6738ae5d33ddf7ffc8f301908e83db2fa155782bd8236f` |
+| 1 | `lemma` | [MeromorphicNFOn.Gamma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ComplexNamespacedPublic.lean/declarations/meromorphicnfon-gamma.md) | 27 | `result-track:31014d49b0fa398b2d212da219f16d673c14d0353e949c265c1b1cea3ca26895` |
+| 2 | `lemma` | [Meromorphic.Gamma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ComplexNamespacedPublic.lean/declarations/meromorphic-gamma.md) | 34 | `result-track:32db2645046f164e5b69e205a8ac1c414fb4e19fb043f891597785c84df4e833` |
+| 3 | `lemma` | [MeromorphicOn.Gamma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ComplexNamespacedPublic.lean/declarations/meromorphicon-gamma.md) | 38 | `result-track:8c1ec70ecdb892405a6738ae5d33ddf7ffc8f301908e83db2fa155782bd8236f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

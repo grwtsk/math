@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectralMeasureNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralMeasureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralMeasureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralMeasureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Hilbert.SpectralMeasure](../../../../FunctionalAnalysis/SpectralMeasureNamespaced.lean/declarations/hilbert-spectralmeasure.md) | 32 | `declaration-track:8a7148f0f2b262027cae68e58ea37372e8f4aad1b540b73c34b000505357ee9a` |
-| 2 | `structure` | [Hilbert.SpectralTheoremCertificate](../../../../FunctionalAnalysis/SpectralMeasureNamespaced.lean/declarations/hilbert-spectraltheoremcertificate.md) | 40 | `declaration-track:94e26027fbe8238a205ef1630c285285c6072276bae6e6f3e7918b0f6c1b6d14` |
-| 3 | `theorem` | [Hilbert.spectralTheorem_certificate_applies](../../../../FunctionalAnalysis/SpectralMeasureNamespaced.lean/declarations/hilbert-spectraltheorem-certificate-applies.md) | 49 | `result-track:3d4b4daa4ddee66340a506ffe1287f76dc51a9cc91861446b972afafdff66777` |
+| 1 | `structure` | [Hilbert.SpectralMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralMeasureNamespaced.lean/declarations/hilbert-spectralmeasure.md) | 32 | `declaration-track:8a7148f0f2b262027cae68e58ea37372e8f4aad1b540b73c34b000505357ee9a` |
+| 2 | `structure` | [Hilbert.SpectralTheoremCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralMeasureNamespaced.lean/declarations/hilbert-spectraltheoremcertificate.md) | 40 | `declaration-track:94e26027fbe8238a205ef1630c285285c6072276bae6e6f3e7918b0f6c1b6d14` |
+| 3 | `theorem` | [Hilbert.spectralTheorem_certificate_applies](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralMeasureNamespaced.lean/declarations/hilbert-spectraltheorem-certificate-applies.md) | 49 | `result-track:3d4b4daa4ddee66340a506ffe1287f76dc51a9cc91861446b972afafdff66777` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

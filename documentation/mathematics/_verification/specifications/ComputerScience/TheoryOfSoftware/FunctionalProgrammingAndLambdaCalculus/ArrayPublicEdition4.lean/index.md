@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ArrayPublicEdition4.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ArrayPublicEdition4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ArrayPublicEdition4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ArrayPublicEdition4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Array.iterFromIdx](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ArrayPublicEdition4.lean/declarations/array-iterfromidx.md) | 33 | `declaration-track:a3a8915d84dbcc079b0935d543a18f51d543d98da76cec4e9b6b2d16ad19e517` |
-| 2 | `def` | [Array.iter](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ArrayPublicEdition4.lean/declarations/array-iter.md) | 49 | `declaration-track:f340ba60fb909a0652785502e3852efab3bc33b475d0fb75a7d4268fd4ae31ed` |
+| 1 | `def` | [Array.iterFromIdx](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ArrayPublicEdition4.lean/declarations/array-iterfromidx.md) | 33 | `declaration-track:a3a8915d84dbcc079b0935d543a18f51d543d98da76cec4e9b6b2d16ad19e517` |
+| 2 | `def` | [Array.iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ArrayPublicEdition4.lean/declarations/array-iter.md) | 49 | `declaration-track:f340ba60fb909a0652785502e3852efab3bc33b475d0fb75a7d4268fd4ae31ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

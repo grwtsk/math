@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/DigammaPublic.lean/index.md) · [Full source](../../../../SpecialFunctions/DigammaPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/DigammaPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/DigammaPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [digamma](../../../../SpecialFunctions/DigammaPublic.lean/declarations/digamma.md) | 48 | `declaration-track:f689bee3971cdd725c92140f9573b9d01f39e507990df138342c1d8cc44d50dd` |
-| 2 | `theorem` | [digamma_def](../../../../SpecialFunctions/DigammaPublic.lean/declarations/digamma-def.md) | 50 | `result-track:c48adfe44a66b7b0df3d51442f20862ead4f2216015d115f74cee6069c93cc04` |
-| 3 | `theorem` | [digamma_zero](../../../../SpecialFunctions/DigammaPublic.lean/declarations/digamma-zero.md) | 53 | `result-track:63640eb72ab5d058b4dba92017fc0aa75913841abebffede70664a778923e807` |
-| 4 | `theorem` | [digamma_one](../../../../SpecialFunctions/DigammaPublic.lean/declarations/digamma-one.md) | 56 | `result-track:921c895408cb81a1c99cbd01e401c6f06664f81d6704b5e5559a5abb8385082d` |
-| 5 | `theorem` | [digamma_one_half](../../../../SpecialFunctions/DigammaPublic.lean/declarations/digamma-one-half.md) | 59 | `result-track:dd47a116836825b5839fb01572d15dbe2315c102e2328aa8891db2886422304e` |
-| 6 | `theorem` | [digamma_apply_add_one](../../../../SpecialFunctions/DigammaPublic.lean/declarations/digamma-apply-add-one.md) | 64 | `result-track:0d14604b4f583fd61942ed58f666c803d286ec3d7a55d7fbafe932743eda158d` |
-| 7 | `theorem` | [digamma_apply_add_nat](../../../../SpecialFunctions/DigammaPublic.lean/declarations/digamma-apply-add-nat.md) | 72 | `result-track:e9c4c328a00ebf6237f033a0705eb3d7c9534f2eaaad0e2f060466cd0f6d525d` |
-| 8 | `theorem` | [digamma_nat_add_one](../../../../SpecialFunctions/DigammaPublic.lean/declarations/digamma-nat-add-one.md) | 85 | `result-track:a1fbe8a7e04f54469639c36a6e34757348d42d881657092bbbc45da4af7950e4` |
-| 9 | `theorem` | [digamma_one_sub](../../../../SpecialFunctions/DigammaPublic.lean/declarations/digamma-one-sub.md) | 94 | `result-track:1364401968bde9f64391cd97a10745b9df4ef2503cf7769a48f4b24bbffe9f33` |
-| 10 | `theorem` | [meromorphic_digamma](../../../../SpecialFunctions/DigammaPublic.lean/declarations/meromorphic-digamma.md) | 108 | `result-track:b1b7ff02e9b55e149cbe79170a3de37c3afc22be10d4361e9e67c5c584e5b78b` |
-| 11 | `theorem` | [_root_.HasDerivAt.logDeriv_Gamma](../../../../SpecialFunctions/DigammaPublic.lean/declarations/root-hasderivat-logderiv-gamma.md) | 113 | `result-track:6997195a0fb6211d5c023d5e99d3757ab2e1b4a22fd2e203915fd169dd5c2479` |
-| 12 | `theorem` | [digamma_two_mul](../../../../SpecialFunctions/DigammaPublic.lean/declarations/digamma-two-mul.md) | 124 | `result-track:8a98a790c67a218300a1dd58eb2d55f9cab0c1ac3813ce7aa2547499941c0d69` |
+| 1 | `def` | [digamma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/DigammaPublic.lean/declarations/digamma.md) | 48 | `declaration-track:f689bee3971cdd725c92140f9573b9d01f39e507990df138342c1d8cc44d50dd` |
+| 2 | `theorem` | [digamma_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/DigammaPublic.lean/declarations/digamma-def.md) | 50 | `result-track:c48adfe44a66b7b0df3d51442f20862ead4f2216015d115f74cee6069c93cc04` |
+| 3 | `theorem` | [digamma_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/DigammaPublic.lean/declarations/digamma-zero.md) | 53 | `result-track:63640eb72ab5d058b4dba92017fc0aa75913841abebffede70664a778923e807` |
+| 4 | `theorem` | [digamma_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/DigammaPublic.lean/declarations/digamma-one.md) | 56 | `result-track:921c895408cb81a1c99cbd01e401c6f06664f81d6704b5e5559a5abb8385082d` |
+| 5 | `theorem` | [digamma_one_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/DigammaPublic.lean/declarations/digamma-one-half.md) | 59 | `result-track:dd47a116836825b5839fb01572d15dbe2315c102e2328aa8891db2886422304e` |
+| 6 | `theorem` | [digamma_apply_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/DigammaPublic.lean/declarations/digamma-apply-add-one.md) | 64 | `result-track:0d14604b4f583fd61942ed58f666c803d286ec3d7a55d7fbafe932743eda158d` |
+| 7 | `theorem` | [digamma_apply_add_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/DigammaPublic.lean/declarations/digamma-apply-add-nat.md) | 72 | `result-track:e9c4c328a00ebf6237f033a0705eb3d7c9534f2eaaad0e2f060466cd0f6d525d` |
+| 8 | `theorem` | [digamma_nat_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/DigammaPublic.lean/declarations/digamma-nat-add-one.md) | 85 | `result-track:a1fbe8a7e04f54469639c36a6e34757348d42d881657092bbbc45da4af7950e4` |
+| 9 | `theorem` | [digamma_one_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/DigammaPublic.lean/declarations/digamma-one-sub.md) | 94 | `result-track:1364401968bde9f64391cd97a10745b9df4ef2503cf7769a48f4b24bbffe9f33` |
+| 10 | `theorem` | [meromorphic_digamma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/DigammaPublic.lean/declarations/meromorphic-digamma.md) | 108 | `result-track:b1b7ff02e9b55e149cbe79170a3de37c3afc22be10d4361e9e67c5c584e5b78b` |
+| 11 | `theorem` | [_root_.HasDerivAt.logDeriv_Gamma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/DigammaPublic.lean/declarations/root-hasderivat-logderiv-gamma.md) | 113 | `result-track:6997195a0fb6211d5c023d5e99d3757ab2e1b4a22fd2e203915fd169dd5c2479` |
+| 12 | `theorem` | [digamma_two_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/DigammaPublic.lean/declarations/digamma-two-mul.md) | 124 | `result-track:8a98a790c67a218300a1dd58eb2d55f9cab0c1ac3813ce7aa2547499941c0d69` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/LakeGraphNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/LakeGraphNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LakeGraphNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LakeGraphNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LakePackageNode](../../../../Combinatorics/LakeGraphNamespaced.lean/declarations/lakepackagenode.md) | 16 | `declaration-track:85e04e62f08fe1fc12c9372de77cd96848d3c7b928840c2cfcf0a124dc154f5f` |
-| 2 | `structure` | [LakeDependencyEdge](../../../../Combinatorics/LakeGraphNamespaced.lean/declarations/lakedependencyedge.md) | 23 | `declaration-track:59162c2989451459df970bb3e148a268f6a74165c164786c89c6388f9626283c` |
-| 3 | `structure` | [LakeGraph](../../../../Combinatorics/LakeGraphNamespaced.lean/declarations/lakegraph.md) | 28 | `declaration-track:f4d353f09a3df34dd16730dff99141ed0a2bcf529273f5d2618366e1a8d4bab4` |
+| 1 | `structure` | [LakePackageNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LakeGraphNamespaced.lean/declarations/lakepackagenode.md) | 16 | `declaration-track:85e04e62f08fe1fc12c9372de77cd96848d3c7b928840c2cfcf0a124dc154f5f` |
+| 2 | `structure` | [LakeDependencyEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LakeGraphNamespaced.lean/declarations/lakedependencyedge.md) | 23 | `declaration-track:59162c2989451459df970bb3e148a268f6a74165c164786c89c6388f9626283c` |
+| 3 | `structure` | [LakeGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LakeGraphNamespaced.lean/declarations/lakegraph.md) | 28 | `declaration-track:f4d353f09a3df34dd16730dff99141ed0a2bcf529273f5d2618366e1a8d4bab4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

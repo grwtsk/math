@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.PortFiberHolomorphyCore`](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphyCore.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicLineSectionEnergy`](../../../../MeasureAndIntegration/HolomorphicLineSectionEnergy.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberHolomorphyCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphyCore.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicLineSectionEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicLineSectionEnergy.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [schemaVersion](../../../../FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/schemaversion.md) | 28 | `declaration-track:815e1b125ea94487740ee240d8c0a4ae304df19f722c723f6d7fb1b020636210` |
-| 2 | `inductive` | [AddedIndex](../../../../FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/addedindex.md) | 30 | `declaration-track:792508db650862c3c59ec59fd054bd1951638236719e8383ea83b3fa22198ba8` |
-| 3 | `def` | [AddedClaim](../../../../FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/addedclaim.md) | 41 | `declaration-track:80647ea8e2cfee43b821ad85dbcb71a24252525c70fc0575916df2031354f3eb` |
-| 4 | `theorem` | [addedClaim_proof](../../../../FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/addedclaim-proof.md) | 81 | `result-track:1c4417b06a8f5b37e52b6d6d900712647bda0f0e31a0626f83b3ccc19cb97af6` |
-| 5 | `def` | [portfolio](../../../../FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/portfolio.md) | 112 | `declaration-track:a0d2ec19d7d3847304166d4bcac0ed394928e9f38944851fbb5fb7abeef0a043` |
-| 6 | `def` | [architecture](../../../../FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/architecture.md) | 115 | `declaration-track:28031be4260f41e7c18c25e72379179c37ee0c2f7adb6a3cc740fc2e840782fa` |
-| 7 | `abbrev` | [PreviousIndex](../../../../FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/previousindex.md) | 119 | `declaration-track:d9cc46c74d25c85f90c821702d7df587682b2193d1ac56620ea18c12c3c2e46a` |
-| 8 | `theorem` | [original_branch_unchanged](../../../../FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/original-branch-unchanged.md) | 123 | `result-track:28643d05b6b93ed35030d5eec03810577620c748e5588d142d13c076ffceef8a` |
-| 9 | `theorem` | [new_branch_proved](../../../../FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/new-branch-proved.md) | 129 | `result-track:cc8fb86c43432dc3cb67ca7c53b5f9539a9c8dffb160af9f6c8795c1a565b707` |
-| 10 | `theorem` | [target_unchanged](../../../../FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/target-unchanged.md) | 134 | `result-track:e3f09d5c01b914b1043dbaf92d65cb18fe8e192200210a8d4e716f37d1050119` |
-| 11 | `theorem` | [retarget_preserves_new](../../../../FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/retarget-preserves-new.md) | 139 | `result-track:9f733dd2f732837a561647a58e0112d98af9690dda3dc5447c50d4c64155a8f1` |
+| 1 | `def` | [schemaVersion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/schemaversion.md) | 28 | `declaration-track:815e1b125ea94487740ee240d8c0a4ae304df19f722c723f6d7fb1b020636210` |
+| 2 | `inductive` | [AddedIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/addedindex.md) | 30 | `declaration-track:792508db650862c3c59ec59fd054bd1951638236719e8383ea83b3fa22198ba8` |
+| 3 | `def` | [AddedClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/addedclaim.md) | 41 | `declaration-track:80647ea8e2cfee43b821ad85dbcb71a24252525c70fc0575916df2031354f3eb` |
+| 4 | `theorem` | [addedClaim_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/addedclaim-proof.md) | 81 | `result-track:1c4417b06a8f5b37e52b6d6d900712647bda0f0e31a0626f83b3ccc19cb97af6` |
+| 5 | `def` | [portfolio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/portfolio.md) | 112 | `declaration-track:a0d2ec19d7d3847304166d4bcac0ed394928e9f38944851fbb5fb7abeef0a043` |
+| 6 | `def` | [architecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/architecture.md) | 115 | `declaration-track:28031be4260f41e7c18c25e72379179c37ee0c2f7adb6a3cc740fc2e840782fa` |
+| 7 | `abbrev` | [PreviousIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/previousindex.md) | 119 | `declaration-track:d9cc46c74d25c85f90c821702d7df587682b2193d1ac56620ea18c12c3c2e46a` |
+| 8 | `theorem` | [original_branch_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/original-branch-unchanged.md) | 123 | `result-track:28643d05b6b93ed35030d5eec03810577620c748e5588d142d13c076ffceef8a` |
+| 9 | `theorem` | [new_branch_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/new-branch-proved.md) | 129 | `result-track:cc8fb86c43432dc3cb67ca7c53b5f9539a9c8dffb160af9f6c8795c1a565b707` |
+| 10 | `theorem` | [target_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/target-unchanged.md) | 134 | `result-track:e3f09d5c01b914b1043dbaf92d65cb18fe8e192200210a8d4e716f37d1050119` |
+| 11 | `theorem` | [retarget_preserves_new](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/declarations/retarget-preserves-new.md) | 139 | `result-track:9f733dd2f732837a561647a58e0112d98af9690dda3dc5447c50d4c64155a8f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

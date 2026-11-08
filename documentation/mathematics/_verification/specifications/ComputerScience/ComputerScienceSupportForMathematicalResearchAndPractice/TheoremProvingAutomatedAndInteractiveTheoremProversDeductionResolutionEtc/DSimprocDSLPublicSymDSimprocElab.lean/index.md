@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLPublicSymDSimprocElab.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLPublicSymDSimprocElab.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLPublicSymDSimprocElab.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLPublicSymDSimprocElab.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [SymDSimprocElab](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLPublicSymDSimprocElab.lean/declarations/symdsimprocelab.md) | 16 | `declaration-track:d7fc51fb04676472a6ce85c83b5577941e9ed88f1ec2507868475f244330fb20` |
-| 2 | `builtin_initialize` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLPublicSymDSimprocElab.lean/declarations/builtin-initialize.md) | 18 | `declaration-track:634480922761f0ed6e6555be8c019f638147bde3a1b157c52da817a0edca7715` |
-| 3 | `def` | [elabSymDSimproc](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLPublicSymDSimprocElab.lean/declarations/elabsymdsimproc.md) | 23 | `declaration-track:44a119083094a39c36f481b59637f51f9b444fb8343b95ee45f34ba7ccee2065` |
+| 1 | `abbrev` | [SymDSimprocElab](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLPublicSymDSimprocElab.lean/declarations/symdsimprocelab.md) | 16 | `declaration-track:d7fc51fb04676472a6ce85c83b5577941e9ed88f1ec2507868475f244330fb20` |
+| 2 | `builtin_initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLPublicSymDSimprocElab.lean/declarations/builtin-initialize.md) | 18 | `declaration-track:634480922761f0ed6e6555be8c019f638147bde3a1b157c52da817a0edca7715` |
+| 3 | `def` | [elabSymDSimproc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DSimprocDSLPublicSymDSimprocElab.lean/declarations/elabsymdsimproc.md) | 23 | `declaration-track:44a119083094a39c36f481b59637f51f9b444fb8343b95ee45f34ba7ccee2065` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

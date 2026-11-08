@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianWindowSeminorms.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianWindowSeminorms.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianWindowSeminorms.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianWindowSeminorms.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms`](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianWindowSeminorms.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianWindowSeminorms.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [gaussianWindow_derivative_generic](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianWindowSeminorms.lean/declarations/gaussianwindow-derivative-generic.md) | 13 | `result-track:2ff76bc0f57b42b6918270d4463357bba2040c62994948493a1a0d875a5ab5eb` |
-| 2 | `theorem` | [gaussianWindow_two_sided_generic](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianWindowSeminorms.lean/declarations/gaussianwindow-two-sided-generic.md) | 18 | `result-track:bd06fb16375afe8c964a9035e73b08c2272a01c1867918aea0253ccdc4555aa1` |
-| 3 | `theorem` | [gaussianWindow_two_indices](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianWindowSeminorms.lean/declarations/gaussianwindow-two-indices.md) | 24 | `result-track:798dc15d43f7e750c496be973c8df9682c32b27050537fcd064e3d97c39e5bd6` |
-| 4 | `theorem` | [annulus_three_quarters_ne_zero](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianWindowSeminorms.lean/declarations/annulus-three-quarters-ne-zero.md) | 34 | `result-track:37bf53679b22754dd57b8b2f5b019d371ed962822b44c2657b3d0c9c55e4b7b8` |
-| 5 | `theorem` | [gaussianMellinProfile_zero_ne_zero](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianWindowSeminorms.lean/declarations/gaussianmellinprofile-zero-ne-zero.md) | 44 | `result-track:7e78e761f8c33bbb8f3cc97b55dc0a610b3aee50f3e2b5eac07abec45a765edc` |
-| 6 | `theorem` | [gaussianWindow_zero_scale_value_ne_zero](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianWindowSeminorms.lean/declarations/gaussianwindow-zero-scale-value-ne-zero.md) | 53 | `result-track:b6e3de4907faf3f0f3191739ed6eea7868474970d03b93fcd13bd716bf17b732` |
-| 7 | `theorem` | [gaussianWindow_zero_scale_counterexample](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianWindowSeminorms.lean/declarations/gaussianwindow-zero-scale-counterexample.md) | 62 | `result-track:17e5488c38c42a5346d6761804da63eef9763a6e3fe10de2f610e7bf9d9ba39f` |
+| 1 | `theorem` | [gaussianWindow_derivative_generic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianWindowSeminorms.lean/declarations/gaussianwindow-derivative-generic.md) | 13 | `result-track:2ff76bc0f57b42b6918270d4463357bba2040c62994948493a1a0d875a5ab5eb` |
+| 2 | `theorem` | [gaussianWindow_two_sided_generic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianWindowSeminorms.lean/declarations/gaussianwindow-two-sided-generic.md) | 18 | `result-track:bd06fb16375afe8c964a9035e73b08c2272a01c1867918aea0253ccdc4555aa1` |
+| 3 | `theorem` | [gaussianWindow_two_indices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianWindowSeminorms.lean/declarations/gaussianwindow-two-indices.md) | 24 | `result-track:798dc15d43f7e750c496be973c8df9682c32b27050537fcd064e3d97c39e5bd6` |
+| 4 | `theorem` | [annulus_three_quarters_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianWindowSeminorms.lean/declarations/annulus-three-quarters-ne-zero.md) | 34 | `result-track:37bf53679b22754dd57b8b2f5b019d371ed962822b44c2657b3d0c9c55e4b7b8` |
+| 5 | `theorem` | [gaussianMellinProfile_zero_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianWindowSeminorms.lean/declarations/gaussianmellinprofile-zero-ne-zero.md) | 44 | `result-track:7e78e761f8c33bbb8f3cc97b55dc0a610b3aee50f3e2b5eac07abec45a765edc` |
+| 6 | `theorem` | [gaussianWindow_zero_scale_value_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianWindowSeminorms.lean/declarations/gaussianwindow-zero-scale-value-ne-zero.md) | 53 | `result-track:b6e3de4907faf3f0f3191739ed6eea7868474970d03b93fcd13bd716bf17b732` |
+| 7 | `theorem` | [gaussianWindow_zero_scale_counterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianWindowSeminorms.lean/declarations/gaussianwindow-zero-scale-counterexample.md) | 62 | `result-track:17e5488c38c42a5346d6761804da63eef9763a6e3fe10de2f610e7bf9d9ba39f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

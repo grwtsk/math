@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/NReflectsIsoAligned.lean/index.md) · [Full source](../../../../AlgebraicTopology/NReflectsIsoAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NReflectsIsoAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NReflectsIsoAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../AlgebraicTopology/NReflectsIsoAligned.lean/declarations/instance-source-edition-2.md) | 37 | `declaration-track:581fb72cd4d6a4ef879186ec49f588c6a88830c4d59984b13bbad5435f707d25` |
-| 2 | `theorem` | [compatibility_N₂_N₁_karoubi](../../../../AlgebraicTopology/NReflectsIsoAligned.lean/declarations/compatibility-n-n-karoubi.md) | 68 | `result-track:d94d9d23a5e204fa33c5f3fd6110dd878f4b61e102e2a46af376c1a7a89f4dcf` |
-| 3 | `instance` | [(anonymous)](../../../../AlgebraicTopology/NReflectsIsoAligned.lean/declarations/instance.md) | 99 | `declaration-track:0a71e4280db0a8f772a749d2fb4819d136f5c47be24d0264b32233287726a82c` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NReflectsIsoAligned.lean/declarations/instance-source-edition-2.md) | 37 | `declaration-track:581fb72cd4d6a4ef879186ec49f588c6a88830c4d59984b13bbad5435f707d25` |
+| 2 | `theorem` | [compatibility_N₂_N₁_karoubi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NReflectsIsoAligned.lean/declarations/compatibility-n-n-karoubi.md) | 68 | `result-track:d94d9d23a5e204fa33c5f3fd6110dd878f4b61e102e2a46af376c1a7a89f4dcf` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NReflectsIsoAligned.lean/declarations/instance.md) | 99 | `declaration-track:0a71e4280db0a8f772a749d2fb4819d136f5c47be24d0264b32233287726a82c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

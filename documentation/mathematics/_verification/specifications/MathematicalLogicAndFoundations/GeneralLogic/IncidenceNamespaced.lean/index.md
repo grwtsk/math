@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IncidenceSignature](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceNamespaced.lean/declarations/incidencesignature.md) | 24 | `declaration-track:16478e7457be7c537a7d827d7caac0f6b206496df307675f64cc14d3a1f2db0a` |
-| 2 | `def` | [Collinear](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceNamespaced.lean/declarations/collinear.md) | 28 | `declaration-track:f567fc91bc6990e2caa6c46e633cf3dcada6d02bf32c398905b0be20062b7e94` |
-| 3 | `def` | [TwoPointLineExistence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceNamespaced.lean/declarations/twopointlineexistence.md) | 38 | `declaration-track:014069d2d0d8442b7d49624d517910ee5c6cfe4b73bc6d43b2f81e3f07a6ca4a` |
-| 4 | `def` | [TwoPointLineUniqueness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceNamespaced.lean/declarations/twopointlineuniqueness.md) | 48 | `declaration-track:396dc1797005f0c79876c34ecd0e82f367e5e7133f5e3b9c8bef0c3d53c9dc95` |
-| 5 | `def` | [ThreeNoncollinearPoints](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceNamespaced.lean/declarations/threenoncollinearpoints.md) | 60 | `declaration-track:3da01c1d0ef0188ae23bbe18b0bf2cf2f9d717e3ecc8624d0ae5f438fa89115f` |
+| 1 | `structure` | [IncidenceSignature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceNamespaced.lean/declarations/incidencesignature.md) | 24 | `declaration-track:16478e7457be7c537a7d827d7caac0f6b206496df307675f64cc14d3a1f2db0a` |
+| 2 | `def` | [Collinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceNamespaced.lean/declarations/collinear.md) | 28 | `declaration-track:f567fc91bc6990e2caa6c46e633cf3dcada6d02bf32c398905b0be20062b7e94` |
+| 3 | `def` | [TwoPointLineExistence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceNamespaced.lean/declarations/twopointlineexistence.md) | 38 | `declaration-track:014069d2d0d8442b7d49624d517910ee5c6cfe4b73bc6d43b2f81e3f07a6ca4a` |
+| 4 | `def` | [TwoPointLineUniqueness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceNamespaced.lean/declarations/twopointlineuniqueness.md) | 48 | `declaration-track:396dc1797005f0c79876c34ecd0e82f367e5e7133f5e3b9c8bef0c3d53c9dc95` |
+| 5 | `def` | [ThreeNoncollinearPoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceNamespaced.lean/declarations/threenoncollinearpoints.md) | 60 | `declaration-track:3da01c1d0ef0188ae23bbe18b0bf2cf2f9d717e3ecc8624d0ae5f438fa89115f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

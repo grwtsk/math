@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/HomotopyEquivalenceNamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/HomotopyEquivalenceNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalenceNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalenceNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [homotopyPToId](../../../../AlgebraicTopology/HomotopyEquivalenceNamespacedPublic.lean/declarations/homotopyptoid.md) | 45 | `declaration-track:e58cd7dff059663bc751e25f5b455f95e25d97cc80dc74e7242f799f7248644c` |
-| 2 | `def` | [homotopyQToZero](../../../../AlgebraicTopology/HomotopyEquivalenceNamespacedPublic.lean/declarations/homotopyqtozero.md) | 57 | `declaration-track:5bc36b2d1c00e7b2a064ae29ad98456a4f2f2ec715412731b9cc6f1ddda40dbd` |
-| 3 | `theorem` | [homotopyPToId_eventually_constant](../../../../AlgebraicTopology/HomotopyEquivalenceNamespacedPublic.lean/declarations/homotopyptoid-eventually-constant.md) | 61 | `result-track:2a88e0d52421db5a37f6a10c702a22f5eda7aa9136079127343b14b9ea74a8cc` |
-| 4 | `def` | [homotopyPInftyToId](../../../../AlgebraicTopology/HomotopyEquivalenceNamespacedPublic.lean/declarations/homotopypinftytoid.md) | 72 | `declaration-track:8b8643df933aa532bee4fd133b9d559ded70f131fc25c314924bce1d00d6bc4b` |
-| 5 | `def` | [homotopyEquivNormalizedMooreComplexAlternatingFaceMapComplex](../../../../AlgebraicTopology/HomotopyEquivalenceNamespacedPublic.lean/declarations/homotopyequivnormalizedmoorecomplexalternatingfacemapcomplex.md) | 89 | `declaration-track:f187f92a7867ecdd575226b24c92f09d069454631de215b8bc4631ba56057f34` |
+| 1 | `def` | [homotopyPToId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalenceNamespacedPublic.lean/declarations/homotopyptoid.md) | 45 | `declaration-track:e58cd7dff059663bc751e25f5b455f95e25d97cc80dc74e7242f799f7248644c` |
+| 2 | `def` | [homotopyQToZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalenceNamespacedPublic.lean/declarations/homotopyqtozero.md) | 57 | `declaration-track:5bc36b2d1c00e7b2a064ae29ad98456a4f2f2ec715412731b9cc6f1ddda40dbd` |
+| 3 | `theorem` | [homotopyPToId_eventually_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalenceNamespacedPublic.lean/declarations/homotopyptoid-eventually-constant.md) | 61 | `result-track:2a88e0d52421db5a37f6a10c702a22f5eda7aa9136079127343b14b9ea74a8cc` |
+| 4 | `def` | [homotopyPInftyToId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalenceNamespacedPublic.lean/declarations/homotopypinftytoid.md) | 72 | `declaration-track:8b8643df933aa532bee4fd133b9d559ded70f131fc25c314924bce1d00d6bc4b` |
+| 5 | `def` | [homotopyEquivNormalizedMooreComplexAlternatingFaceMapComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalenceNamespacedPublic.lean/declarations/homotopyequivnormalizedmoorecomplexalternatingfacemapcomplex.md) | 89 | `declaration-track:f187f92a7867ecdd575226b24c92f09d069454631de215b8bc4631ba56057f34` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Notation3.lean/index.md) · [Full source](../../../../GeneralTopology/Notation3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Filter](../../../../GeneralTopology/Notation3.lean/declarations/filter.md) | 12 | `declaration-track:2e7a24d10d7033f4e7c8b1e38522ea0272f0a926908bf7dbd8fbb55d878cc5e1` |
-| 2 | `def` | [Filter.atTop](../../../../GeneralTopology/Notation3.lean/declarations/filter-attop.md) | 13 | `declaration-track:b69d5adc3d4fd2c442d327e26452a16715b69eb4db32faf6ea2786ab6b45d5bc` |
-| 3 | `def` | [Filter.eventually](../../../../GeneralTopology/Notation3.lean/declarations/filter-eventually.md) | 14 | `declaration-track:8af1bdd1f5bdbc9e560620b8a8ec54836cef0004822517d576e2b2d3fbb1b30e` |
-| 4 | `def` | [foobar](../../../../GeneralTopology/Notation3.lean/declarations/foobar.md) | 23 | `declaration-track:09cc92aa401abba5a6eb2234188a89f2c43da332afe24298c125a0fe64b4e4f1` |
-| 5 | `def` | [func](../../../../GeneralTopology/Notation3.lean/declarations/func.md) | 41 | `declaration-track:451c7ad83b00da45bd6223821ca93877ebaaaea7392846ca9641408c83cd2863` |
-| 6 | `structure` | [MyUnit](../../../../GeneralTopology/Notation3.lean/declarations/myunit.md) | 48 | `declaration-track:82440b04a111c99f0356056c3882fba8aed8fc7eb6df8b4cad17f7ea38eba3e1` |
-| 7 | `def` | [foo](../../../../GeneralTopology/Notation3.lean/declarations/foo-source-edition-2.md) | 59 | `declaration-track:fa3b738a8623c76a7eee8cc139a3fc5d03a66e763f3a5167e1bfafc88075eb13` |
-| 8 | `def` | [bar](../../../../GeneralTopology/Notation3.lean/declarations/bar.md) | 60 | `declaration-track:2788f9602becf18b21589f4c15ac27c2c47dadd9a83b51a64ff31141c535f58d` |
-| 9 | `def` | [foo'](../../../../GeneralTopology/Notation3.lean/declarations/foo.md) | 68 | `declaration-track:d7527d406fe03e6eb26a233fb2e33f42eaad13d3799aa83bdc4baac6d5281e2e` |
-| 10 | `def` | [bar'](../../../../GeneralTopology/Notation3.lean/declarations/bar-source-edition-2.md) | 69 | `declaration-track:7663dae21253f4d564691809150e1198728fa0609b1838919a0ad174d5f2358c` |
-| 11 | `def` | [myId](../../../../GeneralTopology/Notation3.lean/declarations/myid.md) | 82 | `declaration-track:35f38a5f1c19e6f9288f54617b3c48f0b9e41769c650a38fefa346b167c50d6d` |
+| 1 | `def` | [Filter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3.lean/declarations/filter.md) | 12 | `declaration-track:2e7a24d10d7033f4e7c8b1e38522ea0272f0a926908bf7dbd8fbb55d878cc5e1` |
+| 2 | `def` | [Filter.atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3.lean/declarations/filter-attop.md) | 13 | `declaration-track:b69d5adc3d4fd2c442d327e26452a16715b69eb4db32faf6ea2786ab6b45d5bc` |
+| 3 | `def` | [Filter.eventually](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3.lean/declarations/filter-eventually.md) | 14 | `declaration-track:8af1bdd1f5bdbc9e560620b8a8ec54836cef0004822517d576e2b2d3fbb1b30e` |
+| 4 | `def` | [foobar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3.lean/declarations/foobar.md) | 23 | `declaration-track:09cc92aa401abba5a6eb2234188a89f2c43da332afe24298c125a0fe64b4e4f1` |
+| 5 | `def` | [func](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3.lean/declarations/func.md) | 41 | `declaration-track:451c7ad83b00da45bd6223821ca93877ebaaaea7392846ca9641408c83cd2863` |
+| 6 | `structure` | [MyUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3.lean/declarations/myunit.md) | 48 | `declaration-track:82440b04a111c99f0356056c3882fba8aed8fc7eb6df8b4cad17f7ea38eba3e1` |
+| 7 | `def` | [foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3.lean/declarations/foo-source-edition-2.md) | 59 | `declaration-track:fa3b738a8623c76a7eee8cc139a3fc5d03a66e763f3a5167e1bfafc88075eb13` |
+| 8 | `def` | [bar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3.lean/declarations/bar.md) | 60 | `declaration-track:2788f9602becf18b21589f4c15ac27c2c47dadd9a83b51a64ff31141c535f58d` |
+| 9 | `def` | [foo'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3.lean/declarations/foo.md) | 68 | `declaration-track:d7527d406fe03e6eb26a233fb2e33f42eaad13d3799aa83bdc4baac6d5281e2e` |
+| 10 | `def` | [bar'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3.lean/declarations/bar-source-edition-2.md) | 69 | `declaration-track:7663dae21253f4d564691809150e1198728fa0609b1838919a0ad174d5f2358c` |
+| 11 | `def` | [myId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Notation3.lean/declarations/myid.md) | 82 | `declaration-track:35f38a5f1c19e6f9288f54617b3c48f0b9e41769c650a38fefa346b167c50d6d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

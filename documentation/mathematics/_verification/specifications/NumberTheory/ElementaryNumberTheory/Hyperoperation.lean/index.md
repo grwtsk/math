@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [hyperoperation](../../../../../NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation.md) | 32 | `declaration-track:a6679cb8603464603dcdc5dc8a721fe5eda20e3e521fbd7067f17acdb2c67091` |
-| 2 | `theorem` | [hyperoperation_zero](../../../../../NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-zero.md) | 41 | `result-track:d1ee3a927bb30dc6a6e1c5cbe3e16c39de03981c0ff22f18b4a37de77e5b9cb9` |
-| 3 | `theorem` | [hyperoperation_ge_three_eq_one](../../../../../NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-ge-three-eq-one.md) | 44 | `result-track:2e7a999d3232bb9e71f0f29c7e1b3a4040343584bd97b66fc4f9e1cde20da04a` |
-| 4 | `theorem` | [hyperoperation_recursion](../../../../../NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-recursion.md) | 47 | `result-track:9d06cd29bb0b1231ef8b163c2cb4a17ac034064b60c7479760f2bfbc28fdd807` |
-| 5 | `theorem` | [hyperoperation_one](../../../../../NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-one.md) | 53 | `result-track:5348546673bca23219d48ad9ca3950427c631f9a81d0746bc8e5493cff33f633` |
-| 6 | `theorem` | [hyperoperation_two](../../../../../NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-two.md) | 61 | `result-track:4c6c0b504e08472da1611a3e6183da87ee6f956b2431acfe32a97099a01f54bc` |
-| 7 | `theorem` | [hyperoperation_three](../../../../../NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-three.md) | 70 | `result-track:7b1156fcf9887108cba3797791aa08d3accb506d02a3f707f756c9260e5e66b0` |
-| 8 | `theorem` | [hyperoperation_ge_two_eq_self](../../../../../NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-ge-two-eq-self.md) | 78 | `result-track:a3d13375fb4a1b7b3cc1205235a8de57a9cdef59e31e65fdb7e516c4eca0cb1f` |
-| 9 | `theorem` | [hyperoperation_two_two_eq_four](../../../../../NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-two-two-eq-four.md) | 84 | `result-track:08002bf0a40f6523787abab28a51f6faf3f1c3296d66d543c03cea95ccccd2d8` |
-| 10 | `theorem` | [hyperoperation_ge_three_one](../../../../../NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-ge-three-one.md) | 89 | `result-track:c0fd9a4b6638b908e2a4d1027f341bc5a06a5148e62dafb1658a02ec425f3284` |
-| 11 | `theorem` | [hyperoperation_ge_four_zero](../../../../../NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-ge-four-zero.md) | 100 | `result-track:a3b99e694f36be86f71c6d30265f2321e557284f989aca7121c1b933e4416f34` |
+| 1 | `def` | [hyperoperation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation.md) | 32 | `declaration-track:a6679cb8603464603dcdc5dc8a721fe5eda20e3e521fbd7067f17acdb2c67091` |
+| 2 | `theorem` | [hyperoperation_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-zero.md) | 41 | `result-track:d1ee3a927bb30dc6a6e1c5cbe3e16c39de03981c0ff22f18b4a37de77e5b9cb9` |
+| 3 | `theorem` | [hyperoperation_ge_three_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-ge-three-eq-one.md) | 44 | `result-track:2e7a999d3232bb9e71f0f29c7e1b3a4040343584bd97b66fc4f9e1cde20da04a` |
+| 4 | `theorem` | [hyperoperation_recursion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-recursion.md) | 47 | `result-track:9d06cd29bb0b1231ef8b163c2cb4a17ac034064b60c7479760f2bfbc28fdd807` |
+| 5 | `theorem` | [hyperoperation_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-one.md) | 53 | `result-track:5348546673bca23219d48ad9ca3950427c631f9a81d0746bc8e5493cff33f633` |
+| 6 | `theorem` | [hyperoperation_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-two.md) | 61 | `result-track:4c6c0b504e08472da1611a3e6183da87ee6f956b2431acfe32a97099a01f54bc` |
+| 7 | `theorem` | [hyperoperation_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-three.md) | 70 | `result-track:7b1156fcf9887108cba3797791aa08d3accb506d02a3f707f756c9260e5e66b0` |
+| 8 | `theorem` | [hyperoperation_ge_two_eq_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-ge-two-eq-self.md) | 78 | `result-track:a3d13375fb4a1b7b3cc1205235a8de57a9cdef59e31e65fdb7e516c4eca0cb1f` |
+| 9 | `theorem` | [hyperoperation_two_two_eq_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-two-two-eq-four.md) | 84 | `result-track:08002bf0a40f6523787abab28a51f6faf3f1c3296d66d543c03cea95ccccd2d8` |
+| 10 | `theorem` | [hyperoperation_ge_three_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-ge-three-one.md) | 89 | `result-track:c0fd9a4b6638b908e2a4d1027f341bc5a06a5148e62dafb1658a02ec425f3284` |
+| 11 | `theorem` | [hyperoperation_ge_four_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Hyperoperation.lean/declarations/hyperoperation-ge-four-zero.md) | 100 | `result-track:a3b99e694f36be86f71c6d30265f2321e557284f989aca7121c1b933e4416f34` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

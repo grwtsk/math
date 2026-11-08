@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SmoothFiberNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SmoothFiberNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothFiberNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothFiberNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [FormallySmooth.of_formallySmooth_residueField_tensor_aux](../../../../CommutativeAlgebra/SmoothFiberNamespacedPublic.lean/declarations/formallysmooth-of-formallysmooth-residuefield-tensor-aux.md) | 78 | `result-track:c89052954dcb427406d170e688303f67a8e31e982328475cb917e3e3551ae1c5` |
-| 2 | `lemma` | [FormallySmooth.of_formallySmooth_residueField_tensor](../../../../CommutativeAlgebra/SmoothFiberNamespacedPublic.lean/declarations/formallysmooth-of-formallysmooth-residuefield-tensor.md) | 156 | `result-track:ccab67592b8ab77da2a406610de95c4765d9ef3700da54feae6bb9b967a065ab` |
-| 3 | `lemma` | [IsSmoothAt.of_formallySmooth_fiber](../../../../CommutativeAlgebra/SmoothFiberNamespacedPublic.lean/declarations/issmoothat-of-formallysmooth-fiber.md) | 201 | `result-track:9da2a5bd5afea5c0088a16769f07c6e1e897dc460df557803d9d0bff5cc4b2ab` |
-| 4 | `lemma` | [Smooth.of_formallySmooth_fiber](../../../../CommutativeAlgebra/SmoothFiberNamespacedPublic.lean/declarations/smooth-of-formallysmooth-fiber.md) | 246 | `result-track:b303fdf55fff73bfda253a33322a71e5800e7faab9b64df0fa8f2e608f71fe63` |
-| 5 | `lemma` | [Etale.of_formallyUnramified_of_flat](../../../../CommutativeAlgebra/SmoothFiberNamespacedPublic.lean/declarations/etale-of-formallyunramified-of-flat.md) | 254 | `result-track:f67591ff71326f9295864658ab6ff6959c2f551c7495934d8dd1e266108f7740` |
-| 6 | `lemma` | [IsEtaleAt.of_isUnramifiedAt_of_flat](../../../../CommutativeAlgebra/SmoothFiberNamespacedPublic.lean/declarations/isetaleat-of-isunramifiedat-of-flat.md) | 260 | `result-track:38d036a41952166b47f96452dde1e9987d25771cba35dc4079db951b76414090` |
+| 1 | `lemma` | [FormallySmooth.of_formallySmooth_residueField_tensor_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothFiberNamespacedPublic.lean/declarations/formallysmooth-of-formallysmooth-residuefield-tensor-aux.md) | 78 | `result-track:c89052954dcb427406d170e688303f67a8e31e982328475cb917e3e3551ae1c5` |
+| 2 | `lemma` | [FormallySmooth.of_formallySmooth_residueField_tensor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothFiberNamespacedPublic.lean/declarations/formallysmooth-of-formallysmooth-residuefield-tensor.md) | 156 | `result-track:ccab67592b8ab77da2a406610de95c4765d9ef3700da54feae6bb9b967a065ab` |
+| 3 | `lemma` | [IsSmoothAt.of_formallySmooth_fiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothFiberNamespacedPublic.lean/declarations/issmoothat-of-formallysmooth-fiber.md) | 201 | `result-track:9da2a5bd5afea5c0088a16769f07c6e1e897dc460df557803d9d0bff5cc4b2ab` |
+| 4 | `lemma` | [Smooth.of_formallySmooth_fiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothFiberNamespacedPublic.lean/declarations/smooth-of-formallysmooth-fiber.md) | 246 | `result-track:b303fdf55fff73bfda253a33322a71e5800e7faab9b64df0fa8f2e608f71fe63` |
+| 5 | `lemma` | [Etale.of_formallyUnramified_of_flat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothFiberNamespacedPublic.lean/declarations/etale-of-formallyunramified-of-flat.md) | 254 | `result-track:f67591ff71326f9295864658ab6ff6959c2f551c7495934d8dd1e266108f7740` |
+| 6 | `lemma` | [IsEtaleAt.of_isUnramifiedAt_of_flat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothFiberNamespacedPublic.lean/declarations/isetaleat-of-isunramifiedat-of-flat.md) | 260 | `result-track:38d036a41952166b47f96452dde1e9987d25771cba35dc4079db951b76414090` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LogMoments.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LogMoments.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogMoments.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogMoments.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [negative_nat_rpow](../../../../MeasureAndIntegration/LogMoments.lean/declarations/negative-nat-rpow.md) | 17 | `result-track:4841655236b5a6f40a9c8a2f9b53fc1e008ae6c877e1b8e62a323b0ac0d116e6` |
-| 2 | `theorem` | [inverse_power_integrable](../../../../MeasureAndIntegration/LogMoments.lean/declarations/inverse-power-integrable.md) | 22 | `result-track:1177f17c3729dd73bc389c6ff07fab4424f72570a32d941adcff5302ac773519` |
-| 3 | `theorem` | [inverse_power_integral](../../../../MeasureAndIntegration/LogMoments.lean/declarations/inverse-power-integral.md) | 31 | `result-track:c45e88ad9420be9aeca11b2152ad52e8d66532e450802771f05a20f93633b912` |
-| 4 | `def` | [logMomentPrimitive](../../../../MeasureAndIntegration/LogMoments.lean/declarations/logmomentprimitive.md) | 44 | `declaration-track:b13d0194eb12a44cc42aff1da6cb4b8ff97e86a36df8f4fb02487e1b1667cdf9` |
-| 5 | `theorem` | [log_moment_primitive_derivative](../../../../MeasureAndIntegration/LogMoments.lean/declarations/log-moment-primitive-derivative.md) | 47 | `result-track:6d5fc55b77ff39b1894afb7543b0a7be5297faa37effb0f81b9d79858f86c3fc` |
-| 6 | `theorem` | [log_moment_primitive_tendsto](../../../../MeasureAndIntegration/LogMoments.lean/declarations/log-moment-primitive-tendsto.md) | 64 | `result-track:58c8a1d5cda388ea8ee2a1f3fb2b28c088f9912c616316972d67468ec804a729` |
-| 7 | `theorem` | [log_ratio_power_nonnegative](../../../../MeasureAndIntegration/LogMoments.lean/declarations/log-ratio-power-nonnegative.md) | 83 | `result-track:7d9521a9e5cd7ebc4c64fce8a93fd2132e12ef8a68c06b7712c799bd15864fbf` |
-| 8 | `theorem` | [log_ratio_power_integrable](../../../../MeasureAndIntegration/LogMoments.lean/declarations/log-ratio-power-integrable.md) | 89 | `result-track:9f201eda413b2d2b1072187ccd47d7916ed13c12f615bf9ede2518d7416f0f81` |
-| 9 | `theorem` | [log_ratio_power_integral](../../../../MeasureAndIntegration/LogMoments.lean/declarations/log-ratio-power-integral.md) | 100 | `result-track:b0f62209e8f71e868d939e55866fbd9b8b6797ee88287c231d9ab94cf92fa987` |
-| 10 | `theorem` | [log_ratio_sixth_integrable](../../../../MeasureAndIntegration/LogMoments.lean/declarations/log-ratio-sixth-integrable.md) | 111 | `result-track:b9a45c32c1f570867343c33bc038809159193b98a94c6279528f8e4459a98a58` |
-| 11 | `theorem` | [log_ratio_sixth_integral](../../../../MeasureAndIntegration/LogMoments.lean/declarations/log-ratio-sixth-integral.md) | 115 | `result-track:baf4f885a5739a6dc8aae85cf80bd85702a646565decde7fc11fdcaf3a58ef11` |
-| 12 | `theorem` | [log_ratio_seventh_integrable](../../../../MeasureAndIntegration/LogMoments.lean/declarations/log-ratio-seventh-integrable.md) | 119 | `result-track:caff4c39302bbae792fb3001cbfefe8b4eb5640b3b821bcc9f745bbd9f24a24c` |
-| 13 | `theorem` | [log_ratio_seventh_integral](../../../../MeasureAndIntegration/LogMoments.lean/declarations/log-ratio-seventh-integral.md) | 123 | `result-track:bd341f2a5cef8f3ddfef4e34aaa6383ccf95e52f1ad551c1448b44034a720745` |
+| 1 | `theorem` | [negative_nat_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogMoments.lean/declarations/negative-nat-rpow.md) | 17 | `result-track:4841655236b5a6f40a9c8a2f9b53fc1e008ae6c877e1b8e62a323b0ac0d116e6` |
+| 2 | `theorem` | [inverse_power_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogMoments.lean/declarations/inverse-power-integrable.md) | 22 | `result-track:1177f17c3729dd73bc389c6ff07fab4424f72570a32d941adcff5302ac773519` |
+| 3 | `theorem` | [inverse_power_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogMoments.lean/declarations/inverse-power-integral.md) | 31 | `result-track:c45e88ad9420be9aeca11b2152ad52e8d66532e450802771f05a20f93633b912` |
+| 4 | `def` | [logMomentPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogMoments.lean/declarations/logmomentprimitive.md) | 44 | `declaration-track:b13d0194eb12a44cc42aff1da6cb4b8ff97e86a36df8f4fb02487e1b1667cdf9` |
+| 5 | `theorem` | [log_moment_primitive_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogMoments.lean/declarations/log-moment-primitive-derivative.md) | 47 | `result-track:6d5fc55b77ff39b1894afb7543b0a7be5297faa37effb0f81b9d79858f86c3fc` |
+| 6 | `theorem` | [log_moment_primitive_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogMoments.lean/declarations/log-moment-primitive-tendsto.md) | 64 | `result-track:58c8a1d5cda388ea8ee2a1f3fb2b28c088f9912c616316972d67468ec804a729` |
+| 7 | `theorem` | [log_ratio_power_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogMoments.lean/declarations/log-ratio-power-nonnegative.md) | 83 | `result-track:7d9521a9e5cd7ebc4c64fce8a93fd2132e12ef8a68c06b7712c799bd15864fbf` |
+| 8 | `theorem` | [log_ratio_power_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogMoments.lean/declarations/log-ratio-power-integrable.md) | 89 | `result-track:9f201eda413b2d2b1072187ccd47d7916ed13c12f615bf9ede2518d7416f0f81` |
+| 9 | `theorem` | [log_ratio_power_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogMoments.lean/declarations/log-ratio-power-integral.md) | 100 | `result-track:b0f62209e8f71e868d939e55866fbd9b8b6797ee88287c231d9ab94cf92fa987` |
+| 10 | `theorem` | [log_ratio_sixth_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogMoments.lean/declarations/log-ratio-sixth-integrable.md) | 111 | `result-track:b9a45c32c1f570867343c33bc038809159193b98a94c6279528f8e4459a98a58` |
+| 11 | `theorem` | [log_ratio_sixth_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogMoments.lean/declarations/log-ratio-sixth-integral.md) | 115 | `result-track:baf4f885a5739a6dc8aae85cf80bd85702a646565decde7fc11fdcaf3a58ef11` |
+| 12 | `theorem` | [log_ratio_seventh_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogMoments.lean/declarations/log-ratio-seventh-integrable.md) | 119 | `result-track:caff4c39302bbae792fb3001cbfefe8b4eb5640b3b821bcc9f745bbd9f24a24c` |
+| 13 | `theorem` | [log_ratio_seventh_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogMoments.lean/declarations/log-ratio-seventh-integral.md) | 123 | `result-track:bd341f2a5cef8f3ddfef4e34aaa6383ccf95e52f1ad551c1448b44034a720745` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

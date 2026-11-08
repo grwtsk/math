@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cellKernel](../../../../MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/declarations/cellkernel.md) | 21 | `declaration-track:f07ab67369af58ab01d25da42995322d282cb843d415187d7ae34836c62ed1d2` |
-| 2 | `def` | [cellDerivative](../../../../MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/declarations/cellderivative.md) | 22 | `declaration-track:91358815edd7787f2eecb93e2c20f202104370f5da88d4972422905cf4199eca` |
-| 3 | `def` | [derivativeMajorant](../../../../MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/declarations/derivativemajorant.md) | 23 | `declaration-track:924a91913b83ca195f436c732f72ba74bf0c709a6009ed9f14e1c442d2a7dc60` |
-| 4 | `theorem` | [cellKernel_integrable](../../../../MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/declarations/cellkernel-integrable.md) | 25 | `result-track:c14a03c184918552e2063d8f059b1f7a6ec643f81bc51db412669d9afc0e82e4` |
-| 5 | `theorem` | [cellDerivative_integrable](../../../../MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/declarations/cellderivative-integrable.md) | 35 | `result-track:a47a2a3bdecd9e038d17871d88a7d152fe33694f2662d63d3e74d72b6a0bbe4b` |
-| 6 | `theorem` | [cellKernel_hasDerivAt](../../../../MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/declarations/cellkernel-hasderivat.md) | 46 | `result-track:8c58e1c36e321e7863a631d1c3029ce08e939d801ecd0ce3ad60554fcf3c3c58` |
-| 7 | `theorem` | [cellDerivative_bound](../../../../MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/declarations/cellderivative-bound.md) | 61 | `result-track:82b9be19997a8050901872ed71ae22f6cd58d65a0a88b4b52b3c1fbc7396ec6f` |
-| 8 | `theorem` | [term_hasDerivAt](../../../../MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/declarations/term-hasderivat.md) | 81 | `result-track:efa3bfaa87d346af0f78a14ccd406c57e4d88a6665368e5174d3539e07a244a9` |
-| 9 | `theorem` | [term_hasDerivAt_one](../../../../MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/declarations/term-hasderivat-one.md) | 106 | `result-track:45ae3f251a97daed2de8a6a9313053dc309024db978482940a0a20529837c9b9` |
+| 1 | `def` | [cellKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/declarations/cellkernel.md) | 21 | `declaration-track:f07ab67369af58ab01d25da42995322d282cb843d415187d7ae34836c62ed1d2` |
+| 2 | `def` | [cellDerivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/declarations/cellderivative.md) | 22 | `declaration-track:91358815edd7787f2eecb93e2c20f202104370f5da88d4972422905cf4199eca` |
+| 3 | `def` | [derivativeMajorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/declarations/derivativemajorant.md) | 23 | `declaration-track:924a91913b83ca195f436c732f72ba74bf0c709a6009ed9f14e1c442d2a7dc60` |
+| 4 | `theorem` | [cellKernel_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/declarations/cellkernel-integrable.md) | 25 | `result-track:c14a03c184918552e2063d8f059b1f7a6ec643f81bc51db412669d9afc0e82e4` |
+| 5 | `theorem` | [cellDerivative_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/declarations/cellderivative-integrable.md) | 35 | `result-track:a47a2a3bdecd9e038d17871d88a7d152fe33694f2662d63d3e74d72b6a0bbe4b` |
+| 6 | `theorem` | [cellKernel_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/declarations/cellkernel-hasderivat.md) | 46 | `result-track:8c58e1c36e321e7863a631d1c3029ce08e939d801ecd0ce3ad60554fcf3c3c58` |
+| 7 | `theorem` | [cellDerivative_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/declarations/cellderivative-bound.md) | 61 | `result-track:82b9be19997a8050901872ed71ae22f6cd58d65a0a88b4b52b3c1fbc7396ec6f` |
+| 8 | `theorem` | [term_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/declarations/term-hasderivat.md) | 81 | `result-track:efa3bfaa87d346af0f78a14ccd406c57e4d88a6665368e5174d3539e07a244a9` |
+| 9 | `theorem` | [term_hasDerivAt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt05NamespacedCellKernel.lean/declarations/term-hasderivat-one.md) | 106 | `result-track:45ae3f251a97daed2de8a6a9313053dc309024db978482940a0a20529837c9b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

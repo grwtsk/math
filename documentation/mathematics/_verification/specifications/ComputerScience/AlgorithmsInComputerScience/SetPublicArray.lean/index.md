@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SetPublicArray.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SetPublicArray.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SetPublicArray.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SetPublicArray.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Array.set](../../../../../ComputerScience/AlgorithmsInComputerScience/SetPublicArray.lean/declarations/array-set-source-edition-2.md) | 30 | `declaration-track:a244c59cc99c7689d8786929ca6307a4ba48070f61a4f3d06cb79e04b5c09850` |
-| 2 | `def` | [Array.setIfInBounds](../../../../../ComputerScience/AlgorithmsInComputerScience/SetPublicArray.lean/declarations/array-setifinbounds.md) | 45 | `declaration-track:10c8182aa5f34d9fe3a137cfdff75d661ca08ed9bf0c988dcdb02e9327dac4b0` |
-| 3 | `def` | [Array.set!](../../../../../ComputerScience/AlgorithmsInComputerScience/SetPublicArray.lean/declarations/array-set.md) | 55 | `declaration-track:15398eedc3707b38fd6306be5515ff198f0b1a6c797fb3b33fddfffde9e26061` |
+| 1 | `def` | [Array.set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SetPublicArray.lean/declarations/array-set-source-edition-2.md) | 30 | `declaration-track:a244c59cc99c7689d8786929ca6307a4ba48070f61a4f3d06cb79e04b5c09850` |
+| 2 | `def` | [Array.setIfInBounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SetPublicArray.lean/declarations/array-setifinbounds.md) | 45 | `declaration-track:10c8182aa5f34d9fe3a137cfdff75d661ca08ed9bf0c988dcdb02e9327dac4b0` |
+| 3 | `def` | [Array.set!](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SetPublicArray.lean/declarations/array-set.md) | 55 | `declaration-track:15398eedc3707b38fd6306be5515ff198f0b1a6c797fb3b33fddfffde9e26061` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/RationalPowerTrace.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/RationalPowerTrace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerTrace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerTrace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.IntegerDyadicTrace`](../../../../FunctionsOfAComplexVariable/IntegerDyadicTrace.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.RationalPowerEvaluation`](../../../../FunctionsOfAComplexVariable/RationalPowerEvaluation.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.IntegerDyadicTrace`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntegerDyadicTrace.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalPowerEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerEvaluation.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [check](../../../../FunctionsOfAComplexVariable/RationalPowerTrace.lean/declarations/check.md) | 24 | `declaration-track:d766d805edfcfd32caa063f11e6ce14c55e6f0b1af6da9cb38de3af9a6acd11d` |
-| 2 | `theorem` | [check_iff](../../../../FunctionsOfAComplexVariable/RationalPowerTrace.lean/declarations/check-iff.md) | 31 | `result-track:f3aceadc4f9210f0eb920d7112a33ddc9f4f6d3f0c9d4009d5c442efbef9a3bd` |
-| 3 | `theorem` | [compute_eq_of_check](../../../../FunctionsOfAComplexVariable/RationalPowerTrace.lean/declarations/compute-eq-of-check.md) | 40 | `result-track:2bbb9c497a88e0754167c75c8ca98f91ac49e15b2cfd8497889aeae23ebbc224` |
-| 4 | `theorem` | [source_sound](../../../../FunctionsOfAComplexVariable/RationalPowerTrace.lean/declarations/source-sound.md) | 48 | `result-track:f11a8266b0330927df310c515d445e51696649fc20b1f3f4c2ff2e1d08d7bec2` |
-| 5 | `theorem` | [original_verify_of_check](../../../../FunctionsOfAComplexVariable/RationalPowerTrace.lean/declarations/original-verify-of-check.md) | 57 | `result-track:20f58aeec5cf681ff6c3e3a9c61fdc7af4e65f7cc17cdc5656fc8e97546694b9` |
+| 1 | `def` | [check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerTrace.lean/declarations/check.md) | 24 | `declaration-track:d766d805edfcfd32caa063f11e6ce14c55e6f0b1af6da9cb38de3af9a6acd11d` |
+| 2 | `theorem` | [check_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerTrace.lean/declarations/check-iff.md) | 31 | `result-track:f3aceadc4f9210f0eb920d7112a33ddc9f4f6d3f0c9d4009d5c442efbef9a3bd` |
+| 3 | `theorem` | [compute_eq_of_check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerTrace.lean/declarations/compute-eq-of-check.md) | 40 | `result-track:2bbb9c497a88e0754167c75c8ca98f91ac49e15b2cfd8497889aeae23ebbc224` |
+| 4 | `theorem` | [source_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerTrace.lean/declarations/source-sound.md) | 48 | `result-track:f11a8266b0330927df310c515d445e51696649fc20b1f3f4c2ff2e1d08d7bec2` |
+| 5 | `theorem` | [original_verify_of_check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerTrace.lean/declarations/original-verify-of-check.md) | 57 | `result-track:20f58aeec5cf681ff6c3e3a9c61fdc7af4e65f7cc17cdc5656fc8e97546694b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

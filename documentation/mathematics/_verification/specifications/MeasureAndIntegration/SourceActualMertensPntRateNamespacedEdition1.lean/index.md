@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualMertensPntRateNamespacedEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualMertensPntRateNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMertensPntRateNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMertensPntRateNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualRelativePsiTimeError_tail_integrable](../../../../MeasureAndIntegration/SourceActualMertensPntRateNamespacedEdition1.lean/declarations/actualrelativepsitimeerror-tail-integrable.md) | 31 | `result-track:61d319b890895ba27f92f61176e4a44cc1cfb37692e9b01d4a7e714ba7b7e37b` |
-| 2 | `theorem` | [actualCenteredMangoldtLogError_eq_delta_sub_tail](../../../../MeasureAndIntegration/SourceActualMertensPntRateNamespacedEdition1.lean/declarations/actualcenteredmangoldtlogerror-eq-delta-sub-tail.md) | 36 | `result-track:7ba297969df7ffed3fe8f04e58c393859fac8283c4824d3195d25108c7be53bf` |
-| 3 | `theorem` | [actualPntHalfRate_integrable](../../../../MeasureAndIntegration/SourceActualMertensPntRateNamespacedEdition1.lean/declarations/actualpnthalfrate-integrable.md) | 48 | `result-track:1ebcd26bde2eef9d6ddf169c983fd9f0bce663fb7a636dae3e14cd711b4f5286` |
-| 4 | `theorem` | [actualRelativePsiTimeError_tail_abs_le](../../../../MeasureAndIntegration/SourceActualMertensPntRateNamespacedEdition1.lean/declarations/actualrelativepsitimeerror-tail-abs-le.md) | 55 | `result-track:571ac75223751167148dd7244f193b6b7363b81bbad4bc3758911791568f32dc` |
-| 5 | `theorem` | [actualCenteredMangoldtLogError_isBigO](../../../../MeasureAndIntegration/SourceActualMertensPntRateNamespacedEdition1.lean/declarations/actualcenteredmangoldtlogerror-isbigo.md) | 98 | `result-track:2391a8881af177d739e36c4e346256b44ad215334e8762c192799f722f5f29b0` |
+| 1 | `theorem` | [actualRelativePsiTimeError_tail_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMertensPntRateNamespacedEdition1.lean/declarations/actualrelativepsitimeerror-tail-integrable.md) | 31 | `result-track:61d319b890895ba27f92f61176e4a44cc1cfb37692e9b01d4a7e714ba7b7e37b` |
+| 2 | `theorem` | [actualCenteredMangoldtLogError_eq_delta_sub_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMertensPntRateNamespacedEdition1.lean/declarations/actualcenteredmangoldtlogerror-eq-delta-sub-tail.md) | 36 | `result-track:7ba297969df7ffed3fe8f04e58c393859fac8283c4824d3195d25108c7be53bf` |
+| 3 | `theorem` | [actualPntHalfRate_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMertensPntRateNamespacedEdition1.lean/declarations/actualpnthalfrate-integrable.md) | 48 | `result-track:1ebcd26bde2eef9d6ddf169c983fd9f0bce663fb7a636dae3e14cd711b4f5286` |
+| 4 | `theorem` | [actualRelativePsiTimeError_tail_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMertensPntRateNamespacedEdition1.lean/declarations/actualrelativepsitimeerror-tail-abs-le.md) | 55 | `result-track:571ac75223751167148dd7244f193b6b7363b81bbad4bc3758911791568f32dc` |
+| 5 | `theorem` | [actualCenteredMangoldtLogError_isBigO](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMertensPntRateNamespacedEdition1.lean/declarations/actualcenteredmangoldtlogerror-isbigo.md) | 98 | `result-track:2391a8881af177d739e36c4e346256b44ad215334e8762c192799f722f5f29b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PowNamespacedEdition1.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PowNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PowNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PowNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [strictConcaveOn_rpow](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PowNamespacedEdition1.lean/declarations/strictconcaveon-rpow.md) | 42 | `result-track:bdf477925f863c91beaecad435916f561c9400fd91deeb5b52ae80a578f2f7be` |
-| 2 | `lemma` | [concaveOn_rpow](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PowNamespacedEdition1.lean/declarations/concaveon-rpow.md) | 55 | `result-track:32fb083b92fee26d5038294280756f3a7de7a5516f89b4d4b4c993e63e84fd38` |
-| 3 | `lemma` | [strictConcaveOn_sqrt](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PowNamespacedEdition1.lean/declarations/strictconcaveon-sqrt-source-edition-2.md) | 63 | `result-track:731ad10727f5b01da6ede6cbb4fc16696aaa4f7ff72c30e7c38a2ce92e8cc750` |
-| 4 | `lemma` | [strictConcaveOn_rpow](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PowNamespacedEdition1.lean/declarations/strictconcaveon-rpow-source-edition-2.md) | 75 | `result-track:e914f2e7d4feecc2e410751fa0b3b5de1c53ef4fa25d00d4bce8777c9f4122fe` |
-| 5 | `lemma` | [concaveOn_rpow](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PowNamespacedEdition1.lean/declarations/concaveon-rpow-source-edition-2.md) | 87 | `result-track:8e7efe8b6c2654131884e558cc1563503a5aaafb2c77bf089150fddd3093b368` |
-| 6 | `lemma` | [strictConcaveOn_sqrt](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PowNamespacedEdition1.lean/declarations/strictconcaveon-sqrt.md) | 95 | `result-track:723e7762653e74f5b3d761912c7c8be2082f82d234c4cdac1bca3d8b7196f621` |
+| 1 | `lemma` | [strictConcaveOn_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PowNamespacedEdition1.lean/declarations/strictconcaveon-rpow.md) | 42 | `result-track:bdf477925f863c91beaecad435916f561c9400fd91deeb5b52ae80a578f2f7be` |
+| 2 | `lemma` | [concaveOn_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PowNamespacedEdition1.lean/declarations/concaveon-rpow.md) | 55 | `result-track:32fb083b92fee26d5038294280756f3a7de7a5516f89b4d4b4c993e63e84fd38` |
+| 3 | `lemma` | [strictConcaveOn_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PowNamespacedEdition1.lean/declarations/strictconcaveon-sqrt-source-edition-2.md) | 63 | `result-track:731ad10727f5b01da6ede6cbb4fc16696aaa4f7ff72c30e7c38a2ce92e8cc750` |
+| 4 | `lemma` | [strictConcaveOn_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PowNamespacedEdition1.lean/declarations/strictconcaveon-rpow-source-edition-2.md) | 75 | `result-track:e914f2e7d4feecc2e410751fa0b3b5de1c53ef4fa25d00d4bce8777c9f4122fe` |
+| 5 | `lemma` | [concaveOn_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PowNamespacedEdition1.lean/declarations/concaveon-rpow-source-edition-2.md) | 87 | `result-track:8e7efe8b6c2654131884e558cc1563503a5aaafb2c77bf089150fddd3093b368` |
+| 6 | `lemma` | [strictConcaveOn_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PowNamespacedEdition1.lean/declarations/strictconcaveon-sqrt.md) | 95 | `result-track:723e7762653e74f5b3d761912c7c8be2082f82d234c4cdac1bca3d8b7196f621` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

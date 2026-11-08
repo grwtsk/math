@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ReflectsIsoLimitsPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ReflectsIsoLimitsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ReflectsIsoLimitsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ReflectsIsoLimitsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [jointlyReflectsLimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ReflectsIsoLimitsPublic.lean/declarations/jointlyreflectslimit.md) | 36 | `declaration-track:9cec479e1aae22de1e4f77f2792131bb0392ca13f2971c2faeb14d7a7958bc6f` |
-| 2 | `def` | [jointlyReflectsColimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ReflectsIsoLimitsPublic.lean/declarations/jointlyreflectscolimit.md) | 61 | `declaration-track:10c60c4e18c151d826f6a5ae35e1e1ff2d630a383fc7016a7cc15266dff07aee` |
+| 1 | `def` | [jointlyReflectsLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ReflectsIsoLimitsPublic.lean/declarations/jointlyreflectslimit.md) | 36 | `declaration-track:9cec479e1aae22de1e4f77f2792131bb0392ca13f2971c2faeb14d7a7958bc6f` |
+| 2 | `def` | [jointlyReflectsColimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ReflectsIsoLimitsPublic.lean/declarations/jointlyreflectscolimit.md) | 61 | `declaration-track:10c60c4e18c151d826f6a5ae35e1e1ff2d630a383fc7016a7cc15266dff07aee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

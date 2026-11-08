@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CoefficientRingNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/CoefficientRingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoefficientRingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoefficientRingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RationalQSeries](../../../../Combinatorics/CoefficientRingNamespaced.lean/declarations/rationalqseries.md) | 22 | `declaration-track:a91495f32b0258262471d33fd8a40be956ed874527ee03310d3928a7788764b4` |
-| 2 | `def` | [RationalQSeries.evaluateThrough](../../../../Combinatorics/CoefficientRingNamespaced.lean/declarations/rationalqseries-evaluatethrough.md) | 25 | `declaration-track:3d14f580b0edabeb6c9c7bcd44477cc6b211530c00ef18282ecf041e99b7b961` |
-| 3 | `structure` | [QInterval](../../../../Combinatorics/CoefficientRingNamespaced.lean/declarations/qinterval.md) | 32 | `declaration-track:7a85d986789f57741f66cbf8707bc2cd0a448e8c28e3517e218024ad313351ae` |
-| 4 | `inductive` | [CoefficientDomain](../../../../Combinatorics/CoefficientRingNamespaced.lean/declarations/coefficientdomain.md) | 39 | `declaration-track:e40c4dbddc3fc9c0fb65596dbb3f99196ca00aec07385a062072343cc58524ee` |
-| 5 | `structure` | [CoefficientDomainCertificate](../../../../Combinatorics/CoefficientRingNamespaced.lean/declarations/coefficientdomaincertificate.md) | 46 | `declaration-track:b2a2071711694ed99f3a4807546f274b03f386fbef42c4af600878c37e1665b4` |
+| 1 | `structure` | [RationalQSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoefficientRingNamespaced.lean/declarations/rationalqseries.md) | 22 | `declaration-track:a91495f32b0258262471d33fd8a40be956ed874527ee03310d3928a7788764b4` |
+| 2 | `def` | [RationalQSeries.evaluateThrough](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoefficientRingNamespaced.lean/declarations/rationalqseries-evaluatethrough.md) | 25 | `declaration-track:3d14f580b0edabeb6c9c7bcd44477cc6b211530c00ef18282ecf041e99b7b961` |
+| 3 | `structure` | [QInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoefficientRingNamespaced.lean/declarations/qinterval.md) | 32 | `declaration-track:7a85d986789f57741f66cbf8707bc2cd0a448e8c28e3517e218024ad313351ae` |
+| 4 | `inductive` | [CoefficientDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoefficientRingNamespaced.lean/declarations/coefficientdomain.md) | 39 | `declaration-track:e40c4dbddc3fc9c0fb65596dbb3f99196ca00aec07385a062072343cc58524ee` |
+| 5 | `structure` | [CoefficientDomainCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoefficientRingNamespaced.lean/declarations/coefficientdomaincertificate.md) | 46 | `declaration-track:b2a2071711694ed99f3a4807546f274b03f386fbef42c4af600878c37e1665b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

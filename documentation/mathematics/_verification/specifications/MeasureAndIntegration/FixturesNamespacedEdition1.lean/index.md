@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FixturesNamespacedEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FixturesNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FixturesNamespacedEdition1.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:50d5f19051347e12c035711f67b9e206bfa34cbd791e47bad29ee248333f00b0` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FixturesNamespacedEdition1.lean/declarations/example.md) | 21 | `declaration-track:00d157ff83f40dfb6df75a5a95190e42d490f242ae1fa1fef0e68c0f2206515b` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FixturesNamespacedEdition1.lean/declarations/example-source-edition-3.md) | 25 | `declaration-track:cdf0a84b18e746c3eb6bc7ade0bd4fe22130ad4c4e6aa2c24039df3943e2edab` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesNamespacedEdition1.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:50d5f19051347e12c035711f67b9e206bfa34cbd791e47bad29ee248333f00b0` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesNamespacedEdition1.lean/declarations/example.md) | 21 | `declaration-track:00d157ff83f40dfb6df75a5a95190e42d490f242ae1fa1fef0e68c0f2206515b` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesNamespacedEdition1.lean/declarations/example-source-edition-3.md) | 25 | `declaration-track:cdf0a84b18e746c3eb6bc7ade0bd4fe22130ad4c4e6aa2c24039df3943e2edab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

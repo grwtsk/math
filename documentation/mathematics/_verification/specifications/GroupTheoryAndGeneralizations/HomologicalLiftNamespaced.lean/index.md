@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IntegralChainComplex](../../../../GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/integralchaincomplex.md) | 35 | `declaration-track:f73b2d60957788c3f1459556addfcc587254ce20938329b88978e42c955412c9` |
-| 2 | `structure` | [HomologicalLift](../../../../GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologicallift.md) | 41 | `declaration-track:de3c2e2835694f91767d23f143df2fd020fb019e6a783743df61a619d46d1b92` |
-| 3 | `def` | [homologyIso](../../../../GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologyiso.md) | 58 | `declaration-track:60f1a250aef566393415a35527980f83c5ff64dc5e6057bb46133a81ec8fb4e2` |
-| 4 | `def` | [homologyAddEquiv](../../../../GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologyaddequiv.md) | 63 | `declaration-track:023222b03f678e8cc059652034ca4ceb9081fb3434f5711f337a09c0a1023459` |
-| 5 | `theorem` | [homologyAddEquiv_apply](../../../../GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologyaddequiv-apply.md) | 68 | `result-track:b50278f98bef53f33bc8c37a40383db83e40ed2c967b234a75f7c459aaed7ed5` |
-| 6 | `theorem` | [homologyIso_hom_inv](../../../../GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologyiso-hom-inv.md) | 73 | `result-track:fe57f176e91803dc2a81a174a2ca55e309b23e2e3eb74d35a89f91c7dbf8d220` |
-| 7 | `theorem` | [homologyIso_inv_hom](../../../../GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologyiso-inv-hom.md) | 78 | `result-track:e6fd3373fec3f3f452b39efd06fe6e0596f79ab46f2ef1031b021b76783f0ac6` |
-| 8 | `theorem` | [homologyIso_isOfFinAddOrder_iff](../../../../GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologyiso-isoffinaddorder-iff.md) | 83 | `result-track:9f27fc779d9d1c94aad7509e141b0d43df1f1154b3318929cd574da5c545592f` |
-| 9 | `theorem` | [homologyIso_isOfFinOrder_iff](../../../../GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologyiso-isoffinorder-iff.md) | 92 | `result-track:fb9100e8d12dc48b06f26e43cca67550e9846d362b6acf3fd524da3830c953d3` |
-| 10 | `theorem` | [homologyIso_addOrderOf](../../../../GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologyiso-addorderof.md) | 99 | `result-track:56452af072b2d05d9345c6368b8ee3af51cf219965546cf5eea079845c1a55fc` |
-| 11 | `def` | [homologyTorsionEquiv](../../../../GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologytorsionequiv.md) | 106 | `declaration-track:23dd6c559fc32aada9a42d78433c9ccb1f03c9e6aabfb94fbbf76d26ffe29bef` |
+| 1 | `abbrev` | [IntegralChainComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/integralchaincomplex.md) | 35 | `declaration-track:f73b2d60957788c3f1459556addfcc587254ce20938329b88978e42c955412c9` |
+| 2 | `structure` | [HomologicalLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologicallift.md) | 41 | `declaration-track:de3c2e2835694f91767d23f143df2fd020fb019e6a783743df61a619d46d1b92` |
+| 3 | `def` | [homologyIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologyiso.md) | 58 | `declaration-track:60f1a250aef566393415a35527980f83c5ff64dc5e6057bb46133a81ec8fb4e2` |
+| 4 | `def` | [homologyAddEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologyaddequiv.md) | 63 | `declaration-track:023222b03f678e8cc059652034ca4ceb9081fb3434f5711f337a09c0a1023459` |
+| 5 | `theorem` | [homologyAddEquiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologyaddequiv-apply.md) | 68 | `result-track:b50278f98bef53f33bc8c37a40383db83e40ed2c967b234a75f7c459aaed7ed5` |
+| 6 | `theorem` | [homologyIso_hom_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologyiso-hom-inv.md) | 73 | `result-track:fe57f176e91803dc2a81a174a2ca55e309b23e2e3eb74d35a89f91c7dbf8d220` |
+| 7 | `theorem` | [homologyIso_inv_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologyiso-inv-hom.md) | 78 | `result-track:e6fd3373fec3f3f452b39efd06fe6e0596f79ab46f2ef1031b021b76783f0ac6` |
+| 8 | `theorem` | [homologyIso_isOfFinAddOrder_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologyiso-isoffinaddorder-iff.md) | 83 | `result-track:9f27fc779d9d1c94aad7509e141b0d43df1f1154b3318929cd574da5c545592f` |
+| 9 | `theorem` | [homologyIso_isOfFinOrder_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologyiso-isoffinorder-iff.md) | 92 | `result-track:fb9100e8d12dc48b06f26e43cca67550e9846d362b6acf3fd524da3830c953d3` |
+| 10 | `theorem` | [homologyIso_addOrderOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologyiso-addorderof.md) | 99 | `result-track:56452af072b2d05d9345c6368b8ee3af51cf219965546cf5eea079845c1a55fc` |
+| 11 | `def` | [homologyTorsionEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomologicalLiftNamespaced.lean/declarations/homologytorsionequiv.md) | 106 | `declaration-track:23dd6c559fc32aada9a42d78433c9ccb1f03c9e6aabfb94fbbf76d26ffe29bef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Coeff.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Coeff.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Coeff.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Coeff.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [norm_real_half_l_ge](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Coeff.lean/declarations/norm-real-half-l-ge.md) | 37 | `result-track:b41f63bad10f1c91ff4fa9b3db62305bcbc0ddd8ffc95f7b87b9906a14254191` |
-| 2 | `theorem` | [xiCoeffFamily_hyps](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Coeff.lean/declarations/xicoefffamily-hyps.md) | 41 | `result-track:6db3e5cd16a3c82e17949441ff20e3afa0987fb2f542ebc707f50cfe8a3a228f` |
-| 3 | `theorem` | [wCoeffFamily_hyps](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Coeff.lean/declarations/wcoefffamily-hyps.md) | 50 | `result-track:998cda024525981d35a8c882484cacb9dadfc9c9b8ac9111fc24ee858f5c4baa` |
+| 1 | `lemma` | [norm_real_half_l_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Coeff.lean/declarations/norm-real-half-l-ge.md) | 37 | `result-track:b41f63bad10f1c91ff4fa9b3db62305bcbc0ddd8ffc95f7b87b9906a14254191` |
+| 2 | `theorem` | [xiCoeffFamily_hyps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Coeff.lean/declarations/xicoefffamily-hyps.md) | 41 | `result-track:6db3e5cd16a3c82e17949441ff20e3afa0987fb2f542ebc707f50cfe8a3a228f` |
+| 3 | `theorem` | [wCoeffFamily_hyps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Coeff.lean/declarations/wcoefffamily-hyps.md) | 50 | `result-track:998cda024525981d35a8c882484cacb9dadfc9c9b8ac9111fc24ee858f5c4baa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

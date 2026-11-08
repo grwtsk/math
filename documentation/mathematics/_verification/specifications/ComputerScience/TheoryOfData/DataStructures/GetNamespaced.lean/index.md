@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/GetNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/GetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/GetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/GetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [indexOf](../../../../../../ComputerScience/TheoryOfData/DataStructures/GetNamespaced.lean/declarations/indexof.md) | 37 | `declaration-track:b02885a1d5197e2f03e59421217c8271389df3ea9847f1fa6bfe63cb55e8dd57` |
-| 2 | `def` | [get](../../../../../../ComputerScience/TheoryOfData/DataStructures/GetNamespaced.lean/declarations/get.md) | 50 | `declaration-track:d79350403a285b29cff7b4fe5cb3ba62296b03a493be25dd7baf495ca20ce32f` |
-| 3 | `def` | [getOrElse](../../../../../../ComputerScience/TheoryOfData/DataStructures/GetNamespaced.lean/declarations/getorelse.md) | 58 | `declaration-track:080a76875e1865c6bf093633dcf474ae28d7c5444a18ce2dc0d56c046094078b` |
+| 1 | `def` | [indexOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/GetNamespaced.lean/declarations/indexof.md) | 37 | `declaration-track:b02885a1d5197e2f03e59421217c8271389df3ea9847f1fa6bfe63cb55e8dd57` |
+| 2 | `def` | [get](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/GetNamespaced.lean/declarations/get.md) | 50 | `declaration-track:d79350403a285b29cff7b4fe5cb3ba62296b03a493be25dd7baf495ca20ce32f` |
+| 3 | `def` | [getOrElse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/GetNamespaced.lean/declarations/getorelse.md) | 58 | `declaration-track:080a76875e1865c6bf093633dcf474ae28d7c5444a18ce2dc0d56c046094078b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

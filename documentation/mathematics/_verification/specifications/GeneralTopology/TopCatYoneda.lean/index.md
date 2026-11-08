@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopCatYoneda.lean/index.md) · [Full source](../../../../GeneralTopology/TopCatYoneda.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatYoneda.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatYoneda.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [yonedaPresheaf](../../../../GeneralTopology/TopCatYoneda.lean/declarations/yonedapresheaf-source-edition-2.md) | 33 | `declaration-track:b84b78bd704c5fa06ceda7c45b6450802dc266d09367ad115a81324b60ade534` |
-| 2 | `def` | [yonedaPresheaf'](../../../../GeneralTopology/TopCatYoneda.lean/declarations/yonedapresheaf.md) | 42 | `declaration-track:6fe69018c52b2ec03eab2647b63d10defdf4af36d108a03da81252cce17ce76f` |
-| 3 | `theorem` | [comp_yonedaPresheaf'](../../../../GeneralTopology/TopCatYoneda.lean/declarations/comp-yonedapresheaf.md) | 46 | `result-track:f4b408c204c1ce77e7f9276b25bf0217f89ea366ed38569b56be68c96091ce70` |
-| 4 | `theorem` | [piComparison_fac](../../../../GeneralTopology/TopCatYoneda.lean/declarations/picomparison-fac.md) | 48 | `result-track:bd8feaa1e457ad0d45a39f66558483619b2ae39b3a4aa633e07d0d61e71fed3d` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/TopCatYoneda.lean/declarations/instance.md) | 61 | `declaration-track:e510d17b8c604e5056225866c6f7b9ce8dfed64e68aab82a97de05e61217ec56` |
+| 1 | `def` | [yonedaPresheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatYoneda.lean/declarations/yonedapresheaf-source-edition-2.md) | 33 | `declaration-track:b84b78bd704c5fa06ceda7c45b6450802dc266d09367ad115a81324b60ade534` |
+| 2 | `def` | [yonedaPresheaf'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatYoneda.lean/declarations/yonedapresheaf.md) | 42 | `declaration-track:6fe69018c52b2ec03eab2647b63d10defdf4af36d108a03da81252cce17ce76f` |
+| 3 | `theorem` | [comp_yonedaPresheaf'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatYoneda.lean/declarations/comp-yonedapresheaf.md) | 46 | `result-track:f4b408c204c1ce77e7f9276b25bf0217f89ea366ed38569b56be68c96091ce70` |
+| 4 | `theorem` | [piComparison_fac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatYoneda.lean/declarations/picomparison-fac.md) | 48 | `result-track:bd8feaa1e457ad0d45a39f66558483619b2ae39b3a4aa633e07d0d61e71fed3d` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatYoneda.lean/declarations/instance.md) | 61 | `declaration-track:e510d17b8c604e5056225866c6f7b9ce8dfed64e68aab82a97de05e61217ec56` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

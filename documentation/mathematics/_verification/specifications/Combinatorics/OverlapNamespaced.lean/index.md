@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/OverlapNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/OverlapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OverlapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OverlapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [MetadataProfile](../../../../Combinatorics/OverlapNamespaced.lean/declarations/metadataprofile.md) | 21 | `declaration-track:4dd66be08833a8f4da029235c6892a72e723f0477a21fa10dcab3d7d94aba652` |
-| 2 | `inductive` | [FieldComparison](../../../../Combinatorics/OverlapNamespaced.lean/declarations/fieldcomparison.md) | 27 | `declaration-track:fe3e977d025b1c515d32e2cc6050ca2a5717c675e2bca56041ff3853cf126f6d` |
-| 3 | `structure` | [FieldOverlap](../../../../Combinatorics/OverlapNamespaced.lean/declarations/fieldoverlap.md) | 36 | `declaration-track:64ba094b8bf8e07b2b04b8e6dcee8a8e152a80a43ddbdbbdddd14ec416269221` |
-| 4 | `structure` | [TypedOverlap](../../../../Combinatorics/OverlapNamespaced.lean/declarations/typedoverlap.md) | 45 | `declaration-track:de8c8727e5c39c4193f75b1cab2e5e64f2b7c7f087949c9c4416d837d669cd08` |
-| 5 | `structure` | [MetadataComparator](../../../../Combinatorics/OverlapNamespaced.lean/declarations/metadatacomparator.md) | 51 | `declaration-track:275aa81bcf297797aa97809c0c934da78198302027e8e446bd5086965a0df8b3` |
-| 6 | `def` | [computeOverlap](../../../../Combinatorics/OverlapNamespaced.lean/declarations/computeoverlap.md) | 65 | `declaration-track:d5a50a52e038ce7e318c57ede69454a8a1a5332b806a8c82ff0fc780aa726ab5` |
-| 7 | `theorem` | [computed_overlap_is_type_indexed](../../../../Combinatorics/OverlapNamespaced.lean/declarations/computed-overlap-is-type-indexed.md) | 82 | `result-track:2327b900acb6d919666c15213e50f29dd753081d8c1034d0d732d4c8c46a59b8` |
+| 1 | `abbrev` | [MetadataProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OverlapNamespaced.lean/declarations/metadataprofile.md) | 21 | `declaration-track:4dd66be08833a8f4da029235c6892a72e723f0477a21fa10dcab3d7d94aba652` |
+| 2 | `inductive` | [FieldComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OverlapNamespaced.lean/declarations/fieldcomparison.md) | 27 | `declaration-track:fe3e977d025b1c515d32e2cc6050ca2a5717c675e2bca56041ff3853cf126f6d` |
+| 3 | `structure` | [FieldOverlap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OverlapNamespaced.lean/declarations/fieldoverlap.md) | 36 | `declaration-track:64ba094b8bf8e07b2b04b8e6dcee8a8e152a80a43ddbdbbdddd14ec416269221` |
+| 4 | `structure` | [TypedOverlap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OverlapNamespaced.lean/declarations/typedoverlap.md) | 45 | `declaration-track:de8c8727e5c39c4193f75b1cab2e5e64f2b7c7f087949c9c4416d837d669cd08` |
+| 5 | `structure` | [MetadataComparator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OverlapNamespaced.lean/declarations/metadatacomparator.md) | 51 | `declaration-track:275aa81bcf297797aa97809c0c934da78198302027e8e446bd5086965a0df8b3` |
+| 6 | `def` | [computeOverlap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OverlapNamespaced.lean/declarations/computeoverlap.md) | 65 | `declaration-track:d5a50a52e038ce7e318c57ede69454a8a1a5332b806a8c82ff0fc780aa726ab5` |
+| 7 | `theorem` | [computed_overlap_is_type_indexed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OverlapNamespaced.lean/declarations/computed-overlap-is-type-indexed.md) | 82 | `result-track:2327b900acb6d919666c15213e50f29dd753081d8c1034d0d732d4c8c46a59b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

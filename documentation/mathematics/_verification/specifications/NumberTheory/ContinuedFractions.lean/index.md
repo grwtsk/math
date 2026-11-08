@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ContinuedFractions.lean/index.md) · [Full source](../../../../NumberTheory/ContinuedFractions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ContinuedFractions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ContinuedFractions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [convs_eq_convergent](../../../../NumberTheory/ContinuedFractions.lean/declarations/convs-eq-convergent.md) | 34 | `result-track:d24077d20f1beb0221d323f29a19312f5082f659b640131411a11b8c0e16b146` |
-| 2 | `theorem` | [exists_convs_eq_rat](../../../../NumberTheory/ContinuedFractions.lean/declarations/exists-convs-eq-rat.md) | 52 | `result-track:e6215e2eb18b8a95ea384830c916f782bf4389ed5255bd649c7ff2e5f39934c4` |
+| 1 | `theorem` | [convs_eq_convergent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ContinuedFractions.lean/declarations/convs-eq-convergent.md) | 34 | `result-track:d24077d20f1beb0221d323f29a19312f5082f659b640131411a11b8c0e16b146` |
+| 2 | `theorem` | [exists_convs_eq_rat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ContinuedFractions.lean/declarations/exists-convs-eq-rat.md) | 52 | `result-track:e6215e2eb18b8a95ea384830c916f782bf4389ed5255bd649c7ff2e5f39934c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

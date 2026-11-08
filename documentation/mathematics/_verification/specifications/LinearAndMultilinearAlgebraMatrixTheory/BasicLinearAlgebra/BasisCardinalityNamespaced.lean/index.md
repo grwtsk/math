@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisCardinalityNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisCardinalityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisCardinalityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisCardinalityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [finite_of_span_finite_eq_top_finsupp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisCardinalityNamespaced.lean/declarations/finite-of-span-finite-eq-top-finsupp.md) | 35 | `result-track:77294ce3e26df8fb9ced7e8ec84d25ff0c8f4b5c2a67471991c6babae854e17d` |
-| 2 | `lemma` | [basis_finite_of_finite_spans](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisCardinalityNamespaced.lean/declarations/basis-finite-of-finite-spans.md) | 58 | `result-track:fefcded365745c1226ad763b0db0ad4c7e982944c2053c74a5f199d67bcdc94d` |
-| 3 | `theorem` | [union_support_maximal_linearIndependent_eq_range_basis](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisCardinalityNamespaced.lean/declarations/union-support-maximal-linearindependent-eq-range-basis.md) | 75 | `result-track:6fe11beaa7b602171ed5b9196ed2ac838fec41a693641aa1f147d2dcafec58a7` |
-| 4 | `theorem` | [infinite_basis_le_maximal_linearIndependent'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisCardinalityNamespaced.lean/declarations/infinite-basis-le-maximal-linearindependent.md) | 118 | `result-track:0955f25e523e2cbec6d393749f52f9339d52c27df7c57e6df733fccefb79e0b0` |
-| 5 | `theorem` | [infinite_basis_le_maximal_linearIndependent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisCardinalityNamespaced.lean/declarations/infinite-basis-le-maximal-linearindependent-source-edition-2.md) | 134 | `result-track:981cba4234109b425d74fec3a354f175aed102f5ed3c617eda4be3f1bba9a625` |
+| 1 | `lemma` | [finite_of_span_finite_eq_top_finsupp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisCardinalityNamespaced.lean/declarations/finite-of-span-finite-eq-top-finsupp.md) | 35 | `result-track:77294ce3e26df8fb9ced7e8ec84d25ff0c8f4b5c2a67471991c6babae854e17d` |
+| 2 | `lemma` | [basis_finite_of_finite_spans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisCardinalityNamespaced.lean/declarations/basis-finite-of-finite-spans.md) | 58 | `result-track:fefcded365745c1226ad763b0db0ad4c7e982944c2053c74a5f199d67bcdc94d` |
+| 3 | `theorem` | [union_support_maximal_linearIndependent_eq_range_basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisCardinalityNamespaced.lean/declarations/union-support-maximal-linearindependent-eq-range-basis.md) | 75 | `result-track:6fe11beaa7b602171ed5b9196ed2ac838fec41a693641aa1f147d2dcafec58a7` |
+| 4 | `theorem` | [infinite_basis_le_maximal_linearIndependent'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisCardinalityNamespaced.lean/declarations/infinite-basis-le-maximal-linearindependent.md) | 118 | `result-track:0955f25e523e2cbec6d393749f52f9339d52c27df7c57e6df733fccefb79e0b0` |
+| 5 | `theorem` | [infinite_basis_le_maximal_linearIndependent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisCardinalityNamespaced.lean/declarations/infinite-basis-le-maximal-linearindependent-source-edition-2.md) | 134 | `result-track:981cba4234109b425d74fec3a354f175aed102f5ed3c617eda4be3f1bba9a625` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

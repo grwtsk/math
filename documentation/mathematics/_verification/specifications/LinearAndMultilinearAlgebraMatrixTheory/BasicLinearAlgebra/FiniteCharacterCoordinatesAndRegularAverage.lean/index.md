@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteCharacterCoordinatesAndRegularAverage.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteCharacterCoordinatesAndRegularAverage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteCharacterCoordinatesAndRegularAverage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteCharacterCoordinatesAndRegularAverage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,12 +62,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [CharacterIndex](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteCharacterCoordinatesAndRegularAverage.lean/declarations/characterindex.md) | 46 | `declaration-track:efb65560d536fd944ea563a5b0154020c3fddd0b3958f6d51329950b579dc457` |
-| 2 | `instance` | [characterIndexFintype](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteCharacterCoordinatesAndRegularAverage.lean/declarations/characterindexfintype.md) | 49 | `declaration-track:3155cd0fcca31c7ecf67030d08c864594c335d299fd026bae0837c54b8ff85ec` |
-| 3 | `abbrev` | [CharacterHilbert](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteCharacterCoordinatesAndRegularAverage.lean/declarations/characterhilbert.md) | 53 | `declaration-track:0a5d5a8b486da18eda0c22b331828870d7d54903bd814d1901a842343636d670` |
-| 4 | `def` | [rightRegularMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteCharacterCoordinatesAndRegularAverage.lean/declarations/rightregularmatrix.md) | 58 | `declaration-track:cc0852903cb16cc063f86f915579e8af0b207fa53f107a893bd128e60e332701` |
-| 5 | `theorem` | [rightRegularMatrix_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteCharacterCoordinatesAndRegularAverage.lean/declarations/rightregularmatrix-apply.md) | 65 | `result-track:f07c19dd69349fc27b732b081829d993996bca0b132b753186da978d0e4d8f91` |
-| 6 | `def` | [characterRegularAverageMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteCharacterCoordinatesAndRegularAverage.lean/declarations/characterregularaveragematrix.md) | 73 | `declaration-track:ab7a8be258d2bf0eaf2d2677067ef651ae7896ce8550cc1a63babef81aabefc5` |
+| 1 | `abbrev` | [CharacterIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteCharacterCoordinatesAndRegularAverage.lean/declarations/characterindex.md) | 46 | `declaration-track:efb65560d536fd944ea563a5b0154020c3fddd0b3958f6d51329950b579dc457` |
+| 2 | `instance` | [characterIndexFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteCharacterCoordinatesAndRegularAverage.lean/declarations/characterindexfintype.md) | 49 | `declaration-track:3155cd0fcca31c7ecf67030d08c864594c335d299fd026bae0837c54b8ff85ec` |
+| 3 | `abbrev` | [CharacterHilbert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteCharacterCoordinatesAndRegularAverage.lean/declarations/characterhilbert.md) | 53 | `declaration-track:0a5d5a8b486da18eda0c22b331828870d7d54903bd814d1901a842343636d670` |
+| 4 | `def` | [rightRegularMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteCharacterCoordinatesAndRegularAverage.lean/declarations/rightregularmatrix.md) | 58 | `declaration-track:cc0852903cb16cc063f86f915579e8af0b207fa53f107a893bd128e60e332701` |
+| 5 | `theorem` | [rightRegularMatrix_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteCharacterCoordinatesAndRegularAverage.lean/declarations/rightregularmatrix-apply.md) | 65 | `result-track:f07c19dd69349fc27b732b081829d993996bca0b132b753186da978d0e4d8f91` |
+| 6 | `def` | [characterRegularAverageMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteCharacterCoordinatesAndRegularAverage.lean/declarations/characterregularaveragematrix.md) | 73 | `declaration-track:ab7a8be258d2bf0eaf2d2677067ef651ae7896ce8550cc1a63babef81aabefc5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

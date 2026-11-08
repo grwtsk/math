@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,14 +61,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/declarations/instance-source-edition-6.md) | 22 | `declaration-track:da0ea6d313f94254f658958affba2f2da6c185a889396671824fd08803031bc1` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/declarations/instance.md) | 27 | `declaration-track:0941ebd1595494c3ff150f883d3caa5c2c691a4ba80bc89729f17963151f1ade` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/declarations/instance-source-edition-2.md) | 45 | `declaration-track:109fb104c31fd14de1c7a485b9025131bd459dd9150dbbd1afed9cd5687a05e1` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/declarations/instance-source-edition-7.md) | 49 | `declaration-track:f6823affff13cb626646d0fcefa069f13bc9109e3f45089f81b1ecc9c61df100` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/declarations/instance-source-edition-4.md) | 52 | `declaration-track:32ef30651e742f70a4cc3be73b53b0f6e9bb95ecf099068e298e7e583bb5c7d7` |
-| 6 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/declarations/instance-source-edition-5.md) | 57 | `declaration-track:86f4a41846807586e61d4e827b4448b7e6ee6c3899a137185d5ef2003f4f8ab9` |
-| 7 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/declarations/instance-source-edition-3.md) | 59 | `declaration-track:187b8206218e9eda10de25feda8ee031acc8fb810423d860307a2316e4bfb5de` |
-| 8 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/declarations/instance-source-edition-8.md) | 89 | `declaration-track:fb1e05cfa6b623c4f5a45278936fa495f199319c87993dfb2c5922485676f94b` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/declarations/instance-source-edition-6.md) | 22 | `declaration-track:da0ea6d313f94254f658958affba2f2da6c185a889396671824fd08803031bc1` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/declarations/instance.md) | 27 | `declaration-track:0941ebd1595494c3ff150f883d3caa5c2c691a4ba80bc89729f17963151f1ade` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/declarations/instance-source-edition-2.md) | 45 | `declaration-track:109fb104c31fd14de1c7a485b9025131bd459dd9150dbbd1afed9cd5687a05e1` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/declarations/instance-source-edition-7.md) | 49 | `declaration-track:f6823affff13cb626646d0fcefa069f13bc9109e3f45089f81b1ecc9c61df100` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/declarations/instance-source-edition-4.md) | 52 | `declaration-track:32ef30651e742f70a4cc3be73b53b0f6e9bb95ecf099068e298e7e583bb5c7d7` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/declarations/instance-source-edition-5.md) | 57 | `declaration-track:86f4a41846807586e61d4e827b4448b7e6ee6c3899a137185d5ef2003f4f8ab9` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/declarations/instance-source-edition-3.md) | 59 | `declaration-track:187b8206218e9eda10de25feda8ee031acc8fb810423d860307a2316e4bfb5de` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAB.lean/declarations/instance-source-edition-8.md) | 89 | `declaration-track:fb1e05cfa6b623c4f5a45278936fa495f199319c87993dfb2c5922485676f94b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDualPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDualPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDualPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDualPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [LinearMap.toMatrix_transpose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDualPublic.lean/declarations/linearmap-tomatrix-transpose.md) | 33 | `result-track:24a44ae5ad56402ea325105e4f94ccd6c5b8a961f2d274bf2e52198c2b367dd6` |
-| 2 | `theorem` | [Matrix.toLin_transpose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDualPublic.lean/declarations/matrix-tolin-transpose.md) | 41 | `result-track:1d98255f0e38acdb31110fb26bb3dd9416b88c60f0aeed8d0ac51f65651ac337` |
-| 3 | `def` | [dotProductEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDualPublic.lean/declarations/dotproductequiv.md) | 49 | `declaration-track:913872e61bc2b04aa28be8f5961265c11a5c9147a91f4587798f2927e9f88e0c` |
+| 1 | `theorem` | [LinearMap.toMatrix_transpose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDualPublic.lean/declarations/linearmap-tomatrix-transpose.md) | 33 | `result-track:24a44ae5ad56402ea325105e4f94ccd6c5b8a961f2d274bf2e52198c2b367dd6` |
+| 2 | `theorem` | [Matrix.toLin_transpose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDualPublic.lean/declarations/matrix-tolin-transpose.md) | 41 | `result-track:1d98255f0e38acdb31110fb26bb3dd9416b88c60f0aeed8d0ac51f65651ac337` |
+| 3 | `def` | [dotProductEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDualPublic.lean/declarations/dotproductequiv.md) | 49 | `declaration-track:913872e61bc2b04aa28be8f5961265c11a5c9147a91f4587798f2927e9f88e0c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GroupEquivBasic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GroupEquivBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEquivBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEquivBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,20 +59,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [MulEquivClass.toMulEquiv_injective](../../../../GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/mulequivclass-tomulequiv-injective.md) | 34 | `result-track:e0d0e7a382c3fcc4a66320ac9eb6941b6bff84eea8c7eccc142bab32e7d45b53` |
-| 2 | `def` | [ofUnique](../../../../GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/ofunique.md) | 46 | `declaration-track:c35fae679f5030a8c37837d1b4a9e9180786bad849aae17ad764cf8120af59bd` |
-| 3 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/instance.md) | 58 | `declaration-track:35da5ca0748e940c309246d3839e89f86ef70d4b43c8acf1da6c8327f9526012` |
-| 4 | `def` | [arrowCongr](../../../../GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/arrowcongr.md) | 75 | `declaration-track:934502f719c0d0c04cd9b2ec0c6709eb7f6db932b4eca6abda367065183dc0e4` |
-| 5 | `def` | [monoidHomCongr](../../../../GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/monoidhomcongr.md) | 89 | `declaration-track:6c986d689f535c8c18243f3d2c2ed061d5baabc6d27985bf0a8ee8c9b210f465` |
-| 6 | `def` | [piCongrRight](../../../../GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/picongrright.md) | 109 | `declaration-track:87b1dbc122dffce78b33a435dad17023470d6bf15fb4bf38036a371c2e0edeef` |
-| 7 | `theorem` | [piCongrRight_refl](../../../../GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/picongrright-refl.md) | 117 | `result-track:2b7b293329f16e727caf13673355f201af99e6096c3e176d87eb05bb0cedce32` |
-| 8 | `theorem` | [piCongrRight_symm](../../../../GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/picongrright-symm.md) | 121 | `result-track:77538084d63f41cd574227dc3a031d0dd46fba3962e4e548b7571c462063f776` |
-| 9 | `theorem` | [piCongrRight_trans](../../../../GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/picongrright-trans.md) | 125 | `result-track:84a00053ca23bf8a14027a78dafa5cc18c8eb5e01aa668c13d48059aa178c41d` |
-| 10 | `def` | [piUnique](../../../../GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/piunique.md) | 134 | `declaration-track:b1bc4a2a20614276f5ac73edd3668e39003210be7cf82f90eae497f48ad85dc2` |
-| 11 | `def` | [precompEquiv](../../../../GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/precompequiv.md) | 147 | `declaration-track:c02477d7f0c0f8d51eb1526e6e12ca271f90884814fce9bed4cfedbbd7db5f66` |
-| 12 | `def` | [postcompEquiv](../../../../GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/postcompequiv.md) | 159 | `declaration-track:1e650f99974c6eb35aacf2cc92ea377ced561691d7e13a155a9120e241e33162` |
-| 13 | `def` | [inv](../../../../GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/inv.md) | 177 | `declaration-track:e3243e2a95afec9c3f279515b803bc6403014bc86ef67b0298f281f59c819b33` |
-| 14 | `theorem` | [inv_symm](../../../../GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/inv-symm.md) | 183 | `result-track:4111843cb514dd41f7309aed73beac6be17e16d97dc8677104d9a6bd15f6786a` |
+| 1 | `theorem` | [MulEquivClass.toMulEquiv_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/mulequivclass-tomulequiv-injective.md) | 34 | `result-track:e0d0e7a382c3fcc4a66320ac9eb6941b6bff84eea8c7eccc142bab32e7d45b53` |
+| 2 | `def` | [ofUnique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/ofunique.md) | 46 | `declaration-track:c35fae679f5030a8c37837d1b4a9e9180786bad849aae17ad764cf8120af59bd` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/instance.md) | 58 | `declaration-track:35da5ca0748e940c309246d3839e89f86ef70d4b43c8acf1da6c8327f9526012` |
+| 4 | `def` | [arrowCongr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/arrowcongr.md) | 75 | `declaration-track:934502f719c0d0c04cd9b2ec0c6709eb7f6db932b4eca6abda367065183dc0e4` |
+| 5 | `def` | [monoidHomCongr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/monoidhomcongr.md) | 89 | `declaration-track:6c986d689f535c8c18243f3d2c2ed061d5baabc6d27985bf0a8ee8c9b210f465` |
+| 6 | `def` | [piCongrRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/picongrright.md) | 109 | `declaration-track:87b1dbc122dffce78b33a435dad17023470d6bf15fb4bf38036a371c2e0edeef` |
+| 7 | `theorem` | [piCongrRight_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/picongrright-refl.md) | 117 | `result-track:2b7b293329f16e727caf13673355f201af99e6096c3e176d87eb05bb0cedce32` |
+| 8 | `theorem` | [piCongrRight_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/picongrright-symm.md) | 121 | `result-track:77538084d63f41cd574227dc3a031d0dd46fba3962e4e548b7571c462063f776` |
+| 9 | `theorem` | [piCongrRight_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/picongrright-trans.md) | 125 | `result-track:84a00053ca23bf8a14027a78dafa5cc18c8eb5e01aa668c13d48059aa178c41d` |
+| 10 | `def` | [piUnique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/piunique.md) | 134 | `declaration-track:b1bc4a2a20614276f5ac73edd3668e39003210be7cf82f90eae497f48ad85dc2` |
+| 11 | `def` | [precompEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/precompequiv.md) | 147 | `declaration-track:c02477d7f0c0f8d51eb1526e6e12ca271f90884814fce9bed4cfedbbd7db5f66` |
+| 12 | `def` | [postcompEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/postcompequiv.md) | 159 | `declaration-track:1e650f99974c6eb35aacf2cc92ea377ced561691d7e13a155a9120e241e33162` |
+| 13 | `def` | [inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/inv.md) | 177 | `declaration-track:e3243e2a95afec9c3f279515b803bc6403014bc86ef67b0298f281f59c819b33` |
+| 14 | `theorem` | [inv_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEquivBasic.lean/declarations/inv-symm.md) | 183 | `result-track:4111843cb514dd41f7309aed73beac6be17e16d97dc8677104d9a6bd15f6786a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

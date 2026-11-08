@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcretePointwiseOperations.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcretePointwiseOperations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcretePointwiseOperations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcretePointwiseOperations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [a](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcretePointwiseOperations.lean/declarations/a.md) | 32 | `declaration-track:0adfbb3b2e6c2bab8a4be1079206d1fe12f926eda0842845398fecf5bb2aae0a` |
-| 2 | `def` | [b](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcretePointwiseOperations.lean/declarations/b.md) | 38 | `declaration-track:aa233fae356821c47f04455ae2260a607e753268c26da5cbffe865ad11232220` |
-| 3 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcretePointwiseOperations.lean/declarations/example-source-edition-2.md) | 46 | `declaration-track:a7b86faf1472d94143dfda6779551e7432823f519192400c93ce177e397e9199` |
-| 4 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcretePointwiseOperations.lean/declarations/example-source-edition-3.md) | 51 | `declaration-track:b0c5fe2acc3a23a8206a4454f6c0c624c5bd95e10bc2abbb904c0cd090cfff1a` |
-| 5 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcretePointwiseOperations.lean/declarations/example-source-edition-4.md) | 56 | `declaration-track:fc6abe00578be9000798e91ddd167255591237c1c06645db65b4dd711df18def` |
-| 6 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcretePointwiseOperations.lean/declarations/example.md) | 61 | `declaration-track:81f0ef62bba5e2fd45dcd23e5ff73697ccdd0d7418b5a472b0b2828c05627ce6` |
+| 1 | `def` | [a](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcretePointwiseOperations.lean/declarations/a.md) | 32 | `declaration-track:0adfbb3b2e6c2bab8a4be1079206d1fe12f926eda0842845398fecf5bb2aae0a` |
+| 2 | `def` | [b](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcretePointwiseOperations.lean/declarations/b.md) | 38 | `declaration-track:aa233fae356821c47f04455ae2260a607e753268c26da5cbffe865ad11232220` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcretePointwiseOperations.lean/declarations/example-source-edition-2.md) | 46 | `declaration-track:a7b86faf1472d94143dfda6779551e7432823f519192400c93ce177e397e9199` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcretePointwiseOperations.lean/declarations/example-source-edition-3.md) | 51 | `declaration-track:b0c5fe2acc3a23a8206a4454f6c0c624c5bd95e10bc2abbb904c0cd090cfff1a` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcretePointwiseOperations.lean/declarations/example-source-edition-4.md) | 56 | `declaration-track:fc6abe00578be9000798e91ddd167255591237c1c06645db65b4dd711df18def` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcretePointwiseOperations.lean/declarations/example.md) | 61 | `declaration-track:81f0ef62bba5e2fd45dcd23e5ff73697ccdd0d7418b5a472b0b2828c05627ce6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

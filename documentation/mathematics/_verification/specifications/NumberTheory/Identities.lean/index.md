@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/Identities.lean/index.md) · [Full source](../../../../NumberTheory/Identities.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Identities.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Identities.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [vAdd_width_periodic](../../../../NumberTheory/Identities.lean/declarations/vadd-width-periodic.md) | 23 | `result-track:eecf8151694d8bbfa9e2f8ee4b55ee754b2a36978b32f2eed7f2ad826c9d59aa` |
-| 2 | `theorem` | [T_zpow_width_invariant](../../../../NumberTheory/Identities.lean/declarations/t-zpow-width-invariant.md) | 32 | `result-track:d0813437e09bdad9ff13f567a1342851e081c4942b6dd688726055f3ba1dd83e` |
+| 1 | `theorem` | [vAdd_width_periodic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Identities.lean/declarations/vadd-width-periodic.md) | 23 | `result-track:eecf8151694d8bbfa9e2f8ee4b55ee754b2a36978b32f2eed7f2ad826c9d59aa` |
+| 2 | `theorem` | [T_zpow_width_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Identities.lean/declarations/t-zpow-width-invariant.md) | 32 | `result-track:d0813437e09bdad9ff13f567a1342851e081c4942b6dd688726055f3ba1dd83e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [smoothedBilateralTransform](../../../../MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/declarations/smoothedbilateraltransform.md) | 32 | `declaration-track:5c560a86da11168d6c39849ab308bbd186fed1c53ca81884beae288a7b89994e` |
-| 2 | `theorem` | [smoothed_transform_integrand_integrable](../../../../MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/declarations/smoothed-transform-integrand-integrable.md) | 36 | `result-track:1c1c991d164aaf9c39dd58c5a7cfde42393d2de7089ab115077f55b488f50757` |
-| 3 | `theorem` | [smoothed_weighted_eq_convolution](../../../../MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/declarations/smoothed-weighted-eq-convolution.md) | 49 | `result-track:4036964c03a42a96a067e0fead745d4344f01805713a68b592e35a9f4263f221` |
-| 4 | `theorem` | [weighted_convolution_integrand_integrable](../../../../MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/declarations/weighted-convolution-integrand-integrable.md) | 71 | `result-track:1a8fdf671b292b0e26bb5f4d68961244beb286a1db2671fa3c1133dd36f70da7` |
-| 5 | `theorem` | [weighted_convolution_integrable_at](../../../../MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/declarations/weighted-convolution-integrable-at.md) | 82 | `result-track:28ce54fd51695ce92376e145e1027dcbf0a27780a9549867504ce1200d00b36d` |
-| 6 | `theorem` | [smoothed_bilateral_transform](../../../../MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/declarations/smoothed-bilateral-transform.md) | 92 | `result-track:f07b6aacc3c5339aad0e31f3c3df8032f9c01bd5b0f5d3318d0360bfbf5380c5` |
-| 7 | `theorem` | [smoothed_bilateral_transform_zeroOccurrence](../../../../MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/declarations/smoothed-bilateral-transform-zerooccurrence.md) | 102 | `result-track:b904b1dd825db46628fea2837f20410e728d26484c609ab5bd433aae6cb739df` |
-| 8 | `theorem` | [source_transform_control](../../../../MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/declarations/source-transform-control.md) | 110 | `result-track:a76633ada4d0b530ca3de4443469e644ad88149801985d6f8d825b9599632beb` |
+| 1 | `def` | [smoothedBilateralTransform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/declarations/smoothedbilateraltransform.md) | 32 | `declaration-track:5c560a86da11168d6c39849ab308bbd186fed1c53ca81884beae288a7b89994e` |
+| 2 | `theorem` | [smoothed_transform_integrand_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/declarations/smoothed-transform-integrand-integrable.md) | 36 | `result-track:1c1c991d164aaf9c39dd58c5a7cfde42393d2de7089ab115077f55b488f50757` |
+| 3 | `theorem` | [smoothed_weighted_eq_convolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/declarations/smoothed-weighted-eq-convolution.md) | 49 | `result-track:4036964c03a42a96a067e0fead745d4344f01805713a68b592e35a9f4263f221` |
+| 4 | `theorem` | [weighted_convolution_integrand_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/declarations/weighted-convolution-integrand-integrable.md) | 71 | `result-track:1a8fdf671b292b0e26bb5f4d68961244beb286a1db2671fa3c1133dd36f70da7` |
+| 5 | `theorem` | [weighted_convolution_integrable_at](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/declarations/weighted-convolution-integrable-at.md) | 82 | `result-track:28ce54fd51695ce92376e145e1027dcbf0a27780a9549867504ce1200d00b36d` |
+| 6 | `theorem` | [smoothed_bilateral_transform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/declarations/smoothed-bilateral-transform.md) | 92 | `result-track:f07b6aacc3c5339aad0e31f3c3df8032f9c01bd5b0f5d3318d0360bfbf5380c5` |
+| 7 | `theorem` | [smoothed_bilateral_transform_zeroOccurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/declarations/smoothed-bilateral-transform-zerooccurrence.md) | 102 | `result-track:b904b1dd825db46628fea2837f20410e728d26484c609ab5bd433aae6cb739df` |
+| 8 | `theorem` | [source_transform_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransformNamespaced.lean/declarations/source-transform-control.md) | 110 | `result-track:a76633ada4d0b530ca3de4443469e644ad88149801985d6f8d825b9599632beb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

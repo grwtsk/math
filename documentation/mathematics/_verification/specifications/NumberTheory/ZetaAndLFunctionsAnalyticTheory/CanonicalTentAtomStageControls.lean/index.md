@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentAtomStageControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentAtomStageControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentAtomStageControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentAtomStageControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage`](../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalTentAtomStage.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerExplicitFormulaSource`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSource.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalTentAtomStage.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerExplicitFormulaSource`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSource.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.Tactic` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [square_two_readout_alignment](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentAtomStageControls.lean/declarations/square-two-readout-alignment.md) | 20 | `result-track:2d0c42697819f0eb001fa272d0472b94dc6b519e7dae9dbd98811e6e96ec015a` |
-| 2 | `theorem` | [square_two_energy_alignment](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentAtomStageControls.lean/declarations/square-two-energy-alignment.md) | 27 | `result-track:9a6d3d9f85dac36181419c30672fe9fb410230f36fac07974623764b6138424b` |
-| 3 | `theorem` | [square_two_change_of_test](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentAtomStageControls.lean/declarations/square-two-change-of-test.md) | 34 | `result-track:c76c2ebcf18330e9f19872d9bfb0abbe1a19a01e4694dc5a38033728f21a44cb` |
-| 4 | `theorem` | [same_test_quadraticization_still_false](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentAtomStageControls.lean/declarations/same-test-quadraticization-still-false.md) | 40 | `result-track:3a9a50b407bd49de0c29fe162c1c4728763fd5a2ee521927abe2397165b4cb4b` |
-| 5 | `theorem` | [triangle_remains_three](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentAtomStageControls.lean/declarations/triangle-remains-three.md) | 47 | `result-track:31e8dde10241b86c30c4c7a760eb2872951b929f5459b568a0ad70a5a34ad19e` |
+| 1 | `theorem` | [square_two_readout_alignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentAtomStageControls.lean/declarations/square-two-readout-alignment.md) | 20 | `result-track:2d0c42697819f0eb001fa272d0472b94dc6b519e7dae9dbd98811e6e96ec015a` |
+| 2 | `theorem` | [square_two_energy_alignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentAtomStageControls.lean/declarations/square-two-energy-alignment.md) | 27 | `result-track:9a6d3d9f85dac36181419c30672fe9fb410230f36fac07974623764b6138424b` |
+| 3 | `theorem` | [square_two_change_of_test](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentAtomStageControls.lean/declarations/square-two-change-of-test.md) | 34 | `result-track:c76c2ebcf18330e9f19872d9bfb0abbe1a19a01e4694dc5a38033728f21a44cb` |
+| 4 | `theorem` | [same_test_quadraticization_still_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentAtomStageControls.lean/declarations/same-test-quadraticization-still-false.md) | 40 | `result-track:3a9a50b407bd49de0c29fe162c1c4728763fd5a2ee521927abe2397165b4cb4b` |
+| 5 | `theorem` | [triangle_remains_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalTentAtomStageControls.lean/declarations/triangle-remains-three.md) | 47 | `result-track:31e8dde10241b86c30c4c7a760eb2872951b929f5459b568a0ad70a5a34ad19e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

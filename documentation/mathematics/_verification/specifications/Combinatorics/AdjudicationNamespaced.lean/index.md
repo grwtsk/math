@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/AdjudicationNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/AdjudicationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AdjudicationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AdjudicationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [EvidenceConflict](../../../../Combinatorics/AdjudicationNamespaced.lean/declarations/evidenceconflict.md) | 17 | `declaration-track:ccaf00727b49b3a2b91034f39b4f5914161e30012e0b934bb31ea03085d28792` |
-| 2 | `inductive` | [AdjudicationDecision](../../../../Combinatorics/AdjudicationNamespaced.lean/declarations/adjudicationdecision.md) | 24 | `declaration-track:6427547346ed22ce6ae6ddf162b5dba678a1a2f543137b44d4ac06c8c782f8cd` |
-| 3 | `structure` | [AdjudicationCertificate](../../../../Combinatorics/AdjudicationNamespaced.lean/declarations/adjudicationcertificate.md) | 31 | `declaration-track:3f53b875c92c47918959d4326301d41da2c9223385ac79904173501c84338165` |
+| 1 | `structure` | [EvidenceConflict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AdjudicationNamespaced.lean/declarations/evidenceconflict.md) | 17 | `declaration-track:ccaf00727b49b3a2b91034f39b4f5914161e30012e0b934bb31ea03085d28792` |
+| 2 | `inductive` | [AdjudicationDecision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AdjudicationNamespaced.lean/declarations/adjudicationdecision.md) | 24 | `declaration-track:6427547346ed22ce6ae6ddf162b5dba678a1a2f543137b44d4ac06c8c782f8cd` |
+| 3 | `structure` | [AdjudicationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AdjudicationNamespaced.lean/declarations/adjudicationcertificate.md) | 31 | `declaration-track:3f53b875c92c47918959d4326301d41da2c9223385ac79904173501c84338165` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

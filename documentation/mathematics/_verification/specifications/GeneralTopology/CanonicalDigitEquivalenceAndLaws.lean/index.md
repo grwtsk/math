@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CanonicalDigitEquivalenceAndLaws.lean/index.md) · [Full source](../../../../GeneralTopology/CanonicalDigitEquivalenceAndLaws.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CanonicalDigitEquivalenceAndLaws.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CanonicalDigitEquivalenceAndLaws.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Carrier.BooleanSpace` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Topology.Instances.CantorSet` — import line 20; external provider; requires a separately pinned dependency.
-- [Digits Series Membership And Injectivity](../../../../RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/index.md) — import line 22; pinned internal source present.
+- [Digits Series Membership And Injectivity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ExactCantorScalar](../../../../GeneralTopology/CanonicalDigitEquivalenceAndLaws.lean/declarations/exactcantorscalar.md) | 37 | `declaration-track:172d225b2809f55cc21370def18f0a20f1ebc867cb956eb4ed52f81e5c4d5ecd` |
-| 2 | `def` | [analyticCantorRepresentation](../../../../GeneralTopology/CanonicalDigitEquivalenceAndLaws.lean/declarations/analyticcantorrepresentation.md) | 40 | `declaration-track:753ffbed1a7c5c3794638c4357a20fc6416801c45eee3a10bf39a4064088f039` |
-| 3 | `theorem` | [analyticCantorRepresentation_theta_val](../../../../GeneralTopology/CanonicalDigitEquivalenceAndLaws.lean/declarations/analyticcantorrepresentation-theta-val.md) | 46 | `result-track:6a3afa1c682db751a4f275dd1cb81b3d69c22c0d3637341d9ce6d51d2edb6039` |
-| 4 | `theorem` | [analyticCantorRepresentation_digits_theta](../../../../GeneralTopology/CanonicalDigitEquivalenceAndLaws.lean/declarations/analyticcantorrepresentation-digits-theta.md) | 59 | `result-track:7fd2507d251fc537657cdebd8fb25cf92601954468402165c3aef0708dbb54da` |
-| 5 | `theorem` | [analyticCantorRepresentation_theta_digits](../../../../GeneralTopology/CanonicalDigitEquivalenceAndLaws.lean/declarations/analyticcantorrepresentation-theta-digits.md) | 66 | `result-track:36c63f63d99c447493954ff25167197ae573750d1ad5efb9b77b134495819da0` |
-| 6 | `theorem` | [analyticCantorRepresentation_unique](../../../../GeneralTopology/CanonicalDigitEquivalenceAndLaws.lean/declarations/analyticcantorrepresentation-unique.md) | 72 | `result-track:81ebf0c3667036cf3fc5465a8ff15966c29b2f96d60101e5301705d65437aa8a` |
+| 1 | `abbrev` | [ExactCantorScalar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CanonicalDigitEquivalenceAndLaws.lean/declarations/exactcantorscalar.md) | 37 | `declaration-track:172d225b2809f55cc21370def18f0a20f1ebc867cb956eb4ed52f81e5c4d5ecd` |
+| 2 | `def` | [analyticCantorRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CanonicalDigitEquivalenceAndLaws.lean/declarations/analyticcantorrepresentation.md) | 40 | `declaration-track:753ffbed1a7c5c3794638c4357a20fc6416801c45eee3a10bf39a4064088f039` |
+| 3 | `theorem` | [analyticCantorRepresentation_theta_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CanonicalDigitEquivalenceAndLaws.lean/declarations/analyticcantorrepresentation-theta-val.md) | 46 | `result-track:6a3afa1c682db751a4f275dd1cb81b3d69c22c0d3637341d9ce6d51d2edb6039` |
+| 4 | `theorem` | [analyticCantorRepresentation_digits_theta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CanonicalDigitEquivalenceAndLaws.lean/declarations/analyticcantorrepresentation-digits-theta.md) | 59 | `result-track:7fd2507d251fc537657cdebd8fb25cf92601954468402165c3aef0708dbb54da` |
+| 5 | `theorem` | [analyticCantorRepresentation_theta_digits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CanonicalDigitEquivalenceAndLaws.lean/declarations/analyticcantorrepresentation-theta-digits.md) | 66 | `result-track:36c63f63d99c447493954ff25167197ae573750d1ad5efb9b77b134495819da0` |
+| 6 | `theorem` | [analyticCantorRepresentation_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CanonicalDigitEquivalenceAndLaws.lean/declarations/analyticcantorrepresentation-unique.md) | 72 | `result-track:81ebf0c3667036cf3fc5465a8ff15966c29b2f96d60101e5301705d65437aa8a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

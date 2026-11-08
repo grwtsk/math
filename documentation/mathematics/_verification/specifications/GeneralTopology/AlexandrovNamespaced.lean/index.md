@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/AlexandrovNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/AlexandrovNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexandrovNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexandrovNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,19 +60,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [principalOpen](../../../../GeneralTopology/AlexandrovNamespaced.lean/declarations/principalopen.md) | 46 | `declaration-track:3850e104d3ad2bc1ab27fe07f1b346096961e1a0d696d62c27fd9c9d53870992` |
-| 2 | `lemma` | [self_mem_principalOpen](../../../../GeneralTopology/AlexandrovNamespaced.lean/declarations/self-mem-principalopen.md) | 51 | `result-track:a2e744c623fb0a9c6de4580fb2f3527c28175ea7f4dca84ee5a27dba2b1b9a90` |
-| 3 | `lemma` | [principalOpen_le_iff](../../../../GeneralTopology/AlexandrovNamespaced.lean/declarations/principalopen-le-iff.md) | 54 | `result-track:3c2f76af459f79e6f9f9ca5aec61637e741d316d7e005a638630dd08331cfc12` |
-| 4 | `lemma` | [principalOpen_le](../../../../GeneralTopology/AlexandrovNamespaced.lean/declarations/principalopen-le.md) | 61 | `result-track:3e52e8b386a12f55e503c530afea0d6b6852579855f9e73feca0de393d220ec7` |
-| 5 | `def` | [principals](../../../../GeneralTopology/AlexandrovNamespaced.lean/declarations/principals.md) | 68 | `declaration-track:99f64e9777bea212471b268bd9ec607735bb18247fed0c5d927ffe139085b57d` |
-| 6 | `lemma` | [exists_le_of_le_sup](../../../../GeneralTopology/AlexandrovNamespaced.lean/declarations/exists-le-of-le-sup.md) | 72 | `result-track:a51772d629d63cb4ffaa1bf412ca45addc97a7c51935f3df387adfdac6c9bdb2` |
-| 7 | `abbrev` | [principalsKanExtension](../../../../GeneralTopology/AlexandrovNamespaced.lean/declarations/principalskanextension.md) | 82 | `declaration-track:77ebad31b72911f3e6ed933e90102c389dc3f631e204829c64276dcd2f47c33e` |
-| 8 | `abbrev` | [generator](../../../../GeneralTopology/AlexandrovNamespaced.lean/declarations/generator.md) | 87 | `declaration-track:ebbc52a690c80f2e6153ec79cd32f6ebdeb1b582a9d384d4de7f57696abcfb7f` |
-| 9 | `def` | [projSup](../../../../GeneralTopology/AlexandrovNamespaced.lean/declarations/projsup.md) | 99 | `declaration-track:8779576b0dacd13b578d6fa1f0f196195cbf00ca29e3e30a7aa981306ca1bfa0` |
-| 10 | `def` | [lowerCone](../../../../GeneralTopology/AlexandrovNamespaced.lean/declarations/lowercone.md) | 108 | `declaration-track:104a10fcfadc54f5ee6972460a775f3a8a7e64a954b439bd627d9a66ee99f326` |
-| 11 | `def` | [isLimit](../../../../GeneralTopology/AlexandrovNamespaced.lean/declarations/islimit.md) | 145 | `declaration-track:65595f47531502ff94261ca449875ae961fe9c26de36beff99d54c9fa90ac25f` |
-| 12 | `theorem` | [isSheaf_principalsKanExtension](../../../../GeneralTopology/AlexandrovNamespaced.lean/declarations/issheaf-principalskanextension.md) | 184 | `result-track:0297e3a53b7768d21b8ad30e80d2986f230ec920ae2712f0882883146d741d8e` |
-| 13 | `theorem` | [Topology.IsUpperSet.isSheaf_of_isRightKanExtension](../../../../GeneralTopology/AlexandrovNamespaced.lean/declarations/topology-isupperset-issheaf-of-isrightkanextension.md) | 203 | `result-track:1b51a13c6396c025e48d02bf3d38ee3c617a6083e1b192121fa2504d81519d5c` |
+| 1 | `def` | [principalOpen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexandrovNamespaced.lean/declarations/principalopen.md) | 46 | `declaration-track:3850e104d3ad2bc1ab27fe07f1b346096961e1a0d696d62c27fd9c9d53870992` |
+| 2 | `lemma` | [self_mem_principalOpen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexandrovNamespaced.lean/declarations/self-mem-principalopen.md) | 51 | `result-track:a2e744c623fb0a9c6de4580fb2f3527c28175ea7f4dca84ee5a27dba2b1b9a90` |
+| 3 | `lemma` | [principalOpen_le_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexandrovNamespaced.lean/declarations/principalopen-le-iff.md) | 54 | `result-track:3c2f76af459f79e6f9f9ca5aec61637e741d316d7e005a638630dd08331cfc12` |
+| 4 | `lemma` | [principalOpen_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexandrovNamespaced.lean/declarations/principalopen-le.md) | 61 | `result-track:3e52e8b386a12f55e503c530afea0d6b6852579855f9e73feca0de393d220ec7` |
+| 5 | `def` | [principals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexandrovNamespaced.lean/declarations/principals.md) | 68 | `declaration-track:99f64e9777bea212471b268bd9ec607735bb18247fed0c5d927ffe139085b57d` |
+| 6 | `lemma` | [exists_le_of_le_sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexandrovNamespaced.lean/declarations/exists-le-of-le-sup.md) | 72 | `result-track:a51772d629d63cb4ffaa1bf412ca45addc97a7c51935f3df387adfdac6c9bdb2` |
+| 7 | `abbrev` | [principalsKanExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexandrovNamespaced.lean/declarations/principalskanextension.md) | 82 | `declaration-track:77ebad31b72911f3e6ed933e90102c389dc3f631e204829c64276dcd2f47c33e` |
+| 8 | `abbrev` | [generator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexandrovNamespaced.lean/declarations/generator.md) | 87 | `declaration-track:ebbc52a690c80f2e6153ec79cd32f6ebdeb1b582a9d384d4de7f57696abcfb7f` |
+| 9 | `def` | [projSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexandrovNamespaced.lean/declarations/projsup.md) | 99 | `declaration-track:8779576b0dacd13b578d6fa1f0f196195cbf00ca29e3e30a7aa981306ca1bfa0` |
+| 10 | `def` | [lowerCone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexandrovNamespaced.lean/declarations/lowercone.md) | 108 | `declaration-track:104a10fcfadc54f5ee6972460a775f3a8a7e64a954b439bd627d9a66ee99f326` |
+| 11 | `def` | [isLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexandrovNamespaced.lean/declarations/islimit.md) | 145 | `declaration-track:65595f47531502ff94261ca449875ae961fe9c26de36beff99d54c9fa90ac25f` |
+| 12 | `theorem` | [isSheaf_principalsKanExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexandrovNamespaced.lean/declarations/issheaf-principalskanextension.md) | 184 | `result-track:0297e3a53b7768d21b8ad30e80d2986f230ec920ae2712f0882883146d741d8e` |
+| 13 | `theorem` | [Topology.IsUpperSet.isSheaf_of_isRightKanExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexandrovNamespaced.lean/declarations/topology-isupperset-issheaf-of-isrightkanextension.md) | 203 | `result-track:1b51a13c6396c025e48d02bf3d38ee3c617a6083e1b192121fa2504d81519d5c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

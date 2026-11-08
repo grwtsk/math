@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingHomIntegralSourceEdition1.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingHomIntegralSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomIntegralSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomIntegralSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isIntegral_stableUnderComposition](../../../../CommutativeAlgebra/RingHomIntegralSourceEdition1.lean/declarations/isintegral-stableundercomposition.md) | 22 | `result-track:a6391738163ac87b6e735af2372b3e8dee0731e2c8cdef6a6f3a1a46a212d092` |
-| 2 | `theorem` | [isIntegral_respectsIso](../../../../CommutativeAlgebra/RingHomIntegralSourceEdition1.lean/declarations/isintegral-respectsiso.md) | 25 | `result-track:f2fcde22dd5147b29c32942ec861a9c4500d381ab522e62282ae8763c59d0636` |
-| 3 | `theorem` | [isIntegral_isStableUnderBaseChange](../../../../CommutativeAlgebra/RingHomIntegralSourceEdition1.lean/declarations/isintegral-isstableunderbasechange.md) | 31 | `result-track:60810a861199dadf0f4be8b7fada7a2aa671d5033549aef21bf99047478b2fd2` |
-| 4 | `theorem` | [isIntegral_ofLocalizationSpan](../../../../CommutativeAlgebra/RingHomIntegralSourceEdition1.lean/declarations/isintegral-oflocalizationspan.md) | 42 | `result-track:7386db662b69b9c86b04c401828600f303523fd3f4a3e9cf4f560c9c85017574` |
+| 1 | `theorem` | [isIntegral_stableUnderComposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomIntegralSourceEdition1.lean/declarations/isintegral-stableundercomposition.md) | 22 | `result-track:a6391738163ac87b6e735af2372b3e8dee0731e2c8cdef6a6f3a1a46a212d092` |
+| 2 | `theorem` | [isIntegral_respectsIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomIntegralSourceEdition1.lean/declarations/isintegral-respectsiso.md) | 25 | `result-track:f2fcde22dd5147b29c32942ec861a9c4500d381ab522e62282ae8763c59d0636` |
+| 3 | `theorem` | [isIntegral_isStableUnderBaseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomIntegralSourceEdition1.lean/declarations/isintegral-isstableunderbasechange.md) | 31 | `result-track:60810a861199dadf0f4be8b7fada7a2aa671d5033549aef21bf99047478b2fd2` |
+| 4 | `theorem` | [isIntegral_ofLocalizationSpan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomIntegralSourceEdition1.lean/declarations/isintegral-oflocalizationspan.md) | 42 | `result-track:7386db662b69b9c86b04c401828600f303523fd3f4a3e9cf4f560c9c85017574` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

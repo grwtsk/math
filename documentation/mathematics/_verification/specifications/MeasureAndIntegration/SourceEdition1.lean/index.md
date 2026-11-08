@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [wholeCubicMajorant](../../../../MeasureAndIntegration/SourceEdition1.lean/declarations/wholecubicmajorant.md) | 25 | `declaration-track:797c877b79c10c920dd640b78b099eccc446f04335cb262b5a01b85cc678344d` |
-| 2 | `def` | [wholeCubicErrorRow](../../../../MeasureAndIntegration/SourceEdition1.lean/declarations/wholecubicerrorrow.md) | 30 | `declaration-track:db19bb8de25fd79293d706d2e5f80dd97d7064a0e43aeb024ef4b3a81459a2de` |
-| 3 | `theorem` | [cubic_log_error_all_positive](../../../../MeasureAndIntegration/SourceEdition1.lean/declarations/cubic-log-error-all-positive.md) | 35 | `result-track:bbb6a2147a38347e3c4212292097f60b5c30b7b21d53b09975361b6e52a5f04f` |
-| 4 | `theorem` | [wholeCubicMajorant_integrable](../../../../MeasureAndIntegration/SourceEdition1.lean/declarations/wholecubicmajorant-integrable.md) | 64 | `result-track:f4f870371dd50443e76ed55bf52c0c5a77a44bd79d43be875b8e2722157f175e` |
-| 5 | `theorem` | [actual_whole_error_le_majorant](../../../../MeasureAndIntegration/SourceEdition1.lean/declarations/actual-whole-error-le-majorant.md) | 69 | `result-track:939dbe8de05b73e9424e3ba59ff83bbd802e58a0da5018709875a39e3f5d4325` |
-| 6 | `theorem` | [actual_whole_error_integrable](../../../../MeasureAndIntegration/SourceEdition1.lean/declarations/actual-whole-error-integrable.md) | 80 | `result-track:6fb915123c3eb31f27cb324a5ccaa0f6ba8ad6e10aa99a9887951bd9612f2943` |
-| 7 | `theorem` | [wholeCubicMajorant_integral_le](../../../../MeasureAndIntegration/SourceEdition1.lean/declarations/wholecubicmajorant-integral-le.md) | 91 | `result-track:0b52fbe18515d1e139995669065984b59b3da7835517a576b11981976e1111d4` |
-| 8 | `theorem` | [wholeCubicErrorRow_abs_le](../../../../MeasureAndIntegration/SourceEdition1.lean/declarations/wholecubicerrorrow-abs-le.md) | 108 | `result-track:850a0909ad884948ed9ed446114a784ab77ce384ba084241c4fa6f9fa1c21ab4` |
-| 9 | `theorem` | [whole_short_error_abs_le](../../../../MeasureAndIntegration/SourceEdition1.lean/declarations/whole-short-error-abs-le.md) | 118 | `result-track:8eabda481625d8e251f33ca4492f12437796039647170bbd989941f763776920` |
+| 1 | `def` | [wholeCubicMajorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEdition1.lean/declarations/wholecubicmajorant.md) | 25 | `declaration-track:797c877b79c10c920dd640b78b099eccc446f04335cb262b5a01b85cc678344d` |
+| 2 | `def` | [wholeCubicErrorRow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEdition1.lean/declarations/wholecubicerrorrow.md) | 30 | `declaration-track:db19bb8de25fd79293d706d2e5f80dd97d7064a0e43aeb024ef4b3a81459a2de` |
+| 3 | `theorem` | [cubic_log_error_all_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEdition1.lean/declarations/cubic-log-error-all-positive.md) | 35 | `result-track:bbb6a2147a38347e3c4212292097f60b5c30b7b21d53b09975361b6e52a5f04f` |
+| 4 | `theorem` | [wholeCubicMajorant_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEdition1.lean/declarations/wholecubicmajorant-integrable.md) | 64 | `result-track:f4f870371dd50443e76ed55bf52c0c5a77a44bd79d43be875b8e2722157f175e` |
+| 5 | `theorem` | [actual_whole_error_le_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEdition1.lean/declarations/actual-whole-error-le-majorant.md) | 69 | `result-track:939dbe8de05b73e9424e3ba59ff83bbd802e58a0da5018709875a39e3f5d4325` |
+| 6 | `theorem` | [actual_whole_error_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEdition1.lean/declarations/actual-whole-error-integrable.md) | 80 | `result-track:6fb915123c3eb31f27cb324a5ccaa0f6ba8ad6e10aa99a9887951bd9612f2943` |
+| 7 | `theorem` | [wholeCubicMajorant_integral_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEdition1.lean/declarations/wholecubicmajorant-integral-le.md) | 91 | `result-track:0b52fbe18515d1e139995669065984b59b3da7835517a576b11981976e1111d4` |
+| 8 | `theorem` | [wholeCubicErrorRow_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEdition1.lean/declarations/wholecubicerrorrow-abs-le.md) | 108 | `result-track:850a0909ad884948ed9ed446114a784ab77ce384ba084241c4fa6f9fa1c21ab4` |
+| 9 | `theorem` | [whole_short_error_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEdition1.lean/declarations/whole-short-error-abs-le.md) | 118 | `result-track:8eabda481625d8e251f33ca4492f12437796039647170bbd989941f763776920` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/GrayBitEnumeration.lean/index.md) · [Full source](../../../../Combinatorics/GrayBitEnumeration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GrayBitEnumeration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GrayBitEnumeration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Boolean.Matrix` — import line 19; external provider; requires a separately pinned dependency.
 - `Boolean.Cube.ListTools` — import line 20; external provider; requires a separately pinned dependency.
-- [Finite Boolean Carriers](../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteBooleanCarriers.lean/index.md) — import line 21; pinned internal source present.
+- [Finite Boolean Carriers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteBooleanCarriers.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Hypercube.grayBit](../../../../Combinatorics/GrayBitEnumeration.lean/declarations/hypercube-graybit.md) | 28 | `declaration-track:6c35c54d11befcf722a6fc267efb60039fe4ec81518d4f02da3600772be56bd5` |
-| 2 | `def` | [Hypercube.grayPoint](../../../../Combinatorics/GrayBitEnumeration.lean/declarations/hypercube-graypoint.md) | 38 | `declaration-track:c1b3872db61954e374b68e366c32229bbea045ab3f5bce8b429c96e8e2601806` |
-| 3 | `def` | [Hypercube.grayAxis](../../../../Combinatorics/GrayBitEnumeration.lean/declarations/hypercube-grayaxis.md) | 42 | `declaration-track:21daf469ea222d8e883dfd7011ca645e7a4871b78e91824e2070978d05f4fb2c` |
+| 1 | `def` | [Hypercube.grayBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GrayBitEnumeration.lean/declarations/hypercube-graybit.md) | 28 | `declaration-track:6c35c54d11befcf722a6fc267efb60039fe4ec81518d4f02da3600772be56bd5` |
+| 2 | `def` | [Hypercube.grayPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GrayBitEnumeration.lean/declarations/hypercube-graypoint.md) | 38 | `declaration-track:c1b3872db61954e374b68e366c32229bbea045ab3f5bce8b429c96e8e2601806` |
+| 3 | `def` | [Hypercube.grayAxis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GrayBitEnumeration.lean/declarations/hypercube-grayaxis.md) | 42 | `declaration-track:21daf469ea222d8e883dfd7011ca645e7a4871b78e91824e2070978d05f4fb2c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

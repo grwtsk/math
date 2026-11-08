@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/EndpointSection.lean/index.md) · [Full source](../../../../Combinatorics/EndpointSection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.DirectedGraph.EndpointSection`](../../../../Combinatorics/GraphTheory/EndpointSection.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Combinatorics.DirectedGraph.EndpointSection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EndpointSection.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [diamond_middle_obstruction](../../../../Combinatorics/EndpointSection.lean/declarations/diamond-middle-obstruction.md) | 15 | `result-track:7ef4a463eb66fb01f6bd566759d53c77f25c1de3f78b5e4cac27621d31bf4319` |
-| 2 | `theorem` | [diamond_no_preserving_section](../../../../Combinatorics/EndpointSection.lean/declarations/diamond-no-preserving-section.md) | 20 | `result-track:0af1b285c6635a79a44bb3c287b76a9b987f8a2db3845fa54625c1a23f5c7f89` |
-| 3 | `theorem` | [diamond_selected_right_inverse](../../../../Combinatorics/EndpointSection.lean/declarations/diamond-selected-right-inverse.md) | 29 | `result-track:78e0724b941c6a7f4554870c94fe4773b984f46bd796ce4c5d70a24bc5ce7ea9` |
-| 4 | `theorem` | [diamond_selected_not_preserving](../../../../Combinatorics/EndpointSection.lean/declarations/diamond-selected-not-preserving.md) | 33 | `result-track:c5f515e0d88bdbf20595affed8b710f74056e933f89dd9a42cc2b7d0cab7e60b` |
-| 5 | `theorem` | [actual_diamond_counterexample](../../../../Combinatorics/EndpointSection.lean/declarations/actual-diamond-counterexample.md) | 39 | `result-track:c37d4d03ea9f484e27ebf43f368ed16442c824756c1a20beff5122b6caefb5a5` |
-| 6 | `example` | [(anonymous)](../../../../Combinatorics/EndpointSection.lean/declarations/example-source-edition-2.md) | 46 | `declaration-track:83e0c7838b8e7aa12a4cf90ff56adb1b59827d72845a1e5e6ba8a0299219b20c` |
-| 7 | `example` | [(anonymous)](../../../../Combinatorics/EndpointSection.lean/declarations/example-source-edition-3.md) | 48 | `declaration-track:85a444c8276c5677897c9511082324fbd8b59efbdc9e4df9b42964feb4b8c413` |
-| 8 | `example` | [(anonymous)](../../../../Combinatorics/EndpointSection.lean/declarations/example-source-edition-5.md) | 50 | `declaration-track:b3acfe4c8bac5bee046298be4f731fbdca747934cb0b939f53d77ff967637f10` |
-| 9 | `def` | [leftTopHistory](../../../../Combinatorics/EndpointSection.lean/declarations/lefttophistory.md) | 52 | `declaration-track:a9eee4b0227a0767fe33b4fc1c77640fe7b815de38b6ed619f920f9ddfdd9125` |
-| 10 | `def` | [rightTopHistory](../../../../Combinatorics/EndpointSection.lean/declarations/righttophistory.md) | 56 | `declaration-track:5e99e2e85561f91e94286bf92c094d608063ec3c7abd30a0df2e98b8e59f913e` |
-| 11 | `theorem` | [distinct_top_histories](../../../../Combinatorics/EndpointSection.lean/declarations/distinct-top-histories.md) | 60 | `result-track:9aa70113723a09b7bbf7082b9215bfe36f5a95330120936173502264f439464a` |
-| 12 | `example` | [(anonymous)](../../../../Combinatorics/EndpointSection.lean/declarations/example.md) | 68 | `declaration-track:81d6bd57048109c483bfaafdcf5aa487e073901393897921e1104951a32b26e3` |
-| 13 | `example` | [(anonymous)](../../../../Combinatorics/EndpointSection.lean/declarations/example-source-edition-4.md) | 70 | `declaration-track:a75da341d9b0329fc8dcb9fe1f681352540341e4c1737c9d343c45fedfe1ec2a` |
+| 1 | `theorem` | [diamond_middle_obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSection.lean/declarations/diamond-middle-obstruction.md) | 15 | `result-track:7ef4a463eb66fb01f6bd566759d53c77f25c1de3f78b5e4cac27621d31bf4319` |
+| 2 | `theorem` | [diamond_no_preserving_section](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSection.lean/declarations/diamond-no-preserving-section.md) | 20 | `result-track:0af1b285c6635a79a44bb3c287b76a9b987f8a2db3845fa54625c1a23f5c7f89` |
+| 3 | `theorem` | [diamond_selected_right_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSection.lean/declarations/diamond-selected-right-inverse.md) | 29 | `result-track:78e0724b941c6a7f4554870c94fe4773b984f46bd796ce4c5d70a24bc5ce7ea9` |
+| 4 | `theorem` | [diamond_selected_not_preserving](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSection.lean/declarations/diamond-selected-not-preserving.md) | 33 | `result-track:c5f515e0d88bdbf20595affed8b710f74056e933f89dd9a42cc2b7d0cab7e60b` |
+| 5 | `theorem` | [actual_diamond_counterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSection.lean/declarations/actual-diamond-counterexample.md) | 39 | `result-track:c37d4d03ea9f484e27ebf43f368ed16442c824756c1a20beff5122b6caefb5a5` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSection.lean/declarations/example-source-edition-2.md) | 46 | `declaration-track:83e0c7838b8e7aa12a4cf90ff56adb1b59827d72845a1e5e6ba8a0299219b20c` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSection.lean/declarations/example-source-edition-3.md) | 48 | `declaration-track:85a444c8276c5677897c9511082324fbd8b59efbdc9e4df9b42964feb4b8c413` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSection.lean/declarations/example-source-edition-5.md) | 50 | `declaration-track:b3acfe4c8bac5bee046298be4f731fbdca747934cb0b939f53d77ff967637f10` |
+| 9 | `def` | [leftTopHistory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSection.lean/declarations/lefttophistory.md) | 52 | `declaration-track:a9eee4b0227a0767fe33b4fc1c77640fe7b815de38b6ed619f920f9ddfdd9125` |
+| 10 | `def` | [rightTopHistory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSection.lean/declarations/righttophistory.md) | 56 | `declaration-track:5e99e2e85561f91e94286bf92c094d608063ec3c7abd30a0df2e98b8e59f913e` |
+| 11 | `theorem` | [distinct_top_histories](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSection.lean/declarations/distinct-top-histories.md) | 60 | `result-track:9aa70113723a09b7bbf7082b9215bfe36f5a95330120936173502264f439464a` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSection.lean/declarations/example.md) | 68 | `declaration-track:81d6bd57048109c483bfaafdcf5aa487e073901393897921e1104951a32b26e3` |
+| 13 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSection.lean/declarations/example-source-edition-4.md) | 70 | `declaration-track:a75da341d9b0329fc8dcb9fe1f681352540341e4c1737c9d343c45fedfe1ec2a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SimplexNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/SimplexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,24 +59,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SimplexPoint](../../../../Combinatorics/SimplexNamespaced.lean/declarations/simplexpoint.md) | 27 | `declaration-track:05ecaa8816281843b1857199f7e1d6a2e6e37445023d78a3f9667b0e7fd359d4` |
-| 2 | `instance` | [instCoeFunSimplexPoint](../../../../Combinatorics/SimplexNamespaced.lean/declarations/instcoefunsimplexpoint.md) | 36 | `declaration-track:d5d4c2c155b01d1b0f0d617d107139c211b2bc59e0aa8f9c9a682d6c318a2279` |
-| 3 | `theorem` | [ext](../../../../Combinatorics/SimplexNamespaced.lean/declarations/ext-source-edition-2.md) | 40 | `result-track:f54f3caa5f152c4963564c222368eb59f159ec54465d2b9a9f4182c6b8ade453` |
-| 4 | `def` | [reindex](../../../../Combinatorics/SimplexNamespaced.lean/declarations/reindex-source-edition-2.md) | 51 | `declaration-track:4c062976a29fa5b8e04d0f32280555a5e76aeefc88b6ba5e40c7ba0b098aaf6b` |
-| 5 | `theorem` | [reindex_apply](../../../../Combinatorics/SimplexNamespaced.lean/declarations/reindex-apply.md) | 59 | `result-track:4bac638ddd7a9345a15c37a30527aee1baf18dd04a99e401fa13202fbcc0ff33` |
-| 6 | `theorem` | [reindex_refl](../../../../Combinatorics/SimplexNamespaced.lean/declarations/reindex-refl.md) | 64 | `result-track:40b5e4260062498d847d653cd30f5ba67d2f6eb4ac3ed084f003b031065862fe` |
-| 7 | `theorem` | [reindex_trans](../../../../Combinatorics/SimplexNamespaced.lean/declarations/reindex-trans.md) | 70 | `result-track:3c85c5b53d560a510299414a5cd24c425687b86d74faac3404435bbd12922534` |
-| 8 | `def` | [barycentric](../../../../Combinatorics/SimplexNamespaced.lean/declarations/barycentric.md) | 77 | `declaration-track:3cba4db9fec7e405d2aee833694b268b77f50083e41a5c9805e0e71e1e451124` |
-| 9 | `theorem` | [barycentric_apply](../../../../Combinatorics/SimplexNamespaced.lean/declarations/barycentric-apply.md) | 94 | `result-track:e971bd414328ec5e16de82d477301f689fd124e0bd07ba53e3f2090d635f8766` |
-| 10 | `def` | [merge](../../../../Combinatorics/SimplexNamespaced.lean/declarations/merge.md) | 102 | `declaration-track:bf6709e148bcde1104f9afb58e84a49dd690804489a4868efb757b1ef7b41582` |
-| 11 | `theorem` | [merge_apply](../../../../Combinatorics/SimplexNamespaced.lean/declarations/merge-apply.md) | 118 | `result-track:4ccdbff0eadbeb5383023a37620210087dd57cdd9b5114911c43eebc6d7e1c04` |
-| 12 | `def` | [hierarchical](../../../../Combinatorics/SimplexNamespaced.lean/declarations/hierarchical.md) | 124 | `declaration-track:eb9827a5a64b7a855eebc355ab5241cf4b2b78b0fbd6d92ec325c50018051ed8` |
-| 13 | `theorem` | [hierarchical_apply](../../../../Combinatorics/SimplexNamespaced.lean/declarations/hierarchical-apply.md) | 143 | `result-track:f21fb7fd23ce4dec68c428bc02841e6e7f2f3091e06594b1d9fa7d8b14785980` |
-| 14 | `structure` | [InteriorSimplexPoint](../../../../Combinatorics/SimplexNamespaced.lean/declarations/interiorsimplexpoint.md) | 153 | `declaration-track:044eb54c18f638bb31948fefddf7d9af21ebc5c541861dfd15b88a2b30ee62a7` |
-| 15 | `instance` | [instCoeFunInteriorSimplexPoint](../../../../Combinatorics/SimplexNamespaced.lean/declarations/instcoefuninteriorsimplexpoint.md) | 161 | `declaration-track:86e18a76246700308bcd2804f975a120d7287773c634e4eabed47ebc431c3a24` |
-| 16 | `theorem` | [ext](../../../../Combinatorics/SimplexNamespaced.lean/declarations/ext.md) | 166 | `result-track:9d014e41d3a62bfec5487d9525f07929f654cc932b7d6a7e54e2a46e085c5673` |
-| 17 | `def` | [reindex](../../../../Combinatorics/SimplexNamespaced.lean/declarations/reindex.md) | 178 | `declaration-track:1088318abd31e5923625adbae548ce2ed4a274c052f10bb7702eb19033906620` |
-| 18 | `theorem` | [reindex_apply](../../../../Combinatorics/SimplexNamespaced.lean/declarations/reindex-apply-source-edition-2.md) | 184 | `result-track:6d92179bcd588e1890467eb5e2cff2a70c2d33323d8a8aa639f4c7151800541e` |
+| 1 | `structure` | [SimplexPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/declarations/simplexpoint.md) | 27 | `declaration-track:05ecaa8816281843b1857199f7e1d6a2e6e37445023d78a3f9667b0e7fd359d4` |
+| 2 | `instance` | [instCoeFunSimplexPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/declarations/instcoefunsimplexpoint.md) | 36 | `declaration-track:d5d4c2c155b01d1b0f0d617d107139c211b2bc59e0aa8f9c9a682d6c318a2279` |
+| 3 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/declarations/ext-source-edition-2.md) | 40 | `result-track:f54f3caa5f152c4963564c222368eb59f159ec54465d2b9a9f4182c6b8ade453` |
+| 4 | `def` | [reindex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/declarations/reindex-source-edition-2.md) | 51 | `declaration-track:4c062976a29fa5b8e04d0f32280555a5e76aeefc88b6ba5e40c7ba0b098aaf6b` |
+| 5 | `theorem` | [reindex_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/declarations/reindex-apply.md) | 59 | `result-track:4bac638ddd7a9345a15c37a30527aee1baf18dd04a99e401fa13202fbcc0ff33` |
+| 6 | `theorem` | [reindex_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/declarations/reindex-refl.md) | 64 | `result-track:40b5e4260062498d847d653cd30f5ba67d2f6eb4ac3ed084f003b031065862fe` |
+| 7 | `theorem` | [reindex_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/declarations/reindex-trans.md) | 70 | `result-track:3c85c5b53d560a510299414a5cd24c425687b86d74faac3404435bbd12922534` |
+| 8 | `def` | [barycentric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/declarations/barycentric.md) | 77 | `declaration-track:3cba4db9fec7e405d2aee833694b268b77f50083e41a5c9805e0e71e1e451124` |
+| 9 | `theorem` | [barycentric_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/declarations/barycentric-apply.md) | 94 | `result-track:e971bd414328ec5e16de82d477301f689fd124e0bd07ba53e3f2090d635f8766` |
+| 10 | `def` | [merge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/declarations/merge.md) | 102 | `declaration-track:bf6709e148bcde1104f9afb58e84a49dd690804489a4868efb757b1ef7b41582` |
+| 11 | `theorem` | [merge_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/declarations/merge-apply.md) | 118 | `result-track:4ccdbff0eadbeb5383023a37620210087dd57cdd9b5114911c43eebc6d7e1c04` |
+| 12 | `def` | [hierarchical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/declarations/hierarchical.md) | 124 | `declaration-track:eb9827a5a64b7a855eebc355ab5241cf4b2b78b0fbd6d92ec325c50018051ed8` |
+| 13 | `theorem` | [hierarchical_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/declarations/hierarchical-apply.md) | 143 | `result-track:f21fb7fd23ce4dec68c428bc02841e6e7f2f3091e06594b1d9fa7d8b14785980` |
+| 14 | `structure` | [InteriorSimplexPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/declarations/interiorsimplexpoint.md) | 153 | `declaration-track:044eb54c18f638bb31948fefddf7d9af21ebc5c541861dfd15b88a2b30ee62a7` |
+| 15 | `instance` | [instCoeFunInteriorSimplexPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/declarations/instcoefuninteriorsimplexpoint.md) | 161 | `declaration-track:86e18a76246700308bcd2804f975a120d7287773c634e4eabed47ebc431c3a24` |
+| 16 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/declarations/ext.md) | 166 | `result-track:9d014e41d3a62bfec5487d9525f07929f654cc932b7d6a7e54e2a46e085c5673` |
+| 17 | `def` | [reindex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/declarations/reindex.md) | 178 | `declaration-track:1088318abd31e5923625adbae548ce2ed4a274c052f10bb7702eb19033906620` |
+| 18 | `theorem` | [reindex_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplexNamespaced.lean/declarations/reindex-apply-source-edition-2.md) | 184 | `result-track:6d92179bcd588e1890467eb5e2cff2a70c2d33323d8a8aa639f4c7151800541e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

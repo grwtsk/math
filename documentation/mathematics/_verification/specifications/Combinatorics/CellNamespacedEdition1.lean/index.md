@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CellNamespacedEdition1.lean/index.md) · [Full source](../../../../Combinatorics/CellNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CellNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CellNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CoreAxis](../../../../Combinatorics/CellNamespacedEdition1.lean/declarations/coreaxis.md) | 24 | `declaration-track:6944000108091e5f17bdb41907984bd7fb4b9fe2a3e7ef301d9bf12855136932` |
-| 2 | `structure` | [AxisEvidenceData](../../../../Combinatorics/CellNamespacedEdition1.lean/declarations/axisevidencedata.md) | 39 | `declaration-track:35f2a861996e4d14c41d46c0a85ca71e7d6ffa25a9619f34b5e0ba184eaceb45` |
-| 3 | `def` | [AxisValid](../../../../Combinatorics/CellNamespacedEdition1.lean/declarations/axisvalid.md) | 45 | `declaration-track:b9c03e29b3627fd63058f39b9ef053129647d5c3202c6cbaa6bad680be820e41` |
-| 4 | `structure` | [AxisEvidence](../../../../Combinatorics/CellNamespacedEdition1.lean/declarations/axisevidence.md) | 51 | `declaration-track:3c5f33ea653d81d990a2f4cd7d0173f1fde6834075628110957f7743983e11e9` |
-| 5 | `structure` | [Cell](../../../../Combinatorics/CellNamespacedEdition1.lean/declarations/cell.md) | 57 | `declaration-track:142f8dc34002b0c3b6df845a994f98a5e7739a54ab44295ddd6fe8a518494881` |
-| 6 | `def` | [Closed](../../../../Combinatorics/CellNamespacedEdition1.lean/declarations/closed.md) | 89 | `declaration-track:68e5a136b8c675c65a95371bb9546c747b1f583bcda6f169bfeb6f5cfefab140` |
-| 7 | `theorem` | [coreAxis_mem_required](../../../../Combinatorics/CellNamespacedEdition1.lean/declarations/coreaxis-mem-required.md) | 93 | `result-track:d5fc72fed2aafc0bd676d2a3f9d0edf5bb1f58e08d7356672076c27920ce201d` |
-| 8 | `theorem` | [coreAxis_discharged](../../../../Combinatorics/CellNamespacedEdition1.lean/declarations/coreaxis-discharged.md) | 99 | `result-track:51c7195a69dee07dd101708338698f13c38db763be11ea37271fd7ca2437a195` |
-| 9 | `theorem` | [evidence_valid](../../../../Combinatorics/CellNamespacedEdition1.lean/declarations/evidence-valid.md) | 106 | `result-track:fbab93f86a68710cec26ce8c42c955b6311ff45c141ec85d78cf9c2d4228b409` |
-| 10 | `structure` | [FaceTransition](../../../../Combinatorics/CellNamespacedEdition1.lean/declarations/facetransition.md) | 112 | `declaration-track:3245485f7ac9835a1f3bdbb443d96d1ee47e5dc26010a463815854ffbf27a6fa` |
-| 11 | `structure` | [TheoremCell](../../../../Combinatorics/CellNamespacedEdition1.lean/declarations/theoremcell.md) | 124 | `declaration-track:c90242cdfc637132ae0b1831bc7552a80dd9bf10cd321676ee39335be895f47b` |
+| 1 | `inductive` | [CoreAxis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CellNamespacedEdition1.lean/declarations/coreaxis.md) | 24 | `declaration-track:6944000108091e5f17bdb41907984bd7fb4b9fe2a3e7ef301d9bf12855136932` |
+| 2 | `structure` | [AxisEvidenceData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CellNamespacedEdition1.lean/declarations/axisevidencedata.md) | 39 | `declaration-track:35f2a861996e4d14c41d46c0a85ca71e7d6ffa25a9619f34b5e0ba184eaceb45` |
+| 3 | `def` | [AxisValid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CellNamespacedEdition1.lean/declarations/axisvalid.md) | 45 | `declaration-track:b9c03e29b3627fd63058f39b9ef053129647d5c3202c6cbaa6bad680be820e41` |
+| 4 | `structure` | [AxisEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CellNamespacedEdition1.lean/declarations/axisevidence.md) | 51 | `declaration-track:3c5f33ea653d81d990a2f4cd7d0173f1fde6834075628110957f7743983e11e9` |
+| 5 | `structure` | [Cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CellNamespacedEdition1.lean/declarations/cell.md) | 57 | `declaration-track:142f8dc34002b0c3b6df845a994f98a5e7739a54ab44295ddd6fe8a518494881` |
+| 6 | `def` | [Closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CellNamespacedEdition1.lean/declarations/closed.md) | 89 | `declaration-track:68e5a136b8c675c65a95371bb9546c747b1f583bcda6f169bfeb6f5cfefab140` |
+| 7 | `theorem` | [coreAxis_mem_required](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CellNamespacedEdition1.lean/declarations/coreaxis-mem-required.md) | 93 | `result-track:d5fc72fed2aafc0bd676d2a3f9d0edf5bb1f58e08d7356672076c27920ce201d` |
+| 8 | `theorem` | [coreAxis_discharged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CellNamespacedEdition1.lean/declarations/coreaxis-discharged.md) | 99 | `result-track:51c7195a69dee07dd101708338698f13c38db763be11ea37271fd7ca2437a195` |
+| 9 | `theorem` | [evidence_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CellNamespacedEdition1.lean/declarations/evidence-valid.md) | 106 | `result-track:fbab93f86a68710cec26ce8c42c955b6311ff45c141ec85d78cf9c2d4228b409` |
+| 10 | `structure` | [FaceTransition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CellNamespacedEdition1.lean/declarations/facetransition.md) | 112 | `declaration-track:3245485f7ac9835a1f3bdbb443d96d1ee47e5dc26010a463815854ffbf27a6fa` |
+| 11 | `structure` | [TheoremCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CellNamespacedEdition1.lean/declarations/theoremcell.md) | 124 | `declaration-track:c90242cdfc637132ae0b1831bc7552a80dd9bf10cd321676ee39335be895f47b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

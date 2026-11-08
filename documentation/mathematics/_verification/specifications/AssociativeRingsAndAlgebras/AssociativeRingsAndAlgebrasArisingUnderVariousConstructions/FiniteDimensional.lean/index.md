@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/FiniteDimensional.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/FiniteDimensional.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/FiniteDimensional.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/FiniteDimensional.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isTorsion_of_aeval_eq_zero](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/FiniteDimensional.lean/declarations/istorsion-of-aeval-eq-zero.md) | 29 | `result-track:25af6f20495667ddce5c37d44fe850f1c4e5f028f2b37382b8bf5c0a79cd41ac` |
-| 2 | `theorem` | [isTorsion_of_finiteDimensional](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/FiniteDimensional.lean/declarations/istorsion-of-finitedimensional.md) | 38 | `result-track:6f57b1281ff4f0f1188203a6a96047b325a2e0c2307766a28494451cc6aeb267` |
+| 1 | `theorem` | [isTorsion_of_aeval_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/FiniteDimensional.lean/declarations/istorsion-of-aeval-eq-zero.md) | 29 | `result-track:25af6f20495667ddce5c37d44fe850f1c4e5f028f2b37382b8bf5c0a79cd41ac` |
+| 2 | `theorem` | [isTorsion_of_finiteDimensional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/FiniteDimensional.lean/declarations/istorsion-of-finitedimensional.md) | 38 | `result-track:6f57b1281ff4f0f1188203a6a96047b325a2e0c2307766a28494451cc6aeb267` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

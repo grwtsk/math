@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Interactive Svg Namespaced Action Kind](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-theoreticalalgorithms-ac.md) | 14 | `declaration-track:9801fd9658ef3918803d3774d50bb5e652a9a32284ae5cb36d556f747e892795` |
-| 2 | `inductive` | [ActionKind](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/declarations/actionkind.md) | 22 | `declaration-track:48f325b0eabe4c7796d549f9c7871be37da1612991500fba80e2ebdf7a52106b` |
-| 3 | `structure` | [Action](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/declarations/action.md) | 29 | `declaration-track:b88b2d9064b2e41e9d80cef217bf00dacfbae7a7b93997c1fd6edfa6f21f0217` |
-| 4 | `structure` | [SvgState](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/declarations/svgstate.md) | 38 | `declaration-track:3c4fe767a0fa9c95d72954fff685c1276fe478fcd7425d069af0cc823810baf9` |
-| 5 | `structure` | [UpdateParams](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/declarations/updateparams.md) | 48 | `declaration-track:3f224d2582184d99803e13249258bd0e594b11fc8265cef1ab6b2889a41e41be` |
-| 6 | `structure` | [UpdateResult](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/declarations/updateresult.md) | 55 | `declaration-track:3e8995e047e6b522ea1f53158d030c34bd828ff5aef2abfe3537014a082ef592` |
-| 7 | `structure` | [InteractiveSvg](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/declarations/interactivesvg.md) | 64 | `declaration-track:7d0888bf00a25aea149044d59754729e9468c02510a5e90e975bf02a0fa1058f` |
-| 8 | `def` | [InteractiveSvg.serverRpcMethod](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/declarations/interactivesvg-serverrpcmethod.md) | 74 | `declaration-track:8c3ad9c5c351a2544a43ef24dffa71af527cdf123ca010ed85af1f399c1b7635` |
+| 1 | `def` | [Interactive Svg Namespaced Action Kind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-theoreticalalgorithms-ac.md) | 14 | `declaration-track:9801fd9658ef3918803d3774d50bb5e652a9a32284ae5cb36d556f747e892795` |
+| 2 | `inductive` | [ActionKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/declarations/actionkind.md) | 22 | `declaration-track:48f325b0eabe4c7796d549f9c7871be37da1612991500fba80e2ebdf7a52106b` |
+| 3 | `structure` | [Action](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/declarations/action.md) | 29 | `declaration-track:b88b2d9064b2e41e9d80cef217bf00dacfbae7a7b93997c1fd6edfa6f21f0217` |
+| 4 | `structure` | [SvgState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/declarations/svgstate.md) | 38 | `declaration-track:3c4fe767a0fa9c95d72954fff685c1276fe478fcd7425d069af0cc823810baf9` |
+| 5 | `structure` | [UpdateParams](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/declarations/updateparams.md) | 48 | `declaration-track:3f224d2582184d99803e13249258bd0e594b11fc8265cef1ab6b2889a41e41be` |
+| 6 | `structure` | [UpdateResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/declarations/updateresult.md) | 55 | `declaration-track:3e8995e047e6b522ea1f53158d030c34bd828ff5aef2abfe3537014a082ef592` |
+| 7 | `structure` | [InteractiveSvg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/declarations/interactivesvg.md) | 64 | `declaration-track:7d0888bf00a25aea149044d59754729e9468c02510a5e90e975bf02a0fa1058f` |
+| 8 | `def` | [InteractiveSvg.serverRpcMethod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedActionKind.lean/declarations/interactivesvg-serverrpcmethod.md) | 74 | `declaration-track:8c3ad9c5c351a2544a43ef24dffa71af527cdf123ca010ed85af1f399c1b7635` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

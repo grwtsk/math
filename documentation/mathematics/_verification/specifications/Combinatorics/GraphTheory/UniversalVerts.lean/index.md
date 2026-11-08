@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/UniversalVerts.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/UniversalVerts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/UniversalVerts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/UniversalVerts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [universalVerts](../../../../../Combinatorics/GraphTheory/UniversalVerts.lean/declarations/universalverts.md) | 32 | `declaration-track:59615454a9a16cbf752889b00cfa30a0e202b2df7b2a53a2d194e716418b2f7b` |
-| 2 | `lemma` | [isClique_universalVerts](../../../../../Combinatorics/GraphTheory/UniversalVerts.lean/declarations/isclique-universalverts.md) | 34 | `result-track:21049177848375c9d305b5925a5124e0bc624f02b2186682078b77499d75a16a` |
-| 3 | `def` | [deleteUniversalVerts](../../../../../Combinatorics/GraphTheory/UniversalVerts.lean/declarations/deleteuniversalverts.md) | 41 | `declaration-track:babb502a7840823bdbbb945307f7fd5017d639f5af69cc1763b97f60eafaa7e0` |
-| 4 | `lemma` | [Subgraph.IsMatching.exists_of_universalVerts](../../../../../Combinatorics/GraphTheory/UniversalVerts.lean/declarations/subgraph-ismatching-exists-of-universalverts.md) | 44 | `result-track:344317993f230d5f5a36d6f0d3fe20eff69b35d0a5a3205d00233a604b40c6b4` |
-| 5 | `lemma` | [disjoint_image_val_universalVerts](../../../../../Combinatorics/GraphTheory/UniversalVerts.lean/declarations/disjoint-image-val-universalverts.md) | 55 | `result-track:d06df9e0f5a7e7173fea5b36fd0beb77f51ddae1090d574a3125bfb6653bd9b5` |
-| 6 | `lemma` | [even_ncard_image_val_supp_sdiff_image_val_rep_union](../../../../../Combinatorics/GraphTheory/UniversalVerts.lean/declarations/even-ncard-image-val-supp-sdiff-image-val-rep-union.md) | 65 | `result-track:d1efa3b595d3f4159790182918a5ad12c86d22502707b38b2854ce4a3bc4ba70` |
+| 1 | `def` | [universalVerts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/UniversalVerts.lean/declarations/universalverts.md) | 32 | `declaration-track:59615454a9a16cbf752889b00cfa30a0e202b2df7b2a53a2d194e716418b2f7b` |
+| 2 | `lemma` | [isClique_universalVerts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/UniversalVerts.lean/declarations/isclique-universalverts.md) | 34 | `result-track:21049177848375c9d305b5925a5124e0bc624f02b2186682078b77499d75a16a` |
+| 3 | `def` | [deleteUniversalVerts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/UniversalVerts.lean/declarations/deleteuniversalverts.md) | 41 | `declaration-track:babb502a7840823bdbbb945307f7fd5017d639f5af69cc1763b97f60eafaa7e0` |
+| 4 | `lemma` | [Subgraph.IsMatching.exists_of_universalVerts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/UniversalVerts.lean/declarations/subgraph-ismatching-exists-of-universalverts.md) | 44 | `result-track:344317993f230d5f5a36d6f0d3fe20eff69b35d0a5a3205d00233a604b40c6b4` |
+| 5 | `lemma` | [disjoint_image_val_universalVerts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/UniversalVerts.lean/declarations/disjoint-image-val-universalverts.md) | 55 | `result-track:d06df9e0f5a7e7173fea5b36fd0beb77f51ddae1090d574a3125bfb6653bd9b5` |
+| 6 | `lemma` | [even_ncard_image_val_supp_sdiff_image_val_rep_union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/UniversalVerts.lean/declarations/even-ncard-image-val-supp-sdiff-image-val-rep-union.md) | 65 | `result-track:d1efa3b595d3f4159790182918a5ad12c86d22502707b38b2854ce4a3bc4ba70` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

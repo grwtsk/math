@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/ValuativeRelPublic.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/ValuativeRelPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/ValuativeRelPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/ValuativeRelPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/ValuativeRelPublic.lean/declarations/instance-source-edition-4.md) | 33 | `declaration-track:d7a0504451b25127883c9eeec820cd002f6f66387246e3f3bfd77f8facd160b8` |
-| 2 | `instance` | [(anonymous)](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/ValuativeRelPublic.lean/declarations/instance-source-edition-5.md) | 35 | `declaration-track:e7991485d2def353349a47bf71c4f7d564e2295dc849ac5b356a868909b81b9c` |
-| 3 | `lemma` | [valuation_p_ne_zero](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/ValuativeRelPublic.lean/declarations/valuation-p-ne-zero.md) | 39 | `result-track:1613424ea583b84d8972b5cc5d9006da32afda11aab7be8e75a0f886261fea7b` |
-| 4 | `lemma` | [valuation_p_lt_one](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/ValuativeRelPublic.lean/declarations/valuation-p-lt-one.md) | 43 | `result-track:6657f0c04d7311bf2d7da76edcffd7ef6d84944c04998b56a10c70939a3ccaa1` |
-| 5 | `instance` | [(anonymous)](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/ValuativeRelPublic.lean/declarations/instance-source-edition-2.md) | 46 | `declaration-track:5dde2f5408743347c2f4b97f1470002dbda2d07d7a9a68683c6365e4c4a6d2ad` |
-| 6 | `instance` | [(anonymous)](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/ValuativeRelPublic.lean/declarations/instance.md) | 49 | `declaration-track:3ee16e74de953dd5c143bc5709613d6f2062db3fb3bee2a6d1ecfbee7e1bf26a` |
-| 7 | `instance` | [(anonymous)](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/ValuativeRelPublic.lean/declarations/instance-source-edition-3.md) | 51 | `declaration-track:b94a013f56bcfcfd81d139acb0ffbe6b1f2a80b5e767940376e4c469ed3bc20c` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/ValuativeRelPublic.lean/declarations/instance-source-edition-4.md) | 33 | `declaration-track:d7a0504451b25127883c9eeec820cd002f6f66387246e3f3bfd77f8facd160b8` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/ValuativeRelPublic.lean/declarations/instance-source-edition-5.md) | 35 | `declaration-track:e7991485d2def353349a47bf71c4f7d564e2295dc849ac5b356a868909b81b9c` |
+| 3 | `lemma` | [valuation_p_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/ValuativeRelPublic.lean/declarations/valuation-p-ne-zero.md) | 39 | `result-track:1613424ea583b84d8972b5cc5d9006da32afda11aab7be8e75a0f886261fea7b` |
+| 4 | `lemma` | [valuation_p_lt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/ValuativeRelPublic.lean/declarations/valuation-p-lt-one.md) | 43 | `result-track:6657f0c04d7311bf2d7da76edcffd7ef6d84944c04998b56a10c70939a3ccaa1` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/ValuativeRelPublic.lean/declarations/instance-source-edition-2.md) | 46 | `declaration-track:5dde2f5408743347c2f4b97f1470002dbda2d07d7a9a68683c6365e4c4a6d2ad` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/ValuativeRelPublic.lean/declarations/instance.md) | 49 | `declaration-track:3ee16e74de953dd5c143bc5709613d6f2062db3fb3bee2a6d1ecfbee7e1bf26a` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/ValuativeRelPublic.lean/declarations/instance-source-edition-3.md) | 51 | `declaration-track:b94a013f56bcfcfd81d139acb0ffbe6b1f2a80b5e767940376e4c469ed3bc20c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

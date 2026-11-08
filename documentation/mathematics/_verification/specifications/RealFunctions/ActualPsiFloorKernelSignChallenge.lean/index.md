@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ActualPsiFloorKernelSignChallenge.lean/index.md) · [Full source](../../../../RealFunctions/ActualPsiFloorKernelSignChallenge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualPsiFloorKernelSignChallenge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualPsiFloorKernelSignChallenge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualPsiFloor_small_block_critical_weight](../../../../RealFunctions/ActualPsiFloorKernelSignChallenge.lean/declarations/actualpsifloor-small-block-critical-weight.md) | 22 | `result-track:d004ceb5b519e55a2da45edc0191fbe169682367ff59bf99a75c16cf543ea6d1` |
-| 2 | `theorem` | [actualPsiFloor_small_block_derivative_upper](../../../../RealFunctions/ActualPsiFloorKernelSignChallenge.lean/declarations/actualpsifloor-small-block-derivative-upper.md) | 57 | `result-track:dce01d0bfcee2ffbdbbd69413cff983e9100cfdb04a48fe4f8de4662c8cf782d` |
-| 3 | `theorem` | [actualPsiFloor_small_block_derivative_neg](../../../../RealFunctions/ActualPsiFloorKernelSignChallenge.lean/declarations/actualpsifloor-small-block-derivative-neg.md) | 71 | `result-track:53725d87980d936c49425cc92371f5d54ed8afd065c4b0aa0f8574a1f75ad508` |
-| 4 | `theorem` | [actualPsiFloor_pairing_density_negative_block](../../../../RealFunctions/ActualPsiFloorKernelSignChallenge.lean/declarations/actualpsifloor-pairing-density-negative-block.md) | 79 | `result-track:8981ce6a7ab4cb9df49c9b0bf07848fa92a2b254b2cb3c047d8b1601eb3d120f` |
-| 5 | `theorem` | [actualPsiFloor_pairing_density_positive_block](../../../../RealFunctions/ActualPsiFloorKernelSignChallenge.lean/declarations/actualpsifloor-pairing-density-positive-block.md) | 91 | `result-track:2fee1df5db19b12fe1d72b03f641551011ddcb8727ec4eb03bb7cc17a109188d` |
-| 6 | `theorem` | [actualPsiFloor_pairing_density_not_nonnegative](../../../../RealFunctions/ActualPsiFloorKernelSignChallenge.lean/declarations/actualpsifloor-pairing-density-not-nonnegative.md) | 103 | `result-track:ab765d0723ce70bf794396a685d3cb27f067681a3f5c65405a3d42caad0910dc` |
-| 7 | `theorem` | [actualPsiFloor_pairing_density_not_nonpositive](../../../../RealFunctions/ActualPsiFloorKernelSignChallenge.lean/declarations/actualpsifloor-pairing-density-not-nonpositive.md) | 112 | `result-track:2f8a19d4091de663eb41cbb163386eb7ae65befc4f896cb778c75d1a77131f94` |
+| 1 | `theorem` | [actualPsiFloor_small_block_critical_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualPsiFloorKernelSignChallenge.lean/declarations/actualpsifloor-small-block-critical-weight.md) | 22 | `result-track:d004ceb5b519e55a2da45edc0191fbe169682367ff59bf99a75c16cf543ea6d1` |
+| 2 | `theorem` | [actualPsiFloor_small_block_derivative_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualPsiFloorKernelSignChallenge.lean/declarations/actualpsifloor-small-block-derivative-upper.md) | 57 | `result-track:dce01d0bfcee2ffbdbbd69413cff983e9100cfdb04a48fe4f8de4662c8cf782d` |
+| 3 | `theorem` | [actualPsiFloor_small_block_derivative_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualPsiFloorKernelSignChallenge.lean/declarations/actualpsifloor-small-block-derivative-neg.md) | 71 | `result-track:53725d87980d936c49425cc92371f5d54ed8afd065c4b0aa0f8574a1f75ad508` |
+| 4 | `theorem` | [actualPsiFloor_pairing_density_negative_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualPsiFloorKernelSignChallenge.lean/declarations/actualpsifloor-pairing-density-negative-block.md) | 79 | `result-track:8981ce6a7ab4cb9df49c9b0bf07848fa92a2b254b2cb3c047d8b1601eb3d120f` |
+| 5 | `theorem` | [actualPsiFloor_pairing_density_positive_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualPsiFloorKernelSignChallenge.lean/declarations/actualpsifloor-pairing-density-positive-block.md) | 91 | `result-track:2fee1df5db19b12fe1d72b03f641551011ddcb8727ec4eb03bb7cc17a109188d` |
+| 6 | `theorem` | [actualPsiFloor_pairing_density_not_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualPsiFloorKernelSignChallenge.lean/declarations/actualpsifloor-pairing-density-not-nonnegative.md) | 103 | `result-track:ab765d0723ce70bf794396a685d3cb27f067681a3f5c65405a3d42caad0910dc` |
+| 7 | `theorem` | [actualPsiFloor_pairing_density_not_nonpositive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualPsiFloorKernelSignChallenge.lean/declarations/actualpsifloor-pairing-density-not-nonpositive.md) | 112 | `result-track:2f8a19d4091de663eb41cbb163386eb7ae65befc4f896cb778c75d1a77131f94` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/LemmaNamespacedAligned.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/LemmaNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LemmaNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LemmaNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../../Combinatorics/GraphTheory/LemmaNamespacedAligned.lean/declarations/macro-rules.md) | 79 | `declaration-track:3ad63bc53432bf3f43f39af27ff5d685d03cb99b3d3257f5e9d78ca91c25eb38` |
-| 2 | `theorem` | [szemeredi_regularity](../../../../../Combinatorics/GraphTheory/LemmaNamespacedAligned.lean/declarations/szemeredi-regularity.md) | 85 | `result-track:1b16d733ff6d2f1d3e7a20e452fade624950d26303b52c881057b3860c24091b` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LemmaNamespacedAligned.lean/declarations/macro-rules.md) | 79 | `declaration-track:3ad63bc53432bf3f43f39af27ff5d685d03cb99b3d3257f5e9d78ca91c25eb38` |
+| 2 | `theorem` | [szemeredi_regularity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LemmaNamespacedAligned.lean/declarations/szemeredi-regularity.md) | 85 | `result-track:1b16d733ff6d2f1d3e7a20e452fade624950d26303b52c881057b3860c24091b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

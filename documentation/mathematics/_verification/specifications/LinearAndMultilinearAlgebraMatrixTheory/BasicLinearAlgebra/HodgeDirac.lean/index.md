@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GradedTerrainComplex](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/declarations/gradedterraincomplex.md) | 26 | `declaration-track:7a7ef01a107c606098e130d6cc17f0a03b3ab614fba2e02dc05e04a76c94d47c` |
-| 2 | `abbrev` | [DAFHilbert](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/declarations/dafhilbert.md) | 40 | `declaration-track:fff62e76e58cf1cfa85218c58c55583cc46be3903e9d54ef22df29fea197087a` |
-| 3 | `def` | [DAFTotalOperator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/declarations/daftotaloperator.md) | 46 | `declaration-track:808c3c0b257cf20c07699759d168236af690397a155acb2fea550dff5bb46cab` |
-| 4 | `theorem` | [dafTotalOperator_selfAdjoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/declarations/daftotaloperator-selfadjoint.md) | 56 | `result-track:45edbd7683d6ae6774f060774a7705579254db40798fa340884f9a3ad0dec63a` |
-| 5 | `theorem` | [dafTotalOperator_sq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/declarations/daftotaloperator-sq.md) | 71 | `result-track:0b57cc2d235be7da6d58aae5174a2d9c4922fada50c25664280464dde4790fa7` |
-| 6 | `theorem` | [dafGammaTotalOperator_sq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/declarations/dafgammatotaloperator-sq.md) | 110 | `result-track:eb03e3dbbc524e366590b643959ed13a2f2d1dbd4a8b11d119d4e60bccd63398` |
-| 7 | `def` | [PositiveSquare](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/declarations/positivesquare.md) | 125 | `declaration-track:d8e8cc8198af248b26748fb9e3e92c927b8de659b51641d712cbe536f47a49bf` |
-| 8 | `theorem` | [dafTotalOperator_positiveSquare](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/declarations/daftotaloperator-positivesquare.md) | 138 | `result-track:7d615480f2c3eacb35fe4aaa09c0148de70ffb123a362cd2ed9044ca0f1412a9` |
+| 1 | `structure` | [GradedTerrainComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/declarations/gradedterraincomplex.md) | 26 | `declaration-track:7a7ef01a107c606098e130d6cc17f0a03b3ab614fba2e02dc05e04a76c94d47c` |
+| 2 | `abbrev` | [DAFHilbert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/declarations/dafhilbert.md) | 40 | `declaration-track:fff62e76e58cf1cfa85218c58c55583cc46be3903e9d54ef22df29fea197087a` |
+| 3 | `def` | [DAFTotalOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/declarations/daftotaloperator.md) | 46 | `declaration-track:808c3c0b257cf20c07699759d168236af690397a155acb2fea550dff5bb46cab` |
+| 4 | `theorem` | [dafTotalOperator_selfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/declarations/daftotaloperator-selfadjoint.md) | 56 | `result-track:45edbd7683d6ae6774f060774a7705579254db40798fa340884f9a3ad0dec63a` |
+| 5 | `theorem` | [dafTotalOperator_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/declarations/daftotaloperator-sq.md) | 71 | `result-track:0b57cc2d235be7da6d58aae5174a2d9c4922fada50c25664280464dde4790fa7` |
+| 6 | `theorem` | [dafGammaTotalOperator_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/declarations/dafgammatotaloperator-sq.md) | 110 | `result-track:eb03e3dbbc524e366590b643959ed13a2f2d1dbd4a8b11d119d4e60bccd63398` |
+| 7 | `def` | [PositiveSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/declarations/positivesquare.md) | 125 | `declaration-track:d8e8cc8198af248b26748fb9e3e92c927b8de659b51641d712cbe536f47a49bf` |
+| 8 | `theorem` | [dafTotalOperator_positiveSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeDirac.lean/declarations/daftotaloperator-positivesquare.md) | 138 | `result-track:7d615480f2c3eacb35fe4aaa09c0148de70ffb123a362cd2ed9044ca0f1412a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

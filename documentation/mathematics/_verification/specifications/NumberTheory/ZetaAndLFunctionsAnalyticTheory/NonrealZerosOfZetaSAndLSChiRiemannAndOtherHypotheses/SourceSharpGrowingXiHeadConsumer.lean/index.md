@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceSharpGrowingXiHeadConsumer.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceSharpGrowingXiHeadConsumer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceSharpGrowingXiHeadConsumer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceSharpGrowingXiHeadConsumer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [residual_upper_of_sharp_growing_tail](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceSharpGrowingXiHeadConsumer.lean/declarations/residual-upper-of-sharp-growing-tail.md) | 19 | `result-track:e903fd0890ba4bca8d91c7ffce3b734cccdb9d5b1e65d330c1abcfd07b2950b5` |
-| 2 | `theorem` | [all_real_lower_of_sharp_growing_tail](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceSharpGrowingXiHeadConsumer.lean/declarations/all-real-lower-of-sharp-growing-tail.md) | 25 | `result-track:a47bdeae793abe873276c77cf2159ac6e7eff3db5d464b99cd8b86bcd2ed8d46` |
-| 3 | `theorem` | [estimate_of_sharp_growing_tail](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceSharpGrowingXiHeadConsumer.lean/declarations/estimate-of-sharp-growing-tail.md) | 35 | `result-track:eea1000f2235db058d0cb6e0e202afceca528dff95a5bae14a7f1f971df54417` |
-| 4 | `theorem` | [leading_upper_of_sharp_growing_tail](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceSharpGrowingXiHeadConsumer.lean/declarations/leading-upper-of-sharp-growing-tail.md) | 40 | `result-track:8234635827b3de873007b8518017c63d621b8b2c85f70edb366d07e79debb0c0` |
+| 1 | `theorem` | [residual_upper_of_sharp_growing_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceSharpGrowingXiHeadConsumer.lean/declarations/residual-upper-of-sharp-growing-tail.md) | 19 | `result-track:e903fd0890ba4bca8d91c7ffce3b734cccdb9d5b1e65d330c1abcfd07b2950b5` |
+| 2 | `theorem` | [all_real_lower_of_sharp_growing_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceSharpGrowingXiHeadConsumer.lean/declarations/all-real-lower-of-sharp-growing-tail.md) | 25 | `result-track:a47bdeae793abe873276c77cf2159ac6e7eff3db5d464b99cd8b86bcd2ed8d46` |
+| 3 | `theorem` | [estimate_of_sharp_growing_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceSharpGrowingXiHeadConsumer.lean/declarations/estimate-of-sharp-growing-tail.md) | 35 | `result-track:eea1000f2235db058d0cb6e0e202afceca528dff95a5bae14a7f1f971df54417` |
+| 4 | `theorem` | [leading_upper_of_sharp_growing_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceSharpGrowingXiHeadConsumer.lean/declarations/leading-upper-of-sharp-growing-tail.md) | 40 | `result-track:8234635827b3de873007b8518017c63d621b8b2c85f70edb366d07e79debb0c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

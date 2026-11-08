@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Modality.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Modality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Modality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Modality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AffineModality](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Modality.lean/declarations/affinemodality.md) | 7 | `declaration-track:8ce527f86119d1bcc614c50384f705f84695195491b7a851b4bf9213578f2d32` |
-| 2 | `def` | [AffineModality.irreversible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Modality.lean/declarations/affinemodality-irreversible.md) | 20 | `declaration-track:ec6c0e10dd2b3e2e21e653ede99923a02c7ca717073ca9d3d1d7a326bbfeafa2` |
-| 3 | `structure` | [ModalityBoundary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Modality.lean/declarations/modalityboundary.md) | 24 | `declaration-track:211ed546c86c430e4ef2e67eb35cfe8996bb02ff93a718f084ff5f6e1fb324a3` |
-| 4 | `theorem` | [irreversible_modality_visible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Modality.lean/declarations/irreversible-modality-visible.md) | 29 | `result-track:9318cc0cc78248bb9ed576257443a29ffe8a4086edab22124e586992da987d75` |
-| 5 | `theorem` | [reversibleFlow_modality_not_irreversible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Modality.lean/declarations/reversibleflow-modality-not-irreversible.md) | 34 | `result-track:140056eec5154ba15a909197eab8e3bbb0452f8f3403de41b9bf1fd2f08a50d9` |
+| 1 | `inductive` | [AffineModality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Modality.lean/declarations/affinemodality.md) | 7 | `declaration-track:8ce527f86119d1bcc614c50384f705f84695195491b7a851b4bf9213578f2d32` |
+| 2 | `def` | [AffineModality.irreversible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Modality.lean/declarations/affinemodality-irreversible.md) | 20 | `declaration-track:ec6c0e10dd2b3e2e21e653ede99923a02c7ca717073ca9d3d1d7a326bbfeafa2` |
+| 3 | `structure` | [ModalityBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Modality.lean/declarations/modalityboundary.md) | 24 | `declaration-track:211ed546c86c430e4ef2e67eb35cfe8996bb02ff93a718f084ff5f6e1fb324a3` |
+| 4 | `theorem` | [irreversible_modality_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Modality.lean/declarations/irreversible-modality-visible.md) | 29 | `result-track:9318cc0cc78248bb9ed576257443a29ffe8a4086edab22124e586992da987d75` |
+| 5 | `theorem` | [reversibleFlow_modality_not_irreversible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Modality.lean/declarations/reversibleflow-modality-not-irreversible.md) | 34 | `result-track:140056eec5154ba15a909197eab8e3bbb0452f8f3403de41b9bf1fd2f08a50d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

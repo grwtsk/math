@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultMomentsOfTracesChi.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultMomentsOfTracesChi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultMomentsOfTracesChi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultMomentsOfTracesChi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [moments_of_traces_chi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultMomentsOfTracesChi.lean/declarations/moments-of-traces-chi.md) | 39 | `result-track:33340ac8b78045a85dca9f4edd0c554f881446fd244fdcbe81f54237b01ba4b7` |
-| 2 | `theorem` | [thmBmult_chi_abstract](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultMomentsOfTracesChi.lean/declarations/thmbmult-chi-abstract.md) | 160 | `result-track:176ac3d2e1cf71ea830728c4ffb87097b3100e5a54f4b39d7e000d070d99d7e2` |
-| 3 | `theorem` | [thmCmult_chi_abstract](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultMomentsOfTracesChi.lean/declarations/thmcmult-chi-abstract.md) | 226 | `result-track:4b101348bf71f23a9daca7336fb2af5885652416c3012da5482fa0e11a9760a4` |
-| 4 | `theorem` | [thmE_B_mult_lam](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultMomentsOfTracesChi.lean/declarations/thme-b-mult-lam.md) | 297 | `result-track:078c21e6bc53edbda76d82c3f6c29b1d3b7d0a9a020cbeed7a347090e63aef9c` |
-| 5 | `theorem` | [thmE_C_mult_lam](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultMomentsOfTracesChi.lean/declarations/thme-c-mult-lam.md) | 310 | `result-track:cd43240fd72db93369d692039ac0855e4da3333cd830f07aae175bea31e82aa3` |
-| 6 | `theorem` | [thmE_B₀_mult](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultMomentsOfTracesChi.lean/declarations/thme-b-mult.md) | 324 | `result-track:feef1e06d8c2ac59ca655b2ad88701ca027e5d5a25c215f3e437d52c47f57069` |
-| 7 | `theorem` | [thmE_C₀_mult](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultMomentsOfTracesChi.lean/declarations/thme-c-mult.md) | 333 | `result-track:ec5dac71cd2a164d1f67c7d430c38a9a3b96729cbf03d3c6ca1e068172814842` |
+| 1 | `theorem` | [moments_of_traces_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultMomentsOfTracesChi.lean/declarations/moments-of-traces-chi.md) | 39 | `result-track:33340ac8b78045a85dca9f4edd0c554f881446fd244fdcbe81f54237b01ba4b7` |
+| 2 | `theorem` | [thmBmult_chi_abstract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultMomentsOfTracesChi.lean/declarations/thmbmult-chi-abstract.md) | 160 | `result-track:176ac3d2e1cf71ea830728c4ffb87097b3100e5a54f4b39d7e000d070d99d7e2` |
+| 3 | `theorem` | [thmCmult_chi_abstract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultMomentsOfTracesChi.lean/declarations/thmcmult-chi-abstract.md) | 226 | `result-track:4b101348bf71f23a9daca7336fb2af5885652416c3012da5482fa0e11a9760a4` |
+| 4 | `theorem` | [thmE_B_mult_lam](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultMomentsOfTracesChi.lean/declarations/thme-b-mult-lam.md) | 297 | `result-track:078c21e6bc53edbda76d82c3f6c29b1d3b7d0a9a020cbeed7a347090e63aef9c` |
+| 5 | `theorem` | [thmE_C_mult_lam](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultMomentsOfTracesChi.lean/declarations/thme-c-mult-lam.md) | 310 | `result-track:cd43240fd72db93369d692039ac0855e4da3333cd830f07aae175bea31e82aa3` |
+| 6 | `theorem` | [thmE_B₀_mult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultMomentsOfTracesChi.lean/declarations/thme-b-mult.md) | 324 | `result-track:feef1e06d8c2ac59ca655b2ad88701ca027e5d5a25c215f3e437d52c47f57069` |
+| 7 | `theorem` | [thmE_C₀_mult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultMomentsOfTracesChi.lean/declarations/thme-c-mult.md) | 333 | `result-track:ec5dac71cd2a164d1f67c7d430c38a9a3b96729cbf03d3c6ca1e068172814842` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

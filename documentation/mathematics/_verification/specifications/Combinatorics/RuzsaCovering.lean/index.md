@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RuzsaCovering.lean/index.md) · [Full source](../../../../Combinatorics/RuzsaCovering.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuzsaCovering.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuzsaCovering.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ruzsa_covering_mul](../../../../Combinatorics/RuzsaCovering.lean/declarations/ruzsa-covering-mul.md) | 28 | `result-track:705a31566d57bc43fc118ac1f223c516ab13f69f00f66e9b22e572ed106f7300` |
-| 2 | `lemma` | [ruzsa_covering_mul](../../../../Combinatorics/RuzsaCovering.lean/declarations/ruzsa-covering-mul-source-edition-2.md) | 67 | `result-track:e6c786aad57ed658016f3885f506442bfb75b77b4386bc73a85a88f6358b6d1d` |
+| 1 | `theorem` | [ruzsa_covering_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuzsaCovering.lean/declarations/ruzsa-covering-mul.md) | 28 | `result-track:705a31566d57bc43fc118ac1f223c516ab13f69f00f66e9b22e572ed106f7300` |
+| 2 | `lemma` | [ruzsa_covering_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuzsaCovering.lean/declarations/ruzsa-covering-mul-source-edition-2.md) | 67 | `result-track:e6c786aad57ed658016f3885f506442bfb75b77b4386bc73a85a88f6358b6d1d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -8,6 +8,8 @@
 
 ## MSC2020 subject navigation
 
+Links to source articles removed by the bulk documentation deletions open their preserved version at commit `9b46c9dc984c2a20cef7fe59984514ab038f0d58`. Those archived pages retain their historical evidence scope; they do not describe current verification status. Current Lean source navigation is listed below.
+
 [Browse Lean source folders by subject](complete-source-index.md) · [Authored subject guides](../taxonomy/subjects/index.md) · [Naming and source provenance](../taxonomy/msc2020/README.md).
 
 [Provider packages and source links](../adapters/README.md) retain isolated native dependencies; their Lean files link to the canonical `GRWTSK/` subject tree.

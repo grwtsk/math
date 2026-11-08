@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/FieldMinimalAxiomsNamespaced.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/FieldMinimalAxiomsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldMinimalAxiomsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldMinimalAxiomsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Field.ofMinimalAxioms](../../../../FieldTheoryAndPolynomials/FieldMinimalAxiomsNamespaced.lean/declarations/field-ofminimalaxioms.md) | 35 | `declaration-track:9be461237a756f0a47df4ca5733af53ca1e9d0f86c9c4680fca8537e605a3691` |
+| 1 | `abbrev` | [Field.ofMinimalAxioms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldMinimalAxiomsNamespaced.lean/declarations/field-ofminimalaxioms.md) | 35 | `declaration-track:9be461237a756f0a47df4ca5733af53ca1e9d0f86c9c4680fca8537e605a3691` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

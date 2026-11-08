@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteNormalizationExamples.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteNormalizationExamples.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteNormalizationExamples.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteNormalizationExamples.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,11 +62,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteNormalizationExamples.lean/declarations/example.md) | 30 | `declaration-track:346cb70188b2a1f06ddbe6a2fc835a1062e44bd387b8818e101615ddd6e20e05` |
-| 2 | `example` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteNormalizationExamples.lean/declarations/example-source-edition-3.md) | 37 | `declaration-track:833704c7270a213dbf49c85b9af044261066151531a2b4207abf9feb987fd632` |
-| 3 | `example` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteNormalizationExamples.lean/declarations/example-source-edition-4.md) | 45 | `declaration-track:b6a6c5771d35acc3530e9cd760ac828cd798f92fd6865486abf897b4ddb2f157` |
-| 4 | `example` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteNormalizationExamples.lean/declarations/example-source-edition-5.md) | 50 | `declaration-track:c018765d77ed3d1e0f628866fedd749ee109f247fe1d7f7a84f7860953cc266c` |
-| 5 | `example` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteNormalizationExamples.lean/declarations/example-source-edition-2.md) | 56 | `declaration-track:3e09efea4931674a70cc80085581d4d908939590e3fab788683646cc05cb73dd` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteNormalizationExamples.lean/declarations/example.md) | 30 | `declaration-track:346cb70188b2a1f06ddbe6a2fc835a1062e44bd387b8818e101615ddd6e20e05` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteNormalizationExamples.lean/declarations/example-source-edition-3.md) | 37 | `declaration-track:833704c7270a213dbf49c85b9af044261066151531a2b4207abf9feb987fd632` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteNormalizationExamples.lean/declarations/example-source-edition-4.md) | 45 | `declaration-track:b6a6c5771d35acc3530e9cd760ac828cd798f92fd6865486abf897b4ddb2f157` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteNormalizationExamples.lean/declarations/example-source-edition-5.md) | 50 | `declaration-track:c018765d77ed3d1e0f628866fedd749ee109f247fe1d7f7a84f7860953cc266c` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteNormalizationExamples.lean/declarations/example-source-edition-2.md) | 56 | `declaration-track:3e09efea4931674a70cc80085581d4d908939590e3fab788683646cc05cb73dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

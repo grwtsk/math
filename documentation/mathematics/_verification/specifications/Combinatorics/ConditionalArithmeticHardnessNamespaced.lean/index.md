@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ConditionalArithmeticHardnessNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ConditionalArithmeticHardnessNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConditionalArithmeticHardnessNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConditionalArithmeticHardnessNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ArithmeticSecurityScale](../../../../Combinatorics/ConditionalArithmeticHardnessNamespaced.lean/declarations/arithmeticsecurityscale.md) | 25 | `declaration-track:9a6d2bbed4db27f7d4d4054c7fccfd06aab52a753eb73908e43ad11eb879ecde` |
-| 2 | `structure` | [UniformGrowthCertificate](../../../../Combinatorics/ConditionalArithmeticHardnessNamespaced.lean/declarations/uniformgrowthcertificate.md) | 34 | `declaration-track:2bea025e8f162cff1b9228df7bec622118afd1b2cb97c963647b1538613f13ca` |
-| 3 | `structure` | [ConditionalArithmeticQueryCertificate](../../../../Combinatorics/ConditionalArithmeticHardnessNamespaced.lean/declarations/conditionalarithmeticquerycertificate.md) | 45 | `declaration-track:c4ba1e6f05e574a4a383d2708aa936fb98d30e446112da8d6592655b5da6e954` |
-| 4 | `theorem` | [query_lower_bound](../../../../Combinatorics/ConditionalArithmeticHardnessNamespaced.lean/declarations/query-lower-bound.md) | 74 | `result-track:74a7a6ff959848871851ab9ca87e02ce5fa19962aaf666a35b9c929b23f1cbd3` |
-| 5 | `structure` | [ConditionalArithmeticWorkCertificate](../../../../Combinatorics/ConditionalArithmeticHardnessNamespaced.lean/declarations/conditionalarithmeticworkcertificate.md) | 101 | `declaration-track:75c12b8c1591a3f2c74dca76d720b0b6fdb1750be4980bd0414b2ed6e147b1c9` |
-| 6 | `theorem` | [work_lower_bound](../../../../Combinatorics/ConditionalArithmeticHardnessNamespaced.lean/declarations/work-lower-bound.md) | 134 | `result-track:75fc67dda822ea7fb9bd583de3e47c04fc6861bccc3ec82466171d33afca2bb8` |
+| 1 | `structure` | [ArithmeticSecurityScale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConditionalArithmeticHardnessNamespaced.lean/declarations/arithmeticsecurityscale.md) | 25 | `declaration-track:9a6d2bbed4db27f7d4d4054c7fccfd06aab52a753eb73908e43ad11eb879ecde` |
+| 2 | `structure` | [UniformGrowthCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConditionalArithmeticHardnessNamespaced.lean/declarations/uniformgrowthcertificate.md) | 34 | `declaration-track:2bea025e8f162cff1b9228df7bec622118afd1b2cb97c963647b1538613f13ca` |
+| 3 | `structure` | [ConditionalArithmeticQueryCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConditionalArithmeticHardnessNamespaced.lean/declarations/conditionalarithmeticquerycertificate.md) | 45 | `declaration-track:c4ba1e6f05e574a4a383d2708aa936fb98d30e446112da8d6592655b5da6e954` |
+| 4 | `theorem` | [query_lower_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConditionalArithmeticHardnessNamespaced.lean/declarations/query-lower-bound.md) | 74 | `result-track:74a7a6ff959848871851ab9ca87e02ce5fa19962aaf666a35b9c929b23f1cbd3` |
+| 5 | `structure` | [ConditionalArithmeticWorkCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConditionalArithmeticHardnessNamespaced.lean/declarations/conditionalarithmeticworkcertificate.md) | 101 | `declaration-track:75c12b8c1591a3f2c74dca76d720b0b6fdb1750be4980bd0414b2ed6e147b1c9` |
+| 6 | `theorem` | [work_lower_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConditionalArithmeticHardnessNamespaced.lean/declarations/work-lower-bound.md) | 134 | `result-track:75fc67dda822ea7fb9bd583de3e47c04fc6861bccc3ec82466171d33afca2bb8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

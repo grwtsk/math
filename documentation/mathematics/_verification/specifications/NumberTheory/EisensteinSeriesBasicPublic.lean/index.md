@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/EisensteinSeriesBasicPublic.lean/index.md) · [Full source](../../../../NumberTheory/EisensteinSeriesBasicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesBasicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesBasicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [eisensteinSeriesMF](../../../../NumberTheory/EisensteinSeriesBasicPublic.lean/declarations/eisensteinseriesmf.md) | 35 | `declaration-track:83f88d341c9b283404297107e629db8f8d7bfa6509d46701a34fa014aa7e495d` |
-| 2 | `def` | [E](../../../../NumberTheory/EisensteinSeriesBasicPublic.lean/declarations/e.md) | 47 | `declaration-track:8028acce00c66c6bbf95c0899347285f1624c89e9705e99632f8fe72f26172f6` |
-| 3 | `abbrev` | [E₄](../../../../NumberTheory/EisensteinSeriesBasicPublic.lean/declarations/e-source-edition-2.md) | 51 | `declaration-track:9c0db51e92d3d122c6b1f94684a1eacfcf0c0915eac3795fca8c942dec127435` |
-| 4 | `abbrev` | [E₆](../../../../NumberTheory/EisensteinSeriesBasicPublic.lean/declarations/e-source-edition-3.md) | 54 | `declaration-track:eb091c09e6d0c647918210363c0730d41cf3b2488476b6e77b3b77625ce59ab5` |
+| 1 | `def` | [eisensteinSeriesMF](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesBasicPublic.lean/declarations/eisensteinseriesmf.md) | 35 | `declaration-track:83f88d341c9b283404297107e629db8f8d7bfa6509d46701a34fa014aa7e495d` |
+| 2 | `def` | [E](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesBasicPublic.lean/declarations/e.md) | 47 | `declaration-track:8028acce00c66c6bbf95c0899347285f1624c89e9705e99632f8fe72f26172f6` |
+| 3 | `abbrev` | [E₄](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesBasicPublic.lean/declarations/e-source-edition-2.md) | 51 | `declaration-track:9c0db51e92d3d122c6b1f94684a1eacfcf0c0915eac3795fca8c942dec127435` |
+| 4 | `abbrev` | [E₆](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesBasicPublic.lean/declarations/e-source-edition-3.md) | 54 | `declaration-track:eb091c09e6d0c647918210363c0730d41cf3b2488476b6e77b3b77625ce59ab5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

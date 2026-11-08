@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SheafOfFunctions.lean/index.md) · [Full source](../../../../GeneralTopology/SheafOfFunctions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheafOfFunctions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheafOfFunctions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [toTypes_isSheaf](../../../../GeneralTopology/SheafOfFunctions.lean/declarations/totypes-issheaf.md) | 46 | `result-track:120e36ac9032ee9d43a0c2088813f5010b047fe52735bc353aa04e5c0de37e25` |
-| 2 | `theorem` | [toType_isSheaf](../../../../GeneralTopology/SheafOfFunctions.lean/declarations/totype-issheaf.md) | 78 | `result-track:524cdbe07fe99b3453d304e55af08318a6d5354aa0d2e74fa7a2edcdf2897bd1` |
-| 3 | `def` | [sheafToTypes](../../../../GeneralTopology/SheafOfFunctions.lean/declarations/sheaftotypes.md) | 88 | `declaration-track:40dc54453e841d122e64b24e3e92ab66398d93598bffb377e52b5634a58b0e9c` |
-| 4 | `def` | [sheafToType](../../../../GeneralTopology/SheafOfFunctions.lean/declarations/sheaftotype.md) | 93 | `declaration-track:2e657702ed41b82664e24a871220706efe0fcc7f3f462bc24027024e67e93341` |
+| 1 | `theorem` | [toTypes_isSheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheafOfFunctions.lean/declarations/totypes-issheaf.md) | 46 | `result-track:120e36ac9032ee9d43a0c2088813f5010b047fe52735bc353aa04e5c0de37e25` |
+| 2 | `theorem` | [toType_isSheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheafOfFunctions.lean/declarations/totype-issheaf.md) | 78 | `result-track:524cdbe07fe99b3453d304e55af08318a6d5354aa0d2e74fa7a2edcdf2897bd1` |
+| 3 | `def` | [sheafToTypes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheafOfFunctions.lean/declarations/sheaftotypes.md) | 88 | `declaration-track:40dc54453e841d122e64b24e3e92ab66398d93598bffb377e52b5634a58b0e9c` |
+| 4 | `def` | [sheafToType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheafOfFunctions.lean/declarations/sheaftotype.md) | 93 | `declaration-track:2e657702ed41b82664e24a871220706efe0fcc7f3f462bc24027024e67e93341` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

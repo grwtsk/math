@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/IntegrabilityNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/IntegrabilityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegrabilityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegrabilityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [KtWeighted](../../../../MeasureAndIntegration/IntegrabilityNamespaced.lean/declarations/ktweighted.md) | 29 | `declaration-track:37c10cd1de3e97c8af1791c7d452465bc443b0da5565908dd92e65381ad0118b` |
-| 2 | `lemma` | [integrable_KtWeighted](../../../../MeasureAndIntegration/IntegrabilityNamespaced.lean/declarations/integrable-ktweighted.md) | 36 | `result-track:9c2b59c54a2fc1624b459088d4a18f6192b68a66b7fcd8984f5f26eddcb814f6` |
+| 1 | `def` | [KtWeighted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegrabilityNamespaced.lean/declarations/ktweighted.md) | 29 | `declaration-track:37c10cd1de3e97c8af1791c7d452465bc443b0da5565908dd92e65381ad0118b` |
+| 2 | `lemma` | [integrable_KtWeighted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegrabilityNamespaced.lean/declarations/integrable-ktweighted.md) | 36 | `result-track:9c2b59c54a2fc1624b459088d4a18f6192b68a66b7fcd8984f5f26eddcb814f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CPolynomial.lean/index.md) · [Full source](../../../../RealFunctions/CPolynomial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CPolynomial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CPolynomial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [CPolynomialOn.contDiffOn](../../../../RealFunctions/CPolynomial.lean/declarations/cpolynomialon-contdiffon.md) | 32 | `result-track:a4931db8bb6b681801c76eac1cd7a1f12405c4a4d7c366f1ee9b608e37c1fad8` |
-| 2 | `theorem` | [CPolynomialAt.contDiffAt](../../../../RealFunctions/CPolynomial.lean/declarations/cpolynomialat-contdiffat.md) | 42 | `result-track:b6f2e6a488244dede4504e4b7c4be0d7860a3aeba33f3053795fa8e84632259f` |
-| 3 | `lemma` | [contDiffAt](../../../../RealFunctions/CPolynomial.lean/declarations/contdiffat.md) | 56 | `result-track:c662a18876df036a8aedd3c1b0cb8f03554a3c70c138d88dcbbbbd842097c66c` |
-| 4 | `lemma` | [contDiff](../../../../RealFunctions/CPolynomial.lean/declarations/contdiff.md) | 58 | `result-track:dd77812febe240367d8894f694629982510a77e53370ebefb878b2d85dbdf5a6` |
+| 1 | `theorem` | [CPolynomialOn.contDiffOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CPolynomial.lean/declarations/cpolynomialon-contdiffon.md) | 32 | `result-track:a4931db8bb6b681801c76eac1cd7a1f12405c4a4d7c366f1ee9b608e37c1fad8` |
+| 2 | `theorem` | [CPolynomialAt.contDiffAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CPolynomial.lean/declarations/cpolynomialat-contdiffat.md) | 42 | `result-track:b6f2e6a488244dede4504e4b7c4be0d7860a3aeba33f3053795fa8e84632259f` |
+| 3 | `lemma` | [contDiffAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CPolynomial.lean/declarations/contdiffat.md) | 56 | `result-track:c662a18876df036a8aedd3c1b0cb8f03554a3c70c138d88dcbbbbd842097c66c` |
+| 4 | `lemma` | [contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CPolynomial.lean/declarations/contdiff.md) | 58 | `result-track:dd77812febe240367d8894f694629982510a77e53370ebefb878b2d85dbdf5a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

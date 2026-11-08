@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SheavesModuleNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/SheavesModuleNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesModuleNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesModuleNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sheafOfModulesEquivOver](../../../../GeneralTopology/SheavesModuleNamespacedPublic.lean/declarations/sheafofmodulesequivover.md) | 37 | `declaration-track:2feead1e199a3698b8e29d3858121acf8ee12067ae6d9f5b2ca1aaa989ef3cd0` |
-| 2 | `def` | [sheafOfModulesEquivOverUnit](../../../../GeneralTopology/SheavesModuleNamespacedPublic.lean/declarations/sheafofmodulesequivoverunit.md) | 46 | `declaration-track:0e24aaa3f337798785d0abb7863b5439904b5c5b9dee43938fd0963b3d36d7fa` |
-| 3 | `def` | [sheafOfModulesEquivOverInverseUnit](../../../../GeneralTopology/SheavesModuleNamespacedPublic.lean/declarations/sheafofmodulesequivoverinverseunit.md) | 51 | `declaration-track:30b59e869eec53ff2ad882b5a7547c01027c5800ad58a3ca195042843b6d6138` |
+| 1 | `def` | [sheafOfModulesEquivOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesModuleNamespacedPublic.lean/declarations/sheafofmodulesequivover.md) | 37 | `declaration-track:2feead1e199a3698b8e29d3858121acf8ee12067ae6d9f5b2ca1aaa989ef3cd0` |
+| 2 | `def` | [sheafOfModulesEquivOverUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesModuleNamespacedPublic.lean/declarations/sheafofmodulesequivoverunit.md) | 46 | `declaration-track:0e24aaa3f337798785d0abb7863b5439904b5c5b9dee43938fd0963b3d36d7fa` |
+| 3 | `def` | [sheafOfModulesEquivOverInverseUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesModuleNamespacedPublic.lean/declarations/sheafofmodulesequivoverinverseunit.md) | 51 | `declaration-track:30b59e869eec53ff2ad882b5a7547c01027c5800ad58a3ca195042843b6d6138` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

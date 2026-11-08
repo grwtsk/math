@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/TraceClass.lean/index.md) · [Full source](../../../../FunctionalAnalysis/TraceClass.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TraceClass.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TraceClass.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Hilbert.TraceClassCertificate](../../../../FunctionalAnalysis/TraceClass.lean/declarations/hilbert-traceclasscertificate.md) | 21 | `declaration-track:225679b2c7dfe1b6f38882b39b4ebc3f6ea651d5869276c6691e612986fbf210` |
-| 2 | `theorem` | [Hilbert.traceClass_operator_is_traceClass](../../../../FunctionalAnalysis/TraceClass.lean/declarations/hilbert-traceclass-operator-is-traceclass.md) | 29 | `result-track:98dff7f74963eac7f76822ab6d982a56f458791dd30724077fa5e33eebb74571` |
+| 1 | `structure` | [Hilbert.TraceClassCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TraceClass.lean/declarations/hilbert-traceclasscertificate.md) | 21 | `declaration-track:225679b2c7dfe1b6f38882b39b4ebc3f6ea651d5869276c6691e612986fbf210` |
+| 2 | `theorem` | [Hilbert.traceClass_operator_is_traceClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TraceClass.lean/declarations/hilbert-traceclass-operator-is-traceclass.md) | 29 | `result-track:98dff7f74963eac7f76822ab6d982a56f458791dd30724077fa5e33eebb74571` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

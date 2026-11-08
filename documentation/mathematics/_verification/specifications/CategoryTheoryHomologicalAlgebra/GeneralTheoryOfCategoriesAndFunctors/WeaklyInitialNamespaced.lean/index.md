@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeaklyInitialNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeaklyInitialNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeaklyInitialNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeaklyInitialNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [has_weakly_initial_of_weakly_initial_set_and_hasProducts](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeaklyInitialNamespaced.lean/declarations/has-weakly-initial-of-weakly-initial-set-and-hasproducts.md) | 42 | `result-track:a9784cb09929cd7380fefb4672529789462f989e17a83b814dcd95c05ed879db` |
-| 2 | `theorem` | [hasInitial_of_weakly_initial_and_hasWideEqualizers](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeaklyInitialNamespaced.lean/declarations/hasinitial-of-weakly-initial-and-haswideequalizers.md) | 51 | `result-track:a108ffe1d443877d8a94cba87fab9899af824374f377a86fe10fc61a35bebbe7` |
+| 1 | `theorem` | [has_weakly_initial_of_weakly_initial_set_and_hasProducts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeaklyInitialNamespaced.lean/declarations/has-weakly-initial-of-weakly-initial-set-and-hasproducts.md) | 42 | `result-track:a9784cb09929cd7380fefb4672529789462f989e17a83b814dcd95c05ed879db` |
+| 2 | `theorem` | [hasInitial_of_weakly_initial_and_hasWideEqualizers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeaklyInitialNamespaced.lean/declarations/hasinitial-of-weakly-initial-and-haswideequalizers.md) | 51 | `result-track:a108ffe1d443877d8a94cba87fab9899af824374f377a86fe10fc61a35bebbe7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmoothStreamNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmoothStreamNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmoothStreamNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmoothStreamNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SmoothStream](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmoothStreamNamespaced.lean/declarations/smoothstream.md) | 27 | `declaration-track:5b95513bd22bae11397d374eaaabb59cd522f616647178c0d1cf761770dde6b8` |
-| 2 | `theorem` | [complexity_smooth_stream_reconstructs_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmoothStreamNamespaced.lean/declarations/complexity-smooth-stream-reconstructs-if-supplied.md) | 35 | `result-track:88f51e436f7dc80d150993303fc1ae3cc52f4d12f78e2e4df0c38f8a6ac857d0` |
+| 1 | `structure` | [SmoothStream](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmoothStreamNamespaced.lean/declarations/smoothstream.md) | 27 | `declaration-track:5b95513bd22bae11397d374eaaabb59cd522f616647178c0d1cf761770dde6b8` |
+| 2 | `theorem` | [complexity_smooth_stream_reconstructs_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmoothStreamNamespaced.lean/declarations/complexity-smooth-stream-reconstructs-if-supplied.md) | 35 | `result-track:88f51e436f7dc80d150993303fc1ae3cc52f4d12f78e2e4df0c38f8a6ac857d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

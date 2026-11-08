@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [shrinkFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkPublic.lean/declarations/shrinkfunctor.md) | 45 | `declaration-track:a5e5f8b9f6ce4dcd624078729f03c55334ad361101e6362e64c579382ab1f7b6` |
-| 2 | `def` | [shrinkFunctorUliftFunctorIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkPublic.lean/declarations/shrinkfunctoruliftfunctoriso.md) | 56 | `declaration-track:f870982208dcac217b0e1c5845501665e4ea3eada5e1875d7325c33c8564362b` |
-| 3 | `lemma` | [shrinkFunctorUliftFunctorIso_inv_ι](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkPublic.lean/declarations/shrinkfunctoruliftfunctoriso-inv.md) | 72 | `result-track:a5cfd5d97f1af5b89395796b76c22ef1e7b1f32c070a0808a0e78a5bdf75633d` |
-| 4 | `def` | [shrinkFunctorIsoFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkPublic.lean/declarations/shrinkfunctorisofunctor.md) | 84 | `declaration-track:8ef7d3ef320c90e35b98c84a9fade443b482d192bdc6d703908f9dc0c194d93e` |
+| 1 | `def` | [shrinkFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkPublic.lean/declarations/shrinkfunctor.md) | 45 | `declaration-track:a5e5f8b9f6ce4dcd624078729f03c55334ad361101e6362e64c579382ab1f7b6` |
+| 2 | `def` | [shrinkFunctorUliftFunctorIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkPublic.lean/declarations/shrinkfunctoruliftfunctoriso.md) | 56 | `declaration-track:f870982208dcac217b0e1c5845501665e4ea3eada5e1875d7325c33c8564362b` |
+| 3 | `lemma` | [shrinkFunctorUliftFunctorIso_inv_ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkPublic.lean/declarations/shrinkfunctoruliftfunctoriso-inv.md) | 72 | `result-track:a5cfd5d97f1af5b89395796b76c22ef1e7b1f32c070a0808a0e78a5bdf75633d` |
+| 4 | `def` | [shrinkFunctorIsoFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkPublic.lean/declarations/shrinkfunctorisofunctor.md) | 84 | `declaration-track:8ef7d3ef320c90e35b98c84a9fade443b482d192bdc6d703908f9dc0c194d93e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

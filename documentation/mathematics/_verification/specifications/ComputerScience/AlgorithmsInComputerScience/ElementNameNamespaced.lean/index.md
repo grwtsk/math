@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementNameNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementNameNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementNameNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementNameNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ElementName](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementNameNamespaced.lean/declarations/elementname.md) | 20 | `declaration-track:d81011205b0ff86bed0aaa8e5d50f12800e5c026dc4799b15ec23104c2488104` |
-| 2 | `def` | [ElementName.Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementNameNamespaced.lean/declarations/elementname-valid.md) | 31 | `declaration-track:fe340baed6b8b9d7b6581b56706b5e04bdaabe09dae348874c247304f629a983` |
-| 3 | `def` | [ElementName.canonicalCoordinates](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementNameNamespaced.lean/declarations/elementname-canonicalcoordinates.md) | 36 | `declaration-track:dc94d95ee1694c768aed90facb4f2694a2b59518e87dbaf45bb40282c284265b` |
-| 4 | `theorem` | [canonical_coordinates_preserve_name_identity](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementNameNamespaced.lean/declarations/canonical-coordinates-preserve-name-identity.md) | 40 | `result-track:a6207c48aab7add13de3ae3d777993e83bc5deb044815dfbe2c0fb2ae4ac7280` |
+| 1 | `structure` | [ElementName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementNameNamespaced.lean/declarations/elementname.md) | 20 | `declaration-track:d81011205b0ff86bed0aaa8e5d50f12800e5c026dc4799b15ec23104c2488104` |
+| 2 | `def` | [ElementName.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementNameNamespaced.lean/declarations/elementname-valid.md) | 31 | `declaration-track:fe340baed6b8b9d7b6581b56706b5e04bdaabe09dae348874c247304f629a983` |
+| 3 | `def` | [ElementName.canonicalCoordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementNameNamespaced.lean/declarations/elementname-canonicalcoordinates.md) | 36 | `declaration-track:dc94d95ee1694c768aed90facb4f2694a2b59518e87dbaf45bb40282c284265b` |
+| 4 | `theorem` | [canonical_coordinates_preserve_name_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementNameNamespaced.lean/declarations/canonical-coordinates-preserve-name-identity.md) | 40 | `result-track:a6207c48aab7add13de3ae3d777993e83bc5deb044815dfbe2c0fb2ae4ac7280` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

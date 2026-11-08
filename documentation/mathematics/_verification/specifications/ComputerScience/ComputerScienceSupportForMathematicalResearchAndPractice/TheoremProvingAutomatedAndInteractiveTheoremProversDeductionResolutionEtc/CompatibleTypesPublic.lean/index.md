@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatibleTypesPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatibleTypesPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatibleTypesPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatibleTypesPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [compatibleTypesQuick](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatibleTypesPublic.lean/declarations/compatibletypesquick.md) | 54 | `declaration-track:41120a2ca2ef3e3d52af482818982a1e05b783bd88ac7b69c444957bf19d10a7` |
-| 2 | `def` | [compatibleTypesFull](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatibleTypesPublic.lean/declarations/compatibletypesfull.md) | 81 | `declaration-track:3438fd2bbff73eca0b70d133524f55e8cc548030a3410144c20cce523fbd1daf` |
-| 3 | `def` | [compatibleTypes](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatibleTypesPublic.lean/declarations/compatibletypes.md) | 147 | `declaration-track:c7a18a523ff690aab3aef31e1c6e63184eff3ea2d9b27be8b1fdc328728c8d62` |
+| 1 | `def` | [compatibleTypesQuick](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatibleTypesPublic.lean/declarations/compatibletypesquick.md) | 54 | `declaration-track:41120a2ca2ef3e3d52af482818982a1e05b783bd88ac7b69c444957bf19d10a7` |
+| 2 | `def` | [compatibleTypesFull](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatibleTypesPublic.lean/declarations/compatibletypesfull.md) | 81 | `declaration-track:3438fd2bbff73eca0b70d133524f55e8cc548030a3410144c20cce523fbd1daf` |
+| 3 | `def` | [compatibleTypes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompatibleTypesPublic.lean/declarations/compatibletypes.md) | 147 | `declaration-track:c7a18a523ff690aab3aef31e1c6e63184eff3ea2d9b27be8b1fdc328728c8d62` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition4.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [smoothedTest_form_error_le](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition4.lean/declarations/smoothedtest-form-error-le.md) | 27 | `result-track:fe7ba444c12b0322dd6a2ad2c5d7a58284a905a15bb32025b55447347efdf4e3` |
-| 2 | `theorem` | [smoothedTest_form_tendsto](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition4.lean/declarations/smoothedtest-form-tendsto.md) | 48 | `result-track:078c011ff726ae93cafee73efa98a515422daf65d654d969a3f477de3f2bef46` |
-| 3 | `theorem` | [source_form_tendsto](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition4.lean/declarations/source-form-tendsto.md) | 72 | `result-track:18cfb56c3cc564b234b28ee0d3b3a722a5800e33af18f7dbc4139b1c66bde3c3` |
-| 4 | `theorem` | [source_logarithmic_form_convergence](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition4.lean/declarations/source-logarithmic-form-convergence.md) | 80 | `result-track:6e4b5097153c08047a84ec95e684756aae356244004bd9d61fb727af573dd7c2` |
+| 1 | `theorem` | [smoothedTest_form_error_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition4.lean/declarations/smoothedtest-form-error-le.md) | 27 | `result-track:fe7ba444c12b0322dd6a2ad2c5d7a58284a905a15bb32025b55447347efdf4e3` |
+| 2 | `theorem` | [smoothedTest_form_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition4.lean/declarations/smoothedtest-form-tendsto.md) | 48 | `result-track:078c011ff726ae93cafee73efa98a515422daf65d654d969a3f477de3f2bef46` |
+| 3 | `theorem` | [source_form_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition4.lean/declarations/source-form-tendsto.md) | 72 | `result-track:18cfb56c3cc564b234b28ee0d3b3a722a5800e33af18f7dbc4139b1c66bde3c3` |
+| 4 | `theorem` | [source_logarithmic_form_convergence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternativeSourceEdition4.lean/declarations/source-logarithmic-form-convergence.md) | 80 | `result-track:6e4b5097153c08047a84ec95e684756aae356244004bd9d61fb727af573dd7c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

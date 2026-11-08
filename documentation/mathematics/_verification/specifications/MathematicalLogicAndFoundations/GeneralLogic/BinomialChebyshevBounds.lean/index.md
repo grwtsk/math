@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BinomialChebyshevBounds.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BinomialChebyshevBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BinomialChebyshevBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BinomialChebyshevBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [centralBinomial](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BinomialChebyshevBounds.lean/declarations/centralbinomial.md) | 15 | `declaration-track:3396af1b9e22f4c7dc6827e73e4ab69e7c48bd9f84d7ae062b14a00b3f38b8f0` |
-| 2 | `theorem` | [centralBinomial_pos](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BinomialChebyshevBounds.lean/declarations/centralbinomial-pos.md) | 19 | `result-track:6b41020ed7ed9ccda303f893cb2d55ceeb6fa9a46911ee29739eea2f7982f66b` |
-| 3 | `theorem` | [centralBinomial_le_four_pow](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BinomialChebyshevBounds.lean/declarations/centralbinomial-le-four-pow.md) | 24 | `result-track:4074bf963f7bc16fe8fa048012cc2f48de6dcee60005b176e4931ec14d225de9` |
-| 4 | `theorem` | [log_centralBinomial_le_n_log_four](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BinomialChebyshevBounds.lean/declarations/log-centralbinomial-le-n-log-four.md) | 29 | `result-track:01e9d0b8d8a4d7b39b810bb14c3b81a983a3710b4c93903bd9fd0099c76b0137` |
-| 5 | `def` | [CentralBinomialThetaDifferenceTarget](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BinomialChebyshevBounds.lean/declarations/centralbinomialthetadifferencetarget.md) | 45 | `declaration-track:8e69896d91cddff03fd2f070084be48f144c1ca7645bc6805e917e739cf5a5ad` |
+| 1 | `def` | [centralBinomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BinomialChebyshevBounds.lean/declarations/centralbinomial.md) | 15 | `declaration-track:3396af1b9e22f4c7dc6827e73e4ab69e7c48bd9f84d7ae062b14a00b3f38b8f0` |
+| 2 | `theorem` | [centralBinomial_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BinomialChebyshevBounds.lean/declarations/centralbinomial-pos.md) | 19 | `result-track:6b41020ed7ed9ccda303f893cb2d55ceeb6fa9a46911ee29739eea2f7982f66b` |
+| 3 | `theorem` | [centralBinomial_le_four_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BinomialChebyshevBounds.lean/declarations/centralbinomial-le-four-pow.md) | 24 | `result-track:4074bf963f7bc16fe8fa048012cc2f48de6dcee60005b176e4931ec14d225de9` |
+| 4 | `theorem` | [log_centralBinomial_le_n_log_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BinomialChebyshevBounds.lean/declarations/log-centralbinomial-le-n-log-four.md) | 29 | `result-track:01e9d0b8d8a4d7b39b810bb14c3b81a983a3710b4c93903bd9fd0099c76b0137` |
+| 5 | `def` | [CentralBinomialThetaDifferenceTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BinomialChebyshevBounds.lean/declarations/centralbinomialthetadifferencetarget.md) | 45 | `declaration-track:8e69896d91cddff03fd2f070084be48f144c1ca7645bc6805e917e739cf5a5ad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

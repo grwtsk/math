@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceCriticalOriginCurvatureNamespacedEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceCriticalOriginCurvatureNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalOriginCurvatureNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalOriginCurvatureNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pairedTailTest_second_deriv_at_zero_eq_energy](../../../../MeasureAndIntegration/SourceCriticalOriginCurvatureNamespacedEdition2.lean/declarations/pairedtailtest-second-deriv-at-zero-eq-energy.md) | 36 | `result-track:bdcbbef6d4eed83796fea00404d79f95f8bf8d37777d9fc342512167b606f748` |
-| 2 | `theorem` | [pairedTailTest_second_deriv_at_zero_neg_of_seven_le](../../../../MeasureAndIntegration/SourceCriticalOriginCurvatureNamespacedEdition2.lean/declarations/pairedtailtest-second-deriv-at-zero-neg-of-seven-le.md) | 72 | `result-track:61b4099ad1a7dfbbbf84cb24961bc5d0a04a5ced082f43f65058e1cb0916e3ac` |
-| 3 | `theorem` | [pairedTailTest_second_deriv_at_zero_one](../../../../MeasureAndIntegration/SourceCriticalOriginCurvatureNamespacedEdition2.lean/declarations/pairedtailtest-second-deriv-at-zero-one.md) | 122 | `result-track:7d7acdd3a51282c4e0e8b985c4d5341ee03c326f6047bce19d4d671aefa01ce0` |
+| 1 | `theorem` | [pairedTailTest_second_deriv_at_zero_eq_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalOriginCurvatureNamespacedEdition2.lean/declarations/pairedtailtest-second-deriv-at-zero-eq-energy.md) | 36 | `result-track:bdcbbef6d4eed83796fea00404d79f95f8bf8d37777d9fc342512167b606f748` |
+| 2 | `theorem` | [pairedTailTest_second_deriv_at_zero_neg_of_seven_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalOriginCurvatureNamespacedEdition2.lean/declarations/pairedtailtest-second-deriv-at-zero-neg-of-seven-le.md) | 72 | `result-track:61b4099ad1a7dfbbbf84cb24961bc5d0a04a5ced082f43f65058e1cb0916e3ac` |
+| 3 | `theorem` | [pairedTailTest_second_deriv_at_zero_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalOriginCurvatureNamespacedEdition2.lean/declarations/pairedtailtest-second-deriv-at-zero-one.md) | 122 | `result-track:7d7acdd3a51282c4e0e8b985c4d5341ee03c326f6047bce19d4d671aefa01ce0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

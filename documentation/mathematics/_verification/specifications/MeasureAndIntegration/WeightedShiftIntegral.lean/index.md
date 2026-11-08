@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/WeightedShiftIntegral.lean/index.md) · [Full source](../../../../MeasureAndIntegration/WeightedShiftIntegral.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedShiftIntegral.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedShiftIntegral.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -50,7 +50,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `FormalResearch.RiemannHypothesis.SourceComparison.FixedKernelAdmission` — import line 34; external provider; requires a separately pinned dependency.
 - `Mathlib.MeasureTheory.Function.LpSpace.ContinuousCompMeasurePreserving` — import line 35; external provider; requires a separately pinned dependency.
 - `Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap` — import line 36; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Analysis.FunctionSpaces.LebesgueSpaces.FullLineKernelAverages.Translations`](../../../../GeneralTopology/Translations.lean/index.md) — import line 37; pinned internal source present.
+- [`GRWTSK.Analysis.FunctionSpaces.LebesgueSpaces.FullLineKernelAverages.Translations`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Translations.lean/index.md) — import line 37; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [weighted_shift_integrable](../../../../MeasureAndIntegration/WeightedShiftIntegral.lean/declarations/weighted-shift-integrable.md) | 45 | `result-track:94f1848f9bd77e7d9be7192bed95113ce1bdc918e81bd7668ba4b46ec651a1b0` |
-| 2 | `def` | [bochnerVector](../../../../MeasureAndIntegration/WeightedShiftIntegral.lean/declarations/bochnervector.md) | 55 | `declaration-track:812f05fbe09cad3e262b96b7165fc5d003b62fd2ed65aafd8657bebc985910e8` |
-| 3 | `theorem` | [bochnerVector_norm_le](../../../../MeasureAndIntegration/WeightedShiftIntegral.lean/declarations/bochnervector-norm-le.md) | 57 | `result-track:21a6e2f22641900b2d068a39cb8af0e7b7c295d083f3ee9ff81cf99d981f5a17` |
+| 1 | `theorem` | [weighted_shift_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedShiftIntegral.lean/declarations/weighted-shift-integrable.md) | 45 | `result-track:94f1848f9bd77e7d9be7192bed95113ce1bdc918e81bd7668ba4b46ec651a1b0` |
+| 2 | `def` | [bochnerVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedShiftIntegral.lean/declarations/bochnervector.md) | 55 | `declaration-track:812f05fbe09cad3e262b96b7165fc5d003b62fd2ed65aafd8657bebc985910e8` |
+| 3 | `theorem` | [bochnerVector_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedShiftIntegral.lean/declarations/bochnervector-norm-le.md) | 57 | `result-track:21a6e2f22641900b2d068a39cb8af0e7b7c295d083f3ee9ff81cf99d981f5a17` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

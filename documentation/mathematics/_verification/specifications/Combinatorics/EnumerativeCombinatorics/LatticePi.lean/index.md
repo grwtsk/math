@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/LatticePi.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/LatticePi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticePi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticePi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inf_sup](../../../../../Combinatorics/EnumerativeCombinatorics/LatticePi.lean/declarations/inf-sup.md) | 24 | `result-track:d7524fac1ad06bcf0621af03cb6eb4c3d50af15eddc6e155b329a78ecf22ee89` |
-| 2 | `theorem` | [sup_inf](../../../../../Combinatorics/EnumerativeCombinatorics/LatticePi.lean/declarations/sup-inf.md) | 49 | `result-track:4ccb3f792c8c61c5b17b33824e08aefb495a41a5300552543b3de476272ce5b4` |
+| 1 | `theorem` | [inf_sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticePi.lean/declarations/inf-sup.md) | 24 | `result-track:d7524fac1ad06bcf0621af03cb6eb4c3d50af15eddc6e155b329a78ecf22ee89` |
+| 2 | `theorem` | [sup_inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticePi.lean/declarations/sup-inf.md) | 49 | `result-track:4ccb3f792c8c61c5b17b33824e08aefb495a41a5300552543b3de476272ce5b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

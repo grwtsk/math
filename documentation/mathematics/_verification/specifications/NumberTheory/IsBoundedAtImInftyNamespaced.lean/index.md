@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/IsBoundedAtImInftyNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/IsBoundedAtImInftyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IsBoundedAtImInftyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IsBoundedAtImInftyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [summable_norm_eisSummand](../../../../NumberTheory/IsBoundedAtImInftyNamespaced.lean/declarations/summable-norm-eissummand.md) | 43 | `result-track:aeeb2f91573b242d866831bbcd2cd466a7218f068e0431863f8ed9afc6954044` |
-| 2 | `lemma` | [norm_le_tsum_norm](../../../../NumberTheory/IsBoundedAtImInftyNamespaced.lean/declarations/norm-le-tsum-norm.md) | 53 | `result-track:34ed7ae7113bc478336ee790896bf9c48624e036300af74977c202cc2d38d25a` |
-| 3 | `theorem` | [isBoundedAtImInfty_eisensteinSeries_SIF](../../../../NumberTheory/IsBoundedAtImInftyNamespaced.lean/declarations/isboundedatiminfty-eisensteinseries-sif.md) | 63 | `result-track:e49090ebf3c9e47a42a5f4c3dbe2fc0f62753f9dc6f26a6e427ef81361a8206b` |
+| 1 | `lemma` | [summable_norm_eisSummand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IsBoundedAtImInftyNamespaced.lean/declarations/summable-norm-eissummand.md) | 43 | `result-track:aeeb2f91573b242d866831bbcd2cd466a7218f068e0431863f8ed9afc6954044` |
+| 2 | `lemma` | [norm_le_tsum_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IsBoundedAtImInftyNamespaced.lean/declarations/norm-le-tsum-norm.md) | 53 | `result-track:34ed7ae7113bc478336ee790896bf9c48624e036300af74977c202cc2d38d25a` |
+| 3 | `theorem` | [isBoundedAtImInfty_eisensteinSeries_SIF](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IsBoundedAtImInftyNamespaced.lean/declarations/isboundedatiminfty-eisensteinseries-sif.md) | 63 | `result-track:e49090ebf3c9e47a42a5f4c3dbe2fc0f62753f9dc6f26a6e427ef81361a8206b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

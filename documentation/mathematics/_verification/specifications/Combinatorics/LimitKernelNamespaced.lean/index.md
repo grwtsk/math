@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/LimitKernelNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/LimitKernelNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LimitKernelNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LimitKernelNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProjectiveProbabilityLaw](../../../../Combinatorics/LimitKernelNamespaced.lean/declarations/projectiveprobabilitylaw.md) | 25 | `declaration-track:61caabdc1ada8c4c49863e75102141fb390c09a72731c63f64a51a5ecf70ffa7` |
-| 2 | `structure` | [CompatibleSchedule](../../../../Combinatorics/LimitKernelNamespaced.lean/declarations/compatibleschedule.md) | 41 | `declaration-track:89d0941c722435db42f4163fb184146ab91ee9e9f00b537d8f524404620ebe0e` |
-| 3 | `def` | [ProjectiveBoundarySystem.defaultLimitSchedule](../../../../Combinatorics/LimitKernelNamespaced.lean/declarations/projectiveboundarysystem-defaultlimitschedule.md) | 57 | `declaration-track:37984d07a2926793c5d8a19bd9d5358426a6a45d0be712bb34fdae3fc14e901e` |
-| 4 | `inductive` | [LimitContractionSource](../../../../Combinatorics/LimitKernelNamespaced.lean/declarations/limitcontractionsource.md) | 72 | `declaration-track:584a9d8be20e8d850c92930a1cf332cf00ee3724f6d4e557b57c13f9ede4bcd6` |
-| 5 | `structure` | [ProjectiveLimitKernel](../../../../Combinatorics/LimitKernelNamespaced.lean/declarations/projectivelimitkernel.md) | 77 | `declaration-track:c2ff6781684c3d4ba7f6f8dba36d5c4387b92f90567f066d377fd801d4d112fd` |
-| 6 | `def` | [ProjectiveLimitKernel.invariantLawRealization](../../../../Combinatorics/LimitKernelNamespaced.lean/declarations/invariantlawrealization.md) | 147 | `declaration-track:c4efb9ad69ac5db018aeaa325e379d5fc4b6709afe9168fe765be7d0a9189d5b` |
-| 7 | `theorem` | [projective_limit_kernel_contractive](../../../../Combinatorics/LimitKernelNamespaced.lean/declarations/projective-limit-kernel-contractive.md) | 162 | `result-track:900f190411b2e1f3a8c0d274d375a670e9beb001f64b53a8078d3d9b631a9615` |
-| 8 | `theorem` | [projective_limit_invariant_law_unique](../../../../Combinatorics/LimitKernelNamespaced.lean/declarations/projective-limit-invariant-law-unique.md) | 183 | `result-track:9905617215ee4dd74d3d61e2d5c995c86707d60ad7231411eaa81ffcf765a6f6` |
+| 1 | `structure` | [ProjectiveProbabilityLaw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LimitKernelNamespaced.lean/declarations/projectiveprobabilitylaw.md) | 25 | `declaration-track:61caabdc1ada8c4c49863e75102141fb390c09a72731c63f64a51a5ecf70ffa7` |
+| 2 | `structure` | [CompatibleSchedule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LimitKernelNamespaced.lean/declarations/compatibleschedule.md) | 41 | `declaration-track:89d0941c722435db42f4163fb184146ab91ee9e9f00b537d8f524404620ebe0e` |
+| 3 | `def` | [ProjectiveBoundarySystem.defaultLimitSchedule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LimitKernelNamespaced.lean/declarations/projectiveboundarysystem-defaultlimitschedule.md) | 57 | `declaration-track:37984d07a2926793c5d8a19bd9d5358426a6a45d0be712bb34fdae3fc14e901e` |
+| 4 | `inductive` | [LimitContractionSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LimitKernelNamespaced.lean/declarations/limitcontractionsource.md) | 72 | `declaration-track:584a9d8be20e8d850c92930a1cf332cf00ee3724f6d4e557b57c13f9ede4bcd6` |
+| 5 | `structure` | [ProjectiveLimitKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LimitKernelNamespaced.lean/declarations/projectivelimitkernel.md) | 77 | `declaration-track:c2ff6781684c3d4ba7f6f8dba36d5c4387b92f90567f066d377fd801d4d112fd` |
+| 6 | `def` | [ProjectiveLimitKernel.invariantLawRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LimitKernelNamespaced.lean/declarations/invariantlawrealization.md) | 147 | `declaration-track:c4efb9ad69ac5db018aeaa325e379d5fc4b6709afe9168fe765be7d0a9189d5b` |
+| 7 | `theorem` | [projective_limit_kernel_contractive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LimitKernelNamespaced.lean/declarations/projective-limit-kernel-contractive.md) | 162 | `result-track:900f190411b2e1f3a8c0d274d375a670e9beb001f64b53a8078d3d9b631a9615` |
+| 8 | `theorem` | [projective_limit_invariant_law_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LimitKernelNamespaced.lean/declarations/projective-limit-invariant-law-unique.md) | 183 | `result-track:9905617215ee4dd74d3d61e2d5c995c86707d60ad7231411eaa81ffcf765a6f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

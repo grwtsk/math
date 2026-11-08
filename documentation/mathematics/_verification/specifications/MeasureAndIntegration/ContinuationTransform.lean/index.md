@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ContinuationTransform.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ContinuationTransform.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContinuationTransform.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContinuationTransform.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [transform](../../../../MeasureAndIntegration/ContinuationTransform.lean/declarations/transform.md) | 25 | `declaration-track:1916e5210b84f2c3beeaa1aa114b4631d9b6f02eea6d19029040cf2e94024ac8` |
-| 2 | `theorem` | [integrable_of_le](../../../../MeasureAndIntegration/ContinuationTransform.lean/declarations/integrable-of-le.md) | 28 | `result-track:0a1848be624f75bd3b576f900a0bf2a065c6f872918cdf82040ea83d5445f7c4` |
-| 3 | `theorem` | [transform_analytic](../../../../MeasureAndIntegration/ContinuationTransform.lean/declarations/transform-analytic.md) | 37 | `result-track:b335ee866bea23dfaeb63814307db5fa71ed128bc24f688cfb305ee8a2c7be12` |
-| 4 | `theorem` | [meromorphic_germ_eq](../../../../MeasureAndIntegration/ContinuationTransform.lean/declarations/meromorphic-germ-eq.md) | 51 | `result-track:d7ae66ac0b432e6434c5621d5f1d75b35dcb3633cee28d65704be97cc16d0da4` |
-| 5 | `theorem` | [transform_germ_eq](../../../../MeasureAndIntegration/ContinuationTransform.lean/declarations/transform-germ-eq.md) | 64 | `result-track:5ed7848fcabb8f2f1e8e79df154ac990e869d3e1cf644b20bd7eedf8c8343723` |
-| 6 | `theorem` | [integrable_positive_of_continuation](../../../../MeasureAndIntegration/ContinuationTransform.lean/declarations/integrable-positive-of-continuation.md) | 84 | `result-track:0960de68a7735267669bbeaa6c0e0e5ed18a38302b61efe82aff83123a36c387` |
-| 7 | `theorem` | [order_nonneg_of_continuation](../../../../MeasureAndIntegration/ContinuationTransform.lean/declarations/order-nonneg-of-continuation.md) | 121 | `result-track:59ce06f7ab44b0af45708b9a396c0b9ae62f5969bb28b0c74017fcc85d354880` |
+| 1 | `def` | [transform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContinuationTransform.lean/declarations/transform.md) | 25 | `declaration-track:1916e5210b84f2c3beeaa1aa114b4631d9b6f02eea6d19029040cf2e94024ac8` |
+| 2 | `theorem` | [integrable_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContinuationTransform.lean/declarations/integrable-of-le.md) | 28 | `result-track:0a1848be624f75bd3b576f900a0bf2a065c6f872918cdf82040ea83d5445f7c4` |
+| 3 | `theorem` | [transform_analytic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContinuationTransform.lean/declarations/transform-analytic.md) | 37 | `result-track:b335ee866bea23dfaeb63814307db5fa71ed128bc24f688cfb305ee8a2c7be12` |
+| 4 | `theorem` | [meromorphic_germ_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContinuationTransform.lean/declarations/meromorphic-germ-eq.md) | 51 | `result-track:d7ae66ac0b432e6434c5621d5f1d75b35dcb3633cee28d65704be97cc16d0da4` |
+| 5 | `theorem` | [transform_germ_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContinuationTransform.lean/declarations/transform-germ-eq.md) | 64 | `result-track:5ed7848fcabb8f2f1e8e79df154ac990e869d3e1cf644b20bd7eedf8c8343723` |
+| 6 | `theorem` | [integrable_positive_of_continuation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContinuationTransform.lean/declarations/integrable-positive-of-continuation.md) | 84 | `result-track:0960de68a7735267669bbeaa6c0e0e5ed18a38302b61efe82aff83123a36c387` |
+| 7 | `theorem` | [order_nonneg_of_continuation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ContinuationTransform.lean/declarations/order-nonneg-of-continuation.md) | 121 | `result-track:59ce06f7ab44b0af45708b9a396c0b9ae62f5969bb28b0c74017fcc85d354880` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

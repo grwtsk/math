@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LocalPropertiesReduced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LocalPropertiesReduced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesReduced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesReduced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isReduced_localizationPreserves](../../../../CommutativeAlgebra/LocalPropertiesReduced.lean/declarations/isreduced-localizationpreserves.md) | 24 | `result-track:c3b4ad6138aca52e4f8a7a13f5ac08a203ac3e604920dabefa293dece1b5257c` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/LocalPropertiesReduced.lean/declarations/instance.md) | 43 | `declaration-track:0f8e32533f74a0ffd4d0d84bc16052f46ce41388b133ce843ed3d1a61373ce4d` |
-| 3 | `theorem` | [isReduced_ofLocalizationMaximal](../../../../CommutativeAlgebra/LocalPropertiesReduced.lean/declarations/isreduced-oflocalizationmaximal.md) | 47 | `result-track:05bed9714f2469dc5c407e342e982ce8e6bc577f4bb5b697d31ae3d19487ae4f` |
+| 1 | `theorem` | [isReduced_localizationPreserves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesReduced.lean/declarations/isreduced-localizationpreserves.md) | 24 | `result-track:c3b4ad6138aca52e4f8a7a13f5ac08a203ac3e604920dabefa293dece1b5257c` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesReduced.lean/declarations/instance.md) | 43 | `declaration-track:0f8e32533f74a0ffd4d0d84bc16052f46ce41388b133ce843ed3d1a61373ce4d` |
+| 3 | `theorem` | [isReduced_ofLocalizationMaximal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesReduced.lean/declarations/isreduced-oflocalizationmaximal.md) | 47 | `result-track:05bed9714f2469dc5c407e342e982ce8e6bc577f4bb5b697d31ae3d19487ae4f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

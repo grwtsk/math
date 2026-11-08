@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Finiteness.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Finiteness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Finiteness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Finiteness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fgSystem](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Finiteness.lean/declarations/fgsystem.md) | 27 | `declaration-track:458343471f4af72f943816bb52bea9e3471f552e0c3194a18440472a25817eaf` |
-| 2 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Finiteness.lean/declarations/instance.md) | 34 | `declaration-track:90457f35fd5cbbe4d32e2a4c760c80585cb52f5daaf1d16fcf0849ef915e4f8f` |
-| 3 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Finiteness.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:cc8a9440de61396dfe7e6681a58659e170cb462938cd0a3b76ba8d27641f4769` |
-| 4 | `def` | [equiv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Finiteness.lean/declarations/equiv.md) | 46 | `declaration-track:eca9f6709c177aa46be7e6bd6aa9df60a6c8ed7baf9cfe17123d3c2de941200a` |
-| 5 | `lemma` | [equiv_comp_of](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Finiteness.lean/declarations/equiv-comp-of.md) | 53 | `result-track:8db428af658ac373cf4dbed3c729afa1a32f9cf333bfae40661c5921b19d5e71` |
+| 1 | `def` | [fgSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Finiteness.lean/declarations/fgsystem.md) | 27 | `declaration-track:458343471f4af72f943816bb52bea9e3471f552e0c3194a18440472a25817eaf` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Finiteness.lean/declarations/instance.md) | 34 | `declaration-track:90457f35fd5cbbe4d32e2a4c760c80585cb52f5daaf1d16fcf0849ef915e4f8f` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Finiteness.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:cc8a9440de61396dfe7e6681a58659e170cb462938cd0a3b76ba8d27641f4769` |
+| 4 | `def` | [equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Finiteness.lean/declarations/equiv.md) | 46 | `declaration-track:eca9f6709c177aa46be7e6bd6aa9df60a6c8ed7baf9cfe17123d3c2de941200a` |
+| 5 | `lemma` | [equiv_comp_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Finiteness.lean/declarations/equiv-comp-of.md) | 53 | `result-track:8db428af658ac373cf4dbed3c729afa1a32f9cf333bfae40661c5921b19d5e71` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

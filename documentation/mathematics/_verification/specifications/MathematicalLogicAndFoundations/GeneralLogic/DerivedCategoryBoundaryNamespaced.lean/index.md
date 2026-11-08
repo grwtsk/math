@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DerivedCategoryBoundaryNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DerivedCategoryBoundaryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DerivedCategoryBoundaryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DerivedCategoryBoundaryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DerivedCategoryBoundary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DerivedCategoryBoundaryNamespaced.lean/declarations/derivedcategoryboundary.md) | 34 | `declaration-track:0ed5bcab8981735c28bae61f66aa29ced0f0817043595ee6b75f4f86edf441ec` |
-| 2 | `theorem` | [derived_category_boundary_has_complex_representatives](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DerivedCategoryBoundaryNamespaced.lean/declarations/derived-category-boundary-has-complex-representatives.md) | 42 | `result-track:75c0abf3beb84d8d185ba93c8e7c87dab0524f146b1047fe24a113d1d83863c7` |
-| 3 | `theorem` | [derived_category_boundary_localizes_quasi_isos](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DerivedCategoryBoundaryNamespaced.lean/declarations/derived-category-boundary-localizes-quasi-isos.md) | 47 | `result-track:51a1daf672ff4705997c451cb803c3683f5dd0f01d128b5a19c1cf178f189d89` |
+| 1 | `structure` | [DerivedCategoryBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DerivedCategoryBoundaryNamespaced.lean/declarations/derivedcategoryboundary.md) | 34 | `declaration-track:0ed5bcab8981735c28bae61f66aa29ced0f0817043595ee6b75f4f86edf441ec` |
+| 2 | `theorem` | [derived_category_boundary_has_complex_representatives](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DerivedCategoryBoundaryNamespaced.lean/declarations/derived-category-boundary-has-complex-representatives.md) | 42 | `result-track:75c0abf3beb84d8d185ba93c8e7c87dab0524f146b1047fe24a113d1d83863c7` |
+| 3 | `theorem` | [derived_category_boundary_localizes_quasi_isos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DerivedCategoryBoundaryNamespaced.lean/declarations/derived-category-boundary-localizes-quasi-isos.md) | 47 | `result-track:51a1daf672ff4705997c451cb803c3683f5dd0f01d128b5a19c1cf178f189d89` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

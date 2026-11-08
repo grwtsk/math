@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNondegenerate.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNondegenerate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNondegenerate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNondegenerate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Nondegenerate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNondegenerate.lean/declarations/nondegenerate.md) | 26 | `declaration-track:de1401f5a2d6f2d7303a8e603521f27e2d4761cf7fea3292388eec2c4ae9e098` |
-| 2 | `lemma` | [nondegenerate_def](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNondegenerate.lean/declarations/nondegenerate-def.md) | 32 | `result-track:8091550d3ac9e69fc8615cde484c7f0ca8371c02c9a93c561636c51f6e24e707` |
-| 3 | `theorem` | [Nondegenerate.eq_zero_of_ortho](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNondegenerate.lean/declarations/nondegenerate-eq-zero-of-ortho.md) | 37 | `result-track:097888aa47b447b00bc3fade58a3f669ac410b088945258b2defedf5b89c913c` |
-| 4 | `theorem` | [Nondegenerate.exists_not_ortho_of_ne_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNondegenerate.lean/declarations/nondegenerate-exists-not-ortho-of-ne-zero.md) | 42 | `result-track:5aea9ac7069c8ab0f3f00fb1703a693ab77a4e11b1199aefce650988e37c1b5c` |
-| 5 | `theorem` | [nondegenerate_of_det_ne_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNondegenerate.lean/declarations/nondegenerate-of-det-ne-zero.md) | 52 | `result-track:676b1530f624c2bf52442ec179492eb60e783ac0cbc085f2e939f6500414fd09` |
-| 6 | `theorem` | [eq_zero_of_vecMul_eq_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNondegenerate.lean/declarations/eq-zero-of-vecmul-eq-zero.md) | 67 | `result-track:e795029b037e2a7c0e7f9106897c57dbc33f16a9fea95f7050299cf1c936bac9` |
-| 7 | `theorem` | [eq_zero_of_mulVec_eq_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNondegenerate.lean/declarations/eq-zero-of-mulvec-eq-zero.md) | 72 | `result-track:c1bf2bf571641f86a2a8e9cc18f7aaf87fdae45c55de71ded7696673e61881d6` |
+| 1 | `def` | [Nondegenerate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNondegenerate.lean/declarations/nondegenerate.md) | 26 | `declaration-track:de1401f5a2d6f2d7303a8e603521f27e2d4761cf7fea3292388eec2c4ae9e098` |
+| 2 | `lemma` | [nondegenerate_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNondegenerate.lean/declarations/nondegenerate-def.md) | 32 | `result-track:8091550d3ac9e69fc8615cde484c7f0ca8371c02c9a93c561636c51f6e24e707` |
+| 3 | `theorem` | [Nondegenerate.eq_zero_of_ortho](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNondegenerate.lean/declarations/nondegenerate-eq-zero-of-ortho.md) | 37 | `result-track:097888aa47b447b00bc3fade58a3f669ac410b088945258b2defedf5b89c913c` |
+| 4 | `theorem` | [Nondegenerate.exists_not_ortho_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNondegenerate.lean/declarations/nondegenerate-exists-not-ortho-of-ne-zero.md) | 42 | `result-track:5aea9ac7069c8ab0f3f00fb1703a693ab77a4e11b1199aefce650988e37c1b5c` |
+| 5 | `theorem` | [nondegenerate_of_det_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNondegenerate.lean/declarations/nondegenerate-of-det-ne-zero.md) | 52 | `result-track:676b1530f624c2bf52442ec179492eb60e783ac0cbc085f2e939f6500414fd09` |
+| 6 | `theorem` | [eq_zero_of_vecMul_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNondegenerate.lean/declarations/eq-zero-of-vecmul-eq-zero.md) | 67 | `result-track:e795029b037e2a7c0e7f9106897c57dbc33f16a9fea95f7050299cf1c936bac9` |
+| 7 | `theorem` | [eq_zero_of_mulVec_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNondegenerate.lean/declarations/eq-zero-of-mulvec-eq-zero.md) | 72 | `result-track:c1bf2bf571641f86a2a8e9cc18f7aaf87fdae45c55de71ded7696673e61881d6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/index.md) · [Full source](../../../../DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [localHomeomorph](../../../../DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/declarations/localhomeomorph.md) | 35 | `declaration-track:88a5a36eb4025eb798f5e5213a8237dbfa8c517798867d772bf156b1f032a905` |
-| 2 | `theorem` | [trans_localHomeomorph_apply](../../../../DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/declarations/trans-localhomeomorph-apply.md) | 61 | `result-track:533d398309705b22677f40011d04ba6055ec2ebf76bbfffca896200ab6c09242` |
-| 3 | `theorem` | [source_trans_localHomeomorph](../../../../DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/declarations/source-trans-localhomeomorph.md) | 74 | `result-track:347b9544453e3ed37a9c4a94592f9036c2c28089de7506c6b4f2d08a1161e288` |
-| 4 | `theorem` | [target_trans_localHomeomorph](../../../../DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/declarations/target-trans-localhomeomorph.md) | 87 | `result-track:9a47d787904863bb485d040cbe0fdc5f6ab0ae12a5df23c96d813a1f1ba9b17c` |
-| 5 | `theorem` | [SmoothFiberwiseLinear.locality_aux₁](../../../../DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/declarations/smoothfiberwiselinear-locality-aux.md) | 109 | `result-track:c4c1cc6ae15d9889d9399836f327fcb275e3664a55a61d9a0d376943c1ed8bd3` |
-| 6 | `theorem` | [SmoothFiberwiseLinear.locality_aux₂](../../../../DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/declarations/smoothfiberwiselinear-locality-aux-source-edition-2.md) | 161 | `result-track:fb997905fe0f444813f1056f9d1d5a9b857c4f9e135b31f5af8a09a1ca1a90e3` |
-| 7 | `theorem` | [mem_aux](../../../../DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/declarations/mem-aux.md) | 226 | `result-track:0a3634477025dc95cb40ee1823d19003b35805b0986653528386d02c0108e8d6` |
-| 8 | `def` | [smoothFiberwiseLinear](../../../../DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/declarations/smoothfiberwiselinear.md) | 244 | `declaration-track:8503bb91c6cc9fb01bff112261e2ce128f135a265981389e0722a35b74281ad7` |
-| 9 | `theorem` | [mem_smoothFiberwiseLinear_iff](../../../../DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/declarations/mem-smoothfiberwiselinear-iff.md) | 296 | `result-track:e32f10d669541b430dced3993b17cb3a22d40dcd2120bcccb52ff9f9ea73dbfe` |
+| 1 | `def` | [localHomeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/declarations/localhomeomorph.md) | 35 | `declaration-track:88a5a36eb4025eb798f5e5213a8237dbfa8c517798867d772bf156b1f032a905` |
+| 2 | `theorem` | [trans_localHomeomorph_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/declarations/trans-localhomeomorph-apply.md) | 61 | `result-track:533d398309705b22677f40011d04ba6055ec2ebf76bbfffca896200ab6c09242` |
+| 3 | `theorem` | [source_trans_localHomeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/declarations/source-trans-localhomeomorph.md) | 74 | `result-track:347b9544453e3ed37a9c4a94592f9036c2c28089de7506c6b4f2d08a1161e288` |
+| 4 | `theorem` | [target_trans_localHomeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/declarations/target-trans-localhomeomorph.md) | 87 | `result-track:9a47d787904863bb485d040cbe0fdc5f6ab0ae12a5df23c96d813a1f1ba9b17c` |
+| 5 | `theorem` | [SmoothFiberwiseLinear.locality_aux₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/declarations/smoothfiberwiselinear-locality-aux.md) | 109 | `result-track:c4c1cc6ae15d9889d9399836f327fcb275e3664a55a61d9a0d376943c1ed8bd3` |
+| 6 | `theorem` | [SmoothFiberwiseLinear.locality_aux₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/declarations/smoothfiberwiselinear-locality-aux-source-edition-2.md) | 161 | `result-track:fb997905fe0f444813f1056f9d1d5a9b857c4f9e135b31f5af8a09a1ca1a90e3` |
+| 7 | `theorem` | [mem_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/declarations/mem-aux.md) | 226 | `result-track:0a3634477025dc95cb40ee1823d19003b35805b0986653528386d02c0108e8d6` |
+| 8 | `def` | [smoothFiberwiseLinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/declarations/smoothfiberwiselinear.md) | 244 | `declaration-track:8503bb91c6cc9fb01bff112261e2ce128f135a265981389e0722a35b74281ad7` |
+| 9 | `theorem` | [mem_smoothFiberwiseLinear_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/FiberwiseLinearLocalHomeomorph.lean/declarations/mem-smoothfiberwiselinear-iff.md) | 296 | `result-track:e32f10d669541b430dced3993b17cb3a22d40dcd2120bcccb52ff9f9ea73dbfe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

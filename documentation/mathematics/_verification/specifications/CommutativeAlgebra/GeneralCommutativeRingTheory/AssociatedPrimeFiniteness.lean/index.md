@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeFiniteness.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeFiniteness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeFiniteness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeFiniteness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Submodule.IsQuotientEquivQuotientPrime](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeFiniteness.lean/declarations/submodule-isquotientequivquotientprime.md) | 45 | `declaration-track:dfd5e03b4321b067d96d1a39ef147ab7d27267925009cc80f9543cd14cc45a6f` |
-| 2 | `theorem` | [Submodule.isQuotientEquivQuotientPrime_iff](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeFiniteness.lean/declarations/submodule-isquotientequivquotientprime-iff.md) | 49 | `result-track:21ec8b97562ef3f01c9e931b7cc9946540b9d1962b7fb4c8e29a46b127675e98` |
-| 3 | `theorem` | [IsNoetherianRing.exists_relSeries_isQuotientEquivQuotientPrime](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeFiniteness.lean/declarations/isnoetherianring-exists-relseries-isquotientequivquotientprime.md) | 85 | `result-track:239cfea37df60bc13943b5b0ec46fd7f1fd6eb1e93cf28f08e146b17b50d771e` |
-| 4 | `theorem` | [IsNoetherianRing.induction_on_isQuotientEquivQuotientPrime](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeFiniteness.lean/declarations/isnoetherianring-induction-on-isquotientequivquotientprime.md) | 110 | `result-track:89d800fb51049f45aa36a2ecf1c1fb9c8e13a2480ac04f60161ab03615ca8060` |
-| 5 | `theorem` | [associatedPrimes.finite](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeFiniteness.lean/declarations/associatedprimes-finite.md) | 149 | `result-track:a4bf3151a1393f35ae35d576696c97fce81667c8cd9151f9f25d621207cd3c8a` |
+| 1 | `def` | [Submodule.IsQuotientEquivQuotientPrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeFiniteness.lean/declarations/submodule-isquotientequivquotientprime.md) | 45 | `declaration-track:dfd5e03b4321b067d96d1a39ef147ab7d27267925009cc80f9543cd14cc45a6f` |
+| 2 | `theorem` | [Submodule.isQuotientEquivQuotientPrime_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeFiniteness.lean/declarations/submodule-isquotientequivquotientprime-iff.md) | 49 | `result-track:21ec8b97562ef3f01c9e931b7cc9946540b9d1962b7fb4c8e29a46b127675e98` |
+| 3 | `theorem` | [IsNoetherianRing.exists_relSeries_isQuotientEquivQuotientPrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeFiniteness.lean/declarations/isnoetherianring-exists-relseries-isquotientequivquotientprime.md) | 85 | `result-track:239cfea37df60bc13943b5b0ec46fd7f1fd6eb1e93cf28f08e146b17b50d771e` |
+| 4 | `theorem` | [IsNoetherianRing.induction_on_isQuotientEquivQuotientPrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeFiniteness.lean/declarations/isnoetherianring-induction-on-isquotientequivquotientprime.md) | 110 | `result-track:89d800fb51049f45aa36a2ecf1c1fb9c8e13a2480ac04f60161ab03615ca8060` |
+| 5 | `theorem` | [associatedPrimes.finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeFiniteness.lean/declarations/associatedprimes-finite.md) | 149 | `result-track:a4bf3151a1393f35ae35d576696c97fce81667c8cd9151f9f25d621207cd3c8a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

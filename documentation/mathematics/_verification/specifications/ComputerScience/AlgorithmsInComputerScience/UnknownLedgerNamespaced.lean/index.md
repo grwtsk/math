@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [OpenAnalyticalBridge](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/declarations/openanalyticalbridge.md) | 19 | `declaration-track:f9fbce286a5772bb91d8894a292dcad9a56d9063a9173680f135ec3c3fe15eaf` |
-| 2 | `def` | [openAnalyticalBridges](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/declarations/openanalyticalbridges.md) | 66 | `declaration-track:65358c1843fc1e9004922073d1a1e42ed16603b84eeaed0dba2e98d2ecde064f` |
-| 3 | `inductive` | [ObligationState](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/declarations/obligationstate.md) | 113 | `declaration-track:d6a3319c8db7fb14d12e0bebb3491496098df619cac73c7b3488e22a2b57eb82` |
-| 4 | `structure` | [OpenBridgeStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/declarations/openbridgestatus-source-edition-2.md) | 117 | `declaration-track:e35c57c98fbe9839e5b824e162be748ed7ee9014c6033293aec6b0b1884585e8` |
-| 5 | `def` | [openBridgeStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/declarations/openbridgestatus.md) | 123 | `declaration-track:21d61905f4444635bb2e6275831cd9917d00f2bd913b1a28d9bfa8adea26b826` |
-| 6 | `theorem` | [hardy_capacity_relation_is_open](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/declarations/hardy-capacity-relation-is-open.md) | 131 | `result-track:a2d85aceba9e4715bd80a31582503579dbb8238a6c74c799cf4ac42f65fc98fd` |
-| 7 | `theorem` | [sonin_capacity_relation_is_open](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/declarations/sonin-capacity-relation-is-open.md) | 135 | `result-track:b87fb776297eeca05e44b0212716850263a70c35cffa81470f868b6b03022a75` |
-| 8 | `theorem` | [arithmetic_correspondence_is_open](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/declarations/arithmetic-correspondence-is-open.md) | 139 | `result-track:dd3e1021e4da7278fa485c61513c6ce9e0bfa0c4b5babbce2200a74f972e0778` |
+| 1 | `inductive` | [OpenAnalyticalBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/declarations/openanalyticalbridge.md) | 19 | `declaration-track:f9fbce286a5772bb91d8894a292dcad9a56d9063a9173680f135ec3c3fe15eaf` |
+| 2 | `def` | [openAnalyticalBridges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/declarations/openanalyticalbridges.md) | 66 | `declaration-track:65358c1843fc1e9004922073d1a1e42ed16603b84eeaed0dba2e98d2ecde064f` |
+| 3 | `inductive` | [ObligationState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/declarations/obligationstate.md) | 113 | `declaration-track:d6a3319c8db7fb14d12e0bebb3491496098df619cac73c7b3488e22a2b57eb82` |
+| 4 | `structure` | [OpenBridgeStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/declarations/openbridgestatus-source-edition-2.md) | 117 | `declaration-track:e35c57c98fbe9839e5b824e162be748ed7ee9014c6033293aec6b0b1884585e8` |
+| 5 | `def` | [openBridgeStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/declarations/openbridgestatus.md) | 123 | `declaration-track:21d61905f4444635bb2e6275831cd9917d00f2bd913b1a28d9bfa8adea26b826` |
+| 6 | `theorem` | [hardy_capacity_relation_is_open](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/declarations/hardy-capacity-relation-is-open.md) | 131 | `result-track:a2d85aceba9e4715bd80a31582503579dbb8238a6c74c799cf4ac42f65fc98fd` |
+| 7 | `theorem` | [sonin_capacity_relation_is_open](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/declarations/sonin-capacity-relation-is-open.md) | 135 | `result-track:b87fb776297eeca05e44b0212716850263a70c35cffa81470f868b6b03022a75` |
+| 8 | `theorem` | [arithmetic_correspondence_is_open](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedgerNamespaced.lean/declarations/arithmetic-correspondence-is-open.md) | 139 | `result-track:dd3e1021e4da7278fa485c61513c6ce9e0bfa0c4b5babbce2200a74f972e0778` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

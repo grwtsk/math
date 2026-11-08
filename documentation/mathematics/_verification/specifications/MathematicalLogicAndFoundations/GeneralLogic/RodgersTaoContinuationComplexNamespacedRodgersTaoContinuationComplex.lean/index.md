@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoContinuationComplexNamespacedRodgersTaoContinuationComplex.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoContinuationComplexNamespacedRodgersTaoContinuationComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoContinuationComplexNamespacedRodgersTaoContinuationComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoContinuationComplexNamespacedRodgersTaoContinuationComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RodgersTaoContinuationComplex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoContinuationComplexNamespacedRodgersTaoContinuationComplex.lean/declarations/rodgerstaocontinuationcomplex.md) | 26 | `declaration-track:85a7bdad6743e1b9191b75926268b4d97e1f3b3728edf855d9e6f917a5061ed6` |
-| 2 | `theorem` | [rodgers_tao_continuation_identity_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoContinuationComplexNamespacedRodgersTaoContinuationComplex.lean/declarations/rodgers-tao-continuation-identity-if-supplied.md) | 38 | `result-track:5b1be17555ac522908fc9d92a75e4766c19bd6fefe41ef1be8224b46865a90af` |
-| 3 | `theorem` | [rodgers_tao_continuation_composition_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoContinuationComplexNamespacedRodgersTaoContinuationComplex.lean/declarations/rodgers-tao-continuation-composition-if-supplied.md) | 43 | `result-track:1c709c82eca0d06a716d010df7ee8489a3aec57e957e99c686ac94a0ed02aa1b` |
+| 1 | `structure` | [RodgersTaoContinuationComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoContinuationComplexNamespacedRodgersTaoContinuationComplex.lean/declarations/rodgerstaocontinuationcomplex.md) | 26 | `declaration-track:85a7bdad6743e1b9191b75926268b4d97e1f3b3728edf855d9e6f917a5061ed6` |
+| 2 | `theorem` | [rodgers_tao_continuation_identity_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoContinuationComplexNamespacedRodgersTaoContinuationComplex.lean/declarations/rodgers-tao-continuation-identity-if-supplied.md) | 38 | `result-track:5b1be17555ac522908fc9d92a75e4766c19bd6fefe41ef1be8224b46865a90af` |
+| 3 | `theorem` | [rodgers_tao_continuation_composition_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoContinuationComplexNamespacedRodgersTaoContinuationComplex.lean/declarations/rodgers-tao-continuation-composition-if-supplied.md) | 43 | `result-track:1c709c82eca0d06a716d010df7ee8489a3aec57e957e99c686ac94a0ed02aa1b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundedActualSignedPrefixesAreExactlySummableRecordIncrements.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundedActualSignedPrefixesAreExactlySummableRecordIncrements.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundedActualSignedPrefixesAreExactlySummableRecordIncrements.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundedActualSignedPrefixesAreExactlySummableRecordIncrements.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [record_summable_iff_levels_bounded](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundedActualSignedPrefixesAreExactlySummableRecordIncrements.lean/declarations/record-summable-iff-levels-bounded.md) | 26 | `result-track:16f9a0a9ad44cb06fce96678f2cd3ace77b0aaafda3a0dfc9a810cd1e5f77455` |
-| 2 | `theorem` | [record_summable_iff_signed_prefixes_bounded](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundedActualSignedPrefixesAreExactlySummableRecordIncrements.lean/declarations/record-summable-iff-signed-prefixes-bounded.md) | 44 | `result-track:62d536b75237b9a47a7dc04cf8235672ed80505eabe5e76ad6e832b837a7e842` |
-| 3 | `theorem` | [record_level_converges_to_total](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundedActualSignedPrefixesAreExactlySummableRecordIncrements.lean/declarations/record-level-converges-to-total.md) | 55 | `result-track:1ca6d8f7ef77ed0a252f41cb6d4eaf24b5761ee6f879e20ea781c1005caa7cd7` |
-| 4 | `theorem` | [total_record_height_is_least_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundedActualSignedPrefixesAreExactlySummableRecordIncrements.lean/declarations/total-record-height-is-least-bound.md) | 59 | `result-track:0eb1734df04a90c302e89b8413d431c387647f5d217efbf9a070e199fc8b2230` |
+| 1 | `theorem` | [record_summable_iff_levels_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundedActualSignedPrefixesAreExactlySummableRecordIncrements.lean/declarations/record-summable-iff-levels-bounded.md) | 26 | `result-track:16f9a0a9ad44cb06fce96678f2cd3ace77b0aaafda3a0dfc9a810cd1e5f77455` |
+| 2 | `theorem` | [record_summable_iff_signed_prefixes_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundedActualSignedPrefixesAreExactlySummableRecordIncrements.lean/declarations/record-summable-iff-signed-prefixes-bounded.md) | 44 | `result-track:62d536b75237b9a47a7dc04cf8235672ed80505eabe5e76ad6e832b837a7e842` |
+| 3 | `theorem` | [record_level_converges_to_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundedActualSignedPrefixesAreExactlySummableRecordIncrements.lean/declarations/record-level-converges-to-total.md) | 55 | `result-track:1ca6d8f7ef77ed0a252f41cb6d4eaf24b5761ee6f879e20ea781c1005caa7cd7` |
+| 4 | `theorem` | [total_record_height_is_least_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundedActualSignedPrefixesAreExactlySummableRecordIncrements.lean/declarations/total-record-height-is-least-bound.md) | 59 | `result-track:0eb1734df04a90c302e89b8413d431c387647f5d217efbf9a070e199fc8b2230` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

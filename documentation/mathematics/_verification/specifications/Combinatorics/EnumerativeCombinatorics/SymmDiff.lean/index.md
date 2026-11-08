@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/SymmDiff.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/SymmDiff.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SymmDiff.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SymmDiff.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_symmDiff](../../../../../Combinatorics/EnumerativeCombinatorics/SymmDiff.lean/declarations/mem-symmdiff.md) | 40 | `result-track:31d07b7c2143a743f158a5ab3481682215726ebf96ebd70b1566ce70a14a87b3` |
-| 2 | `theorem` | [coe_symmDiff](../../../../../Combinatorics/EnumerativeCombinatorics/SymmDiff.lean/declarations/coe-symmdiff.md) | 44 | `result-track:5ea00c7aa7ecf6e2b76699f7af3c824e32afe489187b71828ea96836c132f207` |
-| 3 | `lemma` | [symmDiff_eq_empty](../../../../../Combinatorics/EnumerativeCombinatorics/SymmDiff.lean/declarations/symmdiff-eq-empty.md) | 47 | `result-track:1ae7467b58b69554493251e268004b60d74ae412cad92287315bc64c15c1b6c7` |
-| 4 | `lemma` | [symmDiff_nonempty](../../../../../Combinatorics/EnumerativeCombinatorics/SymmDiff.lean/declarations/symmdiff-nonempty.md) | 48 | `result-track:7a7da117c36e081c29a71e1eb270df130745aa3713dec11541bb7e753419b3f2` |
-| 5 | `theorem` | [image_symmDiff](../../../../../Combinatorics/EnumerativeCombinatorics/SymmDiff.lean/declarations/image-symmdiff.md) | 51 | `result-track:64342a7054ab27460f5161f2fdbc09b1ab5365881f719128cc5b674de149cc81` |
+| 1 | `theorem` | [mem_symmDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SymmDiff.lean/declarations/mem-symmdiff.md) | 40 | `result-track:31d07b7c2143a743f158a5ab3481682215726ebf96ebd70b1566ce70a14a87b3` |
+| 2 | `theorem` | [coe_symmDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SymmDiff.lean/declarations/coe-symmdiff.md) | 44 | `result-track:5ea00c7aa7ecf6e2b76699f7af3c824e32afe489187b71828ea96836c132f207` |
+| 3 | `lemma` | [symmDiff_eq_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SymmDiff.lean/declarations/symmdiff-eq-empty.md) | 47 | `result-track:1ae7467b58b69554493251e268004b60d74ae412cad92287315bc64c15c1b6c7` |
+| 4 | `lemma` | [symmDiff_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SymmDiff.lean/declarations/symmdiff-nonempty.md) | 48 | `result-track:7a7da117c36e081c29a71e1eb270df130745aa3713dec11541bb7e753419b3f2` |
+| 5 | `theorem` | [image_symmDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SymmDiff.lean/declarations/image-symmdiff.md) | 51 | `result-track:64342a7054ab27460f5161f2fdbc09b1ab5365881f719128cc5b674de149cc81` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

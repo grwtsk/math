@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisFullSubcategoryPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisFullSubcategoryPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisFullSubcategoryPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisFullSubcategoryPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsGaloisSubcategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisFullSubcategoryPublic.lean/declarations/isgaloissubcategory.md) | 36 | `declaration-track:181994434eea22135bc51e5d244e541b464b2462425418d6c566e9a42f74f6fc` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisFullSubcategoryPublic.lean/declarations/instance-source-edition-3.md) | 52 | `declaration-track:98dd7a2fccaa78d4c0ce507aa7ec6f36f902f5f911aabf1e9e2e3c3adb2c6397` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisFullSubcategoryPublic.lean/declarations/instance.md) | 73 | `declaration-track:4b8d96ccdcb2bb3a2495161bbc1f489539d0a11e342ab3c1432eec8bf018bfdd` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisFullSubcategoryPublic.lean/declarations/instance-source-edition-4.md) | 86 | `declaration-track:b6a66b489019aa5bd9a173cecfc71e52875dece2582ca62d0c35cb4fecd8df43` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisFullSubcategoryPublic.lean/declarations/instance-source-edition-2.md) | 97 | `declaration-track:937f93ab53eddc537436f4db56c9e116c999f84956910c681e4a54a3480284ec` |
+| 1 | `class` | [IsGaloisSubcategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisFullSubcategoryPublic.lean/declarations/isgaloissubcategory.md) | 36 | `declaration-track:181994434eea22135bc51e5d244e541b464b2462425418d6c566e9a42f74f6fc` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisFullSubcategoryPublic.lean/declarations/instance-source-edition-3.md) | 52 | `declaration-track:98dd7a2fccaa78d4c0ce507aa7ec6f36f902f5f911aabf1e9e2e3c3adb2c6397` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisFullSubcategoryPublic.lean/declarations/instance.md) | 73 | `declaration-track:4b8d96ccdcb2bb3a2495161bbc1f489539d0a11e342ab3c1432eec8bf018bfdd` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisFullSubcategoryPublic.lean/declarations/instance-source-edition-4.md) | 86 | `declaration-track:b6a66b489019aa5bd9a173cecfc71e52875dece2582ca62d0c35cb4fecd8df43` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GaloisFullSubcategoryPublic.lean/declarations/instance-source-edition-2.md) | 97 | `declaration-track:937f93ab53eddc537436f4db56c9e116c999f84956910c681e4a54a3480284ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

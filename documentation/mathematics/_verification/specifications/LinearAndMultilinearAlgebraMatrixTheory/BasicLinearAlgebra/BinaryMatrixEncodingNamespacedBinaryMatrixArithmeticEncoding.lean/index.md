@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingNamespacedBinaryMatrixArithmeticEncoding.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingNamespacedBinaryMatrixArithmeticEncoding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingNamespacedBinaryMatrixArithmeticEncoding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingNamespacedBinaryMatrixArithmeticEncoding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BinaryMatrixArithmeticEncoding](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingNamespacedBinaryMatrixArithmeticEncoding.lean/declarations/binarymatrixarithmeticencoding.md) | 27 | `declaration-track:63759f42177ad77cec77fd42bec8685dd2531b74a308fa03e9efb5de8df079d7` |
-| 2 | `def` | [unaryBinaryMatrixOfNat](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingNamespacedBinaryMatrixArithmeticEncoding.lean/declarations/unarybinarymatrixofnat.md) | 33 | `declaration-track:d59e56e0f799a2d685b234b504f508e530cd2cd6256c00d21f8afadda63d7337` |
-| 3 | `theorem` | [unaryBinaryMatrix_shape](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingNamespacedBinaryMatrixArithmeticEncoding.lean/declarations/unarybinarymatrix-shape.md) | 38 | `result-track:c839fefd68640f6ef8430b021b2a204653266a84ad02f0a0cbe2d05ad5cfa1b1` |
-| 4 | `def` | [unaryEncoding](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingNamespacedBinaryMatrixArithmeticEncoding.lean/declarations/unaryencoding.md) | 44 | `declaration-track:06821522c5f4d2a7672c98d0e37abb9991041740edacb8521f27bc7250af0f64` |
+| 1 | `structure` | [BinaryMatrixArithmeticEncoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingNamespacedBinaryMatrixArithmeticEncoding.lean/declarations/binarymatrixarithmeticencoding.md) | 27 | `declaration-track:63759f42177ad77cec77fd42bec8685dd2531b74a308fa03e9efb5de8df079d7` |
+| 2 | `def` | [unaryBinaryMatrixOfNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingNamespacedBinaryMatrixArithmeticEncoding.lean/declarations/unarybinarymatrixofnat.md) | 33 | `declaration-track:d59e56e0f799a2d685b234b504f508e530cd2cd6256c00d21f8afadda63d7337` |
+| 3 | `theorem` | [unaryBinaryMatrix_shape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingNamespacedBinaryMatrixArithmeticEncoding.lean/declarations/unarybinarymatrix-shape.md) | 38 | `result-track:c839fefd68640f6ef8430b021b2a204653266a84ad02f0a0cbe2d05ad5cfa1b1` |
+| 4 | `def` | [unaryEncoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixEncodingNamespacedBinaryMatrixArithmeticEncoding.lean/declarations/unaryencoding.md) | 44 | `declaration-track:06821522c5f4d2a7672c98d0e37abb9991041740edacb8521f27bc7250af0f64` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

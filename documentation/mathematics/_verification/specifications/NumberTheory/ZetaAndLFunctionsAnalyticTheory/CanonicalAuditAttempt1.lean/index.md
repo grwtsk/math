@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalAuditAttempt1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalAuditAttempt1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalAuditAttempt1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalAuditAttempt1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalAuditAttempt1.lean/declarations/example.md) | 24 | `declaration-track:250147e3c3dc2b7005141346150b00c3a9cd0ca52fcb8f17093cf3af08b5c029` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalAuditAttempt1.lean/declarations/example-source-edition-2.md) | 29 | `declaration-track:30a33da44befaba252a9a91b0f630335279dba8707b1c898968473720b5b6c25` |
-| 3 | `theorem` | [zero_derivative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalAuditAttempt1.lean/declarations/zero-derivative.md) | 35 | `result-track:ec12f134a637a708e439345398834df8d2c82a6f95494c861c531199bfdb1bfc` |
-| 4 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalAuditAttempt1.lean/declarations/example-source-edition-3.md) | 54 | `declaration-track:9b90574182a24dca4c4747fccaa7492e4fb4b234acf73be9a01ce6007f6b0d95` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalAuditAttempt1.lean/declarations/example.md) | 24 | `declaration-track:250147e3c3dc2b7005141346150b00c3a9cd0ca52fcb8f17093cf3af08b5c029` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalAuditAttempt1.lean/declarations/example-source-edition-2.md) | 29 | `declaration-track:30a33da44befaba252a9a91b0f630335279dba8707b1c898968473720b5b6c25` |
+| 3 | `theorem` | [zero_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalAuditAttempt1.lean/declarations/zero-derivative.md) | 35 | `result-track:ec12f134a637a708e439345398834df8d2c82a6f95494c861c531199bfdb1bfc` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalAuditAttempt1.lean/declarations/example-source-edition-3.md) | 54 | `declaration-track:9b90574182a24dca4c4747fccaa7492e4fb4b234acf73be9a01ce6007f6b0d95` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

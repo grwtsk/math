@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PerturbationNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/PerturbationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PerturbationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PerturbationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LimitInvariantLawPerturbation](../../../../GeneralTopology/PerturbationNamespaced.lean/declarations/limitinvariantlawperturbation.md) | 24 | `declaration-track:fb8b44b28f55414ec507635caab75b9b7d292b35aaf16f81d2a2609582db9157` |
-| 2 | `theorem` | [limit_invariant_law_perturbation_bound](../../../../GeneralTopology/PerturbationNamespaced.lean/declarations/limit-invariant-law-perturbation-bound.md) | 52 | `result-track:87e92ff3e1f3b4e9b4d609dc341e6f87f701bcfd85d6bad0b308c02079bd574d` |
-| 3 | `structure` | [StratumConnectorDefect](../../../../GeneralTopology/PerturbationNamespaced.lean/declarations/stratumconnectordefect.md) | 139 | `declaration-track:b1714b2ec543c2a598f8a6ffcec0a213481c4be4b952a8162ca161059590b2c8` |
-| 4 | `def` | [StratumConnectorDefect.residualRadius](../../../../GeneralTopology/PerturbationNamespaced.lean/declarations/stratumconnectordefect-residualradius.md) | 146 | `declaration-track:0a6c318639a3d026678c1970ac46a5b0d798f2d05214ca7a65a886df36bedfb3` |
-| 5 | `structure` | [LimitCoherenceResidual](../../../../GeneralTopology/PerturbationNamespaced.lean/declarations/limitcoherenceresidual.md) | 151 | `declaration-track:73a99ddc18b4bb9032f72d04ea1afdd4d99850979196e77a13a05816a3f3260d` |
+| 1 | `structure` | [LimitInvariantLawPerturbation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PerturbationNamespaced.lean/declarations/limitinvariantlawperturbation.md) | 24 | `declaration-track:fb8b44b28f55414ec507635caab75b9b7d292b35aaf16f81d2a2609582db9157` |
+| 2 | `theorem` | [limit_invariant_law_perturbation_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PerturbationNamespaced.lean/declarations/limit-invariant-law-perturbation-bound.md) | 52 | `result-track:87e92ff3e1f3b4e9b4d609dc341e6f87f701bcfd85d6bad0b308c02079bd574d` |
+| 3 | `structure` | [StratumConnectorDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PerturbationNamespaced.lean/declarations/stratumconnectordefect.md) | 139 | `declaration-track:b1714b2ec543c2a598f8a6ffcec0a213481c4be4b952a8162ca161059590b2c8` |
+| 4 | `def` | [StratumConnectorDefect.residualRadius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PerturbationNamespaced.lean/declarations/stratumconnectordefect-residualradius.md) | 146 | `declaration-track:0a6c318639a3d026678c1970ac46a5b0d798f2d05214ca7a65a886df36bedfb3` |
+| 5 | `structure` | [LimitCoherenceResidual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PerturbationNamespaced.lean/declarations/limitcoherenceresidual.md) | 151 | `declaration-track:73a99ddc18b4bb9032f72d04ea1afdd4d99850979196e77a13a05816a3f3260d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

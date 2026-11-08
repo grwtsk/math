@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedVonMangoldtTauberianChebyInput`](../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PinnedVonMangoldtTauberianChebyInput.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedVonMangoldtTauberianChebyInput`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PinnedVonMangoldtTauberianChebyInput.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pinned_cumsum_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/declarations/pinned-cumsum-zero.md) | 16 | `result-track:38c3be164983b533b0f9061d90ddf6f0a58707134bb9e7a36b1bb2ef50be3383` |
-| 2 | `theorem` | [pinned_cumsum_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/declarations/pinned-cumsum-one.md) | 21 | `result-track:d1cda11808bcfe77e8902b520076ff3bf479132897a66ca3faf06fb4e00ccca6` |
-| 3 | `theorem` | [pinned_cumsum_succ_eq_inclusivePsi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/declarations/pinned-cumsum-succ-eq-inclusivepsi.md) | 26 | `result-track:6644c4727d097273e6bc8e949d7dca23c1878930c34a195265dc5bc3a5c31d43` |
-| 4 | `theorem` | [pinned_wienerIkehara_cheby_input](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/declarations/pinned-wienerikehara-cheby-input.md) | 32 | `result-track:644016b49d74b739f2dd90b78d7d53598dde46741ac263a1622a829007790a77` |
-| 5 | `theorem` | [pinned_wienerIkehara_cheby_with_explicit_constant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/declarations/pinned-wienerikehara-cheby-with-explicit-constant.md) | 38 | `result-track:7d31ac92591511c764ebc3284ddffb03664efb8d581cddf52df9b7a9c84382e1` |
-| 6 | `theorem` | [pinned_wienerIkehara_cheby_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/declarations/pinned-wienerikehara-cheby-nonnegative.md) | 44 | `result-track:cde152522c966ba3025564078870601c50adb7db88d2b2149d8c95bca55c8cb2` |
-| 7 | `def` | [remainingTauberianProofSuppliers](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/declarations/remainingtauberianproofsuppliers.md) | 50 | `declaration-track:e61a6f4f6772ef67ef1523377b30e6fe1339706d547d6d48874ca67a6f94b37d` |
-| 8 | `def` | [prohibitedPromotions](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/declarations/prohibitedpromotions.md) | 58 | `declaration-track:e82be1c24cf1d78d8e0846304bf8781737f385967c1139d8faafa249c2e15e6e` |
+| 1 | `theorem` | [pinned_cumsum_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/declarations/pinned-cumsum-zero.md) | 16 | `result-track:38c3be164983b533b0f9061d90ddf6f0a58707134bb9e7a36b1bb2ef50be3383` |
+| 2 | `theorem` | [pinned_cumsum_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/declarations/pinned-cumsum-one.md) | 21 | `result-track:d1cda11808bcfe77e8902b520076ff3bf479132897a66ca3faf06fb4e00ccca6` |
+| 3 | `theorem` | [pinned_cumsum_succ_eq_inclusivePsi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/declarations/pinned-cumsum-succ-eq-inclusivepsi.md) | 26 | `result-track:6644c4727d097273e6bc8e949d7dca23c1878930c34a195265dc5bc3a5c31d43` |
+| 4 | `theorem` | [pinned_wienerIkehara_cheby_input](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/declarations/pinned-wienerikehara-cheby-input.md) | 32 | `result-track:644016b49d74b739f2dd90b78d7d53598dde46741ac263a1622a829007790a77` |
+| 5 | `theorem` | [pinned_wienerIkehara_cheby_with_explicit_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/declarations/pinned-wienerikehara-cheby-with-explicit-constant.md) | 38 | `result-track:7d31ac92591511c764ebc3284ddffb03664efb8d581cddf52df9b7a9c84382e1` |
+| 6 | `theorem` | [pinned_wienerIkehara_cheby_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/declarations/pinned-wienerikehara-cheby-nonnegative.md) | 44 | `result-track:cde152522c966ba3025564078870601c50adb7db88d2b2149d8c95bca55c8cb2` |
+| 7 | `def` | [remainingTauberianProofSuppliers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/declarations/remainingtauberianproofsuppliers.md) | 50 | `declaration-track:e61a6f4f6772ef67ef1523377b30e6fe1339706d547d6d48874ca67a6f94b37d` |
+| 8 | `def` | [prohibitedPromotions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedVonMangoldtTauberianChebyInputControls.lean/declarations/prohibitedpromotions.md) | 58 | `declaration-track:e82be1c24cf1d78d8e0846304bf8781737f385967c1139d8faafa249c2e15e6e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/QuadraticIntervalRationalTentFamilyCore.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/QuadraticIntervalRationalTentFamilyCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuadraticIntervalRationalTentFamilyCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuadraticIntervalRationalTentFamilyCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,11 +46,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.QuadraticIntervalRationalTentCore`](../../../../FunctionsOfAComplexVariable/QuadraticIntervalRationalTentCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.RationalTentFamily`](../../../../FunctionsOfAComplexVariable/RationalTentFamily.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.TentKernelSensitivity`](../../../../MeasureAndIntegration/TentKernelSensitivity.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.RationalTentEnclosure`](../../../../FunctionsOfAComplexVariable/RationalTentEnclosure.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls`](../../../../FunctionsOfAComplexVariable/RationalTentFamilyControls.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Interfaces.QuadraticIntervalRationalTentCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuadraticIntervalRationalTentCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalTentFamily`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentFamily.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.TentKernelSensitivity`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentKernelSensitivity.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalTentEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentEnclosure.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentFamilyControls.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

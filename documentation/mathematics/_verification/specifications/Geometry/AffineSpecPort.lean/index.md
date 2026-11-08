@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/AffineSpecPort.lean/index.md) · [Full source](../../../../Geometry/AffineSpecPort.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.PortFiber.Certified`](../../../../GeneralTopology/Certified.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Topology.PortFiber.Certified`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Certified.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.AlgebraicGeometry.Scheme` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,23 +58,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [system](../../../../Geometry/AffineSpecPort.lean/declarations/system.md) | 15 | `declaration-track:e701557d3446cc3fcefb40c6b29f7e811363af14951b3f0f14bf2d6ff5fa3530` |
-| 2 | `def` | [schemeMap](../../../../Geometry/AffineSpecPort.lean/declarations/schememap.md) | 30 | `declaration-track:054158abb60ff78cd8e1913c4db655914db5b1cf31acd641c4bf7aa0bcae32cf` |
-| 3 | `theorem` | [map_apply](../../../../Geometry/AffineSpecPort.lean/declarations/map-apply.md) | 36 | `result-track:354434627dbced756feeb2994a8020ca7a9c82ef784a75a67a189e8302e48181` |
-| 4 | `theorem` | [schemeMap_apply](../../../../Geometry/AffineSpecPort.lean/declarations/schememap-apply.md) | 43 | `result-track:bb6eea9594789adeed043cfe863fb63cc59abf82bb154e1bee4bc149ec059b44` |
-| 5 | `theorem` | [schemeMap_identity](../../../../Geometry/AffineSpecPort.lean/declarations/schememap-identity.md) | 50 | `result-track:8ad4b8e2f36b62dd69b2602412a4bd4ed23d56279be44eea8407403041aba97b` |
-| 6 | `theorem` | [schemeMap_comp](../../../../Geometry/AffineSpecPort.lean/declarations/schememap-comp.md) | 56 | `result-track:5a08a91c4fc6ed2fa18dadc380564bbb6012c713ad115f8a7728aeaf33231ca4` |
-| 7 | `def` | [continuousCertificate](../../../../Geometry/AffineSpecPort.lean/declarations/continuouscertificate.md) | 62 | `declaration-track:c2560329930f25a8803ce9dca593e80250a447ef5c7236f43db5d4b781ae0de3` |
-| 8 | `def` | [continuousProperty](../../../../Geometry/AffineSpecPort.lean/declarations/continuousproperty.md) | 68 | `declaration-track:603442c91412669db7e72c8e8c66b835d6dda1a7173e21f1f259cf7b8de2f7f9` |
-| 9 | `def` | [integers](../../../../Geometry/AffineSpecPort.lean/declarations/integers.md) | 75 | `declaration-track:78031d34d424ab2f46d1df225763d032ad4f94a6ebff23f75d8c9e3f555d8e46` |
-| 10 | `def` | [rationals](../../../../Geometry/AffineSpecPort.lean/declarations/rationals.md) | 76 | `declaration-track:6188405e233cb631ffc1d5aaf3bea689b5c1ff9254b7e980f943aff7bf4999c1` |
-| 11 | `def` | [complex](../../../../Geometry/AffineSpecPort.lean/declarations/complex.md) | 77 | `declaration-track:40ec6fc4d2b5c5cdff775970d6bcda9994300937022be474ca73445c7fa1d33f` |
-| 12 | `def` | [complexToRational](../../../../Geometry/AffineSpecPort.lean/declarations/complextorational.md) | 80 | `declaration-track:fb2c0cebf00358e5180cec174cdddcf6d411889d4b66ba6ed96a2598f3d12b3d` |
-| 13 | `def` | [rationalToInteger](../../../../Geometry/AffineSpecPort.lean/declarations/rationaltointeger.md) | 84 | `declaration-track:9723613b0adeedb3971fcc04f8bd62ea01341d78852a76e0145857309568c3ed` |
-| 14 | `def` | [arithmeticTowerPath](../../../../Geometry/AffineSpecPort.lean/declarations/arithmetictowerpath.md) | 88 | `declaration-track:6054714a7926f96800d4f29d9a785cd37fece135b88f5873fe496e057fc0c6b7` |
-| 15 | `def` | [arithmeticTowerSchemeMap](../../../../Geometry/AffineSpecPort.lean/declarations/arithmetictowerschememap.md) | 96 | `declaration-track:768052e31afc40d7ef59a44247d92a30bb0ee5961445800642e549c81a6bf7ef` |
-| 16 | `theorem` | [arithmeticTower_continuous](../../../../Geometry/AffineSpecPort.lean/declarations/arithmetictower-continuous.md) | 102 | `result-track:17c0511cee86ffe774a86a134eae5d2ada99c0377f0a78d68c482327397e5444` |
-| 17 | `theorem` | [arithmeticTower_map](../../../../Geometry/AffineSpecPort.lean/declarations/arithmetictower-map.md) | 108 | `result-track:5a565c03d8cf1411a908b3edd72fac7a73883a81e8af7435528b1107d95952fd` |
+| 1 | `def` | [system](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/declarations/system.md) | 15 | `declaration-track:e701557d3446cc3fcefb40c6b29f7e811363af14951b3f0f14bf2d6ff5fa3530` |
+| 2 | `def` | [schemeMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/declarations/schememap.md) | 30 | `declaration-track:054158abb60ff78cd8e1913c4db655914db5b1cf31acd641c4bf7aa0bcae32cf` |
+| 3 | `theorem` | [map_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/declarations/map-apply.md) | 36 | `result-track:354434627dbced756feeb2994a8020ca7a9c82ef784a75a67a189e8302e48181` |
+| 4 | `theorem` | [schemeMap_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/declarations/schememap-apply.md) | 43 | `result-track:bb6eea9594789adeed043cfe863fb63cc59abf82bb154e1bee4bc149ec059b44` |
+| 5 | `theorem` | [schemeMap_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/declarations/schememap-identity.md) | 50 | `result-track:8ad4b8e2f36b62dd69b2602412a4bd4ed23d56279be44eea8407403041aba97b` |
+| 6 | `theorem` | [schemeMap_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/declarations/schememap-comp.md) | 56 | `result-track:5a08a91c4fc6ed2fa18dadc380564bbb6012c713ad115f8a7728aeaf33231ca4` |
+| 7 | `def` | [continuousCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/declarations/continuouscertificate.md) | 62 | `declaration-track:c2560329930f25a8803ce9dca593e80250a447ef5c7236f43db5d4b781ae0de3` |
+| 8 | `def` | [continuousProperty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/declarations/continuousproperty.md) | 68 | `declaration-track:603442c91412669db7e72c8e8c66b835d6dda1a7173e21f1f259cf7b8de2f7f9` |
+| 9 | `def` | [integers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/declarations/integers.md) | 75 | `declaration-track:78031d34d424ab2f46d1df225763d032ad4f94a6ebff23f75d8c9e3f555d8e46` |
+| 10 | `def` | [rationals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/declarations/rationals.md) | 76 | `declaration-track:6188405e233cb631ffc1d5aaf3bea689b5c1ff9254b7e980f943aff7bf4999c1` |
+| 11 | `def` | [complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/declarations/complex.md) | 77 | `declaration-track:40ec6fc4d2b5c5cdff775970d6bcda9994300937022be474ca73445c7fa1d33f` |
+| 12 | `def` | [complexToRational](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/declarations/complextorational.md) | 80 | `declaration-track:fb2c0cebf00358e5180cec174cdddcf6d411889d4b66ba6ed96a2598f3d12b3d` |
+| 13 | `def` | [rationalToInteger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/declarations/rationaltointeger.md) | 84 | `declaration-track:9723613b0adeedb3971fcc04f8bd62ea01341d78852a76e0145857309568c3ed` |
+| 14 | `def` | [arithmeticTowerPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/declarations/arithmetictowerpath.md) | 88 | `declaration-track:6054714a7926f96800d4f29d9a785cd37fece135b88f5873fe496e057fc0c6b7` |
+| 15 | `def` | [arithmeticTowerSchemeMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/declarations/arithmetictowerschememap.md) | 96 | `declaration-track:768052e31afc40d7ef59a44247d92a30bb0ee5961445800642e549c81a6bf7ef` |
+| 16 | `theorem` | [arithmeticTower_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/declarations/arithmetictower-continuous.md) | 102 | `result-track:17c0511cee86ffe774a86a134eae5d2ada99c0377f0a78d68c482327397e5444` |
+| 17 | `theorem` | [arithmeticTower_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/declarations/arithmetictower-map.md) | 108 | `result-track:5a565c03d8cf1411a908b3edd72fac7a73883a81e8af7435528b1107d95952fd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

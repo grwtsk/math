@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EndomapAndFixedPredicate.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EndomapAndFixedPredicate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EndomapAndFixedPredicate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EndomapAndFixedPredicate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Endomorphism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EndomapAndFixedPredicate.lean/declarations/endomorphism.md) | 35 | `declaration-track:8cdce664a6efae7230c432f9c64f4845057251c989cc528d5b4de8e9e3a69483` |
-| 2 | `def` | [FixedBy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EndomapAndFixedPredicate.lean/declarations/fixedby.md) | 40 | `declaration-track:efbd3a81571b6a3a3c8d0e66edaa5b1c2f9e9239e796bc5a5e2834179bb40e19` |
+| 1 | `structure` | [Endomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EndomapAndFixedPredicate.lean/declarations/endomorphism.md) | 35 | `declaration-track:8cdce664a6efae7230c432f9c64f4845057251c989cc528d5b4de8e9e3a69483` |
+| 2 | `def` | [FixedBy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EndomapAndFixedPredicate.lean/declarations/fixedby.md) | 40 | `declaration-track:efbd3a81571b6a3a3c8d0e66edaa5b1c2f9e9239e796bc5a5e2834179bb40e19` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

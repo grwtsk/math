@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/FinsetBigOperators.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/FinsetBigOperators.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FinsetBigOperators.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FinsetBigOperators.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coe_prod](../../../../GroupTheoryAndGeneralizations/FinsetBigOperators.lean/declarations/coe-prod.md) | 40 | `result-track:d7f25b34a2d05db4b68c8447f07d01186beb0ed2c1adb3a5b113d1545f40c8bb` |
-| 2 | `lemma` | [prod_inv_index](../../../../GroupTheoryAndGeneralizations/FinsetBigOperators.lean/declarations/prod-inv-index.md) | 47 | `result-track:cbe2f36abe8d9dac5640faf2e8e51321ba38e4b4c34ce40329b3592eed0fee92` |
-| 3 | `lemma` | [prod_neg_index](../../../../GroupTheoryAndGeneralizations/FinsetBigOperators.lean/declarations/prod-neg-index.md) | 50 | `result-track:5938b3003d379f5bd128320c39e0d137ad50b3bea5eadedcf3330bd5afe530f4` |
-| 4 | `lemma` | [sum_inv_index](../../../../GroupTheoryAndGeneralizations/FinsetBigOperators.lean/declarations/sum-inv-index.md) | 59 | `result-track:eb6474308532815a7f0a77beda5d437572e1c87d2f9a6fdf4f6167fcdd222092` |
+| 1 | `theorem` | [coe_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FinsetBigOperators.lean/declarations/coe-prod.md) | 40 | `result-track:d7f25b34a2d05db4b68c8447f07d01186beb0ed2c1adb3a5b113d1545f40c8bb` |
+| 2 | `lemma` | [prod_inv_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FinsetBigOperators.lean/declarations/prod-inv-index.md) | 47 | `result-track:cbe2f36abe8d9dac5640faf2e8e51321ba38e4b4c34ce40329b3592eed0fee92` |
+| 3 | `lemma` | [prod_neg_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FinsetBigOperators.lean/declarations/prod-neg-index.md) | 50 | `result-track:5938b3003d379f5bd128320c39e0d137ad50b3bea5eadedcf3330bd5afe530f4` |
+| 4 | `lemma` | [sum_inv_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FinsetBigOperators.lean/declarations/sum-inv-index.md) | 59 | `result-track:eb6474308532815a7f0a77beda5d437572e1c87d2f9a6fdf4f6167fcdd222092` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

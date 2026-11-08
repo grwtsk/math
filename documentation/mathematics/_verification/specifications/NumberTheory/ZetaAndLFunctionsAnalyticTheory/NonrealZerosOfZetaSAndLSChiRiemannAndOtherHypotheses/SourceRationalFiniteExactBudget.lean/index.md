@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalFiniteExactBudget.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalFiniteExactBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalFiniteExactBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalFiniteExactBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [residual_upper_at_exact_radius](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalFiniteExactBudget.lean/declarations/residual-upper-at-exact-radius.md) | 20 | `result-track:7523765efab14c0fbe1359188972b817190ba1231489bcb1c5a64cd4261f2176` |
-| 2 | `theorem` | [all_real_lower_at_exact_radius](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalFiniteExactBudget.lean/declarations/all-real-lower-at-exact-radius.md) | 29 | `result-track:52f630b384963b9c3f35cca114842bbfebc3ef59165e1237589a5c9e6eb2d1d1` |
-| 3 | `theorem` | [leading_upper_at_exact_receiving_radius](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalFiniteExactBudget.lean/declarations/leading-upper-at-exact-receiving-radius.md) | 40 | `result-track:370e3869707e0106d930f11d5c91bf07e0589fec5306016173465b3c393abb0d` |
-| 4 | `theorem` | [native_signed_head_of_exact_corrected_rational](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalFiniteExactBudget.lean/declarations/native-signed-head-of-exact-corrected-rational.md) | 54 | `result-track:2cb041a136ba638fe93e93f3925f6ae179cd5f9df501888983140a12ced380cc` |
+| 1 | `theorem` | [residual_upper_at_exact_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalFiniteExactBudget.lean/declarations/residual-upper-at-exact-radius.md) | 20 | `result-track:7523765efab14c0fbe1359188972b817190ba1231489bcb1c5a64cd4261f2176` |
+| 2 | `theorem` | [all_real_lower_at_exact_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalFiniteExactBudget.lean/declarations/all-real-lower-at-exact-radius.md) | 29 | `result-track:52f630b384963b9c3f35cca114842bbfebc3ef59165e1237589a5c9e6eb2d1d1` |
+| 3 | `theorem` | [leading_upper_at_exact_receiving_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalFiniteExactBudget.lean/declarations/leading-upper-at-exact-receiving-radius.md) | 40 | `result-track:370e3869707e0106d930f11d5c91bf07e0589fec5306016173465b3c393abb0d` |
+| 4 | `theorem` | [native_signed_head_of_exact_corrected_rational](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalFiniteExactBudget.lean/declarations/native-signed-head-of-exact-corrected-rational.md) | 54 | `result-track:2cb041a136ba638fe93e93f3925f6ae179cd5f9df501888983140a12ced380cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

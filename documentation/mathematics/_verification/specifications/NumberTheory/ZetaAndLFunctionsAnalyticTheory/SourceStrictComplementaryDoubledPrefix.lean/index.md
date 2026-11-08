@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceStrictComplementaryDoubledPrefix.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceStrictComplementaryDoubledPrefix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceStrictComplementaryDoubledPrefix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceStrictComplementaryDoubledPrefix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [strictDivisorLogCoefficient_zero_of_le_two_mul_add_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceStrictComplementaryDoubledPrefix.lean/declarations/strictdivisorlogcoefficient-zero-of-le-two-mul-add-one.md) | 23 | `result-track:e26e3fdfba4809e07f0b17af56e00a4b942c811278cdd224f6977d08ab370820` |
-| 2 | `theorem` | [shortDivisorCumulative_eq_psi_of_floor_le_two_mul_add_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceStrictComplementaryDoubledPrefix.lean/declarations/shortdivisorcumulative-eq-psi-of-floor-le-two-mul-add-one.md) | 41 | `result-track:0206248d2f3cac0db69e868600999ad930d5c5cd3fd3caf7d42b9ac83b598367` |
-| 3 | `theorem` | [complementaryCumulative_eq_neg_floor_of_floor_le_two_mul_add_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceStrictComplementaryDoubledPrefix.lean/declarations/complementarycumulative-eq-neg-floor-of-floor-le-two-mul-add-one.md) | 54 | `result-track:fce2a02c3cde42edc2ac938fd3ff42f0a9556c8b5c96607b1c0c409d12eb156e` |
-| 4 | `theorem` | [complementaryCumulative_eq_neg_floor_before_first_atom](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceStrictComplementaryDoubledPrefix.lean/declarations/complementarycumulative-eq-neg-floor-before-first-atom.md) | 60 | `result-track:67d3d6222a7e5c49359011bb285fcd6f7b208e6676e0b757d6635c5129904b3d` |
-| 5 | `theorem` | [strictDivisorLogCoefficient_first_possible_atom](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceStrictComplementaryDoubledPrefix.lean/declarations/strictdivisorlogcoefficient-first-possible-atom.md) | 70 | `result-track:4a76d49d63e59843e07f433b122c949ab4c4f03fdf215e9ce6887a55afaa88b8` |
+| 1 | `theorem` | [strictDivisorLogCoefficient_zero_of_le_two_mul_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceStrictComplementaryDoubledPrefix.lean/declarations/strictdivisorlogcoefficient-zero-of-le-two-mul-add-one.md) | 23 | `result-track:e26e3fdfba4809e07f0b17af56e00a4b942c811278cdd224f6977d08ab370820` |
+| 2 | `theorem` | [shortDivisorCumulative_eq_psi_of_floor_le_two_mul_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceStrictComplementaryDoubledPrefix.lean/declarations/shortdivisorcumulative-eq-psi-of-floor-le-two-mul-add-one.md) | 41 | `result-track:0206248d2f3cac0db69e868600999ad930d5c5cd3fd3caf7d42b9ac83b598367` |
+| 3 | `theorem` | [complementaryCumulative_eq_neg_floor_of_floor_le_two_mul_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceStrictComplementaryDoubledPrefix.lean/declarations/complementarycumulative-eq-neg-floor-of-floor-le-two-mul-add-one.md) | 54 | `result-track:fce2a02c3cde42edc2ac938fd3ff42f0a9556c8b5c96607b1c0c409d12eb156e` |
+| 4 | `theorem` | [complementaryCumulative_eq_neg_floor_before_first_atom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceStrictComplementaryDoubledPrefix.lean/declarations/complementarycumulative-eq-neg-floor-before-first-atom.md) | 60 | `result-track:67d3d6222a7e5c49359011bb285fcd6f7b208e6676e0b757d6635c5129904b3d` |
+| 5 | `theorem` | [strictDivisorLogCoefficient_first_possible_atom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceStrictComplementaryDoubledPrefix.lean/declarations/strictdivisorlogcoefficient-first-possible-atom.md) | 70 | `result-track:4a76d49d63e59843e07f433b122c949ab4c4f03fdf215e9ce6887a55afaa88b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

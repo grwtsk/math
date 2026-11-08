@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedABNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedABNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedABNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedABNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,12 +61,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [hasExactColimitsOfShape](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedABNamespaced.lean/declarations/hasexactcolimitsofshape.md) | 41 | `result-track:d6e4a1f23653cee7fb2d8792a88cf92656c0ed340c961510a87e5242fc3ae1f6` |
-| 2 | `lemma` | [hasExactLimitsOfShape](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedABNamespaced.lean/declarations/hasexactlimitsofshape.md) | 50 | `result-track:1cd2c6e4bf98f2085797059245bbbcd71c96190b14131f528c9c25b492b7500f` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedABNamespaced.lean/declarations/instance-source-edition-4.md) | 62 | `declaration-track:e5281baa39e7f11402652f7c08fbc968f9e9466ec2fb6d868d37658f34256faf` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedABNamespaced.lean/declarations/instance-source-edition-3.md) | 67 | `declaration-track:d089bacf93451fd9f4f2c1d68a8c31b28ce0642e711db742eb2876042178d360` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedABNamespaced.lean/declarations/instance.md) | 72 | `declaration-track:09c512635ad329c87cb6b6b7724cc184c7dc368f458edcab75e6e49714dc170e` |
-| 6 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedABNamespaced.lean/declarations/instance-source-edition-2.md) | 74 | `declaration-track:30e26e3f1657a08c4d2bb634c9385e8eeebeaaa9ac5e5b2cf81f7e2169a2bee1` |
+| 1 | `lemma` | [hasExactColimitsOfShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedABNamespaced.lean/declarations/hasexactcolimitsofshape.md) | 41 | `result-track:d6e4a1f23653cee7fb2d8792a88cf92656c0ed340c961510a87e5242fc3ae1f6` |
+| 2 | `lemma` | [hasExactLimitsOfShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedABNamespaced.lean/declarations/hasexactlimitsofshape.md) | 50 | `result-track:1cd2c6e4bf98f2085797059245bbbcd71c96190b14131f528c9c25b492b7500f` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedABNamespaced.lean/declarations/instance-source-edition-4.md) | 62 | `declaration-track:e5281baa39e7f11402652f7c08fbc968f9e9466ec2fb6d868d37658f34256faf` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedABNamespaced.lean/declarations/instance-source-edition-3.md) | 67 | `declaration-track:d089bacf93451fd9f4f2c1d68a8c31b28ce0642e711db742eb2876042178d360` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedABNamespaced.lean/declarations/instance.md) | 72 | `declaration-track:09c512635ad329c87cb6b6b7724cc184c7dc368f458edcab75e6e49714dc170e` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedABNamespaced.lean/declarations/instance-source-edition-2.md) | 74 | `declaration-track:30e26e3f1657a08c4d2bb634c9385e8eeebeaaa9ac5e5b2cf81f7e2169a2bee1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

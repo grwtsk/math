@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DataRealStarNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/DataRealStarNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealStarNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealStarNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../RealFunctions/DataRealStarNamespaced.lean/declarations/instance.md) | 22 | `declaration-track:410f32a98fd1fa5b41f23f9a4d4ebd6e52a66216ca4c6a767e71c6df2bed1375` |
-| 2 | `instance` | [(anonymous)](../../../../RealFunctions/DataRealStarNamespaced.lean/declarations/instance-source-edition-2.md) | 25 | `declaration-track:82b0d5ecae2e67919e89d3597237c806e1ae5754e5ee9f7b3df06084262fa5c4` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealStarNamespaced.lean/declarations/instance.md) | 22 | `declaration-track:410f32a98fd1fa5b41f23f9a4d4ebd6e52a66216ca4c6a767e71c6df2bed1375` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealStarNamespaced.lean/declarations/instance-source-edition-2.md) | 25 | `declaration-track:82b0d5ecae2e67919e89d3597237c806e1ae5754e5ee9f7b3df06084262fa5c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

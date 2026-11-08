@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualUnitTilt](../../../../MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/declarations/actualunittilt.md) | 21 | `declaration-track:2679655df74dfd8b940c27375d2edfbfe12e135e7422921f97706a1eeada4923` |
-| 2 | `def` | [actualUnitTiltEnergy](../../../../MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/declarations/actualunittiltenergy.md) | 25 | `declaration-track:bd86e22f7cb1e47830a838a88fb8da0d678a517854f1c4c2b20f47c022688a0a` |
-| 3 | `theorem` | [actualUnitTilt_sq_integrable](../../../../MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/declarations/actualunittilt-sq-integrable.md) | 29 | `result-track:c6a81bd4706bed77001e4e4c0cde46bb68ff905b31b8e3761b1ca1b021d1ffee` |
-| 4 | `theorem` | [actualUnitTiltEnergy_eq_integral](../../../../MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/declarations/actualunittiltenergy-eq-integral.md) | 40 | `result-track:0a97f192fa81a9628c8840dae47d85bb76e84b1a969eae6c489221c03163f47c` |
-| 5 | `theorem` | [actualUnitTilt_transform](../../../../MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/declarations/actualunittilt-transform.md) | 50 | `result-track:867173b940fe75ced12b1336acec03e61f28c42ec24bfbdc7850d2957304fda9` |
-| 6 | `theorem` | [actualUnitTilt_integral_sq_le](../../../../MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/declarations/actualunittilt-integral-sq-le.md) | 58 | `result-track:be266d9898e237762badd2c39a9f40b380f1254d7a00f3a76d72183553937d20` |
-| 7 | `theorem` | [actualUnitTiltEnergy_eventually_ge](../../../../MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/declarations/actualunittiltenergy-eventually-ge.md) | 88 | `result-track:1ac71650e8de56f926bb3addde72c3afbebe4ce4a741afa007d2eedc1fefd3f9` |
-| 8 | `theorem` | [actualUnitTiltEnergy_tendsto_atTop](../../../../MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/declarations/actualunittiltenergy-tendsto-attop.md) | 138 | `result-track:1a6b19bc465b48646e1cd34a88c67f5b8b642a2d54bcffd29a51496b554dde6f` |
+| 1 | `def` | [actualUnitTilt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/declarations/actualunittilt.md) | 21 | `declaration-track:2679655df74dfd8b940c27375d2edfbfe12e135e7422921f97706a1eeada4923` |
+| 2 | `def` | [actualUnitTiltEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/declarations/actualunittiltenergy.md) | 25 | `declaration-track:bd86e22f7cb1e47830a838a88fb8da0d678a517854f1c4c2b20f47c022688a0a` |
+| 3 | `theorem` | [actualUnitTilt_sq_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/declarations/actualunittilt-sq-integrable.md) | 29 | `result-track:c6a81bd4706bed77001e4e4c0cde46bb68ff905b31b8e3761b1ca1b021d1ffee` |
+| 4 | `theorem` | [actualUnitTiltEnergy_eq_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/declarations/actualunittiltenergy-eq-integral.md) | 40 | `result-track:0a97f192fa81a9628c8840dae47d85bb76e84b1a969eae6c489221c03163f47c` |
+| 5 | `theorem` | [actualUnitTilt_transform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/declarations/actualunittilt-transform.md) | 50 | `result-track:867173b940fe75ced12b1336acec03e61f28c42ec24bfbdc7850d2957304fda9` |
+| 6 | `theorem` | [actualUnitTilt_integral_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/declarations/actualunittilt-integral-sq-le.md) | 58 | `result-track:be266d9898e237762badd2c39a9f40b380f1254d7a00f3a76d72183553937d20` |
+| 7 | `theorem` | [actualUnitTiltEnergy_eventually_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/declarations/actualunittiltenergy-eventually-ge.md) | 88 | `result-track:1ac71650e8de56f926bb3addde72c3afbebe4ce4a741afa007d2eedc1fefd3f9` |
+| 8 | `theorem` | [actualUnitTiltEnergy_tendsto_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyEdition2SourceEdition1.lean/declarations/actualunittiltenergy-tendsto-attop.md) | 138 | `result-track:1a6b19bc465b48646e1cd34a88c67f5b8b642a2d54bcffd29a51496b554dde6f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

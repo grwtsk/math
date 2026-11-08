@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAdaptiveGaussianConsumer.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAdaptiveGaussianConsumer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAdaptiveGaussianConsumer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAdaptiveGaussianConsumer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sourceVariance](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAdaptiveGaussianConsumer.lean/declarations/sourcevariance.md) | 31 | `declaration-track:42a00f88b3928e4f67af40bf65b7a35743bd800bf168b2b4a9c0d4cf6cf2738b` |
-| 2 | `def` | [sourceGaussianTangent](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAdaptiveGaussianConsumer.lean/declarations/sourcegaussiantangent.md) | 34 | `declaration-track:ff460aa317794b8f62905c2ce48cf97c4da5f6b9bf92a1e36c14fedf7266f41d` |
-| 3 | `theorem` | [paid_finite_tangent_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAdaptiveGaussianConsumer.lean/declarations/paid-finite-tangent-error.md) | 38 | `result-track:99140d4ed2a0fa5a95cda61733b10d9e61506f0f81151e799532af563fff5e0b` |
-| 4 | `theorem` | [paid_original_source_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAdaptiveGaussianConsumer.lean/declarations/paid-original-source-error.md) | 64 | `result-track:60716f5890f611ed7e25f4a72763e9d3fea4f16f3e76b3a057f8e76ca72547f1` |
-| 5 | `theorem` | [sourceVariance_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAdaptiveGaussianConsumer.lean/declarations/sourcevariance-pos.md) | 70 | `result-track:d8f6ea749ae9d9a2147ef27d407b8d05f00a9e287d1f1302b0aa3e403771a212` |
-| 6 | `theorem` | [compensated_tail_of_source_gaussian_tangent_cap](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAdaptiveGaussianConsumer.lean/declarations/compensated-tail-of-source-gaussian-tangent-cap.md) | 75 | `result-track:a382499112c71457498b35b3a898f2784c912f7e384b458d3b70c82532ea6765` |
-| 7 | `theorem` | [estimate_of_source_gaussian_tangent_cap](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAdaptiveGaussianConsumer.lean/declarations/estimate-of-source-gaussian-tangent-cap.md) | 92 | `result-track:a196bb2c18fbace2132c2dfbd2aa1fb9221e51521a074079abd6ce5852ab46f6` |
+| 1 | `def` | [sourceVariance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAdaptiveGaussianConsumer.lean/declarations/sourcevariance.md) | 31 | `declaration-track:42a00f88b3928e4f67af40bf65b7a35743bd800bf168b2b4a9c0d4cf6cf2738b` |
+| 2 | `def` | [sourceGaussianTangent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAdaptiveGaussianConsumer.lean/declarations/sourcegaussiantangent.md) | 34 | `declaration-track:ff460aa317794b8f62905c2ce48cf97c4da5f6b9bf92a1e36c14fedf7266f41d` |
+| 3 | `theorem` | [paid_finite_tangent_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAdaptiveGaussianConsumer.lean/declarations/paid-finite-tangent-error.md) | 38 | `result-track:99140d4ed2a0fa5a95cda61733b10d9e61506f0f81151e799532af563fff5e0b` |
+| 4 | `theorem` | [paid_original_source_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAdaptiveGaussianConsumer.lean/declarations/paid-original-source-error.md) | 64 | `result-track:60716f5890f611ed7e25f4a72763e9d3fea4f16f3e76b3a057f8e76ca72547f1` |
+| 5 | `theorem` | [sourceVariance_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAdaptiveGaussianConsumer.lean/declarations/sourcevariance-pos.md) | 70 | `result-track:d8f6ea749ae9d9a2147ef27d407b8d05f00a9e287d1f1302b0aa3e403771a212` |
+| 6 | `theorem` | [compensated_tail_of_source_gaussian_tangent_cap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAdaptiveGaussianConsumer.lean/declarations/compensated-tail-of-source-gaussian-tangent-cap.md) | 75 | `result-track:a382499112c71457498b35b3a898f2784c912f7e384b458d3b70c82532ea6765` |
+| 7 | `theorem` | [estimate_of_source_gaussian_tangent_cap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAdaptiveGaussianConsumer.lean/declarations/estimate-of-source-gaussian-tangent-cap.md) | 92 | `result-track:a196bb2c18fbace2132c2dfbd2aa1fb9221e51521a074079abd6ce5852ab46f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

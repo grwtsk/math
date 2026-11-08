@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Imo1961Q3Namespaced.lean/index.md) · [Full source](../../../../RealFunctions/Imo1961Q3Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1961Q3Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1961Q3Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Imo1961Q3](../../../../RealFunctions/Imo1961Q3Namespaced.lean/declarations/imo1961q3.md) | 32 | `result-track:f0a920bf7119047bd0dd04a8b2259ce7a11b6380e03a2b1bcead77178bdac751` |
+| 1 | `theorem` | [Imo1961Q3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1961Q3Namespaced.lean/declarations/imo1961q3.md) | 32 | `result-track:f0a920bf7119047bd0dd04a8b2259ce7a11b6380e03a2b1bcead77178bdac751` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

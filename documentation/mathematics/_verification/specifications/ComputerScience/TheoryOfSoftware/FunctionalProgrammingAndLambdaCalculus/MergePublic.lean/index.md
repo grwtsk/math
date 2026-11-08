@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MergePublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MergePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MergePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MergePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [merge](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MergePublic.lean/declarations/merge.md) | 16 | `declaration-track:fe85ac38fb0a1c282bd8557bdb22f6373f4e4bc2a09320021a08475b6a9142df` |
-| 2 | `def` | [mergeDedupWith](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MergePublic.lean/declarations/mergededupwith.md) | 39 | `declaration-track:249645a605f680e20a0daa1973afebfa1e579d6b2741c52d547e1c5a320787a8` |
-| 3 | `def` | [mergeDedup](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MergePublic.lean/declarations/mergededup.md) | 61 | `declaration-track:5789f05e421389fc968e25546538d20e8886f7a1e4d242f92be20a84261faf3d` |
-| 4 | `def` | [mergeUnsortedDedup](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MergePublic.lean/declarations/mergeunsorteddedup.md) | 70 | `declaration-track:a7bd53419640360a6a0247155fb7a79e697bd144613164af690e49c0cd16749b` |
-| 5 | `def` | [mergeAdjacentDups](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MergePublic.lean/declarations/mergeadjacentdups.md) | 87 | `declaration-track:f1168226cf155374f92ee407cce38623fcf898149de34267871cc42b8a5789c6` |
-| 6 | `def` | [dedupSorted](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MergePublic.lean/declarations/dedupsorted.md) | 103 | `declaration-track:9e14e8a6eba8cccfd449717b5eba8a35f0aa1d65bb894156cf6f7171762de186` |
-| 7 | `def` | [sortDedup](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MergePublic.lean/declarations/sortdedup.md) | 107 | `declaration-track:110ef073958cd698e3f0c012153e419a347b31f926c2db25f14bea9856788549` |
+| 1 | `def` | [merge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MergePublic.lean/declarations/merge.md) | 16 | `declaration-track:fe85ac38fb0a1c282bd8557bdb22f6373f4e4bc2a09320021a08475b6a9142df` |
+| 2 | `def` | [mergeDedupWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MergePublic.lean/declarations/mergededupwith.md) | 39 | `declaration-track:249645a605f680e20a0daa1973afebfa1e579d6b2741c52d547e1c5a320787a8` |
+| 3 | `def` | [mergeDedup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MergePublic.lean/declarations/mergededup.md) | 61 | `declaration-track:5789f05e421389fc968e25546538d20e8886f7a1e4d242f92be20a84261faf3d` |
+| 4 | `def` | [mergeUnsortedDedup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MergePublic.lean/declarations/mergeunsorteddedup.md) | 70 | `declaration-track:a7bd53419640360a6a0247155fb7a79e697bd144613164af690e49c0cd16749b` |
+| 5 | `def` | [mergeAdjacentDups](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MergePublic.lean/declarations/mergeadjacentdups.md) | 87 | `declaration-track:f1168226cf155374f92ee407cce38623fcf898149de34267871cc42b8a5789c6` |
+| 6 | `def` | [dedupSorted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MergePublic.lean/declarations/dedupsorted.md) | 103 | `declaration-track:9e14e8a6eba8cccfd449717b5eba8a35f0aa1d65bb894156cf6f7171762de186` |
+| 7 | `def` | [sortDedup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MergePublic.lean/declarations/sortdedup.md) | 107 | `declaration-track:110ef073958cd698e3f0c012153e419a347b31f926c2db25f14bea9856788549` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/Divisibility.lean/index.md) · [Full source](../../../../NumberTheory/Divisibility.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Divisibility.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Divisibility.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dvd_iff_factorization_le](../../../../NumberTheory/Divisibility.lean/declarations/dvd-iff-factorization-le.md) | 19 | `result-track:86a9c81de4cc007317416845b1e794da579e7a58af5bdc07fb5da38e7856feaa` |
-| 2 | `theorem` | [coprime_iff_disjoint_prime_support](../../../../NumberTheory/Divisibility.lean/declarations/coprime-iff-disjoint-prime-support.md) | 36 | `result-track:0d4bc79a69d6a3b03f759c2fbd38241cf561e23e77c4e58d4504f95656434ac9` |
+| 1 | `theorem` | [dvd_iff_factorization_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Divisibility.lean/declarations/dvd-iff-factorization-le.md) | 19 | `result-track:86a9c81de4cc007317416845b1e794da579e7a58af5bdc07fb5da38e7856feaa` |
+| 2 | `theorem` | [coprime_iff_disjoint_prime_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Divisibility.lean/declarations/coprime-iff-disjoint-prime-support.md) | 36 | `result-track:0d4bc79a69d6a3b03f759c2fbd38241cf561e23e77c4e58d4504f95656434ac9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

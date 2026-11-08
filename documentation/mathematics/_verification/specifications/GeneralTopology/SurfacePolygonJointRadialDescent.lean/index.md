@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonJointRadialDescent.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonJointRadialDescent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonJointRadialDescent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonJointRadialDescent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonUnitCircleAttachment`](../../../../GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonUnitCircleAttachment`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Topology.Constructions` — import line 9; external provider; requires a separately pinned dependency.
 - `Mathlib.Topology.Maps.Basic` — import line 10; external provider; requires a separately pinned dependency.
 
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [cornerDiscreteTopology](../../../../GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/cornerdiscretetopology.md) | 44 | `declaration-track:665fe18c9e8bf214b85cedd5503ccdaf72d56b6ffdbf05d95ffe13abba003179` |
-| 2 | `def` | [perimeterProductProjection](../../../../GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/perimeterproductprojection.md) | 49 | `declaration-track:cf0e2357aadb2ca5300d3d693b16f55bb43c21f810a9e9dfdd6d3d1311893230` |
-| 3 | `def` | [perimeterJointRadialMap](../../../../GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/perimeterjointradialmap.md) | 56 | `declaration-track:b11977b088ba8a549dfd1d9bc8fd6de6d2009e736eaeed3667e484409e93d9a7` |
-| 4 | `theorem` | [perimeterJointRadialMap_source](../../../../GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/perimeterjointradialmap-source.md) | 61 | `result-track:64c24d5cae427a293a69b9b77b4d94d7f5433d87e3979687007bc4767ab0fd52` |
-| 5 | `theorem` | [perimeterJointRadialMap_comp_projection](../../../../GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/perimeterjointradialmap-comp-projection.md) | 69 | `result-track:1d5831259b34005172d6a21ad9e9b308dd08d331654db53daf7534b58a8d7266` |
-| 6 | `theorem` | [perimeterJointRadialMap_continuous_of_productQuotient](../../../../GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/perimeterjointradialmap-continuous-of-productquotient.md) | 79 | `result-track:2015ac069cb4f44fd8e144af8a58da8421f0c1df5a8f9dfb9ca87650a2f59612` |
-| 7 | `theorem` | [perimeterJointRadialMap_zero](../../../../GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/perimeterjointradialmap-zero.md) | 87 | `result-track:7029d7e9402b7919d5c4302ea54bb49a5d69c6223150f99c984b6428f19b50d5` |
-| 8 | `theorem` | [perimeterJointRadialMap_one](../../../../GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/perimeterjointradialmap-one.md) | 94 | `result-track:b58aecc071ee87b738581428f0b7764454f7bea9543d5714d4768f09ef17d95a` |
-| 9 | `theorem` | [perimeterJointRadialMap_radius](../../../../GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/perimeterjointradialmap-radius.md) | 101 | `result-track:d2aef15d8e6fad147bf240c002706aac5316d4efc4ed795e81a99116e281ec41` |
-| 10 | `def` | [unitCircleJointRadialMap](../../../../GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/unitcirclejointradialmap.md) | 108 | `declaration-track:0ae502eae981409494f8dd2b7c84ef0f7d672cbcee9e098e1fde71f6bbd8e931` |
-| 11 | `theorem` | [unitCircleJointRadialMap_continuous_of_productQuotient](../../../../GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/unitcirclejointradialmap-continuous-of-productquotient.md) | 115 | `result-track:c4704f708727ef9a2303749bfefc9ed9c6e325e93ee9ccce8a49037d303db523` |
-| 12 | `theorem` | [unitCircleJointRadialMap_one](../../../../GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/unitcirclejointradialmap-one.md) | 124 | `result-track:494f4fbea1f532e53895f874a15c03c44abbe5db29d2f4a2db304ac9e252ee83` |
+| 1 | `instance` | [cornerDiscreteTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/cornerdiscretetopology.md) | 44 | `declaration-track:665fe18c9e8bf214b85cedd5503ccdaf72d56b6ffdbf05d95ffe13abba003179` |
+| 2 | `def` | [perimeterProductProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/perimeterproductprojection.md) | 49 | `declaration-track:cf0e2357aadb2ca5300d3d693b16f55bb43c21f810a9e9dfdd6d3d1311893230` |
+| 3 | `def` | [perimeterJointRadialMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/perimeterjointradialmap.md) | 56 | `declaration-track:b11977b088ba8a549dfd1d9bc8fd6de6d2009e736eaeed3667e484409e93d9a7` |
+| 4 | `theorem` | [perimeterJointRadialMap_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/perimeterjointradialmap-source.md) | 61 | `result-track:64c24d5cae427a293a69b9b77b4d94d7f5433d87e3979687007bc4767ab0fd52` |
+| 5 | `theorem` | [perimeterJointRadialMap_comp_projection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/perimeterjointradialmap-comp-projection.md) | 69 | `result-track:1d5831259b34005172d6a21ad9e9b308dd08d331654db53daf7534b58a8d7266` |
+| 6 | `theorem` | [perimeterJointRadialMap_continuous_of_productQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/perimeterjointradialmap-continuous-of-productquotient.md) | 79 | `result-track:2015ac069cb4f44fd8e144af8a58da8421f0c1df5a8f9dfb9ca87650a2f59612` |
+| 7 | `theorem` | [perimeterJointRadialMap_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/perimeterjointradialmap-zero.md) | 87 | `result-track:7029d7e9402b7919d5c4302ea54bb49a5d69c6223150f99c984b6428f19b50d5` |
+| 8 | `theorem` | [perimeterJointRadialMap_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/perimeterjointradialmap-one.md) | 94 | `result-track:b58aecc071ee87b738581428f0b7764454f7bea9543d5714d4768f09ef17d95a` |
+| 9 | `theorem` | [perimeterJointRadialMap_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/perimeterjointradialmap-radius.md) | 101 | `result-track:d2aef15d8e6fad147bf240c002706aac5316d4efc4ed795e81a99116e281ec41` |
+| 10 | `def` | [unitCircleJointRadialMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/unitcirclejointradialmap.md) | 108 | `declaration-track:0ae502eae981409494f8dd2b7c84ef0f7d672cbcee9e098e1fde71f6bbd8e931` |
+| 11 | `theorem` | [unitCircleJointRadialMap_continuous_of_productQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/unitcirclejointradialmap-continuous-of-productquotient.md) | 115 | `result-track:c4704f708727ef9a2303749bfefc9ed9c6e325e93ee9ccce8a49037d303db523` |
+| 12 | `theorem` | [unitCircleJointRadialMap_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonJointRadialDescent.lean/declarations/unitcirclejointradialmap-one.md) | 124 | `result-track:494f4fbea1f532e53895f874a15c03c44abbe5db29d2f4a2db304ac9e252ee83` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

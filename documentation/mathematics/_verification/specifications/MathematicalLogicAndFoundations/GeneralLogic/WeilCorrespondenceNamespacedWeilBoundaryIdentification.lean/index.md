@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WeilCorrespondenceNamespacedWeilBoundaryIdentification.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WeilCorrespondenceNamespacedWeilBoundaryIdentification.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WeilCorrespondenceNamespacedWeilBoundaryIdentification.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WeilCorrespondenceNamespacedWeilBoundaryIdentification.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [WeilBoundaryIdentification](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WeilCorrespondenceNamespacedWeilBoundaryIdentification.lean/declarations/weilboundaryidentification.md) | 22 | `declaration-track:12c55afd929011821bfbed1b99a3e71ac03e5c18802968ad060643e6a289f57c` |
+| 1 | `structure` | [WeilBoundaryIdentification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WeilCorrespondenceNamespacedWeilBoundaryIdentification.lean/declarations/weilboundaryidentification.md) | 22 | `declaration-track:12c55afd929011821bfbed1b99a3e71ac03e5c18802968ad060643e6a289f57c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

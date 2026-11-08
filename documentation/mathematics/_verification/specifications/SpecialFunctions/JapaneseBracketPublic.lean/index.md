@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/JapaneseBracketPublic.lean/index.md) · [Full source](../../../../SpecialFunctions/JapaneseBracketPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sqrt_one_add_norm_sq_le](../../../../SpecialFunctions/JapaneseBracketPublic.lean/declarations/sqrt-one-add-norm-sq-le.md) | 41 | `result-track:8beb5a01cdbfce17437900839aea061709e3d1d7ad61eee81999b98529844013` |
-| 2 | `theorem` | [one_add_norm_le_sqrt_two_mul_sqrt](../../../../SpecialFunctions/JapaneseBracketPublic.lean/declarations/one-add-norm-le-sqrt-two-mul-sqrt.md) | 45 | `result-track:511f142b1985639eaec012ef0220e8afa61a941077ddd872abb38e3ea6e0e585` |
-| 3 | `theorem` | [rpow_neg_one_add_norm_sq_le](../../../../SpecialFunctions/JapaneseBracketPublic.lean/declarations/rpow-neg-one-add-norm-sq-le.md) | 52 | `result-track:1e579b4d0d3316529856e6e50de415828d78fc449f774b3bb9484d6a77105565` |
-| 4 | `theorem` | [le_rpow_one_add_norm_iff_norm_le](../../../../SpecialFunctions/JapaneseBracketPublic.lean/declarations/le-rpow-one-add-norm-iff-norm-le.md) | 64 | `result-track:ddebd2d61714b9f353b7fb64f4b62ec4568feb24782665a358097b0fe9959f9f` |
-| 5 | `theorem` | [closedBall_rpow_sub_one_eq_empty_aux](../../../../SpecialFunctions/JapaneseBracketPublic.lean/declarations/closedball-rpow-sub-one-eq-empty-aux.md) | 71 | `result-track:9d0b1da95390e2faf6ef38cde320feccc46682320d81b150271eeb93f03a07f6` |
-| 6 | `theorem` | [finite_integral_rpow_sub_one_pow_aux](../../../../SpecialFunctions/JapaneseBracketPublic.lean/declarations/finite-integral-rpow-sub-one-pow-aux.md) | 79 | `result-track:7d5af150ed59580efa562d48d12ec17b1dad343cb8329e4f1218001df5595d8e` |
-| 7 | `theorem` | [finite_integral_one_add_norm](../../../../SpecialFunctions/JapaneseBracketPublic.lean/declarations/finite-integral-one-add-norm.md) | 98 | `result-track:b1b0d32958ef385e01085ce1e7db2ec09df36ef634433e39e988c16daaac6a27` |
-| 8 | `theorem` | [integrable_one_add_norm](../../../../SpecialFunctions/JapaneseBracketPublic.lean/declarations/integrable-one-add-norm.md) | 137 | `result-track:d6aec0890d6176d53797b29c3d900b0960404eeb31c64a15376b52a4b5eb7dfc` |
-| 9 | `theorem` | [integrable_rpow_neg_one_add_norm_sq](../../../../SpecialFunctions/JapaneseBracketPublic.lean/declarations/integrable-rpow-neg-one-add-norm-sq.md) | 147 | `result-track:28e63b854852a0714c56f0393dc4c33d3f1b9437e8a5d96f76224e6cac9dd691` |
+| 1 | `theorem` | [sqrt_one_add_norm_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketPublic.lean/declarations/sqrt-one-add-norm-sq-le.md) | 41 | `result-track:8beb5a01cdbfce17437900839aea061709e3d1d7ad61eee81999b98529844013` |
+| 2 | `theorem` | [one_add_norm_le_sqrt_two_mul_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketPublic.lean/declarations/one-add-norm-le-sqrt-two-mul-sqrt.md) | 45 | `result-track:511f142b1985639eaec012ef0220e8afa61a941077ddd872abb38e3ea6e0e585` |
+| 3 | `theorem` | [rpow_neg_one_add_norm_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketPublic.lean/declarations/rpow-neg-one-add-norm-sq-le.md) | 52 | `result-track:1e579b4d0d3316529856e6e50de415828d78fc449f774b3bb9484d6a77105565` |
+| 4 | `theorem` | [le_rpow_one_add_norm_iff_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketPublic.lean/declarations/le-rpow-one-add-norm-iff-norm-le.md) | 64 | `result-track:ddebd2d61714b9f353b7fb64f4b62ec4568feb24782665a358097b0fe9959f9f` |
+| 5 | `theorem` | [closedBall_rpow_sub_one_eq_empty_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketPublic.lean/declarations/closedball-rpow-sub-one-eq-empty-aux.md) | 71 | `result-track:9d0b1da95390e2faf6ef38cde320feccc46682320d81b150271eeb93f03a07f6` |
+| 6 | `theorem` | [finite_integral_rpow_sub_one_pow_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketPublic.lean/declarations/finite-integral-rpow-sub-one-pow-aux.md) | 79 | `result-track:7d5af150ed59580efa562d48d12ec17b1dad343cb8329e4f1218001df5595d8e` |
+| 7 | `theorem` | [finite_integral_one_add_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketPublic.lean/declarations/finite-integral-one-add-norm.md) | 98 | `result-track:b1b0d32958ef385e01085ce1e7db2ec09df36ef634433e39e988c16daaac6a27` |
+| 8 | `theorem` | [integrable_one_add_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketPublic.lean/declarations/integrable-one-add-norm.md) | 137 | `result-track:d6aec0890d6176d53797b29c3d900b0960404eeb31c64a15376b52a4b5eb7dfc` |
+| 9 | `theorem` | [integrable_rpow_neg_one_add_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketPublic.lean/declarations/integrable-rpow-neg-one-add-norm-sq.md) | 147 | `result-track:28e63b854852a0714c56f0393dc4c33d3f1b9437e8a5d96f76224e6cac9dd691` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

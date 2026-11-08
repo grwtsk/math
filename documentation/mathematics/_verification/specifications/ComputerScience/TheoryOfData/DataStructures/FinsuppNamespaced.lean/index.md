@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [sym2_support_eq_preimage_support_mul](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppNamespaced.lean/declarations/sym2-support-eq-preimage-support-mul.md) | 30 | `result-track:8ae230fe621a5eea5822e89f2b55bec4c9e7c0f74f927c1a6571fe78417580eb` |
-| 2 | `lemma` | [mem_sym2_support_of_mul_ne_zero](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppNamespaced.lean/declarations/mem-sym2-support-of-mul-ne-zero.md) | 33 | `result-track:cc5fe676545ed0b454a4ed500f7bf0e5c631aec380fea6c9055689dedab2b9d3` |
-| 3 | `def` | [sym2Mul](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppNamespaced.lean/declarations/sym2mul.md) | 40 | `declaration-track:647560138cfc67bd705e8d960bcac97dc2723eceede9c11f646b04d8c815701b` |
-| 4 | `lemma` | [support_sym2Mul_subset](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppNamespaced.lean/declarations/support-sym2mul-subset.md) | 43 | `result-track:a0bd223207785ccb6773d106b2b6fde6e1a290c0f8e4643fa96a5d3dfc911abe` |
-| 5 | `lemma` | [coe_sym2Mul](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppNamespaced.lean/declarations/coe-sym2mul.md) | 45 | `result-track:9f4877f84bbf777508c7145b434fe1868fcb14a5d18d9f84cab9d53a9dc1127a` |
-| 6 | `lemma` | [sym2Mul_apply_mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppNamespaced.lean/declarations/sym2mul-apply-mk.md) | 47 | `result-track:b944c83cb9330662b400854f5a3437729d8a5f6ffa8411834ff1e72ddc015a53` |
+| 1 | `lemma` | [sym2_support_eq_preimage_support_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppNamespaced.lean/declarations/sym2-support-eq-preimage-support-mul.md) | 30 | `result-track:8ae230fe621a5eea5822e89f2b55bec4c9e7c0f74f927c1a6571fe78417580eb` |
+| 2 | `lemma` | [mem_sym2_support_of_mul_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppNamespaced.lean/declarations/mem-sym2-support-of-mul-ne-zero.md) | 33 | `result-track:cc5fe676545ed0b454a4ed500f7bf0e5c631aec380fea6c9055689dedab2b9d3` |
+| 3 | `def` | [sym2Mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppNamespaced.lean/declarations/sym2mul.md) | 40 | `declaration-track:647560138cfc67bd705e8d960bcac97dc2723eceede9c11f646b04d8c815701b` |
+| 4 | `lemma` | [support_sym2Mul_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppNamespaced.lean/declarations/support-sym2mul-subset.md) | 43 | `result-track:a0bd223207785ccb6773d106b2b6fde6e1a290c0f8e4643fa96a5d3dfc911abe` |
+| 5 | `lemma` | [coe_sym2Mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppNamespaced.lean/declarations/coe-sym2mul.md) | 45 | `result-track:9f4877f84bbf777508c7145b434fe1868fcb14a5d18d9f84cab9d53a9dc1127a` |
+| 6 | `lemma` | [sym2Mul_apply_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppNamespaced.lean/declarations/sym2mul-apply-mk.md) | 47 | `result-track:b944c83cb9330662b400854f5a3437729d8a5f6ffa8411834ff1e72ddc015a53` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

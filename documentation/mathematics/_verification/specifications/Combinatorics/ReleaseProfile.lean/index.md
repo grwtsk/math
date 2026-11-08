@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ReleaseProfile.lean/index.md) · [Full source](../../../../Combinatorics/ReleaseProfile.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ReleaseProfile.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ReleaseProfile.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ConnectorReleaseProfile](../../../../Combinatorics/ReleaseProfile.lean/declarations/connectorreleaseprofile.md) | 12 | `declaration-track:52d65763ef112666ad96feeeb8f253e7725b104b7c51c789523d9982cc230904` |
-| 2 | `structure` | [ReleaseAStarAdmissibility](../../../../Combinatorics/ReleaseProfile.lean/declarations/releaseastaradmissibility.md) | 33 | `declaration-track:f806d494ccd50ddfbf655cc2859b8f4b62d264b9502bbba1eb6f7891310b3c43` |
+| 1 | `structure` | [ConnectorReleaseProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ReleaseProfile.lean/declarations/connectorreleaseprofile.md) | 12 | `declaration-track:52d65763ef112666ad96feeeb8f253e7725b104b7c51c789523d9982cc230904` |
+| 2 | `structure` | [ReleaseAStarAdmissibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ReleaseProfile.lean/declarations/releaseastaradmissibility.md) | 33 | `declaration-track:f806d494ccd50ddfbf655cc2859b8f4b62d264b9502bbba1eb6f7891310b3c43` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

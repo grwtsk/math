@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralSourceEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DistanceProvider](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralSourceEdition2.lean/declarations/distanceprovider.md) | 14 | `declaration-track:a328eb1574a2484a56af3c61b6266bdda153cfc0d885addd65fcd690686f060f` |
-| 2 | `structure` | [PointedData](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralSourceEdition2.lean/declarations/pointeddata.md) | 19 | `declaration-track:4838f930eaaa81676fe072a82fd061121c0cf33cf522beca7cd8d0fd4b4bcd9d` |
-| 3 | `def` | [RecoversMetric](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralSourceEdition2.lean/declarations/recoversmetric.md) | 24 | `declaration-track:5cb3c4097d2fed65f553de9e70f67588aeb84a43b5c6f9eff946cd8032741a4e` |
-| 4 | `structure` | [MetricRecoveryCapability](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralSourceEdition2.lean/declarations/metricrecoverycapability.md) | 29 | `declaration-track:f7fbf948b572125fb8dd1a208d87433047863ac7ff77efa8598adcc040eae947` |
+| 1 | `structure` | [DistanceProvider](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralSourceEdition2.lean/declarations/distanceprovider.md) | 14 | `declaration-track:a328eb1574a2484a56af3c61b6266bdda153cfc0d885addd65fcd690686f060f` |
+| 2 | `structure` | [PointedData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralSourceEdition2.lean/declarations/pointeddata.md) | 19 | `declaration-track:4838f930eaaa81676fe072a82fd061121c0cf33cf522beca7cd8d0fd4b4bcd9d` |
+| 3 | `def` | [RecoversMetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralSourceEdition2.lean/declarations/recoversmetric.md) | 24 | `declaration-track:5cb3c4097d2fed65f553de9e70f67588aeb84a43b5c6f9eff946cd8032741a4e` |
+| 4 | `structure` | [MetricRecoveryCapability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralSourceEdition2.lean/declarations/metricrecoverycapability.md) | 29 | `declaration-track:f7fbf948b572125fb8dd1a208d87433047863ac7ff77efa8598adcc040eae947` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

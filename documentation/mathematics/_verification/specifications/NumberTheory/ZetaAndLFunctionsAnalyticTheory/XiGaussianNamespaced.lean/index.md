@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiGaussianNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiGaussianNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiGaussianNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiGaussianNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thetaPhi_gaussian_weight_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiGaussianNamespaced.lean/declarations/thetaphi-gaussian-weight-le.md) | 16 | `result-track:97a31efc3d028f6a4f2e1fe9b6ed7bf548a1b2176f9f75f94afd9e72f9482eb7` |
-| 2 | `theorem` | [coefficient_factorial_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiGaussianNamespaced.lean/declarations/coefficient-factorial-bound.md) | 32 | `result-track:acd520d482bc534a73f5b79776dddeb42db1112051288a7f53e29bbec9ee6786` |
-| 3 | `theorem` | [coefficient_ratio_frequently_large](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiGaussianNamespaced.lean/declarations/coefficient-ratio-frequently-large.md) | 74 | `result-track:b1b6adfbf1311bb9d409952a2987cdd065f033c8843bb01d2d86c388e61f3a3f` |
+| 1 | `theorem` | [thetaPhi_gaussian_weight_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiGaussianNamespaced.lean/declarations/thetaphi-gaussian-weight-le.md) | 16 | `result-track:97a31efc3d028f6a4f2e1fe9b6ed7bf548a1b2176f9f75f94afd9e72f9482eb7` |
+| 2 | `theorem` | [coefficient_factorial_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiGaussianNamespaced.lean/declarations/coefficient-factorial-bound.md) | 32 | `result-track:acd520d482bc534a73f5b79776dddeb42db1112051288a7f53e29bbec9ee6786` |
+| 3 | `theorem` | [coefficient_ratio_frequently_large](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiGaussianNamespaced.lean/declarations/coefficient-ratio-frequently-large.md) | 74 | `result-track:b1b6adfbf1311bb9d409952a2987cdd065f033c8843bb01d2d86c388e61f3a3f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

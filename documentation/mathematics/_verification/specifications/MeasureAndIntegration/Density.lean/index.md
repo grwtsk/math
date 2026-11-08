@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Density.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Density.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Density.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Density.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,23 +58,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [GentryW](../../../../MeasureAndIntegration/Density.lean/declarations/gentryw.md) | 33 | `declaration-track:eccebf5e7216f9831d1916fbe24461526e78eecc1562c45ba553192809da9a0f` |
-| 2 | `def` | [trGtW](../../../../MeasureAndIntegration/Density.lean/declarations/trgtw.md) | 37 | `declaration-track:8a555c4204ecdb1d76830e48a42da92f101c983bf24c13ae9481fdd13f384a30` |
-| 3 | `def` | [trGt2W](../../../../MeasureAndIntegration/Density.lean/declarations/trgt2w.md) | 41 | `declaration-track:f3027ef4d9ed9533fc7a9d1a801947f558515457eeb62fa70d5d68226ab577fa` |
-| 4 | `abbrev` | [MtotalW](../../../../MeasureAndIntegration/Density.lean/declarations/mtotalw.md) | 45 | `declaration-track:580464bec72a15c6094439d0cdee2961029539d29e25d6b6032a81bc6fddd1bb` |
-| 5 | `def` | [S1](../../../../MeasureAndIntegration/Density.lean/declarations/s1.md) | 49 | `declaration-track:5f7e8a55ce77d0d1f346c5392f842f1302a3f81405488cdb5540bb1f2e8feaac` |
-| 6 | `lemma` | [S1_nonneg](../../../../MeasureAndIntegration/Density.lean/declarations/s1-nonneg.md) | 51 | `result-track:b9c716b1f6935f805e4f3dfe41bfb47f8a99be8aace3fd9825245d468db1e46b` |
-| 7 | `lemma` | [abs_re_cos_add_im_sin_le](../../../../MeasureAndIntegration/Density.lean/declarations/abs-re-cos-add-im-sin-le.md) | 57 | `result-track:cc2ba38b435792604db40cf66d3f0f81313d412e000b14fac07edb156af7317b` |
-| 8 | `theorem` | [Pc_abs_le](../../../../MeasureAndIntegration/Density.lean/declarations/pc-abs-le.md) | 68 | `result-track:454e852cadc7f0a5406010be51e88efbfcc704216e522935e2a8d7fa3dd7870f` |
-| 9 | `lemma` | [Pc_continuous](../../../../MeasureAndIntegration/Density.lean/declarations/pc-continuous.md) | 76 | `result-track:df12e7148617322d9f2e0280da52f515994d80c0827729c130b1fbf68fd7ec6b` |
-| 10 | `lemma` | [nucW_continuous](../../../../MeasureAndIntegration/Density.lean/declarations/nucw-continuous.md) | 80 | `result-track:5bbae624db537f35358cc0e2e6f19cec7d69b9e700d9f3c2895e71f35ed5546f` |
-| 11 | `def` | [BcW](../../../../MeasureAndIntegration/Density.lean/declarations/bcw.md) | 91 | `declaration-track:1fdef48023e5bd9eecc7084703a8be8aa34598647c512ece69393e63a888892e` |
-| 12 | `lemma` | [l_le_BcW](../../../../MeasureAndIntegration/Density.lean/declarations/l-le-bcw.md) | 94 | `result-track:ac7dedea22f31bb2225dafb1b3c502cb09adaceaa81735858315e8c8ae2600fd` |
-| 13 | `theorem` | [nuBoundW_eventually](../../../../MeasureAndIntegration/Density.lean/declarations/nuboundw-eventually.md) | 103 | `result-track:a1cefd78be19b5f636704a93472fd21c1c7b24098ab1767c43a3c99263fcc4fb` |
-| 14 | `theorem` | [lem_ends_W](../../../../MeasureAndIntegration/Density.lean/declarations/lem-ends-w.md) | 145 | `result-track:18254f2e3deeef7c681810479dbcfeb87aa5fedc9be32e8c4ebf228e279ee2c4` |
-| 15 | `theorem` | [BcW_sq_le](../../../../MeasureAndIntegration/Density.lean/declarations/bcw-sq-le.md) | 160 | `result-track:115b662cd335cd0063b84f4706f823bc0450e3ca40b476cb8bf25404871c42f1` |
-| 16 | `theorem` | [eq_Msplit_W](../../../../MeasureAndIntegration/Density.lean/declarations/eq-msplit-w.md) | 199 | `result-track:18a7c1295728b04db0258b29366a0d129103a01fa17bc5c06996e4abdb0c6e46` |
-| 17 | `theorem` | [cross_PcPi_le](../../../../MeasureAndIntegration/Density.lean/declarations/cross-pcpi-le.md) | 234 | `result-track:0e175655029975db180d6da5537b7e826f052d34285fa35f1e588d9c79ad18ba` |
+| 1 | `abbrev` | [GentryW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Density.lean/declarations/gentryw.md) | 33 | `declaration-track:eccebf5e7216f9831d1916fbe24461526e78eecc1562c45ba553192809da9a0f` |
+| 2 | `def` | [trGtW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Density.lean/declarations/trgtw.md) | 37 | `declaration-track:8a555c4204ecdb1d76830e48a42da92f101c983bf24c13ae9481fdd13f384a30` |
+| 3 | `def` | [trGt2W](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Density.lean/declarations/trgt2w.md) | 41 | `declaration-track:f3027ef4d9ed9533fc7a9d1a801947f558515457eeb62fa70d5d68226ab577fa` |
+| 4 | `abbrev` | [MtotalW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Density.lean/declarations/mtotalw.md) | 45 | `declaration-track:580464bec72a15c6094439d0cdee2961029539d29e25d6b6032a81bc6fddd1bb` |
+| 5 | `def` | [S1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Density.lean/declarations/s1.md) | 49 | `declaration-track:5f7e8a55ce77d0d1f346c5392f842f1302a3f81405488cdb5540bb1f2e8feaac` |
+| 6 | `lemma` | [S1_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Density.lean/declarations/s1-nonneg.md) | 51 | `result-track:b9c716b1f6935f805e4f3dfe41bfb47f8a99be8aace3fd9825245d468db1e46b` |
+| 7 | `lemma` | [abs_re_cos_add_im_sin_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Density.lean/declarations/abs-re-cos-add-im-sin-le.md) | 57 | `result-track:cc2ba38b435792604db40cf66d3f0f81313d412e000b14fac07edb156af7317b` |
+| 8 | `theorem` | [Pc_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Density.lean/declarations/pc-abs-le.md) | 68 | `result-track:454e852cadc7f0a5406010be51e88efbfcc704216e522935e2a8d7fa3dd7870f` |
+| 9 | `lemma` | [Pc_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Density.lean/declarations/pc-continuous.md) | 76 | `result-track:df12e7148617322d9f2e0280da52f515994d80c0827729c130b1fbf68fd7ec6b` |
+| 10 | `lemma` | [nucW_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Density.lean/declarations/nucw-continuous.md) | 80 | `result-track:5bbae624db537f35358cc0e2e6f19cec7d69b9e700d9f3c2895e71f35ed5546f` |
+| 11 | `def` | [BcW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Density.lean/declarations/bcw.md) | 91 | `declaration-track:1fdef48023e5bd9eecc7084703a8be8aa34598647c512ece69393e63a888892e` |
+| 12 | `lemma` | [l_le_BcW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Density.lean/declarations/l-le-bcw.md) | 94 | `result-track:ac7dedea22f31bb2225dafb1b3c502cb09adaceaa81735858315e8c8ae2600fd` |
+| 13 | `theorem` | [nuBoundW_eventually](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Density.lean/declarations/nuboundw-eventually.md) | 103 | `result-track:a1cefd78be19b5f636704a93472fd21c1c7b24098ab1767c43a3c99263fcc4fb` |
+| 14 | `theorem` | [lem_ends_W](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Density.lean/declarations/lem-ends-w.md) | 145 | `result-track:18254f2e3deeef7c681810479dbcfeb87aa5fedc9be32e8c4ebf228e279ee2c4` |
+| 15 | `theorem` | [BcW_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Density.lean/declarations/bcw-sq-le.md) | 160 | `result-track:115b662cd335cd0063b84f4706f823bc0450e3ca40b476cb8bf25404871c42f1` |
+| 16 | `theorem` | [eq_Msplit_W](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Density.lean/declarations/eq-msplit-w.md) | 199 | `result-track:18a7c1295728b04db0258b29366a0d129103a01fa17bc5c06996e4abdb0c6e46` |
+| 17 | `theorem` | [cross_PcPi_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Density.lean/declarations/cross-pcpi-le.md) | 234 | `result-track:0e175655029975db180d6da5537b7e826f052d34285fa35f1e588d9c79ad18ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

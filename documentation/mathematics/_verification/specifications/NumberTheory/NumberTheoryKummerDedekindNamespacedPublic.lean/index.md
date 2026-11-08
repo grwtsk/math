@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/NumberTheoryKummerDedekindNamespacedPublic.lean/index.md) · [Full source](../../../../NumberTheory/NumberTheoryKummerDedekindNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryKummerDedekindNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryKummerDedekindNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quotMapEquivQuotQuotMap](../../../../NumberTheory/NumberTheoryKummerDedekindNamespacedPublic.lean/declarations/quotmapequivquotquotmap.md) | 86 | `declaration-track:e711947a8e8fbfd97b4776978bdbdd469dc6b30a28412a0b05aa0a7657b832bf` |
-| 2 | `lemma` | [quotMapEquivQuotQuotMap_symm_apply](../../../../NumberTheory/NumberTheoryKummerDedekindNamespacedPublic.lean/declarations/quotmapequivquotquotmap-symm-apply.md) | 94 | `result-track:8d42a70f71834eef2805200738cb699c1c3f3efa289aa8ef41694f648b850176` |
-| 3 | `def` | [normalizedFactorsMapEquivNormalizedFactorsMinPolyMk](../../../../NumberTheory/NumberTheoryKummerDedekindNamespacedPublic.lean/declarations/normalizedfactorsmapequivnormalizedfactorsminpolymk.md) | 112 | `declaration-track:6c689f35485982f71fbab3139181ceac39736d269839292e0cc5c7cbba757acf` |
-| 4 | `theorem` | [emultiplicity_factors_map_eq_emultiplicity](../../../../NumberTheory/NumberTheoryKummerDedekindNamespacedPublic.lean/declarations/emultiplicity-factors-map-eq-emultiplicity.md) | 128 | `result-track:9201e0c400e1e55963d3eb6addcf8c6ab62ac88b61fa0582df7223aa95655cd4` |
-| 5 | `theorem` | [normalizedFactors_ideal_map_eq_normalizedFactors_min_poly_mk_map](../../../../NumberTheory/NumberTheoryKummerDedekindNamespacedPublic.lean/declarations/normalizedfactors-ideal-map-eq-normalizedfactors-min-poly-mk-map.md) | 142 | `result-track:4ea826c5d681d3c0eff0a1fecae594a529301daf89dc14328e83b98fa3a85a85` |
-| 6 | `theorem` | [Ideal.irreducible_map_of_irreducible_minpoly](../../../../NumberTheory/NumberTheoryKummerDedekindNamespacedPublic.lean/declarations/ideal-irreducible-map-of-irreducible-minpoly.md) | 185 | `result-track:df156e50ccb56f15338f5472653260610c4a02c691b4c4ad87c4e58f48b01384` |
-| 7 | `theorem` | [normalizedFactorsMapEquivNormalizedFactorsMinPolyMk_symm_apply_eq_span](../../../../NumberTheory/NumberTheoryKummerDedekindNamespacedPublic.lean/declarations/normalizedfactorsmapequivnormalizedfactorsminpolymk-symm-apply-eq-span.md) | 220 | `result-track:e0d8cec48a86744aeb92694dda7e4909abbbfda1513ba93e7f7f92fbb309882a` |
+| 1 | `def` | [quotMapEquivQuotQuotMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryKummerDedekindNamespacedPublic.lean/declarations/quotmapequivquotquotmap.md) | 86 | `declaration-track:e711947a8e8fbfd97b4776978bdbdd469dc6b30a28412a0b05aa0a7657b832bf` |
+| 2 | `lemma` | [quotMapEquivQuotQuotMap_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryKummerDedekindNamespacedPublic.lean/declarations/quotmapequivquotquotmap-symm-apply.md) | 94 | `result-track:8d42a70f71834eef2805200738cb699c1c3f3efa289aa8ef41694f648b850176` |
+| 3 | `def` | [normalizedFactorsMapEquivNormalizedFactorsMinPolyMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryKummerDedekindNamespacedPublic.lean/declarations/normalizedfactorsmapequivnormalizedfactorsminpolymk.md) | 112 | `declaration-track:6c689f35485982f71fbab3139181ceac39736d269839292e0cc5c7cbba757acf` |
+| 4 | `theorem` | [emultiplicity_factors_map_eq_emultiplicity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryKummerDedekindNamespacedPublic.lean/declarations/emultiplicity-factors-map-eq-emultiplicity.md) | 128 | `result-track:9201e0c400e1e55963d3eb6addcf8c6ab62ac88b61fa0582df7223aa95655cd4` |
+| 5 | `theorem` | [normalizedFactors_ideal_map_eq_normalizedFactors_min_poly_mk_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryKummerDedekindNamespacedPublic.lean/declarations/normalizedfactors-ideal-map-eq-normalizedfactors-min-poly-mk-map.md) | 142 | `result-track:4ea826c5d681d3c0eff0a1fecae594a529301daf89dc14328e83b98fa3a85a85` |
+| 6 | `theorem` | [Ideal.irreducible_map_of_irreducible_minpoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryKummerDedekindNamespacedPublic.lean/declarations/ideal-irreducible-map-of-irreducible-minpoly.md) | 185 | `result-track:df156e50ccb56f15338f5472653260610c4a02c691b4c4ad87c4e58f48b01384` |
+| 7 | `theorem` | [normalizedFactorsMapEquivNormalizedFactorsMinPolyMk_symm_apply_eq_span](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryKummerDedekindNamespacedPublic.lean/declarations/normalizedfactorsmapequivnormalizedfactorsminpolymk-symm-apply-eq-span.md) | 220 | `result-track:e0d8cec48a86744aeb92694dda7e4909abbbfda1513ba93e7f7f92fbb309882a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

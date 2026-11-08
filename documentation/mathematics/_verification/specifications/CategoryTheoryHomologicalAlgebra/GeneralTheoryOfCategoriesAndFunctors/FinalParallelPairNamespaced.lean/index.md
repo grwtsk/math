@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinalParallelPairNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinalParallelPairNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinalParallelPairNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinalParallelPairNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [parallelPair_initial_mk'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinalParallelPairNamespaced.lean/declarations/parallelpair-initial-mk.md) | 33 | `result-track:913d276d7a14f418ca2ec92471ad552f440fc41b5324f9a234e542e5e876b78b` |
-| 2 | `lemma` | [parallelPair_initial_mk](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinalParallelPairNamespaced.lean/declarations/parallelpair-initial-mk-source-edition-2.md) | 50 | `result-track:da80e0d6b4dc68a3897b613c477abc3b5799c9a123bdbdac0c0d403624362c4f` |
+| 1 | `lemma` | [parallelPair_initial_mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinalParallelPairNamespaced.lean/declarations/parallelpair-initial-mk.md) | 33 | `result-track:913d276d7a14f418ca2ec92471ad552f440fc41b5324f9a234e542e5e876b78b` |
+| 2 | `lemma` | [parallelPair_initial_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinalParallelPairNamespaced.lean/declarations/parallelpair-initial-mk-source-edition-2.md) | 50 | `result-track:da80e0d6b4dc68a3897b613c477abc3b5799c9a123bdbdac0c0d403624362c4f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

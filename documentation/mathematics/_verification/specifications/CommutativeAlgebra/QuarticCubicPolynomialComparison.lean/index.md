@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuarticCubicPolynomialComparison.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuarticCubicPolynomialComparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicPolynomialComparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicPolynomialComparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticCubicDiscriminant`](../../../../CommutativeAlgebra/QuarticCubicDiscriminant.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Algebra.QuarticBaseResolvent`](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticCubicDiscriminant`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicDiscriminant.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticBaseResolvent`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [adjacencyCubic_toPoly_eq_resolvent](../../../../CommutativeAlgebra/QuarticCubicPolynomialComparison.lean/declarations/adjacencycubic-topoly-eq-resolvent.md) | 25 | `result-track:4096c599bbf98ee2f0da7dfb681173286bfc4083a211ff7338b6fbcebb11d0d9` |
-| 2 | `theorem` | [baseAdjacencyResolvent_eq_toPoly](../../../../CommutativeAlgebra/QuarticCubicPolynomialComparison.lean/declarations/baseadjacencyresolvent-eq-topoly.md) | 34 | `result-track:cfa11fcd249e5eff6d0719525e68aad049d98239fb9b62cb27a9758d1c8069f4` |
+| 1 | `theorem` | [adjacencyCubic_toPoly_eq_resolvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicPolynomialComparison.lean/declarations/adjacencycubic-topoly-eq-resolvent.md) | 25 | `result-track:4096c599bbf98ee2f0da7dfb681173286bfc4083a211ff7338b6fbcebb11d0d9` |
+| 2 | `theorem` | [baseAdjacencyResolvent_eq_toPoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicPolynomialComparison.lean/declarations/baseadjacencyresolvent-eq-topoly.md) | 34 | `result-track:cfa11fcd249e5eff6d0719525e68aad049d98239fb9b62cb27a9758d1c8069f4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

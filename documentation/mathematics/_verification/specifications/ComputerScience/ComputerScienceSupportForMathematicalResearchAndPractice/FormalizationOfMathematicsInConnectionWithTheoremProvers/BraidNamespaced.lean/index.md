@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BraidNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BraidNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BraidNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BraidNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [CenterPole](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BraidNamespaced.lean/declarations/centerpole.md) | 18 | `declaration-track:e9dfb767d1c110463dbf21e9ef47a6e9fd52a438efe966ab82b7390f039adf4b` |
-| 2 | `def` | [phasePole](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BraidNamespaced.lean/declarations/phasepole.md) | 20 | `declaration-track:5c08d746a376eb807a8fb013b400ca97ac6a52628bfdb0f5e52df88d99fe2d40` |
-| 3 | `theorem` | [phase_tied_to_spine](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BraidNamespaced.lean/declarations/phase-tied-to-spine.md) | 23 | `result-track:99bff6bce9dbc83b8d6d65e3365ab5be9a0b52bbc88f674bea39bb1671326875` |
+| 1 | `abbrev` | [CenterPole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BraidNamespaced.lean/declarations/centerpole.md) | 18 | `declaration-track:e9dfb767d1c110463dbf21e9ef47a6e9fd52a438efe966ab82b7390f039adf4b` |
+| 2 | `def` | [phasePole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BraidNamespaced.lean/declarations/phasepole.md) | 20 | `declaration-track:5c08d746a376eb807a8fb013b400ca97ac6a52628bfdb0f5e52df88d99fe2d40` |
+| 3 | `theorem` | [phase_tied_to_spine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BraidNamespaced.lean/declarations/phase-tied-to-spine.md) | 23 | `result-track:99bff6bce9dbc83b8d6d65e3365ab5be9a0b52bbc88f674bea39bb1671326875` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

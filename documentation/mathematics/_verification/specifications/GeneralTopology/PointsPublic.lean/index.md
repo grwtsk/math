@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PointsPublic.lean/index.md) · [Full source](../../../../GeneralTopology/PointsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PointsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PointsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pointGrothendieckTopology](../../../../GeneralTopology/PointsPublic.lean/declarations/pointgrothendiecktopology.md) | 38 | `declaration-track:7ecd17133485de4d9bcbddcf8de93b72697a3b181b84b63c3ceb546e578b1555` |
-| 2 | `def` | [pointsGrothendieckTopology](../../../../GeneralTopology/PointsPublic.lean/declarations/pointsgrothendiecktopology.md) | 61 | `declaration-track:a3347b9f85d493d8628cd24e66c20b06afe9214362f03fabb12a04ffc6fe05f7` |
-| 3 | `lemma` | [isConservativeFamilyOfPoints_pointsGrothendieckTopology](../../../../GeneralTopology/PointsPublic.lean/declarations/isconservativefamilyofpoints-pointsgrothendiecktopology.md) | 66 | `result-track:34efea37eb12f65e55a3efd49913f7351a563862821e0872da4994a0eded230b` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/PointsPublic.lean/declarations/instance-source-edition-3.md) | 72 | `declaration-track:e50041f3dd73c60f0fc3e964344044daec1745229b5bd994141b73354474de10` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/PointsPublic.lean/declarations/instance.md) | 76 | `declaration-track:a66454263fb4a4666a8c1fcd2fc79ea59b6475d238fa5af92431a68e2a01fe04` |
-| 6 | `instance` | [(anonymous)](../../../../GeneralTopology/PointsPublic.lean/declarations/instance-source-edition-2.md) | 80 | `declaration-track:af41ce2702d0775fe7172e4eaf60dee0679cd7414f6da3f01df9fe00d70a9026` |
-| 7 | `def` | [pointGrothendieckTopologyHomEquiv](../../../../GeneralTopology/PointsPublic.lean/declarations/pointgrothendiecktopologyhomequiv.md) | 86 | `declaration-track:7bbfe9bc0e6de33bba3aa41bb6db7f9063942224373af1142101e6066de5e411` |
+| 1 | `def` | [pointGrothendieckTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PointsPublic.lean/declarations/pointgrothendiecktopology.md) | 38 | `declaration-track:7ecd17133485de4d9bcbddcf8de93b72697a3b181b84b63c3ceb546e578b1555` |
+| 2 | `def` | [pointsGrothendieckTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PointsPublic.lean/declarations/pointsgrothendiecktopology.md) | 61 | `declaration-track:a3347b9f85d493d8628cd24e66c20b06afe9214362f03fabb12a04ffc6fe05f7` |
+| 3 | `lemma` | [isConservativeFamilyOfPoints_pointsGrothendieckTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PointsPublic.lean/declarations/isconservativefamilyofpoints-pointsgrothendiecktopology.md) | 66 | `result-track:34efea37eb12f65e55a3efd49913f7351a563862821e0872da4994a0eded230b` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PointsPublic.lean/declarations/instance-source-edition-3.md) | 72 | `declaration-track:e50041f3dd73c60f0fc3e964344044daec1745229b5bd994141b73354474de10` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PointsPublic.lean/declarations/instance.md) | 76 | `declaration-track:a66454263fb4a4666a8c1fcd2fc79ea59b6475d238fa5af92431a68e2a01fe04` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PointsPublic.lean/declarations/instance-source-edition-2.md) | 80 | `declaration-track:af41ce2702d0775fe7172e4eaf60dee0679cd7414f6da3f01df9fe00d70a9026` |
+| 7 | `def` | [pointGrothendieckTopologyHomEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PointsPublic.lean/declarations/pointgrothendiecktopologyhomequiv.md) | 86 | `declaration-track:7bbfe9bc0e6de33bba3aa41bb6db7f9063942224373af1142101e6066de5e411` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

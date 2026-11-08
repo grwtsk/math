@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/QuotientInter.lean/index.md) · [Full source](../../../../Geometry/QuotientInter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/QuotientInter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/QuotientInter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [card_pow_quotient_mul_pow_inter_subgroup_le](../../../../Geometry/QuotientInter.lean/declarations/card-pow-quotient-mul-pow-inter-subgroup-le.md) | 25 | `result-track:d93d77bf5dc3e7a6c12239831858ebc8f244ee2d214787be90382add71176c76` |
-| 2 | `lemma` | [le_card_quotient_mul_sq_inter_subgroup](../../../../Geometry/QuotientInter.lean/declarations/le-card-quotient-mul-sq-inter-subgroup.md) | 58 | `result-track:653feffb7d2a8c31dbc0bc39febe7e7fa04f31365f2cf38e233441b6cad94216` |
+| 1 | `lemma` | [card_pow_quotient_mul_pow_inter_subgroup_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/QuotientInter.lean/declarations/card-pow-quotient-mul-pow-inter-subgroup-le.md) | 25 | `result-track:d93d77bf5dc3e7a6c12239831858ebc8f244ee2d214787be90382add71176c76` |
+| 2 | `lemma` | [le_card_quotient_mul_sq_inter_subgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/QuotientInter.lean/declarations/le-card-quotient-mul-sq-inter-subgroup.md) | 58 | `result-track:653feffb7d2a8c31dbc0bc39febe7e7fa04f31365f2cf38e233441b6cad94216` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

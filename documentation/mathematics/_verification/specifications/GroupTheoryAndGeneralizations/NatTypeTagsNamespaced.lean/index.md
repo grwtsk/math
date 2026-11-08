@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/NatTypeTagsNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/NatTypeTagsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatTypeTagsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatTypeTagsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [toAdd_pow](../../../../GroupTheoryAndGeneralizations/NatTypeTagsNamespaced.lean/declarations/toadd-pow.md) | 27 | `result-track:2919d8053226e7f69ba402364e71bd859ece82e3b3bae4d5c7d3b9d0a2111eb3` |
-| 2 | `lemma` | [ofAdd_mul](../../../../GroupTheoryAndGeneralizations/NatTypeTagsNamespaced.lean/declarations/ofadd-mul.md) | 29 | `result-track:071a47539a9e91153697ef7db1a8de306b1aaf623ab201944f41376b3da71ee6` |
+| 1 | `lemma` | [toAdd_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatTypeTagsNamespaced.lean/declarations/toadd-pow.md) | 27 | `result-track:2919d8053226e7f69ba402364e71bd859ece82e3b3bae4d5c7d3b9d0a2111eb3` |
+| 2 | `lemma` | [ofAdd_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatTypeTagsNamespaced.lean/declarations/ofadd-mul.md) | 29 | `result-track:071a47539a9e91153697ef7db1a8de306b1aaf623ab201944f41376b3da71ee6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

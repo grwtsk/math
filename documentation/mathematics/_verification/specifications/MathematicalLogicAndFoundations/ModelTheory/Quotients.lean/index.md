@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ModelTheory/Quotients.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ModelTheory/Quotients.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/Quotients.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/Quotients.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Prestructure](../../../../../MathematicalLogicAndFoundations/ModelTheory/Quotients.lean/declarations/prestructure.md) | 35 | `declaration-track:4de835196724fe8b55d70ec94e65213053690c86ba6391bd7fb37690cfb23c9c` |
-| 2 | `instance` | [quotientStructure](../../../../../MathematicalLogicAndFoundations/ModelTheory/Quotients.lean/declarations/quotientstructure.md) | 44 | `declaration-track:37010dc7585cb71bfb042e9d2dcd81201c9b6a86a25b2b1d3a0c1eb5fa6318f4` |
-| 3 | `theorem` | [funMap_quotient_mk'](../../../../../MathematicalLogicAndFoundations/ModelTheory/Quotients.lean/declarations/funmap-quotient-mk.md) | 52 | `result-track:edbc50f08804fd44f3dcdf89b67a673011e9ef266a960f66dc1a3f2df4a373d5` |
-| 4 | `theorem` | [relMap_quotient_mk'](../../../../../MathematicalLogicAndFoundations/ModelTheory/Quotients.lean/declarations/relmap-quotient-mk.md) | 59 | `result-track:9e9d7c75257b70780e4afa9d4042dc980244a97b84a29cd7587d4480a9f58e00` |
-| 5 | `theorem` | [Term.realize_quotient_mk'](../../../../../MathematicalLogicAndFoundations/ModelTheory/Quotients.lean/declarations/term-realize-quotient-mk.md) | 66 | `result-track:77c7ae849a58b962ab78f4050365f1495ac5889c0e640dff13b2103ca534c104` |
+| 1 | `class` | [Prestructure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/Quotients.lean/declarations/prestructure.md) | 35 | `declaration-track:4de835196724fe8b55d70ec94e65213053690c86ba6391bd7fb37690cfb23c9c` |
+| 2 | `instance` | [quotientStructure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/Quotients.lean/declarations/quotientstructure.md) | 44 | `declaration-track:37010dc7585cb71bfb042e9d2dcd81201c9b6a86a25b2b1d3a0c1eb5fa6318f4` |
+| 3 | `theorem` | [funMap_quotient_mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/Quotients.lean/declarations/funmap-quotient-mk.md) | 52 | `result-track:edbc50f08804fd44f3dcdf89b67a673011e9ef266a960f66dc1a3f2df4a373d5` |
+| 4 | `theorem` | [relMap_quotient_mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/Quotients.lean/declarations/relmap-quotient-mk.md) | 59 | `result-track:9e9d7c75257b70780e4afa9d4042dc980244a97b84a29cd7587d4480a9f58e00` |
+| 5 | `theorem` | [Term.realize_quotient_mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/Quotients.lean/declarations/term-realize-quotient-mk.md) | 66 | `result-track:77c7ae849a58b962ab78f4050365f1495ac5889c0e640dff13b2103ca534c104` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

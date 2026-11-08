@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AB8b65d63483a.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AB8b65d63483a.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AB8b65d63483a.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AB8b65d63483a.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,7 +62,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dirichletEnergy_zero_of_allDegreeSutured](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AB8b65d63483a.lean/declarations/dirichletenergy-zero-of-alldegreesutured.md) | 20 | `result-track:58f3ffa0e14d9d6363de9f2c19cd270accad48a7ade645ddf23d2128f352dfcf` |
+| 1 | `theorem` | [dirichletEnergy_zero_of_allDegreeSutured](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AB8b65d63483a.lean/declarations/dirichletenergy-zero-of-alldegreesutured.md) | 20 | `result-track:58f3ffa0e14d9d6363de9f2c19cd270accad48a7ade645ddf23d2128f352dfcf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EncoderImageEquivalence.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EncoderImageEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EncoderImageEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EncoderImageEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `FilesystemCodec.FieldRows` — import line 15; external provider; requires a separately pinned dependency.
-- [`GRWTSK.CombinatoricsAndDiscreteMathematics.CodingTheory.PacketFraming.Variant82dd668c.LosslessPacketCodec`](../../../../../Combinatorics/LosslessPacketCodec.lean/index.md) — import line 17; pinned internal source present.
+- [`GRWTSK.CombinatoricsAndDiscreteMathematics.CodingTheory.PacketFraming.Variant82dd668c.LosslessPacketCodec`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LosslessPacketCodec.lean/index.md) — import line 17; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ValidPacket](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EncoderImageEquivalence.lean/declarations/validpacket.md) | 42 | `declaration-track:a2fddb7bf803aac8c0cb5a20ac3f66bd15249900e85db5aa640ff472df2357d3` |
-| 2 | `def` | [ValidPacketType](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EncoderImageEquivalence.lean/declarations/validpackettype.md) | 49 | `declaration-track:8ba5d4e29a395f2b20264af45332f72a0de52f6e4c7584526a5fbe948582b183` |
-| 3 | `def` | [snapshotEquivValidPacket](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EncoderImageEquivalence.lean/declarations/snapshotequivvalidpacket.md) | 59 | `declaration-track:8c7c8b1d1631f1fc75dc57372532d8bcdb35ee8cfb0e038a7c9d07f2781a8b0b` |
+| 1 | `def` | [ValidPacket](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EncoderImageEquivalence.lean/declarations/validpacket.md) | 42 | `declaration-track:a2fddb7bf803aac8c0cb5a20ac3f66bd15249900e85db5aa640ff472df2357d3` |
+| 2 | `def` | [ValidPacketType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EncoderImageEquivalence.lean/declarations/validpackettype.md) | 49 | `declaration-track:8ba5d4e29a395f2b20264af45332f72a0de52f6e4c7584526a5fbe948582b183` |
+| 3 | `def` | [snapshotEquivValidPacket](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EncoderImageEquivalence.lean/declarations/snapshotequivvalidpacket.md) | 59 | `declaration-track:8c7c8b1d1631f1fc75dc57372532d8bcdb35ee8cfb0e038a7c9d07f2781a8b0b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

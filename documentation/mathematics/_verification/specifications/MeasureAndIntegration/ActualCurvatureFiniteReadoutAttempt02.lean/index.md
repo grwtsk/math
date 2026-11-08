@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [gridPoint](../../../../MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/gridpoint.md) | 16 | `declaration-track:18ff2748c0f426f270144b8be87b3c63ce44120cb3ac5016a3cff7bccfbdb1bb` |
-| 2 | `theorem` | [gridPoint_zero](../../../../MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/gridpoint-zero.md) | 18 | `result-track:e8c0204cad9e867e4afa63c2453877163596e71305e2a660e5ae0134ded65248` |
-| 3 | `theorem` | [gridPoint_upper](../../../../MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/gridpoint-upper.md) | 21 | `result-track:4f0729458bf53a5df83abceed7c393d937d906b68b50d3233f9b99bb483ec45a` |
-| 4 | `theorem` | [gridPoint_step_pos](../../../../MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/gridpoint-step-pos.md) | 26 | `result-track:ee09c5db384ab726cbd19fb6bd7614410f6bdc4b8630060c0838d0140db926d7` |
-| 5 | `theorem` | [leftGridSample_eq_on_cell](../../../../MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/leftgridsample-eq-on-cell.md) | 34 | `result-track:a96b5e636c28701715994bcab0b789141814b698832595fa69093d40d6a870a7` |
-| 6 | `theorem` | [actual_curvature_cell_FTC](../../../../MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/actual-curvature-cell-ftc.md) | 55 | `result-track:654962f3fb2b1b60590a4f7958e2b0b4cad7d72aa6d713925c98b823a62a8708` |
-| 7 | `theorem` | [actual_grid_cell_integral](../../../../MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/actual-grid-cell-integral.md) | 60 | `result-track:42cf5900395e02f114c9daee40aca9bf6639e5bc3c2c8596d34dd6785781aa82` |
-| 8 | `theorem` | [sampled_grid_cell_intervalIntegrable](../../../../MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/sampled-grid-cell-intervalintegrable.md) | 77 | `result-track:0d5775fea87ee8a275df2b6f4067e5f0c57fee484a9781f43e20eff2311c9bcb` |
-| 9 | `def` | [finiteCurvatureReadout](../../../../MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/finitecurvaturereadout.md) | 91 | `declaration-track:8a956491912a17f8e76c4dd9a8b22bbe605c0ccea22d8bf4c94ec6b7fbc45aeb` |
-| 10 | `theorem` | [sampled_grid_eq_finite](../../../../MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/sampled-grid-eq-finite.md) | 97 | `result-track:6d54fb097b67b85459d298e00c54972b2406b1954eca1edf8697a0a02e18ab2b` |
+| 1 | `def` | [gridPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/gridpoint.md) | 16 | `declaration-track:18ff2748c0f426f270144b8be87b3c63ce44120cb3ac5016a3cff7bccfbdb1bb` |
+| 2 | `theorem` | [gridPoint_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/gridpoint-zero.md) | 18 | `result-track:e8c0204cad9e867e4afa63c2453877163596e71305e2a660e5ae0134ded65248` |
+| 3 | `theorem` | [gridPoint_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/gridpoint-upper.md) | 21 | `result-track:4f0729458bf53a5df83abceed7c393d937d906b68b50d3233f9b99bb483ec45a` |
+| 4 | `theorem` | [gridPoint_step_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/gridpoint-step-pos.md) | 26 | `result-track:ee09c5db384ab726cbd19fb6bd7614410f6bdc4b8630060c0838d0140db926d7` |
+| 5 | `theorem` | [leftGridSample_eq_on_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/leftgridsample-eq-on-cell.md) | 34 | `result-track:a96b5e636c28701715994bcab0b789141814b698832595fa69093d40d6a870a7` |
+| 6 | `theorem` | [actual_curvature_cell_FTC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/actual-curvature-cell-ftc.md) | 55 | `result-track:654962f3fb2b1b60590a4f7958e2b0b4cad7d72aa6d713925c98b823a62a8708` |
+| 7 | `theorem` | [actual_grid_cell_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/actual-grid-cell-integral.md) | 60 | `result-track:42cf5900395e02f114c9daee40aca9bf6639e5bc3c2c8596d34dd6785781aa82` |
+| 8 | `theorem` | [sampled_grid_cell_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/sampled-grid-cell-intervalintegrable.md) | 77 | `result-track:0d5775fea87ee8a275df2b6f4067e5f0c57fee484a9781f43e20eff2311c9bcb` |
+| 9 | `def` | [finiteCurvatureReadout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/finitecurvaturereadout.md) | 91 | `declaration-track:8a956491912a17f8e76c4dd9a8b22bbe605c0ccea22d8bf4c94ec6b7fbc45aeb` |
+| 10 | `theorem` | [sampled_grid_eq_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCurvatureFiniteReadoutAttempt02.lean/declarations/sampled-grid-eq-finite.md) | 97 | `result-track:6d54fb097b67b85459d298e00c54972b2406b1954eca1edf8697a0a02e18ab2b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

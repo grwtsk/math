@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveShrinkableMutualTestNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveShrinkableMutualTestNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveShrinkableMutualTestNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveShrinkableMutualTestNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Even](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveShrinkableMutualTestNamespaced.lean/declarations/even.md) | 17 | `declaration-track:9324590c24dbe7a292f6f2cb9ad8f094aabd88ed47c33cb31323bf65401f2812` |
-| 2 | `inductive` | [Odd](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveShrinkableMutualTestNamespaced.lean/declarations/odd.md) | 21 | `declaration-track:ea9d14dadbb8af98ae4f0d508d51b486537d79cb31077bd18f544005589ed64e` |
-| 3 | `inductive` | [Expr](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveShrinkableMutualTestNamespaced.lean/declarations/expr.md) | 28 | `declaration-track:8c6129e0b2ad6fc7f9ad0246e2538cc3d0a883761514ad6813c21f693d13d130` |
+| 1 | `inductive` | [Even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveShrinkableMutualTestNamespaced.lean/declarations/even.md) | 17 | `declaration-track:9324590c24dbe7a292f6f2cb9ad8f094aabd88ed47c33cb31323bf65401f2812` |
+| 2 | `inductive` | [Odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveShrinkableMutualTestNamespaced.lean/declarations/odd.md) | 21 | `declaration-track:ea9d14dadbb8af98ae4f0d508d51b486537d79cb31077bd18f544005589ed64e` |
+| 3 | `inductive` | [Expr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DeriveShrinkableMutualTestNamespaced.lean/declarations/expr.md) | 28 | `declaration-track:8c6129e0b2ad6fc7f9ad0246e2538cc3d0a883761514ad6813c21f693d13d130` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

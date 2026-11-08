@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryEpiMono.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryEpiMono.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryEpiMono.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryEpiMono.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryEpiMono.lean/declarations/instance-source-edition-3.md) | 31 | `declaration-track:8e7ad6544e214413f444aa5c67d26196f114372c1b933d1e2d9cb446eea2dd15` |
-| 2 | `lemma` | [NatTrans.mono_iff_mono_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryEpiMono.lean/declarations/nattrans-mono-iff-mono-app.md) | 34 | `result-track:8284cf6e3b323364c26da0484289c7b07a091aa70ef59eb2f7a9fc1b88c9a407` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryEpiMono.lean/declarations/instance-source-edition-4.md) | 37 | `declaration-track:a38cfea301e573f6eb8af3d50b3dc92f0223a1f7067f91057729ed1026837825` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryEpiMono.lean/declarations/instance-source-edition-2.md) | 48 | `declaration-track:77b76a2772b43869a0adf18a0c97451323927f8a60ad9c06dbbb07a68e1f39a8` |
-| 5 | `lemma` | [NatTrans.epi_iff_epi_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryEpiMono.lean/declarations/nattrans-epi-iff-epi-app.md) | 51 | `result-track:f3db4b4961b8db114f847d7eca0f9dc3eb330326299cf71caa3bf80852b9c878` |
-| 6 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryEpiMono.lean/declarations/instance.md) | 54 | `declaration-track:1e5e2c9861e30e70640ebc16ef4a1ffff7097dde3f8a5e66767f0635a7aa0e4c` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryEpiMono.lean/declarations/instance-source-edition-3.md) | 31 | `declaration-track:8e7ad6544e214413f444aa5c67d26196f114372c1b933d1e2d9cb446eea2dd15` |
+| 2 | `lemma` | [NatTrans.mono_iff_mono_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryEpiMono.lean/declarations/nattrans-mono-iff-mono-app.md) | 34 | `result-track:8284cf6e3b323364c26da0484289c7b07a091aa70ef59eb2f7a9fc1b88c9a407` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryEpiMono.lean/declarations/instance-source-edition-4.md) | 37 | `declaration-track:a38cfea301e573f6eb8af3d50b3dc92f0223a1f7067f91057729ed1026837825` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryEpiMono.lean/declarations/instance-source-edition-2.md) | 48 | `declaration-track:77b76a2772b43869a0adf18a0c97451323927f8a60ad9c06dbbb07a68e1f39a8` |
+| 5 | `lemma` | [NatTrans.epi_iff_epi_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryEpiMono.lean/declarations/nattrans-epi-iff-epi-app.md) | 51 | `result-track:f3db4b4961b8db114f847d7eca0f9dc3eb330326299cf71caa3bf80852b9c878` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryEpiMono.lean/declarations/instance.md) | 54 | `declaration-track:1e5e2c9861e30e70640ebc16ef4a1ffff7097dde3f8a5e66767f0635a7aa0e4c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

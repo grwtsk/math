@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `builtin_initialize` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrNamespacedPublic.lean/declarations/builtin-initialize.md) | 24 | `declaration-track:22fcd56ba31da64cdad0ff744115cc12f51dbd9b167931893bae971bf1ad4cd0` |
-| 2 | `def` | [addNoncomputable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrNamespacedPublic.lean/declarations/addnoncomputable.md) | 27 | `declaration-track:0db9dffad06e809ae3ae751a3affff69f6bec31c44f6f765277c8e72b57fc177` |
-| 3 | `def` | [isNoncomputable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrNamespacedPublic.lean/declarations/isnoncomputable.md) | 33 | `declaration-track:ab06b3648312752502d80783dfdd285318a3c45284d798ae2e3094b23d798e18` |
+| 1 | `builtin_initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrNamespacedPublic.lean/declarations/builtin-initialize.md) | 24 | `declaration-track:22fcd56ba31da64cdad0ff744115cc12f51dbd9b167931893bae971bf1ad4cd0` |
+| 2 | `def` | [addNoncomputable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrNamespacedPublic.lean/declarations/addnoncomputable.md) | 27 | `declaration-track:0db9dffad06e809ae3ae751a3affff69f6bec31c44f6f765277c8e72b57fc177` |
+| 3 | `def` | [isNoncomputable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrNamespacedPublic.lean/declarations/isnoncomputable.md) | 33 | `declaration-track:ab06b3648312752502d80783dfdd285318a3c45284d798ae2e3094b23d798e18` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

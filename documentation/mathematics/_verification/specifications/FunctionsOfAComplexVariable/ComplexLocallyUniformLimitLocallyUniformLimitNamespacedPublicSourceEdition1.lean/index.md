@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ComplexLocallyUniformLimitLocallyUniformLimitNamespacedPublicSourceEdition1.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ComplexLocallyUniformLimitLocallyUniformLimitNamespacedPublicSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexLocallyUniformLimitLocallyUniformLimitNamespacedPublicSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexLocallyUniformLimitLocallyUniformLimitNamespacedPublicSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Complex Locally Uniform Limit Locally Uniform Limit Namespaced Public Source Edition1](../../../../FunctionsOfAComplexVariable/ComplexLocallyUniformLimitLocallyUniformLimitNamespacedPublicSourceEdition1.lean/declarations/root-grwtsk-analysis-complexanalysis-roottendstouniformlyonmulleftbounde.md) | 32 | `result-track:31e92319d7f80c02402f0373d99126630e4367b4ee240b5f3f4f71b15f4a4403` |
+| 1 | `theorem` | [Complex Locally Uniform Limit Locally Uniform Limit Namespaced Public Source Edition1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexLocallyUniformLimitLocallyUniformLimitNamespacedPublicSourceEdition1.lean/declarations/root-grwtsk-analysis-complexanalysis-roottendstouniformlyonmulleftbounde.md) | 32 | `result-track:31e92319d7f80c02402f0373d99126630e4367b4ee240b5f3f4f71b15f4a4403` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

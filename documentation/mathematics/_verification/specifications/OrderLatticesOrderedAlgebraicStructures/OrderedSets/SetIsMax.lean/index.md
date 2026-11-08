@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetIsMax.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetIsMax.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetIsMax.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetIsMax.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [not_isMax_coe](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetIsMax.lean/declarations/not-ismax-coe.md) | 23 | `result-track:1c566f84c2cc6b5f4a53f557476d8219da1da835ffaad0e6f2811ff2e08222b9` |
-| 2 | `lemma` | [not_isMin_coe](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetIsMax.lean/declarations/not-ismin-coe.md) | 27 | `result-track:1bcbd1a93a0966026d8adfa8575b79347d95e8b246d514bd1614a5a09471e76f` |
+| 1 | `lemma` | [not_isMax_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetIsMax.lean/declarations/not-ismax-coe.md) | 23 | `result-track:1c566f84c2cc6b5f4a53f557476d8219da1da835ffaad0e6f2811ff2e08222b9` |
+| 2 | `lemma` | [not_isMin_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetIsMax.lean/declarations/not-ismin-coe.md) | 27 | `result-track:1bcbd1a93a0966026d8adfa8575b79347d95e8b246d514bd1614a5a09471e76f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

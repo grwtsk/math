@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineNamespacedEdition2.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sharpBaselineResidualBudget](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineNamespacedEdition2.lean/declarations/sharpbaselineresidualbudget.md) | 24 | `declaration-track:8934a84464fc1e73e472c4c50d2d7bb87a98624f353b0a9864fba514eadd110e` |
-| 2 | `theorem` | [residual_tail_of_baseline](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineNamespacedEdition2.lean/declarations/residual-tail-of-baseline.md) | 27 | `result-track:3b85fd9377e93d595129689639141ad6dd478a8325e650d1397c2c35644e1b6b` |
-| 3 | `theorem` | [all_real_lower_of_baseline](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineNamespacedEdition2.lean/declarations/all-real-lower-of-baseline.md) | 38 | `result-track:b5cab6baea6d650f6e6c3e5b426e2306c3effd7e74da93c77a06fad356ec87d6` |
-| 4 | `theorem` | [estimate_of_baseline](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineNamespacedEdition2.lean/declarations/estimate-of-baseline.md) | 56 | `result-track:1e89b037b523692115ef775e9d6d8f687e87de9a6717f1734693336c4a3bae7f` |
+| 1 | `def` | [sharpBaselineResidualBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineNamespacedEdition2.lean/declarations/sharpbaselineresidualbudget.md) | 24 | `declaration-track:8934a84464fc1e73e472c4c50d2d7bb87a98624f353b0a9864fba514eadd110e` |
+| 2 | `theorem` | [residual_tail_of_baseline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineNamespacedEdition2.lean/declarations/residual-tail-of-baseline.md) | 27 | `result-track:3b85fd9377e93d595129689639141ad6dd478a8325e650d1397c2c35644e1b6b` |
+| 3 | `theorem` | [all_real_lower_of_baseline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineNamespacedEdition2.lean/declarations/all-real-lower-of-baseline.md) | 38 | `result-track:b5cab6baea6d650f6e6c3e5b426e2306c3effd7e74da93c77a06fad356ec87d6` |
+| 4 | `theorem` | [estimate_of_baseline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineNamespacedEdition2.lean/declarations/estimate-of-baseline.md) | 56 | `result-track:1e89b037b523692115ef775e9d6d8f687e87de9a6717f1734693336c4a3bae7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

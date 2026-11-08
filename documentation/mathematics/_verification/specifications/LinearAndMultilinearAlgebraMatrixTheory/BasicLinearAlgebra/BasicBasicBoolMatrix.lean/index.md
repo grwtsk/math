@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicBoolMatrix.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicBoolMatrix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicBoolMatrix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicBoolMatrix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [BoolMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicBoolMatrix.lean/declarations/boolmatrix.md) | 11 | `declaration-track:f3fb66121da50b1db044187cd4a0ac47c553e5c8768e30d39a0fd7f8b920fb6c` |
-| 2 | `def` | [BoolMatrix.entry](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicBoolMatrix.lean/declarations/boolmatrix-entry.md) | 15 | `declaration-track:c84ccd1dd2fe247f2aaf69ad7ad1ddc3c3959c29ef305e65b93fa733ae0fc03d` |
-| 3 | `def` | [BoolMatrix.row](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicBoolMatrix.lean/declarations/boolmatrix-row.md) | 23 | `declaration-track:42a75524e48b73fdbb0d7d85598594dcd5a54b84756ee6f17587d3419f220efa` |
-| 4 | `def` | [BoolMatrix.col](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicBoolMatrix.lean/declarations/boolmatrix-col.md) | 30 | `declaration-track:e806f6fe0f02d110ed2520e16814b96e778f95672fd9005ba90d99e3395c98d8` |
-| 5 | `theorem` | [BoolMatrix.entry_eq_false_or_true](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicBoolMatrix.lean/declarations/boolmatrix-entry-eq-false-or-true.md) | 37 | `result-track:3f7e4f674bea775e1fe1760a1e07c76a779f0abe51835f0f55a4d3a043f814a0` |
+| 1 | `abbrev` | [BoolMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicBoolMatrix.lean/declarations/boolmatrix.md) | 11 | `declaration-track:f3fb66121da50b1db044187cd4a0ac47c553e5c8768e30d39a0fd7f8b920fb6c` |
+| 2 | `def` | [BoolMatrix.entry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicBoolMatrix.lean/declarations/boolmatrix-entry.md) | 15 | `declaration-track:c84ccd1dd2fe247f2aaf69ad7ad1ddc3c3959c29ef305e65b93fa733ae0fc03d` |
+| 3 | `def` | [BoolMatrix.row](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicBoolMatrix.lean/declarations/boolmatrix-row.md) | 23 | `declaration-track:42a75524e48b73fdbb0d7d85598594dcd5a54b84756ee6f17587d3419f220efa` |
+| 4 | `def` | [BoolMatrix.col](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicBoolMatrix.lean/declarations/boolmatrix-col.md) | 30 | `declaration-track:e806f6fe0f02d110ed2520e16814b96e778f95672fd9005ba90d99e3395c98d8` |
+| 5 | `theorem` | [BoolMatrix.entry_eq_false_or_true](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicBoolMatrix.lean/declarations/boolmatrix-entry-eq-false-or-true.md) | 37 | `result-track:3f7e4f674bea775e1fe1760a1e07c76a779f0abe51835f0f55a4d3a043f814a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

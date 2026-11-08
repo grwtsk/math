@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteGram](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition2.lean/declarations/finitegram.md) | 31 | `declaration-track:1c59c056b3a05ba1cb171e3f0537bd676b8d72cbb3d46494139d8952af629463` |
-| 2 | `theorem` | [finiteGram_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition2.lean/declarations/finitegram-apply.md) | 39 | `result-track:34b0e00e67dbb528ed3e4090ab0935981deae4743e121587d5a685098e809214` |
-| 3 | `theorem` | [finiteGram_hermitian](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition2.lean/declarations/finitegram-hermitian.md) | 49 | `result-track:6a62b629e098e5b13e8e53f90a56bf633ba555744c37ea50597e853e442e20fb` |
-| 4 | `theorem` | [finiteGram_psd](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition2.lean/declarations/finitegram-psd.md) | 58 | `result-track:d9c69bdd6203b91b1dc5a00c1aa29ae5a802feb9db3c2b585a314b9cf2f14b8c` |
-| 5 | `structure` | [GramFactorCertificate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition2.lean/declarations/gramfactorcertificate.md) | 68 | `declaration-track:b08164461b705863bc03116191eafd557807561caa5258c4d1d5b9778a0fd212` |
-| 6 | `theorem` | [column_inner_eq_kernel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition2.lean/declarations/column-inner-eq-kernel.md) | 88 | `result-track:52fa9da43dc9563706820acf5a0d4caaa5d222a6f9f9caadd2d7c4d1598ee72d` |
+| 1 | `def` | [finiteGram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition2.lean/declarations/finitegram.md) | 31 | `declaration-track:1c59c056b3a05ba1cb171e3f0537bd676b8d72cbb3d46494139d8952af629463` |
+| 2 | `theorem` | [finiteGram_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition2.lean/declarations/finitegram-apply.md) | 39 | `result-track:34b0e00e67dbb528ed3e4090ab0935981deae4743e121587d5a685098e809214` |
+| 3 | `theorem` | [finiteGram_hermitian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition2.lean/declarations/finitegram-hermitian.md) | 49 | `result-track:6a62b629e098e5b13e8e53f90a56bf633ba555744c37ea50597e853e442e20fb` |
+| 4 | `theorem` | [finiteGram_psd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition2.lean/declarations/finitegram-psd.md) | 58 | `result-track:d9c69bdd6203b91b1dc5a00c1aa29ae5a802feb9db3c2b585a314b9cf2f14b8c` |
+| 5 | `structure` | [GramFactorCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition2.lean/declarations/gramfactorcertificate.md) | 68 | `declaration-track:b08164461b705863bc03116191eafd557807561caa5258c4d1d5b9778a0fd212` |
+| 6 | `theorem` | [column_inner_eq_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition2.lean/declarations/column-inner-eq-kernel.md) | 88 | `result-track:52fa9da43dc9563706820acf5a0d4caaa5d222a6f9f9caadd2d7c4d1598ee72d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

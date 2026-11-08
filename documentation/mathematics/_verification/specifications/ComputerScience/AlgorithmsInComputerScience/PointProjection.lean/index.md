@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PointProjection.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PointProjection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointProjection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointProjection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [PointOmissionReason](../../../../../ComputerScience/AlgorithmsInComputerScience/PointProjection.lean/declarations/pointomissionreason.md) | 14 | `declaration-track:f9066f821253514d905dfb9b5e4bf683abe0427d7570cc9c6982db1df59542d8` |
-| 2 | `structure` | [OmittedPoint](../../../../../ComputerScience/AlgorithmsInComputerScience/PointProjection.lean/declarations/omittedpoint.md) | 22 | `declaration-track:19bed86187633ce4fe1e53c34b72e45e6a6bf38b0852284575b842349aba955b` |
-| 3 | `structure` | [PointProjection](../../../../../ComputerScience/AlgorithmsInComputerScience/PointProjection.lean/declarations/pointprojection.md) | 28 | `declaration-track:df2c6f29c27a36b2e24126051ae25f10c9a7d9d94bc01d57f43976559d3e356a` |
-| 4 | `def` | [PointProjection.BoundTo](../../../../../ComputerScience/AlgorithmsInComputerScience/PointProjection.lean/declarations/pointprojection-boundto.md) | 51 | `declaration-track:30d1d36e37e05fed6d151b1544f97dca34d47b0ba2c09f8e2d7e344c3ae83e3e` |
-| 5 | `structure` | [PointProjectionReceipt](../../../../../ComputerScience/AlgorithmsInComputerScience/PointProjection.lean/declarations/pointprojectionreceipt.md) | 60 | `declaration-track:15647677e30e02106c5403a0db168421384546fceaf6498e66e74c46d7a7b972` |
-| 6 | `theorem` | [PointProjection.no_silent_point](../../../../../ComputerScience/AlgorithmsInComputerScience/PointProjection.lean/declarations/pointprojection-no-silent-point.md) | 69 | `result-track:ff74816c909f8944a0b45b2910dea3c5ddcf417450b9d06bd9b673cbc4c52b09` |
+| 1 | `inductive` | [PointOmissionReason](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointProjection.lean/declarations/pointomissionreason.md) | 14 | `declaration-track:f9066f821253514d905dfb9b5e4bf683abe0427d7570cc9c6982db1df59542d8` |
+| 2 | `structure` | [OmittedPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointProjection.lean/declarations/omittedpoint.md) | 22 | `declaration-track:19bed86187633ce4fe1e53c34b72e45e6a6bf38b0852284575b842349aba955b` |
+| 3 | `structure` | [PointProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointProjection.lean/declarations/pointprojection.md) | 28 | `declaration-track:df2c6f29c27a36b2e24126051ae25f10c9a7d9d94bc01d57f43976559d3e356a` |
+| 4 | `def` | [PointProjection.BoundTo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointProjection.lean/declarations/pointprojection-boundto.md) | 51 | `declaration-track:30d1d36e37e05fed6d151b1544f97dca34d47b0ba2c09f8e2d7e344c3ae83e3e` |
+| 5 | `structure` | [PointProjectionReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointProjection.lean/declarations/pointprojectionreceipt.md) | 60 | `declaration-track:15647677e30e02106c5403a0db168421384546fceaf6498e66e74c46d7a7b972` |
+| 6 | `theorem` | [PointProjection.no_silent_point](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointProjection.lean/declarations/pointprojection-no-silent-point.md) | 69 | `result-track:ff74816c909f8944a0b45b2910dea3c5ddcf417450b9d06bd9b673cbc4c52b09` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

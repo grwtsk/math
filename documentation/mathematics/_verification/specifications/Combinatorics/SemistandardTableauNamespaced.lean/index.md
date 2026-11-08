@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SemistandardTableauNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/SemistandardTableauNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SemistandardTableauNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SemistandardTableauNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,21 +57,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SemistandardYoungTableau](../../../../Combinatorics/SemistandardTableauNamespaced.lean/declarations/semistandardyoungtableau.md) | 60 | `declaration-track:fb0ce0b817b0c26e31dbca8692b19f257984930e3563a54d1fe1d27ef6b67e69` |
-| 2 | `instance` | [instFunLike](../../../../Combinatorics/SemistandardTableauNamespaced.lean/declarations/instfunlike.md) | 72 | `declaration-track:13e2e09a62d5785c2a4ca795b3882ce6085d14f68330a1b732c6879038c9fc7a` |
-| 3 | `theorem` | [to_fun_eq_coe](../../../../Combinatorics/SemistandardTableauNamespaced.lean/declarations/to-fun-eq-coe.md) | 80 | `result-track:fd9999762b11609525efd12d0973fc00be019f43ae85d098f6c27e39cd023c78` |
-| 4 | `theorem` | [ext](../../../../Combinatorics/SemistandardTableauNamespaced.lean/declarations/ext.md) | 85 | `result-track:59150471b0f9363ee1be2515e2fdd93764d9f0f50456888c8fc0b964c68d2550` |
-| 5 | `def` | [copy](../../../../Combinatorics/SemistandardTableauNamespaced.lean/declarations/copy.md) | 93 | `declaration-track:7049514ccf195514446adff91b546699c9d92665e7769ea5938e59aca8d5a514` |
-| 6 | `theorem` | [coe_copy](../../../../Combinatorics/SemistandardTableauNamespaced.lean/declarations/coe-copy.md) | 101 | `result-track:915817ca496641b03789388ce724dcc9c0647fd41a7c913c19a6365f6c928954` |
-| 7 | `theorem` | [copy_eq](../../../../Combinatorics/SemistandardTableauNamespaced.lean/declarations/copy-eq.md) | 105 | `result-track:ed2aa78eb4b1ce6cd9c4c609b898d816df78bec93aff44ed740720f5cf94fd94` |
-| 8 | `theorem` | [row_weak](../../../../Combinatorics/SemistandardTableauNamespaced.lean/declarations/row-weak.md) | 109 | `result-track:51411c1bfd69d49a58e5c203f3f94118b6b701e558451c77747c0fc03b8c86ce` |
-| 9 | `theorem` | [col_strict](../../../../Combinatorics/SemistandardTableauNamespaced.lean/declarations/col-strict.md) | 113 | `result-track:d0128c58299b44d6f78f9222889d73e69c162db8775c579baa5feeb9afa125b0` |
-| 10 | `theorem` | [zeros](../../../../Combinatorics/SemistandardTableauNamespaced.lean/declarations/zeros.md) | 117 | `result-track:7651dcb733a47e07cb558543377df1e6b7a4eb2a5a4dc8b0c1c17eac16602669` |
-| 11 | `theorem` | [row_weak_of_le](../../../../Combinatorics/SemistandardTableauNamespaced.lean/declarations/row-weak-of-le.md) | 121 | `result-track:174f4187517d12f6f0c7eee6b515e8197dffa78d6c08a7b4ba0aa0585e6ee007` |
-| 12 | `theorem` | [col_weak](../../../../Combinatorics/SemistandardTableauNamespaced.lean/declarations/col-weak.md) | 127 | `result-track:9c81cfb7bf7a4d5f813492bb4920b001e932c028337932f93ec6f1c79b52c9a0` |
-| 13 | `def` | [highestWeight](../../../../Combinatorics/SemistandardTableauNamespaced.lean/declarations/highestweight.md) | 134 | `declaration-track:b7e808139f55eef21b729205cc4099c6ab071b2e6956470d9bf0ae98b9326be7` |
-| 14 | `theorem` | [highestWeight_apply](../../../../Combinatorics/SemistandardTableauNamespaced.lean/declarations/highestweight-apply.md) | 143 | `result-track:14dde6faffbf838aae9c9012ac30aa16be47b733cd1c1c60cd55aab849d411ef` |
-| 15 | `instance` | [(anonymous)](../../../../Combinatorics/SemistandardTableauNamespaced.lean/declarations/instance.md) | 147 | `declaration-track:cc3ad4c66d712bb2347c34d8d27bb7b6b06a60500fb675743178ed11e82d71ab` |
+| 1 | `structure` | [SemistandardYoungTableau](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SemistandardTableauNamespaced.lean/declarations/semistandardyoungtableau.md) | 60 | `declaration-track:fb0ce0b817b0c26e31dbca8692b19f257984930e3563a54d1fe1d27ef6b67e69` |
+| 2 | `instance` | [instFunLike](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SemistandardTableauNamespaced.lean/declarations/instfunlike.md) | 72 | `declaration-track:13e2e09a62d5785c2a4ca795b3882ce6085d14f68330a1b732c6879038c9fc7a` |
+| 3 | `theorem` | [to_fun_eq_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SemistandardTableauNamespaced.lean/declarations/to-fun-eq-coe.md) | 80 | `result-track:fd9999762b11609525efd12d0973fc00be019f43ae85d098f6c27e39cd023c78` |
+| 4 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SemistandardTableauNamespaced.lean/declarations/ext.md) | 85 | `result-track:59150471b0f9363ee1be2515e2fdd93764d9f0f50456888c8fc0b964c68d2550` |
+| 5 | `def` | [copy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SemistandardTableauNamespaced.lean/declarations/copy.md) | 93 | `declaration-track:7049514ccf195514446adff91b546699c9d92665e7769ea5938e59aca8d5a514` |
+| 6 | `theorem` | [coe_copy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SemistandardTableauNamespaced.lean/declarations/coe-copy.md) | 101 | `result-track:915817ca496641b03789388ce724dcc9c0647fd41a7c913c19a6365f6c928954` |
+| 7 | `theorem` | [copy_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SemistandardTableauNamespaced.lean/declarations/copy-eq.md) | 105 | `result-track:ed2aa78eb4b1ce6cd9c4c609b898d816df78bec93aff44ed740720f5cf94fd94` |
+| 8 | `theorem` | [row_weak](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SemistandardTableauNamespaced.lean/declarations/row-weak.md) | 109 | `result-track:51411c1bfd69d49a58e5c203f3f94118b6b701e558451c77747c0fc03b8c86ce` |
+| 9 | `theorem` | [col_strict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SemistandardTableauNamespaced.lean/declarations/col-strict.md) | 113 | `result-track:d0128c58299b44d6f78f9222889d73e69c162db8775c579baa5feeb9afa125b0` |
+| 10 | `theorem` | [zeros](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SemistandardTableauNamespaced.lean/declarations/zeros.md) | 117 | `result-track:7651dcb733a47e07cb558543377df1e6b7a4eb2a5a4dc8b0c1c17eac16602669` |
+| 11 | `theorem` | [row_weak_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SemistandardTableauNamespaced.lean/declarations/row-weak-of-le.md) | 121 | `result-track:174f4187517d12f6f0c7eee6b515e8197dffa78d6c08a7b4ba0aa0585e6ee007` |
+| 12 | `theorem` | [col_weak](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SemistandardTableauNamespaced.lean/declarations/col-weak.md) | 127 | `result-track:9c81cfb7bf7a4d5f813492bb4920b001e932c028337932f93ec6f1c79b52c9a0` |
+| 13 | `def` | [highestWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SemistandardTableauNamespaced.lean/declarations/highestweight.md) | 134 | `declaration-track:b7e808139f55eef21b729205cc4099c6ab071b2e6956470d9bf0ae98b9326be7` |
+| 14 | `theorem` | [highestWeight_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SemistandardTableauNamespaced.lean/declarations/highestweight-apply.md) | 143 | `result-track:14dde6faffbf838aae9c9012ac30aa16be47b733cd1c1c60cd55aab849d411ef` |
+| 15 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SemistandardTableauNamespaced.lean/declarations/instance.md) | 147 | `declaration-track:cc3ad4c66d712bb2347c34d8d27bb7b6b06a60500fb675743178ed11e82d71ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

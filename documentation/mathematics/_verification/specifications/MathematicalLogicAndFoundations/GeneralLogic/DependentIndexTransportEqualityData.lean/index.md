@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentIndexTransportEqualityData.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentIndexTransportEqualityData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentIndexTransportEqualityData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentIndexTransportEqualityData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RodgersTaoKIndexTransport](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentIndexTransportEqualityData.lean/declarations/rodgerstaokindextransport.md) | 44 | `declaration-track:d1535802780d59471c17a22bc507f5d19d36cfa05514e77933b4f3c33eac9ec2` |
-| 2 | `theorem` | [rodgers_tao_transport_is_quasi_isomorphism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentIndexTransportEqualityData.lean/declarations/rodgers-tao-transport-is-quasi-isomorphism.md) | 53 | `result-track:c5ac9cdf27191d26a950bb3e3936eb8e50555c6085e3d1d1ab5407a2117b7c5b` |
-| 3 | `theorem` | [rodgers_tao_transport_preserves_euler](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentIndexTransportEqualityData.lean/declarations/rodgers-tao-transport-preserves-euler.md) | 59 | `result-track:ac337a633684bddc4b431c5117f41f5efe854d5c19bc3b8b40e7f431c3cb0dff` |
-| 4 | `theorem` | [rodgers_tao_transport_preserves_k_index](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentIndexTransportEqualityData.lean/declarations/rodgers-tao-transport-preserves-k-index.md) | 66 | `result-track:c873939187880f7ea8bf960f227460333b81d3411a5e8063d779c07de25d88e7` |
+| 1 | `structure` | [RodgersTaoKIndexTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentIndexTransportEqualityData.lean/declarations/rodgerstaokindextransport.md) | 44 | `declaration-track:d1535802780d59471c17a22bc507f5d19d36cfa05514e77933b4f3c33eac9ec2` |
+| 2 | `theorem` | [rodgers_tao_transport_is_quasi_isomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentIndexTransportEqualityData.lean/declarations/rodgers-tao-transport-is-quasi-isomorphism.md) | 53 | `result-track:c5ac9cdf27191d26a950bb3e3936eb8e50555c6085e3d1d1ab5407a2117b7c5b` |
+| 3 | `theorem` | [rodgers_tao_transport_preserves_euler](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentIndexTransportEqualityData.lean/declarations/rodgers-tao-transport-preserves-euler.md) | 59 | `result-track:ac337a633684bddc4b431c5117f41f5efe854d5c19bc3b8b40e7f431c3cb0dff` |
+| 4 | `theorem` | [rodgers_tao_transport_preserves_k_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentIndexTransportEqualityData.lean/declarations/rodgers-tao-transport-preserves-k-index.md) | 66 | `result-track:c873939187880f7ea8bf960f227460333b81d3411a5e8063d779c07de25d88e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

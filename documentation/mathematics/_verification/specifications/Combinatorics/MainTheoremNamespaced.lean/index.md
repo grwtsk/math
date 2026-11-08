@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/MainTheoremNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/MainTheoremNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MainTheoremNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MainTheoremNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [WeightedDecouplingInequality](../../../../Combinatorics/MainTheoremNamespaced.lean/declarations/weighteddecouplinginequality.md) | 16 | `declaration-track:cad080fad09f53c50c98ecd511036ec08c7f0d6f76033c5d772f42d9945c3e6b` |
-| 2 | `def` | [mainTheoremStatementSurface](../../../../Combinatorics/MainTheoremNamespaced.lean/declarations/maintheoremstatementsurface.md) | 23 | `declaration-track:1527fa4402b612d27b80cebf17458d591e5539494f3bdedfa2701b0121fc3ab0` |
-| 3 | `def` | [l2_decoupling_vanishing_curvature_finite_exceptional_set](../../../../Combinatorics/MainTheoremNamespaced.lean/declarations/l2-decoupling-vanishing-curvature-finite-exceptional-set.md) | 40 | `declaration-track:0b0b687c70582274ee7f95a9040818982c04449441ee356ab300b31152336dba` |
-| 4 | `theorem` | [main_theorem_surface_is_open_residue](../../../../Combinatorics/MainTheoremNamespaced.lean/declarations/main-theorem-surface-is-open-residue.md) | 52 | `result-track:289388e498cdff55b78446d5b303cd1a1a8849d1926bf1b1b45e38be3bd90a87` |
-| 5 | `theorem` | [main_theorem_surface_is_not_checked_proof](../../../../Combinatorics/MainTheoremNamespaced.lean/declarations/main-theorem-surface-is-not-checked-proof.md) | 56 | `result-track:2ba1b495d3abcd20d088a25fd6605a273a3ec5a77b3e830e3272bf33e1161165` |
+| 1 | `def` | [WeightedDecouplingInequality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MainTheoremNamespaced.lean/declarations/weighteddecouplinginequality.md) | 16 | `declaration-track:cad080fad09f53c50c98ecd511036ec08c7f0d6f76033c5d772f42d9945c3e6b` |
+| 2 | `def` | [mainTheoremStatementSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MainTheoremNamespaced.lean/declarations/maintheoremstatementsurface.md) | 23 | `declaration-track:1527fa4402b612d27b80cebf17458d591e5539494f3bdedfa2701b0121fc3ab0` |
+| 3 | `def` | [l2_decoupling_vanishing_curvature_finite_exceptional_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MainTheoremNamespaced.lean/declarations/l2-decoupling-vanishing-curvature-finite-exceptional-set.md) | 40 | `declaration-track:0b0b687c70582274ee7f95a9040818982c04449441ee356ab300b31152336dba` |
+| 4 | `theorem` | [main_theorem_surface_is_open_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MainTheoremNamespaced.lean/declarations/main-theorem-surface-is-open-residue.md) | 52 | `result-track:289388e498cdff55b78446d5b303cd1a1a8849d1926bf1b1b45e38be3bd90a87` |
+| 5 | `theorem` | [main_theorem_surface_is_not_checked_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MainTheoremNamespaced.lean/declarations/main-theorem-surface-is-not-checked-proof.md) | 56 | `result-track:2ba1b495d3abcd20d088a25fd6605a273a3ec5a77b3e830e3272bf33e1161165` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

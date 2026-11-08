@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenQuadratureGlobal`](../../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadratureGlobal.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenQuadratureGlobal`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadratureGlobal.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thinGreen_plus_centeredMobiusLog_eq_residual](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/declarations/thingreen-plus-centeredmobiuslog-eq-residual.md) | 17 | `result-track:c9c976cac8376d00536da27b88692e19859aa935053329d31b258d03303a5aea` |
-| 2 | `theorem` | [norm_thinGreen_plus_centeredMobiusLog_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/declarations/norm-thingreen-plus-centeredmobiuslog-le.md) | 25 | `result-track:85d9966002975082bc81f3603ac4647e5b081b28f5ee756b625af1f7884371c5` |
-| 3 | `def` | [nonzeroFourierHead](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/declarations/nonzerofourierhead.md) | 35 | `declaration-track:ada3fc72e63ac1ae4d84988e62e0a02712daedb9d17cf11cd58080f4e6cfcbcf` |
-| 4 | `def` | [centeredGreenComparisonHeadError](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/declarations/centeredgreencomparisonheaderror.md) | 39 | `declaration-track:9b7460ddd56448e637e02ff7018a050cde1599ced7155867e1ee86da0243f34b` |
-| 5 | `theorem` | [centeredGreenComparisonHeadError_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/declarations/centeredgreencomparisonheaderror-le.md) | 46 | `result-track:ae6f3306a39855b727439068788eae478faac6db0dee8be86751665f05ee6b2a` |
-| 6 | `theorem` | [card_nonzeroFourierHead](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/declarations/card-nonzerofourierhead.md) | 82 | `result-track:1b6a0571f71e97615925a71dbddc40b3eb4051b5b130e5b95444480d8960d53d` |
-| 7 | `theorem` | [centeredGreenComparisonHeadError_le_explicit](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/declarations/centeredgreencomparisonheaderror-le-explicit.md) | 95 | `result-track:5762c5804b469bc2c2bad2323db73010658bdbff281476096850efac18c612d8` |
+| 1 | `theorem` | [thinGreen_plus_centeredMobiusLog_eq_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/declarations/thingreen-plus-centeredmobiuslog-eq-residual.md) | 17 | `result-track:c9c976cac8376d00536da27b88692e19859aa935053329d31b258d03303a5aea` |
+| 2 | `theorem` | [norm_thinGreen_plus_centeredMobiusLog_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/declarations/norm-thingreen-plus-centeredmobiuslog-le.md) | 25 | `result-track:85d9966002975082bc81f3603ac4647e5b081b28f5ee756b625af1f7884371c5` |
+| 3 | `def` | [nonzeroFourierHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/declarations/nonzerofourierhead.md) | 35 | `declaration-track:ada3fc72e63ac1ae4d84988e62e0a02712daedb9d17cf11cd58080f4e6cfcbcf` |
+| 4 | `def` | [centeredGreenComparisonHeadError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/declarations/centeredgreencomparisonheaderror.md) | 39 | `declaration-track:9b7460ddd56448e637e02ff7018a050cde1599ced7155867e1ee86da0243f34b` |
+| 5 | `theorem` | [centeredGreenComparisonHeadError_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/declarations/centeredgreencomparisonheaderror-le.md) | 46 | `result-track:ae6f3306a39855b727439068788eae478faac6db0dee8be86751665f05ee6b2a` |
+| 6 | `theorem` | [card_nonzeroFourierHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/declarations/card-nonzerofourierhead.md) | 82 | `result-track:1b6a0571f71e97615925a71dbddc40b3eb4051b5b130e5b95444480d8960d53d` |
+| 7 | `theorem` | [centeredGreenComparisonHeadError_le_explicit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/declarations/centeredgreencomparisonheaderror-le-explicit.md) | 95 | `result-track:5762c5804b469bc2c2bad2323db73010658bdbff281476096850efac18c612d8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

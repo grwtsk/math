@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteTensorObservations.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteTensorObservations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteTensorObservations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteTensorObservations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Observer And Consistency](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ObserverAndConsistency.lean/index.md) — import line 20; pinned internal source present.
+- [Observer And Consistency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ObserverAndConsistency.lean/index.md) — import line 20; pinned internal source present.
 - `Folder.Spectral.Energy` — import line 21; external provider; requires a separately pinned dependency.
 - `Folder.Spectral.Expansion` — import line 22; external provider; requires a separately pinned dependency.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [meanWitness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteTensorObservations.lean/declarations/meanwitness.md) | 44 | `declaration-track:4569175ded780e58cb450d692e36a34bc8079e215cc898d3be353439169b61a0` |
-| 2 | `def` | [energyWitness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteTensorObservations.lean/declarations/energywitness.md) | 48 | `declaration-track:61055d9a791e9d47c76f478cde3e5de48249f1b8d1507b0497a8c17a8009664f` |
-| 3 | `def` | [cellCountWitness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteTensorObservations.lean/declarations/cellcountwitness.md) | 53 | `declaration-track:5ed52fddd4689e6cf74ff3792edac82c61d667cae6213506fbf337777e3a9e14` |
+| 1 | `def` | [meanWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteTensorObservations.lean/declarations/meanwitness.md) | 44 | `declaration-track:4569175ded780e58cb450d692e36a34bc8079e215cc898d3be353439169b61a0` |
+| 2 | `def` | [energyWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteTensorObservations.lean/declarations/energywitness.md) | 48 | `declaration-track:61055d9a791e9d47c76f478cde3e5de48249f1b8d1507b0497a8c17a8009664f` |
+| 3 | `def` | [cellCountWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteTensorObservations.lean/declarations/cellcountwitness.md) | 53 | `declaration-track:5ed52fddd4689e6cf74ff3792edac82c61d667cae6213506fbf337777e3a9e14` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

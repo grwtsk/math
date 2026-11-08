@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightEnvelopeCollapseControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightEnvelopeCollapseControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightEnvelopeCollapseControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightEnvelopeCollapseControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightEnvelopeCollapse`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightEnvelopeCollapse.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightEnvelopeCollapse`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightEnvelopeCollapse.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [concrete_dyadic_sevenEighths_ratio_forces_threeQuarters_target](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightEnvelopeCollapseControls.lean/declarations/concrete-dyadic-seveneighths-ratio-forces-threequarters-target.md) | 17 | `result-track:d65666fb97ed4fa166025073f2166c3332955bbc2e97d105251dcf720d709ade` |
-| 2 | `theorem` | [concrete_dyadic_threeQuarters_ratio_forces_half_target](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightEnvelopeCollapseControls.lean/declarations/concrete-dyadic-threequarters-ratio-forces-half-target.md) | 41 | `result-track:06709fc42f94bdcacd6bbc71f444913c6d5bde1ecafb14e5fd9dc1778024ff4f` |
-| 3 | `theorem` | [concrete_dyadic_ratio_forces_error_plus_quadratic_majorant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightEnvelopeCollapseControls.lean/declarations/concrete-dyadic-ratio-forces-error-plus-quadratic-majorant.md) | 65 | `result-track:21e61d0db647c0c684c6ca2e68f72012db45c1eff7ba3c134177bc43b4ba98bb` |
-| 4 | `def` | [requiredEnvelopeCollapseObligations](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightEnvelopeCollapseControls.lean/declarations/requiredenvelopecollapseobligations.md) | 86 | `declaration-track:cca9bafebfaeedca0940c16652659fb2b98b26a9470d1108050ed4f7d06f4cf7` |
-| 5 | `def` | [prohibitedPromotions](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightEnvelopeCollapseControls.lean/declarations/prohibitedpromotions.md) | 94 | `declaration-track:8a4745dc68e334ab556ceea23b7d1c560dc58ac8f1233fe9e09fd430f97d2503` |
+| 1 | `theorem` | [concrete_dyadic_sevenEighths_ratio_forces_threeQuarters_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightEnvelopeCollapseControls.lean/declarations/concrete-dyadic-seveneighths-ratio-forces-threequarters-target.md) | 17 | `result-track:d65666fb97ed4fa166025073f2166c3332955bbc2e97d105251dcf720d709ade` |
+| 2 | `theorem` | [concrete_dyadic_threeQuarters_ratio_forces_half_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightEnvelopeCollapseControls.lean/declarations/concrete-dyadic-threequarters-ratio-forces-half-target.md) | 41 | `result-track:06709fc42f94bdcacd6bbc71f444913c6d5bde1ecafb14e5fd9dc1778024ff4f` |
+| 3 | `theorem` | [concrete_dyadic_ratio_forces_error_plus_quadratic_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightEnvelopeCollapseControls.lean/declarations/concrete-dyadic-ratio-forces-error-plus-quadratic-majorant.md) | 65 | `result-track:21e61d0db647c0c684c6ca2e68f72012db45c1eff7ba3c134177bc43b4ba98bb` |
+| 4 | `def` | [requiredEnvelopeCollapseObligations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightEnvelopeCollapseControls.lean/declarations/requiredenvelopecollapseobligations.md) | 86 | `declaration-track:cca9bafebfaeedca0940c16652659fb2b98b26a9470d1108050ed4f7d06f4cf7` |
+| 5 | `def` | [prohibitedPromotions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightEnvelopeCollapseControls.lean/declarations/prohibitedpromotions.md) | 94 | `declaration-track:8a4745dc68e334ab556ceea23b7d1c560dc58ac8f1233fe9e09fd430f97d2503` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

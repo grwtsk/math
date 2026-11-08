@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PrimorialNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/PrimorialNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimorialNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimorialNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,13 +62,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [primorial](../../../../NumberTheory/PrimorialNamespaced.lean/declarations/primorial.md) | 40 | `declaration-track:68ed032ee91997b48217d5b3b11f228513bfba881f56081248f8f370ed792a5c` |
-| 2 | `theorem` | [primorial_pos](../../../../NumberTheory/PrimorialNamespaced.lean/declarations/primorial-pos.md) | 44 | `result-track:ac9f4d93040939a89b0a38c2d0a0a0a630ea8a84212cb4f4132d499ad9c01d10` |
-| 3 | `theorem` | [primorial_succ](../../../../NumberTheory/PrimorialNamespaced.lean/declarations/primorial-succ.md) | 47 | `result-track:dbb76ad8861684544c9571d16b65e8fc61c4dd0d3f4f3598c59cb1e246345ab3` |
-| 4 | `theorem` | [primorial_add](../../../../NumberTheory/PrimorialNamespaced.lean/declarations/primorial-add.md) | 52 | `result-track:e5fd9c6c36fbe48e71b3e04907f3b5fb7de6b0b00e051adebc1555c2e79a3473` |
-| 5 | `theorem` | [primorial_add_dvd](../../../../NumberTheory/PrimorialNamespaced.lean/declarations/primorial-add-dvd.md) | 58 | `result-track:f35e5b8827aba5bbc0b47e075bb612b201483329b814d8e7646fb3183ee25683` |
-| 6 | `theorem` | [primorial_add_le](../../../../NumberTheory/PrimorialNamespaced.lean/declarations/primorial-add-le.md) | 68 | `result-track:88bfaf48534c9f3e5fae0a108697a80b77fe02f94c9d8e2ada932a40ed97909c` |
-| 7 | `theorem` | [primorial_le_4_pow](../../../../NumberTheory/PrimorialNamespaced.lean/declarations/primorial-le-4-pow.md) | 71 | `result-track:f049854440739e8c18b0f72fbbcd465184544a6167827ccdd2c894bdda4c7575` |
+| 1 | `def` | [primorial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimorialNamespaced.lean/declarations/primorial.md) | 40 | `declaration-track:68ed032ee91997b48217d5b3b11f228513bfba881f56081248f8f370ed792a5c` |
+| 2 | `theorem` | [primorial_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimorialNamespaced.lean/declarations/primorial-pos.md) | 44 | `result-track:ac9f4d93040939a89b0a38c2d0a0a0a630ea8a84212cb4f4132d499ad9c01d10` |
+| 3 | `theorem` | [primorial_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimorialNamespaced.lean/declarations/primorial-succ.md) | 47 | `result-track:dbb76ad8861684544c9571d16b65e8fc61c4dd0d3f4f3598c59cb1e246345ab3` |
+| 4 | `theorem` | [primorial_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimorialNamespaced.lean/declarations/primorial-add.md) | 52 | `result-track:e5fd9c6c36fbe48e71b3e04907f3b5fb7de6b0b00e051adebc1555c2e79a3473` |
+| 5 | `theorem` | [primorial_add_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimorialNamespaced.lean/declarations/primorial-add-dvd.md) | 58 | `result-track:f35e5b8827aba5bbc0b47e075bb612b201483329b814d8e7646fb3183ee25683` |
+| 6 | `theorem` | [primorial_add_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimorialNamespaced.lean/declarations/primorial-add-le.md) | 68 | `result-track:88bfaf48534c9f3e5fae0a108697a80b77fe02f94c9d8e2ada932a40ed97909c` |
+| 7 | `theorem` | [primorial_le_4_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimorialNamespaced.lean/declarations/primorial-le-4-pow.md) | 71 | `result-track:f049854440739e8c18b0f72fbbcd465184544a6167827ccdd2c894bdda4c7575` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

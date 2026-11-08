@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ZeroSmoothingL2NormBridgeProbe.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ZeroSmoothingL2NormBridgeProbe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingL2NormBridgeProbe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingL2NormBridgeProbe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lpNorm_two_eq_sqrt_integral_sq](../../../../MeasureAndIntegration/ZeroSmoothingL2NormBridgeProbe.lean/declarations/lpnorm-two-eq-sqrt-integral-sq.md) | 14 | `result-track:6be928ed1d030743c965f803fff29a4a626081698ca6ba64990b14677c1dafff` |
-| 2 | `theorem` | [lpNorm_two_and_square_integrable](../../../../MeasureAndIntegration/ZeroSmoothingL2NormBridgeProbe.lean/declarations/lpnorm-two-and-square-integrable.md) | 22 | `result-track:683dd82c9089b802812acb089d1fe191ec8c7fd0792796fb7da9f62d85b29493` |
-| 3 | `theorem` | [tendsto_lpNorm_two_of_tendsto_integral_sq](../../../../MeasureAndIntegration/ZeroSmoothingL2NormBridgeProbe.lean/declarations/tendsto-lpnorm-two-of-tendsto-integral-sq.md) | 28 | `result-track:41a5b97866026475409cbe41b225a46e430a3039ed71aafc45232b091c45ffb6` |
+| 1 | `theorem` | [lpNorm_two_eq_sqrt_integral_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingL2NormBridgeProbe.lean/declarations/lpnorm-two-eq-sqrt-integral-sq.md) | 14 | `result-track:6be928ed1d030743c965f803fff29a4a626081698ca6ba64990b14677c1dafff` |
+| 2 | `theorem` | [lpNorm_two_and_square_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingL2NormBridgeProbe.lean/declarations/lpnorm-two-and-square-integrable.md) | 22 | `result-track:683dd82c9089b802812acb089d1fe191ec8c7fd0792796fb7da9f62d85b29493` |
+| 3 | `theorem` | [tendsto_lpNorm_two_of_tendsto_integral_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingL2NormBridgeProbe.lean/declarations/tendsto-lpnorm-two-of-tendsto-integral-sq.md) | 28 | `result-track:41a5b97866026475409cbe41b225a46e430a3039ed71aafc45232b091c45ffb6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

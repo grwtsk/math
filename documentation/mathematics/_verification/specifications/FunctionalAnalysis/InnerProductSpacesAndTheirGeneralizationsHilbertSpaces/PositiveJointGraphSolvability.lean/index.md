@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.InnerProductSpace.JointGraphSolvability`](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceJointGraphSolvability.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.JointGraphSolvability`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceJointGraphSolvability.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/declarations/example.md) | 23 | `declaration-track:7b1365c3153f67c4c3afbce3b3539fc784754faac39967c02fc02e8beb032a0b` |
-| 2 | `def` | [identityOp](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/declarations/identityop.md) | 34 | `declaration-track:71492de7e7bb4f5a0589b9f52bcbd380763299ce367a20ea36e61fb59f6e3db5` |
-| 3 | `theorem` | [identity_dense](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/declarations/identity-dense.md) | 37 | `result-track:729414a43080ddb19f8af3e70249f2ce4c74b2a05cc94c3aa3f13deda80f16d4` |
-| 4 | `theorem` | [identity_closed](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/declarations/identity-closed.md) | 41 | `result-track:b8fcb2545d1b81d04016fca3d7b519de16fe93ae4a1aee23407a94f1eaf37fac` |
-| 5 | `theorem` | [zero_closed](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/declarations/zero-closed.md) | 55 | `result-track:84eae3bde9bfdf9145236dc99c03fc0b4df9f3a10e7f656eaa93dc3dfac7076e` |
-| 6 | `theorem` | [identity_adjoint_apply](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/declarations/identity-adjoint-apply.md) | 69 | `result-track:9dafe93ec6a884c62cf4fd04400e264c3416ddf6e2575ed1d78b62b36cb86162` |
-| 7 | `theorem` | [identity_zero_complex](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/declarations/identity-zero-complex.md) | 75 | `result-track:74b810408552a7841df0841de83e925e1afd05c1fc40e1bdcd5e02c0919f9877` |
-| 8 | `theorem` | [identity_core_estimate](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/declarations/identity-core-estimate.md) | 80 | `result-track:fd2fc0e57d1345bcedf65940644c7e98ae4b276294baaf1188612e1e95af81c1` |
-| 9 | `example` | [(anonymous)](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/declarations/example-source-edition-2.md) | 91 | `declaration-track:b9343c27c97d023a744821b932713a417f631bbcce8b13e4c4ca072d29257808` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/declarations/example.md) | 23 | `declaration-track:7b1365c3153f67c4c3afbce3b3539fc784754faac39967c02fc02e8beb032a0b` |
+| 2 | `def` | [identityOp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/declarations/identityop.md) | 34 | `declaration-track:71492de7e7bb4f5a0589b9f52bcbd380763299ce367a20ea36e61fb59f6e3db5` |
+| 3 | `theorem` | [identity_dense](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/declarations/identity-dense.md) | 37 | `result-track:729414a43080ddb19f8af3e70249f2ce4c74b2a05cc94c3aa3f13deda80f16d4` |
+| 4 | `theorem` | [identity_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/declarations/identity-closed.md) | 41 | `result-track:b8fcb2545d1b81d04016fca3d7b519de16fe93ae4a1aee23407a94f1eaf37fac` |
+| 5 | `theorem` | [zero_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/declarations/zero-closed.md) | 55 | `result-track:84eae3bde9bfdf9145236dc99c03fc0b4df9f3a10e7f656eaa93dc3dfac7076e` |
+| 6 | `theorem` | [identity_adjoint_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/declarations/identity-adjoint-apply.md) | 69 | `result-track:9dafe93ec6a884c62cf4fd04400e264c3416ddf6e2575ed1d78b62b36cb86162` |
+| 7 | `theorem` | [identity_zero_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/declarations/identity-zero-complex.md) | 75 | `result-track:74b810408552a7841df0841de83e925e1afd05c1fc40e1bdcd5e02c0919f9877` |
+| 8 | `theorem` | [identity_core_estimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/declarations/identity-core-estimate.md) | 80 | `result-track:fd2fc0e57d1345bcedf65940644c7e98ae4b276294baaf1188612e1e95af81c1` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveJointGraphSolvability.lean/declarations/example-source-edition-2.md) | 91 | `declaration-track:b9343c27c97d023a744821b932713a417f631bbcce8b13e4c4ca072d29257808` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

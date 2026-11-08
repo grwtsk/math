@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [toAddSubgroup_index_eq_pow_mul_prod](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntPublic.lean/declarations/toaddsubgroup-index-eq-pow-mul-prod.md) | 32 | `result-track:413de5800ebff0c436a3e67e15808117cf843ee497eaa272d1e382a0ef1c0613` |
-| 2 | `lemma` | [toAddSubgroup_index_eq_ite](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntPublic.lean/declarations/toaddsubgroup-index-eq-ite.md) | 150 | `result-track:04baa908f47d99dc3101409b6b2531112816485bde419772ab0eae97f5694b61` |
-| 3 | `lemma` | [toAddSubgroup_index_ne_zero_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntPublic.lean/declarations/toaddsubgroup-index-ne-zero-iff.md) | 163 | `result-track:68865631cb5c01fe97bfe4ec941bb7230b21ea6504827ddca0025f8bfb0e0132` |
-| 4 | `lemma` | [submodule_toAddSubgroup_index_ne_zero_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntPublic.lean/declarations/submodule-toaddsubgroup-index-ne-zero-iff.md) | 183 | `result-track:06ff3fcf40a61d59e4bea2861bf4b442249f93fab876a86d0b63fb7d6bb32ced` |
-| 5 | `lemma` | [addSubgroup_index_ne_zero_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntPublic.lean/declarations/addsubgroup-index-ne-zero-iff.md) | 195 | `result-track:2d07aeefd704e6e1f06612ac3e0ac5c013c12f70ac9e93363ad097cf768f1c3f` |
-| 6 | `lemma` | [subgroup_index_ne_zero_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntPublic.lean/declarations/subgroup-index-ne-zero-iff.md) | 201 | `result-track:7095ccb31f176cecca5c6f9d3ed2485b3167a66d740bc67e4f4a9fe50cb195f9` |
+| 1 | `lemma` | [toAddSubgroup_index_eq_pow_mul_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntPublic.lean/declarations/toaddsubgroup-index-eq-pow-mul-prod.md) | 32 | `result-track:413de5800ebff0c436a3e67e15808117cf843ee497eaa272d1e382a0ef1c0613` |
+| 2 | `lemma` | [toAddSubgroup_index_eq_ite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntPublic.lean/declarations/toaddsubgroup-index-eq-ite.md) | 150 | `result-track:04baa908f47d99dc3101409b6b2531112816485bde419772ab0eae97f5694b61` |
+| 3 | `lemma` | [toAddSubgroup_index_ne_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntPublic.lean/declarations/toaddsubgroup-index-ne-zero-iff.md) | 163 | `result-track:68865631cb5c01fe97bfe4ec941bb7230b21ea6504827ddca0025f8bfb0e0132` |
+| 4 | `lemma` | [submodule_toAddSubgroup_index_ne_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntPublic.lean/declarations/submodule-toaddsubgroup-index-ne-zero-iff.md) | 183 | `result-track:06ff3fcf40a61d59e4bea2861bf4b442249f93fab876a86d0b63fb7d6bb32ced` |
+| 5 | `lemma` | [addSubgroup_index_ne_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntPublic.lean/declarations/addsubgroup-index-ne-zero-iff.md) | 195 | `result-track:2d07aeefd704e6e1f06612ac3e0ac5c013c12f70ac9e93363ad097cf768f1c3f` |
+| 6 | `lemma` | [subgroup_index_ne_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntPublic.lean/declarations/subgroup-index-ne-zero-iff.md) | 201 | `result-track:7095ccb31f176cecca5c6f9d3ed2485b3167a66d740bc67e4f4a9fe50cb195f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

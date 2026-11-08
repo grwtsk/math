@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/CochainExactDifferenceRelation.lean/index.md) · [Full source](../../../../AlgebraicTopology/CochainExactDifferenceRelation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CochainExactDifferenceRelation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CochainExactDifferenceRelation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Cohomologous](../../../../AlgebraicTopology/CochainExactDifferenceRelation.lean/declarations/cohomologous.md) | 39 | `declaration-track:361766678a50dc9074c432f1b7f536436113a80f58fdf1e9cca430a0dea583a3` |
-| 2 | `structure` | [ShellTorsionClass](../../../../AlgebraicTopology/CochainExactDifferenceRelation.lean/declarations/shelltorsionclass.md) | 43 | `declaration-track:4c918ba426379c99afa5dc04032d0d620cc23a4510062b09cc2f7fc48bd749f3` |
-| 3 | `def` | [SameShellTorsionClass](../../../../AlgebraicTopology/CochainExactDifferenceRelation.lean/declarations/sameshelltorsionclass.md) | 46 | `declaration-track:96294f0889d6683d932d180b41fe9b06db94d7dcc2b0d9266b545079a0e97bbe` |
-| 4 | `theorem` | [exact_connection_same_as_zero](../../../../AlgebraicTopology/CochainExactDifferenceRelation.lean/declarations/exact-connection-same-as-zero.md) | 50 | `result-track:712e5e94c1f3def745daea8b2b0ffd12e4e2c78ccf9b31be76d6c339575cf2e8` |
+| 1 | `def` | [Cohomologous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CochainExactDifferenceRelation.lean/declarations/cohomologous.md) | 39 | `declaration-track:361766678a50dc9074c432f1b7f536436113a80f58fdf1e9cca430a0dea583a3` |
+| 2 | `structure` | [ShellTorsionClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CochainExactDifferenceRelation.lean/declarations/shelltorsionclass.md) | 43 | `declaration-track:4c918ba426379c99afa5dc04032d0d620cc23a4510062b09cc2f7fc48bd749f3` |
+| 3 | `def` | [SameShellTorsionClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CochainExactDifferenceRelation.lean/declarations/sameshelltorsionclass.md) | 46 | `declaration-track:96294f0889d6683d932d180b41fe9b06db94d7dcc2b0d9266b545079a0e97bbe` |
+| 4 | `theorem` | [exact_connection_same_as_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CochainExactDifferenceRelation.lean/declarations/exact-connection-same-as-zero.md) | 50 | `result-track:712e5e94c1f3def745daea8b2b0ffd12e4e2c78ccf9b31be76d6c339575cf2e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

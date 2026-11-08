@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SModEqPowPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SModEqPowPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SModEqPowPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SModEqPowPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pow_mul_of_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SModEqPowPublic.lean/declarations/pow-mul-of-le.md) | 21 | `result-track:99f9615b47d8a91528f557d2ea2de6ca25462fd397208fd00c68435896b6940d` |
-| 2 | `theorem` | [pow_add_one](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SModEqPowPublic.lean/declarations/pow-add-one.md) | 33 | `result-track:8c19549d6a6962764f5a2f001884a1e88168dccfdcd6826c65463c2ab884641e` |
-| 3 | `theorem` | [pow_pow_add_one](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SModEqPowPublic.lean/declarations/pow-pow-add-one.md) | 36 | `result-track:a7ec89696f308b1569ca23f5615bb9918f367c75a847e6b67dbe984ea614a0d3` |
+| 1 | `theorem` | [pow_mul_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SModEqPowPublic.lean/declarations/pow-mul-of-le.md) | 21 | `result-track:99f9615b47d8a91528f557d2ea2de6ca25462fd397208fd00c68435896b6940d` |
+| 2 | `theorem` | [pow_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SModEqPowPublic.lean/declarations/pow-add-one.md) | 33 | `result-track:8c19549d6a6962764f5a2f001884a1e88168dccfdcd6826c65463c2ab884641e` |
+| 3 | `theorem` | [pow_pow_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SModEqPowPublic.lean/declarations/pow-pow-add-one.md) | 36 | `result-track:a7ec89696f308b1569ca23f5615bb9918f367c75a847e6b67dbe984ea614a0d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

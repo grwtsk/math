@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IOPublicAsyncRead.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IOPublicAsyncRead.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IOPublicAsyncRead.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IOPublicAsyncRead.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [AsyncRead](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IOPublicAsyncRead.lean/declarations/asyncread.md) | 26 | `declaration-track:ac7f917a520f7926cbd85a09f1149c73dc969d8e0d8b65579eca50cc22c0dafd` |
-| 2 | `class` | [AsyncWrite](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IOPublicAsyncRead.lean/declarations/asyncwrite.md) | 32 | `declaration-track:91596f02dc241dff83d15250b6af2caadde795030594be1b0672292ce8598992` |
-| 3 | `class` | [AsyncStream](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IOPublicAsyncRead.lean/declarations/asyncstream.md) | 44 | `declaration-track:2a454a8a0fff2b970009185a252c3aae8dbd595583699fe4241878c4cf518b76` |
+| 1 | `class` | [AsyncRead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IOPublicAsyncRead.lean/declarations/asyncread.md) | 26 | `declaration-track:ac7f917a520f7926cbd85a09f1149c73dc969d8e0d8b65579eca50cc22c0dafd` |
+| 2 | `class` | [AsyncWrite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IOPublicAsyncRead.lean/declarations/asyncwrite.md) | 32 | `declaration-track:91596f02dc241dff83d15250b6af2caadde795030594be1b0672292ce8598992` |
+| 3 | `class` | [AsyncStream](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IOPublicAsyncRead.lean/declarations/asyncstream.md) | 44 | `declaration-track:2a454a8a0fff2b970009185a252c3aae8dbd595583699fe4241878c4cf518b76` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

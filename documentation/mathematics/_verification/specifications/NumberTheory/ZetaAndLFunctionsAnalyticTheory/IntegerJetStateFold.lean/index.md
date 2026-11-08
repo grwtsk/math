@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/IntegerJetStateFold.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/IntegerJetStateFold.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/IntegerJetStateFold.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/IntegerJetStateFold.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.ErrorBounds.IntegerExpStateFold`](../../../../../RealFunctions/IntegerExpStateFold.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalJetStateFold`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalJetStateFold.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.IntegerExpStateFold`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegerExpStateFold.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalJetStateFold`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalJetStateFold.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [powers](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/IntegerJetStateFold.lean/declarations/powers.md) | 23 | `declaration-track:510bf4239bfac45292e9e9897f9747e3c8f49fbc29ae9717d0f1882fc3dff140` |
-| 2 | `theorem` | [powers_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/IntegerJetStateFold.lean/declarations/powers-eq.md) | 26 | `result-track:3ab409af1fe40890ad8fffc8674740b52d670ab299054c3281a4f6d76771b630` |
-| 3 | `def` | [finiteJet](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/IntegerJetStateFold.lean/declarations/finitejet.md) | 32 | `declaration-track:f2e88d341abc618c627ea0d08fb82a6e837cf5008fcd4da3aadc64a7a331a74e` |
-| 4 | `theorem` | [finiteJet_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/IntegerJetStateFold.lean/declarations/finitejet-eq.md) | 45 | `result-track:d7bc4c565a6921f36bc5d282cb3ddf68dc977f30f04084a4737ded8667cb934a` |
-| 5 | `def` | [patch](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/IntegerJetStateFold.lean/declarations/patch.md) | 50 | `declaration-track:76f9114ef18347796a2ece2e9effa25c46236b2128b6f800c6575c7db1bf3885` |
-| 6 | `theorem` | [patch_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/IntegerJetStateFold.lean/declarations/patch-eq.md) | 62 | `result-track:1aebf841191b5d452c7dd6a6b772ea442d8a6bbdc01abcc2590e361114b44c4a` |
-| 7 | `theorem` | [patch_sound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/IntegerJetStateFold.lean/declarations/patch-sound.md) | 66 | `result-track:35ead57810df9697988f5ff20b6d9e25c6e63280b0ff397e1d63a45bba189bd5` |
+| 1 | `def` | [powers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/IntegerJetStateFold.lean/declarations/powers.md) | 23 | `declaration-track:510bf4239bfac45292e9e9897f9747e3c8f49fbc29ae9717d0f1882fc3dff140` |
+| 2 | `theorem` | [powers_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/IntegerJetStateFold.lean/declarations/powers-eq.md) | 26 | `result-track:3ab409af1fe40890ad8fffc8674740b52d670ab299054c3281a4f6d76771b630` |
+| 3 | `def` | [finiteJet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/IntegerJetStateFold.lean/declarations/finitejet.md) | 32 | `declaration-track:f2e88d341abc618c627ea0d08fb82a6e837cf5008fcd4da3aadc64a7a331a74e` |
+| 4 | `theorem` | [finiteJet_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/IntegerJetStateFold.lean/declarations/finitejet-eq.md) | 45 | `result-track:d7bc4c565a6921f36bc5d282cb3ddf68dc977f30f04084a4737ded8667cb934a` |
+| 5 | `def` | [patch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/IntegerJetStateFold.lean/declarations/patch.md) | 50 | `declaration-track:76f9114ef18347796a2ece2e9effa25c46236b2128b6f800c6575c7db1bf3885` |
+| 6 | `theorem` | [patch_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/IntegerJetStateFold.lean/declarations/patch-eq.md) | 62 | `result-track:1aebf841191b5d452c7dd6a6b772ea442d8a6bbdc01abcc2590e361114b44c4a` |
+| 7 | `theorem` | [patch_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/IntegerJetStateFold.lean/declarations/patch-sound.md) | 66 | `result-track:35ead57810df9697988f5ff20b6d9e25c6e63280b0ff397e1d63a45bba189bd5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

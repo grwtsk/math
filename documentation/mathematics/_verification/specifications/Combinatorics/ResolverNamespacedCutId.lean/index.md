@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ResolverNamespacedCutId.lean/index.md) · [Full source](../../../../Combinatorics/ResolverNamespacedCutId.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedCutId.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedCutId.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CutId](../../../../Combinatorics/ResolverNamespacedCutId.lean/declarations/cutid.md) | 20 | `declaration-track:9131c88cdc26e9c0bceb92000d79d8595fb21b31e9d3d2f071d02b101fe7bdf2` |
-| 2 | `inductive` | [StratifiedUnknownKind](../../../../Combinatorics/ResolverNamespacedCutId.lean/declarations/stratifiedunknownkind.md) | 24 | `declaration-track:49908e0e595c8043b02db3f844cfdd0e4e96e0b0ef5b61433176e7bb7de70776` |
-| 3 | `inductive` | [StratifiedRejection](../../../../Combinatorics/ResolverNamespacedCutId.lean/declarations/stratifiedrejection.md) | 56 | `declaration-track:d9fcbe441dc724b0ad18dc6842404a2aa16c7d70988ffce2e57be3cb7ea910ee` |
-| 4 | `inductive` | [StratifiedResolution](../../../../Combinatorics/ResolverNamespacedCutId.lean/declarations/stratifiedresolution.md) | 70 | `declaration-track:8d681911f850a492c4b439075fafef8f55ccceae713ff5f958424e7a45f4ac6d` |
+| 1 | `structure` | [CutId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedCutId.lean/declarations/cutid.md) | 20 | `declaration-track:9131c88cdc26e9c0bceb92000d79d8595fb21b31e9d3d2f071d02b101fe7bdf2` |
+| 2 | `inductive` | [StratifiedUnknownKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedCutId.lean/declarations/stratifiedunknownkind.md) | 24 | `declaration-track:49908e0e595c8043b02db3f844cfdd0e4e96e0b0ef5b61433176e7bb7de70776` |
+| 3 | `inductive` | [StratifiedRejection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedCutId.lean/declarations/stratifiedrejection.md) | 56 | `declaration-track:d9fcbe441dc724b0ad18dc6842404a2aa16c7d70988ffce2e57be3cb7ea910ee` |
+| 4 | `inductive` | [StratifiedResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedCutId.lean/declarations/stratifiedresolution.md) | 70 | `declaration-track:8d681911f850a492c4b439075fafef8f55ccceae713ff5f958424e7a45f4ac6d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

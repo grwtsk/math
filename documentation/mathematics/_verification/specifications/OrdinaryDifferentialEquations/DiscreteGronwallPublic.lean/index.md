@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../OrdinaryDifferentialEquations/DiscreteGronwallPublic.lean/index.md) · [Full source](../../../../OrdinaryDifferentialEquations/DiscreteGronwallPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrdinaryDifferentialEquations/DiscreteGronwallPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrdinaryDifferentialEquations/DiscreteGronwallPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [discrete_gronwall_prod_general](../../../../OrdinaryDifferentialEquations/DiscreteGronwallPublic.lean/declarations/discrete-gronwall-prod-general.md) | 50 | `result-track:3b5bcdd67b3dff9108f5ef0a9dda52865bd89a9c03cd04191a819a71d16ac013` |
-| 2 | `theorem` | [discrete_gronwall](../../../../OrdinaryDifferentialEquations/DiscreteGronwallPublic.lean/declarations/discrete-gronwall.md) | 79 | `result-track:56b674a698d8f3b539cc3ca784cce1e43138b3320ab04ae21f069fc9bfef5441` |
-| 3 | `theorem` | [discrete_gronwall_Ico](../../../../OrdinaryDifferentialEquations/DiscreteGronwallPublic.lean/declarations/discrete-gronwall-ico.md) | 97 | `result-track:d4438abd3ca46ac7b984d5ae7e4f9a87541d8c639957cb2a0b6d080e6c81cb60` |
+| 1 | `theorem` | [discrete_gronwall_prod_general](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrdinaryDifferentialEquations/DiscreteGronwallPublic.lean/declarations/discrete-gronwall-prod-general.md) | 50 | `result-track:3b5bcdd67b3dff9108f5ef0a9dda52865bd89a9c03cd04191a819a71d16ac013` |
+| 2 | `theorem` | [discrete_gronwall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrdinaryDifferentialEquations/DiscreteGronwallPublic.lean/declarations/discrete-gronwall.md) | 79 | `result-track:56b674a698d8f3b539cc3ca784cce1e43138b3320ab04ae21f069fc9bfef5441` |
+| 3 | `theorem` | [discrete_gronwall_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrdinaryDifferentialEquations/DiscreteGronwallPublic.lean/declarations/discrete-gronwall-ico.md) | 97 | `result-track:d4438abd3ca46ac7b984d5ae7e4f9a87541d8c639957cb2a0b6d080e6c81cb60` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

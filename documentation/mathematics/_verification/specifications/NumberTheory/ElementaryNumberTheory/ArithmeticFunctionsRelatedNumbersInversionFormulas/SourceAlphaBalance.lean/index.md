@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceAlphaBalance.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceAlphaBalance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceAlphaBalance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceAlphaBalance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_quotient_moebius_sum](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceAlphaBalance.lean/declarations/actual-quotient-moebius-sum.md) | 16 | `result-track:3c16bd7e7e2197037002e3573f6458ca7be44b3a5b233008692eaa6554d6c594` |
-| 2 | `theorem` | [actual_alpha_modulus_recovery](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceAlphaBalance.lean/declarations/actual-alpha-modulus-recovery.md) | 42 | `result-track:dd940b90c60dae94ed75ab27f978a29bbd4f50a8ced3bb3e22a646ce7138e55d` |
-| 3 | `theorem` | [actual_alpha_abs_le_one](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceAlphaBalance.lean/declarations/actual-alpha-abs-le-one.md) | 71 | `result-track:af1357e534b6be931c938c9a0d8020e817d4af2ecfadfae85cfb4c43130410b5` |
-| 4 | `theorem` | [actual_alpha_minus_one_bounds](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceAlphaBalance.lean/declarations/actual-alpha-minus-one-bounds.md) | 102 | `result-track:8e53c3f41427016c3ac9fc0f36bee35e30e108bfe25eaeddab304ac484aac67b` |
+| 1 | `theorem` | [actual_quotient_moebius_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceAlphaBalance.lean/declarations/actual-quotient-moebius-sum.md) | 16 | `result-track:3c16bd7e7e2197037002e3573f6458ca7be44b3a5b233008692eaa6554d6c594` |
+| 2 | `theorem` | [actual_alpha_modulus_recovery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceAlphaBalance.lean/declarations/actual-alpha-modulus-recovery.md) | 42 | `result-track:dd940b90c60dae94ed75ab27f978a29bbd4f50a8ced3bb3e22a646ce7138e55d` |
+| 3 | `theorem` | [actual_alpha_abs_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceAlphaBalance.lean/declarations/actual-alpha-abs-le-one.md) | 71 | `result-track:af1357e534b6be931c938c9a0d8020e817d4af2ecfadfae85cfb4c43130410b5` |
+| 4 | `theorem` | [actual_alpha_minus_one_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceAlphaBalance.lean/declarations/actual-alpha-minus-one-bounds.md) | 102 | `result-track:8e53c3f41427016c3ac9fc0f36bee35e30e108bfe25eaeddab304ac484aac67b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

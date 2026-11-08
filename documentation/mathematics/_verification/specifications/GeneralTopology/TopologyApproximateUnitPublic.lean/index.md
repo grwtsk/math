@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopologyApproximateUnitPublic.lean/index.md) · [Full source](../../../../GeneralTopology/TopologyApproximateUnitPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyApproximateUnitPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyApproximateUnitPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Filter.IsApproximateUnit](../../../../GeneralTopology/TopologyApproximateUnitPublic.lean/declarations/filter-isapproximateunit.md) | 31 | `declaration-track:147b455fd0e54bd7e06048b4750be910561d7e42d0a0504073431774d1dda9a1` |
-| 2 | `lemma` | [pure_one](../../../../GeneralTopology/TopologyApproximateUnitPublic.lean/declarations/pure-one.md) | 48 | `result-track:666fa6760fdb8bba4c444d416797349c6f97659a55d262f2f0c35e6d6b5f3dd6` |
-| 3 | `lemma` | [mono](../../../../GeneralTopology/TopologyApproximateUnitPublic.lean/declarations/mono.md) | 53 | `result-track:266aeb359cb28958e617f077dd6b52bb43061146eff17407f5527ef990fc7266` |
-| 4 | `lemma` | [nhds_one](../../../../GeneralTopology/TopologyApproximateUnitPublic.lean/declarations/nhds-one.md) | 60 | `result-track:cf79746e9b776bb79f0b8daa0108a41592897b6dd66b9c323311b876342525f6` |
-| 5 | `lemma` | [iff_neBot_and_le_nhds_one](../../../../GeneralTopology/TopologyApproximateUnitPublic.lean/declarations/iff-nebot-and-le-nhds-one.md) | 65 | `result-track:4fdd2b82e9c7714ccd7fc9666a5060a47b62fc5526d752019bf15a91ad824a2f` |
-| 6 | `lemma` | [iff_le_nhds_one](../../../../GeneralTopology/TopologyApproximateUnitPublic.lean/declarations/iff-le-nhds-one.md) | 71 | `result-track:2e6126c37e21373fd82e788be885f2511d904ae61a50da8851cd27f0a2676bd2` |
+| 1 | `structure` | [Filter.IsApproximateUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyApproximateUnitPublic.lean/declarations/filter-isapproximateunit.md) | 31 | `declaration-track:147b455fd0e54bd7e06048b4750be910561d7e42d0a0504073431774d1dda9a1` |
+| 2 | `lemma` | [pure_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyApproximateUnitPublic.lean/declarations/pure-one.md) | 48 | `result-track:666fa6760fdb8bba4c444d416797349c6f97659a55d262f2f0c35e6d6b5f3dd6` |
+| 3 | `lemma` | [mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyApproximateUnitPublic.lean/declarations/mono.md) | 53 | `result-track:266aeb359cb28958e617f077dd6b52bb43061146eff17407f5527ef990fc7266` |
+| 4 | `lemma` | [nhds_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyApproximateUnitPublic.lean/declarations/nhds-one.md) | 60 | `result-track:cf79746e9b776bb79f0b8daa0108a41592897b6dd66b9c323311b876342525f6` |
+| 5 | `lemma` | [iff_neBot_and_le_nhds_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyApproximateUnitPublic.lean/declarations/iff-nebot-and-le-nhds-one.md) | 65 | `result-track:4fdd2b82e9c7714ccd7fc9666a5060a47b62fc5526d752019bf15a91ad824a2f` |
+| 6 | `lemma` | [iff_le_nhds_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyApproximateUnitPublic.lean/declarations/iff-le-nhds-one.md) | 71 | `result-track:2e6126c37e21373fd82e788be885f2511d904ae61a50da8851cd27f0a2676bd2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

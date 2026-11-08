@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/FunctorNCompatibilityNN.lean/index.md) · [Full source](../../../../AlgebraicTopology/FunctorNCompatibilityNN.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FunctorNCompatibilityNN.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FunctorNCompatibilityNN.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [N₁](../../../../AlgebraicTopology/FunctorNCompatibilityNN.lean/declarations/n.md) | 49 | `declaration-track:4000652937f1a8d3408bbc2758b40be19651bc016cc5fef549d420302edf43a8` |
-| 2 | `def` | [N₂](../../../../AlgebraicTopology/FunctorNCompatibilityNN.lean/declarations/n-source-edition-2.md) | 61 | `declaration-track:788a3f555f2840dfa0ec90abe9d0a1b0d1b09e84f2d504dcc8b1025d9c57f5c1` |
-| 3 | `lemma` | [compatibility_N₁_N₂](../../../../AlgebraicTopology/FunctorNCompatibilityNN.lean/declarations/compatibility-n-n.md) | 67 | `result-track:1e4bbed3e1de5f1128feb1a40568ab568af3a106ec716fea4717098db90455e3` |
+| 1 | `def` | [N₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FunctorNCompatibilityNN.lean/declarations/n.md) | 49 | `declaration-track:4000652937f1a8d3408bbc2758b40be19651bc016cc5fef549d420302edf43a8` |
+| 2 | `def` | [N₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FunctorNCompatibilityNN.lean/declarations/n-source-edition-2.md) | 61 | `declaration-track:788a3f555f2840dfa0ec90abe9d0a1b0d1b09e84f2d504dcc8b1025d9c57f5c1` |
+| 3 | `lemma` | [compatibility_N₁_N₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FunctorNCompatibilityNN.lean/declarations/compatibility-n-n.md) | 67 | `result-track:1e4bbed3e1de5f1128feb1a40568ab568af3a106ec716fea4717098db90455e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

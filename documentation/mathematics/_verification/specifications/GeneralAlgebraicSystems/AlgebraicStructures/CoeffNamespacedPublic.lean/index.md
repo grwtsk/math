@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CoeffNamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CoeffNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CoeffNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CoeffNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [coeff_linearCombination_X_pow_of_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CoeffNamespacedPublic.lean/declarations/coeff-linearcombination-x-pow-of-eq.md) | 38 | `result-track:ae55d706524e7fc4aa4149fbb8b027b8e7f240796017f83afb4ca48be96e8530` |
-| 2 | `lemma` | [coeff_linearCombination_X_pow_of_ne](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CoeffNamespacedPublic.lean/declarations/coeff-linearcombination-x-pow-of-ne.md) | 68 | `result-track:46340323d052243a8fd1852e9a08f8e6c02998f1d9dda397f7de339b5547c129` |
-| 3 | `lemma` | [coeff_linearCombination_X_pow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CoeffNamespacedPublic.lean/declarations/coeff-linearcombination-x-pow.md) | 87 | `result-track:418797ae95efcfc3a24bf64519bc1a26a4af05e3e681dca4652e79414592d494` |
-| 4 | `lemma` | [coeff_linearCombination_X_pow_of_fintype](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CoeffNamespacedPublic.lean/declarations/coeff-linearcombination-x-pow-of-fintype.md) | 94 | `result-track:f3c4f7758c2b35f12159169353f35dfb5c09eb386ca918730ec67662d2fa8e8b` |
-| 5 | `lemma` | [coeff_sum_X_pow_of_fintype](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CoeffNamespacedPublic.lean/declarations/coeff-sum-x-pow-of-fintype.md) | 101 | `result-track:502bfabe1a8a36138e136e37770367128d1cf7926cebe166596700efeb988662` |
-| 6 | `theorem` | [coeff_add_pow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CoeffNamespacedPublic.lean/declarations/coeff-add-pow.md) | 108 | `result-track:713b82b04802e4e249aadc96c00ff1c7f48a94970eb166c579ab87df5587fe03` |
-| 7 | `theorem` | [monomial_fin_two](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CoeffNamespacedPublic.lean/declarations/monomial-fin-two.md) | 122 | `result-track:f11d6bf8ae7cd970dfa94cf3f6a475dd87a241a1c94bf8701d08f7acdb98e3a5` |
+| 1 | `lemma` | [coeff_linearCombination_X_pow_of_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CoeffNamespacedPublic.lean/declarations/coeff-linearcombination-x-pow-of-eq.md) | 38 | `result-track:ae55d706524e7fc4aa4149fbb8b027b8e7f240796017f83afb4ca48be96e8530` |
+| 2 | `lemma` | [coeff_linearCombination_X_pow_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CoeffNamespacedPublic.lean/declarations/coeff-linearcombination-x-pow-of-ne.md) | 68 | `result-track:46340323d052243a8fd1852e9a08f8e6c02998f1d9dda397f7de339b5547c129` |
+| 3 | `lemma` | [coeff_linearCombination_X_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CoeffNamespacedPublic.lean/declarations/coeff-linearcombination-x-pow.md) | 87 | `result-track:418797ae95efcfc3a24bf64519bc1a26a4af05e3e681dca4652e79414592d494` |
+| 4 | `lemma` | [coeff_linearCombination_X_pow_of_fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CoeffNamespacedPublic.lean/declarations/coeff-linearcombination-x-pow-of-fintype.md) | 94 | `result-track:f3c4f7758c2b35f12159169353f35dfb5c09eb386ca918730ec67662d2fa8e8b` |
+| 5 | `lemma` | [coeff_sum_X_pow_of_fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CoeffNamespacedPublic.lean/declarations/coeff-sum-x-pow-of-fintype.md) | 101 | `result-track:502bfabe1a8a36138e136e37770367128d1cf7926cebe166596700efeb988662` |
+| 6 | `theorem` | [coeff_add_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CoeffNamespacedPublic.lean/declarations/coeff-add-pow.md) | 108 | `result-track:713b82b04802e4e249aadc96c00ff1c7f48a94970eb166c579ab87df5587fe03` |
+| 7 | `theorem` | [monomial_fin_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CoeffNamespacedPublic.lean/declarations/monomial-fin-two.md) | 122 | `result-track:f11d6bf8ae7cd970dfa94cf3f6a475dd87a241a1c94bf8701d08f7acdb98e3a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

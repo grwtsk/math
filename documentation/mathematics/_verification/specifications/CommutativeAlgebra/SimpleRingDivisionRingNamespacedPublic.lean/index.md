@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SimpleRingDivisionRingNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SimpleRingDivisionRingNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingDivisionRingNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingDivisionRingNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [DivisionRing.nonempty_linearEquiv_of_isSimpleModule](../../../../CommutativeAlgebra/SimpleRingDivisionRingNamespacedPublic.lean/declarations/divisionring-nonempty-linearequiv-of-issimplemodule.md) | 48 | `result-track:6a5c76862597f3bba673802a31414cb1ae4dbafc4b4e9e0b0931e4f1d905d6db` |
-| 2 | `lemma` | [isSimpleModule_iff_eq_zero_or_injective](../../../../CommutativeAlgebra/SimpleRingDivisionRingNamespacedPublic.lean/declarations/issimplemodule-iff-eq-zero-or-injective.md) | 53 | `result-track:e06efdd5c2d5c0593dc31f8631fc650c9a5c21e9b8b92d704c1460f977768598` |
-| 3 | `lemma` | [IsSimpleModule.obj_of_isEquivalence](../../../../CommutativeAlgebra/SimpleRingDivisionRingNamespacedPublic.lean/declarations/issimplemodule-obj-of-isequivalence.md) | 62 | `result-track:b1a25ce4040f7021b74bf8d166f8e371894674d028a96d5c91845c4d2ea75b90` |
+| 1 | `lemma` | [DivisionRing.nonempty_linearEquiv_of_isSimpleModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingDivisionRingNamespacedPublic.lean/declarations/divisionring-nonempty-linearequiv-of-issimplemodule.md) | 48 | `result-track:6a5c76862597f3bba673802a31414cb1ae4dbafc4b4e9e0b0931e4f1d905d6db` |
+| 2 | `lemma` | [isSimpleModule_iff_eq_zero_or_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingDivisionRingNamespacedPublic.lean/declarations/issimplemodule-iff-eq-zero-or-injective.md) | 53 | `result-track:e06efdd5c2d5c0593dc31f8631fc650c9a5c21e9b8b92d704c1460f977768598` |
+| 3 | `lemma` | [IsSimpleModule.obj_of_isEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingDivisionRingNamespacedPublic.lean/declarations/issimplemodule-obj-of-isequivalence.md) | 62 | `result-track:b1a25ce4040f7021b74bf8d166f8e371894674d028a96d5c91845c4d2ea75b90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

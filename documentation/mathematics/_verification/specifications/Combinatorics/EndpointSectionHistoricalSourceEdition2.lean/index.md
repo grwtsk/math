@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.EndpointSection`](../../../../Combinatorics/GraphTheory/EndpointSectionHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.EndpointSection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EndpointSectionHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [diamond_middle_obstruction](../../../../Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/diamond-middle-obstruction.md) | 15 | `result-track:84bb083ab8c4a630b3f8e0c54b9802949ef99dc0bc52a1a13205dd4b97c96b53` |
-| 2 | `theorem` | [diamond_no_preserving_section](../../../../Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/diamond-no-preserving-section.md) | 20 | `result-track:5a0497a1e4b631fe2b54adc4585ce9cc9eaaa0b1bec417627d09b7f4e8cf3d7e` |
-| 3 | `theorem` | [diamond_selected_right_inverse](../../../../Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/diamond-selected-right-inverse.md) | 29 | `result-track:9cf38e6a2fbac0ec18c9184f08360bc4c3b87a14b2dd4d7b1a662a35db0a7469` |
-| 4 | `theorem` | [diamond_selected_not_preserving](../../../../Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/diamond-selected-not-preserving.md) | 33 | `result-track:a78a1f883d87233ca893cea8451a3596989daf88cde963cd575dcfc589a56293` |
-| 5 | `theorem` | [actual_diamond_counterexample](../../../../Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/actual-diamond-counterexample.md) | 39 | `result-track:b1ea61938c9a6467f047300588a9144be7fbbbe6ac22a7ce028bcd8a4ce48c1e` |
-| 6 | `example` | [(anonymous)](../../../../Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/example-source-edition-5.md) | 46 | `declaration-track:b7959e33d0b56652824fa0e342862a3e6e719646147777088285f6d53060e824` |
-| 7 | `example` | [(anonymous)](../../../../Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/example-source-edition-3.md) | 48 | `declaration-track:1eb4233e9d1909ab140765d704eb55e487b9df8f26af97822e1ef4143b573107` |
-| 8 | `example` | [(anonymous)](../../../../Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/example.md) | 50 | `declaration-track:17046584c7ed0c7bf59439f324753e5c89474c126993848c313dacf94c3a1d9b` |
-| 9 | `def` | [leftTopHistory](../../../../Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/lefttophistory.md) | 52 | `declaration-track:21fc8ffc589d7a3721e32a629e40727baa63d8b7dd0ee1215a46270168ce45a0` |
-| 10 | `def` | [rightTopHistory](../../../../Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/righttophistory.md) | 56 | `declaration-track:5c9de02b3683dd2069363e6bf1a30ece046fe0b77c97653b84e594c96c36a1bf` |
-| 11 | `theorem` | [distinct_top_histories](../../../../Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/distinct-top-histories.md) | 60 | `result-track:dcb432ef9bfd1fadebf6fb3e996349f0af68e7ad79335395dcbc42c8dcbb3203` |
-| 12 | `example` | [(anonymous)](../../../../Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/example-source-edition-2.md) | 68 | `declaration-track:176393426d8cdda80a117c36b1c9868af70cb1ef87ffd7cea47fbe42ef0cb6aa` |
-| 13 | `example` | [(anonymous)](../../../../Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/example-source-edition-4.md) | 70 | `declaration-track:4066d2ad892b10e2e9e5d74f96ffdc9c1fce85ca8880e16bdafe76df85e209bb` |
+| 1 | `theorem` | [diamond_middle_obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/diamond-middle-obstruction.md) | 15 | `result-track:84bb083ab8c4a630b3f8e0c54b9802949ef99dc0bc52a1a13205dd4b97c96b53` |
+| 2 | `theorem` | [diamond_no_preserving_section](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/diamond-no-preserving-section.md) | 20 | `result-track:5a0497a1e4b631fe2b54adc4585ce9cc9eaaa0b1bec417627d09b7f4e8cf3d7e` |
+| 3 | `theorem` | [diamond_selected_right_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/diamond-selected-right-inverse.md) | 29 | `result-track:9cf38e6a2fbac0ec18c9184f08360bc4c3b87a14b2dd4d7b1a662a35db0a7469` |
+| 4 | `theorem` | [diamond_selected_not_preserving](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/diamond-selected-not-preserving.md) | 33 | `result-track:a78a1f883d87233ca893cea8451a3596989daf88cde963cd575dcfc589a56293` |
+| 5 | `theorem` | [actual_diamond_counterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/actual-diamond-counterexample.md) | 39 | `result-track:b1ea61938c9a6467f047300588a9144be7fbbbe6ac22a7ce028bcd8a4ce48c1e` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/example-source-edition-5.md) | 46 | `declaration-track:b7959e33d0b56652824fa0e342862a3e6e719646147777088285f6d53060e824` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/example-source-edition-3.md) | 48 | `declaration-track:1eb4233e9d1909ab140765d704eb55e487b9df8f26af97822e1ef4143b573107` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/example.md) | 50 | `declaration-track:17046584c7ed0c7bf59439f324753e5c89474c126993848c313dacf94c3a1d9b` |
+| 9 | `def` | [leftTopHistory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/lefttophistory.md) | 52 | `declaration-track:21fc8ffc589d7a3721e32a629e40727baa63d8b7dd0ee1215a46270168ce45a0` |
+| 10 | `def` | [rightTopHistory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/righttophistory.md) | 56 | `declaration-track:5c9de02b3683dd2069363e6bf1a30ece046fe0b77c97653b84e594c96c36a1bf` |
+| 11 | `theorem` | [distinct_top_histories](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/distinct-top-histories.md) | 60 | `result-track:dcb432ef9bfd1fadebf6fb3e996349f0af68e7ad79335395dcbc42c8dcbb3203` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/example-source-edition-2.md) | 68 | `declaration-track:176393426d8cdda80a117c36b1c9868af70cb1ef87ffd7cea47fbe42ef0cb6aa` |
+| 13 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointSectionHistoricalSourceEdition2.lean/declarations/example-source-edition-4.md) | 70 | `declaration-track:4066d2ad892b10e2e9e5d74f96ffdc9c1fce85ca8880e16bdafe76df85e209bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

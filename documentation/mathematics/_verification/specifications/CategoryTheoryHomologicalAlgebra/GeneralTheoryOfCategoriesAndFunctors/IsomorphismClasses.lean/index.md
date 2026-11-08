@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsomorphismClasses.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsomorphismClasses.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsomorphismClasses.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsomorphismClasses.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsIsomorphic](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsomorphismClasses.lean/declarations/isisomorphic.md) | 27 | `declaration-track:cf5b556e29917f9ca606574adc392850f44f63910ae8c4682d08ec401a39f6b3` |
-| 2 | `def` | [isIsomorphicSetoid](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsomorphismClasses.lean/declarations/isisomorphicsetoid.md) | 32 | `declaration-track:515d006d02611e1bb95c0e6f883496cd162976ce903bf5d0369ad108c818047f` |
-| 3 | `def` | [isomorphismClasses](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsomorphismClasses.lean/declarations/isomorphismclasses.md) | 40 | `declaration-track:e8e76f5cb820feb2a489c08e36a0e2efff23bba23a34fa68edfd404ea7699ac3` |
-| 4 | `theorem` | [Groupoid.isIsomorphic_iff_nonempty_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsomorphismClasses.lean/declarations/groupoid-isisomorphic-iff-nonempty-hom.md) | 58 | `result-track:20c0dbad9ea9ff0d8cc94cf97c6c071a0148685cca861b3033471e0a2a08c027` |
+| 1 | `def` | [IsIsomorphic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsomorphismClasses.lean/declarations/isisomorphic.md) | 27 | `declaration-track:cf5b556e29917f9ca606574adc392850f44f63910ae8c4682d08ec401a39f6b3` |
+| 2 | `def` | [isIsomorphicSetoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsomorphismClasses.lean/declarations/isisomorphicsetoid.md) | 32 | `declaration-track:515d006d02611e1bb95c0e6f883496cd162976ce903bf5d0369ad108c818047f` |
+| 3 | `def` | [isomorphismClasses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsomorphismClasses.lean/declarations/isomorphismclasses.md) | 40 | `declaration-track:e8e76f5cb820feb2a489c08e36a0e2efff23bba23a34fa68edfd404ea7699ac3` |
+| 4 | `theorem` | [Groupoid.isIsomorphic_iff_nonempty_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsomorphismClasses.lean/declarations/groupoid-isisomorphic-iff-nonempty-hom.md) | 58 | `result-track:20c0dbad9ea9ff0d8cc94cf97c6c071a0148685cca861b3033471e0a2a08c027` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

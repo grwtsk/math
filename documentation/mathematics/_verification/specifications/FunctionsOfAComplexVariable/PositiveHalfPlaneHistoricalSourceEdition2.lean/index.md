@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/PositiveHalfPlaneHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/PositiveHalfPlaneHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PositiveHalfPlaneHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PositiveHalfPlaneHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [PositiveHalfPlane](../../../../FunctionsOfAComplexVariable/PositiveHalfPlaneHistoricalSourceEdition2.lean/declarations/positivehalfplane.md) | 9 | `declaration-track:31a1533b029b67556483ff56660e2b98d585a188332ae65e0e8cd180f333b063` |
+| 1 | `def` | [PositiveHalfPlane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PositiveHalfPlaneHistoricalSourceEdition2.lean/declarations/positivehalfplane.md) | 9 | `declaration-track:31a1533b029b67556483ff56660e2b98d585a188332ae65e0e8cd180f333b063` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

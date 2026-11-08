@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceOverlapResidualDirect.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceOverlapResidualDirect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceOverlapResidualDirect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceOverlapResidualDirect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [residual_upper_of_overlap_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceOverlapResidualDirect.lean/declarations/residual-upper-of-overlap-upper.md) | 19 | `result-track:12ed72470e65e726a251a4ba1ac6962b6b0fed70d58697a0419ce9c5ee08be44` |
-| 2 | `theorem` | [residual_tail_of_overlap_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceOverlapResidualDirect.lean/declarations/residual-tail-of-overlap-tail.md) | 28 | `result-track:e53090960fd9450e2eb8854f4ceb9efd2a7c37c49975cc9e5bf761e4cd6ad101` |
-| 3 | `theorem` | [all_real_lower_of_overlap_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceOverlapResidualDirect.lean/declarations/all-real-lower-of-overlap-tail.md) | 38 | `result-track:eb32fa79f255bafda5e05c73504873f06c17f950a785b94ff40abe62cb37492f` |
-| 4 | `theorem` | [estimate_of_overlap_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceOverlapResidualDirect.lean/declarations/estimate-of-overlap-tail.md) | 47 | `result-track:82d051e5055b7f66c866a00480957fefcdc85bd1fadf570a09abb05fae0314ea` |
+| 1 | `theorem` | [residual_upper_of_overlap_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceOverlapResidualDirect.lean/declarations/residual-upper-of-overlap-upper.md) | 19 | `result-track:12ed72470e65e726a251a4ba1ac6962b6b0fed70d58697a0419ce9c5ee08be44` |
+| 2 | `theorem` | [residual_tail_of_overlap_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceOverlapResidualDirect.lean/declarations/residual-tail-of-overlap-tail.md) | 28 | `result-track:e53090960fd9450e2eb8854f4ceb9efd2a7c37c49975cc9e5bf761e4cd6ad101` |
+| 3 | `theorem` | [all_real_lower_of_overlap_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceOverlapResidualDirect.lean/declarations/all-real-lower-of-overlap-tail.md) | 38 | `result-track:eb32fa79f255bafda5e05c73504873f06c17f950a785b94ff40abe62cb37492f` |
+| 4 | `theorem` | [estimate_of_overlap_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceOverlapResidualDirect.lean/declarations/estimate-of-overlap-tail.md) | 47 | `result-track:82d051e5055b7f66c866a00480957fefcdc85bd1fadf570a09abb05fae0314ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

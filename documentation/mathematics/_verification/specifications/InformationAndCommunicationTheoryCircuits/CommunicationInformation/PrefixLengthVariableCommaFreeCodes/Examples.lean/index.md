@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Examples.lean/index.md) · [Full source](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Examples.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Examples.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Examples.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.InformationTheory.Huffman.RoundTrip`](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/RoundTrip.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.InformationTheory.Huffman.RoundTrip`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/RoundTrip.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pythonAssignment](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Examples.lean/declarations/pythonassignment.md) | 12 | `declaration-track:9ec49e0a04c2cbdce7647edd502ff8363659927147cbf37b37ca04556c2907d5` |
-| 2 | `theorem` | [assignment_bytes](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Examples.lean/declarations/assignment-bytes.md) | 14 | `result-track:735ab9c1bb6b1fec7265e8c4a79aab87fc87899b01b34ce38dd5a8697b499044` |
-| 3 | `theorem` | [assignment_bitCount](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Examples.lean/declarations/assignment-bitcount.md) | 16 | `result-track:bbb3758e6fdc1a63a51a1e9be220d02647a7e1a57a122159eb765bc01d9fd6fb` |
-| 4 | `theorem` | [assignment_roundTrip](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Examples.lean/declarations/assignment-roundtrip.md) | 18 | `result-track:988e0e33d59d4a6bfd051ea3e3d5aaef5e385a47d2d37b46ea6edabd33e03784` |
-| 5 | `theorem` | [deterministic_ties](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Examples.lean/declarations/deterministic-ties.md) | 21 | `result-track:4092b9123d412a073a232987ec8c53690bc474123b2f3021d387c57abc98c436` |
-| 6 | `theorem` | [singleton_zero_bits](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Examples.lean/declarations/singleton-zero-bits.md) | 24 | `result-track:687c30f8af7696554c201ff01f51d8e205dd7f3aee3c1687293bc6ec0ccc5575` |
-| 7 | `theorem` | [singleton_bitCount](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Examples.lean/declarations/singleton-bitcount.md) | 26 | `result-track:41f8dd5021d6c2c68764622ec525999352351c36b402c82b0652f0db744f7422` |
+| 1 | `def` | [pythonAssignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Examples.lean/declarations/pythonassignment.md) | 12 | `declaration-track:9ec49e0a04c2cbdce7647edd502ff8363659927147cbf37b37ca04556c2907d5` |
+| 2 | `theorem` | [assignment_bytes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Examples.lean/declarations/assignment-bytes.md) | 14 | `result-track:735ab9c1bb6b1fec7265e8c4a79aab87fc87899b01b34ce38dd5a8697b499044` |
+| 3 | `theorem` | [assignment_bitCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Examples.lean/declarations/assignment-bitcount.md) | 16 | `result-track:bbb3758e6fdc1a63a51a1e9be220d02647a7e1a57a122159eb765bc01d9fd6fb` |
+| 4 | `theorem` | [assignment_roundTrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Examples.lean/declarations/assignment-roundtrip.md) | 18 | `result-track:988e0e33d59d4a6bfd051ea3e3d5aaef5e385a47d2d37b46ea6edabd33e03784` |
+| 5 | `theorem` | [deterministic_ties](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Examples.lean/declarations/deterministic-ties.md) | 21 | `result-track:4092b9123d412a073a232987ec8c53690bc474123b2f3021d387c57abc98c436` |
+| 6 | `theorem` | [singleton_zero_bits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Examples.lean/declarations/singleton-zero-bits.md) | 24 | `result-track:687c30f8af7696554c201ff01f51d8e205dd7f3aee3c1687293bc6ec0ccc5575` |
+| 7 | `theorem` | [singleton_bitCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Examples.lean/declarations/singleton-bitcount.md) | 26 | `result-track:41f8dd5021d6c2c68764622ec525999352351c36b402c82b0652f0db744f7422` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

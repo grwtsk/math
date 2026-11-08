@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/CountingNamespacedPublic.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/CountingNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CountingNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CountingNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [badVertices](../../../../../Combinatorics/GraphTheory/CountingNamespacedPublic.lean/declarations/badvertices.md) | 43 | `declaration-track:327cfa0a730dac1cbe77472907dbc6c78ed6dd5d9c64afa310467a9ede8b7e1e` |
-| 2 | `lemma` | [card_interedges_badVertices_le](../../../../../Combinatorics/GraphTheory/CountingNamespacedPublic.lean/declarations/card-interedges-badvertices-le.md) | 46 | `result-track:d0d4b1b2fc4ea9555ac8d35ad689fe65d914377928609ec69a8df9ad607f6f57` |
-| 3 | `lemma` | [edgeDensity_badVertices_le](../../../../../Combinatorics/GraphTheory/CountingNamespacedPublic.lean/declarations/edgedensity-badvertices-le.md) | 55 | `result-track:05e19a69907f28a2a7001737696b973dc0c315a5ab3d3ce094063749398fb9e2` |
-| 4 | `lemma` | [card_badVertices_le](../../../../../Combinatorics/GraphTheory/CountingNamespacedPublic.lean/declarations/card-badvertices-le.md) | 63 | `result-track:a06ec5d093c9d64a59406d02d825df07c8b62706e952eb16031c9ab6605c7c7d` |
-| 5 | `lemma` | [triangle_split_helper](../../../../../Combinatorics/GraphTheory/CountingNamespacedPublic.lean/declarations/triangle-split-helper.md) | 74 | `result-track:f53eb7da2559663f0dae8c986271466542ff8e907ad88a33fa9edb4dab0a1080` |
-| 6 | `lemma` | [good_vertices_triangle_card](../../../../../Combinatorics/GraphTheory/CountingNamespacedPublic.lean/declarations/good-vertices-triangle-card.md) | 84 | `result-track:1cb7fd2acf032abe58002d92223f0b14a4ba76c0fad20614708f98aa64bdeb9d` |
-| 7 | `lemma` | [triangle_counting'](../../../../../Combinatorics/GraphTheory/CountingNamespacedPublic.lean/declarations/triangle-counting.md) | 112 | `result-track:3e8b727d72f3528d936219c448637d3df5574711433e795cc2d11e3c599a3cb7` |
-| 8 | `lemma` | [triple_eq_triple_of_mem](../../../../../Combinatorics/GraphTheory/CountingNamespacedPublic.lean/declarations/triple-eq-triple-of-mem.md) | 146 | `result-track:8f6b4519a41c23a7054ad8946c00429b7c9eab16a6a46e73a2ab43c6aa0ea3b4` |
-| 9 | `lemma` | [triangle_counting](../../../../../Combinatorics/GraphTheory/CountingNamespacedPublic.lean/declarations/triangle-counting-source-edition-2.md) | 159 | `result-track:5c5f3519b89f0b196a017db7ab2645e93c0525e480caca999d04c14efe5ebfb8` |
+| 1 | `def` | [badVertices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CountingNamespacedPublic.lean/declarations/badvertices.md) | 43 | `declaration-track:327cfa0a730dac1cbe77472907dbc6c78ed6dd5d9c64afa310467a9ede8b7e1e` |
+| 2 | `lemma` | [card_interedges_badVertices_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CountingNamespacedPublic.lean/declarations/card-interedges-badvertices-le.md) | 46 | `result-track:d0d4b1b2fc4ea9555ac8d35ad689fe65d914377928609ec69a8df9ad607f6f57` |
+| 3 | `lemma` | [edgeDensity_badVertices_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CountingNamespacedPublic.lean/declarations/edgedensity-badvertices-le.md) | 55 | `result-track:05e19a69907f28a2a7001737696b973dc0c315a5ab3d3ce094063749398fb9e2` |
+| 4 | `lemma` | [card_badVertices_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CountingNamespacedPublic.lean/declarations/card-badvertices-le.md) | 63 | `result-track:a06ec5d093c9d64a59406d02d825df07c8b62706e952eb16031c9ab6605c7c7d` |
+| 5 | `lemma` | [triangle_split_helper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CountingNamespacedPublic.lean/declarations/triangle-split-helper.md) | 74 | `result-track:f53eb7da2559663f0dae8c986271466542ff8e907ad88a33fa9edb4dab0a1080` |
+| 6 | `lemma` | [good_vertices_triangle_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CountingNamespacedPublic.lean/declarations/good-vertices-triangle-card.md) | 84 | `result-track:1cb7fd2acf032abe58002d92223f0b14a4ba76c0fad20614708f98aa64bdeb9d` |
+| 7 | `lemma` | [triangle_counting'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CountingNamespacedPublic.lean/declarations/triangle-counting.md) | 112 | `result-track:3e8b727d72f3528d936219c448637d3df5574711433e795cc2d11e3c599a3cb7` |
+| 8 | `lemma` | [triple_eq_triple_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CountingNamespacedPublic.lean/declarations/triple-eq-triple-of-mem.md) | 146 | `result-track:8f6b4519a41c23a7054ad8946c00429b7c9eab16a6a46e73a2ab43c6aa0ea3b4` |
+| 9 | `lemma` | [triangle_counting](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CountingNamespacedPublic.lean/declarations/triangle-counting-source-edition-2.md) | 159 | `result-track:5c5f3519b89f0b196a017db7ab2645e93c0525e480caca999d04c14efe5ebfb8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

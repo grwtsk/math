@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingCenterNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingCenterNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingCenterNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingCenterNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [natCast_mem_center](../../../../AssociativeRingsAndAlgebras/RingCenterNamespaced.lean/declarations/natcast-mem-center.md) | 31 | `result-track:38156543f467f03023300e88bfa538eceebdb54d2825a02766474abcfeb66a7f` |
-| 2 | `theorem` | [ofNat_mem_center](../../../../AssociativeRingsAndAlgebras/RingCenterNamespaced.lean/declarations/ofnat-mem-center.md) | 47 | `result-track:0adc0ed48dd27674f603a0ddc255b9507c54fd4ab32d7b020338046c455ee410` |
-| 3 | `theorem` | [intCast_mem_center](../../../../AssociativeRingsAndAlgebras/RingCenterNamespaced.lean/declarations/intcast-mem-center.md) | 52 | `result-track:d6c58e3881968996ef338addc301df085c5e61a21df256082fe0ca00c9d8786b` |
-| 4 | `theorem` | [add_mem_center](../../../../AssociativeRingsAndAlgebras/RingCenterNamespaced.lean/declarations/add-mem-center.md) | 78 | `result-track:f149e55418d3c90b9911fa512bebca47e57dfddc3f20c0d788cbfaf23886e055` |
-| 5 | `theorem` | [neg_mem_center](../../../../AssociativeRingsAndAlgebras/RingCenterNamespaced.lean/declarations/neg-mem-center.md) | 86 | `result-track:9194baf4dd27e202b3a7d88d873c834354bd6bd588af6b11781eebcedc948833` |
+| 1 | `theorem` | [natCast_mem_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingCenterNamespaced.lean/declarations/natcast-mem-center.md) | 31 | `result-track:38156543f467f03023300e88bfa538eceebdb54d2825a02766474abcfeb66a7f` |
+| 2 | `theorem` | [ofNat_mem_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingCenterNamespaced.lean/declarations/ofnat-mem-center.md) | 47 | `result-track:0adc0ed48dd27674f603a0ddc255b9507c54fd4ab32d7b020338046c455ee410` |
+| 3 | `theorem` | [intCast_mem_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingCenterNamespaced.lean/declarations/intcast-mem-center.md) | 52 | `result-track:d6c58e3881968996ef338addc301df085c5e61a21df256082fe0ca00c9d8786b` |
+| 4 | `theorem` | [add_mem_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingCenterNamespaced.lean/declarations/add-mem-center.md) | 78 | `result-track:f149e55418d3c90b9911fa512bebca47e57dfddc3f20c0d788cbfaf23886e055` |
+| 5 | `theorem` | [neg_mem_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingCenterNamespaced.lean/declarations/neg-mem-center.md) | 86 | `result-track:9194baf4dd27e202b3a7d88d873c834354bd6bd588af6b11781eebcedc948833` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

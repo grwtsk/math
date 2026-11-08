@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Array.of_push_eq_push](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/declarations/array-of-push-eq-push.md) | 19 | `result-track:08b0fc5556ea7de284324f4bda520c546a9191fef2e62f0f217a81b4260dfe65` |
-| 2 | `theorem` | [List.size_toArrayAux](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/declarations/list-size-toarrayaux.md) | 25 | `result-track:57f399cda2e92871c959bb9c301604f6b11f1f61a7789319b6ecf143b08e1184` |
-| 3 | `theorem` | [List.of_toArrayAux_eq_toArrayAux](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/declarations/list-of-toarrayaux-eq-toarrayaux.md) | 30 | `result-track:e6328d243ee9280f93ba306e286007bbb0decfac226a0fccba1f82d3ba6aa4e2` |
-| 4 | `theorem` | [List.toArray_eq_toArray_eq](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/declarations/list-toarray-eq-toarray-eq.md) | 43 | `result-track:2d48e173da396a0b4c0d2ba31045ab1baa043727d1b65e7c6fc6e3597a876680` |
-| 5 | `def` | [Array.mapM'](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/declarations/array-mapm.md) | 51 | `declaration-track:91b47334f5c8446f8cd19efa8c9bf98c9926b905d8c05d4a0633046296599d99` |
-| 6 | `def` | [mapMonoMImp](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/declarations/mapmonomimp.md) | 64 | `declaration-track:feec67cb969e87fc4e431ee9c4f92ecf867e700a583e455561a878f9d3a20a20` |
-| 7 | `def` | [Array.mapMonoM](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/declarations/array-mapmonom.md) | 84 | `declaration-track:a0f73ea5bbc5e8e1651fca85b92f69ae8466b889ba91f011dc89ed1dbffd6ab7` |
-| 8 | `def` | [Array.mapMono](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/declarations/array-mapmono.md) | 93 | `declaration-track:ba00b55c890d95e7358191f2351872f57d82a20dad6000387b599a4dca63340b` |
+| 1 | `theorem` | [Array.of_push_eq_push](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/declarations/array-of-push-eq-push.md) | 19 | `result-track:08b0fc5556ea7de284324f4bda520c546a9191fef2e62f0f217a81b4260dfe65` |
+| 2 | `theorem` | [List.size_toArrayAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/declarations/list-size-toarrayaux.md) | 25 | `result-track:57f399cda2e92871c959bb9c301604f6b11f1f61a7789319b6ecf143b08e1184` |
+| 3 | `theorem` | [List.of_toArrayAux_eq_toArrayAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/declarations/list-of-toarrayaux-eq-toarrayaux.md) | 30 | `result-track:e6328d243ee9280f93ba306e286007bbb0decfac226a0fccba1f82d3ba6aa4e2` |
+| 4 | `theorem` | [List.toArray_eq_toArray_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/declarations/list-toarray-eq-toarray-eq.md) | 43 | `result-track:2d48e173da396a0b4c0d2ba31045ab1baa043727d1b65e7c6fc6e3597a876680` |
+| 5 | `def` | [Array.mapM'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/declarations/array-mapm.md) | 51 | `declaration-track:91b47334f5c8446f8cd19efa8c9bf98c9926b905d8c05d4a0633046296599d99` |
+| 6 | `def` | [mapMonoMImp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/declarations/mapmonomimp.md) | 64 | `declaration-track:feec67cb969e87fc4e431ee9c4f92ecf867e700a583e455561a878f9d3a20a20` |
+| 7 | `def` | [Array.mapMonoM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/declarations/array-mapmonom.md) | 84 | `declaration-track:a0f73ea5bbc5e8e1651fca85b92f69ae8466b889ba91f011dc89ed1dbffd6ab7` |
+| 8 | `def` | [Array.mapMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicAuxPublicArray.lean/declarations/array-mapmono.md) | 93 | `declaration-track:ba00b55c890d95e7358191f2351872f57d82a20dad6000387b599a4dca63340b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

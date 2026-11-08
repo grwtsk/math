@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceSharpBalancedFirstPrimeHeadNamespacedEdition4SourceEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceSharpBalancedFirstPrimeHeadNamespacedEdition4SourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSharpBalancedFirstPrimeHeadNamespacedEdition4SourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSharpBalancedFirstPrimeHeadNamespacedEdition4SourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sharpBalancedHeadCost](../../../../MeasureAndIntegration/SourceSharpBalancedFirstPrimeHeadNamespacedEdition4SourceEdition2.lean/declarations/sharpbalancedheadcost.md) | 23 | `declaration-track:6fb2e24596745af71bd156326e965dffdc8dfccf3b524ef14624b138f3f647ac` |
-| 2 | `theorem` | [floor_head_orders](../../../../MeasureAndIntegration/SourceSharpBalancedFirstPrimeHeadNamespacedEdition4SourceEdition2.lean/declarations/floor-head-orders.md) | 27 | `result-track:a4d27aa81696725f88119ae92b079edfd7cecd1d7a2b182277338a74e65206ac` |
-| 3 | `theorem` | [balancedFirstPrimeHead_abs_le_sharp](../../../../MeasureAndIntegration/SourceSharpBalancedFirstPrimeHeadNamespacedEdition4SourceEdition2.lean/declarations/balancedfirstprimehead-abs-le-sharp.md) | 39 | `result-track:2c87e5671f7064efff9c5d4036c66a9496cbd9c75173a5ee3e1fe8b860f2c446` |
+| 1 | `def` | [sharpBalancedHeadCost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSharpBalancedFirstPrimeHeadNamespacedEdition4SourceEdition2.lean/declarations/sharpbalancedheadcost.md) | 23 | `declaration-track:6fb2e24596745af71bd156326e965dffdc8dfccf3b524ef14624b138f3f647ac` |
+| 2 | `theorem` | [floor_head_orders](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSharpBalancedFirstPrimeHeadNamespacedEdition4SourceEdition2.lean/declarations/floor-head-orders.md) | 27 | `result-track:a4d27aa81696725f88119ae92b079edfd7cecd1d7a2b182277338a74e65206ac` |
+| 3 | `theorem` | [balancedFirstPrimeHead_abs_le_sharp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSharpBalancedFirstPrimeHeadNamespacedEdition4SourceEdition2.lean/declarations/balancedfirstprimehead-abs-le-sharp.md) | 39 | `result-track:2c87e5671f7064efff9c5d4036c66a9496cbd9c75173a5ee3e1fe8b860f2c446` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

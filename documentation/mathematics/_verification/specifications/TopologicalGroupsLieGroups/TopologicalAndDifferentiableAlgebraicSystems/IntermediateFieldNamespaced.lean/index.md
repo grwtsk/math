@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IntermediateFieldNamespaced.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IntermediateFieldNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IntermediateFieldNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IntermediateFieldNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [IntermediateField.continuousSMul](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IntermediateFieldNamespaced.lean/declarations/intermediatefield-continuoussmul.md) | 31 | `declaration-track:3453615bee222fc5b7277791fc747c69a1c018efff6475d185647cc5879cafc1` |
-| 2 | `instance` | [IntermediateField.botContinuousSMul](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IntermediateFieldNamespaced.lean/declarations/intermediatefield-botcontinuoussmul.md) | 34 | `declaration-track:18b45ff4684fdcd43d0274a2f15e714611f6c6f4378e5744a426d8df666c062a` |
+| 1 | `instance` | [IntermediateField.continuousSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IntermediateFieldNamespaced.lean/declarations/intermediatefield-continuoussmul.md) | 31 | `declaration-track:3453615bee222fc5b7277791fc747c69a1c018efff6475d185647cc5879cafc1` |
+| 2 | `instance` | [IntermediateField.botContinuousSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IntermediateFieldNamespaced.lean/declarations/intermediatefield-botcontinuoussmul.md) | 34 | `declaration-track:18b45ff4684fdcd43d0274a2f15e714611f6c6f4378e5744a426d8df666c062a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

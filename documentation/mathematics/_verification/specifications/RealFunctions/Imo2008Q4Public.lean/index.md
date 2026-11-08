@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Imo2008Q4Public.lean/index.md) · [Full source](../../../../RealFunctions/Imo2008Q4Public.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2008Q4Public.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2008Q4Public.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [abs_eq_one_of_pow_eq_one](../../../../RealFunctions/Imo2008Q4Public.lean/declarations/abs-eq-one-of-pow-eq-one.md) | 33 | `result-track:ddbfaa3d8de0feb4ffa820fd1b1824cfb9daa845801642f82898759f965d6270` |
-| 2 | `theorem` | [imo2008_q4](../../../../RealFunctions/Imo2008Q4Public.lean/declarations/imo2008-q4.md) | 40 | `result-track:b3cac8013e88e6c919e29975ca34376da2d46519f994f45555d2b8c6b519e998` |
+| 1 | `theorem` | [abs_eq_one_of_pow_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2008Q4Public.lean/declarations/abs-eq-one-of-pow-eq-one.md) | 33 | `result-track:ddbfaa3d8de0feb4ffa820fd1b1824cfb9daa845801642f82898759f965d6270` |
+| 2 | `theorem` | [imo2008_q4](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2008Q4Public.lean/declarations/imo2008-q4.md) | 40 | `result-track:b3cac8013e88e6c919e29975ca34376da2d46519f994f45555d2b8c6b519e998` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorusClosureNamespacedTorusClosureCertificate.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorusClosureNamespacedTorusClosureCertificate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorusClosureNamespacedTorusClosureCertificate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorusClosureNamespacedTorusClosureCertificate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TorusClosureCertificate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorusClosureNamespacedTorusClosureCertificate.lean/declarations/torusclosurecertificate.md) | 15 | `declaration-track:fa62e8c8b32d7009da2ddebc3f19f4c033b8ffddb6fd4859b650c4098900bf58` |
-| 2 | `def` | [TorusClosureCertificate.status](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorusClosureNamespacedTorusClosureCertificate.lean/declarations/torusclosurecertificate-status.md) | 21 | `declaration-track:94aca3dcdd4627d02f4a991655fdc66f29dcbd8c33a26d73de84038dec296dd3` |
+| 1 | `structure` | [TorusClosureCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorusClosureNamespacedTorusClosureCertificate.lean/declarations/torusclosurecertificate.md) | 15 | `declaration-track:fa62e8c8b32d7009da2ddebc3f19f4c033b8ffddb6fd4859b650c4098900bf58` |
+| 2 | `def` | [TorusClosureCertificate.status](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorusClosureNamespacedTorusClosureCertificate.lean/declarations/torusclosurecertificate-status.md) | 21 | `declaration-track:94aca3dcdd4627d02f4a991655fdc66f29dcbd8c33a26d73de84038dec296dd3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

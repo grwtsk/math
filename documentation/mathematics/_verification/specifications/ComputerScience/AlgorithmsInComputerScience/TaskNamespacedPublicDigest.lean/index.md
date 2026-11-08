@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TaskNamespacedPublicDigest.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TaskNamespacedPublicDigest.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TaskNamespacedPublicDigest.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TaskNamespacedPublicDigest.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Digest](../../../../../ComputerScience/AlgorithmsInComputerScience/TaskNamespacedPublicDigest.lean/declarations/digest.md) | 28 | `declaration-track:c3b30eba5d876feeecb63a80deb37cf8a08834407088740029310149aee4c4fa` |
-| 2 | `def` | [digestString](../../../../../ComputerScience/AlgorithmsInComputerScience/TaskNamespacedPublicDigest.lean/declarations/digeststring.md) | 31 | `declaration-track:653c69dad04d47fdb6e5253388669bf4e9411b6dbd4c840c5cd24b7dcb441724` |
-| 3 | `structure` | [Provenance](../../../../../ComputerScience/AlgorithmsInComputerScience/TaskNamespacedPublicDigest.lean/declarations/provenance.md) | 38 | `declaration-track:48fdd55d8fa559b2ea807c99561d021d5a1026266073e7b370794bccf111ac0a` |
-| 4 | `structure` | [TheoremTask](../../../../../ComputerScience/AlgorithmsInComputerScience/TaskNamespacedPublicDigest.lean/declarations/theoremtask.md) | 48 | `declaration-track:a244cea3e00b203f07df3849c4203b1cf6b4f79099f4fb357f476b428905792c` |
-| 5 | `structure` | [Trial](../../../../../ComputerScience/AlgorithmsInComputerScience/TaskNamespacedPublicDigest.lean/declarations/trial.md) | 59 | `declaration-track:841db831843befed80ea281e62815a82014b7e270cf39ef13fcafe3c60adadf5` |
-| 6 | `def` | [Trial.statementHash](../../../../../ComputerScience/AlgorithmsInComputerScience/TaskNamespacedPublicDigest.lean/declarations/trial-statementhash.md) | 67 | `declaration-track:60f148d9ce4046919f54a73d4a5e239363f8b964969ed310bbd345e0fda94012` |
-| 7 | `theorem` | [Trial.statementHash_fixed](../../../../../ComputerScience/AlgorithmsInComputerScience/TaskNamespacedPublicDigest.lean/declarations/trial-statementhash-fixed.md) | 70 | `result-track:85f965363eeb41903794f15ad375864f8f074a653ba8bfe8f6e4ad7708c7b23b` |
+| 1 | `abbrev` | [Digest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TaskNamespacedPublicDigest.lean/declarations/digest.md) | 28 | `declaration-track:c3b30eba5d876feeecb63a80deb37cf8a08834407088740029310149aee4c4fa` |
+| 2 | `def` | [digestString](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TaskNamespacedPublicDigest.lean/declarations/digeststring.md) | 31 | `declaration-track:653c69dad04d47fdb6e5253388669bf4e9411b6dbd4c840c5cd24b7dcb441724` |
+| 3 | `structure` | [Provenance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TaskNamespacedPublicDigest.lean/declarations/provenance.md) | 38 | `declaration-track:48fdd55d8fa559b2ea807c99561d021d5a1026266073e7b370794bccf111ac0a` |
+| 4 | `structure` | [TheoremTask](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TaskNamespacedPublicDigest.lean/declarations/theoremtask.md) | 48 | `declaration-track:a244cea3e00b203f07df3849c4203b1cf6b4f79099f4fb357f476b428905792c` |
+| 5 | `structure` | [Trial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TaskNamespacedPublicDigest.lean/declarations/trial.md) | 59 | `declaration-track:841db831843befed80ea281e62815a82014b7e270cf39ef13fcafe3c60adadf5` |
+| 6 | `def` | [Trial.statementHash](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TaskNamespacedPublicDigest.lean/declarations/trial-statementhash.md) | 67 | `declaration-track:60f148d9ce4046919f54a73d4a5e239363f8b964969ed310bbd345e0fda94012` |
+| 7 | `theorem` | [Trial.statementHash_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TaskNamespacedPublicDigest.lean/declarations/trial-statementhash-fixed.md) | 70 | `result-track:85f965363eeb41903794f15ad375864f8f074a653ba8bfe8f6e4ad7708c7b23b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exp_neg_integrableOn_Ioi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespaced.lean/declarations/exp-neg-integrableon-ioi.md) | 36 | `result-track:c5646fb6bf328b6f005970c47da239684f3669976ba63165f85912c2b61f2680` |
-| 2 | `theorem` | [integrable_of_isBigO_exp_neg](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespaced.lean/declarations/integrable-of-isbigo-exp-neg.md) | 46 | `result-track:637db649f84f2a4ad054fc560c3a09d1214f332bedb24562f18f77150b6850ea` |
+| 1 | `theorem` | [exp_neg_integrableOn_Ioi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespaced.lean/declarations/exp-neg-integrableon-ioi.md) | 36 | `result-track:c5646fb6bf328b6f005970c47da239684f3669976ba63165f85912c2b61f2680` |
+| 2 | `theorem` | [integrable_of_isBigO_exp_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ExpDecayNamespaced.lean/declarations/integrable-of-isbigo-exp-neg.md) | 46 | `result-track:637db649f84f2a4ad054fc560c3a09d1214f332bedb24562f18f77150b6850ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

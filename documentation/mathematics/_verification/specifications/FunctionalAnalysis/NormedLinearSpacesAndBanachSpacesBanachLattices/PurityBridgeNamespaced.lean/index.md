@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PurityBridgeNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PurityBridgeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PurityBridgeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PurityBridgeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PurityOnTraceSpectrum](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PurityBridgeNamespaced.lean/declarations/purityontracespectrum.md) | 24 | `declaration-track:62b03ba0ce5ca6895f2758216ca77f86f62ca2e772d25400ed8ae7ec02b8de8e` |
-| 2 | `structure` | [SpectralVariationCertificate](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PurityBridgeNamespaced.lean/declarations/spectralvariationcertificate.md) | 39 | `declaration-track:9ce83d09c27061e52ffe0178346cd127f4b8d68e50d0ea4b4db8f96e8bacd08c` |
+| 1 | `structure` | [PurityOnTraceSpectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PurityBridgeNamespaced.lean/declarations/purityontracespectrum.md) | 24 | `declaration-track:62b03ba0ce5ca6895f2758216ca77f86f62ca2e772d25400ed8ae7ec02b8de8e` |
+| 2 | `structure` | [SpectralVariationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PurityBridgeNamespaced.lean/declarations/spectralvariationcertificate.md) | 39 | `declaration-track:9ce83d09c27061e52ffe0178346cd127f4b8d68e50d0ea4b4db8f96e8bacd08c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

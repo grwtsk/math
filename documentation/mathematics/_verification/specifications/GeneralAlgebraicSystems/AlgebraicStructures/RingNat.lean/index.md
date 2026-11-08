@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RingNat.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RingNat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RingNat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RingNat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [even_sum_iff_even_card_odd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RingNat.lean/declarations/even-sum-iff-even-card-odd.md) | 21 | `result-track:cf8308866a4d8cea9bea1e2dc59c4429d7c37aa8911dae1efc6d83d17c1ed97b` |
-| 2 | `lemma` | [odd_sum_iff_odd_card_odd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RingNat.lean/declarations/odd-sum-iff-odd-card-odd.md) | 29 | `result-track:40a3d4c3490fd4884fa6bf901adbcda8c078df5eff97d731f3836cca8a506632` |
-| 3 | `theorem` | [card_preimage_eq_sum_card_image_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RingNat.lean/declarations/card-preimage-eq-sum-card-image-eq.md) | 33 | `result-track:44b710f5c0173d6d5148177715a74fec64e75eb243f32403c81046d17053d77c` |
+| 1 | `lemma` | [even_sum_iff_even_card_odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RingNat.lean/declarations/even-sum-iff-even-card-odd.md) | 21 | `result-track:cf8308866a4d8cea9bea1e2dc59c4429d7c37aa8911dae1efc6d83d17c1ed97b` |
+| 2 | `lemma` | [odd_sum_iff_odd_card_odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RingNat.lean/declarations/odd-sum-iff-odd-card-odd.md) | 29 | `result-track:40a3d4c3490fd4884fa6bf901adbcda8c078df5eff97d731f3836cca8a506632` |
+| 3 | `theorem` | [card_preimage_eq_sum_card_image_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RingNat.lean/declarations/card-preimage-eq-sum-card-image-eq.md) | 33 | `result-track:44b710f5c0173d6d5148177715a74fec64e75eb243f32403c81046d17053d77c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

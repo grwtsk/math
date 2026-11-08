@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ConductorThreePrimeMomentProgramPublic.lean/index.md) · [Full source](../../../../Combinatorics/ConductorThreePrimeMomentProgramPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreePrimeMomentProgramPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreePrimeMomentProgramPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [UniformMaximalMomentEstimate](../../../../Combinatorics/ConductorThreePrimeMomentProgramPublic.lean/declarations/uniformmaximalmomentestimate.md) | 34 | `declaration-track:f57f0865c92de6ef48bcfa5a706280f582c50a1ba9be08beccc5dbbd50a70cb0` |
-| 2 | `def` | [ConductorThreePrimeMomentProgram](../../../../Combinatorics/ConductorThreePrimeMomentProgramPublic.lean/declarations/conductorthreeprimemomentprogram.md) | 46 | `declaration-track:3f4036aab4c75297a8d754d685056842310e57f31492298bf7777948b1c3dd72` |
-| 3 | `theorem` | [uniformMaximalMomentEstimate_implies_arithmetic](../../../../Combinatorics/ConductorThreePrimeMomentProgramPublic.lean/declarations/uniformmaximalmomentestimate-implies-arithmetic.md) | 53 | `result-track:df4556e66e0b4d74ae430de1dff854a8ecee8d3b156334406a8e4f4d75d3c88c` |
-| 4 | `theorem` | [primeMomentProgram_implies_bvPacketEstimate](../../../../Combinatorics/ConductorThreePrimeMomentProgramPublic.lean/declarations/primemomentprogram-implies-bvpacketestimate.md) | 73 | `result-track:b92577e5256a5f3492add7c36d42b3a016ab8b79e698b64dc5904b4414f80957` |
-| 5 | `theorem` | [primeMomentProgram_implies_grh](../../../../Combinatorics/ConductorThreePrimeMomentProgramPublic.lean/declarations/primemomentprogram-implies-grh.md) | 83 | `result-track:12a84bc1731b322b269263e80005b1fbed1872660ecb29ac0b3f228d7041a128` |
+| 1 | `def` | [UniformMaximalMomentEstimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreePrimeMomentProgramPublic.lean/declarations/uniformmaximalmomentestimate.md) | 34 | `declaration-track:f57f0865c92de6ef48bcfa5a706280f582c50a1ba9be08beccc5dbbd50a70cb0` |
+| 2 | `def` | [ConductorThreePrimeMomentProgram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreePrimeMomentProgramPublic.lean/declarations/conductorthreeprimemomentprogram.md) | 46 | `declaration-track:3f4036aab4c75297a8d754d685056842310e57f31492298bf7777948b1c3dd72` |
+| 3 | `theorem` | [uniformMaximalMomentEstimate_implies_arithmetic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreePrimeMomentProgramPublic.lean/declarations/uniformmaximalmomentestimate-implies-arithmetic.md) | 53 | `result-track:df4556e66e0b4d74ae430de1dff854a8ecee8d3b156334406a8e4f4d75d3c88c` |
+| 4 | `theorem` | [primeMomentProgram_implies_bvPacketEstimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreePrimeMomentProgramPublic.lean/declarations/primemomentprogram-implies-bvpacketestimate.md) | 73 | `result-track:b92577e5256a5f3492add7c36d42b3a016ab8b79e698b64dc5904b4414f80957` |
+| 5 | `theorem` | [primeMomentProgram_implies_grh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreePrimeMomentProgramPublic.lean/declarations/primemomentprogram-implies-grh.md) | 83 | `result-track:12a84bc1731b322b269263e80005b1fbed1872660ecb29ac0b3f228d7041a128` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

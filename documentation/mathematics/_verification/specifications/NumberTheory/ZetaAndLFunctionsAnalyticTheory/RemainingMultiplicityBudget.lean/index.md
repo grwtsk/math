@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.WeightedSubsetBudget`](../../../../../Combinatorics/WeightedSubsetBudget.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ReflectedMultiplicitySupplier`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReflectedMultiplicitySupplier.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Combinatorics.WeightedSubsetBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ReflectedMultiplicitySupplier`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReflectedMultiplicitySupplier.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [remainingCount](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/remainingcount.md) | 36 | `declaration-track:82a3360e7b2f2564d38bb3097c596a456f046e0e9947ac71b091c79fcb7535a3` |
-| 2 | `theorem` | [remaining_add_known](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/remaining-add-known.md) | 41 | `result-track:0e97d9919f3e0a3aa5feb0058f8d6f72ec9bf327b2b616d6da3c6e4000db9563` |
-| 3 | `theorem` | [remaining_eq_sub](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/remaining-eq-sub.md) | 48 | `result-track:d84537e7bcb8ab3e858e24c1a1c3c8b72e97d25d5569589df2601344b0156bc2` |
-| 4 | `theorem` | [reflected_off_line](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/reflected-off-line.md) | 55 | `result-track:f0afaddfda5e35a696e7407fde42b19902dbb96f088f98ba9fed1f21e983e17e` |
-| 5 | `theorem` | [known_add_twice_le_count_of_off_line](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/known-add-twice-le-count-of-off-line.md) | 64 | `result-track:ba7957900af83d5c953b3fb6b2ad340e4cd3303e7f957f6e4f1cc9a4ebba14e8` |
-| 6 | `theorem` | [critical_line_of_known_budget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/critical-line-of-known-budget.md) | 81 | `result-track:b3347224d764663f3311b1c4b37d22c37e45d665c3c190cc84ec2b96b8bbc451` |
-| 7 | `theorem` | [all_on_line_of_known_budget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/all-on-line-of-known-budget.md) | 97 | `result-track:5391b27fa9b0692ebce3b1c9e58b46180429dd05c9d3b60b533f57f7699aed0d` |
-| 8 | `theorem` | [all_on_line_of_sub_budget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/all-on-line-of-sub-budget.md) | 110 | `result-track:ec48dc39cc11d816eae41dfb2b2120778f93b29d14508011ee0841ff27f909ea` |
-| 9 | `theorem` | [all_on_line_of_remaining_lt_two](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/all-on-line-of-remaining-lt-two.md) | 124 | `result-track:074a6ad646e5ccb1763237c0ce82f8ded2c34e0c09b08643de72186994420663` |
-| 10 | `theorem` | [known_eq_regionHead_of_remaining_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/known-eq-regionhead-of-remaining-zero.md) | 135 | `result-track:12f82a59f7a5d4f54c569acbedd5c7ca8a68a6f00d553ab0f037421050f48dc5` |
-| 11 | `theorem` | [rhThrough_of_height_known_budget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/rhthrough-of-height-known-budget.md) | 147 | `result-track:8cc66cf63e086cef22d43bb652bd686141d67ca28c79e04f62d46ae068e250fe` |
+| 1 | `def` | [remainingCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/remainingcount.md) | 36 | `declaration-track:82a3360e7b2f2564d38bb3097c596a456f046e0e9947ac71b091c79fcb7535a3` |
+| 2 | `theorem` | [remaining_add_known](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/remaining-add-known.md) | 41 | `result-track:0e97d9919f3e0a3aa5feb0058f8d6f72ec9bf327b2b616d6da3c6e4000db9563` |
+| 3 | `theorem` | [remaining_eq_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/remaining-eq-sub.md) | 48 | `result-track:d84537e7bcb8ab3e858e24c1a1c3c8b72e97d25d5569589df2601344b0156bc2` |
+| 4 | `theorem` | [reflected_off_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/reflected-off-line.md) | 55 | `result-track:f0afaddfda5e35a696e7407fde42b19902dbb96f088f98ba9fed1f21e983e17e` |
+| 5 | `theorem` | [known_add_twice_le_count_of_off_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/known-add-twice-le-count-of-off-line.md) | 64 | `result-track:ba7957900af83d5c953b3fb6b2ad340e4cd3303e7f957f6e4f1cc9a4ebba14e8` |
+| 6 | `theorem` | [critical_line_of_known_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/critical-line-of-known-budget.md) | 81 | `result-track:b3347224d764663f3311b1c4b37d22c37e45d665c3c190cc84ec2b96b8bbc451` |
+| 7 | `theorem` | [all_on_line_of_known_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/all-on-line-of-known-budget.md) | 97 | `result-track:5391b27fa9b0692ebce3b1c9e58b46180429dd05c9d3b60b533f57f7699aed0d` |
+| 8 | `theorem` | [all_on_line_of_sub_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/all-on-line-of-sub-budget.md) | 110 | `result-track:ec48dc39cc11d816eae41dfb2b2120778f93b29d14508011ee0841ff27f909ea` |
+| 9 | `theorem` | [all_on_line_of_remaining_lt_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/all-on-line-of-remaining-lt-two.md) | 124 | `result-track:074a6ad646e5ccb1763237c0ce82f8ded2c34e0c09b08643de72186994420663` |
+| 10 | `theorem` | [known_eq_regionHead_of_remaining_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/known-eq-regionhead-of-remaining-zero.md) | 135 | `result-track:12f82a59f7a5d4f54c569acbedd5c7ca8a68a6f00d553ab0f037421050f48dc5` |
+| 11 | `theorem` | [rhThrough_of_height_known_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RemainingMultiplicityBudget.lean/declarations/rhthrough-of-height-known-budget.md) | 147 | `result-track:8cc66cf63e086cef22d43bb652bd686141d67ca28c79e04f62d46ae068e250fe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

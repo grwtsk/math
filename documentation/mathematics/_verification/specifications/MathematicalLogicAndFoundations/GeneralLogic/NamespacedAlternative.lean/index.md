@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProofGrammar](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/declarations/proofgrammar.md) | 26 | `declaration-track:c09b84daa1a7fd94146b7ab73431d94aa93f1bfe8adbd0d3ae3327beb4aaf984` |
-| 2 | `theorem` | [ProofGrammar.rule_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/declarations/proofgrammar-rule-sound.md) | 35 | `result-track:76b00ed2bf57533167fa15fa458edf6c2742b8c675aab5747e7f7bfaa88de2a7` |
-| 3 | `def` | [identityGrammar](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/declarations/identitygrammar.md) | 43 | `declaration-track:2ab383d0acdea0fbf40019a5a74281e2527d3af4ecc35201c93876b355f1a662` |
-| 4 | `def` | [invertibleCompositionGrammar](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/declarations/invertiblecompositiongrammar.md) | 49 | `declaration-track:00704cbd82ae8d282e4cd3456d608aba1f5d73d6795e6c04dbd6704f591f4cbf` |
-| 5 | `def` | [implicationGrammar](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/declarations/implicationgrammar.md) | 55 | `declaration-track:d0f33e4359c12b0fa54b6a616bccdf783c47837662dbc1ec1ba27c3b9b464efa` |
-| 6 | `def` | [specializationGrammar](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/declarations/specializationgrammar.md) | 61 | `declaration-track:d3cc64fe564309e8ac957ba0a1aa5397a757de05813738d0f93e7dcac9f11b41` |
-| 7 | `def` | [propertyTransportGrammar](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/declarations/propertytransportgrammar.md) | 70 | `declaration-track:c2fe75f3d211ca78162a71ac18b30992ae6365e4d826c52ad154c0b6bc522b15` |
-| 8 | `def` | [quotientDescentGrammar](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/declarations/quotientdescentgrammar.md) | 77 | `declaration-track:c081e8d1fc4b6112465443329eb9e41cde132333826301a7e65b6d88b21c122c` |
-| 9 | `def` | [quotientDescentCompositionGrammar](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/declarations/quotientdescentcompositiongrammar.md) | 83 | `declaration-track:b0b0080e8250837e91424fe2b38988275efc1e6af451a0a5beda588c4ffedb42` |
+| 1 | `structure` | [ProofGrammar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/declarations/proofgrammar.md) | 26 | `declaration-track:c09b84daa1a7fd94146b7ab73431d94aa93f1bfe8adbd0d3ae3327beb4aaf984` |
+| 2 | `theorem` | [ProofGrammar.rule_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/declarations/proofgrammar-rule-sound.md) | 35 | `result-track:76b00ed2bf57533167fa15fa458edf6c2742b8c675aab5747e7f7bfaa88de2a7` |
+| 3 | `def` | [identityGrammar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/declarations/identitygrammar.md) | 43 | `declaration-track:2ab383d0acdea0fbf40019a5a74281e2527d3af4ecc35201c93876b355f1a662` |
+| 4 | `def` | [invertibleCompositionGrammar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/declarations/invertiblecompositiongrammar.md) | 49 | `declaration-track:00704cbd82ae8d282e4cd3456d608aba1f5d73d6795e6c04dbd6704f591f4cbf` |
+| 5 | `def` | [implicationGrammar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/declarations/implicationgrammar.md) | 55 | `declaration-track:d0f33e4359c12b0fa54b6a616bccdf783c47837662dbc1ec1ba27c3b9b464efa` |
+| 6 | `def` | [specializationGrammar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/declarations/specializationgrammar.md) | 61 | `declaration-track:d3cc64fe564309e8ac957ba0a1aa5397a757de05813738d0f93e7dcac9f11b41` |
+| 7 | `def` | [propertyTransportGrammar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/declarations/propertytransportgrammar.md) | 70 | `declaration-track:c2fe75f3d211ca78162a71ac18b30992ae6365e4d826c52ad154c0b6bc522b15` |
+| 8 | `def` | [quotientDescentGrammar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/declarations/quotientdescentgrammar.md) | 77 | `declaration-track:c081e8d1fc4b6112465443329eb9e41cde132333826301a7e65b6d88b21c122c` |
+| 9 | `def` | [quotientDescentCompositionGrammar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative.lean/declarations/quotientdescentcompositiongrammar.md) | 83 | `declaration-track:b0b0080e8250837e91424fe2b38988275efc1e6af451a0a5beda588c4ffedb42` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Modularity](../../../../../ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/declarations/modularity.md) | 7 | `declaration-track:f4cb962825c7ba7f6484e47dfdd3d20047016b5947d9481f2c348cefd48d61a1` |
-| 2 | `structure` | [ReducibleBy](../../../../../ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/declarations/reducibleby.md) | 13 | `declaration-track:c854a0df8e6054245a8f22b0b899ba21af281a8d067bb1cd00c656fe774d594f` |
-| 3 | `def` | [Irreducible](../../../../../ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/declarations/irreducible.md) | 21 | `declaration-track:49bf97cd9381f7736c2d15c12e6a01ab77cffb0b12149c27079699329eda76fa` |
-| 4 | `structure` | [IrreducibleFactor](../../../../../ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/declarations/irreduciblefactor.md) | 26 | `declaration-track:43fb30b2b61ca236d10044a56e12b76ceb4c59e9c61f07578fe8c87527e139f8` |
-| 5 | `structure` | [IrreducibleFactorRegistry](../../../../../ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/declarations/irreduciblefactorregistry.md) | 32 | `declaration-track:814f03b3f095707b4cf99f9b16574088c62d3cfc9d8b04d642c35ec1b7d83871` |
-| 6 | `theorem` | [irreducible_modularity_has_prime_label](../../../../../ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/declarations/irreducible-modularity-has-prime-label.md) | 44 | `result-track:6f988ce098bd9e0c6e74db275ca1e4da0532a31777432a99ad1fc4320bad983d` |
-| 7 | `theorem` | [primeLabels_distinguish_irreducibles](../../../../../ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/declarations/primelabels-distinguish-irreducibles.md) | 49 | `result-track:0d6b83b7e669bd9783203ac7d0cbc728531d1fd14a7194e62a57ebb2aa799aba` |
-| 8 | `theorem` | [primeLabeling_injective_on_irreducibles](../../../../../ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/declarations/primelabeling-injective-on-irreducibles.md) | 58 | `result-track:ddf8938545b6f40721544f91f7e69c4d5446b99e0d8be7fc0e6e17fe13695f70` |
+| 1 | `structure` | [Modularity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/declarations/modularity.md) | 7 | `declaration-track:f4cb962825c7ba7f6484e47dfdd3d20047016b5947d9481f2c348cefd48d61a1` |
+| 2 | `structure` | [ReducibleBy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/declarations/reducibleby.md) | 13 | `declaration-track:c854a0df8e6054245a8f22b0b899ba21af281a8d067bb1cd00c656fe774d594f` |
+| 3 | `def` | [Irreducible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/declarations/irreducible.md) | 21 | `declaration-track:49bf97cd9381f7736c2d15c12e6a01ab77cffb0b12149c27079699329eda76fa` |
+| 4 | `structure` | [IrreducibleFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/declarations/irreduciblefactor.md) | 26 | `declaration-track:43fb30b2b61ca236d10044a56e12b76ceb4c59e9c61f07578fe8c87527e139f8` |
+| 5 | `structure` | [IrreducibleFactorRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/declarations/irreduciblefactorregistry.md) | 32 | `declaration-track:814f03b3f095707b4cf99f9b16574088c62d3cfc9d8b04d642c35ec1b7d83871` |
+| 6 | `theorem` | [irreducible_modularity_has_prime_label](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/declarations/irreducible-modularity-has-prime-label.md) | 44 | `result-track:6f988ce098bd9e0c6e74db275ca1e4da0532a31777432a99ad1fc4320bad983d` |
+| 7 | `theorem` | [primeLabels_distinguish_irreducibles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/declarations/primelabels-distinguish-irreducibles.md) | 49 | `result-track:0d6b83b7e669bd9783203ac7d0cbc728531d1fd14a7194e62a57ebb2aa799aba` |
+| 8 | `theorem` | [primeLabeling_injective_on_irreducibles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Irreducible.lean/declarations/primelabeling-injective-on-irreducibles.md) | 58 | `result-track:ddf8938545b6f40721544f91f7e69c4d5446b99e0d8be7fc0e6e17fe13695f70` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

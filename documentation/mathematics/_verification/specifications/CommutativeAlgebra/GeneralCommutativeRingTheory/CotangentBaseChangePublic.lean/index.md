@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/CotangentBaseChangePublic.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/CotangentBaseChangePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/CotangentBaseChangePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/CotangentBaseChangePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [tensorCotangentHom](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/CotangentBaseChangePublic.lean/declarations/tensorcotangenthom.md) | 43 | `declaration-track:e63eef5a7b07a524743a25277c4d23bda4410d2fb07cb2024eadf5892497c27f` |
-| 2 | `lemma` | [tensorCotangentHom_tmul](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/CotangentBaseChangePublic.lean/declarations/tensorcotangenthom-tmul.md) | 58 | `result-track:f337e897f472565ee0851369f80de5778e87cbf5123df2a7ce23325f9a38b9cc` |
-| 3 | `lemma` | [tensorCotangentHom_surjective](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/CotangentBaseChangePublic.lean/declarations/tensorcotangenthom-surjective.md) | 65 | `result-track:af14ba43063d2f959098c6281d6d2532297f8bdc5c9d8aedfbb4094f6c2c0bcf` |
-| 4 | `lemma` | [tensorCotangentHom_injective_of_flat](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/CotangentBaseChangePublic.lean/declarations/tensorcotangenthom-injective-of-flat.md) | 86 | `result-track:28ccc84ec339329f9f4adda0189a32305c659bf5246a34f3d89b634fc5f362d9` |
-| 5 | `def` | [tensorCotangentEquiv](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/CotangentBaseChangePublic.lean/declarations/tensorcotangentequiv.md) | 111 | `declaration-track:380c29b055f51bff966f5583c4a1461e3d2b2e5651a766407ce62b233512ac19` |
-| 6 | `lemma` | [tensorCotangentEquiv_tmul](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/CotangentBaseChangePublic.lean/declarations/tensorcotangentequiv-tmul.md) | 118 | `result-track:b1f4c83d9307015c9a4411c99cb68f213b009f29cf762a93145327d213cece54` |
+| 1 | `def` | [tensorCotangentHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/CotangentBaseChangePublic.lean/declarations/tensorcotangenthom.md) | 43 | `declaration-track:e63eef5a7b07a524743a25277c4d23bda4410d2fb07cb2024eadf5892497c27f` |
+| 2 | `lemma` | [tensorCotangentHom_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/CotangentBaseChangePublic.lean/declarations/tensorcotangenthom-tmul.md) | 58 | `result-track:f337e897f472565ee0851369f80de5778e87cbf5123df2a7ce23325f9a38b9cc` |
+| 3 | `lemma` | [tensorCotangentHom_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/CotangentBaseChangePublic.lean/declarations/tensorcotangenthom-surjective.md) | 65 | `result-track:af14ba43063d2f959098c6281d6d2532297f8bdc5c9d8aedfbb4094f6c2c0bcf` |
+| 4 | `lemma` | [tensorCotangentHom_injective_of_flat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/CotangentBaseChangePublic.lean/declarations/tensorcotangenthom-injective-of-flat.md) | 86 | `result-track:28ccc84ec339329f9f4adda0189a32305c659bf5246a34f3d89b634fc5f362d9` |
+| 5 | `def` | [tensorCotangentEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/CotangentBaseChangePublic.lean/declarations/tensorcotangentequiv.md) | 111 | `declaration-track:380c29b055f51bff966f5583c4a1461e3d2b2e5651a766407ce62b233512ac19` |
+| 6 | `lemma` | [tensorCotangentEquiv_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/CotangentBaseChangePublic.lean/declarations/tensorcotangentequiv-tmul.md) | 118 | `result-track:b1f4c83d9307015c9a4411c99cb68f213b009f29cf762a93145327d213cece54` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

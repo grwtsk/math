@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DifferentialCountsAndParity.lean/index.md) · [Full source](../../../../Combinatorics/DifferentialCountsAndParity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DifferentialCountsAndParity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DifferentialCountsAndParity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.Tactic.NormNum` — import line 28; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.Positivity` — import line 29; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.Ring` — import line 30; external provider; requires a separately pinned dependency.
-- [Boolean Derivatives And Local Quantizer](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanDerivativesAndLocalQuantizer.lean/index.md) — import line 32; pinned internal source present.
+- [Boolean Derivatives And Local Quantizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanDerivativesAndLocalQuantizer.lean/index.md) — import line 32; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -69,22 +69,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [differentialCount](../../../../Combinatorics/DifferentialCountsAndParity.lean/declarations/differentialcount.md) | 74 | `declaration-track:575289b2c84afd031948784ff1bc1dada9f12746d21f9869c672dc34ee941d99` |
-| 2 | `def` | [differentialProbability](../../../../Combinatorics/DifferentialCountsAndParity.lean/declarations/differentialprobability.md) | 79 | `declaration-track:23bfa171f6589812b2e1121b21f29175405604df817ca836613f5589c0110592` |
-| 3 | `def` | [sacCount](../../../../Combinatorics/DifferentialCountsAndParity.lean/declarations/saccount.md) | 84 | `declaration-track:0c5e6dea15367996877a016c43262f918c25fb3b9226f0024c582b9d01cb6e32` |
-| 4 | `def` | [sacEntry](../../../../Combinatorics/DifferentialCountsAndParity.lean/declarations/sacentry.md) | 88 | `declaration-track:3cb6e5ca1642ae3a0db3668ccb0f13f4b9d3e112c5c3ac1e21d52248b06aad85` |
-| 5 | `def` | [StrictSAC](../../../../Combinatorics/DifferentialCountsAndParity.lean/declarations/strictsac.md) | 92 | `declaration-track:49574f48baf6158c874fd396fe2ef434388f19e7af06c1853ff980a6e19ff961` |
-| 6 | `theorem` | [card_bits](../../../../Combinatorics/DifferentialCountsAndParity.lean/declarations/card-bits.md) | 96 | `result-track:68a6b992f8213c5735bde336e2fc282161f46a1c8a9cfcd13eff9a9a47cdf0ac` |
-| 7 | `theorem` | [differentialCount_sum](../../../../Combinatorics/DifferentialCountsAndParity.lean/declarations/differentialcount-sum.md) | 102 | `result-track:8d71cc5368980892effafd8ac9da0034c6c75bef96668d2d17b7cd92fe85720e` |
-| 8 | `theorem` | [differentialCount_eq_full_iff](../../../../Combinatorics/DifferentialCountsAndParity.lean/declarations/differentialcount-eq-full-iff.md) | 113 | `result-track:fe3d865e09ac5b582db52653556c0bcb9d2d0963ea16a5d9134a217612d9f7a6` |
-| 9 | `theorem` | [differentialProbability_eq_one_iff](../../../../Combinatorics/DifferentialCountsAndParity.lean/declarations/differentialprobability-eq-one-iff.md) | 125 | `result-track:60f041cef7e2566f67c3bc61de47316689074e858a8ba18d5f1f82327ba633bd` |
-| 10 | `theorem` | [exists_true_of_ne_zero](../../../../Combinatorics/DifferentialCountsAndParity.lean/declarations/exists-true-of-ne-zero.md) | 139 | `result-track:b4980825ca93ba9b7bc72b04fb7ef194523750c06450ee36052dfdd2ec3929bc` |
-| 11 | `theorem` | [filter_card_even_of_xor_invariant](../../../../Combinatorics/DifferentialCountsAndParity.lean/declarations/filter-card-even-of-xor-invariant.md) | 154 | `result-track:956fdfae10e2aa961dbb5ee52fd3cd1cb2ce7cead996391c007123276de1ea71` |
-| 12 | `theorem` | [differentialCount_even](../../../../Combinatorics/DifferentialCountsAndParity.lean/declarations/differentialcount-even.md) | 205 | `result-track:6465d1dff61166fc2f6c15be66ed963606b3c6332fb256c7f83800c074e6d980` |
-| 13 | `theorem` | [derivative_ne_zero_of_injective](../../../../Combinatorics/DifferentialCountsAndParity.lean/declarations/derivative-ne-zero-of-injective.md) | 214 | `result-track:5cfcba1cd1110798884fbc3d05ed82b7e3b0ba64bb49ccfdf3b8b73c0ccf84c9` |
-| 14 | `theorem` | [differentialCount_zero_of_injective](../../../../Combinatorics/DifferentialCountsAndParity.lean/declarations/differentialcount-zero-of-injective.md) | 224 | `result-track:12244a9edadfc736013636cf43092893dc0112137e7fede01b8dc42ef943a249` |
-| 15 | `theorem` | [sacCount_even](../../../../Combinatorics/DifferentialCountsAndParity.lean/declarations/saccount-even.md) | 232 | `result-track:c9658ec29765399e7eaf7f801e16f0925fe650d62df61684deb255aa6bffa386` |
-| 16 | `theorem` | [not_strictSAC_one](../../../../Combinatorics/DifferentialCountsAndParity.lean/declarations/not-strictsac-one.md) | 243 | `result-track:866ca9e6bc2650b172d3fc820c243a76e91e40708bd6c1469e36579dca308540` |
+| 1 | `def` | [differentialCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DifferentialCountsAndParity.lean/declarations/differentialcount.md) | 74 | `declaration-track:575289b2c84afd031948784ff1bc1dada9f12746d21f9869c672dc34ee941d99` |
+| 2 | `def` | [differentialProbability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DifferentialCountsAndParity.lean/declarations/differentialprobability.md) | 79 | `declaration-track:23bfa171f6589812b2e1121b21f29175405604df817ca836613f5589c0110592` |
+| 3 | `def` | [sacCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DifferentialCountsAndParity.lean/declarations/saccount.md) | 84 | `declaration-track:0c5e6dea15367996877a016c43262f918c25fb3b9226f0024c582b9d01cb6e32` |
+| 4 | `def` | [sacEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DifferentialCountsAndParity.lean/declarations/sacentry.md) | 88 | `declaration-track:3cb6e5ca1642ae3a0db3668ccb0f13f4b9d3e112c5c3ac1e21d52248b06aad85` |
+| 5 | `def` | [StrictSAC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DifferentialCountsAndParity.lean/declarations/strictsac.md) | 92 | `declaration-track:49574f48baf6158c874fd396fe2ef434388f19e7af06c1853ff980a6e19ff961` |
+| 6 | `theorem` | [card_bits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DifferentialCountsAndParity.lean/declarations/card-bits.md) | 96 | `result-track:68a6b992f8213c5735bde336e2fc282161f46a1c8a9cfcd13eff9a9a47cdf0ac` |
+| 7 | `theorem` | [differentialCount_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DifferentialCountsAndParity.lean/declarations/differentialcount-sum.md) | 102 | `result-track:8d71cc5368980892effafd8ac9da0034c6c75bef96668d2d17b7cd92fe85720e` |
+| 8 | `theorem` | [differentialCount_eq_full_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DifferentialCountsAndParity.lean/declarations/differentialcount-eq-full-iff.md) | 113 | `result-track:fe3d865e09ac5b582db52653556c0bcb9d2d0963ea16a5d9134a217612d9f7a6` |
+| 9 | `theorem` | [differentialProbability_eq_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DifferentialCountsAndParity.lean/declarations/differentialprobability-eq-one-iff.md) | 125 | `result-track:60f041cef7e2566f67c3bc61de47316689074e858a8ba18d5f1f82327ba633bd` |
+| 10 | `theorem` | [exists_true_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DifferentialCountsAndParity.lean/declarations/exists-true-of-ne-zero.md) | 139 | `result-track:b4980825ca93ba9b7bc72b04fb7ef194523750c06450ee36052dfdd2ec3929bc` |
+| 11 | `theorem` | [filter_card_even_of_xor_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DifferentialCountsAndParity.lean/declarations/filter-card-even-of-xor-invariant.md) | 154 | `result-track:956fdfae10e2aa961dbb5ee52fd3cd1cb2ce7cead996391c007123276de1ea71` |
+| 12 | `theorem` | [differentialCount_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DifferentialCountsAndParity.lean/declarations/differentialcount-even.md) | 205 | `result-track:6465d1dff61166fc2f6c15be66ed963606b3c6332fb256c7f83800c074e6d980` |
+| 13 | `theorem` | [derivative_ne_zero_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DifferentialCountsAndParity.lean/declarations/derivative-ne-zero-of-injective.md) | 214 | `result-track:5cfcba1cd1110798884fbc3d05ed82b7e3b0ba64bb49ccfdf3b8b73c0ccf84c9` |
+| 14 | `theorem` | [differentialCount_zero_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DifferentialCountsAndParity.lean/declarations/differentialcount-zero-of-injective.md) | 224 | `result-track:12244a9edadfc736013636cf43092893dc0112137e7fede01b8dc42ef943a249` |
+| 15 | `theorem` | [sacCount_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DifferentialCountsAndParity.lean/declarations/saccount-even.md) | 232 | `result-track:c9658ec29765399e7eaf7f801e16f0925fe650d62df61684deb255aa6bffa386` |
+| 16 | `theorem` | [not_strictSAC_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DifferentialCountsAndParity.lean/declarations/not-strictsac-one.md) | 243 | `result-track:866ca9e6bc2650b172d3fc820c243a76e91e40708bd6c1469e36579dca308540` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

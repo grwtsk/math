@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/NatTypeTags.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/NatTypeTags.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatTypeTags.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatTypeTags.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [toAdd_pow](../../../../GroupTheoryAndGeneralizations/NatTypeTags.lean/declarations/toadd-pow.md) | 19 | `result-track:11331e1c7f5c9c8ab767a95952418e2bba561d75dfe0740ea7e8b26f62b96b5d` |
-| 2 | `lemma` | [ofAdd_mul](../../../../GroupTheoryAndGeneralizations/NatTypeTags.lean/declarations/ofadd-mul.md) | 21 | `result-track:24a12648caa8d70f08b565af80ba780bd8f9037fd345c86dd6d7a9f55d6c1298` |
+| 1 | `lemma` | [toAdd_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatTypeTags.lean/declarations/toadd-pow.md) | 19 | `result-track:11331e1c7f5c9c8ab767a95952418e2bba561d75dfe0740ea7e8b26f62b96b5d` |
+| 2 | `lemma` | [ofAdd_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatTypeTags.lean/declarations/ofadd-mul.md) | 21 | `result-track:24a12648caa8d70f08b565af80ba780bd8f9037fd345c86dd6d7a9f55d6c1298` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

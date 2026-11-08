@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpi.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [effectiveEpiStructOfRegularEpi](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpi.lean/declarations/effectiveepistructofregularepi.md) | 23 | `declaration-track:7a9fac8a525c00e87f485ec39f2c11ee5628207a76118766a2dd007b59c5c471` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpi.lean/declarations/instance.md) | 30 | `declaration-track:a15f2d61e6615b140cc9b4e1c706146fd0c8bc46d015eb96cb4b7df527447697` |
-| 3 | `theorem` | [effectiveEpiOfKernelPair](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpi.lean/declarations/effectiveepiofkernelpair.md) | 34 | `result-track:1261a3f3e4e9555be3c84555d33c3a3c68b0d9a121fb957e9b3f663394e8b342` |
-| 4 | `instance` | [regularEpiOfEffectiveEpi](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpi.lean/declarations/regularepiofeffectiveepi.md) | 40 | `declaration-track:9aa2401c58bb64cb9bfbedac3a6c8836eae1e875cb123bf22134ed7b2b85284d` |
+| 1 | `def` | [effectiveEpiStructOfRegularEpi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpi.lean/declarations/effectiveepistructofregularepi.md) | 23 | `declaration-track:7a9fac8a525c00e87f485ec39f2c11ee5628207a76118766a2dd007b59c5c471` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpi.lean/declarations/instance.md) | 30 | `declaration-track:a15f2d61e6615b140cc9b4e1c706146fd0c8bc46d015eb96cb4b7df527447697` |
+| 3 | `theorem` | [effectiveEpiOfKernelPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpi.lean/declarations/effectiveepiofkernelpair.md) | 34 | `result-track:1261a3f3e4e9555be3c84555d33c3a3c68b0d9a121fb957e9b3f663394e8b342` |
+| 4 | `instance` | [regularEpiOfEffectiveEpi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EffectiveEpiRegularEpi.lean/declarations/regularepiofeffectiveepi.md) | 40 | `declaration-track:9aa2401c58bb64cb9bfbedac3a6c8836eae1e875cb123bf22134ed7b2b85284d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

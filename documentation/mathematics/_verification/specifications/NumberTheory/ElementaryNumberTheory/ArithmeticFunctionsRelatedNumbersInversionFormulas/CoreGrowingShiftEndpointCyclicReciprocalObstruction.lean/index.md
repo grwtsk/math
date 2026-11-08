@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicReciprocalObstruction.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicReciprocalObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicReciprocalObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicReciprocalObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.CharacterSums.FiniteCyclicReciprocalPhaseObstruction`](../../../../../../NumberTheory/FiniteCyclicReciprocalPhaseObstruction.lean/index.md) — import line 11; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicCoordinates`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicCoordinates.lean/index.md) — import line 12; pinned internal source present.
+- [`GRWTSK.NumberTheory.CharacterSums.FiniteCyclicReciprocalPhaseObstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalPhaseObstruction.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicCoordinates`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicCoordinates.lean/index.md) — import line 12; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coreGrowingShiftEndpointTransverseNatCharacter_reciprocal_Ico_zero](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicReciprocalObstruction.lean/declarations/coregrowingshiftendpointtransversenatcharacter-reciprocal-ico-zero.md) | 23 | `result-track:c91f74788d992b3d2dbeca272191949169127c5504eaec763d3a2d4f7ae56272` |
-| 2 | `theorem` | [coreGrowingShiftEndpointTransverse_phaseMatchedReciprocal_Ico](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicReciprocalObstruction.lean/declarations/coregrowingshiftendpointtransverse-phasematchedreciprocal-ico.md) | 38 | `result-track:4674d675dc9126e17024ed1cd8606b7a0c10eefcf0b870f1d08f06c5df77f661` |
-| 3 | `theorem` | [coreGrowingShiftEndpointTransverse_phaseMatchedReciprocal_Ico_norm](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicReciprocalObstruction.lean/declarations/coregrowingshiftendpointtransverse-phasematchedreciprocal-ico-norm.md) | 57 | `result-track:9969a87edaf8f3ac3ad1c568497ea753bb6e2c142b9cfb0ad7d238a4cd923fd4` |
+| 1 | `theorem` | [coreGrowingShiftEndpointTransverseNatCharacter_reciprocal_Ico_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicReciprocalObstruction.lean/declarations/coregrowingshiftendpointtransversenatcharacter-reciprocal-ico-zero.md) | 23 | `result-track:c91f74788d992b3d2dbeca272191949169127c5504eaec763d3a2d4f7ae56272` |
+| 2 | `theorem` | [coreGrowingShiftEndpointTransverse_phaseMatchedReciprocal_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicReciprocalObstruction.lean/declarations/coregrowingshiftendpointtransverse-phasematchedreciprocal-ico.md) | 38 | `result-track:4674d675dc9126e17024ed1cd8606b7a0c10eefcf0b870f1d08f06c5df77f661` |
+| 3 | `theorem` | [coreGrowingShiftEndpointTransverse_phaseMatchedReciprocal_Ico_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicReciprocalObstruction.lean/declarations/coregrowingshiftendpointtransverse-phasematchedreciprocal-ico-norm.md) | 57 | `result-track:9969a87edaf8f3ac3ad1c568497ea753bb6e2c142b9cfb0ad7d238a4cd923fd4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

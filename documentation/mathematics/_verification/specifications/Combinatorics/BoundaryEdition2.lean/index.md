@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BoundaryEdition2.lean/index.md) · [Full source](../../../../Combinatorics/BoundaryEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SemanticClause](../../../../Combinatorics/BoundaryEdition2.lean/declarations/semanticclause.md) | 15 | `declaration-track:bcb1872f57125042a1c70c3f4fa56520ae56baac7851e7d73a0dd47cd07aa540` |
-| 2 | `structure` | [SemanticDefinition](../../../../Combinatorics/BoundaryEdition2.lean/declarations/semanticdefinition.md) | 21 | `declaration-track:a129204e189bf53a80c1085ddd275fe3f56ce7d0cce389081c80ea0134339d84` |
-| 3 | `structure` | [Boundary](../../../../Combinatorics/BoundaryEdition2.lean/declarations/boundary.md) | 33 | `declaration-track:a6710d6d4bd850f6f91b50221540433d32d8dc09cae272eca2acc73b1d523788` |
-| 4 | `structure` | [EntityProfile](../../../../Combinatorics/BoundaryEdition2.lean/declarations/entityprofile.md) | 40 | `declaration-track:f3eb97095167e4384983db28c4543f86e4fab8481841ad694a46b914337429d0` |
-| 5 | `def` | [Accepts](../../../../Combinatorics/BoundaryEdition2.lean/declarations/accepts.md) | 48 | `declaration-track:539709cd50206e0385141ce58559c7f783f2a4bf801c40fb23061df39fab738e` |
-| 6 | `instance` | [(anonymous)](../../../../Combinatorics/BoundaryEdition2.lean/declarations/instance.md) | 52 | `declaration-track:1d8a254341e6d981aae28ff255b9778d57326fb9d24fecfd7a0afaf697250be6` |
-| 7 | `theorem` | [includes_mono](../../../../Combinatorics/BoundaryEdition2.lean/declarations/includes-mono.md) | 59 | `result-track:ade708ceca8de8ec690f4b039e97120217bd8a1150696c7844bf6ed43c2ed96c` |
-| 8 | `theorem` | [rejects_of_excluded](../../../../Combinatorics/BoundaryEdition2.lean/declarations/rejects-of-excluded.md) | 68 | `result-track:6284ca899088bca2d626865dd52e9828c371d7d7ba2af375ecc50e341641d13d` |
+| 1 | `structure` | [SemanticClause](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryEdition2.lean/declarations/semanticclause.md) | 15 | `declaration-track:bcb1872f57125042a1c70c3f4fa56520ae56baac7851e7d73a0dd47cd07aa540` |
+| 2 | `structure` | [SemanticDefinition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryEdition2.lean/declarations/semanticdefinition.md) | 21 | `declaration-track:a129204e189bf53a80c1085ddd275fe3f56ce7d0cce389081c80ea0134339d84` |
+| 3 | `structure` | [Boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryEdition2.lean/declarations/boundary.md) | 33 | `declaration-track:a6710d6d4bd850f6f91b50221540433d32d8dc09cae272eca2acc73b1d523788` |
+| 4 | `structure` | [EntityProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryEdition2.lean/declarations/entityprofile.md) | 40 | `declaration-track:f3eb97095167e4384983db28c4543f86e4fab8481841ad694a46b914337429d0` |
+| 5 | `def` | [Accepts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryEdition2.lean/declarations/accepts.md) | 48 | `declaration-track:539709cd50206e0385141ce58559c7f783f2a4bf801c40fb23061df39fab738e` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryEdition2.lean/declarations/instance.md) | 52 | `declaration-track:1d8a254341e6d981aae28ff255b9778d57326fb9d24fecfd7a0afaf697250be6` |
+| 7 | `theorem` | [includes_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryEdition2.lean/declarations/includes-mono.md) | 59 | `result-track:ade708ceca8de8ec690f4b039e97120217bd8a1150696c7844bf6ed43c2ed96c` |
+| 8 | `theorem` | [rejects_of_excluded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryEdition2.lean/declarations/rejects-of-excluded.md) | 68 | `result-track:6284ca899088bca2d626865dd52e9828c371d7d7ba2af375ecc50e341641d13d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

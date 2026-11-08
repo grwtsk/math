@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CountingTailControls.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CountingTailControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountingTailControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountingTailControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.CountedTentTail`](../../../../NumberTheory/CountedTentTail.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CountedTentTail`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CountedTentTail.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [empty_observation_control](../../../../MeasureAndIntegration/CountingTailControls.lean/declarations/empty-observation-control.md) | 18 | `result-track:b008e3505c6403c31244717a36d31add6c0588b75bb9453e0a0b7689b60a85d3` |
-| 2 | `theorem` | [closed_counting_endpoint_control](../../../../MeasureAndIntegration/CountingTailControls.lean/declarations/closed-counting-endpoint-control.md) | 24 | `result-track:5e6ad711cb9077cd05a3d4c88bcb0d41c1376633b2ce3d65ecd68f29d70afd73` |
-| 3 | `theorem` | [equal_absolute_heights_control](../../../../MeasureAndIntegration/CountingTailControls.lean/declarations/equal-absolute-heights-control.md) | 29 | `result-track:654f5a71248c5fed8adf8cf2ad9ecd4a12fb0816a1c15df82ea0c8e64cce2433` |
-| 4 | `theorem` | [multiplicity_control](../../../../MeasureAndIntegration/CountingTailControls.lean/declarations/multiplicity-control.md) | 34 | `result-track:a5cd4db2aa57bfb9ce89fea1877ece18f95122aecc55980a354a70d4b152e186` |
-| 5 | `theorem` | [terminal_boundary_control](../../../../MeasureAndIntegration/CountingTailControls.lean/declarations/terminal-boundary-control.md) | 40 | `result-track:d5f5328848ec80b77bd704a91c518ff2dbfd4e4dd700821b629930672926a784` |
-| 6 | `theorem` | [missing_low_record_control](../../../../MeasureAndIntegration/CountingTailControls.lean/declarations/missing-low-record-control.md) | 51 | `result-track:317b335f9b1c085824af4da7ec7a6e39fdd6637c54ffbc003a8c155b431a9056` |
-| 7 | `theorem` | [omitted_horizontal_control](../../../../MeasureAndIntegration/CountingTailControls.lean/declarations/omitted-horizontal-control.md) | 55 | `result-track:327d76d57ea42dd03fedb6f041530faca0332875bd1c8d0cb50dd448e18f99a6` |
-| 8 | `theorem` | [zero_height_control](../../../../MeasureAndIntegration/CountingTailControls.lean/declarations/zero-height-control.md) | 59 | `result-track:328452a8af24de656e186bffe16be0981aacf53f1a4611e4aed748c3058480b0` |
-| 9 | `theorem` | [observed_prefix_is_not_global_count](../../../../MeasureAndIntegration/CountingTailControls.lean/declarations/observed-prefix-is-not-global-count.md) | 62 | `result-track:ef83e8782c947db3e092a016c949d77cae59d1d7208c900409dfb1f34164edbc` |
+| 1 | `theorem` | [empty_observation_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountingTailControls.lean/declarations/empty-observation-control.md) | 18 | `result-track:b008e3505c6403c31244717a36d31add6c0588b75bb9453e0a0b7689b60a85d3` |
+| 2 | `theorem` | [closed_counting_endpoint_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountingTailControls.lean/declarations/closed-counting-endpoint-control.md) | 24 | `result-track:5e6ad711cb9077cd05a3d4c88bcb0d41c1376633b2ce3d65ecd68f29d70afd73` |
+| 3 | `theorem` | [equal_absolute_heights_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountingTailControls.lean/declarations/equal-absolute-heights-control.md) | 29 | `result-track:654f5a71248c5fed8adf8cf2ad9ecd4a12fb0816a1c15df82ea0c8e64cce2433` |
+| 4 | `theorem` | [multiplicity_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountingTailControls.lean/declarations/multiplicity-control.md) | 34 | `result-track:a5cd4db2aa57bfb9ce89fea1877ece18f95122aecc55980a354a70d4b152e186` |
+| 5 | `theorem` | [terminal_boundary_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountingTailControls.lean/declarations/terminal-boundary-control.md) | 40 | `result-track:d5f5328848ec80b77bd704a91c518ff2dbfd4e4dd700821b629930672926a784` |
+| 6 | `theorem` | [missing_low_record_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountingTailControls.lean/declarations/missing-low-record-control.md) | 51 | `result-track:317b335f9b1c085824af4da7ec7a6e39fdd6637c54ffbc003a8c155b431a9056` |
+| 7 | `theorem` | [omitted_horizontal_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountingTailControls.lean/declarations/omitted-horizontal-control.md) | 55 | `result-track:327d76d57ea42dd03fedb6f041530faca0332875bd1c8d0cb50dd448e18f99a6` |
+| 8 | `theorem` | [zero_height_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountingTailControls.lean/declarations/zero-height-control.md) | 59 | `result-track:328452a8af24de656e186bffe16be0981aacf53f1a4611e4aed748c3058480b0` |
+| 9 | `theorem` | [observed_prefix_is_not_global_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountingTailControls.lean/declarations/observed-prefix-is-not-global-count.md) | 62 | `result-track:ef83e8782c947db3e092a016c949d77cae59d1d7208c900409dfb1f34164edbc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

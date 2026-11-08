@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/InnerProductSpaceConformalLinearMapConformalLinearMapNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/InnerProductSpaceConformalLinearMapConformalLinearMapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceConformalLinearMapConformalLinearMapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceConformalLinearMapConformalLinearMapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isConformalMap_iff](../../../../FunctionalAnalysis/InnerProductSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/isconformalmap-iff.md) | 35 | `result-track:2f640cd9e1600ad49091472e448ce4587a1aab6e11ec0b6a54731c7fac40c433` |
+| 1 | `theorem` | [isConformalMap_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceConformalLinearMapConformalLinearMapNamespaced.lean/declarations/isconformalmap-iff.md) | 35 | `result-track:2f640cd9e1600ad49091472e448ce4587a1aab6e11ec0b6a54731c7fac40c433` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/DescriptorRegistry.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/DescriptorRegistry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DescriptorRegistry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DescriptorRegistry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [DescriptorDisposition.pointReferences](../../../../../ComputerScience/AlgorithmsInComputerScience/DescriptorRegistry.lean/declarations/descriptordisposition-pointreferences.md) | 13 | `declaration-track:7a548a3462dfe049f27b52cd7c113fb165e8ae4ffeb181df2e3e3f1aa9651e4c` |
-| 2 | `structure` | [DescriptorRegistry](../../../../../ComputerScience/AlgorithmsInComputerScience/DescriptorRegistry.lean/declarations/descriptorregistry.md) | 20 | `declaration-track:00c377f2f14dcce6b3267762dd1de4f217cb6cfbfc1d5b422986c7beb8272159` |
-| 3 | `theorem` | [descriptor_exists](../../../../../ComputerScience/AlgorithmsInComputerScience/DescriptorRegistry.lean/declarations/descriptor-exists.md) | 43 | `result-track:c60b398fd751058d4f5ffe9123e9f03ccbef33bb56d9c3130e213321905a0583` |
-| 4 | `theorem` | [point_reference_resolves](../../../../../ComputerScience/AlgorithmsInComputerScience/DescriptorRegistry.lean/declarations/point-reference-resolves.md) | 52 | `result-track:87cfac0616f3b614abf4997e59731b1d5a3ad08f3ee712f51951c424740f48c3` |
+| 1 | `def` | [DescriptorDisposition.pointReferences](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DescriptorRegistry.lean/declarations/descriptordisposition-pointreferences.md) | 13 | `declaration-track:7a548a3462dfe049f27b52cd7c113fb165e8ae4ffeb181df2e3e3f1aa9651e4c` |
+| 2 | `structure` | [DescriptorRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DescriptorRegistry.lean/declarations/descriptorregistry.md) | 20 | `declaration-track:00c377f2f14dcce6b3267762dd1de4f217cb6cfbfc1d5b422986c7beb8272159` |
+| 3 | `theorem` | [descriptor_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DescriptorRegistry.lean/declarations/descriptor-exists.md) | 43 | `result-track:c60b398fd751058d4f5ffe9123e9f03ccbef33bb56d9c3130e213321905a0583` |
+| 4 | `theorem` | [point_reference_resolves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DescriptorRegistry.lean/declarations/point-reference-resolves.md) | 52 | `result-track:87cfac0616f3b614abf4997e59731b1d5a3ad08f3ee712f51951c424740f48c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

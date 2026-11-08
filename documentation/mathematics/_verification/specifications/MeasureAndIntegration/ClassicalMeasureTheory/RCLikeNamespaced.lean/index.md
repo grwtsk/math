@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [measurable_re](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/declarations/measurable-re-source-edition-2.md) | 32 | `result-track:db11f96cd9ec951603892e4fde30f245d90460149331612943c9dc88119aaef3` |
-| 2 | `theorem` | [measurable_im](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/declarations/measurable-im.md) | 36 | `result-track:0a2a105b278ea91df5acffdecf2c35c75bb33c7a1a2766fa602834f4d2280dba` |
-| 3 | `theorem` | [Measurable.re](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/declarations/measurable-re.md) | 47 | `result-track:380e3b9aeb9dac6e43a556eba803f8d5372f98c3da6731d91877b559ca1cb7f9` |
-| 4 | `theorem` | [AEMeasurable.re](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/declarations/aemeasurable-re.md) | 51 | `result-track:876dcf855c9da320f9333bde3d8dc657ab09965486de075c9a1bec7ae569cb38` |
-| 5 | `theorem` | [Measurable.im](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/declarations/measurable-im-source-edition-2.md) | 55 | `result-track:2268977869b38dba1959bd1b3b059ceeef5c2c1615ddc862f00912e7690a775b` |
-| 6 | `theorem` | [AEMeasurable.im](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/declarations/aemeasurable-im.md) | 59 | `result-track:d1fba2b87564bd9f684b3c61dee670214794f297e618e7b6860f4056f23b60ad` |
-| 7 | `theorem` | [RCLike.measurable_ofReal](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/declarations/rclike-measurable-ofreal.md) | 69 | `result-track:2ab790d0b38bc2ddac8be8acf340acacb9b6c71855c532a141fb343d29ab34da` |
-| 8 | `theorem` | [measurable_of_re_im](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/declarations/measurable-of-re-im.md) | 72 | `result-track:b8cfb29cc9f16d0154990a4644dcc5bed5734f22ea950809b1df840b7b273f56` |
-| 9 | `theorem` | [aemeasurable_of_re_im](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/declarations/aemeasurable-of-re-im.md) | 78 | `result-track:f3b134370dd16a3c77b7e74f6308864edf689302703ae6f506b70ca6b03091a3` |
+| 1 | `theorem` | [measurable_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/declarations/measurable-re-source-edition-2.md) | 32 | `result-track:db11f96cd9ec951603892e4fde30f245d90460149331612943c9dc88119aaef3` |
+| 2 | `theorem` | [measurable_im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/declarations/measurable-im.md) | 36 | `result-track:0a2a105b278ea91df5acffdecf2c35c75bb33c7a1a2766fa602834f4d2280dba` |
+| 3 | `theorem` | [Measurable.re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/declarations/measurable-re.md) | 47 | `result-track:380e3b9aeb9dac6e43a556eba803f8d5372f98c3da6731d91877b559ca1cb7f9` |
+| 4 | `theorem` | [AEMeasurable.re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/declarations/aemeasurable-re.md) | 51 | `result-track:876dcf855c9da320f9333bde3d8dc657ab09965486de075c9a1bec7ae569cb38` |
+| 5 | `theorem` | [Measurable.im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/declarations/measurable-im-source-edition-2.md) | 55 | `result-track:2268977869b38dba1959bd1b3b059ceeef5c2c1615ddc862f00912e7690a775b` |
+| 6 | `theorem` | [AEMeasurable.im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/declarations/aemeasurable-im.md) | 59 | `result-track:d1fba2b87564bd9f684b3c61dee670214794f297e618e7b6860f4056f23b60ad` |
+| 7 | `theorem` | [RCLike.measurable_ofReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/declarations/rclike-measurable-ofreal.md) | 69 | `result-track:2ab790d0b38bc2ddac8be8acf340acacb9b6c71855c532a141fb343d29ab34da` |
+| 8 | `theorem` | [measurable_of_re_im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/declarations/measurable-of-re-im.md) | 72 | `result-track:b8cfb29cc9f16d0154990a4644dcc5bed5734f22ea950809b1df840b7b273f56` |
+| 9 | `theorem` | [aemeasurable_of_re_im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLikeNamespaced.lean/declarations/aemeasurable-of-re-im.md) | 78 | `result-track:f3b134370dd16a3c77b7e74f6308864edf689302703ae6f506b70ca6b03091a3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

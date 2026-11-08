@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/DenselyOrderedNamespacedPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/DenselyOrderedNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/DenselyOrderedNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/DenselyOrderedNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [LocallyFiniteOrder.denselyOrdered_iff_subsingleton](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/DenselyOrderedNamespacedPublic.lean/declarations/locallyfiniteorder-denselyordered-iff-subsingleton.md) | 31 | `result-track:1c04b657f55a29d63f63e8de2f15af4b555d4ef0a2651d750be36e5b14ff2db1` |
-| 2 | `lemma` | [denselyOrdered_set_iff_subsingleton](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/DenselyOrderedNamespacedPublic.lean/declarations/denselyordered-set-iff-subsingleton.md) | 38 | `result-track:cea2ba0bfd41d026ac7194f8f1617bc30eed1d9116f99a534a78525461e30336` |
-| 3 | `lemma` | [WithBot.denselyOrdered_set_iff_subsingleton](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/DenselyOrderedNamespacedPublic.lean/declarations/withbot-denselyordered-set-iff-subsingleton.md) | 44 | `result-track:7199f15aef639dc9d21c7adc6b4c97532d352d8253459b80931e3f6d339dbbaf` |
+| 1 | `lemma` | [LocallyFiniteOrder.denselyOrdered_iff_subsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/DenselyOrderedNamespacedPublic.lean/declarations/locallyfiniteorder-denselyordered-iff-subsingleton.md) | 31 | `result-track:1c04b657f55a29d63f63e8de2f15af4b555d4ef0a2651d750be36e5b14ff2db1` |
+| 2 | `lemma` | [denselyOrdered_set_iff_subsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/DenselyOrderedNamespacedPublic.lean/declarations/denselyordered-set-iff-subsingleton.md) | 38 | `result-track:cea2ba0bfd41d026ac7194f8f1617bc30eed1d9116f99a534a78525461e30336` |
+| 3 | `lemma` | [WithBot.denselyOrdered_set_iff_subsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/DenselyOrderedNamespacedPublic.lean/declarations/withbot-denselyordered-set-iff-subsingleton.md) | 44 | `result-track:7199f15aef639dc9d21c7adc6b4c97532d352d8253459b80931e3f6d339dbbaf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

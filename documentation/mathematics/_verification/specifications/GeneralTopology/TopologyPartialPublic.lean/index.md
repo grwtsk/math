@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopologyPartialPublic.lean/index.md) · [Full source](../../../../GeneralTopology/TopologyPartialPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyPartialPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyPartialPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rtendsto_nhds](../../../../GeneralTopology/TopologyPartialPublic.lean/declarations/rtendsto-nhds.md) | 27 | `result-track:1a7fe8ca40b4de0e8ee516e277a46e38aac6e6196a4580df254186a9a87347e9` |
-| 2 | `theorem` | [rtendsto'_nhds](../../../../GeneralTopology/TopologyPartialPublic.lean/declarations/rtendsto-nhds-source-edition-2.md) | 31 | `result-track:52d919d32c72ec4f67548e2f10f016a29bdaf03d148bd2f04d6d5ed999799a00` |
-| 3 | `theorem` | [ptendsto_nhds](../../../../GeneralTopology/TopologyPartialPublic.lean/declarations/ptendsto-nhds-source-edition-2.md) | 37 | `result-track:d56d03ce4ac94359a3dd4c599de2666faa9f3259ce182c29fbc42644b3f13215` |
-| 4 | `theorem` | [ptendsto'_nhds](../../../../GeneralTopology/TopologyPartialPublic.lean/declarations/ptendsto-nhds.md) | 41 | `result-track:2293c1cde0196b4ceb8925c128683871cb9b5d4908c8ea04e62edd62c37141a5` |
-| 5 | `def` | [PContinuous](../../../../GeneralTopology/TopologyPartialPublic.lean/declarations/pcontinuous.md) | 51 | `declaration-track:52e0f3eeefbfd4ce94fd0dda957beffdde51ac549bcd3c3fa2cd77d691a06982` |
-| 6 | `theorem` | [open_dom_of_pcontinuous](../../../../GeneralTopology/TopologyPartialPublic.lean/declarations/open-dom-of-pcontinuous.md) | 54 | `result-track:fb43605e5572f0cab259e87bec2fe0270ebe5948bd3c2f21e119f4928357a3ac` |
-| 7 | `theorem` | [pcontinuous_iff'](../../../../GeneralTopology/TopologyPartialPublic.lean/declarations/pcontinuous-iff.md) | 57 | `result-track:d84fe496081c7da18ccdf4cb44c6d9bb360a96bbcdd78d275cb6992769df576d` |
-| 8 | `theorem` | [continuousWithinAt_iff_ptendsto_res](../../../../GeneralTopology/TopologyPartialPublic.lean/declarations/continuouswithinat-iff-ptendsto-res.md) | 80 | `result-track:88737cb49194539409c2c61320073a7e783399a5e4fb6f954eb317958af81666` |
+| 1 | `theorem` | [rtendsto_nhds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyPartialPublic.lean/declarations/rtendsto-nhds.md) | 27 | `result-track:1a7fe8ca40b4de0e8ee516e277a46e38aac6e6196a4580df254186a9a87347e9` |
+| 2 | `theorem` | [rtendsto'_nhds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyPartialPublic.lean/declarations/rtendsto-nhds-source-edition-2.md) | 31 | `result-track:52d919d32c72ec4f67548e2f10f016a29bdaf03d148bd2f04d6d5ed999799a00` |
+| 3 | `theorem` | [ptendsto_nhds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyPartialPublic.lean/declarations/ptendsto-nhds-source-edition-2.md) | 37 | `result-track:d56d03ce4ac94359a3dd4c599de2666faa9f3259ce182c29fbc42644b3f13215` |
+| 4 | `theorem` | [ptendsto'_nhds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyPartialPublic.lean/declarations/ptendsto-nhds.md) | 41 | `result-track:2293c1cde0196b4ceb8925c128683871cb9b5d4908c8ea04e62edd62c37141a5` |
+| 5 | `def` | [PContinuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyPartialPublic.lean/declarations/pcontinuous.md) | 51 | `declaration-track:52e0f3eeefbfd4ce94fd0dda957beffdde51ac549bcd3c3fa2cd77d691a06982` |
+| 6 | `theorem` | [open_dom_of_pcontinuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyPartialPublic.lean/declarations/open-dom-of-pcontinuous.md) | 54 | `result-track:fb43605e5572f0cab259e87bec2fe0270ebe5948bd3c2f21e119f4928357a3ac` |
+| 7 | `theorem` | [pcontinuous_iff'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyPartialPublic.lean/declarations/pcontinuous-iff.md) | 57 | `result-track:d84fe496081c7da18ccdf4cb44c6d9bb360a96bbcdd78d275cb6992769df576d` |
+| 8 | `theorem` | [continuousWithinAt_iff_ptendsto_res](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyPartialPublic.lean/declarations/continuouswithinat-iff-ptendsto-res.md) | 80 | `result-track:88737cb49194539409c2c61320073a7e783399a5e4fb6f954eb317958af81666` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

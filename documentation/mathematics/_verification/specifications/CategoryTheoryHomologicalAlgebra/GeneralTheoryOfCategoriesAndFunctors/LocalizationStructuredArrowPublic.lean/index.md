@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [structuredArrowEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowPublic.lean/declarations/structuredarrowequiv.md) | 45 | `declaration-track:cf3e9f17ec2c93be270f98dad842938cc6dc0a39eee0b33995149b03f6aff488` |
-| 2 | `lemma` | [induction_structuredArrow'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowPublic.lean/declarations/induction-structuredarrow.md) | 66 | `result-track:1346e20063abf48ea7c7402606ffa67602c4e68d30b8a8de671aedd7f5901d0f` |
-| 3 | `lemma` | [induction_structuredArrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowPublic.lean/declarations/induction-structuredarrow-source-edition-2.md) | 96 | `result-track:bcfe37280952a6ac0d46bfa3f2f1b2da5759bb029163db0b3acd0d1f670779c7` |
-| 4 | `lemma` | [induction_costructuredArrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowPublic.lean/declarations/induction-costructuredarrow.md) | 124 | `result-track:0a7d7407a37cad85d52b0cf141983edea149dd7bf2176d386afe2db2a990a646` |
+| 1 | `def` | [structuredArrowEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowPublic.lean/declarations/structuredarrowequiv.md) | 45 | `declaration-track:cf3e9f17ec2c93be270f98dad842938cc6dc0a39eee0b33995149b03f6aff488` |
+| 2 | `lemma` | [induction_structuredArrow'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowPublic.lean/declarations/induction-structuredarrow.md) | 66 | `result-track:1346e20063abf48ea7c7402606ffa67602c4e68d30b8a8de671aedd7f5901d0f` |
+| 3 | `lemma` | [induction_structuredArrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowPublic.lean/declarations/induction-structuredarrow-source-edition-2.md) | 96 | `result-track:bcfe37280952a6ac0d46bfa3f2f1b2da5759bb029163db0b3acd0d1f670779c7` |
+| 4 | `lemma` | [induction_costructuredArrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowPublic.lean/declarations/induction-costructuredarrow.md) | 124 | `result-track:0a7d7407a37cad85d52b0cf141983edea149dd7bf2176d386afe2db2a990a646` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

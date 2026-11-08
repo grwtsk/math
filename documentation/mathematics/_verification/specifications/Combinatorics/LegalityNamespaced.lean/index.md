@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/LegalityNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/LegalityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LegalityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LegalityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TerrainMoveLegality](../../../../Combinatorics/LegalityNamespaced.lean/declarations/terrainmovelegality.md) | 26 | `declaration-track:73e41c0cb19888cd06cda0b4f8cf10933f13a6a7c810b38415b9c46de13f2820` |
-| 2 | `theorem` | [conjunction](../../../../Combinatorics/LegalityNamespaced.lean/declarations/conjunction.md) | 52 | `result-track:f1f7ace05b5f3faee5ec28d41cd1601afa5de229fa32486f0221a97783c21c0e` |
-| 3 | `structure` | [AdmittedTerrainMove](../../../../Combinatorics/LegalityNamespaced.lean/declarations/admittedterrainmove.md) | 71 | `declaration-track:bea28996c8e1f5b0a35283f12ce06bab9d69a8ead02887f7f700dc1dcd914288` |
+| 1 | `structure` | [TerrainMoveLegality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LegalityNamespaced.lean/declarations/terrainmovelegality.md) | 26 | `declaration-track:73e41c0cb19888cd06cda0b4f8cf10933f13a6a7c810b38415b9c46de13f2820` |
+| 2 | `theorem` | [conjunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LegalityNamespaced.lean/declarations/conjunction.md) | 52 | `result-track:f1f7ace05b5f3faee5ec28d41cd1601afa5de229fa32486f0221a97783c21c0e` |
+| 3 | `structure` | [AdmittedTerrainMove](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LegalityNamespaced.lean/declarations/admittedterrainmove.md) | 71 | `declaration-track:bea28996c8e1f5b0a35283f12ce06bab9d69a8ead02887f7f700dc1dcd914288` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

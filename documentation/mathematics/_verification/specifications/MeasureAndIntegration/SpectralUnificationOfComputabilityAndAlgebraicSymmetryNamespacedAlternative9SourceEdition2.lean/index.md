@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative9SourceEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative9SourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative9SourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative9SourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceSlopeBound_exists](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative9SourceEdition2.lean/declarations/sourceslopebound-exists.md) | 33 | `result-track:b48584e4503419d8a96c89353b61bd676c639140e5ad71f166870f4bec34b0ad` |
-| 2 | `theorem` | [invSqrtPrimitive_hasDerivAt](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative9SourceEdition2.lean/declarations/invsqrtprimitive-hasderivat.md) | 51 | `result-track:3e3d2f5076c8b373049e4f605919f68614a731e1e59e8d93f900867e15bea670` |
-| 3 | `theorem` | [reciprocalWeight_integral](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative9SourceEdition2.lean/declarations/reciprocalweight-integral.md) | 65 | `result-track:301c97486abc66dd5f13ffd85a5342951f874af47eac6b9d40894304ffeec7c6` |
-| 4 | `theorem` | [sourceVariationCost_le](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative9SourceEdition2.lean/declarations/sourcevariationcost-le.md) | 80 | `result-track:8a169727617ef4c541327e374573f504aa207e387384f03e743d2bb60d11465b` |
+| 1 | `theorem` | [sourceSlopeBound_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative9SourceEdition2.lean/declarations/sourceslopebound-exists.md) | 33 | `result-track:b48584e4503419d8a96c89353b61bd676c639140e5ad71f166870f4bec34b0ad` |
+| 2 | `theorem` | [invSqrtPrimitive_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative9SourceEdition2.lean/declarations/invsqrtprimitive-hasderivat.md) | 51 | `result-track:3e3d2f5076c8b373049e4f605919f68614a731e1e59e8d93f900867e15bea670` |
+| 3 | `theorem` | [reciprocalWeight_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative9SourceEdition2.lean/declarations/reciprocalweight-integral.md) | 65 | `result-track:301c97486abc66dd5f13ffd85a5342951f874af47eac6b9d40894304ffeec7c6` |
+| 4 | `theorem` | [sourceVariationCost_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative9SourceEdition2.lean/declarations/sourcevariationcost-le.md) | 80 | `result-track:8a169727617ef4c541327e374573f504aa207e387384f03e743d2bb60d11465b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

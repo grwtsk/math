@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.Polynomial.ConjugateInterpolation`](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Algebra.Polynomial.ConjugateInterpolation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.Tactic.Linarith` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [squareTrace](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/declarations/squaretrace.md) | 26 | `declaration-track:2bbaf28cbe3acc6d45e38d4dacc940749e235066864d19e6f1a8bef7e210b152` |
-| 2 | `def` | [pairValues](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/declarations/pairvalues.md) | 31 | `declaration-track:510d39ab00e8f396cf36dadfcca35be5be2fc82fd6ff5dbdbf0bbd2248269249` |
-| 3 | `theorem` | [pairValues_conj](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/declarations/pairvalues-conj.md) | 34 | `result-track:152a7a254cbcc2498fb7220debf30929b5a676b9c8cebe9b134042f965725111` |
-| 4 | `theorem` | [squareTrace_of_pair_values](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/declarations/squaretrace-of-pair-values.md) | 52 | `result-track:1fd3caf5a5d6d273b79177be1f9a2fc19f3957b6e9cfe908fc284557db214b24` |
-| 5 | `theorem` | [exists_pair_test](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/declarations/exists-pair-test.md) | 76 | `result-track:a8015d139c1534e91a548188a18d43ac12612ab8a2d583f917b5724c1403a8c0` |
-| 6 | `theorem` | [squareTrace_eq_real](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/declarations/squaretrace-eq-real.md) | 87 | `result-track:9943b7880121410703206000239d9647888e475819da20ae913ce1b2054d02a5` |
-| 7 | `theorem` | [squareTrace_im_eq_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/declarations/squaretrace-im-eq-zero.md) | 102 | `result-track:fbfcd4469e8e7ee257da121e207ce43a930ba3bd949da48000f7dfc47e6e381f` |
-| 8 | `theorem` | [squareTrace_nonneg_iff_real](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/declarations/squaretrace-nonneg-iff-real.md) | 125 | `result-track:ac33f1aae286f009220ad9ee93ad4cc5741740f5208fc9dab7f2855e0ee6b286` |
+| 1 | `def` | [squareTrace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/declarations/squaretrace.md) | 26 | `declaration-track:2bbaf28cbe3acc6d45e38d4dacc940749e235066864d19e6f1a8bef7e210b152` |
+| 2 | `def` | [pairValues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/declarations/pairvalues.md) | 31 | `declaration-track:510d39ab00e8f396cf36dadfcca35be5be2fc82fd6ff5dbdbf0bbd2248269249` |
+| 3 | `theorem` | [pairValues_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/declarations/pairvalues-conj.md) | 34 | `result-track:152a7a254cbcc2498fb7220debf30929b5a676b9c8cebe9b134042f965725111` |
+| 4 | `theorem` | [squareTrace_of_pair_values](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/declarations/squaretrace-of-pair-values.md) | 52 | `result-track:1fd3caf5a5d6d273b79177be1f9a2fc19f3957b6e9cfe908fc284557db214b24` |
+| 5 | `theorem` | [exists_pair_test](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/declarations/exists-pair-test.md) | 76 | `result-track:a8015d139c1534e91a548188a18d43ac12612ab8a2d583f917b5724c1403a8c0` |
+| 6 | `theorem` | [squareTrace_eq_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/declarations/squaretrace-eq-real.md) | 87 | `result-track:9943b7880121410703206000239d9647888e475819da20ae913ce1b2054d02a5` |
+| 7 | `theorem` | [squareTrace_im_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/declarations/squaretrace-im-eq-zero.md) | 102 | `result-track:fbfcd4469e8e7ee257da121e207ce43a930ba3bd949da48000f7dfc47e6e381f` |
+| 8 | `theorem` | [squareTrace_nonneg_iff_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSignedRootTrace.lean/declarations/squaretrace-nonneg-iff-real.md) | 125 | `result-track:ac33f1aae286f009220ad9ee93ad4cc5741740f5208fc9dab7f2855e0ee6b286` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespacedPublic.lean/declarations/instance.md) | 33 | `declaration-track:3cba711e0a600832c1df78820df29931e69f09801b93303efdd6ba2af3c5bcd7` |
-| 2 | `theorem` | [mod_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespacedPublic.lean/declarations/mod-eq.md) | 46 | `result-track:2c4ed29571efc00633a51efdf34ae5352b0cbe97a81d7e391744e4ed32a7dcd6` |
-| 3 | `theorem` | [gcd_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespacedPublic.lean/declarations/gcd-eq.md) | 49 | `result-track:9175127b42d32b08aa0d66eef8645833a9f4590100cf2d191cc2a6cef5ddecd1` |
-| 4 | `theorem` | [gcd_zero_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespacedPublic.lean/declarations/gcd-zero-eq.md) | 54 | `result-track:ee09bb775a82c3107bb9185e366c3dcbd7139dd2460bce6a2ad96bdfea52e19a` |
-| 5 | `theorem` | [gcd_eq_of_ne](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespacedPublic.lean/declarations/gcd-eq-of-ne.md) | 58 | `result-track:ed33f201c2668aa1b3011e9946e3a92860bac04ae5d3c7ce298af29eec4039d1` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespacedPublic.lean/declarations/instance.md) | 33 | `declaration-track:3cba711e0a600832c1df78820df29931e69f09801b93303efdd6ba2af3c5bcd7` |
+| 2 | `theorem` | [mod_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespacedPublic.lean/declarations/mod-eq.md) | 46 | `result-track:2c4ed29571efc00633a51efdf34ae5352b0cbe97a81d7e391744e4ed32a7dcd6` |
+| 3 | `theorem` | [gcd_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespacedPublic.lean/declarations/gcd-eq.md) | 49 | `result-track:9175127b42d32b08aa0d66eef8645833a9f4590100cf2d191cc2a6cef5ddecd1` |
+| 4 | `theorem` | [gcd_zero_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespacedPublic.lean/declarations/gcd-zero-eq.md) | 54 | `result-track:ee09bb775a82c3107bb9185e366c3dcbd7139dd2460bce6a2ad96bdfea52e19a` |
+| 5 | `theorem` | [gcd_eq_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldNamespacedPublic.lean/declarations/gcd-eq-of-ne.md) | 58 | `result-track:ed33f201c2668aa1b3011e9946e3a92860bac04ae5d3c7ce298af29eec4039d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

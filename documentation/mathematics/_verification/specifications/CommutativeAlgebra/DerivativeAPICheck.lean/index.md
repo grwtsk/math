@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/DerivativeAPICheck.lean/index.md) · [Full source](../../../../CommutativeAlgebra/DerivativeAPICheck.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivativeAPICheck.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivativeAPICheck.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pderiv_ofNat](../../../../CommutativeAlgebra/DerivativeAPICheck.lean/declarations/pderiv-ofnat.md) | 8 | `result-track:495f8e271aa208004ad41ccf497a7e1de5927778c76a9461ed8188d79c3d6393` |
-| 2 | `example` | [(anonymous)](../../../../CommutativeAlgebra/DerivativeAPICheck.lean/declarations/example.md) | 12 | `declaration-track:638dc96e022a1bbdd145c437d73967c44f90e80866f8ef4896a7158d8d2073af` |
+| 1 | `theorem` | [pderiv_ofNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivativeAPICheck.lean/declarations/pderiv-ofnat.md) | 8 | `result-track:495f8e271aa208004ad41ccf497a7e1de5927778c76a9461ed8188d79c3d6393` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivativeAPICheck.lean/declarations/example.md) | 12 | `declaration-track:638dc96e022a1bbdd145c437d73967c44f90e80866f8ef4896a7158d8d2073af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

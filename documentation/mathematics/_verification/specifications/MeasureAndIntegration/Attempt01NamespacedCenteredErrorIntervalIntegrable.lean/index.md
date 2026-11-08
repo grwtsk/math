@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Attempt01NamespacedCenteredErrorIntervalIntegrable.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Attempt01NamespacedCenteredErrorIntervalIntegrable.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedCenteredErrorIntervalIntegrable.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedCenteredErrorIntervalIntegrable.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [centered_error_intervalIntegrable](../../../../MeasureAndIntegration/Attempt01NamespacedCenteredErrorIntervalIntegrable.lean/declarations/centered-error-intervalintegrable.md) | 31 | `result-track:50888bda2f1643f31303585ed091e2cb78ad007a70a74d3ac87470c4c8a533a5` |
-| 2 | `theorem` | [weighted_error_intervalIntegrable](../../../../MeasureAndIntegration/Attempt01NamespacedCenteredErrorIntervalIntegrable.lean/declarations/weighted-error-intervalintegrable.md) | 38 | `result-track:7f533cc3f97332d44ba145ac5cf6c00aef901758ed6b13f1c2949e6a8c150f0e` |
-| 3 | `theorem` | [convolution_eq_primitive](../../../../MeasureAndIntegration/Attempt01NamespacedCenteredErrorIntervalIntegrable.lean/declarations/convolution-eq-primitive.md) | 43 | `result-track:56a2807e316d19e3e547f722e0dd0a25845697f5b2f8a0ae645b6dfe094a9a55` |
-| 4 | `theorem` | [actualMangoldtErrorConvolution_absolutelyContinuous](../../../../MeasureAndIntegration/Attempt01NamespacedCenteredErrorIntervalIntegrable.lean/declarations/actualmangoldterrorconvolution-absolutelycontinuous.md) | 55 | `result-track:8c29883285c8b3cd4466c3990cedd96d193bb02c2e2617d3e135e1d5e3e9bc00` |
-| 5 | `theorem` | [actualMangoldtErrorConvolution_ae_hasDerivAt](../../../../MeasureAndIntegration/Attempt01NamespacedCenteredErrorIntervalIntegrable.lean/declarations/actualmangoldterrorconvolution-ae-hasderivat.md) | 67 | `result-track:abe9709eec255d2306f24ec32a7b802dde8df26178cfabdfc2f1e9ee6404ea1a` |
+| 1 | `theorem` | [centered_error_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedCenteredErrorIntervalIntegrable.lean/declarations/centered-error-intervalintegrable.md) | 31 | `result-track:50888bda2f1643f31303585ed091e2cb78ad007a70a74d3ac87470c4c8a533a5` |
+| 2 | `theorem` | [weighted_error_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedCenteredErrorIntervalIntegrable.lean/declarations/weighted-error-intervalintegrable.md) | 38 | `result-track:7f533cc3f97332d44ba145ac5cf6c00aef901758ed6b13f1c2949e6a8c150f0e` |
+| 3 | `theorem` | [convolution_eq_primitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedCenteredErrorIntervalIntegrable.lean/declarations/convolution-eq-primitive.md) | 43 | `result-track:56a2807e316d19e3e547f722e0dd0a25845697f5b2f8a0ae645b6dfe094a9a55` |
+| 4 | `theorem` | [actualMangoldtErrorConvolution_absolutelyContinuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedCenteredErrorIntervalIntegrable.lean/declarations/actualmangoldterrorconvolution-absolutelycontinuous.md) | 55 | `result-track:8c29883285c8b3cd4466c3990cedd96d193bb02c2e2617d3e135e1d5e3e9bc00` |
+| 5 | `theorem` | [actualMangoldtErrorConvolution_ae_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedCenteredErrorIntervalIntegrable.lean/declarations/actualmangoldterrorconvolution-ae-hasderivat.md) | 67 | `result-track:abe9709eec255d2306f24ec32a7b802dde8df26178cfabdfc2f1e9ee6404ea1a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

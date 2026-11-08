@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PatternNamespacedPublicProofShape.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PatternNamespacedPublicProofShape.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatternNamespacedPublicProofShape.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatternNamespacedPublicProofShape.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ProofShape](../../../../../ComputerScience/AlgorithmsInComputerScience/PatternNamespacedPublicProofShape.lean/declarations/proofshape.md) | 22 | `declaration-track:881f523836945bfe088da087eb8c38aef93dbf26212b376a6d974d43b00eec4e` |
-| 2 | `structure` | [PatternCard](../../../../../ComputerScience/AlgorithmsInComputerScience/PatternNamespacedPublicProofShape.lean/declarations/patterncard.md) | 36 | `declaration-track:860b267054b1dc0fed35816b812fa14989fc60edb8fa6b3cd3648ab8dddf3ee6` |
-| 3 | `def` | [PatternCard.Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/PatternNamespacedPublicProofShape.lean/declarations/patterncard-valid.md) | 60 | `declaration-track:b350a41329e85db8c78e30770c1d153dde3c117cb81e04afeeb29868015d23bf` |
-| 4 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/PatternNamespacedPublicProofShape.lean/declarations/instance.md) | 69 | `declaration-track:e1bb667f5563bf02e6a54bbbc989a067216d7a7e01af2356756451ba03eeb9af` |
-| 5 | `def` | [verifyPatternCard](../../../../../ComputerScience/AlgorithmsInComputerScience/PatternNamespacedPublicProofShape.lean/declarations/verifypatterncard.md) | 73 | `declaration-track:465c15016f927e51509eb49ec93ebb2f2a3bdce917aff2d2b0a8108a452610aa` |
-| 6 | `theorem` | [verifyPatternCard_sound](../../../../../ComputerScience/AlgorithmsInComputerScience/PatternNamespacedPublicProofShape.lean/declarations/verifypatterncard-sound.md) | 77 | `result-track:2985181d401a753d1512de0d4316db093908e5e8e4f2c15e9e6cfda251a4ae9f` |
-| 7 | `structure` | [PatternRetrievalScore](../../../../../ComputerScience/AlgorithmsInComputerScience/PatternNamespacedPublicProofShape.lean/declarations/patternretrievalscore.md) | 83 | `declaration-track:eea67a9ea1d0d85df0c49faf6068cb2cf0c83e62f47e262cdfd3f3ce9827e409` |
+| 1 | `inductive` | [ProofShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatternNamespacedPublicProofShape.lean/declarations/proofshape.md) | 22 | `declaration-track:881f523836945bfe088da087eb8c38aef93dbf26212b376a6d974d43b00eec4e` |
+| 2 | `structure` | [PatternCard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatternNamespacedPublicProofShape.lean/declarations/patterncard.md) | 36 | `declaration-track:860b267054b1dc0fed35816b812fa14989fc60edb8fa6b3cd3648ab8dddf3ee6` |
+| 3 | `def` | [PatternCard.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatternNamespacedPublicProofShape.lean/declarations/patterncard-valid.md) | 60 | `declaration-track:b350a41329e85db8c78e30770c1d153dde3c117cb81e04afeeb29868015d23bf` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatternNamespacedPublicProofShape.lean/declarations/instance.md) | 69 | `declaration-track:e1bb667f5563bf02e6a54bbbc989a067216d7a7e01af2356756451ba03eeb9af` |
+| 5 | `def` | [verifyPatternCard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatternNamespacedPublicProofShape.lean/declarations/verifypatterncard.md) | 73 | `declaration-track:465c15016f927e51509eb49ec93ebb2f2a3bdce917aff2d2b0a8108a452610aa` |
+| 6 | `theorem` | [verifyPatternCard_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatternNamespacedPublicProofShape.lean/declarations/verifypatterncard-sound.md) | 77 | `result-track:2985181d401a753d1512de0d4316db093908e5e8e4f2c15e9e6cfda251a4ae9f` |
+| 7 | `structure` | [PatternRetrievalScore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PatternNamespacedPublicProofShape.lean/declarations/patternretrievalscore.md) | 83 | `declaration-track:eea67a9ea1d0d85df0c49faf6068cb2cf0c83e62f47e262cdfd3f3ce9827e409` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

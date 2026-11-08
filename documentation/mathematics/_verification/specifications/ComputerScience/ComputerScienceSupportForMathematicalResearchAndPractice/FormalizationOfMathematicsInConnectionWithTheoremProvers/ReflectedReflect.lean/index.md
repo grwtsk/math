@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReflectedReflect.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReflectedReflect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReflectedReflect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReflectedReflect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reflect](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReflectedReflect.lean/declarations/reflect.md) | 8 | `declaration-track:1c34ba8d53c8ad5b5d1729163dbb0996ca7d2066d40b078b77045fff14db2ea4` |
-| 2 | `theorem` | [reflect_left](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReflectedReflect.lean/declarations/reflect-left.md) | 10 | `result-track:d3ce94d4aefb09d2b895c303306ba90de033f1d0368036c8dfc3bd349911d462` |
-| 3 | `theorem` | [reflect_right](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReflectedReflect.lean/declarations/reflect-right.md) | 13 | `result-track:361d3009d09dfcdf345c712e5e5e179d380ceac8dbda0d9d30a36f1dc755f856` |
-| 4 | `theorem` | [reflect_involution](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReflectedReflect.lean/declarations/reflect-involution.md) | 16 | `result-track:a2814a35194bbbca06024abad8343cd850eaee05eba79a8f85b8e75f3a1a5788` |
+| 1 | `def` | [reflect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReflectedReflect.lean/declarations/reflect.md) | 8 | `declaration-track:1c34ba8d53c8ad5b5d1729163dbb0996ca7d2066d40b078b77045fff14db2ea4` |
+| 2 | `theorem` | [reflect_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReflectedReflect.lean/declarations/reflect-left.md) | 10 | `result-track:d3ce94d4aefb09d2b895c303306ba90de033f1d0368036c8dfc3bd349911d462` |
+| 3 | `theorem` | [reflect_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReflectedReflect.lean/declarations/reflect-right.md) | 13 | `result-track:361d3009d09dfcdf345c712e5e5e179d380ceac8dbda0d9d30a36f1dc755f856` |
+| 4 | `theorem` | [reflect_involution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReflectedReflect.lean/declarations/reflect-involution.md) | 16 | `result-track:a2814a35194bbbca06024abad8343cd850eaee05eba79a8f85b8e75f3a1a5788` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

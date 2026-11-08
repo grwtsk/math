@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TranslationSeamLowerBound.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TranslationSeamLowerBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TranslationSeamLowerBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TranslationSeamLowerBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [right_seam_lower_bound](../../../../MeasureAndIntegration/TranslationSeamLowerBound.lean/declarations/right-seam-lower-bound.md) | 25 | `result-track:76e74f4fe9a6526208fa542149c54aee1b8401a8e207275a374bf094765737d0` |
-| 2 | `theorem` | [positive_trace_eventual_seam_lower_bound](../../../../MeasureAndIntegration/TranslationSeamLowerBound.lean/declarations/positive-trace-eventual-seam-lower-bound.md) | 53 | `result-track:cd762a09ededf0d17b12f6d1370df032b0aff2659c546a56ba80d2a35e6f48e4` |
+| 1 | `theorem` | [right_seam_lower_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TranslationSeamLowerBound.lean/declarations/right-seam-lower-bound.md) | 25 | `result-track:76e74f4fe9a6526208fa542149c54aee1b8401a8e207275a374bf094765737d0` |
+| 2 | `theorem` | [positive_trace_eventual_seam_lower_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TranslationSeamLowerBound.lean/declarations/positive-trace-eventual-seam-lower-bound.md) | 53 | `result-track:cd762a09ededf0d17b12f6d1370df032b0aff2659c546a56ba80d2a35e6f48e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

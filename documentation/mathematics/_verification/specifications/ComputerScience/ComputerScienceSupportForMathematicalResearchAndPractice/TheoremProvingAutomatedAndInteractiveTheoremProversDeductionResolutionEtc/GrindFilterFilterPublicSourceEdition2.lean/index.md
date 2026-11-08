@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterPublicSourceEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterPublicSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterPublicSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterPublicSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Filter](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterPublicSourceEdition2.lean/declarations/filter.md) | 11 | `declaration-track:bf7a8582444239767d85990676237097e4d0dc552b440b5162e7cd4cb526bca6` |
-| 2 | `def` | [getGen](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterPublicSourceEdition2.lean/declarations/getgen.md) | 21 | `declaration-track:6b740f0bde719506b485445444e8a583f858fbafd8fbbb047fbe140275faae2b` |
-| 3 | `def` | [Filter.eval](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterPublicSourceEdition2.lean/declarations/filter-eval.md) | 28 | `declaration-track:aeaed3b476c5fff13f6741c2a0fa26c16571c6e9d2ac966b4266333e97ddeae0` |
+| 1 | `inductive` | [Filter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterPublicSourceEdition2.lean/declarations/filter.md) | 11 | `declaration-track:bf7a8582444239767d85990676237097e4d0dc552b440b5162e7cd4cb526bca6` |
+| 2 | `def` | [getGen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterPublicSourceEdition2.lean/declarations/getgen.md) | 21 | `declaration-track:6b740f0bde719506b485445444e8a583f858fbafd8fbbb047fbe140275faae2b` |
+| 3 | `def` | [Filter.eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GrindFilterFilterPublicSourceEdition2.lean/declarations/filter-eval.md) | 28 | `declaration-track:aeaed3b476c5fff13f6741c2a0fa26c16571c6e9d2ac966b4266333e97ddeae0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

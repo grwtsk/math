@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/HomContinuousEvalNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/HomContinuousEvalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomContinuousEvalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomContinuousEvalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [ContinuousEval](../../../../GeneralTopology/HomContinuousEvalNamespaced.lean/declarations/continuouseval.md) | 30 | `declaration-track:cf1cc37d634e145113798ed467fc127c717e151e25d5ddb652c987598fae2f59` |
-| 2 | `theorem` | [Continuous.eval](../../../../GeneralTopology/HomContinuousEvalNamespaced.lean/declarations/continuous-eval.md) | 42 | `result-track:b0655de6120cd230f271f1e6df9bec3cef01fa0de290c696424b0f414baa0a7a` |
-| 3 | `theorem` | [ContinuousEval.of_continuous_forget](../../../../GeneralTopology/HomContinuousEvalNamespaced.lean/declarations/continuouseval-of-continuous-forget.md) | 51 | `result-track:d4a04607fcd62382a4012d5d36e22bdd12777445aaed86763c7e51f843ac71e4` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/HomContinuousEvalNamespaced.lean/declarations/instance-source-edition-2.md) | 56 | `declaration-track:a1c7405e4cda1eff33ab3832e72f17709e6794b57c090d5c66cb3a1a7027799c` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/HomContinuousEvalNamespaced.lean/declarations/instance.md) | 59 | `declaration-track:8377a054adc0d2f7bdaa74bd29154b8d9eb9901904c18ae19ed134b18b512dd3` |
-| 6 | `theorem` | [Filter.Tendsto.eval](../../../../GeneralTopology/HomContinuousEvalNamespaced.lean/declarations/filter-tendsto-eval.md) | 62 | `result-track:02592095f481257ae837ce5eb18f8d0592a4b5503cb274bea3181532305d8f12` |
-| 7 | `theorem` | [ContinuousAt.eval](../../../../GeneralTopology/HomContinuousEvalNamespaced.lean/declarations/continuousat-eval.md) | 67 | `result-track:070588bcfa981e5ac2e6cc457138b4c26c50972eaa3f0944dd9cad7e2226b517` |
-| 8 | `theorem` | [ContinuousWithinAt.eval](../../../../GeneralTopology/HomContinuousEvalNamespaced.lean/declarations/continuouswithinat-eval.md) | 71 | `result-track:5c1efdc27c2a0658a16975a08563dd2b15245f21bbee2f0f9d1e55a7ea21dde4` |
-| 9 | `theorem` | [ContinuousOn.eval](../../../../GeneralTopology/HomContinuousEvalNamespaced.lean/declarations/continuouson-eval.md) | 75 | `result-track:7315128e48e36cc4b868952cd4bfa6b59a60ec1b69a0937988d06e5b64339c75` |
+| 1 | `class` | [ContinuousEval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomContinuousEvalNamespaced.lean/declarations/continuouseval.md) | 30 | `declaration-track:cf1cc37d634e145113798ed467fc127c717e151e25d5ddb652c987598fae2f59` |
+| 2 | `theorem` | [Continuous.eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomContinuousEvalNamespaced.lean/declarations/continuous-eval.md) | 42 | `result-track:b0655de6120cd230f271f1e6df9bec3cef01fa0de290c696424b0f414baa0a7a` |
+| 3 | `theorem` | [ContinuousEval.of_continuous_forget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomContinuousEvalNamespaced.lean/declarations/continuouseval-of-continuous-forget.md) | 51 | `result-track:d4a04607fcd62382a4012d5d36e22bdd12777445aaed86763c7e51f843ac71e4` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomContinuousEvalNamespaced.lean/declarations/instance-source-edition-2.md) | 56 | `declaration-track:a1c7405e4cda1eff33ab3832e72f17709e6794b57c090d5c66cb3a1a7027799c` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomContinuousEvalNamespaced.lean/declarations/instance.md) | 59 | `declaration-track:8377a054adc0d2f7bdaa74bd29154b8d9eb9901904c18ae19ed134b18b512dd3` |
+| 6 | `theorem` | [Filter.Tendsto.eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomContinuousEvalNamespaced.lean/declarations/filter-tendsto-eval.md) | 62 | `result-track:02592095f481257ae837ce5eb18f8d0592a4b5503cb274bea3181532305d8f12` |
+| 7 | `theorem` | [ContinuousAt.eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomContinuousEvalNamespaced.lean/declarations/continuousat-eval.md) | 67 | `result-track:070588bcfa981e5ac2e6cc457138b4c26c50972eaa3f0944dd9cad7e2226b517` |
+| 8 | `theorem` | [ContinuousWithinAt.eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomContinuousEvalNamespaced.lean/declarations/continuouswithinat-eval.md) | 71 | `result-track:5c1efdc27c2a0658a16975a08563dd2b15245f21bbee2f0f9d1e55a7ea21dde4` |
+| 9 | `theorem` | [ContinuousOn.eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomContinuousEvalNamespaced.lean/declarations/continuouson-eval.md) | 75 | `result-track:7315128e48e36cc4b868952cd4bfa6b59a60ec1b69a0937988d06e5b64339c75` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

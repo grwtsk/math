@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosureData.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosureData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosureData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosureData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [GeneratedCover](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosureData.lean/declarations/generatedcover.md) | 46 | `declaration-track:b9b14730dcbbda8b1066fa871014b43b3f0d0ebe352737dbc21a13e0f7cf03cc` |
-| 2 | `theorem` | [generated_contains_base](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosureData.lean/declarations/generated-contains-base.md) | 75 | `result-track:083ea5e90f08d5bf4f379842c3f70083c35d3c24d7e07f0c8d25b84a1ba0f763` |
-| 3 | `theorem` | [generated_identity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosureData.lean/declarations/generated-identity.md) | 81 | `result-track:8d3048add33193e45286324ecca9d6fbee6f4b226cc620f13369f706966fc6df` |
-| 4 | `theorem` | [generated_pullbackStable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosureData.lean/declarations/generated-pullbackstable.md) | 86 | `result-track:e78164dabeb4e00d8466b3761066335a768f7b904b2a6f9db1f1e5e1f91b1ab2` |
-| 5 | `theorem` | [generated_transitive](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosureData.lean/declarations/generated-transitive.md) | 95 | `result-track:b0cd4c8c6d2f9a6a7b2657472a29d6daae1fc64fa91d305ab61fb04854a8acdb` |
+| 1 | `inductive` | [GeneratedCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosureData.lean/declarations/generatedcover.md) | 46 | `declaration-track:b9b14730dcbbda8b1066fa871014b43b3f0d0ebe352737dbc21a13e0f7cf03cc` |
+| 2 | `theorem` | [generated_contains_base](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosureData.lean/declarations/generated-contains-base.md) | 75 | `result-track:083ea5e90f08d5bf4f379842c3f70083c35d3c24d7e07f0c8d25b84a1ba0f763` |
+| 3 | `theorem` | [generated_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosureData.lean/declarations/generated-identity.md) | 81 | `result-track:8d3048add33193e45286324ecca9d6fbee6f4b226cc620f13369f706966fc6df` |
+| 4 | `theorem` | [generated_pullbackStable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosureData.lean/declarations/generated-pullbackstable.md) | 86 | `result-track:e78164dabeb4e00d8466b3761066335a768f7b904b2a6f9db1f1e5e1f91b1ab2` |
+| 5 | `theorem` | [generated_transitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosureData.lean/declarations/generated-transitive.md) | 95 | `result-track:b0cd4c8c6d2f9a6a7b2657472a29d6daae1fc64fa91d305ab61fb04854a8acdb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

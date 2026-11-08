@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualFiniteNativeMaximumIsAttainedAtAnIntegerEndpoint.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualFiniteNativeMaximumIsAttainedAtAnIntegerEndpoint.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualFiniteNativeMaximumIsAttainedAtAnIntegerEndpoint.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualFiniteNativeMaximumIsAttainedAtAnIntegerEndpoint.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_bounded_horizon_spec](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualFiniteNativeMaximumIsAttainedAtAnIntegerEndpoint.lean/declarations/actual-bounded-horizon-spec.md) | 23 | `result-track:5ddd9af6b3c8498b94e6842ce258184e569b006359872c6e8aa1f2f5bcbc0146` |
-| 2 | `theorem` | [actual_closed_horizon_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualFiniteNativeMaximumIsAttainedAtAnIntegerEndpoint.lean/declarations/actual-closed-horizon-upper.md) | 33 | `result-track:c041d75015c5553a20c88b8862e33cad632845f91d4ad8a4248115ffa404b3c5` |
-| 3 | `theorem` | [actual_finite_real_maximum_is_attained](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualFiniteNativeMaximumIsAttainedAtAnIntegerEndpoint.lean/declarations/actual-finite-real-maximum-is-attained.md) | 62 | `result-track:97f84e3924aed2f643331523eeb21689c3f60c1650bc1f9a3154bdcd76c6dfea` |
+| 1 | `theorem` | [actual_bounded_horizon_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualFiniteNativeMaximumIsAttainedAtAnIntegerEndpoint.lean/declarations/actual-bounded-horizon-spec.md) | 23 | `result-track:5ddd9af6b3c8498b94e6842ce258184e569b006359872c6e8aa1f2f5bcbc0146` |
+| 2 | `theorem` | [actual_closed_horizon_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualFiniteNativeMaximumIsAttainedAtAnIntegerEndpoint.lean/declarations/actual-closed-horizon-upper.md) | 33 | `result-track:c041d75015c5553a20c88b8862e33cad632845f91d4ad8a4248115ffa404b3c5` |
+| 3 | `theorem` | [actual_finite_real_maximum_is_attained](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualFiniteNativeMaximumIsAttainedAtAnIntegerEndpoint.lean/declarations/actual-finite-real-maximum-is-attained.md) | 62 | `result-track:97f84e3924aed2f643331523eeb21689c3f60c1650bc1f9a3154bdcd76c6dfea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationNamespacedObligationAuthorityClass.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationNamespacedObligationAuthorityClass.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationNamespacedObligationAuthorityClass.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationNamespacedObligationAuthorityClass.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ObligationAuthorityClass](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationNamespacedObligationAuthorityClass.lean/declarations/obligationauthorityclass.md) | 22 | `declaration-track:c13e3d139c852260a68cb283a94a1b9c93837c148edeeb96bb33073d31cccdb2` |
-| 2 | `inductive` | [ExactnessClass](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationNamespacedObligationAuthorityClass.lean/declarations/exactnessclass.md) | 32 | `declaration-track:53f14fd9fd64e4561ac17c39bf1f921671b6525f9354864e91ef4cd6b5097d32` |
-| 3 | `structure` | [IndexedObligation](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationNamespacedObligationAuthorityClass.lean/declarations/indexedobligation.md) | 37 | `declaration-track:c8c9c7d2dd2b7de052fca06108576fb495d364a1340400062edde6571efa4095` |
+| 1 | `inductive` | [ObligationAuthorityClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationNamespacedObligationAuthorityClass.lean/declarations/obligationauthorityclass.md) | 22 | `declaration-track:c13e3d139c852260a68cb283a94a1b9c93837c148edeeb96bb33073d31cccdb2` |
+| 2 | `inductive` | [ExactnessClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationNamespacedObligationAuthorityClass.lean/declarations/exactnessclass.md) | 32 | `declaration-track:53f14fd9fd64e4561ac17c39bf1f921671b6525f9354864e91ef4cd6b5097d32` |
+| 3 | `structure` | [IndexedObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationNamespacedObligationAuthorityClass.lean/declarations/indexedobligation.md) | 37 | `declaration-track:c8c9c7d2dd2b7de052fca06108576fb495d364a1340400062edde6571efa4095` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

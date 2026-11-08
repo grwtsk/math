@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PivotOverlap](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/declarations/pivotoverlap.md) | 27 | `declaration-track:f9c90e16e1820853ee84b3260a66313bee77c97f1184376c7b54b25db08d5668` |
-| 2 | `structure` | [PivotTransition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/declarations/pivottransition.md) | 34 | `declaration-track:5926b9a1fa36ed3d9de5a6478641fef27bb89406371684b6157892d1e513f578` |
-| 3 | `theorem` | [PivotTransition.preserves_index](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/declarations/pivottransition-preserves-index.md) | 41 | `result-track:52531ef6518f06bbeb38984ccc702c33e613db097200480b1796344cbd6aea7a` |
-| 4 | `structure` | [CanonicalPivotAtlas](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/declarations/canonicalpivotatlas.md) | 53 | `declaration-track:43abda8452ac6feca6b271d3153b5093589cabc2c60f1f71fb5348e3d085fa3b` |
-| 5 | `theorem` | [CanonicalPivotAtlas.covers_canonical_path](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/declarations/canonicalpivotatlas-covers-canonical-path.md) | 64 | `result-track:c36af4abf25fd7c1acadc5775fc3de41c7afa512e606ab2803542e656d926a7a` |
-| 6 | `theorem` | [CanonicalPivotAtlas.cocycle_compatible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/declarations/canonicalpivotatlas-cocycle-compatible.md) | 70 | `result-track:6f17fd644c4457cba4ee3c2ce954a0a06a456062862e8b18fa8641a5b294ddca` |
-| 7 | `theorem` | [CanonicalPivotAtlas.barrier_closed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/declarations/canonicalpivotatlas-barrier-closed.md) | 76 | `result-track:8d4cd2ca96b7516722877d6e1fe27000d398c58fd6bc34295cff3c01edf1593b` |
-| 8 | `theorem` | [CanonicalPivotAtlas.transition_preserves_index](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/declarations/canonicalpivotatlas-transition-preserves-index.md) | 82 | `result-track:332b316de27c492ea8623af997772233d3c5a4cc54cce0b2501caa3dc93b1c2d` |
+| 1 | `structure` | [PivotOverlap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/declarations/pivotoverlap.md) | 27 | `declaration-track:f9c90e16e1820853ee84b3260a66313bee77c97f1184376c7b54b25db08d5668` |
+| 2 | `structure` | [PivotTransition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/declarations/pivottransition.md) | 34 | `declaration-track:5926b9a1fa36ed3d9de5a6478641fef27bb89406371684b6157892d1e513f578` |
+| 3 | `theorem` | [PivotTransition.preserves_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/declarations/pivottransition-preserves-index.md) | 41 | `result-track:52531ef6518f06bbeb38984ccc702c33e613db097200480b1796344cbd6aea7a` |
+| 4 | `structure` | [CanonicalPivotAtlas](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/declarations/canonicalpivotatlas.md) | 53 | `declaration-track:43abda8452ac6feca6b271d3153b5093589cabc2c60f1f71fb5348e3d085fa3b` |
+| 5 | `theorem` | [CanonicalPivotAtlas.covers_canonical_path](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/declarations/canonicalpivotatlas-covers-canonical-path.md) | 64 | `result-track:c36af4abf25fd7c1acadc5775fc3de41c7afa512e606ab2803542e656d926a7a` |
+| 6 | `theorem` | [CanonicalPivotAtlas.cocycle_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/declarations/canonicalpivotatlas-cocycle-compatible.md) | 70 | `result-track:6f17fd644c4457cba4ee3c2ce954a0a06a456062862e8b18fa8641a5b294ddca` |
+| 7 | `theorem` | [CanonicalPivotAtlas.barrier_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/declarations/canonicalpivotatlas-barrier-closed.md) | 76 | `result-track:8d4cd2ca96b7516722877d6e1fe27000d398c58fd6bc34295cff3c01edf1593b` |
+| 8 | `theorem` | [CanonicalPivotAtlas.transition_preserves_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PivotAtlasNamespaced.lean/declarations/canonicalpivotatlas-transition-preserves-index.md) | 82 | `result-track:332b316de27c492ea8623af997772233d3c5a4cc54cce0b2501caa3dc93b1c2d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

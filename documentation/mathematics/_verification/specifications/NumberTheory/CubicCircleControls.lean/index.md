@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CubicCircleControls.lean/index.md) · [Full source](../../../../NumberTheory/CubicCircleControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicCircleControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicCircleControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Real.CubicEulerMaclaurin`](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CubicCircleGeometry`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCircleGeometry.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Real.CubicEulerMaclaurin`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CubicCircleGeometry`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCircleGeometry.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [third_quarter_nonzero](../../../../NumberTheory/CubicCircleControls.lean/declarations/third-quarter-nonzero.md) | 17 | `result-track:fb3d9f1099a28320d945297ebaae2cbab5d622efbd9d012aff2793febed60aa9` |
-| 2 | `theorem` | [third_three_quarters_negative](../../../../NumberTheory/CubicCircleControls.lean/declarations/third-three-quarters-negative.md) | 19 | `result-track:9519e6ece36aa8bf72901f4e24fa8f634844bb5e110a78cc2945cc2c17d2aaf3` |
-| 3 | `theorem` | [unnormalized_cubic_is_six_times](../../../../NumberTheory/CubicCircleControls.lean/declarations/unnormalized-cubic-is-six-times.md) | 22 | `result-track:64a312167dcd2bea62e60c9cc5871421961ed155f58b7e370ea2a5059ff36d1d` |
-| 4 | `theorem` | [quartic_balance](../../../../NumberTheory/CubicCircleControls.lean/declarations/quartic-balance.md) | 26 | `result-track:efafad2ae359bdfc8d59b7c9b924a2f0e7543b0570b66d3716c1513596a88605` |
-| 5 | `theorem` | [quartic_omitted_remainder_fails](../../../../NumberTheory/CubicCircleControls.lean/declarations/quartic-omitted-remainder-fails.md) | 29 | `result-track:798f1421ad66e47d5d6517a8cff14caf4843fc88b219753c76d5522b8bbb2844` |
-| 6 | `theorem` | [cubic_budget_at_one_fails](../../../../NumberTheory/CubicCircleControls.lean/declarations/cubic-budget-at-one-fails.md) | 33 | `result-track:d773684055666410ce9eefee391d75930c5ead6ce66ed8ebb39420f40b448457` |
-| 7 | `theorem` | [outer_leftmost_real_part](../../../../NumberTheory/CubicCircleControls.lean/declarations/outer-leftmost-real-part.md) | 37 | `result-track:7f2d34ebfbf06e6881f146b997df18e2314b27fe40b00eb7c914dc7e6e2beaab` |
-| 8 | `theorem` | [cubic_factor_at_minus_one](../../../../NumberTheory/CubicCircleControls.lean/declarations/cubic-factor-at-minus-one.md) | 40 | `result-track:10ccf6ec223878a32c388d5c183ea1ee613321377df971aa69030e9a1875f38a` |
+| 1 | `theorem` | [third_quarter_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicCircleControls.lean/declarations/third-quarter-nonzero.md) | 17 | `result-track:fb3d9f1099a28320d945297ebaae2cbab5d622efbd9d012aff2793febed60aa9` |
+| 2 | `theorem` | [third_three_quarters_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicCircleControls.lean/declarations/third-three-quarters-negative.md) | 19 | `result-track:9519e6ece36aa8bf72901f4e24fa8f634844bb5e110a78cc2945cc2c17d2aaf3` |
+| 3 | `theorem` | [unnormalized_cubic_is_six_times](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicCircleControls.lean/declarations/unnormalized-cubic-is-six-times.md) | 22 | `result-track:64a312167dcd2bea62e60c9cc5871421961ed155f58b7e370ea2a5059ff36d1d` |
+| 4 | `theorem` | [quartic_balance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicCircleControls.lean/declarations/quartic-balance.md) | 26 | `result-track:efafad2ae359bdfc8d59b7c9b924a2f0e7543b0570b66d3716c1513596a88605` |
+| 5 | `theorem` | [quartic_omitted_remainder_fails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicCircleControls.lean/declarations/quartic-omitted-remainder-fails.md) | 29 | `result-track:798f1421ad66e47d5d6517a8cff14caf4843fc88b219753c76d5522b8bbb2844` |
+| 6 | `theorem` | [cubic_budget_at_one_fails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicCircleControls.lean/declarations/cubic-budget-at-one-fails.md) | 33 | `result-track:d773684055666410ce9eefee391d75930c5ead6ce66ed8ebb39420f40b448457` |
+| 7 | `theorem` | [outer_leftmost_real_part](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicCircleControls.lean/declarations/outer-leftmost-real-part.md) | 37 | `result-track:7f2d34ebfbf06e6881f146b997df18e2314b27fe40b00eb7c914dc7e6e2beaab` |
+| 8 | `theorem` | [cubic_factor_at_minus_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CubicCircleControls.lean/declarations/cubic-factor-at-minus-one.md) | 40 | `result-track:10ccf6ec223878a32c388d5c183ea1ee613321377df971aa69030e9a1875f38a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

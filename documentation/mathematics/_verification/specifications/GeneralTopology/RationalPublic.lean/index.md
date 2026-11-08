@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/RationalPublic.lean/index.md) · [Full source](../../../../GeneralTopology/RationalPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,23 +57,23 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RationalSegment](../../../../GeneralTopology/RationalPublic.lean/declarations/rationalsegment.md) | 24 | `declaration-track:cbcaf9da2716ddb3fa66e2805ff805629de61bb5946332295fbff66efb1f3d4e` |
-| 2 | `def` | [denominator](../../../../GeneralTopology/RationalPublic.lean/declarations/denominator.md) | 36 | `declaration-track:59f5b6b40c4303b5faa94a20081f196b228e1ee20174bdc169c1556ae15bbe01` |
-| 3 | `def` | [numerator](../../../../GeneralTopology/RationalPublic.lean/declarations/numerator.md) | 41 | `declaration-track:5cb187bf7b9f9e60f316746e80d7c74139a4e7d81064c593f9c825e910ebdb3b` |
-| 4 | `theorem` | [denominator_pos](../../../../GeneralTopology/RationalPublic.lean/declarations/denominator-pos.md) | 48 | `result-track:447ab3957e1d11bb6c82d86354392680db28f39ead281e35fca20b348241ce55` |
-| 5 | `def` | [eval](../../../../GeneralTopology/RationalPublic.lean/declarations/eval.md) | 71 | `declaration-track:817e78a262c11c67b5763cfc34ca1d47e0dece7ddee55bed4d3003e75bfc3ead` |
-| 6 | `theorem` | [eval_zero](../../../../GeneralTopology/RationalPublic.lean/declarations/eval-zero.md) | 75 | `result-track:d294baf384c4a3b49447ea852dc14cbd23919e5d31bddf57492585b42b77ebb4` |
-| 7 | `theorem` | [eval_one](../../../../GeneralTopology/RationalPublic.lean/declarations/eval-one.md) | 80 | `result-track:5f8817a73e9c9c081d428ce82ab3522e308e3aebd50dcf0e6232447a94f6456c` |
-| 8 | `theorem` | [continuous_denominator](../../../../GeneralTopology/RationalPublic.lean/declarations/continuous-denominator.md) | 85 | `result-track:6dd18deb40e583427e4d4201036026983c7b207e1a9c04af0ba17e5a116a2fcb` |
-| 9 | `theorem` | [continuous_numerator](../../../../GeneralTopology/RationalPublic.lean/declarations/continuous-numerator.md) | 94 | `result-track:ed7faa7d7e7e7e287f1930675018464adbd552667e3cb4eed46a7c531ccc87e6` |
-| 10 | `theorem` | [continuous_eval](../../../../GeneralTopology/RationalPublic.lean/declarations/continuous-eval.md) | 102 | `result-track:4ad9b5d85db4cb69d05d972ee2fccf71b8d8c032c5032c31d2456a6d89593edc` |
-| 11 | `def` | [reverse](../../../../GeneralTopology/RationalPublic.lean/declarations/reverse.md) | 114 | `declaration-track:5195bd03406a4187d3130f01b48ccafa43351eae987a7a4a505889650e7d6b29` |
-| 12 | `theorem` | [reverse_control](../../../../GeneralTopology/RationalPublic.lean/declarations/reverse-control.md) | 120 | `result-track:b081e45ecef716267a799c659a4c37be63756d99e175c1ab7c3b74b5bc48f447` |
-| 13 | `theorem` | [reverse_weight](../../../../GeneralTopology/RationalPublic.lean/declarations/reverse-weight.md) | 126 | `result-track:daca8d6d7a0c12823f6272299cbd1e9ff547868f98b6e163a443b83a19296d05` |
-| 14 | `theorem` | [reverse_reverse](../../../../GeneralTopology/RationalPublic.lean/declarations/reverse-reverse.md) | 132 | `result-track:7a59877b7c0df5563e1d89fa865d28c2fea4b86cca217ecb4b7f635798c3c2e9` |
-| 15 | `theorem` | [denominator_reverse](../../../../GeneralTopology/RationalPublic.lean/declarations/denominator-reverse.md) | 138 | `result-track:489cc28e7f5dd2ddd6eec1fad59c64c2ab9c7aecc8dd9bd6dd48f64734972238` |
-| 16 | `theorem` | [numerator_reverse](../../../../GeneralTopology/RationalPublic.lean/declarations/numerator-reverse.md) | 150 | `result-track:d3b4d6d01e8a258c2724ad7a91511b99aab21b2625700ff44405ab8f12a177c3` |
-| 17 | `theorem` | [eval_reverse](../../../../GeneralTopology/RationalPublic.lean/declarations/eval-reverse.md) | 165 | `result-track:c097a3bf2f173f23ebd67b11f3bc1e2a34fb53c39ad889f6aa90f6b7dba1067e` |
+| 1 | `structure` | [RationalSegment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPublic.lean/declarations/rationalsegment.md) | 24 | `declaration-track:cbcaf9da2716ddb3fa66e2805ff805629de61bb5946332295fbff66efb1f3d4e` |
+| 2 | `def` | [denominator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPublic.lean/declarations/denominator.md) | 36 | `declaration-track:59f5b6b40c4303b5faa94a20081f196b228e1ee20174bdc169c1556ae15bbe01` |
+| 3 | `def` | [numerator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPublic.lean/declarations/numerator.md) | 41 | `declaration-track:5cb187bf7b9f9e60f316746e80d7c74139a4e7d81064c593f9c825e910ebdb3b` |
+| 4 | `theorem` | [denominator_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPublic.lean/declarations/denominator-pos.md) | 48 | `result-track:447ab3957e1d11bb6c82d86354392680db28f39ead281e35fca20b348241ce55` |
+| 5 | `def` | [eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPublic.lean/declarations/eval.md) | 71 | `declaration-track:817e78a262c11c67b5763cfc34ca1d47e0dece7ddee55bed4d3003e75bfc3ead` |
+| 6 | `theorem` | [eval_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPublic.lean/declarations/eval-zero.md) | 75 | `result-track:d294baf384c4a3b49447ea852dc14cbd23919e5d31bddf57492585b42b77ebb4` |
+| 7 | `theorem` | [eval_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPublic.lean/declarations/eval-one.md) | 80 | `result-track:5f8817a73e9c9c081d428ce82ab3522e308e3aebd50dcf0e6232447a94f6456c` |
+| 8 | `theorem` | [continuous_denominator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPublic.lean/declarations/continuous-denominator.md) | 85 | `result-track:6dd18deb40e583427e4d4201036026983c7b207e1a9c04af0ba17e5a116a2fcb` |
+| 9 | `theorem` | [continuous_numerator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPublic.lean/declarations/continuous-numerator.md) | 94 | `result-track:ed7faa7d7e7e7e287f1930675018464adbd552667e3cb4eed46a7c531ccc87e6` |
+| 10 | `theorem` | [continuous_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPublic.lean/declarations/continuous-eval.md) | 102 | `result-track:4ad9b5d85db4cb69d05d972ee2fccf71b8d8c032c5032c31d2456a6d89593edc` |
+| 11 | `def` | [reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPublic.lean/declarations/reverse.md) | 114 | `declaration-track:5195bd03406a4187d3130f01b48ccafa43351eae987a7a4a505889650e7d6b29` |
+| 12 | `theorem` | [reverse_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPublic.lean/declarations/reverse-control.md) | 120 | `result-track:b081e45ecef716267a799c659a4c37be63756d99e175c1ab7c3b74b5bc48f447` |
+| 13 | `theorem` | [reverse_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPublic.lean/declarations/reverse-weight.md) | 126 | `result-track:daca8d6d7a0c12823f6272299cbd1e9ff547868f98b6e163a443b83a19296d05` |
+| 14 | `theorem` | [reverse_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPublic.lean/declarations/reverse-reverse.md) | 132 | `result-track:7a59877b7c0df5563e1d89fa865d28c2fea4b86cca217ecb4b7f635798c3c2e9` |
+| 15 | `theorem` | [denominator_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPublic.lean/declarations/denominator-reverse.md) | 138 | `result-track:489cc28e7f5dd2ddd6eec1fad59c64c2ab9c7aecc8dd9bd6dd48f64734972238` |
+| 16 | `theorem` | [numerator_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPublic.lean/declarations/numerator-reverse.md) | 150 | `result-track:d3b4d6d01e8a258c2724ad7a91511b99aab21b2625700ff44405ab8f12a177c3` |
+| 17 | `theorem` | [eval_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPublic.lean/declarations/eval-reverse.md) | 165 | `result-track:c097a3bf2f173f23ebd67b11f3bc1e2a34fb53c39ad889f6aa90f6b7dba1067e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

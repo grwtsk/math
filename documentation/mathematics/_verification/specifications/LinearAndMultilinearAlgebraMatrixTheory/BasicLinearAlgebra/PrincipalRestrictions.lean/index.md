@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pairForm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/declarations/pairform.md) | 15 | `declaration-track:12ee0ea5c16e02b024dff283f22c332a0d3ce4735b46383c111859569f9f75b5` |
-| 2 | `def` | [globalForm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/declarations/globalform.md) | 16 | `declaration-track:9c24d2e4af9aa38b4074888797efa37fb621bbdf62593c9bdf7bccd4eb8455ca` |
-| 3 | `theorem` | [pair_identity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/declarations/pair-identity.md) | 19 | `result-track:07c2bb59ae0773b3749f1d09faed9bbb7701777f624b4adfb9491da8190745da` |
-| 4 | `theorem` | [pair_nonnegative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/declarations/pair-nonnegative.md) | 23 | `result-track:407c0087fd3ee1ffe1441e93e633c6618e19167d5d24eda539467e6c82457537` |
-| 5 | `theorem` | [principal_restrictions](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/declarations/principal-restrictions.md) | 33 | `result-track:53b07791254d8defb8c781a03be3e6c26a1dcbde1379e2d33058bc9c9ddea59b` |
-| 6 | `theorem` | [global_negative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/declarations/global-negative.md) | 40 | `result-track:5efa2cc917bff764f5ffb855060b9678f854ef2b62f9d7ba77b39c578460ada4` |
-| 7 | `theorem` | [not_global_positive](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/declarations/not-global-positive.md) | 44 | `result-track:11e9b3a064af86c4bc8fc350d803e28e5427a6920efb050ccfb54face6184328` |
-| 8 | `theorem` | [lower_bound_transfer](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/declarations/lower-bound-transfer.md) | 51 | `result-track:291478a6160272192c31f02fc4377986d9260991decb8fc1d88be24d8bbbc49a` |
+| 1 | `def` | [pairForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/declarations/pairform.md) | 15 | `declaration-track:12ee0ea5c16e02b024dff283f22c332a0d3ce4735b46383c111859569f9f75b5` |
+| 2 | `def` | [globalForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/declarations/globalform.md) | 16 | `declaration-track:9c24d2e4af9aa38b4074888797efa37fb621bbdf62593c9bdf7bccd4eb8455ca` |
+| 3 | `theorem` | [pair_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/declarations/pair-identity.md) | 19 | `result-track:07c2bb59ae0773b3749f1d09faed9bbb7701777f624b4adfb9491da8190745da` |
+| 4 | `theorem` | [pair_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/declarations/pair-nonnegative.md) | 23 | `result-track:407c0087fd3ee1ffe1441e93e633c6618e19167d5d24eda539467e6c82457537` |
+| 5 | `theorem` | [principal_restrictions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/declarations/principal-restrictions.md) | 33 | `result-track:53b07791254d8defb8c781a03be3e6c26a1dcbde1379e2d33058bc9c9ddea59b` |
+| 6 | `theorem` | [global_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/declarations/global-negative.md) | 40 | `result-track:5efa2cc917bff764f5ffb855060b9678f854ef2b62f9d7ba77b39c578460ada4` |
+| 7 | `theorem` | [not_global_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/declarations/not-global-positive.md) | 44 | `result-track:11e9b3a064af86c4bc8fc350d803e28e5427a6920efb050ccfb54face6184328` |
+| 8 | `theorem` | [lower_bound_transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrincipalRestrictions.lean/declarations/lower-bound-transfer.md) | 51 | `result-track:291478a6160272192c31f02fc4377986d9260991decb8fc1d88be24d8bbbc49a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

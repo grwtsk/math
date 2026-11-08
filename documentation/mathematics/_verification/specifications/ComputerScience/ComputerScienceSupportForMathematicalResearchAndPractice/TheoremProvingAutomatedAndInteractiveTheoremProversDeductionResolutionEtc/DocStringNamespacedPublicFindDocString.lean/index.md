@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DocStringNamespacedPublicFindDocString.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DocStringNamespacedPublicFindDocString.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DocStringNamespacedPublicFindDocString.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DocStringNamespacedPublicFindDocString.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [findDocString?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DocStringNamespacedPublicFindDocString.lean/declarations/finddocstring.md) | 43 | `declaration-track:5296534e146d0f43260c5a16ea6125422db86bffaa8efa4b8a6248951efa873c` |
-| 2 | `def` | [findMarkdownDocString?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DocStringNamespacedPublicFindDocString.lean/declarations/findmarkdowndocstring.md) | 60 | `declaration-track:d9efbe7da99fddc3bba8a74eebba17ea7ab63fb960ea27dc0f1131e3e4c81618` |
+| 1 | `def` | [findDocString?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DocStringNamespacedPublicFindDocString.lean/declarations/finddocstring.md) | 43 | `declaration-track:5296534e146d0f43260c5a16ea6125422db86bffaa8efa4b8a6248951efa873c` |
+| 2 | `def` | [findMarkdownDocString?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DocStringNamespacedPublicFindDocString.lean/declarations/findmarkdowndocstring.md) | 60 | `declaration-track:d9efbe7da99fddc3bba8a74eebba17ea7ab63fb960ea27dc0f1131e3e4c81618` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

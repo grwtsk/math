@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DualVCNamespacedPublic.lean/index.md) · [Full source](../../../../Combinatorics/DualVCNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DualVCNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DualVCNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [dualFamily](../../../../Combinatorics/DualVCNamespacedPublic.lean/declarations/dualfamily.md) | 68 | `declaration-track:dabd1cfecce7f6a3d847c0ecf6a6ba926d6ce91e102ad0843f44dc7e0662d51c` |
-| 2 | `lemma` | [mem_dualFamily](../../../../Combinatorics/DualVCNamespacedPublic.lean/declarations/mem-dualfamily.md) | 73 | `result-track:d80debdc9b16e8071690226afde755ef16e13fe981e305ef7d14bfc862bd90cf` |
-| 3 | `lemma` | [subset_of_dualFamily_shatters](../../../../Combinatorics/DualVCNamespacedPublic.lean/declarations/subset-of-dualfamily-shatters.md) | 80 | `result-track:8cc98223f2a4204e26d7202be19a7a03e120b58c64b20b44358faa08b6982764` |
-| 4 | `def` | [cubeEmbedding](../../../../Combinatorics/DualVCNamespacedPublic.lean/declarations/cubeembedding.md) | 88 | `declaration-track:c5a0b5f0fd0da85ba1744ec0b83d4e4d09eda94df1b26ccfecc95b31d9e8a0a7` |
-| 5 | `def` | [cubeBitSlice](../../../../Combinatorics/DualVCNamespacedPublic.lean/declarations/cubebitslice.md) | 96 | `declaration-track:a13f81c142d8705a033566fe9aab8d1185f17b0a406ed573ec54d2bed8f68a34` |
-| 6 | `lemma` | [cubeBitSlice_subset](../../../../Combinatorics/DualVCNamespacedPublic.lean/declarations/cubebitslice-subset.md) | 101 | `result-track:3da2c2ddac4eeb62908677d6c160c4909f7f6add516f18e9e4239027ea6801b5` |
-| 7 | `lemma` | [mem_cubeBitSlice_iff](../../../../Combinatorics/DualVCNamespacedPublic.lean/declarations/mem-cubebitslice-iff.md) | 108 | `result-track:a6ee4422df8e882690f30f9c4d4015181a2c3d582256b25055ea6dac64931440` |
-| 8 | `theorem` | [exists_shatters_of_dualFamily_shatters](../../../../Combinatorics/DualVCNamespacedPublic.lean/declarations/exists-shatters-of-dualfamily-shatters.md) | 123 | `result-track:aab346cf82ab4a43bec9a2bc19157dd22867ed70ede28ce8408e717071ee846b` |
-| 9 | `theorem` | [vcDim_dualFamily_le](../../../../Combinatorics/DualVCNamespacedPublic.lean/declarations/vcdim-dualfamily-le.md) | 168 | `result-track:ec167fb0eb0d8476df82e3f8013917d8e6fcd80b33f017730eca98cf8def17b8` |
+| 1 | `def` | [dualFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DualVCNamespacedPublic.lean/declarations/dualfamily.md) | 68 | `declaration-track:dabd1cfecce7f6a3d847c0ecf6a6ba926d6ce91e102ad0843f44dc7e0662d51c` |
+| 2 | `lemma` | [mem_dualFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DualVCNamespacedPublic.lean/declarations/mem-dualfamily.md) | 73 | `result-track:d80debdc9b16e8071690226afde755ef16e13fe981e305ef7d14bfc862bd90cf` |
+| 3 | `lemma` | [subset_of_dualFamily_shatters](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DualVCNamespacedPublic.lean/declarations/subset-of-dualfamily-shatters.md) | 80 | `result-track:8cc98223f2a4204e26d7202be19a7a03e120b58c64b20b44358faa08b6982764` |
+| 4 | `def` | [cubeEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DualVCNamespacedPublic.lean/declarations/cubeembedding.md) | 88 | `declaration-track:c5a0b5f0fd0da85ba1744ec0b83d4e4d09eda94df1b26ccfecc95b31d9e8a0a7` |
+| 5 | `def` | [cubeBitSlice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DualVCNamespacedPublic.lean/declarations/cubebitslice.md) | 96 | `declaration-track:a13f81c142d8705a033566fe9aab8d1185f17b0a406ed573ec54d2bed8f68a34` |
+| 6 | `lemma` | [cubeBitSlice_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DualVCNamespacedPublic.lean/declarations/cubebitslice-subset.md) | 101 | `result-track:3da2c2ddac4eeb62908677d6c160c4909f7f6add516f18e9e4239027ea6801b5` |
+| 7 | `lemma` | [mem_cubeBitSlice_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DualVCNamespacedPublic.lean/declarations/mem-cubebitslice-iff.md) | 108 | `result-track:a6ee4422df8e882690f30f9c4d4015181a2c3d582256b25055ea6dac64931440` |
+| 8 | `theorem` | [exists_shatters_of_dualFamily_shatters](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DualVCNamespacedPublic.lean/declarations/exists-shatters-of-dualfamily-shatters.md) | 123 | `result-track:aab346cf82ab4a43bec9a2bc19157dd22867ed70ede28ce8408e717071ee846b` |
+| 9 | `theorem` | [vcDim_dualFamily_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DualVCNamespacedPublic.lean/declarations/vcdim-dualfamily-le.md) | 168 | `result-track:ec167fb0eb0d8476df82e3f8013917d8e6fcd80b33f017730eca98cf8def17b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

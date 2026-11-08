@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FunctorEquivalenceNamespacedEdition1.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FunctorEquivalenceNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FunctorEquivalenceNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FunctorEquivalenceNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [functor](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FunctorEquivalenceNamespacedEdition1.lean/declarations/functor.md) | 39 | `declaration-track:0c854d7466a29522a9d247baa7097b5253c50b1cd942639bab362225f7ab79fb` |
-| 2 | `def` | [inverse](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FunctorEquivalenceNamespacedEdition1.lean/declarations/inverse.md) | 48 | `declaration-track:cb0f06d92dcb438d2da610b1ea2c0fb3e1d6bca929910929dab5542afa1a1360` |
-| 3 | `def` | [unitIso](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FunctorEquivalenceNamespacedEdition1.lean/declarations/unitiso.md) | 59 | `declaration-track:09c29f29519181a4ddfb449158732e48ead2167b84d77dee0d11d4ee62a2d2fd` |
-| 4 | `def` | [counitIso](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FunctorEquivalenceNamespacedEdition1.lean/declarations/counitiso.md) | 69 | `declaration-track:82a6aa33f7407c6009c6641532a44462792ccbe59032c916f0779d6b0a84b574` |
-| 5 | `def` | [functorEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FunctorEquivalenceNamespacedEdition1.lean/declarations/functorequivalence.md) | 78 | `declaration-track:bc9d475d38fd35fe159369f01c27d4d326ca1d7e4a4a5b91eba7842646edb890` |
+| 1 | `def` | [functor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FunctorEquivalenceNamespacedEdition1.lean/declarations/functor.md) | 39 | `declaration-track:0c854d7466a29522a9d247baa7097b5253c50b1cd942639bab362225f7ab79fb` |
+| 2 | `def` | [inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FunctorEquivalenceNamespacedEdition1.lean/declarations/inverse.md) | 48 | `declaration-track:cb0f06d92dcb438d2da610b1ea2c0fb3e1d6bca929910929dab5542afa1a1360` |
+| 3 | `def` | [unitIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FunctorEquivalenceNamespacedEdition1.lean/declarations/unitiso.md) | 59 | `declaration-track:09c29f29519181a4ddfb449158732e48ead2167b84d77dee0d11d4ee62a2d2fd` |
+| 4 | `def` | [counitIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FunctorEquivalenceNamespacedEdition1.lean/declarations/counitiso.md) | 69 | `declaration-track:82a6aa33f7407c6009c6641532a44462792ccbe59032c916f0779d6b0a84b574` |
+| 5 | `def` | [functorEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FunctorEquivalenceNamespacedEdition1.lean/declarations/functorequivalence.md) | 78 | `declaration-track:bc9d475d38fd35fe159369f01c27d4d326ca1d7e4a4a5b91eba7842646edb890` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

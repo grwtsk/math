@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ScopeFixturesNamespacedEdition19.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ScopeFixturesNamespacedEdition19.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesNamespacedEdition19.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesNamespacedEdition19.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [wrong_positive_first_derivative_transform](../../../../MeasureAndIntegration/ScopeFixturesNamespacedEdition19.lean/declarations/wrong-positive-first-derivative-transform.md) | 24 | `result-track:5622781df27971bdd2a787b46e40e11fd2c716cabb8bb9014c0ac8729076bcbf` |
-| 2 | `theorem` | [critical_cancellation_not_pointwise_zero](../../../../MeasureAndIntegration/ScopeFixturesNamespacedEdition19.lean/declarations/critical-cancellation-not-pointwise-zero.md) | 35 | `result-track:952a3898ff637273cd7a12cc2c01de68b1ba6e09200adbb2d39c8cc3e7961440` |
+| 1 | `theorem` | [wrong_positive_first_derivative_transform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesNamespacedEdition19.lean/declarations/wrong-positive-first-derivative-transform.md) | 24 | `result-track:5622781df27971bdd2a787b46e40e11fd2c716cabb8bb9014c0ac8729076bcbf` |
+| 2 | `theorem` | [critical_cancellation_not_pointwise_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesNamespacedEdition19.lean/declarations/critical-cancellation-not-pointwise-zero.md) | 35 | `result-track:952a3898ff637273cd7a12cc2c01de68b1ba6e09200adbb2d39c8cc3e7961440` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

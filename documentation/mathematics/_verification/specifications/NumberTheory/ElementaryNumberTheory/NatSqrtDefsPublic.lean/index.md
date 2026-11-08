@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/NatSqrtDefsPublic.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/NatSqrtDefsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatSqrtDefsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatSqrtDefsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ratSqrt](../../../../../NumberTheory/ElementaryNumberTheory/NatSqrtDefsPublic.lean/declarations/ratsqrt.md) | 27 | `declaration-track:bc2c901643b3cbc42176830871fbb45e615e808a417528433e00717ff0053f26` |
-| 2 | `theorem` | [ratSqrt_nonneg](../../../../../NumberTheory/ElementaryNumberTheory/NatSqrtDefsPublic.lean/declarations/ratsqrt-nonneg.md) | 29 | `result-track:98045de7c5e36a22f9fde64ea2e5eac215f5abb71149e7fef0171c04531a7e6c` |
-| 3 | `theorem` | [ratSqrt_sq_le](../../../../../NumberTheory/ElementaryNumberTheory/NatSqrtDefsPublic.lean/declarations/ratsqrt-sq-le.md) | 33 | `result-track:7f9583a6abe84a30d7e469e4dd38dd7986c6d35ae3327785c24ad6a048a054c6` |
-| 4 | `theorem` | [lt_ratSqrt_add_inv_prec_sq](../../../../../NumberTheory/ElementaryNumberTheory/NatSqrtDefsPublic.lean/declarations/lt-ratsqrt-add-inv-prec-sq.md) | 39 | `result-track:9d3baeb5e4838ee3dd6241ccd1f9ca3aa56a1ab581f3ae6bc11b417f627a4f09` |
+| 1 | `def` | [ratSqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatSqrtDefsPublic.lean/declarations/ratsqrt.md) | 27 | `declaration-track:bc2c901643b3cbc42176830871fbb45e615e808a417528433e00717ff0053f26` |
+| 2 | `theorem` | [ratSqrt_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatSqrtDefsPublic.lean/declarations/ratsqrt-nonneg.md) | 29 | `result-track:98045de7c5e36a22f9fde64ea2e5eac215f5abb71149e7fef0171c04531a7e6c` |
+| 3 | `theorem` | [ratSqrt_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatSqrtDefsPublic.lean/declarations/ratsqrt-sq-le.md) | 33 | `result-track:7f9583a6abe84a30d7e469e4dd38dd7986c6d35ae3327785c24ad6a048a054c6` |
+| 4 | `theorem` | [lt_ratSqrt_add_inv_prec_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NatSqrtDefsPublic.lean/declarations/lt-ratsqrt-add-inv-prec-sq.md) | 39 | `result-track:9d3baeb5e4838ee3dd6241ccd1f9ca3aa56a1ab581f3ae6bc11b417f627a4f09` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

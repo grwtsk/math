@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ArtifactKind](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/declarations/artifactkind.md) | 13 | `declaration-track:c25eaafdc7eff7f41ea855362b43ac1402d625420b37ce1391dba8860076df44` |
-| 2 | `inductive` | [TransportExactness](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/declarations/transportexactness.md) | 23 | `declaration-track:9dc63f9dd28373fa13585049f21e12a5673c0b649aee47e92a8442711f8158bc` |
-| 3 | `inductive` | [TransportAuthority](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/declarations/transportauthority.md) | 29 | `declaration-track:c1ffc8dbf41d2e469feb43060c09a758a34ed8d9b766558c4762ad198f51f61f` |
-| 4 | `structure` | [BoundaryKey](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/declarations/boundarykey.md) | 34 | `declaration-track:e10753ddce480bd44e50d1b9fa8316e7e7ec498406a135fa316b215ed08c578d` |
-| 5 | `structure` | [BoundaryTransport](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/declarations/boundarytransport.md) | 46 | `declaration-track:8c46a5bc5cb50b2248b742d3ed49d028899812fb7e0c028e3ad9bc7e9188b439` |
-| 6 | `inductive` | [TransportPath](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/declarations/transportpath.md) | 65 | `declaration-track:fdf7fedc70737b14e46a5771ac070b9923080942a48313ba458bddf235dcdbad` |
-| 7 | `def` | [MayConsume](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/declarations/mayconsume.md) | 77 | `declaration-track:bd6c60f9fd95550c9acbd568d77df90f87cc8deb3a1bd0e3145057dd6a0c865f` |
-| 8 | `theorem` | [MayConsume.same](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/declarations/mayconsume-same.md) | 82 | `result-track:70b9eaff17fdabb757ac97febfe4887ef8f3d2864dfb20c814bd4ebbce5395f7` |
-| 9 | `theorem` | [MayConsume.distinctBoundaryStartsWithTransport](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/declarations/mayconsume-distinctboundarystartswithtransport.md) | 88 | `result-track:9b5213cffb64ef5989f84979271256907d55592b3ce7c877df22f6b88e8cfb77` |
+| 1 | `inductive` | [ArtifactKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/declarations/artifactkind.md) | 13 | `declaration-track:c25eaafdc7eff7f41ea855362b43ac1402d625420b37ce1391dba8860076df44` |
+| 2 | `inductive` | [TransportExactness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/declarations/transportexactness.md) | 23 | `declaration-track:9dc63f9dd28373fa13585049f21e12a5673c0b649aee47e92a8442711f8158bc` |
+| 3 | `inductive` | [TransportAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/declarations/transportauthority.md) | 29 | `declaration-track:c1ffc8dbf41d2e469feb43060c09a758a34ed8d9b766558c4762ad198f51f61f` |
+| 4 | `structure` | [BoundaryKey](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/declarations/boundarykey.md) | 34 | `declaration-track:e10753ddce480bd44e50d1b9fa8316e7e7ec498406a135fa316b215ed08c578d` |
+| 5 | `structure` | [BoundaryTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/declarations/boundarytransport.md) | 46 | `declaration-track:8c46a5bc5cb50b2248b742d3ed49d028899812fb7e0c028e3ad9bc7e9188b439` |
+| 6 | `inductive` | [TransportPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/declarations/transportpath.md) | 65 | `declaration-track:fdf7fedc70737b14e46a5771ac070b9923080942a48313ba458bddf235dcdbad` |
+| 7 | `def` | [MayConsume](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/declarations/mayconsume.md) | 77 | `declaration-track:bd6c60f9fd95550c9acbd568d77df90f87cc8deb3a1bd0e3145057dd6a0c865f` |
+| 8 | `theorem` | [MayConsume.same](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/declarations/mayconsume-same.md) | 82 | `result-track:70b9eaff17fdabb757ac97febfe4887ef8f3d2864dfb20c814bd4ebbce5395f7` |
+| 9 | `theorem` | [MayConsume.distinctBoundaryStartsWithTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Boundary.lean/declarations/mayconsume-distinctboundarystartswithtransport.md) | 88 | `result-track:9b5213cffb64ef5989f84979271256907d55592b3ce7c877df22f6b88e8cfb77` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/BridgeLipschitzNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/BridgeLipschitzNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeLipschitzNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeLipschitzNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [average_bounds](../../../../MeasureAndIntegration/BridgeLipschitzNamespaced.lean/declarations/average-bounds.md) | 19 | `result-track:5ba99ef2e5a9f456ce372d605fc66f49d77c370c8f6c841dc7599e32bef36753` |
-| 2 | `theorem` | [integralBridge_sub](../../../../MeasureAndIntegration/BridgeLipschitzNamespaced.lean/declarations/integralbridge-sub.md) | 31 | `result-track:2307dc8058fee812862fe3ba42f12095c66903893bfd2e5ead41f17e5c148222` |
-| 3 | `theorem` | [integralBridge_increment_le](../../../../MeasureAndIntegration/BridgeLipschitzNamespaced.lean/declarations/integralbridge-increment-le.md) | 43 | `result-track:2d0b97cb6bc38bd551321170c0c93e508c2ba804da6cf3827dbcf59c43815814` |
-| 4 | `theorem` | [integralBridge_lipschitz](../../../../MeasureAndIntegration/BridgeLipschitzNamespaced.lean/declarations/integralbridge-lipschitz.md) | 56 | `result-track:3fa1e0c22a9edbb739247e54ac7b2ff3f1e3c8e22dd5c15ad56b5a3758324009` |
-| 5 | `theorem` | [actual_bridge_lipschitz](../../../../MeasureAndIntegration/BridgeLipschitzNamespaced.lean/declarations/actual-bridge-lipschitz.md) | 68 | `result-track:910e04e41ffec8d55f49ce41f77a29bf9a5a350c2d1d29d51f0acdaa190f175f` |
-| 6 | `def` | [normalizedBridge](../../../../MeasureAndIntegration/BridgeLipschitzNamespaced.lean/declarations/normalizedbridge.md) | 80 | `declaration-track:1ce90b96be8f1fb3899cab6e8a9d508ce40e89132314e141eb46e1b22a315ae0` |
-| 7 | `theorem` | [normalizedBridge_lipschitz](../../../../MeasureAndIntegration/BridgeLipschitzNamespaced.lean/declarations/normalizedbridge-lipschitz.md) | 82 | `result-track:5002917ba3f6daddd48f6b4fe4569774cfe9533850d7929aced36ffef7f983fe` |
-| 8 | `theorem` | [normalizedBridge_abs_le](../../../../MeasureAndIntegration/BridgeLipschitzNamespaced.lean/declarations/normalizedbridge-abs-le.md) | 101 | `result-track:e0b611ced036d7f9edf7da654f4d42fbec93a4651100359182d2b7cfbe360b1d` |
+| 1 | `theorem` | [average_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeLipschitzNamespaced.lean/declarations/average-bounds.md) | 19 | `result-track:5ba99ef2e5a9f456ce372d605fc66f49d77c370c8f6c841dc7599e32bef36753` |
+| 2 | `theorem` | [integralBridge_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeLipschitzNamespaced.lean/declarations/integralbridge-sub.md) | 31 | `result-track:2307dc8058fee812862fe3ba42f12095c66903893bfd2e5ead41f17e5c148222` |
+| 3 | `theorem` | [integralBridge_increment_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeLipschitzNamespaced.lean/declarations/integralbridge-increment-le.md) | 43 | `result-track:2d0b97cb6bc38bd551321170c0c93e508c2ba804da6cf3827dbcf59c43815814` |
+| 4 | `theorem` | [integralBridge_lipschitz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeLipschitzNamespaced.lean/declarations/integralbridge-lipschitz.md) | 56 | `result-track:3fa1e0c22a9edbb739247e54ac7b2ff3f1e3c8e22dd5c15ad56b5a3758324009` |
+| 5 | `theorem` | [actual_bridge_lipschitz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeLipschitzNamespaced.lean/declarations/actual-bridge-lipschitz.md) | 68 | `result-track:910e04e41ffec8d55f49ce41f77a29bf9a5a350c2d1d29d51f0acdaa190f175f` |
+| 6 | `def` | [normalizedBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeLipschitzNamespaced.lean/declarations/normalizedbridge.md) | 80 | `declaration-track:1ce90b96be8f1fb3899cab6e8a9d508ce40e89132314e141eb46e1b22a315ae0` |
+| 7 | `theorem` | [normalizedBridge_lipschitz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeLipschitzNamespaced.lean/declarations/normalizedbridge-lipschitz.md) | 82 | `result-track:5002917ba3f6daddd48f6b4fe4569774cfe9533850d7929aced36ffef7f983fe` |
+| 8 | `theorem` | [normalizedBridge_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeLipschitzNamespaced.lean/declarations/normalizedbridge-abs-le.md) | 101 | `result-track:e0b611ced036d7f9edf7da654f4d42fbec93a4651100359182d2b7cfbe360b1d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/RankNatNamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/RankNatNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNatNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNatNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 42 | `declaration-track:1a20323f8d747789c6a83bdc98c09fb71059dfbdfbdf45f246e6cdaa75874c9f` |
-| 2 | `def` | [rank'](../../../../AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/rank-source-edition-2.md) | 61 | `declaration-track:b2d9c7ebe4e6715b2199a9992bfb9b8aa989f524ddfd6779e759218dd81892a9` |
-| 3 | `lemma` | [rank'_eq](../../../../AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/rank-eq.md) | 64 | `result-track:1ac5d7a001002f140540c0dcb1f3808e2d42e64937b0517299356dc6c6d7f99e` |
-| 4 | `lemma` | [rank'_lt](../../../../AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/rank-lt-source-edition-2.md) | 69 | `result-track:10568eaa4350e044fe9f0e874df190f60b1da4dbfe7df0fed4dd96a7658d92ea` |
-| 5 | `def` | [rank](../../../../AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/rank.md) | 82 | `declaration-track:602f3725c1612c3f284926a40d4b9ec12b913bd77fd928ccb2f20fd0e8fb36be` |
-| 6 | `lemma` | [rank_lt](../../../../AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/rank-lt.md) | 86 | `result-track:08b265e621463f043c7f052519c2db71c35e09ccc3eaa1b9545a788cb976361d` |
-| 7 | `def` | [rankFunction](../../../../AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/rankfunction.md) | 91 | `declaration-track:1d4a38b097bffb531a9b9bbb496a2db8dceaf94e11983d8334a8dd05dc13d1b5` |
-| 8 | `instance` | [(anonymous)](../../../../AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 95 | `declaration-track:cf6f214b7bd6d4b26c6a8fc8b477b5cf1069c2f45612af3c0f90935e64f354ec` |
-| 9 | `instance` | [(anonymous)](../../../../AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/instance.md) | 97 | `declaration-track:187ccfcfa531dc872e23336dbcbb79784502771907115316e0c645bfed84f3b4` |
-| 10 | `lemma` | [isRegular_iff_nonempty_rankFunction](../../../../AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/isregular-iff-nonempty-rankfunction-source-edition-2.md) | 101 | `result-track:b9177cdf9e77e4dd7192eee7060262dbd71fe60394dbc1297ca845a81db08829` |
-| 11 | `lemma` | [isRegular_iff_nonempty_weakRankFunction](../../../../AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/isregular-iff-nonempty-weakrankfunction.md) | 105 | `result-track:240e5ed9f25d8c4c1348928b0c32e3c793c0785e7ce5bf4202497200056edbfe` |
-| 12 | `lemma` | [isRegular_iff_nonempty_rankFunction](../../../../AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/isregular-iff-nonempty-rankfunction.md) | 115 | `result-track:35dc1f9840c9eed2d151d5b7b786e3b36331e8f7c1bc0833c24b0c3b56c480c6` |
-| 13 | `lemma` | [isRegular_iff_nonempty_weakRankFunction](../../../../AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/isregular-iff-nonempty-weakrankfunction-source-edition-2.md) | 120 | `result-track:6b56b3ee869d66f24cad0954721916a380c69a8123bd069196dcf2f1d9b0d095` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 42 | `declaration-track:1a20323f8d747789c6a83bdc98c09fb71059dfbdfbdf45f246e6cdaa75874c9f` |
+| 2 | `def` | [rank'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/rank-source-edition-2.md) | 61 | `declaration-track:b2d9c7ebe4e6715b2199a9992bfb9b8aa989f524ddfd6779e759218dd81892a9` |
+| 3 | `lemma` | [rank'_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/rank-eq.md) | 64 | `result-track:1ac5d7a001002f140540c0dcb1f3808e2d42e64937b0517299356dc6c6d7f99e` |
+| 4 | `lemma` | [rank'_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/rank-lt-source-edition-2.md) | 69 | `result-track:10568eaa4350e044fe9f0e874df190f60b1da4dbfe7df0fed4dd96a7658d92ea` |
+| 5 | `def` | [rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/rank.md) | 82 | `declaration-track:602f3725c1612c3f284926a40d4b9ec12b913bd77fd928ccb2f20fd0e8fb36be` |
+| 6 | `lemma` | [rank_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/rank-lt.md) | 86 | `result-track:08b265e621463f043c7f052519c2db71c35e09ccc3eaa1b9545a788cb976361d` |
+| 7 | `def` | [rankFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/rankfunction.md) | 91 | `declaration-track:1d4a38b097bffb531a9b9bbb496a2db8dceaf94e11983d8334a8dd05dc13d1b5` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 95 | `declaration-track:cf6f214b7bd6d4b26c6a8fc8b477b5cf1069c2f45612af3c0f90935e64f354ec` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/instance.md) | 97 | `declaration-track:187ccfcfa531dc872e23336dbcbb79784502771907115316e0c645bfed84f3b4` |
+| 10 | `lemma` | [isRegular_iff_nonempty_rankFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/isregular-iff-nonempty-rankfunction-source-edition-2.md) | 101 | `result-track:b9177cdf9e77e4dd7192eee7060262dbd71fe60394dbc1297ca845a81db08829` |
+| 11 | `lemma` | [isRegular_iff_nonempty_weakRankFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/isregular-iff-nonempty-weakrankfunction.md) | 105 | `result-track:240e5ed9f25d8c4c1348928b0c32e3c793c0785e7ce5bf4202497200056edbfe` |
+| 12 | `lemma` | [isRegular_iff_nonempty_rankFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/isregular-iff-nonempty-rankfunction.md) | 115 | `result-track:35dc1f9840c9eed2d151d5b7b786e3b36331e8f7c1bc0833c24b0c3b56c480c6` |
+| 13 | `lemma` | [isRegular_iff_nonempty_weakRankFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RankNatNamespacedPublic.lean/declarations/isregular-iff-nonempty-weakrankfunction-source-edition-2.md) | 120 | `result-track:6b56b3ee869d66f24cad0954721916a380c69a8123bd069196dcf2f1d9b0d095` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

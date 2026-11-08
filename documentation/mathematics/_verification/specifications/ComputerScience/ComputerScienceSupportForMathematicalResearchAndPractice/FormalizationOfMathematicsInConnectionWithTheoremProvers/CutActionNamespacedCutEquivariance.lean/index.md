@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionNamespacedCutEquivariance.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionNamespacedCutEquivariance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionNamespacedCutEquivariance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionNamespacedCutEquivariance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [CutEquivariance](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionNamespacedCutEquivariance.lean/declarations/cutequivariance.md) | 27 | `declaration-track:751648adc59c7c28e51d5949f9dc4d238edf21c0e65fdd230f0fd7a7d2064bf1` |
-| 2 | `def` | [FiniteReflectiveCut.cutEquivariance](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionNamespacedCutEquivariance.lean/declarations/finitereflectivecut-cutequivariance.md) | 39 | `declaration-track:94df564e6e4989a326cbc53eb98642004891c8ec0dc0843be11ff6861c2aef9a` |
-| 3 | `theorem` | [finite_cut_boundary_law_automorphism_invariant](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionNamespacedCutEquivariance.lean/declarations/finite-cut-boundary-law-automorphism-invariant.md) | 50 | `result-track:c223464d233b117d561b73dbccaacf87822676ef273814b5fdf1f69d560c09e5` |
+| 1 | `abbrev` | [CutEquivariance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionNamespacedCutEquivariance.lean/declarations/cutequivariance.md) | 27 | `declaration-track:751648adc59c7c28e51d5949f9dc4d238edf21c0e65fdd230f0fd7a7d2064bf1` |
+| 2 | `def` | [FiniteReflectiveCut.cutEquivariance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionNamespacedCutEquivariance.lean/declarations/finitereflectivecut-cutequivariance.md) | 39 | `declaration-track:94df564e6e4989a326cbc53eb98642004891c8ec0dc0843be11ff6861c2aef9a` |
+| 3 | `theorem` | [finite_cut_boundary_law_automorphism_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionNamespacedCutEquivariance.lean/declarations/finite-cut-boundary-law-automorphism-invariant.md) | 50 | `result-track:c223464d233b117d561b73dbccaacf87822676ef273814b5fdf1f69d560c09e5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

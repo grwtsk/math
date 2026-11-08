@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/FiniteExternalInputs.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/FiniteExternalInputs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteExternalInputs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteExternalInputs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_finite_bounds_with_external_literature_inputs](../../../../FunctionsOfAComplexVariable/FiniteExternalInputs.lean/declarations/actual-finite-bounds-with-external-literature-inputs.md) | 23 | `result-track:8a244c8cbeed00f10c6d4eaadba8f0bde3188042728e694b3326cde6f3e65782` |
+| 1 | `theorem` | [actual_finite_bounds_with_external_literature_inputs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteExternalInputs.lean/declarations/actual-finite-bounds-with-external-literature-inputs.md) | 23 | `result-track:8a244c8cbeed00f10c6d4eaadba8f0bde3188042728e694b3326cde6f3e65782` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

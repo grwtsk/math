@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKEqual128.lean/index.md) · [Full source](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKEqual128.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKEqual128.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKEqual128.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [KEqual128](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKEqual128.lean/declarations/kequal128.md) | 13 | `declaration-track:f512e8d22207aac8c8dd69f0050904b2e79bfcf3722bc875c79aeacce4638188` |
-| 2 | `def` | [KResidueHeat128](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKEqual128.lean/declarations/kresidueheat128.md) | 16 | `declaration-track:f27ae5b9b70ed1de36a363d046f71707ca69cfed54cbd953dddbcb924def23f0` |
-| 3 | `theorem` | [exact_arithmetic_claim_transports_to_k128](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKEqual128.lean/declarations/exact-arithmetic-claim-transports-to-k128.md) | 19 | `result-track:2534b0e07daa98c20a6cf919a4ec213c80c5e0af0757397a3ea98bbe96c9d0c3` |
-| 4 | `theorem` | [k128_arithmetic_iff_zero_residue](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKEqual128.lean/declarations/k128-arithmetic-iff-zero-residue.md) | 33 | `result-track:f52145e1ce887425c00087ff83157777dc6f3c663edc0cfc06d853c3fda1d199` |
+| 1 | `def` | [KEqual128](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKEqual128.lean/declarations/kequal128.md) | 13 | `declaration-track:f512e8d22207aac8c8dd69f0050904b2e79bfcf3722bc875c79aeacce4638188` |
+| 2 | `def` | [KResidueHeat128](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKEqual128.lean/declarations/kresidueheat128.md) | 16 | `declaration-track:f27ae5b9b70ed1de36a363d046f71707ca69cfed54cbd953dddbcb924def23f0` |
+| 3 | `theorem` | [exact_arithmetic_claim_transports_to_k128](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKEqual128.lean/declarations/exact-arithmetic-claim-transports-to-k128.md) | 19 | `result-track:2534b0e07daa98c20a6cf919a4ec213c80c5e0af0757397a3ea98bbe96c9d0c3` |
+| 4 | `theorem` | [k128_arithmetic_iff_zero_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKEqual128.lean/declarations/k128-arithmetic-iff-zero-residue.md) | 33 | `result-track:f52145e1ce887425c00087ff83157777dc6f3c663edc0cfc06d853c3fda1d199` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

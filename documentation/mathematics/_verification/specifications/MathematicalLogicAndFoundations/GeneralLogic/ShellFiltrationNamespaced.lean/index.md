@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ShellFiltrationNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ShellFiltrationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ShellFiltrationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ShellFiltrationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsBoundaryCell](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ShellFiltrationNamespaced.lean/declarations/isboundarycell.md) | 27 | `declaration-track:b12aea9747dcaba45d45b35a3a928257382ac89523f2bfc46af3998be2460176` |
-| 2 | `def` | [IsInteriorCell](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ShellFiltrationNamespaced.lean/declarations/isinteriorcell.md) | 33 | `declaration-track:7bf3ec85586ca38e62b4dfe296edfa35e06b9fdc33937eed3ba3b45f9488cdf5` |
-| 3 | `abbrev` | [BoundaryShell](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ShellFiltrationNamespaced.lean/declarations/boundaryshell.md) | 39 | `declaration-track:9e8ac5fe1be8d7339d1647fdf0732f5d1b4c8593ffb5e87e40df3816cef077b7` |
-| 4 | `def` | [IsNewChildCell](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ShellFiltrationNamespaced.lean/declarations/isnewchildcell.md) | 42 | `declaration-track:9050166609e5282b7c38e0ae210dbf2db9a70e38db00c3b1e54cfb79a91381c6` |
-| 5 | `theorem` | [boundary_or_not_boundary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ShellFiltrationNamespaced.lean/declarations/boundary-or-not-boundary.md) | 47 | `result-track:e0372868f0833635b8a79cec80aaae23951fbb59968da0e8e5336876c5eb6bd3` |
-| 6 | `theorem` | [not_interior_of_boundary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ShellFiltrationNamespaced.lean/declarations/not-interior-of-boundary.md) | 54 | `result-track:16cd46784db919337b85c4aed8d73d8aebaa9da4b3e7790b7ab09cc2ea37737e` |
-| 7 | `theorem` | [all_boundary_level_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ShellFiltrationNamespaced.lean/declarations/all-boundary-level-zero.md) | 65 | `result-track:7bfbc4df735b3af85e64e7bc4d53b9248181968c3ca04161f929ef4825e88ff7` |
+| 1 | `def` | [IsBoundaryCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ShellFiltrationNamespaced.lean/declarations/isboundarycell.md) | 27 | `declaration-track:b12aea9747dcaba45d45b35a3a928257382ac89523f2bfc46af3998be2460176` |
+| 2 | `def` | [IsInteriorCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ShellFiltrationNamespaced.lean/declarations/isinteriorcell.md) | 33 | `declaration-track:7bf3ec85586ca38e62b4dfe296edfa35e06b9fdc33937eed3ba3b45f9488cdf5` |
+| 3 | `abbrev` | [BoundaryShell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ShellFiltrationNamespaced.lean/declarations/boundaryshell.md) | 39 | `declaration-track:9e8ac5fe1be8d7339d1647fdf0732f5d1b4c8593ffb5e87e40df3816cef077b7` |
+| 4 | `def` | [IsNewChildCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ShellFiltrationNamespaced.lean/declarations/isnewchildcell.md) | 42 | `declaration-track:9050166609e5282b7c38e0ae210dbf2db9a70e38db00c3b1e54cfb79a91381c6` |
+| 5 | `theorem` | [boundary_or_not_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ShellFiltrationNamespaced.lean/declarations/boundary-or-not-boundary.md) | 47 | `result-track:e0372868f0833635b8a79cec80aaae23951fbb59968da0e8e5336876c5eb6bd3` |
+| 6 | `theorem` | [not_interior_of_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ShellFiltrationNamespaced.lean/declarations/not-interior-of-boundary.md) | 54 | `result-track:16cd46784db919337b85c4aed8d73d8aebaa9da4b3e7790b7ab09cc2ea37737e` |
+| 7 | `theorem` | [all_boundary_level_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ShellFiltrationNamespaced.lean/declarations/all-boundary-level-zero.md) | 65 | `result-track:7bfbc4df735b3af85e64e7bc4d53b9248181968c3ca04161f929ef4825e88ff7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

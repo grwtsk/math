@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01InputNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01InputNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01InputNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01InputNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [strict_upper_of_joint_linear_tail_radius](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01InputNamespaced.lean/declarations/strict-upper-of-joint-linear-tail-radius.md) | 28 | `result-track:303f97a17a0aa5b566d81810f0aafd3fff1e4c2200c0dbc1887a833dcf9c10a1` |
-| 2 | `theorem` | [strict_tail_of_joint_linear_tail_radius](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01InputNamespaced.lean/declarations/strict-tail-of-joint-linear-tail-radius.md) | 51 | `result-track:9d052d932f301ff7f133d386df34ae870d25fef98ece993b003b863fd443778e` |
-| 3 | `theorem` | [primary_strict_frontier_of_joint_linear_tail](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01InputNamespaced.lean/declarations/primary-strict-frontier-of-joint-linear-tail.md) | 64 | `result-track:c0c1d54b3d8627cc9256db513167b93a9148445d8dd798b3525906b9e32896d6` |
+| 1 | `theorem` | [strict_upper_of_joint_linear_tail_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01InputNamespaced.lean/declarations/strict-upper-of-joint-linear-tail-radius.md) | 28 | `result-track:303f97a17a0aa5b566d81810f0aafd3fff1e4c2200c0dbc1887a833dcf9c10a1` |
+| 2 | `theorem` | [strict_tail_of_joint_linear_tail_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01InputNamespaced.lean/declarations/strict-tail-of-joint-linear-tail-radius.md) | 51 | `result-track:9d052d932f301ff7f133d386df34ae870d25fef98ece993b003b863fd443778e` |
+| 3 | `theorem` | [primary_strict_frontier_of_joint_linear_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01InputNamespaced.lean/declarations/primary-strict-frontier-of-joint-linear-tail.md) | 64 | `result-track:c0c1d54b3d8627cc9256db513167b93a9148445d8dd798b3525906b9e32896d6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

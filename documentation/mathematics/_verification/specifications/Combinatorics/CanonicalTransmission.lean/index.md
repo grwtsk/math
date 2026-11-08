@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CanonicalTransmission.lean/index.md) · [Full source](../../../../Combinatorics/CanonicalTransmission.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CanonicalTransmission.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CanonicalTransmission.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CanonicalTransmission](../../../../Combinatorics/CanonicalTransmission.lean/declarations/canonicaltransmission.md) | 14 | `declaration-track:95adb8ce150019a9d89b444ad1ec89c7152c9983c5cda9b8000404d6f3d3acde` |
-| 2 | `structure` | [HardyCanonicalTransmissionBridge](../../../../Combinatorics/CanonicalTransmission.lean/declarations/hardycanonicaltransmissionbridge.md) | 37 | `declaration-track:386ac75c1c9ab962d8d19db0c74655b92237be1e98b586559926f9f8b3c1cd16` |
+| 1 | `structure` | [CanonicalTransmission](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CanonicalTransmission.lean/declarations/canonicaltransmission.md) | 14 | `declaration-track:95adb8ce150019a9d89b444ad1ec89c7152c9983c5cda9b8000404d6f3d3acde` |
+| 2 | `structure` | [HardyCanonicalTransmissionBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CanonicalTransmission.lean/declarations/hardycanonicaltransmissionbridge.md) | 37 | `declaration-track:386ac75c1c9ab962d8d19db0c74655b92237be1e98b586559926f9f8b3c1cd16` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

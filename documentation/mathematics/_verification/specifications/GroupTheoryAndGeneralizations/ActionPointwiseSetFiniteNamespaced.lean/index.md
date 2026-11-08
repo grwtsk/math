@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ActionPointwiseSetFiniteNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ActionPointwiseSetFiniteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionPointwiseSetFiniteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionPointwiseSetFiniteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [finite_smul_set](../../../../GroupTheoryAndGeneralizations/ActionPointwiseSetFiniteNamespaced.lean/declarations/finite-smul-set.md) | 26 | `result-track:de2a15de09f2bcacf48237f5b78e496f755f332acac348a7f93974b253af4a2d` |
-| 2 | `lemma` | [infinite_smul_set](../../../../GroupTheoryAndGeneralizations/ActionPointwiseSetFiniteNamespaced.lean/declarations/infinite-smul-set.md) | 29 | `result-track:f6c4baea45ac929ee83bfc1485ee1467c68042023707e63dfa6609ad9aa23e5d` |
+| 1 | `lemma` | [finite_smul_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionPointwiseSetFiniteNamespaced.lean/declarations/finite-smul-set.md) | 26 | `result-track:de2a15de09f2bcacf48237f5b78e496f755f332acac348a7f93974b253af4a2d` |
+| 2 | `lemma` | [infinite_smul_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionPointwiseSetFiniteNamespaced.lean/declarations/infinite-smul-set.md) | 29 | `result-track:f6c4baea45ac929ee83bfc1485ee1467c68042023707e63dfa6609ad9aa23e5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/XiSectionMoments.lean/index.md) · [Full source](../../../../MeasureAndIntegration/XiSectionMoments.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiSectionMoments.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiSectionMoments.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [thetaMoment](../../../../MeasureAndIntegration/XiSectionMoments.lean/declarations/thetamoment.md) | 10 | `declaration-track:f64bb9c574b817f267520f5cc0b3645d3b66d7c71f1b7d13c9ddaed451a115c5` |
-| 2 | `theorem` | [thetaMoment_integrable](../../../../MeasureAndIntegration/XiSectionMoments.lean/declarations/thetamoment-integrable.md) | 13 | `result-track:3afc96cd1bc2fa7596323939efa3eb91caae2f9f26b36680a1221c662f49f125` |
-| 3 | `theorem` | [coefficient_eq_moment](../../../../MeasureAndIntegration/XiSectionMoments.lean/declarations/coefficient-eq-moment.md) | 18 | `result-track:3bf68db8e3367284e7deda204f801434344b146fad83406b206489b3cab1dc39` |
-| 4 | `theorem` | [thetaMoment_pos](../../../../MeasureAndIntegration/XiSectionMoments.lean/declarations/thetamoment-pos.md) | 23 | `result-track:ea381c10ed93eee9eceaf82b28b0ea8ea451028dff5b4a1aaa4f256eebcb703f` |
-| 5 | `theorem` | [thetaMoment_quadratic_nonneg](../../../../MeasureAndIntegration/XiSectionMoments.lean/declarations/thetamoment-quadratic-nonneg.md) | 30 | `result-track:f378b19f7e35167fd07dc7971339946ebe79b93284560181692fc0f5d0e2fc42` |
-| 6 | `theorem` | [thetaMoment_logConvex](../../../../MeasureAndIntegration/XiSectionMoments.lean/declarations/thetamoment-logconvex.md) | 57 | `result-track:3ac1fb7e9f6d9f9e648d30290fdfb46536b5242a0ee9c3decf884bf598eec471` |
-| 7 | `theorem` | [coefficient_mul_factorial](../../../../MeasureAndIntegration/XiSectionMoments.lean/declarations/coefficient-mul-factorial.md) | 65 | `result-track:1888125a1b42c1f18855fc7bcc9aacb346f34a2aa3428b4a400ea58164279baa` |
-| 8 | `theorem` | [coefficient_logConvex_factorial](../../../../MeasureAndIntegration/XiSectionMoments.lean/declarations/coefficient-logconvex-factorial.md) | 69 | `result-track:14c4dbf8fe0e1ddb61f71da110fd91879a01175856690aa28fcb6bdfafe92cbd` |
-| 9 | `theorem` | [coefficient_fourth_obstruction](../../../../MeasureAndIntegration/XiSectionMoments.lean/declarations/coefficient-fourth-obstruction.md) | 106 | `result-track:442ec2d09d1217657dffdfaebc78723edf15c0ab2d3cfe9fd97c5d4d74ece884` |
+| 1 | `def` | [thetaMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiSectionMoments.lean/declarations/thetamoment.md) | 10 | `declaration-track:f64bb9c574b817f267520f5cc0b3645d3b66d7c71f1b7d13c9ddaed451a115c5` |
+| 2 | `theorem` | [thetaMoment_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiSectionMoments.lean/declarations/thetamoment-integrable.md) | 13 | `result-track:3afc96cd1bc2fa7596323939efa3eb91caae2f9f26b36680a1221c662f49f125` |
+| 3 | `theorem` | [coefficient_eq_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiSectionMoments.lean/declarations/coefficient-eq-moment.md) | 18 | `result-track:3bf68db8e3367284e7deda204f801434344b146fad83406b206489b3cab1dc39` |
+| 4 | `theorem` | [thetaMoment_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiSectionMoments.lean/declarations/thetamoment-pos.md) | 23 | `result-track:ea381c10ed93eee9eceaf82b28b0ea8ea451028dff5b4a1aaa4f256eebcb703f` |
+| 5 | `theorem` | [thetaMoment_quadratic_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiSectionMoments.lean/declarations/thetamoment-quadratic-nonneg.md) | 30 | `result-track:f378b19f7e35167fd07dc7971339946ebe79b93284560181692fc0f5d0e2fc42` |
+| 6 | `theorem` | [thetaMoment_logConvex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiSectionMoments.lean/declarations/thetamoment-logconvex.md) | 57 | `result-track:3ac1fb7e9f6d9f9e648d30290fdfb46536b5242a0ee9c3decf884bf598eec471` |
+| 7 | `theorem` | [coefficient_mul_factorial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiSectionMoments.lean/declarations/coefficient-mul-factorial.md) | 65 | `result-track:1888125a1b42c1f18855fc7bcc9aacb346f34a2aa3428b4a400ea58164279baa` |
+| 8 | `theorem` | [coefficient_logConvex_factorial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiSectionMoments.lean/declarations/coefficient-logconvex-factorial.md) | 69 | `result-track:14c4dbf8fe0e1ddb61f71da110fd91879a01175856690aa28fcb6bdfafe92cbd` |
+| 9 | `theorem` | [coefficient_fourth_obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiSectionMoments.lean/declarations/coefficient-fourth-obstruction.md) | 106 | `result-track:442ec2d09d1217657dffdfaebc78723edf15c0ab2d3cfe9fd97c5d4d74ece884` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

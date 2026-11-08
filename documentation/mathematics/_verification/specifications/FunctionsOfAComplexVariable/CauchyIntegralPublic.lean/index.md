@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/CauchyIntegralPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/CauchyIntegralPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CauchyIntegralPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CauchyIntegralPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [_root_.Differentiable.analyticOnNhd](../../../../FunctionsOfAComplexVariable/CauchyIntegralPublic.lean/declarations/root-differentiable-analyticonnhd.md) | 17 | `result-track:30d4a9fc2a9531dbd0a70608ac43c0659e53642f417de56f2e49c8db958c2b7e` |
+| 1 | `theorem` | [_root_.Differentiable.analyticOnNhd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CauchyIntegralPublic.lean/declarations/root-differentiable-analyticonnhd.md) | 17 | `result-track:30d4a9fc2a9531dbd0a70608ac43c0659e53642f417de56f2e49c8db958c2b7e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

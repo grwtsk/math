@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/StringLemmasNamespacedEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/StringLemmasNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/StringLemmasNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/StringLemmasNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [congr_append](../../../../../../ComputerScience/TheoryOfData/DataStructures/StringLemmasNamespacedEdition1.lean/declarations/congr-append.md) | 25 | `result-track:81f374f6268e99fdb6052d32dad42c6709d03f41dbe54c6747488884cdf71803` |
-| 2 | `lemma` | [length_replicate](../../../../../../ComputerScience/TheoryOfData/DataStructures/StringLemmasNamespacedEdition1.lean/declarations/length-replicate.md) | 28 | `result-track:31a9626dc5da19acd5590df3e8f55bc844ff1b720f47d0ba88c563c60b84c452` |
-| 3 | `lemma` | [length_eq_list_length](../../../../../../ComputerScience/TheoryOfData/DataStructures/StringLemmasNamespacedEdition1.lean/declarations/length-eq-list-length.md) | 31 | `result-track:0b8ec8b5c6022ae03bbd9fe178d9c249d1cc92932d6d144fc4ac29a8af5b97c4` |
-| 4 | `lemma` | [length_leftpad](../../../../../../ComputerScience/TheoryOfData/DataStructures/StringLemmasNamespacedEdition1.lean/declarations/length-leftpad.md) | 36 | `result-track:05e2ac4133d0bb1b1250ae192af883e24290d71899afb6c22e80d937d18a0d24` |
-| 5 | `lemma` | [leftpad_prefix](../../../../../../ComputerScience/TheoryOfData/DataStructures/StringLemmasNamespacedEdition1.lean/declarations/leftpad-prefix.md) | 43 | `result-track:0a0034c55a1eb0dc340609acab55a6ccc979a3c70664a93dd97d0f4d8e32b0b4` |
-| 6 | `lemma` | [leftpad_suffix](../../../../../../ComputerScience/TheoryOfData/DataStructures/StringLemmasNamespacedEdition1.lean/declarations/leftpad-suffix.md) | 46 | `result-track:8d231d8722078c5884f052108fc905a9c2829652cd693d8c13d766a0ca16a773` |
+| 1 | `lemma` | [congr_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/StringLemmasNamespacedEdition1.lean/declarations/congr-append.md) | 25 | `result-track:81f374f6268e99fdb6052d32dad42c6709d03f41dbe54c6747488884cdf71803` |
+| 2 | `lemma` | [length_replicate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/StringLemmasNamespacedEdition1.lean/declarations/length-replicate.md) | 28 | `result-track:31a9626dc5da19acd5590df3e8f55bc844ff1b720f47d0ba88c563c60b84c452` |
+| 3 | `lemma` | [length_eq_list_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/StringLemmasNamespacedEdition1.lean/declarations/length-eq-list-length.md) | 31 | `result-track:0b8ec8b5c6022ae03bbd9fe178d9c249d1cc92932d6d144fc4ac29a8af5b97c4` |
+| 4 | `lemma` | [length_leftpad](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/StringLemmasNamespacedEdition1.lean/declarations/length-leftpad.md) | 36 | `result-track:05e2ac4133d0bb1b1250ae192af883e24290d71899afb6c22e80d937d18a0d24` |
+| 5 | `lemma` | [leftpad_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/StringLemmasNamespacedEdition1.lean/declarations/leftpad-prefix.md) | 43 | `result-track:0a0034c55a1eb0dc340609acab55a6ccc979a3c70664a93dd97d0f4d8e32b0b4` |
+| 6 | `lemma` | [leftpad_suffix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/StringLemmasNamespacedEdition1.lean/declarations/leftpad-suffix.md) | 46 | `result-track:8d231d8722078c5884f052108fc905a9c2829652cd693d8c13d766a0ca16a773` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

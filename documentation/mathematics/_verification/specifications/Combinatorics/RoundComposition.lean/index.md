@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RoundComposition.lean/index.md) · [Full source](../../../../Combinatorics/RoundComposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,24 +58,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [xorTranslation](../../../../Combinatorics/RoundComposition.lean/declarations/xortranslation.md) | 62 | `declaration-track:7c372a6f0ddc4b561a15251be6ce0776ae10b0672f80742b07c8894823b08b52` |
-| 2 | `theorem` | [xorTranslation_apply](../../../../Combinatorics/RoundComposition.lean/declarations/xortranslation-apply.md) | 69 | `result-track:cedb258327a29da1465f1d92b056208526456555f88463cee6d0cf749fb6d36b` |
-| 3 | `theorem` | [xorTranslation_symm_apply](../../../../Combinatorics/RoundComposition.lean/declarations/xortranslation-symm-apply.md) | 74 | `result-track:9ff8eff302fc4871b70d59922c0ca2257e6771a5fd989592e26fe4cc8e33b8f8` |
-| 4 | `structure` | [Round](../../../../Combinatorics/RoundComposition.lean/declarations/round.md) | 79 | `declaration-track:a5f44e7cf6e858edef7238b17d9c954f06d4503ec1fc7a20f19e471307f3d3d6` |
-| 5 | `def` | [Round.toEquiv](../../../../Combinatorics/RoundComposition.lean/declarations/round-toequiv.md) | 86 | `declaration-track:7601993dde3e283064d4634d4844d39e7118bd91a32ab8b4d1bb4c496b879030` |
-| 6 | `def` | [Round.run](../../../../Combinatorics/RoundComposition.lean/declarations/round-run.md) | 91 | `declaration-track:18bd46a9b719e82e81f02ddd1da36c3882306bd3c0fd17861f207450b53b47cf` |
-| 7 | `theorem` | [Round.run_apply](../../../../Combinatorics/RoundComposition.lean/declarations/round-run-apply.md) | 95 | `result-track:e021d5fa9961f8091042bad1d4c8cf61e7c2a1e12e963822e973ef0c35c47f80` |
-| 8 | `theorem` | [Round.run_bijective](../../../../Combinatorics/RoundComposition.lean/declarations/round-run-bijective.md) | 101 | `result-track:fab4b7f757fbff889dcb094e092f13cbf87989c33aa6144cb682834c7c16f0fe` |
-| 9 | `def` | [Round.inverse](../../../../Combinatorics/RoundComposition.lean/declarations/round-inverse.md) | 106 | `declaration-track:a54e3e05415d34dd4d4abb61555159cf8fe1af91763855cea9b009c48733a5f8` |
-| 10 | `theorem` | [Round.inverse_run](../../../../Combinatorics/RoundComposition.lean/declarations/round-inverse-run.md) | 110 | `result-track:dc3041b866a213510839c7572fa284769066aa9a4a9e2a58e6b9b7c8c57c570c` |
-| 11 | `theorem` | [Round.run_inverse](../../../../Combinatorics/RoundComposition.lean/declarations/round-run-inverse.md) | 115 | `result-track:b31f3027c7680427a4defa7333d2d8df7d033c3394b81041abe7472f6bf78225` |
-| 12 | `def` | [composeRounds](../../../../Combinatorics/RoundComposition.lean/declarations/composerounds.md) | 122 | `declaration-track:e23b8a9fdf1e31f23ea3073f86e273a71779129cac32b663a936905dbef33a81` |
-| 13 | `def` | [runRounds](../../../../Combinatorics/RoundComposition.lean/declarations/runrounds.md) | 127 | `declaration-track:de768f785e4fac2977e2091273ebe82f8caf5f49d09afaeaae248fff3f8ba7a1` |
-| 14 | `theorem` | [composeRounds_nil](../../../../Combinatorics/RoundComposition.lean/declarations/composerounds-nil.md) | 131 | `result-track:4ad62db485aba5337341125cd058e9d4e2c2ae3b9d4b655815d111d6ceeda47f` |
-| 15 | `theorem` | [composeRounds_cons](../../../../Combinatorics/RoundComposition.lean/declarations/composerounds-cons.md) | 136 | `result-track:e43f4a591777163d3ea6a9684e23337eaa6273bd365acb25d363036aec51b7d6` |
-| 16 | `theorem` | [runRounds_nil](../../../../Combinatorics/RoundComposition.lean/declarations/runrounds-nil.md) | 141 | `result-track:1485ef8917ec5bc2ad72ca7d569c835c1dee5177f4f06854c45451f5d8a9c8ee` |
-| 17 | `theorem` | [runRounds_cons](../../../../Combinatorics/RoundComposition.lean/declarations/runrounds-cons.md) | 146 | `result-track:14d2654069fcfa0da5cbf1c36bb0664b0a59191202eef500ff43e52b2eb9cbfd` |
-| 18 | `theorem` | [runRounds_bijective](../../../../Combinatorics/RoundComposition.lean/declarations/runrounds-bijective.md) | 152 | `result-track:fc6cbdb5b196fd756f751ac205166963944043be8e973527e9762936e910095b` |
+| 1 | `def` | [xorTranslation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/declarations/xortranslation.md) | 62 | `declaration-track:7c372a6f0ddc4b561a15251be6ce0776ae10b0672f80742b07c8894823b08b52` |
+| 2 | `theorem` | [xorTranslation_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/declarations/xortranslation-apply.md) | 69 | `result-track:cedb258327a29da1465f1d92b056208526456555f88463cee6d0cf749fb6d36b` |
+| 3 | `theorem` | [xorTranslation_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/declarations/xortranslation-symm-apply.md) | 74 | `result-track:9ff8eff302fc4871b70d59922c0ca2257e6771a5fd989592e26fe4cc8e33b8f8` |
+| 4 | `structure` | [Round](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/declarations/round.md) | 79 | `declaration-track:a5f44e7cf6e858edef7238b17d9c954f06d4503ec1fc7a20f19e471307f3d3d6` |
+| 5 | `def` | [Round.toEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/declarations/round-toequiv.md) | 86 | `declaration-track:7601993dde3e283064d4634d4844d39e7118bd91a32ab8b4d1bb4c496b879030` |
+| 6 | `def` | [Round.run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/declarations/round-run.md) | 91 | `declaration-track:18bd46a9b719e82e81f02ddd1da36c3882306bd3c0fd17861f207450b53b47cf` |
+| 7 | `theorem` | [Round.run_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/declarations/round-run-apply.md) | 95 | `result-track:e021d5fa9961f8091042bad1d4c8cf61e7c2a1e12e963822e973ef0c35c47f80` |
+| 8 | `theorem` | [Round.run_bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/declarations/round-run-bijective.md) | 101 | `result-track:fab4b7f757fbff889dcb094e092f13cbf87989c33aa6144cb682834c7c16f0fe` |
+| 9 | `def` | [Round.inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/declarations/round-inverse.md) | 106 | `declaration-track:a54e3e05415d34dd4d4abb61555159cf8fe1af91763855cea9b009c48733a5f8` |
+| 10 | `theorem` | [Round.inverse_run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/declarations/round-inverse-run.md) | 110 | `result-track:dc3041b866a213510839c7572fa284769066aa9a4a9e2a58e6b9b7c8c57c570c` |
+| 11 | `theorem` | [Round.run_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/declarations/round-run-inverse.md) | 115 | `result-track:b31f3027c7680427a4defa7333d2d8df7d033c3394b81041abe7472f6bf78225` |
+| 12 | `def` | [composeRounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/declarations/composerounds.md) | 122 | `declaration-track:e23b8a9fdf1e31f23ea3073f86e273a71779129cac32b663a936905dbef33a81` |
+| 13 | `def` | [runRounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/declarations/runrounds.md) | 127 | `declaration-track:de768f785e4fac2977e2091273ebe82f8caf5f49d09afaeaae248fff3f8ba7a1` |
+| 14 | `theorem` | [composeRounds_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/declarations/composerounds-nil.md) | 131 | `result-track:4ad62db485aba5337341125cd058e9d4e2c2ae3b9d4b655815d111d6ceeda47f` |
+| 15 | `theorem` | [composeRounds_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/declarations/composerounds-cons.md) | 136 | `result-track:e43f4a591777163d3ea6a9684e23337eaa6273bd365acb25d363036aec51b7d6` |
+| 16 | `theorem` | [runRounds_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/declarations/runrounds-nil.md) | 141 | `result-track:1485ef8917ec5bc2ad72ca7d569c835c1dee5177f4f06854c45451f5d8a9c8ee` |
+| 17 | `theorem` | [runRounds_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/declarations/runrounds-cons.md) | 146 | `result-track:14d2654069fcfa0da5cbf1c36bb0664b0a59191202eef500ff43e52b2eb9cbfd` |
+| 18 | `theorem` | [runRounds_bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/declarations/runrounds-bijective.md) | 152 | `result-track:fc6cbdb5b196fd756f751ac205166963944043be8e973527e9762936e910095b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

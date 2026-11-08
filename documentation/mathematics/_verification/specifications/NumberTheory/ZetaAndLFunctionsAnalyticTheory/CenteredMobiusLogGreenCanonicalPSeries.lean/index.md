@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFiniteHybridEnergy`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHybridEnergy.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFiniteHybridEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHybridEnergy.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Analysis.PSeries` — import line 8; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 9; external provider; requires a separately pinned dependency.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [greenPSeriesC2](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/declarations/greenpseriesc2.md) | 18 | `declaration-track:29f80dead8f72c91c92a04447e5b0dfcb48a537d0c3f5c88257b93d21015f63c` |
-| 2 | `def` | [greenPSeriesC4](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/declarations/greenpseriesc4.md) | 19 | `declaration-track:e1d4bbfda8a5f7e24ce5cd13f04a6af87d3122bf994a9e3c7b178befb8e81bb6` |
-| 3 | `theorem` | [greenPSeriesC2_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/declarations/greenpseriesc2-nonneg.md) | 21 | `result-track:7d20aa88258e0dfd28a3c23a9c472db1679188e633f67decb2ebac11c2b0656b` |
-| 4 | `theorem` | [greenPSeriesC4_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/declarations/greenpseriesc4-nonneg.md) | 24 | `result-track:7de0d83c40db73915782e0e4aea3890ce737407af91d9904d743c5252d1c8aa0` |
-| 5 | `theorem` | [green_reciprocalSquare_partial_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/declarations/green-reciprocalsquare-partial-le.md) | 27 | `result-track:7f64cae9b977c82f3751401143433cb1204eac0519c63daf85d293d483db43e5` |
-| 6 | `theorem` | [green_reciprocalFourth_partial_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/declarations/green-reciprocalfourth-partial-le.md) | 34 | `result-track:c967570a61878035fa3d9f587ae751917f0846773990a37b47df88e5e31f95fb` |
-| 7 | `theorem` | [greenHighQuotientResidueMajorant_le_canonical](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/declarations/greenhighquotientresiduemajorant-le-canonical.md) | 42 | `result-track:5c9693aa519a1ca820dba75d44724b7f1041b3ad4a42f11e6bbb7b612d3e5602` |
-| 8 | `theorem` | [greenAliasResidualEnergy_le_canonical](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/declarations/greenaliasresidualenergy-le-canonical.md) | 61 | `result-track:ed77e85d3a018945ae5a00305246cad8815bfa94b0eca30f680bf5ac6d9d9812` |
+| 1 | `def` | [greenPSeriesC2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/declarations/greenpseriesc2.md) | 18 | `declaration-track:29f80dead8f72c91c92a04447e5b0dfcb48a537d0c3f5c88257b93d21015f63c` |
+| 2 | `def` | [greenPSeriesC4](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/declarations/greenpseriesc4.md) | 19 | `declaration-track:e1d4bbfda8a5f7e24ce5cd13f04a6af87d3122bf994a9e3c7b178befb8e81bb6` |
+| 3 | `theorem` | [greenPSeriesC2_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/declarations/greenpseriesc2-nonneg.md) | 21 | `result-track:7d20aa88258e0dfd28a3c23a9c472db1679188e633f67decb2ebac11c2b0656b` |
+| 4 | `theorem` | [greenPSeriesC4_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/declarations/greenpseriesc4-nonneg.md) | 24 | `result-track:7de0d83c40db73915782e0e4aea3890ce737407af91d9904d743c5252d1c8aa0` |
+| 5 | `theorem` | [green_reciprocalSquare_partial_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/declarations/green-reciprocalsquare-partial-le.md) | 27 | `result-track:7f64cae9b977c82f3751401143433cb1204eac0519c63daf85d293d483db43e5` |
+| 6 | `theorem` | [green_reciprocalFourth_partial_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/declarations/green-reciprocalfourth-partial-le.md) | 34 | `result-track:c967570a61878035fa3d9f587ae751917f0846773990a37b47df88e5e31f95fb` |
+| 7 | `theorem` | [greenHighQuotientResidueMajorant_le_canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/declarations/greenhighquotientresiduemajorant-le-canonical.md) | 42 | `result-track:5c9693aa519a1ca820dba75d44724b7f1041b3ad4a42f11e6bbb7b612d3e5602` |
+| 8 | `theorem` | [greenAliasResidualEnergy_le_canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/declarations/greenaliasresidualenergy-le-canonical.md) | 61 | `result-track:ed77e85d3a018945ae5a00305246cad8815bfa94b0eca30f680bf5ac6d9d9812` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

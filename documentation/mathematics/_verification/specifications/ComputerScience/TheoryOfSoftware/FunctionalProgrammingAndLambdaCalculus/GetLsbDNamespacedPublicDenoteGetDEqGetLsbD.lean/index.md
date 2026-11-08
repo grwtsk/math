@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GetLsbDNamespacedPublicDenoteGetDEqGetLsbD.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GetLsbDNamespacedPublicDenoteGetDEqGetLsbD.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GetLsbDNamespacedPublicDenoteGetDEqGetLsbD.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GetLsbDNamespacedPublicDenoteGetDEqGetLsbD.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [denote_getD_eq_getLsbD](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GetLsbDNamespacedPublicDenoteGetDEqGetLsbD.lean/declarations/denote-getd-eq-getlsbd.md) | 37 | `result-track:cd5c693d71199b8ca3b3484b289326a1955090b00050840d617c2c81c3feaa95` |
-| 2 | `theorem` | [denote_blastGetLsbD](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GetLsbDNamespacedPublicDenoteGetDEqGetLsbD.lean/declarations/denote-blastgetlsbd.md) | 52 | `result-track:f9d6f78003f269c2705332c99209678c90d3e3c86a3b7aad0671ffcc3912ef7f` |
+| 1 | `theorem` | [denote_getD_eq_getLsbD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GetLsbDNamespacedPublicDenoteGetDEqGetLsbD.lean/declarations/denote-getd-eq-getlsbd.md) | 37 | `result-track:cd5c693d71199b8ca3b3484b289326a1955090b00050840d617c2c81c3feaa95` |
+| 2 | `theorem` | [denote_blastGetLsbD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GetLsbDNamespacedPublicDenoteGetDEqGetLsbD.lean/declarations/denote-blastgetlsbd.md) | 52 | `result-track:f9d6f78003f269c2705332c99209678c90d3e3c86a3b7aad0671ffcc3912ef7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

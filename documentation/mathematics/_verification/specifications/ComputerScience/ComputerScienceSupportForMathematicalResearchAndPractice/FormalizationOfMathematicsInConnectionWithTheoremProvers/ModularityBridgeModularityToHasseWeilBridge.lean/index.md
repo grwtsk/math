@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModularityBridgeModularityToHasseWeilBridge.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModularityBridgeModularityToHasseWeilBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModularityBridgeModularityToHasseWeilBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModularityBridgeModularityToHasseWeilBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ModularityToHasseWeilBridge](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModularityBridgeModularityToHasseWeilBridge.lean/declarations/modularitytohasseweilbridge.md) | 21 | `declaration-track:a892809a19afe2bf3acc7ac556fcfd3496cd2785df370e58684f0d40c620aadc` |
-| 2 | `theorem` | [hasse_weil_analytic_from_modularity](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModularityBridgeModularityToHasseWeilBridge.lean/declarations/hasse-weil-analytic-from-modularity.md) | 29 | `result-track:4bdc2e6303425de2f06884fbababd86c9ca736720cc63a1055445f1507f13861` |
-| 3 | `theorem` | [hasse_weil_functional_from_modularity](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModularityBridgeModularityToHasseWeilBridge.lean/declarations/hasse-weil-functional-from-modularity.md) | 35 | `result-track:a0d9b5cb2d4b8e024fddf6b8dc9ef6906609200b8a4b1fc7214b908dc0b0f562` |
+| 1 | `structure` | [ModularityToHasseWeilBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModularityBridgeModularityToHasseWeilBridge.lean/declarations/modularitytohasseweilbridge.md) | 21 | `declaration-track:a892809a19afe2bf3acc7ac556fcfd3496cd2785df370e58684f0d40c620aadc` |
+| 2 | `theorem` | [hasse_weil_analytic_from_modularity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModularityBridgeModularityToHasseWeilBridge.lean/declarations/hasse-weil-analytic-from-modularity.md) | 29 | `result-track:4bdc2e6303425de2f06884fbababd86c9ca736720cc63a1055445f1507f13861` |
+| 3 | `theorem` | [hasse_weil_functional_from_modularity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModularityBridgeModularityToHasseWeilBridge.lean/declarations/hasse-weil-functional-from-modularity.md) | 35 | `result-track:a0d9b5cb2d4b8e024fddf6b8dc9ef6906609200b8a4b1fc7214b908dc0b0f562` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TranslationDefectNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TranslationDefectNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TranslationDefectNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TranslationDefectNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TranslationStep](../../../../../ComputerScience/AlgorithmsInComputerScience/TranslationDefectNamespaced.lean/declarations/translationstep.md) | 22 | `declaration-track:aefe531386c150398a05db8999e740c0bc72bb746159ccd15f2462be31bc08af` |
-| 2 | `structure` | [TranslationPath](../../../../../ComputerScience/AlgorithmsInComputerScience/TranslationDefectNamespaced.lean/declarations/translationpath.md) | 31 | `declaration-track:351157bf9ba9d21f77d3bfc02ed1a5037ebd221091795c0e8fcca295a6c567ea` |
-| 3 | `inductive` | [DefectComparison](../../../../../ComputerScience/AlgorithmsInComputerScience/TranslationDefectNamespaced.lean/declarations/defectcomparison.md) | 42 | `declaration-track:03d41aca8b7387ac996e67daf1b18787eaef2fa33250e14ae83a5c747b8bc2e1` |
-| 4 | `structure` | [TranslationTriangleDefect](../../../../../ComputerScience/AlgorithmsInComputerScience/TranslationDefectNamespaced.lean/declarations/translationtriangledefect.md) | 52 | `declaration-track:a2da7ea313f071791e3dd9e91b8b9184a2ef95f1a16baac31d0b3fd6e8f267d3` |
-| 5 | `theorem` | [TranslationTriangleDefect.common_endpoints](../../../../../ComputerScience/AlgorithmsInComputerScience/TranslationDefectNamespaced.lean/declarations/translationtriangledefect-common-endpoints.md) | 67 | `result-track:b55520c2da443646cf4048dc436ed0a09bd2dd01655866ad9d3862691506171f` |
-| 6 | `structure` | [MissingComparison](../../../../../ComputerScience/AlgorithmsInComputerScience/TranslationDefectNamespaced.lean/declarations/missingcomparison.md) | 76 | `declaration-track:08e857389267d01b928477ebc983491866c9308880395db249a927959ff64f18` |
+| 1 | `structure` | [TranslationStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TranslationDefectNamespaced.lean/declarations/translationstep.md) | 22 | `declaration-track:aefe531386c150398a05db8999e740c0bc72bb746159ccd15f2462be31bc08af` |
+| 2 | `structure` | [TranslationPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TranslationDefectNamespaced.lean/declarations/translationpath.md) | 31 | `declaration-track:351157bf9ba9d21f77d3bfc02ed1a5037ebd221091795c0e8fcca295a6c567ea` |
+| 3 | `inductive` | [DefectComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TranslationDefectNamespaced.lean/declarations/defectcomparison.md) | 42 | `declaration-track:03d41aca8b7387ac996e67daf1b18787eaef2fa33250e14ae83a5c747b8bc2e1` |
+| 4 | `structure` | [TranslationTriangleDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TranslationDefectNamespaced.lean/declarations/translationtriangledefect.md) | 52 | `declaration-track:a2da7ea313f071791e3dd9e91b8b9184a2ef95f1a16baac31d0b3fd6e8f267d3` |
+| 5 | `theorem` | [TranslationTriangleDefect.common_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TranslationDefectNamespaced.lean/declarations/translationtriangledefect-common-endpoints.md) | 67 | `result-track:b55520c2da443646cf4048dc436ed0a09bd2dd01655866ad9d3862691506171f` |
+| 6 | `structure` | [MissingComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TranslationDefectNamespaced.lean/declarations/missingcomparison.md) | 76 | `declaration-track:08e857389267d01b928477ebc983491866c9308880395db249a927959ff64f18` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

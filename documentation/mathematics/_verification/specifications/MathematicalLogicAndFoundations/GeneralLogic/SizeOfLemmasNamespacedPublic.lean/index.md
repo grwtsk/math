@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Fin.sizeOf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/declarations/fin-sizeof.md) | 25 | `result-track:43156202551bb9f9dc268c6b1d5ff8021c128bd0839b502ac981176eb314c997` |
-| 2 | `theorem` | [BitVec.sizeOf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/declarations/bitvec-sizeof.md) | 28 | `result-track:b6afe9f316f7a93e8a67afec396f7c856708f322cf594a74a8ef1c204f43af18` |
-| 3 | `theorem` | [UInt8.sizeOf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/declarations/uint8-sizeof.md) | 31 | `result-track:bcfe247a2617274cc2d0818055930e45a94ba9c7f3aa56e6d0da050a4e825288` |
-| 4 | `theorem` | [UInt16.sizeOf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/declarations/uint16-sizeof.md) | 34 | `result-track:837621449d222c120571bf019f7a7ecb4b2aebc00b1b463c7e5f4668ab35ae0a` |
-| 5 | `theorem` | [UInt32.sizeOf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/declarations/uint32-sizeof.md) | 37 | `result-track:2106049792b13b169c6aa4f1697f9f470626a7c8d97da55a2564a9b0fe9d52f0` |
-| 6 | `theorem` | [UInt64.sizeOf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/declarations/uint64-sizeof.md) | 40 | `result-track:0d6ca7410251d4ebe25e8ef51031504e81d7aa6aee41b79de61e5a3aac14699f` |
-| 7 | `theorem` | [USize.sizeOf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/declarations/usize-sizeof.md) | 43 | `result-track:f26e53adb7a3ae38d6819a03a6e165a547f0f0a22cd0e4a7f4dbedb4d95f8ba8` |
-| 8 | `theorem` | [Char.sizeOf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/declarations/char-sizeof.md) | 46 | `result-track:402d97fedb0621869c2d1a715adc3a669364b0fba378c0451291b1cf1176dada` |
-| 9 | `theorem` | [Subtype.sizeOf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/declarations/subtype-sizeof.md) | 49 | `result-track:147e5b20db3c0d1a71df71086886834cc4f7ec30a73f5046dfff3878cc90c1ad` |
+| 1 | `theorem` | [Fin.sizeOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/declarations/fin-sizeof.md) | 25 | `result-track:43156202551bb9f9dc268c6b1d5ff8021c128bd0839b502ac981176eb314c997` |
+| 2 | `theorem` | [BitVec.sizeOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/declarations/bitvec-sizeof.md) | 28 | `result-track:b6afe9f316f7a93e8a67afec396f7c856708f322cf594a74a8ef1c204f43af18` |
+| 3 | `theorem` | [UInt8.sizeOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/declarations/uint8-sizeof.md) | 31 | `result-track:bcfe247a2617274cc2d0818055930e45a94ba9c7f3aa56e6d0da050a4e825288` |
+| 4 | `theorem` | [UInt16.sizeOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/declarations/uint16-sizeof.md) | 34 | `result-track:837621449d222c120571bf019f7a7ecb4b2aebc00b1b463c7e5f4668ab35ae0a` |
+| 5 | `theorem` | [UInt32.sizeOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/declarations/uint32-sizeof.md) | 37 | `result-track:2106049792b13b169c6aa4f1697f9f470626a7c8d97da55a2564a9b0fe9d52f0` |
+| 6 | `theorem` | [UInt64.sizeOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/declarations/uint64-sizeof.md) | 40 | `result-track:0d6ca7410251d4ebe25e8ef51031504e81d7aa6aee41b79de61e5a3aac14699f` |
+| 7 | `theorem` | [USize.sizeOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/declarations/usize-sizeof.md) | 43 | `result-track:f26e53adb7a3ae38d6819a03a6e165a547f0f0a22cd0e4a7f4dbedb4d95f8ba8` |
+| 8 | `theorem` | [Char.sizeOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/declarations/char-sizeof.md) | 46 | `result-track:402d97fedb0621869c2d1a715adc3a669364b0fba378c0451291b1cf1176dada` |
+| 9 | `theorem` | [Subtype.sizeOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SizeOfLemmasNamespacedPublic.lean/declarations/subtype-sizeof.md) | 49 | `result-track:147e5b20db3c0d1a71df71086886834cc4f7ec30a73f5046dfff3878cc90c1ad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

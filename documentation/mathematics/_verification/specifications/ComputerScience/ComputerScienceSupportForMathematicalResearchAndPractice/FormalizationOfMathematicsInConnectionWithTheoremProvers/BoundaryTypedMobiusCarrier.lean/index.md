@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BoundaryTypedMobiusCarrier.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BoundaryTypedMobiusCarrier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BoundaryTypedMobiusCarrier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BoundaryTypedMobiusCarrier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TypedMobiusCarrier](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BoundaryTypedMobiusCarrier.lean/declarations/typedmobiuscarrier.md) | 13 | `declaration-track:9a50c5fab3dfec23c55605edc064a6cc9eb4dfdd5e0a2e89b3037be4f0db876d` |
-| 2 | `def` | [reversePlane](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BoundaryTypedMobiusCarrier.lean/declarations/reverseplane.md) | 22 | `declaration-track:863e754f2247c16968769fbd7cd4097bfdc21e73caf5c6f6ed2c3f1c239dfc47` |
-| 3 | `def` | [mobiusTwist](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BoundaryTypedMobiusCarrier.lean/declarations/mobiustwist.md) | 28 | `declaration-track:90c57a8a2916456b523cfc391c5f253a1b2a56567f0ef636ceced5b15505da9b` |
-| 4 | `theorem` | [mobiusTwist_involutive](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BoundaryTypedMobiusCarrier.lean/declarations/mobiustwist-involutive.md) | 44 | `result-track:db1eda6e24f38274b35ccee903c37ed0dc57be0633ecd1a57fd3b1d88519dfe4` |
+| 1 | `structure` | [TypedMobiusCarrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BoundaryTypedMobiusCarrier.lean/declarations/typedmobiuscarrier.md) | 13 | `declaration-track:9a50c5fab3dfec23c55605edc064a6cc9eb4dfdd5e0a2e89b3037be4f0db876d` |
+| 2 | `def` | [reversePlane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BoundaryTypedMobiusCarrier.lean/declarations/reverseplane.md) | 22 | `declaration-track:863e754f2247c16968769fbd7cd4097bfdc21e73caf5c6f6ed2c3f1c239dfc47` |
+| 3 | `def` | [mobiusTwist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BoundaryTypedMobiusCarrier.lean/declarations/mobiustwist.md) | 28 | `declaration-track:90c57a8a2916456b523cfc391c5f253a1b2a56567f0ef636ceced5b15505da9b` |
+| 4 | `theorem` | [mobiusTwist_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BoundaryTypedMobiusCarrier.lean/declarations/mobiustwist-involutive.md) | 44 | `result-track:db1eda6e24f38274b35ccee903c37ed0dc57be0633ecd1a57fd3b1d88519dfe4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

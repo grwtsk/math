@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HandleComplexNamespacedHandleComplex.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HandleComplexNamespacedHandleComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HandleComplexNamespacedHandleComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HandleComplexNamespacedHandleComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HandleComplex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HandleComplexNamespacedHandleComplex.lean/declarations/handlecomplex.md) | 31 | `declaration-track:67d823456801c28545359f9ccc08f498ceb81142a07da24a4863d66ff0b688c5` |
-| 2 | `theorem` | [handle_complex_has_section_complex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HandleComplexNamespacedHandleComplex.lean/declarations/handle-complex-has-section-complex.md) | 41 | `result-track:944b6b76e8bd421f94b0f2f1e5471e9b30becf3db4d2af426b17236e1c34f4c9` |
-| 3 | `theorem` | [handle_complex_identity_compatible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HandleComplexNamespacedHandleComplex.lean/declarations/handle-complex-identity-compatible.md) | 48 | `result-track:750a0893cb3f07649e36e77bb4beb5a8cae26b41532b611b8c9779d859f673d1` |
+| 1 | `structure` | [HandleComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HandleComplexNamespacedHandleComplex.lean/declarations/handlecomplex.md) | 31 | `declaration-track:67d823456801c28545359f9ccc08f498ceb81142a07da24a4863d66ff0b688c5` |
+| 2 | `theorem` | [handle_complex_has_section_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HandleComplexNamespacedHandleComplex.lean/declarations/handle-complex-has-section-complex.md) | 41 | `result-track:944b6b76e8bd421f94b0f2f1e5471e9b30becf3db4d2af426b17236e1c34f4c9` |
+| 3 | `theorem` | [handle_complex_identity_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HandleComplexNamespacedHandleComplex.lean/declarations/handle-complex-identity-compatible.md) | 48 | `result-track:750a0893cb3f07649e36e77bb4beb5a8cae26b41532b611b8c9779d859f673d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

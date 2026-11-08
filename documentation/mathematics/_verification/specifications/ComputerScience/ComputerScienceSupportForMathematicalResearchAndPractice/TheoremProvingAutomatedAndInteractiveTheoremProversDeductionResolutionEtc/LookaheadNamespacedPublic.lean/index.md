@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LookaheadNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LookaheadNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LookaheadNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LookaheadNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [maxIterations](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LookaheadNamespacedPublic.lean/declarations/maxiterations.md) | 27 | `declaration-track:f69b8821962ac7122274292acee22d86edb32dd310247461f09b490be578a604` |
-| 2 | `def` | [solve](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LookaheadNamespacedPublic.lean/declarations/solve.md) | 29 | `declaration-track:b5f98f550015ae8667bce3beb03ef2c68259ba5c470b19019d2fe9cf24785b3e` |
-| 3 | `def` | [tryLookahead](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LookaheadNamespacedPublic.lean/declarations/trylookahead.md) | 39 | `declaration-track:e5c358ddf0d5da9be0448371ebafd613dacf7b66383313d0119dd4119d80b71d` |
-| 4 | `def` | [lookahead](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LookaheadNamespacedPublic.lean/declarations/lookahead.md) | 65 | `declaration-track:5896bffa61f3f65596a30c8f35ea6b9620b413b77aa10fc90a5315ace76d7e5d` |
+| 1 | `abbrev` | [maxIterations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LookaheadNamespacedPublic.lean/declarations/maxiterations.md) | 27 | `declaration-track:f69b8821962ac7122274292acee22d86edb32dd310247461f09b490be578a604` |
+| 2 | `def` | [solve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LookaheadNamespacedPublic.lean/declarations/solve.md) | 29 | `declaration-track:b5f98f550015ae8667bce3beb03ef2c68259ba5c470b19019d2fe9cf24785b3e` |
+| 3 | `def` | [tryLookahead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LookaheadNamespacedPublic.lean/declarations/trylookahead.md) | 39 | `declaration-track:e5c358ddf0d5da9be0448371ebafd613dacf7b66383313d0119dd4119d80b71d` |
+| 4 | `def` | [lookahead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LookaheadNamespacedPublic.lean/declarations/lookahead.md) | 65 | `declaration-track:5896bffa61f3f65596a30c8f35ea6b9620b413b77aa10fc90a5315ace76d7e5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

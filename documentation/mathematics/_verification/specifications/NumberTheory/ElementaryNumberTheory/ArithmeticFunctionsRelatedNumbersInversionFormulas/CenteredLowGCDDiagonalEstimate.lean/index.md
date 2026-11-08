@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalEstimate.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalEstimate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalEstimate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalEstimate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDDivisorSquareMass`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDivisorSquareMass.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDDiagonalKernelBound`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalKernelBound.lean/index.md) — import line 8; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDPositiveShift`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDPositiveShift.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDDivisorSquareMass`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDivisorSquareMass.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDDiagonalKernelBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalKernelBound.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDPositiveShift`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDPositiveShift.lean/index.md) — import line 9; pinned internal source present.
 - `Mathlib.Analysis.Complex.ExponentialBounds` — import line 10; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 11; external provider; requires a separately pinned dependency.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [centeredLowGCDTargetScale](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalEstimate.lean/declarations/centeredlowgcdtargetscale.md) | 29 | `declaration-track:cde338280f12403123bfc60b8ccf8e9fca1a3eca19b6b0b4c5e473008b241df3` |
-| 2 | `theorem` | [abs_diagonalCenteredLowGCDCorrelation_le_target](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalEstimate.lean/declarations/abs-diagonalcenteredlowgcdcorrelation-le-target.md) | 35 | `result-track:5dcba0e98b382cfe98f321398cbaf79a23041e14f128367394c841cc51bc94cb` |
+| 1 | `def` | [centeredLowGCDTargetScale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalEstimate.lean/declarations/centeredlowgcdtargetscale.md) | 29 | `declaration-track:cde338280f12403123bfc60b8ccf8e9fca1a3eca19b6b0b4c5e473008b241df3` |
+| 2 | `theorem` | [abs_diagonalCenteredLowGCDCorrelation_le_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalEstimate.lean/declarations/abs-diagonalcenteredlowgcdcorrelation-le-target.md) | 35 | `result-track:5dcba0e98b382cfe98f321398cbaf79a23041e14f128367394c841cc51bc94cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/OctahedralBoundarySquared.lean/index.md) · [Full source](../../../../AlgebraicTopology/OctahedralBoundarySquared.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OctahedralBoundarySquared.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OctahedralBoundarySquared.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Boolean.Cube.PrismaticGeometry.Sphere` — import line 18; external provider; requires a separately pinned dependency.
-- [Octahedral Finite Cells](../../../../GeneralTopology/OctahedralFiniteCells.lean/index.md) — import line 19; pinned internal source present.
+- [Octahedral Finite Cells](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OctahedralFiniteCells.lean/index.md) — import line 19; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [octahedralVertexCoefficient](../../../../AlgebraicTopology/OctahedralBoundarySquared.lean/declarations/octahedralvertexcoefficient.md) | 37 | `declaration-track:d480dc459defd6747156de728c505f8f3090640c92c703ceb5c65ccc5589e011` |
-| 2 | `def` | [octahedralFaceChain](../../../../AlgebraicTopology/OctahedralBoundarySquared.lean/declarations/octahedralfacechain.md) | 46 | `declaration-track:7731e3c9658f6ed31c8e1764a9b7a1f28b144859b9a38ffeb17a56b4e9bf5567` |
-| 3 | `def` | [octahedralFaceBoundarySquared](../../../../AlgebraicTopology/OctahedralBoundarySquared.lean/declarations/octahedralfaceboundarysquared.md) | 51 | `declaration-track:7abcbb27a2f9a6ef98dd3fe4e3452208ba880f499c91c59fde3351165ad7d9a2` |
-| 4 | `def` | [OctahedralBoundarySquaredZero](../../../../AlgebraicTopology/OctahedralBoundarySquared.lean/declarations/octahedralboundarysquaredzero.md) | 56 | `declaration-track:ba85959a9867975778c58fe7330e804d0dc470ce9e4f39687d1cc9f36ee98972` |
-| 5 | `theorem` | [octahedralBoundarySquaredZeroProof](../../../../AlgebraicTopology/OctahedralBoundarySquared.lean/declarations/octahedralboundarysquaredzeroproof.md) | 61 | `result-track:51d8be87501b3c6708145cbb4fdf78de6ea79a444c10ac7ab8db020d917663ec` |
+| 1 | `def` | [octahedralVertexCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OctahedralBoundarySquared.lean/declarations/octahedralvertexcoefficient.md) | 37 | `declaration-track:d480dc459defd6747156de728c505f8f3090640c92c703ceb5c65ccc5589e011` |
+| 2 | `def` | [octahedralFaceChain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OctahedralBoundarySquared.lean/declarations/octahedralfacechain.md) | 46 | `declaration-track:7731e3c9658f6ed31c8e1764a9b7a1f28b144859b9a38ffeb17a56b4e9bf5567` |
+| 3 | `def` | [octahedralFaceBoundarySquared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OctahedralBoundarySquared.lean/declarations/octahedralfaceboundarysquared.md) | 51 | `declaration-track:7abcbb27a2f9a6ef98dd3fe4e3452208ba880f499c91c59fde3351165ad7d9a2` |
+| 4 | `def` | [OctahedralBoundarySquaredZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OctahedralBoundarySquared.lean/declarations/octahedralboundarysquaredzero.md) | 56 | `declaration-track:ba85959a9867975778c58fe7330e804d0dc470ce9e4f39687d1cc9f36ee98972` |
+| 5 | `theorem` | [octahedralBoundarySquaredZeroProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OctahedralBoundarySquared.lean/declarations/octahedralboundarysquaredzeroproof.md) | 61 | `result-track:51d8be87501b3c6708145cbb4fdf78de6ea79a444c10ac7ab8db020d917663ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

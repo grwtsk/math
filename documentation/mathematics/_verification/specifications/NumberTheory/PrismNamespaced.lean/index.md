@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PrismNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/PrismNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrismNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrismNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Prism](../../../../NumberTheory/PrismNamespaced.lean/declarations/prism.md) | 25 | `declaration-track:9936982536dd21002a1a34dae1e3f43ec2d58974fc857fdcba2270de21885433` |
-| 2 | `theorem` | [prism_has_carrier_label](../../../../NumberTheory/PrismNamespaced.lean/declarations/prism-has-carrier-label.md) | 30 | `result-track:1e32503fa78cccec170b95c30cdfd1cab5ccfe9333d922c268fd743d7e272879` |
+| 1 | `structure` | [Prism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrismNamespaced.lean/declarations/prism.md) | 25 | `declaration-track:9936982536dd21002a1a34dae1e3f43ec2d58974fc857fdcba2270de21885433` |
+| 2 | `theorem` | [prism_has_carrier_label](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrismNamespaced.lean/declarations/prism-has-carrier-label.md) | 30 | `result-track:1e32503fa78cccec170b95c30cdfd1cab5ccfe9333d922c268fd743d7e272879` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

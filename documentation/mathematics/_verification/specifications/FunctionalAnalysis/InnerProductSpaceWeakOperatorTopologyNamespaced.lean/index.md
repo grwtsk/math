@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/InnerProductSpaceWeakOperatorTopologyNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/InnerProductSpaceWeakOperatorTopologyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceWeakOperatorTopologyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceWeakOperatorTopologyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [ext_inner](../../../../FunctionalAnalysis/InnerProductSpaceWeakOperatorTopologyNamespaced.lean/declarations/ext-inner.md) | 34 | `result-track:9867679fde12a95b33d4f10273d2a1641189b21e67c4751950f626e6bad949da` |
-| 2 | `lemma` | [tendsto_iff_forall_inner_apply_tendsto](../../../../FunctionalAnalysis/InnerProductSpaceWeakOperatorTopologyNamespaced.lean/declarations/tendsto-iff-forall-inner-apply-tendsto.md) | 41 | `result-track:313558c0ca1ab1ba0b02cc32ffa69921a14b2e5a96b5d0795b8ba6ecdf0dae90` |
-| 3 | `lemma` | [le_nhds_iff_forall_inner_apply_le_nhds](../../../../FunctionalAnalysis/InnerProductSpaceWeakOperatorTopologyNamespaced.lean/declarations/le-nhds-iff-forall-inner-apply-le-nhds.md) | 48 | `result-track:6473142a2928a6e5bcdfc50e7cd9311bf9cb81318f221ce6d95da419e4d3de86` |
+| 1 | `lemma` | [ext_inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceWeakOperatorTopologyNamespaced.lean/declarations/ext-inner.md) | 34 | `result-track:9867679fde12a95b33d4f10273d2a1641189b21e67c4751950f626e6bad949da` |
+| 2 | `lemma` | [tendsto_iff_forall_inner_apply_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceWeakOperatorTopologyNamespaced.lean/declarations/tendsto-iff-forall-inner-apply-tendsto.md) | 41 | `result-track:313558c0ca1ab1ba0b02cc32ffa69921a14b2e5a96b5d0795b8ba6ecdf0dae90` |
+| 3 | `lemma` | [le_nhds_iff_forall_inner_apply_le_nhds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceWeakOperatorTopologyNamespaced.lean/declarations/le-nhds-iff-forall-inner-apply-le-nhds.md) | 48 | `result-track:6473142a2928a6e5bcdfc50e7cd9311bf9cb81318f221ce6d95da419e4d3de86` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

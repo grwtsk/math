@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/FourierSchwartz.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/FourierSchwartz.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/FourierSchwartz.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/FourierSchwartz.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fourierTransformCLM](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/FourierSchwartz.lean/declarations/fouriertransformclm.md) | 31 | `declaration-track:627937e6baa8056eac256e9a081dd72cc5c091a73f69b86cf7c6ae228c9fb551` |
-| 2 | `lemma` | [fourierTransformCLM_apply](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/FourierSchwartz.lean/declarations/fouriertransformclm-apply.md) | 78 | `result-track:40f7d56ce18675bd1aeeadb5b87d9c037c3e019df72308be37bf0735f0be5fd2` |
-| 3 | `def` | [fourierTransformCLE](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/FourierSchwartz.lean/declarations/fouriertransformcle.md) | 85 | `declaration-track:27fd14005e15a809072c15f374e322db43c60f822df19097d05ae8d9aea51c1d` |
-| 4 | `lemma` | [fourierTransformCLE_apply](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/FourierSchwartz.lean/declarations/fouriertransformcle-apply.md) | 103 | `result-track:fb28b207491aced1fdb1e19c717e270cface24bef00fee24a43aacead4f0257e` |
-| 5 | `lemma` | [fourierTransformCLE_symm_apply](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/FourierSchwartz.lean/declarations/fouriertransformcle-symm-apply.md) | 106 | `result-track:26503b6759c77b2cbab5a23b3e59481dedc871ebd60c5d224016574207400194` |
+| 1 | `def` | [fourierTransformCLM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/FourierSchwartz.lean/declarations/fouriertransformclm.md) | 31 | `declaration-track:627937e6baa8056eac256e9a081dd72cc5c091a73f69b86cf7c6ae228c9fb551` |
+| 2 | `lemma` | [fourierTransformCLM_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/FourierSchwartz.lean/declarations/fouriertransformclm-apply.md) | 78 | `result-track:40f7d56ce18675bd1aeeadb5b87d9c037c3e019df72308be37bf0735f0be5fd2` |
+| 3 | `def` | [fourierTransformCLE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/FourierSchwartz.lean/declarations/fouriertransformcle.md) | 85 | `declaration-track:27fd14005e15a809072c15f374e322db43c60f822df19097d05ae8d9aea51c1d` |
+| 4 | `lemma` | [fourierTransformCLE_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/FourierSchwartz.lean/declarations/fouriertransformcle-apply.md) | 103 | `result-track:fb28b207491aced1fdb1e19c717e270cface24bef00fee24a43aacead4f0257e` |
+| 5 | `lemma` | [fourierTransformCLE_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/FourierSchwartz.lean/declarations/fouriertransformcle-symm-apply.md) | 106 | `result-track:26503b6759c77b2cbab5a23b3e59481dedc871ebd60c5d224016574207400194` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

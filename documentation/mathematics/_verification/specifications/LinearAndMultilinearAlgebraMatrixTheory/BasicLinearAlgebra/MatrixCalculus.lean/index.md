@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mutationMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/declarations/mutationmatrix.md) | 7 | `declaration-track:d3d4c948236664d39795506706fbbce3e042d2cc75c5b2354f6290bb01115ae5` |
-| 2 | `theorem` | [mutationMatrix_mulVec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/declarations/mutationmatrix-mulvec.md) | 11 | `result-track:1e6940862850b7af463c03f6f591dcd31bcd5284448c4f8d339083efcdc57218` |
-| 3 | `theorem` | [mutationMatrix_sq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/declarations/mutationmatrix-sq.md) | 31 | `result-track:2b4c33e387b92d6b41eafae17d54b82ec95e5a93c1ab4349056435c35958a84c` |
-| 4 | `theorem` | [mutationMatrix_det](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/declarations/mutationmatrix-det.md) | 38 | `result-track:69a23a1748bc78e855c2f6f8b57445b8357ddb8c5748dfa2c2b3d87326099a3a` |
-| 5 | `def` | [wordMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/declarations/wordmatrix.md) | 48 | `declaration-track:3389e2f804ef19fee9514f29ffea4389e24cc4b7badf35d99c326eb29b47c949` |
-| 6 | `theorem` | [wordMatrix_mulVec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/declarations/wordmatrix-mulvec.md) | 53 | `result-track:0aa8bdb627ead2d8c8a89ee98e2d1bd1324173700767164e5ce7d284dc9b4fb7` |
-| 7 | `theorem` | [wordMatrix_append](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/declarations/wordmatrix-append.md) | 60 | `result-track:d6fb76c246c62a45f373f54c92ebfbfbbae05baf18dc19b35bd7bb77fc98d84f` |
-| 8 | `theorem` | [wordMatrix_reverse](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/declarations/wordmatrix-reverse.md) | 67 | `result-track:b134f39c2c80c85913d2a454ae614df4230d70b1e014000414d40653066ff696` |
+| 1 | `def` | [mutationMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/declarations/mutationmatrix.md) | 7 | `declaration-track:d3d4c948236664d39795506706fbbce3e042d2cc75c5b2354f6290bb01115ae5` |
+| 2 | `theorem` | [mutationMatrix_mulVec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/declarations/mutationmatrix-mulvec.md) | 11 | `result-track:1e6940862850b7af463c03f6f591dcd31bcd5284448c4f8d339083efcdc57218` |
+| 3 | `theorem` | [mutationMatrix_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/declarations/mutationmatrix-sq.md) | 31 | `result-track:2b4c33e387b92d6b41eafae17d54b82ec95e5a93c1ab4349056435c35958a84c` |
+| 4 | `theorem` | [mutationMatrix_det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/declarations/mutationmatrix-det.md) | 38 | `result-track:69a23a1748bc78e855c2f6f8b57445b8357ddb8c5748dfa2c2b3d87326099a3a` |
+| 5 | `def` | [wordMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/declarations/wordmatrix.md) | 48 | `declaration-track:3389e2f804ef19fee9514f29ffea4389e24cc4b7badf35d99c326eb29b47c949` |
+| 6 | `theorem` | [wordMatrix_mulVec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/declarations/wordmatrix-mulvec.md) | 53 | `result-track:0aa8bdb627ead2d8c8a89ee98e2d1bd1324173700767164e5ce7d284dc9b4fb7` |
+| 7 | `theorem` | [wordMatrix_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/declarations/wordmatrix-append.md) | 60 | `result-track:d6fb76c246c62a45f373f54c92ebfbfbbae05baf18dc19b35bd7bb77fc98d84f` |
+| 8 | `theorem` | [wordMatrix_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculus.lean/declarations/wordmatrix-reverse.md) | 67 | `result-track:b134f39c2c80c85913d2a454ae614df4230d70b1e014000414d40653066ff696` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

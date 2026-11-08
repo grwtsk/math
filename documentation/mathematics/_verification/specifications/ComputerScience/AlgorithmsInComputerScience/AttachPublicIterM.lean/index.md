@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AttachPublicIterM.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AttachPublicIterM.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AttachPublicIterM.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AttachPublicIterM.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IterM.step_attachWith](../../../../../ComputerScience/AlgorithmsInComputerScience/AttachPublicIterM.lean/declarations/iterm-step-attachwith.md) | 25 | `result-track:947047f32f07208d54eb26c36dfb7bb1083ace96d78ba1f3e49873019d4fe27a` |
-| 2 | `theorem` | [IterM.map_unattach_toList_attachWith](../../../../../ComputerScience/AlgorithmsInComputerScience/AttachPublicIterM.lean/declarations/iterm-map-unattach-tolist-attachwith.md) | 31 | `result-track:9456a24cc1a304e3b43ecc23064dac01b965cc9e9142d3df01adb76ad1231496` |
-| 3 | `theorem` | [IterM.map_unattach_toListRev_attachWith](../../../../../ComputerScience/AlgorithmsInComputerScience/AttachPublicIterM.lean/declarations/iterm-map-unattach-tolistrev-attachwith.md) | 50 | `result-track:86c5be13219da8d35d880aeab9548d4b99ea6d129f7c501d87671b7981e7903e` |
-| 4 | `theorem` | [IterM.map_unattach_toArray_attachWith](../../../../../ComputerScience/AlgorithmsInComputerScience/AttachPublicIterM.lean/declarations/iterm-map-unattach-toarray-attachwith.md) | 58 | `result-track:892cc83d0c1b4bbf0aef37767f871075e2e2e4947b144b7ccc25645ebab356ce` |
-| 5 | `theorem` | [IterM.length_attachWith](../../../../../ComputerScience/AlgorithmsInComputerScience/AttachPublicIterM.lean/declarations/iterm-length-attachwith.md) | 67 | `result-track:f576160286d5f713a13aa365c4648b09fa7d047610aae521d4f9198bb4afac7c` |
-| 6 | `def` | [IterM.count_attachWith](../../../../../ComputerScience/AlgorithmsInComputerScience/AttachPublicIterM.lean/declarations/iterm-count-attachwith.md) | 77 | `declaration-track:4195743fa38edaec15dac9a4d332bfb8d7e7d075fa7ba579b2947f0ab9e0b9db` |
+| 1 | `theorem` | [IterM.step_attachWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AttachPublicIterM.lean/declarations/iterm-step-attachwith.md) | 25 | `result-track:947047f32f07208d54eb26c36dfb7bb1083ace96d78ba1f3e49873019d4fe27a` |
+| 2 | `theorem` | [IterM.map_unattach_toList_attachWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AttachPublicIterM.lean/declarations/iterm-map-unattach-tolist-attachwith.md) | 31 | `result-track:9456a24cc1a304e3b43ecc23064dac01b965cc9e9142d3df01adb76ad1231496` |
+| 3 | `theorem` | [IterM.map_unattach_toListRev_attachWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AttachPublicIterM.lean/declarations/iterm-map-unattach-tolistrev-attachwith.md) | 50 | `result-track:86c5be13219da8d35d880aeab9548d4b99ea6d129f7c501d87671b7981e7903e` |
+| 4 | `theorem` | [IterM.map_unattach_toArray_attachWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AttachPublicIterM.lean/declarations/iterm-map-unattach-toarray-attachwith.md) | 58 | `result-track:892cc83d0c1b4bbf0aef37767f871075e2e2e4947b144b7ccc25645ebab356ce` |
+| 5 | `theorem` | [IterM.length_attachWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AttachPublicIterM.lean/declarations/iterm-length-attachwith.md) | 67 | `result-track:f576160286d5f713a13aa365c4648b09fa7d047610aae521d4f9198bb4afac7c` |
+| 6 | `def` | [IterM.count_attachWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AttachPublicIterM.lean/declarations/iterm-count-attachwith.md) | 77 | `declaration-track:4195743fa38edaec15dac9a4d332bfb8d7e7d075fa7ba579b2947f0ab9e0b9db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

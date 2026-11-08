@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Replay.lean/index.md) · [Full source](../../../../Combinatorics/Replay.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Replay.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Replay.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,21 +57,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cutDigest](../../../../Combinatorics/Replay.lean/declarations/cutdigest.md) | 9 | `declaration-track:81c7803d167aa86ba65f6cc2226be087e9b1e6338d5791964fc853ac55ccb68e` |
-| 2 | `def` | [resolutionDigest](../../../../Combinatorics/Replay.lean/declarations/resolutiondigest.md) | 20 | `declaration-track:4c982877c78e61cfe6636e55bf62f9dd5977d82ddcf4117ebaa80ad2a90ee65f` |
-| 3 | `structure` | [CanonicallyEqualCuts](../../../../Combinatorics/Replay.lean/declarations/canonicallyequalcuts.md) | 26 | `declaration-track:1414cf0516a44a41c5de72d6430bb58cfa0320911b869794aed9bc610ef876f9` |
-| 4 | `theorem` | [deterministic_replay](../../../../Combinatorics/Replay.lean/declarations/deterministic-replay.md) | 31 | `result-track:8361cde33b4bb6637151a86af6b3cc78cefeb465cef98dce2f97181b125a7d73` |
-| 5 | `structure` | [CommitAuthority](../../../../Combinatorics/Replay.lean/declarations/commitauthority.md) | 42 | `declaration-track:eb2fee43f3048ab04361d4e3fca711d881c5662f5aef8433e4993c28f2bc0e22` |
-| 6 | `structure` | [CommitState](../../../../Combinatorics/Replay.lean/declarations/commitstate.md) | 47 | `declaration-track:adf9fc87efefd33ca4861f5c914c457ebbf2f3c4e9e72203c1a1fa00d4f4cc0e` |
-| 7 | `def` | [acceptedEvent](../../../../Combinatorics/Replay.lean/declarations/acceptedevent.md) | 52 | `declaration-track:6ab679fcfd810340b5ebddd2bc14832c7b27467076651d4d484352f764d93320` |
-| 8 | `def` | [commitResolution](../../../../Combinatorics/Replay.lean/declarations/commitresolution.md) | 61 | `declaration-track:d93b08fb44099f5c0a1429dcd7484da0aacc33637adb28d5ea2ce249286f8998` |
-| 9 | `def` | [EventCountFor](../../../../Combinatorics/Replay.lean/declarations/eventcountfor.md) | 81 | `declaration-track:e8f7837d5e81b466a031cc7585682c5f3477b7ac7a01ed2f9e175d9c3adb4cb7` |
-| 10 | `theorem` | [commit_emits_at_most_one_event](../../../../Combinatorics/Replay.lean/declarations/commit-emits-at-most-one-event.md) | 86 | `result-track:496d77d5ad2f2ad3488fa93a3c9250a838828f78dacdb1f84d3a9089545566ff` |
-| 11 | `theorem` | [repeated_commit_is_idempotent](../../../../Combinatorics/Replay.lean/declarations/repeated-commit-is-idempotent.md) | 97 | `result-track:1c559eec6623620f23732feeb293f72c8debb0bc4978bd62d81848015d1640d4` |
-| 12 | `def` | [CommitsSolvedSemanticPayload](../../../../Combinatorics/Replay.lean/declarations/commitssolvedsemanticpayload.md) | 107 | `declaration-track:521567c05d174022da537fe2d25edad416a2c11d2058be326c387f64fc38b2e9` |
-| 13 | `theorem` | [unknown_does_not_commit_solved_payload](../../../../Combinatorics/Replay.lean/declarations/unknown-does-not-commit-solved-payload.md) | 114 | `result-track:0db65574807619d4f13fc712f594e51ac78463311b768e73108b50c8c84d9729` |
-| 14 | `def` | [DeterministicReplay](../../../../Combinatorics/Replay.lean/declarations/deterministicreplay.md) | 126 | `declaration-track:c5e55ee408264f999c1ffce72014d27deba506a9691b701baeff754beab3943b` |
-| 15 | `theorem` | [semantic_tokenization_main](../../../../Combinatorics/Replay.lean/declarations/semantic-tokenization-main.md) | 132 | `result-track:3c1f4e2ec67cbeb252f683a3b0b576ef5204ea4b8bba0a63db97666953efc5b2` |
+| 1 | `def` | [cutDigest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Replay.lean/declarations/cutdigest.md) | 9 | `declaration-track:81c7803d167aa86ba65f6cc2226be087e9b1e6338d5791964fc853ac55ccb68e` |
+| 2 | `def` | [resolutionDigest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Replay.lean/declarations/resolutiondigest.md) | 20 | `declaration-track:4c982877c78e61cfe6636e55bf62f9dd5977d82ddcf4117ebaa80ad2a90ee65f` |
+| 3 | `structure` | [CanonicallyEqualCuts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Replay.lean/declarations/canonicallyequalcuts.md) | 26 | `declaration-track:1414cf0516a44a41c5de72d6430bb58cfa0320911b869794aed9bc610ef876f9` |
+| 4 | `theorem` | [deterministic_replay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Replay.lean/declarations/deterministic-replay.md) | 31 | `result-track:8361cde33b4bb6637151a86af6b3cc78cefeb465cef98dce2f97181b125a7d73` |
+| 5 | `structure` | [CommitAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Replay.lean/declarations/commitauthority.md) | 42 | `declaration-track:eb2fee43f3048ab04361d4e3fca711d881c5662f5aef8433e4993c28f2bc0e22` |
+| 6 | `structure` | [CommitState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Replay.lean/declarations/commitstate.md) | 47 | `declaration-track:adf9fc87efefd33ca4861f5c914c457ebbf2f3c4e9e72203c1a1fa00d4f4cc0e` |
+| 7 | `def` | [acceptedEvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Replay.lean/declarations/acceptedevent.md) | 52 | `declaration-track:6ab679fcfd810340b5ebddd2bc14832c7b27467076651d4d484352f764d93320` |
+| 8 | `def` | [commitResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Replay.lean/declarations/commitresolution.md) | 61 | `declaration-track:d93b08fb44099f5c0a1429dcd7484da0aacc33637adb28d5ea2ce249286f8998` |
+| 9 | `def` | [EventCountFor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Replay.lean/declarations/eventcountfor.md) | 81 | `declaration-track:e8f7837d5e81b466a031cc7585682c5f3477b7ac7a01ed2f9e175d9c3adb4cb7` |
+| 10 | `theorem` | [commit_emits_at_most_one_event](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Replay.lean/declarations/commit-emits-at-most-one-event.md) | 86 | `result-track:496d77d5ad2f2ad3488fa93a3c9250a838828f78dacdb1f84d3a9089545566ff` |
+| 11 | `theorem` | [repeated_commit_is_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Replay.lean/declarations/repeated-commit-is-idempotent.md) | 97 | `result-track:1c559eec6623620f23732feeb293f72c8debb0bc4978bd62d81848015d1640d4` |
+| 12 | `def` | [CommitsSolvedSemanticPayload](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Replay.lean/declarations/commitssolvedsemanticpayload.md) | 107 | `declaration-track:521567c05d174022da537fe2d25edad416a2c11d2058be326c387f64fc38b2e9` |
+| 13 | `theorem` | [unknown_does_not_commit_solved_payload](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Replay.lean/declarations/unknown-does-not-commit-solved-payload.md) | 114 | `result-track:0db65574807619d4f13fc712f594e51ac78463311b768e73108b50c8c84d9729` |
+| 14 | `def` | [DeterministicReplay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Replay.lean/declarations/deterministicreplay.md) | 126 | `declaration-track:c5e55ee408264f999c1ffce72014d27deba506a9691b701baeff754beab3943b` |
+| 15 | `theorem` | [semantic_tokenization_main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Replay.lean/declarations/semantic-tokenization-main.md) | 132 | `result-track:3c1f4e2ec67cbeb252f683a3b0b576ef5204ea4b8bba0a63db97666953efc5b2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

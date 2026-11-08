@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralRNDerivNamespacedPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralRNDerivNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralRNDerivNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralRNDerivNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Measure.integrable_toReal_rnDeriv](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralRNDerivNamespacedPublic.lean/declarations/measure-integrable-toreal-rnderiv.md) | 48 | `result-track:f294cd4db6ae0dfb88e3d8a4e2db0197f1ae8a79c58630d2a51cc64f3a596c5d` |
-| 2 | `lemma` | [le_integral_rnDeriv_of_ac](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralRNDerivNamespacedPublic.lean/declarations/le-integral-rnderiv-of-ac.md) | 56 | `result-track:e49d2e7ba626cb20a4e2cd9cac8f90ecd00e4cf862e587a743cbc90b527924f5` |
-| 3 | `lemma` | [mul_le_integral_rnDeriv_of_ac](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralRNDerivNamespacedPublic.lean/declarations/mul-le-integral-rnderiv-of-ac.md) | 71 | `result-track:59bd315f9400c907b4b119d4942c77424df8a5527a56935ea31e0549320e05b1` |
-| 4 | `lemma` | [lintegral_rnDeriv_compProd](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralRNDerivNamespacedPublic.lean/declarations/lintegral-rnderiv-compprod.md) | 122 | `result-track:3370829745dce0f49cabcdffb1c8b979e7256d7ee783bf07386b0eb79546a937` |
-| 5 | `lemma` | [Integral RNDeriv Namespaced Public](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralRNDerivNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-integration-measureintegrabletorealrnd.md) | 137 | `result-track:4a5e94291e8fc73bf4ab28206ef713c155bd62b1c0e393179dff1a8d7ecd9bad` |
-| 6 | `lemma` | [Integral RNDeriv Namespaced Public](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralRNDerivNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-integration-measureintegrabletorealrnd-source-edition-2.md) | 184 | `result-track:78a922173bf7c4e9ae08934b8c42a3fea36a292d197eedee4ecf191ce96bf895` |
+| 1 | `lemma` | [Measure.integrable_toReal_rnDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralRNDerivNamespacedPublic.lean/declarations/measure-integrable-toreal-rnderiv.md) | 48 | `result-track:f294cd4db6ae0dfb88e3d8a4e2db0197f1ae8a79c58630d2a51cc64f3a596c5d` |
+| 2 | `lemma` | [le_integral_rnDeriv_of_ac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralRNDerivNamespacedPublic.lean/declarations/le-integral-rnderiv-of-ac.md) | 56 | `result-track:e49d2e7ba626cb20a4e2cd9cac8f90ecd00e4cf862e587a743cbc90b527924f5` |
+| 3 | `lemma` | [mul_le_integral_rnDeriv_of_ac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralRNDerivNamespacedPublic.lean/declarations/mul-le-integral-rnderiv-of-ac.md) | 71 | `result-track:59bd315f9400c907b4b119d4942c77424df8a5527a56935ea31e0549320e05b1` |
+| 4 | `lemma` | [lintegral_rnDeriv_compProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralRNDerivNamespacedPublic.lean/declarations/lintegral-rnderiv-compprod.md) | 122 | `result-track:3370829745dce0f49cabcdffb1c8b979e7256d7ee783bf07386b0eb79546a937` |
+| 5 | `lemma` | [Integral RNDeriv Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralRNDerivNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-integration-measureintegrabletorealrnd.md) | 137 | `result-track:4a5e94291e8fc73bf4ab28206ef713c155bd62b1c0e393179dff1a8d7ecd9bad` |
+| 6 | `lemma` | [Integral RNDeriv Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralRNDerivNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-integration-measureintegrabletorealrnd-source-edition-2.md) | 184 | `result-track:78a922173bf7c4e9ae08934b8c42a3fea36a292d197eedee4ecf191ce96bf895` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

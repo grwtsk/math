@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceRationalContinuousHalf.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceRationalContinuousHalf.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRationalContinuousHalf.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRationalContinuousHalf.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [continuousPoleHalf](../../../../MeasureAndIntegration/SourceRationalContinuousHalf.lean/declarations/continuouspolehalf.md) | 32 | `declaration-track:809d319e7e5c6ec9cb2a280e714768da70164d4dea5ce0f8b471fbcadca05016` |
-| 2 | `theorem` | [continuousPoleHalf_eq_interval](../../../../MeasureAndIntegration/SourceRationalContinuousHalf.lean/declarations/continuouspolehalf-eq-interval.md) | 36 | `result-track:0e899342d15f5c50ffd5e68a45b4a42b570d0cbd9a9138e08ba66b6167a3aaa2` |
-| 3 | `theorem` | [continuousPoleHalf_eq_neg_negative](../../../../MeasureAndIntegration/SourceRationalContinuousHalf.lean/declarations/continuouspolehalf-eq-neg-negative.md) | 54 | `result-track:b14d289fff9f3b67b90da95c87c3664dc4ca0e3474379e6b7fc43ce22cc35a5f` |
-| 4 | `theorem` | [continuousPoleHalf_abs_le_two](../../../../MeasureAndIntegration/SourceRationalContinuousHalf.lean/declarations/continuouspolehalf-abs-le-two.md) | 62 | `result-track:f300e6bf9b5ed92633cb277734652f996505a858d31a35c3cb8aa3d3ab565603` |
-| 5 | `theorem` | [inverse_phase_norm](../../../../MeasureAndIntegration/SourceRationalContinuousHalf.lean/declarations/inverse-phase-norm.md) | 67 | `result-track:93119cbc2979bb837f1fcb2e589766cbe0335ac520df3ce6238ee6bb8b26a6e9` |
-| 6 | `theorem` | [rationalKernel_eq_laplace](../../../../MeasureAndIntegration/SourceRationalContinuousHalf.lean/declarations/rationalkernel-eq-laplace.md) | 73 | `result-track:4425c0ea9d362c8a709cf9d2db2eedac90e09b941d73942187fd147c73a365f4` |
-| 7 | `theorem` | [rationalReadout_product_integrable](../../../../MeasureAndIntegration/SourceRationalContinuousHalf.lean/declarations/rationalreadout-product-integrable.md) | 92 | `result-track:e6df841cf4e53331d7d95124d169b62f5f891ab776b007e51300828148ffa70b` |
-| 8 | `theorem` | [native_rational_readout_eq_continuousPoleHalf](../../../../MeasureAndIntegration/SourceRationalContinuousHalf.lean/declarations/native-rational-readout-eq-continuouspolehalf.md) | 107 | `result-track:b968df40ee3247844556cbd5b0c452e863a4f0c9bd3cd2a6440a586c6848052c` |
+| 1 | `def` | [continuousPoleHalf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRationalContinuousHalf.lean/declarations/continuouspolehalf.md) | 32 | `declaration-track:809d319e7e5c6ec9cb2a280e714768da70164d4dea5ce0f8b471fbcadca05016` |
+| 2 | `theorem` | [continuousPoleHalf_eq_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRationalContinuousHalf.lean/declarations/continuouspolehalf-eq-interval.md) | 36 | `result-track:0e899342d15f5c50ffd5e68a45b4a42b570d0cbd9a9138e08ba66b6167a3aaa2` |
+| 3 | `theorem` | [continuousPoleHalf_eq_neg_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRationalContinuousHalf.lean/declarations/continuouspolehalf-eq-neg-negative.md) | 54 | `result-track:b14d289fff9f3b67b90da95c87c3664dc4ca0e3474379e6b7fc43ce22cc35a5f` |
+| 4 | `theorem` | [continuousPoleHalf_abs_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRationalContinuousHalf.lean/declarations/continuouspolehalf-abs-le-two.md) | 62 | `result-track:f300e6bf9b5ed92633cb277734652f996505a858d31a35c3cb8aa3d3ab565603` |
+| 5 | `theorem` | [inverse_phase_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRationalContinuousHalf.lean/declarations/inverse-phase-norm.md) | 67 | `result-track:93119cbc2979bb837f1fcb2e589766cbe0335ac520df3ce6238ee6bb8b26a6e9` |
+| 6 | `theorem` | [rationalKernel_eq_laplace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRationalContinuousHalf.lean/declarations/rationalkernel-eq-laplace.md) | 73 | `result-track:4425c0ea9d362c8a709cf9d2db2eedac90e09b941d73942187fd147c73a365f4` |
+| 7 | `theorem` | [rationalReadout_product_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRationalContinuousHalf.lean/declarations/rationalreadout-product-integrable.md) | 92 | `result-track:e6df841cf4e53331d7d95124d169b62f5f891ab776b007e51300828148ffa70b` |
+| 8 | `theorem` | [native_rational_readout_eq_continuousPoleHalf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRationalContinuousHalf.lean/declarations/native-rational-readout-eq-continuouspolehalf.md) | 107 | `result-track:b968df40ee3247844556cbd5b0c452e863a4f0c9bd3cd2a6440a586c6848052c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

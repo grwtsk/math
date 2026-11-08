@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OverlapSourceFixtureNamespacedEdition1.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OverlapSourceFixtureNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OverlapSourceFixtureNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OverlapSourceFixtureNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [singleton_original_profile](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OverlapSourceFixtureNamespacedEdition1.lean/declarations/singleton-original-profile.md) | 27 | `result-track:2e49d7b0eabdbe376b1a1e7f2f25da85a4a843a9369f2feddbc813a1f697b0c4` |
-| 2 | `theorem` | [same_labels_source_increment](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OverlapSourceFixtureNamespacedEdition1.lean/declarations/same-labels-source-increment.md) | 33 | `result-track:706fdd980049569d236b7f19a401e65f91f33b52b004993abcccf28767bdef50` |
-| 3 | `theorem` | [actual_same_labels_increment_ne_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OverlapSourceFixtureNamespacedEdition1.lean/declarations/actual-same-labels-increment-ne-zero.md) | 44 | `result-track:ee0e06745beebe4e2f2bad6dbf258a0f784661937f7701f46f1b96cf5d5e4492` |
+| 1 | `theorem` | [singleton_original_profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OverlapSourceFixtureNamespacedEdition1.lean/declarations/singleton-original-profile.md) | 27 | `result-track:2e49d7b0eabdbe376b1a1e7f2f25da85a4a843a9369f2feddbc813a1f697b0c4` |
+| 2 | `theorem` | [same_labels_source_increment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OverlapSourceFixtureNamespacedEdition1.lean/declarations/same-labels-source-increment.md) | 33 | `result-track:706fdd980049569d236b7f19a401e65f91f33b52b004993abcccf28767bdef50` |
+| 3 | `theorem` | [actual_same_labels_increment_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OverlapSourceFixtureNamespacedEdition1.lean/declarations/actual-same-labels-increment-ne-zero.md) | 44 | `result-track:ee0e06745beebe4e2f2bad6dbf258a0f784661937f7701f46f1b96cf5d5e4492` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

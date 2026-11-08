@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SymNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SymNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SymNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SymNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sum_sym2_filter_not_isDiag](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SymNamespaced.lean/declarations/sum-sym2-filter-not-isdiag.md) | 26 | `result-track:56c168cbed6a75577a6faa2a3ee709bd0ce12c8149d82a1f8287510173301137` |
-| 2 | `theorem` | [sum_count_of_mem_sym](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SymNamespaced.lean/declarations/sum-count-of-mem-sym.md) | 34 | `result-track:c55b0d6e77cd9df57a4ea7e2c4719f325c279fa67205a068f329f863a51be177` |
+| 1 | `theorem` | [sum_sym2_filter_not_isDiag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SymNamespaced.lean/declarations/sum-sym2-filter-not-isdiag.md) | 26 | `result-track:56c168cbed6a75577a6faa2a3ee709bd0ce12c8149d82a1f8287510173301137` |
+| 2 | `theorem` | [sum_count_of_mem_sym](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SymNamespaced.lean/declarations/sum-count-of-mem-sym.md) | 34 | `result-track:c55b0d6e77cd9df57a4ea7e2c4719f325c279fa67205a068f329f863a51be177` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

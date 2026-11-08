@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ContinuousMidpointAffine.lean/index.md) · [Full source](../../../../GeneralTopology/ContinuousMidpointAffine.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMidpointAffine.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMidpointAffine.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eq_zero_of_midpoint](../../../../GeneralTopology/ContinuousMidpointAffine.lean/declarations/eq-zero-of-midpoint.md) | 14 | `result-track:cd7bdefe4c8564d76c236de2761810b5d93b53948ce6829965e67e215582a2d5` |
-| 2 | `theorem` | [chord_identity](../../../../GeneralTopology/ContinuousMidpointAffine.lean/declarations/chord-identity.md) | 48 | `result-track:914fc8600a4457941777e10673dc58af81e8e9741f70076bef1a6c43678aeec5` |
-| 3 | `theorem` | [affine_from_two](../../../../GeneralTopology/ContinuousMidpointAffine.lean/declarations/affine-from-two.md) | 72 | `result-track:81aaebc3aad5171223c96fcab935a1b694c039f5b48e0d3bab9af984707238b2` |
+| 1 | `theorem` | [eq_zero_of_midpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMidpointAffine.lean/declarations/eq-zero-of-midpoint.md) | 14 | `result-track:cd7bdefe4c8564d76c236de2761810b5d93b53948ce6829965e67e215582a2d5` |
+| 2 | `theorem` | [chord_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMidpointAffine.lean/declarations/chord-identity.md) | 48 | `result-track:914fc8600a4457941777e10673dc58af81e8e9741f70076bef1a6c43678aeec5` |
+| 3 | `theorem` | [affine_from_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMidpointAffine.lean/declarations/affine-from-two.md) | 72 | `result-track:81aaebc3aad5171223c96fcab935a1b694c039f5b48e0d3bab9af984707238b2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

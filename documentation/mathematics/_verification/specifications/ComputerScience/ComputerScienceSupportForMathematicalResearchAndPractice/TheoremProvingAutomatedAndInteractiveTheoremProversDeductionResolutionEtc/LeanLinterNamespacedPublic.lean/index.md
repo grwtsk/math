@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanLinterNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanLinterNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanLinterNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanLinterNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [whenLinterOption](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanLinterNamespacedPublic.lean/declarations/whenlinteroption.md) | 45 | `declaration-track:9492a573b29b9483d67f6298f2862dce2c18cb2a0d98fffa0ee28f61738036d9` |
-| 2 | `def` | [whenNotLinterOption](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanLinterNamespacedPublic.lean/declarations/whennotlinteroption.md) | 55 | `declaration-track:679c05bd3766dd8b5b13be3770d46c552134825d112b1555bd96a78ecdfe714e` |
-| 3 | `def` | [whenLinterActivated](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanLinterNamespacedPublic.lean/declarations/whenlinteractivated.md) | 75 | `declaration-track:cffc2d279e3e6b7c918308b7f72cb8123ae07a0df9fdd532fde8ab9dd625cf22` |
+| 1 | `def` | [whenLinterOption](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanLinterNamespacedPublic.lean/declarations/whenlinteroption.md) | 45 | `declaration-track:9492a573b29b9483d67f6298f2862dce2c18cb2a0d98fffa0ee28f61738036d9` |
+| 2 | `def` | [whenNotLinterOption](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanLinterNamespacedPublic.lean/declarations/whennotlinteroption.md) | 55 | `declaration-track:679c05bd3766dd8b5b13be3770d46c552134825d112b1555bd96a78ecdfe714e` |
+| 3 | `def` | [whenLinterActivated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanLinterNamespacedPublic.lean/declarations/whenlinteractivated.md) | 75 | `declaration-track:cffc2d279e3e6b7c918308b7f72cb8123ae07a0df9fdd532fde8ab9dd625cf22` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CoverageNamespacedOracleCoverageRequiresFoundation.lean/index.md) · [Full source](../../../../RealFunctions/CoverageNamespacedOracleCoverageRequiresFoundation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoverageNamespacedOracleCoverageRequiresFoundation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoverageNamespacedOracleCoverageRequiresFoundation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [oracleCoverage_requires_foundation](../../../../RealFunctions/CoverageNamespacedOracleCoverageRequiresFoundation.lean/declarations/oraclecoverage-requires-foundation.md) | 33 | `result-track:777fa61b4472cb679551c9f2c4b83e7961f5c1f697e0050807fcc25f20576e63` |
+| 1 | `theorem` | [oracleCoverage_requires_foundation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoverageNamespacedOracleCoverageRequiresFoundation.lean/declarations/oraclecoverage-requires-foundation.md) | 33 | `result-track:777fa61b4472cb679551c9f2c4b83e7961f5c1f697e0050807fcc25f20576e63` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

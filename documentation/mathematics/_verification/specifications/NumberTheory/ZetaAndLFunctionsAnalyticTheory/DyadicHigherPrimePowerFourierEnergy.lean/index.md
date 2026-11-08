@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicHigherPrimePowerDFTRemainder`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerDFTRemainder.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicHigherPrimePowerDFTRemainder`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerDFTRemainder.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.PSeries` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fourierFrequencyDenominator_norm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/declarations/fourierfrequencydenominator-norm.md) | 41 | `result-track:bea2573632ef7482f4ed2e6a14e9f4653541f486c5ce345e6824c72142acbd4c` |
-| 2 | `theorem` | [frequency_abs_le_denominator_norm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/declarations/frequency-abs-le-denominator-norm.md) | 50 | `result-track:6848ff7b18ca7540429974ceed21411a44a4d897e361ef9742636888dd77e385` |
-| 3 | `def` | [higherPrimePowerFourierModeEnergy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/declarations/higherprimepowerfouriermodeenergy.md) | 59 | `declaration-track:5727eb82c0ace2e800e7c29ac18373aa0a712d19ed7ba02050a5868fc3325829` |
-| 4 | `theorem` | [higherPrimePowerFourierModeEnergy_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/declarations/higherprimepowerfouriermodeenergy-nonnegative.md) | 66 | `result-track:75ea8080823d096d9668d4a10aec03024024dd861d5c52adaac199d9b9b5f5fe` |
-| 5 | `theorem` | [higherPrimePowerFourierModeEnergy_le_pSeries](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/declarations/higherprimepowerfouriermodeenergy-le-pseries.md) | 75 | `result-track:73d2e7fa290b80f8aad7f1e733e4425b11b9d41856f8aa8bcc7e91993f5e6de8` |
-| 6 | `theorem` | [higherPrimePowerFourierModeEnergy_summable](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/declarations/higherprimepowerfouriermodeenergy-summable.md) | 118 | `result-track:a3066a791511602746d554dd05ce78f4ca513964a377ff8e7e54620beb996b58` |
-| 7 | `def` | [higherPrimePowerFrequencyConstant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/declarations/higherprimepowerfrequencyconstant.md) | 137 | `declaration-track:74441e01bfe5b8ce7e233d6e262f53c706602cb4e89806b8ed4a642893952a61` |
-| 8 | `theorem` | [higherPrimePowerFrequencyConstant_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/declarations/higherprimepowerfrequencyconstant-nonnegative.md) | 140 | `result-track:7c4759cf359107adca9f591ab92d802242c599813e29a60dcb0480dfacbb68ea` |
-| 9 | `theorem` | [higherPrimePowerFourierEnergy_le_mass_sq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/declarations/higherprimepowerfourierenergy-le-mass-sq.md) | 147 | `result-track:840484e57a9576c33f49c46672a48b1db04bf236a1941e686d9bd56ffc90033b` |
+| 1 | `theorem` | [fourierFrequencyDenominator_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/declarations/fourierfrequencydenominator-norm.md) | 41 | `result-track:bea2573632ef7482f4ed2e6a14e9f4653541f486c5ce345e6824c72142acbd4c` |
+| 2 | `theorem` | [frequency_abs_le_denominator_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/declarations/frequency-abs-le-denominator-norm.md) | 50 | `result-track:6848ff7b18ca7540429974ceed21411a44a4d897e361ef9742636888dd77e385` |
+| 3 | `def` | [higherPrimePowerFourierModeEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/declarations/higherprimepowerfouriermodeenergy.md) | 59 | `declaration-track:5727eb82c0ace2e800e7c29ac18373aa0a712d19ed7ba02050a5868fc3325829` |
+| 4 | `theorem` | [higherPrimePowerFourierModeEnergy_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/declarations/higherprimepowerfouriermodeenergy-nonnegative.md) | 66 | `result-track:75ea8080823d096d9668d4a10aec03024024dd861d5c52adaac199d9b9b5f5fe` |
+| 5 | `theorem` | [higherPrimePowerFourierModeEnergy_le_pSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/declarations/higherprimepowerfouriermodeenergy-le-pseries.md) | 75 | `result-track:73d2e7fa290b80f8aad7f1e733e4425b11b9d41856f8aa8bcc7e91993f5e6de8` |
+| 6 | `theorem` | [higherPrimePowerFourierModeEnergy_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/declarations/higherprimepowerfouriermodeenergy-summable.md) | 118 | `result-track:a3066a791511602746d554dd05ce78f4ca513964a377ff8e7e54620beb996b58` |
+| 7 | `def` | [higherPrimePowerFrequencyConstant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/declarations/higherprimepowerfrequencyconstant.md) | 137 | `declaration-track:74441e01bfe5b8ce7e233d6e262f53c706602cb4e89806b8ed4a642893952a61` |
+| 8 | `theorem` | [higherPrimePowerFrequencyConstant_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/declarations/higherprimepowerfrequencyconstant-nonnegative.md) | 140 | `result-track:7c4759cf359107adca9f591ab92d802242c599813e29a60dcb0480dfacbb68ea` |
+| 9 | `theorem` | [higherPrimePowerFourierEnergy_le_mass_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/declarations/higherprimepowerfourierenergy-le-mass-sq.md) | 147 | `result-track:840484e57a9576c33f49c46672a48b1db04bf236a1941e686d9bd56ffc90033b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

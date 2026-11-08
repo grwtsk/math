@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ClzPublicGoDenoteEq.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ClzPublicGoDenoteEq.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ClzPublicGoDenoteEq.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ClzPublicGoDenoteEq.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [go_denote_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ClzPublicGoDenoteEq.lean/declarations/go-denote-eq.md) | 36 | `result-track:8d17a0ae4e6b340e88bc69068c0130b8c0ddc8fa840e3562db44acb4d30774fd` |
-| 2 | `theorem` | [denote_blastClz](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ClzPublicGoDenoteEq.lean/declarations/denote-blastclz.md) | 94 | `result-track:ef210dd7db091d38a9433036c28c454f1c655de3de28ef51717e356e561af6d3` |
+| 1 | `theorem` | [go_denote_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ClzPublicGoDenoteEq.lean/declarations/go-denote-eq.md) | 36 | `result-track:8d17a0ae4e6b340e88bc69068c0130b8c0ddc8fa840e3562db44acb4d30774fd` |
+| 2 | `theorem` | [denote_blastClz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ClzPublicGoDenoteEq.lean/declarations/denote-blastclz.md) | 94 | `result-track:ef210dd7db091d38a9433036c28c454f1c655de3de28ef51717e356e561af6d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

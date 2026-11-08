@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PartitionEdition1.lean/index.md) · [Full source](../../../../Combinatorics/PartitionEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LexicographicObjective](../../../../Combinatorics/PartitionEdition1.lean/declarations/lexicographicobjective.md) | 9 | `declaration-track:f039e87476f20648425434b04731547eee146bb6ce0fe2ca25ca9b9d44908130` |
-| 2 | `structure` | [Partition](../../../../Combinatorics/PartitionEdition1.lean/declarations/partition.md) | 20 | `declaration-track:33d39aac8feae497c21c2737824bdb9eac19336d2448d789f3fce7b9e4d5773e` |
+| 1 | `structure` | [LexicographicObjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionEdition1.lean/declarations/lexicographicobjective.md) | 9 | `declaration-track:f039e87476f20648425434b04731547eee146bb6ce0fe2ca25ca9b9d44908130` |
+| 2 | `structure` | [Partition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionEdition1.lean/declarations/partition.md) | 20 | `declaration-track:33d39aac8feae497c21c2737824bdb9eac19336d2448d789f3fce7b9e4d5773e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

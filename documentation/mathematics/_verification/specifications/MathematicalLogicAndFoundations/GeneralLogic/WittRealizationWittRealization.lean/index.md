@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittRealizationWittRealization.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittRealizationWittRealization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittRealizationWittRealization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittRealizationWittRealization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [WittRealization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittRealizationWittRealization.lean/declarations/wittrealization.md) | 19 | `declaration-track:2a23a93c71f66b1aeb4b28c0b49b0f8178d2f37c60ef227533841c3364c9c29d` |
-| 2 | `structure` | [KTheoryIndexWittImage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittRealizationWittRealization.lean/declarations/ktheoryindexwittimage.md) | 28 | `declaration-track:d12cd5f5462bb73354c4e86744b6eb8dd1f2d12cf7d589979a28852f015b9bb4` |
-| 3 | `theorem` | [witt_realization_compatible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittRealizationWittRealization.lean/declarations/witt-realization-compatible.md) | 36 | `result-track:3a13501be766ab6089030ee9e7a9806f2f80dced2dbc87689624d77c3c70be5d` |
-| 4 | `theorem` | [ktheory_index_witt_image_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittRealizationWittRealization.lean/declarations/ktheory-index-witt-image-eq.md) | 43 | `result-track:ec4f11b11684a8f7d9d0e7ff4d771210cbc39c6ba3ccfb2987c1191d37d3c061` |
+| 1 | `structure` | [WittRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittRealizationWittRealization.lean/declarations/wittrealization.md) | 19 | `declaration-track:2a23a93c71f66b1aeb4b28c0b49b0f8178d2f37c60ef227533841c3364c9c29d` |
+| 2 | `structure` | [KTheoryIndexWittImage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittRealizationWittRealization.lean/declarations/ktheoryindexwittimage.md) | 28 | `declaration-track:d12cd5f5462bb73354c4e86744b6eb8dd1f2d12cf7d589979a28852f015b9bb4` |
+| 3 | `theorem` | [witt_realization_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittRealizationWittRealization.lean/declarations/witt-realization-compatible.md) | 36 | `result-track:3a13501be766ab6089030ee9e7a9806f2f80dced2dbc87689624d77c3c70be5d` |
+| 4 | `theorem` | [ktheory_index_witt_image_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittRealizationWittRealization.lean/declarations/ktheory-index-witt-image-eq.md) | 43 | `result-track:ec4f11b11684a8f7d9d0e7ff4d771210cbc39c6ba3ccfb2987c1191d37d3c061` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

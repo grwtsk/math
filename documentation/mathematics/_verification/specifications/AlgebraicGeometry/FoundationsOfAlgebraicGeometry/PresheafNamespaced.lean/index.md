@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PresheafNamespaced.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PresheafNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PresheafNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PresheafNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ringCatSheaf](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PresheafNamespaced.lean/declarations/ringcatsheaf.md) | 38 | `declaration-track:092c1b844c502246c26b8d62bda7b0c78d8d9c77b795bcbf849ad1f27cc67471` |
-| 2 | `abbrev` | [PresheafOfModules](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PresheafNamespaced.lean/declarations/presheafofmodules.md) | 42 | `declaration-track:12531df8dc7bc782390bf5ff8282546fb5b0d5f22fcab909b2a748fe20b10ff8` |
+| 1 | `abbrev` | [ringCatSheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PresheafNamespaced.lean/declarations/ringcatsheaf.md) | 38 | `declaration-track:092c1b844c502246c26b8d62bda7b0c78d8d9c77b795bcbf849ad1f27cc67471` |
+| 2 | `abbrev` | [PresheafOfModules](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PresheafNamespaced.lean/declarations/presheafofmodules.md) | 42 | `declaration-track:12531df8dc7bc782390bf5ff8282546fb5b0d5f22fcab909b2a748fe20b10ff8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

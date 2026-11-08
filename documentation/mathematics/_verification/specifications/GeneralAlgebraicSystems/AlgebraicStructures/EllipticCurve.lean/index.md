@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticCurve.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticCurve.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticCurve.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticCurve.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ECPoint](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticCurve.lean/declarations/ecpoint.md) | 19 | `declaration-track:6c468df0e068be70c1a5dbb11d97f3b3b8024721379375acb756ff466d489886` |
-| 2 | `structure` | [ECGroupLaw](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticCurve.lean/declarations/ecgrouplaw.md) | 24 | `declaration-track:4333e61e9a29a8b15eebc79bd6090f6963f2635c3f7eac5b97d31a0b27ffdcbf` |
+| 1 | `inductive` | [ECPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticCurve.lean/declarations/ecpoint.md) | 19 | `declaration-track:6c468df0e068be70c1a5dbb11d97f3b3b8024721379375acb756ff466d489886` |
+| 2 | `structure` | [ECGroupLaw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticCurve.lean/declarations/ecgrouplaw.md) | 24 | `declaration-track:4333e61e9a29a8b15eebc79bd6090f6963f2635c3f7eac5b97d31a0b27ffdcbf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

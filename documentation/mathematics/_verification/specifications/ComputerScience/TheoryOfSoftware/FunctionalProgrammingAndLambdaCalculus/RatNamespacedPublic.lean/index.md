@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toFloat](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatNamespacedPublic.lean/declarations/tofloat.md) | 25 | `declaration-track:fef0c4f37f20dbc9801aec4da5f5928827b04ed700c9760ac73829ceeb9c822b` |
-| 2 | `def` | [Rat Namespaced Public](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatNamespacedPublic.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-theoreticalalgorithms-to-source-edition-2.md) | 28 | `declaration-track:ae4fe1b1ed5079d2a060915992d83cf0ad5c21664a7af7f8c2c75407f01a674a` |
-| 3 | `def` | [Rat Namespaced Public](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatNamespacedPublic.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-theoreticalalgorithms-to.md) | 36 | `declaration-track:9bc883342cad998ce3d85cb1cdcc16bbd9952ea85b549d9c1b6d28bd25650dd5` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatNamespacedPublic.lean/declarations/instance.md) | 38 | `declaration-track:d384e35cc7bfa653d2dec33a6160e8bd41d29be6cf14bc15825448f295a951c7` |
+| 1 | `def` | [toFloat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatNamespacedPublic.lean/declarations/tofloat.md) | 25 | `declaration-track:fef0c4f37f20dbc9801aec4da5f5928827b04ed700c9760ac73829ceeb9c822b` |
+| 2 | `def` | [Rat Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatNamespacedPublic.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-theoreticalalgorithms-to-source-edition-2.md) | 28 | `declaration-track:ae4fe1b1ed5079d2a060915992d83cf0ad5c21664a7af7f8c2c75407f01a674a` |
+| 3 | `def` | [Rat Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatNamespacedPublic.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-theoreticalalgorithms-to.md) | 36 | `declaration-track:9bc883342cad998ce3d85cb1cdcc16bbd9952ea85b549d9c1b6d28bd25650dd5` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatNamespacedPublic.lean/declarations/instance.md) | 38 | `declaration-track:d384e35cc7bfa653d2dec33a6160e8bd41d29be6cf14bc15825448f295a951c7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

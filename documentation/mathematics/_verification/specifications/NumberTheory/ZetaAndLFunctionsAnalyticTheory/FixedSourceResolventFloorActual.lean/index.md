@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedSourceResolventFloorActual.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedSourceResolventFloorActual.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedSourceResolventFloorActual.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedSourceResolventFloorActual.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceMass_kernel_overlap_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedSourceResolventFloorActual.lean/declarations/sourcemass-kernel-overlap-le.md) | 13 | `result-track:9f562f3f10408142c6543f8d28b4f7f4967225469553511dfc3b3e22b50965d0` |
-| 2 | `theorem` | [occurrence_sourceMass_floor](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedSourceResolventFloorActual.lean/declarations/occurrence-sourcemass-floor.md) | 21 | `result-track:5fc503ad3d1d5b7da0ee3a9e0a1ded068aa8de20ff95f4bd67b62a135d722468` |
-| 3 | `theorem` | [nontrivial_sourceMass_uniform_positive_floor](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedSourceResolventFloorActual.lean/declarations/nontrivial-sourcemass-uniform-positive-floor.md) | 29 | `result-track:136cc97d259f8d12a2e401ac15f75eb745f23cb48471033121b01106c95f58e2` |
+| 1 | `theorem` | [sourceMass_kernel_overlap_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedSourceResolventFloorActual.lean/declarations/sourcemass-kernel-overlap-le.md) | 13 | `result-track:9f562f3f10408142c6543f8d28b4f7f4967225469553511dfc3b3e22b50965d0` |
+| 2 | `theorem` | [occurrence_sourceMass_floor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedSourceResolventFloorActual.lean/declarations/occurrence-sourcemass-floor.md) | 21 | `result-track:5fc503ad3d1d5b7da0ee3a9e0a1ded068aa8de20ff95f4bd67b62a135d722468` |
+| 3 | `theorem` | [nontrivial_sourceMass_uniform_positive_floor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedSourceResolventFloorActual.lean/declarations/nontrivial-sourcemass-uniform-positive-floor.md) | 29 | `result-track:136cc97d259f8d12a2e401ac15f75eb745f23cb48471033121b01106c95f58e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

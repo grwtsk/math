@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiPrimeNamespacedEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiPrimeNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiPrimeNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiPrimeNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [xiPrime_zeros_in_open_critical_strip](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiPrimeNamespacedEdition1.lean/declarations/xiprime-zeros-in-open-critical-strip.md) | 21 | `result-track:bcd62225d4a9f790e5bb6b188fd4c0f74d2215206b4c99d87420bc8309ce50cd` |
-| 2 | `theorem` | [xiPrime_over_xi_re_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiPrimeNamespacedEdition1.lean/declarations/xiprime-over-xi-re-pos.md) | 26 | `result-track:e362ba832f7e10e703600a04251d50d58a3acfe117b491173e46a9dbc0c129c3` |
-| 3 | `theorem` | [xiPrime_simple_zeros_on_critical_line](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiPrimeNamespacedEdition1.lean/declarations/xiprime-simple-zeros-on-critical-line.md) | 33 | `result-track:6758a8f10f877c3cab73ac5c8d483c352f6eacd5e1da32e269da5122d954cf43` |
-| 4 | `theorem` | [xiPrime_simple_zeros_on_critical_line_cumulative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiPrimeNamespacedEdition1.lean/declarations/xiprime-simple-zeros-on-critical-line-cumulative.md) | 40 | `result-track:312a384cff8eca7a0a1fb011edd13ca3750760dc277a52864b2e797e791bac1f` |
-| 5 | `theorem` | [xiPrime_simple_zeros_on_critical_line_quartic](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiPrimeNamespacedEdition1.lean/declarations/xiprime-simple-zeros-on-critical-line-quartic.md) | 48 | `result-track:b5adf12b4ebc7e5342244c90737ef3c013b83b64cdad1654757de18f3efd2be4` |
-| 6 | `theorem` | [xiPrime_simple_zeros_on_critical_line_quartic_cumulative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiPrimeNamespacedEdition1.lean/declarations/xiprime-simple-zeros-on-critical-line-quartic-cumulative.md) | 56 | `result-track:d04b4f1c4e5a122e51c792714c1fa6b8308cde316523beeba936119c72f7d319` |
+| 1 | `theorem` | [xiPrime_zeros_in_open_critical_strip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiPrimeNamespacedEdition1.lean/declarations/xiprime-zeros-in-open-critical-strip.md) | 21 | `result-track:bcd62225d4a9f790e5bb6b188fd4c0f74d2215206b4c99d87420bc8309ce50cd` |
+| 2 | `theorem` | [xiPrime_over_xi_re_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiPrimeNamespacedEdition1.lean/declarations/xiprime-over-xi-re-pos.md) | 26 | `result-track:e362ba832f7e10e703600a04251d50d58a3acfe117b491173e46a9dbc0c129c3` |
+| 3 | `theorem` | [xiPrime_simple_zeros_on_critical_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiPrimeNamespacedEdition1.lean/declarations/xiprime-simple-zeros-on-critical-line.md) | 33 | `result-track:6758a8f10f877c3cab73ac5c8d483c352f6eacd5e1da32e269da5122d954cf43` |
+| 4 | `theorem` | [xiPrime_simple_zeros_on_critical_line_cumulative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiPrimeNamespacedEdition1.lean/declarations/xiprime-simple-zeros-on-critical-line-cumulative.md) | 40 | `result-track:312a384cff8eca7a0a1fb011edd13ca3750760dc277a52864b2e797e791bac1f` |
+| 5 | `theorem` | [xiPrime_simple_zeros_on_critical_line_quartic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiPrimeNamespacedEdition1.lean/declarations/xiprime-simple-zeros-on-critical-line-quartic.md) | 48 | `result-track:b5adf12b4ebc7e5342244c90737ef3c013b83b64cdad1654757de18f3efd2be4` |
+| 6 | `theorem` | [xiPrime_simple_zeros_on_critical_line_quartic_cumulative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiPrimeNamespacedEdition1.lean/declarations/xiprime-simple-zeros-on-critical-line-quartic-cumulative.md) | 56 | `result-track:d04b4f1c4e5a122e51c792714c1fa6b8308cde316523beeba936119c72f7d319` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

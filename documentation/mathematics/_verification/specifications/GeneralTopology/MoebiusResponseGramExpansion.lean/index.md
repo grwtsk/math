@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MoebiusResponseGramExpansion.lean/index.md) · [Full source](../../../../GeneralTopology/MoebiusResponseGramExpansion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MoebiusResponseGramExpansion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MoebiusResponseGramExpansion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.LogarithmicResponse`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LogarithmicResponse.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.LogarithmicResponse`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LogarithmicResponse.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [signed_square_eq_double](../../../../GeneralTopology/MoebiusResponseGramExpansion.lean/declarations/signed-square-eq-double.md) | 13 | `result-track:82b08bc3cbc59e142a9a6b28aa584b15375bc69aa252aa9a47b1bb2a99df6545` |
-| 2 | `theorem` | [correlation_integrable](../../../../GeneralTopology/MoebiusResponseGramExpansion.lean/declarations/correlation-integrable.md) | 25 | `result-track:e7e14c0a137bdb92407cd714d61402cc02a846897cf84d65b58a6143f531f6e5` |
-| 3 | `theorem` | [energy_eq_complete_double](../../../../GeneralTopology/MoebiusResponseGramExpansion.lean/declarations/energy-eq-complete-double.md) | 32 | `result-track:d0dd1db0521162dfa3088517bf79a25a8ba71ee2bbbd48e4c052aa412c41d923` |
-| 4 | `theorem` | [energy_eq_diagonal_add_cross](../../../../GeneralTopology/MoebiusResponseGramExpansion.lean/declarations/energy-eq-diagonal-add-cross.md) | 54 | `result-track:de06382aeb255a1d475a7cdd859562b5b10b2e0c956667b4fa30290d812e5505` |
-| 5 | `theorem` | [cross_eq_energy_sub_diagonal](../../../../GeneralTopology/MoebiusResponseGramExpansion.lean/declarations/cross-eq-energy-sub-diagonal.md) | 65 | `result-track:8bb22d138e4a225298b73a91799c82818b6a8dcb2f2a829b792bca38ac659106` |
-| 6 | `theorem` | [energy_polynomial_implies_P04](../../../../GeneralTopology/MoebiusResponseGramExpansion.lean/declarations/energy-polynomial-implies-p04.md) | 69 | `result-track:e91375058145b8e3821b783be9d9bb5ef8d31f09ab728168de9461fc90d1f769` |
+| 1 | `theorem` | [signed_square_eq_double](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MoebiusResponseGramExpansion.lean/declarations/signed-square-eq-double.md) | 13 | `result-track:82b08bc3cbc59e142a9a6b28aa584b15375bc69aa252aa9a47b1bb2a99df6545` |
+| 2 | `theorem` | [correlation_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MoebiusResponseGramExpansion.lean/declarations/correlation-integrable.md) | 25 | `result-track:e7e14c0a137bdb92407cd714d61402cc02a846897cf84d65b58a6143f531f6e5` |
+| 3 | `theorem` | [energy_eq_complete_double](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MoebiusResponseGramExpansion.lean/declarations/energy-eq-complete-double.md) | 32 | `result-track:d0dd1db0521162dfa3088517bf79a25a8ba71ee2bbbd48e4c052aa412c41d923` |
+| 4 | `theorem` | [energy_eq_diagonal_add_cross](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MoebiusResponseGramExpansion.lean/declarations/energy-eq-diagonal-add-cross.md) | 54 | `result-track:de06382aeb255a1d475a7cdd859562b5b10b2e0c956667b4fa30290d812e5505` |
+| 5 | `theorem` | [cross_eq_energy_sub_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MoebiusResponseGramExpansion.lean/declarations/cross-eq-energy-sub-diagonal.md) | 65 | `result-track:8bb22d138e4a225298b73a91799c82818b6a8dcb2f2a829b792bca38ac659106` |
+| 6 | `theorem` | [energy_polynomial_implies_P04](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MoebiusResponseGramExpansion.lean/declarations/energy-polynomial-implies-p04.md) | 69 | `result-track:e91375058145b8e3821b783be9d9bb5ef8d31f09ab728168de9461fc90d1f769` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

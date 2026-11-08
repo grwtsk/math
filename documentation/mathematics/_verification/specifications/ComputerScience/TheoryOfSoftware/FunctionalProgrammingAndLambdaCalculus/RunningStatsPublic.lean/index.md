@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RunningStatsPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RunningStatsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RunningStatsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RunningStatsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RunningStats](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RunningStatsPublic.lean/declarations/runningstats.md) | 39 | `declaration-track:d9bb3017a380d5133a6170ef69a7dc0aa9c2a372ffdd46a5e5cbb4d143127ff3` |
-| 2 | `def` | [push](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RunningStatsPublic.lean/declarations/push.md) | 53 | `declaration-track:65a6bb80e7c08069b9e2f88a8f43fb07091a5677c5a7519343b11541d0bb8f93` |
-| 3 | `def` | [variance](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RunningStatsPublic.lean/declarations/variance.md) | 61 | `declaration-track:d6b7fe9827b17cd47a02200b05dd54be23b0048b3f584e6f2db97e67d1948039` |
-| 4 | `def` | [sampleVariance](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RunningStatsPublic.lean/declarations/samplevariance.md) | 66 | `declaration-track:c3cae902114eef59bd011786cdc7f162545b6705a53cb8f1cede8441f22210bb` |
-| 5 | `def` | [standardDeviation](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RunningStatsPublic.lean/declarations/standarddeviation.md) | 71 | `declaration-track:09a6d855ab546bba8f2c51a2e3fd7f61fc2dc304ee83fede6d20adba94a8ae68` |
-| 6 | `def` | [sampleStandardDeviation](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RunningStatsPublic.lean/declarations/samplestandarddeviation.md) | 76 | `declaration-track:46ef3f87e3334075182d7e31f1e64fd17aa96d1a597c615efc027f0d0fcb0ab0` |
+| 1 | `structure` | [RunningStats](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RunningStatsPublic.lean/declarations/runningstats.md) | 39 | `declaration-track:d9bb3017a380d5133a6170ef69a7dc0aa9c2a372ffdd46a5e5cbb4d143127ff3` |
+| 2 | `def` | [push](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RunningStatsPublic.lean/declarations/push.md) | 53 | `declaration-track:65a6bb80e7c08069b9e2f88a8f43fb07091a5677c5a7519343b11541d0bb8f93` |
+| 3 | `def` | [variance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RunningStatsPublic.lean/declarations/variance.md) | 61 | `declaration-track:d6b7fe9827b17cd47a02200b05dd54be23b0048b3f584e6f2db97e67d1948039` |
+| 4 | `def` | [sampleVariance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RunningStatsPublic.lean/declarations/samplevariance.md) | 66 | `declaration-track:c3cae902114eef59bd011786cdc7f162545b6705a53cb8f1cede8441f22210bb` |
+| 5 | `def` | [standardDeviation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RunningStatsPublic.lean/declarations/standarddeviation.md) | 71 | `declaration-track:09a6d855ab546bba8f2c51a2e3fd7f61fc2dc304ee83fede6d20adba94a8ae68` |
+| 6 | `def` | [sampleStandardDeviation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RunningStatsPublic.lean/declarations/samplestandarddeviation.md) | 76 | `declaration-track:46ef3f87e3334075182d7e31f1e64fd17aa96d1a597c615efc027f0d0fcb0ab0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

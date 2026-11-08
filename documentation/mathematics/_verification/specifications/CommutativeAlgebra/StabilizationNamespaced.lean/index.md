@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/StabilizationNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/StabilizationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StabilizationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StabilizationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LocalityCertificate](../../../../CommutativeAlgebra/StabilizationNamespaced.lean/declarations/localitycertificate.md) | 23 | `declaration-track:152ba34c79f236b226f83a6cbf93922b49e4c55f2973caf44b5a56c6e28a505c` |
-| 2 | `structure` | [PersistentTerminalProfile](../../../../CommutativeAlgebra/StabilizationNamespaced.lean/declarations/persistentterminalprofile.md) | 35 | `declaration-track:c08bfd6b65e5855608003a0a886d955e01eb76ec31b077ee5bd7635aaf5d6f83` |
-| 3 | `def` | [terminalStratum](../../../../CommutativeAlgebra/StabilizationNamespaced.lean/declarations/terminalstratum.md) | 50 | `declaration-track:4962cb730a4c1ec764506eaf741ce60d43e5bf23e68f979fd793684cd99ebe64` |
-| 4 | `theorem` | [mem_terminalStratum_iff](../../../../CommutativeAlgebra/StabilizationNamespaced.lean/declarations/mem-terminalstratum-iff.md) | 58 | `result-track:0138902e198911e5c7a180bb1896cb0456df02ec1bfae9a731fb3e8a9b372fad` |
-| 5 | `theorem` | [terminalStrata_partition](../../../../CommutativeAlgebra/StabilizationNamespaced.lean/declarations/terminalstrata-partition.md) | 68 | `result-track:c9c14e2f8e8cffbfa88dbad17d8fe3999f99951174063672af509c622044d6af` |
-| 6 | `theorem` | [active_support_nesting](../../../../CommutativeAlgebra/StabilizationNamespaced.lean/declarations/active-support-nesting.md) | 79 | `result-track:9bba39385ed9322a10fe7c1d45b737285b47e10bb7bfec78e6559a6d5052c5bb` |
+| 1 | `structure` | [LocalityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StabilizationNamespaced.lean/declarations/localitycertificate.md) | 23 | `declaration-track:152ba34c79f236b226f83a6cbf93922b49e4c55f2973caf44b5a56c6e28a505c` |
+| 2 | `structure` | [PersistentTerminalProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StabilizationNamespaced.lean/declarations/persistentterminalprofile.md) | 35 | `declaration-track:c08bfd6b65e5855608003a0a886d955e01eb76ec31b077ee5bd7635aaf5d6f83` |
+| 3 | `def` | [terminalStratum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StabilizationNamespaced.lean/declarations/terminalstratum.md) | 50 | `declaration-track:4962cb730a4c1ec764506eaf741ce60d43e5bf23e68f979fd793684cd99ebe64` |
+| 4 | `theorem` | [mem_terminalStratum_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StabilizationNamespaced.lean/declarations/mem-terminalstratum-iff.md) | 58 | `result-track:0138902e198911e5c7a180bb1896cb0456df02ec1bfae9a731fb3e8a9b372fad` |
+| 5 | `theorem` | [terminalStrata_partition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StabilizationNamespaced.lean/declarations/terminalstrata-partition.md) | 68 | `result-track:c9c14e2f8e8cffbfa88dbad17d8fe3999f99951174063672af509c622044d6af` |
+| 6 | `theorem` | [active_support_nesting](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StabilizationNamespaced.lean/declarations/active-support-nesting.md) | 79 | `result-track:9bba39385ed9322a10fe7c1d45b737285b47e10bb7bfec78e6559a6d5052c5bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

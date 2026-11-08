@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespaced.lean/declarations/instance.md) | 33 | `declaration-track:56a69658bde276c4054f39bdd328d5822a354939fb347aaa35aa3d722cbdd331` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespaced.lean/declarations/instance-source-edition-2.md) | 37 | `declaration-track:5f27266d8d2775f9d96bcbe768679d828b802018f740dbdfbe45d9c020266c0f` |
-| 3 | `lemma` | [coe_indicator](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespaced.lean/declarations/coe-indicator.md) | 41 | `result-track:eb840d79fbff8c23afbd9d08d551dd8b6d75bb7e2f8b706df4ccd91dece9b930` |
-| 4 | `lemma` | [toNNRat_inv](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespaced.lean/declarations/tonnrat-inv.md) | 53 | `result-track:a2306be25007539da4b7068f43054a2e9a47e2b5c2931401026a11000459374b` |
-| 5 | `lemma` | [toNNRat_div](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespaced.lean/declarations/tonnrat-div.md) | 59 | `result-track:980bae3fd59b58f1dd802653a8679ccdbf8ae96d4f99a6ac4365369b3b09d887` |
-| 6 | `lemma` | [toNNRat_div'](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespaced.lean/declarations/tonnrat-div-source-edition-2.md) | 62 | `result-track:e5474ecbbabeb7af99b619ed8eab30362f4bfb02b78fdd81dfb29e81f3e4f74c` |
-| 7 | `def` | [rec](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespaced.lean/declarations/rec.md) | 74 | `declaration-track:735562bb143e94cb3d80ffeda34126864ad4487eb18d84340312b85270f66242` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespaced.lean/declarations/instance.md) | 33 | `declaration-track:56a69658bde276c4054f39bdd328d5822a354939fb347aaa35aa3d722cbdd331` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespaced.lean/declarations/instance-source-edition-2.md) | 37 | `declaration-track:5f27266d8d2775f9d96bcbe768679d828b802018f740dbdfbe45d9c020266c0f` |
+| 3 | `lemma` | [coe_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespaced.lean/declarations/coe-indicator.md) | 41 | `result-track:eb840d79fbff8c23afbd9d08d551dd8b6d75bb7e2f8b706df4ccd91dece9b930` |
+| 4 | `lemma` | [toNNRat_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespaced.lean/declarations/tonnrat-inv.md) | 53 | `result-track:a2306be25007539da4b7068f43054a2e9a47e2b5c2931401026a11000459374b` |
+| 5 | `lemma` | [toNNRat_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespaced.lean/declarations/tonnrat-div.md) | 59 | `result-track:980bae3fd59b58f1dd802653a8679ccdbf8ae96d4f99a6ac4365369b3b09d887` |
+| 6 | `lemma` | [toNNRat_div'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespaced.lean/declarations/tonnrat-div-source-edition-2.md) | 62 | `result-track:e5474ecbbabeb7af99b619ed8eab30362f4bfb02b78fdd81dfb29e81f3e4f74c` |
+| 7 | `def` | [rec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespaced.lean/declarations/rec.md) | 74 | `declaration-track:735562bb143e94cb3d80ffeda34126864ad4487eb18d84340312b85270f66242` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

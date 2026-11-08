@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pointCountModuloFromCurve](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowNamespaced.lean/declarations/pointcountmodulofromcurve.md) | 30 | `declaration-track:96ece70bb0f1ebb7eeddafe55adf1944a323c1e093879a2e32040f63ea389af5` |
-| 2 | `def` | [localFactorFromPointCount](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowNamespaced.lean/declarations/localfactorfrompointcount.md) | 40 | `declaration-track:f6af1037bcda1063a58d6dc0fb0602c76599cc897f45b6098600aba39addd0cd` |
-| 3 | `def` | [eulerProductApproxFromCurve](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowNamespaced.lean/declarations/eulerproductapproxfromcurve.md) | 46 | `declaration-track:3b4d13d24390584144d45173f280d9ce6e4343e70d0614bc4908ef223cccdb0e` |
-| 4 | `def` | [logScalingClaim](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowNamespaced.lean/declarations/logscalingclaim.md) | 53 | `declaration-track:bed864c02799ed07e57bbfc4823be8e6da2a461d1b3cef9f5f84181c037244cc` |
-| 5 | `def` | [analyticRankComparisonNode](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowNamespaced.lean/declarations/analyticrankcomparisonnode.md) | 60 | `declaration-track:61eee05682d0fc4035e28766383fc0b0cf8bc5382ec8dad08166d262e29ee015` |
-| 6 | `def` | [exampleF5PointCountNode](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowNamespaced.lean/declarations/examplef5pointcountnode.md) | 72 | `declaration-track:405a22cec6a0b0f3dcfbb57cf2a2f2dd3cbad1fd26266fac7c0ffc28a701ffd7` |
-| 7 | `theorem` | [exampleF5PointCountNode_uses_checked_count](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowNamespaced.lean/declarations/examplef5pointcountnode-uses-checked-count.md) | 79 | `result-track:097f4d728fdab1844d2154856c4fcd72b4e989e86c1f1726661c11333f032511` |
+| 1 | `def` | [pointCountModuloFromCurve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowNamespaced.lean/declarations/pointcountmodulofromcurve.md) | 30 | `declaration-track:96ece70bb0f1ebb7eeddafe55adf1944a323c1e093879a2e32040f63ea389af5` |
+| 2 | `def` | [localFactorFromPointCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowNamespaced.lean/declarations/localfactorfrompointcount.md) | 40 | `declaration-track:f6af1037bcda1063a58d6dc0fb0602c76599cc897f45b6098600aba39addd0cd` |
+| 3 | `def` | [eulerProductApproxFromCurve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowNamespaced.lean/declarations/eulerproductapproxfromcurve.md) | 46 | `declaration-track:3b4d13d24390584144d45173f280d9ce6e4343e70d0614bc4908ef223cccdb0e` |
+| 4 | `def` | [logScalingClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowNamespaced.lean/declarations/logscalingclaim.md) | 53 | `declaration-track:bed864c02799ed07e57bbfc4823be8e6da2a461d1b3cef9f5f84181c037244cc` |
+| 5 | `def` | [analyticRankComparisonNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowNamespaced.lean/declarations/analyticrankcomparisonnode.md) | 60 | `declaration-track:61eee05682d0fc4035e28766383fc0b0cf8bc5382ec8dad08166d262e29ee015` |
+| 6 | `def` | [exampleF5PointCountNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowNamespaced.lean/declarations/examplef5pointcountnode.md) | 72 | `declaration-track:405a22cec6a0b0f3dcfbb57cf2a2f2dd3cbad1fd26266fac7c0ffc28a701ffd7` |
+| 7 | `theorem` | [exampleF5PointCountNode_uses_checked_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowNamespaced.lean/declarations/examplef5pointcountnode-uses-checked-count.md) | 79 | `result-track:097f4d728fdab1844d2154856c4fcd72b4e989e86c1f1726661c11333f032511` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/SetTheory/NoninterferenceCertifiedStratifiedPresentationChange.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/SetTheory/NoninterferenceCertifiedStratifiedPresentationChange.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/NoninterferenceCertifiedStratifiedPresentationChange.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/NoninterferenceCertifiedStratifiedPresentationChange.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedStratifiedPresentationChange](../../../../../MathematicalLogicAndFoundations/SetTheory/NoninterferenceCertifiedStratifiedPresentationChange.lean/declarations/certifiedstratifiedpresentationchange.md) | 9 | `declaration-track:d45f44d0df3489841842e08143f56285578d376acac0aa467294704335d293a2` |
-| 2 | `theorem` | [presentation_change_does_not_change_ordinal_semantics](../../../../../MathematicalLogicAndFoundations/SetTheory/NoninterferenceCertifiedStratifiedPresentationChange.lean/declarations/presentation-change-does-not-change-ordinal-semantics.md) | 20 | `result-track:6fd030a11b620d4d95ed15e61f9003eda61a70b4786e32be1cb317f5c5d0610c` |
+| 1 | `structure` | [CertifiedStratifiedPresentationChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/NoninterferenceCertifiedStratifiedPresentationChange.lean/declarations/certifiedstratifiedpresentationchange.md) | 9 | `declaration-track:d45f44d0df3489841842e08143f56285578d376acac0aa467294704335d293a2` |
+| 2 | `theorem` | [presentation_change_does_not_change_ordinal_semantics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/NoninterferenceCertifiedStratifiedPresentationChange.lean/declarations/presentation-change-does-not-change-ordinal-semantics.md) | 20 | `result-track:6fd030a11b620d4d95ed15e61f9003eda61a70b4786e32be1cb317f5c5d0610c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

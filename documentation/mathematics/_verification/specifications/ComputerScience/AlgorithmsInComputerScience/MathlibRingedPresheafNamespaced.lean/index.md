@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibRingedPresheafNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibRingedPresheafNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibRingedPresheafNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibRingedPresheafNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrismaticSiteMathlibRingedPresheafAdapter](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibRingedPresheafNamespaced.lean/declarations/prismaticsitemathlibringedpresheafadapter.md) | 33 | `declaration-track:2fc871d4c69919428e7f66d3587ec2f8330c6a35b8c26430bd90c59742087df4` |
-| 2 | `def` | [PrismaticSiteMathlibRingedPresheafAdapter.usableForFinalTheorem](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibRingedPresheafNamespaced.lean/declarations/prismaticsitemathlibringedpresheafadapter-usableforfinaltheorem.md) | 57 | `declaration-track:8f480caafe7eedce76b666bae5e9e2ca4683ac66194bc68ed6dbdef160ddca6b` |
-| 3 | `theorem` | [PrismaticSiteMathlibRingedPresheafAdapter.unavailable_not_usableForFinalTheorem](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibRingedPresheafNamespaced.lean/declarations/prismaticsitemathlibringedpresheafadapter-unavailable-not-usableforfinal.md) | 71 | `result-track:052290f8010f8009670a88e6c9a643d29e62db0f965c7ad53dc86911a5279026` |
+| 1 | `structure` | [PrismaticSiteMathlibRingedPresheafAdapter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibRingedPresheafNamespaced.lean/declarations/prismaticsitemathlibringedpresheafadapter.md) | 33 | `declaration-track:2fc871d4c69919428e7f66d3587ec2f8330c6a35b8c26430bd90c59742087df4` |
+| 2 | `def` | [PrismaticSiteMathlibRingedPresheafAdapter.usableForFinalTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibRingedPresheafNamespaced.lean/declarations/prismaticsitemathlibringedpresheafadapter-usableforfinaltheorem.md) | 57 | `declaration-track:8f480caafe7eedce76b666bae5e9e2ca4683ac66194bc68ed6dbdef160ddca6b` |
+| 3 | `theorem` | [PrismaticSiteMathlibRingedPresheafAdapter.unavailable_not_usableForFinalTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibRingedPresheafNamespaced.lean/declarations/prismaticsitemathlibringedpresheafadapter-unavailable-not-usableforfinal.md) | 71 | `result-track:052290f8010f8009670a88e6c9a643d29e62db0f965c7ad53dc86911a5279026` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

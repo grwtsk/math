@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AnnalsEdition4.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AnnalsEdition4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AnnalsEdition4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AnnalsEdition4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [publicTheoremFacingDeclarations](../../../../../ComputerScience/AlgorithmsInComputerScience/AnnalsEdition4.lean/declarations/publictheoremfacingdeclarations.md) | 47 | `declaration-track:09176d5f41fea3b2fbb2dca4abb7ac71ef7dfd4052c26f3c996c4ffbf30f0337` |
-| 2 | `def` | [certificateOnlyDeclarations](../../../../../ComputerScience/AlgorithmsInComputerScience/AnnalsEdition4.lean/declarations/certificateonlydeclarations.md) | 55 | `declaration-track:44afd0e488859126111ecff92110dc4470c205002eed4c9ae3d87d390eeb4993` |
-| 3 | `def` | [hardInputDeclarations](../../../../../ComputerScience/AlgorithmsInComputerScience/AnnalsEdition4.lean/declarations/hardinputdeclarations.md) | 63 | `declaration-track:adc8fe132ee60ad9f5d2821af9859bf5f26193ee6d61c82f1608a622c3651e54` |
-| 4 | `def` | [forbiddenClaims](../../../../../ComputerScience/AlgorithmsInComputerScience/AnnalsEdition4.lean/declarations/forbiddenclaims.md) | 72 | `declaration-track:971518778199615d1895e177174a39bb04f25677496c6cd500d36146817b3bfd` |
+| 1 | `def` | [publicTheoremFacingDeclarations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AnnalsEdition4.lean/declarations/publictheoremfacingdeclarations.md) | 47 | `declaration-track:09176d5f41fea3b2fbb2dca4abb7ac71ef7dfd4052c26f3c996c4ffbf30f0337` |
+| 2 | `def` | [certificateOnlyDeclarations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AnnalsEdition4.lean/declarations/certificateonlydeclarations.md) | 55 | `declaration-track:44afd0e488859126111ecff92110dc4470c205002eed4c9ae3d87d390eeb4993` |
+| 3 | `def` | [hardInputDeclarations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AnnalsEdition4.lean/declarations/hardinputdeclarations.md) | 63 | `declaration-track:adc8fe132ee60ad9f5d2821af9859bf5f26193ee6d61c82f1608a622c3651e54` |
+| 4 | `def` | [forbiddenClaims](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AnnalsEdition4.lean/declarations/forbiddenclaims.md) | 72 | `declaration-track:971518778199615d1895e177174a39bb04f25677496c6cd500d36146817b3bfd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

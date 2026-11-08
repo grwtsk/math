@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/EtalePiNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/EtalePiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtalePiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtalePiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pi_iff](../../../../CommutativeAlgebra/EtalePiNamespaced.lean/declarations/pi-iff.md) | 36 | `result-track:fe6660dd3dac509f3faf947b211be739105570548790abc3fde38bc8101fc962` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/EtalePiNamespaced.lean/declarations/instance.md) | 41 | `declaration-track:b0ec4e7046283b698458502e3a962fe0e06b017493f7dadbbbfb3fc82853ad6a` |
+| 1 | `theorem` | [pi_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtalePiNamespaced.lean/declarations/pi-iff.md) | 36 | `result-track:fe6660dd3dac509f3faf947b211be739105570548790abc3fde38bc8101fc962` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtalePiNamespaced.lean/declarations/instance.md) | 41 | `declaration-track:b0ec4e7046283b698458502e3a962fe0e06b017493f7dadbbbfb3fc82853ad6a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/FixedWitnessBudget.lean/index.md) · [Full source](../../../../RealFunctions/FixedWitnessBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedWitnessBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedWitnessBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.ErrorBounds.ScrewSpectralReconstruction`](../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScrewSpectralReconstruction.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.ScrewSpectralReconstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScrewSpectralReconstruction.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.Ring` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.NormNum` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [witness_forces_budget](../../../../RealFunctions/FixedWitnessBudget.lean/declarations/witness-forces-budget.md) | 31 | `result-track:93f6e2ec53bed700ed0c8841dc393f21c8bed46ae819c29e66cce2dcffaa8e45` |
-| 2 | `theorem` | [positive_model_error_floor](../../../../RealFunctions/FixedWitnessBudget.lean/declarations/positive-model-error-floor.md) | 40 | `result-track:4072b42750119eceb55ecdc1ce260f79a1d8fb9d852db9d6dbac3851cfca5c91` |
-| 3 | `theorem` | [witness_forces_screw_budget](../../../../RealFunctions/FixedWitnessBudget.lean/declarations/witness-forces-screw-budget.md) | 49 | `result-track:638f19b158401490faf2b76f9044b7e4fd562844d63521af8b58aaa14f95ac16` |
-| 4 | `theorem` | [no_witness_below_budget](../../../../RealFunctions/FixedWitnessBudget.lean/declarations/no-witness-below-budget.md) | 57 | `result-track:51ffaa9cd585f2ed8331f830b3040a139fc8acabe07801b1f9a4db77045d96f5` |
-| 5 | `theorem` | [affine_budget_majorant](../../../../RealFunctions/FixedWitnessBudget.lean/declarations/affine-budget-majorant.md) | 66 | `result-track:6e94bb569cfd156ec6daaab29e5af20458b60f4255c98be215260536d9296e7a` |
-| 6 | `theorem` | [no_witness_at_affine_budget_stage](../../../../RealFunctions/FixedWitnessBudget.lean/declarations/no-witness-at-affine-budget-stage.md) | 84 | `result-track:3c113a95fb60e7ef3b33df2c2334c0bf644c25637bde5343f644688850f6d561` |
-| 7 | `theorem` | [positive_model_without_small_error](../../../../RealFunctions/FixedWitnessBudget.lean/declarations/positive-model-without-small-error.md) | 96 | `result-track:38079bd9f9418477cdcf7b1746e32d27378274e70b48a15411dcb3ed7248d1d7` |
-| 8 | `theorem` | [persistent_forcing_fixture](../../../../RealFunctions/FixedWitnessBudget.lean/declarations/persistent-forcing-fixture.md) | 101 | `result-track:31d177c1e7ed60079f5eeecf434fb210da7292e9d42d2a63609ddb5121b88df4` |
+| 1 | `theorem` | [witness_forces_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedWitnessBudget.lean/declarations/witness-forces-budget.md) | 31 | `result-track:93f6e2ec53bed700ed0c8841dc393f21c8bed46ae819c29e66cce2dcffaa8e45` |
+| 2 | `theorem` | [positive_model_error_floor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedWitnessBudget.lean/declarations/positive-model-error-floor.md) | 40 | `result-track:4072b42750119eceb55ecdc1ce260f79a1d8fb9d852db9d6dbac3851cfca5c91` |
+| 3 | `theorem` | [witness_forces_screw_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedWitnessBudget.lean/declarations/witness-forces-screw-budget.md) | 49 | `result-track:638f19b158401490faf2b76f9044b7e4fd562844d63521af8b58aaa14f95ac16` |
+| 4 | `theorem` | [no_witness_below_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedWitnessBudget.lean/declarations/no-witness-below-budget.md) | 57 | `result-track:51ffaa9cd585f2ed8331f830b3040a139fc8acabe07801b1f9a4db77045d96f5` |
+| 5 | `theorem` | [affine_budget_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedWitnessBudget.lean/declarations/affine-budget-majorant.md) | 66 | `result-track:6e94bb569cfd156ec6daaab29e5af20458b60f4255c98be215260536d9296e7a` |
+| 6 | `theorem` | [no_witness_at_affine_budget_stage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedWitnessBudget.lean/declarations/no-witness-at-affine-budget-stage.md) | 84 | `result-track:3c113a95fb60e7ef3b33df2c2334c0bf644c25637bde5343f644688850f6d561` |
+| 7 | `theorem` | [positive_model_without_small_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedWitnessBudget.lean/declarations/positive-model-without-small-error.md) | 96 | `result-track:38079bd9f9418477cdcf7b1746e32d27378274e70b48a15411dcb3ed7248d1d7` |
+| 8 | `theorem` | [persistent_forcing_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedWitnessBudget.lean/declarations/persistent-forcing-fixture.md) | 101 | `result-track:31d177c1e7ed60079f5eeecf434fb210da7292e9d42d2a63609ddb5121b88df4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/SectionsNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/SectionsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SectionsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SectionsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Sections](../../../../../Combinatorics/EnumerativeCombinatorics/SectionsNamespaced.lean/declarations/sections.md) | 32 | `declaration-track:bc115aa992444c1932f8f121dc663e6670b939237d91dfb179d3dba760f3136b` |
-| 2 | `theorem` | [sections_zero](../../../../../Combinatorics/EnumerativeCombinatorics/SectionsNamespaced.lean/declarations/sections-zero.md) | 37 | `result-track:1fa0589c456ab5b32c531633a149c443d8838d767b94278503a45eff8d71c7ef` |
-| 3 | `theorem` | [sections_cons](../../../../../Combinatorics/EnumerativeCombinatorics/SectionsNamespaced.lean/declarations/sections-cons.md) | 41 | `result-track:42752092efed9205ab8de9d6023faf4ea4c9a5c625bf4073525f5e8d023f3287` |
-| 4 | `theorem` | [coe_sections](../../../../../Combinatorics/EnumerativeCombinatorics/SectionsNamespaced.lean/declarations/coe-sections.md) | 45 | `result-track:c6dbe150435001571f52c4b76bb3b98afcb6cc981e7ae6f323c82e6ce8c2bf8f` |
-| 5 | `theorem` | [sections_add](../../../../../Combinatorics/EnumerativeCombinatorics/SectionsNamespaced.lean/declarations/sections-add.md) | 56 | `result-track:97a7b82ecaf172273599d496a6704275c65ee2f66d15ad279b963a5c75c7b450` |
-| 6 | `theorem` | [mem_sections](../../../../../Combinatorics/EnumerativeCombinatorics/SectionsNamespaced.lean/declarations/mem-sections.md) | 61 | `result-track:20289ae4dd8725d026eeeb172c538312e50806fd76a19a068a610540fb4e9011` |
-| 7 | `theorem` | [card_sections](../../../../../Combinatorics/EnumerativeCombinatorics/SectionsNamespaced.lean/declarations/card-sections.md) | 67 | `result-track:1d00f76e9caaf13540ce4cdd995a00749daa7fad5844680a7e5fec6388a013f0` |
+| 1 | `def` | [Sections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SectionsNamespaced.lean/declarations/sections.md) | 32 | `declaration-track:bc115aa992444c1932f8f121dc663e6670b939237d91dfb179d3dba760f3136b` |
+| 2 | `theorem` | [sections_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SectionsNamespaced.lean/declarations/sections-zero.md) | 37 | `result-track:1fa0589c456ab5b32c531633a149c443d8838d767b94278503a45eff8d71c7ef` |
+| 3 | `theorem` | [sections_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SectionsNamespaced.lean/declarations/sections-cons.md) | 41 | `result-track:42752092efed9205ab8de9d6023faf4ea4c9a5c625bf4073525f5e8d023f3287` |
+| 4 | `theorem` | [coe_sections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SectionsNamespaced.lean/declarations/coe-sections.md) | 45 | `result-track:c6dbe150435001571f52c4b76bb3b98afcb6cc981e7ae6f323c82e6ce8c2bf8f` |
+| 5 | `theorem` | [sections_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SectionsNamespaced.lean/declarations/sections-add.md) | 56 | `result-track:97a7b82ecaf172273599d496a6704275c65ee2f66d15ad279b963a5c75c7b450` |
+| 6 | `theorem` | [mem_sections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SectionsNamespaced.lean/declarations/mem-sections.md) | 61 | `result-track:20289ae4dd8725d026eeeb172c538312e50806fd76a19a068a610540fb4e9011` |
+| 7 | `theorem` | [card_sections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SectionsNamespaced.lean/declarations/card-sections.md) | 67 | `result-track:1d00f76e9caaf13540ce4cdd995a00749daa7fad5844680a7e5fec6388a013f0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

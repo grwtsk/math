@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SmoothApproxPublic.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SmoothApproxPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SmoothApproxPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SmoothApproxPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exist_eLpNorm_sub_le_of_continuous](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SmoothApproxPublic.lean/declarations/exist-elpnorm-sub-le-of-continuous.md) | 39 | `result-track:387085ec8a5b3596367d415f7ff22dd8de55b1c14ccbd400a8d437c8f8d5fd10` |
-| 2 | `theorem` | [exist_eLpNorm_sub_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SmoothApproxPublic.lean/declarations/exist-elpnorm-sub-le.md) | 87 | `result-track:54bc03576235eed796e288d3e534e38d611539e2448c591e37c8c2e3e864a1c5` |
-| 3 | `theorem` | [_root_.MeasureTheory.Lp.dense_hasCompactSupport_contDiff](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SmoothApproxPublic.lean/declarations/root-measuretheory-lp-dense-hascompactsupport-contdiff.md) | 102 | `result-track:5aa5b9173c4448e71a9e9126ed6745795705fc2027ac951e955550ff54b7ca3a` |
+| 1 | `theorem` | [exist_eLpNorm_sub_le_of_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SmoothApproxPublic.lean/declarations/exist-elpnorm-sub-le-of-continuous.md) | 39 | `result-track:387085ec8a5b3596367d415f7ff22dd8de55b1c14ccbd400a8d437c8f8d5fd10` |
+| 2 | `theorem` | [exist_eLpNorm_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SmoothApproxPublic.lean/declarations/exist-elpnorm-sub-le.md) | 87 | `result-track:54bc03576235eed796e288d3e534e38d611539e2448c591e37c8c2e3e864a1c5` |
+| 3 | `theorem` | [_root_.MeasureTheory.Lp.dense_hasCompactSupport_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SmoothApproxPublic.lean/declarations/root-measuretheory-lp-dense-hascompactsupport-contdiff.md) | 102 | `result-track:5aa5b9173c4448e71a9e9126ed6745795705fc2027ac951e955550ff54b7ca3a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

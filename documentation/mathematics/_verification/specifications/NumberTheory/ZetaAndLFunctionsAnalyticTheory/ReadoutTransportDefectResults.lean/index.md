@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReadoutTransportDefectResults.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReadoutTransportDefectResults.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReadoutTransportDefectResults.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReadoutTransportDefectResults.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [readout](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReadoutTransportDefectResults.lean/declarations/readout.md) | 30 | `declaration-track:b9bda4910f33d90f02b0df26f476b6a51c3f5fbb94233a68ed2e6f84be239aa8` |
-| 2 | `theorem` | [state_difference](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReadoutTransportDefectResults.lean/declarations/state-difference.md) | 34 | `result-track:7ab8db0b1cf5c2d125ad0a85b944c5094a6e9af2269cdbd6d7ddf96f0a6c7df6` |
-| 3 | `theorem` | [state_readout_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReadoutTransportDefectResults.lean/declarations/state-readout-bound.md) | 40 | `result-track:d8605c77d9cac18aeeb5354eca4d0cfd3e671b55d4ae64ee2aec9032f7068e94` |
-| 4 | `theorem` | [operator_and_state_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReadoutTransportDefectResults.lean/declarations/operator-and-state-bound.md) | 55 | `result-track:e0fc1f7ecf7268a100ac5be1e7ff773646935f972deaf2da080118a56faae3d2` |
-| 5 | `theorem` | [source_approximation_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReadoutTransportDefectResults.lean/declarations/source-approximation-bound.md) | 68 | `result-track:14d1b55d87f6a0dd2e0f92c6ab6277ed2a63e20f5096bd005990d6c3ce61fd83` |
+| 1 | `def` | [readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReadoutTransportDefectResults.lean/declarations/readout.md) | 30 | `declaration-track:b9bda4910f33d90f02b0df26f476b6a51c3f5fbb94233a68ed2e6f84be239aa8` |
+| 2 | `theorem` | [state_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReadoutTransportDefectResults.lean/declarations/state-difference.md) | 34 | `result-track:7ab8db0b1cf5c2d125ad0a85b944c5094a6e9af2269cdbd6d7ddf96f0a6c7df6` |
+| 3 | `theorem` | [state_readout_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReadoutTransportDefectResults.lean/declarations/state-readout-bound.md) | 40 | `result-track:d8605c77d9cac18aeeb5354eca4d0cfd3e671b55d4ae64ee2aec9032f7068e94` |
+| 4 | `theorem` | [operator_and_state_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReadoutTransportDefectResults.lean/declarations/operator-and-state-bound.md) | 55 | `result-track:e0fc1f7ecf7268a100ac5be1e7ff773646935f972deaf2da080118a56faae3d2` |
+| 5 | `theorem` | [source_approximation_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReadoutTransportDefectResults.lean/declarations/source-approximation-bound.md) | 68 | `result-track:14d1b55d87f6a0dd2e0f92c6ab6277ed2a63e20f5096bd005990d6c3ce61fd83` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

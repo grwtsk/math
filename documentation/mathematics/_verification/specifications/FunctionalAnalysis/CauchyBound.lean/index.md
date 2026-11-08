@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/CauchyBound.lean/index.md) · [Full source](../../../../FunctionalAnalysis/CauchyBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cauchyBound](../../../../FunctionalAnalysis/CauchyBound.lean/declarations/cauchybound.md) | 29 | `declaration-track:28f919e04a2b5c77b0e89c3068ed38613acc934d918768b2c150b5d7793cdc45` |
-| 2 | `lemma` | [one_le_cauchyBound](../../../../FunctionalAnalysis/CauchyBound.lean/declarations/one-le-cauchybound.md) | 33 | `result-track:9b67bce2fde5f3641bd86bdd0285f39968cb9a93cf99c3bd89084118d87ad866` |
-| 3 | `lemma` | [cauchyBound_zero](../../../../FunctionalAnalysis/CauchyBound.lean/declarations/cauchybound-zero.md) | 37 | `result-track:ac0cfa2c8f1a9944a4b040cac840a9365b08b80c7ee86dc7178d6c4a64ff51fa` |
-| 4 | `lemma` | [cauchyBound_C](../../../../FunctionalAnalysis/CauchyBound.lean/declarations/cauchybound-c.md) | 41 | `result-track:6df2dbe7fb2080d01f609836f10ae80f6159df27382e21debd2eb39ad601bf00` |
-| 5 | `lemma` | [cauchyBound_one](../../../../FunctionalAnalysis/CauchyBound.lean/declarations/cauchybound-one.md) | 45 | `result-track:fb2b74a444303dbe5035a17ece14fee8b5da2f32e527d1809b87b121ad5901af` |
-| 6 | `lemma` | [cauchyBound_X](../../../../FunctionalAnalysis/CauchyBound.lean/declarations/cauchybound-x.md) | 48 | `result-track:5fa01b3b7619098118013e6a3abd558590d3e5f99e552e8ec80e68f376ae0fdb` |
-| 7 | `lemma` | [cauchyBound_X_add_C](../../../../FunctionalAnalysis/CauchyBound.lean/declarations/cauchybound-x-add-c.md) | 52 | `result-track:c663625e877c7815e1e136d0742b38c28c809f8d95c6351b5c9d8ccebd89d89a` |
-| 8 | `lemma` | [cauchyBound_X_sub_C](../../../../FunctionalAnalysis/CauchyBound.lean/declarations/cauchybound-x-sub-c.md) | 56 | `result-track:14e2774ea17c44b8b7f219256a6eddebf24ed1507968d79fc81c92133fab890b` |
-| 9 | `lemma` | [cauchyBound_smul](../../../../FunctionalAnalysis/CauchyBound.lean/declarations/cauchybound-smul.md) | 60 | `result-track:ee3e77b7ce4fa03a347e49ef9c03d23434389732ea0d66ad2f9a181f22daaaa8` |
-| 10 | `theorem` | [IsRoot.norm_lt_cauchyBound](../../../../FunctionalAnalysis/CauchyBound.lean/declarations/isroot-norm-lt-cauchybound.md) | 70 | `result-track:2d77a0557f97887e7b11f39d48eea18a0ac649e003d41c9ff0408d4ebcb639f5` |
+| 1 | `def` | [cauchyBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBound.lean/declarations/cauchybound.md) | 29 | `declaration-track:28f919e04a2b5c77b0e89c3068ed38613acc934d918768b2c150b5d7793cdc45` |
+| 2 | `lemma` | [one_le_cauchyBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBound.lean/declarations/one-le-cauchybound.md) | 33 | `result-track:9b67bce2fde5f3641bd86bdd0285f39968cb9a93cf99c3bd89084118d87ad866` |
+| 3 | `lemma` | [cauchyBound_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBound.lean/declarations/cauchybound-zero.md) | 37 | `result-track:ac0cfa2c8f1a9944a4b040cac840a9365b08b80c7ee86dc7178d6c4a64ff51fa` |
+| 4 | `lemma` | [cauchyBound_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBound.lean/declarations/cauchybound-c.md) | 41 | `result-track:6df2dbe7fb2080d01f609836f10ae80f6159df27382e21debd2eb39ad601bf00` |
+| 5 | `lemma` | [cauchyBound_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBound.lean/declarations/cauchybound-one.md) | 45 | `result-track:fb2b74a444303dbe5035a17ece14fee8b5da2f32e527d1809b87b121ad5901af` |
+| 6 | `lemma` | [cauchyBound_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBound.lean/declarations/cauchybound-x.md) | 48 | `result-track:5fa01b3b7619098118013e6a3abd558590d3e5f99e552e8ec80e68f376ae0fdb` |
+| 7 | `lemma` | [cauchyBound_X_add_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBound.lean/declarations/cauchybound-x-add-c.md) | 52 | `result-track:c663625e877c7815e1e136d0742b38c28c809f8d95c6351b5c9d8ccebd89d89a` |
+| 8 | `lemma` | [cauchyBound_X_sub_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBound.lean/declarations/cauchybound-x-sub-c.md) | 56 | `result-track:14e2774ea17c44b8b7f219256a6eddebf24ed1507968d79fc81c92133fab890b` |
+| 9 | `lemma` | [cauchyBound_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBound.lean/declarations/cauchybound-smul.md) | 60 | `result-track:ee3e77b7ce4fa03a347e49ef9c03d23434389732ea0d66ad2f9a181f22daaaa8` |
+| 10 | `theorem` | [IsRoot.norm_lt_cauchyBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBound.lean/declarations/isroot-norm-lt-cauchybound.md) | 70 | `result-track:2d77a0557f97887e7b11f39d48eea18a0ac649e003d41c9ff0408d4ebcb639f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

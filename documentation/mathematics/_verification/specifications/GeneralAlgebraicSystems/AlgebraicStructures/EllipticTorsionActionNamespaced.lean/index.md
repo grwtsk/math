@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionActionNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionActionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionActionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionActionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [FiberAut](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionActionNamespaced.lean/declarations/fiberaut.md) | 27 | `declaration-track:38899ea6f521e75a0de7c0258cc0defba9042dc3b8e1af9d9397f94747ee8fa1` |
-| 2 | `structure` | [TorsionAction](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionActionNamespaced.lean/declarations/torsionaction.md) | 29 | `declaration-track:b81bc732f1b4af40762b93f54f9f8fe2ae8b407b9457083c42d2328e006e6588` |
-| 3 | `structure` | [TorsionPoint](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionActionNamespaced.lean/declarations/torsionpoint.md) | 40 | `declaration-track:2ddaf7b4a109ddbaaddef0c63040cea4a4e52ff596db641926c6224467d9c339` |
-| 4 | `def` | [TorsionAction.actTorsion](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionActionNamespaced.lean/declarations/torsionaction-acttorsion.md) | 47 | `declaration-track:81d34c44fc9b5cd4ff9bcc9923c968b8ff76bfa2b39b0c29a55f6419d310c426` |
-| 5 | `theorem` | [torsion_action_roundtrip](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionActionNamespaced.lean/declarations/torsion-action-roundtrip.md) | 57 | `result-track:c14f7249278d82fdde7399eaf68dbec66ef9148c1d1f1e809e09b3e55232dc16` |
+| 1 | `abbrev` | [FiberAut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionActionNamespaced.lean/declarations/fiberaut.md) | 27 | `declaration-track:38899ea6f521e75a0de7c0258cc0defba9042dc3b8e1af9d9397f94747ee8fa1` |
+| 2 | `structure` | [TorsionAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionActionNamespaced.lean/declarations/torsionaction.md) | 29 | `declaration-track:b81bc732f1b4af40762b93f54f9f8fe2ae8b407b9457083c42d2328e006e6588` |
+| 3 | `structure` | [TorsionPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionActionNamespaced.lean/declarations/torsionpoint.md) | 40 | `declaration-track:2ddaf7b4a109ddbaaddef0c63040cea4a4e52ff596db641926c6224467d9c339` |
+| 4 | `def` | [TorsionAction.actTorsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionActionNamespaced.lean/declarations/torsionaction-acttorsion.md) | 47 | `declaration-track:81d34c44fc9b5cd4ff9bcc9923c968b8ff76bfa2b39b0c29a55f6419d310c426` |
+| 5 | `theorem` | [torsion_action_roundtrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionActionNamespaced.lean/declarations/torsion-action-roundtrip.md) | 57 | `result-track:c14f7249278d82fdde7399eaf68dbec66ef9148c1d1f1e809e09b3e55232dc16` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

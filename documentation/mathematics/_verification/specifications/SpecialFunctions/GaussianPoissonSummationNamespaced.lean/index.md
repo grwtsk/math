@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/GaussianPoissonSummationNamespaced.lean/index.md) · [Full source](../../../../SpecialFunctions/GaussianPoissonSummationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [rexp_neg_quadratic_isLittleO_rpow_atTop](../../../../SpecialFunctions/GaussianPoissonSummationNamespaced.lean/declarations/rexp-neg-quadratic-islittleo-rpow-attop.md) | 42 | `result-track:e5a719a34a1703c3e601863729b542ca6a35758bd18235a991a0dc9a51e16e1e` |
-| 2 | `lemma` | [cexp_neg_quadratic_isLittleO_rpow_atTop](../../../../SpecialFunctions/GaussianPoissonSummationNamespaced.lean/declarations/cexp-neg-quadratic-islittleo-rpow-attop.md) | 54 | `result-track:b911f33bc6e2fddd1ea1933c4bf4d2d287362146a10fae6b9279123b6d626512` |
-| 3 | `lemma` | [cexp_neg_quadratic_isLittleO_abs_rpow_cocompact](../../../../SpecialFunctions/GaussianPoissonSummationNamespaced.lean/declarations/cexp-neg-quadratic-islittleo-abs-rpow-cocompact.md) | 61 | `result-track:ad2c4763dd745d0fe4ea2cd18658b254eae968952188ea9f185dbc1e954958a0` |
-| 4 | `theorem` | [tendsto_rpow_abs_mul_exp_neg_mul_sq_cocompact](../../../../SpecialFunctions/GaussianPoissonSummationNamespaced.lean/declarations/tendsto-rpow-abs-mul-exp-neg-mul-sq-cocompact.md) | 74 | `result-track:b48a145a4707333a3f20406ac1ff5db243c38cd6b8f80aa2cf4129a6397d2a13` |
-| 5 | `theorem` | [isLittleO_exp_neg_mul_sq_cocompact](../../../../SpecialFunctions/GaussianPoissonSummationNamespaced.lean/declarations/islittleo-exp-neg-mul-sq-cocompact.md) | 84 | `result-track:ad05739f7a88c1407012f829421cbe49dd9151c40b9698174dbf66d1c4b3bc5e` |
-| 6 | `theorem` | [Complex.tsum_exp_neg_quadratic](../../../../SpecialFunctions/GaussianPoissonSummationNamespaced.lean/declarations/complex-tsum-exp-neg-quadratic.md) | 92 | `result-track:37ed4aed9350fcfa04a5297358220646b349ee90e308ce913239e91a0b0be9a6` |
-| 7 | `theorem` | [Complex.tsum_exp_neg_mul_int_sq](../../../../SpecialFunctions/GaussianPoissonSummationNamespaced.lean/declarations/complex-tsum-exp-neg-mul-int-sq.md) | 128 | `result-track:bed0df8d3ebcdc129a4db053f1ecccbd38017d209194f46c66fba7d03b7d1ba2` |
-| 8 | `theorem` | [Real.tsum_exp_neg_mul_int_sq](../../../../SpecialFunctions/GaussianPoissonSummationNamespaced.lean/declarations/real-tsum-exp-neg-mul-int-sq.md) | 133 | `result-track:a4a58768b5da8da854d7e86966748eb181ac85f4ef17e2254eeab271b2bc0282` |
+| 1 | `lemma` | [rexp_neg_quadratic_isLittleO_rpow_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationNamespaced.lean/declarations/rexp-neg-quadratic-islittleo-rpow-attop.md) | 42 | `result-track:e5a719a34a1703c3e601863729b542ca6a35758bd18235a991a0dc9a51e16e1e` |
+| 2 | `lemma` | [cexp_neg_quadratic_isLittleO_rpow_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationNamespaced.lean/declarations/cexp-neg-quadratic-islittleo-rpow-attop.md) | 54 | `result-track:b911f33bc6e2fddd1ea1933c4bf4d2d287362146a10fae6b9279123b6d626512` |
+| 3 | `lemma` | [cexp_neg_quadratic_isLittleO_abs_rpow_cocompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationNamespaced.lean/declarations/cexp-neg-quadratic-islittleo-abs-rpow-cocompact.md) | 61 | `result-track:ad2c4763dd745d0fe4ea2cd18658b254eae968952188ea9f185dbc1e954958a0` |
+| 4 | `theorem` | [tendsto_rpow_abs_mul_exp_neg_mul_sq_cocompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationNamespaced.lean/declarations/tendsto-rpow-abs-mul-exp-neg-mul-sq-cocompact.md) | 74 | `result-track:b48a145a4707333a3f20406ac1ff5db243c38cd6b8f80aa2cf4129a6397d2a13` |
+| 5 | `theorem` | [isLittleO_exp_neg_mul_sq_cocompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationNamespaced.lean/declarations/islittleo-exp-neg-mul-sq-cocompact.md) | 84 | `result-track:ad05739f7a88c1407012f829421cbe49dd9151c40b9698174dbf66d1c4b3bc5e` |
+| 6 | `theorem` | [Complex.tsum_exp_neg_quadratic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationNamespaced.lean/declarations/complex-tsum-exp-neg-quadratic.md) | 92 | `result-track:37ed4aed9350fcfa04a5297358220646b349ee90e308ce913239e91a0b0be9a6` |
+| 7 | `theorem` | [Complex.tsum_exp_neg_mul_int_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationNamespaced.lean/declarations/complex-tsum-exp-neg-mul-int-sq.md) | 128 | `result-track:bed0df8d3ebcdc129a4db053f1ecccbd38017d209194f46c66fba7d03b7d1ba2` |
+| 8 | `theorem` | [Real.tsum_exp_neg_mul_int_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationNamespaced.lean/declarations/real-tsum-exp-neg-mul-int-sq.md) | 133 | `result-track:a4a58768b5da8da854d7e86966748eb181ac85f4ef17e2254eeab271b2bc0282` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

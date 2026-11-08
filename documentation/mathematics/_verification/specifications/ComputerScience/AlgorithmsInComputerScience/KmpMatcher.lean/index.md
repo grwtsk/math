@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/KmpMatcher.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/KmpMatcher.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KmpMatcher.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KmpMatcher.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [m](../../../../../ComputerScience/AlgorithmsInComputerScience/KmpMatcher.lean/declarations/m.md) | 7 | `declaration-track:df92352e4385f2d78984a0f48648b54fd8dad8a30da2010acd0b9b76d1661de5` |
+| 1 | `def` | [m](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KmpMatcher.lean/declarations/m.md) | 7 | `declaration-track:df92352e4385f2d78984a0f48648b54fd8dad8a30da2010acd0b9b76d1661de5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

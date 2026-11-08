@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ProductFiberSigns.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ProductFiberSigns.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ProductFiberSigns.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ProductFiberSigns.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [moebius_product_sign](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ProductFiberSigns.lean/declarations/moebius-product-sign.md) | 12 | `result-track:b7df495f14d545f385338c519c48b41187067d397e15ba2f2b3c2395700ab269` |
-| 2 | `theorem` | [fixed_product_fiber_sign](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ProductFiberSigns.lean/declarations/fixed-product-fiber-sign.md) | 33 | `result-track:f5a58272b96b243d5dc91fb54426a2557bb489652a802af5b1707844c298ba20` |
-| 3 | `theorem` | [fixed_product_fiber_sign_nonneg](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ProductFiberSigns.lean/declarations/fixed-product-fiber-sign-nonneg.md) | 50 | `result-track:edf36c87a18dd68552555c32c4b960ae7474e947dcede283c693ee70d5daf462` |
+| 1 | `theorem` | [moebius_product_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ProductFiberSigns.lean/declarations/moebius-product-sign.md) | 12 | `result-track:b7df495f14d545f385338c519c48b41187067d397e15ba2f2b3c2395700ab269` |
+| 2 | `theorem` | [fixed_product_fiber_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ProductFiberSigns.lean/declarations/fixed-product-fiber-sign.md) | 33 | `result-track:f5a58272b96b243d5dc91fb54426a2557bb489652a802af5b1707844c298ba20` |
+| 3 | `theorem` | [fixed_product_fiber_sign_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ProductFiberSigns.lean/declarations/fixed-product-fiber-sign-nonneg.md) | 50 | `result-track:edf36c87a18dd68552555c32c4b960ae7474e947dcede283c693ee70d5daf462` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/AlexDisc.lean/index.md) · [Full source](../../../../GeneralTopology/AlexDisc.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexDisc.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexDisc.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AlexDisc](../../../../GeneralTopology/AlexDisc.lean/declarations/alexdisc.md) | 18 | `declaration-track:9d6685fd1876d847ecd6411a7b9d40a9183e6b7689d9d28258420dce152d3b3e` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/AlexDisc.lean/declarations/instance.md) | 25 | `declaration-track:c8c41191d93a79ba5cfa1cee58c684197c0c5ab82b757a8f883b823a51152fc9` |
-| 3 | `instance` | [category](../../../../GeneralTopology/AlexDisc.lean/declarations/category.md) | 28 | `declaration-track:0f36f36fe3c3246f784e9ba961f418ba64079ba048c930af2852c00e0a6004c3` |
-| 4 | `instance` | [concreteCategory](../../../../GeneralTopology/AlexDisc.lean/declarations/concretecategory.md) | 31 | `declaration-track:c8196d12b74942ec86460a7a6ca26cfa37afd0adce9b44492c54661124b7d403` |
-| 5 | `instance` | [instHasForgetToTop](../../../../GeneralTopology/AlexDisc.lean/declarations/insthasforgettotop.md) | 34 | `declaration-track:f0504c574e0efb983516ed81c628a872383906dab384e3710503246db7770bd8` |
-| 6 | `instance` | [forgetToTop_full](../../../../GeneralTopology/AlexDisc.lean/declarations/forgettotop-full.md) | 37 | `declaration-track:a99369ed3f9537e21e7a6fb707205834427bd5a54f658babd69d7d80ed573ed2` |
-| 7 | `instance` | [forgetToTop_faithful](../../../../GeneralTopology/AlexDisc.lean/declarations/forgettotop-faithful.md) | 40 | `declaration-track:020c0ca11cb88efe7a1dacf0c7625f831bff0a05801c3e905a9432623f0ddf8c` |
-| 8 | `abbrev` | [of](../../../../GeneralTopology/AlexDisc.lean/declarations/of.md) | 43 | `declaration-track:1cd1787f4ae7423937caf37dd0255f554b7788485190793194cd22baaaa15896` |
-| 9 | `lemma` | [coe_of](../../../../GeneralTopology/AlexDisc.lean/declarations/coe-of.md) | 46 | `result-track:2b9abf2c7c3e6bde19b737b496fdc7a3bf9f52e69d61d0f415b3aa5c4ad75973` |
-| 10 | `lemma` | [forgetToTop_of](../../../../GeneralTopology/AlexDisc.lean/declarations/forgettotop-of.md) | 48 | `result-track:7cadb41e0cf5abc1b02e88f09928fd31d8d145bb8011f23d37ec61555ed022e2` |
-| 11 | `lemma` | [coe_forgetToTop](../../../../GeneralTopology/AlexDisc.lean/declarations/coe-forgettotop.md) | 51 | `result-track:aae72096bb30233230c972305cbf4c38041b184a895818d8c2c23daffb9194d9` |
-| 12 | `def` | [Iso.mk](../../../../GeneralTopology/AlexDisc.lean/declarations/iso-mk.md) | 55 | `declaration-track:3a1e726a44d65446f9d873b5f8fc6b8fbc0e5034f6521d7fdcc592d150357f70` |
-| 13 | `def` | [alexDiscEquivPreord](../../../../GeneralTopology/AlexDisc.lean/declarations/alexdiscequivpreord.md) | 65 | `declaration-track:65d56d7786c1aa3c49926eed06fa27a9ec65698385a540d1daeda25b8170906c` |
+| 1 | `structure` | [AlexDisc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexDisc.lean/declarations/alexdisc.md) | 18 | `declaration-track:9d6685fd1876d847ecd6411a7b9d40a9183e6b7689d9d28258420dce152d3b3e` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexDisc.lean/declarations/instance.md) | 25 | `declaration-track:c8c41191d93a79ba5cfa1cee58c684197c0c5ab82b757a8f883b823a51152fc9` |
+| 3 | `instance` | [category](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexDisc.lean/declarations/category.md) | 28 | `declaration-track:0f36f36fe3c3246f784e9ba961f418ba64079ba048c930af2852c00e0a6004c3` |
+| 4 | `instance` | [concreteCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexDisc.lean/declarations/concretecategory.md) | 31 | `declaration-track:c8196d12b74942ec86460a7a6ca26cfa37afd0adce9b44492c54661124b7d403` |
+| 5 | `instance` | [instHasForgetToTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexDisc.lean/declarations/insthasforgettotop.md) | 34 | `declaration-track:f0504c574e0efb983516ed81c628a872383906dab384e3710503246db7770bd8` |
+| 6 | `instance` | [forgetToTop_full](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexDisc.lean/declarations/forgettotop-full.md) | 37 | `declaration-track:a99369ed3f9537e21e7a6fb707205834427bd5a54f658babd69d7d80ed573ed2` |
+| 7 | `instance` | [forgetToTop_faithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexDisc.lean/declarations/forgettotop-faithful.md) | 40 | `declaration-track:020c0ca11cb88efe7a1dacf0c7625f831bff0a05801c3e905a9432623f0ddf8c` |
+| 8 | `abbrev` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexDisc.lean/declarations/of.md) | 43 | `declaration-track:1cd1787f4ae7423937caf37dd0255f554b7788485190793194cd22baaaa15896` |
+| 9 | `lemma` | [coe_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexDisc.lean/declarations/coe-of.md) | 46 | `result-track:2b9abf2c7c3e6bde19b737b496fdc7a3bf9f52e69d61d0f415b3aa5c4ad75973` |
+| 10 | `lemma` | [forgetToTop_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexDisc.lean/declarations/forgettotop-of.md) | 48 | `result-track:7cadb41e0cf5abc1b02e88f09928fd31d8d145bb8011f23d37ec61555ed022e2` |
+| 11 | `lemma` | [coe_forgetToTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexDisc.lean/declarations/coe-forgettotop.md) | 51 | `result-track:aae72096bb30233230c972305cbf4c38041b184a895818d8c2c23daffb9194d9` |
+| 12 | `def` | [Iso.mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexDisc.lean/declarations/iso-mk.md) | 55 | `declaration-track:3a1e726a44d65446f9d873b5f8fc6b8fbc0e5034f6521d7fdcc592d150357f70` |
+| 13 | `def` | [alexDiscEquivPreord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AlexDisc.lean/declarations/alexdiscequivpreord.md) | 65 | `declaration-track:65d56d7786c1aa3c49926eed06fa27a9ec65698385a540d1daeda25b8170906c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

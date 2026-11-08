@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/SetTheory/LimitNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/SetTheory/LimitNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/LimitNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/LimitNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LimitIndexCertificate](../../../../../MathematicalLogicAndFoundations/SetTheory/LimitNamespaced.lean/declarations/limitindexcertificate.md) | 21 | `declaration-track:e3e623e01a783e3544a871756c83ac23004f81604729cda7cc7f0dfa01c6f6a1` |
-| 2 | `theorem` | [limitIndex_has_declared_boundary](../../../../../MathematicalLogicAndFoundations/SetTheory/LimitNamespaced.lean/declarations/limitindex-has-declared-boundary.md) | 38 | `result-track:48ae4fa15218b9cfa78365cbd7774ed94815d4f5e3f8065c134d3ce73c5b6bb5` |
+| 1 | `structure` | [LimitIndexCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/LimitNamespaced.lean/declarations/limitindexcertificate.md) | 21 | `declaration-track:e3e623e01a783e3544a871756c83ac23004f81604729cda7cc7f0dfa01c6f6a1` |
+| 2 | `theorem` | [limitIndex_has_declared_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/LimitNamespaced.lean/declarations/limitindex-has-declared-boundary.md) | 38 | `result-track:48ae4fa15218b9cfa78365cbd7774ed94815d4f5e3f8065c134d3ce73c5b6bb5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

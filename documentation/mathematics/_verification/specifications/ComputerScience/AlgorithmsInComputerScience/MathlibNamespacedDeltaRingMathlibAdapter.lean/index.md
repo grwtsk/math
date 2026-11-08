@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibNamespacedDeltaRingMathlibAdapter.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibNamespacedDeltaRingMathlibAdapter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibNamespacedDeltaRingMathlibAdapter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibNamespacedDeltaRingMathlibAdapter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DeltaRingMathlibAdapter](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibNamespacedDeltaRingMathlibAdapter.lean/declarations/deltaringmathlibadapter.md) | 32 | `declaration-track:d162d4cd4678e701fad9a6750dce9c73f7ebbf20c23577f0b5a054bfb20b9241` |
-| 2 | `def` | [DeltaRingMathlibAdapter.usableForFinalTheorem](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibNamespacedDeltaRingMathlibAdapter.lean/declarations/deltaringmathlibadapter-usableforfinaltheorem.md) | 56 | `declaration-track:0aa0b7502871eb777e4e9b2d30c44ee39c571ffb44ba3d8039e93cd558bead9c` |
-| 3 | `theorem` | [DeltaRingMathlibAdapter.unavailable_not_usableForFinalTheorem](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibNamespacedDeltaRingMathlibAdapter.lean/declarations/deltaringmathlibadapter-unavailable-not-usableforfinaltheorem.md) | 63 | `result-track:dfc6c1881906c306ca3af7d542a4e56244594d900c022f46fe383a1f4e251c93` |
-| 4 | `theorem` | [DeltaRingMathlibAdapter.finalTheorem_requires_importedMathlib](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibNamespacedDeltaRingMathlibAdapter.lean/declarations/deltaringmathlibadapter-finaltheorem-requires-importedmathlib.md) | 73 | `result-track:55b7ba9fa5b3ebfed91d22e4ea74b274947559d1f369cf2335c3298f82fe77d1` |
+| 1 | `structure` | [DeltaRingMathlibAdapter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibNamespacedDeltaRingMathlibAdapter.lean/declarations/deltaringmathlibadapter.md) | 32 | `declaration-track:d162d4cd4678e701fad9a6750dce9c73f7ebbf20c23577f0b5a054bfb20b9241` |
+| 2 | `def` | [DeltaRingMathlibAdapter.usableForFinalTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibNamespacedDeltaRingMathlibAdapter.lean/declarations/deltaringmathlibadapter-usableforfinaltheorem.md) | 56 | `declaration-track:0aa0b7502871eb777e4e9b2d30c44ee39c571ffb44ba3d8039e93cd558bead9c` |
+| 3 | `theorem` | [DeltaRingMathlibAdapter.unavailable_not_usableForFinalTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibNamespacedDeltaRingMathlibAdapter.lean/declarations/deltaringmathlibadapter-unavailable-not-usableforfinaltheorem.md) | 63 | `result-track:dfc6c1881906c306ca3af7d542a4e56244594d900c022f46fe383a1f4e251c93` |
+| 4 | `theorem` | [DeltaRingMathlibAdapter.finalTheorem_requires_importedMathlib](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibNamespacedDeltaRingMathlibAdapter.lean/declarations/deltaringmathlibadapter-finaltheorem-requires-importedmathlib.md) | 73 | `result-track:55b7ba9fa5b3ebfed91d22e4ea74b274947559d1f369cf2335c3298f82fe77d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

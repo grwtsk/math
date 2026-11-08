@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/AlgebraicClosure.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/AlgebraicClosure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraicClosure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraicClosure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/AlgebraicClosure.lean/declarations/example-source-edition-2.md) | 6 | `declaration-track:77f458e216476ed568686d873647a434e1c7e471f09bb36d526e0aa2309aca89` |
-| 2 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/AlgebraicClosure.lean/declarations/example.md) | 10 | `declaration-track:3900d27be78cda7a8f561ab1e49104d835d7791768cef367cfc4794d711f2be5` |
-| 3 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/AlgebraicClosure.lean/declarations/example-source-edition-4.md) | 14 | `declaration-track:c318d7c5fcb9d074dfd4ac4099597d5709c397bfa4342810f252934edae463bf` |
-| 4 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/AlgebraicClosure.lean/declarations/example-source-edition-3.md) | 18 | `declaration-track:aa2afa69b562e79d5830d1eaedaa57dcf58cd4669c2b6825cad6924a9dc5d1bb` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraicClosure.lean/declarations/example-source-edition-2.md) | 6 | `declaration-track:77f458e216476ed568686d873647a434e1c7e471f09bb36d526e0aa2309aca89` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraicClosure.lean/declarations/example.md) | 10 | `declaration-track:3900d27be78cda7a8f561ab1e49104d835d7791768cef367cfc4794d711f2be5` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraicClosure.lean/declarations/example-source-edition-4.md) | 14 | `declaration-track:c318d7c5fcb9d074dfd4ac4099597d5709c397bfa4342810f252934edae463bf` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraicClosure.lean/declarations/example-source-edition-3.md) | 18 | `declaration-track:aa2afa69b562e79d5830d1eaedaa57dcf58cd4669c2b6825cad6924a9dc5d1bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

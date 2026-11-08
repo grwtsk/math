@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/LpSpaceNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/LpSpaceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LpSpaceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LpSpaceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/LpSpaceNamespaced.lean/declarations/instance-source-edition-3.md) | 29 | `declaration-track:4027500bb46c8a5fe11f6e49f6406e47b44f9acc08639560c78b2740bc93aef9` |
-| 2 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/LpSpaceNamespaced.lean/declarations/instance-source-edition-4.md) | 32 | `declaration-track:813fb25f81fe99d8326b8dda1756b1c7ca9cd3dc4b555f89f6b22848631be280` |
-| 3 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/LpSpaceNamespaced.lean/declarations/instance.md) | 38 | `declaration-track:136751f3347344c2251f5abe711063fb74872ea3575d745a1c85e2ed518ff563` |
-| 4 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/LpSpaceNamespaced.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:31633df8d76b7c6e10a902da93db026ae0907d1797d3b2ed09f7a8d065388980` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LpSpaceNamespaced.lean/declarations/instance-source-edition-3.md) | 29 | `declaration-track:4027500bb46c8a5fe11f6e49f6406e47b44f9acc08639560c78b2740bc93aef9` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LpSpaceNamespaced.lean/declarations/instance-source-edition-4.md) | 32 | `declaration-track:813fb25f81fe99d8326b8dda1756b1c7ca9cd3dc4b555f89f6b22848631be280` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LpSpaceNamespaced.lean/declarations/instance.md) | 38 | `declaration-track:136751f3347344c2251f5abe711063fb74872ea3575d745a1c85e2ed518ff563` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LpSpaceNamespaced.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:31633df8d76b7c6e10a902da93db026ae0907d1797d3b2ed09f7a8d065388980` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

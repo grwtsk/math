@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/TerminalEndpointControls.lean/index.md) · [Full source](../../../../NumberTheory/TerminalEndpointControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TerminalEndpointControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TerminalEndpointControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonTerminalEndpoint`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalEndpoint.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonTerminalEndpoint`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTerminalEndpoint.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.Omega` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [terminal_base](../../../../NumberTheory/TerminalEndpointControls.lean/declarations/terminal-base.md) | 19 | `result-track:6b8e528ecbe79e38ff6809e4bffe37c55107a82456cc6e3be3d9af240677039f` |
-| 2 | `theorem` | [terminal_not_a_prefix_base](../../../../NumberTheory/TerminalEndpointControls.lean/declarations/terminal-not-a-prefix-base.md) | 21 | `result-track:6de4cd325841533ca77f080b3ce36038a978774f1ad63578556d6f14306a1196` |
-| 3 | `theorem` | [reduction_not_mantissa_one](../../../../NumberTheory/TerminalEndpointControls.lean/declarations/reduction-not-mantissa-one.md) | 25 | `result-track:8ae06f7bc5d25e986a5913700b593702f0c87c3026c7b5ca3bec6df7a7473571` |
-| 4 | `theorem` | [log_exponent_is_twelve](../../../../NumberTheory/TerminalEndpointControls.lean/declarations/log-exponent-is-twelve.md) | 30 | `result-track:6ece182d029bd04792609b20c991b2fd5626b9abb9e5ab4994210f91f7ef4431` |
-| 5 | `theorem` | [wrong_term_count_rejected](../../../../NumberTheory/TerminalEndpointControls.lean/declarations/wrong-term-count-rejected.md) | 33 | `result-track:9e47d34c0119b95eb67f11ee56bad6642cf1730e504ad9f46dd17ec9741ea5da` |
-| 6 | `theorem` | [zero_denominator_rejected](../../../../NumberTheory/TerminalEndpointControls.lean/declarations/zero-denominator-rejected.md) | 40 | `result-track:54f5d8ac1bcc63c184495edd14b39daecdb9ea45149f37fab05e30240539ca37` |
-| 7 | `theorem` | [negative_displacement_rejected](../../../../NumberTheory/TerminalEndpointControls.lean/declarations/negative-displacement-rejected.md) | 45 | `result-track:55b0b9eb686b900afda3c37769dc041e5b32340304f1a7d0e692565c4661e393` |
-| 8 | `theorem` | [initialization_error_retained](../../../../NumberTheory/TerminalEndpointControls.lean/declarations/initialization-error-retained.md) | 50 | `result-track:576083602ac09832e3909b43da9eea5ecd5910da836d9daf055bab61463fc3a6` |
-| 9 | `theorem` | [full_error_not_zero](../../../../NumberTheory/TerminalEndpointControls.lean/declarations/full-error-not-zero.md) | 52 | `result-track:5efd6faf844dbbba050ce62fbe96717fa6410840b30db6b53ddd7ab6757b5be7` |
-| 10 | `theorem` | [error_can_decrease](../../../../NumberTheory/TerminalEndpointControls.lean/declarations/error-can-decrease.md) | 55 | `result-track:bb4dcabd45c91f328b5287f52a74d1d6f623a8dcaf5e380ca68325ccda0fd1c5` |
-| 11 | `theorem` | [terminal_attachment_preserves_prefix](../../../../NumberTheory/TerminalEndpointControls.lean/declarations/terminal-attachment-preserves-prefix.md) | 59 | `result-track:720ebf44bc53e7c9f4825c4f31e2552057113950a3e2a1b4888b07e6fb04ecb0` |
-| 12 | `theorem` | [terminal_check_independent_of_prefix](../../../../NumberTheory/TerminalEndpointControls.lean/declarations/terminal-check-independent-of-prefix.md) | 63 | `result-track:8a607ceb0db6093c768030d4d6ce840ddc75266bb6833e6642ed9c6a6f402229` |
+| 1 | `theorem` | [terminal_base](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TerminalEndpointControls.lean/declarations/terminal-base.md) | 19 | `result-track:6b8e528ecbe79e38ff6809e4bffe37c55107a82456cc6e3be3d9af240677039f` |
+| 2 | `theorem` | [terminal_not_a_prefix_base](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TerminalEndpointControls.lean/declarations/terminal-not-a-prefix-base.md) | 21 | `result-track:6de4cd325841533ca77f080b3ce36038a978774f1ad63578556d6f14306a1196` |
+| 3 | `theorem` | [reduction_not_mantissa_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TerminalEndpointControls.lean/declarations/reduction-not-mantissa-one.md) | 25 | `result-track:8ae06f7bc5d25e986a5913700b593702f0c87c3026c7b5ca3bec6df7a7473571` |
+| 4 | `theorem` | [log_exponent_is_twelve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TerminalEndpointControls.lean/declarations/log-exponent-is-twelve.md) | 30 | `result-track:6ece182d029bd04792609b20c991b2fd5626b9abb9e5ab4994210f91f7ef4431` |
+| 5 | `theorem` | [wrong_term_count_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TerminalEndpointControls.lean/declarations/wrong-term-count-rejected.md) | 33 | `result-track:9e47d34c0119b95eb67f11ee56bad6642cf1730e504ad9f46dd17ec9741ea5da` |
+| 6 | `theorem` | [zero_denominator_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TerminalEndpointControls.lean/declarations/zero-denominator-rejected.md) | 40 | `result-track:54f5d8ac1bcc63c184495edd14b39daecdb9ea45149f37fab05e30240539ca37` |
+| 7 | `theorem` | [negative_displacement_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TerminalEndpointControls.lean/declarations/negative-displacement-rejected.md) | 45 | `result-track:55b0b9eb686b900afda3c37769dc041e5b32340304f1a7d0e692565c4661e393` |
+| 8 | `theorem` | [initialization_error_retained](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TerminalEndpointControls.lean/declarations/initialization-error-retained.md) | 50 | `result-track:576083602ac09832e3909b43da9eea5ecd5910da836d9daf055bab61463fc3a6` |
+| 9 | `theorem` | [full_error_not_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TerminalEndpointControls.lean/declarations/full-error-not-zero.md) | 52 | `result-track:5efd6faf844dbbba050ce62fbe96717fa6410840b30db6b53ddd7ab6757b5be7` |
+| 10 | `theorem` | [error_can_decrease](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TerminalEndpointControls.lean/declarations/error-can-decrease.md) | 55 | `result-track:bb4dcabd45c91f328b5287f52a74d1d6f623a8dcaf5e380ca68325ccda0fd1c5` |
+| 11 | `theorem` | [terminal_attachment_preserves_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TerminalEndpointControls.lean/declarations/terminal-attachment-preserves-prefix.md) | 59 | `result-track:720ebf44bc53e7c9f4825c4f31e2552057113950a3e2a1b4888b07e6fb04ecb0` |
+| 12 | `theorem` | [terminal_check_independent_of_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TerminalEndpointControls.lean/declarations/terminal-check-independent-of-prefix.md) | 63 | `result-track:8a607ceb0db6093c768030d4d6ce840ddc75266bb6833e6642ed9c6a6f402229` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

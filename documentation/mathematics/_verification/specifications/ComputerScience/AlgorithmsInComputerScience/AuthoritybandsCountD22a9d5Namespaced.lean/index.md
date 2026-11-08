@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AuthoritybandsCountD22a9d5Namespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AuthoritybandsCountD22a9d5Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuthoritybandsCountD22a9d5Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuthoritybandsCountD22a9d5Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,11 +63,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [authorityBands](../../../../../ComputerScience/AlgorithmsInComputerScience/AuthoritybandsCountD22a9d5Namespaced.lean/declarations/authoritybands.md) | 28 | `declaration-track:c8e8f0d9e0c3f5ff26fd5b330fb7cf4426945bb9d89940d0e6fac50bab4d9a47` |
-| 2 | `theorem` | [authorityBands_count](../../../../../ComputerScience/AlgorithmsInComputerScience/AuthoritybandsCountD22a9d5Namespaced.lean/declarations/authoritybands-count.md) | 36 | `result-track:58b1d12d86ccc7743852134384a005d97c7a0c90abe8b4bfdd61a231e64312b1` |
-| 3 | `def` | [conceptualMapModule](../../../../../ComputerScience/AlgorithmsInComputerScience/AuthoritybandsCountD22a9d5Namespaced.lean/declarations/conceptualmapmodule.md) | 39 | `declaration-track:f0af66727a49108b0a97c5f9df5e2ea4bd0841aace20f8b500b6cac92d5f8ec3` |
-| 4 | `def` | [bandVocabularyModule](../../../../../ComputerScience/AlgorithmsInComputerScience/AuthoritybandsCountD22a9d5Namespaced.lean/declarations/bandvocabularymodule.md) | 41 | `declaration-track:816c7c3fd8b2105d6e846f4bf25d2aa2e3cfb32b33cd393f46f49906f4339348` |
-| 5 | `def` | [layoutAlgorithmModule](../../../../../ComputerScience/AlgorithmsInComputerScience/AuthoritybandsCountD22a9d5Namespaced.lean/declarations/layoutalgorithmmodule.md) | 43 | `declaration-track:4d14b3b304ab37bb224ac0fb6c7bfd17bad73454fa27cd570de8d83cb58346e5` |
+| 1 | `def` | [authorityBands](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuthoritybandsCountD22a9d5Namespaced.lean/declarations/authoritybands.md) | 28 | `declaration-track:c8e8f0d9e0c3f5ff26fd5b330fb7cf4426945bb9d89940d0e6fac50bab4d9a47` |
+| 2 | `theorem` | [authorityBands_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuthoritybandsCountD22a9d5Namespaced.lean/declarations/authoritybands-count.md) | 36 | `result-track:58b1d12d86ccc7743852134384a005d97c7a0c90abe8b4bfdd61a231e64312b1` |
+| 3 | `def` | [conceptualMapModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuthoritybandsCountD22a9d5Namespaced.lean/declarations/conceptualmapmodule.md) | 39 | `declaration-track:f0af66727a49108b0a97c5f9df5e2ea4bd0841aace20f8b500b6cac92d5f8ec3` |
+| 4 | `def` | [bandVocabularyModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuthoritybandsCountD22a9d5Namespaced.lean/declarations/bandvocabularymodule.md) | 41 | `declaration-track:816c7c3fd8b2105d6e846f4bf25d2aa2e3cfb32b33cd393f46f49906f4339348` |
+| 5 | `def` | [layoutAlgorithmModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuthoritybandsCountD22a9d5Namespaced.lean/declarations/layoutalgorithmmodule.md) | 43 | `declaration-track:4d14b3b304ab37bb224ac0fb6c7bfd17bad73454fa27cd570de8d83cb58346e5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

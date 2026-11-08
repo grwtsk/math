@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/PathConnectedSpaceStdSimplexPublic.lean/index.md) · [Full source](../../../../Geometry/PathConnectedSpaceStdSimplexPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [continuous_convexCombPair](../../../../Geometry/PathConnectedSpaceStdSimplexPublic.lean/declarations/continuous-convexcombpair.md) | 22 | `result-track:8beb79316f0fb2516842c4814380c24ad135c1dffccb48638faccce25f1586c7` |
-| 2 | `lemma` | [continuous_duple](../../../../Geometry/PathConnectedSpaceStdSimplexPublic.lean/declarations/continuous-duple.md) | 43 | `result-track:f3a75a5ef503f63659d495592724f821d3f028145de178eca9755c0b0bd147be` |
-| 3 | `instance` | [pathConnectedSpace](../../../../Geometry/PathConnectedSpaceStdSimplexPublic.lean/declarations/pathconnectedspace.md) | 49 | `declaration-track:031ffd324b91823dfa8f37eb9c3cf5b9c745c80db6e7161d427e968e34740790` |
-| 4 | `def` | [homeomorphI](../../../../Geometry/PathConnectedSpaceStdSimplexPublic.lean/declarations/homeomorphi.md) | 58 | `declaration-track:9004644423172114b20380f42d56c4b578cc7e0fa6cc768739c7b4159eb8924b` |
-| 5 | `lemma` | [homeomorphI_apply_coe](../../../../Geometry/PathConnectedSpaceStdSimplexPublic.lean/declarations/homeomorphi-apply-coe.md) | 62 | `result-track:0aec905823cf8956d4896d42702b5f8a5240c105c699ecc36b69e16b57ead9a0` |
-| 6 | `lemma` | [homeomorphI_single_zero](../../../../Geometry/PathConnectedSpaceStdSimplexPublic.lean/declarations/homeomorphi-single-zero.md) | 67 | `result-track:eb1d5cdfa49d29fc2c533ebf7a73d82c80e990e79f5bc10f2d51f9d07c957b59` |
-| 7 | `lemma` | [homeomorphI_single_one](../../../../Geometry/PathConnectedSpaceStdSimplexPublic.lean/declarations/homeomorphi-single-one.md) | 70 | `result-track:efed5baa736c49bf8a449e21d3f07fe486daae07a1e0f67c8022edaea2afce86` |
-| 8 | `lemma` | [homeomorphI_symm_zero](../../../../Geometry/PathConnectedSpaceStdSimplexPublic.lean/declarations/homeomorphi-symm-zero.md) | 73 | `result-track:1f435eb6a0d5d0fc6a3bf51e08797888244c84c9f6e102d085b2221ba02f5d50` |
-| 9 | `lemma` | [homeomorphI_symm_one](../../../../Geometry/PathConnectedSpaceStdSimplexPublic.lean/declarations/homeomorphi-symm-one.md) | 77 | `result-track:2bacdd09041b6bb29d87729ad542fd4f0d796c96d048079e043122c0d8620a6f` |
+| 1 | `lemma` | [continuous_convexCombPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexPublic.lean/declarations/continuous-convexcombpair.md) | 22 | `result-track:8beb79316f0fb2516842c4814380c24ad135c1dffccb48638faccce25f1586c7` |
+| 2 | `lemma` | [continuous_duple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexPublic.lean/declarations/continuous-duple.md) | 43 | `result-track:f3a75a5ef503f63659d495592724f821d3f028145de178eca9755c0b0bd147be` |
+| 3 | `instance` | [pathConnectedSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexPublic.lean/declarations/pathconnectedspace.md) | 49 | `declaration-track:031ffd324b91823dfa8f37eb9c3cf5b9c745c80db6e7161d427e968e34740790` |
+| 4 | `def` | [homeomorphI](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexPublic.lean/declarations/homeomorphi.md) | 58 | `declaration-track:9004644423172114b20380f42d56c4b578cc7e0fa6cc768739c7b4159eb8924b` |
+| 5 | `lemma` | [homeomorphI_apply_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexPublic.lean/declarations/homeomorphi-apply-coe.md) | 62 | `result-track:0aec905823cf8956d4896d42702b5f8a5240c105c699ecc36b69e16b57ead9a0` |
+| 6 | `lemma` | [homeomorphI_single_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexPublic.lean/declarations/homeomorphi-single-zero.md) | 67 | `result-track:eb1d5cdfa49d29fc2c533ebf7a73d82c80e990e79f5bc10f2d51f9d07c957b59` |
+| 7 | `lemma` | [homeomorphI_single_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexPublic.lean/declarations/homeomorphi-single-one.md) | 70 | `result-track:efed5baa736c49bf8a449e21d3f07fe486daae07a1e0f67c8022edaea2afce86` |
+| 8 | `lemma` | [homeomorphI_symm_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexPublic.lean/declarations/homeomorphi-symm-zero.md) | 73 | `result-track:1f435eb6a0d5d0fc6a3bf51e08797888244c84c9f6e102d085b2221ba02f5d50` |
+| 9 | `lemma` | [homeomorphI_symm_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexPublic.lean/declarations/homeomorphi-symm-one.md) | 77 | `result-track:2bacdd09041b6bb29d87729ad542fd4f0d796c96d048079e043122c0d8620a6f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Core.lean/index.md) · [Full source](../../../../Combinatorics/Core.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Order.Taxonomy.Address`](../../../../Combinatorics/Address.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Order.Taxonomy.Address`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,24 +57,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Taxonomy](../../../../Combinatorics/Core.lean/declarations/taxonomy.md) | 16 | `declaration-track:6fda8119951d29453884c4a46c10bd5ede93f7990c1b0ad52e12b5661932f5ce` |
-| 2 | `structure` | [Taxonomy.Node](../../../../Combinatorics/Core.lean/declarations/taxonomy-node.md) | 25 | `declaration-track:d7cf09cbbcd0f45e3fb1c8b5c4abb7bf1f9262fb586221909df6220e5c4600bf` |
-| 3 | `theorem` | [Taxonomy.Node.eq_of_val_eq](../../../../Combinatorics/Core.lean/declarations/taxonomy-node-eq-of-val-eq.md) | 29 | `result-track:42554a4071d5d1d993fb6254ec61084346fe19ec72ce67ac35eccc301a214530` |
-| 4 | `instance` | [(anonymous)](../../../../Combinatorics/Core.lean/declarations/instance.md) | 38 | `declaration-track:3d7cbaca371dc1f1b9fb68e275a80058c4f59462f4dd3e15882ad84c9c3672ad` |
-| 5 | `instance` | [(anonymous)](../../../../Combinatorics/Core.lean/declarations/instance-source-edition-3.md) | 44 | `declaration-track:aaa9f1d2468bfefb4d84c169a4c3d302ad9633adb8707b814338352b171c5b1a` |
-| 6 | `def` | [Taxonomy.lca](../../../../Combinatorics/Core.lean/declarations/taxonomy-lca.md) | 49 | `declaration-track:03023b5de52c4c16c50d2cf86d816850b9a5465486cdcd77229a5c004d623dc1` |
-| 7 | `instance` | [(anonymous)](../../../../Combinatorics/Core.lean/declarations/instance-source-edition-2.md) | 52 | `declaration-track:69e581b9103efa6da7181f2a429ac21277d1f91f10b8af4b52fc7b319df602d6` |
-| 8 | `theorem` | [Taxonomy.ancestors_chain](../../../../Combinatorics/Core.lean/declarations/taxonomy-ancestors-chain.md) | 60 | `result-track:b9d30aad151d34f82f921351a3e1230de75136d3618e0a4464feb0278ba4e710` |
-| 9 | `def` | [ofPaths](../../../../Combinatorics/Core.lean/declarations/ofpaths.md) | 65 | `declaration-track:40d4f936ab615f3fe473a4db40b9d34cccc62f61670954317b6cf2d1ac3fed99` |
-| 10 | `def` | [ClosedPaths](../../../../Combinatorics/Core.lean/declarations/closedpaths.md) | 81 | `declaration-track:42130dd184164417bcd94508d3d477e7c5c43ed98d3499d6eec89785820c0724` |
-| 11 | `def` | [checkClosed](../../../../Combinatorics/Core.lean/declarations/checkclosed.md) | 85 | `declaration-track:c522c9d494e7901f31d7f7fe19a1dd7f209fb3baf39520dd3a87b92e8d630f42` |
-| 12 | `theorem` | [checkClosed_sound](../../../../Combinatorics/Core.lean/declarations/checkclosed-sound.md) | 89 | `result-track:a8d1b133c11074cb77adfe20bf13c7b35b539318340d9ca98a249589003bf80e` |
-| 13 | `theorem` | [ofPaths_exact](../../../../Combinatorics/Core.lean/declarations/ofpaths-exact.md) | 96 | `result-track:bcf2ee199deceec6106105f7c579243201b7f8cdad6ffa958b87080c958ce2a5` |
-| 14 | `structure` | [FinitePresentation](../../../../Combinatorics/Core.lean/declarations/finitepresentation.md) | 107 | `declaration-track:6b7dc8af763402a510f9f787a37608c23f8d6d930509c41e8b666c5402dbebc0` |
-| 15 | `theorem` | [finite_representation](../../../../Combinatorics/Core.lean/declarations/finite-representation.md) | 112 | `result-track:ffe6387487bbc7f9f90709a1988ba4a10102a34a72b0ea844543d4f1f58b091e` |
-| 16 | `def` | [representationOrderIso](../../../../Combinatorics/Core.lean/declarations/representationorderiso.md) | 123 | `declaration-track:e2e80996e749c878f55b118b035bd25a59748b5579fbcbee1ef13e0b39b245fd` |
-| 17 | `def` | [RadixBounded](../../../../Combinatorics/Core.lean/declarations/radixbounded.md) | 132 | `declaration-track:4fba00cc76f5c8c743fc7ffd5f092c1c6af7dc29bd1723c9689e4ad1c0985b89` |
-| 18 | `def` | [rootAddress](../../../../Combinatorics/Core.lean/declarations/rootaddress.md) | 136 | `declaration-track:edd99500c09204740f71f76957e94945f2beb35d9f7e6a30fa43006f09b70b46` |
+| 1 | `structure` | [Taxonomy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/declarations/taxonomy.md) | 16 | `declaration-track:6fda8119951d29453884c4a46c10bd5ede93f7990c1b0ad52e12b5661932f5ce` |
+| 2 | `structure` | [Taxonomy.Node](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/declarations/taxonomy-node.md) | 25 | `declaration-track:d7cf09cbbcd0f45e3fb1c8b5c4abb7bf1f9262fb586221909df6220e5c4600bf` |
+| 3 | `theorem` | [Taxonomy.Node.eq_of_val_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/declarations/taxonomy-node-eq-of-val-eq.md) | 29 | `result-track:42554a4071d5d1d993fb6254ec61084346fe19ec72ce67ac35eccc301a214530` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/declarations/instance.md) | 38 | `declaration-track:3d7cbaca371dc1f1b9fb68e275a80058c4f59462f4dd3e15882ad84c9c3672ad` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/declarations/instance-source-edition-3.md) | 44 | `declaration-track:aaa9f1d2468bfefb4d84c169a4c3d302ad9633adb8707b814338352b171c5b1a` |
+| 6 | `def` | [Taxonomy.lca](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/declarations/taxonomy-lca.md) | 49 | `declaration-track:03023b5de52c4c16c50d2cf86d816850b9a5465486cdcd77229a5c004d623dc1` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/declarations/instance-source-edition-2.md) | 52 | `declaration-track:69e581b9103efa6da7181f2a429ac21277d1f91f10b8af4b52fc7b319df602d6` |
+| 8 | `theorem` | [Taxonomy.ancestors_chain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/declarations/taxonomy-ancestors-chain.md) | 60 | `result-track:b9d30aad151d34f82f921351a3e1230de75136d3618e0a4464feb0278ba4e710` |
+| 9 | `def` | [ofPaths](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/declarations/ofpaths.md) | 65 | `declaration-track:40d4f936ab615f3fe473a4db40b9d34cccc62f61670954317b6cf2d1ac3fed99` |
+| 10 | `def` | [ClosedPaths](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/declarations/closedpaths.md) | 81 | `declaration-track:42130dd184164417bcd94508d3d477e7c5c43ed98d3499d6eec89785820c0724` |
+| 11 | `def` | [checkClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/declarations/checkclosed.md) | 85 | `declaration-track:c522c9d494e7901f31d7f7fe19a1dd7f209fb3baf39520dd3a87b92e8d630f42` |
+| 12 | `theorem` | [checkClosed_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/declarations/checkclosed-sound.md) | 89 | `result-track:a8d1b133c11074cb77adfe20bf13c7b35b539318340d9ca98a249589003bf80e` |
+| 13 | `theorem` | [ofPaths_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/declarations/ofpaths-exact.md) | 96 | `result-track:bcf2ee199deceec6106105f7c579243201b7f8cdad6ffa958b87080c958ce2a5` |
+| 14 | `structure` | [FinitePresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/declarations/finitepresentation.md) | 107 | `declaration-track:6b7dc8af763402a510f9f787a37608c23f8d6d930509c41e8b666c5402dbebc0` |
+| 15 | `theorem` | [finite_representation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/declarations/finite-representation.md) | 112 | `result-track:ffe6387487bbc7f9f90709a1988ba4a10102a34a72b0ea844543d4f1f58b091e` |
+| 16 | `def` | [representationOrderIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/declarations/representationorderiso.md) | 123 | `declaration-track:e2e80996e749c878f55b118b035bd25a59748b5579fbcbee1ef13e0b39b245fd` |
+| 17 | `def` | [RadixBounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/declarations/radixbounded.md) | 132 | `declaration-track:4fba00cc76f5c8c743fc7ffd5f092c1c6af7dc29bd1723c9689e4ad1c0985b89` |
+| 18 | `def` | [rootAddress](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Core.lean/declarations/rootaddress.md) | 136 | `declaration-track:edd99500c09204740f71f76957e94945f2beb35d9f7e6a30fa43006f09b70b46` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

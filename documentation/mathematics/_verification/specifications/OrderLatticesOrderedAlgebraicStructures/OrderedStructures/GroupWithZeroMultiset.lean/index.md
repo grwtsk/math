@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroMultiset.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroMultiset.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroMultiset.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroMultiset.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [prod_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroMultiset.lean/declarations/prod-nonneg.md) | 20 | `result-track:89581bb2aed00c1b8eb5a79cdd6e54edb5d61c28f8ff9a5cf7baaae94be02cb7` |
-| 2 | `lemma` | [one_le_prod](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroMultiset.lean/declarations/one-le-prod.md) | 25 | `result-track:d75506278ef743c9d90ab1d92adc12ed716d54130572110b50ebd3d8287ce618` |
-| 3 | `theorem` | [prod_map_le_prod_map₀](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroMultiset.lean/declarations/prod-map-le-prod-map.md) | 30 | `result-track:9760c70a874f94ad92d370e9c0c76a957ab274662a63ad47d19027d14ee8ae2f` |
-| 4 | `theorem` | [prod_map_le_pow_card](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroMultiset.lean/declarations/prod-map-le-pow-card.md) | 37 | `result-track:ccc6eb540bda218f76fcfc26acfdce9be675f3a384f898ac796e23bc2ad8cf11` |
-| 5 | `lemma` | [prod_pos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroMultiset.lean/declarations/prod-pos.md) | 46 | `result-track:0e1e778263d75b7d5723cee1ad5e38de252488e9ae46b4d46b46991af6c6c55f` |
-| 6 | `theorem` | [prod_map_lt_prod_map](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroMultiset.lean/declarations/prod-map-lt-prod-map.md) | 51 | `result-track:8dbb27ff54016c9d894b326456e99b55c0162dd3ecd5dfe6e7f4549bf629c309` |
+| 1 | `lemma` | [prod_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroMultiset.lean/declarations/prod-nonneg.md) | 20 | `result-track:89581bb2aed00c1b8eb5a79cdd6e54edb5d61c28f8ff9a5cf7baaae94be02cb7` |
+| 2 | `lemma` | [one_le_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroMultiset.lean/declarations/one-le-prod.md) | 25 | `result-track:d75506278ef743c9d90ab1d92adc12ed716d54130572110b50ebd3d8287ce618` |
+| 3 | `theorem` | [prod_map_le_prod_map₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroMultiset.lean/declarations/prod-map-le-prod-map.md) | 30 | `result-track:9760c70a874f94ad92d370e9c0c76a957ab274662a63ad47d19027d14ee8ae2f` |
+| 4 | `theorem` | [prod_map_le_pow_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroMultiset.lean/declarations/prod-map-le-pow-card.md) | 37 | `result-track:ccc6eb540bda218f76fcfc26acfdce9be675f3a384f898ac796e23bc2ad8cf11` |
+| 5 | `lemma` | [prod_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroMultiset.lean/declarations/prod-pos.md) | 46 | `result-track:0e1e778263d75b7d5723cee1ad5e38de252488e9ae46b4d46b46991af6c6c55f` |
+| 6 | `theorem` | [prod_map_lt_prod_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroMultiset.lean/declarations/prod-map-lt-prod-map.md) | 51 | `result-track:8dbb27ff54016c9d894b326456e99b55c0162dd3ecd5dfe6e7f4549bf629c309` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

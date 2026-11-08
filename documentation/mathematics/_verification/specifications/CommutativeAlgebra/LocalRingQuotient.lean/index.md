@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LocalRingQuotient.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LocalRingQuotient.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingQuotient.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingQuotient.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -65,13 +65,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quotient_span_eq_top_iff_span_eq_top](../../../../CommutativeAlgebra/LocalRingQuotient.lean/declarations/quotient-span-eq-top-iff-span-eq-top.md) | 32 | `result-track:7665d5739e106e9c048fd268d5a5df239939bfd8e60a99b72249f4ee902459f2` |
-| 2 | `theorem` | [finrank_quotient_map](../../../../CommutativeAlgebra/LocalRingQuotient.lean/declarations/finrank-quotient-map.md) | 61 | `result-track:ce488898dd4a1093f86e67803fdacba46e58b4d9d0efaab3945a09e2bd0bec1b` |
-| 3 | `def` | [basisQuotient](../../../../CommutativeAlgebra/LocalRingQuotient.lean/declarations/basisquotient.md) | 83 | `declaration-track:a23944dee68b0095a3d10a249acfcfd16d564648bd4512e21011faa008a01fae` |
-| 4 | `lemma` | [basisQuotient_apply](../../../../CommutativeAlgebra/LocalRingQuotient.lean/declarations/basisquotient-apply.md) | 90 | `result-track:3bb8abfa626cd2d634c4f340cd37f3306d9c588b993a59ce7345d9988f4a47f0` |
-| 5 | `lemma` | [basisQuotient_repr](../../../../CommutativeAlgebra/LocalRingQuotient.lean/declarations/basisquotient-repr.md) | 95 | `result-track:2b483e83d96a4f4d566d83fd60e396b7233f1e0aa543a0c4b920612e5ae0524b` |
-| 6 | `lemma` | [exists_maximalIdeal_pow_le_of_finite_quotient](../../../../CommutativeAlgebra/LocalRingQuotient.lean/declarations/exists-maximalideal-pow-le-of-finite-quotient.md) | 109 | `result-track:431a91a65980c070ea668374c3fa6163d6cbd8712b359a5a7da8cb24b55268e1` |
-| 7 | `lemma` | [finite_quotient_iff](../../../../CommutativeAlgebra/LocalRingQuotient.lean/declarations/finite-quotient-iff.md) | 125 | `result-track:12175657c271a9dbba4c4303d5c5bd0023a29f1cc001529f21e826b5370f800d` |
+| 1 | `theorem` | [quotient_span_eq_top_iff_span_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingQuotient.lean/declarations/quotient-span-eq-top-iff-span-eq-top.md) | 32 | `result-track:7665d5739e106e9c048fd268d5a5df239939bfd8e60a99b72249f4ee902459f2` |
+| 2 | `theorem` | [finrank_quotient_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingQuotient.lean/declarations/finrank-quotient-map.md) | 61 | `result-track:ce488898dd4a1093f86e67803fdacba46e58b4d9d0efaab3945a09e2bd0bec1b` |
+| 3 | `def` | [basisQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingQuotient.lean/declarations/basisquotient.md) | 83 | `declaration-track:a23944dee68b0095a3d10a249acfcfd16d564648bd4512e21011faa008a01fae` |
+| 4 | `lemma` | [basisQuotient_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingQuotient.lean/declarations/basisquotient-apply.md) | 90 | `result-track:3bb8abfa626cd2d634c4f340cd37f3306d9c588b993a59ce7345d9988f4a47f0` |
+| 5 | `lemma` | [basisQuotient_repr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingQuotient.lean/declarations/basisquotient-repr.md) | 95 | `result-track:2b483e83d96a4f4d566d83fd60e396b7233f1e0aa543a0c4b920612e5ae0524b` |
+| 6 | `lemma` | [exists_maximalIdeal_pow_le_of_finite_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingQuotient.lean/declarations/exists-maximalideal-pow-le-of-finite-quotient.md) | 109 | `result-track:431a91a65980c070ea668374c3fa6163d6cbd8712b359a5a7da8cb24b55268e1` |
+| 7 | `lemma` | [finite_quotient_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingQuotient.lean/declarations/finite-quotient-iff.md) | 125 | `result-track:12175657c271a9dbba4c4303d5c5bd0023a29f1cc001529f21e826b5370f800d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

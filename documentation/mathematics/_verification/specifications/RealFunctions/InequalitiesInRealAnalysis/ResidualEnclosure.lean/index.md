@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/index.md) · [Full source](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coercive_error_bound](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/declarations/coercive-error-bound.md) | 17 | `result-track:59637322deee1c032204ad6b0909dfd40295ad5f29bd9e0870538658bdaceca7` |
-| 2 | `theorem` | [perturb_enclosure](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/declarations/perturb-enclosure.md) | 33 | `result-track:a42b11ee6dceca8c0208137a7ac69731fe460a513b1a8b5fd3436a33f765975a` |
-| 3 | `theorem` | [two_height_enclosure](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/declarations/two-height-enclosure.md) | 46 | `result-track:0b6479c57b6061ab6448b52976473200d006efaa0431714cbcf161328ceff2d8` |
-| 4 | `theorem` | [inverse_moment_upper_of_two_height](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/declarations/inverse-moment-upper-of-two-height.md) | 53 | `result-track:82769282af037c29250eec2fdc50f27de79e0ad14b3aaa940045a78543ba1ca2` |
-| 5 | `theorem` | [two_height_solve_error](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/declarations/two-height-solve-error.md) | 64 | `result-track:1bb81b46aa5fb4964c175a99ff847b0e22698368434fbdd38d46e66ad4071b04` |
-| 6 | `theorem` | [three_channel_lagrange](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/declarations/three-channel-lagrange.md) | 76 | `result-track:56ec5fc58daf269e641b76f059df942b7ac4b2ceb49a95496a16c60f947226c8` |
-| 7 | `theorem` | [three_channel_sq_le](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/declarations/three-channel-sq-le.md) | 80 | `result-track:f71ab5b88eb8b2704f85fc0a0d45d0b1772dfb788f0e59c95cf124796653a397` |
+| 1 | `theorem` | [coercive_error_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/declarations/coercive-error-bound.md) | 17 | `result-track:59637322deee1c032204ad6b0909dfd40295ad5f29bd9e0870538658bdaceca7` |
+| 2 | `theorem` | [perturb_enclosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/declarations/perturb-enclosure.md) | 33 | `result-track:a42b11ee6dceca8c0208137a7ac69731fe460a513b1a8b5fd3436a33f765975a` |
+| 3 | `theorem` | [two_height_enclosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/declarations/two-height-enclosure.md) | 46 | `result-track:0b6479c57b6061ab6448b52976473200d006efaa0431714cbcf161328ceff2d8` |
+| 4 | `theorem` | [inverse_moment_upper_of_two_height](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/declarations/inverse-moment-upper-of-two-height.md) | 53 | `result-track:82769282af037c29250eec2fdc50f27de79e0ad14b3aaa940045a78543ba1ca2` |
+| 5 | `theorem` | [two_height_solve_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/declarations/two-height-solve-error.md) | 64 | `result-track:1bb81b46aa5fb4964c175a99ff847b0e22698368434fbdd38d46e66ad4071b04` |
+| 6 | `theorem` | [three_channel_lagrange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/declarations/three-channel-lagrange.md) | 76 | `result-track:56ec5fc58daf269e641b76f059df942b7ac4b2ceb49a95496a16c60f947226c8` |
+| 7 | `theorem` | [three_channel_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/declarations/three-channel-sq-le.md) | 80 | `result-track:f71ab5b88eb8b2704f85fc0a0d45d0b1772dfb788f0e59c95cf124796653a397` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

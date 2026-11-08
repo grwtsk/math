@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Imo2001Q3NamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/Imo2001Q3NamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Imo2001Q3NamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Imo2001Q3NamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Condition](../../../../GeneralTopology/Imo2001Q3NamespacedPublic.lean/declarations/condition.md) | 55 | `declaration-track:ac3744b19b0e5811ef11b5fb1d256d26d1dc2959d332f160504be429aa1008b3` |
-| 2 | `def` | [Easy](../../../../GeneralTopology/Imo2001Q3NamespacedPublic.lean/declarations/easy.md) | 64 | `declaration-track:42921b8efdef2f86f56ce8e624368a922b966b60773e9ed5e27b8d768972410c` |
-| 3 | `lemma` | [card_not_easy_le_five](../../../../GeneralTopology/Imo2001Q3NamespacedPublic.lean/declarations/card-not-easy-le-five.md) | 70 | `result-track:2985911bccd990c06087086438761da1cf2e20ade882c93a46e3f27b550570da` |
-| 4 | `lemma` | [card_not_easy_le_210](../../../../GeneralTopology/Imo2001Q3NamespacedPublic.lean/declarations/card-not-easy-le-210.md) | 86 | `result-track:c41df2e2a0d1f269345884589a20bc5c47f6e545326875263cc491efc50b8ee0` |
-| 5 | `theorem` | [result](../../../../GeneralTopology/Imo2001Q3NamespacedPublic.lean/declarations/result.md) | 105 | `result-track:a35a3ba7ffed3a48bff56d6001df942e724fcebf6adb2fdbf9d79d09df82d1fc` |
+| 1 | `structure` | [Condition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Imo2001Q3NamespacedPublic.lean/declarations/condition.md) | 55 | `declaration-track:ac3744b19b0e5811ef11b5fb1d256d26d1dc2959d332f160504be429aa1008b3` |
+| 2 | `def` | [Easy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Imo2001Q3NamespacedPublic.lean/declarations/easy.md) | 64 | `declaration-track:42921b8efdef2f86f56ce8e624368a922b966b60773e9ed5e27b8d768972410c` |
+| 3 | `lemma` | [card_not_easy_le_five](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Imo2001Q3NamespacedPublic.lean/declarations/card-not-easy-le-five.md) | 70 | `result-track:2985911bccd990c06087086438761da1cf2e20ade882c93a46e3f27b550570da` |
+| 4 | `lemma` | [card_not_easy_le_210](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Imo2001Q3NamespacedPublic.lean/declarations/card-not-easy-le-210.md) | 86 | `result-track:c41df2e2a0d1f269345884589a20bc5c47f6e545326875263cc491efc50b8ee0` |
+| 5 | `theorem` | [result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Imo2001Q3NamespacedPublic.lean/declarations/result.md) | 105 | `result-track:a35a3ba7ffed3a48bff56d6001df942e724fcebf6adb2fdbf9d79d09df82d1fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

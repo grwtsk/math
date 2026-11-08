@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PPOffDiag.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PPOffDiag.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPOffDiag.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPOffDiag.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [O1_bound](../../../../MeasureAndIntegration/PPOffDiag.lean/declarations/o1-bound.md) | 40 | `result-track:ab55bea1c1b51c1db5921bc222c2d5b9fd5f25338fa10733cb898ad91e5a17e7` |
+| 1 | `theorem` | [O1_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPOffDiag.lean/declarations/o1-bound.md) | 40 | `result-track:ab55bea1c1b51c1db5921bc222c2d5b9fd5f25338fa10733cb898ad91e5a17e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

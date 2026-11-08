@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NaturalListAndCanonicalSourceCodes.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NaturalListAndCanonicalSourceCodes.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NaturalListAndCanonicalSourceCodes.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NaturalListAndCanonicalSourceCodes.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `BitMatrix.Carrier.BooleanSpace` — import line 19; external provider; requires a separately pinned dependency.
-- [Canonical String Carrier](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalStringCarrier.lean/index.md) — import line 21; pinned internal source present.
+- [Canonical String Carrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalStringCarrier.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [naturalListCode](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NaturalListAndCanonicalSourceCodes.lean/declarations/naturallistcode.md) | 41 | `declaration-track:b662270dece009743fe8855c6f4b38276bc8f344ef83294e5d28efccda1e0102` |
-| 2 | `theorem` | [naturalListCode_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NaturalListAndCanonicalSourceCodes.lean/declarations/naturallistcode-injective.md) | 46 | `result-track:0d028e06af2c131c64b04a1285a31f4e65c21775dd25c3b800370a5d0db3ce65` |
-| 3 | `def` | [code](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NaturalListAndCanonicalSourceCodes.lean/declarations/code.md) | 67 | `declaration-track:62999d2f8162a8b5f46b27b70053e3b449a04f6c07deb469417ad45adb1ae290` |
-| 4 | `theorem` | [code_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NaturalListAndCanonicalSourceCodes.lean/declarations/code-injective.md) | 71 | `result-track:b12c59b2710d9490968666313fbfb668e3bb6b35888326698e425a365bc2f9d6` |
+| 1 | `def` | [naturalListCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NaturalListAndCanonicalSourceCodes.lean/declarations/naturallistcode.md) | 41 | `declaration-track:b662270dece009743fe8855c6f4b38276bc8f344ef83294e5d28efccda1e0102` |
+| 2 | `theorem` | [naturalListCode_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NaturalListAndCanonicalSourceCodes.lean/declarations/naturallistcode-injective.md) | 46 | `result-track:0d028e06af2c131c64b04a1285a31f4e65c21775dd25c3b800370a5d0db3ce65` |
+| 3 | `def` | [code](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NaturalListAndCanonicalSourceCodes.lean/declarations/code.md) | 67 | `declaration-track:62999d2f8162a8b5f46b27b70053e3b449a04f6c07deb469417ad45adb1ae290` |
+| 4 | `theorem` | [code_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NaturalListAndCanonicalSourceCodes.lean/declarations/code-injective.md) | 71 | `result-track:b12c59b2710d9490968666313fbfb668e3bb6b35888326698e425a365bc2f9d6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanIRPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanIRPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanIRPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanIRPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -64,11 +64,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mkIRSigData](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanIRPublic.lean/declarations/mkirsigdata.md) | 26 | `declaration-track:19e1b201af0711176cd05820272aebf587d266e6d1dc93ca391b03299465093f` |
-| 2 | `def` | [mkIRData](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanIRPublic.lean/declarations/mkirdata.md) | 32 | `declaration-track:a15be778729fa2448cda1c9060cacece76bbddd3c35d49d05f07d1c91f5c7604` |
-| 3 | `constants` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanIRPublic.lean/declarations/constants.md) | 43 | `declaration-track:426b5fef6a0f6eb542204d8688122e4952bc80454ee07ca4025b576817fd0815` |
-| 4 | `def` | [setConfigOption](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanIRPublic.lean/declarations/setconfigoption.md) | 50 | `declaration-track:75da9d6cec46e83d8210c69786f05426533e78e918140021a23702c50e2bf210` |
-| 5 | `def` | [main](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanIRPublic.lean/declarations/main.md) | 64 | `declaration-track:a32c08c7aa1d7fe8c3f0a0b9b152382e03e5bbd70c171e9b263e3a1c9f0aef18` |
+| 1 | `def` | [mkIRSigData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanIRPublic.lean/declarations/mkirsigdata.md) | 26 | `declaration-track:19e1b201af0711176cd05820272aebf587d266e6d1dc93ca391b03299465093f` |
+| 2 | `def` | [mkIRData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanIRPublic.lean/declarations/mkirdata.md) | 32 | `declaration-track:a15be778729fa2448cda1c9060cacece76bbddd3c35d49d05f07d1c91f5c7604` |
+| 3 | `constants` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanIRPublic.lean/declarations/constants.md) | 43 | `declaration-track:426b5fef6a0f6eb542204d8688122e4952bc80454ee07ca4025b576817fd0815` |
+| 4 | `def` | [setConfigOption](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanIRPublic.lean/declarations/setconfigoption.md) | 50 | `declaration-track:75da9d6cec46e83d8210c69786f05426533e78e918140021a23702c50e2bf210` |
+| 5 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanIRPublic.lean/declarations/main.md) | 64 | `declaration-track:a32c08c7aa1d7fe8c3f0a0b9b152382e03e5bbd70c171e9b263e3a1c9f0aef18` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

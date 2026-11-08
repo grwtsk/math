@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BirthdayProblemNamespacedPublic.lean/index.md) · [Full source](../../../../Combinatorics/BirthdayProblemNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BirthdayProblemNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BirthdayProblemNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [birthday](../../../../Combinatorics/BirthdayProblemNamespacedPublic.lean/declarations/birthday.md) | 38 | `result-track:c7d42a3c34198c22363239593a762c1127d9280e574b292b496bea0901ba5dbf` |
-| 2 | `instance` | [measureSpace](../../../../Combinatorics/BirthdayProblemNamespacedPublic.lean/declarations/measurespace.md) | 49 | `declaration-track:337b155dc9b8c67828bb0bd61d9adc84eb324df3b56fafb3a5acda05379fdf09` |
-| 3 | `theorem` | [Fin.measure_apply](../../../../Combinatorics/BirthdayProblemNamespacedPublic.lean/declarations/fin-measure-apply.md) | 52 | `result-track:0b5714c6deb100647281894a4a2dbf2ada287558c39de712d90acc8776f62b68` |
-| 4 | `theorem` | [birthday_measure](../../../../Combinatorics/BirthdayProblemNamespacedPublic.lean/declarations/birthday-measure.md) | 57 | `result-track:be8b5c0dda95909c29c651a1a1a7bd386d1f9f256ef16fa536ac0ec52df475d6` |
+| 1 | `theorem` | [birthday](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BirthdayProblemNamespacedPublic.lean/declarations/birthday.md) | 38 | `result-track:c7d42a3c34198c22363239593a762c1127d9280e574b292b496bea0901ba5dbf` |
+| 2 | `instance` | [measureSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BirthdayProblemNamespacedPublic.lean/declarations/measurespace.md) | 49 | `declaration-track:337b155dc9b8c67828bb0bd61d9adc84eb324df3b56fafb3a5acda05379fdf09` |
+| 3 | `theorem` | [Fin.measure_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BirthdayProblemNamespacedPublic.lean/declarations/fin-measure-apply.md) | 52 | `result-track:0b5714c6deb100647281894a4a2dbf2ada287558c39de712d90acc8776f62b68` |
+| 4 | `theorem` | [birthday_measure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BirthdayProblemNamespacedPublic.lean/declarations/birthday-measure.md) | 57 | `result-track:be8b5c0dda95909c29c651a1a1a7bd386d1f9f256ef16fa536ac0ec52df475d6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

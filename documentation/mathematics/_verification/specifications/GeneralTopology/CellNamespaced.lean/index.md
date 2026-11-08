@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CellNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/CellNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CellNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CellNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OrientedContour](../../../../GeneralTopology/CellNamespaced.lean/declarations/orientedcontour.md) | 20 | `declaration-track:78a964f98ff0cef5f249845ce47adde85eede7ffd95b802c6b4988662f400f46` |
-| 2 | `structure` | [AnalyticCell](../../../../GeneralTopology/CellNamespaced.lean/declarations/analyticcell.md) | 27 | `declaration-track:d681a54797df3da3aa6707480bd2327f871131a9e847c3fb3f6d90e5fa0855d0` |
-| 3 | `def` | [PairwiseDisjointInteriors](../../../../GeneralTopology/CellNamespaced.lean/declarations/pairwisedisjointinteriors.md) | 40 | `declaration-track:b1f00a574af6dd43efaa971afb9c8895fc0bcf3c5a6368f07c0cbe4a87155a55` |
+| 1 | `structure` | [OrientedContour](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CellNamespaced.lean/declarations/orientedcontour.md) | 20 | `declaration-track:78a964f98ff0cef5f249845ce47adde85eede7ffd95b802c6b4988662f400f46` |
+| 2 | `structure` | [AnalyticCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CellNamespaced.lean/declarations/analyticcell.md) | 27 | `declaration-track:d681a54797df3da3aa6707480bd2327f871131a9e847c3fb3f6d90e5fa0855d0` |
+| 3 | `def` | [PairwiseDisjointInteriors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CellNamespaced.lean/declarations/pairwisedisjointinteriors.md) | 40 | `declaration-track:b1f00a574af6dd43efaa971afb9c8895fc0bcf3c5a6368f07c0cbe4a87155a55` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.GroupTheory.Words.PrimitiveConjugacy`](../../../../GroupTheoryAndGeneralizations/PrimitiveConjugacy.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.GroupTheory.Words.PrimitiveConjugacy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PrimitiveConjugacy.lean/index.md) — import line 10; pinned internal source present.
 - `Mathlib.Algebra.Group.Int.TypeTags` — import line 11; external provider; requires a separately pinned dependency.
 - `Mathlib.Algebra.Group.Int.Units` — import line 12; external provider; requires a separately pinned dependency.
 - `Mathlib.Algebra.Divisibility.Units` — import line 13; external provider; requires a separately pinned dependency.
@@ -60,18 +60,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IntegerCharacter](../../../../GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/integercharacter.md) | 42 | `declaration-track:e162a7242043581a846d19926aa03fc1738357c791977a58c073a98f57c87e8a` |
-| 2 | `theorem` | [integerCharacter_pow](../../../../GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/integercharacter-pow.md) | 47 | `result-track:5c97d3d54426be59d536ee3a960fd15784140a4d70757eb8731565f749d63fc1` |
-| 3 | `theorem` | [exponent_dvd_integerValue](../../../../GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/exponent-dvd-integervalue.md) | 53 | `result-track:8237ca132792e59ddbe66107a4d540bb6d854b17a7a80414da5e920eff49996f` |
-| 4 | `theorem` | [not_isProperPower_of_unit_integerValue](../../../../GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/not-isproperpower-of-unit-integervalue.md) | 65 | `result-track:04f681a249edf880117fb1fb5d88d44769c858d40eeafdaedef30cf32ebf013d` |
-| 5 | `theorem` | [ne_one_of_unit_integerValue](../../../../GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/ne-one-of-unit-integervalue.md) | 80 | `result-track:611ab20b79f95618ec68e0ee7f0dbb6efb51f75d6a8ba28e84d4195fb270fb6a` |
-| 6 | `theorem` | [isPrimitiveConjugacy_of_unit_integerValue](../../../../GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/isprimitiveconjugacy-of-unit-integervalue.md) | 95 | `result-track:e40a8a2df742fd893d1f94d609b6f435654ab66c7c180fd1dd5026d148be6823` |
-| 7 | `theorem` | [isPrimitiveConjugacy_of_value_one](../../../../GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/isprimitiveconjugacy-of-value-one.md) | 104 | `result-track:b07274aedbd60f37c40fc0486cf04e03d83649fe330071c0f620bf06078e3331` |
-| 8 | `theorem` | [isPrimitiveConjugacy_of_value_neg_one](../../../../GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/isprimitiveconjugacy-of-value-neg-one.md) | 113 | `result-track:05854f7da8959964ec0b5fe983d1a3bc7f711b5880c7c52c78cc9fd8288db2bc` |
-| 9 | `theorem` | [integerValue_eq_of_isConj](../../../../GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/integervalue-eq-of-isconj.md) | 123 | `result-track:f4635f4335f4692764a62409d61ebe35c3db775c68d804f97cc0d95e45865676` |
-| 10 | `theorem` | [properPower_forces_nonunit_integerValue](../../../../GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/properpower-forces-nonunit-integervalue.md) | 133 | `result-track:ce282f4f4ca8ad1513d7c43e87e54eb507732a2cd6dbe4b76fa36be1bc9684e8` |
-| 11 | `theorem` | [integer_one_isPrimitive](../../../../GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/integer-one-isprimitive.md) | 141 | `result-track:60c1e4933f05a69db4a4ca427fd2e200243764b96ac79bd17a7f4b5f49102432` |
-| 12 | `theorem` | [integer_neg_one_isPrimitive](../../../../GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/integer-neg-one-isprimitive.md) | 149 | `result-track:c55ce5120b8801ae8f9eba523e1adeacbff1ada0350f409af7215ba0b45a7d4e` |
+| 1 | `abbrev` | [IntegerCharacter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/integercharacter.md) | 42 | `declaration-track:e162a7242043581a846d19926aa03fc1738357c791977a58c073a98f57c87e8a` |
+| 2 | `theorem` | [integerCharacter_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/integercharacter-pow.md) | 47 | `result-track:5c97d3d54426be59d536ee3a960fd15784140a4d70757eb8731565f749d63fc1` |
+| 3 | `theorem` | [exponent_dvd_integerValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/exponent-dvd-integervalue.md) | 53 | `result-track:8237ca132792e59ddbe66107a4d540bb6d854b17a7a80414da5e920eff49996f` |
+| 4 | `theorem` | [not_isProperPower_of_unit_integerValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/not-isproperpower-of-unit-integervalue.md) | 65 | `result-track:04f681a249edf880117fb1fb5d88d44769c858d40eeafdaedef30cf32ebf013d` |
+| 5 | `theorem` | [ne_one_of_unit_integerValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/ne-one-of-unit-integervalue.md) | 80 | `result-track:611ab20b79f95618ec68e0ee7f0dbb6efb51f75d6a8ba28e84d4195fb270fb6a` |
+| 6 | `theorem` | [isPrimitiveConjugacy_of_unit_integerValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/isprimitiveconjugacy-of-unit-integervalue.md) | 95 | `result-track:e40a8a2df742fd893d1f94d609b6f435654ab66c7c180fd1dd5026d148be6823` |
+| 7 | `theorem` | [isPrimitiveConjugacy_of_value_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/isprimitiveconjugacy-of-value-one.md) | 104 | `result-track:b07274aedbd60f37c40fc0486cf04e03d83649fe330071c0f620bf06078e3331` |
+| 8 | `theorem` | [isPrimitiveConjugacy_of_value_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/isprimitiveconjugacy-of-value-neg-one.md) | 113 | `result-track:05854f7da8959964ec0b5fe983d1a3bc7f711b5880c7c52c78cc9fd8288db2bc` |
+| 9 | `theorem` | [integerValue_eq_of_isConj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/integervalue-eq-of-isconj.md) | 123 | `result-track:f4635f4335f4692764a62409d61ebe35c3db775c68d804f97cc0d95e45865676` |
+| 10 | `theorem` | [properPower_forces_nonunit_integerValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/properpower-forces-nonunit-integervalue.md) | 133 | `result-track:ce282f4f4ca8ad1513d7c43e87e54eb507732a2cd6dbe4b76fa36be1bc9684e8` |
+| 11 | `theorem` | [integer_one_isPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/integer-one-isprimitive.md) | 141 | `result-track:60c1e4933f05a69db4a4ca427fd2e200243764b96ac79bd17a7f4b5f49102432` |
+| 12 | `theorem` | [integer_neg_one_isPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntegralHomologyPrimitive.lean/declarations/integer-neg-one-isprimitive.md) | 149 | `result-track:c55ce5120b8801ae8f9eba523e1adeacbff1ada0350f409af7215ba0b45a7d4e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BoolNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BoolNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BoolNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BoolNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bool](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BoolNamespaced.lean/declarations/bool.md) | 24 | `declaration-track:df6b91ac30c9574036cf927857cd2bfc5f27fcafa271cc6f19d284126486ff66` |
-| 2 | `def` | [boolNot](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BoolNamespaced.lean/declarations/boolnot.md) | 33 | `declaration-track:929f5c2e786c0a911c9845df7ae71df607f3fad3f5f48fac8a1374bd61016e1a` |
-| 3 | `theorem` | [boolNot_encode](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BoolNamespaced.lean/declarations/boolnot-encode.md) | 37 | `result-track:6e3440c22b64703276b38fcda5ba7500ac991fc3c702a9da2635d41ff05d4708` |
+| 1 | `def` | [bool](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BoolNamespaced.lean/declarations/bool.md) | 24 | `declaration-track:df6b91ac30c9574036cf927857cd2bfc5f27fcafa271cc6f19d284126486ff66` |
+| 2 | `def` | [boolNot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BoolNamespaced.lean/declarations/boolnot.md) | 33 | `declaration-track:929f5c2e786c0a911c9845df7ae71df607f3fad3f5f48fac8a1374bd61016e1a` |
+| 3 | `theorem` | [boolNot_encode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BoolNamespaced.lean/declarations/boolnot-encode.md) | 37 | `result-track:6e3440c22b64703276b38fcda5ba7500ac991fc3c702a9da2635d41ff05d4708` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

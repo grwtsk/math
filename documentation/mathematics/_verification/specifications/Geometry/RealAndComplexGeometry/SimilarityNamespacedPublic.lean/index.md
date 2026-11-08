@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Geometry/RealAndComplexGeometry/SimilarityNamespacedPublic.lean/index.md) · [Full source](../../../../../Geometry/RealAndComplexGeometry/SimilarityNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/SimilarityNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/SimilarityNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [similar_of_angle_angle](../../../../../Geometry/RealAndComplexGeometry/SimilarityNamespacedPublic.lean/declarations/similar-of-angle-angle.md) | 44 | `result-track:5c77e6e187f4fe816cc3a545a8aab6b4d4a757aa36e6fafa0efa1be2ccf271e9` |
-| 2 | `theorem` | [similar_of_side_angle_side](../../../../../Geometry/RealAndComplexGeometry/SimilarityNamespacedPublic.lean/declarations/similar-of-side-angle-side.md) | 85 | `result-track:60efdfcc9e0b8ca2a7979056cd51653d16efc50ab070748e7f7234e562256e70` |
-| 3 | `theorem` | [Similarity Namespaced Public](../../../../../Geometry/RealAndComplexGeometry/SimilarityNamespacedPublic.lean/declarations/root-grwtsk-geometry-classicalgeometry-euclideangeometry-similarofanglea.md) | 121 | `result-track:327c43feb3ca2b1635529e285dd680b71b6c866107b95214d880569b7e651cf7` |
-| 4 | `theorem` | [Similarity Namespaced Public](../../../../../Geometry/RealAndComplexGeometry/SimilarityNamespacedPublic.lean/declarations/root-grwtsk-geometry-classicalgeometry-euclideangeometry-similarofanglea-source-edition-2.md) | 148 | `result-track:b2ada92d6234ea46667822db5c37589a551326d72bb64a4499f0e15ac08a28c0` |
+| 1 | `theorem` | [similar_of_angle_angle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/SimilarityNamespacedPublic.lean/declarations/similar-of-angle-angle.md) | 44 | `result-track:5c77e6e187f4fe816cc3a545a8aab6b4d4a757aa36e6fafa0efa1be2ccf271e9` |
+| 2 | `theorem` | [similar_of_side_angle_side](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/SimilarityNamespacedPublic.lean/declarations/similar-of-side-angle-side.md) | 85 | `result-track:60efdfcc9e0b8ca2a7979056cd51653d16efc50ab070748e7f7234e562256e70` |
+| 3 | `theorem` | [Similarity Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/SimilarityNamespacedPublic.lean/declarations/root-grwtsk-geometry-classicalgeometry-euclideangeometry-similarofanglea.md) | 121 | `result-track:327c43feb3ca2b1635529e285dd680b71b6c866107b95214d880569b7e651cf7` |
+| 4 | `theorem` | [Similarity Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/SimilarityNamespacedPublic.lean/declarations/root-grwtsk-geometry-classicalgeometry-euclideangeometry-similarofanglea-source-edition-2.md) | 148 | `result-track:b2ada92d6234ea46667822db5c37589a551326d72bb64a4499f0e15ac08a28c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

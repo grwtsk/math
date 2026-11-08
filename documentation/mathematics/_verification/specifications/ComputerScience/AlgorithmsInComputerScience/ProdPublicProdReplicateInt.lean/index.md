@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ProdPublicProdReplicateInt.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ProdPublicProdReplicateInt.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProdPublicProdReplicateInt.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProdPublicProdReplicateInt.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prod_replicate_int](../../../../../ComputerScience/AlgorithmsInComputerScience/ProdPublicProdReplicateInt.lean/declarations/prod-replicate-int.md) | 22 | `result-track:99e7e4ff467e5cd5d94fe99b17691314886e8d09770dcdadf70e2f98a3aaf475` |
-| 2 | `theorem` | [prod_append_int](../../../../../ComputerScience/AlgorithmsInComputerScience/ProdPublicProdReplicateInt.lean/declarations/prod-append-int.md) | 25 | `result-track:80f4ab5fbd2d328489bf057d73d8246aba8ceea5c509b8aa6be3c4f2822128ed` |
-| 3 | `theorem` | [prod_reverse_int](../../../../../ComputerScience/AlgorithmsInComputerScience/ProdPublicProdReplicateInt.lean/declarations/prod-reverse-int.md) | 28 | `result-track:95ce62ecb9b4a774bd3dbc573163aa263eaf98b3415d66350aaa741d9fde0eae` |
+| 1 | `theorem` | [prod_replicate_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProdPublicProdReplicateInt.lean/declarations/prod-replicate-int.md) | 22 | `result-track:99e7e4ff467e5cd5d94fe99b17691314886e8d09770dcdadf70e2f98a3aaf475` |
+| 2 | `theorem` | [prod_append_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProdPublicProdReplicateInt.lean/declarations/prod-append-int.md) | 25 | `result-track:80f4ab5fbd2d328489bf057d73d8246aba8ceea5c509b8aa6be3c4f2822128ed` |
+| 3 | `theorem` | [prod_reverse_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProdPublicProdReplicateInt.lean/declarations/prod-reverse-int.md) | 28 | `result-track:95ce62ecb9b4a774bd3dbc573163aa263eaf98b3415d66350aaa741d9fde0eae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

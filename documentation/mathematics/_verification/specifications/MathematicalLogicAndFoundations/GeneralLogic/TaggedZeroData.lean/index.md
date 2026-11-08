@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TaggedZeroData.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TaggedZeroData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TaggedZeroData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TaggedZeroData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DeBruijnNewmanZeroData](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TaggedZeroData.lean/declarations/debruijnnewmanzerodata.md) | 38 | `declaration-track:97e58a2ec91d739c09a3951d4305509a409af448b970a66848083036d16a7091` |
+| 1 | `structure` | [DeBruijnNewmanZeroData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TaggedZeroData.lean/declarations/debruijnnewmanzerodata.md) | 38 | `declaration-track:97e58a2ec91d739c09a3951d4305509a409af448b970a66848083036d16a7091` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ParameterizedIndependence.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ParameterizedIndependence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ParameterizedIndependence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ParameterizedIndependence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ParameterizedRealizationTheory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ParameterizedIndependence.lean/declarations/parameterizedrealizationtheory.md) | 42 | `declaration-track:d761885c04dffe52245adfca89ac914a0ac572f17aec975b0c900bcd14b91bc6` |
-| 2 | `structure` | [RepresentationIndependence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ParameterizedIndependence.lean/declarations/representationindependence.md) | 50 | `declaration-track:310fbd40d58caf419cef3bc58f7b19c7197bacae5f29a39068e99f78b648b7c6` |
-| 3 | `def` | [atFabric](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ParameterizedIndependence.lean/declarations/atfabric.md) | 59 | `declaration-track:cd0e63738f542e35430d658b691a518f88464d06c48c404ee3308ce95a63961f` |
+| 1 | `structure` | [ParameterizedRealizationTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ParameterizedIndependence.lean/declarations/parameterizedrealizationtheory.md) | 42 | `declaration-track:d761885c04dffe52245adfca89ac914a0ac572f17aec975b0c900bcd14b91bc6` |
+| 2 | `structure` | [RepresentationIndependence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ParameterizedIndependence.lean/declarations/representationindependence.md) | 50 | `declaration-track:310fbd40d58caf419cef3bc58f7b19c7197bacae5f29a39068e99f78b648b7c6` |
+| 3 | `def` | [atFabric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ParameterizedIndependence.lean/declarations/atfabric.md) | 59 | `declaration-track:cd0e63738f542e35430d658b691a518f88464d06c48c404ee3308ce95a63961f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

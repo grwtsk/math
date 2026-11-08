@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualCriticalHalfPntConsumer.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualCriticalHalfPntConsumer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCriticalHalfPntConsumer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCriticalHalfPntConsumer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualDampedXiFinitePrimitive_eq_half_convolution_pnt_tail](../../../../MeasureAndIntegration/SourceActualCriticalHalfPntConsumer.lean/declarations/actualdampedxifiniteprimitive-eq-half-convolution-pnt-tail.md) | 17 | `result-track:2a8e78d122b147003cc111474940561d102d3cd80ff60b2f48c41b8c6f862070` |
-| 2 | `theorem` | [actualDampedXiFinitePrimitive_half_pnt_majorant](../../../../MeasureAndIntegration/SourceActualCriticalHalfPntConsumer.lean/declarations/actualdampedxifiniteprimitive-half-pnt-majorant.md) | 31 | `result-track:c532413975a3572aa13be32a1576607e89c47dd88fb6792d85190fdc863866e5` |
+| 1 | `theorem` | [actualDampedXiFinitePrimitive_eq_half_convolution_pnt_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCriticalHalfPntConsumer.lean/declarations/actualdampedxifiniteprimitive-eq-half-convolution-pnt-tail.md) | 17 | `result-track:2a8e78d122b147003cc111474940561d102d3cd80ff60b2f48c41b8c6f862070` |
+| 2 | `theorem` | [actualDampedXiFinitePrimitive_half_pnt_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCriticalHalfPntConsumer.lean/declarations/actualdampedxifiniteprimitive-half-pnt-majorant.md) | 31 | `result-track:c532413975a3572aa13be32a1576607e89c47dd88fb6792d85190fdc863866e5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

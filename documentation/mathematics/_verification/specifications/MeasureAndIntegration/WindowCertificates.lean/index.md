@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/WindowCertificates.lean/index.md) · [Full source](../../../../MeasureAndIntegration/WindowCertificates.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WindowCertificates.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WindowCertificates.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [angularTransform](../../../../MeasureAndIntegration/WindowCertificates.lean/declarations/angulartransform.md) | 15 | `declaration-track:6962b884c045ef950b01fd1917c133427af066f65792278ce51a0ba818eddd6e` |
-| 2 | `structure` | [AngularWindowCertificate](../../../../MeasureAndIntegration/WindowCertificates.lean/declarations/angularwindowcertificate.md) | 19 | `declaration-track:d70781dc79ba77407d2d431b78ee57b2f6a7e349641239e441ab19f0e25a5251` |
-| 3 | `structure` | [ReconstructionCertificate](../../../../MeasureAndIntegration/WindowCertificates.lean/declarations/reconstructioncertificate.md) | 30 | `declaration-track:f1b6bfb1bdb94835da26673a7f83b3b50655497e35d5f319130d9d3f2fd3d918` |
-| 4 | `def` | [orderedCrossSpectrum](../../../../MeasureAndIntegration/WindowCertificates.lean/declarations/orderedcrossspectrum.md) | 35 | `declaration-track:c270bc19f0f5e65789b3411b937e2c06735717fa3e975de7ca5188cae0f81c13` |
+| 1 | `def` | [angularTransform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WindowCertificates.lean/declarations/angulartransform.md) | 15 | `declaration-track:6962b884c045ef950b01fd1917c133427af066f65792278ce51a0ba818eddd6e` |
+| 2 | `structure` | [AngularWindowCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WindowCertificates.lean/declarations/angularwindowcertificate.md) | 19 | `declaration-track:d70781dc79ba77407d2d431b78ee57b2f6a7e349641239e441ab19f0e25a5251` |
+| 3 | `structure` | [ReconstructionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WindowCertificates.lean/declarations/reconstructioncertificate.md) | 30 | `declaration-track:f1b6bfb1bdb94835da26673a7f83b3b50655497e35d5f319130d9d3f2fd3d918` |
+| 4 | `def` | [orderedCrossSpectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WindowCertificates.lean/declarations/orderedcrossspectrum.md) | 35 | `declaration-track:c270bc19f0f5e65789b3411b937e2c06735717fa3e975de7ca5188cae0f81c13` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/InductionPublic.lean/index.md) · [Full source](../../../../GeneralTopology/InductionPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/InductionPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/InductionPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [GoodProducts.P0](../../../../GeneralTopology/InductionPublic.lean/declarations/goodproducts-p0.md) | 57 | `result-track:7169dc1ebc726897d27511e797ecce98ae78805529b8ebeb0a5cb5ec1e60f13d` |
-| 2 | `theorem` | [GoodProducts.Plimit](../../../../GeneralTopology/InductionPublic.lean/declarations/goodproducts-plimit.md) | 67 | `result-track:ac4ea91933fe957ca8bfa98256c56c4ae652de8ee1b449c3154572b2eb29d526` |
-| 3 | `theorem` | [GoodProducts.linearIndependentAux](../../../../GeneralTopology/InductionPublic.lean/declarations/goodproducts-linearindependentaux.md) | 76 | `result-track:6122857a01d57fa950fb2ac9ac7da1f30a21b06ebe5583d2d826ba6ddbd39194` |
-| 4 | `theorem` | [GoodProducts.linearIndependent](../../../../GeneralTopology/InductionPublic.lean/declarations/goodproducts-linearindependent.md) | 89 | `result-track:0783bd0e98a77c8d128923d87dddee28c8825b336e0a32e8a8398a40fc1645f5` |
-| 5 | `def` | [GoodProducts.Basis](../../../../GeneralTopology/InductionPublic.lean/declarations/goodproducts-basis.md) | 96 | `declaration-track:952d7bb1f3362be8dde9d5865272e7252a6f73e9ada1a2ebc587048fe63fc83d` |
-| 6 | `theorem` | [Nobeling_aux](../../../../GeneralTopology/InductionPublic.lean/declarations/nobeling-aux.md) | 109 | `result-track:37622bd568c93af336486ecba41266e1b1e2cdd1106dc483fdba1fa60cd3f544` |
-| 7 | `def` | [Nobeling.ι](../../../../GeneralTopology/InductionPublic.lean/declarations/nobeling.md) | 120 | `declaration-track:f508fe549d299f7c35ccaa816569c598d3d0ddc88b99473de98704aa6745978f` |
-| 8 | `theorem` | [Nobeling.isClosedEmbedding](../../../../GeneralTopology/InductionPublic.lean/declarations/nobeling-isclosedembedding.md) | 123 | `result-track:7b0b9584424cf3729b7b79dfd0945e8b2fcb8504ac5046c4da5cd6326bb19f09` |
-| 9 | `instance` | [LocallyConstant.freeOfProfinite](../../../../GeneralTopology/InductionPublic.lean/declarations/locallyconstant-freeofprofinite.md) | 154 | `declaration-track:a73834e770e0a13288ab701fbe8ad0cd6d97d61e160ad601a96e074b6e34fdb5` |
+| 1 | `theorem` | [GoodProducts.P0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/InductionPublic.lean/declarations/goodproducts-p0.md) | 57 | `result-track:7169dc1ebc726897d27511e797ecce98ae78805529b8ebeb0a5cb5ec1e60f13d` |
+| 2 | `theorem` | [GoodProducts.Plimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/InductionPublic.lean/declarations/goodproducts-plimit.md) | 67 | `result-track:ac4ea91933fe957ca8bfa98256c56c4ae652de8ee1b449c3154572b2eb29d526` |
+| 3 | `theorem` | [GoodProducts.linearIndependentAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/InductionPublic.lean/declarations/goodproducts-linearindependentaux.md) | 76 | `result-track:6122857a01d57fa950fb2ac9ac7da1f30a21b06ebe5583d2d826ba6ddbd39194` |
+| 4 | `theorem` | [GoodProducts.linearIndependent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/InductionPublic.lean/declarations/goodproducts-linearindependent.md) | 89 | `result-track:0783bd0e98a77c8d128923d87dddee28c8825b336e0a32e8a8398a40fc1645f5` |
+| 5 | `def` | [GoodProducts.Basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/InductionPublic.lean/declarations/goodproducts-basis.md) | 96 | `declaration-track:952d7bb1f3362be8dde9d5865272e7252a6f73e9ada1a2ebc587048fe63fc83d` |
+| 6 | `theorem` | [Nobeling_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/InductionPublic.lean/declarations/nobeling-aux.md) | 109 | `result-track:37622bd568c93af336486ecba41266e1b1e2cdd1106dc483fdba1fa60cd3f544` |
+| 7 | `def` | [Nobeling.ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/InductionPublic.lean/declarations/nobeling.md) | 120 | `declaration-track:f508fe549d299f7c35ccaa816569c598d3d0ddc88b99473de98704aa6745978f` |
+| 8 | `theorem` | [Nobeling.isClosedEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/InductionPublic.lean/declarations/nobeling-isclosedembedding.md) | 123 | `result-track:7b0b9584424cf3729b7b79dfd0945e8b2fcb8504ac5046c4da5cd6326bb19f09` |
+| 9 | `instance` | [LocallyConstant.freeOfProfinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/InductionPublic.lean/declarations/locallyconstant-freeofprofinite.md) | 154 | `declaration-track:a73834e770e0a13288ab701fbe8ad0cd6d97d61e160ad601a96e074b6e34fdb5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

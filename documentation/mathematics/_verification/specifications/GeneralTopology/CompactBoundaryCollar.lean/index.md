@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CompactBoundaryCollar.lean/index.md) · [Full source](../../../../GeneralTopology/CompactBoundaryCollar.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactBoundaryCollar.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactBoundaryCollar.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.AnalyticPolePatch`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/AnalyticPolePatch.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripBoundaryCollar`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripBoundaryCollar.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.AnalyticPolePatch`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/AnalyticPolePatch.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripBoundaryCollar`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripBoundaryCollar.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,22 +58,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-16.md) | 13 | `declaration-track:d4f85a9946cc7e6c3e5f3e5079354cce35d1dca904f441c7c463dc560b63ea9f` |
-| 2 | `example` | [(anonymous)](../../../../GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-5.md) | 17 | `declaration-track:31ae09747f7669a4d403d9a29dfb5688187d923b77934485d3529d7e35677bfc` |
-| 3 | `example` | [(anonymous)](../../../../GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-2.md) | 22 | `declaration-track:045b0a82943196d3050cdf9df48b908d1d18e1981b5ec303b0601149eabad579` |
-| 4 | `example` | [(anonymous)](../../../../GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-10.md) | 26 | `declaration-track:8f9b7a5177de7dd103811147bfbb0d50f7c3820fb6b8fd7076dc79b7fd51f934` |
-| 5 | `example` | [(anonymous)](../../../../GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-8.md) | 30 | `declaration-track:741dbb83c158ae815a209791d7fc879c2cc838616bc022585852daf514c7cca2` |
-| 6 | `example` | [(anonymous)](../../../../GeneralTopology/CompactBoundaryCollar.lean/declarations/example.md) | 33 | `declaration-track:03e5304e4b2bc0fffbbb63176b3072e680eaea51093b2bcc7b22e460e1504b6a` |
-| 7 | `example` | [(anonymous)](../../../../GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-12.md) | 39 | `declaration-track:a2277170ba72c626cdee8264c7b3feba7535b7b096639a59e2ea6d28ac3d4f9a` |
-| 8 | `example` | [(anonymous)](../../../../GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-13.md) | 42 | `declaration-track:be7898a487155124f48314a2e06dbdd6d0d5b4cedfe10c8df6ddee844b5905ab` |
-| 9 | `example` | [(anonymous)](../../../../GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-6.md) | 45 | `declaration-track:3574e7832758c56da517f5217fdb33cfaf3c15e435451e0d26ec86dd22fd45a2` |
-| 10 | `example` | [(anonymous)](../../../../GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-7.md) | 48 | `declaration-track:4b80c5817439ea7f2a156bff1516da353c170cfe926af031892394ec319f3fa4` |
-| 11 | `example` | [(anonymous)](../../../../GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-3.md) | 51 | `declaration-track:0967b089e83d2f71319f2f0fd01a36308b80238ba909004218697d1a2234ea1e` |
-| 12 | `example` | [(anonymous)](../../../../GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-14.md) | 53 | `declaration-track:c52591f0ae494266227bf972752ceaec23755bbbdc855c77069d7293eba5a6e2` |
-| 13 | `example` | [(anonymous)](../../../../GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-11.md) | 58 | `declaration-track:94f5aa0105d2aa3bda881f039709eda4cab720ca98590e52b96c7531468da5a3` |
-| 14 | `example` | [(anonymous)](../../../../GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-15.md) | 62 | `declaration-track:c7fa27bee26372ac2ede537f1e2b67f0870ac57496490a987cdeee27f8e2a21a` |
-| 15 | `example` | [(anonymous)](../../../../GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-4.md) | 67 | `declaration-track:2504f548683f7f5f9c906c6883889e3a07180082d4dfe05382783876c2000992` |
-| 16 | `example` | [(anonymous)](../../../../GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-9.md) | 71 | `declaration-track:853aff3caaccc2b108e51e4eeda1f1ac0ec18592f00ae52575223887e7f96333` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-16.md) | 13 | `declaration-track:d4f85a9946cc7e6c3e5f3e5079354cce35d1dca904f441c7c463dc560b63ea9f` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-5.md) | 17 | `declaration-track:31ae09747f7669a4d403d9a29dfb5688187d923b77934485d3529d7e35677bfc` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-2.md) | 22 | `declaration-track:045b0a82943196d3050cdf9df48b908d1d18e1981b5ec303b0601149eabad579` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-10.md) | 26 | `declaration-track:8f9b7a5177de7dd103811147bfbb0d50f7c3820fb6b8fd7076dc79b7fd51f934` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-8.md) | 30 | `declaration-track:741dbb83c158ae815a209791d7fc879c2cc838616bc022585852daf514c7cca2` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactBoundaryCollar.lean/declarations/example.md) | 33 | `declaration-track:03e5304e4b2bc0fffbbb63176b3072e680eaea51093b2bcc7b22e460e1504b6a` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-12.md) | 39 | `declaration-track:a2277170ba72c626cdee8264c7b3feba7535b7b096639a59e2ea6d28ac3d4f9a` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-13.md) | 42 | `declaration-track:be7898a487155124f48314a2e06dbdd6d0d5b4cedfe10c8df6ddee844b5905ab` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-6.md) | 45 | `declaration-track:3574e7832758c56da517f5217fdb33cfaf3c15e435451e0d26ec86dd22fd45a2` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-7.md) | 48 | `declaration-track:4b80c5817439ea7f2a156bff1516da353c170cfe926af031892394ec319f3fa4` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-3.md) | 51 | `declaration-track:0967b089e83d2f71319f2f0fd01a36308b80238ba909004218697d1a2234ea1e` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-14.md) | 53 | `declaration-track:c52591f0ae494266227bf972752ceaec23755bbbdc855c77069d7293eba5a6e2` |
+| 13 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-11.md) | 58 | `declaration-track:94f5aa0105d2aa3bda881f039709eda4cab720ca98590e52b96c7531468da5a3` |
+| 14 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-15.md) | 62 | `declaration-track:c7fa27bee26372ac2ede537f1e2b67f0870ac57496490a987cdeee27f8e2a21a` |
+| 15 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-4.md) | 67 | `declaration-track:2504f548683f7f5f9c906c6883889e3a07180082d4dfe05382783876c2000992` |
+| 16 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactBoundaryCollar.lean/declarations/example-source-edition-9.md) | 71 | `declaration-track:853aff3caaccc2b108e51e4eeda1f1ac0ec18592f00ae52575223887e7f96333` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

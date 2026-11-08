@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialDegreeCardPowDegreeNamespaced.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialDegreeCardPowDegreeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialDegreeCardPowDegreeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialDegreeCardPowDegreeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cardPowDegree](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialDegreeCardPowDegreeNamespaced.lean/declarations/cardpowdegree.md) | 49 | `declaration-track:bada1902b02696cdaf9dbd446fda7a6902e061a39d6aa63fb75f91fc80bcc0e5` |
-| 2 | `theorem` | [cardPowDegree_apply](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialDegreeCardPowDegreeNamespaced.lean/declarations/cardpowdegree-apply.md) | 84 | `result-track:ed78efe57e56d0877b6f574267661b17f91d593824b3aaaf9122e06da9d209c1` |
-| 3 | `theorem` | [cardPowDegree_zero](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialDegreeCardPowDegreeNamespaced.lean/declarations/cardpowdegree-zero.md) | 90 | `result-track:18a4934205743a51985fb211bc139654b5ab8c486df20e01aa38beba702f4cc8` |
-| 4 | `theorem` | [cardPowDegree_nonzero](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialDegreeCardPowDegreeNamespaced.lean/declarations/cardpowdegree-nonzero.md) | 94 | `result-track:1215779d187d7ec83b48930c874ecf853ccdd2a172e42055d91fd7395ddf24c8` |
-| 5 | `theorem` | [cardPowDegree_isEuclidean](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialDegreeCardPowDegreeNamespaced.lean/declarations/cardpowdegree-iseuclidean.md) | 99 | `result-track:715b699beca818ff5d38608b392e1f80e97dd7e217cf5321a9e361eb5f621314` |
+| 1 | `def` | [cardPowDegree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialDegreeCardPowDegreeNamespaced.lean/declarations/cardpowdegree.md) | 49 | `declaration-track:bada1902b02696cdaf9dbd446fda7a6902e061a39d6aa63fb75f91fc80bcc0e5` |
+| 2 | `theorem` | [cardPowDegree_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialDegreeCardPowDegreeNamespaced.lean/declarations/cardpowdegree-apply.md) | 84 | `result-track:ed78efe57e56d0877b6f574267661b17f91d593824b3aaaf9122e06da9d209c1` |
+| 3 | `theorem` | [cardPowDegree_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialDegreeCardPowDegreeNamespaced.lean/declarations/cardpowdegree-zero.md) | 90 | `result-track:18a4934205743a51985fb211bc139654b5ab8c486df20e01aa38beba702f4cc8` |
+| 4 | `theorem` | [cardPowDegree_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialDegreeCardPowDegreeNamespaced.lean/declarations/cardpowdegree-nonzero.md) | 94 | `result-track:1215779d187d7ec83b48930c874ecf853ccdd2a172e42055d91fd7395ddf24c8` |
+| 5 | `theorem` | [cardPowDegree_isEuclidean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/DataPolynomialDegreeCardPowDegreeNamespaced.lean/declarations/cardpowdegree-iseuclidean.md) | 99 | `result-track:715b699beca818ff5d38608b392e1f80e97dd7e217cf5321a9e361eb5f621314` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

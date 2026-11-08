@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourcePNTPairingBound.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourcePNTPairingBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [correlationBudget](../../../../MeasureAndIntegration/SourcePNTPairingBound.lean/declarations/correlationbudget.md) | 16 | `declaration-track:63f8153d0b35e2b3e6bb2b3c58d729d8871c55af35333af863c728d51decaad1` |
-| 2 | `theorem` | [correlationBudget_nonneg](../../../../MeasureAndIntegration/SourcePNTPairingBound.lean/declarations/correlationbudget-nonneg.md) | 18 | `result-track:92b35acedb64328304849a45d09c54eacade2155734d16b1e130114e3c787293` |
-| 3 | `theorem` | [correlationDifference_uniform](../../../../MeasureAndIntegration/SourcePNTPairingBound.lean/declarations/correlationdifference-uniform.md) | 22 | `result-track:0ebb32ecb6a2a1bf6e7482e9e77657c5712e901c34750fcc86f88cd11691ca20` |
-| 4 | `theorem` | [sourcePairing_intervalIntegrable](../../../../MeasureAndIntegration/SourcePNTPairingBound.lean/declarations/sourcepairing-intervalintegrable.md) | 28 | `result-track:a4cbb6055e928e47cdd9cec4bbed4d0c04220e7744e19ee1b2071ffac49e994d` |
-| 5 | `theorem` | [exp_half_intervalIntegral](../../../../MeasureAndIntegration/SourcePNTPairingBound.lean/declarations/exp-half-intervalintegral.md) | 43 | `result-track:0b0fce6972442b74e3ac1bdc70fe7e76922a9944f212052dc77dbd6ae6d4b233` |
-| 6 | `theorem` | [source_integrand_bound](../../../../MeasureAndIntegration/SourcePNTPairingBound.lean/declarations/source-integrand-bound.md) | 50 | `result-track:8f84c265484c6f4cf3abb5a0303ba76ea57816f61ca5cb0cf769ffd89b08fd62` |
-| 7 | `theorem` | [source_interval_bound](../../../../MeasureAndIntegration/SourcePNTPairingBound.lean/declarations/source-interval-bound.md) | 66 | `result-track:1f0e9b22c389cbe8364a17db4bd02f886d0b830540cdc8918a4497e2e488dda3` |
-| 8 | `theorem` | [signedPairing_bound](../../../../MeasureAndIntegration/SourcePNTPairingBound.lean/declarations/signedpairing-bound.md) | 83 | `result-track:6d8a693e80904d284c442a895563ca27d477a4cd639099c4e0ef7a2a489419f3` |
-| 9 | `theorem` | [signedPairing_eventual_bound](../../../../MeasureAndIntegration/SourcePNTPairingBound.lean/declarations/signedpairing-eventual-bound.md) | 117 | `result-track:f6a5571ddadd264b2debcd7776171ada3a74fbd992de6ceadd31060978705d70` |
+| 1 | `def` | [correlationBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBound.lean/declarations/correlationbudget.md) | 16 | `declaration-track:63f8153d0b35e2b3e6bb2b3c58d729d8871c55af35333af863c728d51decaad1` |
+| 2 | `theorem` | [correlationBudget_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBound.lean/declarations/correlationbudget-nonneg.md) | 18 | `result-track:92b35acedb64328304849a45d09c54eacade2155734d16b1e130114e3c787293` |
+| 3 | `theorem` | [correlationDifference_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBound.lean/declarations/correlationdifference-uniform.md) | 22 | `result-track:0ebb32ecb6a2a1bf6e7482e9e77657c5712e901c34750fcc86f88cd11691ca20` |
+| 4 | `theorem` | [sourcePairing_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBound.lean/declarations/sourcepairing-intervalintegrable.md) | 28 | `result-track:a4cbb6055e928e47cdd9cec4bbed4d0c04220e7744e19ee1b2071ffac49e994d` |
+| 5 | `theorem` | [exp_half_intervalIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBound.lean/declarations/exp-half-intervalintegral.md) | 43 | `result-track:0b0fce6972442b74e3ac1bdc70fe7e76922a9944f212052dc77dbd6ae6d4b233` |
+| 6 | `theorem` | [source_integrand_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBound.lean/declarations/source-integrand-bound.md) | 50 | `result-track:8f84c265484c6f4cf3abb5a0303ba76ea57816f61ca5cb0cf769ffd89b08fd62` |
+| 7 | `theorem` | [source_interval_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBound.lean/declarations/source-interval-bound.md) | 66 | `result-track:1f0e9b22c389cbe8364a17db4bd02f886d0b830540cdc8918a4497e2e488dda3` |
+| 8 | `theorem` | [signedPairing_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBound.lean/declarations/signedpairing-bound.md) | 83 | `result-track:6d8a693e80904d284c442a895563ca27d477a4cd639099c4e0ef7a2a489419f3` |
+| 9 | `theorem` | [signedPairing_eventual_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBound.lean/declarations/signedpairing-eventual-bound.md) | 117 | `result-track:f6a5571ddadd264b2debcd7776171ada3a74fbd992de6ceadd31060978705d70` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

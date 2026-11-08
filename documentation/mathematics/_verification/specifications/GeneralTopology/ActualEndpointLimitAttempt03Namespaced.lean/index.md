@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceNormalization_tendsto](../../../../GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/declarations/sourcenormalization-tendsto.md) | 30 | `result-track:fedab58287f5a1fc7eb55645553362293b3ac36c6f32c854c31b6287d994eb10` |
-| 2 | `theorem` | [endpointPolynomialCorrelation_continuous](../../../../GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/declarations/endpointpolynomialcorrelation-continuous.md) | 41 | `result-track:6f655ca0d69ba4cc653a8ee5db3e980e43ec05dd0e55e1790dbdd20f76ef8a0f` |
-| 3 | `theorem` | [endpointPolynomialCorrelation_at_zero](../../../../GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/declarations/endpointpolynomialcorrelation-at-zero.md) | 47 | `result-track:445a0afbbd4ada17156f9a353e5badf4a49c3bcaf79619fb0ef57a280a0fed38` |
-| 4 | `theorem` | [actual_endpoint_scaled_tendsto](../../../../GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/declarations/actual-endpoint-scaled-tendsto.md) | 54 | `result-track:e51a5b082fbe0563eda68d1947218a6824b37f96fab1d55ede0d23c8763e0f2d` |
-| 5 | `theorem` | [actual_endpoint_normalized_tendsto](../../../../GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/declarations/actual-endpoint-normalized-tendsto.md) | 67 | `result-track:7a6cbc8fad9d90bc90cb8976314324a783c47e1a8b8b9388261c1f2439df4e9b` |
-| 6 | `theorem` | [actual_endpoint_excursion_tendsto](../../../../GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/declarations/actual-endpoint-excursion-tendsto.md) | 79 | `result-track:a6ac8560b336108f5986d154ca6d67ac861bf66185b7781cfb30dccfef2968a8` |
-| 7 | `theorem` | [actual_positiveMass_tendsto](../../../../GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/declarations/actual-positivemass-tendsto.md) | 100 | `result-track:eb261994b5ddfeb6697e44dddf54352a84bd63c9c21457f02366ac85449588d7` |
-| 8 | `theorem` | [actual_negativeMass_tendsto](../../../../GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/declarations/actual-negativemass-tendsto.md) | 108 | `result-track:146102174c789d2f6e34c60d6dc7907f80b163aa0dc72bd83ad543507d2a7840` |
-| 9 | `theorem` | [actual_massRatio_tendsto](../../../../GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/declarations/actual-massratio-tendsto.md) | 114 | `result-track:97ec81191d6763e7a372e081b4f29228c5f31bf587af2063041d090316a03790` |
+| 1 | `theorem` | [sourceNormalization_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/declarations/sourcenormalization-tendsto.md) | 30 | `result-track:fedab58287f5a1fc7eb55645553362293b3ac36c6f32c854c31b6287d994eb10` |
+| 2 | `theorem` | [endpointPolynomialCorrelation_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/declarations/endpointpolynomialcorrelation-continuous.md) | 41 | `result-track:6f655ca0d69ba4cc653a8ee5db3e980e43ec05dd0e55e1790dbdd20f76ef8a0f` |
+| 3 | `theorem` | [endpointPolynomialCorrelation_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/declarations/endpointpolynomialcorrelation-at-zero.md) | 47 | `result-track:445a0afbbd4ada17156f9a353e5badf4a49c3bcaf79619fb0ef57a280a0fed38` |
+| 4 | `theorem` | [actual_endpoint_scaled_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/declarations/actual-endpoint-scaled-tendsto.md) | 54 | `result-track:e51a5b082fbe0563eda68d1947218a6824b37f96fab1d55ede0d23c8763e0f2d` |
+| 5 | `theorem` | [actual_endpoint_normalized_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/declarations/actual-endpoint-normalized-tendsto.md) | 67 | `result-track:7a6cbc8fad9d90bc90cb8976314324a783c47e1a8b8b9388261c1f2439df4e9b` |
+| 6 | `theorem` | [actual_endpoint_excursion_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/declarations/actual-endpoint-excursion-tendsto.md) | 79 | `result-track:a6ac8560b336108f5986d154ca6d67ac861bf66185b7781cfb30dccfef2968a8` |
+| 7 | `theorem` | [actual_positiveMass_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/declarations/actual-positivemass-tendsto.md) | 100 | `result-track:eb261994b5ddfeb6697e44dddf54352a84bd63c9c21457f02366ac85449588d7` |
+| 8 | `theorem` | [actual_negativeMass_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/declarations/actual-negativemass-tendsto.md) | 108 | `result-track:146102174c789d2f6e34c60d6dc7907f80b163aa0dc72bd83ad543507d2a7840` |
+| 9 | `theorem` | [actual_massRatio_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/declarations/actual-massratio-tendsto.md) | 114 | `result-track:97ec81191d6763e7a372e081b4f29228c5f31bf587af2063041d090316a03790` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

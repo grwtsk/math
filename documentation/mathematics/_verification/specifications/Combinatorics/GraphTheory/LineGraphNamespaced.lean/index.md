@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/LineGraphNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/LineGraphNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LineGraphNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LineGraphNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [lineGraph](../../../../../Combinatorics/GraphTheory/LineGraphNamespaced.lean/declarations/linegraph.md) | 37 | `declaration-track:33bbb8077e85750c011bb5ef5f29933c9a56c09c70cd06b6b74f058633cfdac7` |
-| 2 | `lemma` | [lineGraph_adj_iff_exists](../../../../../Combinatorics/GraphTheory/LineGraphNamespaced.lean/declarations/linegraph-adj-iff-exists.md) | 41 | `result-track:05804d6aaa407a13dd0a70ebd6e2d86824844cb9393533278a671fc4dacc49e8` |
-| 3 | `lemma` | [lineGraph_bot](../../../../../Combinatorics/GraphTheory/LineGraphNamespaced.lean/declarations/linegraph-bot.md) | 45 | `result-track:0f6f5005cc041d6dd2a95f2324940b0dc579bbb3058fdca45b71089575be65bf` |
+| 1 | `def` | [lineGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LineGraphNamespaced.lean/declarations/linegraph.md) | 37 | `declaration-track:33bbb8077e85750c011bb5ef5f29933c9a56c09c70cd06b6b74f058633cfdac7` |
+| 2 | `lemma` | [lineGraph_adj_iff_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LineGraphNamespaced.lean/declarations/linegraph-adj-iff-exists.md) | 41 | `result-track:05804d6aaa407a13dd0a70ebd6e2d86824844cb9393533278a671fc4dacc49e8` |
+| 3 | `lemma` | [lineGraph_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LineGraphNamespaced.lean/declarations/linegraph-bot.md) | 45 | `result-track:0f6f5005cc041d6dd2a95f2324940b0dc579bbb3058fdca45b71089575be65bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

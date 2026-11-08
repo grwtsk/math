@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CenterShellData.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CenterShellData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CenterShellData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CenterShellData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpectralShellEncoded](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CenterShellData.lean/declarations/spectralshellencoded.md) | 41 | `declaration-track:f797bed74e53ecac950f36872e1030df0b890a7b9972928adf532f49d262dbdd` |
-| 2 | `theorem` | [ext](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CenterShellData.lean/declarations/ext.md) | 49 | `result-track:d3207d729b3659eb41969a0b0dbafd7ceb205a2a44012963e35aaf6c8cf1025d` |
+| 1 | `structure` | [SpectralShellEncoded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CenterShellData.lean/declarations/spectralshellencoded.md) | 41 | `declaration-track:f797bed74e53ecac950f36872e1030df0b890a7b9972928adf532f49d262dbdd` |
+| 2 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CenterShellData.lean/declarations/ext.md) | 49 | `result-track:d3207d729b3659eb41969a0b0dbafd7ceb205a2a44012963e35aaf6c8cf1025d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

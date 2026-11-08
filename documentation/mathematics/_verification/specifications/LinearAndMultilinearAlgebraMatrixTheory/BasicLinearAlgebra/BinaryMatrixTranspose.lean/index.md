@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixTranspose.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixTranspose.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixTranspose.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixTranspose.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Carrier.Bit` — import line 19; external provider; requires a separately pinned dependency.
-- [Finite Binary Matrix Carrier](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBinaryMatrixCarrier.lean/index.md) — import line 20; pinned internal source present.
+- [Finite Binary Matrix Carrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBinaryMatrixCarrier.lean/index.md) — import line 20; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [transpose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixTranspose.lean/declarations/transpose.md) | 38 | `declaration-track:9811dc533b39f945bce716e890078df6ec28a7be5ed8f5566df9e503abbdc828` |
-| 2 | `theorem` | [rows_transpose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixTranspose.lean/declarations/rows-transpose.md) | 42 | `result-track:383a5932503c3ef943f3744822f209b4ad03a423d65a706f39e5896b925b1762` |
-| 3 | `theorem` | [cols_transpose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixTranspose.lean/declarations/cols-transpose.md) | 47 | `result-track:56b9ce549b799ae4807c0989a203bb840d8247024a321aea12b163aa09fef4e7` |
-| 4 | `theorem` | [get_transpose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixTranspose.lean/declarations/get-transpose.md) | 52 | `result-track:94e1696c52c04b36f89b4dad2b847239c9d7c7bccaba714608a951ed83fb5241` |
+| 1 | `def` | [transpose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixTranspose.lean/declarations/transpose.md) | 38 | `declaration-track:9811dc533b39f945bce716e890078df6ec28a7be5ed8f5566df9e503abbdc828` |
+| 2 | `theorem` | [rows_transpose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixTranspose.lean/declarations/rows-transpose.md) | 42 | `result-track:383a5932503c3ef943f3744822f209b4ad03a423d65a706f39e5896b925b1762` |
+| 3 | `theorem` | [cols_transpose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixTranspose.lean/declarations/cols-transpose.md) | 47 | `result-track:56b9ce549b799ae4807c0989a203bb840d8247024a321aea12b163aa09fef4e7` |
+| 4 | `theorem` | [get_transpose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryMatrixTranspose.lean/declarations/get-transpose.md) | 52 | `result-track:94e1696c52c04b36f89b4dad2b847239c9d7c7bccaba714608a951ed83fb5241` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

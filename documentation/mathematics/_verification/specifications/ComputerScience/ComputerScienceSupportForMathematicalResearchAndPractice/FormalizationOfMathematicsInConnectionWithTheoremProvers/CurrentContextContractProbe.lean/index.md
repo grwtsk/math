@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CurrentContextContractProbe.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CurrentContextContractProbe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CurrentContextContractProbe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CurrentContextContractProbe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [guardCurrent](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CurrentContextContractProbe.lean/declarations/guardcurrent.md) | 11 | `declaration-track:85d01a045e17718f1db7d5ca162c31531454d2f5bf2846ba6d37476157f850e0` |
-| 2 | `def` | [comparisonControls](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CurrentContextContractProbe.lean/declarations/comparisoncontrols.md) | 21 | `declaration-track:b86593675a187a7c7f7b6732c42cfa2e334918f8cfeefeb4bbce0c536e6429ab` |
-| 3 | `def` | [observe](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CurrentContextContractProbe.lean/declarations/observe.md) | 55 | `declaration-track:fae3411fc9234a5791eb4e560ef3aca78620d4f6a063eef0c172a7e99b91904b` |
+| 1 | `def` | [guardCurrent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CurrentContextContractProbe.lean/declarations/guardcurrent.md) | 11 | `declaration-track:85d01a045e17718f1db7d5ca162c31531454d2f5bf2846ba6d37476157f850e0` |
+| 2 | `def` | [comparisonControls](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CurrentContextContractProbe.lean/declarations/comparisoncontrols.md) | 21 | `declaration-track:b86593675a187a7c7f7b6732c42cfa2e334918f8cfeefeb4bbce0c536e6429ab` |
+| 3 | `def` | [observe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CurrentContextContractProbe.lean/declarations/observe.md) | 55 | `declaration-track:fae3411fc9234a5791eb4e560ef3aca78620d4f6a063eef0c172a7e99b91904b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

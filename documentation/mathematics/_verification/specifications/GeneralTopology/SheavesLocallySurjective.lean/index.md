@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SheavesLocallySurjective.lean/index.md) · [Full source](../../../../GeneralTopology/SheavesLocallySurjective.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesLocallySurjective.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesLocallySurjective.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsLocallySurjective](../../../../GeneralTopology/SheavesLocallySurjective.lean/declarations/islocallysurjective.md) | 56 | `declaration-track:dc0164b64b03c06a3932056ac38a6d689b97425e300c564988729aa40c53ba0f` |
-| 2 | `theorem` | [isLocallySurjective_iff](../../../../GeneralTopology/SheavesLocallySurjective.lean/declarations/islocallysurjective-iff.md) | 59 | `result-track:b24046698e760f22c091c2a861a1b9948a0ff4ef367805213953085368876fc3` |
-| 3 | `theorem` | [locally_surjective_iff_surjective_on_stalks](../../../../GeneralTopology/SheavesLocallySurjective.lean/declarations/locally-surjective-iff-surjective-on-stalks.md) | 70 | `result-track:ceeb0bcfe25f3f3f705d550af458099eb082de8e3f6f1b03e7b726aa6ffd656e` |
+| 1 | `def` | [IsLocallySurjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesLocallySurjective.lean/declarations/islocallysurjective.md) | 56 | `declaration-track:dc0164b64b03c06a3932056ac38a6d689b97425e300c564988729aa40c53ba0f` |
+| 2 | `theorem` | [isLocallySurjective_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesLocallySurjective.lean/declarations/islocallysurjective-iff.md) | 59 | `result-track:b24046698e760f22c091c2a861a1b9948a0ff4ef367805213953085368876fc3` |
+| 3 | `theorem` | [locally_surjective_iff_surjective_on_stalks](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesLocallySurjective.lean/declarations/locally-surjective-iff-surjective-on-stalks.md) | 70 | `result-track:ceeb0bcfe25f3f3f705d550af458099eb082de8e3f6f1b03e7b726aa6ffd656e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

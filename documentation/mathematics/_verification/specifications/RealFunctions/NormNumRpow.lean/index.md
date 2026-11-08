@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/NormNumRpow.lean/index.md) · [Full source](../../../../RealFunctions/NormNumRpow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NormNumRpow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NormNumRpow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../RealFunctions/NormNumRpow.lean/declarations/example-source-edition-5.md) | 8 | `declaration-track:b59c2d19aad7f7fc99f62b3ee8e7ee9a246ba0a44f983ac6cba22436e7532838` |
-| 2 | `example` | [(anonymous)](../../../../RealFunctions/NormNumRpow.lean/declarations/example-source-edition-3.md) | 9 | `declaration-track:87ccbab336ae056709513e7cd42039b79eff168e1cc618493610341aa30206ab` |
-| 3 | `example` | [(anonymous)](../../../../RealFunctions/NormNumRpow.lean/declarations/example-source-edition-2.md) | 10 | `declaration-track:2e4e8b3e1e25601740063e8e36f0d8883c552ca9db1b6d4517ed34b5c3349e4c` |
-| 4 | `example` | [(anonymous)](../../../../RealFunctions/NormNumRpow.lean/declarations/example-source-edition-6.md) | 11 | `declaration-track:c67faa2d923fa9e882219dfd97ad0cbd209adf850efd1f96eba3dcbac54292e0` |
-| 5 | `example` | [(anonymous)](../../../../RealFunctions/NormNumRpow.lean/declarations/example-source-edition-8.md) | 12 | `declaration-track:eb324bb18975aa1d2b0a1297b02543680ccda3c3d2a89b32b09f7db61513ef0c` |
-| 6 | `example` | [(anonymous)](../../../../RealFunctions/NormNumRpow.lean/declarations/example-source-edition-4.md) | 13 | `declaration-track:ae5885a1ac6b0d89ba1a4d6724f2a5ad80118c99d189c4d94929ba39a23d1321` |
-| 7 | `example` | [(anonymous)](../../../../RealFunctions/NormNumRpow.lean/declarations/example-source-edition-7.md) | 14 | `declaration-track:e303e5125f507349c8cfdad98dfd623213946765d817e8eac695f6d29ddb837d` |
-| 8 | `example` | [(anonymous)](../../../../RealFunctions/NormNumRpow.lean/declarations/example.md) | 15 | `declaration-track:00734d0c510f8b2d8a9bdc920adf384699e8cd85b2e7b49629ab3780bfae63df` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NormNumRpow.lean/declarations/example-source-edition-5.md) | 8 | `declaration-track:b59c2d19aad7f7fc99f62b3ee8e7ee9a246ba0a44f983ac6cba22436e7532838` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NormNumRpow.lean/declarations/example-source-edition-3.md) | 9 | `declaration-track:87ccbab336ae056709513e7cd42039b79eff168e1cc618493610341aa30206ab` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NormNumRpow.lean/declarations/example-source-edition-2.md) | 10 | `declaration-track:2e4e8b3e1e25601740063e8e36f0d8883c552ca9db1b6d4517ed34b5c3349e4c` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NormNumRpow.lean/declarations/example-source-edition-6.md) | 11 | `declaration-track:c67faa2d923fa9e882219dfd97ad0cbd209adf850efd1f96eba3dcbac54292e0` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NormNumRpow.lean/declarations/example-source-edition-8.md) | 12 | `declaration-track:eb324bb18975aa1d2b0a1297b02543680ccda3c3d2a89b32b09f7db61513ef0c` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NormNumRpow.lean/declarations/example-source-edition-4.md) | 13 | `declaration-track:ae5885a1ac6b0d89ba1a4d6724f2a5ad80118c99d189c4d94929ba39a23d1321` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NormNumRpow.lean/declarations/example-source-edition-7.md) | 14 | `declaration-track:e303e5125f507349c8cfdad98dfd623213946765d817e8eac695f6d29ddb837d` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NormNumRpow.lean/declarations/example.md) | 15 | `declaration-track:00734d0c510f8b2d8a9bdc920adf384699e8cd85b2e7b49629ab3780bfae63df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

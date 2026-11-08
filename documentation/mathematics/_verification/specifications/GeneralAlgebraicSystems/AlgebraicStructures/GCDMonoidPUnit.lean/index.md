@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidPUnit.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidPUnit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidPUnit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidPUnit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [normalizedGCDMonoid](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidPUnit.lean/declarations/normalizedgcdmonoid.md) | 19 | `declaration-track:50529bafa9f71a0aa269de4fb814f2821fc45139fa23842e511fa549d1cf8bc7` |
-| 2 | `theorem` | [gcd_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidPUnit.lean/declarations/gcd-eq.md) | 36 | `result-track:4f21edc1ef7e44a27240c089f415df0b1cd9437d0651d8da996125a46a87084c` |
-| 3 | `theorem` | [lcm_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidPUnit.lean/declarations/lcm-eq.md) | 40 | `result-track:faf9f6c37445789f4848b9fc55b03d189f1cca831ecb39310c9a5cb04cfd2c7b` |
-| 4 | `theorem` | [norm_unit_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidPUnit.lean/declarations/norm-unit-eq.md) | 44 | `result-track:ea33c8137200db3ad605935a93ed4da5648f5db69db885050f463f77b302f1e4` |
+| 1 | `instance` | [normalizedGCDMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidPUnit.lean/declarations/normalizedgcdmonoid.md) | 19 | `declaration-track:50529bafa9f71a0aa269de4fb814f2821fc45139fa23842e511fa549d1cf8bc7` |
+| 2 | `theorem` | [gcd_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidPUnit.lean/declarations/gcd-eq.md) | 36 | `result-track:4f21edc1ef7e44a27240c089f415df0b1cd9437d0651d8da996125a46a87084c` |
+| 3 | `theorem` | [lcm_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidPUnit.lean/declarations/lcm-eq.md) | 40 | `result-track:faf9f6c37445789f4848b9fc55b03d189f1cca831ecb39310c9a5cb04cfd2c7b` |
+| 4 | `theorem` | [norm_unit_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GCDMonoidPUnit.lean/declarations/norm-unit-eq.md) | 44 | `result-track:ea33c8137200db3ad605935a93ed4da5648f5db69db885050f463f77b302f1e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

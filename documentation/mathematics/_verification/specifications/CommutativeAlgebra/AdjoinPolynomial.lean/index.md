@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AdjoinPolynomial.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AdjoinPolynomial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPolynomial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPolynomial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [adjoin_X](../../../../CommutativeAlgebra/AdjoinPolynomial.lean/declarations/adjoin-x.md) | 36 | `result-track:e7d73cbb8e8ffe970acbc2282281d40855524291ed485b371e3ebe74cb9a590c` |
-| 2 | `theorem` | [_root_.Algebra.adjoin_singleton_eq_range_aeval](../../../../CommutativeAlgebra/AdjoinPolynomial.lean/declarations/root-algebra-adjoin-singleton-eq-range-aeval.md) | 43 | `result-track:6ddca4cfad21bcf6bebf61470fb50f154da01c0cf8a50616c63ecbb98bc11034` |
-| 3 | `theorem` | [aeval_mem_adjoin_singleton](../../../../CommutativeAlgebra/AdjoinPolynomial.lean/declarations/aeval-mem-adjoin-singleton.md) | 48 | `result-track:b10bf2439353fc7f15f52c1c44261f719cffa3c859acac0cc40c84c26042fce1` |
-| 4 | `instance` | [instCommSemiringAdjoinSingleton](../../../../CommutativeAlgebra/AdjoinPolynomial.lean/declarations/instcommsemiringadjoinsingleton.md) | 52 | `declaration-track:f4c30522e374a717bf06dd92503cf57c54bb1e1417e1a1d45aadf80733501d92` |
-| 5 | `instance` | [instCommRingAdjoinSingleton](../../../../CommutativeAlgebra/AdjoinPolynomial.lean/declarations/instcommringadjoinsingleton.md) | 60 | `declaration-track:f4f0f9e91baa25cbe2ddc36f83e7793f4b1ac7bdc280433b014023d200acc914` |
+| 1 | `theorem` | [adjoin_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPolynomial.lean/declarations/adjoin-x.md) | 36 | `result-track:e7d73cbb8e8ffe970acbc2282281d40855524291ed485b371e3ebe74cb9a590c` |
+| 2 | `theorem` | [_root_.Algebra.adjoin_singleton_eq_range_aeval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPolynomial.lean/declarations/root-algebra-adjoin-singleton-eq-range-aeval.md) | 43 | `result-track:6ddca4cfad21bcf6bebf61470fb50f154da01c0cf8a50616c63ecbb98bc11034` |
+| 3 | `theorem` | [aeval_mem_adjoin_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPolynomial.lean/declarations/aeval-mem-adjoin-singleton.md) | 48 | `result-track:b10bf2439353fc7f15f52c1c44261f719cffa3c859acac0cc40c84c26042fce1` |
+| 4 | `instance` | [instCommSemiringAdjoinSingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPolynomial.lean/declarations/instcommsemiringadjoinsingleton.md) | 52 | `declaration-track:f4c30522e374a717bf06dd92503cf57c54bb1e1417e1a1d45aadf80733501d92` |
+| 5 | `instance` | [instCommRingAdjoinSingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPolynomial.lean/declarations/instcommringadjoinsingleton.md) | 60 | `declaration-track:f4f0f9e91baa25cbe2ddc36f83e7793f4b1ac7bdc280433b014023d200acc914` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

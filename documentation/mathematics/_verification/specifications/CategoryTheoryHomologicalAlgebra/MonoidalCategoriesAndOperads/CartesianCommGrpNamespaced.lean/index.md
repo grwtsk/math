@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianCommGrpNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianCommGrpNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianCommGrpNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianCommGrpNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [abbrev](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianCommGrpNamespaced.lean/declarations/abbrev.md) | 29 | `declaration-track:fab773c4f3e66ab07bfb1749fb34482c9c8f53db94957f958298ee41fa86d78f` |
-| 2 | `def` | [CommGrp_Class.ofRepresentableBy](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianCommGrpNamespaced.lean/declarations/commgrp-class-ofrepresentableby.md) | 35 | `declaration-track:45d9e9a39215ceb124f8f1a19d9e3400e1c0acf59238893283b1bbaa248d1465` |
+| 1 | `class` | [abbrev](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianCommGrpNamespaced.lean/declarations/abbrev.md) | 29 | `declaration-track:fab773c4f3e66ab07bfb1749fb34482c9c8f53db94957f958298ee41fa86d78f` |
+| 2 | `def` | [CommGrp_Class.ofRepresentableBy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianCommGrpNamespaced.lean/declarations/commgrp-class-ofrepresentableby.md) | 35 | `declaration-track:45d9e9a39215ceb124f8f1a19d9e3400e1c0acf59238893283b1bbaa248d1465` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

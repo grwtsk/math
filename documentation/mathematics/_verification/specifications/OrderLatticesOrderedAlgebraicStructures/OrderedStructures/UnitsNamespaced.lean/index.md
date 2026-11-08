@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/declarations/instance-source-edition-2.md) | 27 | `declaration-track:ea3aa504d3edfb5e966bb6200b09dae41d2224d813458c2015ce6f5b483658e5` |
-| 2 | `theorem` | [val_le_val](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/declarations/val-le-val.md) | 31 | `result-track:81eb1bd55dedde2170615232cd1a42b1048c8453a3281246b2d17c693d46fe24` |
-| 3 | `theorem` | [val_lt_val](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/declarations/val-lt-val.md) | 35 | `result-track:e79a8def993197e1eaa5e0cc234a650e5a23a0a1e921d38f854318ebcea9fbb1` |
-| 4 | `instance` | [instPartialOrderUnits](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/declarations/instpartialorderunits.md) | 39 | `declaration-track:d7743b2f460d656906cfc74f55276a97edeb2ca97c520bc526e42a37ac40b275` |
-| 5 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/declarations/instance.md) | 43 | `declaration-track:7e0ec57118ede3cb3417f66965b82a8fc0fb01e2b2b25154e35afe38748eb271` |
-| 6 | `def` | [orderEmbeddingVal](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/declarations/orderembeddingval.md) | 49 | `declaration-track:85b79b5d536e4be191614ae445f1214b35b007512602681227272d23e22a1d08` |
-| 7 | `theorem` | [max_val](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/declarations/max-val.md) | 53 | `result-track:a47aa9b96459fbb7f8d7ffc5feb4cdfc381576fffc213c556b630c8fc3054b18` |
-| 8 | `theorem` | [min_val](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/declarations/min-val.md) | 57 | `result-track:937ca946a6a75c786e2f7fd966c0da2ae8dedf8e4af792d641040cdf1c62b56d` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/declarations/instance-source-edition-2.md) | 27 | `declaration-track:ea3aa504d3edfb5e966bb6200b09dae41d2224d813458c2015ce6f5b483658e5` |
+| 2 | `theorem` | [val_le_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/declarations/val-le-val.md) | 31 | `result-track:81eb1bd55dedde2170615232cd1a42b1048c8453a3281246b2d17c693d46fe24` |
+| 3 | `theorem` | [val_lt_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/declarations/val-lt-val.md) | 35 | `result-track:e79a8def993197e1eaa5e0cc234a650e5a23a0a1e921d38f854318ebcea9fbb1` |
+| 4 | `instance` | [instPartialOrderUnits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/declarations/instpartialorderunits.md) | 39 | `declaration-track:d7743b2f460d656906cfc74f55276a97edeb2ca97c520bc526e42a37ac40b275` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/declarations/instance.md) | 43 | `declaration-track:7e0ec57118ede3cb3417f66965b82a8fc0fb01e2b2b25154e35afe38748eb271` |
+| 6 | `def` | [orderEmbeddingVal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/declarations/orderembeddingval.md) | 49 | `declaration-track:85b79b5d536e4be191614ae445f1214b35b007512602681227272d23e22a1d08` |
+| 7 | `theorem` | [max_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/declarations/max-val.md) | 53 | `result-track:a47aa9b96459fbb7f8d7ffc5feb4cdfc381576fffc213c556b630c8fc3054b18` |
+| 8 | `theorem` | [min_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnitsNamespaced.lean/declarations/min-val.md) | 57 | `result-track:937ca946a6a75c786e2f7fd966c0da2ae8dedf8e4af792d641040cdf1c62b56d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

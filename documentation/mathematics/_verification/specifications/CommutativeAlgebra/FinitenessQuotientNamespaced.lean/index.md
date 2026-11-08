@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FinitenessQuotientNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FinitenessQuotientNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessQuotientNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessQuotientNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [module_finite_of_liesOver](../../../../CommutativeAlgebra/FinitenessQuotientNamespaced.lean/declarations/module-finite-of-liesover.md) | 27 | `declaration-track:610a01263709bd7858b521a9bc75cb2ebb2152f504c540ff2807c42b27bf642b` |
-| 2 | `example` | [(anonymous)](../../../../CommutativeAlgebra/FinitenessQuotientNamespaced.lean/declarations/example.md) | 30 | `declaration-track:d7c6fff860896610bfd4a23397478f411c850a95498dffff22113c3a2a2e33d6` |
-| 3 | `instance` | [algebra_finiteType_of_liesOver](../../../../CommutativeAlgebra/FinitenessQuotientNamespaced.lean/declarations/algebra-finitetype-of-liesover.md) | 33 | `declaration-track:744ef99d3bf3904727ee00a2219964054a42e557fc32b964001850c15757c2e5` |
-| 4 | `instance` | [isNoetherian_of_liesOver](../../../../CommutativeAlgebra/FinitenessQuotientNamespaced.lean/declarations/isnoetherian-of-liesover.md) | 38 | `declaration-track:ba53e10c9809b97e8f457c56a1f83ba8514be2f7c6d14d7ed0d45a3becd7c1ac` |
-| 5 | `instance` | [QuotientMapQuotient.isNoetherian](../../../../CommutativeAlgebra/FinitenessQuotientNamespaced.lean/declarations/quotientmapquotient-isnoetherian.md) | 41 | `declaration-track:54e51385ad75ffe83b60dcb7986d3f65f02af66f87e295fdf1600eafb6d5c09a` |
+| 1 | `instance` | [module_finite_of_liesOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessQuotientNamespaced.lean/declarations/module-finite-of-liesover.md) | 27 | `declaration-track:610a01263709bd7858b521a9bc75cb2ebb2152f504c540ff2807c42b27bf642b` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessQuotientNamespaced.lean/declarations/example.md) | 30 | `declaration-track:d7c6fff860896610bfd4a23397478f411c850a95498dffff22113c3a2a2e33d6` |
+| 3 | `instance` | [algebra_finiteType_of_liesOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessQuotientNamespaced.lean/declarations/algebra-finitetype-of-liesover.md) | 33 | `declaration-track:744ef99d3bf3904727ee00a2219964054a42e557fc32b964001850c15757c2e5` |
+| 4 | `instance` | [isNoetherian_of_liesOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessQuotientNamespaced.lean/declarations/isnoetherian-of-liesover.md) | 38 | `declaration-track:ba53e10c9809b97e8f457c56a1f83ba8514be2f7c6d14d7ed0d45a3becd7c1ac` |
+| 5 | `instance` | [QuotientMapQuotient.isNoetherian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessQuotientNamespaced.lean/declarations/quotientmapquotient-isnoetherian.md) | 41 | `declaration-track:54e51385ad75ffe83b60dcb7986d3f65f02af66f87e295fdf1600eafb6d5c09a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

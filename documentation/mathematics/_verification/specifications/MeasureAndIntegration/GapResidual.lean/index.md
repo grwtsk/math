@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/GapResidual.lean/index.md) · [Full source](../../../../MeasureAndIntegration/GapResidual.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GapResidual.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GapResidual.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thetaPhi_mul_sub_pow_tendsto](../../../../MeasureAndIntegration/GapResidual.lean/declarations/thetaphi-mul-sub-pow-tendsto.md) | 8 | `result-track:aeae0a1c9c45e98a1f88452c5a676dbd7172c3c32905e22c0b5683de8c11fd78` |
-| 2 | `theorem` | [thetaPhi_deriv_sub_pow_integrable](../../../../MeasureAndIntegration/GapResidual.lean/declarations/thetaphi-deriv-sub-pow-integrable.md) | 30 | `result-track:21b86ce99a8aa993e977fb2b9980151e3e612c5c0a1781a9973a981c778fd673` |
-| 3 | `theorem` | [thetaPhi_deriv_tailKernel_integral](../../../../MeasureAndIntegration/GapResidual.lean/declarations/thetaphi-deriv-tailkernel-integral.md) | 44 | `result-track:d19b8f9107afe6ec2ddbaa2e56b64612cac175ec83be27c885652001ecd654f3` |
-| 4 | `theorem` | [thetaTailGap_zero_succ_succ_integral](../../../../MeasureAndIntegration/GapResidual.lean/declarations/thetatailgap-zero-succ-succ-integral.md) | 71 | `result-track:16e8ab16e63a1163ef9fce5d154b0fd91dd561e2b4d4686ea42c09b2727b6213` |
+| 1 | `theorem` | [thetaPhi_mul_sub_pow_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GapResidual.lean/declarations/thetaphi-mul-sub-pow-tendsto.md) | 8 | `result-track:aeae0a1c9c45e98a1f88452c5a676dbd7172c3c32905e22c0b5683de8c11fd78` |
+| 2 | `theorem` | [thetaPhi_deriv_sub_pow_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GapResidual.lean/declarations/thetaphi-deriv-sub-pow-integrable.md) | 30 | `result-track:21b86ce99a8aa993e977fb2b9980151e3e612c5c0a1781a9973a981c778fd673` |
+| 3 | `theorem` | [thetaPhi_deriv_tailKernel_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GapResidual.lean/declarations/thetaphi-deriv-tailkernel-integral.md) | 44 | `result-track:d19b8f9107afe6ec2ddbaa2e56b64612cac175ec83be27c885652001ecd654f3` |
+| 4 | `theorem` | [thetaTailGap_zero_succ_succ_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GapResidual.lean/declarations/thetatailgap-zero-succ-succ-integral.md) | 71 | `result-track:16e8ab16e63a1163ef9fce5d154b0fd91dd561e2b4d4686ea42c09b2727b6213` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

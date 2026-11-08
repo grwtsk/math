@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sqrt](../../../../../NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/declarations/sqrt.md) | 33 | `declaration-track:898c433cba70d064167dc0973ff87048bd6db89dd3016d734bb595e455fcad64` |
-| 2 | `theorem` | [sqrt_eq](../../../../../NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/declarations/sqrt-eq.md) | 35 | `result-track:048e0a06da88914dbca3c3be8d17411a008f6e8dd7da5bebcad4919e5fcf9aeb` |
-| 3 | `theorem` | [exists_mul_self](../../../../../NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/declarations/exists-mul-self.md) | 38 | `result-track:460b6389b390ead1a42b642e4fd6c961f5826babea620254717e2e53018ec6fe` |
-| 4 | `lemma` | [sqrt_nonneg](../../../../../NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/declarations/sqrt-nonneg.md) | 41 | `result-track:bdc4ed9fc9a7c65733323514a87c1663999c9a09c57cbc600049e8389afd165f` |
-| 5 | `instance` | [(anonymous)](../../../../../NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/declarations/instance.md) | 44 | `declaration-track:04e5279ef20312f216dce9348389a365cf162531a713dc72871eea06df6b9831` |
-| 6 | `theorem` | [sqrt_intCast](../../../../../NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/declarations/sqrt-intcast.md) | 49 | `result-track:30991f7bf477759a8efcf4a797007622d2339b82b8f9d723eb3ddd6ac40e1dc7` |
-| 7 | `theorem` | [sqrt_natCast](../../../../../NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/declarations/sqrt-natcast.md) | 53 | `result-track:02bb6f3b10490045e9d08a0102f3e097b35f0e5d9b15ab4c5707442e2d18aa61` |
-| 8 | `theorem` | [sqrt_ofNat](../../../../../NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/declarations/sqrt-ofnat.md) | 57 | `result-track:21896c0ad042ad3ef1e72b2b99ba3705a2badfddc1482c541ea29cfba0e76eee` |
+| 1 | `def` | [sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/declarations/sqrt.md) | 33 | `declaration-track:898c433cba70d064167dc0973ff87048bd6db89dd3016d734bb595e455fcad64` |
+| 2 | `theorem` | [sqrt_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/declarations/sqrt-eq.md) | 35 | `result-track:048e0a06da88914dbca3c3be8d17411a008f6e8dd7da5bebcad4919e5fcf9aeb` |
+| 3 | `theorem` | [exists_mul_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/declarations/exists-mul-self.md) | 38 | `result-track:460b6389b390ead1a42b642e4fd6c961f5826babea620254717e2e53018ec6fe` |
+| 4 | `lemma` | [sqrt_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/declarations/sqrt-nonneg.md) | 41 | `result-track:bdc4ed9fc9a7c65733323514a87c1663999c9a09c57cbc600049e8389afd165f` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/declarations/instance.md) | 44 | `declaration-track:04e5279ef20312f216dce9348389a365cf162531a713dc72871eea06df6b9831` |
+| 6 | `theorem` | [sqrt_intCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/declarations/sqrt-intcast.md) | 49 | `result-track:30991f7bf477759a8efcf4a797007622d2339b82b8f9d723eb3ddd6ac40e1dc7` |
+| 7 | `theorem` | [sqrt_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/declarations/sqrt-natcast.md) | 53 | `result-track:02bb6f3b10490045e9d08a0102f3e097b35f0e5d9b15ab4c5707442e2d18aa61` |
+| 8 | `theorem` | [sqrt_ofNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatSqrtSqrtNamespaced.lean/declarations/sqrt-ofnat.md) | 57 | `result-track:21896c0ad042ad3ef1e72b2b99ba3705a2badfddc1482c541ea29cfba0e76eee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

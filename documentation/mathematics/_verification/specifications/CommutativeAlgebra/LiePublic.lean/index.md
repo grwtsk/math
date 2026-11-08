@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LiePublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LiePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LiePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LiePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/LiePublic.lean/declarations/instance-source-edition-2.md) | 36 | `declaration-track:bb924e61cb75e7ee783667f2068337a2ebd3981c3b6534a69812a03c0fdb0237` |
-| 2 | `theorem` | [commutator_coe_linear_map](../../../../CommutativeAlgebra/LiePublic.lean/declarations/commutator-coe-linear-map.md) | 44 | `result-track:79011e33a643dfa644e856af24ee4dcd563fe8ec492522e30a8da17709abaf1f` |
-| 3 | `theorem` | [commutator_apply](../../../../CommutativeAlgebra/LiePublic.lean/declarations/commutator-apply.md) | 47 | `result-track:e33080632d703dabb1bdf1d04eed0d438b439d84a6dc75396cb98b945d192016` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/LiePublic.lean/declarations/instance.md) | 50 | `declaration-track:803673edbd39993c7524429c81f832da6768bf23339a00d04e8c1c41bbb135b1` |
-| 5 | `instance` | [instLieAlgebra](../../../../CommutativeAlgebra/LiePublic.lean/declarations/instliealgebra.md) | 56 | `declaration-track:0501f39440152565107d6a691b0e1475512f0d3bb8fe516226cb09fe4db4fdc6` |
-| 6 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/LiePublic.lean/declarations/instance-source-edition-3.md) | 61 | `declaration-track:c4d2c99eb09931d458a3c71a432d518f1fc1bb9456c46248d4e247d218d21263` |
-| 7 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/LiePublic.lean/declarations/instance-source-edition-4.md) | 67 | `declaration-track:ed2e3dd3790e3292fc5978153f6d8ed487954f1875dcb0b3c24744afb12462ef` |
-| 8 | `lemma` | [bracket_eq_fun](../../../../CommutativeAlgebra/LiePublic.lean/declarations/bracket-eq-fun.md) | 72 | `result-track:6b639ce024bca8019f6ced49241fa12766546280146ffbc4580264578ddb6b1a` |
-| 9 | `def` | [couple](../../../../CommutativeAlgebra/LiePublic.lean/declarations/couple.md) | 82 | `declaration-track:b1493773b5be43bd0df57b6e1d908892e98f57f34b525bcbd6a20e2cd050a168` |
-| 10 | `lemma` | [mem](../../../../CommutativeAlgebra/LiePublic.lean/declarations/mem.md) | 95 | `result-track:1008ac916ccfb881634d4a4497eaf7359bec6977c61b74f7ee705a9bbd4209c6` |
-| 11 | `def` | [mk](../../../../CommutativeAlgebra/LiePublic.lean/declarations/mk.md) | 102 | `declaration-track:9e58a6143d7d09c4334e9141054aee198cf65140db8122b430b0a08002f6d678` |
-| 12 | `lemma` | [mk_left](../../../../CommutativeAlgebra/LiePublic.lean/declarations/mk-left.md) | 106 | `result-track:9d1df19d255b70962c3578564d929e915a7afc0e88746444ba344d470238a9da` |
-| 13 | `lemma` | [mk_right](../../../../CommutativeAlgebra/LiePublic.lean/declarations/mk-right.md) | 109 | `result-track:1a85f74a947027997be26fbf95a4a3455ce50f1b7a76237c8ee88057cbd3c33b` |
-| 14 | `lemma` | [apply](../../../../CommutativeAlgebra/LiePublic.lean/declarations/apply.md) | 112 | `result-track:aab11955b1154029f234d6e48e5f5bc485a230925d63661e9fa580e4b6236ea1` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LiePublic.lean/declarations/instance-source-edition-2.md) | 36 | `declaration-track:bb924e61cb75e7ee783667f2068337a2ebd3981c3b6534a69812a03c0fdb0237` |
+| 2 | `theorem` | [commutator_coe_linear_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LiePublic.lean/declarations/commutator-coe-linear-map.md) | 44 | `result-track:79011e33a643dfa644e856af24ee4dcd563fe8ec492522e30a8da17709abaf1f` |
+| 3 | `theorem` | [commutator_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LiePublic.lean/declarations/commutator-apply.md) | 47 | `result-track:e33080632d703dabb1bdf1d04eed0d438b439d84a6dc75396cb98b945d192016` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LiePublic.lean/declarations/instance.md) | 50 | `declaration-track:803673edbd39993c7524429c81f832da6768bf23339a00d04e8c1c41bbb135b1` |
+| 5 | `instance` | [instLieAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LiePublic.lean/declarations/instliealgebra.md) | 56 | `declaration-track:0501f39440152565107d6a691b0e1475512f0d3bb8fe516226cb09fe4db4fdc6` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LiePublic.lean/declarations/instance-source-edition-3.md) | 61 | `declaration-track:c4d2c99eb09931d458a3c71a432d518f1fc1bb9456c46248d4e247d218d21263` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LiePublic.lean/declarations/instance-source-edition-4.md) | 67 | `declaration-track:ed2e3dd3790e3292fc5978153f6d8ed487954f1875dcb0b3c24744afb12462ef` |
+| 8 | `lemma` | [bracket_eq_fun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LiePublic.lean/declarations/bracket-eq-fun.md) | 72 | `result-track:6b639ce024bca8019f6ced49241fa12766546280146ffbc4580264578ddb6b1a` |
+| 9 | `def` | [couple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LiePublic.lean/declarations/couple.md) | 82 | `declaration-track:b1493773b5be43bd0df57b6e1d908892e98f57f34b525bcbd6a20e2cd050a168` |
+| 10 | `lemma` | [mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LiePublic.lean/declarations/mem.md) | 95 | `result-track:1008ac916ccfb881634d4a4497eaf7359bec6977c61b74f7ee705a9bbd4209c6` |
+| 11 | `def` | [mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LiePublic.lean/declarations/mk.md) | 102 | `declaration-track:9e58a6143d7d09c4334e9141054aee198cf65140db8122b430b0a08002f6d678` |
+| 12 | `lemma` | [mk_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LiePublic.lean/declarations/mk-left.md) | 106 | `result-track:9d1df19d255b70962c3578564d929e915a7afc0e88746444ba344d470238a9da` |
+| 13 | `lemma` | [mk_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LiePublic.lean/declarations/mk-right.md) | 109 | `result-track:1a85f74a947027997be26fbf95a4a3455ce50f1b7a76237c8ee88057cbd3c33b` |
+| 14 | `lemma` | [apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LiePublic.lean/declarations/apply.md) | 112 | `result-track:aab11955b1154029f234d6e48e5f5bc485a230925d63661e9fa580e4b6236ea1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

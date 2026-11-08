@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/HalfCutoffTailStatementSnippetNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/HalfCutoffTailStatementSnippetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HalfCutoffTailStatementSnippetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HalfCutoffTailStatementSnippetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Combinatorics/HalfCutoffTailStatementSnippetNamespaced.lean/declarations/example.md) | 16 | `declaration-track:045a2616d20821257b91ce3323d9db4fa7bd24660abdb64a6c7fe2fe328f09ac` |
-| 2 | `example` | [(anonymous)](../../../../Combinatorics/HalfCutoffTailStatementSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:2b72beb95a518d1d8baea94925f159b246e5bc9d61c8adc93eb4e2d547444ac0` |
-| 3 | `example` | [(anonymous)](../../../../Combinatorics/HalfCutoffTailStatementSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 24 | `declaration-track:2b5dd8d8af4d36958e56f74c1fd54fa78ad9a422036fe638cc59b1bcfcd53376` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HalfCutoffTailStatementSnippetNamespaced.lean/declarations/example.md) | 16 | `declaration-track:045a2616d20821257b91ce3323d9db4fa7bd24660abdb64a6c7fe2fe328f09ac` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HalfCutoffTailStatementSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:2b72beb95a518d1d8baea94925f159b246e5bc9d61c8adc93eb4e2d547444ac0` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HalfCutoffTailStatementSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 24 | `declaration-track:2b5dd8d8af4d36958e56f74c1fd54fa78ad9a422036fe638cc59b1bcfcd53376` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

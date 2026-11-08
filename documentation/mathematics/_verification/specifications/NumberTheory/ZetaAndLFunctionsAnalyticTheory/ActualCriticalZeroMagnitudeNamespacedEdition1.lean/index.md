@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCriticalZeroMagnitudeNamespacedEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCriticalZeroMagnitudeNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCriticalZeroMagnitudeNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCriticalZeroMagnitudeNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualZeroSixMass](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCriticalZeroMagnitudeNamespacedEdition1.lean/declarations/actualzerosixmass.md) | 25 | `declaration-track:5521ba5342cd6f9213339daf5f3c1b79299442fa49fbad45d82b7abaeb509b34` |
-| 2 | `theorem` | [actualZeroSixMass_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCriticalZeroMagnitudeNamespacedEdition1.lean/declarations/actualzerosixmass-nonneg.md) | 30 | `result-track:6a65ab5422ad34d381c001add2698610ae722ca37cd39160e4c4f40bb4d05fb1` |
-| 3 | `theorem` | [actual_finite_reciprocal_six_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCriticalZeroMagnitudeNamespacedEdition1.lean/declarations/actual-finite-reciprocal-six-le.md) | 36 | `result-track:49701fdac38760437450c88335cc259de2d1c5720aff455be56847b2a9b9a9ff` |
-| 4 | `theorem` | [actualCriticalZeroHeightHead_uniform_ninth_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCriticalZeroMagnitudeNamespacedEdition1.lean/declarations/actualcriticalzeroheighthead-uniform-ninth-bound.md) | 68 | `result-track:ae3a0401357b2daf8415a98bf26ffa64026d47480f19cc9f577f7a321b678ea4` |
-| 5 | `theorem` | [actualCriticalZeroHeightHead_real_uniform_ninth_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCriticalZeroMagnitudeNamespacedEdition1.lean/declarations/actualcriticalzeroheighthead-real-uniform-ninth-bound.md) | 104 | `result-track:6adb44f6d8b90bcb840e8d97dda126aa30ce603f9b31ac3d8f19cd4bc74ae1bd` |
+| 1 | `def` | [actualZeroSixMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCriticalZeroMagnitudeNamespacedEdition1.lean/declarations/actualzerosixmass.md) | 25 | `declaration-track:5521ba5342cd6f9213339daf5f3c1b79299442fa49fbad45d82b7abaeb509b34` |
+| 2 | `theorem` | [actualZeroSixMass_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCriticalZeroMagnitudeNamespacedEdition1.lean/declarations/actualzerosixmass-nonneg.md) | 30 | `result-track:6a65ab5422ad34d381c001add2698610ae722ca37cd39160e4c4f40bb4d05fb1` |
+| 3 | `theorem` | [actual_finite_reciprocal_six_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCriticalZeroMagnitudeNamespacedEdition1.lean/declarations/actual-finite-reciprocal-six-le.md) | 36 | `result-track:49701fdac38760437450c88335cc259de2d1c5720aff455be56847b2a9b9a9ff` |
+| 4 | `theorem` | [actualCriticalZeroHeightHead_uniform_ninth_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCriticalZeroMagnitudeNamespacedEdition1.lean/declarations/actualcriticalzeroheighthead-uniform-ninth-bound.md) | 68 | `result-track:ae3a0401357b2daf8415a98bf26ffa64026d47480f19cc9f577f7a321b678ea4` |
+| 5 | `theorem` | [actualCriticalZeroHeightHead_real_uniform_ninth_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCriticalZeroMagnitudeNamespacedEdition1.lean/declarations/actualcriticalzeroheighthead-real-uniform-ninth-bound.md) | 104 | `result-track:6adb44f6d8b90bcb840e8d97dda126aa30ce603f9b31ac3d8f19cd4bc74ae1bd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

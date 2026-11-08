@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AcceptanceMatrixNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AcceptanceMatrixNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AcceptanceMatrixNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AcceptanceMatrixNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [surfaceId](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AcceptanceMatrixNamespaced.lean/declarations/surfaceid.md) | 16 | `declaration-track:5e9af50808999cbca938c70bf682a68d3070f5cdab0f34ca7aae13a372880b9b` |
-| 2 | `def` | [ownsDeclaredSurface](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AcceptanceMatrixNamespaced.lean/declarations/ownsdeclaredsurface.md) | 17 | `declaration-track:3966eee212a13fa03b32abee641075f2407316eda801ff4e30c12368fe1c791b` |
-| 3 | `def` | [crossLeafReasoningRequiresGlue](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AcceptanceMatrixNamespaced.lean/declarations/crossleafreasoningrequiresglue.md) | 18 | `declaration-track:42b89422f0b96801cf129c9df2dcf8b085b16580da0e704e196ee9565d4a2275` |
-| 4 | `theorem` | [surface_id_declared](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AcceptanceMatrixNamespaced.lean/declarations/surface-id-declared.md) | 20 | `result-track:84400c420a87a2bd134fefadb6bbefd71a8ea04a9011c2e59fbfbbfc2200d042` |
-| 5 | `theorem` | [owns_declared_surface](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AcceptanceMatrixNamespaced.lean/declarations/owns-declared-surface.md) | 24 | `result-track:f3129278ce7789c974dea1ed8f25676973c70c7e816f64e3d96b8dcbb5f5f8a4` |
+| 1 | `def` | [surfaceId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AcceptanceMatrixNamespaced.lean/declarations/surfaceid.md) | 16 | `declaration-track:5e9af50808999cbca938c70bf682a68d3070f5cdab0f34ca7aae13a372880b9b` |
+| 2 | `def` | [ownsDeclaredSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AcceptanceMatrixNamespaced.lean/declarations/ownsdeclaredsurface.md) | 17 | `declaration-track:3966eee212a13fa03b32abee641075f2407316eda801ff4e30c12368fe1c791b` |
+| 3 | `def` | [crossLeafReasoningRequiresGlue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AcceptanceMatrixNamespaced.lean/declarations/crossleafreasoningrequiresglue.md) | 18 | `declaration-track:42b89422f0b96801cf129c9df2dcf8b085b16580da0e704e196ee9565d4a2275` |
+| 4 | `theorem` | [surface_id_declared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AcceptanceMatrixNamespaced.lean/declarations/surface-id-declared.md) | 20 | `result-track:84400c420a87a2bd134fefadb6bbefd71a8ea04a9011c2e59fbfbbfc2200d042` |
+| 5 | `theorem` | [owns_declared_surface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AcceptanceMatrixNamespaced.lean/declarations/owns-declared-surface.md) | 24 | `result-track:f3129278ce7789c974dea1ed8f25676973c70c7e816f64e3d96b8dcbb5f5f8a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/MoserSource.lean/index.md) · [Full source](../../../../Combinatorics/MoserSource.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoserSource.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoserSource.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,23 +62,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [moserA](../../../../Combinatorics/MoserSource.lean/declarations/mosera.md) | 21 | `declaration-track:c16b4c9b635f9370182b9a2092accda9ee1c38fd49fa2e35790d8d0dd037e9a2` |
-| 2 | `def` | [moserB](../../../../Combinatorics/MoserSource.lean/declarations/moserb.md) | 22 | `declaration-track:622f61f8cceebe5cdc3ee237d3a9150870e8415183560a63475b1934d94b810d` |
-| 3 | `def` | [moserT](../../../../Combinatorics/MoserSource.lean/declarations/mosert.md) | 23 | `declaration-track:084bac20f1669d81b725c1ab98bb0ca5668a6179f873b13f9073ae9de7583734` |
-| 4 | `def` | [moserU](../../../../Combinatorics/MoserSource.lean/declarations/moseru.md) | 24 | `declaration-track:db690965e565a0e2807e35fa43cf48a7d11feb9642fac4f859c9c6738c46536d` |
-| 5 | `def` | [moserPoint](../../../../Combinatorics/MoserSource.lean/declarations/moserpoint.md) | 25 | `declaration-track:474438e74e44c8c36980f0ad9ba3179f5ec4348f2f8671fe64b85844f071ade1` |
-| 6 | `lemma` | [moserPoint_0](../../../../Combinatorics/MoserSource.lean/declarations/moserpoint-0.md) | 26 | `result-track:67a6204699b26f3759c1f7ff458fa796d860c5cbc938ed3a5fc5de41cd7dfaaf` |
-| 7 | `lemma` | [moserPoint_1](../../../../Combinatorics/MoserSource.lean/declarations/moserpoint-1.md) | 27 | `result-track:286a7fb6070a2c35885a113f48afdab243ded92eb3eb68ff5d247f18d1b8c1e2` |
-| 8 | `lemma` | [moserPoint_2](../../../../Combinatorics/MoserSource.lean/declarations/moserpoint-2.md) | 28 | `result-track:8ecc2e36dc94173d1dbe12d3d25170cb84684ce16ad12426f9fbaae4a7de37c3` |
-| 9 | `lemma` | [moserPoint_3](../../../../Combinatorics/MoserSource.lean/declarations/moserpoint-3.md) | 29 | `result-track:00159cdbc9836682840b4e7ac5e161a0e7253e0eaf61785d66149b324a2f73a5` |
-| 10 | `lemma` | [moserPoint_4](../../../../Combinatorics/MoserSource.lean/declarations/moserpoint-4.md) | 30 | `result-track:83a197595e87c719bb1576a4eec2b5de418472c4276c6c8b1b3b92f30887fa96` |
-| 11 | `lemma` | [moserPoint_5](../../../../Combinatorics/MoserSource.lean/declarations/moserpoint-5.md) | 31 | `result-track:ced1642c5ee73697418b90822bc7b5f42fa2ff39d866ccfe97cdec397c70983d` |
-| 12 | `lemma` | [moserPoint_6](../../../../Combinatorics/MoserSource.lean/declarations/moserpoint-6.md) | 32 | `result-track:b0dd370201059525f94971274eac104a6e062654c4e73513a8ee97033c04d333` |
-| 13 | `def` | [moserEdges](../../../../Combinatorics/MoserSource.lean/declarations/moseredges.md) | 33 | `declaration-track:4e71e7c601cfba8a7e418114d048e2a435fea5cbfff80a663ec821a2402f898d` |
-| 14 | `lemma` | [complex_norm_one_of_sq](../../../../Combinatorics/MoserSource.lean/declarations/complex-norm-one-of-sq.md) | 35 | `result-track:d4ecfe217ea6bd1650ff6381d7881f05651cfd185f2fdbcc32008a7d6abab0be` |
-| 15 | `lemma` | [moser_edge_unit](../../../../Combinatorics/MoserSource.lean/declarations/moser-edge-unit.md) | 38 | `result-track:cacb982ebadf0c6a4a376fc538f321f2ace665dfc052588621f451298339d0ec` |
-| 16 | `lemma` | [three_color_diamond](../../../../Combinatorics/MoserSource.lean/declarations/three-color-diamond.md) | 49 | `result-track:b72a35ba24c67028789d453e81c4aa556464481da0566e0ed9f319c83ef47d21` |
-| 17 | `lemma` | [moser_not_three_colorable](../../../../Combinatorics/MoserSource.lean/declarations/moser-not-three-colorable.md) | 52 | `result-track:cc4a3851400beca5da8604e5788f74519824b53ebf86f3d22e65b2e9acba5242` |
+| 1 | `def` | [moserA](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoserSource.lean/declarations/mosera.md) | 21 | `declaration-track:c16b4c9b635f9370182b9a2092accda9ee1c38fd49fa2e35790d8d0dd037e9a2` |
+| 2 | `def` | [moserB](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoserSource.lean/declarations/moserb.md) | 22 | `declaration-track:622f61f8cceebe5cdc3ee237d3a9150870e8415183560a63475b1934d94b810d` |
+| 3 | `def` | [moserT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoserSource.lean/declarations/mosert.md) | 23 | `declaration-track:084bac20f1669d81b725c1ab98bb0ca5668a6179f873b13f9073ae9de7583734` |
+| 4 | `def` | [moserU](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoserSource.lean/declarations/moseru.md) | 24 | `declaration-track:db690965e565a0e2807e35fa43cf48a7d11feb9642fac4f859c9c6738c46536d` |
+| 5 | `def` | [moserPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoserSource.lean/declarations/moserpoint.md) | 25 | `declaration-track:474438e74e44c8c36980f0ad9ba3179f5ec4348f2f8671fe64b85844f071ade1` |
+| 6 | `lemma` | [moserPoint_0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoserSource.lean/declarations/moserpoint-0.md) | 26 | `result-track:67a6204699b26f3759c1f7ff458fa796d860c5cbc938ed3a5fc5de41cd7dfaaf` |
+| 7 | `lemma` | [moserPoint_1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoserSource.lean/declarations/moserpoint-1.md) | 27 | `result-track:286a7fb6070a2c35885a113f48afdab243ded92eb3eb68ff5d247f18d1b8c1e2` |
+| 8 | `lemma` | [moserPoint_2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoserSource.lean/declarations/moserpoint-2.md) | 28 | `result-track:8ecc2e36dc94173d1dbe12d3d25170cb84684ce16ad12426f9fbaae4a7de37c3` |
+| 9 | `lemma` | [moserPoint_3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoserSource.lean/declarations/moserpoint-3.md) | 29 | `result-track:00159cdbc9836682840b4e7ac5e161a0e7253e0eaf61785d66149b324a2f73a5` |
+| 10 | `lemma` | [moserPoint_4](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoserSource.lean/declarations/moserpoint-4.md) | 30 | `result-track:83a197595e87c719bb1576a4eec2b5de418472c4276c6c8b1b3b92f30887fa96` |
+| 11 | `lemma` | [moserPoint_5](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoserSource.lean/declarations/moserpoint-5.md) | 31 | `result-track:ced1642c5ee73697418b90822bc7b5f42fa2ff39d866ccfe97cdec397c70983d` |
+| 12 | `lemma` | [moserPoint_6](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoserSource.lean/declarations/moserpoint-6.md) | 32 | `result-track:b0dd370201059525f94971274eac104a6e062654c4e73513a8ee97033c04d333` |
+| 13 | `def` | [moserEdges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoserSource.lean/declarations/moseredges.md) | 33 | `declaration-track:4e71e7c601cfba8a7e418114d048e2a435fea5cbfff80a663ec821a2402f898d` |
+| 14 | `lemma` | [complex_norm_one_of_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoserSource.lean/declarations/complex-norm-one-of-sq.md) | 35 | `result-track:d4ecfe217ea6bd1650ff6381d7881f05651cfd185f2fdbcc32008a7d6abab0be` |
+| 15 | `lemma` | [moser_edge_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoserSource.lean/declarations/moser-edge-unit.md) | 38 | `result-track:cacb982ebadf0c6a4a376fc538f321f2ace665dfc052588621f451298339d0ec` |
+| 16 | `lemma` | [three_color_diamond](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoserSource.lean/declarations/three-color-diamond.md) | 49 | `result-track:b72a35ba24c67028789d453e81c4aa556464481da0566e0ed9f319c83ef47d21` |
+| 17 | `lemma` | [moser_not_three_colorable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoserSource.lean/declarations/moser-not-three-colorable.md) | 52 | `result-track:cc4a3851400beca5da8604e5788f74519824b53ebf86f3d22e65b2e9acba5242` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

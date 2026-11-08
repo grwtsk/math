@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/IndexedOccurrenceEncodingHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../Combinatorics/IndexedOccurrenceEncodingHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexedOccurrenceEncodingHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexedOccurrenceEncodingHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.TaxonomyProjection.Basic` — import line 1; internal source missing from the pinned tree.
 - `GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.BoundedShards.Basic` — import line 2; internal source missing from the pinned tree.
-- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary`](../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIndexedDictionary.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIndexedDictionary.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [encode](../../../../Combinatorics/IndexedOccurrenceEncodingHistoricalSourceEdition2.lean/declarations/encode.md) | 21 | `declaration-track:230087832449438f904ad938d679e065970066d347d0e3f8cf110be1881e411d` |
-| 2 | `theorem` | [decode_encode](../../../../Combinatorics/IndexedOccurrenceEncodingHistoricalSourceEdition2.lean/declarations/decode-encode.md) | 25 | `result-track:e80a375f1e7c5a20ed4fca3477dd6b9b211c8b3b64887ef220ae547df32b5b3a` |
-| 3 | `theorem` | [encode_injective](../../../../Combinatorics/IndexedOccurrenceEncodingHistoricalSourceEdition2.lean/declarations/encode-injective.md) | 29 | `result-track:c5aec7bd83189e2713c98cf02eed822aa4d06ef06490f02df6fa8add3a28ba85` |
-| 4 | `theorem` | [encoded_reference_count](../../../../Combinatorics/IndexedOccurrenceEncodingHistoricalSourceEdition2.lean/declarations/encoded-reference-count.md) | 35 | `result-track:fe12dac05893ea07ba5d79cb54f25496ab1b4ed275f49804e668f2824204994d` |
-| 5 | `theorem` | [evidence_applicability](../../../../Combinatorics/IndexedOccurrenceEncodingHistoricalSourceEdition2.lean/declarations/evidence-applicability.md) | 40 | `result-track:67838801c0c159c7b8fbe46837f582b157673f484195df77187d464afc3f241f` |
-| 6 | `theorem` | [roundtrip_does_not_manufacture_evidence](../../../../Combinatorics/IndexedOccurrenceEncodingHistoricalSourceEdition2.lean/declarations/roundtrip-does-not-manufacture-evidence.md) | 49 | `result-track:f53c6edb26b9b0c29000e90fb2277bbdedcbaed573e63e36567a3083c3198ccb` |
+| 1 | `def` | [encode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexedOccurrenceEncodingHistoricalSourceEdition2.lean/declarations/encode.md) | 21 | `declaration-track:230087832449438f904ad938d679e065970066d347d0e3f8cf110be1881e411d` |
+| 2 | `theorem` | [decode_encode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexedOccurrenceEncodingHistoricalSourceEdition2.lean/declarations/decode-encode.md) | 25 | `result-track:e80a375f1e7c5a20ed4fca3477dd6b9b211c8b3b64887ef220ae547df32b5b3a` |
+| 3 | `theorem` | [encode_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexedOccurrenceEncodingHistoricalSourceEdition2.lean/declarations/encode-injective.md) | 29 | `result-track:c5aec7bd83189e2713c98cf02eed822aa4d06ef06490f02df6fa8add3a28ba85` |
+| 4 | `theorem` | [encoded_reference_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexedOccurrenceEncodingHistoricalSourceEdition2.lean/declarations/encoded-reference-count.md) | 35 | `result-track:fe12dac05893ea07ba5d79cb54f25496ab1b4ed275f49804e668f2824204994d` |
+| 5 | `theorem` | [evidence_applicability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexedOccurrenceEncodingHistoricalSourceEdition2.lean/declarations/evidence-applicability.md) | 40 | `result-track:67838801c0c159c7b8fbe46837f582b157673f484195df77187d464afc3f241f` |
+| 6 | `theorem` | [roundtrip_does_not_manufacture_evidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexedOccurrenceEncodingHistoricalSourceEdition2.lean/declarations/roundtrip-does-not-manufacture-evidence.md) | 49 | `result-track:f53c6edb26b9b0c29000e90fb2277bbdedcbaed573e63e36567a3083c3198ccb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

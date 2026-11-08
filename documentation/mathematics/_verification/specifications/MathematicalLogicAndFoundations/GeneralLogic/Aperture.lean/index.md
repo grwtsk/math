@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Aperture.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Aperture.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Aperture.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Aperture.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [closed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Aperture.lean/declarations/closed.md) | 7 | `declaration-track:72a4bb4b71ceb0651ab428f87f311df8a0209dea8f9c2233aa1a1d7c6808f7cd` |
-| 2 | `def` | [fullyOpen](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Aperture.lean/declarations/fullyopen.md) | 9 | `declaration-track:600e5bfd1548c0a864acfb66ad8918075fea685229b8feee89dc7f9095f6057d` |
-| 3 | `def` | [isClosed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Aperture.lean/declarations/isclosed.md) | 11 | `declaration-track:f6c1c7c4a51259a93cd7fb8d4c5c0b77632459923844a1822ac5aa8b1b134ef7` |
-| 4 | `def` | [isOpen](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Aperture.lean/declarations/isopen.md) | 13 | `declaration-track:d90d41d675df9335456aa852df67f7bd73ea28b7de7281d9f849d4b013b7c9b9` |
-| 5 | `theorem` | [closed_eq_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Aperture.lean/declarations/closed-eq-zero.md) | 15 | `result-track:9906e1f7ee4b1894d699bd8fbf6da8d8ed25bb4fb7207b2b08844112283832fc` |
-| 6 | `theorem` | [fullyOpen_eq_255](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Aperture.lean/declarations/fullyopen-eq-255.md) | 17 | `result-track:e1bcd7538789fb11adefb4e4641cf98ba7e5fa44e822ff13aea67a11534192c3` |
+| 1 | `def` | [closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Aperture.lean/declarations/closed.md) | 7 | `declaration-track:72a4bb4b71ceb0651ab428f87f311df8a0209dea8f9c2233aa1a1d7c6808f7cd` |
+| 2 | `def` | [fullyOpen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Aperture.lean/declarations/fullyopen.md) | 9 | `declaration-track:600e5bfd1548c0a864acfb66ad8918075fea685229b8feee89dc7f9095f6057d` |
+| 3 | `def` | [isClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Aperture.lean/declarations/isclosed.md) | 11 | `declaration-track:f6c1c7c4a51259a93cd7fb8d4c5c0b77632459923844a1822ac5aa8b1b134ef7` |
+| 4 | `def` | [isOpen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Aperture.lean/declarations/isopen.md) | 13 | `declaration-track:d90d41d675df9335456aa852df67f7bd73ea28b7de7281d9f849d4b013b7c9b9` |
+| 5 | `theorem` | [closed_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Aperture.lean/declarations/closed-eq-zero.md) | 15 | `result-track:9906e1f7ee4b1894d699bd8fbf6da8d8ed25bb4fb7207b2b08844112283832fc` |
+| 6 | `theorem` | [fullyOpen_eq_255](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Aperture.lean/declarations/fullyopen-eq-255.md) | 17 | `result-track:e1bcd7538789fb11adefb4e4641cf98ba7e5fa44e822ff13aea67a11534192c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

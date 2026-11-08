@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/MontelNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/MontelNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MontelNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MontelNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [MontelSpace](../../../../FunctionalAnalysis/MontelNamespacedPublic.lean/declarations/montelspace.md) | 54 | `declaration-track:f77dd8eb9f11a968c62e444537cd6e99d7d6a950f7deae1c690eedc08ec36fb2` |
-| 2 | `theorem` | [isCompact_of_isClosed_of_isVonNBounded](../../../../FunctionalAnalysis/MontelNamespacedPublic.lean/declarations/iscompact-of-isclosed-of-isvonnbounded.md) | 61 | `result-track:8f9b3b718f4088c9b1d00b171c416439be9a4676dac25f4c7c752dd52c8174bb` |
-| 3 | `theorem` | [finiteDimensional_of_normedSpace](../../../../FunctionalAnalysis/MontelNamespacedPublic.lean/declarations/finitedimensional-of-normedspace.md) | 77 | `result-track:24f0b75c6b101091bf08c0a37435d8b8ac44c8479c3ecec8056ebaaa5bdb5b3a` |
-| 4 | `def` | [Montel Namespaced Public](../../../../FunctionalAnalysis/MontelNamespacedPublic.lean/declarations/tocompactconvergenceclm-source-line-101-occurrence-2.md) | 101 | `declaration-track:b189b6353f749173d4131cf0973f9e94f72a8b88fc9d7aae2b6d74c579e9a46f` |
-| 5 | `def` | [Montel Namespaced Public](../../../../FunctionalAnalysis/MontelNamespacedPublic.lean/declarations/tocompactconvergenceclm.md) | 112 | `declaration-track:0dacbc13a05988a5f0ad1963c90658ea7453c53447f386856837678ff677dfc9` |
-| 6 | `theorem` | [Montel Namespaced Public](../../../../FunctionalAnalysis/MontelNamespacedPublic.lean/declarations/tocompactconvergenceclm-apply.md) | 132 | `result-track:9ee65ef94797db05aec5dd7dd5157ea883ba300d83c27ea16d98c595f5a52cbb` |
-| 7 | `theorem` | [Montel Namespaced Public](../../../../FunctionalAnalysis/MontelNamespacedPublic.lean/declarations/tocompactconvergenceclm-symm-apply.md) | 136 | `result-track:b7080450d2695d50f5614443deb1ed65b3e4046b1dadba729fd5b333a87d8161` |
+| 1 | `class` | [MontelSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MontelNamespacedPublic.lean/declarations/montelspace.md) | 54 | `declaration-track:f77dd8eb9f11a968c62e444537cd6e99d7d6a950f7deae1c690eedc08ec36fb2` |
+| 2 | `theorem` | [isCompact_of_isClosed_of_isVonNBounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MontelNamespacedPublic.lean/declarations/iscompact-of-isclosed-of-isvonnbounded.md) | 61 | `result-track:8f9b3b718f4088c9b1d00b171c416439be9a4676dac25f4c7c752dd52c8174bb` |
+| 3 | `theorem` | [finiteDimensional_of_normedSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MontelNamespacedPublic.lean/declarations/finitedimensional-of-normedspace.md) | 77 | `result-track:24f0b75c6b101091bf08c0a37435d8b8ac44c8479c3ecec8056ebaaa5bdb5b3a` |
+| 4 | `def` | [Montel Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MontelNamespacedPublic.lean/declarations/tocompactconvergenceclm-source-line-101-occurrence-2.md) | 101 | `declaration-track:b189b6353f749173d4131cf0973f9e94f72a8b88fc9d7aae2b6d74c579e9a46f` |
+| 5 | `def` | [Montel Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MontelNamespacedPublic.lean/declarations/tocompactconvergenceclm.md) | 112 | `declaration-track:0dacbc13a05988a5f0ad1963c90658ea7453c53447f386856837678ff677dfc9` |
+| 6 | `theorem` | [Montel Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MontelNamespacedPublic.lean/declarations/tocompactconvergenceclm-apply.md) | 132 | `result-track:9ee65ef94797db05aec5dd7dd5157ea883ba300d83c27ea16d98c595f5a52cbb` |
+| 7 | `theorem` | [Montel Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MontelNamespacedPublic.lean/declarations/tocompactconvergenceclm-symm-apply.md) | 136 | `result-track:b7080450d2695d50f5614443deb1ed65b3e4046b1dadba729fd5b333a87d8161` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

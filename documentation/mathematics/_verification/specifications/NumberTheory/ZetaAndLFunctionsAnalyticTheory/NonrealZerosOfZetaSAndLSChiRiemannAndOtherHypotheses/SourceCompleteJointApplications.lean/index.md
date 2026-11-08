@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplications.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplications.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplications.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplications.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_leading_upper_of_complete_signed_block](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplications.lean/declarations/actual-leading-upper-of-complete-signed-block.md) | 21 | `result-track:acbef0ce801eace79dc70e998aca23311ffe7ceb49fa4bead2bb627194c46161` |
-| 2 | `theorem` | [all_real_tail_lower_of_complete_signed_block](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplications.lean/declarations/all-real-tail-lower-of-complete-signed-block.md) | 33 | `result-track:eb92f5f4798e7bb9d831cf38fd4ca4344a3e25cfb4c503fc637e8e539452adf0` |
-| 3 | `theorem` | [actual_leading_tail_upper_of_complete_signed_block](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplications.lean/declarations/actual-leading-tail-upper-of-complete-signed-block.md) | 49 | `result-track:7ee98c65e3315067db1fefa58864f342ab1e16b88dc367e88178e017f9ae819f` |
+| 1 | `theorem` | [actual_leading_upper_of_complete_signed_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplications.lean/declarations/actual-leading-upper-of-complete-signed-block.md) | 21 | `result-track:acbef0ce801eace79dc70e998aca23311ffe7ceb49fa4bead2bb627194c46161` |
+| 2 | `theorem` | [all_real_tail_lower_of_complete_signed_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplications.lean/declarations/all-real-tail-lower-of-complete-signed-block.md) | 33 | `result-track:eb92f5f4798e7bb9d831cf38fd4ca4344a3e25cfb4c503fc637e8e539452adf0` |
+| 3 | `theorem` | [actual_leading_tail_upper_of_complete_signed_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplications.lean/declarations/actual-leading-tail-upper-of-complete-signed-block.md) | 49 | `result-track:7ee98c65e3315067db1fefa58864f342ab1e16b88dc367e88178e017f9ae819f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

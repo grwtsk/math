@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/BoundsOrderIsoPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/BoundsOrderIsoPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/BoundsOrderIsoPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/BoundsOrderIsoPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [upperBounds_image](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/BoundsOrderIsoPublic.lean/declarations/upperbounds-image.md) | 24 | `result-track:44da8e55b67e4d287c9df7e3d7e1a4bb5eff8070e430b4e7a5c07990747bb0f0` |
-| 2 | `theorem` | [isLUB_image](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/BoundsOrderIsoPublic.lean/declarations/islub-image-source-edition-2.md) | 31 | `result-track:ff3316bcd7904bc4262774ce0aabea62ab29965063982df477bc547fe14b92fa` |
-| 3 | `theorem` | [isLUB_image'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/BoundsOrderIsoPublic.lean/declarations/islub-image.md) | 36 | `result-track:edfa538bf3f95bf376bbed9bf57e9ba49a4f50e8f72ae1c67c342edc840d2aff` |
-| 4 | `theorem` | [isLUB_preimage](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/BoundsOrderIsoPublic.lean/declarations/islub-preimage.md) | 40 | `result-track:74c7a6cf7401c658a1ae686f9a1269be558d22c52af1f3a8b818e3e5ffdc85e0` |
-| 5 | `theorem` | [isLUB_preimage'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/BoundsOrderIsoPublic.lean/declarations/islub-preimage-source-edition-2.md) | 44 | `result-track:8b4980a8ffc81016af1f1ffd23a4739ccc790e3f1117bec0fdcba87aa879fd13` |
+| 1 | `theorem` | [upperBounds_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/BoundsOrderIsoPublic.lean/declarations/upperbounds-image.md) | 24 | `result-track:44da8e55b67e4d287c9df7e3d7e1a4bb5eff8070e430b4e7a5c07990747bb0f0` |
+| 2 | `theorem` | [isLUB_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/BoundsOrderIsoPublic.lean/declarations/islub-image-source-edition-2.md) | 31 | `result-track:ff3316bcd7904bc4262774ce0aabea62ab29965063982df477bc547fe14b92fa` |
+| 3 | `theorem` | [isLUB_image'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/BoundsOrderIsoPublic.lean/declarations/islub-image.md) | 36 | `result-track:edfa538bf3f95bf376bbed9bf57e9ba49a4f50e8f72ae1c67c342edc840d2aff` |
+| 4 | `theorem` | [isLUB_preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/BoundsOrderIsoPublic.lean/declarations/islub-preimage.md) | 40 | `result-track:74c7a6cf7401c658a1ae686f9a1269be558d22c52af1f3a8b818e3e5ffdc85e0` |
+| 5 | `theorem` | [isLUB_preimage'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/BoundsOrderIsoPublic.lean/declarations/islub-preimage-source-edition-2.md) | 44 | `result-track:8b4980a8ffc81016af1f1ffd23a4739ccc790e3f1117bec0fdcba87aa879fd13` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

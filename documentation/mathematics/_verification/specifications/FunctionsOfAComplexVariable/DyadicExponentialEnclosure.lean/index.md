@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.FiniteExponentialEnclosure`](../../../../FunctionsOfAComplexVariable/FiniteExponentialEnclosure.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.FiniteExponentialEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteExponentialEnclosure.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.FieldSimp` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [squareValue](../../../../FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/squarevalue.md) | 26 | `declaration-track:2527e05ad087f9c4340c090c434d36c0aaf87d6b1a262741a44ef268ac018be5` |
-| 2 | `def` | [propagatedError](../../../../FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/propagatederror.md) | 31 | `declaration-track:b077b4d5012dd177236984e9e6e30b8fa317dc2754c9488d043b2a40b2d29307` |
-| 3 | `theorem` | [norm_square_sub_le](../../../../FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/norm-square-sub-le.md) | 38 | `result-track:50a117f75f5edd5333b3c03eeef0bf52562e7a6b4bead6e2b5f6229a97630605` |
-| 4 | `theorem` | [norm_rounded_square_sub_le](../../../../FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/norm-rounded-square-sub-le.md) | 50 | `result-track:1e602a8570f6e3461d954a4c6882ccdd4f580bcb15c3b85d275a8f7cf236d369` |
-| 5 | `theorem` | [squaring_chain_sound](../../../../FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/squaring-chain-sound.md) | 58 | `result-track:b14d835af6f121686401034a3b8e037995c8f9e0d65523fbe81498bb0759661f` |
-| 6 | `theorem` | [exact_squaring_sound](../../../../FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/exact-squaring-sound.md) | 73 | `result-track:9a71f548a3bdb51f59ed7502b6801346d4e9db255db3dc29e6d077b52d9a5b11` |
-| 7 | `theorem` | [squareValue_exp](../../../../FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/squarevalue-exp.md) | 80 | `result-track:151435053b6a2038376ffcf3593304c3d9acb458cfb394edba9fc01f0d2edc39` |
-| 8 | `theorem` | [squareValue_exp_div](../../../../FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/squarevalue-exp-div.md) | 92 | `result-track:f3832463048291529bc35919339efd430e381dff56b1719a8037d1f51cfebe8f` |
-| 9 | `def` | [scaledValue](../../../../FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/scaledvalue.md) | 99 | `declaration-track:8c0fc0c8cfe3d8f86af03e486be05ec815b8f910064b1a6bd7b05105423d67c5` |
-| 10 | `def` | [scaledError](../../../../FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/scalederror.md) | 103 | `declaration-track:83cc0a1c533430a232fc0eaf0d60520e9e48ca69ba623d22a73a1f1a6c3ca66a` |
-| 11 | `theorem` | [scaled_exp_sound](../../../../FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/scaled-exp-sound.md) | 109 | `result-track:2f44ea0f8bb80c668bbf2413af59689bf8c25bdfca3bfb0b5fe3893cd650dc73` |
-| 12 | `theorem` | [degree_guard_of_unit_radius](../../../../FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/degree-guard-of-unit-radius.md) | 122 | `result-track:b0b38a56f687f809a4ff9e05c1a8189d31b6c859a798f5f5e32b053ad7851a80` |
-| 13 | `theorem` | [nat_succ_le_two_pow](../../../../FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/nat-succ-le-two-pow.md) | 129 | `result-track:0c0e163ca7bfd2364c24a41f732f624dcf56ea6fa90e8ef83156248964d916e9` |
-| 14 | `theorem` | [exists_scaling](../../../../FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/exists-scaling.md) | 136 | `result-track:48843f5235285edd7916155451deab497b661644f96b79dcb064f2c1aa37ad07` |
+| 1 | `def` | [squareValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/squarevalue.md) | 26 | `declaration-track:2527e05ad087f9c4340c090c434d36c0aaf87d6b1a262741a44ef268ac018be5` |
+| 2 | `def` | [propagatedError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/propagatederror.md) | 31 | `declaration-track:b077b4d5012dd177236984e9e6e30b8fa317dc2754c9488d043b2a40b2d29307` |
+| 3 | `theorem` | [norm_square_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/norm-square-sub-le.md) | 38 | `result-track:50a117f75f5edd5333b3c03eeef0bf52562e7a6b4bead6e2b5f6229a97630605` |
+| 4 | `theorem` | [norm_rounded_square_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/norm-rounded-square-sub-le.md) | 50 | `result-track:1e602a8570f6e3461d954a4c6882ccdd4f580bcb15c3b85d275a8f7cf236d369` |
+| 5 | `theorem` | [squaring_chain_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/squaring-chain-sound.md) | 58 | `result-track:b14d835af6f121686401034a3b8e037995c8f9e0d65523fbe81498bb0759661f` |
+| 6 | `theorem` | [exact_squaring_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/exact-squaring-sound.md) | 73 | `result-track:9a71f548a3bdb51f59ed7502b6801346d4e9db255db3dc29e6d077b52d9a5b11` |
+| 7 | `theorem` | [squareValue_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/squarevalue-exp.md) | 80 | `result-track:151435053b6a2038376ffcf3593304c3d9acb458cfb394edba9fc01f0d2edc39` |
+| 8 | `theorem` | [squareValue_exp_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/squarevalue-exp-div.md) | 92 | `result-track:f3832463048291529bc35919339efd430e381dff56b1719a8037d1f51cfebe8f` |
+| 9 | `def` | [scaledValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/scaledvalue.md) | 99 | `declaration-track:8c0fc0c8cfe3d8f86af03e486be05ec815b8f910064b1a6bd7b05105423d67c5` |
+| 10 | `def` | [scaledError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/scalederror.md) | 103 | `declaration-track:83cc0a1c533430a232fc0eaf0d60520e9e48ca69ba623d22a73a1f1a6c3ca66a` |
+| 11 | `theorem` | [scaled_exp_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/scaled-exp-sound.md) | 109 | `result-track:2f44ea0f8bb80c668bbf2413af59689bf8c25bdfca3bfb0b5fe3893cd650dc73` |
+| 12 | `theorem` | [degree_guard_of_unit_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/degree-guard-of-unit-radius.md) | 122 | `result-track:b0b38a56f687f809a4ff9e05c1a8189d31b6c859a798f5f5e32b053ad7851a80` |
+| 13 | `theorem` | [nat_succ_le_two_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/nat-succ-le-two-pow.md) | 129 | `result-track:0c0e163ca7bfd2364c24a41f732f624dcf56ea6fa90e8ef83156248964d916e9` |
+| 14 | `theorem` | [exists_scaling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/declarations/exists-scaling.md) | 136 | `result-track:48843f5235285edd7916155451deab497b661644f96b79dcb064f2c1aa37ad07` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

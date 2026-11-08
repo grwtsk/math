@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CheckedPoleJet`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CheckedPoleJet.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CheckedPoleJet`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CheckedPoleJet.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [powerRows](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/powerrows.md) | 24 | `declaration-track:6c260ad3a9f77bab5bf374125c8e8329e42c74cfd84fc988f01c968a5954cafc` |
-| 2 | `theorem` | [powerRows_checked](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/powerrows-checked.md) | 31 | `result-track:06282fd9516dc4293f3343991f582432796aa3697a11b1ee3f410726482bb7c4` |
-| 3 | `def` | [packetFrom](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/packetfrom.md) | 56 | `declaration-track:0e270d91e857ed4717897a4c87d5eaa838e51d4bee9f2b9d40099a4b0dfb9a6c` |
-| 4 | `def` | [packet](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/packet.md) | 61 | `declaration-track:f288390a6142c53aca3c8fe17eaea40751cc4ea255f10670a84a2742e9b14c10` |
-| 5 | `theorem` | [packetFrom_length](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/packetfrom-length.md) | 64 | `result-track:9082f46403af48c111ddf5d765352ff177de4884adcaa77cc6855d6926d5a2b7` |
-| 6 | `theorem` | [packet_length](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/packet-length.md) | 70 | `result-track:3f89ae8c7cf43737b20e541d4a30df91d25c0dc94e08f7815be380323e34b774` |
-| 7 | `theorem` | [scan_packetFrom](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/scan-packetfrom.md) | 75 | `result-track:0bdc9dd2bb9e641eb069b37a25ef08c10b235a3c153e9ddf6c2d681c27703707` |
-| 8 | `theorem` | [finite_packet](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/finite-packet.md) | 97 | `result-track:0c8fe898d6463a7c3289089f918e51d4612f32d9f841d5dfecc218143f298421` |
-| 9 | `theorem` | [checkPatch_packet](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/checkpatch-packet.md) | 109 | `result-track:ef65f3647f3b6eac912cdb50afc27267833f8f41768e2afc8e9b0649bdaddfda` |
-| 10 | `theorem` | [checkPatch_packet_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/checkpatch-packet-iff.md) | 121 | `result-track:543cac47fd4731762817ea9ff5e05dec04abc091e79d3bd9f98a499e53db6d2b` |
+| 1 | `def` | [powerRows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/powerrows.md) | 24 | `declaration-track:6c260ad3a9f77bab5bf374125c8e8329e42c74cfd84fc988f01c968a5954cafc` |
+| 2 | `theorem` | [powerRows_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/powerrows-checked.md) | 31 | `result-track:06282fd9516dc4293f3343991f582432796aa3697a11b1ee3f410726482bb7c4` |
+| 3 | `def` | [packetFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/packetfrom.md) | 56 | `declaration-track:0e270d91e857ed4717897a4c87d5eaa838e51d4bee9f2b9d40099a4b0dfb9a6c` |
+| 4 | `def` | [packet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/packet.md) | 61 | `declaration-track:f288390a6142c53aca3c8fe17eaea40751cc4ea255f10670a84a2742e9b14c10` |
+| 5 | `theorem` | [packetFrom_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/packetfrom-length.md) | 64 | `result-track:9082f46403af48c111ddf5d765352ff177de4884adcaa77cc6855d6926d5a2b7` |
+| 6 | `theorem` | [packet_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/packet-length.md) | 70 | `result-track:3f89ae8c7cf43737b20e541d4a30df91d25c0dc94e08f7815be380323e34b774` |
+| 7 | `theorem` | [scan_packetFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/scan-packetfrom.md) | 75 | `result-track:0bdc9dd2bb9e641eb069b37a25ef08c10b235a3c153e9ddf6c2d681c27703707` |
+| 8 | `theorem` | [finite_packet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/finite-packet.md) | 97 | `result-track:0c8fe898d6463a7c3289089f918e51d4612f32d9f841d5dfecc218143f298421` |
+| 9 | `theorem` | [checkPatch_packet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/checkpatch-packet.md) | 109 | `result-track:ef65f3647f3b6eac912cdb50afc27267833f8f41768e2afc8e9b0649bdaddfda` |
+| 10 | `theorem` | [checkPatch_packet_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/declarations/checkpatch-packet-iff.md) | 121 | `result-track:543cac47fd4731762817ea9ff5e05dec04abc091e79d3bd9f98a499e53db6d2b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

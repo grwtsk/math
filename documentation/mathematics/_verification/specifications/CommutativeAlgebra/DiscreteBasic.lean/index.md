@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/DiscreteBasic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/DiscreteBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsDiscrete](../../../../CommutativeAlgebra/DiscreteBasic.lean/declarations/isdiscrete.md) | 36 | `declaration-track:2dc3b227f775ce8161d2ce397385851d2911863ce592504959a855121b8a0863` |
-| 2 | `lemma` | [IsDiscrete.surj](../../../../CommutativeAlgebra/DiscreteBasic.lean/declarations/isdiscrete-surj.md) | 42 | `result-track:1e003b915854e2d98858416a2f70fde249152a69f310d6e75efd7951aeef4736` |
-| 3 | `lemma` | [isDiscrete_iff_surjective](../../../../CommutativeAlgebra/DiscreteBasic.lean/declarations/isdiscrete-iff-surjective.md) | 50 | `result-track:8c8cc10afac71df538dba52ca78a5d264025c4d0c4d793a6aa191ed358d8252a` |
+| 1 | `class` | [IsDiscrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteBasic.lean/declarations/isdiscrete.md) | 36 | `declaration-track:2dc3b227f775ce8161d2ce397385851d2911863ce592504959a855121b8a0863` |
+| 2 | `lemma` | [IsDiscrete.surj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteBasic.lean/declarations/isdiscrete-surj.md) | 42 | `result-track:1e003b915854e2d98858416a2f70fde249152a69f310d6e75efd7951aeef4736` |
+| 3 | `lemma` | [isDiscrete_iff_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteBasic.lean/declarations/isdiscrete-iff-surjective.md) | 50 | `result-track:8c8cc10afac71df538dba52ca78a5d264025c4d0c4d793a6aa191ed358d8252a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

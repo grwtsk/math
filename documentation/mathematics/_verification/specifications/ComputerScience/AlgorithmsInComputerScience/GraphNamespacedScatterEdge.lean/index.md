@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/GraphNamespacedScatterEdge.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/GraphNamespacedScatterEdge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GraphNamespacedScatterEdge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GraphNamespacedScatterEdge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ScatterEdge](../../../../../ComputerScience/AlgorithmsInComputerScience/GraphNamespacedScatterEdge.lean/declarations/scatteredge.md) | 13 | `declaration-track:9d2a78159edcdbb0327d2003d0e1bf4219edd87ef3fd2c986a2dd3a821394579` |
-| 2 | `structure` | [ScatterGraph](../../../../../ComputerScience/AlgorithmsInComputerScience/GraphNamespacedScatterEdge.lean/declarations/scattergraph.md) | 19 | `declaration-track:d576987f20fea7024753da19cb5a334788e796e3506b7021bf44816b1181aa07` |
-| 3 | `def` | [colorGraph](../../../../../ComputerScience/AlgorithmsInComputerScience/GraphNamespacedScatterEdge.lean/declarations/colorgraph.md) | 24 | `declaration-track:0598b19ecc74f6d6a558296688d2e5511c77afc7781ec9df4d384d263992d974` |
-| 4 | `theorem` | [colorGraph_root](../../../../../ComputerScience/AlgorithmsInComputerScience/GraphNamespacedScatterEdge.lean/declarations/colorgraph-root.md) | 35 | `result-track:ce32de6fce56dc93917144c8d95f5f9ced08ba2017d4159ee43a877482590e0c` |
+| 1 | `structure` | [ScatterEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GraphNamespacedScatterEdge.lean/declarations/scatteredge.md) | 13 | `declaration-track:9d2a78159edcdbb0327d2003d0e1bf4219edd87ef3fd2c986a2dd3a821394579` |
+| 2 | `structure` | [ScatterGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GraphNamespacedScatterEdge.lean/declarations/scattergraph.md) | 19 | `declaration-track:d576987f20fea7024753da19cb5a334788e796e3506b7021bf44816b1181aa07` |
+| 3 | `def` | [colorGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GraphNamespacedScatterEdge.lean/declarations/colorgraph.md) | 24 | `declaration-track:0598b19ecc74f6d6a558296688d2e5511c77afc7781ec9df4d384d263992d974` |
+| 4 | `theorem` | [colorGraph_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GraphNamespacedScatterEdge.lean/declarations/colorgraph-root.md) | 35 | `result-track:ce32de6fce56dc93917144c8d95f5f9ced08ba2017d4159ee43a877482590e0c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

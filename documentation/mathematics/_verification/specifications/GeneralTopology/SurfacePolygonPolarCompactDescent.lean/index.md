@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonPolarCompactDescent.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonPolarCompactDescent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarCompactDescent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarCompactDescent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCompactCover`](../../../../GeneralTopology/SurfacePolygonPolarCompactCover.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCompactCover`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarCompactCover.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Topology.Constructions` — import line 9; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 10; external provider; requires a separately pinned dependency.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [compactPolar_joint_source](../../../../GeneralTopology/SurfacePolygonPolarCompactDescent.lean/declarations/compactpolar-joint-source.md) | 38 | `result-track:50a1b6428d7c0b160684dea54ea1407a9d10bde11e49479de70b85ed19d35db1` |
-| 2 | `theorem` | [unitCircleJointPolar_continuous_of_compact_quotient](../../../../GeneralTopology/SurfacePolygonPolarCompactDescent.lean/declarations/unitcirclejointpolar-continuous-of-compact-quotient.md) | 46 | `result-track:1b9b833e4e2220183b6cdd901ab3fff34f9cf1073b4236c6736bb5b319f8d1b9` |
-| 3 | `theorem` | [unitCircleJointPolar_continuous_of_fundamental_cover](../../../../GeneralTopology/SurfacePolygonPolarCompactDescent.lean/declarations/unitcirclejointpolar-continuous-of-fundamental-cover.md) | 66 | `result-track:7521c860dd5329c95b57857d0b26dd8ea2f81294b3e6bd457ec958e210a82824` |
+| 1 | `theorem` | [compactPolar_joint_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarCompactDescent.lean/declarations/compactpolar-joint-source.md) | 38 | `result-track:50a1b6428d7c0b160684dea54ea1407a9d10bde11e49479de70b85ed19d35db1` |
+| 2 | `theorem` | [unitCircleJointPolar_continuous_of_compact_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarCompactDescent.lean/declarations/unitcirclejointpolar-continuous-of-compact-quotient.md) | 46 | `result-track:1b9b833e4e2220183b6cdd901ab3fff34f9cf1073b4236c6736bb5b319f8d1b9` |
+| 3 | `theorem` | [unitCircleJointPolar_continuous_of_fundamental_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarCompactDescent.lean/declarations/unitcirclejointpolar-continuous-of-fundamental-cover.md) | 66 | `result-track:7521c860dd5329c95b57857d0b26dd8ea2f81294b3e6bd457ec958e210a82824` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

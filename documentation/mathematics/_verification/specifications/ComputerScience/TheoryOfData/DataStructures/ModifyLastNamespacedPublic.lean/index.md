@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ModifyLastNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ModifyLastNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ModifyLastNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ModifyLastNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [modifyLast.go_concat](../../../../../../ComputerScience/TheoryOfData/DataStructures/ModifyLastNamespacedPublic.lean/declarations/modifylast-go-concat.md) | 27 | `result-track:e8511e8cc8b14968469a533f4a8a34518c2f66a58899abd06f525761a446a05e` |
-| 2 | `theorem` | [modifyLast_concat](../../../../../../ComputerScience/TheoryOfData/DataStructures/ModifyLastNamespacedPublic.lean/declarations/modifylast-concat.md) | 40 | `result-track:91caa00b3596c399e4e7a40480086057d916a5fde636716a9a0c474b4123bc1a` |
-| 3 | `theorem` | [modifyLast_append_of_right_ne_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/ModifyLastNamespacedPublic.lean/declarations/modifylast-append-of-right-ne-nil.md) | 53 | `result-track:a5a730a6686f3f1e3cdd885ec6e9715f0eaf02dba3f9da6436cbb1991931488c` |
+| 1 | `theorem` | [modifyLast.go_concat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ModifyLastNamespacedPublic.lean/declarations/modifylast-go-concat.md) | 27 | `result-track:e8511e8cc8b14968469a533f4a8a34518c2f66a58899abd06f525761a446a05e` |
+| 2 | `theorem` | [modifyLast_concat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ModifyLastNamespacedPublic.lean/declarations/modifylast-concat.md) | 40 | `result-track:91caa00b3596c399e4e7a40480086057d916a5fde636716a9a0c474b4123bc1a` |
+| 3 | `theorem` | [modifyLast_append_of_right_ne_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ModifyLastNamespacedPublic.lean/declarations/modifylast-append-of-right-ne-nil.md) | 53 | `result-track:a5a730a6686f3f1e3cdd885ec6e9715f0eaf02dba3f9da6436cbb1991931488c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

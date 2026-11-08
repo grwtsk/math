@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DispositionNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DispositionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DispositionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DispositionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [JurisDisposition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DispositionNamespaced.lean/declarations/jurisdisposition.md) | 18 | `declaration-track:68210006f25813368617f7ea6c01a5febca48f4765c8d2986f18d4c69f23f2f8` |
-| 2 | `def` | [JurisDisposition.MayExecute](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DispositionNamespaced.lean/declarations/jurisdisposition-mayexecute.md) | 25 | `declaration-track:771aaba31d4284033d145a7f13704a3f389a404e5313b1539c2a27cb83553163` |
-| 3 | `theorem` | [unresolved_blocks_execution](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DispositionNamespaced.lean/declarations/unresolved-blocks-execution.md) | 29 | `result-track:3c6c7a4687c08b259596d4e8404e3054f7eecd280d7d6edc0137fc31d9be4ccd` |
-| 4 | `theorem` | [conflicting_blocks_execution](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DispositionNamespaced.lean/declarations/conflicting-blocks-execution.md) | 33 | `result-track:1f12101430c025e3d50d6619c25e351434fd75ce17019a1338f964390dc395a4` |
-| 5 | `theorem` | [prohibited_blocks_execution](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DispositionNamespaced.lean/declarations/prohibited-blocks-execution.md) | 37 | `result-track:a74279c8da39a9a7870c0ff9c50d7bb8bf19bbb81a1c0493c9971eea9b255e6e` |
+| 1 | `inductive` | [JurisDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DispositionNamespaced.lean/declarations/jurisdisposition.md) | 18 | `declaration-track:68210006f25813368617f7ea6c01a5febca48f4765c8d2986f18d4c69f23f2f8` |
+| 2 | `def` | [JurisDisposition.MayExecute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DispositionNamespaced.lean/declarations/jurisdisposition-mayexecute.md) | 25 | `declaration-track:771aaba31d4284033d145a7f13704a3f389a404e5313b1539c2a27cb83553163` |
+| 3 | `theorem` | [unresolved_blocks_execution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DispositionNamespaced.lean/declarations/unresolved-blocks-execution.md) | 29 | `result-track:3c6c7a4687c08b259596d4e8404e3054f7eecd280d7d6edc0137fc31d9be4ccd` |
+| 4 | `theorem` | [conflicting_blocks_execution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DispositionNamespaced.lean/declarations/conflicting-blocks-execution.md) | 33 | `result-track:1f12101430c025e3d50d6619c25e351434fd75ce17019a1338f964390dc395a4` |
+| 5 | `theorem` | [prohibited_blocks_execution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DispositionNamespaced.lean/declarations/prohibited-blocks-execution.md) | 37 | `result-track:a74279c8da39a9a7870c0ff9c50d7bb8bf19bbb81a1c0493c9971eea9b255e6e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

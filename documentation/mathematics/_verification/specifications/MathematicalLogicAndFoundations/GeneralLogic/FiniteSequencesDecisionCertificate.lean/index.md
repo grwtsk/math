@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.DictionaryRevision`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDictionaryRevision.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.DictionaryRevision`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDictionaryRevision.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [DecodesSatisfying](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/decodessatisfying.md) | 30 | `declaration-track:3d9e015387ca09ee50bc5b4f885aa428d40547ddfe905828bb0ce77fa8db19da` |
-| 2 | `structure` | [Certificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/certificate.md) | 36 | `declaration-track:de4c4a442e46975e6c4acb4043e4dc821f8340f641084a3c4e18d44a7b4b0aaa` |
-| 3 | `def` | [Certificate.packed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/certificate-packed.md) | 44 | `declaration-track:ba27c5b2eb9875c047e24455d38f634a5776be345775a7431b7d8c8990ad5c69` |
-| 4 | `theorem` | [Certificate.unpack_packed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/certificate-unpack-packed.md) | 48 | `result-track:dcdd2c64e70e273b891d81a510e6c63d6180d37dc2dbc9acda3fc4efb2175a18` |
-| 5 | `theorem` | [Certificate.decodesSatisfying](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/certificate-decodessatisfying.md) | 53 | `result-track:70db8831abc8cbe1d7b723de787049eaaa67fa8525951e5070c7ebc9ae456162` |
-| 6 | `theorem` | [Certificate.predicate_of_successful_equal_decoding](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/certificate-predicate-of-successful-equal-decoding.md) | 58 | `result-track:d3fcf305d45213b9955397b3d1b8efccd2dac469fdabfd5af044eb7e2366779c` |
-| 7 | `theorem` | [Certificate.reuse_of_same_decoding](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/certificate-reuse-of-same-decoding.md) | 70 | `result-track:b8221e87156e29329ed4ed8865df4d154c0fcb62dd35246fded64c152395b945` |
-| 8 | `theorem` | [Certificate.reuse_of_agreement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/certificate-reuse-of-agreement.md) | 77 | `result-track:3b3bf8cd8539cd0540f8d94aa365db1aa733b94f23257f5cb4dd6a44ebe60f7a` |
-| 9 | `theorem` | [Certificate.predicate_after_agreement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/certificate-predicate-after-agreement.md) | 86 | `result-track:3126b629578d1ac2c283bb0454e96c74164980ff2af8f7f3bc9e3208286baa19` |
-| 10 | `theorem` | [stale_premise_counterexample](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/stale-premise-counterexample.md) | 98 | `result-track:bf415f878b631baeb48e6a75d185dcc8570c01daf9e84048bd6337b22d27ea26` |
+| 1 | `def` | [DecodesSatisfying](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/decodessatisfying.md) | 30 | `declaration-track:3d9e015387ca09ee50bc5b4f885aa428d40547ddfe905828bb0ce77fa8db19da` |
+| 2 | `structure` | [Certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/certificate.md) | 36 | `declaration-track:de4c4a442e46975e6c4acb4043e4dc821f8340f641084a3c4e18d44a7b4b0aaa` |
+| 3 | `def` | [Certificate.packed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/certificate-packed.md) | 44 | `declaration-track:ba27c5b2eb9875c047e24455d38f634a5776be345775a7431b7d8c8990ad5c69` |
+| 4 | `theorem` | [Certificate.unpack_packed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/certificate-unpack-packed.md) | 48 | `result-track:dcdd2c64e70e273b891d81a510e6c63d6180d37dc2dbc9acda3fc4efb2175a18` |
+| 5 | `theorem` | [Certificate.decodesSatisfying](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/certificate-decodessatisfying.md) | 53 | `result-track:70db8831abc8cbe1d7b723de787049eaaa67fa8525951e5070c7ebc9ae456162` |
+| 6 | `theorem` | [Certificate.predicate_of_successful_equal_decoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/certificate-predicate-of-successful-equal-decoding.md) | 58 | `result-track:d3fcf305d45213b9955397b3d1b8efccd2dac469fdabfd5af044eb7e2366779c` |
+| 7 | `theorem` | [Certificate.reuse_of_same_decoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/certificate-reuse-of-same-decoding.md) | 70 | `result-track:b8221e87156e29329ed4ed8865df4d154c0fcb62dd35246fded64c152395b945` |
+| 8 | `theorem` | [Certificate.reuse_of_agreement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/certificate-reuse-of-agreement.md) | 77 | `result-track:3b3bf8cd8539cd0540f8d94aa365db1aa733b94f23257f5cb4dd6a44ebe60f7a` |
+| 9 | `theorem` | [Certificate.predicate_after_agreement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/certificate-predicate-after-agreement.md) | 86 | `result-track:3126b629578d1ac2c283bb0454e96c74164980ff2af8f7f3bc9e3208286baa19` |
+| 10 | `theorem` | [stale_premise_counterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/declarations/stale-premise-counterexample.md) | 98 | `result-track:bf415f878b631baeb48e6a75d185dcc8570c01daf9e84048bd6337b22d27ea26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

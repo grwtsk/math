@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionAction.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionAction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionAction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionAction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [FiberAut](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionAction.lean/declarations/fiberaut.md) | 19 | `declaration-track:51e86af520003185e4ddaeb7ce4dd6538bd4420291026a520cc77cab0e63a216` |
-| 2 | `structure` | [TorsionAction](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionAction.lean/declarations/torsionaction.md) | 21 | `declaration-track:16f8c11111207c9478248940199fea7687cf5dc10b261387ef8dab3d7cf0b894` |
-| 3 | `structure` | [TorsionPoint](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionAction.lean/declarations/torsionpoint.md) | 32 | `declaration-track:2dc079b4bf33b9f8fd8dff2d1a3e1d45c958c7f27dae98749afe8c1f3fdffa90` |
-| 4 | `def` | [TorsionAction.actTorsion](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionAction.lean/declarations/torsionaction-acttorsion.md) | 39 | `declaration-track:e71a85e2f9f4f31df99a0104d884e859c354e5f7836067f7d0396c254539b5c2` |
-| 5 | `theorem` | [torsion_action_roundtrip](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionAction.lean/declarations/torsion-action-roundtrip.md) | 49 | `result-track:bf3d6dc8089ae48b140f0de073dbc4247c857992bfbed0460514739000edbe58` |
+| 1 | `abbrev` | [FiberAut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionAction.lean/declarations/fiberaut.md) | 19 | `declaration-track:51e86af520003185e4ddaeb7ce4dd6538bd4420291026a520cc77cab0e63a216` |
+| 2 | `structure` | [TorsionAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionAction.lean/declarations/torsionaction.md) | 21 | `declaration-track:16f8c11111207c9478248940199fea7687cf5dc10b261387ef8dab3d7cf0b894` |
+| 3 | `structure` | [TorsionPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionAction.lean/declarations/torsionpoint.md) | 32 | `declaration-track:2dc079b4bf33b9f8fd8dff2d1a3e1d45c958c7f27dae98749afe8c1f3fdffa90` |
+| 4 | `def` | [TorsionAction.actTorsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionAction.lean/declarations/torsionaction-acttorsion.md) | 39 | `declaration-track:e71a85e2f9f4f31df99a0104d884e859c354e5f7836067f7d0396c254539b5c2` |
+| 5 | `theorem` | [torsion_action_roundtrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionAction.lean/declarations/torsion-action-roundtrip.md) | 49 | `result-track:bf3d6dc8089ae48b140f0de073dbc4247c857992bfbed0460514739000edbe58` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

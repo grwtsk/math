@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [family](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/declarations/family.md) | 28 | `declaration-track:562a4fc1e579a1dea4c306e8e2a72a891871933ee4609f30ba07002fa717ec73` |
-| 2 | `def` | [representation](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/declarations/representation.md) | 33 | `declaration-track:4fdcf7008c228b8429da643649b021ec4c65cf0ad566fc4705f6b602293ce776` |
-| 3 | `theorem` | [representation_minimal](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/declarations/representation-minimal.md) | 43 | `result-track:00d0f197fba49aefdfafced2881cc457a112e92aed923e561c45793c64f77030` |
-| 4 | `def` | [quine](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/declarations/quine.md) | 52 | `declaration-track:c204a1c4fa3475c186cd60222203c2791f6aff554ddf8f0e620f6805bb6ee3a9` |
-| 5 | `theorem` | [observable_distinguishes](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/declarations/observable-distinguishes.md) | 65 | `result-track:2ad82408fac3bb76090ca9f7467b86697198bb2ff98be5a22a7630f54852689c` |
-| 6 | `theorem` | [compress_distinguishes](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/declarations/compress-distinguishes.md) | 73 | `result-track:947b616d5fae40ddaf5dbcb46fc34c31c77d49fe0250e5e2c7d678945a01dc31` |
-| 7 | `theorem` | [quine_factors_through](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/declarations/quine-factors-through.md) | 80 | `result-track:84743001313110a4fdcac0fb79fe474001cbad6e2a0ed741d72177092a92e983` |
-| 8 | `theorem` | [index_eq](../../../../../ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/declarations/index-eq.md) | 86 | `result-track:aae8e130f755e22c29dc72e3bcd68adb72613608808317cf383ace8dd7ad033f` |
+| 1 | `def` | [family](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/declarations/family.md) | 28 | `declaration-track:562a4fc1e579a1dea4c306e8e2a72a891871933ee4609f30ba07002fa717ec73` |
+| 2 | `def` | [representation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/declarations/representation.md) | 33 | `declaration-track:4fdcf7008c228b8429da643649b021ec4c65cf0ad566fc4705f6b602293ce776` |
+| 3 | `theorem` | [representation_minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/declarations/representation-minimal.md) | 43 | `result-track:00d0f197fba49aefdfafced2881cc457a112e92aed923e561c45793c64f77030` |
+| 4 | `def` | [quine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/declarations/quine.md) | 52 | `declaration-track:c204a1c4fa3475c186cd60222203c2791f6aff554ddf8f0e620f6805bb6ee3a9` |
+| 5 | `theorem` | [observable_distinguishes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/declarations/observable-distinguishes.md) | 65 | `result-track:2ad82408fac3bb76090ca9f7467b86697198bb2ff98be5a22a7630f54852689c` |
+| 6 | `theorem` | [compress_distinguishes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/declarations/compress-distinguishes.md) | 73 | `result-track:947b616d5fae40ddaf5dbcb46fc34c31c77d49fe0250e5e2c7d678945a01dc31` |
+| 7 | `theorem` | [quine_factors_through](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/declarations/quine-factors-through.md) | 80 | `result-track:84743001313110a4fdcac0fb79fe474001cbad6e2a0ed741d72177092a92e983` |
+| 8 | `theorem` | [index_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesNamespaced.lean/declarations/index-eq.md) | 86 | `result-track:aae8e130f755e22c29dc72e3bcd68adb72613608808317cf383ace8dd7ad033f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

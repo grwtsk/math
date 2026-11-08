@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrdinalIndex.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrdinalIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrdinalIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrdinalIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StratifiedFrontierIndex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrdinalIndex.lean/declarations/stratifiedfrontierindex.md) | 12 | `declaration-track:7a4866c254eca08b967e78d712df0ed53a8b40b854d0325502d29a8a32de30cc` |
-| 2 | `def` | [finiteFrontierIndex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrdinalIndex.lean/declarations/finitefrontierindex.md) | 18 | `declaration-track:67f4cacc9e1e0ef27db98434ee19daff491f9112c0023dbc3eaa1643427fbb2d` |
-| 3 | `theorem` | [stratified_frontier_index_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrdinalIndex.lean/declarations/stratified-frontier-index-injective.md) | 28 | `result-track:b69e37975c89531d73c83bb671a29b630510ec605f5f3da2978f45197b1db1c6` |
-| 4 | `structure` | [IndexedPersistentLineage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrdinalIndex.lean/declarations/indexedpersistentlineage.md) | 39 | `declaration-track:adf31c66aeb63176c5c1ce325e02a2e8e1436265234181408fd29f7bad9fd863` |
+| 1 | `structure` | [StratifiedFrontierIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrdinalIndex.lean/declarations/stratifiedfrontierindex.md) | 12 | `declaration-track:7a4866c254eca08b967e78d712df0ed53a8b40b854d0325502d29a8a32de30cc` |
+| 2 | `def` | [finiteFrontierIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrdinalIndex.lean/declarations/finitefrontierindex.md) | 18 | `declaration-track:67f4cacc9e1e0ef27db98434ee19daff491f9112c0023dbc3eaa1643427fbb2d` |
+| 3 | `theorem` | [stratified_frontier_index_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrdinalIndex.lean/declarations/stratified-frontier-index-injective.md) | 28 | `result-track:b69e37975c89531d73c83bb671a29b630510ec605f5f3da2978f45197b1db1c6` |
+| 4 | `structure` | [IndexedPersistentLineage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrdinalIndex.lean/declarations/indexedpersistentlineage.md) | 39 | `declaration-track:adf31c66aeb63176c5c1ce325e02a2e8e1436265234181408fd29f7bad9fd863` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

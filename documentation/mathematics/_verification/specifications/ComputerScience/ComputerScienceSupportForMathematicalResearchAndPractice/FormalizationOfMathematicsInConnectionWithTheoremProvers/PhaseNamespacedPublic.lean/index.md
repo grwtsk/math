@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ProofPhase](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseNamespacedPublic.lean/declarations/proofphase.md) | 27 | `declaration-track:630c12f5fa951262e2da2780c3d717e86a59fc9ae830dfdc9ab2cb37e34c0b7c` |
-| 2 | `inductive` | [PhaseStep](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseNamespacedPublic.lean/declarations/phasestep.md) | 39 | `declaration-track:448cd1d43a5f08462acdcd3a263a9a307381df1693dc71c12d58e2a413988146` |
-| 3 | `def` | [ProofPhase.rank](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseNamespacedPublic.lean/declarations/proofphase-rank.md) | 48 | `declaration-track:024e9a0c7e186edf915d0404f99ecafcf151139ee1feb409cbdfc861f10ec3cb` |
-| 4 | `theorem` | [PhaseStep.rank_strict](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseNamespacedPublic.lean/declarations/phasestep-rank-strict.md) | 57 | `result-track:b8e3244bea97f84a613925a506ef5c25ec30bbd39555cbd1e87f391e26bcf86a` |
+| 1 | `inductive` | [ProofPhase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseNamespacedPublic.lean/declarations/proofphase.md) | 27 | `declaration-track:630c12f5fa951262e2da2780c3d717e86a59fc9ae830dfdc9ab2cb37e34c0b7c` |
+| 2 | `inductive` | [PhaseStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseNamespacedPublic.lean/declarations/phasestep.md) | 39 | `declaration-track:448cd1d43a5f08462acdcd3a263a9a307381df1693dc71c12d58e2a413988146` |
+| 3 | `def` | [ProofPhase.rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseNamespacedPublic.lean/declarations/proofphase-rank.md) | 48 | `declaration-track:024e9a0c7e186edf915d0404f99ecafcf151139ee1feb409cbdfc861f10ec3cb` |
+| 4 | `theorem` | [PhaseStep.rank_strict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseNamespacedPublic.lean/declarations/phasestep-rank-strict.md) | 57 | `result-track:b8e3244bea97f84a613925a506ef5c25ec30bbd39555cbd1e87f391e26bcf86a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

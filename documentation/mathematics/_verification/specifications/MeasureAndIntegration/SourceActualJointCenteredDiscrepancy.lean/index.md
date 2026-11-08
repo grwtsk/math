@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualJointCenteredDiscrepancy.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualJointCenteredDiscrepancy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualJointCenteredDiscrepancy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualJointCenteredDiscrepancy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualCenteredLogDiscrepancy](../../../../MeasureAndIntegration/SourceActualJointCenteredDiscrepancy.lean/declarations/actualcenteredlogdiscrepancy.md) | 16 | `declaration-track:f07ce2124923eeec6aecc434103c3661433cbe873819abba871279f40f4ee475` |
-| 2 | `def` | [actualJointCenteredIntegral](../../../../MeasureAndIntegration/SourceActualJointCenteredDiscrepancy.lean/declarations/actualjointcenteredintegral.md) | 19 | `declaration-track:23dce1182fd7468ff6140afdaf935ecd94fc9e543cafcaa4f842b60ace5250e2` |
-| 3 | `theorem` | [actual_centered_discrepancy_abs_le](../../../../MeasureAndIntegration/SourceActualJointCenteredDiscrepancy.lean/declarations/actual-centered-discrepancy-abs-le.md) | 23 | `result-track:1064f2252e54e5b582fc9096bf298c8fb8bd7336d3b8e82f8ef5e4fbe3b83f52` |
-| 4 | `theorem` | [actual_endpoint_companion_abs_le](../../../../MeasureAndIntegration/SourceActualJointCenteredDiscrepancy.lean/declarations/actual-endpoint-companion-abs-le.md) | 34 | `result-track:273c7d7e6635e82344023322231d8d2111cc126313d98a32cba0aaf0e02aeb9c` |
-| 5 | `theorem` | [actual_joint_centered_identity](../../../../MeasureAndIntegration/SourceActualJointCenteredDiscrepancy.lean/declarations/actual-joint-centered-identity.md) | 46 | `result-track:9a8fda7236e33053f03fe9c0ff94a9251c571ca0842e1fb250a010bf10ee2fac` |
+| 1 | `def` | [actualCenteredLogDiscrepancy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualJointCenteredDiscrepancy.lean/declarations/actualcenteredlogdiscrepancy.md) | 16 | `declaration-track:f07ce2124923eeec6aecc434103c3661433cbe873819abba871279f40f4ee475` |
+| 2 | `def` | [actualJointCenteredIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualJointCenteredDiscrepancy.lean/declarations/actualjointcenteredintegral.md) | 19 | `declaration-track:23dce1182fd7468ff6140afdaf935ecd94fc9e543cafcaa4f842b60ace5250e2` |
+| 3 | `theorem` | [actual_centered_discrepancy_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualJointCenteredDiscrepancy.lean/declarations/actual-centered-discrepancy-abs-le.md) | 23 | `result-track:1064f2252e54e5b582fc9096bf298c8fb8bd7336d3b8e82f8ef5e4fbe3b83f52` |
+| 4 | `theorem` | [actual_endpoint_companion_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualJointCenteredDiscrepancy.lean/declarations/actual-endpoint-companion-abs-le.md) | 34 | `result-track:273c7d7e6635e82344023322231d8d2111cc126313d98a32cba0aaf0e02aeb9c` |
+| 5 | `theorem` | [actual_joint_centered_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualJointCenteredDiscrepancy.lean/declarations/actual-joint-centered-identity.md) | 46 | `result-track:9a8fda7236e33053f03fe9c0ff94a9251c571ca0842e1fb250a010bf10ee2fac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

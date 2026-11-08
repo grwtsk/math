@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/QuasicategoryBasicPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/QuasicategoryBasicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryBasicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryBasicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Quasicategory](../../../../AlgebraicTopology/QuasicategoryBasicPublic.lean/declarations/quasicategory.md) | 41 | `declaration-track:a64b1fef4abb2b5fe365c45c55d604937f9db2f239ec31dfdc8040c92267637f` |
-| 2 | `lemma` | [Quasicategory.hornFilling](../../../../AlgebraicTopology/QuasicategoryBasicPublic.lean/declarations/quasicategory-hornfilling.md) | 46 | `result-track:1274ccca91c55998ddf2b4c265ee511c44f88358a73284fa722ad297b0ccc676` |
-| 3 | `instance` | [(anonymous)](../../../../AlgebraicTopology/QuasicategoryBasicPublic.lean/declarations/instance.md) | 56 | `declaration-track:bd8cf6f4700488572abd5710e1771dd57ed6ab2f477801269272cd51b44f6c93` |
-| 4 | `lemma` | [quasicategory_of_filler](../../../../AlgebraicTopology/QuasicategoryBasicPublic.lean/declarations/quasicategory-of-filler.md) | 59 | `result-track:bd0c27b3472273eaae4a49c0a3a991260a661876f246ed44a4798d905d200a56` |
-| 5 | `lemma` | [quasicategory_of_hasLiftingProperty](../../../../AlgebraicTopology/QuasicategoryBasicPublic.lean/declarations/quasicategory-of-hasliftingproperty.md) | 72 | `result-track:6a9db20f92f029f29c3b4fbf0439a6fa232328c770ffb045752bf49e5e72d70b` |
-| 6 | `lemma` | [Quasicategory.hasLiftingProperty](../../../../AlgebraicTopology/QuasicategoryBasicPublic.lean/declarations/quasicategory-hasliftingproperty.md) | 80 | `result-track:1d9d2e4a7e1e7788325aa27546ec3930eaac6ac8916d0f8e68f10483349d3172` |
-| 7 | `lemma` | [quasicategory_iff_hasLiftingProperty](../../../../AlgebraicTopology/QuasicategoryBasicPublic.lean/declarations/quasicategory-iff-hasliftingproperty.md) | 86 | `result-track:e5233a807e2d93bffd0a3f461432bacd4e82f9d0fcb62a8c36c5c0c73f0baecc` |
+| 1 | `class` | [Quasicategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryBasicPublic.lean/declarations/quasicategory.md) | 41 | `declaration-track:a64b1fef4abb2b5fe365c45c55d604937f9db2f239ec31dfdc8040c92267637f` |
+| 2 | `lemma` | [Quasicategory.hornFilling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryBasicPublic.lean/declarations/quasicategory-hornfilling.md) | 46 | `result-track:1274ccca91c55998ddf2b4c265ee511c44f88358a73284fa722ad297b0ccc676` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryBasicPublic.lean/declarations/instance.md) | 56 | `declaration-track:bd8cf6f4700488572abd5710e1771dd57ed6ab2f477801269272cd51b44f6c93` |
+| 4 | `lemma` | [quasicategory_of_filler](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryBasicPublic.lean/declarations/quasicategory-of-filler.md) | 59 | `result-track:bd0c27b3472273eaae4a49c0a3a991260a661876f246ed44a4798d905d200a56` |
+| 5 | `lemma` | [quasicategory_of_hasLiftingProperty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryBasicPublic.lean/declarations/quasicategory-of-hasliftingproperty.md) | 72 | `result-track:6a9db20f92f029f29c3b4fbf0439a6fa232328c770ffb045752bf49e5e72d70b` |
+| 6 | `lemma` | [Quasicategory.hasLiftingProperty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryBasicPublic.lean/declarations/quasicategory-hasliftingproperty.md) | 80 | `result-track:1d9d2e4a7e1e7788325aa27546ec3930eaac6ac8916d0f8e68f10483349d3172` |
+| 7 | `lemma` | [quasicategory_iff_hasLiftingProperty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryBasicPublic.lean/declarations/quasicategory-iff-hasliftingproperty.md) | 86 | `result-track:e5233a807e2d93bffd0a3f461432bacd4e82f9d0fcb62a8c36c5c0c73f0baecc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SumIntegralExpDecayNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SumIntegralExpDecayNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SumIntegralExpDecayNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SumIntegralExpDecayNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [intervalIntegral_pow_mul_exp_neg_le](../../../../FunctionalAnalysis/SumIntegralExpDecayNamespacedPublic.lean/declarations/intervalintegral-pow-mul-exp-neg-le.md) | 31 | `result-track:e6332108e1aacca8b47c4544e93808c4d6981c818916db424e7b72b94d26ed0e` |
-| 2 | `lemma` | [sum_Ico_pow_mul_exp_neg_le](../../../../FunctionalAnalysis/SumIntegralExpDecayNamespacedPublic.lean/declarations/sum-ico-pow-mul-exp-neg-le.md) | 50 | `result-track:ac6c4f5a1ec1fd31213e662168055456a492a3bdabd2e69c985166c3a510249e` |
-| 3 | `lemma` | [sum_Iic_pow_mul_exp_neg_le](../../../../FunctionalAnalysis/SumIntegralExpDecayNamespacedPublic.lean/declarations/sum-iic-pow-mul-exp-neg-le.md) | 73 | `result-track:5f3b3dfb08f6bbabdd69267c2bdb1d76f8752fea21869e4a85ee2e55dc401085` |
-| 4 | `lemma` | [sum_Iic_pow_mul_two_pow_neg_le](../../../../FunctionalAnalysis/SumIntegralExpDecayNamespacedPublic.lean/declarations/sum-iic-pow-mul-two-pow-neg-le.md) | 77 | `result-track:56d2f84446c1f32d41da0f2640088c77d65069013023f8ea6331d06ade6217ee` |
+| 1 | `lemma` | [intervalIntegral_pow_mul_exp_neg_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SumIntegralExpDecayNamespacedPublic.lean/declarations/intervalintegral-pow-mul-exp-neg-le.md) | 31 | `result-track:e6332108e1aacca8b47c4544e93808c4d6981c818916db424e7b72b94d26ed0e` |
+| 2 | `lemma` | [sum_Ico_pow_mul_exp_neg_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SumIntegralExpDecayNamespacedPublic.lean/declarations/sum-ico-pow-mul-exp-neg-le.md) | 50 | `result-track:ac6c4f5a1ec1fd31213e662168055456a492a3bdabd2e69c985166c3a510249e` |
+| 3 | `lemma` | [sum_Iic_pow_mul_exp_neg_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SumIntegralExpDecayNamespacedPublic.lean/declarations/sum-iic-pow-mul-exp-neg-le.md) | 73 | `result-track:5f3b3dfb08f6bbabdd69267c2bdb1d76f8752fea21869e4a85ee2e55dc401085` |
+| 4 | `lemma` | [sum_Iic_pow_mul_two_pow_neg_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SumIntegralExpDecayNamespacedPublic.lean/declarations/sum-iic-pow-mul-two-pow-neg-le.md) | 77 | `result-track:56d2f84446c1f32d41da0f2640088c77d65069013023f8ea6331d06ade6217ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

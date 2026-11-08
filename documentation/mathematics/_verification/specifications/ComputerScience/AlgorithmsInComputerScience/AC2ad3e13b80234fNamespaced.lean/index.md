@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AC2ad3e13b80234fNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AC2ad3e13b80234fNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AC2ad3e13b80234fNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AC2ad3e13b80234fNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,7 +62,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ElementName.canonicalCoordinates](../../../../../ComputerScience/AlgorithmsInComputerScience/AC2ad3e13b80234fNamespaced.lean/declarations/elementname-canonicalcoordinates.md) | 24 | `declaration-track:f582a9a15a1fb70dbb695fd35028935b9818dc8ac68ad7e1dd222e2a0a888faf` |
+| 1 | `def` | [ElementName.canonicalCoordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AC2ad3e13b80234fNamespaced.lean/declarations/elementname-canonicalcoordinates.md) | 24 | `declaration-track:f582a9a15a1fb70dbb695fd35028935b9818dc8ac68ad7e1dd222e2a0a888faf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

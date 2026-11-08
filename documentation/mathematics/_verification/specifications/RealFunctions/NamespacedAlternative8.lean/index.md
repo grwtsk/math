@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/NamespacedAlternative8.lean/index.md) · [Full source](../../../../RealFunctions/NamespacedAlternative8.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative8.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative8.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rowWeight](../../../../RealFunctions/NamespacedAlternative8.lean/declarations/rowweight.md) | 26 | `declaration-track:f49311726da4dbea281f3db027685766a097c0a791286623132383dfc044580e` |
-| 2 | `def` | [correlationSlope](../../../../RealFunctions/NamespacedAlternative8.lean/declarations/correlationslope.md) | 29 | `declaration-track:26c45194c739c6e45b513dbe82d5ee21cb29beadd6731ab0600861e296400980` |
-| 3 | `theorem` | [rowWeight_eq_exponential](../../../../RealFunctions/NamespacedAlternative8.lean/declarations/rowweight-eq-exponential.md) | 34 | `result-track:74d56372eb2737083eb6a43fee9cc69e43035edbb6221dacf3f1626c68f8611f` |
-| 4 | `theorem` | [rowWeight_hasDerivAt](../../../../RealFunctions/NamespacedAlternative8.lean/declarations/rowweight-hasderivat.md) | 44 | `result-track:dc3e5e8e7cdc3f2941be436da0f6d02118628628322d5855ac908a56449e937c` |
-| 5 | `theorem` | [rowWeight_deriv](../../../../RealFunctions/NamespacedAlternative8.lean/declarations/rowweight-deriv.md) | 77 | `result-track:e9c5cffcafd054087507bda74dc06713153cc85f1860485b7c359565f89a80d1` |
-| 6 | `theorem` | [rowWeight_contDiffOn](../../../../RealFunctions/NamespacedAlternative8.lean/declarations/rowweight-contdiffon.md) | 82 | `result-track:e6f47c695c727152b49cd654058aef36752b6e0273566b746e9ea5c91cec2729` |
-| 7 | `theorem` | [rowWeight_deriv_integrable](../../../../RealFunctions/NamespacedAlternative8.lean/declarations/rowweight-deriv-integrable.md) | 95 | `result-track:58b860236a879230ee21b887103bc8db979b26d2cdeac27b04b4ac68cea65664` |
+| 1 | `def` | [rowWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative8.lean/declarations/rowweight.md) | 26 | `declaration-track:f49311726da4dbea281f3db027685766a097c0a791286623132383dfc044580e` |
+| 2 | `def` | [correlationSlope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative8.lean/declarations/correlationslope.md) | 29 | `declaration-track:26c45194c739c6e45b513dbe82d5ee21cb29beadd6731ab0600861e296400980` |
+| 3 | `theorem` | [rowWeight_eq_exponential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative8.lean/declarations/rowweight-eq-exponential.md) | 34 | `result-track:74d56372eb2737083eb6a43fee9cc69e43035edbb6221dacf3f1626c68f8611f` |
+| 4 | `theorem` | [rowWeight_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative8.lean/declarations/rowweight-hasderivat.md) | 44 | `result-track:dc3e5e8e7cdc3f2941be436da0f6d02118628628322d5855ac908a56449e937c` |
+| 5 | `theorem` | [rowWeight_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative8.lean/declarations/rowweight-deriv.md) | 77 | `result-track:e9c5cffcafd054087507bda74dc06713153cc85f1860485b7c359565f89a80d1` |
+| 6 | `theorem` | [rowWeight_contDiffOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative8.lean/declarations/rowweight-contdiffon.md) | 82 | `result-track:e6f47c695c727152b49cd654058aef36752b6e0273566b746e9ea5c91cec2729` |
+| 7 | `theorem` | [rowWeight_deriv_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative8.lean/declarations/rowweight-deriv-integrable.md) | 95 | `result-track:58b860236a879230ee21b887103bc8db979b26d2cdeac27b04b4ac68cea65664` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

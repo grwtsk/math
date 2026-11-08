@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/EnergyGrowthEquivalences.lean/index.md) · [Full source](../../../../MeasureAndIntegration/EnergyGrowthEquivalences.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EnergyGrowthEquivalences.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EnergyGrowthEquivalences.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.WeightedIntegralGrowth`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedIntegralGrowth.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.InnerProductSpace.CausalResponseGram`](../../../../MeasureAndIntegration/CausalResponseGram.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.DiagonalEnergyBounds`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DiagonalEnergyBounds.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.WeightedIntegralGrowth`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedIntegralGrowth.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.CausalResponseGram`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalResponseGram.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.DiagonalEnergyBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DiagonalEnergyBounds.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Integrals.Basic` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -60,18 +60,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [local_pickup_square_nonnegative](../../../../MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/local-pickup-square-nonnegative.md) | 30 | `result-track:a0708dc7609d11d477e8367a32503d2bfaa6475e6c7b9f44f78d1e2efab7774c` |
-| 2 | `theorem` | [local_pickup_square_le_energy](../../../../MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/local-pickup-square-le-energy.md) | 36 | `result-track:9081bf6b8d74c9889b374ebe9ded4341968f800898499f2ac1f7afade435a4b1` |
-| 3 | `theorem` | [rpow_square](../../../../MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/rpow-square.md) | 46 | `result-track:b46277ea4de34eedd96a0f96874f88d22d2b9c071c3945b77a61367cdd0de7e1` |
-| 4 | `theorem` | [growth_square_bound](../../../../MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/growth-square-bound.md) | 52 | `result-track:7113aa3d8d1d8dd639515cfc2e638e4d31ec4c6a7b2e68461be57d8f674c5d32` |
-| 5 | `theorem` | [model_integrable](../../../../MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/model-integrable.md) | 61 | `result-track:4ef6b88f4c64980d80c9752a678b29be5b699d9b47c5e85d229590bfaa482c08` |
-| 6 | `theorem` | [model_integral](../../../../MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/model-integral.md) | 68 | `result-track:34fadb370326f9fda5360d12448c995d11ca65bc35ef887bf0b34da8982467de` |
-| 7 | `theorem` | [growth_energy_bound](../../../../MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/growth-energy-bound.md) | 84 | `result-track:b9155ed6c727cb50c656d22a5572c975c806686a13441c577fd6502e04bc653d` |
-| 8 | `theorem` | [whole_pickup_poly_implies_budgets](../../../../MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/whole-pickup-poly-implies-budgets.md) | 100 | `result-track:39fb8737fafc6a053fcaf99b6e418bd8f66f5dc633350d1d9c7d721ff2ff8121` |
-| 9 | `theorem` | [budgets_imply_whole_pickup_poly_of_diagonal_bound](../../../../MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/budgets-imply-whole-pickup-poly-of-diagonal-bound.md) | 134 | `result-track:4cdf5d02199520ad8763ab4d5b5ed1381ccdeb57283383a1e03d318c948181b7` |
-| 10 | `theorem` | [whole_pickup_poly_iff_budgets_of_diagonal_bound](../../../../MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/whole-pickup-poly-iff-budgets-of-diagonal-bound.md) | 190 | `result-track:2852d62079e29afef3f7aeaceca9e7660237cd3e3965cf0ba89a85ae6082a073` |
-| 11 | `theorem` | [budgets_imply_whole_pickup_poly](../../../../MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/budgets-imply-whole-pickup-poly.md) | 198 | `result-track:3a031cb5db27682ddf7ce4138270ccec28146842c34b3106c6e94969aba047bb` |
-| 12 | `theorem` | [whole_pickup_poly_iff_budgets](../../../../MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/whole-pickup-poly-iff-budgets.md) | 203 | `result-track:6a6cc77b1d890a6ac93bb915783dede221616b034a113328e9a318508db619ea` |
+| 1 | `theorem` | [local_pickup_square_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/local-pickup-square-nonnegative.md) | 30 | `result-track:a0708dc7609d11d477e8367a32503d2bfaa6475e6c7b9f44f78d1e2efab7774c` |
+| 2 | `theorem` | [local_pickup_square_le_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/local-pickup-square-le-energy.md) | 36 | `result-track:9081bf6b8d74c9889b374ebe9ded4341968f800898499f2ac1f7afade435a4b1` |
+| 3 | `theorem` | [rpow_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/rpow-square.md) | 46 | `result-track:b46277ea4de34eedd96a0f96874f88d22d2b9c071c3945b77a61367cdd0de7e1` |
+| 4 | `theorem` | [growth_square_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/growth-square-bound.md) | 52 | `result-track:7113aa3d8d1d8dd639515cfc2e638e4d31ec4c6a7b2e68461be57d8f674c5d32` |
+| 5 | `theorem` | [model_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/model-integrable.md) | 61 | `result-track:4ef6b88f4c64980d80c9752a678b29be5b699d9b47c5e85d229590bfaa482c08` |
+| 6 | `theorem` | [model_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/model-integral.md) | 68 | `result-track:34fadb370326f9fda5360d12448c995d11ca65bc35ef887bf0b34da8982467de` |
+| 7 | `theorem` | [growth_energy_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/growth-energy-bound.md) | 84 | `result-track:b9155ed6c727cb50c656d22a5572c975c806686a13441c577fd6502e04bc653d` |
+| 8 | `theorem` | [whole_pickup_poly_implies_budgets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/whole-pickup-poly-implies-budgets.md) | 100 | `result-track:39fb8737fafc6a053fcaf99b6e418bd8f66f5dc633350d1d9c7d721ff2ff8121` |
+| 9 | `theorem` | [budgets_imply_whole_pickup_poly_of_diagonal_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/budgets-imply-whole-pickup-poly-of-diagonal-bound.md) | 134 | `result-track:4cdf5d02199520ad8763ab4d5b5ed1381ccdeb57283383a1e03d318c948181b7` |
+| 10 | `theorem` | [whole_pickup_poly_iff_budgets_of_diagonal_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/whole-pickup-poly-iff-budgets-of-diagonal-bound.md) | 190 | `result-track:2852d62079e29afef3f7aeaceca9e7660237cd3e3965cf0ba89a85ae6082a073` |
+| 11 | `theorem` | [budgets_imply_whole_pickup_poly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/budgets-imply-whole-pickup-poly.md) | 198 | `result-track:3a031cb5db27682ddf7ce4138270ccec28146842c34b3106c6e94969aba047bb` |
+| 12 | `theorem` | [whole_pickup_poly_iff_budgets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EnergyGrowthEquivalences.lean/declarations/whole-pickup-poly-iff-budgets.md) | 203 | `result-track:6a6cc77b1d890a6ac93bb915783dede221616b034a113328e9a318508db619ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

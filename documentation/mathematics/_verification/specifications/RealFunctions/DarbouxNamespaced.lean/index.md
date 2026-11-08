@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DarbouxNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/DarbouxNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DarbouxNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DarbouxNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_hasDerivWithinAt_eq_of_gt_of_lt](../../../../RealFunctions/DarbouxNamespaced.lean/declarations/exists-hasderivwithinat-eq-of-gt-of-lt.md) | 34 | `result-track:65a1da66295f51e6fa806b009feb8ef96b44e7cee171853e4a7b8c604b9dfa3c` |
-| 2 | `theorem` | [exists_hasDerivWithinAt_eq_of_lt_of_gt](../../../../RealFunctions/DarbouxNamespaced.lean/declarations/exists-hasderivwithinat-eq-of-lt-of-gt.md) | 70 | `result-track:0cb6e4b6ef53057e606924e44e356802ad90d6203798ae1f3be79bc394282a9a` |
-| 3 | `theorem` | [Set.OrdConnected.image_hasDerivWithinAt](../../../../RealFunctions/DarbouxNamespaced.lean/declarations/set-ordconnected-image-hasderivwithinat.md) | 80 | `result-track:2fbc853f9b9dc544b7e1c6cd60aa0b52d02920a946a8af844ef8cc9e16b219c0` |
-| 4 | `theorem` | [Set.OrdConnected.image_derivWithin](../../../../RealFunctions/DarbouxNamespaced.lean/declarations/set-ordconnected-image-derivwithin.md) | 98 | `result-track:08407d3750845c56b09807003225d521479fd69b890e4aaa8889cd2cc594bb56` |
-| 5 | `theorem` | [Set.OrdConnected.image_deriv](../../../../RealFunctions/DarbouxNamespaced.lean/declarations/set-ordconnected-image-deriv.md) | 104 | `result-track:f94e3bdfa212b16afcca17d7fada9d6aca541a7ce3e5edf2f438f8dd196406ca` |
-| 6 | `theorem` | [Convex.image_hasDerivWithinAt](../../../../RealFunctions/DarbouxNamespaced.lean/declarations/convex-image-hasderivwithinat.md) | 110 | `result-track:bd256e33951a5674031e50727ad2eddc21ecf99c208a305b4b74081bfe919477` |
-| 7 | `theorem` | [Convex.image_derivWithin](../../../../RealFunctions/DarbouxNamespaced.lean/declarations/convex-image-derivwithin.md) | 116 | `result-track:fe8a496efafb685f22b25fcc2fe63c6c2b7bb3acf5fc5f0a37f4555ce2c258a0` |
-| 8 | `theorem` | [Convex.image_deriv](../../../../RealFunctions/DarbouxNamespaced.lean/declarations/convex-image-deriv.md) | 122 | `result-track:6415a4502eafc5e1ab59a4871a75d9339cf2a0ea8a0e398caffd3c5b36509317` |
-| 9 | `theorem` | [exists_hasDerivWithinAt_eq_of_ge_of_le](../../../../RealFunctions/DarbouxNamespaced.lean/declarations/exists-hasderivwithinat-eq-of-ge-of-le.md) | 128 | `result-track:9af74fe060fb2d7e4824edfcfe21f3c7bb46ba10f1ae118b0eab4a5c63fbc786` |
-| 10 | `theorem` | [exists_hasDerivWithinAt_eq_of_le_of_ge](../../../../RealFunctions/DarbouxNamespaced.lean/declarations/exists-hasderivwithinat-eq-of-le-of-ge.md) | 136 | `result-track:86bd04cda245fc46918f05dcf262c00f879e6eb9c5131a298d900a84438b16af` |
-| 11 | `theorem` | [hasDerivWithinAt_forall_lt_or_forall_gt_of_forall_ne](../../../../RealFunctions/DarbouxNamespaced.lean/declarations/hasderivwithinat-forall-lt-or-forall-gt-of-forall-ne.md) | 144 | `result-track:3a5846701e46490d2e08ee00ec7586fdb82cb95504037093647a59381ba079f2` |
+| 1 | `theorem` | [exists_hasDerivWithinAt_eq_of_gt_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DarbouxNamespaced.lean/declarations/exists-hasderivwithinat-eq-of-gt-of-lt.md) | 34 | `result-track:65a1da66295f51e6fa806b009feb8ef96b44e7cee171853e4a7b8c604b9dfa3c` |
+| 2 | `theorem` | [exists_hasDerivWithinAt_eq_of_lt_of_gt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DarbouxNamespaced.lean/declarations/exists-hasderivwithinat-eq-of-lt-of-gt.md) | 70 | `result-track:0cb6e4b6ef53057e606924e44e356802ad90d6203798ae1f3be79bc394282a9a` |
+| 3 | `theorem` | [Set.OrdConnected.image_hasDerivWithinAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DarbouxNamespaced.lean/declarations/set-ordconnected-image-hasderivwithinat.md) | 80 | `result-track:2fbc853f9b9dc544b7e1c6cd60aa0b52d02920a946a8af844ef8cc9e16b219c0` |
+| 4 | `theorem` | [Set.OrdConnected.image_derivWithin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DarbouxNamespaced.lean/declarations/set-ordconnected-image-derivwithin.md) | 98 | `result-track:08407d3750845c56b09807003225d521479fd69b890e4aaa8889cd2cc594bb56` |
+| 5 | `theorem` | [Set.OrdConnected.image_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DarbouxNamespaced.lean/declarations/set-ordconnected-image-deriv.md) | 104 | `result-track:f94e3bdfa212b16afcca17d7fada9d6aca541a7ce3e5edf2f438f8dd196406ca` |
+| 6 | `theorem` | [Convex.image_hasDerivWithinAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DarbouxNamespaced.lean/declarations/convex-image-hasderivwithinat.md) | 110 | `result-track:bd256e33951a5674031e50727ad2eddc21ecf99c208a305b4b74081bfe919477` |
+| 7 | `theorem` | [Convex.image_derivWithin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DarbouxNamespaced.lean/declarations/convex-image-derivwithin.md) | 116 | `result-track:fe8a496efafb685f22b25fcc2fe63c6c2b7bb3acf5fc5f0a37f4555ce2c258a0` |
+| 8 | `theorem` | [Convex.image_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DarbouxNamespaced.lean/declarations/convex-image-deriv.md) | 122 | `result-track:6415a4502eafc5e1ab59a4871a75d9339cf2a0ea8a0e398caffd3c5b36509317` |
+| 9 | `theorem` | [exists_hasDerivWithinAt_eq_of_ge_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DarbouxNamespaced.lean/declarations/exists-hasderivwithinat-eq-of-ge-of-le.md) | 128 | `result-track:9af74fe060fb2d7e4824edfcfe21f3c7bb46ba10f1ae118b0eab4a5c63fbc786` |
+| 10 | `theorem` | [exists_hasDerivWithinAt_eq_of_le_of_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DarbouxNamespaced.lean/declarations/exists-hasderivwithinat-eq-of-le-of-ge.md) | 136 | `result-track:86bd04cda245fc46918f05dcf262c00f879e6eb9c5131a298d900a84438b16af` |
+| 11 | `theorem` | [hasDerivWithinAt_forall_lt_or_forall_gt_of_forall_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DarbouxNamespaced.lean/declarations/hasderivwithinat-forall-lt-or-forall-gt-of-forall-ne.md) | 144 | `result-track:3a5846701e46490d2e08ee00ec7586fdb82cb95504037093647a59381ba079f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

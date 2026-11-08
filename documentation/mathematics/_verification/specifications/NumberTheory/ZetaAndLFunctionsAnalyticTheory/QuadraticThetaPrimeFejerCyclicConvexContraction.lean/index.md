@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerCyclicPrefixReindexing`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicPrefixReindexing.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerCyclicPrefixReindexing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicPrefixReindexing.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cyclicSubEquiv](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/declarations/cyclicsubequiv.md) | 13 | `declaration-track:79504acf3ea0235750a0b39a12dab5d608fea076b6e1d7466491568dbbe85737` |
-| 2 | `theorem` | [cyclicFejerKernel_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/declarations/cyclicfejerkernel-nonnegative.md) | 25 | `result-track:3a90fcd4e5bcfa92ec849a82f7cb96990004c1caf45fb41e2b6670c2fd5f09b3` |
-| 3 | `theorem` | [cyclicFejerKernel_sum_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/declarations/cyclicfejerkernel-sum-one.md) | 34 | `result-track:ee0818f43982c57eb4c4d55f685c84fd5790da6a9358f5e755f375230ee33ac7` |
-| 4 | `theorem` | [cyclicFejerKernel_shifted_sum_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/declarations/cyclicfejerkernel-shifted-sum-one.md) | 62 | `result-track:14886eee2b839beb1438d8f2f6e9ace2a6e00badc8e3e5bcf422b21c308d8200` |
-| 5 | `theorem` | [cyclicFejer_pointwise_error_le_translation_average](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/declarations/cyclicfejer-pointwise-error-le-translation-average.md) | 79 | `result-track:bbf5dc0248732bf0f82e456661cd95f6bd1888aa0cff68eabe42d870a4df91a0` |
-| 6 | `def` | [CyclicConvolutionDoubleSumReindexingClaim](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/declarations/cyclicconvolutiondoublesumreindexingclaim.md) | 120 | `declaration-track:8a7aa853cd051ffec9d86293fc5e240f5aa9832c7e4fcdd8a53a237587de2222` |
-| 7 | `theorem` | [doubleSumReindexing_to_cyclicConvolutionL1](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/declarations/doublesumreindexing-to-cyclicconvolutionl1.md) | 134 | `result-track:97a923cda11edecc7c7f6b47632eafb93376c32adad6bb2cacedbe4b0b747c50` |
+| 1 | `def` | [cyclicSubEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/declarations/cyclicsubequiv.md) | 13 | `declaration-track:79504acf3ea0235750a0b39a12dab5d608fea076b6e1d7466491568dbbe85737` |
+| 2 | `theorem` | [cyclicFejerKernel_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/declarations/cyclicfejerkernel-nonnegative.md) | 25 | `result-track:3a90fcd4e5bcfa92ec849a82f7cb96990004c1caf45fb41e2b6670c2fd5f09b3` |
+| 3 | `theorem` | [cyclicFejerKernel_sum_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/declarations/cyclicfejerkernel-sum-one.md) | 34 | `result-track:ee0818f43982c57eb4c4d55f685c84fd5790da6a9358f5e755f375230ee33ac7` |
+| 4 | `theorem` | [cyclicFejerKernel_shifted_sum_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/declarations/cyclicfejerkernel-shifted-sum-one.md) | 62 | `result-track:14886eee2b839beb1438d8f2f6e9ace2a6e00badc8e3e5bcf422b21c308d8200` |
+| 5 | `theorem` | [cyclicFejer_pointwise_error_le_translation_average](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/declarations/cyclicfejer-pointwise-error-le-translation-average.md) | 79 | `result-track:bbf5dc0248732bf0f82e456661cd95f6bd1888aa0cff68eabe42d870a4df91a0` |
+| 6 | `def` | [CyclicConvolutionDoubleSumReindexingClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/declarations/cyclicconvolutiondoublesumreindexingclaim.md) | 120 | `declaration-track:8a7aa853cd051ffec9d86293fc5e240f5aa9832c7e4fcdd8a53a237587de2222` |
+| 7 | `theorem` | [doubleSumReindexing_to_cyclicConvolutionL1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/declarations/doublesumreindexing-to-cyclicconvolutionl1.md) | 134 | `result-track:97a923cda11edecc7c7f6b47632eafb93376c32adad6bb2cacedbe4b0b747c50` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

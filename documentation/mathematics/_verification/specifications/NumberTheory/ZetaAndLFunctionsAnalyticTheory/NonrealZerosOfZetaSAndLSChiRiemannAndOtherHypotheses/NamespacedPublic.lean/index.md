@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/NamespacedPublic.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/NamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/NamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/NamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [erdos_233](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/NamespacedPublic.lean/declarations/erdos-233.md) | 48 | `result-track:d642ebbd4cd3a987eadc7ecd933ce7c46babc1aab8c92813147c3fb961f7be77` |
-| 2 | `theorem` | [erdos_233.variants.upper_bound](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/NamespacedPublic.lean/declarations/upper-bound.md) | 56 | `result-track:103af67db7e23cf17060d82bd9b0c26bf91a716e0acee0528647ef6317a54b21` |
-| 3 | `theorem` | [erdos_233.variants.lower_bound](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/NamespacedPublic.lean/declarations/lower-bound.md) | 67 | `result-track:e16a915eb026fef8f9154c6dfc99a44883522ad2f647ad741d5efc99a653314d` |
+| 1 | `theorem` | [erdos_233](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/NamespacedPublic.lean/declarations/erdos-233.md) | 48 | `result-track:d642ebbd4cd3a987eadc7ecd933ce7c46babc1aab8c92813147c3fb961f7be77` |
+| 2 | `theorem` | [erdos_233.variants.upper_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/NamespacedPublic.lean/declarations/upper-bound.md) | 56 | `result-track:103af67db7e23cf17060d82bd9b0c26bf91a716e0acee0528647ef6317a54b21` |
+| 3 | `theorem` | [erdos_233.variants.lower_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/NamespacedPublic.lean/declarations/lower-bound.md) | 67 | `result-track:e16a915eb026fef8f9154c6dfc99a44883522ad2f647ad741d5efc99a653314d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

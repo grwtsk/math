@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PhasePhase3.lean/index.md) · [Full source](../../../../Combinatorics/PhasePhase3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PhasePhase3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PhasePhase3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Phase3](../../../../Combinatorics/PhasePhase3.lean/declarations/phase3.md) | 9 | `declaration-track:fbe8653374c2ddb843828affe1bd3f50ad87f23ce5c7cb11d272b4ca6b752a01` |
-| 2 | `def` | [Phase3.mul](../../../../Combinatorics/PhasePhase3.lean/declarations/phase3-mul.md) | 14 | `declaration-track:48e249ed1aed874e27c62167a45ef38b4344b4cdf7236864e43e6d7d1dbcfc8b` |
-| 3 | `def` | [Phase3.act](../../../../Combinatorics/PhasePhase3.lean/declarations/phase3-act.md) | 20 | `declaration-track:39c9b1f42086bc59437cbe501f28e3c756f5859b42da14ae967fcd33d82a3dbc` |
-| 4 | `theorem` | [phase3_mul_assoc](../../../../Combinatorics/PhasePhase3.lean/declarations/phase3-mul-assoc.md) | 25 | `result-track:46d2fa38b3a7210dc6db922aa7851f19600713438f48b707afc54eaa4ac8040c` |
-| 5 | `theorem` | [phase3_identity_left](../../../../Combinatorics/PhasePhase3.lean/declarations/phase3-identity-left.md) | 36 | `result-track:a857ce37e71e2e50a16e431bbbb94e8f58273e000d77a62e7f789d386a1ca096` |
-| 6 | `theorem` | [phase3_identity_right](../../../../Combinatorics/PhasePhase3.lean/declarations/phase3-identity-right.md) | 42 | `result-track:ced8ad839cb97db1a2078c22d4263d8d0b98f68d23ee382253227d042807ef34` |
-| 7 | `theorem` | [phase3_reflect_square](../../../../Combinatorics/PhasePhase3.lean/declarations/phase3-reflect-square.md) | 48 | `result-track:a12975f4b24d1b883d508388078c32e5e0a3f426cb5dcc35f257f61be9c4dfd6` |
-| 8 | `theorem` | [phase3_action_preserves_safe](../../../../Combinatorics/PhasePhase3.lean/declarations/phase3-action-preserves-safe.md) | 53 | `result-track:1fbafdb8fb4b207f917271dac651ba6c4e5a15b420cffc9d294cb70758e7220a` |
-| 9 | `theorem` | [phase3_mul_act](../../../../Combinatorics/PhasePhase3.lean/declarations/phase3-mul-act.md) | 65 | `result-track:1ca43286f7116e9943d70fa2145fa0dd99896ffd7c5cd7c7919424369da30f5c` |
-| 10 | `theorem` | [phase3_reflect_act](../../../../Combinatorics/PhasePhase3.lean/declarations/phase3-reflect-act.md) | 75 | `result-track:a963f97579c2081091e8c7dc20121600b2633bf0000092fcac7ad967f545d94e` |
-| 11 | `theorem` | [phase3_act_zero](../../../../Combinatorics/PhasePhase3.lean/declarations/phase3-act-zero.md) | 82 | `result-track:ee433304403f4984bca4c7dffd742683fdd3880afb6482d59311175f1d02e9a2` |
-| 12 | `theorem` | [phase3_safe_action_ne_zero](../../../../Combinatorics/PhasePhase3.lean/declarations/phase3-safe-action-ne-zero.md) | 87 | `result-track:37cd432681135f5304ba18a616c9c63208a4831afdb184261a60f37f827a224c` |
+| 1 | `inductive` | [Phase3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PhasePhase3.lean/declarations/phase3.md) | 9 | `declaration-track:fbe8653374c2ddb843828affe1bd3f50ad87f23ce5c7cb11d272b4ca6b752a01` |
+| 2 | `def` | [Phase3.mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PhasePhase3.lean/declarations/phase3-mul.md) | 14 | `declaration-track:48e249ed1aed874e27c62167a45ef38b4344b4cdf7236864e43e6d7d1dbcfc8b` |
+| 3 | `def` | [Phase3.act](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PhasePhase3.lean/declarations/phase3-act.md) | 20 | `declaration-track:39c9b1f42086bc59437cbe501f28e3c756f5859b42da14ae967fcd33d82a3dbc` |
+| 4 | `theorem` | [phase3_mul_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PhasePhase3.lean/declarations/phase3-mul-assoc.md) | 25 | `result-track:46d2fa38b3a7210dc6db922aa7851f19600713438f48b707afc54eaa4ac8040c` |
+| 5 | `theorem` | [phase3_identity_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PhasePhase3.lean/declarations/phase3-identity-left.md) | 36 | `result-track:a857ce37e71e2e50a16e431bbbb94e8f58273e000d77a62e7f789d386a1ca096` |
+| 6 | `theorem` | [phase3_identity_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PhasePhase3.lean/declarations/phase3-identity-right.md) | 42 | `result-track:ced8ad839cb97db1a2078c22d4263d8d0b98f68d23ee382253227d042807ef34` |
+| 7 | `theorem` | [phase3_reflect_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PhasePhase3.lean/declarations/phase3-reflect-square.md) | 48 | `result-track:a12975f4b24d1b883d508388078c32e5e0a3f426cb5dcc35f257f61be9c4dfd6` |
+| 8 | `theorem` | [phase3_action_preserves_safe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PhasePhase3.lean/declarations/phase3-action-preserves-safe.md) | 53 | `result-track:1fbafdb8fb4b207f917271dac651ba6c4e5a15b420cffc9d294cb70758e7220a` |
+| 9 | `theorem` | [phase3_mul_act](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PhasePhase3.lean/declarations/phase3-mul-act.md) | 65 | `result-track:1ca43286f7116e9943d70fa2145fa0dd99896ffd7c5cd7c7919424369da30f5c` |
+| 10 | `theorem` | [phase3_reflect_act](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PhasePhase3.lean/declarations/phase3-reflect-act.md) | 75 | `result-track:a963f97579c2081091e8c7dc20121600b2633bf0000092fcac7ad967f545d94e` |
+| 11 | `theorem` | [phase3_act_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PhasePhase3.lean/declarations/phase3-act-zero.md) | 82 | `result-track:ee433304403f4984bca4c7dffd742683fdd3880afb6482d59311175f1d02e9a2` |
+| 12 | `theorem` | [phase3_safe_action_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PhasePhase3.lean/declarations/phase3-safe-action-ne-zero.md) | 87 | `result-track:37cd432681135f5304ba18a616c9c63208a4831afdb184261a60f37f827a224c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

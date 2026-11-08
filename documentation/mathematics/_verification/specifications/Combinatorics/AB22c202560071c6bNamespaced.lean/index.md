@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/AB22c202560071c6bNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/AB22c202560071c6bNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AB22c202560071c6bNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AB22c202560071c6bNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,12 +62,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [HomeCriterion](../../../../Combinatorics/AB22c202560071c6bNamespaced.lean/declarations/homecriterion.md) | 23 | `declaration-track:363821572b63fd1654794ff7c25dda8c3d7991f1202a9d3b6f074455159ccdad` |
-| 2 | `structure` | [RoleEvidence](../../../../Combinatorics/AB22c202560071c6bNamespaced.lean/declarations/roleevidence.md) | 30 | `declaration-track:4c9b6bef000518c180916158ce67cc1f66420b79c73d330d7aea39cd96646c83` |
-| 3 | `structure` | [DomainEvidence](../../../../Combinatorics/AB22c202560071c6bNamespaced.lean/declarations/domainevidence.md) | 36 | `declaration-track:1138844f009195f37c0b84a697e80b4389e9dec4d8c1a0902501c2d8713d7936` |
-| 4 | `structure` | [FacetEvidence](../../../../Combinatorics/AB22c202560071c6bNamespaced.lean/declarations/facetevidence.md) | 43 | `declaration-track:5d910add551d8bae78d778d253ef4be8f0a5fc7b5d08899ac064aea05d790175` |
-| 5 | `structure` | [StatusEvidence](../../../../Combinatorics/AB22c202560071c6bNamespaced.lean/declarations/statusevidence.md) | 49 | `declaration-track:8b08d96b5e56c4547e9ea7dc22e5847ab185e43ad64cb01967b1234e1c9a2872` |
-| 6 | `structure` | [TaxonEvidence](../../../../Combinatorics/AB22c202560071c6bNamespaced.lean/declarations/taxonevidence.md) | 55 | `declaration-track:ee188cfd0beec9d985dbef0bfea1fa8591e451594b08db285068f3323cbac606` |
+| 1 | `inductive` | [HomeCriterion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AB22c202560071c6bNamespaced.lean/declarations/homecriterion.md) | 23 | `declaration-track:363821572b63fd1654794ff7c25dda8c3d7991f1202a9d3b6f074455159ccdad` |
+| 2 | `structure` | [RoleEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AB22c202560071c6bNamespaced.lean/declarations/roleevidence.md) | 30 | `declaration-track:4c9b6bef000518c180916158ce67cc1f66420b79c73d330d7aea39cd96646c83` |
+| 3 | `structure` | [DomainEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AB22c202560071c6bNamespaced.lean/declarations/domainevidence.md) | 36 | `declaration-track:1138844f009195f37c0b84a697e80b4389e9dec4d8c1a0902501c2d8713d7936` |
+| 4 | `structure` | [FacetEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AB22c202560071c6bNamespaced.lean/declarations/facetevidence.md) | 43 | `declaration-track:5d910add551d8bae78d778d253ef4be8f0a5fc7b5d08899ac064aea05d790175` |
+| 5 | `structure` | [StatusEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AB22c202560071c6bNamespaced.lean/declarations/statusevidence.md) | 49 | `declaration-track:8b08d96b5e56c4547e9ea7dc22e5847ab185e43ad64cb01967b1234e1c9a2872` |
+| 6 | `structure` | [TaxonEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AB22c202560071c6bNamespaced.lean/declarations/taxonevidence.md) | 55 | `declaration-track:ee188cfd0beec9d985dbef0bfea1fa8591e451594b08db285068f3323cbac606` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

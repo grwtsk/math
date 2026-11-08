@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/StarPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/StarPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StarPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StarPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [RingConGen.Rel.star](../../../../CommutativeAlgebra/StarPublic.lean/declarations/ringcongen-rel-star.md) | 23 | `result-track:5908752bf74034745412f0066e73019fc302bf86faa40770bd01b6286a78b8e1` |
-| 2 | `theorem` | [ringConGen_star](../../../../CommutativeAlgebra/StarPublic.lean/declarations/ringcongen-star.md) | 36 | `result-track:57f42f5c3f088fc59a6e5222788ac25920787cebc6ec211e590bac4fbf6dcd71` |
+| 1 | `theorem` | [RingConGen.Rel.star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StarPublic.lean/declarations/ringcongen-rel-star.md) | 23 | `result-track:5908752bf74034745412f0066e73019fc302bf86faa40770bd01b6286a78b8e1` |
+| 2 | `theorem` | [ringConGen_star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StarPublic.lean/declarations/ringcongen-star.md) | 36 | `result-track:57f42f5c3f088fc59a6e5222788ac25920787cebc6ec211e590bac4fbf6dcd71` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

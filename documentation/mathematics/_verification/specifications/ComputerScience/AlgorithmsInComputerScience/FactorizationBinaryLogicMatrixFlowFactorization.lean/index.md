@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FactorizationBinaryLogicMatrixFlowFactorization.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FactorizationBinaryLogicMatrixFlowFactorization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FactorizationBinaryLogicMatrixFlowFactorization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FactorizationBinaryLogicMatrixFlowFactorization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BinaryLogicMatrixFlowFactorization](../../../../../ComputerScience/AlgorithmsInComputerScience/FactorizationBinaryLogicMatrixFlowFactorization.lean/declarations/binarylogicmatrixflowfactorization.md) | 6 | `declaration-track:a7447dd0ca50328b32d4154ad139617e1fa62b3067f214dbc02af58ac2747f38` |
-| 2 | `def` | [canonicalFlow4Factorization](../../../../../ComputerScience/AlgorithmsInComputerScience/FactorizationBinaryLogicMatrixFlowFactorization.lean/declarations/canonicalflow4factorization.md) | 12 | `declaration-track:3c1deed7bac113713a7859f4af6be5135861decdbc18210cfcefd3f556d85806` |
-| 3 | `theorem` | [canonicalFlow4_factorization_checked](../../../../../ComputerScience/AlgorithmsInComputerScience/FactorizationBinaryLogicMatrixFlowFactorization.lean/declarations/canonicalflow4-factorization-checked.md) | 18 | `result-track:5bd4542ae94bcb9965ba0da30193079549178e006fcf0b28a103c8b2208ad222` |
-| 4 | `theorem` | [flowFactorization_forward_bijective](../../../../../ComputerScience/AlgorithmsInComputerScience/FactorizationBinaryLogicMatrixFlowFactorization.lean/declarations/flowfactorization-forward-bijective.md) | 22 | `result-track:18ec1567c5072929611cfd6d20946d772196869c763912a3baed67720ff14086` |
-| 5 | `theorem` | [flowFactorization_boundary_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/FactorizationBinaryLogicMatrixFlowFactorization.lean/declarations/flowfactorization-boundary-visible.md) | 27 | `result-track:b976732c075b21d5fe6aa393097609e927897cfda1110c42dc2effced0b6dfae` |
+| 1 | `structure` | [BinaryLogicMatrixFlowFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FactorizationBinaryLogicMatrixFlowFactorization.lean/declarations/binarylogicmatrixflowfactorization.md) | 6 | `declaration-track:a7447dd0ca50328b32d4154ad139617e1fa62b3067f214dbc02af58ac2747f38` |
+| 2 | `def` | [canonicalFlow4Factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FactorizationBinaryLogicMatrixFlowFactorization.lean/declarations/canonicalflow4factorization.md) | 12 | `declaration-track:3c1deed7bac113713a7859f4af6be5135861decdbc18210cfcefd3f556d85806` |
+| 3 | `theorem` | [canonicalFlow4_factorization_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FactorizationBinaryLogicMatrixFlowFactorization.lean/declarations/canonicalflow4-factorization-checked.md) | 18 | `result-track:5bd4542ae94bcb9965ba0da30193079549178e006fcf0b28a103c8b2208ad222` |
+| 4 | `theorem` | [flowFactorization_forward_bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FactorizationBinaryLogicMatrixFlowFactorization.lean/declarations/flowfactorization-forward-bijective.md) | 22 | `result-track:18ec1567c5072929611cfd6d20946d772196869c763912a3baed67720ff14086` |
+| 5 | `theorem` | [flowFactorization_boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FactorizationBinaryLogicMatrixFlowFactorization.lean/declarations/flowfactorization-boundary-visible.md) | 27 | `result-track:b976732c075b21d5fe6aa393097609e927897cfda1110c42dc2effced0b6dfae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

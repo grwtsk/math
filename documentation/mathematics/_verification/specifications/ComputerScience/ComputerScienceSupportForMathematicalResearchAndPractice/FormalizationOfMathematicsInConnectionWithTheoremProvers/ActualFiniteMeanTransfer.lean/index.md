@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualFiniteMeanTransfer.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualFiniteMeanTransfer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualFiniteMeanTransfer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualFiniteMeanTransfer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualMean_lower160](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualFiniteMeanTransfer.lean/declarations/actualmean-lower160.md) | 15 | `result-track:beee8c36213e76049416d38e5436ae43129ac8d725c069f7581c8fa28ba869dc` |
-| 2 | `theorem` | [actualMean_lower176](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualFiniteMeanTransfer.lean/declarations/actualmean-lower176.md) | 25 | `result-track:f66bff1fe932466ce7cdd0958eb0e5d563ef562473100867200da62d40575cc6` |
-| 3 | `theorem` | [actualMean_finite_window](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualFiniteMeanTransfer.lean/declarations/actualmean-finite-window.md) | 36 | `result-track:f317acfb0be2c77c3282bd19230f41a7d380ffa896b89dffc21862b61100e086` |
+| 1 | `theorem` | [actualMean_lower160](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualFiniteMeanTransfer.lean/declarations/actualmean-lower160.md) | 15 | `result-track:beee8c36213e76049416d38e5436ae43129ac8d725c069f7581c8fa28ba869dc` |
+| 2 | `theorem` | [actualMean_lower176](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualFiniteMeanTransfer.lean/declarations/actualmean-lower176.md) | 25 | `result-track:f66bff1fe932466ce7cdd0958eb0e5d563ef562473100867200da62d40575cc6` |
+| 3 | `theorem` | [actualMean_finite_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualFiniteMeanTransfer.lean/declarations/actualmean-finite-window.md) | 36 | `result-track:f317acfb0be2c77c3282bd19230f41a7d380ffa896b89dffc21862b61100e086` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

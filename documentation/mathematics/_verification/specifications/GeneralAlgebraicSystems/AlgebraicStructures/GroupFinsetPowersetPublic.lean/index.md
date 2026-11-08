@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPowersetPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPowersetPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPowersetPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPowersetPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [prod_powerset_insert](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPowersetPublic.lean/declarations/prod-powerset-insert.md) | 32 | `result-track:d79a818880e69ec64713f61d500308f50afd73c920adc320d2fd6d0f02c9d733` |
-| 2 | `lemma` | [prod_powerset_cons](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPowersetPublic.lean/declarations/prod-powerset-cons.md) | 43 | `result-track:ab35574ddfd6365fb4b1a404bd821f602ddc920b0d43ee2fa22dda8897aac05f` |
-| 3 | `lemma` | [prod_powerset](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPowersetPublic.lean/declarations/prod-powerset.md) | 55 | `result-track:77500c273b65803861ed31d2329ce4db2d4823e2f8a95e9707fd5e97d439a6a5` |
-| 4 | `lemma` | [prod_powersetCard](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPowersetPublic.lean/declarations/prod-powersetcard.md) | 62 | `result-track:589b34170ab2a9cb8b5bdd2a573ad08891a43b80ef8afc0b2b3d62be7992f073` |
+| 1 | `lemma` | [prod_powerset_insert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPowersetPublic.lean/declarations/prod-powerset-insert.md) | 32 | `result-track:d79a818880e69ec64713f61d500308f50afd73c920adc320d2fd6d0f02c9d733` |
+| 2 | `lemma` | [prod_powerset_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPowersetPublic.lean/declarations/prod-powerset-cons.md) | 43 | `result-track:ab35574ddfd6365fb4b1a404bd821f602ddc920b0d43ee2fa22dda8897aac05f` |
+| 3 | `lemma` | [prod_powerset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPowersetPublic.lean/declarations/prod-powerset.md) | 55 | `result-track:77500c273b65803861ed31d2329ce4db2d4823e2f8a95e9707fd5e97d439a6a5` |
+| 4 | `lemma` | [prod_powersetCard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPowersetPublic.lean/declarations/prod-powersetcard.md) | 62 | `result-track:589b34170ab2a9cb8b5bdd2a573ad08891a43b80ef8afc0b2b3d62be7992f073` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

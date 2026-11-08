@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/GlobalReference.lean/index.md) · [Full source](../../../../Combinatorics/GlobalReference.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GlobalReference.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GlobalReference.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [KnownMaximalState](../../../../Combinatorics/GlobalReference.lean/declarations/knownmaximalstate.md) | 18 | `declaration-track:edb79637c4b8d37180d2474464a83ccf4a27e749b5a24e76a5792e8d96af3ff0` |
-| 2 | `theorem` | [card_coord](../../../../Combinatorics/GlobalReference.lean/declarations/card-coord.md) | 31 | `result-track:ea3623105203fa9ecad0c62c13b7db6149f00cc4be27039f7fa569fba8c8abe1` |
-| 3 | `theorem` | [absoluteIndex_injective](../../../../Combinatorics/GlobalReference.lean/declarations/absoluteindex-injective.md) | 37 | `result-track:3346ad7af392662fb2f0cf4fd98ce8966af74d62474caeba5af1cb3990fd1afc` |
-| 4 | `theorem` | [absoluteIndex_surjective](../../../../Combinatorics/GlobalReference.lean/declarations/absoluteindex-surjective.md) | 41 | `result-track:f537f32e6164b166a4206555318a09fa267de205ccd106aed1e716b1e8e7c0cd` |
+| 1 | `structure` | [KnownMaximalState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GlobalReference.lean/declarations/knownmaximalstate.md) | 18 | `declaration-track:edb79637c4b8d37180d2474464a83ccf4a27e749b5a24e76a5792e8d96af3ff0` |
+| 2 | `theorem` | [card_coord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GlobalReference.lean/declarations/card-coord.md) | 31 | `result-track:ea3623105203fa9ecad0c62c13b7db6149f00cc4be27039f7fa569fba8c8abe1` |
+| 3 | `theorem` | [absoluteIndex_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GlobalReference.lean/declarations/absoluteindex-injective.md) | 37 | `result-track:3346ad7af392662fb2f0cf4fd98ce8966af74d62474caeba5af1cb3990fd1afc` |
+| 4 | `theorem` | [absoluteIndex_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GlobalReference.lean/declarations/absoluteindex-surjective.md) | 41 | `result-track:f537f32e6164b166a4206555318a09fa267de205ccd106aed1e716b1e8e7c0cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

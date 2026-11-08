@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShortIntervalOscillation.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShortIntervalOscillation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShortIntervalOscillation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShortIntervalOscillation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaShellPrimeEndpoint`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaShellPrimeEndpoint`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShellPrimeEndpoint.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.NumberTheory.Chebyshev` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [DyadicThetaErrorOscillationAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShortIntervalOscillation.lean/declarations/dyadicthetaerroroscillationat.md) | 47 | `declaration-track:4b1551d2b10fceb86a329ec1065f389435830b7dfb31789665000498afd89de2` |
-| 2 | `theorem` | [anchorCancellation_oscillation_to_shellCancellation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShortIntervalOscillation.lean/declarations/anchorcancellation-oscillation-to-shellcancellation.md) | 61 | `result-track:c1a8d54279c49dcac9ed8210f6bb30afa9308d67d51611bb3de9f533416a66bf` |
-| 3 | `theorem` | [oscillation_to_anchorUniformization](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShortIntervalOscillation.lean/declarations/oscillation-to-anchoruniformization.md) | 128 | `result-track:f08a947bbca0ac05a07d0dd8b00165dcbf6bdc835a600841e4d02d9789aca18b` |
-| 4 | `theorem` | [primeEndpointCancellation_oscillation_to_recurrence](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShortIntervalOscillation.lean/declarations/primeendpointcancellation-oscillation-to-recurrence.md) | 137 | `result-track:efd18f3a549ed19cb6b94ecba01d0fb24a6edec1197f9c9eea8943c72985eb27` |
-| 5 | `theorem` | [thetaError_two_mul_oscillation_le_linear](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShortIntervalOscillation.lean/declarations/thetaerror-two-mul-oscillation-le-linear.md) | 147 | `result-track:2351ea4f48bb8cb77691c8e559fbbf4582c40ef193416da5fd77537e0de93fad` |
-| 6 | `theorem` | [sevenEighths_oscillation_exponent](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShortIntervalOscillation.lean/declarations/seveneighths-oscillation-exponent.md) | 215 | `result-track:c51dedbc4abeee5d73319ba880092539c3efa5d74e53cb9575f2c7064f178daa` |
-| 7 | `theorem` | [sevenEighths_oscillation_exponent_lt_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShortIntervalOscillation.lean/declarations/seveneighths-oscillation-exponent-lt-one.md) | 222 | `result-track:5d6541187b0bc1fc70bb910ff1c0095db8cd2fbaacc124fb6d0da5dd1f301de8` |
+| 1 | `def` | [DyadicThetaErrorOscillationAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShortIntervalOscillation.lean/declarations/dyadicthetaerroroscillationat.md) | 47 | `declaration-track:4b1551d2b10fceb86a329ec1065f389435830b7dfb31789665000498afd89de2` |
+| 2 | `theorem` | [anchorCancellation_oscillation_to_shellCancellation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShortIntervalOscillation.lean/declarations/anchorcancellation-oscillation-to-shellcancellation.md) | 61 | `result-track:c1a8d54279c49dcac9ed8210f6bb30afa9308d67d51611bb3de9f533416a66bf` |
+| 3 | `theorem` | [oscillation_to_anchorUniformization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShortIntervalOscillation.lean/declarations/oscillation-to-anchoruniformization.md) | 128 | `result-track:f08a947bbca0ac05a07d0dd8b00165dcbf6bdc835a600841e4d02d9789aca18b` |
+| 4 | `theorem` | [primeEndpointCancellation_oscillation_to_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShortIntervalOscillation.lean/declarations/primeendpointcancellation-oscillation-to-recurrence.md) | 137 | `result-track:efd18f3a549ed19cb6b94ecba01d0fb24a6edec1197f9c9eea8943c72985eb27` |
+| 5 | `theorem` | [thetaError_two_mul_oscillation_le_linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShortIntervalOscillation.lean/declarations/thetaerror-two-mul-oscillation-le-linear.md) | 147 | `result-track:2351ea4f48bb8cb77691c8e559fbbf4582c40ef193416da5fd77537e0de93fad` |
+| 6 | `theorem` | [sevenEighths_oscillation_exponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShortIntervalOscillation.lean/declarations/seveneighths-oscillation-exponent.md) | 215 | `result-track:c51dedbc4abeee5d73319ba880092539c3efa5d74e53cb9575f2c7064f178daa` |
+| 7 | `theorem` | [sevenEighths_oscillation_exponent_lt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaShortIntervalOscillation.lean/declarations/seveneighths-oscillation-exponent-lt-one.md) | 222 | `result-track:5d6541187b0bc1fc70bb910ff1c0095db8cd2fbaacc124fb6d0da5dd1f301de8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnitThresholdConstruction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnitThresholdConstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnitThresholdConstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnitThresholdConstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Complete Threshold Specification](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteThresholdSpecification.lean/index.md) — import line 19; pinned internal source present.
+- [Complete Threshold Specification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteThresholdSpecification.lean/index.md) — import line 19; pinned internal source present.
 - `Folder.Carrier.BinaryMatrix` — import line 21; external provider; requires a separately pinned dependency.
 - `Folder.Spectral.Tensor` — import line 22; external provider; requires a separately pinned dependency.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [unitThresholdQuantizer](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnitThresholdConstruction.lean/declarations/unitthresholdquantizer.md) | 44 | `declaration-track:9e5a77aff8fa12ef592bd0e876b125aaa0fabe05c75f8c2d79af9d13edc13304` |
+| 1 | `def` | [unitThresholdQuantizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnitThresholdConstruction.lean/declarations/unitthresholdquantizer.md) | 44 | `declaration-track:9e5a77aff8fa12ef592bd0e876b125aaa0fabe05c75f8c2d79af9d13edc13304` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

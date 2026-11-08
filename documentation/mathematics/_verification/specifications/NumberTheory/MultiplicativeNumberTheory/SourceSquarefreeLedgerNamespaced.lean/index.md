@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceSquarefreeLedgerNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceSquarefreeLedgerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceSquarefreeLedgerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceSquarefreeLedgerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [squarefreeLedgerCost](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceSquarefreeLedgerNamespaced.lean/declarations/squarefreeledgercost.md) | 29 | `declaration-track:5200497e1e3d199948c3f2fd2f395553c5ba7eb24952e7ba15588f01c1de10fa` |
-| 2 | `theorem` | [actual_ledger_error_tail_squarefree](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceSquarefreeLedgerNamespaced.lean/declarations/actual-ledger-error-tail-squarefree.md) | 33 | `result-track:e328e07a6d253d2a80ccbff19cc378188552accb5eab9469df88152a50301d63` |
-| 3 | `def` | [squarefreeResidualBudget](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceSquarefreeLedgerNamespaced.lean/declarations/squarefreeresidualbudget.md) | 64 | `declaration-track:d9923ff2be7d6f63e16bcab45e1fdbac1ad119e5052a28426286cb9b4536a44d` |
-| 4 | `theorem` | [squarefreeResidualBudget_nonneg](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceSquarefreeLedgerNamespaced.lean/declarations/squarefreeresidualbudget-nonneg.md) | 67 | `result-track:b558ae234570e6587c9c0ba06da9ed63a44332c5f4e8fbf2a9544addaf137f62` |
-| 5 | `theorem` | [residual_tail_of_readout_squarefree](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceSquarefreeLedgerNamespaced.lean/declarations/residual-tail-of-readout-squarefree.md) | 70 | `result-track:d46e9f590099ae45c76957ba8674f23f3a2afbd73fa8e9a6844321634304cca7` |
-| 6 | `theorem` | [estimate_of_readout_squarefree](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceSquarefreeLedgerNamespaced.lean/declarations/estimate-of-readout-squarefree.md) | 83 | `result-track:b8db838dc30860f0c4ef033271c8599f76b091c61b9a9cb49b4bf657379b3452` |
+| 1 | `def` | [squarefreeLedgerCost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceSquarefreeLedgerNamespaced.lean/declarations/squarefreeledgercost.md) | 29 | `declaration-track:5200497e1e3d199948c3f2fd2f395553c5ba7eb24952e7ba15588f01c1de10fa` |
+| 2 | `theorem` | [actual_ledger_error_tail_squarefree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceSquarefreeLedgerNamespaced.lean/declarations/actual-ledger-error-tail-squarefree.md) | 33 | `result-track:e328e07a6d253d2a80ccbff19cc378188552accb5eab9469df88152a50301d63` |
+| 3 | `def` | [squarefreeResidualBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceSquarefreeLedgerNamespaced.lean/declarations/squarefreeresidualbudget.md) | 64 | `declaration-track:d9923ff2be7d6f63e16bcab45e1fdbac1ad119e5052a28426286cb9b4536a44d` |
+| 4 | `theorem` | [squarefreeResidualBudget_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceSquarefreeLedgerNamespaced.lean/declarations/squarefreeresidualbudget-nonneg.md) | 67 | `result-track:b558ae234570e6587c9c0ba06da9ed63a44332c5f4e8fbf2a9544addaf137f62` |
+| 5 | `theorem` | [residual_tail_of_readout_squarefree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceSquarefreeLedgerNamespaced.lean/declarations/residual-tail-of-readout-squarefree.md) | 70 | `result-track:d46e9f590099ae45c76957ba8674f23f3a2afbd73fa8e9a6844321634304cca7` |
+| 6 | `theorem` | [estimate_of_readout_squarefree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceSquarefreeLedgerNamespaced.lean/declarations/estimate-of-readout-squarefree.md) | 83 | `result-track:b8db838dc30860f0c4ef033271c8599f76b091c61b9a9cb49b4bf657379b3452` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

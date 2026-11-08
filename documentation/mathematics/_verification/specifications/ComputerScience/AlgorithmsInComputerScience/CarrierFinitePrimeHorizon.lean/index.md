@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierFinitePrimeHorizon.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierFinitePrimeHorizon.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierFinitePrimeHorizon.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierFinitePrimeHorizon.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FinitePrimeHorizon](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierFinitePrimeHorizon.lean/declarations/finiteprimehorizon.md) | 11 | `declaration-track:81f087a45887662ad905fbaabf660d0b17d3d85f9db62333cb311777019feaee` |
-| 2 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierFinitePrimeHorizon.lean/declarations/instance-source-edition-2.md) | 23 | `declaration-track:7235363385458cd9c2b442008fc48acab44d216234e73d50a03418cd90289f62` |
-| 3 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierFinitePrimeHorizon.lean/declarations/instance-source-edition-3.md) | 27 | `declaration-track:e92f8ecb42007131427999e1ba921a4fd137dfd55661319c937781c087a2d63e` |
-| 4 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierFinitePrimeHorizon.lean/declarations/instance.md) | 31 | `declaration-track:035310cc64070f29f28c754bbc1b69524523afd25adc76b3f40e28b5d0f23f75` |
+| 1 | `structure` | [FinitePrimeHorizon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierFinitePrimeHorizon.lean/declarations/finiteprimehorizon.md) | 11 | `declaration-track:81f087a45887662ad905fbaabf660d0b17d3d85f9db62333cb311777019feaee` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierFinitePrimeHorizon.lean/declarations/instance-source-edition-2.md) | 23 | `declaration-track:7235363385458cd9c2b442008fc48acab44d216234e73d50a03418cd90289f62` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierFinitePrimeHorizon.lean/declarations/instance-source-edition-3.md) | 27 | `declaration-track:e92f8ecb42007131427999e1ba921a4fd137dfd55661319c937781c087a2d63e` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierFinitePrimeHorizon.lean/declarations/instance.md) | 31 | `declaration-track:035310cc64070f29f28c754bbc1b69524523afd25adc76b3f40e28b5d0f23f75` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

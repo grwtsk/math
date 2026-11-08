@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MemcmpPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MemcmpPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MemcmpPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MemcmpPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [memcmpStr_eq_true_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/MemcmpPublic.lean/declarations/memcmpstr-eq-true-iff.md) | 19 | `result-track:41719589365a020a7ada1c6181b9504ae1f7896a68e09d4811c23b3e190a6925` |
-| 2 | `theorem` | [memcmpSlice_eq_true_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/MemcmpPublic.lean/declarations/memcmpslice-eq-true-iff.md) | 52 | `result-track:2dbb8983ce895b660e06b70c0cc248cb4f33f94b31eeb34a62fd25a2989cb803` |
+| 1 | `theorem` | [memcmpStr_eq_true_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MemcmpPublic.lean/declarations/memcmpstr-eq-true-iff.md) | 19 | `result-track:41719589365a020a7ada1c6181b9504ae1f7896a68e09d4811c23b3e190a6925` |
+| 2 | `theorem` | [memcmpSlice_eq_true_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MemcmpPublic.lean/declarations/memcmpslice-eq-true-iff.md) | 52 | `result-track:2dbb8983ce895b660e06b70c0cc248cb4f33f94b31eeb34a62fd25a2989cb803` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

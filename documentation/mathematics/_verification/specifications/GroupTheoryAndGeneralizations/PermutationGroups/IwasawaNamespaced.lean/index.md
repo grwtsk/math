@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/IwasawaNamespaced.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/IwasawaNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/IwasawaNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/IwasawaNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IwasawaStructure](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/IwasawaNamespaced.lean/declarations/iwasawastructure.md) | 53 | `declaration-track:5753db860603c1e7ceea9f9b787ba0ef3b0d69adb0e76bff8b4f5f7bb790ed99` |
-| 2 | `theorem` | [commutator_le](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/IwasawaNamespaced.lean/declarations/commutator-le.md) | 70 | `result-track:2777b7ee8411c6d961c697fb67079789ed3036e3efe07789a827ccdcf1b078f4` |
-| 3 | `theorem` | [isSimpleGroup](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/IwasawaNamespaced.lean/declarations/issimplegroup.md) | 88 | `result-track:48495f6336cf9567debf7853f44e7287197d3a56c835b9b74a64453812994050` |
+| 1 | `structure` | [IwasawaStructure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/IwasawaNamespaced.lean/declarations/iwasawastructure.md) | 53 | `declaration-track:5753db860603c1e7ceea9f9b787ba0ef3b0d69adb0e76bff8b4f5f7bb790ed99` |
+| 2 | `theorem` | [commutator_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/IwasawaNamespaced.lean/declarations/commutator-le.md) | 70 | `result-track:2777b7ee8411c6d961c697fb67079789ed3036e3efe07789a827ccdcf1b078f4` |
+| 3 | `theorem` | [isSimpleGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/IwasawaNamespaced.lean/declarations/issimplegroup.md) | 88 | `result-track:48495f6336cf9567debf7853f44e7287197d3a56c835b9b74a64453812994050` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

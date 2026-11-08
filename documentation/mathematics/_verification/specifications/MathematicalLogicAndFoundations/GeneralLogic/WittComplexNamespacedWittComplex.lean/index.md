@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittComplexNamespacedWittComplex.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittComplexNamespacedWittComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittComplexNamespacedWittComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittComplexNamespacedWittComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [WittComplex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittComplexNamespacedWittComplex.lean/declarations/wittcomplex.md) | 32 | `declaration-track:18beb28ff07b067b17689c67accf4e70023710178545c3e59d4970e02778725c` |
-| 2 | `structure` | [WittElement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittComplexNamespacedWittComplex.lean/declarations/wittelement.md) | 44 | `declaration-track:d7240a8658eebd37c80d90b4068c32aa77849f40af7e40ab9fc39a37950e8151` |
-| 3 | `def` | [WittElement.IsZero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittComplexNamespacedWittComplex.lean/declarations/wittelement-iszero.md) | 50 | `declaration-track:b35d64820aa23d80c2a2236cf46b9413a2625d20466adc4c4140fb80992ec396` |
-| 4 | `def` | [WittElement.Nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittComplexNamespacedWittComplex.lean/declarations/wittelement-nonzero.md) | 55 | `declaration-track:9b61a589099f6651e746d68ebd8e621fb6702857c3c537e0aaee6ee7ec3979d9` |
-| 5 | `theorem` | [witt_complex_is_complex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittComplexNamespacedWittComplex.lean/declarations/witt-complex-is-complex.md) | 60 | `result-track:ded37e1459ab27262432ac3ef0bd82d25692379d6e8577b65080b2559476d4ef` |
-| 6 | `theorem` | [witt_element_has_degree](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittComplexNamespacedWittComplex.lean/declarations/witt-element-has-degree.md) | 65 | `result-track:0a5fdab548aca7f95deb8395841392b0ec225f28049fc1dcc215c366da504af9` |
+| 1 | `structure` | [WittComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittComplexNamespacedWittComplex.lean/declarations/wittcomplex.md) | 32 | `declaration-track:18beb28ff07b067b17689c67accf4e70023710178545c3e59d4970e02778725c` |
+| 2 | `structure` | [WittElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittComplexNamespacedWittComplex.lean/declarations/wittelement.md) | 44 | `declaration-track:d7240a8658eebd37c80d90b4068c32aa77849f40af7e40ab9fc39a37950e8151` |
+| 3 | `def` | [WittElement.IsZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittComplexNamespacedWittComplex.lean/declarations/wittelement-iszero.md) | 50 | `declaration-track:b35d64820aa23d80c2a2236cf46b9413a2625d20466adc4c4140fb80992ec396` |
+| 4 | `def` | [WittElement.Nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittComplexNamespacedWittComplex.lean/declarations/wittelement-nonzero.md) | 55 | `declaration-track:9b61a589099f6651e746d68ebd8e621fb6702857c3c537e0aaee6ee7ec3979d9` |
+| 5 | `theorem` | [witt_complex_is_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittComplexNamespacedWittComplex.lean/declarations/witt-complex-is-complex.md) | 60 | `result-track:ded37e1459ab27262432ac3ef0bd82d25692379d6e8577b65080b2559476d4ef` |
+| 6 | `theorem` | [witt_element_has_degree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittComplexNamespacedWittComplex.lean/declarations/witt-element-has-degree.md) | 65 | `result-track:0a5fdab548aca7f95deb8395841392b0ec225f28049fc1dcc215c366da504af9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

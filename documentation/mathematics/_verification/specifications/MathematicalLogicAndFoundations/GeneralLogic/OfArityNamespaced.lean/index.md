@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [OfArity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/ofarity.md) | 36 | `declaration-track:a28dae48cf1e36011829306d63feae2e4165681bef4833979091bbc598bb27dc` |
-| 2 | `theorem` | [ofArity_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/ofarity-zero.md) | 39 | `result-track:c4eb4b79605f25ae5e4248e9c81d558518a35b2e85b737be3394199b65fae28b` |
-| 3 | `theorem` | [ofArity_succ](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/ofarity-succ.md) | 42 | `result-track:f3af3f25053dcaf56ac8255188c11028ee020b601c554abe30c69b68677cad2a` |
-| 4 | `def` | [const](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/const.md) | 48 | `declaration-track:3b3c1b2460254ea2bad5f49c195287973a559f88ee81e5d530d1609f0fdd92aa` |
-| 5 | `theorem` | [const_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/const-zero.md) | 52 | `result-track:9273acb102023feade30c0b2535423dc48487f2b1591383c17cfcae670c007c6` |
-| 6 | `theorem` | [const_succ](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/const-succ.md) | 56 | `result-track:935876fa6becdd06b492fd03ad68370259061c053f42bfd0b859b650bd98caf6` |
-| 7 | `theorem` | [const_succ_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/const-succ-apply.md) | 60 | `result-track:7cd640467047bf98074766c7545c541a0ceabb8a67f54a45029c81ec90a44feb` |
-| 8 | `instance` | [inhabited](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/inhabited.md) | 63 | `declaration-track:9a25ac0b319b24593e585d4511f7e5536af2093c203a83206df6eaa788325870` |
-| 9 | `lemma` | [fromTypes_fin_const](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/fromtypes-fin-const.md) | 70 | `result-track:ef551a4eb3fcfadb05016d2a8c158c3354b3b92b29a9bfea5741075fcd71a08f` |
-| 10 | `def` | [fromTypes_fin_const_equiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/fromtypes-fin-const-equiv.md) | 75 | `declaration-track:04e562422f18892057b0834eb06db21b70ee068f933ae12f0b446c92d9eb195f` |
+| 1 | `abbrev` | [OfArity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/ofarity.md) | 36 | `declaration-track:a28dae48cf1e36011829306d63feae2e4165681bef4833979091bbc598bb27dc` |
+| 2 | `theorem` | [ofArity_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/ofarity-zero.md) | 39 | `result-track:c4eb4b79605f25ae5e4248e9c81d558518a35b2e85b737be3394199b65fae28b` |
+| 3 | `theorem` | [ofArity_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/ofarity-succ.md) | 42 | `result-track:f3af3f25053dcaf56ac8255188c11028ee020b601c554abe30c69b68677cad2a` |
+| 4 | `def` | [const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/const.md) | 48 | `declaration-track:3b3c1b2460254ea2bad5f49c195287973a559f88ee81e5d530d1609f0fdd92aa` |
+| 5 | `theorem` | [const_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/const-zero.md) | 52 | `result-track:9273acb102023feade30c0b2535423dc48487f2b1591383c17cfcae670c007c6` |
+| 6 | `theorem` | [const_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/const-succ.md) | 56 | `result-track:935876fa6becdd06b492fd03ad68370259061c053f42bfd0b859b650bd98caf6` |
+| 7 | `theorem` | [const_succ_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/const-succ-apply.md) | 60 | `result-track:7cd640467047bf98074766c7545c541a0ceabb8a67f54a45029c81ec90a44feb` |
+| 8 | `instance` | [inhabited](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/inhabited.md) | 63 | `declaration-track:9a25ac0b319b24593e585d4511f7e5536af2093c203a83206df6eaa788325870` |
+| 9 | `lemma` | [fromTypes_fin_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/fromtypes-fin-const.md) | 70 | `result-track:ef551a4eb3fcfadb05016d2a8c158c3354b3b92b29a9bfea5741075fcd71a08f` |
+| 10 | `def` | [fromTypes_fin_const_equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OfArityNamespaced.lean/declarations/fromtypes-fin-const-equiv.md) | 75 | `declaration-track:04e562422f18892057b0834eb06db21b70ee068f933ae12f0b446c92d9eb195f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

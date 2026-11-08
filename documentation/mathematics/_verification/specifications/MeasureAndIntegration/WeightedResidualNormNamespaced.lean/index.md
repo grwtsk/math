@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/WeightedResidualNormNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/WeightedResidualNormNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedResidualNormNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedResidualNormNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [l2_angular_square](../../../../MeasureAndIntegration/WeightedResidualNormNamespaced.lean/declarations/l2-angular-square.md) | 25 | `result-track:461e0af9861954bc1abac585274018dc7fd6911191fb729fa1d82bcee78aab19` |
-| 2 | `theorem` | [weightedResidual_fourier_ae](../../../../MeasureAndIntegration/WeightedResidualNormNamespaced.lean/declarations/weightedresidual-fourier-ae.md) | 50 | `result-track:240ee1a475c3ed844417b376958c0c76a87712b48bee68835789e4a8fb7b1eb0` |
-| 3 | `theorem` | [weightedResidual_norm_sq](../../../../MeasureAndIntegration/WeightedResidualNormNamespaced.lean/declarations/weightedresidual-norm-sq.md) | 71 | `result-track:26b87f42d1044ff081a983fc1704a7442b7b866db62b95299fbeb40e46ae796b` |
-| 4 | `theorem` | [arithmeticError_le_core_tails](../../../../MeasureAndIntegration/WeightedResidualNormNamespaced.lean/declarations/arithmeticerror-le-core-tails.md) | 79 | `result-track:137224cc1c62acd76280d56c0dd3de1070d00ae9e039b42407b652af24baee20` |
-| 5 | `theorem` | [arithmeticError_le_scheduled_core](../../../../MeasureAndIntegration/WeightedResidualNormNamespaced.lean/declarations/arithmeticerror-le-scheduled-core.md) | 92 | `result-track:b0673ceca783eaa52204470f1b56cbdd2db02af5c13b7ceaa11649bad5113dea` |
+| 1 | `theorem` | [l2_angular_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedResidualNormNamespaced.lean/declarations/l2-angular-square.md) | 25 | `result-track:461e0af9861954bc1abac585274018dc7fd6911191fb729fa1d82bcee78aab19` |
+| 2 | `theorem` | [weightedResidual_fourier_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedResidualNormNamespaced.lean/declarations/weightedresidual-fourier-ae.md) | 50 | `result-track:240ee1a475c3ed844417b376958c0c76a87712b48bee68835789e4a8fb7b1eb0` |
+| 3 | `theorem` | [weightedResidual_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedResidualNormNamespaced.lean/declarations/weightedresidual-norm-sq.md) | 71 | `result-track:26b87f42d1044ff081a983fc1704a7442b7b866db62b95299fbeb40e46ae796b` |
+| 4 | `theorem` | [arithmeticError_le_core_tails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedResidualNormNamespaced.lean/declarations/arithmeticerror-le-core-tails.md) | 79 | `result-track:137224cc1c62acd76280d56c0dd3de1070d00ae9e039b42407b652af24baee20` |
+| 5 | `theorem` | [arithmeticError_le_scheduled_core](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedResidualNormNamespaced.lean/declarations/arithmeticerror-le-scheduled-core.md) | 92 | `result-track:b0673ceca783eaa52204470f1b56cbdd2db02af5c13b7ceaa11649bad5113dea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

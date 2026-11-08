@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FlowNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FlowNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FlowNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FlowNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [prismNode](../../../../ProbabilityTheoryAndStochasticProcesses/FlowNamespaced.lean/declarations/prismnode.md) | 27 | `declaration-track:e6a6b320940298ad3ee02271f99d111bb33cac1cb99d70680b3ad726ee06f96b` |
-| 2 | `def` | [siteNode](../../../../ProbabilityTheoryAndStochasticProcesses/FlowNamespaced.lean/declarations/sitenode.md) | 37 | `declaration-track:ae818c4ba53c80e00f52a3205dfb99ad5ea8b6e1125c5298d6dffc5bd49c7db7` |
-| 3 | `def` | [cohomologyNode](../../../../ProbabilityTheoryAndStochasticProcesses/FlowNamespaced.lean/declarations/cohomologynode.md) | 49 | `declaration-track:0816b53889f269ebb961549c93d1e75cede21cb52161d6655199a4c62a960379` |
-| 4 | `def` | [nygaardNode](../../../../ProbabilityTheoryAndStochasticProcesses/FlowNamespaced.lean/declarations/nygaardnode.md) | 61 | `declaration-track:0d8f695c79d9d368493c8371532e3077ebbff7f03431cb6e4cbe0db217c35aaa` |
-| 5 | `def` | [unitPrismNode](../../../../ProbabilityTheoryAndStochasticProcesses/FlowNamespaced.lean/declarations/unitprismnode.md) | 72 | `declaration-track:99101e027ca733de9521dcd6b9bf657a2fce071cf96e7bddcedbb04ef803eaaf` |
+| 1 | `def` | [prismNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FlowNamespaced.lean/declarations/prismnode.md) | 27 | `declaration-track:e6a6b320940298ad3ee02271f99d111bb33cac1cb99d70680b3ad726ee06f96b` |
+| 2 | `def` | [siteNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FlowNamespaced.lean/declarations/sitenode.md) | 37 | `declaration-track:ae818c4ba53c80e00f52a3205dfb99ad5ea8b6e1125c5298d6dffc5bd49c7db7` |
+| 3 | `def` | [cohomologyNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FlowNamespaced.lean/declarations/cohomologynode.md) | 49 | `declaration-track:0816b53889f269ebb961549c93d1e75cede21cb52161d6655199a4c62a960379` |
+| 4 | `def` | [nygaardNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FlowNamespaced.lean/declarations/nygaardnode.md) | 61 | `declaration-track:0d8f695c79d9d368493c8371532e3077ebbff7f03431cb6e4cbe0db217c35aaa` |
+| 5 | `def` | [unitPrismNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FlowNamespaced.lean/declarations/unitprismnode.md) | 72 | `declaration-track:99101e027ca733de9521dcd6b9bf657a2fce071cf96e7bddcedbb04ef803eaaf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

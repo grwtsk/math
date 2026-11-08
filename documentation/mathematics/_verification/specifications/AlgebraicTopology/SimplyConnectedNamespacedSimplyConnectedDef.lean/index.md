@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/index.md) · [Full source](../../../../AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [SimplyConnectedSpace](../../../../AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/declarations/simplyconnectedspace.md) | 43 | `declaration-track:e8153baded14f009ccd3e7f125ab62484b5963d61521687f79ee7ea636a4ec68` |
-| 2 | `theorem` | [simply_connected_def](../../../../AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/declarations/simply-connected-def.md) | 47 | `result-track:b588b920b1af4fd8ec4b982fe46a462d8b59fd29f9dcaf765540909ec00a0610` |
-| 3 | `theorem` | [simply_connected_iff_unique_homotopic](../../../../AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/declarations/simply-connected-iff-unique-homotopic.md) | 52 | `result-track:713f7cba52e326c6043790a93abcb9b01597a55a20356103091dae941865841c` |
-| 4 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/declarations/instance-source-edition-3.md) | 62 | `declaration-track:ab9a66e159d456865768a13a1458ed3489adad794a290e72a826a63f8f3fabcc` |
-| 5 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/declarations/instance-source-edition-2.md) | 68 | `declaration-track:9a7cc124821b8c30c873e95cdda81b4a52b6e0c4c47ff1abf2951748397b71e5` |
-| 6 | `theorem` | [paths_homotopic](../../../../AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/declarations/paths-homotopic.md) | 74 | `result-track:33dff55314e89d85d82c115447f007d420648c9f07cacd21b18a6c5b739df498` |
-| 7 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/declarations/instance.md) | 78 | `declaration-track:09c5ce3dd7cea091ef882888e70f5acd3c99977ae2aafa5f275c7761f18a3f84` |
-| 8 | `theorem` | [simply_connected_iff_paths_homotopic](../../../../AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/declarations/simply-connected-iff-paths-homotopic-source-edition-2.md) | 92 | `result-track:af49322dac1bb4fa339d5e5c6df39633af06cafd6a817d1ef2edd4aed7057f60` |
-| 9 | `theorem` | [simply_connected_iff_paths_homotopic'](../../../../AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/declarations/simply-connected-iff-paths-homotopic.md) | 101 | `result-track:3f7560f4a2273403bc6f2f5bed39eb241e8fe5796b86a5292ea2ef39a6355ca0` |
+| 1 | `class` | [SimplyConnectedSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/declarations/simplyconnectedspace.md) | 43 | `declaration-track:e8153baded14f009ccd3e7f125ab62484b5963d61521687f79ee7ea636a4ec68` |
+| 2 | `theorem` | [simply_connected_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/declarations/simply-connected-def.md) | 47 | `result-track:b588b920b1af4fd8ec4b982fe46a462d8b59fd29f9dcaf765540909ec00a0610` |
+| 3 | `theorem` | [simply_connected_iff_unique_homotopic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/declarations/simply-connected-iff-unique-homotopic.md) | 52 | `result-track:713f7cba52e326c6043790a93abcb9b01597a55a20356103091dae941865841c` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/declarations/instance-source-edition-3.md) | 62 | `declaration-track:ab9a66e159d456865768a13a1458ed3489adad794a290e72a826a63f8f3fabcc` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/declarations/instance-source-edition-2.md) | 68 | `declaration-track:9a7cc124821b8c30c873e95cdda81b4a52b6e0c4c47ff1abf2951748397b71e5` |
+| 6 | `theorem` | [paths_homotopic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/declarations/paths-homotopic.md) | 74 | `result-track:33dff55314e89d85d82c115447f007d420648c9f07cacd21b18a6c5b739df498` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/declarations/instance.md) | 78 | `declaration-track:09c5ce3dd7cea091ef882888e70f5acd3c99977ae2aafa5f275c7761f18a3f84` |
+| 8 | `theorem` | [simply_connected_iff_paths_homotopic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/declarations/simply-connected-iff-paths-homotopic-source-edition-2.md) | 92 | `result-track:af49322dac1bb4fa339d5e5c6df39633af06cafd6a817d1ef2edd4aed7057f60` |
+| 9 | `theorem` | [simply_connected_iff_paths_homotopic'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplyConnectedNamespacedSimplyConnectedDef.lean/declarations/simply-connected-iff-paths-homotopic.md) | 101 | `result-track:3f7560f4a2273403bc6f2f5bed39eb241e8fe5796b86a5292ea2ef39a6355ca0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

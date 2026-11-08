@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [CatCenter](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasic.lean/declarations/catcenter.md) | 29 | `declaration-track:141b20b1f0ff60c49a18749bcf3eb001bb7bda9aec76e959c64fa7ae296cae90` |
-| 2 | `lemma` | [ext](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasic.lean/declarations/ext.md) | 36 | `result-track:f3d8c3f10663df0b193b2c6d787e8809ba30b3a70a3014eda5d0ba538c691595` |
-| 3 | `lemma` | [mul_app'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasic.lean/declarations/mul-app.md) | 40 | `result-track:0a07c871d62e734c97bd7c34f283d953521355de3e4c16f65cb903073c57d356` |
-| 4 | `lemma` | [mul_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasic.lean/declarations/mul-app-source-edition-2.md) | 43 | `result-track:5a31e2c3d5957b407c8a8029a5ef87a62e22c947cb6cbdc292bb1747bfc55cb5` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasic.lean/declarations/instance.md) | 47 | `declaration-track:4030e7410eec618720f5123b0dd6acde573fb94a2329f0cb1ee8fb4021de27da` |
+| 1 | `abbrev` | [CatCenter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasic.lean/declarations/catcenter.md) | 29 | `declaration-track:141b20b1f0ff60c49a18749bcf3eb001bb7bda9aec76e959c64fa7ae296cae90` |
+| 2 | `lemma` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasic.lean/declarations/ext.md) | 36 | `result-track:f3d8c3f10663df0b193b2c6d787e8809ba30b3a70a3014eda5d0ba538c691595` |
+| 3 | `lemma` | [mul_app'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasic.lean/declarations/mul-app.md) | 40 | `result-track:0a07c871d62e734c97bd7c34f283d953521355de3e4c16f65cb903073c57d356` |
+| 4 | `lemma` | [mul_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasic.lean/declarations/mul-app-source-edition-2.md) | 43 | `result-track:5a31e2c3d5957b407c8a8029a5ef87a62e22c947cb6cbdc292bb1747bfc55cb5` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterBasic.lean/declarations/instance.md) | 47 | `declaration-track:4030e7410eec618720f5123b0dd6acde573fb94a2329f0cb1ee8fb4021de27da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

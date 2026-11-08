@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WindowsNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WindowsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WindowsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WindowsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `opaque` | [getNextTransition](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WindowsNamespacedPublic.lean/declarations/getnexttransition.md) | 35 | `declaration-track:084a0ab04b68c6fc065697d09b4e4aaefc43939ec7f27b4e4d9df4d22752a73f` |
-| 2 | `opaque` | [getLocalTimeZoneIdentifierAt](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WindowsNamespacedPublic.lean/declarations/getlocaltimezoneidentifierat.md) | 41 | `declaration-track:0a44321bf94de3f1f869694bbf3bb33398b31868c14090cd1e1cc926dd25e981` |
-| 3 | `def` | [getZoneRules](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WindowsNamespacedPublic.lean/declarations/getzonerules.md) | 46 | `declaration-track:862082e53de0a950fc1d7be6536af30773315674dd305ff7cfb7720b458094a9` |
-| 4 | `structure` | [WindowsDb](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WindowsNamespacedPublic.lean/declarations/windowsdb.md) | 87 | `declaration-track:b53be91d9c82a6d275a68ff227bdd2611ccad26bd36fb8a1f63c0d3c4974cde0` |
-| 5 | `def` | [default](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WindowsNamespacedPublic.lean/declarations/default.md) | 96 | `declaration-track:ac385468a1e8107e70c52c45c5a87c4e4b3963a665757505950ddeedf44bace9` |
-| 6 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WindowsNamespacedPublic.lean/declarations/instance.md) | 98 | `declaration-track:604771f885a680c441ff78ce7a59d9400eec8e299263861cf73badaac56bbf3c` |
+| 1 | `opaque` | [getNextTransition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WindowsNamespacedPublic.lean/declarations/getnexttransition.md) | 35 | `declaration-track:084a0ab04b68c6fc065697d09b4e4aaefc43939ec7f27b4e4d9df4d22752a73f` |
+| 2 | `opaque` | [getLocalTimeZoneIdentifierAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WindowsNamespacedPublic.lean/declarations/getlocaltimezoneidentifierat.md) | 41 | `declaration-track:0a44321bf94de3f1f869694bbf3bb33398b31868c14090cd1e1cc926dd25e981` |
+| 3 | `def` | [getZoneRules](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WindowsNamespacedPublic.lean/declarations/getzonerules.md) | 46 | `declaration-track:862082e53de0a950fc1d7be6536af30773315674dd305ff7cfb7720b458094a9` |
+| 4 | `structure` | [WindowsDb](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WindowsNamespacedPublic.lean/declarations/windowsdb.md) | 87 | `declaration-track:b53be91d9c82a6d275a68ff227bdd2611ccad26bd36fb8a1f63c0d3c4974cde0` |
+| 5 | `def` | [default](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WindowsNamespacedPublic.lean/declarations/default.md) | 96 | `declaration-track:ac385468a1e8107e70c52c45c5a87c4e4b3963a665757505950ddeedf44bace9` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WindowsNamespacedPublic.lean/declarations/instance.md) | 98 | `declaration-track:604771f885a680c441ff78ce7a59d9400eec8e299263861cf73badaac56bbf3c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

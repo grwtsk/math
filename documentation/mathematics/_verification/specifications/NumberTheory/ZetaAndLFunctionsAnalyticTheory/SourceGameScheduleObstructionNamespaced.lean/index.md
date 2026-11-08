@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceGameScheduleObstructionNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceGameScheduleObstructionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceGameScheduleObstructionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceGameScheduleObstructionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [main_first_initial_gain](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceGameScheduleObstructionNamespaced.lean/declarations/main-first-initial-gain.md) | 31 | `result-track:571c4503daa0ab358963ae836936678b83a4cf35a454fd32efe16e5919342153` |
-| 2 | `theorem` | [main_first_initial_gain_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceGameScheduleObstructionNamespaced.lean/declarations/main-first-initial-gain-le.md) | 36 | `result-track:79d98b2ed4102d0b86804c823d62c517657b88de32f251c1ab0165e9691c9dbc` |
-| 3 | `theorem` | [main_first_no_uniform_prefix_credit](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceGameScheduleObstructionNamespaced.lean/declarations/main-first-no-uniform-prefix-credit.md) | 44 | `result-track:2506a815a4cadffe25b23f0861c11dea1346ff7950351f608fc866559bf7c058` |
-| 4 | `def` | [mainLastEventGain](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceGameScheduleObstructionNamespaced.lean/declarations/mainlasteventgain.md) | 55 | `declaration-track:1dc16b0b4eb0f199a24dd0da2ba2919f413eaf06183206f4d659ebec89456a3a` |
-| 5 | `theorem` | [main_last_preserves_total](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceGameScheduleObstructionNamespaced.lean/declarations/main-last-preserves-total.md) | 61 | `result-track:0c82d59d862b1be425ea836c2686057887432dcca389ec5175b4caf1493671ef` |
-| 6 | `theorem` | [estimate_of_main_last_certificates](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceGameScheduleObstructionNamespaced.lean/declarations/estimate-of-main-last-certificates.md) | 73 | `result-track:11e95d906f3f3fdf55ee2b67c2ad28cb95332a030660302775eba9ac544f3ab9` |
+| 1 | `theorem` | [main_first_initial_gain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceGameScheduleObstructionNamespaced.lean/declarations/main-first-initial-gain.md) | 31 | `result-track:571c4503daa0ab358963ae836936678b83a4cf35a454fd32efe16e5919342153` |
+| 2 | `theorem` | [main_first_initial_gain_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceGameScheduleObstructionNamespaced.lean/declarations/main-first-initial-gain-le.md) | 36 | `result-track:79d98b2ed4102d0b86804c823d62c517657b88de32f251c1ab0165e9691c9dbc` |
+| 3 | `theorem` | [main_first_no_uniform_prefix_credit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceGameScheduleObstructionNamespaced.lean/declarations/main-first-no-uniform-prefix-credit.md) | 44 | `result-track:2506a815a4cadffe25b23f0861c11dea1346ff7950351f608fc866559bf7c058` |
+| 4 | `def` | [mainLastEventGain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceGameScheduleObstructionNamespaced.lean/declarations/mainlasteventgain.md) | 55 | `declaration-track:1dc16b0b4eb0f199a24dd0da2ba2919f413eaf06183206f4d659ebec89456a3a` |
+| 5 | `theorem` | [main_last_preserves_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceGameScheduleObstructionNamespaced.lean/declarations/main-last-preserves-total.md) | 61 | `result-track:0c82d59d862b1be425ea836c2686057887432dcca389ec5175b4caf1493671ef` |
+| 6 | `theorem` | [estimate_of_main_last_certificates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceGameScheduleObstructionNamespaced.lean/declarations/estimate-of-main-last-certificates.md) | 73 | `result-track:11e95d906f3f3fdf55ee2b67c2ad28cb95332a030660302775eba9ac544f3ab9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

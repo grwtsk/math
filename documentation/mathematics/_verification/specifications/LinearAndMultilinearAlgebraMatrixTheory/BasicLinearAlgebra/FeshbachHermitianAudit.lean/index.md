@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coupled_completion](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/declarations/coupled-completion.md) | 24 | `result-track:66be7cfafb0c3748b32b6d320a33f5da7e3a5d92a7074304c5b43dd6e3a30f6d` |
-| 2 | `theorem` | [coupled_posSemidef](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/declarations/coupled-possemidef.md) | 39 | `result-track:9e823f3628aaba11d1f75d142f760a215c78184d3157899d725d65f44f3ad4ea` |
-| 3 | `def` | [imaginaryCoupling](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/declarations/imaginarycoupling.md) | 61 | `declaration-track:6821dee19e236b910b89e02cd8f840431bb848c26c32d069409960a6f4f79687` |
-| 4 | `theorem` | [imaginary_center](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/declarations/imaginary-center.md) | 64 | `result-track:599390f4512ebbd2a5917d1905c74b7b6b21d32d65d2adb5787f01244595a267` |
-| 5 | `theorem` | [imaginary_packet_posSemidef](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/declarations/imaginary-packet-possemidef.md) | 77 | `result-track:74ffbfaf2a3a38dea3ef16867b0d802c8f42995f55e39b0ad86eff4398e67e45` |
-| 6 | `def` | [positiveDiagonal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/declarations/positivediagonal.md) | 85 | `declaration-track:e2a9a5c379ecd07ed386f0a091aa52321d39c93140f4f783cf19307fefe15178` |
-| 7 | `def` | [indefiniteDiagonal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/declarations/indefinitediagonal.md) | 88 | `declaration-track:abc6b11f2139e97eddc778f23ab730fffd8b838babd980c5a5a567be65198481` |
-| 8 | `theorem` | [same_kernel_different_sign](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/declarations/same-kernel-different-sign.md) | 93 | `result-track:78a78dcc3d05f59384e97974f85dd5712519d744aa8043a873fe88c3915427ee` |
+| 1 | `theorem` | [coupled_completion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/declarations/coupled-completion.md) | 24 | `result-track:66be7cfafb0c3748b32b6d320a33f5da7e3a5d92a7074304c5b43dd6e3a30f6d` |
+| 2 | `theorem` | [coupled_posSemidef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/declarations/coupled-possemidef.md) | 39 | `result-track:9e823f3628aaba11d1f75d142f760a215c78184d3157899d725d65f44f3ad4ea` |
+| 3 | `def` | [imaginaryCoupling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/declarations/imaginarycoupling.md) | 61 | `declaration-track:6821dee19e236b910b89e02cd8f840431bb848c26c32d069409960a6f4f79687` |
+| 4 | `theorem` | [imaginary_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/declarations/imaginary-center.md) | 64 | `result-track:599390f4512ebbd2a5917d1905c74b7b6b21d32d65d2adb5787f01244595a267` |
+| 5 | `theorem` | [imaginary_packet_posSemidef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/declarations/imaginary-packet-possemidef.md) | 77 | `result-track:74ffbfaf2a3a38dea3ef16867b0d802c8f42995f55e39b0ad86eff4398e67e45` |
+| 6 | `def` | [positiveDiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/declarations/positivediagonal.md) | 85 | `declaration-track:e2a9a5c379ecd07ed386f0a091aa52321d39c93140f4f783cf19307fefe15178` |
+| 7 | `def` | [indefiniteDiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/declarations/indefinitediagonal.md) | 88 | `declaration-track:abc6b11f2139e97eddc778f23ab730fffd8b838babd980c5a5a567be65198481` |
+| 8 | `theorem` | [same_kernel_different_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianAudit.lean/declarations/same-kernel-different-sign.md) | 93 | `result-track:78a78dcc3d05f59384e97974f85dd5712519d744aa8043a873fe88c3915427ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

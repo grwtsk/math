@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/BarrelledNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/BarrelledNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BarrelledNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BarrelledNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [BarrelledSpace](../../../../FunctionalAnalysis/BarrelledNamespacedPublic.lean/declarations/barrelledspace.md) | 99 | `declaration-track:dc215cc488b5fd74c9a8c1b862e5d98b43b17acc083bf624cbb82dffddaad2d5` |
-| 2 | `theorem` | [Seminorm.continuous_of_lowerSemicontinuous](../../../../FunctionalAnalysis/BarrelledNamespacedPublic.lean/declarations/seminorm-continuous-of-lowersemicontinuous.md) | 104 | `result-track:02e696d4fb02bdfc0c33c9bab21c5f1fd9c6a1f2e73bec6c2c57de93abcbe2a3` |
-| 3 | `theorem` | [Seminorm.continuous_iSup](../../../../FunctionalAnalysis/BarrelledNamespacedPublic.lean/declarations/seminorm-continuous-isup.md) | 109 | `result-track:bd9424cdd6ca62c434b729483c4644f9e6c1bcb2c2b2a551d54d072819ad906d` |
-| 4 | `instance` | [BaireSpace.instBarrelledSpace](../../../../FunctionalAnalysis/BarrelledNamespacedPublic.lean/declarations/bairespace-instbarrelledspace.md) | 131 | `declaration-track:f5aebf0e483f49628eaee024826a8a787c0543f72a018e0e12216b928ec1d06d` |
-| 5 | `theorem` | [banach_steinhaus](../../../../FunctionalAnalysis/BarrelledNamespacedPublic.lean/declarations/banach-steinhaus.md) | 173 | `result-track:9f5fb04779d203cc22a2c3bfe40d53425d3cdac2145a23d60261b8638b62d022` |
-| 6 | `theorem` | [PolynormableSpace.banach_steinhaus](../../../../FunctionalAnalysis/BarrelledNamespacedPublic.lean/declarations/polynormablespace-banach-steinhaus.md) | 201 | `result-track:4280d23b66887d7517dce22182395895a20c9b91d5b2f7fa4a84daa54cdb119e` |
-| 7 | `def` | [continuousLinearMapOfTendsto](../../../../FunctionalAnalysis/BarrelledNamespacedPublic.lean/declarations/continuouslinearmapoftendsto.md) | 217 | `declaration-track:da1ba7b5f40259cf887b7fab0fde0b5cc252f834022f6856d5fdb8bffeb612a0` |
+| 1 | `class` | [BarrelledSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BarrelledNamespacedPublic.lean/declarations/barrelledspace.md) | 99 | `declaration-track:dc215cc488b5fd74c9a8c1b862e5d98b43b17acc083bf624cbb82dffddaad2d5` |
+| 2 | `theorem` | [Seminorm.continuous_of_lowerSemicontinuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BarrelledNamespacedPublic.lean/declarations/seminorm-continuous-of-lowersemicontinuous.md) | 104 | `result-track:02e696d4fb02bdfc0c33c9bab21c5f1fd9c6a1f2e73bec6c2c57de93abcbe2a3` |
+| 3 | `theorem` | [Seminorm.continuous_iSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BarrelledNamespacedPublic.lean/declarations/seminorm-continuous-isup.md) | 109 | `result-track:bd9424cdd6ca62c434b729483c4644f9e6c1bcb2c2b2a551d54d072819ad906d` |
+| 4 | `instance` | [BaireSpace.instBarrelledSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BarrelledNamespacedPublic.lean/declarations/bairespace-instbarrelledspace.md) | 131 | `declaration-track:f5aebf0e483f49628eaee024826a8a787c0543f72a018e0e12216b928ec1d06d` |
+| 5 | `theorem` | [banach_steinhaus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BarrelledNamespacedPublic.lean/declarations/banach-steinhaus.md) | 173 | `result-track:9f5fb04779d203cc22a2c3bfe40d53425d3cdac2145a23d60261b8638b62d022` |
+| 6 | `theorem` | [PolynormableSpace.banach_steinhaus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BarrelledNamespacedPublic.lean/declarations/polynormablespace-banach-steinhaus.md) | 201 | `result-track:4280d23b66887d7517dce22182395895a20c9b91d5b2f7fa4a84daa54cdb119e` |
+| 7 | `def` | [continuousLinearMapOfTendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BarrelledNamespacedPublic.lean/declarations/continuouslinearmapoftendsto.md) | 217 | `declaration-track:da1ba7b5f40259cf887b7fab0fde0b5cc252f834022f6856d5fdb8bffeb612a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunctorNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunctorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunctorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunctorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [map_equiv](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunctorNamespaced.lean/declarations/map-equiv.md) | 38 | `declaration-track:d18af862caf049cfb2d116bb8e024ceb14da34d1d90efa7c4b83e1ce57cc0d6b` |
-| 2 | `lemma` | [map_equiv_apply](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunctorNamespaced.lean/declarations/map-equiv-apply.md) | 45 | `result-track:f6b75bb760dcd10fb410f49b07ed22ad91ed825f3dc924d507f76d98d08af792` |
-| 3 | `lemma` | [map_equiv_symm_apply](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunctorNamespaced.lean/declarations/map-equiv-symm-apply.md) | 49 | `result-track:2255c10e093615cb2fb2d236379f607b509e6e15ab09efcc95731b70a3ae6229` |
+| 1 | `def` | [map_equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunctorNamespaced.lean/declarations/map-equiv.md) | 38 | `declaration-track:d18af862caf049cfb2d116bb8e024ceb14da34d1d90efa7c4b83e1ce57cc0d6b` |
+| 2 | `lemma` | [map_equiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunctorNamespaced.lean/declarations/map-equiv-apply.md) | 45 | `result-track:f6b75bb760dcd10fb410f49b07ed22ad91ed825f3dc924d507f76d98d08af792` |
+| 3 | `lemma` | [map_equiv_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunctorNamespaced.lean/declarations/map-equiv-symm-apply.md) | 49 | `result-track:2255c10e093615cb2fb2d236379f607b509e6e15ab09efcc95731b70a3ae6229` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

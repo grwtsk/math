@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/KClaim.lean/index.md) · [Full source](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/KClaim.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/KClaim.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/KClaim.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [KEqual](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/KClaim.lean/declarations/kequal.md) | 23 | `declaration-track:e443509218ff68ef31a83cc9263638ef33f1f6c845c92fe549f1efcebbe7647d` |
-| 2 | `def` | [KTorsionClaim](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/KClaim.lean/declarations/ktorsionclaim.md) | 26 | `declaration-track:d935f7dff9abbc8b787fb91168594c1ba4e8981cf6d51d78bf9cb63e93e2c952` |
-| 3 | `def` | [TorsionResidueHeat](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/KClaim.lean/declarations/torsionresidueheat.md) | 29 | `declaration-track:9068bbda31d3abdab302b298487e38fea443bfbc2be1a65846050f26c50d0cc3` |
-| 4 | `theorem` | [torsion_residue_heat_nonnegative](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/KClaim.lean/declarations/torsion-residue-heat-nonnegative.md) | 32 | `result-track:134f182e80264cd077ed294036a76a516a24a753a9d3aec9b6b6db2189061544` |
-| 5 | `theorem` | [k_torsion_iff_zero_residue](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/KClaim.lean/declarations/k-torsion-iff-zero-residue.md) | 35 | `result-track:757484bb4f4d1b7e4215bdf44e22ffd146c548462cee17db83a4bdc2e252a979` |
-| 6 | `theorem` | [exact_torsion_transports_to_k](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/KClaim.lean/declarations/exact-torsion-transports-to-k.md) | 38 | `result-track:93a8034cd0d28476f0f434394b9d67b631fa1e970383d35aa093d134e1f0788d` |
+| 1 | `def` | [KEqual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/KClaim.lean/declarations/kequal.md) | 23 | `declaration-track:e443509218ff68ef31a83cc9263638ef33f1f6c845c92fe549f1efcebbe7647d` |
+| 2 | `def` | [KTorsionClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/KClaim.lean/declarations/ktorsionclaim.md) | 26 | `declaration-track:d935f7dff9abbc8b787fb91168594c1ba4e8981cf6d51d78bf9cb63e93e2c952` |
+| 3 | `def` | [TorsionResidueHeat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/KClaim.lean/declarations/torsionresidueheat.md) | 29 | `declaration-track:9068bbda31d3abdab302b298487e38fea443bfbc2be1a65846050f26c50d0cc3` |
+| 4 | `theorem` | [torsion_residue_heat_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/KClaim.lean/declarations/torsion-residue-heat-nonnegative.md) | 32 | `result-track:134f182e80264cd077ed294036a76a516a24a753a9d3aec9b6b6db2189061544` |
+| 5 | `theorem` | [k_torsion_iff_zero_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/KClaim.lean/declarations/k-torsion-iff-zero-residue.md) | 35 | `result-track:757484bb4f4d1b7e4215bdf44e22ffd146c548462cee17db83a4bdc2e252a979` |
+| 6 | `theorem` | [exact_torsion_transports_to_k](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/KClaim.lean/declarations/exact-torsion-transports-to-k.md) | 38 | `result-track:93a8034cd0d28476f0f434394b9d67b631fa1e970383d35aa093d134e1f0788d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/TransportRoundtrip.lean/index.md) · [Full source](../../../../Combinatorics/TransportRoundtrip.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TransportRoundtrip.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TransportRoundtrip.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [catalan_expand_contract_roundtrip](../../../../Combinatorics/TransportRoundtrip.lean/declarations/catalan-expand-contract-roundtrip.md) | 21 | `result-track:b11c3000d5dbaf31fa78b46cd91768ef8f6c004729c3ecc6cc9da562c2ada1de` |
-| 2 | `theorem` | [catalan_contract_expand_roundtrip](../../../../Combinatorics/TransportRoundtrip.lean/declarations/catalan-contract-expand-roundtrip.md) | 31 | `result-track:4f78ea273e8d9ba4caf9d32d17eef7245f7148dd462e5f19b9264c4aac43eb92` |
-| 3 | `theorem` | [rodgersTao_transport_preserves_euler_characteristic](../../../../Combinatorics/TransportRoundtrip.lean/declarations/rodgerstao-transport-preserves-euler-characteristic.md) | 53 | `result-track:60519d85e234ff0ba7d10cc4efe96153261e7c3375703a7187060ac48762adce` |
-| 4 | `theorem` | [rodgersTao_transport_is_quasi_isomorphism](../../../../Combinatorics/TransportRoundtrip.lean/declarations/rodgerstao-transport-is-quasi-isomorphism.md) | 63 | `result-track:bd6ca960a9319f4e25ebc8c104dc751e97cc517f2c77c3bca1736a1bc2a592a6` |
-| 5 | `theorem` | [rodgersTao_index_transport_is_quasi_isomorphism](../../../../Combinatorics/TransportRoundtrip.lean/declarations/rodgerstao-index-transport-is-quasi-isomorphism.md) | 68 | `result-track:bbce581d27e41d0eaa2516ea5bca6760fb0159b2a6eaaa000682b2c989be5a3e` |
-| 6 | `theorem` | [rodgersTao_index_transport_preserves_euler](../../../../Combinatorics/TransportRoundtrip.lean/declarations/rodgerstao-index-transport-preserves-euler.md) | 73 | `result-track:d76b552ce171774ed6154a2b9f71d0a0aac1600eb158512348ce030e57b62399` |
+| 1 | `theorem` | [catalan_expand_contract_roundtrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TransportRoundtrip.lean/declarations/catalan-expand-contract-roundtrip.md) | 21 | `result-track:b11c3000d5dbaf31fa78b46cd91768ef8f6c004729c3ecc6cc9da562c2ada1de` |
+| 2 | `theorem` | [catalan_contract_expand_roundtrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TransportRoundtrip.lean/declarations/catalan-contract-expand-roundtrip.md) | 31 | `result-track:4f78ea273e8d9ba4caf9d32d17eef7245f7148dd462e5f19b9264c4aac43eb92` |
+| 3 | `theorem` | [rodgersTao_transport_preserves_euler_characteristic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TransportRoundtrip.lean/declarations/rodgerstao-transport-preserves-euler-characteristic.md) | 53 | `result-track:60519d85e234ff0ba7d10cc4efe96153261e7c3375703a7187060ac48762adce` |
+| 4 | `theorem` | [rodgersTao_transport_is_quasi_isomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TransportRoundtrip.lean/declarations/rodgerstao-transport-is-quasi-isomorphism.md) | 63 | `result-track:bd6ca960a9319f4e25ebc8c104dc751e97cc517f2c77c3bca1736a1bc2a592a6` |
+| 5 | `theorem` | [rodgersTao_index_transport_is_quasi_isomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TransportRoundtrip.lean/declarations/rodgerstao-index-transport-is-quasi-isomorphism.md) | 68 | `result-track:bbce581d27e41d0eaa2516ea5bca6760fb0159b2a6eaaa000682b2c989be5a3e` |
+| 6 | `theorem` | [rodgersTao_index_transport_preserves_euler](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TransportRoundtrip.lean/declarations/rodgerstao-index-transport-preserves-euler.md) | 73 | `result-track:d76b552ce171774ed6154a2b9f71d0a0aac1600eb158512348ce030e57b62399` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

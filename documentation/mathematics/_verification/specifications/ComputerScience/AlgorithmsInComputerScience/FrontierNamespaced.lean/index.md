@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FrontierNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FrontierNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FrontierNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FrontierNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [PostWP3UnknownKind](../../../../../ComputerScience/AlgorithmsInComputerScience/FrontierNamespaced.lean/declarations/postwp3unknownkind.md) | 17 | `declaration-track:b252b649de52fb1db6ba0dab152a03e499a61909511a9756f81d8671fa17c521` |
-| 2 | `def` | [postWP3Frontier](../../../../../ComputerScience/AlgorithmsInComputerScience/FrontierNamespaced.lean/declarations/postwp3frontier.md) | 29 | `declaration-track:7891350ac47e0bc587b20c5f8a1e48a998ea1ab753b49d478f8e217598ec921e` |
-| 3 | `structure` | [OpenPostWP3Obligation](../../../../../ComputerScience/AlgorithmsInComputerScience/FrontierNamespaced.lean/declarations/openpostwp3obligation.md) | 43 | `declaration-track:7710b40830d8245fae9d491ef5cd0699951a17bf71afc6690869a13273e56da8` |
+| 1 | `inductive` | [PostWP3UnknownKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FrontierNamespaced.lean/declarations/postwp3unknownkind.md) | 17 | `declaration-track:b252b649de52fb1db6ba0dab152a03e499a61909511a9756f81d8671fa17c521` |
+| 2 | `def` | [postWP3Frontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FrontierNamespaced.lean/declarations/postwp3frontier.md) | 29 | `declaration-track:7891350ac47e0bc587b20c5f8a1e48a998ea1ab753b49d478f8e217598ec921e` |
+| 3 | `structure` | [OpenPostWP3Obligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FrontierNamespaced.lean/declarations/openpostwp3obligation.md) | 43 | `declaration-track:7710b40830d8245fae9d491ef5cd0699951a17bf71afc6690869a13273e56da8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

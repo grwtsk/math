@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExtensionalCoincidenceNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExtensionalCoincidenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExtensionalCoincidenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExtensionalCoincidenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ExtensionalCoincidenceStatement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExtensionalCoincidenceNamespaced.lean/declarations/extensionalcoincidencestatement.md) | 22 | `declaration-track:324cbf61ca15182c3902e7f80cffd186122c7d059740d704449960452b7e2060` |
-| 2 | `def` | [extensionalCoincidenceOpenElement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExtensionalCoincidenceNamespaced.lean/declarations/extensionalcoincidenceopenelement.md) | 28 | `declaration-track:66f5dec274c1089871d07723cb925d676d93a2aba7d3fb7767a02a57cc9aa4a1` |
-| 3 | `def` | [extensionalCoincidenceDependency](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExtensionalCoincidenceNamespaced.lean/declarations/extensionalcoincidencedependency.md) | 43 | `declaration-track:108c2a43088de4cb492d95133d52b45be606f8f5dbb9e0e3e3e8683708bf0ec7` |
-| 4 | `def` | [extensionalCoincidenceSeed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExtensionalCoincidenceNamespaced.lean/declarations/extensionalcoincidenceseed.md) | 53 | `declaration-track:9651a01178f786b7aa94bf6dac2daa95cbd48581353c457425495e70bb99ab70` |
-| 5 | `theorem` | [extensionalCoincidence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExtensionalCoincidenceNamespaced.lean/declarations/extensionalcoincidence.md) | 64 | `result-track:f9223f44f3b97082aac0ffce81ee35293b722e7fb106e0ba6098559b3bf6fea4` |
-| 6 | `def` | [extensionalCoincidenceTheoremElement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExtensionalCoincidenceNamespaced.lean/declarations/extensionalcoincidencetheoremelement.md) | 70 | `declaration-track:bfeb54d181e2aff1e6159c41a58ce40040754ad138ac5aa475472566744c30b7` |
-| 7 | `def` | [extensionalCoincidenceCorpusItem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExtensionalCoincidenceNamespaced.lean/declarations/extensionalcoincidencecorpusitem.md) | 81 | `declaration-track:feccb3962f46f3330bdc9bad3ddb460b39f1cab25b0658b4078ffec88d7ed2b0` |
+| 1 | `def` | [ExtensionalCoincidenceStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExtensionalCoincidenceNamespaced.lean/declarations/extensionalcoincidencestatement.md) | 22 | `declaration-track:324cbf61ca15182c3902e7f80cffd186122c7d059740d704449960452b7e2060` |
+| 2 | `def` | [extensionalCoincidenceOpenElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExtensionalCoincidenceNamespaced.lean/declarations/extensionalcoincidenceopenelement.md) | 28 | `declaration-track:66f5dec274c1089871d07723cb925d676d93a2aba7d3fb7767a02a57cc9aa4a1` |
+| 3 | `def` | [extensionalCoincidenceDependency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExtensionalCoincidenceNamespaced.lean/declarations/extensionalcoincidencedependency.md) | 43 | `declaration-track:108c2a43088de4cb492d95133d52b45be606f8f5dbb9e0e3e3e8683708bf0ec7` |
+| 4 | `def` | [extensionalCoincidenceSeed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExtensionalCoincidenceNamespaced.lean/declarations/extensionalcoincidenceseed.md) | 53 | `declaration-track:9651a01178f786b7aa94bf6dac2daa95cbd48581353c457425495e70bb99ab70` |
+| 5 | `theorem` | [extensionalCoincidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExtensionalCoincidenceNamespaced.lean/declarations/extensionalcoincidence.md) | 64 | `result-track:f9223f44f3b97082aac0ffce81ee35293b722e7fb106e0ba6098559b3bf6fea4` |
+| 6 | `def` | [extensionalCoincidenceTheoremElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExtensionalCoincidenceNamespaced.lean/declarations/extensionalcoincidencetheoremelement.md) | 70 | `declaration-track:bfeb54d181e2aff1e6159c41a58ce40040754ad138ac5aa475472566744c30b7` |
+| 7 | `def` | [extensionalCoincidenceCorpusItem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExtensionalCoincidenceNamespaced.lean/declarations/extensionalcoincidencecorpusitem.md) | 81 | `declaration-track:feccb3962f46f3330bdc9bad3ddb460b39f1cab25b0658b4078ffec88d7ed2b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

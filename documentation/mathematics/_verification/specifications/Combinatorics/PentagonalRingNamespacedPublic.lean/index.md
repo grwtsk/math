@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PentagonalRingNamespacedPublic.lean/index.md) · [Full source](../../../../Combinatorics/PentagonalRingNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PentagonalRingNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PentagonalRingNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [powMulProdOneSubPow](../../../../Combinatorics/PentagonalRingNamespacedPublic.lean/declarations/powmulprodonesubpow.md) | 54 | `declaration-track:25346a120dd1f3c4ee3a66c82230fbcb1c206fcceb0da3c86f561e21181b9d61` |
-| 2 | `def` | [aux](../../../../Combinatorics/PentagonalRingNamespacedPublic.lean/declarations/aux.md) | 60 | `declaration-track:185523bddcf458ed468fd93fd510e7884fbaad16e100a86a554278bb5c27481a` |
-| 3 | `theorem` | [aux_sub_aux](../../../../Combinatorics/PentagonalRingNamespacedPublic.lean/declarations/aux-sub-aux.md) | 66 | `result-track:a8712bf937acfd868a0b1d3ff6caa83441e95252e88cd3bf0acc17e5c438d3a6` |
-| 4 | `theorem` | [tsum_powMulProdOneSubPow](../../../../Combinatorics/PentagonalRingNamespacedPublic.lean/declarations/tsum-powmulprodonesubpow.md) | 79 | `result-track:511ac1c6ed94ec1d3222b0896b1a91387de32af2bca9a1f284a4ced3f5b30df1` |
-| 5 | `theorem` | [tprod_one_sub_pow_eq_powMulProdOneSubPow_zero](../../../../Combinatorics/PentagonalRingNamespacedPublic.lean/declarations/tprod-one-sub-pow-eq-powmulprodonesubpow-zero.md) | 101 | `result-track:129138dc39d591a9ba1b4088ba1dadad9efa92618ddbcc230ff42d2e5e021147` |
-| 6 | `theorem` | [tprod_one_sub_pow_eq_powMulProdOneSubPow](../../../../Combinatorics/PentagonalRingNamespacedPublic.lean/declarations/tprod-one-sub-pow-eq-powmulprodonesubpow.md) | 126 | `result-track:6b4c658063249c3adfc2b577c65e1f80144aa3380f0079b217b405b5e63d835b` |
-| 7 | `theorem` | [tprod_one_sub_pow](../../../../Combinatorics/PentagonalRingNamespacedPublic.lean/declarations/tprod-one-sub-pow.md) | 154 | `result-track:3e7e7babdd0f546dac7a79abf123b790051934101d4252f5bb36c1a0a981e80a` |
+| 1 | `def` | [powMulProdOneSubPow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PentagonalRingNamespacedPublic.lean/declarations/powmulprodonesubpow.md) | 54 | `declaration-track:25346a120dd1f3c4ee3a66c82230fbcb1c206fcceb0da3c86f561e21181b9d61` |
+| 2 | `def` | [aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PentagonalRingNamespacedPublic.lean/declarations/aux.md) | 60 | `declaration-track:185523bddcf458ed468fd93fd510e7884fbaad16e100a86a554278bb5c27481a` |
+| 3 | `theorem` | [aux_sub_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PentagonalRingNamespacedPublic.lean/declarations/aux-sub-aux.md) | 66 | `result-track:a8712bf937acfd868a0b1d3ff6caa83441e95252e88cd3bf0acc17e5c438d3a6` |
+| 4 | `theorem` | [tsum_powMulProdOneSubPow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PentagonalRingNamespacedPublic.lean/declarations/tsum-powmulprodonesubpow.md) | 79 | `result-track:511ac1c6ed94ec1d3222b0896b1a91387de32af2bca9a1f284a4ced3f5b30df1` |
+| 5 | `theorem` | [tprod_one_sub_pow_eq_powMulProdOneSubPow_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PentagonalRingNamespacedPublic.lean/declarations/tprod-one-sub-pow-eq-powmulprodonesubpow-zero.md) | 101 | `result-track:129138dc39d591a9ba1b4088ba1dadad9efa92618ddbcc230ff42d2e5e021147` |
+| 6 | `theorem` | [tprod_one_sub_pow_eq_powMulProdOneSubPow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PentagonalRingNamespacedPublic.lean/declarations/tprod-one-sub-pow-eq-powmulprodonesubpow.md) | 126 | `result-track:6b4c658063249c3adfc2b577c65e1f80144aa3380f0079b217b405b5e63d835b` |
+| 7 | `theorem` | [tprod_one_sub_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PentagonalRingNamespacedPublic.lean/declarations/tprod-one-sub-pow.md) | 154 | `result-track:3e7e7babdd0f546dac7a79abf123b790051934101d4252f5bb36c1a0a981e80a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

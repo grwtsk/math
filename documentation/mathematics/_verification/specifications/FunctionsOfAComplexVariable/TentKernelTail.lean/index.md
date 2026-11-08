@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/TentKernelTail.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/TentKernelTail.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelTail.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelTail.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Series.HeightCountingTail`](../../../../MeasureAndIntegration/HeightCountingTail.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.TentMellinKernel`](../../../../MeasureAndIntegration/TentMellinKernel.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Series.HeightCountingTail`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HeightCountingTail.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.TentMellinKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinKernel.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Topology.Algebra.InfiniteSum.Group` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [tentTailBudget](../../../../FunctionsOfAComplexVariable/TentKernelTail.lean/declarations/tenttailbudget.md) | 35 | `declaration-track:d7da682240c8cafec0488b752edfdc2d7150afbb19adf1e25dbd1a2388289772` |
-| 2 | `theorem` | [tentTailBudget_beta_one](../../../../FunctionsOfAComplexVariable/TentKernelTail.lean/declarations/tenttailbudget-beta-one.md) | 41 | `result-track:a9ac27707518308cf735daf1db8454bfee721ea1f30e50fbb6cde0fa52bea482` |
-| 3 | `theorem` | [tent_family_tail](../../../../FunctionsOfAComplexVariable/TentKernelTail.lean/declarations/tent-family-tail.md) | 53 | `result-track:027faf9070c2c3bd9e4eaa16f2aef34a85ca3093f85178630833b78930bcac18` |
-| 4 | `theorem` | [tent_full_sum_and_remainder](../../../../FunctionsOfAComplexVariable/TentKernelTail.lean/declarations/tent-full-sum-and-remainder.md) | 95 | `result-track:bfd15d8a3cd7bf26ed90914f4ecf8d4fad90ced6fc7b17c989266a6be5a6467b` |
-| 5 | `theorem` | [tent_full_sum_evaluation_error](../../../../FunctionsOfAComplexVariable/TentKernelTail.lean/declarations/tent-full-sum-evaluation-error.md) | 132 | `result-track:e98224485708e8cf0484a0d12d093d754f980c4fc8bbc2bf08ef53d612456753` |
+| 1 | `def` | [tentTailBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelTail.lean/declarations/tenttailbudget.md) | 35 | `declaration-track:d7da682240c8cafec0488b752edfdc2d7150afbb19adf1e25dbd1a2388289772` |
+| 2 | `theorem` | [tentTailBudget_beta_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelTail.lean/declarations/tenttailbudget-beta-one.md) | 41 | `result-track:a9ac27707518308cf735daf1db8454bfee721ea1f30e50fbb6cde0fa52bea482` |
+| 3 | `theorem` | [tent_family_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelTail.lean/declarations/tent-family-tail.md) | 53 | `result-track:027faf9070c2c3bd9e4eaa16f2aef34a85ca3093f85178630833b78930bcac18` |
+| 4 | `theorem` | [tent_full_sum_and_remainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelTail.lean/declarations/tent-full-sum-and-remainder.md) | 95 | `result-track:bfd15d8a3cd7bf26ed90914f4ecf8d4fad90ced6fc7b17c989266a6be5a6467b` |
+| 5 | `theorem` | [tent_full_sum_evaluation_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelTail.lean/declarations/tent-full-sum-evaluation-error.md) | 132 | `result-track:e98224485708e8cf0484a0d12d093d754f980c4fc8bbc2bf08ef53d612456753` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

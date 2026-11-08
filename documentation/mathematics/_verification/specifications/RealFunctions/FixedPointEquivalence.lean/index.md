@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/FixedPointEquivalence.lean/index.md) · [Full source](../../../../RealFunctions/FixedPointEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedPointEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedPointEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DampingLaw](../../../../RealFunctions/FixedPointEquivalence.lean/declarations/dampinglaw.md) | 38 | `declaration-track:562afa4c03e72a0ef79dd3419f899ba5bd7a810cb20ccd221023c5b016eca4cb` |
-| 2 | `def` | [dampedMap](../../../../RealFunctions/FixedPointEquivalence.lean/declarations/dampedmap.md) | 43 | `declaration-track:e5759b57e2b0565927b8b1de3b47d931d2215fb0b1a4ffca752bb51f6712b6d7` |
-| 3 | `theorem` | [damping_preserves_fixed_points](../../../../RealFunctions/FixedPointEquivalence.lean/declarations/damping-preserves-fixed-points.md) | 50 | `result-track:689ed628b9a8a74d33e44dace93346db92a22ef61893646eca1934c138807775` |
+| 1 | `structure` | [DampingLaw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedPointEquivalence.lean/declarations/dampinglaw.md) | 38 | `declaration-track:562afa4c03e72a0ef79dd3419f899ba5bd7a810cb20ccd221023c5b016eca4cb` |
+| 2 | `def` | [dampedMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedPointEquivalence.lean/declarations/dampedmap.md) | 43 | `declaration-track:e5759b57e2b0565927b8b1de3b47d931d2215fb0b1a4ffca752bb51f6712b6d7` |
+| 3 | `theorem` | [damping_preserves_fixed_points](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedPointEquivalence.lean/declarations/damping-preserves-fixed-points.md) | 50 | `result-track:689ed628b9a8a74d33e44dace93346db92a22ef61893646eca1934c138807775` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

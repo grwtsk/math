@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/RelativeCellComplexBasic.lean/index.md) · [Full source](../../../../AlgebraicTopology/RelativeCellComplexBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RelativeCellComplexBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RelativeCellComplexBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RelativeCellComplex](../../../../AlgebraicTopology/RelativeCellComplexBasic.lean/declarations/relativecellcomplex.md) | 44 | `declaration-track:357327a4c84b969a62ff556b0ef89354afb479a220490f26c20725909bacb71d` |
-| 2 | `structure` | [Cells](../../../../AlgebraicTopology/RelativeCellComplexBasic.lean/declarations/cells-source-edition-2.md) | 56 | `declaration-track:f3fc91f41c44fd61a55b590fefbd4933080eb8e2d1554f4cf380907536a10fd5` |
-| 3 | `def` | [Cells.i](../../../../AlgebraicTopology/RelativeCellComplexBasic.lean/declarations/cells-i.md) | 66 | `declaration-track:f7b3114c2b9fd1d39ef27246b727a54ba32e279d2a0f13bf7a732502410d5e9c` |
-| 4 | `def` | [Cells.ι](../../../../AlgebraicTopology/RelativeCellComplexBasic.lean/declarations/cells.md) | 70 | `declaration-track:41ac34fa5e79a3d728717e3cbcf9849c3a8e3b0ff964092679fed8c84b423878` |
-| 5 | `lemma` | [hom_ext](../../../../AlgebraicTopology/RelativeCellComplexBasic.lean/declarations/hom-ext.md) | 73 | `result-track:485ad00769709873058784b3ae6f92a27e2b2c1cb999b7dd5e6c04877e457c49` |
-| 6 | `def` | [transfiniteCompositionOfShape](../../../../AlgebraicTopology/RelativeCellComplexBasic.lean/declarations/transfinitecompositionofshape.md) | 96 | `declaration-track:195671461e417bf503d8648a3bc8b87dfdc726ba38df0e177d8328a1ab6ec827` |
+| 1 | `structure` | [RelativeCellComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RelativeCellComplexBasic.lean/declarations/relativecellcomplex.md) | 44 | `declaration-track:357327a4c84b969a62ff556b0ef89354afb479a220490f26c20725909bacb71d` |
+| 2 | `structure` | [Cells](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RelativeCellComplexBasic.lean/declarations/cells-source-edition-2.md) | 56 | `declaration-track:f3fc91f41c44fd61a55b590fefbd4933080eb8e2d1554f4cf380907536a10fd5` |
+| 3 | `def` | [Cells.i](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RelativeCellComplexBasic.lean/declarations/cells-i.md) | 66 | `declaration-track:f7b3114c2b9fd1d39ef27246b727a54ba32e279d2a0f13bf7a732502410d5e9c` |
+| 4 | `def` | [Cells.ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RelativeCellComplexBasic.lean/declarations/cells.md) | 70 | `declaration-track:41ac34fa5e79a3d728717e3cbcf9849c3a8e3b0ff964092679fed8c84b423878` |
+| 5 | `lemma` | [hom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RelativeCellComplexBasic.lean/declarations/hom-ext.md) | 73 | `result-track:485ad00769709873058784b3ae6f92a27e2b2c1cb999b7dd5e6c04877e457c49` |
+| 6 | `def` | [transfiniteCompositionOfShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RelativeCellComplexBasic.lean/declarations/transfinitecompositionofshape.md) | 96 | `declaration-track:195671461e417bf503d8648a3bc8b87dfdc726ba38df0e177d8328a1ab6ec827` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

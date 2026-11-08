@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/EdgeTraceMissingJoinHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/EdgeTraceMissingJoinHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EdgeTraceMissingJoinHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EdgeTraceMissingJoinHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.DirectedGraph.EdgeTrace`](../../../../../Combinatorics/GraphTheory/DirectedGraphEdgeTrace.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Combinatorics.DirectedGraph.EdgeTrace`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphEdgeTrace.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/EdgeTraceMissingJoinHistoricalSourceEdition2.lean/declarations/instance.md) | 13 | `declaration-track:42b1697a2b2decd8102bc7b7490381fadb265099a8e4b78ff8677d37811a621f` |
-| 2 | `def` | [firstEdge](../../../../../Combinatorics/GraphTheory/EdgeTraceMissingJoinHistoricalSourceEdition2.lean/declarations/firstedge.md) | 15 | `declaration-track:fa44103d8e04438aecca84a4eabb520c15659ff6ff7f8d7bac64e4eb1ce87880` |
-| 3 | `def` | [brokenEdge](../../../../../Combinatorics/GraphTheory/EdgeTraceMissingJoinHistoricalSourceEdition2.lean/declarations/brokenedge.md) | 17 | `declaration-track:6f6534413668b4db473d88748a7d2c0ac62b4d613dcac7a93b07e791a8757681` |
-| 4 | `theorem` | [valid_initial](../../../../../Combinatorics/GraphTheory/EdgeTraceMissingJoinHistoricalSourceEdition2.lean/declarations/valid-initial.md) | 19 | `result-track:d14338a75120c4090d06ae90e87705b39cb1093278b52e54c12433b416736797` |
-| 5 | `theorem` | [broken_join_rejected](../../../../../Combinatorics/GraphTheory/EdgeTraceMissingJoinHistoricalSourceEdition2.lean/declarations/broken-join-rejected.md) | 21 | `result-track:ba4ec8ab67302d56cbcd74f94439b0e7fdc3e2b5ed4333de485221c0f808e2f9` |
-| 6 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/EdgeTraceMissingJoinHistoricalSourceEdition2.lean/declarations/example.md) | 25 | `declaration-track:df4f6280b72ed0f9d11b06040258b101a09fc8eb7b57f7038b160fa534dc79cd` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EdgeTraceMissingJoinHistoricalSourceEdition2.lean/declarations/instance.md) | 13 | `declaration-track:42b1697a2b2decd8102bc7b7490381fadb265099a8e4b78ff8677d37811a621f` |
+| 2 | `def` | [firstEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EdgeTraceMissingJoinHistoricalSourceEdition2.lean/declarations/firstedge.md) | 15 | `declaration-track:fa44103d8e04438aecca84a4eabb520c15659ff6ff7f8d7bac64e4eb1ce87880` |
+| 3 | `def` | [brokenEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EdgeTraceMissingJoinHistoricalSourceEdition2.lean/declarations/brokenedge.md) | 17 | `declaration-track:6f6534413668b4db473d88748a7d2c0ac62b4d613dcac7a93b07e791a8757681` |
+| 4 | `theorem` | [valid_initial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EdgeTraceMissingJoinHistoricalSourceEdition2.lean/declarations/valid-initial.md) | 19 | `result-track:d14338a75120c4090d06ae90e87705b39cb1093278b52e54c12433b416736797` |
+| 5 | `theorem` | [broken_join_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EdgeTraceMissingJoinHistoricalSourceEdition2.lean/declarations/broken-join-rejected.md) | 21 | `result-track:ba4ec8ab67302d56cbcd74f94439b0e7fdc3e2b5ed4333de485221c0f808e2f9` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EdgeTraceMissingJoinHistoricalSourceEdition2.lean/declarations/example.md) | 25 | `declaration-track:df4f6280b72ed0f9d11b06040258b101a09fc8eb7b57f7038b160fa534dc79cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

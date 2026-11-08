@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/CoeffMulMemNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/CoeffMulMemNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoeffMulMemNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoeffMulMemNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coeff_mul_mem_ideal_mul_ideal_of_coeff_mem_ideal](../../../../CommutativeAlgebra/CoeffMulMemNamespaced.lean/declarations/coeff-mul-mem-ideal-mul-ideal-of-coeff-mem-ideal-source-edition-2.md) | 48 | `result-track:b266f0c7a706d1a5cb22314a7a18296f6ee0194cbe77c8ddfb03e891113a28d8` |
-| 2 | `theorem` | [coeff_mul_mem_ideal_mul_ideal_of_coeff_mem_ideal'](../../../../CommutativeAlgebra/CoeffMulMemNamespaced.lean/declarations/coeff-mul-mem-ideal-mul-ideal-of-coeff-mem-ideal.md) | 55 | `result-track:a1ef7f746e1e6ff8f12cf8f3ba1e0f7623894cbbd8330f2b38030a2e8086551d` |
-| 3 | `theorem` | [coeff_mul_mem_ideal_of_coeff_right_mem_ideal](../../../../CommutativeAlgebra/CoeffMulMemNamespaced.lean/declarations/coeff-mul-mem-ideal-of-coeff-right-mem-ideal-source-edition-2.md) | 60 | `result-track:aa5adc53804a00b920289c4877b083c10ab776b8ecd8224a938ebfeba9bcc4ae` |
-| 4 | `theorem` | [coeff_mul_mem_ideal_of_coeff_right_mem_ideal'](../../../../CommutativeAlgebra/CoeffMulMemNamespaced.lean/declarations/coeff-mul-mem-ideal-of-coeff-right-mem-ideal.md) | 64 | `result-track:8dc50ba8ce518131b385bc7e5e7dccbb6e672050817e9566963c41656c7abb1a` |
-| 5 | `theorem` | [coeff_mul_mem_ideal_of_coeff_left_mem_ideal](../../../../CommutativeAlgebra/CoeffMulMemNamespaced.lean/declarations/coeff-mul-mem-ideal-of-coeff-left-mem-ideal-source-edition-2.md) | 70 | `result-track:d0a575fa7e653f9cfde9e69c25dd8af89ebb46d6e6ef92ea82516beb19363a8e` |
-| 6 | `theorem` | [coeff_mul_mem_ideal_of_coeff_left_mem_ideal'](../../../../CommutativeAlgebra/CoeffMulMemNamespaced.lean/declarations/coeff-mul-mem-ideal-of-coeff-left-mem-ideal.md) | 75 | `result-track:781937057f38cb0dbbf3fb7d9ed838d5d1f835d51c4f6687bff3e070d52a846e` |
+| 1 | `theorem` | [coeff_mul_mem_ideal_mul_ideal_of_coeff_mem_ideal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoeffMulMemNamespaced.lean/declarations/coeff-mul-mem-ideal-mul-ideal-of-coeff-mem-ideal-source-edition-2.md) | 48 | `result-track:b266f0c7a706d1a5cb22314a7a18296f6ee0194cbe77c8ddfb03e891113a28d8` |
+| 2 | `theorem` | [coeff_mul_mem_ideal_mul_ideal_of_coeff_mem_ideal'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoeffMulMemNamespaced.lean/declarations/coeff-mul-mem-ideal-mul-ideal-of-coeff-mem-ideal.md) | 55 | `result-track:a1ef7f746e1e6ff8f12cf8f3ba1e0f7623894cbbd8330f2b38030a2e8086551d` |
+| 3 | `theorem` | [coeff_mul_mem_ideal_of_coeff_right_mem_ideal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoeffMulMemNamespaced.lean/declarations/coeff-mul-mem-ideal-of-coeff-right-mem-ideal-source-edition-2.md) | 60 | `result-track:aa5adc53804a00b920289c4877b083c10ab776b8ecd8224a938ebfeba9bcc4ae` |
+| 4 | `theorem` | [coeff_mul_mem_ideal_of_coeff_right_mem_ideal'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoeffMulMemNamespaced.lean/declarations/coeff-mul-mem-ideal-of-coeff-right-mem-ideal.md) | 64 | `result-track:8dc50ba8ce518131b385bc7e5e7dccbb6e672050817e9566963c41656c7abb1a` |
+| 5 | `theorem` | [coeff_mul_mem_ideal_of_coeff_left_mem_ideal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoeffMulMemNamespaced.lean/declarations/coeff-mul-mem-ideal-of-coeff-left-mem-ideal-source-edition-2.md) | 70 | `result-track:d0a575fa7e653f9cfde9e69c25dd8af89ebb46d6e6ef92ea82516beb19363a8e` |
+| 6 | `theorem` | [coeff_mul_mem_ideal_of_coeff_left_mem_ideal'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoeffMulMemNamespaced.lean/declarations/coeff-mul-mem-ideal-of-coeff-left-mem-ideal.md) | 75 | `result-track:781937057f38cb0dbbf3fb7d9ed838d5d1f835d51c4f6687bff3e070d52a846e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

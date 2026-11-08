@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AssuranceLevel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/assurancelevel.md) | 26 | `declaration-track:747463cc9ee46b02b6a52c2920d9aa1b893ef21b97b8e2d47bb03e3ae95fdf86` |
-| 2 | `def` | [rank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/rank.md) | 37 | `declaration-track:8ef6ff0a6344d966105b0554114465e272ba33cc61519b2e60f1e6417256f921` |
-| 3 | `def` | [AtMost](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/atmost.md) | 45 | `declaration-track:8434290a9cdc9bb689a4077756e088a0fe8591a33609c37ba40562162244af94` |
-| 4 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/instance.md) | 48 | `declaration-track:8d52b1c5b130b0369c7a8f194d2c04308acbff804cb3f1d115740d14fa53132a` |
-| 5 | `theorem` | [development_is_lowest](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/development-is-lowest.md) | 52 | `result-track:d0f61a267b8e9b826f06f552201dcd2968df72c1b97ba0c0e9bc8e485e9e8c4a` |
-| 6 | `theorem` | [atMost_refl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/atmost-refl.md) | 57 | `result-track:ba51dc296d3156f8c2e25c5f978660b965aadc64784d11ed582a9345392e7212` |
-| 7 | `theorem` | [atMost_trans](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/atmost-trans.md) | 61 | `result-track:cd7eee9d19ce71b1e3e139504021488a92703befbf40e1b6b3a5e4d254b945ad` |
-| 8 | `theorem` | [no_strict_self_advance](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/no-strict-self-advance.md) | 69 | `result-track:37e07f94f6b0da62f22c6fbe6fff8fe7a4a684a899a3dea804419d8d333355d9` |
-| 9 | `inductive` | [AssuranceAdvance](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/assuranceadvance.md) | 76 | `declaration-track:7c0fd267ae3f17a91189a73be0e23749b762fe27b383ea32b42f793ce346ce0b` |
-| 10 | `theorem` | [assuranceAdvance_monotone](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/assuranceadvance-monotone.md) | 83 | `result-track:24c33610627d93fd3b9005e0bfb91deb9add9938106885933474ca1437c63bfd` |
+| 1 | `inductive` | [AssuranceLevel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/assurancelevel.md) | 26 | `declaration-track:747463cc9ee46b02b6a52c2920d9aa1b893ef21b97b8e2d47bb03e3ae95fdf86` |
+| 2 | `def` | [rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/rank.md) | 37 | `declaration-track:8ef6ff0a6344d966105b0554114465e272ba33cc61519b2e60f1e6417256f921` |
+| 3 | `def` | [AtMost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/atmost.md) | 45 | `declaration-track:8434290a9cdc9bb689a4077756e088a0fe8591a33609c37ba40562162244af94` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/instance.md) | 48 | `declaration-track:8d52b1c5b130b0369c7a8f194d2c04308acbff804cb3f1d115740d14fa53132a` |
+| 5 | `theorem` | [development_is_lowest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/development-is-lowest.md) | 52 | `result-track:d0f61a267b8e9b826f06f552201dcd2968df72c1b97ba0c0e9bc8e485e9e8c4a` |
+| 6 | `theorem` | [atMost_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/atmost-refl.md) | 57 | `result-track:ba51dc296d3156f8c2e25c5f978660b965aadc64784d11ed582a9345392e7212` |
+| 7 | `theorem` | [atMost_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/atmost-trans.md) | 61 | `result-track:cd7eee9d19ce71b1e3e139504021488a92703befbf40e1b6b3a5e4d254b945ad` |
+| 8 | `theorem` | [no_strict_self_advance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/no-strict-self-advance.md) | 69 | `result-track:37e07f94f6b0da62f22c6fbe6fff8fe7a4a684a899a3dea804419d8d333355d9` |
+| 9 | `inductive` | [AssuranceAdvance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/assuranceadvance.md) | 76 | `declaration-track:7c0fd267ae3f17a91189a73be0e23749b762fe27b383ea32b42f793ce346ce0b` |
+| 10 | `theorem` | [assuranceAdvance_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AssuranceLevelNamespaced.lean/declarations/assuranceadvance-monotone.md) | 83 | `result-track:24c33610627d93fd3b9005e0bfb91deb9add9938106885933474ca1437c63bfd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

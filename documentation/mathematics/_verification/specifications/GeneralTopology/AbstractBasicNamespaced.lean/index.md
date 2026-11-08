@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/AbstractBasicNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/AbstractBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbstractBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbstractBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [basicCell](../../../../GeneralTopology/AbstractBasicNamespaced.lean/declarations/basiccell.md) | 67 | `declaration-track:5436db7b002f39fb5083a094559f7793aae2dc0b90fd070a96b4aad88030941a` |
-| 2 | `abbrev` | [RelativeCWComplex](../../../../GeneralTopology/AbstractBasicNamespaced.lean/declarations/relativecwcomplex.md) | 76 | `declaration-track:757cd03c35e780779c4505992e00836ba94f7b8da34f3f23940fdb908ba35231` |
-| 3 | `abbrev` | [CWComplex](../../../../GeneralTopology/AbstractBasicNamespaced.lean/declarations/cwcomplex.md) | 79 | `declaration-track:c81488ba3a8e745da30441b408d5d18e85831b9970c12b41768ea05135cf325e` |
+| 1 | `abbrev` | [basicCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbstractBasicNamespaced.lean/declarations/basiccell.md) | 67 | `declaration-track:5436db7b002f39fb5083a094559f7793aae2dc0b90fd070a96b4aad88030941a` |
+| 2 | `abbrev` | [RelativeCWComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbstractBasicNamespaced.lean/declarations/relativecwcomplex.md) | 76 | `declaration-track:757cd03c35e780779c4505992e00836ba94f7b8da34f3f23940fdb908ba35231` |
+| 3 | `abbrev` | [CWComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbstractBasicNamespaced.lean/declarations/cwcomplex.md) | 79 | `declaration-track:c81488ba3a8e745da30441b408d5d18e85831b9970c12b41768ea05135cf325e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

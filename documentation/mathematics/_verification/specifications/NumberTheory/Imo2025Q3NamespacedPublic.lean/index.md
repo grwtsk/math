@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/Imo2025Q3NamespacedPublic.lean/index.md) · [Full source](../../../../NumberTheory/Imo2025Q3NamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2025Q3NamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2025Q3NamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsBonza](../../../../NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/isbonza.md) | 50 | `declaration-track:94dfb8ffc70352ed56c400d5689737d2e6c9e323a308b8173b0dacd6fe6b1d4e` |
-| 2 | `lemma` | [apply_dvd_pow](../../../../NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/apply-dvd-pow.md) | 58 | `result-track:bd750688abb02bfe9211a183e6a9c4822d96b461ae30c9af4f10f5ae1be0b41b` |
-| 3 | `lemma` | [apply_prime_eq_one_or_dvd_self_sub_apply](../../../../NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/apply-prime-eq-one-or-dvd-self-sub-apply.md) | 63 | `result-track:2e1d7c457bc2fe8bea667c0ef07f12f6fbe6144de6ecd8d6169eb427f4e066d9` |
-| 4 | `theorem` | [not_id_apply_prime_of_gt_eq_one](../../../../NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/not-id-apply-prime-of-gt-eq-one.md) | 86 | `result-track:f33e30087cb536445c94214de5e9d7880bfa80f65fd835931ef5f3455e2d986b` |
-| 5 | `theorem` | [apply_prime_gt_two_eq_one](../../../../NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/apply-prime-gt-two-eq-one.md) | 98 | `result-track:39960304302a8489a72a9677f9dd7cdd5adc1b4f5595be6b83c6e8a3120c2db1` |
-| 6 | `lemma` | [not_id_two_pow](../../../../NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/not-id-two-pow.md) | 124 | `result-track:9d87a3b57f1760908f4777cf2898f000651ec8ad84fc49504ae9df38924e2959` |
-| 7 | `def` | [fExample](../../../../NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/fexample.md) | 141 | `declaration-track:bfe7b0f6694a0639cd31f8dccfd893b7881e9c36260fdfe58e2dcb1847fb92c2` |
-| 8 | `lemma` | [dvd_pow_sub](../../../../NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/dvd-pow-sub.md) | 148 | `result-track:6c85ac1c042dc99d4ea2695856537015bfb151f3f4115127a9894484ed92f26a` |
-| 9 | `lemma` | [isBonza](../../../../NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/isbonza-source-edition-2.md) | 162 | `result-track:9ad11e66f0750593052039f7cb42dd1413d2a2bf3803150fbfb40e2d059177bd` |
-| 10 | `theorem` | [apply_le](../../../../NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/apply-le.md) | 192 | `result-track:a5a8d4aa1eda22edc0ef5a491e7ef584b28ae36554edc2b05dad78f84e27cd43` |
-| 11 | `theorem` | [result](../../../../NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/result.md) | 226 | `result-track:8d2e58f2432c1134998bceb44f9c5ecd07cfebabf54f3326fe68631f393253a5` |
+| 1 | `def` | [IsBonza](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/isbonza.md) | 50 | `declaration-track:94dfb8ffc70352ed56c400d5689737d2e6c9e323a308b8173b0dacd6fe6b1d4e` |
+| 2 | `lemma` | [apply_dvd_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/apply-dvd-pow.md) | 58 | `result-track:bd750688abb02bfe9211a183e6a9c4822d96b461ae30c9af4f10f5ae1be0b41b` |
+| 3 | `lemma` | [apply_prime_eq_one_or_dvd_self_sub_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/apply-prime-eq-one-or-dvd-self-sub-apply.md) | 63 | `result-track:2e1d7c457bc2fe8bea667c0ef07f12f6fbe6144de6ecd8d6169eb427f4e066d9` |
+| 4 | `theorem` | [not_id_apply_prime_of_gt_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/not-id-apply-prime-of-gt-eq-one.md) | 86 | `result-track:f33e30087cb536445c94214de5e9d7880bfa80f65fd835931ef5f3455e2d986b` |
+| 5 | `theorem` | [apply_prime_gt_two_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/apply-prime-gt-two-eq-one.md) | 98 | `result-track:39960304302a8489a72a9677f9dd7cdd5adc1b4f5595be6b83c6e8a3120c2db1` |
+| 6 | `lemma` | [not_id_two_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/not-id-two-pow.md) | 124 | `result-track:9d87a3b57f1760908f4777cf2898f000651ec8ad84fc49504ae9df38924e2959` |
+| 7 | `def` | [fExample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/fexample.md) | 141 | `declaration-track:bfe7b0f6694a0639cd31f8dccfd893b7881e9c36260fdfe58e2dcb1847fb92c2` |
+| 8 | `lemma` | [dvd_pow_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/dvd-pow-sub.md) | 148 | `result-track:6c85ac1c042dc99d4ea2695856537015bfb151f3f4115127a9894484ed92f26a` |
+| 9 | `lemma` | [isBonza](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/isbonza-source-edition-2.md) | 162 | `result-track:9ad11e66f0750593052039f7cb42dd1413d2a2bf3803150fbfb40e2d059177bd` |
+| 10 | `theorem` | [apply_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/apply-le.md) | 192 | `result-track:a5a8d4aa1eda22edc0ef5a491e7ef584b28ae36554edc2b05dad78f84e27cd43` |
+| 11 | `theorem` | [result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2025Q3NamespacedPublic.lean/declarations/result.md) | 226 | `result-track:8d2e58f2432c1134998bceb44f9c5ecd07cfebabf54f3326fe68631f393253a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetOrderNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetOrderNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FinsetOrderNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FinsetOrderNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Directed.finset_le](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetOrderNamespaced.lean/declarations/directed-finset-le.md) | 27 | `result-track:435cf19de04085bf5651a3abb047c4e89ce79449b670eb1ce83ecd5fb377695c` |
-| 2 | `theorem` | [Finset.exists_le](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetOrderNamespaced.lean/declarations/finset-exists-le.md) | 36 | `result-track:b38e04e7fe368c935d5bb4d534a78d05d3038046c44d04c7229c5ec1d2871d60` |
+| 1 | `theorem` | [Directed.finset_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FinsetOrderNamespaced.lean/declarations/directed-finset-le.md) | 27 | `result-track:435cf19de04085bf5651a3abb047c4e89ce79449b670eb1ce83ecd5fb377695c` |
+| 2 | `theorem` | [Finset.exists_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FinsetOrderNamespaced.lean/declarations/finset-exists-le.md) | 36 | `result-track:b38e04e7fe368c935d5bb4d534a78d05d3038046c44d04c7229c5ec1d2871d60` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

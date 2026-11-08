@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PresentationRule.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PresentationRule.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PresentationRule.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PresentationRule.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PresentationRule](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PresentationRule.lean/declarations/presentationrule.md) | 18 | `declaration-track:5e41b70bfeec53a59eaea35d0ec54c86392971a3adbdb95f956a7935e2e38a33` |
-| 2 | `def` | [IsFixedBy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PresentationRule.lean/declarations/isfixedby.md) | 22 | `declaration-track:578c046b8f6b18a8fc0ec89daad1c1f1a96214e94f280ed6c982f359c368b35c` |
-| 3 | `def` | [copyRule](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PresentationRule.lean/declarations/copyrule.md) | 27 | `declaration-track:ea2d422870a0cd5ea8ddeb47004c10d6dd3fd1e2bb51ab90bdaeb35ccce6f7b3` |
-| 4 | `theorem` | [copyRule_fixed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PresentationRule.lean/declarations/copyrule-fixed.md) | 31 | `result-track:3ebbe35bc64e931d472612bc44c9494204d25e585cfa1ce61c4995a03eec641f` |
+| 1 | `structure` | [PresentationRule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PresentationRule.lean/declarations/presentationrule.md) | 18 | `declaration-track:5e41b70bfeec53a59eaea35d0ec54c86392971a3adbdb95f956a7935e2e38a33` |
+| 2 | `def` | [IsFixedBy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PresentationRule.lean/declarations/isfixedby.md) | 22 | `declaration-track:578c046b8f6b18a8fc0ec89daad1c1f1a96214e94f280ed6c982f359c368b35c` |
+| 3 | `def` | [copyRule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PresentationRule.lean/declarations/copyrule.md) | 27 | `declaration-track:ea2d422870a0cd5ea8ddeb47004c10d6dd3fd1e2bb51ab90bdaeb35ccce6f7b3` |
+| 4 | `theorem` | [copyRule_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PresentationRule.lean/declarations/copyrule-fixed.md) | 31 | `result-track:3ebbe35bc64e931d472612bc44c9494204d25e585cfa1ce61c4995a03eec641f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

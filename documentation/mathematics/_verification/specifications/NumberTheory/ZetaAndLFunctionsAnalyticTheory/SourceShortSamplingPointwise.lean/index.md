@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwise.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwise.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwise.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwise.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [plainProfile_sum_eq_sourcePlainKernel](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwise.lean/declarations/plainprofile-sum-eq-sourceplainkernel.md) | 23 | `result-track:33a837da823135669310c18bd64260c7af9109d6e19886d383f06a3d15f82aa0` |
-| 2 | `theorem` | [logProfile_sum_eq_sourceMobiusKernel](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwise.lean/declarations/logprofile-sum-eq-sourcemobiuskernel.md) | 33 | `result-track:65c03b10b51b26dd36ee86b63bdb599344d1236dc518e02e2b812697f70c33bb` |
-| 3 | `theorem` | [sourcePlainKernel_sub_mainTerm_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwise.lean/declarations/sourceplainkernel-sub-mainterm-abs-le.md) | 44 | `result-track:78d390f32a3e4f92cf051f02d16290abbfce05b71b88adf2135aee025eda547a` |
-| 4 | `theorem` | [sourceMobiusKernel_sub_mainTerm_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwise.lean/declarations/sourcemobiuskernel-sub-mainterm-abs-le.md) | 51 | `result-track:5bc676146f0a42e6863ec56ee8ba67bf4787e32b6d3c51309208908b8728e15b` |
+| 1 | `theorem` | [plainProfile_sum_eq_sourcePlainKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwise.lean/declarations/plainprofile-sum-eq-sourceplainkernel.md) | 23 | `result-track:33a837da823135669310c18bd64260c7af9109d6e19886d383f06a3d15f82aa0` |
+| 2 | `theorem` | [logProfile_sum_eq_sourceMobiusKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwise.lean/declarations/logprofile-sum-eq-sourcemobiuskernel.md) | 33 | `result-track:65c03b10b51b26dd36ee86b63bdb599344d1236dc518e02e2b812697f70c33bb` |
+| 3 | `theorem` | [sourcePlainKernel_sub_mainTerm_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwise.lean/declarations/sourceplainkernel-sub-mainterm-abs-le.md) | 44 | `result-track:78d390f32a3e4f92cf051f02d16290abbfce05b71b88adf2135aee025eda547a` |
+| 4 | `theorem` | [sourceMobiusKernel_sub_mainTerm_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwise.lean/declarations/sourcemobiuskernel-sub-mainterm-abs-le.md) | 51 | `result-track:5bc676146f0a42e6863ec56ee8ba67bf4787e32b6d3c51309208908b8728e15b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

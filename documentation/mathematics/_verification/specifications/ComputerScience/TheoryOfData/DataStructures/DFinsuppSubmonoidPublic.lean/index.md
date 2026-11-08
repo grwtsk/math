@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppSubmonoidPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppSubmonoidPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppSubmonoidPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppSubmonoidPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dfinsuppProd_mem](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppSubmonoidPublic.lean/declarations/dfinsuppprod-mem.md) | 38 | `result-track:86be95621d8c1c4f93862b0b74b6516f268713a3da9c2ab2b81bdf7601eb6401` |
-| 2 | `theorem` | [dfinsuppSumAddHom_mem](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppSubmonoidPublic.lean/declarations/dfinsuppsumaddhom-mem.md) | 44 | `result-track:0bc4cbae6727a9318271344ad0a1f3a3747244ce4cd064a4f307b730cb86d59e` |
-| 3 | `theorem` | [AddSubmonoid.iSup_eq_mrange_dfinsuppSumAddHom](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppSubmonoidPublic.lean/declarations/addsubmonoid-isup-eq-mrange-dfinsuppsumaddhom.md) | 54 | `result-track:1c86933b3a945cc2e8d86763078c76903ef89161164864f05a61ddb2487a78d0` |
-| 4 | `theorem` | [AddSubmonoid.bsupr_eq_mrange_dfinsuppSumAddHom](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppSubmonoidPublic.lean/declarations/addsubmonoid-bsupr-eq-mrange-dfinsuppsumaddhom.md) | 68 | `result-track:fe6024cf1a8fef41691c50ad77687d677591f9bbf0b7dd27dd16384a3c754663` |
-| 5 | `theorem` | [AddSubmonoid.mem_iSup_iff_exists_dfinsupp](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppSubmonoidPublic.lean/declarations/addsubmonoid-mem-isup-iff-exists-dfinsupp-source-edition-2.md) | 83 | `result-track:64207c12d45e6adae56e3bc2f3c98c433730911cd9082d3010c467cfa8a18beb` |
-| 6 | `theorem` | [AddSubmonoid.mem_iSup_iff_exists_dfinsupp'](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppSubmonoidPublic.lean/declarations/addsubmonoid-mem-isup-iff-exists-dfinsupp.md) | 88 | `result-track:035f0c5f308bee7b027e9cba5d27a08dbbf2c36111bfbe31fc740c0313711e8f` |
-| 7 | `theorem` | [AddSubmonoid.mem_bsupr_iff_exists_dfinsupp](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppSubmonoidPublic.lean/declarations/addsubmonoid-mem-bsupr-iff-exists-dfinsupp.md) | 95 | `result-track:a66130a32775592988ff460b0828ee7482087123a00199771401c81637e2a4a4` |
+| 1 | `theorem` | [dfinsuppProd_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppSubmonoidPublic.lean/declarations/dfinsuppprod-mem.md) | 38 | `result-track:86be95621d8c1c4f93862b0b74b6516f268713a3da9c2ab2b81bdf7601eb6401` |
+| 2 | `theorem` | [dfinsuppSumAddHom_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppSubmonoidPublic.lean/declarations/dfinsuppsumaddhom-mem.md) | 44 | `result-track:0bc4cbae6727a9318271344ad0a1f3a3747244ce4cd064a4f307b730cb86d59e` |
+| 3 | `theorem` | [AddSubmonoid.iSup_eq_mrange_dfinsuppSumAddHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppSubmonoidPublic.lean/declarations/addsubmonoid-isup-eq-mrange-dfinsuppsumaddhom.md) | 54 | `result-track:1c86933b3a945cc2e8d86763078c76903ef89161164864f05a61ddb2487a78d0` |
+| 4 | `theorem` | [AddSubmonoid.bsupr_eq_mrange_dfinsuppSumAddHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppSubmonoidPublic.lean/declarations/addsubmonoid-bsupr-eq-mrange-dfinsuppsumaddhom.md) | 68 | `result-track:fe6024cf1a8fef41691c50ad77687d677591f9bbf0b7dd27dd16384a3c754663` |
+| 5 | `theorem` | [AddSubmonoid.mem_iSup_iff_exists_dfinsupp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppSubmonoidPublic.lean/declarations/addsubmonoid-mem-isup-iff-exists-dfinsupp-source-edition-2.md) | 83 | `result-track:64207c12d45e6adae56e3bc2f3c98c433730911cd9082d3010c467cfa8a18beb` |
+| 6 | `theorem` | [AddSubmonoid.mem_iSup_iff_exists_dfinsupp'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppSubmonoidPublic.lean/declarations/addsubmonoid-mem-isup-iff-exists-dfinsupp.md) | 88 | `result-track:035f0c5f308bee7b027e9cba5d27a08dbbf2c36111bfbe31fc740c0313711e8f` |
+| 7 | `theorem` | [AddSubmonoid.mem_bsupr_iff_exists_dfinsupp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppSubmonoidPublic.lean/declarations/addsubmonoid-mem-bsupr-iff-exists-dfinsupp.md) | 95 | `result-track:a66130a32775592988ff460b0828ee7482087123a00199771401c81637e2a4a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

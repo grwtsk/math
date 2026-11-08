@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Gaps.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Gaps.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Gaps.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Gaps.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [thetaTailGap](../../../../MeasureAndIntegration/Gaps.lean/declarations/thetatailgap.md) | 9 | `declaration-track:fd8f4f7a8394a79de14a0dc434a67ca6b86e86060d41aeecf1f33020707b183c` |
-| 2 | `theorem` | [hasDerivAt_thetaTail_normalized](../../../../MeasureAndIntegration/Gaps.lean/declarations/hasderivat-thetatail-normalized.md) | 12 | `result-track:7b4999d080d274614339954c1cbf8c6758f27fe7b604833bd1c837f9c3cfdaaa` |
-| 3 | `theorem` | [thetaTailGap_nonnegative](../../../../MeasureAndIntegration/Gaps.lean/declarations/thetatailgap-nonnegative.md) | 20 | `result-track:be84f0dcc4a410d4ca4fa7c1a0f16b72d1a4734102dde43e911ff10225213bc1` |
-| 4 | `theorem` | [thetaTailGap_derivative_ratio](../../../../MeasureAndIntegration/Gaps.lean/declarations/thetatailgap-derivative-ratio.md) | 30 | `result-track:e24ea132a729737beeefa31f9a65e51ec9edc088a7db196d75c760d34835df51` |
-| 5 | `theorem` | [thetaTailGap_succ_succ](../../../../MeasureAndIntegration/Gaps.lean/declarations/thetatailgap-succ-succ.md) | 39 | `result-track:fd4ca2eccec8737ebe4a0cc79fbe4610b03c33fe26aa8a3df71e684d46b0786f` |
-| 6 | `theorem` | [thetaTailGap_zero_succ](../../../../MeasureAndIntegration/Gaps.lean/declarations/thetatailgap-zero-succ.md) | 46 | `result-track:15ff8acc474e6d6055048123342df55d5ab364609ccc261154025e220f5e1514` |
-| 7 | `theorem` | [thetaPhi_logSlope_strictAnti](../../../../MeasureAndIntegration/Gaps.lean/declarations/thetaphi-logslope-strictanti.md) | 54 | `result-track:ec06245ffced1d9c997d9f517d2e345bc555567d0946ae180d4f16c54f8f0e95` |
-| 8 | `theorem` | [thetaPhi_logSlope_cross_positive](../../../../MeasureAndIntegration/Gaps.lean/declarations/thetaphi-logslope-cross-positive.md) | 62 | `result-track:5e7c0e5c3f1ef848abba475bc3d4edbb02356d4cd3397665efd419080d86a88a` |
-| 9 | `theorem` | [thetaTailGap_zero_two_integral](../../../../MeasureAndIntegration/Gaps.lean/declarations/thetatailgap-zero-two-integral.md) | 68 | `result-track:3f6cdd1790c49f55e87faa7b9fd221807d2c2d2829822545957c600059ad84c6` |
-| 10 | `theorem` | [zero_two_gap_integrand_integrable](../../../../MeasureAndIntegration/Gaps.lean/declarations/zero-two-gap-integrand-integrable.md) | 75 | `result-track:3afb4bf9a1f8dc6aa7aa9b22311624d03ccc5a291f8a753f3dddd600f597fc4b` |
-| 11 | `theorem` | [thetaTailGap_zero_two_positive](../../../../MeasureAndIntegration/Gaps.lean/declarations/thetatailgap-zero-two-positive.md) | 87 | `result-track:b12ed4d89abe84f7c54fa7132691b30956467f8956d32e5a1a8f4b8a1435377a` |
-| 12 | `theorem` | [hasDerivAt_thetaTailGap_zero_succ_succ](../../../../MeasureAndIntegration/Gaps.lean/declarations/hasderivat-thetatailgap-zero-succ-succ.md) | 100 | `result-track:82f67b12cbb9bedf248b1392c55e41bed67b4b71be920363703d01b0e955f6f7` |
+| 1 | `def` | [thetaTailGap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Gaps.lean/declarations/thetatailgap.md) | 9 | `declaration-track:fd8f4f7a8394a79de14a0dc434a67ca6b86e86060d41aeecf1f33020707b183c` |
+| 2 | `theorem` | [hasDerivAt_thetaTail_normalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Gaps.lean/declarations/hasderivat-thetatail-normalized.md) | 12 | `result-track:7b4999d080d274614339954c1cbf8c6758f27fe7b604833bd1c837f9c3cfdaaa` |
+| 3 | `theorem` | [thetaTailGap_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Gaps.lean/declarations/thetatailgap-nonnegative.md) | 20 | `result-track:be84f0dcc4a410d4ca4fa7c1a0f16b72d1a4734102dde43e911ff10225213bc1` |
+| 4 | `theorem` | [thetaTailGap_derivative_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Gaps.lean/declarations/thetatailgap-derivative-ratio.md) | 30 | `result-track:e24ea132a729737beeefa31f9a65e51ec9edc088a7db196d75c760d34835df51` |
+| 5 | `theorem` | [thetaTailGap_succ_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Gaps.lean/declarations/thetatailgap-succ-succ.md) | 39 | `result-track:fd4ca2eccec8737ebe4a0cc79fbe4610b03c33fe26aa8a3df71e684d46b0786f` |
+| 6 | `theorem` | [thetaTailGap_zero_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Gaps.lean/declarations/thetatailgap-zero-succ.md) | 46 | `result-track:15ff8acc474e6d6055048123342df55d5ab364609ccc261154025e220f5e1514` |
+| 7 | `theorem` | [thetaPhi_logSlope_strictAnti](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Gaps.lean/declarations/thetaphi-logslope-strictanti.md) | 54 | `result-track:ec06245ffced1d9c997d9f517d2e345bc555567d0946ae180d4f16c54f8f0e95` |
+| 8 | `theorem` | [thetaPhi_logSlope_cross_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Gaps.lean/declarations/thetaphi-logslope-cross-positive.md) | 62 | `result-track:5e7c0e5c3f1ef848abba475bc3d4edbb02356d4cd3397665efd419080d86a88a` |
+| 9 | `theorem` | [thetaTailGap_zero_two_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Gaps.lean/declarations/thetatailgap-zero-two-integral.md) | 68 | `result-track:3f6cdd1790c49f55e87faa7b9fd221807d2c2d2829822545957c600059ad84c6` |
+| 10 | `theorem` | [zero_two_gap_integrand_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Gaps.lean/declarations/zero-two-gap-integrand-integrable.md) | 75 | `result-track:3afb4bf9a1f8dc6aa7aa9b22311624d03ccc5a291f8a753f3dddd600f597fc4b` |
+| 11 | `theorem` | [thetaTailGap_zero_two_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Gaps.lean/declarations/thetatailgap-zero-two-positive.md) | 87 | `result-track:b12ed4d89abe84f7c54fa7132691b30956467f8956d32e5a1a8f4b8a1435377a` |
+| 12 | `theorem` | [hasDerivAt_thetaTailGap_zero_succ_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Gaps.lean/declarations/hasderivat-thetatailgap-zero-succ-succ.md) | 100 | `result-track:82f67b12cbb9bedf248b1392c55e41bed67b4b71be920363703d01b0e955f6f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

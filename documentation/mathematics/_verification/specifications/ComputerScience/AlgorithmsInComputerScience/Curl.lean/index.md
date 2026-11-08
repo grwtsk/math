@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Curl.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Curl.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Curl.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Curl.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [uploadPutArgs](../../../../../ComputerScience/AlgorithmsInComputerScience/Curl.lean/declarations/uploadputargs.md) | 31 | `declaration-track:e58325411ead2ad74fce59f5cdadd5636b49b932feb56cf66b815a365dd9677e` |
-| 2 | `def` | [mkPutConfigContent](../../../../../ComputerScience/AlgorithmsInComputerScience/Curl.lean/declarations/mkputconfigcontent.md) | 38 | `declaration-track:a0ec971ffc0819a6950e7575d58d9244f78cadd62c14d21712efe221edb39a56` |
-| 3 | `def` | [putFilesViaCurl](../../../../../ComputerScience/AlgorithmsInComputerScience/Curl.lean/declarations/putfilesviacurl.md) | 47 | `declaration-track:54eaa17bb5c978a71356d4ba81b50b3abb5a13f49643796b92ea3c5b7aae90ec` |
-| 4 | `def` | [putStagedViaCurl](../../../../../ComputerScience/AlgorithmsInComputerScience/Curl.lean/declarations/putstagedviacurl.md) | 85 | `declaration-track:c8417a0f8d067804bfa5cda8abdcacf6442c4bcec482cf1662cfdc69e82b4f3a` |
+| 1 | `def` | [uploadPutArgs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Curl.lean/declarations/uploadputargs.md) | 31 | `declaration-track:e58325411ead2ad74fce59f5cdadd5636b49b932feb56cf66b815a365dd9677e` |
+| 2 | `def` | [mkPutConfigContent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Curl.lean/declarations/mkputconfigcontent.md) | 38 | `declaration-track:a0ec971ffc0819a6950e7575d58d9244f78cadd62c14d21712efe221edb39a56` |
+| 3 | `def` | [putFilesViaCurl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Curl.lean/declarations/putfilesviacurl.md) | 47 | `declaration-track:54eaa17bb5c978a71356d4ba81b50b3abb5a13f49643796b92ea3c5b7aae90ec` |
+| 4 | `def` | [putStagedViaCurl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Curl.lean/declarations/putstagedviacurl.md) | 85 | `declaration-track:c8417a0f8d067804bfa5cda8abdcacf6442c4bcec482cf1662cfdc69e82b4f3a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

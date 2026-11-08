@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphvizDisplayNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphvizDisplayNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphvizDisplayNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphvizDisplayNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [GraphvizLayoutEngine](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphvizDisplayNamespacedPublic.lean/declarations/graphvizlayoutengine.md) | 26 | `declaration-track:fe64fc53af8a9700009cde27e79e2a503be45c5b46f812d67b095df120471a34` |
-| 2 | `structure` | [D3GraphvizOptions](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphvizDisplayNamespacedPublic.lean/declarations/d3graphvizoptions.md) | 32 | `declaration-track:dca5401ed7aa1c571cd2a5cd522f06a751ff653b73aaf16503d50f75c23c4838` |
-| 3 | `structure` | [Props](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphvizDisplayNamespacedPublic.lean/declarations/props.md) | 54 | `declaration-track:4a19ca6ca93062dd4613016e4706b78ca8118c76eb76f3b7fecaa0ee24e4eeac` |
-| 4 | `def` | [GraphvizDisplay](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphvizDisplayNamespacedPublic.lean/declarations/graphvizdisplay.md) | 74 | `declaration-track:5cf3974e0f8bfe4c9d351ff606910a1e709ad93bfd0f40eb7376b051b9124685` |
+| 1 | `inductive` | [GraphvizLayoutEngine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphvizDisplayNamespacedPublic.lean/declarations/graphvizlayoutengine.md) | 26 | `declaration-track:fe64fc53af8a9700009cde27e79e2a503be45c5b46f812d67b095df120471a34` |
+| 2 | `structure` | [D3GraphvizOptions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphvizDisplayNamespacedPublic.lean/declarations/d3graphvizoptions.md) | 32 | `declaration-track:dca5401ed7aa1c571cd2a5cd522f06a751ff653b73aaf16503d50f75c23c4838` |
+| 3 | `structure` | [Props](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphvizDisplayNamespacedPublic.lean/declarations/props.md) | 54 | `declaration-track:4a19ca6ca93062dd4613016e4706b78ca8118c76eb76f3b7fecaa0ee24e4eeac` |
+| 4 | `def` | [GraphvizDisplay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphvizDisplayNamespacedPublic.lean/declarations/graphvizdisplay.md) | 74 | `declaration-track:5cf3974e0f8bfe4c9d351ff606910a1e709ad93bfd0f40eb7376b051b9124685` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

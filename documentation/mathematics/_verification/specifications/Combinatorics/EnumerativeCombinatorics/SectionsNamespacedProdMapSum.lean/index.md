@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Sections](../../../../../Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/declarations/sections.md) | 33 | `declaration-track:40a2bc001f3ed3b6c4a0b2c46cd4791e2b9ec6474647165e62e92b109e6c8f0f` |
-| 2 | `theorem` | [sections_zero](../../../../../Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/declarations/sections-zero.md) | 39 | `result-track:0e90c00e3e6064e930705b17181edccd8bdcbfb349b37f20221c776c2c8b2884` |
-| 3 | `theorem` | [sections_cons](../../../../../Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/declarations/sections-cons.md) | 44 | `result-track:8984ed9ccc619172793e32e0f9884df7211e0968e8fe73437a657e6534aad6a7` |
-| 4 | `theorem` | [coe_sections](../../../../../Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/declarations/coe-sections.md) | 49 | `result-track:100f233422a188528e1ce33c4587e8439fd53173b037b5c0b6ea3f87e6d35d53` |
-| 5 | `theorem` | [sections_add](../../../../../Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/declarations/sections-add.md) | 61 | `result-track:ca22813de487d37812606e51c7dd60c1c586a4c5394f48abfebf418413482a70` |
-| 6 | `theorem` | [mem_sections](../../../../../Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/declarations/mem-sections.md) | 67 | `result-track:64ec23e18f35964d08b07b7eced1b9550f82cde9c7dc2b4e3553b45f8e5983ae` |
-| 7 | `theorem` | [card_sections](../../../../../Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/declarations/card-sections.md) | 74 | `result-track:7b921ba66a19c2aae35f7838f325af11bc6dafaaba52a268edce0b74ab5252b2` |
-| 8 | `theorem` | [prod_map_sum](../../../../../Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/declarations/prod-map-sum.md) | 78 | `result-track:53551cc08e147ad5257bd6b174bb047e1cd05eda47597a878878c0844a683ab8` |
+| 1 | `def` | [Sections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/declarations/sections.md) | 33 | `declaration-track:40a2bc001f3ed3b6c4a0b2c46cd4791e2b9ec6474647165e62e92b109e6c8f0f` |
+| 2 | `theorem` | [sections_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/declarations/sections-zero.md) | 39 | `result-track:0e90c00e3e6064e930705b17181edccd8bdcbfb349b37f20221c776c2c8b2884` |
+| 3 | `theorem` | [sections_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/declarations/sections-cons.md) | 44 | `result-track:8984ed9ccc619172793e32e0f9884df7211e0968e8fe73437a657e6534aad6a7` |
+| 4 | `theorem` | [coe_sections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/declarations/coe-sections.md) | 49 | `result-track:100f233422a188528e1ce33c4587e8439fd53173b037b5c0b6ea3f87e6d35d53` |
+| 5 | `theorem` | [sections_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/declarations/sections-add.md) | 61 | `result-track:ca22813de487d37812606e51c7dd60c1c586a4c5394f48abfebf418413482a70` |
+| 6 | `theorem` | [mem_sections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/declarations/mem-sections.md) | 67 | `result-track:64ec23e18f35964d08b07b7eced1b9550f82cde9c7dc2b4e3553b45f8e5983ae` |
+| 7 | `theorem` | [card_sections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/declarations/card-sections.md) | 74 | `result-track:7b921ba66a19c2aae35f7838f325af11bc6dafaaba52a268edce0b74ab5252b2` |
+| 8 | `theorem` | [prod_map_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SectionsNamespacedProdMapSum.lean/declarations/prod-map-sum.md) | 78 | `result-track:53551cc08e147ad5257bd6b174bb047e1cd05eda47597a878878c0844a683ab8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

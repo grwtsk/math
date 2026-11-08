@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AuthorityReceiptNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AuthorityReceiptNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuthorityReceiptNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuthorityReceiptNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AuthorityReceipt](../../../../../ComputerScience/AlgorithmsInComputerScience/AuthorityReceiptNamespaced.lean/declarations/authorityreceipt.md) | 19 | `declaration-track:ac272c7ff508e380d8ec4adf6d0cf44d4f3c5bb8a2c4765f4c42a9223f7c824b` |
-| 2 | `def` | [targetBoundaryCheck](../../../../../ComputerScience/AlgorithmsInComputerScience/AuthorityReceiptNamespaced.lean/declarations/targetboundarycheck.md) | 31 | `declaration-track:32dab3a57e8c82e1cd101d51b8792c716f76cd0e5107cfb26c2118849b91f0e8` |
-| 3 | `theorem` | [targetBoundaryCheck_not_proved](../../../../../ComputerScience/AlgorithmsInComputerScience/AuthorityReceiptNamespaced.lean/declarations/targetboundarycheck-not-proved.md) | 36 | `result-track:e868d3a69639b62accca5685cefb90fa29078628639963a493a58a6d67df796d` |
-| 4 | `theorem` | [targetBoundaryCheck_hasResidue](../../../../../ComputerScience/AlgorithmsInComputerScience/AuthorityReceiptNamespaced.lean/declarations/targetboundarycheck-hasresidue.md) | 42 | `result-track:7a2cbb0b3d4bea082a9162102ffe47fa987c67315e13013d06312af41aa189c8` |
-| 5 | `theorem` | [targetBoundaryCheck_ne_proved](../../../../../ComputerScience/AlgorithmsInComputerScience/AuthorityReceiptNamespaced.lean/declarations/targetboundarycheck-ne-proved.md) | 48 | `result-track:7996d77fd1c68997831e0207d9cfcf1ce6ed9d945a0a1c82fe9c2962200823b8` |
-| 6 | `def` | [doesNotSettleTarget](../../../../../ComputerScience/AlgorithmsInComputerScience/AuthorityReceiptNamespaced.lean/declarations/doesnotsettletarget.md) | 57 | `declaration-track:9fd6b6a39f7ffba8ee1d56710b751ac4b25e962bc582ee3e6fe0c820677812fe` |
-| 7 | `theorem` | [forbidsTargetSettlement_doesNotSettleTarget](../../../../../ComputerScience/AlgorithmsInComputerScience/AuthorityReceiptNamespaced.lean/declarations/forbidstargetsettlement-doesnotsettletarget.md) | 60 | `result-track:84849a07ee498a92b32f3b83ad3854090dc1f7a122c0835d9eef80b2af15c5db` |
+| 1 | `structure` | [AuthorityReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuthorityReceiptNamespaced.lean/declarations/authorityreceipt.md) | 19 | `declaration-track:ac272c7ff508e380d8ec4adf6d0cf44d4f3c5bb8a2c4765f4c42a9223f7c824b` |
+| 2 | `def` | [targetBoundaryCheck](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuthorityReceiptNamespaced.lean/declarations/targetboundarycheck.md) | 31 | `declaration-track:32dab3a57e8c82e1cd101d51b8792c716f76cd0e5107cfb26c2118849b91f0e8` |
+| 3 | `theorem` | [targetBoundaryCheck_not_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuthorityReceiptNamespaced.lean/declarations/targetboundarycheck-not-proved.md) | 36 | `result-track:e868d3a69639b62accca5685cefb90fa29078628639963a493a58a6d67df796d` |
+| 4 | `theorem` | [targetBoundaryCheck_hasResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuthorityReceiptNamespaced.lean/declarations/targetboundarycheck-hasresidue.md) | 42 | `result-track:7a2cbb0b3d4bea082a9162102ffe47fa987c67315e13013d06312af41aa189c8` |
+| 5 | `theorem` | [targetBoundaryCheck_ne_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuthorityReceiptNamespaced.lean/declarations/targetboundarycheck-ne-proved.md) | 48 | `result-track:7996d77fd1c68997831e0207d9cfcf1ce6ed9d945a0a1c82fe9c2962200823b8` |
+| 6 | `def` | [doesNotSettleTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuthorityReceiptNamespaced.lean/declarations/doesnotsettletarget.md) | 57 | `declaration-track:9fd6b6a39f7ffba8ee1d56710b751ac4b25e962bc582ee3e6fe0c820677812fe` |
+| 7 | `theorem` | [forbidsTargetSettlement_doesNotSettleTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AuthorityReceiptNamespaced.lean/declarations/forbidstargetsettlement-doesnotsettletarget.md) | 60 | `result-track:84849a07ee498a92b32f3b83ad3854090dc1f7a122c0835d9eef80b2af15c5db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

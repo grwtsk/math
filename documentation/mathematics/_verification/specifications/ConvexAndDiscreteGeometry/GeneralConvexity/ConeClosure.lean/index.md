@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [closure](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/declarations/closure.md) | 24 | `declaration-track:c2ee48df2f3acef65f10331ebcf0aaf011217304c19f650867619e2c57ad6b75` |
-| 2 | `theorem` | [coe_closure](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/declarations/coe-closure-source-edition-2.md) | 31 | `result-track:f6966e83d87b0b359397f94c04ea5aa84fcdf77c759bf727a8374508211249a8` |
-| 3 | `theorem` | [mem_closure](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/declarations/mem-closure.md) | 35 | `result-track:a50d9422d8867fe361f90d9f82f6c9796ecbc83dff4046708a85fd0c3ebd5604` |
-| 4 | `theorem` | [closure_eq](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/declarations/closure-eq-source-edition-2.md) | 40 | `result-track:565f0e1b82fe249b206454ad11c5e2b72cc2446541c3f641fed1beae45cd0dbe` |
-| 5 | `lemma` | [toConvexCone_closure_pointed](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/declarations/toconvexcone-closure-pointed.md) | 53 | `result-track:f4ad744ed4fe15fd7875b38affd2d4669a535d14384376984b005ae63a837a22` |
-| 6 | `def` | [closure](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/declarations/closure-source-edition-2.md) | 58 | `declaration-track:e8c999ab2c240583b672303eac63fb330e8427f80431c995a94db1892a398fe2` |
-| 7 | `theorem` | [coe_closure](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/declarations/coe-closure.md) | 62 | `result-track:5250b203ebb2510aa1c52c72808276dd9edba92e330ef015d10e2779a5222100` |
-| 8 | `theorem` | [mem_closure](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/declarations/mem-closure-source-edition-2.md) | 66 | `result-track:fcc4be34660e1c40647a2b1f60d0d15f9719f5cf04267aad4a2a85ff596e96c5` |
-| 9 | `theorem` | [closure_eq](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/declarations/closure-eq.md) | 71 | `result-track:332647299c355614bdbcfd3c5d92cfaed76550a852447d0c5aede0f0a17732a4` |
+| 1 | `def` | [closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/declarations/closure.md) | 24 | `declaration-track:c2ee48df2f3acef65f10331ebcf0aaf011217304c19f650867619e2c57ad6b75` |
+| 2 | `theorem` | [coe_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/declarations/coe-closure-source-edition-2.md) | 31 | `result-track:f6966e83d87b0b359397f94c04ea5aa84fcdf77c759bf727a8374508211249a8` |
+| 3 | `theorem` | [mem_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/declarations/mem-closure.md) | 35 | `result-track:a50d9422d8867fe361f90d9f82f6c9796ecbc83dff4046708a85fd0c3ebd5604` |
+| 4 | `theorem` | [closure_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/declarations/closure-eq-source-edition-2.md) | 40 | `result-track:565f0e1b82fe249b206454ad11c5e2b72cc2446541c3f641fed1beae45cd0dbe` |
+| 5 | `lemma` | [toConvexCone_closure_pointed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/declarations/toconvexcone-closure-pointed.md) | 53 | `result-track:f4ad744ed4fe15fd7875b38affd2d4669a535d14384376984b005ae63a837a22` |
+| 6 | `def` | [closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/declarations/closure-source-edition-2.md) | 58 | `declaration-track:e8c999ab2c240583b672303eac63fb330e8427f80431c995a94db1892a398fe2` |
+| 7 | `theorem` | [coe_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/declarations/coe-closure.md) | 62 | `result-track:5250b203ebb2510aa1c52c72808276dd9edba92e330ef015d10e2779a5222100` |
+| 8 | `theorem` | [mem_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/declarations/mem-closure-source-edition-2.md) | 66 | `result-track:fcc4be34660e1c40647a2b1f60d0d15f9719f5cf04267aad4a2a85ff596e96c5` |
+| 9 | `theorem` | [closure_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConeClosure.lean/declarations/closure-eq.md) | 71 | `result-track:332647299c355614bdbcfd3c5d92cfaed76550a852447d0c5aede0f0a17732a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

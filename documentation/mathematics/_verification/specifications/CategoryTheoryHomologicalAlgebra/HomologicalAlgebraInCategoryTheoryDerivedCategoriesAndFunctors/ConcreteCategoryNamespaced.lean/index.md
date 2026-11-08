@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategoryNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategoryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategoryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategoryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cyclesMk](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategoryNamespaced.lean/declarations/cyclesmk.md) | 43 | `declaration-track:5140f43fb957cbb4e9692b1569547cf5e0768e4d85fbd81fd31532573882eb4c` |
-| 2 | `lemma` | [i_cyclesMk](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategoryNamespaced.lean/declarations/i-cyclesmk.md) | 49 | `result-track:7fd66c547ead5c1cd16d72567969ced1e8a27b166fa6c67bd801310b44ec95cd` |
-| 3 | `lemma` | [δ_apply'](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategoryNamespaced.lean/declarations/apply-source-edition-2.md) | 66 | `result-track:4c8c0b881bdb9e5a064b44b450d6cddea87fa051df70078a1afd3726683f44ec` |
-| 4 | `lemma` | [δ_apply](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategoryNamespaced.lean/declarations/apply.md) | 76 | `result-track:06ffb6cfdcac5c05f2524d86afabfe72b052a7be4dd21fd6792b8e64c6e98802` |
+| 1 | `def` | [cyclesMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategoryNamespaced.lean/declarations/cyclesmk.md) | 43 | `declaration-track:5140f43fb957cbb4e9692b1569547cf5e0768e4d85fbd81fd31532573882eb4c` |
+| 2 | `lemma` | [i_cyclesMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategoryNamespaced.lean/declarations/i-cyclesmk.md) | 49 | `result-track:7fd66c547ead5c1cd16d72567969ced1e8a27b166fa6c67bd801310b44ec95cd` |
+| 3 | `lemma` | [δ_apply'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategoryNamespaced.lean/declarations/apply-source-edition-2.md) | 66 | `result-track:4c8c0b881bdb9e5a064b44b450d6cddea87fa051df70078a1afd3726683f44ec` |
+| 4 | `lemma` | [δ_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategoryNamespaced.lean/declarations/apply.md) | 76 | `result-track:06ffb6cfdcac5c05f2524d86afabfe72b052a7be4dd21fd6792b8e64c6e98802` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

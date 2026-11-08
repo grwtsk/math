@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../RealFunctions/InequalitiesInRealAnalysis/InequalitiesLogarithmicShiftKernelBounds.lean/index.md) · [Full source](../../../../../RealFunctions/InequalitiesInRealAnalysis/InequalitiesLogarithmicShiftKernelBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/InequalitiesLogarithmicShiftKernelBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/InequalitiesLogarithmicShiftKernelBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,10 +46,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Inequalities.FiniteLogarithmicProfileBounds`](../../../../../MeasureAndIntegration/FiniteLogarithmicProfileBounds.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Inequalities.CompactProfileDifferentialBounds`](../../../../../RealFunctions/InequalitiesInRealAnalysis/CompactProfileDifferentialBounds.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicMoment`](../../../../../MeasureAndIntegration/CompactProfileLogarithmicMoment.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicRegularity`](../../../../../IntegralTransformsOperationalCalculus/CompactProfileLogarithmicRegularity.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Analysis.Inequalities.FiniteLogarithmicProfileBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteLogarithmicProfileBounds.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Inequalities.CompactProfileDifferentialBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/CompactProfileDifferentialBounds.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicMoment`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileLogarithmicMoment.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicRegularity`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/CompactProfileLogarithmicRegularity.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [literal_kernel_polynomial_price](../../../../../RealFunctions/InequalitiesInRealAnalysis/InequalitiesLogarithmicShiftKernelBounds.lean/declarations/literal-kernel-polynomial-price.md) | 30 | `result-track:98e32a49be9bb9e15e20f6df7234ddf58fdfaa7fe4b9f7c98cef6411200f2544` |
-| 2 | `theorem` | [literal_kernel_original_window_price](../../../../../RealFunctions/InequalitiesInRealAnalysis/InequalitiesLogarithmicShiftKernelBounds.lean/declarations/literal-kernel-original-window-price.md) | 55 | `result-track:6413fafcb0db7578c36e2f59f593e8ca7bd62838e66f7f9b29f87dde38728f9a` |
+| 1 | `theorem` | [literal_kernel_polynomial_price](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/InequalitiesLogarithmicShiftKernelBounds.lean/declarations/literal-kernel-polynomial-price.md) | 30 | `result-track:98e32a49be9bb9e15e20f6df7234ddf58fdfaa7fe4b9f7c98cef6411200f2544` |
+| 2 | `theorem` | [literal_kernel_original_window_price](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/InequalitiesLogarithmicShiftKernelBounds.lean/declarations/literal-kernel-original-window-price.md) | 55 | `result-track:6413fafcb0db7578c36e2f59f593e8ca7bd62838e66f7f9b29f87dde38728f9a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.FactorizationFiber`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.FactorizationFiber`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/index.md) — import line 10; pinned internal source present.
 - `Mathlib.Data.Set.Function` — import line 11; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [factorsThrough_iff_fiberConstant_of_surjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/declarations/factorsthrough-iff-fiberconstant-of-surjective.md) | 40 | `result-track:78f00d8367eb535214f1cc6a257b50318a2abcbf9d617f6f2e36bd2fb9c27040` |
-| 2 | `def` | [observedProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/declarations/observedprofile.md) | 60 | `declaration-track:6426cc3643c59d29485ea44c1ffbe85836551dccc22073aff2dd3ae89e29b488` |
-| 3 | `theorem` | [observedProfile_surjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/declarations/observedprofile-surjective.md) | 66 | `result-track:c49db1c399809aba9eccc5f908fa43156451dbdff0af484452309e701d5edebd` |
-| 4 | `theorem` | [observedProfile_eq_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/declarations/observedprofile-eq-iff.md) | 76 | `result-track:bc45b7efa15bbca230e1125d03a9ea350a296101dcee43f488b74aabe34b4520` |
-| 5 | `theorem` | [factorsThrough_observedProfile_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/declarations/factorsthrough-observedprofile-iff.md) | 90 | `result-track:f3598eb491e5bdf473ddc183413477a86872bb3794c0873d8079afc0c7e3ce0b` |
-| 6 | `theorem` | [factorsThrough_iff_fiberConstant_of_inhabited_target](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/declarations/factorsthrough-iff-fiberconstant-of-inhabited-target.md) | 113 | `result-track:5615b3dd5006934935632577a7df858542e4dd59e336ffc579219907a78d120c` |
-| 7 | `theorem` | [factorsThrough_iff_fiberConstant_of_nonempty_source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/declarations/factorsthrough-iff-fiberconstant-of-nonempty-source.md) | 140 | `result-track:5c2be56941932b0e98c9a69e8da77556ceb9d069309d61f5cbd6c2d3e00e8de3` |
-| 8 | `theorem` | [readout_factorsThrough_augmentedProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/declarations/readout-factorsthrough-augmentedprofile.md) | 153 | `result-track:679d767ef2058cac1d89b167d1ebd2028f6951f8eb63dc53b49c62c73f1256f0` |
-| 9 | `theorem` | [empty_source_fiber_constant_without_total_decoder](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/declarations/empty-source-fiber-constant-without-total-decoder.md) | 164 | `result-track:636ceabcfcc2e86d01c4d5ef3bb5d564a4a0d2b5bb495251e324283139df01a2` |
+| 1 | `theorem` | [factorsThrough_iff_fiberConstant_of_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/declarations/factorsthrough-iff-fiberconstant-of-surjective.md) | 40 | `result-track:78f00d8367eb535214f1cc6a257b50318a2abcbf9d617f6f2e36bd2fb9c27040` |
+| 2 | `def` | [observedProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/declarations/observedprofile.md) | 60 | `declaration-track:6426cc3643c59d29485ea44c1ffbe85836551dccc22073aff2dd3ae89e29b488` |
+| 3 | `theorem` | [observedProfile_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/declarations/observedprofile-surjective.md) | 66 | `result-track:c49db1c399809aba9eccc5f908fa43156451dbdff0af484452309e701d5edebd` |
+| 4 | `theorem` | [observedProfile_eq_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/declarations/observedprofile-eq-iff.md) | 76 | `result-track:bc45b7efa15bbca230e1125d03a9ea350a296101dcee43f488b74aabe34b4520` |
+| 5 | `theorem` | [factorsThrough_observedProfile_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/declarations/factorsthrough-observedprofile-iff.md) | 90 | `result-track:f3598eb491e5bdf473ddc183413477a86872bb3794c0873d8079afc0c7e3ce0b` |
+| 6 | `theorem` | [factorsThrough_iff_fiberConstant_of_inhabited_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/declarations/factorsthrough-iff-fiberconstant-of-inhabited-target.md) | 113 | `result-track:5615b3dd5006934935632577a7df858542e4dd59e336ffc579219907a78d120c` |
+| 7 | `theorem` | [factorsThrough_iff_fiberConstant_of_nonempty_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/declarations/factorsthrough-iff-fiberconstant-of-nonempty-source.md) | 140 | `result-track:5c2be56941932b0e98c9a69e8da77556ceb9d069309d61f5cbd6c2d3e00e8de3` |
+| 8 | `theorem` | [readout_factorsThrough_augmentedProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/declarations/readout-factorsthrough-augmentedprofile.md) | 153 | `result-track:679d767ef2058cac1d89b167d1ebd2028f6951f8eb63dc53b49c62c73f1256f0` |
+| 9 | `theorem` | [empty_source_fiber_constant_without_total_decoder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiberCompleteness.lean/declarations/empty-source-fiber-constant-without-total-decoder.md) | 164 | `result-track:636ceabcfcc2e86d01c4d5ef3bb5d564a4a0d2b5bb495251e324283139df01a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

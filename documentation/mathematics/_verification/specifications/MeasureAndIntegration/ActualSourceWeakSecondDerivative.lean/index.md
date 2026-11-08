@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualSourceWeakSecondDerivative.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualSourceWeakSecondDerivative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSourceWeakSecondDerivative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSourceWeakSecondDerivative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [normalizedInteriorSecond_continuous](../../../../MeasureAndIntegration/ActualSourceWeakSecondDerivative.lean/declarations/normalizedinteriorsecond-continuous.md) | 24 | `result-track:e5833bdafc0d9d20d1a965388dd8ecd3c35d98f3b2a69912783b10712eab07f7` |
-| 2 | `theorem` | [actualSecondProfile_eq_indicator](../../../../MeasureAndIntegration/ActualSourceWeakSecondDerivative.lean/declarations/actualsecondprofile-eq-indicator.md) | 30 | `result-track:670b00e7855faf1dd208828d0909b722155587273ad88c49c4a12964542c72c7` |
-| 3 | `theorem` | [actualSecondProfile_integrable](../../../../MeasureAndIntegration/ActualSourceWeakSecondDerivative.lean/declarations/actualsecondprofile-integrable.md) | 40 | `result-track:331a2e9d25145908d04867519ae2b4712fa6c11b999699ee8976bbec7a384da3` |
-| 4 | `theorem` | [actual_normalized_source_weak_second_derivative](../../../../MeasureAndIntegration/ActualSourceWeakSecondDerivative.lean/declarations/actual-normalized-source-weak-second-derivative.md) | 46 | `result-track:8696937d47872aa59d7d4a72cd5db581621f0a7f02b5a74ef07e552491edd37f` |
+| 1 | `theorem` | [normalizedInteriorSecond_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSourceWeakSecondDerivative.lean/declarations/normalizedinteriorsecond-continuous.md) | 24 | `result-track:e5833bdafc0d9d20d1a965388dd8ecd3c35d98f3b2a69912783b10712eab07f7` |
+| 2 | `theorem` | [actualSecondProfile_eq_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSourceWeakSecondDerivative.lean/declarations/actualsecondprofile-eq-indicator.md) | 30 | `result-track:670b00e7855faf1dd208828d0909b722155587273ad88c49c4a12964542c72c7` |
+| 3 | `theorem` | [actualSecondProfile_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSourceWeakSecondDerivative.lean/declarations/actualsecondprofile-integrable.md) | 40 | `result-track:331a2e9d25145908d04867519ae2b4712fa6c11b999699ee8976bbec7a384da3` |
+| 4 | `theorem` | [actual_normalized_source_weak_second_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSourceWeakSecondDerivative.lean/declarations/actual-normalized-source-weak-second-derivative.md) | 46 | `result-track:8696937d47872aa59d7d4a72cd5db581621f0a7f02b5a74ef07e552491edd37f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

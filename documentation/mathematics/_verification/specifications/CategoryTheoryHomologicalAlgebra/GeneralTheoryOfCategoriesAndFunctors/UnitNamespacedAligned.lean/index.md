@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnitNamespacedAligned.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnitNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnitNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnitNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [punitCone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnitNamespacedAligned.lean/declarations/punitcone.md) | 37 | `declaration-track:f21991cc9ea3c7399641bb38cbf1006c5eed41e7ee309c62ed2842fe0c09d96d` |
-| 2 | `def` | [punitCocone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnitNamespacedAligned.lean/declarations/punitcocone.md) | 42 | `declaration-track:965eae3de24561777839598440125256bf866aab83544220c9408e61bb299aac` |
-| 3 | `def` | [punitConeIsLimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnitNamespacedAligned.lean/declarations/punitconeislimit.md) | 48 | `declaration-track:688e78e3eba88059d4f16572297c755cef043da92e78d094ec2d55e4d2270842` |
-| 4 | `def` | [punitCoconeIsColimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnitNamespacedAligned.lean/declarations/punitcoconeiscolimit.md) | 54 | `declaration-track:47f1fdf33640ac2f4cb9e1da9951494a133c36f435d10f33f719e6fbe6d10b34` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnitNamespacedAligned.lean/declarations/instance.md) | 58 | `declaration-track:0545d6b3e6ec4f176411c81cd1dc80b5bb952414d1083464acbdcc71bc6a57e6` |
-| 6 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnitNamespacedAligned.lean/declarations/instance-source-edition-2.md) | 61 | `declaration-track:b8f4183b2cefed3205369b63bc847321b25b35dd3f9a915b3caeb51ca88b9ea1` |
+| 1 | `def` | [punitCone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnitNamespacedAligned.lean/declarations/punitcone.md) | 37 | `declaration-track:f21991cc9ea3c7399641bb38cbf1006c5eed41e7ee309c62ed2842fe0c09d96d` |
+| 2 | `def` | [punitCocone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnitNamespacedAligned.lean/declarations/punitcocone.md) | 42 | `declaration-track:965eae3de24561777839598440125256bf866aab83544220c9408e61bb299aac` |
+| 3 | `def` | [punitConeIsLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnitNamespacedAligned.lean/declarations/punitconeislimit.md) | 48 | `declaration-track:688e78e3eba88059d4f16572297c755cef043da92e78d094ec2d55e4d2270842` |
+| 4 | `def` | [punitCoconeIsColimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnitNamespacedAligned.lean/declarations/punitcoconeiscolimit.md) | 54 | `declaration-track:47f1fdf33640ac2f4cb9e1da9951494a133c36f435d10f33f719e6fbe6d10b34` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnitNamespacedAligned.lean/declarations/instance.md) | 58 | `declaration-track:0545d6b3e6ec4f176411c81cd1dc80b5bb952414d1083464acbdcc71bc6a57e6` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnitNamespacedAligned.lean/declarations/instance-source-edition-2.md) | 61 | `declaration-track:b8f4183b2cefed3205369b63bc847321b25b35dd3f9a915b3caeb51ca88b9ea1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

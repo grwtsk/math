@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/StoneanLimitsNamespacedExtremallyDisconnectedPreimage.lean/index.md) · [Full source](../../../../GeneralTopology/StoneanLimitsNamespacedExtremallyDisconnectedPreimage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanLimitsNamespacedExtremallyDisconnectedPreimage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanLimitsNamespacedExtremallyDisconnectedPreimage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/StoneanLimitsNamespacedExtremallyDisconnectedPreimage.lean/declarations/instance.md) | 30 | `declaration-track:3c7e40e1feabdf78a9f3c79a8da9d1bfa8313dfc6794ac3260168e722fd6a3e9` |
-| 2 | `lemma` | [extremallyDisconnected_preimage](../../../../GeneralTopology/StoneanLimitsNamespacedExtremallyDisconnectedPreimage.lean/declarations/extremallydisconnected-preimage.md) | 36 | `result-track:558397676618d62a603f59ad1a708586fbc602f94439b782e075e507adec1417` |
-| 3 | `lemma` | [extremallyDisconnected_pullback](../../../../GeneralTopology/StoneanLimitsNamespacedExtremallyDisconnectedPreimage.lean/declarations/extremallydisconnected-pullback.md) | 46 | `result-track:12f3b5ee2512ab17020de747c2b303ae637c99773cc25717a9a2a59ca019bde9` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/StoneanLimitsNamespacedExtremallyDisconnectedPreimage.lean/declarations/instance-source-edition-2.md) | 55 | `declaration-track:88c7e50d3532790c03434fb753f97e1dac2e89c28444e5f705439bc2037fd011` |
-| 5 | `example` | [(anonymous)](../../../../GeneralTopology/StoneanLimitsNamespacedExtremallyDisconnectedPreimage.lean/declarations/example-source-edition-3.md) | 60 | `declaration-track:e90913ad748f2a62882eeb937b628eac7649f8445b78a6fa9ff663cda3179b59` |
-| 6 | `example` | [(anonymous)](../../../../GeneralTopology/StoneanLimitsNamespacedExtremallyDisconnectedPreimage.lean/declarations/example-source-edition-2.md) | 62 | `declaration-track:b347db561beddeadfb915e2dfa81cad63d6608ea50f8b82082891abc0f7e93ee` |
-| 7 | `example` | [(anonymous)](../../../../GeneralTopology/StoneanLimitsNamespacedExtremallyDisconnectedPreimage.lean/declarations/example.md) | 64 | `declaration-track:30ddcc8ee6088a64148d88bef47700a0d5babc6bb78b67e65cc1dd444e6b3df2` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanLimitsNamespacedExtremallyDisconnectedPreimage.lean/declarations/instance.md) | 30 | `declaration-track:3c7e40e1feabdf78a9f3c79a8da9d1bfa8313dfc6794ac3260168e722fd6a3e9` |
+| 2 | `lemma` | [extremallyDisconnected_preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanLimitsNamespacedExtremallyDisconnectedPreimage.lean/declarations/extremallydisconnected-preimage.md) | 36 | `result-track:558397676618d62a603f59ad1a708586fbc602f94439b782e075e507adec1417` |
+| 3 | `lemma` | [extremallyDisconnected_pullback](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanLimitsNamespacedExtremallyDisconnectedPreimage.lean/declarations/extremallydisconnected-pullback.md) | 46 | `result-track:12f3b5ee2512ab17020de747c2b303ae637c99773cc25717a9a2a59ca019bde9` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanLimitsNamespacedExtremallyDisconnectedPreimage.lean/declarations/instance-source-edition-2.md) | 55 | `declaration-track:88c7e50d3532790c03434fb753f97e1dac2e89c28444e5f705439bc2037fd011` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanLimitsNamespacedExtremallyDisconnectedPreimage.lean/declarations/example-source-edition-3.md) | 60 | `declaration-track:e90913ad748f2a62882eeb937b628eac7649f8445b78a6fa9ff663cda3179b59` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanLimitsNamespacedExtremallyDisconnectedPreimage.lean/declarations/example-source-edition-2.md) | 62 | `declaration-track:b347db561beddeadfb915e2dfa81cad63d6608ea50f8b82082891abc0f7e93ee` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanLimitsNamespacedExtremallyDisconnectedPreimage.lean/declarations/example.md) | 64 | `declaration-track:30ddcc8ee6088a64148d88bef47700a0d5babc6bb78b67e65cc1dd444e6b3df2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [DualNumber](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/dualnumber.md) | 43 | `declaration-track:423c17a4222d6cff74de340928f1462afb7f4ba896165651303db7cdd065327a` |
-| 2 | `def` | [DualNumber.eps](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/dualnumber-eps.md) | 48 | `declaration-track:fde5d17ce8569fc883366319c4e176338a215bf145f846978ae931e364a6331d` |
-| 3 | `theorem` | [fst_eps](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/fst-eps.md) | 65 | `result-track:06eea3dea218523f4ff72fe757ffec1837052f370eb39f4e3a71dcc43473ab98` |
-| 4 | `theorem` | [snd_eps](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/snd-eps.md) | 70 | `result-track:d972265c06448318f8844a3e282ac50b1d9faf7bccd8ffe4c2d4b56423607895` |
-| 5 | `theorem` | [snd_mul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/snd-mul.md) | 76 | `result-track:746af4ecad060878644da55d3717446f4a7c92d7902be49edfe6318c4274347c` |
-| 6 | `theorem` | [eps_mul_eps](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/eps-mul-eps.md) | 81 | `result-track:07d75b4ca52fbe74616cce8a92db49e617e4aba7a11d0f67cb5571931bf569c7` |
-| 7 | `theorem` | [inr_eq_smul_eps](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/inr-eq-smul-eps.md) | 86 | `result-track:fd12e50e805311b313431cf2739b46e201ee375f9f283d014bc9195a8af5fb88` |
-| 8 | `theorem` | [algHom_ext](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/alghom-ext.md) | 92 | `result-track:0e258e9075793ef04412eff684dde0a1de09d3c52af774e0f98702785729b357` |
-| 9 | `def` | [lift](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/lift.md) | 104 | `declaration-track:8ca5c2bd83529a23bf1853006d750d9fc2e9538a4da28365c24466b08af29ecc` |
-| 10 | `theorem` | [lift_apply_eps](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/lift-apply-eps.md) | 116 | `result-track:043b7e2aec3fe4e42ad70aa5a55b70432450f75a18fe2c5939ce7fee992c6cba` |
-| 11 | `theorem` | [lift_eps](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/lift-eps.md) | 122 | `result-track:75a1636b19ec755d32a3830f5a30fe5b93b1188b21bf20178ae540707fe306cc` |
+| 1 | `abbrev` | [DualNumber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/dualnumber.md) | 43 | `declaration-track:423c17a4222d6cff74de340928f1462afb7f4ba896165651303db7cdd065327a` |
+| 2 | `def` | [DualNumber.eps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/dualnumber-eps.md) | 48 | `declaration-track:fde5d17ce8569fc883366319c4e176338a215bf145f846978ae931e364a6331d` |
+| 3 | `theorem` | [fst_eps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/fst-eps.md) | 65 | `result-track:06eea3dea218523f4ff72fe757ffec1837052f370eb39f4e3a71dcc43473ab98` |
+| 4 | `theorem` | [snd_eps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/snd-eps.md) | 70 | `result-track:d972265c06448318f8844a3e282ac50b1d9faf7bccd8ffe4c2d4b56423607895` |
+| 5 | `theorem` | [snd_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/snd-mul.md) | 76 | `result-track:746af4ecad060878644da55d3717446f4a7c92d7902be49edfe6318c4274347c` |
+| 6 | `theorem` | [eps_mul_eps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/eps-mul-eps.md) | 81 | `result-track:07d75b4ca52fbe74616cce8a92db49e617e4aba7a11d0f67cb5571931bf569c7` |
+| 7 | `theorem` | [inr_eq_smul_eps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/inr-eq-smul-eps.md) | 86 | `result-track:fd12e50e805311b313431cf2739b46e201ee375f9f283d014bc9195a8af5fb88` |
+| 8 | `theorem` | [algHom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/alghom-ext.md) | 92 | `result-track:0e258e9075793ef04412eff684dde0a1de09d3c52af774e0f98702785729b357` |
+| 9 | `def` | [lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/lift.md) | 104 | `declaration-track:8ca5c2bd83529a23bf1853006d750d9fc2e9538a4da28365c24466b08af29ecc` |
+| 10 | `theorem` | [lift_apply_eps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/lift-apply-eps.md) | 116 | `result-track:043b7e2aec3fe4e42ad70aa5a55b70432450f75a18fe2c5939ce7fee992c6cba` |
+| 11 | `theorem` | [lift_eps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DualNumberAlgHomExt.lean/declarations/lift-eps.md) | 122 | `result-track:75a1636b19ec755d32a3830f5a30fe5b93b1188b21bf20178ae540707fe306cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

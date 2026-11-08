@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChallengeBoom.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChallengeBoom.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChallengeBoom.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChallengeBoom.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [boom](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChallengeBoom.lean/declarations/boom.md) | 1 | `result-track:3cd1ee7d7386604ac22a859e50b3605092326f8589e714e58661f595527e6ab0` |
+| 1 | `theorem` | [boom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChallengeBoom.lean/declarations/boom.md) | 1 | `result-track:3cd1ee7d7386604ac22a859e50b3605092326f8589e714e58661f595527e6ab0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/LocalCZeroGraphAtASimpleInteriorZeroEdition2.lean/index.md) · [Full source](../../../../RealFunctions/LocalCZeroGraphAtASimpleInteriorZeroEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LocalCZeroGraphAtASimpleInteriorZeroEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LocalCZeroGraphAtASimpleInteriorZeroEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [spatialSlope](../../../../RealFunctions/LocalCZeroGraphAtASimpleInteriorZeroEdition2.lean/declarations/spatialslope.md) | 19 | `declaration-track:16456283b49211e1bbeb938d19e9945c1b5e5d8ae96ad2771dc85b20dbcf2034` |
-| 2 | `theorem` | [scalar_map_invertible_of_nonzero](../../../../RealFunctions/LocalCZeroGraphAtASimpleInteriorZeroEdition2.lean/declarations/scalar-map-invertible-of-nonzero.md) | 22 | `result-track:c183374e239d69f607e5548d1436e17805149c38082902755d15c62c3b351b50` |
-| 3 | `theorem` | [spatial_map_invertible](../../../../RealFunctions/LocalCZeroGraphAtASimpleInteriorZeroEdition2.lean/declarations/spatial-map-invertible.md) | 32 | `result-track:1f4a37bb6c52ba9f732bb9353a1515f913ac062175b1e64de6333b42488524bf` |
-| 4 | `theorem` | [spatial_slope_eq_partial_deriv](../../../../RealFunctions/LocalCZeroGraphAtASimpleInteriorZeroEdition2.lean/declarations/spatial-slope-eq-partial-deriv.md) | 37 | `result-track:8ea7c22caf7b7f95e2b565681ec5d581d667b5bb71886fa054ede9fc87048b8e` |
-| 5 | `theorem` | [simple_zero_local_c1_graph](../../../../RealFunctions/LocalCZeroGraphAtASimpleInteriorZeroEdition2.lean/declarations/simple-zero-local-c1-graph.md) | 44 | `result-track:390dbbe49d21eae20f983a1ccdb9e3cebb97ff1c18611b4a32ea10c21953ac49` |
-| 6 | `theorem` | [simple_zero_c1_chamber](../../../../RealFunctions/LocalCZeroGraphAtASimpleInteriorZeroEdition2.lean/declarations/simple-zero-c1-chamber.md) | 57 | `result-track:728ec4ac43e30553c42556e9362cdf5117e7d344e4d7308202b082b54fa4fa42` |
+| 1 | `def` | [spatialSlope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LocalCZeroGraphAtASimpleInteriorZeroEdition2.lean/declarations/spatialslope.md) | 19 | `declaration-track:16456283b49211e1bbeb938d19e9945c1b5e5d8ae96ad2771dc85b20dbcf2034` |
+| 2 | `theorem` | [scalar_map_invertible_of_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LocalCZeroGraphAtASimpleInteriorZeroEdition2.lean/declarations/scalar-map-invertible-of-nonzero.md) | 22 | `result-track:c183374e239d69f607e5548d1436e17805149c38082902755d15c62c3b351b50` |
+| 3 | `theorem` | [spatial_map_invertible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LocalCZeroGraphAtASimpleInteriorZeroEdition2.lean/declarations/spatial-map-invertible.md) | 32 | `result-track:1f4a37bb6c52ba9f732bb9353a1515f913ac062175b1e64de6333b42488524bf` |
+| 4 | `theorem` | [spatial_slope_eq_partial_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LocalCZeroGraphAtASimpleInteriorZeroEdition2.lean/declarations/spatial-slope-eq-partial-deriv.md) | 37 | `result-track:8ea7c22caf7b7f95e2b565681ec5d581d667b5bb71886fa054ede9fc87048b8e` |
+| 5 | `theorem` | [simple_zero_local_c1_graph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LocalCZeroGraphAtASimpleInteriorZeroEdition2.lean/declarations/simple-zero-local-c1-graph.md) | 44 | `result-track:390dbbe49d21eae20f983a1ccdb9e3cebb97ff1c18611b4a32ea10c21953ac49` |
+| 6 | `theorem` | [simple_zero_c1_chamber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LocalCZeroGraphAtASimpleInteriorZeroEdition2.lean/declarations/simple-zero-c1-chamber.md) | 57 | `result-track:728ec4ac43e30553c42556e9362cdf5117e7d344e4d7308202b082b54fa4fa42` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

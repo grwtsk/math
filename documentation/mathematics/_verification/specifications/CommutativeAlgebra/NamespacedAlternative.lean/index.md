@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/NamespacedAlternative.lean/index.md) · [Full source](../../../../CommutativeAlgebra/NamespacedAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NamespacedAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NamespacedAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceCorrelation_seam_neg](../../../../CommutativeAlgebra/NamespacedAlternative.lean/declarations/sourcecorrelation-seam-neg.md) | 34 | `result-track:3684c58cb5390488aa3209d5ee6c6312d7cdc87e9a3ae5641d7f3331d42b0fe8` |
-| 2 | `theorem` | [not_eventually_sourceCorrelation_nonnegative](../../../../CommutativeAlgebra/NamespacedAlternative.lean/declarations/not-eventually-sourcecorrelation-nonnegative.md) | 69 | `result-track:95c072c64297250d347855a31ba3f33a5aa0a523b014eb4908943f4ba1334891` |
+| 1 | `theorem` | [sourceCorrelation_seam_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NamespacedAlternative.lean/declarations/sourcecorrelation-seam-neg.md) | 34 | `result-track:3684c58cb5390488aa3209d5ee6c6312d7cdc87e9a3ae5641d7f3331d42b0fe8` |
+| 2 | `theorem` | [not_eventually_sourceCorrelation_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NamespacedAlternative.lean/declarations/not-eventually-sourcecorrelation-nonnegative.md) | 69 | `result-track:95c072c64297250d347855a31ba3f33a5aa0a523b014eb4908943f4ba1334891` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

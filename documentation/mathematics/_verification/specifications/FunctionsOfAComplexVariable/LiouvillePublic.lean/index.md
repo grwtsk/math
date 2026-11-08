@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/LiouvillePublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/LiouvillePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LiouvillePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LiouvillePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [norm_iteratedDeriv_le_of_forall_mem_sphere_norm_le](../../../../FunctionsOfAComplexVariable/LiouvillePublic.lean/declarations/norm-iteratedderiv-le-of-forall-mem-sphere-norm-le.md) | 44 | `result-track:cd9302f943ee3e3082dbee44a50a0a05b7ab074177c6e78404aa6bb06baa3522` |
-| 2 | `theorem` | [norm_deriv_le_aux](../../../../FunctionsOfAComplexVariable/LiouvillePublic.lean/declarations/norm-deriv-le-aux.md) | 66 | `result-track:ebbe8432ca24177d1965f6d11a38ab81ca5fdcb0eca6ed478bd4183228faea2b` |
-| 3 | `theorem` | [norm_deriv_le_of_forall_mem_sphere_norm_le](../../../../FunctionsOfAComplexVariable/LiouvillePublic.lean/declarations/norm-deriv-le-of-forall-mem-sphere-norm-le.md) | 76 | `result-track:fcc4dd83fa27d84d2b76dc1999fcc95b80f1ff61a938ae3731c4d8a0cfb17ab6` |
-| 4 | `theorem` | [liouville_theorem_aux](../../../../FunctionsOfAComplexVariable/LiouvillePublic.lean/declarations/liouville-theorem-aux.md) | 92 | `result-track:c2cbde5a10c3262412d4c58c14e073756074e47696c79f6d46bda77e1b62a128` |
-| 5 | `theorem` | [apply_eq_apply_of_bounded](../../../../FunctionsOfAComplexVariable/LiouvillePublic.lean/declarations/apply-eq-apply-of-bounded.md) | 114 | `result-track:4d13a0be072273e30c413b50b553136b6496e599ed4e8ef9988c25090abcbc20` |
-| 6 | `theorem` | [exists_const_forall_eq_of_bounded](../../../../FunctionsOfAComplexVariable/LiouvillePublic.lean/declarations/exists-const-forall-eq-of-bounded.md) | 123 | `result-track:5d31d78fa37c1202465f3a32d555bf66c2c2985dbc04386bbbff2babe396a811` |
-| 7 | `theorem` | [exists_eq_const_of_bounded](../../../../FunctionsOfAComplexVariable/LiouvillePublic.lean/declarations/exists-eq-const-of-bounded.md) | 128 | `result-track:746a764ac256cf1cb7a31cacd5ceb25cc9fcac5ce75ed1bff81da752a1a3cbdf` |
-| 8 | `theorem` | [eq_const_of_tendsto_cocompact](../../../../FunctionsOfAComplexVariable/LiouvillePublic.lean/declarations/eq-const-of-tendsto-cocompact.md) | 135 | `result-track:9b3699e70dbd29cb0fd40b8c0506e6108563d45402f6c5b77c9fe791f5c644a3` |
-| 9 | `theorem` | [apply_eq_of_tendsto_cocompact](../../../../FunctionsOfAComplexVariable/LiouvillePublic.lean/declarations/apply-eq-of-tendsto-cocompact.md) | 150 | `result-track:2aaf29e7594666b07ac9d2d4407fa9b551e7c3c1186acacc63b6591050e6bc3a` |
+| 1 | `theorem` | [norm_iteratedDeriv_le_of_forall_mem_sphere_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LiouvillePublic.lean/declarations/norm-iteratedderiv-le-of-forall-mem-sphere-norm-le.md) | 44 | `result-track:cd9302f943ee3e3082dbee44a50a0a05b7ab074177c6e78404aa6bb06baa3522` |
+| 2 | `theorem` | [norm_deriv_le_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LiouvillePublic.lean/declarations/norm-deriv-le-aux.md) | 66 | `result-track:ebbe8432ca24177d1965f6d11a38ab81ca5fdcb0eca6ed478bd4183228faea2b` |
+| 3 | `theorem` | [norm_deriv_le_of_forall_mem_sphere_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LiouvillePublic.lean/declarations/norm-deriv-le-of-forall-mem-sphere-norm-le.md) | 76 | `result-track:fcc4dd83fa27d84d2b76dc1999fcc95b80f1ff61a938ae3731c4d8a0cfb17ab6` |
+| 4 | `theorem` | [liouville_theorem_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LiouvillePublic.lean/declarations/liouville-theorem-aux.md) | 92 | `result-track:c2cbde5a10c3262412d4c58c14e073756074e47696c79f6d46bda77e1b62a128` |
+| 5 | `theorem` | [apply_eq_apply_of_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LiouvillePublic.lean/declarations/apply-eq-apply-of-bounded.md) | 114 | `result-track:4d13a0be072273e30c413b50b553136b6496e599ed4e8ef9988c25090abcbc20` |
+| 6 | `theorem` | [exists_const_forall_eq_of_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LiouvillePublic.lean/declarations/exists-const-forall-eq-of-bounded.md) | 123 | `result-track:5d31d78fa37c1202465f3a32d555bf66c2c2985dbc04386bbbff2babe396a811` |
+| 7 | `theorem` | [exists_eq_const_of_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LiouvillePublic.lean/declarations/exists-eq-const-of-bounded.md) | 128 | `result-track:746a764ac256cf1cb7a31cacd5ceb25cc9fcac5ce75ed1bff81da752a1a3cbdf` |
+| 8 | `theorem` | [eq_const_of_tendsto_cocompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LiouvillePublic.lean/declarations/eq-const-of-tendsto-cocompact.md) | 135 | `result-track:9b3699e70dbd29cb0fd40b8c0506e6108563d45402f6c5b77c9fe791f5c644a3` |
+| 9 | `theorem` | [apply_eq_of_tendsto_cocompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LiouvillePublic.lean/declarations/apply-eq-of-tendsto-cocompact.md) | 150 | `result-track:2aaf29e7594666b07ac9d2d4407fa9b551e7c3c1186acacc63b6591050e6bc3a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

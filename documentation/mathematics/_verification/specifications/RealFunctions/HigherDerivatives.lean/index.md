@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/HigherDerivatives.lean/index.md) · [Full source](../../../../RealFunctions/HigherDerivatives.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HigherDerivatives.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HigherDerivatives.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasDerivAt_thetaGaussianTerm](../../../../RealFunctions/HigherDerivatives.lean/declarations/hasderivat-thetagaussianterm.md) | 8 | `result-track:643ae6bc81200a80ea9f42a954ec5df7973e13852c698bf0e30eef8635149291` |
-| 2 | `theorem` | [hasDerivAt_thetaGaussianSum](../../../../RealFunctions/HigherDerivatives.lean/declarations/hasderivat-thetagaussiansum.md) | 22 | `result-track:7ae2441175a0c1c82877a6fb33f857161e7128e42d17993cd9f57601f52c0692` |
-| 3 | `theorem` | [thetaPhiRawD2_eq_gaussians](../../../../RealFunctions/HigherDerivatives.lean/declarations/thetaphirawd2-eq-gaussians.md) | 48 | `result-track:e121d7394686f401b8114f9585aa09af9dc8bff616573da0f3303d5699d94f85` |
-| 4 | `def` | [thetaPhiRawD3](../../../../RealFunctions/HigherDerivatives.lean/declarations/thetaphirawd3.md) | 70 | `declaration-track:1cb8a0a5bec55eda9428f80af87d493ff31f542395615cb00cb1ae8ff160ec4e` |
-| 5 | `def` | [thetaPhiRawD4](../../../../RealFunctions/HigherDerivatives.lean/declarations/thetaphirawd4.md) | 78 | `declaration-track:7a2dfbed2ed6779e687d5dd85a15e98019f3ca03dfd7d3f25f258c5c52747aa6` |
-| 6 | `theorem` | [hasDerivAt_thetaPhiRawD2](../../../../RealFunctions/HigherDerivatives.lean/declarations/hasderivat-thetaphirawd2.md) | 86 | `result-track:4f007eaa26a53bfc3d6f78b11673cab025b63058f04db524b85731e9b5872f75` |
-| 7 | `theorem` | [hasDerivAt_thetaPhiRawD3](../../../../RealFunctions/HigherDerivatives.lean/declarations/hasderivat-thetaphirawd3.md) | 101 | `result-track:3a473e9eef40d541f81de5d54c17e7decb4dde363a7d9c72b52885b9d805d66d` |
-| 8 | `theorem` | [deriv_deriv_thetaPhi_eq_raw](../../../../RealFunctions/HigherDerivatives.lean/declarations/deriv-deriv-thetaphi-eq-raw.md) | 112 | `result-track:1b522262e21a4a868fd36160cfa179ba4ad7063733e5eb2c678f02950c0b873c` |
-| 9 | `theorem` | [hasDerivAt_deriv_deriv_thetaPhi](../../../../RealFunctions/HigherDerivatives.lean/declarations/hasderivat-deriv-deriv-thetaphi.md) | 117 | `result-track:7355239170e2a931d7b653a42ee94203b1a95dc5b9a7609ec9adec2526afd219` |
-| 10 | `theorem` | [hasDerivAt_deriv_deriv_deriv_thetaPhi](../../../../RealFunctions/HigherDerivatives.lean/declarations/hasderivat-deriv-deriv-deriv-thetaphi.md) | 122 | `result-track:8222a5438afdd294481e3990d93a69034a83a9a10a0e3a3a89ff257527ec82cb` |
-| 11 | `theorem` | [thetaGaussianSum_poly_tendsto_atTop](../../../../RealFunctions/HigherDerivatives.lean/declarations/thetagaussiansum-poly-tendsto-attop.md) | 129 | `result-track:99102eb9b08bd668896c60e2877ecfe56f276eb4d564f627ca56b9fd74ab767a` |
-| 12 | `theorem` | [deriv_thetaPhi_poly_tendsto_atTop](../../../../RealFunctions/HigherDerivatives.lean/declarations/deriv-thetaphi-poly-tendsto-attop.md) | 140 | `result-track:3ebc68afbe36117f9b7c984cb604d1e0af5f8cc03a3d371659a910eaf06d69af` |
-| 13 | `theorem` | [deriv_deriv_thetaPhi_poly_integrableOn](../../../../RealFunctions/HigherDerivatives.lean/declarations/deriv-deriv-thetaphi-poly-integrableon.md) | 151 | `result-track:d44b52f480f45034367fb0e651f22ca6f6c83be1298e1aa82244ad900b8767a1` |
+| 1 | `theorem` | [hasDerivAt_thetaGaussianTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HigherDerivatives.lean/declarations/hasderivat-thetagaussianterm.md) | 8 | `result-track:643ae6bc81200a80ea9f42a954ec5df7973e13852c698bf0e30eef8635149291` |
+| 2 | `theorem` | [hasDerivAt_thetaGaussianSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HigherDerivatives.lean/declarations/hasderivat-thetagaussiansum.md) | 22 | `result-track:7ae2441175a0c1c82877a6fb33f857161e7128e42d17993cd9f57601f52c0692` |
+| 3 | `theorem` | [thetaPhiRawD2_eq_gaussians](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HigherDerivatives.lean/declarations/thetaphirawd2-eq-gaussians.md) | 48 | `result-track:e121d7394686f401b8114f9585aa09af9dc8bff616573da0f3303d5699d94f85` |
+| 4 | `def` | [thetaPhiRawD3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HigherDerivatives.lean/declarations/thetaphirawd3.md) | 70 | `declaration-track:1cb8a0a5bec55eda9428f80af87d493ff31f542395615cb00cb1ae8ff160ec4e` |
+| 5 | `def` | [thetaPhiRawD4](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HigherDerivatives.lean/declarations/thetaphirawd4.md) | 78 | `declaration-track:7a2dfbed2ed6779e687d5dd85a15e98019f3ca03dfd7d3f25f258c5c52747aa6` |
+| 6 | `theorem` | [hasDerivAt_thetaPhiRawD2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HigherDerivatives.lean/declarations/hasderivat-thetaphirawd2.md) | 86 | `result-track:4f007eaa26a53bfc3d6f78b11673cab025b63058f04db524b85731e9b5872f75` |
+| 7 | `theorem` | [hasDerivAt_thetaPhiRawD3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HigherDerivatives.lean/declarations/hasderivat-thetaphirawd3.md) | 101 | `result-track:3a473e9eef40d541f81de5d54c17e7decb4dde363a7d9c72b52885b9d805d66d` |
+| 8 | `theorem` | [deriv_deriv_thetaPhi_eq_raw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HigherDerivatives.lean/declarations/deriv-deriv-thetaphi-eq-raw.md) | 112 | `result-track:1b522262e21a4a868fd36160cfa179ba4ad7063733e5eb2c678f02950c0b873c` |
+| 9 | `theorem` | [hasDerivAt_deriv_deriv_thetaPhi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HigherDerivatives.lean/declarations/hasderivat-deriv-deriv-thetaphi.md) | 117 | `result-track:7355239170e2a931d7b653a42ee94203b1a95dc5b9a7609ec9adec2526afd219` |
+| 10 | `theorem` | [hasDerivAt_deriv_deriv_deriv_thetaPhi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HigherDerivatives.lean/declarations/hasderivat-deriv-deriv-deriv-thetaphi.md) | 122 | `result-track:8222a5438afdd294481e3990d93a69034a83a9a10a0e3a3a89ff257527ec82cb` |
+| 11 | `theorem` | [thetaGaussianSum_poly_tendsto_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HigherDerivatives.lean/declarations/thetagaussiansum-poly-tendsto-attop.md) | 129 | `result-track:99102eb9b08bd668896c60e2877ecfe56f276eb4d564f627ca56b9fd74ab767a` |
+| 12 | `theorem` | [deriv_thetaPhi_poly_tendsto_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HigherDerivatives.lean/declarations/deriv-thetaphi-poly-tendsto-attop.md) | 140 | `result-track:3ebc68afbe36117f9b7c984cb604d1e0af5f8cc03a3d371659a910eaf06d69af` |
+| 13 | `theorem` | [deriv_deriv_thetaPhi_poly_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HigherDerivatives.lean/declarations/deriv-deriv-thetaphi-poly-integrableon.md) | 151 | `result-track:d44b52f480f45034367fb0e651f22ca6f6c83be1298e1aa82244ad900b8767a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

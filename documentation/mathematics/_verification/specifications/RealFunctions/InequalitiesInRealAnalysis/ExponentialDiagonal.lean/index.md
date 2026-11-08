@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../RealFunctions/InequalitiesInRealAnalysis/ExponentialDiagonal.lean/index.md) · [Full source](../../../../../RealFunctions/InequalitiesInRealAnalysis/ExponentialDiagonal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ExponentialDiagonal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ExponentialDiagonal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sharp_diagonal_le_quadratic](../../../../../RealFunctions/InequalitiesInRealAnalysis/ExponentialDiagonal.lean/declarations/sharp-diagonal-le-quadratic.md) | 10 | `result-track:0c01c96c4368c85f29e4002eebf0d2ab7f7d0349f45126d4328dd66ba50719d5` |
+| 1 | `theorem` | [sharp_diagonal_le_quadratic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ExponentialDiagonal.lean/declarations/sharp-diagonal-le-quadratic.md) | 10 | `result-track:0c01c96c4368c85f29e4002eebf0d2ab7f7d0349f45126d4328dd66ba50719d5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

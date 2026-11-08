@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ObligationNamespacedEdition2.lean/index.md) · [Full source](../../../../GeneralTopology/ObligationNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ObligationNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ObligationNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ObligationStatus](../../../../GeneralTopology/ObligationNamespacedEdition2.lean/declarations/obligationstatus.md) | 22 | `declaration-track:de083320fdd18337a3f41444f46c60110c6afb9ef05ee8076ed038807f3b3896` |
-| 2 | `structure` | [ObligationRecord](../../../../GeneralTopology/ObligationNamespacedEdition2.lean/declarations/obligationrecord.md) | 31 | `declaration-track:9e04ada8de14037667066426e1a941727d0c96143456a41509c46ba4d1a30b03` |
-| 3 | `theorem` | [ObligationRecord.discharged_has_artifact](../../../../GeneralTopology/ObligationNamespacedEdition2.lean/declarations/obligationrecord-discharged-has-artifact.md) | 44 | `result-track:9f5305b62bfb926751299ccde113eba1e9fbd3c056e1bbaf40c7b50e62e683c7` |
-| 4 | `def` | [ObligationRecord.IsOpen](../../../../GeneralTopology/ObligationNamespacedEdition2.lean/declarations/obligationrecord-isopen.md) | 51 | `declaration-track:648ed69399fcf526d62e648fffd2d1d4c09f50b507850890f3d38f7c0946953d` |
+| 1 | `inductive` | [ObligationStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ObligationNamespacedEdition2.lean/declarations/obligationstatus.md) | 22 | `declaration-track:de083320fdd18337a3f41444f46c60110c6afb9ef05ee8076ed038807f3b3896` |
+| 2 | `structure` | [ObligationRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ObligationNamespacedEdition2.lean/declarations/obligationrecord.md) | 31 | `declaration-track:9e04ada8de14037667066426e1a941727d0c96143456a41509c46ba4d1a30b03` |
+| 3 | `theorem` | [ObligationRecord.discharged_has_artifact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ObligationNamespacedEdition2.lean/declarations/obligationrecord-discharged-has-artifact.md) | 44 | `result-track:9f5305b62bfb926751299ccde113eba1e9fbd3c056e1bbaf40c7b50e62e683c7` |
+| 4 | `def` | [ObligationRecord.IsOpen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ObligationNamespacedEdition2.lean/declarations/obligationrecord-isopen.md) | 51 | `declaration-track:648ed69399fcf526d62e648fffd2d1d4c09f50b507850890f3d38f7c0946953d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

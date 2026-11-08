@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SourceSecondProfileContinuityNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/SourceSecondProfileContinuityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceSecondProfileContinuityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceSecondProfileContinuityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualSecondProfile_continuousAt_of_ne_endpoints](../../../../GeneralTopology/SourceSecondProfileContinuityNamespaced.lean/declarations/actualsecondprofile-continuousat-of-ne-endpoints.md) | 29 | `result-track:0eac192e518e985b22e859d5286ab0f65f65b87fd6038e73a5496b0a92634550` |
-| 2 | `theorem` | [actualSecondProfile_bounded](../../../../GeneralTopology/SourceSecondProfileContinuityNamespaced.lean/declarations/actualsecondprofile-bounded.md) | 36 | `result-track:7f50bef66077cf51c08c60f547bd2ef56736d1d88d4d61b70d5ed98e9d84158e` |
-| 3 | `theorem` | [actualSecondProfileCorrelation_continuous](../../../../GeneralTopology/SourceSecondProfileContinuityNamespaced.lean/declarations/actualsecondprofilecorrelation-continuous.md) | 52 | `result-track:c832a9b0fb1054dd08f49a8fe0e31712fe300f46c790debc1405c2735cba8c02` |
+| 1 | `theorem` | [actualSecondProfile_continuousAt_of_ne_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceSecondProfileContinuityNamespaced.lean/declarations/actualsecondprofile-continuousat-of-ne-endpoints.md) | 29 | `result-track:0eac192e518e985b22e859d5286ab0f65f65b87fd6038e73a5496b0a92634550` |
+| 2 | `theorem` | [actualSecondProfile_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceSecondProfileContinuityNamespaced.lean/declarations/actualsecondprofile-bounded.md) | 36 | `result-track:7f50bef66077cf51c08c60f547bd2ef56736d1d88d4d61b70d5ed98e9d84158e` |
+| 3 | `theorem` | [actualSecondProfileCorrelation_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceSecondProfileContinuityNamespaced.lean/declarations/actualsecondprofilecorrelation-continuous.md) | 52 | `result-track:c832a9b0fb1054dd08f49a8fe0e31712fe300f46c790debc1405c2735cba8c02` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

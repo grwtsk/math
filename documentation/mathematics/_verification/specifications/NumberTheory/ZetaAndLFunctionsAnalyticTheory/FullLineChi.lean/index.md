@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChi.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,11 +62,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isNontrivialZeroL_of_mem_closedBall](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChi.lean/declarations/isnontrivialzerol-of-mem-closedball.md) | 35 | `result-track:65e4e783f50c6110964d180327ffabddc7a6ac37d514cb122599abe14437de79` |
-| 2 | `lemma` | [sum_mult_six_windows_L](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChi.lean/declarations/sum-mult-six-windows-l.md) | 47 | `result-track:ee002875b4243eb0f95fd15bd426698fc974f9b1af71811c603b7598c834fb73` |
-| 3 | `lemma` | [card_le_sum_mult_L](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChi.lean/declarations/card-le-sum-mult-l.md) | 93 | `result-track:df3717986601e57584c02061a60253844a4d78ff2ac6ae3053d23c59742810cc` |
-| 4 | `theorem` | [good_heights_chi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChi.lean/declarations/good-heights-chi.md) | 103 | `result-track:75de0f8f693997a713735183ca65f930d7e05bddc5bac077bbaa0ad680ca53d5` |
-| 5 | `theorem` | [EF_zero_sum_summable_chi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChi.lean/declarations/ef-zero-sum-summable-chi.md) | 289 | `result-track:e03f77e4bc12211ac09fdafc49f56000891370a4f82be71324fb63d5d7638984` |
+| 1 | `lemma` | [isNontrivialZeroL_of_mem_closedBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChi.lean/declarations/isnontrivialzerol-of-mem-closedball.md) | 35 | `result-track:65e4e783f50c6110964d180327ffabddc7a6ac37d514cb122599abe14437de79` |
+| 2 | `lemma` | [sum_mult_six_windows_L](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChi.lean/declarations/sum-mult-six-windows-l.md) | 47 | `result-track:ee002875b4243eb0f95fd15bd426698fc974f9b1af71811c603b7598c834fb73` |
+| 3 | `lemma` | [card_le_sum_mult_L](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChi.lean/declarations/card-le-sum-mult-l.md) | 93 | `result-track:df3717986601e57584c02061a60253844a4d78ff2ac6ae3053d23c59742810cc` |
+| 4 | `theorem` | [good_heights_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChi.lean/declarations/good-heights-chi.md) | 103 | `result-track:75de0f8f693997a713735183ca65f930d7e05bddc5bac077bbaa0ad680ca53d5` |
+| 5 | `theorem` | [EF_zero_sum_summable_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FullLineChi.lean/declarations/ef-zero-sum-summable-chi.md) | 289 | `result-track:e03f77e4bc12211ac09fdafc49f56000891370a4f82be71324fb63d5d7638984` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

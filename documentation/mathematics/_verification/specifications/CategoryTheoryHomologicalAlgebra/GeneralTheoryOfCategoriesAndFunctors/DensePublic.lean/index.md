@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DensePublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DensePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DensePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DensePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isCardinalFilteredGenerator_isCardinalPresentable](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DensePublic.lean/declarations/iscardinalfilteredgenerator-iscardinalpresentable.md) | 34 | `result-track:907ce62a07df282e13b40bd9f6f536bef8098875eb3b83ca52baabc948418f85` |
-| 2 | `instance` | [final_toCostructuredArrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DensePublic.lean/declarations/final-tocostructuredarrow.md) | 44 | `declaration-track:ab897f009a983d7e867a8b8a17347405589214cc9634eb0f976ca3c42d0ee666` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DensePublic.lean/declarations/instance-source-edition-5.md) | 59 | `declaration-track:c068bdcbe74b7f66f5dad933e03e95d865963000b893268e7490d675f717d42f` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DensePublic.lean/declarations/instance.md) | 67 | `declaration-track:3e41fa305bcd59bcd06faa168bbe4291d841d1c8e997e137c32432e412ed2bdd` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DensePublic.lean/declarations/instance-source-edition-2.md) | 77 | `declaration-track:59a3345d17d2a2d6f0162de70c6530d5ee3bb8e6b71c08ba0d740a6fdbb04ad4` |
-| 6 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DensePublic.lean/declarations/instance-source-edition-4.md) | 83 | `declaration-track:bcb7391442dec44d9c37edc2bffe33585db8e428cc24aeb6fbad60914305ea43` |
-| 7 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DensePublic.lean/declarations/instance-source-edition-3.md) | 88 | `declaration-track:986bff15bbbcae826554113d2390b4636454d361fc2a41e8dd729f782028e94b` |
+| 1 | `lemma` | [isCardinalFilteredGenerator_isCardinalPresentable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DensePublic.lean/declarations/iscardinalfilteredgenerator-iscardinalpresentable.md) | 34 | `result-track:907ce62a07df282e13b40bd9f6f536bef8098875eb3b83ca52baabc948418f85` |
+| 2 | `instance` | [final_toCostructuredArrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DensePublic.lean/declarations/final-tocostructuredarrow.md) | 44 | `declaration-track:ab897f009a983d7e867a8b8a17347405589214cc9634eb0f976ca3c42d0ee666` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DensePublic.lean/declarations/instance-source-edition-5.md) | 59 | `declaration-track:c068bdcbe74b7f66f5dad933e03e95d865963000b893268e7490d675f717d42f` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DensePublic.lean/declarations/instance.md) | 67 | `declaration-track:3e41fa305bcd59bcd06faa168bbe4291d841d1c8e997e137c32432e412ed2bdd` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DensePublic.lean/declarations/instance-source-edition-2.md) | 77 | `declaration-track:59a3345d17d2a2d6f0162de70c6530d5ee3bb8e6b71c08ba0d740a6fdbb04ad4` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DensePublic.lean/declarations/instance-source-edition-4.md) | 83 | `declaration-track:bcb7391442dec44d9c37edc2bffe33585db8e428cc24aeb6fbad60914305ea43` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DensePublic.lean/declarations/instance-source-edition-3.md) | 88 | `declaration-track:986bff15bbbcae826554113d2390b4636454d361fc2a41e8dd729f782028e94b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

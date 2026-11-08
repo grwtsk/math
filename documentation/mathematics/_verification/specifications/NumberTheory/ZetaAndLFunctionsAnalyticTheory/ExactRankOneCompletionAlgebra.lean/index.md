@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRankOneCompletionAlgebra.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRankOneCompletionAlgebra.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRankOneCompletionAlgebra.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRankOneCompletionAlgebra.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [strict_rank_completion](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRankOneCompletionAlgebra.lean/declarations/strict-rank-completion.md) | 21 | `result-track:ec6c15f233bb18200f3f8a5873321b460a033f3167e249aa915a685d1d9478a1` |
-| 2 | `theorem` | [strict_rank_completion_scaled](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRankOneCompletionAlgebra.lean/declarations/strict-rank-completion-scaled.md) | 31 | `result-track:c25fb523c6a7f35c2893b14756253d698f06eb1acf3ab6b9306a2b7ea34f5e80` |
-| 3 | `theorem` | [zero_margin_cross_obstruction](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRankOneCompletionAlgebra.lean/declarations/zero-margin-cross-obstruction.md) | 39 | `result-track:120abf05a6f5028e577227e9c1b119d026289f49ee0315fe43d26bf816299ee9` |
-| 4 | `theorem` | [continuous_baseline_certificate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRankOneCompletionAlgebra.lean/declarations/continuous-baseline-certificate.md) | 49 | `result-track:00d21f0490ae6bd3b9629604ade16d39e48a43a28b94937890cfd8020e465af4` |
+| 1 | `theorem` | [strict_rank_completion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRankOneCompletionAlgebra.lean/declarations/strict-rank-completion.md) | 21 | `result-track:ec6c15f233bb18200f3f8a5873321b460a033f3167e249aa915a685d1d9478a1` |
+| 2 | `theorem` | [strict_rank_completion_scaled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRankOneCompletionAlgebra.lean/declarations/strict-rank-completion-scaled.md) | 31 | `result-track:c25fb523c6a7f35c2893b14756253d698f06eb1acf3ab6b9306a2b7ea34f5e80` |
+| 3 | `theorem` | [zero_margin_cross_obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRankOneCompletionAlgebra.lean/declarations/zero-margin-cross-obstruction.md) | 39 | `result-track:120abf05a6f5028e577227e9c1b119d026289f49ee0315fe43d26bf816299ee9` |
+| 4 | `theorem` | [continuous_baseline_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactRankOneCompletionAlgebra.lean/declarations/continuous-baseline-certificate.md) | 49 | `result-track:00d21f0490ae6bd3b9629604ade16d39e48a43a28b94937890cfd8020e465af4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

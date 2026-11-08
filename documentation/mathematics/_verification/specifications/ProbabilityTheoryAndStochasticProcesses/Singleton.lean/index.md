@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/Singleton.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/Singleton.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Singleton.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Singleton.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [intrinsicStratum](../../../../ProbabilityTheoryAndStochasticProcesses/Singleton.lean/declarations/intrinsicstratum.md) | 19 | `declaration-track:f368bc71ed8a7671c5bdb71f10f770c28798db48fcb0923a67f7b6bd59d7a54d` |
-| 2 | `def` | [structuralOrbit](../../../../ProbabilityTheoryAndStochasticProcesses/Singleton.lean/declarations/structuralorbit.md) | 26 | `declaration-track:e0d3b17602d7e2e79bb4a545bb08d35cd4168eeece4f3e49921a957b48dac130` |
-| 3 | `structure` | [CertifiedInvariantSingleton](../../../../ProbabilityTheoryAndStochasticProcesses/Singleton.lean/declarations/certifiedinvariantsingleton.md) | 37 | `declaration-track:dfb9ec2659f26ef9f8dacf7e06b0582abb7d51c0b9ccc9f6174364860926cfe1` |
-| 4 | `theorem` | [CertifiedInvariantSingleton.flow_fixed](../../../../ProbabilityTheoryAndStochasticProcesses/Singleton.lean/declarations/flow-fixed.md) | 53 | `result-track:062cd095e18f40e7a7d17854efac520ff71e255a01aad4557d2b504bc4146af6` |
-| 5 | `theorem` | [CertifiedInvariantSingleton.surgery_fixed](../../../../ProbabilityTheoryAndStochasticProcesses/Singleton.lean/declarations/surgery-fixed.md) | 71 | `result-track:820f1b043d935145a001813ad90591315ac3d4aed81646b579ad15f6ad7b7f32` |
+| 1 | `def` | [intrinsicStratum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Singleton.lean/declarations/intrinsicstratum.md) | 19 | `declaration-track:f368bc71ed8a7671c5bdb71f10f770c28798db48fcb0923a67f7b6bd59d7a54d` |
+| 2 | `def` | [structuralOrbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Singleton.lean/declarations/structuralorbit.md) | 26 | `declaration-track:e0d3b17602d7e2e79bb4a545bb08d35cd4168eeece4f3e49921a957b48dac130` |
+| 3 | `structure` | [CertifiedInvariantSingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Singleton.lean/declarations/certifiedinvariantsingleton.md) | 37 | `declaration-track:dfb9ec2659f26ef9f8dacf7e06b0582abb7d51c0b9ccc9f6174364860926cfe1` |
+| 4 | `theorem` | [CertifiedInvariantSingleton.flow_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Singleton.lean/declarations/flow-fixed.md) | 53 | `result-track:062cd095e18f40e7a7d17854efac520ff71e255a01aad4557d2b504bc4146af6` |
+| 5 | `theorem` | [CertifiedInvariantSingleton.surgery_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Singleton.lean/declarations/surgery-fixed.md) | 71 | `result-track:820f1b043d935145a001813ad90591315ac3d4aed81646b579ad15f6ad7b7f32` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

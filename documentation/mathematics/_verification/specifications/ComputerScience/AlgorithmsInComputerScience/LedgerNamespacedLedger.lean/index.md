@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerNamespacedLedger.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerNamespacedLedger.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerNamespacedLedger.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerNamespacedLedger.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ledger](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerNamespacedLedger.lean/declarations/ledger.md) | 15 | `declaration-track:4ef45fcc1f2eab1f5d77bf89a8d4d9f07f51a2a34b68f39fead287d5d89d58a0` |
-| 2 | `theorem` | [ledger_count](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerNamespacedLedger.lean/declarations/ledger-count.md) | 18 | `result-track:a55952a6502433239c1f5ac19d3a6bc4aa105c20c3dea9433f6a4efb208d1afc` |
+| 1 | `def` | [ledger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerNamespacedLedger.lean/declarations/ledger.md) | 15 | `declaration-track:4ef45fcc1f2eab1f5d77bf89a8d4d9f07f51a2a34b68f39fead287d5d89d58a0` |
+| 2 | `theorem` | [ledger_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerNamespacedLedger.lean/declarations/ledger-count.md) | 18 | `result-track:a55952a6502433239c1f5ac19d3a6bc4aa105c20c3dea9433f6a4efb208d1afc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

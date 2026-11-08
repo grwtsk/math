@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ButheNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ButheNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ButheNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ButheNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pi_star](../../../../MeasureAndIntegration/ButheNamespaced.lean/declarations/pi-star.md) | 30 | `declaration-track:b7fb3fbccfb0a106708b09a88b74fad486b4aa4eba47356bd878756a3c53739e` |
-| 2 | `theorem` | [theorem_2a](../../../../MeasureAndIntegration/ButheNamespaced.lean/declarations/theorem-2a.md) | 39 | `result-track:0385cf6f5e83abc441a9f2e339a0fe4c808645625333869add43f9c44f4edcc1` |
-| 3 | `theorem` | [theorem_2b](../../../../MeasureAndIntegration/ButheNamespaced.lean/declarations/theorem-2b.md) | 49 | `result-track:9467b8209a040888025806c39734e583fd8684f271e9420cc1618c70d40a6f90` |
-| 4 | `theorem` | [theorem_2c](../../../../MeasureAndIntegration/ButheNamespaced.lean/declarations/theorem-2c.md) | 59 | `result-track:0ff2e9734a86e5d266e68cfc6b12f8680c8f1eee2b3648b84e2b0b3853761e8b` |
-| 5 | `theorem` | [theorem_2d](../../../../MeasureAndIntegration/ButheNamespaced.lean/declarations/theorem-2d.md) | 69 | `result-track:16e86f678c7736d10aa20d28a7e16a258de028457d69a9f8ccb638b1d58a9a20` |
-| 6 | `theorem` | [theorem_2e](../../../../MeasureAndIntegration/ButheNamespaced.lean/declarations/theorem-2e.md) | 81 | `result-track:ef110739efcfe69044e66e122ffc9238237c0a13029e7e2dcb9250e13f0d059c` |
-| 7 | `theorem` | [theorem_2f](../../../../MeasureAndIntegration/ButheNamespaced.lean/declarations/theorem-2f.md) | 91 | `result-track:1d0a6e1024325c083c56fdeae075aea9947446fc9ea5b0ecc2fb2e011c53795d` |
-| 8 | `def` | [table_1](../../../../MeasureAndIntegration/ButheNamespaced.lean/declarations/table-1.md) | 95 | `declaration-track:25265592628d40f0cac8a11589567323cbc1412caefda95122c858c9148f7af4` |
-| 9 | `theorem` | [sieve_bound](../../../../MeasureAndIntegration/ButheNamespaced.lean/declarations/sieve-bound.md) | 139 | `result-track:763c7c4817f65f4bb9f1628a91b29c592a4413376eee7e024e77c5f01f15f9c9` |
-| 10 | `theorem` | [eq_6_2](../../../../MeasureAndIntegration/ButheNamespaced.lean/declarations/eq-6-2.md) | 150 | `result-track:9f1e75812caa703d5b99920c171c4efee8ffa377bd33cdf4e949f969c8b8594e` |
-| 11 | `theorem` | [table_1_to_32e12](../../../../MeasureAndIntegration/ButheNamespaced.lean/declarations/table-1-to-32e12.md) | 165 | `result-track:e35a0b22e0cfab0acc9fdb4c7183d92fbc23ebdffd03739819b8f1c5135cf8e9` |
-| 12 | `lemma` | [normalized_bounds_of_Eψ](../../../../MeasureAndIntegration/ButheNamespaced.lean/declarations/normalized-bounds-of-e.md) | 213 | `result-track:d2a4b9e08dcc5bd0f5246889fc85d582ecbda8d07b577c354bd9ff1ddec1425a` |
-| 13 | `theorem` | [theorem_2a_normalized](../../../../MeasureAndIntegration/ButheNamespaced.lean/declarations/theorem-2a-normalized.md) | 246 | `result-track:0344184cc1b739409aa1bda9aa1d1537fd183ad6fb5a4ce96bac2c494e3eabab` |
+| 1 | `def` | [pi_star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ButheNamespaced.lean/declarations/pi-star.md) | 30 | `declaration-track:b7fb3fbccfb0a106708b09a88b74fad486b4aa4eba47356bd878756a3c53739e` |
+| 2 | `theorem` | [theorem_2a](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ButheNamespaced.lean/declarations/theorem-2a.md) | 39 | `result-track:0385cf6f5e83abc441a9f2e339a0fe4c808645625333869add43f9c44f4edcc1` |
+| 3 | `theorem` | [theorem_2b](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ButheNamespaced.lean/declarations/theorem-2b.md) | 49 | `result-track:9467b8209a040888025806c39734e583fd8684f271e9420cc1618c70d40a6f90` |
+| 4 | `theorem` | [theorem_2c](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ButheNamespaced.lean/declarations/theorem-2c.md) | 59 | `result-track:0ff2e9734a86e5d266e68cfc6b12f8680c8f1eee2b3648b84e2b0b3853761e8b` |
+| 5 | `theorem` | [theorem_2d](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ButheNamespaced.lean/declarations/theorem-2d.md) | 69 | `result-track:16e86f678c7736d10aa20d28a7e16a258de028457d69a9f8ccb638b1d58a9a20` |
+| 6 | `theorem` | [theorem_2e](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ButheNamespaced.lean/declarations/theorem-2e.md) | 81 | `result-track:ef110739efcfe69044e66e122ffc9238237c0a13029e7e2dcb9250e13f0d059c` |
+| 7 | `theorem` | [theorem_2f](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ButheNamespaced.lean/declarations/theorem-2f.md) | 91 | `result-track:1d0a6e1024325c083c56fdeae075aea9947446fc9ea5b0ecc2fb2e011c53795d` |
+| 8 | `def` | [table_1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ButheNamespaced.lean/declarations/table-1.md) | 95 | `declaration-track:25265592628d40f0cac8a11589567323cbc1412caefda95122c858c9148f7af4` |
+| 9 | `theorem` | [sieve_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ButheNamespaced.lean/declarations/sieve-bound.md) | 139 | `result-track:763c7c4817f65f4bb9f1628a91b29c592a4413376eee7e024e77c5f01f15f9c9` |
+| 10 | `theorem` | [eq_6_2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ButheNamespaced.lean/declarations/eq-6-2.md) | 150 | `result-track:9f1e75812caa703d5b99920c171c4efee8ffa377bd33cdf4e949f969c8b8594e` |
+| 11 | `theorem` | [table_1_to_32e12](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ButheNamespaced.lean/declarations/table-1-to-32e12.md) | 165 | `result-track:e35a0b22e0cfab0acc9fdb4c7183d92fbc23ebdffd03739819b8f1c5135cf8e9` |
+| 12 | `lemma` | [normalized_bounds_of_Eψ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ButheNamespaced.lean/declarations/normalized-bounds-of-e.md) | 213 | `result-track:d2a4b9e08dcc5bd0f5246889fc85d582ecbda8d07b577c354bd9ff1ddec1425a` |
+| 13 | `theorem` | [theorem_2a_normalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ButheNamespaced.lean/declarations/theorem-2a-normalized.md) | 246 | `result-track:0344184cc1b739409aa1bda9aa1d1537fd183ad6fb5a4ce96bac2c494e3eabab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

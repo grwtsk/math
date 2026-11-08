@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Attempt02NamespacedShiftedInventory.lean/index.md) · [Full source](../../../../GeneralTopology/Attempt02NamespacedShiftedInventory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02NamespacedShiftedInventory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02NamespacedShiftedInventory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [shiftedInventory](../../../../GeneralTopology/Attempt02NamespacedShiftedInventory.lean/declarations/shiftedinventory.md) | 25 | `declaration-track:94099bffa7458001b0643aa568aa4e4da46bf08868c2a95cf58ce76bd65c0491` |
-| 2 | `theorem` | [mem_shiftedInventory_iff](../../../../GeneralTopology/Attempt02NamespacedShiftedInventory.lean/declarations/mem-shiftedinventory-iff.md) | 29 | `result-track:6319645b4d4c71b9350a3c9b5a0b6bbf8ca8a1390e926bedde3c507034ffb62d` |
-| 3 | `theorem` | [shiftedInventory_onset_iff](../../../../GeneralTopology/Attempt02NamespacedShiftedInventory.lean/declarations/shiftedinventory-onset-iff.md) | 47 | `result-track:3a70498e40ad619ec6d4d38cec917fbc20b3476fa6cc148c6f198e0bc1d257b1` |
-| 4 | `theorem` | [closedOnsetAtom_zero_outside](../../../../GeneralTopology/Attempt02NamespacedShiftedInventory.lean/declarations/closedonsetatom-zero-outside.md) | 52 | `result-track:f0c1ba11c3ec2d5e3bfb6babc2121bac73dcf1b2fccdc5f0b85381bf6d7d23f5` |
-| 5 | `theorem` | [closedOnsetPrefix_eq_finite_shifted](../../../../GeneralTopology/Attempt02NamespacedShiftedInventory.lean/declarations/closedonsetprefix-eq-finite-shifted.md) | 58 | `result-track:96ca035f37ed2ab60580b5a14b7a1cd198b73e928eeb79179ba9479d4295ef67` |
+| 1 | `def` | [shiftedInventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02NamespacedShiftedInventory.lean/declarations/shiftedinventory.md) | 25 | `declaration-track:94099bffa7458001b0643aa568aa4e4da46bf08868c2a95cf58ce76bd65c0491` |
+| 2 | `theorem` | [mem_shiftedInventory_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02NamespacedShiftedInventory.lean/declarations/mem-shiftedinventory-iff.md) | 29 | `result-track:6319645b4d4c71b9350a3c9b5a0b6bbf8ca8a1390e926bedde3c507034ffb62d` |
+| 3 | `theorem` | [shiftedInventory_onset_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02NamespacedShiftedInventory.lean/declarations/shiftedinventory-onset-iff.md) | 47 | `result-track:3a70498e40ad619ec6d4d38cec917fbc20b3476fa6cc148c6f198e0bc1d257b1` |
+| 4 | `theorem` | [closedOnsetAtom_zero_outside](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02NamespacedShiftedInventory.lean/declarations/closedonsetatom-zero-outside.md) | 52 | `result-track:f0c1ba11c3ec2d5e3bfb6babc2121bac73dcf1b2fccdc5f0b85381bf6d7d23f5` |
+| 5 | `theorem` | [closedOnsetPrefix_eq_finite_shifted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02NamespacedShiftedInventory.lean/declarations/closedonsetprefix-eq-finite-shifted.md) | 58 | `result-track:96ca035f37ed2ab60580b5a14b7a1cd198b73e928eeb79179ba9479d4295ef67` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

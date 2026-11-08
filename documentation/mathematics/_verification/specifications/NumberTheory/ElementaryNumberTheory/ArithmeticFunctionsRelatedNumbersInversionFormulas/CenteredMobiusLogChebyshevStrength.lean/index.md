@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogChebyshevStrength.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogChebyshevStrength.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogChebyshevStrength.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogChebyshevStrength.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogOneSupplierReduction`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogOneSupplierReduction.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogOneSupplierReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogOneSupplierReduction.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.Tactic` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [chebyshevPsiFinite](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogChebyshevStrength.lean/declarations/chebyshevpsifinite.md) | 14 | `declaration-track:2aa24f0d6940e7fc59ef05f810ffa83d04a7ee29c04ebe081da4d8ed743fcaf9` |
-| 2 | `def` | [chebyshevPsiError](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogChebyshevStrength.lean/declarations/chebyshevpsierror.md) | 17 | `declaration-track:ed8dfd82fa120ee54a96648b0092c351fd88e638f1100c709470c71e7dd937c2` |
-| 3 | `theorem` | [prefixMangoldtError_eq_global_sub](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogChebyshevStrength.lean/declarations/prefixmangoldterror-eq-global-sub.md) | 20 | `result-track:8e67ef4278235fe007686297af58bb2875fcee85e204d94e0c698388782696a0` |
-| 4 | `def` | [GlobalChebyshevSquareRootPlusEpsilonBound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogChebyshevStrength.lean/declarations/globalchebyshevsquarerootplusepsilonbound.md) | 40 | `declaration-track:932eeedb900511a2e05f10d3a88ea9943082fa93fb80d45a3c0dded05679c7e2` |
-| 5 | `theorem` | [prefixMangoldt_of_globalChebyshev](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogChebyshevStrength.lean/declarations/prefixmangoldt-of-globalchebyshev.md) | 49 | `result-track:83cb6c80db601a07e3f73ece7ae1f7cd1d1cba8b5c0012270250cab11a3d9027` |
+| 1 | `def` | [chebyshevPsiFinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogChebyshevStrength.lean/declarations/chebyshevpsifinite.md) | 14 | `declaration-track:2aa24f0d6940e7fc59ef05f810ffa83d04a7ee29c04ebe081da4d8ed743fcaf9` |
+| 2 | `def` | [chebyshevPsiError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogChebyshevStrength.lean/declarations/chebyshevpsierror.md) | 17 | `declaration-track:ed8dfd82fa120ee54a96648b0092c351fd88e638f1100c709470c71e7dd937c2` |
+| 3 | `theorem` | [prefixMangoldtError_eq_global_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogChebyshevStrength.lean/declarations/prefixmangoldterror-eq-global-sub.md) | 20 | `result-track:8e67ef4278235fe007686297af58bb2875fcee85e204d94e0c698388782696a0` |
+| 4 | `def` | [GlobalChebyshevSquareRootPlusEpsilonBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogChebyshevStrength.lean/declarations/globalchebyshevsquarerootplusepsilonbound.md) | 40 | `declaration-track:932eeedb900511a2e05f10d3a88ea9943082fa93fb80d45a3c0dded05679c7e2` |
+| 5 | `theorem` | [prefixMangoldt_of_globalChebyshev](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogChebyshevStrength.lean/declarations/prefixmangoldt-of-globalchebyshev.md) | 49 | `result-track:83cb6c80db601a07e3f73ece7ae1f7cd1d1cba8b5c0012270250cab11a3d9027` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

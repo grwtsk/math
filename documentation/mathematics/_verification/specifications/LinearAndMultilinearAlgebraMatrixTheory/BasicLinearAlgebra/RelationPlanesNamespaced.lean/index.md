@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationPlanesNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationPlanesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationPlanesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationPlanesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompositeRelations](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationPlanesNamespaced.lean/declarations/compositerelations.md) | 24 | `declaration-track:5003422566a48371b775278b934c988a42bb1810ec90b3f412c151d503474e96` |
-| 2 | `def` | [formalPlane](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationPlanesNamespaced.lean/declarations/formalplane.md) | 38 | `declaration-track:e006180ea329332183ac7793299aaa198d8dbf4959b4bc78abb7bc206fc40903` |
+| 1 | `structure` | [CompositeRelations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationPlanesNamespaced.lean/declarations/compositerelations.md) | 24 | `declaration-track:5003422566a48371b775278b934c988a42bb1810ec90b3f412c151d503474e96` |
+| 2 | `def` | [formalPlane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationPlanesNamespaced.lean/declarations/formalplane.md) | 38 | `declaration-track:e006180ea329332183ac7793299aaa198d8dbf4959b4bc78abb7bc206fc40903` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

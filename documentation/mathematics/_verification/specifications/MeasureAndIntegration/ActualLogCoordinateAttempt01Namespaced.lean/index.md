@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualLogOperator](../../../../MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actuallogoperator.md) | 21 | `declaration-track:046dcfb14b9547209686e5d9ab6d668075cef71b4b3c6c1ebd3f0a990d5a0035` |
-| 2 | `def` | [actualLogL2](../../../../MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actuallogl2.md) | 23 | `declaration-track:ae1503751e4915b76bc438a269c7c2be18a8a3ce8360e8caaba73d28d93665be` |
-| 3 | `theorem` | [actualLogOperator_memLp](../../../../MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actuallogoperator-memlp.md) | 25 | `result-track:93bb8887907e93ae467e1ad78f0a4c85fd7a941e061652834e1bc6b50562a2c4` |
-| 4 | `theorem` | [actualLogL2_ae](../../../../MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actuallogl2-ae.md) | 29 | `result-track:46c6498d6b6fe98ef1619a7e3dc648509b42bed9058d5d364d158957f09f848e` |
-| 5 | `theorem` | [actualLogL2_norm](../../../../MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actuallogl2-norm.md) | 37 | `result-track:edf4bd8c2e064e13e504fea2a1e25b8845e17e2f9141537779eef854828992a9` |
-| 6 | `theorem` | [actualLogL2_norm_sq](../../../../MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actuallogl2-norm-sq.md) | 40 | `result-track:35cb81c5cea2dc38ae8aa765c0a6eac451f74e3d1c6dc15b5fd25ed8b5190ba3` |
-| 7 | `theorem` | [actual_dilation_log](../../../../MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actual-dilation-log.md) | 44 | `result-track:8cfafcc43f358093a194da249c2fd7f743a81857303c2e29b7eb6f96c775568a` |
-| 8 | `theorem` | [actual_integer_log](../../../../MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actual-integer-log.md) | 48 | `result-track:eca0bbb8af1c51da34ac7832643fd9e4f7cff2cdbc98b95ebd360115e9b1f380` |
-| 9 | `theorem` | [actual_integer_log_ae](../../../../MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actual-integer-log-ae.md) | 52 | `result-track:346c34b3bf04369efabe2d39b944977a8719233f985b5d0ca27779558b974cf9` |
-| 10 | `theorem` | [actualLogOperator_zero_upper](../../../../MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actuallogoperator-zero-upper.md) | 61 | `result-track:5f6dcdce400b0104dcf33073de178f8cccad57f94194f62cec00ef221be302ea` |
+| 1 | `def` | [actualLogOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actuallogoperator.md) | 21 | `declaration-track:046dcfb14b9547209686e5d9ab6d668075cef71b4b3c6c1ebd3f0a990d5a0035` |
+| 2 | `def` | [actualLogL2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actuallogl2.md) | 23 | `declaration-track:ae1503751e4915b76bc438a269c7c2be18a8a3ce8360e8caaba73d28d93665be` |
+| 3 | `theorem` | [actualLogOperator_memLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actuallogoperator-memlp.md) | 25 | `result-track:93bb8887907e93ae467e1ad78f0a4c85fd7a941e061652834e1bc6b50562a2c4` |
+| 4 | `theorem` | [actualLogL2_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actuallogl2-ae.md) | 29 | `result-track:46c6498d6b6fe98ef1619a7e3dc648509b42bed9058d5d364d158957f09f848e` |
+| 5 | `theorem` | [actualLogL2_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actuallogl2-norm.md) | 37 | `result-track:edf4bd8c2e064e13e504fea2a1e25b8845e17e2f9141537779eef854828992a9` |
+| 6 | `theorem` | [actualLogL2_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actuallogl2-norm-sq.md) | 40 | `result-track:35cb81c5cea2dc38ae8aa765c0a6eac451f74e3d1c6dc15b5fd25ed8b5190ba3` |
+| 7 | `theorem` | [actual_dilation_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actual-dilation-log.md) | 44 | `result-track:8cfafcc43f358093a194da249c2fd7f743a81857303c2e29b7eb6f96c775568a` |
+| 8 | `theorem` | [actual_integer_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actual-integer-log.md) | 48 | `result-track:eca0bbb8af1c51da34ac7832643fd9e4f7cff2cdbc98b95ebd360115e9b1f380` |
+| 9 | `theorem` | [actual_integer_log_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actual-integer-log-ae.md) | 52 | `result-track:346c34b3bf04369efabe2d39b944977a8719233f985b5d0ca27779558b974cf9` |
+| 10 | `theorem` | [actualLogOperator_zero_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCoordinateAttempt01Namespaced.lean/declarations/actuallogoperator-zero-upper.md) | 61 | `result-track:5f6dcdce400b0104dcf33073de178f8cccad57f94194f62cec00ef221be302ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

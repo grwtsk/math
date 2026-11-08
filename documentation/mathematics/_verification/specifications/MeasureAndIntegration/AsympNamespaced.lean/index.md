@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/AsympNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/AsympNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,24 +57,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Tk](../../../../MeasureAndIntegration/AsympNamespaced.lean/declarations/tk.md) | 39 | `declaration-track:604b2eda6e3a322b3e36cd9173303ced4232aed6e579414f80b399585b1faadc` |
-| 2 | `def` | [Wk](../../../../MeasureAndIntegration/AsympNamespaced.lean/declarations/wk.md) | 42 | `declaration-track:a05d3ecb41a6c787af180e31404ad41574026878d747062e8bc508b1a88b0e88` |
-| 3 | `lemma` | [Tk_def](../../../../MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-def.md) | 45 | `result-track:20c00acee2f159fdfe95d01fd12ba52cd73e5ab2da74f235b85eb58bc0f5595c` |
-| 4 | `lemma` | [Wk_def](../../../../MeasureAndIntegration/AsympNamespaced.lean/declarations/wk-def.md) | 47 | `result-track:faf16c339dd5d5ef7681191ec91a1c69eaad90d56f4f1258d20ea107ca7f29e6` |
-| 5 | `lemma` | [Tk_zero](../../../../MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-zero.md) | 50 | `result-track:ad29c5545fe4c727c1774f25730a056ff7ebbf9d19d73c398d44c23dab9ebeae` |
-| 6 | `lemma` | [Tk_succ](../../../../MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-succ.md) | 53 | `result-track:9a5a281208f634ab20c3e1fa509881458c8e9c07a90300b73da107653d790b5a` |
-| 7 | `lemma` | [Tk_mono](../../../../MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-mono.md) | 59 | `result-track:da9422057ece7bf901f0ab46836cde61e2259f9e33b4fd0bf8f87be2fe13bbec` |
-| 8 | `lemma` | [Tk_nonneg](../../../../MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-nonneg.md) | 61 | `result-track:3f1b70a08b8a268615e4fbb0db1e31a41a1de2bb6539f7fdc31fa75d4405a933` |
-| 9 | `lemma` | [sum_lam_log_div_le](../../../../MeasureAndIntegration/AsympNamespaced.lean/declarations/sum-lam-log-div-le.md) | 64 | `result-track:f3d76d134b316c6f08877cf700575b1598b3b7e9c852d256a22f6bd9ccc5c48d` |
-| 10 | `theorem` | [sum_vonMangoldt_div_mul_log_pow](../../../../MeasureAndIntegration/AsympNamespaced.lean/declarations/sum-vonmangoldt-div-mul-log-pow.md) | 78 | `result-track:e578378dba39a93d09e61c04a9e8daaea87e8d6bad844a539badfa3156cbde3e` |
-| 11 | `lemma` | [integral_mul_sub_pow](../../../../MeasureAndIntegration/AsympNamespaced.lean/declarations/integral-mul-sub-pow.md) | 114 | `result-track:cb72cd6005fbfa85f86e7bcc7266cd139b203922c18f310cb3643732e1f33cc3` |
-| 12 | `lemma` | [Tk_step](../../../../MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-step.md) | 133 | `result-track:26460a5d4d8b6b22aba659af5bef7baf32a0b5185f91f95e811216eecfc6eda1` |
-| 13 | `lemma` | [Tk_one_asymp](../../../../MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-one-asymp.md) | 256 | `result-track:775ebc70c8f06cb435f50e5759f052ddcd8831bb6d8a6681d98e0f231dc89c2c` |
-| 14 | `lemma` | [Tk_asymp_succ](../../../../MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-asymp-succ.md) | 276 | `result-track:35c6ee9d127ec1f0c1d07f0ddc1532206a8466717d69fd3b5e018227a04cc68a` |
-| 15 | `theorem` | [Tk_asymp](../../../../MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-asymp.md) | 289 | `result-track:16d2c93cb1b99a4a265dac2b945f98e2ff958f8b2fc1b147a4706792aa534b0d` |
-| 16 | `lemma` | [Tk_asymp'](../../../../MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-asymp-source-edition-2.md) | 303 | `result-track:e600f0c7d0bc334a95fed54ff766ca66fb3b723ba9b8b0e32b65390d36bb25e3` |
-| 17 | `lemma` | [Tk_log_eq_sum_Icc](../../../../MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-log-eq-sum-icc.md) | 312 | `result-track:cd9652acf134a95ce6204b496f8625b7945bc3bdbfe56ef7b2b76af629472e8e` |
-| 18 | `theorem` | [Wk_asymp](../../../../MeasureAndIntegration/AsympNamespaced.lean/declarations/wk-asymp.md) | 319 | `result-track:83e1c58c440cc76b3a968d694dce713f08a8ec732fa6c3039af42a28388d0d80` |
+| 1 | `def` | [Tk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/declarations/tk.md) | 39 | `declaration-track:604b2eda6e3a322b3e36cd9173303ced4232aed6e579414f80b399585b1faadc` |
+| 2 | `def` | [Wk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/declarations/wk.md) | 42 | `declaration-track:a05d3ecb41a6c787af180e31404ad41574026878d747062e8bc508b1a88b0e88` |
+| 3 | `lemma` | [Tk_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-def.md) | 45 | `result-track:20c00acee2f159fdfe95d01fd12ba52cd73e5ab2da74f235b85eb58bc0f5595c` |
+| 4 | `lemma` | [Wk_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/declarations/wk-def.md) | 47 | `result-track:faf16c339dd5d5ef7681191ec91a1c69eaad90d56f4f1258d20ea107ca7f29e6` |
+| 5 | `lemma` | [Tk_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-zero.md) | 50 | `result-track:ad29c5545fe4c727c1774f25730a056ff7ebbf9d19d73c398d44c23dab9ebeae` |
+| 6 | `lemma` | [Tk_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-succ.md) | 53 | `result-track:9a5a281208f634ab20c3e1fa509881458c8e9c07a90300b73da107653d790b5a` |
+| 7 | `lemma` | [Tk_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-mono.md) | 59 | `result-track:da9422057ece7bf901f0ab46836cde61e2259f9e33b4fd0bf8f87be2fe13bbec` |
+| 8 | `lemma` | [Tk_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-nonneg.md) | 61 | `result-track:3f1b70a08b8a268615e4fbb0db1e31a41a1de2bb6539f7fdc31fa75d4405a933` |
+| 9 | `lemma` | [sum_lam_log_div_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/declarations/sum-lam-log-div-le.md) | 64 | `result-track:f3d76d134b316c6f08877cf700575b1598b3b7e9c852d256a22f6bd9ccc5c48d` |
+| 10 | `theorem` | [sum_vonMangoldt_div_mul_log_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/declarations/sum-vonmangoldt-div-mul-log-pow.md) | 78 | `result-track:e578378dba39a93d09e61c04a9e8daaea87e8d6bad844a539badfa3156cbde3e` |
+| 11 | `lemma` | [integral_mul_sub_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/declarations/integral-mul-sub-pow.md) | 114 | `result-track:cb72cd6005fbfa85f86e7bcc7266cd139b203922c18f310cb3643732e1f33cc3` |
+| 12 | `lemma` | [Tk_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-step.md) | 133 | `result-track:26460a5d4d8b6b22aba659af5bef7baf32a0b5185f91f95e811216eecfc6eda1` |
+| 13 | `lemma` | [Tk_one_asymp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-one-asymp.md) | 256 | `result-track:775ebc70c8f06cb435f50e5759f052ddcd8831bb6d8a6681d98e0f231dc89c2c` |
+| 14 | `lemma` | [Tk_asymp_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-asymp-succ.md) | 276 | `result-track:35c6ee9d127ec1f0c1d07f0ddc1532206a8466717d69fd3b5e018227a04cc68a` |
+| 15 | `theorem` | [Tk_asymp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-asymp.md) | 289 | `result-track:16d2c93cb1b99a4a265dac2b945f98e2ff958f8b2fc1b147a4706792aa534b0d` |
+| 16 | `lemma` | [Tk_asymp'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-asymp-source-edition-2.md) | 303 | `result-track:e600f0c7d0bc334a95fed54ff766ca66fb3b723ba9b8b0e32b65390d36bb25e3` |
+| 17 | `lemma` | [Tk_log_eq_sum_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/declarations/tk-log-eq-sum-icc.md) | 312 | `result-track:cd9652acf134a95ce6204b496f8625b7945bc3bdbfe56ef7b2b76af629472e8e` |
+| 18 | `theorem` | [Wk_asymp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AsympNamespaced.lean/declarations/wk-asymp.md) | 319 | `result-track:83e1c58c440cc76b3a968d694dce713f08a8ec732fa6c3039af42a28388d0d80` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Budgets.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Budgets.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Budgets.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Budgets.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,17 +61,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [power_intervalIntegrable](../../../../MeasureAndIntegration/Budgets.lean/declarations/power-intervalintegrable.md) | 17 | `result-track:2eb36d364d77c1506ffbcb5f86194ba365e7a66f1df179752a7cbe50a3ae3853` |
-| 2 | `theorem` | [log_power_intervalIntegrable](../../../../MeasureAndIntegration/Budgets.lean/declarations/log-power-intervalintegrable.md) | 25 | `result-track:3fbac12780df93ab37c47a409ecf7a168635e2f38755bad6b0d7e1ded99f9322` |
-| 3 | `theorem` | [inverse_half_eq](../../../../MeasureAndIntegration/Budgets.lean/declarations/inverse-half-eq.md) | 37 | `result-track:25a44554ed10a74660b4573b6930a522d8132af1f789fe8ba94fa5684164c781` |
-| 4 | `theorem` | [power_integral](../../../../MeasureAndIntegration/Budgets.lean/declarations/power-integral.md) | 42 | `result-track:3d23f2ed432624f3db907d684f97f72fafd2142c01e2556ba44d49fd298027e7` |
-| 5 | `theorem` | [log_power_primitive](../../../../MeasureAndIntegration/Budgets.lean/declarations/log-power-primitive.md) | 54 | `result-track:d19f51c9334fab4edb273a5eea5f935b101ee3b912dca3e0e3e425f215e6a28c` |
-| 6 | `theorem` | [log_power_integral](../../../../MeasureAndIntegration/Budgets.lean/declarations/log-power-integral.md) | 71 | `result-track:9bcf1bad99d698e0d408b6f422754439dae9c1d665995b40cfee3c611d0b0a36` |
-| 7 | `theorem` | [power_integral_le_two](../../../../MeasureAndIntegration/Budgets.lean/declarations/power-integral-le-two.md) | 82 | `result-track:5bce69f33a5dc86d3b797169f8f60ace1a95505ad333435515b2b432246e7f87` |
-| 8 | `theorem` | [log_power_integral_le_four](../../../../MeasureAndIntegration/Budgets.lean/declarations/log-power-integral-le-four.md) | 88 | `result-track:5b2dd56a8041487c1755eb76b7e2056b1b4fb9be55a7650e67f3e5ccd4b45710` |
-| 9 | `theorem` | [centered_fract_abs_le](../../../../MeasureAndIntegration/Budgets.lean/declarations/centered-fract-abs-le.md) | 95 | `result-track:bc57161a0c83b58bbbeb9026c6bab5714e477d4ad96d0a0b8143bf891db021c7` |
-| 10 | `theorem` | [centered_error_bound](../../../../MeasureAndIntegration/Budgets.lean/declarations/centered-error-bound.md) | 99 | `result-track:68bc90a0e27e5e8658733f086744112a566ca127bb05636056c8f3ffd94852dd` |
-| 11 | `theorem` | [error_budget_le_twelve](../../../../MeasureAndIntegration/Budgets.lean/declarations/error-budget-le-twelve.md) | 138 | `result-track:8e14500d87efb5410c2b6b830943fc87f0117327f1773e1bfda10d3458b1e228` |
+| 1 | `theorem` | [power_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Budgets.lean/declarations/power-intervalintegrable.md) | 17 | `result-track:2eb36d364d77c1506ffbcb5f86194ba365e7a66f1df179752a7cbe50a3ae3853` |
+| 2 | `theorem` | [log_power_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Budgets.lean/declarations/log-power-intervalintegrable.md) | 25 | `result-track:3fbac12780df93ab37c47a409ecf7a168635e2f38755bad6b0d7e1ded99f9322` |
+| 3 | `theorem` | [inverse_half_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Budgets.lean/declarations/inverse-half-eq.md) | 37 | `result-track:25a44554ed10a74660b4573b6930a522d8132af1f789fe8ba94fa5684164c781` |
+| 4 | `theorem` | [power_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Budgets.lean/declarations/power-integral.md) | 42 | `result-track:3d23f2ed432624f3db907d684f97f72fafd2142c01e2556ba44d49fd298027e7` |
+| 5 | `theorem` | [log_power_primitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Budgets.lean/declarations/log-power-primitive.md) | 54 | `result-track:d19f51c9334fab4edb273a5eea5f935b101ee3b912dca3e0e3e425f215e6a28c` |
+| 6 | `theorem` | [log_power_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Budgets.lean/declarations/log-power-integral.md) | 71 | `result-track:9bcf1bad99d698e0d408b6f422754439dae9c1d665995b40cfee3c611d0b0a36` |
+| 7 | `theorem` | [power_integral_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Budgets.lean/declarations/power-integral-le-two.md) | 82 | `result-track:5bce69f33a5dc86d3b797169f8f60ace1a95505ad333435515b2b432246e7f87` |
+| 8 | `theorem` | [log_power_integral_le_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Budgets.lean/declarations/log-power-integral-le-four.md) | 88 | `result-track:5b2dd56a8041487c1755eb76b7e2056b1b4fb9be55a7650e67f3e5ccd4b45710` |
+| 9 | `theorem` | [centered_fract_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Budgets.lean/declarations/centered-fract-abs-le.md) | 95 | `result-track:bc57161a0c83b58bbbeb9026c6bab5714e477d4ad96d0a0b8143bf891db021c7` |
+| 10 | `theorem` | [centered_error_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Budgets.lean/declarations/centered-error-bound.md) | 99 | `result-track:68bc90a0e27e5e8658733f086744112a566ca127bb05636056c8f3ffd94852dd` |
+| 11 | `theorem` | [error_budget_le_twelve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Budgets.lean/declarations/error-budget-le-twelve.md) | 138 | `result-track:8e14500d87efb5410c2b6b830943fc87f0117327f1773e1bfda10d3458b1e228` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

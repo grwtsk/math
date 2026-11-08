@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Equiv.optionCongr_one](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/declarations/equiv-optioncongr-one.md) | 17 | `result-track:434ded4bf2c5c86347c03469540365f6c70ff8a39efb1ef52e7d9af6fcb2432b` |
-| 2 | `theorem` | [Equiv.optionCongr_swap](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/declarations/equiv-optioncongr-swap.md) | 21 | `result-track:5a34fe35f81ad6f5e3a752522b96b3962fb4c94f2e6541bb1611b6b9e52039a5` |
-| 3 | `theorem` | [Equiv.optionCongr_sign](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/declarations/equiv-optioncongr-sign.md) | 31 | `result-track:1b871ceb9c5112bd95a187c6af8fa03fbb560d803c03b81cba03ecdb3ae211d9` |
-| 4 | `theorem` | [map_equiv_removeNone](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/declarations/map-equiv-removenone.md) | 39 | `result-track:2a0fbf286ffaa1c7d3ddefd169b40eb11d729e40dbffffd8438994ed667cbee9` |
-| 5 | `def` | [Equiv.Perm.decomposeOption](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/declarations/equiv-perm-decomposeoption.md) | 56 | `declaration-track:0da5c427f1f92ea1df95df9a674fe465c85f0b20a1fa72f805a6132cef08165b` |
-| 6 | `theorem` | [Equiv.Perm.decomposeOption_symm_of_none_apply](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/declarations/equiv-perm-decomposeoption-symm-of-none-apply.md) | 66 | `result-track:b0b4f612bee8b1539da41667459abb7a4a56ee0815d980563cf536f4d997ee5b` |
-| 7 | `theorem` | [Equiv.Perm.decomposeOption_symm_sign](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/declarations/equiv-perm-decomposeoption-symm-sign.md) | 69 | `result-track:15655170cb922a8e221f063de1177e6a6edd4d90e8c1f853820726a59abb72a9` |
-| 8 | `theorem` | [Finset.univ_perm_option](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/declarations/finset-univ-perm-option.md) | 74 | `result-track:c2edb644f43d9905aaf978cdacc00ccb8b5279375cf7584a6d70c813e1f70d39` |
+| 1 | `theorem` | [Equiv.optionCongr_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/declarations/equiv-optioncongr-one.md) | 17 | `result-track:434ded4bf2c5c86347c03469540365f6c70ff8a39efb1ef52e7d9af6fcb2432b` |
+| 2 | `theorem` | [Equiv.optionCongr_swap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/declarations/equiv-optioncongr-swap.md) | 21 | `result-track:5a34fe35f81ad6f5e3a752522b96b3962fb4c94f2e6541bb1611b6b9e52039a5` |
+| 3 | `theorem` | [Equiv.optionCongr_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/declarations/equiv-optioncongr-sign.md) | 31 | `result-track:1b871ceb9c5112bd95a187c6af8fa03fbb560d803c03b81cba03ecdb3ae211d9` |
+| 4 | `theorem` | [map_equiv_removeNone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/declarations/map-equiv-removenone.md) | 39 | `result-track:2a0fbf286ffaa1c7d3ddefd169b40eb11d729e40dbffffd8438994ed667cbee9` |
+| 5 | `def` | [Equiv.Perm.decomposeOption](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/declarations/equiv-perm-decomposeoption.md) | 56 | `declaration-track:0da5c427f1f92ea1df95df9a674fe465c85f0b20a1fa72f805a6132cef08165b` |
+| 6 | `theorem` | [Equiv.Perm.decomposeOption_symm_of_none_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/declarations/equiv-perm-decomposeoption-symm-of-none-apply.md) | 66 | `result-track:b0b4f612bee8b1539da41667459abb7a4a56ee0815d980563cf536f4d997ee5b` |
+| 7 | `theorem` | [Equiv.Perm.decomposeOption_symm_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/declarations/equiv-perm-decomposeoption-symm-sign.md) | 69 | `result-track:15655170cb922a8e221f063de1177e6a6edd4d90e8c1f853820726a59abb72a9` |
+| 8 | `theorem` | [Finset.univ_perm_option](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermOption.lean/declarations/finset-univ-perm-option.md) | 74 | `result-track:c2edb644f43d9905aaf978cdacc00ccb8b5279375cf7584a6d70c813e1f70d39` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

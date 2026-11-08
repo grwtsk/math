@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ZetaHalfPlaneScaffold.lean/index.md) · [Full source](../../../../RealFunctions/ZetaHalfPlaneScaffold.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ZetaHalfPlaneScaffold.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ZetaHalfPlaneScaffold.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ZetaSeriesConvergesOnRealHalfPlane](../../../../RealFunctions/ZetaHalfPlaneScaffold.lean/declarations/zetaseriesconvergesonrealhalfplane.md) | 17 | `declaration-track:94277ee8bf5167d63d4c310d3ff95b905478dd824ad6a0280acfbd380ecc46c5` |
-| 2 | `def` | [EulerProductForZetaHalfPlaneTarget](../../../../RealFunctions/ZetaHalfPlaneScaffold.lean/declarations/eulerproductforzetahalfplanetarget.md) | 22 | `declaration-track:5622a92b8078c82dc755a5d7808f2a011df86446c9c99b844a9baa16f535a04e` |
-| 3 | `def` | [ZetaNonzeroOnRealGreaterThanOneTarget](../../../../RealFunctions/ZetaHalfPlaneScaffold.lean/declarations/zetanonzeroonrealgreaterthanonetarget.md) | 27 | `declaration-track:7a1781b8183f35584c9ed97c3d3a575a8d555539365df593797e1a9f3644175d` |
-| 4 | `def` | [PrimeNumberTheoremTarget](../../../../RealFunctions/ZetaHalfPlaneScaffold.lean/declarations/primenumbertheoremtarget.md) | 32 | `declaration-track:e1952af27d7db2394132af6990ba1e60b278027f271b699ae411fe00b1aad16b` |
-| 5 | `theorem` | [finite_partial_zeta_sum_nonnegative](../../../../RealFunctions/ZetaHalfPlaneScaffold.lean/declarations/finite-partial-zeta-sum-nonnegative.md) | 37 | `result-track:e68cde3a08fc90c344c5a536b2c92c645c88459b4f8e926fdf1ed295314e88b2` |
+| 1 | `def` | [ZetaSeriesConvergesOnRealHalfPlane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ZetaHalfPlaneScaffold.lean/declarations/zetaseriesconvergesonrealhalfplane.md) | 17 | `declaration-track:94277ee8bf5167d63d4c310d3ff95b905478dd824ad6a0280acfbd380ecc46c5` |
+| 2 | `def` | [EulerProductForZetaHalfPlaneTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ZetaHalfPlaneScaffold.lean/declarations/eulerproductforzetahalfplanetarget.md) | 22 | `declaration-track:5622a92b8078c82dc755a5d7808f2a011df86446c9c99b844a9baa16f535a04e` |
+| 3 | `def` | [ZetaNonzeroOnRealGreaterThanOneTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ZetaHalfPlaneScaffold.lean/declarations/zetanonzeroonrealgreaterthanonetarget.md) | 27 | `declaration-track:7a1781b8183f35584c9ed97c3d3a575a8d555539365df593797e1a9f3644175d` |
+| 4 | `def` | [PrimeNumberTheoremTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ZetaHalfPlaneScaffold.lean/declarations/primenumbertheoremtarget.md) | 32 | `declaration-track:e1952af27d7db2394132af6990ba1e60b278027f271b699ae411fe00b1aad16b` |
+| 5 | `theorem` | [finite_partial_zeta_sum_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ZetaHalfPlaneScaffold.lean/declarations/finite-partial-zeta-sum-nonnegative.md) | 37 | `result-track:e68cde3a08fc90c344c5a536b2c92c645c88459b4f8e926fdf1ed295314e88b2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

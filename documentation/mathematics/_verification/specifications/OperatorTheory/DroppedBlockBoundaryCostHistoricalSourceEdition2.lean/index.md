@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../OperatorTheory/DroppedBlockBoundaryCostHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../OperatorTheory/DroppedBlockBoundaryCostHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/DroppedBlockBoundaryCostHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/DroppedBlockBoundaryCostHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianBlockCounts`](../../../../OperatorTheory/SturmianBlockCounts.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS`](../../../../OperatorTheory/FreeIDS.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianBlockCounts`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/SturmianBlockCounts.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/FreeIDS.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [free_one](../../../../OperatorTheory/DroppedBlockBoundaryCostHistoricalSourceEdition2.lean/declarations/free-one.md) | 5 | `result-track:b25240428b332f66f4d096fc415df909449cb39dcc54699a2f49b9680d066401` |
-| 2 | `theorem` | [free_two](../../../../OperatorTheory/DroppedBlockBoundaryCostHistoricalSourceEdition2.lean/declarations/free-two.md) | 12 | `result-track:c40938b9643afc47088ca11ab414291f3ff8bd19be9925f94fb1831bdc7bf92a` |
-| 3 | `theorem` | [zero_count](../../../../OperatorTheory/DroppedBlockBoundaryCostHistoricalSourceEdition2.lean/declarations/zero-count.md) | 19 | `result-track:04372c3f64d771c74dfce32ffa0a8d2a65aab370e73ebc73a58c225fb4885a4c` |
-| 4 | `example` | [(anonymous)](../../../../OperatorTheory/DroppedBlockBoundaryCostHistoricalSourceEdition2.lean/declarations/example.md) | 23 | `declaration-track:9ee0215c251c19e238d0996b3efc1a86489f3cbb71fdd2e1bac9b26bb87f3e5a` |
+| 1 | `theorem` | [free_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/DroppedBlockBoundaryCostHistoricalSourceEdition2.lean/declarations/free-one.md) | 5 | `result-track:b25240428b332f66f4d096fc415df909449cb39dcc54699a2f49b9680d066401` |
+| 2 | `theorem` | [free_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/DroppedBlockBoundaryCostHistoricalSourceEdition2.lean/declarations/free-two.md) | 12 | `result-track:c40938b9643afc47088ca11ab414291f3ff8bd19be9925f94fb1831bdc7bf92a` |
+| 3 | `theorem` | [zero_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/DroppedBlockBoundaryCostHistoricalSourceEdition2.lean/declarations/zero-count.md) | 19 | `result-track:04372c3f64d771c74dfce32ffa0a8d2a65aab370e73ebc73a58c225fb4885a4c` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/DroppedBlockBoundaryCostHistoricalSourceEdition2.lean/declarations/example.md) | 23 | `declaration-track:9ee0215c251c19e238d0996b3efc1a86489f3cbb71fdd2e1bac9b26bb87f3e5a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

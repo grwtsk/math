@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemNamespacedFinitePrefixProjectiveSystem.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemNamespacedFinitePrefixProjectiveSystem.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemNamespacedFinitePrefixProjectiveSystem.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemNamespacedFinitePrefixProjectiveSystem.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FinitePrefixProjectiveSystem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemNamespacedFinitePrefixProjectiveSystem.lean/declarations/finiteprefixprojectivesystem.md) | 19 | `declaration-track:d52d75d5431675f7ad7664a9b21639cb6bf0e4945e46f9a18e430e8ee7ff9f2c` |
+| 1 | `structure` | [FinitePrefixProjectiveSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemNamespacedFinitePrefixProjectiveSystem.lean/declarations/finiteprefixprojectivesystem.md) | 19 | `declaration-track:d52d75d5431675f7ad7664a9b21639cb6bf0e4945e46f9a18e430e8ee7ff9f2c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

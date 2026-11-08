@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/DegeneraciesNamespaced.lean/index.md) · [Full source](../../../../AlgebraicTopology/DegeneraciesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DegeneraciesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DegeneraciesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [HigherFacesVanish.comp_σ](../../../../AlgebraicTopology/DegeneraciesNamespaced.lean/declarations/higherfacesvanish-comp.md) | 46 | `result-track:0943e112912b6d8ba528eb7b399553f57167b7615d1403d92882946f37208850` |
-| 2 | `theorem` | [σ_comp_P_eq_zero](../../../../AlgebraicTopology/DegeneraciesNamespaced.lean/declarations/comp-p-eq-zero.md) | 62 | `result-track:f3a48946271d666be6e60abc2545b475cea782341658ec833d2ac831b8fb9f21` |
-| 3 | `theorem` | [σ_comp_PInfty](../../../../AlgebraicTopology/DegeneraciesNamespaced.lean/declarations/comp-pinfty.md) | 128 | `result-track:6f0d617683fa59df764504db0864dc8762f3ec7efebbefb35795b562f17c71c9` |
-| 4 | `theorem` | [degeneracy_comp_PInfty](../../../../AlgebraicTopology/DegeneraciesNamespaced.lean/declarations/degeneracy-comp-pinfty.md) | 134 | `result-track:f2014209c2474932dfb0c348a49d0f6704cebe759f7229664a2496246bc9ad47` |
+| 1 | `theorem` | [HigherFacesVanish.comp_σ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DegeneraciesNamespaced.lean/declarations/higherfacesvanish-comp.md) | 46 | `result-track:0943e112912b6d8ba528eb7b399553f57167b7615d1403d92882946f37208850` |
+| 2 | `theorem` | [σ_comp_P_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DegeneraciesNamespaced.lean/declarations/comp-p-eq-zero.md) | 62 | `result-track:f3a48946271d666be6e60abc2545b475cea782341658ec833d2ac831b8fb9f21` |
+| 3 | `theorem` | [σ_comp_PInfty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DegeneraciesNamespaced.lean/declarations/comp-pinfty.md) | 128 | `result-track:6f0d617683fa59df764504db0864dc8762f3ec7efebbefb35795b562f17c71c9` |
+| 4 | `theorem` | [degeneracy_comp_PInfty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DegeneraciesNamespaced.lean/declarations/degeneracy-comp-pinfty.md) | 134 | `result-track:f2014209c2474932dfb0c348a49d0f6704cebe759f7229664a2496246bc9ad47` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

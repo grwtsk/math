@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/FourNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/FourNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,23 +61,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Fermat42](../../../../NumberTheory/FourNamespaced.lean/declarations/fermat42.md) | 32 | `declaration-track:6bef83e5695fd0e21e7fe7bc572c4138037bf83c6168963f6442f649a0e50c4e` |
-| 2 | `theorem` | [comm](../../../../NumberTheory/FourNamespaced.lean/declarations/comm.md) | 37 | `result-track:53b12f69b28825f45213c3e53fa8733b5abebc5f7c8c4cae7cf3b6a4575335a1` |
-| 3 | `theorem` | [mul](../../../../NumberTheory/FourNamespaced.lean/declarations/mul.md) | 42 | `result-track:be7bd27a35a50870193deafdbefba10328166d51158e18a3b4687670507f3e10` |
-| 4 | `theorem` | [ne_zero](../../../../NumberTheory/FourNamespaced.lean/declarations/ne-zero.md) | 61 | `result-track:a16fd271929ca06935414fbd2c308a3a82d244cd10cc4fd7e6c8d64de16f76f0` |
-| 5 | `def` | [Minimal](../../../../NumberTheory/FourNamespaced.lean/declarations/minimal.md) | 69 | `declaration-track:4202535ebb4734aebe672f55778ca8bf6abecc7414b40760c5788a76b6dcec9b` |
-| 6 | `theorem` | [exists_minimal](../../../../NumberTheory/FourNamespaced.lean/declarations/exists-minimal.md) | 73 | `result-track:d569379c5b7efc9e51f2ab9f5a81163e1e117a321fcf71b66917f57f9b620619` |
-| 7 | `theorem` | [coprime_of_minimal](../../../../NumberTheory/FourNamespaced.lean/declarations/coprime-of-minimal.md) | 90 | `result-track:e82516a504d72c3b6adb1636484213e5f66bafa424215ae38a1d8e6ac9b2ff3a` |
-| 8 | `theorem` | [minimal_comm](../../../../NumberTheory/FourNamespaced.lean/declarations/minimal-comm.md) | 109 | `result-track:7fbb173023c5d78ff0f9d8d3a2ef4e695d5e07306167b15fb101c7113d950a1b` |
-| 9 | `theorem` | [neg_of_minimal](../../../../NumberTheory/FourNamespaced.lean/declarations/neg-of-minimal.md) | 113 | `result-track:f52cc51e9656f388cdf2afdf802c749599b016ca964b7b1225503bcfb7145466` |
-| 10 | `theorem` | [exists_odd_minimal](../../../../NumberTheory/FourNamespaced.lean/declarations/exists-odd-minimal.md) | 122 | `result-track:0bb9884d017efb9752d2ff84907553407673d288b916d35a8762081e1643a95e` |
-| 11 | `theorem` | [exists_pos_odd_minimal](../../../../NumberTheory/FourNamespaced.lean/declarations/exists-pos-odd-minimal.md) | 138 | `result-track:c71f5f5d9c1a9eb0b84c465800bc2b9d05c0014c16263b5fccabbe9a38a61905` |
-| 12 | `theorem` | [Int.isCoprime_of_sq_sum](../../../../NumberTheory/FourNamespaced.lean/declarations/int-iscoprime-of-sq-sum.md) | 150 | `result-track:0b39a6e6b02dab47f336e63035ac9f68ac27806ad64de1191c9b8540e15ddb2e` |
-| 13 | `theorem` | [Int.isCoprime_of_sq_sum'](../../../../NumberTheory/FourNamespaced.lean/declarations/int-iscoprime-of-sq-sum-source-edition-2.md) | 156 | `result-track:a2b24379ae4356ea3922014826aae5e6122443c6c361e233a2880c4cf462f18f` |
-| 14 | `theorem` | [not_minimal](../../../../NumberTheory/FourNamespaced.lean/declarations/not-minimal.md) | 167 | `result-track:5c27f6a2836d1c34b73ea05369684c445e41097440cd068085be24734bae5c17` |
-| 15 | `theorem` | [not_fermat_42](../../../../NumberTheory/FourNamespaced.lean/declarations/not-fermat-42.md) | 296 | `result-track:f80fb7c36f01bc22253909b9b0c270fa4c95278daf4a2a15458c7f47e79cd914` |
-| 16 | `theorem` | [fermatLastTheoremFour](../../../../NumberTheory/FourNamespaced.lean/declarations/fermatlasttheoremfour.md) | 306 | `result-track:b6111750b9bfaa95c13546b6f23e5fc072b7da42acc79c71e804d854f569e8a0` |
-| 17 | `theorem` | [FermatLastTheorem.of_odd_primes](../../../../NumberTheory/FourNamespaced.lean/declarations/fermatlasttheorem-of-odd-primes.md) | 315 | `result-track:efbed152091d317feafca97967124fb4c621e05ae8f6c992e62dd958134e14cc` |
+| 1 | `def` | [Fermat42](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourNamespaced.lean/declarations/fermat42.md) | 32 | `declaration-track:6bef83e5695fd0e21e7fe7bc572c4138037bf83c6168963f6442f649a0e50c4e` |
+| 2 | `theorem` | [comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourNamespaced.lean/declarations/comm.md) | 37 | `result-track:53b12f69b28825f45213c3e53fa8733b5abebc5f7c8c4cae7cf3b6a4575335a1` |
+| 3 | `theorem` | [mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourNamespaced.lean/declarations/mul.md) | 42 | `result-track:be7bd27a35a50870193deafdbefba10328166d51158e18a3b4687670507f3e10` |
+| 4 | `theorem` | [ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourNamespaced.lean/declarations/ne-zero.md) | 61 | `result-track:a16fd271929ca06935414fbd2c308a3a82d244cd10cc4fd7e6c8d64de16f76f0` |
+| 5 | `def` | [Minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourNamespaced.lean/declarations/minimal.md) | 69 | `declaration-track:4202535ebb4734aebe672f55778ca8bf6abecc7414b40760c5788a76b6dcec9b` |
+| 6 | `theorem` | [exists_minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourNamespaced.lean/declarations/exists-minimal.md) | 73 | `result-track:d569379c5b7efc9e51f2ab9f5a81163e1e117a321fcf71b66917f57f9b620619` |
+| 7 | `theorem` | [coprime_of_minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourNamespaced.lean/declarations/coprime-of-minimal.md) | 90 | `result-track:e82516a504d72c3b6adb1636484213e5f66bafa424215ae38a1d8e6ac9b2ff3a` |
+| 8 | `theorem` | [minimal_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourNamespaced.lean/declarations/minimal-comm.md) | 109 | `result-track:7fbb173023c5d78ff0f9d8d3a2ef4e695d5e07306167b15fb101c7113d950a1b` |
+| 9 | `theorem` | [neg_of_minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourNamespaced.lean/declarations/neg-of-minimal.md) | 113 | `result-track:f52cc51e9656f388cdf2afdf802c749599b016ca964b7b1225503bcfb7145466` |
+| 10 | `theorem` | [exists_odd_minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourNamespaced.lean/declarations/exists-odd-minimal.md) | 122 | `result-track:0bb9884d017efb9752d2ff84907553407673d288b916d35a8762081e1643a95e` |
+| 11 | `theorem` | [exists_pos_odd_minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourNamespaced.lean/declarations/exists-pos-odd-minimal.md) | 138 | `result-track:c71f5f5d9c1a9eb0b84c465800bc2b9d05c0014c16263b5fccabbe9a38a61905` |
+| 12 | `theorem` | [Int.isCoprime_of_sq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourNamespaced.lean/declarations/int-iscoprime-of-sq-sum.md) | 150 | `result-track:0b39a6e6b02dab47f336e63035ac9f68ac27806ad64de1191c9b8540e15ddb2e` |
+| 13 | `theorem` | [Int.isCoprime_of_sq_sum'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourNamespaced.lean/declarations/int-iscoprime-of-sq-sum-source-edition-2.md) | 156 | `result-track:a2b24379ae4356ea3922014826aae5e6122443c6c361e233a2880c4cf462f18f` |
+| 14 | `theorem` | [not_minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourNamespaced.lean/declarations/not-minimal.md) | 167 | `result-track:5c27f6a2836d1c34b73ea05369684c445e41097440cd068085be24734bae5c17` |
+| 15 | `theorem` | [not_fermat_42](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourNamespaced.lean/declarations/not-fermat-42.md) | 296 | `result-track:f80fb7c36f01bc22253909b9b0c270fa4c95278daf4a2a15458c7f47e79cd914` |
+| 16 | `theorem` | [fermatLastTheoremFour](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourNamespaced.lean/declarations/fermatlasttheoremfour.md) | 306 | `result-track:b6111750b9bfaa95c13546b6f23e5fc072b7da42acc79c71e804d854f569e8a0` |
+| 17 | `theorem` | [FermatLastTheorem.of_odd_primes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourNamespaced.lean/declarations/fermatlasttheorem-of-odd-primes.md) | 315 | `result-track:efbed152091d317feafca97967124fb4c621e05ae8f6c992e62dd958134e14cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

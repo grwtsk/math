@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/FactorialNatCast.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/FactorialNatCast.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialNatCast.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialNatCast.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [natCast_factorial_of_le](../../../../../NumberTheory/ElementaryNumberTheory/FactorialNatCast.lean/declarations/natcast-factorial-of-le.md) | 27 | `result-track:fc2e1572bee5f0f9a427980e419b440f06581c9d320700e9a7385d155617028f` |
-| 2 | `theorem` | [natCast_factorial_of_lt](../../../../../NumberTheory/ElementaryNumberTheory/FactorialNatCast.lean/declarations/natcast-factorial-of-lt.md) | 39 | `result-track:20b6c99c271343e9c2c0ef548cbfbb54b101e36fa09dbd3ec4804f0ea84f8509` |
-| 3 | `theorem` | [natCast_factorial_of_algebra](../../../../../NumberTheory/ElementaryNumberTheory/FactorialNatCast.lean/declarations/natcast-factorial-of-algebra.md) | 44 | `result-track:a84c826d857125a7354a44fd99bedc1f4ab255ef6697b354ea953df7283ce9e9` |
-| 4 | `theorem` | [natCast_factorial_iff_of_charP](../../../../../NumberTheory/ElementaryNumberTheory/FactorialNatCast.lean/declarations/natcast-factorial-iff-of-charp.md) | 56 | `result-track:bdde8723c2a171929357fe795df409592018838cb90be7d3c52a07e11873abf2` |
+| 1 | `theorem` | [natCast_factorial_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialNatCast.lean/declarations/natcast-factorial-of-le.md) | 27 | `result-track:fc2e1572bee5f0f9a427980e419b440f06581c9d320700e9a7385d155617028f` |
+| 2 | `theorem` | [natCast_factorial_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialNatCast.lean/declarations/natcast-factorial-of-lt.md) | 39 | `result-track:20b6c99c271343e9c2c0ef548cbfbb54b101e36fa09dbd3ec4804f0ea84f8509` |
+| 3 | `theorem` | [natCast_factorial_of_algebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialNatCast.lean/declarations/natcast-factorial-of-algebra.md) | 44 | `result-track:a84c826d857125a7354a44fd99bedc1f4ab255ef6697b354ea953df7283ce9e9` |
+| 4 | `theorem` | [natCast_factorial_iff_of_charP](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialNatCast.lean/declarations/natcast-factorial-iff-of-charp.md) | 56 | `result-track:bdde8723c2a171929357fe795df409592018838cb90be7d3c52a07e11873abf2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

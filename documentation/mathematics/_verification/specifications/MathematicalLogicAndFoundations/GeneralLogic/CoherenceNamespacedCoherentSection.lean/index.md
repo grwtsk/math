@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoherenceNamespacedCoherentSection.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoherenceNamespacedCoherentSection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoherenceNamespacedCoherentSection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoherenceNamespacedCoherentSection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CoherentSection](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoherenceNamespacedCoherentSection.lean/declarations/coherentsection.md) | 30 | `declaration-track:285e7c57e3be8e20efbc1429f99289f57253e8685eda07b56d831fe8193391d9` |
-| 2 | `theorem` | [coherent_transportPath](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoherenceNamespacedCoherentSection.lean/declarations/coherent-transportpath.md) | 40 | `result-track:82677cb19d08ce6f32040620615992237a2ddf66d2800fa7564f22fdebf4c8e7` |
+| 1 | `structure` | [CoherentSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoherenceNamespacedCoherentSection.lean/declarations/coherentsection.md) | 30 | `declaration-track:285e7c57e3be8e20efbc1429f99289f57253e8685eda07b56d831fe8193391d9` |
+| 2 | `theorem` | [coherent_transportPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoherenceNamespacedCoherentSection.lean/declarations/coherent-transportpath.md) | 40 | `result-track:82677cb19d08ce6f32040620615992237a2ddf66d2800fa7564f22fdebf4c8e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

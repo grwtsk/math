@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SpectralSequenceComplexShapeComplexShapePublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SpectralSequenceComplexShapeComplexShapePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SpectralSequenceComplexShapeComplexShapePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SpectralSequenceComplexShapeComplexShapePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [spectralSequenceNat](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SpectralSequenceComplexShapeComplexShapePublic.lean/declarations/spectralsequencenat.md) | 36 | `declaration-track:39a4c9b9b0480cc340fd2a3ff2c497976422e19616966a26185b987b88c99ac0` |
-| 2 | `lemma` | [spectralSequenceNat_rel_iff](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SpectralSequenceComplexShapeComplexShapePublic.lean/declarations/spectralsequencenat-rel-iff.md) | 42 | `result-track:0b6ec306dbd1b87be3a2e409a1e9ec5170686d58182a9d093f43f96dffea0bcc` |
-| 3 | `def` | [spectralSequenceFin](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SpectralSequenceComplexShapeComplexShapePublic.lean/declarations/spectralsequencefin.md) | 47 | `declaration-track:91f98311b2b8f15545aa78442915158f3bcd72cc34108ad7397dfd7c0d2de185` |
-| 4 | `lemma` | [spectralSequenceFin_rel_iff](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SpectralSequenceComplexShapeComplexShapePublic.lean/declarations/spectralsequencefin-rel-iff.md) | 53 | `result-track:4ea23a6cf33f137ddefdb77477e9609f5cfce1e1c5ae5763a66210e12c0d81ef` |
+| 1 | `def` | [spectralSequenceNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SpectralSequenceComplexShapeComplexShapePublic.lean/declarations/spectralsequencenat.md) | 36 | `declaration-track:39a4c9b9b0480cc340fd2a3ff2c497976422e19616966a26185b987b88c99ac0` |
+| 2 | `lemma` | [spectralSequenceNat_rel_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SpectralSequenceComplexShapeComplexShapePublic.lean/declarations/spectralsequencenat-rel-iff.md) | 42 | `result-track:0b6ec306dbd1b87be3a2e409a1e9ec5170686d58182a9d093f43f96dffea0bcc` |
+| 3 | `def` | [spectralSequenceFin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SpectralSequenceComplexShapeComplexShapePublic.lean/declarations/spectralsequencefin.md) | 47 | `declaration-track:91f98311b2b8f15545aa78442915158f3bcd72cc34108ad7397dfd7c0d2de185` |
+| 4 | `lemma` | [spectralSequenceFin_rel_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SpectralSequenceComplexShapeComplexShapePublic.lean/declarations/spectralsequencefin-rel-iff.md) | 53 | `result-track:4ea23a6cf33f137ddefdb77477e9609f5cfce1e1c5ae5763a66210e12c0d81ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

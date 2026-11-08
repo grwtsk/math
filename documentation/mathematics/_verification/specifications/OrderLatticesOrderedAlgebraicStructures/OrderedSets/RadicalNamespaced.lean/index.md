@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/RadicalNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/RadicalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/RadicalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/RadicalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Order.radical](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/RadicalNamespaced.lean/declarations/order-radical.md) | 28 | `declaration-track:33a65efd3ff35c78c0df37614f71ad1b23bb453f7587f602ea7397bdff70f68e` |
-| 2 | `lemma` | [Order.radical_le_coatom](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/RadicalNamespaced.lean/declarations/order-radical-le-coatom.md) | 33 | `result-track:7ea4e8f3360820f933d5ab15e05b7a9e46bd8bab82fe5db702e0d075829dbaf0` |
-| 3 | `theorem` | [OrderIso.map_radical](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/RadicalNamespaced.lean/declarations/orderiso-map-radical.md) | 37 | `result-track:2124e2c48a1e0b09e1eff8c8312add9dd013c257eb5093971b1477a3d8139b50` |
-| 4 | `theorem` | [Order.radical_nongenerating](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/RadicalNamespaced.lean/declarations/order-radical-nongenerating.md) | 44 | `result-track:2ffd81d913a549a369ef19da708b2dfd109462d1b658049569da9a09ccc3062d` |
+| 1 | `def` | [Order.radical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/RadicalNamespaced.lean/declarations/order-radical.md) | 28 | `declaration-track:33a65efd3ff35c78c0df37614f71ad1b23bb453f7587f602ea7397bdff70f68e` |
+| 2 | `lemma` | [Order.radical_le_coatom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/RadicalNamespaced.lean/declarations/order-radical-le-coatom.md) | 33 | `result-track:7ea4e8f3360820f933d5ab15e05b7a9e46bd8bab82fe5db702e0d075829dbaf0` |
+| 3 | `theorem` | [OrderIso.map_radical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/RadicalNamespaced.lean/declarations/orderiso-map-radical.md) | 37 | `result-track:2124e2c48a1e0b09e1eff8c8312add9dd013c257eb5093971b1477a3d8139b50` |
+| 4 | `theorem` | [Order.radical_nongenerating](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/RadicalNamespaced.lean/declarations/order-radical-nongenerating.md) | 44 | `result-track:2ffd81d913a549a369ef19da708b2dfd109462d1b658049569da9a09ccc3062d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

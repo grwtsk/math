@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/BornologyReal.lean/index.md) · [Full source](../../../../GeneralTopology/BornologyReal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornologyReal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornologyReal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instIsOrderBornology](../../../../GeneralTopology/BornologyReal.lean/declarations/instisorderbornology.md) | 20 | `declaration-track:12a5ec4e76434a35f2305036ef7dee565ee888a4e07c9a2bf578f4e9b16b30a6` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/BornologyReal.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:a976e6952da94a0931fc42fcd983f0e886229ba4e63f2353ca48d3774a47af20` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/BornologyReal.lean/declarations/instance.md) | 37 | `declaration-track:5848e20ea96289461f749fa880d4a49c63704cf987a73302cb3d4d777c3dc2dc` |
+| 1 | `instance` | [instIsOrderBornology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornologyReal.lean/declarations/instisorderbornology.md) | 20 | `declaration-track:12a5ec4e76434a35f2305036ef7dee565ee888a4e07c9a2bf578f4e9b16b30a6` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornologyReal.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:a976e6952da94a0931fc42fcd983f0e886229ba4e63f2353ca48d3774a47af20` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornologyReal.lean/declarations/instance.md) | 37 | `declaration-track:5848e20ea96289461f749fa880d4a49c63704cf987a73302cb3d4d777c3dc2dc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

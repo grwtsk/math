@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DecisionCertificateStalePremise.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DecisionCertificateStalePremise.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DecisionCertificateStalePremise.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DecisionCertificateStalePremise.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.FiniteSequences.DecisionCertificate`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificateHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Logic.FiniteSequences.DecisionCertificate`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificateHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [boundedPremise](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DecisionCertificateStalePremise.lean/declarations/boundedpremise.md) | 6 | `declaration-track:bad7e1ddb4cdced0bee564127dc845f95b59539a86ed749b1c065de24cb4c545` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DecisionCertificateStalePremise.lean/declarations/example.md) | 11 | `declaration-track:b919d35407d1ed55af5c31c3e95f29b43f8a185f17d02dd2396734085bd47091` |
+| 1 | `def` | [boundedPremise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DecisionCertificateStalePremise.lean/declarations/boundedpremise.md) | 6 | `declaration-track:bad7e1ddb4cdced0bee564127dc845f95b59539a86ed749b1c065de24cb4c545` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DecisionCertificateStalePremise.lean/declarations/example.md) | 11 | `declaration-track:b919d35407d1ed55af5c31c3e95f29b43f8a185f17d02dd2396734085bd47091` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

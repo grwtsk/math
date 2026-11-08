@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/PolarCoord.lean/index.md) · [Full source](../../../../SpecialFunctions/PolarCoord.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PolarCoord.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PolarCoord.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../SpecialFunctions/PolarCoord.lean/declarations/macro-rules.md) | 25 | `declaration-track:39e3c4f49f2d9488b86d020841b8d59f7d4076513a4794c8bdb4d31288c3d1b6` |
-| 2 | `def` | [polarCoord](../../../../SpecialFunctions/PolarCoord.lean/declarations/polarcoord.md) | 34 | `declaration-track:18279cc556afb6df28ea49b7527335593111f4ef63e7a2857c362c81038d9e1f` |
-| 3 | `theorem` | [hasFDerivAt_polarCoord_symm](../../../../SpecialFunctions/PolarCoord.lean/declarations/hasfderivat-polarcoord-symm.md) | 99 | `result-track:db8d54c75919e70eeeb8423f5b95b39fa70e5d34ca14ac89c45d02d4d5f7461a` |
-| 4 | `instance` | [(anonymous)](../../../../SpecialFunctions/PolarCoord.lean/declarations/instance.md) | 111 | `declaration-track:832ac345af3a4698615a4d132e7949f4e66ed4bf58652fd23ba6d475c207949a` |
-| 5 | `theorem` | [polarCoord_source_ae_eq_univ](../../../../SpecialFunctions/PolarCoord.lean/declarations/polarcoord-source-ae-eq-univ.md) | 114 | `result-track:2818ef998df116dde265acf65977e8ed5670d691a174b906bf23f4b1dbf5e2e0` |
-| 6 | `theorem` | [integral_comp_polarCoord_symm](../../../../SpecialFunctions/PolarCoord.lean/declarations/integral-comp-polarcoord-symm.md) | 130 | `result-track:0cf9a4a6dd27240632f446ffc0541ecbb80d0305e6abc690b4d50a10dd120300` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PolarCoord.lean/declarations/macro-rules.md) | 25 | `declaration-track:39e3c4f49f2d9488b86d020841b8d59f7d4076513a4794c8bdb4d31288c3d1b6` |
+| 2 | `def` | [polarCoord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PolarCoord.lean/declarations/polarcoord.md) | 34 | `declaration-track:18279cc556afb6df28ea49b7527335593111f4ef63e7a2857c362c81038d9e1f` |
+| 3 | `theorem` | [hasFDerivAt_polarCoord_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PolarCoord.lean/declarations/hasfderivat-polarcoord-symm.md) | 99 | `result-track:db8d54c75919e70eeeb8423f5b95b39fa70e5d34ca14ac89c45d02d4d5f7461a` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PolarCoord.lean/declarations/instance.md) | 111 | `declaration-track:832ac345af3a4698615a4d132e7949f4e66ed4bf58652fd23ba6d475c207949a` |
+| 5 | `theorem` | [polarCoord_source_ae_eq_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PolarCoord.lean/declarations/polarcoord-source-ae-eq-univ.md) | 114 | `result-track:2818ef998df116dde265acf65977e8ed5670d691a174b906bf23f4b1dbf5e2e0` |
+| 6 | `theorem` | [integral_comp_polarCoord_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PolarCoord.lean/declarations/integral-comp-polarcoord-symm.md) | 130 | `result-track:0cf9a4a6dd27240632f446ffc0541ecbb80d0305e6abc690b4d50a10dd120300` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

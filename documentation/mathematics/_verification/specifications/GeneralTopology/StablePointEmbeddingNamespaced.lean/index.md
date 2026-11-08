@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/StablePointEmbeddingNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/StablePointEmbeddingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbeddingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbeddingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StableProbeFamily](../../../../GeneralTopology/StablePointEmbeddingNamespaced.lean/declarations/stableprobefamily.md) | 29 | `declaration-track:86aef23b392061a9d1788de117414de394485844776d21a2602b2be29259d24b` |
-| 2 | `def` | [profile](../../../../GeneralTopology/StablePointEmbeddingNamespaced.lean/declarations/profile.md) | 45 | `declaration-track:dd2134f1ecf5bfa5dae452a71eaa1a9c067fb41f3a7b47b39f8051947e069288` |
-| 3 | `structure` | [Rigid](../../../../GeneralTopology/StablePointEmbeddingNamespaced.lean/declarations/rigid.md) | 52 | `declaration-track:f83b342ca6a2fe0d5feae34422956673235db123b0b9e989247dade8604468a2` |
-| 4 | `theorem` | [Rigid.isEmbedding](../../../../GeneralTopology/StablePointEmbeddingNamespaced.lean/declarations/rigid-isembedding.md) | 60 | `result-track:c7b29a8c03bbdb8581ceb08a6d939d0f43c07030d197b871e583b8482807c620` |
-| 5 | `theorem` | [Rigid.injective](../../../../GeneralTopology/StablePointEmbeddingNamespaced.lean/declarations/rigid-injective.md) | 66 | `result-track:6d1114a1e3d5c240b5351f2a17e63ea1e2f1ab730bac8fbd6b6d20df7673e6dd` |
-| 6 | `def` | [CompactProbeRigidityStatement](../../../../GeneralTopology/StablePointEmbeddingNamespaced.lean/declarations/compactproberigiditystatement.md) | 77 | `declaration-track:b72c1b9a42dc557bc1b20ea68a8a508371fe451c754442bc169c5b5cfe4993ba` |
-| 7 | `def` | [compactProbeRigidityOpenElement](../../../../GeneralTopology/StablePointEmbeddingNamespaced.lean/declarations/compactproberigidityopenelement.md) | 89 | `declaration-track:a22740f0db822743cf2581b5cb36bc9b2109c34a9c0f9ef9ae7df28c7fbf98ba` |
-| 8 | `theorem` | [compactProbeRigidity](../../../../GeneralTopology/StablePointEmbeddingNamespaced.lean/declarations/compactproberigidity.md) | 111 | `result-track:2c836404ce3d213bc58365316aa672656d02947fd3ed6d0429254fc616b7114d` |
-| 9 | `def` | [compactProbeRigidityTheoremElement](../../../../GeneralTopology/StablePointEmbeddingNamespaced.lean/declarations/compactproberigiditytheoremelement.md) | 124 | `declaration-track:514dabd2321ddf256ad40f01f7e8cf0ed76d76a49df4991482bba974d37bef6c` |
+| 1 | `structure` | [StableProbeFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbeddingNamespaced.lean/declarations/stableprobefamily.md) | 29 | `declaration-track:86aef23b392061a9d1788de117414de394485844776d21a2602b2be29259d24b` |
+| 2 | `def` | [profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbeddingNamespaced.lean/declarations/profile.md) | 45 | `declaration-track:dd2134f1ecf5bfa5dae452a71eaa1a9c067fb41f3a7b47b39f8051947e069288` |
+| 3 | `structure` | [Rigid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbeddingNamespaced.lean/declarations/rigid.md) | 52 | `declaration-track:f83b342ca6a2fe0d5feae34422956673235db123b0b9e989247dade8604468a2` |
+| 4 | `theorem` | [Rigid.isEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbeddingNamespaced.lean/declarations/rigid-isembedding.md) | 60 | `result-track:c7b29a8c03bbdb8581ceb08a6d939d0f43c07030d197b871e583b8482807c620` |
+| 5 | `theorem` | [Rigid.injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbeddingNamespaced.lean/declarations/rigid-injective.md) | 66 | `result-track:6d1114a1e3d5c240b5351f2a17e63ea1e2f1ab730bac8fbd6b6d20df7673e6dd` |
+| 6 | `def` | [CompactProbeRigidityStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbeddingNamespaced.lean/declarations/compactproberigiditystatement.md) | 77 | `declaration-track:b72c1b9a42dc557bc1b20ea68a8a508371fe451c754442bc169c5b5cfe4993ba` |
+| 7 | `def` | [compactProbeRigidityOpenElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbeddingNamespaced.lean/declarations/compactproberigidityopenelement.md) | 89 | `declaration-track:a22740f0db822743cf2581b5cb36bc9b2109c34a9c0f9ef9ae7df28c7fbf98ba` |
+| 8 | `theorem` | [compactProbeRigidity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbeddingNamespaced.lean/declarations/compactproberigidity.md) | 111 | `result-track:2c836404ce3d213bc58365316aa672656d02947fd3ed6d0429254fc616b7114d` |
+| 9 | `def` | [compactProbeRigidityTheoremElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StablePointEmbeddingNamespaced.lean/declarations/compactproberigiditytheoremelement.md) | 124 | `declaration-track:514dabd2321ddf256ad40f01f7e8cf0ed76d76a49df4991482bba974d37bef6c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

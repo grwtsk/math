@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Imo2001Q4NamespacedPublic.lean/index.md) · [Full source](../../../../Combinatorics/Imo2001Q4NamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2001Q4NamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2001Q4NamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [S](../../../../Combinatorics/Imo2001Q4NamespacedPublic.lean/declarations/s.md) | 48 | `declaration-track:ecfea3876b48e8d8dd3d832e4c9ccab75af3387b2daf25ac2e145956e2f02b1e` |
-| 2 | `lemma` | [sum_range_modEq_sum_of_contra](../../../../Combinatorics/Imo2001Q4NamespacedPublic.lean/declarations/sum-range-modeq-sum-of-contra.md) | 52 | `result-track:3c9b8e2248ae155bb558fbfde78ccd95b383256d6d59b3599edfb74f9fbec6e9` |
-| 3 | `lemma` | [sum_perm_add_one](../../../../Combinatorics/Imo2001Q4NamespacedPublic.lean/declarations/sum-perm-add-one.md) | 84 | `result-track:99626704974885d49ce2025a1e724414129268122f56660950dea31379f143d3` |
-| 4 | `lemma` | [sum_modEq_zero_of_odd](../../../../Combinatorics/Imo2001Q4NamespacedPublic.lean/declarations/sum-modeq-zero-of-odd.md) | 97 | `result-track:13074beece1b79da020d16bcafcd17b02fd7db977a46c476b811efcf357388d5` |
-| 5 | `theorem` | [result](../../../../Combinatorics/Imo2001Q4NamespacedPublic.lean/declarations/result.md) | 108 | `result-track:f70782ea610fc64b94b081e7db00b8419f229c93630a9800fb3c7319ed49d8ae` |
+| 1 | `def` | [S](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2001Q4NamespacedPublic.lean/declarations/s.md) | 48 | `declaration-track:ecfea3876b48e8d8dd3d832e4c9ccab75af3387b2daf25ac2e145956e2f02b1e` |
+| 2 | `lemma` | [sum_range_modEq_sum_of_contra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2001Q4NamespacedPublic.lean/declarations/sum-range-modeq-sum-of-contra.md) | 52 | `result-track:3c9b8e2248ae155bb558fbfde78ccd95b383256d6d59b3599edfb74f9fbec6e9` |
+| 3 | `lemma` | [sum_perm_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2001Q4NamespacedPublic.lean/declarations/sum-perm-add-one.md) | 84 | `result-track:99626704974885d49ce2025a1e724414129268122f56660950dea31379f143d3` |
+| 4 | `lemma` | [sum_modEq_zero_of_odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2001Q4NamespacedPublic.lean/declarations/sum-modeq-zero-of-odd.md) | 97 | `result-track:13074beece1b79da020d16bcafcd17b02fd7db977a46c476b811efcf357388d5` |
+| 5 | `theorem` | [result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2001Q4NamespacedPublic.lean/declarations/result.md) | 108 | `result-track:f70782ea610fc64b94b081e7db00b8419f229c93630a9800fb3c7319ed49d8ae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instLocallyFiniteOrder](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/declarations/instlocallyfiniteorder.md) | 50 | `declaration-track:0ad1ef52dd078b51dd8d623e4d2a5a1bb7b31645017816b32cb70c69b85bba5d` |
-| 2 | `theorem` | [Icc_eq](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/declarations/icc-eq.md) | 56 | `result-track:a347ac1504cf5c98314b4e9b72e33818bd42b83c208999ff2ab709198c39e8bd` |
-| 3 | `theorem` | [uIcc_eq](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/declarations/uicc-eq.md) | 61 | `result-track:4537dca7b2829c1e8998006aac4f66c226e9b45b1d92ee3fa10e2836c8bfb906` |
-| 4 | `theorem` | [card_Icc](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/declarations/card-icc.md) | 66 | `result-track:8263ab9756e4d2f0f6ce61618317dfb2b79b4873396fb7ea0ff83bddde7d9b02` |
-| 5 | `theorem` | [card_Ico](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/declarations/card-ico.md) | 71 | `result-track:6ec2307947829f24a17ff2ecfb07a7a89678c7378fa63323ed5f1ec0f1d30d1e` |
-| 6 | `theorem` | [card_Ioc](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/declarations/card-ioc.md) | 75 | `result-track:d0621b207a85e90adb7f429d11939fa1a00e0dd3dae33735b548f774328d3de1` |
-| 7 | `theorem` | [card_Ioo](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/declarations/card-ioo.md) | 79 | `result-track:b9c2c93fb03d5e6d2663be94ba1f7ee3c6ab24d430967ececabc92a8193972ee` |
-| 8 | `theorem` | [card_uIcc](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/declarations/card-uicc.md) | 83 | `result-track:ccfa0df988f2d2d639cd59d594024752e1536d4bb82bdcd45f3941cb224095f7` |
-| 9 | `theorem` | [card_Iic](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/declarations/card-iic.md) | 88 | `result-track:3945ba95bd50a1a75abac150d46fb471e529cc8905ecd9a180cf50373135e81b` |
+| 1 | `instance` | [instLocallyFiniteOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/declarations/instlocallyfiniteorder.md) | 50 | `declaration-track:0ad1ef52dd078b51dd8d623e4d2a5a1bb7b31645017816b32cb70c69b85bba5d` |
+| 2 | `theorem` | [Icc_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/declarations/icc-eq.md) | 56 | `result-track:a347ac1504cf5c98314b4e9b72e33818bd42b83c208999ff2ab709198c39e8bd` |
+| 3 | `theorem` | [uIcc_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/declarations/uicc-eq.md) | 61 | `result-track:4537dca7b2829c1e8998006aac4f66c226e9b45b1d92ee3fa10e2836c8bfb906` |
+| 4 | `theorem` | [card_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/declarations/card-icc.md) | 66 | `result-track:8263ab9756e4d2f0f6ce61618317dfb2b79b4873396fb7ea0ff83bddde7d9b02` |
+| 5 | `theorem` | [card_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/declarations/card-ico.md) | 71 | `result-track:6ec2307947829f24a17ff2ecfb07a7a89678c7378fa63323ed5f1ec0f1d30d1e` |
+| 6 | `theorem` | [card_Ioc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/declarations/card-ioc.md) | 75 | `result-track:d0621b207a85e90adb7f429d11939fa1a00e0dd3dae33735b548f774328d3de1` |
+| 7 | `theorem` | [card_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/declarations/card-ioo.md) | 79 | `result-track:b9c2c93fb03d5e6d2663be94ba1f7ee3c6ab24d430967ececabc92a8193972ee` |
+| 8 | `theorem` | [card_uIcc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/declarations/card-uicc.md) | 83 | `result-track:ccfa0df988f2d2d639cd59d594024752e1536d4bb82bdcd45f3941cb224095f7` |
+| 9 | `theorem` | [card_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespacedPublic.lean/declarations/card-iic.md) | 88 | `result-track:3945ba95bd50a1a75abac150d46fb471e529cc8905ecd9a180cf50373135e81b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

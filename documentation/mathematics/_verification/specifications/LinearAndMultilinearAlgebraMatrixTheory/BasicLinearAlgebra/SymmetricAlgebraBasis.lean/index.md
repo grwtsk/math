@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [equivMvPolynomial](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/declarations/equivmvpolynomial.md) | 42 | `declaration-track:1d60a5a65ab7736952fd4ebba7179106ad65b55cc38bcf07b021ef1244365249` |
-| 2 | `lemma` | [equivMvPolynomial_ι_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/declarations/equivmvpolynomial-apply.md) | 51 | `result-track:374d6b590d5923916b44386b7abbb6d68dda0519a90c5b3508d21a403fc4849d` |
-| 3 | `lemma` | [equivMvPolynomial_symm_X](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/declarations/equivmvpolynomial-symm-x.md) | 56 | `result-track:6f3ce59dd99c6f3f5a55196d24b01170cb4bb703666b3077d4a746f2aa3c7800` |
-| 4 | `def` | [_root_.Basis.symmetricAlgebra](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/declarations/root-basis-symmetricalgebra.md) | 62 | `declaration-track:5b058b1a18628d8055907d36562143b016719bd2c1f0afe39889c2a6d57a80ac` |
-| 5 | `instance` | [instModuleFree](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/declarations/instmodulefree.md) | 67 | `declaration-track:c4c31d3ac8db1f75368de9aceb82dadd363330d8584edea8f92997498b256e3d` |
-| 6 | `instance` | [instNoZeroDivisors](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/declarations/instnozerodivisors.md) | 73 | `declaration-track:84652b6470747d1d398bd8d619463d8fe97572b19ce2473fe3d937ec823622c5` |
-| 7 | `instance` | [instIsDomain](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/declarations/instisdomain.md) | 84 | `declaration-track:dd5203e3a13b6b804873506f677435ebae55a49b63cfe38e71f1574505a607f6` |
-| 8 | `lemma` | [rank_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/declarations/rank-eq.md) | 90 | `result-track:fed79902cc430d5ae2c84908f115b372436cb2d6373fe767c04b619705cc88c2` |
+| 1 | `def` | [equivMvPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/declarations/equivmvpolynomial.md) | 42 | `declaration-track:1d60a5a65ab7736952fd4ebba7179106ad65b55cc38bcf07b021ef1244365249` |
+| 2 | `lemma` | [equivMvPolynomial_ι_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/declarations/equivmvpolynomial-apply.md) | 51 | `result-track:374d6b590d5923916b44386b7abbb6d68dda0519a90c5b3508d21a403fc4849d` |
+| 3 | `lemma` | [equivMvPolynomial_symm_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/declarations/equivmvpolynomial-symm-x.md) | 56 | `result-track:6f3ce59dd99c6f3f5a55196d24b01170cb4bb703666b3077d4a746f2aa3c7800` |
+| 4 | `def` | [_root_.Basis.symmetricAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/declarations/root-basis-symmetricalgebra.md) | 62 | `declaration-track:5b058b1a18628d8055907d36562143b016719bd2c1f0afe39889c2a6d57a80ac` |
+| 5 | `instance` | [instModuleFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/declarations/instmodulefree.md) | 67 | `declaration-track:c4c31d3ac8db1f75368de9aceb82dadd363330d8584edea8f92997498b256e3d` |
+| 6 | `instance` | [instNoZeroDivisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/declarations/instnozerodivisors.md) | 73 | `declaration-track:84652b6470747d1d398bd8d619463d8fe97572b19ce2473fe3d937ec823622c5` |
+| 7 | `instance` | [instIsDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/declarations/instisdomain.md) | 84 | `declaration-track:dd5203e3a13b6b804873506f677435ebae55a49b63cfe38e71f1574505a607f6` |
+| 8 | `lemma` | [rank_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SymmetricAlgebraBasis.lean/declarations/rank-eq.md) | 90 | `result-track:fed79902cc430d5ae2c84908f115b372436cb2d6373fe767c04b619705cc88c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [encodedPerm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/declarations/encodedperm.md) | 42 | `declaration-track:e36a59dcb501b69a1490d8a258654cb9d4ec6e0158e7084d64d322fc09b116b9` |
-| 2 | `theorem` | [encodedPerm_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/declarations/encodedperm-apply.md) | 45 | `result-track:977c187b8f4acdda048304269753f74c3f4fe52673d4c245f5f0dc30c149f77d` |
-| 3 | `theorem` | [encodedPerm_symm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/declarations/encodedperm-symm.md) | 50 | `result-track:e61c1b56eae928d1a77c059ca58096ccf4fbdde5b891d933373675b975c35737` |
-| 4 | `theorem` | [encodedPerm_apply_self](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/declarations/encodedperm-apply-self.md) | 59 | `result-track:d9c513dc816d53a94119a149acf6f33f476a2e52dbad45eb10d981cd832fa60b` |
-| 5 | `def` | [integralMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/declarations/integralmatrix.md) | 65 | `declaration-track:32c0a402f5e586e3528b7a4377a7e82412547330c6ce0ed9924669b59b4a4a4b` |
-| 6 | `theorem` | [integralMatrix_eq_ite](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/declarations/integralmatrix-eq-ite.md) | 68 | `result-track:27620025b27d724d16c2f542b795a23da791e162b09a74d8d4f346524dbaa1c1` |
-| 7 | `theorem` | [integralMatrix_eq_one_submatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/declarations/integralmatrix-eq-one-submatrix.md) | 82 | `result-track:f433e3c991a96e389171f76b96a3aa8efdf75c8f373aef3ac219cf0b92ba9d26` |
-| 8 | `theorem` | [integralMatrix_mul_self](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/declarations/integralmatrix-mul-self.md) | 90 | `result-track:c03be00ec5bca701db5ab95c88c71393329b37d401f65b83cb1039e010cb6dec` |
+| 1 | `def` | [encodedPerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/declarations/encodedperm.md) | 42 | `declaration-track:e36a59dcb501b69a1490d8a258654cb9d4ec6e0158e7084d64d322fc09b116b9` |
+| 2 | `theorem` | [encodedPerm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/declarations/encodedperm-apply.md) | 45 | `result-track:977c187b8f4acdda048304269753f74c3f4fe52673d4c245f5f0dc30c149f77d` |
+| 3 | `theorem` | [encodedPerm_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/declarations/encodedperm-symm.md) | 50 | `result-track:e61c1b56eae928d1a77c059ca58096ccf4fbdde5b891d933373675b975c35737` |
+| 4 | `theorem` | [encodedPerm_apply_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/declarations/encodedperm-apply-self.md) | 59 | `result-track:d9c513dc816d53a94119a149acf6f33f476a2e52dbad45eb10d981cd832fa60b` |
+| 5 | `def` | [integralMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/declarations/integralmatrix.md) | 65 | `declaration-track:32c0a402f5e586e3528b7a4377a7e82412547330c6ce0ed9924669b59b4a4a4b` |
+| 6 | `theorem` | [integralMatrix_eq_ite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/declarations/integralmatrix-eq-ite.md) | 68 | `result-track:27620025b27d724d16c2f542b795a23da791e162b09a74d8d4f346524dbaa1c1` |
+| 7 | `theorem` | [integralMatrix_eq_one_submatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/declarations/integralmatrix-eq-one-submatrix.md) | 82 | `result-track:f433e3c991a96e389171f76b96a3aa8efdf75c8f373aef3ac219cf0b92ba9d26` |
+| 8 | `theorem` | [integralMatrix_mul_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IntegralPermutationLift.lean/declarations/integralmatrix-mul-self.md) | 90 | `result-track:c03be00ec5bca701db5ab95c88c71393329b37d401f65b83cb1039e010cb6dec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

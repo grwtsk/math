@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContrastResidualV2PrebytesNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContrastResidualV2PrebytesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContrastResidualV2PrebytesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContrastResidualV2PrebytesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pairedResidualRemainder](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContrastResidualV2PrebytesNamespaced.lean/declarations/pairedresidualremainder.md) | 33 | `declaration-track:b05a508f0d12625935155b4610d9ad36615dfcdbeb555e1d9916d2501481d73e` |
-| 2 | `theorem` | [mertensResidual_eq_contrast_remainder](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContrastResidualV2PrebytesNamespaced.lean/declarations/mertensresidual-eq-contrast-remainder.md) | 38 | `result-track:9e8f704dc8f2958c9f961ff6330f7d900d1fadba38d54113602b68dd080dfd04` |
-| 3 | `theorem` | [abs_four_sum_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContrastResidualV2PrebytesNamespaced.lean/declarations/abs-four-sum-le.md) | 46 | `result-track:8353eb914ab46a815c5a271fdc086d12b5b3545d6871213ffe66d405d52d51e5` |
-| 4 | `theorem` | [pairedResidualRemainder_uniformly_bounded](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContrastResidualV2PrebytesNamespaced.lean/declarations/pairedresidualremainder-uniformly-bounded.md) | 56 | `result-track:c1159f61d5242d2f12641325a4fe5371f52881a3993ad949d828ec131e3ec1bf` |
+| 1 | `def` | [pairedResidualRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContrastResidualV2PrebytesNamespaced.lean/declarations/pairedresidualremainder.md) | 33 | `declaration-track:b05a508f0d12625935155b4610d9ad36615dfcdbeb555e1d9916d2501481d73e` |
+| 2 | `theorem` | [mertensResidual_eq_contrast_remainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContrastResidualV2PrebytesNamespaced.lean/declarations/mertensresidual-eq-contrast-remainder.md) | 38 | `result-track:9e8f704dc8f2958c9f961ff6330f7d900d1fadba38d54113602b68dd080dfd04` |
+| 3 | `theorem` | [abs_four_sum_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContrastResidualV2PrebytesNamespaced.lean/declarations/abs-four-sum-le.md) | 46 | `result-track:8353eb914ab46a815c5a271fdc086d12b5b3545d6871213ffe66d405d52d51e5` |
+| 4 | `theorem` | [pairedResidualRemainder_uniformly_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContrastResidualV2PrebytesNamespaced.lean/declarations/pairedresidualremainder-uniformly-bounded.md) | 56 | `result-track:c1159f61d5242d2f12641325a4fe5371f52881a3993ad949d828ec131e3ec1bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

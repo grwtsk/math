@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBounds.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.AsymptoticAnalysis.PrimeMassPotentialBounds`](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeMassPotentialBoundsHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeLogBound`](../../../../../MeasureAndIntegration/ReciprocalPrimeLogBound.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.AsymptoticAnalysis.PrimeMassPotentialBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeMassPotentialBoundsHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeLogBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrimeLogBound.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [harmonicMass_union](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBounds.lean/declarations/harmonicmass-union.md) | 15 | `result-track:e2f62d732614145cec7eec31521e0195cf8b798c2cb1777a206a3417c81c9fcc` |
-| 2 | `theorem` | [completion_prefix_mass](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBounds.lean/declarations/completion-prefix-mass.md) | 20 | `result-track:3beb2d15947c4254cd21ef2718bab5fa40af88994887852834c0ddb6e26fe0a6` |
-| 3 | `theorem` | [completion_total_mass](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBounds.lean/declarations/completion-total-mass.md) | 29 | `result-track:d4fda9c1bda25b743d590e6b56f7929ee9d2329d6bdb7d5a34cfb9415a40224f` |
-| 4 | `def` | [budgetedChain](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBounds.lean/declarations/budgetedchain.md) | 35 | `declaration-track:b9a4a3bdee557bfc74203358b7c3d0ff98a9e1f0502ae6c890fc8c539a51217c` |
-| 5 | `theorem` | [AS_with_complete_admissible_chains_implies_P04](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBounds.lean/declarations/as-with-complete-admissible-chains-implies-p04.md) | 46 | `result-track:9ebf95c7bc5fc6d425f84db9ff94f462c820e9ee75a3cf00f2ac70620d29f8c2` |
+| 1 | `theorem` | [harmonicMass_union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBounds.lean/declarations/harmonicmass-union.md) | 15 | `result-track:e2f62d732614145cec7eec31521e0195cf8b798c2cb1777a206a3417c81c9fcc` |
+| 2 | `theorem` | [completion_prefix_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBounds.lean/declarations/completion-prefix-mass.md) | 20 | `result-track:3beb2d15947c4254cd21ef2718bab5fa40af88994887852834c0ddb6e26fe0a6` |
+| 3 | `theorem` | [completion_total_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBounds.lean/declarations/completion-total-mass.md) | 29 | `result-track:d4fda9c1bda25b743d590e6b56f7929ee9d2329d6bdb7d5a34cfb9415a40224f` |
+| 4 | `def` | [budgetedChain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBounds.lean/declarations/budgetedchain.md) | 35 | `declaration-track:b9a4a3bdee557bfc74203358b7c3d0ff98a9e1f0502ae6c890fc8c539a51217c` |
+| 5 | `theorem` | [AS_with_complete_admissible_chains_implies_P04](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBounds.lean/declarations/as-with-complete-admissible-chains-implies-p04.md) | 46 | `result-track:9ebf95c7bc5fc6d425f84db9ff94f462c820e9ee75a3cf00f2ac70620d29f8c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

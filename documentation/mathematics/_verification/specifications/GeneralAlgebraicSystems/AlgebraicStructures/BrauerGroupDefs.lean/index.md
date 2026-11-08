@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CSA](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/declarations/csa.md) | 35 | `declaration-track:66d44347c2af65404a1e234cd423a46c248a5f962d5661f0c7e36a2ff67429be` |
-| 2 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/declarations/instance.md) | 45 | `declaration-track:fbeda69a3c53d7a95bed8da63aded815bedfd83c2a61d4fceca6e14b9feff292` |
-| 3 | `abbrev` | [IsBrauerEquivalent](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/declarations/isbrauerequivalent.md) | 51 | `declaration-track:298ab1de6789991c0c1b2cd83a8e14dc5b2ec3aa102c1b5672ec7142d04f540b` |
-| 4 | `lemma` | [refl](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/declarations/refl.md) | 57 | `result-track:d6663a78126820f8de8ca38edf26c6e9d1ed66fea1a31bfe5f38e36f707a536a` |
-| 5 | `lemma` | [symm](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/declarations/symm.md) | 61 | `result-track:808ca9bb9348a3e273534e0050a2f2bf618f4bce7a6e9a962236e027d0ed01fe` |
-| 6 | `lemma` | [trans](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/declarations/trans.md) | 67 | `result-track:bfdcb1028b675e182061b389b651b1ad40d4d408a1710f38b54647ccfbfc33ad` |
-| 7 | `lemma` | [is_eqv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/declarations/is-eqv.md) | 77 | `result-track:26b732bde52fbb5fc530eb74bdf9c5195b23bf4f67ccf02c70460562032a3a2e` |
-| 8 | `def` | [Brauer.CSA_Setoid](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/declarations/brauer-csa-setoid.md) | 87 | `declaration-track:63fd06d5ec0f5c3ca13d0d02d1700f9d39e48ff470e0accb6150f2c278f28df0` |
-| 9 | `abbrev` | [BrauerGroup](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/declarations/brauergroup.md) | 93 | `declaration-track:05d8d161566b9edd6cabc434a51ff0a05e400a8e90652d936e7f072242b1738d` |
+| 1 | `structure` | [CSA](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/declarations/csa.md) | 35 | `declaration-track:66d44347c2af65404a1e234cd423a46c248a5f962d5661f0c7e36a2ff67429be` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/declarations/instance.md) | 45 | `declaration-track:fbeda69a3c53d7a95bed8da63aded815bedfd83c2a61d4fceca6e14b9feff292` |
+| 3 | `abbrev` | [IsBrauerEquivalent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/declarations/isbrauerequivalent.md) | 51 | `declaration-track:298ab1de6789991c0c1b2cd83a8e14dc5b2ec3aa102c1b5672ec7142d04f540b` |
+| 4 | `lemma` | [refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/declarations/refl.md) | 57 | `result-track:d6663a78126820f8de8ca38edf26c6e9d1ed66fea1a31bfe5f38e36f707a536a` |
+| 5 | `lemma` | [symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/declarations/symm.md) | 61 | `result-track:808ca9bb9348a3e273534e0050a2f2bf618f4bce7a6e9a962236e027d0ed01fe` |
+| 6 | `lemma` | [trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/declarations/trans.md) | 67 | `result-track:bfdcb1028b675e182061b389b651b1ad40d4d408a1710f38b54647ccfbfc33ad` |
+| 7 | `lemma` | [is_eqv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/declarations/is-eqv.md) | 77 | `result-track:26b732bde52fbb5fc530eb74bdf9c5195b23bf4f67ccf02c70460562032a3a2e` |
+| 8 | `def` | [Brauer.CSA_Setoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/declarations/brauer-csa-setoid.md) | 87 | `declaration-track:63fd06d5ec0f5c3ca13d0d02d1700f9d39e48ff470e0accb6150f2c278f28df0` |
+| 9 | `abbrev` | [BrauerGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BrauerGroupDefs.lean/declarations/brauergroup.md) | 93 | `declaration-track:05d8d161566b9edd6cabc434a51ff0a05e400a8e90652d936e7f072242b1738d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

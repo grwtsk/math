@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CliffordAlgebraStarPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CliffordAlgebraStarPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CliffordAlgebraStarPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CliffordAlgebraStarPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instStarRing](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CliffordAlgebraStarPublic.lean/declarations/inststarring.md) | 36 | `declaration-track:30bd856106f69698e1b119135093f7694e73ba057dbed47909fabdf7e949a885` |
-| 2 | `theorem` | [star_def](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CliffordAlgebraStarPublic.lean/declarations/star-def-source-edition-2.md) | 43 | `result-track:bef45d8eec1f7f009d3e8dfe80e2dde00609cab2596940d0ddf6b8e11ab679f7` |
-| 3 | `theorem` | [star_def'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CliffordAlgebraStarPublic.lean/declarations/star-def.md) | 46 | `result-track:965fa6665ccb6fd315a75258fa975d691967798d4d9cb8a92bfe9bdd0696cf70` |
-| 4 | `theorem` | [star_ι](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CliffordAlgebraStarPublic.lean/declarations/star.md) | 50 | `result-track:f708af1ad0a766377ae7078a5280044a20db7abc0f6f9d2dbe2617ac17e9a006` |
-| 5 | `theorem` | [star_smul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CliffordAlgebraStarPublic.lean/declarations/star-smul.md) | 56 | `result-track:00308cf87a72b761d6395ea322a41f2b0fd646dfaac5aaf738bdbb2bdad1a665` |
-| 6 | `theorem` | [star_algebraMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CliffordAlgebraStarPublic.lean/declarations/star-algebramap.md) | 60 | `result-track:2c4f5823d4f0eb0201312426a10ef1293932dd65b676eaee826080c03b4f853c` |
+| 1 | `instance` | [instStarRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CliffordAlgebraStarPublic.lean/declarations/inststarring.md) | 36 | `declaration-track:30bd856106f69698e1b119135093f7694e73ba057dbed47909fabdf7e949a885` |
+| 2 | `theorem` | [star_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CliffordAlgebraStarPublic.lean/declarations/star-def-source-edition-2.md) | 43 | `result-track:bef45d8eec1f7f009d3e8dfe80e2dde00609cab2596940d0ddf6b8e11ab679f7` |
+| 3 | `theorem` | [star_def'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CliffordAlgebraStarPublic.lean/declarations/star-def.md) | 46 | `result-track:965fa6665ccb6fd315a75258fa975d691967798d4d9cb8a92bfe9bdd0696cf70` |
+| 4 | `theorem` | [star_ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CliffordAlgebraStarPublic.lean/declarations/star.md) | 50 | `result-track:f708af1ad0a766377ae7078a5280044a20db7abc0f6f9d2dbe2617ac17e9a006` |
+| 5 | `theorem` | [star_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CliffordAlgebraStarPublic.lean/declarations/star-smul.md) | 56 | `result-track:00308cf87a72b761d6395ea322a41f2b0fd646dfaac5aaf738bdbb2bdad1a665` |
+| 6 | `theorem` | [star_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CliffordAlgebraStarPublic.lean/declarations/star-algebramap.md) | 60 | `result-track:2c4f5823d4f0eb0201312426a10ef1293932dd65b676eaee826080c03b4f853c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ExtremePublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ExtremePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ExtremePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ExtremePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isStarProjection_iff_mem_extremePoints_setOfPred_nonneg_inter_unitClosedBall](../../../../FunctionalAnalysis/ExtremePublic.lean/declarations/isstarprojection-iff-mem-extremepoints-setofpred-nonneg-inter-unitclosed.md) | 27 | `result-track:543a7be1c97aabd773cb44c2f560d573b4b8a77009a6340aff92ebb858c377eb` |
+| 1 | `theorem` | [isStarProjection_iff_mem_extremePoints_setOfPred_nonneg_inter_unitClosedBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ExtremePublic.lean/declarations/isstarprojection-iff-mem-extremepoints-setofpred-nonneg-inter-unitclosed.md) | 27 | `result-track:543a7be1c97aabd773cb44c2f560d573b4b8a77009a6340aff92ebb858c377eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

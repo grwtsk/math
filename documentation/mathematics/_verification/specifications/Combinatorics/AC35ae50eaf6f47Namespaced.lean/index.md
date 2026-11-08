@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/AC35ae50eaf6f47Namespaced.lean/index.md) · [Full source](../../../../Combinatorics/AC35ae50eaf6f47Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AC35ae50eaf6f47Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AC35ae50eaf6f47Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CandidateAuthority](../../../../Combinatorics/AC35ae50eaf6f47Namespaced.lean/declarations/candidateauthority.md) | 26 | `declaration-track:b897863dfe009909db04be9256f21deedcb7e2003626751d0e7bf6290f4a9ef6` |
-| 2 | `structure` | [KernelCandidate](../../../../Combinatorics/AC35ae50eaf6f47Namespaced.lean/declarations/kernelcandidate.md) | 31 | `declaration-track:1246ede818c13c1744475a4b0e50cdfbcb3b324566761a497fdf8f34d436a6c3` |
-| 3 | `structure` | [ReviewedCandidate](../../../../Combinatorics/AC35ae50eaf6f47Namespaced.lean/declarations/reviewedcandidate.md) | 43 | `declaration-track:9b233055c746f2d78fc205e9b6239e20181501d3b5497cd009423faac3125b4a` |
-| 4 | `def` | [ReviewedCandidate.toOwnedAssignment](../../../../Combinatorics/AC35ae50eaf6f47Namespaced.lean/declarations/reviewedcandidate-toownedassignment.md) | 54 | `declaration-track:33e9a2d45a5dd980cc534292d3fe850e64fd7c41d48145a4b081954fe8d86d8e` |
-| 5 | `theorem` | [candidate_authority_is_navigation](../../../../Combinatorics/AC35ae50eaf6f47Namespaced.lean/declarations/candidate-authority-is-navigation.md) | 66 | `result-track:5c80e2eb8a2df6913ee61e381478580013f2848be828af18e479c35227731fc1` |
+| 1 | `inductive` | [CandidateAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AC35ae50eaf6f47Namespaced.lean/declarations/candidateauthority.md) | 26 | `declaration-track:b897863dfe009909db04be9256f21deedcb7e2003626751d0e7bf6290f4a9ef6` |
+| 2 | `structure` | [KernelCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AC35ae50eaf6f47Namespaced.lean/declarations/kernelcandidate.md) | 31 | `declaration-track:1246ede818c13c1744475a4b0e50cdfbcb3b324566761a497fdf8f34d436a6c3` |
+| 3 | `structure` | [ReviewedCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AC35ae50eaf6f47Namespaced.lean/declarations/reviewedcandidate.md) | 43 | `declaration-track:9b233055c746f2d78fc205e9b6239e20181501d3b5497cd009423faac3125b4a` |
+| 4 | `def` | [ReviewedCandidate.toOwnedAssignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AC35ae50eaf6f47Namespaced.lean/declarations/reviewedcandidate-toownedassignment.md) | 54 | `declaration-track:33e9a2d45a5dd980cc534292d3fe850e64fd7c41d48145a4b081954fe8d86d8e` |
+| 5 | `theorem` | [candidate_authority_is_navigation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AC35ae50eaf6f47Namespaced.lean/declarations/candidate-authority-is-navigation.md) | 66 | `result-track:5c80e2eb8a2df6913ee61e381478580013f2848be828af18e479c35227731fc1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

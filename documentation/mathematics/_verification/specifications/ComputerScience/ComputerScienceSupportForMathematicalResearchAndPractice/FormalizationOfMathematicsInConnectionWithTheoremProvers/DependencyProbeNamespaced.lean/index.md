@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyProbeNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyProbeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyProbeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyProbeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [stateCanonicalExpr](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyProbeNamespaced.lean/declarations/statecanonicalexpr.md) | 18 | `declaration-track:6804ea85de284e3232b911acfcab84ebb6bfd3c32626961daf5ba32c26697fa7` |
-| 2 | `def` | [stateKind](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyProbeNamespaced.lean/declarations/statekind.md) | 26 | `declaration-track:5c76ac1a1bf1a8da9d6314ab6f30c730fd1627541e6bba17df986984801a1290` |
-| 3 | `def` | [stateDependencies](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyProbeNamespaced.lean/declarations/statedependencies.md) | 35 | `declaration-track:a08a11d95e58adf867103a335292da97d3295cca37cfb76dfd6c7661d107a3f2` |
+| 1 | `def` | [stateCanonicalExpr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyProbeNamespaced.lean/declarations/statecanonicalexpr.md) | 18 | `declaration-track:6804ea85de284e3232b911acfcab84ebb6bfd3c32626961daf5ba32c26697fa7` |
+| 2 | `def` | [stateKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyProbeNamespaced.lean/declarations/statekind.md) | 26 | `declaration-track:5c76ac1a1bf1a8da9d6314ab6f30c730fd1627541e6bba17df986984801a1290` |
+| 3 | `def` | [stateDependencies](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DependencyProbeNamespaced.lean/declarations/statedependencies.md) | 35 | `declaration-track:a08a11d95e58adf867103a335292da97d3295cca37cfb76dfd6c7661d107a3f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

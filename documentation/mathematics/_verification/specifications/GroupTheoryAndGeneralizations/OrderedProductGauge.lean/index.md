@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/OrderedProductGauge.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/OrderedProductGauge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProductGauge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProductGauge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.OrderedProduct`](../../../../GroupTheoryAndGeneralizations/OrderedProduct.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Algebra.OrderedProduct`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProduct.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [conjugation_preserves_order](../../../../GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/conjugation-preserves-order.md) | 28 | `result-track:4bd95a9a889dcbb2b47ec380c6e72879a8c56c01946f17e0ab0668e1bcf976cb` |
-| 2 | `theorem` | [inversion_reverses_order](../../../../GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/inversion-reverses-order.md) | 35 | `result-track:2bfc4efba07cfc1ca562a654936ae8518347db401bab4f76b19d1c54363a6389` |
-| 3 | `def` | [forwardGauge](../../../../GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/forwardgauge.md) | 41 | `declaration-track:2d3b88713bf7ddc61198615eefaacc793406e02c316ba9563fdf5a2a8d1c8c54` |
-| 4 | `theorem` | [orderedProduct_forwardGauge](../../../../GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/orderedproduct-forwardgauge.md) | 47 | `result-track:2e675ba5d5841d2cb299ac1c56125087dd1f79fd39aedc21974061f9d42394ee` |
-| 5 | `def` | [siteGauge](../../../../GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/sitegauge.md) | 60 | `declaration-track:455a8f17bb4e7fea5a7443a614f032f096c7474dcd2886691bd00fd781cf28cc` |
-| 6 | `theorem` | [site_loop_gauge](../../../../GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/site-loop-gauge.md) | 67 | `result-track:95fc052010aa75cd8687a0cbbd66c11f434f52f240d054da607ac3a992093e78` |
-| 7 | `theorem` | [orderedProduct_identity](../../../../GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/orderedproduct-identity.md) | 77 | `result-track:87a42cb5d5bbd0a35a51b9fb809521019eb89b862b81b2502dd6dd1a528ae62b` |
-| 8 | `def` | [chartEdges](../../../../GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/chartedges.md) | 86 | `declaration-track:d0e4f48e78d76bfe346d75f0d0f10d9cfe89a22a01cb6359d34c65603a56efd4` |
-| 9 | `theorem` | [orderedProduct_chartEdges](../../../../GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/orderedproduct-chartedges.md) | 92 | `result-track:a7eb0c695d1e84bc3210be33059c46586e8829e5d70113d0a10d81f042730288` |
-| 10 | `theorem` | [chart_loop_identity](../../../../GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/chart-loop-identity.md) | 102 | `result-track:af3702dbb3f48a00a2634a81c175bf247ca5fff63a3e97ce810f58b4b7666d3c` |
+| 1 | `theorem` | [conjugation_preserves_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/conjugation-preserves-order.md) | 28 | `result-track:4bd95a9a889dcbb2b47ec380c6e72879a8c56c01946f17e0ab0668e1bcf976cb` |
+| 2 | `theorem` | [inversion_reverses_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/inversion-reverses-order.md) | 35 | `result-track:2bfc4efba07cfc1ca562a654936ae8518347db401bab4f76b19d1c54363a6389` |
+| 3 | `def` | [forwardGauge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/forwardgauge.md) | 41 | `declaration-track:2d3b88713bf7ddc61198615eefaacc793406e02c316ba9563fdf5a2a8d1c8c54` |
+| 4 | `theorem` | [orderedProduct_forwardGauge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/orderedproduct-forwardgauge.md) | 47 | `result-track:2e675ba5d5841d2cb299ac1c56125087dd1f79fd39aedc21974061f9d42394ee` |
+| 5 | `def` | [siteGauge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/sitegauge.md) | 60 | `declaration-track:455a8f17bb4e7fea5a7443a614f032f096c7474dcd2886691bd00fd781cf28cc` |
+| 6 | `theorem` | [site_loop_gauge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/site-loop-gauge.md) | 67 | `result-track:95fc052010aa75cd8687a0cbbd66c11f434f52f240d054da607ac3a992093e78` |
+| 7 | `theorem` | [orderedProduct_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/orderedproduct-identity.md) | 77 | `result-track:87a42cb5d5bbd0a35a51b9fb809521019eb89b862b81b2502dd6dd1a528ae62b` |
+| 8 | `def` | [chartEdges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/chartedges.md) | 86 | `declaration-track:d0e4f48e78d76bfe346d75f0d0f10d9cfe89a22a01cb6359d34c65603a56efd4` |
+| 9 | `theorem` | [orderedProduct_chartEdges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/orderedproduct-chartedges.md) | 92 | `result-track:a7eb0c695d1e84bc3210be33059c46586e8829e5d70113d0a10d81f042730288` |
+| 10 | `theorem` | [chart_loop_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProductGauge.lean/declarations/chart-loop-identity.md) | 102 | `result-track:af3702dbb3f48a00a2634a81c175bf247ca5fff63a3e97ce810f58b4b7666d3c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

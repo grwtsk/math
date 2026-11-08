@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatDescentPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatDescentPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatDescentPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatDescentPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [ModuleCat.preservesFiniteLimits_tensorLeft_of_ringHomFlat](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatDescentPublic.lean/declarations/modulecat-preservesfinitelimits-tensorleft-of-ringhomflat.md) | 36 | `result-track:5fa96cd3ca849f3f96f5a680e4f929146c4b14beae62570d3f29cbfc77e7bae5` |
-| 2 | `lemma` | [ModuleCat.preservesFiniteLimits_extendScalars_of_flat](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatDescentPublic.lean/declarations/modulecat-preservesfinitelimits-extendscalars-of-flat.md) | 42 | `result-track:8abb4769913c5f63f2dac6f6a21d94e98010d05a963bc3ac2df578c4a80a1a80` |
-| 3 | `lemma` | [ModuleCat.reflectsIsomorphisms_extendScalars_of_faithfullyFlat](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatDescentPublic.lean/declarations/modulecat-reflectsisomorphisms-extendscalars-of-faithfullyflat.md) | 49 | `result-track:27c091fa348668aa7e95b9733dde8e0a97f3e72c3cae25784330fbc8356320e8` |
-| 4 | `def` | [comonadicExtendScalars](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatDescentPublic.lean/declarations/comonadicextendscalars.md) | 59 | `declaration-track:03caa0a6edf93140f962adfd2abf8863a5702b0a0a3a34a9c89718d016e4d769` |
+| 1 | `lemma` | [ModuleCat.preservesFiniteLimits_tensorLeft_of_ringHomFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatDescentPublic.lean/declarations/modulecat-preservesfinitelimits-tensorleft-of-ringhomflat.md) | 36 | `result-track:5fa96cd3ca849f3f96f5a680e4f929146c4b14beae62570d3f29cbfc77e7bae5` |
+| 2 | `lemma` | [ModuleCat.preservesFiniteLimits_extendScalars_of_flat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatDescentPublic.lean/declarations/modulecat-preservesfinitelimits-extendscalars-of-flat.md) | 42 | `result-track:8abb4769913c5f63f2dac6f6a21d94e98010d05a963bc3ac2df578c4a80a1a80` |
+| 3 | `lemma` | [ModuleCat.reflectsIsomorphisms_extendScalars_of_faithfullyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatDescentPublic.lean/declarations/modulecat-reflectsisomorphisms-extendscalars-of-faithfullyflat.md) | 49 | `result-track:27c091fa348668aa7e95b9733dde8e0a97f3e72c3cae25784330fbc8356320e8` |
+| 4 | `def` | [comonadicExtendScalars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatDescentPublic.lean/declarations/comonadicextendscalars.md) | 59 | `declaration-track:03caa0a6edf93140f962adfd2abf8863a5702b0a0a3a34a9c89718d016e4d769` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

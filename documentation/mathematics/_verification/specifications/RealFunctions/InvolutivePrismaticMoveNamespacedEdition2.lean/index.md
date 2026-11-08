@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/InvolutivePrismaticMoveNamespacedEdition2.lean/index.md) · [Full source](../../../../RealFunctions/InvolutivePrismaticMoveNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InvolutivePrismaticMoveNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InvolutivePrismaticMoveNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [IntegralDeterminantInterpretation](../../../../RealFunctions/InvolutivePrismaticMoveNamespacedEdition2.lean/declarations/integraldeterminantinterpretation.md) | 31 | `declaration-track:f73715c5e3eb7a8aade8e1ca1c4a07c84cac61edddb4d2fd4b08edd05f99590f` |
-| 2 | `structure` | [IntegralDeterminantApplicability](../../../../RealFunctions/InvolutivePrismaticMoveNamespacedEdition2.lean/declarations/integraldeterminantapplicability.md) | 38 | `declaration-track:0787172a142b92c6f1d9555f7277951afb528d8aaa6f50e1e70c8969d8ec47ea` |
-| 3 | `structure` | [InvolutivePrismaticMove](../../../../RealFunctions/InvolutivePrismaticMoveNamespacedEdition2.lean/declarations/involutiveprismaticmove.md) | 54 | `declaration-track:d816bb4eb564b293fd9ab75ef344752f7038a90d85909cecb3b48a76b1701cb0` |
-| 4 | `theorem` | [moved_vertex_in_locus](../../../../RealFunctions/InvolutivePrismaticMoveNamespacedEdition2.lean/declarations/moved-vertex-in-locus.md) | 88 | `result-track:9de278206b35e09c704d1a61de9e4729493d99def5e29e756dc2320491072a45` |
-| 5 | `theorem` | [matrix_action_agrees](../../../../RealFunctions/InvolutivePrismaticMoveNamespacedEdition2.lean/declarations/matrix-action-agrees.md) | 97 | `result-track:a87ead5fc97d663dfc17ffcd58b1eb9f17e02c761b02f51528f44c72061fa911` |
-| 6 | `theorem` | [determinant_eq_one_or_neg_one](../../../../RealFunctions/InvolutivePrismaticMoveNamespacedEdition2.lean/declarations/determinant-eq-one-or-neg-one.md) | 103 | `result-track:4cc88255ea2cd84850fe2edd527448b1f2feb5ae05eee90ead32dc6cc09f3632` |
-| 7 | `theorem` | [terrain_conditions](../../../../RealFunctions/InvolutivePrismaticMoveNamespacedEdition2.lean/declarations/terrain-conditions.md) | 110 | `result-track:479a919caa556f4048bcc2814c1916ff0705986dcbe6be2a38944c2058266545` |
+| 1 | `inductive` | [IntegralDeterminantInterpretation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InvolutivePrismaticMoveNamespacedEdition2.lean/declarations/integraldeterminantinterpretation.md) | 31 | `declaration-track:f73715c5e3eb7a8aade8e1ca1c4a07c84cac61edddb4d2fd4b08edd05f99590f` |
+| 2 | `structure` | [IntegralDeterminantApplicability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InvolutivePrismaticMoveNamespacedEdition2.lean/declarations/integraldeterminantapplicability.md) | 38 | `declaration-track:0787172a142b92c6f1d9555f7277951afb528d8aaa6f50e1e70c8969d8ec47ea` |
+| 3 | `structure` | [InvolutivePrismaticMove](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InvolutivePrismaticMoveNamespacedEdition2.lean/declarations/involutiveprismaticmove.md) | 54 | `declaration-track:d816bb4eb564b293fd9ab75ef344752f7038a90d85909cecb3b48a76b1701cb0` |
+| 4 | `theorem` | [moved_vertex_in_locus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InvolutivePrismaticMoveNamespacedEdition2.lean/declarations/moved-vertex-in-locus.md) | 88 | `result-track:9de278206b35e09c704d1a61de9e4729493d99def5e29e756dc2320491072a45` |
+| 5 | `theorem` | [matrix_action_agrees](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InvolutivePrismaticMoveNamespacedEdition2.lean/declarations/matrix-action-agrees.md) | 97 | `result-track:a87ead5fc97d663dfc17ffcd58b1eb9f17e02c761b02f51528f44c72061fa911` |
+| 6 | `theorem` | [determinant_eq_one_or_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InvolutivePrismaticMoveNamespacedEdition2.lean/declarations/determinant-eq-one-or-neg-one.md) | 103 | `result-track:4cc88255ea2cd84850fe2edd527448b1f2feb5ae05eee90ead32dc6cc09f3632` |
+| 7 | `theorem` | [terrain_conditions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InvolutivePrismaticMoveNamespacedEdition2.lean/declarations/terrain-conditions.md) | 110 | `result-track:479a919caa556f4048bcc2814c1916ff0705986dcbe6be2a38944c2058266545` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

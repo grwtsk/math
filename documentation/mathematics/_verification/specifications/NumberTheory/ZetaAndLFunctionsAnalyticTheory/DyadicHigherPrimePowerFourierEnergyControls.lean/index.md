@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergyControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergyControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergyControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergyControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicHigherPrimePowerFourierEnergy`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicHigherPrimePowerFourierEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergy.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [full_higher_power_channel_is_summable](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergyControls.lean/declarations/full-higher-power-channel-is-summable.md) | 13 | `result-track:0f715cbaf8da098dcf939278391fdc5cf58391957d00bcceac4e29f1b11ca996` |
+| 1 | `theorem` | [full_higher_power_channel_is_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicHigherPrimePowerFourierEnergyControls.lean/declarations/full-higher-power-channel-is-summable.md) | 13 | `result-track:0f715cbaf8da098dcf939278391fdc5cf58391957d00bcceac4e29f1b11ca996` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

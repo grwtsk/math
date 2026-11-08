@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ArrayParserComposition.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ArrayParserComposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ArrayParserComposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ArrayParserComposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.FoundationsLogicAndTypeTheory.Computability.RecursiveFunctions.BoundedRecordCodec`](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/BoundedRecordCodec.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.Computability.RecursiveFunctions.BoundedRecordCodec`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/BoundedRecordCodec.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [readMany_emit_suffix](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ArrayParserComposition.lean/declarations/readmany-emit-suffix.md) | 7 | `result-track:a2875fd136cfe62511c72fc5e2bcb415f6385a5670b99eb47a038519d6e57080` |
-| 2 | `theorem` | [parse_array_suffix](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ArrayParserComposition.lean/declarations/parse-array-suffix.md) | 21 | `result-track:9fbe85240724db3d8959e450da46cd9bac57150abe67149f2336771ece7b7519` |
+| 1 | `theorem` | [readMany_emit_suffix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ArrayParserComposition.lean/declarations/readmany-emit-suffix.md) | 7 | `result-track:a2875fd136cfe62511c72fc5e2bcb415f6385a5670b99eb47a038519d6e57080` |
+| 2 | `theorem` | [parse_array_suffix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ArrayParserComposition.lean/declarations/parse-array-suffix.md) | 21 | `result-track:9fbe85240724db3d8959e450da46cd9bac57150abe67149f2336771ece7b7519` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

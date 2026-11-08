@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExistentialReachabilityAndReconstruction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExistentialReachabilityAndReconstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExistentialReachabilityAndReconstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExistentialReachabilityAndReconstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [InSameOrbit](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExistentialReachabilityAndReconstruction.lean/declarations/insameorbit.md) | 35 | `declaration-track:c5273e8e152f176841314e814aa6d87c4a1ec6fc8061f2a171ed42c076b5d471` |
-| 2 | `structure` | [OrbitCanonicalizer](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExistentialReachabilityAndReconstruction.lean/declarations/orbitcanonicalizer.md) | 40 | `declaration-track:4aedaaab7320a29af4d9604d742dfa7dac64033b8ad23f19581c4afb5fd0e2f7` |
-| 3 | `theorem` | [orbitCanonicalizer_reconstruct](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExistentialReachabilityAndReconstruction.lean/declarations/orbitcanonicalizer-reconstruct.md) | 48 | `result-track:0f31898d3c14abeff52092aa062f542d378724817bb8503f2830122da537c1d2` |
+| 1 | `def` | [InSameOrbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExistentialReachabilityAndReconstruction.lean/declarations/insameorbit.md) | 35 | `declaration-track:c5273e8e152f176841314e814aa6d87c4a1ec6fc8061f2a171ed42c076b5d471` |
+| 2 | `structure` | [OrbitCanonicalizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExistentialReachabilityAndReconstruction.lean/declarations/orbitcanonicalizer.md) | 40 | `declaration-track:4aedaaab7320a29af4d9604d742dfa7dac64033b8ad23f19581c4afb5fd0e2f7` |
+| 3 | `theorem` | [orbitCanonicalizer_reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExistentialReachabilityAndReconstruction.lean/declarations/orbitcanonicalizer-reconstruct.md) | 48 | `result-track:0f31898d3c14abeff52092aa062f542d378724817bb8503f2830122da537c1d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/RingHomNamespaced.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/RingHomNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/RingHomNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/RingHomNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Function.Surjective.moduleLeft](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/RingHomNamespaced.lean/declarations/function-surjective-moduleleft.md) | 49 | `declaration-track:c9aa74f6ce8804e11a1c2223761be2dee4206324eaafcd6c059e4e7b67a9d5d6` |
-| 2 | `abbrev` | [Module.compHom](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/RingHomNamespaced.lean/declarations/module-comphom.md) | 61 | `declaration-track:ee0d10bea6303fd9814ee59c4561601b39744e052d92e68bbeca8f36820e54f1` |
-| 3 | `abbrev` | [RingHom.toModule](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/RingHomNamespaced.lean/declarations/ringhom-tomodule.md) | 76 | `declaration-track:df6a221ac8d44b062d3d72c3306f681d0bc35d983e55aa933d85e5aa8ded384f` |
-| 4 | `def` | [RingHom.smulOneHom](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/RingHomNamespaced.lean/declarations/ringhom-smulonehom.md) | 85 | `declaration-track:4c9ad1e1134665041265ffc7ced179fc26cce8b282d91726a569f8dd6f64b5a9` |
-| 5 | `def` | [ringHomEquivModuleIsScalarTower](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/RingHomNamespaced.lean/declarations/ringhomequivmoduleisscalartower.md) | 93 | `declaration-track:64fbf45b23b7651126e930295d8dc8b8b57410db3851a3491caa31f5efa73241` |
+| 1 | `abbrev` | [Function.Surjective.moduleLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/RingHomNamespaced.lean/declarations/function-surjective-moduleleft.md) | 49 | `declaration-track:c9aa74f6ce8804e11a1c2223761be2dee4206324eaafcd6c059e4e7b67a9d5d6` |
+| 2 | `abbrev` | [Module.compHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/RingHomNamespaced.lean/declarations/module-comphom.md) | 61 | `declaration-track:ee0d10bea6303fd9814ee59c4561601b39744e052d92e68bbeca8f36820e54f1` |
+| 3 | `abbrev` | [RingHom.toModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/RingHomNamespaced.lean/declarations/ringhom-tomodule.md) | 76 | `declaration-track:df6a221ac8d44b062d3d72c3306f681d0bc35d983e55aa933d85e5aa8ded384f` |
+| 4 | `def` | [RingHom.smulOneHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/RingHomNamespaced.lean/declarations/ringhom-smulonehom.md) | 85 | `declaration-track:4c9ad1e1134665041265ffc7ced179fc26cce8b282d91726a569f8dd6f64b5a9` |
+| 5 | `def` | [ringHomEquivModuleIsScalarTower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/RingHomNamespaced.lean/declarations/ringhomequivmoduleisscalartower.md) | 93 | `declaration-track:64fbf45b23b7651126e930295d8dc8b8b57410db3851a3491caa31f5efa73241` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

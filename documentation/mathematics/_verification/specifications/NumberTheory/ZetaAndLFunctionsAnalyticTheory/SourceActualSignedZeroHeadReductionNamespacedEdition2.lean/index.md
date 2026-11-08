@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionNamespacedEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualResidual_sub_signedHead_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionNamespacedEdition2.lean/declarations/actualresidual-sub-signedhead-eq.md) | 31 | `result-track:aabaa455dc3bdbb83d676a289d13691a1254f54656cdd7e44f900dd4c1f9382a` |
-| 2 | `theorem` | [actualResidual_movingHead_two_sided](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionNamespacedEdition2.lean/declarations/actualresidual-movinghead-two-sided.md) | 44 | `result-track:96a1e1ee32c2e13fdafd4d9da2db80d0306230699e93df47cfe006479c3a4f8c` |
-| 3 | `theorem` | [actualResidual_movingHead_signed_error_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionNamespacedEdition2.lean/declarations/actualresidual-movinghead-signed-error-bound.md) | 70 | `result-track:51e99177771342da996e5fbdf60d544cbdc26bf22e306a6f88a8549e451819a8` |
-| 4 | `theorem` | [actualResidual_movingHead_signed_error_tendsto](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionNamespacedEdition2.lean/declarations/actualresidual-movinghead-signed-error-tendsto.md) | 86 | `result-track:05ed938e424af6fcedf4bd6bb8edc4256d31900c99d9d5a9f0c075250c07f9ce` |
+| 1 | `theorem` | [actualResidual_sub_signedHead_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionNamespacedEdition2.lean/declarations/actualresidual-sub-signedhead-eq.md) | 31 | `result-track:aabaa455dc3bdbb83d676a289d13691a1254f54656cdd7e44f900dd4c1f9382a` |
+| 2 | `theorem` | [actualResidual_movingHead_two_sided](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionNamespacedEdition2.lean/declarations/actualresidual-movinghead-two-sided.md) | 44 | `result-track:96a1e1ee32c2e13fdafd4d9da2db80d0306230699e93df47cfe006479c3a4f8c` |
+| 3 | `theorem` | [actualResidual_movingHead_signed_error_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionNamespacedEdition2.lean/declarations/actualresidual-movinghead-signed-error-bound.md) | 70 | `result-track:51e99177771342da996e5fbdf60d544cbdc26bf22e306a6f88a8549e451819a8` |
+| 4 | `theorem` | [actualResidual_movingHead_signed_error_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionNamespacedEdition2.lean/declarations/actualresidual-movinghead-signed-error-tendsto.md) | 86 | `result-track:05ed938e424af6fcedf4bd6bb8edc4256d31900c99d9d5a9f0c075250c07f9ce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

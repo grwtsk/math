@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [_root_.Cardinal.mk_mul_le](../../../../GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/root-cardinal-mk-mul-le.md) | 25 | `result-track:3dfac5cb844ca5a7e0638ede5f6a3812da457f4802767e7a4e1f7ecee98d2241` |
-| 2 | `lemma` | [natCard_mul_le](../../../../GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/natcard-mul-le.md) | 31 | `result-track:01eb828b4b8d868baeb97ca013177d248d61b6cc14fc163748bdc1f7ec660325` |
-| 3 | `lemma` | [_root_.Cardinal.mk_inv](../../../../GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/root-cardinal-mk-inv.md) | 44 | `result-track:db92f2cfa48e4e44b716ee806152f7404c5a3bf2d4bc07281e56bf41d412a661` |
-| 4 | `lemma` | [natCard_inv](../../../../GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/natcard-inv.md) | 48 | `result-track:9d0ce74b23a4cd53a94c8d0f0fe27788ee2de306d731b6afcd1ed59b6208c4a0` |
-| 5 | `lemma` | [encard_inv](../../../../GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/encard-inv.md) | 52 | `result-track:c9ca74827e6daf2488ff7520f470960ffff95eed7701a2f17a8d0349b7664dd7` |
-| 6 | `lemma` | [ncard_inv](../../../../GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/ncard-inv.md) | 56 | `result-track:09a2ccb26845edc91f02f8b063d2bcb653a90a88f84e799eb8638b42eedba250` |
-| 7 | `lemma` | [_root_.Cardinal.mk_div_le](../../../../GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/root-cardinal-mk-div-le.md) | 64 | `result-track:00d14085d978ae531a0bf024f560a7cc70f3fc7c96bcb9eff3e6adb8f4be6e4d` |
-| 8 | `lemma` | [natCard_div_le](../../../../GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/natcard-div-le.md) | 73 | `result-track:225fd482957a2184a64725c11af727a585311ff77e636edeb8371568f4223286` |
-| 9 | `lemma` | [_root_.Cardinal.mk_smul_set](../../../../GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/root-cardinal-mk-smul-set.md) | 79 | `result-track:2d890bf34f5689e834b9bf8607948c1adb082881211f8df09200d8955a34268f` |
-| 10 | `lemma` | [natCard_smul_set](../../../../GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/natcard-smul-set.md) | 83 | `result-track:6b868b6c27d7d4d64e35fffffdbe368a64f85054bb665e047d75448918e20669` |
-| 11 | `lemma` | [encard_smul_set](../../../../GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/encard-smul-set.md) | 87 | `result-track:15bf9e9bfe25fcbf64fb180c8b4660cdb26692aa5e12d681c4e667aba00c436e` |
-| 12 | `lemma` | [ncard_smul_set](../../../../GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/ncard-smul-set.md) | 91 | `result-track:2de5aa6027f1ffd39f3245f0ce507eaee5270c87948f88334632fd0bbdfdf561` |
+| 1 | `lemma` | [_root_.Cardinal.mk_mul_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/root-cardinal-mk-mul-le.md) | 25 | `result-track:3dfac5cb844ca5a7e0638ede5f6a3812da457f4802767e7a4e1f7ecee98d2241` |
+| 2 | `lemma` | [natCard_mul_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/natcard-mul-le.md) | 31 | `result-track:01eb828b4b8d868baeb97ca013177d248d61b6cc14fc163748bdc1f7ec660325` |
+| 3 | `lemma` | [_root_.Cardinal.mk_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/root-cardinal-mk-inv.md) | 44 | `result-track:db92f2cfa48e4e44b716ee806152f7404c5a3bf2d4bc07281e56bf41d412a661` |
+| 4 | `lemma` | [natCard_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/natcard-inv.md) | 48 | `result-track:9d0ce74b23a4cd53a94c8d0f0fe27788ee2de306d731b6afcd1ed59b6208c4a0` |
+| 5 | `lemma` | [encard_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/encard-inv.md) | 52 | `result-track:c9ca74827e6daf2488ff7520f470960ffff95eed7701a2f17a8d0349b7664dd7` |
+| 6 | `lemma` | [ncard_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/ncard-inv.md) | 56 | `result-track:09a2ccb26845edc91f02f8b063d2bcb653a90a88f84e799eb8638b42eedba250` |
+| 7 | `lemma` | [_root_.Cardinal.mk_div_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/root-cardinal-mk-div-le.md) | 64 | `result-track:00d14085d978ae531a0bf024f560a7cc70f3fc7c96bcb9eff3e6adb8f4be6e4d` |
+| 8 | `lemma` | [natCard_div_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/natcard-div-le.md) | 73 | `result-track:225fd482957a2184a64725c11af727a585311ff77e636edeb8371568f4223286` |
+| 9 | `lemma` | [_root_.Cardinal.mk_smul_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/root-cardinal-mk-smul-set.md) | 79 | `result-track:2d890bf34f5689e834b9bf8607948c1adb082881211f8df09200d8955a34268f` |
+| 10 | `lemma` | [natCard_smul_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/natcard-smul-set.md) | 83 | `result-track:6b868b6c27d7d4d64e35fffffdbe368a64f85054bb665e047d75448918e20669` |
+| 11 | `lemma` | [encard_smul_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/encard-smul-set.md) | 87 | `result-track:15bf9e9bfe25fcbf64fb180c8b4660cdb26692aa5e12d681c4e667aba00c436e` |
+| 12 | `lemma` | [ncard_smul_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupPointwiseSetCard.lean/declarations/ncard-smul-set.md) | 91 | `result-track:2de5aa6027f1ffd39f3245f0ce507eaee5270c87948f88334632fd0bbdfdf561` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassNamespacedMellKTheoryTargetsMell.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassNamespacedMellKTheoryTargetsMell.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassNamespacedMellKTheoryTargetsMell.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassNamespacedMellKTheoryTargetsMell.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ktheory_class_has_value](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassNamespacedMellKTheoryTargetsMell.lean/declarations/ktheory-class-has-value.md) | 27 | `result-track:066342da2e2bba9dd98d9dbc2e16c449db815bfb7202ddc2f13753e8983409cf` |
-| 2 | `theorem` | [mell_k_theory_targets_mell](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassNamespacedMellKTheoryTargetsMell.lean/declarations/mell-k-theory-targets-mell.md) | 33 | `result-track:7a4a2651a82f289b093fe8b82b243ca25a7d62dac18af342fe9f7851241483f1` |
-| 3 | `theorem` | [mell_contract_is_mell](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassNamespacedMellKTheoryTargetsMell.lean/declarations/mell-contract-is-mell.md) | 38 | `result-track:222504b06fe143ce4ecd99f045101ccda7013fe1616a6f2541ae2cffddf1bb6e` |
+| 1 | `theorem` | [ktheory_class_has_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassNamespacedMellKTheoryTargetsMell.lean/declarations/ktheory-class-has-value.md) | 27 | `result-track:066342da2e2bba9dd98d9dbc2e16c449db815bfb7202ddc2f13753e8983409cf` |
+| 2 | `theorem` | [mell_k_theory_targets_mell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassNamespacedMellKTheoryTargetsMell.lean/declarations/mell-k-theory-targets-mell.md) | 33 | `result-track:7a4a2651a82f289b093fe8b82b243ca25a7d62dac18af342fe9f7851241483f1` |
+| 3 | `theorem` | [mell_contract_is_mell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryClassNamespacedMellKTheoryTargetsMell.lean/declarations/mell-contract-is-mell.md) | 38 | `result-track:222504b06fe143ce4ecd99f045101ccda7013fe1616a6f2541ae2cffddf1bb6e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

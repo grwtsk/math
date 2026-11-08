@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineNamespacedCopyRuleFixed.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineNamespacedCopyRuleFixed.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineNamespacedCopyRuleFixed.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineNamespacedCopyRuleFixed.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [copyRule_fixed](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineNamespacedCopyRuleFixed.lean/declarations/copyrule-fixed.md) | 27 | `result-track:5e6ab5390ecadc07fc8719c6e36b5cf4bf5c2c420c42eacdeb548d4aaeedd21a` |
-| 2 | `theorem` | [run?_resolved](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineNamespacedCopyRuleFixed.lean/declarations/run-resolved.md) | 32 | `result-track:17c3b2db367ad9f9051b89110e97249f1b384d4d90d1228c263dbd600ea90739` |
+| 1 | `theorem` | [copyRule_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineNamespacedCopyRuleFixed.lean/declarations/copyrule-fixed.md) | 27 | `result-track:5e6ab5390ecadc07fc8719c6e36b5cf4bf5c2c420c42eacdeb548d4aaeedd21a` |
+| 2 | `theorem` | [run?_resolved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineNamespacedCopyRuleFixed.lean/declarations/run-resolved.md) | 32 | `result-track:17c3b2db367ad9f9051b89110e97249f1b384d4d90d1228c263dbd600ea90739` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

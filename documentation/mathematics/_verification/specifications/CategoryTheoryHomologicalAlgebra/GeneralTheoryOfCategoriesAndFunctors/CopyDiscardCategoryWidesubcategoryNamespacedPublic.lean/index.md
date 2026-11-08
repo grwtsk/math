@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsStableUnderComonoid](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryNamespacedPublic.lean/declarations/isstableundercomonoid.md) | 39 | `declaration-track:569be7faf13d9969f9d8c8746945ce8d0495340d2648143cb38ef665ac8f727f` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 46 | `declaration-track:cfafa11c8510ce69eb639ae4c55cb39b5e5b37545b5038d9ff7b90ddb552d703` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 51 | `declaration-track:be888d0ca7fda81a8e98148ce92b41927677ed20bde924dcc687f1b95519e394` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryNamespacedPublic.lean/declarations/instance.md) | 59 | `declaration-track:0760bb71ceffff4dd6b267bf99b8fcc522a74b2adf6e41a9aea7db44fa9d1ab0` |
+| 1 | `class` | [IsStableUnderComonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryNamespacedPublic.lean/declarations/isstableundercomonoid.md) | 39 | `declaration-track:569be7faf13d9969f9d8c8746945ce8d0495340d2648143cb38ef665ac8f727f` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 46 | `declaration-track:cfafa11c8510ce69eb639ae4c55cb39b5e5b37545b5038d9ff7b90ddb552d703` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 51 | `declaration-track:be888d0ca7fda81a8e98148ce92b41927677ed20bde924dcc687f1b95519e394` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CopyDiscardCategoryWidesubcategoryNamespacedPublic.lean/declarations/instance.md) | 59 | `declaration-track:0760bb71ceffff4dd6b267bf99b8fcc522a74b2adf6e41a9aea7db44fa9d1ab0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

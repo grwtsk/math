@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/OrderCompletionPublic.lean/index.md) · [Full source](../../../../GeneralTopology/OrderCompletionPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderCompletionPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderCompletionPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [DedekindCut.continuous_principal](../../../../GeneralTopology/OrderCompletionPublic.lean/declarations/dedekindcut-continuous-principal.md) | 41 | `result-track:1e108674b39860c67ab691404e277f676c3a14f3adaffcbfba378373c6889322` |
-| 2 | `abbrev` | [Fill](../../../../GeneralTopology/OrderCompletionPublic.lean/declarations/fill.md) | 58 | `declaration-track:e6b361f490e9c721bd758ff35f1e64f05c6651299fb9addbc1ad1795f27b3170` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/OrderCompletionPublic.lean/declarations/instance.md) | 65 | `declaration-track:61d3fa8da23321be82c17b8b0ad829428aabe90c7d0373ce732abe6d505d2b91` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/OrderCompletionPublic.lean/declarations/instance-source-edition-2.md) | 67 | `declaration-track:85aa9b1abe804665dbd01568ccd3d34323340e1df7aa768c82c0c8e41d7791cd` |
-| 5 | `def` | [some](../../../../GeneralTopology/OrderCompletionPublic.lean/declarations/some.md) | 71 | `declaration-track:9281651f1367a53fcb48fe74250f2b3e1d1d84edb508861ec50700a8d7dd4b09` |
-| 6 | `instance` | [(anonymous)](../../../../GeneralTopology/OrderCompletionPublic.lean/declarations/instance-source-edition-3.md) | 77 | `declaration-track:947e04a1984bb03e17120da099f791e0cc520ff143ccbae069f8ad4fea3f8fc7` |
-| 7 | `theorem` | [continuous_some](../../../../GeneralTopology/OrderCompletionPublic.lean/declarations/continuous-some.md) | 97 | `result-track:b27874afeaf72c9821654d3c2643fccedd2474d5c3283ff5cd5d925c053a424f` |
-| 8 | `theorem` | [exists_dense_continuous_completion](../../../../GeneralTopology/OrderCompletionPublic.lean/declarations/exists-dense-continuous-completion.md) | 122 | `result-track:bf734c3482af0411db19d34dcdd6324b2b433f4a93a4f0c930223515f0c9b1e4` |
+| 1 | `theorem` | [DedekindCut.continuous_principal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderCompletionPublic.lean/declarations/dedekindcut-continuous-principal.md) | 41 | `result-track:1e108674b39860c67ab691404e277f676c3a14f3adaffcbfba378373c6889322` |
+| 2 | `abbrev` | [Fill](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderCompletionPublic.lean/declarations/fill.md) | 58 | `declaration-track:e6b361f490e9c721bd758ff35f1e64f05c6651299fb9addbc1ad1795f27b3170` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderCompletionPublic.lean/declarations/instance.md) | 65 | `declaration-track:61d3fa8da23321be82c17b8b0ad829428aabe90c7d0373ce732abe6d505d2b91` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderCompletionPublic.lean/declarations/instance-source-edition-2.md) | 67 | `declaration-track:85aa9b1abe804665dbd01568ccd3d34323340e1df7aa768c82c0c8e41d7791cd` |
+| 5 | `def` | [some](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderCompletionPublic.lean/declarations/some.md) | 71 | `declaration-track:9281651f1367a53fcb48fe74250f2b3e1d1d84edb508861ec50700a8d7dd4b09` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderCompletionPublic.lean/declarations/instance-source-edition-3.md) | 77 | `declaration-track:947e04a1984bb03e17120da099f791e0cc520ff143ccbae069f8ad4fea3f8fc7` |
+| 7 | `theorem` | [continuous_some](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderCompletionPublic.lean/declarations/continuous-some.md) | 97 | `result-track:b27874afeaf72c9821654d3c2643fccedd2474d5c3283ff5cd5d925c053a424f` |
+| 8 | `theorem` | [exists_dense_continuous_completion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderCompletionPublic.lean/declarations/exists-dense-continuous-completion.md) | 122 | `result-track:bf734c3482af0411db19d34dcdd6324b2b433f4a93a4f0c930223515f0c9b1e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/PartialProductPoles.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/PartialProductPoles.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PartialProductPoles.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PartialProductPoles.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,12 +62,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [digammaDenominator](../../../../FieldTheoryAndPolynomials/PartialProductPoles.lean/declarations/digammadenominator.md) | 67 | `declaration-track:1b2339d59f68f19daaf84e6dcbb30bff5ed09e97d327254d8a8480bad56d1509` |
-| 2 | `def` | [finiteDigamma?](../../../../FieldTheoryAndPolynomials/PartialProductPoles.lean/declarations/finitedigamma.md) | 71 | `declaration-track:a92228a6d924d6c8abfd120f6a5bd82cd7ece0eac644041f9212442580561a39` |
-| 3 | `theorem` | [digammaDenominator_eq_zero_of_mem](../../../../FieldTheoryAndPolynomials/PartialProductPoles.lean/declarations/digammadenominator-eq-zero-of-mem.md) | 80 | `result-track:f091c5018b7c112d8c8e62d5f574b7f65cad5a3c2cd64070aa213420663641d2` |
-| 4 | `theorem` | [finiteDigamma_none_of_mem](../../../../FieldTheoryAndPolynomials/PartialProductPoles.lean/declarations/finitedigamma-none-of-mem.md) | 87 | `result-track:5015f0c74c2d16ed7c207ffb7a5dc9d47b03ac2a5f24c3db6eb12affd726bf08` |
-| 5 | `def` | [allNonzeroRoots](../../../../FieldTheoryAndPolynomials/PartialProductPoles.lean/declarations/allnonzeroroots.md) | 99 | `declaration-track:d0dc21985f711a093731e8c053b17ffa6c487f75ce12fbea38f5e1ba875dab6c` |
-| 6 | `theorem` | [finiteDigamma_allNonzero_none](../../../../FieldTheoryAndPolynomials/PartialProductPoles.lean/declarations/finitedigamma-allnonzero-none.md) | 105 | `result-track:1cf6fa5a439e9c5f886e37aabd7e0bf6dd9e9f75f2d52cb817bd1a89b0bdba2e` |
+| 1 | `def` | [digammaDenominator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PartialProductPoles.lean/declarations/digammadenominator.md) | 67 | `declaration-track:1b2339d59f68f19daaf84e6dcbb30bff5ed09e97d327254d8a8480bad56d1509` |
+| 2 | `def` | [finiteDigamma?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PartialProductPoles.lean/declarations/finitedigamma.md) | 71 | `declaration-track:a92228a6d924d6c8abfd120f6a5bd82cd7ece0eac644041f9212442580561a39` |
+| 3 | `theorem` | [digammaDenominator_eq_zero_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PartialProductPoles.lean/declarations/digammadenominator-eq-zero-of-mem.md) | 80 | `result-track:f091c5018b7c112d8c8e62d5f574b7f65cad5a3c2cd64070aa213420663641d2` |
+| 4 | `theorem` | [finiteDigamma_none_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PartialProductPoles.lean/declarations/finitedigamma-none-of-mem.md) | 87 | `result-track:5015f0c74c2d16ed7c207ffb7a5dc9d47b03ac2a5f24c3db6eb12affd726bf08` |
+| 5 | `def` | [allNonzeroRoots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PartialProductPoles.lean/declarations/allnonzeroroots.md) | 99 | `declaration-track:d0dc21985f711a093731e8c053b17ffa6c487f75ce12fbea38f5e1ba875dab6c` |
+| 6 | `theorem` | [finiteDigamma_allNonzero_none](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PartialProductPoles.lean/declarations/finitedigamma-allnonzero-none.md) | 105 | `result-track:1cf6fa5a439e9c5f886e37aabd7e0bf6dd9e9f75f2d52cb817bd1a89b0bdba2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

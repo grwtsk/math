@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ExtrNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ExtrNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ExtrNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ExtrNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsMaxFilter.norm_add_sameRay](../../../../FunctionalAnalysis/ExtrNamespaced.lean/declarations/ismaxfilter-norm-add-sameray.md) | 42 | `result-track:ce4b02db2d94a5d8931c7b5b73dbeca48a30e1a645df69357ba589f1a0dc1650` |
-| 2 | `theorem` | [IsMaxFilter.norm_add_self](../../../../FunctionalAnalysis/ExtrNamespaced.lean/declarations/ismaxfilter-norm-add-self.md) | 52 | `result-track:169fdef10afad12b2cc3a90c26ba134df81b082619fbe86d751fa65aa5f788f9` |
-| 3 | `theorem` | [IsMaxOn.norm_add_sameRay](../../../../FunctionalAnalysis/ExtrNamespaced.lean/declarations/ismaxon-norm-add-sameray.md) | 59 | `result-track:bd3b0571e9aa841a7d3b07883b7c4e22bc6e33035e018e23c927665490c88392` |
-| 4 | `theorem` | [IsMaxOn.norm_add_self](../../../../FunctionalAnalysis/ExtrNamespaced.lean/declarations/ismaxon-norm-add-self.md) | 65 | `result-track:30363662303abb1ad69af5cb42a7c7dc8c1ebef6a35f128522ac844a7501881a` |
-| 5 | `theorem` | [IsLocalMaxOn.norm_add_sameRay](../../../../FunctionalAnalysis/ExtrNamespaced.lean/declarations/islocalmaxon-norm-add-sameray.md) | 75 | `result-track:0a47caeae03f73e4ef54366ae209d5c3703572b9b2b5bc010fed36116793bcaf` |
-| 6 | `theorem` | [IsLocalMaxOn.norm_add_self](../../../../FunctionalAnalysis/ExtrNamespaced.lean/declarations/islocalmaxon-norm-add-self.md) | 81 | `result-track:c8f55441ebce111411fecaef11f366d29c1daf39777c238d220ace2cfddffdf6` |
-| 7 | `theorem` | [IsLocalMax.norm_add_sameRay](../../../../FunctionalAnalysis/ExtrNamespaced.lean/declarations/islocalmax-norm-add-sameray.md) | 88 | `result-track:05bf1413915f95ca45b0111d27328293188299d81c73916335778fa8bd03b099` |
-| 8 | `theorem` | [IsLocalMax.norm_add_self](../../../../FunctionalAnalysis/ExtrNamespaced.lean/declarations/islocalmax-norm-add-self.md) | 94 | `result-track:f1e96405ce0cf6d718708e6cc48ecc0eb58ec39c879185f408c559444075959f` |
+| 1 | `theorem` | [IsMaxFilter.norm_add_sameRay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ExtrNamespaced.lean/declarations/ismaxfilter-norm-add-sameray.md) | 42 | `result-track:ce4b02db2d94a5d8931c7b5b73dbeca48a30e1a645df69357ba589f1a0dc1650` |
+| 2 | `theorem` | [IsMaxFilter.norm_add_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ExtrNamespaced.lean/declarations/ismaxfilter-norm-add-self.md) | 52 | `result-track:169fdef10afad12b2cc3a90c26ba134df81b082619fbe86d751fa65aa5f788f9` |
+| 3 | `theorem` | [IsMaxOn.norm_add_sameRay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ExtrNamespaced.lean/declarations/ismaxon-norm-add-sameray.md) | 59 | `result-track:bd3b0571e9aa841a7d3b07883b7c4e22bc6e33035e018e23c927665490c88392` |
+| 4 | `theorem` | [IsMaxOn.norm_add_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ExtrNamespaced.lean/declarations/ismaxon-norm-add-self.md) | 65 | `result-track:30363662303abb1ad69af5cb42a7c7dc8c1ebef6a35f128522ac844a7501881a` |
+| 5 | `theorem` | [IsLocalMaxOn.norm_add_sameRay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ExtrNamespaced.lean/declarations/islocalmaxon-norm-add-sameray.md) | 75 | `result-track:0a47caeae03f73e4ef54366ae209d5c3703572b9b2b5bc010fed36116793bcaf` |
+| 6 | `theorem` | [IsLocalMaxOn.norm_add_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ExtrNamespaced.lean/declarations/islocalmaxon-norm-add-self.md) | 81 | `result-track:c8f55441ebce111411fecaef11f366d29c1daf39777c238d220ace2cfddffdf6` |
+| 7 | `theorem` | [IsLocalMax.norm_add_sameRay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ExtrNamespaced.lean/declarations/islocalmax-norm-add-sameray.md) | 88 | `result-track:05bf1413915f95ca45b0111d27328293188299d81c73916335778fa8bd03b099` |
+| 8 | `theorem` | [IsLocalMax.norm_add_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ExtrNamespaced.lean/declarations/islocalmax-norm-add-self.md) | 94 | `result-track:f1e96405ce0cf6d718708e6cc48ecc0eb58ec39c879185f408c559444075959f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

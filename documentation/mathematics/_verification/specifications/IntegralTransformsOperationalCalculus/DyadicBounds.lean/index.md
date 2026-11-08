@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/DyadicBounds.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/DyadicBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/DyadicBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/DyadicBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [half_plane_margin](../../../../IntegralTransformsOperationalCalculus/DyadicBounds.lean/declarations/half-plane-margin.md) | 24 | `result-track:0e2f2333852a3dd1eb0bac92413bb74a5c832c2bd2950616cc918464c0125e42` |
-| 2 | `theorem` | [choose_energy_loss](../../../../IntegralTransformsOperationalCalculus/DyadicBounds.lean/declarations/choose-energy-loss.md) | 27 | `result-track:b73d22cc19e614bd4f5e111c1e25e72cfae2faa10412b311b9a13760a58f4e29` |
-| 3 | `theorem` | [summable_exponential_tail](../../../../IntegralTransformsOperationalCalculus/DyadicBounds.lean/declarations/summable-exponential-tail.md) | 32 | `result-track:82d4274c51224c7dc847dae0004bfa2e24fb17e5fbfc5bb6d400e2dd557bb67a` |
-| 4 | `theorem` | [summable_norm_of_eventual_geometric_bound](../../../../IntegralTransformsOperationalCalculus/DyadicBounds.lean/declarations/summable-norm-of-eventual-geometric-bound.md) | 48 | `result-track:b7a9c972d871183cc8afd9bfde4996247360d12e4ba6708456fa4ffca94b05a4` |
-| 5 | `def` | [dyadicWeight](../../../../IntegralTransformsOperationalCalculus/DyadicBounds.lean/declarations/dyadicweight.md) | 66 | `declaration-track:f3119940d759c82ec6c978511720d882de450f7aa926e7bbbccf5baa07600267` |
-| 6 | `theorem` | [summable_dyadicWeight](../../../../IntegralTransformsOperationalCalculus/DyadicBounds.lean/declarations/summable-dyadicweight.md) | 69 | `result-track:2f122c5f9595b60f2f650d59930860d37f32b2c7f6d71f07f0d85e777ef71274` |
-| 7 | `theorem` | [source_exponent](../../../../IntegralTransformsOperationalCalculus/DyadicBounds.lean/declarations/source-exponent.md) | 81 | `result-track:2c6b06c9ca64efe76baaa42c2a69418050ea336bc1ab2a65a16e23ded8f44a03` |
+| 1 | `theorem` | [half_plane_margin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/DyadicBounds.lean/declarations/half-plane-margin.md) | 24 | `result-track:0e2f2333852a3dd1eb0bac92413bb74a5c832c2bd2950616cc918464c0125e42` |
+| 2 | `theorem` | [choose_energy_loss](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/DyadicBounds.lean/declarations/choose-energy-loss.md) | 27 | `result-track:b73d22cc19e614bd4f5e111c1e25e72cfae2faa10412b311b9a13760a58f4e29` |
+| 3 | `theorem` | [summable_exponential_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/DyadicBounds.lean/declarations/summable-exponential-tail.md) | 32 | `result-track:82d4274c51224c7dc847dae0004bfa2e24fb17e5fbfc5bb6d400e2dd557bb67a` |
+| 4 | `theorem` | [summable_norm_of_eventual_geometric_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/DyadicBounds.lean/declarations/summable-norm-of-eventual-geometric-bound.md) | 48 | `result-track:b7a9c972d871183cc8afd9bfde4996247360d12e4ba6708456fa4ffca94b05a4` |
+| 5 | `def` | [dyadicWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/DyadicBounds.lean/declarations/dyadicweight.md) | 66 | `declaration-track:f3119940d759c82ec6c978511720d882de450f7aa926e7bbbccf5baa07600267` |
+| 6 | `theorem` | [summable_dyadicWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/DyadicBounds.lean/declarations/summable-dyadicweight.md) | 69 | `result-track:2f122c5f9595b60f2f650d59930860d37f32b2c7f6d71f07f0d85e777ef71274` |
+| 7 | `theorem` | [source_exponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/DyadicBounds.lean/declarations/source-exponent.md) | 81 | `result-track:2c6b06c9ca64efe76baaa42c2a69418050ea336bc1ab2a65a16e23ded8f44a03` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

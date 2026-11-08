@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ResolvableQuinticEndpointControls.lean/index.md) · [Full source](../../../../NumberTheory/ResolvableQuinticEndpointControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResolvableQuinticEndpointControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResolvableQuinticEndpointControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Farey.ResolvableQuintic`](../../../../NumberTheory/ResolvableQuintic.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.NumberTheory.Farey.ResolvableQuintic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResolvableQuintic.lean/index.md) — import line 11; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [polynomialResolves_mul_of_nonneg_at_endpoints](../../../../NumberTheory/ResolvableQuinticEndpointControls.lean/declarations/polynomialresolves-mul-of-nonneg-at-endpoints.md) | 36 | `result-track:520abc3da9e0092f216519f079e60d630741c7769f9d834acbfabd7ed12b3d91` |
-| 2 | `def` | [endpointWitnessCell](../../../../NumberTheory/ResolvableQuinticEndpointControls.lean/declarations/endpointwitnesscell.md) | 49 | `declaration-track:3ff3f49be556c3eb020eac2f3aed7163d001639b58a92ad67235986d326db6e6` |
-| 3 | `def` | [endpointWitnessFactor](../../../../NumberTheory/ResolvableQuinticEndpointControls.lean/declarations/endpointwitnessfactor.md) | 60 | `declaration-track:faa5a4737017776dc5a75d75902cb12e8879476114982a99dc3f80207bacc47c` |
-| 4 | `def` | [endpointWitnessLinear](../../../../NumberTheory/ResolvableQuinticEndpointControls.lean/declarations/endpointwitnesslinear.md) | 64 | `declaration-track:202d3dac65ecc8ab07cd5db57720c12ee5eae19a6f2bbdf60404c2ace027b12d` |
-| 5 | `theorem` | [endpointWitnessFactor_positive](../../../../NumberTheory/ResolvableQuinticEndpointControls.lean/declarations/endpointwitnessfactor-positive.md) | 67 | `result-track:106d378119225e200ac9f37a3ba11019613a23f9c5b13e99a650ab9f38577199` |
-| 6 | `theorem` | [endpointWitnessLinear_resolves](../../../../NumberTheory/ResolvableQuinticEndpointControls.lean/declarations/endpointwitnesslinear-resolves.md) | 76 | `result-track:4d13767ed147d2b2a86b3ae5d13d23daa80c78ce011f1ed542070c2793553d20` |
-| 7 | `theorem` | [endpointWitnessProduct_resolves](../../../../NumberTheory/ResolvableQuinticEndpointControls.lean/declarations/endpointwitnessproduct-resolves.md) | 86 | `result-track:d9d7c1ee1fd58b66ee3ca10f0dfcf4f03470e257931a13521eecda5fd484da93` |
-| 8 | `theorem` | [endpointWitness_extra_root](../../../../NumberTheory/ResolvableQuinticEndpointControls.lean/declarations/endpointwitness-extra-root.md) | 94 | `result-track:a00c7b281a1d349923bbd74daa0b64d7cc24822e7bf688377950eb3f957f70c0` |
-| 9 | `theorem` | [exists_endpoint_positive_factor_with_extra_rational_root](../../../../NumberTheory/ResolvableQuinticEndpointControls.lean/declarations/exists-endpoint-positive-factor-with-extra-rational-root.md) | 108 | `result-track:fa4dd291223bc09e7fcce3bbe087b6bf11f55011f74bb99a127023bf7a371fb7` |
+| 1 | `theorem` | [polynomialResolves_mul_of_nonneg_at_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResolvableQuinticEndpointControls.lean/declarations/polynomialresolves-mul-of-nonneg-at-endpoints.md) | 36 | `result-track:520abc3da9e0092f216519f079e60d630741c7769f9d834acbfabd7ed12b3d91` |
+| 2 | `def` | [endpointWitnessCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResolvableQuinticEndpointControls.lean/declarations/endpointwitnesscell.md) | 49 | `declaration-track:3ff3f49be556c3eb020eac2f3aed7163d001639b58a92ad67235986d326db6e6` |
+| 3 | `def` | [endpointWitnessFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResolvableQuinticEndpointControls.lean/declarations/endpointwitnessfactor.md) | 60 | `declaration-track:faa5a4737017776dc5a75d75902cb12e8879476114982a99dc3f80207bacc47c` |
+| 4 | `def` | [endpointWitnessLinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResolvableQuinticEndpointControls.lean/declarations/endpointwitnesslinear.md) | 64 | `declaration-track:202d3dac65ecc8ab07cd5db57720c12ee5eae19a6f2bbdf60404c2ace027b12d` |
+| 5 | `theorem` | [endpointWitnessFactor_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResolvableQuinticEndpointControls.lean/declarations/endpointwitnessfactor-positive.md) | 67 | `result-track:106d378119225e200ac9f37a3ba11019613a23f9c5b13e99a650ab9f38577199` |
+| 6 | `theorem` | [endpointWitnessLinear_resolves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResolvableQuinticEndpointControls.lean/declarations/endpointwitnesslinear-resolves.md) | 76 | `result-track:4d13767ed147d2b2a86b3ae5d13d23daa80c78ce011f1ed542070c2793553d20` |
+| 7 | `theorem` | [endpointWitnessProduct_resolves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResolvableQuinticEndpointControls.lean/declarations/endpointwitnessproduct-resolves.md) | 86 | `result-track:d9d7c1ee1fd58b66ee3ca10f0dfcf4f03470e257931a13521eecda5fd484da93` |
+| 8 | `theorem` | [endpointWitness_extra_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResolvableQuinticEndpointControls.lean/declarations/endpointwitness-extra-root.md) | 94 | `result-track:a00c7b281a1d349923bbd74daa0b64d7cc24822e7bf688377950eb3f957f70c0` |
+| 9 | `theorem` | [exists_endpoint_positive_factor_with_extra_rational_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResolvableQuinticEndpointControls.lean/declarations/exists-endpoint-positive-factor-with-extra-rational-root.md) | 108 | `result-track:fa4dd291223bc09e7fcce3bbe087b6bf11f55011f74bb99a127023bf7a371fb7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

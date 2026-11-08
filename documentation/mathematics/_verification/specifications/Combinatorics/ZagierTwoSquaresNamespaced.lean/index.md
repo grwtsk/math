@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ZagierTwoSquaresNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ZagierTwoSquaresNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZagierTwoSquaresNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZagierTwoSquaresNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [zagierSet](../../../../Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/zagierset.md) | 46 | `declaration-track:939f9e6552a9bcdd2b87e17f45902b230b9893298f295aea0ecf924dcb11d090` |
-| 2 | `lemma` | [zagierSet_lower_bound](../../../../Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/zagierset-lower-bound.md) | 48 | `result-track:281a29f2bdce094ae85c25bbf97c25670dde1524c8893bf64f9486037887d363` |
-| 3 | `lemma` | [zagierSet_upper_bound](../../../../Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/zagierset-upper-bound.md) | 65 | `result-track:0f71db1b519c86312c676514416285be89dd782d50762abe4f1fff4a6a934a2a` |
-| 4 | `lemma` | [zagierSet_subset](../../../../Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/zagierset-subset.md) | 71 | `result-track:008b2ccaee46a5da19178a4bf69f1f0e03aa1a14f937bb6f8d321d73b617a22b` |
-| 5 | `instance` | [(anonymous)](../../../../Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/instance.md) | 77 | `declaration-track:43a2c31122ffc67e3b520ce109682264932b87d18f11f61a87d7449fc99c3caf` |
-| 6 | `def` | [obvInvo](../../../../Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/obvinvo.md) | 90 | `declaration-track:04f64ed3f512872535130562d05ea903506875742f2768ea2ce048e6d3804654` |
-| 7 | `theorem` | [obvInvo_sq](../../../../Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/obvinvo-sq.md) | 94 | `result-track:e6c41ee0eb479286824b9ea443a7c5785f802d60c6f1594b4820bbcad6024cae` |
-| 8 | `theorem` | [sq_add_sq_of_nonempty_fixedPoints](../../../../Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/sq-add-sq-of-nonempty-fixedpoints.md) | 98 | `result-track:125e9ef8accee429c9771ab7ae65bb455d1f1fb15e4385d644be89454c592008` |
-| 9 | `def` | [complexInvo](../../../../Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/complexinvo.md) | 110 | `declaration-track:14de5633d195fdeb1cf2e3e508a534af87ed98d862490783ee693676dd7581bf` |
-| 10 | `theorem` | [complexInvo_sq](../../../../Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/complexinvo-sq.md) | 125 | `result-track:915904415bfe554793ec40432bef290d9f93e694a60bfbacdd79e4791b79ef5b` |
-| 11 | `theorem` | [eq_of_mem_fixedPoints](../../../../Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/eq-of-mem-fixedpoints.md) | 151 | `result-track:d581c7b07f25072b0a8cdf046568636ef9a24fa464fd18dd510ddbff56ae601c` |
-| 12 | `def` | [singletonFixedPoint](../../../../Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/singletonfixedpoint.md) | 177 | `declaration-track:4490db2a9a75427efd0ee1145c0a0b939cfaaf73275f56f9b42e56aa9ab0cce8` |
-| 13 | `theorem` | [card_fixedPoints_eq_one](../../../../Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/card-fixedpoints-eq-one.md) | 181 | `result-track:4c8f557595ffe2624175ed441a8953e84624d9134320a5d4e67412a3f89b3ab0` |
-| 14 | `theorem` | [Nat.Prime.sq_add_sq'](../../../../Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/nat-prime-sq-add-sq.md) | 200 | `result-track:1039124891cac6eb398576475a6ab6cc19f341e83be2a478f929d44d0c5db4b3` |
+| 1 | `def` | [zagierSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/zagierset.md) | 46 | `declaration-track:939f9e6552a9bcdd2b87e17f45902b230b9893298f295aea0ecf924dcb11d090` |
+| 2 | `lemma` | [zagierSet_lower_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/zagierset-lower-bound.md) | 48 | `result-track:281a29f2bdce094ae85c25bbf97c25670dde1524c8893bf64f9486037887d363` |
+| 3 | `lemma` | [zagierSet_upper_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/zagierset-upper-bound.md) | 65 | `result-track:0f71db1b519c86312c676514416285be89dd782d50762abe4f1fff4a6a934a2a` |
+| 4 | `lemma` | [zagierSet_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/zagierset-subset.md) | 71 | `result-track:008b2ccaee46a5da19178a4bf69f1f0e03aa1a14f937bb6f8d321d73b617a22b` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/instance.md) | 77 | `declaration-track:43a2c31122ffc67e3b520ce109682264932b87d18f11f61a87d7449fc99c3caf` |
+| 6 | `def` | [obvInvo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/obvinvo.md) | 90 | `declaration-track:04f64ed3f512872535130562d05ea903506875742f2768ea2ce048e6d3804654` |
+| 7 | `theorem` | [obvInvo_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/obvinvo-sq.md) | 94 | `result-track:e6c41ee0eb479286824b9ea443a7c5785f802d60c6f1594b4820bbcad6024cae` |
+| 8 | `theorem` | [sq_add_sq_of_nonempty_fixedPoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/sq-add-sq-of-nonempty-fixedpoints.md) | 98 | `result-track:125e9ef8accee429c9771ab7ae65bb455d1f1fb15e4385d644be89454c592008` |
+| 9 | `def` | [complexInvo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/complexinvo.md) | 110 | `declaration-track:14de5633d195fdeb1cf2e3e508a534af87ed98d862490783ee693676dd7581bf` |
+| 10 | `theorem` | [complexInvo_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/complexinvo-sq.md) | 125 | `result-track:915904415bfe554793ec40432bef290d9f93e694a60bfbacdd79e4791b79ef5b` |
+| 11 | `theorem` | [eq_of_mem_fixedPoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/eq-of-mem-fixedpoints.md) | 151 | `result-track:d581c7b07f25072b0a8cdf046568636ef9a24fa464fd18dd510ddbff56ae601c` |
+| 12 | `def` | [singletonFixedPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/singletonfixedpoint.md) | 177 | `declaration-track:4490db2a9a75427efd0ee1145c0a0b939cfaaf73275f56f9b42e56aa9ab0cce8` |
+| 13 | `theorem` | [card_fixedPoints_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/card-fixedpoints-eq-one.md) | 181 | `result-track:4c8f557595ffe2624175ed441a8953e84624d9134320a5d4e67412a3f89b3ab0` |
+| 14 | `theorem` | [Nat.Prime.sq_add_sq'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZagierTwoSquaresNamespaced.lean/declarations/nat-prime-sq-add-sq.md) | 200 | `result-track:1039124891cac6eb398576475a6ab6cc19f341e83be2a478f929d44d0c5db4b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,14 +61,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Fix](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/declarations/fix.md) | 40 | `declaration-track:1e3422b89947b755780b21d319e5ca036d10bca40c8cd83e8eaf39459bed932f` |
-| 2 | `def` | [Fix.approx](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/declarations/fix-approx.md) | 54 | `declaration-track:f8f4602715ac179ef8308945ff51f8912590004dd9b86643bc7987ee2a06b0a8` |
-| 3 | `def` | [fixAux](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/declarations/fixaux.md) | 59 | `declaration-track:25ce1f19b366725b285226d77b71ceb229f19f1e6d3f86a962c31eecfe31a493` |
-| 4 | `def` | [fix](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/declarations/fix-source-edition-2.md) | 71 | `declaration-track:fdc26fc37576d03d47b6bc4d814dbb064346c607e85569fd174fb34226671d8c` |
-| 5 | `theorem` | [fix_def](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/declarations/fix-def.md) | 76 | `result-track:62a844da149b8af5546ba12830f8529e36304a89e2f7717c1ac9849e98298df8` |
-| 6 | `theorem` | [fix_def'](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/declarations/fix-def-source-edition-2.md) | 112 | `result-track:b400a994568fcdadaef2f9a985793b2350ba6cff3ce0c2394ba27021573b14d9` |
-| 7 | `instance` | [hasFix](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/declarations/hasfix.md) | 122 | `declaration-track:1622a3b41fea34ecb0e136543e9e7cac5a980d08b5c42e9b2e3153ed61294f23` |
-| 8 | `instance` | [Part.hasFix](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/declarations/part-hasfix.md) | 131 | `declaration-track:a4e18f04f29c8a515b60663d9b22d2b86badb6f84825ae999d958c62d10a577a` |
+| 1 | `class` | [Fix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/declarations/fix.md) | 40 | `declaration-track:1e3422b89947b755780b21d319e5ca036d10bca40c8cd83e8eaf39459bed932f` |
+| 2 | `def` | [Fix.approx](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/declarations/fix-approx.md) | 54 | `declaration-track:f8f4602715ac179ef8308945ff51f8912590004dd9b86643bc7987ee2a06b0a8` |
+| 3 | `def` | [fixAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/declarations/fixaux.md) | 59 | `declaration-track:25ce1f19b366725b285226d77b71ceb229f19f1e6d3f86a962c31eecfe31a493` |
+| 4 | `def` | [fix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/declarations/fix-source-edition-2.md) | 71 | `declaration-track:fdc26fc37576d03d47b6bc4d814dbb064346c607e85569fd174fb34226671d8c` |
+| 5 | `theorem` | [fix_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/declarations/fix-def.md) | 76 | `result-track:62a844da149b8af5546ba12830f8529e36304a89e2f7717c1ac9849e98298df8` |
+| 6 | `theorem` | [fix_def'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/declarations/fix-def-source-edition-2.md) | 112 | `result-track:b400a994568fcdadaef2f9a985793b2350ba6cff3ce0c2394ba27021573b14d9` |
+| 7 | `instance` | [hasFix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/declarations/hasfix.md) | 122 | `declaration-track:1622a3b41fea34ecb0e136543e9e7cac5a980d08b5c42e9b2e3153ed61294f23` |
+| 8 | `instance` | [Part.hasFix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlFixNamespaced.lean/declarations/part-hasfix.md) | 131 | `declaration-track:a4e18f04f29c8a515b60663d9b22d2b86badb6f84825ae999d958c62d10a577a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

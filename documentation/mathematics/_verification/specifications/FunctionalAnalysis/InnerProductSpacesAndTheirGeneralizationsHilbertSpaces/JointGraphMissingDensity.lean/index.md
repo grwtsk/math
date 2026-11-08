@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.InnerProductSpace.JointGraphSolvability`](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceJointGraphSolvability.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.JointGraphSolvability`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceJointGraphSolvability.lean/index.md) — import line 10; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [zero_dense](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/declarations/zero-dense.md) | 20 | `result-track:9ca631c43be4ba87068a2dcf586be09a7142c98f7612cf317b99dffbb6b9cfb6` |
-| 2 | `theorem` | [zero_closed](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/declarations/zero-closed.md) | 24 | `result-track:a8b4e8ac6760dc9674a7c5eb1e057f560fd2a0e906d677cf3cd37699a9e1480e` |
-| 3 | `theorem` | [zero_complex](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/declarations/zero-complex.md) | 38 | `result-track:82c71a7972713d46eb6146e53bde5878d79517050736b1d4036ccc0dd7bee706` |
-| 4 | `theorem` | [zero_kernel_unit](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/declarations/zero-kernel-unit.md) | 42 | `result-track:1846aefdcdc031d9c474341dca7a0e33ed2f680fc8b1b92f01349b299c41c1b9` |
-| 5 | `theorem` | [zero_has_no_unit_solution](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/declarations/zero-has-no-unit-solution.md) | 45 | `result-track:490093a8d52a91b20b6605c26de510485fa1ba35e8c77c53a072ed3f12d99b50` |
-| 6 | `def` | [zeroJointPoint](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/declarations/zerojointpoint.md) | 50 | `declaration-track:53cbc6667c559ede2961264c8b496b551ee6eed19b8ec2bdf9b56d36b8c992c1` |
-| 7 | `theorem` | [empty_core_not_dense](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/declarations/empty-core-not-dense.md) | 54 | `result-track:44d34c338d9122cbdcd29390fbc5de1f81ad1db69d3e02cd46dcf57c01f2b86f` |
-| 8 | `theorem` | [empty_estimate](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/declarations/empty-estimate.md) | 60 | `result-track:54137d378709e5403cd1079a2dba129833e86493477a7e409f099511edfe2916` |
-| 9 | `example` | [(anonymous)](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/declarations/example.md) | 67 | `declaration-track:b88ae529839d3025f74d9674b3138ee844fdf9c60a99dd778188176ef308d474` |
+| 1 | `theorem` | [zero_dense](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/declarations/zero-dense.md) | 20 | `result-track:9ca631c43be4ba87068a2dcf586be09a7142c98f7612cf317b99dffbb6b9cfb6` |
+| 2 | `theorem` | [zero_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/declarations/zero-closed.md) | 24 | `result-track:a8b4e8ac6760dc9674a7c5eb1e057f560fd2a0e906d677cf3cd37699a9e1480e` |
+| 3 | `theorem` | [zero_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/declarations/zero-complex.md) | 38 | `result-track:82c71a7972713d46eb6146e53bde5878d79517050736b1d4036ccc0dd7bee706` |
+| 4 | `theorem` | [zero_kernel_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/declarations/zero-kernel-unit.md) | 42 | `result-track:1846aefdcdc031d9c474341dca7a0e33ed2f680fc8b1b92f01349b299c41c1b9` |
+| 5 | `theorem` | [zero_has_no_unit_solution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/declarations/zero-has-no-unit-solution.md) | 45 | `result-track:490093a8d52a91b20b6605c26de510485fa1ba35e8c77c53a072ed3f12d99b50` |
+| 6 | `def` | [zeroJointPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/declarations/zerojointpoint.md) | 50 | `declaration-track:53cbc6667c559ede2961264c8b496b551ee6eed19b8ec2bdf9b56d36b8c992c1` |
+| 7 | `theorem` | [empty_core_not_dense](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/declarations/empty-core-not-dense.md) | 54 | `result-track:44d34c338d9122cbdcd29390fbc5de1f81ad1db69d3e02cd46dcf57c01f2b86f` |
+| 8 | `theorem` | [empty_estimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/declarations/empty-estimate.md) | 60 | `result-track:54137d378709e5403cd1079a2dba129833e86493477a7e409f099511edfe2916` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/JointGraphMissingDensity.lean/declarations/example.md) | 67 | `declaration-track:b88ae529839d3025f74d9674b3138ee844fdf9c60a99dd778188176ef308d474` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

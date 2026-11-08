@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/HeatResidualNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/HeatResidualNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatResidualNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatResidualNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LiftedState](../../../../FunctionalAnalysis/HeatResidualNamespaced.lean/declarations/liftedstate.md) | 29 | `declaration-track:bd00097eb43befbe44c4bc358883ebdbd1faba16a62e6dabf68a657800c3f319` |
-| 2 | `def` | [liftedHeat](../../../../FunctionalAnalysis/HeatResidualNamespaced.lean/declarations/liftedheat.md) | 33 | `declaration-track:15c71cbcdc7b0f214887f11c75d9d54f4a2f7206948da58b618265743cecc520` |
-| 3 | `def` | [reconstructHeat](../../../../FunctionalAnalysis/HeatResidualNamespaced.lean/declarations/reconstructheat.md) | 40 | `declaration-track:6580dca70eb3986407414dc9dc6fecf27f38ced96cff1491556dc8be03075c92` |
-| 4 | `theorem` | [reconstruct_liftedHeat](../../../../FunctionalAnalysis/HeatResidualNamespaced.lean/declarations/reconstruct-liftedheat.md) | 45 | `result-track:115a766761fc6f6ca606b27b8ed1744b9ce9aa95543266ca49c261414be81268` |
+| 1 | `structure` | [LiftedState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatResidualNamespaced.lean/declarations/liftedstate.md) | 29 | `declaration-track:bd00097eb43befbe44c4bc358883ebdbd1faba16a62e6dabf68a657800c3f319` |
+| 2 | `def` | [liftedHeat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatResidualNamespaced.lean/declarations/liftedheat.md) | 33 | `declaration-track:15c71cbcdc7b0f214887f11c75d9d54f4a2f7206948da58b618265743cecc520` |
+| 3 | `def` | [reconstructHeat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatResidualNamespaced.lean/declarations/reconstructheat.md) | 40 | `declaration-track:6580dca70eb3986407414dc9dc6fecf27f38ced96cff1491556dc8be03075c92` |
+| 4 | `theorem` | [reconstruct_liftedHeat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatResidualNamespaced.lean/declarations/reconstruct-liftedheat.md) | 45 | `result-track:115a766761fc6f6ca606b27b8ed1744b9ce9aa95543266ca49c261414be81268` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

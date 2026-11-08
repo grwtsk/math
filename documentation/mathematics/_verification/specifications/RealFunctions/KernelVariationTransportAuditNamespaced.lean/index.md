@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/KernelVariationTransportAuditNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/KernelVariationTransportAuditNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/KernelVariationTransportAuditNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/KernelVariationTransportAuditNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -65,16 +65,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [abs_sub_le_reciprocal](../../../../RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/abs-sub-le-reciprocal.md) | 27 | `result-track:dc6906d6a8f1e8a08cb68f989de91edc6273b9eeb0b0a1912e83703d4f491ee8` |
-| 2 | `theorem` | [sqrt_reciprocal_step_le](../../../../RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/sqrt-reciprocal-step-le.md) | 67 | `result-track:8d959709f7219ec10559e46b6b17f7c819d1553270fae691aa5973b0a7402d53` |
-| 3 | `theorem` | [sqrt_reciprocal_variation_le](../../../../RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/sqrt-reciprocal-variation-le.md) | 95 | `result-track:6c1404da9b2136f4296d187bc95d9351d2a3b67195678004d85e7b358e0a6dca` |
-| 4 | `theorem` | [composed_abs_sub_le](../../../../RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/composed-abs-sub-le.md) | 122 | `result-track:5bb404b05f4cf857de65a7ddf6577a798498fb812ce813ef9ddb2ad844f67419` |
-| 5 | `def` | [composedVariation](../../../../RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/composedvariation.md) | 155 | `declaration-track:19c080e2fb6e39d78c967873a2640a602ff95e144777eca3337bacff65411d7f` |
-| 6 | `theorem` | [composedVariation_zero](../../../../RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/composedvariation-zero.md) | 160 | `result-track:8fa1dfc5758e89b0740e02764dc25b3c53006f886aaf7b7ad122ee4c76735140` |
-| 7 | `theorem` | [composedVariation_le](../../../../RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/composedvariation-le.md) | 163 | `result-track:93cfee4bd319b018258c6f780cda24e0aa7d248fbba8ade27b3972b8dd9361b1` |
-| 8 | `theorem` | [composedVariation_nat_le](../../../../RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/composedvariation-nat-le.md) | 227 | `result-track:8d030e9e19a9884a358ae4b4e23ffb38916f2867918c7c12f2987224aae4eb3a` |
-| 9 | `theorem` | [rpow_three_halves](../../../../RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/rpow-three-halves.md) | 239 | `result-track:04a6fbec46fe5bb50ccbd26aae1df0f93f88c64b5e852a01590531206a4f881c` |
-| 10 | `theorem` | [composedVariation_nat_le_rpow](../../../../RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/composedvariation-nat-le-rpow.md) | 244 | `result-track:0c21ff539240b85cf2af58819771b859a62e2c46517e671ec9c66979e8d0f83d` |
+| 1 | `theorem` | [abs_sub_le_reciprocal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/abs-sub-le-reciprocal.md) | 27 | `result-track:dc6906d6a8f1e8a08cb68f989de91edc6273b9eeb0b0a1912e83703d4f491ee8` |
+| 2 | `theorem` | [sqrt_reciprocal_step_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/sqrt-reciprocal-step-le.md) | 67 | `result-track:8d959709f7219ec10559e46b6b17f7c819d1553270fae691aa5973b0a7402d53` |
+| 3 | `theorem` | [sqrt_reciprocal_variation_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/sqrt-reciprocal-variation-le.md) | 95 | `result-track:6c1404da9b2136f4296d187bc95d9351d2a3b67195678004d85e7b358e0a6dca` |
+| 4 | `theorem` | [composed_abs_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/composed-abs-sub-le.md) | 122 | `result-track:5bb404b05f4cf857de65a7ddf6577a798498fb812ce813ef9ddb2ad844f67419` |
+| 5 | `def` | [composedVariation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/composedvariation.md) | 155 | `declaration-track:19c080e2fb6e39d78c967873a2640a602ff95e144777eca3337bacff65411d7f` |
+| 6 | `theorem` | [composedVariation_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/composedvariation-zero.md) | 160 | `result-track:8fa1dfc5758e89b0740e02764dc25b3c53006f886aaf7b7ad122ee4c76735140` |
+| 7 | `theorem` | [composedVariation_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/composedvariation-le.md) | 163 | `result-track:93cfee4bd319b018258c6f780cda24e0aa7d248fbba8ade27b3972b8dd9361b1` |
+| 8 | `theorem` | [composedVariation_nat_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/composedvariation-nat-le.md) | 227 | `result-track:8d030e9e19a9884a358ae4b4e23ffb38916f2867918c7c12f2987224aae4eb3a` |
+| 9 | `theorem` | [rpow_three_halves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/rpow-three-halves.md) | 239 | `result-track:04a6fbec46fe5bb50ccbd26aae1df0f93f88c64b5e852a01590531206a4f881c` |
+| 10 | `theorem` | [composedVariation_nat_le_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/KernelVariationTransportAuditNamespaced.lean/declarations/composedvariation-nat-le-rpow.md) | 244 | `result-track:0c21ff539240b85cf2af58819771b859a62e2c46517e671ec9c66979e8d0f83d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

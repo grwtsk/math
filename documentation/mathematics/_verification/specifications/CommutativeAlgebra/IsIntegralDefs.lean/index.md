@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IsIntegralDefs.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IsIntegralDefs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsIntegralDefs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsIntegralDefs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [RingHom.IsIntegralElem](../../../../CommutativeAlgebra/IsIntegralDefs.lean/declarations/ringhom-isintegralelem.md) | 35 | `declaration-track:d03d537d2d8247a6a6dcfd7a065ef5fbcaca7950983a8befc4332ba4196352b1` |
-| 2 | `def` | [RingHom.IsIntegral](../../../../CommutativeAlgebra/IsIntegralDefs.lean/declarations/ringhom-isintegral.md) | 41 | `declaration-track:bab6f9d990bce49e04c45c7644c18ee6bc64c17a1bf881e817292b883130823f` |
-| 3 | `def` | [IsIntegral](../../../../CommutativeAlgebra/IsIntegralDefs.lean/declarations/isintegral.md) | 49 | `declaration-track:106566003740b4531b4ef34bbac80cc568b1503ade1f075b079a64c84982843c` |
+| 1 | `def` | [RingHom.IsIntegralElem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsIntegralDefs.lean/declarations/ringhom-isintegralelem.md) | 35 | `declaration-track:d03d537d2d8247a6a6dcfd7a065ef5fbcaca7950983a8befc4332ba4196352b1` |
+| 2 | `def` | [RingHom.IsIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsIntegralDefs.lean/declarations/ringhom-isintegral.md) | 41 | `declaration-track:bab6f9d990bce49e04c45c7644c18ee6bc64c17a1bf881e817292b883130823f` |
+| 3 | `def` | [IsIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsIntegralDefs.lean/declarations/isintegral.md) | 49 | `declaration-track:106566003740b4531b4ef34bbac80cc568b1503ade1f075b079a64c84982843c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

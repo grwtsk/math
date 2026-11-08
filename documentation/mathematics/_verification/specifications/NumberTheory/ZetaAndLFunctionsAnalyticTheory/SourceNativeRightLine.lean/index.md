@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLine.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLine.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLine.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLine.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [polynomial_norm_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLine.lean/declarations/polynomial-norm-le.md) | 22 | `result-track:8ed35b47666f9aed21875330c1186e99b6ee6fff4758f49d6ec6578f7312b4b1` |
-| 2 | `theorem` | [bilateral_right_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLine.lean/declarations/bilateral-right-decay.md) | 46 | `result-track:b74a90eeb8e82decc679f4c5680546d72bb5136a99591235c22172a814cbf5db` |
-| 3 | `theorem` | [normalization_floor](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLine.lean/declarations/normalization-floor.md) | 99 | `result-track:ff7445c04afa797a8fc11a4fdac122d7a9fa79f9e5a36db2b8328ac050ca2b29` |
-| 4 | `theorem` | [nativeMellin_right_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLine.lean/declarations/nativemellin-right-decay.md) | 108 | `result-track:42dda256958f1cebf5d6006c60df3240133b4f68e9be1adc906316f7dcfc0a91` |
-| 5 | `theorem` | [nativeMellin_two_line_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLine.lean/declarations/nativemellin-two-line-decay.md) | 144 | `result-track:0ad695fe923a22900b6221484310fb8e246febc0f51d360419536ae57e1cd241` |
+| 1 | `theorem` | [polynomial_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLine.lean/declarations/polynomial-norm-le.md) | 22 | `result-track:8ed35b47666f9aed21875330c1186e99b6ee6fff4758f49d6ec6578f7312b4b1` |
+| 2 | `theorem` | [bilateral_right_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLine.lean/declarations/bilateral-right-decay.md) | 46 | `result-track:b74a90eeb8e82decc679f4c5680546d72bb5136a99591235c22172a814cbf5db` |
+| 3 | `theorem` | [normalization_floor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLine.lean/declarations/normalization-floor.md) | 99 | `result-track:ff7445c04afa797a8fc11a4fdac122d7a9fa79f9e5a36db2b8328ac050ca2b29` |
+| 4 | `theorem` | [nativeMellin_right_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLine.lean/declarations/nativemellin-right-decay.md) | 108 | `result-track:42dda256958f1cebf5d6006c60df3240133b4f68e9be1adc906316f7dcfc0a91` |
+| 5 | `theorem` | [nativeMellin_two_line_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLine.lean/declarations/nativemellin-two-line-decay.md) | 144 | `result-track:0ad695fe923a22900b6221484310fb8e246febc0f51d360419536ae57e1cd241` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

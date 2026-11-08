@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CohomologyClassDeRhamWittIsComplex.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CohomologyClassDeRhamWittIsComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CohomologyClassDeRhamWittIsComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CohomologyClassDeRhamWittIsComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [class_equality_compatible](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CohomologyClassDeRhamWittIsComplex.lean/declarations/class-equality-compatible.md) | 21 | `result-track:d95d483a8942f3cd4a9020b4a54deea9af340bfba7f25767c12cdd95ae3ebe71` |
-| 2 | `theorem` | [deRhamWitt_is_complex](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CohomologyClassDeRhamWittIsComplex.lean/declarations/derhamwitt-is-complex.md) | 28 | `result-track:325d6c52b5a588820a3da1ff80f7741b9ceded8cbee013205ad3bbdc8631175f` |
-| 3 | `theorem` | [deRhamWitt_identifies_with_crystalline_target](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CohomologyClassDeRhamWittIsComplex.lean/declarations/derhamwitt-identifies-with-crystalline-target.md) | 33 | `result-track:a4b81ce9a5e94566c5078638652c8c5afd7132dcbd74089365579a7e3daf9e07` |
+| 1 | `theorem` | [class_equality_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CohomologyClassDeRhamWittIsComplex.lean/declarations/class-equality-compatible.md) | 21 | `result-track:d95d483a8942f3cd4a9020b4a54deea9af340bfba7f25767c12cdd95ae3ebe71` |
+| 2 | `theorem` | [deRhamWitt_is_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CohomologyClassDeRhamWittIsComplex.lean/declarations/derhamwitt-is-complex.md) | 28 | `result-track:325d6c52b5a588820a3da1ff80f7741b9ceded8cbee013205ad3bbdc8631175f` |
+| 3 | `theorem` | [deRhamWitt_identifies_with_crystalline_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CohomologyClassDeRhamWittIsComplex.lean/declarations/derhamwitt-identifies-with-crystalline-target.md) | 33 | `result-track:a4b81ce9a5e94566c5078638652c8c5afd7132dcbd74089365579a7e3daf9e07` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

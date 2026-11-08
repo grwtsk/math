@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/BirthdayProblemNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/BirthdayProblemNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BirthdayProblemNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BirthdayProblemNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [birthday](../../../../ProbabilityTheoryAndStochasticProcesses/BirthdayProblemNamespaced.lean/declarations/birthday.md) | 36 | `result-track:2dd970b6c85bff043edb2e6fc6c9cd7a9afaf8d751e4c7a0a025ee480f46197a` |
-| 2 | `instance` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/BirthdayProblemNamespaced.lean/declarations/instance-source-edition-3.md) | 54 | `declaration-track:f882590c1ef4aa216376ec49d08a23c8a614d6032fcf9e091c25192ff74bb54f` |
-| 3 | `instance` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/BirthdayProblemNamespaced.lean/declarations/instance.md) | 57 | `declaration-track:4dd4297798b2207dfc00a0a49983b8c25e8fe599f356ab979c5c7a6148605f68` |
-| 4 | `instance` | [measureSpace](../../../../ProbabilityTheoryAndStochasticProcesses/BirthdayProblemNamespaced.lean/declarations/measurespace.md) | 62 | `declaration-track:2f08e609eae244b16056f5b8c05cfa8008753421440ae29f7253fde84d3d4cdf` |
-| 5 | `instance` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/BirthdayProblemNamespaced.lean/declarations/instance-source-edition-2.md) | 66 | `declaration-track:cd5d9cba43fad40e9668d559021b571123a8a8a9017793672b634bba5dbc7903` |
-| 6 | `theorem` | [FinFin.measure_apply](../../../../ProbabilityTheoryAndStochasticProcesses/BirthdayProblemNamespaced.lean/declarations/finfin-measure-apply.md) | 69 | `result-track:f5bed479b98e41b09a482afea48137d32fb97be4db4be386e1dcfc0d61bf78d9` |
-| 7 | `theorem` | [birthday_measure](../../../../ProbabilityTheoryAndStochasticProcesses/BirthdayProblemNamespaced.lean/declarations/birthday-measure.md) | 74 | `result-track:780daeb827072f1d797b114ea0d497f450318ed72026d459af064eaee5b91aea` |
+| 1 | `theorem` | [birthday](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BirthdayProblemNamespaced.lean/declarations/birthday.md) | 36 | `result-track:2dd970b6c85bff043edb2e6fc6c9cd7a9afaf8d751e4c7a0a025ee480f46197a` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BirthdayProblemNamespaced.lean/declarations/instance-source-edition-3.md) | 54 | `declaration-track:f882590c1ef4aa216376ec49d08a23c8a614d6032fcf9e091c25192ff74bb54f` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BirthdayProblemNamespaced.lean/declarations/instance.md) | 57 | `declaration-track:4dd4297798b2207dfc00a0a49983b8c25e8fe599f356ab979c5c7a6148605f68` |
+| 4 | `instance` | [measureSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BirthdayProblemNamespaced.lean/declarations/measurespace.md) | 62 | `declaration-track:2f08e609eae244b16056f5b8c05cfa8008753421440ae29f7253fde84d3d4cdf` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BirthdayProblemNamespaced.lean/declarations/instance-source-edition-2.md) | 66 | `declaration-track:cd5d9cba43fad40e9668d559021b571123a8a8a9017793672b634bba5dbc7903` |
+| 6 | `theorem` | [FinFin.measure_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BirthdayProblemNamespaced.lean/declarations/finfin-measure-apply.md) | 69 | `result-track:f5bed479b98e41b09a482afea48137d32fb97be4db4be386e1dcfc0d61bf78d9` |
+| 7 | `theorem` | [birthday_measure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BirthdayProblemNamespaced.lean/declarations/birthday-measure.md) | 74 | `result-track:780daeb827072f1d797b114ea0d497f450318ed72026d459af064eaee5b91aea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

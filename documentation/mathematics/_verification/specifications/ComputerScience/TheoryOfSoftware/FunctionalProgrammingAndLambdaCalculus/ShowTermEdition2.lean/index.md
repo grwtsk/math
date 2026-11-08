@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ShowTermEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ShowTermEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ShowTermEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ShowTermEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `elab` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ShowTermEdition2.lean/declarations/elab.md) | 18 | `declaration-track:17b23d3660b395f7d0816934c01b1e601f772461f2a581fa1640df25aaf0a369` |
-| 2 | `elab` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ShowTermEdition2.lean/declarations/elab-source-edition-2.md) | 24 | `declaration-track:992fa67ea174c27dccf70df3250484e9032759cd7c9a5816c6affc8fc5f0eb67` |
-| 3 | `macro` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ShowTermEdition2.lean/declarations/macro-source-edition-2.md) | 35 | `declaration-track:e32a9e65ec376a07d7993be06bb291b6a37f4fea1a18dce3595a33e78f7cc524` |
-| 4 | `macro` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ShowTermEdition2.lean/declarations/macro.md) | 42 | `declaration-track:062c6a3ce3a55ff594191d34034bb99ae08892339ead143742e6bce3d8993778` |
+| 1 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ShowTermEdition2.lean/declarations/elab.md) | 18 | `declaration-track:17b23d3660b395f7d0816934c01b1e601f772461f2a581fa1640df25aaf0a369` |
+| 2 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ShowTermEdition2.lean/declarations/elab-source-edition-2.md) | 24 | `declaration-track:992fa67ea174c27dccf70df3250484e9032759cd7c9a5816c6affc8fc5f0eb67` |
+| 3 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ShowTermEdition2.lean/declarations/macro-source-edition-2.md) | 35 | `declaration-track:e32a9e65ec376a07d7993be06bb291b6a37f4fea1a18dce3595a33e78f7cc524` |
+| 4 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ShowTermEdition2.lean/declarations/macro.md) | 42 | `declaration-track:062c6a3ce3a55ff594191d34034bb99ae08892339ead143742e6bce3d8993778` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

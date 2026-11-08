@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Integration.lean/index.md) · [Full source](../../../../GeneralTopology/Integration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Integration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Integration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DeepIntegrationCertificate](../../../../GeneralTopology/Integration.lean/declarations/deepintegrationcertificate.md) | 8 | `declaration-track:181d77ee84ae35b5b832fdfcfe2130471f7b75380c0ca33af693cbbed19338d3` |
-| 2 | `theorem` | [DeepIntegrationCertificate.sound_gluing](../../../../GeneralTopology/Integration.lean/declarations/deepintegrationcertificate-sound-gluing.md) | 26 | `result-track:b9519c581de965bfb1bac786208c1b40299ad2a30599adf8a178686b2359a0ab` |
-| 3 | `theorem` | [DeepIntegrationCertificate.sound_all_scales](../../../../GeneralTopology/Integration.lean/declarations/deepintegrationcertificate-sound-all-scales.md) | 36 | `result-track:07162a63f66705131db5f1e9da6e115f0f1a47babb3f945cec17cee4021d5f5d` |
-| 4 | `theorem` | [DeepIntegrationCertificate.sound](../../../../GeneralTopology/Integration.lean/declarations/deepintegrationcertificate-sound.md) | 46 | `result-track:6e8c33cfd757bfd582b231507b5e6e6a1b1821a36b0880f41572155a50a3a898` |
+| 1 | `structure` | [DeepIntegrationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Integration.lean/declarations/deepintegrationcertificate.md) | 8 | `declaration-track:181d77ee84ae35b5b832fdfcfe2130471f7b75380c0ca33af693cbbed19338d3` |
+| 2 | `theorem` | [DeepIntegrationCertificate.sound_gluing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Integration.lean/declarations/deepintegrationcertificate-sound-gluing.md) | 26 | `result-track:b9519c581de965bfb1bac786208c1b40299ad2a30599adf8a178686b2359a0ab` |
+| 3 | `theorem` | [DeepIntegrationCertificate.sound_all_scales](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Integration.lean/declarations/deepintegrationcertificate-sound-all-scales.md) | 36 | `result-track:07162a63f66705131db5f1e9da6e115f0f1a47babb3f945cec17cee4021d5f5d` |
+| 4 | `theorem` | [DeepIntegrationCertificate.sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Integration.lean/declarations/deepintegrationcertificate-sound.md) | 46 | `result-track:6e8c33cfd757bfd582b231507b5e6e6a1b1821a36b0880f41572155a50a3a898` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

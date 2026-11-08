@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuarticCharTwoMaximalCriterion.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuarticCharTwoMaximalCriterion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCharTwoMaximalCriterion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCharTwoMaximalCriterion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticDiscriminantCharTwo`](../../../../CommutativeAlgebra/QuarticDiscriminantCharTwo.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Algebra.QuarticCoefficientReductionCriterion`](../../../../CommutativeAlgebra/QuarticCoefficientReductionCriterion.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticDiscriminantCharTwo`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticDiscriminantCharTwo.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticCoefficientReductionCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCoefficientReductionCriterion.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [reduced_discriminant_ne_zero_iff_charTwoRoot](../../../../CommutativeAlgebra/QuarticCharTwoMaximalCriterion.lean/declarations/reduced-discriminant-ne-zero-iff-chartworoot.md) | 31 | `result-track:42c6bf81ef9df947f1a6efceba0646ddf014f5ea968324a19c76328bdfcc1864` |
-| 2 | `theorem` | [charTwo_obstruction_nonmem_separable_resolvent](../../../../CommutativeAlgebra/QuarticCharTwoMaximalCriterion.lean/declarations/chartwo-obstruction-nonmem-separable-resolvent.md) | 52 | `result-track:8aa907f580c1bed896c32cbec523221886552f2d4ec1e1e22cfa60e277e617da` |
+| 1 | `theorem` | [reduced_discriminant_ne_zero_iff_charTwoRoot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCharTwoMaximalCriterion.lean/declarations/reduced-discriminant-ne-zero-iff-chartworoot.md) | 31 | `result-track:42c6bf81ef9df947f1a6efceba0646ddf014f5ea968324a19c76328bdfcc1864` |
+| 2 | `theorem` | [charTwo_obstruction_nonmem_separable_resolvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCharTwoMaximalCriterion.lean/declarations/chartwo-obstruction-nonmem-separable-resolvent.md) | 52 | `result-track:8aa907f580c1bed896c32cbec523221886552f2d4ec1e1e22cfa60e277e617da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

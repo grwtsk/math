@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/FiniteIntervalSeparation.lean/index.md) · [Full source](../../../../RealFunctions/FiniteIntervalSeparation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteIntervalSeparation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteIntervalSeparation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [clearance](../../../../RealFunctions/FiniteIntervalSeparation.lean/declarations/clearance.md) | 25 | `declaration-track:41107208bce97e9d1171a1c09e6a3bc3a4e8a462c3ca6011248fd953b9407c65` |
-| 2 | `def` | [gridPoint](../../../../RealFunctions/FiniteIntervalSeparation.lean/declarations/gridpoint.md) | 28 | `declaration-track:442d5b8e183b129bf9d10ad0d332aa00196bf723b5a06ce47c215102a2dae25a` |
-| 3 | `theorem` | [clearance_pos](../../../../RealFunctions/FiniteIntervalSeparation.lean/declarations/clearance-pos.md) | 31 | `result-track:5f3c96a17b404a859fa2e3115ac0052d9e041dd98bf56fe98b0a52a6c3f2a149` |
-| 4 | `theorem` | [clearance_le_quarter](../../../../RealFunctions/FiniteIntervalSeparation.lean/declarations/clearance-le-quarter.md) | 35 | `result-track:0dc064a2d380d016204132720b053ee4cb7adb97486aead6a90ffee1aa295f31` |
-| 5 | `theorem` | [gridPoint_sub](../../../../RealFunctions/FiniteIntervalSeparation.lean/declarations/gridpoint-sub.md) | 41 | `result-track:e0867fe269d54b7b25d398fdc387191c9b1cb6613ab3621c19abd2e1beb4fc0c` |
-| 6 | `theorem` | [gridPoint_gap](../../../../RealFunctions/FiniteIntervalSeparation.lean/declarations/gridpoint-gap.md) | 47 | `result-track:3ed1a4862d63d2a5d1ff3e44b5a2804c52abd246d6bc41640c02fef56cfa80a7` |
-| 7 | `theorem` | [gridPoint_bounds](../../../../RealFunctions/FiniteIntervalSeparation.lean/declarations/gridpoint-bounds.md) | 59 | `result-track:7ec193e9ea9f86bfdd63821234243adfa913ad27c3d78e9decc2680a38a1422f` |
-| 8 | `theorem` | [close_gridPoint_unique](../../../../RealFunctions/FiniteIntervalSeparation.lean/declarations/close-gridpoint-unique.md) | 85 | `result-track:a71a33b317f237e8cf2ef2a515bc4f15e2aeb22e489d10910b4d99458af084dc` |
-| 9 | `theorem` | [exists_clear_gridPoint](../../../../RealFunctions/FiniteIntervalSeparation.lean/declarations/exists-clear-gridpoint.md) | 102 | `result-track:f4a0787a7356c365f73202136e972bf25de7ba83a20491ec0ce68724b0151187` |
-| 10 | `theorem` | [exists_interval_clearance](../../../../RealFunctions/FiniteIntervalSeparation.lean/declarations/exists-interval-clearance.md) | 118 | `result-track:10766a640532842de8aaffa177c2d522e91603bc67cf559e77150cdc6fde066c` |
-| 11 | `theorem` | [clearance_after_perturbation](../../../../RealFunctions/FiniteIntervalSeparation.lean/declarations/clearance-after-perturbation.md) | 133 | `result-track:01ff65f0b1e2f54d55d261765ca530690f92f25acbc7f0d42d6ef48eb59bd6c1` |
-| 12 | `theorem` | [cutoff_stable](../../../../RealFunctions/FiniteIntervalSeparation.lean/declarations/cutoff-stable.md) | 140 | `result-track:69cef17bb7fb08d1e110dbf307807ebd4be416e22c76e6ae1a2b6e8624686550` |
+| 1 | `def` | [clearance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteIntervalSeparation.lean/declarations/clearance.md) | 25 | `declaration-track:41107208bce97e9d1171a1c09e6a3bc3a4e8a462c3ca6011248fd953b9407c65` |
+| 2 | `def` | [gridPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteIntervalSeparation.lean/declarations/gridpoint.md) | 28 | `declaration-track:442d5b8e183b129bf9d10ad0d332aa00196bf723b5a06ce47c215102a2dae25a` |
+| 3 | `theorem` | [clearance_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteIntervalSeparation.lean/declarations/clearance-pos.md) | 31 | `result-track:5f3c96a17b404a859fa2e3115ac0052d9e041dd98bf56fe98b0a52a6c3f2a149` |
+| 4 | `theorem` | [clearance_le_quarter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteIntervalSeparation.lean/declarations/clearance-le-quarter.md) | 35 | `result-track:0dc064a2d380d016204132720b053ee4cb7adb97486aead6a90ffee1aa295f31` |
+| 5 | `theorem` | [gridPoint_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteIntervalSeparation.lean/declarations/gridpoint-sub.md) | 41 | `result-track:e0867fe269d54b7b25d398fdc387191c9b1cb6613ab3621c19abd2e1beb4fc0c` |
+| 6 | `theorem` | [gridPoint_gap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteIntervalSeparation.lean/declarations/gridpoint-gap.md) | 47 | `result-track:3ed1a4862d63d2a5d1ff3e44b5a2804c52abd246d6bc41640c02fef56cfa80a7` |
+| 7 | `theorem` | [gridPoint_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteIntervalSeparation.lean/declarations/gridpoint-bounds.md) | 59 | `result-track:7ec193e9ea9f86bfdd63821234243adfa913ad27c3d78e9decc2680a38a1422f` |
+| 8 | `theorem` | [close_gridPoint_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteIntervalSeparation.lean/declarations/close-gridpoint-unique.md) | 85 | `result-track:a71a33b317f237e8cf2ef2a515bc4f15e2aeb22e489d10910b4d99458af084dc` |
+| 9 | `theorem` | [exists_clear_gridPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteIntervalSeparation.lean/declarations/exists-clear-gridpoint.md) | 102 | `result-track:f4a0787a7356c365f73202136e972bf25de7ba83a20491ec0ce68724b0151187` |
+| 10 | `theorem` | [exists_interval_clearance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteIntervalSeparation.lean/declarations/exists-interval-clearance.md) | 118 | `result-track:10766a640532842de8aaffa177c2d522e91603bc67cf559e77150cdc6fde066c` |
+| 11 | `theorem` | [clearance_after_perturbation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteIntervalSeparation.lean/declarations/clearance-after-perturbation.md) | 133 | `result-track:01ff65f0b1e2f54d55d261765ca530690f92f25acbc7f0d42d6ef48eb59bd6c1` |
+| 12 | `theorem` | [cutoff_stable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteIntervalSeparation.lean/declarations/cutoff-stable.md) | 140 | `result-track:69cef17bb7fb08d1e110dbf307807ebd4be416e22c76e6ae1a2b6e8624686550` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ModularityNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ModularityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModularityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModularityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ModularityPrimeAssignment](../../../../../ComputerScience/AlgorithmsInComputerScience/ModularityNamespaced.lean/declarations/modularityprimeassignment.md) | 15 | `declaration-track:390902cd9b70c7e1117c19df3103fc4c6437da42c78bbf8360aba902e3210e2e` |
-| 2 | `theorem` | [modularity_assignment_prime_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/ModularityNamespaced.lean/declarations/modularity-assignment-prime-visible.md) | 21 | `result-track:f1a7a79aca609f18038217228322c8a303fa912e00ace892743226d32976eb90` |
+| 1 | `structure` | [ModularityPrimeAssignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModularityNamespaced.lean/declarations/modularityprimeassignment.md) | 15 | `declaration-track:390902cd9b70c7e1117c19df3103fc4c6437da42c78bbf8360aba902e3210e2e` |
+| 2 | `theorem` | [modularity_assignment_prime_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModularityNamespaced.lean/declarations/modularity-assignment-prime-visible.md) | 21 | `result-track:f1a7a79aca609f18038217228322c8a303fa912e00ace892743226d32976eb90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RodgersTaoContinuationComplexNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RodgersTaoContinuationComplexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RodgersTaoContinuationComplexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RodgersTaoContinuationComplexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rodgers_tao_continuation_identity_if_supplied](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RodgersTaoContinuationComplexNamespaced.lean/declarations/rodgers-tao-continuation-identity-if-supplied.md) | 27 | `result-track:f5c82095a27b16749efda38611f89e2ad704a4687bf11f806be8737ab06f70b4` |
-| 2 | `theorem` | [rodgers_tao_continuation_composition_if_supplied](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RodgersTaoContinuationComplexNamespaced.lean/declarations/rodgers-tao-continuation-composition-if-supplied.md) | 32 | `result-track:b2cdd8226fc65105262041b1cf1248c34575bfba7cde25822a26493708369f67` |
+| 1 | `theorem` | [rodgers_tao_continuation_identity_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RodgersTaoContinuationComplexNamespaced.lean/declarations/rodgers-tao-continuation-identity-if-supplied.md) | 27 | `result-track:f5c82095a27b16749efda38611f89e2ad704a4687bf11f806be8737ab06f70b4` |
+| 2 | `theorem` | [rodgers_tao_continuation_composition_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RodgersTaoContinuationComplexNamespaced.lean/declarations/rodgers-tao-continuation-composition-if-supplied.md) | 32 | `result-track:b2cdd8226fc65105262041b1cf1248c34575bfba7cde25822a26493708369f67` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

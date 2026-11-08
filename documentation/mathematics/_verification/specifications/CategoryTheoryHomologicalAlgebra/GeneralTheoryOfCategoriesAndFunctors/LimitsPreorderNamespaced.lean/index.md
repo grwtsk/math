@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPreorderNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPreorderNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPreorderNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPreorderNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [isInitialBot](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPreorderNamespaced.lean/declarations/isinitialbot.md) | 39 | `declaration-track:01ee4e02731be4b465bfa27cbec960d53c96d784e22b337716aaaccdb954d53e` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPreorderNamespaced.lean/declarations/instance-source-edition-2.md) | 41 | `declaration-track:29d00ef756096a674a706ff6ecd9ea11d03a2f1799bf7fa607c6e938f41114ce` |
-| 3 | `def` | [isTerminalTop](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPreorderNamespaced.lean/declarations/isterminaltop.md) | 51 | `declaration-track:82f2fc533597399533bedb4d94c77bc8d339281fdb4bdf42a3eed78763a7efe4` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPreorderNamespaced.lean/declarations/instance.md) | 53 | `declaration-track:0cd526100e0540c9065c41d22072fc16a1a6d461c0a4e4dd2d1339a7768ed0b2` |
-| 5 | `def` | [isLimitBinaryFan](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPreorderNamespaced.lean/declarations/islimitbinaryfan.md) | 63 | `declaration-track:cac24a032cede55832ddf49f0d84929ca0359073cc9f9ed032e84d9bc6603c12` |
-| 6 | `def` | [isColimitBinaryCofan](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPreorderNamespaced.lean/declarations/iscolimitbinarycofan.md) | 76 | `declaration-track:77ef848f0c52b01d3d34f5ad31bab917a36c429cab6b2798f3b55d7b1cbbd623` |
+| 1 | `def` | [isInitialBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPreorderNamespaced.lean/declarations/isinitialbot.md) | 39 | `declaration-track:01ee4e02731be4b465bfa27cbec960d53c96d784e22b337716aaaccdb954d53e` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPreorderNamespaced.lean/declarations/instance-source-edition-2.md) | 41 | `declaration-track:29d00ef756096a674a706ff6ecd9ea11d03a2f1799bf7fa607c6e938f41114ce` |
+| 3 | `def` | [isTerminalTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPreorderNamespaced.lean/declarations/isterminaltop.md) | 51 | `declaration-track:82f2fc533597399533bedb4d94c77bc8d339281fdb4bdf42a3eed78763a7efe4` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPreorderNamespaced.lean/declarations/instance.md) | 53 | `declaration-track:0cd526100e0540c9065c41d22072fc16a1a6d461c0a4e4dd2d1339a7768ed0b2` |
+| 5 | `def` | [isLimitBinaryFan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPreorderNamespaced.lean/declarations/islimitbinaryfan.md) | 63 | `declaration-track:cac24a032cede55832ddf49f0d84929ca0359073cc9f9ed032e84d9bc6603c12` |
+| 6 | `def` | [isColimitBinaryCofan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPreorderNamespaced.lean/declarations/iscolimitbinarycofan.md) | 76 | `declaration-track:77ef848f0c52b01d3d34f5ad31bab917a36c429cab6b2798f3b55d7b1cbbd623` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

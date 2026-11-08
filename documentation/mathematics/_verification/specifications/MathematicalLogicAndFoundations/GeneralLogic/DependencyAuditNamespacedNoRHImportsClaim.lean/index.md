@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependencyAuditNamespacedNoRHImportsClaim.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependencyAuditNamespacedNoRHImportsClaim.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependencyAuditNamespacedNoRHImportsClaim.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependencyAuditNamespacedNoRHImportsClaim.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [noRHImportsClaim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependencyAuditNamespacedNoRHImportsClaim.lean/declarations/norhimportsclaim.md) | 22 | `declaration-track:6af9d8e6e91c6573e6bb6e0707cfe35deb02d14fdbe4f801da5e789386fe881e` |
-| 2 | `def` | [noAnalyticTheoremPromotedClaim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependencyAuditNamespacedNoRHImportsClaim.lean/declarations/noanalytictheorempromotedclaim.md) | 24 | `declaration-track:e566f10c4c18e7134d07410650360e24cf2bf54738f0370fa4677328366837bb` |
-| 3 | `def` | [anchorsAreExpositionOnlyClaim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependencyAuditNamespacedNoRHImportsClaim.lean/declarations/anchorsareexpositiononlyclaim.md) | 26 | `declaration-track:eae5d1da7de5d717f7eb724fa28ebe5b36c55e1b288837f33346fc78f9974bdf` |
-| 4 | `theorem` | [noRHImportsClaim_checked](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependencyAuditNamespacedNoRHImportsClaim.lean/declarations/norhimportsclaim-checked.md) | 28 | `result-track:73b3924e290429cba865b682d50e9d5c6726d9109329cd1b510c6a64364c7533` |
-| 5 | `theorem` | [noAnalyticTheoremPromotedClaim_checked](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependencyAuditNamespacedNoRHImportsClaim.lean/declarations/noanalytictheorempromotedclaim-checked.md) | 31 | `result-track:b0cddbcc466c21efe5cc1e29aa084049b2731e17a54f569f8fb86b199dc9e3c9` |
-| 6 | `theorem` | [anchorsAreExpositionOnlyClaim_checked](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependencyAuditNamespacedNoRHImportsClaim.lean/declarations/anchorsareexpositiononlyclaim-checked.md) | 35 | `result-track:ca412329cf5b03e09fc022c9fd2e87b99d5bbf8fd352e8db5b519bb479472547` |
+| 1 | `def` | [noRHImportsClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependencyAuditNamespacedNoRHImportsClaim.lean/declarations/norhimportsclaim.md) | 22 | `declaration-track:6af9d8e6e91c6573e6bb6e0707cfe35deb02d14fdbe4f801da5e789386fe881e` |
+| 2 | `def` | [noAnalyticTheoremPromotedClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependencyAuditNamespacedNoRHImportsClaim.lean/declarations/noanalytictheorempromotedclaim.md) | 24 | `declaration-track:e566f10c4c18e7134d07410650360e24cf2bf54738f0370fa4677328366837bb` |
+| 3 | `def` | [anchorsAreExpositionOnlyClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependencyAuditNamespacedNoRHImportsClaim.lean/declarations/anchorsareexpositiononlyclaim.md) | 26 | `declaration-track:eae5d1da7de5d717f7eb724fa28ebe5b36c55e1b288837f33346fc78f9974bdf` |
+| 4 | `theorem` | [noRHImportsClaim_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependencyAuditNamespacedNoRHImportsClaim.lean/declarations/norhimportsclaim-checked.md) | 28 | `result-track:73b3924e290429cba865b682d50e9d5c6726d9109329cd1b510c6a64364c7533` |
+| 5 | `theorem` | [noAnalyticTheoremPromotedClaim_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependencyAuditNamespacedNoRHImportsClaim.lean/declarations/noanalytictheorempromotedclaim-checked.md) | 31 | `result-track:b0cddbcc466c21efe5cc1e29aa084049b2731e17a54f569f8fb86b199dc9e3c9` |
+| 6 | `theorem` | [anchorsAreExpositionOnlyClaim_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependencyAuditNamespacedNoRHImportsClaim.lean/declarations/anchorsareexpositiononlyclaim-checked.md) | 35 | `result-track:ca412329cf5b03e09fc022c9fd2e87b99d5bbf8fd352e8db5b519bb479472547` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

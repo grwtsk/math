@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualMixedWorkEstimate.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualMixedWorkEstimate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMixedWorkEstimate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMixedWorkEstimate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_mixed_kernel_abs_le](../../../../MeasureAndIntegration/SourceActualMixedWorkEstimate.lean/declarations/actual-mixed-kernel-abs-le.md) | 23 | `result-track:0aaffbba7bb4a9c8dc01edd048af16c1cc927dba040f513126eae91c06fce439` |
-| 2 | `theorem` | [actual_error_mixed_density_abs_le](../../../../MeasureAndIntegration/SourceActualMixedWorkEstimate.lean/declarations/actual-error-mixed-density-abs-le.md) | 37 | `result-track:97a33f8fc76c69e9a1e89a9c41ef70a40cefd7608e62d1edb1204b5a97814afb` |
-| 3 | `def` | [actualErrorExpMass](../../../../MeasureAndIntegration/SourceActualMixedWorkEstimate.lean/declarations/actualerrorexpmass.md) | 54 | `declaration-track:1bb8d6dc42de58ec9d060f53a0992195c5d81aaa84116e356c7247755dbe678d` |
-| 4 | `theorem` | [exp_half_antiderivative](../../../../MeasureAndIntegration/SourceActualMixedWorkEstimate.lean/declarations/exp-half-antiderivative.md) | 58 | `result-track:e65daf72f4b7f38f7d6a72e3317c9b84a833172b66e4e7dcf0e7a2addc28d606` |
-| 5 | `theorem` | [actualErrorExpMass_le](../../../../MeasureAndIntegration/SourceActualMixedWorkEstimate.lean/declarations/actualerrorexpmass-le.md) | 65 | `result-track:5ebdc00051f8f1c273f80a44985003606bc1df85e27c18e6c1318e236071641e` |
+| 1 | `theorem` | [actual_mixed_kernel_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMixedWorkEstimate.lean/declarations/actual-mixed-kernel-abs-le.md) | 23 | `result-track:0aaffbba7bb4a9c8dc01edd048af16c1cc927dba040f513126eae91c06fce439` |
+| 2 | `theorem` | [actual_error_mixed_density_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMixedWorkEstimate.lean/declarations/actual-error-mixed-density-abs-le.md) | 37 | `result-track:97a33f8fc76c69e9a1e89a9c41ef70a40cefd7608e62d1edb1204b5a97814afb` |
+| 3 | `def` | [actualErrorExpMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMixedWorkEstimate.lean/declarations/actualerrorexpmass.md) | 54 | `declaration-track:1bb8d6dc42de58ec9d060f53a0992195c5d81aaa84116e356c7247755dbe678d` |
+| 4 | `theorem` | [exp_half_antiderivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMixedWorkEstimate.lean/declarations/exp-half-antiderivative.md) | 58 | `result-track:e65daf72f4b7f38f7d6a72e3317c9b84a833172b66e4e7dcf0e7a2addc28d606` |
+| 5 | `theorem` | [actualErrorExpMass_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMixedWorkEstimate.lean/declarations/actualerrorexpmass-le.md) | 65 | `result-track:5ebdc00051f8f1c273f80a44985003606bc1df85e27c18e6c1318e236071641e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CurvesNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/CurvesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CurvesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CurvesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [modelCurvePhi](../../../../RealFunctions/CurvesNamespaced.lean/declarations/modelcurvephi.md) | 18 | `declaration-track:960ceb727256905dbee2d26e0b18410e346f883f0f058a5fbb5934027b198961` |
-| 2 | `structure` | [GraphCurve](../../../../RealFunctions/CurvesNamespaced.lean/declarations/graphcurve.md) | 21 | `declaration-track:6a96556d4447de3f1bcf99bf6e5bbdd661df04778f53014edc5c1bc895a4bb71` |
-| 3 | `structure` | [PlaneCurve](../../../../RealFunctions/CurvesNamespaced.lean/declarations/planecurve.md) | 25 | `declaration-track:69c86d80af29eccda56a50b002455b07d31fb493b3c1b7b6eef90cfdb8b83474` |
-| 4 | `def` | [modelGraphCurve](../../../../RealFunctions/CurvesNamespaced.lean/declarations/modelgraphcurve.md) | 30 | `declaration-track:885f03b57be849922f43707625b94f849acf392cab60965f80b21d3bfe009d5d` |
-| 5 | `def` | [CurvatureIdenticallyZero](../../../../RealFunctions/CurvesNamespaced.lean/declarations/curvatureidenticallyzero.md) | 34 | `declaration-track:47c5254476d456bfc16e4f7c0a43bf26208c4a3d5bbefc84abf6055749d76754` |
-| 6 | `def` | [RegularPlaneCurve](../../../../RealFunctions/CurvesNamespaced.lean/declarations/regularplanecurve.md) | 37 | `declaration-track:52fdac3b0101db1aba74d5a4fe777dc29943d1a41ab427600456b6a28c1896cb` |
-| 7 | `def` | [WronskianVanishesOnlyFinitelyToFiniteOrder](../../../../RealFunctions/CurvesNamespaced.lean/declarations/wronskianvanishesonlyfinitelytofiniteorder.md) | 40 | `declaration-track:294db65ba1a12f5d15d6ed4aa57550978e073f5c02852c900fbc19ddab11321c` |
-| 8 | `theorem` | [model_curve_domain_recorded](../../../../RealFunctions/CurvesNamespaced.lean/declarations/model-curve-domain-recorded.md) | 43 | `result-track:2bc13e4a6bbd336f1dfe236986b4dff520dccca1e8fdf78b539ab850e8da7ad8` |
+| 1 | `def` | [modelCurvePhi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CurvesNamespaced.lean/declarations/modelcurvephi.md) | 18 | `declaration-track:960ceb727256905dbee2d26e0b18410e346f883f0f058a5fbb5934027b198961` |
+| 2 | `structure` | [GraphCurve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CurvesNamespaced.lean/declarations/graphcurve.md) | 21 | `declaration-track:6a96556d4447de3f1bcf99bf6e5bbdd661df04778f53014edc5c1bc895a4bb71` |
+| 3 | `structure` | [PlaneCurve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CurvesNamespaced.lean/declarations/planecurve.md) | 25 | `declaration-track:69c86d80af29eccda56a50b002455b07d31fb493b3c1b7b6eef90cfdb8b83474` |
+| 4 | `def` | [modelGraphCurve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CurvesNamespaced.lean/declarations/modelgraphcurve.md) | 30 | `declaration-track:885f03b57be849922f43707625b94f849acf392cab60965f80b21d3bfe009d5d` |
+| 5 | `def` | [CurvatureIdenticallyZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CurvesNamespaced.lean/declarations/curvatureidenticallyzero.md) | 34 | `declaration-track:47c5254476d456bfc16e4f7c0a43bf26208c4a3d5bbefc84abf6055749d76754` |
+| 6 | `def` | [RegularPlaneCurve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CurvesNamespaced.lean/declarations/regularplanecurve.md) | 37 | `declaration-track:52fdac3b0101db1aba74d5a4fe777dc29943d1a41ab427600456b6a28c1896cb` |
+| 7 | `def` | [WronskianVanishesOnlyFinitelyToFiniteOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CurvesNamespaced.lean/declarations/wronskianvanishesonlyfinitelytofiniteorder.md) | 40 | `declaration-track:294db65ba1a12f5d15d6ed4aa57550978e073f5c02852c900fbc19ddab11321c` |
+| 8 | `theorem` | [model_curve_domain_recorded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CurvesNamespaced.lean/declarations/model-curve-domain-recorded.md) | 43 | `result-track:2bc13e4a6bbd336f1dfe236986b4dff520dccca1e8fdf78b539ab850e8da7ad8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

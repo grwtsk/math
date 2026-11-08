@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DistributiveCartesianNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DistributiveCartesianNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DistributiveCartesianNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DistributiveCartesianNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IsCartesianDistributive](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DistributiveCartesianNamespaced.lean/declarations/iscartesiandistributive.md) | 63 | `declaration-track:3a2280d7413d99f3f396f287615017b4d2b131decc21aa7b7bdf1805fc65b6f3` |
-| 2 | `lemma` | [of_isMonoidalLeftDistrib](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DistributiveCartesianNamespaced.lean/declarations/of-ismonoidalleftdistrib.md) | 70 | `result-track:07bcb07b2a6aeac36e43b8a94123c5aa7e60511c31d57f7650f8e50cd4bfa67d` |
-| 3 | `instance` | [monoCoprod](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DistributiveCartesianNamespaced.lean/declarations/monocoprod.md) | 75 | `declaration-track:5bd31201d01fe63dfa27c312d7dc3544153710d3cb46e0ebb7dbb0049ebf5794` |
+| 1 | `abbrev` | [IsCartesianDistributive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DistributiveCartesianNamespaced.lean/declarations/iscartesiandistributive.md) | 63 | `declaration-track:3a2280d7413d99f3f396f287615017b4d2b131decc21aa7b7bdf1805fc65b6f3` |
+| 2 | `lemma` | [of_isMonoidalLeftDistrib](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DistributiveCartesianNamespaced.lean/declarations/of-ismonoidalleftdistrib.md) | 70 | `result-track:07bcb07b2a6aeac36e43b8a94123c5aa7e60511c31d57f7650f8e50cd4bfa67d` |
+| 3 | `instance` | [monoCoprod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DistributiveCartesianNamespaced.lean/declarations/monocoprod.md) | 75 | `declaration-track:5bd31201d01fe63dfa27c312d7dc3544153710d3cb46e0ebb7dbb0049ebf5794` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

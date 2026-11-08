@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/T0Sierpinski.lean/index.md) · [Full source](../../../../GeneralTopology/T0Sierpinski.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/T0Sierpinski.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/T0Sierpinski.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eq_induced_by_maps_to_sierpinski](../../../../GeneralTopology/T0Sierpinski.lean/declarations/eq-induced-by-maps-to-sierpinski.md) | 27 | `result-track:e63ae760ee22ab65930bb7eb889ee307ce34134e8bcece210d4d3d8ea515663c` |
-| 2 | `def` | [productOfMemOpens](../../../../GeneralTopology/T0Sierpinski.lean/declarations/productofmemopens.md) | 43 | `declaration-track:1bb40f86e2e29179f41dc1023cae0d8ee674e789062e2e5c2eeeb156eb7d7aa9` |
-| 3 | `theorem` | [productOfMemOpens_isInducing](../../../../GeneralTopology/T0Sierpinski.lean/declarations/productofmemopens-isinducing.md) | 47 | `result-track:e75901f86ff46c7964b940c93903dc4d90338856942a3119ad6d44c843d7d3a1` |
-| 4 | `theorem` | [productOfMemOpens_injective](../../../../GeneralTopology/T0Sierpinski.lean/declarations/productofmemopens-injective.md) | 54 | `result-track:c5caa614dc3e2f7011051f1a569c85614841dd037527b433957c6bea111244e9` |
-| 5 | `theorem` | [productOfMemOpens_isEmbedding](../../../../GeneralTopology/T0Sierpinski.lean/declarations/productofmemopens-isembedding.md) | 59 | `result-track:091e67d9bb4c8d0c74b3c5abc2d0aae7ebb7ccb736583d52aaa0571200ac5021` |
+| 1 | `theorem` | [eq_induced_by_maps_to_sierpinski](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/T0Sierpinski.lean/declarations/eq-induced-by-maps-to-sierpinski.md) | 27 | `result-track:e63ae760ee22ab65930bb7eb889ee307ce34134e8bcece210d4d3d8ea515663c` |
+| 2 | `def` | [productOfMemOpens](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/T0Sierpinski.lean/declarations/productofmemopens.md) | 43 | `declaration-track:1bb40f86e2e29179f41dc1023cae0d8ee674e789062e2e5c2eeeb156eb7d7aa9` |
+| 3 | `theorem` | [productOfMemOpens_isInducing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/T0Sierpinski.lean/declarations/productofmemopens-isinducing.md) | 47 | `result-track:e75901f86ff46c7964b940c93903dc4d90338856942a3119ad6d44c843d7d3a1` |
+| 4 | `theorem` | [productOfMemOpens_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/T0Sierpinski.lean/declarations/productofmemopens-injective.md) | 54 | `result-track:c5caa614dc3e2f7011051f1a569c85614841dd037527b433957c6bea111244e9` |
+| 5 | `theorem` | [productOfMemOpens_isEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/T0Sierpinski.lean/declarations/productofmemopens-isembedding.md) | 59 | `result-track:091e67d9bb4c8d0c74b3c5abc2d0aae7ebb7ccb736583d52aaa0571200ac5021` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

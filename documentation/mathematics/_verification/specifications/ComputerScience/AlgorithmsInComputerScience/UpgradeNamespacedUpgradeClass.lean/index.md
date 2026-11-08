@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [UpgradeClass](../../../../../ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/declarations/upgradeclass.md) | 16 | `declaration-track:69684e809439ab71df525ec0b5225223913f8ef51f6deaf07e42f0a7035c2f87` |
-| 2 | `structure` | [WorkspaceUpgrade](../../../../../ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/declarations/workspaceupgrade.md) | 22 | `declaration-track:e8dcd99054f47eb930953671f3f6e29e18a16d41803245bb28b646971e3bce3c` |
-| 3 | `def` | [DependencyClosed](../../../../../ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/declarations/dependencyclosed.md) | 34 | `declaration-track:40e55d871cada03432a2814e978a6f2c212773b3d03544cdb124e26d4f8e86c4` |
-| 4 | `def` | [Affected](../../../../../ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/declarations/affected.md) | 43 | `declaration-track:cbabdb939d53f22c0f1674224b2d98767527ad9929653522e5f6d73c6b62a361` |
-| 5 | `theorem` | [changed_subset_affected](../../../../../ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/declarations/changed-subset-affected.md) | 52 | `result-track:1ce192199708f881ef2537187bbee03082d0f519184877d9fbcb858a0c6adfec` |
-| 6 | `theorem` | [affected_least](../../../../../ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/declarations/affected-least.md) | 60 | `result-track:0dfbaded3d202fd15315b8f89b6d2ce30e868a3faffe88ad5ab9702b896ae5aa` |
-| 7 | `def` | [TenantUnaffected](../../../../../ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/declarations/tenantunaffected.md) | 75 | `declaration-track:803252dea54a644783961b161415a855a82bdd648f140d966882aa874f3ca1bb` |
-| 8 | `theorem` | [tenant_unaffected_iff_disjoint](../../../../../ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/declarations/tenant-unaffected-iff-disjoint.md) | 79 | `result-track:ff51eaa9e0c572e8f5672d5341a9a3d886a4348cbfb6637324e1c00379eaf820` |
+| 1 | `inductive` | [UpgradeClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/declarations/upgradeclass.md) | 16 | `declaration-track:69684e809439ab71df525ec0b5225223913f8ef51f6deaf07e42f0a7035c2f87` |
+| 2 | `structure` | [WorkspaceUpgrade](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/declarations/workspaceupgrade.md) | 22 | `declaration-track:e8dcd99054f47eb930953671f3f6e29e18a16d41803245bb28b646971e3bce3c` |
+| 3 | `def` | [DependencyClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/declarations/dependencyclosed.md) | 34 | `declaration-track:40e55d871cada03432a2814e978a6f2c212773b3d03544cdb124e26d4f8e86c4` |
+| 4 | `def` | [Affected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/declarations/affected.md) | 43 | `declaration-track:cbabdb939d53f22c0f1674224b2d98767527ad9929653522e5f6d73c6b62a361` |
+| 5 | `theorem` | [changed_subset_affected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/declarations/changed-subset-affected.md) | 52 | `result-track:1ce192199708f881ef2537187bbee03082d0f519184877d9fbcb858a0c6adfec` |
+| 6 | `theorem` | [affected_least](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/declarations/affected-least.md) | 60 | `result-track:0dfbaded3d202fd15315b8f89b6d2ce30e868a3faffe88ad5ab9702b896ae5aa` |
+| 7 | `def` | [TenantUnaffected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/declarations/tenantunaffected.md) | 75 | `declaration-track:803252dea54a644783961b161415a855a82bdd648f140d966882aa874f3ca1bb` |
+| 8 | `theorem` | [tenant_unaffected_iff_disjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UpgradeNamespacedUpgradeClass.lean/declarations/tenant-unaffected-iff-disjoint.md) | 79 | `result-track:ff51eaa9e0c572e8f5672d5341a9a3d886a4348cbfb6637324e1c00379eaf820` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

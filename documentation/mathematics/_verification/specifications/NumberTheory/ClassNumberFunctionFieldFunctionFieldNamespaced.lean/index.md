@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ClassNumberFunctionFieldFunctionFieldNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/ClassNumberFunctionFieldFunctionFieldNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassNumberFunctionFieldFunctionFieldNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassNumberFunctionFieldFunctionFieldNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../NumberTheory/ClassNumberFunctionFieldFunctionFieldNamespaced.lean/declarations/instance.md) | 45 | `declaration-track:0c22b2853d286c0ccb57373b9963caa942f3144529058c55f1009afb2b2ebc18` |
-| 2 | `def` | [classNumber](../../../../NumberTheory/ClassNumberFunctionFieldFunctionFieldNamespaced.lean/declarations/classnumber.md) | 53 | `declaration-track:13d349b014ad68a144427ca0f2ea77373415413011e77e78cdb4ca4cb80dee17` |
-| 3 | `theorem` | [classNumber_eq_one_iff](../../../../NumberTheory/ClassNumberFunctionFieldFunctionFieldNamespaced.lean/declarations/classnumber-eq-one-iff.md) | 57 | `result-track:a0d9493d68ac864dccae012757b3eb58c3fe1cfd176cb1c6c5e5240fbe56a8ef` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassNumberFunctionFieldFunctionFieldNamespaced.lean/declarations/instance.md) | 45 | `declaration-track:0c22b2853d286c0ccb57373b9963caa942f3144529058c55f1009afb2b2ebc18` |
+| 2 | `def` | [classNumber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassNumberFunctionFieldFunctionFieldNamespaced.lean/declarations/classnumber.md) | 53 | `declaration-track:13d349b014ad68a144427ca0f2ea77373415413011e77e78cdb4ca4cb80dee17` |
+| 3 | `theorem` | [classNumber_eq_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassNumberFunctionFieldFunctionFieldNamespaced.lean/declarations/classnumber-eq-one-iff.md) | 57 | `result-track:a0d9493d68ac864dccae012757b3eb58c3fe1cfd176cb1c6c5e5240fbe56a8ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

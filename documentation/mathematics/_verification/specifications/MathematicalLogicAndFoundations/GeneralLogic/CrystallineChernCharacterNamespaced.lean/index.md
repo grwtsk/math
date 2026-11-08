@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineChernCharacterNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineChernCharacterNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineChernCharacterNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineChernCharacterNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CrystallineChernCharacter](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineChernCharacterNamespaced.lean/declarations/crystallinecherncharacter.md) | 26 | `declaration-track:6b3f81cad608ced14223b73124d90a9fe0c9c80afd2d67084537054dff8b5940` |
-| 2 | `theorem` | [chern_character_additive](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineChernCharacterNamespaced.lean/declarations/chern-character-additive.md) | 38 | `result-track:b984ecdae0d32863772521c1499a0292e83880bd23546f56a00c1494f5b71928` |
-| 3 | `theorem` | [chern_character_connection_compatible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineChernCharacterNamespaced.lean/declarations/chern-character-connection-compatible.md) | 44 | `result-track:03c053dc7d3505d8c8211b884d0214d15f7284c5322ff54e233cc8c3f9d9a985` |
+| 1 | `structure` | [CrystallineChernCharacter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineChernCharacterNamespaced.lean/declarations/crystallinecherncharacter.md) | 26 | `declaration-track:6b3f81cad608ced14223b73124d90a9fe0c9c80afd2d67084537054dff8b5940` |
+| 2 | `theorem` | [chern_character_additive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineChernCharacterNamespaced.lean/declarations/chern-character-additive.md) | 38 | `result-track:b984ecdae0d32863772521c1499a0292e83880bd23546f56a00c1494f5b71928` |
+| 3 | `theorem` | [chern_character_connection_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineChernCharacterNamespaced.lean/declarations/chern-character-connection-compatible.md) | 44 | `result-track:03c053dc7d3505d8c8211b884d0214d15f7284c5322ff54e233cc8c3f9d9a985` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

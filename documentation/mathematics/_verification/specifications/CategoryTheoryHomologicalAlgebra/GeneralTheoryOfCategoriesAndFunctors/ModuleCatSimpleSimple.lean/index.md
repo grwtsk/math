@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSimpleSimple.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSimpleSimple.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSimpleSimple.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSimpleSimple.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [simple_iff_isSimpleModule](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSimpleSimple.lean/declarations/simple-iff-issimplemodule-source-edition-2.md) | 23 | `result-track:a07089a851c87f23c94c01d5941890d0bd8339d03e5842f1c70dfe83be92457f` |
-| 2 | `theorem` | [simple_iff_isSimpleModule'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSimpleSimple.lean/declarations/simple-iff-issimplemodule.md) | 26 | `result-track:5515c2bbfc4049948523db82501da86bb1c050b389906697896c3586eb5a34a0` |
-| 3 | `instance` | [simple_of_isSimpleModule](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSimpleSimple.lean/declarations/simple-of-issimplemodule.md) | 30 | `declaration-track:e915ea82c1c2af56d0ebd06146ffede0439b1a1887d3bc9e607305897e9081e9` |
-| 4 | `instance` | [isSimpleModule_of_simple](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSimpleSimple.lean/declarations/issimplemodule-of-simple.md) | 34 | `declaration-track:51b1b93c2986650650533504f78b5dc069127ceab95d747d69c7f69aaf3f00d9` |
-| 5 | `theorem` | [simple_of_finrank_eq_one](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSimpleSimple.lean/declarations/simple-of-finrank-eq-one.md) | 42 | `result-track:3892fe128913d6f2035e5604b7ca354e0a980a957ad7e26d18b14d0a80725d3d` |
+| 1 | `theorem` | [simple_iff_isSimpleModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSimpleSimple.lean/declarations/simple-iff-issimplemodule-source-edition-2.md) | 23 | `result-track:a07089a851c87f23c94c01d5941890d0bd8339d03e5842f1c70dfe83be92457f` |
+| 2 | `theorem` | [simple_iff_isSimpleModule'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSimpleSimple.lean/declarations/simple-iff-issimplemodule.md) | 26 | `result-track:5515c2bbfc4049948523db82501da86bb1c050b389906697896c3586eb5a34a0` |
+| 3 | `instance` | [simple_of_isSimpleModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSimpleSimple.lean/declarations/simple-of-issimplemodule.md) | 30 | `declaration-track:e915ea82c1c2af56d0ebd06146ffede0439b1a1887d3bc9e607305897e9081e9` |
+| 4 | `instance` | [isSimpleModule_of_simple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSimpleSimple.lean/declarations/issimplemodule-of-simple.md) | 34 | `declaration-track:51b1b93c2986650650533504f78b5dc069127ceab95d747d69c7f69aaf3f00d9` |
+| 5 | `theorem` | [simple_of_finrank_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSimpleSimple.lean/declarations/simple-of-finrank-eq-one.md) | 42 | `result-track:3892fe128913d6f2035e5604b7ca354e0a980a957ad7e26d18b14d0a80725d3d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

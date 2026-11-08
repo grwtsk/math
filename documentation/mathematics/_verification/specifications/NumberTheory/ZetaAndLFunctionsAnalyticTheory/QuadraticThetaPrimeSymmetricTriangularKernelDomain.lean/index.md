@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDomain.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDomain.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDomain.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDomain.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeTriangularAutocorrelationDiagonals`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularAutocorrelationDiagonals.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeSymmetricTriangularKernelDecay`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDecay.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeTriangularAutocorrelationDiagonals`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularAutocorrelationDiagonals.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeSymmetricTriangularKernelDecay`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDecay.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [SymmetricTriangularKernelClosedFormOffBoundaryClaim](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDomain.lean/declarations/symmetrictriangularkernelclosedformoffboundaryclaim.md) | 14 | `declaration-track:3bd217c2447911562b6bde7eca1fe89f0d981f93f9d46ebbbfab1e6d22d86f79` |
-| 2 | `theorem` | [sin_pi_mul_ne_zero_of_offBoundary](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDomain.lean/declarations/sin-pi-mul-ne-zero-of-offboundary.md) | 22 | `result-track:80035f6c23d8d63164b2570474f2945df779b1c527db8c256d70603fb31b77d6` |
-| 3 | `theorem` | [symmetricTriangularKernelDecay_of_offBoundaryClosedForm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDomain.lean/declarations/symmetrictriangularkerneldecay-of-offboundaryclosedform.md) | 38 | `result-track:d150c86f7e66cd11d28aff262fa575f619a4054ea69a369fd4e929f8e6e4e7d7` |
-| 4 | `theorem` | [globalClosedForm_to_offBoundaryClosedForm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDomain.lean/declarations/globalclosedform-to-offboundaryclosedform.md) | 83 | `result-track:df6e554f11319d2c8716e2b182ed6f65f2ec854245741f979921d343c3ef5f89` |
-| 5 | `def` | [TriangularGeometricBlockSineNormOffBoundaryClaim](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDomain.lean/declarations/triangulargeometricblocksinenormoffboundaryclaim.md) | 90 | `declaration-track:baa155b9a0ad9309b5cf7753653ee62c5cb4beda37da831dd019bd4413f47aa5` |
-| 6 | `theorem` | [autocorrelation_and_offBoundarySineNorm_to_closedForm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDomain.lean/declarations/autocorrelation-and-offboundarysinenorm-to-closedform.md) | 101 | `result-track:046461a9a1f295f386e12a3bd95954130e9bb2f5ff7f97060239c23bca6fdf7d` |
+| 1 | `def` | [SymmetricTriangularKernelClosedFormOffBoundaryClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDomain.lean/declarations/symmetrictriangularkernelclosedformoffboundaryclaim.md) | 14 | `declaration-track:3bd217c2447911562b6bde7eca1fe89f0d981f93f9d46ebbbfab1e6d22d86f79` |
+| 2 | `theorem` | [sin_pi_mul_ne_zero_of_offBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDomain.lean/declarations/sin-pi-mul-ne-zero-of-offboundary.md) | 22 | `result-track:80035f6c23d8d63164b2570474f2945df779b1c527db8c256d70603fb31b77d6` |
+| 3 | `theorem` | [symmetricTriangularKernelDecay_of_offBoundaryClosedForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDomain.lean/declarations/symmetrictriangularkerneldecay-of-offboundaryclosedform.md) | 38 | `result-track:d150c86f7e66cd11d28aff262fa575f619a4054ea69a369fd4e929f8e6e4e7d7` |
+| 4 | `theorem` | [globalClosedForm_to_offBoundaryClosedForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDomain.lean/declarations/globalclosedform-to-offboundaryclosedform.md) | 83 | `result-track:df6e554f11319d2c8716e2b182ed6f65f2ec854245741f979921d343c3ef5f89` |
+| 5 | `def` | [TriangularGeometricBlockSineNormOffBoundaryClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDomain.lean/declarations/triangulargeometricblocksinenormoffboundaryclaim.md) | 90 | `declaration-track:baa155b9a0ad9309b5cf7753653ee62c5cb4beda37da831dd019bd4413f47aa5` |
+| 6 | `theorem` | [autocorrelation_and_offBoundarySineNorm_to_closedForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDomain.lean/declarations/autocorrelation-and-offboundarysinenorm-to-closedform.md) | 101 | `result-track:046461a9a1f295f386e12a3bd95954130e9bb2f5ff7f97060239c23bca6fdf7d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

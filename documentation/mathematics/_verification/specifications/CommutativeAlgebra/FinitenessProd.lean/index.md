@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FinitenessProd.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FinitenessProd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessProd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessProd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [FG.prod](../../../../CommutativeAlgebra/FinitenessProd.lean/declarations/fg-prod.md) | 25 | `result-track:a42f6245b39b36e7f042ac3368c954031a80e7946727bea9f4ba7de2a952987c` |
-| 2 | `instance` | [prod](../../../../CommutativeAlgebra/FinitenessProd.lean/declarations/prod.md) | 42 | `declaration-track:66a2502b43174e6d53ed4bba00ddd3f5b215741b2344f8c4cd2e54d1eac637c4` |
+| 1 | `theorem` | [FG.prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessProd.lean/declarations/fg-prod.md) | 25 | `result-track:a42f6245b39b36e7f042ac3368c954031a80e7946727bea9f4ba7de2a952987c` |
+| 2 | `instance` | [prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessProd.lean/declarations/prod.md) | 42 | `declaration-track:66a2502b43174e6d53ed4bba00ddd3f5b215741b2344f8c4cd2e54d1eac637c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

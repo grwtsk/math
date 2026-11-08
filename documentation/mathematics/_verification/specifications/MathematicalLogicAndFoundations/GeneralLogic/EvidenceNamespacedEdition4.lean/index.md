@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEdition4.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEdition4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEdition4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEdition4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [NamingEvidence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEdition4.lean/declarations/namingevidence.md) | 18 | `declaration-track:5bb4a88514ebda744a82f124801d15659cc74464ae13c4f36358fbac17d36dd0` |
-| 2 | `def` | [NamingEvidence.Supports](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEdition4.lean/declarations/namingevidence-supports.md) | 34 | `declaration-track:ae108b6b838cff1fef612952b3429f36e75447720330e49893051ed1d34a3832` |
-| 3 | `def` | [NamingEvidence.StableFor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEdition4.lean/declarations/namingevidence-stablefor.md) | 37 | `declaration-track:e43ca680082af2d9daf902ab538ff374861097f24dd7b8b9dd4dd24ae24c93e3` |
+| 1 | `structure` | [NamingEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEdition4.lean/declarations/namingevidence.md) | 18 | `declaration-track:5bb4a88514ebda744a82f124801d15659cc74464ae13c4f36358fbac17d36dd0` |
+| 2 | `def` | [NamingEvidence.Supports](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEdition4.lean/declarations/namingevidence-supports.md) | 34 | `declaration-track:ae108b6b838cff1fef612952b3429f36e75447720330e49893051ed1d34a3832` |
+| 3 | `def` | [NamingEvidence.StableFor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEdition4.lean/declarations/namingevidence-stablefor.md) | 37 | `declaration-track:e43ca680082af2d9daf902ab538ff374861097f24dd7b8b9dd4dd24ae24c93e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

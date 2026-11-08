@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/LinearLowerBound.lean/index.md) · [Full source](../../../../Geometry/LinearLowerBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/LinearLowerBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/LinearLowerBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [pow_ssubset_pow_succ_of_pow_ne_closure](../../../../Geometry/LinearLowerBound.lean/declarations/pow-ssubset-pow-succ-of-pow-ne-closure.md) | 23 | `result-track:51a32f5812bcd6db8f3234e35cb6b13c874bed899d0b6422921b0dcf4b5ef464` |
-| 2 | `lemma` | [pow_right_strictMonoOn](../../../../Geometry/LinearLowerBound.lean/declarations/pow-right-strictmonoon.md) | 60 | `result-track:d581b28df5bafb787e20d754fb494b94b532c0d0d7cab4d3cb3133275f66a11d` |
-| 3 | `lemma` | [pow_right_strictMono](../../../../Geometry/LinearLowerBound.lean/declarations/pow-right-strictmono.md) | 74 | `result-track:f9de83961545e92a8f30a4d9ce8ceb1d1100bc7990dc679c1075f92328c7b954` |
-| 4 | `lemma` | [add_one_le_card_pow](../../../../Geometry/LinearLowerBound.lean/declarations/add-one-le-card-pow.md) | 84 | `result-track:8ac7951a51d79976ecc1b44ba91ba6c69f4676eb0230886891ccba500f53a2d8` |
+| 1 | `lemma` | [pow_ssubset_pow_succ_of_pow_ne_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/LinearLowerBound.lean/declarations/pow-ssubset-pow-succ-of-pow-ne-closure.md) | 23 | `result-track:51a32f5812bcd6db8f3234e35cb6b13c874bed899d0b6422921b0dcf4b5ef464` |
+| 2 | `lemma` | [pow_right_strictMonoOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/LinearLowerBound.lean/declarations/pow-right-strictmonoon.md) | 60 | `result-track:d581b28df5bafb787e20d754fb494b94b532c0d0d7cab4d3cb3133275f66a11d` |
+| 3 | `lemma` | [pow_right_strictMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/LinearLowerBound.lean/declarations/pow-right-strictmono.md) | 74 | `result-track:f9de83961545e92a8f30a4d9ce8ceb1d1100bc7990dc679c1075f92328c7b954` |
+| 4 | `lemma` | [add_one_le_card_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/LinearLowerBound.lean/declarations/add-one-le-card-pow.md) | 84 | `result-track:8ac7951a51d79976ecc1b44ba91ba6c69f4676eb0230886891ccba500f53a2d8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SequentialPublic.lean/index.md) · [Full source](../../../../GeneralTopology/SequentialPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SequentialPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SequentialPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Sequential](../../../../GeneralTopology/SequentialPublic.lean/declarations/sequential.md) | 28 | `declaration-track:03b926fd6edc7b422abdb1b0e9bacc90db594fb511c183f3c9d592adc11d381e` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/SequentialPublic.lean/declarations/instance-source-edition-3.md) | 36 | `declaration-track:835471dff0b11565c04b6ecc5185df64e0a62535c47dd47a38ece5ab5d8999a2` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/SequentialPublic.lean/declarations/instance-source-edition-5.md) | 39 | `declaration-track:943fb58c841f20316396715f6dabc5ef86ef4abba1a544668b0f52b062b87ca7` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/SequentialPublic.lean/declarations/instance-source-edition-4.md) | 44 | `declaration-track:8d5b4299ae4812351b076f70eac3d1c78586add6a20468a25c00c89b99f64783` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/SequentialPublic.lean/declarations/instance-source-edition-6.md) | 47 | `declaration-track:955bf884ab271cfa2df42316fe1030f1564f3e738f6ed7325b79127a45ab067f` |
-| 6 | `abbrev` | [of](../../../../GeneralTopology/SequentialPublic.lean/declarations/of.md) | 53 | `declaration-track:a7ab199bf5670a18ca73864dd5f235848bfc2fd4f31e0e51d7c5f242662b14d1` |
-| 7 | `def` | [delabOf](../../../../GeneralTopology/SequentialPublic.lean/declarations/delabof.md) | 60 | `declaration-track:e9826b59b567d78f21fbcd86b2e7f89b5022ab8c1aee97bb8df793e541a0c1da` |
-| 8 | `def` | [sequentialToTop](../../../../GeneralTopology/SequentialPublic.lean/declarations/sequentialtotop.md) | 64 | `declaration-track:0a1dd17f2b908388f07620f5609b6b01dc7c9781f957cf6ac3aef351e5a21a9b` |
-| 9 | `def` | [fullyFaithfulSequentialToTop](../../../../GeneralTopology/SequentialPublic.lean/declarations/fullyfaithfulsequentialtotop.md) | 68 | `declaration-track:a4ec5bb3129a0687945d35f8c3dd3797a9105f641260970ebaece390ab84592d` |
-| 10 | `instance` | [(anonymous)](../../../../GeneralTopology/SequentialPublic.lean/declarations/instance-source-edition-2.md) | 71 | `declaration-track:211d32c81d144039576cc23d5ad48d94a0ee718bc8837dcb3cf4827bed6e1ee9` |
-| 11 | `instance` | [(anonymous)](../../../../GeneralTopology/SequentialPublic.lean/declarations/instance.md) | 74 | `declaration-track:041eab58e669c59d5a6efb4916c26d43e93fea05d0a1c1ba293af5f79b2e28de` |
-| 12 | `def` | [isoOfHomeo](../../../../GeneralTopology/SequentialPublic.lean/declarations/isoofhomeo.md) | 79 | `declaration-track:0e3e84b51b7e27b2f0978459e9f50be31302181bbf4d2c8570d8d7ad101f1253` |
-| 13 | `def` | [homeoOfIso](../../../../GeneralTopology/SequentialPublic.lean/declarations/homeoofiso.md) | 91 | `declaration-track:f60797c19203a286440a9d59e5e2c4f535a7026058056cabaa2c61aa5588a5b4` |
-| 14 | `def` | [isoEquivHomeo](../../../../GeneralTopology/SequentialPublic.lean/declarations/isoequivhomeo.md) | 102 | `declaration-track:1f97d8732c1af4bca2d50a9d36d7fc7b3bdd96d16fc7177bbfea9396f4f40b3a` |
+| 1 | `structure` | [Sequential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SequentialPublic.lean/declarations/sequential.md) | 28 | `declaration-track:03b926fd6edc7b422abdb1b0e9bacc90db594fb511c183f3c9d592adc11d381e` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SequentialPublic.lean/declarations/instance-source-edition-3.md) | 36 | `declaration-track:835471dff0b11565c04b6ecc5185df64e0a62535c47dd47a38ece5ab5d8999a2` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SequentialPublic.lean/declarations/instance-source-edition-5.md) | 39 | `declaration-track:943fb58c841f20316396715f6dabc5ef86ef4abba1a544668b0f52b062b87ca7` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SequentialPublic.lean/declarations/instance-source-edition-4.md) | 44 | `declaration-track:8d5b4299ae4812351b076f70eac3d1c78586add6a20468a25c00c89b99f64783` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SequentialPublic.lean/declarations/instance-source-edition-6.md) | 47 | `declaration-track:955bf884ab271cfa2df42316fe1030f1564f3e738f6ed7325b79127a45ab067f` |
+| 6 | `abbrev` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SequentialPublic.lean/declarations/of.md) | 53 | `declaration-track:a7ab199bf5670a18ca73864dd5f235848bfc2fd4f31e0e51d7c5f242662b14d1` |
+| 7 | `def` | [delabOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SequentialPublic.lean/declarations/delabof.md) | 60 | `declaration-track:e9826b59b567d78f21fbcd86b2e7f89b5022ab8c1aee97bb8df793e541a0c1da` |
+| 8 | `def` | [sequentialToTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SequentialPublic.lean/declarations/sequentialtotop.md) | 64 | `declaration-track:0a1dd17f2b908388f07620f5609b6b01dc7c9781f957cf6ac3aef351e5a21a9b` |
+| 9 | `def` | [fullyFaithfulSequentialToTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SequentialPublic.lean/declarations/fullyfaithfulsequentialtotop.md) | 68 | `declaration-track:a4ec5bb3129a0687945d35f8c3dd3797a9105f641260970ebaece390ab84592d` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SequentialPublic.lean/declarations/instance-source-edition-2.md) | 71 | `declaration-track:211d32c81d144039576cc23d5ad48d94a0ee718bc8837dcb3cf4827bed6e1ee9` |
+| 11 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SequentialPublic.lean/declarations/instance.md) | 74 | `declaration-track:041eab58e669c59d5a6efb4916c26d43e93fea05d0a1c1ba293af5f79b2e28de` |
+| 12 | `def` | [isoOfHomeo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SequentialPublic.lean/declarations/isoofhomeo.md) | 79 | `declaration-track:0e3e84b51b7e27b2f0978459e9f50be31302181bbf4d2c8570d8d7ad101f1253` |
+| 13 | `def` | [homeoOfIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SequentialPublic.lean/declarations/homeoofiso.md) | 91 | `declaration-track:f60797c19203a286440a9d59e5e2c4f535a7026058056cabaa2c61aa5588a5b4` |
+| 14 | `def` | [isoEquivHomeo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SequentialPublic.lean/declarations/isoequivhomeo.md) | 102 | `declaration-track:1f97d8732c1af4bca2d50a9d36d7fc7b3bdd96d16fc7177bbfea9396f4f40b3a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

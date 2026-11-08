@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphereCarriersNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphereCarriersNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphereCarriersNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphereCarriersNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Sphere1Carrier](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphereCarriersNamespaced.lean/declarations/sphere1carrier.md) | 18 | `declaration-track:4401b12009fb79afd09977bfba5eebfa24db33831c44b10f3e05cbdd48c66280` |
-| 2 | `structure` | [Sphere2Carrier](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphereCarriersNamespaced.lean/declarations/sphere2carrier.md) | 23 | `declaration-track:06e3071543430e6c1a445007780c24f2e296ea52cf2ba1d68c53055549697453` |
-| 3 | `structure` | [Sphere3Carrier](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphereCarriersNamespaced.lean/declarations/sphere3carrier.md) | 28 | `declaration-track:0384259cf3f2924c91c85680c6765752df62ecca4db232e66d7aea54ddcc1b6d` |
-| 4 | `def` | [Sphere2Carrier.ofCarrier2D](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphereCarriersNamespaced.lean/declarations/sphere2carrier-ofcarrier2d.md) | 38 | `declaration-track:3ac979d0a0dfaf1368517b246902b4226ec1a3430aad95dd77e697f45c59fe1f` |
-| 5 | `def` | [CompactSphere1](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphereCarriersNamespaced.lean/declarations/compactsphere1.md) | 43 | `declaration-track:0d7dc2640a69406129d8c0f61f05903fec8281638a6fce62eed67d76f4578e80` |
-| 6 | `def` | [CompactSphere2](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphereCarriersNamespaced.lean/declarations/compactsphere2.md) | 46 | `declaration-track:e6f7e6d7425edd25f7e8237b914c7ba1b5db03df05faeac2be8fe87810b9f26b` |
-| 7 | `def` | [CompactSphere3](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphereCarriersNamespaced.lean/declarations/compactsphere3.md) | 49 | `declaration-track:ff767147a1a6c5dc0ac9a2ea0a52cba37c17dbda15908967da381f09522a8329` |
+| 1 | `structure` | [Sphere1Carrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphereCarriersNamespaced.lean/declarations/sphere1carrier.md) | 18 | `declaration-track:4401b12009fb79afd09977bfba5eebfa24db33831c44b10f3e05cbdd48c66280` |
+| 2 | `structure` | [Sphere2Carrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphereCarriersNamespaced.lean/declarations/sphere2carrier.md) | 23 | `declaration-track:06e3071543430e6c1a445007780c24f2e296ea52cf2ba1d68c53055549697453` |
+| 3 | `structure` | [Sphere3Carrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphereCarriersNamespaced.lean/declarations/sphere3carrier.md) | 28 | `declaration-track:0384259cf3f2924c91c85680c6765752df62ecca4db232e66d7aea54ddcc1b6d` |
+| 4 | `def` | [Sphere2Carrier.ofCarrier2D](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphereCarriersNamespaced.lean/declarations/sphere2carrier-ofcarrier2d.md) | 38 | `declaration-track:3ac979d0a0dfaf1368517b246902b4226ec1a3430aad95dd77e697f45c59fe1f` |
+| 5 | `def` | [CompactSphere1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphereCarriersNamespaced.lean/declarations/compactsphere1.md) | 43 | `declaration-track:0d7dc2640a69406129d8c0f61f05903fec8281638a6fce62eed67d76f4578e80` |
+| 6 | `def` | [CompactSphere2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphereCarriersNamespaced.lean/declarations/compactsphere2.md) | 46 | `declaration-track:e6f7e6d7425edd25f7e8237b914c7ba1b5db03df05faeac2be8fe87810b9f26b` |
+| 7 | `def` | [CompactSphere3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphereCarriersNamespaced.lean/declarations/compactsphere3.md) | 49 | `declaration-track:ff767147a1a6c5dc0ac9a2ea0a52cba37c17dbda15908967da381f09522a8329` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

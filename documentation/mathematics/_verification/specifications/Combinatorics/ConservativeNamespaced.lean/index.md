@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ConservativeNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ConservativeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConservativeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConservativeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fixed_solution_sound](../../../../Combinatorics/ConservativeNamespaced.lean/declarations/fixed-solution-sound.md) | 19 | `result-track:5494025df27c806179c14fc03f47ef13efef07e80454403f86b4347b8204dfd4` |
-| 2 | `theorem` | [unknown_is_nonempty](../../../../Combinatorics/ConservativeNamespaced.lean/declarations/unknown-is-nonempty.md) | 33 | `result-track:773d1360d1d7148732c346935d3033a712301dc625543a9fd813b6993c7e46c4` |
-| 3 | `theorem` | [authority_schedule_noninterference](../../../../Combinatorics/ConservativeNamespaced.lean/declarations/authority-schedule-noninterference.md) | 40 | `result-track:edea211a92e12f04cdda6b53dc935e1dfbacdf499fbcd97f2956e6b6922315bf` |
-| 4 | `theorem` | [certificate_extension_monotone](../../../../Combinatorics/ConservativeNamespaced.lean/declarations/certificate-extension-monotone.md) | 47 | `result-track:de333fdeb2f85b82b5e433866327d59c1c7ee81f6e74a57973d86c0605d2e875` |
-| 5 | `theorem` | [continuation_count_finite](../../../../Combinatorics/ConservativeNamespaced.lean/declarations/continuation-count-finite.md) | 58 | `result-track:dba50b1265565bec7cd62ef9491139f16f967f3b313945242758dedf73641417` |
-| 6 | `theorem` | [total_factorization](../../../../Combinatorics/ConservativeNamespaced.lean/declarations/total-factorization.md) | 72 | `result-track:bfb07c3de4812ce57f5ff95be07f6636483776484725f45355d1b25dbf52ac67` |
+| 1 | `theorem` | [fixed_solution_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConservativeNamespaced.lean/declarations/fixed-solution-sound.md) | 19 | `result-track:5494025df27c806179c14fc03f47ef13efef07e80454403f86b4347b8204dfd4` |
+| 2 | `theorem` | [unknown_is_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConservativeNamespaced.lean/declarations/unknown-is-nonempty.md) | 33 | `result-track:773d1360d1d7148732c346935d3033a712301dc625543a9fd813b6993c7e46c4` |
+| 3 | `theorem` | [authority_schedule_noninterference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConservativeNamespaced.lean/declarations/authority-schedule-noninterference.md) | 40 | `result-track:edea211a92e12f04cdda6b53dc935e1dfbacdf499fbcd97f2956e6b6922315bf` |
+| 4 | `theorem` | [certificate_extension_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConservativeNamespaced.lean/declarations/certificate-extension-monotone.md) | 47 | `result-track:de333fdeb2f85b82b5e433866327d59c1c7ee81f6e74a57973d86c0605d2e875` |
+| 5 | `theorem` | [continuation_count_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConservativeNamespaced.lean/declarations/continuation-count-finite.md) | 58 | `result-track:dba50b1265565bec7cd62ef9491139f16f967f3b313945242758dedf73641417` |
+| 6 | `theorem` | [total_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConservativeNamespaced.lean/declarations/total-factorization.md) | 72 | `result-track:bfb07c3de4812ce57f5ff95be07f6636483776484725f45355d1b25dbf52ac67` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

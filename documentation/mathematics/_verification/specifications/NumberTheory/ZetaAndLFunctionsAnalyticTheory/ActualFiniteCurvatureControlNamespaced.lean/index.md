@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualFiniteCurvatureControlNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualFiniteCurvatureControlNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualFiniteCurvatureControlNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualFiniteCurvatureControlNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_finite_work_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualFiniteCurvatureControlNamespaced.lean/declarations/actual-finite-work-error.md) | 20 | `result-track:a6715bdd824195b45bec197f023730a92d39b234f35cafcd59c2d168794777f4` |
-| 2 | `theorem` | [actual_joint_finite_accuracy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualFiniteCurvatureControlNamespaced.lean/declarations/actual-joint-finite-accuracy.md) | 26 | `result-track:83fd46767dda7fdb28c175bc78f9a02ffe6837d2dff0195bae22c94e8e6e38c2` |
-| 3 | `def` | [FiniteCurvatureTailLowerBound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualFiniteCurvatureControlNamespaced.lean/declarations/finitecurvaturetaillowerbound.md) | 32 | `declaration-track:19ef62adbb2dbe31b236386ff47424800e904dcd664656f0a8890f8c52be2f06` |
-| 4 | `theorem` | [actual_tail_iff_finite_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualFiniteCurvatureControlNamespaced.lean/declarations/actual-tail-iff-finite-tail.md) | 37 | `result-track:993151f40eea3ee09e3431b1a75bf262e7907529fb348db877ad94103d6ff5a2` |
+| 1 | `theorem` | [actual_finite_work_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualFiniteCurvatureControlNamespaced.lean/declarations/actual-finite-work-error.md) | 20 | `result-track:a6715bdd824195b45bec197f023730a92d39b234f35cafcd59c2d168794777f4` |
+| 2 | `theorem` | [actual_joint_finite_accuracy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualFiniteCurvatureControlNamespaced.lean/declarations/actual-joint-finite-accuracy.md) | 26 | `result-track:83fd46767dda7fdb28c175bc78f9a02ffe6837d2dff0195bae22c94e8e6e38c2` |
+| 3 | `def` | [FiniteCurvatureTailLowerBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualFiniteCurvatureControlNamespaced.lean/declarations/finitecurvaturetaillowerbound.md) | 32 | `declaration-track:19ef62adbb2dbe31b236386ff47424800e904dcd664656f0a8890f8c52be2f06` |
+| 4 | `theorem` | [actual_tail_iff_finite_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualFiniteCurvatureControlNamespaced.lean/declarations/actual-tail-iff-finite-tail.md) | 37 | `result-track:993151f40eea3ee09e3431b1a75bf262e7907529fb348db877ad94103d6ff5a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

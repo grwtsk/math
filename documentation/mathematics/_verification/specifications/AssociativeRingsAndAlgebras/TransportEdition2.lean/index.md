@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/TransportEdition2.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/TransportEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/TransportEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/TransportEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toHomologicalLift](../../../../AssociativeRingsAndAlgebras/TransportEdition2.lean/declarations/tohomologicallift.md) | 48 | `declaration-track:e2f07769b03d3343c8b28c3ae4dcc72e86292001eb85e4ff7730b5dc22701e5e` |
-| 2 | `def` | [filesystemFirstReturn_induces_homologyIso](../../../../AssociativeRingsAndAlgebras/TransportEdition2.lean/declarations/filesystemfirstreturn-induces-homologyiso.md) | 64 | `declaration-track:ba3ef7659963edfbd3fa3ae69a13ebcbf7704876d8d2e79f57bd1dc612191e7d` |
-| 3 | `theorem` | [filesystemFirstReturn_preserves_torsion](../../../../AssociativeRingsAndAlgebras/TransportEdition2.lean/declarations/filesystemfirstreturn-preserves-torsion.md) | 82 | `result-track:9d76baa2569cbb0d6dd2ec9df8e77088a6d0ddf851be22420b23a59e539c1d19` |
+| 1 | `def` | [toHomologicalLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/TransportEdition2.lean/declarations/tohomologicallift.md) | 48 | `declaration-track:e2f07769b03d3343c8b28c3ae4dcc72e86292001eb85e4ff7730b5dc22701e5e` |
+| 2 | `def` | [filesystemFirstReturn_induces_homologyIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/TransportEdition2.lean/declarations/filesystemfirstreturn-induces-homologyiso.md) | 64 | `declaration-track:ba3ef7659963edfbd3fa3ae69a13ebcbf7704876d8d2e79f57bd1dc612191e7d` |
+| 3 | `theorem` | [filesystemFirstReturn_preserves_torsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/TransportEdition2.lean/declarations/filesystemfirstreturn-preserves-torsion.md) | 82 | `result-track:9d76baa2569cbb0d6dd2ec9df8e77088a6d0ddf851be22420b23a59e539c1d19` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

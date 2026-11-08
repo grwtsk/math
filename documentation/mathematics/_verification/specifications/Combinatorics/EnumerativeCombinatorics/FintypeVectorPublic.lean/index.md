@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeVectorPublic.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeVectorPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeVectorPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeVectorPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeVectorPublic.lean/declarations/instance-source-edition-3.md) | 24 | `declaration-track:8bdd94a3a02720c75007187770f8666710cccc85ade324ed3a52a0e90b6fd00c` |
-| 2 | `instance` | [(anonymous)](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeVectorPublic.lean/declarations/instance.md) | 27 | `declaration-track:21ebd212f0bcfa79291ecbf5103adb7cf922411c22e590c8fc86dea74feda0c6` |
-| 3 | `instance` | [(anonymous)](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeVectorPublic.lean/declarations/instance-source-edition-2.md) | 34 | `declaration-track:69160f9c9f2f66fd5fd773d3d2bfaa6b3a9ea769d2a3882ae396f543d48abda3` |
-| 4 | `instance` | [instFintype](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeVectorPublic.lean/declarations/instfintype-source-edition-2.md) | 37 | `declaration-track:c08d2d31ca7fcc72252c44ab3515acd27fd17337800f1c570a010cf8eb7d6aa1` |
-| 5 | `instance` | [(anonymous)](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeVectorPublic.lean/declarations/instance-source-edition-4.md) | 44 | `declaration-track:92f7947bb27da551d2bd18ba5a2ff6d55b03e7df97bcf801621f0bb5ab2dcf30` |
-| 6 | `instance` | [instFintype](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeVectorPublic.lean/declarations/instfintype.md) | 47 | `declaration-track:2e6388d91eb3a3213025b16d12aa7c936116da32c374eb04871648c4625fa00f` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeVectorPublic.lean/declarations/instance-source-edition-3.md) | 24 | `declaration-track:8bdd94a3a02720c75007187770f8666710cccc85ade324ed3a52a0e90b6fd00c` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeVectorPublic.lean/declarations/instance.md) | 27 | `declaration-track:21ebd212f0bcfa79291ecbf5103adb7cf922411c22e590c8fc86dea74feda0c6` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeVectorPublic.lean/declarations/instance-source-edition-2.md) | 34 | `declaration-track:69160f9c9f2f66fd5fd773d3d2bfaa6b3a9ea769d2a3882ae396f543d48abda3` |
+| 4 | `instance` | [instFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeVectorPublic.lean/declarations/instfintype-source-edition-2.md) | 37 | `declaration-track:c08d2d31ca7fcc72252c44ab3515acd27fd17337800f1c570a010cf8eb7d6aa1` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeVectorPublic.lean/declarations/instance-source-edition-4.md) | 44 | `declaration-track:92f7947bb27da551d2bd18ba5a2ff6d55b03e7df97bcf801621f0bb5ab2dcf30` |
+| 6 | `instance` | [instFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeVectorPublic.lean/declarations/instfintype.md) | 47 | `declaration-track:2e6388d91eb3a3213025b16d12aa7c936116da32c374eb04871648c4625fa00f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/IsCommutativeNamespacedPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/IsCommutativeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IsCommutativeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IsCommutativeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/IsCommutativeNamespacedPublic.lean/declarations/instance.md) | 52 | `declaration-track:5710df40960c055fc98fbbe8f0d29c5f6f8f045f4c9e9c9e6e907a3b4d5e0dc6` |
-| 2 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/IsCommutativeNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 72 | `declaration-track:95296abe993dbb777b6a18a2e708336e43d153f5be303ad58b4c543f1bdb647e` |
-| 3 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/IsCommutativeNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 92 | `declaration-track:9c6093be0bd87fdbf3b69c005461ef40f987cc00408504bf191d6edc5cd0d694` |
-| 4 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/IsCommutativeNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 112 | `declaration-track:b358d138b7c8e3b7eaade2627a46ffb767b118efb6ac0a596748f25c4b333a00` |
-| 5 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/IsCommutativeNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 132 | `declaration-track:a5508410f45b7948d285003696487bdf21157fe7cd40daad134d6efa1f450bb6` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IsCommutativeNamespacedPublic.lean/declarations/instance.md) | 52 | `declaration-track:5710df40960c055fc98fbbe8f0d29c5f6f8f045f4c9e9c9e6e907a3b4d5e0dc6` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IsCommutativeNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 72 | `declaration-track:95296abe993dbb777b6a18a2e708336e43d153f5be303ad58b4c543f1bdb647e` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IsCommutativeNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 92 | `declaration-track:9c6093be0bd87fdbf3b69c005461ef40f987cc00408504bf191d6edc5cd0d694` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IsCommutativeNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 112 | `declaration-track:b358d138b7c8e3b7eaade2627a46ffb767b118efb6ac0a596748f25c4b333a00` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IsCommutativeNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 132 | `declaration-track:a5508410f45b7948d285003696487bdf21157fe7cd40daad134d6efa1f450bb6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

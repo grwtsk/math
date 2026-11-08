@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ResidueFieldSeparablePublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ResidueFieldSeparablePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldSeparablePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldSeparablePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [HasSeparableResidueFieldsAt](../../../../CommutativeAlgebra/ResidueFieldSeparablePublic.lean/declarations/hasseparableresiduefieldsat.md) | 57 | `declaration-track:a79beb31a3842c1b1583d5519bd8603c05d66d58d3eaf89c2faa67431162ac2a` |
-| 2 | `instance` | [HasSeparableResidueFieldsAt.isSeparable](../../../../CommutativeAlgebra/ResidueFieldSeparablePublic.lean/declarations/hasseparableresiduefieldsat-isseparable.md) | 65 | `declaration-track:5489ba88cee23362c366571fdd71720ea9d3ffa48d2ded2d861e2f237403464f` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ResidueFieldSeparablePublic.lean/declarations/instance.md) | 75 | `declaration-track:0d69d83b74a4f09f368137428ea03c205930338e20dcf5f49516ece75d068cdc` |
-| 4 | `instance` | [HasSeparableResidueFieldsAt.isSeparable_quotient](../../../../CommutativeAlgebra/ResidueFieldSeparablePublic.lean/declarations/hasseparableresiduefieldsat-isseparable-quotient.md) | 91 | `declaration-track:9bd5018dc20d4805de0d8e6f705f6e946fe4b563e7152ec85a9b01d56fe559b5` |
-| 5 | `theorem` | [HasSeparableResidueFieldsAt.tower_bot](../../../../CommutativeAlgebra/ResidueFieldSeparablePublic.lean/declarations/hasseparableresiduefieldsat-tower-bot.md) | 107 | `result-track:11bc2db976b4ad06ee93f1500598750f18989656cba8f3ca73ac4b4be962d7e3` |
-| 6 | `theorem` | [HasSeparableResidueFieldsAt.tower_top](../../../../CommutativeAlgebra/ResidueFieldSeparablePublic.lean/declarations/hasseparableresiduefieldsat-tower-top.md) | 121 | `result-track:6a99e4f3387ef88073eddc21dc10e761224c13ea591ef84200bd5a53b03320fd` |
+| 1 | `class` | [HasSeparableResidueFieldsAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldSeparablePublic.lean/declarations/hasseparableresiduefieldsat.md) | 57 | `declaration-track:a79beb31a3842c1b1583d5519bd8603c05d66d58d3eaf89c2faa67431162ac2a` |
+| 2 | `instance` | [HasSeparableResidueFieldsAt.isSeparable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldSeparablePublic.lean/declarations/hasseparableresiduefieldsat-isseparable.md) | 65 | `declaration-track:5489ba88cee23362c366571fdd71720ea9d3ffa48d2ded2d861e2f237403464f` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldSeparablePublic.lean/declarations/instance.md) | 75 | `declaration-track:0d69d83b74a4f09f368137428ea03c205930338e20dcf5f49516ece75d068cdc` |
+| 4 | `instance` | [HasSeparableResidueFieldsAt.isSeparable_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldSeparablePublic.lean/declarations/hasseparableresiduefieldsat-isseparable-quotient.md) | 91 | `declaration-track:9bd5018dc20d4805de0d8e6f705f6e946fe4b563e7152ec85a9b01d56fe559b5` |
+| 5 | `theorem` | [HasSeparableResidueFieldsAt.tower_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldSeparablePublic.lean/declarations/hasseparableresiduefieldsat-tower-bot.md) | 107 | `result-track:11bc2db976b4ad06ee93f1500598750f18989656cba8f3ca73ac4b4be962d7e3` |
+| 6 | `theorem` | [HasSeparableResidueFieldsAt.tower_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldSeparablePublic.lean/declarations/hasseparableresiduefieldsat-tower-top.md) | 121 | `result-track:6a99e4f3387ef88073eddc21dc10e761224c13ea591ef84200bd5a53b03320fd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

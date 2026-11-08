@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamedFunctionDataIdentityFixedPoint.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamedFunctionDataIdentityFixedPoint.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamedFunctionDataIdentityFixedPoint.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamedFunctionDataIdentityFixedPoint.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Basic` — import line 19; external provider; requires a separately pinned dependency.
-- [Function And Identity Data](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FunctionAndIdentityData.lean/index.md) — import line 21; pinned internal source present.
+- [Function And Identity Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FunctionAndIdentityData.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsFixedBy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamedFunctionDataIdentityFixedPoint.lean/declarations/isfixedby.md) | 38 | `declaration-track:b6ca5b20a81f7ccbd5ab66a765b3cdb5168ea4b0b71937f8f678d4fcb1586315` |
-| 2 | `theorem` | [copyRule_fixed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamedFunctionDataIdentityFixedPoint.lean/declarations/copyrule-fixed.md) | 44 | `result-track:8543d1b6c4a5de72f4260ba3e2372fd614bcd821794daad5640bd4aed3821ac2` |
+| 1 | `def` | [IsFixedBy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamedFunctionDataIdentityFixedPoint.lean/declarations/isfixedby.md) | 38 | `declaration-track:b6ca5b20a81f7ccbd5ab66a765b3cdb5168ea4b0b71937f8f678d4fcb1586315` |
+| 2 | `theorem` | [copyRule_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamedFunctionDataIdentityFixedPoint.lean/declarations/copyrule-fixed.md) | 44 | `result-track:8543d1b6c4a5de72f4260ba3e2372fd614bcd821794daad5640bd4aed3821ac2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

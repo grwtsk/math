@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [comap](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comap.md) | 43 | `declaration-track:b68a5f974a598fbc057afa14658bad4365003ff098d00356d9e43e3726ef7d52` |
-| 2 | `theorem` | [comap_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comap-apply.md) | 47 | `result-track:06b59c68029720bf75548eadcd0e817893a13f13dfb5258c15fbb23ed3f4e012` |
-| 3 | `theorem` | [comap_id_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comap-id-apply.md) | 52 | `result-track:2f3bf8e60c02008f0d46ed240dfbcbf9b82a426a307e58592377afeb4e8fb0c0` |
-| 4 | `theorem` | [comap_id](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comap-id.md) | 58 | `result-track:9c61a2b4146ff7a5fe584edde1a31e378d97a065372cd044d565ab8fe2419584` |
-| 5 | `theorem` | [comap_comp_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comap-comp-apply.md) | 64 | `result-track:d07878945ad54d31b2502ce4960d347a6aac012bbcdd5581d14394a7a398cc38` |
-| 6 | `theorem` | [comap_comp](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comap-comp.md) | 78 | `result-track:17e75679cf93992450851e8c0502e29198f0f500e9e3a907eb03d31551b7f763` |
-| 7 | `theorem` | [comap_eq_id_of_eq_id](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comap-eq-id-of-eq-id.md) | 83 | `result-track:300324e6a0a76235512ec4a5297c0219d59fc398444f92921a1c692c72419292` |
-| 8 | `theorem` | [comap_rename](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comap-rename.md) | 89 | `result-track:ca590aa250cf0836f6fdc9eeee992f83d5f9f505ba5094aa2be569cad4d65a1b` |
-| 9 | `def` | [comapEquiv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comapequiv.md) | 96 | `declaration-track:86518f4b60a58df0f87fb9a920d48d0035a2b4b0476c892e8bfd2b18e67544a4` |
-| 10 | `theorem` | [comapEquiv_coe](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comapequiv-coe.md) | 113 | `result-track:077004b746bcd659e632e12cf61f509c5a7af40f8a508f7b1be8d69c8680caf2` |
-| 11 | `theorem` | [comapEquiv_symm_coe](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comapequiv-symm-coe.md) | 118 | `result-track:88145ea1d0cb4454525e0bb8e9de268e058be726dd7935238fa61b1d15e27d41` |
+| 1 | `def` | [comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comap.md) | 43 | `declaration-track:b68a5f974a598fbc057afa14658bad4365003ff098d00356d9e43e3726ef7d52` |
+| 2 | `theorem` | [comap_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comap-apply.md) | 47 | `result-track:06b59c68029720bf75548eadcd0e817893a13f13dfb5258c15fbb23ed3f4e012` |
+| 3 | `theorem` | [comap_id_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comap-id-apply.md) | 52 | `result-track:2f3bf8e60c02008f0d46ed240dfbcbf9b82a426a307e58592377afeb4e8fb0c0` |
+| 4 | `theorem` | [comap_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comap-id.md) | 58 | `result-track:9c61a2b4146ff7a5fe584edde1a31e378d97a065372cd044d565ab8fe2419584` |
+| 5 | `theorem` | [comap_comp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comap-comp-apply.md) | 64 | `result-track:d07878945ad54d31b2502ce4960d347a6aac012bbcdd5581d14394a7a398cc38` |
+| 6 | `theorem` | [comap_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comap-comp.md) | 78 | `result-track:17e75679cf93992450851e8c0502e29198f0f500e9e3a907eb03d31551b7f763` |
+| 7 | `theorem` | [comap_eq_id_of_eq_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comap-eq-id-of-eq-id.md) | 83 | `result-track:300324e6a0a76235512ec4a5297c0219d59fc398444f92921a1c692c72419292` |
+| 8 | `theorem` | [comap_rename](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comap-rename.md) | 89 | `result-track:ca590aa250cf0836f6fdc9eeee992f83d5f9f505ba5094aa2be569cad4d65a1b` |
+| 9 | `def` | [comapEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comapequiv.md) | 96 | `declaration-track:86518f4b60a58df0f87fb9a920d48d0035a2b4b0476c892e8bfd2b18e67544a4` |
+| 10 | `theorem` | [comapEquiv_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comapequiv-coe.md) | 113 | `result-track:077004b746bcd659e632e12cf61f509c5a7af40f8a508f7b1be8d69c8680caf2` |
+| 11 | `theorem` | [comapEquiv_symm_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComapNamespaced.lean/declarations/comapequiv-symm-coe.md) | 118 | `result-track:88145ea1d0cb4454525e0bb8e9de268e058be726dd7935238fa61b1d15e27d41` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

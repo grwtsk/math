@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMoore.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMoore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMoore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMoore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Monad.algebraPreadditive](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMoore.lean/declarations/monad-algebrapreadditive.md) | 30 | `declaration-track:bff7614664ccb66f2b355fca4298f96db86bcd8a44514f3bf32b909a15c2559e` |
-| 2 | `instance` | [Monad.forget_additive](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMoore.lean/declarations/monad-forget-additive.md) | 104 | `declaration-track:e3ec0ac118e71e6443688647faec6dbfcf16a1548c66f7e3525001d54e80ae69` |
-| 3 | `instance` | [Comonad.coalgebraPreadditive](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMoore.lean/declarations/comonad-coalgebrapreadditive.md) | 110 | `declaration-track:44e831375740571ba12c08d7671b3dadcd0e6834e2a1b499ad0fce42f62df023` |
-| 4 | `instance` | [Comonad.forget_additive](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMoore.lean/declarations/comonad-forget-additive.md) | 184 | `declaration-track:7efd7dcba750227a883b2551b2c84bbbad5ac48f0b87f35276ee6445191fcb6a` |
+| 1 | `instance` | [Monad.algebraPreadditive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMoore.lean/declarations/monad-algebrapreadditive.md) | 30 | `declaration-track:bff7614664ccb66f2b355fca4298f96db86bcd8a44514f3bf32b909a15c2559e` |
+| 2 | `instance` | [Monad.forget_additive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMoore.lean/declarations/monad-forget-additive.md) | 104 | `declaration-track:e3ec0ac118e71e6443688647faec6dbfcf16a1548c66f7e3525001d54e80ae69` |
+| 3 | `instance` | [Comonad.coalgebraPreadditive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMoore.lean/declarations/comonad-coalgebrapreadditive.md) | 110 | `declaration-track:44e831375740571ba12c08d7671b3dadcd0e6834e2a1b499ad0fce42f62df023` |
+| 4 | `instance` | [Comonad.forget_additive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMoore.lean/declarations/comonad-forget-additive.md) | 184 | `declaration-track:7efd7dcba750227a883b2551b2c84bbbad5ac48f0b87f35276ee6445191fcb6a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

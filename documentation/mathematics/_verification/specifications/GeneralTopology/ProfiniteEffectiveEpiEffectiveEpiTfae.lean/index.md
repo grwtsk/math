@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/index.md) · [Full source](../../../../GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [effectiveEpi_tfae](../../../../GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/declarations/effectiveepi-tfae.md) | 31 | `result-track:e3398d2a5d926549a20f9c5cd469ad0bca067e7ca549f4e21ce0071e2eb687eb` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/declarations/instance.md) | 43 | `declaration-track:25db98ab3756a9d012154d971608952e803498bc34fef72a35b82e1018b382c5` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/declarations/instance-source-edition-3.md) | 47 | `declaration-track:8339394f313446cc3d42d9dc5329e4c759c9c09ba36d70950d4ff24dc701e37f` |
-| 4 | `def` | [profiniteToCompHausEffectivePresentation](../../../../GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/declarations/profinitetocomphauseffectivepresentation.md) | 54 | `declaration-track:65f4ab5e9a429313d315c322e4d8d470c41c371a6a7be3e646fd821e18f7fc2f` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/declarations/instance-source-edition-4.md) | 60 | `declaration-track:8d203b910b1f4de8c926c440f88fddbf48d1ade00755e13ab56479293f000a63` |
-| 6 | `instance` | [(anonymous)](../../../../GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/declarations/instance-source-edition-2.md) | 63 | `declaration-track:766bcf4fd4b1615e03ef21b999b2eb06716581fc8baad03de90594fc76b94e56` |
-| 7 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/declarations/example.md) | 65 | `declaration-track:3674c9924b24dbb2b314e4e7a5dd8ef3bdfd842464e3772379c316484ffd543b` |
-| 8 | `theorem` | [effectiveEpiFamily_tfae](../../../../GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/declarations/effectiveepifamily-tfae.md) | 69 | `result-track:f03689acfdb433b1d18679134836b63666e922b871fb64218ec08a82ee790f9d` |
-| 9 | `theorem` | [effectiveEpiFamily_of_jointly_surjective](../../../../GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/declarations/effectiveepifamily-of-jointly-surjective.md) | 88 | `result-track:82aa502414bc6a2e2352cd5e9d137326b784a339354360c84d02bb6e94a58acc` |
+| 1 | `theorem` | [effectiveEpi_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/declarations/effectiveepi-tfae.md) | 31 | `result-track:e3398d2a5d926549a20f9c5cd469ad0bca067e7ca549f4e21ce0071e2eb687eb` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/declarations/instance.md) | 43 | `declaration-track:25db98ab3756a9d012154d971608952e803498bc34fef72a35b82e1018b382c5` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/declarations/instance-source-edition-3.md) | 47 | `declaration-track:8339394f313446cc3d42d9dc5329e4c759c9c09ba36d70950d4ff24dc701e37f` |
+| 4 | `def` | [profiniteToCompHausEffectivePresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/declarations/profinitetocomphauseffectivepresentation.md) | 54 | `declaration-track:65f4ab5e9a429313d315c322e4d8d470c41c371a6a7be3e646fd821e18f7fc2f` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/declarations/instance-source-edition-4.md) | 60 | `declaration-track:8d203b910b1f4de8c926c440f88fddbf48d1ade00755e13ab56479293f000a63` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/declarations/instance-source-edition-2.md) | 63 | `declaration-track:766bcf4fd4b1615e03ef21b999b2eb06716581fc8baad03de90594fc76b94e56` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/declarations/example.md) | 65 | `declaration-track:3674c9924b24dbb2b314e4e7a5dd8ef3bdfd842464e3772379c316484ffd543b` |
+| 8 | `theorem` | [effectiveEpiFamily_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/declarations/effectiveepifamily-tfae.md) | 69 | `result-track:f03689acfdb433b1d18679134836b63666e922b871fb64218ec08a82ee790f9d` |
+| 9 | `theorem` | [effectiveEpiFamily_of_jointly_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteEffectiveEpiEffectiveEpiTfae.lean/declarations/effectiveepifamily-of-jointly-surjective.md) | 88 | `result-track:82aa502414bc6a2e2352cd5e9d137326b784a339354360c84d02bb6e94a58acc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

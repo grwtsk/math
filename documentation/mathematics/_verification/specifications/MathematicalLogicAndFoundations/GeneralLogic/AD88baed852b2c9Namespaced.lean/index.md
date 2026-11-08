@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD88baed852b2c9Namespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD88baed852b2c9Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD88baed852b2c9Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD88baed852b2c9Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [UniqueWitnessEvidenceIds](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD88baed852b2c9Namespaced.lean/declarations/uniquewitnessevidenceids.md) | 19 | `declaration-track:41ff1fc5110c21c7c3f13be54603eeca2ddf5b380b8e269fa1f9398ae1469d9a` |
+| 1 | `def` | [UniqueWitnessEvidenceIds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD88baed852b2c9Namespaced.lean/declarations/uniquewitnessevidenceids.md) | 19 | `declaration-track:41ff1fc5110c21c7c3f13be54603eeca2ddf5b380b8e269fa1f9398ae1469d9a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

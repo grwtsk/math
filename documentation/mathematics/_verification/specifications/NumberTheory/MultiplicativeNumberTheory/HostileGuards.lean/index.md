@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/HostileGuards.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/HostileGuards.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/HostileGuards.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/HostileGuards.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/HostileGuards.lean/declarations/example-source-edition-3.md) | 14 | `declaration-track:ae68361a15c94518f71aa09dc05bd2fb4645d0c0de2d69fb10a2076cb4718d91` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/HostileGuards.lean/declarations/example.md) | 17 | `declaration-track:7be24ed81409822cb031a86416d8d8289e4a8b08004177c4165ee422c81a531c` |
-| 3 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/HostileGuards.lean/declarations/example-source-edition-2.md) | 21 | `declaration-track:ab97055730d47af765b0b1785881e9e4f1e4011c65c80adc4835bc01a02bc412` |
-| 4 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/HostileGuards.lean/declarations/example-source-edition-5.md) | 25 | `declaration-track:bce8d463a561bca66cc6954aa3c351d904ef0ee3832a5bf9dcaed99d4935b299` |
-| 5 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/HostileGuards.lean/declarations/example-source-edition-4.md) | 31 | `declaration-track:b0e703b067da9c9d7d188c1be9f32ec543f05630f2e30cddaedbf2415ec1e818` |
-| 6 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/HostileGuards.lean/declarations/example-source-edition-6.md) | 37 | `declaration-track:c84ddca086063f85d84d9b4d8f1aab205925ae92705768db94e554959a480f5f` |
-| 7 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/HostileGuards.lean/declarations/example-source-edition-7.md) | 44 | `declaration-track:dbcd080bcc734cff742324db558a0abc493845f3670b9a84f9bd19567d575e38` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/HostileGuards.lean/declarations/example-source-edition-3.md) | 14 | `declaration-track:ae68361a15c94518f71aa09dc05bd2fb4645d0c0de2d69fb10a2076cb4718d91` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/HostileGuards.lean/declarations/example.md) | 17 | `declaration-track:7be24ed81409822cb031a86416d8d8289e4a8b08004177c4165ee422c81a531c` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/HostileGuards.lean/declarations/example-source-edition-2.md) | 21 | `declaration-track:ab97055730d47af765b0b1785881e9e4f1e4011c65c80adc4835bc01a02bc412` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/HostileGuards.lean/declarations/example-source-edition-5.md) | 25 | `declaration-track:bce8d463a561bca66cc6954aa3c351d904ef0ee3832a5bf9dcaed99d4935b299` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/HostileGuards.lean/declarations/example-source-edition-4.md) | 31 | `declaration-track:b0e703b067da9c9d7d188c1be9f32ec543f05630f2e30cddaedbf2415ec1e818` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/HostileGuards.lean/declarations/example-source-edition-6.md) | 37 | `declaration-track:c84ddca086063f85d84d9b4d8f1aab205925ae92705768db94e554959a480f5f` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/HostileGuards.lean/declarations/example-source-edition-7.md) | 44 | `declaration-track:dbcd080bcc734cff742324db558a0abc493845f3670b9a84f9bd19567d575e38` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

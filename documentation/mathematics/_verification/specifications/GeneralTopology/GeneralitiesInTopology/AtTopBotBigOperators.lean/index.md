@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotBigOperators.lean/index.md) · [Full source](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotBigOperators.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotBigOperators.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotBigOperators.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Filter.map_atTop_finset_prod_le_of_prod_eq](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotBigOperators.lean/declarations/filter-map-attop-finset-prod-le-of-prod-eq.md) | 29 | `result-track:9611d433e0351e92a5a10dc636a2c92e96eb38df8f39b8fda652c702259fd1ce` |
-| 2 | `theorem` | [Function.Injective.map_atTop_finset_prod_eq](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotBigOperators.lean/declarations/function-injective-map-attop-finset-prod-eq.md) | 47 | `result-track:f5eae910962dbdf06232a35295862135d08be983eeb252bdb52f38035b06c4fc` |
+| 1 | `theorem` | [Filter.map_atTop_finset_prod_le_of_prod_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotBigOperators.lean/declarations/filter-map-attop-finset-prod-le-of-prod-eq.md) | 29 | `result-track:9611d433e0351e92a5a10dc636a2c92e96eb38df8f39b8fda652c702259fd1ce` |
+| 2 | `theorem` | [Function.Injective.map_atTop_finset_prod_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotBigOperators.lean/declarations/function-injective-map-attop-finset-prod-eq.md) | 47 | `result-track:f5eae910962dbdf06232a35295862135d08be983eeb252bdb52f38035b06c4fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

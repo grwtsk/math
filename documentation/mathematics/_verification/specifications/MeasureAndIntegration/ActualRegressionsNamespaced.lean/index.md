@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualRegressionsNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualRegressionsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualRegressionsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualRegressionsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [source_minimal_scale](../../../../MeasureAndIntegration/ActualRegressionsNamespaced.lean/declarations/source-minimal-scale.md) | 21 | `result-track:2dd1ac67fe7a76211b1f4b411d928744b11754556321f2ea628a454f856c1640` |
-| 2 | `theorem` | [source_noninteger_cutoff](../../../../MeasureAndIntegration/ActualRegressionsNamespaced.lean/declarations/source-noninteger-cutoff.md) | 26 | `result-track:cb6eb1067113881b178787baf6ea505be59aa2a9aefe473beaa30624caa624c0` |
-| 3 | `theorem` | [source_noninteger_error](../../../../MeasureAndIntegration/ActualRegressionsNamespaced.lean/declarations/source-noninteger-error.md) | 32 | `result-track:20e52f05c81ed76ac5753ef7df4394540bf64b073808c81aceb40247225da135` |
-| 4 | `theorem` | [source_closed_touching_atom](../../../../MeasureAndIntegration/ActualRegressionsNamespaced.lean/declarations/source-closed-touching-atom.md) | 40 | `result-track:c25e6f5e36a5c8c0e9c75bc0eb7029afd9a3a0eaecd16c1a1c63ce924105fb95` |
-| 5 | `theorem` | [source_integer_terminal_zero](../../../../MeasureAndIntegration/ActualRegressionsNamespaced.lean/declarations/source-integer-terminal-zero.md) | 45 | `result-track:01b6a012f7c4ca44b15e7ff216d464ea04ae3ae6d8e3badcbae84fc03d5c7e59` |
-| 6 | `theorem` | [missing_chain_factor_counterexample](../../../../MeasureAndIntegration/ActualRegressionsNamespaced.lean/declarations/missing-chain-factor-counterexample.md) | 51 | `result-track:afcbd4108fe1d84269777267a18756cadb52d9f465eb5ef68fe70fa8f1eb9997` |
-| 7 | `theorem` | [spatial_parameter_derivatives_differ](../../../../MeasureAndIntegration/ActualRegressionsNamespaced.lean/declarations/spatial-parameter-derivatives-differ.md) | 59 | `result-track:302b7cba1f5d1a7c3cf3814c961be7487322660d31233556bc591edb88264d85` |
-| 8 | `theorem` | [centering_requires_nonzero_endpoint](../../../../MeasureAndIntegration/ActualRegressionsNamespaced.lean/declarations/centering-requires-nonzero-endpoint.md) | 63 | `result-track:9f14716886c5ee60e9c531eef1a75285153ea97faedfa3219e932a11bb143fbd` |
-| 9 | `theorem` | [integer_scales_do_not_cover_reals](../../../../MeasureAndIntegration/ActualRegressionsNamespaced.lean/declarations/integer-scales-do-not-cover-reals.md) | 69 | `result-track:9f76b3cb3af0a51bc4ae58eac9192f18ade02d8cef3227c1383c529d8f3b9a3d` |
+| 1 | `theorem` | [source_minimal_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualRegressionsNamespaced.lean/declarations/source-minimal-scale.md) | 21 | `result-track:2dd1ac67fe7a76211b1f4b411d928744b11754556321f2ea628a454f856c1640` |
+| 2 | `theorem` | [source_noninteger_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualRegressionsNamespaced.lean/declarations/source-noninteger-cutoff.md) | 26 | `result-track:cb6eb1067113881b178787baf6ea505be59aa2a9aefe473beaa30624caa624c0` |
+| 3 | `theorem` | [source_noninteger_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualRegressionsNamespaced.lean/declarations/source-noninteger-error.md) | 32 | `result-track:20e52f05c81ed76ac5753ef7df4394540bf64b073808c81aceb40247225da135` |
+| 4 | `theorem` | [source_closed_touching_atom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualRegressionsNamespaced.lean/declarations/source-closed-touching-atom.md) | 40 | `result-track:c25e6f5e36a5c8c0e9c75bc0eb7029afd9a3a0eaecd16c1a1c63ce924105fb95` |
+| 5 | `theorem` | [source_integer_terminal_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualRegressionsNamespaced.lean/declarations/source-integer-terminal-zero.md) | 45 | `result-track:01b6a012f7c4ca44b15e7ff216d464ea04ae3ae6d8e3badcbae84fc03d5c7e59` |
+| 6 | `theorem` | [missing_chain_factor_counterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualRegressionsNamespaced.lean/declarations/missing-chain-factor-counterexample.md) | 51 | `result-track:afcbd4108fe1d84269777267a18756cadb52d9f465eb5ef68fe70fa8f1eb9997` |
+| 7 | `theorem` | [spatial_parameter_derivatives_differ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualRegressionsNamespaced.lean/declarations/spatial-parameter-derivatives-differ.md) | 59 | `result-track:302b7cba1f5d1a7c3cf3814c961be7487322660d31233556bc591edb88264d85` |
+| 8 | `theorem` | [centering_requires_nonzero_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualRegressionsNamespaced.lean/declarations/centering-requires-nonzero-endpoint.md) | 63 | `result-track:9f14716886c5ee60e9c531eef1a75285153ea97faedfa3219e932a11bb143fbd` |
+| 9 | `theorem` | [integer_scales_do_not_cover_reals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualRegressionsNamespaced.lean/declarations/integer-scales-do-not-cover-reals.md) | 69 | `result-track:9f76b3cb3af0a51bc4ae58eac9192f18ade02d8cef3227c1383c529d8f3b9a3d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/HornNamespaced.lean/index.md) · [Full source](../../../../AlgebraicTopology/HornNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HornNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HornNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [horn](../../../../AlgebraicTopology/HornNamespaced.lean/declarations/horn.md) | 35 | `declaration-track:8d292713e2015e900c70b4181efd91a6f2d12728d8ebc61998df38ff7aa1382c` |
-| 2 | `lemma` | [horn_eq_iSup](../../../../AlgebraicTopology/HornNamespaced.lean/declarations/horn-eq-isup.md) | 46 | `result-track:66ff7cea0424c8291633c4871409b56a023cabff1227740e9825103d77e7432c` |
-| 3 | `lemma` | [face_le_horn](../../../../AlgebraicTopology/HornNamespaced.lean/declarations/face-le-horn.md) | 53 | `result-track:e7fb9ce29bd8f7f6ea38772ae11e1f1818d6fa3ac0ebe9f09cd2af327267fa57` |
-| 4 | `lemma` | [horn_obj_zero](../../../../AlgebraicTopology/HornNamespaced.lean/declarations/horn-obj-zero.md) | 59 | `result-track:11a8dc4ca0f8670e7a4acb2cace0edd42f965b75fc6039df78c35ec7019754c6` |
-| 5 | `abbrev` | [hornInclusion](../../../../AlgebraicTopology/HornNamespaced.lean/declarations/horninclusion.md) | 82 | `declaration-track:1eef9791e207e53f806aaf0d8d17166c1acd4386f723ba5888cbeaaa36f2ba4a` |
-| 6 | `def` | [const](../../../../AlgebraicTopology/HornNamespaced.lean/declarations/const.md) | 93 | `declaration-track:571913440a479217bba042ebf366f2146e5db1a28479a1952b5d537086eea6f4` |
-| 7 | `lemma` | [const_val_apply](../../../../AlgebraicTopology/HornNamespaced.lean/declarations/const-val-apply.md) | 98 | `result-track:0fce43e52f88d95ca12a4ada9b0ad0623d0470aef36ec02ad8bb0aa1b485de34` |
-| 8 | `def` | [edge](../../../../AlgebraicTopology/HornNamespaced.lean/declarations/edge.md) | 108 | `declaration-track:a53d23d89d366c706653b332619083c2001aa3329382dc66706c99a2cf29b7da` |
-| 9 | `def` | [edge₃](../../../../AlgebraicTopology/HornNamespaced.lean/declarations/edge-source-edition-2.md) | 130 | `declaration-track:e6566c9ecb398087feb9040d3628eb1e0e672bfd37ac1224ec1d3b21e894c87f` |
-| 10 | `def` | [primitiveEdge](../../../../AlgebraicTopology/HornNamespaced.lean/declarations/primitiveedge.md) | 139 | `declaration-track:990e3f6046d99a8e65029a0d0e62582cf07e22b3c07d6615c4722a578dbb4cb1` |
-| 11 | `def` | [primitiveTriangle](../../../../AlgebraicTopology/HornNamespaced.lean/declarations/primitivetriangle.md) | 155 | `declaration-track:92002ba91e1578a0e221d61b76c87b3e40c83fcca3020cc88288f0e6282b1c47` |
-| 12 | `def` | [face](../../../../AlgebraicTopology/HornNamespaced.lean/declarations/face.md) | 196 | `declaration-track:16bc409df13da3ea3e71b899f12d5293f7b1263ec92df7c765a374e4176fa832` |
-| 13 | `lemma` | [hom_ext](../../../../AlgebraicTopology/HornNamespaced.lean/declarations/hom-ext.md) | 202 | `result-track:c2810524cbdf5dfe3e45bb0cc2a0b696b63beb6e84d89d12fb7ec703227de630` |
+| 1 | `def` | [horn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HornNamespaced.lean/declarations/horn.md) | 35 | `declaration-track:8d292713e2015e900c70b4181efd91a6f2d12728d8ebc61998df38ff7aa1382c` |
+| 2 | `lemma` | [horn_eq_iSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HornNamespaced.lean/declarations/horn-eq-isup.md) | 46 | `result-track:66ff7cea0424c8291633c4871409b56a023cabff1227740e9825103d77e7432c` |
+| 3 | `lemma` | [face_le_horn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HornNamespaced.lean/declarations/face-le-horn.md) | 53 | `result-track:e7fb9ce29bd8f7f6ea38772ae11e1f1818d6fa3ac0ebe9f09cd2af327267fa57` |
+| 4 | `lemma` | [horn_obj_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HornNamespaced.lean/declarations/horn-obj-zero.md) | 59 | `result-track:11a8dc4ca0f8670e7a4acb2cace0edd42f965b75fc6039df78c35ec7019754c6` |
+| 5 | `abbrev` | [hornInclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HornNamespaced.lean/declarations/horninclusion.md) | 82 | `declaration-track:1eef9791e207e53f806aaf0d8d17166c1acd4386f723ba5888cbeaaa36f2ba4a` |
+| 6 | `def` | [const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HornNamespaced.lean/declarations/const.md) | 93 | `declaration-track:571913440a479217bba042ebf366f2146e5db1a28479a1952b5d537086eea6f4` |
+| 7 | `lemma` | [const_val_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HornNamespaced.lean/declarations/const-val-apply.md) | 98 | `result-track:0fce43e52f88d95ca12a4ada9b0ad0623d0470aef36ec02ad8bb0aa1b485de34` |
+| 8 | `def` | [edge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HornNamespaced.lean/declarations/edge.md) | 108 | `declaration-track:a53d23d89d366c706653b332619083c2001aa3329382dc66706c99a2cf29b7da` |
+| 9 | `def` | [edge₃](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HornNamespaced.lean/declarations/edge-source-edition-2.md) | 130 | `declaration-track:e6566c9ecb398087feb9040d3628eb1e0e672bfd37ac1224ec1d3b21e894c87f` |
+| 10 | `def` | [primitiveEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HornNamespaced.lean/declarations/primitiveedge.md) | 139 | `declaration-track:990e3f6046d99a8e65029a0d0e62582cf07e22b3c07d6615c4722a578dbb4cb1` |
+| 11 | `def` | [primitiveTriangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HornNamespaced.lean/declarations/primitivetriangle.md) | 155 | `declaration-track:92002ba91e1578a0e221d61b76c87b3e40c83fcca3020cc88288f0e6282b1c47` |
+| 12 | `def` | [face](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HornNamespaced.lean/declarations/face.md) | 196 | `declaration-track:16bc409df13da3ea3e71b899f12d5293f7b1263ec92df7c765a374e4176fa832` |
+| 13 | `lemma` | [hom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HornNamespaced.lean/declarations/hom-ext.md) | 202 | `result-track:c2810524cbdf5dfe3e45bb0cc2a0b696b63beb6e84d89d12fb7ec703227de630` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

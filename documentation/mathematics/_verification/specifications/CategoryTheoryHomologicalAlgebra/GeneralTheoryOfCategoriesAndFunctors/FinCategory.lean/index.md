@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategory.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [optionEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategory.lean/declarations/optionequiv-source-edition-2.md) | 28 | `declaration-track:cc89385696b50939a14fee607c1bb691372d97b28461984be598c2a08b9f5345` |
-| 2 | `instance` | [instFintype](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategory.lean/declarations/instfintype.md) | 38 | `declaration-track:a4fd518d6315b31763bd64739dc1729f9f588ac279d7a4f117faf99f2a2df1b7` |
-| 3 | `instance` | [instFinCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategory.lean/declarations/instfincategory.md) | 41 | `declaration-track:3fc8bcad611ad73d0df286f69a7aed740d801a1a9f24ede411f6dd38af92c8d3` |
-| 4 | `def` | [optionEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategory.lean/declarations/optionequiv.md) | 56 | `declaration-track:0353c6a3f9b26a1f02a9106a84ef86e5b57a8ae938ebaa76a0c8137bf3b2b830` |
-| 5 | `instance` | [instFintype](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategory.lean/declarations/instfintype-source-edition-2.md) | 66 | `declaration-track:e9c2f075220a8fba18c5f894554142a6cd62af5223a55c550b803da04f480ac9` |
-| 6 | `instance` | [instFinCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategory.lean/declarations/instfincategory-source-edition-2.md) | 69 | `declaration-track:aefb3d591a9fe7f2100832aec543ec032c9e5b8885f86f28b9974048690cd33b` |
+| 1 | `def` | [optionEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategory.lean/declarations/optionequiv-source-edition-2.md) | 28 | `declaration-track:cc89385696b50939a14fee607c1bb691372d97b28461984be598c2a08b9f5345` |
+| 2 | `instance` | [instFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategory.lean/declarations/instfintype.md) | 38 | `declaration-track:a4fd518d6315b31763bd64739dc1729f9f588ac279d7a4f117faf99f2a2df1b7` |
+| 3 | `instance` | [instFinCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategory.lean/declarations/instfincategory.md) | 41 | `declaration-track:3fc8bcad611ad73d0df286f69a7aed740d801a1a9f24ede411f6dd38af92c8d3` |
+| 4 | `def` | [optionEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategory.lean/declarations/optionequiv.md) | 56 | `declaration-track:0353c6a3f9b26a1f02a9106a84ef86e5b57a8ae938ebaa76a0c8137bf3b2b830` |
+| 5 | `instance` | [instFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategory.lean/declarations/instfintype-source-edition-2.md) | 66 | `declaration-track:e9c2f075220a8fba18c5f894554142a6cd62af5223a55c550b803da04f480ac9` |
+| 6 | `instance` | [instFinCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinCategory.lean/declarations/instfincategory-source-edition-2.md) | 69 | `declaration-track:aefb3d591a9fe7f2100832aec543ec032c9e5b8885f86f28b9974048690cd33b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

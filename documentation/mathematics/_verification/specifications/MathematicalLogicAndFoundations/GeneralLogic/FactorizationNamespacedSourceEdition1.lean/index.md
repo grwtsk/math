@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationNamespacedSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationNamespacedSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationNamespacedSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BinaryLogicMatrixFactorizationDescriptor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationNamespacedSourceEdition1.lean/declarations/binarylogicmatrixfactorizationdescriptor.md) | 15 | `declaration-track:b7a91324660830e634d66d9333101ad17390ffe8facc01d6740d1eeeb968c340` |
-| 2 | `theorem` | [blmFactorizationDescriptor_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationNamespacedSourceEdition1.lean/declarations/blmfactorizationdescriptor-sound.md) | 22 | `result-track:ad819fbde019075056cb4db15ef940bd99cd2f7f598ec5263c63becd8ccf8f30` |
-| 3 | `structure` | [FinalTheoremFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationNamespacedSourceEdition1.lean/declarations/finaltheoremfamily.md) | 28 | `declaration-track:f1ddf1678648b6b8a847fff1fcbffdd914512c1172c5168c376ee65192e72591` |
-| 4 | `theorem` | [finalTheoremFamily_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationNamespacedSourceEdition1.lean/declarations/finaltheoremfamily-sound.md) | 36 | `result-track:e84b6f8aa685e36ad96877017e526f4b3b647a44a20edf73e0676de41522b4e6` |
-| 5 | `theorem` | [finalTheoremFamily_boundaries_visible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationNamespacedSourceEdition1.lean/declarations/finaltheoremfamily-boundaries-visible.md) | 41 | `result-track:ccad579401ee88830f21ffaa63470655217159cfd40c212099132133610e3e1d` |
+| 1 | `structure` | [BinaryLogicMatrixFactorizationDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationNamespacedSourceEdition1.lean/declarations/binarylogicmatrixfactorizationdescriptor.md) | 15 | `declaration-track:b7a91324660830e634d66d9333101ad17390ffe8facc01d6740d1eeeb968c340` |
+| 2 | `theorem` | [blmFactorizationDescriptor_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationNamespacedSourceEdition1.lean/declarations/blmfactorizationdescriptor-sound.md) | 22 | `result-track:ad819fbde019075056cb4db15ef940bd99cd2f7f598ec5263c63becd8ccf8f30` |
+| 3 | `structure` | [FinalTheoremFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationNamespacedSourceEdition1.lean/declarations/finaltheoremfamily.md) | 28 | `declaration-track:f1ddf1678648b6b8a847fff1fcbffdd914512c1172c5168c376ee65192e72591` |
+| 4 | `theorem` | [finalTheoremFamily_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationNamespacedSourceEdition1.lean/declarations/finaltheoremfamily-sound.md) | 36 | `result-track:e84b6f8aa685e36ad96877017e526f4b3b647a44a20edf73e0676de41522b4e6` |
+| 5 | `theorem` | [finalTheoremFamily_boundaries_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationNamespacedSourceEdition1.lean/declarations/finaltheoremfamily-boundaries-visible.md) | 41 | `result-track:ccad579401ee88830f21ffaa63470655217159cfd40c212099132133610e3e1d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

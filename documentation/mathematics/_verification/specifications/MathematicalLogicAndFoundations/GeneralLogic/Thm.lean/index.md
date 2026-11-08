@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Thm.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Thm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Thm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Thm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bad_contains_sorry](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Thm.lean/declarations/bad-contains-sorry.md) | 3 | `result-track:04203cb4efcd20144c655c56ad8e291be399d962cec05f1e6ce3ca67e58f2d0f` |
+| 1 | `theorem` | [bad_contains_sorry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Thm.lean/declarations/bad-contains-sorry.md) | 3 | `result-track:04203cb4efcd20144c655c56ad8e291be399d962cec05f1e6ce3ca67e58f2d0f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

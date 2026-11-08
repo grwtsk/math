@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/HolomorphicLineSections.lean/index.md) · [Full source](../../../../GeneralTopology/HolomorphicLineSections.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.HolomorphicLineCocycle`](../../../../GeneralTopology/HolomorphicLineCocycle.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicLineCocycle`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineCocycle.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,21 +57,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TwistedFamily](../../../../GeneralTopology/HolomorphicLineSections.lean/declarations/twistedfamily.md) | 24 | `declaration-track:8ad556d7dd265cbd8a33873211b1cc496b89b32d13e1a47258c72868c6b52132` |
-| 2 | `def` | [chartCoordinate](../../../../GeneralTopology/HolomorphicLineSections.lean/declarations/chartcoordinate.md) | 32 | `declaration-track:2fc92f3ce18cf8a514b3a5479bd14f576358168d3ff9754f71055b1bad90d367` |
-| 3 | `theorem` | [chartCoordinate_apply](../../../../GeneralTopology/HolomorphicLineSections.lean/declarations/chartcoordinate-apply.md) | 37 | `result-track:f6638945d2f302e54e42e7e121b4cf49d45a59bae2463d55979f648102a3c402` |
-| 4 | `structure` | [BundleSection](../../../../GeneralTopology/HolomorphicLineSections.lean/declarations/bundlesection.md) | 42 | `declaration-track:0a8ec14c0c0171a88bc00000f9ab2121ae94647a16494ef00dedc6ad61a4f5eb` |
-| 5 | `theorem` | [ext_sectionAt](../../../../GeneralTopology/HolomorphicLineSections.lean/declarations/ext-sectionat.md) | 52 | `result-track:65527ac01158ea7228aa81ea12728148a2e5383dd1ab6ffbb2ec629732c8774a` |
-| 6 | `def` | [realizeValue](../../../../GeneralTopology/HolomorphicLineSections.lean/declarations/realizevalue.md) | 59 | `declaration-track:85631c503a49da7824758f79f80f5d8bb999b6499b2e017bca27aeb84ecc7886` |
-| 7 | `theorem` | [realize_coordinate](../../../../GeneralTopology/HolomorphicLineSections.lean/declarations/realize-coordinate.md) | 65 | `result-track:9d9ecd91f75693870c2f0c1437181fb08c9913ae9aa91e1ca8b6cbf6d2f435ea` |
-| 8 | `def` | [realize](../../../../GeneralTopology/HolomorphicLineSections.lean/declarations/realize.md) | 72 | `declaration-track:4f726ddd83f4dfaceec123ad6282146e291c05c6b69a4711224ddc00c561d852` |
-| 9 | `theorem` | [ext_value](../../../../GeneralTopology/HolomorphicLineSections.lean/declarations/ext-value.md) | 90 | `result-track:b7d13abe21307167fbd881890dc81c58e38a6be5c2b7a8a4d68fa00ebc45ab5e` |
-| 10 | `def` | [localize](../../../../GeneralTopology/HolomorphicLineSections.lean/declarations/localize.md) | 97 | `declaration-track:3325e9560a877a2fde933d49a928be99575c21ac636618150bee6d646968d997` |
-| 11 | `theorem` | [chartCoordinate_continuousOn](../../../../GeneralTopology/HolomorphicLineSections.lean/declarations/chartcoordinate-continuouson.md) | 107 | `result-track:1d1b12bcf527ee0497277e7c0914a1203d31b3a833285fb91ff1a9242c3c1386` |
-| 12 | `theorem` | [continuous_totalSection](../../../../GeneralTopology/HolomorphicLineSections.lean/declarations/continuous-totalsection.md) | 117 | `result-track:c8ad998a8fb72148945076e3db0a8b6bf413fb9643d0591e5cd1b3f858bf266e` |
-| 13 | `def` | [sectionEquiv](../../../../GeneralTopology/HolomorphicLineSections.lean/declarations/sectionequiv.md) | 130 | `declaration-track:eb69822b5e3e32271785319d6f257cdff33a6103b86d312d03c51b4b1201b4b6` |
-| 14 | `def` | [identityTwistedFamily](../../../../GeneralTopology/HolomorphicLineSections.lean/declarations/identitytwistedfamily.md) | 149 | `declaration-track:2bc5f4b24ae26fcbcc640997271eb8541be1ae9466a159dccc6619960e1d91d0` |
-| 15 | `theorem` | [identity_realization_eq_scalar_glue](../../../../GeneralTopology/HolomorphicLineSections.lean/declarations/identity-realization-eq-scalar-glue.md) | 161 | `result-track:64100d5fe4617380e926a5945316148afeafef28863f2671e16f717242b98abc` |
+| 1 | `structure` | [TwistedFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/declarations/twistedfamily.md) | 24 | `declaration-track:8ad556d7dd265cbd8a33873211b1cc496b89b32d13e1a47258c72868c6b52132` |
+| 2 | `def` | [chartCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/declarations/chartcoordinate.md) | 32 | `declaration-track:2fc92f3ce18cf8a514b3a5479bd14f576358168d3ff9754f71055b1bad90d367` |
+| 3 | `theorem` | [chartCoordinate_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/declarations/chartcoordinate-apply.md) | 37 | `result-track:f6638945d2f302e54e42e7e121b4cf49d45a59bae2463d55979f648102a3c402` |
+| 4 | `structure` | [BundleSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/declarations/bundlesection.md) | 42 | `declaration-track:0a8ec14c0c0171a88bc00000f9ab2121ae94647a16494ef00dedc6ad61a4f5eb` |
+| 5 | `theorem` | [ext_sectionAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/declarations/ext-sectionat.md) | 52 | `result-track:65527ac01158ea7228aa81ea12728148a2e5383dd1ab6ffbb2ec629732c8774a` |
+| 6 | `def` | [realizeValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/declarations/realizevalue.md) | 59 | `declaration-track:85631c503a49da7824758f79f80f5d8bb999b6499b2e017bca27aeb84ecc7886` |
+| 7 | `theorem` | [realize_coordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/declarations/realize-coordinate.md) | 65 | `result-track:9d9ecd91f75693870c2f0c1437181fb08c9913ae9aa91e1ca8b6cbf6d2f435ea` |
+| 8 | `def` | [realize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/declarations/realize.md) | 72 | `declaration-track:4f726ddd83f4dfaceec123ad6282146e291c05c6b69a4711224ddc00c561d852` |
+| 9 | `theorem` | [ext_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/declarations/ext-value.md) | 90 | `result-track:b7d13abe21307167fbd881890dc81c58e38a6be5c2b7a8a4d68fa00ebc45ab5e` |
+| 10 | `def` | [localize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/declarations/localize.md) | 97 | `declaration-track:3325e9560a877a2fde933d49a928be99575c21ac636618150bee6d646968d997` |
+| 11 | `theorem` | [chartCoordinate_continuousOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/declarations/chartcoordinate-continuouson.md) | 107 | `result-track:1d1b12bcf527ee0497277e7c0914a1203d31b3a833285fb91ff1a9242c3c1386` |
+| 12 | `theorem` | [continuous_totalSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/declarations/continuous-totalsection.md) | 117 | `result-track:c8ad998a8fb72148945076e3db0a8b6bf413fb9643d0591e5cd1b3f858bf266e` |
+| 13 | `def` | [sectionEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/declarations/sectionequiv.md) | 130 | `declaration-track:eb69822b5e3e32271785319d6f257cdff33a6103b86d312d03c51b4b1201b4b6` |
+| 14 | `def` | [identityTwistedFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/declarations/identitytwistedfamily.md) | 149 | `declaration-track:2bc5f4b24ae26fcbcc640997271eb8541be1ae9466a159dccc6619960e1d91d0` |
+| 15 | `theorem` | [identity_realization_eq_scalar_glue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/declarations/identity-realization-eq-scalar-glue.md) | 161 | `result-track:64100d5fe4617380e926a5945316148afeafef28863f2671e16f717242b98abc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

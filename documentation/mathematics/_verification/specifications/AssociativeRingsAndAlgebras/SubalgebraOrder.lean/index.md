@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/SubalgebraOrder.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/SubalgebraOrder.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraOrder.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraOrder.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [toIsOrderedRing](../../../../AssociativeRingsAndAlgebras/SubalgebraOrder.lean/declarations/toisorderedring.md) | 19 | `declaration-track:64f3a0a974555c4e0a18526fd69e3116b0e5e1f5e8b04a3b2666a3ef0bf64de9` |
-| 2 | `instance` | [toIsStrictOrderedRing](../../../../AssociativeRingsAndAlgebras/SubalgebraOrder.lean/declarations/toisstrictorderedring.md) | 23 | `declaration-track:1807d34c02383ab8bbdc2e96dde3e0d39bcefc50d09f0acfb44bef981526f4f7` |
+| 1 | `instance` | [toIsOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraOrder.lean/declarations/toisorderedring.md) | 19 | `declaration-track:64f3a0a974555c4e0a18526fd69e3116b0e5e1f5e8b04a3b2666a3ef0bf64de9` |
+| 2 | `instance` | [toIsStrictOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraOrder.lean/declarations/toisstrictorderedring.md) | 23 | `declaration-track:1807d34c02383ab8bbdc2e96dde3e0d39bcefc50d09f0acfb44bef981526f4f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

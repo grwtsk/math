@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoprimeDivisorFilter.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoprimeDivisorFilter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoprimeDivisorFilter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoprimeDivisorFilter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sum_moebius_divisors](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoprimeDivisorFilter.lean/declarations/sum-moebius-divisors.md) | 25 | `result-track:b4059dc76d4e6f64f6d31615cacca77152c6d47ea232bfa8c4f013596cb2f33e` |
-| 2 | `theorem` | [sum_moebius_gcd_divisors](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoprimeDivisorFilter.lean/declarations/sum-moebius-gcd-divisors.md) | 35 | `result-track:204727254059e03256acd32f6a82e060ac0568f94cfbae7319ab6f68c478859e` |
-| 3 | `theorem` | [gcd_divisors_eq_filter_Icc](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoprimeDivisorFilter.lean/declarations/gcd-divisors-eq-filter-icc.md) | 43 | `result-track:cdabd956b9e84ff34725b1a4b7bef72022bf2747e9d6a884b7f229401f435fcd` |
-| 4 | `theorem` | [sum_moebius_common_divisors_Icc](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoprimeDivisorFilter.lean/declarations/sum-moebius-common-divisors-icc.md) | 60 | `result-track:32d7e2343d1b3ea6310c0b3ea64edb69eb7e6c4a339aa86e6e25b10026dcadf3` |
+| 1 | `theorem` | [sum_moebius_divisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoprimeDivisorFilter.lean/declarations/sum-moebius-divisors.md) | 25 | `result-track:b4059dc76d4e6f64f6d31615cacca77152c6d47ea232bfa8c4f013596cb2f33e` |
+| 2 | `theorem` | [sum_moebius_gcd_divisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoprimeDivisorFilter.lean/declarations/sum-moebius-gcd-divisors.md) | 35 | `result-track:204727254059e03256acd32f6a82e060ac0568f94cfbae7319ab6f68c478859e` |
+| 3 | `theorem` | [gcd_divisors_eq_filter_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoprimeDivisorFilter.lean/declarations/gcd-divisors-eq-filter-icc.md) | 43 | `result-track:cdabd956b9e84ff34725b1a4b7bef72022bf2747e9d6a884b7f229401f435fcd` |
+| 4 | `theorem` | [sum_moebius_common_divisors_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoprimeDivisorFilter.lean/declarations/sum-moebius-common-divisors-icc.md) | 60 | `result-track:32d7e2343d1b3ea6310c0b3ea64edb69eb7e6c4a339aa86e6e25b10026dcadf3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/CertifiedRemainder.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/CertifiedRemainder.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/CertifiedRemainder.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/CertifiedRemainder.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,13 +61,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedRemainder](../../../../../MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/CertifiedRemainder.lean/declarations/certifiedremainder.md) | 23 | `declaration-track:b3e1b417fa5fc9bf65fd6be5ebbdb28adcebc5809691d6cf2635807009eb976b` |
-| 2 | `def` | [targetShape](../../../../../MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/CertifiedRemainder.lean/declarations/targetshape.md) | 64 | `declaration-track:115f22836a0bfb5e5f44bf548d862289e1ed39afd1e005d012a9ddc347ce23f2` |
-| 3 | `def` | [completedWitness?](../../../../../MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/CertifiedRemainder.lean/declarations/completedwitness.md) | 81 | `declaration-track:8e0f583a7e6d2c8ad9af46906ebfaa4a812ee0ec6a8e486a976e7e06bfef1e5f` |
-| 4 | `def` | [completedProof?](../../../../../MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/CertifiedRemainder.lean/declarations/completedproof.md) | 98 | `declaration-track:db15f3eb68b9083fb56228e27e462e6a43a66078f40e105f1cb7b139dbb0a38f` |
-| 5 | `theorem` | [unresolved_not_discharged](../../../../../MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/CertifiedRemainder.lean/declarations/unresolved-not-discharged.md) | 117 | `result-track:626b00b8799fd6f28d0435bd20b4b539ec3fe94894395b7c5d6a6e8f326f8e2b` |
-| 6 | `theorem` | [target_mem_unresolved_iff_not_discharged](../../../../../MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/CertifiedRemainder.lean/declarations/target-mem-unresolved-iff-not-discharged.md) | 136 | `result-track:2e3beb04d43ba97670f8af710bb1229e283bb374532f85b5a1bbdaabc4703386` |
-| 7 | `theorem` | [target_accounted](../../../../../MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/CertifiedRemainder.lean/declarations/target-accounted.md) | 159 | `result-track:fc1f2ed67610249399de7348b34de321c7f075ebc14d9fed42613c37536df758` |
+| 1 | `structure` | [CertifiedRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/CertifiedRemainder.lean/declarations/certifiedremainder.md) | 23 | `declaration-track:b3e1b417fa5fc9bf65fd6be5ebbdb28adcebc5809691d6cf2635807009eb976b` |
+| 2 | `def` | [targetShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/CertifiedRemainder.lean/declarations/targetshape.md) | 64 | `declaration-track:115f22836a0bfb5e5f44bf548d862289e1ed39afd1e005d012a9ddc347ce23f2` |
+| 3 | `def` | [completedWitness?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/CertifiedRemainder.lean/declarations/completedwitness.md) | 81 | `declaration-track:8e0f583a7e6d2c8ad9af46906ebfaa4a812ee0ec6a8e486a976e7e06bfef1e5f` |
+| 4 | `def` | [completedProof?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/CertifiedRemainder.lean/declarations/completedproof.md) | 98 | `declaration-track:db15f3eb68b9083fb56228e27e462e6a43a66078f40e105f1cb7b139dbb0a38f` |
+| 5 | `theorem` | [unresolved_not_discharged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/CertifiedRemainder.lean/declarations/unresolved-not-discharged.md) | 117 | `result-track:626b00b8799fd6f28d0435bd20b4b539ec3fe94894395b7c5d6a6e8f326f8e2b` |
+| 6 | `theorem` | [target_mem_unresolved_iff_not_discharged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/CertifiedRemainder.lean/declarations/target-mem-unresolved-iff-not-discharged.md) | 136 | `result-track:2e3beb04d43ba97670f8af710bb1229e283bb374532f85b5a1bbdaabc4703386` |
+| 7 | `theorem` | [target_accounted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/CertifiedRemainder.lean/declarations/target-accounted.md) | 159 | `result-track:fc1f2ed67610249399de7348b34de321c7f075ebc14d9fed42613c37536df758` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

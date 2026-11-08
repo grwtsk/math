@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [MetricCarrier](../../../../../ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/declarations/metriccarrier.md) | 17 | `declaration-track:bb2547cb6481d444635cbe306ad65534d0fbf09a0a905b3da010600b838f6504` |
-| 2 | `abbrev` | [ControlledChain](../../../../../ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/declarations/controlledchain.md) | 18 | `declaration-track:415909091c2a7c2512ad38ce5e7f530c2fd2b78b30046a8993a864fd5d728911` |
-| 3 | `def` | [collapse](../../../../../ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/declarations/collapse.md) | 24 | `declaration-track:eb67a2131ec0548a5a0f045856d2639753df78d5e5ae23ea36716ea8d54eaf32` |
-| 4 | `def` | [runReference](../../../../../ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/declarations/runreference.md) | 28 | `declaration-track:97a2fc4fad98437d72d945e747c1aa78fa66bc14e02b94c9cb411932fb8a4ddf` |
-| 5 | `def` | [runImplementation](../../../../../ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/declarations/runimplementation.md) | 33 | `declaration-track:e9d198b34cf7f01a90e00e4d0e2dbf9bef9e4fac427c75ab01d2b035dbb35b97` |
-| 6 | `def` | [profile](../../../../../ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/declarations/profile.md) | 38 | `declaration-track:0a3959612422ca5e3853b8bdb53d60752626f90166078f0d2a05cdda08740a11` |
-| 7 | `theorem` | [final_discrepancy_le](../../../../../ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/declarations/final-discrepancy-le.md) | 42 | `result-track:98a94790e150f05ec6580542f82db780a2d794cc9ab73889ea29d487c314184f` |
-| 8 | `theorem` | [closedForm](../../../../../ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/declarations/closedform.md) | 56 | `result-track:f62b7247bea4d73d7c41b31a0cdf7d919aad1b2062adf587d1353ebc8c69c34b` |
-| 9 | `structure` | [ContinuousBudgetCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/declarations/continuousbudgetcertificate.md) | 72 | `declaration-track:4f96ec58130ef7ddb9f3a16322750310819c7fe812e9a7f517acebc1d5a09f55` |
+| 1 | `abbrev` | [MetricCarrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/declarations/metriccarrier.md) | 17 | `declaration-track:bb2547cb6481d444635cbe306ad65534d0fbf09a0a905b3da010600b838f6504` |
+| 2 | `abbrev` | [ControlledChain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/declarations/controlledchain.md) | 18 | `declaration-track:415909091c2a7c2512ad38ce5e7f530c2fd2b78b30046a8993a864fd5d728911` |
+| 3 | `def` | [collapse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/declarations/collapse.md) | 24 | `declaration-track:eb67a2131ec0548a5a0f045856d2639753df78d5e5ae23ea36716ea8d54eaf32` |
+| 4 | `def` | [runReference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/declarations/runreference.md) | 28 | `declaration-track:97a2fc4fad98437d72d945e747c1aa78fa66bc14e02b94c9cb411932fb8a4ddf` |
+| 5 | `def` | [runImplementation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/declarations/runimplementation.md) | 33 | `declaration-track:e9d198b34cf7f01a90e00e4d0e2dbf9bef9e4fac427c75ab01d2b035dbb35b97` |
+| 6 | `def` | [profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/declarations/profile.md) | 38 | `declaration-track:0a3959612422ca5e3853b8bdb53d60752626f90166078f0d2a05cdda08740a11` |
+| 7 | `theorem` | [final_discrepancy_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/declarations/final-discrepancy-le.md) | 42 | `result-track:98a94790e150f05ec6580542f82db780a2d794cc9ab73889ea29d487c314184f` |
+| 8 | `theorem` | [closedForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/declarations/closedform.md) | 56 | `result-track:f62b7247bea4d73d7c41b31a0cdf7d919aad1b2062adf587d1353ebc8c69c34b` |
+| 9 | `structure` | [ContinuousBudgetCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ControlledChainFinalDiscrepancyLe.lean/declarations/continuousbudgetcertificate.md) | 72 | `declaration-track:4f96ec58130ef7ddb9f3a16322750310819c7fe812e9a7f517acebc1d5a09f55` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

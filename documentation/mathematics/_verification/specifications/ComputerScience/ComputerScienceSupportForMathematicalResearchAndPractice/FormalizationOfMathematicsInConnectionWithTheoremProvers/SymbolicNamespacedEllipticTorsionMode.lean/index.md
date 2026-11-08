@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicNamespacedEllipticTorsionMode.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicNamespacedEllipticTorsionMode.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicNamespacedEllipticTorsionMode.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicNamespacedEllipticTorsionMode.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [EllipticTorsionMode](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicNamespacedEllipticTorsionMode.lean/declarations/elliptictorsionmode.md) | 21 | `declaration-track:b6051d54100ae4c6dbac944762a54c68e34f3166dd874c8904e8d21403ac26a8` |
-| 2 | `def` | [symbolicTorsionLabel](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicNamespacedEllipticTorsionMode.lean/declarations/symbolictorsionlabel.md) | 27 | `declaration-track:e074ce241e3a71844a29fc1e348a0778b9f90692b26b711cb28e67d4047371e9` |
-| 3 | `def` | [finiteKSymbolTorsionAnalogueLabel](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicNamespacedEllipticTorsionMode.lean/declarations/finiteksymboltorsionanaloguelabel.md) | 30 | `declaration-track:15a96deba2a654c7f18f1feb9ea85824e0f00eb59e82cda043aa3f0bc62e6610` |
+| 1 | `inductive` | [EllipticTorsionMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicNamespacedEllipticTorsionMode.lean/declarations/elliptictorsionmode.md) | 21 | `declaration-track:b6051d54100ae4c6dbac944762a54c68e34f3166dd874c8904e8d21403ac26a8` |
+| 2 | `def` | [symbolicTorsionLabel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicNamespacedEllipticTorsionMode.lean/declarations/symbolictorsionlabel.md) | 27 | `declaration-track:e074ce241e3a71844a29fc1e348a0778b9f90692b26b711cb28e67d4047371e9` |
+| 3 | `def` | [finiteKSymbolTorsionAnalogueLabel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicNamespacedEllipticTorsionMode.lean/declarations/finiteksymboltorsionanaloguelabel.md) | 30 | `declaration-track:15a96deba2a654c7f18f1feb9ea85824e0f00eb59e82cda043aa3f0bc62e6610` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

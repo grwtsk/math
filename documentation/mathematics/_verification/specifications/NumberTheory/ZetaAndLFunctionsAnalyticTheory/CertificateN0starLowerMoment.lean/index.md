@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateN0starLowerMoment.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateN0starLowerMoment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateN0starLowerMoment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateN0starLowerMoment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [N0star_lower_moment](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateN0starLowerMoment.lean/declarations/n0star-lower-moment.md) | 24 | `result-track:951f1509ff8d1cba227016e119dbd9cd684ae91659d8d9c583aca5d1549a8619` |
-| 2 | `theorem` | [count_certificate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateN0starLowerMoment.lean/declarations/count-certificate.md) | 39 | `result-track:32254ac44598c8c516a41d9d8501128f98c3e5c46b16518ac72f0c98b9184d4b` |
-| 3 | `theorem` | [count_lower_moment_c3](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateN0starLowerMoment.lean/declarations/count-lower-moment-c3.md) | 92 | `result-track:fa4c311803fab69a58f2d19cf8cc0abe2f7939f76c3e0d1e22f1009894831271` |
+| 1 | `theorem` | [N0star_lower_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateN0starLowerMoment.lean/declarations/n0star-lower-moment.md) | 24 | `result-track:951f1509ff8d1cba227016e119dbd9cd684ae91659d8d9c583aca5d1549a8619` |
+| 2 | `theorem` | [count_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateN0starLowerMoment.lean/declarations/count-certificate.md) | 39 | `result-track:32254ac44598c8c516a41d9d8501128f98c3e5c46b16518ac72f0c98b9184d4b` |
+| 3 | `theorem` | [count_lower_moment_c3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateN0starLowerMoment.lean/declarations/count-lower-moment-c3.md) | 92 | `result-track:fa4c311803fab69a58f2d19cf8cc0abe2f7939f76c3e0d1e22f1009894831271` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceFullXiLeadingPropagation.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceFullXiLeadingPropagation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceFullXiLeadingPropagation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceFullXiLeadingPropagation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_leading_upper_of_literal_full_Xi](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceFullXiLeadingPropagation.lean/declarations/actual-leading-upper-of-literal-full-xi.md) | 19 | `result-track:46e8f1f399fa1a8e74f8f92cc2e01045e36730f2949bea722c922d0066d1e516` |
-| 2 | `theorem` | [actual_leading_upper_of_literal_full_Xi_signed_pairing](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceFullXiLeadingPropagation.lean/declarations/actual-leading-upper-of-literal-full-xi-signed-pairing.md) | 31 | `result-track:14a33b601604d9ca1d6f5b91285b55dc0688af73a41d210a6085c03496f17b57` |
+| 1 | `theorem` | [actual_leading_upper_of_literal_full_Xi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceFullXiLeadingPropagation.lean/declarations/actual-leading-upper-of-literal-full-xi.md) | 19 | `result-track:46e8f1f399fa1a8e74f8f92cc2e01045e36730f2949bea722c922d0066d1e516` |
+| 2 | `theorem` | [actual_leading_upper_of_literal_full_Xi_signed_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceFullXiLeadingPropagation.lean/declarations/actual-leading-upper-of-literal-full-xi-signed-pairing.md) | 31 | `result-track:14a33b601604d9ca1d6f5b91285b55dc0688af73a41d210a6085c03496f17b57` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

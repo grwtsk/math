@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TriangularBlock.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TriangularBlock.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TriangularBlock.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TriangularBlock.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [gain](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TriangularBlock.lean/declarations/gain.md) | 14 | `declaration-track:9ab1a3d0775ec038d7cb3cf4cf155bc61de9eb053f7fa4b7af752f40bf39d69f` |
-| 2 | `lemma` | [gain_nonnegative](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TriangularBlock.lean/declarations/gain-nonnegative.md) | 16 | `result-track:c41b592e4b59b99145cc59c92c84037c6f769e66b885cda40571cc65788dfc3d` |
-| 3 | `lemma` | [gain_equation](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TriangularBlock.lean/declarations/gain-equation.md) | 20 | `result-track:3646449c0a7a5310b69023b6159658e50b1d4f44911c2257bf650c8fdb7343fb` |
-| 4 | `theorem` | [scalar_square_bound](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TriangularBlock.lean/declarations/scalar-square-bound.md) | 26 | `result-track:63fd5a06b7b4883ee1cf09e08b4525be9a293cdcb8b47ffba926d0903100e565` |
-| 5 | `theorem` | [gain_square_bound](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TriangularBlock.lean/declarations/gain-square-bound.md) | 40 | `result-track:1a56a5ce253f5077012f379df9b981807c363187d832ee52920f6684ef902ad9` |
-| 6 | `theorem` | [component_square_bound](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TriangularBlock.lean/declarations/component-square-bound.md) | 53 | `result-track:a7519246223eb04627861f0a3ee03c767f108cf632ebbe7b165e1e72794d839c` |
-| 7 | `theorem` | [operator_square_bound](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TriangularBlock.lean/declarations/operator-square-bound.md) | 64 | `result-track:94230fb017f37016b49ead40691d4ddbb2453ba7d03936c904898061b07783e1` |
+| 1 | `def` | [gain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TriangularBlock.lean/declarations/gain.md) | 14 | `declaration-track:9ab1a3d0775ec038d7cb3cf4cf155bc61de9eb053f7fa4b7af752f40bf39d69f` |
+| 2 | `lemma` | [gain_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TriangularBlock.lean/declarations/gain-nonnegative.md) | 16 | `result-track:c41b592e4b59b99145cc59c92c84037c6f769e66b885cda40571cc65788dfc3d` |
+| 3 | `lemma` | [gain_equation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TriangularBlock.lean/declarations/gain-equation.md) | 20 | `result-track:3646449c0a7a5310b69023b6159658e50b1d4f44911c2257bf650c8fdb7343fb` |
+| 4 | `theorem` | [scalar_square_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TriangularBlock.lean/declarations/scalar-square-bound.md) | 26 | `result-track:63fd5a06b7b4883ee1cf09e08b4525be9a293cdcb8b47ffba926d0903100e565` |
+| 5 | `theorem` | [gain_square_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TriangularBlock.lean/declarations/gain-square-bound.md) | 40 | `result-track:1a56a5ce253f5077012f379df9b981807c363187d832ee52920f6684ef902ad9` |
+| 6 | `theorem` | [component_square_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TriangularBlock.lean/declarations/component-square-bound.md) | 53 | `result-track:a7519246223eb04627861f0a3ee03c767f108cf632ebbe7b165e1e72794d839c` |
+| 7 | `theorem` | [operator_square_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TriangularBlock.lean/declarations/operator-square-bound.md) | 64 | `result-track:94230fb017f37016b49ead40691d4ddbb2453ba7d03936c904898061b07783e1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

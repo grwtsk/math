@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/WholeSelectionAndLookup.lean/index.md) · [Full source](../../../../Combinatorics/WholeSelectionAndLookup.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholeSelectionAndLookup.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholeSelectionAndLookup.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -66,13 +66,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [selectedMaskListCount](../../../../Combinatorics/WholeSelectionAndLookup.lean/declarations/selectedmasklistcount.md) | 43 | `declaration-track:4c68e3af464e086656e8249498ade9cbf20f7cae432ed9828c69730fc382a4df` |
-| 2 | `def` | [normalizedMaskListWeights](../../../../Combinatorics/WholeSelectionAndLookup.lean/declarations/normalizedmasklistweights.md) | 47 | `declaration-track:1b672fa2d5f71c9c796fa109238b96f687eda71d59a1981c5760e84e731c8a85` |
-| 3 | `def` | [selectedCarrierOwners](../../../../Combinatorics/WholeSelectionAndLookup.lean/declarations/selectedcarrierowners.md) | 53 | `declaration-track:74e5f00ddcc3a86847780656587de4a5b0566abd38dd781eb163d477774c850d` |
-| 4 | `structure` | [CarrierOwnershipResult](../../../../Combinatorics/WholeSelectionAndLookup.lean/declarations/carrierownershipresult.md) | 60 | `declaration-track:6677b351d5e28dd3908e1f467365a38ebdd05b85368714c4e4f09e104960046d` |
-| 5 | `def` | [CarrierOwnershipResult.Coherent](../../../../Combinatorics/WholeSelectionAndLookup.lean/declarations/carrierownershipresult-coherent.md) | 69 | `declaration-track:7432df8b7a7ea114e02e03c179b4a83bc7e942d106a1830e53e23f724b3e1a80` |
-| 6 | `instance` | [carrierOwnershipResultCoherentDecidable](../../../../Combinatorics/WholeSelectionAndLookup.lean/declarations/carrierownershipresultcoherentdecidable.md) | 77 | `declaration-track:69f3911c5db75cdcb802917f7cc3a4893b2752ae249a4bfb47e2ea04ce8af33c` |
-| 7 | `def` | [CarrierOwnershipResult.ownerSelection](../../../../Combinatorics/WholeSelectionAndLookup.lean/declarations/carrierownershipresult-ownerselection.md) | 86 | `declaration-track:3ab22c70c0bffcbf6beb5557d91d5d2d500da536e5e0c904661060ee21bd3e92` |
+| 1 | `def` | [selectedMaskListCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholeSelectionAndLookup.lean/declarations/selectedmasklistcount.md) | 43 | `declaration-track:4c68e3af464e086656e8249498ade9cbf20f7cae432ed9828c69730fc382a4df` |
+| 2 | `def` | [normalizedMaskListWeights](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholeSelectionAndLookup.lean/declarations/normalizedmasklistweights.md) | 47 | `declaration-track:1b672fa2d5f71c9c796fa109238b96f687eda71d59a1981c5760e84e731c8a85` |
+| 3 | `def` | [selectedCarrierOwners](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholeSelectionAndLookup.lean/declarations/selectedcarrierowners.md) | 53 | `declaration-track:74e5f00ddcc3a86847780656587de4a5b0566abd38dd781eb163d477774c850d` |
+| 4 | `structure` | [CarrierOwnershipResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholeSelectionAndLookup.lean/declarations/carrierownershipresult.md) | 60 | `declaration-track:6677b351d5e28dd3908e1f467365a38ebdd05b85368714c4e4f09e104960046d` |
+| 5 | `def` | [CarrierOwnershipResult.Coherent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholeSelectionAndLookup.lean/declarations/carrierownershipresult-coherent.md) | 69 | `declaration-track:7432df8b7a7ea114e02e03c179b4a83bc7e942d106a1830e53e23f724b3e1a80` |
+| 6 | `instance` | [carrierOwnershipResultCoherentDecidable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholeSelectionAndLookup.lean/declarations/carrierownershipresultcoherentdecidable.md) | 77 | `declaration-track:69f3911c5db75cdcb802917f7cc3a4893b2752ae249a4bfb47e2ea04ce8af33c` |
+| 7 | `def` | [CarrierOwnershipResult.ownerSelection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholeSelectionAndLookup.lean/declarations/carrierownershipresult-ownerselection.md) | 86 | `declaration-track:3ab22c70c0bffcbf6beb5557d91d5d2d500da536e5e0c904661060ee21bd3e92` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

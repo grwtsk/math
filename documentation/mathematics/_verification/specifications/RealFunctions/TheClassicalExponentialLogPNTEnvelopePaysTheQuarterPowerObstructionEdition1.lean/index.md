@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/TheClassicalExponentialLogPNTEnvelopePaysTheQuarterPowerObstructionEdition1.lean/index.md) · [Full source](../../../../RealFunctions/TheClassicalExponentialLogPNTEnvelopePaysTheQuarterPowerObstructionEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheClassicalExponentialLogPNTEnvelopePaysTheQuarterPowerObstructionEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheClassicalExponentialLogPNTEnvelopePaysTheQuarterPowerObstructionEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [envelope](../../../../RealFunctions/TheClassicalExponentialLogPNTEnvelopePaysTheQuarterPowerObstructionEdition1.lean/declarations/envelope.md) | 23 | `declaration-track:20b49a6f349be5ef4148e7b8609f13a0e0daa48a2d51d6ec33decb05cc758bd1` |
-| 2 | `def` | [entrance](../../../../RealFunctions/TheClassicalExponentialLogPNTEnvelopePaysTheQuarterPowerObstructionEdition1.lean/declarations/entrance.md) | 28 | `declaration-track:93b0c14b89b7099ac22d1090d41cd7e4ca46b5d0dba9f891948d861fc0256f30` |
-| 3 | `theorem` | [classical_pnt_envelope_dominates_quarter_power](../../../../RealFunctions/TheClassicalExponentialLogPNTEnvelopePaysTheQuarterPowerObstructionEdition1.lean/declarations/classical-pnt-envelope-dominates-quarter-power.md) | 30 | `result-track:6dbd03ce0d0053e0345de191edcdf3c9a5873728557768fb98af6dbfb23c4e43` |
-| 4 | `theorem` | [full_source_window_has_quarter_envelope](../../../../RealFunctions/TheClassicalExponentialLogPNTEnvelopePaysTheQuarterPowerObstructionEdition1.lean/declarations/full-source-window-has-quarter-envelope.md) | 43 | `result-track:76f02a925079a13dfe6305088438e80ccb3c5db19d7c575acfd6822244d3139a` |
-| 5 | `theorem` | [classical_source_window_payment_integrable](../../../../RealFunctions/TheClassicalExponentialLogPNTEnvelopePaysTheQuarterPowerObstructionEdition1.lean/declarations/classical-source-window-payment-integrable.md) | 59 | `result-track:2f82bd439c11369bf86a7762bc4f564603ae3d3853885379d60ce751b9c826fc` |
+| 1 | `def` | [envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheClassicalExponentialLogPNTEnvelopePaysTheQuarterPowerObstructionEdition1.lean/declarations/envelope.md) | 23 | `declaration-track:20b49a6f349be5ef4148e7b8609f13a0e0daa48a2d51d6ec33decb05cc758bd1` |
+| 2 | `def` | [entrance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheClassicalExponentialLogPNTEnvelopePaysTheQuarterPowerObstructionEdition1.lean/declarations/entrance.md) | 28 | `declaration-track:93b0c14b89b7099ac22d1090d41cd7e4ca46b5d0dba9f891948d861fc0256f30` |
+| 3 | `theorem` | [classical_pnt_envelope_dominates_quarter_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheClassicalExponentialLogPNTEnvelopePaysTheQuarterPowerObstructionEdition1.lean/declarations/classical-pnt-envelope-dominates-quarter-power.md) | 30 | `result-track:6dbd03ce0d0053e0345de191edcdf3c9a5873728557768fb98af6dbfb23c4e43` |
+| 4 | `theorem` | [full_source_window_has_quarter_envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheClassicalExponentialLogPNTEnvelopePaysTheQuarterPowerObstructionEdition1.lean/declarations/full-source-window-has-quarter-envelope.md) | 43 | `result-track:76f02a925079a13dfe6305088438e80ccb3c5db19d7c575acfd6822244d3139a` |
+| 5 | `theorem` | [classical_source_window_payment_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheClassicalExponentialLogPNTEnvelopePaysTheQuarterPowerObstructionEdition1.lean/declarations/classical-source-window-payment-integrable.md) | 59 | `result-track:2f82bd439c11369bf86a7762bc4f564603ae3d3853885379d60ce751b9c826fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

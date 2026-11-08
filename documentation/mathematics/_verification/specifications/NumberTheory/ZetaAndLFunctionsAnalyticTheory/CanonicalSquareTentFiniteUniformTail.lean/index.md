@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentFiniteUniformTail.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentFiniteUniformTail.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentFiniteUniformTail.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentFiniteUniformTail.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentZetaApproximation`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentZetaApproximation.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentZetaApproximation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentZetaApproximation.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finite_test_tail_uniform](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentFiniteUniformTail.lean/declarations/finite-test-tail-uniform.md) | 44 | `result-track:7f95548de5a65e81a9630dbe58cd042bfd442b59cc3d48a2fc86898ca3af609b` |
-| 2 | `theorem` | [finite_test_signed_and_real_comparison](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentFiniteUniformTail.lean/declarations/finite-test-signed-and-real-comparison.md) | 73 | `result-track:389cac08e69b1ae1f112066aa87ce094c39c78a8d81b0499ec890a32e0430f68` |
-| 3 | `def` | [movingSpike](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentFiniteUniformTail.lean/declarations/movingspike.md) | 94 | `declaration-track:5c11e3e1cc76084b3162df4f14b71d7822e45004ccbb81bfa433cf96b1638cf5` |
-| 4 | `theorem` | [movingSpike_pointwise_vanishes](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentFiniteUniformTail.lean/declarations/movingspike-pointwise-vanishes.md) | 98 | `result-track:5512c2e76fe680629340db6e7ef3e41bb4e41ce618f945955592a978282951a8` |
-| 5 | `theorem` | [movingSpike_no_global_cutoff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentFiniteUniformTail.lean/declarations/movingspike-no-global-cutoff.md) | 108 | `result-track:a6b1e0a50b4834ea6da100c3f79d48c0336bbb73b61af418f3081d38ae5c9005` |
+| 1 | `theorem` | [finite_test_tail_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentFiniteUniformTail.lean/declarations/finite-test-tail-uniform.md) | 44 | `result-track:7f95548de5a65e81a9630dbe58cd042bfd442b59cc3d48a2fc86898ca3af609b` |
+| 2 | `theorem` | [finite_test_signed_and_real_comparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentFiniteUniformTail.lean/declarations/finite-test-signed-and-real-comparison.md) | 73 | `result-track:389cac08e69b1ae1f112066aa87ce094c39c78a8d81b0499ec890a32e0430f68` |
+| 3 | `def` | [movingSpike](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentFiniteUniformTail.lean/declarations/movingspike.md) | 94 | `declaration-track:5c11e3e1cc76084b3162df4f14b71d7822e45004ccbb81bfa433cf96b1638cf5` |
+| 4 | `theorem` | [movingSpike_pointwise_vanishes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentFiniteUniformTail.lean/declarations/movingspike-pointwise-vanishes.md) | 98 | `result-track:5512c2e76fe680629340db6e7ef3e41bb4e41ce618f945955592a978282951a8` |
+| 5 | `theorem` | [movingSpike_no_global_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentFiniteUniformTail.lean/declarations/movingspike-no-global-cutoff.md) | 108 | `result-track:a6b1e0a50b4834ea6da100c3f79d48c0336bbb73b61af418f3081d38ae5c9005` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

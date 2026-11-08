@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArithmeticEnhancementNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArithmeticEnhancementNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArithmeticEnhancementNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArithmeticEnhancementNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ArithmeticQuotientData](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArithmeticEnhancementNamespaced.lean/declarations/arithmeticquotientdata.md) | 24 | `declaration-track:e1bc6a774e5f0cb7cb334022b91b20c54e44ba97373bfce0826515f81a53e79f` |
-| 2 | `structure` | [HeckeEigenstructure](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArithmeticEnhancementNamespaced.lean/declarations/heckeeigenstructure.md) | 37 | `declaration-track:7ace1cce9cf4e0aef2c832e1e322df3e3ce195dce740096711a253c86f44c0a9` |
-| 3 | `structure` | [ArithmeticEnhancement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArithmeticEnhancementNamespaced.lean/declarations/arithmeticenhancement.md) | 56 | `declaration-track:ddc9424f34f94b898bb38450f92965258e16be5e184f784618a060dcf6d40c2a` |
-| 4 | `structure` | [AutomorphicCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArithmeticEnhancementNamespaced.lean/declarations/automorphiccertificate.md) | 63 | `declaration-track:4ee1faf308d7b13eed08a7ff3e57c1849b891fde3a7930804c978760f7d2c685` |
-| 5 | `structure` | [ArithmeticEssentialityCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArithmeticEnhancementNamespaced.lean/declarations/arithmeticessentialitycertificate.md) | 71 | `declaration-track:5e571ffca2fc5ddd153615f96c4ec1a284185fa377935a9fda35dd41b562fcc2` |
-| 6 | `theorem` | [ArithmeticEssentialityCertificate.not_isomorphic](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArithmeticEnhancementNamespaced.lean/declarations/arithmeticessentialitycertificate-not-isomorphic.md) | 84 | `result-track:73a3b0ba1e2f2d09a555356a66d0e7a9d790f1826ee5c4ec358a41560d73b0c8` |
-| 7 | `theorem` | [ArithmeticEssentialityCertificate.changes_invariant](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArithmeticEnhancementNamespaced.lean/declarations/changes-invariant.md) | 95 | `result-track:a18bc45541537db172843e8021925243f7281bf2e4f6b7b28a6513b98bd19ba9` |
+| 1 | `structure` | [ArithmeticQuotientData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArithmeticEnhancementNamespaced.lean/declarations/arithmeticquotientdata.md) | 24 | `declaration-track:e1bc6a774e5f0cb7cb334022b91b20c54e44ba97373bfce0826515f81a53e79f` |
+| 2 | `structure` | [HeckeEigenstructure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArithmeticEnhancementNamespaced.lean/declarations/heckeeigenstructure.md) | 37 | `declaration-track:7ace1cce9cf4e0aef2c832e1e322df3e3ce195dce740096711a253c86f44c0a9` |
+| 3 | `structure` | [ArithmeticEnhancement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArithmeticEnhancementNamespaced.lean/declarations/arithmeticenhancement.md) | 56 | `declaration-track:ddc9424f34f94b898bb38450f92965258e16be5e184f784618a060dcf6d40c2a` |
+| 4 | `structure` | [AutomorphicCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArithmeticEnhancementNamespaced.lean/declarations/automorphiccertificate.md) | 63 | `declaration-track:4ee1faf308d7b13eed08a7ff3e57c1849b891fde3a7930804c978760f7d2c685` |
+| 5 | `structure` | [ArithmeticEssentialityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArithmeticEnhancementNamespaced.lean/declarations/arithmeticessentialitycertificate.md) | 71 | `declaration-track:5e571ffca2fc5ddd153615f96c4ec1a284185fa377935a9fda35dd41b562fcc2` |
+| 6 | `theorem` | [ArithmeticEssentialityCertificate.not_isomorphic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArithmeticEnhancementNamespaced.lean/declarations/arithmeticessentialitycertificate-not-isomorphic.md) | 84 | `result-track:73a3b0ba1e2f2d09a555356a66d0e7a9d790f1826ee5c4ec358a41560d73b0c8` |
+| 7 | `theorem` | [ArithmeticEssentialityCertificate.changes_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArithmeticEnhancementNamespaced.lean/declarations/changes-invariant.md) | 95 | `result-track:a18bc45541537db172843e8021925243f7281bf2e4f6b7b28a6513b98bd19ba9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

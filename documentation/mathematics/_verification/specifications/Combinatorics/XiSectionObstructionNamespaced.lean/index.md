@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/XiSectionObstructionNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/XiSectionObstructionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiSectionObstructionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiSectionObstructionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thetaPhi_gaussian_weight_le](../../../../Combinatorics/XiSectionObstructionNamespaced.lean/declarations/thetaphi-gaussian-weight-le.md) | 32 | `result-track:b241dbe8a2c0a6a305e031e395cdf9e79337e9cd64b5b8947a9e0fc69630057c` |
-| 2 | `theorem` | [coefficient_factorial_bound](../../../../Combinatorics/XiSectionObstructionNamespaced.lean/declarations/coefficient-factorial-bound.md) | 50 | `result-track:f37b1df6c376de204a1d37d3580d92391a3e367502929c637ac1c562d00a8dfe` |
-| 3 | `theorem` | [coefficient_ratio_frequently_large](../../../../Combinatorics/XiSectionObstructionNamespaced.lean/declarations/coefficient-ratio-frequently-large.md) | 94 | `result-track:aee7081eefc1a94ea56835af59a68ad302def4ceb50b678b4847311f25bb63a2` |
-| 4 | `lemma` | [re_multiset_sum](../../../../Combinatorics/XiSectionObstructionNamespaced.lean/declarations/re-multiset-sum.md) | 120 | `result-track:95fcb1246003ead920290160fec5a59d0c5edce321b014a386fa0e384a17bb00` |
-| 5 | `lemma` | [esymm_one_eq_sum](../../../../Combinatorics/XiSectionObstructionNamespaced.lean/declarations/esymm-one-eq-sum.md) | 125 | `result-track:7bfbc9b28ebf42441a6fff00bc35d7dc38f02e404e6ebcc87da7b773bac1a565` |
-| 6 | `lemma` | [multiset_cs](../../../../Combinatorics/XiSectionObstructionNamespaced.lean/declarations/multiset-cs.md) | 128 | `result-track:63c5f43a815bc019c6f8657e46a1844eb08d27301573b9ea5ab1cbfc4c0ca5aa` |
-| 7 | `lemma` | [sum_strip_lower](../../../../Combinatorics/XiSectionObstructionNamespaced.lean/declarations/sum-strip-lower.md) | 148 | `result-track:768e9200a8bf933baa402f3a10fffc15a2d71e0e9bb1abd5eb0100eea2685e1b` |
-| 8 | `theorem` | [sectionPolynomial_roots_sum](../../../../Combinatorics/XiSectionObstructionNamespaced.lean/declarations/sectionpolynomial-roots-sum.md) | 162 | `result-track:b16a59d7b43095eefa1f3f64eafb5187791cb9d04e504b0fc84166a411a86508` |
-| 9 | `theorem` | [spectralSection_strip_necessary](../../../../Combinatorics/XiSectionObstructionNamespaced.lean/declarations/spectralsection-strip-necessary.md) | 179 | `result-track:da709c5926c4d5996b5da90913aa61e0dc3403a0012820c72098f7c00e08ea91` |
-| 10 | `theorem` | [spectralSection_zeros_away_frequently](../../../../Combinatorics/XiSectionObstructionNamespaced.lean/declarations/spectralsection-zeros-away-frequently.md) | 235 | `result-track:2c95e9bfd517e3f73015188a36789ce1039ad953b0595866b080be0304dcce94` |
-| 11 | `theorem` | [spectralSection_no_vanishing_strip](../../../../Combinatorics/XiSectionObstructionNamespaced.lean/declarations/spectralsection-no-vanishing-strip.md) | 250 | `result-track:463ed06095087691e96ac07826f06b62257511d0fd5eee42f4199a19c8f2a228` |
+| 1 | `theorem` | [thetaPhi_gaussian_weight_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiSectionObstructionNamespaced.lean/declarations/thetaphi-gaussian-weight-le.md) | 32 | `result-track:b241dbe8a2c0a6a305e031e395cdf9e79337e9cd64b5b8947a9e0fc69630057c` |
+| 2 | `theorem` | [coefficient_factorial_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiSectionObstructionNamespaced.lean/declarations/coefficient-factorial-bound.md) | 50 | `result-track:f37b1df6c376de204a1d37d3580d92391a3e367502929c637ac1c562d00a8dfe` |
+| 3 | `theorem` | [coefficient_ratio_frequently_large](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiSectionObstructionNamespaced.lean/declarations/coefficient-ratio-frequently-large.md) | 94 | `result-track:aee7081eefc1a94ea56835af59a68ad302def4ceb50b678b4847311f25bb63a2` |
+| 4 | `lemma` | [re_multiset_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiSectionObstructionNamespaced.lean/declarations/re-multiset-sum.md) | 120 | `result-track:95fcb1246003ead920290160fec5a59d0c5edce321b014a386fa0e384a17bb00` |
+| 5 | `lemma` | [esymm_one_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiSectionObstructionNamespaced.lean/declarations/esymm-one-eq-sum.md) | 125 | `result-track:7bfbc9b28ebf42441a6fff00bc35d7dc38f02e404e6ebcc87da7b773bac1a565` |
+| 6 | `lemma` | [multiset_cs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiSectionObstructionNamespaced.lean/declarations/multiset-cs.md) | 128 | `result-track:63c5f43a815bc019c6f8657e46a1844eb08d27301573b9ea5ab1cbfc4c0ca5aa` |
+| 7 | `lemma` | [sum_strip_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiSectionObstructionNamespaced.lean/declarations/sum-strip-lower.md) | 148 | `result-track:768e9200a8bf933baa402f3a10fffc15a2d71e0e9bb1abd5eb0100eea2685e1b` |
+| 8 | `theorem` | [sectionPolynomial_roots_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiSectionObstructionNamespaced.lean/declarations/sectionpolynomial-roots-sum.md) | 162 | `result-track:b16a59d7b43095eefa1f3f64eafb5187791cb9d04e504b0fc84166a411a86508` |
+| 9 | `theorem` | [spectralSection_strip_necessary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiSectionObstructionNamespaced.lean/declarations/spectralsection-strip-necessary.md) | 179 | `result-track:da709c5926c4d5996b5da90913aa61e0dc3403a0012820c72098f7c00e08ea91` |
+| 10 | `theorem` | [spectralSection_zeros_away_frequently](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiSectionObstructionNamespaced.lean/declarations/spectralsection-zeros-away-frequently.md) | 235 | `result-track:2c95e9bfd517e3f73015188a36789ce1039ad953b0595866b080be0304dcce94` |
+| 11 | `theorem` | [spectralSection_no_vanishing_strip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiSectionObstructionNamespaced.lean/declarations/spectralsection-no-vanishing-strip.md) | 250 | `result-track:463ed06095087691e96ac07826f06b62257511d0fd5eee42f4199a19c8f2a228` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

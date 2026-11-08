@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.BernoulliMellinRecurrence`](../../../../../../MeasureAndIntegration/BernoulliMellinRecurrence.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.EndpointCorrectedJet`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointCorrectedJet.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.BernoulliMellinRecurrence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BernoulliMellinRecurrence.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.EndpointCorrectedJet`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointCorrectedJet.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fract_eq_nat_fraction](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/declarations/fract-eq-nat-fraction.md) | 30 | `result-track:a48e13b83396dd7d9b920f60e8191d2b7ff821d3ec3766f9e845a002cab1c744` |
-| 2 | `theorem` | [fractional_tail_split](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/declarations/fractional-tail-split.md) | 38 | `result-track:1dee4c1abf52159adcd83dddd3c172559742c8589f7a3ae90f3f064f88f5551f` |
-| 3 | `theorem` | [half_endpoint_source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/declarations/half-endpoint-source.md) | 69 | `result-track:0bc73fa715eef7ab6255dbbbd29c6bcc1068aae4726b24b55727ff083fc713ee` |
-| 4 | `theorem` | [scaled_step](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/declarations/scaled-step.md) | 88 | `result-track:f4b88fa6ede87603e1db1c45abd1466a83ec0568a0ba8c852c9ea0f18dc435d8` |
-| 5 | `theorem` | [correction_step](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/declarations/correction-step.md) | 108 | `result-track:fbb90a899232a649d586a9c4de324da58ab3b83315806e53d633b0ac494370a1` |
-| 6 | `theorem` | [even_to_odd](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/declarations/even-to-odd.md) | 119 | `result-track:b9fb4a6143931845bc80a73fbfe59779ef310daed0601163fb8282d55ee5ff36` |
-| 7 | `theorem` | [source_residual_succ](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/declarations/source-residual-succ.md) | 128 | `result-track:282dda01bce0ca1dccb2eebf8ddf827117da53078a2e2d1f1967d8b57d2e7cda` |
-| 8 | `theorem` | [remainder_sixteen_bound](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/declarations/remainder-sixteen-bound.md) | 151 | `result-track:45edfb38b7ca32fe779b1540aa19eee0136defd780b4cbc87677f98cfa5fd397` |
+| 1 | `theorem` | [fract_eq_nat_fraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/declarations/fract-eq-nat-fraction.md) | 30 | `result-track:a48e13b83396dd7d9b920f60e8191d2b7ff821d3ec3766f9e845a002cab1c744` |
+| 2 | `theorem` | [fractional_tail_split](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/declarations/fractional-tail-split.md) | 38 | `result-track:1dee4c1abf52159adcd83dddd3c172559742c8589f7a3ae90f3f064f88f5551f` |
+| 3 | `theorem` | [half_endpoint_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/declarations/half-endpoint-source.md) | 69 | `result-track:0bc73fa715eef7ab6255dbbbd29c6bcc1068aae4726b24b55727ff083fc713ee` |
+| 4 | `theorem` | [scaled_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/declarations/scaled-step.md) | 88 | `result-track:f4b88fa6ede87603e1db1c45abd1466a83ec0568a0ba8c852c9ea0f18dc435d8` |
+| 5 | `theorem` | [correction_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/declarations/correction-step.md) | 108 | `result-track:fbb90a899232a649d586a9c4de324da58ab3b83315806e53d633b0ac494370a1` |
+| 6 | `theorem` | [even_to_odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/declarations/even-to-odd.md) | 119 | `result-track:b9fb4a6143931845bc80a73fbfe59779ef310daed0601163fb8282d55ee5ff36` |
+| 7 | `theorem` | [source_residual_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/declarations/source-residual-succ.md) | 128 | `result-track:282dda01bce0ca1dccb2eebf8ddf827117da53078a2e2d1f1967d8b57d2e7cda` |
+| 8 | `theorem` | [remainder_sixteen_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliResidual.lean/declarations/remainder-sixteen-bound.md) | 151 | `result-track:45edfb38b7ca32fe779b1540aa19eee0136defd780b4cbc87677f98cfa5fd397` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

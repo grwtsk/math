@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IntegralClosureAlgebraDefsNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IntegralClosureAlgebraDefsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegralClosureAlgebraDefsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegralClosureAlgebraDefsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Algebra.IsIntegral](../../../../CommutativeAlgebra/IntegralClosureAlgebraDefsNamespaced.lean/declarations/algebra-isintegral.md) | 40 | `declaration-track:80249a4bbc5dbd0ff370cf13473df000a295c2b9b1c81877cbeea61ca692c5e2` |
-| 2 | `lemma` | [Algebra.isIntegral_def](../../../../CommutativeAlgebra/IntegralClosureAlgebraDefsNamespaced.lean/declarations/algebra-isintegral-def.md) | 45 | `result-track:060376d4c054c76f6fe8e3c41b9e8e8a33430a615a09c4c99c3fe6eebf8bfc1e` |
+| 1 | `class` | [Algebra.IsIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegralClosureAlgebraDefsNamespaced.lean/declarations/algebra-isintegral.md) | 40 | `declaration-track:80249a4bbc5dbd0ff370cf13473df000a295c2b9b1c81877cbeea61ca692c5e2` |
+| 2 | `lemma` | [Algebra.isIntegral_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegralClosureAlgebraDefsNamespaced.lean/declarations/algebra-isintegral-def.md) | 45 | `result-track:060376d4c054c76f6fe8e3c41b9e8e8a33430a615a09c4c99c3fe6eebf8bfc1e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

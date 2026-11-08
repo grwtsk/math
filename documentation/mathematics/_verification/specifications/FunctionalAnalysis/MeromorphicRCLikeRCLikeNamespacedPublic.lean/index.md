@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/MeromorphicRCLikeRCLikeNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/MeromorphicRCLikeRCLikeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MeromorphicRCLikeRCLikeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MeromorphicRCLikeRCLikeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Meromorphic.exists_meromorphicOrderAt_ne_top_iff_forall](../../../../FunctionalAnalysis/MeromorphicRCLikeRCLikeNamespacedPublic.lean/declarations/meromorphic-exists-meromorphicorderat-ne-top-iff-forall.md) | 37 | `result-track:bf46ce478a45fe7474a323069cf604cb1e6eba93ea5ee9e4aa7ddda58df9d25c` |
+| 1 | `theorem` | [Meromorphic.exists_meromorphicOrderAt_ne_top_iff_forall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MeromorphicRCLikeRCLikeNamespacedPublic.lean/declarations/meromorphic-exists-meromorphicorderat-ne-top-iff-forall.md) | 37 | `result-track:bf46ce478a45fe7474a323069cf604cb1e6eba93ea5ee9e4aa7ddda58df9d25c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

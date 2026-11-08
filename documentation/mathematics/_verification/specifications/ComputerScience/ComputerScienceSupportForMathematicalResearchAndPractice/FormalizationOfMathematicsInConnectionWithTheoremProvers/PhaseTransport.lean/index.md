@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseTransport.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PhaseTransport](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseTransport.lean/declarations/phasetransport.md) | 11 | `declaration-track:45a51c77dea248bc1dabc8c13912ecdff01c63b00acb5604330279b220988ecf` |
-| 2 | `def` | [DeflectionPath.transportResidue](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseTransport.lean/declarations/deflectionpath-transportresidue.md) | 35 | `declaration-track:72532badaee715e84c361d4ba6af11b39932aa469cfcf75342b7dae5ac1510cd` |
-| 3 | `theorem` | [DeflectionPath.transportResidue_safe](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseTransport.lean/declarations/deflectionpath-transportresidue-safe.md) | 45 | `result-track:a8dc956508097119201e4345c52e19f178472a62e29b671d547ba8f9ebc7c9e9` |
-| 4 | `theorem` | [PhaseTransport.defectLoop_reflects](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseTransport.lean/declarations/phasetransport-defectloop-reflects.md) | 57 | `result-track:b4b8492eef07926b7e32f693e2d8d41b03481690d58eb4994098afdd95a016e5` |
+| 1 | `structure` | [PhaseTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseTransport.lean/declarations/phasetransport.md) | 11 | `declaration-track:45a51c77dea248bc1dabc8c13912ecdff01c63b00acb5604330279b220988ecf` |
+| 2 | `def` | [DeflectionPath.transportResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseTransport.lean/declarations/deflectionpath-transportresidue.md) | 35 | `declaration-track:72532badaee715e84c361d4ba6af11b39932aa469cfcf75342b7dae5ac1510cd` |
+| 3 | `theorem` | [DeflectionPath.transportResidue_safe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseTransport.lean/declarations/deflectionpath-transportresidue-safe.md) | 45 | `result-track:a8dc956508097119201e4345c52e19f178472a62e29b671d547ba8f9ebc7c9e9` |
+| 4 | `theorem` | [PhaseTransport.defectLoop_reflects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseTransport.lean/declarations/phasetransport-defectloop-reflects.md) | 57 | `result-track:b4b8492eef07926b7e32f693e2d8d41b03481690d58eb4994098afdd95a016e5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

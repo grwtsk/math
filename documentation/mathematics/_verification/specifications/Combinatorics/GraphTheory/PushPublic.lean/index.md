@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/PushPublic.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/PushPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Push](../../../../../Combinatorics/GraphTheory/PushPublic.lean/declarations/push.md) | 29 | `declaration-track:5534ec5fe40b9bbe8d3c22ab1d18ccc41514f7f9ae55b9014dcc0da2691f0ff7` |
-| 2 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/PushPublic.lean/declarations/instance.md) | 32 | `declaration-track:ab59d1c8d9ff730f3cca600ed5235268a0039500fd33d6a62cd114a51032eb20` |
-| 3 | `inductive` | [PushQuiver](../../../../../Combinatorics/GraphTheory/PushPublic.lean/declarations/pushquiver.md) | 36 | `declaration-track:122078c808e7b85fe6fc13398ca22f170e3284a9216fd3df80d636c1bf497a36` |
-| 4 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/PushPublic.lean/declarations/instance-source-edition-2.md) | 39 | `declaration-track:af08cc560bef49de42e19790b2b0b3f84873183701df71282781e8b485aafb54` |
-| 5 | `def` | [of](../../../../../Combinatorics/GraphTheory/PushPublic.lean/declarations/of.md) | 45 | `declaration-track:4e8322fed3c04acde2e0f329def9e6a63c49675febd29fc771bd2fbe1452d91d` |
-| 6 | `theorem` | [of_obj](../../../../../Combinatorics/GraphTheory/PushPublic.lean/declarations/of-obj.md) | 50 | `result-track:df3125a8c0ef8ab1ed868696c859872fbb3e0f83e23f99739820cc095c4eb1d3` |
-| 7 | `def` | [lift](../../../../../Combinatorics/GraphTheory/PushPublic.lean/declarations/lift.md) | 58 | `declaration-track:53668f3fe749ad0f46cdf0c1728185c588ddef2c8eec39ae814c743878a23730` |
-| 8 | `theorem` | [lift_obj](../../../../../Combinatorics/GraphTheory/PushPublic.lean/declarations/lift-obj.md) | 65 | `result-track:3f168ab9fee9981960d28a2eb826c8cb5003c52f66e718af36690d1afd55dc40` |
-| 9 | `theorem` | [lift_comp](../../../../../Combinatorics/GraphTheory/PushPublic.lean/declarations/lift-comp.md) | 68 | `result-track:cf1f625a28bd3382cb608eeb12d2448e40f84de62af2ffeab27c9b87ec971110` |
-| 10 | `theorem` | [lift_unique](../../../../../Combinatorics/GraphTheory/PushPublic.lean/declarations/lift-unique.md) | 80 | `result-track:bc373a69caddbf8ecb634f673ade9840a82ed0497b06ace3f132bddfe6097056` |
+| 1 | `def` | [Push](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushPublic.lean/declarations/push.md) | 29 | `declaration-track:5534ec5fe40b9bbe8d3c22ab1d18ccc41514f7f9ae55b9014dcc0da2691f0ff7` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushPublic.lean/declarations/instance.md) | 32 | `declaration-track:ab59d1c8d9ff730f3cca600ed5235268a0039500fd33d6a62cd114a51032eb20` |
+| 3 | `inductive` | [PushQuiver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushPublic.lean/declarations/pushquiver.md) | 36 | `declaration-track:122078c808e7b85fe6fc13398ca22f170e3284a9216fd3df80d636c1bf497a36` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushPublic.lean/declarations/instance-source-edition-2.md) | 39 | `declaration-track:af08cc560bef49de42e19790b2b0b3f84873183701df71282781e8b485aafb54` |
+| 5 | `def` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushPublic.lean/declarations/of.md) | 45 | `declaration-track:4e8322fed3c04acde2e0f329def9e6a63c49675febd29fc771bd2fbe1452d91d` |
+| 6 | `theorem` | [of_obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushPublic.lean/declarations/of-obj.md) | 50 | `result-track:df3125a8c0ef8ab1ed868696c859872fbb3e0f83e23f99739820cc095c4eb1d3` |
+| 7 | `def` | [lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushPublic.lean/declarations/lift.md) | 58 | `declaration-track:53668f3fe749ad0f46cdf0c1728185c588ddef2c8eec39ae814c743878a23730` |
+| 8 | `theorem` | [lift_obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushPublic.lean/declarations/lift-obj.md) | 65 | `result-track:3f168ab9fee9981960d28a2eb826c8cb5003c52f66e718af36690d1afd55dc40` |
+| 9 | `theorem` | [lift_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushPublic.lean/declarations/lift-comp.md) | 68 | `result-track:cf1f625a28bd3382cb608eeb12d2448e40f84de62af2ffeab27c9b87ec971110` |
+| 10 | `theorem` | [lift_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushPublic.lean/declarations/lift-unique.md) | 80 | `result-track:bc373a69caddbf8ecb634f673ade9840a82ed0497b06ace3f132bddfe6097056` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

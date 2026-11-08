@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/HalfPlaneNamespaced.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/HalfPlaneNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HalfPlaneNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HalfPlaneNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isOpen_re_lt_EReal](../../../../FunctionsOfAComplexVariable/HalfPlaneNamespaced.lean/declarations/isopen-re-lt-ereal.md) | 29 | `result-track:c7f59bcabb138ba362d7f6609affb8ef33ca2062bea4c378b94fa0eb6deeeb9e` |
-| 2 | `lemma` | [isOpen_re_gt_EReal](../../../../FunctionsOfAComplexVariable/HalfPlaneNamespaced.lean/declarations/isopen-re-gt-ereal.md) | 34 | `result-track:4c6219cb8962cc1e4cef81b5c89a4a6dcfbbb57e983c5115c42c8c48f31c69ed` |
-| 3 | `lemma` | [isOpen_im_lt_EReal](../../../../FunctionsOfAComplexVariable/HalfPlaneNamespaced.lean/declarations/isopen-im-lt-ereal.md) | 39 | `result-track:c0cc27992118f24fabe266d07460edebd3d9efedac61b704596c90ae0a692eaa` |
-| 4 | `lemma` | [isOpen_im_gt_EReal](../../../../FunctionsOfAComplexVariable/HalfPlaneNamespaced.lean/declarations/isopen-im-gt-ereal.md) | 44 | `result-track:95cad5529ed5622adecb85d1569c7aef57d2c1ef541e5ac9f9e555c02058666e` |
+| 1 | `lemma` | [isOpen_re_lt_EReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HalfPlaneNamespaced.lean/declarations/isopen-re-lt-ereal.md) | 29 | `result-track:c7f59bcabb138ba362d7f6609affb8ef33ca2062bea4c378b94fa0eb6deeeb9e` |
+| 2 | `lemma` | [isOpen_re_gt_EReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HalfPlaneNamespaced.lean/declarations/isopen-re-gt-ereal.md) | 34 | `result-track:4c6219cb8962cc1e4cef81b5c89a4a6dcfbbb57e983c5115c42c8c48f31c69ed` |
+| 3 | `lemma` | [isOpen_im_lt_EReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HalfPlaneNamespaced.lean/declarations/isopen-im-lt-ereal.md) | 39 | `result-track:c0cc27992118f24fabe266d07460edebd3d9efedac61b704596c90ae0a692eaa` |
+| 4 | `lemma` | [isOpen_im_gt_EReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HalfPlaneNamespaced.lean/declarations/isopen-im-gt-ereal.md) | 44 | `result-track:95cad5529ed5622adecb85d1569c7aef57d2c1ef541e5ac9f9e555c02058666e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

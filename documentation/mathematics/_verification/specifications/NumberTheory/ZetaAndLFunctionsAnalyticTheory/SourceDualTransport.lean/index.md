@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDualTransport.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDualTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDualTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDualTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [angle_loop_inverse](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDualTransport.lean/declarations/angle-loop-inverse.md) | 31 | `result-track:d4dc0d96692134b565b327d6f80cf96c24ee9410ec656822ec46d8a49e4b1a12` |
-| 2 | `theorem` | [actual_site_loop_gauge](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDualTransport.lean/declarations/actual-site-loop-gauge.md) | 39 | `result-track:7e757ab92587535dc2f14473202ea6f8472b4ff060eb0a7a4f57b650f42dae07` |
-| 3 | `theorem` | [actual_chart_loop_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDualTransport.lean/declarations/actual-chart-loop-identity.md) | 46 | `result-track:abad6f8263b00b4461916c95fb6746a240e94e8f577286007e684d7b7acf7c1b` |
+| 1 | `theorem` | [angle_loop_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDualTransport.lean/declarations/angle-loop-inverse.md) | 31 | `result-track:d4dc0d96692134b565b327d6f80cf96c24ee9410ec656822ec46d8a49e4b1a12` |
+| 2 | `theorem` | [actual_site_loop_gauge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDualTransport.lean/declarations/actual-site-loop-gauge.md) | 39 | `result-track:7e757ab92587535dc2f14473202ea6f8472b4ff060eb0a7a4f57b650f42dae07` |
+| 3 | `theorem` | [actual_chart_loop_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDualTransport.lean/declarations/actual-chart-loop-identity.md) | 46 | `result-track:abad6f8263b00b4461916c95fb6746a240e94e8f577286007e684d7b7acf7c1b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

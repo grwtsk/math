@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mkFinCons](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/declarations/mkfincons.md) | 48 | `declaration-track:a3b7366e3a150eef3eef1ca87c9a470eccde6350ce511dc837f0630d4a9decfb` |
-| 2 | `theorem` | [coe_mkFinCons](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/declarations/coe-mkfincons.md) | 64 | `result-track:4451dd06aebed4908c558309c87046a5207416dae3cc74bca2bd5728f2bbd8f0` |
-| 3 | `def` | [mkFinConsOfLE](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/declarations/mkfinconsofle.md) | 73 | `declaration-track:4da40eae692371c890ca8c483519305448dc342ab268a8f290f5d96273d4c532` |
-| 4 | `theorem` | [coe_mkFinConsOfLE](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/declarations/coe-mkfinconsofle.md) | 81 | `result-track:f0cf7b454dad355a7e782fc1b18edcdb38a0d9ca7099a9613a4e25a1a2ca155f` |
-| 5 | `def` | [finTwoProd](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/declarations/fintwoprod.md) | 89 | `declaration-track:e6acf21dfc5f333b20264417bfd3617fd41a89259a8fa19af635dea31b7cc30b` |
-| 6 | `theorem` | [finTwoProd_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/declarations/fintwoprod-zero.md) | 93 | `result-track:082b336830f6663d99f3f233b772873511bd45a61ec9dd08d761b14ae31e516d` |
-| 7 | `theorem` | [finTwoProd_one](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/declarations/fintwoprod-one.md) | 97 | `result-track:3774ca11b712f83d382ecfc9316a2e79c1335783240ae7f885f008e3de2a9bde` |
-| 8 | `theorem` | [coe_finTwoProd_repr](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/declarations/coe-fintwoprod-repr.md) | 101 | `result-track:2b49af596b29497e8760efee462038f763a9b27fb36fd51b71949394e4c3b04e` |
+| 1 | `def` | [mkFinCons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/declarations/mkfincons.md) | 48 | `declaration-track:a3b7366e3a150eef3eef1ca87c9a470eccde6350ce511dc837f0630d4a9decfb` |
+| 2 | `theorem` | [coe_mkFinCons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/declarations/coe-mkfincons.md) | 64 | `result-track:4451dd06aebed4908c558309c87046a5207416dae3cc74bca2bd5728f2bbd8f0` |
+| 3 | `def` | [mkFinConsOfLE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/declarations/mkfinconsofle.md) | 73 | `declaration-track:4da40eae692371c890ca8c483519305448dc342ab268a8f290f5d96273d4c532` |
+| 4 | `theorem` | [coe_mkFinConsOfLE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/declarations/coe-mkfinconsofle.md) | 81 | `result-track:f0cf7b454dad355a7e782fc1b18edcdb38a0d9ca7099a9613a4e25a1a2ca155f` |
+| 5 | `def` | [finTwoProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/declarations/fintwoprod.md) | 89 | `declaration-track:e6acf21dfc5f333b20264417bfd3617fd41a89259a8fa19af635dea31b7cc30b` |
+| 6 | `theorem` | [finTwoProd_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/declarations/fintwoprod-zero.md) | 93 | `result-track:082b336830f6663d99f3f233b772873511bd45a61ec9dd08d761b14ae31e516d` |
+| 7 | `theorem` | [finTwoProd_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/declarations/fintwoprod-one.md) | 97 | `result-track:3774ca11b712f83d382ecfc9316a2e79c1335783240ae7f885f008e3de2a9bde` |
+| 8 | `theorem` | [coe_finTwoProd_repr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisFinNamespaced.lean/declarations/coe-fintwoprod-repr.md) | 101 | `result-track:2b49af596b29497e8760efee462038f763a9b27fb36fd51b71949394e4c3b04e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpZModuleEquivalenceZModuleEquivalenceNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpZModuleEquivalenceZModuleEquivalenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpZModuleEquivalenceZModuleEquivalenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpZModuleEquivalenceZModuleEquivalenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [forget₂_addCommGroup_full](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpZModuleEquivalenceZModuleEquivalenceNamespaced.lean/declarations/forget-addcommgroup-full.md) | 35 | `declaration-track:6e2313eba0302c7c5da7313cac76f726c96173947816dc9ed8a6681671e9a71e` |
-| 2 | `instance` | [forget₂_addCommGrp_essSurj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpZModuleEquivalenceZModuleEquivalenceNamespaced.lean/declarations/forget-addcommgrp-esssurj.md) | 49 | `declaration-track:200e970416542cdab7a5c9c063405b3a20b507a3a594a8a70ba087c3e2b5a81d` |
-| 3 | `instance` | [forget₂AddCommGroupIsEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpZModuleEquivalenceZModuleEquivalenceNamespaced.lean/declarations/forget-addcommgroupisequivalence.md) | 55 | `declaration-track:8ebec1e9bb60167eb68854ae95e1f0198e7426d5594e2328caeaef9d196d86f6` |
+| 1 | `instance` | [forget₂_addCommGroup_full](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpZModuleEquivalenceZModuleEquivalenceNamespaced.lean/declarations/forget-addcommgroup-full.md) | 35 | `declaration-track:6e2313eba0302c7c5da7313cac76f726c96173947816dc9ed8a6681671e9a71e` |
+| 2 | `instance` | [forget₂_addCommGrp_essSurj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpZModuleEquivalenceZModuleEquivalenceNamespaced.lean/declarations/forget-addcommgrp-esssurj.md) | 49 | `declaration-track:200e970416542cdab7a5c9c063405b3a20b507a3a594a8a70ba087c3e2b5a81d` |
+| 3 | `instance` | [forget₂AddCommGroupIsEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpZModuleEquivalenceZModuleEquivalenceNamespaced.lean/declarations/forget-addcommgroupisequivalence.md) | 55 | `declaration-track:8ebec1e9bb60167eb68854ae95e1f0198e7426d5594e2328caeaef9d196d86f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcreteEuclideanOperatorConsumers.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcreteEuclideanOperatorConsumers.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcreteEuclideanOperatorConsumers.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcreteEuclideanOperatorConsumers.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [intrinsicControlledPivot_normalization_bound](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcreteEuclideanOperatorConsumers.lean/declarations/intrinsiccontrolledpivot-normalization-bound.md) | 19 | `result-track:1b36f996fe49887d45ed5a2bc1bbcc9362181f8f6532fd85c653f68c9a282ddb` |
-| 2 | `theorem` | [intrinsicControlledPivot_transition_bounds](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcreteEuclideanOperatorConsumers.lean/declarations/intrinsiccontrolledpivot-transition-bounds.md) | 27 | `result-track:56bc89efd9bd71d178ac9a609d39e7b391aace0aad0c55bcfbeaabba77f22535` |
-| 3 | `theorem` | [intrinsicPlane_controlled_normalization_budget](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcreteEuclideanOperatorConsumers.lean/declarations/intrinsicplane-controlled-normalization-budget.md) | 38 | `result-track:5a5f6f99c8d4ee7dcdf33dfee0cd664d9b36bfae0e48b6d631bf4eaffe61d1ad` |
-| 4 | `theorem` | [line_atlas_controlled_normalization](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcreteEuclideanOperatorConsumers.lean/declarations/line-atlas-controlled-normalization.md) | 52 | `result-track:cce89e88d68b145f54611d0060b3ea15de5964a7b4d2ef514e5f399768b480d3` |
+| 1 | `theorem` | [intrinsicControlledPivot_normalization_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcreteEuclideanOperatorConsumers.lean/declarations/intrinsiccontrolledpivot-normalization-bound.md) | 19 | `result-track:1b36f996fe49887d45ed5a2bc1bbcc9362181f8f6532fd85c653f68c9a282ddb` |
+| 2 | `theorem` | [intrinsicControlledPivot_transition_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcreteEuclideanOperatorConsumers.lean/declarations/intrinsiccontrolledpivot-transition-bounds.md) | 27 | `result-track:56bc89efd9bd71d178ac9a609d39e7b391aace0aad0c55bcfbeaabba77f22535` |
+| 3 | `theorem` | [intrinsicPlane_controlled_normalization_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcreteEuclideanOperatorConsumers.lean/declarations/intrinsicplane-controlled-normalization-budget.md) | 38 | `result-track:5a5f6f99c8d4ee7dcdf33dfee0cd664d9b36bfae0e48b6d631bf4eaffe61d1ad` |
+| 4 | `theorem` | [line_atlas_controlled_normalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConcreteEuclideanOperatorConsumers.lean/declarations/line-atlas-controlled-normalization.md) | 52 | `result-track:cce89e88d68b145f54611d0060b3ea15de5964a7b4d2ef514e5f399768b480d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

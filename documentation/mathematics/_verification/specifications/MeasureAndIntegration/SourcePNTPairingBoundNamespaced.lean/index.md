@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [correlationBudget](../../../../MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/declarations/correlationbudget.md) | 24 | `declaration-track:c12dd258c009e5f2785d64be9d8e7e2325f1e73017e36fce4bddf5396d7f7995` |
-| 2 | `theorem` | [correlationBudget_nonneg](../../../../MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/declarations/correlationbudget-nonneg.md) | 26 | `result-track:72acc3d928be2deb5deff121e12d74976096080607543eeca8db1b0b38656ad8` |
-| 3 | `theorem` | [correlationDifference_uniform](../../../../MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/declarations/correlationdifference-uniform.md) | 30 | `result-track:eccc2fc50ff850362a03ff181c6d0379d351a302f386fa9cdc134c2ea3e477a8` |
-| 4 | `theorem` | [sourcePairing_intervalIntegrable](../../../../MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/declarations/sourcepairing-intervalintegrable.md) | 36 | `result-track:f831379decc005b451f02d3cea63b3eff7d2973baaf27342c944f328eb0b12ba` |
-| 5 | `theorem` | [exp_half_intervalIntegral](../../../../MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/declarations/exp-half-intervalintegral.md) | 51 | `result-track:8c2e717cbb38b23ced37f09ec2bda6442f53255e0c2a436b95d036911ad10704` |
-| 6 | `theorem` | [source_integrand_bound](../../../../MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/declarations/source-integrand-bound.md) | 58 | `result-track:60296ca3d0f152d1a52466fd03378f8e35618ca34a384df34692aeeb076f4558` |
-| 7 | `theorem` | [source_interval_bound](../../../../MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/declarations/source-interval-bound.md) | 74 | `result-track:79202ea35b3ad32352ec0d413ad35c1a9d82cdf324b11fa2fcce6c00aaecc3f0` |
-| 8 | `theorem` | [signedPairing_bound](../../../../MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/declarations/signedpairing-bound.md) | 91 | `result-track:65581a238ca702e3822fd3660cc373209873efa20a5a844b892c638cbb508e7b` |
-| 9 | `theorem` | [signedPairing_eventual_bound](../../../../MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/declarations/signedpairing-eventual-bound.md) | 125 | `result-track:2c7a562bdeba49c5986d7da51320a9fba9367ef72304a9e78c87f71a87dc8ed3` |
+| 1 | `def` | [correlationBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/declarations/correlationbudget.md) | 24 | `declaration-track:c12dd258c009e5f2785d64be9d8e7e2325f1e73017e36fce4bddf5396d7f7995` |
+| 2 | `theorem` | [correlationBudget_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/declarations/correlationbudget-nonneg.md) | 26 | `result-track:72acc3d928be2deb5deff121e12d74976096080607543eeca8db1b0b38656ad8` |
+| 3 | `theorem` | [correlationDifference_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/declarations/correlationdifference-uniform.md) | 30 | `result-track:eccc2fc50ff850362a03ff181c6d0379d351a302f386fa9cdc134c2ea3e477a8` |
+| 4 | `theorem` | [sourcePairing_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/declarations/sourcepairing-intervalintegrable.md) | 36 | `result-track:f831379decc005b451f02d3cea63b3eff7d2973baaf27342c944f328eb0b12ba` |
+| 5 | `theorem` | [exp_half_intervalIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/declarations/exp-half-intervalintegral.md) | 51 | `result-track:8c2e717cbb38b23ced37f09ec2bda6442f53255e0c2a436b95d036911ad10704` |
+| 6 | `theorem` | [source_integrand_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/declarations/source-integrand-bound.md) | 58 | `result-track:60296ca3d0f152d1a52466fd03378f8e35618ca34a384df34692aeeb076f4558` |
+| 7 | `theorem` | [source_interval_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/declarations/source-interval-bound.md) | 74 | `result-track:79202ea35b3ad32352ec0d413ad35c1a9d82cdf324b11fa2fcce6c00aaecc3f0` |
+| 8 | `theorem` | [signedPairing_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/declarations/signedpairing-bound.md) | 91 | `result-track:65581a238ca702e3822fd3660cc373209873efa20a5a844b892c638cbb508e7b` |
+| 9 | `theorem` | [signedPairing_eventual_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundNamespaced.lean/declarations/signedpairing-eventual-bound.md) | 125 | `result-track:2c7a562bdeba49c5986d7da51320a9fba9367ef72304a9e78c87f71a87dc8ed3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

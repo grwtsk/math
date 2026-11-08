@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.EllipticCurve.WeierstrassOrderOneTorsion`](../../../../../CommutativeAlgebra/WeierstrassOrderOneTorsion.lean/index.md) — import line 10; pinned internal source present.
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetIndex`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.EllipticCurve.WeierstrassOrderOneTorsion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeierstrassOrderOneTorsion.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetIndex`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyIntegralJetIndex.lean/index.md) — import line 11; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [fixedTriple](../../../../../NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/fixedtriple.md) | 22 | `declaration-track:258e4cbb6d10bebed8111845e2274ec9d628a0b43625b1273fd07c1173c52a87` |
-| 2 | `theorem` | [fixed_coefficients](../../../../../NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/fixed-coefficients.md) | 25 | `result-track:8947761ff1f2491d703b95df7a2bbd0487aef50c85743879806fc30b50e24431` |
-| 3 | `def` | [fixedSourceEquiv](../../../../../NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/fixedsourceequiv.md) | 31 | `declaration-track:f284a766500497c9f30c2dd9d8adbdf5eb60da00caa96409193e3d8f8f714e4d` |
-| 4 | `def` | [fixedTorsionClass](../../../../../NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/fixedtorsionclass.md) | 41 | `declaration-track:9eef28192e383a5bfb330dc6350937f4a6d1f76f2cc939fd880b1cf7ba88661c` |
-| 5 | `theorem` | [fixedTorsionClass_ne_zero](../../../../../NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/fixedtorsionclass-ne-zero.md) | 45 | `result-track:745c81fdeaa17a2b02e358b543e9923f387ca317cb3f31b21c3a038cb1c9c28a` |
-| 6 | `theorem` | [three_nsmul_fixedTorsionClass](../../../../../NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/three-nsmul-fixedtorsionclass.md) | 53 | `result-track:6b4c6172507c91fbe9972d1df3c7caaac89d7eba47227f291cbe472cbf9c081f` |
-| 7 | `theorem` | [fixedTorsionClass_addOrder](../../../../../NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/fixedtorsionclass-addorder.md) | 63 | `result-track:552c195ef62613b2afc6ba1c3125b96cb1e6d7a79ec67c6082038035159870e9` |
-| 8 | `theorem` | [fixed_rational_branch_zero](../../../../../NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/fixed-rational-branch-zero.md) | 69 | `result-track:2cddcf7aed8f11e1b98928920a207a9a7e2625ebaad70c08c41fb908ad5643cf` |
-| 9 | `theorem` | [fixed_source_map_not_injective](../../../../../NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/fixed-source-map-not-injective.md) | 74 | `result-track:9ec8bd60eddfeb19c2dc99801d4a1f4047904a5319a91ba88e1a2b8e8e4d283c` |
-| 10 | `theorem` | [fixed_image_index_order_four](../../../../../NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/fixed-image-index-order-four.md) | 91 | `result-track:0e47d1dbff331200ca2632343c01ea32ec1afbaaa056729179e9edcb46a28988` |
+| 1 | `abbrev` | [fixedTriple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/fixedtriple.md) | 22 | `declaration-track:258e4cbb6d10bebed8111845e2274ec9d628a0b43625b1273fd07c1173c52a87` |
+| 2 | `theorem` | [fixed_coefficients](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/fixed-coefficients.md) | 25 | `result-track:8947761ff1f2491d703b95df7a2bbd0487aef50c85743879806fc30b50e24431` |
+| 3 | `def` | [fixedSourceEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/fixedsourceequiv.md) | 31 | `declaration-track:f284a766500497c9f30c2dd9d8adbdf5eb60da00caa96409193e3d8f8f714e4d` |
+| 4 | `def` | [fixedTorsionClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/fixedtorsionclass.md) | 41 | `declaration-track:9eef28192e383a5bfb330dc6350937f4a6d1f76f2cc939fd880b1cf7ba88661c` |
+| 5 | `theorem` | [fixedTorsionClass_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/fixedtorsionclass-ne-zero.md) | 45 | `result-track:745c81fdeaa17a2b02e358b543e9923f387ca317cb3f31b21c3a038cb1c9c28a` |
+| 6 | `theorem` | [three_nsmul_fixedTorsionClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/three-nsmul-fixedtorsionclass.md) | 53 | `result-track:6b4c6172507c91fbe9972d1df3c7caaac89d7eba47227f291cbe472cbf9c081f` |
+| 7 | `theorem` | [fixedTorsionClass_addOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/fixedtorsionclass-addorder.md) | 63 | `result-track:552c195ef62613b2afc6ba1c3125b96cb1e6d7a79ec67c6082038035159870e9` |
+| 8 | `theorem` | [fixed_rational_branch_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/fixed-rational-branch-zero.md) | 69 | `result-track:2cddcf7aed8f11e1b98928920a207a9a7e2625ebaad70c08c41fb908ad5643cf` |
+| 9 | `theorem` | [fixed_source_map_not_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/fixed-source-map-not-injective.md) | 74 | `result-track:9ec8bd60eddfeb19c2dc99801d4a1f4047904a5319a91ba88e1a2b8e8e4d283c` |
+| 10 | `theorem` | [fixed_image_index_order_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/declarations/fixed-image-index-order-four.md) | 91 | `result-track:0e47d1dbff331200ca2632343c01ea32ec1afbaaa056729179e9edcb46a28988` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

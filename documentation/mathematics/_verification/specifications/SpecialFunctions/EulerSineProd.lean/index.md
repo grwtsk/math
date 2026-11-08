@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/EulerSineProd.lean/index.md) · [Full source](../../../../SpecialFunctions/EulerSineProd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/EulerSineProd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/EulerSineProd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [antideriv_cos_comp_const_mul](../../../../SpecialFunctions/EulerSineProd.lean/declarations/antideriv-cos-comp-const-mul.md) | 37 | `result-track:fe024086cec7919615d9f72dfd7b479f349bd421bbcdbfd52bc3432b754a3883` |
-| 2 | `theorem` | [antideriv_sin_comp_const_mul](../../../../SpecialFunctions/EulerSineProd.lean/declarations/antideriv-sin-comp-const-mul.md) | 46 | `result-track:607348ab2218ac7bdd45718ab1794ae1bc6e45918df56dd3d96f86cb068af75f` |
-| 3 | `theorem` | [integral_cos_mul_cos_pow_aux](../../../../SpecialFunctions/EulerSineProd.lean/declarations/integral-cos-mul-cos-pow-aux.md) | 55 | `result-track:7a2f1d2b8626d56a331588e1683092e7c48fad46453ecaaa16177bd5f75b3d37` |
-| 4 | `theorem` | [integral_sin_mul_sin_mul_cos_pow_eq](../../../../SpecialFunctions/EulerSineProd.lean/declarations/integral-sin-mul-sin-mul-cos-pow-eq.md) | 83 | `result-track:ccee4a3ece4263a61502074a30f69cc035f129c70e5f05f36effded3178c5964` |
-| 5 | `theorem` | [integral_cos_mul_cos_pow](../../../../SpecialFunctions/EulerSineProd.lean/declarations/integral-cos-mul-cos-pow.md) | 145 | `result-track:f2e9f5c887066e5baa0f0ab9d2e3fc21d57126eb3f2c9af1df3c3ca9ae9b4abc` |
-| 6 | `theorem` | [integral_cos_mul_cos_pow_even](../../../../SpecialFunctions/EulerSineProd.lean/declarations/integral-cos-mul-cos-pow-even.md) | 158 | `result-track:2f79cbf32169434e1b0886cae5765894df95d40e6d3ce3f6dc75ef4a47a28cac` |
-| 7 | `theorem` | [integral_cos_pow_eq](../../../../SpecialFunctions/EulerSineProd.lean/declarations/integral-cos-pow-eq.md) | 173 | `result-track:03786c2707b43ad87bfd75e930cfffab47d19aed79d9c3241884cc24c42ace66` |
-| 8 | `theorem` | [integral_cos_pow_pos](../../../../SpecialFunctions/EulerSineProd.lean/declarations/integral-cos-pow-pos.md) | 192 | `result-track:5afcc656da4fa76a888b85fb535d7cb21a8014f7454e9da1740c3bcb873ce2a4` |
-| 9 | `theorem` | [sin_pi_mul_eq](../../../../SpecialFunctions/EulerSineProd.lean/declarations/sin-pi-mul-eq.md) | 197 | `result-track:0cdf390e1c1d1fe52dc87bb34227753c96d853157a4db1649a64fb3bba62394d` |
-| 10 | `theorem` | [tendsto_integral_cos_pow_mul_div](../../../../SpecialFunctions/EulerSineProd.lean/declarations/tendsto-integral-cos-pow-mul-div.md) | 266 | `result-track:5c5811354dad5d3d2f455749e16bbcaaa274c44855932a88b0d2fa58ad759ade` |
-| 11 | `theorem` | [_root_.Complex.tendsto_euler_sin_prod](../../../../SpecialFunctions/EulerSineProd.lean/declarations/root-complex-tendsto-euler-sin-prod.md) | 286 | `result-track:cbdba877716f08e7d96c6445808903c0c455077f895da8399a9a91b3add8428c` |
-| 12 | `theorem` | [_root_.Real.tendsto_euler_sin_prod](../../../../SpecialFunctions/EulerSineProd.lean/declarations/root-real-tendsto-euler-sin-prod.md) | 311 | `result-track:593f21a341f9fc516e7137e904a950836b04728b46efff10859311310f81da91` |
+| 1 | `theorem` | [antideriv_cos_comp_const_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/EulerSineProd.lean/declarations/antideriv-cos-comp-const-mul.md) | 37 | `result-track:fe024086cec7919615d9f72dfd7b479f349bd421bbcdbfd52bc3432b754a3883` |
+| 2 | `theorem` | [antideriv_sin_comp_const_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/EulerSineProd.lean/declarations/antideriv-sin-comp-const-mul.md) | 46 | `result-track:607348ab2218ac7bdd45718ab1794ae1bc6e45918df56dd3d96f86cb068af75f` |
+| 3 | `theorem` | [integral_cos_mul_cos_pow_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/EulerSineProd.lean/declarations/integral-cos-mul-cos-pow-aux.md) | 55 | `result-track:7a2f1d2b8626d56a331588e1683092e7c48fad46453ecaaa16177bd5f75b3d37` |
+| 4 | `theorem` | [integral_sin_mul_sin_mul_cos_pow_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/EulerSineProd.lean/declarations/integral-sin-mul-sin-mul-cos-pow-eq.md) | 83 | `result-track:ccee4a3ece4263a61502074a30f69cc035f129c70e5f05f36effded3178c5964` |
+| 5 | `theorem` | [integral_cos_mul_cos_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/EulerSineProd.lean/declarations/integral-cos-mul-cos-pow.md) | 145 | `result-track:f2e9f5c887066e5baa0f0ab9d2e3fc21d57126eb3f2c9af1df3c3ca9ae9b4abc` |
+| 6 | `theorem` | [integral_cos_mul_cos_pow_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/EulerSineProd.lean/declarations/integral-cos-mul-cos-pow-even.md) | 158 | `result-track:2f79cbf32169434e1b0886cae5765894df95d40e6d3ce3f6dc75ef4a47a28cac` |
+| 7 | `theorem` | [integral_cos_pow_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/EulerSineProd.lean/declarations/integral-cos-pow-eq.md) | 173 | `result-track:03786c2707b43ad87bfd75e930cfffab47d19aed79d9c3241884cc24c42ace66` |
+| 8 | `theorem` | [integral_cos_pow_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/EulerSineProd.lean/declarations/integral-cos-pow-pos.md) | 192 | `result-track:5afcc656da4fa76a888b85fb535d7cb21a8014f7454e9da1740c3bcb873ce2a4` |
+| 9 | `theorem` | [sin_pi_mul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/EulerSineProd.lean/declarations/sin-pi-mul-eq.md) | 197 | `result-track:0cdf390e1c1d1fe52dc87bb34227753c96d853157a4db1649a64fb3bba62394d` |
+| 10 | `theorem` | [tendsto_integral_cos_pow_mul_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/EulerSineProd.lean/declarations/tendsto-integral-cos-pow-mul-div.md) | 266 | `result-track:5c5811354dad5d3d2f455749e16bbcaaa274c44855932a88b0d2fa58ad759ade` |
+| 11 | `theorem` | [_root_.Complex.tendsto_euler_sin_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/EulerSineProd.lean/declarations/root-complex-tendsto-euler-sin-prod.md) | 286 | `result-track:cbdba877716f08e7d96c6445808903c0c455077f895da8399a9a91b3add8428c` |
+| 12 | `theorem` | [_root_.Real.tendsto_euler_sin_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/EulerSineProd.lean/declarations/root-real-tendsto-euler-sin-prod.md) | 311 | `result-track:593f21a341f9fc516e7137e904a950836b04728b46efff10859311310f81da91` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

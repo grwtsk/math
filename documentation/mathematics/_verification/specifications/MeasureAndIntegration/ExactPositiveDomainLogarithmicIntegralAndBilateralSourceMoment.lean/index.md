@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ExactPositiveDomainLogarithmicIntegralAndBilateralSourceMoment.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ExactPositiveDomainLogarithmicIntegralAndBilateralSourceMoment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactPositiveDomainLogarithmicIntegralAndBilateralSourceMoment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactPositiveDomainLogarithmicIntegralAndBilateralSourceMoment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_logarithmic_integral_exact](../../../../MeasureAndIntegration/ExactPositiveDomainLogarithmicIntegralAndBilateralSourceMoment.lean/declarations/actual-logarithmic-integral-exact.md) | 24 | `result-track:74ae93d9fae1a4a309b343e3e7d5b56da0298392dd44d23c3aff2b2d7c4a090a` |
-| 2 | `theorem` | [actual_full_moment_retains_negative_half](../../../../MeasureAndIntegration/ExactPositiveDomainLogarithmicIntegralAndBilateralSourceMoment.lean/declarations/actual-full-moment-retains-negative-half.md) | 46 | `result-track:29e127ec582a897cd2f1ad72d48e609dab181029808238f8b8b4dec035954467` |
+| 1 | `theorem` | [actual_logarithmic_integral_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactPositiveDomainLogarithmicIntegralAndBilateralSourceMoment.lean/declarations/actual-logarithmic-integral-exact.md) | 24 | `result-track:74ae93d9fae1a4a309b343e3e7d5b56da0298392dd44d23c3aff2b2d7c4a090a` |
+| 2 | `theorem` | [actual_full_moment_retains_negative_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactPositiveDomainLogarithmicIntegralAndBilateralSourceMoment.lean/declarations/actual-full-moment-retains-negative-half.md) | 46 | `result-track:29e127ec582a897cd2f1ad72d48e609dab181029808238f8b8b4dec035954467` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

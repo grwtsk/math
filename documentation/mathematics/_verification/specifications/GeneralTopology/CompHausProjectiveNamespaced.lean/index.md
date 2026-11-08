@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CompHausProjectiveNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/CompHausProjectiveNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausProjectiveNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausProjectiveNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [projective_ultrafilter](../../../../GeneralTopology/CompHausProjectiveNamespaced.lean/declarations/projective-ultrafilter.md) | 45 | `declaration-track:9c7872ac07e4866e65deb82de5389ffcf276822d284796d4f9e12b5378668ed4` |
-| 2 | `def` | [projectivePresentation](../../../../GeneralTopology/CompHausProjectiveNamespaced.lean/declarations/projectivepresentation.md) | 62 | `declaration-track:142dd08efff041b25f8d50fb6fe7545c039d308c1185a43661e9f359b3ed515b` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/CompHausProjectiveNamespaced.lean/declarations/instance.md) | 70 | `declaration-track:23cba76136a453e83b060e59fdf9f0f0d2750ad396431a0b1a1458580c8c7e60` |
+| 1 | `instance` | [projective_ultrafilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausProjectiveNamespaced.lean/declarations/projective-ultrafilter.md) | 45 | `declaration-track:9c7872ac07e4866e65deb82de5389ffcf276822d284796d4f9e12b5378668ed4` |
+| 2 | `def` | [projectivePresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausProjectiveNamespaced.lean/declarations/projectivepresentation.md) | 62 | `declaration-track:142dd08efff041b25f8d50fb6fe7545c039d308c1185a43661e9f359b3ed515b` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausProjectiveNamespaced.lean/declarations/instance.md) | 70 | `declaration-track:23cba76136a453e83b060e59fdf9f0f0d2750ad396431a0b1a1458580c8c7e60` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

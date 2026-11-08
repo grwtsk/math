@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentHarmonic.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentHarmonic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentHarmonic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentHarmonic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerFirstMomentCorrection`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentCorrection.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerFirstMomentCorrection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentCorrection.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.NumberTheory.Harmonic.Bounds` — import line 4; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [reciprocal_Icc_one_twoX_eq_harmonic](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentHarmonic.lean/declarations/reciprocal-icc-one-twox-eq-harmonic.md) | 14 | `result-track:ea6cdfd27beeff49e3cca9327a1b0318db9b40b293ebd5b21734ce3a63c99c85` |
-| 2 | `theorem` | [reciprocal_Icc_one_twoX_le_one_add_log](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentHarmonic.lean/declarations/reciprocal-icc-one-twox-le-one-add-log.md) | 22 | `result-track:ebcc5e62df80f2b4a34530a09c17ee0f543e09b4897ff51069b8933046c17431` |
-| 3 | `theorem` | [nonAliasingFejerFirstMomentHarmonicBound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentHarmonic.lean/declarations/nonaliasingfejerfirstmomentharmonicbound.md) | 30 | `result-track:e9c25899ccdb2017e77a20785c3f32da2dc3e42ee63d5debd892a2f3ee2a98b9` |
-| 4 | `theorem` | [nonAliasingFejerFirstMomentBudget_le_logSquaredShape](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentHarmonic.lean/declarations/nonaliasingfejerfirstmomentbudget-le-logsquaredshape.md) | 67 | `result-track:204d9116885e5448c4b63a21d7d995a0c205ba96325c1a282aa52edad7377c93` |
+| 1 | `theorem` | [reciprocal_Icc_one_twoX_eq_harmonic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentHarmonic.lean/declarations/reciprocal-icc-one-twox-eq-harmonic.md) | 14 | `result-track:ea6cdfd27beeff49e3cca9327a1b0318db9b40b293ebd5b21734ce3a63c99c85` |
+| 2 | `theorem` | [reciprocal_Icc_one_twoX_le_one_add_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentHarmonic.lean/declarations/reciprocal-icc-one-twox-le-one-add-log.md) | 22 | `result-track:ebcc5e62df80f2b4a34530a09c17ee0f543e09b4897ff51069b8933046c17431` |
+| 3 | `theorem` | [nonAliasingFejerFirstMomentHarmonicBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentHarmonic.lean/declarations/nonaliasingfejerfirstmomentharmonicbound.md) | 30 | `result-track:e9c25899ccdb2017e77a20785c3f32da2dc3e42ee63d5debd892a2f3ee2a98b9` |
+| 4 | `theorem` | [nonAliasingFejerFirstMomentBudget_le_logSquaredShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFirstMomentHarmonic.lean/declarations/nonaliasingfejerfirstmomentbudget-le-logsquaredshape.md) | 67 | `result-track:204d9116885e5448c4b63a21d7d995a0c205ba96325c1a282aa52edad7377c93` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

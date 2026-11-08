@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/index.md) · [Full source](../../../../MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [complexMultiplication](../../../../MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/declarations/complexmultiplication.md) | 37 | `declaration-track:1f5df1c20e54cab0693658f6ef912227ddeb3e641e05d15ac63659d40bfdc589` |
-| 2 | `def` | [autocorrelationFun](../../../../MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/declarations/autocorrelationfun.md) | 44 | `declaration-track:27fb4d2c87f45c778b9f6395c8ad02b1f1ad0a9249dfc30deff88bc0a1f4a7ad` |
-| 3 | `theorem` | [autocorrelationFun_apply](../../../../MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/declarations/autocorrelationfun-apply.md) | 48 | `result-track:623b0a524443583df05f155376f5eeeb548ee71dbf98e4fd068ffc17b1d0f929` |
-| 4 | `def` | [autocorrelation](../../../../MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/declarations/autocorrelation.md) | 59 | `declaration-track:8cb363c6e8b7b805e4f2314f786dc91f6e76d3d1c28743b7dc9e4cfe85955766` |
-| 5 | `theorem` | [autocorrelation_apply](../../../../MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/declarations/autocorrelation-apply.md) | 79 | `result-track:5ee30b8f50e3394f7c684d4b554708af300fc42814dfa60989ac756e39bf7c6a` |
-| 6 | `theorem` | [autocorrelation_supportRadius](../../../../MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/declarations/autocorrelation-supportradius.md) | 84 | `result-track:d1dd005b701ec7b00ac7f993724da1d99d7c267e08267df4926280490982abe2` |
-| 7 | `theorem` | [autocorrelation_neg](../../../../MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/declarations/autocorrelation-neg.md) | 90 | `result-track:90b1a8ab4ff3541186758b7059e4d898ec22ca59df76ac5ec4870323e61e7202` |
-| 8 | `theorem` | [autocorrelation_zero](../../../../MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/declarations/autocorrelation-zero.md) | 103 | `result-track:f0293032189857508a7af66fd3d106e79b43c1669e9ec7b1cdbb343d61abf389` |
-| 9 | `theorem` | [autocorrelation_support](../../../../MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/declarations/autocorrelation-support.md) | 114 | `result-track:7b165dc51e8c0c1aa846146f8d72375ba2ac003dbafecbca7b36ba946c1d2b91` |
+| 1 | `def` | [complexMultiplication](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/declarations/complexmultiplication.md) | 37 | `declaration-track:1f5df1c20e54cab0693658f6ef912227ddeb3e641e05d15ac63659d40bfdc589` |
+| 2 | `def` | [autocorrelationFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/declarations/autocorrelationfun.md) | 44 | `declaration-track:27fb4d2c87f45c778b9f6395c8ad02b1f1ad0a9249dfc30deff88bc0a1f4a7ad` |
+| 3 | `theorem` | [autocorrelationFun_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/declarations/autocorrelationfun-apply.md) | 48 | `result-track:623b0a524443583df05f155376f5eeeb548ee71dbf98e4fd068ffc17b1d0f929` |
+| 4 | `def` | [autocorrelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/declarations/autocorrelation.md) | 59 | `declaration-track:8cb363c6e8b7b805e4f2314f786dc91f6e76d3d1c28743b7dc9e4cfe85955766` |
+| 5 | `theorem` | [autocorrelation_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/declarations/autocorrelation-apply.md) | 79 | `result-track:5ee30b8f50e3394f7c684d4b554708af300fc42814dfa60989ac756e39bf7c6a` |
+| 6 | `theorem` | [autocorrelation_supportRadius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/declarations/autocorrelation-supportradius.md) | 84 | `result-track:d1dd005b701ec7b00ac7f993724da1d99d7c267e08267df4926280490982abe2` |
+| 7 | `theorem` | [autocorrelation_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/declarations/autocorrelation-neg.md) | 90 | `result-track:90b1a8ab4ff3541186758b7059e4d898ec22ca59df76ac5ec4870323e61e7202` |
+| 8 | `theorem` | [autocorrelation_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/declarations/autocorrelation-zero.md) | 103 | `result-track:f0293032189857508a7af66fd3d106e79b43c1669e9ec7b1cdbb343d61abf389` |
+| 9 | `theorem` | [autocorrelation_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationNamespacedPublic.lean/declarations/autocorrelation-support.md) | 114 | `result-track:7b165dc51e8c0c1aa846146f8d72375ba2ac003dbafecbca7b36ba946c1d2b91` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

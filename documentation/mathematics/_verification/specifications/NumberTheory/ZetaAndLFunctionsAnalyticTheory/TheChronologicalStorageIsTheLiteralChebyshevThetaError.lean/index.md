@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheChronologicalStorageIsTheLiteralChebyshevThetaError.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheChronologicalStorageIsTheLiteralChebyshevThetaError.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheChronologicalStorageIsTheLiteralChebyshevThetaError.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheChronologicalStorageIsTheLiteralChebyshevThetaError.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [theta_eq_all_integer_sum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheChronologicalStorageIsTheLiteralChebyshevThetaError.lean/declarations/theta-eq-all-integer-sum.md) | 24 | `result-track:72efe260c092c310b87a2d95bf593f0a27fe6a587d2cf962dd05141493061843` |
-| 2 | `theorem` | [actual_storage_eq_theta](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheChronologicalStorageIsTheLiteralChebyshevThetaError.lean/declarations/actual-storage-eq-theta.md) | 40 | `result-track:a0ed235e0bf3cb69cb33cc834c3fba4ec5db47f6f0e581a80ceaa0d4edc99bff` |
-| 3 | `theorem` | [actual_storage_step](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheChronologicalStorageIsTheLiteralChebyshevThetaError.lean/declarations/actual-storage-step.md) | 56 | `result-track:f5fd17bd833a26d775056ec6d4d407d006eb0f95732bb18d9c3cd8dcf50f5684` |
-| 4 | `theorem` | [actual_green_work_eq_prime_atoms](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheChronologicalStorageIsTheLiteralChebyshevThetaError.lean/declarations/actual-green-work-eq-prime-atoms.md) | 64 | `result-track:5b28213a03bccb95a465e140147a1591ee7431c45a0efca8ab2b60d48a6df7b5` |
+| 1 | `theorem` | [theta_eq_all_integer_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheChronologicalStorageIsTheLiteralChebyshevThetaError.lean/declarations/theta-eq-all-integer-sum.md) | 24 | `result-track:72efe260c092c310b87a2d95bf593f0a27fe6a587d2cf962dd05141493061843` |
+| 2 | `theorem` | [actual_storage_eq_theta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheChronologicalStorageIsTheLiteralChebyshevThetaError.lean/declarations/actual-storage-eq-theta.md) | 40 | `result-track:a0ed235e0bf3cb69cb33cc834c3fba4ec5db47f6f0e581a80ceaa0d4edc99bff` |
+| 3 | `theorem` | [actual_storage_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheChronologicalStorageIsTheLiteralChebyshevThetaError.lean/declarations/actual-storage-step.md) | 56 | `result-track:f5fd17bd833a26d775056ec6d4d407d006eb0f95732bb18d9c3cd8dcf50f5684` |
+| 4 | `theorem` | [actual_green_work_eq_prime_atoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheChronologicalStorageIsTheLiteralChebyshevThetaError.lean/declarations/actual-green-work-eq-prime-atoms.md) | 64 | `result-track:5b28213a03bccb95a465e140147a1591ee7431c45a0efca8ab2b60d48a6df7b5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

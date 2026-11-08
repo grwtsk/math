@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StratumNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StratumNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StratumNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StratumNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [OrdinalStratum](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StratumNamespaced.lean/declarations/ordinalstratum.md) | 21 | `declaration-track:2f45ff89dc40744158dab7b021f140b0f3a5735b3db81485dec063c7ae391050` |
-| 2 | `def` | [value](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StratumNamespaced.lean/declarations/value-source-edition-2.md) | 30 | `declaration-track:a8e250251b42a59fe4dd8b3cb60c31b4ce89bd560de36f2712c196bb3a037c1c` |
-| 3 | `def` | [RegisteredIn](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StratumNamespaced.lean/declarations/registeredin.md) | 37 | `declaration-track:e9555af58c94123f184fc339f1bcf60508dda51770b93c8bebceb4211dd2f75e` |
-| 4 | `def` | [sourceId](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StratumNamespaced.lean/declarations/sourceid.md) | 47 | `declaration-track:cb18ce3c9129a1fe669e0166eba786f3e25a6d0f32e9b0781254db073ec615e4` |
-| 5 | `structure` | [StratumBoundaryIndex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StratumNamespaced.lean/declarations/stratumboundaryindex.md) | 57 | `declaration-track:65fbd99aefd7f189920f33491977aaa6f038def5b47582c5cd66a88931508e1b` |
-| 6 | `def` | [value](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StratumNamespaced.lean/declarations/value.md) | 63 | `declaration-track:758a0a14f5d68bdda8529a749a2c5947fd270fe9b6ac088b526f4c7cebd1144c` |
-| 7 | `theorem` | [value_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StratumNamespaced.lean/declarations/value-eq.md) | 69 | `result-track:c04bc06cbb036335090c7b55f254282c83a6b8e4fee06039a205da6bf6a24301` |
+| 1 | `inductive` | [OrdinalStratum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StratumNamespaced.lean/declarations/ordinalstratum.md) | 21 | `declaration-track:2f45ff89dc40744158dab7b021f140b0f3a5735b3db81485dec063c7ae391050` |
+| 2 | `def` | [value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StratumNamespaced.lean/declarations/value-source-edition-2.md) | 30 | `declaration-track:a8e250251b42a59fe4dd8b3cb60c31b4ce89bd560de36f2712c196bb3a037c1c` |
+| 3 | `def` | [RegisteredIn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StratumNamespaced.lean/declarations/registeredin.md) | 37 | `declaration-track:e9555af58c94123f184fc339f1bcf60508dda51770b93c8bebceb4211dd2f75e` |
+| 4 | `def` | [sourceId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StratumNamespaced.lean/declarations/sourceid.md) | 47 | `declaration-track:cb18ce3c9129a1fe669e0166eba786f3e25a6d0f32e9b0781254db073ec615e4` |
+| 5 | `structure` | [StratumBoundaryIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StratumNamespaced.lean/declarations/stratumboundaryindex.md) | 57 | `declaration-track:65fbd99aefd7f189920f33491977aaa6f038def5b47582c5cd66a88931508e1b` |
+| 6 | `def` | [value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StratumNamespaced.lean/declarations/value.md) | 63 | `declaration-track:758a0a14f5d68bdda8529a749a2c5947fd270fe9b6ac088b526f4c7cebd1144c` |
+| 7 | `theorem` | [value_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StratumNamespaced.lean/declarations/value-eq.md) | 69 | `result-track:c04bc06cbb036335090c7b55f254282c83a6b8e4fee06039a205da6bf6a24301` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

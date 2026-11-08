@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/AffineTorusBundleNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/AffineTorusBundleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AffineTorusBundleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AffineTorusBundleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrincipalTorusBundleRealization](../../../../GroupTheoryAndGeneralizations/AffineTorusBundleNamespaced.lean/declarations/principaltorusbundlerealization.md) | 24 | `declaration-track:2675d989441f826c19fc3c0a45fe8114c6ac336517f6e40e31f63f43807d34ad` |
-| 2 | `structure` | [AffineTorusBundleRealization](../../../../GroupTheoryAndGeneralizations/AffineTorusBundleNamespaced.lean/declarations/affinetorusbundlerealization.md) | 35 | `declaration-track:e29bc24d5075d0af5d3c46dc49fffe238d8aac8ac507cbe87403161531904a53` |
+| 1 | `structure` | [PrincipalTorusBundleRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AffineTorusBundleNamespaced.lean/declarations/principaltorusbundlerealization.md) | 24 | `declaration-track:2675d989441f826c19fc3c0a45fe8114c6ac336517f6e40e31f63f43807d34ad` |
+| 2 | `structure` | [AffineTorusBundleRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AffineTorusBundleNamespaced.lean/declarations/affinetorusbundlerealization.md) | 35 | `declaration-track:e29bc24d5075d0af5d3c46dc49fffe238d8aac8ac507cbe87403161531904a53` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

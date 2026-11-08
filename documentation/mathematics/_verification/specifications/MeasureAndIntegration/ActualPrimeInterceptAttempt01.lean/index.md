@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualPrimeInterceptAttempt01.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualPrimeInterceptAttempt01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPrimeInterceptAttempt01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPrimeInterceptAttempt01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualPrimeRemainder](../../../../MeasureAndIntegration/ActualPrimeInterceptAttempt01.lean/declarations/actualprimeremainder.md) | 20 | `declaration-track:b1c80ab5e6cee6ba56e600f2f12baaad142375fc11a38958aab484a1b1ea59a6` |
-| 2 | `def` | [actualPrimeIntercept](../../../../MeasureAndIntegration/ActualPrimeInterceptAttempt01.lean/declarations/actualprimeintercept.md) | 24 | `declaration-track:7ee03abd97d69eaaf3f479a2aeee3aad9fb7baca0c76269cbb69b56eb3fdb010` |
-| 3 | `theorem` | [actual_prime_remainder_eq_full_plus_tail](../../../../MeasureAndIntegration/ActualPrimeInterceptAttempt01.lean/declarations/actual-prime-remainder-eq-full-plus-tail.md) | 26 | `result-track:656a76773411039aef047d991330d44bed037c37159a4c05fc35f77badaab7e4` |
-| 4 | `theorem` | [actual_prime_remainder_integrable](../../../../MeasureAndIntegration/ActualPrimeInterceptAttempt01.lean/declarations/actual-prime-remainder-integrable.md) | 32 | `result-track:c7c813ce0a366e43c21ec405630c2c9ed30b3cf0be31178a92c8d097a8d3fabe` |
-| 5 | `theorem` | [actual_prime_remainder_integral](../../../../MeasureAndIntegration/ActualPrimeInterceptAttempt01.lean/declarations/actual-prime-remainder-integral.md) | 40 | `result-track:bbf7c49936c427e134d6170c27ee3ae2cb713c08f095cf82082875cb44680ab2` |
-| 6 | `theorem` | [actual_prime_intercept_eq](../../../../MeasureAndIntegration/ActualPrimeInterceptAttempt01.lean/declarations/actual-prime-intercept-eq.md) | 48 | `result-track:b184b4b34ae7ae33b564e371c559636e8c9546f4f079470eb8968b2cc9f98db5` |
+| 1 | `def` | [actualPrimeRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPrimeInterceptAttempt01.lean/declarations/actualprimeremainder.md) | 20 | `declaration-track:b1c80ab5e6cee6ba56e600f2f12baaad142375fc11a38958aab484a1b1ea59a6` |
+| 2 | `def` | [actualPrimeIntercept](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPrimeInterceptAttempt01.lean/declarations/actualprimeintercept.md) | 24 | `declaration-track:7ee03abd97d69eaaf3f479a2aeee3aad9fb7baca0c76269cbb69b56eb3fdb010` |
+| 3 | `theorem` | [actual_prime_remainder_eq_full_plus_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPrimeInterceptAttempt01.lean/declarations/actual-prime-remainder-eq-full-plus-tail.md) | 26 | `result-track:656a76773411039aef047d991330d44bed037c37159a4c05fc35f77badaab7e4` |
+| 4 | `theorem` | [actual_prime_remainder_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPrimeInterceptAttempt01.lean/declarations/actual-prime-remainder-integrable.md) | 32 | `result-track:c7c813ce0a366e43c21ec405630c2c9ed30b3cf0be31178a92c8d097a8d3fabe` |
+| 5 | `theorem` | [actual_prime_remainder_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPrimeInterceptAttempt01.lean/declarations/actual-prime-remainder-integral.md) | 40 | `result-track:bbf7c49936c427e134d6170c27ee3ae2cb713c08f095cf82082875cb44680ab2` |
+| 6 | `theorem` | [actual_prime_intercept_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPrimeInterceptAttempt01.lean/declarations/actual-prime-intercept-eq.md) | 48 | `result-track:b184b4b34ae7ae33b564e371c559636e8c9546f4f079470eb8968b2cc9f98db5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

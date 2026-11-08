@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/StdNamespacedPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/StdNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/StdNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/StdNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Preorder.OfStdArgs](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/StdNamespacedPublic.lean/declarations/preorder-ofstdargs.md) | 65 | `declaration-track:c5d1394308691ecba021b570d9ddea25253c499b16c7ee9d27dbf18bee1cb992` |
-| 2 | `def` | [Preorder.ofStd](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/StdNamespacedPublic.lean/declarations/preorder-ofstd.md) | 113 | `declaration-track:2bea689440a165143be47e8fc8ef9a3547c292fd5aec38a428f43ceec4be37d5` |
-| 3 | `structure` | [PartialOrder.OfStdArgs](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/StdNamespacedPublic.lean/declarations/partialorder-ofstdargs.md) | 121 | `declaration-track:f46284d476e8b90d5de5be8b69fe80f718ec865707109e84043d464c9c90b3b9` |
-| 4 | `def` | [PartialOrder.ofStd](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/StdNamespacedPublic.lean/declarations/partialorder-ofstd.md) | 145 | `declaration-track:a456b392fed47ac96b27c20422cbbdf6b584cf9dc7d95a914df82339ae20a21b` |
-| 5 | `theorem` | [Std.LawfulOrderCmp.compareOfLessAndEq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/StdNamespacedPublic.lean/declarations/std-lawfulordercmp-compareoflessandeq.md) | 152 | `result-track:2187f56f9a7fc34f1a1b2c5ba8dfe823878ab320da6bd2d3fb45189a586e147a` |
-| 6 | `structure` | [LinearOrder.OfStdArgs](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/StdNamespacedPublic.lean/declarations/linearorder-ofstdargs.md) | 164 | `declaration-track:d91eef4fdfe4350e6c6e3a619757a9fb780b52eb78d1321a20fd24eb39daf748` |
-| 7 | `def` | [LinearOrder.ofStd](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/StdNamespacedPublic.lean/declarations/linearorder-ofstd.md) | 265 | `declaration-track:f60624f689a7c0e0144f14e3c0afa9aca17d86610822368612de214790c1567a` |
+| 1 | `structure` | [Preorder.OfStdArgs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/StdNamespacedPublic.lean/declarations/preorder-ofstdargs.md) | 65 | `declaration-track:c5d1394308691ecba021b570d9ddea25253c499b16c7ee9d27dbf18bee1cb992` |
+| 2 | `def` | [Preorder.ofStd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/StdNamespacedPublic.lean/declarations/preorder-ofstd.md) | 113 | `declaration-track:2bea689440a165143be47e8fc8ef9a3547c292fd5aec38a428f43ceec4be37d5` |
+| 3 | `structure` | [PartialOrder.OfStdArgs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/StdNamespacedPublic.lean/declarations/partialorder-ofstdargs.md) | 121 | `declaration-track:f46284d476e8b90d5de5be8b69fe80f718ec865707109e84043d464c9c90b3b9` |
+| 4 | `def` | [PartialOrder.ofStd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/StdNamespacedPublic.lean/declarations/partialorder-ofstd.md) | 145 | `declaration-track:a456b392fed47ac96b27c20422cbbdf6b584cf9dc7d95a914df82339ae20a21b` |
+| 5 | `theorem` | [Std.LawfulOrderCmp.compareOfLessAndEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/StdNamespacedPublic.lean/declarations/std-lawfulordercmp-compareoflessandeq.md) | 152 | `result-track:2187f56f9a7fc34f1a1b2c5ba8dfe823878ab320da6bd2d3fb45189a586e147a` |
+| 6 | `structure` | [LinearOrder.OfStdArgs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/StdNamespacedPublic.lean/declarations/linearorder-ofstdargs.md) | 164 | `declaration-track:d91eef4fdfe4350e6c6e3a619757a9fb780b52eb78d1321a20fd24eb39daf748` |
+| 7 | `def` | [LinearOrder.ofStd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/StdNamespacedPublic.lean/declarations/linearorder-ofstd.md) | 265 | `declaration-track:f60624f689a7c0e0144f14e3c0afa9aca17d86610822368612de214790c1567a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

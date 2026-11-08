@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [radial_boundary_energy_identity](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/declarations/radial-boundary-energy-identity.md) | 12 | `result-track:1ccff8c42a2e1845d762e2a69b065e510cf3cdf1fc9fd5cf311f386614565b31` |
-| 2 | `theorem` | [bumpMoment_derivative_pairing_nonneg](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/declarations/bumpmoment-derivative-pairing-nonneg.md) | 79 | `result-track:731a0d4438f35e3531a53ef93ad4016e7c3de18f6fd4d9361cafc0cf5bb68b22` |
-| 3 | `theorem` | [bumpMoment_horizontal_norm_sq_hasDerivAt](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/declarations/bumpmoment-horizontal-norm-sq-hasderivat.md) | 102 | `result-track:fa7af2780e795e2f8332c852a4b8aa57a5f4becf82d50da95e3c0d6427ca9011` |
-| 4 | `theorem` | [bumpMoment_horizontal_norm_monotone](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/declarations/bumpmoment-horizontal-norm-monotone.md) | 114 | `result-track:2eef7c39d00f33d99d993049e9a2124fbee5c83665a853b7a00a0704dbae344f` |
-| 5 | `theorem` | [bumpMoment_horizontal_norm_le](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/declarations/bumpmoment-horizontal-norm-le.md) | 135 | `result-track:c0089235e448cf5c54794efc732b9288700469d28db7aeacc5f4ed3f393e8532` |
-| 6 | `theorem` | [sourceQuadratic_horizontal_bound](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/declarations/sourcequadratic-horizontal-bound.md) | 155 | `result-track:98ce455a9ff8f5e75b80202be5e1cace3daef020813f7fe53fd60d811d96ee1d` |
-| 7 | `theorem` | [W_horizontal_multiplicative_bound](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/declarations/w-horizontal-multiplicative-bound.md) | 173 | `result-track:99e9338b8ea19df43e90d02b234ec742e81ed7282d3b777e33ff8a8b02c54495` |
-| 8 | `theorem` | [W_horizontal_ratio_bound](../../../../MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/declarations/w-horizontal-ratio-bound.md) | 207 | `result-track:5781a133fa766ec38166a75a43e669373e65d08c3cf5d5c6cb3c718a16874ed3` |
+| 1 | `theorem` | [radial_boundary_energy_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/declarations/radial-boundary-energy-identity.md) | 12 | `result-track:1ccff8c42a2e1845d762e2a69b065e510cf3cdf1fc9fd5cf311f386614565b31` |
+| 2 | `theorem` | [bumpMoment_derivative_pairing_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/declarations/bumpmoment-derivative-pairing-nonneg.md) | 79 | `result-track:731a0d4438f35e3531a53ef93ad4016e7c3de18f6fd4d9361cafc0cf5bb68b22` |
+| 3 | `theorem` | [bumpMoment_horizontal_norm_sq_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/declarations/bumpmoment-horizontal-norm-sq-hasderivat.md) | 102 | `result-track:fa7af2780e795e2f8332c852a4b8aa57a5f4becf82d50da95e3c0d6427ca9011` |
+| 4 | `theorem` | [bumpMoment_horizontal_norm_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/declarations/bumpmoment-horizontal-norm-monotone.md) | 114 | `result-track:2eef7c39d00f33d99d993049e9a2124fbee5c83665a853b7a00a0704dbae344f` |
+| 5 | `theorem` | [bumpMoment_horizontal_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/declarations/bumpmoment-horizontal-norm-le.md) | 135 | `result-track:c0089235e448cf5c54794efc732b9288700469d28db7aeacc5f4ed3f393e8532` |
+| 6 | `theorem` | [sourceQuadratic_horizontal_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/declarations/sourcequadratic-horizontal-bound.md) | 155 | `result-track:98ce455a9ff8f5e75b80202be5e1cace3daef020813f7fe53fd60d811d96ee1d` |
+| 7 | `theorem` | [W_horizontal_multiplicative_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/declarations/w-horizontal-multiplicative-bound.md) | 173 | `result-track:99e9338b8ea19df43e90d02b234ec742e81ed7282d3b777e33ff8a8b02c54495` |
+| 8 | `theorem` | [W_horizontal_ratio_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFilterHorizontalRatioAudit.lean/declarations/w-horizontal-ratio-bound.md) | 207 | `result-track:5781a133fa766ec38166a75a43e669373e65d08c3cf5d5c6cb3c718a16874ed3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

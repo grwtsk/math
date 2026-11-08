@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ZPowersLemmas.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ZPowersLemmas.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmas.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmas.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [range_zpowersHom](../../../../GroupTheoryAndGeneralizations/ZPowersLemmas.lean/declarations/range-zpowershom.md) | 25 | `result-track:4fc6eaaa43f8d34118e64043b833a492db6c40f82402491a248bf07e2d58c82a` |
-| 2 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/ZPowersLemmas.lean/declarations/instance.md) | 28 | `declaration-track:0ee44cacd52356768fb648611747d6b25bade98fe16206fe2f83b47f134e3a99` |
-| 3 | `theorem` | [range_zmultiplesHom](../../../../GroupTheoryAndGeneralizations/ZPowersLemmas.lean/declarations/range-zmultipleshom.md) | 35 | `result-track:4199e6fab66bc4875bfbdf5dcf2245b4723c089ee0d9fc67b6dc672093725e64` |
-| 4 | `theorem` | [intCast_mul_mem_zmultiples](../../../../GroupTheoryAndGeneralizations/ZPowersLemmas.lean/declarations/intcast-mul-mem-zmultiples.md) | 43 | `result-track:41e3dd8e5613515e47ac941dd3b81c94a0024e36ed38d92f499c7b0490ecd2c3` |
-| 5 | `theorem` | [intCast_mem_zmultiples_one](../../../../GroupTheoryAndGeneralizations/ZPowersLemmas.lean/declarations/intcast-mem-zmultiples-one.md) | 47 | `result-track:ff0a2072dbaa7a5e010820967ba11b064ea0cd631ab950c3ff251c6c26dd3f24` |
-| 6 | `lemma` | [Int.range_castAddHom](../../../../GroupTheoryAndGeneralizations/ZPowersLemmas.lean/declarations/int-range-castaddhom.md) | 54 | `result-track:b1de916ca011c246c3f407fd782c5fe6c9c55bfa42ce519c8720599345baa357` |
-| 7 | `theorem` | [centralizer_closure](../../../../GroupTheoryAndGeneralizations/ZPowersLemmas.lean/declarations/centralizer-closure.md) | 64 | `result-track:333e7f3f7eb144107ee72caea6012d4b916f5873e247ccaf812987629141b3fa` |
-| 8 | `theorem` | [center_eq_iInf](../../../../GroupTheoryAndGeneralizations/ZPowersLemmas.lean/declarations/center-eq-iinf.md) | 73 | `result-track:e13a381679deb75ea14b931804af658bead47d61bf80d1fd57698cfdcdfbbc8e` |
-| 9 | `theorem` | [center_eq_infi'](../../../../GroupTheoryAndGeneralizations/ZPowersLemmas.lean/declarations/center-eq-infi.md) | 78 | `result-track:48071ae9a31eb5602c95689eb08264564c5252b21e27a34cd6a71e58959d5fa0` |
+| 1 | `theorem` | [range_zpowersHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmas.lean/declarations/range-zpowershom.md) | 25 | `result-track:4fc6eaaa43f8d34118e64043b833a492db6c40f82402491a248bf07e2d58c82a` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmas.lean/declarations/instance.md) | 28 | `declaration-track:0ee44cacd52356768fb648611747d6b25bade98fe16206fe2f83b47f134e3a99` |
+| 3 | `theorem` | [range_zmultiplesHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmas.lean/declarations/range-zmultipleshom.md) | 35 | `result-track:4199e6fab66bc4875bfbdf5dcf2245b4723c089ee0d9fc67b6dc672093725e64` |
+| 4 | `theorem` | [intCast_mul_mem_zmultiples](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmas.lean/declarations/intcast-mul-mem-zmultiples.md) | 43 | `result-track:41e3dd8e5613515e47ac941dd3b81c94a0024e36ed38d92f499c7b0490ecd2c3` |
+| 5 | `theorem` | [intCast_mem_zmultiples_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmas.lean/declarations/intcast-mem-zmultiples-one.md) | 47 | `result-track:ff0a2072dbaa7a5e010820967ba11b064ea0cd631ab950c3ff251c6c26dd3f24` |
+| 6 | `lemma` | [Int.range_castAddHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmas.lean/declarations/int-range-castaddhom.md) | 54 | `result-track:b1de916ca011c246c3f407fd782c5fe6c9c55bfa42ce519c8720599345baa357` |
+| 7 | `theorem` | [centralizer_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmas.lean/declarations/centralizer-closure.md) | 64 | `result-track:333e7f3f7eb144107ee72caea6012d4b916f5873e247ccaf812987629141b3fa` |
+| 8 | `theorem` | [center_eq_iInf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmas.lean/declarations/center-eq-iinf.md) | 73 | `result-track:e13a381679deb75ea14b931804af658bead47d61bf80d1fd57698cfdcdfbbc8e` |
+| 9 | `theorem` | [center_eq_infi'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmas.lean/declarations/center-eq-infi.md) | 78 | `result-track:48071ae9a31eb5602c95689eb08264564c5252b21e27a34cd6a71e58959d5fa0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

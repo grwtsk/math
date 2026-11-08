@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FamilyFacts.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FamilyFacts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FamilyFacts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FamilyFacts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [FamilyHyps.perT](../../../../MeasureAndIntegration/FamilyFacts.lean/declarations/familyhyps-pert.md) | 23 | `result-track:2a9c76da109e9e42c3ff2a7ca37eac50306290b6244536de4e0b062fbe718af1` |
-| 2 | `lemma` | [log_le_const_mul_rpow](../../../../MeasureAndIntegration/FamilyFacts.lean/declarations/log-le-const-mul-rpow.md) | 85 | `result-track:53ad19feb9b27486138886f2bb2524625335ddff89ee819f584a08dd3878ce7d` |
-| 3 | `theorem` | [pow_log_absorb](../../../../MeasureAndIntegration/FamilyFacts.lean/declarations/pow-log-absorb.md) | 93 | `result-track:dba6189ce8201b16bdc62e45ad266ffeb0736d022171c567bfbdd89e65d7e2cc` |
+| 1 | `theorem` | [FamilyHyps.perT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FamilyFacts.lean/declarations/familyhyps-pert.md) | 23 | `result-track:2a9c76da109e9e42c3ff2a7ca37eac50306290b6244536de4e0b062fbe718af1` |
+| 2 | `lemma` | [log_le_const_mul_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FamilyFacts.lean/declarations/log-le-const-mul-rpow.md) | 85 | `result-track:53ad19feb9b27486138886f2bb2524625335ddff89ee819f584a08dd3878ce7d` |
+| 3 | `theorem` | [pow_log_absorb](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FamilyFacts.lean/declarations/pow-log-absorb.md) | 93 | `result-track:dba6189ce8201b16bdc62e45ad266ffeb0736d022171c567bfbdd89e65d7e2cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

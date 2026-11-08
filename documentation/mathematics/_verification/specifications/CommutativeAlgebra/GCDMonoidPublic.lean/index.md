@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/GCDMonoidPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/GCDMonoidPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GCDMonoidPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GCDMonoidPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [UniqueFactorizationMonoid.toGCDMonoid](../../../../CommutativeAlgebra/GCDMonoidPublic.lean/declarations/uniquefactorizationmonoid-togcdmonoid.md) | 30 | `declaration-track:42cea134ea85608753120cddc9f961a1d4f2eb36120f67eda7788a019af2d390` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/GCDMonoidPublic.lean/declarations/instance.md) | 50 | `declaration-track:0715db46760091f11ffb5999d2ca5bed295eb3a7e548529cb9deba4c94c508d9` |
-| 3 | `def` | [UniqueFactorizationMonoid.toNormalizedGCDMonoid](../../../../CommutativeAlgebra/GCDMonoidPublic.lean/declarations/uniquefactorizationmonoid-tonormalizedgcdmonoid.md) | 56 | `declaration-track:e76777de7be9771450e35627b82abd510252a07bfbd4b72f000b135ffa2e0197` |
-| 4 | `abbrev` | [UniqueFactorizationMonoid.toStrongNormalizedGCDMonoid](../../../../CommutativeAlgebra/GCDMonoidPublic.lean/declarations/uniquefactorizationmonoid-tostrongnormalizedgcdmonoid.md) | 79 | `declaration-track:0d38eff65314c9d5c839eaea0dafc0f1604d346bef0a3c9a4bc50e815c04cb1d` |
+| 1 | `def` | [UniqueFactorizationMonoid.toGCDMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GCDMonoidPublic.lean/declarations/uniquefactorizationmonoid-togcdmonoid.md) | 30 | `declaration-track:42cea134ea85608753120cddc9f961a1d4f2eb36120f67eda7788a019af2d390` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GCDMonoidPublic.lean/declarations/instance.md) | 50 | `declaration-track:0715db46760091f11ffb5999d2ca5bed295eb3a7e548529cb9deba4c94c508d9` |
+| 3 | `def` | [UniqueFactorizationMonoid.toNormalizedGCDMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GCDMonoidPublic.lean/declarations/uniquefactorizationmonoid-tonormalizedgcdmonoid.md) | 56 | `declaration-track:e76777de7be9771450e35627b82abd510252a07bfbd4b72f000b135ffa2e0197` |
+| 4 | `abbrev` | [UniqueFactorizationMonoid.toStrongNormalizedGCDMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GCDMonoidPublic.lean/declarations/uniquefactorizationmonoid-tostrongnormalizedgcdmonoid.md) | 79 | `declaration-track:0d38eff65314c9d5c839eaea0dafc0f1604d346bef0a3c9a4bc50e815c04cb1d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

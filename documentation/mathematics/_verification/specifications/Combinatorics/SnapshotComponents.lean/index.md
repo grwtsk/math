@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SnapshotComponents.lean/index.md) · [Full source](../../../../Combinatorics/SnapshotComponents.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SnapshotComponents.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SnapshotComponents.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [SnapshotComponent](../../../../Combinatorics/SnapshotComponents.lean/declarations/snapshotcomponent.md) | 18 | `declaration-track:ad82d2082cf2532cd5f9193400e0644508c0be2ca12312f53d950854fe09739b` |
-| 2 | `structure` | [MasterSnapshot](../../../../Combinatorics/SnapshotComponents.lean/declarations/mastersnapshot.md) | 39 | `declaration-track:99313b2098926930c00fdf4e1be35b982a4d27cd9821eb5a2b482328ec3150d9` |
-| 3 | `structure` | [VerifiedActiveMasterSnapshot](../../../../Combinatorics/SnapshotComponents.lean/declarations/verifiedactivemastersnapshot.md) | 54 | `declaration-track:c2a139899a0478fa4d7f965b90d8cf7addf586b99d18982320cb612abf55dfda` |
-| 4 | `def` | [authorityHead](../../../../Combinatorics/SnapshotComponents.lean/declarations/authorityhead.md) | 63 | `declaration-track:e19ef2071ad6fc54b1eb304f0c2e2cf0239a281a8e354eaae5736fe23576edd9` |
-| 5 | `def` | [authorityEpoch](../../../../Combinatorics/SnapshotComponents.lean/declarations/authorityepoch.md) | 70 | `declaration-track:c97ced862c780e9aa0d5e93fee6db831463c5eb1d65ec28bf6e105f8e94d7650` |
-| 6 | `structure` | [SnapshotDependency](../../../../Combinatorics/SnapshotComponents.lean/declarations/snapshotdependency.md) | 79 | `declaration-track:9d251cda534244bd0623ef383b6ab07c98b76dbe1b4b7f7572e39c3fd97f3361` |
-| 7 | `def` | [Matches](../../../../Combinatorics/SnapshotComponents.lean/declarations/matches.md) | 87 | `declaration-track:cf2382f9d5730b421fe6e4073bf704c021f0b5ab15732c9d5f988a1dd24bef59` |
-| 8 | `theorem` | [matches_of_snapshot](../../../../Combinatorics/SnapshotComponents.lean/declarations/matches-of-snapshot.md) | 93 | `result-track:53b4153db3b7204ca610a3ed2f176b4656d31386307f0889fd3df7d35cdf2793` |
-| 9 | `def` | [SnapshotDependencySetValid](../../../../Combinatorics/SnapshotComponents.lean/declarations/snapshotdependencysetvalid.md) | 109 | `declaration-track:36d027e820cd5f6e099ac6c840bcdf346723dbd147dde3b0004d2ba63944d845` |
+| 1 | `inductive` | [SnapshotComponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SnapshotComponents.lean/declarations/snapshotcomponent.md) | 18 | `declaration-track:ad82d2082cf2532cd5f9193400e0644508c0be2ca12312f53d950854fe09739b` |
+| 2 | `structure` | [MasterSnapshot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SnapshotComponents.lean/declarations/mastersnapshot.md) | 39 | `declaration-track:99313b2098926930c00fdf4e1be35b982a4d27cd9821eb5a2b482328ec3150d9` |
+| 3 | `structure` | [VerifiedActiveMasterSnapshot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SnapshotComponents.lean/declarations/verifiedactivemastersnapshot.md) | 54 | `declaration-track:c2a139899a0478fa4d7f965b90d8cf7addf586b99d18982320cb612abf55dfda` |
+| 4 | `def` | [authorityHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SnapshotComponents.lean/declarations/authorityhead.md) | 63 | `declaration-track:e19ef2071ad6fc54b1eb304f0c2e2cf0239a281a8e354eaae5736fe23576edd9` |
+| 5 | `def` | [authorityEpoch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SnapshotComponents.lean/declarations/authorityepoch.md) | 70 | `declaration-track:c97ced862c780e9aa0d5e93fee6db831463c5eb1d65ec28bf6e105f8e94d7650` |
+| 6 | `structure` | [SnapshotDependency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SnapshotComponents.lean/declarations/snapshotdependency.md) | 79 | `declaration-track:9d251cda534244bd0623ef383b6ab07c98b76dbe1b4b7f7572e39c3fd97f3361` |
+| 7 | `def` | [Matches](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SnapshotComponents.lean/declarations/matches.md) | 87 | `declaration-track:cf2382f9d5730b421fe6e4073bf704c021f0b5ab15732c9d5f988a1dd24bef59` |
+| 8 | `theorem` | [matches_of_snapshot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SnapshotComponents.lean/declarations/matches-of-snapshot.md) | 93 | `result-track:53b4153db3b7204ca610a3ed2f176b4656d31386307f0889fd3df7d35cdf2793` |
+| 9 | `def` | [SnapshotDependencySetValid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SnapshotComponents.lean/declarations/snapshotdependencysetvalid.md) | 109 | `declaration-track:36d027e820cd5f6e099ac6c840bcdf346723dbd147dde3b0004d2ba63944d845` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

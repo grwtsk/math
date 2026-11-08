@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MoserGeometryNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MoserGeometryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MoserGeometryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MoserGeometryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [radicalProduct_bounds](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MoserGeometryNamespaced.lean/declarations/radicalproduct-bounds.md) | 13 | `result-track:fba8a43f41e8f400ee10beae2c85e6663891978e38345807694b04ac30ed942f` |
-| 2 | `lemma` | [moser_normSq_unit_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MoserGeometryNamespaced.lean/declarations/moser-normsq-unit-iff.md) | 24 | `result-track:d115c1c597a275907d6be719adf0f7d16e889a380a6158b06e6504af82db4ba5` |
-| 3 | `lemma` | [moserPoint_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MoserGeometryNamespaced.lean/declarations/moserpoint-injective.md) | 38 | `result-track:f47a21393c2fdcf16968e84f5fb29255cf3283ece279bfbfe8b0c410de906d48` |
+| 1 | `lemma` | [radicalProduct_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MoserGeometryNamespaced.lean/declarations/radicalproduct-bounds.md) | 13 | `result-track:fba8a43f41e8f400ee10beae2c85e6663891978e38345807694b04ac30ed942f` |
+| 2 | `lemma` | [moser_normSq_unit_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MoserGeometryNamespaced.lean/declarations/moser-normsq-unit-iff.md) | 24 | `result-track:d115c1c597a275907d6be719adf0f7d16e889a380a6158b06e6504af82db4ba5` |
+| 3 | `lemma` | [moserPoint_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MoserGeometryNamespaced.lean/declarations/moserpoint-injective.md) | 38 | `result-track:f47a21393c2fdcf16968e84f5fb29255cf3283ece279bfbfe8b0c410de906d48` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

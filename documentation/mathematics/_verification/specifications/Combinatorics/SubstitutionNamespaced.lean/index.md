@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SubstitutionNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/SubstitutionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SubstitutionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SubstitutionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ReplacementSite](../../../../Combinatorics/SubstitutionNamespaced.lean/declarations/replacementsite.md) | 18 | `declaration-track:8b868000c0870083c2aa78030db927c65ce203bf9d4513eea766879c5b05fc80` |
-| 2 | `structure` | [SubstitutedText](../../../../Combinatorics/SubstitutionNamespaced.lean/declarations/substitutedtext.md) | 24 | `declaration-track:f4b2bfc1c443b5b626db69f4acd8cb4b5f4351a136ba51649811ef6ec4fbee57` |
-| 3 | `structure` | [SubstitutionCertificate](../../../../Combinatorics/SubstitutionNamespaced.lean/declarations/substitutioncertificate.md) | 29 | `declaration-track:0cbc7dfe9ed9035302cd1e9ca7fec64f0fb0beeaf680ee058647fb47fc271ff7` |
-| 4 | `structure` | [ContextualSynonymyCertificate](../../../../Combinatorics/SubstitutionNamespaced.lean/declarations/contextualsynonymycertificate.md) | 53 | `declaration-track:4334a13eaaf1d4ac30d59af811a6fabf5df8d7aeaf4923b1366df10bdec1fe4a` |
-| 5 | `theorem` | [synonymy_requires_substitution](../../../../Combinatorics/SubstitutionNamespaced.lean/declarations/synonymy-requires-substitution.md) | 67 | `result-track:458f9cbae82cff78e7d548e431f523624a831ce07919155a747026569654c071` |
-| 6 | `structure` | [GlobalSynonymyCertificate](../../../../Combinatorics/SubstitutionNamespaced.lean/declarations/globalsynonymycertificate.md) | 75 | `declaration-track:fa8f6098af6b5f18daa150ee6c1e971ed4a8cd4124ce0ce2b193586716deb21f` |
+| 1 | `structure` | [ReplacementSite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SubstitutionNamespaced.lean/declarations/replacementsite.md) | 18 | `declaration-track:8b868000c0870083c2aa78030db927c65ce203bf9d4513eea766879c5b05fc80` |
+| 2 | `structure` | [SubstitutedText](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SubstitutionNamespaced.lean/declarations/substitutedtext.md) | 24 | `declaration-track:f4b2bfc1c443b5b626db69f4acd8cb4b5f4351a136ba51649811ef6ec4fbee57` |
+| 3 | `structure` | [SubstitutionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SubstitutionNamespaced.lean/declarations/substitutioncertificate.md) | 29 | `declaration-track:0cbc7dfe9ed9035302cd1e9ca7fec64f0fb0beeaf680ee058647fb47fc271ff7` |
+| 4 | `structure` | [ContextualSynonymyCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SubstitutionNamespaced.lean/declarations/contextualsynonymycertificate.md) | 53 | `declaration-track:4334a13eaaf1d4ac30d59af811a6fabf5df8d7aeaf4923b1366df10bdec1fe4a` |
+| 5 | `theorem` | [synonymy_requires_substitution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SubstitutionNamespaced.lean/declarations/synonymy-requires-substitution.md) | 67 | `result-track:458f9cbae82cff78e7d548e431f523624a831ce07919155a747026569654c071` |
+| 6 | `structure` | [GlobalSynonymyCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SubstitutionNamespaced.lean/declarations/globalsynonymycertificate.md) | 75 | `declaration-track:fa8f6098af6b5f18daa150ee6c1e971ed4a8cd4124ce0ce2b193586716deb21f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

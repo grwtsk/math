@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceLocalizedSignedConsumerNamespacedAlternative.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceLocalizedSignedConsumerNamespacedAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceLocalizedSignedConsumerNamespacedAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceLocalizedSignedConsumerNamespacedAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [compensatedLocalizedWork](../../../../MeasureAndIntegration/SourceLocalizedSignedConsumerNamespacedAlternative.lean/declarations/compensatedlocalizedwork.md) | 36 | `declaration-track:7285909ec7416bcd71652674ebafe6865699dab52cb13b517716265961fc1e4f` |
-| 2 | `theorem` | [compensatedLocalizedWork_eq_strictColumnInterior](../../../../MeasureAndIntegration/SourceLocalizedSignedConsumerNamespacedAlternative.lean/declarations/compensatedlocalizedwork-eq-strictcolumninterior.md) | 44 | `result-track:a9216edc785997dc93c6b7b3f5412bb34b1476d42b87af2dbea8e1ee86a2e272` |
-| 3 | `theorem` | [compensatedLocalizedWork_eq_original](../../../../MeasureAndIntegration/SourceLocalizedSignedConsumerNamespacedAlternative.lean/declarations/compensatedlocalizedwork-eq-original.md) | 50 | `result-track:fc6842bd46c39d30a36cafdc80afb6c18f0b4b4f441f30bec8763cc6b680afd7` |
-| 4 | `theorem` | [residual_tail_of_compensatedLocalizedWork_tail](../../../../MeasureAndIntegration/SourceLocalizedSignedConsumerNamespacedAlternative.lean/declarations/residual-tail-of-compensatedlocalizedwork-tail.md) | 56 | `result-track:f5c932d42d7b6e028c5840a179722bda15c80b083f09436397e3443906e270da` |
-| 5 | `theorem` | [estimate_of_compensatedLocalizedWork_tail](../../../../MeasureAndIntegration/SourceLocalizedSignedConsumerNamespacedAlternative.lean/declarations/estimate-of-compensatedlocalizedwork-tail.md) | 67 | `result-track:4fc1ef833d1d7e3119933932acedad5804323df166ab5bdcf53c28d0faea1644` |
-| 6 | `theorem` | [compensatedLocalizedWork_le_baseline_and_localized_mass](../../../../MeasureAndIntegration/SourceLocalizedSignedConsumerNamespacedAlternative.lean/declarations/compensatedlocalizedwork-le-baseline-and-localized-mass.md) | 77 | `result-track:c716ccce06665a3930701749e65940563b66618cb99afd898ae54e28a9f8214f` |
+| 1 | `def` | [compensatedLocalizedWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceLocalizedSignedConsumerNamespacedAlternative.lean/declarations/compensatedlocalizedwork.md) | 36 | `declaration-track:7285909ec7416bcd71652674ebafe6865699dab52cb13b517716265961fc1e4f` |
+| 2 | `theorem` | [compensatedLocalizedWork_eq_strictColumnInterior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceLocalizedSignedConsumerNamespacedAlternative.lean/declarations/compensatedlocalizedwork-eq-strictcolumninterior.md) | 44 | `result-track:a9216edc785997dc93c6b7b3f5412bb34b1476d42b87af2dbea8e1ee86a2e272` |
+| 3 | `theorem` | [compensatedLocalizedWork_eq_original](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceLocalizedSignedConsumerNamespacedAlternative.lean/declarations/compensatedlocalizedwork-eq-original.md) | 50 | `result-track:fc6842bd46c39d30a36cafdc80afb6c18f0b4b4f441f30bec8763cc6b680afd7` |
+| 4 | `theorem` | [residual_tail_of_compensatedLocalizedWork_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceLocalizedSignedConsumerNamespacedAlternative.lean/declarations/residual-tail-of-compensatedlocalizedwork-tail.md) | 56 | `result-track:f5c932d42d7b6e028c5840a179722bda15c80b083f09436397e3443906e270da` |
+| 5 | `theorem` | [estimate_of_compensatedLocalizedWork_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceLocalizedSignedConsumerNamespacedAlternative.lean/declarations/estimate-of-compensatedlocalizedwork-tail.md) | 67 | `result-track:4fc1ef833d1d7e3119933932acedad5804323df166ab5bdcf53c28d0faea1644` |
+| 6 | `theorem` | [compensatedLocalizedWork_le_baseline_and_localized_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceLocalizedSignedConsumerNamespacedAlternative.lean/declarations/compensatedlocalizedwork-le-baseline-and-localized-mass.md) | 77 | `result-track:c716ccce06665a3930701749e65940563b66618cb99afd898ae54e28a9f8214f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

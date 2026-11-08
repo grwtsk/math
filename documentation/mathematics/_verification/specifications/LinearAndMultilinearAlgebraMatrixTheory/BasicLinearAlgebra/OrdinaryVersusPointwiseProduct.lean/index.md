@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrdinaryVersusPointwiseProduct.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrdinaryVersusPointwiseProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrdinaryVersusPointwiseProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrdinaryVersusPointwiseProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [upperUnitriangular2](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrdinaryVersusPointwiseProduct.lean/declarations/upperunitriangular2.md) | 41 | `declaration-track:98432498e6d2bd7345ffeb3011b353a0f903abf485fd89c6e3de13e09b2b7fe0` |
-| 2 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrdinaryVersusPointwiseProduct.lean/declarations/example-source-edition-3.md) | 44 | `declaration-track:be97de106f9e81e558afb25058f1d81658479c417b1d60ea4dd9e9536447a761` |
-| 3 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrdinaryVersusPointwiseProduct.lean/declarations/example-source-edition-2.md) | 49 | `declaration-track:b326fc7655a3dd56fc4a5bfe1c3b99b76a48adf43cfb2b3e0e972d24e199a883` |
-| 4 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrdinaryVersusPointwiseProduct.lean/declarations/example.md) | 54 | `declaration-track:1c5bda709ed7133613ec0fac7390f727ccf8d02b3005928042d8f7476ffc6779` |
+| 1 | `def` | [upperUnitriangular2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrdinaryVersusPointwiseProduct.lean/declarations/upperunitriangular2.md) | 41 | `declaration-track:98432498e6d2bd7345ffeb3011b353a0f903abf485fd89c6e3de13e09b2b7fe0` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrdinaryVersusPointwiseProduct.lean/declarations/example-source-edition-3.md) | 44 | `declaration-track:be97de106f9e81e558afb25058f1d81658479c417b1d60ea4dd9e9536447a761` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrdinaryVersusPointwiseProduct.lean/declarations/example-source-edition-2.md) | 49 | `declaration-track:b326fc7655a3dd56fc4a5bfe1c3b99b76a48adf43cfb2b3e0e972d24e199a883` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrdinaryVersusPointwiseProduct.lean/declarations/example.md) | 54 | `declaration-track:1c5bda709ed7133613ec0fac7390f727ccf8d02b3005928042d8f7476ffc6779` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenCanonicalResidue`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalResidue.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenCanonicalResidue`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalResidue.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [GreenFrequencyClass](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/declarations/greenfrequencyclass.md) | 14 | `declaration-track:210e3f7ab9a61514e2ea5bf27c90c22f5607020caf285b06a67b94d4f2ced87c` |
-| 2 | `def` | [greenFrequencyClass](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/declarations/greenfrequencyclass-source-edition-2.md) | 20 | `declaration-track:4206638e322b3871765e71fb9761c3544b4d840b72bb9cd960173f641052850c` |
-| 3 | `theorem` | [greenFrequencyClass_alias_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/declarations/greenfrequencyclass-alias-iff.md) | 27 | `result-track:bb374cad46a0915273bec671e6f4394f08314ac60c59c09a60b7d49c39eaeec3` |
-| 4 | `theorem` | [greenFrequencyClass_low_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/declarations/greenfrequencyclass-low-iff.md) | 34 | `result-track:bb3c51a15bdffb62096de6e2a1dba0f1e044e5f0f0bbb0c9c924e5c4fe3cc777` |
-| 5 | `theorem` | [greenFrequencyClass_high_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/declarations/greenfrequencyclass-high-iff.md) | 43 | `result-track:cd05444579c9db3cf01236812034010cc8763dba9f7c436a7da657c615e1bf65` |
-| 6 | `theorem` | [canonicalResidue_zero_iff_alias](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/declarations/canonicalresidue-zero-iff-alias.md) | 53 | `result-track:a205d9f289481924859c94d27e7097a1051ab75758bb05cc653ea71845e613a5` |
-| 7 | `theorem` | [canonical_low_eq_residue](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/declarations/canonical-low-eq-residue.md) | 74 | `result-track:7adc644faa492a5398040904206576b02028248b0e2dcdfb3e1424deda69976f` |
-| 8 | `theorem` | [canonical_high_positive_quotient_parameterization](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/declarations/canonical-high-positive-quotient-parameterization.md) | 84 | `result-track:95659746c7e76f53ece1d06b377fcbafec63248102cfefd5272283dd505fb8ed` |
-| 9 | `theorem` | [canonical_high_negative_quotient_parameterization](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/declarations/canonical-high-negative-quotient-parameterization.md) | 132 | `result-track:16670e6c4ad143447e4205193ffa501d15c64091af3a1344c2585f261fb76981` |
+| 1 | `inductive` | [GreenFrequencyClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/declarations/greenfrequencyclass.md) | 14 | `declaration-track:210e3f7ab9a61514e2ea5bf27c90c22f5607020caf285b06a67b94d4f2ced87c` |
+| 2 | `def` | [greenFrequencyClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/declarations/greenfrequencyclass-source-edition-2.md) | 20 | `declaration-track:4206638e322b3871765e71fb9761c3544b4d840b72bb9cd960173f641052850c` |
+| 3 | `theorem` | [greenFrequencyClass_alias_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/declarations/greenfrequencyclass-alias-iff.md) | 27 | `result-track:bb374cad46a0915273bec671e6f4394f08314ac60c59c09a60b7d49c39eaeec3` |
+| 4 | `theorem` | [greenFrequencyClass_low_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/declarations/greenfrequencyclass-low-iff.md) | 34 | `result-track:bb3c51a15bdffb62096de6e2a1dba0f1e044e5f0f0bbb0c9c924e5c4fe3cc777` |
+| 5 | `theorem` | [greenFrequencyClass_high_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/declarations/greenfrequencyclass-high-iff.md) | 43 | `result-track:cd05444579c9db3cf01236812034010cc8763dba9f7c436a7da657c615e1bf65` |
+| 6 | `theorem` | [canonicalResidue_zero_iff_alias](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/declarations/canonicalresidue-zero-iff-alias.md) | 53 | `result-track:a205d9f289481924859c94d27e7097a1051ab75758bb05cc653ea71845e613a5` |
+| 7 | `theorem` | [canonical_low_eq_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/declarations/canonical-low-eq-residue.md) | 74 | `result-track:7adc644faa492a5398040904206576b02028248b0e2dcdfb3e1424deda69976f` |
+| 8 | `theorem` | [canonical_high_positive_quotient_parameterization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/declarations/canonical-high-positive-quotient-parameterization.md) | 84 | `result-track:95659746c7e76f53ece1d06b377fcbafec63248102cfefd5272283dd505fb8ed` |
+| 9 | `theorem` | [canonical_high_negative_quotient_parameterization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencyClassification.lean/declarations/canonical-high-negative-quotient-parameterization.md) | 132 | `result-track:16670e6c4ad143447e4205193ffa501d15c64091af3a1344c2585f261fb76981` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

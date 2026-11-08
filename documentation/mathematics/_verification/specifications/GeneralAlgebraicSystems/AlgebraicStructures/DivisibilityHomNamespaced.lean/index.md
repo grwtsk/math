@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityHomNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityHomNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityHomNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityHomNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [map_dvd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityHomNamespaced.lean/declarations/map-dvd.md) | 34 | `result-track:ef00b8425b08d7a8469dba306a3062ebd6b94ed6ed71961dca0b5ad461ba7e2e` |
-| 2 | `theorem` | [MulHom.map_dvd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityHomNamespaced.lean/declarations/mulhom-map-dvd.md) | 38 | `result-track:cfb2af175c682e704a5f70101c67dedc80330e98dbe787c2c4476da4db4cc3d1` |
-| 3 | `theorem` | [MonoidHom.map_dvd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityHomNamespaced.lean/declarations/monoidhom-map-dvd.md) | 41 | `result-track:60b96d3a34d0ade71174e5ecf2313ff9fcdc210482bf882b1a21113818b17cd3` |
+| 1 | `theorem` | [map_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityHomNamespaced.lean/declarations/map-dvd.md) | 34 | `result-track:ef00b8425b08d7a8469dba306a3062ebd6b94ed6ed71961dca0b5ad461ba7e2e` |
+| 2 | `theorem` | [MulHom.map_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityHomNamespaced.lean/declarations/mulhom-map-dvd.md) | 38 | `result-track:cfb2af175c682e704a5f70101c67dedc80330e98dbe787c2c4476da4db4cc3d1` |
+| 3 | `theorem` | [MonoidHom.map_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DivisibilityHomNamespaced.lean/declarations/monoidhom-map-dvd.md) | 41 | `result-track:60b96d3a34d0ade71174e5ecf2313ff9fcdc210482bf882b1a21113818b17cd3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

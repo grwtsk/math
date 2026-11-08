@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Size.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Size.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Size.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Size.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Tree.nodeCount](../../../../../ComputerScience/AlgorithmsInComputerScience/Size.lean/declarations/tree-nodecount.md) | 8 | `declaration-track:ac727358f2b4dea42ec2fbcd32d7d2c182174af344a8dae812021ad4142dbbaf` |
+| 1 | `def` | [Tree.nodeCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Size.lean/declarations/tree-nodecount.md) | 8 | `declaration-track:ac727358f2b4dea42ec2fbcd32d7d2c182174af344a8dae812021ad4142dbbaf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

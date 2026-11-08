@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathlib` — import line 9; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Analysis.Inequalities.ResidualEnclosure`](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.Analysis.Inequalities.ResidualEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/index.md) — import line 10; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [SymmetricOnDomain](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/symmetricondomain.md) | 32 | `declaration-track:996b8ef0d36de902a4fb8492107a19c897c0d23dd96cf02f445f2a9a6d8e077c` |
-| 2 | `def` | [CoerciveAt](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/coerciveat.md) | 35 | `declaration-track:f70df15c484eb4905ccd71f5a9d1c057f44656f05bcc6c2c02f01e6cc1a5a53d` |
-| 3 | `def` | [residual](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/residual.md) | 38 | `declaration-track:4c38272ce0a261161a2f84e542564747a16bd48076c6192dcb3f62fe2598f3dc` |
-| 4 | `def` | [lowerReading](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/lowerreading.md) | 40 | `declaration-track:ae3ce82e5c10291608d1a855b9608ad29a02981eb3f75f5957528ec51ba8a947` |
-| 5 | `theorem` | [error_equation](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/error-equation.md) | 43 | `result-track:2860cd98a63700a155d6ab939732d53ada9f46daba0e67442a7d3b232b56eb26` |
-| 6 | `theorem` | [variational_identity](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/variational-identity.md) | 49 | `result-track:eaa1985d07b7b15bd2f91c5936c372506fa4f953dcef950116e654e51e5518f6` |
-| 7 | `theorem` | [positive_height_enclosure](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/positive-height-enclosure.md) | 61 | `result-track:965a8e300fa82df77886e963544e7b2461a18143cff16bd18249f1d50440b3d9` |
-| 8 | `def` | [shift](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/shift.md) | 78 | `declaration-track:b121926904a3a650ecffcbdce00ae2d87f160bbcaaa91984aefdfa8545c96a08` |
-| 9 | `theorem` | [shift_apply](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/shift-apply.md) | 80 | `result-track:7c5c896924bda5227e25e88f937c4055579e80fd76f082432dd60f105b0454f0` |
-| 10 | `theorem` | [shift_coercive](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/shift-coercive.md) | 83 | `result-track:90d9b579f98276e0e30f8355ff34ebe4ea9006ea003d01b0ecf81fe43b9b518e` |
-| 11 | `theorem` | [shift_symmetric](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/shift-symmetric.md) | 91 | `result-track:bb40caf1698563499df57c08c6f17609343fac1c3cb80670957c5de8c903d0dc` |
-| 12 | `theorem` | [harmonic_source_reading](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/harmonic-source-reading.md) | 99 | `result-track:ba553e5080e0dc3c6d8bd02ad527e20dfe6ff31b2bf3f1c874ddcc465793c9b4` |
+| 1 | `def` | [SymmetricOnDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/symmetricondomain.md) | 32 | `declaration-track:996b8ef0d36de902a4fb8492107a19c897c0d23dd96cf02f445f2a9a6d8e077c` |
+| 2 | `def` | [CoerciveAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/coerciveat.md) | 35 | `declaration-track:f70df15c484eb4905ccd71f5a9d1c057f44656f05bcc6c2c02f01e6cc1a5a53d` |
+| 3 | `def` | [residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/residual.md) | 38 | `declaration-track:4c38272ce0a261161a2f84e542564747a16bd48076c6192dcb3f62fe2598f3dc` |
+| 4 | `def` | [lowerReading](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/lowerreading.md) | 40 | `declaration-track:ae3ce82e5c10291608d1a855b9608ad29a02981eb3f75f5957528ec51ba8a947` |
+| 5 | `theorem` | [error_equation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/error-equation.md) | 43 | `result-track:2860cd98a63700a155d6ab939732d53ada9f46daba0e67442a7d3b232b56eb26` |
+| 6 | `theorem` | [variational_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/variational-identity.md) | 49 | `result-track:eaa1985d07b7b15bd2f91c5936c372506fa4f953dcef950116e654e51e5518f6` |
+| 7 | `theorem` | [positive_height_enclosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/positive-height-enclosure.md) | 61 | `result-track:965a8e300fa82df77886e963544e7b2461a18143cff16bd18249f1d50440b3d9` |
+| 8 | `def` | [shift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/shift.md) | 78 | `declaration-track:b121926904a3a650ecffcbdce00ae2d87f160bbcaaa91984aefdfa8545c96a08` |
+| 9 | `theorem` | [shift_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/shift-apply.md) | 80 | `result-track:7c5c896924bda5227e25e88f937c4055579e80fd76f082432dd60f105b0454f0` |
+| 10 | `theorem` | [shift_coercive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/shift-coercive.md) | 83 | `result-track:90d9b579f98276e0e30f8355ff34ebe4ea9006ea003d01b0ecf81fe43b9b518e` |
+| 11 | `theorem` | [shift_symmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/shift-symmetric.md) | 91 | `result-track:bb40caf1698563499df57c08c6f17609343fac1c3cb80670957c5de8c903d0dc` |
+| 12 | `theorem` | [harmonic_source_reading](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/declarations/harmonic-source-reading.md) | 99 | `result-track:ba553e5080e0dc3c6d8bd02ad527e20dfe6ff31b2bf3f1c874ddcc465793c9b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

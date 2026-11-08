@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMinpoly.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMinpoly.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMinpoly.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMinpoly.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eigenspace_aeval_polynomial_degree_1](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMinpoly.lean/declarations/eigenspace-aeval-polynomial-degree-1.md) | 32 | `result-track:ba2db4e88f34e4d94f2ff111d3af0abf7ca3b0787116b17e1176e6573e74dd92` |
-| 2 | `theorem` | [ker_aeval_ring_hom'_unit_polynomial](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMinpoly.lean/declarations/ker-aeval-ring-hom-unit-polynomial.md) | 46 | `result-track:b1f3c2facb9c36b94565456c7f57778e64e04532f57940d6ef2cda09f9d54cd7` |
-| 3 | `theorem` | [aeval_apply_of_hasEigenvector](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMinpoly.lean/declarations/aeval-apply-of-haseigenvector.md) | 54 | `result-track:a0ae66de498a8f26b2a53a18706de330107c80ec3ab753f5b04053962fd5b71a` |
-| 4 | `theorem` | [isRoot_of_hasEigenvalue](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMinpoly.lean/declarations/isroot-of-haseigenvalue.md) | 65 | `result-track:bf663d018323871e0a45785a88092eb324c66d8ec1cad2636c24951b1ff40d42` |
-| 5 | `theorem` | [hasEigenvalue_of_isRoot](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMinpoly.lean/declarations/haseigenvalue-of-isroot.md) | 76 | `result-track:52203b33ed067b040c59e428087684261d483f6dd81d6994eaa394382096bf52` |
-| 6 | `theorem` | [hasEigenvalue_iff_isRoot](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMinpoly.lean/declarations/haseigenvalue-iff-isroot.md) | 95 | `result-track:7730b9d65be0a2caaad51df2a05effc35398e021a090883a0dea0276fce39ae6` |
-| 7 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMinpoly.lean/declarations/instance.md) | 100 | `declaration-track:3fe6ef120c8155dd49f04dcafc7cad911b9a2500265b599631eaaaa30dcf72e8` |
+| 1 | `theorem` | [eigenspace_aeval_polynomial_degree_1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMinpoly.lean/declarations/eigenspace-aeval-polynomial-degree-1.md) | 32 | `result-track:ba2db4e88f34e4d94f2ff111d3af0abf7ca3b0787116b17e1176e6573e74dd92` |
+| 2 | `theorem` | [ker_aeval_ring_hom'_unit_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMinpoly.lean/declarations/ker-aeval-ring-hom-unit-polynomial.md) | 46 | `result-track:b1f3c2facb9c36b94565456c7f57778e64e04532f57940d6ef2cda09f9d54cd7` |
+| 3 | `theorem` | [aeval_apply_of_hasEigenvector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMinpoly.lean/declarations/aeval-apply-of-haseigenvector.md) | 54 | `result-track:a0ae66de498a8f26b2a53a18706de330107c80ec3ab753f5b04053962fd5b71a` |
+| 4 | `theorem` | [isRoot_of_hasEigenvalue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMinpoly.lean/declarations/isroot-of-haseigenvalue.md) | 65 | `result-track:bf663d018323871e0a45785a88092eb324c66d8ec1cad2636c24951b1ff40d42` |
+| 5 | `theorem` | [hasEigenvalue_of_isRoot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMinpoly.lean/declarations/haseigenvalue-of-isroot.md) | 76 | `result-track:52203b33ed067b040c59e428087684261d483f6dd81d6994eaa394382096bf52` |
+| 6 | `theorem` | [hasEigenvalue_iff_isRoot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMinpoly.lean/declarations/haseigenvalue-iff-isroot.md) | 95 | `result-track:7730b9d65be0a2caaad51df2a05effc35398e021a090883a0dea0276fce39ae6` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMinpoly.lean/declarations/instance.md) | 100 | `declaration-track:3fe6ef120c8155dd49f04dcafc7cad911b9a2500265b599631eaaaa30dcf72e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

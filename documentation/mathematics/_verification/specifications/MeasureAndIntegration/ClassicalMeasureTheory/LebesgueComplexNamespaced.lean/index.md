@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [measurableEquivPi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/declarations/measurableequivpi.md) | 35 | `declaration-track:93c74e8f63473b1c4084e52f9b41fd085ca3b60cc8c780b3156e5e0e43a26e93` |
-| 2 | `theorem` | [measurableEquivPi_apply](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/declarations/measurableequivpi-apply.md) | 39 | `result-track:c84513fdacd41df75c94cfd824594de51b5cf0b7c67c680b3c56fd5534438a60` |
-| 3 | `theorem` | [measurableEquivPi_symm_apply](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/declarations/measurableequivpi-symm-apply.md) | 43 | `result-track:9e65b2b60f3fe18984abce193c59b1a0d50c4b22266a04d670dd81296301b7cb` |
-| 4 | `def` | [measurableEquivRealProd](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/declarations/measurableequivrealprod.md) | 47 | `declaration-track:974008cc754d6a14073d4232b90af8c80884597df6d4812d15699aed6b1587ba` |
-| 5 | `theorem` | [measurableEquivRealProd_apply](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/declarations/measurableequivrealprod-apply.md) | 51 | `result-track:4a108532d7471dd153eb612553d570e7d0ed5b5ae0f0890ae4b9c5fa00ee1491` |
-| 6 | `theorem` | [measurableEquivRealProd_symm_apply](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/declarations/measurableequivrealprod-symm-apply.md) | 54 | `result-track:a1c2e8adb3e456ab120d0a8208127630b938a00f4243c2bb1dff8b7a15411669` |
-| 7 | `theorem` | [volume_preserving_equiv_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/declarations/volume-preserving-equiv-pi.md) | 57 | `result-track:6b1669694568ed4231445ff50f4dc3954459587ee82f1871aa94280d6b4b49bf` |
-| 8 | `theorem` | [volume_preserving_equiv_real_prod](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/declarations/volume-preserving-equiv-real-prod.md) | 65 | `result-track:fb8ed6d31c07c8569ef7ec4741640f6e3c36e48ff1a896007cddf2f8e97e2f07` |
+| 1 | `def` | [measurableEquivPi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/declarations/measurableequivpi.md) | 35 | `declaration-track:93c74e8f63473b1c4084e52f9b41fd085ca3b60cc8c780b3156e5e0e43a26e93` |
+| 2 | `theorem` | [measurableEquivPi_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/declarations/measurableequivpi-apply.md) | 39 | `result-track:c84513fdacd41df75c94cfd824594de51b5cf0b7c67c680b3c56fd5534438a60` |
+| 3 | `theorem` | [measurableEquivPi_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/declarations/measurableequivpi-symm-apply.md) | 43 | `result-track:9e65b2b60f3fe18984abce193c59b1a0d50c4b22266a04d670dd81296301b7cb` |
+| 4 | `def` | [measurableEquivRealProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/declarations/measurableequivrealprod.md) | 47 | `declaration-track:974008cc754d6a14073d4232b90af8c80884597df6d4812d15699aed6b1587ba` |
+| 5 | `theorem` | [measurableEquivRealProd_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/declarations/measurableequivrealprod-apply.md) | 51 | `result-track:4a108532d7471dd153eb612553d570e7d0ed5b5ae0f0890ae4b9c5fa00ee1491` |
+| 6 | `theorem` | [measurableEquivRealProd_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/declarations/measurableequivrealprod-symm-apply.md) | 54 | `result-track:a1c2e8adb3e456ab120d0a8208127630b938a00f4243c2bb1dff8b7a15411669` |
+| 7 | `theorem` | [volume_preserving_equiv_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/declarations/volume-preserving-equiv-pi.md) | 57 | `result-track:6b1669694568ed4231445ff50f4dc3954459587ee82f1871aa94280d6b4b49bf` |
+| 8 | `theorem` | [volume_preserving_equiv_real_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueComplexNamespaced.lean/declarations/volume-preserving-equiv-real-prod.md) | 65 | `result-track:fb8ed6d31c07c8569ef7ec4741640f6e3c36e48ff1a896007cddf2f8e97e2f07` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

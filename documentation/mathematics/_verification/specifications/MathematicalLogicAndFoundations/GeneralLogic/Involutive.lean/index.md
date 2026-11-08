@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Involutive.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Involutive.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Involutive.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Involutive.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Involutive](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Involutive.lean/declarations/involutive.md) | 11 | `declaration-track:1585b35822c8b6c5b4f7d60367f6302b76240d1fc602da539629b0e82e81d0fc` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Involutive.lean/declarations/example-source-edition-2.md) | 14 | `declaration-track:febff2cccb45fc109e93fdd19b62ca324e52f6ee9a78c56db3e06843b120f4ab` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Involutive.lean/declarations/example.md) | 17 | `declaration-track:07daf116730ff77b46ab5dd062ab2af53b187d64d8e12f2b99cb5ff0806b9d69` |
+| 1 | `def` | [Involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Involutive.lean/declarations/involutive.md) | 11 | `declaration-track:1585b35822c8b6c5b4f7d60367f6302b76240d1fc602da539629b0e82e81d0fc` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Involutive.lean/declarations/example-source-edition-2.md) | 14 | `declaration-track:febff2cccb45fc109e93fdd19b62ca324e52f6ee9a78c56db3e06843b120f4ab` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Involutive.lean/declarations/example.md) | 17 | `declaration-track:07daf116730ff77b46ab5dd062ab2af53b187d64d8e12f2b99cb5ff0806b9d69` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SignedImbalanceAndHalfCountBounds.lean/index.md) · [Full source](../../../../Combinatorics/SignedImbalanceAndHalfCountBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SignedImbalanceAndHalfCountBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SignedImbalanceAndHalfCountBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Bitspace.Checkerboard` — import line 19; external provider; requires a separately pinned dependency.
-- [Odd Even Cardinality And Matrix Counts](../../../../Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/index.md) — import line 21; pinned internal source present.
+- [Odd Even Cardinality And Matrix Counts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [imbalance](../../../../Combinatorics/SignedImbalanceAndHalfCountBounds.lean/declarations/imbalance.md) | 43 | `declaration-track:d91cb10b5aa8a95d3cc4be206754a1d17f07d34bfab9c5cadb02bcaf40c861f2` |
-| 2 | `theorem` | [checkerboard_count_imbalance_abs_le_one](../../../../Combinatorics/SignedImbalanceAndHalfCountBounds.lean/declarations/checkerboard-count-imbalance-abs-le-one.md) | 46 | `result-track:78f49a909ad8975c745f1908bb099c5800632e1b6cd15da180e5b6aa48a5d521` |
-| 3 | `theorem` | [checkerboard_average_half_bound](../../../../Combinatorics/SignedImbalanceAndHalfCountBounds.lean/declarations/checkerboard-average-half-bound.md) | 68 | `result-track:2788edc75e10753e2d6dbcafaf8f0400ec5a5953c219c66e0b4e4410b119441b` |
+| 1 | `def` | [imbalance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SignedImbalanceAndHalfCountBounds.lean/declarations/imbalance.md) | 43 | `declaration-track:d91cb10b5aa8a95d3cc4be206754a1d17f07d34bfab9c5cadb02bcaf40c861f2` |
+| 2 | `theorem` | [checkerboard_count_imbalance_abs_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SignedImbalanceAndHalfCountBounds.lean/declarations/checkerboard-count-imbalance-abs-le-one.md) | 46 | `result-track:78f49a909ad8975c745f1908bb099c5800632e1b6cd15da180e5b6aa48a5d521` |
+| 3 | `theorem` | [checkerboard_average_half_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SignedImbalanceAndHalfCountBounds.lean/declarations/checkerboard-average-half-bound.md) | 68 | `result-track:2788edc75e10753e2d6dbcafaf8f0400ec5a5953c219c66e0b4e4410b119441b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

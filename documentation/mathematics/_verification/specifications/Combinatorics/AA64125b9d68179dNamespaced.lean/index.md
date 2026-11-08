@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/AA64125b9d68179dNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/AA64125b9d68179dNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AA64125b9d68179dNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AA64125b9d68179dNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Kind](../../../../Combinatorics/AA64125b9d68179dNamespaced.lean/declarations/kind.md) | 19 | `declaration-track:9bb15e25b5a9bcdff8d59c1ee6d2a6e25bf91c076c00537fff69ab76ac99d64c` |
+| 1 | `inductive` | [Kind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AA64125b9d68179dNamespaced.lean/declarations/kind.md) | 19 | `declaration-track:9bb15e25b5a9bcdff8d59c1ee6d2a6e25bf91c076c00537fff69ab76ac99d64c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

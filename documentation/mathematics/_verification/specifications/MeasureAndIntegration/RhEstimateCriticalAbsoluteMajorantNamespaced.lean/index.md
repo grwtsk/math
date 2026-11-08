@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RhEstimateCriticalAbsoluteMajorantNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RhEstimateCriticalAbsoluteMajorantNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateCriticalAbsoluteMajorantNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateCriticalAbsoluteMajorantNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateCriticalAbsoluteMajorantNamespaced.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:9aff45b59221e4518c90432c622842e83f705a959977ec3c59c2e6d704965e2f` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateCriticalAbsoluteMajorantNamespaced.lean/declarations/example.md) | 24 | `declaration-track:54fce4bd914c3fcb81b852fd2a9153b706b5a263cf441be541fb3e2e3fbd8148` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateCriticalAbsoluteMajorantNamespaced.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:9aff45b59221e4518c90432c622842e83f705a959977ec3c59c2e6d704965e2f` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateCriticalAbsoluteMajorantNamespaced.lean/declarations/example.md) | 24 | `declaration-track:54fce4bd914c3fcb81b852fd2a9153b706b5a263cf441be541fb3e2e3fbd8148` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

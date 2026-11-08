@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryFlow.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryFlow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryFlow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryFlow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SurgeryStepSound](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryFlow.lean/declarations/surgerystepsound.md) | 6 | `declaration-track:16e8c5581a3085becc97ca8bed9eb93addeeb83ad1dd294686a57c150c52c327` |
-| 2 | `structure` | [RicciFlowWithSurgery](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryFlow.lean/declarations/ricciflowwithsurgery.md) | 10 | `declaration-track:2e5d9878d31511544b4bfe66a795ac90e076e29881f42ce531937b8e5f4dd406` |
+| 1 | `structure` | [SurgeryStepSound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryFlow.lean/declarations/surgerystepsound.md) | 6 | `declaration-track:16e8c5581a3085becc97ca8bed9eb93addeeb83ad1dd294686a57c150c52c327` |
+| 2 | `structure` | [RicciFlowWithSurgery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryFlow.lean/declarations/ricciflowwithsurgery.md) | 10 | `declaration-track:2e5d9878d31511544b4bfe66a795ac90e076e29881f42ce531937b8e5f4dd406` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

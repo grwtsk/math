@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/OpenQuotientNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/OpenQuotientNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenQuotientNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenQuotientNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [id](../../../../GeneralTopology/OpenQuotientNamespaced.lean/declarations/id.md) | 39 | `result-track:ac279ed19f6202256c743ed8eb6c38ddc4c319b0a3a324e0b2341fa27f079ffd` |
-| 2 | `theorem` | [isQuotientMap](../../../../GeneralTopology/OpenQuotientNamespaced.lean/declarations/isquotientmap.md) | 42 | `result-track:4b12906234d582ff7874c46e28e5af8d7b5f052ebdff34f149d60057fc13e3a4` |
-| 3 | `theorem` | [iff_isOpenMap_isQuotientMap](../../../../GeneralTopology/OpenQuotientNamespaced.lean/declarations/iff-isopenmap-isquotientmap.md) | 48 | `result-track:424956a40827ab41c5edb88415bea6b90388a07961d3c3baf21dee74bb015b98` |
-| 4 | `theorem` | [of_isOpenMap_isQuotientMap](../../../../GeneralTopology/OpenQuotientNamespaced.lean/declarations/of-isopenmap-isquotientmap.md) | 54 | `result-track:99bd04aafd789c4a04975177400b8c2d9d5602ea3e001432cc18b805084294cf` |
-| 5 | `theorem` | [comp](../../../../GeneralTopology/OpenQuotientNamespaced.lean/declarations/comp.md) | 61 | `result-track:a2d0072cca9630adff119f7e108b21dbc51ad21031f1f0d03bd45e7a8e73241e` |
-| 6 | `theorem` | [map_nhds_eq](../../../../GeneralTopology/OpenQuotientNamespaced.lean/declarations/map-nhds-eq.md) | 65 | `result-track:e744a2295935ee624189a6607860a5f29c162c8e7fa91f2427591acead8d36ca` |
-| 7 | `theorem` | [continuous_comp_iff](../../../../GeneralTopology/OpenQuotientNamespaced.lean/declarations/continuous-comp-iff.md) | 68 | `result-track:f60995e1b2e63c1f1b20e7d3babdd7d905851d0ce1f3c1b9d739efd3e9f3fccf` |
-| 8 | `theorem` | [continuousAt_comp_iff](../../../../GeneralTopology/OpenQuotientNamespaced.lean/declarations/continuousat-comp-iff.md) | 72 | `result-track:dcf5bb760b73fa2a5bb3e940a4045fb8e9f80033e103d13ba6e3d8daa1bde25f` |
-| 9 | `theorem` | [dense_preimage_iff](../../../../GeneralTopology/OpenQuotientNamespaced.lean/declarations/dense-preimage-iff.md) | 76 | `result-track:1693cf74ba2279b90ce7f7e96cae089a7e878413100be9dfe4c1c8200f349131` |
-| 10 | `lemma` | [coinduced_eq_induced_of_isOpenQuotientMap_of_isInducing](../../../../GeneralTopology/OpenQuotientNamespaced.lean/declarations/coinduced-eq-induced-of-isopenquotientmap-of-isinducing.md) | 105 | `result-track:89dcae93ac023c2ecf28ea7f385d3a13e8135b82bbdd9ee68af6074eca3ade5b` |
-| 11 | `lemma` | [isEmbedding_of_isOpenQuotientMap_of_isInducing](../../../../GeneralTopology/OpenQuotientNamespaced.lean/declarations/isembedding-of-isopenquotientmap-of-isinducing.md) | 132 | `result-track:d031457b5bcf8a4c783c1ab97a2a556c7a489061a6d1846fbf5b2920b6983605` |
-| 12 | `lemma` | [isQuotientMap_of_isOpenQuotientMap_of_isInducing](../../../../GeneralTopology/OpenQuotientNamespaced.lean/declarations/isquotientmap-of-isopenquotientmap-of-isinducing.md) | 141 | `result-track:a71faad7d63cf0c6b5e67d5047095553ddd475c94dcf77025a6315ed01d94c42` |
+| 1 | `theorem` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenQuotientNamespaced.lean/declarations/id.md) | 39 | `result-track:ac279ed19f6202256c743ed8eb6c38ddc4c319b0a3a324e0b2341fa27f079ffd` |
+| 2 | `theorem` | [isQuotientMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenQuotientNamespaced.lean/declarations/isquotientmap.md) | 42 | `result-track:4b12906234d582ff7874c46e28e5af8d7b5f052ebdff34f149d60057fc13e3a4` |
+| 3 | `theorem` | [iff_isOpenMap_isQuotientMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenQuotientNamespaced.lean/declarations/iff-isopenmap-isquotientmap.md) | 48 | `result-track:424956a40827ab41c5edb88415bea6b90388a07961d3c3baf21dee74bb015b98` |
+| 4 | `theorem` | [of_isOpenMap_isQuotientMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenQuotientNamespaced.lean/declarations/of-isopenmap-isquotientmap.md) | 54 | `result-track:99bd04aafd789c4a04975177400b8c2d9d5602ea3e001432cc18b805084294cf` |
+| 5 | `theorem` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenQuotientNamespaced.lean/declarations/comp.md) | 61 | `result-track:a2d0072cca9630adff119f7e108b21dbc51ad21031f1f0d03bd45e7a8e73241e` |
+| 6 | `theorem` | [map_nhds_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenQuotientNamespaced.lean/declarations/map-nhds-eq.md) | 65 | `result-track:e744a2295935ee624189a6607860a5f29c162c8e7fa91f2427591acead8d36ca` |
+| 7 | `theorem` | [continuous_comp_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenQuotientNamespaced.lean/declarations/continuous-comp-iff.md) | 68 | `result-track:f60995e1b2e63c1f1b20e7d3babdd7d905851d0ce1f3c1b9d739efd3e9f3fccf` |
+| 8 | `theorem` | [continuousAt_comp_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenQuotientNamespaced.lean/declarations/continuousat-comp-iff.md) | 72 | `result-track:dcf5bb760b73fa2a5bb3e940a4045fb8e9f80033e103d13ba6e3d8daa1bde25f` |
+| 9 | `theorem` | [dense_preimage_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenQuotientNamespaced.lean/declarations/dense-preimage-iff.md) | 76 | `result-track:1693cf74ba2279b90ce7f7e96cae089a7e878413100be9dfe4c1c8200f349131` |
+| 10 | `lemma` | [coinduced_eq_induced_of_isOpenQuotientMap_of_isInducing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenQuotientNamespaced.lean/declarations/coinduced-eq-induced-of-isopenquotientmap-of-isinducing.md) | 105 | `result-track:89dcae93ac023c2ecf28ea7f385d3a13e8135b82bbdd9ee68af6074eca3ade5b` |
+| 11 | `lemma` | [isEmbedding_of_isOpenQuotientMap_of_isInducing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenQuotientNamespaced.lean/declarations/isembedding-of-isopenquotientmap-of-isinducing.md) | 132 | `result-track:d031457b5bcf8a4c783c1ab97a2a556c7a489061a6d1846fbf5b2920b6983605` |
+| 12 | `lemma` | [isQuotientMap_of_isOpenQuotientMap_of_isInducing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenQuotientNamespaced.lean/declarations/isquotientmap-of-isopenquotientmap-of-isinducing.md) | 141 | `result-track:a71faad7d63cf0c6b5e67d5047095553ddd475c94dcf77025a6315ed01d94c42` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

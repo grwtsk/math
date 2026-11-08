@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CompactProfileTailSigns.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CompactProfileTailSigns.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileTailSigns.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileTailSigns.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.TestFunctions.PowerFourResidualSigns`](../../../../RealFunctions/PowerFourResidualSigns.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.TestFunctions.PowerFourResidualSigns`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowerFourResidualSigns.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tail_product_signs](../../../../MeasureAndIntegration/CompactProfileTailSigns.lean/declarations/tail-product-signs.md) | 21 | `result-track:eefd499227cf28e4d5398e60a7cda833475488b3cdbfca15f255b7c2498d4867` |
-| 2 | `theorem` | [tail_first_product_continuous](../../../../MeasureAndIntegration/CompactProfileTailSigns.lean/declarations/tail-first-product-continuous.md) | 51 | `result-track:33e078eb05b5ffd7c692625d44eb10bf8259575fe7fe212206abc803084ebafb` |
-| 3 | `theorem` | [tail_curvature_product_continuous](../../../../MeasureAndIntegration/CompactProfileTailSigns.lean/declarations/tail-curvature-product-continuous.md) | 58 | `result-track:ee848e637e53ed7e6e8f0686f4834362c25f25e7c60af9e08de185cc75124802` |
-| 4 | `theorem` | [tail_first_product_integrable](../../../../MeasureAndIntegration/CompactProfileTailSigns.lean/declarations/tail-first-product-integrable.md) | 65 | `result-track:8e59beee0f6f51fcd59f7b592b3b7bda6d8eb6fabe3e99fb481aa5fe4abe0926` |
-| 5 | `theorem` | [tail_curvature_product_integrable](../../../../MeasureAndIntegration/CompactProfileTailSigns.lean/declarations/tail-curvature-product-integrable.md) | 74 | `result-track:9b2aa467a851ba3fc3e708ddc04f9e5c5283df8fee971a8543a6d1f63a08eb22` |
-| 6 | `theorem` | [tail_first_deriv_eq_integral](../../../../MeasureAndIntegration/CompactProfileTailSigns.lean/declarations/tail-first-deriv-eq-integral.md) | 83 | `result-track:8f5b2547da4e7747c53801062436219ea6dc34c361b4bbf833dc5a81f3a96995` |
-| 7 | `theorem` | [tail_first_deriv_nonpos](../../../../MeasureAndIntegration/CompactProfileTailSigns.lean/declarations/tail-first-deriv-nonpos.md) | 93 | `result-track:73360b0b36d24bd674a19f3fe75ebb6b617958fadc4ef0156d79640c07ce0db5` |
-| 8 | `theorem` | [tail_second_deriv_pos](../../../../MeasureAndIntegration/CompactProfileTailSigns.lean/declarations/tail-second-deriv-pos.md) | 98 | `result-track:c7c66e55c043ad151926783923ccc79033d05cdd576cbd78dbf5f36d4832e338` |
-| 9 | `theorem` | [tail_atom_pos](../../../../MeasureAndIntegration/CompactProfileTailSigns.lean/declarations/tail-atom-pos.md) | 114 | `result-track:0811500f8ab57aa5288f4023fde7bb7553535ecc53f9c42ae560c0f353b3d4dc` |
+| 1 | `theorem` | [tail_product_signs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileTailSigns.lean/declarations/tail-product-signs.md) | 21 | `result-track:eefd499227cf28e4d5398e60a7cda833475488b3cdbfca15f255b7c2498d4867` |
+| 2 | `theorem` | [tail_first_product_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileTailSigns.lean/declarations/tail-first-product-continuous.md) | 51 | `result-track:33e078eb05b5ffd7c692625d44eb10bf8259575fe7fe212206abc803084ebafb` |
+| 3 | `theorem` | [tail_curvature_product_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileTailSigns.lean/declarations/tail-curvature-product-continuous.md) | 58 | `result-track:ee848e637e53ed7e6e8f0686f4834362c25f25e7c60af9e08de185cc75124802` |
+| 4 | `theorem` | [tail_first_product_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileTailSigns.lean/declarations/tail-first-product-integrable.md) | 65 | `result-track:8e59beee0f6f51fcd59f7b592b3b7bda6d8eb6fabe3e99fb481aa5fe4abe0926` |
+| 5 | `theorem` | [tail_curvature_product_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileTailSigns.lean/declarations/tail-curvature-product-integrable.md) | 74 | `result-track:9b2aa467a851ba3fc3e708ddc04f9e5c5283df8fee971a8543a6d1f63a08eb22` |
+| 6 | `theorem` | [tail_first_deriv_eq_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileTailSigns.lean/declarations/tail-first-deriv-eq-integral.md) | 83 | `result-track:8f5b2547da4e7747c53801062436219ea6dc34c361b4bbf833dc5a81f3a96995` |
+| 7 | `theorem` | [tail_first_deriv_nonpos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileTailSigns.lean/declarations/tail-first-deriv-nonpos.md) | 93 | `result-track:73360b0b36d24bd674a19f3fe75ebb6b617958fadc4ef0156d79640c07ce0db5` |
+| 8 | `theorem` | [tail_second_deriv_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileTailSigns.lean/declarations/tail-second-deriv-pos.md) | 98 | `result-track:c7c66e55c043ad151926783923ccc79033d05cdd576cbd78dbf5f36d4832e338` |
+| 9 | `theorem` | [tail_atom_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileTailSigns.lean/declarations/tail-atom-pos.md) | 114 | `result-track:0811500f8ab57aa5288f4023fde7bb7553535ecc53f9c42ae560c0f353b3d4dc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

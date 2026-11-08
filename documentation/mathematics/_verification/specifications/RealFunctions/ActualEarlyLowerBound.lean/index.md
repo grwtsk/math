@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ActualEarlyLowerBound.lean/index.md) · [Full source](../../../../RealFunctions/ActualEarlyLowerBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualCriticalWeight_upper_curvature](../../../../RealFunctions/ActualEarlyLowerBound.lean/declarations/actualcriticalweight-upper-curvature.md) | 25 | `result-track:c2a697ac212c91be8d26fbd7c62e13a053f523ffde25b5e44cf2e2f7fb861f86` |
-| 2 | `theorem` | [exp_neg_half_log_eq_inv_sqrt](../../../../RealFunctions/ActualEarlyLowerBound.lean/declarations/exp-neg-half-log-eq-inv-sqrt.md) | 38 | `result-track:205744c273a66673f337d2730b01416d555b639adf44160a1d19e6ad58bb548a` |
-| 3 | `theorem` | [actualEarlyDerivative_lower_curvature](../../../../RealFunctions/ActualEarlyLowerBound.lean/declarations/actualearlyderivative-lower-curvature.md) | 45 | `result-track:3d3a6a56cf07c111e42d453d2e5923594164f8a41abd1d9fe213dc77d6222d4b` |
-| 4 | `def` | [earlyLowerPrimitive](../../../../RealFunctions/ActualEarlyLowerBound.lean/declarations/earlylowerprimitive.md) | 79 | `declaration-track:512473ac4bc489fe2161fc92874c3e376507019b4c5b624f08707c941f1d6f7e` |
-| 5 | `theorem` | [earlyLowerPrimitive_hasDerivAt](../../../../RealFunctions/ActualEarlyLowerBound.lean/declarations/earlylowerprimitive-hasderivat.md) | 83 | `result-track:1dfb22dbdfeeaecd5688ce4668445d0c1530fb88140083a29e3408d22f25231b` |
-| 6 | `theorem` | [complementaryEarlyBaseline_lower_curvature_endpoint](../../../../RealFunctions/ActualEarlyLowerBound.lean/declarations/complementaryearlybaseline-lower-curvature-endpoint.md) | 104 | `result-track:0fec6816e9148e95b8e1f90c55cd12ac0656c02d94a1505ede15c41927cf8d29` |
-| 7 | `theorem` | [complementaryEarlyBaseline_lower_neg_scale_sub_four](../../../../RealFunctions/ActualEarlyLowerBound.lean/declarations/complementaryearlybaseline-lower-neg-scale-sub-four.md) | 143 | `result-track:144583a3f37ce648eb1532f9ff58141cd23aff31ee010a41577cd6175712bf9f` |
-| 8 | `theorem` | [complementaryEarlyBaseline_add_scale_abs_le_seven](../../../../RealFunctions/ActualEarlyLowerBound.lean/declarations/complementaryearlybaseline-add-scale-abs-le-seven.md) | 154 | `result-track:5de8d762caf6df0cd93e903bbb43a14cf49765bbbcec15c25593983ecccdbb78` |
+| 1 | `theorem` | [actualCriticalWeight_upper_curvature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBound.lean/declarations/actualcriticalweight-upper-curvature.md) | 25 | `result-track:c2a697ac212c91be8d26fbd7c62e13a053f523ffde25b5e44cf2e2f7fb861f86` |
+| 2 | `theorem` | [exp_neg_half_log_eq_inv_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBound.lean/declarations/exp-neg-half-log-eq-inv-sqrt.md) | 38 | `result-track:205744c273a66673f337d2730b01416d555b639adf44160a1d19e6ad58bb548a` |
+| 3 | `theorem` | [actualEarlyDerivative_lower_curvature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBound.lean/declarations/actualearlyderivative-lower-curvature.md) | 45 | `result-track:3d3a6a56cf07c111e42d453d2e5923594164f8a41abd1d9fe213dc77d6222d4b` |
+| 4 | `def` | [earlyLowerPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBound.lean/declarations/earlylowerprimitive.md) | 79 | `declaration-track:512473ac4bc489fe2161fc92874c3e376507019b4c5b624f08707c941f1d6f7e` |
+| 5 | `theorem` | [earlyLowerPrimitive_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBound.lean/declarations/earlylowerprimitive-hasderivat.md) | 83 | `result-track:1dfb22dbdfeeaecd5688ce4668445d0c1530fb88140083a29e3408d22f25231b` |
+| 6 | `theorem` | [complementaryEarlyBaseline_lower_curvature_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBound.lean/declarations/complementaryearlybaseline-lower-curvature-endpoint.md) | 104 | `result-track:0fec6816e9148e95b8e1f90c55cd12ac0656c02d94a1505ede15c41927cf8d29` |
+| 7 | `theorem` | [complementaryEarlyBaseline_lower_neg_scale_sub_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBound.lean/declarations/complementaryearlybaseline-lower-neg-scale-sub-four.md) | 143 | `result-track:144583a3f37ce648eb1532f9ff58141cd23aff31ee010a41577cd6175712bf9f` |
+| 8 | `theorem` | [complementaryEarlyBaseline_add_scale_abs_le_seven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBound.lean/declarations/complementaryearlybaseline-add-scale-abs-le-seven.md) | 154 | `result-track:5de8d762caf6df0cd93e903bbb43a14cf49765bbbcec15c25593983ecccdbb78` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

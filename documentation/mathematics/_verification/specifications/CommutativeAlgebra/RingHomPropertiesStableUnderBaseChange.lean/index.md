@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [RespectsIso](../../../../CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/declarations/respectsiso.md) | 41 | `declaration-track:5ca359dcc3bd842d7cf7aa1ac9211e1cd9e90a22a6f744151813be925d5325ea` |
-| 2 | `theorem` | [RespectsIso.cancel_left_isIso](../../../../CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/declarations/respectsiso-cancel-left-isiso.md) | 50 | `result-track:1809c423c1b5f985c4846679fadfdd9d750b642a9d4681e789b43984deec3f86` |
-| 3 | `theorem` | [RespectsIso.cancel_right_isIso](../../../../CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/declarations/respectsiso-cancel-right-isiso.md) | 57 | `result-track:c8f2084233bcf8d958d609a0169b53611d7c3f488e9e00491ac8fb3e0330e4eb` |
-| 4 | `theorem` | [RespectsIso.is_localization_away_iff](../../../../CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/declarations/respectsiso-is-localization-away-iff.md) | 65 | `result-track:d9cebbcfce39187495dd8149296984724f2c879313163ecd29fb035ba8fa3099` |
-| 5 | `def` | [StableUnderComposition](../../../../CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/declarations/stableundercomposition.md) | 100 | `declaration-track:8dd92864965eafdd06bd2c19f930f47d34c6e951118eccc227e8ca461e4146dc` |
-| 6 | `theorem` | [StableUnderComposition.respectsIso](../../../../CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/declarations/stableundercomposition-respectsiso.md) | 107 | `result-track:560512c6644f253178c7d11897d8f182457ee76eb783730a7f1ab8f685f693ef` |
-| 7 | `def` | [StableUnderBaseChange](../../../../CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/declarations/stableunderbasechange.md) | 127 | `declaration-track:f74d290cfaecbcf25275f5b0ffb2643f320985ec186b7fcb7dadfb9107e78e84` |
-| 8 | `theorem` | [StableUnderBaseChange.mk](../../../../CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/declarations/stableunderbasechange-mk.md) | 134 | `result-track:ccc731532ab2a727545d39960d0763805e21229f3ea47ce5fbff528b314a66a6` |
-| 9 | `theorem` | [StableUnderBaseChange.pushout_inl](../../../../CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/declarations/stableunderbasechange-pushout-inl.md) | 170 | `result-track:6b6d7122a88c2c1901cabf9ba8636069d254a1b61599bb6ead304040d8549c69` |
+| 1 | `def` | [RespectsIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/declarations/respectsiso.md) | 41 | `declaration-track:5ca359dcc3bd842d7cf7aa1ac9211e1cd9e90a22a6f744151813be925d5325ea` |
+| 2 | `theorem` | [RespectsIso.cancel_left_isIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/declarations/respectsiso-cancel-left-isiso.md) | 50 | `result-track:1809c423c1b5f985c4846679fadfdd9d750b642a9d4681e789b43984deec3f86` |
+| 3 | `theorem` | [RespectsIso.cancel_right_isIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/declarations/respectsiso-cancel-right-isiso.md) | 57 | `result-track:c8f2084233bcf8d958d609a0169b53611d7c3f488e9e00491ac8fb3e0330e4eb` |
+| 4 | `theorem` | [RespectsIso.is_localization_away_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/declarations/respectsiso-is-localization-away-iff.md) | 65 | `result-track:d9cebbcfce39187495dd8149296984724f2c879313163ecd29fb035ba8fa3099` |
+| 5 | `def` | [StableUnderComposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/declarations/stableundercomposition.md) | 100 | `declaration-track:8dd92864965eafdd06bd2c19f930f47d34c6e951118eccc227e8ca461e4146dc` |
+| 6 | `theorem` | [StableUnderComposition.respectsIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/declarations/stableundercomposition-respectsiso.md) | 107 | `result-track:560512c6644f253178c7d11897d8f182457ee76eb783730a7f1ab8f685f693ef` |
+| 7 | `def` | [StableUnderBaseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/declarations/stableunderbasechange.md) | 127 | `declaration-track:f74d290cfaecbcf25275f5b0ffb2643f320985ec186b7fcb7dadfb9107e78e84` |
+| 8 | `theorem` | [StableUnderBaseChange.mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/declarations/stableunderbasechange-mk.md) | 134 | `result-track:ccc731532ab2a727545d39960d0763805e21229f3ea47ce5fbff528b314a66a6` |
+| 9 | `theorem` | [StableUnderBaseChange.pushout_inl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomPropertiesStableUnderBaseChange.lean/declarations/stableunderbasechange-pushout-inl.md) | 170 | `result-track:6b6d7122a88c2c1901cabf9ba8636069d254a1b61599bb6ead304040d8549c69` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

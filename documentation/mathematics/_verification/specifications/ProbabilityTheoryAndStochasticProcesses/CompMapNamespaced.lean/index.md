@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [deterministic_comp_eq_map](../../../../ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/deterministic-comp-eq-map.md) | 42 | `result-track:817bd6328074fb71beb1762fd682fe00872c22d0d9df277d0116b4006f3adb48` |
-| 2 | `theorem` | [comp_deterministic_eq_comap](../../../../ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/comp-deterministic-eq-comap.md) | 48 | `result-track:a824e55d747463834b715d70e8cddc712c11e64883ec182492088d13a627809e` |
-| 3 | `lemma` | [deterministic_comp_deterministic](../../../../ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/deterministic-comp-deterministic.md) | 54 | `result-track:dfeb05acc79d8d44fd07ad2ca66be7c89c43acaa8c1c89a4bf9655c52dbbedd5` |
-| 4 | `lemma` | [comp_id](../../../../ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/comp-id.md) | 59 | `result-track:fac45bedc00b2d7fcd34976d76b16a9b4d2dd8f24741e9841f06f3afdfda97ae` |
-| 5 | `lemma` | [id_comp](../../../../ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/id-comp.md) | 63 | `result-track:bafa59d0fb0729dd0ac6bf8cb8e01bfc050cc9344c22b5f7bc5ec36f201c01d6` |
-| 6 | `lemma` | [swap_swap](../../../../ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/swap-swap.md) | 67 | `result-track:e3dc29b1930c497ce568bf909dfbf670b8cdae56e1c722b82f827ae0708d0b54` |
-| 7 | `lemma` | [swap_comp_eq_map](../../../../ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/swap-comp-eq-map.md) | 70 | `result-track:8050b01f5d1e2850b8b3b7ecab1f6000e1c04127cf449e0dce12e8368411c6b2` |
-| 8 | `lemma` | [map_comp](../../../../ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/map-comp.md) | 73 | `result-track:64a5726b8d55133dad660fdc9955943de204e8b7204630827c5c2eb4a33c80d1` |
-| 9 | `lemma` | [comp_map](../../../../ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/comp-map.md) | 82 | `result-track:0c86e9ec046b7b0b042719d27fbbd062043d885bbdc994a3e596367b95a6167d` |
-| 10 | `lemma` | [fst_comp](../../../../ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/fst-comp.md) | 88 | `result-track:39a75a1bfdad3abf9d8324d3d1e007e5f4e0829852437d8309b2342eb6de60b0` |
-| 11 | `lemma` | [snd_comp](../../../../ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/snd-comp.md) | 91 | `result-track:87fc17042f37578d1fbb817ccd7811d45a0c0b94d9d85f7217f56c3e72ac4d11` |
+| 1 | `theorem` | [deterministic_comp_eq_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/deterministic-comp-eq-map.md) | 42 | `result-track:817bd6328074fb71beb1762fd682fe00872c22d0d9df277d0116b4006f3adb48` |
+| 2 | `theorem` | [comp_deterministic_eq_comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/comp-deterministic-eq-comap.md) | 48 | `result-track:a824e55d747463834b715d70e8cddc712c11e64883ec182492088d13a627809e` |
+| 3 | `lemma` | [deterministic_comp_deterministic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/deterministic-comp-deterministic.md) | 54 | `result-track:dfeb05acc79d8d44fd07ad2ca66be7c89c43acaa8c1c89a4bf9655c52dbbedd5` |
+| 4 | `lemma` | [comp_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/comp-id.md) | 59 | `result-track:fac45bedc00b2d7fcd34976d76b16a9b4d2dd8f24741e9841f06f3afdfda97ae` |
+| 5 | `lemma` | [id_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/id-comp.md) | 63 | `result-track:bafa59d0fb0729dd0ac6bf8cb8e01bfc050cc9344c22b5f7bc5ec36f201c01d6` |
+| 6 | `lemma` | [swap_swap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/swap-swap.md) | 67 | `result-track:e3dc29b1930c497ce568bf909dfbf670b8cdae56e1c722b82f827ae0708d0b54` |
+| 7 | `lemma` | [swap_comp_eq_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/swap-comp-eq-map.md) | 70 | `result-track:8050b01f5d1e2850b8b3b7ecab1f6000e1c04127cf449e0dce12e8368411c6b2` |
+| 8 | `lemma` | [map_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/map-comp.md) | 73 | `result-track:64a5726b8d55133dad660fdc9955943de204e8b7204630827c5c2eb4a33c80d1` |
+| 9 | `lemma` | [comp_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/comp-map.md) | 82 | `result-track:0c86e9ec046b7b0b042719d27fbbd062043d885bbdc994a3e596367b95a6167d` |
+| 10 | `lemma` | [fst_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/fst-comp.md) | 88 | `result-track:39a75a1bfdad3abf9d8324d3d1e007e5f4e0829852437d8309b2342eb6de60b0` |
+| 11 | `lemma` | [snd_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompMapNamespaced.lean/declarations/snd-comp.md) | 91 | `result-track:87fc17042f37578d1fbb817ccd7811d45a0c0b94d9d85f7217f56c3e72ac4d11` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

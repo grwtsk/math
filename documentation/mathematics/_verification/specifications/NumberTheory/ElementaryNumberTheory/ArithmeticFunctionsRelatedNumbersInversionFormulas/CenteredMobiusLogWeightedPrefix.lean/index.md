@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogWeightedPrefix.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogWeightedPrefix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogWeightedPrefix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogWeightedPrefix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogEnergyStrength`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogEnergyStrength.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogEnergyStrength`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogEnergyStrength.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [centeredGreenWeightedPrefix](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogWeightedPrefix.lean/declarations/centeredgreenweightedprefix.md) | 15 | `declaration-track:b164473848afa382f310d9451eb50a2e04799ca351afa5c64dd725f244a692d0` |
-| 2 | `def` | [centeredGreenBaselineWeightedPrefix](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogWeightedPrefix.lean/declarations/centeredgreenbaselineweightedprefix.md) | 19 | `declaration-track:69ec7050c8d6c76e01fefcac70c486513ea86ae1ba93fa02ab9404224fd9469f` |
-| 3 | `def` | [centeredGreenWeightedPrefixError](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogWeightedPrefix.lean/declarations/centeredgreenweightedprefixerror.md) | 22 | `declaration-track:c1b0279ce766069a80db2d2f70e8b31d0ad3866c63e891830eb2202121b1ff64` |
-| 4 | `theorem` | [centeredGreenWeightedPrefixError_abel](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogWeightedPrefix.lean/declarations/centeredgreenweightedprefixerror-abel.md) | 27 | `result-track:acbf1443f4032e3e7eeda98e8b87b2724f776fdcd145e9cf7d68a19ca43c6c75` |
-| 5 | `theorem` | [abs_centeredGreenWeightedPrefixError_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogWeightedPrefix.lean/declarations/abs-centeredgreenweightedprefixerror-le.md) | 59 | `result-track:f3647b4214c2426b40a19003c3253986ebf39f29c9acb3701f5fc0c410e82421` |
+| 1 | `def` | [centeredGreenWeightedPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogWeightedPrefix.lean/declarations/centeredgreenweightedprefix.md) | 15 | `declaration-track:b164473848afa382f310d9451eb50a2e04799ca351afa5c64dd725f244a692d0` |
+| 2 | `def` | [centeredGreenBaselineWeightedPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogWeightedPrefix.lean/declarations/centeredgreenbaselineweightedprefix.md) | 19 | `declaration-track:69ec7050c8d6c76e01fefcac70c486513ea86ae1ba93fa02ab9404224fd9469f` |
+| 3 | `def` | [centeredGreenWeightedPrefixError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogWeightedPrefix.lean/declarations/centeredgreenweightedprefixerror.md) | 22 | `declaration-track:c1b0279ce766069a80db2d2f70e8b31d0ad3866c63e891830eb2202121b1ff64` |
+| 4 | `theorem` | [centeredGreenWeightedPrefixError_abel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogWeightedPrefix.lean/declarations/centeredgreenweightedprefixerror-abel.md) | 27 | `result-track:acbf1443f4032e3e7eeda98e8b87b2724f776fdcd145e9cf7d68a19ca43c6c75` |
+| 5 | `theorem` | [abs_centeredGreenWeightedPrefixError_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogWeightedPrefix.lean/declarations/abs-centeredgreenweightedprefixerror-le.md) | 59 | `result-track:f3647b4214c2426b40a19003c3253986ebf39f29c9acb3701f5fc0c410e82421` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

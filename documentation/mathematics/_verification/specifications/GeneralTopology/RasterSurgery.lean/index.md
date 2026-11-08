@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/RasterSurgery.lean/index.md) · [Full source](../../../../GeneralTopology/RasterSurgery.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RasterSurgery.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RasterSurgery.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pointInMeshSurgery](../../../../GeneralTopology/RasterSurgery.lean/declarations/pointinmeshsurgery.md) | 21 | `declaration-track:3e7200514e07e15d5c10bf6a3d145ba760bdc191703a4d10dc94cc95e5dd60a9` |
-| 2 | `def` | [rasterFieldOnCell](../../../../GeneralTopology/RasterSurgery.lean/declarations/rasterfieldoncell.md) | 34 | `declaration-track:12863b0d0f6e494c810f20c7d82ad2bdef16d8521c14de021c34b46403dd86fc` |
-| 3 | `structure` | [RasterSurgery](../../../../GeneralTopology/RasterSurgery.lean/declarations/rastersurgery.md) | 48 | `declaration-track:527f9d0a35f97428af3bcf81b69a5e072fe9dc42814a31ff408deb917c7c1c41` |
-| 4 | `theorem` | [vertex_charge_preserved](../../../../GeneralTopology/RasterSurgery.lean/declarations/vertex-charge-preserved.md) | 96 | `result-track:2d154e9f2b015db68e9147d2fb15a5e562639c14eb65f5c6f3f551a0b50c7a8e` |
-| 5 | `theorem` | [field_eq_outside_locus](../../../../GeneralTopology/RasterSurgery.lean/declarations/field-eq-outside-locus.md) | 105 | `result-track:150773c4c341c20c12916ae8dffa07d1e0eca2b995dd63bdf08bf5c5ec35de1d` |
-| 6 | `structure` | [ReversibleRasterSurgery](../../../../GeneralTopology/RasterSurgery.lean/declarations/reversiblerastersurgery.md) | 116 | `declaration-track:07c95b7bcdbbce7925e4373abdf7b80ee61ed24f16fe58bc5e579908917a7140` |
+| 1 | `def` | [pointInMeshSurgery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RasterSurgery.lean/declarations/pointinmeshsurgery.md) | 21 | `declaration-track:3e7200514e07e15d5c10bf6a3d145ba760bdc191703a4d10dc94cc95e5dd60a9` |
+| 2 | `def` | [rasterFieldOnCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RasterSurgery.lean/declarations/rasterfieldoncell.md) | 34 | `declaration-track:12863b0d0f6e494c810f20c7d82ad2bdef16d8521c14de021c34b46403dd86fc` |
+| 3 | `structure` | [RasterSurgery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RasterSurgery.lean/declarations/rastersurgery.md) | 48 | `declaration-track:527f9d0a35f97428af3bcf81b69a5e072fe9dc42814a31ff408deb917c7c1c41` |
+| 4 | `theorem` | [vertex_charge_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RasterSurgery.lean/declarations/vertex-charge-preserved.md) | 96 | `result-track:2d154e9f2b015db68e9147d2fb15a5e562639c14eb65f5c6f3f551a0b50c7a8e` |
+| 5 | `theorem` | [field_eq_outside_locus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RasterSurgery.lean/declarations/field-eq-outside-locus.md) | 105 | `result-track:150773c4c341c20c12916ae8dffa07d1e0eca2b995dd63bdf08bf5c5ec35de1d` |
+| 6 | `structure` | [ReversibleRasterSurgery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RasterSurgery.lean/declarations/reversiblerastersurgery.md) | 116 | `declaration-track:07c95b7bcdbbce7925e4373abdf7b80ee61ed24f16fe58bc5e579908917a7140` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

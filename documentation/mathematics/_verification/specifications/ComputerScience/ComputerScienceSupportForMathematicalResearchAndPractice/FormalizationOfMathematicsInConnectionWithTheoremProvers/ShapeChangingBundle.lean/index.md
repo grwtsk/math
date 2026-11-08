@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ShapeChangingBundle.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ShapeChangingBundle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ShapeChangingBundle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ShapeChangingBundle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [shape_changes_of_step](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ShapeChangingBundle.lean/declarations/shape-changes-of-step.md) | 23 | `result-track:6ba6f05075ac0c03ae6f2c6d0fad92f5b59f8e7e3af253a9503f306a3d5c66eb` |
-| 2 | `theorem` | [contract_expandWithShell_center](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ShapeChangingBundle.lean/declarations/contract-expandwithshell-center.md) | 32 | `result-track:4a683275b92fee2880dfeb10ad577530aa2278d817cfbb39cf9fa7e74783de03` |
-| 3 | `theorem` | [contract_expandWithShell_shell](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ShapeChangingBundle.lean/declarations/contract-expandwithshell-shell.md) | 42 | `result-track:54a5de6d19c3bea1b09a27a641e421d041f1c53684e8ac4dac110c5f0f21c8d0` |
-| 4 | `theorem` | [expand_contractOneStep](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ShapeChangingBundle.lean/declarations/expand-contractonestep.md) | 53 | `result-track:054da577d5abe94ef2f9843f9389e49d952c9fd21ef29f5d09386621c35a96c5` |
+| 1 | `theorem` | [shape_changes_of_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ShapeChangingBundle.lean/declarations/shape-changes-of-step.md) | 23 | `result-track:6ba6f05075ac0c03ae6f2c6d0fad92f5b59f8e7e3af253a9503f306a3d5c66eb` |
+| 2 | `theorem` | [contract_expandWithShell_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ShapeChangingBundle.lean/declarations/contract-expandwithshell-center.md) | 32 | `result-track:4a683275b92fee2880dfeb10ad577530aa2278d817cfbb39cf9fa7e74783de03` |
+| 3 | `theorem` | [contract_expandWithShell_shell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ShapeChangingBundle.lean/declarations/contract-expandwithshell-shell.md) | 42 | `result-track:54a5de6d19c3bea1b09a27a641e421d041f1c53684e8ac4dac110c5f0f21c8d0` |
+| 4 | `theorem` | [expand_contractOneStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ShapeChangingBundle.lean/declarations/expand-contractonestep.md) | 53 | `result-track:054da577d5abe94ef2f9843f9389e49d952c9fd21ef29f5d09386621c35a96c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

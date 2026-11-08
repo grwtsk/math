@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFirstAtomDirectConsumerNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFirstAtomDirectConsumerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFirstAtomDirectConsumerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFirstAtomDirectConsumerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [residual_upper_of_remaining_signed_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFirstAtomDirectConsumerNamespaced.lean/declarations/residual-upper-of-remaining-signed-lower.md) | 31 | `result-track:aa6ef890f76ed1fc4ae4bd973ef5d5d15d87d87f0cb8844d4e7855ac9eb2a172` |
-| 2 | `theorem` | [all_real_source_lower_of_remaining_signed_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFirstAtomDirectConsumerNamespaced.lean/declarations/all-real-source-lower-of-remaining-signed-tail.md) | 39 | `result-track:125b5fd68e1f94a75b7ecc9db3963a77458ff28a99bfc85daa6eb0d352b6f9f3` |
-| 3 | `theorem` | [estimate_of_remaining_signed_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFirstAtomDirectConsumerNamespaced.lean/declarations/estimate-of-remaining-signed-tail.md) | 51 | `result-track:a8a0de30e183e2812033ce43ec6fce32d77195e26d6d8163e22e82e99eafc145` |
+| 1 | `theorem` | [residual_upper_of_remaining_signed_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFirstAtomDirectConsumerNamespaced.lean/declarations/residual-upper-of-remaining-signed-lower.md) | 31 | `result-track:aa6ef890f76ed1fc4ae4bd973ef5d5d15d87d87f0cb8844d4e7855ac9eb2a172` |
+| 2 | `theorem` | [all_real_source_lower_of_remaining_signed_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFirstAtomDirectConsumerNamespaced.lean/declarations/all-real-source-lower-of-remaining-signed-tail.md) | 39 | `result-track:125b5fd68e1f94a75b7ecc9db3963a77458ff28a99bfc85daa6eb0d352b6f9f3` |
+| 3 | `theorem` | [estimate_of_remaining_signed_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFirstAtomDirectConsumerNamespaced.lean/declarations/estimate-of-remaining-signed-tail.md) | 51 | `result-track:a8a0de30e183e2812033ce43ec6fce32d77195e26d6d8163e22e82e99eafc145` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

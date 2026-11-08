@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GoodHeightsXiDerivGoodHeights.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GoodHeightsXiDerivGoodHeights.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GoodHeightsXiDerivGoodHeights.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GoodHeightsXiDerivGoodHeights.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [xiDeriv_good_heights](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GoodHeightsXiDerivGoodHeights.lean/declarations/xideriv-good-heights.md) | 29 | `result-track:0b06e3efbaa762d81187eb9aefe2bd608ce4fe4a4c9f4c56ed200c8b1ed83749` |
+| 1 | `theorem` | [xiDeriv_good_heights](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GoodHeightsXiDerivGoodHeights.lean/declarations/xideriv-good-heights.md) | 29 | `result-track:0b06e3efbaa762d81187eb9aefe2bd608ce4fe4a4c9f4c56ed200c8b1ed83749` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

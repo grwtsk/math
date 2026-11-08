@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CircleNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CircleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CircleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CircleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PlaneCircle](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CircleNamespaced.lean/declarations/planecircle.md) | 21 | `declaration-track:0743b10122b2b246a24ee2235ca4578af3c11a5dbc3a21b9dbcd7d0f199304b5` |
-| 2 | `def` | [Contains](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CircleNamespaced.lean/declarations/contains.md) | 29 | `declaration-track:489790189a3752c894ac1a14da286c6331d4d5daca60ad89284949d44c72e264` |
-| 3 | `theorem` | [contains_has_positive_radius](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CircleNamespaced.lean/declarations/contains-has-positive-radius.md) | 32 | `result-track:34bf3386a9ef0ee868b4d89376dbb44b7df62d1f113191de1bf673d07b383d84` |
+| 1 | `structure` | [PlaneCircle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CircleNamespaced.lean/declarations/planecircle.md) | 21 | `declaration-track:0743b10122b2b246a24ee2235ca4578af3c11a5dbc3a21b9dbcd7d0f199304b5` |
+| 2 | `def` | [Contains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CircleNamespaced.lean/declarations/contains.md) | 29 | `declaration-track:489790189a3752c894ac1a14da286c6331d4d5daca60ad89284949d44c72e264` |
+| 3 | `theorem` | [contains_has_positive_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CircleNamespaced.lean/declarations/contains-has-positive-radius.md) | 32 | `result-track:34bf3386a9ef0ee868b4d89376dbb44b7df62d1f113191de1bf673d07b383d84` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

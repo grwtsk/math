@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RhEstimateTypeiiSourceEdgeAudit.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RhEstimateTypeiiSourceEdgeAudit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateTypeiiSourceEdgeAudit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateTypeiiSourceEdgeAudit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateTypeiiSourceEdgeAudit.lean/declarations/example.md) | 11 | `declaration-track:0e06a35488798c9ba6fe084ab06aa71e30b8c485c41230dbfb927a69836e6506` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateTypeiiSourceEdgeAudit.lean/declarations/example-source-edition-4.md) | 17 | `declaration-track:96e8a76be636d31d9b23b94f3b6a19d409d8cd0914ac82c3e2682e75c94c8f11` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateTypeiiSourceEdgeAudit.lean/declarations/example-source-edition-2.md) | 21 | `declaration-track:58b275d4dfa164fedd3402d32cda46fd6d9a6c55afd061b4e80eb84bce5bc3cc` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateTypeiiSourceEdgeAudit.lean/declarations/example-source-edition-3.md) | 25 | `declaration-track:8f4a2513af25822f2454a77b7b5657017c46e4706b82707589d10b04753e62fe` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateTypeiiSourceEdgeAudit.lean/declarations/example-source-edition-5.md) | 29 | `declaration-track:e813f343129d14fb9206d893876f3c68ee9c5a939898188e3c9ad7684c4b47d7` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateTypeiiSourceEdgeAudit.lean/declarations/example-source-edition-6.md) | 35 | `declaration-track:f03b752a9c61ba329b62c9d3da1be3908b3e87ce7f5f49b0ee6568975b53f665` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateTypeiiSourceEdgeAudit.lean/declarations/example.md) | 11 | `declaration-track:0e06a35488798c9ba6fe084ab06aa71e30b8c485c41230dbfb927a69836e6506` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateTypeiiSourceEdgeAudit.lean/declarations/example-source-edition-4.md) | 17 | `declaration-track:96e8a76be636d31d9b23b94f3b6a19d409d8cd0914ac82c3e2682e75c94c8f11` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateTypeiiSourceEdgeAudit.lean/declarations/example-source-edition-2.md) | 21 | `declaration-track:58b275d4dfa164fedd3402d32cda46fd6d9a6c55afd061b4e80eb84bce5bc3cc` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateTypeiiSourceEdgeAudit.lean/declarations/example-source-edition-3.md) | 25 | `declaration-track:8f4a2513af25822f2454a77b7b5657017c46e4706b82707589d10b04753e62fe` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateTypeiiSourceEdgeAudit.lean/declarations/example-source-edition-5.md) | 29 | `declaration-track:e813f343129d14fb9206d893876f3c68ee9c5a939898188e3c9ad7684c4b47d7` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateTypeiiSourceEdgeAudit.lean/declarations/example-source-edition-6.md) | 35 | `declaration-track:f03b752a9c61ba329b62c9d3da1be3908b3e87ce7f5f49b0ee6568975b53f665` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

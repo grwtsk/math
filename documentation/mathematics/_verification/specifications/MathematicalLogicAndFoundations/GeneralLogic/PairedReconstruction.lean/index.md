@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PairedReconstruction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PairedReconstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PairedReconstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PairedReconstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LiftedHeatInverse](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PairedReconstruction.lean/declarations/liftedheatinverse.md) | 40 | `declaration-track:f0938ed24d8b93d0b88112a0baf8a1a4ffb3908d2e859159dacd5ba800dc7b0a` |
-| 2 | `theorem` | [lifted_heat_reconstructs](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PairedReconstruction.lean/declarations/lifted-heat-reconstructs.md) | 48 | `result-track:0d9bbd2337d3429a5302c393e7cd1eff9cd06de89c07eaed2415b6fe48d3e7be` |
+| 1 | `structure` | [LiftedHeatInverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PairedReconstruction.lean/declarations/liftedheatinverse.md) | 40 | `declaration-track:f0938ed24d8b93d0b88112a0baf8a1a4ffb3908d2e859159dacd5ba800dc7b0a` |
+| 2 | `theorem` | [lifted_heat_reconstructs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PairedReconstruction.lean/declarations/lifted-heat-reconstructs.md) | 48 | `result-track:0d9bbd2337d3429a5302c393e7cd1eff9cd06de89c07eaed2415b6fe48d3e7be` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

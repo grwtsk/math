@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashSetIteratorLemmasIteratorLemmasPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashSetIteratorLemmasIteratorLemmasPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashSetIteratorLemmasIteratorLemmasPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashSetIteratorLemmasIteratorLemmasPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [toList_iter](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashSetIteratorLemmasIteratorLemmasPublic.lean/declarations/tolist-iter.md) | 23 | `result-track:81bb39d3b6bb20e82010c21872b49f63a5b6e250af20be9c67c5b5e81f0a4891` |
-| 2 | `theorem` | [toListRev_iter](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashSetIteratorLemmasIteratorLemmasPublic.lean/declarations/tolistrev-iter.md) | 29 | `result-track:0ebfd4ec41301a7daab16f558d297444966b2539176d4435a5743ff2dbfae33d` |
-| 3 | `theorem` | [toArray_iter](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashSetIteratorLemmasIteratorLemmasPublic.lean/declarations/toarray-iter-source-edition-2.md) | 34 | `result-track:c9fb95411eed60d667b6e4d2656e28ef84919d3c2c4abfe1d22e7ac8fa66eb9d` |
-| 4 | `theorem` | [toList_iter](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashSetIteratorLemmasIteratorLemmasPublic.lean/declarations/tolist-iter-source-edition-2.md) | 46 | `result-track:d37c6adfda69c22681a554a7b19b308095bc93882a5dbcabe073ae53081a654a` |
-| 5 | `theorem` | [toListRev_iter](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashSetIteratorLemmasIteratorLemmasPublic.lean/declarations/tolistrev-iter-source-edition-2.md) | 51 | `result-track:b86b41264d0605ce98280ab2b51eb533564b439a68a9b96bc8ed929d29722fa9` |
-| 6 | `theorem` | [toArray_iter](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashSetIteratorLemmasIteratorLemmasPublic.lean/declarations/toarray-iter.md) | 56 | `result-track:37748808e70729b97e37daaacab74948416c63b289436c5ad64a20f5280882f5` |
+| 1 | `theorem` | [toList_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashSetIteratorLemmasIteratorLemmasPublic.lean/declarations/tolist-iter.md) | 23 | `result-track:81bb39d3b6bb20e82010c21872b49f63a5b6e250af20be9c67c5b5e81f0a4891` |
+| 2 | `theorem` | [toListRev_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashSetIteratorLemmasIteratorLemmasPublic.lean/declarations/tolistrev-iter.md) | 29 | `result-track:0ebfd4ec41301a7daab16f558d297444966b2539176d4435a5743ff2dbfae33d` |
+| 3 | `theorem` | [toArray_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashSetIteratorLemmasIteratorLemmasPublic.lean/declarations/toarray-iter-source-edition-2.md) | 34 | `result-track:c9fb95411eed60d667b6e4d2656e28ef84919d3c2c4abfe1d22e7ac8fa66eb9d` |
+| 4 | `theorem` | [toList_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashSetIteratorLemmasIteratorLemmasPublic.lean/declarations/tolist-iter-source-edition-2.md) | 46 | `result-track:d37c6adfda69c22681a554a7b19b308095bc93882a5dbcabe073ae53081a654a` |
+| 5 | `theorem` | [toListRev_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashSetIteratorLemmasIteratorLemmasPublic.lean/declarations/tolistrev-iter-source-edition-2.md) | 51 | `result-track:b86b41264d0605ce98280ab2b51eb533564b439a68a9b96bc8ed929d29722fa9` |
+| 6 | `theorem` | [toArray_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashSetIteratorLemmasIteratorLemmasPublic.lean/declarations/toarray-iter.md) | 56 | `result-track:37748808e70729b97e37daaacab74948416c63b289436c5ad64a20f5280882f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

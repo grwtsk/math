@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [zetaSeam](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/zetaseam.md) | 30 | `result-track:f18f421c2bfebec8cf8f974664c354be8e4ced3bbfa9baec1f362c40b0a59426` |
-| 2 | `def` | [zetaZeroConfig](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/zetazeroconfig.md) | 34 | `declaration-track:5bbdb36069e64f0f530f7700864611bc1315ec84783ebac232a604aac102fb71` |
-| 3 | `lemma` | [zetaZeroConfig_carrier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/zetazeroconfig-carrier.md) | 36 | `result-track:b49bed96fb23a3f9570a9055f158c237f6ae13a147f025dcdc65b26765bfcb02` |
-| 4 | `lemma` | [zetaZeroConfig_mult](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/zetazeroconfig-mult.md) | 37 | `result-track:11e35c9bab17861feb8daf9bdc69c232a1d2ffc3a19eb97eb2b1b1a634358d8c` |
-| 5 | `lemma` | [zetaZeroConfig_N](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/zetazeroconfig-n.md) | 39 | `result-track:b1653e5166077548dd3b55237731c22412f9549aec29c83e58694573a01d5e7e` |
-| 6 | `lemma` | [zetaZeroConfig_N0star](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/zetazeroconfig-n0star.md) | 41 | `result-track:c69e3a3fc24f1d41bb300413df7dda68e6adaac83d695fe58e1f613df7ab5932` |
-| 7 | `lemma` | [zetaZeroConfig_N0s](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/zetazeroconfig-n0s.md) | 43 | `result-track:960f137dd282f27bbc68593e812a8bce7375a68db3b6262cc08405d20a318c77` |
-| 8 | `lemma` | [zetaZeroConfig_Nd](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/zetazeroconfig-nd.md) | 45 | `result-track:3a4a264c6b88ebc013d9b6403fcc926f9972e78dfd204a1cb41942e2f1e09d64` |
-| 9 | `theorem` | [trivial_chain₀](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/trivial-chain.md) | 49 | `result-track:cedbd75b739b567899b762d3a03fe54fca18c4457f517bad1713e4a8fa174898` |
-| 10 | `theorem` | [zerosIn_finite](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/zerosin-finite.md) | 55 | `result-track:30d15740080c171161dc1ff25be2cb9315bfdbbf62334749b2e7e6e7996eef6d` |
+| 1 | `theorem` | [zetaSeam](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/zetaseam.md) | 30 | `result-track:f18f421c2bfebec8cf8f974664c354be8e4ced3bbfa9baec1f362c40b0a59426` |
+| 2 | `def` | [zetaZeroConfig](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/zetazeroconfig.md) | 34 | `declaration-track:5bbdb36069e64f0f530f7700864611bc1315ec84783ebac232a604aac102fb71` |
+| 3 | `lemma` | [zetaZeroConfig_carrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/zetazeroconfig-carrier.md) | 36 | `result-track:b49bed96fb23a3f9570a9055f158c237f6ae13a147f025dcdc65b26765bfcb02` |
+| 4 | `lemma` | [zetaZeroConfig_mult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/zetazeroconfig-mult.md) | 37 | `result-track:11e35c9bab17861feb8daf9bdc69c232a1d2ffc3a19eb97eb2b1b1a634358d8c` |
+| 5 | `lemma` | [zetaZeroConfig_N](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/zetazeroconfig-n.md) | 39 | `result-track:b1653e5166077548dd3b55237731c22412f9549aec29c83e58694573a01d5e7e` |
+| 6 | `lemma` | [zetaZeroConfig_N0star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/zetazeroconfig-n0star.md) | 41 | `result-track:c69e3a3fc24f1d41bb300413df7dda68e6adaac83d695fe58e1f613df7ab5932` |
+| 7 | `lemma` | [zetaZeroConfig_N0s](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/zetazeroconfig-n0s.md) | 43 | `result-track:960f137dd282f27bbc68593e812a8bce7375a68db3b6262cc08405d20a318c77` |
+| 8 | `lemma` | [zetaZeroConfig_Nd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/zetazeroconfig-nd.md) | 45 | `result-track:3a4a264c6b88ebc013d9b6403fcc926f9972e78dfd204a1cb41942e2f1e09d64` |
+| 9 | `theorem` | [trivial_chain₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/trivial-chain.md) | 49 | `result-track:cedbd75b739b567899b762d3a03fe54fca18c4457f517bad1713e4a8fa174898` |
+| 10 | `theorem` | [zerosIn_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamClosedNamespaced.lean/declarations/zerosin-finite.md) | 55 | `result-track:30d15740080c171161dc1ff25be2cb9315bfdbbf62334749b2e7e6e7996eef6d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

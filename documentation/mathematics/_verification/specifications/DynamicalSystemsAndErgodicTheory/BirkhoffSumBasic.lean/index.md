@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [birkhoffSum](../../../../DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/birkhoffsum.md) | 27 | `declaration-track:72ff14fe5925062a033d76b5bd6e6cd85fe8f44507c2784310f0aab21b10cc68` |
-| 2 | `theorem` | [birkhoffSum_zero](../../../../DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/birkhoffsum-zero.md) | 29 | `result-track:1b702de14d8060f970f65b3e4108b23a08ba1a738e9f46c2c5e271344fdc14d6` |
-| 3 | `theorem` | [birkhoffSum_zero'](../../../../DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/birkhoffsum-zero-source-edition-2.md) | 33 | `result-track:4922e6374a0645853e01ada05e47c75cf0bf63ff8125c07d57fd5ccf37bb4406` |
-| 4 | `theorem` | [birkhoffSum_one](../../../../DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/birkhoffsum-one-source-edition-2.md) | 36 | `result-track:8d9373f24dcbcee90a2b5f01ea6984a59e8b3e943e9c572b6e573ae85674bc86` |
-| 5 | `theorem` | [birkhoffSum_one'](../../../../DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/birkhoffsum-one.md) | 40 | `result-track:607b9ac6d1fbfa110e351fc32d5cb2098f4bc3dd8f1999402cd5e486eec27766` |
-| 6 | `theorem` | [birkhoffSum_succ](../../../../DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/birkhoffsum-succ.md) | 43 | `result-track:28dea437f460b7e1cec6b602c13bb4e9e7a6cb17817af2fb2726e621efd35a55` |
-| 7 | `theorem` | [birkhoffSum_succ'](../../../../DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/birkhoffsum-succ-source-edition-2.md) | 47 | `result-track:aa5bb6532d48b58effb6d6c840b4b03d70571c608543dd9ab9b1311ec7681c0e` |
-| 8 | `theorem` | [birkhoffSum_add](../../../../DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/birkhoffsum-add.md) | 51 | `result-track:a623771be4bec1846b9117a0dd04d31f0ac28943613cdf17d1254a5d5367ff75` |
-| 9 | `theorem` | [Function.IsFixedPt.birkhoffSum_eq](../../../../DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/function-isfixedpt-birkhoffsum-eq.md) | 55 | `result-track:d97fd4db8e1201b31e54733e575307888f11df95c4bedc26e5bb59edb69cfc08` |
-| 10 | `theorem` | [map_birkhoffSum](../../../../DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/map-birkhoffsum.md) | 59 | `result-track:ee7ae1972a13a060fce7f9325b0611cd8f0554894e616dfaecc1e3712d9096a3` |
-| 11 | `theorem` | [birkhoffSum_apply_sub_birkhoffSum](../../../../DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/birkhoffsum-apply-sub-birkhoffsum.md) | 73 | `result-track:62c59238a5488c4ae77f5c56ef9869ab61840fbabd03590d08cd3b9eab23ed4c` |
+| 1 | `def` | [birkhoffSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/birkhoffsum.md) | 27 | `declaration-track:72ff14fe5925062a033d76b5bd6e6cd85fe8f44507c2784310f0aab21b10cc68` |
+| 2 | `theorem` | [birkhoffSum_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/birkhoffsum-zero.md) | 29 | `result-track:1b702de14d8060f970f65b3e4108b23a08ba1a738e9f46c2c5e271344fdc14d6` |
+| 3 | `theorem` | [birkhoffSum_zero'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/birkhoffsum-zero-source-edition-2.md) | 33 | `result-track:4922e6374a0645853e01ada05e47c75cf0bf63ff8125c07d57fd5ccf37bb4406` |
+| 4 | `theorem` | [birkhoffSum_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/birkhoffsum-one-source-edition-2.md) | 36 | `result-track:8d9373f24dcbcee90a2b5f01ea6984a59e8b3e943e9c572b6e573ae85674bc86` |
+| 5 | `theorem` | [birkhoffSum_one'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/birkhoffsum-one.md) | 40 | `result-track:607b9ac6d1fbfa110e351fc32d5cb2098f4bc3dd8f1999402cd5e486eec27766` |
+| 6 | `theorem` | [birkhoffSum_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/birkhoffsum-succ.md) | 43 | `result-track:28dea437f460b7e1cec6b602c13bb4e9e7a6cb17817af2fb2726e621efd35a55` |
+| 7 | `theorem` | [birkhoffSum_succ'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/birkhoffsum-succ-source-edition-2.md) | 47 | `result-track:aa5bb6532d48b58effb6d6c840b4b03d70571c608543dd9ab9b1311ec7681c0e` |
+| 8 | `theorem` | [birkhoffSum_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/birkhoffsum-add.md) | 51 | `result-track:a623771be4bec1846b9117a0dd04d31f0ac28943613cdf17d1254a5d5367ff75` |
+| 9 | `theorem` | [Function.IsFixedPt.birkhoffSum_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/function-isfixedpt-birkhoffsum-eq.md) | 55 | `result-track:d97fd4db8e1201b31e54733e575307888f11df95c4bedc26e5bb59edb69cfc08` |
+| 10 | `theorem` | [map_birkhoffSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/map-birkhoffsum.md) | 59 | `result-track:ee7ae1972a13a060fce7f9325b0611cd8f0554894e616dfaecc1e3712d9096a3` |
+| 11 | `theorem` | [birkhoffSum_apply_sub_birkhoffSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/BirkhoffSumBasic.lean/declarations/birkhoffsum-apply-sub-birkhoffsum.md) | 73 | `result-track:62c59238a5488c4ae77f5c56ef9869ab61840fbabd03590d08cd3b9eab23ed4c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

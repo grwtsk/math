@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArchiveNamespacedImportedByKernel.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArchiveNamespacedImportedByKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArchiveNamespacedImportedByKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArchiveNamespacedImportedByKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [importedByKernel](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArchiveNamespacedImportedByKernel.lean/declarations/importedbykernel.md) | 18 | `declaration-track:8cd7ac0e9744f55d5cef6b57f8d8e52c212f1f7cbbfe403d6942b4d3c1b65018` |
-| 2 | `theorem` | [archive_not_imported_by_kernel](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArchiveNamespacedImportedByKernel.lean/declarations/archive-not-imported-by-kernel.md) | 20 | `result-track:9edb58e1196e2176cb0485acb7edb2958fe930e7336a81f26ab4e1ad7c0bf7cb` |
+| 1 | `def` | [importedByKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArchiveNamespacedImportedByKernel.lean/declarations/importedbykernel.md) | 18 | `declaration-track:8cd7ac0e9744f55d5cef6b57f8d8e52c212f1f7cbbfe403d6942b4d3c1b65018` |
+| 2 | `theorem` | [archive_not_imported_by_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArchiveNamespacedImportedByKernel.lean/declarations/archive-not-imported-by-kernel.md) | 20 | `result-track:9edb58e1196e2176cb0485acb7edb2958fe930e7336a81f26ab4e1ad7c0bf7cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

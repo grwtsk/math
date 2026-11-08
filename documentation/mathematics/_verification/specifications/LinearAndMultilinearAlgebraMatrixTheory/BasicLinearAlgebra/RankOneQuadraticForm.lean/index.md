@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.LinearAlgebra.Matrix.SchurComplement` — import line 7; external provider; requires a separately pinned dependency.
 - `Mathlib.LinearAlgebra.Matrix.PosDef` — import line 8; external provider; requires a separately pinned dependency.
 - `Mathlib.LinearAlgebra.Matrix.Notation` — import line 9; external provider; requires a separately pinned dependency.
@@ -61,14 +61,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [determinant_encoding](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/declarations/determinant-encoding.md) | 29 | `result-track:c97735c290c6503db36872d72afc2c98ddd33191e34d44a0c4199abad2c91f29` |
-| 2 | `abbrev` | [PickupIndex](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/declarations/pickupindex.md) | 51 | `declaration-track:748dff17d2961cdbc75f79a141562a011230cf10090b4475559d8a8bbe00d280` |
-| 3 | `def` | [responseMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/declarations/responsematrix.md) | 54 | `declaration-track:0afa3da411e42a2be3e6bb3a7fe4c54237f8536f4ef74fc0047faf0930c8477b` |
-| 4 | `def` | [coefficientRow](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/declarations/coefficientrow.md) | 58 | `declaration-track:314bee3ea5c6c3b0f1f05568208f8853fed16fcd38212a71849fc64bc1e15851` |
-| 5 | `def` | [pickupDeterminant](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/declarations/pickupdeterminant.md) | 61 | `declaration-track:bebfd5561a7e56bb7f5f09839d559d09bba562fa803ac023f10f920066501644` |
-| 6 | `theorem` | [pickupDeterminant_eq_energy](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/declarations/pickupdeterminant-eq-energy.md) | 65 | `result-track:328dafbb2d547fc46bb9ad823b902d49e2b14fad9c0945db786742b4f79f00a2` |
-| 7 | `theorem` | [pickupDeterminant_bound_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/declarations/pickupdeterminant-bound-iff.md) | 82 | `result-track:202583f7debd0e81c371872b69954a80670629344fffbe421c7294ca0a0fee56` |
-| 8 | `theorem` | [pickupDeterminant_poly_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/declarations/pickupdeterminant-poly-iff.md) | 88 | `result-track:b3e2e50f1a5e96bdc48404709d5151b18ed10ba8f6d3ded48041c548715884f0` |
+| 1 | `theorem` | [determinant_encoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/declarations/determinant-encoding.md) | 29 | `result-track:c97735c290c6503db36872d72afc2c98ddd33191e34d44a0c4199abad2c91f29` |
+| 2 | `abbrev` | [PickupIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/declarations/pickupindex.md) | 51 | `declaration-track:748dff17d2961cdbc75f79a141562a011230cf10090b4475559d8a8bbe00d280` |
+| 3 | `def` | [responseMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/declarations/responsematrix.md) | 54 | `declaration-track:0afa3da411e42a2be3e6bb3a7fe4c54237f8536f4ef74fc0047faf0930c8477b` |
+| 4 | `def` | [coefficientRow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/declarations/coefficientrow.md) | 58 | `declaration-track:314bee3ea5c6c3b0f1f05568208f8853fed16fcd38212a71849fc64bc1e15851` |
+| 5 | `def` | [pickupDeterminant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/declarations/pickupdeterminant.md) | 61 | `declaration-track:bebfd5561a7e56bb7f5f09839d559d09bba562fa803ac023f10f920066501644` |
+| 6 | `theorem` | [pickupDeterminant_eq_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/declarations/pickupdeterminant-eq-energy.md) | 65 | `result-track:328dafbb2d547fc46bb9ad823b902d49e2b14fad9c0945db786742b4f79f00a2` |
+| 7 | `theorem` | [pickupDeterminant_bound_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/declarations/pickupdeterminant-bound-iff.md) | 82 | `result-track:202583f7debd0e81c371872b69954a80670629344fffbe421c7294ca0a0fee56` |
+| 8 | `theorem` | [pickupDeterminant_poly_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadraticForm.lean/declarations/pickupdeterminant-poly-iff.md) | 88 | `result-track:b3e2e50f1a5e96bdc48404709d5151b18ed10ba8f6d3ded48041c548715884f0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AssemblyNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AssemblyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssemblyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssemblyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,12 +61,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [QuantitativeKakeyaTheoremInput](../../../../../ComputerScience/AlgorithmsInComputerScience/AssemblyNamespaced.lean/declarations/quantitativekakeyatheoreminput.md) | 36 | `declaration-track:0a23222ea19ce8501cc3ab0a6e3a2bf26c5441c33cbf5f2a5c9ea1249a1e293e` |
-| 2 | `def` | [QuantitativeKakeyaTheoremInput.usableForMajorProof](../../../../../ComputerScience/AlgorithmsInComputerScience/AssemblyNamespaced.lean/declarations/quantitativekakeyatheoreminput-usableformajorproof.md) | 48 | `declaration-track:a6ad25299781ec9be20a64608d3338fcd59d12b6c8761c3d0a1ed3c484e6fd70` |
-| 3 | `theorem` | [QuantitativeKakeyaTheoremInput.admissibleInput_of_fields](../../../../../ComputerScience/AlgorithmsInComputerScience/AssemblyNamespaced.lean/declarations/quantitativekakeyatheoreminput-admissibleinput-of-fields.md) | 59 | `result-track:dfe6022a72a241ab8ef10f27853bd3266dd66210ab02e06ff5d8874456314e40` |
-| 4 | `structure` | [FiniteStructuralBridge](../../../../../ComputerScience/AlgorithmsInComputerScience/AssemblyNamespaced.lean/declarations/finitestructuralbridge.md) | 76 | `declaration-track:d83fe7190e14338c24809b2e55dfca6bc470c87dac223667b03ac1ce6dca724f` |
-| 5 | `def` | [FiniteStructuralBridge.hasQuantitativeInput](../../../../../ComputerScience/AlgorithmsInComputerScience/AssemblyNamespaced.lean/declarations/finitestructuralbridge-hasquantitativeinput.md) | 83 | `declaration-track:55aaaf5c93005e32897afe68897cf7779c4b08a3d5197b6cac3d71ea372eb52d` |
-| 6 | `theorem` | [FiniteStructuralBridge.none_not_hasQuantitativeInput](../../../../../ComputerScience/AlgorithmsInComputerScience/AssemblyNamespaced.lean/declarations/finitestructuralbridge-none-not-hasquantitativeinput.md) | 90 | `result-track:ba1b2b1c28581abea691abbaaa271d01d9b65904d943a2a0b976317c2cb16f82` |
+| 1 | `structure` | [QuantitativeKakeyaTheoremInput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssemblyNamespaced.lean/declarations/quantitativekakeyatheoreminput.md) | 36 | `declaration-track:0a23222ea19ce8501cc3ab0a6e3a2bf26c5441c33cbf5f2a5c9ea1249a1e293e` |
+| 2 | `def` | [QuantitativeKakeyaTheoremInput.usableForMajorProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssemblyNamespaced.lean/declarations/quantitativekakeyatheoreminput-usableformajorproof.md) | 48 | `declaration-track:a6ad25299781ec9be20a64608d3338fcd59d12b6c8761c3d0a1ed3c484e6fd70` |
+| 3 | `theorem` | [QuantitativeKakeyaTheoremInput.admissibleInput_of_fields](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssemblyNamespaced.lean/declarations/quantitativekakeyatheoreminput-admissibleinput-of-fields.md) | 59 | `result-track:dfe6022a72a241ab8ef10f27853bd3266dd66210ab02e06ff5d8874456314e40` |
+| 4 | `structure` | [FiniteStructuralBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssemblyNamespaced.lean/declarations/finitestructuralbridge.md) | 76 | `declaration-track:d83fe7190e14338c24809b2e55dfca6bc470c87dac223667b03ac1ce6dca724f` |
+| 5 | `def` | [FiniteStructuralBridge.hasQuantitativeInput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssemblyNamespaced.lean/declarations/finitestructuralbridge-hasquantitativeinput.md) | 83 | `declaration-track:55aaaf5c93005e32897afe68897cf7779c4b08a3d5197b6cac3d71ea372eb52d` |
+| 6 | `theorem` | [FiniteStructuralBridge.none_not_hasQuantitativeInput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssemblyNamespaced.lean/declarations/finitestructuralbridge-none-not-hasquantitativeinput.md) | 90 | `result-track:ba1b2b1c28581abea691abbaaa271d01d9b65904d943a2a0b976317c2cb16f82` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

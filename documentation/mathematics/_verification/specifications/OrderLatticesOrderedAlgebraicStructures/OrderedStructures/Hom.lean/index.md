@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Hom.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Hom.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Hom.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Hom.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [OrderRingHom.subsingleton](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Hom.lean/declarations/orderringhom-subsingleton.md) | 23 | `declaration-track:cf9f9497da4b39c5a823be4197c1bfa38dc7fee2184d6b2a17efeb6fdeca4287` |
-| 2 | `instance` | [OrderRingIso.subsingleton_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Hom.lean/declarations/orderringiso-subsingleton-right.md) | 40 | `declaration-track:eb3a29cb76da98554d2bb5c3828390ee22d0a1bb7c1c7d6c649f9d1864e4fd36` |
-| 3 | `instance` | [OrderRingIso.subsingleton_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Hom.lean/declarations/orderringiso-subsingleton-left.md) | 47 | `declaration-track:8db453947154af24fddbc94c63dc29a6264dbbc6fda65fc21ab73b27b874109d` |
+| 1 | `instance` | [OrderRingHom.subsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Hom.lean/declarations/orderringhom-subsingleton.md) | 23 | `declaration-track:cf9f9497da4b39c5a823be4197c1bfa38dc7fee2184d6b2a17efeb6fdeca4287` |
+| 2 | `instance` | [OrderRingIso.subsingleton_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Hom.lean/declarations/orderringiso-subsingleton-right.md) | 40 | `declaration-track:eb3a29cb76da98554d2bb5c3828390ee22d0a1bb7c1c7d6c649f9d1864e4fd36` |
+| 3 | `instance` | [OrderRingIso.subsingleton_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Hom.lean/declarations/orderringiso-subsingleton-left.md) | 47 | `declaration-track:8db453947154af24fddbc94c63dc29a6264dbbc6fda65fc21ab73b27b874109d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

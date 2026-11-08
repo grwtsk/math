@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RoleNamespacedEdition2.lean/index.md) · [Full source](../../../../Combinatorics/RoleNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoleNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoleNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [OntologicalRole](../../../../Combinatorics/RoleNamespacedEdition2.lean/declarations/ontologicalrole.md) | 27 | `declaration-track:7894a2b77eab37d7b40f6568aafd0f8b6807edb77c4055f1d845a815b08bc1ee` |
-| 2 | `def` | [KindRoleCompatible](../../../../Combinatorics/RoleNamespacedEdition2.lean/declarations/kindrolecompatible.md) | 44 | `declaration-track:1980e52411a5c387d643c14e0deddfa28741d4ab240bc06b905e5e34b413c54e` |
-| 3 | `instance` | [(anonymous)](../../../../Combinatorics/RoleNamespacedEdition2.lean/declarations/instance.md) | 62 | `declaration-track:7073c3398a19afe85f92acd9504aa2056fdfe393449c3c8965c9fcae79a8b6e3` |
-| 4 | `theorem` | [proof_ne_statement](../../../../Combinatorics/RoleNamespacedEdition2.lean/declarations/proof-ne-statement.md) | 66 | `result-track:812a588f6df912ff9adf7498614c108cbc7bce71092b59ffe3cc0ee3c5b9d60d` |
-| 5 | `theorem` | [representation_ne_object](../../../../Combinatorics/RoleNamespacedEdition2.lean/declarations/representation-ne-object.md) | 69 | `result-track:a258d4300ebbc761e9251a90d612e2ad33765deba76fca6bdd5a70e08edbe5c7` |
+| 1 | `inductive` | [OntologicalRole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoleNamespacedEdition2.lean/declarations/ontologicalrole.md) | 27 | `declaration-track:7894a2b77eab37d7b40f6568aafd0f8b6807edb77c4055f1d845a815b08bc1ee` |
+| 2 | `def` | [KindRoleCompatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoleNamespacedEdition2.lean/declarations/kindrolecompatible.md) | 44 | `declaration-track:1980e52411a5c387d643c14e0deddfa28741d4ab240bc06b905e5e34b413c54e` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoleNamespacedEdition2.lean/declarations/instance.md) | 62 | `declaration-track:7073c3398a19afe85f92acd9504aa2056fdfe393449c3c8965c9fcae79a8b6e3` |
+| 4 | `theorem` | [proof_ne_statement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoleNamespacedEdition2.lean/declarations/proof-ne-statement.md) | 66 | `result-track:812a588f6df912ff9adf7498614c108cbc7bce71092b59ffe3cc0ee3c5b9d60d` |
+| 5 | `theorem` | [representation_ne_object](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoleNamespacedEdition2.lean/declarations/representation-ne-object.md) | 69 | `result-track:a258d4300ebbc761e9251a90d612e2ad33765deba76fca6bdd5a70e08edbe5c7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/MuMu.lean/index.md) · [Full source](../../../../MeasureAndIntegration/MuMu.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MuMu.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MuMu.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [abs_inner_sub_le](../../../../MeasureAndIntegration/MuMu.lean/declarations/abs-inner-sub-le.md) | 41 | `result-track:f4d2989325db802389c0e1ca5d7d53ee0f575fdf08c2488de1fade0331deb950` |
-| 2 | `theorem` | [mumu_core](../../../../MeasureAndIntegration/MuMu.lean/declarations/mumu-core.md) | 160 | `result-track:bec28d3579bc3e28f916aa36034ca6ebc6e6720ee14560cf995e906d23270f0d` |
-| 3 | `theorem` | [prop_mumu](../../../../MeasureAndIntegration/MuMu.lean/declarations/prop-mumu.md) | 224 | `result-track:ff986ef113106761a6a0b2dff3bb6ed996a48f24314497a461d8e66b2505a7ac` |
+| 1 | `theorem` | [abs_inner_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MuMu.lean/declarations/abs-inner-sub-le.md) | 41 | `result-track:f4d2989325db802389c0e1ca5d7d53ee0f575fdf08c2488de1fade0331deb950` |
+| 2 | `theorem` | [mumu_core](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MuMu.lean/declarations/mumu-core.md) | 160 | `result-track:bec28d3579bc3e28f916aa36034ca6ebc6e6720ee14560cf995e906d23270f0d` |
+| 3 | `theorem` | [prop_mumu](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MuMu.lean/declarations/prop-mumu.md) | 224 | `result-track:ff986ef113106761a6a0b2dff3bb6ed996a48f24314497a461d8e66b2505a7ac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/PowIntegralNamespaced.lean/index.md) · [Full source](../../../../SpecialFunctions/PowIntegralNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PowIntegralNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PowIntegralNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lintegral_rpow_eq_lintegral_meas_le_mul](../../../../SpecialFunctions/PowIntegralNamespaced.lean/declarations/lintegral-rpow-eq-lintegral-meas-le-mul.md) | 55 | `result-track:cf042095aee63d5b996d4b129ed47e3b3e6f37b56351be3e3ffb22fd90987271` |
-| 2 | `theorem` | [lintegral_rpow_eq_lintegral_meas_lt_mul](../../../../SpecialFunctions/PowIntegralNamespaced.lean/declarations/lintegral-rpow-eq-lintegral-meas-lt-mul.md) | 89 | `result-track:56cfdad3e4bda2cf9763bab4bafa2d0a38cf0c17ba7e4bcadaf14606a6808fd2` |
+| 1 | `theorem` | [lintegral_rpow_eq_lintegral_meas_le_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PowIntegralNamespaced.lean/declarations/lintegral-rpow-eq-lintegral-meas-le-mul.md) | 55 | `result-track:cf042095aee63d5b996d4b129ed47e3b3e6f37b56351be3e3ffb22fd90987271` |
+| 2 | `theorem` | [lintegral_rpow_eq_lintegral_meas_lt_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PowIntegralNamespaced.lean/declarations/lintegral-rpow-eq-lintegral-meas-lt-mul.md) | 89 | `result-track:56cfdad3e4bda2cf9763bab4bafa2d0a38cf0c17ba7e4bcadaf14606a6808fd2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

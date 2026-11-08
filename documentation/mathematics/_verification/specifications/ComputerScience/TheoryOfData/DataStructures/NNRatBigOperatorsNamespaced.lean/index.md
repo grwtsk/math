@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coe_list_sum](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/declarations/coe-list-sum.md) | 26 | `result-track:24b4228279f994e4c96b2161f95538d92cf32679268f897c0d76811f3bd07a1d` |
-| 2 | `theorem` | [coe_list_prod](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/declarations/coe-list-prod.md) | 30 | `result-track:1191846b566616416b43ec5dfec526141a48f72fabf8c0971bc4966af4ee145b` |
-| 3 | `theorem` | [coe_multiset_sum](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/declarations/coe-multiset-sum.md) | 34 | `result-track:f1d9670615faf661898a8e5f9561ac6858bff3a79f36be699e0980727f855a3e` |
-| 4 | `theorem` | [coe_multiset_prod](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/declarations/coe-multiset-prod.md) | 38 | `result-track:893ccc72f8c78dd9bce06d64915ebead0ebbf37d18eb499fb4c86ba072d6198a` |
-| 5 | `theorem` | [coe_sum](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/declarations/coe-sum.md) | 42 | `result-track:df64eba7478014379d53671761b643daf5623b56f0101aa770976a706647a5fc` |
-| 6 | `theorem` | [toNNRat_sum_of_nonneg](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/declarations/tonnrat-sum-of-nonneg.md) | 45 | `result-track:be085a73ab2b76d0ea4fc44c9bc41ec0e90a7c48d5558125eed47a8c718f7c99` |
-| 7 | `theorem` | [coe_prod](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/declarations/coe-prod.md) | 51 | `result-track:79d7950cabd3cc21291dcb69cc28cb0f548d6cf3449e685e5d6811cf06228148` |
-| 8 | `theorem` | [toNNRat_prod_of_nonneg](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/declarations/tonnrat-prod-of-nonneg.md) | 54 | `result-track:87c391ae5e63e4f43547f95135b5c8e1349aaf21bc72cfa6d1df7829e489c065` |
+| 1 | `theorem` | [coe_list_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/declarations/coe-list-sum.md) | 26 | `result-track:24b4228279f994e4c96b2161f95538d92cf32679268f897c0d76811f3bd07a1d` |
+| 2 | `theorem` | [coe_list_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/declarations/coe-list-prod.md) | 30 | `result-track:1191846b566616416b43ec5dfec526141a48f72fabf8c0971bc4966af4ee145b` |
+| 3 | `theorem` | [coe_multiset_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/declarations/coe-multiset-sum.md) | 34 | `result-track:f1d9670615faf661898a8e5f9561ac6858bff3a79f36be699e0980727f855a3e` |
+| 4 | `theorem` | [coe_multiset_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/declarations/coe-multiset-prod.md) | 38 | `result-track:893ccc72f8c78dd9bce06d64915ebead0ebbf37d18eb499fb4c86ba072d6198a` |
+| 5 | `theorem` | [coe_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/declarations/coe-sum.md) | 42 | `result-track:df64eba7478014379d53671761b643daf5623b56f0101aa770976a706647a5fc` |
+| 6 | `theorem` | [toNNRat_sum_of_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/declarations/tonnrat-sum-of-nonneg.md) | 45 | `result-track:be085a73ab2b76d0ea4fc44c9bc41ec0e90a7c48d5558125eed47a8c718f7c99` |
+| 7 | `theorem` | [coe_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/declarations/coe-prod.md) | 51 | `result-track:79d7950cabd3cc21291dcb69cc28cb0f548d6cf3449e685e5d6811cf06228148` |
+| 8 | `theorem` | [toNNRat_prod_of_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatBigOperatorsNamespaced.lean/declarations/tonnrat-prod-of-nonneg.md) | 54 | `result-track:87c391ae5e63e4f43547f95135b5c8e1349aaf21bc72cfa6d1df7829e489c065` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

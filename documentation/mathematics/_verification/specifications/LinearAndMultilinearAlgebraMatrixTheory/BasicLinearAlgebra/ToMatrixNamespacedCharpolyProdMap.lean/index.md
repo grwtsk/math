@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToMatrixNamespacedCharpolyProdMap.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToMatrixNamespacedCharpolyProdMap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToMatrixNamespacedCharpolyProdMap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToMatrixNamespacedCharpolyProdMap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [charpoly_toMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToMatrixNamespacedCharpolyProdMap.lean/declarations/charpoly-tomatrix.md) | 55 | `result-track:13d346d43cb6cd2dbbdab9b83f780596f8db7edd6e59880f7b0bf1b156b0e79f` |
-| 2 | `lemma` | [charpoly_prodMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToMatrixNamespacedCharpolyProdMap.lean/declarations/charpoly-prodmap.md) | 97 | `result-track:a79b1c73e89962534d08d994ac1daea0edf637cfd3718c6d28aeeb52e13896e4` |
-| 3 | `lemma` | [LinearEquiv.charpoly_conj](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToMatrixNamespacedCharpolyProdMap.lean/declarations/linearequiv-charpoly-conj.md) | 110 | `result-track:bc05593a5f949591184fe6ed6b69409c68a368547c6a76d523dd9309c962e0e6` |
+| 1 | `theorem` | [charpoly_toMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToMatrixNamespacedCharpolyProdMap.lean/declarations/charpoly-tomatrix.md) | 55 | `result-track:13d346d43cb6cd2dbbdab9b83f780596f8db7edd6e59880f7b0bf1b156b0e79f` |
+| 2 | `lemma` | [charpoly_prodMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToMatrixNamespacedCharpolyProdMap.lean/declarations/charpoly-prodmap.md) | 97 | `result-track:a79b1c73e89962534d08d994ac1daea0edf637cfd3718c6d28aeeb52e13896e4` |
+| 3 | `lemma` | [LinearEquiv.charpoly_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ToMatrixNamespacedCharpolyProdMap.lean/declarations/linearequiv-charpoly-conj.md) | 110 | `result-track:bc05593a5f949591184fe6ed6b69409c68a368547c6a76d523dd9309c962e0e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

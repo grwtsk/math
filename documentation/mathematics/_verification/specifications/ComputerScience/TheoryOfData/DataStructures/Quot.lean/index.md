@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/Quot.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/Quot.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Quot.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Quot.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quotientQPF](../../../../../../ComputerScience/TheoryOfData/DataStructures/Quot.lean/declarations/quotientqpf.md) | 36 | `declaration-track:fd8190c18283f8c38bb707990dc04c4cc2fb23d6bc88a57248bb644e292fe95b` |
-| 2 | `def` | [Quot1](../../../../../../ComputerScience/TheoryOfData/DataStructures/Quot.lean/declarations/quot1.md) | 52 | `declaration-track:0572281b8b6032c5adb077189b31eabd2c58979e1f35c2e93c29373ad57c8132` |
-| 3 | `instance` | [Quot1.inhabited](../../../../../../ComputerScience/TheoryOfData/DataStructures/Quot.lean/declarations/quot1-inhabited.md) | 55 | `declaration-track:460c6dc104cd1b37786462b2ef83dfc04a0125da0e72faeb1223cd2988e37d50` |
-| 4 | `def` | [Quot1.map](../../../../../../ComputerScience/TheoryOfData/DataStructures/Quot.lean/declarations/quot1-map.md) | 63 | `declaration-track:e48fd446f650b62e3836b859a8126a0fbb48a58636cb656a0aa4e47c53e57ea8` |
-| 5 | `def` | [Quot1.mvFunctor](../../../../../../ComputerScience/TheoryOfData/DataStructures/Quot.lean/declarations/quot1-mvfunctor.md) | 67 | `declaration-track:69accd9403d7a83c092f4bb6f5a0d72adefcc4c709564bdbe5c6a425194e8522` |
-| 6 | `def` | [relQuot](../../../../../../ComputerScience/TheoryOfData/DataStructures/Quot.lean/declarations/relquot.md) | 76 | `declaration-track:d3aa6111f8866bfe21f8c4504d6539a2a0a070baa728314355944538c8584be2` |
+| 1 | `def` | [quotientQPF](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Quot.lean/declarations/quotientqpf.md) | 36 | `declaration-track:fd8190c18283f8c38bb707990dc04c4cc2fb23d6bc88a57248bb644e292fe95b` |
+| 2 | `def` | [Quot1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Quot.lean/declarations/quot1.md) | 52 | `declaration-track:0572281b8b6032c5adb077189b31eabd2c58979e1f35c2e93c29373ad57c8132` |
+| 3 | `instance` | [Quot1.inhabited](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Quot.lean/declarations/quot1-inhabited.md) | 55 | `declaration-track:460c6dc104cd1b37786462b2ef83dfc04a0125da0e72faeb1223cd2988e37d50` |
+| 4 | `def` | [Quot1.map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Quot.lean/declarations/quot1-map.md) | 63 | `declaration-track:e48fd446f650b62e3836b859a8126a0fbb48a58636cb656a0aa4e47c53e57ea8` |
+| 5 | `def` | [Quot1.mvFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Quot.lean/declarations/quot1-mvfunctor.md) | 67 | `declaration-track:69accd9403d7a83c092f4bb6f5a0d72adefcc4c709564bdbe5c6a425194e8522` |
+| 6 | `def` | [relQuot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Quot.lean/declarations/relquot.md) | 76 | `declaration-track:d3aa6111f8866bfe21f8c4504d6539a2a0a070baa728314355944538c8584be2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

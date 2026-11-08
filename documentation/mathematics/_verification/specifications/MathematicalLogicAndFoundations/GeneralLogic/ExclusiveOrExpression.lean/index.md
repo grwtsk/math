@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExclusiveOrExpression.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExclusiveOrExpression.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExclusiveOrExpression.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExclusiveOrExpression.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Negation Conjunction Disjunction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/index.md) — import line 17; pinned internal source present.
+- [Negation Conjunction Disjunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/index.md) — import line 17; pinned internal source present.
 - `Folder.Boolean.Semantics` — import line 19; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [nandXor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExclusiveOrExpression.lean/declarations/nandxor.md) | 40 | `declaration-track:d0cda067cfe7b14950b6323d09de053940d511c62837f63e0ec4ff7b163db23b` |
-| 2 | `theorem` | [eval_nandXor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExclusiveOrExpression.lean/declarations/eval-nandxor.md) | 44 | `result-track:5ab39e7bbd96e8af7115c9c33d32cba734285480f40374b96ef08035c18ef330` |
+| 1 | `def` | [nandXor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExclusiveOrExpression.lean/declarations/nandxor.md) | 40 | `declaration-track:d0cda067cfe7b14950b6323d09de053940d511c62837f63e0ec4ff7b163db23b` |
+| 2 | `theorem` | [eval_nandXor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExclusiveOrExpression.lean/declarations/eval-nandxor.md) | 44 | `result-track:5ab39e7bbd96e8af7115c9c33d32cba734285480f40374b96ef08035c18ef330` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

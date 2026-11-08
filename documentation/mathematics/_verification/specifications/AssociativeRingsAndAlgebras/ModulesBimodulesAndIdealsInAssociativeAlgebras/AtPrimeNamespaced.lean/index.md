@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/AtPrimeNamespaced.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/AtPrimeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/AtPrimeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/AtPrimeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IsLocalizedModule.AtPrime](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/AtPrimeNamespaced.lean/declarations/islocalizedmodule-atprime.md) | 23 | `declaration-track:c8f5942db77bb797aeb2d3effaf2818731983ee70d27857affba4e6339ef4106` |
-| 2 | `abbrev` | [LocalizedModule.AtPrime](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/AtPrimeNamespaced.lean/declarations/localizedmodule-atprime.md) | 29 | `declaration-track:bf8b347c8cb6a06d198cb819910f6a9dcd4bd164d2bf125d3df0db65b315e875` |
+| 1 | `abbrev` | [IsLocalizedModule.AtPrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/AtPrimeNamespaced.lean/declarations/islocalizedmodule-atprime.md) | 23 | `declaration-track:c8f5942db77bb797aeb2d3effaf2818731983ee70d27857affba4e6339ef4106` |
+| 2 | `abbrev` | [LocalizedModule.AtPrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/AtPrimeNamespaced.lean/declarations/localizedmodule-atprime.md) | 29 | `declaration-track:bf8b347c8cb6a06d198cb819910f6a9dcd4bd164d2bf125d3df0db65b315e875` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SingularHomologyBasic.lean/index.md) · [Full source](../../../../AlgebraicTopology/SingularHomologyBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularHomologyBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularHomologyBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [SSet.singularChainComplexFunctor](../../../../AlgebraicTopology/SingularHomologyBasic.lean/declarations/sset-singularchaincomplexfunctor.md) | 32 | `declaration-track:a233972b7c61244f6dc9d753e2fcf1d4ef6a5b852648e4287dc3e0db2f85e2ec` |
-| 2 | `def` | [singularChainComplexFunctor](../../../../AlgebraicTopology/SingularHomologyBasic.lean/declarations/singularchaincomplexfunctor.md) | 38 | `declaration-track:4f929d890ee4f0ab7e3002c5748627f63dfc8daf0b90d1208190e6032f370db1` |
-| 3 | `def` | [singularHomologyFunctor](../../../../AlgebraicTopology/SingularHomologyBasic.lean/declarations/singularhomologyfunctor.md) | 43 | `declaration-track:989f540c779d342fdb4fd95a8b7b0b259c536f701185782dfc64a664cd2f37c9` |
-| 4 | `def` | [singularChainComplexFunctorIsoOfTotallyDisconnectedSpace](../../../../AlgebraicTopology/SingularHomologyBasic.lean/declarations/singularchaincomplexfunctorisooftotallydisconnectedspace.md) | 55 | `declaration-track:39492a2fde13e2dfa7d0a3e96192f839f48c56f19be9015ed5f3a4a44c32feac` |
-| 5 | `lemma` | [singularChainComplexFunctor_exactAt_of_totallyDisconnectedSpace](../../../../AlgebraicTopology/SingularHomologyBasic.lean/declarations/singularchaincomplexfunctor-exactat-of-totallydisconnectedspace.md) | 64 | `result-track:5914911452f0099455390530e13ca222331becede0feb3a958610e119d98e87f` |
-| 6 | `lemma` | [isZero_singularHomologyFunctor_of_totallyDisconnectedSpace](../../../../AlgebraicTopology/SingularHomologyBasic.lean/declarations/iszero-singularhomologyfunctor-of-totallydisconnectedspace.md) | 70 | `result-track:905faaef3b9ebccbd4cb265db8c18e42a59ea2eba92f98c099071031c6677626` |
-| 7 | `def` | [singularHomologyFunctorZeroOfTotallyDisconnectedSpace](../../../../AlgebraicTopology/SingularHomologyBasic.lean/declarations/singularhomologyfunctorzerooftotallydisconnectedspace.md) | 78 | `declaration-track:127c1c9f1b7ef42880ef3abd814a65442d9dc39f3790541d23928024f067ddb1` |
+| 1 | `def` | [SSet.singularChainComplexFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularHomologyBasic.lean/declarations/sset-singularchaincomplexfunctor.md) | 32 | `declaration-track:a233972b7c61244f6dc9d753e2fcf1d4ef6a5b852648e4287dc3e0db2f85e2ec` |
+| 2 | `def` | [singularChainComplexFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularHomologyBasic.lean/declarations/singularchaincomplexfunctor.md) | 38 | `declaration-track:4f929d890ee4f0ab7e3002c5748627f63dfc8daf0b90d1208190e6032f370db1` |
+| 3 | `def` | [singularHomologyFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularHomologyBasic.lean/declarations/singularhomologyfunctor.md) | 43 | `declaration-track:989f540c779d342fdb4fd95a8b7b0b259c536f701185782dfc64a664cd2f37c9` |
+| 4 | `def` | [singularChainComplexFunctorIsoOfTotallyDisconnectedSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularHomologyBasic.lean/declarations/singularchaincomplexfunctorisooftotallydisconnectedspace.md) | 55 | `declaration-track:39492a2fde13e2dfa7d0a3e96192f839f48c56f19be9015ed5f3a4a44c32feac` |
+| 5 | `lemma` | [singularChainComplexFunctor_exactAt_of_totallyDisconnectedSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularHomologyBasic.lean/declarations/singularchaincomplexfunctor-exactat-of-totallydisconnectedspace.md) | 64 | `result-track:5914911452f0099455390530e13ca222331becede0feb3a958610e119d98e87f` |
+| 6 | `lemma` | [isZero_singularHomologyFunctor_of_totallyDisconnectedSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularHomologyBasic.lean/declarations/iszero-singularhomologyfunctor-of-totallydisconnectedspace.md) | 70 | `result-track:905faaef3b9ebccbd4cb265db8c18e42a59ea2eba92f98c099071031c6677626` |
+| 7 | `def` | [singularHomologyFunctorZeroOfTotallyDisconnectedSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularHomologyBasic.lean/declarations/singularhomologyfunctorzerooftotallydisconnectedspace.md) | 78 | `declaration-track:127c1c9f1b7ef42880ef3abd814a65442d9dc39f3790541d23928024f067ddb1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

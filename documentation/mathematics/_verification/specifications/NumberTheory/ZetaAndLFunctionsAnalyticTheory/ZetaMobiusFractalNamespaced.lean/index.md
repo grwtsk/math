@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaMobiusFractalNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaMobiusFractalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaMobiusFractalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaMobiusFractalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ZetaMobiusFractalFunction](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaMobiusFractalNamespaced.lean/declarations/zetamobiusfractalfunction.md) | 13 | `declaration-track:d299a783db682cd0564a31f927528256d59042ce8d7bc2f73449b1aeea8f8939` |
-| 2 | `theorem` | [zetaMobiusFractal_is_nowhereDifferentiableFractal](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaMobiusFractalNamespaced.lean/declarations/zetamobiusfractal-is-nowheredifferentiablefractal.md) | 19 | `result-track:3d96afda5099181fb771811d8bb09a9b1dc3aa57d440b4ce863bdea9349eb8af` |
+| 1 | `structure` | [ZetaMobiusFractalFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaMobiusFractalNamespaced.lean/declarations/zetamobiusfractalfunction.md) | 13 | `declaration-track:d299a783db682cd0564a31f927528256d59042ce8d7bc2f73449b1aeea8f8939` |
+| 2 | `theorem` | [zetaMobiusFractal_is_nowhereDifferentiableFractal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaMobiusFractalNamespaced.lean/declarations/zetamobiusfractal-is-nowheredifferentiablefractal.md) | 19 | `result-track:3d96afda5099181fb771811d8bb09a9b1dc3aa57d440b4ce863bdea9349eb8af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

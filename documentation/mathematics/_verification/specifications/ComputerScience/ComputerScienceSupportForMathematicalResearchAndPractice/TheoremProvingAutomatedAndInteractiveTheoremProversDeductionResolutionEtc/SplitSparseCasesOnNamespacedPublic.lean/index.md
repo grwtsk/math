@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rewriteGoalUsingEq](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnNamespacedPublic.lean/declarations/rewritegoalusingeq.md) | 27 | `declaration-track:dcecaf532aeb2c11527d6cb9613c44d66fccf79157180d037c51ee9e261a3d3c` |
-| 2 | `def` | [reduceSparseCasesOn](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnNamespacedPublic.lean/declarations/reducesparsecaseson.md) | 34 | `declaration-track:333b4cca05daba224d1957ff5a09bd6ed853e0258ae239a7a1cf532e6991049a` |
-| 3 | `def` | [splitSparseCasesOn](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnNamespacedPublic.lean/declarations/splitsparsecaseson.md) | 58 | `declaration-track:ee3225dfe8028d0e710295f4371f5c3065c89fde0db2e6cbdd9c71d36df28287` |
+| 1 | `def` | [rewriteGoalUsingEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnNamespacedPublic.lean/declarations/rewritegoalusingeq.md) | 27 | `declaration-track:dcecaf532aeb2c11527d6cb9613c44d66fccf79157180d037c51ee9e261a3d3c` |
+| 2 | `def` | [reduceSparseCasesOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnNamespacedPublic.lean/declarations/reducesparsecaseson.md) | 34 | `declaration-track:333b4cca05daba224d1957ff5a09bd6ed853e0258ae239a7a1cf532e6991049a` |
+| 3 | `def` | [splitSparseCasesOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnNamespacedPublic.lean/declarations/splitsparsecaseson.md) | 58 | `declaration-track:ee3225dfe8028d0e710295f4371f5c3065c89fde0db2e6cbdd9c71d36df28287` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

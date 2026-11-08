@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fintypeDiagram](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/fintypediagram.md) | 55 | `declaration-track:f7874b7c2c952994a857e6e7f511fb872862d1da43bf2004e89a689f363d6d28` |
-| 2 | `abbrev` | [diagram](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/diagram.md) | 60 | `declaration-track:1eb52c49a7ca6b4ce1be28200e23beef0d497a210d1086627d518c6fd6ef42b7` |
-| 3 | `def` | [asLimitCone](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/aslimitcone.md) | 64 | `declaration-track:5436417faf3fb92fd8fef397f93604957388493fb540693d784b4504f138b12b` |
-| 4 | `instance` | [isIso_asLimitCone_lift](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/isiso-aslimitcone-lift.md) | 70 | `declaration-track:debd71e0b3d028a6a624b426985ae9282d143fe75e2e55131d4dae1da97e335d` |
-| 5 | `def` | [isoAsLimitConeLift](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/isoaslimitconelift.md) | 92 | `declaration-track:6d9e22e6710f04750ee5e237d63096f0e5357477184edac829b3d984dff876c6` |
-| 6 | `def` | [asLimitConeIso](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/aslimitconeiso.md) | 98 | `declaration-track:441442dd8209684405c2535c8c7bbfdc2e8e9043ee3ea91aa8288c215e067dbf` |
-| 7 | `def` | [asLimit](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/aslimit.md) | 102 | `declaration-track:89e13cee08fa72b9b81c54b5d84ec6b0fbb1f68d51a7051ac84bf583bb83e8e7` |
-| 8 | `def` | [lim](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/lim.md) | 106 | `declaration-track:f460f59fe575738ad73d7be5801324b174be7d3f0f86c39dc198064a1bcc575f` |
+| 1 | `def` | [fintypeDiagram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/fintypediagram.md) | 55 | `declaration-track:f7874b7c2c952994a857e6e7f511fb872862d1da43bf2004e89a689f363d6d28` |
+| 2 | `abbrev` | [diagram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/diagram.md) | 60 | `declaration-track:1eb52c49a7ca6b4ce1be28200e23beef0d497a210d1086627d518c6fd6ef42b7` |
+| 3 | `def` | [asLimitCone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/aslimitcone.md) | 64 | `declaration-track:5436417faf3fb92fd8fef397f93604957388493fb540693d784b4504f138b12b` |
+| 4 | `instance` | [isIso_asLimitCone_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/isiso-aslimitcone-lift.md) | 70 | `declaration-track:debd71e0b3d028a6a624b426985ae9282d143fe75e2e55131d4dae1da97e335d` |
+| 5 | `def` | [isoAsLimitConeLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/isoaslimitconelift.md) | 92 | `declaration-track:6d9e22e6710f04750ee5e237d63096f0e5357477184edac829b3d984dff876c6` |
+| 6 | `def` | [asLimitConeIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/aslimitconeiso.md) | 98 | `declaration-track:441442dd8209684405c2535c8c7bbfdc2e8e9043ee3ea91aa8288c215e067dbf` |
+| 7 | `def` | [asLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/aslimit.md) | 102 | `declaration-track:89e13cee08fa72b9b81c54b5d84ec6b0fbb1f68d51a7051ac84bf583bb83e8e7` |
+| 8 | `def` | [lim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/lim.md) | 106 | `declaration-track:f460f59fe575738ad73d7be5801324b174be7d3f0f86c39dc198064a1bcc575f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

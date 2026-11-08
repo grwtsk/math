@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WhereNamespacedDescribeOpenDecls.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WhereNamespacedDescribeOpenDecls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WhereNamespacedDescribeOpenDecls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WhereNamespacedDescribeOpenDecls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [describeOpenDecls](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WhereNamespacedDescribeOpenDecls.lean/declarations/describeopendecls.md) | 26 | `declaration-track:4009fdeec4737733e9f6e384f97730a5a189f86f783664f38008c15602b9f886` |
-| 2 | `def` | [describeOptions](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WhereNamespacedDescribeOpenDecls.lean/declarations/describeoptions.md) | 49 | `declaration-track:04b5a1a7005e4ef191d074dee334d4a24a5bd2cd9be4bfff74d10389889e49e5` |
-| 3 | `elab` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WhereNamespacedDescribeOpenDecls.lean/declarations/elab.md) | 63 | `declaration-track:119f141386de58ebe3c2f3d01772cd53c3db967460a0ef527c08b3a36cda2d1b` |
+| 1 | `def` | [describeOpenDecls](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WhereNamespacedDescribeOpenDecls.lean/declarations/describeopendecls.md) | 26 | `declaration-track:4009fdeec4737733e9f6e384f97730a5a189f86f783664f38008c15602b9f886` |
+| 2 | `def` | [describeOptions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WhereNamespacedDescribeOpenDecls.lean/declarations/describeoptions.md) | 49 | `declaration-track:04b5a1a7005e4ef191d074dee334d4a24a5bd2cd9be4bfff74d10389889e49e5` |
+| 3 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/WhereNamespacedDescribeOpenDecls.lean/declarations/elab.md) | 63 | `declaration-track:119f141386de58ebe3c2f3d01772cd53c3db967460a0ef527c08b3a36cda2d1b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

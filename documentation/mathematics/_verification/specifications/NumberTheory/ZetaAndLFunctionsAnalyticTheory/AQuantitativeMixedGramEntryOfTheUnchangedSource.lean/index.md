@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AQuantitativeMixedGramEntryOfTheUnchangedSource.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AQuantitativeMixedGramEntryOfTheUnchangedSource.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AQuantitativeMixedGramEntryOfTheUnchangedSource.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AQuantitativeMixedGramEntryOfTheUnchangedSource.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_correlation_deriv_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AQuantitativeMixedGramEntryOfTheUnchangedSource.lean/declarations/actual-correlation-deriv-zero.md) | 25 | `result-track:0b53989afaacf90d0195ede590d31c1cc573b53807246a03f1b5c8157caf9bf5` |
-| 2 | `theorem` | [actual_five_eight_gram_kernel_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AQuantitativeMixedGramEntryOfTheUnchangedSource.lean/declarations/actual-five-eight-gram-kernel-lower.md) | 41 | `result-track:ea76e777cc3a1d1461211ad298d4f6f051385d7eceae19154f7b7df914353824` |
-| 3 | `theorem` | [actual_five_eight_gram_kernel_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AQuantitativeMixedGramEntryOfTheUnchangedSource.lean/declarations/actual-five-eight-gram-kernel-pos.md) | 59 | `result-track:fc170e925c2e10151994d49f538d7e9d344ca5ad854c06cf18da294ff3a8fed3` |
-| 4 | `theorem` | [actual_log_difference_gram_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AQuantitativeMixedGramEntryOfTheUnchangedSource.lean/declarations/actual-log-difference-gram-lower.md) | 64 | `result-track:3099b39da0241b117a07fbbf4b490ea127799fe857dbe4f85229fd034635120d` |
-| 5 | `theorem` | [actual_five_eight_L2_gram_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AQuantitativeMixedGramEntryOfTheUnchangedSource.lean/declarations/actual-five-eight-l2-gram-lower.md) | 71 | `result-track:03f986fe1914aed8d1777ba62253c061efdabc191624f3e802e27fdd0278ee74` |
-| 6 | `theorem` | [actual_five_eight_L2_gram_ne_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AQuantitativeMixedGramEntryOfTheUnchangedSource.lean/declarations/actual-five-eight-l2-gram-ne-zero.md) | 79 | `result-track:307fbc022e148c68a6ce6a2991a410a80fc8e1f7a7a4a6d026802e0b0596fc14` |
+| 1 | `theorem` | [actual_correlation_deriv_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AQuantitativeMixedGramEntryOfTheUnchangedSource.lean/declarations/actual-correlation-deriv-zero.md) | 25 | `result-track:0b53989afaacf90d0195ede590d31c1cc573b53807246a03f1b5c8157caf9bf5` |
+| 2 | `theorem` | [actual_five_eight_gram_kernel_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AQuantitativeMixedGramEntryOfTheUnchangedSource.lean/declarations/actual-five-eight-gram-kernel-lower.md) | 41 | `result-track:ea76e777cc3a1d1461211ad298d4f6f051385d7eceae19154f7b7df914353824` |
+| 3 | `theorem` | [actual_five_eight_gram_kernel_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AQuantitativeMixedGramEntryOfTheUnchangedSource.lean/declarations/actual-five-eight-gram-kernel-pos.md) | 59 | `result-track:fc170e925c2e10151994d49f538d7e9d344ca5ad854c06cf18da294ff3a8fed3` |
+| 4 | `theorem` | [actual_log_difference_gram_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AQuantitativeMixedGramEntryOfTheUnchangedSource.lean/declarations/actual-log-difference-gram-lower.md) | 64 | `result-track:3099b39da0241b117a07fbbf4b490ea127799fe857dbe4f85229fd034635120d` |
+| 5 | `theorem` | [actual_five_eight_L2_gram_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AQuantitativeMixedGramEntryOfTheUnchangedSource.lean/declarations/actual-five-eight-l2-gram-lower.md) | 71 | `result-track:03f986fe1914aed8d1777ba62253c061efdabc191624f3e802e27fdd0278ee74` |
+| 6 | `theorem` | [actual_five_eight_L2_gram_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AQuantitativeMixedGramEntryOfTheUnchangedSource.lean/declarations/actual-five-eight-l2-gram-ne-zero.md) | 79 | `result-track:307fbc022e148c68a6ce6a2991a410a80fc8e1f7a7a4a6d026802e0b0596fc14` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

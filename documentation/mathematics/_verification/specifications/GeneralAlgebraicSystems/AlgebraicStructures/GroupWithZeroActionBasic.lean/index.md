@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [MulAction.bijective₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/declarations/mulaction-bijective.md) | 56 | `result-track:2c6e85951365bb28a103c3742c8b3d39ce544861f3992edb2ad260662561894b` |
-| 2 | `lemma` | [MulAction.injective₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/declarations/mulaction-injective.md) | 59 | `result-track:bf189547d1e63cdf5ae7f8574b07a567c6e30745351f5ec242c6201b53601278` |
-| 3 | `lemma` | [MulAction.surjective₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/declarations/mulaction-surjective.md) | 62 | `result-track:e6e096a7dbc54e5b8ec3d5600acc27b97d0b16657d0a5e3a6d37c2f444a55921` |
-| 4 | `def` | [DistribMulAction.toAddEquiv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/declarations/distribmulaction-toaddequiv.md) | 75 | `declaration-track:86121713e16aac8bb66bde9a42aba35ae9ee89b4fa49971cb1a387ca6d11ed33` |
-| 5 | `def` | [DistribMulAction.toAddAut](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/declarations/distribmulaction-toaddaut.md) | 85 | `declaration-track:a4146a5b019720ac64d5056b878e93d60f763f6d9e32cebb3e5e321174770a9e` |
-| 6 | `def` | [smulMonoidWithZeroHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/declarations/smulmonoidwithzerohom.md) | 94 | `declaration-track:a665328258b85966d680ac6884055d7ac84c45b0b5ba1b70bb614f62881901d7` |
-| 7 | `instance` | [applyDistribMulAction](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/declarations/applydistribmulaction.md) | 103 | `declaration-track:fa8234552ed2095066c5c161dca0b5c99e02585a6125f135a4eb2a8ec5f0b795` |
-| 8 | `lemma` | [IsUnit.smul_sub_iff_sub_inv_smul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/declarations/isunit-smul-sub-iff-sub-inv-smul.md) | 112 | `result-track:6bb55fef76041569b8c47263ec8b94a86123d2103809adf91c9d38e2d221669b` |
+| 1 | `lemma` | [MulAction.bijective₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/declarations/mulaction-bijective.md) | 56 | `result-track:2c6e85951365bb28a103c3742c8b3d39ce544861f3992edb2ad260662561894b` |
+| 2 | `lemma` | [MulAction.injective₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/declarations/mulaction-injective.md) | 59 | `result-track:bf189547d1e63cdf5ae7f8574b07a567c6e30745351f5ec242c6201b53601278` |
+| 3 | `lemma` | [MulAction.surjective₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/declarations/mulaction-surjective.md) | 62 | `result-track:e6e096a7dbc54e5b8ec3d5600acc27b97d0b16657d0a5e3a6d37c2f444a55921` |
+| 4 | `def` | [DistribMulAction.toAddEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/declarations/distribmulaction-toaddequiv.md) | 75 | `declaration-track:86121713e16aac8bb66bde9a42aba35ae9ee89b4fa49971cb1a387ca6d11ed33` |
+| 5 | `def` | [DistribMulAction.toAddAut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/declarations/distribmulaction-toaddaut.md) | 85 | `declaration-track:a4146a5b019720ac64d5056b878e93d60f763f6d9e32cebb3e5e321174770a9e` |
+| 6 | `def` | [smulMonoidWithZeroHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/declarations/smulmonoidwithzerohom.md) | 94 | `declaration-track:a665328258b85966d680ac6884055d7ac84c45b0b5ba1b70bb614f62881901d7` |
+| 7 | `instance` | [applyDistribMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/declarations/applydistribmulaction.md) | 103 | `declaration-track:fa8234552ed2095066c5c161dca0b5c99e02585a6125f135a4eb2a8ec5f0b795` |
+| 8 | `lemma` | [IsUnit.smul_sub_iff_sub_inv_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionBasic.lean/declarations/isunit-smul-sub-iff-sub-inv-smul.md) | 112 | `result-track:6bb55fef76041569b8c47263ec8b94a86123d2103809adf91c9d38e2d221669b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

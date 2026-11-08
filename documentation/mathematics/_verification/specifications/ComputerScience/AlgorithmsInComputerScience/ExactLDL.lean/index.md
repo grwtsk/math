@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ExactLDL.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ExactLDL.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExactLDL.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExactLDL.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ExactLDLDescriptor](../../../../../ComputerScience/AlgorithmsInComputerScience/ExactLDL.lean/declarations/exactldldescriptor.md) | 5 | `declaration-track:bd87ad9d4c6274b03b12b25096bf6c2048c974ce290c94ef286d97515d3b3ba1` |
+| 1 | `structure` | [ExactLDLDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExactLDL.lean/declarations/exactldldescriptor.md) | 5 | `declaration-track:bd87ad9d4c6274b03b12b25096bf6c2048c974ce290c94ef286d97515d3b3ba1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ContinuedFractionsPublic.lean/index.md) · [Full source](../../../../NumberTheory/ContinuedFractionsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ContinuedFractionsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ContinuedFractionsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [convs_eq_convergent](../../../../NumberTheory/ContinuedFractionsPublic.lean/declarations/convs-eq-convergent.md) | 38 | `result-track:888ca5366be7d5467cc32f5d3f850833efd6b3b98bc224d13360358d64f245d6` |
-| 2 | `theorem` | [exists_convs_eq_rat](../../../../NumberTheory/ContinuedFractionsPublic.lean/declarations/exists-convs-eq-rat.md) | 56 | `result-track:b2cc013603cfb07a9ef99202acb2377df003091e2eeb0fbd45784daa41bf573d` |
+| 1 | `theorem` | [convs_eq_convergent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ContinuedFractionsPublic.lean/declarations/convs-eq-convergent.md) | 38 | `result-track:888ca5366be7d5467cc32f5d3f850833efd6b3b98bc224d13360358d64f245d6` |
+| 2 | `theorem` | [exists_convs_eq_rat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ContinuedFractionsPublic.lean/declarations/exists-convs-eq-rat.md) | 56 | `result-track:b2cc013603cfb07a9ef99202acb2377df003091e2eeb0fbd45784daa41bf573d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

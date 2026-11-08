@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceJointMangoldtColumn.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceJointMangoldtColumn.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceJointMangoldtColumn.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceJointMangoldtColumn.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mangoldtColumn](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceJointMangoldtColumn.lean/declarations/mangoldtcolumn.md) | 23 | `declaration-track:12a8beb971192cf77de8fe148cfdfd21bff661198a9779421ceab55bee3f9cff` |
-| 2 | `def` | [centeredLongPrefix](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceJointMangoldtColumn.lean/declarations/centeredlongprefix.md) | 26 | `declaration-track:cc104fb6501a54abe5cf25cc52291c938f76e3a3d37d8c54d017582d4cd221c9` |
-| 3 | `theorem` | [mangoldtColumn_upper_zero](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceJointMangoldtColumn.lean/declarations/mangoldtcolumn-upper-zero.md) | 29 | `result-track:538dae9cd05275b5bed34a29bc5c13d39b94f279093403e595e318638e1e051e` |
-| 4 | `theorem` | [sourcePairing_eq_prefix_column_increments](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceJointMangoldtColumn.lean/declarations/sourcepairing-eq-prefix-column-increments.md) | 43 | `result-track:fae55a001b577ae5163a208bd6dc0700b5f45481a0594de38da94ddcdff9aed8` |
-| 5 | `theorem` | [mangoldt_inner_eq_centered_prefix_column_increments](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceJointMangoldtColumn.lean/declarations/mangoldt-inner-eq-centered-prefix-column-increments.md) | 123 | `result-track:8fe21cebf1ce4baa36714c1afdb58fdba79a2e832fadb188bf4d8ad829519675` |
+| 1 | `def` | [mangoldtColumn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceJointMangoldtColumn.lean/declarations/mangoldtcolumn.md) | 23 | `declaration-track:12a8beb971192cf77de8fe148cfdfd21bff661198a9779421ceab55bee3f9cff` |
+| 2 | `def` | [centeredLongPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceJointMangoldtColumn.lean/declarations/centeredlongprefix.md) | 26 | `declaration-track:cc104fb6501a54abe5cf25cc52291c938f76e3a3d37d8c54d017582d4cd221c9` |
+| 3 | `theorem` | [mangoldtColumn_upper_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceJointMangoldtColumn.lean/declarations/mangoldtcolumn-upper-zero.md) | 29 | `result-track:538dae9cd05275b5bed34a29bc5c13d39b94f279093403e595e318638e1e051e` |
+| 4 | `theorem` | [sourcePairing_eq_prefix_column_increments](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceJointMangoldtColumn.lean/declarations/sourcepairing-eq-prefix-column-increments.md) | 43 | `result-track:fae55a001b577ae5163a208bd6dc0700b5f45481a0594de38da94ddcdff9aed8` |
+| 5 | `theorem` | [mangoldt_inner_eq_centered_prefix_column_increments](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceJointMangoldtColumn.lean/declarations/mangoldt-inner-eq-centered-prefix-column-increments.md) | 123 | `result-track:8fe21cebf1ce4baa36714c1afdb58fdba79a2e832fadb188bf4d8ad829519675` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

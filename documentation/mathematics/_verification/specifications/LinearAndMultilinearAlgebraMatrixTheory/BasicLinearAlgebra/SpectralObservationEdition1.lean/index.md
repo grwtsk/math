@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralObservationEdition1.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralObservationEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralObservationEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralObservationEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [featureGram](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralObservationEdition1.lean/declarations/featuregram.md) | 21 | `declaration-track:e5b7ebb496dc0a9446d33cfaceb8996ce662d1e55e2331e7cb5a394be6d6433b` |
-| 2 | `theorem` | [complex_gram_norm_square](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralObservationEdition1.lean/declarations/complex-gram-norm-square.md) | 25 | `result-track:bf146d50e451ab315b426fffedfbcf2110e96dbcae0da2f99b87ac7ea67483e5` |
-| 3 | `theorem` | [real_gram_sum_squares](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralObservationEdition1.lean/declarations/real-gram-sum-squares.md) | 32 | `result-track:1e934ad94a34430b64f34cfdd87ed544c660821583c40b877e6681a42ee2231e` |
-| 4 | `theorem` | [complex_gram_posSemidef](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralObservationEdition1.lean/declarations/complex-gram-possemidef.md) | 41 | `result-track:e3f2138fdb124c245475e67acf976a294815b18f51c266c70c3a78ae77609512` |
-| 5 | `theorem` | [real_gram_posSemidef](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralObservationEdition1.lean/declarations/real-gram-possemidef.md) | 47 | `result-track:dfd9a74247478e4e7524677a0cf5f53809c19f4e70015819d267e5be4d32f30e` |
-| 6 | `theorem` | [complex_gram_rank_bound](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralObservationEdition1.lean/declarations/complex-gram-rank-bound.md) | 51 | `result-track:a93f7339a6e5c83fa39500f0a9999624e2a09b4203666b527119c06556aec2d2` |
-| 7 | `theorem` | [real_gram_rank_bound](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralObservationEdition1.lean/declarations/real-gram-rank-bound.md) | 56 | `result-track:671139773a16ffae7caec150ccacd11e77ea205c1ee2e12254fc0545b6472f91` |
+| 1 | `def` | [featureGram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralObservationEdition1.lean/declarations/featuregram.md) | 21 | `declaration-track:e5b7ebb496dc0a9446d33cfaceb8996ce662d1e55e2331e7cb5a394be6d6433b` |
+| 2 | `theorem` | [complex_gram_norm_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralObservationEdition1.lean/declarations/complex-gram-norm-square.md) | 25 | `result-track:bf146d50e451ab315b426fffedfbcf2110e96dbcae0da2f99b87ac7ea67483e5` |
+| 3 | `theorem` | [real_gram_sum_squares](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralObservationEdition1.lean/declarations/real-gram-sum-squares.md) | 32 | `result-track:1e934ad94a34430b64f34cfdd87ed544c660821583c40b877e6681a42ee2231e` |
+| 4 | `theorem` | [complex_gram_posSemidef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralObservationEdition1.lean/declarations/complex-gram-possemidef.md) | 41 | `result-track:e3f2138fdb124c245475e67acf976a294815b18f51c266c70c3a78ae77609512` |
+| 5 | `theorem` | [real_gram_posSemidef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralObservationEdition1.lean/declarations/real-gram-possemidef.md) | 47 | `result-track:dfd9a74247478e4e7524677a0cf5f53809c19f4e70015819d267e5be4d32f30e` |
+| 6 | `theorem` | [complex_gram_rank_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralObservationEdition1.lean/declarations/complex-gram-rank-bound.md) | 51 | `result-track:a93f7339a6e5c83fa39500f0a9999624e2a09b4203666b527119c06556aec2d2` |
+| 7 | `theorem` | [real_gram_rank_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralObservationEdition1.lean/declarations/real-gram-rank-bound.md) | 56 | `result-track:671139773a16ffae7caec150ccacd11e77ea205c1ee2e12254fc0545b6472f91` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

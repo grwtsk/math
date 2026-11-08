@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlugNamespacedTrustedDeclaration.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlugNamespacedTrustedDeclaration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlugNamespacedTrustedDeclaration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlugNamespacedTrustedDeclaration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Slug](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlugNamespacedTrustedDeclaration.lean/declarations/slug.md) | 15 | `declaration-track:e2c2c03dffb4973a029d2e136da67c2e556de6951725ec24cd16cb6dd3d6990a` |
-| 2 | `def` | [Nonempty](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlugNamespacedTrustedDeclaration.lean/declarations/nonempty.md) | 21 | `declaration-track:8c6e2cc52ed6407827a387ee7b5ea31155adc140c9601ffbeaa6e391b498d205` |
-| 3 | `structure` | [TrustedDeclaration](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlugNamespacedTrustedDeclaration.lean/declarations/trusteddeclaration.md) | 26 | `declaration-track:8dee0cd3c0559599e1bd0a2fb1fac882a0d89e03a93cbb0fc5365bc81aa3c3a5` |
-| 4 | `def` | [slugOfDeclaration](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlugNamespacedTrustedDeclaration.lean/declarations/slugofdeclaration.md) | 31 | `declaration-track:95f1d8934cd297fcaf155a05de632a513fafaa9931087af665a05e2d634c7b59` |
-| 5 | `def` | [TrustedDeclarationValid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlugNamespacedTrustedDeclaration.lean/declarations/trusteddeclarationvalid.md) | 34 | `declaration-track:1da1e98d64d428eda3eb66331563c7b075dd61bf38b2cebdd288110789c333bf` |
-| 6 | `theorem` | [slug_nonempty_for_trusted_declaration](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlugNamespacedTrustedDeclaration.lean/declarations/slug-nonempty-for-trusted-declaration.md) | 37 | `result-track:53fc61573cc2c0ecce1d84ffba59e5d8a6c61e72e2921e3a4c935b537fcbbb2a` |
+| 1 | `structure` | [Slug](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlugNamespacedTrustedDeclaration.lean/declarations/slug.md) | 15 | `declaration-track:e2c2c03dffb4973a029d2e136da67c2e556de6951725ec24cd16cb6dd3d6990a` |
+| 2 | `def` | [Nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlugNamespacedTrustedDeclaration.lean/declarations/nonempty.md) | 21 | `declaration-track:8c6e2cc52ed6407827a387ee7b5ea31155adc140c9601ffbeaa6e391b498d205` |
+| 3 | `structure` | [TrustedDeclaration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlugNamespacedTrustedDeclaration.lean/declarations/trusteddeclaration.md) | 26 | `declaration-track:8dee0cd3c0559599e1bd0a2fb1fac882a0d89e03a93cbb0fc5365bc81aa3c3a5` |
+| 4 | `def` | [slugOfDeclaration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlugNamespacedTrustedDeclaration.lean/declarations/slugofdeclaration.md) | 31 | `declaration-track:95f1d8934cd297fcaf155a05de632a513fafaa9931087af665a05e2d634c7b59` |
+| 5 | `def` | [TrustedDeclarationValid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlugNamespacedTrustedDeclaration.lean/declarations/trusteddeclarationvalid.md) | 34 | `declaration-track:1da1e98d64d428eda3eb66331563c7b075dd61bf38b2cebdd288110789c333bf` |
+| 6 | `theorem` | [slug_nonempty_for_trusted_declaration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlugNamespacedTrustedDeclaration.lean/declarations/slug-nonempty-for-trusted-declaration.md) | 37 | `result-track:53fc61573cc2c0ecce1d84ffba59e5d8a6c61e72e2921e3a4c935b537fcbbb2a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

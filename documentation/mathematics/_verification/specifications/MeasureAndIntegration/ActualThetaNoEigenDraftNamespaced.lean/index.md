@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualThetaNoEigenDraftNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualThetaNoEigenDraftNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualThetaNoEigenDraftNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualThetaNoEigenDraftNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualMomentMeasure_nullSingleton](../../../../MeasureAndIntegration/ActualThetaNoEigenDraftNamespaced.lean/declarations/actualmomentmeasure-nullsingleton.md) | 23 | `result-track:c273e839c3f4733036b00ff827ba007a5dcad4e21d63dda126a3d32f3de7abe9` |
-| 2 | `theorem` | [actualTheta_coordinate_eigenvector_eq_zero](../../../../MeasureAndIntegration/ActualThetaNoEigenDraftNamespaced.lean/declarations/actualtheta-coordinate-eigenvector-eq-zero.md) | 28 | `result-track:cb41423cdfe653419568f2c2c54b06e122efe3cf8db125f02231237c145fdbe8` |
-| 3 | `theorem` | [actualTheta_jacobi_eigenvector_eq_zero](../../../../MeasureAndIntegration/ActualThetaNoEigenDraftNamespaced.lean/declarations/actualtheta-jacobi-eigenvector-eq-zero.md) | 37 | `result-track:55995b654b3805f9191c78973f4da651e172a428a71e46c0b722c055a4d0aa6e` |
+| 1 | `theorem` | [actualMomentMeasure_nullSingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualThetaNoEigenDraftNamespaced.lean/declarations/actualmomentmeasure-nullsingleton.md) | 23 | `result-track:c273e839c3f4733036b00ff827ba007a5dcad4e21d63dda126a3d32f3de7abe9` |
+| 2 | `theorem` | [actualTheta_coordinate_eigenvector_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualThetaNoEigenDraftNamespaced.lean/declarations/actualtheta-coordinate-eigenvector-eq-zero.md) | 28 | `result-track:cb41423cdfe653419568f2c2c54b06e122efe3cf8db125f02231237c145fdbe8` |
+| 3 | `theorem` | [actualTheta_jacobi_eigenvector_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualThetaNoEigenDraftNamespaced.lean/declarations/actualtheta-jacobi-eigenvector-eq-zero.md) | 37 | `result-track:55995b654b3805f9191c78973f4da651e172a428a71e46c0b722c055a4d0aa6e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FiniteTypeLocalPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FiniteTypeLocalPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteTypeLocalPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteTypeLocalPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsLocalization.exists_smul_mem_of_mem_adjoin](../../../../CommutativeAlgebra/FiniteTypeLocalPublic.lean/declarations/islocalization-exists-smul-mem-of-mem-adjoin.md) | 42 | `result-track:312f5ae4157974fe2e1104795a65e42a805f6cf3d5cc0719ea1d9a305d530ab7` |
-| 2 | `theorem` | [IsLocalization.lift_mem_adjoin_finsetIntegerMultiple](../../../../CommutativeAlgebra/FiniteTypeLocalPublic.lean/declarations/islocalization-lift-mem-adjoin-finsetintegermultiple.md) | 69 | `result-track:2c77df4fc736c91ffc9f1102dfa3ded213c471bc854e34721c873e492d420aec` |
-| 3 | `lemma` | [Algebra.FiniteType.of_span_eq_top_target](../../../../CommutativeAlgebra/FiniteTypeLocalPublic.lean/declarations/algebra-finitetype-of-span-eq-top-target.md) | 82 | `result-track:f0e848111f68990c5d005ee20b33488216370cddf91b171cad4f4b10fe5f35ad` |
-| 4 | `lemma` | [Algebra.FiniteType.of_span_eq_top_source](../../../../CommutativeAlgebra/FiniteTypeLocalPublic.lean/declarations/algebra-finitetype-of-span-eq-top-source.md) | 135 | `result-track:9cc6b0c58a17e61e0c35890c5b4816c9240e1e9b50e4c67f1b7dbb48b71e7350` |
+| 1 | `theorem` | [IsLocalization.exists_smul_mem_of_mem_adjoin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteTypeLocalPublic.lean/declarations/islocalization-exists-smul-mem-of-mem-adjoin.md) | 42 | `result-track:312f5ae4157974fe2e1104795a65e42a805f6cf3d5cc0719ea1d9a305d530ab7` |
+| 2 | `theorem` | [IsLocalization.lift_mem_adjoin_finsetIntegerMultiple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteTypeLocalPublic.lean/declarations/islocalization-lift-mem-adjoin-finsetintegermultiple.md) | 69 | `result-track:2c77df4fc736c91ffc9f1102dfa3ded213c471bc854e34721c873e492d420aec` |
+| 3 | `lemma` | [Algebra.FiniteType.of_span_eq_top_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteTypeLocalPublic.lean/declarations/algebra-finitetype-of-span-eq-top-target.md) | 82 | `result-track:f0e848111f68990c5d005ee20b33488216370cddf91b171cad4f4b10fe5f35ad` |
+| 4 | `lemma` | [Algebra.FiniteType.of_span_eq_top_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteTypeLocalPublic.lean/declarations/algebra-finitetype-of-span-eq-top-source.md) | 135 | `result-track:9cc6b0c58a17e61e0c35890c5b4816c9240e1e9b50e4c67f1b7dbb48b71e7350` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/UniversalCoefficientNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/UniversalCoefficientNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniversalCoefficientNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniversalCoefficientNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [UniversalCoefficientTorsionTransfer](../../../../GroupTheoryAndGeneralizations/UniversalCoefficientNamespaced.lean/declarations/universalcoefficienttorsiontransfer.md) | 30 | `declaration-track:f11856d8521e184a8b8fdc0d17e6dc43fbe47443b739903aafe5cf59793249da` |
-| 2 | `def` | [cohomologyDegree](../../../../GroupTheoryAndGeneralizations/UniversalCoefficientNamespaced.lean/declarations/cohomologydegree.md) | 71 | `declaration-track:e5e6aaddce3f46fb843103b77a147d56de4e55fcd086662240c3b8e647cf9a44` |
-| 3 | `instance` | [instFiniteIntegralTorsion](../../../../GroupTheoryAndGeneralizations/UniversalCoefficientNamespaced.lean/declarations/instfiniteintegraltorsion.md) | 75 | `declaration-track:c22baa77e5c35396aed6d2b8d8ffdab15c01f4ec93fd1fc7d2216080512e2060` |
+| 1 | `structure` | [UniversalCoefficientTorsionTransfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniversalCoefficientNamespaced.lean/declarations/universalcoefficienttorsiontransfer.md) | 30 | `declaration-track:f11856d8521e184a8b8fdc0d17e6dc43fbe47443b739903aafe5cf59793249da` |
+| 2 | `def` | [cohomologyDegree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniversalCoefficientNamespaced.lean/declarations/cohomologydegree.md) | 71 | `declaration-track:e5e6aaddce3f46fb843103b77a147d56de4e55fcd086662240c3b8e647cf9a44` |
+| 3 | `instance` | [instFiniteIntegralTorsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniversalCoefficientNamespaced.lean/declarations/instfiniteintegraltorsion.md) | 75 | `declaration-track:c22baa77e5c35396aed6d2b8d8ffdab15c01f4ec93fd1fc7d2216080512e2060` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

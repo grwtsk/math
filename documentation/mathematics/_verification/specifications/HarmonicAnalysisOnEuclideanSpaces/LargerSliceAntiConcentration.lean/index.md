@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/index.md) · [Full source](../../../../HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Fourier.ZModLargerSlice`](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSlice.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.ZModLargerSlice`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSlice.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [larger_slice_bound](../../../../HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/larger-slice-bound.md) | 22 | `result-track:5f2b31a828bbc455fde8203ec0629c334a58fdc668b3e54ff4f8beb82e4c6093` |
-| 2 | `theorem` | [prime_larger_slice_bound](../../../../HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/prime-larger-slice-bound.md) | 33 | `result-track:b65026890cdbd15afcf615fc6b1f06813a3ccaa36f945a38e6ec91f256cad3fa` |
-| 3 | `theorem` | [uniform_epsilon_constant](../../../../HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/uniform-epsilon-constant.md) | 45 | `result-track:8a932e4c3f12bd45fba706bc96ad04e337a3cb620c862129861bc8e2ef088120` |
-| 4 | `theorem` | [exposure_pairs_three](../../../../HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/exposure-pairs-three.md) | 57 | `result-track:43466bce25a43acf9f6ec83c6d11f7c4da50703364a29db473f2c11615445541` |
-| 5 | `theorem` | [exposure_union_fiber_three](../../../../HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/exposure-union-fiber-three.md) | 62 | `result-track:daa189d99430ef28ecf98819524a5f4d43055d5b1fd21d7d87621e7c3946cf25` |
-| 6 | `theorem` | [overlapping_singletons_counterexample](../../../../HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/overlapping-singletons-counterexample.md) | 72 | `result-track:abaa8edad10891bd89143f51624397539573810590253cb7664d63a54ca12165` |
-| 7 | `def` | [smallPacket](../../../../HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/smallpacket.md) | 79 | `declaration-track:66eaa2297f505eca62bf78ec6c9bce1d335198af06595707839cdf794abd4c4f` |
-| 8 | `theorem` | [smallPacket_card](../../../../HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/smallpacket-card.md) | 81 | `result-track:f0b84bb49054b3b8374143b27f1f225bdc10acc08f7f13c9549cd7982eff58ca` |
-| 9 | `theorem` | [empty_sample_mass](../../../../HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/empty-sample-mass.md) | 83 | `result-track:5964b51b930686983e3813da9ec10bfc4c54353547c033dc9bf02462bf47742c` |
-| 10 | `theorem` | [empty_sample_has_margin](../../../../HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/empty-sample-has-margin.md) | 99 | `result-track:f6cac3d6e660225225503571a5e2423e1a5abeb1b2888e818a994fd29fbb496f` |
-| 11 | `theorem` | [zero_sample_counterexample](../../../../HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/zero-sample-counterexample.md) | 103 | `result-track:976f871703c09b73894c626b58573fa7872012d0f3e232c0857f1cfd9b05317b` |
-| 12 | `theorem` | [full_packet_mass](../../../../HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/full-packet-mass.md) | 111 | `result-track:7c537480a5de107347b65e22c9886e9f9aaf1ff475f66a9a453e7ff1773bdf73` |
-| 13 | `theorem` | [full_packet_zero_margin](../../../../HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/full-packet-zero-margin.md) | 130 | `result-track:af9a11c4ce2cd909cce63af00f78a013defb1008a4743e396b6d2071831c60af` |
-| 14 | `theorem` | [zero_epsilon_counterexample](../../../../HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/zero-epsilon-counterexample.md) | 136 | `result-track:0a09dd81b03ca888878d4a75ac4f5cc4d489a9cea0e30adc93f61a1aa3bff5aa` |
+| 1 | `theorem` | [larger_slice_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/larger-slice-bound.md) | 22 | `result-track:5f2b31a828bbc455fde8203ec0629c334a58fdc668b3e54ff4f8beb82e4c6093` |
+| 2 | `theorem` | [prime_larger_slice_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/prime-larger-slice-bound.md) | 33 | `result-track:b65026890cdbd15afcf615fc6b1f06813a3ccaa36f945a38e6ec91f256cad3fa` |
+| 3 | `theorem` | [uniform_epsilon_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/uniform-epsilon-constant.md) | 45 | `result-track:8a932e4c3f12bd45fba706bc96ad04e337a3cb620c862129861bc8e2ef088120` |
+| 4 | `theorem` | [exposure_pairs_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/exposure-pairs-three.md) | 57 | `result-track:43466bce25a43acf9f6ec83c6d11f7c4da50703364a29db473f2c11615445541` |
+| 5 | `theorem` | [exposure_union_fiber_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/exposure-union-fiber-three.md) | 62 | `result-track:daa189d99430ef28ecf98819524a5f4d43055d5b1fd21d7d87621e7c3946cf25` |
+| 6 | `theorem` | [overlapping_singletons_counterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/overlapping-singletons-counterexample.md) | 72 | `result-track:abaa8edad10891bd89143f51624397539573810590253cb7664d63a54ca12165` |
+| 7 | `def` | [smallPacket](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/smallpacket.md) | 79 | `declaration-track:66eaa2297f505eca62bf78ec6c9bce1d335198af06595707839cdf794abd4c4f` |
+| 8 | `theorem` | [smallPacket_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/smallpacket-card.md) | 81 | `result-track:f0b84bb49054b3b8374143b27f1f225bdc10acc08f7f13c9549cd7982eff58ca` |
+| 9 | `theorem` | [empty_sample_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/empty-sample-mass.md) | 83 | `result-track:5964b51b930686983e3813da9ec10bfc4c54353547c033dc9bf02462bf47742c` |
+| 10 | `theorem` | [empty_sample_has_margin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/empty-sample-has-margin.md) | 99 | `result-track:f6cac3d6e660225225503571a5e2423e1a5abeb1b2888e818a994fd29fbb496f` |
+| 11 | `theorem` | [zero_sample_counterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/zero-sample-counterexample.md) | 103 | `result-track:976f871703c09b73894c626b58573fa7872012d0f3e232c0857f1cfd9b05317b` |
+| 12 | `theorem` | [full_packet_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/full-packet-mass.md) | 111 | `result-track:7c537480a5de107347b65e22c9886e9f9aaf1ff475f66a9a453e7ff1773bdf73` |
+| 13 | `theorem` | [full_packet_zero_margin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/full-packet-zero-margin.md) | 130 | `result-track:af9a11c4ce2cd909cce63af00f78a013defb1008a4743e396b6d2071831c60af` |
+| 14 | `theorem` | [zero_epsilon_counterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/LargerSliceAntiConcentration.lean/declarations/zero-epsilon-counterexample.md) | 136 | `result-track:0a09dd81b03ca888878d4a75ac4f5cc4d489a9cea0e30adc93f61a1aa3bff5aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

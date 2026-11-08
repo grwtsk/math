@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../KTheory/FormalKKEquivalences.lean/index.md) · [Full source](../../../../KTheory/FormalKKEquivalences.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/FormalKKEquivalences.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/FormalKKEquivalences.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.KTheory.FormalKK`](../../../../KTheory/FormalKK.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.KTheory.FormalKK`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/FormalKK.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ext](../../../../KTheory/FormalKKEquivalences.lean/declarations/ext.md) | 15 | `result-track:5666eb2448edafc71677720c5ca6136109d37c2e267fc1317ed772121c97e366` |
-| 2 | `def` | [refl](../../../../KTheory/FormalKKEquivalences.lean/declarations/refl.md) | 25 | `declaration-track:eecfbe85c41ae017ff61591fbbb584a586cdaa11249409e88718b9c96508281e` |
-| 3 | `def` | [symm](../../../../KTheory/FormalKKEquivalences.lean/declarations/symm.md) | 32 | `declaration-track:146598654a478117abc8ea30fdb9d31307e85aca174e7801bee11ebeb5282390` |
-| 4 | `def` | [trans](../../../../KTheory/FormalKKEquivalences.lean/declarations/trans.md) | 39 | `declaration-track:90d2ff962115a6bf9b66e017e74c4b6b3678951882bce7f8b7922b5ada48e46b` |
-| 5 | `theorem` | [actionEquiv_trans_apply](../../../../KTheory/FormalKKEquivalences.lean/declarations/actionequiv-trans-apply.md) | 82 | `result-track:a3e20248a711817783962c49be89975c385148f2d54da88ea68007c41808949f` |
-| 6 | `def` | [act](../../../../KTheory/FormalKKEquivalences.lean/declarations/act.md) | 97 | `declaration-track:813d9f26a93ccc1ad1fdc81fe4c48c15fb9b4709425e96c476ee5081de282813` |
-| 7 | `theorem` | [act_append](../../../../KTheory/FormalKKEquivalences.lean/declarations/act-append.md) | 102 | `result-track:bc295bbd5114a53cb8bac3dc336795e482152f4b33b5dfa591dde9996a7be064` |
+| 1 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/FormalKKEquivalences.lean/declarations/ext.md) | 15 | `result-track:5666eb2448edafc71677720c5ca6136109d37c2e267fc1317ed772121c97e366` |
+| 2 | `def` | [refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/FormalKKEquivalences.lean/declarations/refl.md) | 25 | `declaration-track:eecfbe85c41ae017ff61591fbbb584a586cdaa11249409e88718b9c96508281e` |
+| 3 | `def` | [symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/FormalKKEquivalences.lean/declarations/symm.md) | 32 | `declaration-track:146598654a478117abc8ea30fdb9d31307e85aca174e7801bee11ebeb5282390` |
+| 4 | `def` | [trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/FormalKKEquivalences.lean/declarations/trans.md) | 39 | `declaration-track:90d2ff962115a6bf9b66e017e74c4b6b3678951882bce7f8b7922b5ada48e46b` |
+| 5 | `theorem` | [actionEquiv_trans_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/FormalKKEquivalences.lean/declarations/actionequiv-trans-apply.md) | 82 | `result-track:a3e20248a711817783962c49be89975c385148f2d54da88ea68007c41808949f` |
+| 6 | `def` | [act](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/FormalKKEquivalences.lean/declarations/act.md) | 97 | `declaration-track:813d9f26a93ccc1ad1fdc81fe4c48c15fb9b4709425e96c476ee5081de282813` |
+| 7 | `theorem` | [act_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/FormalKKEquivalences.lean/declarations/act-append.md) | 102 | `result-track:bc295bbd5114a53cb8bac3dc336795e482152f4b33b5dfa591dde9996a7be064` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

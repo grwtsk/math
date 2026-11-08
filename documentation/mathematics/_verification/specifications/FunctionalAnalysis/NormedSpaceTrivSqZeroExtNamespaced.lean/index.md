@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasSum_fst_expSeries](../../../../FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/hassum-fst-expseries.md) | 56 | `result-track:c56d61438e27d10313484ccb3b7a5ecb2314bd7ea9557b5c6f7488fdb399cdc0` |
-| 2 | `theorem` | [hasSum_snd_expSeries_of_smul_comm](../../../../FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/hassum-snd-expseries-of-smul-comm.md) | 66 | `result-track:cb993e3e539f033da05ffdf82a8134d6944289cdfaac91bd42f0cc6636f5ed35` |
-| 3 | `theorem` | [hasSum_expSeries_of_smul_comm](../../../../FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/hassum-expseries-of-smul-comm.md) | 90 | `result-track:b6ddf5a9c101941e62a12b76c0ca08b78436cfad10e267c95a3f8e5792680b5f` |
-| 4 | `theorem` | [exp_def_of_smul_comm](../../../../FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/exp-def-of-smul-comm.md) | 117 | `result-track:8dda199f86a04fa89ec410a010019e04cfbd890e28fc53d98f13016de6693207` |
-| 5 | `theorem` | [exp_inl](../../../../FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/exp-inl.md) | 125 | `result-track:9e76c9c28f732f6a019f94a5668558fc6d671e3f69bee6a9c86b7089836cc600` |
-| 6 | `theorem` | [exp_inr](../../../../FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/exp-inr.md) | 131 | `result-track:f7b60bc07603e143610deb11cba444dbeb815e02b7cd2b64cdaeb2c5ff3eff0d` |
-| 7 | `theorem` | [exp_def](../../../../FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/exp-def.md) | 152 | `result-track:44e1f6fd05c8142c3e18dfe22393e3e73e7aec23ae569ff5bfd7889ecf4ed1bd` |
-| 8 | `theorem` | [fst_exp](../../../../FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/fst-exp.md) | 157 | `result-track:0dec6e4c8e3eebfe6033b17bf630deb200b642fa147775dbfabe428e53fcc2fe` |
-| 9 | `theorem` | [snd_exp](../../../../FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/snd-exp.md) | 162 | `result-track:2112e7fb023467126c4480abafc4e34e5b6a4d76603625abfcc3612189ec58e0` |
-| 10 | `theorem` | [eq_smul_exp_of_invertible](../../../../FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/eq-smul-exp-of-invertible.md) | 167 | `result-track:bb50d2b8dc1ce491f173f1ae1f4db67b951405dc4f5b0fbec66b1c5a4bded2d8` |
-| 11 | `theorem` | [eq_smul_exp_of_ne_zero](../../../../FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/eq-smul-exp-of-ne-zero.md) | 191 | `result-track:563a7c407c27f4643e155dd82bfce2968671092343c490334030dfc4e4775ef6` |
+| 1 | `theorem` | [hasSum_fst_expSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/hassum-fst-expseries.md) | 56 | `result-track:c56d61438e27d10313484ccb3b7a5ecb2314bd7ea9557b5c6f7488fdb399cdc0` |
+| 2 | `theorem` | [hasSum_snd_expSeries_of_smul_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/hassum-snd-expseries-of-smul-comm.md) | 66 | `result-track:cb993e3e539f033da05ffdf82a8134d6944289cdfaac91bd42f0cc6636f5ed35` |
+| 3 | `theorem` | [hasSum_expSeries_of_smul_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/hassum-expseries-of-smul-comm.md) | 90 | `result-track:b6ddf5a9c101941e62a12b76c0ca08b78436cfad10e267c95a3f8e5792680b5f` |
+| 4 | `theorem` | [exp_def_of_smul_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/exp-def-of-smul-comm.md) | 117 | `result-track:8dda199f86a04fa89ec410a010019e04cfbd890e28fc53d98f13016de6693207` |
+| 5 | `theorem` | [exp_inl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/exp-inl.md) | 125 | `result-track:9e76c9c28f732f6a019f94a5668558fc6d671e3f69bee6a9c86b7089836cc600` |
+| 6 | `theorem` | [exp_inr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/exp-inr.md) | 131 | `result-track:f7b60bc07603e143610deb11cba444dbeb815e02b7cd2b64cdaeb2c5ff3eff0d` |
+| 7 | `theorem` | [exp_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/exp-def.md) | 152 | `result-track:44e1f6fd05c8142c3e18dfe22393e3e73e7aec23ae569ff5bfd7889ecf4ed1bd` |
+| 8 | `theorem` | [fst_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/fst-exp.md) | 157 | `result-track:0dec6e4c8e3eebfe6033b17bf630deb200b642fa147775dbfabe428e53fcc2fe` |
+| 9 | `theorem` | [snd_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/snd-exp.md) | 162 | `result-track:2112e7fb023467126c4480abafc4e34e5b6a4d76603625abfcc3612189ec58e0` |
+| 10 | `theorem` | [eq_smul_exp_of_invertible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/eq-smul-exp-of-invertible.md) | 167 | `result-track:bb50d2b8dc1ce491f173f1ae1f4db67b951405dc4f5b0fbec66b1c5a4bded2d8` |
+| 11 | `theorem` | [eq_smul_exp_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceTrivSqZeroExtNamespaced.lean/declarations/eq-smul-exp-of-ne-zero.md) | 191 | `result-track:563a7c407c27f4643e155dd82bfce2968671092343c490334030dfc4e4775ef6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingFinsetNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingFinsetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingFinsetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingFinsetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [cast_finsetSup'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingFinsetNamespaced.lean/declarations/cast-finsetsup-source-edition-2.md) | 32 | `result-track:bb6af90e39a0cd12a42703d15d22417ffabd681257ac014ec092e17c04946ef3` |
-| 2 | `lemma` | [cast_finsetInf'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingFinsetNamespaced.lean/declarations/cast-finsetinf.md) | 37 | `result-track:5667c25b6eed3fef9d718bd10912cc66fab653e717b0609100e5a4a87a815546` |
-| 3 | `lemma` | [cast_finsetSup](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingFinsetNamespaced.lean/declarations/cast-finsetsup.md) | 41 | `result-track:7889783890db04ac825dfe5871bdea9823ba1a85b2461dc4780a818d34599f5d` |
-| 4 | `lemma` | [Finset.mul_sup₀](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingFinsetNamespaced.lean/declarations/finset-mul-sup.md) | 54 | `result-track:fb9f487ac27f45cc1889ac25bcb1d21d6ba6b28d29b6359e0e8ea19ed3b10da5` |
-| 5 | `lemma` | [Finset.sup_mul₀](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingFinsetNamespaced.lean/declarations/finset-sup-mul.md) | 62 | `result-track:91f48191a18e77e73dcba3a0c59a536136f1e42b056b7254b3569b895d167c98` |
+| 1 | `lemma` | [cast_finsetSup'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingFinsetNamespaced.lean/declarations/cast-finsetsup-source-edition-2.md) | 32 | `result-track:bb6af90e39a0cd12a42703d15d22417ffabd681257ac014ec092e17c04946ef3` |
+| 2 | `lemma` | [cast_finsetInf'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingFinsetNamespaced.lean/declarations/cast-finsetinf.md) | 37 | `result-track:5667c25b6eed3fef9d718bd10912cc66fab653e717b0609100e5a4a87a815546` |
+| 3 | `lemma` | [cast_finsetSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingFinsetNamespaced.lean/declarations/cast-finsetsup.md) | 41 | `result-track:7889783890db04ac825dfe5871bdea9823ba1a85b2461dc4780a818d34599f5d` |
+| 4 | `lemma` | [Finset.mul_sup₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingFinsetNamespaced.lean/declarations/finset-mul-sup.md) | 54 | `result-track:fb9f487ac27f45cc1889ac25bcb1d21d6ba6b28d29b6359e0e8ea19ed3b10da5` |
+| 5 | `lemma` | [Finset.sup_mul₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingFinsetNamespaced.lean/declarations/finset-sup-mul.md) | 62 | `result-track:91f48191a18e77e73dcba3a0c59a536136f1e42b056b7254b3569b895d167c98` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

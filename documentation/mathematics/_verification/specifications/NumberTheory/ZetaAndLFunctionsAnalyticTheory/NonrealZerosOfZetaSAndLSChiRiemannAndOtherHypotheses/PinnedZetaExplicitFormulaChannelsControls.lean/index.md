@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PinnedZetaExplicitFormulaChannelsControls.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PinnedZetaExplicitFormulaChannelsControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PinnedZetaExplicitFormulaChannelsControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PinnedZetaExplicitFormulaChannelsControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedZetaExplicitFormulaChannels`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PinnedZetaExplicitFormulaChannels.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedZetaExplicitFormulaChannels`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PinnedZetaExplicitFormulaChannels.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [trivial_zero_minus_two](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PinnedZetaExplicitFormulaChannelsControls.lean/declarations/trivial-zero-minus-two.md) | 13 | `result-track:405723b0410e54a5b377d8fb7223fbe8f83013bbd3e4a0ec57dedfd3913155f2` |
-| 2 | `theorem` | [completed_FE_at_two](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PinnedZetaExplicitFormulaChannelsControls.lean/declarations/completed-fe-at-two.md) | 17 | `result-track:e5244effbdcfc9918b04274aab4513cde185d17bb329292f9f58af21a9dac4d4` |
-| 3 | `def` | [knownChannels](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PinnedZetaExplicitFormulaChannelsControls.lean/declarations/knownchannels.md) | 24 | `declaration-track:91a27861d26c6ee510f124af2bc8ed0fc305d3fd452130744e14b0f13cfbcbe6` |
-| 4 | `def` | [globalSummationStatus](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PinnedZetaExplicitFormulaChannelsControls.lean/declarations/globalsummationstatus.md) | 27 | `declaration-track:15f4825b4d116df38b97e8767e0d4b04749e895b8f0f09ed73d09b8b2ff6e952` |
+| 1 | `theorem` | [trivial_zero_minus_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PinnedZetaExplicitFormulaChannelsControls.lean/declarations/trivial-zero-minus-two.md) | 13 | `result-track:405723b0410e54a5b377d8fb7223fbe8f83013bbd3e4a0ec57dedfd3913155f2` |
+| 2 | `theorem` | [completed_FE_at_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PinnedZetaExplicitFormulaChannelsControls.lean/declarations/completed-fe-at-two.md) | 17 | `result-track:e5244effbdcfc9918b04274aab4513cde185d17bb329292f9f58af21a9dac4d4` |
+| 3 | `def` | [knownChannels](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PinnedZetaExplicitFormulaChannelsControls.lean/declarations/knownchannels.md) | 24 | `declaration-track:91a27861d26c6ee510f124af2bc8ed0fc305d3fd452130744e14b0f13cfbcbe6` |
+| 4 | `def` | [globalSummationStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PinnedZetaExplicitFormulaChannelsControls.lean/declarations/globalsummationstatus.md) | 27 | `declaration-track:15f4825b4d116df38b97e8767e0d4b04749e895b8f0f09ed73d09b8b2ff6e952` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

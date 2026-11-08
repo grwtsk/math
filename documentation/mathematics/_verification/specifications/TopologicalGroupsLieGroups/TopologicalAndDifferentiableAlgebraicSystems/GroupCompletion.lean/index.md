@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletion.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasSum_iff_hasSum_compl](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletion.lean/declarations/hassum-iff-hassum-compl.md) | 19 | `result-track:bf95169222a8506c6ebc4f4e3881ebd576c663fcdab74f81623e64819c8d26ea` |
-| 2 | `theorem` | [summable_iff_summable_compl_and_tsum_mem](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletion.lean/declarations/summable-iff-summable-compl-and-tsum-mem.md) | 24 | `result-track:8f856e0f2e576da45d94dc965c06babe96e90ae7661cb682a5515bb6c1b6f3d6` |
-| 3 | `theorem` | [summable_iff_cauchySeq_finset_and_tsum_mem](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletion.lean/declarations/summable-iff-cauchyseq-finset-and-tsum-mem.md) | 32 | `result-track:622e10ea1ff438e3995754aa7bc824bb3a3b8aff983c88adc6d8fce2c1fda71d` |
-| 4 | `theorem` | [Summable.toCompl_tsum](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletion.lean/declarations/summable-tocompl-tsum.md) | 49 | `result-track:9286bb5c501c6ba97b01e60d74ba1454984353e7d7f7ec1897123831dd326573` |
+| 1 | `theorem` | [hasSum_iff_hasSum_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletion.lean/declarations/hassum-iff-hassum-compl.md) | 19 | `result-track:bf95169222a8506c6ebc4f4e3881ebd576c663fcdab74f81623e64819c8d26ea` |
+| 2 | `theorem` | [summable_iff_summable_compl_and_tsum_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletion.lean/declarations/summable-iff-summable-compl-and-tsum-mem.md) | 24 | `result-track:8f856e0f2e576da45d94dc965c06babe96e90ae7661cb682a5515bb6c1b6f3d6` |
+| 3 | `theorem` | [summable_iff_cauchySeq_finset_and_tsum_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletion.lean/declarations/summable-iff-cauchyseq-finset-and-tsum-mem.md) | 32 | `result-track:622e10ea1ff438e3995754aa7bc824bb3a3b8aff983c88adc6d8fce2c1fda71d` |
+| 4 | `theorem` | [Summable.toCompl_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupCompletion.lean/declarations/summable-tocompl-tsum.md) | 49 | `result-track:9286bb5c501c6ba97b01e60d74ba1454984353e7d7f7ec1897123831dd326573` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

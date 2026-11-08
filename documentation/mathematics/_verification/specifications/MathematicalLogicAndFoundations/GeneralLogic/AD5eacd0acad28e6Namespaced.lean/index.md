@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD5eacd0acad28e6Namespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD5eacd0acad28e6Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD5eacd0acad28e6Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD5eacd0acad28e6Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AtomNameIR.Valid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AD5eacd0acad28e6Namespaced.lean/declarations/atomnameir-valid.md) | 21 | `declaration-track:d7c20b2b0b624beb13cc5c7501d3f04acc4ee126f04e338887933c12a9bdbdc9` |
+| 1 | `def` | [AtomNameIR.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AD5eacd0acad28e6Namespaced.lean/declarations/atomnameir-valid.md) | 21 | `declaration-track:d7c20b2b0b624beb13cc5c7501d3f04acc4ee126f04e338887933c12a9bdbdc9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

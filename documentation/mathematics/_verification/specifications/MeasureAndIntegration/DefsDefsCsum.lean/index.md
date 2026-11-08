@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/DefsDefsCsum.lean/index.md) · [Full source](../../../../MeasureAndIntegration/DefsDefsCsum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DefsDefsCsum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DefsDefsCsum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Csum](../../../../MeasureAndIntegration/DefsDefsCsum.lean/declarations/csum.md) | 27 | `declaration-track:1e6588207ae5bbc02466e2ff4d87670373d1c8efc000aa686d6c30b4e39cea6c` |
-| 2 | `def` | [Cstep](../../../../MeasureAndIntegration/DefsDefsCsum.lean/declarations/cstep.md) | 30 | `declaration-track:f872f6202bafb4ffa2129c389800fa24cc4e0429495ba98604cfe822714c03f2` |
-| 3 | `def` | [Dfun](../../../../MeasureAndIntegration/DefsDefsCsum.lean/declarations/dfun.md) | 33 | `declaration-track:c25842e6fc7b844cb9c65f3caa81abd1f3a955e9c7e3d9d2d54dac49dee44031` |
-| 4 | `def` | [Efun](../../../../MeasureAndIntegration/DefsDefsCsum.lean/declarations/efun.md) | 36 | `declaration-track:c0df99064a36729acce6373b24e4f00cc27b22da9fc24c55c137252dbec87a46` |
-| 5 | `lemma` | [Csum_zero](../../../../MeasureAndIntegration/DefsDefsCsum.lean/declarations/csum-zero.md) | 40 | `result-track:35fc747de0200c328ade04032aa5dcd06cf0ac8eb5297d7ed8ab15a710ad4027` |
-| 6 | `lemma` | [Csum_succ](../../../../MeasureAndIntegration/DefsDefsCsum.lean/declarations/csum-succ.md) | 42 | `result-track:7ee703b4b254dff91772196301dd94c4af76fe64813b937fecd7d172bbfdc052` |
-| 7 | `lemma` | [Cstep_eq_Csum_of_mem](../../../../MeasureAndIntegration/DefsDefsCsum.lean/declarations/cstep-eq-csum-of-mem.md) | 47 | `result-track:5a6a29b85ab88163e3f872d82ce5d3cabd55f4ea4a5914113c912daa3c7aa8e9` |
-| 8 | `lemma` | [Cstep_eq_Csum_of_one_le](../../../../MeasureAndIntegration/DefsDefsCsum.lean/declarations/cstep-eq-csum-of-one-le.md) | 66 | `result-track:52ff166d3b240e4712521df5d033dd6236e73728e5d86be5d3e203b57b6a3a31` |
-| 9 | `lemma` | [Cstep_one](../../../../MeasureAndIntegration/DefsDefsCsum.lean/declarations/cstep-one.md) | 76 | `result-track:a68fd0ce9bef05663d2ffe63c6990e4c2282a380b343b744e7dd17d60c0ca1e3` |
-| 10 | `lemma` | [Cstep_eq_zero_of_lt](../../../../MeasureAndIntegration/DefsDefsCsum.lean/declarations/cstep-eq-zero-of-lt.md) | 79 | `result-track:98c594e00bdc65d3c8900fd430ec4904fec86036d65d68955ffb01ad7d56c170` |
-| 11 | `lemma` | [Dfun_one](../../../../MeasureAndIntegration/DefsDefsCsum.lean/declarations/dfun-one.md) | 88 | `result-track:bfeb58ee03ce90b6a1bfda6a51b045c4222d7d7b46abafeb0ce4c70143685e45` |
-| 12 | `lemma` | [Efun_zero](../../../../MeasureAndIntegration/DefsDefsCsum.lean/declarations/efun-zero.md) | 91 | `result-track:47a16924969b54998f41a559d52611550fddf2b88333426afeedac627b1eb44e` |
+| 1 | `def` | [Csum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DefsDefsCsum.lean/declarations/csum.md) | 27 | `declaration-track:1e6588207ae5bbc02466e2ff4d87670373d1c8efc000aa686d6c30b4e39cea6c` |
+| 2 | `def` | [Cstep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DefsDefsCsum.lean/declarations/cstep.md) | 30 | `declaration-track:f872f6202bafb4ffa2129c389800fa24cc4e0429495ba98604cfe822714c03f2` |
+| 3 | `def` | [Dfun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DefsDefsCsum.lean/declarations/dfun.md) | 33 | `declaration-track:c25842e6fc7b844cb9c65f3caa81abd1f3a955e9c7e3d9d2d54dac49dee44031` |
+| 4 | `def` | [Efun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DefsDefsCsum.lean/declarations/efun.md) | 36 | `declaration-track:c0df99064a36729acce6373b24e4f00cc27b22da9fc24c55c137252dbec87a46` |
+| 5 | `lemma` | [Csum_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DefsDefsCsum.lean/declarations/csum-zero.md) | 40 | `result-track:35fc747de0200c328ade04032aa5dcd06cf0ac8eb5297d7ed8ab15a710ad4027` |
+| 6 | `lemma` | [Csum_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DefsDefsCsum.lean/declarations/csum-succ.md) | 42 | `result-track:7ee703b4b254dff91772196301dd94c4af76fe64813b937fecd7d172bbfdc052` |
+| 7 | `lemma` | [Cstep_eq_Csum_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DefsDefsCsum.lean/declarations/cstep-eq-csum-of-mem.md) | 47 | `result-track:5a6a29b85ab88163e3f872d82ce5d3cabd55f4ea4a5914113c912daa3c7aa8e9` |
+| 8 | `lemma` | [Cstep_eq_Csum_of_one_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DefsDefsCsum.lean/declarations/cstep-eq-csum-of-one-le.md) | 66 | `result-track:52ff166d3b240e4712521df5d033dd6236e73728e5d86be5d3e203b57b6a3a31` |
+| 9 | `lemma` | [Cstep_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DefsDefsCsum.lean/declarations/cstep-one.md) | 76 | `result-track:a68fd0ce9bef05663d2ffe63c6990e4c2282a380b343b744e7dd17d60c0ca1e3` |
+| 10 | `lemma` | [Cstep_eq_zero_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DefsDefsCsum.lean/declarations/cstep-eq-zero-of-lt.md) | 79 | `result-track:98c594e00bdc65d3c8900fd430ec4904fec86036d65d68955ffb01ad7d56c170` |
+| 11 | `lemma` | [Dfun_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DefsDefsCsum.lean/declarations/dfun-one.md) | 88 | `result-track:bfeb58ee03ce90b6a1bfda6a51b045c4222d7d7b46abafeb0ce4c70143685e45` |
+| 12 | `lemma` | [Efun_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DefsDefsCsum.lean/declarations/efun-zero.md) | 91 | `result-track:47a16924969b54998f41a559d52611550fddf2b88333426afeedac627b1eb44e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

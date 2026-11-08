@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/EstimateUnitProfileMassNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/EstimateUnitProfileMassNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateUnitProfileMassNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateUnitProfileMassNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [unitProfile_eq_indicator](../../../../MeasureAndIntegration/EstimateUnitProfileMassNamespaced.lean/declarations/unitprofile-eq-indicator.md) | 31 | `result-track:f8677826d9a879d0d362ee6e755682697ec5b3223a7deb7448c850e7a601a676` |
-| 2 | `theorem` | [unitBump_integral](../../../../MeasureAndIntegration/EstimateUnitProfileMassNamespaced.lean/declarations/unitbump-integral.md) | 56 | `result-track:da9c3aed8ecc82079edd55d4a2139119a170879a85283c3113e96dc16065f3b2` |
-| 3 | `theorem` | [unitSecond_integral](../../../../MeasureAndIntegration/EstimateUnitProfileMassNamespaced.lean/declarations/unitsecond-integral.md) | 69 | `result-track:0fe5c206186e6e712a391ad2b6b5ce288d3ccce4764b1074620ac914af166370` |
-| 4 | `theorem` | [unitProfile_integral](../../../../MeasureAndIntegration/EstimateUnitProfileMassNamespaced.lean/declarations/unitprofile-integral.md) | 78 | `result-track:899bbbd74426c326f7ccbfb14efea1726e025195fe37a1e5ba152e98572172cf` |
-| 5 | `theorem` | [sourceNormalization_le_one](../../../../MeasureAndIntegration/EstimateUnitProfileMassNamespaced.lean/declarations/sourcenormalization-le-one.md) | 88 | `result-track:f6046b74bfbdb9af8bbc2c3e3a9c45413691f17b0884b72fea918e2434da57b9` |
-| 6 | `theorem` | [sourceNormalization_le_41](../../../../MeasureAndIntegration/EstimateUnitProfileMassNamespaced.lean/declarations/sourcenormalization-le-41.md) | 101 | `result-track:a5aae5dbf8f30517512d5e4e978b8ae1a6e2b082f3762ec14ba7f11beb4e3849` |
+| 1 | `theorem` | [unitProfile_eq_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateUnitProfileMassNamespaced.lean/declarations/unitprofile-eq-indicator.md) | 31 | `result-track:f8677826d9a879d0d362ee6e755682697ec5b3223a7deb7448c850e7a601a676` |
+| 2 | `theorem` | [unitBump_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateUnitProfileMassNamespaced.lean/declarations/unitbump-integral.md) | 56 | `result-track:da9c3aed8ecc82079edd55d4a2139119a170879a85283c3113e96dc16065f3b2` |
+| 3 | `theorem` | [unitSecond_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateUnitProfileMassNamespaced.lean/declarations/unitsecond-integral.md) | 69 | `result-track:0fe5c206186e6e712a391ad2b6b5ce288d3ccce4764b1074620ac914af166370` |
+| 4 | `theorem` | [unitProfile_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateUnitProfileMassNamespaced.lean/declarations/unitprofile-integral.md) | 78 | `result-track:899bbbd74426c326f7ccbfb14efea1726e025195fe37a1e5ba152e98572172cf` |
+| 5 | `theorem` | [sourceNormalization_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateUnitProfileMassNamespaced.lean/declarations/sourcenormalization-le-one.md) | 88 | `result-track:f6046b74bfbdb9af8bbc2c3e3a9c45413691f17b0884b72fea918e2434da57b9` |
+| 6 | `theorem` | [sourceNormalization_le_41](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateUnitProfileMassNamespaced.lean/declarations/sourcenormalization-le-41.md) | 101 | `result-track:a5aae5dbf8f30517512d5e4e978b8ae1a6e2b082f3762ec14ba7f11beb4e3849` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

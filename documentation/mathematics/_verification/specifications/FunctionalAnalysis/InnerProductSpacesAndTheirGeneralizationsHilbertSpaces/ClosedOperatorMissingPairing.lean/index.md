@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedOperatorMissingPairing.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedOperatorMissingPairing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedOperatorMissingPairing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedOperatorMissingPairing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.InnerProductSpace.ClosedOperatorSolvability`](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceClosedOperatorSolvability.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.ClosedOperatorSolvability`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceClosedOperatorSolvability.lean/index.md) — import line 9; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [zero_dense](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedOperatorMissingPairing.lean/declarations/zero-dense.md) | 17 | `result-track:eb3b24e9b789ba281d662df06c34663cab83aa318be7a547b566627807662bb0` |
-| 2 | `theorem` | [zero_closed](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedOperatorMissingPairing.lean/declarations/zero-closed.md) | 21 | `result-track:74ea8c55b7381258ad75c9d3b81e17e5a73eac99d724e8ecbd462d71ee1fa0ee` |
-| 3 | `theorem` | [zero_target_not_mem_graph](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedOperatorMissingPairing.lean/declarations/zero-target-not-mem-graph.md) | 35 | `result-track:2b9f5b3aaefbe7b6d76967bdb5e5312a8581d6c2271213fd526a732611022dfe` |
-| 4 | `theorem` | [zero_has_no_unit_solution](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedOperatorMissingPairing.lean/declarations/zero-has-no-unit-solution.md) | 41 | `result-track:5f5ead7d09808c3cd2f8d567e0d22aa752936541610695b2d61f170423cc1f76` |
-| 5 | `theorem` | [zero_pairing_fails](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedOperatorMissingPairing.lean/declarations/zero-pairing-fails.md) | 46 | `result-track:64140546ccb7c62f5a55e0f3d871bf5b8e270854d1afb5b2ff4f326560bf9579` |
-| 6 | `example` | [(anonymous)](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedOperatorMissingPairing.lean/declarations/example.md) | 59 | `declaration-track:a72a1f6038870185c45ff95957adc2d746e48044c73ee5a2d1eb821a30abe3f6` |
+| 1 | `theorem` | [zero_dense](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedOperatorMissingPairing.lean/declarations/zero-dense.md) | 17 | `result-track:eb3b24e9b789ba281d662df06c34663cab83aa318be7a547b566627807662bb0` |
+| 2 | `theorem` | [zero_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedOperatorMissingPairing.lean/declarations/zero-closed.md) | 21 | `result-track:74ea8c55b7381258ad75c9d3b81e17e5a73eac99d724e8ecbd462d71ee1fa0ee` |
+| 3 | `theorem` | [zero_target_not_mem_graph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedOperatorMissingPairing.lean/declarations/zero-target-not-mem-graph.md) | 35 | `result-track:2b9f5b3aaefbe7b6d76967bdb5e5312a8581d6c2271213fd526a732611022dfe` |
+| 4 | `theorem` | [zero_has_no_unit_solution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedOperatorMissingPairing.lean/declarations/zero-has-no-unit-solution.md) | 41 | `result-track:5f5ead7d09808c3cd2f8d567e0d22aa752936541610695b2d61f170423cc1f76` |
+| 5 | `theorem` | [zero_pairing_fails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedOperatorMissingPairing.lean/declarations/zero-pairing-fails.md) | 46 | `result-track:64140546ccb7c62f5a55e0f3d871bf5b8e270854d1afb5b2ff4f326560bf9579` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedOperatorMissingPairing.lean/declarations/example.md) | 59 | `declaration-track:a72a1f6038870185c45ff95957adc2d746e48044c73ee5a2d1eb821a30abe3f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingProperties.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingProperties.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingProperties.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingProperties.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [hasLiftingProperty_of_isZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingProperties.lean/declarations/hasliftingproperty-of-iszero.md) | 28 | `result-track:43d6a12e7e2db85ca3989c983c57fb930a6fcf0821179529156bc116a4aba698` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingProperties.lean/declarations/instance.md) | 35 | `declaration-track:5e28910201fe8b5ca72ed8106a0ea11395eedab1bdda77e152f4c841ddfc3653` |
-| 3 | `lemma` | [projective_iff_llp_epimorphisms_of_isZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingProperties.lean/declarations/projective-iff-llp-epimorphisms-of-iszero.md) | 41 | `result-track:4c89b53ac3f9990bdb9583efd28f9f3f6b5def5f4eae9ace34c70533f8a0e4fc` |
-| 4 | `lemma` | [projective_iff_llp_epimorphisms_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingProperties.lean/declarations/projective-iff-llp-epimorphisms-zero.md) | 55 | `result-track:602551beb291a08f7c5f58dffc3d8e60daca09e06241da77db3f588d44db2422` |
+| 1 | `lemma` | [hasLiftingProperty_of_isZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingProperties.lean/declarations/hasliftingproperty-of-iszero.md) | 28 | `result-track:43d6a12e7e2db85ca3989c983c57fb930a6fcf0821179529156bc116a4aba698` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingProperties.lean/declarations/instance.md) | 35 | `declaration-track:5e28910201fe8b5ca72ed8106a0ea11395eedab1bdda77e152f4c841ddfc3653` |
+| 3 | `lemma` | [projective_iff_llp_epimorphisms_of_isZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingProperties.lean/declarations/projective-iff-llp-epimorphisms-of-iszero.md) | 41 | `result-track:4c89b53ac3f9990bdb9583efd28f9f3f6b5def5f4eae9ace34c70533f8a0e4fc` |
+| 4 | `lemma` | [projective_iff_llp_epimorphisms_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingProperties.lean/declarations/projective-iff-llp-epimorphisms-zero.md) | 55 | `result-track:602551beb291a08f7c5f58dffc3d8e60daca09e06241da77db3f588d44db2422` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

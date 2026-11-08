@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/ManifoldVectorBundleHom.lean/index.md) · [Full source](../../../../DifferentialGeometry/ManifoldVectorBundleHom.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldVectorBundleHom.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldVectorBundleHom.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [contMDiffOn_continuousLinearMapCoordChange](../../../../DifferentialGeometry/ManifoldVectorBundleHom.lean/declarations/contmdiffon-continuouslinearmapcoordchange.md) | 45 | `result-track:7ad289812aabb663b5016a678912e1104a6a13c9a55346d4670ad955006b2a5f` |
-| 2 | `theorem` | [hom_chart](../../../../DifferentialGeometry/ManifoldVectorBundleHom.lean/declarations/hom-chart.md) | 61 | `result-track:060ac0a0e6d548254493479355fcff5335aa7bdf5aef4c6f0708de5f07a2a58a` |
-| 3 | `theorem` | [contMDiffAt_hom_bundle](../../../../DifferentialGeometry/ManifoldVectorBundleHom.lean/declarations/contmdiffat-hom-bundle.md) | 68 | `result-track:5e1233576abfd7e92cc684c4752718d420efb2e709b94ff0835a690cbeeccf1a` |
-| 4 | `instance` | [Bundle.ContinuousLinearMap.vectorPrebundle.isContMDiff](../../../../DifferentialGeometry/ManifoldVectorBundleHom.lean/declarations/bundle-continuouslinearmap-vectorprebundle-iscontmdiff.md) | 80 | `declaration-track:2dee69a48e8be10d2c9d1d9ae5552bbe76c56d16cb2e0008ff4e291a60fa73e7` |
-| 5 | `instance` | [ContMDiffVectorBundle.continuousLinearMap](../../../../DifferentialGeometry/ManifoldVectorBundleHom.lean/declarations/contmdiffvectorbundle-continuouslinearmap.md) | 92 | `declaration-track:d04e1c0fbbf56e0150a8f3dde2e1dfc44f619b48226e862be996685e35b083ce` |
-| 6 | `lemma` | [ContMDiffWithinAt.clm_apply_of_inCoordinates](../../../../DifferentialGeometry/ManifoldVectorBundleHom.lean/declarations/contmdiffwithinat-clm-apply-of-incoordinates.md) | 138 | `result-track:762b879975386484f13ea1483e790cd5e98686aa6f74a829f297ad7e4ede2828` |
-| 7 | `lemma` | [ContMDiffAt.clm_apply_of_inCoordinates](../../../../DifferentialGeometry/ManifoldVectorBundleHom.lean/declarations/contmdiffat-clm-apply-of-incoordinates.md) | 176 | `result-track:86eabc8746a373656c35be41b5a8971637a6979dcfe79797a5144f0e2a266299` |
+| 1 | `theorem` | [contMDiffOn_continuousLinearMapCoordChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldVectorBundleHom.lean/declarations/contmdiffon-continuouslinearmapcoordchange.md) | 45 | `result-track:7ad289812aabb663b5016a678912e1104a6a13c9a55346d4670ad955006b2a5f` |
+| 2 | `theorem` | [hom_chart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldVectorBundleHom.lean/declarations/hom-chart.md) | 61 | `result-track:060ac0a0e6d548254493479355fcff5335aa7bdf5aef4c6f0708de5f07a2a58a` |
+| 3 | `theorem` | [contMDiffAt_hom_bundle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldVectorBundleHom.lean/declarations/contmdiffat-hom-bundle.md) | 68 | `result-track:5e1233576abfd7e92cc684c4752718d420efb2e709b94ff0835a690cbeeccf1a` |
+| 4 | `instance` | [Bundle.ContinuousLinearMap.vectorPrebundle.isContMDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldVectorBundleHom.lean/declarations/bundle-continuouslinearmap-vectorprebundle-iscontmdiff.md) | 80 | `declaration-track:2dee69a48e8be10d2c9d1d9ae5552bbe76c56d16cb2e0008ff4e291a60fa73e7` |
+| 5 | `instance` | [ContMDiffVectorBundle.continuousLinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldVectorBundleHom.lean/declarations/contmdiffvectorbundle-continuouslinearmap.md) | 92 | `declaration-track:d04e1c0fbbf56e0150a8f3dde2e1dfc44f619b48226e862be996685e35b083ce` |
+| 6 | `lemma` | [ContMDiffWithinAt.clm_apply_of_inCoordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldVectorBundleHom.lean/declarations/contmdiffwithinat-clm-apply-of-incoordinates.md) | 138 | `result-track:762b879975386484f13ea1483e790cd5e98686aa6f74a829f297ad7e4ede2828` |
+| 7 | `lemma` | [ContMDiffAt.clm_apply_of_inCoordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldVectorBundleHom.lean/declarations/contmdiffat-clm-apply-of-incoordinates.md) | 176 | `result-track:86eabc8746a373656c35be41b5a8971637a6979dcfe79797a5144f0e2a266299` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

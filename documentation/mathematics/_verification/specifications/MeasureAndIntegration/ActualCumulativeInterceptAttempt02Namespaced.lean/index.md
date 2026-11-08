@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualCumulativeInterceptAttempt02Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualCumulativeInterceptAttempt02Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCumulativeInterceptAttempt02Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCumulativeInterceptAttempt02Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualAffineSlope](../../../../MeasureAndIntegration/ActualCumulativeInterceptAttempt02Namespaced.lean/declarations/actualaffineslope.md) | 29 | `declaration-track:f732658d6b791d3c7f2f3f2dc00bed8748037d6670026ba83461d3a4290650cf` |
-| 2 | `theorem` | [cumulative_discrepancy_eq_remainder](../../../../MeasureAndIntegration/ActualCumulativeInterceptAttempt02Namespaced.lean/declarations/cumulative-discrepancy-eq-remainder.md) | 32 | `result-track:fd7b35f1d5cfa3d0160d9e6402e4e290a32e619ebe7d7ebb800ab13dea65a06d` |
-| 3 | `theorem` | [actual_prime_remainder_intervalIntegrable](../../../../MeasureAndIntegration/ActualCumulativeInterceptAttempt02Namespaced.lean/declarations/actual-prime-remainder-intervalintegrable.md) | 39 | `result-track:d82fcb2dce41ddf1d35ed0ac0a7d6e5b2b71ff71dc3304b4648a63ba5b5a1065` |
-| 4 | `theorem` | [decay_integral](../../../../MeasureAndIntegration/ActualCumulativeInterceptAttempt02Namespaced.lean/declarations/decay-integral.md) | 49 | `result-track:80c6c967d485d5671e134e1f2c174695d1fbe134ec72034c39011b6c003855c0` |
-| 5 | `theorem` | [actual_primitive_decomposition](../../../../MeasureAndIntegration/ActualCumulativeInterceptAttempt02Namespaced.lean/declarations/actual-primitive-decomposition.md) | 59 | `result-track:685a49f2123b90ef06c39843a1cdcd40e7181d5518e755600b0811643c127227` |
+| 1 | `def` | [actualAffineSlope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCumulativeInterceptAttempt02Namespaced.lean/declarations/actualaffineslope.md) | 29 | `declaration-track:f732658d6b791d3c7f2f3f2dc00bed8748037d6670026ba83461d3a4290650cf` |
+| 2 | `theorem` | [cumulative_discrepancy_eq_remainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCumulativeInterceptAttempt02Namespaced.lean/declarations/cumulative-discrepancy-eq-remainder.md) | 32 | `result-track:fd7b35f1d5cfa3d0160d9e6402e4e290a32e619ebe7d7ebb800ab13dea65a06d` |
+| 3 | `theorem` | [actual_prime_remainder_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCumulativeInterceptAttempt02Namespaced.lean/declarations/actual-prime-remainder-intervalintegrable.md) | 39 | `result-track:d82fcb2dce41ddf1d35ed0ac0a7d6e5b2b71ff71dc3304b4648a63ba5b5a1065` |
+| 4 | `theorem` | [decay_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCumulativeInterceptAttempt02Namespaced.lean/declarations/decay-integral.md) | 49 | `result-track:80c6c967d485d5671e134e1f2c174695d1fbe134ec72034c39011b6c003855c0` |
+| 5 | `theorem` | [actual_primitive_decomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCumulativeInterceptAttempt02Namespaced.lean/declarations/actual-primitive-decomposition.md) | 59 | `result-track:685a49f2123b90ef06c39843a1cdcd40e7181d5518e755600b0811643c127227` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

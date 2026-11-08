@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [ContinuousAdd](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/declarations/continuousadd.md) | 31 | `declaration-track:7acd85102434e66f3f1917aefb692c5ee8fe09d2af5bd6a02a1bb98a4d67b15d` |
-| 2 | `class` | [ContinuousMul](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/declarations/continuousmul.md) | 41 | `declaration-track:b57a90a85cf68433025946ea2f794e391da04cff3e219bc01e72ac98627e851f` |
-| 3 | `theorem` | [continuous_mul](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/declarations/continuous-mul.md) | 49 | `result-track:929487c27570fe3c0f0173c67a8b05db2c404882a739f9762bb5248d2527b7b9` |
-| 4 | `theorem` | [Filter.Tendsto.mul](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/declarations/filter-tendsto-mul.md) | 53 | `result-track:7af94032da720d3765c7266e3658ab2f39a47c15e640bed1e590571cc7d23cd4` |
-| 5 | `theorem` | [Continuous.mul](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/declarations/continuous-mul-source-edition-2.md) | 60 | `result-track:f4f7e64763e873abc35f5355ff36b96e48df3a00976b2066ba65f1d39e1c1c9b` |
-| 6 | `theorem` | [ContinuousWithinAt.mul](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/declarations/continuouswithinat-mul.md) | 65 | `result-track:08a237faf4ffade186c95b4deb2d9cb32fbf7486897998ae2606b071a7e1f6d0` |
-| 7 | `theorem` | [ContinuousAt.mul](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/declarations/continuousat-mul.md) | 70 | `result-track:a033eef69f456166709622b6069a3e2d0bd00b0df42101baaa6c7a87d1050210` |
-| 8 | `theorem` | [ContinuousOn.mul](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/declarations/continuouson-mul.md) | 75 | `result-track:42fd19bfc97c8846cf4b811309e4ee0d0eae1f14fb23dbe94cf1b0f7540103d0` |
+| 1 | `class` | [ContinuousAdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/declarations/continuousadd.md) | 31 | `declaration-track:7acd85102434e66f3f1917aefb692c5ee8fe09d2af5bd6a02a1bb98a4d67b15d` |
+| 2 | `class` | [ContinuousMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/declarations/continuousmul.md) | 41 | `declaration-track:b57a90a85cf68433025946ea2f794e391da04cff3e219bc01e72ac98627e851f` |
+| 3 | `theorem` | [continuous_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/declarations/continuous-mul.md) | 49 | `result-track:929487c27570fe3c0f0173c67a8b05db2c404882a739f9762bb5248d2527b7b9` |
+| 4 | `theorem` | [Filter.Tendsto.mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/declarations/filter-tendsto-mul.md) | 53 | `result-track:7af94032da720d3765c7266e3658ab2f39a47c15e640bed1e590571cc7d23cd4` |
+| 5 | `theorem` | [Continuous.mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/declarations/continuous-mul-source-edition-2.md) | 60 | `result-track:f4f7e64763e873abc35f5355ff36b96e48df3a00976b2066ba65f1d39e1c1c9b` |
+| 6 | `theorem` | [ContinuousWithinAt.mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/declarations/continuouswithinat-mul.md) | 65 | `result-track:08a237faf4ffade186c95b4deb2d9cb32fbf7486897998ae2606b071a7e1f6d0` |
+| 7 | `theorem` | [ContinuousAt.mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/declarations/continuousat-mul.md) | 70 | `result-track:a033eef69f456166709622b6069a3e2d0bd00b0df42101baaa6c7a87d1050210` |
+| 8 | `theorem` | [ContinuousOn.mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/MonoidDefs.lean/declarations/continuouson-mul.md) | 75 | `result-track:42fd19bfc97c8846cf4b811309e4ee0d0eae1f14fb23dbe94cf1b0f7540103d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

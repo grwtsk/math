@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FiniteLength.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FiniteLength.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteLength.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteLength.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [IsFiniteLength](../../../../CommutativeAlgebra/FiniteLength.lean/declarations/isfinitelength.md) | 26 | `declaration-track:908d4d7591d695d1167ecc5bc2c267f13aa1c1cbc47ec55a9ed9bf09fd541e9e` |
-| 2 | `theorem` | [LinearEquiv.isFiniteLength](../../../../CommutativeAlgebra/FiniteLength.lean/declarations/linearequiv-isfinitelength.md) | 35 | `result-track:ef8947e7ff8723751b1e4c15f188b8887160063c0f8dd387105124d5a4d79c60` |
-| 3 | `theorem` | [exists_compositionSeries_of_isNoetherian_isArtinian](../../../../CommutativeAlgebra/FiniteLength.lean/declarations/exists-compositionseries-of-isnoetherian-isartinian.md) | 46 | `result-track:1927f603468831fd75bbc0ac2b580291ff6a69767d219c9908b3f2d286508bfe` |
-| 4 | `theorem` | [isFiniteLength_of_exists_compositionSeries](../../../../CommutativeAlgebra/FiniteLength.lean/declarations/isfinitelength-of-exists-compositionseries.md) | 51 | `result-track:c45001bb825e0ad91b944795522fa516d16f42916c1d63c7589f1900db446cf9` |
-| 5 | `theorem` | [isFiniteLength_iff_isNoetherian_isArtinian](../../../../CommutativeAlgebra/FiniteLength.lean/declarations/isfinitelength-iff-isnoetherian-isartinian.md) | 68 | `result-track:d3d22ed20cdc5cecddc771784742d5f0a31c4063572bd83dcbd6fcf637c2353c` |
-| 6 | `theorem` | [isFiniteLength_iff_exists_compositionSeries](../../../../CommutativeAlgebra/FiniteLength.lean/declarations/isfinitelength-iff-exists-compositionseries.md) | 76 | `result-track:2735336aca24b1c2afa33b34d78a15c67862e150e94d5dedb4bcef4f9e6275b3` |
-| 7 | `theorem` | [IsSemisimpleModule.finite_tfae](../../../../CommutativeAlgebra/FiniteLength.lean/declarations/issemisimplemodule-finite-tfae.md) | 82 | `result-track:50aece872819660f30d174e9ca4fedc6d998608663a5943e11db191ace744a5c` |
-| 8 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/FiniteLength.lean/declarations/instance.md) | 101 | `declaration-track:b672e7b7a3f087287d91b08ffba70905b71f6d91340da9a9f1d88150b7a71efe` |
-| 9 | `lemma` | [IsFiniteLength.of_injective](../../../../CommutativeAlgebra/FiniteLength.lean/declarations/isfinitelength-of-injective.md) | 106 | `result-track:84a49ad2a73a91e06f1d35085077b2e175f005e4619e91ea03de84c65f03ac2b` |
-| 10 | `lemma` | [IsFiniteLength.of_surjective](../../../../CommutativeAlgebra/FiniteLength.lean/declarations/isfinitelength-of-surjective.md) | 112 | `result-track:0cf509a4a67fb9235bd003edcd766bbf32cf2f466d5535d5552755a7e478ecd8` |
+| 1 | `inductive` | [IsFiniteLength](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteLength.lean/declarations/isfinitelength.md) | 26 | `declaration-track:908d4d7591d695d1167ecc5bc2c267f13aa1c1cbc47ec55a9ed9bf09fd541e9e` |
+| 2 | `theorem` | [LinearEquiv.isFiniteLength](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteLength.lean/declarations/linearequiv-isfinitelength.md) | 35 | `result-track:ef8947e7ff8723751b1e4c15f188b8887160063c0f8dd387105124d5a4d79c60` |
+| 3 | `theorem` | [exists_compositionSeries_of_isNoetherian_isArtinian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteLength.lean/declarations/exists-compositionseries-of-isnoetherian-isartinian.md) | 46 | `result-track:1927f603468831fd75bbc0ac2b580291ff6a69767d219c9908b3f2d286508bfe` |
+| 4 | `theorem` | [isFiniteLength_of_exists_compositionSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteLength.lean/declarations/isfinitelength-of-exists-compositionseries.md) | 51 | `result-track:c45001bb825e0ad91b944795522fa516d16f42916c1d63c7589f1900db446cf9` |
+| 5 | `theorem` | [isFiniteLength_iff_isNoetherian_isArtinian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteLength.lean/declarations/isfinitelength-iff-isnoetherian-isartinian.md) | 68 | `result-track:d3d22ed20cdc5cecddc771784742d5f0a31c4063572bd83dcbd6fcf637c2353c` |
+| 6 | `theorem` | [isFiniteLength_iff_exists_compositionSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteLength.lean/declarations/isfinitelength-iff-exists-compositionseries.md) | 76 | `result-track:2735336aca24b1c2afa33b34d78a15c67862e150e94d5dedb4bcef4f9e6275b3` |
+| 7 | `theorem` | [IsSemisimpleModule.finite_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteLength.lean/declarations/issemisimplemodule-finite-tfae.md) | 82 | `result-track:50aece872819660f30d174e9ca4fedc6d998608663a5943e11db191ace744a5c` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteLength.lean/declarations/instance.md) | 101 | `declaration-track:b672e7b7a3f087287d91b08ffba70905b71f6d91340da9a9f1d88150b7a71efe` |
+| 9 | `lemma` | [IsFiniteLength.of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteLength.lean/declarations/isfinitelength-of-injective.md) | 106 | `result-track:84a49ad2a73a91e06f1d35085077b2e175f005e4619e91ea03de84c65f03ac2b` |
+| 10 | `lemma` | [IsFiniteLength.of_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteLength.lean/declarations/isfinitelength-of-surjective.md) | 112 | `result-track:0cf509a4a67fb9235bd003edcd766bbf32cf2f466d5535d5552755a7e478ecd8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

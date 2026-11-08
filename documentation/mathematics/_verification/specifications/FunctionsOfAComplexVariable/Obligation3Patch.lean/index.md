@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/Obligation3Patch.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/Obligation3Patch.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Obligation3Patch.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Obligation3Patch.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [patchedNumerator](../../../../FunctionsOfAComplexVariable/Obligation3Patch.lean/declarations/patchednumerator.md) | 11 | `declaration-track:67f887041ba19e678911e1e0b9818f70e4a4190e531cbb62bcbd0c9a66aa7b18` |
-| 2 | `theorem` | [patchedNumerator_zero](../../../../FunctionsOfAComplexVariable/Obligation3Patch.lean/declarations/patchednumerator-zero.md) | 14 | `result-track:6594f3a1f23ed7d9d3f46dc27278b10ba0a069a305d2799e0681147a6a81f61f` |
-| 3 | `theorem` | [patchedNumerator_of_ne](../../../../FunctionsOfAComplexVariable/Obligation3Patch.lean/declarations/patchednumerator-of-ne.md) | 17 | `result-track:de2e1d74fa94f42e7c7ddf7d3840b3c55e94280343c255153bd98175cf1e26bd` |
-| 4 | `theorem` | [patchedNumerator_analytic](../../../../FunctionsOfAComplexVariable/Obligation3Patch.lean/declarations/patchednumerator-analytic.md) | 21 | `result-track:96ab1372e699f4b4c29802870143e48b9275d1da9deafb32de31f7f8773c59bf` |
-| 5 | `theorem` | [meromorphicAt_of_patched_numerator](../../../../FunctionsOfAComplexVariable/Obligation3Patch.lean/declarations/meromorphicat-of-patched-numerator.md) | 34 | `result-track:867fb02f179b42f57f7671efbd334ef70faae5c5c283db80a3559b62c8579d4c` |
-| 6 | `theorem` | [meromorphicOrderAt_of_patched_numerator](../../../../FunctionsOfAComplexVariable/Obligation3Patch.lean/declarations/meromorphicorderat-of-patched-numerator.md) | 41 | `result-track:7f77a77f147118845a0399f02cf312b2e31a902283e16062e166eaead76a3274` |
-| 7 | `theorem` | [exact_pole_certificate](../../../../FunctionsOfAComplexVariable/Obligation3Patch.lean/declarations/exact-pole-certificate.md) | 52 | `result-track:a6a3daed5452c9ede8322e6e7b68ef561fdc2271349b38591ce2a579de628d83` |
+| 1 | `def` | [patchedNumerator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Obligation3Patch.lean/declarations/patchednumerator.md) | 11 | `declaration-track:67f887041ba19e678911e1e0b9818f70e4a4190e531cbb62bcbd0c9a66aa7b18` |
+| 2 | `theorem` | [patchedNumerator_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Obligation3Patch.lean/declarations/patchednumerator-zero.md) | 14 | `result-track:6594f3a1f23ed7d9d3f46dc27278b10ba0a069a305d2799e0681147a6a81f61f` |
+| 3 | `theorem` | [patchedNumerator_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Obligation3Patch.lean/declarations/patchednumerator-of-ne.md) | 17 | `result-track:de2e1d74fa94f42e7c7ddf7d3840b3c55e94280343c255153bd98175cf1e26bd` |
+| 4 | `theorem` | [patchedNumerator_analytic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Obligation3Patch.lean/declarations/patchednumerator-analytic.md) | 21 | `result-track:96ab1372e699f4b4c29802870143e48b9275d1da9deafb32de31f7f8773c59bf` |
+| 5 | `theorem` | [meromorphicAt_of_patched_numerator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Obligation3Patch.lean/declarations/meromorphicat-of-patched-numerator.md) | 34 | `result-track:867fb02f179b42f57f7671efbd334ef70faae5c5c283db80a3559b62c8579d4c` |
+| 6 | `theorem` | [meromorphicOrderAt_of_patched_numerator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Obligation3Patch.lean/declarations/meromorphicorderat-of-patched-numerator.md) | 41 | `result-track:7f77a77f147118845a0399f02cf312b2e31a902283e16062e166eaead76a3274` |
+| 7 | `theorem` | [exact_pole_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Obligation3Patch.lean/declarations/exact-pole-certificate.md) | 52 | `result-track:a6a3daed5452c9ede8322e6e7b68ef561fdc2271349b38591ce2a579de628d83` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

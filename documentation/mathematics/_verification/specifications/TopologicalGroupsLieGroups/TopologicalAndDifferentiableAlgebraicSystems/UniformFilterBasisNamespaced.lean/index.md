@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/UniformFilterBasisNamespaced.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/UniformFilterBasisNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/UniformFilterBasisNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/UniformFilterBasisNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [uniformSpace](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/UniformFilterBasisNamespaced.lean/declarations/uniformspace.md) | 38 | `declaration-track:c6e84582242440786d52bed61ec3e1375e95ac7dcf8fea2ec27a483eb23a46f1` |
-| 2 | `theorem` | [isUniformAddGroup](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/UniformFilterBasisNamespaced.lean/declarations/isuniformaddgroup.md) | 43 | `result-track:7adefea6dc41cd1d53c6c04e644aa3d478b25d57b0d787ad304a8760e3a15c14` |
-| 3 | `theorem` | [cauchy_iff](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/UniformFilterBasisNamespaced.lean/declarations/cauchy-iff.md) | 48 | `result-track:dd184cf1ec2b7ee26a7907dac420fc2e0f30f23a55f1b4bb9c82365a9d8bc9d0` |
+| 1 | `def` | [uniformSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/UniformFilterBasisNamespaced.lean/declarations/uniformspace.md) | 38 | `declaration-track:c6e84582242440786d52bed61ec3e1375e95ac7dcf8fea2ec27a483eb23a46f1` |
+| 2 | `theorem` | [isUniformAddGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/UniformFilterBasisNamespaced.lean/declarations/isuniformaddgroup.md) | 43 | `result-track:7adefea6dc41cd1d53c6c04e644aa3d478b25d57b0d787ad304a8760e3a15c14` |
+| 3 | `theorem` | [cauchy_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/UniformFilterBasisNamespaced.lean/declarations/cauchy-iff.md) | 48 | `result-track:dd184cf1ec2b7ee26a7907dac420fc2e0f30f23a55f1b4bb9c82365a9d8bc9d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/OptionalSourceMangoldtRowQuotientPrepared.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/OptionalSourceMangoldtRowQuotientPrepared.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/OptionalSourceMangoldtRowQuotientPrepared.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/OptionalSourceMangoldtRowQuotientPrepared.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_mangoldt_column_eq_quotient_row](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/OptionalSourceMangoldtRowQuotientPrepared.lean/declarations/actual-mangoldt-column-eq-quotient-row.md) | 15 | `result-track:a10be5098a6d896f3f2d05daea3aab858a70eb8b972f0ab2228b522c130ca1a6` |
+| 1 | `theorem` | [actual_mangoldt_column_eq_quotient_row](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/OptionalSourceMangoldtRowQuotientPrepared.lean/declarations/actual-mangoldt-column-eq-quotient-row.md) | 15 | `result-track:a10be5098a6d896f3f2d05daea3aab858a70eb8b972f0ab2228b522c130ca1a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

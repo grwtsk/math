@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidProd.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidProd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidProd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidProd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidProd.lean/declarations/instance-source-edition-3.md) | 20 | `declaration-track:f15eb9ac0a3d4e466a3397f658f478bd2f5d8d3e8a478bc35bda44dd8a6e6ea4` |
-| 2 | `instance` | [instIsOrderedCancelMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidProd.lean/declarations/instisorderedcancelmonoid.md) | 25 | `declaration-track:1daea3487f98eed815cb406d661732fc7f1c6b6326a6a3f608e9efd85b61ac82` |
-| 3 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidProd.lean/declarations/instance.md) | 33 | `declaration-track:a1f9410afaf2525cbbc97a92b97290401a73331ac81b0f0b1d7dcedf73ab386f` |
-| 4 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidProd.lean/declarations/instance-source-edition-2.md) | 41 | `declaration-track:cfbbd2cdcbc250a10d745fcedb5831d500b431e41554a4dfa662e5217529e314` |
-| 5 | `instance` | [isOrderedMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidProd.lean/declarations/isorderedmonoid.md) | 50 | `declaration-track:19ec23d3bc7a84893d564860aa56162fef6bf1712fa1353c133161d3567ef23f` |
-| 6 | `instance` | [isOrderedCancelMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidProd.lean/declarations/isorderedcancelmonoid.md) | 59 | `declaration-track:16666fe3627adef1de42ce07e9d33e39868dfbfe51cd478b32d857fa5bd07d06` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidProd.lean/declarations/instance-source-edition-3.md) | 20 | `declaration-track:f15eb9ac0a3d4e466a3397f658f478bd2f5d8d3e8a478bc35bda44dd8a6e6ea4` |
+| 2 | `instance` | [instIsOrderedCancelMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidProd.lean/declarations/instisorderedcancelmonoid.md) | 25 | `declaration-track:1daea3487f98eed815cb406d661732fc7f1c6b6326a6a3f608e9efd85b61ac82` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidProd.lean/declarations/instance.md) | 33 | `declaration-track:a1f9410afaf2525cbbc97a92b97290401a73331ac81b0f0b1d7dcedf73ab386f` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidProd.lean/declarations/instance-source-edition-2.md) | 41 | `declaration-track:cfbbd2cdcbc250a10d745fcedb5831d500b431e41554a4dfa662e5217529e314` |
+| 5 | `instance` | [isOrderedMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidProd.lean/declarations/isorderedmonoid.md) | 50 | `declaration-track:19ec23d3bc7a84893d564860aa56162fef6bf1712fa1353c133161d3567ef23f` |
+| 6 | `instance` | [isOrderedCancelMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidProd.lean/declarations/isorderedcancelmonoid.md) | 59 | `declaration-track:16666fe3627adef1de42ce07e9d33e39868dfbfe51cd478b32d857fa5bd07d06` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

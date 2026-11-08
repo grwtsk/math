@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ResolverExtensionStatus.lean/index.md) · [Full source](../../../../Combinatorics/ResolverExtensionStatus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverExtensionStatus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverExtensionStatus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ExtensionStatus](../../../../Combinatorics/ResolverExtensionStatus.lean/declarations/extensionstatus.md) | 16 | `declaration-track:1cec65e6f551fb8187dacb7fda1da537424501e8080976634da6842d83757f55` |
-| 2 | `abbrev` | [ArithmeticSecurityExtensionStatus](../../../../Combinatorics/ResolverExtensionStatus.lean/declarations/arithmeticsecurityextensionstatus.md) | 21 | `declaration-track:f04dd1f54c2f2170053af5681a31e9fab7aa015065447daa09a08491cef16116` |
-| 3 | `def` | [unresolvedArithmeticSecurityExtension](../../../../Combinatorics/ResolverExtensionStatus.lean/declarations/unresolvedarithmeticsecurityextension.md) | 29 | `declaration-track:11d90db78b9f4d5849577eec9ae42c9412089f2429e6d7b43df1409213154e01` |
-| 4 | `structure` | [SolvedMobiusOntologyPayload](../../../../Combinatorics/ResolverExtensionStatus.lean/declarations/solvedmobiusontologypayload.md) | 39 | `declaration-track:d18bf5d7efec604530ee43573cef878488db0809f262371763a42a7a106408be` |
-| 5 | `inductive` | [MobiusOntologyResolution](../../../../Combinatorics/ResolverExtensionStatus.lean/declarations/mobiusontologyresolution.md) | 61 | `declaration-track:993ea8c8951c9b4e7a13b490de9a210afb493077196c5be00a44990a0913f90d` |
-| 6 | `inductive` | [CoreEvaluation](../../../../Combinatorics/ResolverExtensionStatus.lean/declarations/coreevaluation.md) | 89 | `declaration-track:2346aef64a460f27bbea7c761146ebbe54c11486e0312b64462f4e0992adada6` |
-| 7 | `structure` | [ResolverCut](../../../../Combinatorics/ResolverExtensionStatus.lean/declarations/resolvercut.md) | 100 | `declaration-track:4f12bd6e2623f4448a724fbddc5cda3955e4b966d00192a89bdad6d088aa9220` |
-| 8 | `def` | [resolveMobiusOntology](../../../../Combinatorics/ResolverExtensionStatus.lean/declarations/resolvemobiusontology.md) | 124 | `declaration-track:69f40552908af653e7c720c13ae8e3a9daa3d9f70a09a2f7001567e5c83739b5` |
-| 9 | `theorem` | [resolveMobiusOntology_total](../../../../Combinatorics/ResolverExtensionStatus.lean/declarations/resolvemobiusontology-total.md) | 173 | `result-track:947ca51a4cda6937e06f664c066f45386f1f05dc0b1daa60c44728dccc6576ae` |
-| 10 | `theorem` | [solved_core_sound](../../../../Combinatorics/ResolverExtensionStatus.lean/declarations/solved-core-sound.md) | 195 | `result-track:be0621ddd776419cf768d787f96819dada6f683e75d2733326d525cc3389026e` |
+| 1 | `inductive` | [ExtensionStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverExtensionStatus.lean/declarations/extensionstatus.md) | 16 | `declaration-track:1cec65e6f551fb8187dacb7fda1da537424501e8080976634da6842d83757f55` |
+| 2 | `abbrev` | [ArithmeticSecurityExtensionStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverExtensionStatus.lean/declarations/arithmeticsecurityextensionstatus.md) | 21 | `declaration-track:f04dd1f54c2f2170053af5681a31e9fab7aa015065447daa09a08491cef16116` |
+| 3 | `def` | [unresolvedArithmeticSecurityExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverExtensionStatus.lean/declarations/unresolvedarithmeticsecurityextension.md) | 29 | `declaration-track:11d90db78b9f4d5849577eec9ae42c9412089f2429e6d7b43df1409213154e01` |
+| 4 | `structure` | [SolvedMobiusOntologyPayload](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverExtensionStatus.lean/declarations/solvedmobiusontologypayload.md) | 39 | `declaration-track:d18bf5d7efec604530ee43573cef878488db0809f262371763a42a7a106408be` |
+| 5 | `inductive` | [MobiusOntologyResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverExtensionStatus.lean/declarations/mobiusontologyresolution.md) | 61 | `declaration-track:993ea8c8951c9b4e7a13b490de9a210afb493077196c5be00a44990a0913f90d` |
+| 6 | `inductive` | [CoreEvaluation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverExtensionStatus.lean/declarations/coreevaluation.md) | 89 | `declaration-track:2346aef64a460f27bbea7c761146ebbe54c11486e0312b64462f4e0992adada6` |
+| 7 | `structure` | [ResolverCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverExtensionStatus.lean/declarations/resolvercut.md) | 100 | `declaration-track:4f12bd6e2623f4448a724fbddc5cda3955e4b966d00192a89bdad6d088aa9220` |
+| 8 | `def` | [resolveMobiusOntology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverExtensionStatus.lean/declarations/resolvemobiusontology.md) | 124 | `declaration-track:69f40552908af653e7c720c13ae8e3a9daa3d9f70a09a2f7001567e5c83739b5` |
+| 9 | `theorem` | [resolveMobiusOntology_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverExtensionStatus.lean/declarations/resolvemobiusontology-total.md) | 173 | `result-track:947ca51a4cda6937e06f664c066f45386f1f05dc0b1daa60c44728dccc6576ae` |
+| 10 | `theorem` | [solved_core_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverExtensionStatus.lean/declarations/solved-core-sound.md) | 195 | `result-track:be0621ddd776419cf768d787f96819dada6f683e75d2733326d525cc3389026e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

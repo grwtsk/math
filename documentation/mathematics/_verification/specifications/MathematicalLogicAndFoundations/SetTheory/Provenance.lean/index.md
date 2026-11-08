@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/SetTheory/Provenance.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/SetTheory/Provenance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/Provenance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/Provenance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [EuclidBook](../../../../../MathematicalLogicAndFoundations/SetTheory/Provenance.lean/declarations/euclidbook.md) | 12 | `declaration-track:82a29f4a96d89b9226987bd5b06f0fdacda3696ad66d6ac30124c2638da7ff61` |
-| 2 | `inductive` | [HistoricalPlace](../../../../../MathematicalLogicAndFoundations/SetTheory/Provenance.lean/declarations/historicalplace.md) | 17 | `declaration-track:d70c9bc70c5153add62ddb235ddf9f48447f289d49b068f16d095f856a153105` |
-| 3 | `inductive` | [HistoricalItemKind](../../../../../MathematicalLogicAndFoundations/SetTheory/Provenance.lean/declarations/historicalitemkind.md) | 22 | `declaration-track:18ac2d2972fcb7f2ccc97a4438fe72d60ba4565e4ceaa5ad38eb26618de54df9` |
-| 4 | `structure` | [HistoricalCoordinate](../../../../../MathematicalLogicAndFoundations/SetTheory/Provenance.lean/declarations/historicalcoordinate.md) | 30 | `declaration-track:efe6815382bcd5e3512f22e7c3093e975ea9a0fc0be9f3b7408cb14c093b2bec` |
-| 5 | `structure` | [HistoricalProvenance](../../../../../MathematicalLogicAndFoundations/SetTheory/Provenance.lean/declarations/historicalprovenance.md) | 37 | `declaration-track:2028fc76653aab1c4f2a05f40ca195f35a14d72c8c346bb2fa97781f285ac879` |
-| 6 | `def` | [commonNotion](../../../../../MathematicalLogicAndFoundations/SetTheory/Provenance.lean/declarations/commonnotion.md) | 44 | `declaration-track:cb3ba31c179e905dbffb3c893223db1937326d29c54dfc45b4a7f32a771c7b48` |
-| 7 | `def` | [bookDefinition](../../../../../MathematicalLogicAndFoundations/SetTheory/Provenance.lean/declarations/bookdefinition.md) | 57 | `declaration-track:61c999cb112856bc4aea96a030dba781054a4c20406acd72a200ecbdd7d5642c` |
-| 8 | `def` | [postulate](../../../../../MathematicalLogicAndFoundations/SetTheory/Provenance.lean/declarations/postulate.md) | 71 | `declaration-track:38a2c2dbd4c7955e5d78ee794b15db99af1275b002dd6fd3ea3a3e55618aab6b` |
-| 9 | `def` | [bookProposition](../../../../../MathematicalLogicAndFoundations/SetTheory/Provenance.lean/declarations/bookproposition.md) | 84 | `declaration-track:9ac3fd53797d93c4667b735302ba7b7b7272d0ac9437c658daebbdffa283c433` |
+| 1 | `inductive` | [EuclidBook](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/Provenance.lean/declarations/euclidbook.md) | 12 | `declaration-track:82a29f4a96d89b9226987bd5b06f0fdacda3696ad66d6ac30124c2638da7ff61` |
+| 2 | `inductive` | [HistoricalPlace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/Provenance.lean/declarations/historicalplace.md) | 17 | `declaration-track:d70c9bc70c5153add62ddb235ddf9f48447f289d49b068f16d095f856a153105` |
+| 3 | `inductive` | [HistoricalItemKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/Provenance.lean/declarations/historicalitemkind.md) | 22 | `declaration-track:18ac2d2972fcb7f2ccc97a4438fe72d60ba4565e4ceaa5ad38eb26618de54df9` |
+| 4 | `structure` | [HistoricalCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/Provenance.lean/declarations/historicalcoordinate.md) | 30 | `declaration-track:efe6815382bcd5e3512f22e7c3093e975ea9a0fc0be9f3b7408cb14c093b2bec` |
+| 5 | `structure` | [HistoricalProvenance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/Provenance.lean/declarations/historicalprovenance.md) | 37 | `declaration-track:2028fc76653aab1c4f2a05f40ca195f35a14d72c8c346bb2fa97781f285ac879` |
+| 6 | `def` | [commonNotion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/Provenance.lean/declarations/commonnotion.md) | 44 | `declaration-track:cb3ba31c179e905dbffb3c893223db1937326d29c54dfc45b4a7f32a771c7b48` |
+| 7 | `def` | [bookDefinition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/Provenance.lean/declarations/bookdefinition.md) | 57 | `declaration-track:61c999cb112856bc4aea96a030dba781054a4c20406acd72a200ecbdd7d5642c` |
+| 8 | `def` | [postulate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/Provenance.lean/declarations/postulate.md) | 71 | `declaration-track:38a2c2dbd4c7955e5d78ee794b15db99af1275b002dd6fd3ea3a3e55618aab6b` |
+| 9 | `def` | [bookProposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/Provenance.lean/declarations/bookproposition.md) | 84 | `declaration-track:9ac3fd53797d93c4667b735302ba7b7b7272d0ac9437c658daebbdffa283c433` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

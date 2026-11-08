@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BinaryChargedPrismaticTerrain.lean/index.md) · [Full source](../../../../Combinatorics/BinaryChargedPrismaticTerrain.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryChargedPrismaticTerrain.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryChargedPrismaticTerrain.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CellAbsolutePlacement](../../../../Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/cellabsoluteplacement-source-edition-2.md) | 25 | `declaration-track:21693de552dc37a6edf0d97c7da189b691c1dabbf5d0a9132604c66a60f25fdb` |
-| 2 | `structure` | [BinaryChargedPrismaticTerrain](../../../../Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/binarychargedprismaticterrain.md) | 39 | `declaration-track:e1b2fb0240f3ae3e370619f91ef3ee78f5b44e81f7527c75bc564c1f4eb3c25c` |
-| 3 | `def` | [cellAbsolutePlacement](../../../../Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/cellabsoluteplacement.md) | 65 | `declaration-track:1481e41f4de7245711ff6efd33ff2967689c84e46862d4fb6cc2161b36de5c9f` |
-| 4 | `def` | [activeCellGlobalLocus](../../../../Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/activecellgloballocus.md) | 80 | `declaration-track:939dd17813ee826d6e386a7c4fbde485ca667ed476bab9dcf43be0aaa979fbfe` |
-| 5 | `theorem` | [activeCell_global_locus](../../../../Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/activecell-global-locus.md) | 88 | `result-track:6f4a41e8871d509795849866ab30d49d769e14ec334ab28c0d8de388506bc8cf` |
-| 6 | `theorem` | [activeCell_has_exact_global_locus](../../../../Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/activecell-has-exact-global-locus.md) | 96 | `result-track:62be121ff679020fdb577498ac18c188b7c75931b08bab069d78a16890c54a30` |
-| 7 | `theorem` | [activeCell_vertex_has_global_coordinate](../../../../Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/activecell-vertex-has-global-coordinate.md) | 105 | `result-track:25df14e5bb237db8b501308b91069cb7199cedaa503a39c7ef074127df86996f` |
-| 8 | `theorem` | [raster_vertex_charge](../../../../Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/raster-vertex-charge.md) | 116 | `result-track:dc5c9b3f025b2043cdddff515abd99e3b6767223cd6387d48c55440c30cc0f92` |
-| 9 | `theorem` | [raster_prismatic_square](../../../../Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/raster-prismatic-square.md) | 125 | `result-track:0e2f1d45428caea8e01bbe84a7dc5960efe108a380c0a6381bbc68c2b8ba0f93` |
-| 10 | `theorem` | [vertex_global_injective](../../../../Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/vertex-global-injective.md) | 136 | `result-track:708786b7d6dfe0def908ca476a3817692988c577882348cac8de2233203d364b` |
+| 1 | `structure` | [CellAbsolutePlacement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/cellabsoluteplacement-source-edition-2.md) | 25 | `declaration-track:21693de552dc37a6edf0d97c7da189b691c1dabbf5d0a9132604c66a60f25fdb` |
+| 2 | `structure` | [BinaryChargedPrismaticTerrain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/binarychargedprismaticterrain.md) | 39 | `declaration-track:e1b2fb0240f3ae3e370619f91ef3ee78f5b44e81f7527c75bc564c1f4eb3c25c` |
+| 3 | `def` | [cellAbsolutePlacement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/cellabsoluteplacement.md) | 65 | `declaration-track:1481e41f4de7245711ff6efd33ff2967689c84e46862d4fb6cc2161b36de5c9f` |
+| 4 | `def` | [activeCellGlobalLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/activecellgloballocus.md) | 80 | `declaration-track:939dd17813ee826d6e386a7c4fbde485ca667ed476bab9dcf43be0aaa979fbfe` |
+| 5 | `theorem` | [activeCell_global_locus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/activecell-global-locus.md) | 88 | `result-track:6f4a41e8871d509795849866ab30d49d769e14ec334ab28c0d8de388506bc8cf` |
+| 6 | `theorem` | [activeCell_has_exact_global_locus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/activecell-has-exact-global-locus.md) | 96 | `result-track:62be121ff679020fdb577498ac18c188b7c75931b08bab069d78a16890c54a30` |
+| 7 | `theorem` | [activeCell_vertex_has_global_coordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/activecell-vertex-has-global-coordinate.md) | 105 | `result-track:25df14e5bb237db8b501308b91069cb7199cedaa503a39c7ef074127df86996f` |
+| 8 | `theorem` | [raster_vertex_charge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/raster-vertex-charge.md) | 116 | `result-track:dc5c9b3f025b2043cdddff515abd99e3b6767223cd6387d48c55440c30cc0f92` |
+| 9 | `theorem` | [raster_prismatic_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/raster-prismatic-square.md) | 125 | `result-track:0e2f1d45428caea8e01bbe84a7dc5960efe108a380c0a6381bbc68c2b8ba0f93` |
+| 10 | `theorem` | [vertex_global_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryChargedPrismaticTerrain.lean/declarations/vertex-global-injective.md) | 136 | `result-track:708786b7d6dfe0def908ca476a3817692988c577882348cac8de2233203d364b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

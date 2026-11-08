@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/IntMuNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/IntMuNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntMuNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntMuNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [StirlingHyp](../../../../MeasureAndIntegration/IntMuNamespaced.lean/declarations/stirlinghyp.md) | 32 | `declaration-track:b27bd7689631b978ae92eebe5396cf68c332f40a3c4b04e01575af3099e2f4a6` |
-| 2 | `lemma` | [integral_main_eq](../../../../MeasureAndIntegration/IntMuNamespaced.lean/declarations/integral-main-eq.md) | 36 | `result-track:7d1849b3a49f588bfcceb7ba6d9b7725ede3f21b0024ba993e9ac9bad7f57534` |
-| 3 | `theorem` | [int_mu_of_stirling](../../../../MeasureAndIntegration/IntMuNamespaced.lean/declarations/int-mu-of-stirling.md) | 93 | `result-track:83901771c5befecd47d56a71b981467f0180b9515bc4914c97c4446adb58cd06` |
-| 4 | `lemma` | [integral_main_sq_eq](../../../../MeasureAndIntegration/IntMuNamespaced.lean/declarations/integral-main-sq-eq.md) | 177 | `result-track:d2c3e7075bcb4190421876cfd143bd8c40dbf4148ce28b6a0b4dba8b3dfd9813` |
-| 5 | `theorem` | [int_mu_sq_of_stirling](../../../../MeasureAndIntegration/IntMuNamespaced.lean/declarations/int-mu-sq-of-stirling.md) | 235 | `result-track:5ac580b76f0aa755c7f180ed632e570cab06420fbb2f416369b8f02835ec9c78` |
+| 1 | `def` | [StirlingHyp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntMuNamespaced.lean/declarations/stirlinghyp.md) | 32 | `declaration-track:b27bd7689631b978ae92eebe5396cf68c332f40a3c4b04e01575af3099e2f4a6` |
+| 2 | `lemma` | [integral_main_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntMuNamespaced.lean/declarations/integral-main-eq.md) | 36 | `result-track:7d1849b3a49f588bfcceb7ba6d9b7725ede3f21b0024ba993e9ac9bad7f57534` |
+| 3 | `theorem` | [int_mu_of_stirling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntMuNamespaced.lean/declarations/int-mu-of-stirling.md) | 93 | `result-track:83901771c5befecd47d56a71b981467f0180b9515bc4914c97c4446adb58cd06` |
+| 4 | `lemma` | [integral_main_sq_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntMuNamespaced.lean/declarations/integral-main-sq-eq.md) | 177 | `result-track:d2c3e7075bcb4190421876cfd143bd8c40dbf4148ce28b6a0b4dba8b3dfd9813` |
+| 5 | `theorem` | [int_mu_sq_of_stirling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntMuNamespaced.lean/declarations/int-mu-sq-of-stirling.md) | 235 | `result-track:5ac580b76f0aa755c7f180ed632e570cab06420fbb2f416369b8f02835ec9c78` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

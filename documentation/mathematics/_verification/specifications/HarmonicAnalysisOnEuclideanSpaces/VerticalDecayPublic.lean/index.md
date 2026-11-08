@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../HarmonicAnalysisOnEuclideanSpaces/VerticalDecayPublic.lean/index.md) · [Full source](../../../../HarmonicAnalysisOnEuclideanSpaces/VerticalDecayPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/VerticalDecayPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/VerticalDecayPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [laplaceSliceSchwartz](../../../../HarmonicAnalysisOnEuclideanSpaces/VerticalDecayPublic.lean/declarations/laplacesliceschwartz.md) | 38 | `declaration-track:99a5a924b1d37bdea37f96a9eb570101ff9d7e18704f20aaddba14799d855f4f` |
-| 2 | `theorem` | [laplaceSliceSchwartz_apply](../../../../HarmonicAnalysisOnEuclideanSpaces/VerticalDecayPublic.lean/declarations/laplacesliceschwartz-apply.md) | 50 | `result-track:cf4d68e8327e475ecd771225ba6681e59f90060fce1ff12d4a0ba91039d3612d` |
-| 3 | `theorem` | [primitiveWeilLaplace_eq_fourier_laplaceSlice](../../../../HarmonicAnalysisOnEuclideanSpaces/VerticalDecayPublic.lean/declarations/primitiveweillaplace-eq-fourier-laplaceslice.md) | 59 | `result-track:c543b939be54743fe510e92a1a907fc88566ac04699b118dfe5a399e03030631` |
-| 4 | `theorem` | [primitiveWeilLaplace_vertical_normalized_pow_bound](../../../../HarmonicAnalysisOnEuclideanSpaces/VerticalDecayPublic.lean/declarations/primitiveweillaplace-vertical-normalized-pow-bound.md) | 87 | `result-track:90ad444063d72ac5f219303e6ecfeb272ffcba736f4e279eeaf1f0e8ed8a384c` |
-| 5 | `theorem` | [primitiveWeilLaplace_vertical_pow_bound](../../../../HarmonicAnalysisOnEuclideanSpaces/VerticalDecayPublic.lean/declarations/primitiveweillaplace-vertical-pow-bound.md) | 102 | `result-track:2f001373d026c8e7c281453560b83c7d0ac1637e78017c80704754b5d7a94a1f` |
-| 6 | `theorem` | [primitiveWeilLaplace_decay_fixedRealPart](../../../../HarmonicAnalysisOnEuclideanSpaces/VerticalDecayPublic.lean/declarations/primitiveweillaplace-decay-fixedrealpart.md) | 121 | `result-track:9d4fb658067ad829ea3ae6e508174fffbec67a7e10d3353cdc9ec237f8d31f5b` |
+| 1 | `def` | [laplaceSliceSchwartz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/VerticalDecayPublic.lean/declarations/laplacesliceschwartz.md) | 38 | `declaration-track:99a5a924b1d37bdea37f96a9eb570101ff9d7e18704f20aaddba14799d855f4f` |
+| 2 | `theorem` | [laplaceSliceSchwartz_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/VerticalDecayPublic.lean/declarations/laplacesliceschwartz-apply.md) | 50 | `result-track:cf4d68e8327e475ecd771225ba6681e59f90060fce1ff12d4a0ba91039d3612d` |
+| 3 | `theorem` | [primitiveWeilLaplace_eq_fourier_laplaceSlice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/VerticalDecayPublic.lean/declarations/primitiveweillaplace-eq-fourier-laplaceslice.md) | 59 | `result-track:c543b939be54743fe510e92a1a907fc88566ac04699b118dfe5a399e03030631` |
+| 4 | `theorem` | [primitiveWeilLaplace_vertical_normalized_pow_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/VerticalDecayPublic.lean/declarations/primitiveweillaplace-vertical-normalized-pow-bound.md) | 87 | `result-track:90ad444063d72ac5f219303e6ecfeb272ffcba736f4e279eeaf1f0e8ed8a384c` |
+| 5 | `theorem` | [primitiveWeilLaplace_vertical_pow_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/VerticalDecayPublic.lean/declarations/primitiveweillaplace-vertical-pow-bound.md) | 102 | `result-track:2f001373d026c8e7c281453560b83c7d0ac1637e78017c80704754b5d7a94a1f` |
+| 6 | `theorem` | [primitiveWeilLaplace_decay_fixedRealPart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/VerticalDecayPublic.lean/declarations/primitiveweillaplace-decay-fixedrealpart.md) | 121 | `result-track:9d4fb658067ad829ea3ae6e508174fffbec67a7e10d3353cdc9ec237f8d31f5b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

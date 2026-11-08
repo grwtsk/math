@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ProfiniteNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ProfiniteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ProfiniteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ProfiniteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Algebra.IsInvariant.isIntegral_of_profinite](../../../../CommutativeAlgebra/ProfiniteNamespaced.lean/declarations/isintegral-of-profinite.md) | 50 | `result-track:d032b1af2f79ff919b7d57229026ed037c0d3eb84d682f4817cb6d16a2dd4bce` |
-| 2 | `lemma` | [Algebra.IsInvariant.exists_smul_of_under_eq_of_profinite](../../../../CommutativeAlgebra/ProfiniteNamespaced.lean/declarations/exists-smul-of-under-eq-of-profinite.md) | 61 | `result-track:d5e9a72243a3ee1b975142647c25d7ff76f0d9f0926fea5a84d7777552d889ff` |
-| 3 | `lemma` | [Ideal.Quotient.stabilizerHomSurjectiveAuxFunctor_aux](../../../../CommutativeAlgebra/ProfiniteNamespaced.lean/declarations/ideal-quotient-stabilizerhomsurjectiveauxfunctor-aux.md) | 111 | `result-track:75ddbf2789affe8a13e1a642f94fcf20245b7324ac14b9967fe78a8eaf23facf` |
-| 4 | `def` | [Ideal.Quotient.stabilizerHomSurjectiveAuxFunctor](../../../../CommutativeAlgebra/ProfiniteNamespaced.lean/declarations/ideal-quotient-stabilizerhomsurjectiveauxfunctor.md) | 129 | `declaration-track:ce2c42f57d12ad0da8fc4694676ea8459b9abcaa1eb2b47cc3fe307745a67e28` |
-| 5 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ProfiniteNamespaced.lean/declarations/instance-source-edition-2.md) | 152 | `declaration-track:ab47556666b5e4fcc1018d31b43b4af14ca03a1444d52886c337f6bfaeb3e2fd` |
-| 6 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ProfiniteNamespaced.lean/declarations/instance.md) | 159 | `declaration-track:268f6f4562245984f78188e2681d9c35f55b8c2a33c093e5660cbec7d573f1e6` |
-| 7 | `theorem` | [Ideal.Quotient.stabilizerHom_surjective_of_profinite](../../../../CommutativeAlgebra/ProfiniteNamespaced.lean/declarations/ideal-quotient-stabilizerhom-surjective-of-profinite.md) | 175 | `result-track:9a45e2718cce0e1b907669e6f505fad1b4364a90713bf4cba6c0cf5b9cb9bf7d` |
+| 1 | `lemma` | [Algebra.IsInvariant.isIntegral_of_profinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ProfiniteNamespaced.lean/declarations/isintegral-of-profinite.md) | 50 | `result-track:d032b1af2f79ff919b7d57229026ed037c0d3eb84d682f4817cb6d16a2dd4bce` |
+| 2 | `lemma` | [Algebra.IsInvariant.exists_smul_of_under_eq_of_profinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ProfiniteNamespaced.lean/declarations/exists-smul-of-under-eq-of-profinite.md) | 61 | `result-track:d5e9a72243a3ee1b975142647c25d7ff76f0d9f0926fea5a84d7777552d889ff` |
+| 3 | `lemma` | [Ideal.Quotient.stabilizerHomSurjectiveAuxFunctor_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ProfiniteNamespaced.lean/declarations/ideal-quotient-stabilizerhomsurjectiveauxfunctor-aux.md) | 111 | `result-track:75ddbf2789affe8a13e1a642f94fcf20245b7324ac14b9967fe78a8eaf23facf` |
+| 4 | `def` | [Ideal.Quotient.stabilizerHomSurjectiveAuxFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ProfiniteNamespaced.lean/declarations/ideal-quotient-stabilizerhomsurjectiveauxfunctor.md) | 129 | `declaration-track:ce2c42f57d12ad0da8fc4694676ea8459b9abcaa1eb2b47cc3fe307745a67e28` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ProfiniteNamespaced.lean/declarations/instance-source-edition-2.md) | 152 | `declaration-track:ab47556666b5e4fcc1018d31b43b4af14ca03a1444d52886c337f6bfaeb3e2fd` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ProfiniteNamespaced.lean/declarations/instance.md) | 159 | `declaration-track:268f6f4562245984f78188e2681d9c35f55b8c2a33c093e5660cbec7d573f1e6` |
+| 7 | `theorem` | [Ideal.Quotient.stabilizerHom_surjective_of_profinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ProfiniteNamespaced.lean/declarations/ideal-quotient-stabilizerhom-surjective-of-profinite.md) | 175 | `result-track:9a45e2718cce0e1b907669e6f505fad1b4364a90713bf4cba6c0cf5b9cb9bf7d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/NormalizedLogDerivativeBound.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/NormalizedLogDerivativeBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormalizedLogDerivativeBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormalizedLogDerivativeBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.DiskBlaschkeFactors`](../../../../FunctionsOfAComplexVariable/DiskBlaschkeFactors.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.DiskBlaschkeFactors`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DiskBlaschkeFactors.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.Complex.BorelCaratheodory` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.Complex.Liouville` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.SpecialFunctions.ExpDeriv` — import line 7; external provider; requires a separately pinned dependency.
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [norm_log_le_twenty](../../../../FunctionsOfAComplexVariable/NormalizedLogDerivativeBound.lean/declarations/norm-log-le-twenty.md) | 31 | `result-track:51ae7124b8ec5904a6b03fa78da7ed89d2ca7b318db56fab4643ce2b6de4e372` |
-| 2 | `theorem` | [small_circle_norm_le](../../../../FunctionsOfAComplexVariable/NormalizedLogDerivativeBound.lean/declarations/small-circle-norm-le.md) | 44 | `result-track:fe77d835b6b809b022942bdc6ab98228211fd9393f0ff55d115cd6086e8d106a` |
-| 3 | `theorem` | [norm_deriv_log_le_eighty](../../../../FunctionsOfAComplexVariable/NormalizedLogDerivativeBound.lean/declarations/norm-deriv-log-le-eighty.md) | 51 | `result-track:72350bdc9dafb55820bb8aba32e3a4d36154018c32c7f86c702eded879182c0f` |
-| 4 | `theorem` | [logDeriv_exp](../../../../FunctionsOfAComplexVariable/NormalizedLogDerivativeBound.lean/declarations/logderiv-exp.md) | 69 | `result-track:8505276aa1a75075c176f47d6f9c17057def95eb66b3a984e456cdbf102cca0b` |
-| 5 | `theorem` | [logDeriv_of_factorization](../../../../FunctionsOfAComplexVariable/NormalizedLogDerivativeBound.lean/declarations/logderiv-of-factorization.md) | 75 | `result-track:2d8d4ea5e24c330728299dba662d574dbbb40db7bfed2b76ec55ce96640b6fb3` |
-| 6 | `theorem` | [norm_logDeriv_of_factorization](../../../../FunctionsOfAComplexVariable/NormalizedLogDerivativeBound.lean/declarations/norm-logderiv-of-factorization.md) | 106 | `result-track:6d0b6e3c969784e714372627c383acbfef9fc144538ac03378858f69bbec3350` |
+| 1 | `theorem` | [norm_log_le_twenty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormalizedLogDerivativeBound.lean/declarations/norm-log-le-twenty.md) | 31 | `result-track:51ae7124b8ec5904a6b03fa78da7ed89d2ca7b318db56fab4643ce2b6de4e372` |
+| 2 | `theorem` | [small_circle_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormalizedLogDerivativeBound.lean/declarations/small-circle-norm-le.md) | 44 | `result-track:fe77d835b6b809b022942bdc6ab98228211fd9393f0ff55d115cd6086e8d106a` |
+| 3 | `theorem` | [norm_deriv_log_le_eighty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormalizedLogDerivativeBound.lean/declarations/norm-deriv-log-le-eighty.md) | 51 | `result-track:72350bdc9dafb55820bb8aba32e3a4d36154018c32c7f86c702eded879182c0f` |
+| 4 | `theorem` | [logDeriv_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormalizedLogDerivativeBound.lean/declarations/logderiv-exp.md) | 69 | `result-track:8505276aa1a75075c176f47d6f9c17057def95eb66b3a984e456cdbf102cca0b` |
+| 5 | `theorem` | [logDeriv_of_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormalizedLogDerivativeBound.lean/declarations/logderiv-of-factorization.md) | 75 | `result-track:2d8d4ea5e24c330728299dba662d574dbbb40db7bfed2b76ec55ce96640b6fb3` |
+| 6 | `theorem` | [norm_logDeriv_of_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormalizedLogDerivativeBound.lean/declarations/norm-logderiv-of-factorization.md) | 106 | `result-track:6d0b6e3c969784e714372627c383acbfef9fc144538ac03378858f69bbec3350` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

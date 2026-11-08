@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryCongruenceBigOperatorsNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryCongruenceBigOperatorsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryCongruenceBigOperatorsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryCongruenceBigOperatorsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [listSum](../../../../CommutativeAlgebra/RingTheoryCongruenceBigOperatorsNamespaced.lean/declarations/listsum.md) | 25 | `result-track:ea40f43f4c6fd4895bd1d3bb7601f78e4e40afdc79ee5ddb1c332c8554a636ef` |
-| 2 | `lemma` | [multisetSum](../../../../CommutativeAlgebra/RingTheoryCongruenceBigOperatorsNamespaced.lean/declarations/multisetsum.md) | 31 | `result-track:9f121994b4eeef2e5ea6820ce7c17c52512b89136a97390ed7f1704cdcfc243e` |
-| 3 | `lemma` | [finsetSum](../../../../CommutativeAlgebra/RingTheoryCongruenceBigOperatorsNamespaced.lean/declarations/finsetsum.md) | 37 | `result-track:7371d666299e477074290983293075a4ebfda79b6133a49ec6d58eff88e02e42` |
+| 1 | `lemma` | [listSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryCongruenceBigOperatorsNamespaced.lean/declarations/listsum.md) | 25 | `result-track:ea40f43f4c6fd4895bd1d3bb7601f78e4e40afdc79ee5ddb1c332c8554a636ef` |
+| 2 | `lemma` | [multisetSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryCongruenceBigOperatorsNamespaced.lean/declarations/multisetsum.md) | 31 | `result-track:9f121994b4eeef2e5ea6820ce7c17c52512b89136a97390ed7f1704cdcfc243e` |
+| 3 | `lemma` | [finsetSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryCongruenceBigOperatorsNamespaced.lean/declarations/finsetsum.md) | 37 | `result-track:7371d666299e477074290983293075a4ebfda79b6133a49ec6d58eff88e02e42` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

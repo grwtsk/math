@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinality.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,11 +63,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Fintype.isPrimePow_card_of_field](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinality.lean/declarations/fintype-isprimepow-card-of-field.md) | 37 | `result-track:3c93b10a5bcbde7f7e880523577fb99679ce31f33772f3a10158d2dbe4f9e68f` |
-| 2 | `theorem` | [Fintype.nonempty_field_iff](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinality.lean/declarations/fintype-nonempty-field-iff.md) | 49 | `result-track:bee60d89a6dc933f3aebe387bbd41b3827be020d755bb44b8e1bbb70d6402738` |
-| 3 | `theorem` | [Fintype.not_isField_of_card_not_prime_pow](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinality.lean/declarations/fintype-not-isfield-of-card-not-prime-pow.md) | 57 | `result-track:c00527b9e0bbc97dd171ef66ac74e632e0cba9172ae62d9e509826bd98592f01` |
-| 4 | `theorem` | [Infinite.nonempty_field](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinality.lean/declarations/infinite-nonempty-field.md) | 62 | `result-track:e6eecbc9cbc8ef43be15e42cc3f21672788076acaeb43cf0495466d5d14d2d2e` |
-| 5 | `theorem` | [Field.nonempty_iff](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinality.lean/declarations/field-nonempty-iff.md) | 68 | `result-track:4e20fca0218c34b9a65b6a371e8cc26955939856225e423e482aa1aa274d55bb` |
+| 1 | `theorem` | [Fintype.isPrimePow_card_of_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinality.lean/declarations/fintype-isprimepow-card-of-field.md) | 37 | `result-track:3c93b10a5bcbde7f7e880523577fb99679ce31f33772f3a10158d2dbe4f9e68f` |
+| 2 | `theorem` | [Fintype.nonempty_field_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinality.lean/declarations/fintype-nonempty-field-iff.md) | 49 | `result-track:bee60d89a6dc933f3aebe387bbd41b3827be020d755bb44b8e1bbb70d6402738` |
+| 3 | `theorem` | [Fintype.not_isField_of_card_not_prime_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinality.lean/declarations/fintype-not-isfield-of-card-not-prime-pow.md) | 57 | `result-track:c00527b9e0bbc97dd171ef66ac74e632e0cba9172ae62d9e509826bd98592f01` |
+| 4 | `theorem` | [Infinite.nonempty_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinality.lean/declarations/infinite-nonempty-field.md) | 62 | `result-track:e6eecbc9cbc8ef43be15e42cc3f21672788076acaeb43cf0495466d5d14d2d2e` |
+| 5 | `theorem` | [Field.nonempty_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinality.lean/declarations/field-nonempty-iff.md) | 68 | `result-track:4e20fca0218c34b9a65b6a371e8cc26955939856225e423e482aa1aa274d55bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

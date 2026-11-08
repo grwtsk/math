@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PredicatesNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PredicatesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PredicatesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PredicatesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [HilbertEnd](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PredicatesNamespaced.lean/declarations/hilbertend.md) | 21 | `declaration-track:7a658d9bd59e14ba520674691963c9d4a05ef32791577adcd5c423232b8cdcdc` |
-| 2 | `def` | [OperatorSelfAdjoint](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PredicatesNamespaced.lean/declarations/operatorselfadjoint.md) | 27 | `declaration-track:fbf1e57469ad31d01ee62665660903777a37df43eab7830b17906ff8cde40116` |
-| 3 | `def` | [OperatorIdempotent](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PredicatesNamespaced.lean/declarations/operatoridempotent.md) | 37 | `declaration-track:2e0daab3631bc25441550fe6b149b445d84bec968109a2545baa212919ca3c8b` |
-| 4 | `def` | [OperatorNonnegative](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PredicatesNamespaced.lean/declarations/operatornonnegative.md) | 45 | `declaration-track:ee60dcb61d4790215cf76b52439c3d637b210a660d8c58fd86a34d170894486e` |
-| 5 | `def` | [OperatorLE](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PredicatesNamespaced.lean/declarations/operatorle.md) | 54 | `declaration-track:6d4bfe7ac14091f38d3db886949930f01c5c1a0e123789d67d0930de9f3a722a` |
+| 1 | `abbrev` | [HilbertEnd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PredicatesNamespaced.lean/declarations/hilbertend.md) | 21 | `declaration-track:7a658d9bd59e14ba520674691963c9d4a05ef32791577adcd5c423232b8cdcdc` |
+| 2 | `def` | [OperatorSelfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PredicatesNamespaced.lean/declarations/operatorselfadjoint.md) | 27 | `declaration-track:fbf1e57469ad31d01ee62665660903777a37df43eab7830b17906ff8cde40116` |
+| 3 | `def` | [OperatorIdempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PredicatesNamespaced.lean/declarations/operatoridempotent.md) | 37 | `declaration-track:2e0daab3631bc25441550fe6b149b445d84bec968109a2545baa212919ca3c8b` |
+| 4 | `def` | [OperatorNonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PredicatesNamespaced.lean/declarations/operatornonnegative.md) | 45 | `declaration-track:ee60dcb61d4790215cf76b52439c3d637b210a660d8c58fd86a34d170894486e` |
+| 5 | `def` | [OperatorLE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PredicatesNamespaced.lean/declarations/operatorle.md) | 54 | `declaration-track:6d4bfe7ac14091f38d3db886949930f01c5c1a0e123789d67d0930de9f3a722a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

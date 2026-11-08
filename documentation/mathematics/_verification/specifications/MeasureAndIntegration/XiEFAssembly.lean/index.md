@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/XiEFAssembly.lean/index.md) · [Full source](../../../../MeasureAndIntegration/XiEFAssembly.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiEFAssembly.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiEFAssembly.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,16 +61,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fullLineIdentity_holds](../../../../MeasureAndIntegration/XiEFAssembly.lean/declarations/fulllineidentity-holds.md) | 34 | `result-track:b8be0bd77ee71768b40fe299943a5290fc0ae35548df42e65ca0bcc96cfb9516` |
-| 2 | `theorem` | [xiPrime_EF_lit_corr'](../../../../MeasureAndIntegration/XiEFAssembly.lean/declarations/xiprime-ef-lit-corr.md) | 39 | `result-track:2f13bf7cd182ee76771d5d33b561ea24bf7c566b75bf1a691bcbefb3d6408564` |
-| 3 | `def` | [xiCoeffJ'](../../../../MeasureAndIntegration/XiEFAssembly.lean/declarations/xicoeffj.md) | 49 | `declaration-track:9fafd3a21bfa618fc912858186caa9659a4c0e3aecebef665b06cfea70aab8b7` |
-| 4 | `def` | [CoeffFacts](../../../../MeasureAndIntegration/XiEFAssembly.lean/declarations/coefffacts.md) | 52 | `declaration-track:e9ebeead8ccf65a199bb2ddb1aebd6d4405ffd9cb92a1a74779fbf2259e4a382` |
-| 5 | `structure` | [GramBridgeFacts](../../../../MeasureAndIntegration/XiEFAssembly.lean/declarations/grambridgefacts.md) | 59 | `declaration-track:ff1f193ce0850c0c18f3d72980977001b81413e85f7a6d648b2d2c7cbf8470ee` |
-| 6 | `def` | [TestWeightFacts](../../../../MeasureAndIntegration/XiEFAssembly.lean/declarations/testweightfacts.md) | 86 | `declaration-track:d94aec909ecc281db69038390f7a43f407a90705aa3d4e2c65332a9463596ab9` |
-| 7 | `theorem` | [k_log_eq_zero](../../../../MeasureAndIntegration/XiEFAssembly.lean/declarations/k-log-eq-zero.md) | 106 | `result-track:b39f0f44c0e7a6a4f714f304d1dab00263bcbb3a52073d772feddaf2caea3763` |
-| 8 | `theorem` | [summable_coeff_mul_k](../../../../MeasureAndIntegration/XiEFAssembly.lean/declarations/summable-coeff-mul-k.md) | 117 | `result-track:733c27834d40bbffcf62d52ce813e154fa3716702dfa1ce73f5f0646e80b6816` |
-| 9 | `theorem` | [max_one_le_four_add](../../../../MeasureAndIntegration/XiEFAssembly.lean/declarations/max-one-le-four-add.md) | 131 | `result-track:17ef2750a05cba60810ed2568f697f186d4e5e7b847bd729e74dd23aaf953fa9` |
-| 10 | `theorem` | [xiEF_of](../../../../MeasureAndIntegration/XiEFAssembly.lean/declarations/xief-of.md) | 139 | `result-track:47c98f0cf95d8ee5de487316e3415244c8df60440cdadfd3cea8e8bddbf61d3c` |
+| 1 | `theorem` | [fullLineIdentity_holds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiEFAssembly.lean/declarations/fulllineidentity-holds.md) | 34 | `result-track:b8be0bd77ee71768b40fe299943a5290fc0ae35548df42e65ca0bcc96cfb9516` |
+| 2 | `theorem` | [xiPrime_EF_lit_corr'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiEFAssembly.lean/declarations/xiprime-ef-lit-corr.md) | 39 | `result-track:2f13bf7cd182ee76771d5d33b561ea24bf7c566b75bf1a691bcbefb3d6408564` |
+| 3 | `def` | [xiCoeffJ'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiEFAssembly.lean/declarations/xicoeffj.md) | 49 | `declaration-track:9fafd3a21bfa618fc912858186caa9659a4c0e3aecebef665b06cfea70aab8b7` |
+| 4 | `def` | [CoeffFacts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiEFAssembly.lean/declarations/coefffacts.md) | 52 | `declaration-track:e9ebeead8ccf65a199bb2ddb1aebd6d4405ffd9cb92a1a74779fbf2259e4a382` |
+| 5 | `structure` | [GramBridgeFacts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiEFAssembly.lean/declarations/grambridgefacts.md) | 59 | `declaration-track:ff1f193ce0850c0c18f3d72980977001b81413e85f7a6d648b2d2c7cbf8470ee` |
+| 6 | `def` | [TestWeightFacts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiEFAssembly.lean/declarations/testweightfacts.md) | 86 | `declaration-track:d94aec909ecc281db69038390f7a43f407a90705aa3d4e2c65332a9463596ab9` |
+| 7 | `theorem` | [k_log_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiEFAssembly.lean/declarations/k-log-eq-zero.md) | 106 | `result-track:b39f0f44c0e7a6a4f714f304d1dab00263bcbb3a52073d772feddaf2caea3763` |
+| 8 | `theorem` | [summable_coeff_mul_k](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiEFAssembly.lean/declarations/summable-coeff-mul-k.md) | 117 | `result-track:733c27834d40bbffcf62d52ce813e154fa3716702dfa1ce73f5f0646e80b6816` |
+| 9 | `theorem` | [max_one_le_four_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiEFAssembly.lean/declarations/max-one-le-four-add.md) | 131 | `result-track:17ef2750a05cba60810ed2568f697f186d4e5e7b847bd729e74dd23aaf953fa9` |
+| 10 | `theorem` | [xiEF_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiEFAssembly.lean/declarations/xief-of.md) | 139 | `result-track:47c98f0cf95d8ee5de487316e3415244c8df60440cdadfd3cea8e8bddbf61d3c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

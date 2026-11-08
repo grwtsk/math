@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectralMapNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralMapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralMapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralMapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [spectralMap](../../../../FunctionalAnalysis/SpectralMapNamespaced.lean/declarations/spectralmap.md) | 28 | `declaration-track:6e5ce3da9b42d83ae27a5a13965e5fd94504269098f0aeadce774946c6d822a7` |
-| 2 | `def` | [inverseSpectralMap](../../../../FunctionalAnalysis/SpectralMapNamespaced.lean/declarations/inversespectralmap.md) | 37 | `declaration-track:988b3768a07bac88a1ffb828694b2ffca8287ee4b7f5ab937ebfb22e6679d922` |
-| 3 | `lemma` | [spectralMap_inverse](../../../../FunctionalAnalysis/SpectralMapNamespaced.lean/declarations/spectralmap-inverse.md) | 40 | `result-track:399e2eef14384dde6d6a095f37dce90053372660ca9826562bfd2d6afcf76104` |
-| 4 | `lemma` | [inverseMap_spectralMap](../../../../FunctionalAnalysis/SpectralMapNamespaced.lean/declarations/inversemap-spectralmap.md) | 46 | `result-track:f2b43191ae439b61d5641c74ced385a832169cd38e9d558443380f4c1c271c57` |
-| 5 | `lemma` | [zero_maps_to_spectrum](../../../../FunctionalAnalysis/SpectralMapNamespaced.lean/declarations/zero-maps-to-spectrum.md) | 56 | `result-track:1f21febf6f8cb257c7877c34b6e4136a53b44fad3c22a00c200c9e0a46f89168` |
+| 1 | `def` | [spectralMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralMapNamespaced.lean/declarations/spectralmap.md) | 28 | `declaration-track:6e5ce3da9b42d83ae27a5a13965e5fd94504269098f0aeadce774946c6d822a7` |
+| 2 | `def` | [inverseSpectralMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralMapNamespaced.lean/declarations/inversespectralmap.md) | 37 | `declaration-track:988b3768a07bac88a1ffb828694b2ffca8287ee4b7f5ab937ebfb22e6679d922` |
+| 3 | `lemma` | [spectralMap_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralMapNamespaced.lean/declarations/spectralmap-inverse.md) | 40 | `result-track:399e2eef14384dde6d6a095f37dce90053372660ca9826562bfd2d6afcf76104` |
+| 4 | `lemma` | [inverseMap_spectralMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralMapNamespaced.lean/declarations/inversemap-spectralmap.md) | 46 | `result-track:f2b43191ae439b61d5641c74ced385a832169cd38e9d558443380f4c1c271c57` |
+| 5 | `lemma` | [zero_maps_to_spectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralMapNamespaced.lean/declarations/zero-maps-to-spectrum.md) | 56 | `result-track:1f21febf6f8cb257c7877c34b6e4136a53b44fad3c22a00c200c9e0a46f89168` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

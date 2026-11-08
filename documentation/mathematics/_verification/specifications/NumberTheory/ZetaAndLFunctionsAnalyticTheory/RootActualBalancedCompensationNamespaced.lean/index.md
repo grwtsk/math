@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualLowerStripInterior_quadratic_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespaced.lean/declarations/actuallowerstripinterior-quadratic-abs-le.md) | 26 | `result-track:60ae6ae3fbe418370a437d9e6d7dd52766b34f2ac6a2361960d2faf9b88e20da` |
-| 2 | `theorem` | [compensatedJointWork_sub_retained_balanced_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespaced.lean/declarations/compensatedjointwork-sub-retained-balanced-abs-le.md) | 45 | `result-track:61312d44efad58ecbc45493705dcb029d586895d8ff4590ae637de58a5839976` |
-| 3 | `theorem` | [compensatedJointWork_sub_retained_quadratic_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespaced.lean/declarations/compensatedjointwork-sub-retained-quadratic-abs-le.md) | 55 | `result-track:53afdf425e93e75cb7ade17798ffe9b0577fb62bc08a2efe858e6752ea368d43` |
+| 1 | `theorem` | [actualLowerStripInterior_quadratic_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespaced.lean/declarations/actuallowerstripinterior-quadratic-abs-le.md) | 26 | `result-track:60ae6ae3fbe418370a437d9e6d7dd52766b34f2ac6a2361960d2faf9b88e20da` |
+| 2 | `theorem` | [compensatedJointWork_sub_retained_balanced_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespaced.lean/declarations/compensatedjointwork-sub-retained-balanced-abs-le.md) | 45 | `result-track:61312d44efad58ecbc45493705dcb029d586895d8ff4590ae637de58a5839976` |
+| 3 | `theorem` | [compensatedJointWork_sub_retained_quadratic_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualBalancedCompensationNamespaced.lean/declarations/compensatedjointwork-sub-retained-quadratic-abs-le.md) | 55 | `result-track:53afdf425e93e75cb7ade17798ffe9b0577fb62bc08a2efe858e6752ea368d43` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

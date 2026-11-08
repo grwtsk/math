@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierCorpusNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierCorpusNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierCorpusNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierCorpusNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [algebra](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierCorpusNamespaced.lean/declarations/algebra.md) | 25 | `declaration-track:bd211494df8f1134e13acb90f2118ceeeec123c922830644a451e31f5cfd8f29` |
-| 2 | `def` | [boolInstance](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierCorpusNamespaced.lean/declarations/boolinstance.md) | 45 | `declaration-track:ca820046bb2190a9630de5046cc003c0e7e27c3f2656cbc7b9eadb7177f14e97` |
-| 3 | `def` | [links](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierCorpusNamespaced.lean/declarations/links.md) | 65 | `declaration-track:b2f0791719eb547b877434519ae3c6b3f380bf1c83fdccd97bc46aeec15a657f` |
-| 4 | `theorem` | [links_length](../../../../../ComputerScience/AlgorithmsInComputerScience/CarrierCorpusNamespaced.lean/declarations/links-length.md) | 67 | `result-track:9747635fe3f9d3ed929b0f5812d105556f86f44df99c1153a0e685daf220d3ea` |
+| 1 | `def` | [algebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierCorpusNamespaced.lean/declarations/algebra.md) | 25 | `declaration-track:bd211494df8f1134e13acb90f2118ceeeec123c922830644a451e31f5cfd8f29` |
+| 2 | `def` | [boolInstance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierCorpusNamespaced.lean/declarations/boolinstance.md) | 45 | `declaration-track:ca820046bb2190a9630de5046cc003c0e7e27c3f2656cbc7b9eadb7177f14e97` |
+| 3 | `def` | [links](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierCorpusNamespaced.lean/declarations/links.md) | 65 | `declaration-track:b2f0791719eb547b877434519ae3c6b3f380bf1c83fdccd97bc46aeec15a657f` |
+| 4 | `theorem` | [links_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CarrierCorpusNamespaced.lean/declarations/links-length.md) | 67 | `result-track:9747635fe3f9d3ed929b0f5812d105556f86f44df99c1153a0e685daf220d3ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

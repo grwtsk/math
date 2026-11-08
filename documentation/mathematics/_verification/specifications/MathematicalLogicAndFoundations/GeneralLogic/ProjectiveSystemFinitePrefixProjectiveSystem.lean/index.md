@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemFinitePrefixProjectiveSystem.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemFinitePrefixProjectiveSystem.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemFinitePrefixProjectiveSystem.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemFinitePrefixProjectiveSystem.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FinitePrefixProjectiveSystem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemFinitePrefixProjectiveSystem.lean/declarations/finiteprefixprojectivesystem.md) | 11 | `declaration-track:296efc9b8ad7540aea3eac2c09f313b38436d37788abbfb88f8537beccd428a1` |
+| 1 | `structure` | [FinitePrefixProjectiveSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemFinitePrefixProjectiveSystem.lean/declarations/finiteprefixprojectivesystem.md) | 11 | `declaration-track:296efc9b8ad7540aea3eac2c09f313b38436d37788abbfb88f8537beccd428a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

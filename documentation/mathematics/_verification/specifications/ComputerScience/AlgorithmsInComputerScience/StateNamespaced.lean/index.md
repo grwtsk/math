@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/StateNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/StateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OverlayElement](../../../../../ComputerScience/AlgorithmsInComputerScience/StateNamespaced.lean/declarations/overlayelement.md) | 17 | `declaration-track:5e314a4b83b31c947efc35d6f1f4ed1f37f699794463ad022f90f73177afa338` |
-| 2 | `structure` | [WorkPackage](../../../../../ComputerScience/AlgorithmsInComputerScience/StateNamespaced.lean/declarations/workpackage.md) | 25 | `declaration-track:0c7015d25a8dfe0ffddd8b85d9c469ccbd172a0cd575c3e63ca6442498c38633` |
-| 3 | `structure` | [State](../../../../../ComputerScience/AlgorithmsInComputerScience/StateNamespaced.lean/declarations/state.md) | 38 | `declaration-track:3d70edc47e5d89cc243e60375f047a311cd068d4c69c76735ccfdc9625a91698` |
+| 1 | `structure` | [OverlayElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StateNamespaced.lean/declarations/overlayelement.md) | 17 | `declaration-track:5e314a4b83b31c947efc35d6f1f4ed1f37f699794463ad022f90f73177afa338` |
+| 2 | `structure` | [WorkPackage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StateNamespaced.lean/declarations/workpackage.md) | 25 | `declaration-track:0c7015d25a8dfe0ffddd8b85d9c469ccbd172a0cd575c3e63ca6442498c38633` |
+| 3 | `structure` | [State](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StateNamespaced.lean/declarations/state.md) | 38 | `declaration-track:3d70edc47e5d89cc243e60375f047a311cd068d4c69c76735ccfdc9625a91698` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

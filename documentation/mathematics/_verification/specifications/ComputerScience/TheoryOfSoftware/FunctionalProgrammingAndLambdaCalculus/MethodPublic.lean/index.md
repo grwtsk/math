@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MethodPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MethodPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MethodPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MethodPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Method](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MethodPublic.lean/declarations/method.md) | 41 | `declaration-track:7792ecf2219e36ff840018ec58a4b5798a105f87f34fc5b3d76e395884be891f` |
-| 2 | `def` | [ofString?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MethodPublic.lean/declarations/ofstring-source-edition-2.md) | 288 | `declaration-track:52aad89294499606f712d195daa2296a38dd4378e9b96c1469df37162a6f317a` |
-| 3 | `def` | [ofString!](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MethodPublic.lean/declarations/ofstring.md) | 334 | `declaration-track:292d83aff82f0e15a197beb412765c89147f4469067a9ca09aff12836c32b25d` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MethodPublic.lean/declarations/instance-source-edition-2.md) | 339 | `declaration-track:fb51c83ff5e3e0e379da386f372f5c02c514100fa2c9adfee2e1864a14ba9feb` |
-| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MethodPublic.lean/declarations/instance.md) | 382 | `declaration-track:64dd5dab5493b2cc7ef4d964a3d4bfe539bc32b4d793df232eff266eacf594aa` |
+| 1 | `inductive` | [Method](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MethodPublic.lean/declarations/method.md) | 41 | `declaration-track:7792ecf2219e36ff840018ec58a4b5798a105f87f34fc5b3d76e395884be891f` |
+| 2 | `def` | [ofString?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MethodPublic.lean/declarations/ofstring-source-edition-2.md) | 288 | `declaration-track:52aad89294499606f712d195daa2296a38dd4378e9b96c1469df37162a6f317a` |
+| 3 | `def` | [ofString!](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MethodPublic.lean/declarations/ofstring.md) | 334 | `declaration-track:292d83aff82f0e15a197beb412765c89147f4469067a9ca09aff12836c32b25d` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MethodPublic.lean/declarations/instance-source-edition-2.md) | 339 | `declaration-track:fb51c83ff5e3e0e379da386f372f5c02c514100fa2c9adfee2e1864a14ba9feb` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MethodPublic.lean/declarations/instance.md) | 382 | `declaration-track:64dd5dab5493b2cc7ef4d964a3d4bfe539bc32b4d793df232eff266eacf594aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

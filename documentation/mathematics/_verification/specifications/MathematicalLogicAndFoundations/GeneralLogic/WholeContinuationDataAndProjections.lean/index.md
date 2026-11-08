@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeContinuationDataAndProjections.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeContinuationDataAndProjections.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeContinuationDataAndProjections.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeContinuationDataAndProjections.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AnalyticContinuationMap](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeContinuationDataAndProjections.lean/declarations/analyticcontinuationmap.md) | 37 | `declaration-track:390d58603c1ac058416f33b2acc257a28d61ee03637f20e23ca4ce44cc93a107` |
-| 2 | `theorem` | [continuation_map_respects_differential](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeContinuationDataAndProjections.lean/declarations/continuation-map-respects-differential.md) | 48 | `result-track:12016493abd732a726ab6067deeb0bd6cdf6073ddc3379aeaccbcac4895fe6b1` |
-| 3 | `theorem` | [continuation_map_has_estimates](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeContinuationDataAndProjections.lean/declarations/continuation-map-has-estimates.md) | 53 | `result-track:21fdabd6acf837da0fa1e8485234110f722658f81cbee636d382ca0c8ebfc69f` |
+| 1 | `structure` | [AnalyticContinuationMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeContinuationDataAndProjections.lean/declarations/analyticcontinuationmap.md) | 37 | `declaration-track:390d58603c1ac058416f33b2acc257a28d61ee03637f20e23ca4ce44cc93a107` |
+| 2 | `theorem` | [continuation_map_respects_differential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeContinuationDataAndProjections.lean/declarations/continuation-map-respects-differential.md) | 48 | `result-track:12016493abd732a726ab6067deeb0bd6cdf6073ddc3379aeaccbcac4895fe6b1` |
+| 3 | `theorem` | [continuation_map_has_estimates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeContinuationDataAndProjections.lean/declarations/continuation-map-has-estimates.md) | 53 | `result-track:21fdabd6acf837da0fa1e8485234110f722658f81cbee636d382ca0c8ebfc69f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

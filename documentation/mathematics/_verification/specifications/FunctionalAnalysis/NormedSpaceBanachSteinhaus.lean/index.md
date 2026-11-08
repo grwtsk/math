@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/NormedSpaceBanachSteinhaus.lean/index.md) · [Full source](../../../../FunctionalAnalysis/NormedSpaceBanachSteinhaus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceBanachSteinhaus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceBanachSteinhaus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [banach_steinhaus](../../../../FunctionalAnalysis/NormedSpaceBanachSteinhaus.lean/declarations/banach-steinhaus.md) | 33 | `result-track:5fa6257eaacd82f8b9657fbc16d542f28d11aa2babf1e6fdc340fbb406def2c7` |
-| 2 | `theorem` | [banach_steinhaus_iSup_nnnorm](../../../../FunctionalAnalysis/NormedSpaceBanachSteinhaus.lean/declarations/banach-steinhaus-isup-nnnorm.md) | 46 | `result-track:dace6d9a79e5b2b2e96f723fd315d4a751248bb3ddd920deeefc13e47bb398ee` |
-| 3 | `abbrev` | [continuousLinearMapOfTendsto](../../../../FunctionalAnalysis/NormedSpaceBanachSteinhaus.lean/declarations/continuouslinearmapoftendsto.md) | 61 | `declaration-track:47f72e56051e524417428b1060ede48060925c51ab3c6c905b244062be1b94c2` |
+| 1 | `theorem` | [banach_steinhaus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceBanachSteinhaus.lean/declarations/banach-steinhaus.md) | 33 | `result-track:5fa6257eaacd82f8b9657fbc16d542f28d11aa2babf1e6fdc340fbb406def2c7` |
+| 2 | `theorem` | [banach_steinhaus_iSup_nnnorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceBanachSteinhaus.lean/declarations/banach-steinhaus-isup-nnnorm.md) | 46 | `result-track:dace6d9a79e5b2b2e96f723fd315d4a751248bb3ddd920deeefc13e47bb398ee` |
+| 3 | `abbrev` | [continuousLinearMapOfTendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceBanachSteinhaus.lean/declarations/continuouslinearmapoftendsto.md) | 61 | `declaration-track:47f72e56051e524417428b1060ede48060925c51ab3c6c905b244062be1b94c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

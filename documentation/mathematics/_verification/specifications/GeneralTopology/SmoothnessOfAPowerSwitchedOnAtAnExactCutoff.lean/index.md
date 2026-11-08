@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SmoothnessOfAPowerSwitchedOnAtAnExactCutoff.lean/index.md) · [Full source](../../../../GeneralTopology/SmoothnessOfAPowerSwitchedOnAtAnExactCutoff.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SmoothnessOfAPowerSwitchedOnAtAnExactCutoff.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SmoothnessOfAPowerSwitchedOnAtAnExactCutoff.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [positivePower](../../../../GeneralTopology/SmoothnessOfAPowerSwitchedOnAtAnExactCutoff.lean/declarations/positivepower.md) | 24 | `declaration-track:a1deb00d092ecbb99b2be36a64d231f3fb7e830e8f575de0d2565372d09dec56` |
-| 2 | `theorem` | [positivePower_continuous](../../../../GeneralTopology/SmoothnessOfAPowerSwitchedOnAtAnExactCutoff.lean/declarations/positivepower-continuous.md) | 27 | `result-track:2291050d4afa53ef3366370648db38d71e7d88632920f728e03cfb28d4cccd0e` |
-| 3 | `theorem` | [positivePower_hasDerivAt](../../../../GeneralTopology/SmoothnessOfAPowerSwitchedOnAtAnExactCutoff.lean/declarations/positivepower-hasderivat.md) | 36 | `result-track:f7cda626840f866485ff7d0dfc4bb5a0e964f1c223a1e6173a2ef97383249b16` |
-| 4 | `theorem` | [positivePower_deriv](../../../../GeneralTopology/SmoothnessOfAPowerSwitchedOnAtAnExactCutoff.lean/declarations/positivepower-deriv.md) | 55 | `result-track:98ecff83fe4e38a8f92cf3ad3cbdecefea924774583b9742475f2562fae69665` |
-| 5 | `theorem` | [positivePower_contDiff](../../../../GeneralTopology/SmoothnessOfAPowerSwitchedOnAtAnExactCutoff.lean/declarations/positivepower-contdiff.md) | 60 | `result-track:a249e619ed09b6870b009544f7d56963c1dd4a31044005af86f49be52ff600b7` |
-| 6 | `theorem` | [positivePower_five_contDiff_four](../../../../GeneralTopology/SmoothnessOfAPowerSwitchedOnAtAnExactCutoff.lean/declarations/positivepower-five-contdiff-four.md) | 73 | `result-track:4a639ddea1085698e2163f7686232eed44e4e53e3abe5e7981a1bef12658df48` |
+| 1 | `def` | [positivePower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SmoothnessOfAPowerSwitchedOnAtAnExactCutoff.lean/declarations/positivepower.md) | 24 | `declaration-track:a1deb00d092ecbb99b2be36a64d231f3fb7e830e8f575de0d2565372d09dec56` |
+| 2 | `theorem` | [positivePower_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SmoothnessOfAPowerSwitchedOnAtAnExactCutoff.lean/declarations/positivepower-continuous.md) | 27 | `result-track:2291050d4afa53ef3366370648db38d71e7d88632920f728e03cfb28d4cccd0e` |
+| 3 | `theorem` | [positivePower_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SmoothnessOfAPowerSwitchedOnAtAnExactCutoff.lean/declarations/positivepower-hasderivat.md) | 36 | `result-track:f7cda626840f866485ff7d0dfc4bb5a0e964f1c223a1e6173a2ef97383249b16` |
+| 4 | `theorem` | [positivePower_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SmoothnessOfAPowerSwitchedOnAtAnExactCutoff.lean/declarations/positivepower-deriv.md) | 55 | `result-track:98ecff83fe4e38a8f92cf3ad3cbdecefea924774583b9742475f2562fae69665` |
+| 5 | `theorem` | [positivePower_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SmoothnessOfAPowerSwitchedOnAtAnExactCutoff.lean/declarations/positivepower-contdiff.md) | 60 | `result-track:a249e619ed09b6870b009544f7d56963c1dd4a31044005af86f49be52ff600b7` |
+| 6 | `theorem` | [positivePower_five_contDiff_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SmoothnessOfAPowerSwitchedOnAtAnExactCutoff.lean/declarations/positivepower-five-contdiff-four.md) | 73 | `result-track:4a639ddea1085698e2163f7686232eed44e4e53e3abe5e7981a1bef12658df48` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

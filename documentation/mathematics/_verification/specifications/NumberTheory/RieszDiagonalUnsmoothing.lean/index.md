@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/RieszDiagonalUnsmoothing.lean/index.md) · [Full source](../../../../NumberTheory/RieszDiagonalUnsmoothing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RieszDiagonalUnsmoothing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RieszDiagonalUnsmoothing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.NormalizedRieszFiniteEvaluation`](../../../../NumberTheory/NormalizedRieszFiniteEvaluation.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.NormalizedRieszFiniteEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedRieszFiniteEvaluation.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Analysis.SpecificLimits.Basic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [radius](../../../../NumberTheory/RieszDiagonalUnsmoothing.lean/declarations/radius.md) | 17 | `declaration-track:11ed297f3df19828971708ce2c1f75ca273fe0ec5119f191c20dcfd2e60f0b34` |
-| 2 | `theorem` | [radius_pos](../../../../NumberTheory/RieszDiagonalUnsmoothing.lean/declarations/radius-pos.md) | 19 | `result-track:d8b6baf977b8ab591a2b78819473f8216b3ab474c764eb12fcb43375e4f565dd` |
-| 3 | `theorem` | [radius_le_half](../../../../NumberTheory/RieszDiagonalUnsmoothing.lean/declarations/radius-le-half.md) | 21 | `result-track:568335e16e272a289e04fdccbca0f6b30ff6d629d48df5e349b979886d2a201b` |
-| 4 | `theorem` | [radius_tendsto_zero](../../../../NumberTheory/RieszDiagonalUnsmoothing.lean/declarations/radius-tendsto-zero.md) | 26 | `result-track:6d89157c463fa0f3aa616ce78ccb6c5648f68fd19a00b710fbf90eb1d9bf5531` |
-| 5 | `theorem` | [exists_diagonal_height](../../../../NumberTheory/RieszDiagonalUnsmoothing.lean/declarations/exists-diagonal-height.md) | 34 | `result-track:386a7469a24e6dffa65befe41296bd0bb77120ee67301b6b2c23dc04be62eda6` |
-| 6 | `theorem` | [diagonal_tendsto_psiHalf](../../../../NumberTheory/RieszDiagonalUnsmoothing.lean/declarations/diagonal-tendsto-psihalf.md) | 46 | `result-track:7992b09e04d369cf0f231acde136f3b6e8214369d1aa0f6badaace084c0462ed` |
+| 1 | `def` | [radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RieszDiagonalUnsmoothing.lean/declarations/radius.md) | 17 | `declaration-track:11ed297f3df19828971708ce2c1f75ca273fe0ec5119f191c20dcfd2e60f0b34` |
+| 2 | `theorem` | [radius_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RieszDiagonalUnsmoothing.lean/declarations/radius-pos.md) | 19 | `result-track:d8b6baf977b8ab591a2b78819473f8216b3ab474c764eb12fcb43375e4f565dd` |
+| 3 | `theorem` | [radius_le_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RieszDiagonalUnsmoothing.lean/declarations/radius-le-half.md) | 21 | `result-track:568335e16e272a289e04fdccbca0f6b30ff6d629d48df5e349b979886d2a201b` |
+| 4 | `theorem` | [radius_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RieszDiagonalUnsmoothing.lean/declarations/radius-tendsto-zero.md) | 26 | `result-track:6d89157c463fa0f3aa616ce78ccb6c5648f68fd19a00b710fbf90eb1d9bf5531` |
+| 5 | `theorem` | [exists_diagonal_height](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RieszDiagonalUnsmoothing.lean/declarations/exists-diagonal-height.md) | 34 | `result-track:386a7469a24e6dffa65befe41296bd0bb77120ee67301b6b2c23dc04be62eda6` |
+| 6 | `theorem` | [diagonal_tendsto_psiHalf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RieszDiagonalUnsmoothing.lean/declarations/diagonal-tendsto-psihalf.md) | 46 | `result-track:7992b09e04d369cf0f231acde136f3b6e8214369d1aa0f6badaace084c0462ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

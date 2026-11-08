@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FlatMapPublicIter.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FlatMapPublicIter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FlatMapPublicIter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FlatMapPublicIter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Iter.flatMapAfterM](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FlatMapPublicIter.lean/declarations/iter-flatmapafterm.md) | 30 | `declaration-track:ba3d18f97dd50c3c6bcbf379b1b1afc7f8b47e6f6f313cb7525c3ffe45b1c347` |
-| 2 | `def` | [Iter.flatMapM](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FlatMapPublicIter.lean/declarations/iter-flatmapm.md) | 36 | `declaration-track:2d0e5ac4706f30a131ed158018cfa16177cf8671c932fdd0f20f4249df278b2b` |
-| 3 | `def` | [Iter.flatMapAfter](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FlatMapPublicIter.lean/declarations/iter-flatmapafter.md) | 42 | `declaration-track:ccedbd7d09027fb28909ba24119837822a74544cee1b53ddffe979f9da90e566` |
-| 4 | `def` | [Iter.flatMap](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FlatMapPublicIter.lean/declarations/iter-flatmap.md) | 48 | `declaration-track:a8954f2a036c9bf57e024b454a2e2e94f8342b56760e4c8f28f1ae5879c4e80f` |
+| 1 | `def` | [Iter.flatMapAfterM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FlatMapPublicIter.lean/declarations/iter-flatmapafterm.md) | 30 | `declaration-track:ba3d18f97dd50c3c6bcbf379b1b1afc7f8b47e6f6f313cb7525c3ffe45b1c347` |
+| 2 | `def` | [Iter.flatMapM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FlatMapPublicIter.lean/declarations/iter-flatmapm.md) | 36 | `declaration-track:2d0e5ac4706f30a131ed158018cfa16177cf8671c932fdd0f20f4249df278b2b` |
+| 3 | `def` | [Iter.flatMapAfter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FlatMapPublicIter.lean/declarations/iter-flatmapafter.md) | 42 | `declaration-track:ccedbd7d09027fb28909ba24119837822a74544cee1b53ddffe979f9da90e566` |
+| 4 | `def` | [Iter.flatMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FlatMapPublicIter.lean/declarations/iter-flatmap.md) | 48 | `declaration-track:a8954f2a036c9bf57e024b454a2e2e94f8342b56760e4c8f28f1ae5879c4e80f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

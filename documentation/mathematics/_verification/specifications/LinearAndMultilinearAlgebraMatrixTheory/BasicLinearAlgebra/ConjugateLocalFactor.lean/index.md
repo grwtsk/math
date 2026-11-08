@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConjugateLocalFactor.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConjugateLocalFactor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConjugateLocalFactor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConjugateLocalFactor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pencil_conjugate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConjugateLocalFactor.lean/declarations/pencil-conjugate.md) | 11 | `result-track:d15191989eaab0ca7678c6071b98cdfde6a68a12a0d056282fec04606f80219e` |
-| 2 | `theorem` | [det_pencil_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConjugateLocalFactor.lean/declarations/det-pencil-eq.md) | 23 | `result-track:a3f3e236917380d809730cfb3965c67f9991a4d23c89c1c2033a0c8c9b52aba8` |
+| 1 | `theorem` | [pencil_conjugate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConjugateLocalFactor.lean/declarations/pencil-conjugate.md) | 11 | `result-track:d15191989eaab0ca7678c6071b98cdfde6a68a12a0d056282fec04606f80219e` |
+| 2 | `theorem` | [det_pencil_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConjugateLocalFactor.lean/declarations/det-pencil-eq.md) | 23 | `result-track:a3f3e236917380d809730cfb3965c67f9991a4d23c89c1c2033a0c8c9b52aba8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

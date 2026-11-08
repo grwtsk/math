@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [HomOrthogonal](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/declarations/homorthogonal.md) | 51 | `declaration-track:36ba36ed0bdec70e9911be54b8355e77237418a76af12aa4abc1138834ba80ce` |
-| 2 | `theorem` | [eq_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/declarations/eq-zero.md) | 58 | `result-track:da82862c4090890b150497351c827ffe3f738904628db99188280b5ed018e456` |
-| 3 | `def` | [matrixDecomposition](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/declarations/matrixdecomposition.md) | 72 | `declaration-track:9845c3e1f80f59af30ea5947a93cfc86e35c43c51f03c077cfc1ee519b2a10c4` |
-| 4 | `def` | [matrixDecompositionAddEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/declarations/matrixdecompositionaddequiv.md) | 113 | `declaration-track:3af933b1206fee6649507bbb13b9a814e2021305deed8a69860512b8c38583eb` |
-| 5 | `theorem` | [matrixDecomposition_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/declarations/matrixdecomposition-id.md) | 125 | `result-track:5366ea32049b386ab4dfb332bef626eeb56f3d13b30088e0dcba9b797453c6ab` |
-| 6 | `theorem` | [matrixDecomposition_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/declarations/matrixdecomposition-comp.md) | 141 | `result-track:ca1175b18d9e01633433ef9ae2dad95cdc293007139e1ae79466d8dba9622bd3` |
-| 7 | `def` | [matrixDecompositionLinearEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/declarations/matrixdecompositionlinearequiv.md) | 168 | `declaration-track:a2e34d6ef2175254a4e2c3aa7c15681df131723ad94ad845a6765e9fe5c3b71e` |
-| 8 | `theorem` | [equiv_of_iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/declarations/equiv-of-iso.md) | 192 | `result-track:1b7efcdb2a893baf91347eee12cfb132d8aa6f4597ec0f353ad7657df940637a` |
+| 1 | `def` | [HomOrthogonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/declarations/homorthogonal.md) | 51 | `declaration-track:36ba36ed0bdec70e9911be54b8355e77237418a76af12aa4abc1138834ba80ce` |
+| 2 | `theorem` | [eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/declarations/eq-zero.md) | 58 | `result-track:da82862c4090890b150497351c827ffe3f738904628db99188280b5ed018e456` |
+| 3 | `def` | [matrixDecomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/declarations/matrixdecomposition.md) | 72 | `declaration-track:9845c3e1f80f59af30ea5947a93cfc86e35c43c51f03c077cfc1ee519b2a10c4` |
+| 4 | `def` | [matrixDecompositionAddEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/declarations/matrixdecompositionaddequiv.md) | 113 | `declaration-track:3af933b1206fee6649507bbb13b9a814e2021305deed8a69860512b8c38583eb` |
+| 5 | `theorem` | [matrixDecomposition_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/declarations/matrixdecomposition-id.md) | 125 | `result-track:5366ea32049b386ab4dfb332bef626eeb56f3d13b30088e0dcba9b797453c6ab` |
+| 6 | `theorem` | [matrixDecomposition_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/declarations/matrixdecomposition-comp.md) | 141 | `result-track:ca1175b18d9e01633433ef9ae2dad95cdc293007139e1ae79466d8dba9622bd3` |
+| 7 | `def` | [matrixDecompositionLinearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/declarations/matrixdecompositionlinearequiv.md) | 168 | `declaration-track:a2e34d6ef2175254a4e2c3aa7c15681df131723ad94ad845a6765e9fe5c3b71e` |
+| 8 | `theorem` | [equiv_of_iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HomOrthogonal.lean/declarations/equiv-of-iso.md) | 192 | `result-track:1b7efcdb2a893baf91347eee12cfb132d8aa6f4597ec0f353ad7657df940637a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

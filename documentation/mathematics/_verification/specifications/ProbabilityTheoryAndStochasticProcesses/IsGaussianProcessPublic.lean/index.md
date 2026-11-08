@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [orderEmbOfFinWithBot](../../../../ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/declarations/orderemboffinwithbot.md) | 58 | `declaration-track:8a70b8b40a1b9bd9d22a786e27205d4c1aca8be6640ade4be32275ec21e2b8bd` |
-| 2 | `lemma` | [orderEmbOfFinWithBot_zero](../../../../ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/declarations/orderemboffinwithbot-zero.md) | 64 | `result-track:2ff8a0c8b37b445fdfbace705de89682cc71098ebff4bb6e3e2b4d1c1dda0fa7` |
-| 3 | `lemma` | [orderEmbOfFinWithBot_of_ne_zero](../../../../ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/declarations/orderemboffinwithbot-of-ne-zero.md) | 66 | `result-track:25df137548f8f04eabb285c7ebaf9dc10b2501df9ac0ba7064a6a1fecdff9f19` |
-| 4 | `lemma` | [orderEmbOfFinWithBot_succ](../../../../ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/declarations/orderemboffinwithbot-succ.md) | 71 | `result-track:890f3105ab90c8ebd3c34e557adc3d27708b5dc2e59e4d84e7641ffdd4d35aa8` |
-| 5 | `lemma` | [monotone_orderEmbOfFinWithBot](../../../../ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/declarations/monotone-orderemboffinwithbot.md) | 78 | `result-track:bc694b9f5c5d15db741b5d748daa09c41cbaff3c326f81a8f0ae2fcac6b96fe9` |
-| 6 | `def` | [incrementsToRestrict](../../../../ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/declarations/incrementstorestrict.md) | 91 | `declaration-track:e375c14dda2aa741250d81d4dc25aa388c981c2d41e37a287accbcd7da4e8861` |
-| 7 | `lemma` | [incrementsToRestrict_increments_orderEmbOfFinWithBot_ae_eq_restrict](../../../../ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/declarations/incrementstorestrict-increments-orderemboffinwithbot-ae-eq-restrict.md) | 99 | `result-track:4b69e700d53b1c651773724a07d8dafa5acc0646783e35bbc979db140be75183` |
-| 8 | `lemma` | [HasIndepIncrements.isGaussianProcess](../../../../ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/declarations/hasindepincrements-isgaussianprocess.md) | 115 | `result-track:057d4fccb35d9675a9d85cdf4ab2ef24543457a42b738b41ca76a42fbfe92d15` |
+| 1 | `def` | [orderEmbOfFinWithBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/declarations/orderemboffinwithbot.md) | 58 | `declaration-track:8a70b8b40a1b9bd9d22a786e27205d4c1aca8be6640ade4be32275ec21e2b8bd` |
+| 2 | `lemma` | [orderEmbOfFinWithBot_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/declarations/orderemboffinwithbot-zero.md) | 64 | `result-track:2ff8a0c8b37b445fdfbace705de89682cc71098ebff4bb6e3e2b4d1c1dda0fa7` |
+| 3 | `lemma` | [orderEmbOfFinWithBot_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/declarations/orderemboffinwithbot-of-ne-zero.md) | 66 | `result-track:25df137548f8f04eabb285c7ebaf9dc10b2501df9ac0ba7064a6a1fecdff9f19` |
+| 4 | `lemma` | [orderEmbOfFinWithBot_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/declarations/orderemboffinwithbot-succ.md) | 71 | `result-track:890f3105ab90c8ebd3c34e557adc3d27708b5dc2e59e4d84e7641ffdd4d35aa8` |
+| 5 | `lemma` | [monotone_orderEmbOfFinWithBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/declarations/monotone-orderemboffinwithbot.md) | 78 | `result-track:bc694b9f5c5d15db741b5d748daa09c41cbaff3c326f81a8f0ae2fcac6b96fe9` |
+| 6 | `def` | [incrementsToRestrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/declarations/incrementstorestrict.md) | 91 | `declaration-track:e375c14dda2aa741250d81d4dc25aa388c981c2d41e37a287accbcd7da4e8861` |
+| 7 | `lemma` | [incrementsToRestrict_increments_orderEmbOfFinWithBot_ae_eq_restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/declarations/incrementstorestrict-increments-orderemboffinwithbot-ae-eq-restrict.md) | 99 | `result-track:4b69e700d53b1c651773724a07d8dafa5acc0646783e35bbc979db140be75183` |
+| 8 | `lemma` | [HasIndepIncrements.isGaussianProcess](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IsGaussianProcessPublic.lean/declarations/hasindepincrements-isgaussianprocess.md) | 115 | `result-track:057d4fccb35d9675a9d85cdf4ab2ef24543457a42b738b41ca76a42fbfe92d15` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

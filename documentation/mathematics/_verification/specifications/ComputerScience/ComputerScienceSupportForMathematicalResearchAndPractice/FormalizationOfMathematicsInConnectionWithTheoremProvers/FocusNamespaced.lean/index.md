@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FocusNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FocusNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FocusNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FocusNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -65,10 +65,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [UnifiedSEAPayload](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FocusNamespaced.lean/declarations/unifiedseapayload.md) | 28 | `declaration-track:f5a8d7cad0e2548346d4b98647a15ec927974c360ce91e1be6868fdd7fb51cb4` |
-| 2 | `structure` | [UnifiedCutBinding](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FocusNamespaced.lean/declarations/unifiedcutbinding.md) | 62 | `declaration-track:b38a19f2759e2824a678cf241c73234966e5c726eadec03a56bb371164d24d84` |
-| 3 | `structure` | [CertifiedSymmetryFixedTallyLiftedSEAReuse](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FocusNamespaced.lean/declarations/certifiedsymmetryfixedtallyliftedseareuse.md) | 71 | `declaration-track:5eb1f5d2f27a297d683bd394bef7e4dc8190ff9ccc237e27730fdd4c805b23bb` |
-| 4 | `structure` | [UnifiedCandidate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FocusNamespaced.lean/declarations/unifiedcandidate.md) | 123 | `declaration-track:e3b44931c7d23b43d039a7421068d0f5d168ab6afa48297eec43a03a765af3c5` |
+| 1 | `structure` | [UnifiedSEAPayload](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FocusNamespaced.lean/declarations/unifiedseapayload.md) | 28 | `declaration-track:f5a8d7cad0e2548346d4b98647a15ec927974c360ce91e1be6868fdd7fb51cb4` |
+| 2 | `structure` | [UnifiedCutBinding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FocusNamespaced.lean/declarations/unifiedcutbinding.md) | 62 | `declaration-track:b38a19f2759e2824a678cf241c73234966e5c726eadec03a56bb371164d24d84` |
+| 3 | `structure` | [CertifiedSymmetryFixedTallyLiftedSEAReuse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FocusNamespaced.lean/declarations/certifiedsymmetryfixedtallyliftedseareuse.md) | 71 | `declaration-track:5eb1f5d2f27a297d683bd394bef7e4dc8190ff9ccc237e27730fdd4c805b23bb` |
+| 4 | `structure` | [UnifiedCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FocusNamespaced.lean/declarations/unifiedcandidate.md) | 123 | `declaration-track:e3b44931c7d23b43d039a7421068d0f5d168ab6afa48297eec43a03a765af3c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceBoundaryMangoldtWindowEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceBoundaryMangoldtWindowEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBoundaryMangoldtWindowEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBoundaryMangoldtWindowEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [boundary_second_eq_reflected_test](../../../../MeasureAndIntegration/SourceBoundaryMangoldtWindowEdition1.lean/declarations/boundary-second-eq-reflected-test.md) | 24 | `result-track:5186a43c06fa8cba1444a44d7cb29c39ae1e84b94850ba95a240ad163f815002` |
-| 2 | `theorem` | [boundary_second_contDiff](../../../../MeasureAndIntegration/SourceBoundaryMangoldtWindowEdition1.lean/declarations/boundary-second-contdiff.md) | 38 | `result-track:b349198603c694d4a0ae435474370ecdbc826be3f92da89f986c7bc5bafc6743` |
-| 3 | `theorem` | [boundary_third_eq_reflected_deriv](../../../../MeasureAndIntegration/SourceBoundaryMangoldtWindowEdition1.lean/declarations/boundary-third-eq-reflected-deriv.md) | 47 | `result-track:bfd98487e6cff2931e4c9350a5608dbe5578199550f16a8d6e3f6389a92a9549` |
-| 4 | `theorem` | [peanoScale_mul_mangoldtLogWindow_eq_centered_boundary_flux](../../../../MeasureAndIntegration/SourceBoundaryMangoldtWindowEdition1.lean/declarations/peanoscale-mul-mangoldtlogwindow-eq-centered-boundary-flux.md) | 63 | `result-track:d98a29ee6031f98f20dfbdfe410494e8dac560b431c72d21e4f408f3634b96dd` |
+| 1 | `theorem` | [boundary_second_eq_reflected_test](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBoundaryMangoldtWindowEdition1.lean/declarations/boundary-second-eq-reflected-test.md) | 24 | `result-track:5186a43c06fa8cba1444a44d7cb29c39ae1e84b94850ba95a240ad163f815002` |
+| 2 | `theorem` | [boundary_second_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBoundaryMangoldtWindowEdition1.lean/declarations/boundary-second-contdiff.md) | 38 | `result-track:b349198603c694d4a0ae435474370ecdbc826be3f92da89f986c7bc5bafc6743` |
+| 3 | `theorem` | [boundary_third_eq_reflected_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBoundaryMangoldtWindowEdition1.lean/declarations/boundary-third-eq-reflected-deriv.md) | 47 | `result-track:bfd98487e6cff2931e4c9350a5608dbe5578199550f16a8d6e3f6389a92a9549` |
+| 4 | `theorem` | [peanoScale_mul_mangoldtLogWindow_eq_centered_boundary_flux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBoundaryMangoldtWindowEdition1.lean/declarations/peanoscale-mul-mangoldtlogwindow-eq-centered-boundary-flux.md) | 63 | `result-track:d98a29ee6031f98f20dfbdfe410494e8dac560b431c72d21e4f408f3634b96dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

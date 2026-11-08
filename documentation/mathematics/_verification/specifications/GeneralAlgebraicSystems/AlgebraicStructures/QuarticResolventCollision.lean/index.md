@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/QuarticResolventCollision.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/QuarticResolventCollision.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/QuarticResolventCollision.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/QuarticResolventCollision.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.PolygonalQuarticSeparable`](../../../../../CommutativeAlgebra/PolygonalQuarticSeparable.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.PolygonalQuarticSeparable`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticSeparable.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [adjacencyOne_eq_adjacencyTwo_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/QuarticResolventCollision.lean/declarations/adjacencyone-eq-adjacencytwo-iff.md) | 23 | `result-track:0565013104c3fc8d2bb4c66cd30afbf36d7803ecf01205528682630b7de4f593` |
-| 2 | `theorem` | [adjacencyOne_eq_adjacencyThree_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/QuarticResolventCollision.lean/declarations/adjacencyone-eq-adjacencythree-iff.md) | 29 | `result-track:3ad70f1dd8aeed4b79f800225cdd8c6f0e5f199c28f0fb869d1de858a0224216` |
-| 3 | `theorem` | [adjacencyTwo_eq_adjacencyThree_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/QuarticResolventCollision.lean/declarations/adjacencytwo-eq-adjacencythree-iff.md) | 35 | `result-track:05238bae5d349d82dc271cbf3ad2f635784aab7e3dd33db0911bb3da78f792c8` |
-| 4 | `theorem` | [adjacency_pairwise_distinct_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/QuarticResolventCollision.lean/declarations/adjacency-pairwise-distinct-iff.md) | 44 | `result-track:99be400e38fe36954f89cffa51ef5811b81910ccf34b7f1ca4ffead56c688d7a` |
+| 1 | `theorem` | [adjacencyOne_eq_adjacencyTwo_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/QuarticResolventCollision.lean/declarations/adjacencyone-eq-adjacencytwo-iff.md) | 23 | `result-track:0565013104c3fc8d2bb4c66cd30afbf36d7803ecf01205528682630b7de4f593` |
+| 2 | `theorem` | [adjacencyOne_eq_adjacencyThree_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/QuarticResolventCollision.lean/declarations/adjacencyone-eq-adjacencythree-iff.md) | 29 | `result-track:3ad70f1dd8aeed4b79f800225cdd8c6f0e5f199c28f0fb869d1de858a0224216` |
+| 3 | `theorem` | [adjacencyTwo_eq_adjacencyThree_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/QuarticResolventCollision.lean/declarations/adjacencytwo-eq-adjacencythree-iff.md) | 35 | `result-track:05238bae5d349d82dc271cbf3ad2f635784aab7e3dd33db0911bb3da78f792c8` |
+| 4 | `theorem` | [adjacency_pairwise_distinct_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/QuarticResolventCollision.lean/declarations/adjacency-pairwise-distinct-iff.md) | 44 | `result-track:99be400e38fe36954f89cffa51ef5811b81910ccf34b7f1ca4ffead56c688d7a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

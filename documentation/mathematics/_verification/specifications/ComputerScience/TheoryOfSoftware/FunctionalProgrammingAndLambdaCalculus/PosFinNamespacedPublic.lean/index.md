@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PosFinNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PosFinNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PosFinNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PosFinNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [PosFin](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PosFinNamespacedPublic.lean/declarations/posfin.md) | 25 | `declaration-track:13cbf712215607d720dbd7da28754139799857f14d8a56108f770e7a405acea6` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PosFinNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 27 | `declaration-track:2add005f83d0ceeb4662685a6d3a076ae500794ad67c532ed2a61e12d07877de` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PosFinNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 30 | `declaration-track:77c4dc79ed0091f12d053a00d515cc2519fd2dc834daa21b5408a43ad5fb08fa` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PosFinNamespacedPublic.lean/declarations/instance.md) | 33 | `declaration-track:266e0a19ecdf64f1446c69193d0f443e60a1104f46cfa3e82008ac0f34597350` |
-| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PosFinNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 36 | `declaration-track:f6cc57f87bf94938154f96ea36a3589c48606e90fb8600b041013da5201277af` |
+| 1 | `def` | [PosFin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PosFinNamespacedPublic.lean/declarations/posfin.md) | 25 | `declaration-track:13cbf712215607d720dbd7da28754139799857f14d8a56108f770e7a405acea6` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PosFinNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 27 | `declaration-track:2add005f83d0ceeb4662685a6d3a076ae500794ad67c532ed2a61e12d07877de` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PosFinNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 30 | `declaration-track:77c4dc79ed0091f12d053a00d515cc2519fd2dc834daa21b5408a43ad5fb08fa` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PosFinNamespacedPublic.lean/declarations/instance.md) | 33 | `declaration-track:266e0a19ecdf64f1446c69193d0f443e60a1104f46cfa3e82008ac0f34597350` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PosFinNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 36 | `declaration-track:f6cc57f87bf94938154f96ea36a3589c48606e90fb8600b041013da5201277af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatOrder.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatOrder.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatOrder.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatOrder.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatOrder.lean/declarations/instance.md) | 15 | `declaration-track:6e573acece5a75c959f74223e14f4c9151f8b1ffd2f6cc6de859c961f6459aad` |
-| 2 | `instance` | [NNRat.instOrderedSub](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatOrder.lean/declarations/nnrat-instorderedsub.md) | 18 | `declaration-track:1657df3bbc67b36c650fe362fa578828e1ed37a07828dd94f411dad6a219c749` |
-| 3 | `instance` | [NNRat.instCanonicallyOrderedAdd](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatOrder.lean/declarations/nnrat-instcanonicallyorderedadd.md) | 19 | `declaration-track:538801bc9304ffe2cf85694b88a37d24d7a676b799881aee48d11fb28d789678` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatOrder.lean/declarations/instance.md) | 15 | `declaration-track:6e573acece5a75c959f74223e14f4c9151f8b1ffd2f6cc6de859c961f6459aad` |
+| 2 | `instance` | [NNRat.instOrderedSub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatOrder.lean/declarations/nnrat-instorderedsub.md) | 18 | `declaration-track:1657df3bbc67b36c650fe362fa578828e1ed37a07828dd94f411dad6a219c749` |
+| 3 | `instance` | [NNRat.instCanonicallyOrderedAdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatOrder.lean/declarations/nnrat-instcanonicallyorderedadd.md) | 19 | `declaration-track:538801bc9304ffe2cf85694b88a37d24d7a676b799881aee48d11fb28d789678` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

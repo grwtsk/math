@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/AbsoluteCompactificationNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/AbsoluteCompactificationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteCompactificationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteCompactificationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [realizedIncidences](../../../../GeneralTopology/AbsoluteCompactificationNamespaced.lean/declarations/realizedincidences.md) | 31 | `declaration-track:f47f1837c8bac01980a50c29280c91099c4c00b457a33897b16cc50c87b0cd09` |
-| 2 | `def` | [AbsoluteKnowledgeCompactification](../../../../GeneralTopology/AbsoluteCompactificationNamespaced.lean/declarations/absoluteknowledgecompactification.md) | 41 | `declaration-track:cad10ba73772a35a8aa93112ba589aecbaa3b7af4a2a9144bd12a1aedeb42ed2` |
-| 3 | `theorem` | [realized_mem_absoluteCompactification](../../../../GeneralTopology/AbsoluteCompactificationNamespaced.lean/declarations/realized-mem-absolutecompactification.md) | 48 | `result-track:60ac6972a62e398b731b377b1ffe92db338e6ac76787c656a2d737ba9590ba78` |
-| 4 | `theorem` | [absoluteKnowledgeCompactification_isCompact](../../../../GeneralTopology/AbsoluteCompactificationNamespaced.lean/declarations/absoluteknowledgecompactification-iscompact.md) | 60 | `result-track:e1a507dc9300a3380a0f5bba74dacb19b9ab57d22253e1a9d3b96ac816018c9b` |
-| 5 | `theorem` | [incidenceSingleton_mem_absoluteCompactification](../../../../GeneralTopology/AbsoluteCompactificationNamespaced.lean/declarations/incidencesingleton-mem-absolutecompactification.md) | 71 | `result-track:7f8bd9ac9bdfc761526f519445949651e82734c98b7567932b2d7f03a1361009` |
+| 1 | `def` | [realizedIncidences](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteCompactificationNamespaced.lean/declarations/realizedincidences.md) | 31 | `declaration-track:f47f1837c8bac01980a50c29280c91099c4c00b457a33897b16cc50c87b0cd09` |
+| 2 | `def` | [AbsoluteKnowledgeCompactification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteCompactificationNamespaced.lean/declarations/absoluteknowledgecompactification.md) | 41 | `declaration-track:cad10ba73772a35a8aa93112ba589aecbaa3b7af4a2a9144bd12a1aedeb42ed2` |
+| 3 | `theorem` | [realized_mem_absoluteCompactification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteCompactificationNamespaced.lean/declarations/realized-mem-absolutecompactification.md) | 48 | `result-track:60ac6972a62e398b731b377b1ffe92db338e6ac76787c656a2d737ba9590ba78` |
+| 4 | `theorem` | [absoluteKnowledgeCompactification_isCompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteCompactificationNamespaced.lean/declarations/absoluteknowledgecompactification-iscompact.md) | 60 | `result-track:e1a507dc9300a3380a0f5bba74dacb19b9ab57d22253e1a9d3b96ac816018c9b` |
+| 5 | `theorem` | [incidenceSingleton_mem_absoluteCompactification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteCompactificationNamespaced.lean/declarations/incidencesingleton-mem-absolutecompactification.md) | 71 | `result-track:7f8bd9ac9bdfc761526f519445949651e82734c98b7567932b2d7f03a1361009` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

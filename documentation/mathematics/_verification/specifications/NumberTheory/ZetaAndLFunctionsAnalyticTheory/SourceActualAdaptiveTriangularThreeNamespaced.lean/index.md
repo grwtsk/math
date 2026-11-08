@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThreeNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThreeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThreeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThreeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceEndpoint_abs_le_three](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThreeNamespaced.lean/declarations/sourceendpoint-abs-le-three.md) | 28 | `result-track:2120945cbfac70f3a59eccbebd8944ef09a109ed6fc51789e30c1c34d463fb69` |
-| 2 | `theorem` | [residual_upper_of_actualTriangular_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThreeNamespaced.lean/declarations/residual-upper-of-actualtriangular-upper.md) | 33 | `result-track:a6b3ccf2dd92dbe4af088f5091ea67ff57ae3fe83e081c9442333591f6d71757` |
-| 3 | `theorem` | [residual_tail_of_actualTriangular_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThreeNamespaced.lean/declarations/residual-tail-of-actualtriangular-tail.md) | 47 | `result-track:55ab1684bb83877c2b3a463e8b683e40223be978e2620f59ad09fb1c46952417` |
-| 4 | `theorem` | [estimate_of_actualTriangular_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThreeNamespaced.lean/declarations/estimate-of-actualtriangular-tail.md) | 58 | `result-track:4439861379312c22e07d31357f0d49815deb9aeb578932f3718dd1ba74153430` |
+| 1 | `theorem` | [sourceEndpoint_abs_le_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThreeNamespaced.lean/declarations/sourceendpoint-abs-le-three.md) | 28 | `result-track:2120945cbfac70f3a59eccbebd8944ef09a109ed6fc51789e30c1c34d463fb69` |
+| 2 | `theorem` | [residual_upper_of_actualTriangular_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThreeNamespaced.lean/declarations/residual-upper-of-actualtriangular-upper.md) | 33 | `result-track:a6b3ccf2dd92dbe4af088f5091ea67ff57ae3fe83e081c9442333591f6d71757` |
+| 3 | `theorem` | [residual_tail_of_actualTriangular_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThreeNamespaced.lean/declarations/residual-tail-of-actualtriangular-tail.md) | 47 | `result-track:55ab1684bb83877c2b3a463e8b683e40223be978e2620f59ad09fb1c46952417` |
+| 4 | `theorem` | [estimate_of_actualTriangular_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThreeNamespaced.lean/declarations/estimate-of-actualtriangular-tail.md) | 58 | `result-track:4439861379312c22e07d31357f0d49815deb9aeb578932f3718dd1ba74153430` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

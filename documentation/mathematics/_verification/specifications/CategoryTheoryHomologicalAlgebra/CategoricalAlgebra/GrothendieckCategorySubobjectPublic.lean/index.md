@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [mono_of_isColimit_monoOver](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectPublic.lean/declarations/mono-of-iscolimit-monoover.md) | 52 | `result-track:66ecf145a3a7db280b21e72f8b29da3d89484272e6ef95cf753c640c948758b6` |
-| 2 | `lemma` | [subobjectMk_of_isColimit_eq_iSup](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectPublic.lean/declarations/subobjectmk-of-iscolimit-eq-isup.md) | 63 | `result-track:a0277a5be1b38be545b5df87249210497fdfe335debec595366a6f8db4242e00` |
-| 3 | `def` | [isColimitMapCoconeOfSubobjectMkEqISup](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectPublic.lean/declarations/iscolimitmapcoconeofsubobjectmkeqisup.md) | 93 | `declaration-track:5c33b30b243e239d6d68aa4bed089d47ccdf8be2cc1d0ff5fb2b633b57b25b2c` |
-| 4 | `lemma` | [exists_isIso_of_functor_from_monoOver](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectPublic.lean/declarations/exists-isiso-of-functor-from-monoover.md) | 116 | `result-track:65450e8d410195c778cacd1de656d06e15e87ed2c8d1aa2549a754a4f9cc25f1` |
+| 1 | `lemma` | [mono_of_isColimit_monoOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectPublic.lean/declarations/mono-of-iscolimit-monoover.md) | 52 | `result-track:66ecf145a3a7db280b21e72f8b29da3d89484272e6ef95cf753c640c948758b6` |
+| 2 | `lemma` | [subobjectMk_of_isColimit_eq_iSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectPublic.lean/declarations/subobjectmk-of-iscolimit-eq-isup.md) | 63 | `result-track:a0277a5be1b38be545b5df87249210497fdfe335debec595366a6f8db4242e00` |
+| 3 | `def` | [isColimitMapCoconeOfSubobjectMkEqISup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectPublic.lean/declarations/iscolimitmapcoconeofsubobjectmkeqisup.md) | 93 | `declaration-track:5c33b30b243e239d6d68aa4bed089d47ccdf8be2cc1d0ff5fb2b633b57b25b2c` |
+| 4 | `lemma` | [exists_isIso_of_functor_from_monoOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategorySubobjectPublic.lean/declarations/exists-isiso-of-functor-from-monoover.md) | 116 | `result-track:65450e8d410195c778cacd1de656d06e15e87ed2c8d1aa2549a754a4f9cc25f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Attach](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/declarations/attach.md) | 19 | `declaration-track:146fdb76929d4b75442e0fa8d6e19380b9802a7b2eae3b6b99a2af625142475f` |
-| 2 | `def` | [Attach.Monadic.modifyStep](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/declarations/attach-monadic-modifystep.md) | 25 | `declaration-track:7dbf67aa300694f9077655e3414335e5ea1f45b39a33a733d165ce1b91b9b40c` |
-| 3 | `instance` | [Attach.instIterator](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/declarations/attach-institerator.md) | 39 | `declaration-track:de91df8f8c06bf538baf6cf6a03e6313e7a33973fd378f63b94fd5e66dffab05` |
-| 4 | `def` | [Attach.instFinitenessRelation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/declarations/attach-instfinitenessrelation.md) | 46 | `declaration-track:a83d8fe69024d48220d3fca30ee382a49ef1413551e7f878d30ba1828f08e481` |
-| 5 | `instance` | [Attach.instFinite](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/declarations/attach-instfinite.md) | 63 | `declaration-track:1337b6c0027235cf09b230f65769b8f4f5155fe55e50dc71fd8166b8b9368837` |
-| 6 | `def` | [Attach.instProductivenessRelation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/declarations/attach-instproductivenessrelation.md) | 67 | `declaration-track:cef5d512b1e4061101c141c6a91d3c789c280025116e2a7bb87acf1417341283` |
-| 7 | `instance` | [Attach.instProductive](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/declarations/attach-instproductive.md) | 83 | `declaration-track:f068d6051954e3d90a421f8c4cab90314f7846281000755af7c0b47111aba73a` |
-| 8 | `instance` | [Attach.instIteratorLoop](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/declarations/attach-institeratorloop.md) | 88 | `declaration-track:750527cb0cdb2cec5630262c53a3783b86abd6cfb693f4371878e06353607187` |
-| 9 | `def` | [IterM.attachWith](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/declarations/iterm-attachwith.md) | 105 | `declaration-track:173192e2a56665f66fd1ab182c4ae1061fc384b3c03b6bcc5a093c361dfce353` |
+| 1 | `structure` | [Attach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/declarations/attach.md) | 19 | `declaration-track:146fdb76929d4b75442e0fa8d6e19380b9802a7b2eae3b6b99a2af625142475f` |
+| 2 | `def` | [Attach.Monadic.modifyStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/declarations/attach-monadic-modifystep.md) | 25 | `declaration-track:7dbf67aa300694f9077655e3414335e5ea1f45b39a33a733d165ce1b91b9b40c` |
+| 3 | `instance` | [Attach.instIterator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/declarations/attach-institerator.md) | 39 | `declaration-track:de91df8f8c06bf538baf6cf6a03e6313e7a33973fd378f63b94fd5e66dffab05` |
+| 4 | `def` | [Attach.instFinitenessRelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/declarations/attach-instfinitenessrelation.md) | 46 | `declaration-track:a83d8fe69024d48220d3fca30ee382a49ef1413551e7f878d30ba1828f08e481` |
+| 5 | `instance` | [Attach.instFinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/declarations/attach-instfinite.md) | 63 | `declaration-track:1337b6c0027235cf09b230f65769b8f4f5155fe55e50dc71fd8166b8b9368837` |
+| 6 | `def` | [Attach.instProductivenessRelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/declarations/attach-instproductivenessrelation.md) | 67 | `declaration-track:cef5d512b1e4061101c141c6a91d3c789c280025116e2a7bb87acf1417341283` |
+| 7 | `instance` | [Attach.instProductive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/declarations/attach-instproductive.md) | 83 | `declaration-track:f068d6051954e3d90a421f8c4cab90314f7846281000755af7c0b47111aba73a` |
+| 8 | `instance` | [Attach.instIteratorLoop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/declarations/attach-institeratorloop.md) | 88 | `declaration-track:750527cb0cdb2cec5630262c53a3783b86abd6cfb693f4371878e06353607187` |
+| 9 | `def` | [IterM.attachWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AttachPublicAttach.lean/declarations/iterm-attachwith.md) | 105 | `declaration-track:173192e2a56665f66fd1ab182c4ae1061fc384b3c03b6bcc5a093c361dfce353` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

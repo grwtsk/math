@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/HarmonicContOnClPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/HarmonicContOnClPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicContOnClPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicContOnClPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,23 +57,23 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HarmonicContOnCl](../../../../FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/harmoniccontoncl.md) | 34 | `declaration-track:ddc7d3d0bfcbf4610c350b3de77334fcef6f79e8f3cad622f417fe31e539bb24` |
-| 2 | `theorem` | [HarmonicOnNhd.harmonicContOnCl](../../../../FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/harmoniconnhd-harmoniccontoncl.md) | 38 | `result-track:284e2d780630315b003f067add102bcb2a16940e261ae53abd826766fa418fd5` |
-| 3 | `theorem` | [IsClosed.harmonicContOnCl_iff](../../../../FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/isclosed-harmoniccontoncl-iff.md) | 42 | `result-track:596b13663c518207f534a866453a51bb93285462e0de7cc03f13dcd7b73b5da7` |
-| 4 | `theorem` | [harmonicContOnCl_const](../../../../FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/harmoniccontoncl-const.md) | 49 | `result-track:8703611e3b95ebf1925da32b730e238bf57a1e504e60daf667faa15acdd2daf1` |
-| 5 | `theorem` | [continuousOn_ball](../../../../FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/continuouson-ball.md) | 54 | `result-track:6fa12ebb412e89a436734817824933138894c9e16888aafa8b426052c6bcf665` |
-| 6 | `theorem` | [mk_ball](../../../../FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/mk-ball.md) | 62 | `result-track:72a4a7ce5a5dfd98791f14c68baaa87b384e216f96b48c86e749bdae28c38f5d` |
-| 7 | `theorem` | [contDiffAt](../../../../FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/contdiffat.md) | 67 | `result-track:2baacd0730f2eb7df154a9d70950e9f531cdec385408cf3b9b5faeb557e05672` |
-| 8 | `theorem` | [differentiableAt](../../../../FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/differentiableat.md) | 70 | `result-track:5e361a06b656b88e8e10dff203b92bd6a35dddd2e579640dc5dfb27062226afa` |
-| 9 | `theorem` | [mono](../../../../FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/mono.md) | 73 | `result-track:df3d35740e1ed24da631415d8774af6354b9ba4f13e37b1c310bd17239ac6642` |
-| 10 | `theorem` | [add](../../../../FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/add.md) | 76 | `result-track:1b47c505f4e17057b00fca3c80123a861d25bf10c459981cdbb7715b270935dd` |
-| 11 | `theorem` | [add_const](../../../../FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/add-const.md) | 79 | `result-track:60a651ed7f0cda011c289d95cb1fc8ba4b11571240ad5946a887d2194b9c93f7` |
-| 12 | `theorem` | [const_add](../../../../FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/const-add.md) | 82 | `result-track:8e76b0585f835adce60825f29ad5f60d1567acb1accba8b61b9c0ea568b99861` |
-| 13 | `theorem` | [neg](../../../../FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/neg.md) | 85 | `result-track:5b91a66299142a35f24de61b6ba784866f753a6e91e6e026d1fdc6b4bc47d7e7` |
-| 14 | `theorem` | [sub](../../../../FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/sub.md) | 88 | `result-track:33457db8d621c0ae7f5cbf4fd9417e0a7c4085528eb46cdbd62dc8301ada023b` |
-| 15 | `theorem` | [sub_const](../../../../FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/sub-const.md) | 91 | `result-track:7fe1b3fa8f3f2c1baf396b3ee84b3d18550df862b894b4beb908786167133df1` |
-| 16 | `theorem` | [const_sub](../../../../FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/const-sub.md) | 94 | `result-track:7517fc4d8f858a1b6960790b54af308309de8898dc5adfc4de505f46d024fa32` |
-| 17 | `theorem` | [const_smul](../../../../FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/const-smul.md) | 97 | `result-track:7b096412c0ca0546765e5c735b85050a5c0b84000536a6112018a80f27059311` |
+| 1 | `structure` | [HarmonicContOnCl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/harmoniccontoncl.md) | 34 | `declaration-track:ddc7d3d0bfcbf4610c350b3de77334fcef6f79e8f3cad622f417fe31e539bb24` |
+| 2 | `theorem` | [HarmonicOnNhd.harmonicContOnCl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/harmoniconnhd-harmoniccontoncl.md) | 38 | `result-track:284e2d780630315b003f067add102bcb2a16940e261ae53abd826766fa418fd5` |
+| 3 | `theorem` | [IsClosed.harmonicContOnCl_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/isclosed-harmoniccontoncl-iff.md) | 42 | `result-track:596b13663c518207f534a866453a51bb93285462e0de7cc03f13dcd7b73b5da7` |
+| 4 | `theorem` | [harmonicContOnCl_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/harmoniccontoncl-const.md) | 49 | `result-track:8703611e3b95ebf1925da32b730e238bf57a1e504e60daf667faa15acdd2daf1` |
+| 5 | `theorem` | [continuousOn_ball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/continuouson-ball.md) | 54 | `result-track:6fa12ebb412e89a436734817824933138894c9e16888aafa8b426052c6bcf665` |
+| 6 | `theorem` | [mk_ball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/mk-ball.md) | 62 | `result-track:72a4a7ce5a5dfd98791f14c68baaa87b384e216f96b48c86e749bdae28c38f5d` |
+| 7 | `theorem` | [contDiffAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/contdiffat.md) | 67 | `result-track:2baacd0730f2eb7df154a9d70950e9f531cdec385408cf3b9b5faeb557e05672` |
+| 8 | `theorem` | [differentiableAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/differentiableat.md) | 70 | `result-track:5e361a06b656b88e8e10dff203b92bd6a35dddd2e579640dc5dfb27062226afa` |
+| 9 | `theorem` | [mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/mono.md) | 73 | `result-track:df3d35740e1ed24da631415d8774af6354b9ba4f13e37b1c310bd17239ac6642` |
+| 10 | `theorem` | [add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/add.md) | 76 | `result-track:1b47c505f4e17057b00fca3c80123a861d25bf10c459981cdbb7715b270935dd` |
+| 11 | `theorem` | [add_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/add-const.md) | 79 | `result-track:60a651ed7f0cda011c289d95cb1fc8ba4b11571240ad5946a887d2194b9c93f7` |
+| 12 | `theorem` | [const_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/const-add.md) | 82 | `result-track:8e76b0585f835adce60825f29ad5f60d1567acb1accba8b61b9c0ea568b99861` |
+| 13 | `theorem` | [neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/neg.md) | 85 | `result-track:5b91a66299142a35f24de61b6ba784866f753a6e91e6e026d1fdc6b4bc47d7e7` |
+| 14 | `theorem` | [sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/sub.md) | 88 | `result-track:33457db8d621c0ae7f5cbf4fd9417e0a7c4085528eb46cdbd62dc8301ada023b` |
+| 15 | `theorem` | [sub_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/sub-const.md) | 91 | `result-track:7fe1b3fa8f3f2c1baf396b3ee84b3d18550df862b894b4beb908786167133df1` |
+| 16 | `theorem` | [const_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/const-sub.md) | 94 | `result-track:7517fc4d8f858a1b6960790b54af308309de8898dc5adfc4de505f46d024fa32` |
+| 17 | `theorem` | [const_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicContOnClPublic.lean/declarations/const-smul.md) | 97 | `result-track:7b096412c0ca0546765e5c735b85050a5c0b84000536a6112018a80f27059311` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/CertifiedPartialMaps.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/CertifiedPartialMaps.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/CertifiedPartialMaps.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/CertifiedPartialMaps.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.Certificates.ProofCoverage`](../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofCoverageHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.DynamicalSystems.TransitionSystems.GuardedFiniteBudget`](../../../../DynamicalSystemsAndErgodicTheory/GuardedFiniteBudget.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.ErrorBounds.PartialMapComposition`](../../../../RealFunctions/PartialMapComposition.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Logic.Certificates.ProofCoverage`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofCoverageHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.DynamicalSystems.TransitionSystems.GuardedFiniteBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/GuardedFiniteBudget.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.PartialMapComposition`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PartialMapComposition.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AdmittedTraversal](../../../../DynamicalSystemsAndErgodicTheory/CertifiedPartialMaps.lean/declarations/admittedtraversal.md) | 40 | `declaration-track:157c34691686bce8edf675a1781dfd2883195348b2bbb1866a44595ebba0be5d` |
-| 2 | `theorem` | [mathematical_evidence_of_terminal_caps](../../../../DynamicalSystemsAndErgodicTheory/CertifiedPartialMaps.lean/declarations/mathematical-evidence-of-terminal-caps.md) | 49 | `result-track:45cfc756fa03026c2973efa0c3d404b2facaa7ff6add73f425b14c2b2c8048d2` |
-| 3 | `theorem` | [guard_of_terminal_caps](../../../../DynamicalSystemsAndErgodicTheory/CertifiedPartialMaps.lean/declarations/guard-of-terminal-caps.md) | 57 | `result-track:327d11a12c4c7b941f8c894a05513efa467a5084828f0e89b0c716622b9322c2` |
-| 4 | `theorem` | [verified_to_terminal_cap](../../../../DynamicalSystemsAndErgodicTheory/CertifiedPartialMaps.lean/declarations/verified-to-terminal-cap.md) | 84 | `result-track:46ce9d707be14febdbbb33c63d3ebe61294407baa306f26aedff3e16b26d914f` |
-| 5 | `theorem` | [admitted_traversal_safe_and_accounted](../../../../DynamicalSystemsAndErgodicTheory/CertifiedPartialMaps.lean/declarations/admitted-traversal-safe-and-accounted.md) | 92 | `result-track:c329f8b24c16e0bb6ad91da0cd6ec8eeda74f4e1eb4888a3fccda34b3411a86e` |
-| 6 | `theorem` | [admitted_traversal_retains_obligation](../../../../DynamicalSystemsAndErgodicTheory/CertifiedPartialMaps.lean/declarations/admitted-traversal-retains-obligation.md) | 109 | `result-track:f017c206af07c367b124a91d276b64118cc12c4f6334300145ac3d500d60c1ff` |
+| 1 | `structure` | [AdmittedTraversal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/CertifiedPartialMaps.lean/declarations/admittedtraversal.md) | 40 | `declaration-track:157c34691686bce8edf675a1781dfd2883195348b2bbb1866a44595ebba0be5d` |
+| 2 | `theorem` | [mathematical_evidence_of_terminal_caps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/CertifiedPartialMaps.lean/declarations/mathematical-evidence-of-terminal-caps.md) | 49 | `result-track:45cfc756fa03026c2973efa0c3d404b2facaa7ff6add73f425b14c2b2c8048d2` |
+| 3 | `theorem` | [guard_of_terminal_caps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/CertifiedPartialMaps.lean/declarations/guard-of-terminal-caps.md) | 57 | `result-track:327d11a12c4c7b941f8c894a05513efa467a5084828f0e89b0c716622b9322c2` |
+| 4 | `theorem` | [verified_to_terminal_cap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/CertifiedPartialMaps.lean/declarations/verified-to-terminal-cap.md) | 84 | `result-track:46ce9d707be14febdbbb33c63d3ebe61294407baa306f26aedff3e16b26d914f` |
+| 5 | `theorem` | [admitted_traversal_safe_and_accounted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/CertifiedPartialMaps.lean/declarations/admitted-traversal-safe-and-accounted.md) | 92 | `result-track:c329f8b24c16e0bb6ad91da0cd6ec8eeda74f4e1eb4888a3fccda34b3411a86e` |
+| 6 | `theorem` | [admitted_traversal_retains_obligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/CertifiedPartialMaps.lean/declarations/admitted-traversal-retains-obligation.md) | 109 | `result-track:f017c206af07c367b124a91d276b64118cc12c4f6334300145ac3d500d60c1ff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

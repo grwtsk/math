@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LocallyConvex.lean/index.md) · [Full source](../../../../GeneralTopology/LocallyConvex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LocallyConvex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LocallyConvex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [ContinuousMap.instLocallyConvexSpace](../../../../GeneralTopology/LocallyConvex.lean/declarations/continuousmap-instlocallyconvexspace.md) | 18 | `declaration-track:bfb32cb1a67688a9483469e4706d1e1cab6e18156dfd8aca90c2f4f1e1b91e64` |
+| 1 | `instance` | [ContinuousMap.instLocallyConvexSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LocallyConvex.lean/declarations/continuousmap-instlocallyconvexspace.md) | 18 | `declaration-track:bfb32cb1a67688a9483469e4706d1e1cab6e18156dfd8aca90c2f4f1e1b91e64` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

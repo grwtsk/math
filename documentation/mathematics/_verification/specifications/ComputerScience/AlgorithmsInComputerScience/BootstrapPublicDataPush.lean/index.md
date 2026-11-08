@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BootstrapPublicDataPush.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BootstrapPublicDataPush.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BootstrapPublicDataPush.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BootstrapPublicDataPush.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [data_push](../../../../../ComputerScience/AlgorithmsInComputerScience/BootstrapPublicDataPush.lean/declarations/data-push.md) | 17 | `result-track:2d6dad5edb82ca958b2a601ee9337368d4efc32526e58982a46f11c6bcf9dff8` |
-| 2 | `def` | [append](../../../../../ComputerScience/AlgorithmsInComputerScience/BootstrapPublicDataPush.lean/declarations/append.md) | 26 | `declaration-track:d9f0b8eea28c78fc6d63378866046321f75822f8619e4f3785add12e09fcd1e8` |
-| 3 | `theorem` | [toList_data_append'](../../../../../ComputerScience/AlgorithmsInComputerScience/BootstrapPublicDataPush.lean/declarations/tolist-data-append.md) | 30 | `result-track:bc74852f90f154cf6bb9614046fae59576ac445bfa10fa1d5acd01a4a6f0afd7` |
-| 4 | `theorem` | [ext](../../../../../ComputerScience/AlgorithmsInComputerScience/BootstrapPublicDataPush.lean/declarations/ext.md) | 36 | `result-track:9cbeac75bee103be93f446b952886def6a272cbf666bd024101aa06ec76db348` |
-| 5 | `theorem` | [List.toList_data_toByteArray](../../../../../ComputerScience/AlgorithmsInComputerScience/BootstrapPublicDataPush.lean/declarations/list-tolist-data-tobytearray.md) | 42 | `result-track:64c530d60bb5d0c7a6f374e00d93c60213d09ceca6cd0fbaf709348bfc58a900` |
-| 6 | `theorem` | [List.toByteArray_append'](../../../../../ComputerScience/AlgorithmsInComputerScience/BootstrapPublicDataPush.lean/declarations/list-tobytearray-append.md) | 54 | `result-track:a65284f9fe13c8b3ff7909e279706abff1661cc00f4aadbf56c3a6c00b0ab573` |
+| 1 | `theorem` | [data_push](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BootstrapPublicDataPush.lean/declarations/data-push.md) | 17 | `result-track:2d6dad5edb82ca958b2a601ee9337368d4efc32526e58982a46f11c6bcf9dff8` |
+| 2 | `def` | [append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BootstrapPublicDataPush.lean/declarations/append.md) | 26 | `declaration-track:d9f0b8eea28c78fc6d63378866046321f75822f8619e4f3785add12e09fcd1e8` |
+| 3 | `theorem` | [toList_data_append'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BootstrapPublicDataPush.lean/declarations/tolist-data-append.md) | 30 | `result-track:bc74852f90f154cf6bb9614046fae59576ac445bfa10fa1d5acd01a4a6f0afd7` |
+| 4 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BootstrapPublicDataPush.lean/declarations/ext.md) | 36 | `result-track:9cbeac75bee103be93f446b952886def6a272cbf666bd024101aa06ec76db348` |
+| 5 | `theorem` | [List.toList_data_toByteArray](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BootstrapPublicDataPush.lean/declarations/list-tolist-data-tobytearray.md) | 42 | `result-track:64c530d60bb5d0c7a6f374e00d93c60213d09ceca6cd0fbaf709348bfc58a900` |
+| 6 | `theorem` | [List.toByteArray_append'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BootstrapPublicDataPush.lean/declarations/list-tobytearray-append.md) | 54 | `result-track:a65284f9fe13c8b3ff7909e279706abff1661cc00f4aadbf56c3a6c00b0ab573` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

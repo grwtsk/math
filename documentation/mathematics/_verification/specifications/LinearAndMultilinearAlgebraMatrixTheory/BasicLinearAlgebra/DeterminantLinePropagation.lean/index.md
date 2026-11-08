@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantLinePropagation.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantLinePropagation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantLinePropagation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantLinePropagation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [determinant_line_propagates_if_supplied](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantLinePropagation.lean/declarations/determinant-line-propagates-if-supplied.md) | 19 | `result-track:c142ad70b1b3c4a7733b6e03bd38cbc6938b630b04e1210d8199c104980fb55c` |
-| 2 | `theorem` | [determinant_line_has_nonzero_anchor](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantLinePropagation.lean/declarations/determinant-line-has-nonzero-anchor.md) | 25 | `result-track:f32aaa80ad5e05f0612c594d74a29aeafe19e2daa73fbd17ebf1c461a3fa5062` |
+| 1 | `theorem` | [determinant_line_propagates_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantLinePropagation.lean/declarations/determinant-line-propagates-if-supplied.md) | 19 | `result-track:c142ad70b1b3c4a7733b6e03bd38cbc6938b630b04e1210d8199c104980fb55c` |
+| 2 | `theorem` | [determinant_line_has_nonzero_anchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DeterminantLinePropagation.lean/declarations/determinant-line-has-nonzero-anchor.md) | 25 | `result-track:f32aaa80ad5e05f0612c594d74a29aeafe19e2daa73fbd17ebf1c461a3fa5062` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

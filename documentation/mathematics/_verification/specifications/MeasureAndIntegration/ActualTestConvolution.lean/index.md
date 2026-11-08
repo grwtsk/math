@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualTestConvolution.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualTestConvolution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualTestConvolution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualTestConvolution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSideTargets` — import line 30; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.Calculus.BumpFunction.Convolution` — import line 31; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.NormalizedBumpKernel`](../../../../MeasureAndIntegration/NormalizedBumpKernel.lean/index.md) — import line 32; pinned internal source present.
+- [`GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.NormalizedBumpKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedBumpKernel.lean/index.md) — import line 32; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [smoothedTest](../../../../MeasureAndIntegration/ActualTestConvolution.lean/declarations/smoothedtest.md) | 53 | `declaration-track:baf185495c7ad70674d32020def50e8d8490d2b5c371ee180b771ee088b19880` |
-| 2 | `theorem` | [smoothedTest_eq_integral](../../../../MeasureAndIntegration/ActualTestConvolution.lean/declarations/smoothedtest-eq-integral.md) | 57 | `result-track:e77c7688f16fe71e8ff0d87401cbe7d1ba92f57301ce82239bd5e169a608db16` |
+| 1 | `def` | [smoothedTest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualTestConvolution.lean/declarations/smoothedtest.md) | 53 | `declaration-track:baf185495c7ad70674d32020def50e8d8490d2b5c371ee180b771ee088b19880` |
+| 2 | `theorem` | [smoothedTest_eq_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualTestConvolution.lean/declarations/smoothedtest-eq-integral.md) | 57 | `result-track:e77c7688f16fe71e8ff0d87401cbe7d1ba92f57301ce82239bd5e169a608db16` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

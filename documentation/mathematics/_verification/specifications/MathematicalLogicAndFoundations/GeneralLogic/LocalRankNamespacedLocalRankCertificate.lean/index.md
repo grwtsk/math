@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LocalRankNamespacedLocalRankCertificate.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LocalRankNamespacedLocalRankCertificate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LocalRankNamespacedLocalRankCertificate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LocalRankNamespacedLocalRankCertificate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LocalRankCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LocalRankNamespacedLocalRankCertificate.lean/declarations/localrankcertificate.md) | 23 | `declaration-track:87cab3a5cb5c0e577c339319bfe8488b91d31c3067c2d08d39d5b4afa05cb954` |
-| 2 | `def` | [LocalRankCertificate.tallyCode](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LocalRankNamespacedLocalRankCertificate.lean/declarations/localrankcertificate-tallycode.md) | 29 | `declaration-track:272cae5114a0481589329666e112e4e2fd9e3e89e8a4ca937c13480bb6c65377` |
-| 3 | `theorem` | [localRank_equal_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LocalRankNamespacedLocalRankCertificate.lean/declarations/localrank-equal-iff.md) | 37 | `result-track:6747d07fbd52a8aecd28f661ff655269133389cdd5547c7c3e6230a28b32b3be` |
+| 1 | `structure` | [LocalRankCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LocalRankNamespacedLocalRankCertificate.lean/declarations/localrankcertificate.md) | 23 | `declaration-track:87cab3a5cb5c0e577c339319bfe8488b91d31c3067c2d08d39d5b4afa05cb954` |
+| 2 | `def` | [LocalRankCertificate.tallyCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LocalRankNamespacedLocalRankCertificate.lean/declarations/localrankcertificate-tallycode.md) | 29 | `declaration-track:272cae5114a0481589329666e112e4e2fd9e3e89e8a4ca937c13480bb6c65377` |
+| 3 | `theorem` | [localRank_equal_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LocalRankNamespacedLocalRankCertificate.lean/declarations/localrank-equal-iff.md) | 37 | `result-track:6747d07fbd52a8aecd28f661ff655269133389cdd5547c7c3e6230a28b32b3be` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

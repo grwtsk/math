@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/ConsecutiveNamespacedPublic.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/ConsecutiveNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ConsecutiveNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ConsecutiveNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [dvd_choose_add_sub_one_iff](../../../../../NumberTheory/ElementaryNumberTheory/ConsecutiveNamespacedPublic.lean/declarations/dvd-choose-add-sub-one-iff.md) | 37 | `result-track:256e40088ae628d2b968a0471facaf59c8f9ac88e974b08aa357e8b5da5f1689` |
-| 2 | `lemma` | [dvd_choose_iff](../../../../../NumberTheory/ElementaryNumberTheory/ConsecutiveNamespacedPublic.lean/declarations/dvd-choose-iff.md) | 43 | `result-track:032786d38d06bfa9b46de4eb25cf02ca478eca6bd1bbc2ce4f5da399c858eff6` |
+| 1 | `lemma` | [dvd_choose_add_sub_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ConsecutiveNamespacedPublic.lean/declarations/dvd-choose-add-sub-one-iff.md) | 37 | `result-track:256e40088ae628d2b968a0471facaf59c8f9ac88e974b08aa357e8b5da5f1689` |
+| 2 | `lemma` | [dvd_choose_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ConsecutiveNamespacedPublic.lean/declarations/dvd-choose-iff.md) | 43 | `result-track:032786d38d06bfa9b46de4eb25cf02ca478eca6bd1bbc2ce4f5da399c858eff6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

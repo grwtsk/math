@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtilNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtilNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtilNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtilNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `initialize` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtilNamespaced.lean/declarations/initialize.md) | 44 | `declaration-track:7cda8fa532e146af3ef3d540a67c2e9c4cdbea7503be0fef106f888efa3e6496` |
-| 2 | `register_option` | [fuel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtilNamespaced.lean/declarations/fuel.md) | 47 | `declaration-track:b7c03f5e104c721c33fafe17d4759442cee8b484b9edcfc0b969e9a471f1523a` |
-| 3 | `def` | [getFinVal?](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtilNamespaced.lean/declarations/getfinval.md) | 55 | `declaration-track:8d29a7844ec083b5cc9130dba586ce05c54514aedf4cacf4386e055703cfe986` |
-| 4 | `def` | [getVecElem](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtilNamespaced.lean/declarations/getvecelem.md) | 100 | `declaration-track:2835a4a924250c3339dac4aef72ce255aaefee9bab03115f508240a874b79b44` |
-| 5 | `macro` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtilNamespaced.lean/declarations/macro.md) | 232 | `declaration-track:ffa02d2b06670ec4154e73943002547e3bdc6e0524ced1bd54b7c8cfa0d5e3f8` |
+| 1 | `initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtilNamespaced.lean/declarations/initialize.md) | 44 | `declaration-track:7cda8fa532e146af3ef3d540a67c2e9c4cdbea7503be0fef106f888efa3e6496` |
+| 2 | `register_option` | [fuel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtilNamespaced.lean/declarations/fuel.md) | 47 | `declaration-track:b7c03f5e104c721c33fafe17d4759442cee8b484b9edcfc0b969e9a471f1523a` |
+| 3 | `def` | [getFinVal?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtilNamespaced.lean/declarations/getfinval.md) | 55 | `declaration-track:8d29a7844ec083b5cc9130dba586ce05c54514aedf4cacf4386e055703cfe986` |
+| 4 | `def` | [getVecElem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtilNamespaced.lean/declarations/getvecelem.md) | 100 | `declaration-track:2835a4a924250c3339dac4aef72ce255aaefee9bab03115f508240a874b79b44` |
+| 5 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtilNamespaced.lean/declarations/macro.md) | 232 | `declaration-track:ffa02d2b06670ec4154e73943002547e3bdc6e0524ced1bd54b7c8cfa0d5e3f8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

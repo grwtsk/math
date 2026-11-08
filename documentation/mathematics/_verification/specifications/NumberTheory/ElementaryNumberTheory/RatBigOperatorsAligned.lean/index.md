@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/RatBigOperatorsAligned.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/RatBigOperatorsAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatBigOperatorsAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatBigOperatorsAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cast_list_sum](../../../../../NumberTheory/ElementaryNumberTheory/RatBigOperatorsAligned.lean/declarations/cast-list-sum.md) | 25 | `result-track:52a6332d02d70079f37042212c7b5d20610ff9c3a630769980b6fbf1f11031af` |
-| 2 | `theorem` | [cast_multiset_sum](../../../../../NumberTheory/ElementaryNumberTheory/RatBigOperatorsAligned.lean/declarations/cast-multiset-sum.md) | 30 | `result-track:f9557f56cad9e97e12eee9dd28221484a6a5753d90538f7df9a523afd5c18e32` |
-| 3 | `theorem` | [cast_sum](../../../../../NumberTheory/ElementaryNumberTheory/RatBigOperatorsAligned.lean/declarations/cast-sum.md) | 35 | `result-track:8736d3c1fc5a777057c88a12b937d9c5758ea13ad87d8e79afd882d880806b7a` |
-| 4 | `theorem` | [cast_list_prod](../../../../../NumberTheory/ElementaryNumberTheory/RatBigOperatorsAligned.lean/declarations/cast-list-prod.md) | 40 | `result-track:7344d6ce186f1962c48c17d7a45e3dade761fd6415d15a47fa147485dbbbbf9b` |
-| 5 | `theorem` | [cast_multiset_prod](../../../../../NumberTheory/ElementaryNumberTheory/RatBigOperatorsAligned.lean/declarations/cast-multiset-prod.md) | 51 | `result-track:6b7b3757e913b78dcd5ebb496fdd464739d0d2469c27888c7bd2c6b7747d2426` |
-| 6 | `theorem` | [cast_prod](../../../../../NumberTheory/ElementaryNumberTheory/RatBigOperatorsAligned.lean/declarations/cast-prod.md) | 56 | `result-track:19735078a74885b2e7e69c183f720bd8b5955b2af0dc783ec2284e6a9903908d` |
+| 1 | `theorem` | [cast_list_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatBigOperatorsAligned.lean/declarations/cast-list-sum.md) | 25 | `result-track:52a6332d02d70079f37042212c7b5d20610ff9c3a630769980b6fbf1f11031af` |
+| 2 | `theorem` | [cast_multiset_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatBigOperatorsAligned.lean/declarations/cast-multiset-sum.md) | 30 | `result-track:f9557f56cad9e97e12eee9dd28221484a6a5753d90538f7df9a523afd5c18e32` |
+| 3 | `theorem` | [cast_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatBigOperatorsAligned.lean/declarations/cast-sum.md) | 35 | `result-track:8736d3c1fc5a777057c88a12b937d9c5758ea13ad87d8e79afd882d880806b7a` |
+| 4 | `theorem` | [cast_list_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatBigOperatorsAligned.lean/declarations/cast-list-prod.md) | 40 | `result-track:7344d6ce186f1962c48c17d7a45e3dade761fd6415d15a47fa147485dbbbbf9b` |
+| 5 | `theorem` | [cast_multiset_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatBigOperatorsAligned.lean/declarations/cast-multiset-prod.md) | 51 | `result-track:6b7b3757e913b78dcd5ebb496fdd464739d0d2469c27888c7bd2c6b7747d2426` |
+| 6 | `theorem` | [cast_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatBigOperatorsAligned.lean/declarations/cast-prod.md) | 56 | `result-track:19735078a74885b2e7e69c183f720bd8b5955b2af0dc783ec2284e6a9903908d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

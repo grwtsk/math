@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IsLocalizationNamespaced.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IsLocalizationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IsLocalizationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IsLocalizationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isLocalizedModule_iff_isLocalization](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IsLocalizationNamespaced.lean/declarations/islocalizedmodule-iff-islocalization-source-edition-2.md) | 28 | `result-track:97bb099d89dc701362cbe9d9b58f9898e839be402903360680530087ec300df2` |
-| 2 | `instance` | [(anonymous)](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IsLocalizationNamespaced.lean/declarations/instance.md) | 40 | `declaration-track:8b54906ce72b822b876dfafa4fa2a87bbc0679e2d78af6db13e0352ee5ec5128` |
-| 3 | `lemma` | [isLocalizedModule_iff_isLocalization'](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IsLocalizationNamespaced.lean/declarations/islocalizedmodule-iff-islocalization.md) | 48 | `result-track:589152eee48a35c6cbb9a4285b509035d270698760cd28ebfe8f4b1cdde5b862` |
-| 4 | `instance` | [(anonymous)](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IsLocalizationNamespaced.lean/declarations/instance-source-edition-2.md) | 53 | `declaration-track:b71bf3a0f87097f56feafb376873afa56d3eae44965b6e5708ec64b0d176d6fb` |
-| 5 | `lemma` | [IsLocalization.mk'_algebraMap_eq_mk'](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IsLocalizationNamespaced.lean/declarations/islocalization-mk-algebramap-eq-mk.md) | 58 | `result-track:c06ae0f2c796ed1634fa665f26eaffb1c3b0673ea3a0f1a400d9838178b8d984` |
-| 6 | `lemma` | [IsLocalization.mk'_eq_mk'](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IsLocalizationNamespaced.lean/declarations/islocalization-mk-eq-mk.md) | 66 | `result-track:6891f645a11d57d50af4de17bb7036817a7609d7f0cf4bed22f4b7669a1a8e7e` |
+| 1 | `theorem` | [isLocalizedModule_iff_isLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IsLocalizationNamespaced.lean/declarations/islocalizedmodule-iff-islocalization-source-edition-2.md) | 28 | `result-track:97bb099d89dc701362cbe9d9b58f9898e839be402903360680530087ec300df2` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IsLocalizationNamespaced.lean/declarations/instance.md) | 40 | `declaration-track:8b54906ce72b822b876dfafa4fa2a87bbc0679e2d78af6db13e0352ee5ec5128` |
+| 3 | `lemma` | [isLocalizedModule_iff_isLocalization'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IsLocalizationNamespaced.lean/declarations/islocalizedmodule-iff-islocalization.md) | 48 | `result-track:589152eee48a35c6cbb9a4285b509035d270698760cd28ebfe8f4b1cdde5b862` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IsLocalizationNamespaced.lean/declarations/instance-source-edition-2.md) | 53 | `declaration-track:b71bf3a0f87097f56feafb376873afa56d3eae44965b6e5708ec64b0d176d6fb` |
+| 5 | `lemma` | [IsLocalization.mk'_algebraMap_eq_mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IsLocalizationNamespaced.lean/declarations/islocalization-mk-algebramap-eq-mk.md) | 58 | `result-track:c06ae0f2c796ed1634fa665f26eaffb1c3b0673ea3a0f1a400d9838178b8d984` |
+| 6 | `lemma` | [IsLocalization.mk'_eq_mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IsLocalizationNamespaced.lean/declarations/islocalization-mk-eq-mk.md) | 66 | `result-track:6891f645a11d57d50af4de17bb7036817a7609d7f0cf4bed22f4b7669a1a8e7e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

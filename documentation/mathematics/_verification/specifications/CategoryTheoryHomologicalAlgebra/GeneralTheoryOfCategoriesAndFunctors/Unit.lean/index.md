@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Unit.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Unit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Unit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Unit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [punitCone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Unit.lean/declarations/punitcone.md) | 27 | `declaration-track:f115f811978a59a1c7068f7070e1f3ea1ac179b23fb3d0e636b75dc8b5f2adc6` |
-| 2 | `def` | [punitCocone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Unit.lean/declarations/punitcocone.md) | 31 | `declaration-track:c9cc5051edb8c78f87db1643c84b10a898ea69d51b5f03ed606b10f087c622b0` |
-| 3 | `def` | [punitConeIsLimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Unit.lean/declarations/punitconeislimit.md) | 36 | `declaration-track:64f913da084f542c774165ac9c207a741a039ef5ba0aaef58fac497297ca5326` |
-| 4 | `def` | [punitCoconeIsColimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Unit.lean/declarations/punitcoconeiscolimit.md) | 41 | `declaration-track:4ea429d4d5cda4e1166bbb764f561e9f6677c036f55274396f8ed3e45027ad78` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Unit.lean/declarations/instance-source-edition-2.md) | 44 | `declaration-track:53f9f542038ec70318c62ebb80483e8d24616f2934e82c892e4d633295ddea4c` |
-| 6 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Unit.lean/declarations/instance.md) | 47 | `declaration-track:152c4b77b75884e1b1695ac1348a4e4a544283feb654d730c6ce4a77e313ab3a` |
+| 1 | `def` | [punitCone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Unit.lean/declarations/punitcone.md) | 27 | `declaration-track:f115f811978a59a1c7068f7070e1f3ea1ac179b23fb3d0e636b75dc8b5f2adc6` |
+| 2 | `def` | [punitCocone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Unit.lean/declarations/punitcocone.md) | 31 | `declaration-track:c9cc5051edb8c78f87db1643c84b10a898ea69d51b5f03ed606b10f087c622b0` |
+| 3 | `def` | [punitConeIsLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Unit.lean/declarations/punitconeislimit.md) | 36 | `declaration-track:64f913da084f542c774165ac9c207a741a039ef5ba0aaef58fac497297ca5326` |
+| 4 | `def` | [punitCoconeIsColimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Unit.lean/declarations/punitcoconeiscolimit.md) | 41 | `declaration-track:4ea429d4d5cda4e1166bbb764f561e9f6677c036f55274396f8ed3e45027ad78` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Unit.lean/declarations/instance-source-edition-2.md) | 44 | `declaration-track:53f9f542038ec70318c62ebb80483e8d24616f2934e82c892e4d633295ddea4c` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Unit.lean/declarations/instance.md) | 47 | `declaration-track:152c4b77b75884e1b1695ac1348a4e4a544283feb654d730c6ce4a77e313ab3a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

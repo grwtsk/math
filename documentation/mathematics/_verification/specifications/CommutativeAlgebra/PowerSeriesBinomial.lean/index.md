@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PowerSeriesBinomial.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PowerSeriesBinomial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesBinomial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesBinomial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [binomialSeries](../../../../CommutativeAlgebra/PowerSeriesBinomial.lean/declarations/binomialseries.md) | 41 | `declaration-track:73dde0192ca25bb86536b19a9e3cacf7a0cdf1d44acf3967f778cf5fcbe94c27` |
-| 2 | `lemma` | [binomialSeries_coeff](../../../../CommutativeAlgebra/PowerSeriesBinomial.lean/declarations/binomialseries-coeff.md) | 45 | `result-track:9db46304a8b140e5606fcfbd5fc774df5e10453aa4634708783cf036d161c10d` |
-| 3 | `lemma` | [binomialSeries_add](../../../../CommutativeAlgebra/PowerSeriesBinomial.lean/declarations/binomialseries-add.md) | 50 | `result-track:a8de71a5f9636a9d01eb3eacb28551e0e7069210fbd15f8f2ca75a00f67a0af9` |
-| 4 | `lemma` | [binomialSeries_nat](../../../../CommutativeAlgebra/PowerSeriesBinomial.lean/declarations/binomialseries-nat.md) | 59 | `result-track:72a10c71fb7b30fdf1a2cc10719717da55385b54c1ce9ea651081a62467c8c8b` |
-| 5 | `lemma` | [rescale_neg_one_invOneSubPow](../../../../CommutativeAlgebra/PowerSeriesBinomial.lean/declarations/rescale-neg-one-invonesubpow.md) | 79 | `result-track:5a8a36c35b8e4de5e891f5fe62330eec64f6e7e1c2870c1f98fe70a5ed8284f1` |
+| 1 | `def` | [binomialSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesBinomial.lean/declarations/binomialseries.md) | 41 | `declaration-track:73dde0192ca25bb86536b19a9e3cacf7a0cdf1d44acf3967f778cf5fcbe94c27` |
+| 2 | `lemma` | [binomialSeries_coeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesBinomial.lean/declarations/binomialseries-coeff.md) | 45 | `result-track:9db46304a8b140e5606fcfbd5fc774df5e10453aa4634708783cf036d161c10d` |
+| 3 | `lemma` | [binomialSeries_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesBinomial.lean/declarations/binomialseries-add.md) | 50 | `result-track:a8de71a5f9636a9d01eb3eacb28551e0e7069210fbd15f8f2ca75a00f67a0af9` |
+| 4 | `lemma` | [binomialSeries_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesBinomial.lean/declarations/binomialseries-nat.md) | 59 | `result-track:72a10c71fb7b30fdf1a2cc10719717da55385b54c1ce9ea651081a62467c8c8b` |
+| 5 | `lemma` | [rescale_neg_one_invOneSubPow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesBinomial.lean/declarations/rescale-neg-one-invonesubpow.md) | 79 | `result-track:5a8a36c35b8e4de5e891f5fe62330eec64f6e7e1c2870c1f98fe70a5ed8284f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

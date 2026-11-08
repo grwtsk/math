@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SignedNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SignedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ceiling_signed](../../../../MeasureAndIntegration/SignedNamespaced.lean/declarations/ceiling-signed.md) | 35 | `result-track:9bf562e856ce8e2b71887f5b271da34ffcbee48e9d49ac6c9eac9e8785347722` |
-| 2 | `theorem` | [ceiling_nearCUE_signed](../../../../MeasureAndIntegration/SignedNamespaced.lean/declarations/ceiling-nearcue-signed.md) | 62 | `result-track:7bb4104bfb099c8b0cf84851871aff63fc9e4254e7c5ef4128dd4c4e6d17c6d5` |
-| 3 | `def` | [edgeNonneg](../../../../MeasureAndIntegration/SignedNamespaced.lean/declarations/edgenonneg.md) | 80 | `declaration-track:9c9a7c4e8e267c1bc88351a7b42629235820be6ce9f680c631f415835b4e5831` |
-| 4 | `theorem` | [D1_nonneg_of_edgeNonneg](../../../../MeasureAndIntegration/SignedNamespaced.lean/declarations/d1-nonneg-of-edgenonneg.md) | 83 | `result-track:6d4d68ac91a5f2254cbb3dfaf95a35b71902eff39e7704694768505c287cdfbd` |
-| 5 | `theorem` | [LawN256_edge](../../../../MeasureAndIntegration/SignedNamespaced.lean/declarations/lawn256-edge.md) | 98 | `result-track:1dd56b934201b89f8cb96fbf74f8ce0c1beaecf7cc22c9798c70028d170259a2` |
-| 6 | `theorem` | [ceiling_law256_signed](../../../../MeasureAndIntegration/SignedNamespaced.lean/declarations/ceiling-law256-signed.md) | 102 | `result-track:8dd6ab2d91a382350ca427911ab321d1967e97b5846d6a63af585edc7e53ad62` |
+| 1 | `theorem` | [ceiling_signed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedNamespaced.lean/declarations/ceiling-signed.md) | 35 | `result-track:9bf562e856ce8e2b71887f5b271da34ffcbee48e9d49ac6c9eac9e8785347722` |
+| 2 | `theorem` | [ceiling_nearCUE_signed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedNamespaced.lean/declarations/ceiling-nearcue-signed.md) | 62 | `result-track:7bb4104bfb099c8b0cf84851871aff63fc9e4254e7c5ef4128dd4c4e6d17c6d5` |
+| 3 | `def` | [edgeNonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedNamespaced.lean/declarations/edgenonneg.md) | 80 | `declaration-track:9c9a7c4e8e267c1bc88351a7b42629235820be6ce9f680c631f415835b4e5831` |
+| 4 | `theorem` | [D1_nonneg_of_edgeNonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedNamespaced.lean/declarations/d1-nonneg-of-edgenonneg.md) | 83 | `result-track:6d4d68ac91a5f2254cbb3dfaf95a35b71902eff39e7704694768505c287cdfbd` |
+| 5 | `theorem` | [LawN256_edge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedNamespaced.lean/declarations/lawn256-edge.md) | 98 | `result-track:1dd56b934201b89f8cb96fbf74f8ce0c1beaecf7cc22c9798c70028d170259a2` |
+| 6 | `theorem` | [ceiling_law256_signed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedNamespaced.lean/declarations/ceiling-law256-signed.md) | 102 | `result-track:8dd6ab2d91a382350ca427911ab321d1967e97b5846d6a63af585edc7e53ad62` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

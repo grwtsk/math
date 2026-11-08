@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsExactNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsExactNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsExactNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsExactNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [ModuleCat.restrictScalars_map_exact](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsExactNamespacedPublic.lean/declarations/modulecat-restrictscalars-map-exact.md) | 44 | `result-track:fa8eda70805cf31eb18484f2a5850cae212cf6f09c212284d3b74ac30c0d937a` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsExactNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 49 | `declaration-track:b7dc491a7e39d16e199cfd3319f8db252fc76f8d5564b5573ff19fa018d39c8a` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsExactNamespacedPublic.lean/declarations/instance.md) | 54 | `declaration-track:255ae75174b6a1edfc48b14616d78e6349754f606f61753a2996574385e26c3d` |
+| 1 | `lemma` | [ModuleCat.restrictScalars_map_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsExactNamespacedPublic.lean/declarations/modulecat-restrictscalars-map-exact.md) | 44 | `result-track:fa8eda70805cf31eb18484f2a5850cae212cf6f09c212284d3b74ac30c0d937a` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsExactNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 49 | `declaration-track:b7dc491a7e39d16e199cfd3319f8db252fc76f8d5564b5573ff19fa018d39c8a` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ChangeOfRingsExactNamespacedPublic.lean/declarations/instance.md) | 54 | `declaration-track:255ae75174b6a1edfc48b14616d78e6349754f606f61753a2996574385e26c3d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

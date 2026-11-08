@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSplitOnPPrepend.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSplitOnPPrepend.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSplitOnPPrepend.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSplitOnPPrepend.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [splitOnPPrepend](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSplitOnPPrepend.lean/declarations/splitonpprepend.md) | 34 | `declaration-track:338d47db96f985b2922c48254433f962010ee903865630ae3320007b5891356e` |
-| 2 | `def` | [splitOnP](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSplitOnPPrepend.lean/declarations/splitonp.md) | 44 | `declaration-track:84d8fd9db15f571bc473372025fd12f2bd9923a6c2647e62adaef71efbf73868` |
-| 3 | `def` | [splitOnP.go](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSplitOnPPrepend.lean/declarations/splitonp-go.md) | 48 | `declaration-track:4056279d85532cef3560dbd7520353b2b0f798220dc35f2f945f7925b777466c` |
-| 4 | `def` | [splitOnPTR](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSplitOnPPrepend.lean/declarations/splitonptr.md) | 53 | `declaration-track:ec574fca201ab167b1012ad16053eb73740222dcc5401b2cab016d5b483cf2ef` |
-| 5 | `theorem` | [splitOnP_eq_splitOnPTR](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSplitOnPPrepend.lean/declarations/splitonp-eq-splitonptr.md) | 58 | `result-track:b324d47f296fe9d6b2a0dc1b44c9e6b307bba7743d86090fcd84e6b8e3973d99` |
-| 6 | `def` | [splitOn](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSplitOnPPrepend.lean/declarations/spliton.md) | 75 | `declaration-track:26d3a619dcd400d9924302a8d6cb6f5e1a101cc4c7089675861a8ba6e07bdcb2` |
+| 1 | `def` | [splitOnPPrepend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSplitOnPPrepend.lean/declarations/splitonpprepend.md) | 34 | `declaration-track:338d47db96f985b2922c48254433f962010ee903865630ae3320007b5891356e` |
+| 2 | `def` | [splitOnP](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSplitOnPPrepend.lean/declarations/splitonp.md) | 44 | `declaration-track:84d8fd9db15f571bc473372025fd12f2bd9923a6c2647e62adaef71efbf73868` |
+| 3 | `def` | [splitOnP.go](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSplitOnPPrepend.lean/declarations/splitonp-go.md) | 48 | `declaration-track:4056279d85532cef3560dbd7520353b2b0f798220dc35f2f945f7925b777466c` |
+| 4 | `def` | [splitOnPTR](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSplitOnPPrepend.lean/declarations/splitonptr.md) | 53 | `declaration-track:ec574fca201ab167b1012ad16053eb73740222dcc5401b2cab016d5b483cf2ef` |
+| 5 | `theorem` | [splitOnP_eq_splitOnPTR](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSplitOnPPrepend.lean/declarations/splitonp-eq-splitonptr.md) | 58 | `result-track:b324d47f296fe9d6b2a0dc1b44c9e6b307bba7743d86090fcd84e6b8e3973d99` |
+| 6 | `def` | [splitOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicSplitOnPPrepend.lean/declarations/spliton.md) | 75 | `declaration-track:26d3a619dcd400d9924302a8d6cb6f5e1a101cc4c7089675861a8ba6e07bdcb2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

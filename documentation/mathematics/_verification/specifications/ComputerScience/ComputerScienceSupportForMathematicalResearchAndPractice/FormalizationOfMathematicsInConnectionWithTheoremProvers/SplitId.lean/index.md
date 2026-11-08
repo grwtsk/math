@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitId.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitId.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitId.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitId.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [id'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitId.lean/declarations/id.md) | 14 | `declaration-track:f73d927e04689cb891d5297d0c84a0eff8015e37daef0c14aad3cba697c5d295` |
-| 2 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitId.lean/declarations/example.md) | 21 | `declaration-track:5914c58ad3ea0f3c0d4512e5e3739599f32ebed9b37ceab97bd1a35eea1f0156` |
-| 3 | `inductive` | [MyEq](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitId.lean/declarations/myeq.md) | 27 | `declaration-track:a542bf6804b1b96729d2eeacd9197d83e404caa0c6ae6c9ee831e341b5162633` |
-| 4 | `def` | [MyEq.elim](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitId.lean/declarations/myeq-elim.md) | 31 | `declaration-track:f08b26350943c2e7163aaced44bd1193178f9d2cd5867d51b7cf88d95483e7c7` |
-| 5 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitId.lean/declarations/example-source-edition-2.md) | 34 | `declaration-track:c11bfec5224f5fd2590d8867dbd55b8fc4c5fe7e1c15063f86840046a6aa25a3` |
+| 1 | `def` | [id'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitId.lean/declarations/id.md) | 14 | `declaration-track:f73d927e04689cb891d5297d0c84a0eff8015e37daef0c14aad3cba697c5d295` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitId.lean/declarations/example.md) | 21 | `declaration-track:5914c58ad3ea0f3c0d4512e5e3739599f32ebed9b37ceab97bd1a35eea1f0156` |
+| 3 | `inductive` | [MyEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitId.lean/declarations/myeq.md) | 27 | `declaration-track:a542bf6804b1b96729d2eeacd9197d83e404caa0c6ae6c9ee831e341b5162633` |
+| 4 | `def` | [MyEq.elim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitId.lean/declarations/myeq-elim.md) | 31 | `declaration-track:f08b26350943c2e7163aaced44bd1193178f9d2cd5867d51b7cf88d95483e7c7` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitId.lean/declarations/example-source-edition-2.md) | 34 | `declaration-track:c11bfec5224f5fd2590d8867dbd55b8fc4c5fe7e1c15063f86840046a6aa25a3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

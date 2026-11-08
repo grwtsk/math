@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContinuousPreimage.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContinuousPreimage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContinuousPreimage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContinuousPreimage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_measure_symmDiff_preimage_nhds_zero](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContinuousPreimage.lean/declarations/tendsto-measure-symmdiff-preimage-nhds-zero.md) | 45 | `result-track:5169c021511c1830191d50b6f544cc6a6792cc9fb1dcdc79c7d21b4b1ea86157` |
-| 2 | `theorem` | [isClosed_setOf_preimage_ae_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ContinuousPreimage.lean/declarations/isclosed-setof-preimage-ae-eq.md) | 106 | `result-track:46709cef4e51bd148d5b91b96cde1153b3d1322b4413355bb7215097ca317047` |
+| 1 | `theorem` | [tendsto_measure_symmDiff_preimage_nhds_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContinuousPreimage.lean/declarations/tendsto-measure-symmdiff-preimage-nhds-zero.md) | 45 | `result-track:5169c021511c1830191d50b6f544cc6a6792cc9fb1dcdc79c7d21b4b1ea86157` |
+| 2 | `theorem` | [isClosed_setOf_preimage_ae_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ContinuousPreimage.lean/declarations/isclosed-setof-preimage-ae-eq.md) | 106 | `result-track:46709cef4e51bd148d5b91b96cde1153b3d1322b4413355bb7215097ca317047` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ActualFirstDerivativeRegularityAttempt02Namespaced.lean/index.md) · [Full source](../../../../RealFunctions/ActualFirstDerivativeRegularityAttempt02Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFirstDerivativeRegularityAttempt02Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFirstDerivativeRegularityAttempt02Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_first_derivative_eq_projection](../../../../RealFunctions/ActualFirstDerivativeRegularityAttempt02Namespaced.lean/declarations/actual-first-derivative-eq-projection.md) | 34 | `result-track:e498a6e19c6501b84703b1f70418336a47a776e6be86e68f7e2fe3437c81276b` |
-| 2 | `theorem` | [actual_first_derivative_lipschitz](../../../../RealFunctions/ActualFirstDerivativeRegularityAttempt02Namespaced.lean/declarations/actual-first-derivative-lipschitz.md) | 54 | `result-track:d14fc23a3bcb1d4f548f175f9a5de73885aa57dfb853b8f485bf1249a22db2f7` |
-| 3 | `theorem` | [actual_first_derivative_absolutelyContinuous](../../../../RealFunctions/ActualFirstDerivativeRegularityAttempt02Namespaced.lean/declarations/actual-first-derivative-absolutelycontinuous.md) | 68 | `result-track:73a81e3ec68e0578926f844d0f8ca3e8b3caf465efd1a1a48b4529525128f61c` |
-| 4 | `theorem` | [actual_first_derivative_hasDerivAt_of_ne_endpoints](../../../../RealFunctions/ActualFirstDerivativeRegularityAttempt02Namespaced.lean/declarations/actual-first-derivative-hasderivat-of-ne-endpoints.md) | 74 | `result-track:fa4d2c34e27c350ca80285893788363affa3f7a0fc8b9a971c9d02bee3547838` |
-| 5 | `theorem` | [actual_first_derivative_ae_hasDerivAt](../../../../RealFunctions/ActualFirstDerivativeRegularityAttempt02Namespaced.lean/declarations/actual-first-derivative-ae-hasderivat.md) | 98 | `result-track:b94b7c3015f2ff762c1339f23510237061db941cccb622d63673070db9d5b891` |
+| 1 | `theorem` | [actual_first_derivative_eq_projection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFirstDerivativeRegularityAttempt02Namespaced.lean/declarations/actual-first-derivative-eq-projection.md) | 34 | `result-track:e498a6e19c6501b84703b1f70418336a47a776e6be86e68f7e2fe3437c81276b` |
+| 2 | `theorem` | [actual_first_derivative_lipschitz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFirstDerivativeRegularityAttempt02Namespaced.lean/declarations/actual-first-derivative-lipschitz.md) | 54 | `result-track:d14fc23a3bcb1d4f548f175f9a5de73885aa57dfb853b8f485bf1249a22db2f7` |
+| 3 | `theorem` | [actual_first_derivative_absolutelyContinuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFirstDerivativeRegularityAttempt02Namespaced.lean/declarations/actual-first-derivative-absolutelycontinuous.md) | 68 | `result-track:73a81e3ec68e0578926f844d0f8ca3e8b3caf465efd1a1a48b4529525128f61c` |
+| 4 | `theorem` | [actual_first_derivative_hasDerivAt_of_ne_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFirstDerivativeRegularityAttempt02Namespaced.lean/declarations/actual-first-derivative-hasderivat-of-ne-endpoints.md) | 74 | `result-track:fa4d2c34e27c350ca80285893788363affa3f7a0fc8b9a971c9d02bee3547838` |
+| 5 | `theorem` | [actual_first_derivative_ae_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFirstDerivativeRegularityAttempt02Namespaced.lean/declarations/actual-first-derivative-ae-hasderivat.md) | 98 | `result-track:b94b7c3015f2ff762c1339f23510237061db941cccb622d63673070db9d5b891` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

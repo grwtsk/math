@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CatalanRecurrenceAndEnumerationTarget.lean/index.md) · [Full source](../../../../Combinatorics/CatalanRecurrenceAndEnumerationTarget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanRecurrenceAndEnumerationTarget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanRecurrenceAndEnumerationTarget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [catalan](../../../../Combinatorics/CatalanRecurrenceAndEnumerationTarget.lean/declarations/catalan.md) | 37 | `declaration-track:73770f1f8c236f0453507583202529ab566c8874a5f8aff748e117b7bdef568a` |
-| 2 | `theorem` | [catalan_zero](../../../../Combinatorics/CatalanRecurrenceAndEnumerationTarget.lean/declarations/catalan-zero.md) | 41 | `result-track:16aa5e50707582fe05fac97f8fc4a47db7ec3fa83e17d8caa55e5f5ba89d2d53` |
-| 3 | `theorem` | [catalan_succ](../../../../Combinatorics/CatalanRecurrenceAndEnumerationTarget.lean/declarations/catalan-succ.md) | 45 | `result-track:39c16dd6452b5ff1f8acffe531365747bd0f99d8efc6f5da97f493953d7bdddd` |
-| 4 | `def` | [treesOfInternalCardinalityTarget](../../../../Combinatorics/CatalanRecurrenceAndEnumerationTarget.lean/declarations/treesofinternalcardinalitytarget.md) | 57 | `declaration-track:69ac783d6c2a76c8ee7fcfb53ee57d7fb2c9e2a3b04297b114b21f57df6eac46` |
+| 1 | `abbrev` | [catalan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanRecurrenceAndEnumerationTarget.lean/declarations/catalan.md) | 37 | `declaration-track:73770f1f8c236f0453507583202529ab566c8874a5f8aff748e117b7bdef568a` |
+| 2 | `theorem` | [catalan_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanRecurrenceAndEnumerationTarget.lean/declarations/catalan-zero.md) | 41 | `result-track:16aa5e50707582fe05fac97f8fc4a47db7ec3fa83e17d8caa55e5f5ba89d2d53` |
+| 3 | `theorem` | [catalan_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanRecurrenceAndEnumerationTarget.lean/declarations/catalan-succ.md) | 45 | `result-track:39c16dd6452b5ff1f8acffe531365747bd0f99d8efc6f5da97f493953d7bdddd` |
+| 4 | `def` | [treesOfInternalCardinalityTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanRecurrenceAndEnumerationTarget.lean/declarations/treesofinternalcardinalitytarget.md) | 57 | `declaration-track:69ac783d6c2a76c8ee7fcfb53ee57d7fb2c9e2a3b04297b114b21f57df6eac46` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/SectionsPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/SectionsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SectionsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SectionsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_sections](../../../../../../ComputerScience/TheoryOfData/DataStructures/SectionsPublic.lean/declarations/mem-sections.md) | 25 | `result-track:47b6714d0f7b5e29a5a104f2d7ef5f25432479120183b2c00c7ac30a039695c5` |
-| 2 | `theorem` | [mem_sections_length](../../../../../../ComputerScience/TheoryOfData/DataStructures/SectionsPublic.lean/declarations/mem-sections-length.md) | 39 | `result-track:7f45265a412691d7959039eaf6b15203a7f120cf0c9946402459431789383733` |
-| 3 | `theorem` | [rel_sections](../../../../../../ComputerScience/TheoryOfData/DataStructures/SectionsPublic.lean/declarations/rel-sections.md) | 43 | `result-track:09c102be23309e8a5ecfedb1e0273bc96cb7b2d6ba1847b1dc0ddc46450c4441` |
+| 1 | `theorem` | [mem_sections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SectionsPublic.lean/declarations/mem-sections.md) | 25 | `result-track:47b6714d0f7b5e29a5a104f2d7ef5f25432479120183b2c00c7ac30a039695c5` |
+| 2 | `theorem` | [mem_sections_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SectionsPublic.lean/declarations/mem-sections-length.md) | 39 | `result-track:7f45265a412691d7959039eaf6b15203a7f120cf0c9946402459431789383733` |
+| 3 | `theorem` | [rel_sections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SectionsPublic.lean/declarations/rel-sections.md) | 43 | `result-track:09c102be23309e8a5ecfedb1e0273bc96cb7b2d6ba1847b1dc0ddc46450c4441` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

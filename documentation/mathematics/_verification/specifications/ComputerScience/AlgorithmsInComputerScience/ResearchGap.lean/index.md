@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchGap.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchGap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchGap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchGap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TheoremInputGap](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchGap.lean/declarations/theoreminputgap.md) | 14 | `declaration-track:5ae1a75cc4c3aef8eea449c63bd7d980ccd6074625131ca87b17056ca31a1347` |
-| 2 | `def` | [missing](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchGap.lean/declarations/missing.md) | 25 | `declaration-track:17b5ac4a2db9a2707225b4d49c57827092b6090dcfa05669b4ee76185bb15b74` |
-| 3 | `def` | [Closed](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchGap.lean/declarations/closed.md) | 29 | `declaration-track:ab0dfa8a6fa8f6c03871d7ab54555e05a89471df7735393d5075adaa89ef27a5` |
-| 4 | `theorem` | [mem_missing_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchGap.lean/declarations/mem-missing-iff.md) | 33 | `result-track:e4c54453bcf7432dabc85cfc7600ffed3bbfba9d35eabcb4ebb7c1569b226eb4` |
-| 5 | `theorem` | [closed_iff_missing_nil](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchGap.lean/declarations/closed-iff-missing-nil.md) | 39 | `result-track:67b2befb376daa6ab58a8be364d74fad48017ec27e4ef5488c4439c15b1aa7a0` |
+| 1 | `structure` | [TheoremInputGap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchGap.lean/declarations/theoreminputgap.md) | 14 | `declaration-track:5ae1a75cc4c3aef8eea449c63bd7d980ccd6074625131ca87b17056ca31a1347` |
+| 2 | `def` | [missing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchGap.lean/declarations/missing.md) | 25 | `declaration-track:17b5ac4a2db9a2707225b4d49c57827092b6090dcfa05669b4ee76185bb15b74` |
+| 3 | `def` | [Closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchGap.lean/declarations/closed.md) | 29 | `declaration-track:ab0dfa8a6fa8f6c03871d7ab54555e05a89471df7735393d5075adaa89ef27a5` |
+| 4 | `theorem` | [mem_missing_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchGap.lean/declarations/mem-missing-iff.md) | 33 | `result-track:e4c54453bcf7432dabc85cfc7600ffed3bbfba9d35eabcb4ebb7c1569b226eb4` |
+| 5 | `theorem` | [closed_iff_missing_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchGap.lean/declarations/closed-iff-missing-nil.md) | 39 | `result-track:67b2befb376daa6ab58a8be364d74fad48017ec27e4ef5488c4439c15b1aa7a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/QuarticResolventRootEquiv.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/QuarticResolventRootEquiv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticResolventRootEquiv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticResolventRootEquiv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticBaseResolventRootSet`](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolventRootSet.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Algebra.QuarticGaloisMatching`](../../../../AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticBaseResolventRootSet`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolventRootSet.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticGaloisMatching`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CubicRootCarrier](../../../../AssociativeRingsAndAlgebras/QuarticResolventRootEquiv.lean/declarations/cubicrootcarrier.md) | 30 | `declaration-track:686f447c066a70399939b566c66d57f24e985c6f8d2c34ca9fb6aaeb28db84f6` |
-| 2 | `def` | [perfectMatchingEquivCubicRoots](../../../../AssociativeRingsAndAlgebras/QuarticResolventRootEquiv.lean/declarations/perfectmatchingequivcubicroots.md) | 34 | `declaration-track:c72b15591f091a64eae62b16703001e437fa34deb52f5719d4ca504f7fda1fa9` |
-| 3 | `theorem` | [cubicRootCarrier_automorphism_compatible](../../../../AssociativeRingsAndAlgebras/QuarticResolventRootEquiv.lean/declarations/cubicrootcarrier-automorphism-compatible.md) | 62 | `result-track:e46ed2e1b527061866f2c103dfba67c8e19d4f97fd40815a7e8e45a1690bcba7` |
+| 1 | `def` | [CubicRootCarrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticResolventRootEquiv.lean/declarations/cubicrootcarrier.md) | 30 | `declaration-track:686f447c066a70399939b566c66d57f24e985c6f8d2c34ca9fb6aaeb28db84f6` |
+| 2 | `def` | [perfectMatchingEquivCubicRoots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticResolventRootEquiv.lean/declarations/perfectmatchingequivcubicroots.md) | 34 | `declaration-track:c72b15591f091a64eae62b16703001e437fa34deb52f5719d4ca504f7fda1fa9` |
+| 3 | `theorem` | [cubicRootCarrier_automorphism_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticResolventRootEquiv.lean/declarations/cubicrootcarrier-automorphism-compatible.md) | 62 | `result-track:e46ed2e1b527061866f2c103dfba67c8e19d4f97fd40815a7e8e45a1690bcba7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

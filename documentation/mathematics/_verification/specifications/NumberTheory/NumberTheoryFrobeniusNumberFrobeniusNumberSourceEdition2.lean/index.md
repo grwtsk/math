@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/NumberTheoryFrobeniusNumberFrobeniusNumberSourceEdition2.lean/index.md) · [Full source](../../../../NumberTheory/NumberTheoryFrobeniusNumberFrobeniusNumberSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryFrobeniusNumberFrobeniusNumberSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryFrobeniusNumberFrobeniusNumberSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FrobeniusNumber](../../../../NumberTheory/NumberTheoryFrobeniusNumberFrobeniusNumberSourceEdition2.lean/declarations/frobeniusnumber.md) | 48 | `declaration-track:6b59d81d3dfc77a6379ce878f6e180e875fe90d38986ed4920bc2269e60e221f` |
-| 2 | `theorem` | [frobeniusNumber_pair](../../../../NumberTheory/NumberTheoryFrobeniusNumberFrobeniusNumberSourceEdition2.lean/declarations/frobeniusnumber-pair.md) | 56 | `result-track:c92168ce587ca22c1eeb3ebd30f10568f4bee36bcdb3463a3a9189e1e6d8eabc` |
+| 1 | `def` | [FrobeniusNumber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryFrobeniusNumberFrobeniusNumberSourceEdition2.lean/declarations/frobeniusnumber.md) | 48 | `declaration-track:6b59d81d3dfc77a6379ce878f6e180e875fe90d38986ed4920bc2269e60e221f` |
+| 2 | `theorem` | [frobeniusNumber_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryFrobeniusNumberFrobeniusNumberSourceEdition2.lean/declarations/frobeniusnumber-pair.md) | 56 | `result-track:c92168ce587ca22c1eeb3ebd30f10568f4bee36bcdb3463a3a9189e1e6d8eabc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

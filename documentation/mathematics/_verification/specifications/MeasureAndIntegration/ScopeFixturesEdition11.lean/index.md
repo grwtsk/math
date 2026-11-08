@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ScopeFixturesEdition11.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ScopeFixturesEdition11.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesEdition11.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesEdition11.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_paired_deriv_zero](../../../../MeasureAndIntegration/ScopeFixturesEdition11.lean/declarations/actual-paired-deriv-zero.md) | 20 | `result-track:0a6595ba2791ab73e4235ea3a853640e42f6fc6a58d214ba43349e43c2885d57` |
-| 2 | `theorem` | [actual_bridge_boundary_product_zero](../../../../MeasureAndIntegration/ScopeFixturesEdition11.lean/declarations/actual-bridge-boundary-product-zero.md) | 47 | `result-track:2a46063595bcf9fbfb676982a7f6ea16d0242e1131079361abac5a2f07af0c59` |
-| 3 | `theorem` | [omitted_one_discrepancy_wrong_at_zero](../../../../MeasureAndIntegration/ScopeFixturesEdition11.lean/declarations/omitted-one-discrepancy-wrong-at-zero.md) | 58 | `result-track:5b9d302a9478646f52f1ad3ccb6505acca5ec8a1e93d3038478398ad4c181cc1` |
-| 4 | `theorem` | [constant_complete_pairing_zero](../../../../MeasureAndIntegration/ScopeFixturesEdition11.lean/declarations/constant-complete-pairing-zero.md) | 69 | `result-track:39b38de350f38cbc31ffcc468c268a140329fdaca152ab36da687f4c42ee5cb6` |
+| 1 | `theorem` | [actual_paired_deriv_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesEdition11.lean/declarations/actual-paired-deriv-zero.md) | 20 | `result-track:0a6595ba2791ab73e4235ea3a853640e42f6fc6a58d214ba43349e43c2885d57` |
+| 2 | `theorem` | [actual_bridge_boundary_product_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesEdition11.lean/declarations/actual-bridge-boundary-product-zero.md) | 47 | `result-track:2a46063595bcf9fbfb676982a7f6ea16d0242e1131079361abac5a2f07af0c59` |
+| 3 | `theorem` | [omitted_one_discrepancy_wrong_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesEdition11.lean/declarations/omitted-one-discrepancy-wrong-at-zero.md) | 58 | `result-track:5b9d302a9478646f52f1ad3ccb6505acca5ec8a1e93d3038478398ad4c181cc1` |
+| 4 | `theorem` | [constant_complete_pairing_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesEdition11.lean/declarations/constant-complete-pairing-zero.md) | 69 | `result-track:39b38de350f38cbc31ffcc468c268a140329fdaca152ab36da687f4c42ee5cb6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

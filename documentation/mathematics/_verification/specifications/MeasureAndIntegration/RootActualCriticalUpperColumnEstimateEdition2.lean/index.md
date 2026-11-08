@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RootActualCriticalUpperColumnEstimateEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RootActualCriticalUpperColumnEstimateEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualCriticalUpperColumnEstimateEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualCriticalUpperColumnEstimateEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [upper_column_time_orders](../../../../MeasureAndIntegration/RootActualCriticalUpperColumnEstimateEdition2.lean/declarations/upper-column-time-orders.md) | 24 | `result-track:eeb328175769688e6dc87ae6dc8d869f7e3b5e43dd412af8ad968b57286c01f2` |
-| 2 | `theorem` | [trace_intervalIntegrable](../../../../MeasureAndIntegration/RootActualCriticalUpperColumnEstimateEdition2.lean/declarations/trace-intervalintegrable.md) | 51 | `result-track:1ee8c0f9b1d4cdd745af164abb5ba86fb5822abdc7a1293d08202eae09a1e864` |
-| 3 | `theorem` | [actualUpperColumn_time_factor_eq_support](../../../../MeasureAndIntegration/RootActualCriticalUpperColumnEstimateEdition2.lean/declarations/actualuppercolumn-time-factor-eq-support.md) | 68 | `result-track:ca86ad2389087c6264b74b64a0db68825eefcc66bfed493f7c8582d6a12df480` |
-| 4 | `theorem` | [actualUpperColumn_normalized_time_factor_abs_le](../../../../MeasureAndIntegration/RootActualCriticalUpperColumnEstimateEdition2.lean/declarations/actualuppercolumn-normalized-time-factor-abs-le.md) | 97 | `result-track:53117c0d5218d1c2fdd6a42c5aaac6533dd0dec9462dc5fe8b3668d5611e3b6c` |
-| 5 | `def` | [actualCriticalUpperColumnConstant](../../../../MeasureAndIntegration/RootActualCriticalUpperColumnEstimateEdition2.lean/declarations/actualcriticaluppercolumnconstant.md) | 198 | `declaration-track:a426bf0303cfcd52c13eab62371d1f8e3cbd4e50b974a14e0ce95d6202f10ae3` |
-| 6 | `theorem` | [actualCriticalUpperColumnTrace_abs_le](../../../../MeasureAndIntegration/RootActualCriticalUpperColumnEstimateEdition2.lean/declarations/actualcriticaluppercolumntrace-abs-le.md) | 202 | `result-track:817591f82a632ae1d57491a8f35fd924b90dce8f5b49f715fcdc8cb4a34ae20e` |
+| 1 | `theorem` | [upper_column_time_orders](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualCriticalUpperColumnEstimateEdition2.lean/declarations/upper-column-time-orders.md) | 24 | `result-track:eeb328175769688e6dc87ae6dc8d869f7e3b5e43dd412af8ad968b57286c01f2` |
+| 2 | `theorem` | [trace_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualCriticalUpperColumnEstimateEdition2.lean/declarations/trace-intervalintegrable.md) | 51 | `result-track:1ee8c0f9b1d4cdd745af164abb5ba86fb5822abdc7a1293d08202eae09a1e864` |
+| 3 | `theorem` | [actualUpperColumn_time_factor_eq_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualCriticalUpperColumnEstimateEdition2.lean/declarations/actualuppercolumn-time-factor-eq-support.md) | 68 | `result-track:ca86ad2389087c6264b74b64a0db68825eefcc66bfed493f7c8582d6a12df480` |
+| 4 | `theorem` | [actualUpperColumn_normalized_time_factor_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualCriticalUpperColumnEstimateEdition2.lean/declarations/actualuppercolumn-normalized-time-factor-abs-le.md) | 97 | `result-track:53117c0d5218d1c2fdd6a42c5aaac6533dd0dec9462dc5fe8b3668d5611e3b6c` |
+| 5 | `def` | [actualCriticalUpperColumnConstant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualCriticalUpperColumnEstimateEdition2.lean/declarations/actualcriticaluppercolumnconstant.md) | 198 | `declaration-track:a426bf0303cfcd52c13eab62371d1f8e3cbd4e50b974a14e0ce95d6202f10ae3` |
+| 6 | `theorem` | [actualCriticalUpperColumnTrace_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualCriticalUpperColumnEstimateEdition2.lean/declarations/actualcriticaluppercolumntrace-abs-le.md) | 202 | `result-track:817591f82a632ae1d57491a8f35fd924b90dce8f5b49f715fcdc8cb4a34ae20e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

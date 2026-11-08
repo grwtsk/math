@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/Rank.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/Rank.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Rank.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Rank.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rank](../../../../GroupTheoryAndGeneralizations/Rank.lean/declarations/rank.md) | 29 | `declaration-track:5119e9283c9a5ffa2f3954647ee57f11a00ff80f3f66fe43d6458432bbebd4c8` |
-| 2 | `lemma` | [rank_spec](../../../../GroupTheoryAndGeneralizations/Rank.lean/declarations/rank-spec.md) | 33 | `result-track:7b30730d3f749fadfd8e288a86bbb9de915ef5346783cd393b7c46ce43a103b9` |
-| 3 | `lemma` | [rank_le](../../../../GroupTheoryAndGeneralizations/Rank.lean/declarations/rank-le.md) | 37 | `result-track:b73bd9329f791db7086b7fce4c993dfefa7c2affdff0fb5b690433b861f304f9` |
-| 4 | `lemma` | [rank_le_of_surjective](../../../../GroupTheoryAndGeneralizations/Rank.lean/declarations/rank-le-of-surjective.md) | 41 | `result-track:50fa1561ff64b7f0a378112b2f0d90828ca6e143c3199eb957a3c507f0649cab` |
-| 5 | `lemma` | [rank_range_le](../../../../GroupTheoryAndGeneralizations/Rank.lean/declarations/rank-range-le.md) | 50 | `result-track:cc18db053b99f28f27f56066a3ea2b936e48643abc0662d157d813ec0cfec197` |
-| 6 | `lemma` | [rank_congr](../../../../GroupTheoryAndGeneralizations/Rank.lean/declarations/rank-congr-source-edition-2.md) | 54 | `result-track:e3d3ffb6ec1df956d6cd9235ed7e2df2d82128b9be15008c711494749d78e368` |
-| 7 | `lemma` | [rank_congr](../../../../GroupTheoryAndGeneralizations/Rank.lean/declarations/rank-congr.md) | 63 | `result-track:91ce50216d4863ddbc7d74b52b5f95570ecfd0486b14724c8c2f7bafaadd15af` |
-| 8 | `lemma` | [rank_closure_finset_le_card](../../../../GroupTheoryAndGeneralizations/Rank.lean/declarations/rank-closure-finset-le-card.md) | 67 | `result-track:0878ec4408aad5758b465b44bd21462f1d1082f91e7331512824550539c95f98` |
-| 9 | `lemma` | [rank_closure_finite_le_nat_card](../../../../GroupTheoryAndGeneralizations/Rank.lean/declarations/rank-closure-finite-le-nat-card.md) | 80 | `result-track:c02d02a2700b276f26052e33c92511b516356b25b4d1bd54161611fb789812b6` |
-| 10 | `lemma` | [nat_card_centralizer_nat_card_stabilizer](../../../../GroupTheoryAndGeneralizations/Rank.lean/declarations/nat-card-centralizer-nat-card-stabilizer.md) | 85 | `result-track:984f3258df320859e249da394c0ddaea8b8ec8bbc17d814d989e3b15b664d88d` |
+| 1 | `def` | [rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Rank.lean/declarations/rank.md) | 29 | `declaration-track:5119e9283c9a5ffa2f3954647ee57f11a00ff80f3f66fe43d6458432bbebd4c8` |
+| 2 | `lemma` | [rank_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Rank.lean/declarations/rank-spec.md) | 33 | `result-track:7b30730d3f749fadfd8e288a86bbb9de915ef5346783cd393b7c46ce43a103b9` |
+| 3 | `lemma` | [rank_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Rank.lean/declarations/rank-le.md) | 37 | `result-track:b73bd9329f791db7086b7fce4c993dfefa7c2affdff0fb5b690433b861f304f9` |
+| 4 | `lemma` | [rank_le_of_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Rank.lean/declarations/rank-le-of-surjective.md) | 41 | `result-track:50fa1561ff64b7f0a378112b2f0d90828ca6e143c3199eb957a3c507f0649cab` |
+| 5 | `lemma` | [rank_range_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Rank.lean/declarations/rank-range-le.md) | 50 | `result-track:cc18db053b99f28f27f56066a3ea2b936e48643abc0662d157d813ec0cfec197` |
+| 6 | `lemma` | [rank_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Rank.lean/declarations/rank-congr-source-edition-2.md) | 54 | `result-track:e3d3ffb6ec1df956d6cd9235ed7e2df2d82128b9be15008c711494749d78e368` |
+| 7 | `lemma` | [rank_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Rank.lean/declarations/rank-congr.md) | 63 | `result-track:91ce50216d4863ddbc7d74b52b5f95570ecfd0486b14724c8c2f7bafaadd15af` |
+| 8 | `lemma` | [rank_closure_finset_le_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Rank.lean/declarations/rank-closure-finset-le-card.md) | 67 | `result-track:0878ec4408aad5758b465b44bd21462f1d1082f91e7331512824550539c95f98` |
+| 9 | `lemma` | [rank_closure_finite_le_nat_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Rank.lean/declarations/rank-closure-finite-le-nat-card.md) | 80 | `result-track:c02d02a2700b276f26052e33c92511b516356b25b4d1bd54161611fb789812b6` |
+| 10 | `lemma` | [nat_card_centralizer_nat_card_stabilizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Rank.lean/declarations/nat-card-centralizer-nat-card-stabilizer.md) | 85 | `result-track:984f3258df320859e249da394c0ddaea8b8ec8bbc17d814d989e3b15b664d88d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

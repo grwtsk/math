@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TaggedIndexBase.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TaggedIndexBase.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TaggedIndexBase.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TaggedIndexBase.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AdelicBase](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TaggedIndexBase.lean/declarations/adelicbase.md) | 37 | `declaration-track:20d2ce993dbcd496129e784f77a4dffd635ae90ce5e31e093b6c21a035b381f7` |
-| 2 | `def` | [defaultAdelicBase](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TaggedIndexBase.lean/declarations/defaultadelicbase.md) | 43 | `declaration-track:8e5d54a0148cfb14c714dcb84f072dda7492abb270d382ec77a55cb9c39baad0` |
+| 1 | `structure` | [AdelicBase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TaggedIndexBase.lean/declarations/adelicbase.md) | 37 | `declaration-track:20d2ce993dbcd496129e784f77a4dffd635ae90ce5e31e093b6c21a035b381f7` |
+| 2 | `def` | [defaultAdelicBase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TaggedIndexBase.lean/declarations/defaultadelicbase.md) | 43 | `declaration-track:8e5d54a0148cfb14c714dcb84f072dda7492abb270d382ec77a55cb9c39baad0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

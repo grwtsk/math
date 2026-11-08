@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RequestChangeKind.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RequestChangeKind.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RequestChangeKind.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RequestChangeKind.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ChangeKind](../../../../../ComputerScience/AlgorithmsInComputerScience/RequestChangeKind.lean/declarations/changekind.md) | 6 | `declaration-track:2bc89be73141f0b039f1c35e01895aaa14cc0f0af207f37b8e6fe4950acc1ab2` |
-| 2 | `structure` | [ChangedLeanFile](../../../../../ComputerScience/AlgorithmsInComputerScience/RequestChangeKind.lean/declarations/changedleanfile.md) | 16 | `declaration-track:fc7f2795a6451f87558c593292517c9c47fc268c6148c2406f06adc163cab86d` |
-| 3 | `inductive` | [ArtifactKind](../../../../../ComputerScience/AlgorithmsInComputerScience/RequestChangeKind.lean/declarations/artifactkind.md) | 24 | `declaration-track:7bcf8e3e793059c1562f9dd38b5c75e24394b3699e273a0d5fbd5750a59ad236` |
-| 4 | `structure` | [IncrementalGenerationRequest](../../../../../ComputerScience/AlgorithmsInComputerScience/RequestChangeKind.lean/declarations/incrementalgenerationrequest.md) | 40 | `declaration-track:24abe2f73439451134308be44d9afee25acfe2b989bd6abdb59d43987eab660e` |
-| 5 | `theorem` | [changedLeanFile_boundary_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/RequestChangeKind.lean/declarations/changedleanfile-boundary-visible.md) | 51 | `result-track:845a444b25cbbb863a8487e8c252acbcf746b34ede20fe828a5e107c454fa5f3` |
+| 1 | `inductive` | [ChangeKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RequestChangeKind.lean/declarations/changekind.md) | 6 | `declaration-track:2bc89be73141f0b039f1c35e01895aaa14cc0f0af207f37b8e6fe4950acc1ab2` |
+| 2 | `structure` | [ChangedLeanFile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RequestChangeKind.lean/declarations/changedleanfile.md) | 16 | `declaration-track:fc7f2795a6451f87558c593292517c9c47fc268c6148c2406f06adc163cab86d` |
+| 3 | `inductive` | [ArtifactKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RequestChangeKind.lean/declarations/artifactkind.md) | 24 | `declaration-track:7bcf8e3e793059c1562f9dd38b5c75e24394b3699e273a0d5fbd5750a59ad236` |
+| 4 | `structure` | [IncrementalGenerationRequest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RequestChangeKind.lean/declarations/incrementalgenerationrequest.md) | 40 | `declaration-track:24abe2f73439451134308be44d9afee25acfe2b989bd6abdb59d43987eab660e` |
+| 5 | `theorem` | [changedLeanFile_boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RequestChangeKind.lean/declarations/changedleanfile-boundary-visible.md) | 51 | `result-track:845a444b25cbbb863a8487e8c252acbcf746b34ede20fe828a5e107c454fa5f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

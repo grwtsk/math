@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularExplicitLowerNamespacedEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularExplicitLowerNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularExplicitLowerNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularExplicitLowerNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [all_real_lower_of_triangular_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularExplicitLowerNamespacedEdition2.lean/declarations/all-real-lower-of-triangular-upper.md) | 28 | `result-track:be90c184ba2fe804f740112fa2083237c5a9df25bfd2dfc22ddf98f5e840438d` |
-| 2 | `theorem` | [all_real_lower_of_truncated_smoothing_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularExplicitLowerNamespacedEdition2.lean/declarations/all-real-lower-of-truncated-smoothing-upper.md) | 39 | `result-track:89ffbafdd5ab934291be4fefcb70510d6a611a691483b2bc3eb938f31d32b6a4` |
-| 3 | `theorem` | [triangular_tail_lower_budget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularExplicitLowerNamespacedEdition2.lean/declarations/triangular-tail-lower-budget.md) | 51 | `result-track:37ccfd28e207b29240647748e7389f70d89f030b031976aca4f907f0b48171fa` |
+| 1 | `theorem` | [all_real_lower_of_triangular_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularExplicitLowerNamespacedEdition2.lean/declarations/all-real-lower-of-triangular-upper.md) | 28 | `result-track:be90c184ba2fe804f740112fa2083237c5a9df25bfd2dfc22ddf98f5e840438d` |
+| 2 | `theorem` | [all_real_lower_of_truncated_smoothing_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularExplicitLowerNamespacedEdition2.lean/declarations/all-real-lower-of-truncated-smoothing-upper.md) | 39 | `result-track:89ffbafdd5ab934291be4fefcb70510d6a611a691483b2bc3eb938f31d32b6a4` |
+| 3 | `theorem` | [triangular_tail_lower_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularExplicitLowerNamespacedEdition2.lean/declarations/triangular-tail-lower-budget.md) | 51 | `result-track:37ccfd28e207b29240647748e7389f70d89f030b031976aca4f907f0b48171fa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

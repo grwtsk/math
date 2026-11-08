@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FunctorComparisonEvidence.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FunctorComparisonEvidence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FunctorComparisonEvidence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FunctorComparisonEvidence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Minimal Category Core Functor Data](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MinimalCategoryCoreFunctorData.lean/index.md) — import line 17; pinned internal source present.
-- [Isomorphism Data](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsomorphismData.lean/index.md) — import line 18; pinned internal source present.
+- [Minimal Category Core Functor Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MinimalCategoryCoreFunctorData.lean/index.md) — import line 17; pinned internal source present.
+- [Isomorphism Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsomorphismData.lean/index.md) — import line 18; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Full](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FunctorComparisonEvidence.lean/declarations/full.md) | 31 | `declaration-track:2dc4046644289639b4711a9f8fde19c2676eaf34916b80f942bbeb13bad77812` |
-| 2 | `def` | [Faithful](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FunctorComparisonEvidence.lean/declarations/faithful.md) | 39 | `declaration-track:f62aa1e34da1e86b71377618d38a67cd98b04d96b2f511366b66e0774003144b` |
-| 3 | `def` | [EssentiallySurjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FunctorComparisonEvidence.lean/declarations/essentiallysurjective.md) | 47 | `declaration-track:8d7fc1f038e75f704d3e7cdbc8b805ca12d2604add78fdd8d88df66286e1bc73` |
-| 4 | `structure` | [EquivalenceWitness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FunctorComparisonEvidence.lean/declarations/equivalencewitness.md) | 60 | `declaration-track:a78b140850aad98dc8ed6f0bc32a2e8bd35b64f6f707015de014bbec9c18ca3c` |
+| 1 | `def` | [Full](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FunctorComparisonEvidence.lean/declarations/full.md) | 31 | `declaration-track:2dc4046644289639b4711a9f8fde19c2676eaf34916b80f942bbeb13bad77812` |
+| 2 | `def` | [Faithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FunctorComparisonEvidence.lean/declarations/faithful.md) | 39 | `declaration-track:f62aa1e34da1e86b71377618d38a67cd98b04d96b2f511366b66e0774003144b` |
+| 3 | `def` | [EssentiallySurjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FunctorComparisonEvidence.lean/declarations/essentiallysurjective.md) | 47 | `declaration-track:8d7fc1f038e75f704d3e7cdbc8b805ca12d2604add78fdd8d88df66286e1bc73` |
+| 4 | `structure` | [EquivalenceWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FunctorComparisonEvidence.lean/declarations/equivalencewitness.md) | 60 | `declaration-track:a78b140850aad98dc8ed6f0bc32a2e8bd35b64f6f707015de014bbec9c18ca3c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

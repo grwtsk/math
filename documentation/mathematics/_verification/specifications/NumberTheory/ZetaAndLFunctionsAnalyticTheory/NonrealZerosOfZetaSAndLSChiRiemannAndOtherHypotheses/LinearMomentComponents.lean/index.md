@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LinearMomentComponents.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LinearMomentComponents.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LinearMomentComponents.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LinearMomentComponents.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Spectral.Sheaf.RationalMomentFredholmBridge`](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Spectral.Sheaf.RationalMomentFredholmBridge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.NumberTheory.LSeries.Dirichlet` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [complexify](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LinearMomentComponents.lean/declarations/complexify.md) | 29 | `declaration-track:bf04ba68379770fa9eab54bc0ee6bbbb43f51e211201a206961741d3ccba1145` |
-| 2 | `theorem` | [complexify_apply](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LinearMomentComponents.lean/declarations/complexify-apply.md) | 33 | `result-track:7e27e28bddcdcda037c217984e08bafced3cf6cb33d0d659cebafe8655f8ce4e` |
-| 3 | `theorem` | [complexify_zetaMoment](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LinearMomentComponents.lean/declarations/complexify-zetamoment.md) | 38 | `result-track:a1c9bf9482fdbca231370b5aec62ac01f427e89f5898be3e29a19e943dbd7b66` |
-| 4 | `theorem` | [complexify_mobiusMoment](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LinearMomentComponents.lean/declarations/complexify-mobiusmoment.md) | 45 | `result-track:1684e0a6b30b094189c0883c57b37f7915c4f542325997cedc2df60c8950cf35` |
-| 5 | `theorem` | [zetaMoment_lseries_eq_riemannZeta](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LinearMomentComponents.lean/declarations/zetamoment-lseries-eq-riemannzeta.md) | 52 | `result-track:4b2978d3820a0606cc7f72390689d37b87584388abc8d096e6eddb53d24c5bc6` |
-| 6 | `theorem` | [mobiusMoment_lseries_eq_inv_riemannZeta](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LinearMomentComponents.lean/declarations/mobiusmoment-lseries-eq-inv-riemannzeta.md) | 58 | `result-track:7d35480153af146bdfe8dc8d6693486d90e4008fbf670bc69095bbe1bf62c756` |
+| 1 | `def` | [complexify](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LinearMomentComponents.lean/declarations/complexify.md) | 29 | `declaration-track:bf04ba68379770fa9eab54bc0ee6bbbb43f51e211201a206961741d3ccba1145` |
+| 2 | `theorem` | [complexify_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LinearMomentComponents.lean/declarations/complexify-apply.md) | 33 | `result-track:7e27e28bddcdcda037c217984e08bafced3cf6cb33d0d659cebafe8655f8ce4e` |
+| 3 | `theorem` | [complexify_zetaMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LinearMomentComponents.lean/declarations/complexify-zetamoment.md) | 38 | `result-track:a1c9bf9482fdbca231370b5aec62ac01f427e89f5898be3e29a19e943dbd7b66` |
+| 4 | `theorem` | [complexify_mobiusMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LinearMomentComponents.lean/declarations/complexify-mobiusmoment.md) | 45 | `result-track:1684e0a6b30b094189c0883c57b37f7915c4f542325997cedc2df60c8950cf35` |
+| 5 | `theorem` | [zetaMoment_lseries_eq_riemannZeta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LinearMomentComponents.lean/declarations/zetamoment-lseries-eq-riemannzeta.md) | 52 | `result-track:4b2978d3820a0606cc7f72390689d37b87584388abc8d096e6eddb53d24c5bc6` |
+| 6 | `theorem` | [mobiusMoment_lseries_eq_inv_riemannZeta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LinearMomentComponents.lean/declarations/mobiusmoment-lseries-eq-inv-riemannzeta.md) | 58 | `result-track:7d35480153af146bdfe8dc8d6693486d90e4008fbf670bc69095bbe1bf62c756` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

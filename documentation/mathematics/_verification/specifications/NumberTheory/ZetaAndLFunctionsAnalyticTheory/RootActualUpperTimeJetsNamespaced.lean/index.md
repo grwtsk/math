@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperTimeJetsNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperTimeJetsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperTimeJetsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperTimeJetsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [source_jet_zero_right](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperTimeJetsNamespaced.lean/declarations/source-jet-zero-right.md) | 27 | `result-track:b60421a83f5d97969ecc39d6f584f6219bf79b9ef3410e8b6ff78cd382002ac7` |
-| 2 | `theorem` | [actualUpperTimeJet_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperTimeJetsNamespaced.lean/declarations/actualuppertimejet-zero.md) | 47 | `result-track:c91c6869d3fbc9ffa5f06dd07f3e4bb52277e998476df1f2111436e1b68caa4c` |
-| 3 | `theorem` | [actualMixedDensity_upperTime_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperTimeJetsNamespaced.lean/declarations/actualmixeddensity-uppertime-zero.md) | 56 | `result-track:1ab932aac234b852899d37363614ec8bcdbd1009eaa3d4680b7e5331a7ca2494` |
-| 4 | `theorem` | [actualTwistedTimeWork_upperTime_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperTimeJetsNamespaced.lean/declarations/actualtwistedtimework-uppertime-zero.md) | 65 | `result-track:1fa82a11d146916195bb5561097471a61fdaff32ed1969addb99c04557c737c1` |
-| 5 | `theorem` | [actualCovariantWork_upperTime_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperTimeJetsNamespaced.lean/declarations/actualcovariantwork-uppertime-zero.md) | 77 | `result-track:13c0347cac26de6850e2ef0e85a41241a348bd11db43ebd51a55f73a18de5d67` |
+| 1 | `theorem` | [source_jet_zero_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperTimeJetsNamespaced.lean/declarations/source-jet-zero-right.md) | 27 | `result-track:b60421a83f5d97969ecc39d6f584f6219bf79b9ef3410e8b6ff78cd382002ac7` |
+| 2 | `theorem` | [actualUpperTimeJet_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperTimeJetsNamespaced.lean/declarations/actualuppertimejet-zero.md) | 47 | `result-track:c91c6869d3fbc9ffa5f06dd07f3e4bb52277e998476df1f2111436e1b68caa4c` |
+| 3 | `theorem` | [actualMixedDensity_upperTime_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperTimeJetsNamespaced.lean/declarations/actualmixeddensity-uppertime-zero.md) | 56 | `result-track:1ab932aac234b852899d37363614ec8bcdbd1009eaa3d4680b7e5331a7ca2494` |
+| 4 | `theorem` | [actualTwistedTimeWork_upperTime_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperTimeJetsNamespaced.lean/declarations/actualtwistedtimework-uppertime-zero.md) | 65 | `result-track:1fa82a11d146916195bb5561097471a61fdaff32ed1969addb99c04557c737c1` |
+| 5 | `theorem` | [actualCovariantWork_upperTime_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperTimeJetsNamespaced.lean/declarations/actualcovariantwork-uppertime-zero.md) | 77 | `result-track:13c0347cac26de6850e2ef0e85a41241a348bd11db43ebd51a55f73a18de5d67` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

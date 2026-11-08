@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseSetCard.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseSetCard.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseSetCard.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseSetCard.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [_root_.Cardinal.mk_smul_set₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseSetCard.lean/declarations/root-cardinal-mk-smul-set.md) | 23 | `result-track:f52a4b6667564c162dbae519d42c00b8f4a6f48b3ba2e07aeda82a72e2e1611d` |
-| 2 | `lemma` | [natCard_smul_set₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseSetCard.lean/declarations/natcard-smul-set.md) | 26 | `result-track:571c33deb55ec06c3ef59b7f51fe32d193617a3c54bd2b99db42d5ca7e837e7b` |
+| 1 | `lemma` | [_root_.Cardinal.mk_smul_set₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseSetCard.lean/declarations/root-cardinal-mk-smul-set.md) | 23 | `result-track:f52a4b6667564c162dbae519d42c00b8f4a6f48b3ba2e07aeda82a72e2e1611d` |
+| 2 | `lemma` | [natCard_smul_set₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseSetCard.lean/declarations/natcard-smul-set.md) | 26 | `result-track:571c33deb55ec06c3ef59b7f51fe32d193617a3c54bd2b99db42d5ca7e837e7b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

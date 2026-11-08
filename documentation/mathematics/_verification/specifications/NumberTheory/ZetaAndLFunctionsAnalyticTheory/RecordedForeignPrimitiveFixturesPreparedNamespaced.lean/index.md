@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RecordedForeignPrimitiveFixturesPreparedNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RecordedForeignPrimitiveFixturesPreparedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RecordedForeignPrimitiveFixturesPreparedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RecordedForeignPrimitiveFixturesPreparedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [primitive_five_nonneg_on_closed_support](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RecordedForeignPrimitiveFixturesPreparedNamespaced.lean/declarations/primitive-five-nonneg-on-closed-support.md) | 27 | `result-track:501b2a12efda182abefcfaa9838caafc1107f7d2767e539edf72ef7e64df105f` |
-| 2 | `theorem` | [primitive_five_second_derivative_negative_inside](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RecordedForeignPrimitiveFixturesPreparedNamespaced.lean/declarations/primitive-five-second-derivative-negative-inside.md) | 32 | `result-track:1e39b73c9da78e0d79e48d882c75b3c62469d199345ac80abf81b169bb09b9fe` |
-| 3 | `theorem` | [primitive_five_second_derivative_at_zero_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RecordedForeignPrimitiveFixturesPreparedNamespaced.lean/declarations/primitive-five-second-derivative-at-zero-one.md) | 40 | `result-track:14659d427043b460a0393666520daf91c6409c6b22fcc3e80be3d9416f77a601` |
+| 1 | `theorem` | [primitive_five_nonneg_on_closed_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RecordedForeignPrimitiveFixturesPreparedNamespaced.lean/declarations/primitive-five-nonneg-on-closed-support.md) | 27 | `result-track:501b2a12efda182abefcfaa9838caafc1107f7d2767e539edf72ef7e64df105f` |
+| 2 | `theorem` | [primitive_five_second_derivative_negative_inside](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RecordedForeignPrimitiveFixturesPreparedNamespaced.lean/declarations/primitive-five-second-derivative-negative-inside.md) | 32 | `result-track:1e39b73c9da78e0d79e48d882c75b3c62469d199345ac80abf81b169bb09b9fe` |
+| 3 | `theorem` | [primitive_five_second_derivative_at_zero_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RecordedForeignPrimitiveFixturesPreparedNamespaced.lean/declarations/primitive-five-second-derivative-at-zero-one.md) | 40 | `result-track:14659d427043b460a0393666520daf91c6409c6b22fcc3e80be3d9416f77a601` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

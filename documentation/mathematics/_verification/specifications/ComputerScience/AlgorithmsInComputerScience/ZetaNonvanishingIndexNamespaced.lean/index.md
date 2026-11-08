@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ZetaNonvanishingIndexNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ZetaNonvanishingIndexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ZetaNonvanishingIndexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ZetaNonvanishingIndexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mobiusDirichletSeriesConvergenceAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ZetaNonvanishingIndexNamespaced.lean/declarations/mobiusdirichletseriesconvergenceanchor.md) | 22 | `declaration-track:28f4a90892dcab62f8a131c9647ff83456aad19df3d8230a551fcff736d2a281` |
-| 2 | `def` | [dirichletCauchyProductAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ZetaNonvanishingIndexNamespaced.lean/declarations/dirichletcauchyproductanchor.md) | 32 | `declaration-track:5091913776cd23a6529ca10c77f894ebb8069dc442bdb95563d5998b4a7c9ffa` |
-| 3 | `def` | [zetaNonvanishingHalfPlaneAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ZetaNonvanishingIndexNamespaced.lean/declarations/zetanonvanishinghalfplaneanchor.md) | 42 | `declaration-track:cb45bfe0126165b7e1f13f0d88fa549ada24108cfa45d9c7ba81972cbd6b32ee` |
-| 4 | `def` | [zetaZeroFreeLineOneTargetAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ZetaNonvanishingIndexNamespaced.lean/declarations/zetazerofreelineonetargetanchor.md) | 52 | `declaration-track:c740a0c652ab7a1b8077adba41973281f53f0e1d7c288826978db7dc80693b40` |
-| 5 | `def` | [pntStillTargetAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ZetaNonvanishingIndexNamespaced.lean/declarations/pntstilltargetanchor.md) | 62 | `declaration-track:32bb18d48e89abf5dfaf189a1a133b7b645b8cce2835d63c12a805ac48b8ec41` |
-| 6 | `def` | [analyticContinuationStillTargetAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ZetaNonvanishingIndexNamespaced.lean/declarations/analyticcontinuationstilltargetanchor.md) | 72 | `declaration-track:cfa9999960497efcd6474677206754b0f3cafe0530a8be6bc5cdd8abd679f39a` |
-| 7 | `def` | [zetaNonvanishingAnchors](../../../../../ComputerScience/AlgorithmsInComputerScience/ZetaNonvanishingIndexNamespaced.lean/declarations/zetanonvanishinganchors.md) | 82 | `declaration-track:731c93536376c39fb569565bcd00e3b5aed548291ca87ddd7e7b6fd6b2a0185e` |
+| 1 | `def` | [mobiusDirichletSeriesConvergenceAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ZetaNonvanishingIndexNamespaced.lean/declarations/mobiusdirichletseriesconvergenceanchor.md) | 22 | `declaration-track:28f4a90892dcab62f8a131c9647ff83456aad19df3d8230a551fcff736d2a281` |
+| 2 | `def` | [dirichletCauchyProductAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ZetaNonvanishingIndexNamespaced.lean/declarations/dirichletcauchyproductanchor.md) | 32 | `declaration-track:5091913776cd23a6529ca10c77f894ebb8069dc442bdb95563d5998b4a7c9ffa` |
+| 3 | `def` | [zetaNonvanishingHalfPlaneAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ZetaNonvanishingIndexNamespaced.lean/declarations/zetanonvanishinghalfplaneanchor.md) | 42 | `declaration-track:cb45bfe0126165b7e1f13f0d88fa549ada24108cfa45d9c7ba81972cbd6b32ee` |
+| 4 | `def` | [zetaZeroFreeLineOneTargetAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ZetaNonvanishingIndexNamespaced.lean/declarations/zetazerofreelineonetargetanchor.md) | 52 | `declaration-track:c740a0c652ab7a1b8077adba41973281f53f0e1d7c288826978db7dc80693b40` |
+| 5 | `def` | [pntStillTargetAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ZetaNonvanishingIndexNamespaced.lean/declarations/pntstilltargetanchor.md) | 62 | `declaration-track:32bb18d48e89abf5dfaf189a1a133b7b645b8cce2835d63c12a805ac48b8ec41` |
+| 6 | `def` | [analyticContinuationStillTargetAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ZetaNonvanishingIndexNamespaced.lean/declarations/analyticcontinuationstilltargetanchor.md) | 72 | `declaration-track:cfa9999960497efcd6474677206754b0f3cafe0530a8be6bc5cdd8abd679f39a` |
+| 7 | `def` | [zetaNonvanishingAnchors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ZetaNonvanishingIndexNamespaced.lean/declarations/zetanonvanishinganchors.md) | 82 | `declaration-track:731c93536376c39fb569565bcd00e3b5aed548291ca87ddd7e7b6fd6b2a0185e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

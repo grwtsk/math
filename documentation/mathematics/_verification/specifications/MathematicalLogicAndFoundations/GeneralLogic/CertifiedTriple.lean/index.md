@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertifiedTriple.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertifiedTriple.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertifiedTriple.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertifiedTriple.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Relation Data](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationData.lean/index.md) — import line 20; pinned internal source present.
+- [Relation Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationData.lean/index.md) — import line 20; pinned internal source present.
 - `Folder.Arithmetic.ModularWitness` — import line 21; external provider; requires a separately pinned dependency.
 - `Folder.Monodromy.EllipticShellBridge` — import line 22; external provider; requires a separately pinned dependency.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ModularLocusPoint](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertifiedTriple.lean/declarations/modularlocuspoint.md) | 38 | `declaration-track:e57183bb920e022213e8486293b82f2fba16c045127d022eb6644973676861d1` |
-| 2 | `theorem` | [modular_locus_point_certified](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertifiedTriple.lean/declarations/modular-locus-point-certified.md) | 44 | `result-track:32fda64f96add11c73b4a5e42d14f1195cb624399bf0cf07bab2355566138bf6` |
+| 1 | `structure` | [ModularLocusPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertifiedTriple.lean/declarations/modularlocuspoint.md) | 38 | `declaration-track:e57183bb920e022213e8486293b82f2fba16c045127d022eb6644973676861d1` |
+| 2 | `theorem` | [modular_locus_point_certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertifiedTriple.lean/declarations/modular-locus-point-certified.md) | 44 | `result-track:32fda64f96add11c73b4a5e42d14f1195cb624399bf0cf07bab2355566138bf6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

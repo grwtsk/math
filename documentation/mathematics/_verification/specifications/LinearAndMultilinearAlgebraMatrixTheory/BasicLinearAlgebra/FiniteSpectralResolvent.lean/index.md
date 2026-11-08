@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.FiniteSpectralHeat`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralHeat.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.FiniteSpectralHeat`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralHeat.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [shiftedOperator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/declarations/shiftedoperator.md) | 17 | `declaration-track:0ad51dd20215dfd8feba0f698d48e92682b2648adbb8547ea1aebe419edb348f` |
-| 2 | `def` | [coordinateResolvent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/declarations/coordinateresolvent.md) | 21 | `declaration-track:6038df48e6f001d722f8ffa3872e431385f78fec2b1eb42bb44adcac5cd9848e` |
-| 3 | `def` | [resolvent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/declarations/resolvent.md) | 26 | `declaration-track:e91412016233e474c46f5f42ede5b6d877ba876d525cd338d20518ffea7c5733` |
-| 4 | `theorem` | [shiftedOperator_coordinates](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/declarations/shiftedoperator-coordinates.md) | 31 | `result-track:cb71297dd30e0459619cae76ff9fbf1e4fc3afcacd5060d48e0dcf06eb8de714` |
-| 5 | `theorem` | [resolvent_coordinates](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/declarations/resolvent-coordinates.md) | 40 | `result-track:2467d533a4f2d47dd4104de2ec945a344809a52992c1e88943beccbd4ab41b10` |
-| 6 | `theorem` | [shiftedOperator_comp_resolvent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/declarations/shiftedoperator-comp-resolvent.md) | 45 | `result-track:4e043c593c8819acdc244c4f1cb07386d9872fef3f3e05a95505785b66f91a4a` |
-| 7 | `theorem` | [resolvent_comp_shiftedOperator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/declarations/resolvent-comp-shiftedoperator.md) | 60 | `result-track:d22d6e06e96a0d7547c25420d5f0189a43de79b53666719f30d2368271990f4d` |
-| 8 | `theorem` | [resolvent_operator_comm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/declarations/resolvent-operator-comm.md) | 75 | `result-track:176cb38e060ab75618099b04b87fd75f3ebfff9988078d2ca0e20a4b9b159855` |
+| 1 | `def` | [shiftedOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/declarations/shiftedoperator.md) | 17 | `declaration-track:0ad51dd20215dfd8feba0f698d48e92682b2648adbb8547ea1aebe419edb348f` |
+| 2 | `def` | [coordinateResolvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/declarations/coordinateresolvent.md) | 21 | `declaration-track:6038df48e6f001d722f8ffa3872e431385f78fec2b1eb42bb44adcac5cd9848e` |
+| 3 | `def` | [resolvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/declarations/resolvent.md) | 26 | `declaration-track:e91412016233e474c46f5f42ede5b6d877ba876d525cd338d20518ffea7c5733` |
+| 4 | `theorem` | [shiftedOperator_coordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/declarations/shiftedoperator-coordinates.md) | 31 | `result-track:cb71297dd30e0459619cae76ff9fbf1e4fc3afcacd5060d48e0dcf06eb8de714` |
+| 5 | `theorem` | [resolvent_coordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/declarations/resolvent-coordinates.md) | 40 | `result-track:2467d533a4f2d47dd4104de2ec945a344809a52992c1e88943beccbd4ab41b10` |
+| 6 | `theorem` | [shiftedOperator_comp_resolvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/declarations/shiftedoperator-comp-resolvent.md) | 45 | `result-track:4e043c593c8819acdc244c4f1cb07386d9872fef3f3e05a95505785b66f91a4a` |
+| 7 | `theorem` | [resolvent_comp_shiftedOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/declarations/resolvent-comp-shiftedoperator.md) | 60 | `result-track:d22d6e06e96a0d7547c25420d5f0189a43de79b53666719f30d2368271990f4d` |
+| 8 | `theorem` | [resolvent_operator_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpectralResolvent.lean/declarations/resolvent-operator-comm.md) | 75 | `result-track:176cb38e060ab75618099b04b87fd75f3ebfff9988078d2ca0e20a4b9b159855` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

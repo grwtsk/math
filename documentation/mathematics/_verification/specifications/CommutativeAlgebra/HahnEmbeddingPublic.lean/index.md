@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/HahnEmbeddingPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/HahnEmbeddingPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HahnEmbeddingPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HahnEmbeddingPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/HahnEmbeddingPublic.lean/declarations/instance.md) | 38 | `declaration-track:2c05633bc16ca1743676a6529759b3002162f00f744c9909c79a555c874ce282` |
-| 2 | `theorem` | [hahnEmbedding_isOrderedModule_rat](../../../../CommutativeAlgebra/HahnEmbeddingPublic.lean/declarations/hahnembedding-isorderedmodule-rat.md) | 46 | `result-track:4534beccdf3c1c4037ed759bf0cdc624160c0d7fccbc18b2cd03e5a59d7a4d63` |
-| 3 | `theorem` | [hahnEmbedding_isOrderedAddMonoid](../../../../CommutativeAlgebra/HahnEmbeddingPublic.lean/declarations/hahnembedding-isorderedaddmonoid.md) | 60 | `result-track:eb2bad934270058eda1932229a42c970ed115b32bc4fc7a843258675f1672161` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HahnEmbeddingPublic.lean/declarations/instance.md) | 38 | `declaration-track:2c05633bc16ca1743676a6529759b3002162f00f744c9909c79a555c874ce282` |
+| 2 | `theorem` | [hahnEmbedding_isOrderedModule_rat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HahnEmbeddingPublic.lean/declarations/hahnembedding-isorderedmodule-rat.md) | 46 | `result-track:4534beccdf3c1c4037ed759bf0cdc624160c0d7fccbc18b2cd03e5a59d7a4d63` |
+| 3 | `theorem` | [hahnEmbedding_isOrderedAddMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HahnEmbeddingPublic.lean/declarations/hahnembedding-isorderedaddmonoid.md) | 60 | `result-track:eb2bad934270058eda1932229a42c970ed115b32bc4fc7a843258675f1672161` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

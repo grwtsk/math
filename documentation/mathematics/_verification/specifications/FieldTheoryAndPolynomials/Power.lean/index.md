@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/Power.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/Power.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Power.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Power.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Odd.neg_zpow](../../../../FieldTheoryAndPolynomials/Power.lean/declarations/odd-neg-zpow.md) | 24 | `result-track:99b67854f9ae6683c204f7330500e60582179830cd23425bed5b2ef019492f3a` |
-| 2 | `theorem` | [Odd.neg_one_zpow](../../../../FieldTheoryAndPolynomials/Power.lean/declarations/odd-neg-one-zpow.md) | 30 | `result-track:5d0dbf1c49e3c613b97f86350e0aafeb4eb1924120c63abb3b0d644060f97e34` |
+| 1 | `theorem` | [Odd.neg_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Power.lean/declarations/odd-neg-zpow.md) | 24 | `result-track:99b67854f9ae6683c204f7330500e60582179830cd23425bed5b2ef019492f3a` |
+| 2 | `theorem` | [Odd.neg_one_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Power.lean/declarations/odd-neg-one-zpow.md) | 30 | `result-track:5d0dbf1c49e3c613b97f86350e0aafeb4eb1924120c63abb3b0d644060f97e34` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

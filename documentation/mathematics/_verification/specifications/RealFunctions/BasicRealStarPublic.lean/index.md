@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/BasicRealStarPublic.lean/index.md) · [Full source](../../../../RealFunctions/BasicRealStarPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicRealStarPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicRealStarPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../RealFunctions/BasicRealStarPublic.lean/declarations/instance.md) | 18 | `declaration-track:d211c76987e305152ac93796e590da90f415c2d8bb226c5b94b3f6080a345b76` |
-| 2 | `instance` | [(anonymous)](../../../../RealFunctions/BasicRealStarPublic.lean/declarations/instance-source-edition-2.md) | 21 | `declaration-track:eb55ceff481dd9b4659d3d1432cf598c65900f2e5e725278e1503d9a793e076b` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicRealStarPublic.lean/declarations/instance.md) | 18 | `declaration-track:d211c76987e305152ac93796e590da90f415c2d8bb226c5b94b3f6080a345b76` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicRealStarPublic.lean/declarations/instance-source-edition-2.md) | 21 | `declaration-track:eb55ceff481dd9b4659d3d1432cf598c65900f2e5e725278e1503d9a793e076b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

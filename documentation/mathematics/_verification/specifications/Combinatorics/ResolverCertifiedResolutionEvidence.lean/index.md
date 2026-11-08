@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ResolverCertifiedResolutionEvidence.lean/index.md) · [Full source](../../../../Combinatorics/ResolverCertifiedResolutionEvidence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverCertifiedResolutionEvidence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverCertifiedResolutionEvidence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [FrontierResolution](../../../../Combinatorics/ResolverCertifiedResolutionEvidence.lean/declarations/frontierresolution.md) | 15 | `declaration-track:c68b47a88ce248099792652f256e2fb425d0c1df9dfdc3ae580117bbd7440b32` |
-| 2 | `inductive` | [CertifiedResolutionEvidence](../../../../Combinatorics/ResolverCertifiedResolutionEvidence.lean/declarations/certifiedresolutionevidence.md) | 22 | `declaration-track:9572ee7b13f56ec13ccfc462822a09cc198b1a089ca2f637dc38de1976a77ea4` |
-| 3 | `structure` | [FiniteCertifiedResolverInput](../../../../Combinatorics/ResolverCertifiedResolutionEvidence.lean/declarations/finitecertifiedresolverinput.md) | 29 | `declaration-track:85b18e96caaf13d064b2543ce45e82a12f8d9904b3e306e92fd1a8fe06d0f4f8` |
-| 4 | `def` | [resolveFiniteCertified](../../../../Combinatorics/ResolverCertifiedResolutionEvidence.lean/declarations/resolvefinitecertified.md) | 40 | `declaration-track:ee0433d1920f2ab6b5570ee4d2a24a8a9f5849db8435341c1b60fd1e2732a12b` |
-| 5 | `theorem` | [finite_certified_resolver_total](../../../../Combinatorics/ResolverCertifiedResolutionEvidence.lean/declarations/finite-certified-resolver-total.md) | 59 | `result-track:721d313dd34d50294e66e3c327251c0ffe1b421f13fde9b37ca42e8ba42bd05d` |
+| 1 | `inductive` | [FrontierResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverCertifiedResolutionEvidence.lean/declarations/frontierresolution.md) | 15 | `declaration-track:c68b47a88ce248099792652f256e2fb425d0c1df9dfdc3ae580117bbd7440b32` |
+| 2 | `inductive` | [CertifiedResolutionEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverCertifiedResolutionEvidence.lean/declarations/certifiedresolutionevidence.md) | 22 | `declaration-track:9572ee7b13f56ec13ccfc462822a09cc198b1a089ca2f637dc38de1976a77ea4` |
+| 3 | `structure` | [FiniteCertifiedResolverInput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverCertifiedResolutionEvidence.lean/declarations/finitecertifiedresolverinput.md) | 29 | `declaration-track:85b18e96caaf13d064b2543ce45e82a12f8d9904b3e306e92fd1a8fe06d0f4f8` |
+| 4 | `def` | [resolveFiniteCertified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverCertifiedResolutionEvidence.lean/declarations/resolvefinitecertified.md) | 40 | `declaration-track:ee0433d1920f2ab6b5570ee4d2a24a8a9f5849db8435341c1b60fd1e2732a12b` |
+| 5 | `theorem` | [finite_certified_resolver_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverCertifiedResolutionEvidence.lean/declarations/finite-certified-resolver-total.md) | 59 | `result-track:721d313dd34d50294e66e3c327251c0ffe1b421f13fde9b37ca42e8ba42bd05d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

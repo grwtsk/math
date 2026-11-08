@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/RectangleDivisorIndex.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/RectangleDivisorIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RectangleDivisorIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RectangleDivisorIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.RectangleFactorIndex`](../../../../FunctionsOfAComplexVariable/RectangleFactorIndex.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.FiniteLinearRemoval`](../../../../FunctionsOfAComplexVariable/FiniteLinearRemoval.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RectangleFactorIndex`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RectangleFactorIndex.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.FiniteLinearRemoval`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLinearRemoval.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [index_of_factorization](../../../../FunctionsOfAComplexVariable/RectangleDivisorIndex.lean/declarations/index-of-factorization.md) | 29 | `result-track:156449b4e1670c65d92372fcb07d6ed805031bb030312bfdfce59c0f6da6dd02` |
-| 2 | `theorem` | [index_eq_mass](../../../../FunctionsOfAComplexVariable/RectangleDivisorIndex.lean/declarations/index-eq-mass.md) | 62 | `result-track:472f97637096c66e20b792f14b09a0184486bdf71fc9491712f5e1bb1a70a27d` |
+| 1 | `theorem` | [index_of_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RectangleDivisorIndex.lean/declarations/index-of-factorization.md) | 29 | `result-track:156449b4e1670c65d92372fcb07d6ed805031bb030312bfdfce59c0f6da6dd02` |
+| 2 | `theorem` | [index_eq_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RectangleDivisorIndex.lean/declarations/index-eq-mass.md) | 62 | `result-track:472f97637096c66e20b792f14b09a0184486bdf71fc9491712f5e1bb1a70a27d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

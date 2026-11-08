@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespacedPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fintypeOfKerLeRange](../../../../GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespacedPublic.lean/declarations/fintypeofkerlerange.md) | 40 | `declaration-track:caa149ed0de89da30a590d2c60c636ddb66a0e3fb28c6d37a5cdef7cf61046a6` |
-| 2 | `def` | [fintypeOfKerEqRange](../../../../GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespacedPublic.lean/declarations/fintypeofkereqrange.md) | 49 | `declaration-track:41c9503194c9c08641a3e536e2e08a91f9b7110ef253bd21d9c7a5a8b2b6903b` |
-| 3 | `def` | [fintypeOfKerOfCodom](../../../../GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespacedPublic.lean/declarations/fintypeofkerofcodom.md) | 55 | `declaration-track:9e2c1f2f947b3202ff875d5ff9e0809d5891ead740b7a686b784ecbe8bcd1d5d` |
-| 4 | `def` | [fintypeOfDomOfCoker](../../../../GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespacedPublic.lean/declarations/fintypeofdomofcoker.md) | 62 | `declaration-track:11834f1698fba32cd810b8d9e864f4a00864cb9f5a93a6f9469bb81e043bc889` |
-| 5 | `lemma` | [finite_iff_subgroup_quotient](../../../../GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespacedPublic.lean/declarations/finite-iff-subgroup-quotient.md) | 68 | `result-track:95fff1908407b3c645543db016a23d15dbda80e43449f9ec42e7dc9e54b4a74d` |
-| 6 | `lemma` | [Finite.of_subgroup_quotient](../../../../GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespacedPublic.lean/declarations/finite-of-subgroup-quotient.md) | 72 | `result-track:dc11b429c34966ea8aa639666f6183635bad4354278704ad14db7f212a59bec3` |
+| 1 | `def` | [fintypeOfKerLeRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespacedPublic.lean/declarations/fintypeofkerlerange.md) | 40 | `declaration-track:caa149ed0de89da30a590d2c60c636ddb66a0e3fb28c6d37a5cdef7cf61046a6` |
+| 2 | `def` | [fintypeOfKerEqRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespacedPublic.lean/declarations/fintypeofkereqrange.md) | 49 | `declaration-track:41c9503194c9c08641a3e536e2e08a91f9b7110ef253bd21d9c7a5a8b2b6903b` |
+| 3 | `def` | [fintypeOfKerOfCodom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespacedPublic.lean/declarations/fintypeofkerofcodom.md) | 55 | `declaration-track:9e2c1f2f947b3202ff875d5ff9e0809d5891ead740b7a686b784ecbe8bcd1d5d` |
+| 4 | `def` | [fintypeOfDomOfCoker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespacedPublic.lean/declarations/fintypeofdomofcoker.md) | 62 | `declaration-track:11834f1698fba32cd810b8d9e864f4a00864cb9f5a93a6f9469bb81e043bc889` |
+| 5 | `lemma` | [finite_iff_subgroup_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespacedPublic.lean/declarations/finite-iff-subgroup-quotient.md) | 68 | `result-track:95fff1908407b3c645543db016a23d15dbda80e43449f9ec42e7dc9e54b4a74d` |
+| 6 | `lemma` | [Finite.of_subgroup_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespacedPublic.lean/declarations/finite-of-subgroup-quotient.md) | 72 | `result-track:dc11b429c34966ea8aa639666f6183635bad4354278704ad14db7f212a59bec3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

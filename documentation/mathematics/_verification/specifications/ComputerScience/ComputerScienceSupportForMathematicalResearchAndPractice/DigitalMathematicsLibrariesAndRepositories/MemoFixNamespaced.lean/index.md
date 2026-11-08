@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFixNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFixNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFixNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFixNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ObjectMap](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFixNamespaced.lean/declarations/objectmap.md) | 25 | `declaration-track:799183fda1c04e19aeadcbf24952fb662d046637c2afde0a6596a976c9297d35` |
-| 2 | `def` | [memoFixImplObj](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFixNamespaced.lean/declarations/memofiximplobj.md) | 27 | `declaration-track:37e4fb1c38999d6ba89103621af10c51ad0ac727b1115dfea6a89f0f70133651` |
-| 3 | `def` | [memoFixImpl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFixNamespaced.lean/declarations/memofiximpl.md) | 38 | `declaration-track:08a04f2ebc0f8d27c6e17ad4d1f1dd9fbf64e11edaf7ea123d0e3cceb1523272` |
-| 4 | `opaque` | [memoFix](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFixNamespaced.lean/declarations/memofix.md) | 49 | `declaration-track:5799e1326d97b2cec7d191edc52d1f7577f1ffb48fc549dda41b8864df5eb0df` |
+| 1 | `abbrev` | [ObjectMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFixNamespaced.lean/declarations/objectmap.md) | 25 | `declaration-track:799183fda1c04e19aeadcbf24952fb662d046637c2afde0a6596a976c9297d35` |
+| 2 | `def` | [memoFixImplObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFixNamespaced.lean/declarations/memofiximplobj.md) | 27 | `declaration-track:37e4fb1c38999d6ba89103621af10c51ad0ac727b1115dfea6a89f0f70133651` |
+| 3 | `def` | [memoFixImpl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFixNamespaced.lean/declarations/memofiximpl.md) | 38 | `declaration-track:08a04f2ebc0f8d27c6e17ad4d1f1dd9fbf64e11edaf7ea123d0e3cceb1523272` |
+| 4 | `opaque` | [memoFix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFixNamespaced.lean/declarations/memofix.md) | 49 | `declaration-track:5799e1326d97b2cec7d191edc52d1f7577f1ffb48fc549dda41b8864df5eb0df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

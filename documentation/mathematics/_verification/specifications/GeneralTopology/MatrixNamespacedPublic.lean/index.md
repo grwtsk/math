@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MatrixNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/MatrixNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MatrixNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MatrixNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instUniformSpace](../../../../GeneralTopology/MatrixNamespacedPublic.lean/declarations/instuniformspace.md) | 34 | `declaration-track:deda1e7d36d415d422a93cee0af8ffc5089033323c6ebb8a8231f2611438c2c9` |
-| 2 | `instance` | [instIsUniformAddGroup](../../../../GeneralTopology/MatrixNamespacedPublic.lean/declarations/instisuniformaddgroup.md) | 37 | `declaration-track:76f14cb22eb367fd6a153ed4c01be740a529ae1a8bfe77673b29c953c50ed1bb` |
-| 3 | `theorem` | [uniformity](../../../../GeneralTopology/MatrixNamespacedPublic.lean/declarations/uniformity.md) | 41 | `result-track:ce09a7cba6e4d90ea2b985aeccbaa6d9d3f1985736c94781801391a6307534b1` |
-| 4 | `theorem` | [uniformContinuous](../../../../GeneralTopology/MatrixNamespacedPublic.lean/declarations/uniformcontinuous.md) | 47 | `result-track:88abd34e37e42ae874b3057024641e2775e609fa1772d65eb28544322a51175e` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/MatrixNamespacedPublic.lean/declarations/instance.md) | 52 | `declaration-track:a8c03154165e8a93e04797b609a3c3f4ab0b0a8bf4d129ba168dfca60e998b28` |
+| 1 | `instance` | [instUniformSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MatrixNamespacedPublic.lean/declarations/instuniformspace.md) | 34 | `declaration-track:deda1e7d36d415d422a93cee0af8ffc5089033323c6ebb8a8231f2611438c2c9` |
+| 2 | `instance` | [instIsUniformAddGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MatrixNamespacedPublic.lean/declarations/instisuniformaddgroup.md) | 37 | `declaration-track:76f14cb22eb367fd6a153ed4c01be740a529ae1a8bfe77673b29c953c50ed1bb` |
+| 3 | `theorem` | [uniformity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MatrixNamespacedPublic.lean/declarations/uniformity.md) | 41 | `result-track:ce09a7cba6e4d90ea2b985aeccbaa6d9d3f1985736c94781801391a6307534b1` |
+| 4 | `theorem` | [uniformContinuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MatrixNamespacedPublic.lean/declarations/uniformcontinuous.md) | 47 | `result-track:88abd34e37e42ae874b3057024641e2775e609fa1772d65eb28544322a51175e` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MatrixNamespacedPublic.lean/declarations/instance.md) | 52 | `declaration-track:a8c03154165e8a93e04797b609a3c3f4ab0b0a8bf4d129ba168dfca60e998b28` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

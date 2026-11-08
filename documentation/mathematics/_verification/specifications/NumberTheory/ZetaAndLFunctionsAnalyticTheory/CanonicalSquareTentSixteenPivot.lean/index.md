@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenPivot.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenPivot.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenPivot.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenPivot.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentStrictRatioBridge`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentStrictRatioBridge.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentStrictRatioBridge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentStrictRatioBridge.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.Tactic` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sixteenPivot](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenPivot.lean/declarations/sixteenpivot.md) | 28 | `declaration-track:0ca2c94b2fd20e22dcd4a518f334a529c88d68461be02f81b9c96601487aef92` |
-| 2 | `def` | [stageThreeSixteenGap](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenPivot.lean/declarations/stagethreesixteengap.md) | 30 | `declaration-track:4a145187f2aad6364de0b9232bf990f775a8f03c8a245458ac45adef8647d33c` |
-| 3 | `def` | [stageFourSixteenGap](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenPivot.lean/declarations/stagefoursixteengap.md) | 33 | `declaration-track:95ee7a42893ea058bca1be103e8b2fb36118e7bff72a47426b5f8aadfd362c23` |
-| 4 | `theorem` | [stageThreeSixteenGap_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenPivot.lean/declarations/stagethreesixteengap-pos.md) | 38 | `result-track:4642cec40ae0ddb52caacf35e7770e2c3cbbb79f8970a205ef11567e110c23bc` |
-| 5 | `theorem` | [stageFourSixteenGap_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenPivot.lean/declarations/stagefoursixteengap-pos.md) | 59 | `result-track:8d79cb68932b01672786856c1a44fc49d80ea59feb8651681bcf5ebd4c8af75e` |
+| 1 | `def` | [sixteenPivot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenPivot.lean/declarations/sixteenpivot.md) | 28 | `declaration-track:0ca2c94b2fd20e22dcd4a518f334a529c88d68461be02f81b9c96601487aef92` |
+| 2 | `def` | [stageThreeSixteenGap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenPivot.lean/declarations/stagethreesixteengap.md) | 30 | `declaration-track:4a145187f2aad6364de0b9232bf990f775a8f03c8a245458ac45adef8647d33c` |
+| 3 | `def` | [stageFourSixteenGap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenPivot.lean/declarations/stagefoursixteengap.md) | 33 | `declaration-track:95ee7a42893ea058bca1be103e8b2fb36118e7bff72a47426b5f8aadfd362c23` |
+| 4 | `theorem` | [stageThreeSixteenGap_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenPivot.lean/declarations/stagethreesixteengap-pos.md) | 38 | `result-track:4642cec40ae0ddb52caacf35e7770e2c3cbbb79f8970a205ef11567e110c23bc` |
+| 5 | `theorem` | [stageFourSixteenGap_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenPivot.lean/declarations/stagefoursixteengap-pos.md) | 59 | `result-track:8d79cb68932b01672786856c1a44fc49d80ea59feb8651681bcf5ebd4c8af75e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

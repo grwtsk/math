@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CountableSeparatingNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/CountableSeparatingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CountableSeparatingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CountableSeparatingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [range_Iio](../../../../GeneralTopology/CountableSeparatingNamespaced.lean/declarations/range-iio.md) | 35 | `declaration-track:24665482194a293c60484f4e92399b978ad4ca3e4aa8453f2a2afec24ff69bfd` |
-| 2 | `instance` | [range_Ioi](../../../../GeneralTopology/CountableSeparatingNamespaced.lean/declarations/range-ioi.md) | 55 | `declaration-track:ffbdff9ad379291efa0235292dcd7b1c4a90b16b2c6deba3c2231fb36bd5126d` |
-| 3 | `instance` | [range_Iic](../../../../GeneralTopology/CountableSeparatingNamespaced.lean/declarations/range-iic.md) | 58 | `declaration-track:ac7fc9641fd04665f218f85709950d71e6197a4372af87f1f6e84274f9917ef8` |
-| 4 | `instance` | [range_Ici](../../../../GeneralTopology/CountableSeparatingNamespaced.lean/declarations/range-ici.md) | 63 | `declaration-track:fa9be24f234403fd9583ece666d4d5393128e42f59278e45ff946afa7fc4b094` |
-| 5 | `lemma` | [of_forall_eventually_lt_iff](../../../../GeneralTopology/CountableSeparatingNamespaced.lean/declarations/of-forall-eventually-lt-iff.md) | 72 | `result-track:b184a460cdbe1bf3b977a3e0ca70c3b13b3c26fc7519f6632a36488b02cda95f` |
-| 6 | `lemma` | [of_forall_eventually_le_iff](../../../../GeneralTopology/CountableSeparatingNamespaced.lean/declarations/of-forall-eventually-le-iff.md) | 75 | `result-track:5aeead64b92ae4528b5c38bacd7d2b0a37eb55d4e1171a0f7fc8aa1407d453d6` |
-| 7 | `lemma` | [of_forall_eventually_gt_iff](../../../../GeneralTopology/CountableSeparatingNamespaced.lean/declarations/of-forall-eventually-gt-iff.md) | 78 | `result-track:34236678386a2bcd7f8dbe81d26ae373491ba398a72b33077b427086132363b7` |
-| 8 | `lemma` | [of_forall_eventually_ge_iff](../../../../GeneralTopology/CountableSeparatingNamespaced.lean/declarations/of-forall-eventually-ge-iff.md) | 81 | `result-track:db6f5b134d5c451766dc8c37155f78aa30247361338077f8fb4c906447633015` |
+| 1 | `instance` | [range_Iio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CountableSeparatingNamespaced.lean/declarations/range-iio.md) | 35 | `declaration-track:24665482194a293c60484f4e92399b978ad4ca3e4aa8453f2a2afec24ff69bfd` |
+| 2 | `instance` | [range_Ioi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CountableSeparatingNamespaced.lean/declarations/range-ioi.md) | 55 | `declaration-track:ffbdff9ad379291efa0235292dcd7b1c4a90b16b2c6deba3c2231fb36bd5126d` |
+| 3 | `instance` | [range_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CountableSeparatingNamespaced.lean/declarations/range-iic.md) | 58 | `declaration-track:ac7fc9641fd04665f218f85709950d71e6197a4372af87f1f6e84274f9917ef8` |
+| 4 | `instance` | [range_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CountableSeparatingNamespaced.lean/declarations/range-ici.md) | 63 | `declaration-track:fa9be24f234403fd9583ece666d4d5393128e42f59278e45ff946afa7fc4b094` |
+| 5 | `lemma` | [of_forall_eventually_lt_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CountableSeparatingNamespaced.lean/declarations/of-forall-eventually-lt-iff.md) | 72 | `result-track:b184a460cdbe1bf3b977a3e0ca70c3b13b3c26fc7519f6632a36488b02cda95f` |
+| 6 | `lemma` | [of_forall_eventually_le_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CountableSeparatingNamespaced.lean/declarations/of-forall-eventually-le-iff.md) | 75 | `result-track:5aeead64b92ae4528b5c38bacd7d2b0a37eb55d4e1171a0f7fc8aa1407d453d6` |
+| 7 | `lemma` | [of_forall_eventually_gt_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CountableSeparatingNamespaced.lean/declarations/of-forall-eventually-gt-iff.md) | 78 | `result-track:34236678386a2bcd7f8dbe81d26ae373491ba398a72b33077b427086132363b7` |
+| 8 | `lemma` | [of_forall_eventually_ge_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CountableSeparatingNamespaced.lean/declarations/of-forall-eventually-ge-iff.md) | 81 | `result-track:db6f5b134d5c451766dc8c37155f78aa30247361338077f8fb4c906447633015` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

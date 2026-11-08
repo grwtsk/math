@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ParallelNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ParallelNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ParallelNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ParallelNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ParallelSignature](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ParallelNamespaced.lean/declarations/parallelsignature.md) | 23 | `declaration-track:9fbc0a535b3109756a75ce5368f84e00e47375cce21576b781a923d2fa4ae997` |
-| 2 | `def` | [ParallelSymmetric](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ParallelNamespaced.lean/declarations/parallelsymmetric.md) | 26 | `declaration-track:b082bee0b57429586e5fa7cd3d78a91a237e743b4c3aba3ac80f3b222a0a6f54` |
-| 3 | `def` | [ParallelIrreflexive](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ParallelNamespaced.lean/declarations/parallelirreflexive.md) | 33 | `declaration-track:2afedf31ff12ffefcd562a6073a9186d47c3428eb9366d87300b321737998988` |
-| 4 | `def` | [UniqueParallelThroughExternalPoint](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ParallelNamespaced.lean/declarations/uniqueparallelthroughexternalpoint.md) | 42 | `declaration-track:b87097ffb60cdad0bbd1498ccf516fc5e2dbd92d700f8c097e18f60687523c2e` |
+| 1 | `structure` | [ParallelSignature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ParallelNamespaced.lean/declarations/parallelsignature.md) | 23 | `declaration-track:9fbc0a535b3109756a75ce5368f84e00e47375cce21576b781a923d2fa4ae997` |
+| 2 | `def` | [ParallelSymmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ParallelNamespaced.lean/declarations/parallelsymmetric.md) | 26 | `declaration-track:b082bee0b57429586e5fa7cd3d78a91a237e743b4c3aba3ac80f3b222a0a6f54` |
+| 3 | `def` | [ParallelIrreflexive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ParallelNamespaced.lean/declarations/parallelirreflexive.md) | 33 | `declaration-track:2afedf31ff12ffefcd562a6073a9186d47c3428eb9366d87300b321737998988` |
+| 4 | `def` | [UniqueParallelThroughExternalPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ParallelNamespaced.lean/declarations/uniqueparallelthroughexternalpoint.md) | 42 | `declaration-track:b87097ffb60cdad0bbd1498ccf516fc5e2dbd92d700f8c097e18f60687523c2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

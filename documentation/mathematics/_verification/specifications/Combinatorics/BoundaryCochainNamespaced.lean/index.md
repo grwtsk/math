@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BoundaryCochainNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/BoundaryCochainNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryCochainNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryCochainNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [capacity_increment_square_closed](../../../../Combinatorics/BoundaryCochainNamespaced.lean/declarations/capacity-increment-square-closed.md) | 21 | `result-track:910f5dfcdb2014ab6ae98c0933b50ae593da154b7b80ff249cc004ea5451b024` |
-| 2 | `theorem` | [capacity_increment_two_step_telescope](../../../../Combinatorics/BoundaryCochainNamespaced.lean/declarations/capacity-increment-two-step-telescope.md) | 42 | `result-track:f41d1ec806445d6269e08d2fa184a8224a074ce0f11f51809d1a6d0888cddcd7` |
+| 1 | `theorem` | [capacity_increment_square_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryCochainNamespaced.lean/declarations/capacity-increment-square-closed.md) | 21 | `result-track:910f5dfcdb2014ab6ae98c0933b50ae593da154b7b80ff249cc004ea5451b024` |
+| 2 | `theorem` | [capacity_increment_two_step_telescope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryCochainNamespaced.lean/declarations/capacity-increment-two-step-telescope.md) | 42 | `result-track:f41d1ec806445d6269e08d2fa184a8224a074ce0f11f51809d1a6d0888cddcd7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

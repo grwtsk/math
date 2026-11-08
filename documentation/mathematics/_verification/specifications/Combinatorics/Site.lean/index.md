@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Site.lean/index.md) · [Full source](../../../../Combinatorics/Site.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Site.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Site.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteCommunicationSite](../../../../Combinatorics/Site.lean/declarations/finitecommunicationsite.md) | 16 | `declaration-track:8f955dbeb4973789c12be7aaa30c19b4fac902944c0df553ab0486710ef6ae73` |
-| 2 | `def` | [le](../../../../Combinatorics/Site.lean/declarations/le.md) | 35 | `declaration-track:a57c984916ed97397230619575dec291627a48100a93bef28c84da4a6c3ba5b9` |
-| 3 | `instance` | [(anonymous)](../../../../Combinatorics/Site.lean/declarations/instance.md) | 38 | `declaration-track:467baf63557ebda7eca329bfec570bd1723ce68d761fece31129c5fab16aa9f6` |
-| 4 | `theorem` | [le_refl](../../../../Combinatorics/Site.lean/declarations/le-refl.md) | 42 | `result-track:1fd1f920091ae992d696e735c705e60f8d12721fffc8a0faf8b30ea15a27eacf` |
-| 5 | `theorem` | [le_trans](../../../../Combinatorics/Site.lean/declarations/le-trans.md) | 47 | `result-track:c049f7acf977521504b12808714a7a1e36685f7c0b5ced4d2452e81783af3aab` |
-| 6 | `theorem` | [cover_member_below](../../../../Combinatorics/Site.lean/declarations/cover-member-below.md) | 57 | `result-track:1ab6bd21341ee42781dfc751f757b8a7d6951ae99e378675adb52f1fe483c38e` |
-| 7 | `theorem` | [cover_finite](../../../../Combinatorics/Site.lean/declarations/cover-finite.md) | 65 | `result-track:5ac939895defae4417c8f28370fb3b6b4b60475555c31097f4a11aeb173b787d` |
+| 1 | `structure` | [FiniteCommunicationSite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Site.lean/declarations/finitecommunicationsite.md) | 16 | `declaration-track:8f955dbeb4973789c12be7aaa30c19b4fac902944c0df553ab0486710ef6ae73` |
+| 2 | `def` | [le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Site.lean/declarations/le.md) | 35 | `declaration-track:a57c984916ed97397230619575dec291627a48100a93bef28c84da4a6c3ba5b9` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Site.lean/declarations/instance.md) | 38 | `declaration-track:467baf63557ebda7eca329bfec570bd1723ce68d761fece31129c5fab16aa9f6` |
+| 4 | `theorem` | [le_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Site.lean/declarations/le-refl.md) | 42 | `result-track:1fd1f920091ae992d696e735c705e60f8d12721fffc8a0faf8b30ea15a27eacf` |
+| 5 | `theorem` | [le_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Site.lean/declarations/le-trans.md) | 47 | `result-track:c049f7acf977521504b12808714a7a1e36685f7c0b5ced4d2452e81783af3aab` |
+| 6 | `theorem` | [cover_member_below](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Site.lean/declarations/cover-member-below.md) | 57 | `result-track:1ab6bd21341ee42781dfc751f757b8a7d6951ae99e378675adb52f1fe483c38e` |
+| 7 | `theorem` | [cover_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Site.lean/declarations/cover-finite.md) | 65 | `result-track:5ac939895defae4417c8f28370fb3b6b4b60475555c31097f4a11aeb173b787d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

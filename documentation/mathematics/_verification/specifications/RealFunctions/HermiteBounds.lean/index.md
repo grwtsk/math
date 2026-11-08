@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/HermiteBounds.lean/index.md) · [Full source](../../../../RealFunctions/HermiteBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HermiteBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HermiteBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [gaussianSq](../../../../RealFunctions/HermiteBounds.lean/declarations/gaussiansq.md) | 43 | `declaration-track:0714d871ed3b7618d39f8e3b35072e4cb88dbd51bd85af1db2c69c1d22e34797` |
-| 2 | `theorem` | [gaussianSq_le_one](../../../../RealFunctions/HermiteBounds.lean/declarations/gaussiansq-le-one.md) | 46 | `result-track:82662700fba1ff0ec070fd7127360c589afbda4d2cd0e6a5511ea0d8d6adba07` |
-| 3 | `theorem` | [gaussianSq_pos](../../../../RealFunctions/HermiteBounds.lean/declarations/gaussiansq-pos.md) | 53 | `result-track:ca52727f282604a07dbdaf740d55c4a2ae719715c14cc510d54d839280f16ee5` |
-| 4 | `theorem` | [gaussianSq_nonneg](../../../../RealFunctions/HermiteBounds.lean/declarations/gaussiansq-nonneg.md) | 57 | `result-track:4cd4f9b367c870b011c59782b354c1719aea8e8811cedb9842d233e40d52a1b4` |
+| 1 | `def` | [gaussianSq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HermiteBounds.lean/declarations/gaussiansq.md) | 43 | `declaration-track:0714d871ed3b7618d39f8e3b35072e4cb88dbd51bd85af1db2c69c1d22e34797` |
+| 2 | `theorem` | [gaussianSq_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HermiteBounds.lean/declarations/gaussiansq-le-one.md) | 46 | `result-track:82662700fba1ff0ec070fd7127360c589afbda4d2cd0e6a5511ea0d8d6adba07` |
+| 3 | `theorem` | [gaussianSq_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HermiteBounds.lean/declarations/gaussiansq-pos.md) | 53 | `result-track:ca52727f282604a07dbdaf740d55c4a2ae719715c14cc510d54d839280f16ee5` |
+| 4 | `theorem` | [gaussianSq_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HermiteBounds.lean/declarations/gaussiansq-nonneg.md) | 57 | `result-track:4cd4f9b367c870b011c59782b354c1719aea8e8811cedb9842d233e40d52a1b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

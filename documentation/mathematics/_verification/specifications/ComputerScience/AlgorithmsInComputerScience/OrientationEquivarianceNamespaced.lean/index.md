@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/OrientationEquivarianceNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/OrientationEquivarianceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrientationEquivarianceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrientationEquivarianceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [LocalOrientation](../../../../../ComputerScience/AlgorithmsInComputerScience/OrientationEquivarianceNamespaced.lean/declarations/localorientation.md) | 20 | `declaration-track:219f9f0d48aa5353c58fe711504eac4fa59876d6b3387a7d163344bb54e3631c` |
-| 2 | `def` | [orientBit](../../../../../ComputerScience/AlgorithmsInComputerScience/OrientationEquivarianceNamespaced.lean/declarations/orientbit.md) | 25 | `declaration-track:499f56a782e296aa6aceeac9e304e57cffa384e94a94d35c43deafdfd10c7d4f` |
-| 3 | `def` | [orientPath](../../../../../ComputerScience/AlgorithmsInComputerScience/OrientationEquivarianceNamespaced.lean/declarations/orientpath.md) | 29 | `declaration-track:4c5ef2e417fcb11a8c92cb44bfa2e640c5e6d1499ad917f1c8aa1889f5950da7` |
-| 4 | `theorem` | [zeroThenOne_preserves_bit](../../../../../ComputerScience/AlgorithmsInComputerScience/OrientationEquivarianceNamespaced.lean/declarations/zerothenone-preserves-bit.md) | 34 | `result-track:a9823d7e95fc2f98dd85c40f3575e3037d9b2e227b0e5246d9fc22a1739f2e1b` |
-| 5 | `theorem` | [oneThenZero_is_involutive](../../../../../ComputerScience/AlgorithmsInComputerScience/OrientationEquivarianceNamespaced.lean/declarations/onethenzero-is-involutive.md) | 39 | `result-track:638d163d843ccccb5d74b9867734492038b2c42808bdf6fb4b46084dd1873d96` |
+| 1 | `inductive` | [LocalOrientation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrientationEquivarianceNamespaced.lean/declarations/localorientation.md) | 20 | `declaration-track:219f9f0d48aa5353c58fe711504eac4fa59876d6b3387a7d163344bb54e3631c` |
+| 2 | `def` | [orientBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrientationEquivarianceNamespaced.lean/declarations/orientbit.md) | 25 | `declaration-track:499f56a782e296aa6aceeac9e304e57cffa384e94a94d35c43deafdfd10c7d4f` |
+| 3 | `def` | [orientPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrientationEquivarianceNamespaced.lean/declarations/orientpath.md) | 29 | `declaration-track:4c5ef2e417fcb11a8c92cb44bfa2e640c5e6d1499ad917f1c8aa1889f5950da7` |
+| 4 | `theorem` | [zeroThenOne_preserves_bit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrientationEquivarianceNamespaced.lean/declarations/zerothenone-preserves-bit.md) | 34 | `result-track:a9823d7e95fc2f98dd85c40f3575e3037d9b2e227b0e5246d9fc22a1739f2e1b` |
+| 5 | `theorem` | [oneThenZero_is_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrientationEquivarianceNamespaced.lean/declarations/onethenzero-is-involutive.md) | 39 | `result-track:638d163d843ccccb5d74b9867734492038b2c42808bdf6fb4b46084dd1873d96` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

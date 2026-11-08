@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSignedHeight`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CanonicalSignedHeight.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.ErrorBounds.EvenIntegerWindow`](../../../../../RealFunctions/EvenIntegerWindow.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSignedHeight`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CanonicalSignedHeight.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.EvenIntegerWindow`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EvenIntegerWindow.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [allMass](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/allmass.md) | 24 | `declaration-track:436df9eb0b8480235adc62087cfb218898aa3c09c5698e150346ee37962a1199` |
-| 2 | `def` | [positiveMass](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/positivemass.md) | 27 | `declaration-track:494b17d1bc6a0d29bf5b6f353dd0a0cf147307c2c34ca0a40d683ea900ba6157` |
-| 3 | `def` | [openPositiveMass](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/openpositivemass.md) | 30 | `declaration-track:915226993a07ea35195b5d19da5cb902d809f5d7df522e0f7d1e96d4667b4f53` |
-| 4 | `theorem` | [repeated_pair_is_not_cardinality](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/repeated-pair-is-not-cardinality.md) | 34 | `result-track:dd7f5131ec23ed8f9d40a3a83fcc75df1e2e7e4ca10aa7113bb7e7db970e4dae` |
-| 5 | `theorem` | [cutoff_atom_cannot_be_dropped](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/cutoff-atom-cannot-be-dropped.md) | 40 | `result-track:89ea875ae1dfb5d8fc293151d0fad0dbd1104bf704a7e561467efe891a447aa3` |
-| 6 | `theorem` | [unequal_weights_break_doubling](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/unequal-weights-break-doubling.md) | 45 | `result-track:8760b0e4ef787a237055b2c8f4b4e4f13d55ad969f2ca812f8c68a3174d8c297` |
-| 7 | `theorem` | [real_axis_atom_breaks_doubling](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/real-axis-atom-breaks-doubling.md) | 51 | `result-track:399d720c854a64a97efcfc4091f72cfa3a9ef90770bf47d7f9c7890ff50564dd` |
-| 8 | `theorem` | [found_pair_does_not_give_upper_count](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/found-pair-does-not-give-upper-count.md) | 56 | `result-track:f5d683d20843acec25be66b90f072dded351aa6eee3542bd7b182eb995c5ed9f` |
-| 9 | `theorem` | [half_boundary_is_not_closed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/half-boundary-is-not-closed.md) | 62 | `result-track:b011ad827a109ba604604bcdd5da3325bf15e5fd92b84cb17e7112557ca42d9f` |
-| 10 | `theorem` | [strict_upper_is_essential](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/strict-upper-is-essential.md) | 67 | `result-track:9487fe6103eb96ed58521a75feb31a282c12269ad944a5935621cb704f376112` |
-| 11 | `theorem` | [target_two_window_controls](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/target-two-window-controls.md) | 70 | `result-track:5ff55dd1ebaea5c9e3c206eca713b279d41fe79b085ead7e1075033a15c86f21` |
-| 12 | `theorem` | [repeated_polynomial_conjugates](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/repeated-polynomial-conjugates.md) | 77 | `result-track:5d4f2bc5507691d32af4b4b720f66b56d75cf24c300168b932099d1ff6b25122` |
-| 13 | `theorem` | [canonical_zero_height](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/canonical-zero-height.md) | 81 | `result-track:58a45d0af982afd153bee3a5f00c24f024c2d0db2c2cbcd83ffb7748af7bb873` |
+| 1 | `def` | [allMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/allmass.md) | 24 | `declaration-track:436df9eb0b8480235adc62087cfb218898aa3c09c5698e150346ee37962a1199` |
+| 2 | `def` | [positiveMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/positivemass.md) | 27 | `declaration-track:494b17d1bc6a0d29bf5b6f353dd0a0cf147307c2c34ca0a40d683ea900ba6157` |
+| 3 | `def` | [openPositiveMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/openpositivemass.md) | 30 | `declaration-track:915226993a07ea35195b5d19da5cb902d809f5d7df522e0f7d1e96d4667b4f53` |
+| 4 | `theorem` | [repeated_pair_is_not_cardinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/repeated-pair-is-not-cardinality.md) | 34 | `result-track:dd7f5131ec23ed8f9d40a3a83fcc75df1e2e7e4ca10aa7113bb7e7db970e4dae` |
+| 5 | `theorem` | [cutoff_atom_cannot_be_dropped](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/cutoff-atom-cannot-be-dropped.md) | 40 | `result-track:89ea875ae1dfb5d8fc293151d0fad0dbd1104bf704a7e561467efe891a447aa3` |
+| 6 | `theorem` | [unequal_weights_break_doubling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/unequal-weights-break-doubling.md) | 45 | `result-track:8760b0e4ef787a237055b2c8f4b4e4f13d55ad969f2ca812f8c68a3174d8c297` |
+| 7 | `theorem` | [real_axis_atom_breaks_doubling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/real-axis-atom-breaks-doubling.md) | 51 | `result-track:399d720c854a64a97efcfc4091f72cfa3a9ef90770bf47d7f9c7890ff50564dd` |
+| 8 | `theorem` | [found_pair_does_not_give_upper_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/found-pair-does-not-give-upper-count.md) | 56 | `result-track:f5d683d20843acec25be66b90f072dded351aa6eee3542bd7b182eb995c5ed9f` |
+| 9 | `theorem` | [half_boundary_is_not_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/half-boundary-is-not-closed.md) | 62 | `result-track:b011ad827a109ba604604bcdd5da3325bf15e5fd92b84cb17e7112557ca42d9f` |
+| 10 | `theorem` | [strict_upper_is_essential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/strict-upper-is-essential.md) | 67 | `result-track:9487fe6103eb96ed58521a75feb31a282c12269ad944a5935621cb704f376112` |
+| 11 | `theorem` | [target_two_window_controls](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/target-two-window-controls.md) | 70 | `result-track:5ff55dd1ebaea5c9e3c206eca713b279d41fe79b085ead7e1075033a15c86f21` |
+| 12 | `theorem` | [repeated_polynomial_conjugates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/repeated-polynomial-conjugates.md) | 77 | `result-track:5d4f2bc5507691d32af4b4b720f66b56d75cf24c300168b932099d1ff6b25122` |
+| 13 | `theorem` | [canonical_zero_height](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedHeightControls.lean/declarations/canonical-zero-height.md) | 81 | `result-track:58a45d0af982afd153bee3a5f00c24f024c2d0db2c2cbcd83ffb7748af7bb873` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [birkhoffAverage](../../../../DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/birkhoffaverage.md) | 42 | `declaration-track:26a96e96ec25e24888211afb8585bc89fa0a1e3bf0d16c946878e89cf2ba5483` |
-| 2 | `theorem` | [birkhoffAverage_zero](../../../../DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/birkhoffaverage-zero.md) | 44 | `result-track:59f200016067bee39b121907a4ab10f2cfa496d970a29fd40cc44cf65627ea11` |
-| 3 | `theorem` | [birkhoffAverage_zero'](../../../../DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/birkhoffaverage-zero-source-edition-2.md) | 47 | `result-track:eba5e19bbc8d87d4908768e2a83d96e97eda35fe305efaf39dd44f23876869f4` |
-| 4 | `theorem` | [birkhoffAverage_one](../../../../DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/birkhoffaverage-one.md) | 50 | `result-track:5e2c9cbdfceb9e0817def1b35e07e6092af57a4a6878c3e0a403d2b192e5b769` |
-| 5 | `theorem` | [birkhoffAverage_one'](../../../../DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/birkhoffaverage-one-source-edition-2.md) | 54 | `result-track:fd214a0733df4f9f9c387a85d281437a742f7c5a2290d4c02a9e6394eccd9181` |
-| 6 | `theorem` | [map_birkhoffAverage](../../../../DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/map-birkhoffaverage.md) | 57 | `result-track:48c6a2e7972283af85cce73c8039b6f8e91f8b8d556d59af99b5d6173fd8a7e4` |
-| 7 | `theorem` | [birkhoffAverage_congr_ring](../../../../DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/birkhoffaverage-congr-ring-source-edition-2.md) | 63 | `result-track:bcd53c9e19f2e2e92d4937354c8f5b48d03b72eff38919c811b5308144b415ed` |
-| 8 | `theorem` | [birkhoffAverage_congr_ring'](../../../../DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/birkhoffaverage-congr-ring.md) | 68 | `result-track:4db9ab857ae10eacfd8c0bde7324e255c376514a37de7c7dcd3340e21909b7ff` |
-| 9 | `theorem` | [Function.IsFixedPt.birkhoffAverage_eq](../../../../DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/function-isfixedpt-birkhoffaverage-eq.md) | 72 | `result-track:4c226e1099d1c95a4eeee5df72fc7380db4becf1085d4f481880e9bb0e850548` |
-| 10 | `theorem` | [birkhoffAverage_apply_sub_birkhoffAverage](../../../../DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/birkhoffaverage-apply-sub-birkhoffaverage.md) | 82 | `result-track:7752b94aa9c7ac4d6a8d3051ccb11717d25053694b75223aa892fc8a490d27dd` |
+| 1 | `def` | [birkhoffAverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/birkhoffaverage.md) | 42 | `declaration-track:26a96e96ec25e24888211afb8585bc89fa0a1e3bf0d16c946878e89cf2ba5483` |
+| 2 | `theorem` | [birkhoffAverage_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/birkhoffaverage-zero.md) | 44 | `result-track:59f200016067bee39b121907a4ab10f2cfa496d970a29fd40cc44cf65627ea11` |
+| 3 | `theorem` | [birkhoffAverage_zero'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/birkhoffaverage-zero-source-edition-2.md) | 47 | `result-track:eba5e19bbc8d87d4908768e2a83d96e97eda35fe305efaf39dd44f23876869f4` |
+| 4 | `theorem` | [birkhoffAverage_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/birkhoffaverage-one.md) | 50 | `result-track:5e2c9cbdfceb9e0817def1b35e07e6092af57a4a6878c3e0a403d2b192e5b769` |
+| 5 | `theorem` | [birkhoffAverage_one'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/birkhoffaverage-one-source-edition-2.md) | 54 | `result-track:fd214a0733df4f9f9c387a85d281437a742f7c5a2290d4c02a9e6394eccd9181` |
+| 6 | `theorem` | [map_birkhoffAverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/map-birkhoffaverage.md) | 57 | `result-track:48c6a2e7972283af85cce73c8039b6f8e91f8b8d556d59af99b5d6173fd8a7e4` |
+| 7 | `theorem` | [birkhoffAverage_congr_ring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/birkhoffaverage-congr-ring-source-edition-2.md) | 63 | `result-track:bcd53c9e19f2e2e92d4937354c8f5b48d03b72eff38919c811b5308144b415ed` |
+| 8 | `theorem` | [birkhoffAverage_congr_ring'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/birkhoffaverage-congr-ring.md) | 68 | `result-track:4db9ab857ae10eacfd8c0bde7324e255c376514a37de7c7dcd3340e21909b7ff` |
+| 9 | `theorem` | [Function.IsFixedPt.birkhoffAverage_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/function-isfixedpt-birkhoffaverage-eq.md) | 72 | `result-track:4c226e1099d1c95a4eeee5df72fc7380db4becf1085d4f481880e9bb0e850548` |
+| 10 | `theorem` | [birkhoffAverage_apply_sub_birkhoffAverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AverageEdition2.lean/declarations/birkhoffaverage-apply-sub-birkhoffaverage.md) | 82 | `result-track:7752b94aa9c7ac4d6a8d3051ccb11717d25053694b75223aa892fc8a490d27dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

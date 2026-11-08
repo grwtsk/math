@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactCenterControlNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactCenterControlNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactCenterControlNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactCenterControlNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompactCenterControl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactCenterControlNamespaced.lean/declarations/compactcentercontrol-source-edition-2.md) | 16 | `declaration-track:f8567eb4b3cc2a338e1011e0c5fbce8ffe39a9a2fc45684fb18b3b09498985e5` |
-| 2 | `def` | [compactCenterControl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactCenterControlNamespaced.lean/declarations/compactcentercontrol.md) | 24 | `declaration-track:7fc8f6f06a9514ac843563a0379d24f3d67aaf803fbfd57cf7d565dd258c0d22` |
-| 3 | `theorem` | [compactCenterControl_complete](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactCenterControlNamespaced.lean/declarations/compactcentercontrol-complete.md) | 31 | `result-track:2966314911ffa0d908c799f5597d4c07a5aff622106bbf66d5498c3e6d1c9a38` |
+| 1 | `structure` | [CompactCenterControl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactCenterControlNamespaced.lean/declarations/compactcentercontrol-source-edition-2.md) | 16 | `declaration-track:f8567eb4b3cc2a338e1011e0c5fbce8ffe39a9a2fc45684fb18b3b09498985e5` |
+| 2 | `def` | [compactCenterControl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactCenterControlNamespaced.lean/declarations/compactcentercontrol.md) | 24 | `declaration-track:7fc8f6f06a9514ac843563a0379d24f3d67aaf803fbfd57cf7d565dd258c0d22` |
+| 3 | `theorem` | [compactCenterControl_complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactCenterControlNamespaced.lean/declarations/compactcentercontrol-complete.md) | 31 | `result-track:2966314911ffa0d908c799f5597d4c07a5aff622106bbf66d5498c3e6d1c9a38` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

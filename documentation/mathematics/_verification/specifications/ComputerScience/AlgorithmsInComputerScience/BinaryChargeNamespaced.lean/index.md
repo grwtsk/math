@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BinaryChargeNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BinaryChargeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinaryChargeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinaryChargeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BinaryVertexCharge](../../../../../ComputerScience/AlgorithmsInComputerScience/BinaryChargeNamespaced.lean/declarations/binaryvertexcharge.md) | 25 | `declaration-track:bf7973bb2b279fb4bef3ba7d8d6544b9c7abae9f21fd218273193e23c7bc7f86` |
-| 2 | `structure` | [ChargedTerrain](../../../../../ComputerScience/AlgorithmsInComputerScience/BinaryChargeNamespaced.lean/declarations/chargedterrain.md) | 33 | `declaration-track:c3be8c5aba9b8f9c7e1ad2646bc550f1b019d472b90d0f78fcdea61a010598e6` |
-| 3 | `def` | [boolToReal](../../../../../ComputerScience/AlgorithmsInComputerScience/BinaryChargeNamespaced.lean/declarations/booltoreal.md) | 39 | `declaration-track:b54a7c6c986953a4339d915a303041c8dc25e1a38b6087d144663add506ea542` |
-| 4 | `theorem` | [boolToReal_false](../../../../../ComputerScience/AlgorithmsInComputerScience/BinaryChargeNamespaced.lean/declarations/booltoreal-false.md) | 43 | `result-track:08bdbbc36d3dfed59c7cfc638161f90f17accd088ad119f418e7ab4c035dbf41` |
-| 5 | `theorem` | [boolToReal_true](../../../../../ComputerScience/AlgorithmsInComputerScience/BinaryChargeNamespaced.lean/declarations/booltoreal-true.md) | 44 | `result-track:29d8d2fb9a0044bdae9fc8d74a0d13893a390d0dcfd24158a64f52a0f7964c49` |
+| 1 | `structure` | [BinaryVertexCharge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinaryChargeNamespaced.lean/declarations/binaryvertexcharge.md) | 25 | `declaration-track:bf7973bb2b279fb4bef3ba7d8d6544b9c7abae9f21fd218273193e23c7bc7f86` |
+| 2 | `structure` | [ChargedTerrain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinaryChargeNamespaced.lean/declarations/chargedterrain.md) | 33 | `declaration-track:c3be8c5aba9b8f9c7e1ad2646bc550f1b019d472b90d0f78fcdea61a010598e6` |
+| 3 | `def` | [boolToReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinaryChargeNamespaced.lean/declarations/booltoreal.md) | 39 | `declaration-track:b54a7c6c986953a4339d915a303041c8dc25e1a38b6087d144663add506ea542` |
+| 4 | `theorem` | [boolToReal_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinaryChargeNamespaced.lean/declarations/booltoreal-false.md) | 43 | `result-track:08bdbbc36d3dfed59c7cfc638161f90f17accd088ad119f418e7ab4c035dbf41` |
+| 5 | `theorem` | [boolToReal_true](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinaryChargeNamespaced.lean/declarations/booltoreal-true.md) | 44 | `result-track:29d8d2fb9a0044bdae9fc8d74a0d13893a390d0dcfd24158a64f52a0f7964c49` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

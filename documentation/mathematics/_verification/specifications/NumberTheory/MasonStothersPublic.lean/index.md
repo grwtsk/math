@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/MasonStothersPublic.lean/index.md) · [Full source](../../../../NumberTheory/MasonStothersPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MasonStothersPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MasonStothersPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [abc_subcall](../../../../NumberTheory/MasonStothersPublic.lean/declarations/abc-subcall.md) | 30 | `result-track:94aca089935a48602327e92e4b781d406f6fb25848d0c50c8c3b9393342e3bb8` |
-| 2 | `theorem` | [Polynomial.abc](../../../../NumberTheory/MasonStothersPublic.lean/declarations/polynomial-abc.md) | 55 | `result-track:3cc9619c076778cd488a38b9f7f895816a4b190b7543498e9efa568d6199bf27` |
+| 1 | `theorem` | [abc_subcall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MasonStothersPublic.lean/declarations/abc-subcall.md) | 30 | `result-track:94aca089935a48602327e92e4b781d406f6fb25848d0c50c8c3b9393342e3bb8` |
+| 2 | `theorem` | [Polynomial.abc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MasonStothersPublic.lean/declarations/polynomial-abc.md) | 55 | `result-track:3cc9619c076778cd488a38b9f7f895816a4b190b7543498e9efa568d6199bf27` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

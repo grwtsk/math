@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/RatStar.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/RatStar.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatStar.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatStar.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,12 +62,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [addSubmonoid_closure_range_pow](../../../../../NumberTheory/ElementaryNumberTheory/RatStar.lean/declarations/addsubmonoid-closure-range-pow-source-edition-2.md) | 25 | `result-track:92c5b5622009be966dd8f5dc652e82c0a3eb7590b568449748c81ed3cf9a063e` |
-| 2 | `lemma` | [addSubmonoid_closure_range_mul_self](../../../../../NumberTheory/ElementaryNumberTheory/RatStar.lean/declarations/addsubmonoid-closure-range-mul-self-source-edition-2.md) | 37 | `result-track:9d0ca933303f34c21e365b109eaa4899c6b23709485d00f08b008f99ee60543c` |
-| 3 | `instance` | [instStarOrderedRing](../../../../../NumberTheory/ElementaryNumberTheory/RatStar.lean/declarations/inststarorderedring.md) | 40 | `declaration-track:15d7fea80436ddff39a051bfca8b0a3899cf048e890eae6c5a3f4a00727ead5d` |
-| 4 | `lemma` | [addSubmonoid_closure_range_pow](../../../../../NumberTheory/ElementaryNumberTheory/RatStar.lean/declarations/addsubmonoid-closure-range-pow.md) | 47 | `result-track:6d0b47f8047030fc0652b3f1b6dc90df51c6b0cb5bc44e816d9577049b8c1f1d` |
-| 5 | `lemma` | [addSubmonoid_closure_range_mul_self](../../../../../NumberTheory/ElementaryNumberTheory/RatStar.lean/declarations/addsubmonoid-closure-range-mul-self.md) | 56 | `result-track:682bfd78b568579366e95c4e71337ce3f74a11316b2642588b23fe9ab96fe72d` |
-| 6 | `instance` | [instStarOrderedRing](../../../../../NumberTheory/ElementaryNumberTheory/RatStar.lean/declarations/inststarorderedring-source-edition-2.md) | 59 | `declaration-track:a6bce9bd2b1ce90f64f27aeb455355dce56e471c1a1fa77e2033ae428201a807` |
+| 1 | `lemma` | [addSubmonoid_closure_range_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatStar.lean/declarations/addsubmonoid-closure-range-pow-source-edition-2.md) | 25 | `result-track:92c5b5622009be966dd8f5dc652e82c0a3eb7590b568449748c81ed3cf9a063e` |
+| 2 | `lemma` | [addSubmonoid_closure_range_mul_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatStar.lean/declarations/addsubmonoid-closure-range-mul-self-source-edition-2.md) | 37 | `result-track:9d0ca933303f34c21e365b109eaa4899c6b23709485d00f08b008f99ee60543c` |
+| 3 | `instance` | [instStarOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatStar.lean/declarations/inststarorderedring.md) | 40 | `declaration-track:15d7fea80436ddff39a051bfca8b0a3899cf048e890eae6c5a3f4a00727ead5d` |
+| 4 | `lemma` | [addSubmonoid_closure_range_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatStar.lean/declarations/addsubmonoid-closure-range-pow.md) | 47 | `result-track:6d0b47f8047030fc0652b3f1b6dc90df51c6b0cb5bc44e816d9577049b8c1f1d` |
+| 5 | `lemma` | [addSubmonoid_closure_range_mul_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatStar.lean/declarations/addsubmonoid-closure-range-mul-self.md) | 56 | `result-track:682bfd78b568579366e95c4e71337ce3f74a11316b2642588b23fe9ab96fe72d` |
+| 6 | `instance` | [instStarOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatStar.lean/declarations/inststarorderedring-source-edition-2.md) | 59 | `declaration-track:a6bce9bd2b1ce90f64f27aeb455355dce56e471c1a1fa77e2033ae428201a807` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

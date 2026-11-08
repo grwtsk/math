@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ChevalleyNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ChevalleyNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChevalleyNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChevalleyNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isConstructible_comap_C](../../../../CommutativeAlgebra/ChevalleyNamespacedPublic.lean/declarations/isconstructible-comap-c.md) | 36 | `result-track:45c19f2b038f043d8e2b799798de52c425f6dea4817ff589aaa4ab11fa7905aa` |
-| 2 | `lemma` | [isConstructible_comap_image](../../../../CommutativeAlgebra/ChevalleyNamespacedPublic.lean/declarations/isconstructible-comap-image.md) | 46 | `result-track:4b8576cc316955ca9020987f0df1e1f4b5c9b3687360b5c9fc0982e309512079` |
-| 3 | `lemma` | [isConstructible_range_comap](../../../../CommutativeAlgebra/ChevalleyNamespacedPublic.lean/declarations/isconstructible-range-comap.md) | 62 | `result-track:c18f700e597e7b7735df49a9cc9bd2dde97a76ac60bd1bcc2aa368e29220588c` |
-| 4 | `lemma` | [isOpenMap_comap_of_hasGoingDown_of_finitePresentation](../../../../CommutativeAlgebra/ChevalleyNamespacedPublic.lean/declarations/isopenmap-comap-of-hasgoingdown-of-finitepresentation.md) | 67 | `result-track:8d82b1add1568416119a1269b1751bd1eac6407c0f9f3d2f7993565bd7c05dca` |
-| 5 | `theorem` | [isOpenMap_comap_algebraMap_tensorProduct_of_field](../../../../CommutativeAlgebra/ChevalleyNamespacedPublic.lean/declarations/isopenmap-comap-algebramap-tensorproduct-of-field.md) | 80 | `result-track:85b893e7e1ea6d172338f9087a5ca75c4450ba1433c2180b99bc85650404a231` |
+| 1 | `lemma` | [isConstructible_comap_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChevalleyNamespacedPublic.lean/declarations/isconstructible-comap-c.md) | 36 | `result-track:45c19f2b038f043d8e2b799798de52c425f6dea4817ff589aaa4ab11fa7905aa` |
+| 2 | `lemma` | [isConstructible_comap_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChevalleyNamespacedPublic.lean/declarations/isconstructible-comap-image.md) | 46 | `result-track:4b8576cc316955ca9020987f0df1e1f4b5c9b3687360b5c9fc0982e309512079` |
+| 3 | `lemma` | [isConstructible_range_comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChevalleyNamespacedPublic.lean/declarations/isconstructible-range-comap.md) | 62 | `result-track:c18f700e597e7b7735df49a9cc9bd2dde97a76ac60bd1bcc2aa368e29220588c` |
+| 4 | `lemma` | [isOpenMap_comap_of_hasGoingDown_of_finitePresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChevalleyNamespacedPublic.lean/declarations/isopenmap-comap-of-hasgoingdown-of-finitepresentation.md) | 67 | `result-track:8d82b1add1568416119a1269b1751bd1eac6407c0f9f3d2f7993565bd7c05dca` |
+| 5 | `theorem` | [isOpenMap_comap_algebraMap_tensorProduct_of_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChevalleyNamespacedPublic.lean/declarations/isopenmap-comap-algebramap-tensorproduct-of-field.md) | 80 | `result-track:85b893e7e1ea6d172338f9087a5ca75c4450ba1433c2180b99bc85650404a231` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

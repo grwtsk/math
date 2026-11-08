@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/AllAnyAllIffForall.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/AllAnyAllIffForall.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/AllAnyAllIffForall.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/AllAnyAllIffForall.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [all_iff_forall](../../../../../../ComputerScience/TheoryOfData/DataStructures/AllAnyAllIffForall.lean/declarations/all-iff-forall.md) | 27 | `result-track:69d5ba38a280c04df5456968a9a78edf6e84dee631c44c734f19ca3cf42a5263` |
-| 2 | `theorem` | [all_iff_forall_prop](../../../../../../ComputerScience/TheoryOfData/DataStructures/AllAnyAllIffForall.lean/declarations/all-iff-forall-prop.md) | 33 | `result-track:f99769fb5f79d0b192c9a58034b325e167bc35316412b7c138e891128889acfa` |
-| 3 | `theorem` | [any_iff_exists](../../../../../../ComputerScience/TheoryOfData/DataStructures/AllAnyAllIffForall.lean/declarations/any-iff-exists.md) | 42 | `result-track:72e00717e0cbfbfd58b61200deaa633e9d21746649893e3bf8d463994587f5d3` |
-| 4 | `theorem` | [any_iff_exists_prop](../../../../../../ComputerScience/TheoryOfData/DataStructures/AllAnyAllIffForall.lean/declarations/any-iff-exists-prop.md) | 48 | `result-track:c2fe42e1a14540aabc95282989a775e5e45326edce8f5f0857c6ba595c9ed3df` |
-| 5 | `theorem` | [any_of_mem](../../../../../../ComputerScience/TheoryOfData/DataStructures/AllAnyAllIffForall.lean/declarations/any-of-mem.md) | 51 | `result-track:d51ed2849424d99313e3b7595cd76ea2ea8c144f60ff128a2067fb5a95874ab5` |
+| 1 | `theorem` | [all_iff_forall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/AllAnyAllIffForall.lean/declarations/all-iff-forall.md) | 27 | `result-track:69d5ba38a280c04df5456968a9a78edf6e84dee631c44c734f19ca3cf42a5263` |
+| 2 | `theorem` | [all_iff_forall_prop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/AllAnyAllIffForall.lean/declarations/all-iff-forall-prop.md) | 33 | `result-track:f99769fb5f79d0b192c9a58034b325e167bc35316412b7c138e891128889acfa` |
+| 3 | `theorem` | [any_iff_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/AllAnyAllIffForall.lean/declarations/any-iff-exists.md) | 42 | `result-track:72e00717e0cbfbfd58b61200deaa633e9d21746649893e3bf8d463994587f5d3` |
+| 4 | `theorem` | [any_iff_exists_prop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/AllAnyAllIffForall.lean/declarations/any-iff-exists-prop.md) | 48 | `result-track:c2fe42e1a14540aabc95282989a775e5e45326edce8f5f0857c6ba595c9ed3df` |
+| 5 | `theorem` | [any_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/AllAnyAllIffForall.lean/declarations/any-of-mem.md) | 51 | `result-track:d51ed2849424d99313e3b7595cd76ea2ea8c144f60ff128a2067fb5a95874ab5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

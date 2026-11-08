@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LiftedPairingEquation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LiftedPairingEquation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LiftedPairingEquation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LiftedPairingEquation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Arithmetic.WeilPairing` — import line 19; external provider; requires a separately pinned dependency.
-- [Operation And Lift Data](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OperationAndLiftData.lean/index.md) — import line 21; pinned internal source present.
+- [Operation And Lift Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OperationAndLiftData.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [heisenberg_commutator_lift](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LiftedPairingEquation.lean/declarations/heisenberg-commutator-lift.md) | 43 | `result-track:f6a474a6ad8bcf63c0d371185fc2a19e5382ffe0816da2dc5992d573fc44dd33` |
+| 1 | `theorem` | [heisenberg_commutator_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LiftedPairingEquation.lean/declarations/heisenberg-commutator-lift.md) | 43 | `result-track:f6a474a6ad8bcf63c0d371185fc2a19e5382ffe0816da2dc5992d573fc44dd33` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

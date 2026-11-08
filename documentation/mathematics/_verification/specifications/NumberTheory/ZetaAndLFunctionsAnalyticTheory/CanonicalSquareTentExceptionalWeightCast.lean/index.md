@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightCast.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightCast.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightCast.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightCast.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentExceptionalWeightSign`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightSign.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentExceptionalWeightSign`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightSign.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cofactorZero_eq_realFirstCofactor](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightCast.lean/declarations/cofactorzero-eq-realfirstcofactor.md) | 27 | `result-track:1cef5c88ae045637e7c7ec1dc64bc698582bab98d4f062bac0d72557c8ecca27` |
-| 2 | `theorem` | [cofactorTwo_eq_realDeterminant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightCast.lean/declarations/cofactortwo-eq-realdeterminant.md) | 33 | `result-track:5f79ef113734e8dfa26cee0119ed199b13a0580e95a4acf5012001c0b005da56` |
-| 3 | `theorem` | [exceptionalWeight_eq_realExceptionalWeight](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightCast.lean/declarations/exceptionalweight-eq-realexceptionalweight.md) | 38 | `result-track:00efa42f815b319c684743b9e53ff9323d321bd5963b77083669565909e675ea` |
+| 1 | `theorem` | [cofactorZero_eq_realFirstCofactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightCast.lean/declarations/cofactorzero-eq-realfirstcofactor.md) | 27 | `result-track:1cef5c88ae045637e7c7ec1dc64bc698582bab98d4f062bac0d72557c8ecca27` |
+| 2 | `theorem` | [cofactorTwo_eq_realDeterminant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightCast.lean/declarations/cofactortwo-eq-realdeterminant.md) | 33 | `result-track:5f79ef113734e8dfa26cee0119ed199b13a0580e95a4acf5012001c0b005da56` |
+| 3 | `theorem` | [exceptionalWeight_eq_realExceptionalWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightCast.lean/declarations/exceptionalweight-eq-realexceptionalweight.md) | 38 | `result-track:00efa42f815b319c684743b9e53ff9323d321bd5963b77083669565909e675ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

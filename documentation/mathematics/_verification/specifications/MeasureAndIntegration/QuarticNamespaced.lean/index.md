@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/QuarticNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/QuarticNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuarticNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuarticNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_cRatio_quartic_of](../../../../MeasureAndIntegration/QuarticNamespaced.lean/declarations/tendsto-cratio-quartic-of.md) | 40 | `result-track:358255ccdb9897460de1c5c8feb5340774d1a229cd9048f50002255b1c95f28b` |
-| 2 | `theorem` | [cWin_vQuartic_pos](../../../../MeasureAndIntegration/QuarticNamespaced.lean/declarations/cwin-vquartic-pos.md) | 61 | `result-track:72b3a9f3463c25a34d36b1d62415c4aa3b322787689f03b6855e43f215580a68` |
-| 3 | `lemma` | [atVQ_g](../../../../MeasureAndIntegration/QuarticNamespaced.lean/declarations/atvq-g.md) | 71 | `result-track:e0264b12adcf76024bf950b040c47b17bad7b34bf4b4862ed2f37880361e7a82` |
-| 4 | `theorem` | [tendsto_cRatio_quartic](../../../../MeasureAndIntegration/QuarticNamespaced.lean/declarations/tendsto-cratio-quartic.md) | 77 | `result-track:3f45771a4f4ec85e6e65183383fd948d58ac5c6222fd2873367d3ee2f02d8359` |
-| 5 | `theorem` | [tendsto_cRatio_quartic_D1](../../../../MeasureAndIntegration/QuarticNamespaced.lean/declarations/tendsto-cratio-quartic-d1.md) | 99 | `result-track:520e40c0f4bed10f784b9984746efbc47376ec6e15e1bbd3cfaf4719b40c6ced` |
+| 1 | `theorem` | [tendsto_cRatio_quartic_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuarticNamespaced.lean/declarations/tendsto-cratio-quartic-of.md) | 40 | `result-track:358255ccdb9897460de1c5c8feb5340774d1a229cd9048f50002255b1c95f28b` |
+| 2 | `theorem` | [cWin_vQuartic_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuarticNamespaced.lean/declarations/cwin-vquartic-pos.md) | 61 | `result-track:72b3a9f3463c25a34d36b1d62415c4aa3b322787689f03b6855e43f215580a68` |
+| 3 | `lemma` | [atVQ_g](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuarticNamespaced.lean/declarations/atvq-g.md) | 71 | `result-track:e0264b12adcf76024bf950b040c47b17bad7b34bf4b4862ed2f37880361e7a82` |
+| 4 | `theorem` | [tendsto_cRatio_quartic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuarticNamespaced.lean/declarations/tendsto-cratio-quartic.md) | 77 | `result-track:3f45771a4f4ec85e6e65183383fd948d58ac5c6222fd2873367d3ee2f02d8359` |
+| 5 | `theorem` | [tendsto_cRatio_quartic_D1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuarticNamespaced.lean/declarations/tendsto-cratio-quartic-d1.md) | 99 | `result-track:520e40c0f4bed10f784b9984746efbc47376ec6e15e1bbd3cfaf4719b40c6ced` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MoebiusTruncationHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MoebiusTruncationHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoebiusTruncationHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoebiusTruncationHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [closedArithmeticCutoff](../../../../CommutativeAlgebra/MoebiusTruncationHistoricalSourceEdition2.lean/declarations/closedarithmeticcutoff.md) | 21 | `declaration-track:26bbfcdf52142ced7b0ce63ba960bc2c8dcd4c2cf57eda97a3ac636f2135f351` |
-| 2 | `theorem` | [arithmetic_inverse_split](../../../../CommutativeAlgebra/MoebiusTruncationHistoricalSourceEdition2.lean/declarations/arithmetic-inverse-split.md) | 26 | `result-track:548844d5d8c40dfea0f8158e28ff4a7c447d0d176bc83f710de14334955e0cee` |
-| 3 | `theorem` | [moebius_closed_cutoff_split](../../../../CommutativeAlgebra/MoebiusTruncationHistoricalSourceEdition2.lean/declarations/moebius-closed-cutoff-split.md) | 42 | `result-track:7bb6097e57012fa3207bf7086a7e525d6cd0b3440c4fbdd31a4dd22070c197d0` |
-| 4 | `theorem` | [moebius_above_cutoff_zero](../../../../CommutativeAlgebra/MoebiusTruncationHistoricalSourceEdition2.lean/declarations/moebius-above-cutoff-zero.md) | 51 | `result-track:0b60c1c0617718c0c74233497c6ebff62e1b578f3623f561f1e00067ab9584ea` |
+| 1 | `def` | [closedArithmeticCutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoebiusTruncationHistoricalSourceEdition2.lean/declarations/closedarithmeticcutoff.md) | 21 | `declaration-track:26bbfcdf52142ced7b0ce63ba960bc2c8dcd4c2cf57eda97a3ac636f2135f351` |
+| 2 | `theorem` | [arithmetic_inverse_split](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoebiusTruncationHistoricalSourceEdition2.lean/declarations/arithmetic-inverse-split.md) | 26 | `result-track:548844d5d8c40dfea0f8158e28ff4a7c447d0d176bc83f710de14334955e0cee` |
+| 3 | `theorem` | [moebius_closed_cutoff_split](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoebiusTruncationHistoricalSourceEdition2.lean/declarations/moebius-closed-cutoff-split.md) | 42 | `result-track:7bb6097e57012fa3207bf7086a7e525d6cd0b3440c4fbdd31a4dd22070c197d0` |
+| 4 | `theorem` | [moebius_above_cutoff_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoebiusTruncationHistoricalSourceEdition2.lean/declarations/moebius-above-cutoff-zero.md) | 51 | `result-track:0b60c1c0617718c0c74233497c6ebff62e1b578f3623f561f1e00067ab9584ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

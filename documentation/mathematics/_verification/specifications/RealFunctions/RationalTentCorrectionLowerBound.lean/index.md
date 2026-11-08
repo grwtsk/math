@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/index.md) · [Full source](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Real.TentRationalCorrection`](../../../../MeasureAndIntegration/TentRationalCorrection.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.RationalRoundedArithmetic`](../../../../FunctionsOfAComplexVariable/RationalRoundedArithmetic.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Real.TentRationalCorrection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentRationalCorrection.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalRoundedArithmetic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalRoundedArithmetic.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,24 +59,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Admissible](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/admissible.md) | 41 | `declaration-track:f61c4aa383c4876b877851e43b84d0b808a74ca68db0abd9f019bb9b3e070f87` |
-| 2 | `instance` | [(anonymous)](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/instance.md) | 44 | `declaration-track:c250cd81e72c40a4c887b6ee48837092b60f7b5506343dde03786df059ffedf2` |
-| 3 | `def` | [PrefixEnclosure](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/prefixenclosure.md) | 50 | `declaration-track:e2aa23e6fea85b4d663658d1c9f4405fc4f67f40704e09610e5c3c7b5ba998e9` |
-| 4 | `def` | [remainderQ](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/remainderq.md) | 55 | `declaration-track:ebf7924b9aa2f563adf88fa99aa977b644b9d8cb3ec149aa023e1e25702408d3` |
-| 5 | `def` | [lowerBaseQ](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/lowerbaseq.md) | 59 | `declaration-track:84aeb3d57adf45ce7a1a56b40d9eacd5800bca5561011995f4572be70f25e733` |
-| 6 | `def` | [computeLower](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/computelower.md) | 64 | `declaration-track:a118893e6a26576bf8e879eb0785e3f9d2d1ed55bf5f751f653020f5027239c9` |
-| 7 | `def` | [evaluate](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/evaluate.md) | 70 | `declaration-track:cc646b79ae28efdea9c7fa55cee9eb3ff99dab0eb93928388bdc245225054627` |
-| 8 | `def` | [verify](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/verify.md) | 79 | `declaration-track:1ae98c83974b9be883c5d000bd186985e7d2cc4bb8c28fd588e92e3f4670670e` |
-| 9 | `theorem` | [cast_remainderQ](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/cast-remainderq.md) | 84 | `result-track:f055278c9b32ef094348357a8aa2fe0267136f9f78c2db8ffb5607c851a75995` |
-| 10 | `theorem` | [cast_lowerBaseQ](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/cast-lowerbaseq.md) | 92 | `result-track:c561480817fc78425a5a5d53a814e9333333996be658fb8e14d15d9608935b2b` |
-| 11 | `theorem` | [computeLower_le_base](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/computelower-le-base.md) | 99 | `result-track:6bef93fe74f18383140e965370d46e823e3a08d2bba4b2d42e3f8a423bc4de3b` |
-| 12 | `theorem` | [base_lt_computeLower_add_grid](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/base-lt-computelower-add-grid.md) | 108 | `result-track:c34f9fdbc1b575b6addd88f7f0b75a3d36b9f50c3aa783aa4ebc3cdd87167b0b` |
-| 13 | `theorem` | [lowerBase_le_correction](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/lowerbase-le-correction.md) | 119 | `result-track:63dcbfa9f1899f93609b4a909f63202bc1171ae58e2d89db49865eb135105986` |
-| 14 | `theorem` | [computeLower_sound](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/computelower-sound.md) | 138 | `result-track:2253e9dc853e51a2ab4b9760beab8cb91b4d9e2fc04b412a7187d4f93afb1297` |
-| 15 | `theorem` | [verify_iff](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/verify-iff.md) | 148 | `result-track:3e5c8d10f38be06c0d40f7d314ed66aa3a3e8bc0422760a5843ab2adc4823fdd` |
-| 16 | `theorem` | [verify_sound](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/verify-sound.md) | 160 | `result-track:4bb0069f72e8c62cad350d7b1eef9de1c192a040331211da0a4cd25da927bcf4` |
-| 17 | `theorem` | [verify_floor_sound](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/verify-floor-sound.md) | 176 | `result-track:a5546175428bb5363a9feebd43ebb32be021946a26f8b6b2df5a3807870cf978` |
-| 18 | `theorem` | [floor_equality_not_strict_fixture](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/floor-equality-not-strict-fixture.md) | 187 | `result-track:b6804eae9f6a8079477f94df98ab1b18c2afb9e7fe12bc11299e45a14f024e79` |
+| 1 | `def` | [Admissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/admissible.md) | 41 | `declaration-track:f61c4aa383c4876b877851e43b84d0b808a74ca68db0abd9f019bb9b3e070f87` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/instance.md) | 44 | `declaration-track:c250cd81e72c40a4c887b6ee48837092b60f7b5506343dde03786df059ffedf2` |
+| 3 | `def` | [PrefixEnclosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/prefixenclosure.md) | 50 | `declaration-track:e2aa23e6fea85b4d663658d1c9f4405fc4f67f40704e09610e5c3c7b5ba998e9` |
+| 4 | `def` | [remainderQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/remainderq.md) | 55 | `declaration-track:ebf7924b9aa2f563adf88fa99aa977b644b9d8cb3ec149aa023e1e25702408d3` |
+| 5 | `def` | [lowerBaseQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/lowerbaseq.md) | 59 | `declaration-track:84aeb3d57adf45ce7a1a56b40d9eacd5800bca5561011995f4572be70f25e733` |
+| 6 | `def` | [computeLower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/computelower.md) | 64 | `declaration-track:a118893e6a26576bf8e879eb0785e3f9d2d1ed55bf5f751f653020f5027239c9` |
+| 7 | `def` | [evaluate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/evaluate.md) | 70 | `declaration-track:cc646b79ae28efdea9c7fa55cee9eb3ff99dab0eb93928388bdc245225054627` |
+| 8 | `def` | [verify](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/verify.md) | 79 | `declaration-track:1ae98c83974b9be883c5d000bd186985e7d2cc4bb8c28fd588e92e3f4670670e` |
+| 9 | `theorem` | [cast_remainderQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/cast-remainderq.md) | 84 | `result-track:f055278c9b32ef094348357a8aa2fe0267136f9f78c2db8ffb5607c851a75995` |
+| 10 | `theorem` | [cast_lowerBaseQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/cast-lowerbaseq.md) | 92 | `result-track:c561480817fc78425a5a5d53a814e9333333996be658fb8e14d15d9608935b2b` |
+| 11 | `theorem` | [computeLower_le_base](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/computelower-le-base.md) | 99 | `result-track:6bef93fe74f18383140e965370d46e823e3a08d2bba4b2d42e3f8a423bc4de3b` |
+| 12 | `theorem` | [base_lt_computeLower_add_grid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/base-lt-computelower-add-grid.md) | 108 | `result-track:c34f9fdbc1b575b6addd88f7f0b75a3d36b9f50c3aa783aa4ebc3cdd87167b0b` |
+| 13 | `theorem` | [lowerBase_le_correction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/lowerbase-le-correction.md) | 119 | `result-track:63dcbfa9f1899f93609b4a909f63202bc1171ae58e2d89db49865eb135105986` |
+| 14 | `theorem` | [computeLower_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/computelower-sound.md) | 138 | `result-track:2253e9dc853e51a2ab4b9760beab8cb91b4d9e2fc04b412a7187d4f93afb1297` |
+| 15 | `theorem` | [verify_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/verify-iff.md) | 148 | `result-track:3e5c8d10f38be06c0d40f7d314ed66aa3a3e8bc0422760a5843ab2adc4823fdd` |
+| 16 | `theorem` | [verify_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/verify-sound.md) | 160 | `result-track:4bb0069f72e8c62cad350d7b1eef9de1c192a040331211da0a4cd25da927bcf4` |
+| 17 | `theorem` | [verify_floor_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/verify-floor-sound.md) | 176 | `result-track:a5546175428bb5363a9feebd43ebb32be021946a26f8b6b2df5a3807870cf978` |
+| 18 | `theorem` | [floor_equality_not_strict_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/declarations/floor-equality-not-strict-fixture.md) | 187 | `result-track:b6804eae9f6a8079477f94df98ab1b18c2afb9e7fe12bc11299e45a14f024e79` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

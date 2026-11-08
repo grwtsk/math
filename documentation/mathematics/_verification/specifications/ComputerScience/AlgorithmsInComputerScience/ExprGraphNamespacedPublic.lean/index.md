@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprGraphNamespacedPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprGraphNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprGraphNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprGraphNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `syntax` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprGraphNamespacedPublic.lean/declarations/syntax.md) | 20 | `declaration-track:fe28cb06f75f453e22cba4a693b9800565aa2d77a7d7e876c9504b89cc5cb20e` |
-| 2 | `def` | [elabExprGraphCmd](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprGraphNamespacedPublic.lean/declarations/elabexprgraphcmd.md) | 24 | `declaration-track:edbb84ad394d6b68a2ec70121803b57169fcb4594adab825307b6b6f62f55a0e` |
-| 3 | `def` | [a](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprGraphNamespacedPublic.lean/declarations/a.md) | 89 | `declaration-track:bac453e1b087017fa89e7b418ef5830c593422612766c9f196a530b2076070cf` |
-| 4 | `def` | [b](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprGraphNamespacedPublic.lean/declarations/b.md) | 90 | `declaration-track:4ba221f4f95d6b407fe5f6544912625e22241a4655dc650986fa3207241e20c2` |
-| 5 | `def` | [foo](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprGraphNamespacedPublic.lean/declarations/foo.md) | 91 | `declaration-track:af5b1447699de635057c0c4dd947f9fc7f7ac2c3aa8e44ecaff362ea72d998c1` |
+| 1 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprGraphNamespacedPublic.lean/declarations/syntax.md) | 20 | `declaration-track:fe28cb06f75f453e22cba4a693b9800565aa2d77a7d7e876c9504b89cc5cb20e` |
+| 2 | `def` | [elabExprGraphCmd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprGraphNamespacedPublic.lean/declarations/elabexprgraphcmd.md) | 24 | `declaration-track:edbb84ad394d6b68a2ec70121803b57169fcb4594adab825307b6b6f62f55a0e` |
+| 3 | `def` | [a](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprGraphNamespacedPublic.lean/declarations/a.md) | 89 | `declaration-track:bac453e1b087017fa89e7b418ef5830c593422612766c9f196a530b2076070cf` |
+| 4 | `def` | [b](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprGraphNamespacedPublic.lean/declarations/b.md) | 90 | `declaration-track:4ba221f4f95d6b407fe5f6544912625e22241a4655dc650986fa3207241e20c2` |
+| 5 | `def` | [foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprGraphNamespacedPublic.lean/declarations/foo.md) | 91 | `declaration-track:af5b1447699de635057c0c4dd947f9fc7f7ac2c3aa8e44ecaff362ea72d998c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

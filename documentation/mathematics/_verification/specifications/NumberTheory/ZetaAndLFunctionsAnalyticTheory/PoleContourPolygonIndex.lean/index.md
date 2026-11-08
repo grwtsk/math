@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PoleContourPolygonIndex.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PoleContourPolygonIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PoleContourPolygonIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PoleContourPolygonIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.RationalPolygonIndex`](../../../../../GeneralTopology/RationalPolygonIndex.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PoleContourWinding`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalPolygonIndex`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPolygonIndex.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PoleContourWinding`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [evaluate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PoleContourPolygonIndex.lean/declarations/evaluate.md) | 27 | `declaration-track:173586b8e77e07fb4d74df5de33883f3ed34d0651e5cfa825140fc8fdc0fb7b4` |
-| 2 | `theorem` | [evaluate_eq_some_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PoleContourPolygonIndex.lean/declarations/evaluate-eq-some-iff.md) | 31 | `result-track:b516d63a72baa7fe9b63b016794829a20bdcf4196ae3ea09271262b33e5456f1` |
-| 3 | `theorem` | [imageIndex_computed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PoleContourPolygonIndex.lean/declarations/imageindex-computed.md) | 39 | `result-track:7989c59fec26d4854692641eed1d7d5b1ca06e2a00c3edc502d0e2fa2e27c5f7` |
-| 4 | `theorem` | [sourceIndex_computed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PoleContourPolygonIndex.lean/declarations/sourceindex-computed.md) | 49 | `result-track:f201a1a4d666e22218db705413f370971af0b671d0ff2f09c04b7e7335ea9c17` |
-| 5 | `theorem` | [evaluate_sound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PoleContourPolygonIndex.lean/declarations/evaluate-sound.md) | 57 | `result-track:e76b3d25fc4493deea469bec575f7372608c3cd91d8b3441d3a2d4ced9153bce` |
+| 1 | `def` | [evaluate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PoleContourPolygonIndex.lean/declarations/evaluate.md) | 27 | `declaration-track:173586b8e77e07fb4d74df5de33883f3ed34d0651e5cfa825140fc8fdc0fb7b4` |
+| 2 | `theorem` | [evaluate_eq_some_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PoleContourPolygonIndex.lean/declarations/evaluate-eq-some-iff.md) | 31 | `result-track:b516d63a72baa7fe9b63b016794829a20bdcf4196ae3ea09271262b33e5456f1` |
+| 3 | `theorem` | [imageIndex_computed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PoleContourPolygonIndex.lean/declarations/imageindex-computed.md) | 39 | `result-track:7989c59fec26d4854692641eed1d7d5b1ca06e2a00c3edc502d0e2fa2e27c5f7` |
+| 4 | `theorem` | [sourceIndex_computed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PoleContourPolygonIndex.lean/declarations/sourceindex-computed.md) | 49 | `result-track:f201a1a4d666e22218db705413f370971af0b671d0ff2f09c04b7e7335ea9c17` |
+| 5 | `theorem` | [evaluate_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PoleContourPolygonIndex.lean/declarations/evaluate-sound.md) | 57 | `result-track:e76b3d25fc4493deea469bec575f7372608c3cd91d8b3441d3a2d4ced9153bce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.RationalRectangleMesh`](../../../../../FunctionsOfAComplexVariable/RationalRectangleMesh.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalRectangleIndex`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleIndex.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalRectangleMesh`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalRectangleMesh.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalRectangleIndex`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleIndex.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [evaluateBox](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/evaluatebox.md) | 29 | `declaration-track:dd8c7ad8b0c41483bcf7d3866ad2326679506ead21e87f2e4994469305acd73c` |
-| 2 | `theorem` | [evaluateBox_eq_some_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/evaluatebox-eq-some-iff.md) | 35 | `result-track:1b1cc5a681aad54f74493eda5ac74a086383e19ab1b985efe678661af2d743cb` |
-| 3 | `def` | [lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/lower.md) | 43 | `declaration-track:650330c29c3aaa0deeca89cd0bce0c243e6ec7f3bc6e79ae32abed8aa524dc8f` |
-| 4 | `def` | [upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/upper.md) | 44 | `declaration-track:fcc2ba9dcc9412a9ae9d194efd9f7b23c53b43aef60b251627630e52e3a10085` |
-| 5 | `def` | [evaluate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/evaluate.md) | 46 | `declaration-track:010797927eae0d066ab146e1361abf7167c9fa21a4dfc5a1848aa081eb0e69f3` |
-| 6 | `theorem` | [boundary_of_tube](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/boundary-of-tube.md) | 53 | `result-track:013838c9903a633e49369d2313d6142cc1e363289addc833a5eb263bfd5451fd` |
-| 7 | `def` | [sourceHomotopy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/sourcehomotopy.md) | 69 | `declaration-track:a216659330d36beb176126551a5a840af7d8929fe9faf8a78a7049637c59acca` |
-| 8 | `theorem` | [sourceIndex_aligned](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/sourceindex-aligned.md) | 99 | `result-track:29fca33737c78ebbae3fa20921420e8509dbf62873786865152780800d46da5b` |
-| 9 | `theorem` | [target_rectangle](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/target-rectangle.md) | 120 | `result-track:d3db292499161b372687082fdb520315c5ef422a18600a07958ada6df3997e22` |
-| 10 | `theorem` | [count_eq_of_evaluate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/count-eq-of-evaluate.md) | 129 | `result-track:566c9b4773658dad89b0e03c4d5768b183eb8a575cb92e7cee9dc1445e1a0989` |
-| 11 | `theorem` | [result_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/result-nonnegative.md) | 156 | `result-track:ff67b11fb5d608f9dc0c194eb606f500d6a95d0f9bd7117c62ca06ea8e345b47` |
-| 12 | `theorem` | [complete_pair_of_evaluate_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/complete-pair-of-evaluate-one.md) | 163 | `result-track:baf6e53e884f6539924481bb4f4aece2deb97df02b0dd0414e56dccb8aae23e8` |
+| 1 | `def` | [evaluateBox](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/evaluatebox.md) | 29 | `declaration-track:dd8c7ad8b0c41483bcf7d3866ad2326679506ead21e87f2e4994469305acd73c` |
+| 2 | `theorem` | [evaluateBox_eq_some_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/evaluatebox-eq-some-iff.md) | 35 | `result-track:1b1cc5a681aad54f74493eda5ac74a086383e19ab1b985efe678661af2d743cb` |
+| 3 | `def` | [lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/lower.md) | 43 | `declaration-track:650330c29c3aaa0deeca89cd0bce0c243e6ec7f3bc6e79ae32abed8aa524dc8f` |
+| 4 | `def` | [upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/upper.md) | 44 | `declaration-track:fcc2ba9dcc9412a9ae9d194efd9f7b23c53b43aef60b251627630e52e3a10085` |
+| 5 | `def` | [evaluate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/evaluate.md) | 46 | `declaration-track:010797927eae0d066ab146e1361abf7167c9fa21a4dfc5a1848aa081eb0e69f3` |
+| 6 | `theorem` | [boundary_of_tube](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/boundary-of-tube.md) | 53 | `result-track:013838c9903a633e49369d2313d6142cc1e363289addc833a5eb263bfd5451fd` |
+| 7 | `def` | [sourceHomotopy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/sourcehomotopy.md) | 69 | `declaration-track:a216659330d36beb176126551a5a840af7d8929fe9faf8a78a7049637c59acca` |
+| 8 | `theorem` | [sourceIndex_aligned](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/sourceindex-aligned.md) | 99 | `result-track:29fca33737c78ebbae3fa20921420e8509dbf62873786865152780800d46da5b` |
+| 9 | `theorem` | [target_rectangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/target-rectangle.md) | 120 | `result-track:d3db292499161b372687082fdb520315c5ef422a18600a07958ada6df3997e22` |
+| 10 | `theorem` | [count_eq_of_evaluate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/count-eq-of-evaluate.md) | 129 | `result-track:566c9b4773658dad89b0e03c4d5768b183eb8a575cb92e7cee9dc1445e1a0989` |
+| 11 | `theorem` | [result_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/result-nonnegative.md) | 156 | `result-track:ff67b11fb5d608f9dc0c194eb606f500d6a95d0f9bd7117c62ca06ea8e345b47` |
+| 12 | `theorem` | [complete_pair_of_evaluate_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalRectangleCount.lean/declarations/complete-pair-of-evaluate-one.md) | 163 | `result-track:baf6e53e884f6539924481bb4f4aece2deb97df02b0dd0414e56dccb8aae23e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

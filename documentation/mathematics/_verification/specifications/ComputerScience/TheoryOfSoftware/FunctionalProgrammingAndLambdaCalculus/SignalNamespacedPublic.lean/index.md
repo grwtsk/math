@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `opaque` | [SignalImpl](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalNamespacedPublic.lean/declarations/signalimpl.md) | 27 | `declaration-track:17567a588c8d82ba39bb75e1b5e1305129f98cf40d76a49ab1120749e0413bc1` |
-| 2 | `def` | [Signal](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalNamespacedPublic.lean/declarations/signal.md) | 40 | `declaration-track:8e8d1887dd655e67f600d5d4dd301cdcd1e7b908a2c97366aae7bdff043d4393` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalNamespacedPublic.lean/declarations/instance.md) | 42 | `declaration-track:674db5caa5519b31b7089546ca54a8bf7855b2b229a1ee60d1be061019e438cc` |
-| 4 | `opaque` | [mk](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalNamespacedPublic.lean/declarations/mk.md) | 55 | `declaration-track:a3d4c68e816b33cdc833379ca452355a12c0dff5c1bdfcd828b2c19683ae84fe` |
-| 5 | `opaque` | [next](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalNamespacedPublic.lean/declarations/next.md) | 76 | `declaration-track:c4a04f5e463d95f0ccb191bdf2495537fadf991b442574173c3f0de8d5cd0ec8` |
-| 6 | `opaque` | [stop](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalNamespacedPublic.lean/declarations/stop.md) | 86 | `declaration-track:f92cb2b3e64e0b8f64b83c254128903e054b968446c11c51908ac9d8da1df2e1` |
-| 7 | `opaque` | [cancel](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalNamespacedPublic.lean/declarations/cancel.md) | 95 | `declaration-track:e89c5bba0fc6de54888aeb5d751c1fcffe9e55070dbe8c149ec37852a6423498` |
+| 1 | `opaque` | [SignalImpl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalNamespacedPublic.lean/declarations/signalimpl.md) | 27 | `declaration-track:17567a588c8d82ba39bb75e1b5e1305129f98cf40d76a49ab1120749e0413bc1` |
+| 2 | `def` | [Signal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalNamespacedPublic.lean/declarations/signal.md) | 40 | `declaration-track:8e8d1887dd655e67f600d5d4dd301cdcd1e7b908a2c97366aae7bdff043d4393` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalNamespacedPublic.lean/declarations/instance.md) | 42 | `declaration-track:674db5caa5519b31b7089546ca54a8bf7855b2b229a1ee60d1be061019e438cc` |
+| 4 | `opaque` | [mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalNamespacedPublic.lean/declarations/mk.md) | 55 | `declaration-track:a3d4c68e816b33cdc833379ca452355a12c0dff5c1bdfcd828b2c19683ae84fe` |
+| 5 | `opaque` | [next](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalNamespacedPublic.lean/declarations/next.md) | 76 | `declaration-track:c4a04f5e463d95f0ccb191bdf2495537fadf991b442574173c3f0de8d5cd0ec8` |
+| 6 | `opaque` | [stop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalNamespacedPublic.lean/declarations/stop.md) | 86 | `declaration-track:f92cb2b3e64e0b8f64b83c254128903e054b968446c11c51908ac9d8da1df2e1` |
+| 7 | `opaque` | [cancel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalNamespacedPublic.lean/declarations/cancel.md) | 95 | `declaration-track:e89c5bba0fc6de54888aeb5d751c1fcffe9e55070dbe8c149ec37852a6423498` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

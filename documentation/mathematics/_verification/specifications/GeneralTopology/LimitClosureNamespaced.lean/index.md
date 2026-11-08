@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LimitClosureNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/LimitClosureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitClosureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitClosureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [UniformCofinalScaleCertificate](../../../../GeneralTopology/LimitClosureNamespaced.lean/declarations/uniformcofinalscalecertificate.md) | 29 | `declaration-track:2d1dbf5b8dedf7679dde10fe8c465cb2c9d750c25eb3aa43ac6284ee28da3d6f` |
-| 2 | `structure` | [NormalizedLimitCompatibilityCertificate](../../../../GeneralTopology/LimitClosureNamespaced.lean/declarations/normalizedlimitcompatibilitycertificate.md) | 55 | `declaration-track:ed3ccf6fd97afb9d8252b7c550b29fdd504db5eca8a7d85bab5e2073ebab987a` |
-| 3 | `abbrev` | [LimitNormCompatibilityCertificate](../../../../GeneralTopology/LimitClosureNamespaced.lean/declarations/limitnormcompatibilitycertificate.md) | 105 | `declaration-track:0bfe024f2ed67be62652fab61514808dbf52440e76d0ade55951fe14773b515e` |
-| 4 | `def` | [NormalizedLimitBounded](../../../../GeneralTopology/LimitClosureNamespaced.lean/declarations/normalizedlimitbounded.md) | 108 | `declaration-track:699837980d7fde7081e9839e3d4a51f5706a5fc3a160530bc77fd1e577a705f2` |
-| 5 | `constant` | [*](../../../../GeneralTopology/LimitClosureNamespaced.lean/declarations/anonymous.md) | 116 | `declaration-track:8f5f405d9e8ee975eb4565cbe529c9bcbd5aff05dbdae73ff91867f4934e04a9` |
-| 6 | `theorem` | [normalized_limit_square_root_bound](../../../../GeneralTopology/LimitClosureNamespaced.lean/declarations/normalized-limit-square-root-bound.md) | 118 | `result-track:46e88439d4d413bc2e9c0a6cbdc97bd18ba1575038c457f60674ea5863ac225b` |
-| 7 | `theorem` | [normalized_limit_inherits_uniform_constant](../../../../GeneralTopology/LimitClosureNamespaced.lean/declarations/normalized-limit-inherits-uniform-constant.md) | 137 | `result-track:04dc309f95783b7e238609c0158c6497391060091c826b397afbf1e22685ce1f` |
+| 1 | `structure` | [UniformCofinalScaleCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitClosureNamespaced.lean/declarations/uniformcofinalscalecertificate.md) | 29 | `declaration-track:2d1dbf5b8dedf7679dde10fe8c465cb2c9d750c25eb3aa43ac6284ee28da3d6f` |
+| 2 | `structure` | [NormalizedLimitCompatibilityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitClosureNamespaced.lean/declarations/normalizedlimitcompatibilitycertificate.md) | 55 | `declaration-track:ed3ccf6fd97afb9d8252b7c550b29fdd504db5eca8a7d85bab5e2073ebab987a` |
+| 3 | `abbrev` | [LimitNormCompatibilityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitClosureNamespaced.lean/declarations/limitnormcompatibilitycertificate.md) | 105 | `declaration-track:0bfe024f2ed67be62652fab61514808dbf52440e76d0ade55951fe14773b515e` |
+| 4 | `def` | [NormalizedLimitBounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitClosureNamespaced.lean/declarations/normalizedlimitbounded.md) | 108 | `declaration-track:699837980d7fde7081e9839e3d4a51f5706a5fc3a160530bc77fd1e577a705f2` |
+| 5 | `constant` | [*](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitClosureNamespaced.lean/declarations/anonymous.md) | 116 | `declaration-track:8f5f405d9e8ee975eb4565cbe529c9bcbd5aff05dbdae73ff91867f4934e04a9` |
+| 6 | `theorem` | [normalized_limit_square_root_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitClosureNamespaced.lean/declarations/normalized-limit-square-root-bound.md) | 118 | `result-track:46e88439d4d413bc2e9c0a6cbdc97bd18ba1575038c457f60674ea5863ac225b` |
+| 7 | `theorem` | [normalized_limit_inherits_uniform_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitClosureNamespaced.lean/declarations/normalized-limit-inherits-uniform-constant.md) | 137 | `result-track:04dc309f95783b7e238609c0158c6497391060091c826b397afbf1e22685ce1f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinBounds`](../../../../../MeasureAndIntegration/CriticalStripMellinBounds.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinBounds.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mellinTailMajorant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/mellintailmajorant.md) | 26 | `declaration-track:be81d5dfe92aafa6e502b4f55d21e2efc4793899d031f6c599f11169beb8b58d` |
-| 2 | `lemma` | [mellinTailMajorant_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/mellintailmajorant-nonneg.md) | 28 | `result-track:291779f771de84af87d2ee69b6f1fcfa5a290e73620fd29067746c4fe69c6736` |
-| 3 | `theorem` | [truncation_at_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/truncation-at-one.md) | 32 | `result-track:f532f7251a37019c5b53036654dcea76d2a61ffdb6edbd8cd7ebab8788560b0b` |
-| 4 | `theorem` | [pole_truncation_at_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/pole-truncation-at-one.md) | 35 | `result-track:adb572320a53cd6ae923747f2ea14f4626b4b35aca36871c14e39b956c26a6bb` |
-| 5 | `theorem` | [truncation_error_le_uniform](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/truncation-error-le-uniform.md) | 39 | `result-track:812f17e63fccf86f5da32de4381b258a1e7707e7aef35e47ba34ad5403717173` |
-| 6 | `theorem` | [mellinTailMajorant_tendsto_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/mellintailmajorant-tendsto-zero.md) | 49 | `result-track:ddaf32374f2fac533fb4480561b7ef73f36dbeabf1637447110fd71aa1ecd0b5` |
-| 7 | `theorem` | [poleMellinError_tendsto_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/polemellinerror-tendsto-zero.md) | 57 | `result-track:9f6b49ed3d188984785772bffd0b805e02a24cd650edea2d8ac967b9961f3101` |
-| 8 | `theorem` | [truncatedPoleModel_error_on_right_rectangle](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/truncatedpolemodel-error-on-right-rectangle.md) | 66 | `result-track:e0bb57aaf25e7d719f7c2ceb9b943a01d1c21a3f954e9744563321ebf43d7bb8` |
-| 9 | `theorem` | [truncatedPoleModel_residual_tendsto_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/truncatedpolemodel-residual-tendsto-zero.md) | 92 | `result-track:5cb818dd51e8a63638155fa6ffe4a83c22f35add78b3766f86fc7bc158c1e4ab` |
-| 10 | `theorem` | [truncatedPoleModel_uniform_on_right_rectangle](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/truncatedpolemodel-uniform-on-right-rectangle.md) | 102 | `result-track:503845ab0334d7361471e823eddbcc4b18af4c478cf029f72e7930c8a88f7caf` |
+| 1 | `def` | [mellinTailMajorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/mellintailmajorant.md) | 26 | `declaration-track:be81d5dfe92aafa6e502b4f55d21e2efc4793899d031f6c599f11169beb8b58d` |
+| 2 | `lemma` | [mellinTailMajorant_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/mellintailmajorant-nonneg.md) | 28 | `result-track:291779f771de84af87d2ee69b6f1fcfa5a290e73620fd29067746c4fe69c6736` |
+| 3 | `theorem` | [truncation_at_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/truncation-at-one.md) | 32 | `result-track:f532f7251a37019c5b53036654dcea76d2a61ffdb6edbd8cd7ebab8788560b0b` |
+| 4 | `theorem` | [pole_truncation_at_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/pole-truncation-at-one.md) | 35 | `result-track:adb572320a53cd6ae923747f2ea14f4626b4b35aca36871c14e39b956c26a6bb` |
+| 5 | `theorem` | [truncation_error_le_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/truncation-error-le-uniform.md) | 39 | `result-track:812f17e63fccf86f5da32de4381b258a1e7707e7aef35e47ba34ad5403717173` |
+| 6 | `theorem` | [mellinTailMajorant_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/mellintailmajorant-tendsto-zero.md) | 49 | `result-track:ddaf32374f2fac533fb4480561b7ef73f36dbeabf1637447110fd71aa1ecd0b5` |
+| 7 | `theorem` | [poleMellinError_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/polemellinerror-tendsto-zero.md) | 57 | `result-track:9f6b49ed3d188984785772bffd0b805e02a24cd650edea2d8ac967b9961f3101` |
+| 8 | `theorem` | [truncatedPoleModel_error_on_right_rectangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/truncatedpolemodel-error-on-right-rectangle.md) | 66 | `result-track:e0bb57aaf25e7d719f7c2ceb9b943a01d1c21a3f954e9744563321ebf43d7bb8` |
+| 9 | `theorem` | [truncatedPoleModel_residual_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/truncatedpolemodel-residual-tendsto-zero.md) | 92 | `result-track:5cb818dd51e8a63638155fa6ffe4a83c22f35add78b3766f86fc7bc158c1e4ab` |
+| 10 | `theorem` | [truncatedPoleModel_uniform_on_right_rectangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinApproximation.lean/declarations/truncatedpolemodel-uniform-on-right-rectangle.md) | 102 | `result-track:503845ab0334d7361471e823eddbcc4b18af4c478cf029f72e7930c8a88f7caf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

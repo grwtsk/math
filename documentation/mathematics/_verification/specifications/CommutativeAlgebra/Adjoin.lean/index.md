@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Adjoin.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Adjoin.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Adjoin.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Adjoin.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [aevalEquivField](../../../../CommutativeAlgebra/Adjoin.lean/declarations/aevalequivfield.md) | 36 | `declaration-track:b045a6f203146197adbae8e35f70491a6640bfa94db6eeab53b1dba8fc7f46a7` |
-| 2 | `theorem` | [aevalEquivField_apply_coe](../../../../CommutativeAlgebra/Adjoin.lean/declarations/aevalequivfield-apply-coe.md) | 46 | `result-track:4663ffc5595550e417aad304af02450547f522956a0335abb525f89eb96efa00` |
-| 3 | `theorem` | [aevalEquivField_algebraMap_apply_coe](../../../../CommutativeAlgebra/Adjoin.lean/declarations/aevalequivfield-algebramap-apply-coe.md) | 50 | `result-track:bff1fb4de64fb5e99162b01840d5ddebfaf46099fe61acf29264d73f58faca44` |
-| 4 | `def` | [reprField](../../../../CommutativeAlgebra/Adjoin.lean/declarations/reprfield.md) | 56 | `declaration-track:f422d1f80472770fa50f03fab46ac163a904318bd76f81d90c58bd392f5a24a0` |
-| 5 | `theorem` | [lift_reprField](../../../../CommutativeAlgebra/Adjoin.lean/declarations/lift-reprfield.md) | 60 | `result-track:391a91c8d3b4b3fc067e55c5af16be7fd8447821fc1e2db90715fc56703b0db2` |
-| 6 | `theorem` | [liftAlgHom_comp_reprField](../../../../CommutativeAlgebra/Adjoin.lean/declarations/liftalghom-comp-reprfield.md) | 64 | `result-track:d3ca0c7eeb393998fc1f48cefe8c65e28c5d143610ff9a644b261ed39b7095a0` |
+| 1 | `def` | [aevalEquivField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Adjoin.lean/declarations/aevalequivfield.md) | 36 | `declaration-track:b045a6f203146197adbae8e35f70491a6640bfa94db6eeab53b1dba8fc7f46a7` |
+| 2 | `theorem` | [aevalEquivField_apply_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Adjoin.lean/declarations/aevalequivfield-apply-coe.md) | 46 | `result-track:4663ffc5595550e417aad304af02450547f522956a0335abb525f89eb96efa00` |
+| 3 | `theorem` | [aevalEquivField_algebraMap_apply_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Adjoin.lean/declarations/aevalequivfield-algebramap-apply-coe.md) | 50 | `result-track:bff1fb4de64fb5e99162b01840d5ddebfaf46099fe61acf29264d73f58faca44` |
+| 4 | `def` | [reprField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Adjoin.lean/declarations/reprfield.md) | 56 | `declaration-track:f422d1f80472770fa50f03fab46ac163a904318bd76f81d90c58bd392f5a24a0` |
+| 5 | `theorem` | [lift_reprField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Adjoin.lean/declarations/lift-reprfield.md) | 60 | `result-track:391a91c8d3b4b3fc067e55c5af16be7fd8447821fc1e2db90715fc56703b0db2` |
+| 6 | `theorem` | [liftAlgHom_comp_reprField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Adjoin.lean/declarations/liftalghom-comp-reprfield.md) | 64 | `result-track:d3ca0c7eeb393998fc1f48cefe8c65e28c5d143610ff9a644b261ed39b7095a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

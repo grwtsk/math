@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SupportNamespacedEdition1.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SupportNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SupportNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SupportNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [support_id](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SupportNamespacedEdition1.lean/declarations/support-id.md) | 15 | `result-track:797ed145e4c0fe98895bfc28a0e9bd6c4fd6110abad49d860a52b487143fd07d` |
-| 2 | `theorem` | [support_id'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SupportNamespacedEdition1.lean/declarations/support-id-source-edition-2.md) | 18 | `result-track:dd52b0ddcf2dd94462f9cb0156ce6c4524dd51ac51c4e96e94202b4c48c67496` |
+| 1 | `theorem` | [support_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SupportNamespacedEdition1.lean/declarations/support-id.md) | 15 | `result-track:797ed145e4c0fe98895bfc28a0e9bd6c4fd6110abad49d860a52b487143fd07d` |
+| 2 | `theorem` | [support_id'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SupportNamespacedEdition1.lean/declarations/support-id-source-edition-2.md) | 18 | `result-track:dd52b0ddcf2dd94462f9cb0156ce6c4524dd51ac51c4e96e94202b4c48c67496` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

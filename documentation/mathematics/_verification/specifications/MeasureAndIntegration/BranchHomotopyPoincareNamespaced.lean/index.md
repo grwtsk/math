@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/BranchHomotopyPoincareNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/BranchHomotopyPoincareNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchHomotopyPoincareNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchHomotopyPoincareNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [complexOneForm](../../../../MeasureAndIntegration/BranchHomotopyPoincareNamespaced.lean/declarations/complexoneform.md) | 38 | `declaration-track:f662ff32af65a530305a89cc57ccd58a066606828e06d4e6e5ff679c83ec9aeb` |
-| 2 | `theorem` | [complexOneForm_apply](../../../../MeasureAndIntegration/BranchHomotopyPoincareNamespaced.lean/declarations/complexoneform-apply.md) | 42 | `result-track:951bd81e63a1a14c8970bc11cce6a7bc3b3419b9d017d36475ad76f703e5227b` |
-| 3 | `theorem` | [curveIntegral_segment_complexOneForm](../../../../MeasureAndIntegration/BranchHomotopyPoincareNamespaced.lean/declarations/curveintegral-segment-complexoneform.md) | 48 | `result-track:701998190d7f3ca70b04ee28c21c20cb959f730dc8297b99ba43410e8011cad7` |
+| 1 | `def` | [complexOneForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchHomotopyPoincareNamespaced.lean/declarations/complexoneform.md) | 38 | `declaration-track:f662ff32af65a530305a89cc57ccd58a066606828e06d4e6e5ff679c83ec9aeb` |
+| 2 | `theorem` | [complexOneForm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchHomotopyPoincareNamespaced.lean/declarations/complexoneform-apply.md) | 42 | `result-track:951bd81e63a1a14c8970bc11cce6a7bc3b3419b9d017d36475ad76f703e5227b` |
+| 3 | `theorem` | [curveIntegral_segment_complexOneForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchHomotopyPoincareNamespaced.lean/declarations/curveintegral-segment-complexoneform.md) | 48 | `result-track:701998190d7f3ca70b04ee28c21c20cb959f730dc8297b99ba43410e8011cad7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

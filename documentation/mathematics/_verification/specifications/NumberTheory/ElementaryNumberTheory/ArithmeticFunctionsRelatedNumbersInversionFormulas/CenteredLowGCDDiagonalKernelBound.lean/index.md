@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalKernelBound.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalKernelBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalKernelBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalKernelBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDCoefficients`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDCoefficients.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDCoefficients`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDCoefficients.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.NumberTheory.ArithmeticFunction.Misc` — import line 8; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 9; external provider; requires a separately pinned dependency.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [genuineLowGCDPairKernel_diagonal_eq_divisorPairSum](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalKernelBound.lean/declarations/genuinelowgcdpairkernel-diagonal-eq-divisorpairsum.md) | 27 | `result-track:49b65f98e8d291a4fdf81a3b6764a5a8af69f3864ef0dfcbc7996ee47d56caa8` |
-| 2 | `theorem` | [abs_mobiusLogTerm_le_log_four_mul_scale](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalKernelBound.lean/declarations/abs-mobiuslogterm-le-log-four-mul-scale.md) | 76 | `result-track:afcfd319542942c4734c60cca9f692ab027c01f11d870e953ca9453a132b564e` |
-| 3 | `theorem` | [abs_genuineLowGCDPairKernel_diagonal_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalKernelBound.lean/declarations/abs-genuinelowgcdpairkernel-diagonal-le.md) | 108 | `result-track:a761b696d64324adbf37df59ef929928cbd3d75059bda703916bff43d455ace4` |
-| 4 | `theorem` | [abs_centeredLowGCDPairKernel_diagonal_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalKernelBound.lean/declarations/abs-centeredlowgcdpairkernel-diagonal-le.md) | 162 | `result-track:86f9e02b43bc310e223b4003d119ac41852eceb376a163304c6c4ff8780273a4` |
+| 1 | `theorem` | [genuineLowGCDPairKernel_diagonal_eq_divisorPairSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalKernelBound.lean/declarations/genuinelowgcdpairkernel-diagonal-eq-divisorpairsum.md) | 27 | `result-track:49b65f98e8d291a4fdf81a3b6764a5a8af69f3864ef0dfcbc7996ee47d56caa8` |
+| 2 | `theorem` | [abs_mobiusLogTerm_le_log_four_mul_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalKernelBound.lean/declarations/abs-mobiuslogterm-le-log-four-mul-scale.md) | 76 | `result-track:afcfd319542942c4734c60cca9f692ab027c01f11d870e953ca9453a132b564e` |
+| 3 | `theorem` | [abs_genuineLowGCDPairKernel_diagonal_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalKernelBound.lean/declarations/abs-genuinelowgcdpairkernel-diagonal-le.md) | 108 | `result-track:a761b696d64324adbf37df59ef929928cbd3d75059bda703916bff43d455ace4` |
+| 4 | `theorem` | [abs_centeredLowGCDPairKernel_diagonal_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDiagonalKernelBound.lean/declarations/abs-centeredlowgcdpairkernel-diagonal-le.md) | 162 | `result-track:86f9e02b43bc310e223b4003d119ac41852eceb376a163304c6c4ff8780273a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

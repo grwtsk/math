@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/DvrIsDedekindDomain.lean/index.md) · [Full source](../../../../CommutativeAlgebra/DvrIsDedekindDomain.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DvrIsDedekindDomain.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DvrIsDedekindDomain.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IsDedekindDomainDvr](../../../../CommutativeAlgebra/DvrIsDedekindDomain.lean/declarations/isdedekinddomaindvr.md) | 60 | `declaration-track:4e1b537ef82370f61a7a125f23b54d0a209fe208668722d8267595c381dcc2d3` |
-| 2 | `theorem` | [Ring.DimensionLEOne.localization](../../../../CommutativeAlgebra/DvrIsDedekindDomain.lean/declarations/ring-dimensionleone-localization.md) | 71 | `result-track:79d66761a5d59fc95b075167b23dd1166cc0673f24265a1cacdbdb19c1793140` |
-| 3 | `theorem` | [IsLocalization.isDedekindDomain](../../../../CommutativeAlgebra/DvrIsDedekindDomain.lean/declarations/islocalization-isdedekinddomain.md) | 88 | `result-track:369919145f4829069b8f24e2d0ef15c490ad97d8d174a0bbbb261777bd36aba0` |
-| 4 | `theorem` | [IsLocalization.AtPrime.isDedekindDomain](../../../../CommutativeAlgebra/DvrIsDedekindDomain.lean/declarations/islocalization-atprime-isdedekinddomain.md) | 112 | `result-track:4f06bb67c5de48d7afa8a9a47db95ce90aee8e58ffa35cb9b01ed2c535b39079` |
-| 5 | `theorem` | [IsLocalization.AtPrime.not_isField](../../../../CommutativeAlgebra/DvrIsDedekindDomain.lean/declarations/islocalization-atprime-not-isfield.md) | 118 | `result-track:5a1867384967e1a05858bc0894eac395fd722f503c59ac9b41bc27ccbbd38258` |
-| 6 | `theorem` | [IsLocalization.AtPrime.discreteValuationRing_of_dedekind_domain](../../../../CommutativeAlgebra/DvrIsDedekindDomain.lean/declarations/islocalization-atprime-discretevaluationring-of-dedekind-domain.md) | 134 | `result-track:b4fa51a56345a102a379784c350eb9b125acb65bd15fda1a5283606d61080278` |
-| 7 | `theorem` | [IsDedekindDomain.isDedekindDomainDvr](../../../../CommutativeAlgebra/DvrIsDedekindDomain.lean/declarations/isdedekinddomain-isdedekinddomaindvr.md) | 150 | `result-track:7fed70568b7e9c562b09b35cff7e17be7f233a6804b790d1575792d5eda39e68` |
+| 1 | `structure` | [IsDedekindDomainDvr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DvrIsDedekindDomain.lean/declarations/isdedekinddomaindvr.md) | 60 | `declaration-track:4e1b537ef82370f61a7a125f23b54d0a209fe208668722d8267595c381dcc2d3` |
+| 2 | `theorem` | [Ring.DimensionLEOne.localization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DvrIsDedekindDomain.lean/declarations/ring-dimensionleone-localization.md) | 71 | `result-track:79d66761a5d59fc95b075167b23dd1166cc0673f24265a1cacdbdb19c1793140` |
+| 3 | `theorem` | [IsLocalization.isDedekindDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DvrIsDedekindDomain.lean/declarations/islocalization-isdedekinddomain.md) | 88 | `result-track:369919145f4829069b8f24e2d0ef15c490ad97d8d174a0bbbb261777bd36aba0` |
+| 4 | `theorem` | [IsLocalization.AtPrime.isDedekindDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DvrIsDedekindDomain.lean/declarations/islocalization-atprime-isdedekinddomain.md) | 112 | `result-track:4f06bb67c5de48d7afa8a9a47db95ce90aee8e58ffa35cb9b01ed2c535b39079` |
+| 5 | `theorem` | [IsLocalization.AtPrime.not_isField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DvrIsDedekindDomain.lean/declarations/islocalization-atprime-not-isfield.md) | 118 | `result-track:5a1867384967e1a05858bc0894eac395fd722f503c59ac9b41bc27ccbbd38258` |
+| 6 | `theorem` | [IsLocalization.AtPrime.discreteValuationRing_of_dedekind_domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DvrIsDedekindDomain.lean/declarations/islocalization-atprime-discretevaluationring-of-dedekind-domain.md) | 134 | `result-track:b4fa51a56345a102a379784c350eb9b125acb65bd15fda1a5283606d61080278` |
+| 7 | `theorem` | [IsDedekindDomain.isDedekindDomainDvr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DvrIsDedekindDomain.lean/declarations/isdedekinddomain-isdedekinddomaindvr.md) | 150 | `result-track:7fed70568b7e9c562b09b35cff7e17be7f233a6804b790d1575792d5eda39e68` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

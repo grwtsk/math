@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalLimits.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalLimits.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalLimits.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalLimits.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [limit](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalLimits.lean/declarations/limit.md) | 38 | `declaration-track:438b37a79dc4bb432878f0279527b0cdd4465a5df5b34a62ce82e546196f9076` |
-| 2 | `def` | [limitCone](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalLimits.lean/declarations/limitcone.md) | 44 | `declaration-track:80d3b9055196f2d8484922419d843f19dedbcf220f4ac8611a4e2ddd46293e84` |
-| 3 | `def` | [forgetMapConeLimitConeIso](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalLimits.lean/declarations/forgetmapconelimitconeiso.md) | 53 | `declaration-track:36c7269804bdbea33f8d4c61cdd7ac83c0ca73a66c3cbe1720e011b4f340f023` |
-| 4 | `def` | [limitConeIsLimit](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalLimits.lean/declarations/limitconeislimit.md) | 61 | `declaration-track:7836511dda45930b07e91e172f3b447844caa1aa00cc128843c1854d2ca57088` |
-| 5 | `instance` | [hasLimitsOfShape](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalLimits.lean/declarations/haslimitsofshape.md) | 77 | `declaration-track:71463d071f97920fe5993147c07990819d020551a601c4e2aa8018442b34bb28` |
-| 6 | `instance` | [forget_freservesLimitsOfShape](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalLimits.lean/declarations/forget-freserveslimitsofshape.md) | 82 | `declaration-track:fce12ddbd22ab038410103048d39f7d29326e876394b698a763647bf746b9434` |
+| 1 | `def` | [limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalLimits.lean/declarations/limit.md) | 38 | `declaration-track:438b37a79dc4bb432878f0279527b0cdd4465a5df5b34a62ce82e546196f9076` |
+| 2 | `def` | [limitCone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalLimits.lean/declarations/limitcone.md) | 44 | `declaration-track:80d3b9055196f2d8484922419d843f19dedbcf220f4ac8611a4e2ddd46293e84` |
+| 3 | `def` | [forgetMapConeLimitConeIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalLimits.lean/declarations/forgetmapconelimitconeiso.md) | 53 | `declaration-track:36c7269804bdbea33f8d4c61cdd7ac83c0ca73a66c3cbe1720e011b4f340f023` |
+| 4 | `def` | [limitConeIsLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalLimits.lean/declarations/limitconeislimit.md) | 61 | `declaration-track:7836511dda45930b07e91e172f3b447844caa1aa00cc128843c1854d2ca57088` |
+| 5 | `instance` | [hasLimitsOfShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalLimits.lean/declarations/haslimitsofshape.md) | 77 | `declaration-track:71463d071f97920fe5993147c07990819d020551a601c4e2aa8018442b34bb28` |
+| 6 | `instance` | [forget_freservesLimitsOfShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/InternalLimits.lean/declarations/forget-freserveslimitsofshape.md) | 82 | `declaration-track:fce12ddbd22ab038410103048d39f7d29326e876394b698a763647bf746b9434` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

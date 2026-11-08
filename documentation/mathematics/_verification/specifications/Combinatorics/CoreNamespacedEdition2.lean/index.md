@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CoreNamespacedEdition2.lean/index.md) · [Full source](../../../../Combinatorics/CoreNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BinaryRelationRecord](../../../../Combinatorics/CoreNamespacedEdition2.lean/declarations/binaryrelationrecord.md) | 24 | `declaration-track:53af3072e8d3c137e66aa06cbd5bddce327f2b9744bcd2742d9fa9d4ccd440c5` |
-| 2 | `structure` | [HyperParticipant](../../../../Combinatorics/CoreNamespacedEdition2.lean/declarations/hyperparticipant.md) | 35 | `declaration-track:fb525adefbf52f55055e72556f1b12975dbd4ed27e288f73655ca469733d40de` |
-| 3 | `structure` | [HyperrelationRecord](../../../../Combinatorics/CoreNamespacedEdition2.lean/declarations/hyperrelationrecord.md) | 42 | `declaration-track:d6e72fc276cc13d45791c057a35b70e0a57a391e12a252875f36ccb2408a6903` |
-| 4 | `structure` | [TreeOccurrence](../../../../Combinatorics/CoreNamespacedEdition2.lean/declarations/treeoccurrence.md) | 52 | `declaration-track:ce78d0390a911805b69da67eabd180647d16417bc4c8f799e7f401a69cfa19be` |
-| 5 | `structure` | [PrimaryTreeEdge](../../../../Combinatorics/CoreNamespacedEdition2.lean/declarations/primarytreeedge.md) | 71 | `declaration-track:d8b43a18f354a9c15e19df88c2883f55821c6e9e0f8e0db96b2d34e09fe8068f` |
-| 6 | `structure` | [SecondaryReference](../../../../Combinatorics/CoreNamespacedEdition2.lean/declarations/secondaryreference.md) | 79 | `declaration-track:3d4f23d98aabe0a7324767f29a1335a59ef6611144c431651558ca7b56c2c12d` |
-| 7 | `structure` | [CrossLink](../../../../Combinatorics/CoreNamespacedEdition2.lean/declarations/crosslink.md) | 90 | `declaration-track:eee7f177310390d458d2de3288b3557c05e7f08307ce369b16158b36c729238d` |
-| 8 | `structure` | [ProjectedHyperrelation](../../../../Combinatorics/CoreNamespacedEdition2.lean/declarations/projectedhyperrelation.md) | 101 | `declaration-track:523d7ab7c062979e8a0b28f11bb819c6a7aac1718e648992c79db6f1653af3e3` |
-| 9 | `structure` | [RelationDisposition](../../../../Combinatorics/CoreNamespacedEdition2.lean/declarations/relationdisposition.md) | 107 | `declaration-track:07e28a9973536d2618b63b597a7ec5489bfe4fa66768563c3f609441584c0009` |
-| 10 | `structure` | [LayoutHint](../../../../Combinatorics/CoreNamespacedEdition2.lean/declarations/layouthint.md) | 115 | `declaration-track:9cd6a6e3b9b0b7d82585259c75231b41c3390d88ced057a296f26855335f99e3` |
-| 11 | `structure` | [CycleDiagnostic](../../../../Combinatorics/CoreNamespacedEdition2.lean/declarations/cyclediagnostic.md) | 123 | `declaration-track:70271c338be66c56bd4ad9fb83b92abbb03aa5914c74d79ddc6ad80303f2087c` |
-| 12 | `structure` | [TreeProjection](../../../../Combinatorics/CoreNamespacedEdition2.lean/declarations/treeprojection.md) | 129 | `declaration-track:f17fb55b22348c21e26e62d09065071684a659b1e3a3fd85083fd1c91c051646` |
+| 1 | `structure` | [BinaryRelationRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition2.lean/declarations/binaryrelationrecord.md) | 24 | `declaration-track:53af3072e8d3c137e66aa06cbd5bddce327f2b9744bcd2742d9fa9d4ccd440c5` |
+| 2 | `structure` | [HyperParticipant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition2.lean/declarations/hyperparticipant.md) | 35 | `declaration-track:fb525adefbf52f55055e72556f1b12975dbd4ed27e288f73655ca469733d40de` |
+| 3 | `structure` | [HyperrelationRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition2.lean/declarations/hyperrelationrecord.md) | 42 | `declaration-track:d6e72fc276cc13d45791c057a35b70e0a57a391e12a252875f36ccb2408a6903` |
+| 4 | `structure` | [TreeOccurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition2.lean/declarations/treeoccurrence.md) | 52 | `declaration-track:ce78d0390a911805b69da67eabd180647d16417bc4c8f799e7f401a69cfa19be` |
+| 5 | `structure` | [PrimaryTreeEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition2.lean/declarations/primarytreeedge.md) | 71 | `declaration-track:d8b43a18f354a9c15e19df88c2883f55821c6e9e0f8e0db96b2d34e09fe8068f` |
+| 6 | `structure` | [SecondaryReference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition2.lean/declarations/secondaryreference.md) | 79 | `declaration-track:3d4f23d98aabe0a7324767f29a1335a59ef6611144c431651558ca7b56c2c12d` |
+| 7 | `structure` | [CrossLink](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition2.lean/declarations/crosslink.md) | 90 | `declaration-track:eee7f177310390d458d2de3288b3557c05e7f08307ce369b16158b36c729238d` |
+| 8 | `structure` | [ProjectedHyperrelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition2.lean/declarations/projectedhyperrelation.md) | 101 | `declaration-track:523d7ab7c062979e8a0b28f11bb819c6a7aac1718e648992c79db6f1653af3e3` |
+| 9 | `structure` | [RelationDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition2.lean/declarations/relationdisposition.md) | 107 | `declaration-track:07e28a9973536d2618b63b597a7ec5489bfe4fa66768563c3f609441584c0009` |
+| 10 | `structure` | [LayoutHint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition2.lean/declarations/layouthint.md) | 115 | `declaration-track:9cd6a6e3b9b0b7d82585259c75231b41c3390d88ced057a296f26855335f99e3` |
+| 11 | `structure` | [CycleDiagnostic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition2.lean/declarations/cyclediagnostic.md) | 123 | `declaration-track:70271c338be66c56bd4ad9fb83b92abbb03aa5914c74d79ddc6ad80303f2087c` |
+| 12 | `structure` | [TreeProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition2.lean/declarations/treeprojection.md) | 129 | `declaration-track:f17fb55b22348c21e26e62d09065071684a659b1e3a3fd85083fd1c91c051646` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

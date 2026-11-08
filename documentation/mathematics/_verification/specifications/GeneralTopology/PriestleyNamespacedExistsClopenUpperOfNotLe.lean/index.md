@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PriestleyNamespacedExistsClopenUpperOfNotLe.lean/index.md) · [Full source](../../../../GeneralTopology/PriestleyNamespacedExistsClopenUpperOfNotLe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedExistsClopenUpperOfNotLe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedExistsClopenUpperOfNotLe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [PriestleySpace](../../../../GeneralTopology/PriestleyNamespacedExistsClopenUpperOfNotLe.lean/declarations/priestleyspace.md) | 48 | `declaration-track:d8b15eb71e6dc9230ad34131b0040a3fd7fd27a42b159de204f676d324ba4732` |
-| 2 | `theorem` | [exists_clopen_upper_of_not_le](../../../../GeneralTopology/PriestleyNamespacedExistsClopenUpperOfNotLe.lean/declarations/exists-clopen-upper-of-not-le.md) | 58 | `result-track:99a7eebc5f48fc347da6f82c9af2492951c47425ff5e2656efec014c7388c467` |
-| 3 | `theorem` | [exists_clopen_lower_of_not_le](../../../../GeneralTopology/PriestleyNamespacedExistsClopenUpperOfNotLe.lean/declarations/exists-clopen-lower-of-not-le.md) | 63 | `result-track:321dd229ceb572e5443559ed8bd903bc4cd05c703e76ecddd37c59e0dcb9e0fd` |
-| 4 | `theorem` | [exists_clopen_upper_or_lower_of_ne](../../../../GeneralTopology/PriestleyNamespacedExistsClopenUpperOfNotLe.lean/declarations/exists-clopen-upper-or-lower-of-ne.md) | 75 | `result-track:eef497d93f7c54f19ae6c6b5c3da1ed49860606c155f7e2a310e2573c6f28dae` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/PriestleyNamespacedExistsClopenUpperOfNotLe.lean/declarations/instance.md) | 84 | `declaration-track:142910a5a7aeca0238de020de5f905784801c6fdc3e134596ace8eb0e78a6164` |
+| 1 | `class` | [PriestleySpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedExistsClopenUpperOfNotLe.lean/declarations/priestleyspace.md) | 48 | `declaration-track:d8b15eb71e6dc9230ad34131b0040a3fd7fd27a42b159de204f676d324ba4732` |
+| 2 | `theorem` | [exists_clopen_upper_of_not_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedExistsClopenUpperOfNotLe.lean/declarations/exists-clopen-upper-of-not-le.md) | 58 | `result-track:99a7eebc5f48fc347da6f82c9af2492951c47425ff5e2656efec014c7388c467` |
+| 3 | `theorem` | [exists_clopen_lower_of_not_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedExistsClopenUpperOfNotLe.lean/declarations/exists-clopen-lower-of-not-le.md) | 63 | `result-track:321dd229ceb572e5443559ed8bd903bc4cd05c703e76ecddd37c59e0dcb9e0fd` |
+| 4 | `theorem` | [exists_clopen_upper_or_lower_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedExistsClopenUpperOfNotLe.lean/declarations/exists-clopen-upper-or-lower-of-ne.md) | 75 | `result-track:eef497d93f7c54f19ae6c6b5c3da1ed49860606c155f7e2a310e2573c6f28dae` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedExistsClopenUpperOfNotLe.lean/declarations/instance.md) | 84 | `declaration-track:142910a5a7aeca0238de020de5f905784801c6fdc3e134596ace8eb0e78a6164` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

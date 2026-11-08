@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.FiniteSequences.IncrementalDictionary`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalDictionary.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Logic.FiniteSequences.IncrementalDictionary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalDictionary.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/declarations/example-source-edition-8.md) | 8 | `declaration-track:d5ff3d21a7fdb5dadaa44bc18386fb6cb59d5c4e979d5e2b8be35904df2ea94b` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/declarations/example.md) | 15 | `declaration-track:16daa67c920a4fac9c773101980053be44ac3a3b9557067aa611a5e549a20c0c` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/declarations/example-source-edition-5.md) | 20 | `declaration-track:9c80fd8c087da385bb673d92890195ce7be9f77ef436e0d2b5879f34aec18cc7` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/declarations/example-source-edition-9.md) | 29 | `declaration-track:d66112c11f9294ee8a77c7478fecbc1b2d1c5b164618f0bb4aaa1d79c0119c7c` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/declarations/example-source-edition-6.md) | 34 | `declaration-track:bf460251b9e770a42be1ce72cb784e49382f62ad3212249715d7b84684c63250` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/declarations/example-source-edition-7.md) | 39 | `declaration-track:d3c98f8a7eea9a5f28941679461c4d89612d2e991a92456b3026686cea5b5a5e` |
-| 7 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/declarations/example-source-edition-3.md) | 45 | `declaration-track:351a28dc6eb1df602cfa2e4cea39780c109ef711ce7291dd677b4846e83257e9` |
-| 8 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/declarations/example-source-edition-2.md) | 50 | `declaration-track:236d8baebcd904545b912d0c950f5d94ddc5f82ad08eb737c3dfda1d234bd4bd` |
-| 9 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/declarations/example-source-edition-4.md) | 55 | `declaration-track:92c08e6b5c92d303f0feccc0334ea51675b27ffb1a4c29229e27044a0cd5983f` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/declarations/example-source-edition-8.md) | 8 | `declaration-track:d5ff3d21a7fdb5dadaa44bc18386fb6cb59d5c4e979d5e2b8be35904df2ea94b` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/declarations/example.md) | 15 | `declaration-track:16daa67c920a4fac9c773101980053be44ac3a3b9557067aa611a5e549a20c0c` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/declarations/example-source-edition-5.md) | 20 | `declaration-track:9c80fd8c087da385bb673d92890195ce7be9f77ef436e0d2b5879f34aec18cc7` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/declarations/example-source-edition-9.md) | 29 | `declaration-track:d66112c11f9294ee8a77c7478fecbc1b2d1c5b164618f0bb4aaa1d79c0119c7c` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/declarations/example-source-edition-6.md) | 34 | `declaration-track:bf460251b9e770a42be1ce72cb784e49382f62ad3212249715d7b84684c63250` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/declarations/example-source-edition-7.md) | 39 | `declaration-track:d3c98f8a7eea9a5f28941679461c4d89612d2e991a92456b3026686cea5b5a5e` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/declarations/example-source-edition-3.md) | 45 | `declaration-track:351a28dc6eb1df602cfa2e4cea39780c109ef711ce7291dd677b4846e83257e9` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/declarations/example-source-edition-2.md) | 50 | `declaration-track:236d8baebcd904545b912d0c950f5d94ddc5f82ad08eb737c3dfda1d234bd4bd` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalDictionary.lean/declarations/example-source-edition-4.md) | 55 | `declaration-track:92c08e6b5c92d303f0feccc0334ea51675b27ffb1a4c29229e27044a0cd5983f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

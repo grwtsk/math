@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftResultsSourceEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftResultsSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftResultsSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftResultsSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thetaPhiJet_polynomial_sum_eq_two_modes](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftResultsSourceEdition2.lean/declarations/thetaphijet-polynomial-sum-eq-two-modes.md) | 20 | `result-track:f32cb592418488b61425bca3f3bc71d62986da52698f42ebd4e878caa0787b96` |
-| 2 | `theorem` | [thetaPhiJet_eq_two_modes_add_remainder](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftResultsSourceEdition2.lean/declarations/thetaphijet-eq-two-modes-add-remainder.md) | 54 | `result-track:59e52e110daeeeece5b8ee3d0f3845c90c1582253be10b80b6a7cb790aa64ddf` |
-| 3 | `theorem` | [thetaPhiJetDet_negative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftResultsSourceEdition2.lean/declarations/thetaphijetdet-negative.md) | 65 | `result-track:173f0bea811a50e0ed9155d88956be90c2e5e8df71aca8ec651b4c9b05425c7f` |
-| 4 | `theorem` | [thetaPhi_wronskian_three_neg](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftResultsSourceEdition2.lean/declarations/thetaphi-wronskian-three-neg.md) | 101 | `result-track:5e85e326dcf026a4c787c75177cfcc5c250ce1b79034714dc07cd657ab2e285c` |
+| 1 | `theorem` | [thetaPhiJet_polynomial_sum_eq_two_modes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftResultsSourceEdition2.lean/declarations/thetaphijet-polynomial-sum-eq-two-modes.md) | 20 | `result-track:f32cb592418488b61425bca3f3bc71d62986da52698f42ebd4e878caa0787b96` |
+| 2 | `theorem` | [thetaPhiJet_eq_two_modes_add_remainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftResultsSourceEdition2.lean/declarations/thetaphijet-eq-two-modes-add-remainder.md) | 54 | `result-track:59e52e110daeeeece5b8ee3d0f3845c90c1582253be10b80b6a7cb790aa64ddf` |
+| 3 | `theorem` | [thetaPhiJetDet_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftResultsSourceEdition2.lean/declarations/thetaphijetdet-negative.md) | 65 | `result-track:173f0bea811a50e0ed9155d88956be90c2e5e8df71aca8ec651b4c9b05425c7f` |
+| 4 | `theorem` | [thetaPhi_wronskian_three_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftResultsSourceEdition2.lean/declarations/thetaphi-wronskian-three-neg.md) | 101 | `result-track:5e85e326dcf026a4c787c75177cfcc5c250ce1b79034714dc07cd657ab2e285c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../HarmonicAnalysisOnEuclideanSpaces/SubsetAntiConcentrationMissingRange.lean/index.md) · [Full source](../../../../HarmonicAnalysisOnEuclideanSpaces/SubsetAntiConcentrationMissingRange.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/SubsetAntiConcentrationMissingRange.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/SubsetAntiConcentrationMissingRange.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Fourier.ZModBalancedExpectedLayers`](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModBalancedExpectedLayers.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.ZModBalancedExpectedLayers`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModBalancedExpectedLayers.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../HarmonicAnalysisOnEuclideanSpaces/SubsetAntiConcentrationMissingRange.lean/declarations/example.md) | 5 | `declaration-track:58335d411a8db35ae4ecb68b63bb8be8f0047e840a0a1bd8ea926a2adbcc92d9` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/SubsetAntiConcentrationMissingRange.lean/declarations/example.md) | 5 | `declaration-track:58335d411a8db35ae4ecb68b63bb8be8f0047e840a0a1bd8ea926a2adbcc92d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

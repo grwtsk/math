@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/CStarAlgebraHomPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/CStarAlgebraHomPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraHomPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraHomPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IsSelfAdjoint.map_spectrum_real](../../../../FunctionalAnalysis/CStarAlgebraHomPublic.lean/declarations/isselfadjoint-map-spectrum-real.md) | 25 | `result-track:54e0108e6c0ea3853e6c59b2e6d71e3c15a75d8e8eefb10ac1d30e6b54e4c900` |
-| 2 | `lemma` | [IsSelfAdjoint.map_quasispectrum_real](../../../../FunctionalAnalysis/CStarAlgebraHomPublic.lean/declarations/isselfadjoint-map-quasispectrum-real.md) | 57 | `result-track:725cd0f5a3367bea640ce2c9cd9e5cb913cd8721beee3ec8752658adf1e17faf` |
-| 3 | `def` | [NonUnitalStarAlgHom.toOrderEmbedding](../../../../FunctionalAnalysis/CStarAlgebraHomPublic.lean/declarations/nonunitalstaralghom-toorderembedding.md) | 74 | `declaration-track:a3482a074554cf90c30871bbcdd15b17cdf3a3fb25380887f471fa7c11b2e857` |
-| 4 | `lemma` | [NonUnitalStarAlgHom.map_le_map_iff](../../../../FunctionalAnalysis/CStarAlgebraHomPublic.lean/declarations/nonunitalstaralghom-map-le-map-iff.md) | 88 | `result-track:5d7ce0f784215347e9fa2d3cf0410039dfdeaf7a06c1a8a171ec33c6813287d7` |
-| 5 | `lemma` | [NonUnitalStarAlgHom.map_lt_map_iff](../../../../FunctionalAnalysis/CStarAlgebraHomPublic.lean/declarations/nonunitalstaralghom-map-lt-map-iff.md) | 92 | `result-track:b7f18d1e0b3a59c63da337f21839cb733f1126d085e00b394d2e37756c105a0e` |
-| 6 | `lemma` | [norm_map](../../../../FunctionalAnalysis/CStarAlgebraHomPublic.lean/declarations/norm-map.md) | 104 | `result-track:09913800f506bf00bee7a0d12300de1adb6435e2f6b74be0dbe4f2ce3c12951a` |
-| 7 | `lemma` | [nnnorm_map](../../../../FunctionalAnalysis/CStarAlgebraHomPublic.lean/declarations/nnnorm-map.md) | 124 | `result-track:c8aad2a9a9560e5f2f226341d68b49bac21c6b4826d5480b840eea08305eb2a1` |
-| 8 | `lemma` | [isometry](../../../../FunctionalAnalysis/CStarAlgebraHomPublic.lean/declarations/isometry.md) | 127 | `result-track:8bb3e5bb982a867926e3f7ee8c4341f80d74b0ceac7c2b89cd0429269426541e` |
+| 1 | `lemma` | [IsSelfAdjoint.map_spectrum_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraHomPublic.lean/declarations/isselfadjoint-map-spectrum-real.md) | 25 | `result-track:54e0108e6c0ea3853e6c59b2e6d71e3c15a75d8e8eefb10ac1d30e6b54e4c900` |
+| 2 | `lemma` | [IsSelfAdjoint.map_quasispectrum_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraHomPublic.lean/declarations/isselfadjoint-map-quasispectrum-real.md) | 57 | `result-track:725cd0f5a3367bea640ce2c9cd9e5cb913cd8721beee3ec8752658adf1e17faf` |
+| 3 | `def` | [NonUnitalStarAlgHom.toOrderEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraHomPublic.lean/declarations/nonunitalstaralghom-toorderembedding.md) | 74 | `declaration-track:a3482a074554cf90c30871bbcdd15b17cdf3a3fb25380887f471fa7c11b2e857` |
+| 4 | `lemma` | [NonUnitalStarAlgHom.map_le_map_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraHomPublic.lean/declarations/nonunitalstaralghom-map-le-map-iff.md) | 88 | `result-track:5d7ce0f784215347e9fa2d3cf0410039dfdeaf7a06c1a8a171ec33c6813287d7` |
+| 5 | `lemma` | [NonUnitalStarAlgHom.map_lt_map_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraHomPublic.lean/declarations/nonunitalstaralghom-map-lt-map-iff.md) | 92 | `result-track:b7f18d1e0b3a59c63da337f21839cb733f1126d085e00b394d2e37756c105a0e` |
+| 6 | `lemma` | [norm_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraHomPublic.lean/declarations/norm-map.md) | 104 | `result-track:09913800f506bf00bee7a0d12300de1adb6435e2f6b74be0dbe4f2ce3c12951a` |
+| 7 | `lemma` | [nnnorm_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraHomPublic.lean/declarations/nnnorm-map.md) | 124 | `result-track:c8aad2a9a9560e5f2f226341d68b49bac21c6b4826d5480b840eea08305eb2a1` |
+| 8 | `lemma` | [isometry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraHomPublic.lean/declarations/isometry.md) | 127 | `result-track:8bb3e5bb982a867926e3f7ee8c4341f80d74b0ceac7c2b89cd0429269426541e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

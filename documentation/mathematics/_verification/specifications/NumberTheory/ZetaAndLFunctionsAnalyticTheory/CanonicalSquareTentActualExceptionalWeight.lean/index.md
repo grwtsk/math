@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentActualExceptionalWeight.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentActualExceptionalWeight.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentActualExceptionalWeight.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentActualExceptionalWeight.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenMomentGaps`](../../../../../MeasureAndIntegration/CanonicalSquareTentSixteenMomentGaps.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentMixedWeightClassification`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentMixedWeightClassification.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenMomentGaps`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CanonicalSquareTentSixteenMomentGaps.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentMixedWeightClassification`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentMixedWeightClassification.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exceptionalWeight](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentActualExceptionalWeight.lean/declarations/exceptionalweight.md) | 31 | `declaration-track:6a53ba9e555de18be1691ae0581169facf583f4d98c7ee78de5013f33702f954` |
-| 2 | `theorem` | [actual_mixed_weight_not_injective_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentActualExceptionalWeight.lean/declarations/actual-mixed-weight-not-injective-iff.md) | 36 | `result-track:c6b523ba2a5aa2db5db009d0fb04da96b72761e83038ff76333ee53457370d66` |
+| 1 | `def` | [exceptionalWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentActualExceptionalWeight.lean/declarations/exceptionalweight.md) | 31 | `declaration-track:6a53ba9e555de18be1691ae0581169facf583f4d98c7ee78de5013f33702f954` |
+| 2 | `theorem` | [actual_mixed_weight_not_injective_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentActualExceptionalWeight.lean/declarations/actual-mixed-weight-not-injective-iff.md) | 36 | `result-track:c6b523ba2a5aa2db5db009d0fb04da96b72761e83038ff76333ee53457370d66` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

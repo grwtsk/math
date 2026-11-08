@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorQuotientRemainderNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorQuotientRemainderNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorQuotientRemainderNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorQuotientRemainderNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quotient_sample_eq_full_sub_short](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorQuotientRemainderNamespaced.lean/declarations/quotient-sample-eq-full-sub-short.md) | 31 | `result-track:af29a769d1bbec67ec588c7c52cc62e6051d0856c29cd52c094d08d0f03fc52f` |
-| 2 | `theorem` | [quotient_sample_sub_main_minus_short_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorQuotientRemainderNamespaced.lean/declarations/quotient-sample-sub-main-minus-short-abs-le.md) | 82 | `result-track:1749c65277d466b39c3b4253189ac9f9eaaa5914d643a3794a9a9f745fa888b7` |
+| 1 | `theorem` | [quotient_sample_eq_full_sub_short](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorQuotientRemainderNamespaced.lean/declarations/quotient-sample-eq-full-sub-short.md) | 31 | `result-track:af29a769d1bbec67ec588c7c52cc62e6051d0856c29cd52c094d08d0f03fc52f` |
+| 2 | `theorem` | [quotient_sample_sub_main_minus_short_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorQuotientRemainderNamespaced.lean/declarations/quotient-sample-sub-main-minus-short-abs-le.md) | 82 | `result-track:1749c65277d466b39c3b4253189ac9f9eaaa5914d643a3794a9a9f745fa888b7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

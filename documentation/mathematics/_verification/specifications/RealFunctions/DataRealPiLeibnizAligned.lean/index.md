@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DataRealPiLeibnizAligned.lean/index.md) · [Full source](../../../../RealFunctions/DataRealPiLeibnizAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiLeibnizAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiLeibnizAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../RealFunctions/DataRealPiLeibnizAligned.lean/declarations/macro-rules.md) | 15 | `declaration-track:aab610149851947c7730244038106948aeb971dd64c1b9f0242bd2276a6cd5bc` |
-| 2 | `theorem` | [tendsto_sum_pi_div_four](../../../../RealFunctions/DataRealPiLeibnizAligned.lean/declarations/tendsto-sum-pi-div-four.md) | 44 | `result-track:6e66c4039cc8e198ac19f20c269c2ed3d7b6c5de24e63df2d6fcd96c3b6ec123` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiLeibnizAligned.lean/declarations/macro-rules.md) | 15 | `declaration-track:aab610149851947c7730244038106948aeb971dd64c1b9f0242bd2276a6cd5bc` |
+| 2 | `theorem` | [tendsto_sum_pi_div_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiLeibnizAligned.lean/declarations/tendsto-sum-pi-div-four.md) | 44 | `result-track:6e66c4039cc8e198ac19f20c269c2ed3d7b6c5de24e63df2d6fcd96c3b6ec123` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

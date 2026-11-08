@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/OperatorNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/OperatorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OperatorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OperatorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Operator](../../../../../ComputerScience/AlgorithmsInComputerScience/OperatorNamespaced.lean/declarations/operator.md) | 20 | `declaration-track:b1d03d4a5ed47d5b1442df464c5abd5eab61b51c7d6bd6016269b8d35eb08b66` |
-| 2 | `theorem` | [preserves_scope](../../../../../ComputerScience/AlgorithmsInComputerScience/OperatorNamespaced.lean/declarations/preserves-scope.md) | 42 | `result-track:cfd85ac31ebf05e9fc8eb5746be3d550e134522237e36335e678e2588c99dbad` |
+| 1 | `structure` | [Operator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OperatorNamespaced.lean/declarations/operator.md) | 20 | `declaration-track:b1d03d4a5ed47d5b1442df464c5abd5eab61b51c7d6bd6016269b8d35eb08b66` |
+| 2 | `theorem` | [preserves_scope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OperatorNamespaced.lean/declarations/preserves-scope.md) | 42 | `result-track:cfd85ac31ebf05e9fc8eb5746be3d550e134522237e36335e678e2588c99dbad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

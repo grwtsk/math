@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CartesianClosed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/declarations/cartesianclosed.md) | 15 | `declaration-track:5d6c518fcbdfaad206e33f8c71d26f9892bee6a289f3f3cf1590c6acd2d7b112` |
-| 2 | `structure` | [SymmetricMonoidal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/declarations/symmetricmonoidal.md) | 23 | `declaration-track:80518fcf52eb553e1b52890c644994906ddcd52d14de9776e24e0403f64b06c5` |
-| 3 | `structure` | [ProofRelevantPreorder](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/declarations/proofrelevantpreorder.md) | 30 | `declaration-track:04a64576e978affaaa6c65e21bc083ef3b4c4142e83e68b072e3eeb9609a6b3f` |
-| 4 | `structure` | [Adjunction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/declarations/adjunction.md) | 35 | `declaration-track:8cb0ed6f42eb7bab34c92ba3d72c258a83072d259b8e1f3fcdef73bfb320d60f` |
-| 5 | `structure` | [SheafTopos](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/declarations/sheaftopos.md) | 41 | `declaration-track:44299510d2c964a50791377876a74d135e3f16bc159ab281c81821c1f7cd4699` |
-| 6 | `structure` | [MonadOn](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/declarations/monadon.md) | 47 | `declaration-track:f856333228ae2a52e244e690a564479ecf65acd9730bb4fdf4ac4e9e077f2114` |
-| 7 | `structure` | [CosliceWisdom](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/declarations/coslicewisdom.md) | 53 | `declaration-track:e499310ea796db5939e5540eb994e46e22e17e1796ed9e208fae147cad493e8a` |
-| 8 | `structure` | [ThinkLayerStack](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/declarations/thinklayerstack.md) | 59 | `declaration-track:14c4107ba79243b3ad5ec4735310967719de801440d7ca32fb56d24d2ca0058d` |
+| 1 | `structure` | [CartesianClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/declarations/cartesianclosed.md) | 15 | `declaration-track:5d6c518fcbdfaad206e33f8c71d26f9892bee6a289f3f3cf1590c6acd2d7b112` |
+| 2 | `structure` | [SymmetricMonoidal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/declarations/symmetricmonoidal.md) | 23 | `declaration-track:80518fcf52eb553e1b52890c644994906ddcd52d14de9776e24e0403f64b06c5` |
+| 3 | `structure` | [ProofRelevantPreorder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/declarations/proofrelevantpreorder.md) | 30 | `declaration-track:04a64576e978affaaa6c65e21bc083ef3b4c4142e83e68b072e3eeb9609a6b3f` |
+| 4 | `structure` | [Adjunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/declarations/adjunction.md) | 35 | `declaration-track:8cb0ed6f42eb7bab34c92ba3d72c258a83072d259b8e1f3fcdef73bfb320d60f` |
+| 5 | `structure` | [SheafTopos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/declarations/sheaftopos.md) | 41 | `declaration-track:44299510d2c964a50791377876a74d135e3f16bc159ab281c81821c1f7cd4699` |
+| 6 | `structure` | [MonadOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/declarations/monadon.md) | 47 | `declaration-track:f856333228ae2a52e244e690a564479ecf65acd9730bb4fdf4ac4e9e077f2114` |
+| 7 | `structure` | [CosliceWisdom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/declarations/coslicewisdom.md) | 53 | `declaration-track:e499310ea796db5939e5540eb994e46e22e17e1796ed9e208fae147cad493e8a` |
+| 8 | `structure` | [ThinkLayerStack](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuresNamespaced.lean/declarations/thinklayerstack.md) | 59 | `declaration-track:14c4107ba79243b3ad5ec4735310967719de801440d7ca32fb56d24d2ca0058d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/EndpointInformationLoss.lean/index.md) · [Full source](../../../../NumberTheory/EndpointInformationLoss.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EndpointInformationLoss.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EndpointInformationLoss.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.FactorizationFiber`](../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/index.md) — import line 9; pinned internal source present.
-- [`GRWTSK.NumberTheory.Farey.ResolvableQuinticEndpointControls`](../../../../NumberTheory/ResolvableQuinticEndpointControls.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.FactorizationFiber`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.NumberTheory.Farey.ResolvableQuinticEndpointControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResolvableQuinticEndpointControls.lean/index.md) — import line 10; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [endpointSignProfile](../../../../NumberTheory/EndpointInformationLoss.lean/declarations/endpointsignprofile.md) | 36 | `declaration-track:390f62b23831d53daa246d1470432ed6b11451f27c630fcaf751cb4de4c1b092` |
-| 2 | `def` | [rationalRootAt](../../../../NumberTheory/EndpointInformationLoss.lean/declarations/rationalrootat.md) | 40 | `declaration-track:8c64568c2bf195e4dcdaba64f0521c8799ded57893559067c71990e61c398238` |
-| 3 | `theorem` | [exists_endpointSignProfile_collision](../../../../NumberTheory/EndpointInformationLoss.lean/declarations/exists-endpointsignprofile-collision.md) | 45 | `result-track:f9bee0ce8f3a0793712d1678f8b26b7059a496edffd219b08396d8ce9d2c2112` |
-| 4 | `theorem` | [exists_root_query_not_factorsThrough_endpointSignProfile](../../../../NumberTheory/EndpointInformationLoss.lean/declarations/exists-root-query-not-factorsthrough-endpointsignprofile.md) | 61 | `result-track:d4b2b8a85da605f99b14f9683ed063d5778dd1b6892d1ab190b4bc116713d875` |
-| 5 | `theorem` | [exists_augmented_endpointProfile_separates](../../../../NumberTheory/EndpointInformationLoss.lean/declarations/exists-augmented-endpointprofile-separates.md) | 72 | `result-track:aa387eebaef220935c4d7111d9edaf9218e81f9f59ba5ec9ac83d31171fa441d` |
+| 1 | `def` | [endpointSignProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EndpointInformationLoss.lean/declarations/endpointsignprofile.md) | 36 | `declaration-track:390f62b23831d53daa246d1470432ed6b11451f27c630fcaf751cb4de4c1b092` |
+| 2 | `def` | [rationalRootAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EndpointInformationLoss.lean/declarations/rationalrootat.md) | 40 | `declaration-track:8c64568c2bf195e4dcdaba64f0521c8799ded57893559067c71990e61c398238` |
+| 3 | `theorem` | [exists_endpointSignProfile_collision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EndpointInformationLoss.lean/declarations/exists-endpointsignprofile-collision.md) | 45 | `result-track:f9bee0ce8f3a0793712d1678f8b26b7059a496edffd219b08396d8ce9d2c2112` |
+| 4 | `theorem` | [exists_root_query_not_factorsThrough_endpointSignProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EndpointInformationLoss.lean/declarations/exists-root-query-not-factorsthrough-endpointsignprofile.md) | 61 | `result-track:d4b2b8a85da605f99b14f9683ed063d5778dd1b6892d1ab190b4bc116713d875` |
+| 5 | `theorem` | [exists_augmented_endpointProfile_separates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EndpointInformationLoss.lean/declarations/exists-augmented-endpointprofile-separates.md) | 72 | `result-track:aa387eebaef220935c4d7111d9edaf9218e81f9f59ba5ec9ac83d31171fa441d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Compendium.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Compendium.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Compendium.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Compendium.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [phaseI_recommended_order_nonempty](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Compendium.lean/declarations/phasei-recommended-order-nonempty.md) | 20 | `result-track:2ca3b17fedc4353956c7be5ddf6fa529cbdc2d502cca5815cd2ef1fbf84f688c` |
-| 2 | `theorem` | [phaseII_recommended_order_nonempty](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Compendium.lean/declarations/phaseii-recommended-order-nonempty.md) | 24 | `result-track:08b665549ad7a5e563d1f3d2b262f9770c70e52d0cf2d0fffc413ceceb4fbade` |
-| 3 | `theorem` | [phaseIII_recommended_order_nonempty](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Compendium.lean/declarations/phaseiii-recommended-order-nonempty.md) | 28 | `result-track:d62c2e9fb21423ca91343a80ba68283697340dc8f818c08e3aab3c904fc16dff` |
+| 1 | `theorem` | [phaseI_recommended_order_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Compendium.lean/declarations/phasei-recommended-order-nonempty.md) | 20 | `result-track:2ca3b17fedc4353956c7be5ddf6fa529cbdc2d502cca5815cd2ef1fbf84f688c` |
+| 2 | `theorem` | [phaseII_recommended_order_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Compendium.lean/declarations/phaseii-recommended-order-nonempty.md) | 24 | `result-track:08b665549ad7a5e563d1f3d2b262f9770c70e52d0cf2d0fffc413ceceb4fbade` |
+| 3 | `theorem` | [phaseIII_recommended_order_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Compendium.lean/declarations/phaseiii-recommended-order-nonempty.md) | 28 | `result-track:d62c2e9fb21423ca91343a80ba68283697340dc8f818c08e3aab3c904fc16dff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

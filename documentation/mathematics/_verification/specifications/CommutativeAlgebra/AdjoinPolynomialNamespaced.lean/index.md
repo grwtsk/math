@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AdjoinPolynomialNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AdjoinPolynomialNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPolynomialNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPolynomialNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [adjoin_X](../../../../CommutativeAlgebra/AdjoinPolynomialNamespaced.lean/declarations/adjoin-x.md) | 44 | `result-track:52b78597374682fbf627971576393310962f77607af6a685e99db31b24b655e1` |
-| 2 | `theorem` | [Adjoin Polynomial Namespaced](../../../../CommutativeAlgebra/AdjoinPolynomialNamespaced.lean/declarations/adjoin-singleton-eq-range-aeval.md) | 51 | `result-track:15bb617248fd88200ea5f5beb38f942ca9dff05e7cee22224e63af35f69697d5` |
-| 3 | `theorem` | [aeval_mem_adjoin_singleton](../../../../CommutativeAlgebra/AdjoinPolynomialNamespaced.lean/declarations/aeval-mem-adjoin-singleton.md) | 56 | `result-track:bf33197a998c57ff7e20334cda94f19a0e59cc7a894c725886cd93939e9b5b6a` |
-| 4 | `instance` | [instCommSemiringAdjoinSingleton](../../../../CommutativeAlgebra/AdjoinPolynomialNamespaced.lean/declarations/instcommsemiringadjoinsingleton.md) | 60 | `declaration-track:2d6cccd264ef81787f7756c8a00e92f97c2dea292aa20580b5d17c7d0bd83864` |
-| 5 | `instance` | [instCommRingAdjoinSingleton](../../../../CommutativeAlgebra/AdjoinPolynomialNamespaced.lean/declarations/instcommringadjoinsingleton.md) | 68 | `declaration-track:829625921d25750b4c8ea4ffc2909e32e2f8246fa6bae921090fa6fed4b45fde` |
+| 1 | `theorem` | [adjoin_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPolynomialNamespaced.lean/declarations/adjoin-x.md) | 44 | `result-track:52b78597374682fbf627971576393310962f77607af6a685e99db31b24b655e1` |
+| 2 | `theorem` | [Adjoin Polynomial Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPolynomialNamespaced.lean/declarations/adjoin-singleton-eq-range-aeval.md) | 51 | `result-track:15bb617248fd88200ea5f5beb38f942ca9dff05e7cee22224e63af35f69697d5` |
+| 3 | `theorem` | [aeval_mem_adjoin_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPolynomialNamespaced.lean/declarations/aeval-mem-adjoin-singleton.md) | 56 | `result-track:bf33197a998c57ff7e20334cda94f19a0e59cc7a894c725886cd93939e9b5b6a` |
+| 4 | `instance` | [instCommSemiringAdjoinSingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPolynomialNamespaced.lean/declarations/instcommsemiringadjoinsingleton.md) | 60 | `declaration-track:2d6cccd264ef81787f7756c8a00e92f97c2dea292aa20580b5d17c7d0bd83864` |
+| 5 | `instance` | [instCommRingAdjoinSingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPolynomialNamespaced.lean/declarations/instcommringadjoinsingleton.md) | 68 | `declaration-track:829625921d25750b4c8ea4ffc2909e32e2f8246fa6bae921090fa6fed4b45fde` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

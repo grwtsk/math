@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalGreenTentNamespacedEdition3.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalGreenTentNamespacedEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalGreenTentNamespacedEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalGreenTentNamespacedEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [criticalDirichletTent](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalGreenTentNamespacedEdition3.lean/declarations/criticaldirichlettent.md) | 35 | `declaration-track:4186b59509bb41794c77addb053abbde62d368f3b63717763d180f7006e2b126` |
-| 2 | `theorem` | [positivePart_sub_affine_eq_neg_tent](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalGreenTentNamespacedEdition3.lean/declarations/positivepart-sub-affine-eq-neg-tent.md) | 39 | `result-track:c3e550904ea3d32b330dd093657c9e09c9f16f07ece810f187a64919248e3927` |
-| 3 | `theorem` | [criticalDirichletTent_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalGreenTentNamespacedEdition3.lean/declarations/criticaldirichlettent-nonneg.md) | 51 | `result-track:3a79d1120a4786f5fa634d7766deb4e899273d298499c1da0344b30bdf9e7a03` |
-| 4 | `theorem` | [criticalDirichletTent_endpoints](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalGreenTentNamespacedEdition3.lean/declarations/criticaldirichlettent-endpoints.md) | 59 | `result-track:9b45bb1b48b2a954ec4997784825784f58bed41b34f427b378742f12ad9e93fb` |
-| 5 | `theorem` | [primeLogSum_hinge_common_inventory](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalGreenTentNamespacedEdition3.lean/declarations/primelogsum-hinge-common-inventory.md) | 78 | `result-track:1cd20881f9e53709fc6f4847b73344a7713b2cdeb6c1ccc3d7dca6ded859f333` |
-| 6 | `theorem` | [criticalDiscrepancyBridge_eq_green_tents](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalGreenTentNamespacedEdition3.lean/declarations/criticaldiscrepancybridge-eq-green-tents.md) | 92 | `result-track:c28d83ec07f04bce72d80e7479bdd559cdb80627d95e70e06bf8737c9c01c84b` |
+| 1 | `def` | [criticalDirichletTent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalGreenTentNamespacedEdition3.lean/declarations/criticaldirichlettent.md) | 35 | `declaration-track:4186b59509bb41794c77addb053abbde62d368f3b63717763d180f7006e2b126` |
+| 2 | `theorem` | [positivePart_sub_affine_eq_neg_tent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalGreenTentNamespacedEdition3.lean/declarations/positivepart-sub-affine-eq-neg-tent.md) | 39 | `result-track:c3e550904ea3d32b330dd093657c9e09c9f16f07ece810f187a64919248e3927` |
+| 3 | `theorem` | [criticalDirichletTent_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalGreenTentNamespacedEdition3.lean/declarations/criticaldirichlettent-nonneg.md) | 51 | `result-track:3a79d1120a4786f5fa634d7766deb4e899273d298499c1da0344b30bdf9e7a03` |
+| 4 | `theorem` | [criticalDirichletTent_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalGreenTentNamespacedEdition3.lean/declarations/criticaldirichlettent-endpoints.md) | 59 | `result-track:9b45bb1b48b2a954ec4997784825784f58bed41b34f427b378742f12ad9e93fb` |
+| 5 | `theorem` | [primeLogSum_hinge_common_inventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalGreenTentNamespacedEdition3.lean/declarations/primelogsum-hinge-common-inventory.md) | 78 | `result-track:1cd20881f9e53709fc6f4847b73344a7713b2cdeb6c1ccc3d7dca6ded859f333` |
+| 6 | `theorem` | [criticalDiscrepancyBridge_eq_green_tents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalGreenTentNamespacedEdition3.lean/declarations/criticaldiscrepancybridge-eq-green-tents.md) | 92 | `result-track:c28d83ec07f04bce72d80e7479bdd559cdb80627d95e70e06bf8737c9c01c84b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

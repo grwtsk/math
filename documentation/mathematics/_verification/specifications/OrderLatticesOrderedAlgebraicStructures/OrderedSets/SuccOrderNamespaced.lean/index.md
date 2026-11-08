@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SuccOrderNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SuccOrderNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SuccOrderNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SuccOrderNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Iic.coe_succ_of_not_isMax](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SuccOrderNamespaced.lean/declarations/iic-coe-succ-of-not-ismax.md) | 30 | `result-track:fe18e4a06e8bda33b3fb89efd62773b4205c6e47e0287d5a5584088aca8df375` |
-| 2 | `lemma` | [Iic.succ_eq_of_not_isMax](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SuccOrderNamespaced.lean/declarations/iic-succ-eq-of-not-ismax.md) | 37 | `result-track:3da7a2ff1b8f8171f48f608e1972c60c43f8c3865520b60eda1bb7c8d7c6da13` |
-| 3 | `lemma` | [Ici.coe_pred_of_not_isMin](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SuccOrderNamespaced.lean/declarations/ici-coe-pred-of-not-ismin.md) | 45 | `result-track:a3dc089ebe8d2fd5f3ebcb22b025dc7e4502d07e88e64e4485cad1d3ac68f5aa` |
-| 4 | `lemma` | [Ici.pred_eq_of_not_isMin](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SuccOrderNamespaced.lean/declarations/ici-pred-eq-of-not-ismin.md) | 52 | `result-track:950315cf1083a04c7f501182cd230b3609a0b0f21c953c8c9f5e07bab8fb6ba2` |
+| 1 | `lemma` | [Iic.coe_succ_of_not_isMax](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SuccOrderNamespaced.lean/declarations/iic-coe-succ-of-not-ismax.md) | 30 | `result-track:fe18e4a06e8bda33b3fb89efd62773b4205c6e47e0287d5a5584088aca8df375` |
+| 2 | `lemma` | [Iic.succ_eq_of_not_isMax](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SuccOrderNamespaced.lean/declarations/iic-succ-eq-of-not-ismax.md) | 37 | `result-track:3da7a2ff1b8f8171f48f608e1972c60c43f8c3865520b60eda1bb7c8d7c6da13` |
+| 3 | `lemma` | [Ici.coe_pred_of_not_isMin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SuccOrderNamespaced.lean/declarations/ici-coe-pred-of-not-ismin.md) | 45 | `result-track:a3dc089ebe8d2fd5f3ebcb22b025dc7e4502d07e88e64e4485cad1d3ac68f5aa` |
+| 4 | `lemma` | [Ici.pred_eq_of_not_isMin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SuccOrderNamespaced.lean/declarations/ici-pred-eq-of-not-ismin.md) | 52 | `result-track:950315cf1083a04c7f501182cd230b3609a0b0f21c953c8c9f5e07bab8fb6ba2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsUniquelyCodimOneFace](../../../../AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/isuniquelycodimoneface.md) | 39 | `declaration-track:36faa173bd672a33daff9102ed0063fefe5484c475e09c3750556a7d39a357c9` |
-| 2 | `lemma` | [iff](../../../../AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/iff.md) | 44 | `result-track:4a88c7bc180ad080da8db3f8be26d91dff799be67136865a4eb6ee5fa9a4a345` |
-| 3 | `lemma` | [dim_eq](../../../../AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/dim-eq.md) | 60 | `result-track:7a160ebe5a426e3af0996fd586b2edee39a72fafccd6c1f1c54d459f76344b42` |
-| 4 | `lemma` | [cast](../../../../AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/cast.md) | 66 | `result-track:d940aa93d6f08ece8b4d8d5482633b5557020efd8e87190627fe56ef05c694a7` |
-| 5 | `lemma` | [existsUnique_δ_cast_simplex](../../../../AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/existsunique-cast-simplex.md) | 69 | `result-track:ea2ff0e1120274d6b17154294b922b142d76f5ad1ad56ff1d8734c76d911d52d` |
-| 6 | `def` | [index](../../../../AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/index.md) | 78 | `declaration-track:b3efb4f21f3609c4a20c0808d93cba559c88fe2099bc08317e7c14ca10762280` |
-| 7 | `lemma` | [δ_index](../../../../AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/index-source-edition-2.md) | 81 | `result-track:b8e08544e826f783ec76121f29d4d1052c830337ca1c50326f29b1d66d3570fa` |
-| 8 | `lemma` | [δ_eq_iff](../../../../AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/eq-iff.md) | 85 | `result-track:c32c7cfdf712464a19cd157a9db44a028e0416a86101c47f14c596ac00c4697a` |
-| 9 | `lemma` | [le](../../../../AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/le.md) | 92 | `result-track:58dbe3da834a98ee62918d9d1e61d7836c26429968d11f9404e4986443423b73` |
-| 10 | `lemma` | [unique](../../../../AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/unique.md) | 100 | `result-track:4d465c9f87eb2c7461d39e7331b35d20020d0c86da8d913718fa0c4dde96fddd` |
-| 11 | `lemma` | [op](../../../../AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/op.md) | 109 | `result-track:56cda1ed121f73d9e1ec9d3da8da4f9fb9522e0851fa278de18bafe1efdf5507` |
-| 12 | `lemma` | [of_iso](../../../../AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/of-iso.md) | 119 | `result-track:5955da129be934eac387075ec24fec4d8bd4774da752680d401571f15dc9cbb8` |
-| 13 | `lemma` | [iff_of_iso](../../../../AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/iff-of-iso.md) | 127 | `result-track:368c5eeef7272b047ca2a2222d6a118aa021da97cfc528ad9e177b37bb1418ae` |
-| 14 | `lemma` | [index_of_iso](../../../../AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/index-of-iso.md) | 132 | `result-track:d0452afd117799082dfa2add91ef577d69378586c9a3ca45b00a3badd6ed3907` |
+| 1 | `def` | [IsUniquelyCodimOneFace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/isuniquelycodimoneface.md) | 39 | `declaration-track:36faa173bd672a33daff9102ed0063fefe5484c475e09c3750556a7d39a357c9` |
+| 2 | `lemma` | [iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/iff.md) | 44 | `result-track:4a88c7bc180ad080da8db3f8be26d91dff799be67136865a4eb6ee5fa9a4a345` |
+| 3 | `lemma` | [dim_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/dim-eq.md) | 60 | `result-track:7a160ebe5a426e3af0996fd586b2edee39a72fafccd6c1f1c54d459f76344b42` |
+| 4 | `lemma` | [cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/cast.md) | 66 | `result-track:d940aa93d6f08ece8b4d8d5482633b5557020efd8e87190627fe56ef05c694a7` |
+| 5 | `lemma` | [existsUnique_δ_cast_simplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/existsunique-cast-simplex.md) | 69 | `result-track:ea2ff0e1120274d6b17154294b922b142d76f5ad1ad56ff1d8734c76d911d52d` |
+| 6 | `def` | [index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/index.md) | 78 | `declaration-track:b3efb4f21f3609c4a20c0808d93cba559c88fe2099bc08317e7c14ca10762280` |
+| 7 | `lemma` | [δ_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/index-source-edition-2.md) | 81 | `result-track:b8e08544e826f783ec76121f29d4d1052c830337ca1c50326f29b1d66d3570fa` |
+| 8 | `lemma` | [δ_eq_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/eq-iff.md) | 85 | `result-track:c32c7cfdf712464a19cd157a9db44a028e0416a86101c47f14c596ac00c4697a` |
+| 9 | `lemma` | [le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/le.md) | 92 | `result-track:58dbe3da834a98ee62918d9d1e61d7836c26429968d11f9404e4986443423b73` |
+| 10 | `lemma` | [unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/unique.md) | 100 | `result-track:4d465c9f87eb2c7461d39e7331b35d20020d0c86da8d913718fa0c4dde96fddd` |
+| 11 | `lemma` | [op](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/op.md) | 109 | `result-track:56cda1ed121f73d9e1ec9d3da8da4f9fb9522e0851fa278de18bafe1efdf5507` |
+| 12 | `lemma` | [of_iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/of-iso.md) | 119 | `result-track:5955da129be934eac387075ec24fec4d8bd4774da752680d401571f15dc9cbb8` |
+| 13 | `lemma` | [iff_of_iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/iff-of-iso.md) | 127 | `result-track:368c5eeef7272b047ca2a2222d6a118aa021da97cfc528ad9e177b37bb1418ae` |
+| 14 | `lemma` | [index_of_iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsUniquelyCodimOneFacePublic.lean/declarations/index-of-iso.md) | 132 | `result-track:d0452afd117799082dfa2add91ef577d69378586c9a3ca45b00a3badd6ed3907` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

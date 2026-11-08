@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.RationalTentAccumulation`](../../../../FunctionsOfAComplexVariable/RationalTentAccumulation.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.TentMellinKernel`](../../../../MeasureAndIntegration/TentMellinKernel.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalTentAccumulation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentAccumulation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.TentMellinKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinKernel.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,22 +59,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [logPower_conj](../../../../FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/logpower-conj.md) | 40 | `result-track:8095ef119f38777248d5de0f680acf925c0b4f1c8922698e45283f0e7985d47d` |
-| 2 | `theorem` | [tentKernel_conj_of_im_ne_zero](../../../../FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/tentkernel-conj-of-im-ne-zero.md) | 49 | `result-track:ebfb5b3a95f0cb2650b977afe04bc65ce76ae8741cacd10d42555db6314ab9e1` |
-| 3 | `def` | [pairValue](../../../../FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/pairvalue.md) | 78 | `declaration-track:36ba63d905ef8019ed96cb2ca453269ac9747c0e27957db2f04f4ce767934845` |
-| 4 | `def` | [pairError](../../../../FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/pairerror.md) | 83 | `declaration-track:81c5417f561e4ab1bd06971f5b73d9eeb9854a20113f643ed97a557366972516` |
-| 5 | `theorem` | [embed_pairValue](../../../../FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/embed-pairvalue.md) | 86 | `result-track:0431c512e13b48b4f34e707e80482bfcb62307fa97de942611ea5659c1dc8813` |
-| 6 | `theorem` | [pairValue_sound](../../../../FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/pairvalue-sound.md) | 93 | `result-track:e06b8c04479fc4aeeda0a29533afa97baf45d42f163eae7c005c37871f21f622` |
-| 7 | `def` | [sumValue](../../../../FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/sumvalue.md) | 133 | `declaration-track:6b1ea9c1734b7a8cb4b6a647a61b3322d1fed45dd56b7c3460784c15c4205347` |
-| 8 | `def` | [sumError](../../../../FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/sumerror.md) | 137 | `declaration-track:e90552742598f4a233655b19b45e17e177d10418332f4b9893cd54a21536ecf4` |
-| 9 | `def` | [compute](../../../../FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/compute.md) | 141 | `declaration-track:3179d0223476081b5dfbd6da89b06c593ce773a89453065b67cd398f35cf3927` |
-| 10 | `def` | [evaluate](../../../../FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/evaluate.md) | 147 | `declaration-track:eea310311423876d8bce4aaad25b9d6d5d57808345c51f95a2e0362190e8a0a5` |
-| 11 | `def` | [verify](../../../../FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/verify.md) | 155 | `declaration-track:bd501d4509c3b161ac9190fde6f001bfb53623c737249220f231beb7952e89f4` |
-| 12 | `theorem` | [embed_sumValue](../../../../FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/embed-sumvalue.md) | 159 | `result-track:dadb7f4a84972c8418cf411b41c9dcdbd9900b936d3a7fb92ad1403253f79495` |
-| 13 | `theorem` | [sum_sound](../../../../FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/sum-sound.md) | 167 | `result-track:e0f88d9fce5512f852cd2a8e1d202719dde0345b4b18c948367e4566a00645d3` |
-| 14 | `theorem` | [compute_sound](../../../../FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/compute-sound.md) | 196 | `result-track:6fc2b958957941ff9cc1391127c3ef22a7e2a130fe5d912d235438e96264a108` |
-| 15 | `theorem` | [verify_iff](../../../../FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/verify-iff.md) | 213 | `result-track:381c7820d1ff942bb31cd04908a77e4a341c67f0dad8d8de6d8314dc59a09203` |
-| 16 | `theorem` | [verify_sound](../../../../FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/verify-sound.md) | 224 | `result-track:d4983acee4a7830add3a8247d7f1c3967ddb39c0b18b1f470c1d7e26dddbe9ed` |
+| 1 | `theorem` | [logPower_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/logpower-conj.md) | 40 | `result-track:8095ef119f38777248d5de0f680acf925c0b4f1c8922698e45283f0e7985d47d` |
+| 2 | `theorem` | [tentKernel_conj_of_im_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/tentkernel-conj-of-im-ne-zero.md) | 49 | `result-track:ebfb5b3a95f0cb2650b977afe04bc65ce76ae8741cacd10d42555db6314ab9e1` |
+| 3 | `def` | [pairValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/pairvalue.md) | 78 | `declaration-track:36ba63d905ef8019ed96cb2ca453269ac9747c0e27957db2f04f4ce767934845` |
+| 4 | `def` | [pairError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/pairerror.md) | 83 | `declaration-track:81c5417f561e4ab1bd06971f5b73d9eeb9854a20113f643ed97a557366972516` |
+| 5 | `theorem` | [embed_pairValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/embed-pairvalue.md) | 86 | `result-track:0431c512e13b48b4f34e707e80482bfcb62307fa97de942611ea5659c1dc8813` |
+| 6 | `theorem` | [pairValue_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/pairvalue-sound.md) | 93 | `result-track:e06b8c04479fc4aeeda0a29533afa97baf45d42f163eae7c005c37871f21f622` |
+| 7 | `def` | [sumValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/sumvalue.md) | 133 | `declaration-track:6b1ea9c1734b7a8cb4b6a647a61b3322d1fed45dd56b7c3460784c15c4205347` |
+| 8 | `def` | [sumError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/sumerror.md) | 137 | `declaration-track:e90552742598f4a233655b19b45e17e177d10418332f4b9893cd54a21536ecf4` |
+| 9 | `def` | [compute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/compute.md) | 141 | `declaration-track:3179d0223476081b5dfbd6da89b06c593ce773a89453065b67cd398f35cf3927` |
+| 10 | `def` | [evaluate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/evaluate.md) | 147 | `declaration-track:eea310311423876d8bce4aaad25b9d6d5d57808345c51f95a2e0362190e8a0a5` |
+| 11 | `def` | [verify](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/verify.md) | 155 | `declaration-track:bd501d4509c3b161ac9190fde6f001bfb53623c737249220f231beb7952e89f4` |
+| 12 | `theorem` | [embed_sumValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/embed-sumvalue.md) | 159 | `result-track:dadb7f4a84972c8418cf411b41c9dcdbd9900b936d3a7fb92ad1403253f79495` |
+| 13 | `theorem` | [sum_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/sum-sound.md) | 167 | `result-track:e0f88d9fce5512f852cd2a8e1d202719dde0345b4b18c948367e4566a00645d3` |
+| 14 | `theorem` | [compute_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/compute-sound.md) | 196 | `result-track:6fc2b958957941ff9cc1391127c3ef22a7e2a130fe5d912d235438e96264a108` |
+| 15 | `theorem` | [verify_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/verify-iff.md) | 213 | `result-track:381c7820d1ff942bb31cd04908a77e4a341c67f0dad8d8de6d8314dc59a09203` |
+| 16 | `theorem` | [verify_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalConjugatePairAccumulation.lean/declarations/verify-sound.md) | 224 | `result-track:d4983acee4a7830add3a8247d7f1c3967ddb39c0b18b1f470c1d7e26dddbe9ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FreyAdicQuotients.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FreyAdicQuotients.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyAdicQuotients.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyAdicQuotients.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetQuotient`](../../../../CommutativeAlgebra/FreyJetQuotient.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetQuotient`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyJetQuotient.lean/index.md) — import line 10; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,21 +57,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cubicIdeal](../../../../CommutativeAlgebra/FreyAdicQuotients.lean/declarations/cubicideal.md) | 23 | `declaration-track:8497fb061890b90423713b00032892f036c1c973581debad977bc7825e6beb61` |
-| 2 | `abbrev` | [Coordinate](../../../../CommutativeAlgebra/FreyAdicQuotients.lean/declarations/coordinate.md) | 25 | `declaration-track:c4406f6e2c5b7ee8a00935fdd6ae80c66948faebec434e9b5a1d50eeeff70b6b` |
-| 3 | `def` | [coordinateMap](../../../../CommutativeAlgebra/FreyAdicQuotients.lean/declarations/coordinatemap.md) | 28 | `declaration-track:ea98962dbd5607ce26918ef8f6dd48aa80f6f476e4e202c73037ae35d82807e0` |
-| 4 | `def` | [curveSectionIdeal](../../../../CommutativeAlgebra/FreyAdicQuotients.lean/declarations/curvesectionideal.md) | 32 | `declaration-track:b125f1edf6635dcaca9898b29156e0c589767fb0b17ca63e6a83f8932e4c1d67` |
-| 5 | `theorem` | [curveSectionIdeal_pow](../../../../CommutativeAlgebra/FreyAdicQuotients.lean/declarations/curvesectionideal-pow.md) | 36 | `result-track:07748b1e5f8b260ca5ad1cd562a5ea67ccb7b9ff7c186d3847e111ce2f29987a` |
-| 6 | `abbrev` | [PowerQuotient](../../../../CommutativeAlgebra/FreyAdicQuotients.lean/declarations/powerquotient.md) | 41 | `declaration-track:0a0f7a22fab7893ce1092260670426203f12384a3124ccf045cfd90b7210c621` |
-| 7 | `def` | [transition](../../../../CommutativeAlgebra/FreyAdicQuotients.lean/declarations/transition.md) | 45 | `declaration-track:8730d7db80c6fb018ba251b1f86a7aaf93260d79a3a5d7373a263a085c481c91` |
-| 8 | `theorem` | [transition_mk](../../../../CommutativeAlgebra/FreyAdicQuotients.lean/declarations/transition-mk.md) | 49 | `result-track:f5c35a53316f3a069134ed017c0d245e553be6b01fd9815c62de947704939ec6` |
-| 9 | `theorem` | [transition_comp](../../../../CommutativeAlgebra/FreyAdicQuotients.lean/declarations/transition-comp.md) | 55 | `result-track:663e13a1cc5dad3f10198198c2f78d8f0bffc28d3aa98b69d04ef6757ab0b0ed` |
-| 10 | `def` | [finiteEquiv](../../../../CommutativeAlgebra/FreyAdicQuotients.lean/declarations/finiteequiv.md) | 65 | `declaration-track:144032ec0aabd0ce840e8fadf11d3a826499a70e8726dd5ed0ee8a43d51267a0` |
-| 11 | `theorem` | [finiteEquiv_mk](../../../../CommutativeAlgebra/FreyAdicQuotients.lean/declarations/finiteequiv-mk.md) | 71 | `result-track:aad95caa486d3e84b0fe3e1d58adc32a1367ff3b2e10b6a58a1510a244dc0725` |
-| 12 | `theorem` | [finiteEquiv_symm_mk](../../../../CommutativeAlgebra/FreyAdicQuotients.lean/declarations/finiteequiv-symm-mk.md) | 78 | `result-track:32af4724b4582ea7018494df50d279be58c9956a728aa55047807219a1dfa6c0` |
-| 13 | `theorem` | [finiteEquiv_transition](../../../../CommutativeAlgebra/FreyAdicQuotients.lean/declarations/finiteequiv-transition.md) | 85 | `result-track:65cbcabe1f2b2e3cd8dfce01fd563e7bb8044067f31e5352b249a90cefd22f62` |
-| 14 | `theorem` | [finiteEquiv_symm_transition](../../../../CommutativeAlgebra/FreyAdicQuotients.lean/declarations/finiteequiv-symm-transition.md) | 95 | `result-track:c1733c0ab14a9e754d98103d68cacb78e1eabd625ee0c28812f4651fd59a7328` |
-| 15 | `theorem` | [powerQuotient_zero](../../../../CommutativeAlgebra/FreyAdicQuotients.lean/declarations/powerquotient-zero.md) | 105 | `result-track:9cd7f441f8ac9c76fc2c52d1c7079be94b16ef1a17d64c41d0dfa76af92098f0` |
+| 1 | `def` | [cubicIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyAdicQuotients.lean/declarations/cubicideal.md) | 23 | `declaration-track:8497fb061890b90423713b00032892f036c1c973581debad977bc7825e6beb61` |
+| 2 | `abbrev` | [Coordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyAdicQuotients.lean/declarations/coordinate.md) | 25 | `declaration-track:c4406f6e2c5b7ee8a00935fdd6ae80c66948faebec434e9b5a1d50eeeff70b6b` |
+| 3 | `def` | [coordinateMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyAdicQuotients.lean/declarations/coordinatemap.md) | 28 | `declaration-track:ea98962dbd5607ce26918ef8f6dd48aa80f6f476e4e202c73037ae35d82807e0` |
+| 4 | `def` | [curveSectionIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyAdicQuotients.lean/declarations/curvesectionideal.md) | 32 | `declaration-track:b125f1edf6635dcaca9898b29156e0c589767fb0b17ca63e6a83f8932e4c1d67` |
+| 5 | `theorem` | [curveSectionIdeal_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyAdicQuotients.lean/declarations/curvesectionideal-pow.md) | 36 | `result-track:07748b1e5f8b260ca5ad1cd562a5ea67ccb7b9ff7c186d3847e111ce2f29987a` |
+| 6 | `abbrev` | [PowerQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyAdicQuotients.lean/declarations/powerquotient.md) | 41 | `declaration-track:0a0f7a22fab7893ce1092260670426203f12384a3124ccf045cfd90b7210c621` |
+| 7 | `def` | [transition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyAdicQuotients.lean/declarations/transition.md) | 45 | `declaration-track:8730d7db80c6fb018ba251b1f86a7aaf93260d79a3a5d7373a263a085c481c91` |
+| 8 | `theorem` | [transition_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyAdicQuotients.lean/declarations/transition-mk.md) | 49 | `result-track:f5c35a53316f3a069134ed017c0d245e553be6b01fd9815c62de947704939ec6` |
+| 9 | `theorem` | [transition_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyAdicQuotients.lean/declarations/transition-comp.md) | 55 | `result-track:663e13a1cc5dad3f10198198c2f78d8f0bffc28d3aa98b69d04ef6757ab0b0ed` |
+| 10 | `def` | [finiteEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyAdicQuotients.lean/declarations/finiteequiv.md) | 65 | `declaration-track:144032ec0aabd0ce840e8fadf11d3a826499a70e8726dd5ed0ee8a43d51267a0` |
+| 11 | `theorem` | [finiteEquiv_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyAdicQuotients.lean/declarations/finiteequiv-mk.md) | 71 | `result-track:aad95caa486d3e84b0fe3e1d58adc32a1367ff3b2e10b6a58a1510a244dc0725` |
+| 12 | `theorem` | [finiteEquiv_symm_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyAdicQuotients.lean/declarations/finiteequiv-symm-mk.md) | 78 | `result-track:32af4724b4582ea7018494df50d279be58c9956a728aa55047807219a1dfa6c0` |
+| 13 | `theorem` | [finiteEquiv_transition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyAdicQuotients.lean/declarations/finiteequiv-transition.md) | 85 | `result-track:65cbcabe1f2b2e3cd8dfce01fd563e7bb8044067f31e5352b249a90cefd22f62` |
+| 14 | `theorem` | [finiteEquiv_symm_transition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyAdicQuotients.lean/declarations/finiteequiv-symm-transition.md) | 95 | `result-track:c1733c0ab14a9e754d98103d68cacb78e1eabd625ee0c28812f4651fd59a7328` |
+| 15 | `theorem` | [powerQuotient_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyAdicQuotients.lean/declarations/powerquotient-zero.md) | 105 | `result-track:9cd7f441f8ac9c76fc2c52d1c7079be94b16ef1a17d64c41d0dfa76af92098f0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

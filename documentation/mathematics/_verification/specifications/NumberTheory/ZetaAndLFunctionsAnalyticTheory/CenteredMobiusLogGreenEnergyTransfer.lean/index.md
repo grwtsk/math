@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenEnergyTransfer.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenEnergyTransfer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenEnergyTransfer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenEnergyTransfer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenL2Comparison`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenL2Comparison.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenL2Comparison`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenL2Comparison.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [thinGreenEnergy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenEnergyTransfer.lean/declarations/thingreenenergy.md) | 15 | `declaration-track:1a9890b91f52b0b1f7694fc03d5bd8c31d373c1ae8fe0fcb46f9c7788a19c765` |
-| 2 | `def` | [centeredMobiusLogFourierEnergy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenEnergyTransfer.lean/declarations/centeredmobiuslogfourierenergy.md) | 19 | `declaration-track:8e85fd2d0f090b6d98df445ee32d6a12e468eb25e5f27c6980e33a7ca4829019` |
-| 3 | `theorem` | [sq_norm_thinGreen_le_centered_plus_residual](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenEnergyTransfer.lean/declarations/sq-norm-thingreen-le-centered-plus-residual.md) | 24 | `result-track:e7383b777191247270acac11496e975be39d1694ea2e04d5f8c64a5f0dcba911` |
-| 4 | `theorem` | [sq_norm_centered_le_thinGreen_plus_residual](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenEnergyTransfer.lean/declarations/sq-norm-centered-le-thingreen-plus-residual.md) | 39 | `result-track:3df382f1709454193652cee0b43eda966ea6dda946399226562396d072fdaeb8` |
-| 5 | `theorem` | [thinGreenEnergy_le_of_centered_summable](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenEnergyTransfer.lean/declarations/thingreenenergy-le-of-centered-summable.md) | 60 | `result-track:f273e218a679778f7f8c43cae3bffd465406e4181626e51ca6c2c21fdbd2de66` |
-| 6 | `theorem` | [centeredEnergy_le_of_thinGreen_summable](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenEnergyTransfer.lean/declarations/centeredenergy-le-of-thingreen-summable.md) | 109 | `result-track:5e3520a58960d4c2e9143b5d5cf608ff985d685fc0051e7e362b282e4990509d` |
+| 1 | `def` | [thinGreenEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenEnergyTransfer.lean/declarations/thingreenenergy.md) | 15 | `declaration-track:1a9890b91f52b0b1f7694fc03d5bd8c31d373c1ae8fe0fcb46f9c7788a19c765` |
+| 2 | `def` | [centeredMobiusLogFourierEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenEnergyTransfer.lean/declarations/centeredmobiuslogfourierenergy.md) | 19 | `declaration-track:8e85fd2d0f090b6d98df445ee32d6a12e468eb25e5f27c6980e33a7ca4829019` |
+| 3 | `theorem` | [sq_norm_thinGreen_le_centered_plus_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenEnergyTransfer.lean/declarations/sq-norm-thingreen-le-centered-plus-residual.md) | 24 | `result-track:e7383b777191247270acac11496e975be39d1694ea2e04d5f8c64a5f0dcba911` |
+| 4 | `theorem` | [sq_norm_centered_le_thinGreen_plus_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenEnergyTransfer.lean/declarations/sq-norm-centered-le-thingreen-plus-residual.md) | 39 | `result-track:3df382f1709454193652cee0b43eda966ea6dda946399226562396d072fdaeb8` |
+| 5 | `theorem` | [thinGreenEnergy_le_of_centered_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenEnergyTransfer.lean/declarations/thingreenenergy-le-of-centered-summable.md) | 60 | `result-track:f273e218a679778f7f8c43cae3bffd465406e4181626e51ca6c2c21fdbd2de66` |
+| 6 | `theorem` | [centeredEnergy_le_of_thinGreen_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenEnergyTransfer.lean/declarations/centeredenergy-le-of-thingreen-summable.md) | 109 | `result-track:5e3520a58960d4c2e9143b5d5cf608ff985d685fc0051e7e362b282e4990509d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

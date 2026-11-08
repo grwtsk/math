@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/EndsWeightedNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/EndsWeightedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsWeightedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsWeightedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [max_log_le_two_sqrt](../../../../MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/max-log-le-two-sqrt.md) | 36 | `result-track:c0bc43d7c9350a84677b484ee0fd91ddb802433cfb1fea6101b196d224b2496a` |
-| 2 | `theorem` | [abs_nuX_le_B](../../../../MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/abs-nux-le-b.md) | 45 | `result-track:3b5aa9cbef553c14f978086e7026f540692ceffdabcc2775f54b77c3eda3355d` |
-| 3 | `theorem` | [sqrt_add_le'](../../../../MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/sqrt-add-le.md) | 56 | `result-track:493dba46dd3b6d70b259c348787062dae131f6b1fe26261f8a24baf46566b866` |
-| 4 | `theorem` | [abs_nuX_le_B_add_sqrt](../../../../MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/abs-nux-le-b-add-sqrt.md) | 65 | `result-track:77ad18bb93183d50adb9472772c0056c980a94b78eb2ffbec1455dbd893cc925` |
-| 5 | `theorem` | [sqrt_shift_le](../../../../MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/sqrt-shift-le.md) | 72 | `result-track:4942753f63f8e502708bc05e694bf96888d7ff6bc94334aba5042910c0e85142` |
-| 6 | `theorem` | [psiA_aestronglyMeasurable](../../../../MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/psia-aestronglymeasurable.md) | 87 | `result-track:09937937c1437ce56202ab0a3c5fb29ef5e1ed37257e9f7ed8273ef3ebbd57ce` |
-| 7 | `theorem` | [psiA_shift_integrable](../../../../MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/psia-shift-integrable.md) | 98 | `result-track:1479793c8dd79aea704f4099e1c3e8c7701ab74fdb3aea53eabef8db631e4cc0` |
-| 8 | `theorem` | [integral_psiA_shift](../../../../MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/integral-psia-shift.md) | 103 | `result-track:6a91df8cb6bc830a8584a5d151033059583ff0275abdc6d0f039b571164b2f99` |
-| 9 | `theorem` | [integrable_psiA_mul_sqrt](../../../../MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/integrable-psia-mul-sqrt.md) | 109 | `result-track:70d16d14e439223e95b36a4ffe1583ba090b2ccd526628d8b1a1b43a9f024492` |
-| 10 | `theorem` | [integrable_psiA_shift_mul_nu](../../../../MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/integrable-psia-shift-mul-nu.md) | 163 | `result-track:70a55803d1d19eb3cdc20e216c73e9459a9568da329cbde0bc6d34219f78ba5e` |
-| 11 | `theorem` | [sum_psiA_shift_left](../../../../MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/sum-psia-shift-left.md) | 217 | `result-track:bee8a1655a2c0903d5f24682a4710531ec85c68714c3a308feaea8990f7ad68c` |
-| 12 | `theorem` | [sum_psiA_shift_right](../../../../MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/sum-psia-shift-right.md) | 225 | `result-track:79fa442d5133f4dc37d3400c389f0125a482868c9f73ff0477a840deef90e21f` |
+| 1 | `theorem` | [max_log_le_two_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/max-log-le-two-sqrt.md) | 36 | `result-track:c0bc43d7c9350a84677b484ee0fd91ddb802433cfb1fea6101b196d224b2496a` |
+| 2 | `theorem` | [abs_nuX_le_B](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/abs-nux-le-b.md) | 45 | `result-track:3b5aa9cbef553c14f978086e7026f540692ceffdabcc2775f54b77c3eda3355d` |
+| 3 | `theorem` | [sqrt_add_le'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/sqrt-add-le.md) | 56 | `result-track:493dba46dd3b6d70b259c348787062dae131f6b1fe26261f8a24baf46566b866` |
+| 4 | `theorem` | [abs_nuX_le_B_add_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/abs-nux-le-b-add-sqrt.md) | 65 | `result-track:77ad18bb93183d50adb9472772c0056c980a94b78eb2ffbec1455dbd893cc925` |
+| 5 | `theorem` | [sqrt_shift_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/sqrt-shift-le.md) | 72 | `result-track:4942753f63f8e502708bc05e694bf96888d7ff6bc94334aba5042910c0e85142` |
+| 6 | `theorem` | [psiA_aestronglyMeasurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/psia-aestronglymeasurable.md) | 87 | `result-track:09937937c1437ce56202ab0a3c5fb29ef5e1ed37257e9f7ed8273ef3ebbd57ce` |
+| 7 | `theorem` | [psiA_shift_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/psia-shift-integrable.md) | 98 | `result-track:1479793c8dd79aea704f4099e1c3e8c7701ab74fdb3aea53eabef8db631e4cc0` |
+| 8 | `theorem` | [integral_psiA_shift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/integral-psia-shift.md) | 103 | `result-track:6a91df8cb6bc830a8584a5d151033059583ff0275abdc6d0f039b571164b2f99` |
+| 9 | `theorem` | [integrable_psiA_mul_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/integrable-psia-mul-sqrt.md) | 109 | `result-track:70d16d14e439223e95b36a4ffe1583ba090b2ccd526628d8b1a1b43a9f024492` |
+| 10 | `theorem` | [integrable_psiA_shift_mul_nu](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/integrable-psia-shift-mul-nu.md) | 163 | `result-track:70a55803d1d19eb3cdc20e216c73e9459a9568da329cbde0bc6d34219f78ba5e` |
+| 11 | `theorem` | [sum_psiA_shift_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/sum-psia-shift-left.md) | 217 | `result-track:bee8a1655a2c0903d5f24682a4710531ec85c68714c3a308feaea8990f7ad68c` |
+| 12 | `theorem` | [sum_psiA_shift_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EndsWeightedNamespaced.lean/declarations/sum-psia-shift-right.md) | 225 | `result-track:79fa442d5133f4dc37d3400c389f0125a482868c9f73ff0477a840deef90e21f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

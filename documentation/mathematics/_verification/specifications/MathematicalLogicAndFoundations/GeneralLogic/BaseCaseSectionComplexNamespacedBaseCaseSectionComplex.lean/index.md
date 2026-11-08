@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCaseSectionComplexNamespacedBaseCaseSectionComplex.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCaseSectionComplexNamespacedBaseCaseSectionComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCaseSectionComplexNamespacedBaseCaseSectionComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCaseSectionComplexNamespacedBaseCaseSectionComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BaseCaseSectionComplex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCaseSectionComplexNamespacedBaseCaseSectionComplex.lean/declarations/basecasesectioncomplex.md) | 34 | `declaration-track:124348e272beac462ed9c2834be4d1a4f4b791953a6cdff49a80fbb89eb7bb11` |
-| 2 | `theorem` | [base_case_euler_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCaseSectionComplexNamespacedBaseCaseSectionComplex.lean/declarations/base-case-euler-nonzero.md) | 43 | `result-track:f0c799472897943bcf0f56ef63add8d772e442266f1b2ca1530b6a4e48ef4412` |
-| 3 | `theorem` | [base_case_complex_realizes_lfunction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCaseSectionComplexNamespacedBaseCaseSectionComplex.lean/declarations/base-case-complex-realizes-lfunction.md) | 48 | `result-track:35ac3d1a7854d4016882353bbedf5d875cf1fe28537550ed61a593827c6faadb` |
+| 1 | `structure` | [BaseCaseSectionComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCaseSectionComplexNamespacedBaseCaseSectionComplex.lean/declarations/basecasesectioncomplex.md) | 34 | `declaration-track:124348e272beac462ed9c2834be4d1a4f4b791953a6cdff49a80fbb89eb7bb11` |
+| 2 | `theorem` | [base_case_euler_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCaseSectionComplexNamespacedBaseCaseSectionComplex.lean/declarations/base-case-euler-nonzero.md) | 43 | `result-track:f0c799472897943bcf0f56ef63add8d772e442266f1b2ca1530b6a4e48ef4412` |
+| 3 | `theorem` | [base_case_complex_realizes_lfunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCaseSectionComplexNamespacedBaseCaseSectionComplex.lean/declarations/base-case-complex-realizes-lfunction.md) | 48 | `result-track:35ac3d1a7854d4016882353bbedf5d875cf1fe28537550ed61a593827c6faadb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

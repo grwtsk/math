@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ZMod.lean/index.md) · [Full source](../../../../GeneralTopology/ZMod.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZMod.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZMod.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/ZMod.lean/declarations/instance.md) | 20 | `declaration-track:3f8afd4e616a75f34add6805e3cca9a3fb51708ad2f66789ecdbfd8f47a010df` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/ZMod.lean/declarations/instance-source-edition-2.md) | 22 | `declaration-track:54f8a79acd70d99fdb7b5386fd3a4ccebf41f84a55b1f9758ae8152f2712345f` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZMod.lean/declarations/instance.md) | 20 | `declaration-track:3f8afd4e616a75f34add6805e3cca9a3fb51708ad2f66789ecdbfd8f47a010df` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZMod.lean/declarations/instance-source-edition-2.md) | 22 | `declaration-track:54f8a79acd70d99fdb7b5386fd3a4ccebf41f84a55b1f9758ae8152f2712345f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

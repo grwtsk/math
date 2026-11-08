@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/ActiveRegionNamespaced.lean/index.md) · [Full source](../../../../Geometry/ActiveRegionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ActiveRegionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ActiveRegionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ActiveModelRegion](../../../../Geometry/ActiveRegionNamespaced.lean/declarations/activemodelregion.md) | 23 | `declaration-track:a79ed9dff87569cf832c2ea9908ef423fa001d81c6c7e81f44858a4f23337f2a` |
-| 2 | `def` | [ofDependencyClosure](../../../../Geometry/ActiveRegionNamespaced.lean/declarations/ofdependencyclosure.md) | 43 | `declaration-track:b6ef4ba5b64851b31ca01b1ca39c4f37c0d572407be7ccccb92c4896f1294ecc` |
-| 3 | `theorem` | [selectedVersion_unique](../../../../Geometry/ActiveRegionNamespaced.lean/declarations/selectedversion-unique.md) | 73 | `result-track:8156f5fe9f064c12113d5740da3e6a37611561a58cbcb7d6db002c59c6577f7a` |
-| 4 | `theorem` | [finite](../../../../Geometry/ActiveRegionNamespaced.lean/declarations/finite.md) | 85 | `result-track:2cea1ec69335bfd0ab97f6f7775934c86984ffe17efd2834310a717459103af4` |
-| 5 | `theorem` | [activeClosure_is_least_dependencyClosedRegion](../../../../Geometry/ActiveRegionNamespaced.lean/declarations/activeclosure-is-least-dependencyclosedregion.md) | 94 | `result-track:bb5b23426b69500117d63767c1ab8c8a016a18b4461a47b42b3360faae81d65a` |
-| 6 | `structure` | [Certificate](../../../../Geometry/ActiveRegionNamespaced.lean/declarations/certificate.md) | 128 | `declaration-track:ea820b930780a7117858705f4a3c9d995ec59a2d23f048ffe64e0cd2b2d6c3e6` |
-| 7 | `def` | [Certificate.Accepted](../../../../Geometry/ActiveRegionNamespaced.lean/declarations/certificate-accepted.md) | 134 | `declaration-track:57152e15d8cef2d32ef50835f89eba2ff06c046692d5fe4a6778becd08869ae5` |
-| 8 | `theorem` | [Certificate.rejected_of_stale](../../../../Geometry/ActiveRegionNamespaced.lean/declarations/certificate-rejected-of-stale.md) | 141 | `result-track:1c166a4faef19068f43b6309e2001eee61e79e34dd3eced68e6c8bce7400cee6` |
-| 9 | `structure` | [VersionSensitiveAttention](../../../../Geometry/ActiveRegionNamespaced.lean/declarations/versionsensitiveattention.md) | 153 | `declaration-track:cb57c22afeb5212c420e01ea1ab7afef767bda358413d7fc79b9b00aa4883d57` |
-| 10 | `theorem` | [attention_changes_of_selectedVersion_change](../../../../Geometry/ActiveRegionNamespaced.lean/declarations/attention-changes-of-selectedversion-change.md) | 165 | `result-track:0f0673768f8b27fe4ddf534481f9a838d60bab5d0a81d9a2de4c01e893cf2615` |
+| 1 | `structure` | [ActiveModelRegion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ActiveRegionNamespaced.lean/declarations/activemodelregion.md) | 23 | `declaration-track:a79ed9dff87569cf832c2ea9908ef423fa001d81c6c7e81f44858a4f23337f2a` |
+| 2 | `def` | [ofDependencyClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ActiveRegionNamespaced.lean/declarations/ofdependencyclosure.md) | 43 | `declaration-track:b6ef4ba5b64851b31ca01b1ca39c4f37c0d572407be7ccccb92c4896f1294ecc` |
+| 3 | `theorem` | [selectedVersion_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ActiveRegionNamespaced.lean/declarations/selectedversion-unique.md) | 73 | `result-track:8156f5fe9f064c12113d5740da3e6a37611561a58cbcb7d6db002c59c6577f7a` |
+| 4 | `theorem` | [finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ActiveRegionNamespaced.lean/declarations/finite.md) | 85 | `result-track:2cea1ec69335bfd0ab97f6f7775934c86984ffe17efd2834310a717459103af4` |
+| 5 | `theorem` | [activeClosure_is_least_dependencyClosedRegion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ActiveRegionNamespaced.lean/declarations/activeclosure-is-least-dependencyclosedregion.md) | 94 | `result-track:bb5b23426b69500117d63767c1ab8c8a016a18b4461a47b42b3360faae81d65a` |
+| 6 | `structure` | [Certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ActiveRegionNamespaced.lean/declarations/certificate.md) | 128 | `declaration-track:ea820b930780a7117858705f4a3c9d995ec59a2d23f048ffe64e0cd2b2d6c3e6` |
+| 7 | `def` | [Certificate.Accepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ActiveRegionNamespaced.lean/declarations/certificate-accepted.md) | 134 | `declaration-track:57152e15d8cef2d32ef50835f89eba2ff06c046692d5fe4a6778becd08869ae5` |
+| 8 | `theorem` | [Certificate.rejected_of_stale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ActiveRegionNamespaced.lean/declarations/certificate-rejected-of-stale.md) | 141 | `result-track:1c166a4faef19068f43b6309e2001eee61e79e34dd3eced68e6c8bce7400cee6` |
+| 9 | `structure` | [VersionSensitiveAttention](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ActiveRegionNamespaced.lean/declarations/versionsensitiveattention.md) | 153 | `declaration-track:cb57c22afeb5212c420e01ea1ab7afef767bda358413d7fc79b9b00aa4883d57` |
+| 10 | `theorem` | [attention_changes_of_selectedVersion_change](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ActiveRegionNamespaced.lean/declarations/attention-changes-of-selectedversion-change.md) | 165 | `result-track:0f0673768f8b27fe4ddf534481f9a838d60bab5d0a81d9a2de4c01e893cf2615` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

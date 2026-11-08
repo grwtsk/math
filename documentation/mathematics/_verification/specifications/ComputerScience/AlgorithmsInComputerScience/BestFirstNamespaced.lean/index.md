@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BestFirstNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BestFirstNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BestFirstNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BestFirstNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [wall](../../../../../ComputerScience/AlgorithmsInComputerScience/BestFirstNamespaced.lean/declarations/wall.md) | 20 | `declaration-track:c50c55f83179a29272befb29f59314dd7cd8e56a4e6531b5d1fdccbbf5e0c709` |
-| 2 | `def` | [nbhd](../../../../../ComputerScience/AlgorithmsInComputerScience/BestFirstNamespaced.lean/declarations/nbhd.md) | 23 | `declaration-track:9eff452a5065e3ede89dc59887124b3c767bef6578edbd4acd9d5358b74cff7b` |
-| 3 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/BestFirstNamespaced.lean/declarations/instance.md) | 27 | `declaration-track:80b37716d62958f705727601f346ab6b32438aaf770e9134587b7bd422f476ed` |
+| 1 | `def` | [wall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BestFirstNamespaced.lean/declarations/wall.md) | 20 | `declaration-track:c50c55f83179a29272befb29f59314dd7cd8e56a4e6531b5d1fdccbbf5e0c709` |
+| 2 | `def` | [nbhd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BestFirstNamespaced.lean/declarations/nbhd.md) | 23 | `declaration-track:9eff452a5065e3ede89dc59887124b3c767bef6578edbd4acd9d5358b74cff7b` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BestFirstNamespaced.lean/declarations/instance.md) | 27 | `declaration-track:80b37716d62958f705727601f346ab6b32438aaf770e9134587b7bd422f476ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

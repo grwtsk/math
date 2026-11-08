@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CorrectionAuditNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CorrectionAuditNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrectionAuditNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrectionAuditNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [source_multiplier_lower](../../../../MeasureAndIntegration/CorrectionAuditNamespaced.lean/declarations/source-multiplier-lower.md) | 18 | `result-track:f2132aae023581e62aeec2c7cc120f1493cb7cab3389f1c0c07f48bfce81d643` |
-| 2 | `lemma` | [archimedeanValue_lower_of_mass](../../../../MeasureAndIntegration/CorrectionAuditNamespaced.lean/declarations/archimedeanvalue-lower-of-mass.md) | 26 | `result-track:b765ccbb484fe14ce73ef593dc1acf9833f21db5f3f80d6d816556fb09db802a` |
-| 3 | `lemma` | [first_correction_lower](../../../../MeasureAndIntegration/CorrectionAuditNamespaced.lean/declarations/first-correction-lower.md) | 38 | `result-track:85fce9159ba46213b85f849be682331fa1e8ff3aa8f099d33af15b3b30fb174d` |
-| 4 | `lemma` | [second_correction_lower](../../../../MeasureAndIntegration/CorrectionAuditNamespaced.lean/declarations/second-correction-lower.md) | 63 | `result-track:ea41e7e8b443428b81ff8687a64467ed7db395111625e46d032d9883aa68ade8` |
-| 5 | `lemma` | [correction_lower_of_mass](../../../../MeasureAndIntegration/CorrectionAuditNamespaced.lean/declarations/correction-lower-of-mass.md) | 89 | `result-track:af96ad7f2733a33ee0737d77a4fb9dcb51cdbc032a2044c20c1db450e6eeef33` |
+| 1 | `lemma` | [source_multiplier_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrectionAuditNamespaced.lean/declarations/source-multiplier-lower.md) | 18 | `result-track:f2132aae023581e62aeec2c7cc120f1493cb7cab3389f1c0c07f48bfce81d643` |
+| 2 | `lemma` | [archimedeanValue_lower_of_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrectionAuditNamespaced.lean/declarations/archimedeanvalue-lower-of-mass.md) | 26 | `result-track:b765ccbb484fe14ce73ef593dc1acf9833f21db5f3f80d6d816556fb09db802a` |
+| 3 | `lemma` | [first_correction_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrectionAuditNamespaced.lean/declarations/first-correction-lower.md) | 38 | `result-track:85fce9159ba46213b85f849be682331fa1e8ff3aa8f099d33af15b3b30fb174d` |
+| 4 | `lemma` | [second_correction_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrectionAuditNamespaced.lean/declarations/second-correction-lower.md) | 63 | `result-track:ea41e7e8b443428b81ff8687a64467ed7db395111625e46d032d9883aa68ade8` |
+| 5 | `lemma` | [correction_lower_of_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrectionAuditNamespaced.lean/declarations/correction-lower-of-mass.md) | 89 | `result-track:af96ad7f2733a33ee0737d77a4fb9dcb51cdbc032a2044c20c1db450e6eeef33` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

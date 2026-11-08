@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [leftUnitor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/declarations/leftunitor.md) | 23 | `declaration-track:cd25181b2299a687ac1d9cfc525f9d22734344c541efc78099c3c1ec3f4cb36c` |
-| 2 | `def` | [rightUnitor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/declarations/rightunitor.md) | 29 | `declaration-track:d6beb05f4babd44016f10e09f0be1996f95d025ad5307332d57c7c4297f244a3` |
-| 3 | `def` | [leftInverseUnitor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/declarations/leftinverseunitor.md) | 35 | `declaration-track:64755c36d45b7aa5ed9ab33e060cefab85d0ef91317cf70c0fe647e10e3f053f` |
-| 4 | `def` | [rightInverseUnitor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/declarations/rightinverseunitor.md) | 41 | `declaration-track:62893ee9894e1fd07cfafd3ecc06b75bd61e962b189ba8bd45e4d5cf2f7872b4` |
-| 5 | `def` | [leftUnitorEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/declarations/leftunitorequivalence.md) | 47 | `declaration-track:fda0a843a33920a4a070f8168942e7d3909b0a2b1124b736d63e425663c67ee2` |
-| 6 | `def` | [rightUnitorEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/declarations/rightunitorequivalence.md) | 55 | `declaration-track:f8a6b30d02755772449a92b1208c6fd168f1e0cf0fcb96a42964fc817fa223b9` |
-| 7 | `instance` | [leftUnitor_isEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/declarations/leftunitor-isequivalence.md) | 61 | `declaration-track:acafc9cc943c07c5cef62e6b0112ae4d36395dfc7328c66c80c8cc93b2d74f4b` |
-| 8 | `instance` | [rightUnitor_isEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/declarations/rightunitor-isequivalence.md) | 64 | `declaration-track:a2114b0bdccc30cd1e3ce76f9e6841c94d951a8eff9d8350c0af3de1a8a60e23` |
+| 1 | `def` | [leftUnitor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/declarations/leftunitor.md) | 23 | `declaration-track:cd25181b2299a687ac1d9cfc525f9d22734344c541efc78099c3c1ec3f4cb36c` |
+| 2 | `def` | [rightUnitor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/declarations/rightunitor.md) | 29 | `declaration-track:d6beb05f4babd44016f10e09f0be1996f95d025ad5307332d57c7c4297f244a3` |
+| 3 | `def` | [leftInverseUnitor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/declarations/leftinverseunitor.md) | 35 | `declaration-track:64755c36d45b7aa5ed9ab33e060cefab85d0ef91317cf70c0fe647e10e3f053f` |
+| 4 | `def` | [rightInverseUnitor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/declarations/rightinverseunitor.md) | 41 | `declaration-track:62893ee9894e1fd07cfafd3ecc06b75bd61e962b189ba8bd45e4d5cf2f7872b4` |
+| 5 | `def` | [leftUnitorEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/declarations/leftunitorequivalence.md) | 47 | `declaration-track:fda0a843a33920a4a070f8168942e7d3909b0a2b1124b736d63e425663c67ee2` |
+| 6 | `def` | [rightUnitorEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/declarations/rightunitorequivalence.md) | 55 | `declaration-track:f8a6b30d02755772449a92b1208c6fd168f1e0cf0fcb96a42964fc817fa223b9` |
+| 7 | `instance` | [leftUnitor_isEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/declarations/leftunitor-isequivalence.md) | 61 | `declaration-track:acafc9cc943c07c5cef62e6b0112ae4d36395dfc7328c66c80c8cc93b2d74f4b` |
+| 8 | `instance` | [rightUnitor_isEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsUnitor.lean/declarations/rightunitor-isequivalence.md) | 64 | `declaration-track:a2114b0bdccc30cd1e3ce76f9e6841c94d951a8eff9d8350c0af3de1a8a60e23` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

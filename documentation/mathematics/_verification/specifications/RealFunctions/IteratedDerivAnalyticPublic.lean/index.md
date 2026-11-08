@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/IteratedDerivAnalyticPublic.lean/index.md) · [Full source](../../../../RealFunctions/IteratedDerivAnalyticPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IteratedDerivAnalyticPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IteratedDerivAnalyticPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [iteratedDeriv_mul_pow_sub_of_analytic](../../../../RealFunctions/IteratedDerivAnalyticPublic.lean/declarations/iteratedderiv-mul-pow-sub-of-analytic.md) | 31 | `result-track:f5870c5cb53a201bb95753b868b22c4e82174181509e2e0b2df839fb105001c9` |
+| 1 | `lemma` | [iteratedDeriv_mul_pow_sub_of_analytic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IteratedDerivAnalyticPublic.lean/declarations/iteratedderiv-mul-pow-sub-of-analytic.md) | 31 | `result-track:f5870c5cb53a201bb95753b868b22c4e82174181509e2e0b2df839fb105001c9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

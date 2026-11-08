@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ZsqrtdQuadraticReciprocityAligned.lean/index.md) · [Full source](../../../../NumberTheory/ZsqrtdQuadraticReciprocityAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZsqrtdQuadraticReciprocityAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZsqrtdQuadraticReciprocityAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../NumberTheory/ZsqrtdQuadraticReciprocityAligned.lean/declarations/macro-rules.md) | 26 | `declaration-track:9e2f737a8d83acc299c7cd377bf8d7b806d1f0497f102516525185835039e274` |
-| 2 | `theorem` | [mod_four_eq_three_of_nat_prime_of_prime](../../../../NumberTheory/ZsqrtdQuadraticReciprocityAligned.lean/declarations/mod-four-eq-three-of-nat-prime-of-prime.md) | 34 | `result-track:a59b3df256892850620a3ac92f47e3aa6230cffd6e1ace254f800dc2a6f95f04` |
-| 3 | `theorem` | [prime_of_nat_prime_of_mod_four_eq_three](../../../../NumberTheory/ZsqrtdQuadraticReciprocityAligned.lean/declarations/prime-of-nat-prime-of-mod-four-eq-three.md) | 87 | `result-track:b9ed6f8284b503bbf267eb1ab979909b883af56af879d2ed3f47f8a68f5c373f` |
-| 4 | `theorem` | [prime_iff_mod_four_eq_three_of_nat_prime](../../../../NumberTheory/ZsqrtdQuadraticReciprocityAligned.lean/declarations/prime-iff-mod-four-eq-three-of-nat-prime.md) | 98 | `result-track:3e230bfd875ee286380b8adf0c8932884a42588a5f613800def6f3f6ad36b358` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZsqrtdQuadraticReciprocityAligned.lean/declarations/macro-rules.md) | 26 | `declaration-track:9e2f737a8d83acc299c7cd377bf8d7b806d1f0497f102516525185835039e274` |
+| 2 | `theorem` | [mod_four_eq_three_of_nat_prime_of_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZsqrtdQuadraticReciprocityAligned.lean/declarations/mod-four-eq-three-of-nat-prime-of-prime.md) | 34 | `result-track:a59b3df256892850620a3ac92f47e3aa6230cffd6e1ace254f800dc2a6f95f04` |
+| 3 | `theorem` | [prime_of_nat_prime_of_mod_four_eq_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZsqrtdQuadraticReciprocityAligned.lean/declarations/prime-of-nat-prime-of-mod-four-eq-three.md) | 87 | `result-track:b9ed6f8284b503bbf267eb1ab979909b883af56af879d2ed3f47f8a68f5c373f` |
+| 4 | `theorem` | [prime_iff_mod_four_eq_three_of_nat_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZsqrtdQuadraticReciprocityAligned.lean/declarations/prime-iff-mod-four-eq-three-of-nat-prime.md) | 98 | `result-track:3e230bfd875ee286380b8adf0c8932884a42588a5f613800def6f3f6ad36b358` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

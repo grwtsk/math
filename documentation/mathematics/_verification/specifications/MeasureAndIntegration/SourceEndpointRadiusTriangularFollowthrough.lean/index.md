@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceEndpointRadiusTriangularFollowthrough.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceEndpointRadiusTriangularFollowthrough.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEndpointRadiusTriangularFollowthrough.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEndpointRadiusTriangularFollowthrough.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [strict_upper_of_triangular_upper](../../../../MeasureAndIntegration/SourceEndpointRadiusTriangularFollowthrough.lean/declarations/strict-upper-of-triangular-upper.md) | 21 | `result-track:13f45e57b8499b52a3b323c5259b20f867a2e2d13fc7b456a5314accef7cf335` |
-| 2 | `theorem` | [residual_tail_of_triangular_upper](../../../../MeasureAndIntegration/SourceEndpointRadiusTriangularFollowthrough.lean/declarations/residual-tail-of-triangular-upper.md) | 27 | `result-track:89e469448af145a465d8f3b0b0dcc40f81cbcf9f434f75280d69ebba7acb7393` |
-| 3 | `theorem` | [estimate_of_triangular_upper](../../../../MeasureAndIntegration/SourceEndpointRadiusTriangularFollowthrough.lean/declarations/estimate-of-triangular-upper.md) | 37 | `result-track:bdbe98b4638eefaf0dca22de6dc96003deebb58a29ab1fbaa6865baa09f028ac` |
-| 4 | `def` | [TruncationDiscrepancy](../../../../MeasureAndIntegration/SourceEndpointRadiusTriangularFollowthrough.lean/declarations/truncationdiscrepancy.md) | 47 | `declaration-track:c8533bd84f5475f1c6c371b60a6f67d750180e64375f7dbefc86d922f49a866a` |
-| 5 | `theorem` | [strict_upper_of_truncated_smoothing_upper](../../../../MeasureAndIntegration/SourceEndpointRadiusTriangularFollowthrough.lean/declarations/strict-upper-of-truncated-smoothing-upper.md) | 53 | `result-track:21007269ebc7f553a0f557f791ef921e7089020ccebf0c2e43a4a92f9ab8529a` |
-| 6 | `theorem` | [residual_tail_of_truncated_smoothing_upper](../../../../MeasureAndIntegration/SourceEndpointRadiusTriangularFollowthrough.lean/declarations/residual-tail-of-truncated-smoothing-upper.md) | 65 | `result-track:ef4c12fd7beb4f91d458d5e4196106190e2f305372d1c906815fa4c6c0533634` |
-| 7 | `theorem` | [estimate_of_truncated_smoothing_upper](../../../../MeasureAndIntegration/SourceEndpointRadiusTriangularFollowthrough.lean/declarations/estimate-of-truncated-smoothing-upper.md) | 75 | `result-track:2963f6c964bf00aa9d251a26f37193169cd0350d11b4c40349e30cd6940a3d2c` |
+| 1 | `theorem` | [strict_upper_of_triangular_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEndpointRadiusTriangularFollowthrough.lean/declarations/strict-upper-of-triangular-upper.md) | 21 | `result-track:13f45e57b8499b52a3b323c5259b20f867a2e2d13fc7b456a5314accef7cf335` |
+| 2 | `theorem` | [residual_tail_of_triangular_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEndpointRadiusTriangularFollowthrough.lean/declarations/residual-tail-of-triangular-upper.md) | 27 | `result-track:89e469448af145a465d8f3b0b0dcc40f81cbcf9f434f75280d69ebba7acb7393` |
+| 3 | `theorem` | [estimate_of_triangular_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEndpointRadiusTriangularFollowthrough.lean/declarations/estimate-of-triangular-upper.md) | 37 | `result-track:bdbe98b4638eefaf0dca22de6dc96003deebb58a29ab1fbaa6865baa09f028ac` |
+| 4 | `def` | [TruncationDiscrepancy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEndpointRadiusTriangularFollowthrough.lean/declarations/truncationdiscrepancy.md) | 47 | `declaration-track:c8533bd84f5475f1c6c371b60a6f67d750180e64375f7dbefc86d922f49a866a` |
+| 5 | `theorem` | [strict_upper_of_truncated_smoothing_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEndpointRadiusTriangularFollowthrough.lean/declarations/strict-upper-of-truncated-smoothing-upper.md) | 53 | `result-track:21007269ebc7f553a0f557f791ef921e7089020ccebf0c2e43a4a92f9ab8529a` |
+| 6 | `theorem` | [residual_tail_of_truncated_smoothing_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEndpointRadiusTriangularFollowthrough.lean/declarations/residual-tail-of-truncated-smoothing-upper.md) | 65 | `result-track:ef4c12fd7beb4f91d458d5e4196106190e2f305372d1c906815fa4c6c0533634` |
+| 7 | `theorem` | [estimate_of_truncated_smoothing_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceEndpointRadiusTriangularFollowthrough.lean/declarations/estimate-of-truncated-smoothing-upper.md) | 75 | `result-track:2963f6c964bf00aa9d251a26f37193169cd0350d11b4c40349e30cd6940a3d2c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

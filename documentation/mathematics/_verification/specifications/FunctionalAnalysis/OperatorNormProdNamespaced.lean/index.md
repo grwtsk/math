@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/OperatorNormProdNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/OperatorNormProdNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormProdNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormProdNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [norm_fst_le](../../../../FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/norm-fst-le.md) | 39 | `result-track:6d1c34704cf5d405a95605ddb65589b3c0187b6314919f53c1493e4436cb057d` |
-| 2 | `lemma` | [norm_snd_le](../../../../FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/norm-snd-le.md) | 44 | `result-track:e8098c3e18a1bd6cb0387fdf0515bfd2b8642e31359853d9d7865ea934c63804` |
-| 3 | `theorem` | [opNorm_prod](../../../../FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/opnorm-prod.md) | 52 | `result-track:d81437b24613fa0ce8be410a4928c276a6c27bbc23f6a98e8456343474d3d088` |
-| 4 | `theorem` | [opNNNorm_prod](../../../../FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/opnnnorm-prod.md) | 65 | `result-track:2203397ea65f1025b024c6fdb358ced88346f076ea7f88b7540d2adf615d6b0f` |
-| 5 | `def` | [prodₗᵢ](../../../../FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/prod.md) | 70 | `declaration-track:47e6aec0e14df6d41806309652d7fa5a4c1f726e3c31dd7e9b2a18f40882fe4f` |
-| 6 | `def` | [prodMapL](../../../../FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/prodmapl.md) | 89 | `declaration-track:176cd81f874bac399b9576b970f7bce3700d124f2c56e9b21230dca962b04ff9` |
-| 7 | `theorem` | [prodMapL_apply](../../../../FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/prodmapl-apply.md) | 114 | `result-track:8112026bea0b9b4b7c0a4ff3440e80cbdbf8839acfe1e29bc8f4af66ec6bc792` |
-| 8 | `theorem` | [Operator Norm Prod Namespaced](../../../../FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/prod-mapl-source-line-120-occurrence-2.md) | 120 | `result-track:47d48da6655860b55e36a88727ba75737f2494fe4cd44882d5562fcafe320cec` |
-| 9 | `theorem` | [Operator Norm Prod Namespaced](../../../../FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/prod-map-equivl.md) | 124 | `result-track:038686fc81a5e2952e25998ba7fd6e4a8fbad45b78bd52804cc7fc9e9cc2fd54` |
-| 10 | `theorem` | [Operator Norm Prod Namespaced](../../../../FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/prod-mapl.md) | 129 | `result-track:45db02e5b3388c5ef97096f7803e6b153d5fd7ae3460921a9836fa246924558c` |
-| 11 | `theorem` | [Operator Norm Prod Namespaced](../../../../FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/prod-map-equivl-source-line-134-occurrence-2.md) | 134 | `result-track:5406ce6279ad6c2e28b20f9d23f7cc55d0321de7bd98ab233798aa28ab5bc91d` |
-| 12 | `lemma` | [norm_fst](../../../../FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/norm-fst.md) | 155 | `result-track:2ccf4d3edc7b4b95a1a19364a5f46bddc6353cd105dcb5489a71903c56cafe93` |
-| 13 | `lemma` | [norm_snd](../../../../FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/norm-snd.md) | 165 | `result-track:1c9cea3a67550b85d06bec83039c561794678dba752caea12772f0891a31b5af` |
+| 1 | `lemma` | [norm_fst_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/norm-fst-le.md) | 39 | `result-track:6d1c34704cf5d405a95605ddb65589b3c0187b6314919f53c1493e4436cb057d` |
+| 2 | `lemma` | [norm_snd_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/norm-snd-le.md) | 44 | `result-track:e8098c3e18a1bd6cb0387fdf0515bfd2b8642e31359853d9d7865ea934c63804` |
+| 3 | `theorem` | [opNorm_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/opnorm-prod.md) | 52 | `result-track:d81437b24613fa0ce8be410a4928c276a6c27bbc23f6a98e8456343474d3d088` |
+| 4 | `theorem` | [opNNNorm_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/opnnnorm-prod.md) | 65 | `result-track:2203397ea65f1025b024c6fdb358ced88346f076ea7f88b7540d2adf615d6b0f` |
+| 5 | `def` | [prodₗᵢ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/prod.md) | 70 | `declaration-track:47e6aec0e14df6d41806309652d7fa5a4c1f726e3c31dd7e9b2a18f40882fe4f` |
+| 6 | `def` | [prodMapL](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/prodmapl.md) | 89 | `declaration-track:176cd81f874bac399b9576b970f7bce3700d124f2c56e9b21230dca962b04ff9` |
+| 7 | `theorem` | [prodMapL_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/prodmapl-apply.md) | 114 | `result-track:8112026bea0b9b4b7c0a4ff3440e80cbdbf8839acfe1e29bc8f4af66ec6bc792` |
+| 8 | `theorem` | [Operator Norm Prod Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/prod-mapl-source-line-120-occurrence-2.md) | 120 | `result-track:47d48da6655860b55e36a88727ba75737f2494fe4cd44882d5562fcafe320cec` |
+| 9 | `theorem` | [Operator Norm Prod Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/prod-map-equivl.md) | 124 | `result-track:038686fc81a5e2952e25998ba7fd6e4a8fbad45b78bd52804cc7fc9e9cc2fd54` |
+| 10 | `theorem` | [Operator Norm Prod Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/prod-mapl.md) | 129 | `result-track:45db02e5b3388c5ef97096f7803e6b153d5fd7ae3460921a9836fa246924558c` |
+| 11 | `theorem` | [Operator Norm Prod Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/prod-map-equivl-source-line-134-occurrence-2.md) | 134 | `result-track:5406ce6279ad6c2e28b20f9d23f7cc55d0321de7bd98ab233798aa28ab5bc91d` |
+| 12 | `lemma` | [norm_fst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/norm-fst.md) | 155 | `result-track:2ccf4d3edc7b4b95a1a19364a5f46bddc6353cd105dcb5489a71903c56cafe93` |
+| 13 | `lemma` | [norm_snd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormProdNamespaced.lean/declarations/norm-snd.md) | 165 | `result-track:1c9cea3a67550b85d06bec83039c561794678dba752caea12772f0891a31b5af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

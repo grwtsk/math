@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstructionNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstructionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstructionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstructionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualFirstLogMixedValue](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstructionNamespaced.lean/declarations/actualfirstlogmixedvalue.md) | 27 | `declaration-track:fa81015faa6cfe83311fa514766e96a3388227ff5f9c72653be7c61473b91442` |
-| 2 | `theorem` | [actualFirstLogMixedValue_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstructionNamespaced.lean/declarations/actualfirstlogmixedvalue-lower.md) | 33 | `result-track:001d052f289d04b21cb24b536faa31df5431530ff4b38d286ec415030777e70d` |
-| 3 | `theorem` | [actualFirstLogMixedValue_fourth_power_failure](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstructionNamespaced.lean/declarations/actualfirstlogmixedvalue-fourth-power-failure.md) | 45 | `result-track:5e4292ccd76398ab2f8fe9e0e90029ad9e837cbc6697954312c3c43105d427a9` |
-| 4 | `theorem` | [actualFirstLogMixedValue_not_uniform_fourth_power](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstructionNamespaced.lean/declarations/actualfirstlogmixedvalue-not-uniform-fourth-power.md) | 64 | `result-track:d5b65e9d707bae7ebe2878679aec1f55da47008448110dfdcae5ae812a2431bc` |
+| 1 | `def` | [actualFirstLogMixedValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstructionNamespaced.lean/declarations/actualfirstlogmixedvalue.md) | 27 | `declaration-track:fa81015faa6cfe83311fa514766e96a3388227ff5f9c72653be7c61473b91442` |
+| 2 | `theorem` | [actualFirstLogMixedValue_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstructionNamespaced.lean/declarations/actualfirstlogmixedvalue-lower.md) | 33 | `result-track:001d052f289d04b21cb24b536faa31df5431530ff4b38d286ec415030777e70d` |
+| 3 | `theorem` | [actualFirstLogMixedValue_fourth_power_failure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstructionNamespaced.lean/declarations/actualfirstlogmixedvalue-fourth-power-failure.md) | 45 | `result-track:5e4292ccd76398ab2f8fe9e0e90029ad9e837cbc6697954312c3c43105d427a9` |
+| 4 | `theorem` | [actualFirstLogMixedValue_not_uniform_fourth_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstructionNamespaced.lean/declarations/actualfirstlogmixedvalue-not-uniform-fourth-power.md) | 64 | `result-track:d5b65e9d707bae7ebe2878679aec1f55da47008448110dfdcae5ae812a2431bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/SumTwoSquares.lean/index.md) · [Full source](../../../../NumberTheory/SumTwoSquares.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumTwoSquares.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumTwoSquares.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Nat.Prime.sq_add_sq](../../../../NumberTheory/SumTwoSquares.lean/declarations/nat-prime-sq-add-sq.md) | 31 | `result-track:ad7b169a5bd40bab8fa59af695d1b2503aa3bf01aa2a065ac395becbaa91f20c` |
-| 2 | `theorem` | [sq_add_sq_mul](../../../../NumberTheory/SumTwoSquares.lean/declarations/sq-add-sq-mul.md) | 47 | `result-track:05eb12a4a531dc9a8014d7649f366b468471a26904c47fbee3570d808c5391a8` |
-| 3 | `theorem` | [Nat.sq_add_sq_mul](../../../../NumberTheory/SumTwoSquares.lean/declarations/nat-sq-add-sq-mul.md) | 52 | `result-track:fdacef63f812db6e9b45add2c1d304fbe2eec6a16e246d76ef5dd5916c52f22a` |
-| 4 | `theorem` | [ZMod.isSquare_neg_one_of_dvd](../../../../NumberTheory/SumTwoSquares.lean/declarations/zmod-issquare-neg-one-of-dvd.md) | 72 | `result-track:369b510bd938352badf83234e5034766b7a390b5309a51962505f00cda86c2f8` |
-| 5 | `theorem` | [ZMod.isSquare_neg_one_mul](../../../../NumberTheory/SumTwoSquares.lean/declarations/zmod-issquare-neg-one-mul.md) | 80 | `result-track:af88f47f710f6e6b7856cd10842dad4a0e3f58b29a2300da7d21a105554cf5a2` |
-| 6 | `theorem` | [Nat.Prime.mod_four_ne_three_of_dvd_isSquare_neg_one](../../../../NumberTheory/SumTwoSquares.lean/declarations/nat-prime-mod-four-ne-three-of-dvd-issquare-neg-one.md) | 91 | `result-track:2dca4f02cb020366b457b56e7f355a97575304511ba57047ef6cfcc782df2faa` |
-| 7 | `theorem` | [ZMod.isSquare_neg_one_iff](../../../../NumberTheory/SumTwoSquares.lean/declarations/zmod-issquare-neg-one-iff-source-edition-2.md) | 100 | `result-track:080033f339a8bf9ffcc5b1aa2c3a081b51d84bae117b90746c1d60ae56c1a579` |
-| 8 | `theorem` | [ZMod.isSquare_neg_one_iff'](../../../../NumberTheory/SumTwoSquares.lean/declarations/zmod-issquare-neg-one-iff.md) | 117 | `result-track:05998b52c146cf2b434379ff4f6e11034983ac5c5f2f9615584b853d52624acf` |
-| 9 | `theorem` | [Nat.eq_sq_add_sq_of_isSquare_mod_neg_one](../../../../NumberTheory/SumTwoSquares.lean/declarations/nat-eq-sq-add-sq-of-issquare-mod-neg-one.md) | 138 | `result-track:b24ed99a7945c9effd779104708415a7807933113ceb47bb6a5b35dd55178029` |
-| 10 | `theorem` | [ZMod.isSquare_neg_one_of_eq_sq_add_sq_of_isCoprime](../../../../NumberTheory/SumTwoSquares.lean/declarations/zmod-issquare-neg-one-of-eq-sq-add-sq-of-iscoprime.md) | 152 | `result-track:f81719285734e00fabb23113a255b6c0b69be2ee1786cee3abf506415c27c9a3` |
-| 11 | `theorem` | [ZMod.isSquare_neg_one_of_eq_sq_add_sq_of_coprime](../../../../NumberTheory/SumTwoSquares.lean/declarations/zmod-issquare-neg-one-of-eq-sq-add-sq-of-coprime.md) | 167 | `result-track:0b4c500c598b8bf93b49821ba995408679e0d53470df1637169c62fd1c551108` |
-| 12 | `theorem` | [Nat.eq_sq_add_sq_iff_eq_sq_mul](../../../../NumberTheory/SumTwoSquares.lean/declarations/nat-eq-sq-add-sq-iff-eq-sq-mul.md) | 174 | `result-track:142ddf79f4b3d44370203c30e7a136949ad63f9b02bc132ad085581cd40148ce` |
-| 13 | `theorem` | [Nat.eq_sq_add_sq_iff](../../../../NumberTheory/SumTwoSquares.lean/declarations/nat-eq-sq-add-sq-iff.md) | 202 | `result-track:1364d08401bf770e984cabb8c2bc83775b0a6c93e028add5e193f1916d6b037a` |
+| 1 | `theorem` | [Nat.Prime.sq_add_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumTwoSquares.lean/declarations/nat-prime-sq-add-sq.md) | 31 | `result-track:ad7b169a5bd40bab8fa59af695d1b2503aa3bf01aa2a065ac395becbaa91f20c` |
+| 2 | `theorem` | [sq_add_sq_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumTwoSquares.lean/declarations/sq-add-sq-mul.md) | 47 | `result-track:05eb12a4a531dc9a8014d7649f366b468471a26904c47fbee3570d808c5391a8` |
+| 3 | `theorem` | [Nat.sq_add_sq_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumTwoSquares.lean/declarations/nat-sq-add-sq-mul.md) | 52 | `result-track:fdacef63f812db6e9b45add2c1d304fbe2eec6a16e246d76ef5dd5916c52f22a` |
+| 4 | `theorem` | [ZMod.isSquare_neg_one_of_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumTwoSquares.lean/declarations/zmod-issquare-neg-one-of-dvd.md) | 72 | `result-track:369b510bd938352badf83234e5034766b7a390b5309a51962505f00cda86c2f8` |
+| 5 | `theorem` | [ZMod.isSquare_neg_one_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumTwoSquares.lean/declarations/zmod-issquare-neg-one-mul.md) | 80 | `result-track:af88f47f710f6e6b7856cd10842dad4a0e3f58b29a2300da7d21a105554cf5a2` |
+| 6 | `theorem` | [Nat.Prime.mod_four_ne_three_of_dvd_isSquare_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumTwoSquares.lean/declarations/nat-prime-mod-four-ne-three-of-dvd-issquare-neg-one.md) | 91 | `result-track:2dca4f02cb020366b457b56e7f355a97575304511ba57047ef6cfcc782df2faa` |
+| 7 | `theorem` | [ZMod.isSquare_neg_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumTwoSquares.lean/declarations/zmod-issquare-neg-one-iff-source-edition-2.md) | 100 | `result-track:080033f339a8bf9ffcc5b1aa2c3a081b51d84bae117b90746c1d60ae56c1a579` |
+| 8 | `theorem` | [ZMod.isSquare_neg_one_iff'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumTwoSquares.lean/declarations/zmod-issquare-neg-one-iff.md) | 117 | `result-track:05998b52c146cf2b434379ff4f6e11034983ac5c5f2f9615584b853d52624acf` |
+| 9 | `theorem` | [Nat.eq_sq_add_sq_of_isSquare_mod_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumTwoSquares.lean/declarations/nat-eq-sq-add-sq-of-issquare-mod-neg-one.md) | 138 | `result-track:b24ed99a7945c9effd779104708415a7807933113ceb47bb6a5b35dd55178029` |
+| 10 | `theorem` | [ZMod.isSquare_neg_one_of_eq_sq_add_sq_of_isCoprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumTwoSquares.lean/declarations/zmod-issquare-neg-one-of-eq-sq-add-sq-of-iscoprime.md) | 152 | `result-track:f81719285734e00fabb23113a255b6c0b69be2ee1786cee3abf506415c27c9a3` |
+| 11 | `theorem` | [ZMod.isSquare_neg_one_of_eq_sq_add_sq_of_coprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumTwoSquares.lean/declarations/zmod-issquare-neg-one-of-eq-sq-add-sq-of-coprime.md) | 167 | `result-track:0b4c500c598b8bf93b49821ba995408679e0d53470df1637169c62fd1c551108` |
+| 12 | `theorem` | [Nat.eq_sq_add_sq_iff_eq_sq_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumTwoSquares.lean/declarations/nat-eq-sq-add-sq-iff-eq-sq-mul.md) | 174 | `result-track:142ddf79f4b3d44370203c30e7a136949ad63f9b02bc132ad085581cd40148ce` |
+| 13 | `theorem` | [Nat.eq_sq_add_sq_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumTwoSquares.lean/declarations/nat-eq-sq-add-sq-iff.md) | 202 | `result-track:1364d08401bf770e984cabb8c2bc83775b0a6c93e028add5e193f1916d6b037a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

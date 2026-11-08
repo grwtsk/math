@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Integers.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Integers.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Integers.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Integers.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [integer](../../../../CommutativeAlgebra/Integers.lean/declarations/integer.md) | 30 | `declaration-track:7252c767899fb6c5fd3972680e84963129a8ca9355e93c4f68b27c6f18cacee9` |
-| 2 | `structure` | [Integers](../../../../CommutativeAlgebra/Integers.lean/declarations/integers.md) | 51 | `declaration-track:e791347bd138bf4d075ad5376c149d093e0d97b49b350796191d8899bab7625e` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/Integers.lean/declarations/instance.md) | 58 | `declaration-track:cb93d952e693123badb48a1509518bbeea731f90d0dcef73f8981380ecf634c2` |
-| 4 | `theorem` | [integer.integers](../../../../CommutativeAlgebra/Integers.lean/declarations/integer-integers.md) | 61 | `result-track:6637058b74133a7cc43adf1a2874e0f4efa5eb357cc484faf1091625737a42ae` |
-| 5 | `theorem` | [one_of_isUnit](../../../../CommutativeAlgebra/Integers.lean/declarations/one-of-isunit.md) | 72 | `result-track:b14523067f9835e50e27db391f5d6ea2fc255c849396bfbb142fe2028e0f8c61` |
-| 6 | `theorem` | [isUnit_of_one](../../../../CommutativeAlgebra/Integers.lean/declarations/isunit-of-one.md) | 80 | `result-track:c2c2e8928a201fd815d807006b52b8b6f3ccc19afe0fef62b2377c6331a18f45` |
-| 7 | `theorem` | [le_of_dvd](../../../../CommutativeAlgebra/Integers.lean/declarations/le-of-dvd.md) | 93 | `result-track:4fa63d32d3e83c7ff947e8cb202331dac0c42644f66ace126fb79cb600411935` |
-| 8 | `theorem` | [dvd_of_le](../../../../CommutativeAlgebra/Integers.lean/declarations/dvd-of-le.md) | 111 | `result-track:431cdcb40df5d368c452fd9d0073031e120810f8333a2abbb76c9ddba0a64520` |
-| 9 | `theorem` | [dvd_iff_le](../../../../CommutativeAlgebra/Integers.lean/declarations/dvd-iff-le.md) | 126 | `result-track:4cd00271da05c19ae8475637286d3f6de9fd214336bb02dcc5d9744a230ef20a` |
-| 10 | `theorem` | [le_iff_dvd](../../../../CommutativeAlgebra/Integers.lean/declarations/le-iff-dvd.md) | 130 | `result-track:e1a76a2f776395c2bf39314beeb8df936cf6392b2b7af503cf2206107ce0019f` |
+| 1 | `def` | [integer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Integers.lean/declarations/integer.md) | 30 | `declaration-track:7252c767899fb6c5fd3972680e84963129a8ca9355e93c4f68b27c6f18cacee9` |
+| 2 | `structure` | [Integers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Integers.lean/declarations/integers.md) | 51 | `declaration-track:e791347bd138bf4d075ad5376c149d093e0d97b49b350796191d8899bab7625e` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Integers.lean/declarations/instance.md) | 58 | `declaration-track:cb93d952e693123badb48a1509518bbeea731f90d0dcef73f8981380ecf634c2` |
+| 4 | `theorem` | [integer.integers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Integers.lean/declarations/integer-integers.md) | 61 | `result-track:6637058b74133a7cc43adf1a2874e0f4efa5eb357cc484faf1091625737a42ae` |
+| 5 | `theorem` | [one_of_isUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Integers.lean/declarations/one-of-isunit.md) | 72 | `result-track:b14523067f9835e50e27db391f5d6ea2fc255c849396bfbb142fe2028e0f8c61` |
+| 6 | `theorem` | [isUnit_of_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Integers.lean/declarations/isunit-of-one.md) | 80 | `result-track:c2c2e8928a201fd815d807006b52b8b6f3ccc19afe0fef62b2377c6331a18f45` |
+| 7 | `theorem` | [le_of_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Integers.lean/declarations/le-of-dvd.md) | 93 | `result-track:4fa63d32d3e83c7ff947e8cb202331dac0c42644f66ace126fb79cb600411935` |
+| 8 | `theorem` | [dvd_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Integers.lean/declarations/dvd-of-le.md) | 111 | `result-track:431cdcb40df5d368c452fd9d0073031e120810f8333a2abbb76c9ddba0a64520` |
+| 9 | `theorem` | [dvd_iff_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Integers.lean/declarations/dvd-iff-le.md) | 126 | `result-track:4cd00271da05c19ae8475637286d3f6de9fd214336bb02dcc5d9744a230ef20a` |
+| 10 | `theorem` | [le_iff_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Integers.lean/declarations/le-iff-dvd.md) | 130 | `result-track:e1a76a2f776395c2bf39314beeb8df936cf6392b2b7af503cf2206107ce0019f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

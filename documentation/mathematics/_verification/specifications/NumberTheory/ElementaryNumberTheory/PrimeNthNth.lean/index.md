@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nth_prime_zero_eq_two](../../../../../NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/declarations/nth-prime-zero-eq-two.md) | 16 | `result-track:7bae86ee0ea92c309cceba6db5f4fc3e6583d15d6f42e2865708207fe2d48552` |
-| 2 | `theorem` | [nth_prime_one_eq_three](../../../../../NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/declarations/nth-prime-one-eq-three.md) | 19 | `result-track:3fd7598d5bb70f74566154e9729a6f7cbf239b4cede63955f5b22b2d19f4283e` |
-| 3 | `theorem` | [nth_prime_two_eq_five](../../../../../NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/declarations/nth-prime-two-eq-five.md) | 22 | `result-track:9efa4a2c1c1e9df6e8ac41e6585b2000063ac117cd7898bc621364a3da109ce0` |
-| 4 | `theorem` | [nth_prime_three_eq_seven](../../../../../NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/declarations/nth-prime-three-eq-seven.md) | 25 | `result-track:06cc3e8a7816e4ae7fc5d98dd5f3790edd83d489f21fe02bed3a8d6c32aff587` |
-| 5 | `theorem` | [nth_prime_four_eq_eleven](../../../../../NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/declarations/nth-prime-four-eq-eleven.md) | 28 | `result-track:f90706f97bc4887d660f8406696e4b19ba51e8b91ace80ec5734bd9b6a198768` |
+| 1 | `theorem` | [nth_prime_zero_eq_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/declarations/nth-prime-zero-eq-two.md) | 16 | `result-track:7bae86ee0ea92c309cceba6db5f4fc3e6583d15d6f42e2865708207fe2d48552` |
+| 2 | `theorem` | [nth_prime_one_eq_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/declarations/nth-prime-one-eq-three.md) | 19 | `result-track:3fd7598d5bb70f74566154e9729a6f7cbf239b4cede63955f5b22b2d19f4283e` |
+| 3 | `theorem` | [nth_prime_two_eq_five](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/declarations/nth-prime-two-eq-five.md) | 22 | `result-track:9efa4a2c1c1e9df6e8ac41e6585b2000063ac117cd7898bc621364a3da109ce0` |
+| 4 | `theorem` | [nth_prime_three_eq_seven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/declarations/nth-prime-three-eq-seven.md) | 25 | `result-track:06cc3e8a7816e4ae7fc5d98dd5f3790edd83d489f21fe02bed3a8d6c32aff587` |
+| 5 | `theorem` | [nth_prime_four_eq_eleven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/declarations/nth-prime-four-eq-eleven.md) | 28 | `result-track:f90706f97bc4887d660f8406696e4b19ba51e8b91ace80ec5734bd9b6a198768` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

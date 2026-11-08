@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignment.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TensorAlignedUnifiedCandidate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignment.lean/declarations/tensoralignedunifiedcandidate.md) | 17 | `declaration-track:c09f16fef0c2e2f9f4c26fe042f4161a363313e1641ce140b581430892d986f8` |
-| 2 | `theorem` | [TensorAlignedUnifiedCandidate.base_sound](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignment.lean/declarations/tensoralignedunifiedcandidate-base-sound.md) | 27 | `result-track:14e725c0dfc2f6c3061280dc4b643d2f9e54e8d6dcedbc4f165376037432fbae` |
-| 3 | `theorem` | [TensorAlignedUnifiedCandidate.alignment_sound](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignment.lean/declarations/tensoralignedunifiedcandidate-alignment-sound.md) | 36 | `result-track:fb612cc58a02aaa2b3c844cfbea849e4145090df86d89ccea7a8bf396bcc2422` |
+| 1 | `structure` | [TensorAlignedUnifiedCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignment.lean/declarations/tensoralignedunifiedcandidate.md) | 17 | `declaration-track:c09f16fef0c2e2f9f4c26fe042f4161a363313e1641ce140b581430892d986f8` |
+| 2 | `theorem` | [TensorAlignedUnifiedCandidate.base_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignment.lean/declarations/tensoralignedunifiedcandidate-base-sound.md) | 27 | `result-track:14e725c0dfc2f6c3061280dc4b643d2f9e54e8d6dcedbc4f165376037432fbae` |
+| 3 | `theorem` | [TensorAlignedUnifiedCandidate.alignment_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignment.lean/declarations/tensoralignedunifiedcandidate-alignment-sound.md) | 36 | `result-track:fb612cc58a02aaa2b3c844cfbea849e4145090df86d89ccea7a8bf396bcc2422` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

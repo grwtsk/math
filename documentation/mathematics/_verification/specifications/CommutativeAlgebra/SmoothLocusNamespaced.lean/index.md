@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SmoothLocusNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SmoothLocusNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothLocusNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothLocusNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IsSmoothAt](../../../../CommutativeAlgebra/SmoothLocusNamespaced.lean/declarations/issmoothat.md) | 50 | `declaration-track:4bc74a23f53a7ef5f897c467f51a9ac8e6e50d51fcfb40f496e153e5c0d0a195` |
-| 2 | `def` | [smoothLocus](../../../../CommutativeAlgebra/SmoothLocusNamespaced.lean/declarations/smoothlocus.md) | 55 | `declaration-track:95733be73d3208653fbcfb894cea8cf920d2c3b9567a4f49d9db27cc35f494d5` |
-| 3 | `lemma` | [smoothLocus_eq_compl_support_inter](../../../../CommutativeAlgebra/SmoothLocusNamespaced.lean/declarations/smoothlocus-eq-compl-support-inter.md) | 60 | `result-track:f5ade0493f3139f731262ab2191dc3953c2bbbf31860008a552c4904840cec48` |
-| 4 | `lemma` | [basicOpen_subset_smoothLocus_iff](../../../../CommutativeAlgebra/SmoothLocusNamespaced.lean/declarations/basicopen-subset-smoothlocus-iff.md) | 81 | `result-track:06317fe3f6b0ddba2ffc1d21a1cd9a9e8504e6aecbff2d1801e4420deb47d89d` |
-| 5 | `lemma` | [basicOpen_subset_smoothLocus_iff_smooth](../../../../CommutativeAlgebra/SmoothLocusNamespaced.lean/declarations/basicopen-subset-smoothlocus-iff-smooth.md) | 97 | `result-track:9458f4cae0fc510a79841d2aaeb98bca32d196284652b4d8220d8e18550ba787` |
-| 6 | `lemma` | [smoothLocus_eq_univ_iff](../../../../CommutativeAlgebra/SmoothLocusNamespaced.lean/declarations/smoothlocus-eq-univ-iff.md) | 104 | `result-track:776ab00583380cad007eb954c9a430da793bcdf3b6003d6d7c0b58976a5e84ed` |
-| 7 | `lemma` | [smoothLocus_comap_of_isLocalization](../../../../CommutativeAlgebra/SmoothLocusNamespaced.lean/declarations/smoothlocus-comap-of-islocalization.md) | 111 | `result-track:45c32b427549d73b899910df24e7690239c20e35c256426dd608f31f018ebea1` |
-| 8 | `lemma` | [isOpen_smoothLocus](../../../../CommutativeAlgebra/SmoothLocusNamespaced.lean/declarations/isopen-smoothlocus.md) | 124 | `result-track:0d1b4c343417891094f01e62aed903d01c390af306fba274c9ad831d24aed317` |
+| 1 | `abbrev` | [IsSmoothAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothLocusNamespaced.lean/declarations/issmoothat.md) | 50 | `declaration-track:4bc74a23f53a7ef5f897c467f51a9ac8e6e50d51fcfb40f496e153e5c0d0a195` |
+| 2 | `def` | [smoothLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothLocusNamespaced.lean/declarations/smoothlocus.md) | 55 | `declaration-track:95733be73d3208653fbcfb894cea8cf920d2c3b9567a4f49d9db27cc35f494d5` |
+| 3 | `lemma` | [smoothLocus_eq_compl_support_inter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothLocusNamespaced.lean/declarations/smoothlocus-eq-compl-support-inter.md) | 60 | `result-track:f5ade0493f3139f731262ab2191dc3953c2bbbf31860008a552c4904840cec48` |
+| 4 | `lemma` | [basicOpen_subset_smoothLocus_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothLocusNamespaced.lean/declarations/basicopen-subset-smoothlocus-iff.md) | 81 | `result-track:06317fe3f6b0ddba2ffc1d21a1cd9a9e8504e6aecbff2d1801e4420deb47d89d` |
+| 5 | `lemma` | [basicOpen_subset_smoothLocus_iff_smooth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothLocusNamespaced.lean/declarations/basicopen-subset-smoothlocus-iff-smooth.md) | 97 | `result-track:9458f4cae0fc510a79841d2aaeb98bca32d196284652b4d8220d8e18550ba787` |
+| 6 | `lemma` | [smoothLocus_eq_univ_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothLocusNamespaced.lean/declarations/smoothlocus-eq-univ-iff.md) | 104 | `result-track:776ab00583380cad007eb954c9a430da793bcdf3b6003d6d7c0b58976a5e84ed` |
+| 7 | `lemma` | [smoothLocus_comap_of_isLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothLocusNamespaced.lean/declarations/smoothlocus-comap-of-islocalization.md) | 111 | `result-track:45c32b427549d73b899910df24e7690239c20e35c256426dd608f31f018ebea1` |
+| 8 | `lemma` | [isOpen_smoothLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothLocusNamespaced.lean/declarations/isopen-smoothlocus.md) | 124 | `result-track:0d1b4c343417891094f01e62aed903d01c390af306fba274c9ad831d24aed317` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

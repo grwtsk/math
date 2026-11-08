@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/HerglotzRepresentationPublic.lean/index.md) · [Full source](../../../../MeasureAndIntegration/HerglotzRepresentationPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HerglotzRepresentationPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HerglotzRepresentationPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [herglotzIntegrand](../../../../MeasureAndIntegration/HerglotzRepresentationPublic.lean/declarations/herglotzintegrand.md) | 34 | `declaration-track:f35572ede818f8d71d658cc7e8d2b2d50837ce80989dd0ee1e6c1f0d0421c39d` |
-| 2 | `structure` | [Representation](../../../../MeasureAndIntegration/HerglotzRepresentationPublic.lean/declarations/representation.md) | 39 | `declaration-track:4613209a4a477c99205754d82b94a59c0dcf300c5ed37e212d18f2feaa3b3ec6` |
-| 3 | `constant` | [(anonymous)](../../../../MeasureAndIntegration/HerglotzRepresentationPublic.lean/declarations/constant.md) | 40 | `declaration-track:78c5ea572745e819d632ea3a88d0b8481b28799a45ef6f51fa66eaff205f8fd9` |
-| 4 | `def` | [HerglotzRepresentationTheorem](../../../../MeasureAndIntegration/HerglotzRepresentationPublic.lean/declarations/herglotzrepresentationtheorem.md) | 55 | `declaration-track:d55207323554f8b27ec52d75c5f39f586cb6d4ed42a150b287ae7c2f3b391190` |
-| 5 | `def` | [IsPurelyAtomic](../../../../MeasureAndIntegration/HerglotzRepresentationPublic.lean/declarations/ispurelyatomic.md) | 60 | `declaration-track:8ad693ef1277be314eac182723d7ce99a8df8238438e1ba536780f93861b9231` |
-| 6 | `def` | [ConductorThreeAtomsMatchXiDivisor](../../../../MeasureAndIntegration/HerglotzRepresentationPublic.lean/declarations/conductorthreeatomsmatchxidivisor.md) | 70 | `declaration-track:ff3914b6230da660875e05f8757f776adf8021996a60ed35b145293291cc59c2` |
-| 7 | `def` | [ConductorThreeHerglotzAtomTheorem](../../../../MeasureAndIntegration/HerglotzRepresentationPublic.lean/declarations/conductorthreeherglotzatomtheorem.md) | 82 | `declaration-track:716d40be9f010cb2dc629bc5c24729f8526d9e3eeb6ba51216b64eb3907c39a3` |
+| 1 | `def` | [herglotzIntegrand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HerglotzRepresentationPublic.lean/declarations/herglotzintegrand.md) | 34 | `declaration-track:f35572ede818f8d71d658cc7e8d2b2d50837ce80989dd0ee1e6c1f0d0421c39d` |
+| 2 | `structure` | [Representation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HerglotzRepresentationPublic.lean/declarations/representation.md) | 39 | `declaration-track:4613209a4a477c99205754d82b94a59c0dcf300c5ed37e212d18f2feaa3b3ec6` |
+| 3 | `constant` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HerglotzRepresentationPublic.lean/declarations/constant.md) | 40 | `declaration-track:78c5ea572745e819d632ea3a88d0b8481b28799a45ef6f51fa66eaff205f8fd9` |
+| 4 | `def` | [HerglotzRepresentationTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HerglotzRepresentationPublic.lean/declarations/herglotzrepresentationtheorem.md) | 55 | `declaration-track:d55207323554f8b27ec52d75c5f39f586cb6d4ed42a150b287ae7c2f3b391190` |
+| 5 | `def` | [IsPurelyAtomic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HerglotzRepresentationPublic.lean/declarations/ispurelyatomic.md) | 60 | `declaration-track:8ad693ef1277be314eac182723d7ce99a8df8238438e1ba536780f93861b9231` |
+| 6 | `def` | [ConductorThreeAtomsMatchXiDivisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HerglotzRepresentationPublic.lean/declarations/conductorthreeatomsmatchxidivisor.md) | 70 | `declaration-track:ff3914b6230da660875e05f8757f776adf8021996a60ed35b145293291cc59c2` |
+| 7 | `def` | [ConductorThreeHerglotzAtomTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HerglotzRepresentationPublic.lean/declarations/conductorthreeherglotzatomtheorem.md) | 82 | `declaration-track:716d40be9f010cb2dc629bc5c24729f8526d9e3eeb6ba51216b64eb3907c39a3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentity.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BSDRankSurface](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentity.lean/declarations/bsdranksurface.md) | 7 | `declaration-track:77d955d012530730e2d51e012af3e31c17fa8e17ba668c94cba08d1fd1e56b8d` |
-| 2 | `def` | [bsdRankIdentityClaim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentity.lean/declarations/bsdrankidentityclaim.md) | 14 | `declaration-track:0421284821f7b5634e8e1cf6dcf5e40ea42cb01b320fd4dfdd4c959f321b0fcc` |
-| 3 | `def` | [bsdRankIdentityResidue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentity.lean/declarations/bsdrankidentityresidue.md) | 16 | `declaration-track:1259fced523673a96df49961be11d71fff2172e957b8d379221b3a9fea37d2d2` |
-| 4 | `def` | [bsdRankIdentityChecked](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentity.lean/declarations/bsdrankidentitychecked.md) | 25 | `declaration-track:4f4bc8e05a9da4e8e6946bf30a42d7656ed4dca4215ad1d58a7555bfe0344180` |
-| 5 | `theorem` | [bsdRankIdentity_hasResidue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentity.lean/declarations/bsdrankidentity-hasresidue.md) | 29 | `result-track:27d76076f716421dfb60ef6e9709e2cb6f59ea266052410f428876a4a481ebd1` |
+| 1 | `structure` | [BSDRankSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentity.lean/declarations/bsdranksurface.md) | 7 | `declaration-track:77d955d012530730e2d51e012af3e31c17fa8e17ba668c94cba08d1fd1e56b8d` |
+| 2 | `def` | [bsdRankIdentityClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentity.lean/declarations/bsdrankidentityclaim.md) | 14 | `declaration-track:0421284821f7b5634e8e1cf6dcf5e40ea42cb01b320fd4dfdd4c959f321b0fcc` |
+| 3 | `def` | [bsdRankIdentityResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentity.lean/declarations/bsdrankidentityresidue.md) | 16 | `declaration-track:1259fced523673a96df49961be11d71fff2172e957b8d379221b3a9fea37d2d2` |
+| 4 | `def` | [bsdRankIdentityChecked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentity.lean/declarations/bsdrankidentitychecked.md) | 25 | `declaration-track:4f4bc8e05a9da4e8e6946bf30a42d7656ed4dca4215ad1d58a7555bfe0344180` |
+| 5 | `theorem` | [bsdRankIdentity_hasResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentity.lean/declarations/bsdrankidentity-hasresidue.md) | 29 | `result-track:27d76076f716421dfb60ef6e9709e2cb6f59ea266052410f428876a4a481ebd1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

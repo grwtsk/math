@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ContinuousSqrtNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ContinuousSqrtNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousSqrtNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousSqrtNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousSqrtNamespaced.lean/declarations/instance.md) | 29 | `declaration-track:55bb678fd2460f9e97c8d3594967680a822ed22340736a7779513131719d79d2` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousSqrtNamespaced.lean/declarations/instance-source-edition-3.md) | 42 | `declaration-track:c9499313d01af1ac0966d964ceabbd7115254029dd58f3700f26eb4c2c99944e` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousSqrtNamespaced.lean/declarations/instance-source-edition-4.md) | 45 | `declaration-track:fef03211ed0ef1738761122f54cc258ecd436be555149e1c9e83b06ed360aaea` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousSqrtNamespaced.lean/declarations/instance-source-edition-2.md) | 47 | `declaration-track:7083b3ef5790b13f62d81bd3fc86c2f5fa7699ea4cbfd4423e22b1f0951b98e6` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousSqrtNamespaced.lean/declarations/instance.md) | 29 | `declaration-track:55bb678fd2460f9e97c8d3594967680a822ed22340736a7779513131719d79d2` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousSqrtNamespaced.lean/declarations/instance-source-edition-3.md) | 42 | `declaration-track:c9499313d01af1ac0966d964ceabbd7115254029dd58f3700f26eb4c2c99944e` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousSqrtNamespaced.lean/declarations/instance-source-edition-4.md) | 45 | `declaration-track:fef03211ed0ef1738761122f54cc258ecd436be555149e1c9e83b06ed360aaea` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousSqrtNamespaced.lean/declarations/instance-source-edition-2.md) | 47 | `declaration-track:7083b3ef5790b13f62d81bd3fc86c2f5fa7699ea4cbfd4423e22b1f0951b98e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

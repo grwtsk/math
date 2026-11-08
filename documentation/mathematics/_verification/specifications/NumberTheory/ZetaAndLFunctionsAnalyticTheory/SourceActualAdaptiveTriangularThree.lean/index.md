@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThree.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThree.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThree.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThree.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceEndpoint_abs_le_three](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThree.lean/declarations/sourceendpoint-abs-le-three.md) | 20 | `result-track:f19bd548ec7b0c29c9c1a6a0e626bfc5f1ffa368f7a0db5014fd621832c3ebae` |
-| 2 | `theorem` | [residual_upper_of_actualTriangular_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThree.lean/declarations/residual-upper-of-actualtriangular-upper.md) | 25 | `result-track:29f382847c5c1cdd6bbef8f9ed44710fd9a6b177a49bdd799a57ee48b55e124f` |
-| 3 | `theorem` | [residual_tail_of_actualTriangular_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThree.lean/declarations/residual-tail-of-actualtriangular-tail.md) | 39 | `result-track:417952b943e43a1338843ff5201153e26ff982e20f9eebf80943338c2bf1959e` |
-| 4 | `theorem` | [estimate_of_actualTriangular_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThree.lean/declarations/estimate-of-actualtriangular-tail.md) | 50 | `result-track:e0c3bef0f1e3582936eb0c0098d032db9ae9ac050c644f7ac8a63e39f67d6c0e` |
+| 1 | `theorem` | [sourceEndpoint_abs_le_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThree.lean/declarations/sourceendpoint-abs-le-three.md) | 20 | `result-track:f19bd548ec7b0c29c9c1a6a0e626bfc5f1ffa368f7a0db5014fd621832c3ebae` |
+| 2 | `theorem` | [residual_upper_of_actualTriangular_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThree.lean/declarations/residual-upper-of-actualtriangular-upper.md) | 25 | `result-track:29f382847c5c1cdd6bbef8f9ed44710fd9a6b177a49bdd799a57ee48b55e124f` |
+| 3 | `theorem` | [residual_tail_of_actualTriangular_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThree.lean/declarations/residual-tail-of-actualtriangular-tail.md) | 39 | `result-track:417952b943e43a1338843ff5201153e26ff982e20f9eebf80943338c2bf1959e` |
+| 4 | `theorem` | [estimate_of_actualTriangular_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveTriangularThree.lean/declarations/estimate-of-actualtriangular-tail.md) | 50 | `result-track:e0c3bef0f1e3582936eb0c0098d032db9ae9ac050c644f7ac8a63e39f67d6c0e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

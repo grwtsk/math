@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/GeneralitiesInTopology/ListTraverseNamespaced.lean/index.md) · [Full source](../../../../../GeneralTopology/GeneralitiesInTopology/ListTraverseNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/ListTraverseNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/ListTraverseNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sequence_mono](../../../../../GeneralTopology/GeneralitiesInTopology/ListTraverseNamespaced.lean/declarations/sequence-mono.md) | 31 | `result-track:43e6e267fdf2e0399bef14750a9698a98bb1fc0f28626b600e179150f491a2fd` |
-| 2 | `theorem` | [mem_traverse](../../../../../GeneralTopology/GeneralitiesInTopology/ListTraverseNamespaced.lean/declarations/mem-traverse.md) | 35 | `result-track:96c7911acb4bcd990f20f1f8714634712a075f43ac4c02b5084da17059f6246f` |
-| 3 | `theorem` | [mem_traverse_iff](../../../../../GeneralTopology/GeneralitiesInTopology/ListTraverseNamespaced.lean/declarations/mem-traverse-iff.md) | 42 | `result-track:cf63109deac4726b008624004e5b0ce9ac00364dc3b0a116b958509801ae85ea` |
+| 1 | `theorem` | [sequence_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/ListTraverseNamespaced.lean/declarations/sequence-mono.md) | 31 | `result-track:43e6e267fdf2e0399bef14750a9698a98bb1fc0f28626b600e179150f491a2fd` |
+| 2 | `theorem` | [mem_traverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/ListTraverseNamespaced.lean/declarations/mem-traverse.md) | 35 | `result-track:96c7911acb4bcd990f20f1f8714634712a075f43ac4c02b5084da17059f6246f` |
+| 3 | `theorem` | [mem_traverse_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/ListTraverseNamespaced.lean/declarations/mem-traverse-iff.md) | 42 | `result-track:cf63109deac4726b008624004e5b0ce9ac00364dc3b0a116b958509801ae85ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

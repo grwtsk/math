@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPositiveLiftResultsAlternative3.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPositiveLiftResultsAlternative3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPositiveLiftResultsAlternative3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPositiveLiftResultsAlternative3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [iteratedDeriv_evenBasis](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPositiveLiftResultsAlternative3.lean/declarations/iteratedderiv-evenbasis.md) | 17 | `result-track:699c2d92b96b0d2be45471d70f34816b9e5b2df04766b5c128d011640e4a183b` |
-| 2 | `theorem` | [iteratedDeriv_evenBasis_add](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPositiveLiftResultsAlternative3.lean/declarations/iteratedderiv-evenbasis-add.md) | 29 | `result-track:8ee82bc5ef737000e47249679cfb2e707632f864a1534d8be2aa362b82755f70` |
-| 3 | `theorem` | [iteratedDeriv_evenBasis_add_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPositiveLiftResultsAlternative3.lean/declarations/iteratedderiv-evenbasis-add-zero.md) | 49 | `result-track:0c073b85b4781a2fda6e993cba9c605935b05264c1138cc12f4640d9c8c86b0a` |
+| 1 | `theorem` | [iteratedDeriv_evenBasis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPositiveLiftResultsAlternative3.lean/declarations/iteratedderiv-evenbasis.md) | 17 | `result-track:699c2d92b96b0d2be45471d70f34816b9e5b2df04766b5c128d011640e4a183b` |
+| 2 | `theorem` | [iteratedDeriv_evenBasis_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPositiveLiftResultsAlternative3.lean/declarations/iteratedderiv-evenbasis-add.md) | 29 | `result-track:8ee82bc5ef737000e47249679cfb2e707632f864a1534d8be2aa362b82755f70` |
+| 3 | `theorem` | [iteratedDeriv_evenBasis_add_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPositiveLiftResultsAlternative3.lean/declarations/iteratedderiv-evenbasis-add-zero.md) | 49 | `result-track:0c073b85b4781a2fda6e993cba9c605935b05264c1138cc12f4640d9c8c86b0a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

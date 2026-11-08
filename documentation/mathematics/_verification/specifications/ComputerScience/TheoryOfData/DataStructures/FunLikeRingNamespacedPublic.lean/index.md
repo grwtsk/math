@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeRingNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeRingNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeRingNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeRingNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [FunLike.monoidWithZero](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeRingNamespacedPublic.lean/declarations/funlike-monoidwithzero.md) | 39 | `declaration-track:04a3413526309ab192a789717fc1346eaf31ce585391143c0a694a5fd54b1f26` |
-| 2 | `abbrev` | [FunLike.semiring](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeRingNamespacedPublic.lean/declarations/funlike-semiring.md) | 56 | `declaration-track:4e4de49b02685117d82b6bae7f1c6ba1e7155ab82515eb3cacfe3e3bb66790ab` |
-| 3 | `abbrev` | [FunLike.ring](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeRingNamespacedPublic.lean/declarations/funlike-ring.md) | 78 | `declaration-track:3bb93b4956b9f334008efdf782f5009177e927923fa6779917c3f39e39b409b0` |
+| 1 | `abbrev` | [FunLike.monoidWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeRingNamespacedPublic.lean/declarations/funlike-monoidwithzero.md) | 39 | `declaration-track:04a3413526309ab192a789717fc1346eaf31ce585391143c0a694a5fd54b1f26` |
+| 2 | `abbrev` | [FunLike.semiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeRingNamespacedPublic.lean/declarations/funlike-semiring.md) | 56 | `declaration-track:4e4de49b02685117d82b6bae7f1c6ba1e7155ab82515eb3cacfe3e3bb66790ab` |
+| 3 | `abbrev` | [FunLike.ring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeRingNamespacedPublic.lean/declarations/funlike-ring.md) | 78 | `declaration-track:3bb93b4956b9f334008efdf782f5009177e927923fa6779917c3f39e39b409b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicThresholdDualityControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicThresholdDualityControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicThresholdDualityControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicThresholdDualityControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicThresholdDuality`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicThresholdDuality.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicThresholdDuality`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicThresholdDuality.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [concrete_forward_ladder](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicThresholdDualityControls.lean/declarations/concrete-forward-ladder.md) | 14 | `result-track:cef77679913cd5b7620b8e497174a31558c5cfe7d6909d4daa4f306d356d5bb1` |
-| 2 | `theorem` | [seven_eighths_descends_through_three_quarters_to_half](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicThresholdDualityControls.lean/declarations/seven-eighths-descends-through-three-quarters-to-half.md) | 21 | `result-track:0e45d3e45ff54af24a8992fc6c714b7958127e1316939c384476902e6675d1b9` |
-| 3 | `theorem` | [defect_round_trip](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicThresholdDualityControls.lean/declarations/defect-round-trip.md) | 29 | `result-track:81d99b41784e455021b610803a698e4fdecffff629046f516efd6297f46f59b4` |
-| 4 | `def` | [nonimplications](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicThresholdDualityControls.lean/declarations/nonimplications.md) | 35 | `declaration-track:a8e195b1469c9d3f653a7326167bbd3e66a9852e6d29edf92b655f9fc1d1b824` |
+| 1 | `theorem` | [concrete_forward_ladder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicThresholdDualityControls.lean/declarations/concrete-forward-ladder.md) | 14 | `result-track:cef77679913cd5b7620b8e497174a31558c5cfe7d6909d4daa4f306d356d5bb1` |
+| 2 | `theorem` | [seven_eighths_descends_through_three_quarters_to_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicThresholdDualityControls.lean/declarations/seven-eighths-descends-through-three-quarters-to-half.md) | 21 | `result-track:0e45d3e45ff54af24a8992fc6c714b7958127e1316939c384476902e6675d1b9` |
+| 3 | `theorem` | [defect_round_trip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicThresholdDualityControls.lean/declarations/defect-round-trip.md) | 29 | `result-track:81d99b41784e455021b610803a698e4fdecffff629046f516efd6297f46f59b4` |
+| 4 | `def` | [nonimplications](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicThresholdDualityControls.lean/declarations/nonimplications.md) | 35 | `declaration-track:a8e195b1469c9d3f653a7326167bbd3e66a9852e6d29edf92b655f9fc1d1b824` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

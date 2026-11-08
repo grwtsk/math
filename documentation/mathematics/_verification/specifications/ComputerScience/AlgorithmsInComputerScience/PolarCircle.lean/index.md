@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OneDimensionalPolarBase](../../../../../ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/declarations/onedimensionalpolarbase.md) | 7 | `declaration-track:a38ec17734b0ad749c2ff81e95e3be9e17f28172b0643800458d26098ec3e4a2` |
-| 2 | `def` | [mkOneDimensionalPolarBase](../../../../../ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/declarations/mkonedimensionalpolarbase.md) | 34 | `declaration-track:0c665907fd150802e4a92dbcb307816305909eefae41d22b05b47849e490124f` |
-| 3 | `theorem` | [oneDimensional_base_split_symmetric](../../../../../ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/declarations/onedimensional-base-split-symmetric.md) | 63 | `result-track:e2a85a951bc1772e67a8eda780d515f4e503950effead9bbc51d8f9f0108750a` |
-| 4 | `theorem` | [oneDimensional_base_inverse_is_1001](../../../../../ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/declarations/onedimensional-base-inverse-is-1001.md) | 68 | `result-track:d4cdfd7baf83efc74ecd160e1a6f5f90b566d110852f01970d0917a8ad209752` |
-| 5 | `inductive` | [XorNaturalityMode](../../../../../ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/declarations/xornaturalitymode.md) | 73 | `declaration-track:d8dcec7599661a40aafdf5b2ccc6980b3e6e6cc405de36a7a9580e9b99df5859` |
-| 6 | `structure` | [PolarCircleSegment](../../../../../ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/declarations/polarcirclesegment.md) | 81 | `declaration-track:2b796f6a97c16a7c56ea213dc4c4f58e7b2669faf06d2d7b9dea20b3d12d63c7` |
-| 7 | `def` | [mkSplitCircleSegment](../../../../../ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/declarations/mksplitcirclesegment.md) | 94 | `declaration-track:73c3fa686342cdd3cfd1fa1d14628a7225bae0d5c83d91ba83b9ba3bedb2e09f` |
-| 8 | `def` | [mkInverseCircleSegment](../../../../../ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/declarations/mkinversecirclesegment.md) | 114 | `declaration-track:e0824121973fa2a03f47ebf39b7496b3c6f0350e9485bd066334d0a81786e65c` |
+| 1 | `structure` | [OneDimensionalPolarBase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/declarations/onedimensionalpolarbase.md) | 7 | `declaration-track:a38ec17734b0ad749c2ff81e95e3be9e17f28172b0643800458d26098ec3e4a2` |
+| 2 | `def` | [mkOneDimensionalPolarBase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/declarations/mkonedimensionalpolarbase.md) | 34 | `declaration-track:0c665907fd150802e4a92dbcb307816305909eefae41d22b05b47849e490124f` |
+| 3 | `theorem` | [oneDimensional_base_split_symmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/declarations/onedimensional-base-split-symmetric.md) | 63 | `result-track:e2a85a951bc1772e67a8eda780d515f4e503950effead9bbc51d8f9f0108750a` |
+| 4 | `theorem` | [oneDimensional_base_inverse_is_1001](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/declarations/onedimensional-base-inverse-is-1001.md) | 68 | `result-track:d4cdfd7baf83efc74ecd160e1a6f5f90b566d110852f01970d0917a8ad209752` |
+| 5 | `inductive` | [XorNaturalityMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/declarations/xornaturalitymode.md) | 73 | `declaration-track:d8dcec7599661a40aafdf5b2ccc6980b3e6e6cc405de36a7a9580e9b99df5859` |
+| 6 | `structure` | [PolarCircleSegment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/declarations/polarcirclesegment.md) | 81 | `declaration-track:2b796f6a97c16a7c56ea213dc4c4f58e7b2669faf06d2d7b9dea20b3d12d63c7` |
+| 7 | `def` | [mkSplitCircleSegment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/declarations/mksplitcirclesegment.md) | 94 | `declaration-track:73c3fa686342cdd3cfd1fa1d14628a7225bae0d5c83d91ba83b9ba3bedb2e09f` |
+| 8 | `def` | [mkInverseCircleSegment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolarCircle.lean/declarations/mkinversecirclesegment.md) | 114 | `declaration-track:e0824121973fa2a03f47ebf39b7496b3c6f0350e9485bd066334d0a81786e65c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AF0857248aae73dNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/AF0857248aae73dNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AF0857248aae73dNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AF0857248aae73dNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quadratic_nonnegative](../../../../RealFunctions/AF0857248aae73dNamespaced.lean/declarations/quadratic-nonnegative.md) | 29 | `result-track:e00c87d39f401c3d821db3888fefe8da2b7632bca86da0948c45b41a00f9f5d2` |
+| 1 | `theorem` | [quadratic_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AF0857248aae73dNamespaced.lean/declarations/quadratic-nonnegative.md) | 29 | `result-track:e00c87d39f401c3d821db3888fefe8da2b7632bca86da0948c45b41a00f9f5d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LogPowerTailAttempt02.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LogPowerTailAttempt02.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogPowerTailAttempt02.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogPowerTailAttempt02.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,19 +61,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [logPower](../../../../MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/logpower.md) | 17 | `declaration-track:768927ec888960eb4cf32318c065aee2ecf6b16a135149ecdd9864807825ad4d` |
-| 2 | `def` | [logPowerPrimitive](../../../../MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/logpowerprimitive.md) | 18 | `declaration-track:5b0edacc22072926d9e1995327e9287872bdc2c0d2f50f8f2b86c3627c311a6a` |
-| 3 | `theorem` | [logPower_hasDerivAt](../../../../MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/logpower-hasderivat.md) | 20 | `result-track:a77e4c9393ab32b71cef1a6b161f9204080747f7d1c8b6792f74aa67735d5aa1` |
-| 4 | `theorem` | [primitive_hasDerivAt](../../../../MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/primitive-hasderivat.md) | 30 | `result-track:de049a3f7cd33c91ba6ff2a675f528b6c69445ff3618785ac9f41488391b1514` |
-| 5 | `theorem` | [logPower_nonneg](../../../../MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/logpower-nonneg.md) | 43 | `result-track:c9b79e398b15da80a802bae4daf726460281064df3aee0377504909ae92d1321` |
-| 6 | `theorem` | [logPower_antitone](../../../../MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/logpower-antitone.md) | 47 | `result-track:430c550a3dbe7e5e8ef9a689b79096454068205e1a580946ed35fc984043757d` |
-| 7 | `theorem` | [primitive_tendsto_zero](../../../../MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/primitive-tendsto-zero.md) | 60 | `result-track:2b422224b82754a624bee91450515e5d77fc9a82d27d041ea99631424f6e8a86` |
-| 8 | `theorem` | [logPower_integrable](../../../../MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/logpower-integrable.md) | 74 | `result-track:88303d8a7e2c3d423eb3ab1d2a957a32dacb8523cec62cb2ea1a1c876e4151e8` |
-| 9 | `theorem` | [logPower_integral](../../../../MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/logpower-integral.md) | 79 | `result-track:ead08de9c9a9ed3d6d0ddae70c93790e780dd7b05fb2935d586c437e66edf531` |
-| 10 | `theorem` | [logPower_summable](../../../../MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/logpower-summable.md) | 89 | `result-track:c384410ec0bf45ab65b2758cd4d8156020ea8740876161f1ed815b62a31c5e81` |
-| 11 | `theorem` | [tail_summable](../../../../MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/tail-summable.md) | 93 | `result-track:8b588a6bca0d344d10c1f0d939ed339e1049e428d7a4e817f3c9a25d0be3d38b` |
-| 12 | `theorem` | [tail_le_integral](../../../../MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/tail-le-integral.md) | 97 | `result-track:601e8c2fc65ff3595ee0f7b3b626491f0bf198c2093e432868a001d79eee256b` |
-| 13 | `theorem` | [tail_le_rational](../../../../MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/tail-le-rational.md) | 109 | `result-track:08b8f3a6048e58ada13d639e4f2fb3712082bc61da80d6278819b50bd6f85b1c` |
+| 1 | `def` | [logPower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/logpower.md) | 17 | `declaration-track:768927ec888960eb4cf32318c065aee2ecf6b16a135149ecdd9864807825ad4d` |
+| 2 | `def` | [logPowerPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/logpowerprimitive.md) | 18 | `declaration-track:5b0edacc22072926d9e1995327e9287872bdc2c0d2f50f8f2b86c3627c311a6a` |
+| 3 | `theorem` | [logPower_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/logpower-hasderivat.md) | 20 | `result-track:a77e4c9393ab32b71cef1a6b161f9204080747f7d1c8b6792f74aa67735d5aa1` |
+| 4 | `theorem` | [primitive_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/primitive-hasderivat.md) | 30 | `result-track:de049a3f7cd33c91ba6ff2a675f528b6c69445ff3618785ac9f41488391b1514` |
+| 5 | `theorem` | [logPower_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/logpower-nonneg.md) | 43 | `result-track:c9b79e398b15da80a802bae4daf726460281064df3aee0377504909ae92d1321` |
+| 6 | `theorem` | [logPower_antitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/logpower-antitone.md) | 47 | `result-track:430c550a3dbe7e5e8ef9a689b79096454068205e1a580946ed35fc984043757d` |
+| 7 | `theorem` | [primitive_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/primitive-tendsto-zero.md) | 60 | `result-track:2b422224b82754a624bee91450515e5d77fc9a82d27d041ea99631424f6e8a86` |
+| 8 | `theorem` | [logPower_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/logpower-integrable.md) | 74 | `result-track:88303d8a7e2c3d423eb3ab1d2a957a32dacb8523cec62cb2ea1a1c876e4151e8` |
+| 9 | `theorem` | [logPower_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/logpower-integral.md) | 79 | `result-track:ead08de9c9a9ed3d6d0ddae70c93790e780dd7b05fb2935d586c437e66edf531` |
+| 10 | `theorem` | [logPower_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/logpower-summable.md) | 89 | `result-track:c384410ec0bf45ab65b2758cd4d8156020ea8740876161f1ed815b62a31c5e81` |
+| 11 | `theorem` | [tail_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/tail-summable.md) | 93 | `result-track:8b588a6bca0d344d10c1f0d939ed339e1049e428d7a4e817f3c9a25d0be3d38b` |
+| 12 | `theorem` | [tail_le_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/tail-le-integral.md) | 97 | `result-track:601e8c2fc65ff3595ee0f7b3b626491f0bf198c2093e432868a001d79eee256b` |
+| 13 | `theorem` | [tail_le_rational](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogPowerTailAttempt02.lean/declarations/tail-le-rational.md) | 109 | `result-track:08b8f3a6048e58ada13d639e4f2fb3712082bc61da80d6278819b50bd6f85b1c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

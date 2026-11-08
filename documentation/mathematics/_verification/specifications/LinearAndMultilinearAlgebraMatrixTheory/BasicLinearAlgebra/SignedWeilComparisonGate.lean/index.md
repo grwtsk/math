@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SignedWeilComparisonGate.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SignedWeilComparisonGate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SignedWeilComparisonGate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SignedWeilComparisonGate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.SignedOrientationBridge`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SignedOrientationBridge.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.SignedOrientationBridge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SignedOrientationBridge.lean/index.md) — import line 9; pinned internal source present.
 - `Mathlib.Tactic` — import line 10; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PositiveGramComparison](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SignedWeilComparisonGate.lean/declarations/positivegramcomparison.md) | 35 | `declaration-track:745ca24d1e0d4004b5c014332a604678badbcd39ac32b5b643278f1f256c3d12` |
-| 2 | `theorem` | [negativeWitness_forces_comparisonError](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SignedWeilComparisonGate.lean/declarations/negativewitness-forces-comparisonerror.md) | 46 | `result-track:3d0a7762942ff59c265484c284fc566a3cf6f48bc528c769c30fa075994659c1` |
-| 3 | `theorem` | [positive_of_arbitrarily_small_comparisonError](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SignedWeilComparisonGate.lean/declarations/positive-of-arbitrarily-small-comparisonerror.md) | 60 | `result-track:b2656bded7506878a249aee2716fdebc3ff402ca92419bb0c2046b565f7c6044` |
-| 4 | `theorem` | [signed_not_positive_from_positive_metric](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SignedWeilComparisonGate.lean/declarations/signed-not-positive-from-positive-metric.md) | 78 | `result-track:14cd4fee187689705cfa13a55d83fd3a8d41aedb6339ed9aafe892fb4b22359a` |
-| 5 | `theorem` | [exactSignedPort_has_negativeWitness](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SignedWeilComparisonGate.lean/declarations/exactsignedport-has-negativewitness.md) | 90 | `result-track:a5c90c316f411b4a127b0fe70ab677c43f1cc30099e27b843ed890c601d7929b` |
+| 1 | `structure` | [PositiveGramComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SignedWeilComparisonGate.lean/declarations/positivegramcomparison.md) | 35 | `declaration-track:745ca24d1e0d4004b5c014332a604678badbcd39ac32b5b643278f1f256c3d12` |
+| 2 | `theorem` | [negativeWitness_forces_comparisonError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SignedWeilComparisonGate.lean/declarations/negativewitness-forces-comparisonerror.md) | 46 | `result-track:3d0a7762942ff59c265484c284fc566a3cf6f48bc528c769c30fa075994659c1` |
+| 3 | `theorem` | [positive_of_arbitrarily_small_comparisonError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SignedWeilComparisonGate.lean/declarations/positive-of-arbitrarily-small-comparisonerror.md) | 60 | `result-track:b2656bded7506878a249aee2716fdebc3ff402ca92419bb0c2046b565f7c6044` |
+| 4 | `theorem` | [signed_not_positive_from_positive_metric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SignedWeilComparisonGate.lean/declarations/signed-not-positive-from-positive-metric.md) | 78 | `result-track:14cd4fee187689705cfa13a55d83fd3a8d41aedb6339ed9aafe892fb4b22359a` |
+| 5 | `theorem` | [exactSignedPort_has_negativeWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SignedWeilComparisonGate.lean/declarations/exactsignedport-has-negativewitness.md) | 90 | `result-track:a5c90c316f411b4a127b0fe70ab677c43f1cc30099e27b843ed890c601d7929b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

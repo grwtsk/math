@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResults.lean/index.md) · [Full source](../../../../NumberTheory/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResults.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResults.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResults.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prime_reciprocal_le_abs_weightedMoebius](../../../../NumberTheory/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResults.lean/declarations/prime-reciprocal-le-abs-weightedmoebius.md) | 24 | `result-track:3ee698cfdce3146e82348ab6e65eb6a7a481d59602da94c0da08231d75cbf27d` |
-| 2 | `theorem` | [abs_weightedMoebius_not_summable](../../../../NumberTheory/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResults.lean/declarations/abs-weightedmoebius-not-summable.md) | 43 | `result-track:600edd2a8e5b2d7ed61879e747ac45cca03ad93b1dc06087dcb4d00a78092cad` |
-| 3 | `theorem` | [abs_weightedMoebius_sum_zero_eq](../../../../NumberTheory/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResults.lean/declarations/abs-weightedmoebius-sum-zero-eq.md) | 53 | `result-track:6f84411927195ed04f5e03fb9edf4f2bc22e75eaec566d097e5bdfee12bf292e` |
-| 4 | `theorem` | [absolute_weighted_mobius_mass_unbounded](../../../../NumberTheory/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResults.lean/declarations/absolute-weighted-mobius-mass-unbounded.md) | 69 | `result-track:9bf9f5dc18711216bc55e9d4c49f526305a5c6819c84a831cfc8f698ec238312` |
-| 5 | `theorem` | [absolute_weighted_mobius_mass_not_tail_bounded](../../../../NumberTheory/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResults.lean/declarations/absolute-weighted-mobius-mass-not-tail-bounded.md) | 97 | `result-track:053a519a44ac6a51b72af6bc2df5711afd7c6ecfd111ff9baa6eb534734085e7` |
+| 1 | `theorem` | [prime_reciprocal_le_abs_weightedMoebius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResults.lean/declarations/prime-reciprocal-le-abs-weightedmoebius.md) | 24 | `result-track:3ee698cfdce3146e82348ab6e65eb6a7a481d59602da94c0da08231d75cbf27d` |
+| 2 | `theorem` | [abs_weightedMoebius_not_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResults.lean/declarations/abs-weightedmoebius-not-summable.md) | 43 | `result-track:600edd2a8e5b2d7ed61879e747ac45cca03ad93b1dc06087dcb4d00a78092cad` |
+| 3 | `theorem` | [abs_weightedMoebius_sum_zero_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResults.lean/declarations/abs-weightedmoebius-sum-zero-eq.md) | 53 | `result-track:6f84411927195ed04f5e03fb9edf4f2bc22e75eaec566d097e5bdfee12bf292e` |
+| 4 | `theorem` | [absolute_weighted_mobius_mass_unbounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResults.lean/declarations/absolute-weighted-mobius-mass-unbounded.md) | 69 | `result-track:9bf9f5dc18711216bc55e9d4c49f526305a5c6819c84a831cfc8f698ec238312` |
+| 5 | `theorem` | [absolute_weighted_mobius_mass_not_tail_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResults.lean/declarations/absolute-weighted-mobius-mass-not-tail-bounded.md) | 97 | `result-track:053a519a44ac6a51b72af6bc2df5711afd7c6ecfd111ff9baa6eb534734085e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremCreation.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremCreation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremCreation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremCreation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TheoremCreationRequest](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremCreation.lean/declarations/theoremcreationrequest.md) | 7 | `declaration-track:dcfacded12cf3076b94dc5fb0cd0ba222068f6377ea887666e030c04bad965c6` |
-| 2 | `theorem` | [theoremCreationRequest_boundary_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremCreation.lean/declarations/theoremcreationrequest-boundary-visible.md) | 14 | `result-track:83b58ab01d6488940de6a8543e829e56e4520f9127d5ace6f92ee4aafeb503e6` |
+| 1 | `structure` | [TheoremCreationRequest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremCreation.lean/declarations/theoremcreationrequest.md) | 7 | `declaration-track:dcfacded12cf3076b94dc5fb0cd0ba222068f6377ea887666e030c04bad965c6` |
+| 2 | `theorem` | [theoremCreationRequest_boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremCreation.lean/declarations/theoremcreationrequest-boundary-visible.md) | 14 | `result-track:83b58ab01d6488940de6a8543e829e56e4520f9127d5ace6f92ee4aafeb503e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

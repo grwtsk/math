@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/MinimalNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/MinimalNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MinimalNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MinimalNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_norm_eq_iInf_of_complete_convex](../../../../FunctionalAnalysis/MinimalNamespacedPublic.lean/declarations/exists-norm-eq-iinf-of-complete-convex.md) | 44 | `result-track:35747cd06476a71046c83303494321781dcf61b915c5e1301658608929d361cb` |
-| 2 | `theorem` | [norm_eq_iInf_iff_real_inner_le_zero](../../../../FunctionalAnalysis/MinimalNamespacedPublic.lean/declarations/norm-eq-iinf-iff-real-inner-le-zero.md) | 149 | `result-track:d578efa9b76065e19520d5821e622dc7bbefbc6e8847a4baffd5d9448654078f` |
-| 3 | `theorem` | [exists_norm_eq_iInf_of_complete_subspace](../../../../FunctionalAnalysis/MinimalNamespacedPublic.lean/declarations/exists-norm-eq-iinf-of-complete-subspace.md) | 241 | `result-track:bf90f913a7e3392f2b0e42a5e801193435ba9c8f0658e5bae7a37287521f0589` |
-| 4 | `theorem` | [norm_eq_iInf_iff_real_inner_eq_zero](../../../../FunctionalAnalysis/MinimalNamespacedPublic.lean/declarations/norm-eq-iinf-iff-real-inner-eq-zero.md) | 254 | `result-track:3c5fc34171594d3ab74f6239ed9e389f06ad0082cc3f258e6bf146c6078940bc` |
-| 5 | `theorem` | [norm_eq_iInf_iff_inner_eq_zero](../../../../FunctionalAnalysis/MinimalNamespacedPublic.lean/declarations/norm-eq-iinf-iff-inner-eq-zero.md) | 296 | `result-track:d4598be69c3cc3bcd619c29e3ed7849702d0ad113445907c107c536c66b5f6e4` |
+| 1 | `theorem` | [exists_norm_eq_iInf_of_complete_convex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MinimalNamespacedPublic.lean/declarations/exists-norm-eq-iinf-of-complete-convex.md) | 44 | `result-track:35747cd06476a71046c83303494321781dcf61b915c5e1301658608929d361cb` |
+| 2 | `theorem` | [norm_eq_iInf_iff_real_inner_le_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MinimalNamespacedPublic.lean/declarations/norm-eq-iinf-iff-real-inner-le-zero.md) | 149 | `result-track:d578efa9b76065e19520d5821e622dc7bbefbc6e8847a4baffd5d9448654078f` |
+| 3 | `theorem` | [exists_norm_eq_iInf_of_complete_subspace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MinimalNamespacedPublic.lean/declarations/exists-norm-eq-iinf-of-complete-subspace.md) | 241 | `result-track:bf90f913a7e3392f2b0e42a5e801193435ba9c8f0658e5bae7a37287521f0589` |
+| 4 | `theorem` | [norm_eq_iInf_iff_real_inner_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MinimalNamespacedPublic.lean/declarations/norm-eq-iinf-iff-real-inner-eq-zero.md) | 254 | `result-track:3c5fc34171594d3ab74f6239ed9e389f06ad0082cc3f258e6bf146c6078940bc` |
+| 5 | `theorem` | [norm_eq_iInf_iff_inner_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MinimalNamespacedPublic.lean/declarations/norm-eq-iinf-iff-inner-eq-zero.md) | 296 | `result-track:d4598be69c3cc3bcd619c29e3ed7849702d0ad113445907c107c536c66b5f6e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

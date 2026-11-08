@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContinuationQuasiIsomorphismContinuationQuasiIsomorphism.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContinuationQuasiIsomorphismContinuationQuasiIsomorphism.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContinuationQuasiIsomorphismContinuationQuasiIsomorphism.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContinuationQuasiIsomorphismContinuationQuasiIsomorphism.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ContinuationQuasiIsomorphism](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContinuationQuasiIsomorphismContinuationQuasiIsomorphism.lean/declarations/continuationquasiisomorphism.md) | 19 | `declaration-track:1b40d47c6047486b71ecda33a975ec19878d8368e2b60318789ddee4c72dd7e8` |
-| 2 | `theorem` | [continuation_quasi_iso_induces_cohomology_iso](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContinuationQuasiIsomorphismContinuationQuasiIsomorphism.lean/declarations/continuation-quasi-iso-induces-cohomology-iso.md) | 27 | `result-track:4a5b87095c7200b6517839b50aa7077a60b22b1704a1eb9fdd0c0e9bc569f319` |
+| 1 | `structure` | [ContinuationQuasiIsomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContinuationQuasiIsomorphismContinuationQuasiIsomorphism.lean/declarations/continuationquasiisomorphism.md) | 19 | `declaration-track:1b40d47c6047486b71ecda33a975ec19878d8368e2b60318789ddee4c72dd7e8` |
+| 2 | `theorem` | [continuation_quasi_iso_induces_cohomology_iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContinuationQuasiIsomorphismContinuationQuasiIsomorphism.lean/declarations/continuation-quasi-iso-induces-cohomology-iso.md) | 27 | `result-track:4a5b87095c7200b6517839b50aa7077a60b22b1704a1eb9fdd0c0e9bc569f319` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

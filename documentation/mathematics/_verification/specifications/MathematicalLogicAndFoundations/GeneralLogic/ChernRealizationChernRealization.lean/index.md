@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChernRealizationChernRealization.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChernRealizationChernRealization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChernRealizationChernRealization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChernRealizationChernRealization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ChernRealization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChernRealizationChernRealization.lean/declarations/chernrealization.md) | 19 | `declaration-track:0ecfcd72eb8655afff005f0ffaa85d284d97072497e7e05e69f5ca716ef1e120` |
-| 2 | `theorem` | [chern_realization_additive](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChernRealizationChernRealization.lean/declarations/chern-realization-additive.md) | 29 | `result-track:5ca48e61a03d4b5859b3b9276e38e4e621b109985bad53c0bf9324662714a2cc` |
-| 3 | `theorem` | [chern_realization_compatible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChernRealizationChernRealization.lean/declarations/chern-realization-compatible.md) | 36 | `result-track:d9b3110334975472ca3aa9b5402b8c3b9073eaf84707a3de05b4f6223d5c98db` |
+| 1 | `structure` | [ChernRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChernRealizationChernRealization.lean/declarations/chernrealization.md) | 19 | `declaration-track:0ecfcd72eb8655afff005f0ffaa85d284d97072497e7e05e69f5ca716ef1e120` |
+| 2 | `theorem` | [chern_realization_additive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChernRealizationChernRealization.lean/declarations/chern-realization-additive.md) | 29 | `result-track:5ca48e61a03d4b5859b3b9276e38e4e621b109985bad53c0bf9324662714a2cc` |
+| 3 | `theorem` | [chern_realization_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChernRealizationChernRealization.lean/declarations/chern-realization-compatible.md) | 36 | `result-track:d9b3110334975472ca3aa9b5402b8c3b9073eaf84707a3de05b4f6223d5c98db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

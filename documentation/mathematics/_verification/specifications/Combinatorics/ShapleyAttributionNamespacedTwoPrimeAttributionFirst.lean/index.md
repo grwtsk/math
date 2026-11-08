@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ShapleyAttributionNamespacedTwoPrimeAttributionFirst.lean/index.md) · [Full source](../../../../Combinatorics/ShapleyAttributionNamespacedTwoPrimeAttributionFirst.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapleyAttributionNamespacedTwoPrimeAttributionFirst.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapleyAttributionNamespacedTwoPrimeAttributionFirst.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [twoPrimeAttributionFirst](../../../../Combinatorics/ShapleyAttributionNamespacedTwoPrimeAttributionFirst.lean/declarations/twoprimeattributionfirst.md) | 23 | `declaration-track:a5b297cb3ee2cecfb9564cc776ff96064c2b64aefdda91feadf2d5730336b3c9` |
-| 2 | `def` | [twoPrimeAttributionSecond](../../../../Combinatorics/ShapleyAttributionNamespacedTwoPrimeAttributionFirst.lean/declarations/twoprimeattributionsecond.md) | 34 | `declaration-track:41570972eed216a8c83bd5519dd8619af49546d604ff0c4d32d51ccba0d951e7` |
-| 3 | `theorem` | [shapley_attribution_nonnegative](../../../../Combinatorics/ShapleyAttributionNamespacedTwoPrimeAttributionFirst.lean/declarations/shapley-attribution-nonnegative.md) | 45 | `result-track:fe027a6b63ce78e22e761f9e1d5ca9be87aed0cd957973247cccd4455022e300` |
-| 4 | `theorem` | [shapley_attribution_efficiency](../../../../Combinatorics/ShapleyAttributionNamespacedTwoPrimeAttributionFirst.lean/declarations/shapley-attribution-efficiency.md) | 108 | `result-track:5495587c9fd03f17d3969e0d1aa0c6f8ecaeb56a067800a74a0560cc86c4e2fe` |
+| 1 | `def` | [twoPrimeAttributionFirst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapleyAttributionNamespacedTwoPrimeAttributionFirst.lean/declarations/twoprimeattributionfirst.md) | 23 | `declaration-track:a5b297cb3ee2cecfb9564cc776ff96064c2b64aefdda91feadf2d5730336b3c9` |
+| 2 | `def` | [twoPrimeAttributionSecond](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapleyAttributionNamespacedTwoPrimeAttributionFirst.lean/declarations/twoprimeattributionsecond.md) | 34 | `declaration-track:41570972eed216a8c83bd5519dd8619af49546d604ff0c4d32d51ccba0d951e7` |
+| 3 | `theorem` | [shapley_attribution_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapleyAttributionNamespacedTwoPrimeAttributionFirst.lean/declarations/shapley-attribution-nonnegative.md) | 45 | `result-track:fe027a6b63ce78e22e761f9e1d5ca9be87aed0cd957973247cccd4455022e300` |
+| 4 | `theorem` | [shapley_attribution_efficiency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapleyAttributionNamespacedTwoPrimeAttributionFirst.lean/declarations/shapley-attribution-efficiency.md) | 108 | `result-track:5495587c9fd03f17d3969e0d1aa0c6f8ecaeb56a067800a74a0560cc86c4e2fe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

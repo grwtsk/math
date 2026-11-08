@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMassOneReduction.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMassOneReduction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMassOneReduction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMassOneReduction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerSampleNonnegative`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerSampleNonnegative.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerSampleNonnegative`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerSampleNonnegative.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Analysis.Fourier.ZMod` — import line 4; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [PeriodFourXFourierModeOrthogonalityClaim](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMassOneReduction.lean/declarations/periodfourxfouriermodeorthogonalityclaim.md) | 16 | `declaration-track:b40b226da7322d562e66e417a53f15282ce8f4f6cd9f98cfe8d9468002f7dea1` |
-| 2 | `theorem` | [periodFourX_zero_mode_sum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMassOneReduction.lean/declarations/periodfourx-zero-mode-sum.md) | 29 | `result-track:5084fb7d4db7790eb94e05622136846eb42dd04ea6bbe9ff933c48cb61be4d89` |
-| 3 | `theorem` | [fourierModeOrthogonality_to_kernelComplexMass](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMassOneReduction.lean/declarations/fouriermodeorthogonality-to-kernelcomplexmass.md) | 41 | `result-track:0841868f9a5d7b70a1bcffc20b5fa583ee9a778bfca23fd29cd0e8b043403678` |
-| 4 | `theorem` | [fourierModeOrthogonality_to_sampledKernelMassOne](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMassOneReduction.lean/declarations/fouriermodeorthogonality-to-sampledkernelmassone.md) | 91 | `result-track:7a97b1600f9bdfd225cd213b29d9937e5d305518ac38f3fafaa6b709db42c8a1` |
-| 5 | `def` | [PeriodFourXMassOneReducedFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMassOneReduction.lean/declarations/periodfourxmassonereducedfrontier.md) | 120 | `declaration-track:ae98edd702a0a9b2bb3470e6eccbf9aaf6a08a1ca46a957cdb010f300f6870e0` |
+| 1 | `def` | [PeriodFourXFourierModeOrthogonalityClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMassOneReduction.lean/declarations/periodfourxfouriermodeorthogonalityclaim.md) | 16 | `declaration-track:b40b226da7322d562e66e417a53f15282ce8f4f6cd9f98cfe8d9468002f7dea1` |
+| 2 | `theorem` | [periodFourX_zero_mode_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMassOneReduction.lean/declarations/periodfourx-zero-mode-sum.md) | 29 | `result-track:5084fb7d4db7790eb94e05622136846eb42dd04ea6bbe9ff933c48cb61be4d89` |
+| 3 | `theorem` | [fourierModeOrthogonality_to_kernelComplexMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMassOneReduction.lean/declarations/fouriermodeorthogonality-to-kernelcomplexmass.md) | 41 | `result-track:0841868f9a5d7b70a1bcffc20b5fa583ee9a778bfca23fd29cd0e8b043403678` |
+| 4 | `theorem` | [fourierModeOrthogonality_to_sampledKernelMassOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMassOneReduction.lean/declarations/fouriermodeorthogonality-to-sampledkernelmassone.md) | 91 | `result-track:7a97b1600f9bdfd225cd213b29d9937e5d305518ac38f3fafaa6b709db42c8a1` |
+| 5 | `def` | [PeriodFourXMassOneReducedFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMassOneReduction.lean/declarations/periodfourxmassonereducedfrontier.md) | 120 | `declaration-track:ae98edd702a0a9b2bb3470e6eccbf9aaf6a08a1ca46a957cdb010f300f6870e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

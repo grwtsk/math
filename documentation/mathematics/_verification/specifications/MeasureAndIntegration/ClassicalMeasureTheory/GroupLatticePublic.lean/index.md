@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [measurable_oneLePart](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/declarations/measurable-onelepart-source-edition-2.md) | 28 | `result-track:e6366952931d10e11c8fdc295c7c116d44378c520635555fdc51bcdea848b733` |
-| 2 | `theorem` | [Measurable.oneLePart](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/declarations/measurable-onelepart.md) | 32 | `result-track:805eb9373d33025b40e24c25c94d6e0a1b8a73471a336416d49c90e82c75cdac` |
-| 3 | `theorem` | [AEMeasurable.oneLePart](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/declarations/aemeasurable-onelepart.md) | 36 | `result-track:101e05e4b68fb439a2a3de304aa6385cbe3a8a87310a73edf4c013cd5ce4b705` |
-| 4 | `theorem` | [measurable_leOnePart](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/declarations/measurable-leonepart.md) | 42 | `result-track:7b7ba4f0ea33bec4f9e420d2c046711abbd72394e37b5eed7307dea3f27b032a` |
-| 5 | `theorem` | [Measurable.leOnePart](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/declarations/measurable-leonepart-source-edition-2.md) | 46 | `result-track:846de2ac6bda412b390e9d913595c610fb1bf130cae9045289960584aaee32a5` |
-| 6 | `theorem` | [AEMeasurable.leOnePart](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/declarations/aemeasurable-leonepart.md) | 50 | `result-track:75470952a9a06f890665bc30c1515925ea2fc96457399f379a88422a341f1a69` |
-| 7 | `theorem` | [measurable_mabs](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/declarations/measurable-mabs-source-edition-2.md) | 60 | `result-track:7ee1f89327c63e3b39aff59f91f70a256177c9c52de881eca9e504edc62ae8c2` |
-| 8 | `theorem` | [Measurable.mabs](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/declarations/measurable-mabs.md) | 64 | `result-track:0927d0bcb0b0080e05618367d683b97acbc0812c35d95e53f225e26e6dfb7240` |
-| 9 | `theorem` | [AEMeasurable.mabs](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/declarations/aemeasurable-mabs.md) | 68 | `result-track:35e985595f27b5c10cf831746701e8abb9aa4982028a3fac6915cec89094f230` |
+| 1 | `theorem` | [measurable_oneLePart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/declarations/measurable-onelepart-source-edition-2.md) | 28 | `result-track:e6366952931d10e11c8fdc295c7c116d44378c520635555fdc51bcdea848b733` |
+| 2 | `theorem` | [Measurable.oneLePart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/declarations/measurable-onelepart.md) | 32 | `result-track:805eb9373d33025b40e24c25c94d6e0a1b8a73471a336416d49c90e82c75cdac` |
+| 3 | `theorem` | [AEMeasurable.oneLePart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/declarations/aemeasurable-onelepart.md) | 36 | `result-track:101e05e4b68fb439a2a3de304aa6385cbe3a8a87310a73edf4c013cd5ce4b705` |
+| 4 | `theorem` | [measurable_leOnePart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/declarations/measurable-leonepart.md) | 42 | `result-track:7b7ba4f0ea33bec4f9e420d2c046711abbd72394e37b5eed7307dea3f27b032a` |
+| 5 | `theorem` | [Measurable.leOnePart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/declarations/measurable-leonepart-source-edition-2.md) | 46 | `result-track:846de2ac6bda412b390e9d913595c610fb1bf130cae9045289960584aaee32a5` |
+| 6 | `theorem` | [AEMeasurable.leOnePart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/declarations/aemeasurable-leonepart.md) | 50 | `result-track:75470952a9a06f890665bc30c1515925ea2fc96457399f379a88422a341f1a69` |
+| 7 | `theorem` | [measurable_mabs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/declarations/measurable-mabs-source-edition-2.md) | 60 | `result-track:7ee1f89327c63e3b39aff59f91f70a256177c9c52de881eca9e504edc62ae8c2` |
+| 8 | `theorem` | [Measurable.mabs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/declarations/measurable-mabs.md) | 64 | `result-track:0927d0bcb0b0080e05618367d683b97acbc0812c35d95e53f225e26e6dfb7240` |
+| 9 | `theorem` | [AEMeasurable.mabs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GroupLatticePublic.lean/declarations/aemeasurable-mabs.md) | 68 | `result-track:35e985595f27b5c10cf831746701e8abb9aa4982028a3fac6915cec89094f230` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

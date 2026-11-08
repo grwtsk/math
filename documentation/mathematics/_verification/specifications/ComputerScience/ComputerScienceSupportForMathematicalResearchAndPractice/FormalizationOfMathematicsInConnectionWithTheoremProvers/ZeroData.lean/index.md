@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZeroData.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZeroData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZeroData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZeroData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [raw_zeta_zero_has_zero_statement](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZeroData.lean/declarations/raw-zeta-zero-has-zero-statement.md) | 20 | `result-track:86a8b090001d58608a6078c915fdfc49b7b1f961d17da92f58531897107a7df3` |
-| 2 | `theorem` | [raw_zeta_zero_has_nontrivial_statement](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZeroData.lean/declarations/raw-zeta-zero-has-nontrivial-statement.md) | 25 | `result-track:caea83ca2e373fdcab831af131012b9488ce283d0b912fdea8b20645c13efc17` |
-| 3 | `theorem` | [raw_h0_zero_has_zero_statement](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZeroData.lean/declarations/raw-h0-zero-has-zero-statement.md) | 30 | `result-track:7330a8132a1bc1b50a219f140e71a420f58442bc52e9818a5cc8c89c121fdb89` |
+| 1 | `theorem` | [raw_zeta_zero_has_zero_statement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZeroData.lean/declarations/raw-zeta-zero-has-zero-statement.md) | 20 | `result-track:86a8b090001d58608a6078c915fdfc49b7b1f961d17da92f58531897107a7df3` |
+| 2 | `theorem` | [raw_zeta_zero_has_nontrivial_statement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZeroData.lean/declarations/raw-zeta-zero-has-nontrivial-statement.md) | 25 | `result-track:caea83ca2e373fdcab831af131012b9488ce283d0b912fdea8b20645c13efc17` |
+| 3 | `theorem` | [raw_h0_zero_has_zero_statement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZeroData.lean/declarations/raw-h0-zero-has-zero-statement.md) | 30 | `result-track:7330a8132a1bc1b50a219f140e71a420f58442bc52e9818a5cc8c89c121fdb89` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

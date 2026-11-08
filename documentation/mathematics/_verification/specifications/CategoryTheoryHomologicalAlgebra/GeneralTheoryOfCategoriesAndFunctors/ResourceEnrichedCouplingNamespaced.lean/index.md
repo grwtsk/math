@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ResourceEnrichedCouplingNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ResourceEnrichedCouplingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ResourceEnrichedCouplingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ResourceEnrichedCouplingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ResourceCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ResourceEnrichedCouplingNamespaced.lean/declarations/resourcecategory.md) | 24 | `declaration-track:c1a5c9c063c7645dda6c8f625273165778ea8d4cd7ba3243ffb3ccdb7e0be7e7` |
-| 2 | `structure` | [ResourceEnrichedCoupling](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ResourceEnrichedCouplingNamespaced.lean/declarations/resourceenrichedcoupling.md) | 63 | `declaration-track:65c9e39fb36170078e11da129f9bae43304d0f5e53e65847b026e22467571bf1` |
+| 1 | `structure` | [ResourceCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ResourceEnrichedCouplingNamespaced.lean/declarations/resourcecategory.md) | 24 | `declaration-track:c1a5c9c063c7645dda6c8f625273165778ea8d4cd7ba3243ffb3ccdb7e0be7e7` |
+| 2 | `structure` | [ResourceEnrichedCoupling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ResourceEnrichedCouplingNamespaced.lean/declarations/resourceenrichedcoupling.md) | 63 | `declaration-track:65c9e39fb36170078e11da129f9bae43304d0f5e53e65847b026e22467571bf1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

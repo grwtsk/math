@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportNamespacedTransportBridgeLevel.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportNamespacedTransportBridgeLevel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportNamespacedTransportBridgeLevel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportNamespacedTransportBridgeLevel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TransportBridgeLevel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportNamespacedTransportBridgeLevel.lean/declarations/transportbridgelevel.md) | 27 | `declaration-track:62014a18a122a2fc2ecb7d0cd094db11e522366d0a2668d2e6cf3239003942c1` |
-| 2 | `structure` | [AnalyticDerivedTransportModel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportNamespacedTransportBridgeLevel.lean/declarations/analyticderivedtransportmodel.md) | 43 | `declaration-track:4098be41a0af06dc433a66fcf219454ea2f6e06d11a19843f53b98a88ed59443` |
-| 3 | `theorem` | [transport_model_euler_invariant_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportNamespacedTransportBridgeLevel.lean/declarations/transport-model-euler-invariant-if-supplied.md) | 53 | `result-track:42b68bca97b3669ae775f9f3ada4186828b420b430fb9322d9274076b912500c` |
-| 4 | `theorem` | [transport_model_quasi_iso_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportNamespacedTransportBridgeLevel.lean/declarations/transport-model-quasi-iso-if-supplied.md) | 58 | `result-track:aa42b8cb50a98c302d50df50697f782efe57dae06503575a3cb9fd331b8678fa` |
+| 1 | `inductive` | [TransportBridgeLevel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportNamespacedTransportBridgeLevel.lean/declarations/transportbridgelevel.md) | 27 | `declaration-track:62014a18a122a2fc2ecb7d0cd094db11e522366d0a2668d2e6cf3239003942c1` |
+| 2 | `structure` | [AnalyticDerivedTransportModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportNamespacedTransportBridgeLevel.lean/declarations/analyticderivedtransportmodel.md) | 43 | `declaration-track:4098be41a0af06dc433a66fcf219454ea2f6e06d11a19843f53b98a88ed59443` |
+| 3 | `theorem` | [transport_model_euler_invariant_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportNamespacedTransportBridgeLevel.lean/declarations/transport-model-euler-invariant-if-supplied.md) | 53 | `result-track:42b68bca97b3669ae775f9f3ada4186828b420b430fb9322d9274076b912500c` |
+| 4 | `theorem` | [transport_model_quasi_iso_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportNamespacedTransportBridgeLevel.lean/declarations/transport-model-quasi-iso-if-supplied.md) | 58 | `result-track:aa42b8cb50a98c302d50df50697f782efe57dae06503575a3cb9fd331b8678fa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

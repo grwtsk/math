@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/WeakSecondDerivativeUniqueness.lean/index.md) · [Full source](../../../../RealFunctions/WeakSecondDerivativeUniqueness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeakSecondDerivativeUniqueness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeakSecondDerivativeUniqueness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Distribution.CompactProfileDilation`](../../../../MeasureAndIntegration/CompactProfileDilation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Distribution.CompactProfileDilation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileDilation.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [weak_second_derivative_ae_unique](../../../../RealFunctions/WeakSecondDerivativeUniqueness.lean/declarations/weak-second-derivative-ae-unique.md) | 25 | `result-track:e67a0746c12779b568c39ac34aedaad5873ef029964b1c393187a36347632f6b` |
-| 2 | `theorem` | [source_realization_unique](../../../../RealFunctions/WeakSecondDerivativeUniqueness.lean/declarations/source-realization-unique.md) | 34 | `result-track:44b2e65e4e0fd0c0953be955b9cd999de1951d182047cb6ea64cc4b9ad4e641e` |
-| 3 | `theorem` | [realization_second_derivative_ae_eq](../../../../RealFunctions/WeakSecondDerivativeUniqueness.lean/declarations/realization-second-derivative-ae-eq.md) | 39 | `result-track:ce5cacfca8fcf1d5d3576deb80f4e3fc705531bb4b56378cbed93cf0e0c2d5f2` |
+| 1 | `theorem` | [weak_second_derivative_ae_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeakSecondDerivativeUniqueness.lean/declarations/weak-second-derivative-ae-unique.md) | 25 | `result-track:e67a0746c12779b568c39ac34aedaad5873ef029964b1c393187a36347632f6b` |
+| 2 | `theorem` | [source_realization_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeakSecondDerivativeUniqueness.lean/declarations/source-realization-unique.md) | 34 | `result-track:44b2e65e4e0fd0c0953be955b9cd999de1951d182047cb6ea64cc4b9ad4e641e` |
+| 3 | `theorem` | [realization_second_derivative_ae_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeakSecondDerivativeUniqueness.lean/declarations/realization-second-derivative-ae-eq.md) | 39 | `result-track:ce5cacfca8fcf1d5d3576deb80f4e3fc705531bb4b56378cbed93cf0e0c2d5f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ShellFiber.lean/index.md) · [Full source](../../../../Combinatorics/ShellFiber.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellFiber.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellFiber.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ShellFiber](../../../../Combinatorics/ShellFiber.lean/declarations/shellfiber.md) | 22 | `declaration-track:a57ea4c232d67e5d32ee19c43b2be8c516231157f98964c2c7abc7669f4454ae` |
-| 2 | `def` | [zero](../../../../Combinatorics/ShellFiber.lean/declarations/zero.md) | 27 | `declaration-track:428fcf4097db7b3e51b45e3195d4a90a976cc6fa276a7037c0469f556fdf6117` |
-| 3 | `def` | [countOnes](../../../../Combinatorics/ShellFiber.lean/declarations/countones.md) | 30 | `declaration-track:9436797e6055989aeda1d63abcdf1ec4b889ebd5fb3d5479abd826704ee96a5d` |
-| 4 | `theorem` | [ext](../../../../Combinatorics/ShellFiber.lean/declarations/ext.md) | 35 | `result-track:afe65c0314d4b5146b73b07a5e16cd0a480be2d4d3f51ac21f62095e6e5b3de1` |
+| 1 | `structure` | [ShellFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellFiber.lean/declarations/shellfiber.md) | 22 | `declaration-track:a57ea4c232d67e5d32ee19c43b2be8c516231157f98964c2c7abc7669f4454ae` |
+| 2 | `def` | [zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellFiber.lean/declarations/zero.md) | 27 | `declaration-track:428fcf4097db7b3e51b45e3195d4a90a976cc6fa276a7037c0469f556fdf6117` |
+| 3 | `def` | [countOnes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellFiber.lean/declarations/countones.md) | 30 | `declaration-track:9436797e6055989aeda1d63abcdf1ec4b889ebd5fb3d5479abd826704ee96a5d` |
+| 4 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellFiber.lean/declarations/ext.md) | 35 | `result-track:afe65c0314d4b5146b73b07a5e16cd0a480be2d4d3f51ac21f62095e6e5b3de1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TracesChi.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TracesChi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -64,26 +64,26 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [l_le_ell1q](../../../../MeasureAndIntegration/TracesChi.lean/declarations/l-le-ell1q.md) | 47 | `result-track:dbff1ab6caacf4a649f3015e89fa0dc0b9a9b31f1844e2da27c24d12a780e467` |
-| 2 | `structure` | [DataChi](../../../../MeasureAndIntegration/TracesChi.lean/declarations/datachi.md) | 58 | `declaration-track:f48bb5819af464b15dd8945433b1233ef874ee30f39d2bd844ac9cb0c30910e2` |
-| 3 | `structure` | [FactsChi](../../../../MeasureAndIntegration/TracesChi.lean/declarations/factschi.md) | 75 | `declaration-track:77b4721ad1eee6181b67e03d4defbbfb2ae3a60881b0dae7c0fffceb3337b649` |
-| 4 | `theorem` | [tr1_chi](../../../../MeasureAndIntegration/TracesChi.lean/declarations/tr1-chi-source-edition-2.md) | 101 | `result-track:dceb9832dd31ba07884eb367e2a77919c4ff20411864987bb3704bffb1535960` |
-| 5 | `lemma` | [Ncnt_lower_chi](../../../../MeasureAndIntegration/TracesChi.lean/declarations/ncnt-lower-chi.md) | 104 | `result-track:cd764117461a162ab3e35a0380cabc0dd37c251b637688e8c03e844e50fd0a20` |
-| 6 | `lemma` | [T_le_Ncnt_chi](../../../../MeasureAndIntegration/TracesChi.lean/declarations/t-le-ncnt-chi.md) | 121 | `result-track:312edfb789dc3130dae6928faa8cf3f30e25d59a79dd0b2c6b2f229d6eb4beeb` |
-| 7 | `lemma` | [Ncnt_pos_chi](../../../../MeasureAndIntegration/TracesChi.lean/declarations/ncnt-pos-chi.md) | 127 | `result-track:773fabca01e6666c01f2f9a41316d80c00e4908627bf60e41f88968399375d05` |
-| 8 | `theorem` | [tr1'_chi](../../../../MeasureAndIntegration/TracesChi.lean/declarations/tr1-chi.md) | 133 | `result-track:6e9ceea6b22dc6bc792335d6879b328735af2cb525538d6e9ade602722ac59f5` |
-| 9 | `lemma` | [regime_chi](../../../../MeasureAndIntegration/TracesChi.lean/declarations/regime-chi.md) | 170 | `result-track:1b7a16451cf28e80b95af0a655ffccece9071b201ba909dd51128198bca65ab3` |
-| 10 | `theorem` | [tr2_first_chi](../../../../MeasureAndIntegration/TracesChi.lean/declarations/tr2-first-chi.md) | 179 | `result-track:88f250e9e16ed16f4400dbb688918d3df27bf59d5d665cdc075f2b3336c16b89` |
-| 11 | `theorem` | [tr2_chi](../../../../MeasureAndIntegration/TracesChi.lean/declarations/tr2-chi.md) | 217 | `result-track:7767a6995bcd204c8aae1eae6ee38c746efac43a8095598e0443af9a25cbe565` |
-| 12 | `theorem` | [ratio_chi](../../../../MeasureAndIntegration/TracesChi.lean/declarations/ratio-chi.md) | 245 | `result-track:0b487e4eea0540f5b421798ba264093e8d4c8806caeb4754e43b00165438c0c7` |
-| 13 | `theorem` | [tracesBoundsChi_of_factsChi](../../../../MeasureAndIntegration/TracesChi.lean/declarations/tracesboundschi-of-factschi.md) | 281 | `result-track:b1911d303dc18cdcaa898d75e4bedfbc7a064d70c21fec76213489b77afcb17e` |
-| 14 | `lemma` | [GentryChiA_concrete](../../../../MeasureAndIntegration/TracesChi.lean/declarations/gentrychia-concrete.md) | 295 | `result-track:0f970a546b8e61bc690ad5e2d51f89f95fa6ec7b883db07a86de17973768bcc7` |
-| 15 | `lemma` | [trGtChiA_concrete](../../../../MeasureAndIntegration/TracesChi.lean/declarations/trgtchia-concrete.md) | 297 | `result-track:c20f6e74fd2139387476837eb3b3e10f85a54516bf981461ff890f79fe7b4063` |
-| 16 | `lemma` | [trGt2ChiA_concrete](../../../../MeasureAndIntegration/TracesChi.lean/declarations/trgt2chia-concrete.md) | 299 | `result-track:6fa49f6f7caa6907e14862170e840dc0419a175ada0792dd3c770da40bfc6d0b` |
-| 17 | `def` | [concreteDataChi](../../../../MeasureAndIntegration/TracesChi.lean/declarations/concretedatachi.md) | 303 | `declaration-track:5370a4c377e6212038f620eb9ef357f74c902d6799e683d739bdf616da1b4bab` |
-| 18 | `lemma` | [rvm_evBound_chi](../../../../MeasureAndIntegration/TracesChi.lean/declarations/rvm-evbound-chi.md) | 319 | `result-track:bcc86930ec52a7c2ff491f07fe54c4b5ed049c24d53f40d35c7b4f13c0e84237` |
-| 19 | `theorem` | [concreteFactsChi](../../../../MeasureAndIntegration/TracesChi.lean/declarations/concretefactschi.md) | 347 | `result-track:588e634fbc36db9a00360b28e3e3ed35cc2d05631ce7cb4882e289307c2cdbce` |
-| 20 | `theorem` | [thm_traces_chi](../../../../MeasureAndIntegration/TracesChi.lean/declarations/thm-traces-chi.md) | 462 | `result-track:6eef242415350151ce40beb1be3d4f447c933836414e083e388d6d1b6ba0994f` |
+| 1 | `lemma` | [l_le_ell1q](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/l-le-ell1q.md) | 47 | `result-track:dbff1ab6caacf4a649f3015e89fa0dc0b9a9b31f1844e2da27c24d12a780e467` |
+| 2 | `structure` | [DataChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/datachi.md) | 58 | `declaration-track:f48bb5819af464b15dd8945433b1233ef874ee30f39d2bd844ac9cb0c30910e2` |
+| 3 | `structure` | [FactsChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/factschi.md) | 75 | `declaration-track:77b4721ad1eee6181b67e03d4defbbfb2ae3a60881b0dae7c0fffceb3337b649` |
+| 4 | `theorem` | [tr1_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/tr1-chi-source-edition-2.md) | 101 | `result-track:dceb9832dd31ba07884eb367e2a77919c4ff20411864987bb3704bffb1535960` |
+| 5 | `lemma` | [Ncnt_lower_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/ncnt-lower-chi.md) | 104 | `result-track:cd764117461a162ab3e35a0380cabc0dd37c251b637688e8c03e844e50fd0a20` |
+| 6 | `lemma` | [T_le_Ncnt_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/t-le-ncnt-chi.md) | 121 | `result-track:312edfb789dc3130dae6928faa8cf3f30e25d59a79dd0b2c6b2f229d6eb4beeb` |
+| 7 | `lemma` | [Ncnt_pos_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/ncnt-pos-chi.md) | 127 | `result-track:773fabca01e6666c01f2f9a41316d80c00e4908627bf60e41f88968399375d05` |
+| 8 | `theorem` | [tr1'_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/tr1-chi.md) | 133 | `result-track:6e9ceea6b22dc6bc792335d6879b328735af2cb525538d6e9ade602722ac59f5` |
+| 9 | `lemma` | [regime_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/regime-chi.md) | 170 | `result-track:1b7a16451cf28e80b95af0a655ffccece9071b201ba909dd51128198bca65ab3` |
+| 10 | `theorem` | [tr2_first_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/tr2-first-chi.md) | 179 | `result-track:88f250e9e16ed16f4400dbb688918d3df27bf59d5d665cdc075f2b3336c16b89` |
+| 11 | `theorem` | [tr2_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/tr2-chi.md) | 217 | `result-track:7767a6995bcd204c8aae1eae6ee38c746efac43a8095598e0443af9a25cbe565` |
+| 12 | `theorem` | [ratio_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/ratio-chi.md) | 245 | `result-track:0b487e4eea0540f5b421798ba264093e8d4c8806caeb4754e43b00165438c0c7` |
+| 13 | `theorem` | [tracesBoundsChi_of_factsChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/tracesboundschi-of-factschi.md) | 281 | `result-track:b1911d303dc18cdcaa898d75e4bedfbc7a064d70c21fec76213489b77afcb17e` |
+| 14 | `lemma` | [GentryChiA_concrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/gentrychia-concrete.md) | 295 | `result-track:0f970a546b8e61bc690ad5e2d51f89f95fa6ec7b883db07a86de17973768bcc7` |
+| 15 | `lemma` | [trGtChiA_concrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/trgtchia-concrete.md) | 297 | `result-track:c20f6e74fd2139387476837eb3b3e10f85a54516bf981461ff890f79fe7b4063` |
+| 16 | `lemma` | [trGt2ChiA_concrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/trgt2chia-concrete.md) | 299 | `result-track:6fa49f6f7caa6907e14862170e840dc0419a175ada0792dd3c770da40bfc6d0b` |
+| 17 | `def` | [concreteDataChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/concretedatachi.md) | 303 | `declaration-track:5370a4c377e6212038f620eb9ef357f74c902d6799e683d739bdf616da1b4bab` |
+| 18 | `lemma` | [rvm_evBound_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/rvm-evbound-chi.md) | 319 | `result-track:bcc86930ec52a7c2ff491f07fe54c4b5ed049c24d53f40d35c7b4f13c0e84237` |
+| 19 | `theorem` | [concreteFactsChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/concretefactschi.md) | 347 | `result-track:588e634fbc36db9a00360b28e3e3ed35cc2d05631ce7cb4882e289307c2cdbce` |
+| 20 | `theorem` | [thm_traces_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesChi.lean/declarations/thm-traces-chi.md) | 462 | `result-track:6eef242415350151ce40beb1be3d4f447c933836414e083e388d6d1b6ba0994f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

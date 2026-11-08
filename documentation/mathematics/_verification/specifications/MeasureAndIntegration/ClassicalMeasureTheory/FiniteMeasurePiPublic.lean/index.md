@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/declarations/pi.md) | 44 | `declaration-track:e1a11651788b447c6cd83f8b395d886385c3ebf4fa36b29f96f140c2d35ae2a8` |
-| 2 | `lemma` | [toMeasure_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/declarations/tomeasure-pi-source-edition-2.md) | 49 | `result-track:97eab23ab92ffbf67f80f62ea79f542c91278a53e9d3ed76273456c1b6cc2063` |
-| 3 | `lemma` | [pi_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/declarations/pi-pi-source-edition-2.md) | 51 | `result-track:d2fe8a405d3b47f1056259badc0690f16804151b51fb08a46477c68a8acb88fa` |
-| 4 | `lemma` | [mass_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/declarations/mass-pi.md) | 55 | `result-track:895e153823cc6a258cd936afa7861116380c0b1c6fb807c778f73021c94dc439` |
-| 5 | `lemma` | [pi_map_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/declarations/pi-map-pi.md) | 59 | `result-track:d5167ef4d8f28549e99d63da8f5538ff59d1893da8b0c6998da6ae57552cf881` |
-| 6 | `def` | [pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/declarations/pi-source-edition-2.md) | 72 | `declaration-track:fd13c787906336c947c17897a4fc2af4f8d8effc4266cff82282a37e55dd8c25` |
-| 7 | `lemma` | [toMeasure_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/declarations/tomeasure-pi.md) | 77 | `result-track:2092ae20feafde7e2dede110a9ee069919186906f6806640edc844534af568ea` |
-| 8 | `lemma` | [pi_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/declarations/pi-pi.md) | 80 | `result-track:ac33d57cca00beb93fac71f2c274f72b3740eaee2fe0e9e2ca2cb577e5e56227` |
-| 9 | `theorem` | [continuous_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/declarations/continuous-pi.md) | 88 | `result-track:fbc7864eeb84c9d3aafb8a7558b54785e7c68a20e7ad320ea0e1da2b5d725aa1` |
+| 1 | `def` | [pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/declarations/pi.md) | 44 | `declaration-track:e1a11651788b447c6cd83f8b395d886385c3ebf4fa36b29f96f140c2d35ae2a8` |
+| 2 | `lemma` | [toMeasure_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/declarations/tomeasure-pi-source-edition-2.md) | 49 | `result-track:97eab23ab92ffbf67f80f62ea79f542c91278a53e9d3ed76273456c1b6cc2063` |
+| 3 | `lemma` | [pi_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/declarations/pi-pi-source-edition-2.md) | 51 | `result-track:d2fe8a405d3b47f1056259badc0690f16804151b51fb08a46477c68a8acb88fa` |
+| 4 | `lemma` | [mass_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/declarations/mass-pi.md) | 55 | `result-track:895e153823cc6a258cd936afa7861116380c0b1c6fb807c778f73021c94dc439` |
+| 5 | `lemma` | [pi_map_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/declarations/pi-map-pi.md) | 59 | `result-track:d5167ef4d8f28549e99d63da8f5538ff59d1893da8b0c6998da6ae57552cf881` |
+| 6 | `def` | [pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/declarations/pi-source-edition-2.md) | 72 | `declaration-track:fd13c787906336c947c17897a4fc2af4f8d8effc4266cff82282a37e55dd8c25` |
+| 7 | `lemma` | [toMeasure_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/declarations/tomeasure-pi.md) | 77 | `result-track:2092ae20feafde7e2dede110a9ee069919186906f6806640edc844534af568ea` |
+| 8 | `lemma` | [pi_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/declarations/pi-pi.md) | 80 | `result-track:ac33d57cca00beb93fac71f2c274f72b3740eaee2fe0e9e2ca2cb577e5e56227` |
+| 9 | `theorem` | [continuous_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiPublic.lean/declarations/continuous-pi.md) | 88 | `result-track:fbc7864eeb84c9d3aafb8a7558b54785e7c68a20e7ad320ea0e1da2b5d725aa1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

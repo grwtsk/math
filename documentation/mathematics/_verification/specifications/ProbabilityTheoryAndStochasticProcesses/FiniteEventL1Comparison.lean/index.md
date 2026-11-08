@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshBoundaryTriangle`](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshBoundaryTriangle.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshBoundaryTriangle`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshBoundaryTriangle.lean/index.md) — import line 9; pinned internal source present.
 - `Mathlib.Tactic` — import line 10; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteSignedEventMass](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/finitesignedeventmass.md) | 44 | `declaration-track:b06aef17cd70a4b26cfb6557c33df35e41516a82e39c0767cad411ecc24622f1` |
-| 2 | `def` | [finiteSignedEventSup](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/finitesignedeventsup.md) | 49 | `declaration-track:c793dbb2fd0faf5eea48a89b634d5589290420d3f62df534a9b53d27cf42ac99` |
-| 3 | `def` | [finiteEventSign](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/finiteeventsign.md) | 55 | `declaration-track:e4f79ae7a9a29e9fb02387a147d370338007b17c7f4d6353d71ea349adce04f7` |
-| 4 | `theorem` | [finiteEventSign_pairing](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/finiteeventsign-pairing.md) | 60 | `result-track:0fe8549540178d35ccc551a619b2fdb7249e1952bbb0a144c6937ce9e2dfc97d` |
-| 5 | `theorem` | [finiteEventSign_mul_abs](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/finiteeventsign-mul-abs.md) | 83 | `result-track:ba489558d92c9d17430543b287f55652700e116c61f40c2a4399c13101bf95b7` |
-| 6 | `theorem` | [two_mul_abs_finiteSignedEventMass_le](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/two-mul-abs-finitesignedeventmass-le.md) | 90 | `result-track:8624e033fa0592f93ce2f297a6cd1875df9318e0fee0b721d9b00ec9a3cd7e56` |
-| 7 | `def` | [nonnegativeMassEvent](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/nonnegativemassevent.md) | 110 | `declaration-track:b20a0e12e7deb53bc8308403f4e45efa48021b05c42da332022048fd730f145b` |
-| 8 | `theorem` | [nonnegativeMassEvent_sign](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/nonnegativemassevent-sign.md) | 115 | `result-track:bea7f9a5480a0c9dadf8c8c5ed78e9af0eca7984f455ab7a9c13d3fd24d1d7cf` |
-| 9 | `theorem` | [finiteSignedEventSup_eq_half_l1](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/finitesignedeventsup-eq-half-l1.md) | 124 | `result-track:3542a7d88d0141099a66f56de796018598b82af528e2e2779eb6b12ee8c2efd7` |
-| 10 | `def` | [normalizedCategoryDifference](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/normalizedcategorydifference.md) | 168 | `declaration-track:d65071b69d56745c40daf6865cf1eddf8ab042151fe7bc9fb1bec45bd4ae39b8` |
-| 11 | `theorem` | [normalizedCategoryDifference_sum_zero](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/normalizedcategorydifference-sum-zero.md) | 175 | `result-track:d7027a794c6b68c06c1fce1f7ad25fd5af34c98cbf49a568a6531ee3746806ad` |
-| 12 | `def` | [categoricalEventSupTV](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/categoricaleventsuptv.md) | 184 | `declaration-track:850d35ba4c89b58bdb2bc332f1366f46fcd8d036ac05663cf5eda12b28e67568` |
-| 13 | `theorem` | [categoricalEventSupTV_eq_categoricalTotalVariation](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/categoricaleventsuptv-eq-categoricaltotalvariation.md) | 191 | `result-track:6687cfb3a58f12ce01d029a69ca00c1822111daba6a98fd6c9421a908304a02f` |
+| 1 | `def` | [finiteSignedEventMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/finitesignedeventmass.md) | 44 | `declaration-track:b06aef17cd70a4b26cfb6557c33df35e41516a82e39c0767cad411ecc24622f1` |
+| 2 | `def` | [finiteSignedEventSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/finitesignedeventsup.md) | 49 | `declaration-track:c793dbb2fd0faf5eea48a89b634d5589290420d3f62df534a9b53d27cf42ac99` |
+| 3 | `def` | [finiteEventSign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/finiteeventsign.md) | 55 | `declaration-track:e4f79ae7a9a29e9fb02387a147d370338007b17c7f4d6353d71ea349adce04f7` |
+| 4 | `theorem` | [finiteEventSign_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/finiteeventsign-pairing.md) | 60 | `result-track:0fe8549540178d35ccc551a619b2fdb7249e1952bbb0a144c6937ce9e2dfc97d` |
+| 5 | `theorem` | [finiteEventSign_mul_abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/finiteeventsign-mul-abs.md) | 83 | `result-track:ba489558d92c9d17430543b287f55652700e116c61f40c2a4399c13101bf95b7` |
+| 6 | `theorem` | [two_mul_abs_finiteSignedEventMass_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/two-mul-abs-finitesignedeventmass-le.md) | 90 | `result-track:8624e033fa0592f93ce2f297a6cd1875df9318e0fee0b721d9b00ec9a3cd7e56` |
+| 7 | `def` | [nonnegativeMassEvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/nonnegativemassevent.md) | 110 | `declaration-track:b20a0e12e7deb53bc8308403f4e45efa48021b05c42da332022048fd730f145b` |
+| 8 | `theorem` | [nonnegativeMassEvent_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/nonnegativemassevent-sign.md) | 115 | `result-track:bea7f9a5480a0c9dadf8c8c5ed78e9af0eca7984f455ab7a9c13d3fd24d1d7cf` |
+| 9 | `theorem` | [finiteSignedEventSup_eq_half_l1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/finitesignedeventsup-eq-half-l1.md) | 124 | `result-track:3542a7d88d0141099a66f56de796018598b82af528e2e2779eb6b12ee8c2efd7` |
+| 10 | `def` | [normalizedCategoryDifference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/normalizedcategorydifference.md) | 168 | `declaration-track:d65071b69d56745c40daf6865cf1eddf8ab042151fe7bc9fb1bec45bd4ae39b8` |
+| 11 | `theorem` | [normalizedCategoryDifference_sum_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/normalizedcategorydifference-sum-zero.md) | 175 | `result-track:d7027a794c6b68c06c1fce1f7ad25fd5af34c98cbf49a568a6531ee3746806ad` |
+| 12 | `def` | [categoricalEventSupTV](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/categoricaleventsuptv.md) | 184 | `declaration-track:850d35ba4c89b58bdb2bc332f1366f46fcd8d036ac05663cf5eda12b28e67568` |
+| 13 | `theorem` | [categoricalEventSupTV_eq_categoricalTotalVariation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean/declarations/categoricaleventsuptv-eq-categoricaltotalvariation.md) | 191 | `result-track:6687cfb3a58f12ce01d029a69ca00c1822111daba6a98fd6c9421a908304a02f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

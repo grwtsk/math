@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ParacompactNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/ParacompactNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ParacompactNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ParacompactNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/ParacompactNamespacedPublic.lean/declarations/instance.md) | 52 | `declaration-track:40da8ffee55fee548ae629f29a37a0001c964f087d49ffbeabb047a0d6d95596` |
-| 2 | `theorem` | [t4Space](../../../../GeneralTopology/ParacompactNamespacedPublic.lean/declarations/t4space.md) | 176 | `result-track:51177fcf61172d988d759a701da92979e7fca94dc89cc92a48275d1da388bd12` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ParacompactNamespacedPublic.lean/declarations/instance.md) | 52 | `declaration-track:40da8ffee55fee548ae629f29a37a0001c964f087d49ffbeabb047a0d6d95596` |
+| 2 | `theorem` | [t4Space](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ParacompactNamespacedPublic.lean/declarations/t4space.md) | 176 | `result-track:51177fcf61172d988d759a701da92979e7fca94dc89cc92a48275d1da388bd12` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

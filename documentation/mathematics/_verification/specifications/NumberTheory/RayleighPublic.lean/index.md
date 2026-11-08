@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/RayleighPublic.lean/index.md) · [Full source](../../../../NumberTheory/RayleighPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RayleighPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RayleighPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [beattySeq](../../../../NumberTheory/RayleighPublic.lean/declarations/beattyseq-source-edition-2.md) | 53 | `declaration-track:8002c2c67d645a784e6be133cace5544870ef7600f55643f124469baee8914c8` |
-| 2 | `def` | [beattySeq'](../../../../NumberTheory/RayleighPublic.lean/declarations/beattyseq.md) | 57 | `declaration-track:2134f042977e6c19901000e8c6f5d8738bf5ac0f1ad0b28fac236af30749c617` |
-| 3 | `theorem` | [no_collision](../../../../NumberTheory/RayleighPublic.lean/declarations/no-collision.md) | 66 | `result-track:e71e1947290a571eea0e7c8dec429cd08b25f71d0c48ca612902e73337fba253` |
-| 4 | `theorem` | [no_anticollision](../../../../NumberTheory/RayleighPublic.lean/declarations/no-anticollision.md) | 82 | `result-track:0bdbceb257fc049f5ac926b3079691d27e5bb420dec862b37fac7df3f28615fb` |
-| 5 | `theorem` | [hit_or_miss](../../../../NumberTheory/RayleighPublic.lean/declarations/hit-or-miss-source-edition-2.md) | 93 | `result-track:39d52bbce4c9adac2d339e5923bd718295652cd8c909bbf591048957503baa63` |
-| 6 | `theorem` | [hit_or_miss'](../../../../NumberTheory/RayleighPublic.lean/declarations/hit-or-miss.md) | 105 | `result-track:39125b341684a51759dbc7cf57f535cb3fab3abcb6ca4fc07fe8f6e8ff579e0d` |
-| 7 | `theorem` | [compl_beattySeq](../../../../NumberTheory/RayleighPublic.lean/declarations/compl-beattyseq.md) | 120 | `result-track:8a949d56f43779faccc57ac8f1d318ce9d80f03ad8866566740457065ab945f7` |
-| 8 | `theorem` | [compl_beattySeq'](../../../../NumberTheory/RayleighPublic.lean/declarations/compl-beattyseq-source-edition-2.md) | 131 | `result-track:e35e6b9b8d3e670ed48bba4698d82ff045661b3d41f08e151bcd3d7731d3c2cb` |
-| 9 | `theorem` | [beattySeq_symmDiff_beattySeq'_pos](../../../../NumberTheory/RayleighPublic.lean/declarations/beattyseq-symmdiff-beattyseq-pos.md) | 139 | `result-track:6c4cb4aae7c7038b93d6a3c0272da649e745da0ec837fe7079e2d3d86ade5d3c` |
-| 10 | `theorem` | [beattySeq'_symmDiff_beattySeq_pos](../../../../NumberTheory/RayleighPublic.lean/declarations/beattyseq-symmdiff-beattyseq-pos-source-edition-2.md) | 162 | `result-track:9042813f1ae2481b0647f4d9f62e102eada4b9084a8b2ad44e6bf750927f6a78` |
-| 11 | `theorem` | [Irrational.beattySeq'_pos_eq](../../../../NumberTheory/RayleighPublic.lean/declarations/irrational-beattyseq-pos-eq.md) | 167 | `result-track:6f24ebfe252c5a4d9de784972961f6b08b660305d8f1a9330f4822f19a1792d6` |
-| 12 | `theorem` | [Irrational.beattySeq_symmDiff_beattySeq_pos](../../../../NumberTheory/RayleighPublic.lean/declarations/irrational-beattyseq-symmdiff-beattyseq-pos.md) | 177 | `result-track:3005be33c99ee648ab7490ac2cee461cc75d182fd9b9afed39984d1def9dc806` |
+| 1 | `def` | [beattySeq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RayleighPublic.lean/declarations/beattyseq-source-edition-2.md) | 53 | `declaration-track:8002c2c67d645a784e6be133cace5544870ef7600f55643f124469baee8914c8` |
+| 2 | `def` | [beattySeq'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RayleighPublic.lean/declarations/beattyseq.md) | 57 | `declaration-track:2134f042977e6c19901000e8c6f5d8738bf5ac0f1ad0b28fac236af30749c617` |
+| 3 | `theorem` | [no_collision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RayleighPublic.lean/declarations/no-collision.md) | 66 | `result-track:e71e1947290a571eea0e7c8dec429cd08b25f71d0c48ca612902e73337fba253` |
+| 4 | `theorem` | [no_anticollision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RayleighPublic.lean/declarations/no-anticollision.md) | 82 | `result-track:0bdbceb257fc049f5ac926b3079691d27e5bb420dec862b37fac7df3f28615fb` |
+| 5 | `theorem` | [hit_or_miss](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RayleighPublic.lean/declarations/hit-or-miss-source-edition-2.md) | 93 | `result-track:39d52bbce4c9adac2d339e5923bd718295652cd8c909bbf591048957503baa63` |
+| 6 | `theorem` | [hit_or_miss'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RayleighPublic.lean/declarations/hit-or-miss.md) | 105 | `result-track:39125b341684a51759dbc7cf57f535cb3fab3abcb6ca4fc07fe8f6e8ff579e0d` |
+| 7 | `theorem` | [compl_beattySeq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RayleighPublic.lean/declarations/compl-beattyseq.md) | 120 | `result-track:8a949d56f43779faccc57ac8f1d318ce9d80f03ad8866566740457065ab945f7` |
+| 8 | `theorem` | [compl_beattySeq'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RayleighPublic.lean/declarations/compl-beattyseq-source-edition-2.md) | 131 | `result-track:e35e6b9b8d3e670ed48bba4698d82ff045661b3d41f08e151bcd3d7731d3c2cb` |
+| 9 | `theorem` | [beattySeq_symmDiff_beattySeq'_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RayleighPublic.lean/declarations/beattyseq-symmdiff-beattyseq-pos.md) | 139 | `result-track:6c4cb4aae7c7038b93d6a3c0272da649e745da0ec837fe7079e2d3d86ade5d3c` |
+| 10 | `theorem` | [beattySeq'_symmDiff_beattySeq_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RayleighPublic.lean/declarations/beattyseq-symmdiff-beattyseq-pos-source-edition-2.md) | 162 | `result-track:9042813f1ae2481b0647f4d9f62e102eada4b9084a8b2ad44e6bf750927f6a78` |
+| 11 | `theorem` | [Irrational.beattySeq'_pos_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RayleighPublic.lean/declarations/irrational-beattyseq-pos-eq.md) | 167 | `result-track:6f24ebfe252c5a4d9de784972961f6b08b660305d8f1a9330f4822f19a1792d6` |
+| 12 | `theorem` | [Irrational.beattySeq_symmDiff_beattySeq_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RayleighPublic.lean/declarations/irrational-beattyseq-symmdiff-beattyseq-pos.md) | 177 | `result-track:3005be33c99ee648ab7490ac2cee461cc75d182fd9b9afed39984d1def9dc806` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

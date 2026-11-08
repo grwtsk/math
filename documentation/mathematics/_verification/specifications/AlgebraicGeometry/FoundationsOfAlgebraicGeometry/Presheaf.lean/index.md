@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/Presheaf.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/Presheaf.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/Presheaf.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/Presheaf.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ringCatSheaf](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/Presheaf.lean/declarations/ringcatsheaf.md) | 30 | `declaration-track:f01f6420e44455f8835384aa3b6e2e8a0da289f52dce92c6ca34204a7bda6ef8` |
-| 2 | `abbrev` | [PresheafOfModules](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/Presheaf.lean/declarations/presheafofmodules.md) | 34 | `declaration-track:44c73d3f10fe6b8dd8ba5a91f3ebeeea2a08ea1bc52464ee80a3bb1ce5fb0078` |
+| 1 | `abbrev` | [ringCatSheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/Presheaf.lean/declarations/ringcatsheaf.md) | 30 | `declaration-track:f01f6420e44455f8835384aa3b6e2e8a0da289f52dce92c6ca34204a7bda6ef8` |
+| 2 | `abbrev` | [PresheafOfModules](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/Presheaf.lean/declarations/presheafofmodules.md) | 34 | `declaration-track:44c73d3f10fe6b8dd8ba5a91f3ebeeea2a08ea1bc52464ee80a3bb1ce5fb0078` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

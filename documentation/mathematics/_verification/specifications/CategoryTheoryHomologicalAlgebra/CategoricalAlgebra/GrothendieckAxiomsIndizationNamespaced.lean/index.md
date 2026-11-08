@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndizationNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndizationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndizationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndizationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndizationNamespaced.lean/declarations/instance.md) | 36 | `declaration-track:81936527d5ccbe521d2866f21657aa3c6eb5b41b5e63a1c5a06a1d7dde9e8fe4` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndizationNamespaced.lean/declarations/instance-source-edition-2.md) | 40 | `declaration-track:ea305a17aaeea79750ad473a059c7451f4324efefa4288f016a47452db36a927` |
-| 3 | `instance` | [isGrothendieckAbelian_ind](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndizationNamespaced.lean/declarations/isgrothendieckabelian-ind.md) | 49 | `declaration-track:ae2442111d5f4ff86aade1f3d3a49ba1a0ceb21c8109f94cd9bffdb2b0502247` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndizationNamespaced.lean/declarations/instance.md) | 36 | `declaration-track:81936527d5ccbe521d2866f21657aa3c6eb5b41b5e63a1c5a06a1d7dde9e8fe4` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndizationNamespaced.lean/declarations/instance-source-edition-2.md) | 40 | `declaration-track:ea305a17aaeea79750ad473a059c7451f4324efefa4288f016a47452db36a927` |
+| 3 | `instance` | [isGrothendieckAbelian_ind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndizationNamespaced.lean/declarations/isgrothendieckabelian-ind.md) | 49 | `declaration-track:ae2442111d5f4ff86aade1f3d3a49ba1a0ceb21c8109f94cd9bffdb2b0502247` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

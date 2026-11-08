@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/FactorialBigOperators.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/FactorialBigOperators.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialBigOperators.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialBigOperators.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prod_factorial_pos](../../../../../NumberTheory/ElementaryNumberTheory/FactorialBigOperators.lean/declarations/prod-factorial-pos.md) | 29 | `result-track:42c4ea9dd53ca1ccc9dea561a0c393aa2de04d7c3f6ec3eaa3a4184656fa52b1` |
-| 2 | `theorem` | [prod_factorial_dvd_factorial_sum](../../../../../NumberTheory/ElementaryNumberTheory/FactorialBigOperators.lean/declarations/prod-factorial-dvd-factorial-sum.md) | 33 | `result-track:0aaa45840e2fa91d7671680d6463967edd1c54470321877dda22013a3e2c9f8e` |
+| 1 | `theorem` | [prod_factorial_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialBigOperators.lean/declarations/prod-factorial-pos.md) | 29 | `result-track:42c4ea9dd53ca1ccc9dea561a0c393aa2de04d7c3f6ec3eaa3a4184656fa52b1` |
+| 2 | `theorem` | [prod_factorial_dvd_factorial_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialBigOperators.lean/declarations/prod-factorial-dvd-factorial-sum.md) | 33 | `result-track:0aaa45840e2fa91d7671680d6463967edd1c54470321877dda22013a3e2c9f8e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ULiftPublicIter.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ULiftPublicIter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ULiftPublicIter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ULiftPublicIter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Iter.uLift_eq_toIter_uLift_toIterM](../../../../../ComputerScience/AlgorithmsInComputerScience/ULiftPublicIter.lean/declarations/iter-ulift-eq-toiter-ulift-toiterm.md) | 25 | `result-track:67317af043744b2373b41e47ebad365388dd7bfc15539f6d5f0b6319e6284323` |
-| 2 | `theorem` | [Iter.step_uLift](../../../../../ComputerScience/AlgorithmsInComputerScience/ULiftPublicIter.lean/declarations/iter-step-ulift.md) | 29 | `result-track:e5d96d9754dc3b735d87b97104f1df304abf8eec779d2349fa6e959abd3ef6b7` |
-| 3 | `theorem` | [Iter.toList_uLift](../../../../../ComputerScience/AlgorithmsInComputerScience/ULiftPublicIter.lean/declarations/iter-tolist-ulift.md) | 42 | `result-track:6e08a4d0a7ffcf3a42fe719e455f268aa3695de7393cb8cc0bd8f647096e8881` |
-| 4 | `theorem` | [Iter.toListRev_uLift](../../../../../ComputerScience/AlgorithmsInComputerScience/ULiftPublicIter.lean/declarations/iter-tolistrev-ulift.md) | 50 | `result-track:993884578ff0ff9f4a38771b6abf1cd0804f9e06fad34dca482d853f2c0309b2` |
-| 5 | `theorem` | [Iter.toArray_uLift](../../../../../ComputerScience/AlgorithmsInComputerScience/ULiftPublicIter.lean/declarations/iter-toarray-ulift.md) | 56 | `result-track:6436deaeec605162b4c70e901612edb453f4afc338e1bc829ae87e8fbce228bd` |
-| 6 | `theorem` | [Iter.length_uLift](../../../../../ComputerScience/AlgorithmsInComputerScience/ULiftPublicIter.lean/declarations/iter-length-ulift.md) | 63 | `result-track:b423553d1b7ecc355019ecb0630a2274d2dfccb4cd8a48e72b41fc07f37dd6b9` |
-| 7 | `def` | [Iter.count_uLift](../../../../../ComputerScience/AlgorithmsInComputerScience/ULiftPublicIter.lean/declarations/iter-count-ulift.md) | 72 | `declaration-track:fc988fb656576c88091a3bb3574cb44b3e9ca272c1e71c5cc6695de93f64c46b` |
+| 1 | `theorem` | [Iter.uLift_eq_toIter_uLift_toIterM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ULiftPublicIter.lean/declarations/iter-ulift-eq-toiter-ulift-toiterm.md) | 25 | `result-track:67317af043744b2373b41e47ebad365388dd7bfc15539f6d5f0b6319e6284323` |
+| 2 | `theorem` | [Iter.step_uLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ULiftPublicIter.lean/declarations/iter-step-ulift.md) | 29 | `result-track:e5d96d9754dc3b735d87b97104f1df304abf8eec779d2349fa6e959abd3ef6b7` |
+| 3 | `theorem` | [Iter.toList_uLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ULiftPublicIter.lean/declarations/iter-tolist-ulift.md) | 42 | `result-track:6e08a4d0a7ffcf3a42fe719e455f268aa3695de7393cb8cc0bd8f647096e8881` |
+| 4 | `theorem` | [Iter.toListRev_uLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ULiftPublicIter.lean/declarations/iter-tolistrev-ulift.md) | 50 | `result-track:993884578ff0ff9f4a38771b6abf1cd0804f9e06fad34dca482d853f2c0309b2` |
+| 5 | `theorem` | [Iter.toArray_uLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ULiftPublicIter.lean/declarations/iter-toarray-ulift.md) | 56 | `result-track:6436deaeec605162b4c70e901612edb453f4afc338e1bc829ae87e8fbce228bd` |
+| 6 | `theorem` | [Iter.length_uLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ULiftPublicIter.lean/declarations/iter-length-ulift.md) | 63 | `result-track:b423553d1b7ecc355019ecb0630a2274d2dfccb4cd8a48e72b41fc07f37dd6b9` |
+| 7 | `def` | [Iter.count_uLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ULiftPublicIter.lean/declarations/iter-count-ulift.md) | 72 | `declaration-track:fc988fb656576c88091a3bb3574cb44b3e9ca272c1e71c5cc6695de93f64c46b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

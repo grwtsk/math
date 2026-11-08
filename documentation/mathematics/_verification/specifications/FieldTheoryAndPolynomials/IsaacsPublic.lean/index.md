@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/IsaacsPublic.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/IsaacsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsaacsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsaacsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nonempty_algHom_of_exists_root](../../../../FieldTheoryAndPolynomials/IsaacsPublic.lean/declarations/nonempty-alghom-of-exists-root.md) | 41 | `result-track:e7fbb260a08a8697f3d6ca30d0f1e3482dc3e1d5b95e651a1031a7291e0a3dd0` |
-| 2 | `theorem` | [nonempty_algHom_of_minpoly_eq](../../../../FieldTheoryAndPolynomials/IsaacsPublic.lean/declarations/nonempty-alghom-of-minpoly-eq.md) | 77 | `result-track:3be90beeca094f474ccf776ef723652059eaad482aaec491ec6b3b9906873874` |
-| 3 | `theorem` | [nonempty_algHom_of_range_minpoly_subset](../../../../FieldTheoryAndPolynomials/IsaacsPublic.lean/declarations/nonempty-alghom-of-range-minpoly-subset.md) | 82 | `result-track:c74d69f6d1b1f499792084fe809f8711ff76579c3841ec513387ca0303cc4c3b` |
-| 4 | `theorem` | [nonempty_algEquiv_of_range_minpoly_eq](../../../../FieldTheoryAndPolynomials/IsaacsPublic.lean/declarations/nonempty-algequiv-of-range-minpoly-eq.md) | 87 | `result-track:fc2cfd6753cf8dac182475b095ff08ab188bb0a68f9d73b27cb6afeb273b1536` |
-| 5 | `theorem` | [nonempty_algHom_of_aeval_eq_zero_subset](../../../../FieldTheoryAndPolynomials/IsaacsPublic.lean/declarations/nonempty-alghom-of-aeval-eq-zero-subset.md) | 99 | `result-track:c74a93b171b850144562b6810153e661a730ee9881af0b05023a5a8435d9f505` |
-| 6 | `theorem` | [nonempty_algEquiv_of_aeval_eq_zero_eq](../../../../FieldTheoryAndPolynomials/IsaacsPublic.lean/declarations/nonempty-algequiv-of-aeval-eq-zero-eq.md) | 106 | `result-track:a902a6fa446d9639cd4be9602c9cb17c60e35578e33b935b1823f27f95330b50` |
-| 7 | `theorem` | [_root_.IsAlgClosure.of_exists_root](../../../../FieldTheoryAndPolynomials/IsaacsPublic.lean/declarations/root-isalgclosure-of-exists-root.md) | 113 | `result-track:490e4c70fc7b16b1f4a9943704b14d0e621f3a461d19146aa42583b3e2682ff6` |
+| 1 | `theorem` | [nonempty_algHom_of_exists_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsaacsPublic.lean/declarations/nonempty-alghom-of-exists-root.md) | 41 | `result-track:e7fbb260a08a8697f3d6ca30d0f1e3482dc3e1d5b95e651a1031a7291e0a3dd0` |
+| 2 | `theorem` | [nonempty_algHom_of_minpoly_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsaacsPublic.lean/declarations/nonempty-alghom-of-minpoly-eq.md) | 77 | `result-track:3be90beeca094f474ccf776ef723652059eaad482aaec491ec6b3b9906873874` |
+| 3 | `theorem` | [nonempty_algHom_of_range_minpoly_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsaacsPublic.lean/declarations/nonempty-alghom-of-range-minpoly-subset.md) | 82 | `result-track:c74d69f6d1b1f499792084fe809f8711ff76579c3841ec513387ca0303cc4c3b` |
+| 4 | `theorem` | [nonempty_algEquiv_of_range_minpoly_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsaacsPublic.lean/declarations/nonempty-algequiv-of-range-minpoly-eq.md) | 87 | `result-track:fc2cfd6753cf8dac182475b095ff08ab188bb0a68f9d73b27cb6afeb273b1536` |
+| 5 | `theorem` | [nonempty_algHom_of_aeval_eq_zero_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsaacsPublic.lean/declarations/nonempty-alghom-of-aeval-eq-zero-subset.md) | 99 | `result-track:c74a93b171b850144562b6810153e661a730ee9881af0b05023a5a8435d9f505` |
+| 6 | `theorem` | [nonempty_algEquiv_of_aeval_eq_zero_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsaacsPublic.lean/declarations/nonempty-algequiv-of-aeval-eq-zero-eq.md) | 106 | `result-track:a902a6fa446d9639cd4be9602c9cb17c60e35578e33b935b1823f27f95330b50` |
+| 7 | `theorem` | [_root_.IsAlgClosure.of_exists_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsaacsPublic.lean/declarations/root-isalgclosure-of-exists-root.md) | 113 | `result-track:490e4c70fc7b16b1f4a9943704b14d0e621f3a461d19146aa42583b3e2682ff6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

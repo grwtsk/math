@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/SymbolNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/SymbolNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SymbolNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SymbolNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SemiLocalSymbolProfile](../../../../GroupTheoryAndGeneralizations/SymbolNamespaced.lean/declarations/semilocalsymbolprofile.md) | 23 | `declaration-track:0805774b8c2994638c4fab23a248c9df5dbadc95bc72590f5a87aa40beae6429` |
-| 2 | `def` | [SemiLocalSymbolProfile.totalSymbol](../../../../GroupTheoryAndGeneralizations/SymbolNamespaced.lean/declarations/semilocalsymbolprofile-totalsymbol.md) | 30 | `declaration-track:7354797d1a47ed10f55cb1a009cf9c5ac63baf8481f2ca8a11a38857864d2703` |
-| 3 | `structure` | [QuasiInnerClass](../../../../GroupTheoryAndGeneralizations/SymbolNamespaced.lean/declarations/quasiinnerclass.md) | 42 | `declaration-track:195cfe38a9460bf643a89570431ca3cfdb0024a6a9bb0b689c8e690a1bd842d5` |
+| 1 | `structure` | [SemiLocalSymbolProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SymbolNamespaced.lean/declarations/semilocalsymbolprofile.md) | 23 | `declaration-track:0805774b8c2994638c4fab23a248c9df5dbadc95bc72590f5a87aa40beae6429` |
+| 2 | `def` | [SemiLocalSymbolProfile.totalSymbol](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SymbolNamespaced.lean/declarations/semilocalsymbolprofile-totalsymbol.md) | 30 | `declaration-track:7354797d1a47ed10f55cb1a009cf9c5ac63baf8481f2ca8a11a38857864d2703` |
+| 3 | `structure` | [QuasiInnerClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SymbolNamespaced.lean/declarations/quasiinnerclass.md) | 42 | `declaration-track:195cfe38a9460bf643a89570431ca3cfdb0024a6a9bb0b689c8e690a1bd842d5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

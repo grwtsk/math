@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ActualLocalizationCarrierAndMap.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ActualLocalizationCarrierAndMap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ActualLocalizationCarrierAndMap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ActualLocalizationCarrierAndMap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -51,7 +51,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.Algebra.Ring.ULift` — import line 23; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Rat.Defs` — import line 24; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.ZMod.Basic` — import line 25; external provider; requires a separately pinned dependency.
-- [Commutative Coefficient Carriers](../../../../CommutativeAlgebra/CommutativeCoefficientCarriers.lean/index.md) — import line 26; pinned internal source present.
+- [Commutative Coefficient Carriers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CommutativeCoefficientCarriers.lean/index.md) — import line 26; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LocalizationDatum](../../../../CommutativeAlgebra/ActualLocalizationCarrierAndMap.lean/declarations/localizationdatum.md) | 44 | `declaration-track:74d817f4eb40b5ebbbf45451826f1da8782672684b28205fe93b708d715fbb9c` |
-| 2 | `def` | [context](../../../../CommutativeAlgebra/ActualLocalizationCarrierAndMap.lean/declarations/context.md) | 50 | `declaration-track:4654d552fd54260e12a141f987628f58beeb44e6a473c7d643f65daac53ae96b` |
-| 3 | `def` | [algebraMapComparison](../../../../CommutativeAlgebra/ActualLocalizationCarrierAndMap.lean/declarations/algebramapcomparison.md) | 55 | `declaration-track:b2f77eb58b29e408aee26f6d5d3b22cc5873b6913867f6929590087ce4edcbbf` |
+| 1 | `structure` | [LocalizationDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ActualLocalizationCarrierAndMap.lean/declarations/localizationdatum.md) | 44 | `declaration-track:74d817f4eb40b5ebbbf45451826f1da8782672684b28205fe93b708d715fbb9c` |
+| 2 | `def` | [context](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ActualLocalizationCarrierAndMap.lean/declarations/context.md) | 50 | `declaration-track:4654d552fd54260e12a141f987628f58beeb44e6a473c7d643f65daac53ae96b` |
+| 3 | `def` | [algebraMapComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ActualLocalizationCarrierAndMap.lean/declarations/algebramapcomparison.md) | 55 | `declaration-track:b2f77eb58b29e408aee26f6d5d3b22cc5873b6913867f6929590087ce4edcbbf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/QuadraticCharGaussSum.lean/index.md) · [Full source](../../../../NumberTheory/QuadraticCharGaussSum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticCharGaussSum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticCharGaussSum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quadraticChar_two](../../../../NumberTheory/QuadraticCharGaussSum.lean/declarations/quadraticchar-two.md) | 33 | `result-track:e08e94e0495bea99d1f249c67fb70abd5fa04e641b687bca6ea32d0e28fd0943` |
-| 2 | `theorem` | [FiniteField.isSquare_two_iff](../../../../NumberTheory/QuadraticCharGaussSum.lean/declarations/finitefield-issquare-two-iff.md) | 39 | `result-track:1f8b9f162b2e8537a0a4addc43fe3e5619fb99fd29aa4b70a14efa9203405180` |
-| 3 | `theorem` | [quadraticChar_neg_two](../../../../NumberTheory/QuadraticCharGaussSum.lean/declarations/quadraticchar-neg-two.md) | 52 | `result-track:3c2aafd58d664434d1e1d1cc2b2506fd1d26a8ff0faa66d3275b3f18a0e0d0be` |
-| 4 | `theorem` | [FiniteField.isSquare_neg_two_iff](../../../../NumberTheory/QuadraticCharGaussSum.lean/declarations/finitefield-issquare-neg-two-iff.md) | 58 | `result-track:a8da2a889b1f4316ba2342549d8f07a26ff4f2a0e5e88169c37681cc599b22f7` |
-| 5 | `theorem` | [quadraticChar_card_card](../../../../NumberTheory/QuadraticCharGaussSum.lean/declarations/quadraticchar-card-card.md) | 73 | `result-track:dea2b234fd5beb5bc96eb57346b170a095914338391cc54fe8e3985de50fd100` |
-| 6 | `theorem` | [quadraticChar_odd_prime](../../../../NumberTheory/QuadraticCharGaussSum.lean/declarations/quadraticchar-odd-prime.md) | 89 | `result-track:e0932702ae872b4358a684736bf9b59c2e41b3ab509a5e26911ede35654317e2` |
-| 7 | `theorem` | [FiniteField.isSquare_odd_prime_iff](../../../../NumberTheory/QuadraticCharGaussSum.lean/declarations/finitefield-issquare-odd-prime-iff.md) | 99 | `result-track:de5e743610d4685027ac117fb115b85a69a522a7df20c39c6e6a69ddaa454a49` |
+| 1 | `theorem` | [quadraticChar_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticCharGaussSum.lean/declarations/quadraticchar-two.md) | 33 | `result-track:e08e94e0495bea99d1f249c67fb70abd5fa04e641b687bca6ea32d0e28fd0943` |
+| 2 | `theorem` | [FiniteField.isSquare_two_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticCharGaussSum.lean/declarations/finitefield-issquare-two-iff.md) | 39 | `result-track:1f8b9f162b2e8537a0a4addc43fe3e5619fb99fd29aa4b70a14efa9203405180` |
+| 3 | `theorem` | [quadraticChar_neg_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticCharGaussSum.lean/declarations/quadraticchar-neg-two.md) | 52 | `result-track:3c2aafd58d664434d1e1d1cc2b2506fd1d26a8ff0faa66d3275b3f18a0e0d0be` |
+| 4 | `theorem` | [FiniteField.isSquare_neg_two_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticCharGaussSum.lean/declarations/finitefield-issquare-neg-two-iff.md) | 58 | `result-track:a8da2a889b1f4316ba2342549d8f07a26ff4f2a0e5e88169c37681cc599b22f7` |
+| 5 | `theorem` | [quadraticChar_card_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticCharGaussSum.lean/declarations/quadraticchar-card-card.md) | 73 | `result-track:dea2b234fd5beb5bc96eb57346b170a095914338391cc54fe8e3985de50fd100` |
+| 6 | `theorem` | [quadraticChar_odd_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticCharGaussSum.lean/declarations/quadraticchar-odd-prime.md) | 89 | `result-track:e0932702ae872b4358a684736bf9b59c2e41b3ab509a5e26911ede35654317e2` |
+| 7 | `theorem` | [FiniteField.isSquare_odd_prime_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticCharGaussSum.lean/declarations/finitefield-issquare-odd-prime-iff.md) | 99 | `result-track:de5e743610d4685027ac117fb115b85a69a522a7df20c39c6e6a69ddaa454a49` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

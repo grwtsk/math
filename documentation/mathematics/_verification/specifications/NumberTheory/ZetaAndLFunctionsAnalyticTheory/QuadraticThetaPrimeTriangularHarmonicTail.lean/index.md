@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeTriangularTailDecomposition`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularTailDecomposition.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeTriangularTailDecomposition`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularTailDecomposition.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.NumberTheory.Harmonic.Bounds` — import line 4; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [triangularHarmonicTailMajorant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/declarations/triangularharmonictailmajorant.md) | 16 | `declaration-track:2c5df71739e98b1bc243a610df5fd20a279ed1ce3cffd7eff3e3a261efdd1e28` |
-| 2 | `def` | [TriangularHarmonicTailDecayClaim](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/declarations/triangularharmonictaildecayclaim.md) | 25 | `declaration-track:b6d4de3bbf2bb7c72e1c67546463b37edb51150ecc63a013bf510ec32dbad7db` |
-| 3 | `theorem` | [triangularHarmonicTailMajorant_le_log](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/declarations/triangularharmonictailmajorant-le-log.md) | 36 | `result-track:6a80ec8dcc73509afaef34d9394862b80c2e18cbd484e1df439be1ec50e364c5` |
-| 4 | `def` | [balancedTriangularCutoff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/declarations/balancedtriangularcutoff.md) | 58 | `declaration-track:8eb0e403682d070c0daa17095f3c425a8c5dd6c2ac2cb04092a804bef500ef39` |
-| 5 | `theorem` | [balancedTriangularCutoff_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/declarations/balancedtriangularcutoff-pos.md) | 61 | `result-track:7fce8a6a2065e96be87a992d8ef41dac5e8b6cfbe42b5c27234ce9ef110aefec` |
-| 6 | `theorem` | [balancedTriangularTail_power](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/declarations/balancedtriangulartail-power.md) | 70 | `result-track:b5996e5da08ad219ac361a55ba13e6442308b3b0e60912c25a04e1089edcdba1` |
-| 7 | `theorem` | [balancedTriangularTail_power_lt_threeQuarters](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/declarations/balancedtriangulartail-power-lt-threequarters.md) | 76 | `result-track:1ead7e48d3676101b312c6f08cd426638f54d83350a924692d657f94927aefb2` |
-| 8 | `structure` | [TriangularHarmonicTailAccepted](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/declarations/triangularharmonictailaccepted.md) | 84 | `declaration-track:85cc424f038694bdbcb15ad1b906f2e59b3ed43b2a5f8ca370e39ed22a9fbdf4` |
+| 1 | `def` | [triangularHarmonicTailMajorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/declarations/triangularharmonictailmajorant.md) | 16 | `declaration-track:2c5df71739e98b1bc243a610df5fd20a279ed1ce3cffd7eff3e3a261efdd1e28` |
+| 2 | `def` | [TriangularHarmonicTailDecayClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/declarations/triangularharmonictaildecayclaim.md) | 25 | `declaration-track:b6d4de3bbf2bb7c72e1c67546463b37edb51150ecc63a013bf510ec32dbad7db` |
+| 3 | `theorem` | [triangularHarmonicTailMajorant_le_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/declarations/triangularharmonictailmajorant-le-log.md) | 36 | `result-track:6a80ec8dcc73509afaef34d9394862b80c2e18cbd484e1df439be1ec50e364c5` |
+| 4 | `def` | [balancedTriangularCutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/declarations/balancedtriangularcutoff.md) | 58 | `declaration-track:8eb0e403682d070c0daa17095f3c425a8c5dd6c2ac2cb04092a804bef500ef39` |
+| 5 | `theorem` | [balancedTriangularCutoff_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/declarations/balancedtriangularcutoff-pos.md) | 61 | `result-track:7fce8a6a2065e96be87a992d8ef41dac5e8b6cfbe42b5c27234ce9ef110aefec` |
+| 6 | `theorem` | [balancedTriangularTail_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/declarations/balancedtriangulartail-power.md) | 70 | `result-track:b5996e5da08ad219ac361a55ba13e6442308b3b0e60912c25a04e1089edcdba1` |
+| 7 | `theorem` | [balancedTriangularTail_power_lt_threeQuarters](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/declarations/balancedtriangulartail-power-lt-threequarters.md) | 76 | `result-track:1ead7e48d3676101b312c6f08cd426638f54d83350a924692d657f94927aefb2` |
+| 8 | `structure` | [TriangularHarmonicTailAccepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHarmonicTail.lean/declarations/triangularharmonictailaccepted.md) | 84 | `declaration-track:85cc424f038694bdbcb15ad1b906f2e59b3ed43b2a5f8ca370e39ed22a9fbdf4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

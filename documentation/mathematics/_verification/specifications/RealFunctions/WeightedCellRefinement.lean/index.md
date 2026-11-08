@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/WeightedCellRefinement.lean/index.md) · [Full source](../../../../RealFunctions/WeightedCellRefinement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedCellRefinement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedCellRefinement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mean](../../../../RealFunctions/WeightedCellRefinement.lean/declarations/mean.md) | 18 | `declaration-track:c9c660555cc8b900662433b1d5a79a84fb09e4cce5e0b0a7532b9413983ab5db` |
-| 2 | `theorem` | [mean_preserves_mass](../../../../RealFunctions/WeightedCellRefinement.lean/declarations/mean-preserves-mass.md) | 20 | `result-track:126f251a8d2daebd37f54727b9a518ee1c7b54747846ab0fd328c24dcd44479f` |
-| 3 | `theorem` | [split_identity](../../../../RealFunctions/WeightedCellRefinement.lean/declarations/split-identity.md) | 26 | `result-track:818385130fc96711648bc17f8f631fcabfe432ba3d5417e4d0ba18d51772f475` |
-| 4 | `theorem` | [detail_nonneg](../../../../RealFunctions/WeightedCellRefinement.lean/declarations/detail-nonneg.md) | 33 | `result-track:d4f2b52210f318e938e88d34ff421283e8648af32474fb18a1cf5772168f1fd9` |
-| 5 | `theorem` | [coarse_le_full](../../../../RealFunctions/WeightedCellRefinement.lean/declarations/coarse-le-full.md) | 36 | `result-track:7da560a7f1c989681d7918517cdb4557865fbb07f2b743c1ebba6e9efbc86f92` |
-| 6 | `theorem` | [center_change](../../../../RealFunctions/WeightedCellRefinement.lean/declarations/center-change.md) | 42 | `result-track:310396c8fec2efef486f90170e500b61a4b253425deec2b2d6e3509e9397be30` |
-| 7 | `theorem` | [range_variance](../../../../RealFunctions/WeightedCellRefinement.lean/declarations/range-variance.md) | 47 | `result-track:bb835b46e1b4da96c68bb3a838963009e87ab0e346c5498d7e7dc812668b2417` |
-| 8 | `theorem` | [weighted_square_return](../../../../RealFunctions/WeightedCellRefinement.lean/declarations/weighted-square-return.md) | 53 | `result-track:ebcfe49c25b304b757582abf2183e15baaa80cea4767dee77d3a55ca070317aa` |
+| 1 | `def` | [mean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedCellRefinement.lean/declarations/mean.md) | 18 | `declaration-track:c9c660555cc8b900662433b1d5a79a84fb09e4cce5e0b0a7532b9413983ab5db` |
+| 2 | `theorem` | [mean_preserves_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedCellRefinement.lean/declarations/mean-preserves-mass.md) | 20 | `result-track:126f251a8d2daebd37f54727b9a518ee1c7b54747846ab0fd328c24dcd44479f` |
+| 3 | `theorem` | [split_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedCellRefinement.lean/declarations/split-identity.md) | 26 | `result-track:818385130fc96711648bc17f8f631fcabfe432ba3d5417e4d0ba18d51772f475` |
+| 4 | `theorem` | [detail_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedCellRefinement.lean/declarations/detail-nonneg.md) | 33 | `result-track:d4f2b52210f318e938e88d34ff421283e8648af32474fb18a1cf5772168f1fd9` |
+| 5 | `theorem` | [coarse_le_full](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedCellRefinement.lean/declarations/coarse-le-full.md) | 36 | `result-track:7da560a7f1c989681d7918517cdb4557865fbb07f2b743c1ebba6e9efbc86f92` |
+| 6 | `theorem` | [center_change](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedCellRefinement.lean/declarations/center-change.md) | 42 | `result-track:310396c8fec2efef486f90170e500b61a4b253425deec2b2d6e3509e9397be30` |
+| 7 | `theorem` | [range_variance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedCellRefinement.lean/declarations/range-variance.md) | 47 | `result-track:bb835b46e1b4da96c68bb3a838963009e87ab0e346c5498d7e7dc812668b2417` |
+| 8 | `theorem` | [weighted_square_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedCellRefinement.lean/declarations/weighted-square-return.md) | 53 | `result-track:ebcfe49c25b304b757582abf2183e15baaa80cea4767dee77d3a55ca070317aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

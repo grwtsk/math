@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/WeightedQuartetBudget.lean/index.md) · [Full source](../../../../Combinatorics/WeightedQuartetBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedQuartetBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedQuartetBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.WeightedSubsetBudget`](../../../../Combinatorics/WeightedSubsetBudget.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Combinatorics.WeightedSubsetBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedSubsetBudget.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [four_le_mass](../../../../Combinatorics/WeightedQuartetBudget.lean/declarations/four-le-mass.md) | 27 | `result-track:57ea04a21fdff0d9d0297c445eda3ce10ed9e2b1789c04b6a707032e27477aeb` |
-| 2 | `theorem` | [known_add_four_le_mass](../../../../Combinatorics/WeightedQuartetBudget.lean/declarations/known-add-four-le-mass.md) | 44 | `result-track:4c5c6f8424327fcfd5083ee8d3a97c44fc6645e1a43a2ff05657262c2893a80e` |
-| 3 | `theorem` | [eq_of_remaining_lt_two_of_involution](../../../../Combinatorics/WeightedQuartetBudget.lean/declarations/eq-of-remaining-lt-two-of-involution.md) | 62 | `result-track:e0701d348b3c100b4ce6630cfed68ec8ae9c3e55e2f4dc093a59fae7d3649fbc` |
-| 4 | `theorem` | [strict_four_threshold_fixture](../../../../Combinatorics/WeightedQuartetBudget.lean/declarations/strict-four-threshold-fixture.md) | 85 | `result-track:a8a70648a4995cd6b009d677c7a37c480fa1fb333a406039df83464b86a7ff3a` |
-| 5 | `theorem` | [collapsed_occurrences_fixture](../../../../Combinatorics/WeightedQuartetBudget.lean/declarations/collapsed-occurrences-fixture.md) | 90 | `result-track:c3fedfda9591b044a001220bc75cb499907742c9917fdb457ce7ec26effe892f` |
-| 6 | `theorem` | [missing_pair_below_four_fixture](../../../../Combinatorics/WeightedQuartetBudget.lean/declarations/missing-pair-below-four-fixture.md) | 94 | `result-track:4cd983d524d651fb37ff266219b4d4820c66360f851426a157cfa406cc5006f9` |
-| 7 | `theorem` | [unpaired_known_fixture](../../../../Combinatorics/WeightedQuartetBudget.lean/declarations/unpaired-known-fixture.md) | 100 | `result-track:f46828ca87ba0d6cd018957c73b7892ea4fd1c75c1391969a9300220469a3538` |
-| 8 | `theorem` | [zero_weight_pair_fixture](../../../../Combinatorics/WeightedQuartetBudget.lean/declarations/zero-weight-pair-fixture.md) | 111 | `result-track:0aeca191fd841543794d3091eb1f44df7eff40ec474210484be97dfe0a690091` |
+| 1 | `theorem` | [four_le_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedQuartetBudget.lean/declarations/four-le-mass.md) | 27 | `result-track:57ea04a21fdff0d9d0297c445eda3ce10ed9e2b1789c04b6a707032e27477aeb` |
+| 2 | `theorem` | [known_add_four_le_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedQuartetBudget.lean/declarations/known-add-four-le-mass.md) | 44 | `result-track:4c5c6f8424327fcfd5083ee8d3a97c44fc6645e1a43a2ff05657262c2893a80e` |
+| 3 | `theorem` | [eq_of_remaining_lt_two_of_involution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedQuartetBudget.lean/declarations/eq-of-remaining-lt-two-of-involution.md) | 62 | `result-track:e0701d348b3c100b4ce6630cfed68ec8ae9c3e55e2f4dc093a59fae7d3649fbc` |
+| 4 | `theorem` | [strict_four_threshold_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedQuartetBudget.lean/declarations/strict-four-threshold-fixture.md) | 85 | `result-track:a8a70648a4995cd6b009d677c7a37c480fa1fb333a406039df83464b86a7ff3a` |
+| 5 | `theorem` | [collapsed_occurrences_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedQuartetBudget.lean/declarations/collapsed-occurrences-fixture.md) | 90 | `result-track:c3fedfda9591b044a001220bc75cb499907742c9917fdb457ce7ec26effe892f` |
+| 6 | `theorem` | [missing_pair_below_four_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedQuartetBudget.lean/declarations/missing-pair-below-four-fixture.md) | 94 | `result-track:4cd983d524d651fb37ff266219b4d4820c66360f851426a157cfa406cc5006f9` |
+| 7 | `theorem` | [unpaired_known_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedQuartetBudget.lean/declarations/unpaired-known-fixture.md) | 100 | `result-track:f46828ca87ba0d6cd018957c73b7892ea4fd1c75c1391969a9300220469a3538` |
+| 8 | `theorem` | [zero_weight_pair_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedQuartetBudget.lean/declarations/zero-weight-pair-fixture.md) | 111 | `result-track:0aeca191fd841543794d3091eb1f44df7eff40ec474210484be97dfe0a690091` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

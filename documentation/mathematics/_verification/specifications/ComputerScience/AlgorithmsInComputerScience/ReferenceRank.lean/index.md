@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ReferenceRank.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ReferenceRank.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReferenceRank.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReferenceRank.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RankedModule](../../../../../ComputerScience/AlgorithmsInComputerScience/ReferenceRank.lean/declarations/rankedmodule.md) | 18 | `declaration-track:18b3fb4edc15ea8181d100be3fa723702e53c2f925953ad1ab967580a9f1d735` |
-| 2 | `def` | [rankModule](../../../../../ComputerScience/AlgorithmsInComputerScience/ReferenceRank.lean/declarations/rankmodule.md) | 24 | `declaration-track:b5c46452e5c636414a5a06e9846225a7f45c8af11e73635bf24070b08d298ac4` |
-| 3 | `structure` | [ReferenceRanking](../../../../../ComputerScience/AlgorithmsInComputerScience/ReferenceRank.lean/declarations/referenceranking.md) | 32 | `declaration-track:87639e1d180f9bf6be8efd0e07e50a43cbb8172aad3335f67b23ef00700d64ec` |
-| 4 | `theorem` | [ranking_contains_module](../../../../../ComputerScience/AlgorithmsInComputerScience/ReferenceRank.lean/declarations/ranking-contains-module.md) | 40 | `result-track:980c907010de1ed5a25d5e16cdd1c4138d22ae8c7903d324923600931079172d` |
+| 1 | `structure` | [RankedModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReferenceRank.lean/declarations/rankedmodule.md) | 18 | `declaration-track:18b3fb4edc15ea8181d100be3fa723702e53c2f925953ad1ab967580a9f1d735` |
+| 2 | `def` | [rankModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReferenceRank.lean/declarations/rankmodule.md) | 24 | `declaration-track:b5c46452e5c636414a5a06e9846225a7f45c8af11e73635bf24070b08d298ac4` |
+| 3 | `structure` | [ReferenceRanking](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReferenceRank.lean/declarations/referenceranking.md) | 32 | `declaration-track:87639e1d180f9bf6be8efd0e07e50a43cbb8172aad3335f67b23ef00700d64ec` |
+| 4 | `theorem` | [ranking_contains_module](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReferenceRank.lean/declarations/ranking-contains-module.md) | 40 | `result-track:980c907010de1ed5a25d5e16cdd1c4138d22ae8c7903d324923600931079172d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

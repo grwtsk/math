@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ZeroDivisors.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ZeroDivisors.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZeroDivisors.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZeroDivisors.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [nonZeroDivisorsLeft](../../../../GroupTheoryAndGeneralizations/ZeroDivisors.lean/declarations/nonzerodivisorsleft.md) | 24 | `declaration-track:381b2b9601fba495e1062d629e02ed3bead43a0bd9b704279c85f604fbd616db` |
-| 2 | `lemma` | [mem_nonZeroDivisorsLeft_iff](../../../../GroupTheoryAndGeneralizations/ZeroDivisors.lean/declarations/mem-nonzerodivisorsleft-iff.md) | 29 | `result-track:c376e3fd3981df9107ab103a2980535b69116db6ccd363302e6c1bdd73fabb8d` |
-| 3 | `def` | [nonZeroDivisorsRight](../../../../GroupTheoryAndGeneralizations/ZeroDivisors.lean/declarations/nonzerodivisorsright.md) | 35 | `declaration-track:1e8ba87d2ae7f3ea119af550b8d655735d9a1d5accc847f392f80b52b7f702f5` |
-| 4 | `lemma` | [mem_nonZeroDivisorsRight_iff](../../../../GroupTheoryAndGeneralizations/ZeroDivisors.lean/declarations/mem-nonzerodivisorsright-iff.md) | 40 | `result-track:59841cccd8224c3c29483ba5ce89b8991d1b977029a696057cf605cf3acd3a2c` |
-| 5 | `lemma` | [nonZeroDivisorsLeft_eq_right](../../../../GroupTheoryAndGeneralizations/ZeroDivisors.lean/declarations/nonzerodivisorsleft-eq-right.md) | 44 | `result-track:3775f197d4c21bb7015b1c3ff075cbc28932c5900a2175f6152d235abb8d4301` |
-| 6 | `lemma` | [coe_nonZeroDivisorsLeft_eq](../../../../GroupTheoryAndGeneralizations/ZeroDivisors.lean/declarations/coe-nonzerodivisorsleft-eq.md) | 48 | `result-track:a5a6e70a9660940d19f3011aad7612b1681e8dfd6075b7032052fb3cc6cad33d` |
-| 7 | `lemma` | [coe_nonZeroDivisorsRight_eq](../../../../GroupTheoryAndGeneralizations/ZeroDivisors.lean/declarations/coe-nonzerodivisorsright-eq.md) | 57 | `result-track:050512f16ae9a72a8ac4fb48a8e6b098079c493d866cee50ddedf6d635b85ac6` |
+| 1 | `def` | [nonZeroDivisorsLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZeroDivisors.lean/declarations/nonzerodivisorsleft.md) | 24 | `declaration-track:381b2b9601fba495e1062d629e02ed3bead43a0bd9b704279c85f604fbd616db` |
+| 2 | `lemma` | [mem_nonZeroDivisorsLeft_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZeroDivisors.lean/declarations/mem-nonzerodivisorsleft-iff.md) | 29 | `result-track:c376e3fd3981df9107ab103a2980535b69116db6ccd363302e6c1bdd73fabb8d` |
+| 3 | `def` | [nonZeroDivisorsRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZeroDivisors.lean/declarations/nonzerodivisorsright.md) | 35 | `declaration-track:1e8ba87d2ae7f3ea119af550b8d655735d9a1d5accc847f392f80b52b7f702f5` |
+| 4 | `lemma` | [mem_nonZeroDivisorsRight_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZeroDivisors.lean/declarations/mem-nonzerodivisorsright-iff.md) | 40 | `result-track:59841cccd8224c3c29483ba5ce89b8991d1b977029a696057cf605cf3acd3a2c` |
+| 5 | `lemma` | [nonZeroDivisorsLeft_eq_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZeroDivisors.lean/declarations/nonzerodivisorsleft-eq-right.md) | 44 | `result-track:3775f197d4c21bb7015b1c3ff075cbc28932c5900a2175f6152d235abb8d4301` |
+| 6 | `lemma` | [coe_nonZeroDivisorsLeft_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZeroDivisors.lean/declarations/coe-nonzerodivisorsleft-eq.md) | 48 | `result-track:a5a6e70a9660940d19f3011aad7612b1681e8dfd6075b7032052fb3cc6cad33d` |
+| 7 | `lemma` | [coe_nonZeroDivisorsRight_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZeroDivisors.lean/declarations/coe-nonzerodivisorsright-eq.md) | 57 | `result-track:050512f16ae9a72a8ac4fb48a8e6b098079c493d866cee50ddedf6d635b85ac6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

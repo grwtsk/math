@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalObject.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalObject.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalObject.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalObject.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [RealizationKind](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalObject.lean/declarations/realizationkind.md) | 17 | `declaration-track:9af194e7b10105d7db83554a9be3461eda0650050251650f14ca5620045eae50` |
-| 2 | `structure` | [GlobalArithmeticObject](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalObject.lean/declarations/globalarithmeticobject.md) | 28 | `declaration-track:64cd49b8b6b385b8c0112dda109e35b2797f8532fffab1257ec23acf1e731cb4` |
-| 3 | `structure` | [ArithmeticRealization](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalObject.lean/declarations/arithmeticrealization.md) | 35 | `declaration-track:a3b33a7e15d36601dc1ae3d771e4287f3ee7e08b6eb4508645ec69df763e1e2e` |
-| 4 | `structure` | [RealizationComparison](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalObject.lean/declarations/realizationcomparison.md) | 46 | `declaration-track:f3bd9f8c23901ac6d22607c20a193eda71ea05600281b244932e41d7ecd06134` |
+| 1 | `inductive` | [RealizationKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalObject.lean/declarations/realizationkind.md) | 17 | `declaration-track:9af194e7b10105d7db83554a9be3461eda0650050251650f14ca5620045eae50` |
+| 2 | `structure` | [GlobalArithmeticObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalObject.lean/declarations/globalarithmeticobject.md) | 28 | `declaration-track:64cd49b8b6b385b8c0112dda109e35b2797f8532fffab1257ec23acf1e731cb4` |
+| 3 | `structure` | [ArithmeticRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalObject.lean/declarations/arithmeticrealization.md) | 35 | `declaration-track:a3b33a7e15d36601dc1ae3d771e4287f3ee7e08b6eb4508645ec69df763e1e2e` |
+| 4 | `structure` | [RealizationComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalObject.lean/declarations/realizationcomparison.md) | 46 | `declaration-track:f3bd9f8c23901ac6d22607c20a193eda71ea05600281b244932e41d7ecd06134` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

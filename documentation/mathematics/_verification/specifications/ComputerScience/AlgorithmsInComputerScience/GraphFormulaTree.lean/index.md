@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/GraphFormulaTree.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/GraphFormulaTree.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GraphFormulaTree.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GraphFormulaTree.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FormulaTree.childEdgesFrom](../../../../../ComputerScience/AlgorithmsInComputerScience/GraphFormulaTree.lean/declarations/formulatree-childedgesfrom.md) | 15 | `declaration-track:5757799bb0f6541401fdb1e8e2492f45bdecf38a2f7d44f39b617bc847534b84` |
-| 2 | `def` | [FormulaTree.adjacencyMatrix](../../../../../ComputerScience/AlgorithmsInComputerScience/GraphFormulaTree.lean/declarations/formulatree-adjacencymatrix.md) | 58 | `declaration-track:4fe3a906d6da96fd744b821fc732cf717e4177a76c7770eab97483b138d65ed5` |
-| 3 | `theorem` | [FormulaTree.entry_adjacencyMatrix](../../../../../ComputerScience/AlgorithmsInComputerScience/GraphFormulaTree.lean/declarations/formulatree-entry-adjacencymatrix.md) | 63 | `result-track:eaf33779110d5d6932293485d873314d572133c6def8b41bc34f9e32a02a6d57` |
-| 4 | `def` | [FormulaTree.reachabilityMatrix](../../../../../ComputerScience/AlgorithmsInComputerScience/GraphFormulaTree.lean/declarations/formulatree-reachabilitymatrix.md) | 75 | `declaration-track:13126fdf13fe0220387374db1af110e39226882805555a8544f04bb9e6e78f21` |
+| 1 | `def` | [FormulaTree.childEdgesFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GraphFormulaTree.lean/declarations/formulatree-childedgesfrom.md) | 15 | `declaration-track:5757799bb0f6541401fdb1e8e2492f45bdecf38a2f7d44f39b617bc847534b84` |
+| 2 | `def` | [FormulaTree.adjacencyMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GraphFormulaTree.lean/declarations/formulatree-adjacencymatrix.md) | 58 | `declaration-track:4fe3a906d6da96fd744b821fc732cf717e4177a76c7770eab97483b138d65ed5` |
+| 3 | `theorem` | [FormulaTree.entry_adjacencyMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GraphFormulaTree.lean/declarations/formulatree-entry-adjacencymatrix.md) | 63 | `result-track:eaf33779110d5d6932293485d873314d572133c6def8b41bc34f9e32a02a6d57` |
+| 4 | `def` | [FormulaTree.reachabilityMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GraphFormulaTree.lean/declarations/formulatree-reachabilitymatrix.md) | 75 | `declaration-track:13126fdf13fe0220387374db1af110e39226882805555a8544f04bb9e6e78f21` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

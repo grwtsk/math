@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReportReproduction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReportReproduction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReportReproduction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReportReproduction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_maximizer_of_finite_values](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReportReproduction.lean/declarations/exists-maximizer-of-finite-values.md) | 9 | `result-track:6d0858e09183833dd2695a4edd8b1e0b8b5c751d0c9bc7af150d6744ff52b886` |
-| 2 | `theorem` | [exists_unique_greatest_maximizer_of_bounded_rank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReportReproduction.lean/declarations/exists-unique-greatest-maximizer-of-bounded-rank.md) | 21 | `result-track:53a31515f109330a5fdbdff6aa3ec81007bfe69ee4ad5d3cdcfef9146b725259` |
-| 3 | `theorem` | [exists_greatest_maximizer_fixed_of_bounded_rank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReportReproduction.lean/declarations/exists-greatest-maximizer-fixed-of-bounded-rank.md) | 51 | `result-track:0b1ed691d7ac8af26ee6080f1a6c795371824966907672ea00136c68ede127de` |
-| 4 | `theorem` | [exists_greatest_maximizer_fixed_of_finite_values_bounded_rank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReportReproduction.lean/declarations/exists-greatest-maximizer-fixed-of-finite-values-bounded-rank.md) | 62 | `result-track:33d987ea56358bd2ac034a1ddfe5896ee37c2669fba04a1cb31a9a850b7afde7` |
+| 1 | `theorem` | [exists_maximizer_of_finite_values](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReportReproduction.lean/declarations/exists-maximizer-of-finite-values.md) | 9 | `result-track:6d0858e09183833dd2695a4edd8b1e0b8b5c751d0c9bc7af150d6744ff52b886` |
+| 2 | `theorem` | [exists_unique_greatest_maximizer_of_bounded_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReportReproduction.lean/declarations/exists-unique-greatest-maximizer-of-bounded-rank.md) | 21 | `result-track:53a31515f109330a5fdbdff6aa3ec81007bfe69ee4ad5d3cdcfef9146b725259` |
+| 3 | `theorem` | [exists_greatest_maximizer_fixed_of_bounded_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReportReproduction.lean/declarations/exists-greatest-maximizer-fixed-of-bounded-rank.md) | 51 | `result-track:0b1ed691d7ac8af26ee6080f1a6c795371824966907672ea00136c68ede127de` |
+| 4 | `theorem` | [exists_greatest_maximizer_fixed_of_finite_values_bounded_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReportReproduction.lean/declarations/exists-greatest-maximizer-fixed-of-finite-values-bounded-rank.md) | 62 | `result-track:33d987ea56358bd2ac034a1ddfe5896ee37c2669fba04a1cb31a9a850b7afde7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

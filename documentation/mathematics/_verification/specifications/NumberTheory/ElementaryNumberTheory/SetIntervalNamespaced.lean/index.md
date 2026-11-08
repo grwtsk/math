@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [range_cast_int](../../../../../NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/declarations/range-cast-int.md) | 32 | `result-track:7200dec7597a20b17a96875ef032de48b9a9dc399abc6379066dbe396c31b6ac` |
-| 2 | `theorem` | [image_cast_int_Icc](../../../../../NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/declarations/image-cast-int-icc.md) | 35 | `result-track:f64d446ad8f8395f509950c4464ec4bd1e88e8f9f255f0aae114b1309d072dd1` |
-| 3 | `theorem` | [image_cast_int_Ico](../../../../../NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/declarations/image-cast-int-ico.md) | 38 | `result-track:1408dae0fae1475ca796aa9be59d4029ed3c9e59d84ebe89ff74f92261246b91` |
-| 4 | `theorem` | [image_cast_int_Ioc](../../../../../NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/declarations/image-cast-int-ioc.md) | 41 | `result-track:bd632ba702b1f45444b4f458e62d18c404618be367f547e3617351617f2be0a4` |
-| 5 | `theorem` | [image_cast_int_Ioo](../../../../../NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/declarations/image-cast-int-ioo.md) | 44 | `result-track:db9a90ed79329b69d8c184a11c2a5353aba6be40625e537eb53b83b66aca6455` |
-| 6 | `theorem` | [image_cast_int_Iic](../../../../../NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/declarations/image-cast-int-iic.md) | 47 | `result-track:e8472879a2333a11d9b6a924b045049c0bfe309586d3f7d07b92e5b343db5e4c` |
-| 7 | `theorem` | [image_cast_int_Iio](../../../../../NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/declarations/image-cast-int-iio.md) | 50 | `result-track:852f6e0500f81facc2278ff4ac7de5b4fb2b713aed801deb6a5ac68a2773f6e7` |
-| 8 | `theorem` | [image_cast_int_Ici](../../../../../NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/declarations/image-cast-int-ici.md) | 53 | `result-track:4efd7d46e5f5fec64f93e0934f48e4dd85497bf77ef11476e11f93094450c26d` |
-| 9 | `theorem` | [image_cast_int_Ioi](../../../../../NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/declarations/image-cast-int-ioi.md) | 56 | `result-track:a2ddbc333b99bec021b390ee20ac2e4cd3fd021bace0358d4fb5469809120f5d` |
+| 1 | `theorem` | [range_cast_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/declarations/range-cast-int.md) | 32 | `result-track:7200dec7597a20b17a96875ef032de48b9a9dc399abc6379066dbe396c31b6ac` |
+| 2 | `theorem` | [image_cast_int_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/declarations/image-cast-int-icc.md) | 35 | `result-track:f64d446ad8f8395f509950c4464ec4bd1e88e8f9f255f0aae114b1309d072dd1` |
+| 3 | `theorem` | [image_cast_int_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/declarations/image-cast-int-ico.md) | 38 | `result-track:1408dae0fae1475ca796aa9be59d4029ed3c9e59d84ebe89ff74f92261246b91` |
+| 4 | `theorem` | [image_cast_int_Ioc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/declarations/image-cast-int-ioc.md) | 41 | `result-track:bd632ba702b1f45444b4f458e62d18c404618be367f547e3617351617f2be0a4` |
+| 5 | `theorem` | [image_cast_int_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/declarations/image-cast-int-ioo.md) | 44 | `result-track:db9a90ed79329b69d8c184a11c2a5353aba6be40625e537eb53b83b66aca6455` |
+| 6 | `theorem` | [image_cast_int_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/declarations/image-cast-int-iic.md) | 47 | `result-track:e8472879a2333a11d9b6a924b045049c0bfe309586d3f7d07b92e5b343db5e4c` |
+| 7 | `theorem` | [image_cast_int_Iio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/declarations/image-cast-int-iio.md) | 50 | `result-track:852f6e0500f81facc2278ff4ac7de5b4fb2b713aed801deb6a5ac68a2773f6e7` |
+| 8 | `theorem` | [image_cast_int_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/declarations/image-cast-int-ici.md) | 53 | `result-track:4efd7d46e5f5fec64f93e0934f48e4dd85497bf77ef11476e11f93094450c26d` |
+| 9 | `theorem` | [image_cast_int_Ioi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetIntervalNamespaced.lean/declarations/image-cast-int-ioi.md) | 56 | `result-track:a2ddbc333b99bec021b390ee20ac2e4cd3fd021bace0358d4fb5469809120f5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

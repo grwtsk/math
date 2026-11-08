@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EndoFunctorNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EndoFunctorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EndoFunctorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EndoFunctorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Endofunctor.algebraPreadditive](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EndoFunctorNamespaced.lean/declarations/endofunctor-algebrapreadditive.md) | 38 | `declaration-track:55385282625ff0cd035d1392d2529f1da940128483a8d63a34d0bdf2b6992013` |
-| 2 | `instance` | [Algebra.forget_additive](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EndoFunctorNamespaced.lean/declarations/algebra-forget-additive.md) | 112 | `declaration-track:f27363f5e909d0ae7a13aef76c0e168cddee7e71aee072813be5291a5a1feedc` |
-| 3 | `instance` | [Endofunctor.coalgebraPreadditive](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EndoFunctorNamespaced.lean/declarations/endofunctor-coalgebrapreadditive.md) | 115 | `declaration-track:312d19cf760ccf7ae18fbcbb300f68ad25c37b714022fb275017b5c8c0eca23e` |
-| 4 | `instance` | [Coalgebra.forget_additive](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EndoFunctorNamespaced.lean/declarations/coalgebra-forget-additive.md) | 189 | `declaration-track:d38845ef792b1a57d25bfb70497b34a2aaeba3e6966504aa0d80b07b3045d031` |
+| 1 | `instance` | [Endofunctor.algebraPreadditive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EndoFunctorNamespaced.lean/declarations/endofunctor-algebrapreadditive.md) | 38 | `declaration-track:55385282625ff0cd035d1392d2529f1da940128483a8d63a34d0bdf2b6992013` |
+| 2 | `instance` | [Algebra.forget_additive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EndoFunctorNamespaced.lean/declarations/algebra-forget-additive.md) | 112 | `declaration-track:f27363f5e909d0ae7a13aef76c0e168cddee7e71aee072813be5291a5a1feedc` |
+| 3 | `instance` | [Endofunctor.coalgebraPreadditive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EndoFunctorNamespaced.lean/declarations/endofunctor-coalgebrapreadditive.md) | 115 | `declaration-track:312d19cf760ccf7ae18fbcbb300f68ad25c37b714022fb275017b5c8c0eca23e` |
+| 4 | `instance` | [Coalgebra.forget_additive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EndoFunctorNamespaced.lean/declarations/coalgebra-forget-additive.md) | 189 | `declaration-track:d38845ef792b1a57d25bfb70497b34a2aaeba3e6966504aa0d80b07b3045d031` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

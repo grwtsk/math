@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/G2Characters.lean/index.md) · [Full source](../../../../CommutativeAlgebra/G2Characters.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/G2Characters.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/G2Characters.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.Hecke.G2Presentation`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.Hecke.G2Presentation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [g2TrivialCharacter](../../../../CommutativeAlgebra/G2Characters.lean/declarations/g2trivialcharacter.md) | 10 | `declaration-track:7466346a78f5a08f5b09ebff4fe4cfe8a0833427c1cf20c10c10c963ccd08cac` |
-| 2 | `def` | [g2SignCharacter](../../../../CommutativeAlgebra/G2Characters.lean/declarations/g2signcharacter.md) | 15 | `declaration-track:d64cc89e960689da80794a5a89cb90af599b45702399494ce352a56839a2d31a` |
-| 3 | `theorem` | [g2TrivialCharacter_generator](../../../../CommutativeAlgebra/G2Characters.lean/declarations/g2trivialcharacter-generator.md) | 19 | `result-track:0f26345dca5fb4be6f4674b30f0e9cf5dce8915ac449e58dce5d9325a6ad43cb` |
-| 4 | `theorem` | [g2SignCharacter_generator](../../../../CommutativeAlgebra/G2Characters.lean/declarations/g2signcharacter-generator.md) | 23 | `result-track:8cace80c870165cee94a9eefa30fc0294f4b9412ad95c7becdc8e644c5f6dafe` |
-| 5 | `theorem` | [g2Presented_scalar_injective](../../../../CommutativeAlgebra/G2Characters.lean/declarations/g2presented-scalar-injective.md) | 28 | `result-track:68d4f3e2b7adae94c43e49ae5d39c2e5b4ba4ad5989f654ca54fcdb431d725d1` |
-| 6 | `theorem` | [g2Presented_rankOne_coordinates_unique](../../../../CommutativeAlgebra/G2Characters.lean/declarations/g2presented-rankone-coordinates-unique.md) | 36 | `result-track:b0dbc7a5f62f6f7f0c0daffdc2cb2f428bd0a6ce02a97fc37ea20d135f1627d8` |
-| 7 | `theorem` | [g2Presented_zero_ne_one](../../../../CommutativeAlgebra/G2Characters.lean/declarations/g2presented-zero-ne-one.md) | 51 | `result-track:cffe4950e6bec2b263d9fc09d74696f51d37956d6a065ca64561c0b903973da6` |
+| 1 | `def` | [g2TrivialCharacter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/G2Characters.lean/declarations/g2trivialcharacter.md) | 10 | `declaration-track:7466346a78f5a08f5b09ebff4fe4cfe8a0833427c1cf20c10c10c963ccd08cac` |
+| 2 | `def` | [g2SignCharacter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/G2Characters.lean/declarations/g2signcharacter.md) | 15 | `declaration-track:d64cc89e960689da80794a5a89cb90af599b45702399494ce352a56839a2d31a` |
+| 3 | `theorem` | [g2TrivialCharacter_generator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/G2Characters.lean/declarations/g2trivialcharacter-generator.md) | 19 | `result-track:0f26345dca5fb4be6f4674b30f0e9cf5dce8915ac449e58dce5d9325a6ad43cb` |
+| 4 | `theorem` | [g2SignCharacter_generator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/G2Characters.lean/declarations/g2signcharacter-generator.md) | 23 | `result-track:8cace80c870165cee94a9eefa30fc0294f4b9412ad95c7becdc8e644c5f6dafe` |
+| 5 | `theorem` | [g2Presented_scalar_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/G2Characters.lean/declarations/g2presented-scalar-injective.md) | 28 | `result-track:68d4f3e2b7adae94c43e49ae5d39c2e5b4ba4ad5989f654ca54fcdb431d725d1` |
+| 6 | `theorem` | [g2Presented_rankOne_coordinates_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/G2Characters.lean/declarations/g2presented-rankone-coordinates-unique.md) | 36 | `result-track:b0dbc7a5f62f6f7f0c0daffdc2cb2f428bd0a6ce02a97fc37ea20d135f1627d8` |
+| 7 | `theorem` | [g2Presented_zero_ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/G2Characters.lean/declarations/g2presented-zero-ne-one.md) | 51 | `result-track:cffe4950e6bec2b263d9fc09d74696f51d37956d6a065ca64561c0b903973da6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinInitPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinInitPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinInitPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinInitPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [xor_assoc](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinInitPublic.lean/declarations/xor-assoc.md) | 27 | `result-track:d1a471af5dd41b35afc0f3eb5a9ab041f3715aaacb39310d6eda118c262c4c46` |
-| 2 | `theorem` | [xor_comm](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinInitPublic.lean/declarations/xor-comm.md) | 29 | `result-track:635784a297a9b6630bd52f9ac5e391c1ca0b65b564950db7d7dd60c9912967d2` |
-| 3 | `theorem` | [xor_self](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinInitPublic.lean/declarations/xor-self.md) | 30 | `result-track:c64135887342234097cec2251422212b4781601616e851e8984e14c164645286` |
-| 4 | `theorem` | [xor_zero](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinInitPublic.lean/declarations/xor-zero.md) | 32 | `result-track:6a56e65c6da45cb48e70c6835816f627e7cbe7143a04361836b49f85cd592da7` |
+| 1 | `theorem` | [xor_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinInitPublic.lean/declarations/xor-assoc.md) | 27 | `result-track:d1a471af5dd41b35afc0f3eb5a9ab041f3715aaacb39310d6eda118c262c4c46` |
+| 2 | `theorem` | [xor_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinInitPublic.lean/declarations/xor-comm.md) | 29 | `result-track:635784a297a9b6630bd52f9ac5e391c1ca0b65b564950db7d7dd60c9912967d2` |
+| 3 | `theorem` | [xor_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinInitPublic.lean/declarations/xor-self.md) | 30 | `result-track:c64135887342234097cec2251422212b4781601616e851e8984e14c164645286` |
+| 4 | `theorem` | [xor_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinInitPublic.lean/declarations/xor-zero.md) | 32 | `result-track:6a56e65c6da45cb48e70c6835816f627e7cbe7143a04361836b49f85cd592da7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/UniversallyClosedNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/UniversallyClosedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniversallyClosedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniversallyClosedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isProperMap_iff_isClosedMap_ultrafilter](../../../../GeneralTopology/UniversallyClosedNamespaced.lean/declarations/ispropermap-iff-isclosedmap-ultrafilter.md) | 29 | `result-track:3f5aa6ea65f1a24333f620e40678fe36f4da73d03633597f3c6a4d1d8a3c6e19` |
-| 2 | `theorem` | [isProperMap_iff_universally_closed](../../../../GeneralTopology/UniversallyClosedNamespaced.lean/declarations/ispropermap-iff-universally-closed.md) | 57 | `result-track:6dcb87735de0b4d4e9e7273cfd2224753310813eab6df0ed9f82f7d9246da95d` |
+| 1 | `theorem` | [isProperMap_iff_isClosedMap_ultrafilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniversallyClosedNamespaced.lean/declarations/ispropermap-iff-isclosedmap-ultrafilter.md) | 29 | `result-track:3f5aa6ea65f1a24333f620e40678fe36f4da73d03633597f3c6a4d1d8a3c6e19` |
+| 2 | `theorem` | [isProperMap_iff_universally_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniversallyClosedNamespaced.lean/declarations/ispropermap-iff-universally-closed.md) | 57 | `result-track:6dcb87735de0b4d4e9e7273cfd2224753310813eab6df0ed9f82f7d9246da95d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

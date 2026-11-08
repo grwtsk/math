@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTwoBoundary.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTwoBoundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTwoBoundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTwoBoundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerCyclicUnitSupport`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicUnitSupport.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerCyclicUnitSupport`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicUnitSupport.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [octaveRepresentative_sub_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTwoBoundary.lean/declarations/octaverepresentative-sub-one.md) | 15 | `result-track:c11accdf48c4dbbdc1690d91d785e80d716b4146f7097bd8d179ac20215845d3` |
-| 2 | `theorem` | [cyclicSharpUnitChangeSupport_subset_boundaries](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTwoBoundary.lean/declarations/cyclicsharpunitchangesupport-subset-boundaries.md) | 52 | `result-track:d4b7cfa5a753f223d9d273c59f6a2b67987234557a7043a223c42dfebe087715` |
-| 3 | `theorem` | [cyclicSharpUnitBoundarySupportCard](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTwoBoundary.lean/declarations/cyclicsharpunitboundarysupportcard.md) | 133 | `result-track:53cbe0680e2b366a45d65df8875dcb01cf5a5526b6ce903ea79eb0771488039f` |
-| 4 | `theorem` | [cyclicSharpUnitTranslationBound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTwoBoundary.lean/declarations/cyclicsharpunittranslationbound.md) | 143 | `result-track:d84fb0abc398915b06f5c81d2fad51158638b057a5db4b87bd0d5e1212b45d84` |
-| 5 | `theorem` | [cyclicSharpTranslationCardinality](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTwoBoundary.lean/declarations/cyclicsharptranslationcardinality.md) | 149 | `result-track:ef0446d1068715a75fe211d1dcced4e66db487851d4eaa12ee235c88810b42c1` |
+| 1 | `theorem` | [octaveRepresentative_sub_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTwoBoundary.lean/declarations/octaverepresentative-sub-one.md) | 15 | `result-track:c11accdf48c4dbbdc1690d91d785e80d716b4146f7097bd8d179ac20215845d3` |
+| 2 | `theorem` | [cyclicSharpUnitChangeSupport_subset_boundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTwoBoundary.lean/declarations/cyclicsharpunitchangesupport-subset-boundaries.md) | 52 | `result-track:d4b7cfa5a753f223d9d273c59f6a2b67987234557a7043a223c42dfebe087715` |
+| 3 | `theorem` | [cyclicSharpUnitBoundarySupportCard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTwoBoundary.lean/declarations/cyclicsharpunitboundarysupportcard.md) | 133 | `result-track:53cbe0680e2b366a45d65df8875dcb01cf5a5526b6ce903ea79eb0771488039f` |
+| 4 | `theorem` | [cyclicSharpUnitTranslationBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTwoBoundary.lean/declarations/cyclicsharpunittranslationbound.md) | 143 | `result-track:d84fb0abc398915b06f5c81d2fad51158638b057a5db4b87bd0d5e1212b45d84` |
+| 5 | `theorem` | [cyclicSharpTranslationCardinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTwoBoundary.lean/declarations/cyclicsharptranslationcardinality.md) | 149 | `result-track:ef0446d1068715a75fe211d1dcced4e66db487851d4eaa12ee235c88810b42c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../OperatorTheory/DroppedRemainderCost.lean/index.md) · [Full source](../../../../OperatorTheory/DroppedRemainderCost.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/DroppedRemainderCost.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/DroppedRemainderCost.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianBlockCounts`](../../../../OperatorTheory/SturmianBlockCounts.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS`](../../../../OperatorTheory/FreeIDS.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianBlockCounts`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/SturmianBlockCounts.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/FreeIDS.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [free_one](../../../../OperatorTheory/DroppedRemainderCost.lean/declarations/free-one.md) | 5 | `result-track:8c8fd1c566d9a9fb58ef13803106ff584aeabdaafb30e3cab9a5bf8e9905e913` |
-| 2 | `theorem` | [free_two](../../../../OperatorTheory/DroppedRemainderCost.lean/declarations/free-two.md) | 12 | `result-track:f374604475a5639a28358b2d7d84fa63374976b8c49e4b7cd4dd4581a8d22b6e` |
-| 3 | `theorem` | [zero_count](../../../../OperatorTheory/DroppedRemainderCost.lean/declarations/zero-count.md) | 19 | `result-track:5a68ac84984f99da968ea869119486aff1496d268481934dc0b4163f9f11bcc6` |
-| 4 | `example` | [(anonymous)](../../../../OperatorTheory/DroppedRemainderCost.lean/declarations/example.md) | 23 | `declaration-track:7ecaf5802c0cea9a7122a6762f23ab9ac0dceb3d7bcf5916ca52bf8b4f4bc2dc` |
+| 1 | `theorem` | [free_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/DroppedRemainderCost.lean/declarations/free-one.md) | 5 | `result-track:8c8fd1c566d9a9fb58ef13803106ff584aeabdaafb30e3cab9a5bf8e9905e913` |
+| 2 | `theorem` | [free_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/DroppedRemainderCost.lean/declarations/free-two.md) | 12 | `result-track:f374604475a5639a28358b2d7d84fa63374976b8c49e4b7cd4dd4581a8d22b6e` |
+| 3 | `theorem` | [zero_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/DroppedRemainderCost.lean/declarations/zero-count.md) | 19 | `result-track:5a68ac84984f99da968ea869119486aff1496d268481934dc0b4163f9f11bcc6` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/DroppedRemainderCost.lean/declarations/example.md) | 23 | `declaration-track:7ecaf5802c0cea9a7122a6762f23ab9ac0dceb3d7bcf5916ca52bf8b4f4bc2dc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

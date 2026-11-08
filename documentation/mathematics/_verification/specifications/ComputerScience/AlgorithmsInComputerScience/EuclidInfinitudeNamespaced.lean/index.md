@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/EuclidInfinitudeNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/EuclidInfinitudeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EuclidInfinitudeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EuclidInfinitudeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [listBound](../../../../../ComputerScience/AlgorithmsInComputerScience/EuclidInfinitudeNamespaced.lean/declarations/listbound.md) | 15 | `declaration-track:fd27243a20eb284059e220a5b0ba31e3472787ecfa12327cb431c834099ab816` |
-| 2 | `theorem` | [mem_le_listBound](../../../../../ComputerScience/AlgorithmsInComputerScience/EuclidInfinitudeNamespaced.lean/declarations/mem-le-listbound.md) | 19 | `result-track:2df2552ccf8d9d46dbca35daad33b2a9dcacdcda2a5e90e37c911cc6da62a462` |
-| 3 | `theorem` | [euclid_prime_not_in_finite_list](../../../../../ComputerScience/AlgorithmsInComputerScience/EuclidInfinitudeNamespaced.lean/declarations/euclid-prime-not-in-finite-list.md) | 35 | `result-track:ea330474d1de9df86a261353a3ed377f3877058a38977462048f52402e6151b8` |
-| 4 | `theorem` | [infinitely_many_primeLabels](../../../../../ComputerScience/AlgorithmsInComputerScience/EuclidInfinitudeNamespaced.lean/declarations/infinitely-many-primelabels.md) | 47 | `result-track:bfb81bc9b6aafe7e0949807729e31eb97285a3aa94041ba650e0ee132e7caea5` |
+| 1 | `def` | [listBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EuclidInfinitudeNamespaced.lean/declarations/listbound.md) | 15 | `declaration-track:fd27243a20eb284059e220a5b0ba31e3472787ecfa12327cb431c834099ab816` |
+| 2 | `theorem` | [mem_le_listBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EuclidInfinitudeNamespaced.lean/declarations/mem-le-listbound.md) | 19 | `result-track:2df2552ccf8d9d46dbca35daad33b2a9dcacdcda2a5e90e37c911cc6da62a462` |
+| 3 | `theorem` | [euclid_prime_not_in_finite_list](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EuclidInfinitudeNamespaced.lean/declarations/euclid-prime-not-in-finite-list.md) | 35 | `result-track:ea330474d1de9df86a261353a3ed377f3877058a38977462048f52402e6151b8` |
+| 4 | `theorem` | [infinitely_many_primeLabels](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EuclidInfinitudeNamespaced.lean/declarations/infinitely-many-primelabels.md) | 47 | `result-track:bfb81bc9b6aafe7e0949807729e31eb97285a3aa94041ba650e0ee132e7caea5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

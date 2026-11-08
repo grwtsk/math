@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListCountCountPLtLengthIff.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListCountCountPLtLengthIff.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListCountCountPLtLengthIff.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListCountCountPLtLengthIff.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [countP_lt_length_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListCountCountPLtLengthIff.lean/declarations/countp-lt-length-iff.md) | 25 | `result-track:06837441f374aba3dd8b48b6f7d955916b0c5dcda649eac2c9942c16fdd8a7f0` |
-| 2 | `theorem` | [count_lt_length_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListCountCountPLtLengthIff.lean/declarations/count-lt-length-iff.md) | 32 | `result-track:c1c272383c6ce80940ae52432d2e7654bc307b387176b1732ba1d170f52bcb4b` |
-| 3 | `lemma` | [countP_erase](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListCountCountPLtLengthIff.lean/declarations/countp-erase.md) | 34 | `result-track:4d6a3d6d9b357b1b2f5c5cefa659acb81c9dcc651168bfcec890ad9b051a1e3a` |
-| 4 | `lemma` | [count_diff](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListCountCountPLtLengthIff.lean/declarations/count-diff.md) | 39 | `result-track:7106f70d04055b443360579a479784bfa3a297cc7c8069512ee900df1a2b2e27` |
-| 5 | `lemma` | [countP_diff](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListCountCountPLtLengthIff.lean/declarations/countp-diff.md) | 46 | `result-track:430d8957ba4c9e8336181e84654d838f99eaa794c99c9edd98e63f9dcdfa507b` |
-| 6 | `theorem` | [count_map_of_injective](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListCountCountPLtLengthIff.lean/declarations/count-map-of-injective.md) | 54 | `result-track:a5d2da729403f478bd9ddadcbe37ae6294e2b61fa8edc4e6ae35c2d31d6c32a8` |
+| 1 | `theorem` | [countP_lt_length_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListCountCountPLtLengthIff.lean/declarations/countp-lt-length-iff.md) | 25 | `result-track:06837441f374aba3dd8b48b6f7d955916b0c5dcda649eac2c9942c16fdd8a7f0` |
+| 2 | `theorem` | [count_lt_length_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListCountCountPLtLengthIff.lean/declarations/count-lt-length-iff.md) | 32 | `result-track:c1c272383c6ce80940ae52432d2e7654bc307b387176b1732ba1d170f52bcb4b` |
+| 3 | `lemma` | [countP_erase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListCountCountPLtLengthIff.lean/declarations/countp-erase.md) | 34 | `result-track:4d6a3d6d9b357b1b2f5c5cefa659acb81c9dcc651168bfcec890ad9b051a1e3a` |
+| 4 | `lemma` | [count_diff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListCountCountPLtLengthIff.lean/declarations/count-diff.md) | 39 | `result-track:7106f70d04055b443360579a479784bfa3a297cc7c8069512ee900df1a2b2e27` |
+| 5 | `lemma` | [countP_diff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListCountCountPLtLengthIff.lean/declarations/countp-diff.md) | 46 | `result-track:430d8957ba4c9e8336181e84654d838f99eaa794c99c9edd98e63f9dcdfa507b` |
+| 6 | `theorem` | [count_map_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListCountCountPLtLengthIff.lean/declarations/count-map-of-injective.md) | 54 | `result-track:a5d2da729403f478bd9ddadcbe37ae6294e2b61fa8edc4e6ae35c2d31d6c32a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

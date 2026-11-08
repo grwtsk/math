@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/UnknownLedgerInterfaceBranch.lean/index.md) · [Full source](../../../../Combinatorics/UnknownLedgerInterfaceBranch.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerInterfaceBranch.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerInterfaceBranch.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [InterfaceBranch](../../../../Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/interfacebranch.md) | 14 | `declaration-track:95437fe46e1835f41abd95b208b153ce21308fcfdbfefd90640d45ecf7ecf216` |
-| 2 | `inductive` | [TerminalInterface](../../../../Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/terminalinterface.md) | 21 | `declaration-track:ee31e3614758312997da800969a571e4ff1a1701149ebf5d541efd4a3ea2988b` |
-| 3 | `def` | [TerminalInterface.branch](../../../../Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/terminalinterface-branch.md) | 53 | `declaration-track:d844f519f89baa94ad079b75ddf9efc63e7656f8499b8edbb348e051905b4eef` |
-| 4 | `def` | [TerminalInterface.requiredInTraceObservableMode](../../../../Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/terminalinterface-requiredintraceobservablemode.md) | 86 | `declaration-track:c5b4f5d604ab116f7d1eab14eb2571617451d8b2de628a6d03366a8b269bd351` |
-| 5 | `inductive` | [InterfaceStatus](../../../../Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/interfacestatus.md) | 92 | `declaration-track:c601fd0f4ef3924056d3da021ee3b722804a75d8d77eb89a5cda3c2f94d91f2c` |
-| 6 | `abbrev` | [InterfaceLedger](../../../../Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/interfaceledger.md) | 99 | `declaration-track:2c5d92fc5181785d16dd5d6219b24bb36a57f3356605088c0560c6e7b3776f92` |
-| 7 | `def` | [initialLedger](../../../../Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/initialledger.md) | 102 | `declaration-track:bf7fe3e68dd9d0a60d28f244cf7847c351141f629d0f5e2582f73c3893f0239d` |
-| 8 | `def` | [terminalInterfaces](../../../../Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/terminalinterfaces.md) | 105 | `declaration-track:135c7dee8a025e1c9929d1e79f6c8eb7d19df3aed8cdd085bf3bf881106f410c` |
-| 9 | `def` | [traceObservableTerminalInterfaces](../../../../Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/traceobservableterminalinterfaces.md) | 109 | `declaration-track:ae49963edafedd9a2d31b3c21780a110f5e606ebf0759c5b21d2e864524d51ca` |
-| 10 | `def` | [unresolvedInterfaces](../../../../Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/unresolvedinterfaces.md) | 114 | `declaration-track:0968348a2e88ba18823873d3e3ec4e91367f27b0c82fe204c3420899c8338f06` |
-| 11 | `def` | [unresolvedTraceObservableInterfaces](../../../../Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/unresolvedtraceobservableinterfaces.md) | 121 | `declaration-track:01b44b6309335377f2dfc17133568fc6116ed0bf56fade4ae8aa365be0d80479` |
-| 12 | `theorem` | [initial_interface_is_unresolved](../../../../Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/initial-interface-is-unresolved.md) | 128 | `result-track:1eae05059ed118380047b74bf02b6d95e9e54c157f0dcb533f68b5ffbdd64a33` |
+| 1 | `inductive` | [InterfaceBranch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/interfacebranch.md) | 14 | `declaration-track:95437fe46e1835f41abd95b208b153ce21308fcfdbfefd90640d45ecf7ecf216` |
+| 2 | `inductive` | [TerminalInterface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/terminalinterface.md) | 21 | `declaration-track:ee31e3614758312997da800969a571e4ff1a1701149ebf5d541efd4a3ea2988b` |
+| 3 | `def` | [TerminalInterface.branch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/terminalinterface-branch.md) | 53 | `declaration-track:d844f519f89baa94ad079b75ddf9efc63e7656f8499b8edbb348e051905b4eef` |
+| 4 | `def` | [TerminalInterface.requiredInTraceObservableMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/terminalinterface-requiredintraceobservablemode.md) | 86 | `declaration-track:c5b4f5d604ab116f7d1eab14eb2571617451d8b2de628a6d03366a8b269bd351` |
+| 5 | `inductive` | [InterfaceStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/interfacestatus.md) | 92 | `declaration-track:c601fd0f4ef3924056d3da021ee3b722804a75d8d77eb89a5cda3c2f94d91f2c` |
+| 6 | `abbrev` | [InterfaceLedger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/interfaceledger.md) | 99 | `declaration-track:2c5d92fc5181785d16dd5d6219b24bb36a57f3356605088c0560c6e7b3776f92` |
+| 7 | `def` | [initialLedger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/initialledger.md) | 102 | `declaration-track:bf7fe3e68dd9d0a60d28f244cf7847c351141f629d0f5e2582f73c3893f0239d` |
+| 8 | `def` | [terminalInterfaces](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/terminalinterfaces.md) | 105 | `declaration-track:135c7dee8a025e1c9929d1e79f6c8eb7d19df3aed8cdd085bf3bf881106f410c` |
+| 9 | `def` | [traceObservableTerminalInterfaces](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/traceobservableterminalinterfaces.md) | 109 | `declaration-track:ae49963edafedd9a2d31b3c21780a110f5e606ebf0759c5b21d2e864524d51ca` |
+| 10 | `def` | [unresolvedInterfaces](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/unresolvedinterfaces.md) | 114 | `declaration-track:0968348a2e88ba18823873d3e3ec4e91367f27b0c82fe204c3420899c8338f06` |
+| 11 | `def` | [unresolvedTraceObservableInterfaces](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/unresolvedtraceobservableinterfaces.md) | 121 | `declaration-track:01b44b6309335377f2dfc17133568fc6116ed0bf56fade4ae8aa365be0d80479` |
+| 12 | `theorem` | [initial_interface_is_unresolved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/UnknownLedgerInterfaceBranch.lean/declarations/initial-interface-is-unresolved.md) | 128 | `result-track:1eae05059ed118380047b74bf02b6d95e9e54c157f0dcb533f68b5ffbdd64a33` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

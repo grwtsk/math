@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceRemainingVariationObstructionNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceRemainingVariationObstructionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainingVariationObstructionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainingVariationObstructionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [remainingDerivativeMass](../../../../MeasureAndIntegration/SourceRemainingVariationObstructionNamespaced.lean/declarations/remainingderivativemass.md) | 32 | `declaration-track:a29286f82709da2710d901a14ada5860b7608988c981fc2a289c65ae821ad608` |
-| 2 | `theorem` | [criticalPrimeTest_deriv_early_lower](../../../../MeasureAndIntegration/SourceRemainingVariationObstructionNamespaced.lean/declarations/criticalprimetest-deriv-early-lower.md) | 36 | `result-track:452c22403415b64004453cd62db46cea063b6e7ef7f39d1b9e2fa10f95243559` |
-| 3 | `theorem` | [exp_interval](../../../../MeasureAndIntegration/SourceRemainingVariationObstructionNamespaced.lean/declarations/exp-interval.md) | 56 | `result-track:e94331bbfd72ff828f5b0eb108e337c6d1e6dae8f7934d6df72719b0df3b3922` |
-| 4 | `theorem` | [remainingDerivativeMass_exponential_lower](../../../../MeasureAndIntegration/SourceRemainingVariationObstructionNamespaced.lean/declarations/remainingderivativemass-exponential-lower.md) | 66 | `result-track:d12894b7b92b4af55f35626aaaf9f3a622dfd211d078312be433e8317ddd69a7` |
-| 5 | `theorem` | [remainingDerivativeMass_linear_lower](../../../../MeasureAndIntegration/SourceRemainingVariationObstructionNamespaced.lean/declarations/remainingderivativemass-linear-lower.md) | 97 | `result-track:93d9a70024e02ad934dd46203ce815e95ab4a1caa5d3e065b6d8ac90f88b94ed` |
-| 6 | `theorem` | [remainingDerivativeMass_not_eventually_bounded](../../../../MeasureAndIntegration/SourceRemainingVariationObstructionNamespaced.lean/declarations/remainingderivativemass-not-eventually-bounded.md) | 104 | `result-track:d9daf13d205c92092d6ae360458d65c9aafaddab9f292915bc89cef1eb96843a` |
+| 1 | `def` | [remainingDerivativeMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainingVariationObstructionNamespaced.lean/declarations/remainingderivativemass.md) | 32 | `declaration-track:a29286f82709da2710d901a14ada5860b7608988c981fc2a289c65ae821ad608` |
+| 2 | `theorem` | [criticalPrimeTest_deriv_early_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainingVariationObstructionNamespaced.lean/declarations/criticalprimetest-deriv-early-lower.md) | 36 | `result-track:452c22403415b64004453cd62db46cea063b6e7ef7f39d1b9e2fa10f95243559` |
+| 3 | `theorem` | [exp_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainingVariationObstructionNamespaced.lean/declarations/exp-interval.md) | 56 | `result-track:e94331bbfd72ff828f5b0eb108e337c6d1e6dae8f7934d6df72719b0df3b3922` |
+| 4 | `theorem` | [remainingDerivativeMass_exponential_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainingVariationObstructionNamespaced.lean/declarations/remainingderivativemass-exponential-lower.md) | 66 | `result-track:d12894b7b92b4af55f35626aaaf9f3a622dfd211d078312be433e8317ddd69a7` |
+| 5 | `theorem` | [remainingDerivativeMass_linear_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainingVariationObstructionNamespaced.lean/declarations/remainingderivativemass-linear-lower.md) | 97 | `result-track:93d9a70024e02ad934dd46203ce815e95ab4a1caa5d3e065b6d8ac90f88b94ed` |
+| 6 | `theorem` | [remainingDerivativeMass_not_eventually_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainingVariationObstructionNamespaced.lean/declarations/remainingderivativemass-not-eventually-bounded.md) | 104 | `result-track:d9daf13d205c92092d6ae360458d65c9aafaddab9f292915bc89cef1eb96843a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

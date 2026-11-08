@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonCWInteriorOrbit.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonCWInteriorOrbit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWInteriorOrbit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWInteriorOrbit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorSeparation`](../../../../AlgebraicTopology/SurfacePolygonCWInteriorSeparation.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorSeparation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWInteriorSeparation.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [oppositeBoundaryPoint](../../../../AlgebraicTopology/SurfacePolygonCWInteriorOrbit.lean/declarations/oppositeboundarypoint.md) | 28 | `declaration-track:656f03dd615cbe1aa73afeb7bec268681689df2ecdc77264f8f5bbc39a193022` |
-| 2 | `theorem` | [interior_step_pair_orbit](../../../../AlgebraicTopology/SurfacePolygonCWInteriorOrbit.lean/declarations/interior-step-pair-orbit.md) | 35 | `result-track:76b176aea312f5df02784aca18dbdc8239907768b059a2e16be11d568c189e57` |
-| 3 | `theorem` | [interior_step_preserves_handle](../../../../AlgebraicTopology/SurfacePolygonCWInteriorOrbit.lean/declarations/interior-step-preserves-handle.md) | 56 | `result-track:b158862f4a2f6e3103220181e37b954639706b53e7b381246e147262bb79cf9a` |
-| 4 | `theorem` | [interior_step_preserves_nonendpoint](../../../../AlgebraicTopology/SurfacePolygonCWInteriorOrbit.lean/declarations/interior-step-preserves-nonendpoint.md) | 65 | `result-track:553cdebd76fe93a82293194745b8f86960bd9b0b6e3fd851e3a8264eab254bf7` |
+| 1 | `def` | [oppositeBoundaryPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWInteriorOrbit.lean/declarations/oppositeboundarypoint.md) | 28 | `declaration-track:656f03dd615cbe1aa73afeb7bec268681689df2ecdc77264f8f5bbc39a193022` |
+| 2 | `theorem` | [interior_step_pair_orbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWInteriorOrbit.lean/declarations/interior-step-pair-orbit.md) | 35 | `result-track:76b176aea312f5df02784aca18dbdc8239907768b059a2e16be11d568c189e57` |
+| 3 | `theorem` | [interior_step_preserves_handle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWInteriorOrbit.lean/declarations/interior-step-preserves-handle.md) | 56 | `result-track:b158862f4a2f6e3103220181e37b954639706b53e7b381246e147262bb79cf9a` |
+| 4 | `theorem` | [interior_step_preserves_nonendpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWInteriorOrbit.lean/declarations/interior-step-preserves-nonendpoint.md) | 65 | `result-track:553cdebd76fe93a82293194745b8f86960bd9b0b6e3fd851e3a8264eab254bf7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

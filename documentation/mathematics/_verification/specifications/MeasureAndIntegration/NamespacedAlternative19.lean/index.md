@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/NamespacedAlternative19.lean/index.md) · [Full source](../../../../MeasureAndIntegration/NamespacedAlternative19.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative19.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative19.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [unitCorrelation_product_majorant_integrable](../../../../MeasureAndIntegration/NamespacedAlternative19.lean/declarations/unitcorrelation-product-majorant-integrable.md) | 31 | `result-track:673d131cc926e4208184444c3829654df4c01f60c23dff25d61f06bfafd4fde7` |
-| 2 | `theorem` | [unitCorrelation_product_integrable](../../../../MeasureAndIntegration/NamespacedAlternative19.lean/declarations/unitcorrelation-product-integrable.md) | 39 | `result-track:9f0da8d96e3f185777a164289174ea23873aa5283fbd570e441364e587f3ac91` |
-| 3 | `theorem` | [unitCorrelation_integral](../../../../MeasureAndIntegration/NamespacedAlternative19.lean/declarations/unitcorrelation-integral.md) | 53 | `result-track:8f00f308489565a25ef6c4112ff4d859f257cd74292912b9b2114412fc32a092` |
-| 4 | `theorem` | [unitCorrelation_even](../../../../MeasureAndIntegration/NamespacedAlternative19.lean/declarations/unitcorrelation-even.md) | 62 | `result-track:839c3325c3fe38261725e60c8bc851efa93947a78039ad05569650bf097da4db` |
-| 5 | `theorem` | [unitCorrelation_integral_eq_interval](../../../../MeasureAndIntegration/NamespacedAlternative19.lean/declarations/unitcorrelation-integral-eq-interval.md) | 70 | `result-track:db22d06687175e961fe99afa4ab89fc1da453c59d63770765109d271d8f8af4e` |
-| 6 | `theorem` | [unitCorrelation_half_mass](../../../../MeasureAndIntegration/NamespacedAlternative19.lean/declarations/unitcorrelation-half-mass.md) | 86 | `result-track:285e6f0e45c5673000cc00efb166a2f021885e80cb980fda4e0df6234a437eef` |
-| 7 | `theorem` | [unitCorrelation_half_mass_formula](../../../../MeasureAndIntegration/NamespacedAlternative19.lean/declarations/unitcorrelation-half-mass-formula.md) | 103 | `result-track:6a793340d5528e446c2f0b4a3e8675072459b1269504d6158fac18846f12cda2` |
-| 8 | `theorem` | [unitCorrelation_half_mass_ge](../../../../MeasureAndIntegration/NamespacedAlternative19.lean/declarations/unitcorrelation-half-mass-ge.md) | 112 | `result-track:b6cf0131a9af86d132c9f519e7b0511ebade06631201d9bfdd85d29c03fa2951` |
-| 9 | `theorem` | [unitCorrelation_abs_le_one](../../../../MeasureAndIntegration/NamespacedAlternative19.lean/declarations/unitcorrelation-abs-le-one.md) | 119 | `result-track:f22697a7297b4af3f6d83a25687947e8382cb61f0ead172805122add212c3251` |
+| 1 | `theorem` | [unitCorrelation_product_majorant_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative19.lean/declarations/unitcorrelation-product-majorant-integrable.md) | 31 | `result-track:673d131cc926e4208184444c3829654df4c01f60c23dff25d61f06bfafd4fde7` |
+| 2 | `theorem` | [unitCorrelation_product_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative19.lean/declarations/unitcorrelation-product-integrable.md) | 39 | `result-track:9f0da8d96e3f185777a164289174ea23873aa5283fbd570e441364e587f3ac91` |
+| 3 | `theorem` | [unitCorrelation_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative19.lean/declarations/unitcorrelation-integral.md) | 53 | `result-track:8f00f308489565a25ef6c4112ff4d859f257cd74292912b9b2114412fc32a092` |
+| 4 | `theorem` | [unitCorrelation_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative19.lean/declarations/unitcorrelation-even.md) | 62 | `result-track:839c3325c3fe38261725e60c8bc851efa93947a78039ad05569650bf097da4db` |
+| 5 | `theorem` | [unitCorrelation_integral_eq_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative19.lean/declarations/unitcorrelation-integral-eq-interval.md) | 70 | `result-track:db22d06687175e961fe99afa4ab89fc1da453c59d63770765109d271d8f8af4e` |
+| 6 | `theorem` | [unitCorrelation_half_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative19.lean/declarations/unitcorrelation-half-mass.md) | 86 | `result-track:285e6f0e45c5673000cc00efb166a2f021885e80cb980fda4e0df6234a437eef` |
+| 7 | `theorem` | [unitCorrelation_half_mass_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative19.lean/declarations/unitcorrelation-half-mass-formula.md) | 103 | `result-track:6a793340d5528e446c2f0b4a3e8675072459b1269504d6158fac18846f12cda2` |
+| 8 | `theorem` | [unitCorrelation_half_mass_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative19.lean/declarations/unitcorrelation-half-mass-ge.md) | 112 | `result-track:b6cf0131a9af86d132c9f519e7b0511ebade06631201d9bfdd85d29c03fa2951` |
+| 9 | `theorem` | [unitCorrelation_abs_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative19.lean/declarations/unitcorrelation-abs-le-one.md) | 119 | `result-track:f22697a7297b4af3f6d83a25687947e8382cb61f0ead172805122add212c3251` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

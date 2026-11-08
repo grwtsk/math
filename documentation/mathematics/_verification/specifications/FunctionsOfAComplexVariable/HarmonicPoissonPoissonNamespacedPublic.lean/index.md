@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/HarmonicPoissonPoissonNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/HarmonicPoissonPoissonNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HarmonicPoissonPoissonNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HarmonicPoissonPoissonNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [continuousOn_herglotz_riesz](../../../../FunctionsOfAComplexVariable/HarmonicPoissonPoissonNamespacedPublic.lean/declarations/continuouson-herglotz-riesz.md) | 39 | `result-track:924e83ab60da52eac87d5a24f7c080eddb04f3000938da50391bb530dd84df88` |
-| 2 | `theorem` | [HarmonicOnNhd.circleAverage_re_herglotzRieszKernel_smul](../../../../FunctionsOfAComplexVariable/HarmonicPoissonPoissonNamespacedPublic.lean/declarations/harmoniconnhd-circleaverage-re-herglotzrieszkernel-smul.md) | 50 | `result-track:ae4b87c675a071cafa6918f5157cd175b5ab360d44ad287f32e49a9d03170c54` |
-| 3 | `theorem` | [HarmonicContOnCl.circleAverage_re_herglotzRieszKernel_smul](../../../../FunctionsOfAComplexVariable/HarmonicPoissonPoissonNamespacedPublic.lean/declarations/harmoniccontoncl-circleaverage-re-herglotzrieszkernel-smul.md) | 82 | `result-track:48c901355e4b959d8e41abd52de23791ba8586ac0e1fdbce3d28dae4785f415a` |
-| 4 | `theorem` | [HarmonicOnNhd.circleAverage_poissonKernel_smul](../../../../FunctionsOfAComplexVariable/HarmonicPoissonPoissonNamespacedPublic.lean/declarations/harmoniconnhd-circleaverage-poissonkernel-smul.md) | 100 | `result-track:304f57a18e6ce084600a59fdf6098a123b97e2a77ee11de59735801682decd85` |
-| 5 | `theorem` | [HarmonicContOnCl.circleAverage_poissonKernel_smul](../../../../FunctionsOfAComplexVariable/HarmonicPoissonPoissonNamespacedPublic.lean/declarations/harmoniccontoncl-circleaverage-poissonkernel-smul.md) | 111 | `result-track:9ffa7af097a9bdb208dbe7986598b5b7f8246bb0c05154d10814423c7ad6b03a` |
+| 1 | `lemma` | [continuousOn_herglotz_riesz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HarmonicPoissonPoissonNamespacedPublic.lean/declarations/continuouson-herglotz-riesz.md) | 39 | `result-track:924e83ab60da52eac87d5a24f7c080eddb04f3000938da50391bb530dd84df88` |
+| 2 | `theorem` | [HarmonicOnNhd.circleAverage_re_herglotzRieszKernel_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HarmonicPoissonPoissonNamespacedPublic.lean/declarations/harmoniconnhd-circleaverage-re-herglotzrieszkernel-smul.md) | 50 | `result-track:ae4b87c675a071cafa6918f5157cd175b5ab360d44ad287f32e49a9d03170c54` |
+| 3 | `theorem` | [HarmonicContOnCl.circleAverage_re_herglotzRieszKernel_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HarmonicPoissonPoissonNamespacedPublic.lean/declarations/harmoniccontoncl-circleaverage-re-herglotzrieszkernel-smul.md) | 82 | `result-track:48c901355e4b959d8e41abd52de23791ba8586ac0e1fdbce3d28dae4785f415a` |
+| 4 | `theorem` | [HarmonicOnNhd.circleAverage_poissonKernel_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HarmonicPoissonPoissonNamespacedPublic.lean/declarations/harmoniconnhd-circleaverage-poissonkernel-smul.md) | 100 | `result-track:304f57a18e6ce084600a59fdf6098a123b97e2a77ee11de59735801682decd85` |
+| 5 | `theorem` | [HarmonicContOnCl.circleAverage_poissonKernel_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HarmonicPoissonPoissonNamespacedPublic.lean/declarations/harmoniccontoncl-circleaverage-poissonkernel-smul.md) | 111 | `result-track:9ffa7af097a9bdb208dbe7986598b5b7f8246bb0c05154d10814423c7ad6b03a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodelsNamespacedNoUniformChainLength.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodelsNamespacedNoUniformChainLength.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodelsNamespacedNoUniformChainLength.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodelsNamespacedNoUniformChainLength.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [no_uniform_readout_bound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodelsNamespacedNoUniformChainLength.lean/declarations/no-uniform-readout-bound.md) | 22 | `result-track:f57db5a299f18317cd02414899e0a27513b282eccfd3bcb68789e7f0266aed5a` |
-| 2 | `theorem` | [zero_cycle_unbounded_prefix](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodelsNamespacedNoUniformChainLength.lean/declarations/zero-cycle-unbounded-prefix.md) | 32 | `result-track:1028dee3947c3ff02b09aa4c60db35405c421ba52d63ec47d574c4169b38a2c9` |
-| 3 | `theorem` | [no_uniform_chain_length](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodelsNamespacedNoUniformChainLength.lean/declarations/no-uniform-chain-length.md) | 39 | `result-track:5dde768e5c9763d6a7c9e8f6f2cde44f5ae2ab916d6d1918a4c74f4d5b507b0c` |
-| 4 | `theorem` | [chart_inverse](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodelsNamespacedNoUniformChainLength.lean/declarations/chart-inverse.md) | 45 | `result-track:527ef6fba0683a65515a588763b216172c8be5f5c4e89ebbdcf546d72f82c652` |
-| 5 | `theorem` | [no_uniform_inverse_chart_bound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodelsNamespacedNoUniformChainLength.lean/declarations/no-uniform-inverse-chart-bound.md) | 52 | `result-track:4a323e877dd36ab8516502252a7915e194ffcd7f2c4f22de17c78c20de455bcf` |
+| 1 | `theorem` | [no_uniform_readout_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodelsNamespacedNoUniformChainLength.lean/declarations/no-uniform-readout-bound.md) | 22 | `result-track:f57db5a299f18317cd02414899e0a27513b282eccfd3bcb68789e7f0266aed5a` |
+| 2 | `theorem` | [zero_cycle_unbounded_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodelsNamespacedNoUniformChainLength.lean/declarations/zero-cycle-unbounded-prefix.md) | 32 | `result-track:1028dee3947c3ff02b09aa4c60db35405c421ba52d63ec47d574c4169b38a2c9` |
+| 3 | `theorem` | [no_uniform_chain_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodelsNamespacedNoUniformChainLength.lean/declarations/no-uniform-chain-length.md) | 39 | `result-track:5dde768e5c9763d6a7c9e8f6f2cde44f5ae2ab916d6d1918a4c74f4d5b507b0c` |
+| 4 | `theorem` | [chart_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodelsNamespacedNoUniformChainLength.lean/declarations/chart-inverse.md) | 45 | `result-track:527ef6fba0683a65515a588763b216172c8be5f5c4e89ebbdcf546d72f82c652` |
+| 5 | `theorem` | [no_uniform_inverse_chart_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodelsNamespacedNoUniformChainLength.lean/declarations/no-uniform-inverse-chart-bound.md) | 52 | `result-track:4a323e877dd36ab8516502252a7915e194ffcd7f2c4f22de17c78c20de455bcf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

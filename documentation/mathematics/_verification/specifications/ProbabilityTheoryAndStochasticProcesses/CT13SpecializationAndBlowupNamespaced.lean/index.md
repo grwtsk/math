@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CT13SpecializationAndBlowupNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CT13SpecializationAndBlowupNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CT13SpecializationAndBlowupNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CT13SpecializationAndBlowupNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ct13_specializationAndBlowup](../../../../ProbabilityTheoryAndStochasticProcesses/CT13SpecializationAndBlowupNamespaced.lean/declarations/ct13-specializationandblowup.md) | 19 | `result-track:0c97424781141542fb940ab14ead0f959f097c0e9f9a31e629e5f2b3175aa5b4` |
+| 1 | `theorem` | [ct13_specializationAndBlowup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CT13SpecializationAndBlowupNamespaced.lean/declarations/ct13-specializationandblowup.md) | 19 | `result-track:0c97424781141542fb940ab14ead0f959f097c0e9f9a31e629e5f2b3175aa5b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

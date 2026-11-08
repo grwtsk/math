@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [FieldAxiom](../../../../../MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/declarations/fieldaxiom.md) | 42 | `declaration-track:a6c10725698d5e5a6ef9bad5be722342ae392d25b45a7c698eb57e53c5a043c2` |
-| 2 | `def` | [FieldAxiom.toSentence](../../../../../MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/declarations/fieldaxiom-tosentence.md) | 55 | `declaration-track:648345293c5c8e5c117b3bdffd5200a163dd097e02eb1c30ed3653b7184bfdaf` |
-| 3 | `def` | [FieldAxiom.toProp](../../../../../MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/declarations/fieldaxiom-toprop.md) | 68 | `declaration-track:9947f673c95935d46d492e4317b74fa6b376c9d99065f3ac0f66ad21b8eba9fd` |
-| 4 | `def` | [_root_.FirstOrder.Language.Theory.field](../../../../../MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/declarations/root-firstorder-language-theory-field.md) | 81 | `declaration-track:40e5cdb2377ac27ff6f4b82f67af76d6ad3c69805ccd14170e6414ab1b3fd503` |
-| 5 | `theorem` | [FieldAxiom.realize_toSentence_iff_toProp](../../../../../MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/declarations/fieldaxiom-realize-tosentence-iff-toprop.md) | 84 | `result-track:eb62407c4d708a17e0db50a67466751ace938d23011edc37a723ae8a4804258f` |
-| 6 | `theorem` | [FieldAxiom.toProp_of_model](../../../../../MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/declarations/fieldaxiom-toprop-of-model.md) | 91 | `result-track:49b5fc3a493950f1a47d09daffb592519e2f9216f4d0430b743daed3d885f296` |
-| 7 | `abbrev` | [fieldOfModelField](../../../../../MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/declarations/fieldofmodelfield.md) | 105 | `declaration-track:06332b678dbe9b82261be075af7c6370c0ebcc645599c966f4ac2a530715b242` |
-| 8 | `abbrev` | [compatibleRingOfModelField](../../../../../MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/declarations/compatibleringofmodelfield.md) | 140 | `declaration-track:c1018d8a601aeb820dae75e5d99e9552f2901a7b8097926025e573fe07e74bc9` |
-| 9 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/declarations/instance.md) | 146 | `declaration-track:aa7abf9e6feb6201fc746a36bfd020f9436513bb16df5861d9b50017aa2df660` |
+| 1 | `inductive` | [FieldAxiom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/declarations/fieldaxiom.md) | 42 | `declaration-track:a6c10725698d5e5a6ef9bad5be722342ae392d25b45a7c698eb57e53c5a043c2` |
+| 2 | `def` | [FieldAxiom.toSentence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/declarations/fieldaxiom-tosentence.md) | 55 | `declaration-track:648345293c5c8e5c117b3bdffd5200a163dd097e02eb1c30ed3653b7184bfdaf` |
+| 3 | `def` | [FieldAxiom.toProp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/declarations/fieldaxiom-toprop.md) | 68 | `declaration-track:9947f673c95935d46d492e4317b74fa6b376c9d99065f3ac0f66ad21b8eba9fd` |
+| 4 | `def` | [_root_.FirstOrder.Language.Theory.field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/declarations/root-firstorder-language-theory-field.md) | 81 | `declaration-track:40e5cdb2377ac27ff6f4b82f67af76d6ad3c69805ccd14170e6414ab1b3fd503` |
+| 5 | `theorem` | [FieldAxiom.realize_toSentence_iff_toProp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/declarations/fieldaxiom-realize-tosentence-iff-toprop.md) | 84 | `result-track:eb62407c4d708a17e0db50a67466751ace938d23011edc37a723ae8a4804258f` |
+| 6 | `theorem` | [FieldAxiom.toProp_of_model](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/declarations/fieldaxiom-toprop-of-model.md) | 91 | `result-track:49b5fc3a493950f1a47d09daffb592519e2f9216f4d0430b743daed3d885f296` |
+| 7 | `abbrev` | [fieldOfModelField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/declarations/fieldofmodelfield.md) | 105 | `declaration-track:06332b678dbe9b82261be075af7c6370c0ebcc645599c966f4ac2a530715b242` |
+| 8 | `abbrev` | [compatibleRingOfModelField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/declarations/compatibleringofmodelfield.md) | 140 | `declaration-track:c1018d8a601aeb820dae75e5d99e9552f2901a7b8097926025e573fe07e74bc9` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/FieldBasicPublic.lean/declarations/instance.md) | 146 | `declaration-track:aa7abf9e6feb6201fc746a36bfd020f9436513bb16df5861d9b50017aa2df660` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

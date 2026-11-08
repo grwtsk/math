@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PositiveGaussianDyadic.lean/index.md) · [Full source](../../../../NumberTheory/PositiveGaussianDyadic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PositiveGaussianDyadic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PositiveGaussianDyadic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.LSeries.GaussianDyadic`](../../../../NumberTheory/LSeriesGaussianDyadic.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.LSeries.GaussianDyadic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LSeriesGaussianDyadic.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dyadic_partition_generic](../../../../NumberTheory/PositiveGaussianDyadic.lean/declarations/dyadic-partition-generic.md) | 12 | `result-track:53eaf72975bfd4c1b289610eff666962f836dee3c1ef8cd0314347fceff77b18` |
-| 2 | `theorem` | [gaussianDyadic_generic](../../../../NumberTheory/PositiveGaussianDyadic.lean/declarations/gaussiandyadic-generic.md) | 16 | `result-track:4cd47fa345278bc983c301d4a42664249dd911590b974d61bc5c23a019725e92` |
-| 3 | `theorem` | [gaussianDyadic_two_one](../../../../NumberTheory/PositiveGaussianDyadic.lean/declarations/gaussiandyadic-two-one.md) | 21 | `result-track:10f4d7274165b7791e8865aec7be1c1bb800a4254643232f76e9b6523fae4c63` |
-| 4 | `theorem` | [gaussianDyadic_first_scale](../../../../NumberTheory/PositiveGaussianDyadic.lean/declarations/gaussiandyadic-first-scale.md) | 26 | `result-track:2e8b9b26d7122dd5d8d8a83cf8a4427f2812837a76b248bde1f3a61f0de31a56` |
-| 5 | `theorem` | [dyadic_quarter_all_zero](../../../../NumberTheory/PositiveGaussianDyadic.lean/declarations/dyadic-quarter-all-zero.md) | 33 | `result-track:29f854a78aaf6a35002f02bf38220387ea5ef787175d51b0566839e09151110e` |
-| 6 | `theorem` | [dyadic_quarter_tsum_zero](../../../../NumberTheory/PositiveGaussianDyadic.lean/declarations/dyadic-quarter-tsum-zero.md) | 40 | `result-track:32e990c568fedb1b5bbc5c04502d004f0d48b740c7c859360fca8679cfcb0a55` |
-| 7 | `theorem` | [dyadic_quarter_not_partition](../../../../NumberTheory/PositiveGaussianDyadic.lean/declarations/dyadic-quarter-not-partition.md) | 44 | `result-track:9b48193f2e428b306898ff9d2164513e0a617af14dd3d3897094a884a96de494` |
+| 1 | `theorem` | [dyadic_partition_generic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PositiveGaussianDyadic.lean/declarations/dyadic-partition-generic.md) | 12 | `result-track:53eaf72975bfd4c1b289610eff666962f836dee3c1ef8cd0314347fceff77b18` |
+| 2 | `theorem` | [gaussianDyadic_generic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PositiveGaussianDyadic.lean/declarations/gaussiandyadic-generic.md) | 16 | `result-track:4cd47fa345278bc983c301d4a42664249dd911590b974d61bc5c23a019725e92` |
+| 3 | `theorem` | [gaussianDyadic_two_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PositiveGaussianDyadic.lean/declarations/gaussiandyadic-two-one.md) | 21 | `result-track:10f4d7274165b7791e8865aec7be1c1bb800a4254643232f76e9b6523fae4c63` |
+| 4 | `theorem` | [gaussianDyadic_first_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PositiveGaussianDyadic.lean/declarations/gaussiandyadic-first-scale.md) | 26 | `result-track:2e8b9b26d7122dd5d8d8a83cf8a4427f2812837a76b248bde1f3a61f0de31a56` |
+| 5 | `theorem` | [dyadic_quarter_all_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PositiveGaussianDyadic.lean/declarations/dyadic-quarter-all-zero.md) | 33 | `result-track:29f854a78aaf6a35002f02bf38220387ea5ef787175d51b0566839e09151110e` |
+| 6 | `theorem` | [dyadic_quarter_tsum_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PositiveGaussianDyadic.lean/declarations/dyadic-quarter-tsum-zero.md) | 40 | `result-track:32e990c568fedb1b5bbc5c04502d004f0d48b740c7c859360fca8679cfcb0a55` |
+| 7 | `theorem` | [dyadic_quarter_not_partition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PositiveGaussianDyadic.lean/declarations/dyadic-quarter-not-partition.md) | 44 | `result-track:9b48193f2e428b306898ff9d2164513e0a617af14dd3d3897094a884a96de494` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

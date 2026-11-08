@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourcePrimitiveMass.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourcePrimitiveMass.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveMass.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveMass.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [expHalfMoment_integrable](../../../../MeasureAndIntegration/SourcePrimitiveMass.lean/declarations/exphalfmoment-integrable.md) | 16 | `result-track:f17e0cdc29f7d848216217a28c1eb694d6db9c3069fa2347491f83a524170612` |
-| 2 | `theorem` | [expHalfMoment_integral](../../../../MeasureAndIntegration/SourcePrimitiveMass.lean/declarations/exphalfmoment-integral.md) | 37 | `result-track:5697372ae34c2070e75d81c72af20d742bcb193044b65a942f31147f741ac9b8` |
-| 3 | `theorem` | [reflectedEnvelope_integrable](../../../../MeasureAndIntegration/SourcePrimitiveMass.lean/declarations/reflectedenvelope-integrable.md) | 50 | `result-track:2fabbf96f0d43117c7d1bcbc0c46182218d7d447b714f315f4fabdb4967aed46` |
-| 4 | `theorem` | [reflectedEnvelope_integral](../../../../MeasureAndIntegration/SourcePrimitiveMass.lean/declarations/reflectedenvelope-integral.md) | 62 | `result-track:4245d26590a305d9e64f53924b41785d916d6391ab14cc58e0a635244500c272` |
-| 5 | `theorem` | [reflectedPrimitive_intervalIntegrable](../../../../MeasureAndIntegration/SourcePrimitiveMass.lean/declarations/reflectedprimitive-intervalintegrable.md) | 79 | `result-track:6551627475d450ba2bf99199a3330139d1fbc1813491b6cbca20c9d250ed6cca` |
-| 6 | `theorem` | [reflectedPrimitive_mass_bounds](../../../../MeasureAndIntegration/SourcePrimitiveMass.lean/declarations/reflectedprimitive-mass-bounds.md) | 87 | `result-track:45488bb74dae4214773b896fc877b82175e560c1e57518065f32ef11b084d4bd` |
+| 1 | `theorem` | [expHalfMoment_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveMass.lean/declarations/exphalfmoment-integrable.md) | 16 | `result-track:f17e0cdc29f7d848216217a28c1eb694d6db9c3069fa2347491f83a524170612` |
+| 2 | `theorem` | [expHalfMoment_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveMass.lean/declarations/exphalfmoment-integral.md) | 37 | `result-track:5697372ae34c2070e75d81c72af20d742bcb193044b65a942f31147f741ac9b8` |
+| 3 | `theorem` | [reflectedEnvelope_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveMass.lean/declarations/reflectedenvelope-integrable.md) | 50 | `result-track:2fabbf96f0d43117c7d1bcbc0c46182218d7d447b714f315f4fabdb4967aed46` |
+| 4 | `theorem` | [reflectedEnvelope_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveMass.lean/declarations/reflectedenvelope-integral.md) | 62 | `result-track:4245d26590a305d9e64f53924b41785d916d6391ab14cc58e0a635244500c272` |
+| 5 | `theorem` | [reflectedPrimitive_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveMass.lean/declarations/reflectedprimitive-intervalintegrable.md) | 79 | `result-track:6551627475d450ba2bf99199a3330139d1fbc1813491b6cbca20c9d250ed6cca` |
+| 6 | `theorem` | [reflectedPrimitive_mass_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveMass.lean/declarations/reflectedprimitive-mass-bounds.md) | 87 | `result-track:45488bb74dae4214773b896fc877b82175e560c1e57518065f32ef11b084d4bd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

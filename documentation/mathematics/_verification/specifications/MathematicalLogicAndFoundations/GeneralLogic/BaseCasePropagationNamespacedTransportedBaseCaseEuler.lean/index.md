@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationNamespacedTransportedBaseCaseEuler.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationNamespacedTransportedBaseCaseEuler.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationNamespacedTransportedBaseCaseEuler.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationNamespacedTransportedBaseCaseEuler.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TransportedBaseCaseEuler](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationNamespacedTransportedBaseCaseEuler.lean/declarations/transportedbasecaseeuler.md) | 36 | `declaration-track:70454cb01fdfd7353f65d66a3603b1b2150a3837d30dc8e85a6e3baa42d54b8c` |
-| 2 | `theorem` | [transported_base_case_euler_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationNamespacedTransportedBaseCaseEuler.lean/declarations/transported-base-case-euler-nonzero.md) | 47 | `result-track:135da041f6a4642e38a20da92110c7ba6dfe0a7da6d0caed8e7dfc4e228e4b7d` |
-| 3 | `structure` | [BaseCaseCriticalLinePropagation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationNamespacedTransportedBaseCaseEuler.lean/declarations/basecasecriticallinepropagation.md) | 66 | `declaration-track:dad56bd4519e1cb9d21295ec512c77da07245f087a3e23c5d6db8d08020d501a` |
-| 4 | `theorem` | [base_case_propagation_conclusion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationNamespacedTransportedBaseCaseEuler.lean/declarations/base-case-propagation-conclusion.md) | 74 | `result-track:17686fd36beaad6ae0133e61770da952ad66208d8c8cc0e9b765c3a9e4dbdcb2` |
+| 1 | `structure` | [TransportedBaseCaseEuler](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationNamespacedTransportedBaseCaseEuler.lean/declarations/transportedbasecaseeuler.md) | 36 | `declaration-track:70454cb01fdfd7353f65d66a3603b1b2150a3837d30dc8e85a6e3baa42d54b8c` |
+| 2 | `theorem` | [transported_base_case_euler_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationNamespacedTransportedBaseCaseEuler.lean/declarations/transported-base-case-euler-nonzero.md) | 47 | `result-track:135da041f6a4642e38a20da92110c7ba6dfe0a7da6d0caed8e7dfc4e228e4b7d` |
+| 3 | `structure` | [BaseCaseCriticalLinePropagation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationNamespacedTransportedBaseCaseEuler.lean/declarations/basecasecriticallinepropagation.md) | 66 | `declaration-track:dad56bd4519e1cb9d21295ec512c77da07245f087a3e23c5d6db8d08020d501a` |
+| 4 | `theorem` | [base_case_propagation_conclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationNamespacedTransportedBaseCaseEuler.lean/declarations/base-case-propagation-conclusion.md) | 74 | `result-track:17686fd36beaad6ae0133e61770da952ad66208d8c8cc0e9b765c3a9e4dbdcb2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

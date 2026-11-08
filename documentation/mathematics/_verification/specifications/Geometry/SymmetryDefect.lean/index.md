@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/SymmetryDefect.lean/index.md) · [Full source](../../../../Geometry/SymmetryDefect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SymmetryDefect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SymmetryDefect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ApproximateEquivariantScheduleDynamics](../../../../Geometry/SymmetryDefect.lean/declarations/approximateequivariantscheduledynamics.md) | 16 | `declaration-track:1354476cfee955a928bbba5f5f9a6e0aa1d1c8c8b11b6d5d2d7fa6df87a3d751` |
-| 2 | `theorem` | [symmetry_displacement_recurrence](../../../../Geometry/SymmetryDefect.lean/declarations/symmetry-displacement-recurrence.md) | 72 | `result-track:23db8a3694b8ffefbce95050a44fab669f10c8e713fff21b530ad904b732d8db` |
-| 3 | `theorem` | [invariant_law_symmetry_defect_bound](../../../../Geometry/SymmetryDefect.lean/declarations/invariant-law-symmetry-defect-bound.md) | 169 | `result-track:c29ff81e367528554abfbc74d1af859414c801f356378d1a84cd6a5edee34268` |
-| 4 | `theorem` | [invariantLaw_exact_of_equivarianceDefect_eq_zero](../../../../Geometry/SymmetryDefect.lean/declarations/invariantlaw-exact-of-equivariancedefect-eq-zero.md) | 212 | `result-track:719a8d8831ab38e40ae60c7d89f6d5f2a59268f56e86d6faa5cf53be642cf388` |
-| 5 | `structure` | [LawObservableLipschitzCertificate](../../../../Geometry/SymmetryDefect.lean/declarations/lawobservablelipschitzcertificate.md) | 254 | `declaration-track:10fcd722881b9fc368d2480eda4844c8a0d7a60d620bd993bbc2d9a8ffa72cf8` |
-| 6 | `theorem` | [observable_symmetry_defect_bound](../../../../Geometry/SymmetryDefect.lean/declarations/observable-symmetry-defect-bound.md) | 265 | `result-track:6ad0bbcb0e6db4afe7a19042da418e506033b7bcd80a4f0ec9260f6c169ad90e` |
+| 1 | `structure` | [ApproximateEquivariantScheduleDynamics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SymmetryDefect.lean/declarations/approximateequivariantscheduledynamics.md) | 16 | `declaration-track:1354476cfee955a928bbba5f5f9a6e0aa1d1c8c8b11b6d5d2d7fa6df87a3d751` |
+| 2 | `theorem` | [symmetry_displacement_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SymmetryDefect.lean/declarations/symmetry-displacement-recurrence.md) | 72 | `result-track:23db8a3694b8ffefbce95050a44fab669f10c8e713fff21b530ad904b732d8db` |
+| 3 | `theorem` | [invariant_law_symmetry_defect_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SymmetryDefect.lean/declarations/invariant-law-symmetry-defect-bound.md) | 169 | `result-track:c29ff81e367528554abfbc74d1af859414c801f356378d1a84cd6a5edee34268` |
+| 4 | `theorem` | [invariantLaw_exact_of_equivarianceDefect_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SymmetryDefect.lean/declarations/invariantlaw-exact-of-equivariancedefect-eq-zero.md) | 212 | `result-track:719a8d8831ab38e40ae60c7d89f6d5f2a59268f56e86d6faa5cf53be642cf388` |
+| 5 | `structure` | [LawObservableLipschitzCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SymmetryDefect.lean/declarations/lawobservablelipschitzcertificate.md) | 254 | `declaration-track:10fcd722881b9fc368d2480eda4844c8a0d7a60d620bd993bbc2d9a8ffa72cf8` |
+| 6 | `theorem` | [observable_symmetry_defect_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SymmetryDefect.lean/declarations/observable-symmetry-defect-bound.md) | 265 | `result-track:6ad0bbcb0e6db4afe7a19042da418e506033b7bcd80a4f0ec9260f6c169ad90e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

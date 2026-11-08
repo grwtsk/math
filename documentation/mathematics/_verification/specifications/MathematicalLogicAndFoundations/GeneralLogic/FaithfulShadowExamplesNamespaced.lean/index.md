@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamplesNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamplesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamplesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamplesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toyShadowLevel0](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamplesNamespaced.lean/declarations/toyshadowlevel0.md) | 23 | `declaration-track:098a4d6988fbe61980af573ac9ffbd5fb9a568162640c892f6d93c817bc253a0` |
-| 2 | `def` | [toyRelaxedLimit](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamplesNamespaced.lean/declarations/toyrelaxedlimit.md) | 30 | `declaration-track:a137830b614d23e760b9dbf6bbadd46a6f45af12a26b8c1ad125afe830b52508` |
-| 3 | `def` | [toyShadowMap0](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamplesNamespaced.lean/declarations/toyshadowmap0.md) | 36 | `declaration-track:a1499593e96d75c1285627fb77017bbb49e57c421820911eb50d0d90fddd0932` |
-| 4 | `def` | [toyFaithfulShadowCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamplesNamespaced.lean/declarations/toyfaithfulshadowcertificate.md) | 51 | `declaration-track:26bf4114221d373fda8caf8461fd98025e42e44b68b07e99ba35b11e96c084bf` |
-| 5 | `theorem` | [example_faithful_shadow_recoverability](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamplesNamespaced.lean/declarations/example-faithful-shadow-recoverability.md) | 72 | `result-track:9da8ffcb539ece0f5d55fee47c4e9417c20f7842b77628d1d8c7efa2e004e966` |
+| 1 | `def` | [toyShadowLevel0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamplesNamespaced.lean/declarations/toyshadowlevel0.md) | 23 | `declaration-track:098a4d6988fbe61980af573ac9ffbd5fb9a568162640c892f6d93c817bc253a0` |
+| 2 | `def` | [toyRelaxedLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamplesNamespaced.lean/declarations/toyrelaxedlimit.md) | 30 | `declaration-track:a137830b614d23e760b9dbf6bbadd46a6f45af12a26b8c1ad125afe830b52508` |
+| 3 | `def` | [toyShadowMap0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamplesNamespaced.lean/declarations/toyshadowmap0.md) | 36 | `declaration-track:a1499593e96d75c1285627fb77017bbb49e57c421820911eb50d0d90fddd0932` |
+| 4 | `def` | [toyFaithfulShadowCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamplesNamespaced.lean/declarations/toyfaithfulshadowcertificate.md) | 51 | `declaration-track:26bf4114221d373fda8caf8461fd98025e42e44b68b07e99ba35b11e96c084bf` |
+| 5 | `theorem` | [example_faithful_shadow_recoverability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FaithfulShadowExamplesNamespaced.lean/declarations/example-faithful-shadow-recoverability.md) | 72 | `result-track:9da8ffcb539ece0f5d55fee47c4e9417c20f7842b77628d1d8c7efa2e004e966` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

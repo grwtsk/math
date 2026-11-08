@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RegressionsNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RegressionsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RegressionsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RegressionsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [negative_axis_counterexample](../../../../MeasureAndIntegration/RegressionsNamespaced.lean/declarations/negative-axis-counterexample.md) | 23 | `result-track:01bd090533958d42bff6febd21ec688176f3dfd23f3eceb031d4c072248efc82` |
-| 2 | `theorem` | [lower_endpoint_regression](../../../../MeasureAndIntegration/RegressionsNamespaced.lean/declarations/lower-endpoint-regression.md) | 28 | `result-track:5049a229203740e7c0c8ecee190db8a03ca24beb8f771d24cb14d69dad650ee1` |
-| 3 | `theorem` | [constant_uncentered_regression](../../../../MeasureAndIntegration/RegressionsNamespaced.lean/declarations/constant-uncentered-regression.md) | 32 | `result-track:d4f30f2d74b9ae5d7e6622bfb023e734003b24103ab65d433d230d9fd1691889` |
-| 4 | `theorem` | [constant_centered_regression](../../../../MeasureAndIntegration/RegressionsNamespaced.lean/declarations/constant-centered-regression.md) | 41 | `result-track:dcba306674d0cff1d7c3c88387588aac91efb49d23c35eae146a167761d33172` |
-| 5 | `theorem` | [integer_terminal_regression](../../../../MeasureAndIntegration/RegressionsNamespaced.lean/declarations/integer-terminal-regression.md) | 51 | `result-track:d303d1dbeeb79499b0d99f18deddf76388907033e9fffef1a2c5c3679588928d` |
-| 6 | `theorem` | [linear_noninteger_regression](../../../../MeasureAndIntegration/RegressionsNamespaced.lean/declarations/linear-noninteger-regression.md) | 61 | `result-track:77cda388ab1e7f599f0a138095ac0fb93f1a1f1b0305185a8d48062cdc16496c` |
-| 7 | `theorem` | [positive_terminal_formula_false](../../../../MeasureAndIntegration/RegressionsNamespaced.lean/declarations/positive-terminal-formula-false.md) | 76 | `result-track:7047b1d3991705264a1d214c352102decb438919aa88368f01905da2492efd45` |
-| 8 | `theorem` | [zero_endpoint_polynomial_regression](../../../../MeasureAndIntegration/RegressionsNamespaced.lean/declarations/zero-endpoint-polynomial-regression.md) | 91 | `result-track:6e590ed0a85e4824ff2e7be6557289016b6314258303bb7af1486f606c2820fa` |
-| 9 | `theorem` | [sum_Icc_eq_range_zero_branch](../../../../MeasureAndIntegration/RegressionsNamespaced.lean/declarations/sum-icc-eq-range-zero-branch.md) | 102 | `result-track:b75cbf225cabbfb5a1f61d2d44fea255c9f8bfc62b1fb66e9f702acd96acbb99` |
+| 1 | `theorem` | [negative_axis_counterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RegressionsNamespaced.lean/declarations/negative-axis-counterexample.md) | 23 | `result-track:01bd090533958d42bff6febd21ec688176f3dfd23f3eceb031d4c072248efc82` |
+| 2 | `theorem` | [lower_endpoint_regression](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RegressionsNamespaced.lean/declarations/lower-endpoint-regression.md) | 28 | `result-track:5049a229203740e7c0c8ecee190db8a03ca24beb8f771d24cb14d69dad650ee1` |
+| 3 | `theorem` | [constant_uncentered_regression](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RegressionsNamespaced.lean/declarations/constant-uncentered-regression.md) | 32 | `result-track:d4f30f2d74b9ae5d7e6622bfb023e734003b24103ab65d433d230d9fd1691889` |
+| 4 | `theorem` | [constant_centered_regression](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RegressionsNamespaced.lean/declarations/constant-centered-regression.md) | 41 | `result-track:dcba306674d0cff1d7c3c88387588aac91efb49d23c35eae146a167761d33172` |
+| 5 | `theorem` | [integer_terminal_regression](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RegressionsNamespaced.lean/declarations/integer-terminal-regression.md) | 51 | `result-track:d303d1dbeeb79499b0d99f18deddf76388907033e9fffef1a2c5c3679588928d` |
+| 6 | `theorem` | [linear_noninteger_regression](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RegressionsNamespaced.lean/declarations/linear-noninteger-regression.md) | 61 | `result-track:77cda388ab1e7f599f0a138095ac0fb93f1a1f1b0305185a8d48062cdc16496c` |
+| 7 | `theorem` | [positive_terminal_formula_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RegressionsNamespaced.lean/declarations/positive-terminal-formula-false.md) | 76 | `result-track:7047b1d3991705264a1d214c352102decb438919aa88368f01905da2492efd45` |
+| 8 | `theorem` | [zero_endpoint_polynomial_regression](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RegressionsNamespaced.lean/declarations/zero-endpoint-polynomial-regression.md) | 91 | `result-track:6e590ed0a85e4824ff2e7be6557289016b6314258303bb7af1486f606c2820fa` |
+| 9 | `theorem` | [sum_Icc_eq_range_zero_branch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RegressionsNamespaced.lean/declarations/sum-icc-eq-range-zero-branch.md) | 102 | `result-track:b75cbf225cabbfb5a1f61d2d44fea255c9f8bfc62b1fb66e9f702acd96acbb99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/RationalDiskSeparation.lean/index.md) · [Full source](../../../../RealFunctions/RationalDiskSeparation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalDiskSeparation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalDiskSeparation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure`](../../../../RealFunctions/RationalComplexEnclosure.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalComplexEnclosure.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.Linarith` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.Ring` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [separated](../../../../RealFunctions/RationalDiskSeparation.lean/declarations/separated.md) | 24 | `declaration-track:729c3f7c95dd2ae92c4b715486683f8e7f465dba39dd530c5e6213eb9b5b0aa4` |
-| 2 | `def` | [belowHeight](../../../../RealFunctions/RationalDiskSeparation.lean/declarations/belowheight.md) | 28 | `declaration-track:b33f641d3e1b00d5e19394f17e5e29e864ab714d25a2e825e76b8c813b993cbf` |
-| 3 | `theorem` | [separated_iff](../../../../RealFunctions/RationalDiskSeparation.lean/declarations/separated-iff.md) | 31 | `result-track:14195c5731c06912f923e4fae44505d70c8ebbdb614d2ce02ea13c79d59a9035` |
-| 4 | `theorem` | [belowHeight_iff](../../../../RealFunctions/RationalDiskSeparation.lean/declarations/belowheight-iff.md) | 36 | `result-track:06c060c7df6b8d136671102fecf6a9aee1359621232587894231abd7096ffd7d` |
-| 5 | `theorem` | [separation_distance](../../../../RealFunctions/RationalDiskSeparation.lean/declarations/separation-distance.md) | 40 | `result-track:599cf2d64c71b24329eb118fa722cc9f72b0420fdb6ec2cb90d0a7db1f67ea06` |
-| 6 | `theorem` | [enclosed_points_ne](../../../../RealFunctions/RationalDiskSeparation.lean/declarations/enclosed-points-ne.md) | 54 | `result-track:c4908fe846b0c28f933f258ad17ae642ed2703feb9fe14d7d6967494598f7a76` |
-| 7 | `theorem` | [enclosed_height_le](../../../../RealFunctions/RationalDiskSeparation.lean/declarations/enclosed-height-le.md) | 68 | `result-track:ef6dca8f95f211de1aa229ad21f60e6638a232aa257b1a9c246fc4d9d260e56b` |
+| 1 | `def` | [separated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalDiskSeparation.lean/declarations/separated.md) | 24 | `declaration-track:729c3f7c95dd2ae92c4b715486683f8e7f465dba39dd530c5e6213eb9b5b0aa4` |
+| 2 | `def` | [belowHeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalDiskSeparation.lean/declarations/belowheight.md) | 28 | `declaration-track:b33f641d3e1b00d5e19394f17e5e29e864ab714d25a2e825e76b8c813b993cbf` |
+| 3 | `theorem` | [separated_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalDiskSeparation.lean/declarations/separated-iff.md) | 31 | `result-track:14195c5731c06912f923e4fae44505d70c8ebbdb614d2ce02ea13c79d59a9035` |
+| 4 | `theorem` | [belowHeight_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalDiskSeparation.lean/declarations/belowheight-iff.md) | 36 | `result-track:06c060c7df6b8d136671102fecf6a9aee1359621232587894231abd7096ffd7d` |
+| 5 | `theorem` | [separation_distance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalDiskSeparation.lean/declarations/separation-distance.md) | 40 | `result-track:599cf2d64c71b24329eb118fa722cc9f72b0420fdb6ec2cb90d0a7db1f67ea06` |
+| 6 | `theorem` | [enclosed_points_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalDiskSeparation.lean/declarations/enclosed-points-ne.md) | 54 | `result-track:c4908fe846b0c28f933f258ad17ae642ed2703feb9fe14d7d6967494598f7a76` |
+| 7 | `theorem` | [enclosed_height_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalDiskSeparation.lean/declarations/enclosed-height-le.md) | 68 | `result-track:ef6dca8f95f211de1aa229ad21f60e6638a232aa257b1a9c246fc4d9d260e56b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

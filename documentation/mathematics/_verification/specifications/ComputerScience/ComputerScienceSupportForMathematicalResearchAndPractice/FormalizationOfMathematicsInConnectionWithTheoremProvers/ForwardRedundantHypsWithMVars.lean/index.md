@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ForwardRedundantHypsWithMVars.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ForwardRedundantHypsWithMVars.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ForwardRedundantHypsWithMVars.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ForwardRedundantHypsWithMVars.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `axiom` | [len](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ForwardRedundantHypsWithMVars.lean/declarations/len.md) | 16 | `declaration-track:9927035969fe9c15d513d09bad63331bedf3ffcf42efd87b17fedd3114a47192` |
-| 2 | `axiom` | [len_pos](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ForwardRedundantHypsWithMVars.lean/declarations/len-pos.md) | 19 | `declaration-track:208d62ec86b7142420c0f2d10cb2b2cfbf2d2008ed9d82c9ff59a688b65b802a` |
-| 3 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ForwardRedundantHypsWithMVars.lean/declarations/example.md) | 29 | `declaration-track:f200260040c93bc380020b14620ebc641f808219ca21d277be37b8a9d286fbfd` |
+| 1 | `axiom` | [len](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ForwardRedundantHypsWithMVars.lean/declarations/len.md) | 16 | `declaration-track:9927035969fe9c15d513d09bad63331bedf3ffcf42efd87b17fedd3114a47192` |
+| 2 | `axiom` | [len_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ForwardRedundantHypsWithMVars.lean/declarations/len-pos.md) | 19 | `declaration-track:208d62ec86b7142420c0f2d10cb2b2cfbf2d2008ed9d82c9ff59a688b65b802a` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ForwardRedundantHypsWithMVars.lean/declarations/example.md) | 29 | `declaration-track:f200260040c93bc380020b14620ebc641f808219ca21d277be37b8a9d286fbfd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

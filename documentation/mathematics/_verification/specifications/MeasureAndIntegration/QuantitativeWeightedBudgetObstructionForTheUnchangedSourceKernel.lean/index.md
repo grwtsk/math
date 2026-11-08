@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/QuantitativeWeightedBudgetObstructionForTheUnchangedSourceKernel.lean/index.md) · [Full source](../../../../MeasureAndIntegration/QuantitativeWeightedBudgetObstructionForTheUnchangedSourceKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuantitativeWeightedBudgetObstructionForTheUnchangedSourceKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuantitativeWeightedBudgetObstructionForTheUnchangedSourceKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [full_actual_weighted_norm_lower](../../../../MeasureAndIntegration/QuantitativeWeightedBudgetObstructionForTheUnchangedSourceKernel.lean/declarations/full-actual-weighted-norm-lower.md) | 26 | `result-track:f5785e37d3d08cc222521d0efef26e655933f15c7ae05a043f6af557577466bd` |
-| 2 | `theorem` | [actual_weighted_norm_has_no_eventual_polynomial_upper](../../../../MeasureAndIntegration/QuantitativeWeightedBudgetObstructionForTheUnchangedSourceKernel.lean/declarations/actual-weighted-norm-has-no-eventual-polynomial-upper.md) | 61 | `result-track:cbf120a373856120bef9560b7d13a25855c54b3724d269195a090a7af357d35b` |
-| 3 | `theorem` | [every_polynomial_complete_real_input_budget_fails](../../../../MeasureAndIntegration/QuantitativeWeightedBudgetObstructionForTheUnchangedSourceKernel.lean/declarations/every-polynomial-complete-real-input-budget-fails.md) | 87 | `result-track:6e69a4867439af48ad3b03721b9e7fd11fae6a1499bad4166275b4de6f1815a4` |
+| 1 | `theorem` | [full_actual_weighted_norm_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuantitativeWeightedBudgetObstructionForTheUnchangedSourceKernel.lean/declarations/full-actual-weighted-norm-lower.md) | 26 | `result-track:f5785e37d3d08cc222521d0efef26e655933f15c7ae05a043f6af557577466bd` |
+| 2 | `theorem` | [actual_weighted_norm_has_no_eventual_polynomial_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuantitativeWeightedBudgetObstructionForTheUnchangedSourceKernel.lean/declarations/actual-weighted-norm-has-no-eventual-polynomial-upper.md) | 61 | `result-track:cbf120a373856120bef9560b7d13a25855c54b3724d269195a090a7af357d35b` |
+| 3 | `theorem` | [every_polynomial_complete_real_input_budget_fails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuantitativeWeightedBudgetObstructionForTheUnchangedSourceKernel.lean/declarations/every-polynomial-complete-real-input-budget-fails.md) | 87 | `result-track:6e69a4867439af48ad3b03721b9e7fd11fae6a1499bad4166275b4de6f1815a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

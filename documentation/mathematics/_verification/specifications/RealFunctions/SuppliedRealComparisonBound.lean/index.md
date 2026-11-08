@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SuppliedRealComparisonBound.lean/index.md) · [Full source](../../../../RealFunctions/SuppliedRealComparisonBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SuppliedRealComparisonBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SuppliedRealComparisonBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Two Sided Inverse](../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverse.lean/index.md) — import line 19; pinned internal source present.
+- [Two Sided Inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverse.lean/index.md) — import line 19; pinned internal source present.
 - `Folder.Spectral.Heat` — import line 21; external provider; requires a separately pinned dependency.
 - `Folder.Spectral.Residual` — import line 22; external provider; requires a separately pinned dependency.
 - `Folder.Theorem.Spectral.HeatResidual` — import line 23; external provider; requires a separately pinned dependency.
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StableInverse](../../../../RealFunctions/SuppliedRealComparisonBound.lean/declarations/stableinverse.md) | 43 | `declaration-track:6abe0d183b4fbdfe8cf9c100ab77cc2920c8319bc28129d89fc858b82bb0c2aa` |
-| 2 | `theorem` | [stable_inverse_has_lipschitz_bound](../../../../RealFunctions/SuppliedRealComparisonBound.lean/declarations/stable-inverse-has-lipschitz-bound.md) | 51 | `result-track:820c1d772f26824bdbb506f430db4422bd392b90f291f0ba6e1aea02e67b0835` |
+| 1 | `structure` | [StableInverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SuppliedRealComparisonBound.lean/declarations/stableinverse.md) | 43 | `declaration-track:6abe0d183b4fbdfe8cf9c100ab77cc2920c8319bc28129d89fc858b82bb0c2aa` |
+| 2 | `theorem` | [stable_inverse_has_lipschitz_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SuppliedRealComparisonBound.lean/declarations/stable-inverse-has-lipschitz-bound.md) | 51 | `result-track:820c1d772f26824bdbb506f430db4422bd392b90f291f0ba6e1aea02e67b0835` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative26.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative26.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative26.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative26.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thetaTail_ratio_eq_product](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative26.lean/declarations/thetatail-ratio-eq-product.md) | 32 | `result-track:9b07f1d3f2956eba18daaeb1c728b44412637b3384ae1cc45320eb106c395d86` |
-| 2 | `theorem` | [thetaTail_ratio_product_antitone](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative26.lean/declarations/thetatail-ratio-product-antitone.md) | 42 | `result-track:a3dc83d19a65156a4e05a60d5ebe63d1f5673f4326b734e9ddad3ece4133b284` |
-| 3 | `theorem` | [thetaTail_div_antitone](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative26.lean/declarations/thetatail-div-antitone.md) | 50 | `result-track:bcfbcfe1e51c316bf9bd69507f1d0d253a20017a7d0055461c0f38afe26476ba` |
-| 4 | `theorem` | [thetaTailSignRegular_two](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative26.lean/declarations/thetatailsignregular-two.md) | 58 | `result-track:cef1b15db5c93464eabd94d3ee11256cd774bfa37b569bdace958bc846d8104c` |
+| 1 | `theorem` | [thetaTail_ratio_eq_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative26.lean/declarations/thetatail-ratio-eq-product.md) | 32 | `result-track:9b07f1d3f2956eba18daaeb1c728b44412637b3384ae1cc45320eb106c395d86` |
+| 2 | `theorem` | [thetaTail_ratio_product_antitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative26.lean/declarations/thetatail-ratio-product-antitone.md) | 42 | `result-track:a3dc83d19a65156a4e05a60d5ebe63d1f5673f4326b734e9ddad3ece4133b284` |
+| 3 | `theorem` | [thetaTail_div_antitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative26.lean/declarations/thetatail-div-antitone.md) | 50 | `result-track:bcfbcfe1e51c316bf9bd69507f1d0d253a20017a7d0055461c0f38afe26476ba` |
+| 4 | `theorem` | [thetaTailSignRegular_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative26.lean/declarations/thetatailsignregular-two.md) | 58 | `result-track:cef1b15db5c93464eabd94d3ee11256cd774bfa37b569bdace958bc846d8104c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

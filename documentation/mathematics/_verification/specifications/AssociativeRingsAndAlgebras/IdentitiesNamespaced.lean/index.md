@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/IdentitiesNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/IdentitiesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdentitiesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdentitiesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sq_add_sq_mul_sq_add_sq](../../../../AssociativeRingsAndAlgebras/IdentitiesNamespaced.lean/declarations/sq-add-sq-mul-sq-add-sq.md) | 30 | `result-track:3ffa4896523faf6a6c434c4cce04f07abc30f8f2887a1e5ff51dc92946b2902c` |
-| 2 | `theorem` | [sq_add_mul_sq_mul_sq_add_mul_sq](../../../../AssociativeRingsAndAlgebras/IdentitiesNamespaced.lean/declarations/sq-add-mul-sq-mul-sq-add-mul-sq.md) | 36 | `result-track:bedafb69a0b185816a5595d21ba8a965e188d2549de82b667f3f7de7c2a5c293` |
-| 3 | `theorem` | [pow_four_add_four_mul_pow_four](../../../../AssociativeRingsAndAlgebras/IdentitiesNamespaced.lean/declarations/pow-four-add-four-mul-pow-four.md) | 43 | `result-track:1ea2d572ed724a201f46119b032e84bea1ce37d71171e4a8c6185b22057bf529` |
-| 4 | `theorem` | [pow_four_add_four_mul_pow_four'](../../../../AssociativeRingsAndAlgebras/IdentitiesNamespaced.lean/declarations/pow-four-add-four-mul-pow-four-source-edition-2.md) | 49 | `result-track:f07678ea825fa5b1011dc36e2a26ee981af99bf0c48627f5ee34daf287b3e47b` |
-| 5 | `theorem` | [sum_four_sq_mul_sum_four_sq](../../../../AssociativeRingsAndAlgebras/IdentitiesNamespaced.lean/declarations/sum-four-sq-mul-sum-four-sq.md) | 57 | `result-track:ff14665b498df01627537cd8230e3bbc42db13185a206812ceff18421c52ff45` |
-| 6 | `theorem` | [sum_eight_sq_mul_sum_eight_sq](../../../../AssociativeRingsAndAlgebras/IdentitiesNamespaced.lean/declarations/sum-eight-sq-mul-sum-eight-sq.md) | 68 | `result-track:71c804cd43e4c1eb5546ee921e1036e24fc0fa070e0624a0bff8af5779d69c54` |
+| 1 | `theorem` | [sq_add_sq_mul_sq_add_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdentitiesNamespaced.lean/declarations/sq-add-sq-mul-sq-add-sq.md) | 30 | `result-track:3ffa4896523faf6a6c434c4cce04f07abc30f8f2887a1e5ff51dc92946b2902c` |
+| 2 | `theorem` | [sq_add_mul_sq_mul_sq_add_mul_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdentitiesNamespaced.lean/declarations/sq-add-mul-sq-mul-sq-add-mul-sq.md) | 36 | `result-track:bedafb69a0b185816a5595d21ba8a965e188d2549de82b667f3f7de7c2a5c293` |
+| 3 | `theorem` | [pow_four_add_four_mul_pow_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdentitiesNamespaced.lean/declarations/pow-four-add-four-mul-pow-four.md) | 43 | `result-track:1ea2d572ed724a201f46119b032e84bea1ce37d71171e4a8c6185b22057bf529` |
+| 4 | `theorem` | [pow_four_add_four_mul_pow_four'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdentitiesNamespaced.lean/declarations/pow-four-add-four-mul-pow-four-source-edition-2.md) | 49 | `result-track:f07678ea825fa5b1011dc36e2a26ee981af99bf0c48627f5ee34daf287b3e47b` |
+| 5 | `theorem` | [sum_four_sq_mul_sum_four_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdentitiesNamespaced.lean/declarations/sum-four-sq-mul-sum-four-sq.md) | 57 | `result-track:ff14665b498df01627537cd8230e3bbc42db13185a206812ceff18421c52ff45` |
+| 6 | `theorem` | [sum_eight_sq_mul_sum_eight_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdentitiesNamespaced.lean/declarations/sum-eight-sq-mul-sum-eight-sq.md) | 68 | `result-track:71c804cd43e4c1eb5546ee921e1036e24fc0fa070e0624a0bff8af5779d69c54` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

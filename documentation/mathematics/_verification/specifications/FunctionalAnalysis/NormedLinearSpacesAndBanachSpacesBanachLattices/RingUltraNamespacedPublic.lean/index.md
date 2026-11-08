@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RingUltraNamespacedPublic.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RingUltraNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RingUltraNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RingUltraNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [norm_add_one_le_max_norm_one](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RingUltraNamespacedPublic.lean/declarations/norm-add-one-le-max-norm-one.md) | 58 | `result-track:9835ee350770771c3852338f84b1378b33cb8cd756a77ea041e61eba3ae5639d` |
-| 2 | `lemma` | [nnnorm_add_one_le_max_nnnorm_one](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RingUltraNamespacedPublic.lean/declarations/nnnorm-add-one-le-max-nnnorm-one.md) | 62 | `result-track:ab3996b24dc1fd5c412e6920b70f7ecd33dbe28c34def4710f31b6f233c63d7d` |
-| 3 | `lemma` | [nnnorm_natCast_le_one](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RingUltraNamespacedPublic.lean/declarations/nnnorm-natcast-le-one.md) | 68 | `result-track:4b322e18835d1f91ff0bf3d60f9894826bc3c86966dcc8d45815b15e083c1443` |
-| 4 | `lemma` | [norm_natCast_le_one](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RingUltraNamespacedPublic.lean/declarations/norm-natcast-le-one.md) | 75 | `result-track:796a224c58404e667cc7ffc8d06d976aac098f59c9e9b8561aa6b8c8d95e383f` |
-| 5 | `lemma` | [nnnorm_intCast_le_one](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RingUltraNamespacedPublic.lean/declarations/nnnorm-intcast-le-one.md) | 79 | `result-track:ba49fc5aa95ef21bdd407930e263050587c8acd1039790e3991fb0296a315d54` |
-| 6 | `lemma` | [norm_intCast_le_one](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RingUltraNamespacedPublic.lean/declarations/norm-intcast-le-one.md) | 85 | `result-track:5c29f7ba5d1a057746d407ec58f5b66db74ff947a21e6f9824a4b4b9570d94e6` |
+| 1 | `lemma` | [norm_add_one_le_max_norm_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RingUltraNamespacedPublic.lean/declarations/norm-add-one-le-max-norm-one.md) | 58 | `result-track:9835ee350770771c3852338f84b1378b33cb8cd756a77ea041e61eba3ae5639d` |
+| 2 | `lemma` | [nnnorm_add_one_le_max_nnnorm_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RingUltraNamespacedPublic.lean/declarations/nnnorm-add-one-le-max-nnnorm-one.md) | 62 | `result-track:ab3996b24dc1fd5c412e6920b70f7ecd33dbe28c34def4710f31b6f233c63d7d` |
+| 3 | `lemma` | [nnnorm_natCast_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RingUltraNamespacedPublic.lean/declarations/nnnorm-natcast-le-one.md) | 68 | `result-track:4b322e18835d1f91ff0bf3d60f9894826bc3c86966dcc8d45815b15e083c1443` |
+| 4 | `lemma` | [norm_natCast_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RingUltraNamespacedPublic.lean/declarations/norm-natcast-le-one.md) | 75 | `result-track:796a224c58404e667cc7ffc8d06d976aac098f59c9e9b8561aa6b8c8d95e383f` |
+| 5 | `lemma` | [nnnorm_intCast_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RingUltraNamespacedPublic.lean/declarations/nnnorm-intcast-le-one.md) | 79 | `result-track:ba49fc5aa95ef21bdd407930e263050587c8acd1039790e3991fb0296a315d54` |
+| 6 | `lemma` | [norm_intCast_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RingUltraNamespacedPublic.lean/declarations/norm-intcast-le-one.md) | 85 | `result-track:5c29f7ba5d1a057746d407ec58f5b66db74ff947a21e6f9824a4b4b9570d94e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

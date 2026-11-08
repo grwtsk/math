@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ExtendedNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ExtendedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExtendedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExtendedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [extended](../../../../CommutativeAlgebra/ExtendedNamespaced.lean/declarations/extended.md) | 51 | `declaration-track:2da509e36a6c3acdfa66d1cc41a713a3b824479f389153c6a828970219f7674c` |
-| 2 | `lemma` | [mem_extended_iff](../../../../CommutativeAlgebra/ExtendedNamespaced.lean/declarations/mem-extended-iff.md) | 66 | `result-track:c292db5a4748ec2e9f44ea57fc0b237c39a0e0e5df5fe3cb11eb30ff0760c8d2` |
-| 3 | `lemma` | [coe_extended_eq_span](../../../../CommutativeAlgebra/ExtendedNamespaced.lean/declarations/coe-extended-eq-span.md) | 70 | `result-track:3ea660bf5c6d9d67ac6fd2d94b9f1c665c32630d872a067c926b68bb5604c1d1` |
-| 4 | `theorem` | [extended_zero](../../../../CommutativeAlgebra/ExtendedNamespaced.lean/declarations/extended-zero.md) | 74 | `result-track:027f379b274ecce5259fefa0214e4f19b011ae31385607c6ac9ba8679806ad51` |
-| 5 | `theorem` | [extended_one](../../../../CommutativeAlgebra/ExtendedNamespaced.lean/declarations/extended-one.md) | 79 | `result-track:54feb492018fc60466996f1523205858b5732839b614780384d40898301aba2a` |
-| 6 | `theorem` | [extended_add](../../../../CommutativeAlgebra/ExtendedNamespaced.lean/declarations/extended-add.md) | 88 | `result-track:0df59663e3efb1b8c1931ca442093ab02768954dfd3229e4c65a82f3bed316ee` |
-| 7 | `theorem` | [extended_mul](../../../../CommutativeAlgebra/ExtendedNamespaced.lean/declarations/extended-mul.md) | 102 | `result-track:0decfcd9d518852348e36d9e6605b1ba81909411df53230a3893dfb5fd635a74` |
+| 1 | `def` | [extended](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExtendedNamespaced.lean/declarations/extended.md) | 51 | `declaration-track:2da509e36a6c3acdfa66d1cc41a713a3b824479f389153c6a828970219f7674c` |
+| 2 | `lemma` | [mem_extended_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExtendedNamespaced.lean/declarations/mem-extended-iff.md) | 66 | `result-track:c292db5a4748ec2e9f44ea57fc0b237c39a0e0e5df5fe3cb11eb30ff0760c8d2` |
+| 3 | `lemma` | [coe_extended_eq_span](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExtendedNamespaced.lean/declarations/coe-extended-eq-span.md) | 70 | `result-track:3ea660bf5c6d9d67ac6fd2d94b9f1c665c32630d872a067c926b68bb5604c1d1` |
+| 4 | `theorem` | [extended_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExtendedNamespaced.lean/declarations/extended-zero.md) | 74 | `result-track:027f379b274ecce5259fefa0214e4f19b011ae31385607c6ac9ba8679806ad51` |
+| 5 | `theorem` | [extended_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExtendedNamespaced.lean/declarations/extended-one.md) | 79 | `result-track:54feb492018fc60466996f1523205858b5732839b614780384d40898301aba2a` |
+| 6 | `theorem` | [extended_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExtendedNamespaced.lean/declarations/extended-add.md) | 88 | `result-track:0df59663e3efb1b8c1931ca442093ab02768954dfd3229e4c65a82f3bed316ee` |
+| 7 | `theorem` | [extended_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExtendedNamespaced.lean/declarations/extended-mul.md) | 102 | `result-track:0decfcd9d518852348e36d9e6605b1ba81909411df53230a3893dfb5fd635a74` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

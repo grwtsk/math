@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/VerifiedRationalNewtonCenter.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/VerifiedRationalNewtonCenter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/VerifiedRationalNewtonCenter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/VerifiedRationalNewtonCenter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalZetaCenterRefinement`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/RationalZetaCenterRefinement.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalZetaCenterRefinement`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/RationalZetaCenterRefinement.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [newtonData](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/VerifiedRationalNewtonCenter.lean/declarations/newtondata.md) | 24 | `declaration-track:3148e3a7818f4e7c69b73eb035f47d3d789554a8fa50abf7d95d9859d7f3f0d3` |
-| 2 | `def` | [verifyZero](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/VerifiedRationalNewtonCenter.lean/declarations/verifyzero.md) | 35 | `declaration-track:90bb9d51c5589d2535bd48fa460d700db47332c0d7bd469a80cdfa8dd87b5195` |
-| 3 | `theorem` | [centerEnclosures_of_verified](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/VerifiedRationalNewtonCenter.lean/declarations/centerenclosures-of-verified.md) | 40 | `result-track:4a4397c72925a16215094d895722abd4961e74cb44b1d44e39ca5cb0e5001fdd` |
-| 4 | `theorem` | [exists_zero_of_verify](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/VerifiedRationalNewtonCenter.lean/declarations/exists-zero-of-verify.md) | 48 | `result-track:14759dfc8d3ea8575aa5b3ea9b9d7d21470f1e7b90fcfaea6d607c6908f68c05` |
+| 1 | `def` | [newtonData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/VerifiedRationalNewtonCenter.lean/declarations/newtondata.md) | 24 | `declaration-track:3148e3a7818f4e7c69b73eb035f47d3d789554a8fa50abf7d95d9859d7f3f0d3` |
+| 2 | `def` | [verifyZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/VerifiedRationalNewtonCenter.lean/declarations/verifyzero.md) | 35 | `declaration-track:90bb9d51c5589d2535bd48fa460d700db47332c0d7bd469a80cdfa8dd87b5195` |
+| 3 | `theorem` | [centerEnclosures_of_verified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/VerifiedRationalNewtonCenter.lean/declarations/centerenclosures-of-verified.md) | 40 | `result-track:4a4397c72925a16215094d895722abd4961e74cb44b1d44e39ca5cb0e5001fdd` |
+| 4 | `theorem` | [exists_zero_of_verify](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/VerifiedRationalNewtonCenter.lean/declarations/exists-zero-of-verify.md) | 48 | `result-track:14759dfc8d3ea8575aa5b3ea9b9d7d21470f1e7b90fcfaea6d607c6908f68c05` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GenericMonoidAndGroup.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GenericMonoidAndGroup.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GenericMonoidAndGroup.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GenericMonoidAndGroup.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.LinearAlgebra.CocycleProduct`](../../../../GroupTheoryAndGeneralizations/CocycleProduct.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.LinearAlgebra.CocycleProduct`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProduct.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/GenericMonoidAndGroup.lean/declarations/example-source-edition-2.md) | 4 | `declaration-track:943b24e87cf93e817af48431320e8ab16d1a35f57480ef8ca501d8fda40a7b85` |
-| 2 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/GenericMonoidAndGroup.lean/declarations/example-source-edition-3.md) | 7 | `declaration-track:b9f1ad7d437e035c129622673763d32296cc882d64c87903d81541789f8f2a4b` |
-| 3 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/GenericMonoidAndGroup.lean/declarations/example.md) | 10 | `declaration-track:42b019c0c380b3cf908834ffd1057e4ea2dd0cffb3ec7d46ff813db560792066` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GenericMonoidAndGroup.lean/declarations/example-source-edition-2.md) | 4 | `declaration-track:943b24e87cf93e817af48431320e8ab16d1a35f57480ef8ca501d8fda40a7b85` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GenericMonoidAndGroup.lean/declarations/example-source-edition-3.md) | 7 | `declaration-track:b9f1ad7d437e035c129622673763d32296cc882d64c87903d81541789f8f2a4b` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GenericMonoidAndGroup.lean/declarations/example.md) | 10 | `declaration-track:42b019c0c380b3cf908834ffd1057e4ea2dd0cffb3ec7d46ff813db560792066` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

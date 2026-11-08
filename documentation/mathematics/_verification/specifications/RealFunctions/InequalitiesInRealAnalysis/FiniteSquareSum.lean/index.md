@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../RealFunctions/InequalitiesInRealAnalysis/FiniteSquareSum.lean/index.md) · [Full source](../../../../../RealFunctions/InequalitiesInRealAnalysis/FiniteSquareSum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/FiniteSquareSum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/FiniteSquareSum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sq_sum_le_support_card_mul_sum_sq](../../../../../RealFunctions/InequalitiesInRealAnalysis/FiniteSquareSum.lean/declarations/sq-sum-le-support-card-mul-sum-sq.md) | 24 | `result-track:6fb086df97bca40ac2e9f37a2c9c7a2f7198575e19337f6a2b8caeb7fb292534` |
+| 1 | `theorem` | [sq_sum_le_support_card_mul_sum_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/FiniteSquareSum.lean/declarations/sq-sum-le-support-card-mul-sum-sq.md) | 24 | `result-track:6fb086df97bca40ac2e9f37a2c9c7a2f7198575e19337f6a2b8caeb7fb292534` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

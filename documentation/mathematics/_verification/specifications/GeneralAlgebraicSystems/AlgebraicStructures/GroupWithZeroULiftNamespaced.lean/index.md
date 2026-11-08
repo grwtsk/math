@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULiftNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULiftNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULiftNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULiftNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [mulZeroOneClass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULiftNamespaced.lean/declarations/mulzerooneclass.md) | 33 | `declaration-track:5b1f127b11daf910be3a0f6c3b9aeb983d17bb0748133320815056d6c762afe4` |
-| 2 | `instance` | [monoidWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULiftNamespaced.lean/declarations/monoidwithzero.md) | 36 | `declaration-track:c4e8314a551816fe5f24c5a85c66366791f23f64439f69b5e45b43d88382008a` |
-| 3 | `instance` | [commMonoidWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULiftNamespaced.lean/declarations/commmonoidwithzero.md) | 39 | `declaration-track:dfe7ea35aba7348898dd57efca541d29b1b10385ea0f980f2821854296008dca` |
-| 4 | `instance` | [groupWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULiftNamespaced.lean/declarations/groupwithzero.md) | 42 | `declaration-track:7fd5beef4f55adcf1fcab9e663f18dc906f4bd7300061ae77cdaf0991a6b9414` |
-| 5 | `instance` | [commGroupWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULiftNamespaced.lean/declarations/commgroupwithzero.md) | 46 | `declaration-track:a61d13b118c48f4c57e2ebd9fb0f7f9cce652e4d4f150f6177bb41cd1ebc2bbd` |
+| 1 | `instance` | [mulZeroOneClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULiftNamespaced.lean/declarations/mulzerooneclass.md) | 33 | `declaration-track:5b1f127b11daf910be3a0f6c3b9aeb983d17bb0748133320815056d6c762afe4` |
+| 2 | `instance` | [monoidWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULiftNamespaced.lean/declarations/monoidwithzero.md) | 36 | `declaration-track:c4e8314a551816fe5f24c5a85c66366791f23f64439f69b5e45b43d88382008a` |
+| 3 | `instance` | [commMonoidWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULiftNamespaced.lean/declarations/commmonoidwithzero.md) | 39 | `declaration-track:dfe7ea35aba7348898dd57efca541d29b1b10385ea0f980f2821854296008dca` |
+| 4 | `instance` | [groupWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULiftNamespaced.lean/declarations/groupwithzero.md) | 42 | `declaration-track:7fd5beef4f55adcf1fcab9e663f18dc906f4bd7300061ae77cdaf0991a6b9414` |
+| 5 | `instance` | [commGroupWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULiftNamespaced.lean/declarations/commgroupwithzero.md) | 46 | `declaration-track:a61d13b118c48f4c57e2ebd9fb0f7f9cce652e4d4f150f6177bb41cd1ebc2bbd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

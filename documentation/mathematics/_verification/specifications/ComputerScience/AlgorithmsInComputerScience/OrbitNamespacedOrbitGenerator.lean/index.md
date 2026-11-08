@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/OrbitNamespacedOrbitGenerator.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/OrbitNamespacedOrbitGenerator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrbitNamespacedOrbitGenerator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrbitNamespacedOrbitGenerator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [OrbitGenerator](../../../../../ComputerScience/AlgorithmsInComputerScience/OrbitNamespacedOrbitGenerator.lean/declarations/orbitgenerator.md) | 15 | `declaration-track:7477841cb14730a22ade7e956e5ff43a8adbe45a0d32bba8efbaff712ed96932` |
-| 2 | `structure` | [OrbitPolicy](../../../../../ComputerScience/AlgorithmsInComputerScience/OrbitNamespacedOrbitGenerator.lean/declarations/orbitpolicy.md) | 21 | `declaration-track:b165f7781d739c433c6da0091fc3aa3a09f915b92dab7454d0f70a53bc4dacde` |
-| 3 | `def` | [sourceTreeOrbitPolicy](../../../../../ComputerScience/AlgorithmsInComputerScience/OrbitNamespacedOrbitGenerator.lean/declarations/sourcetreeorbitpolicy.md) | 27 | `declaration-track:52c4452a58484f9047c4c32f4ce2cfcde463c671270f8c3324ba9c84e0058269` |
-| 4 | `theorem` | [sourceTreeOrbitPolicy_hasReflection](../../../../../ComputerScience/AlgorithmsInComputerScience/OrbitNamespacedOrbitGenerator.lean/declarations/sourcetreeorbitpolicy-hasreflection.md) | 32 | `result-track:caee2cde27076f32e346604f37ffd1cc3c9afe721acbb324704504c36419d18c` |
+| 1 | `inductive` | [OrbitGenerator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrbitNamespacedOrbitGenerator.lean/declarations/orbitgenerator.md) | 15 | `declaration-track:7477841cb14730a22ade7e956e5ff43a8adbe45a0d32bba8efbaff712ed96932` |
+| 2 | `structure` | [OrbitPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrbitNamespacedOrbitGenerator.lean/declarations/orbitpolicy.md) | 21 | `declaration-track:b165f7781d739c433c6da0091fc3aa3a09f915b92dab7454d0f70a53bc4dacde` |
+| 3 | `def` | [sourceTreeOrbitPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrbitNamespacedOrbitGenerator.lean/declarations/sourcetreeorbitpolicy.md) | 27 | `declaration-track:52c4452a58484f9047c4c32f4ce2cfcde463c671270f8c3324ba9c84e0058269` |
+| 4 | `theorem` | [sourceTreeOrbitPolicy_hasReflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrbitNamespacedOrbitGenerator.lean/declarations/sourcetreeorbitpolicy-hasreflection.md) | 32 | `result-track:caee2cde27076f32e346604f37ffd1cc3c9afe721acbb324704504c36419d18c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

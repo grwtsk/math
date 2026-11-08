@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBasic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Module.Free.ChooseBasisIndex.fintype](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBasic.lean/declarations/module-free-choosebasisindex-fintype.md) | 24 | `declaration-track:151682a43a0f157f1c5384840b8efe35d92caec4433774bdd54020c93eb98fb4` |
-| 2 | `theorem` | [Module.Finite.of_basis](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBasic.lean/declarations/module-finite-of-basis.md) | 35 | `result-track:21a22b35c1c7bc69686310801a31c733acc2528931ab9cc2630dbdb3664ce2a1` |
-| 3 | `instance` | [Module.Finite.matrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBasic.lean/declarations/module-finite-matrix.md) | 42 | `declaration-track:40dae190a8ed683b28dc4a113d133cf9f4b237d2f44b873a235abf58f178e6d8` |
-| 4 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBasic.lean/declarations/example.md) | 50 | `declaration-track:91963fc3750ede2db8beb1158c48929b1f437d4216a1b1ec010cc17026a1f074` |
+| 1 | `instance` | [Module.Free.ChooseBasisIndex.fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBasic.lean/declarations/module-free-choosebasisindex-fintype.md) | 24 | `declaration-track:151682a43a0f157f1c5384840b8efe35d92caec4433774bdd54020c93eb98fb4` |
+| 2 | `theorem` | [Module.Finite.of_basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBasic.lean/declarations/module-finite-of-basis.md) | 35 | `result-track:21a22b35c1c7bc69686310801a31c733acc2528931ab9cc2630dbdb3664ce2a1` |
+| 3 | `instance` | [Module.Finite.matrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBasic.lean/declarations/module-finite-matrix.md) | 42 | `declaration-track:40dae190a8ed683b28dc4a113d133cf9f4b237d2f44b873a235abf58f178e6d8` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBasic.lean/declarations/example.md) | 50 | `declaration-track:91963fc3750ede2db8beb1158c48929b1f437d4216a1b1ec010cc17026a1f074` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

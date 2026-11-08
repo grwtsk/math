@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CF13CompactCarrier.lean/index.md) · [Full source](../../../../GeneralTopology/CF13CompactCarrier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CF13CompactCarrier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CF13CompactCarrier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cf13_compactCarrier](../../../../GeneralTopology/CF13CompactCarrier.lean/declarations/cf13-compactcarrier.md) | 6 | `result-track:ea292f53c951b3dc818c29237a104db85bfc51282d021b1f4615d54e38f75273` |
+| 1 | `theorem` | [cf13_compactCarrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CF13CompactCarrier.lean/declarations/cf13-compactcarrier.md) | 6 | `result-track:ea292f53c951b3dc818c29237a104db85bfc51282d021b1f4615d54e38f75273` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

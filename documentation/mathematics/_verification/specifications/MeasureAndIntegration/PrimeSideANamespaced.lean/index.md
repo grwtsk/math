@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PrimeSideANamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PrimeSideANamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSideANamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSideANamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prop_trace_mu](../../../../MeasureAndIntegration/PrimeSideANamespaced.lean/declarations/prop-trace-mu.md) | 66 | `result-track:10138351cece41de7a9ff21b6f8c2b1b2c27368e3c7ed831414cc544d83e20fe` |
-| 2 | `theorem` | [prop_trace](../../../../MeasureAndIntegration/PrimeSideANamespaced.lean/declarations/prop-trace.md) | 308 | `result-track:8be29c21ac09b09ebfee894b95922092270d3a370fab312bbda9d965f82e106d` |
-| 3 | `theorem` | [eq_Msplit](../../../../MeasureAndIntegration/PrimeSideANamespaced.lean/declarations/eq-msplit.md) | 388 | `result-track:467b36337ae4b1d0a7bc46a2baf830a240126419280852f62ec20933a28dd4e0` |
-| 4 | `theorem` | [prop_cross_muPi](../../../../MeasureAndIntegration/PrimeSideANamespaced.lean/declarations/prop-cross-mupi.md) | 416 | `result-track:7f06656a55327decb8b7a3b72b9173ffbc5db4211cf72350873e36583d7af3ff` |
-| 5 | `theorem` | [prop_cross_PPi](../../../../MeasureAndIntegration/PrimeSideANamespaced.lean/declarations/prop-cross-ppi.md) | 436 | `result-track:ccb4b6ce5fa5ab2de90d7a80bf4ee9913ce2152d4c3df5ebf95b6c9f7c7ba616` |
-| 6 | `theorem` | [prop_cross_PiPi](../../../../MeasureAndIntegration/PrimeSideANamespaced.lean/declarations/prop-cross-pipi.md) | 457 | `result-track:66cc1f4e9b8067bcd73e26dccc9ebaa835c5fbbffe3901e27f01d23de4f1a666` |
+| 1 | `theorem` | [prop_trace_mu](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSideANamespaced.lean/declarations/prop-trace-mu.md) | 66 | `result-track:10138351cece41de7a9ff21b6f8c2b1b2c27368e3c7ed831414cc544d83e20fe` |
+| 2 | `theorem` | [prop_trace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSideANamespaced.lean/declarations/prop-trace.md) | 308 | `result-track:8be29c21ac09b09ebfee894b95922092270d3a370fab312bbda9d965f82e106d` |
+| 3 | `theorem` | [eq_Msplit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSideANamespaced.lean/declarations/eq-msplit.md) | 388 | `result-track:467b36337ae4b1d0a7bc46a2baf830a240126419280852f62ec20933a28dd4e0` |
+| 4 | `theorem` | [prop_cross_muPi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSideANamespaced.lean/declarations/prop-cross-mupi.md) | 416 | `result-track:7f06656a55327decb8b7a3b72b9173ffbc5db4211cf72350873e36583d7af3ff` |
+| 5 | `theorem` | [prop_cross_PPi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSideANamespaced.lean/declarations/prop-cross-ppi.md) | 436 | `result-track:ccb4b6ce5fa5ab2de90d7a80bf4ee9913ce2152d4c3df5ebf95b6c9f7c7ba616` |
+| 6 | `theorem` | [prop_cross_PiPi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeSideANamespaced.lean/declarations/prop-cross-pipi.md) | 457 | `result-track:66cc1f4e9b8067bcd73e26dccc9ebaa835c5fbbffe3901e27f01d23de4f1a666` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

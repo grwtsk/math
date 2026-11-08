@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [mul_zero_subset](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/declarations/mul-zero-subset.md) | 35 | `result-track:4fc5a3f3424839fba7a8d28f6970e9c3c89464cc44a91b328284b4dfbd41a045` |
-| 2 | `lemma` | [zero_mul_subset](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/declarations/zero-mul-subset.md) | 36 | `result-track:d41585496d062c7f7dfa2652c7d1c6989a75455013d2b908c1c66a9d0e24fdbb` |
-| 3 | `lemma` | [Nonempty.mul_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/declarations/nonempty-mul-zero.md) | 38 | `result-track:0bf2ddd6a96c727ba4f73348a0e6941ce81d7166cbb9cdacd825d66abf6f3e53` |
-| 4 | `lemma` | [Nonempty.zero_mul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/declarations/nonempty-zero-mul.md) | 41 | `result-track:48f50e25e2ddd444f685e2ef6068336dff046280ac616a06d10fc1ef57566c19` |
-| 5 | `lemma` | [div_zero_subset](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/declarations/div-zero-subset.md) | 49 | `result-track:775fb072114adf5abd0870c2bfeb4bb6db35cd0b232da397200634bd57e9feed` |
-| 6 | `lemma` | [zero_div_subset](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/declarations/zero-div-subset.md) | 51 | `result-track:7b570476829f6dc65ae4305dc7c52289d378fe5f706f18727ae9f59378042066` |
-| 7 | `lemma` | [Nonempty.div_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/declarations/nonempty-div-zero.md) | 53 | `result-track:2950ce8a687eeae885567bc57708da6e91bd13f8e7a57781ee424ec0849739a7` |
-| 8 | `lemma` | [Nonempty.zero_div](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/declarations/nonempty-zero-div.md) | 56 | `result-track:877b42a119dc193f2857733de12541986fdc3f39b49aaacbaca20c554589de25` |
-| 9 | `lemma` | [inv_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/declarations/inv-zero.md) | 59 | `result-track:3f0830deb040fae1805ca919acc510c23aee728b1784d9bf7cd28a67e2db515b` |
+| 1 | `lemma` | [mul_zero_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/declarations/mul-zero-subset.md) | 35 | `result-track:4fc5a3f3424839fba7a8d28f6970e9c3c89464cc44a91b328284b4dfbd41a045` |
+| 2 | `lemma` | [zero_mul_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/declarations/zero-mul-subset.md) | 36 | `result-track:d41585496d062c7f7dfa2652c7d1c6989a75455013d2b908c1c66a9d0e24fdbb` |
+| 3 | `lemma` | [Nonempty.mul_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/declarations/nonempty-mul-zero.md) | 38 | `result-track:0bf2ddd6a96c727ba4f73348a0e6941ce81d7166cbb9cdacd825d66abf6f3e53` |
+| 4 | `lemma` | [Nonempty.zero_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/declarations/nonempty-zero-mul.md) | 41 | `result-track:48f50e25e2ddd444f685e2ef6068336dff046280ac616a06d10fc1ef57566c19` |
+| 5 | `lemma` | [div_zero_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/declarations/div-zero-subset.md) | 49 | `result-track:775fb072114adf5abd0870c2bfeb4bb6db35cd0b232da397200634bd57e9feed` |
+| 6 | `lemma` | [zero_div_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/declarations/zero-div-subset.md) | 51 | `result-track:7b570476829f6dc65ae4305dc7c52289d378fe5f706f18727ae9f59378042066` |
+| 7 | `lemma` | [Nonempty.div_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/declarations/nonempty-div-zero.md) | 53 | `result-track:2950ce8a687eeae885567bc57708da6e91bd13f8e7a57781ee424ec0849739a7` |
+| 8 | `lemma` | [Nonempty.zero_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/declarations/nonempty-zero-div.md) | 56 | `result-track:877b42a119dc193f2857733de12541986fdc3f39b49aaacbaca20c554589de25` |
+| 9 | `lemma` | [inv_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroPointwiseFinsetNamespaced.lean/declarations/inv-zero.md) | 59 | `result-track:3f0830deb040fae1805ca919acc510c23aee728b1784d9bf7cd28a67e2db515b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

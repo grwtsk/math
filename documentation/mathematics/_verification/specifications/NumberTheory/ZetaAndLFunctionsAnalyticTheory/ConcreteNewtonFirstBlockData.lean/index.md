@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.RationalTaylorSeedNormalization`](../../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.EuclideanDyadicRun`](../../../../../FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonBlockAcceptance`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonBlockAcceptance.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalTaylorSeedNormalization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.EuclideanDyadicRun`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/EuclideanDyadicRun.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonBlockAcceptance`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonBlockAcceptance.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.Tactic.FinCases` — import line 7; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.NormNum` — import line 8; external provider; requires a separately pinned dependency.
 
@@ -61,16 +61,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [base](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/base.md) | 27 | `declaration-track:77848ada10f234a835d7ed64717540348849b29eac132ed1d70e7b77d9577377` |
-| 2 | `def` | [initial](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/initial.md) | 29 | `declaration-track:5dd78c80942e2705813442595859cf24cc4bbd700053d51bc325876df098363e` |
-| 3 | `def` | [sourceArgument](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/sourceargument.md) | 97 | `declaration-track:c695c3459300d94e20e6f7b4740e35dc2f92cc0c10fb01803a8c04a3e930eb0e` |
-| 4 | `def` | [sourceRadius](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/sourceradius.md) | 99 | `declaration-track:0f5efaeec2855dfdb638c552caf6f4e230f283e23eaeb6ced0ee5a82eec7e93c` |
-| 5 | `def` | [sourceDisplacement](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/sourcedisplacement.md) | 101 | `declaration-track:df926e88f7dde47da2c376a9d2c90b4f475de0a44af2c614981d60454da8faaa` |
-| 6 | `def` | [InputValid](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/inputvalid.md) | 104 | `declaration-track:8957c2aa7e1da074282e67de10a8a1db2be27438af01f5973fa900ed426b2fa2` |
-| 7 | `def` | [SeedWindows](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/seedwindows.md) | 108 | `declaration-track:0e8f45e9c5c699564e6c75d609c03fa7d6d277ce292af9418ce619c5496df55d` |
-| 8 | `def` | [slot](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/slot.md) | 113 | `declaration-track:3c43af1f90b412e7837333fc9add3f833cb2abd5b6b5a4755c164f52507735d7` |
-| 9 | `theorem` | [group_cover](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/group-cover.md) | 116 | `result-track:0264f94aede8ef1357419009adfb8a9217bce24e3e81261511196f4bd340cff7` |
-| 10 | `theorem` | [group_unique](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/group-unique.md) | 123 | `result-track:d3dff6ee57d4e61e39fb9017b28cb2b69a7cdc7179f0d0c5044fa4b99f393521` |
+| 1 | `def` | [base](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/base.md) | 27 | `declaration-track:77848ada10f234a835d7ed64717540348849b29eac132ed1d70e7b77d9577377` |
+| 2 | `def` | [initial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/initial.md) | 29 | `declaration-track:5dd78c80942e2705813442595859cf24cc4bbd700053d51bc325876df098363e` |
+| 3 | `def` | [sourceArgument](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/sourceargument.md) | 97 | `declaration-track:c695c3459300d94e20e6f7b4740e35dc2f92cc0c10fb01803a8c04a3e930eb0e` |
+| 4 | `def` | [sourceRadius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/sourceradius.md) | 99 | `declaration-track:0f5efaeec2855dfdb638c552caf6f4e230f283e23eaeb6ced0ee5a82eec7e93c` |
+| 5 | `def` | [sourceDisplacement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/sourcedisplacement.md) | 101 | `declaration-track:df926e88f7dde47da2c376a9d2c90b4f475de0a44af2c614981d60454da8faaa` |
+| 6 | `def` | [InputValid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/inputvalid.md) | 104 | `declaration-track:8957c2aa7e1da074282e67de10a8a1db2be27438af01f5973fa900ed426b2fa2` |
+| 7 | `def` | [SeedWindows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/seedwindows.md) | 108 | `declaration-track:0e8f45e9c5c699564e6c75d609c03fa7d6d277ce292af9418ce619c5496df55d` |
+| 8 | `def` | [slot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/slot.md) | 113 | `declaration-track:3c43af1f90b412e7837333fc9add3f833cb2abd5b6b5a4755c164f52507735d7` |
+| 9 | `theorem` | [group_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/group-cover.md) | 116 | `result-track:0264f94aede8ef1357419009adfb8a9217bce24e3e81261511196f4bd340cff7` |
+| 10 | `theorem` | [group_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlockData.lean/declarations/group-unique.md) | 123 | `result-track:d3dff6ee57d4e61e39fb9017b28cb2b69a7cdc7179f0d0c5044fa4b99f393521` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

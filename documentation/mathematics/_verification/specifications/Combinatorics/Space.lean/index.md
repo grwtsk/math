@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Space.lean/index.md) · [Full source](../../../../Combinatorics/Space.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Space.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Space.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SoninSpaceFamily](../../../../Combinatorics/Space.lean/declarations/soninspacefamily.md) | 14 | `declaration-track:8969e76b3e6028b57c45ee8ddce18291a5470d0ec335ee8b6d2f3b0e614e5df9` |
+| 1 | `structure` | [SoninSpaceFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Space.lean/declarations/soninspacefamily.md) | 14 | `declaration-track:8969e76b3e6028b57c45ee8ddce18291a5470d0ec335ee8b6d2f3b0e614e5df9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

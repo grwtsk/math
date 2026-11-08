@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/HomOpenAligned.lean/index.md) · [Full source](../../../../GeneralTopology/HomOpenAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,28 +57,28 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ContinuousOpenMap](../../../../GeneralTopology/HomOpenAligned.lean/declarations/continuousopenmap.md) | 33 | `declaration-track:a231f8706eb9ec5cf5f7e6e8602beb585f8a013b36f42828d49269c43d3efc99` |
-| 2 | `class` | [ContinuousOpenMapClass](../../../../GeneralTopology/HomOpenAligned.lean/declarations/continuousopenmapclass.md) | 45 | `declaration-track:aba31f78cbac3f88aa0cd63775aea9f18d3574e5079559044d91fce4cf26588a` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/HomOpenAligned.lean/declarations/instance-source-edition-2.md) | 54 | `declaration-track:17fd0eb92f4348515264156e141e65d0f6c8c255d7d672aa054a6b80a278f2eb` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/HomOpenAligned.lean/declarations/instance-source-edition-3.md) | 65 | `declaration-track:d00c3774c90840a6491fa832d04b0637c5dde49ca8dc51286ed0ded563b0ef32` |
-| 5 | `theorem` | [toFun_eq_coe](../../../../GeneralTopology/HomOpenAligned.lean/declarations/tofun-eq-coe.md) | 74 | `result-track:6d1b0133b4c980c23c2f8dca2e56851d45254fe043c47cb68bedfb831315ed60` |
-| 6 | `theorem` | [coe_toContinuousMap](../../../../GeneralTopology/HomOpenAligned.lean/declarations/coe-tocontinuousmap.md) | 79 | `result-track:1a193b7ac91113f45a69b541932f3380bb4fb958ec7cf1487afb2649c50b3e1e` |
-| 7 | `theorem` | [ext](../../../../GeneralTopology/HomOpenAligned.lean/declarations/ext.md) | 82 | `result-track:94c743b3736430a4ed636d6e67dbb1db08001540507a16c6101a288f04c5f97b` |
-| 8 | `def` | [copy](../../../../GeneralTopology/HomOpenAligned.lean/declarations/copy.md) | 88 | `declaration-track:56494435f4baba820ec5a0956ea05b4dd32ae78ac1c77609d79125c7e003beeb` |
-| 9 | `theorem` | [coe_copy](../../../../GeneralTopology/HomOpenAligned.lean/declarations/coe-copy.md) | 93 | `result-track:48143efc974e2815855ce1b0c40127a0363940ea71dd7d96c1a0cf7871410281` |
-| 10 | `theorem` | [copy_eq](../../../../GeneralTopology/HomOpenAligned.lean/declarations/copy-eq.md) | 97 | `result-track:6e38f1019f2395a8abc05a798298cc9237fcc0d4d13c30366f287d9ae8f21354` |
-| 11 | `def` | [id](../../../../GeneralTopology/HomOpenAligned.lean/declarations/id.md) | 104 | `declaration-track:6579faf700e3df7d48325123bd19a34ffe3f4ae8b1f9fec11a1883aeb9ed2b7f` |
-| 12 | `instance` | [(anonymous)](../../../../GeneralTopology/HomOpenAligned.lean/declarations/instance.md) | 108 | `declaration-track:15a73665dd27f70bf521af665cd090cd17f4f4e4e5afb2452e805d983ca5ed01` |
-| 13 | `theorem` | [coe_id](../../../../GeneralTopology/HomOpenAligned.lean/declarations/coe-id.md) | 112 | `result-track:f7161aa6c40f2c83878d009f9c0d1af0e99fb590ab90eee83cdf1954716c9f22` |
-| 14 | `theorem` | [id_apply](../../../../GeneralTopology/HomOpenAligned.lean/declarations/id-apply.md) | 119 | `result-track:dadf09ae71ed2372e2975cd1a720f0263572df331fc363c44e7b88d588653afe` |
-| 15 | `def` | [comp](../../../../GeneralTopology/HomOpenAligned.lean/declarations/comp.md) | 124 | `declaration-track:68962ae886b468c37928f1fd59a2a43bca4836ed5f9567be0a2c9e69490da89b` |
-| 16 | `theorem` | [coe_comp](../../../../GeneralTopology/HomOpenAligned.lean/declarations/coe-comp.md) | 129 | `result-track:3d62caa1aee9da77f25b22dd4e850785ba374aa718f9d02b63a51e7dd9d06565` |
-| 17 | `theorem` | [comp_apply](../../../../GeneralTopology/HomOpenAligned.lean/declarations/comp-apply.md) | 134 | `result-track:2f198fd561793334e3b472ff0b7d4e6e151b28b35435bec4694ac5472381a2db` |
-| 18 | `theorem` | [comp_assoc](../../../../GeneralTopology/HomOpenAligned.lean/declarations/comp-assoc.md) | 139 | `result-track:af9b531e8492abd1579b72bd1c14c9966d67594513fbe254111f1fbd7a925b5f` |
-| 19 | `theorem` | [comp_id](../../../../GeneralTopology/HomOpenAligned.lean/declarations/comp-id.md) | 145 | `result-track:a07257326bf5ce3f03e870ca78f404992693b4790957c8989e3d81be939cf86c` |
-| 20 | `theorem` | [id_comp](../../../../GeneralTopology/HomOpenAligned.lean/declarations/id-comp.md) | 150 | `result-track:53f3e90c77e14e900306e4bb4966385121150b81d5087f98862106d9eba770af` |
-| 21 | `theorem` | [cancel_right](../../../../GeneralTopology/HomOpenAligned.lean/declarations/cancel-right.md) | 154 | `result-track:2221462071babee2494f0afed3188b857749ab5cce2ba3288da30b722632ffb2` |
-| 22 | `theorem` | [cancel_left](../../../../GeneralTopology/HomOpenAligned.lean/declarations/cancel-left.md) | 159 | `result-track:9ec5aaf6a384b0ee667c684ffaaf64b333842a50a1307eb1ffcf170e85bbfc26` |
+| 1 | `structure` | [ContinuousOpenMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/continuousopenmap.md) | 33 | `declaration-track:a231f8706eb9ec5cf5f7e6e8602beb585f8a013b36f42828d49269c43d3efc99` |
+| 2 | `class` | [ContinuousOpenMapClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/continuousopenmapclass.md) | 45 | `declaration-track:aba31f78cbac3f88aa0cd63775aea9f18d3574e5079559044d91fce4cf26588a` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/instance-source-edition-2.md) | 54 | `declaration-track:17fd0eb92f4348515264156e141e65d0f6c8c255d7d672aa054a6b80a278f2eb` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/instance-source-edition-3.md) | 65 | `declaration-track:d00c3774c90840a6491fa832d04b0637c5dde49ca8dc51286ed0ded563b0ef32` |
+| 5 | `theorem` | [toFun_eq_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/tofun-eq-coe.md) | 74 | `result-track:6d1b0133b4c980c23c2f8dca2e56851d45254fe043c47cb68bedfb831315ed60` |
+| 6 | `theorem` | [coe_toContinuousMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/coe-tocontinuousmap.md) | 79 | `result-track:1a193b7ac91113f45a69b541932f3380bb4fb958ec7cf1487afb2649c50b3e1e` |
+| 7 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/ext.md) | 82 | `result-track:94c743b3736430a4ed636d6e67dbb1db08001540507a16c6101a288f04c5f97b` |
+| 8 | `def` | [copy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/copy.md) | 88 | `declaration-track:56494435f4baba820ec5a0956ea05b4dd32ae78ac1c77609d79125c7e003beeb` |
+| 9 | `theorem` | [coe_copy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/coe-copy.md) | 93 | `result-track:48143efc974e2815855ce1b0c40127a0363940ea71dd7d96c1a0cf7871410281` |
+| 10 | `theorem` | [copy_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/copy-eq.md) | 97 | `result-track:6e38f1019f2395a8abc05a798298cc9237fcc0d4d13c30366f287d9ae8f21354` |
+| 11 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/id.md) | 104 | `declaration-track:6579faf700e3df7d48325123bd19a34ffe3f4ae8b1f9fec11a1883aeb9ed2b7f` |
+| 12 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/instance.md) | 108 | `declaration-track:15a73665dd27f70bf521af665cd090cd17f4f4e4e5afb2452e805d983ca5ed01` |
+| 13 | `theorem` | [coe_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/coe-id.md) | 112 | `result-track:f7161aa6c40f2c83878d009f9c0d1af0e99fb590ab90eee83cdf1954716c9f22` |
+| 14 | `theorem` | [id_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/id-apply.md) | 119 | `result-track:dadf09ae71ed2372e2975cd1a720f0263572df331fc363c44e7b88d588653afe` |
+| 15 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/comp.md) | 124 | `declaration-track:68962ae886b468c37928f1fd59a2a43bca4836ed5f9567be0a2c9e69490da89b` |
+| 16 | `theorem` | [coe_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/coe-comp.md) | 129 | `result-track:3d62caa1aee9da77f25b22dd4e850785ba374aa718f9d02b63a51e7dd9d06565` |
+| 17 | `theorem` | [comp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/comp-apply.md) | 134 | `result-track:2f198fd561793334e3b472ff0b7d4e6e151b28b35435bec4694ac5472381a2db` |
+| 18 | `theorem` | [comp_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/comp-assoc.md) | 139 | `result-track:af9b531e8492abd1579b72bd1c14c9966d67594513fbe254111f1fbd7a925b5f` |
+| 19 | `theorem` | [comp_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/comp-id.md) | 145 | `result-track:a07257326bf5ce3f03e870ca78f404992693b4790957c8989e3d81be939cf86c` |
+| 20 | `theorem` | [id_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/id-comp.md) | 150 | `result-track:53f3e90c77e14e900306e4bb4966385121150b81d5087f98862106d9eba770af` |
+| 21 | `theorem` | [cancel_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/cancel-right.md) | 154 | `result-track:2221462071babee2494f0afed3188b857749ab5cce2ba3288da30b722632ffb2` |
+| 22 | `theorem` | [cancel_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomOpenAligned.lean/declarations/cancel-left.md) | 159 | `result-track:9ec5aaf6a384b0ee667c684ffaaf64b333842a50a1307eb1ffcf170e85bbfc26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

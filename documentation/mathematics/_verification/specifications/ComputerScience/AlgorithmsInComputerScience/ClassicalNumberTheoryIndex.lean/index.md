@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ClassicalNumberTheoryIndex.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ClassicalNumberTheoryIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClassicalNumberTheoryIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClassicalNumberTheoryIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,13 +61,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mobiusInversionAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ClassicalNumberTheoryIndex.lean/declarations/mobiusinversionanchor.md) | 17 | `declaration-track:fb401c3d661cec74eb0e556bb365546b13da4a2778974d95e3b49f94b3367509` |
-| 2 | `def` | [eulerPhiAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ClassicalNumberTheoryIndex.lean/declarations/eulerphianchor.md) | 27 | `declaration-track:fe6237e3ca0179ef56ec15f9ff90edcb3adbb9156345b069993ceaa8ac141ad4` |
-| 3 | `def` | [divisorProblemAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ClassicalNumberTheoryIndex.lean/declarations/divisorproblemanchor.md) | 37 | `declaration-track:3e453f111333ba36fdd17ad9ea87a19435363dbf3a81eca0f55fb5694911aa3a` |
-| 4 | `def` | [finiteEulerProductAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ClassicalNumberTheoryIndex.lean/declarations/finiteeulerproductanchor.md) | 47 | `declaration-track:e11a16731b885f31512fbc7466f6e22c17ca790ecb61db61ca853e0a6ef1fa38` |
-| 5 | `def` | [analyticEulerProductAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ClassicalNumberTheoryIndex.lean/declarations/analyticeulerproductanchor.md) | 57 | `declaration-track:cd66b95ff43534e0d44c37a3fabea99f5b7fecbffd3e83e636c988cbcfd932dc` |
-| 6 | `def` | [pntClassicalRouteAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ClassicalNumberTheoryIndex.lean/declarations/pntclassicalrouteanchor.md) | 67 | `declaration-track:636ed299617ae906c7449acd041dee69a29d1b23f8235586d6da13c4c2e45148` |
-| 7 | `def` | [classicalNumberTheoryAnchors](../../../../../ComputerScience/AlgorithmsInComputerScience/ClassicalNumberTheoryIndex.lean/declarations/classicalnumbertheoryanchors.md) | 77 | `declaration-track:a06d08c37a364adbf41fc4c4d27a32becfbeca86cdb3d05a69d759bc5bfead8e` |
+| 1 | `def` | [mobiusInversionAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClassicalNumberTheoryIndex.lean/declarations/mobiusinversionanchor.md) | 17 | `declaration-track:fb401c3d661cec74eb0e556bb365546b13da4a2778974d95e3b49f94b3367509` |
+| 2 | `def` | [eulerPhiAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClassicalNumberTheoryIndex.lean/declarations/eulerphianchor.md) | 27 | `declaration-track:fe6237e3ca0179ef56ec15f9ff90edcb3adbb9156345b069993ceaa8ac141ad4` |
+| 3 | `def` | [divisorProblemAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClassicalNumberTheoryIndex.lean/declarations/divisorproblemanchor.md) | 37 | `declaration-track:3e453f111333ba36fdd17ad9ea87a19435363dbf3a81eca0f55fb5694911aa3a` |
+| 4 | `def` | [finiteEulerProductAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClassicalNumberTheoryIndex.lean/declarations/finiteeulerproductanchor.md) | 47 | `declaration-track:e11a16731b885f31512fbc7466f6e22c17ca790ecb61db61ca853e0a6ef1fa38` |
+| 5 | `def` | [analyticEulerProductAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClassicalNumberTheoryIndex.lean/declarations/analyticeulerproductanchor.md) | 57 | `declaration-track:cd66b95ff43534e0d44c37a3fabea99f5b7fecbffd3e83e636c988cbcfd932dc` |
+| 6 | `def` | [pntClassicalRouteAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClassicalNumberTheoryIndex.lean/declarations/pntclassicalrouteanchor.md) | 67 | `declaration-track:636ed299617ae906c7449acd041dee69a29d1b23f8235586d6da13c4c2e45148` |
+| 7 | `def` | [classicalNumberTheoryAnchors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClassicalNumberTheoryIndex.lean/declarations/classicalnumbertheoryanchors.md) | 77 | `declaration-track:a06d08c37a364adbf41fc4c4d27a32becfbeca86cdb3d05a69d759bc5bfead8e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

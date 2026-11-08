@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/AEb2705f004c.lean/index.md) · [Full source](../../../../FunctionalAnalysis/AEb2705f004c.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AEb2705f004c.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AEb2705f004c.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [kernelSpace_isHilbert](../../../../FunctionalAnalysis/AEb2705f004c.lean/declarations/kernelspace-ishilbert.md) | 18 | `result-track:44fa9b3a67556121ac938037be1c26a7fae755808933198ef55c2b0a6de31c89` |
+| 1 | `theorem` | [kernelSpace_isHilbert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AEb2705f004c.lean/declarations/kernelspace-ishilbert.md) | 18 | `result-track:44fa9b3a67556121ac938037be1c26a7fae755808933198ef55c2b0a6de31c89` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

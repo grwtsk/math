@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PenroseDiagramNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PenroseDiagramNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PenroseDiagramNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PenroseDiagramNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PenroseDiagramProps](../../../../../ComputerScience/AlgorithmsInComputerScience/PenroseDiagramNamespaced.lean/declarations/penrosediagramprops.md) | 15 | `declaration-track:f37a04050a9e78436739babb60e7ec31775177f4f376e4ceff1e7efc089e2dc1` |
-| 2 | `def` | [PenroseDiagram](../../../../../ComputerScience/AlgorithmsInComputerScience/PenroseDiagramNamespaced.lean/declarations/penrosediagram.md) | 44 | `declaration-track:b3c61461a4307ad5f8a8c5cff4d6cb6ef85b9d50c10268061795c20f0cc1008b` |
+| 1 | `structure` | [PenroseDiagramProps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PenroseDiagramNamespaced.lean/declarations/penrosediagramprops.md) | 15 | `declaration-track:f37a04050a9e78436739babb60e7ec31775177f4f376e4ceff1e7efc089e2dc1` |
+| 2 | `def` | [PenroseDiagram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PenroseDiagramNamespaced.lean/declarations/penrosediagram.md) | 44 | `declaration-track:b3c61461a4307ad5f8a8c5cff4d6cb6ef85b9d50c10268061795c20f0cc1008b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

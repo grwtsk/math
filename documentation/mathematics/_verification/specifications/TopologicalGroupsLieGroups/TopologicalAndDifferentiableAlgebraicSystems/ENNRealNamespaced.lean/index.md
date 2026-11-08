@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNRealNamespaced.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNRealNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNRealNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNRealNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [tsum_set_one](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNRealNamespaced.lean/declarations/tsum-set-one.md) | 36 | `result-track:fec2dade974f3db68db8a02a483c10f5be479c02fdc357f83ba0bebbd2669d6c` |
-| 2 | `lemma` | [tsum_set_const](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNRealNamespaced.lean/declarations/tsum-set-const.md) | 43 | `result-track:ed95d44b5ecf36a5e6e3507992632cae29da774a57373fc7ea17f1351d024053` |
-| 3 | `lemma` | [tsum_one](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNRealNamespaced.lean/declarations/tsum-one.md) | 50 | `result-track:2e805b7ec46f5eae87d0ec18620e49a8ca625b687c3ff601518a0f7fc237ab60` |
-| 4 | `lemma` | [tsum_const](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNRealNamespaced.lean/declarations/tsum-const.md) | 54 | `result-track:913d90ad203c6561b33a7c7dd5fa04d70c22145bab9bcc5855649b7317a967b9` |
+| 1 | `lemma` | [tsum_set_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNRealNamespaced.lean/declarations/tsum-set-one.md) | 36 | `result-track:fec2dade974f3db68db8a02a483c10f5be479c02fdc357f83ba0bebbd2669d6c` |
+| 2 | `lemma` | [tsum_set_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNRealNamespaced.lean/declarations/tsum-set-const.md) | 43 | `result-track:ed95d44b5ecf36a5e6e3507992632cae29da774a57373fc7ea17f1351d024053` |
+| 3 | `lemma` | [tsum_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNRealNamespaced.lean/declarations/tsum-one.md) | 50 | `result-track:2e805b7ec46f5eae87d0ec18620e49a8ca625b687c3ff601518a0f7fc237ab60` |
+| 4 | `lemma` | [tsum_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNRealNamespaced.lean/declarations/tsum-const.md) | 54 | `result-track:913d90ad203c6561b33a7c7dd5fa04d70c22145bab9bcc5855649b7317a967b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

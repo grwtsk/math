@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtale.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtale.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtale.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtale.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [etalePretopology](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtale.lean/declarations/etalepretopology.md) | 27 | `declaration-track:0c3c0ebb8b39d7e8d15c743639187e57e7679a08d2bd0d3024a853b69139f855` |
-| 2 | `abbrev` | [etaleTopology](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtale.lean/declarations/etaletopology.md) | 31 | `declaration-track:18e06830e2efe46590d680ab13c7d3bd08532be220a3f1dff8c0d5aeffdb2bb5` |
-| 3 | `lemma` | [zariskiTopology_le_etaleTopology](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtale.lean/declarations/zariskitopology-le-etaletopology.md) | 34 | `result-track:6587cb400696bcf0336a901169b5900f6900d4cc98e044b335ed8aabdc81ed1f` |
-| 4 | `def` | [smallEtaleTopology](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtale.lean/declarations/smalletaletopology.md) | 41 | `declaration-track:a53bd8cbce60d391d5e96fb98c23d2fb55b6fba516bc967987220edcb884cbc5` |
-| 5 | `def` | [smallEtalePretopology](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtale.lean/declarations/smalletalepretopology.md) | 45 | `declaration-track:80f1fc45979a7e882d3c49499a55221584f201c8977f5a9cadb0e1aa99b46343` |
+| 1 | `def` | [etalePretopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtale.lean/declarations/etalepretopology.md) | 27 | `declaration-track:0c3c0ebb8b39d7e8d15c743639187e57e7679a08d2bd0d3024a853b69139f855` |
+| 2 | `abbrev` | [etaleTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtale.lean/declarations/etaletopology.md) | 31 | `declaration-track:18e06830e2efe46590d680ab13c7d3bd08532be220a3f1dff8c0d5aeffdb2bb5` |
+| 3 | `lemma` | [zariskiTopology_le_etaleTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtale.lean/declarations/zariskitopology-le-etaletopology.md) | 34 | `result-track:6587cb400696bcf0336a901169b5900f6900d4cc98e044b335ed8aabdc81ed1f` |
+| 4 | `def` | [smallEtaleTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtale.lean/declarations/smalletaletopology.md) | 41 | `declaration-track:a53bd8cbce60d391d5e96fb98c23d2fb55b6fba516bc967987220edcb884cbc5` |
+| 5 | `def` | [smallEtalePretopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtale.lean/declarations/smalletalepretopology.md) | 45 | `declaration-track:80f1fc45979a7e882d3c49499a55221584f201c8977f5a9cadb0e1aa99b46343` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DList](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/dlist.md) | 13 | `declaration-track:a7306e6d210f13fc52572f82d9f3a7969556d4f3db7e8a449f1a2a16850e7fdc` |
-| 2 | `def` | [ofList](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/oflist.md) | 24 | `declaration-track:ef9cc4a35939c8e80c4124203368613b32883d0bcc516f08f109c2bc8db18644` |
-| 3 | `def` | [empty](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/empty.md) | 28 | `declaration-track:2ff809638a8b5ca7a3bb8bed744bb4b0b5d2fc544ecb3080186e69c0876df9ac` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/instance.md) | 31 | `declaration-track:40b057783469824eca3a3283b2f5b077c3920be9fe36cfd80db5cde02d2262eb` |
-| 5 | `def` | [toList](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/tolist.md) | 34 | `declaration-track:e70a9ef11ac783f988cbcb2ca62a5073ab406993728fdef3bab3a5d89e9822f3` |
-| 6 | `def` | [singleton](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/singleton.md) | 38 | `declaration-track:3102e6ea55ba8b7667dcadd4570cd9bdb50e6405acfabcd55488b9c0cfca6ced` |
-| 7 | `def` | [cons](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/cons.md) | 43 | `declaration-track:4c9f357c31efca7ea50ff96c94dafdb1bd7b122eba9e17e0304cb50bf0956ed5` |
-| 8 | `def` | [append](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/append.md) | 50 | `declaration-track:73852246dd8d2b649d97f4f583b0a270c014b7e62048f60bfefdad3744cb7a33` |
-| 9 | `def` | [push](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/push.md) | 60 | `declaration-track:13497faeaed635fc95b00173eb1e2c002c923be4b9529ceb0001f5f1e16f1b24` |
-| 10 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/instance-source-edition-2.md) | 70 | `declaration-track:9a3d6fb98f0e3e33b20cd335cea21cb751738dcffd6500b6ddd67681173f3edb` |
+| 1 | `structure` | [DList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/dlist.md) | 13 | `declaration-track:a7306e6d210f13fc52572f82d9f3a7969556d4f3db7e8a449f1a2a16850e7fdc` |
+| 2 | `def` | [ofList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/oflist.md) | 24 | `declaration-track:ef9cc4a35939c8e80c4124203368613b32883d0bcc516f08f109c2bc8db18644` |
+| 3 | `def` | [empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/empty.md) | 28 | `declaration-track:2ff809638a8b5ca7a3bb8bed744bb4b0b5d2fc544ecb3080186e69c0876df9ac` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/instance.md) | 31 | `declaration-track:40b057783469824eca3a3283b2f5b077c3920be9fe36cfd80db5cde02d2262eb` |
+| 5 | `def` | [toList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/tolist.md) | 34 | `declaration-track:e70a9ef11ac783f988cbcb2ca62a5073ab406993728fdef3bab3a5d89e9822f3` |
+| 6 | `def` | [singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/singleton.md) | 38 | `declaration-track:3102e6ea55ba8b7667dcadd4570cd9bdb50e6405acfabcd55488b9c0cfca6ced` |
+| 7 | `def` | [cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/cons.md) | 43 | `declaration-track:4c9f357c31efca7ea50ff96c94dafdb1bd7b122eba9e17e0304cb50bf0956ed5` |
+| 8 | `def` | [append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/append.md) | 50 | `declaration-track:73852246dd8d2b649d97f4f583b0a270c014b7e62048f60bfefdad3744cb7a33` |
+| 9 | `def` | [push](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/push.md) | 60 | `declaration-track:13497faeaed635fc95b00173eb1e2c002c923be4b9529ceb0001f5f1e16f1b24` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DList.lean/declarations/instance-source-edition-2.md) | 70 | `declaration-track:9a3d6fb98f0e3e33b20cd335cea21cb751738dcffd6500b6ddd67681173f3edb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

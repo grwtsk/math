@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DataRealPiIrrationalNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/DataRealPiIrrationalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiIrrationalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiIrrationalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,22 +59,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [I](../../../../RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/i.md) | 49 | `declaration-track:662f59633e9f3e38df809d6cae3c69ed26d2f60e5777e89bb1179234a934f128` |
-| 2 | `lemma` | [I_zero](../../../../RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/i-zero.md) | 53 | `result-track:90d3d1aed06891ad720f6f69252f5b1d4eba9c601b8b8cad16ee1196a7b563f6` |
-| 3 | `lemma` | [recursion'](../../../../RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/recursion.md) | 67 | `result-track:0568fe899f11165b279a261fb761b362b0b2644ab01b1022040f58e9ff2a9543` |
-| 4 | `lemma` | [recursion](../../../../RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/recursion-source-edition-2.md) | 130 | `result-track:40d941f4f6f1520f95a9ee9387f4580539cb9889acf58a2fe46577bd2f116cdf` |
-| 5 | `lemma` | [I_one](../../../../RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/i-one.md) | 141 | `result-track:a305935ee4e2bae628d8ef653c6a3510ce1b0657a53eca28f7c65897a6d41546` |
-| 6 | `def` | [sinPoly](../../../../RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/sinpoly.md) | 151 | `declaration-track:d3f796b55e5d71f604d6cee4e457d831b8f57f5795ff1a10b1dc2b2b2d8bd346` |
-| 7 | `def` | [cosPoly](../../../../RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/cospoly.md) | 162 | `declaration-track:7900277b0af24ebf4959558a6d3d61ffd29b85187c9d6bcf1f4f665dec02ef05` |
-| 8 | `lemma` | [sinPoly_natDegree_le](../../../../RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/sinpoly-natdegree-le.md) | 172 | `result-track:92cd31ceb6ce1fe64ff98fc58860d41aa3a289bce058a01ff8af6cdb51168b96` |
-| 9 | `lemma` | [cosPoly_natDegree_le](../../../../RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/cospoly-natdegree-le.md) | 187 | `result-track:ea673815949ed88770b7ad7d36e57eefaf8d5cf99ef1441ec4eb74e24c1687a9` |
-| 10 | `lemma` | [sinPoly_add_cosPoly_eval](../../../../RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/sinpoly-add-cospoly-eval.md) | 201 | `result-track:eee5384c4b8560b591111448cba7850a16173392166199d0faeec19c9646e45a` |
-| 11 | `lemma` | [is_integer](../../../../RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/is-integer.md) | 219 | `result-track:b694526382d8a3c60bd58743c652af5e4346b16e01d517c9ac62c3d3a5115a90` |
-| 12 | `lemma` | [I_pos](../../../../RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/i-pos.md) | 243 | `result-track:458d67a2322fdd2335bfb4412532abb734def2b3de368dc2467892e0facb8b42` |
-| 13 | `lemma` | [I_le](../../../../RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/i-le.md) | 256 | `result-track:7de1278760ec68af014cb3fd70929c70ab6ed479fbb7d0a18e8453d6a81297a8` |
-| 14 | `lemma` | [tendsto_pow_div_factorial_at_top_aux](../../../../RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/tendsto-pow-div-factorial-at-top-aux.md) | 271 | `result-track:db90e7a2a7b81a13f8cf5dbe1f788a55b893b2c888951da114f7a9fb34b2e1fb` |
-| 15 | `lemma` | [not_irrational_exists_rep](../../../../RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/not-irrational-exists-rep.md) | 278 | `result-track:497b7f7eed07636adf2a3392571d751dcd1a688567a96bbce15060fdb42e77d4` |
-| 16 | `theorem` | [irrational_pi](../../../../RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/irrational-pi.md) | 284 | `result-track:cdd6b324342f8702cd7f1a817a88c0ddefba0489a9376dec1621b28d95261be3` |
+| 1 | `def` | [I](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/i.md) | 49 | `declaration-track:662f59633e9f3e38df809d6cae3c69ed26d2f60e5777e89bb1179234a934f128` |
+| 2 | `lemma` | [I_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/i-zero.md) | 53 | `result-track:90d3d1aed06891ad720f6f69252f5b1d4eba9c601b8b8cad16ee1196a7b563f6` |
+| 3 | `lemma` | [recursion'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/recursion.md) | 67 | `result-track:0568fe899f11165b279a261fb761b362b0b2644ab01b1022040f58e9ff2a9543` |
+| 4 | `lemma` | [recursion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/recursion-source-edition-2.md) | 130 | `result-track:40d941f4f6f1520f95a9ee9387f4580539cb9889acf58a2fe46577bd2f116cdf` |
+| 5 | `lemma` | [I_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/i-one.md) | 141 | `result-track:a305935ee4e2bae628d8ef653c6a3510ce1b0657a53eca28f7c65897a6d41546` |
+| 6 | `def` | [sinPoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/sinpoly.md) | 151 | `declaration-track:d3f796b55e5d71f604d6cee4e457d831b8f57f5795ff1a10b1dc2b2b2d8bd346` |
+| 7 | `def` | [cosPoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/cospoly.md) | 162 | `declaration-track:7900277b0af24ebf4959558a6d3d61ffd29b85187c9d6bcf1f4f665dec02ef05` |
+| 8 | `lemma` | [sinPoly_natDegree_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/sinpoly-natdegree-le.md) | 172 | `result-track:92cd31ceb6ce1fe64ff98fc58860d41aa3a289bce058a01ff8af6cdb51168b96` |
+| 9 | `lemma` | [cosPoly_natDegree_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/cospoly-natdegree-le.md) | 187 | `result-track:ea673815949ed88770b7ad7d36e57eefaf8d5cf99ef1441ec4eb74e24c1687a9` |
+| 10 | `lemma` | [sinPoly_add_cosPoly_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/sinpoly-add-cospoly-eval.md) | 201 | `result-track:eee5384c4b8560b591111448cba7850a16173392166199d0faeec19c9646e45a` |
+| 11 | `lemma` | [is_integer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/is-integer.md) | 219 | `result-track:b694526382d8a3c60bd58743c652af5e4346b16e01d517c9ac62c3d3a5115a90` |
+| 12 | `lemma` | [I_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/i-pos.md) | 243 | `result-track:458d67a2322fdd2335bfb4412532abb734def2b3de368dc2467892e0facb8b42` |
+| 13 | `lemma` | [I_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/i-le.md) | 256 | `result-track:7de1278760ec68af014cb3fd70929c70ab6ed479fbb7d0a18e8453d6a81297a8` |
+| 14 | `lemma` | [tendsto_pow_div_factorial_at_top_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/tendsto-pow-div-factorial-at-top-aux.md) | 271 | `result-track:db90e7a2a7b81a13f8cf5dbe1f788a55b893b2c888951da114f7a9fb34b2e1fb` |
+| 15 | `lemma` | [not_irrational_exists_rep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/not-irrational-exists-rep.md) | 278 | `result-track:497b7f7eed07636adf2a3392571d751dcd1a688567a96bbce15060fdb42e77d4` |
+| 16 | `theorem` | [irrational_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiIrrationalNamespaced.lean/declarations/irrational-pi.md) | 284 | `result-track:cdd6b324342f8702cd7f1a817a88c0ddefba0489a9376dec1621b28d95261be3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

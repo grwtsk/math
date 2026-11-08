@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveKernelHermitianSymmetry.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveKernelHermitianSymmetry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveKernelHermitianSymmetry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveKernelHermitianSymmetry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PositiveKernel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveKernelHermitianSymmetry.lean/declarations/positivekernel.md) | 35 | `declaration-track:8e67e6b175434e9ca6047071334870b12a2f83092db97e9babe29d94f7b5e0f6` |
-| 2 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveKernelHermitianSymmetry.lean/declarations/instance.md) | 43 | `declaration-track:1b5a32e9991a5a8042137f36f981c73bd0ab4824fd3a8062c74e30d06b49bf15` |
-| 3 | `theorem` | [isHermitian](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveKernelHermitianSymmetry.lean/declarations/ishermitian.md) | 47 | `result-track:a5de0a459f8913f994bd20569efd0440197c3571e85a798a000a1b0df17eef99` |
-| 4 | `theorem` | [conj_apply_symm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveKernelHermitianSymmetry.lean/declarations/conj-apply-symm.md) | 53 | `result-track:83b7c43a88e7afc93ed4b6b5659c44e7d1ac345d3450c3ec91aa2d3eb929d3b8` |
-| 5 | `theorem` | [conj_matrix_apply_symm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveKernelHermitianSymmetry.lean/declarations/conj-matrix-apply-symm.md) | 59 | `result-track:61001dfc57ae234464cda81438be9d9bbae1a4fe97452c974a47f30251dda7b8` |
+| 1 | `structure` | [PositiveKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveKernelHermitianSymmetry.lean/declarations/positivekernel.md) | 35 | `declaration-track:8e67e6b175434e9ca6047071334870b12a2f83092db97e9babe29d94f7b5e0f6` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveKernelHermitianSymmetry.lean/declarations/instance.md) | 43 | `declaration-track:1b5a32e9991a5a8042137f36f981c73bd0ab4824fd3a8062c74e30d06b49bf15` |
+| 3 | `theorem` | [isHermitian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveKernelHermitianSymmetry.lean/declarations/ishermitian.md) | 47 | `result-track:a5de0a459f8913f994bd20569efd0440197c3571e85a798a000a1b0df17eef99` |
+| 4 | `theorem` | [conj_apply_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveKernelHermitianSymmetry.lean/declarations/conj-apply-symm.md) | 53 | `result-track:83b7c43a88e7afc93ed4b6b5659c44e7d1ac345d3450c3ec91aa2d3eb929d3b8` |
+| 5 | `theorem` | [conj_matrix_apply_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveKernelHermitianSymmetry.lean/declarations/conj-matrix-apply-symm.md) | 59 | `result-track:61001dfc57ae234464cda81438be9d9bbae1a4fe97452c974a47f30251dda7b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

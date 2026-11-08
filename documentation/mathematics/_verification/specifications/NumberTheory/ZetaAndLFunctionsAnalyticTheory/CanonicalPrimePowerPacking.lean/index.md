@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalPrimePowerSelector`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerSelector.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.SequentialThreePointVolumePacking`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SequentialThreePointVolumePacking.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalPrimePowerSelector`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerSelector.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.SequentialThreePointVolumePacking`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SequentialThreePointVolumePacking.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [canonicalPrimePowerPackingSequence](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/canonicalprimepowerpackingsequence.md) | 30 | `declaration-track:d98ea56fe70ab22d1906972cfe8efd3b1b5a4eb288f5c024c6f85f4eeb93f954` |
-| 2 | `theorem` | [source_eq_event_value](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/source-eq-event-value.md) | 39 | `result-track:1f70ebb7ee2fa71f5d10e853617f203f537b686ad7ef1e2ca639cf066a90d49f` |
-| 3 | `theorem` | [source_strict](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/source-strict.md) | 46 | `result-track:e66f5e39fcb79ea13d8ef97b3166288b4370c184dbce35c699113ac431c061b9` |
-| 4 | `theorem` | [valueAt_eq_canonical_window](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/valueat-eq-canonical-window.md) | 53 | `result-track:15da662474edfb5ae0a43b5155317616c3f7a1d091850afafabe7237724d8fc3` |
-| 5 | `theorem` | [valueAt_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/valueat-nonnegative.md) | 63 | `result-track:80ddcb77dcfed5e3f52704d05a8da37735cc5874d345feaa425394aeb9469340` |
-| 6 | `theorem` | [adjacent_overlap](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/adjacent-overlap.md) | 69 | `result-track:9c092924ccc6263ba6f4b448203a739de8ff175d1122c9116cf6ce966b48eb6d` |
-| 7 | `theorem` | [next_source_le_of_primePower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/next-source-le-of-primepower.md) | 82 | `result-track:5fb88d3dd2fc12ba72f30adfa509cfbb79b1813770dde4c3493ba5f2269a53d7` |
-| 8 | `structure` | [CanonicalPrimePowerPackingComparisonAtZero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/canonicalprimepowerpackingcomparisonatzero.md) | 93 | `declaration-track:fe9ace824dc47ceabd70bf1638f5abc4c0ecdda186a52756144415407bdbd8f6` |
-| 9 | `theorem` | [CanonicalPrimePowerPackingComparisonAtZero.witnessTrace_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/canonicalprimepowerpackingcomparisonatzero-witnesstrace-nonnegative.md) | 106 | `result-track:dc53db93165951e0245615f7a10387941e96523a7877db9df6e8f8fee421636b` |
+| 1 | `def` | [canonicalPrimePowerPackingSequence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/canonicalprimepowerpackingsequence.md) | 30 | `declaration-track:d98ea56fe70ab22d1906972cfe8efd3b1b5a4eb288f5c024c6f85f4eeb93f954` |
+| 2 | `theorem` | [source_eq_event_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/source-eq-event-value.md) | 39 | `result-track:1f70ebb7ee2fa71f5d10e853617f203f537b686ad7ef1e2ca639cf066a90d49f` |
+| 3 | `theorem` | [source_strict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/source-strict.md) | 46 | `result-track:e66f5e39fcb79ea13d8ef97b3166288b4370c184dbce35c699113ac431c061b9` |
+| 4 | `theorem` | [valueAt_eq_canonical_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/valueat-eq-canonical-window.md) | 53 | `result-track:15da662474edfb5ae0a43b5155317616c3f7a1d091850afafabe7237724d8fc3` |
+| 5 | `theorem` | [valueAt_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/valueat-nonnegative.md) | 63 | `result-track:80ddcb77dcfed5e3f52704d05a8da37735cc5874d345feaa425394aeb9469340` |
+| 6 | `theorem` | [adjacent_overlap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/adjacent-overlap.md) | 69 | `result-track:9c092924ccc6263ba6f4b448203a739de8ff175d1122c9116cf6ce966b48eb6d` |
+| 7 | `theorem` | [next_source_le_of_primePower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/next-source-le-of-primepower.md) | 82 | `result-track:5fb88d3dd2fc12ba72f30adfa509cfbb79b1813770dde4c3493ba5f2269a53d7` |
+| 8 | `structure` | [CanonicalPrimePowerPackingComparisonAtZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/canonicalprimepowerpackingcomparisonatzero.md) | 93 | `declaration-track:fe9ace824dc47ceabd70bf1638f5abc4c0ecdda186a52756144415407bdbd8f6` |
+| 9 | `theorem` | [CanonicalPrimePowerPackingComparisonAtZero.witnessTrace_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/canonicalprimepowerpackingcomparisonatzero-witnesstrace-nonnegative.md) | 106 | `result-track:dc53db93165951e0245615f7a10387941e96523a7877db9df6e8f8fee421636b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

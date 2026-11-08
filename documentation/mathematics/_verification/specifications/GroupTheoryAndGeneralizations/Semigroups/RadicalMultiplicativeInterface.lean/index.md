@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/Semigroups/RadicalMultiplicativeInterface.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/Semigroups/RadicalMultiplicativeInterface.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/RadicalMultiplicativeInterface.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/RadicalMultiplicativeInterface.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Radical`](../../../../../NumberTheory/DiophantineEquations/Radical.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Radical`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/Radical.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RadicalMultiplicativeInterface](../../../../../GroupTheoryAndGeneralizations/Semigroups/RadicalMultiplicativeInterface.lean/declarations/radicalmultiplicativeinterface.md) | 26 | `declaration-track:7157b57109d3b7508a5e31110c8cf9f3dc34e9670dc6dd1c7d866a6a48475862` |
-| 2 | `def` | [RadicalMultiplicativeInterface.canonical](../../../../../GroupTheoryAndGeneralizations/Semigroups/RadicalMultiplicativeInterface.lean/declarations/radicalmultiplicativeinterface-canonical.md) | 34 | `declaration-track:faa637ac68125926eedcb18f193578a57e97028c95d5e790289d1970d192051c` |
-| 3 | `theorem` | [RadicalMultiplicativeInterface.canonical_observable](../../../../../GroupTheoryAndGeneralizations/Semigroups/RadicalMultiplicativeInterface.lean/declarations/radicalmultiplicativeinterface-canonical-observable.md) | 42 | `result-track:bd2018442ed67719c1fbde87e593994accefb0fcee73dc3e68e9c48c9aff060e` |
-| 4 | `theorem` | [RadicalMultiplicativeInterface.observable_eq_coordinate_radicals](../../../../../GroupTheoryAndGeneralizations/Semigroups/RadicalMultiplicativeInterface.lean/declarations/radicalmultiplicativeinterface-observable-eq-coordinate-radicals.md) | 51 | `result-track:f776cff09659fda0a4439459fd14924fc79b76b53894a206c9d7f31b625bbff6` |
+| 1 | `structure` | [RadicalMultiplicativeInterface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/RadicalMultiplicativeInterface.lean/declarations/radicalmultiplicativeinterface.md) | 26 | `declaration-track:7157b57109d3b7508a5e31110c8cf9f3dc34e9670dc6dd1c7d866a6a48475862` |
+| 2 | `def` | [RadicalMultiplicativeInterface.canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/RadicalMultiplicativeInterface.lean/declarations/radicalmultiplicativeinterface-canonical.md) | 34 | `declaration-track:faa637ac68125926eedcb18f193578a57e97028c95d5e790289d1970d192051c` |
+| 3 | `theorem` | [RadicalMultiplicativeInterface.canonical_observable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/RadicalMultiplicativeInterface.lean/declarations/radicalmultiplicativeinterface-canonical-observable.md) | 42 | `result-track:bd2018442ed67719c1fbde87e593994accefb0fcee73dc3e68e9c48c9aff060e` |
+| 4 | `theorem` | [RadicalMultiplicativeInterface.observable_eq_coordinate_radicals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/RadicalMultiplicativeInterface.lean/declarations/radicalmultiplicativeinterface-observable-eq-coordinate-radicals.md) | 51 | `result-track:f776cff09659fda0a4439459fd14924fc79b76b53894a206c9d7f31b625bbff6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

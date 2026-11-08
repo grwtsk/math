@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/NineTranslatedOffsets.lean/index.md) · [Full source](../../../../Combinatorics/NineTranslatedOffsets.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NineTranslatedOffsets.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NineTranslatedOffsets.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -66,13 +66,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PixelCoordinate](../../../../Combinatorics/NineTranslatedOffsets.lean/declarations/pixelcoordinate.md) | 43 | `declaration-track:064b841918c30d4c2eae05925021c4fe1bdaaf91294ee22432cfe8aaea1d07f7` |
-| 2 | `structure` | [PixelSupport](../../../../Combinatorics/NineTranslatedOffsets.lean/declarations/pixelsupport.md) | 50 | `declaration-track:442ceeaf49fcfb9e29610182e3648840313b1c4fc67599457468af28e0eb44f3` |
-| 3 | `structure` | [Pixel](../../../../Combinatorics/NineTranslatedOffsets.lean/declarations/pixel.md) | 59 | `declaration-track:35079625055c58f79372ee7f6211eef4ad0531d11bb5c821804a0308a4d59bd8` |
-| 4 | `def` | [mooreNeighborhood](../../../../Combinatorics/NineTranslatedOffsets.lean/declarations/mooreneighborhood.md) | 64 | `declaration-track:40a1610307cb86640dec83d49e0ff235fde6943483b575a3c07f74ed143361ad` |
-| 5 | `def` | [PixelCoordinate.translate](../../../../Combinatorics/NineTranslatedOffsets.lean/declarations/pixelcoordinate-translate.md) | 70 | `declaration-track:e695250f6a6029ce2c14d8411f265d969eb2b6e46c052336c5e5e5301a7b6da9` |
-| 6 | `def` | [candidateStencil](../../../../Combinatorics/NineTranslatedOffsets.lean/declarations/candidatestencil.md) | 74 | `declaration-track:05501ebf457fa4e7989e9bb21362a2f4fbe38395d1d0afa576de137084d65c46` |
-| 7 | `theorem` | [candidateStencil_card](../../../../Combinatorics/NineTranslatedOffsets.lean/declarations/candidatestencil-card.md) | 77 | `result-track:ddb36f6fb519ef56ca19b0fcb2048c1ec61fb4a321a6e01d2d1ec9feb8561b8b` |
+| 1 | `structure` | [PixelCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NineTranslatedOffsets.lean/declarations/pixelcoordinate.md) | 43 | `declaration-track:064b841918c30d4c2eae05925021c4fe1bdaaf91294ee22432cfe8aaea1d07f7` |
+| 2 | `structure` | [PixelSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NineTranslatedOffsets.lean/declarations/pixelsupport.md) | 50 | `declaration-track:442ceeaf49fcfb9e29610182e3648840313b1c4fc67599457468af28e0eb44f3` |
+| 3 | `structure` | [Pixel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NineTranslatedOffsets.lean/declarations/pixel.md) | 59 | `declaration-track:35079625055c58f79372ee7f6211eef4ad0531d11bb5c821804a0308a4d59bd8` |
+| 4 | `def` | [mooreNeighborhood](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NineTranslatedOffsets.lean/declarations/mooreneighborhood.md) | 64 | `declaration-track:40a1610307cb86640dec83d49e0ff235fde6943483b575a3c07f74ed143361ad` |
+| 5 | `def` | [PixelCoordinate.translate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NineTranslatedOffsets.lean/declarations/pixelcoordinate-translate.md) | 70 | `declaration-track:e695250f6a6029ce2c14d8411f265d969eb2b6e46c052336c5e5e5301a7b6da9` |
+| 6 | `def` | [candidateStencil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NineTranslatedOffsets.lean/declarations/candidatestencil.md) | 74 | `declaration-track:05501ebf457fa4e7989e9bb21362a2f4fbe38395d1d0afa576de137084d65c46` |
+| 7 | `theorem` | [candidateStencil_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NineTranslatedOffsets.lean/declarations/candidatestencil-card.md) | 77 | `result-track:ddb36f6fb519ef56ca19b0fcb2048c1ec61fb4a321a6e01d2d1ec9feb8561b8b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

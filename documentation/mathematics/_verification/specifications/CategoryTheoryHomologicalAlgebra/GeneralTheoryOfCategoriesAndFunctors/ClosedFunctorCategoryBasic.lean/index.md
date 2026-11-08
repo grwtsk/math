@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedFunctorCategoryBasic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedFunctorCategoryBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedFunctorCategoryBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedFunctorCategoryBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [homEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedFunctorCategoryBasic.lean/declarations/homequiv.md) | 42 | `declaration-track:bacfca3ba081bda88b25fa8f0ddc18b4dfed9f0390754fc97ba199ee53b386b4` |
-| 2 | `lemma` | [homEquiv_naturality_two_symm](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedFunctorCategoryBasic.lean/declarations/homequiv-naturality-two-symm.md) | 87 | `result-track:2129634a63e3ae46a898d7f44c9e8cb1ab3ca21000b60cc18b5085c484b67079` |
-| 3 | `lemma` | [homEquiv_naturality_three](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedFunctorCategoryBasic.lean/declarations/homequiv-naturality-three.md) | 93 | `result-track:a65917792e0ce7c991ff137b75958f487044887e866b94ed40ae023c5948f7ae` |
-| 4 | `def` | [adj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedFunctorCategoryBasic.lean/declarations/adj.md) | 121 | `declaration-track:f6c802e0ce98f124698db91114a7c832131e90b53e531d9892d8c63e79a44b50` |
-| 5 | `def` | [closed](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedFunctorCategoryBasic.lean/declarations/closed.md) | 130 | `declaration-track:78e16877b13cbc5d3e6612a50dd666339c6b82c4f28b1384b0fbabff0fd87238` |
-| 6 | `instance` | [monoidalClosed](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedFunctorCategoryBasic.lean/declarations/monoidalclosed.md) | 136 | `declaration-track:2247c243e65f5c44c60af4d708c78978ebc9ac793ebcacf190c194716ebbc9ee` |
+| 1 | `def` | [homEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedFunctorCategoryBasic.lean/declarations/homequiv.md) | 42 | `declaration-track:bacfca3ba081bda88b25fa8f0ddc18b4dfed9f0390754fc97ba199ee53b386b4` |
+| 2 | `lemma` | [homEquiv_naturality_two_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedFunctorCategoryBasic.lean/declarations/homequiv-naturality-two-symm.md) | 87 | `result-track:2129634a63e3ae46a898d7f44c9e8cb1ab3ca21000b60cc18b5085c484b67079` |
+| 3 | `lemma` | [homEquiv_naturality_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedFunctorCategoryBasic.lean/declarations/homequiv-naturality-three.md) | 93 | `result-track:a65917792e0ce7c991ff137b75958f487044887e866b94ed40ae023c5948f7ae` |
+| 4 | `def` | [adj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedFunctorCategoryBasic.lean/declarations/adj.md) | 121 | `declaration-track:f6c802e0ce98f124698db91114a7c832131e90b53e531d9892d8c63e79a44b50` |
+| 5 | `def` | [closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedFunctorCategoryBasic.lean/declarations/closed.md) | 130 | `declaration-track:78e16877b13cbc5d3e6612a50dd666339c6b82c4f28b1384b0fbabff0fd87238` |
+| 6 | `instance` | [monoidalClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedFunctorCategoryBasic.lean/declarations/monoidalclosed.md) | 136 | `declaration-track:2247c243e65f5c44c60af4d708c78978ebc9ac793ebcacf190c194716ebbc9ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

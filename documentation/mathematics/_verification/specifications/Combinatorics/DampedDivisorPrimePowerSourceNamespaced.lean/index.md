@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DampedDivisorPrimePowerSourceNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/DampedDivisorPrimePowerSourceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DampedDivisorPrimePowerSourceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DampedDivisorPrimePowerSourceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dampedDivisorCoefficient_prime_pow](../../../../Combinatorics/DampedDivisorPrimePowerSourceNamespaced.lean/declarations/dampeddivisorcoefficient-prime-pow.md) | 20 | `result-track:b123a859025c1febed5be70757a3a74bcd9ed06b4e6b55084d860905839b9435` |
-| 2 | `theorem` | [dampedDivisorCoefficient_le_sq_of_not_prime_pow](../../../../Combinatorics/DampedDivisorPrimePowerSourceNamespaced.lean/declarations/dampeddivisorcoefficient-le-sq-of-not-prime-pow.md) | 27 | `result-track:0e3deb979b3f8ef63be2f9dd6678899bd6e8c5d5f5bf4a23746cd67b2a81ee6a` |
+| 1 | `theorem` | [dampedDivisorCoefficient_prime_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DampedDivisorPrimePowerSourceNamespaced.lean/declarations/dampeddivisorcoefficient-prime-pow.md) | 20 | `result-track:b123a859025c1febed5be70757a3a74bcd9ed06b4e6b55084d860905839b9435` |
+| 2 | `theorem` | [dampedDivisorCoefficient_le_sq_of_not_prime_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DampedDivisorPrimePowerSourceNamespaced.lean/declarations/dampeddivisorcoefficient-le-sq-of-not-prime-pow.md) | 27 | `result-track:0e3deb979b3f8ef63be2f9dd6678899bd6e8c5d5f5bf4a23746cd67b2a81ee6a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

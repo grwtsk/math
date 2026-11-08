@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CornerIndexedRotationFunction.lean/index.md) · [Full source](../../../../Combinatorics/CornerIndexedRotationFunction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerIndexedRotationFunction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerIndexedRotationFunction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -56,7 +56,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.Analysis.SpecialFunctions.Pow.Real` — import line 27; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` — import line 28; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Rat.Floor` — import line 29; external provider; requires a separately pinned dependency.
-- [Distinct Occupancy And Normalized Selection](../../../../ProbabilityTheoryAndStochasticProcesses/DistinctOccupancyAndNormalizedSelection.lean/index.md) — import line 31; pinned internal source present.
+- [Distinct Occupancy And Normalized Selection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/DistinctOccupancyAndNormalizedSelection.lean/index.md) — import line 31; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -67,10 +67,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TraversalDirection](../../../../Combinatorics/CornerIndexedRotationFunction.lean/declarations/traversaldirection.md) | 45 | `declaration-track:182fb463ead2551474b85c41fa163b2a25edcea3060a723d26723cd036a4c106` |
-| 2 | `inductive` | [SquareCorner](../../../../Combinatorics/CornerIndexedRotationFunction.lean/declarations/squarecorner.md) | 51 | `declaration-track:42fc4b35cabef2d526360d889e16ed336be182ae62f6eaa69dae5a30a4537d11` |
-| 3 | `def` | [SquareCorner.quarterTurns](../../../../Combinatorics/CornerIndexedRotationFunction.lean/declarations/squarecorner-quarterturns.md) | 59 | `declaration-track:20b2487638a102aab4fce1d8963dfbce63d54e12b86f7b4bc181dfab15868b98` |
-| 4 | `def` | [rotateOwnershipMask4](../../../../Combinatorics/CornerIndexedRotationFunction.lean/declarations/rotateownershipmask4.md) | 68 | `declaration-track:515267958a329bd4ab81ad9cfcd342c1ca4b58b292e8525742067def91740f70` |
+| 1 | `inductive` | [TraversalDirection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerIndexedRotationFunction.lean/declarations/traversaldirection.md) | 45 | `declaration-track:182fb463ead2551474b85c41fa163b2a25edcea3060a723d26723cd036a4c106` |
+| 2 | `inductive` | [SquareCorner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerIndexedRotationFunction.lean/declarations/squarecorner.md) | 51 | `declaration-track:42fc4b35cabef2d526360d889e16ed336be182ae62f6eaa69dae5a30a4537d11` |
+| 3 | `def` | [SquareCorner.quarterTurns](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerIndexedRotationFunction.lean/declarations/squarecorner-quarterturns.md) | 59 | `declaration-track:20b2487638a102aab4fce1d8963dfbce63d54e12b86f7b4bc181dfab15868b98` |
+| 4 | `def` | [rotateOwnershipMask4](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerIndexedRotationFunction.lean/declarations/rotateownershipmask4.md) | 68 | `declaration-track:515267958a329bd4ab81ad9cfcd342c1ca4b58b292e8525742067def91740f70` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

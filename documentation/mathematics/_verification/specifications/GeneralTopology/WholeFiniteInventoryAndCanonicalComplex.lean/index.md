@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/WholeFiniteInventoryAndCanonicalComplex.lean/index.md) · [Full source](../../../../GeneralTopology/WholeFiniteInventoryAndCanonicalComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WholeFiniteInventoryAndCanonicalComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WholeFiniteInventoryAndCanonicalComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Geometry.GridCell` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Finset.Basic` — import line 20; external provider; requires a separately pinned dependency.
-- [Typed Cells Faces And Dimension](../../../../GeneralTopology/TypedCellsFacesAndDimension.lean/index.md) — import line 22; pinned internal source present.
+- [Typed Cells Faces And Dimension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TypedCellsFacesAndDimension.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [vertexFintype](../../../../GeneralTopology/WholeFiniteInventoryAndCanonicalComplex.lean/declarations/vertexfintype.md) | 36 | `declaration-track:d237462555e60529c0c463faa8c102fa62ef9746e8795a8f78f53f628ab6849c` |
-| 2 | `instance` | [horizontalEdgeFintype](../../../../GeneralTopology/WholeFiniteInventoryAndCanonicalComplex.lean/declarations/horizontaledgefintype.md) | 43 | `declaration-track:cfe2b0730f7bdea61d453e19098f5ac1e876cb8991313236ffae987d11ebec41` |
-| 3 | `instance` | [verticalEdgeFintype](../../../../GeneralTopology/WholeFiniteInventoryAndCanonicalComplex.lean/declarations/verticaledgefintype.md) | 51 | `declaration-track:40e64cc304b985da64b56b34b81eb05b99f29b36df821083748c42b16a617cb8` |
-| 4 | `instance` | [cellFintype](../../../../GeneralTopology/WholeFiniteInventoryAndCanonicalComplex.lean/declarations/cellfintype.md) | 59 | `declaration-track:4734da6c1d8ad0f3ab5d8452f0c56b41ecbccf621a3296b6fc5dfccb8dddcbe8` |
-| 5 | `structure` | [Complex](../../../../GeneralTopology/WholeFiniteInventoryAndCanonicalComplex.lean/declarations/complex.md) | 80 | `declaration-track:c6ddf672146f4fc9d321bf824d9f5cfc37b370fc5fb47ebef448525bc9fb5fc0` |
-| 6 | `def` | [rectangularComplex](../../../../GeneralTopology/WholeFiniteInventoryAndCanonicalComplex.lean/declarations/rectangularcomplex.md) | 85 | `declaration-track:1ca73a1a020f02e3b366d74166cf6c81fee437d04a19d1bd3c7a8e85ef10b0d8` |
-| 7 | `theorem` | [mem_rectangularComplex](../../../../GeneralTopology/WholeFiniteInventoryAndCanonicalComplex.lean/declarations/mem-rectangularcomplex.md) | 90 | `result-track:2d2f73df79e42ab05f4d000798d8c05aac9eb7f95d86bcfec7de05fab8db5414` |
+| 1 | `instance` | [vertexFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WholeFiniteInventoryAndCanonicalComplex.lean/declarations/vertexfintype.md) | 36 | `declaration-track:d237462555e60529c0c463faa8c102fa62ef9746e8795a8f78f53f628ab6849c` |
+| 2 | `instance` | [horizontalEdgeFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WholeFiniteInventoryAndCanonicalComplex.lean/declarations/horizontaledgefintype.md) | 43 | `declaration-track:cfe2b0730f7bdea61d453e19098f5ac1e876cb8991313236ffae987d11ebec41` |
+| 3 | `instance` | [verticalEdgeFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WholeFiniteInventoryAndCanonicalComplex.lean/declarations/verticaledgefintype.md) | 51 | `declaration-track:40e64cc304b985da64b56b34b81eb05b99f29b36df821083748c42b16a617cb8` |
+| 4 | `instance` | [cellFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WholeFiniteInventoryAndCanonicalComplex.lean/declarations/cellfintype.md) | 59 | `declaration-track:4734da6c1d8ad0f3ab5d8452f0c56b41ecbccf621a3296b6fc5dfccb8dddcbe8` |
+| 5 | `structure` | [Complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WholeFiniteInventoryAndCanonicalComplex.lean/declarations/complex.md) | 80 | `declaration-track:c6ddf672146f4fc9d321bf824d9f5cfc37b370fc5fb47ebef448525bc9fb5fc0` |
+| 6 | `def` | [rectangularComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WholeFiniteInventoryAndCanonicalComplex.lean/declarations/rectangularcomplex.md) | 85 | `declaration-track:1ca73a1a020f02e3b366d74166cf6c81fee437d04a19d1bd3c7a8e85ef10b0d8` |
+| 7 | `theorem` | [mem_rectangularComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WholeFiniteInventoryAndCanonicalComplex.lean/declarations/mem-rectangularcomplex.md) | 90 | `result-track:2d2f73df79e42ab05f4d000798d8c05aac9eb7f95d86bcfec7de05fab8db5414` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

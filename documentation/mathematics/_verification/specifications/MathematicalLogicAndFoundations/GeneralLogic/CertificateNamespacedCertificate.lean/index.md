@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificateNamespacedCertificate.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificateNamespacedCertificate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificateNamespacedCertificate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificateNamespacedCertificate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Certificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificateNamespacedCertificate.lean/declarations/certificate.md) | 25 | `declaration-track:23a5d1e87c0b349c37b4f69f1f36e362e7f13c9f724d26095d3d4f69361b7fc1` |
-| 2 | `theorem` | [Certificate.sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificateNamespacedCertificate.lean/declarations/certificate-sound.md) | 28 | `result-track:3344e7dafb58be7d7d37e70c52e6a27d34207fe05dc84a64a5e1fc1d33b38999` |
+| 1 | `structure` | [Certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificateNamespacedCertificate.lean/declarations/certificate.md) | 25 | `declaration-track:23a5d1e87c0b349c37b4f69f1f36e362e7f13c9f724d26095d3d4f69361b7fc1` |
+| 2 | `theorem` | [Certificate.sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificateNamespacedCertificate.lean/declarations/certificate-sound.md) | 28 | `result-track:3344e7dafb58be7d7d37e70c52e6a27d34207fe05dc84a64a5e1fc1d33b38999` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

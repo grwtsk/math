@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/Identities.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/Identities.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/Identities.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/Identities.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [powAddExpansion](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/Identities.lean/declarations/powaddexpansion.md) | 35 | `declaration-track:ed58a980b4c3904acceb6fd6977ae368bf2d91ff00c18f616fe5b7d32be101ef` |
-| 2 | `def` | [polyBinomAux1](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/Identities.lean/declarations/polybinomaux1.md) | 51 | `declaration-track:ff51884e85218383f0ea0ffa7e0b0b650b482b4624ea95be181579d5ab34b5b2` |
-| 3 | `theorem` | [poly_binom_aux2](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/Identities.lean/declarations/poly-binom-aux2.md) | 57 | `result-track:e0c4da7457bca36ca25de0c712fece738e31ccb76f296b7020f7a8157841fa15` |
-| 4 | `theorem` | [poly_binom_aux3](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/Identities.lean/declarations/poly-binom-aux3.md) | 63 | `result-track:da958ec9119b979effe2bfc3c245659b8ba58fe49f48fa1bbaf3155e8d991938` |
-| 5 | `def` | [binomExpansion](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/Identities.lean/declarations/binomexpansion.md) | 74 | `declaration-track:3c5012d47cdf1b45ee8eb85afd0a8b7dd23d18ca5203274be24fcfb3b71b6849` |
-| 6 | `def` | [powSubPowFactor](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/Identities.lean/declarations/powsubpowfactor.md) | 86 | `declaration-track:79c430e245e4a115aae766cbf3e727ef4f0d9418e1cb98469d15a31528ae034e` |
-| 7 | `def` | [evalSubFactor](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/Identities.lean/declarations/evalsubfactor.md) | 97 | `declaration-track:d9cbdd29cb89037689ccf9c56e0b73b268339f0fc2d94c32589975209eb3fee6` |
+| 1 | `def` | [powAddExpansion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/Identities.lean/declarations/powaddexpansion.md) | 35 | `declaration-track:ed58a980b4c3904acceb6fd6977ae368bf2d91ff00c18f616fe5b7d32be101ef` |
+| 2 | `def` | [polyBinomAux1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/Identities.lean/declarations/polybinomaux1.md) | 51 | `declaration-track:ff51884e85218383f0ea0ffa7e0b0b650b482b4624ea95be181579d5ab34b5b2` |
+| 3 | `theorem` | [poly_binom_aux2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/Identities.lean/declarations/poly-binom-aux2.md) | 57 | `result-track:e0c4da7457bca36ca25de0c712fece738e31ccb76f296b7020f7a8157841fa15` |
+| 4 | `theorem` | [poly_binom_aux3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/Identities.lean/declarations/poly-binom-aux3.md) | 63 | `result-track:da958ec9119b979effe2bfc3c245659b8ba58fe49f48fa1bbaf3155e8d991938` |
+| 5 | `def` | [binomExpansion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/Identities.lean/declarations/binomexpansion.md) | 74 | `declaration-track:3c5012d47cdf1b45ee8eb85afd0a8b7dd23d18ca5203274be24fcfb3b71b6849` |
+| 6 | `def` | [powSubPowFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/Identities.lean/declarations/powsubpowfactor.md) | 86 | `declaration-track:79c430e245e4a115aae766cbf3e727ef4f0d9418e1cb98469d15a31528ae034e` |
+| 7 | `def` | [evalSubFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/Identities.lean/declarations/evalsubfactor.md) | 97 | `declaration-track:d9cbdd29cb89037689ccf9c56e0b73b268339f0fc2d94c32589975209eb3fee6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

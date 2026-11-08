@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetArithmeticModuliStage.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetArithmeticModuliStage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetArithmeticModuliStage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetArithmeticModuliStage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ArithmeticModuliStage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetArithmeticModuliStage.lean/declarations/arithmeticmodulistage.md) | 20 | `declaration-track:5f5baa1d18738e99732d914264b0eed6b3604bf6f7abfc8a2fb7df5801d72fbb` |
-| 2 | `structure` | [PerfectSectionComplexFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetArithmeticModuliStage.lean/declarations/perfectsectioncomplexfamily.md) | 26 | `declaration-track:ba89b753e683358005f1438aa8df5ae072b4db31422ed3baa99bf490fc3f8935` |
-| 3 | `theorem` | [perfect_family_base_change_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetArithmeticModuliStage.lean/declarations/perfect-family-base-change-if-supplied.md) | 36 | `result-track:16d358c4142cb06bdff5c345465596eccb4e4dcc7e84e634643d10d91c2d2e9c` |
-| 4 | `theorem` | [perfect_family_perfect_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetArithmeticModuliStage.lean/declarations/perfect-family-perfect-if-supplied.md) | 41 | `result-track:2a33d9c0dab4cef9038e29ef102fb04cdcbd4d1a97d3adf57928e837ea73c830` |
+| 1 | `structure` | [ArithmeticModuliStage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetArithmeticModuliStage.lean/declarations/arithmeticmodulistage.md) | 20 | `declaration-track:5f5baa1d18738e99732d914264b0eed6b3604bf6f7abfc8a2fb7df5801d72fbb` |
+| 2 | `structure` | [PerfectSectionComplexFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetArithmeticModuliStage.lean/declarations/perfectsectioncomplexfamily.md) | 26 | `declaration-track:ba89b753e683358005f1438aa8df5ae072b4db31422ed3baa99bf490fc3f8935` |
+| 3 | `theorem` | [perfect_family_base_change_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetArithmeticModuliStage.lean/declarations/perfect-family-base-change-if-supplied.md) | 36 | `result-track:16d358c4142cb06bdff5c345465596eccb4e4dcc7e84e634643d10d91c2d2e9c` |
+| 4 | `theorem` | [perfect_family_perfect_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetArithmeticModuliStage.lean/declarations/perfect-family-perfect-if-supplied.md) | 41 | `result-track:2a33d9c0dab4cef9038e29ef102fb04cdcbd4d1a97d3adf57928e837ea73c830` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

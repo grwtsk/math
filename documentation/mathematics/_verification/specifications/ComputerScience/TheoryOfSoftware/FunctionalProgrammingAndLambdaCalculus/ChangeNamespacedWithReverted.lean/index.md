@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ChangeNamespacedWithReverted.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ChangeNamespacedWithReverted.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ChangeNamespacedWithReverted.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ChangeNamespacedWithReverted.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [withReverted](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ChangeNamespacedWithReverted.lean/declarations/withreverted.md) | 45 | `declaration-track:0279697a6b88897c26d819d94abbabda883b52cf5f9433e440ff2b30fb13174f` |
-| 2 | `def` | [changeLocalDecl'](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ChangeNamespacedWithReverted.lean/declarations/changelocaldecl.md) | 67 | `declaration-track:d95cda6547481f3972ada14b0e1fd9ded8d6d0ecb4553196e91c54f4bf418076` |
-| 3 | `elab_rules` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ChangeNamespacedWithReverted.lean/declarations/elab-rules.md) | 107 | `declaration-track:a121e36ae97c97bc87bd8c6d772cf738da50f1ecd2137a2d9dd2e9ff6fde30ff` |
+| 1 | `def` | [withReverted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ChangeNamespacedWithReverted.lean/declarations/withreverted.md) | 45 | `declaration-track:0279697a6b88897c26d819d94abbabda883b52cf5f9433e440ff2b30fb13174f` |
+| 2 | `def` | [changeLocalDecl'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ChangeNamespacedWithReverted.lean/declarations/changelocaldecl.md) | 67 | `declaration-track:d95cda6547481f3972ada14b0e1fd9ded8d6d0ecb4553196e91c54f4bf418076` |
+| 3 | `elab_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ChangeNamespacedWithReverted.lean/declarations/elab-rules.md) | 107 | `declaration-track:a121e36ae97c97bc87bd8c6d772cf738da50f1ecd2137a2d9dd2e9ff6fde30ff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [errorPolynomial](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/declarations/errorpolynomial.md) | 16 | `declaration-track:d82d7f5b798d0f06017f89f4ffe3cab5cd1faef13b2bb4c27d535e6ffeda162a` |
-| 2 | `def` | [normalizationRatio](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/declarations/normalizationratio.md) | 20 | `declaration-track:a1dfdb9cf299d9d2e703eff5a55483cfe85329dd880b88d3d6ef3bf2ba6c8011` |
-| 3 | `def` | [positiveEndpoint](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/declarations/positiveendpoint.md) | 23 | `declaration-track:85289b606fd4ce36973c46366ec31cd0bfd7e990a517aa40f58c290d50964a9f` |
-| 4 | `def` | [reflectedEndpoint](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/declarations/reflectedendpoint.md) | 27 | `declaration-track:14472bbc94f6b20a91b0f398105baf4a3163dec43eb4a90eb7f3c7f4e7be9c68` |
-| 5 | `theorem` | [errorPolynomial_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/declarations/errorpolynomial-nonneg.md) | 31 | `result-track:bccfb2f2ff167817d0a882778674d309dff6c892d5b10db0d4ea5c881a288058` |
-| 6 | `theorem` | [normalization_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/declarations/normalization-bounds.md) | 34 | `result-track:eaf233fdfca2206378e1772a2982525e6ca5a0e8e297b0aaded8e15f9ce0d4b3` |
-| 7 | `theorem` | [normalizationRatio_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/declarations/normalizationratio-bounds.md) | 58 | `result-track:75b06700cad6fc767c5bf395ddee95bf23f5855aaacea70030a5ea282e6e93c4` |
-| 8 | `theorem` | [normalizationRatio_deficit](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/declarations/normalizationratio-deficit.md) | 68 | `result-track:eba31ccccb48ee6acc1dcba455021d70d9dde4c97cc3191ffc400dd312d19ba7` |
+| 1 | `def` | [errorPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/declarations/errorpolynomial.md) | 16 | `declaration-track:d82d7f5b798d0f06017f89f4ffe3cab5cd1faef13b2bb4c27d535e6ffeda162a` |
+| 2 | `def` | [normalizationRatio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/declarations/normalizationratio.md) | 20 | `declaration-track:a1dfdb9cf299d9d2e703eff5a55483cfe85329dd880b88d3d6ef3bf2ba6c8011` |
+| 3 | `def` | [positiveEndpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/declarations/positiveendpoint.md) | 23 | `declaration-track:85289b606fd4ce36973c46366ec31cd0bfd7e990a517aa40f58c290d50964a9f` |
+| 4 | `def` | [reflectedEndpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/declarations/reflectedendpoint.md) | 27 | `declaration-track:14472bbc94f6b20a91b0f398105baf4a3163dec43eb4a90eb7f3c7f4e7be9c68` |
+| 5 | `theorem` | [errorPolynomial_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/declarations/errorpolynomial-nonneg.md) | 31 | `result-track:bccfb2f2ff167817d0a882778674d309dff6c892d5b10db0d4ea5c881a288058` |
+| 6 | `theorem` | [normalization_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/declarations/normalization-bounds.md) | 34 | `result-track:eaf233fdfca2206378e1772a2982525e6ca5a0e8e297b0aaded8e15f9ce0d4b3` |
+| 7 | `theorem` | [normalizationRatio_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/declarations/normalizationratio-bounds.md) | 58 | `result-track:75b06700cad6fc767c5bf395ddee95bf23f5855aaacea70030a5ea282e6e93c4` |
+| 8 | `theorem` | [normalizationRatio_deficit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt02ErrorPolynomial.lean/declarations/normalizationratio-deficit.md) | 68 | `result-track:eba31ccccb48ee6acc1dcba455021d70d9dde4c97cc3191ffc400dd312d19ba7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

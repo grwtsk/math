@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/MaricaSchoenheimNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/MaricaSchoenheimNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MaricaSchoenheimNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MaricaSchoenheimNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [GrahamConjecture](../../../../NumberTheory/MaricaSchoenheimNamespaced.lean/declarations/grahamconjecture.md) | 38 | `declaration-track:fd7c0915eebd3b5a83d4b085503c4b70f75947ed8dd7df7dcdb79af6d53e9b9c` |
-| 2 | `lemma` | [grahamConjecture_of_squarefree](../../../../NumberTheory/MaricaSchoenheimNamespaced.lean/declarations/grahamconjecture-of-squarefree.md) | 42 | `result-track:02ff8532c541f3e23de40be7ade7cca54c8213edd2ad435a32fa65b786a5a47c` |
+| 1 | `def` | [GrahamConjecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MaricaSchoenheimNamespaced.lean/declarations/grahamconjecture.md) | 38 | `declaration-track:fd7c0915eebd3b5a83d4b085503c4b70f75947ed8dd7df7dcdb79af6d53e9b9c` |
+| 2 | `lemma` | [grahamConjecture_of_squarefree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MaricaSchoenheimNamespaced.lean/declarations/grahamconjecture-of-squarefree.md) | 42 | `result-track:02ff8532c541f3e23de40be7ade7cca54c8213edd2ad435a32fa65b786a5a47c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

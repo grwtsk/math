@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/GzGp.lean/index.md) · [Full source](../../../../MeasureAndIntegration/GzGp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GzGp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GzGp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,17 +60,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [integral_comp_neg_real](../../../../MeasureAndIntegration/GzGp.lean/declarations/integral-comp-neg-real.md) | 38 | `result-track:4cafcb7115276f699303923f6124651206f916a00a469f81de07b73975f02602` |
-| 2 | `lemma` | [phi_neg](../../../../MeasureAndIntegration/GzGp.lean/declarations/phi-neg.md) | 44 | `result-track:6401ae664ffd9cc6ec285af31c73079a581044d9286969b22c9d774dfb7ab49f` |
-| 3 | `lemma` | [paperFT_fk](../../../../MeasureAndIntegration/GzGp.lean/declarations/paperft-fk.md) | 47 | `result-track:4515397865daf7b4d8fbac4726d80869c8218e5130677228f98acf460c7333b3` |
-| 4 | `lemma` | [phiHat_conj](../../../../MeasureAndIntegration/GzGp.lean/declarations/phihat-conj.md) | 57 | `result-track:d57d609d8c198912ce62c0afc03899ff987597cc47e2acdcc81b2797370687f6` |
-| 5 | `lemma` | [phiHat_ofReal](../../../../MeasureAndIntegration/GzGp.lean/declarations/phihat-ofreal.md) | 73 | `result-track:60488930525234369a0818db348df6c6508ba764fff541792bf408a2b69f28ee` |
-| 6 | `lemma` | [fk_contDiff](../../../../MeasureAndIntegration/GzGp.lean/declarations/fk-contdiff.md) | 82 | `result-track:2fd5cff24a5eeaba27d645f45f394209ebb19a1c74e9a72d253bf8229e5ecb66` |
-| 7 | `lemma` | [fk_tsupport](../../../../MeasureAndIntegration/GzGp.lean/declarations/fk-tsupport.md) | 91 | `result-track:d94d5b9924e65dcab495a48c470ac26c55396157e2dddac17df4fa83ec704149` |
-| 8 | `lemma` | [Gz_eq_W](../../../../MeasureAndIntegration/GzGp.lean/declarations/gz-eq-w.md) | 98 | `result-track:9795d356cc43215fe66b2d4247f7016412098aa2b29bb6781b0e0e8887797197` |
-| 9 | `lemma` | [EFrhs_eq_Gp](../../../../MeasureAndIntegration/GzGp.lean/declarations/efrhs-eq-gp.md) | 108 | `result-track:9258c5b671ede28098d5ae4e097d85cc709a20a249ffaa82f22f682d02761e95` |
-| 10 | `theorem` | [ZeroConfig.Gz_eq_Gp](../../../../MeasureAndIntegration/GzGp.lean/declarations/zeroconfig-gz-eq-gp.md) | 124 | `result-track:1fe543aaca6c97802078e63708f3c28a50acece2a5091f01b82f3a640a713a33` |
-| 11 | `theorem` | [ZeroConfig.summable_Gsummand](../../../../MeasureAndIntegration/GzGp.lean/declarations/zeroconfig-summable-gsummand.md) | 136 | `result-track:5994e8bb9ef5d82dbb6b2f7116714d336ee875dc984b571fa2024b9b3b305ac1` |
+| 1 | `lemma` | [integral_comp_neg_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GzGp.lean/declarations/integral-comp-neg-real.md) | 38 | `result-track:4cafcb7115276f699303923f6124651206f916a00a469f81de07b73975f02602` |
+| 2 | `lemma` | [phi_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GzGp.lean/declarations/phi-neg.md) | 44 | `result-track:6401ae664ffd9cc6ec285af31c73079a581044d9286969b22c9d774dfb7ab49f` |
+| 3 | `lemma` | [paperFT_fk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GzGp.lean/declarations/paperft-fk.md) | 47 | `result-track:4515397865daf7b4d8fbac4726d80869c8218e5130677228f98acf460c7333b3` |
+| 4 | `lemma` | [phiHat_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GzGp.lean/declarations/phihat-conj.md) | 57 | `result-track:d57d609d8c198912ce62c0afc03899ff987597cc47e2acdcc81b2797370687f6` |
+| 5 | `lemma` | [phiHat_ofReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GzGp.lean/declarations/phihat-ofreal.md) | 73 | `result-track:60488930525234369a0818db348df6c6508ba764fff541792bf408a2b69f28ee` |
+| 6 | `lemma` | [fk_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GzGp.lean/declarations/fk-contdiff.md) | 82 | `result-track:2fd5cff24a5eeaba27d645f45f394209ebb19a1c74e9a72d253bf8229e5ecb66` |
+| 7 | `lemma` | [fk_tsupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GzGp.lean/declarations/fk-tsupport.md) | 91 | `result-track:d94d5b9924e65dcab495a48c470ac26c55396157e2dddac17df4fa83ec704149` |
+| 8 | `lemma` | [Gz_eq_W](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GzGp.lean/declarations/gz-eq-w.md) | 98 | `result-track:9795d356cc43215fe66b2d4247f7016412098aa2b29bb6781b0e0e8887797197` |
+| 9 | `lemma` | [EFrhs_eq_Gp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GzGp.lean/declarations/efrhs-eq-gp.md) | 108 | `result-track:9258c5b671ede28098d5ae4e097d85cc709a20a249ffaa82f22f682d02761e95` |
+| 10 | `theorem` | [ZeroConfig.Gz_eq_Gp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GzGp.lean/declarations/zeroconfig-gz-eq-gp.md) | 124 | `result-track:1fe543aaca6c97802078e63708f3c28a50acece2a5091f01b82f3a640a713a33` |
+| 11 | `theorem` | [ZeroConfig.summable_Gsummand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GzGp.lean/declarations/zeroconfig-summable-gsummand.md) | 136 | `result-track:5994e8bb9ef5d82dbb6b2f7116714d336ee875dc984b571fa2024b9b3b305ac1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

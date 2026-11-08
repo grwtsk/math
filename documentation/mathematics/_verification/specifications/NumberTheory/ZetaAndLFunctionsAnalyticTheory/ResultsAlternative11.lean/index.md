@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ResultsAlternative11.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ResultsAlternative11.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ResultsAlternative11.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ResultsAlternative11.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thetaPhiJetDet4_single_mode](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ResultsAlternative11.lean/declarations/thetaphijetdet4-single-mode.md) | 20 | `result-track:07154d2827b790b7c0451e0c00249368e5ebc90a214c0692f4310e64ca62a245` |
-| 2 | `theorem` | [thetaPhiJetDet4_single_mode_quartic_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ResultsAlternative11.lean/declarations/thetaphijetdet4-single-mode-quartic-pos.md) | 29 | `result-track:bd1311c3db7d13856d66a67a161cbd57caa9f1968932261c3db292ca5a011bff` |
-| 3 | `theorem` | [thetaPhiJetDet4_single_mode_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ResultsAlternative11.lean/declarations/thetaphijetdet4-single-mode-pos.md) | 47 | `result-track:0f5a3a1e52fa97e48cd3eed4deb36d853de9ea5d18c8afd58f570a68eb80332b` |
-| 4 | `theorem` | [thetaPhiJetDet4_dominant_mode_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ResultsAlternative11.lean/declarations/thetaphijetdet4-dominant-mode-pos.md) | 56 | `result-track:18e2648fc654597d8a9a8ba77a02be1bdc4e5ff415fb361061cc1be65ce91cc1` |
+| 1 | `theorem` | [thetaPhiJetDet4_single_mode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ResultsAlternative11.lean/declarations/thetaphijetdet4-single-mode.md) | 20 | `result-track:07154d2827b790b7c0451e0c00249368e5ebc90a214c0692f4310e64ca62a245` |
+| 2 | `theorem` | [thetaPhiJetDet4_single_mode_quartic_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ResultsAlternative11.lean/declarations/thetaphijetdet4-single-mode-quartic-pos.md) | 29 | `result-track:bd1311c3db7d13856d66a67a161cbd57caa9f1968932261c3db292ca5a011bff` |
+| 3 | `theorem` | [thetaPhiJetDet4_single_mode_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ResultsAlternative11.lean/declarations/thetaphijetdet4-single-mode-pos.md) | 47 | `result-track:0f5a3a1e52fa97e48cd3eed4deb36d853de9ea5d18c8afd58f570a68eb80332b` |
+| 4 | `theorem` | [thetaPhiJetDet4_dominant_mode_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ResultsAlternative11.lean/declarations/thetaphijetdet4-dominant-mode-pos.md) | 56 | `result-track:18e2648fc654597d8a9a8ba77a02be1bdc4e5ff415fb361061cc1be65ce91cc1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

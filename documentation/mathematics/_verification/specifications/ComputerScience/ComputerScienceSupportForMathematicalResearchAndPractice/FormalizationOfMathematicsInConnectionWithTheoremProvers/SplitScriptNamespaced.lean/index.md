@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitScriptNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitScriptNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitScriptNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitScriptNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [MyFalse](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitScriptNamespaced.lean/declarations/myfalse.md) | 21 | `declaration-track:497e2f76c9e9d8b47824f29f24c32a84f806a82814c61031b86a063b94f83098` |
-| 2 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitScriptNamespaced.lean/declarations/example-source-edition-2.md) | 33 | `declaration-track:c2d03cf3785d705ab7e305e90320fddca4123792e29cc5c26d333af1082ff08e` |
-| 3 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitScriptNamespaced.lean/declarations/example.md) | 45 | `declaration-track:189601a84912a3ac97f749500cebe10d8dc43d720e33eee92d59de828aa4d67c` |
-| 4 | `theorem` | [foo](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitScriptNamespaced.lean/declarations/foo.md) | 57 | `result-track:c8b0cbc87e4f2c919fa659c3a77221fbb4fca489fc03a9b0e0236d4dc83e95f1` |
+| 1 | `inductive` | [MyFalse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitScriptNamespaced.lean/declarations/myfalse.md) | 21 | `declaration-track:497e2f76c9e9d8b47824f29f24c32a84f806a82814c61031b86a063b94f83098` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitScriptNamespaced.lean/declarations/example-source-edition-2.md) | 33 | `declaration-track:c2d03cf3785d705ab7e305e90320fddca4123792e29cc5c26d333af1082ff08e` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitScriptNamespaced.lean/declarations/example.md) | 45 | `declaration-track:189601a84912a3ac97f749500cebe10d8dc43d720e33eee92d59de828aa4d67c` |
+| 4 | `theorem` | [foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SplitScriptNamespaced.lean/declarations/foo.md) | 57 | `result-track:c8b0cbc87e4f2c919fa659c3a77221fbb4fca489fc03a9b0e0236d4dc83e95f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Eigen.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Eigen.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Eigen.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Eigen.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eigen_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Eigen.lean/declarations/eigen-identity.md) | 33 | `result-track:04da23f23752d4cbad7ffa57d52a7f337b6aa51c1b1a345be569a8027a5b7190` |
-| 2 | `theorem` | [eigen_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Eigen.lean/declarations/eigen-bound.md) | 46 | `result-track:dd8e15d87b7a1a36e9706e9e57e14f36cb21be1e0377a8c77bf85ff2dc379b6d` |
+| 1 | `theorem` | [eigen_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Eigen.lean/declarations/eigen-identity.md) | 33 | `result-track:04da23f23752d4cbad7ffa57d52a7f337b6aa51c1b1a345be569a8027a5b7190` |
+| 2 | `theorem` | [eigen_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Eigen.lean/declarations/eigen-bound.md) | 46 | `result-track:dd8e15d87b7a1a36e9706e9e57e14f36cb21be1e0377a8c77bf85ff2dc379b6d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

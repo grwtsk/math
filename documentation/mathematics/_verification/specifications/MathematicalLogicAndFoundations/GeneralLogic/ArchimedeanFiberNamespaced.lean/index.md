@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArchimedeanFiberNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArchimedeanFiberNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArchimedeanFiberNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArchimedeanFiberNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ArchimedeanRodgersTaoFiber](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArchimedeanFiberNamespaced.lean/declarations/archimedeanrodgerstaofiber.md) | 29 | `declaration-track:16fadb9b2c70cdc901bbf15eef0586ad7f4710de1c08e0d45136b2bcf3ee5d93` |
-| 2 | `theorem` | [archimedean_fiber_place](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArchimedeanFiberNamespaced.lean/declarations/archimedean-fiber-place.md) | 38 | `result-track:834c6ac894aafd90798b0478029739435f3382e3d2e1fc7fd5eb8093c82bcbb6` |
-| 3 | `theorem` | [archimedean_fiber_local_equilibrium](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArchimedeanFiberNamespaced.lean/declarations/archimedean-fiber-local-equilibrium.md) | 43 | `result-track:4f3b528ab257bc19632d2188117193bb7cc92805f8bfe2edd3a11a7b6403f218` |
+| 1 | `structure` | [ArchimedeanRodgersTaoFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArchimedeanFiberNamespaced.lean/declarations/archimedeanrodgerstaofiber.md) | 29 | `declaration-track:16fadb9b2c70cdc901bbf15eef0586ad7f4710de1c08e0d45136b2bcf3ee5d93` |
+| 2 | `theorem` | [archimedean_fiber_place](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArchimedeanFiberNamespaced.lean/declarations/archimedean-fiber-place.md) | 38 | `result-track:834c6ac894aafd90798b0478029739435f3382e3d2e1fc7fd5eb8093c82bcbb6` |
+| 3 | `theorem` | [archimedean_fiber_local_equilibrium](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArchimedeanFiberNamespaced.lean/declarations/archimedean-fiber-local-equilibrium.md) | 43 | `result-track:4f3b528ab257bc19632d2188117193bb7cc92805f8bfe2edd3a11a7b6403f218` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpOverlapConsumer.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpOverlapConsumer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpOverlapConsumer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpOverlapConsumer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_readout_upper_of_overlap](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpOverlapConsumer.lean/declarations/actual-readout-upper-of-overlap.md) | 16 | `result-track:d307c65282d5ebad201cc5851b9d318776567a0056c1a44f0a6961be7a44ead4` |
-| 2 | `theorem` | [residual_tail_of_overlap](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpOverlapConsumer.lean/declarations/residual-tail-of-overlap.md) | 29 | `result-track:00fca00a74d855fd0c6ec242ddc5fa410b844d545afbfd2f5987b5702471ab0f` |
-| 3 | `theorem` | [all_real_lower_of_overlap](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpOverlapConsumer.lean/declarations/all-real-lower-of-overlap.md) | 36 | `result-track:e0b51d95a9cd8e56cb32c397a17405b2fc216f2ad1951b59461fbb79a5530052` |
-| 4 | `theorem` | [estimate_of_overlap](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpOverlapConsumer.lean/declarations/estimate-of-overlap.md) | 48 | `result-track:306058586f1baae778004d7ea8d0d057bf98619db7d2b97cc9153bf981e99a6c` |
+| 1 | `theorem` | [actual_readout_upper_of_overlap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpOverlapConsumer.lean/declarations/actual-readout-upper-of-overlap.md) | 16 | `result-track:d307c65282d5ebad201cc5851b9d318776567a0056c1a44f0a6961be7a44ead4` |
+| 2 | `theorem` | [residual_tail_of_overlap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpOverlapConsumer.lean/declarations/residual-tail-of-overlap.md) | 29 | `result-track:00fca00a74d855fd0c6ec242ddc5fa410b844d545afbfd2f5987b5702471ab0f` |
+| 3 | `theorem` | [all_real_lower_of_overlap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpOverlapConsumer.lean/declarations/all-real-lower-of-overlap.md) | 36 | `result-track:e0b51d95a9cd8e56cb32c397a17405b2fc216f2ad1951b59461fbb79a5530052` |
+| 4 | `theorem` | [estimate_of_overlap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpOverlapConsumer.lean/declarations/estimate-of-overlap.md) | 48 | `result-track:306058586f1baae778004d7ea8d0d057bf98619db7d2b97cc9153bf981e99a6c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

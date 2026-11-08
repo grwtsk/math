@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/index.md) · [Full source](../../../../AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FundamentalGroup](../../../../AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/declarations/fundamentalgroup.md) | 42 | `declaration-track:932afd53f4b14f4e004412dc4b4ada8aa100fc0cf918e738796822b2076ad2f6` |
-| 2 | `instance` | [(anonymous)](../../../../AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/declarations/instance.md) | 46 | `declaration-track:796a156c0e5cf8bf69bbec56a15b136a68c54b2717161a6f9a7910963f09625c` |
-| 3 | `instance` | [(anonymous)](../../../../AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/declarations/instance-source-edition-2.md) | 50 | `declaration-track:97846db1488d2f51a76236aff8a3bd88f5904eb13d8889af83982027dcc13e2f` |
-| 4 | `def` | [fundamentalGroupMulEquivOfPath](../../../../AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/declarations/fundamentalgroupmulequivofpath.md) | 62 | `declaration-track:04ec75518dbaa34fcd373a90426e8fc78b0cf0f5d2543a1fdf69c5c523299638` |
-| 5 | `def` | [fundamentalGroupMulEquivOfPathConnected](../../../../AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/declarations/fundamentalgroupmulequivofpathconnected.md) | 70 | `declaration-track:bd88ab96d41525f47c60617ee4908607260e8915452373968549d0cdce93ee3d` |
-| 6 | `abbrev` | [toArrow](../../../../AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/declarations/toarrow.md) | 76 | `declaration-track:8c7d01ef483765fac3da0496647b78bacaa71945d44c2ba9a413c65c4807c06e` |
-| 7 | `abbrev` | [toPath](../../../../AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/declarations/topath.md) | 81 | `declaration-track:e85727fbbf33e9faf095c410cbb6060247768fc5be72163941f63d714676b0cc` |
-| 8 | `abbrev` | [fromArrow](../../../../AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/declarations/fromarrow.md) | 86 | `declaration-track:00dc2e2c3f7294a6cd15957982ed6f5c9f5200399871c9ee0749d3b456cd0a30` |
-| 9 | `abbrev` | [fromPath](../../../../AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/declarations/frompath.md) | 92 | `declaration-track:ea896d68c777ecb1b20d446105396a7b60de97b8055ae85b09bb7b6b0e106022` |
+| 1 | `def` | [FundamentalGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/declarations/fundamentalgroup.md) | 42 | `declaration-track:932afd53f4b14f4e004412dc4b4ada8aa100fc0cf918e738796822b2076ad2f6` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/declarations/instance.md) | 46 | `declaration-track:796a156c0e5cf8bf69bbec56a15b136a68c54b2717161a6f9a7910963f09625c` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/declarations/instance-source-edition-2.md) | 50 | `declaration-track:97846db1488d2f51a76236aff8a3bd88f5904eb13d8889af83982027dcc13e2f` |
+| 4 | `def` | [fundamentalGroupMulEquivOfPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/declarations/fundamentalgroupmulequivofpath.md) | 62 | `declaration-track:04ec75518dbaa34fcd373a90426e8fc78b0cf0f5d2543a1fdf69c5c523299638` |
+| 5 | `def` | [fundamentalGroupMulEquivOfPathConnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/declarations/fundamentalgroupmulequivofpathconnected.md) | 70 | `declaration-track:bd88ab96d41525f47c60617ee4908607260e8915452373968549d0cdce93ee3d` |
+| 6 | `abbrev` | [toArrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/declarations/toarrow.md) | 76 | `declaration-track:8c7d01ef483765fac3da0496647b78bacaa71945d44c2ba9a413c65c4807c06e` |
+| 7 | `abbrev` | [toPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/declarations/topath.md) | 81 | `declaration-track:e85727fbbf33e9faf095c410cbb6060247768fc5be72163941f63d714676b0cc` |
+| 8 | `abbrev` | [fromArrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/declarations/fromarrow.md) | 86 | `declaration-track:00dc2e2c3f7294a6cd15957982ed6f5c9f5200399871c9ee0749d3b456cd0a30` |
+| 9 | `abbrev` | [fromPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupNamespacedAligned.lean/declarations/frompath.md) | 92 | `declaration-track:ea896d68c777ecb1b20d446105396a7b60de97b8055ae85b09bb7b6b0e106022` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

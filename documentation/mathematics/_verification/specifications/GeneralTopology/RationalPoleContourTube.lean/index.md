@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/RationalPoleContourTube.lean/index.md) · [Full source](../../../../GeneralTopology/RationalPoleContourTube.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPoleContourTube.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPoleContourTube.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleContour`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleContour.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleContour`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleContour.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [imageRadius](../../../../GeneralTopology/RationalPoleContourTube.lean/declarations/imageradius.md) | 28 | `declaration-track:f6be6068ce12cb06aa0c9ad9fa287e769b061cab4191f3a08f19afbf96eda34d` |
-| 2 | `def` | [Valid](../../../../GeneralTopology/RationalPoleContourTube.lean/declarations/valid.md) | 31 | `declaration-track:f81a593a28e0317685d48127b132595f1343c2be6fbf594d6515609303e40551` |
-| 3 | `instance` | [validDecidable](../../../../GeneralTopology/RationalPoleContourTube.lean/declarations/validdecidable.md) | 39 | `declaration-track:2f7f5661b117286f84d3edfb383b32aca73eece3a922caa3e287bdad340d63a6` |
-| 4 | `def` | [check](../../../../GeneralTopology/RationalPoleContourTube.lean/declarations/check.md) | 44 | `declaration-track:17d7caab3d3baad3902be1b7389dd54dc4d89ad14a8d5c99963783787d5b2820` |
-| 5 | `theorem` | [check_iff_valid](../../../../GeneralTopology/RationalPoleContourTube.lean/declarations/check-iff-valid.md) | 47 | `result-track:7778a9239cb539e01bbac51c18a1a7c2382ec46c0b0330062a1816addd01b2d4` |
-| 6 | `theorem` | [disk_variation](../../../../GeneralTopology/RationalPoleContourTube.lean/declarations/disk-variation.md) | 53 | `result-track:861ed14d3191fd1148d221cb01ea553399913a0f0a31780683199c6bdac4eee5` |
-| 7 | `theorem` | [source_image_bound](../../../../GeneralTopology/RationalPoleContourTube.lean/declarations/source-image-bound.md) | 88 | `result-track:0c211f6d7cada0c7d48c4ab2487b0289ea741d3b3cf0de517f18e91d4a01c01e` |
-| 8 | `theorem` | [image_disk_avoids_zero](../../../../GeneralTopology/RationalPoleContourTube.lean/declarations/image-disk-avoids-zero.md) | 102 | `result-track:03f59346885714428dff88188fb693450a631b720e7e4f5d1ce39c99e1dd1b8a` |
-| 9 | `theorem` | [edge_deformation_nonzero](../../../../GeneralTopology/RationalPoleContourTube.lean/declarations/edge-deformation-nonzero.md) | 112 | `result-track:d450752cf9dbabfcac11548ec4f89321cc40b87dbf6d0429c2085542bd3ae724` |
-| 10 | `theorem` | [edge_deformation_continuous](../../../../GeneralTopology/RationalPoleContourTube.lean/declarations/edge-deformation-continuous.md) | 133 | `result-track:def1f26148eb9bcffca86df4f661e8633cc5bd02ce9e746261c2f5661cf6ada3` |
-| 11 | `theorem` | [adjacent_seam](../../../../GeneralTopology/RationalPoleContourTube.lean/declarations/adjacent-seam.md) | 138 | `result-track:33d91f07a1bd864cc8128e540a85af115f5bcd544a5d9d300a523427d8496876` |
-| 12 | `theorem` | [closing_seam](../../../../GeneralTopology/RationalPoleContourTube.lean/declarations/closing-seam.md) | 148 | `result-track:75c632290efab74260f5738d27e3d3095da88920735dab266fff7398bd59df61` |
-| 13 | `theorem` | [polygon_nonzero](../../../../GeneralTopology/RationalPoleContourTube.lean/declarations/polygon-nonzero.md) | 162 | `result-track:54eef436f7b60889118af8071c93eccd755f835f38910272d68bdb4aba221e56` |
+| 1 | `def` | [imageRadius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPoleContourTube.lean/declarations/imageradius.md) | 28 | `declaration-track:f6be6068ce12cb06aa0c9ad9fa287e769b061cab4191f3a08f19afbf96eda34d` |
+| 2 | `def` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPoleContourTube.lean/declarations/valid.md) | 31 | `declaration-track:f81a593a28e0317685d48127b132595f1343c2be6fbf594d6515609303e40551` |
+| 3 | `instance` | [validDecidable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPoleContourTube.lean/declarations/validdecidable.md) | 39 | `declaration-track:2f7f5661b117286f84d3edfb383b32aca73eece3a922caa3e287bdad340d63a6` |
+| 4 | `def` | [check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPoleContourTube.lean/declarations/check.md) | 44 | `declaration-track:17d7caab3d3baad3902be1b7389dd54dc4d89ad14a8d5c99963783787d5b2820` |
+| 5 | `theorem` | [check_iff_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPoleContourTube.lean/declarations/check-iff-valid.md) | 47 | `result-track:7778a9239cb539e01bbac51c18a1a7c2382ec46c0b0330062a1816addd01b2d4` |
+| 6 | `theorem` | [disk_variation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPoleContourTube.lean/declarations/disk-variation.md) | 53 | `result-track:861ed14d3191fd1148d221cb01ea553399913a0f0a31780683199c6bdac4eee5` |
+| 7 | `theorem` | [source_image_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPoleContourTube.lean/declarations/source-image-bound.md) | 88 | `result-track:0c211f6d7cada0c7d48c4ab2487b0289ea741d3b3cf0de517f18e91d4a01c01e` |
+| 8 | `theorem` | [image_disk_avoids_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPoleContourTube.lean/declarations/image-disk-avoids-zero.md) | 102 | `result-track:03f59346885714428dff88188fb693450a631b720e7e4f5d1ce39c99e1dd1b8a` |
+| 9 | `theorem` | [edge_deformation_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPoleContourTube.lean/declarations/edge-deformation-nonzero.md) | 112 | `result-track:d450752cf9dbabfcac11548ec4f89321cc40b87dbf6d0429c2085542bd3ae724` |
+| 10 | `theorem` | [edge_deformation_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPoleContourTube.lean/declarations/edge-deformation-continuous.md) | 133 | `result-track:def1f26148eb9bcffca86df4f661e8633cc5bd02ce9e746261c2f5661cf6ada3` |
+| 11 | `theorem` | [adjacent_seam](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPoleContourTube.lean/declarations/adjacent-seam.md) | 138 | `result-track:33d91f07a1bd864cc8128e540a85af115f5bcd544a5d9d300a523427d8496876` |
+| 12 | `theorem` | [closing_seam](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPoleContourTube.lean/declarations/closing-seam.md) | 148 | `result-track:75c632290efab74260f5738d27e3d3095da88920735dab266fff7398bd59df61` |
+| 13 | `theorem` | [polygon_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPoleContourTube.lean/declarations/polygon-nonzero.md) | 162 | `result-track:54eef436f7b60889118af8071c93eccd755f835f38910272d68bdb4aba221e56` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBumpHorizontalStripBudgetNamespacedEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBumpHorizontalStripBudgetNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBumpHorizontalStripBudgetNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBumpHorizontalStripBudgetNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_bump_norm_le_abs_re](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBumpHorizontalStripBudgetNamespacedEdition1.lean/declarations/actual-bump-norm-le-abs-re.md) | 27 | `result-track:92893ecdbd35da400875387c7bbfd80209e533f57b28cac10aca20b1c3ce8ce9` |
-| 2 | `theorem` | [strip_pole_norm_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBumpHorizontalStripBudgetNamespacedEdition1.lean/declarations/strip-pole-norm-le.md) | 36 | `result-track:0bcffd365c1e07a722da8bba35289b2502c48c4a7f104554ee3a4f39e2302bd0` |
-| 3 | `theorem` | [actual_bump_on_strip_norm_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBumpHorizontalStripBudgetNamespacedEdition1.lean/declarations/actual-bump-on-strip-norm-le.md) | 60 | `result-track:f116d691a54a02d88e0b091ecf6aa466827613362e8c8dd43c45c51b6b89233c` |
-| 4 | `theorem` | [actual_bumpMellinWeight_on_strip_norm_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBumpHorizontalStripBudgetNamespacedEdition1.lean/declarations/actual-bumpmellinweight-on-strip-norm-le.md) | 83 | `result-track:127fc5509e7797679ccc25539672d7cf43fa97edb7622ea0bd6a0f010edecb4b` |
-| 5 | `theorem` | [actual_bilateral_on_strip_norm_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBumpHorizontalStripBudgetNamespacedEdition1.lean/declarations/actual-bilateral-on-strip-norm-le.md) | 115 | `result-track:adce9985380bde0e0de06e766a5e0563b6e2642f028d2990d67dceeea06a7f5e` |
+| 1 | `theorem` | [actual_bump_norm_le_abs_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBumpHorizontalStripBudgetNamespacedEdition1.lean/declarations/actual-bump-norm-le-abs-re.md) | 27 | `result-track:92893ecdbd35da400875387c7bbfd80209e533f57b28cac10aca20b1c3ce8ce9` |
+| 2 | `theorem` | [strip_pole_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBumpHorizontalStripBudgetNamespacedEdition1.lean/declarations/strip-pole-norm-le.md) | 36 | `result-track:0bcffd365c1e07a722da8bba35289b2502c48c4a7f104554ee3a4f39e2302bd0` |
+| 3 | `theorem` | [actual_bump_on_strip_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBumpHorizontalStripBudgetNamespacedEdition1.lean/declarations/actual-bump-on-strip-norm-le.md) | 60 | `result-track:f116d691a54a02d88e0b091ecf6aa466827613362e8c8dd43c45c51b6b89233c` |
+| 4 | `theorem` | [actual_bumpMellinWeight_on_strip_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBumpHorizontalStripBudgetNamespacedEdition1.lean/declarations/actual-bumpmellinweight-on-strip-norm-le.md) | 83 | `result-track:127fc5509e7797679ccc25539672d7cf43fa97edb7622ea0bd6a0f010edecb4b` |
+| 5 | `theorem` | [actual_bilateral_on_strip_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualBumpHorizontalStripBudgetNamespacedEdition1.lean/declarations/actual-bilateral-on-strip-norm-le.md) | 115 | `result-track:adce9985380bde0e0de06e766a5e0563b6e2642f028d2990d67dceeea06a7f5e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

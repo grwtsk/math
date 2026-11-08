@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CyclicSumsetGrowth.lean/index.md) · [Full source](../../../../Combinatorics/CyclicSumsetGrowth.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicSumsetGrowth.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicSumsetGrowth.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [iteratedSumset](../../../../Combinatorics/CyclicSumsetGrowth.lean/declarations/iteratedsumset.md) | 23 | `declaration-track:cf794ea351d8af1af4ae03863778cace6251f67f66c82797f57aad0da6477524` |
-| 2 | `theorem` | [iteratedSumset_zero](../../../../Combinatorics/CyclicSumsetGrowth.lean/declarations/iteratedsumset-zero.md) | 27 | `result-track:7a47e57b6d83820e1bd4d39cfad42787a7233d56a28699c86ac4beb560742d12` |
-| 3 | `theorem` | [iteratedSumset_succ](../../../../Combinatorics/CyclicSumsetGrowth.lean/declarations/iteratedsumset-succ.md) | 29 | `result-track:1234be59dbf1edbb01602ba9a557729465746455d9e7322375d778957e08eecf` |
-| 4 | `theorem` | [iteratedSumset_nonempty](../../../../Combinatorics/CyclicSumsetGrowth.lean/declarations/iteratedsumset-nonempty.md) | 32 | `result-track:4eed0a7472d20f637090db0fb6dd93406ef79212741c8855bf9c8fe3e341d4ac` |
-| 5 | `theorem` | [mem_iteratedSumset_iff](../../../../Combinatorics/CyclicSumsetGrowth.lean/declarations/mem-iteratedsumset-iff.md) | 42 | `result-track:7f4bf239712aae3df4206bf68da39563eeaa4151abf6ad3dd3a354c1c495b98e` |
-| 6 | `theorem` | [prime_card_lower_bound](../../../../Combinatorics/CyclicSumsetGrowth.lean/declarations/prime-card-lower-bound.md) | 78 | `result-track:67258428138ee68a4a26657fe697ecc685ba3fdb43e09cb3e3794e5316d9fabe` |
-| 7 | `theorem` | [prime_card_lower_bound_of_ne_univ](../../../../Combinatorics/CyclicSumsetGrowth.lean/declarations/prime-card-lower-bound-of-ne-univ.md) | 102 | `result-track:450f8f9193316631641546969a1dd55b6e48f92c381428474fc4aa594923dbcd` |
+| 1 | `def` | [iteratedSumset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicSumsetGrowth.lean/declarations/iteratedsumset.md) | 23 | `declaration-track:cf794ea351d8af1af4ae03863778cace6251f67f66c82797f57aad0da6477524` |
+| 2 | `theorem` | [iteratedSumset_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicSumsetGrowth.lean/declarations/iteratedsumset-zero.md) | 27 | `result-track:7a47e57b6d83820e1bd4d39cfad42787a7233d56a28699c86ac4beb560742d12` |
+| 3 | `theorem` | [iteratedSumset_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicSumsetGrowth.lean/declarations/iteratedsumset-succ.md) | 29 | `result-track:1234be59dbf1edbb01602ba9a557729465746455d9e7322375d778957e08eecf` |
+| 4 | `theorem` | [iteratedSumset_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicSumsetGrowth.lean/declarations/iteratedsumset-nonempty.md) | 32 | `result-track:4eed0a7472d20f637090db0fb6dd93406ef79212741c8855bf9c8fe3e341d4ac` |
+| 5 | `theorem` | [mem_iteratedSumset_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicSumsetGrowth.lean/declarations/mem-iteratedsumset-iff.md) | 42 | `result-track:7f4bf239712aae3df4206bf68da39563eeaa4151abf6ad3dd3a354c1c495b98e` |
+| 6 | `theorem` | [prime_card_lower_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicSumsetGrowth.lean/declarations/prime-card-lower-bound.md) | 78 | `result-track:67258428138ee68a4a26657fe697ecc685ba3fdb43e09cb3e3794e5316d9fabe` |
+| 7 | `theorem` | [prime_card_lower_bound_of_ne_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicSumsetGrowth.lean/declarations/prime-card-lower-bound-of-ne-univ.md) | 102 | `result-track:450f8f9193316631641546969a1dd55b6e48f92c381428474fc4aa594923dbcd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

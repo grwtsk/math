@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/index.md) · [Full source](../../../../GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Topology.IsScott.ωScottContinuous_iff_continuous](../../../../GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/declarations/topology-isscott-scottcontinuous-iff-continuous.md) | 30 | `result-track:56e43a6c5d12a79a80c24e437d43a46e4d1abc6631e4e4dbb90d15354515579d` |
-| 2 | `def` | [IsωSup](../../../../GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/declarations/is-sup.md) | 40 | `declaration-track:ff94d8a49dc95a88492319f33e4614ea1463f8b6d2f10c04cab8eeadbe7f791c` |
-| 3 | `theorem` | [isωSup_iff_isLUB](../../../../GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/declarations/is-sup-iff-islub.md) | 43 | `result-track:bce0636bfc425c6b8d48a2e0f5aa7e5a32759f0aacb05c8fbbf0ad2422402b87` |
-| 4 | `def` | [IsOpen](../../../../GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/declarations/isopen.md) | 51 | `declaration-track:1b7315c379dca3c5409662071da55b49523893ab9dabc73948bf074d6994496a` |
-| 5 | `theorem` | [isOpen_univ](../../../../GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/declarations/isopen-univ.md) | 54 | `result-track:b769dc8b81d5b6b6091081a4c4dbae40f02f69daf0d8c0aa6a4d4c305bff812e` |
-| 6 | `theorem` | [IsOpen.inter](../../../../GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/declarations/isopen-inter.md) | 56 | `result-track:b48aa3be10d37328cbdf08d4c6b6595634afec9e5aa33549e43e7041b1694d67` |
-| 7 | `theorem` | [isOpen_sUnion](../../../../GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/declarations/isopen-sunion.md) | 61 | `result-track:d8613c443abe7603827b80431f52a888cedc4e0e0529ad5465436f156573884f` |
-| 8 | `theorem` | [IsOpen.isUpperSet](../../../../GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/declarations/isopen-isupperset.md) | 66 | `result-track:68c9b1b26c09b93fb14bd53895f56d6a395bddf80e942e82693a9136f9abef37` |
-| 9 | `theorem` | [isωSup_ωSup](../../../../GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/declarations/is-sup-sup.md) | 72 | `result-track:8db4f59094ef09e7532097de54b3a0eef2a313ce086ca5738c5565d6e5e35034` |
+| 1 | `lemma` | [Topology.IsScott.ωScottContinuous_iff_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/declarations/topology-isscott-scottcontinuous-iff-continuous.md) | 30 | `result-track:56e43a6c5d12a79a80c24e437d43a46e4d1abc6631e4e4dbb90d15354515579d` |
+| 2 | `def` | [IsωSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/declarations/is-sup.md) | 40 | `declaration-track:ff94d8a49dc95a88492319f33e4614ea1463f8b6d2f10c04cab8eeadbe7f791c` |
+| 3 | `theorem` | [isωSup_iff_isLUB](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/declarations/is-sup-iff-islub.md) | 43 | `result-track:bce0636bfc425c6b8d48a2e0f5aa7e5a32759f0aacb05c8fbbf0ad2422402b87` |
+| 4 | `def` | [IsOpen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/declarations/isopen.md) | 51 | `declaration-track:1b7315c379dca3c5409662071da55b49523893ab9dabc73948bf074d6994496a` |
+| 5 | `theorem` | [isOpen_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/declarations/isopen-univ.md) | 54 | `result-track:b769dc8b81d5b6b6091081a4c4dbae40f02f69daf0d8c0aa6a4d4c305bff812e` |
+| 6 | `theorem` | [IsOpen.inter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/declarations/isopen-inter.md) | 56 | `result-track:b48aa3be10d37328cbdf08d4c6b6595634afec9e5aa33549e43e7041b1694d67` |
+| 7 | `theorem` | [isOpen_sUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/declarations/isopen-sunion.md) | 61 | `result-track:d8613c443abe7603827b80431f52a888cedc4e0e0529ad5465436f156573884f` |
+| 8 | `theorem` | [IsOpen.isUpperSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/declarations/isopen-isupperset.md) | 66 | `result-track:68c9b1b26c09b93fb14bd53895f56d6a395bddf80e942e82693a9136f9abef37` |
+| 9 | `theorem` | [isωSup_ωSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyOmegaCompletePartialOrderPublic.lean/declarations/is-sup-sup.md) | 72 | `result-track:8db4f59094ef09e7532097de54b3a0eef2a313ce086ca5738c5565d6e5e35034` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

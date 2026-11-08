@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/NoZeroDivisorsPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/NoZeroDivisorsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NoZeroDivisorsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NoZeroDivisorsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_nonZeroDivisorsRight_of_constantCoeff](../../../../CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/mem-nonzerodivisorsright-of-constantcoeff.md) | 54 | `result-track:f4db47f6d4f4f7512e6dabe1d640d5b520becfc94dd5335dc39543ee709baf2d` |
-| 2 | `theorem` | [mem_nonZeroDivisorsLeft_of_constantCoeff](../../../../CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/mem-nonzerodivisorsleft-of-constantcoeff.md) | 75 | `result-track:63461f58f3e7cdc28fe5a7641d305843008e03dcb5694d6a74d4fe47660decd2` |
-| 3 | `theorem` | [mem_nonZeroDivisors_of_constantCoeff](../../../../CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/mem-nonzerodivisors-of-constantcoeff.md) | 98 | `result-track:19f539889cfc4f031f8b1efe8b6bf480769434fa41cb6b869c68a143ac8db86e` |
-| 4 | `lemma` | [monomial_mem_nonzeroDivisorsLeft](../../../../CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/monomial-mem-nonzerodivisorsleft.md) | 103 | `result-track:6ac1751b2313f48143481dc30a33051b330ef929ed704d87e73bb818bec55094` |
-| 5 | `lemma` | [monomial_mem_nonzeroDivisorsRight](../../../../CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/monomial-mem-nonzerodivisorsright.md) | 116 | `result-track:82c3626c75a450a86ef2bbff2dc080608336c976f0b6f21115dedb2f0b257cde` |
-| 6 | `lemma` | [monomial_mem_nonzeroDivisors](../../../../CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/monomial-mem-nonzerodivisors.md) | 128 | `result-track:f10a5eac7bb4323ef81e8473cd3ed05aa9abd34d099f468b18104fa24752c4c9` |
-| 7 | `lemma` | [X_mem_nonzeroDivisors](../../../../CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/x-mem-nonzerodivisors.md) | 132 | `result-track:57d7aa95acac6175d55d8e378eea3ea6d22b45e112eb5f1dd5dd3f0a56a810c4` |
-| 8 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/instance.md) | 141 | `declaration-track:b87edb8d03609b11f27a332950f41de58f08fe54e6874bc7f1fa645d6fcd6bb4` |
-| 9 | `theorem` | [weightedOrder_mul](../../../../CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/weightedorder-mul.md) | 146 | `result-track:d401c4870ace6ea98626dd1f185010629acc4fd97685af3d47c665ac9db4d6b1` |
-| 10 | `theorem` | [weightedOrder_prod](../../../../CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/weightedorder-prod.md) | 176 | `result-track:2cc411669925cb88dd287e90850c4571427e150048861e7c7b0a6346a72bf74d` |
-| 11 | `theorem` | [order_mul](../../../../CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/order-mul.md) | 183 | `result-track:707d78650bf64fde27beae3e789261ef71168bbfbfef495e85fdf68b44ab4a36` |
-| 12 | `theorem` | [order_prod](../../../../CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/order-prod.md) | 187 | `result-track:921337da6085e30dc04bb5243021166494d734cfeca19c8bdf531114e6802ba6` |
+| 1 | `theorem` | [mem_nonZeroDivisorsRight_of_constantCoeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/mem-nonzerodivisorsright-of-constantcoeff.md) | 54 | `result-track:f4db47f6d4f4f7512e6dabe1d640d5b520becfc94dd5335dc39543ee709baf2d` |
+| 2 | `theorem` | [mem_nonZeroDivisorsLeft_of_constantCoeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/mem-nonzerodivisorsleft-of-constantcoeff.md) | 75 | `result-track:63461f58f3e7cdc28fe5a7641d305843008e03dcb5694d6a74d4fe47660decd2` |
+| 3 | `theorem` | [mem_nonZeroDivisors_of_constantCoeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/mem-nonzerodivisors-of-constantcoeff.md) | 98 | `result-track:19f539889cfc4f031f8b1efe8b6bf480769434fa41cb6b869c68a143ac8db86e` |
+| 4 | `lemma` | [monomial_mem_nonzeroDivisorsLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/monomial-mem-nonzerodivisorsleft.md) | 103 | `result-track:6ac1751b2313f48143481dc30a33051b330ef929ed704d87e73bb818bec55094` |
+| 5 | `lemma` | [monomial_mem_nonzeroDivisorsRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/monomial-mem-nonzerodivisorsright.md) | 116 | `result-track:82c3626c75a450a86ef2bbff2dc080608336c976f0b6f21115dedb2f0b257cde` |
+| 6 | `lemma` | [monomial_mem_nonzeroDivisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/monomial-mem-nonzerodivisors.md) | 128 | `result-track:f10a5eac7bb4323ef81e8473cd3ed05aa9abd34d099f468b18104fa24752c4c9` |
+| 7 | `lemma` | [X_mem_nonzeroDivisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/x-mem-nonzerodivisors.md) | 132 | `result-track:57d7aa95acac6175d55d8e378eea3ea6d22b45e112eb5f1dd5dd3f0a56a810c4` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/instance.md) | 141 | `declaration-track:b87edb8d03609b11f27a332950f41de58f08fe54e6874bc7f1fa645d6fcd6bb4` |
+| 9 | `theorem` | [weightedOrder_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/weightedorder-mul.md) | 146 | `result-track:d401c4870ace6ea98626dd1f185010629acc4fd97685af3d47c665ac9db4d6b1` |
+| 10 | `theorem` | [weightedOrder_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/weightedorder-prod.md) | 176 | `result-track:2cc411669925cb88dd287e90850c4571427e150048861e7c7b0a6346a72bf74d` |
+| 11 | `theorem` | [order_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/order-mul.md) | 183 | `result-track:707d78650bf64fde27beae3e789261ef71168bbfbfef495e85fdf68b44ab4a36` |
+| 12 | `theorem` | [order_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NoZeroDivisorsPublic.lean/declarations/order-prod.md) | 187 | `result-track:921337da6085e30dc04bb5243021166494d734cfeca19c8bdf531114e6802ba6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WittComparison.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WittComparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WittComparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WittComparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [WittRealization](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WittComparison.lean/declarations/wittrealization.md) | 19 | `declaration-track:54189c4052666ba75fa4e8de2cb8e0b5b2a24748d8d2f9be8f96a3b4307f5601` |
-| 2 | `structure` | [PrismaticWittComparison](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WittComparison.lean/declarations/prismaticwittcomparison.md) | 24 | `declaration-track:532ab1800357503f8e52c9e9968e33db18cec8d50ce38a673b4a042b36014be9` |
-| 3 | `theorem` | [prismatic_witt_comparison_has_prismatic_side](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WittComparison.lean/declarations/prismatic-witt-comparison-has-prismatic-side.md) | 29 | `result-track:5819163943fa8e5694f588e9ce7e7b07b9ebf2d6b1f97fa0a0ad887d108b0be3` |
-| 4 | `theorem` | [prismatic_witt_comparison_has_witt_side](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WittComparison.lean/declarations/prismatic-witt-comparison-has-witt-side.md) | 34 | `result-track:5b2fc5f3fd35c7b07c3ebca57c6ac430550fcc5cfae7011046e5a6257bf48a53` |
+| 1 | `structure` | [WittRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WittComparison.lean/declarations/wittrealization.md) | 19 | `declaration-track:54189c4052666ba75fa4e8de2cb8e0b5b2a24748d8d2f9be8f96a3b4307f5601` |
+| 2 | `structure` | [PrismaticWittComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WittComparison.lean/declarations/prismaticwittcomparison.md) | 24 | `declaration-track:532ab1800357503f8e52c9e9968e33db18cec8d50ce38a673b4a042b36014be9` |
+| 3 | `theorem` | [prismatic_witt_comparison_has_prismatic_side](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WittComparison.lean/declarations/prismatic-witt-comparison-has-prismatic-side.md) | 29 | `result-track:5819163943fa8e5694f588e9ce7e7b07b9ebf2d6b1f97fa0a0ad887d108b0be3` |
+| 4 | `theorem` | [prismatic_witt_comparison_has_witt_side](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WittComparison.lean/declarations/prismatic-witt-comparison-has-witt-side.md) | 34 | `result-track:5b2fc5f3fd35c7b07c3ebca57c6ac430550fcc5cfae7011046e5a6257bf48a53` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceNamespacedSourceEndpointAbsLeThree.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceNamespacedSourceEndpointAbsLeThree.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceNamespacedSourceEndpointAbsLeThree.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceNamespacedSourceEndpointAbsLeThree.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceEndpoint_abs_le_three](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceNamespacedSourceEndpointAbsLeThree.lean/declarations/sourceendpoint-abs-le-three.md) | 28 | `result-track:5ec1f48e9b75f36fe25f659b3ef5a6456f5029b36b02cc4cf2d9ec8205ca1254` |
-| 2 | `theorem` | [residual_upper_of_actualTriangular_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceNamespacedSourceEndpointAbsLeThree.lean/declarations/residual-upper-of-actualtriangular-upper.md) | 33 | `result-track:eb13185dd27d33f278127dc589fe73f5780e6650aff2d2037c0ec38f45787525` |
-| 3 | `theorem` | [residual_tail_of_actualTriangular_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceNamespacedSourceEndpointAbsLeThree.lean/declarations/residual-tail-of-actualtriangular-tail.md) | 46 | `result-track:10ef9b799e9460d52fd656d3c68909909631f3356c67f684f66a1c0ef96c106d` |
-| 4 | `theorem` | [estimate_of_actualTriangular_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceNamespacedSourceEndpointAbsLeThree.lean/declarations/estimate-of-actualtriangular-tail.md) | 57 | `result-track:8d5646d92f7ceda1bef65134a5c728037071e46b27dc5f4d7025debbeb10bb20` |
+| 1 | `theorem` | [sourceEndpoint_abs_le_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceNamespacedSourceEndpointAbsLeThree.lean/declarations/sourceendpoint-abs-le-three.md) | 28 | `result-track:5ec1f48e9b75f36fe25f659b3ef5a6456f5029b36b02cc4cf2d9ec8205ca1254` |
+| 2 | `theorem` | [residual_upper_of_actualTriangular_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceNamespacedSourceEndpointAbsLeThree.lean/declarations/residual-upper-of-actualtriangular-upper.md) | 33 | `result-track:eb13185dd27d33f278127dc589fe73f5780e6650aff2d2037c0ec38f45787525` |
+| 3 | `theorem` | [residual_tail_of_actualTriangular_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceNamespacedSourceEndpointAbsLeThree.lean/declarations/residual-tail-of-actualtriangular-tail.md) | 46 | `result-track:10ef9b799e9460d52fd656d3c68909909631f3356c67f684f66a1c0ef96c106d` |
+| 4 | `theorem` | [estimate_of_actualTriangular_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceNamespacedSourceEndpointAbsLeThree.lean/declarations/estimate-of-actualtriangular-tail.md) | 57 | `result-track:8d5646d92f7ceda1bef65134a5c728037071e46b27dc5f4d7025debbeb10bb20` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

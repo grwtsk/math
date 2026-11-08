@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonPerimeterAngleKernel.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonPerimeterAngleKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPerimeterAngleKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPerimeterAngleKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence`](../../../../GeneralTopology/SurfacePolygonPerimeterCircleEquivalence.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPerimeterCircleEquivalence.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [source_angle_eq_iff_perimeter_projection_eq](../../../../AlgebraicTopology/SurfacePolygonPerimeterAngleKernel.lean/declarations/source-angle-eq-iff-perimeter-projection-eq.md) | 29 | `result-track:e79cbd87a510a4cb252a3813be433bf4ad390a5e251d82cfe0d53a0ff584458b` |
-| 2 | `theorem` | [source_angle_eq_iff_connected](../../../../AlgebraicTopology/SurfacePolygonPerimeterAngleKernel.lean/declarations/source-angle-eq-iff-connected.md) | 38 | `result-track:15c9d7453ad0a342e10f07266af6c94428a26ba89e54da51654be87a376243a9` |
-| 3 | `theorem` | [source_angle_ne_iff_projection_ne](../../../../AlgebraicTopology/SurfacePolygonPerimeterAngleKernel.lean/declarations/source-angle-ne-iff-projection-ne.md) | 51 | `result-track:16014912ba0d33f0d599799f14ce5d736ca6c3d3c43d7691299d3c0216cfe751` |
-| 4 | `theorem` | [source_angle_ne_iff_not_connected](../../../../AlgebraicTopology/SurfacePolygonPerimeterAngleKernel.lean/declarations/source-angle-ne-iff-not-connected.md) | 59 | `result-track:70c621d0b887fe7192c3854f0d8dfb24eb27729a29a93adbb3fc3ce99cae446e` |
-| 5 | `theorem` | [perimeter_angle_eq_iff](../../../../AlgebraicTopology/SurfacePolygonPerimeterAngleKernel.lean/declarations/perimeter-angle-eq-iff.md) | 66 | `result-track:8f61dd041bdb1a5f81c7d0729bdef73ef64e8ca77ff530797ce80b95fd575bff` |
+| 1 | `theorem` | [source_angle_eq_iff_perimeter_projection_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPerimeterAngleKernel.lean/declarations/source-angle-eq-iff-perimeter-projection-eq.md) | 29 | `result-track:e79cbd87a510a4cb252a3813be433bf4ad390a5e251d82cfe0d53a0ff584458b` |
+| 2 | `theorem` | [source_angle_eq_iff_connected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPerimeterAngleKernel.lean/declarations/source-angle-eq-iff-connected.md) | 38 | `result-track:15c9d7453ad0a342e10f07266af6c94428a26ba89e54da51654be87a376243a9` |
+| 3 | `theorem` | [source_angle_ne_iff_projection_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPerimeterAngleKernel.lean/declarations/source-angle-ne-iff-projection-ne.md) | 51 | `result-track:16014912ba0d33f0d599799f14ce5d736ca6c3d3c43d7691299d3c0216cfe751` |
+| 4 | `theorem` | [source_angle_ne_iff_not_connected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPerimeterAngleKernel.lean/declarations/source-angle-ne-iff-not-connected.md) | 59 | `result-track:70c621d0b887fe7192c3854f0d8dfb24eb27729a29a93adbb3fc3ce99cae446e` |
+| 5 | `theorem` | [perimeter_angle_eq_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPerimeterAngleKernel.lean/declarations/perimeter-angle-eq-iff.md) | 66 | `result-track:8f61dd041bdb1a5f81c7d0729bdef73ef64e8ca77ff530797ce80b95fd575bff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

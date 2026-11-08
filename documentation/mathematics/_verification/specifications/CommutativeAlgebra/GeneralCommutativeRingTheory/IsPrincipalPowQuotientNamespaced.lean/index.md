@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrincipalPowQuotientNamespaced.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrincipalPowQuotientNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrincipalPowQuotientNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrincipalPowQuotientNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quotEquivPowQuotPowSucc](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrincipalPowQuotientNamespaced.lean/declarations/quotequivpowquotpowsucc.md) | 48 | `declaration-track:68adbd2548f2725912761ebe948e4ca574035bb8910f31a098c9fab8c4205e2e` |
-| 2 | `def` | [quotEquivPowQuotPowSuccEquiv](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrincipalPowQuotientNamespaced.lean/declarations/quotequivpowquotpowsuccequiv.md) | 88 | `declaration-track:94814f1c5ef2bf2c0d93114ddd137df00f3cadd09c9368452242664d73db616a` |
+| 1 | `def` | [quotEquivPowQuotPowSucc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrincipalPowQuotientNamespaced.lean/declarations/quotequivpowquotpowsucc.md) | 48 | `declaration-track:68adbd2548f2725912761ebe948e4ca574035bb8910f31a098c9fab8c4205e2e` |
+| 2 | `def` | [quotEquivPowQuotPowSuccEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IsPrincipalPowQuotientNamespaced.lean/declarations/quotequivpowquotpowsuccequiv.md) | 88 | `declaration-track:94814f1c5ef2bf2c0d93114ddd137df00f3cadd09c9368452242664d73db616a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

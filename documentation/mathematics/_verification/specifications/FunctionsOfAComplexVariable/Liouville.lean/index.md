@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/Liouville.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/Liouville.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Liouville.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Liouville.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../FunctionsOfAComplexVariable/Liouville.lean/declarations/macro-rules.md) | 26 | `declaration-track:e7fccdd418acb3f30349a25293c5b355acca3260c2c84d96bd527121e249fc8b` |
-| 2 | `theorem` | [deriv_eq_smul_circleIntegral](../../../../FunctionsOfAComplexVariable/Liouville.lean/declarations/deriv-eq-smul-circleintegral.md) | 48 | `result-track:b0a0dbe03582b498a0a74f777879d2827f4ca426e4df8cea4178498ed3e761f4` |
-| 3 | `theorem` | [norm_deriv_le_aux](../../../../FunctionsOfAComplexVariable/Liouville.lean/declarations/norm-deriv-le-aux.md) | 56 | `result-track:e618e8301c1359070b0629d277df78b1bcd3e81c435e82a73299ba9369f1cefb` |
-| 4 | `theorem` | [norm_deriv_le_of_forall_mem_sphere_norm_le](../../../../FunctionsOfAComplexVariable/Liouville.lean/declarations/norm-deriv-le-of-forall-mem-sphere-norm-le.md) | 74 | `result-track:f65dfb1d913907bd5a92cfd46383a0bb1ac88a9e991ef228ffc10f00dc9eed2e` |
-| 5 | `theorem` | [liouville_theorem_aux](../../../../FunctionsOfAComplexVariable/Liouville.lean/declarations/liouville-theorem-aux.md) | 91 | `result-track:4ca4c32bf7fca278e4263daf2c8e74f38702c11bc922eb209760b77cd9a9fe5a` |
-| 6 | `theorem` | [apply_eq_apply_of_bounded](../../../../FunctionsOfAComplexVariable/Liouville.lean/declarations/apply-eq-apply-of-bounded.md) | 114 | `result-track:72867866561e7bf0a66551625437f20b3bb66d2dfbe1ce72dbcbdc444864c092` |
-| 7 | `theorem` | [exists_const_forall_eq_of_bounded](../../../../FunctionsOfAComplexVariable/Liouville.lean/declarations/exists-const-forall-eq-of-bounded.md) | 124 | `result-track:d543017b1906b40233ac6b0d6eafdfbd0b322e349b613fb5c2683df92b176a84` |
-| 8 | `theorem` | [exists_eq_const_of_bounded](../../../../FunctionsOfAComplexVariable/Liouville.lean/declarations/exists-eq-const-of-bounded.md) | 130 | `result-track:79c12c81ec7d74d9819478bbcd11a781dfe173ef483b49cf1960eac3ac7260f5` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Liouville.lean/declarations/macro-rules.md) | 26 | `declaration-track:e7fccdd418acb3f30349a25293c5b355acca3260c2c84d96bd527121e249fc8b` |
+| 2 | `theorem` | [deriv_eq_smul_circleIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Liouville.lean/declarations/deriv-eq-smul-circleintegral.md) | 48 | `result-track:b0a0dbe03582b498a0a74f777879d2827f4ca426e4df8cea4178498ed3e761f4` |
+| 3 | `theorem` | [norm_deriv_le_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Liouville.lean/declarations/norm-deriv-le-aux.md) | 56 | `result-track:e618e8301c1359070b0629d277df78b1bcd3e81c435e82a73299ba9369f1cefb` |
+| 4 | `theorem` | [norm_deriv_le_of_forall_mem_sphere_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Liouville.lean/declarations/norm-deriv-le-of-forall-mem-sphere-norm-le.md) | 74 | `result-track:f65dfb1d913907bd5a92cfd46383a0bb1ac88a9e991ef228ffc10f00dc9eed2e` |
+| 5 | `theorem` | [liouville_theorem_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Liouville.lean/declarations/liouville-theorem-aux.md) | 91 | `result-track:4ca4c32bf7fca278e4263daf2c8e74f38702c11bc922eb209760b77cd9a9fe5a` |
+| 6 | `theorem` | [apply_eq_apply_of_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Liouville.lean/declarations/apply-eq-apply-of-bounded.md) | 114 | `result-track:72867866561e7bf0a66551625437f20b3bb66d2dfbe1ce72dbcbdc444864c092` |
+| 7 | `theorem` | [exists_const_forall_eq_of_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Liouville.lean/declarations/exists-const-forall-eq-of-bounded.md) | 124 | `result-track:d543017b1906b40233ac6b0d6eafdfbd0b322e349b613fb5c2683df92b176a84` |
+| 8 | `theorem` | [exists_eq_const_of_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Liouville.lean/declarations/exists-eq-const-of-bounded.md) | 130 | `result-track:79c12c81ec7d74d9819478bbcd11a781dfe173ef483b49cf1960eac3ac7260f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

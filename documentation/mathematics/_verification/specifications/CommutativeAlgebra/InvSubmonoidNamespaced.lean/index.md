@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/InvSubmonoidNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/InvSubmonoidNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [invSubmonoid](../../../../CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/invsubmonoid.md) | 46 | `declaration-track:c443dd54cfb1b48509b08cc4f77b65365315ed78cc893db14930a65a5a70b79e` |
-| 2 | `theorem` | [submonoid_map_le_is_unit](../../../../CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/submonoid-map-le-is-unit.md) | 51 | `result-track:199675bb9810d5a67ae26089a5553ae1c3ca70644de5dcca8bd94b4ebe220c89` |
-| 3 | `abbrev` | [equivInvSubmonoid](../../../../CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/equivinvsubmonoid.md) | 56 | `declaration-track:4c12ca07c848ba894c4d88b8e7b3660eb0c1f7893cebce3bad02ba1a3709fbc2` |
-| 4 | `def` | [toInvSubmonoid](../../../../CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/toinvsubmonoid.md) | 60 | `declaration-track:68a7957061baceee92f358905faa1d625dfce76d6cfc6cfe826d07973522493d` |
-| 5 | `theorem` | [toInvSubmonoid_surjective](../../../../CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/toinvsubmonoid-surjective.md) | 63 | `result-track:6d0375347e6e5dc4e957a5407305be68a55b64a004b9603e72d2262a5ddb0a2b` |
-| 6 | `theorem` | [toInvSubmonoid_mul](../../../../CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/toinvsubmonoid-mul.md) | 68 | `result-track:93ca547514c5acf5b7bd6edc8b85562a4f734e8d800e046adba97560aa4f9100` |
-| 7 | `theorem` | [mul_toInvSubmonoid](../../../../CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/mul-toinvsubmonoid.md) | 72 | `result-track:b284b92fb7106af01ec96b6775df0c7cb573c5493c544c6950672f8d90e286ff` |
-| 8 | `theorem` | [smul_toInvSubmonoid](../../../../CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/smul-toinvsubmonoid.md) | 76 | `result-track:5c4d3f72a46dfdcb46f9f0cf1a14b2e5578eab63e2a19734abca47a712d49c63` |
-| 9 | `theorem` | [surj''](../../../../CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/surj.md) | 85 | `result-track:cc7e167d24a3fbc8d6028aa035880ea5662ec549f1f01f070febc6c785b9143e` |
-| 10 | `theorem` | [toInvSubmonoid_eq_mk'](../../../../CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/toinvsubmonoid-eq-mk.md) | 91 | `result-track:a15c64e6edb021763c04c8149d54dfc9c5f8baefa8a4965103da449518a259ce` |
-| 11 | `theorem` | [mem_invSubmonoid_iff_exists_mk'](../../../../CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/mem-invsubmonoid-iff-exists-mk.md) | 95 | `result-track:eb6c29928a2d6000dffbbbd0b5a709bc661a96939ad40e546deb0be525e5f100` |
-| 12 | `theorem` | [span_invSubmonoid](../../../../CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/span-invsubmonoid.md) | 103 | `result-track:463727aee2515493c063c3c4e8556f2fe3abc2c35fab22ba72ce50470a327d07` |
-| 13 | `theorem` | [finiteType_of_monoid_fg](../../../../CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/finitetype-of-monoid-fg.md) | 109 | `result-track:b97ee7f2b94578b31e4cc0bce12d901fe88c1eda9838d946bcd089f583bdc01d` |
+| 1 | `def` | [invSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/invsubmonoid.md) | 46 | `declaration-track:c443dd54cfb1b48509b08cc4f77b65365315ed78cc893db14930a65a5a70b79e` |
+| 2 | `theorem` | [submonoid_map_le_is_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/submonoid-map-le-is-unit.md) | 51 | `result-track:199675bb9810d5a67ae26089a5553ae1c3ca70644de5dcca8bd94b4ebe220c89` |
+| 3 | `abbrev` | [equivInvSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/equivinvsubmonoid.md) | 56 | `declaration-track:4c12ca07c848ba894c4d88b8e7b3660eb0c1f7893cebce3bad02ba1a3709fbc2` |
+| 4 | `def` | [toInvSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/toinvsubmonoid.md) | 60 | `declaration-track:68a7957061baceee92f358905faa1d625dfce76d6cfc6cfe826d07973522493d` |
+| 5 | `theorem` | [toInvSubmonoid_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/toinvsubmonoid-surjective.md) | 63 | `result-track:6d0375347e6e5dc4e957a5407305be68a55b64a004b9603e72d2262a5ddb0a2b` |
+| 6 | `theorem` | [toInvSubmonoid_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/toinvsubmonoid-mul.md) | 68 | `result-track:93ca547514c5acf5b7bd6edc8b85562a4f734e8d800e046adba97560aa4f9100` |
+| 7 | `theorem` | [mul_toInvSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/mul-toinvsubmonoid.md) | 72 | `result-track:b284b92fb7106af01ec96b6775df0c7cb573c5493c544c6950672f8d90e286ff` |
+| 8 | `theorem` | [smul_toInvSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/smul-toinvsubmonoid.md) | 76 | `result-track:5c4d3f72a46dfdcb46f9f0cf1a14b2e5578eab63e2a19734abca47a712d49c63` |
+| 9 | `theorem` | [surj''](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/surj.md) | 85 | `result-track:cc7e167d24a3fbc8d6028aa035880ea5662ec549f1f01f070febc6c785b9143e` |
+| 10 | `theorem` | [toInvSubmonoid_eq_mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/toinvsubmonoid-eq-mk.md) | 91 | `result-track:a15c64e6edb021763c04c8149d54dfc9c5f8baefa8a4965103da449518a259ce` |
+| 11 | `theorem` | [mem_invSubmonoid_iff_exists_mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/mem-invsubmonoid-iff-exists-mk.md) | 95 | `result-track:eb6c29928a2d6000dffbbbd0b5a709bc661a96939ad40e546deb0be525e5f100` |
+| 12 | `theorem` | [span_invSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/span-invsubmonoid.md) | 103 | `result-track:463727aee2515493c063c3c4e8556f2fe3abc2c35fab22ba72ce50470a327d07` |
+| 13 | `theorem` | [finiteType_of_monoid_fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InvSubmonoidNamespaced.lean/declarations/finitetype-of-monoid-fg.md) | 109 | `result-track:b97ee7f2b94578b31e4cc0bce12d901fe88c1eda9838d946bcd089f583bdc01d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

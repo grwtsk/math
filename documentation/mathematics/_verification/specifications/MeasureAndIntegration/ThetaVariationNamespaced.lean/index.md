@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ThetaVariationNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ThetaVariationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaVariationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaVariationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [majorant_primitive_hasDerivAt](../../../../MeasureAndIntegration/ThetaVariationNamespaced.lean/declarations/majorant-primitive-hasderivat.md) | 21 | `result-track:6ad7a535245292b639fd004c6ca0bccb6d6a826168835f20a51549895e35d218` |
-| 2 | `theorem` | [majorant_integrableOn](../../../../MeasureAndIntegration/ThetaVariationNamespaced.lean/declarations/majorant-integrableon.md) | 33 | `result-track:0996de3080cdd22e0cbadcf04ce256413a9bc908f7250ba7aa0e90de3bd18d25` |
-| 3 | `theorem` | [majorant_integral_le](../../../../MeasureAndIntegration/ThetaVariationNamespaced.lean/declarations/majorant-integral-le.md) | 45 | `result-track:58783ae243a4b14ed867347f8a697da18489dafa00a46a1e96a2f2cc373206a8` |
-| 4 | `theorem` | [scaledSampling_variation_le](../../../../MeasureAndIntegration/ThetaVariationNamespaced.lean/declarations/scaledsampling-variation-le.md) | 60 | `result-track:672df21aa93b7b99edc4f322134b62109ed44f68cb229fc94adf39d124ef1045` |
-| 5 | `theorem` | [thetaKernel_sub_integral_abs_le_explicit](../../../../MeasureAndIntegration/ThetaVariationNamespaced.lean/declarations/thetakernel-sub-integral-abs-le-explicit.md) | 83 | `result-track:1e0e875205319a9b5eb425bd140cdf0f21d80b49d3a1bc11a5f12b16b1d5c033` |
+| 1 | `theorem` | [majorant_primitive_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaVariationNamespaced.lean/declarations/majorant-primitive-hasderivat.md) | 21 | `result-track:6ad7a535245292b639fd004c6ca0bccb6d6a826168835f20a51549895e35d218` |
+| 2 | `theorem` | [majorant_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaVariationNamespaced.lean/declarations/majorant-integrableon.md) | 33 | `result-track:0996de3080cdd22e0cbadcf04ce256413a9bc908f7250ba7aa0e90de3bd18d25` |
+| 3 | `theorem` | [majorant_integral_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaVariationNamespaced.lean/declarations/majorant-integral-le.md) | 45 | `result-track:58783ae243a4b14ed867347f8a697da18489dafa00a46a1e96a2f2cc373206a8` |
+| 4 | `theorem` | [scaledSampling_variation_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaVariationNamespaced.lean/declarations/scaledsampling-variation-le.md) | 60 | `result-track:672df21aa93b7b99edc4f322134b62109ed44f68cb229fc94adf39d124ef1045` |
+| 5 | `theorem` | [thetaKernel_sub_integral_abs_le_explicit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaVariationNamespaced.lean/declarations/thetakernel-sub-integral-abs-le-explicit.md) | 83 | `result-track:1e0e875205319a9b5eb425bd140cdf0f21d80b49d3a1bc11a5f12b16b1d5c033` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

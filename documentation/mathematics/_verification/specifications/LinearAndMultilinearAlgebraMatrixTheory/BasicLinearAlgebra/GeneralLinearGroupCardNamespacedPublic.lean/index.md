@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCardNamespacedPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCardNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCardNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCardNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [card_linearIndependent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCardNamespacedPublic.lean/declarations/card-linearindependent.md) | 48 | `result-track:9a1d579a81983c77e619836eb36874374fb6b6b37cbe1a6bbda1e90636ae605c` |
-| 2 | `theorem` | [card_matrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCardNamespacedPublic.lean/declarations/card-matrix.md) | 74 | `result-track:62fa73b3f590ad3324fd4d9d538ca5f87fb1bc7e9e3bcbe027fc9373a513e770` |
-| 3 | `theorem` | [enatCard_matrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCardNamespacedPublic.lean/declarations/enatcard-matrix.md) | 78 | `result-track:6dc8ce261d8a95c05f9e79e92083f16b7d4862af3a8aac1607a6828672f38410` |
-| 4 | `def` | [equiv_GL_linearindependent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCardNamespacedPublic.lean/declarations/equiv-gl-linearindependent.md) | 92 | `declaration-track:d4e0fd09b3a6f8af7f04e7a950e2ae987cac67d86c782e1d8922ee7b98f0d664` |
-| 5 | `theorem` | [card_GL_field](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCardNamespacedPublic.lean/declarations/card-gl-field.md) | 107 | `result-track:657a10a337f0b087eaa559b057067ea4f651913275e79fff0f1b3e0285f02e1e` |
+| 1 | `theorem` | [card_linearIndependent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCardNamespacedPublic.lean/declarations/card-linearindependent.md) | 48 | `result-track:9a1d579a81983c77e619836eb36874374fb6b6b37cbe1a6bbda1e90636ae605c` |
+| 2 | `theorem` | [card_matrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCardNamespacedPublic.lean/declarations/card-matrix.md) | 74 | `result-track:62fa73b3f590ad3324fd4d9d538ca5f87fb1bc7e9e3bcbe027fc9373a513e770` |
+| 3 | `theorem` | [enatCard_matrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCardNamespacedPublic.lean/declarations/enatcard-matrix.md) | 78 | `result-track:6dc8ce261d8a95c05f9e79e92083f16b7d4862af3a8aac1607a6828672f38410` |
+| 4 | `def` | [equiv_GL_linearindependent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCardNamespacedPublic.lean/declarations/equiv-gl-linearindependent.md) | 92 | `declaration-track:d4e0fd09b3a6f8af7f04e7a950e2ae987cac67d86c782e1d8922ee7b98f0d664` |
+| 5 | `theorem` | [card_GL_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCardNamespacedPublic.lean/declarations/card-gl-field.md) | 107 | `result-track:657a10a337f0b087eaa559b057067ea4f651913275e79fff0f1b3e0285f02e1e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

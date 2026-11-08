@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualReciprocalXiVariationChallengeAttempt01.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualReciprocalXiVariationChallengeAttempt01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualReciprocalXiVariationChallengeAttempt01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualReciprocalXiVariationChallengeAttempt01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualReciprocalXiVariationBudget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualReciprocalXiVariationChallengeAttempt01.lean/declarations/actualreciprocalxivariationbudget.md) | 18 | `declaration-track:e4064678596b027450b1dd9e553869ebb1231d253388a9aca57fee1cd426ae79` |
-| 2 | `theorem` | [kernel_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualReciprocalXiVariationChallengeAttempt01.lean/declarations/kernel-nonnegative.md) | 23 | `result-track:fcceb5db9b5973a04687399bb1780a4f5682d9eb1fd42ffc043b53b4b7c83739` |
-| 3 | `theorem` | [subrow_term_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualReciprocalXiVariationChallengeAttempt01.lean/declarations/subrow-term-lower.md) | 30 | `result-track:359f4540224c6c56dd094e742fc430146689919214b8127c957a0698cc8475e9` |
-| 4 | `theorem` | [actualReciprocalXiQuotientWeight_one_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualReciprocalXiVariationChallengeAttempt01.lean/declarations/actualreciprocalxiquotientweight-one-lower.md) | 60 | `result-track:8f1177a29223d7cc3e7b7ee4cae8cb954c222682810a6223439f1fc72f61f1eb` |
-| 5 | `theorem` | [differences_telescope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualReciprocalXiVariationChallengeAttempt01.lean/declarations/differences-telescope.md) | 103 | `result-track:9382786d639a6e4e08761b650eb17af83f42cebc1a44f01220d131866ac9f391` |
-| 6 | `theorem` | [actualReciprocalXiVariationBudget_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualReciprocalXiVariationChallengeAttempt01.lean/declarations/actualreciprocalxivariationbudget-lower.md) | 114 | `result-track:483c550aa3267fbafadb4eddbdcc1c70c4ed11d96c1d321569790f091bc0ef4d` |
+| 1 | `def` | [actualReciprocalXiVariationBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualReciprocalXiVariationChallengeAttempt01.lean/declarations/actualreciprocalxivariationbudget.md) | 18 | `declaration-track:e4064678596b027450b1dd9e553869ebb1231d253388a9aca57fee1cd426ae79` |
+| 2 | `theorem` | [kernel_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualReciprocalXiVariationChallengeAttempt01.lean/declarations/kernel-nonnegative.md) | 23 | `result-track:fcceb5db9b5973a04687399bb1780a4f5682d9eb1fd42ffc043b53b4b7c83739` |
+| 3 | `theorem` | [subrow_term_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualReciprocalXiVariationChallengeAttempt01.lean/declarations/subrow-term-lower.md) | 30 | `result-track:359f4540224c6c56dd094e742fc430146689919214b8127c957a0698cc8475e9` |
+| 4 | `theorem` | [actualReciprocalXiQuotientWeight_one_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualReciprocalXiVariationChallengeAttempt01.lean/declarations/actualreciprocalxiquotientweight-one-lower.md) | 60 | `result-track:8f1177a29223d7cc3e7b7ee4cae8cb954c222682810a6223439f1fc72f61f1eb` |
+| 5 | `theorem` | [differences_telescope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualReciprocalXiVariationChallengeAttempt01.lean/declarations/differences-telescope.md) | 103 | `result-track:9382786d639a6e4e08761b650eb17af83f42cebc1a44f01220d131866ac9f391` |
+| 6 | `theorem` | [actualReciprocalXiVariationBudget_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualReciprocalXiVariationChallengeAttempt01.lean/declarations/actualreciprocalxivariationbudget-lower.md) | 114 | `result-track:483c550aa3267fbafadb4eddbdcc1c70c4ed11d96c1d321569790f091bc0ef4d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

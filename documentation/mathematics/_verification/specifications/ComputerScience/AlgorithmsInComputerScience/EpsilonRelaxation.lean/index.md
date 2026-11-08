@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxation.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteEpsilon](../../../../../ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxation.lean/declarations/finiteepsilon.md) | 7 | `declaration-track:87b4367274004620809da3e7e8c03376ef51d9647852de3c7529fd098ac52b29` |
-| 2 | `structure` | [FiniteRelaxedValue](../../../../../ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxation.lean/declarations/finiterelaxedvalue.md) | 14 | `declaration-track:0716657439392e6905b469b62c1ea000a097a97f1d0727d243672f3801f9a09c` |
-| 3 | `inductive` | [PolarBaseBit](../../../../../ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxation.lean/declarations/polarbasebit.md) | 20 | `declaration-track:ff01349868af5286dac5ae79408f139853c60d87ec1a35efe57ffd011bcc83d2` |
-| 4 | `def` | [relaxedValueOfBase](../../../../../ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxation.lean/declarations/relaxedvalueofbase.md) | 25 | `declaration-track:96ade4d3c81b41aa16c78efe96063bff7147ffd7ad055b4534443f07e9ccd424` |
-| 5 | `theorem` | [relaxedValue_denominator_positive](../../../../../ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxation.lean/declarations/relaxedvalue-denominator-positive.md) | 51 | `result-track:158e88182205e0406767103bf254af418840b50a560750dd7a3ac840c10856cc` |
+| 1 | `structure` | [FiniteEpsilon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxation.lean/declarations/finiteepsilon.md) | 7 | `declaration-track:87b4367274004620809da3e7e8c03376ef51d9647852de3c7529fd098ac52b29` |
+| 2 | `structure` | [FiniteRelaxedValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxation.lean/declarations/finiterelaxedvalue.md) | 14 | `declaration-track:0716657439392e6905b469b62c1ea000a097a97f1d0727d243672f3801f9a09c` |
+| 3 | `inductive` | [PolarBaseBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxation.lean/declarations/polarbasebit.md) | 20 | `declaration-track:ff01349868af5286dac5ae79408f139853c60d87ec1a35efe57ffd011bcc83d2` |
+| 4 | `def` | [relaxedValueOfBase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxation.lean/declarations/relaxedvalueofbase.md) | 25 | `declaration-track:96ade4d3c81b41aa16c78efe96063bff7147ffd7ad055b4534443f07e9ccd424` |
+| 5 | `theorem` | [relaxedValue_denominator_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EpsilonRelaxation.lean/declarations/relaxedvalue-denominator-positive.md) | 51 | `result-track:158e88182205e0406767103bf254af418840b50a560750dd7a3ac840c10856cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

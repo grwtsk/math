@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/PermLattice.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/PermLattice.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PermLattice.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PermLattice.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Perm.bagInter_right](../../../../../../ComputerScience/TheoryOfData/DataStructures/PermLattice.lean/declarations/perm-baginter-right.md) | 29 | `result-track:8b128b27f5a68ba47d71ac23ee6c427ace5e4e220f80ea9f5723fd21b5a1541d` |
-| 2 | `theorem` | [Perm.bagInter_left](../../../../../../ComputerScience/TheoryOfData/DataStructures/PermLattice.lean/declarations/perm-baginter-left.md) | 44 | `result-track:d423c949a03712c90e9c8d6232441f26648e70d92059893a7cd71fd29198b9fd` |
-| 3 | `theorem` | [Perm.bagInter](../../../../../../ComputerScience/TheoryOfData/DataStructures/PermLattice.lean/declarations/perm-baginter.md) | 51 | `result-track:25c5d548fac1fe7333c4c342bafbb974ab95d6bec61af661a8a8de28a91d52a8` |
-| 4 | `theorem` | [Perm.inter_append](../../../../../../ComputerScience/TheoryOfData/DataStructures/PermLattice.lean/declarations/perm-inter-append.md) | 55 | `result-track:bdc963963dc0b7dd65a20de1b83eece85ad8208a231e09b4fd392d019f9a81f4` |
-| 5 | `theorem` | [Perm.take_inter](../../../../../../ComputerScience/TheoryOfData/DataStructures/PermLattice.lean/declarations/perm-take-inter.md) | 72 | `result-track:7995585033f977c6d9596f5a58b9851f0c3f334319df76dda0fbb14892956a7c` |
-| 6 | `theorem` | [Perm.drop_inter](../../../../../../ComputerScience/TheoryOfData/DataStructures/PermLattice.lean/declarations/perm-drop-inter.md) | 79 | `result-track:fcee6132c58677a5cfa72db649758fe938a901f29de45c89330deb8dc9812145` |
-| 7 | `theorem` | [Perm.dropSlice_inter](../../../../../../ComputerScience/TheoryOfData/DataStructures/PermLattice.lean/declarations/perm-dropslice-inter.md) | 97 | `result-track:8cc42f295bd8d8ae7292b10db8791307ecfe69224de7a916df93a7e6018fc08e` |
+| 1 | `theorem` | [Perm.bagInter_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PermLattice.lean/declarations/perm-baginter-right.md) | 29 | `result-track:8b128b27f5a68ba47d71ac23ee6c427ace5e4e220f80ea9f5723fd21b5a1541d` |
+| 2 | `theorem` | [Perm.bagInter_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PermLattice.lean/declarations/perm-baginter-left.md) | 44 | `result-track:d423c949a03712c90e9c8d6232441f26648e70d92059893a7cd71fd29198b9fd` |
+| 3 | `theorem` | [Perm.bagInter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PermLattice.lean/declarations/perm-baginter.md) | 51 | `result-track:25c5d548fac1fe7333c4c342bafbb974ab95d6bec61af661a8a8de28a91d52a8` |
+| 4 | `theorem` | [Perm.inter_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PermLattice.lean/declarations/perm-inter-append.md) | 55 | `result-track:bdc963963dc0b7dd65a20de1b83eece85ad8208a231e09b4fd392d019f9a81f4` |
+| 5 | `theorem` | [Perm.take_inter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PermLattice.lean/declarations/perm-take-inter.md) | 72 | `result-track:7995585033f977c6d9596f5a58b9851f0c3f334319df76dda0fbb14892956a7c` |
+| 6 | `theorem` | [Perm.drop_inter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PermLattice.lean/declarations/perm-drop-inter.md) | 79 | `result-track:fcee6132c58677a5cfa72db649758fe938a901f29de45c89330deb8dc9812145` |
+| 7 | `theorem` | [Perm.dropSlice_inter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PermLattice.lean/declarations/perm-dropslice-inter.md) | 97 | `result-track:8cc42f295bd8d8ae7292b10db8791307ecfe69224de7a916df93a7e6018fc08e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

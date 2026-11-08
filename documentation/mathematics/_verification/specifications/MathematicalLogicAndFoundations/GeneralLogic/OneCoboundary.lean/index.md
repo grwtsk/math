@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OneCoboundary.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OneCoboundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OneCoboundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OneCoboundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [OneCoboundary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OneCoboundary.lean/declarations/onecoboundary.md) | 9 | `declaration-track:f2c0d0e6e8582d3491ee1e83500374bd2851b792e4c4ecd75006f238a061e3b0` |
+| 1 | `def` | [OneCoboundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OneCoboundary.lean/declarations/onecoboundary.md) | 9 | `declaration-track:f2c0d0e6e8582d3491ee1e83500374bd2851b792e4c4ecd75006f238a061e3b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

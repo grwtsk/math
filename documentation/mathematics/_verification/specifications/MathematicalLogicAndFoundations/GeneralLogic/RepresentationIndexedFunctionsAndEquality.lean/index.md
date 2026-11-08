@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationIndexedFunctionsAndEquality.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationIndexedFunctionsAndEquality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationIndexedFunctionsAndEquality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationIndexedFunctionsAndEquality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Represented](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationIndexedFunctionsAndEquality.lean/declarations/represented.md) | 46 | `declaration-track:b3caa25f4d9cf106820d951675f219f2ef198074dc47ee4a0eda7c42cb12480b` |
-| 2 | `structure` | [Parameterized](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationIndexedFunctionsAndEquality.lean/declarations/parameterized.md) | 53 | `declaration-track:e0bc1b191466b44df45742a28bdfb3b4094034cb1b50b8216ecde271ef3a53d1` |
-| 3 | `structure` | [RepresentationEquiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationIndexedFunctionsAndEquality.lean/declarations/representationequiv.md) | 60 | `declaration-track:a8f25e0236006595ed0488b5815ebed5d714ec1de2c9a1fdb6b03f660a88ef60` |
-| 4 | `def` | [Parameterized.at](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationIndexedFunctionsAndEquality.lean/declarations/parameterized-at.md) | 66 | `declaration-track:7a1795352172c4516af45c853b4916aab9342d2ed027396bc994090e08718308` |
-| 5 | `def` | [RepresentationIndependent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationIndexedFunctionsAndEquality.lean/declarations/representationindependent.md) | 72 | `declaration-track:f52adcd2f6514c99011ce1479d059b44df8278c8ff3ff875e9c6764dba3e45ac` |
-| 6 | `theorem` | [Parameterized.map_eq_of_representationEquiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationIndexedFunctionsAndEquality.lean/declarations/parameterized-map-eq-of-representationequiv.md) | 76 | `result-track:be28808a9c44b92580a8f1926d6343a955251343692553d417b61f55abc4f8fd` |
-| 7 | `theorem` | [RepresentationIndependent.map_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationIndexedFunctionsAndEquality.lean/declarations/representationindependent-map-eq.md) | 84 | `result-track:7d1dd7c1d3aa4c66acadfff6faacd085a52e3784f2297cf5afca52535a51cea2` |
+| 1 | `structure` | [Represented](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationIndexedFunctionsAndEquality.lean/declarations/represented.md) | 46 | `declaration-track:b3caa25f4d9cf106820d951675f219f2ef198074dc47ee4a0eda7c42cb12480b` |
+| 2 | `structure` | [Parameterized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationIndexedFunctionsAndEquality.lean/declarations/parameterized.md) | 53 | `declaration-track:e0bc1b191466b44df45742a28bdfb3b4094034cb1b50b8216ecde271ef3a53d1` |
+| 3 | `structure` | [RepresentationEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationIndexedFunctionsAndEquality.lean/declarations/representationequiv.md) | 60 | `declaration-track:a8f25e0236006595ed0488b5815ebed5d714ec1de2c9a1fdb6b03f660a88ef60` |
+| 4 | `def` | [Parameterized.at](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationIndexedFunctionsAndEquality.lean/declarations/parameterized-at.md) | 66 | `declaration-track:7a1795352172c4516af45c853b4916aab9342d2ed027396bc994090e08718308` |
+| 5 | `def` | [RepresentationIndependent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationIndexedFunctionsAndEquality.lean/declarations/representationindependent.md) | 72 | `declaration-track:f52adcd2f6514c99011ce1479d059b44df8278c8ff3ff875e9c6764dba3e45ac` |
+| 6 | `theorem` | [Parameterized.map_eq_of_representationEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationIndexedFunctionsAndEquality.lean/declarations/parameterized-map-eq-of-representationequiv.md) | 76 | `result-track:be28808a9c44b92580a8f1926d6343a955251343692553d417b61f55abc4f8fd` |
+| 7 | `theorem` | [RepresentationIndependent.map_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationIndexedFunctionsAndEquality.lean/declarations/representationindependent-map-eq.md) | 84 | `result-track:7d1dd7c1d3aa4c66acadfff6faacd085a52e3784f2297cf5afca52535a51cea2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

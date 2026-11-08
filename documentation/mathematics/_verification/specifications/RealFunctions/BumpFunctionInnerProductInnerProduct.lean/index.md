@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/BumpFunctionInnerProductInnerProduct.lean/index.md) · [Full source](../../../../RealFunctions/BumpFunctionInnerProductInnerProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BumpFunctionInnerProductInnerProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BumpFunctionInnerProductInnerProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ContDiffBumpBase.ofInnerProductSpace](../../../../RealFunctions/BumpFunctionInnerProductInnerProduct.lean/declarations/contdiffbumpbase-ofinnerproductspace.md) | 28 | `declaration-track:6b20b480e2d963ff7d3e04a0f118f67d981c8e1c15c0648fa0b349102ac06999` |
-| 2 | `instance` | [(anonymous)](../../../../RealFunctions/BumpFunctionInnerProductInnerProduct.lean/declarations/instance.md) | 55 | `declaration-track:db71250640b73e86d731a836f5016132776416358ab727afbdbe233bd87c20e8` |
+| 1 | `def` | [ContDiffBumpBase.ofInnerProductSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BumpFunctionInnerProductInnerProduct.lean/declarations/contdiffbumpbase-ofinnerproductspace.md) | 28 | `declaration-track:6b20b480e2d963ff7d3e04a0f118f67d981c8e1c15c0648fa0b349102ac06999` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BumpFunctionInnerProductInnerProduct.lean/declarations/instance.md) | 55 | `declaration-track:db71250640b73e86d731a836f5016132776416358ab727afbdbe233bd87c20e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

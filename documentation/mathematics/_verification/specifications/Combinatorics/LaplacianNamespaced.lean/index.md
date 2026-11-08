@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/LaplacianNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/LaplacianNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LaplacianNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LaplacianNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [degree](../../../../Combinatorics/LaplacianNamespaced.lean/declarations/degree.md) | 32 | `declaration-track:33678d0cd8ec656399f28de570ca8453e607094de03400a003f054949a1c8bbe` |
-| 2 | `def` | [laplacian](../../../../Combinatorics/LaplacianNamespaced.lean/declarations/laplacian.md) | 40 | `declaration-track:5b9849249594f650adec93aff0ae275af1b9ee8e6847e3e301b8ccdaedf48770` |
-| 3 | `theorem` | [laplacian_constant_zero](../../../../Combinatorics/LaplacianNamespaced.lean/declarations/laplacian-constant-zero.md) | 50 | `result-track:5d96fe6f8e9b39801f472f9c74ebc36e570aed25af83e34eca18b47e3bb8cd65` |
+| 1 | `def` | [degree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LaplacianNamespaced.lean/declarations/degree.md) | 32 | `declaration-track:33678d0cd8ec656399f28de570ca8453e607094de03400a003f054949a1c8bbe` |
+| 2 | `def` | [laplacian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LaplacianNamespaced.lean/declarations/laplacian.md) | 40 | `declaration-track:5b9849249594f650adec93aff0ae275af1b9ee8e6847e3e301b8ccdaedf48770` |
+| 3 | `theorem` | [laplacian_constant_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LaplacianNamespaced.lean/declarations/laplacian-constant-zero.md) | 50 | `result-track:5d96fe6f8e9b39801f472f9c74ebc36e570aed25af83e34eca18b47e3bb8cd65` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

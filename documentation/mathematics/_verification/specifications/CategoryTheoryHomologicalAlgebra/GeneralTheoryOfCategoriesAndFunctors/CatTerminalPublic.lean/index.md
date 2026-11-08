@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatTerminalPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatTerminalPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatTerminalPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatTerminalPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [isTerminalOfUniqueOfIsDiscrete](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatTerminalPublic.lean/declarations/isterminalofuniqueofisdiscrete.md) | 34 | `declaration-track:d1f362408463641c2c31b6dd74c4aea5dbf8ac026b39ab269a7ad20d8dd78a81` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatTerminalPublic.lean/declarations/instance.md) | 39 | `declaration-track:be372b3eaba604bcada3a2c2b2aa626aebbe088b62c09820dafb4a0b2e995a33` |
-| 3 | `def` | [terminalIsoOfUniqueOfIsDiscrete](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatTerminalPublic.lean/declarations/terminalisoofuniqueofisdiscrete.md) | 47 | `declaration-track:1aa2fc9273609489a8f7debe8e9bebce2efff7d81834004ffedbfeea0f3069f0` |
-| 4 | `def` | [isTerminalDiscretePUnit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatTerminalPublic.lean/declarations/isterminaldiscretepunit.md) | 52 | `declaration-track:83d0c4385987196f068561c89a7366c41f34349673b5a909daf83acda8449f07` |
-| 5 | `def` | [isoDiscretePUnitOfIsTerminal](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatTerminalPublic.lean/declarations/isodiscretepunitofisterminal.md) | 56 | `declaration-track:2278a7d24136372604efb10f7816d22891cd1d3224dd3ecf58ac9047e42c6ef4` |
+| 1 | `def` | [isTerminalOfUniqueOfIsDiscrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatTerminalPublic.lean/declarations/isterminalofuniqueofisdiscrete.md) | 34 | `declaration-track:d1f362408463641c2c31b6dd74c4aea5dbf8ac026b39ab269a7ad20d8dd78a81` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatTerminalPublic.lean/declarations/instance.md) | 39 | `declaration-track:be372b3eaba604bcada3a2c2b2aa626aebbe088b62c09820dafb4a0b2e995a33` |
+| 3 | `def` | [terminalIsoOfUniqueOfIsDiscrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatTerminalPublic.lean/declarations/terminalisoofuniqueofisdiscrete.md) | 47 | `declaration-track:1aa2fc9273609489a8f7debe8e9bebce2efff7d81834004ffedbfeea0f3069f0` |
+| 4 | `def` | [isTerminalDiscretePUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatTerminalPublic.lean/declarations/isterminaldiscretepunit.md) | 52 | `declaration-track:83d0c4385987196f068561c89a7366c41f34349673b5a909daf83acda8449f07` |
+| 5 | `def` | [isoDiscretePUnitOfIsTerminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CatTerminalPublic.lean/declarations/isodiscretepunitofisterminal.md) | 56 | `declaration-track:2278a7d24136372604efb10f7816d22891cd1d3224dd3ecf58ac9047e42c6ef4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

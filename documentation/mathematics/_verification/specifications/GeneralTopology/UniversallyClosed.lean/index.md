@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/UniversallyClosed.lean/index.md) · [Full source](../../../../GeneralTopology/UniversallyClosed.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniversallyClosed.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniversallyClosed.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isProperMap_iff_isClosedMap_ultrafilter](../../../../GeneralTopology/UniversallyClosed.lean/declarations/ispropermap-iff-isclosedmap-ultrafilter.md) | 21 | `result-track:8a9d5e891aaf54fb91aa1f49523cba454c144762bbec892eed0b085766e94aa8` |
-| 2 | `theorem` | [isProperMap_iff_universally_closed](../../../../GeneralTopology/UniversallyClosed.lean/declarations/ispropermap-iff-universally-closed.md) | 49 | `result-track:c324d2cb7438d09b32ad9111b750b68968aea17d7f1681a45aaa5a27d0d26833` |
+| 1 | `theorem` | [isProperMap_iff_isClosedMap_ultrafilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniversallyClosed.lean/declarations/ispropermap-iff-isclosedmap-ultrafilter.md) | 21 | `result-track:8a9d5e891aaf54fb91aa1f49523cba454c144762bbec892eed0b085766e94aa8` |
+| 2 | `theorem` | [isProperMap_iff_universally_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniversallyClosed.lean/declarations/ispropermap-iff-universally-closed.md) | 49 | `result-track:c324d2cb7438d09b32ad9111b750b68968aea17d7f1681a45aaa5a27d0d26833` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

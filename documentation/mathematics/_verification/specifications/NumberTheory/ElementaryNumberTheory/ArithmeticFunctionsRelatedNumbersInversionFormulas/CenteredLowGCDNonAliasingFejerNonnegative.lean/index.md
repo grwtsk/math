@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerNonnegative.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerNonnegative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerNonnegative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerNonnegative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDNonAliasingFejerNormalization`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerNormalization.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDNonAliasingFejerNormalization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerNormalization.lean/index.md) — import line 2; pinned internal source present.
 - `Mathlib.Tactic` — import line 3; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [symmetricTriangularKernel_eq_normalized_goldbachFejer](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerNonnegative.lean/declarations/symmetrictriangularkernel-eq-normalized-goldbachfejer.md) | 13 | `result-track:08a7e7b2d65ffd8c1634d08c063b9a7a6e99b1b073d08dc197eb7001cfc1525e` |
-| 2 | `theorem` | [symmetricTriangularKernel_re_nonnegative](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerNonnegative.lean/declarations/symmetrictriangularkernel-re-nonnegative.md) | 22 | `result-track:2a915b6e71092bd35560a9e7e00fefcbb4c54fdd488ceef75618da4a60e116c6` |
-| 3 | `theorem` | [signedSampledTriangularKernelAtPeriod_nonnegative](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerNonnegative.lean/declarations/signedsampledtriangularkernelatperiod-nonnegative.md) | 33 | `result-track:7fda6ffdcda06a4f208c3fa63e244caa7686a7d0c216f9293da4070b2da1ef82` |
+| 1 | `theorem` | [symmetricTriangularKernel_eq_normalized_goldbachFejer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerNonnegative.lean/declarations/symmetrictriangularkernel-eq-normalized-goldbachfejer.md) | 13 | `result-track:08a7e7b2d65ffd8c1634d08c063b9a7a6e99b1b073d08dc197eb7001cfc1525e` |
+| 2 | `theorem` | [symmetricTriangularKernel_re_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerNonnegative.lean/declarations/symmetrictriangularkernel-re-nonnegative.md) | 22 | `result-track:2a915b6e71092bd35560a9e7e00fefcbb4c54fdd488ceef75618da4a60e116c6` |
+| 3 | `theorem` | [signedSampledTriangularKernelAtPeriod_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerNonnegative.lean/declarations/signedsampledtriangularkernelatperiod-nonnegative.md) | 33 | `result-track:7fda6ffdcda06a4f208c3fa63e244caa7686a7d0c216f9293da4070b2da1ef82` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TestRun.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TestRun.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TestRun.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TestRun.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [run](../../../../../ComputerScience/AlgorithmsInComputerScience/TestRun.lean/declarations/run.md) | 5 | `declaration-track:215368e5254cc8c2bd01f26b57d24c7f26397c604842f2af6ad697817197141f` |
-| 2 | `def` | [runEmpty](../../../../../ComputerScience/AlgorithmsInComputerScience/TestRun.lean/declarations/runempty.md) | 9 | `declaration-track:eb72a7558992526eeae716308f994fbb8101c6b69a52872bd87b1dc4d428ad3c` |
-| 3 | `def` | [runParserTest](../../../../../ComputerScience/AlgorithmsInComputerScience/TestRun.lean/declarations/runparsertest.md) | 274 | `declaration-track:6abcca6ebbc4848845d4021272c8667277a11e99971324884a500a79210b516f` |
-| 4 | `def` | [functionWithLet](../../../../../ComputerScience/AlgorithmsInComputerScience/TestRun.lean/declarations/functionwithlet.md) | 344 | `declaration-track:8c829d9343b915e2e655af82a90d0bd811cc81ef4fca2d79510d519935728d2a` |
-| 5 | `def` | [literals](../../../../../ComputerScience/AlgorithmsInComputerScience/TestRun.lean/declarations/literals.md) | 362 | `declaration-track:34587ee0a945531034ef032ba89186e43105c8985c20e9cef69a9798d7b57c18` |
+| 1 | `def` | [run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TestRun.lean/declarations/run.md) | 5 | `declaration-track:215368e5254cc8c2bd01f26b57d24c7f26397c604842f2af6ad697817197141f` |
+| 2 | `def` | [runEmpty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TestRun.lean/declarations/runempty.md) | 9 | `declaration-track:eb72a7558992526eeae716308f994fbb8101c6b69a52872bd87b1dc4d428ad3c` |
+| 3 | `def` | [runParserTest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TestRun.lean/declarations/runparsertest.md) | 274 | `declaration-track:6abcca6ebbc4848845d4021272c8667277a11e99971324884a500a79210b516f` |
+| 4 | `def` | [functionWithLet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TestRun.lean/declarations/functionwithlet.md) | 344 | `declaration-track:8c829d9343b915e2e655af82a90d0bd811cc81ef4fca2d79510d519935728d2a` |
+| 5 | `def` | [literals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TestRun.lean/declarations/literals.md) | 362 | `declaration-track:34587ee0a945531034ef032ba89186e43105c8985c20e9cef69a9798d7b57c18` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

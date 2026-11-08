@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/FloorPowPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/FloorPowPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_div_of_monotone_of_exists_subseq_tendsto_div](../../../../FunctionalAnalysis/FloorPowPublic.lean/declarations/tendsto-div-of-monotone-of-exists-subseq-tendsto-div.md) | 31 | `result-track:5cb425d02650494ad4056bedc9319cb0236e8f75cd95ff6427fadf2badfcc358` |
-| 2 | `theorem` | [tendsto_div_of_monotone_of_tendsto_div_floor_pow](../../../../FunctionalAnalysis/FloorPowPublic.lean/declarations/tendsto-div-of-monotone-of-tendsto-div-floor-pow.md) | 182 | `result-track:dcbc1db8c4b2cfa7ed5783e53a8debaad2d94cf06c06d61e3cde6f6934e57f5c` |
-| 3 | `theorem` | [sum_div_pow_sq_le_div_sq](../../../../FunctionalAnalysis/FloorPowPublic.lean/declarations/sum-div-pow-sq-le-div-sq.md) | 214 | `result-track:c755d56e373a1d16f15d74f707695253869ac434fd50a1d90bfbd10202ac54c3` |
-| 4 | `theorem` | [mul_pow_le_nat_floor_pow](../../../../FunctionalAnalysis/FloorPowPublic.lean/declarations/mul-pow-le-nat-floor-pow.md) | 258 | `result-track:74f31299e8fc7eaabef255b385ce5fa5513ca0b2ca0b86f0997acf91bcf00883` |
-| 5 | `theorem` | [sum_div_nat_floor_pow_sq_le_div_sq](../../../../FunctionalAnalysis/FloorPowPublic.lean/declarations/sum-div-nat-floor-pow-sq-le-div-sq.md) | 271 | `result-track:8ce128c62f67a863d6b2586d9e8d2be4a981e723ff1d854811782037e22c6b28` |
+| 1 | `theorem` | [tendsto_div_of_monotone_of_exists_subseq_tendsto_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowPublic.lean/declarations/tendsto-div-of-monotone-of-exists-subseq-tendsto-div.md) | 31 | `result-track:5cb425d02650494ad4056bedc9319cb0236e8f75cd95ff6427fadf2badfcc358` |
+| 2 | `theorem` | [tendsto_div_of_monotone_of_tendsto_div_floor_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowPublic.lean/declarations/tendsto-div-of-monotone-of-tendsto-div-floor-pow.md) | 182 | `result-track:dcbc1db8c4b2cfa7ed5783e53a8debaad2d94cf06c06d61e3cde6f6934e57f5c` |
+| 3 | `theorem` | [sum_div_pow_sq_le_div_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowPublic.lean/declarations/sum-div-pow-sq-le-div-sq.md) | 214 | `result-track:c755d56e373a1d16f15d74f707695253869ac434fd50a1d90bfbd10202ac54c3` |
+| 4 | `theorem` | [mul_pow_le_nat_floor_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowPublic.lean/declarations/mul-pow-le-nat-floor-pow.md) | 258 | `result-track:74f31299e8fc7eaabef255b385ce5fa5513ca0b2ca0b86f0997acf91bcf00883` |
+| 5 | `theorem` | [sum_div_nat_floor_pow_sq_le_div_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowPublic.lean/declarations/sum-div-nat-floor-pow-sq-le-div-sq.md) | 271 | `result-track:8ce128c62f67a863d6b2586d9e8d2be4a981e723ff1d854811782037e22c6b28` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResourceIndexedGramGuardAttempt01.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResourceIndexedGramGuardAttempt01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResourceIndexedGramGuardAttempt01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResourceIndexedGramGuardAttempt01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [matrix_posSemidef_of_resource_indexed_gram_precision](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResourceIndexedGramGuardAttempt01.lean/declarations/matrix-possemidef-of-resource-indexed-gram-precision.md) | 14 | `result-track:8e2eb1e9f8d0515175ab9d1df65afd16f52e7e77bf9f03804c9e42b7c780ead7` |
+| 1 | `theorem` | [matrix_posSemidef_of_resource_indexed_gram_precision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResourceIndexedGramGuardAttempt01.lean/declarations/matrix-possemidef-of-resource-indexed-gram-precision.md) | 14 | `result-track:8e2eb1e9f8d0515175ab9d1df65afd16f52e7e77bf9f03804c9e42b7c780ead7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

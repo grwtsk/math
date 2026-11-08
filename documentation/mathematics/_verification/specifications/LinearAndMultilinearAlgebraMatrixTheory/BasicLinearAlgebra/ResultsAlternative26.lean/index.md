@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative26.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative26.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative26.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative26.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [permutation_crosses_cut](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative26.lean/declarations/permutation-crosses-cut.md) | 18 | `result-track:c3273db6b54a7aa60952f50e65a54be341725fa37a35968a3942846c5ecf6126` |
-| 2 | `theorem` | [minor_eq_zero_of_diagonal_violation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative26.lean/declarations/minor-eq-zero-of-diagonal-violation.md) | 31 | `result-track:01ad5106359f51faa5e26cfe9351abb64f45e6eae452dcf204b7a0c4a3e5e387` |
-| 3 | `theorem` | [separated_iff_last_le_first](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative26.lean/declarations/separated-iff-last-le-first.md) | 46 | `result-track:d1fccb748343e9c85be8a356bba63f27c6beed264325be5876e67b98a99d7e93` |
-| 4 | `theorem` | [minor_split_at_gap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative26.lean/declarations/minor-split-at-gap.md) | 60 | `result-track:faa98ae0d2f1c3423b5bf7b3b21759d7523a23f1a8139aba3617bfa654e81430` |
-| 5 | `theorem` | [boundary_classification](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative26.lean/declarations/boundary-classification.md) | 81 | `result-track:5b37d4be18b51266013f3af12ea301ccea61d7b9c0eac6dbd1a3825a06a1d987` |
-| 6 | `theorem` | [boundary_two_nonnegative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative26.lean/declarations/boundary-two-nonnegative.md) | 99 | `result-track:cff240283016d8304f201eb7cfd0f9d1cf67be29a9c1a8f9347c560cf1401739` |
+| 1 | `theorem` | [permutation_crosses_cut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative26.lean/declarations/permutation-crosses-cut.md) | 18 | `result-track:c3273db6b54a7aa60952f50e65a54be341725fa37a35968a3942846c5ecf6126` |
+| 2 | `theorem` | [minor_eq_zero_of_diagonal_violation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative26.lean/declarations/minor-eq-zero-of-diagonal-violation.md) | 31 | `result-track:01ad5106359f51faa5e26cfe9351abb64f45e6eae452dcf204b7a0c4a3e5e387` |
+| 3 | `theorem` | [separated_iff_last_le_first](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative26.lean/declarations/separated-iff-last-le-first.md) | 46 | `result-track:d1fccb748343e9c85be8a356bba63f27c6beed264325be5876e67b98a99d7e93` |
+| 4 | `theorem` | [minor_split_at_gap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative26.lean/declarations/minor-split-at-gap.md) | 60 | `result-track:faa98ae0d2f1c3423b5bf7b3b21759d7523a23f1a8139aba3617bfa654e81430` |
+| 5 | `theorem` | [boundary_classification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative26.lean/declarations/boundary-classification.md) | 81 | `result-track:5b37d4be18b51266013f3af12ea301ccea61d7b9c0eac6dbd1a3825a06a1d987` |
+| 6 | `theorem` | [boundary_two_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative26.lean/declarations/boundary-two-nonnegative.md) | 99 | `result-track:cff240283016d8304f201eb7cfd0f9d1cf67be29a9c1a8f9347c560cf1401739` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/LaurentNamespaced.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/LaurentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LaurentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LaurentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [taylor_mem_nonZeroDivisors](../../../../FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/taylor-mem-nonzerodivisors.md) | 45 | `result-track:60224ba53cd9d28db98cf873aa04938411376808475e51ef1b5d8c2d12acbe65` |
-| 2 | `def` | [laurentAux](../../../../FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurentaux.md) | 55 | `declaration-track:dc25a7a3ded68c50d0b779e6b6b681a4a301a0bb147ed87d61782bca3ce8026f` |
-| 3 | `theorem` | [laurentAux_ofFractionRing_mk](../../../../FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurentaux-offractionring-mk.md) | 64 | `result-track:00f340500d877af52b5b2620a79d9f9de9a332801922375f96370719694901e9` |
-| 4 | `theorem` | [laurentAux_div](../../../../FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurentaux-div.md) | 71 | `result-track:e154f382c51760984f306f7cfba9de433371ce39dc287a53a29f4b1b43a19cfa` |
-| 5 | `theorem` | [laurentAux_algebraMap](../../../../FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurentaux-algebramap.md) | 78 | `result-track:b6be7d4c2ea65729638bf682bdb5f64580fdcaea14140d0c8eab940644c412ed` |
-| 6 | `def` | [laurent](../../../../FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurent.md) | 82 | `declaration-track:2703e9c9c13d573e20a4baba6d7ab4637ef78dfb0d5ca3829b741e75587d9c2e` |
-| 7 | `theorem` | [laurent_div](../../../../FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurent-div.md) | 86 | `result-track:7cbb309b3c9d47407f5b3c4c39b37a3b23dc05d266e137dc187ce9ffa6968d82` |
-| 8 | `theorem` | [laurent_algebraMap](../../../../FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurent-algebramap.md) | 92 | `result-track:c14e2ab202ee0385e981f716773162ee806f7b91903eb69168d93ba185089239` |
-| 9 | `theorem` | [laurent_X](../../../../FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurent-x.md) | 96 | `result-track:b576f2c02d8265a9c97e2e8425b66ce98ced448c9fad9bc793a12c73b7c44184` |
-| 10 | `theorem` | [laurent_C](../../../../FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurent-c.md) | 100 | `result-track:629ec1970d84821a967271864d7489bce3854904bb8ef329a3391be74fdf11d8` |
-| 11 | `theorem` | [laurent_at_zero](../../../../FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurent-at-zero.md) | 104 | `result-track:4c1804fdf29a6ef548fcbbcad1a19b9a1e3415aa4021b711fa3934c28a35457c` |
-| 12 | `theorem` | [laurent_laurent](../../../../FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurent-laurent.md) | 106 | `result-track:e884d68e53deba21c884a8ad885e205a2fbbb74e4d39855a975eee4499ea6161` |
-| 13 | `theorem` | [laurent_injective](../../../../FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurent-injective.md) | 110 | `result-track:e15871b9bba1f942d17ff23ea7edff00d73b7b1b62ee4c633cb3f805f71b8816` |
+| 1 | `theorem` | [taylor_mem_nonZeroDivisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/taylor-mem-nonzerodivisors.md) | 45 | `result-track:60224ba53cd9d28db98cf873aa04938411376808475e51ef1b5d8c2d12acbe65` |
+| 2 | `def` | [laurentAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurentaux.md) | 55 | `declaration-track:dc25a7a3ded68c50d0b779e6b6b681a4a301a0bb147ed87d61782bca3ce8026f` |
+| 3 | `theorem` | [laurentAux_ofFractionRing_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurentaux-offractionring-mk.md) | 64 | `result-track:00f340500d877af52b5b2620a79d9f9de9a332801922375f96370719694901e9` |
+| 4 | `theorem` | [laurentAux_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurentaux-div.md) | 71 | `result-track:e154f382c51760984f306f7cfba9de433371ce39dc287a53a29f4b1b43a19cfa` |
+| 5 | `theorem` | [laurentAux_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurentaux-algebramap.md) | 78 | `result-track:b6be7d4c2ea65729638bf682bdb5f64580fdcaea14140d0c8eab940644c412ed` |
+| 6 | `def` | [laurent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurent.md) | 82 | `declaration-track:2703e9c9c13d573e20a4baba6d7ab4637ef78dfb0d5ca3829b741e75587d9c2e` |
+| 7 | `theorem` | [laurent_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurent-div.md) | 86 | `result-track:7cbb309b3c9d47407f5b3c4c39b37a3b23dc05d266e137dc187ce9ffa6968d82` |
+| 8 | `theorem` | [laurent_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurent-algebramap.md) | 92 | `result-track:c14e2ab202ee0385e981f716773162ee806f7b91903eb69168d93ba185089239` |
+| 9 | `theorem` | [laurent_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurent-x.md) | 96 | `result-track:b576f2c02d8265a9c97e2e8425b66ce98ced448c9fad9bc793a12c73b7c44184` |
+| 10 | `theorem` | [laurent_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurent-c.md) | 100 | `result-track:629ec1970d84821a967271864d7489bce3854904bb8ef329a3391be74fdf11d8` |
+| 11 | `theorem` | [laurent_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurent-at-zero.md) | 104 | `result-track:4c1804fdf29a6ef548fcbbcad1a19b9a1e3415aa4021b711fa3934c28a35457c` |
+| 12 | `theorem` | [laurent_laurent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurent-laurent.md) | 106 | `result-track:e884d68e53deba21c884a8ad885e205a2fbbb74e4d39855a975eee4499ea6161` |
+| 13 | `theorem` | [laurent_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LaurentNamespaced.lean/declarations/laurent-injective.md) | 110 | `result-track:e15871b9bba1f942d17ff23ea7edff00d73b7b1b62ee4c633cb3f805f71b8816` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

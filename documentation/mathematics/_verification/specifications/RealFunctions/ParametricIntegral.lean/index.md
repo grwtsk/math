@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ParametricIntegral.lean/index.md) · [Full source](../../../../RealFunctions/ParametricIntegral.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ParametricIntegral.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ParametricIntegral.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasFDerivAt_integral_of_dominated_loc_of_lip'](../../../../RealFunctions/ParametricIntegral.lean/declarations/hasfderivat-integral-of-dominated-loc-of-lip-source-edition-2.md) | 74 | `result-track:c4fda2d7b44d6dec754dd98c0d17cea38e07d659f948689d7d81e60832bae7d1` |
-| 2 | `theorem` | [hasFDerivAt_integral_of_dominated_loc_of_lip](../../../../RealFunctions/ParametricIntegral.lean/declarations/hasfderivat-integral-of-dominated-loc-of-lip.md) | 160 | `result-track:7f613fd831792d6d039edc83b305a34fd3fa7e05e952a1c417fac6807943554a` |
-| 3 | `theorem` | [hasFDerivAt_integral_of_dominated_loc_of_lip_interval](../../../../RealFunctions/ParametricIntegral.lean/declarations/hasfderivat-integral-of-dominated-loc-of-lip-interval.md) | 180 | `result-track:bd94b20607c9d433d170abd673173e0e304a17e481f52dc94b7caa8d6689086b` |
-| 4 | `theorem` | [hasFDerivAt_integral_of_dominated_of_fderiv_le](../../../../RealFunctions/ParametricIntegral.lean/declarations/hasfderivat-integral-of-dominated-of-fderiv-le-source-edition-2.md) | 205 | `result-track:9648ab10ac1ffa533069f5888c8d3f6832f89c08015d22ab44a645d047f152fd` |
-| 5 | `theorem` | [hasFDerivAt_integral_of_dominated_of_fderiv_le''](../../../../RealFunctions/ParametricIntegral.lean/declarations/hasfderivat-integral-of-dominated-of-fderiv-le.md) | 231 | `result-track:38e2ad92e4cc746d1bdc41cdaba32f83cc4cbeeec0125dd37bbfb8cd592f78d3` |
-| 6 | `theorem` | [hasDerivAt_integral_of_dominated_loc_of_lip](../../../../RealFunctions/ParametricIntegral.lean/declarations/hasderivat-integral-of-dominated-loc-of-lip.md) | 256 | `result-track:6f8f1274805c290194b58067f56452977c6335697d72f6bef227eaa024b61897` |
-| 7 | `theorem` | [hasDerivAt_integral_of_dominated_loc_of_deriv_le](../../../../RealFunctions/ParametricIntegral.lean/declarations/hasderivat-integral-of-dominated-loc-of-deriv-le.md) | 285 | `result-track:3cf3bece3923a53f990466cf2e1e852fbae9eeef22797a1e9530ef27ae155b2e` |
+| 1 | `theorem` | [hasFDerivAt_integral_of_dominated_loc_of_lip'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ParametricIntegral.lean/declarations/hasfderivat-integral-of-dominated-loc-of-lip-source-edition-2.md) | 74 | `result-track:c4fda2d7b44d6dec754dd98c0d17cea38e07d659f948689d7d81e60832bae7d1` |
+| 2 | `theorem` | [hasFDerivAt_integral_of_dominated_loc_of_lip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ParametricIntegral.lean/declarations/hasfderivat-integral-of-dominated-loc-of-lip.md) | 160 | `result-track:7f613fd831792d6d039edc83b305a34fd3fa7e05e952a1c417fac6807943554a` |
+| 3 | `theorem` | [hasFDerivAt_integral_of_dominated_loc_of_lip_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ParametricIntegral.lean/declarations/hasfderivat-integral-of-dominated-loc-of-lip-interval.md) | 180 | `result-track:bd94b20607c9d433d170abd673173e0e304a17e481f52dc94b7caa8d6689086b` |
+| 4 | `theorem` | [hasFDerivAt_integral_of_dominated_of_fderiv_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ParametricIntegral.lean/declarations/hasfderivat-integral-of-dominated-of-fderiv-le-source-edition-2.md) | 205 | `result-track:9648ab10ac1ffa533069f5888c8d3f6832f89c08015d22ab44a645d047f152fd` |
+| 5 | `theorem` | [hasFDerivAt_integral_of_dominated_of_fderiv_le''](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ParametricIntegral.lean/declarations/hasfderivat-integral-of-dominated-of-fderiv-le.md) | 231 | `result-track:38e2ad92e4cc746d1bdc41cdaba32f83cc4cbeeec0125dd37bbfb8cd592f78d3` |
+| 6 | `theorem` | [hasDerivAt_integral_of_dominated_loc_of_lip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ParametricIntegral.lean/declarations/hasderivat-integral-of-dominated-loc-of-lip.md) | 256 | `result-track:6f8f1274805c290194b58067f56452977c6335697d72f6bef227eaa024b61897` |
+| 7 | `theorem` | [hasDerivAt_integral_of_dominated_loc_of_deriv_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ParametricIntegral.lean/declarations/hasderivat-integral-of-dominated-loc-of-deriv-le.md) | 285 | `result-track:3cf3bece3923a53f990466cf2e1e852fbae9eeef22797a1e9530ef27ae155b2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

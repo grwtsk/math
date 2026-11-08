@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CubeEncodingNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/CubeEncodingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CubeEncodingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CubeEncodingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CubeArithmeticAddress](../../../../Combinatorics/CubeEncodingNamespaced.lean/declarations/cubearithmeticaddress.md) | 27 | `declaration-track:00a233c798a82ea86c5def5cd44dc0940f4eeb61ed183151beff935d7ddd8d2c` |
-| 2 | `structure` | [CubeArithmeticRepresentation](../../../../Combinatorics/CubeEncodingNamespaced.lean/declarations/cubearithmeticrepresentation.md) | 32 | `declaration-track:ed849ec8439dd962e1f85ecdb16359d9254adcdf01da9425aa0b2a9f93964334` |
-| 3 | `def` | [cubeCapacityTarget](../../../../Combinatorics/CubeEncodingNamespaced.lean/declarations/cubecapacitytarget.md) | 37 | `declaration-track:e9e834ad0d08183aa6f662514a42b86c6892296d0c2697c2f19815842c77ff41` |
+| 1 | `structure` | [CubeArithmeticAddress](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CubeEncodingNamespaced.lean/declarations/cubearithmeticaddress.md) | 27 | `declaration-track:00a233c798a82ea86c5def5cd44dc0940f4eeb61ed183151beff935d7ddd8d2c` |
+| 2 | `structure` | [CubeArithmeticRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CubeEncodingNamespaced.lean/declarations/cubearithmeticrepresentation.md) | 32 | `declaration-track:ed849ec8439dd962e1f85ecdb16359d9254adcdf01da9425aa0b2a9f93964334` |
+| 3 | `def` | [cubeCapacityTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CubeEncodingNamespaced.lean/declarations/cubecapacitytarget.md) | 37 | `declaration-track:e9e834ad0d08183aa6f662514a42b86c6892296d0c2697c2f19815842c77ff41` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

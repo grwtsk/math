@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FinitePrimeState.lean/index.md) · [Full source](../../../../Combinatorics/FinitePrimeState.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinitePrimeState.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinitePrimeState.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FinitePrimeState](../../../../Combinatorics/FinitePrimeState.lean/declarations/finiteprimestate.md) | 20 | `declaration-track:78038ead20c19088676778dd6a0d742ffd84d64bff69b80317363179be9d9e52` |
-| 2 | `theorem` | [primeCertified](../../../../Combinatorics/FinitePrimeState.lean/declarations/primecertified.md) | 32 | `result-track:8cc81bc48f15ba70933b773bdb6e95f146bfec7cc08be443434332021735c0a3` |
-| 3 | `def` | [fiberAt](../../../../Combinatorics/FinitePrimeState.lean/declarations/fiberat.md) | 40 | `declaration-track:ec87958b9f1e6861c16d615cbde411df3969e8b77fd996f6c8136ff0dff6563b` |
-| 4 | `def` | [fiberAddress](../../../../Combinatorics/FinitePrimeState.lean/declarations/fiberaddress.md) | 52 | `declaration-track:9690a7ee90bfc9a81db1c73f595566f7135738ab1aef25ac55172acea60283a5` |
-| 5 | `def` | [fiberObjectAddress](../../../../Combinatorics/FinitePrimeState.lean/declarations/fiberobjectaddress.md) | 60 | `declaration-track:0e09bfdc469522aee9fac5c1c4ff4142db40a1311e9b0a8d179de4214cc05e74` |
-| 6 | `structure` | [CertifiedPrimeExtension](../../../../Combinatorics/FinitePrimeState.lean/declarations/certifiedprimeextension.md) | 70 | `declaration-track:5b7b6e99143b5ab3e93b98b7726a10d22df70a45120aba5dd8669d1c4b121329` |
-| 7 | `theorem` | [newPrime_mem_target](../../../../Combinatorics/FinitePrimeState.lean/declarations/newprime-mem-target.md) | 96 | `result-track:f1aec36e7df4aa2eaf806de9ab3cca1b98d3c44c645926b1d387387294778660` |
-| 8 | `theorem` | [oldFiber_typed_preserved](../../../../Combinatorics/FinitePrimeState.lean/declarations/oldfiber-typed-preserved.md) | 104 | `result-track:80025cad6a5618b956c949b88333773112f1e7cf367aeb827b32f34cef687094` |
-| 9 | `theorem` | [newFiber_typed_preserved](../../../../Combinatorics/FinitePrimeState.lean/declarations/newfiber-typed-preserved.md) | 116 | `result-track:3ce0111692aa49d36d4211eb15cabcab684eb545128900e58b1f2cf825cc1f30` |
+| 1 | `structure` | [FinitePrimeState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinitePrimeState.lean/declarations/finiteprimestate.md) | 20 | `declaration-track:78038ead20c19088676778dd6a0d742ffd84d64bff69b80317363179be9d9e52` |
+| 2 | `theorem` | [primeCertified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinitePrimeState.lean/declarations/primecertified.md) | 32 | `result-track:8cc81bc48f15ba70933b773bdb6e95f146bfec7cc08be443434332021735c0a3` |
+| 3 | `def` | [fiberAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinitePrimeState.lean/declarations/fiberat.md) | 40 | `declaration-track:ec87958b9f1e6861c16d615cbde411df3969e8b77fd996f6c8136ff0dff6563b` |
+| 4 | `def` | [fiberAddress](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinitePrimeState.lean/declarations/fiberaddress.md) | 52 | `declaration-track:9690a7ee90bfc9a81db1c73f595566f7135738ab1aef25ac55172acea60283a5` |
+| 5 | `def` | [fiberObjectAddress](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinitePrimeState.lean/declarations/fiberobjectaddress.md) | 60 | `declaration-track:0e09bfdc469522aee9fac5c1c4ff4142db40a1311e9b0a8d179de4214cc05e74` |
+| 6 | `structure` | [CertifiedPrimeExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinitePrimeState.lean/declarations/certifiedprimeextension.md) | 70 | `declaration-track:5b7b6e99143b5ab3e93b98b7726a10d22df70a45120aba5dd8669d1c4b121329` |
+| 7 | `theorem` | [newPrime_mem_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinitePrimeState.lean/declarations/newprime-mem-target.md) | 96 | `result-track:f1aec36e7df4aa2eaf806de9ab3cca1b98d3c44c645926b1d387387294778660` |
+| 8 | `theorem` | [oldFiber_typed_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinitePrimeState.lean/declarations/oldfiber-typed-preserved.md) | 104 | `result-track:80025cad6a5618b956c949b88333773112f1e7cf367aeb827b32f34cef687094` |
+| 9 | `theorem` | [newFiber_typed_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinitePrimeState.lean/declarations/newfiber-typed-preserved.md) | 116 | `result-track:3ce0111692aa49d36d4211eb15cabcab684eb545128900e58b1f2cf825cc1f30` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

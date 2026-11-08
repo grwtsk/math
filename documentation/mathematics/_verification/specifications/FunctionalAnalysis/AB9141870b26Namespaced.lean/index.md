@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/AB9141870b26Namespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/AB9141870b26Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AB9141870b26Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AB9141870b26Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inner_basisVector_basisVector](../../../../FunctionalAnalysis/AB9141870b26Namespaced.lean/declarations/inner-basisvector-basisvector.md) | 32 | `result-track:9c4bc05c6b76b88aa9a4ba8ac823d70f264c85dddf84e5335160dc358567c9e0` |
+| 1 | `theorem` | [inner_basisVector_basisVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AB9141870b26Namespaced.lean/declarations/inner-basisvector-basisvector.md) | 32 | `result-track:9c4bc05c6b76b88aa9a4ba8ac823d70f264c85dddf84e5335160dc358567c9e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

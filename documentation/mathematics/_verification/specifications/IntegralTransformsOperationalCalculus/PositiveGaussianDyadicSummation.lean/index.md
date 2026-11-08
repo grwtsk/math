@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianDyadicSummation.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianDyadicSummation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianDyadicSummation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianDyadicSummation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation`](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianDyadicSummation.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.GaussianDyadicSummation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianDyadicSummation.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Topology.Algebra.InfiniteSum.Group` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [gaussian_weighted_generic](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianDyadicSummation.lean/declarations/gaussian-weighted-generic.md) | 12 | `result-track:ccd1d302db9df894571c050d66f8cd7c91b66ae30c9466bea5a89c8ac24b3339` |
-| 2 | `theorem` | [gaussian_values_one](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianDyadicSummation.lean/declarations/gaussian-values-one.md) | 18 | `result-track:73dcca9831fd5e16b73c97d1e8e3d51eb7c024ed824f62cc2fcf4c2cda0626a3` |
-| 3 | `theorem` | [gaussian_zero_scale_nonzero](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianDyadicSummation.lean/declarations/gaussian-zero-scale-nonzero.md) | 23 | `result-track:a2b35df754385a833d77512214fe469cf3d3d1f01d652d4b09d4641c1e8ef5b9` |
-| 4 | `theorem` | [gaussian_zero_scale_values_not_summable](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianDyadicSummation.lean/declarations/gaussian-zero-scale-values-not-summable.md) | 46 | `result-track:49c21f845d42ea316ed4b25084e4638f550efb3da707a36e444cdba0823d2c04` |
+| 1 | `theorem` | [gaussian_weighted_generic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianDyadicSummation.lean/declarations/gaussian-weighted-generic.md) | 12 | `result-track:ccd1d302db9df894571c050d66f8cd7c91b66ae30c9466bea5a89c8ac24b3339` |
+| 2 | `theorem` | [gaussian_values_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianDyadicSummation.lean/declarations/gaussian-values-one.md) | 18 | `result-track:73dcca9831fd5e16b73c97d1e8e3d51eb7c024ed824f62cc2fcf4c2cda0626a3` |
+| 3 | `theorem` | [gaussian_zero_scale_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianDyadicSummation.lean/declarations/gaussian-zero-scale-nonzero.md) | 23 | `result-track:a2b35df754385a833d77512214fe469cf3d3d1f01d652d4b09d4641c1e8ef5b9` |
+| 4 | `theorem` | [gaussian_zero_scale_values_not_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianDyadicSummation.lean/declarations/gaussian-zero-scale-values-not-summable.md) | 46 | `result-track:49c21f845d42ea316ed4b25084e4638f550efb3da707a36e444cdba0823d2c04` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

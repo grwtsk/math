@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SmallTriplingNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/SmallTriplingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -64,15 +64,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [inductive_claim_mul](../../../../Combinatorics/SmallTriplingNamespaced.lean/declarations/inductive-claim-mul.md) | 42 | `result-track:db31505f17539b2eef14af20aa1974f122e61a253aa1ac95cd81d3420d8d5cd1` |
-| 2 | `lemma` | [small_neg_pos_pos_mul](../../../../Combinatorics/SmallTriplingNamespaced.lean/declarations/small-neg-pos-pos-mul.md) | 75 | `result-track:3c269007b32361e3ed9a1f41cd89e0600a72f9a4265bd7549c2ac504d0b57311` |
-| 3 | `lemma` | [small_neg_neg_pos_mul](../../../../Combinatorics/SmallTriplingNamespaced.lean/declarations/small-neg-neg-pos-mul.md) | 93 | `result-track:d4b78fedd5d9946327d725016cbe98ff1c885f4244f5c92dab9f472eb47f225d` |
-| 4 | `lemma` | [small_pos_neg_neg_mul](../../../../Combinatorics/SmallTriplingNamespaced.lean/declarations/small-pos-neg-neg-mul.md) | 98 | `result-track:a60eacb2439768897fed6a829e1dde94739a584bd850f5ec4bcaaaf762e86c92` |
-| 5 | `lemma` | [small_pos_pos_neg_mul](../../../../Combinatorics/SmallTriplingNamespaced.lean/declarations/small-pos-pos-neg-mul.md) | 102 | `result-track:8dcd91e2c3c236ae79f61b01c53072e1ba1bb4fb5b7a1e4d29148d47cb2c8405` |
-| 6 | `lemma` | [small_pos_neg_pos_mul](../../../../Combinatorics/SmallTriplingNamespaced.lean/declarations/small-pos-neg-pos-mul.md) | 107 | `result-track:01037666d808e3805bf1a3ef13fda463439ef0da9a8f34f3cbe71a10b1a55af9` |
-| 7 | `lemma` | [small_neg_pos_neg_mul](../../../../Combinatorics/SmallTriplingNamespaced.lean/declarations/small-neg-pos-neg-mul.md) | 125 | `result-track:e6f75876bf1a2ed6e2466587bfe3d9b7ec55261401e9255f5cb4b8190a8f9f5b` |
-| 8 | `lemma` | [small_alternating_pow_of_small_tripling](../../../../Combinatorics/SmallTriplingNamespaced.lean/declarations/small-alternating-pow-of-small-tripling.md) | 142 | `result-track:b37f3ec0dd330958d27da4763b620a5728d759493c989b7ff8ca2b47ccdf6961` |
-| 9 | `lemma` | [small_pow_of_small_tripling](../../../../Combinatorics/SmallTriplingNamespaced.lean/declarations/small-pow-of-small-tripling.md) | 186 | `result-track:89bacc5c4a1a82da44164a27c2dbc5b5ad3c07e62e6fe8b95d5765aaae698aa7` |
+| 1 | `lemma` | [inductive_claim_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespaced.lean/declarations/inductive-claim-mul.md) | 42 | `result-track:db31505f17539b2eef14af20aa1974f122e61a253aa1ac95cd81d3420d8d5cd1` |
+| 2 | `lemma` | [small_neg_pos_pos_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespaced.lean/declarations/small-neg-pos-pos-mul.md) | 75 | `result-track:3c269007b32361e3ed9a1f41cd89e0600a72f9a4265bd7549c2ac504d0b57311` |
+| 3 | `lemma` | [small_neg_neg_pos_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespaced.lean/declarations/small-neg-neg-pos-mul.md) | 93 | `result-track:d4b78fedd5d9946327d725016cbe98ff1c885f4244f5c92dab9f472eb47f225d` |
+| 4 | `lemma` | [small_pos_neg_neg_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespaced.lean/declarations/small-pos-neg-neg-mul.md) | 98 | `result-track:a60eacb2439768897fed6a829e1dde94739a584bd850f5ec4bcaaaf762e86c92` |
+| 5 | `lemma` | [small_pos_pos_neg_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespaced.lean/declarations/small-pos-pos-neg-mul.md) | 102 | `result-track:8dcd91e2c3c236ae79f61b01c53072e1ba1bb4fb5b7a1e4d29148d47cb2c8405` |
+| 6 | `lemma` | [small_pos_neg_pos_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespaced.lean/declarations/small-pos-neg-pos-mul.md) | 107 | `result-track:01037666d808e3805bf1a3ef13fda463439ef0da9a8f34f3cbe71a10b1a55af9` |
+| 7 | `lemma` | [small_neg_pos_neg_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespaced.lean/declarations/small-neg-pos-neg-mul.md) | 125 | `result-track:e6f75876bf1a2ed6e2466587bfe3d9b7ec55261401e9255f5cb4b8190a8f9f5b` |
+| 8 | `lemma` | [small_alternating_pow_of_small_tripling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespaced.lean/declarations/small-alternating-pow-of-small-tripling.md) | 142 | `result-track:b37f3ec0dd330958d27da4763b620a5728d759493c989b7ff8ca2b47ccdf6961` |
+| 9 | `lemma` | [small_pow_of_small_tripling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespaced.lean/declarations/small-pow-of-small-tripling.md) | 186 | `result-track:89bacc5c4a1a82da44164a27c2dbc5b5ad3c07e62e6fe8b95d5765aaae698aa7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

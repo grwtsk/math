@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonPolarComplexPhase.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonPolarComplexPhase.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarComplexPhase.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarComplexPhase.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarDiskSurjectivity`](../../../../AlgebraicTopology/SurfacePolygonPolarDiskSurjectivity.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarDiskSurjectivity`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarDiskSurjectivity.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Complex.Arg` — import line 9; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.SpecialFunctions.Complex.Log` — import line 10; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 11; external provider; requires a separately pinned dependency.
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [complex_norm_exp_arg](../../../../AlgebraicTopology/SurfacePolygonPolarComplexPhase.lean/declarations/complex-norm-exp-arg.md) | 36 | `result-track:4a09d647f6b8a05e087dac020e48cddfc0d2b6af05666084b703154662c59181` |
-| 2 | `def` | [normalizedComplexAngle](../../../../AlgebraicTopology/SurfacePolygonPolarComplexPhase.lean/declarations/normalizedcomplexangle.md) | 43 | `declaration-track:0e07f53d49b2833f8c7c83776245a17bed7570ceacf56848e85ca4211db520d1` |
-| 3 | `theorem` | [normalizedComplexAngle_mul_two_pi](../../../../AlgebraicTopology/SurfacePolygonPolarComplexPhase.lean/declarations/normalizedcomplexangle-mul-two-pi.md) | 47 | `result-track:ec5d2735a12f2959cfc1573bb0b5d7c7953d153465831809b23322e234f9e555` |
-| 4 | `theorem` | [complex_realAnglePolar_representation](../../../../AlgebraicTopology/SurfacePolygonPolarComplexPhase.lean/declarations/complex-realanglepolar-representation.md) | 53 | `result-track:e11eabb855819d44d0e4e05c4c1b3e83c405786be6ae23375415ec7a2ca3a3fc` |
-| 5 | `theorem` | [standardConePolarDisk_surjective](../../../../AlgebraicTopology/SurfacePolygonPolarComplexPhase.lean/declarations/standardconepolardisk-surjective.md) | 61 | `result-track:fb0446bdb89fd0c968ec2e45844d20332c9ccc210c5f35c24eefe10344e4eef0` |
+| 1 | `theorem` | [complex_norm_exp_arg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarComplexPhase.lean/declarations/complex-norm-exp-arg.md) | 36 | `result-track:4a09d647f6b8a05e087dac020e48cddfc0d2b6af05666084b703154662c59181` |
+| 2 | `def` | [normalizedComplexAngle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarComplexPhase.lean/declarations/normalizedcomplexangle.md) | 43 | `declaration-track:0e07f53d49b2833f8c7c83776245a17bed7570ceacf56848e85ca4211db520d1` |
+| 3 | `theorem` | [normalizedComplexAngle_mul_two_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarComplexPhase.lean/declarations/normalizedcomplexangle-mul-two-pi.md) | 47 | `result-track:ec5d2735a12f2959cfc1573bb0b5d7c7953d153465831809b23322e234f9e555` |
+| 4 | `theorem` | [complex_realAnglePolar_representation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarComplexPhase.lean/declarations/complex-realanglepolar-representation.md) | 53 | `result-track:e11eabb855819d44d0e4e05c4c1b3e83c405786be6ae23375415ec7a2ca3a3fc` |
+| 5 | `theorem` | [standardConePolarDisk_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarComplexPhase.lean/declarations/standardconepolardisk-surjective.md) | 61 | `result-track:fb0446bdb89fd0c968ec2e45844d20332c9ccc210c5f35c24eefe10344e4eef0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

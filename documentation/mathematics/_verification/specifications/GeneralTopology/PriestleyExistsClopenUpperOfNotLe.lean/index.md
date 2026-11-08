@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PriestleyExistsClopenUpperOfNotLe.lean/index.md) · [Full source](../../../../GeneralTopology/PriestleyExistsClopenUpperOfNotLe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyExistsClopenUpperOfNotLe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyExistsClopenUpperOfNotLe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [PriestleySpace](../../../../GeneralTopology/PriestleyExistsClopenUpperOfNotLe.lean/declarations/priestleyspace.md) | 40 | `declaration-track:95e4ccea36ccd1b3621ff671e5c44c1e8c7a1f7390a5fe684bd2a3ee18e411cd` |
-| 2 | `theorem` | [exists_clopen_upper_of_not_le](../../../../GeneralTopology/PriestleyExistsClopenUpperOfNotLe.lean/declarations/exists-clopen-upper-of-not-le.md) | 50 | `result-track:5e342ba19be9035c341180c2471e3b6295215c0af42bff3cc0215560d377e1fb` |
-| 3 | `theorem` | [exists_clopen_lower_of_not_le](../../../../GeneralTopology/PriestleyExistsClopenUpperOfNotLe.lean/declarations/exists-clopen-lower-of-not-le.md) | 55 | `result-track:ccc7b05e1ea1f9ab05d39e0b36b08915a09dd758ba61b6efd1886a7f01836382` |
-| 4 | `theorem` | [exists_clopen_upper_or_lower_of_ne](../../../../GeneralTopology/PriestleyExistsClopenUpperOfNotLe.lean/declarations/exists-clopen-upper-or-lower-of-ne.md) | 67 | `result-track:d0672d251db1e92a4504d506c01618f4857943007105796f415df9dea194eb55` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/PriestleyExistsClopenUpperOfNotLe.lean/declarations/instance.md) | 76 | `declaration-track:c06c7a6112528faaae19c8bb243f619685b570b71412e6b7b75356c21c45c4a1` |
+| 1 | `class` | [PriestleySpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyExistsClopenUpperOfNotLe.lean/declarations/priestleyspace.md) | 40 | `declaration-track:95e4ccea36ccd1b3621ff671e5c44c1e8c7a1f7390a5fe684bd2a3ee18e411cd` |
+| 2 | `theorem` | [exists_clopen_upper_of_not_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyExistsClopenUpperOfNotLe.lean/declarations/exists-clopen-upper-of-not-le.md) | 50 | `result-track:5e342ba19be9035c341180c2471e3b6295215c0af42bff3cc0215560d377e1fb` |
+| 3 | `theorem` | [exists_clopen_lower_of_not_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyExistsClopenUpperOfNotLe.lean/declarations/exists-clopen-lower-of-not-le.md) | 55 | `result-track:ccc7b05e1ea1f9ab05d39e0b36b08915a09dd758ba61b6efd1886a7f01836382` |
+| 4 | `theorem` | [exists_clopen_upper_or_lower_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyExistsClopenUpperOfNotLe.lean/declarations/exists-clopen-upper-or-lower-of-ne.md) | 67 | `result-track:d0672d251db1e92a4504d506c01618f4857943007105796f415df9dea194eb55` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyExistsClopenUpperOfNotLe.lean/declarations/instance.md) | 76 | `declaration-track:c06c7a6112528faaae19c8bb243f619685b570b71412e6b7b75356c21c45c4a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

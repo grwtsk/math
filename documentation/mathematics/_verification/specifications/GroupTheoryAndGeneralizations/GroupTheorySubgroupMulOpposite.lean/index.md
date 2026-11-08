@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOpposite.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOpposite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOpposite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOpposite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [opposite](../../../../GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOpposite.lean/declarations/opposite.md) | 26 | `declaration-track:c691497dca02495b6bc58c3afa3d01896c2092efbea2f8e5566dab9dec2383d8` |
-| 2 | `def` | [oppositeEquiv](../../../../GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOpposite.lean/declarations/oppositeequiv.md) | 45 | `declaration-track:b87e5799bcab05bf5fa81dd0387f17c3befbc6bb9ff589a521bc521284bc2885` |
-| 3 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOpposite.lean/declarations/instance-source-edition-2.md) | 52 | `declaration-track:bde4f24b16869a1edbf7777742113fd0720476943e4814d31bbfbe30c9dda694` |
-| 4 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOpposite.lean/declarations/instance.md) | 56 | `declaration-track:238b959048cab5264b6ccf8761dc489dd3a51f9a350765c56fb0c897b1e4d322` |
-| 5 | `theorem` | [smul_opposite_mul](../../../../GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOpposite.lean/declarations/smul-opposite-mul.md) | 60 | `result-track:35f0cce480f33f02ea68005b77e77a5801b1cd1dee3d4f43fb2c8d1438dd1155` |
+| 1 | `def` | [opposite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOpposite.lean/declarations/opposite.md) | 26 | `declaration-track:c691497dca02495b6bc58c3afa3d01896c2092efbea2f8e5566dab9dec2383d8` |
+| 2 | `def` | [oppositeEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOpposite.lean/declarations/oppositeequiv.md) | 45 | `declaration-track:b87e5799bcab05bf5fa81dd0387f17c3befbc6bb9ff589a521bc521284bc2885` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOpposite.lean/declarations/instance-source-edition-2.md) | 52 | `declaration-track:bde4f24b16869a1edbf7777742113fd0720476943e4814d31bbfbe30c9dda694` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOpposite.lean/declarations/instance.md) | 56 | `declaration-track:238b959048cab5264b6ccf8761dc489dd3a51f9a350765c56fb0c897b1e4d322` |
+| 5 | `theorem` | [smul_opposite_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOpposite.lean/declarations/smul-opposite-mul.md) | 60 | `result-track:35f0cce480f33f02ea68005b77e77a5801b1cd1dee3d4f43fb2c8d1438dd1155` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

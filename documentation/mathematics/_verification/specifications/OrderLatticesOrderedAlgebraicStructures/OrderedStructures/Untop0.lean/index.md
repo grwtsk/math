@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [untop₀](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untop.md) | 28 | `declaration-track:22a99f120052bc77e2d932137a755193b1043e478f1279fa9d485e2cc0f30d72` |
-| 2 | `lemma` | [untop₀_eq_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untop-eq-zero.md) | 35 | `result-track:2597f3db47a0a5c1dfb2123a7045675fe07cbcf464bf7422da5cc1779d628a27` |
-| 3 | `lemma` | [untop₀_top](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untop-top.md) | 39 | `result-track:27fabe9799efa75f26e3d8aae74d7b9a0e569826c8694ebb9ceb64e1c10df5d7` |
-| 4 | `lemma` | [untop₀_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untop-zero.md) | 42 | `result-track:cde57b0084b7507c4443c3863fcd5baece9313c6a39da8917c35995f4cba28ba` |
-| 5 | `lemma` | [untop₀_coe](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untop-coe.md) | 45 | `result-track:c0d3ed2b682af8049db24adc9e786177eb90059bcb099951210edfdc80edadf7` |
-| 6 | `lemma` | [coe_untop₀_of_ne_top](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/coe-untop-of-ne-top.md) | 47 | `result-track:79c798afda4554f32ba6ce375b5edab4b9b4ed1bf0a024a1d760bca1cae08aee` |
-| 7 | `lemma` | [untopD_add](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untopd-add.md) | 58 | `result-track:b3abafd097e37d4b03245ada01af075a10f57a83258642bf8a9e6cf8b52b8a1b` |
-| 8 | `lemma` | [untop₀_add](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untop-add.md) | 65 | `result-track:e3462bf98e59c51d65dda1daef2291b0faba77959e82a74638bf843f38f84fc5` |
-| 9 | `lemma` | [untop₀_mul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untop-mul.md) | 73 | `result-track:a5245b6d4e4bab109d1b19466c41701cfbaaad49581400573bd5d7559cec2750` |
-| 10 | `lemma` | [untop₀_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untop-nonneg.md) | 84 | `result-track:c6208aca849a757bb620e317960b652eb2dfc3502a4bb6e313cfbad09a91a468` |
-| 11 | `lemma` | [untop₀_neg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untop-neg.md) | 95 | `result-track:608ac18c28092305b51d995e8eaa485e52ce7534963c39bfd2fbfb8d759ee9f2` |
+| 1 | `def` | [untop₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untop.md) | 28 | `declaration-track:22a99f120052bc77e2d932137a755193b1043e478f1279fa9d485e2cc0f30d72` |
+| 2 | `lemma` | [untop₀_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untop-eq-zero.md) | 35 | `result-track:2597f3db47a0a5c1dfb2123a7045675fe07cbcf464bf7422da5cc1779d628a27` |
+| 3 | `lemma` | [untop₀_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untop-top.md) | 39 | `result-track:27fabe9799efa75f26e3d8aae74d7b9a0e569826c8694ebb9ceb64e1c10df5d7` |
+| 4 | `lemma` | [untop₀_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untop-zero.md) | 42 | `result-track:cde57b0084b7507c4443c3863fcd5baece9313c6a39da8917c35995f4cba28ba` |
+| 5 | `lemma` | [untop₀_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untop-coe.md) | 45 | `result-track:c0d3ed2b682af8049db24adc9e786177eb90059bcb099951210edfdc80edadf7` |
+| 6 | `lemma` | [coe_untop₀_of_ne_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/coe-untop-of-ne-top.md) | 47 | `result-track:79c798afda4554f32ba6ce375b5edab4b9b4ed1bf0a024a1d760bca1cae08aee` |
+| 7 | `lemma` | [untopD_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untopd-add.md) | 58 | `result-track:b3abafd097e37d4b03245ada01af075a10f57a83258642bf8a9e6cf8b52b8a1b` |
+| 8 | `lemma` | [untop₀_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untop-add.md) | 65 | `result-track:e3462bf98e59c51d65dda1daef2291b0faba77959e82a74638bf843f38f84fc5` |
+| 9 | `lemma` | [untop₀_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untop-mul.md) | 73 | `result-track:a5245b6d4e4bab109d1b19466c41701cfbaaad49581400573bd5d7559cec2750` |
+| 10 | `lemma` | [untop₀_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untop-nonneg.md) | 84 | `result-track:c6208aca849a757bb620e317960b652eb2dfc3502a4bb6e313cfbad09a91a468` |
+| 11 | `lemma` | [untop₀_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/declarations/untop-neg.md) | 95 | `result-track:608ac18c28092305b51d995e8eaa485e52ce7534963c39bfd2fbfb8d759ee9f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

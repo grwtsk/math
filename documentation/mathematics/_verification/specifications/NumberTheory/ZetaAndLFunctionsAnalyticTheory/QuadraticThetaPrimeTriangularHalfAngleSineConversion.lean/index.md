@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHalfAngleSineConversion.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHalfAngleSineConversion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHalfAngleSineConversion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHalfAngleSineConversion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeTriangularIntegerFrequencyPartitionProof`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularIntegerFrequencyPartitionProof.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeTriangularIntegerFrequencyPartitionProof`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularIntegerFrequencyPartitionProof.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Trigonometric.Complex` — import line 4; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exp_two_mul_I_sub_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHalfAngleSineConversion.lean/declarations/exp-two-mul-i-sub-one.md) | 14 | `result-track:ae7f2f44b270f3d069a69961e84d1617071a59d232450bd9414f4cd092cf6ca1` |
-| 2 | `theorem` | [triangularGeometricRatio_sub_one_eq_sine](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHalfAngleSineConversion.lean/declarations/triangulargeometricratio-sub-one-eq-sine.md) | 26 | `result-track:fc2ad556f22a6aa3fe141f4209fe9f44bcde782867fcde397bea401ff42f66ee` |
-| 3 | `theorem` | [triangularGeometricRatio_pow_sub_one_eq_sine](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHalfAngleSineConversion.lean/declarations/triangulargeometricratio-pow-sub-one-eq-sine.md) | 36 | `result-track:ff36bef32b9e5234045a0e563ab8ee59f7e0d874b4527c1b550b926b5c2eaf50` |
-| 4 | `theorem` | [triangularGeometricBlock_eq_phase_mul_sineRatio](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHalfAngleSineConversion.lean/declarations/triangulargeometricblock-eq-phase-mul-sineratio.md) | 48 | `result-track:d669088dd01d17187ba099f3351d65c4bfe421854085a7fe398540dab84d13f5` |
-| 5 | `def` | [TriangularPhaseConjugateCancellationClaim](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHalfAngleSineConversion.lean/declarations/triangularphaseconjugatecancellationclaim.md) | 76 | `declaration-track:0f32030b94d3e2d7fcc608f2641affd4b21483733110bd9134f318225bac2e3b` |
-| 6 | `theorem` | [phaseCancellation_to_sineNorm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHalfAngleSineConversion.lean/declarations/phasecancellation-to-sinenorm.md) | 86 | `result-track:c96b4881c60b8c84f45434f6af3393bce8d71d6abe2ad5cc8601889ecf7dcb70` |
+| 1 | `theorem` | [exp_two_mul_I_sub_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHalfAngleSineConversion.lean/declarations/exp-two-mul-i-sub-one.md) | 14 | `result-track:ae7f2f44b270f3d069a69961e84d1617071a59d232450bd9414f4cd092cf6ca1` |
+| 2 | `theorem` | [triangularGeometricRatio_sub_one_eq_sine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHalfAngleSineConversion.lean/declarations/triangulargeometricratio-sub-one-eq-sine.md) | 26 | `result-track:fc2ad556f22a6aa3fe141f4209fe9f44bcde782867fcde397bea401ff42f66ee` |
+| 3 | `theorem` | [triangularGeometricRatio_pow_sub_one_eq_sine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHalfAngleSineConversion.lean/declarations/triangulargeometricratio-pow-sub-one-eq-sine.md) | 36 | `result-track:ff36bef32b9e5234045a0e563ab8ee59f7e0d874b4527c1b550b926b5c2eaf50` |
+| 4 | `theorem` | [triangularGeometricBlock_eq_phase_mul_sineRatio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHalfAngleSineConversion.lean/declarations/triangulargeometricblock-eq-phase-mul-sineratio.md) | 48 | `result-track:d669088dd01d17187ba099f3351d65c4bfe421854085a7fe398540dab84d13f5` |
+| 5 | `def` | [TriangularPhaseConjugateCancellationClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHalfAngleSineConversion.lean/declarations/triangularphaseconjugatecancellationclaim.md) | 76 | `declaration-track:0f32030b94d3e2d7fcc608f2641affd4b21483733110bd9134f318225bac2e3b` |
+| 6 | `theorem` | [phaseCancellation_to_sineNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHalfAngleSineConversion.lean/declarations/phasecancellation-to-sinenorm.md) | 86 | `result-track:c96b4881c60b8c84f45434f6af3393bce8d71d6abe2ad5cc8601889ecf7dcb70` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

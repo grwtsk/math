@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `opaque` | [TimerImpl](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/declarations/timerimpl.md) | 17 | `declaration-track:01b88a71c9e0c93640802b77c9f26da3aacdb0e194e1b0882e78e460b1d42352` |
-| 2 | `def` | [Timer](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/declarations/timer.md) | 30 | `declaration-track:0e1396db71ce67b515867facf4eeecbd4a5b4822e2dd5f7bcc821f5d62077188` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/declarations/instance.md) | 32 | `declaration-track:6c404226d314776180482943c67487613f331e52049d124ebc328232f6783be2` |
-| 4 | `opaque` | [mk](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/declarations/mk.md) | 45 | `declaration-track:f14a923bdd9e88ed01da4bf13956c0a3abd2d998e60be1a6ce3fab808f15fc35` |
-| 5 | `opaque` | [next](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/declarations/next.md) | 64 | `declaration-track:b4ee8a4138a1298e16ab31118017584514c52da4b89aa65c6d5bee9edf0c7dfe` |
-| 6 | `opaque` | [reset](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/declarations/reset.md) | 75 | `declaration-track:60e39883467c058015d19a12cbb69d6b58a988b7647a574dbd7b911bedd35ff7` |
-| 7 | `opaque` | [stop](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/declarations/stop.md) | 84 | `declaration-track:18de26a11f4356ec70b2e23deaaff54518bf6f694d7c6ad9d1cd6cd87179bbc8` |
-| 8 | `opaque` | [cancel](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/declarations/cancel.md) | 93 | `declaration-track:146a22214b892e0bf993286cfcea46cbf5439c7947c97cd021c256932024bcf2` |
+| 1 | `opaque` | [TimerImpl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/declarations/timerimpl.md) | 17 | `declaration-track:01b88a71c9e0c93640802b77c9f26da3aacdb0e194e1b0882e78e460b1d42352` |
+| 2 | `def` | [Timer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/declarations/timer.md) | 30 | `declaration-track:0e1396db71ce67b515867facf4eeecbd4a5b4822e2dd5f7bcc821f5d62077188` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/declarations/instance.md) | 32 | `declaration-track:6c404226d314776180482943c67487613f331e52049d124ebc328232f6783be2` |
+| 4 | `opaque` | [mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/declarations/mk.md) | 45 | `declaration-track:f14a923bdd9e88ed01da4bf13956c0a3abd2d998e60be1a6ce3fab808f15fc35` |
+| 5 | `opaque` | [next](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/declarations/next.md) | 64 | `declaration-track:b4ee8a4138a1298e16ab31118017584514c52da4b89aa65c6d5bee9edf0c7dfe` |
+| 6 | `opaque` | [reset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/declarations/reset.md) | 75 | `declaration-track:60e39883467c058015d19a12cbb69d6b58a988b7647a574dbd7b911bedd35ff7` |
+| 7 | `opaque` | [stop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/declarations/stop.md) | 84 | `declaration-track:18de26a11f4356ec70b2e23deaaff54518bf6f694d7c6ad9d1cd6cd87179bbc8` |
+| 8 | `opaque` | [cancel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/TimerPublicTimer.lean/declarations/cancel.md) | 93 | `declaration-track:146a22214b892e0bf993286cfcea46cbf5439c7947c97cd021c256932024bcf2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

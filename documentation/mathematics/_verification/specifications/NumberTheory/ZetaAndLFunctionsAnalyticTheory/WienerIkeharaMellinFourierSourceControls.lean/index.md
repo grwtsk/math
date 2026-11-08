@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaMellinFourierSourceControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaMellinFourierSourceControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaMellinFourierSourceControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaMellinFourierSourceControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.WienerIkeharaMellinFourierSource`](../../../../../MeasureAndIntegration/WienerIkeharaMellinFourierSource.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.WienerIkeharaMellinFourierSource`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WienerIkeharaMellinFourierSource.lean/index.md) — import line 9; pinned internal source present.
 - `Mathlib.Tactic` — import line 10; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mellinFourier_source_witness_for_all_coefficients](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaMellinFourierSourceControls.lean/declarations/mellinfourier-source-witness-for-all-coefficients.md) | 29 | `result-track:598b8e9d516f98f6491489e98a274f1363978c0b030d4c13b858b12809765f55` |
-| 2 | `theorem` | [mellinFourier_source_unit_frequency](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaMellinFourierSourceControls.lean/declarations/mellinfourier-source-unit-frequency.md) | 51 | `result-track:77c637c914d3aa64aebd494929914b1b9e068979229a0350e595272427012608` |
-| 3 | `theorem` | [mellinFourier_source_two_pi_frequency](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaMellinFourierSourceControls.lean/declarations/mellinfourier-source-two-pi-frequency.md) | 63 | `result-track:0f9f7e759b9e6326a74ab2c89b6d64416f10d91d019607a53906ba0940d51ef9` |
-| 4 | `def` | [stillOpenAnalyticObligations](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaMellinFourierSourceControls.lean/declarations/stillopenanalyticobligations.md) | 86 | `declaration-track:8ecc1cbf53ef86eab5f83267218c94342cc96e3bb6a1f16a012c2becbe57d2a7` |
+| 1 | `theorem` | [mellinFourier_source_witness_for_all_coefficients](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaMellinFourierSourceControls.lean/declarations/mellinfourier-source-witness-for-all-coefficients.md) | 29 | `result-track:598b8e9d516f98f6491489e98a274f1363978c0b030d4c13b858b12809765f55` |
+| 2 | `theorem` | [mellinFourier_source_unit_frequency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaMellinFourierSourceControls.lean/declarations/mellinfourier-source-unit-frequency.md) | 51 | `result-track:77c637c914d3aa64aebd494929914b1b9e068979229a0350e595272427012608` |
+| 3 | `theorem` | [mellinFourier_source_two_pi_frequency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaMellinFourierSourceControls.lean/declarations/mellinfourier-source-two-pi-frequency.md) | 63 | `result-track:0f9f7e759b9e6326a74ab2c89b6d64416f10d91d019607a53906ba0940d51ef9` |
+| 4 | `def` | [stillOpenAnalyticObligations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaMellinFourierSourceControls.lean/declarations/stillopenanalyticobligations.md) | 86 | `declaration-track:8ecc1cbf53ef86eab5f83267218c94342cc96e3bb6a1f16a012c2becbe57d2a7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

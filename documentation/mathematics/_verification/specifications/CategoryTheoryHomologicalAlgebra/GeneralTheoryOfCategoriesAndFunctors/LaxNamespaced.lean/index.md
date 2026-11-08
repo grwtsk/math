@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LaxFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/declarations/laxfunctor.md) | 64 | `declaration-track:366f6f49121c9072e615b48e32668cc6c49eded7f87a1493e3404e9db338d618` |
-| 2 | `lemma` | [mapComp_assoc_left](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/declarations/mapcomp-assoc-left.md) | 108 | `result-track:167ac3046d4c1a3f248f5ce19a27edb790cd5283c3a2855184fd63f3601bd57b` |
-| 3 | `lemma` | [mapComp_assoc_right](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/declarations/mapcomp-assoc-right.md) | 115 | `result-track:cc066f7149135d88c23705a1a10f7b45c061f679e56f477785cb50702c608539` |
-| 4 | `lemma` | [map₂_leftUnitor_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/declarations/map-leftunitor-hom.md) | 122 | `result-track:40f77a03654e62c8cc3616cc051ac4c4c55614d37465c13009bffcd7708ff5e8` |
-| 5 | `lemma` | [map₂_rightUnitor_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/declarations/map-rightunitor-hom.md) | 128 | `result-track:04ed7167f42169076b3cafb030feb152954b0d567d779da31ad513de6ba7a0ae` |
-| 6 | `def` | [id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/declarations/id.md) | 135 | `declaration-track:9b1994629cc6dcb14b93e815a61f8282c84bbee6ca46927f5a59a54283be1f22` |
-| 7 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/declarations/instance.md) | 140 | `declaration-track:20c3561822d321e84add989955406c6c834ae5c71948f6e546d8092a4f4cbc43` |
-| 8 | `def` | [comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/declarations/comp.md) | 145 | `declaration-track:0693bb9b5e464f6fd5945c824b44127b6f9eb08e597a94621e5bcd652558df5a` |
-| 9 | `structure` | [PseudoCore](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/declarations/pseudocore.md) | 177 | `declaration-track:5edc4e9d65a9937191276296ad4d728f444057affe7653f1f1d180a04cfa03b2` |
+| 1 | `structure` | [LaxFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/declarations/laxfunctor.md) | 64 | `declaration-track:366f6f49121c9072e615b48e32668cc6c49eded7f87a1493e3404e9db338d618` |
+| 2 | `lemma` | [mapComp_assoc_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/declarations/mapcomp-assoc-left.md) | 108 | `result-track:167ac3046d4c1a3f248f5ce19a27edb790cd5283c3a2855184fd63f3601bd57b` |
+| 3 | `lemma` | [mapComp_assoc_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/declarations/mapcomp-assoc-right.md) | 115 | `result-track:cc066f7149135d88c23705a1a10f7b45c061f679e56f477785cb50702c608539` |
+| 4 | `lemma` | [map₂_leftUnitor_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/declarations/map-leftunitor-hom.md) | 122 | `result-track:40f77a03654e62c8cc3616cc051ac4c4c55614d37465c13009bffcd7708ff5e8` |
+| 5 | `lemma` | [map₂_rightUnitor_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/declarations/map-rightunitor-hom.md) | 128 | `result-track:04ed7167f42169076b3cafb030feb152954b0d567d779da31ad513de6ba7a0ae` |
+| 6 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/declarations/id.md) | 135 | `declaration-track:9b1994629cc6dcb14b93e815a61f8282c84bbee6ca46927f5a59a54283be1f22` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/declarations/instance.md) | 140 | `declaration-track:20c3561822d321e84add989955406c6c834ae5c71948f6e546d8092a4f4cbc43` |
+| 8 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/declarations/comp.md) | 145 | `declaration-track:0693bb9b5e464f6fd5945c824b44127b6f9eb08e597a94621e5bcd652558df5a` |
+| 9 | `structure` | [PseudoCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LaxNamespaced.lean/declarations/pseudocore.md) | 177 | `declaration-track:5edc4e9d65a9937191276296ad4d728f444057affe7653f1f1d180a04cfa03b2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

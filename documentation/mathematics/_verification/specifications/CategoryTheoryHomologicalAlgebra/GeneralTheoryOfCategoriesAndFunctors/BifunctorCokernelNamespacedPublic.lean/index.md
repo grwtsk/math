@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BifunctorCokernelNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BifunctorCokernelNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BifunctorCokernelNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BifunctorCokernelNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [mapBifunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BifunctorCokernelNamespacedPublic.lean/declarations/mapbifunctor.md) | 52 | `declaration-track:acdb3fdceab3121b6bb07c95c830be9f3b4516ed60f97efbffe924aa8fe0963e` |
-| 2 | `lemma` | [hom_ext](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BifunctorCokernelNamespacedPublic.lean/declarations/hom-ext.md) | 67 | `result-track:7e9e4b36b0c5da41188f0247ec11bfd54b29f389ac31b4d7db1b3a6f99c60cf6` |
-| 3 | `lemma` | [exists_desc](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BifunctorCokernelNamespacedPublic.lean/declarations/exists-desc.md) | 77 | `result-track:781f415c9d8107ecc3aee7af3221937912c62cc9e811b1d8a222be3ed9e26458` |
-| 4 | `def` | [isColimitMapBifunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BifunctorCokernelNamespacedPublic.lean/declarations/iscolimitmapbifunctor.md) | 104 | `declaration-track:3c2ddafc38abe4ee5774104a2eea1a47131f6965b2fc77edea0b47c64600a723` |
+| 1 | `abbrev` | [mapBifunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BifunctorCokernelNamespacedPublic.lean/declarations/mapbifunctor.md) | 52 | `declaration-track:acdb3fdceab3121b6bb07c95c830be9f3b4516ed60f97efbffe924aa8fe0963e` |
+| 2 | `lemma` | [hom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BifunctorCokernelNamespacedPublic.lean/declarations/hom-ext.md) | 67 | `result-track:7e9e4b36b0c5da41188f0247ec11bfd54b29f389ac31b4d7db1b3a6f99c60cf6` |
+| 3 | `lemma` | [exists_desc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BifunctorCokernelNamespacedPublic.lean/declarations/exists-desc.md) | 77 | `result-track:781f415c9d8107ecc3aee7af3221937912c62cc9e811b1d8a222be3ed9e26458` |
+| 4 | `def` | [isColimitMapBifunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BifunctorCokernelNamespacedPublic.lean/declarations/iscolimitmapbifunctor.md) | 104 | `declaration-track:3c2ddafc38abe4ee5774104a2eea1a47131f6965b2fc77edea0b47c64600a723` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

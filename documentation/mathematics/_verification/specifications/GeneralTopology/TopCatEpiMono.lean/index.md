@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopCatEpiMono.lean/index.md) · [Full source](../../../../GeneralTopology/TopCatEpiMono.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatEpiMono.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatEpiMono.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [epi_iff_surjective](../../../../GeneralTopology/TopCatEpiMono.lean/declarations/epi-iff-surjective.md) | 26 | `result-track:51882d9cdc2b1d3614544c4c19f63c5d2d8fd57ddb76d1ea683f683af8c6d8a0` |
-| 2 | `theorem` | [mono_iff_injective](../../../../GeneralTopology/TopCatEpiMono.lean/declarations/mono-iff-injective.md) | 35 | `result-track:6263868ff336ec5cbe6c7dcb7a055cfbcce996838cff38238623fd54dbb35944` |
+| 1 | `theorem` | [epi_iff_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatEpiMono.lean/declarations/epi-iff-surjective.md) | 26 | `result-track:51882d9cdc2b1d3614544c4c19f63c5d2d8fd57ddb76d1ea683f683af8c6d8a0` |
+| 2 | `theorem` | [mono_iff_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatEpiMono.lean/declarations/mono-iff-injective.md) | 35 | `result-track:6263868ff336ec5cbe6c7dcb7a055cfbcce996838cff38238623fd54dbb35944` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

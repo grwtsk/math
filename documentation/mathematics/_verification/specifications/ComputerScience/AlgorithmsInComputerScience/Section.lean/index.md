@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Section.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Section.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Section.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Section.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LatexSection](../../../../../ComputerScience/AlgorithmsInComputerScience/Section.lean/declarations/latexsection.md) | 18 | `declaration-track:b6b003083090550d7e1549d4691f4c25cd8ed6cbb0478ba5e8987e24f553b725` |
-| 2 | `structure` | [LatexSectionOrder](../../../../../ComputerScience/AlgorithmsInComputerScience/Section.lean/declarations/latexsectionorder.md) | 24 | `declaration-track:5b9c0bc43c727973d67ba3eccb31f0c546a6a0a779a1c18ab98a556eed85e43a` |
-| 3 | `theorem` | [latex_section_order_sorted](../../../../../ComputerScience/AlgorithmsInComputerScience/Section.lean/declarations/latex-section-order-sorted.md) | 28 | `result-track:42b8d8e0a07d54f2aeeed944116b1692f245e5b0606e1e4cf1dff62cd6dd8f56` |
+| 1 | `structure` | [LatexSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Section.lean/declarations/latexsection.md) | 18 | `declaration-track:b6b003083090550d7e1549d4691f4c25cd8ed6cbb0478ba5e8987e24f553b725` |
+| 2 | `structure` | [LatexSectionOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Section.lean/declarations/latexsectionorder.md) | 24 | `declaration-track:5b9c0bc43c727973d67ba3eccb31f0c546a6a0a779a1c18ab98a556eed85e43a` |
+| 3 | `theorem` | [latex_section_order_sorted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Section.lean/declarations/latex-section-order-sorted.md) | 28 | `result-track:42b8d8e0a07d54f2aeeed944116b1692f245e5b0606e1e4cf1dff62cd6dd8f56` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ConditionalPassivity.lean/index.md) · [Full source](../../../../Combinatorics/ConditionalPassivity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConditionalPassivity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConditionalPassivity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [hardyInteraction](../../../../Combinatorics/ConditionalPassivity.lean/declarations/hardyinteraction.md) | 14 | `declaration-track:a7ae014eff7e302b02ce983dc8249802ea383c4e6bc0a155e77cabc6e69603f7` |
-| 2 | `structure` | [ConditionalPlacePassivity](../../../../Combinatorics/ConditionalPassivity.lean/declarations/conditionalplacepassivity.md) | 25 | `declaration-track:6eab68b4492fb58dd60bb92269fad110c7ed3de29174a42c1b1490b14a1c92f8` |
-| 3 | `def` | [ConditionalPlacePassivity.toCapacity](../../../../Combinatorics/ConditionalPassivity.lean/declarations/conditionalplacepassivity-tocapacity.md) | 45 | `declaration-track:5a1bad68b9896652b00fa0fcbaa3d7dd5b75c98ff9223ee914e6162ec73ddd19` |
+| 1 | `def` | [hardyInteraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConditionalPassivity.lean/declarations/hardyinteraction.md) | 14 | `declaration-track:a7ae014eff7e302b02ce983dc8249802ea383c4e6bc0a155e77cabc6e69603f7` |
+| 2 | `structure` | [ConditionalPlacePassivity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConditionalPassivity.lean/declarations/conditionalplacepassivity.md) | 25 | `declaration-track:6eab68b4492fb58dd60bb92269fad110c7ed3de29174a42c1b1490b14a1c92f8` |
+| 3 | `def` | [ConditionalPlacePassivity.toCapacity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConditionalPassivity.lean/declarations/conditionalplacepassivity-tocapacity.md) | 45 | `declaration-track:5a1bad68b9896652b00fa0fcbaa3d7dd5b75c98ff9223ee914e6162ec73ddd19` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

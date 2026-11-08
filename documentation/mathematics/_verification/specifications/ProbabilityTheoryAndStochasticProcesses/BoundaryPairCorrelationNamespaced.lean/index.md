@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/BoundaryPairCorrelationNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/BoundaryPairCorrelationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BoundaryPairCorrelationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BoundaryPairCorrelationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [PairCorrelationTarget](../../../../ProbabilityTheoryAndStochasticProcesses/BoundaryPairCorrelationNamespaced.lean/declarations/paircorrelationtarget.md) | 15 | `declaration-track:801a841f06884b61d5f9426fc89fd7f18d2b248e8bca9b084a67218bdab3ee32` |
-| 2 | `structure` | [BoundaryPairCorrelationPolicy](../../../../ProbabilityTheoryAndStochasticProcesses/BoundaryPairCorrelationNamespaced.lean/declarations/boundarypaircorrelationpolicy.md) | 22 | `declaration-track:e86947bdd467a6b4a2940cc49aa7ad6bd7998347b2997fa5ff55ae56a7c9d924` |
-| 3 | `def` | [montgomeryBoundaryPolicy](../../../../ProbabilityTheoryAndStochasticProcesses/BoundaryPairCorrelationNamespaced.lean/declarations/montgomeryboundarypolicy.md) | 28 | `declaration-track:8fb19ca1af31d3b177489d458f02096b680c8c3d2508382b05568a8c482c3098` |
-| 4 | `theorem` | [montgomery_boundary_policy_is_regularizer](../../../../ProbabilityTheoryAndStochasticProcesses/BoundaryPairCorrelationNamespaced.lean/declarations/montgomery-boundary-policy-is-regularizer.md) | 33 | `result-track:77bcf80c946dbd11e3dcb7e0c20d3bd78b1cbba2d9d6ec605b2d77042fbf4f6a` |
+| 1 | `inductive` | [PairCorrelationTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BoundaryPairCorrelationNamespaced.lean/declarations/paircorrelationtarget.md) | 15 | `declaration-track:801a841f06884b61d5f9426fc89fd7f18d2b248e8bca9b084a67218bdab3ee32` |
+| 2 | `structure` | [BoundaryPairCorrelationPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BoundaryPairCorrelationNamespaced.lean/declarations/boundarypaircorrelationpolicy.md) | 22 | `declaration-track:e86947bdd467a6b4a2940cc49aa7ad6bd7998347b2997fa5ff55ae56a7c9d924` |
+| 3 | `def` | [montgomeryBoundaryPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BoundaryPairCorrelationNamespaced.lean/declarations/montgomeryboundarypolicy.md) | 28 | `declaration-track:8fb19ca1af31d3b177489d458f02096b680c8c3d2508382b05568a8c482c3098` |
+| 4 | `theorem` | [montgomery_boundary_policy_is_regularizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BoundaryPairCorrelationNamespaced.lean/declarations/montgomery-boundary-policy-is-regularizer.md) | 33 | `result-track:77bcf80c946dbd11e3dcb7e0c20d3bd78b1cbba2d9d6ec605b2d77042fbf4f6a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

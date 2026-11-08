@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatEnoughInjectivesNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatEnoughInjectivesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatEnoughInjectivesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatEnoughInjectivesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatEnoughInjectivesNamespaced.lean/declarations/instance.md) | 30 | `declaration-track:b9cd19adf2a27fd0cad6098e5ed8d07799a03ad40d214235a113a951c38f60ea` |
-| 2 | `lemma` | [ModuleCat.enoughInjectives](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatEnoughInjectivesNamespaced.lean/declarations/modulecat-enoughinjectives.md) | 33 | `result-track:bd6cc39cf7ddaf60ddac495d67a1958b55d908ef3041632230ec51c53818c162` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatEnoughInjectivesNamespaced.lean/declarations/instance-source-edition-2.md) | 37 | `declaration-track:cd046c28fc16b91ac59864f4333d2c2d66615a317e1fa66c5af7f1035b82725a` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatEnoughInjectivesNamespaced.lean/declarations/instance.md) | 30 | `declaration-track:b9cd19adf2a27fd0cad6098e5ed8d07799a03ad40d214235a113a951c38f60ea` |
+| 2 | `lemma` | [ModuleCat.enoughInjectives](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatEnoughInjectivesNamespaced.lean/declarations/modulecat-enoughinjectives.md) | 33 | `result-track:bd6cc39cf7ddaf60ddac495d67a1958b55d908ef3041632230ec51c53818c162` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatEnoughInjectivesNamespaced.lean/declarations/instance-source-edition-2.md) | 37 | `declaration-track:cd046c28fc16b91ac59864f4333d2c2d66615a317e1fa66c5af7f1035b82725a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

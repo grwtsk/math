@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalCompositionHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalCompositionHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalCompositionHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalCompositionHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.FiniteSequences.IncrementalDictionary`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalDictionary.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Logic.FiniteSequences.IncrementalDictionary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalDictionary.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [unpack_appendEntries_compose](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalCompositionHistoricalSourceEdition2.lean/declarations/unpack-appendentries-compose.md) | 30 | `result-track:3288ebb9b5e80803dfdb2c1f3f10017a90bf22b19a2d143fc32d0138084b8587` |
-| 2 | `theorem` | [unpack_appendEntries_twice_pack](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalCompositionHistoricalSourceEdition2.lean/declarations/unpack-appendentries-twice-pack.md) | 40 | `result-track:7e39bbf63f45b1ccb1e2c3e4a9ba51ae5210d7fda66257e031e9333bddb2a6ec` |
-| 3 | `theorem` | [sequential_representation_counterexample](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalCompositionHistoricalSourceEdition2.lean/declarations/sequential-representation-counterexample.md) | 46 | `result-track:5b9d4de6871a793a78b6dc9fd663a8fe666c7041b5e7ee6afc86ecd926462248` |
+| 1 | `theorem` | [unpack_appendEntries_compose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalCompositionHistoricalSourceEdition2.lean/declarations/unpack-appendentries-compose.md) | 30 | `result-track:3288ebb9b5e80803dfdb2c1f3f10017a90bf22b19a2d143fc32d0138084b8587` |
+| 2 | `theorem` | [unpack_appendEntries_twice_pack](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalCompositionHistoricalSourceEdition2.lean/declarations/unpack-appendentries-twice-pack.md) | 40 | `result-track:7e39bbf63f45b1ccb1e2c3e4a9ba51ae5210d7fda66257e031e9333bddb2a6ec` |
+| 3 | `theorem` | [sequential_representation_counterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalCompositionHistoricalSourceEdition2.lean/declarations/sequential-representation-counterexample.md) | 46 | `result-track:5b9d4de6871a793a78b6dc9fd663a8fe666c7041b5e7ee6afc86ecd926462248` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

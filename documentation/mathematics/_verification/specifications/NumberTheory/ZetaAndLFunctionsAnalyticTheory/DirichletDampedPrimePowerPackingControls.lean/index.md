@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DirichletDampedPrimePowerPackingControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DirichletDampedPrimePowerPackingControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DirichletDampedPrimePowerPackingControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DirichletDampedPrimePowerPackingControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DirichletDampedPrimePowerPacking`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DirichletDampedPrimePowerPacking.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DirichletDampedPrimePowerPacking`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DirichletDampedPrimePowerPacking.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [damped_packing_is_positive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DirichletDampedPrimePowerPackingControls.lean/declarations/damped-packing-is-positive.md) | 14 | `result-track:7372f2099ff16444f967d540b73a769698dfa89d9b01e87d86dc4fe12c6ab20a` |
-| 2 | `theorem` | [damped_packing_has_required_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DirichletDampedPrimePowerPackingControls.lean/declarations/damped-packing-has-required-decay.md) | 18 | `result-track:e1a348de10fea922d6c09445a7ea418a11eebaf1f0ab5dc61ae8b43ad6f7f208` |
+| 1 | `theorem` | [damped_packing_is_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DirichletDampedPrimePowerPackingControls.lean/declarations/damped-packing-is-positive.md) | 14 | `result-track:7372f2099ff16444f967d540b73a769698dfa89d9b01e87d86dc4fe12c6ab20a` |
+| 2 | `theorem` | [damped_packing_has_required_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DirichletDampedPrimePowerPackingControls.lean/declarations/damped-packing-has-required-decay.md) | 18 | `result-track:e1a348de10fea922d6c09445a7ea418a11eebaf1f0ab5dc61ae8b43ad6f7f208` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

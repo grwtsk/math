@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/NerveNondegenerateNamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/NerveNondegenerateNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveNondegenerateNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveNondegenerateNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [mem_range_nerve_σ_iff](../../../../AlgebraicTopology/NerveNondegenerateNamespacedPublic.lean/declarations/mem-range-nerve-iff.md) | 41 | `result-track:d592b7df27c966f662d617c51d730f6ea97ac5fc79a082c910105a2dae59fc24` |
-| 2 | `lemma` | [mem_nerve_degenerate_of_eq](../../../../AlgebraicTopology/NerveNondegenerateNamespacedPublic.lean/declarations/mem-nerve-degenerate-of-eq.md) | 60 | `result-track:fdb496117b1d9734a3014d73651ea083d3c929b7498d77052c937ed630d0d147` |
-| 3 | `lemma` | [mem_nerve_nonDegenerate_iff_strictMono](../../../../AlgebraicTopology/NerveNondegenerateNamespacedPublic.lean/declarations/mem-nerve-nondegenerate-iff-strictmono.md) | 66 | `result-track:a13adacfada4aecdc21c240e977a5087b7cd856b75f06843a6c125a6ed613e82` |
-| 4 | `lemma` | [mem_nerve_nonDegenerate_iff_injective](../../../../AlgebraicTopology/NerveNondegenerateNamespacedPublic.lean/declarations/mem-nerve-nondegenerate-iff-injective.md) | 78 | `result-track:eb8cc8575fa60de07504966176f42d125c7e27fd4fd23d327408c98a4cc5cf15` |
-| 5 | `lemma` | [nerve_ofSimplex_le_ofSimplex_iff](../../../../AlgebraicTopology/NerveNondegenerateNamespacedPublic.lean/declarations/nerve-ofsimplex-le-ofsimplex-iff.md) | 86 | `result-track:f6ee5879c3845d2644a99bf46faf89b81cedec051dc7b30ddda1372ceebdb36e` |
+| 1 | `lemma` | [mem_range_nerve_σ_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveNondegenerateNamespacedPublic.lean/declarations/mem-range-nerve-iff.md) | 41 | `result-track:d592b7df27c966f662d617c51d730f6ea97ac5fc79a082c910105a2dae59fc24` |
+| 2 | `lemma` | [mem_nerve_degenerate_of_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveNondegenerateNamespacedPublic.lean/declarations/mem-nerve-degenerate-of-eq.md) | 60 | `result-track:fdb496117b1d9734a3014d73651ea083d3c929b7498d77052c937ed630d0d147` |
+| 3 | `lemma` | [mem_nerve_nonDegenerate_iff_strictMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveNondegenerateNamespacedPublic.lean/declarations/mem-nerve-nondegenerate-iff-strictmono.md) | 66 | `result-track:a13adacfada4aecdc21c240e977a5087b7cd856b75f06843a6c125a6ed613e82` |
+| 4 | `lemma` | [mem_nerve_nonDegenerate_iff_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveNondegenerateNamespacedPublic.lean/declarations/mem-nerve-nondegenerate-iff-injective.md) | 78 | `result-track:eb8cc8575fa60de07504966176f42d125c7e27fd4fd23d327408c98a4cc5cf15` |
+| 5 | `lemma` | [nerve_ofSimplex_le_ofSimplex_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveNondegenerateNamespacedPublic.lean/declarations/nerve-ofsimplex-le-ofsimplex-iff.md) | 86 | `result-track:f6ee5879c3845d2644a99bf46faf89b81cedec051dc7b30ddda1372ceebdb36e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

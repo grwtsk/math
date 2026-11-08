@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [RoundingSet](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/declarations/roundingset.md) | 27 | `declaration-track:d3c96844fcedafea1dcd0457d0fbaab2e9717aa57aace01e676da949e0d23465` |
-| 2 | `def` | [OnVoronoiWall](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/declarations/onvoronoiwall.md) | 39 | `declaration-track:82a5a016de9bd9a5e9e9631682d83185da35f677ccbafe943e8d480f6bd90e1f` |
-| 3 | `structure` | [RoundingExistenceCertificate](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/declarations/roundingexistencecertificate.md) | 50 | `declaration-track:799c9cf5c61ce686a91e47b62ca715b10ee0acd571dd7480466261889753f81e` |
-| 4 | `structure` | [FiniteRoundingCertificate](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/declarations/finiteroundingcertificate.md) | 59 | `declaration-track:58350e7b7d995d580bf6fab533af653c975a6d8367e0ad72278d287240a00aba` |
-| 5 | `structure` | [RoundedBranch](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/declarations/roundedbranch.md) | 73 | `declaration-track:fb896f6f8aa5fa11677cbd8be0f36f810dc814d51b5573f2fb18abc5f3640800` |
-| 6 | `def` | [residue](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/declarations/residue.md) | 92 | `declaration-track:a20c007108846d39289a3306a3df3573d98d4f001a624aa852001899c87a6cd6` |
-| 7 | `theorem` | [integral_add_residue](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/declarations/integral-add-residue.md) | 96 | `result-track:6b798d42a50d565cfc743d53d78fa54ee6d526f8692b0f56e8b285e85a3941bb` |
-| 8 | `theorem` | [equal_cost](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/declarations/equal-cost.md) | 101 | `result-track:90f51fe628055047db1f908377ae2d33dcba2766a81e0714e5de85ce238d1d0a` |
+| 1 | `def` | [RoundingSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/declarations/roundingset.md) | 27 | `declaration-track:d3c96844fcedafea1dcd0457d0fbaab2e9717aa57aace01e676da949e0d23465` |
+| 2 | `def` | [OnVoronoiWall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/declarations/onvoronoiwall.md) | 39 | `declaration-track:82a5a016de9bd9a5e9e9631682d83185da35f677ccbafe943e8d480f6bd90e1f` |
+| 3 | `structure` | [RoundingExistenceCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/declarations/roundingexistencecertificate.md) | 50 | `declaration-track:799c9cf5c61ce686a91e47b62ca715b10ee0acd571dd7480466261889753f81e` |
+| 4 | `structure` | [FiniteRoundingCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/declarations/finiteroundingcertificate.md) | 59 | `declaration-track:58350e7b7d995d580bf6fab533af653c975a6d8367e0ad72278d287240a00aba` |
+| 5 | `structure` | [RoundedBranch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/declarations/roundedbranch.md) | 73 | `declaration-track:fb896f6f8aa5fa11677cbd8be0f36f810dc814d51b5573f2fb18abc5f3640800` |
+| 6 | `def` | [residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/declarations/residue.md) | 92 | `declaration-track:a20c007108846d39289a3306a3df3573d98d4f001a624aa852001899c87a6cd6` |
+| 7 | `theorem` | [integral_add_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/declarations/integral-add-residue.md) | 96 | `result-track:6b798d42a50d565cfc743d53d78fa54ee6d526f8692b0f56e8b285e85a3941bb` |
+| 8 | `theorem` | [equal_cost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Rounding.lean/declarations/equal-cost.md) | 101 | `result-track:90f51fe628055047db1f908377ae2d33dcba2766a81e0714e5de85ce238d1d0a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

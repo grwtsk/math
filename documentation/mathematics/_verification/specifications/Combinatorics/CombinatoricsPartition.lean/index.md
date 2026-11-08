@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CombinatoricsPartition.lean/index.md) · [Full source](../../../../Combinatorics/CombinatoricsPartition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,20 +59,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Partition](../../../../Combinatorics/CombinatoricsPartition.lean/declarations/partition.md) | 56 | `declaration-track:7f55a21c5b0012e6cb40b229f533420d21fd69c8b8a2acba1f83ddaadb4ba6ea` |
-| 2 | `instance` | [decidableEqParition](../../../../Combinatorics/CombinatoricsPartition.lean/declarations/decidableeqparition.md) | 69 | `declaration-track:718e079a253f8efc5939ce3f633c60445e76e74d7c3fe14b5380e1a2883a7716` |
-| 3 | `def` | [ofComposition](../../../../Combinatorics/CombinatoricsPartition.lean/declarations/ofcomposition.md) | 73 | `declaration-track:00ecd096a0869208c4bb6346b7031d88e7fc8c7dd735e2693b6a735fb05cefa2` |
-| 4 | `theorem` | [ofComposition_surj](../../../../Combinatorics/CombinatoricsPartition.lean/declarations/ofcomposition-surj.md) | 80 | `result-track:08e883a8be3370d22db80ca7b18219375c5ae89985a66d93b8300d4d39dc85d1` |
-| 5 | `def` | [ofSums](../../../../Combinatorics/CombinatoricsPartition.lean/declarations/ofsums.md) | 92 | `declaration-track:424cce58b0b5aeff8263d30fce2bb941fa447a05f510d5225d656c1c8d79444e` |
-| 6 | `def` | [ofMultiset](../../../../Combinatorics/CombinatoricsPartition.lean/declarations/ofmultiset.md) | 106 | `declaration-track:c232e78b4450b84bc3102dd0837ce9fca99cf604960998139709f88bee1bf45a` |
-| 7 | `def` | [indiscretePartition](../../../../Combinatorics/CombinatoricsPartition.lean/declarations/indiscretepartition.md) | 111 | `declaration-track:9fdbd955ef23d1732d89765a50798af01946edec594f267ee764025af0a8d5af` |
-| 8 | `instance` | [(anonymous)](../../../../Combinatorics/CombinatoricsPartition.lean/declarations/instance-source-edition-2.md) | 115 | `declaration-track:db30138a6efa19bfa68027710635570f0628a9e68b0c75cb8b559f9de060e07b` |
-| 9 | `theorem` | [count_ofSums_of_ne_zero](../../../../Combinatorics/CombinatoricsPartition.lean/declarations/count-ofsums-of-ne-zero.md) | 123 | `result-track:aa6a85f3500717bdaef878bd9e63b933b2b7d20c4afddbae73d77726bddc28a5` |
-| 10 | `theorem` | [count_ofSums_zero](../../../../Combinatorics/CombinatoricsPartition.lean/declarations/count-ofsums-zero.md) | 128 | `result-track:e1d3c7d881f8beb9c2c118fce0530a3dc0996df1aabda3c59e4d799658ffd18a` |
-| 11 | `instance` | [(anonymous)](../../../../Combinatorics/CombinatoricsPartition.lean/declarations/instance.md) | 136 | `declaration-track:a17898f9783adde1e906a29a5f288339b147ddc1afdcee16ffb8cb6fd11551d7` |
-| 12 | `def` | [odds](../../../../Combinatorics/CombinatoricsPartition.lean/declarations/odds.md) | 140 | `declaration-track:191822720225424bc4afd6b9f8890f69ae310bce3ae103e7e74f9d81528f4ef5` |
-| 13 | `def` | [distincts](../../../../Combinatorics/CombinatoricsPartition.lean/declarations/distincts.md) | 145 | `declaration-track:800582c9409b599bf09f5d4a89ad8f21fa94c0a016c4bc390107c9ba3d1c56d0` |
-| 14 | `def` | [oddDistincts](../../../../Combinatorics/CombinatoricsPartition.lean/declarations/odddistincts.md) | 150 | `declaration-track:53180ca6d59224b34f10340eaf87e57c2ba177ab8beeeaafad1c7228747293ad` |
+| 1 | `structure` | [Partition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartition.lean/declarations/partition.md) | 56 | `declaration-track:7f55a21c5b0012e6cb40b229f533420d21fd69c8b8a2acba1f83ddaadb4ba6ea` |
+| 2 | `instance` | [decidableEqParition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartition.lean/declarations/decidableeqparition.md) | 69 | `declaration-track:718e079a253f8efc5939ce3f633c60445e76e74d7c3fe14b5380e1a2883a7716` |
+| 3 | `def` | [ofComposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartition.lean/declarations/ofcomposition.md) | 73 | `declaration-track:00ecd096a0869208c4bb6346b7031d88e7fc8c7dd735e2693b6a735fb05cefa2` |
+| 4 | `theorem` | [ofComposition_surj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartition.lean/declarations/ofcomposition-surj.md) | 80 | `result-track:08e883a8be3370d22db80ca7b18219375c5ae89985a66d93b8300d4d39dc85d1` |
+| 5 | `def` | [ofSums](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartition.lean/declarations/ofsums.md) | 92 | `declaration-track:424cce58b0b5aeff8263d30fce2bb941fa447a05f510d5225d656c1c8d79444e` |
+| 6 | `def` | [ofMultiset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartition.lean/declarations/ofmultiset.md) | 106 | `declaration-track:c232e78b4450b84bc3102dd0837ce9fca99cf604960998139709f88bee1bf45a` |
+| 7 | `def` | [indiscretePartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartition.lean/declarations/indiscretepartition.md) | 111 | `declaration-track:9fdbd955ef23d1732d89765a50798af01946edec594f267ee764025af0a8d5af` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartition.lean/declarations/instance-source-edition-2.md) | 115 | `declaration-track:db30138a6efa19bfa68027710635570f0628a9e68b0c75cb8b559f9de060e07b` |
+| 9 | `theorem` | [count_ofSums_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartition.lean/declarations/count-ofsums-of-ne-zero.md) | 123 | `result-track:aa6a85f3500717bdaef878bd9e63b933b2b7d20c4afddbae73d77726bddc28a5` |
+| 10 | `theorem` | [count_ofSums_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartition.lean/declarations/count-ofsums-zero.md) | 128 | `result-track:e1d3c7d881f8beb9c2c118fce0530a3dc0996df1aabda3c59e4d799658ffd18a` |
+| 11 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartition.lean/declarations/instance.md) | 136 | `declaration-track:a17898f9783adde1e906a29a5f288339b147ddc1afdcee16ffb8cb6fd11551d7` |
+| 12 | `def` | [odds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartition.lean/declarations/odds.md) | 140 | `declaration-track:191822720225424bc4afd6b9f8890f69ae310bce3ae103e7e74f9d81528f4ef5` |
+| 13 | `def` | [distincts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartition.lean/declarations/distincts.md) | 145 | `declaration-track:800582c9409b599bf09f5d4a89ad8f21fa94c0a016c4bc390107c9ba3d1c56d0` |
+| 14 | `def` | [oddDistincts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartition.lean/declarations/odddistincts.md) | 150 | `declaration-track:53180ca6d59224b34f10340eaf87e57c2ba177ab8beeeaafad1c7228747293ad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

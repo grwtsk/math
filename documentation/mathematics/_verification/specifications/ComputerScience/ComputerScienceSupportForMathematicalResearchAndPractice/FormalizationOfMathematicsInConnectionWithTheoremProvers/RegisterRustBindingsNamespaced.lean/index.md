@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RegisterRustBindingsNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RegisterRustBindingsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RegisterRustBindingsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RegisterRustBindingsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `constant` | [leanEmbed](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RegisterRustBindingsNamespaced.lean/declarations/leanembed.md) | 19 | `declaration-track:dca671ba2c6117b6fd3223e93d1f9f4460fbe668da03e4469d5baa81b637192e` |
-| 2 | `constant` | [dagGradientRoute](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RegisterRustBindingsNamespaced.lean/declarations/daggradientroute.md) | 23 | `declaration-track:73c066c9af5f0a89c35d164b7a5df1241224bc4ceabdea903ca7fa43338761d7` |
-| 3 | `def` | [main](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RegisterRustBindingsNamespaced.lean/declarations/main.md) | 28 | `declaration-track:9acba8fe9f70caeceb7aa44f63d3889de8d677a7a1a118f97ad2045f4a463d33` |
+| 1 | `constant` | [leanEmbed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RegisterRustBindingsNamespaced.lean/declarations/leanembed.md) | 19 | `declaration-track:dca671ba2c6117b6fd3223e93d1f9f4460fbe668da03e4469d5baa81b637192e` |
+| 2 | `constant` | [dagGradientRoute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RegisterRustBindingsNamespaced.lean/declarations/daggradientroute.md) | 23 | `declaration-track:73c066c9af5f0a89c35d164b7a5df1241224bc4ceabdea903ca7fa43338761d7` |
+| 3 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RegisterRustBindingsNamespaced.lean/declarations/main.md) | 28 | `declaration-track:9acba8fe9f70caeceb7aa44f63d3889de8d677a7a1a118f97ad2045f4a463d33` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

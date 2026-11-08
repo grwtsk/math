@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [monoidalClosedHomEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/declarations/monoidalclosedhomequiv.md) | 28 | `declaration-track:bd265e5fe40bbc4677065b7a3aa94d2054f443903550f7902ff1b728bbdfd141` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/declarations/instance.md) | 43 | `declaration-track:f96ed743532ac5997a492dbf26d80389c93ba244705f059e6b74de378a15b37d` |
-| 3 | `theorem` | [ihom_map_apply](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/declarations/ihom-map-apply.md) | 56 | `result-track:773e857e3a14499e0250a45e36c94744905c2316b74988c33faaf5fb0fdad73d` |
-| 4 | `theorem` | [monoidalClosed_curry](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/declarations/monoidalclosed-curry.md) | 67 | `result-track:71341d373f2b003e29bb23e5c081a3f42ab163b8ad41eda451f749cd61f1fbaa` |
-| 5 | `theorem` | [monoidalClosed_uncurry](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/declarations/monoidalclosed-uncurry.md) | 75 | `result-track:edbd0fa4f55cdb49ab532a90a62dc072e7f80c5e297b732ca729107b82d9adc2` |
-| 6 | `theorem` | [ihom_ev_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/declarations/ihom-ev-app.md) | 86 | `result-track:219349c8187f86f620f99041c9c0005f561fd793285c7e75c2c09b225cd697c1` |
-| 7 | `theorem` | [ihom_coev_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/declarations/ihom-coev-app.md) | 96 | `result-track:7c8481ce9e9998bb244f77d04bbcd0e2a62cc7d9d6ee9097ae2944223bfe0b77` |
-| 8 | `theorem` | [monoidalClosed_pre_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/declarations/monoidalclosed-pre-app.md) | 102 | `result-track:7e979815390c7137403a4c65ac0d6d1dea79955a9817381123dcb56166fb0e5b` |
+| 1 | `def` | [monoidalClosedHomEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/declarations/monoidalclosedhomequiv.md) | 28 | `declaration-track:bd265e5fe40bbc4677065b7a3aa94d2054f443903550f7902ff1b728bbdfd141` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/declarations/instance.md) | 43 | `declaration-track:f96ed743532ac5997a492dbf26d80389c93ba244705f059e6b74de378a15b37d` |
+| 3 | `theorem` | [ihom_map_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/declarations/ihom-map-apply.md) | 56 | `result-track:773e857e3a14499e0250a45e36c94744905c2316b74988c33faaf5fb0fdad73d` |
+| 4 | `theorem` | [monoidalClosed_curry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/declarations/monoidalclosed-curry.md) | 67 | `result-track:71341d373f2b003e29bb23e5c081a3f42ab163b8ad41eda451f749cd61f1fbaa` |
+| 5 | `theorem` | [monoidalClosed_uncurry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/declarations/monoidalclosed-uncurry.md) | 75 | `result-track:edbd0fa4f55cdb49ab532a90a62dc072e7f80c5e297b732ca729107b82d9adc2` |
+| 6 | `theorem` | [ihom_ev_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/declarations/ihom-ev-app.md) | 86 | `result-track:219349c8187f86f620f99041c9c0005f561fd793285c7e75c2c09b225cd697c1` |
+| 7 | `theorem` | [ihom_coev_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/declarations/ihom-coev-app.md) | 96 | `result-track:7c8481ce9e9998bb244f77d04bbcd0e2a62cc7d9d6ee9097ae2944223bfe0b77` |
+| 8 | `theorem` | [monoidalClosed_pre_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedAligned.lean/declarations/monoidalclosed-pre-app.md) | 102 | `result-track:7e979815390c7137403a4c65ac0d6d1dea79955a9817381123dcb56166fb0e5b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

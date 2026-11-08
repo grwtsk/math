@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BFSNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BFSNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BFSNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BFSNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BfsPathCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/BFSNamespaced.lean/declarations/bfspathcertificate.md) | 18 | `declaration-track:1e0eefc18abe4d0c14122c9f1fee65db9c8562343e42155b87ed9f7df8fdc13e` |
-| 2 | `theorem` | [bfs_first_target_shell_shortest](../../../../../ComputerScience/AlgorithmsInComputerScience/BFSNamespaced.lean/declarations/bfs-first-target-shell-shortest.md) | 33 | `result-track:4265eae354182152a2ef43223e4a61333dc400480361336fa3279e735f22da12` |
+| 1 | `structure` | [BfsPathCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BFSNamespaced.lean/declarations/bfspathcertificate.md) | 18 | `declaration-track:1e0eefc18abe4d0c14122c9f1fee65db9c8562343e42155b87ed9f7df8fdc13e` |
+| 2 | `theorem` | [bfs_first_target_shell_shortest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BFSNamespaced.lean/declarations/bfs-first-target-shell-shortest.md) | 33 | `result-track:4265eae354182152a2ef43223e4a61333dc400480361336fa3279e735f22da12` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

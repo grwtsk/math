@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/HeightFifteenCheckedJets.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/HeightFifteenCheckedJets.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/HeightFifteenCheckedJets.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/HeightFifteenCheckedJets.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CheckedJetContour`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CheckedJetContour.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenBlockDecomposition`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenBlockDecomposition.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CheckedJetContour`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CheckedJetContour.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenBlockDecomposition`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenBlockDecomposition.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [result](../../../../AssociativeRingsAndAlgebras/HeightFifteenCheckedJets.lean/declarations/result.md) | 22 | `declaration-track:41e74621bd01a56744fd3086d35ad5f1a781c5f070e28d67f5ee9031e41d1042` |
-| 2 | `theorem` | [success_of_checked](../../../../AssociativeRingsAndAlgebras/HeightFifteenCheckedJets.lean/declarations/success-of-checked.md) | 26 | `result-track:ce906c86ffa2de4696f4cdee64762cd5281f19c91b5cfe50abb1d0760bb78b9b` |
-| 3 | `theorem` | [blocks_of_checked](../../../../AssociativeRingsAndAlgebras/HeightFifteenCheckedJets.lean/declarations/blocks-of-checked.md) | 31 | `result-track:fba46f4f86e8573a9fb497a7be496abfe8a7d40ed91e388c531f855ac13a0c55` |
-| 4 | `theorem` | [count_one_of_checked](../../../../AssociativeRingsAndAlgebras/HeightFifteenCheckedJets.lean/declarations/count-one-of-checked.md) | 39 | `result-track:8af43d798cfe016f14b6de8e1f09a70762ad168313a9d8c54762020453920b36` |
-| 5 | `theorem` | [complete_pair_of_checked](../../../../AssociativeRingsAndAlgebras/HeightFifteenCheckedJets.lean/declarations/complete-pair-of-checked.md) | 43 | `result-track:73b3d0a3e2ec3349b49de9817b1e0ebe4529c90b968d3443efc4829edd1f21fd` |
+| 1 | `def` | [result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/HeightFifteenCheckedJets.lean/declarations/result.md) | 22 | `declaration-track:41e74621bd01a56744fd3086d35ad5f1a781c5f070e28d67f5ee9031e41d1042` |
+| 2 | `theorem` | [success_of_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/HeightFifteenCheckedJets.lean/declarations/success-of-checked.md) | 26 | `result-track:ce906c86ffa2de4696f4cdee64762cd5281f19c91b5cfe50abb1d0760bb78b9b` |
+| 3 | `theorem` | [blocks_of_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/HeightFifteenCheckedJets.lean/declarations/blocks-of-checked.md) | 31 | `result-track:fba46f4f86e8573a9fb497a7be496abfe8a7d40ed91e388c531f855ac13a0c55` |
+| 4 | `theorem` | [count_one_of_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/HeightFifteenCheckedJets.lean/declarations/count-one-of-checked.md) | 39 | `result-track:8af43d798cfe016f14b6de8e1f09a70762ad168313a9d8c54762020453920b36` |
+| 5 | `theorem` | [complete_pair_of_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/HeightFifteenCheckedJets.lean/declarations/complete-pair-of-checked.md) | 43 | `result-track:73b3d0a3e2ec3349b49de9817b1e0ebe4529c90b968d3443efc4829edd1f21fd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

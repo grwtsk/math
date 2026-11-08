@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/OpenCoverNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/OpenCoverNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenCoverNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenCoverNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,21 +57,21 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsOpenCover](../../../../GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/isopencover.md) | 35 | `declaration-track:39f4220ba7ae52ecdc7caf7c40f40fd85ff0ee52034fb84cd17da4adab04554b` |
-| 2 | `lemma` | [mk](../../../../GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/mk.md) | 43 | `result-track:886470ed5fcbb8c8c72aa7b2ae56f81f508216532787f6b0b7bae2a6a49626d2` |
-| 3 | `lemma` | [of_sets](../../../../GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/of-sets.md) | 45 | `result-track:201d9e633c199878b65d6f9ea78d3aa65bd595a8d856562333f1b7279f467e05` |
-| 4 | `lemma` | [iSup_eq_top](../../../../GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/isup-eq-top.md) | 49 | `result-track:47d235305d158663d25d284ab36fbbe42c6c12905d91a425c99d44e7f5cca4f1` |
-| 5 | `lemma` | [iSup_set_eq_univ](../../../../GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/isup-set-eq-univ.md) | 51 | `result-track:90fd4a147d1b3dd4fd4d8c06d3a6c669723f2b14b0e43dcd5122ae190c64aef4` |
-| 6 | `lemma` | [comap](../../../../GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/comap.md) | 56 | `result-track:5296da7933a5818539bec1e207e0a9afd7cf5232a7eef3e620b426eafa3fd5e2` |
-| 7 | `lemma` | [exists_mem](../../../../GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/exists-mem.md) | 59 | `result-track:3c34cb7d22d5e4166b273474001f4104cfe8ba44526b11828a37314c4e0d9df1` |
-| 8 | `lemma` | [exists_mem_nhds](../../../../GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/exists-mem-nhds.md) | 62 | `result-track:42acc43b6612fe9ddcf4b25452d5af8870856d0a73edf031b06ba3093695c84c` |
-| 9 | `lemma` | [iUnion_inter](../../../../GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/iunion-inter.md) | 65 | `result-track:115ae7d4e6afccc99c7bf4ea6e1d9000f2e4c90bb017f909af9b35dd68cb7586` |
-| 10 | `lemma` | [isTopologicalBasis](../../../../GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/istopologicalbasis.md) | 69 | `result-track:2d67d03cb573717fd43228a87095b39f8489f7ed35365e7537335974461ab953` |
-| 11 | `lemma` | [exists_finite_of_compactSpace](../../../../GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/exists-finite-of-compactspace.md) | 74 | `result-track:9860e580bea89de32049d932455476df9247e347f65a0a7600e4c8cc7289b2c1` |
-| 12 | `lemma` | [Opens.IsBasis.isOpenCover](../../../../GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/opens-isbasis-isopencover.md) | 84 | `result-track:4699b286e0d34ea505de735bc7a3967674c32dfaeb4c994e319285aa62cb097d` |
-| 13 | `lemma` | [Opens.IsBasis.isOpenCover_mem_and_le](../../../../GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/opens-isbasis-isopencover-mem-and-le.md) | 91 | `result-track:3ad77e6010255069b48b0339f13769b7334927d1f6555d3b2c3705e7a722fb81` |
-| 14 | `theorem` | [IsPreirreducible.of_subset_iUnion](../../../../GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/ispreirreducible-of-subset-iunion.md) | 108 | `result-track:7865c89b68009e3791ca31a0b8e8589e2f7fccdaceca28e47d9f6f48b76bc17d` |
-| 15 | `theorem` | [PreirreducibleSpace.of_isOpenCover](../../../../GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/preirreduciblespace-of-isopencover.md) | 133 | `result-track:d86192f2fdf72975b1150657b3de20f71fb347f1b557d905a8643667dcbb657a` |
+| 1 | `def` | [IsOpenCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/isopencover.md) | 35 | `declaration-track:39f4220ba7ae52ecdc7caf7c40f40fd85ff0ee52034fb84cd17da4adab04554b` |
+| 2 | `lemma` | [mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/mk.md) | 43 | `result-track:886470ed5fcbb8c8c72aa7b2ae56f81f508216532787f6b0b7bae2a6a49626d2` |
+| 3 | `lemma` | [of_sets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/of-sets.md) | 45 | `result-track:201d9e633c199878b65d6f9ea78d3aa65bd595a8d856562333f1b7279f467e05` |
+| 4 | `lemma` | [iSup_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/isup-eq-top.md) | 49 | `result-track:47d235305d158663d25d284ab36fbbe42c6c12905d91a425c99d44e7f5cca4f1` |
+| 5 | `lemma` | [iSup_set_eq_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/isup-set-eq-univ.md) | 51 | `result-track:90fd4a147d1b3dd4fd4d8c06d3a6c669723f2b14b0e43dcd5122ae190c64aef4` |
+| 6 | `lemma` | [comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/comap.md) | 56 | `result-track:5296da7933a5818539bec1e207e0a9afd7cf5232a7eef3e620b426eafa3fd5e2` |
+| 7 | `lemma` | [exists_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/exists-mem.md) | 59 | `result-track:3c34cb7d22d5e4166b273474001f4104cfe8ba44526b11828a37314c4e0d9df1` |
+| 8 | `lemma` | [exists_mem_nhds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/exists-mem-nhds.md) | 62 | `result-track:42acc43b6612fe9ddcf4b25452d5af8870856d0a73edf031b06ba3093695c84c` |
+| 9 | `lemma` | [iUnion_inter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/iunion-inter.md) | 65 | `result-track:115ae7d4e6afccc99c7bf4ea6e1d9000f2e4c90bb017f909af9b35dd68cb7586` |
+| 10 | `lemma` | [isTopologicalBasis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/istopologicalbasis.md) | 69 | `result-track:2d67d03cb573717fd43228a87095b39f8489f7ed35365e7537335974461ab953` |
+| 11 | `lemma` | [exists_finite_of_compactSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/exists-finite-of-compactspace.md) | 74 | `result-track:9860e580bea89de32049d932455476df9247e347f65a0a7600e4c8cc7289b2c1` |
+| 12 | `lemma` | [Opens.IsBasis.isOpenCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/opens-isbasis-isopencover.md) | 84 | `result-track:4699b286e0d34ea505de735bc7a3967674c32dfaeb4c994e319285aa62cb097d` |
+| 13 | `lemma` | [Opens.IsBasis.isOpenCover_mem_and_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/opens-isbasis-isopencover-mem-and-le.md) | 91 | `result-track:3ad77e6010255069b48b0339f13769b7334927d1f6555d3b2c3705e7a722fb81` |
+| 14 | `theorem` | [IsPreirreducible.of_subset_iUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/ispreirreducible-of-subset-iunion.md) | 108 | `result-track:7865c89b68009e3791ca31a0b8e8589e2f7fccdaceca28e47d9f6f48b76bc17d` |
+| 15 | `theorem` | [PreirreducibleSpace.of_isOpenCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OpenCoverNamespacedPublic.lean/declarations/preirreduciblespace-of-isopencover.md) | 133 | `result-track:d86192f2fdf72975b1150657b3de20f71fb347f1b557d905a8643667dcbb657a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

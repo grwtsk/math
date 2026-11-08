@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModeledCriticalLineComposition.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModeledCriticalLineComposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModeledCriticalLineComposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModeledCriticalLineComposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GRHResearchContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModeledCriticalLineComposition.lean/declarations/grhresearchcontract.md) | 41 | `declaration-track:6b063999951a1cdfdc6076b48402593264b8f6192aa0bd17598b12b83db09143` |
-| 2 | `def` | [AllLFunctionZerosOnCriticalLine](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModeledCriticalLineComposition.lean/declarations/alllfunctionzerosoncriticalline.md) | 54 | `declaration-track:50e6280d387db25fc1c0a1baf219c0a0006f3577303af68eeb000f38978b518a` |
-| 3 | `theorem` | [conditional_grh_via_spectral_heat_contract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModeledCriticalLineComposition.lean/declarations/conditional-grh-via-spectral-heat-contract.md) | 61 | `result-track:e1117953bf8340941934a946c81b5b72fbaa156d5623237bd4554facdacddf81` |
+| 1 | `structure` | [GRHResearchContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModeledCriticalLineComposition.lean/declarations/grhresearchcontract.md) | 41 | `declaration-track:6b063999951a1cdfdc6076b48402593264b8f6192aa0bd17598b12b83db09143` |
+| 2 | `def` | [AllLFunctionZerosOnCriticalLine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModeledCriticalLineComposition.lean/declarations/alllfunctionzerosoncriticalline.md) | 54 | `declaration-track:50e6280d387db25fc1c0a1baf219c0a0006f3577303af68eeb000f38978b518a` |
+| 3 | `theorem` | [conditional_grh_via_spectral_heat_contract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModeledCriticalLineComposition.lean/declarations/conditional-grh-via-spectral-heat-contract.md) | 61 | `result-track:e1117953bf8340941934a946c81b5b72fbaa156d5623237bd4554facdacddf81` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

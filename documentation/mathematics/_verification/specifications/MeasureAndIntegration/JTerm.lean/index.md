@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/JTerm.lean/index.md) · [Full source](../../../../MeasureAndIntegration/JTerm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/JTerm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/JTerm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [DfroG](../../../../MeasureAndIntegration/JTerm.lean/declarations/dfrog.md) | 33 | `declaration-track:aefec62783739c413ab80b4bb39e78c5d640cb840f5656c55e75a014ebc1f557` |
-| 2 | `theorem` | [conj_lineC](../../../../MeasureAndIntegration/JTerm.lean/declarations/conj-linec.md) | 35 | `result-track:a521653d3989abdfd4cf4205d9b24c4447a14ef25877e333fd0310f06ee706de` |
-| 3 | `theorem` | [DfroG_conj_neg](../../../../MeasureAndIntegration/JTerm.lean/declarations/dfrog-conj-neg.md) | 38 | `result-track:34e350f997f607d9b3d526ab7cbda25e4387cc95c3f84210e61921062c3b6068` |
-| 4 | `theorem` | [continuous_DfroG_of](../../../../MeasureAndIntegration/JTerm.lean/declarations/continuous-dfrog-of.md) | 43 | `result-track:1db68b92f61878be0bfca514f67df2f7ee30eaa7960c74e6b0fbb5ddec7bf93c` |
-| 5 | `def` | [JcorrG](../../../../MeasureAndIntegration/JTerm.lean/declarations/jcorrg.md) | 51 | `declaration-track:383dac6a859d67d90b8ff31e788b8929ebd0885d52bb665ce16046c300021455` |
-| 6 | `theorem` | [JcorrG_estimate](../../../../MeasureAndIntegration/JTerm.lean/declarations/jcorrg-estimate.md) | 56 | `result-track:1a636809ddbf2ba165b8c576e8b469a1ea26eb9580a15c6729cab27e7f291e59` |
-| 7 | `def` | [Dfro](../../../../MeasureAndIntegration/JTerm.lean/declarations/dfro.md) | 229 | `declaration-track:6cb040bbc36cf42130b1e782dfa9dd75be3deaf6aaaf5f2afd7ba47d8892acaf` |
-| 8 | `theorem` | [Dfro_eq_DfroG](../../../../MeasureAndIntegration/JTerm.lean/declarations/dfro-eq-dfrog.md) | 232 | `result-track:7f69bdbf4e9688453df1477e0dd92b11895e4acb2a8f9cf9d6d51c35d88f6061` |
-| 9 | `theorem` | [dEE_conj_neg](../../../../MeasureAndIntegration/JTerm.lean/declarations/dee-conj-neg.md) | 234 | `result-track:7bfbf3f4a353ca5bf2a49ee6f870b9b141465c052296eee6962936ef7737989f` |
-| 10 | `theorem` | [Jcorr_estimate](../../../../MeasureAndIntegration/JTerm.lean/declarations/jcorr-estimate.md) | 240 | `result-track:a42bcf1955c0fc2739af0984891cb96a672ccf3d18eb7e6a93efeab14a0a9cbf` |
+| 1 | `def` | [DfroG](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/JTerm.lean/declarations/dfrog.md) | 33 | `declaration-track:aefec62783739c413ab80b4bb39e78c5d640cb840f5656c55e75a014ebc1f557` |
+| 2 | `theorem` | [conj_lineC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/JTerm.lean/declarations/conj-linec.md) | 35 | `result-track:a521653d3989abdfd4cf4205d9b24c4447a14ef25877e333fd0310f06ee706de` |
+| 3 | `theorem` | [DfroG_conj_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/JTerm.lean/declarations/dfrog-conj-neg.md) | 38 | `result-track:34e350f997f607d9b3d526ab7cbda25e4387cc95c3f84210e61921062c3b6068` |
+| 4 | `theorem` | [continuous_DfroG_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/JTerm.lean/declarations/continuous-dfrog-of.md) | 43 | `result-track:1db68b92f61878be0bfca514f67df2f7ee30eaa7960c74e6b0fbb5ddec7bf93c` |
+| 5 | `def` | [JcorrG](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/JTerm.lean/declarations/jcorrg.md) | 51 | `declaration-track:383dac6a859d67d90b8ff31e788b8929ebd0885d52bb665ce16046c300021455` |
+| 6 | `theorem` | [JcorrG_estimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/JTerm.lean/declarations/jcorrg-estimate.md) | 56 | `result-track:1a636809ddbf2ba165b8c576e8b469a1ea26eb9580a15c6729cab27e7f291e59` |
+| 7 | `def` | [Dfro](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/JTerm.lean/declarations/dfro.md) | 229 | `declaration-track:6cb040bbc36cf42130b1e782dfa9dd75be3deaf6aaaf5f2afd7ba47d8892acaf` |
+| 8 | `theorem` | [Dfro_eq_DfroG](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/JTerm.lean/declarations/dfro-eq-dfrog.md) | 232 | `result-track:7f69bdbf4e9688453df1477e0dd92b11895e4acb2a8f9cf9d6d51c35d88f6061` |
+| 9 | `theorem` | [dEE_conj_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/JTerm.lean/declarations/dee-conj-neg.md) | 234 | `result-track:7bfbf3f4a353ca5bf2a49ee6f870b9b141465c052296eee6962936ef7737989f` |
+| 10 | `theorem` | [Jcorr_estimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/JTerm.lean/declarations/jcorr-estimate.md) | 240 | `result-track:a42bcf1955c0fc2739af0984891cb96a672ccf3d18eb7e6a93efeab14a0a9cbf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

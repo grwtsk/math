@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemNamespacedProjectiveBoundarySystem.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemNamespacedProjectiveBoundarySystem.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemNamespacedProjectiveBoundarySystem.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemNamespacedProjectiveBoundarySystem.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProjectiveBoundarySystem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemNamespacedProjectiveBoundarySystem.lean/declarations/projectiveboundarysystem.md) | 26 | `declaration-track:86647a6d798f123580339f7700da2b8338f22c863604332a73821f2cd571fbf2` |
-| 2 | `theorem` | [projective_invariant_law_projects](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemNamespacedProjectiveBoundarySystem.lean/declarations/projective-invariant-law-projects.md) | 155 | `result-track:49d1b80f765b6e582bba4ad609218aed23387844c8facd00feb0819ca0ea8cbf` |
+| 1 | `structure` | [ProjectiveBoundarySystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemNamespacedProjectiveBoundarySystem.lean/declarations/projectiveboundarysystem.md) | 26 | `declaration-track:86647a6d798f123580339f7700da2b8338f22c863604332a73821f2cd571fbf2` |
+| 2 | `theorem` | [projective_invariant_law_projects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProjectiveSystemNamespacedProjectiveBoundarySystem.lean/declarations/projective-invariant-law-projects.md) | 155 | `result-track:49d1b80f765b6e582bba4ad609218aed23387844c8facd00feb0819ca0ea8cbf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

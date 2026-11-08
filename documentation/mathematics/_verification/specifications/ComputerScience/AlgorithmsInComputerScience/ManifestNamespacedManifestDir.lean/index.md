@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ManifestDir](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/declarations/manifestdir.md) | 27 | `declaration-track:6a7134d8f932d1e4b384dcbfa9c7ef64c8336b018da611a93b938a7f7bb17efe` |
-| 2 | `structure` | [AtomRef](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/declarations/atomref.md) | 31 | `declaration-track:7f43309b84faaea4a101f6c4e26b221a038b9e523a2a1b61ca54780dd05c17b8` |
-| 3 | `structure` | [SpinRef](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/declarations/spinref.md) | 37 | `declaration-track:03c67a6d146432cd40b578a8ee395f3f63f7bf55d7efb40711dbdfc18cd25fbd` |
-| 4 | `structure` | [RecipeRef](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/declarations/reciperef.md) | 40 | `declaration-track:36cf6742a7f01554f9816eeae99953dcd415f35640a9a2e0f60054a67c550867` |
-| 5 | `structure` | [ManifestFile](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/declarations/manifestfile.md) | 47 | `declaration-track:7114d4b4df90f8aebed22b9457f08e7569b1ff74d976f227d5a10fa42fc80170` |
-| 6 | `structure` | [ArchiveManifest](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/declarations/archivemanifest.md) | 55 | `declaration-track:9da6320fd78f4d21b740c1cda78f327d331a420f5886de305a6ebc91e19c7d77` |
-| 7 | `def` | [StreamMatchesManifest](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/declarations/streammatchesmanifest.md) | 65 | `declaration-track:88c3859b8dadeb502e353e7ef983e6f908343efae25afd86b3206644173f696b` |
-| 8 | `theorem` | [stream_matches_logical_layer_count](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/declarations/stream-matches-logical-layer-count.md) | 71 | `result-track:ab1209ab14866aea2b62c5a47e794abe5ac81f2e8bc6e30a02e262fc94996ac6` |
-| 9 | `theorem` | [stream_matches_atom_count](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/declarations/stream-matches-atom-count.md) | 78 | `result-track:1afc250ee14437233185c0a2e50dff4e8e348b9539b3b2c0ea86bbb0eab4183c` |
+| 1 | `structure` | [ManifestDir](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/declarations/manifestdir.md) | 27 | `declaration-track:6a7134d8f932d1e4b384dcbfa9c7ef64c8336b018da611a93b938a7f7bb17efe` |
+| 2 | `structure` | [AtomRef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/declarations/atomref.md) | 31 | `declaration-track:7f43309b84faaea4a101f6c4e26b221a038b9e523a2a1b61ca54780dd05c17b8` |
+| 3 | `structure` | [SpinRef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/declarations/spinref.md) | 37 | `declaration-track:03c67a6d146432cd40b578a8ee395f3f63f7bf55d7efb40711dbdfc18cd25fbd` |
+| 4 | `structure` | [RecipeRef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/declarations/reciperef.md) | 40 | `declaration-track:36cf6742a7f01554f9816eeae99953dcd415f35640a9a2e0f60054a67c550867` |
+| 5 | `structure` | [ManifestFile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/declarations/manifestfile.md) | 47 | `declaration-track:7114d4b4df90f8aebed22b9457f08e7569b1ff74d976f227d5a10fa42fc80170` |
+| 6 | `structure` | [ArchiveManifest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/declarations/archivemanifest.md) | 55 | `declaration-track:9da6320fd78f4d21b740c1cda78f327d331a420f5886de305a6ebc91e19c7d77` |
+| 7 | `def` | [StreamMatchesManifest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/declarations/streammatchesmanifest.md) | 65 | `declaration-track:88c3859b8dadeb502e353e7ef983e6f908343efae25afd86b3206644173f696b` |
+| 8 | `theorem` | [stream_matches_logical_layer_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/declarations/stream-matches-logical-layer-count.md) | 71 | `result-track:ab1209ab14866aea2b62c5a47e794abe5ac81f2e8bc6e30a02e262fc94996ac6` |
+| 9 | `theorem` | [stream_matches_atom_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedManifestDir.lean/declarations/stream-matches-atom-count.md) | 78 | `result-track:1afc250ee14437233185c0a2e50dff4e8e348b9539b3b2c0ea86bbb0eab4183c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

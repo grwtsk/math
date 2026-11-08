@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/BoundsNamespacedChooseLePowDiv.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/BoundsNamespacedChooseLePowDiv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BoundsNamespacedChooseLePowDiv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BoundsNamespacedChooseLePowDiv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [choose_le_pow_div](../../../../../NumberTheory/ElementaryNumberTheory/BoundsNamespacedChooseLePowDiv.lean/declarations/choose-le-pow-div.md) | 38 | `result-track:21ebff746de05743f71d98bb81d3bd66557ae223ec5ddcb4894756b726f026b7` |
-| 2 | `lemma` | [choose_le_descFactorial](../../../../../NumberTheory/ElementaryNumberTheory/BoundsNamespacedChooseLePowDiv.lean/declarations/choose-le-descfactorial.md) | 45 | `result-track:c20baed6890b441bd051c581e24096d1548433d88292ef7f9e61c52528430f98` |
-| 3 | `lemma` | [choose_le_pow](../../../../../NumberTheory/ElementaryNumberTheory/BoundsNamespacedChooseLePowDiv.lean/declarations/choose-le-pow.md) | 51 | `result-track:f172a8ee093f50ede4d6808a63d36f97556c2bf47b75538ed2cbd437ef8133e4` |
-| 4 | `theorem` | [pow_le_choose](../../../../../NumberTheory/ElementaryNumberTheory/BoundsNamespacedChooseLePowDiv.lean/declarations/pow-le-choose.md) | 55 | `result-track:3ec54808f297dce693b4fd9b09995849f5953d9a79935f7030f57206ff171b5e` |
-| 5 | `theorem` | [choose_succ_le_two_pow](../../../../../NumberTheory/ElementaryNumberTheory/BoundsNamespacedChooseLePowDiv.lean/declarations/choose-succ-le-two-pow.md) | 62 | `result-track:1c8c50fd4102e92b0216cca7d17adf8f03cabba4ed848006060e47545cbd1424` |
-| 6 | `theorem` | [choose_le_two_pow](../../../../../NumberTheory/ElementaryNumberTheory/BoundsNamespacedChooseLePowDiv.lean/declarations/choose-le-two-pow.md) | 74 | `result-track:9f530d224c79d26fec94d8509fce34f6ecb76a0022f6a2d4176fa7dd662133e3` |
+| 1 | `theorem` | [choose_le_pow_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BoundsNamespacedChooseLePowDiv.lean/declarations/choose-le-pow-div.md) | 38 | `result-track:21ebff746de05743f71d98bb81d3bd66557ae223ec5ddcb4894756b726f026b7` |
+| 2 | `lemma` | [choose_le_descFactorial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BoundsNamespacedChooseLePowDiv.lean/declarations/choose-le-descfactorial.md) | 45 | `result-track:c20baed6890b441bd051c581e24096d1548433d88292ef7f9e61c52528430f98` |
+| 3 | `lemma` | [choose_le_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BoundsNamespacedChooseLePowDiv.lean/declarations/choose-le-pow.md) | 51 | `result-track:f172a8ee093f50ede4d6808a63d36f97556c2bf47b75538ed2cbd437ef8133e4` |
+| 4 | `theorem` | [pow_le_choose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BoundsNamespacedChooseLePowDiv.lean/declarations/pow-le-choose.md) | 55 | `result-track:3ec54808f297dce693b4fd9b09995849f5953d9a79935f7030f57206ff171b5e` |
+| 5 | `theorem` | [choose_succ_le_two_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BoundsNamespacedChooseLePowDiv.lean/declarations/choose-succ-le-two-pow.md) | 62 | `result-track:1c8c50fd4102e92b0216cca7d17adf8f03cabba4ed848006060e47545cbd1424` |
+| 6 | `theorem` | [choose_le_two_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BoundsNamespacedChooseLePowDiv.lean/declarations/choose-le-two-pow.md) | 74 | `result-track:9f530d224c79d26fec94d8509fce34f6ecb76a0022f6a2d4176fa7dd662133e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

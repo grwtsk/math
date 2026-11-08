@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ClassNumberAdmissibleAbsAdmissibleAbsNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../NumberTheory/ClassNumberAdmissibleAbsAdmissibleAbsNamespacedSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassNumberAdmissibleAbsAdmissibleAbsNamespacedSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassNumberAdmissibleAbsAdmissibleAbsNamespacedSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_partition_int](../../../../NumberTheory/ClassNumberAdmissibleAbsAdmissibleAbsNamespacedSourceEdition2.lean/declarations/exists-partition-int.md) | 38 | `result-track:21f47a0cfba001406bd4cd41b2827eb1b22e39455129e1d1ca69304f23954824` |
-| 2 | `def` | [absIsAdmissible](../../../../NumberTheory/ClassNumberAdmissibleAbsAdmissibleAbsNamespacedSourceEdition2.lean/declarations/absisadmissible.md) | 63 | `declaration-track:b99f5879bf29b6a813ea13831161ea60541146a0e0dafd5b2e95ae5807c68c38` |
-| 3 | `instance` | [(anonymous)](../../../../NumberTheory/ClassNumberAdmissibleAbsAdmissibleAbsNamespacedSourceEdition2.lean/declarations/instance.md) | 69 | `declaration-track:6ca1126dc161b4c07e99b65a44d32574eab10eecd4ab484ac486407248efe805` |
+| 1 | `theorem` | [exists_partition_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassNumberAdmissibleAbsAdmissibleAbsNamespacedSourceEdition2.lean/declarations/exists-partition-int.md) | 38 | `result-track:21f47a0cfba001406bd4cd41b2827eb1b22e39455129e1d1ca69304f23954824` |
+| 2 | `def` | [absIsAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassNumberAdmissibleAbsAdmissibleAbsNamespacedSourceEdition2.lean/declarations/absisadmissible.md) | 63 | `declaration-track:b99f5879bf29b6a813ea13831161ea60541146a0e0dafd5b2e95ae5807c68c38` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassNumberAdmissibleAbsAdmissibleAbsNamespacedSourceEdition2.lean/declarations/instance.md) | 69 | `declaration-track:6ca1126dc161b4c07e99b65a44d32574eab10eecd4ab484ac486407248efe805` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

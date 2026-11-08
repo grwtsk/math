@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPrimitiveFiniteConsumer.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPrimitiveFiniteConsumer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPrimitiveFiniteConsumer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPrimitiveFiniteConsumer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualFiniteSecondReadout](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPrimitiveFiniteConsumer.lean/declarations/actualfinitesecondreadout.md) | 20 | `declaration-track:8ecd1fdb586fd567d7afad4ead72da2012f37af85b5b1fcf0fa4364475d09c48` |
-| 2 | `theorem` | [actual_nested_primitive_eq_finite_readout](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPrimitiveFiniteConsumer.lean/declarations/actual-nested-primitive-eq-finite-readout.md) | 31 | `result-track:f530d81d849f4c4460dcaba8c43ca52a1c6430a3102467d1b5eee3202c70a567` |
-| 3 | `theorem` | [actualFiniteSecondReadout_at_first_atom](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPrimitiveFiniteConsumer.lean/declarations/actualfinitesecondreadout-at-first-atom.md) | 40 | `result-track:6b5d67b285e43392b268662f3ba483a97e3da71ebccdde37185836cee8bd1b19` |
-| 4 | `theorem` | [global_second_primitive_budget_iff_finite_readout](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPrimitiveFiniteConsumer.lean/declarations/global-second-primitive-budget-iff-finite-readout.md) | 46 | `result-track:66a14b28d41f4e17b38d7d244a8749cd35c806d984caaad42982a65a05b6fb71` |
+| 1 | `def` | [actualFiniteSecondReadout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPrimitiveFiniteConsumer.lean/declarations/actualfinitesecondreadout.md) | 20 | `declaration-track:8ecd1fdb586fd567d7afad4ead72da2012f37af85b5b1fcf0fa4364475d09c48` |
+| 2 | `theorem` | [actual_nested_primitive_eq_finite_readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPrimitiveFiniteConsumer.lean/declarations/actual-nested-primitive-eq-finite-readout.md) | 31 | `result-track:f530d81d849f4c4460dcaba8c43ca52a1c6430a3102467d1b5eee3202c70a567` |
+| 3 | `theorem` | [actualFiniteSecondReadout_at_first_atom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPrimitiveFiniteConsumer.lean/declarations/actualfinitesecondreadout-at-first-atom.md) | 40 | `result-track:6b5d67b285e43392b268662f3ba483a97e3da71ebccdde37185836cee8bd1b19` |
+| 4 | `theorem` | [global_second_primitive_budget_iff_finite_readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPrimitiveFiniteConsumer.lean/declarations/global-second-primitive-budget-iff-finite-readout.md) | 46 | `result-track:66a14b28d41f4e17b38d7d244a8749cd35c806d984caaad42982a65a05b6fb71` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

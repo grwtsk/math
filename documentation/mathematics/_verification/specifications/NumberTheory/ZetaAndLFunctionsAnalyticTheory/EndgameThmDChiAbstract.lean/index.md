@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndgameThmDChiAbstract.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndgameThmDChiAbstract.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndgameThmDChiAbstract.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndgameThmDChiAbstract.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thmDChi_abstract](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndgameThmDChiAbstract.lean/declarations/thmdchi-abstract.md) | 46 | `result-track:507eb0090f8a91e11140f476a187d27a50a6fe0fbd986d146cd653e5cf3e1b1c` |
-| 2 | `theorem` | [thmDChi_BC_core](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndgameThmDChiAbstract.lean/declarations/thmdchi-bc-core.md) | 210 | `result-track:0c3c189695241290388e35fb6e322cf76098e6d540a7c52d8a76a82f5c9c7aed` |
-| 3 | `theorem` | [thmDChi_simple_abstract](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndgameThmDChiAbstract.lean/declarations/thmdchi-simple-abstract.md) | 385 | `result-track:907b3cf6ae0ddc43b480c8eb61fb04ec5319f6b5fb2eb584da3d13922eb11979` |
-| 4 | `theorem` | [thmDChi_dist_abstract](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndgameThmDChiAbstract.lean/declarations/thmdchi-dist-abstract.md) | 409 | `result-track:f79f6a4f3aea0aa834b1a5f02dd35d68ea27b87e158c437e0bafbb26eda1b984` |
+| 1 | `theorem` | [thmDChi_abstract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndgameThmDChiAbstract.lean/declarations/thmdchi-abstract.md) | 46 | `result-track:507eb0090f8a91e11140f476a187d27a50a6fe0fbd986d146cd653e5cf3e1b1c` |
+| 2 | `theorem` | [thmDChi_BC_core](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndgameThmDChiAbstract.lean/declarations/thmdchi-bc-core.md) | 210 | `result-track:0c3c189695241290388e35fb6e322cf76098e6d540a7c52d8a76a82f5c9c7aed` |
+| 3 | `theorem` | [thmDChi_simple_abstract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndgameThmDChiAbstract.lean/declarations/thmdchi-simple-abstract.md) | 385 | `result-track:907b3cf6ae0ddc43b480c8eb61fb04ec5319f6b5fb2eb584da3d13922eb11979` |
+| 4 | `theorem` | [thmDChi_dist_abstract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndgameThmDChiAbstract.lean/declarations/thmdchi-dist-abstract.md) | 409 | `result-track:f79f6a4f3aea0aa834b1a5f02dd35d68ea27b87e158c437e0bafbb26eda1b984` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/S2RealizationNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/S2RealizationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/S2RealizationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/S2RealizationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [InjectiveS2Realization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/S2RealizationNamespaced.lean/declarations/injectives2realization.md) | 21 | `declaration-track:f16db6ac8e74c577b2219960b39c8d56f8dcea0c01212a54bb68936f436a3c2b` |
-| 2 | `def` | [HasInjectiveS2RealizationWitness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/S2RealizationNamespaced.lean/declarations/hasinjectives2realizationwitness.md) | 28 | `declaration-track:ede3511dc3e18304f3c9ecff5a0ed5b1edf8af0308a846093346b5729a48dec3` |
-| 3 | `structure` | [VertexCompatibleS2Realization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/S2RealizationNamespaced.lean/declarations/vertexcompatibles2realization.md) | 40 | `declaration-track:02f4c93a53ad29caa47a745fae841ad979ff95da2576476074b81b0c174010dc` |
-| 4 | `def` | [HasVertexCompatibleS2RealizationWitness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/S2RealizationNamespaced.lean/declarations/hasvertexcompatibles2realizationwitness.md) | 54 | `declaration-track:addcf7e9730ef1474e396e346d4aae0ac632763c17fe1ae41482b2ecbe598cf3` |
-| 5 | `theorem` | [hasInjectiveS2RealizationWitness_of_vertexCompatible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/S2RealizationNamespaced.lean/declarations/hasinjectives2realizationwitness-of-vertexcompatible.md) | 66 | `result-track:f33b210c8e40a8680765421446b009f69c89a36e4d3ef5ca2df977c0a7a716d0` |
+| 1 | `structure` | [InjectiveS2Realization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/S2RealizationNamespaced.lean/declarations/injectives2realization.md) | 21 | `declaration-track:f16db6ac8e74c577b2219960b39c8d56f8dcea0c01212a54bb68936f436a3c2b` |
+| 2 | `def` | [HasInjectiveS2RealizationWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/S2RealizationNamespaced.lean/declarations/hasinjectives2realizationwitness.md) | 28 | `declaration-track:ede3511dc3e18304f3c9ecff5a0ed5b1edf8af0308a846093346b5729a48dec3` |
+| 3 | `structure` | [VertexCompatibleS2Realization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/S2RealizationNamespaced.lean/declarations/vertexcompatibles2realization.md) | 40 | `declaration-track:02f4c93a53ad29caa47a745fae841ad979ff95da2576476074b81b0c174010dc` |
+| 4 | `def` | [HasVertexCompatibleS2RealizationWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/S2RealizationNamespaced.lean/declarations/hasvertexcompatibles2realizationwitness.md) | 54 | `declaration-track:addcf7e9730ef1474e396e346d4aae0ac632763c17fe1ae41482b2ecbe598cf3` |
+| 5 | `theorem` | [hasInjectiveS2RealizationWitness_of_vertexCompatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/S2RealizationNamespaced.lean/declarations/hasinjectives2realizationwitness-of-vertexcompatible.md) | 66 | `result-track:f33b210c8e40a8680765421446b009f69c89a36e4d3ef5ca2df977c0a7a716d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ShellNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ShellNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,24 +57,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [expandedShape](../../../../Combinatorics/ShellNamespaced.lean/declarations/expandedshape.md) | 29 | `declaration-track:27d7a69d0cc244d4119d84cffe51125799bb0bfc2c9937cc9acf2c407f2c77b8` |
-| 2 | `def` | [centerCell](../../../../Combinatorics/ShellNamespaced.lean/declarations/centercell.md) | 32 | `declaration-track:c5fcaded0cfcd02d33c90cba1e6475277a34c44f4fb41eecf4eecf45d0a519b5` |
-| 3 | `def` | [IsCenterCell](../../../../Combinatorics/ShellNamespaced.lean/declarations/iscentercell.md) | 42 | `declaration-track:13665c6d4db2e1ff884b9ffa1c02fe79fcbf1751d92dde28fbdf83ceaf4756e7` |
-| 4 | `def` | [IsShellCell](../../../../Combinatorics/ShellNamespaced.lean/declarations/isshellcell.md) | 46 | `declaration-track:264ea147b2e51dc89ab13efb2cc26b10e8c00725cf906ba2d7afc2cb95fda3e7` |
-| 5 | `instance` | [instFintypeCenterCell](../../../../Combinatorics/ShellNamespaced.lean/declarations/instfintypecentercell.md) | 49 | `declaration-track:af7ba2ca1732eaea2c8d2ae571875d094226774a0d376767d13e2dc2562fecbc` |
-| 6 | `instance` | [instFintypeShellCell](../../../../Combinatorics/ShellNamespaced.lean/declarations/instfintypeshellcell.md) | 54 | `declaration-track:2110c68bafb544f7648297bacbcb0be4976d3cc88b162deb9a56fffe83f63774` |
-| 7 | `theorem` | [centerCell_isCenter](../../../../Combinatorics/ShellNamespaced.lean/declarations/centercell-iscenter.md) | 59 | `result-track:f50b3bb959d822bd0832853bfc424decdc7a5dd1a63f1bda40d928c8b09cf2a6` |
-| 8 | `theorem` | [shell_or_center](../../../../Combinatorics/ShellNamespaced.lean/declarations/shell-or-center.md) | 71 | `result-track:290af8431a78e6e92d9e80f79302e12cf459cd39420ad9afedbc8ce7b734b879` |
-| 9 | `theorem` | [not_shell_and_center](../../../../Combinatorics/ShellNamespaced.lean/declarations/not-shell-and-center.md) | 77 | `result-track:ae170672ac2c45c4fbdafa7f572446dba4d484ced972b810ae4f5e8d0c702c59` |
-| 10 | `def` | [centerRow](../../../../Combinatorics/ShellNamespaced.lean/declarations/centerrow.md) | 82 | `declaration-track:6b49d089907be964c2794d5cfff1ea787c2041c3853b7ed738bb2cec6dbe7b01` |
-| 11 | `def` | [centerCol](../../../../Combinatorics/ShellNamespaced.lean/declarations/centercol.md) | 90 | `declaration-track:f9d548dcf3412e188bbde353214aa8fc78f812eaa461987ede78c0a2de2f4d79` |
-| 12 | `def` | [centerOf](../../../../Combinatorics/ShellNamespaced.lean/declarations/centerof.md) | 98 | `declaration-track:d4c9b4d851a8b89819768588dc22ae9e51a7f079c8eadd1ef540ec83c72550c8` |
-| 13 | `theorem` | [centerCell_centerOf](../../../../Combinatorics/ShellNamespaced.lean/declarations/centercell-centerof.md) | 104 | `result-track:564e42f9d54bccbb1772dcfb3d75c2395b4f7741a054e822da7bf604c4ab1c53` |
-| 14 | `theorem` | [centerOf_centerCell](../../../../Combinatorics/ShellNamespaced.lean/declarations/centerof-centercell.md) | 114 | `result-track:4a6d1d47a37c050ab193825aaae05b045e22f634b048f3ccf7089976ea5b74c2` |
-| 15 | `def` | [centerSubtypeEquiv](../../../../Combinatorics/ShellNamespaced.lean/declarations/centersubtypeequiv.md) | 118 | `declaration-track:d6319f91665293505e1ce96790e6d547121abefa73691cb8b4e9f9c18c7ba4f3` |
-| 16 | `def` | [shellCardinality](../../../../Combinatorics/ShellNamespaced.lean/declarations/shellcardinality.md) | 126 | `declaration-track:6aee9ae3d1e6647a9bb14466f65e34b7bcadf9c3d50794792cfcab24214976ea` |
-| 17 | `theorem` | [center_cardinality_eq](../../../../Combinatorics/ShellNamespaced.lean/declarations/center-cardinality-eq.md) | 129 | `result-track:1764ab655a85d07ae9ba4950e95fb04e0b238ba8a8930ff08ddeecd8c1dca9da` |
-| 18 | `theorem` | [shell_cardinality_eq](../../../../Combinatorics/ShellNamespaced.lean/declarations/shell-cardinality-eq.md) | 139 | `result-track:eabd623f7e3739afda8d334c05c2c0844b78bfb5b3490c0c4009605077a03827` |
+| 1 | `def` | [expandedShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/declarations/expandedshape.md) | 29 | `declaration-track:27d7a69d0cc244d4119d84cffe51125799bb0bfc2c9937cc9acf2c407f2c77b8` |
+| 2 | `def` | [centerCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/declarations/centercell.md) | 32 | `declaration-track:c5fcaded0cfcd02d33c90cba1e6475277a34c44f4fb41eecf4eecf45d0a519b5` |
+| 3 | `def` | [IsCenterCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/declarations/iscentercell.md) | 42 | `declaration-track:13665c6d4db2e1ff884b9ffa1c02fe79fcbf1751d92dde28fbdf83ceaf4756e7` |
+| 4 | `def` | [IsShellCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/declarations/isshellcell.md) | 46 | `declaration-track:264ea147b2e51dc89ab13efb2cc26b10e8c00725cf906ba2d7afc2cb95fda3e7` |
+| 5 | `instance` | [instFintypeCenterCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/declarations/instfintypecentercell.md) | 49 | `declaration-track:af7ba2ca1732eaea2c8d2ae571875d094226774a0d376767d13e2dc2562fecbc` |
+| 6 | `instance` | [instFintypeShellCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/declarations/instfintypeshellcell.md) | 54 | `declaration-track:2110c68bafb544f7648297bacbcb0be4976d3cc88b162deb9a56fffe83f63774` |
+| 7 | `theorem` | [centerCell_isCenter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/declarations/centercell-iscenter.md) | 59 | `result-track:f50b3bb959d822bd0832853bfc424decdc7a5dd1a63f1bda40d928c8b09cf2a6` |
+| 8 | `theorem` | [shell_or_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/declarations/shell-or-center.md) | 71 | `result-track:290af8431a78e6e92d9e80f79302e12cf459cd39420ad9afedbc8ce7b734b879` |
+| 9 | `theorem` | [not_shell_and_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/declarations/not-shell-and-center.md) | 77 | `result-track:ae170672ac2c45c4fbdafa7f572446dba4d484ced972b810ae4f5e8d0c702c59` |
+| 10 | `def` | [centerRow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/declarations/centerrow.md) | 82 | `declaration-track:6b49d089907be964c2794d5cfff1ea787c2041c3853b7ed738bb2cec6dbe7b01` |
+| 11 | `def` | [centerCol](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/declarations/centercol.md) | 90 | `declaration-track:f9d548dcf3412e188bbde353214aa8fc78f812eaa461987ede78c0a2de2f4d79` |
+| 12 | `def` | [centerOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/declarations/centerof.md) | 98 | `declaration-track:d4c9b4d851a8b89819768588dc22ae9e51a7f079c8eadd1ef540ec83c72550c8` |
+| 13 | `theorem` | [centerCell_centerOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/declarations/centercell-centerof.md) | 104 | `result-track:564e42f9d54bccbb1772dcfb3d75c2395b4f7741a054e822da7bf604c4ab1c53` |
+| 14 | `theorem` | [centerOf_centerCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/declarations/centerof-centercell.md) | 114 | `result-track:4a6d1d47a37c050ab193825aaae05b045e22f634b048f3ccf7089976ea5b74c2` |
+| 15 | `def` | [centerSubtypeEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/declarations/centersubtypeequiv.md) | 118 | `declaration-track:d6319f91665293505e1ce96790e6d547121abefa73691cb8b4e9f9c18c7ba4f3` |
+| 16 | `def` | [shellCardinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/declarations/shellcardinality.md) | 126 | `declaration-track:6aee9ae3d1e6647a9bb14466f65e34b7bcadf9c3d50794792cfcab24214976ea` |
+| 17 | `theorem` | [center_cardinality_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/declarations/center-cardinality-eq.md) | 129 | `result-track:1764ab655a85d07ae9ba4950e95fb04e0b238ba8a8930ff08ddeecd8c1dca9da` |
+| 18 | `theorem` | [shell_cardinality_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShellNamespaced.lean/declarations/shell-cardinality-eq.md) | 139 | `result-track:eabd623f7e3739afda8d334c05c2c0844b78bfb5b3490c0c4009605077a03827` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

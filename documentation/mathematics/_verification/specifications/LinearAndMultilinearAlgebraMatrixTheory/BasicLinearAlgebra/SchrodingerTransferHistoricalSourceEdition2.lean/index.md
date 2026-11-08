@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransferHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransferHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransferHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransferHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -65,12 +65,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [schrodingerTransfer](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransferHistoricalSourceEdition2.lean/declarations/schrodingertransfer.md) | 40 | `declaration-track:47d3f153270244722752228e933b3784ec0562c2ac04ec2441c66347c4c5c5ca` |
-| 2 | `def` | [rawState](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransferHistoricalSourceEdition2.lean/declarations/rawstate.md) | 46 | `declaration-track:6a71c554c52c2186ba5b703d3f629ca9c696ebbd12c339ef403d978d3b76c720` |
-| 3 | `theorem` | [schrodinger_recurrence_iff_transfer](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransferHistoricalSourceEdition2.lean/declarations/schrodinger-recurrence-iff-transfer.md) | 52 | `result-track:7766da6b69d5b6f8e096d333ceddf7ff961afcdf95deaeae772e6445e469ce0b` |
-| 4 | `theorem` | [det_schrodingerTransfer](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransferHistoricalSourceEdition2.lean/declarations/det-schrodingertransfer.md) | 77 | `result-track:f50ea380fc4d9c11aded19d10af094169bbf1df34293cf04a383fc75f00a15bc` |
-| 5 | `def` | [schrodingerSL](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransferHistoricalSourceEdition2.lean/declarations/schrodingersl.md) | 84 | `declaration-track:2df338687c7dc4ccc8a08c2501b45b53355cc1bc85bec3cb6ecb202f151e5674` |
-| 6 | `theorem` | [schrodinger_same_SL_syntax_not_equal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransferHistoricalSourceEdition2.lean/declarations/schrodinger-same-sl-syntax-not-equal.md) | 91 | `result-track:f23bb899254cbaf12cf6651ed415567bac74e80d833fd3fb878fd6de11ae8110` |
+| 1 | `def` | [schrodingerTransfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransferHistoricalSourceEdition2.lean/declarations/schrodingertransfer.md) | 40 | `declaration-track:47d3f153270244722752228e933b3784ec0562c2ac04ec2441c66347c4c5c5ca` |
+| 2 | `def` | [rawState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransferHistoricalSourceEdition2.lean/declarations/rawstate.md) | 46 | `declaration-track:6a71c554c52c2186ba5b703d3f629ca9c696ebbd12c339ef403d978d3b76c720` |
+| 3 | `theorem` | [schrodinger_recurrence_iff_transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransferHistoricalSourceEdition2.lean/declarations/schrodinger-recurrence-iff-transfer.md) | 52 | `result-track:7766da6b69d5b6f8e096d333ceddf7ff961afcdf95deaeae772e6445e469ce0b` |
+| 4 | `theorem` | [det_schrodingerTransfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransferHistoricalSourceEdition2.lean/declarations/det-schrodingertransfer.md) | 77 | `result-track:f50ea380fc4d9c11aded19d10af094169bbf1df34293cf04a383fc75f00a15bc` |
+| 5 | `def` | [schrodingerSL](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransferHistoricalSourceEdition2.lean/declarations/schrodingersl.md) | 84 | `declaration-track:2df338687c7dc4ccc8a08c2501b45b53355cc1bc85bec3cb6ecb202f151e5674` |
+| 6 | `theorem` | [schrodinger_same_SL_syntax_not_equal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransferHistoricalSourceEdition2.lean/declarations/schrodinger-same-sl-syntax-not-equal.md) | 91 | `result-track:f23bb899254cbaf12cf6651ed415567bac74e80d833fd3fb878fd6de11ae8110` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

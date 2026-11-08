@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/index.md) · [Full source](../../../../MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Fourier.SchwartzMoments`](../../../../MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/index.md) — import line 12; pinned internal source present.
-- [`GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms`](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianWindowSeminorms.lean/index.md) — import line 13; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.SchwartzMoments`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/index.md) — import line 12; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianWindowSeminorms.lean/index.md) — import line 13; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [gaussianFourierSourceIndices](../../../../MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/declarations/gaussianfouriersourceindices.md) | 24 | `declaration-track:02678ba650d713bf6604fbbfa083f58630d46e834c520fc936c65b9373c9f5d6` |
-| 2 | `lemma` | [source_zero_mem](../../../../MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/declarations/source-zero-mem.md) | 28 | `result-track:65863467921003fa641107c6afe7dce2d457cdfb1659b5e5e5d2704142931e02` |
-| 3 | `lemma` | [source_power_mem](../../../../MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/declarations/source-power-mem.md) | 32 | `result-track:eff8faab4bcf1ca9234fae28a7973c79404947fdab727c89fc0c91f002b29b16` |
-| 4 | `lemma` | [scale_rpow_cancel](../../../../MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/declarations/scale-rpow-cancel.md) | 37 | `result-track:4913c11d912343816da8575bd53a3b251245fadaa05b6749197384ce25f9b757` |
-| 5 | `theorem` | [gaussianFourier_source_pair](../../../../MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/declarations/gaussianfourier-source-pair.md) | 42 | `result-track:5ba7c90f57e83a5288f3fbac4031f5e7599240f4cd203ebb2423906453fc78a7` |
-| 6 | `def` | [gaussianFourierMoment](../../../../MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/declarations/gaussianfouriermoment.md) | 64 | `declaration-track:3beefc64079ea42d60517ae9323e817dc6ee3b524842d87728797f4081e30c88` |
-| 7 | `theorem` | [gaussianFourierMoment_integrable](../../../../MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/declarations/gaussianfouriermoment-integrable.md) | 68 | `result-track:21c7fd4a0234f0cc69d5c50d77e5875efd3558b868fac17394e827ff83677d6e` |
-| 8 | `lemma` | [gaussianFourierMoment_nonneg](../../../../MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/declarations/gaussianfouriermoment-nonneg.md) | 72 | `result-track:3ad476eef0f87dd505499fe108964d135513f6bd355c0dc47ca41afef1b80713` |
-| 9 | `theorem` | [gaussianFourierMoment_power_bound](../../../../MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/declarations/gaussianfouriermoment-power-bound.md) | 79 | `result-track:8980ce97b911ac31bdadeb3ff234788aa9127716f43ed71bbee40c11dc9df364` |
+| 1 | `def` | [gaussianFourierSourceIndices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/declarations/gaussianfouriersourceindices.md) | 24 | `declaration-track:02678ba650d713bf6604fbbfa083f58630d46e834c520fc936c65b9373c9f5d6` |
+| 2 | `lemma` | [source_zero_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/declarations/source-zero-mem.md) | 28 | `result-track:65863467921003fa641107c6afe7dce2d457cdfb1659b5e5e5d2704142931e02` |
+| 3 | `lemma` | [source_power_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/declarations/source-power-mem.md) | 32 | `result-track:eff8faab4bcf1ca9234fae28a7973c79404947fdab727c89fc0c91f002b29b16` |
+| 4 | `lemma` | [scale_rpow_cancel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/declarations/scale-rpow-cancel.md) | 37 | `result-track:4913c11d912343816da8575bd53a3b251245fadaa05b6749197384ce25f9b757` |
+| 5 | `theorem` | [gaussianFourier_source_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/declarations/gaussianfourier-source-pair.md) | 42 | `result-track:5ba7c90f57e83a5288f3fbac4031f5e7599240f4cd203ebb2423906453fc78a7` |
+| 6 | `def` | [gaussianFourierMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/declarations/gaussianfouriermoment.md) | 64 | `declaration-track:3beefc64079ea42d60517ae9323e817dc6ee3b524842d87728797f4081e30c88` |
+| 7 | `theorem` | [gaussianFourierMoment_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/declarations/gaussianfouriermoment-integrable.md) | 68 | `result-track:21c7fd4a0234f0cc69d5c50d77e5875efd3558b868fac17394e827ff83677d6e` |
+| 8 | `lemma` | [gaussianFourierMoment_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/declarations/gaussianfouriermoment-nonneg.md) | 72 | `result-track:3ad476eef0f87dd505499fe108964d135513f6bd355c0dc47ca41afef1b80713` |
+| 9 | `theorem` | [gaussianFourierMoment_power_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianFourierMoments.lean/declarations/gaussianfouriermoment-power-bound.md) | 79 | `result-track:8980ce97b911ac31bdadeb3ff234788aa9127716f43ed71bbee40c11dc9df364` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

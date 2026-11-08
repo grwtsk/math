@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FinitenessQuotient.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FinitenessQuotient.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessQuotient.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessQuotient.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [module_finite_of_liesOver](../../../../CommutativeAlgebra/FinitenessQuotient.lean/declarations/module-finite-of-liesover.md) | 19 | `declaration-track:8f0970574c73d6cc02d9243ca12ccb4fe33133a6c10a1419a64b91661afbe4e7` |
-| 2 | `example` | [(anonymous)](../../../../CommutativeAlgebra/FinitenessQuotient.lean/declarations/example.md) | 22 | `declaration-track:b7b288b0c3cd12d2c6957e65caf3ad80819c2fbe391bba1918888c1939e2d17c` |
-| 3 | `instance` | [algebra_finiteType_of_liesOver](../../../../CommutativeAlgebra/FinitenessQuotient.lean/declarations/algebra-finitetype-of-liesover.md) | 25 | `declaration-track:9810c6288be027b05ab231edfa0d77e03513d963d52a6b7b6819c256e99f8e0c` |
-| 4 | `instance` | [isNoetherian_of_liesOver](../../../../CommutativeAlgebra/FinitenessQuotient.lean/declarations/isnoetherian-of-liesover.md) | 30 | `declaration-track:4b3e2b3e1ca065801b4457c0470e4d18f6e09b8be728c642de52f28f6b28c774` |
-| 5 | `instance` | [QuotientMapQuotient.isNoetherian](../../../../CommutativeAlgebra/FinitenessQuotient.lean/declarations/quotientmapquotient-isnoetherian.md) | 33 | `declaration-track:efdfae03f777e856b98d323723b78e4d8f280a7467eaa37a593b801da5694a7d` |
+| 1 | `instance` | [module_finite_of_liesOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessQuotient.lean/declarations/module-finite-of-liesover.md) | 19 | `declaration-track:8f0970574c73d6cc02d9243ca12ccb4fe33133a6c10a1419a64b91661afbe4e7` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessQuotient.lean/declarations/example.md) | 22 | `declaration-track:b7b288b0c3cd12d2c6957e65caf3ad80819c2fbe391bba1918888c1939e2d17c` |
+| 3 | `instance` | [algebra_finiteType_of_liesOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessQuotient.lean/declarations/algebra-finitetype-of-liesover.md) | 25 | `declaration-track:9810c6288be027b05ab231edfa0d77e03513d963d52a6b7b6819c256e99f8e0c` |
+| 4 | `instance` | [isNoetherian_of_liesOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessQuotient.lean/declarations/isnoetherian-of-liesover.md) | 30 | `declaration-track:4b3e2b3e1ca065801b4457c0470e4d18f6e09b8be728c642de52f28f6b28c774` |
+| 5 | `instance` | [QuotientMapQuotient.isNoetherian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessQuotient.lean/declarations/quotientmapquotient-isnoetherian.md) | 33 | `declaration-track:efdfae03f777e856b98d323723b78e4d8f280a7467eaa37a593b801da5694a7d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

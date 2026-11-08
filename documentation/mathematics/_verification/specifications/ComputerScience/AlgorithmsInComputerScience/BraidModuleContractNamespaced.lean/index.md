@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ResidueDisposition](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/declarations/residuedisposition.md) | 17 | `declaration-track:a0da00a439b58954a0d3ebdc005dd27255e8fd2945e0877418e0039896f5ca79` |
-| 2 | `inductive` | [RefusalCode](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/declarations/refusalcode.md) | 21 | `declaration-track:9b2456001ff2ad89bcefd5470652a7d9637c221c1c476ac0fbbb4f2d5f03a678` |
-| 3 | `inductive` | [WitnessKind](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/declarations/witnesskind.md) | 34 | `declaration-track:0233eaa44f497ac4e77a2b2c284654f1fff057792127685e646c669b1f7a8af2` |
-| 4 | `structure` | [ResidueSummary](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/declarations/residuesummary.md) | 38 | `declaration-track:ecd56ee9c7f4257c0c2f355ca3d17b5674e757b6239f91a0d62215056b219271` |
-| 5 | `structure` | [ModuleContract](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/declarations/modulecontract.md) | 45 | `declaration-track:3788202a72429f749f3b4ffed502aa56b5d68dbd2c4523e6e6667238176d1152` |
-| 6 | `structure` | [CoordinateFile](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/declarations/coordinatefile.md) | 54 | `declaration-track:469701203877afad009f70214691ed845a149d8ee052cabf748206a476cfb274` |
-| 7 | `def` | [closedResidue](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/declarations/closedresidue.md) | 59 | `declaration-track:5112f4200d16c51e13f52630279a6d458d954a1a9f5aedce5aabed9b62b6ebd7` |
-| 8 | `def` | [defaultRefusals](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/declarations/defaultrefusals.md) | 65 | `declaration-track:3ed1cda0a63043f29b2d3793bfb7c7260300e7414c1440cafef2c63cd99aa44c` |
-| 9 | `def` | [defaultModuleContract](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/declarations/defaultmodulecontract.md) | 68 | `declaration-track:ab58ad849bdd35bb8b837a8a01c50b5bc9b22bee37f1bdefe8062cf331ed534d` |
+| 1 | `inductive` | [ResidueDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/declarations/residuedisposition.md) | 17 | `declaration-track:a0da00a439b58954a0d3ebdc005dd27255e8fd2945e0877418e0039896f5ca79` |
+| 2 | `inductive` | [RefusalCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/declarations/refusalcode.md) | 21 | `declaration-track:9b2456001ff2ad89bcefd5470652a7d9637c221c1c476ac0fbbb4f2d5f03a678` |
+| 3 | `inductive` | [WitnessKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/declarations/witnesskind.md) | 34 | `declaration-track:0233eaa44f497ac4e77a2b2c284654f1fff057792127685e646c669b1f7a8af2` |
+| 4 | `structure` | [ResidueSummary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/declarations/residuesummary.md) | 38 | `declaration-track:ecd56ee9c7f4257c0c2f355ca3d17b5674e757b6239f91a0d62215056b219271` |
+| 5 | `structure` | [ModuleContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/declarations/modulecontract.md) | 45 | `declaration-track:3788202a72429f749f3b4ffed502aa56b5d68dbd2c4523e6e6667238176d1152` |
+| 6 | `structure` | [CoordinateFile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/declarations/coordinatefile.md) | 54 | `declaration-track:469701203877afad009f70214691ed845a149d8ee052cabf748206a476cfb274` |
+| 7 | `def` | [closedResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/declarations/closedresidue.md) | 59 | `declaration-track:5112f4200d16c51e13f52630279a6d458d954a1a9f5aedce5aabed9b62b6ebd7` |
+| 8 | `def` | [defaultRefusals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/declarations/defaultrefusals.md) | 65 | `declaration-track:3ed1cda0a63043f29b2d3793bfb7c7260300e7414c1440cafef2c63cd99aa44c` |
+| 9 | `def` | [defaultModuleContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidModuleContractNamespaced.lean/declarations/defaultmodulecontract.md) | 68 | `declaration-track:ab58ad849bdd35bb8b837a8a01c50b5bc9b22bee37f1bdefe8062cf331ed534d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

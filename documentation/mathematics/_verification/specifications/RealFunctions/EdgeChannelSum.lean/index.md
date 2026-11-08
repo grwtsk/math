@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/EdgeChannelSum.lean/index.md) · [Full source](../../../../RealFunctions/EdgeChannelSum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EdgeChannelSum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EdgeChannelSum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [edgeChannelEnergy](../../../../RealFunctions/EdgeChannelSum.lean/declarations/edgechannelenergy.md) | 42 | `declaration-track:0770d0b41a5b078c41b3e27d457efefea02ea09b1513610b59e46808a1a23da5` |
-| 2 | `theorem` | [edgeChannelEnergy_nonneg](../../../../RealFunctions/EdgeChannelSum.lean/declarations/edgechannelenergy-nonneg.md) | 48 | `result-track:ba0f190c54c5f991dd4f61c39b98e73d542824241b165d99450feb7e4a91f5ea` |
+| 1 | `def` | [edgeChannelEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EdgeChannelSum.lean/declarations/edgechannelenergy.md) | 42 | `declaration-track:0770d0b41a5b078c41b3e27d457efefea02ea09b1513610b59e46808a1a23da5` |
+| 2 | `theorem` | [edgeChannelEnergy_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EdgeChannelSum.lean/declarations/edgechannelenergy-nonneg.md) | 48 | `result-track:ba0f190c54c5f991dd4f61c39b98e73d542824241b165d99450feb7e4a91f5ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

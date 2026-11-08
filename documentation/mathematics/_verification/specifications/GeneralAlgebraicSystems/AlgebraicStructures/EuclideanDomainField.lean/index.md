@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainField.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainField.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainField.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainField.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainField.lean/declarations/instance.md) | 20 | `declaration-track:578b503d714f26e10774caf71a2aeb7aaa79da8318129f038737c68fe677994d` |
-| 2 | `theorem` | [mod_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainField.lean/declarations/mod-eq.md) | 33 | `result-track:3b59812e649841fca61ed338a3d3c63b6222861d20142086aca5d159cd892512` |
-| 3 | `theorem` | [gcd_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainField.lean/declarations/gcd-eq.md) | 36 | `result-track:b7a2f230d34e95943cf3a1f3c2bc3b22a446ddd7849a5b798fb6b697ef9a4529` |
-| 4 | `theorem` | [gcd_zero_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainField.lean/declarations/gcd-zero-eq.md) | 41 | `result-track:5e752d16bb997ee02c3a9ce07445599a8e1cd9a1a18da35b98018362336e22da` |
-| 5 | `theorem` | [gcd_eq_of_ne](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainField.lean/declarations/gcd-eq-of-ne.md) | 45 | `result-track:cfef02a575e6f3bfb30e12014a31b61fbf8898a43e550d140b96604f867333c4` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainField.lean/declarations/instance.md) | 20 | `declaration-track:578b503d714f26e10774caf71a2aeb7aaa79da8318129f038737c68fe677994d` |
+| 2 | `theorem` | [mod_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainField.lean/declarations/mod-eq.md) | 33 | `result-track:3b59812e649841fca61ed338a3d3c63b6222861d20142086aca5d159cd892512` |
+| 3 | `theorem` | [gcd_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainField.lean/declarations/gcd-eq.md) | 36 | `result-track:b7a2f230d34e95943cf3a1f3c2bc3b22a446ddd7849a5b798fb6b697ef9a4529` |
+| 4 | `theorem` | [gcd_zero_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainField.lean/declarations/gcd-zero-eq.md) | 41 | `result-track:5e752d16bb997ee02c3a9ce07445599a8e1cd9a1a18da35b98018362336e22da` |
+| 5 | `theorem` | [gcd_eq_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainField.lean/declarations/gcd-eq-of-ne.md) | 45 | `result-track:cfef02a575e6f3bfb30e12014a31b61fbf8898a43e550d140b96604f867333c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

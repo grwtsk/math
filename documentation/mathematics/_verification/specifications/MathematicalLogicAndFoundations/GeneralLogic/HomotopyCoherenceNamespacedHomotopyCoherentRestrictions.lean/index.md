@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceNamespacedHomotopyCoherentRestrictions.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceNamespacedHomotopyCoherentRestrictions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceNamespacedHomotopyCoherentRestrictions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceNamespacedHomotopyCoherentRestrictions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HomotopyCoherentRestrictions](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceNamespacedHomotopyCoherentRestrictions.lean/declarations/homotopycoherentrestrictions.md) | 26 | `declaration-track:f3abcd32fdcb6dbca84594c524d0692a4567f1ad535619e6487357b964224bea` |
-| 2 | `theorem` | [homotopy_restrictions_identity_coherent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceNamespacedHomotopyCoherentRestrictions.lean/declarations/homotopy-restrictions-identity-coherent.md) | 39 | `result-track:be5112a1194cbada2d51d560102a8b03b972a4a80adaba9c8dca2d7fd39a58f6` |
-| 3 | `theorem` | [homotopy_restrictions_composition_coherent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceNamespacedHomotopyCoherentRestrictions.lean/declarations/homotopy-restrictions-composition-coherent.md) | 45 | `result-track:9f0e1328e73429d288100e12ca401bff3ed7a2f00cbd996a4fe5d4251f091d4f` |
-| 4 | `theorem` | [homotopy_restrictions_higher_coherent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceNamespacedHomotopyCoherentRestrictions.lean/declarations/homotopy-restrictions-higher-coherent.md) | 51 | `result-track:caa0f44b362605ad84a1d2895157e056905ab556871fee6aba129f20e0d7fbf8` |
+| 1 | `structure` | [HomotopyCoherentRestrictions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceNamespacedHomotopyCoherentRestrictions.lean/declarations/homotopycoherentrestrictions.md) | 26 | `declaration-track:f3abcd32fdcb6dbca84594c524d0692a4567f1ad535619e6487357b964224bea` |
+| 2 | `theorem` | [homotopy_restrictions_identity_coherent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceNamespacedHomotopyCoherentRestrictions.lean/declarations/homotopy-restrictions-identity-coherent.md) | 39 | `result-track:be5112a1194cbada2d51d560102a8b03b972a4a80adaba9c8dca2d7fd39a58f6` |
+| 3 | `theorem` | [homotopy_restrictions_composition_coherent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceNamespacedHomotopyCoherentRestrictions.lean/declarations/homotopy-restrictions-composition-coherent.md) | 45 | `result-track:9f0e1328e73429d288100e12ca401bff3ed7a2f00cbd996a4fe5d4251f091d4f` |
+| 4 | `theorem` | [homotopy_restrictions_higher_coherent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HomotopyCoherenceNamespacedHomotopyCoherentRestrictions.lean/declarations/homotopy-restrictions-higher-coherent.md) | 51 | `result-track:caa0f44b362605ad84a1d2895157e056905ab556871fee6aba129f20e0d7fbf8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

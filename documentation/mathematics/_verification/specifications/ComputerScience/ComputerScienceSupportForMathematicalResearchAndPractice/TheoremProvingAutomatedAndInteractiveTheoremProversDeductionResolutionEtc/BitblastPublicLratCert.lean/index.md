@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BitblastPublicLratCert.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BitblastPublicLratCert.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BitblastPublicLratCert.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BitblastPublicLratCert.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [LratCert.toReflectionProof](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BitblastPublicLratCert.lean/declarations/lratcert-toreflectionproof.md) | 26 | `declaration-track:046338c2b4fcd55172a65103c404b3cef70cd54b152270083796f9fe22ccce35` |
-| 2 | `def` | [lratBitblaster](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BitblastPublicLratCert.lean/declarations/lratbitblaster.md) | 63 | `declaration-track:df72504ae056be7e6ee235c541b97840965d214b6c91af66534ab9751b48a210` |
-| 3 | `def` | [lratChecker](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BitblastPublicLratCert.lean/declarations/lratchecker.md) | 111 | `declaration-track:859672a7628c51bfbfa4b5436c00f987bb47ad53d0b108ef0094d67a1f0b99a5` |
+| 1 | `def` | [LratCert.toReflectionProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BitblastPublicLratCert.lean/declarations/lratcert-toreflectionproof.md) | 26 | `declaration-track:046338c2b4fcd55172a65103c404b3cef70cd54b152270083796f9fe22ccce35` |
+| 2 | `def` | [lratBitblaster](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BitblastPublicLratCert.lean/declarations/lratbitblaster.md) | 63 | `declaration-track:df72504ae056be7e6ee235c541b97840965d214b6c91af66534ab9751b48a210` |
+| 3 | `def` | [lratChecker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BitblastPublicLratCert.lean/declarations/lratchecker.md) | 111 | `declaration-track:859672a7628c51bfbfa4b5436c00f987bb47ad53d0b108ef0094d67a1f0b99a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

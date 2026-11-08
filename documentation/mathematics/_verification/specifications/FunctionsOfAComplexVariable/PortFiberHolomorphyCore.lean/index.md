@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphyCore.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphyCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphyCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphyCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,49 +46,49 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.PortFiber.Basic`](../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.Topology.PortFiber.Path`](../../../../MathematicalLogicAndFoundations/GeneralLogic/Path.lean/index.md) — import line 8; pinned internal source present.
-- [`GRWTSK.Topology.PortFiber.MultiCertificate`](../../../../GeneralTopology/MultiCertificate.lean/index.md) — import line 9; pinned internal source present.
-- [`GRWTSK.Topology.PortFiber.Certified`](../../../../GeneralTopology/Certified.lean/index.md) — import line 10; pinned internal source present.
-- [`GRWTSK.Topology.PortFiber.Gluing`](../../../../MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/index.md) — import line 11; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.PortFiberHolomorphy`](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/index.md) — import line 12; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicRestriction`](../../../../GeneralTopology/HolomorphicRestriction.lean/index.md) — import line 13; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicSectionRing`](../../../../GeneralTopology/HolomorphicSectionRing.lean/index.md) — import line 14; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicEvaluationSpectrum`](../../../../FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/index.md) — import line 15; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicEvaluationTopology`](../../../../GeneralTopology/HolomorphicEvaluationTopology.lean/index.md) — import line 16; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicRestrictionGluing`](../../../../FunctionsOfAComplexVariable/HolomorphicRestrictionGluing.lean/index.md) — import line 17; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicOpenCoverGluing`](../../../../FunctionsOfAComplexVariable/HolomorphicOpenCoverGluing.lean/index.md) — import line 18; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicIndexedCoverGluing`](../../../../FunctionsOfAComplexVariable/HolomorphicIndexedCoverGluing.lean/index.md) — import line 19; pinned internal source present.
-- [`GRWTSK.Topology.Algebra.PortFiberRing`](../../../../GeneralTopology/PortFiberRing.lean/index.md) — import line 20; pinned internal source present.
-- [`GRWTSK.Topology.Algebra.PrimeSpectrumPort`](../../../../CommutativeAlgebra/PrimeSpectrumPort.lean/index.md) — import line 21; pinned internal source present.
-- [`GRWTSK.AlgebraicGeometry.AffineSpecPort`](../../../../Geometry/AffineSpecPort.lean/index.md) — import line 22; pinned internal source present.
-- [`GRWTSK.AlgebraicGeometry.AffineStructureSheafPort`](../../../../AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/index.md) — import line 23; pinned internal source present.
-- [`GRWTSK.AlgebraicGeometry.AnalyticAffineBridge`](../../../../Geometry/AnalyticAffineBridge.lean/index.md) — import line 24; pinned internal source present.
-- [`GRWTSK.AlgebraicGeometry.AnalyticAffineTopology`](../../../../GeneralTopology/AnalyticAffineTopology.lean/index.md) — import line 25; pinned internal source present.
-- [`GRWTSK.AlgebraicGeometry.AnalyticAffineGluing`](../../../../GeneralTopology/AnalyticAffineGluing.lean/index.md) — import line 26; pinned internal source present.
-- [`GRWTSK.AlgebraicGeometry.AnalyticAffineIndexedGluing`](../../../../GeneralTopology/AnalyticAffineIndexedGluing.lean/index.md) — import line 27; pinned internal source present.
-- [`GRWTSK.Logic.SimultaneousProofArchitecture`](../../../../MathematicalLogicAndFoundations/GeneralLogic/SimultaneousProofArchitecture.lean/index.md) — import line 28; pinned internal source present.
-- [`GRWTSK.Logic.SimultaneousProofPortfolio`](../../../../MathematicalLogicAndFoundations/GeneralLogic/SimultaneousProofPortfolio.lean/index.md) — import line 29; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PortFiberArchitecture`](../../../../AssociativeRingsAndAlgebras/PortFiberArchitecture.lean/index.md) — import line 30; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PortFiberLocalToGlobal`](../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/index.md) — import line 31; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PortFiberTheoremPortfolio`](../../../../AssociativeRingsAndAlgebras/PortFiberTheoremPortfolio.lean/index.md) — import line 32; pinned internal source present.
-- [`GRWTSK.Interfaces.PortFiberSimultaneousLedger`](../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberSimultaneousLedger.lean/index.md) — import line 33; pinned internal source present.
-- [`GRWTSK.Interfaces.PortFiberPortfolioLedger`](../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/index.md) — import line 34; pinned internal source present.
-- [`GRWTSK.Interfaces.PortFiberEvaluationTopology`](../../../../GeneralTopology/PortFiberEvaluationTopology.lean/index.md) — import line 35; pinned internal source present.
-- [`GRWTSK.Interfaces.PortFiberOpenCoverDescent`](../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/index.md) — import line 36; pinned internal source present.
-- [`GRWTSK.Interfaces.PortFiberIndexedCoverDescent`](../../../../Geometry/PortFiberIndexedCoverDescent.lean/index.md) — import line 37; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicLineCocycle`](../../../../GeneralTopology/HolomorphicLineCocycle.lean/index.md) — import line 39; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicLineSections`](../../../../GeneralTopology/HolomorphicLineSections.lean/index.md) — import line 40; pinned internal source present.
-- [`GRWTSK.Analysis.Operator.HolomorphicLinePort`](../../../../GeneralTopology/HolomorphicLinePort.lean/index.md) — import line 41; pinned internal source present.
-- [`GRWTSK.Interfaces.PortFiberLineBundle`](../../../../GeneralTopology/PortFiberLineBundle.lean/index.md) — import line 42; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicLineGauge`](../../../../GeneralTopology/HolomorphicLineGauge.lean/index.md) — import line 44; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicLineGaugeTopology`](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/index.md) — import line 45; pinned internal source present.
-- [`GRWTSK.Analysis.Operator.HolomorphicLineGaugePort`](../../../../OperatorTheory/HolomorphicLineGaugePort.lean/index.md) — import line 46; pinned internal source present.
-- [`GRWTSK.Interfaces.PortFiberGaugeTransport`](../../../../GeneralTopology/PortFiberGaugeTransport.lean/index.md) — import line 47; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicLineMetric`](../../../../GeneralTopology/HolomorphicLineMetric.lean/index.md) — import line 49; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicLineGaugeMetric`](../../../../FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/index.md) — import line 50; pinned internal source present.
-- [`GRWTSK.Analysis.Operator.HolomorphicLineAdjoint`](../../../../OperatorTheory/HolomorphicLineAdjoint.lean/index.md) — import line 51; pinned internal source present.
-- [`GRWTSK.Interfaces.PortFiberMetricAdjoint`](../../../../GeneralTopology/PortFiberMetricAdjoint.lean/index.md) — import line 52; pinned internal source present.
+- [`GRWTSK.Topology.PortFiber.Basic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Topology.PortFiber.Path`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Path.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.PortFiber.MultiCertificate`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MultiCertificate.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.Topology.PortFiber.Certified`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Certified.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.Topology.PortFiber.Gluing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.PortFiberHolomorphy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/index.md) — import line 12; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicRestriction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicRestriction.lean/index.md) — import line 13; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicSectionRing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/index.md) — import line 14; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicEvaluationSpectrum`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/index.md) — import line 15; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicEvaluationTopology`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicEvaluationTopology.lean/index.md) — import line 16; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicRestrictionGluing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicRestrictionGluing.lean/index.md) — import line 17; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicOpenCoverGluing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicOpenCoverGluing.lean/index.md) — import line 18; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicIndexedCoverGluing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicIndexedCoverGluing.lean/index.md) — import line 19; pinned internal source present.
+- [`GRWTSK.Topology.Algebra.PortFiberRing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberRing.lean/index.md) — import line 20; pinned internal source present.
+- [`GRWTSK.Topology.Algebra.PrimeSpectrumPort`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeSpectrumPort.lean/index.md) — import line 21; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.AffineSpecPort`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/index.md) — import line 22; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.AffineStructureSheafPort`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/index.md) — import line 23; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.AnalyticAffineBridge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AnalyticAffineBridge.lean/index.md) — import line 24; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.AnalyticAffineTopology`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/index.md) — import line 25; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.AnalyticAffineGluing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineGluing.lean/index.md) — import line 26; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.AnalyticAffineIndexedGluing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineIndexedGluing.lean/index.md) — import line 27; pinned internal source present.
+- [`GRWTSK.Logic.SimultaneousProofArchitecture`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SimultaneousProofArchitecture.lean/index.md) — import line 28; pinned internal source present.
+- [`GRWTSK.Logic.SimultaneousProofPortfolio`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SimultaneousProofPortfolio.lean/index.md) — import line 29; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PortFiberArchitecture`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/PortFiberArchitecture.lean/index.md) — import line 30; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PortFiberLocalToGlobal`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberLocalToGlobal.lean/index.md) — import line 31; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PortFiberTheoremPortfolio`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/PortFiberTheoremPortfolio.lean/index.md) — import line 32; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberSimultaneousLedger`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberSimultaneousLedger.lean/index.md) — import line 33; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberPortfolioLedger`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/index.md) — import line 34; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberEvaluationTopology`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberEvaluationTopology.lean/index.md) — import line 35; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberOpenCoverDescent`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberOpenCoverDescent.lean/index.md) — import line 36; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberIndexedCoverDescent`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PortFiberIndexedCoverDescent.lean/index.md) — import line 37; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicLineCocycle`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineCocycle.lean/index.md) — import line 39; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicLineSections`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/index.md) — import line 40; pinned internal source present.
+- [`GRWTSK.Analysis.Operator.HolomorphicLinePort`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/index.md) — import line 41; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberLineBundle`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberLineBundle.lean/index.md) — import line 42; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicLineGauge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/index.md) — import line 44; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicLineGaugeTopology`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/index.md) — import line 45; pinned internal source present.
+- [`GRWTSK.Analysis.Operator.HolomorphicLineGaugePort`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineGaugePort.lean/index.md) — import line 46; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberGaugeTransport`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberGaugeTransport.lean/index.md) — import line 47; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicLineMetric`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineMetric.lean/index.md) — import line 49; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicLineGaugeMetric`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/index.md) — import line 50; pinned internal source present.
+- [`GRWTSK.Analysis.Operator.HolomorphicLineAdjoint`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineAdjoint.lean/index.md) — import line 51; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberMetricAdjoint`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberMetricAdjoint.lean/index.md) — import line 52; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -99,9 +99,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [schemaVersion](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphyCore.lean/declarations/schemaversion.md) | 57 | `declaration-track:0b787cbd952d1b4c5332dc580110b161be494700810841dbb1ef3b9d50844efe` |
-| 2 | `inductive` | [VerificationState](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphyCore.lean/declarations/verificationstate.md) | 60 | `declaration-track:71b351a886a2d40c603fdc0034cb96a28548a08974faa6619dc6a5b74a3743d2` |
-| 3 | `def` | [currentState](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphyCore.lean/declarations/currentstate.md) | 66 | `declaration-track:7129fabd77c04f80968e545ad7c6b79c058f401b01bccc53a97522e12f19b659` |
+| 1 | `def` | [schemaVersion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphyCore.lean/declarations/schemaversion.md) | 57 | `declaration-track:0b787cbd952d1b4c5332dc580110b161be494700810841dbb1ef3b9d50844efe` |
+| 2 | `inductive` | [VerificationState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphyCore.lean/declarations/verificationstate.md) | 60 | `declaration-track:71b351a886a2d40c603fdc0034cb96a28548a08974faa6619dc6a5b74a3743d2` |
+| 3 | `def` | [currentState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphyCore.lean/declarations/currentstate.md) | 66 | `declaration-track:7129fabd77c04f80968e545ad7c6b79c058f401b01bccc53a97522e12f19b659` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

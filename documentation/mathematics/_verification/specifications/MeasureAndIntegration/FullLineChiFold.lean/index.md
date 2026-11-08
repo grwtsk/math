@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FullLineChiFold.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FullLineChiFold.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiFold.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiFold.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FlineChi](../../../../MeasureAndIntegration/FullLineChiFold.lean/declarations/flinechi.md) | 34 | `declaration-track:33f69b84b3bd8e0288a60905f13c6fbf9bf42175f9c85b7d22cd24dc02beb70b` |
-| 2 | `lemma` | [continuous_logDeriv_completedLSym_line](../../../../MeasureAndIntegration/FullLineChiFold.lean/declarations/continuous-logderiv-completedlsym-line.md) | 41 | `result-track:1fb1363be6e4ff133131408a096803f64a19666a10a90bb241aca40349ccf30f` |
-| 3 | `theorem` | [verticals_eq_chi](../../../../MeasureAndIntegration/FullLineChiFold.lean/declarations/verticals-eq-chi.md) | 57 | `result-track:2f0bf705e48b77eda19159907c3ebfa4b07b9d7d30d6a546b5775163d436f668` |
-| 4 | `theorem` | [zero_sum_limit_chi](../../../../MeasureAndIntegration/FullLineChiFold.lean/declarations/zero-sum-limit-chi.md) | 110 | `result-track:9095d44549cc285919902657427653b445194d97ec75959573e9fe008a6c36d7` |
+| 1 | `def` | [FlineChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiFold.lean/declarations/flinechi.md) | 34 | `declaration-track:33f69b84b3bd8e0288a60905f13c6fbf9bf42175f9c85b7d22cd24dc02beb70b` |
+| 2 | `lemma` | [continuous_logDeriv_completedLSym_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiFold.lean/declarations/continuous-logderiv-completedlsym-line.md) | 41 | `result-track:1fb1363be6e4ff133131408a096803f64a19666a10a90bb241aca40349ccf30f` |
+| 3 | `theorem` | [verticals_eq_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiFold.lean/declarations/verticals-eq-chi.md) | 57 | `result-track:2f0bf705e48b77eda19159907c3ebfa4b07b9d7d30d6a546b5775163d436f668` |
+| 4 | `theorem` | [zero_sum_limit_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiFold.lean/declarations/zero-sum-limit-chi.md) | 110 | `result-track:9095d44549cc285919902657427653b445194d97ec75959573e9fe008a6c36d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermSubgroup.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermSubgroup.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermSubgroup.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermSubgroup.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [sumCongrHom.decidableMemRange](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermSubgroup.lean/declarations/sumcongrhom-decidablememrange.md) | 31 | `declaration-track:01a8d836d5cf8c3a12ff60eb26e96cf1dffc5f9ea8be526a1af4150cf8c26c47` |
-| 2 | `theorem` | [sumCongrHom.card_range](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermSubgroup.lean/declarations/sumcongrhom-card-range.md) | 35 | `result-track:9cfe71224e87ff31052ee060e82a460d90c0e5ccf3e968f0f09e520441b95226` |
-| 3 | `instance` | [sigmaCongrRightHom.decidableMemRange](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermSubgroup.lean/declarations/sigmacongrrighthom-decidablememrange.md) | 40 | `declaration-track:352a81001a1de73b723110caaa1e674cead72c55d014f6248cdb64d5aad9f7dd` |
-| 4 | `theorem` | [sigmaCongrRightHom.card_range](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermSubgroup.lean/declarations/sigmacongrrighthom-card-range.md) | 45 | `result-track:74c47c7eee51b164e4f2e0177e5ff77bb317c2c62e25390aee98c7f53a795a0a` |
-| 5 | `instance` | [subtypeCongrHom.decidableMemRange](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermSubgroup.lean/declarations/subtypecongrhom-decidablememrange.md) | 50 | `declaration-track:3dabcb8ee402e4b7f37a0503bb1f54c16f5ea82e5446be23916da9ab6bd6e4a4` |
-| 6 | `theorem` | [subtypeCongrHom.card_range](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermSubgroup.lean/declarations/subtypecongrhom-card-range.md) | 55 | `result-track:246022cbe12e0cf23a4f89c6c8c7641fff38e41f42df5e2fff451803f01dd359` |
-| 7 | `def` | [subgroupOfMulAction](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/PermSubgroup.lean/declarations/subgroupofmulaction.md) | 64 | `declaration-track:95af4e9a84a8d96f45087be5135d1c8acb9c43de17d4eaf622ec67d9a1500035` |
+| 1 | `instance` | [sumCongrHom.decidableMemRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermSubgroup.lean/declarations/sumcongrhom-decidablememrange.md) | 31 | `declaration-track:01a8d836d5cf8c3a12ff60eb26e96cf1dffc5f9ea8be526a1af4150cf8c26c47` |
+| 2 | `theorem` | [sumCongrHom.card_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermSubgroup.lean/declarations/sumcongrhom-card-range.md) | 35 | `result-track:9cfe71224e87ff31052ee060e82a460d90c0e5ccf3e968f0f09e520441b95226` |
+| 3 | `instance` | [sigmaCongrRightHom.decidableMemRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermSubgroup.lean/declarations/sigmacongrrighthom-decidablememrange.md) | 40 | `declaration-track:352a81001a1de73b723110caaa1e674cead72c55d014f6248cdb64d5aad9f7dd` |
+| 4 | `theorem` | [sigmaCongrRightHom.card_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermSubgroup.lean/declarations/sigmacongrrighthom-card-range.md) | 45 | `result-track:74c47c7eee51b164e4f2e0177e5ff77bb317c2c62e25390aee98c7f53a795a0a` |
+| 5 | `instance` | [subtypeCongrHom.decidableMemRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermSubgroup.lean/declarations/subtypecongrhom-decidablememrange.md) | 50 | `declaration-track:3dabcb8ee402e4b7f37a0503bb1f54c16f5ea82e5446be23916da9ab6bd6e4a4` |
+| 6 | `theorem` | [subtypeCongrHom.card_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermSubgroup.lean/declarations/subtypecongrhom-card-range.md) | 55 | `result-track:246022cbe12e0cf23a4f89c6c8c7641fff38e41f42df5e2fff451803f01dd359` |
+| 7 | `def` | [subgroupOfMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/PermSubgroup.lean/declarations/subgroupofmulaction.md) | 64 | `declaration-track:95af4e9a84a8d96f45087be5135d1c8acb9c43de17d4eaf622ec67d9a1500035` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

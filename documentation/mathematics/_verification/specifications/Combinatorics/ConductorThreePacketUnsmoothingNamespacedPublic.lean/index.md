@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ConductorThreePacketUnsmoothingNamespacedPublic.lean/index.md) · [Full source](../../../../Combinatorics/ConductorThreePacketUnsmoothingNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreePacketUnsmoothingNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreePacketUnsmoothingNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [DiscretePacketWeightCost](../../../../Combinatorics/ConductorThreePacketUnsmoothingNamespacedPublic.lean/declarations/discretepacketweightcost.md) | 45 | `declaration-track:f789574bc6a4fd70f08cca1e20c02d21332fd51925f1a23f8c9fce36f22d85e6` |
-| 2 | `def` | [conductorThreeDiscreteWeightedSum](../../../../Combinatorics/ConductorThreePacketUnsmoothingNamespacedPublic.lean/declarations/conductorthreediscreteweightedsum.md) | 51 | `declaration-track:cf1cc45c9ab3f554c3cd985645eccf3b8e66d497f1481e4f03c54f9a836e4a07` |
-| 3 | `def` | [ConductorThreeBVPacketEstimate](../../../../Combinatorics/ConductorThreePacketUnsmoothingNamespacedPublic.lean/declarations/conductorthreebvpacketestimate.md) | 61 | `declaration-track:b4fdd716e65b0994b5ba875f699b9ee9eb0a20408df55d1ae14da48c84002377` |
-| 4 | `def` | [conductorThreePrefixWeight](../../../../Combinatorics/ConductorThreePacketUnsmoothingNamespacedPublic.lean/declarations/conductorthreeprefixweight.md) | 71 | `declaration-track:acfecfd3f76887f12669e7db7558c35b3c1bfb6ac5dfc7833409df3014b9cccc` |
-| 5 | `theorem` | [conductorThreePrefixWeight_cost](../../../../Combinatorics/ConductorThreePacketUnsmoothingNamespacedPublic.lean/declarations/conductorthreeprefixweight-cost.md) | 77 | `result-track:184db1b7033d497a4447a4f25aeaf8e2da885ebbe6d366fdb000dd9f699867f8` |
-| 6 | `theorem` | [conductorThreeDiscreteWeightedSum_prefix](../../../../Combinatorics/ConductorThreePacketUnsmoothingNamespacedPublic.lean/declarations/conductorthreediscreteweightedsum-prefix.md) | 116 | `result-track:90f4266cf1a5c8f322105f82b102bc4ad71f8f0d68cb333848a3d58838b7dfa0` |
-| 7 | `theorem` | [bvPacketEstimate_implies_halfPlusEpsilon](../../../../Combinatorics/ConductorThreePacketUnsmoothingNamespacedPublic.lean/declarations/bvpacketestimate-implies-halfplusepsilon.md) | 148 | `result-track:387b19a3717edeab911d88c24a3f75d232cc13e0dafe052343518cfe683cec13` |
+| 1 | `def` | [DiscretePacketWeightCost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreePacketUnsmoothingNamespacedPublic.lean/declarations/discretepacketweightcost.md) | 45 | `declaration-track:f789574bc6a4fd70f08cca1e20c02d21332fd51925f1a23f8c9fce36f22d85e6` |
+| 2 | `def` | [conductorThreeDiscreteWeightedSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreePacketUnsmoothingNamespacedPublic.lean/declarations/conductorthreediscreteweightedsum.md) | 51 | `declaration-track:cf1cc45c9ab3f554c3cd985645eccf3b8e66d497f1481e4f03c54f9a836e4a07` |
+| 3 | `def` | [ConductorThreeBVPacketEstimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreePacketUnsmoothingNamespacedPublic.lean/declarations/conductorthreebvpacketestimate.md) | 61 | `declaration-track:b4fdd716e65b0994b5ba875f699b9ee9eb0a20408df55d1ae14da48c84002377` |
+| 4 | `def` | [conductorThreePrefixWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreePacketUnsmoothingNamespacedPublic.lean/declarations/conductorthreeprefixweight.md) | 71 | `declaration-track:acfecfd3f76887f12669e7db7558c35b3c1bfb6ac5dfc7833409df3014b9cccc` |
+| 5 | `theorem` | [conductorThreePrefixWeight_cost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreePacketUnsmoothingNamespacedPublic.lean/declarations/conductorthreeprefixweight-cost.md) | 77 | `result-track:184db1b7033d497a4447a4f25aeaf8e2da885ebbe6d366fdb000dd9f699867f8` |
+| 6 | `theorem` | [conductorThreeDiscreteWeightedSum_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreePacketUnsmoothingNamespacedPublic.lean/declarations/conductorthreediscreteweightedsum-prefix.md) | 116 | `result-track:90f4266cf1a5c8f322105f82b102bc4ad71f8f0d68cb333848a3d58838b7dfa0` |
+| 7 | `theorem` | [bvPacketEstimate_implies_halfPlusEpsilon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConductorThreePacketUnsmoothingNamespacedPublic.lean/declarations/bvpacketestimate-implies-halfplusepsilon.md) | 148 | `result-track:387b19a3717edeab911d88c24a3f75d232cc13e0dafe052343518cfe683cec13` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

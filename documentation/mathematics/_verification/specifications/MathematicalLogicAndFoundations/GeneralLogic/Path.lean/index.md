@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Path.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Path.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Path.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Path.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.PortFiber.Basic`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Topology.PortFiber.Basic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ComposableProperty](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Path.lean/declarations/composableproperty.md) | 8 | `declaration-track:8b25ba1a0f3c40f3346b63e95ce22c1a9a51e75a15893726bb49255b830dca12` |
-| 2 | `inductive` | [CertifiedPath](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Path.lean/declarations/certifiedpath.md) | 15 | `declaration-track:2564045855e181473fabbc0f9bfec77dc79ed6cffe7628cc8d7cbb2ac8d59809` |
-| 3 | `def` | [composite](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Path.lean/declarations/composite.md) | 27 | `declaration-track:214e296d9afb5d3dd07d16ef7f86b5e2c2216b13cc104f580816da8af41ffa94` |
-| 4 | `def` | [eval](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Path.lean/declarations/eval.md) | 32 | `declaration-track:c894771e0e2c2a36542e2fd33a97af39def369452eccb037f18fc13de9aa402d` |
-| 5 | `theorem` | [certified](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Path.lean/declarations/certified.md) | 37 | `result-track:9157f7092b10813679d83161f806de705e6f75fd1f6220fa3b6752632403c2d8` |
-| 6 | `theorem` | [map_composite](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Path.lean/declarations/map-composite.md) | 43 | `result-track:cb42cc8c093d6d638b49e0484a6d4dca6b78f78d11144d83e18782aac6e704d1` |
+| 1 | `structure` | [ComposableProperty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Path.lean/declarations/composableproperty.md) | 8 | `declaration-track:8b25ba1a0f3c40f3346b63e95ce22c1a9a51e75a15893726bb49255b830dca12` |
+| 2 | `inductive` | [CertifiedPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Path.lean/declarations/certifiedpath.md) | 15 | `declaration-track:2564045855e181473fabbc0f9bfec77dc79ed6cffe7628cc8d7cbb2ac8d59809` |
+| 3 | `def` | [composite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Path.lean/declarations/composite.md) | 27 | `declaration-track:214e296d9afb5d3dd07d16ef7f86b5e2c2216b13cc104f580816da8af41ffa94` |
+| 4 | `def` | [eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Path.lean/declarations/eval.md) | 32 | `declaration-track:c894771e0e2c2a36542e2fd33a97af39def369452eccb037f18fc13de9aa402d` |
+| 5 | `theorem` | [certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Path.lean/declarations/certified.md) | 37 | `result-track:9157f7092b10813679d83161f806de705e6f75fd1f6220fa3b6752632403c2d8` |
+| 6 | `theorem` | [map_composite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Path.lean/declarations/map-composite.md) | 43 | `result-track:cb42cc8c093d6d638b49e0484a6d4dca6b78f78d11144d83e18782aac6e704d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

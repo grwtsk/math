@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/TowersEdition1.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/TowersEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/TowersEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/TowersEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cumulativeField](../../../../AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/cumulativefield.md) | 18 | `declaration-track:4490ea6323d25ea9c5796be61c02079ccaef412e4e7200801c1ac944f7720213` |
-| 2 | `theorem` | [cumulative_field_mono](../../../../AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/cumulative-field-mono.md) | 22 | `result-track:833da93184051c1a1efce13f357b8334885f9269a26227b629d15261d3595b5d` |
-| 3 | `theorem` | [component_le_cumulative](../../../../AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/component-le-cumulative.md) | 27 | `result-track:a9cd46406346dd61bc99ff21a38cb557cd4d2e7bd71a5c4a4b04b7b483ded376` |
-| 4 | `def` | [cumulativeInclusion](../../../../AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/cumulativeinclusion.md) | 32 | `declaration-track:953e4ad1426c506b3fbb08c363b1a7e7c2144e403517f20dbaed82d9c90a2987` |
-| 5 | `theorem` | [cumulative_inclusion_comp](../../../../AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/cumulative-inclusion-comp.md) | 37 | `result-track:3fea11b474c62fcc4472504657b2a0566dbd8225adbe6f5da8d5f86ab1181c78` |
-| 6 | `structure` | [FiniteInverseSystem](../../../../AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/finiteinversesystem.md) | 45 | `declaration-track:a5b89ef0e4e9498d4bf06c8d10c9a109333c1d024a7cb97974d0b0aa382a04ce` |
-| 7 | `def` | [CompatibleSection](../../../../AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/compatiblesection.md) | 61 | `declaration-track:6e5cdff28c5bab5202081a49b22a13b026768c624dbf5e4cf4239a4ef92ed1dc` |
-| 8 | `theorem` | [compatible_section_restrict](../../../../AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/compatible-section-restrict.md) | 65 | `result-track:75fc70ce2c29f2ad5046fc3e39d840cdc37dce594952cae60066d2121865b51b` |
-| 9 | `def` | [constantInverseSystem](../../../../AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/constantinversesystem.md) | 71 | `declaration-track:dd82c3beab1cb6b437612d257e0a8ee7a8624dc1841a01e8ce2c316eb8156c73` |
-| 10 | `def` | [sectionFromLast](../../../../AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/sectionfromlast.md) | 80 | `declaration-track:c207b9d9cc1d62d109afa8c04c357286916007353036781fabdb6633e7f28c39` |
-| 11 | `theorem` | [section_from_last_compatible](../../../../AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/section-from-last-compatible.md) | 85 | `result-track:7d3fb068af0d104b6df6309c41f2764a8e5970ea932a7441ddb4ae4bc4acdf3f` |
+| 1 | `def` | [cumulativeField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/cumulativefield.md) | 18 | `declaration-track:4490ea6323d25ea9c5796be61c02079ccaef412e4e7200801c1ac944f7720213` |
+| 2 | `theorem` | [cumulative_field_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/cumulative-field-mono.md) | 22 | `result-track:833da93184051c1a1efce13f357b8334885f9269a26227b629d15261d3595b5d` |
+| 3 | `theorem` | [component_le_cumulative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/component-le-cumulative.md) | 27 | `result-track:a9cd46406346dd61bc99ff21a38cb557cd4d2e7bd71a5c4a4b04b7b483ded376` |
+| 4 | `def` | [cumulativeInclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/cumulativeinclusion.md) | 32 | `declaration-track:953e4ad1426c506b3fbb08c363b1a7e7c2144e403517f20dbaed82d9c90a2987` |
+| 5 | `theorem` | [cumulative_inclusion_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/cumulative-inclusion-comp.md) | 37 | `result-track:3fea11b474c62fcc4472504657b2a0566dbd8225adbe6f5da8d5f86ab1181c78` |
+| 6 | `structure` | [FiniteInverseSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/finiteinversesystem.md) | 45 | `declaration-track:a5b89ef0e4e9498d4bf06c8d10c9a109333c1d024a7cb97974d0b0aa382a04ce` |
+| 7 | `def` | [CompatibleSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/compatiblesection.md) | 61 | `declaration-track:6e5cdff28c5bab5202081a49b22a13b026768c624dbf5e4cf4239a4ef92ed1dc` |
+| 8 | `theorem` | [compatible_section_restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/compatible-section-restrict.md) | 65 | `result-track:75fc70ce2c29f2ad5046fc3e39d840cdc37dce594952cae60066d2121865b51b` |
+| 9 | `def` | [constantInverseSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/constantinversesystem.md) | 71 | `declaration-track:dd82c3beab1cb6b437612d257e0a8ee7a8624dc1841a01e8ce2c316eb8156c73` |
+| 10 | `def` | [sectionFromLast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/sectionfromlast.md) | 80 | `declaration-track:c207b9d9cc1d62d109afa8c04c357286916007353036781fabdb6633e7f28c39` |
+| 11 | `theorem` | [section_from_last_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/TowersEdition1.lean/declarations/section-from-last-compatible.md) | 85 | `result-track:7d3fb068af0d104b6df6309c41f2764a8e5970ea932a7441ddb4ae4bc4acdf3f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

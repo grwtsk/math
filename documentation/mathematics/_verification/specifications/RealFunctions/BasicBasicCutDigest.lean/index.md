@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/BasicBasicCutDigest.lean/index.md) · [Full source](../../../../RealFunctions/BasicBasicCutDigest.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicCutDigest.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicCutDigest.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CutDigest](../../../../RealFunctions/BasicBasicCutDigest.lean/declarations/cutdigest.md) | 13 | `declaration-track:a7e0cb9584fefa655da121f4df018f3cae55e86a5cc54b96e866ebc4169df5f3` |
-| 2 | `structure` | [CellDigest](../../../../RealFunctions/BasicBasicCutDigest.lean/declarations/celldigest.md) | 17 | `declaration-track:0a968a030e36a68b78b4c2031bfc06a0f4ff84854a4ddd346cb5910ee4f26db2` |
-| 3 | `structure` | [CertificateDigest](../../../../RealFunctions/BasicBasicCutDigest.lean/declarations/certificatedigest.md) | 21 | `declaration-track:7a1c0eeb41c682019fde2bf899db70f720db58200f7d80a4eb48ad271ec4e454` |
-| 4 | `structure` | [AnalyticCellId](../../../../RealFunctions/BasicBasicCutDigest.lean/declarations/analyticcellid.md) | 25 | `declaration-track:d2abf328e76f2e2c8babdca563f0306b2e787736510200a461b079022a6b3c10` |
-| 5 | `structure` | [RefinementId](../../../../RealFunctions/BasicBasicCutDigest.lean/declarations/refinementid.md) | 29 | `declaration-track:93311cabd5eb6fef243aee7c88ffd3e0209ebb0da4bcc4a81bb607b435d56247` |
-| 6 | `structure` | [ZeroLineageId](../../../../RealFunctions/BasicBasicCutDigest.lean/declarations/zerolineageid.md) | 33 | `declaration-track:bd69152a68c808e3510075b95269352aae33198a42de2b558814efcaadd1ba10` |
-| 7 | `structure` | [SpectralCutId](../../../../RealFunctions/BasicBasicCutDigest.lean/declarations/spectralcutid.md) | 37 | `declaration-track:13ee8f576db0e78de056e64c1cb4d5acb0849d66173c9e6191d6dbca92ca8f56` |
-| 8 | `structure` | [SpectralCandidateId](../../../../RealFunctions/BasicBasicCutDigest.lean/declarations/spectralcandidateid.md) | 41 | `declaration-track:90206d11b865a534c7766b9bd81f56bca171c3edd7a542dc40bfa11cc2be05e7` |
-| 9 | `structure` | [AssumptionId](../../../../RealFunctions/BasicBasicCutDigest.lean/declarations/assumptionid.md) | 45 | `declaration-track:2288caf74acb5b58b1b6894e2ad1574fd907e02fbfa790788c113ad4150fb0b0` |
-| 10 | `structure` | [PriorityKey](../../../../RealFunctions/BasicBasicCutDigest.lean/declarations/prioritykey.md) | 49 | `declaration-track:ec85447b637a0a860581fdc2acd9aad58e9d018f7401af64dd0cd10834f18f9c` |
-| 11 | `structure` | [RealInterval](../../../../RealFunctions/BasicBasicCutDigest.lean/declarations/realinterval.md) | 54 | `declaration-track:71095b40fbc526e1d845370748660b45d86ae2368d154d9a3d3c43ea36d01c6c` |
-| 12 | `def` | [RealInterval.Contains](../../../../RealFunctions/BasicBasicCutDigest.lean/declarations/realinterval-contains.md) | 59 | `declaration-track:9cbd1576d5cd8e365e499e0f4cc7599136e7224b31fc10dac60b277e72587d2c` |
-| 13 | `structure` | [ComplexInterval](../../../../RealFunctions/BasicBasicCutDigest.lean/declarations/complexinterval.md) | 64 | `declaration-track:0c19db48189d4e2c2447a0218adf787293abd6ed31ee5ef00d0d05fe8186b091` |
-| 14 | `def` | [ComplexInterval.Contains](../../../../RealFunctions/BasicBasicCutDigest.lean/declarations/complexinterval-contains.md) | 67 | `declaration-track:3adb18c94852283c3d75a7b103d04667422754cd076a5d292caa5606d5463976` |
+| 1 | `structure` | [CutDigest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicCutDigest.lean/declarations/cutdigest.md) | 13 | `declaration-track:a7e0cb9584fefa655da121f4df018f3cae55e86a5cc54b96e866ebc4169df5f3` |
+| 2 | `structure` | [CellDigest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicCutDigest.lean/declarations/celldigest.md) | 17 | `declaration-track:0a968a030e36a68b78b4c2031bfc06a0f4ff84854a4ddd346cb5910ee4f26db2` |
+| 3 | `structure` | [CertificateDigest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicCutDigest.lean/declarations/certificatedigest.md) | 21 | `declaration-track:7a1c0eeb41c682019fde2bf899db70f720db58200f7d80a4eb48ad271ec4e454` |
+| 4 | `structure` | [AnalyticCellId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicCutDigest.lean/declarations/analyticcellid.md) | 25 | `declaration-track:d2abf328e76f2e2c8babdca563f0306b2e787736510200a461b079022a6b3c10` |
+| 5 | `structure` | [RefinementId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicCutDigest.lean/declarations/refinementid.md) | 29 | `declaration-track:93311cabd5eb6fef243aee7c88ffd3e0209ebb0da4bcc4a81bb607b435d56247` |
+| 6 | `structure` | [ZeroLineageId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicCutDigest.lean/declarations/zerolineageid.md) | 33 | `declaration-track:bd69152a68c808e3510075b95269352aae33198a42de2b558814efcaadd1ba10` |
+| 7 | `structure` | [SpectralCutId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicCutDigest.lean/declarations/spectralcutid.md) | 37 | `declaration-track:13ee8f576db0e78de056e64c1cb4d5acb0849d66173c9e6191d6dbca92ca8f56` |
+| 8 | `structure` | [SpectralCandidateId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicCutDigest.lean/declarations/spectralcandidateid.md) | 41 | `declaration-track:90206d11b865a534c7766b9bd81f56bca171c3edd7a542dc40bfa11cc2be05e7` |
+| 9 | `structure` | [AssumptionId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicCutDigest.lean/declarations/assumptionid.md) | 45 | `declaration-track:2288caf74acb5b58b1b6894e2ad1574fd907e02fbfa790788c113ad4150fb0b0` |
+| 10 | `structure` | [PriorityKey](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicCutDigest.lean/declarations/prioritykey.md) | 49 | `declaration-track:ec85447b637a0a860581fdc2acd9aad58e9d018f7401af64dd0cd10834f18f9c` |
+| 11 | `structure` | [RealInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicCutDigest.lean/declarations/realinterval.md) | 54 | `declaration-track:71095b40fbc526e1d845370748660b45d86ae2368d154d9a3d3c43ea36d01c6c` |
+| 12 | `def` | [RealInterval.Contains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicCutDigest.lean/declarations/realinterval-contains.md) | 59 | `declaration-track:9cbd1576d5cd8e365e499e0f4cc7599136e7224b31fc10dac60b277e72587d2c` |
+| 13 | `structure` | [ComplexInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicCutDigest.lean/declarations/complexinterval.md) | 64 | `declaration-track:0c19db48189d4e2c2447a0218adf787293abd6ed31ee5ef00d0d05fe8186b091` |
+| 14 | `def` | [ComplexInterval.Contains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicCutDigest.lean/declarations/complexinterval-contains.md) | 67 | `declaration-track:3adb18c94852283c3d75a7b103d04667422754cd076a5d292caa5606d5463976` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

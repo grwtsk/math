@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SheavesFunctorsMapDiagram.lean/index.md) · [Full source](../../../../GeneralTopology/SheavesFunctorsMapDiagram.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsMapDiagram.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsMapDiagram.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [map_diagram](../../../../GeneralTopology/SheavesFunctorsMapDiagram.lean/declarations/map-diagram.md) | 42 | `result-track:31b07ab1461a18d382acb32714455170f46090330a06dfde2078025db8db0a9e` |
-| 2 | `theorem` | [mapCocone](../../../../GeneralTopology/SheavesFunctorsMapDiagram.lean/declarations/mapcocone.md) | 53 | `result-track:c2ab1aeef445cad58c8be59e1c5db5f107bb816ab6492a154de6f4eb39ffa61e` |
-| 3 | `theorem` | [pushforward_sheaf_of_sheaf](../../../../GeneralTopology/SheavesFunctorsMapDiagram.lean/declarations/pushforward-sheaf-of-sheaf.md) | 63 | `result-track:5fa6b0f1b091f1889f7ed1208163882830ac56d1c10aace15c13ce40b596f4ed` |
-| 4 | `theorem` | [pushforward_sheaf_of_sheaf](../../../../GeneralTopology/SheavesFunctorsMapDiagram.lean/declarations/pushforward-sheaf-of-sheaf-source-edition-2.md) | 82 | `result-track:d125aa4c7754d15cc8569a8a9e7d287b4f16cf7b6bddac4356ec0177ed6cbfda` |
-| 5 | `def` | [pushforward](../../../../GeneralTopology/SheavesFunctorsMapDiagram.lean/declarations/pushforward.md) | 90 | `declaration-track:eaca5078ca538b83402239cd1f05b13b0ed653b4bfcdfaf900cea52549b3d08c` |
+| 1 | `theorem` | [map_diagram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsMapDiagram.lean/declarations/map-diagram.md) | 42 | `result-track:31b07ab1461a18d382acb32714455170f46090330a06dfde2078025db8db0a9e` |
+| 2 | `theorem` | [mapCocone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsMapDiagram.lean/declarations/mapcocone.md) | 53 | `result-track:c2ab1aeef445cad58c8be59e1c5db5f107bb816ab6492a154de6f4eb39ffa61e` |
+| 3 | `theorem` | [pushforward_sheaf_of_sheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsMapDiagram.lean/declarations/pushforward-sheaf-of-sheaf.md) | 63 | `result-track:5fa6b0f1b091f1889f7ed1208163882830ac56d1c10aace15c13ce40b596f4ed` |
+| 4 | `theorem` | [pushforward_sheaf_of_sheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsMapDiagram.lean/declarations/pushforward-sheaf-of-sheaf-source-edition-2.md) | 82 | `result-track:d125aa4c7754d15cc8569a8a9e7d287b4f16cf7b6bddac4356ec0177ed6cbfda` |
+| 5 | `def` | [pushforward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsMapDiagram.lean/declarations/pushforward.md) | 90 | `declaration-track:eaca5078ca538b83402239cd1f05b13b0ed653b4bfcdfaf900cea52549b3d08c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

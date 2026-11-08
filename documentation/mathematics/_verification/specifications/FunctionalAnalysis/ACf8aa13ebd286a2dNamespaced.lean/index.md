@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ACf8aa13ebd286a2dNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ACf8aa13ebd286a2dNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ACf8aa13ebd286a2dNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ACf8aa13ebd286a2dNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [completePreKernel_denseRange](../../../../FunctionalAnalysis/ACf8aa13ebd286a2dNamespaced.lean/declarations/completeprekernel-denserange.md) | 26 | `result-track:f09a95f8242fc7d6fa91e788ae534a0ed9514c16b9c49c04bb8dd1dd40b056db` |
+| 1 | `theorem` | [completePreKernel_denseRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ACf8aa13ebd286a2dNamespaced.lean/declarations/completeprekernel-denserange.md) | 26 | `result-track:f09a95f8242fc7d6fa91e788ae534a0ed9514c16b9c49c04bb8dd1dd40b056db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

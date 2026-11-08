@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/ConcreteSheafification.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/ConcreteSheafification.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ConcreteSheafification.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ConcreteSheafification.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/ConcreteSheafification.lean/declarations/example-source-edition-4.md) | 16 | `declaration-track:840ceaf747db851660e0b914880483da03faf12cc674da5fe2c96b542bf03f98` |
-| 2 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/ConcreteSheafification.lean/declarations/example.md) | 18 | `declaration-track:18150d0452a74b2b79f4f1e9e09cf2b9ad3e55b19b171db2ac7f930e3b02d120` |
-| 3 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/ConcreteSheafification.lean/declarations/example-source-edition-3.md) | 26 | `declaration-track:45522ae25fe624ac46238082db80f0f0b8b8273947b28c9c25f172ea53bb7f04` |
-| 4 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/ConcreteSheafification.lean/declarations/example-source-edition-6.md) | 28 | `declaration-track:f7de3aff7eba90e75cd9e84e768ec496f765ecb656ec19f462d1d76df137fb61` |
-| 5 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/ConcreteSheafification.lean/declarations/example-source-edition-5.md) | 32 | `declaration-track:b3dcd3fe719b3cc7da8121a101846914c978fa898ac2413eab6baf59d7655d82` |
-| 6 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/ConcreteSheafification.lean/declarations/example-source-edition-2.md) | 34 | `declaration-track:1f40b4f25862c5e0f5b77fa69c2c061be41e5677f160d48a7b783a9dbb78fe4d` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ConcreteSheafification.lean/declarations/example-source-edition-4.md) | 16 | `declaration-track:840ceaf747db851660e0b914880483da03faf12cc674da5fe2c96b542bf03f98` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ConcreteSheafification.lean/declarations/example.md) | 18 | `declaration-track:18150d0452a74b2b79f4f1e9e09cf2b9ad3e55b19b171db2ac7f930e3b02d120` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ConcreteSheafification.lean/declarations/example-source-edition-3.md) | 26 | `declaration-track:45522ae25fe624ac46238082db80f0f0b8b8273947b28c9c25f172ea53bb7f04` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ConcreteSheafification.lean/declarations/example-source-edition-6.md) | 28 | `declaration-track:f7de3aff7eba90e75cd9e84e768ec496f765ecb656ec19f462d1d76df137fb61` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ConcreteSheafification.lean/declarations/example-source-edition-5.md) | 32 | `declaration-track:b3dcd3fe719b3cc7da8121a101846914c978fa898ac2413eab6baf59d7655d82` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ConcreteSheafification.lean/declarations/example-source-edition-2.md) | 34 | `declaration-track:1f40b4f25862c5e0f5b77fa69c2c061be41e5677f160d48a7b783a9dbb78fe4d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

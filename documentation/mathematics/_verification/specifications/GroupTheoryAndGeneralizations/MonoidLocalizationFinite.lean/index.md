@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationFinite.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationFinite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationFinite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationFinite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [fg](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationFinite.lean/declarations/fg.md) | 27 | `result-track:6f044448286e19eb2ddc273df23b2975619a52c87c0ddefb671e2dedaf881364` |
-| 2 | `instance` | [instFG](../../../../GroupTheoryAndGeneralizations/MonoidLocalizationFinite.lean/declarations/instfg.md) | 36 | `declaration-track:081314ebc68aa4a447e06b37d5881103cafd4a141482b3f8850eb99830580b26` |
+| 1 | `lemma` | [fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationFinite.lean/declarations/fg.md) | 27 | `result-track:6f044448286e19eb2ddc273df23b2975619a52c87c0ddefb671e2dedaf881364` |
+| 2 | `instance` | [instFG](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MonoidLocalizationFinite.lean/declarations/instfg.md) | 36 | `declaration-track:081314ebc68aa4a447e06b37d5881103cafd4a141482b3f8850eb99830580b26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

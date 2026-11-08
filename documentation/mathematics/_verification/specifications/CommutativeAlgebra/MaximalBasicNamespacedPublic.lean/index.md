@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MaximalBasicNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MaximalBasicNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasicNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasicNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [equivSubtype](../../../../CommutativeAlgebra/MaximalBasicNamespacedPublic.lean/declarations/equivsubtype.md) | 36 | `declaration-track:db1a07a8ffd69435b7a386ace5ec333b15af0724f20a519adceda8f502201023` |
-| 2 | `theorem` | [range_asIdeal](../../../../CommutativeAlgebra/MaximalBasicNamespacedPublic.lean/declarations/range-asideal.md) | 40 | `result-track:e49dc2a786816b6d61ecac6abf796c18b11fa689e454895e09369189ce34d70f` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/MaximalBasicNamespacedPublic.lean/declarations/instance.md) | 47 | `declaration-track:994306291b7bed96f11ce7413dd562088cf8213339a8cbcff1d28f948c41d6c1` |
-| 4 | `def` | [toPrimeSpectrum](../../../../CommutativeAlgebra/MaximalBasicNamespacedPublic.lean/declarations/toprimespectrum.md) | 52 | `declaration-track:af97282fdc3e788a5c65721aef6c58dedb3cbea85a59a0f4a0b4e995bee43071` |
-| 5 | `theorem` | [toPrimeSpectrum_injective](../../../../CommutativeAlgebra/MaximalBasicNamespacedPublic.lean/declarations/toprimespectrum-injective.md) | 55 | `result-track:f3785339c1703e82fb4858f7e72e37c696a941ceb672a04b8ef4e13624e5fc17` |
-| 6 | `theorem` | [isCoprime_of_ne](../../../../CommutativeAlgebra/MaximalBasicNamespacedPublic.lean/declarations/iscoprime-of-ne.md) | 58 | `result-track:996d7b8f23a2495e6f926636b3bc40957912ec21043b9aa3955246755fb8119b` |
+| 1 | `def` | [equivSubtype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasicNamespacedPublic.lean/declarations/equivsubtype.md) | 36 | `declaration-track:db1a07a8ffd69435b7a386ace5ec333b15af0724f20a519adceda8f502201023` |
+| 2 | `theorem` | [range_asIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasicNamespacedPublic.lean/declarations/range-asideal.md) | 40 | `result-track:e49dc2a786816b6d61ecac6abf796c18b11fa689e454895e09369189ce34d70f` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasicNamespacedPublic.lean/declarations/instance.md) | 47 | `declaration-track:994306291b7bed96f11ce7413dd562088cf8213339a8cbcff1d28f948c41d6c1` |
+| 4 | `def` | [toPrimeSpectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasicNamespacedPublic.lean/declarations/toprimespectrum.md) | 52 | `declaration-track:af97282fdc3e788a5c65721aef6c58dedb3cbea85a59a0f4a0b4e995bee43071` |
+| 5 | `theorem` | [toPrimeSpectrum_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasicNamespacedPublic.lean/declarations/toprimespectrum-injective.md) | 55 | `result-track:f3785339c1703e82fb4858f7e72e37c696a941ceb672a04b8ef4e13624e5fc17` |
+| 6 | `theorem` | [isCoprime_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasicNamespacedPublic.lean/declarations/iscoprime-of-ne.md) | 58 | `result-track:996d7b8f23a2495e6f926636b3bc40957912ec21043b9aa3955246755fb8119b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThresholdDescentProgramControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThresholdDescentProgramControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThresholdDescentProgramControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThresholdDescentProgramControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThresholdDescentProgram`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThresholdDescentProgram.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThresholdDescentProgram`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThresholdDescentProgram.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [seven_eighths_descends_in_two_quadratic_steps](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThresholdDescentProgramControls.lean/declarations/seven-eighths-descends-in-two-quadratic-steps.md) | 13 | `result-track:36bb437af9e0eca35828371d7d5f76a19c5a8806180728d50a2dc9172aca283a` |
-| 2 | `def` | [missingGates](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThresholdDescentProgramControls.lean/declarations/missinggates.md) | 19 | `declaration-track:95aefb2ea2844b9b2a4d94e4d23ab69c166e057e1f2c7a3801a9b6c44b547299` |
+| 1 | `theorem` | [seven_eighths_descends_in_two_quadratic_steps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThresholdDescentProgramControls.lean/declarations/seven-eighths-descends-in-two-quadratic-steps.md) | 13 | `result-track:36bb437af9e0eca35828371d7d5f76a19c5a8806180728d50a2dc9172aca283a` |
+| 2 | `def` | [missingGates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThresholdDescentProgramControls.lean/declarations/missinggates.md) | 19 | `declaration-track:95aefb2ea2844b9b2a4d94e4d23ab69c166e057e1f2c7a3801a9b6c44b547299` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

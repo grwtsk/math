@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [normalizedTransform](../../../../MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/declarations/normalizedtransform.md) | 33 | `declaration-track:253ae25ee9526b1a0cae627c781e6fa5d11c3c19ce59135d16e053b09035fe55` |
-| 2 | `def` | [boundaryTransform](../../../../MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/declarations/boundarytransform.md) | 38 | `declaration-track:54b85f8990645e0068482977102db63957eb9f0d69921512f66569084b10c9fc` |
-| 3 | `theorem` | [normalizedTransform_dictionary](../../../../MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/declarations/normalizedtransform-dictionary.md) | 41 | `result-track:ceeaad2e06d6d90015b984b1a3dc08a98dfe80e61a2619ece3971146fea34f85` |
-| 4 | `theorem` | [normalized_integrand_integrable](../../../../MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/declarations/normalized-integrand-integrable.md) | 51 | `result-track:206e5d7b2f4f043edcbe8c2e99baec1777292286e56f4cc86b5ba4479cb54a03` |
-| 5 | `theorem` | [full_complex_correlation_square](../../../../MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/declarations/full-complex-correlation-square.md) | 62 | `result-track:8d0cda95e984e5fe631234d4ad19dddd0bf32d083ca1301776f216d314cabfc8` |
-| 6 | `theorem` | [interval_complex_correlation_square](../../../../MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/declarations/interval-complex-correlation-square.md) | 93 | `result-track:069cfb20bae15d15320f10f43c3add7396311abd6600831a456afac69647601c` |
-| 7 | `theorem` | [critical_complex_ibp](../../../../MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/declarations/critical-complex-ibp.md) | 114 | `result-track:66b1c262e863aa7fbebbc0ec2efb20ea6f62e853a8a9ea044df86f9d834d0278` |
-| 8 | `theorem` | [boundary_transform_exact](../../../../MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/declarations/boundary-transform-exact.md) | 155 | `result-track:1e27f7bebb2d81cc16aa008182182d3026df828cf7aad8a5c4910a06f3fc22e9` |
+| 1 | `def` | [normalizedTransform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/declarations/normalizedtransform.md) | 33 | `declaration-track:253ae25ee9526b1a0cae627c781e6fa5d11c3c19ce59135d16e053b09035fe55` |
+| 2 | `def` | [boundaryTransform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/declarations/boundarytransform.md) | 38 | `declaration-track:54b85f8990645e0068482977102db63957eb9f0d69921512f66569084b10c9fc` |
+| 3 | `theorem` | [normalizedTransform_dictionary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/declarations/normalizedtransform-dictionary.md) | 41 | `result-track:ceeaad2e06d6d90015b984b1a3dc08a98dfe80e61a2619ece3971146fea34f85` |
+| 4 | `theorem` | [normalized_integrand_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/declarations/normalized-integrand-integrable.md) | 51 | `result-track:206e5d7b2f4f043edcbe8c2e99baec1777292286e56f4cc86b5ba4479cb54a03` |
+| 5 | `theorem` | [full_complex_correlation_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/declarations/full-complex-correlation-square.md) | 62 | `result-track:8d0cda95e984e5fe631234d4ad19dddd0bf32d083ca1301776f216d314cabfc8` |
+| 6 | `theorem` | [interval_complex_correlation_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/declarations/interval-complex-correlation-square.md) | 93 | `result-track:069cfb20bae15d15320f10f43c3add7396311abd6600831a456afac69647601c` |
+| 7 | `theorem` | [critical_complex_ibp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/declarations/critical-complex-ibp.md) | 114 | `result-track:66b1c262e863aa7fbebbc0ec2efb20ea6f62e853a8a9ea044df86f9d834d0278` |
+| 8 | `theorem` | [boundary_transform_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedNormalizedTransform.lean/declarations/boundary-transform-exact.md) | 155 | `result-track:1e27f7bebb2d81cc16aa008182182d3026df828cf7aad8a5c4910a06f3fc22e9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

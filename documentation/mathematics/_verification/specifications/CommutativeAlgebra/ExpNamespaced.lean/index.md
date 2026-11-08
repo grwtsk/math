@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ExpNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ExpNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -66,18 +66,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exp](../../../../CommutativeAlgebra/ExpNamespaced.lean/declarations/exp.md) | 59 | `declaration-track:576c541510ca0e7dd43ab6da844f6780e03ac327ad4d2da8ad27a38ade9dd3f3` |
-| 2 | `theorem` | [exp_eq_sum](../../../../CommutativeAlgebra/ExpNamespaced.lean/declarations/exp-eq-sum.md) | 62 | `result-track:ab471656ad4216a6efb131d15a449bbf6c7ffc43f172e35ca8bcfe812aec9140` |
-| 3 | `theorem` | [exp_smul_eq_sum](../../../../CommutativeAlgebra/ExpNamespaced.lean/declarations/exp-smul-eq-sum.md) | 74 | `result-track:80796050dfc4ed1536eef6b5be17d6f3535dcbac02dfa5c49f5fcba1e8c5a300` |
-| 4 | `theorem` | [exp_add_of_commute](../../../../CommutativeAlgebra/ExpNamespaced.lean/declarations/exp-add-of-commute.md) | 85 | `result-track:da4b94c2d1793b2a977512bb0ec1d7bc014ccfa7a39fd752a1849ff7c81bf1f2` |
-| 5 | `theorem` | [exp_zero](../../../../CommutativeAlgebra/ExpNamespaced.lean/declarations/exp-zero.md) | 177 | `result-track:34422ff2e41b0b013e42832f467f944a279ff9316ed128d66719bcd3e43df6f4` |
-| 6 | `theorem` | [exp_mul_exp_neg_self](../../../../CommutativeAlgebra/ExpNamespaced.lean/declarations/exp-mul-exp-neg-self.md) | 181 | `result-track:e51de9884e14d919733475d2abe92fc5cb8ea7a81fbd04cc5919965d9550b216` |
-| 7 | `theorem` | [exp_neg_mul_exp_self](../../../../CommutativeAlgebra/ExpNamespaced.lean/declarations/exp-neg-mul-exp-self.md) | 185 | `result-track:fd33caa94ab36d320f3b6bed74f4f26ff0b5cee7d21b7f3af9def96bb6fb6be2` |
-| 8 | `theorem` | [isUnit_exp](../../../../CommutativeAlgebra/ExpNamespaced.lean/declarations/isunit-exp.md) | 189 | `result-track:3c542f71dcf2e10fbfb11d0813c5cec91d8e307935104aa18437b71e855008ac` |
-| 9 | `theorem` | [map_exp](../../../../CommutativeAlgebra/ExpNamespaced.lean/declarations/map-exp.md) | 197 | `result-track:ab1c7aa2f1f7ccf0aa6f387961da3276491fbf447a97037001c94e862142fb43` |
-| 10 | `theorem` | [exp_smul](../../../../CommutativeAlgebra/ExpNamespaced.lean/declarations/exp-smul.md) | 204 | `result-track:fc6c0edf8cd47241659f1a2d658abeca4c67e8fdeb489c40e83e1877fb2f38fb` |
-| 11 | `theorem` | [commute_exp_left_of_commute](../../../../CommutativeAlgebra/ExpNamespaced.lean/declarations/commute-exp-left-of-commute.md) | 218 | `result-track:446f61861c9449f042021d9737209645f94a8bdcfb29f72471aa3a19f8296fea` |
-| 12 | `theorem` | [exp_mul_of_derivation](../../../../CommutativeAlgebra/ExpNamespaced.lean/declarations/exp-mul-of-derivation.md) | 234 | `result-track:0b9dab80f06989ca126300d9188fbaef397ec6388da4f6ad784c73ffb7b7a05a` |
+| 1 | `def` | [exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpNamespaced.lean/declarations/exp.md) | 59 | `declaration-track:576c541510ca0e7dd43ab6da844f6780e03ac327ad4d2da8ad27a38ade9dd3f3` |
+| 2 | `theorem` | [exp_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpNamespaced.lean/declarations/exp-eq-sum.md) | 62 | `result-track:ab471656ad4216a6efb131d15a449bbf6c7ffc43f172e35ca8bcfe812aec9140` |
+| 3 | `theorem` | [exp_smul_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpNamespaced.lean/declarations/exp-smul-eq-sum.md) | 74 | `result-track:80796050dfc4ed1536eef6b5be17d6f3535dcbac02dfa5c49f5fcba1e8c5a300` |
+| 4 | `theorem` | [exp_add_of_commute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpNamespaced.lean/declarations/exp-add-of-commute.md) | 85 | `result-track:da4b94c2d1793b2a977512bb0ec1d7bc014ccfa7a39fd752a1849ff7c81bf1f2` |
+| 5 | `theorem` | [exp_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpNamespaced.lean/declarations/exp-zero.md) | 177 | `result-track:34422ff2e41b0b013e42832f467f944a279ff9316ed128d66719bcd3e43df6f4` |
+| 6 | `theorem` | [exp_mul_exp_neg_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpNamespaced.lean/declarations/exp-mul-exp-neg-self.md) | 181 | `result-track:e51de9884e14d919733475d2abe92fc5cb8ea7a81fbd04cc5919965d9550b216` |
+| 7 | `theorem` | [exp_neg_mul_exp_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpNamespaced.lean/declarations/exp-neg-mul-exp-self.md) | 185 | `result-track:fd33caa94ab36d320f3b6bed74f4f26ff0b5cee7d21b7f3af9def96bb6fb6be2` |
+| 8 | `theorem` | [isUnit_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpNamespaced.lean/declarations/isunit-exp.md) | 189 | `result-track:3c542f71dcf2e10fbfb11d0813c5cec91d8e307935104aa18437b71e855008ac` |
+| 9 | `theorem` | [map_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpNamespaced.lean/declarations/map-exp.md) | 197 | `result-track:ab1c7aa2f1f7ccf0aa6f387961da3276491fbf447a97037001c94e862142fb43` |
+| 10 | `theorem` | [exp_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpNamespaced.lean/declarations/exp-smul.md) | 204 | `result-track:fc6c0edf8cd47241659f1a2d658abeca4c67e8fdeb489c40e83e1877fb2f38fb` |
+| 11 | `theorem` | [commute_exp_left_of_commute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpNamespaced.lean/declarations/commute-exp-left-of-commute.md) | 218 | `result-track:446f61861c9449f042021d9737209645f94a8bdcfb29f72471aa3a19f8296fea` |
+| 12 | `theorem` | [exp_mul_of_derivation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpNamespaced.lean/declarations/exp-mul-of-derivation.md) | 234 | `result-track:0b9dab80f06989ca126300d9188fbaef397ec6388da4f6ad784c73ffb7b7a05a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

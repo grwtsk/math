@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SiteTheoremAwareArtifact.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SiteTheoremAwareArtifact.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SiteTheoremAwareArtifact.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SiteTheoremAwareArtifact.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TheoremAwareArtifact](../../../../../ComputerScience/AlgorithmsInComputerScience/SiteTheoremAwareArtifact.lean/declarations/theoremawareartifact.md) | 7 | `declaration-track:2966884c01dd10f979c22de9161e43431d41436175e2bbf16f51c45f48220409` |
-| 2 | `structure` | [CoveringFamily](../../../../../ComputerScience/AlgorithmsInComputerScience/SiteTheoremAwareArtifact.lean/declarations/coveringfamily.md) | 13 | `declaration-track:da7b1241fd0f4d561691f1fc21ef24ec347cf978a3c86c008c97227ffcf9acb9` |
-| 3 | `structure` | [SurfaceSite](../../../../../ComputerScience/AlgorithmsInComputerScience/SiteTheoremAwareArtifact.lean/declarations/surfacesite.md) | 20 | `declaration-track:f6e20b48c748a0be2122b01807dd59773bb7f8a9d66f27f50d25705838e7ade2` |
-| 4 | `theorem` | [coveringFamily_foundation_compatible](../../../../../ComputerScience/AlgorithmsInComputerScience/SiteTheoremAwareArtifact.lean/declarations/coveringfamily-foundation-compatible.md) | 25 | `result-track:3018f42ea9edbc984951a835394e4a6b0944c9d75f45a281a8d82c2f4614f211` |
-| 5 | `theorem` | [coveringFamily_gamma_compatible](../../../../../ComputerScience/AlgorithmsInComputerScience/SiteTheoremAwareArtifact.lean/declarations/coveringfamily-gamma-compatible.md) | 31 | `result-track:f590f88d8c793c4416ccaf756625b2626ff2d1ee0b2384dec7eecff64d6b947f` |
+| 1 | `structure` | [TheoremAwareArtifact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SiteTheoremAwareArtifact.lean/declarations/theoremawareartifact.md) | 7 | `declaration-track:2966884c01dd10f979c22de9161e43431d41436175e2bbf16f51c45f48220409` |
+| 2 | `structure` | [CoveringFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SiteTheoremAwareArtifact.lean/declarations/coveringfamily.md) | 13 | `declaration-track:da7b1241fd0f4d561691f1fc21ef24ec347cf978a3c86c008c97227ffcf9acb9` |
+| 3 | `structure` | [SurfaceSite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SiteTheoremAwareArtifact.lean/declarations/surfacesite.md) | 20 | `declaration-track:f6e20b48c748a0be2122b01807dd59773bb7f8a9d66f27f50d25705838e7ade2` |
+| 4 | `theorem` | [coveringFamily_foundation_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SiteTheoremAwareArtifact.lean/declarations/coveringfamily-foundation-compatible.md) | 25 | `result-track:3018f42ea9edbc984951a835394e4a6b0944c9d75f45a281a8d82c2f4614f211` |
+| 5 | `theorem` | [coveringFamily_gamma_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SiteTheoremAwareArtifact.lean/declarations/coveringfamily-gamma-compatible.md) | 31 | `result-track:f590f88d8c793c4416ccaf756625b2626ff2d1ee0b2384dec7eecff64d6b947f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

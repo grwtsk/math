@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ZeroLEOneNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ZeroLEOneNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ZeroLEOneNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ZeroLEOneNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [ZeroLEOneClass](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ZeroLEOneNamespaced.lean/declarations/zeroleoneclass.md) | 25 | `declaration-track:414dece82d150fd65f45f591a57efd87fdaf2efadca94e770abea05b0d23f00d` |
-| 2 | `lemma` | [zero_le_one](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ZeroLEOneNamespaced.lean/declarations/zero-le-one-source-edition-2.md) | 30 | `result-track:be7818c8dc414e290e0b6443a4b071ffa5ea25785922d8fe6b3e7e66ab3809f9` |
-| 3 | `instance` | [ZeroLEOneClass.factZeroLeOne](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ZeroLEOneNamespaced.lean/declarations/zeroleoneclass-factzeroleone.md) | 33 | `declaration-track:e84b57ae9857681ffc7c463dbdf780954f3a6d49f7de34bfe9ae832607151745` |
-| 4 | `lemma` | [zero_le_one'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ZeroLEOneNamespaced.lean/declarations/zero-le-one.md) | 38 | `result-track:383325e9d203629a12366f1208a0ac7545f2f1b4b9a03ab93996ffe4e27e6633` |
-| 5 | `lemma` | [zero_lt_one](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ZeroLEOneNamespaced.lean/declarations/zero-lt-one-source-edition-2.md) | 45 | `result-track:e1e4ddd12d43c4cf7b8015fa626438b24171c5025912ac0b20f118e1c5348c21` |
-| 6 | `instance` | [ZeroLEOneClass.factZeroLtOne](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ZeroLEOneNamespaced.lean/declarations/zeroleoneclass-factzeroltone.md) | 47 | `declaration-track:2186d100847c3db37bd8b0ae984f4afe4d934142568f2fa802c825035257c7be` |
-| 7 | `lemma` | [zero_lt_one'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ZeroLEOneNamespaced.lean/declarations/zero-lt-one.md) | 53 | `result-track:6d0bdc76f42ae34e4e94a8f93bbff7e28ecb10dcc34151fa1d63d18e4b43a85a` |
+| 1 | `class` | [ZeroLEOneClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ZeroLEOneNamespaced.lean/declarations/zeroleoneclass.md) | 25 | `declaration-track:414dece82d150fd65f45f591a57efd87fdaf2efadca94e770abea05b0d23f00d` |
+| 2 | `lemma` | [zero_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ZeroLEOneNamespaced.lean/declarations/zero-le-one-source-edition-2.md) | 30 | `result-track:be7818c8dc414e290e0b6443a4b071ffa5ea25785922d8fe6b3e7e66ab3809f9` |
+| 3 | `instance` | [ZeroLEOneClass.factZeroLeOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ZeroLEOneNamespaced.lean/declarations/zeroleoneclass-factzeroleone.md) | 33 | `declaration-track:e84b57ae9857681ffc7c463dbdf780954f3a6d49f7de34bfe9ae832607151745` |
+| 4 | `lemma` | [zero_le_one'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ZeroLEOneNamespaced.lean/declarations/zero-le-one.md) | 38 | `result-track:383325e9d203629a12366f1208a0ac7545f2f1b4b9a03ab93996ffe4e27e6633` |
+| 5 | `lemma` | [zero_lt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ZeroLEOneNamespaced.lean/declarations/zero-lt-one-source-edition-2.md) | 45 | `result-track:e1e4ddd12d43c4cf7b8015fa626438b24171c5025912ac0b20f118e1c5348c21` |
+| 6 | `instance` | [ZeroLEOneClass.factZeroLtOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ZeroLEOneNamespaced.lean/declarations/zeroleoneclass-factzeroltone.md) | 47 | `declaration-track:2186d100847c3db37bd8b0ae984f4afe4d934142568f2fa802c825035257c7be` |
+| 7 | `lemma` | [zero_lt_one'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ZeroLEOneNamespaced.lean/declarations/zero-lt-one.md) | 53 | `result-track:6d0bdc76f42ae34e4e94a8f93bbff7e28ecb10dcc34151fa1d63d18e4b43a85a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

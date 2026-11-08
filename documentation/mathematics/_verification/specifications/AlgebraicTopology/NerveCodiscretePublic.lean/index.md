@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/NerveCodiscretePublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/NerveCodiscretePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveCodiscretePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveCodiscretePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [equivFun](../../../../AlgebraicTopology/NerveCodiscretePublic.lean/declarations/equivfun.md) | 33 | `declaration-track:031521ab193ac81d7e8cd3035f341da34dc6a12940ecec75f1f23ade9d158b78` |
-| 2 | `instance` | [(anonymous)](../../../../AlgebraicTopology/NerveCodiscretePublic.lean/declarations/instance.md) | 39 | `declaration-track:ce07a3bb08803154e116ca7fef5be96fa72cf77e14e351240c82740cf062bfad` |
+| 1 | `def` | [equivFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveCodiscretePublic.lean/declarations/equivfun.md) | 33 | `declaration-track:031521ab193ac81d7e8cd3035f341da34dc6a12940ecec75f1f23ade9d158b78` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveCodiscretePublic.lean/declarations/instance.md) | 39 | `declaration-track:ce07a3bb08803154e116ca7fef5be96fa72cf77e14e351240c82740cf062bfad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

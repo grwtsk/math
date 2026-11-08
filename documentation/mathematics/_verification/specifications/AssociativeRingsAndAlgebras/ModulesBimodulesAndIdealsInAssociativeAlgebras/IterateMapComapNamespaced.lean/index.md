@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComapNamespaced.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [iterateMapComap](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComapNamespaced.lean/declarations/iteratemapcomap.md) | 50 | `declaration-track:94ab777b2304e6bc1787cb24e8b180947ab3af094afbe7413316cf2940c6e4f2` |
-| 2 | `theorem` | [iterateMapComap_le_succ](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComapNamespaced.lean/declarations/iteratemapcomap-le-succ.md) | 53 | `result-track:e703a3cdfc6197a0df58490efc55ac88c734149d76ad81d4ae8ab6e2212b64f4` |
-| 3 | `theorem` | [iterateMapComap_eq_succ](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComapNamespaced.lean/declarations/iteratemapcomap-eq-succ.md) | 73 | `result-track:15c5c0d4e2cc945defc4f437ee2d6be0cdc55bd0e9c60a40f47cc31913b9ef87` |
-| 4 | `theorem` | [ker_le_of_iterateMapComap_eq_succ](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComapNamespaced.lean/declarations/ker-le-of-iteratemapcomap-eq-succ.md) | 96 | `result-track:2776bf472d10b58b292371a59931e8421849de8619aefb862fbecf80f2fe2469` |
+| 1 | `def` | [iterateMapComap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComapNamespaced.lean/declarations/iteratemapcomap.md) | 50 | `declaration-track:94ab777b2304e6bc1787cb24e8b180947ab3af094afbe7413316cf2940c6e4f2` |
+| 2 | `theorem` | [iterateMapComap_le_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComapNamespaced.lean/declarations/iteratemapcomap-le-succ.md) | 53 | `result-track:e703a3cdfc6197a0df58490efc55ac88c734149d76ad81d4ae8ab6e2212b64f4` |
+| 3 | `theorem` | [iterateMapComap_eq_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComapNamespaced.lean/declarations/iteratemapcomap-eq-succ.md) | 73 | `result-track:15c5c0d4e2cc945defc4f437ee2d6be0cdc55bd0e9c60a40f47cc31913b9ef87` |
+| 4 | `theorem` | [ker_le_of_iterateMapComap_eq_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComapNamespaced.lean/declarations/ker-le-of-iteratemapcomap-eq-succ.md) | 96 | `result-track:2776bf472d10b58b292371a59931e8421849de8619aefb862fbecf80f2fe2469` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/OreLocalizationCardinalityNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/OreLocalizationCardinalityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OreLocalizationCardinalityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OreLocalizationCardinalityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [oreDiv_one_surjective_of_finite_left](../../../../GroupTheoryAndGeneralizations/OreLocalizationCardinalityNamespaced.lean/declarations/orediv-one-surjective-of-finite-left.md) | 41 | `result-track:086a35df7c1e8f48f946eb6e61e411fcadf45c562e53b71ff9604aac0445debf` |
-| 2 | `theorem` | [oreDiv_one_surjective_of_finite_right](../../../../GroupTheoryAndGeneralizations/OreLocalizationCardinalityNamespaced.lean/declarations/orediv-one-surjective-of-finite-right.md) | 55 | `result-track:789b334f8dc9bc26dca232e67bd1b64891ca45c5940a7b10a31c27e673fecb12` |
-| 3 | `theorem` | [numeratorHom_surjective_of_finite](../../../../GroupTheoryAndGeneralizations/OreLocalizationCardinalityNamespaced.lean/declarations/numeratorhom-surjective-of-finite.md) | 69 | `result-track:efcba54d07f502fa041a3b2bebcecabd609b6e7cde1af63317bf80b5c5a7a34b` |
-| 4 | `theorem` | [cardinalMk_le_max](../../../../GroupTheoryAndGeneralizations/OreLocalizationCardinalityNamespaced.lean/declarations/cardinalmk-le-max.md) | 73 | `result-track:57bd2559f41f41b3e2d5e8f960d80ca3a5ad5510ee535f495425a91a50dab9f8` |
-| 5 | `theorem` | [cardinalMk_le](../../../../GroupTheoryAndGeneralizations/OreLocalizationCardinalityNamespaced.lean/declarations/cardinalmk-le.md) | 88 | `result-track:e47ea1cbd01ce0a12436e4bf13dc80194a4e61d46da79322f21780fe3d4c4402` |
-| 6 | `theorem` | [cardinalMk_le_lift_cardinalMk_of_commute](../../../../GroupTheoryAndGeneralizations/OreLocalizationCardinalityNamespaced.lean/declarations/cardinalmk-le-lift-cardinalmk-of-commute.md) | 94 | `result-track:cb834c1da06e9ccde47c14aeaf9d98f3a2646653cb594250d4edfb3a975c9acf` |
+| 1 | `theorem` | [oreDiv_one_surjective_of_finite_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OreLocalizationCardinalityNamespaced.lean/declarations/orediv-one-surjective-of-finite-left.md) | 41 | `result-track:086a35df7c1e8f48f946eb6e61e411fcadf45c562e53b71ff9604aac0445debf` |
+| 2 | `theorem` | [oreDiv_one_surjective_of_finite_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OreLocalizationCardinalityNamespaced.lean/declarations/orediv-one-surjective-of-finite-right.md) | 55 | `result-track:789b334f8dc9bc26dca232e67bd1b64891ca45c5940a7b10a31c27e673fecb12` |
+| 3 | `theorem` | [numeratorHom_surjective_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OreLocalizationCardinalityNamespaced.lean/declarations/numeratorhom-surjective-of-finite.md) | 69 | `result-track:efcba54d07f502fa041a3b2bebcecabd609b6e7cde1af63317bf80b5c5a7a34b` |
+| 4 | `theorem` | [cardinalMk_le_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OreLocalizationCardinalityNamespaced.lean/declarations/cardinalmk-le-max.md) | 73 | `result-track:57bd2559f41f41b3e2d5e8f960d80ca3a5ad5510ee535f495425a91a50dab9f8` |
+| 5 | `theorem` | [cardinalMk_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OreLocalizationCardinalityNamespaced.lean/declarations/cardinalmk-le.md) | 88 | `result-track:e47ea1cbd01ce0a12436e4bf13dc80194a4e61d46da79322f21780fe3d4c4402` |
+| 6 | `theorem` | [cardinalMk_le_lift_cardinalMk_of_commute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OreLocalizationCardinalityNamespaced.lean/declarations/cardinalmk-le-lift-cardinalmk-of-commute.md) | 94 | `result-track:cb834c1da06e9ccde47c14aeaf9d98f3a2646653cb594250d4edfb3a975c9acf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

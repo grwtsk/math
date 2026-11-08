@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAliasEnergy.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAliasEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAliasEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAliasEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenHighTailComponents`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHighTailComponents.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenHighTailComponents`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHighTailComponents.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [greenAliasResidualEnergy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAliasEnergy.lean/declarations/greenaliasresidualenergy.md) | 16 | `declaration-track:a5ab25e4edd0729c15471b10c2b65e225edf7d1f0aa75091f2a567a19582079c` |
-| 2 | `theorem` | [greenAliasResidualEnergy_le_components](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAliasEnergy.lean/declarations/greenaliasresidualenergy-le-components.md) | 22 | `result-track:4fe697f246d920884daca933d5960b7f07c1f0de2d2813d9f98d4bbc7d8835db` |
-| 3 | `theorem` | [greenAliasResidualA_mul_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAliasEnergy.lean/declarations/greenaliasresiduala-mul-eq.md) | 56 | `result-track:5340857a06df78ec17dbd05e329173f8dc07be6c1209b9b82cedba312ff1e7a7` |
-| 4 | `theorem` | [greenAliasResidualD_mul_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAliasEnergy.lean/declarations/greenaliasresiduald-mul-eq.md) | 65 | `result-track:1fb02ae77ba25e84b6fab99a4020fc5b151651f1682b33478ff0209d0955ca00` |
-| 5 | `theorem` | [greenAliasResidualEnergy_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAliasEnergy.lean/declarations/greenaliasresidualenergy-le.md) | 76 | `result-track:4c2d28b66e7ec3a043a842ff7b4d7e27d4b6a8da918d35ef08345b83bbd0e768` |
+| 1 | `def` | [greenAliasResidualEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAliasEnergy.lean/declarations/greenaliasresidualenergy.md) | 16 | `declaration-track:a5ab25e4edd0729c15471b10c2b65e225edf7d1f0aa75091f2a567a19582079c` |
+| 2 | `theorem` | [greenAliasResidualEnergy_le_components](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAliasEnergy.lean/declarations/greenaliasresidualenergy-le-components.md) | 22 | `result-track:4fe697f246d920884daca933d5960b7f07c1f0de2d2813d9f98d4bbc7d8835db` |
+| 3 | `theorem` | [greenAliasResidualA_mul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAliasEnergy.lean/declarations/greenaliasresiduala-mul-eq.md) | 56 | `result-track:5340857a06df78ec17dbd05e329173f8dc07be6c1209b9b82cedba312ff1e7a7` |
+| 4 | `theorem` | [greenAliasResidualD_mul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAliasEnergy.lean/declarations/greenaliasresiduald-mul-eq.md) | 65 | `result-track:1fb02ae77ba25e84b6fab99a4020fc5b151651f1682b33478ff0209d0955ca00` |
+| 5 | `theorem` | [greenAliasResidualEnergy_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAliasEnergy.lean/declarations/greenaliasresidualenergy-le.md) | 76 | `result-track:4c2d28b66e7ec3a043a842ff7b4d7e27d4b6a8da918d35ef08345b83bbd0e768` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionSubsingletonNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionSubsingletonNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionSubsingletonNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionSubsingletonNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rank_subsingleton'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionSubsingletonNamespaced.lean/declarations/rank-subsingleton-source-edition-2.md) | 27 | `result-track:b9881b953669ec7b1814c33af8be5a1a7074872a06bbd05ef031615ee327111b` |
-| 2 | `theorem` | [rank_punit](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionSubsingletonNamespaced.lean/declarations/rank-punit.md) | 31 | `result-track:a0fa2df2c2edea2d1bdf71e9bfc575ec6e94784247c8365af75dd20abc160f0f` |
-| 3 | `theorem` | [rank_bot](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionSubsingletonNamespaced.lean/declarations/rank-bot.md) | 33 | `result-track:41ebe908b532fc9cf0b9c909751269566e66f72c0d92af451040bbee04d21dbf` |
-| 4 | `theorem` | [rank_subsingleton](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionSubsingletonNamespaced.lean/declarations/rank-subsingleton.md) | 38 | `result-track:a6e8e54c4e8544de91e33a95723347cc4ebefff3bd6c54e3da37a390a5e9dbd5` |
+| 1 | `theorem` | [rank_subsingleton'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionSubsingletonNamespaced.lean/declarations/rank-subsingleton-source-edition-2.md) | 27 | `result-track:b9881b953669ec7b1814c33af8be5a1a7074872a06bbd05ef031615ee327111b` |
+| 2 | `theorem` | [rank_punit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionSubsingletonNamespaced.lean/declarations/rank-punit.md) | 31 | `result-track:a0fa2df2c2edea2d1bdf71e9bfc575ec6e94784247c8365af75dd20abc160f0f` |
+| 3 | `theorem` | [rank_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionSubsingletonNamespaced.lean/declarations/rank-bot.md) | 33 | `result-track:41ebe908b532fc9cf0b9c909751269566e66f72c0d92af451040bbee04d21dbf` |
+| 4 | `theorem` | [rank_subsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionSubsingletonNamespaced.lean/declarations/rank-subsingleton.md) | 38 | `result-track:a6e8e54c4e8544de91e33a95723347cc4ebefff3bd6c54e3da37a390a5e9dbd5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonAdjunctionCompatibility.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonAdjunctionCompatibility.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionCompatibility.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionCompatibility.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernelBridge`](../../../../GeneralTopology/SurfacePolygonDiskKernelBridge.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernelBridge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskKernelBridge.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CompatibleDiskBoundary](../../../../GeneralTopology/SurfacePolygonAdjunctionCompatibility.lean/declarations/compatiblediskboundary.md) | 34 | `declaration-track:8bc76f7559769647f15791323bb61079cd905873f0c3ac5f4f6af659919b1c9e` |
-| 2 | `theorem` | [compatible_of_filledMap](../../../../GeneralTopology/SurfacePolygonAdjunctionCompatibility.lean/declarations/compatible-of-filledmap.md) | 45 | `result-track:9bf5b9b2c642863f7e4a491469940ecebdc9c9bca987228dace599871427daef` |
-| 3 | `theorem` | [continuous_disk_restriction](../../../../GeneralTopology/SurfacePolygonAdjunctionCompatibility.lean/declarations/continuous-disk-restriction.md) | 54 | `result-track:cddd3a712f541a4087eedc7d079f045e1b8507574f4d5eef085339d546b42ae0` |
-| 4 | `theorem` | [continuous_boundary_restriction](../../../../GeneralTopology/SurfacePolygonAdjunctionCompatibility.lean/declarations/continuous-boundary-restriction.md) | 63 | `result-track:9f6e9978decc2b394f1c944669471c2c8528cb9b89cd2329cdde8ceb650c777d` |
-| 5 | `theorem` | [filledMap_ext_of_disk](../../../../GeneralTopology/SurfacePolygonAdjunctionCompatibility.lean/declarations/filledmap-ext-of-disk.md) | 72 | `result-track:40ca3a11065a476f5d44b501467dd5e87a19a00eedd2d4d423da4d2983a4bd33` |
-| 6 | `theorem` | [filledMap_continuous_iff_disk](../../../../GeneralTopology/SurfacePolygonAdjunctionCompatibility.lean/declarations/filledmap-continuous-iff-disk.md) | 82 | `result-track:2f89cfd7914b8c19f916cc74b1b6a4fb2655cf3b00ad692a1c6d808586d3d516` |
+| 1 | `def` | [CompatibleDiskBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionCompatibility.lean/declarations/compatiblediskboundary.md) | 34 | `declaration-track:8bc76f7559769647f15791323bb61079cd905873f0c3ac5f4f6af659919b1c9e` |
+| 2 | `theorem` | [compatible_of_filledMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionCompatibility.lean/declarations/compatible-of-filledmap.md) | 45 | `result-track:9bf5b9b2c642863f7e4a491469940ecebdc9c9bca987228dace599871427daef` |
+| 3 | `theorem` | [continuous_disk_restriction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionCompatibility.lean/declarations/continuous-disk-restriction.md) | 54 | `result-track:cddd3a712f541a4087eedc7d079f045e1b8507574f4d5eef085339d546b42ae0` |
+| 4 | `theorem` | [continuous_boundary_restriction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionCompatibility.lean/declarations/continuous-boundary-restriction.md) | 63 | `result-track:9f6e9978decc2b394f1c944669471c2c8528cb9b89cd2329cdde8ceb650c777d` |
+| 5 | `theorem` | [filledMap_ext_of_disk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionCompatibility.lean/declarations/filledmap-ext-of-disk.md) | 72 | `result-track:40ca3a11065a476f5d44b501467dd5e87a19a00eedd2d4d423da4d2983a4bd33` |
+| 6 | `theorem` | [filledMap_continuous_iff_disk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionCompatibility.lean/declarations/filledmap-continuous-iff-disk.md) | 82 | `result-track:2f89cfd7914b8c19f916cc74b1b6a4fb2655cf3b00ad692a1c6d808586d3d516` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

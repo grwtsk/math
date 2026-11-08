@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteSurgeryAndActionCertificates.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteSurgeryAndActionCertificates.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteSurgeryAndActionCertificates.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteSurgeryAndActionCertificates.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `BitMatrix.Geometry.GlobalProjection` — import line 19; external provider; requires a separately pinned dependency.
-- [Locus Operations And Support](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LocusOperationsAndSupport.lean/index.md) — import line 21; pinned internal source present.
+- [Locus Operations And Support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LocusOperationsAndSupport.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SubmatrixSurgery](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteSurgeryAndActionCertificates.lean/declarations/submatrixsurgery.md) | 38 | `declaration-track:11f93e224f571ac67c648eb221fd694652ac95e4edfa08b583596f0f396e5aff` |
-| 2 | `def` | [replace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteSurgeryAndActionCertificates.lean/declarations/replace.md) | 52 | `declaration-track:98a102757c5695255e7331984d8061850dd8c2d9fab85649a6494e0b0a13f869` |
-| 3 | `theorem` | [replace_result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteSurgeryAndActionCertificates.lean/declarations/replace-result.md) | 62 | `result-track:5d1253e200bcad3b41bab97f27922ac4286bdf4ad13b48629686cc4adbd87cdf` |
-| 4 | `theorem` | [difference_support_inside](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteSurgeryAndActionCertificates.lean/declarations/difference-support-inside.md) | 68 | `result-track:26ebe6af97440cab399c3327ac725021e9062abe476432524c6b7dc5d0a2edfc` |
-| 5 | `structure` | [CertifiedActionMatrixSurgery](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteSurgeryAndActionCertificates.lean/declarations/certifiedactionmatrixsurgery.md) | 79 | `declaration-track:18d6ee709a12dc2ef70ead4c5908611e48a322dd6888213c116b6615bfe40344` |
+| 1 | `structure` | [SubmatrixSurgery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteSurgeryAndActionCertificates.lean/declarations/submatrixsurgery.md) | 38 | `declaration-track:11f93e224f571ac67c648eb221fd694652ac95e4edfa08b583596f0f396e5aff` |
+| 2 | `def` | [replace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteSurgeryAndActionCertificates.lean/declarations/replace.md) | 52 | `declaration-track:98a102757c5695255e7331984d8061850dd8c2d9fab85649a6494e0b0a13f869` |
+| 3 | `theorem` | [replace_result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteSurgeryAndActionCertificates.lean/declarations/replace-result.md) | 62 | `result-track:5d1253e200bcad3b41bab97f27922ac4286bdf4ad13b48629686cc4adbd87cdf` |
+| 4 | `theorem` | [difference_support_inside](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteSurgeryAndActionCertificates.lean/declarations/difference-support-inside.md) | 68 | `result-track:26ebe6af97440cab399c3327ac725021e9062abe476432524c6b7dc5d0a2edfc` |
+| 5 | `structure` | [CertifiedActionMatrixSurgery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteSurgeryAndActionCertificates.lean/declarations/certifiedactionmatrixsurgery.md) | 79 | `declaration-track:18d6ee709a12dc2ef70ead4c5908611e48a322dd6888213c116b6615bfe40344` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

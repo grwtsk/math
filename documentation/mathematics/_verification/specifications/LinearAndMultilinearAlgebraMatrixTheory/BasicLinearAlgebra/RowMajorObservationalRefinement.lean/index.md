@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Surgery.Submatrix` — import line 19; external provider; requires a separately pinned dependency.
 - `BitMatrix.Network.IntegralPermutationLift` — import line 20; external provider; requires a separately pinned dependency.
-- [Noncontiguous Local Replacement](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NoncontiguousLocalReplacement.lean/index.md) — import line 22; pinned internal source present.
+- [Noncontiguous Local Replacement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NoncontiguousLocalReplacement.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sampleMatrixArrayBacked](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/declarations/samplematrixarraybacked.md) | 40 | `declaration-track:f38e0c3cca26e31e566891ab35ebf05dc1cc8c5cc464a8e8ae5fab9524f12d5a` |
-| 2 | `def` | [replacementArrayBacked](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/declarations/replacementarraybacked.md) | 43 | `declaration-track:6f0d6a51aa3beba8c4911ea3c444c796697a29a2df8376384c33b429ef5edb0b` |
-| 3 | `def` | [sampleRuntimeSurgery](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/declarations/sampleruntimesurgery.md) | 47 | `declaration-track:eff80a88cc1ce686b59a4222a5cb9e0f425458c6c44e8a62ef93b1b40872ea33` |
-| 4 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/declarations/example-source-edition-4.md) | 52 | `declaration-track:e513545626c4dee5ac30e1099d82c2a034ed30a142f5fc14326c1a6587d631f9` |
-| 5 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/declarations/example.md) | 54 | `declaration-track:19af5606d6f4c7d51beed83696ecd95b919ae975950da510f147c196457e0fe4` |
-| 6 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/declarations/example-source-edition-6.md) | 56 | `declaration-track:fcee3712cf1f4883bcf6eee06986b091d7d0c8d2a890b2516849d34192da2a39` |
-| 7 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/declarations/example-source-edition-5.md) | 69 | `declaration-track:f10e6a55beed8db2a44ce7ba6bfd22662d071b0ae85fb4794539f6ada3552f93` |
-| 8 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/declarations/example-source-edition-3.md) | 74 | `declaration-track:551af9d161797661f42a5289d292b0ea98f0bff961bdf7126c19a3324f26e46b` |
-| 9 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/declarations/example-source-edition-2.md) | 79 | `declaration-track:47891fcba467e6bbe1883045281418194e85e064d108e07e61dea1a36f9e93ab` |
+| 1 | `def` | [sampleMatrixArrayBacked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/declarations/samplematrixarraybacked.md) | 40 | `declaration-track:f38e0c3cca26e31e566891ab35ebf05dc1cc8c5cc464a8e8ae5fab9524f12d5a` |
+| 2 | `def` | [replacementArrayBacked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/declarations/replacementarraybacked.md) | 43 | `declaration-track:6f0d6a51aa3beba8c4911ea3c444c796697a29a2df8376384c33b429ef5edb0b` |
+| 3 | `def` | [sampleRuntimeSurgery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/declarations/sampleruntimesurgery.md) | 47 | `declaration-track:eff80a88cc1ce686b59a4222a5cb9e0f425458c6c44e8a62ef93b1b40872ea33` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/declarations/example-source-edition-4.md) | 52 | `declaration-track:e513545626c4dee5ac30e1099d82c2a034ed30a142f5fc14326c1a6587d631f9` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/declarations/example.md) | 54 | `declaration-track:19af5606d6f4c7d51beed83696ecd95b919ae975950da510f147c196457e0fe4` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/declarations/example-source-edition-6.md) | 56 | `declaration-track:fcee3712cf1f4883bcf6eee06986b091d7d0c8d2a890b2516849d34192da2a39` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/declarations/example-source-edition-5.md) | 69 | `declaration-track:f10e6a55beed8db2a44ce7ba6bfd22662d071b0ae85fb4794539f6ada3552f93` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/declarations/example-source-edition-3.md) | 74 | `declaration-track:551af9d161797661f42a5289d292b0ea98f0bff961bdf7126c19a3324f26e46b` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorObservationalRefinement.lean/declarations/example-source-edition-2.md) | 79 | `declaration-track:47891fcba467e6bbe1883045281418194e85e064d108e07e61dea1a36f9e93ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

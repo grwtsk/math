@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Rep](../../../../AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/rep.md) | 29 | `declaration-track:7156210bfee3ab1f1f0929f816b4625fae9f658fc3de0ab87ba6687e1a946f00` |
-| 2 | `def` | [Rep.ofRuntime](../../../../AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/rep-ofruntime.md) | 41 | `declaration-track:5cbafec7fc5b9e9ab6999b5010a08def39bd8cf783e1c93b269eaf1f077e7d48` |
-| 3 | `def` | [Rep.Denote](../../../../AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/rep-denote.md) | 47 | `declaration-track:dcbdf627bbf00b10695fe9b59a54889e50f13409ebb8554ae47779e272bc9633` |
-| 4 | `inductive` | [ReducerIR](../../../../AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/reducerir.md) | 59 | `declaration-track:027e5eb388b963c76921fbb20cc11e57d688768d6f033d4787d5549c6f06478d` |
-| 5 | `def` | [xorFamily](../../../../AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/xorfamily.md) | 93 | `declaration-track:2d87c6284873a5c928d46fccffd64d67fbec1d30c13b2b7f67377ef3d2703d02` |
-| 6 | `def` | [eval](../../../../AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/eval.md) | 97 | `declaration-track:09c3dde0d2496aaf87dcbe90278eeb8ab17d6a67612981a89d89c4e71fb02bc4` |
-| 7 | `theorem` | [eval_identity](../../../../AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/eval-identity.md) | 128 | `result-track:fa0561ba87f36a4862798a7c4ed7e67e378ef692a3349424804cb371e740d569` |
-| 8 | `theorem` | [eval_compose](../../../../AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/eval-compose.md) | 133 | `result-track:0a0a3e1ad7b57dcfc870588a7d2bf896cd1666b8a51dbfbb4ee95ad1fcaf1887` |
-| 9 | `def` | [describe](../../../../AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/describe.md) | 141 | `declaration-track:f68c552c060c480ee0b1146399bd90db197c0c53c0baac05a219069af2ab54db` |
-| 10 | `def` | [ofRuntime](../../../../AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/ofruntime.md) | 168 | `declaration-track:6007cb83cce06ca06b636c01700c925379a2179379c031d9004a7e44469669e4` |
-| 11 | `structure` | [CertifiedReducerIR](../../../../AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/certifiedreducerir.md) | 194 | `declaration-track:f167da8b13edb6f1ede87c57e4b67364c870de3c8d74f7fb840428f6f61305aa` |
-| 12 | `def` | [toObserverReducer](../../../../AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/toobserverreducer.md) | 213 | `declaration-track:aee1b7c8bb12e0f95cb9ca57b151cdd966294bfb4fc5b7626452f3f6a18f7dfd` |
+| 1 | `inductive` | [Rep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/rep.md) | 29 | `declaration-track:7156210bfee3ab1f1f0929f816b4625fae9f658fc3de0ab87ba6687e1a946f00` |
+| 2 | `def` | [Rep.ofRuntime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/rep-ofruntime.md) | 41 | `declaration-track:5cbafec7fc5b9e9ab6999b5010a08def39bd8cf783e1c93b269eaf1f077e7d48` |
+| 3 | `def` | [Rep.Denote](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/rep-denote.md) | 47 | `declaration-track:dcbdf627bbf00b10695fe9b59a54889e50f13409ebb8554ae47779e272bc9633` |
+| 4 | `inductive` | [ReducerIR](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/reducerir.md) | 59 | `declaration-track:027e5eb388b963c76921fbb20cc11e57d688768d6f033d4787d5549c6f06478d` |
+| 5 | `def` | [xorFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/xorfamily.md) | 93 | `declaration-track:2d87c6284873a5c928d46fccffd64d67fbec1d30c13b2b7f67377ef3d2703d02` |
+| 6 | `def` | [eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/eval.md) | 97 | `declaration-track:09c3dde0d2496aaf87dcbe90278eeb8ab17d6a67612981a89d89c4e71fb02bc4` |
+| 7 | `theorem` | [eval_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/eval-identity.md) | 128 | `result-track:fa0561ba87f36a4862798a7c4ed7e67e378ef692a3349424804cb371e740d569` |
+| 8 | `theorem` | [eval_compose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/eval-compose.md) | 133 | `result-track:0a0a3e1ad7b57dcfc870588a7d2bf896cd1666b8a51dbfbb4ee95ad1fcaf1887` |
+| 9 | `def` | [describe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/describe.md) | 141 | `declaration-track:f68c552c060c480ee0b1146399bd90db197c0c53c0baac05a219069af2ab54db` |
+| 10 | `def` | [ofRuntime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/ofruntime.md) | 168 | `declaration-track:6007cb83cce06ca06b636c01700c925379a2179379c031d9004a7e44469669e4` |
+| 11 | `structure` | [CertifiedReducerIR](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/certifiedreducerir.md) | 194 | `declaration-track:f167da8b13edb6f1ede87c57e4b67364c870de3c8d74f7fb840428f6f61305aa` |
+| 12 | `def` | [toObserverReducer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/MatrixReducerIREdition2.lean/declarations/toobserverreducer.md) | 213 | `declaration-track:aee1b7c8bb12e0f95cb9ca57b151cdd966294bfb4fc5b7626452f3f6a18f7dfd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

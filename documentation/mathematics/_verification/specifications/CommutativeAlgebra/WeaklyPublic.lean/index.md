@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/WeaklyPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/WeaklyPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeaklyPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeaklyPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Algebra.WeaklyQuasiFiniteAt](../../../../CommutativeAlgebra/WeaklyPublic.lean/declarations/algebra-weaklyquasifiniteat.md) | 50 | `declaration-track:e1fbe1d7a5ba3cfce5e0c10e0e8a769d9fb8ce224441bc98e39c614dd47115ec` |
-| 2 | `lemma` | [Algebra.weaklyQuasiFiniteAt_iff](../../../../CommutativeAlgebra/WeaklyPublic.lean/declarations/algebra-weaklyquasifiniteat-iff.md) | 54 | `result-track:137bdda42a32818f28b46572f2a05aad31554b42d24b458f03655c609ffec7fa` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/WeaklyPublic.lean/declarations/instance.md) | 78 | `declaration-track:91d7e3ab41581a14874fa60b2f5ebdcaece2cf4a2740f3aa901baf2cbafb42f9` |
-| 4 | `lemma` | [of_algHom_localization](../../../../CommutativeAlgebra/WeaklyPublic.lean/declarations/of-alghom-localization.md) | 83 | `result-track:f468bd8cc99386a9ecf5e084d88f621170fa9fba6cbd54923d1a59f87e27391e` |
-| 5 | `lemma` | [of_surjectiveOnStalks](../../../../CommutativeAlgebra/WeaklyPublic.lean/declarations/of-surjectiveonstalks.md) | 107 | `result-track:9173a036aae23c40454996d5421bacff5fce1b95e0202eeea46aa698cd4e0d41` |
-| 6 | `instance` | [comap_algEquiv](../../../../CommutativeAlgebra/WeaklyPublic.lean/declarations/comap-algequiv.md) | 115 | `declaration-track:4df496e722f5abe56fda38767128e830a2fd6083a64efe969822c60501a950b0` |
-| 7 | `lemma` | [finite_residueField](../../../../CommutativeAlgebra/WeaklyPublic.lean/declarations/finite-residuefield.md) | 122 | `result-track:ae591da3163e904d0b354939f96fff054a7e3d91725d5b74154875847adcee2f` |
-| 8 | `lemma` | [finite_locoalization](../../../../CommutativeAlgebra/WeaklyPublic.lean/declarations/finite-locoalization.md) | 137 | `result-track:cbfd951a7f122f7aed01492ef532a371a17ee209e5360013455df67822c0fc34` |
-| 9 | `lemma` | [eq_of_le_of_under_eq](../../../../CommutativeAlgebra/WeaklyPublic.lean/declarations/eq-of-le-of-under-eq.md) | 146 | `result-track:17b137aa785ae83062bc4b865549e23c5462981488a277039e1e9a7ab19dc665` |
-| 10 | `lemma` | [baseChange](../../../../CommutativeAlgebra/WeaklyPublic.lean/declarations/basechange.md) | 168 | `result-track:0f33bfd87dcf8cb4d26753f236435e0172f6fbe6680ed93ad7e03d0b9abbf6a3` |
-| 11 | `lemma` | [of_restrictScalars](../../../../CommutativeAlgebra/WeaklyPublic.lean/declarations/of-restrictscalars.md) | 211 | `result-track:2c192d8693ec76514868c81baed0b88b2de90ee5a859b2b13daaa29556945575` |
-| 12 | `lemma` | [of_quasiFiniteAt_residueField](../../../../CommutativeAlgebra/WeaklyPublic.lean/declarations/of-quasifiniteat-residuefield.md) | 230 | `result-track:869154e64fe8be8f80c6b6ae34bed1913f1010e836bb17ffcd60ec4ac4f675c5` |
+| 1 | `abbrev` | [Algebra.WeaklyQuasiFiniteAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeaklyPublic.lean/declarations/algebra-weaklyquasifiniteat.md) | 50 | `declaration-track:e1fbe1d7a5ba3cfce5e0c10e0e8a769d9fb8ce224441bc98e39c614dd47115ec` |
+| 2 | `lemma` | [Algebra.weaklyQuasiFiniteAt_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeaklyPublic.lean/declarations/algebra-weaklyquasifiniteat-iff.md) | 54 | `result-track:137bdda42a32818f28b46572f2a05aad31554b42d24b458f03655c609ffec7fa` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeaklyPublic.lean/declarations/instance.md) | 78 | `declaration-track:91d7e3ab41581a14874fa60b2f5ebdcaece2cf4a2740f3aa901baf2cbafb42f9` |
+| 4 | `lemma` | [of_algHom_localization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeaklyPublic.lean/declarations/of-alghom-localization.md) | 83 | `result-track:f468bd8cc99386a9ecf5e084d88f621170fa9fba6cbd54923d1a59f87e27391e` |
+| 5 | `lemma` | [of_surjectiveOnStalks](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeaklyPublic.lean/declarations/of-surjectiveonstalks.md) | 107 | `result-track:9173a036aae23c40454996d5421bacff5fce1b95e0202eeea46aa698cd4e0d41` |
+| 6 | `instance` | [comap_algEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeaklyPublic.lean/declarations/comap-algequiv.md) | 115 | `declaration-track:4df496e722f5abe56fda38767128e830a2fd6083a64efe969822c60501a950b0` |
+| 7 | `lemma` | [finite_residueField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeaklyPublic.lean/declarations/finite-residuefield.md) | 122 | `result-track:ae591da3163e904d0b354939f96fff054a7e3d91725d5b74154875847adcee2f` |
+| 8 | `lemma` | [finite_locoalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeaklyPublic.lean/declarations/finite-locoalization.md) | 137 | `result-track:cbfd951a7f122f7aed01492ef532a371a17ee209e5360013455df67822c0fc34` |
+| 9 | `lemma` | [eq_of_le_of_under_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeaklyPublic.lean/declarations/eq-of-le-of-under-eq.md) | 146 | `result-track:17b137aa785ae83062bc4b865549e23c5462981488a277039e1e9a7ab19dc665` |
+| 10 | `lemma` | [baseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeaklyPublic.lean/declarations/basechange.md) | 168 | `result-track:0f33bfd87dcf8cb4d26753f236435e0172f6fbe6680ed93ad7e03d0b9abbf6a3` |
+| 11 | `lemma` | [of_restrictScalars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeaklyPublic.lean/declarations/of-restrictscalars.md) | 211 | `result-track:2c192d8693ec76514868c81baed0b88b2de90ee5a859b2b13daaa29556945575` |
+| 12 | `lemma` | [of_quasiFiniteAt_residueField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeaklyPublic.lean/declarations/of-quasifiniteat-residuefield.md) | 230 | `result-track:869154e64fe8be8f80c6b6ae34bed1913f1010e836bb17ffcd60ec4ac4f675c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

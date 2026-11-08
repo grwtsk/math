@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CoreNamespacedEdition1.lean/index.md) · [Full source](../../../../Combinatorics/CoreNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MathematicalTaxon](../../../../Combinatorics/CoreNamespacedEdition1.lean/declarations/mathematicaltaxon.md) | 18 | `declaration-track:272253fc07e736c5ae2bc7ef03617986825ef2366e54663102459cb7c0aa595e` |
-| 2 | `def` | [RolesSeparated](../../../../Combinatorics/CoreNamespacedEdition1.lean/declarations/rolesseparated.md) | 34 | `declaration-track:3a0f86a28768c021034257e64a71c9c217bd5801bc0df3aaeffcccc9b1614dcf` |
-| 3 | `def` | [DomainsSeparated](../../../../Combinatorics/CoreNamespacedEdition1.lean/declarations/domainsseparated.md) | 37 | `declaration-track:c286fc047e6a037b210ab0da9d33284796ccecda17083fe4ee3043edad35a53f` |
-| 4 | `theorem` | [primaryRole_unique](../../../../Combinatorics/CoreNamespacedEdition1.lean/declarations/primaryrole-unique.md) | 40 | `result-track:8221ba5d8cf8329afc76f59deacf978182c79a0d87814563d64d610a5a9a0c7a` |
+| 1 | `structure` | [MathematicalTaxon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition1.lean/declarations/mathematicaltaxon.md) | 18 | `declaration-track:272253fc07e736c5ae2bc7ef03617986825ef2366e54663102459cb7c0aa595e` |
+| 2 | `def` | [RolesSeparated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition1.lean/declarations/rolesseparated.md) | 34 | `declaration-track:3a0f86a28768c021034257e64a71c9c217bd5801bc0df3aaeffcccc9b1614dcf` |
+| 3 | `def` | [DomainsSeparated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition1.lean/declarations/domainsseparated.md) | 37 | `declaration-track:c286fc047e6a037b210ab0da9d33284796ccecda17083fe4ee3043edad35a53f` |
+| 4 | `theorem` | [primaryRole_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedEdition1.lean/declarations/primaryrole-unique.md) | 40 | `result-track:8221ba5d8cf8329afc76f59deacf978182c79a0d87814563d64d610a5a9a0c7a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

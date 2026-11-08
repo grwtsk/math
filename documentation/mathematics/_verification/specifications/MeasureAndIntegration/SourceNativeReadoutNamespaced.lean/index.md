@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [weightedCorrelation](../../../../MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/declarations/weightedcorrelation.md) | 34 | `declaration-track:c1d0a5fd72bf00995e69714e1a613f43b5bc2649d65b917da6124deb75c9b38c` |
-| 2 | `theorem` | [nativeMellin_two_eq_sourceFourier](../../../../MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/declarations/nativemellin-two-eq-sourcefourier.md) | 38 | `result-track:b594fe8d41ed36d1e8b9935dc14633a34f5b88b50d2c04cbe61d379b2cab7e2d` |
-| 3 | `theorem` | [weightedCorrelation_continuous](../../../../MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/declarations/weightedcorrelation-continuous.md) | 52 | `result-track:fdae28300ccd8eac7e61d3a8bf953d1f5278a48ef95608f11f7f64a62d114123` |
-| 4 | `theorem` | [weightedCorrelation_compact](../../../../MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/declarations/weightedcorrelation-compact.md) | 56 | `result-track:7d3c5a056fdd1d73aa91bc2aec0098b41a3207de98f2908a44f883156c71ddd9` |
-| 5 | `theorem` | [integrable_of_height_decay](../../../../MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/declarations/integrable-of-height-decay.md) | 60 | `result-track:606cbc76ae8537699d9cb0a6e85f01f7e122e273f20c36c323aa4b07ba68c53e` |
-| 6 | `theorem` | [nativeMellin_two_integrable](../../../../MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/declarations/nativemellin-two-integrable.md) | 98 | `result-track:d1e102f7085389d87dae2809779784fdcce1a896f08183b8b26b7eee8a1cf5ea` |
-| 7 | `theorem` | [sourceFourier_inversion](../../../../MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/declarations/sourcefourier-inversion.md) | 107 | `result-track:d3954fa9fc40f3a50cc0633a95ee5d0a96783439afc6897e99f13740ae768aae` |
-| 8 | `theorem` | [weightedCorrelation_eq_native_inverse](../../../../MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/declarations/weightedcorrelation-eq-native-inverse.md) | 145 | `result-track:2278af3a6303635adde62dbb2f2d0a4e3bc76e8dc8536e7fed234124dadcd612` |
+| 1 | `def` | [weightedCorrelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/declarations/weightedcorrelation.md) | 34 | `declaration-track:c1d0a5fd72bf00995e69714e1a613f43b5bc2649d65b917da6124deb75c9b38c` |
+| 2 | `theorem` | [nativeMellin_two_eq_sourceFourier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/declarations/nativemellin-two-eq-sourcefourier.md) | 38 | `result-track:b594fe8d41ed36d1e8b9935dc14633a34f5b88b50d2c04cbe61d379b2cab7e2d` |
+| 3 | `theorem` | [weightedCorrelation_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/declarations/weightedcorrelation-continuous.md) | 52 | `result-track:fdae28300ccd8eac7e61d3a8bf953d1f5278a48ef95608f11f7f64a62d114123` |
+| 4 | `theorem` | [weightedCorrelation_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/declarations/weightedcorrelation-compact.md) | 56 | `result-track:7d3c5a056fdd1d73aa91bc2aec0098b41a3207de98f2908a44f883156c71ddd9` |
+| 5 | `theorem` | [integrable_of_height_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/declarations/integrable-of-height-decay.md) | 60 | `result-track:606cbc76ae8537699d9cb0a6e85f01f7e122e273f20c36c323aa4b07ba68c53e` |
+| 6 | `theorem` | [nativeMellin_two_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/declarations/nativemellin-two-integrable.md) | 98 | `result-track:d1e102f7085389d87dae2809779784fdcce1a896f08183b8b26b7eee8a1cf5ea` |
+| 7 | `theorem` | [sourceFourier_inversion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/declarations/sourcefourier-inversion.md) | 107 | `result-track:d3954fa9fc40f3a50cc0633a95ee5d0a96783439afc6897e99f13740ae768aae` |
+| 8 | `theorem` | [weightedCorrelation_eq_native_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNativeReadoutNamespaced.lean/declarations/weightedcorrelation-eq-native-inverse.md) | 145 | `result-track:2278af3a6303635adde62dbb2f2d0a4e3bc76e8dc8536e7fed234124dadcd612` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

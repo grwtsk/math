@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ZsqrtdPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ZsqrtdPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ZsqrtdPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ZsqrtdPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [evalInt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ZsqrtdPublic.lean/declarations/evalint.md) | 29 | `declaration-track:6d980fba40aa215afab6bad65d1e5af7ec97cd42f4975381353253f15e487fcf` |
-| 2 | `def` | [evalZsqrtdEntry](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ZsqrtdPublic.lean/declarations/evalzsqrtdentry.md) | 39 | `declaration-track:c09cbe0d68acb1f2510eb4b00fc688632a0ea200a3fcbf9301c6d2bee5137b43` |
-| 3 | `def` | [zsqrtdProducer](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ZsqrtdPublic.lean/declarations/zsqrtdproducer.md) | 47 | `declaration-track:e3b2d8f3655d3c30e63d5e5c252f61b38a8b5a930ce84cef6e0a8769dabc8fc5` |
-| 4 | `def` | [zsqrtdExt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ZsqrtdPublic.lean/declarations/zsqrtdext.md) | 67 | `declaration-track:fd021b1e2a73f236505ad6f169449aea56561f84b04dc4c44c121129998dc161` |
+| 1 | `def` | [evalInt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ZsqrtdPublic.lean/declarations/evalint.md) | 29 | `declaration-track:6d980fba40aa215afab6bad65d1e5af7ec97cd42f4975381353253f15e487fcf` |
+| 2 | `def` | [evalZsqrtdEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ZsqrtdPublic.lean/declarations/evalzsqrtdentry.md) | 39 | `declaration-track:c09cbe0d68acb1f2510eb4b00fc688632a0ea200a3fcbf9301c6d2bee5137b43` |
+| 3 | `def` | [zsqrtdProducer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ZsqrtdPublic.lean/declarations/zsqrtdproducer.md) | 47 | `declaration-track:e3b2d8f3655d3c30e63d5e5c252f61b38a8b5a930ce84cef6e0a8769dabc8fc5` |
+| 4 | `def` | [zsqrtdExt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ZsqrtdPublic.lean/declarations/zsqrtdext.md) | 67 | `declaration-track:fd021b1e2a73f236505ad6f169449aea56561f84b04dc4c44c121129998dc161` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

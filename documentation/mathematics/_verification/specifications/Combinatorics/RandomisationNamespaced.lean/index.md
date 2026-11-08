@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RandomisationNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/RandomisationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RandomisationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RandomisationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [AddDissociated.randomisation](../../../../Combinatorics/RandomisationNamespaced.lean/declarations/adddissociated-randomisation.md) | 34 | `result-track:af84b77ec2d07e92dcc4dc771cac8924c8b585b1fce8d8ca846294e921b762ec` |
+| 1 | `lemma` | [AddDissociated.randomisation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RandomisationNamespaced.lean/declarations/adddissociated-randomisation.md) | 34 | `result-track:af84b77ec2d07e92dcc4dc771cac8924c8b585b1fce8d8ca846294e921b762ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

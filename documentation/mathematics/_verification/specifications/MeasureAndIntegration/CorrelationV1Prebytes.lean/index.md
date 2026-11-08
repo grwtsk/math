@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CorrelationV1Prebytes.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CorrelationV1Prebytes.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationV1Prebytes.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationV1Prebytes.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceCorrelation_eq_inner](../../../../MeasureAndIntegration/CorrelationV1Prebytes.lean/declarations/sourcecorrelation-eq-inner.md) | 26 | `result-track:18d6e31fa83231d1658acc554b267b72d7de2b6d305dd4101f46b40caad3fd63` |
-| 2 | `def` | [correlationScaleDerivative](../../../../MeasureAndIntegration/CorrelationV1Prebytes.lean/declarations/correlationscalederivative.md) | 50 | `declaration-track:fd9a1274e83da831261aa03b29fad68eff5038eba86483466008cb578766859a` |
-| 3 | `theorem` | [sourceCorrelation_hasDerivAt_scale](../../../../MeasureAndIntegration/CorrelationV1Prebytes.lean/declarations/sourcecorrelation-hasderivat-scale.md) | 55 | `result-track:bc271e6a40d5a4679eaca979ce7362270183a3d283083c9a53eb2af13066eba9` |
-| 4 | `theorem` | [sourceCorrelation_contDiffAt_scale](../../../../MeasureAndIntegration/CorrelationV1Prebytes.lean/declarations/sourcecorrelation-contdiffat-scale.md) | 73 | `result-track:edb72b4513200163770ee32ab5c62c0c9a8b776a915716eb42b1e79c15e48303` |
+| 1 | `theorem` | [sourceCorrelation_eq_inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationV1Prebytes.lean/declarations/sourcecorrelation-eq-inner.md) | 26 | `result-track:18d6e31fa83231d1658acc554b267b72d7de2b6d305dd4101f46b40caad3fd63` |
+| 2 | `def` | [correlationScaleDerivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationV1Prebytes.lean/declarations/correlationscalederivative.md) | 50 | `declaration-track:fd9a1274e83da831261aa03b29fad68eff5038eba86483466008cb578766859a` |
+| 3 | `theorem` | [sourceCorrelation_hasDerivAt_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationV1Prebytes.lean/declarations/sourcecorrelation-hasderivat-scale.md) | 55 | `result-track:bc271e6a40d5a4679eaca979ce7362270183a3d283083c9a53eb2af13066eba9` |
+| 4 | `theorem` | [sourceCorrelation_contDiffAt_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationV1Prebytes.lean/declarations/sourcecorrelation-contdiffat-scale.md) | 73 | `result-track:edb72b4513200163770ee32ab5c62c0c9a8b776a915716eb42b1e79c15e48303` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

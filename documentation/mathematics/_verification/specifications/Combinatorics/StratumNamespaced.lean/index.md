@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/StratumNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/StratumNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StratumNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StratumNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Stratum](../../../../Combinatorics/StratumNamespaced.lean/declarations/stratum.md) | 17 | `declaration-track:44ff4fbb1c7467dee778e75fb150d8c30b94a72ebd784985edda5bff2b86e679` |
-| 2 | `abbrev` | [StratumSet](../../../../Combinatorics/StratumNamespaced.lean/declarations/stratumset.md) | 29 | `declaration-track:373c8469879a870b43070e5dbf71f374158212f22e0316d213c9f43be008aaed` |
-| 3 | `inductive` | [SystemEdgeKind](../../../../Combinatorics/StratumNamespaced.lean/declarations/systemedgekind.md) | 31 | `declaration-track:aa5486934bbe55297e4d9f7d5386f334ca7106cd855ba72934765de7e48122ac` |
-| 4 | `inductive` | [BoundaryKind](../../../../Combinatorics/StratumNamespaced.lean/declarations/boundarykind.md) | 50 | `declaration-track:4627ca7e19e57ea768743bf5b2a223e610508ee05302e9c211792474cbffe1f9` |
-| 5 | `abbrev` | [BoundarySet](../../../../Combinatorics/StratumNamespaced.lean/declarations/boundaryset.md) | 63 | `declaration-track:30038ee2b3d1a211419630a249a4ccbca0f920a3414fadcc1cf9b5cd8f7bcaed` |
+| 1 | `inductive` | [Stratum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StratumNamespaced.lean/declarations/stratum.md) | 17 | `declaration-track:44ff4fbb1c7467dee778e75fb150d8c30b94a72ebd784985edda5bff2b86e679` |
+| 2 | `abbrev` | [StratumSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StratumNamespaced.lean/declarations/stratumset.md) | 29 | `declaration-track:373c8469879a870b43070e5dbf71f374158212f22e0316d213c9f43be008aaed` |
+| 3 | `inductive` | [SystemEdgeKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StratumNamespaced.lean/declarations/systemedgekind.md) | 31 | `declaration-track:aa5486934bbe55297e4d9f7d5386f334ca7106cd855ba72934765de7e48122ac` |
+| 4 | `inductive` | [BoundaryKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StratumNamespaced.lean/declarations/boundarykind.md) | 50 | `declaration-track:4627ca7e19e57ea768743bf5b2a223e610508ee05302e9c211792474cbffe1f9` |
+| 5 | `abbrev` | [BoundarySet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StratumNamespaced.lean/declarations/boundaryset.md) | 63 | `declaration-track:30038ee2b3d1a211419630a249a4ccbca0f920a3414fadcc1cf9b5cd8f7bcaed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

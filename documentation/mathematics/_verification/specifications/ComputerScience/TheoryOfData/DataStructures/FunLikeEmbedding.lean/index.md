@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeEmbedding.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeEmbedding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeEmbedding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeEmbedding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [EmbeddingLike](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeEmbedding.lean/declarations/embeddinglike.md) | 131 | `declaration-track:5dff45915861257b3bb6468e152b004306d643c6b31086bfd85ce0dc4218c33d` |
-| 2 | `theorem` | [injective](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeEmbedding.lean/declarations/injective.md) | 139 | `result-track:629a5d6f9c3084f9f424ccbf9332d69508b7d9ad641340227a04f394d82e17d2` |
-| 3 | `theorem` | [apply_eq_iff_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeEmbedding.lean/declarations/apply-eq-iff-eq.md) | 143 | `result-track:4fbe106c468c2c0798a0362526837b4c7ca2a099a45dcbe29451ac7eefa5d788` |
-| 4 | `theorem` | [comp_injective](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeEmbedding.lean/declarations/comp-injective.md) | 147 | `result-track:ec7f2994325ddf8243037dc3ab97098648eb60ee47b59179e42346b967232051` |
+| 1 | `class` | [EmbeddingLike](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeEmbedding.lean/declarations/embeddinglike.md) | 131 | `declaration-track:5dff45915861257b3bb6468e152b004306d643c6b31086bfd85ce0dc4218c33d` |
+| 2 | `theorem` | [injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeEmbedding.lean/declarations/injective.md) | 139 | `result-track:629a5d6f9c3084f9f424ccbf9332d69508b7d9ad641340227a04f394d82e17d2` |
+| 3 | `theorem` | [apply_eq_iff_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeEmbedding.lean/declarations/apply-eq-iff-eq.md) | 143 | `result-track:4fbe106c468c2c0798a0362526837b4c7ca2a099a45dcbe29451ac7eefa5d788` |
+| 4 | `theorem` | [comp_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeEmbedding.lean/declarations/comp-injective.md) | 147 | `result-track:ec7f2994325ddf8243037dc3ab97098648eb60ee47b59179e42346b967232051` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/AngularL2TriangleNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/AngularL2TriangleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AngularL2TriangleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AngularL2TriangleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sqrt_normalized_integral_eq_norm](../../../../MeasureAndIntegration/AngularL2TriangleNamespaced.lean/declarations/sqrt-normalized-integral-eq-norm.md) | 19 | `result-track:905a604329c9ec47aabd04a9a790355ce59900979c7e1daf3b26d589644fea5a` |
-| 2 | `theorem` | [sqrt_normalized_integral_add_le](../../../../MeasureAndIntegration/AngularL2TriangleNamespaced.lean/declarations/sqrt-normalized-integral-add-le.md) | 25 | `result-track:34eb3b4664f4cfcb2992a075ac6d5d0f37a05172136019953a852d456dd88a07` |
+| 1 | `theorem` | [sqrt_normalized_integral_eq_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AngularL2TriangleNamespaced.lean/declarations/sqrt-normalized-integral-eq-norm.md) | 19 | `result-track:905a604329c9ec47aabd04a9a790355ce59900979c7e1daf3b26d589644fea5a` |
+| 2 | `theorem` | [sqrt_normalized_integral_add_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AngularL2TriangleNamespaced.lean/declarations/sqrt-normalized-integral-add-le.md) | 25 | `result-track:34eb3b4664f4cfcb2992a075ac6d5d0f37a05172136019953a852d456dd88a07` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

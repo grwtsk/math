@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/HigherPrimeSummable.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/HigherPrimeSummable.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/HigherPrimeSummable.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/HigherPrimeSummable.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,11 +63,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sqrt_nat_pow](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/HigherPrimeSummable.lean/declarations/sqrt-nat-pow.md) | 13 | `result-track:e65f521c59a403158d7b38657c005acfc810a652c21c99a4706a0ae69165bf83` |
-| 2 | `theorem` | [log_div_sqrt_cube_le](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/HigherPrimeSummable.lean/declarations/log-div-sqrt-cube-le.md) | 19 | `result-track:e06bb6f64fc1d09457e4a8bd78794ee3a2c6c8d08fcd415d25d6cb8887334998` |
-| 3 | `theorem` | [prime_inv_sqrt_le_three_quarters](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/HigherPrimeSummable.lean/declarations/prime-inv-sqrt-le-three-quarters.md) | 38 | `result-track:a14d92290fc0428d57f1ae5982b6074a7f39e32033480eaaff32055c7ae83b3b` |
-| 4 | `theorem` | [higher_prime_weight_le](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/HigherPrimeSummable.lean/declarations/higher-prime-weight-le.md) | 47 | `result-track:868009cfe54b6b30823dca68c7ec21b2effb8bdc9ebc0c52903b412e5b8e279e` |
-| 5 | `theorem` | [summable_higher_prime_weights](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/HigherPrimeSummable.lean/declarations/summable-higher-prime-weights.md) | 64 | `result-track:cc9ed5af370477069e2e5d3a2e9a362bf7563e017d1410e19fe8a52540b4804c` |
+| 1 | `theorem` | [sqrt_nat_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/HigherPrimeSummable.lean/declarations/sqrt-nat-pow.md) | 13 | `result-track:e65f521c59a403158d7b38657c005acfc810a652c21c99a4706a0ae69165bf83` |
+| 2 | `theorem` | [log_div_sqrt_cube_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/HigherPrimeSummable.lean/declarations/log-div-sqrt-cube-le.md) | 19 | `result-track:e06bb6f64fc1d09457e4a8bd78794ee3a2c6c8d08fcd415d25d6cb8887334998` |
+| 3 | `theorem` | [prime_inv_sqrt_le_three_quarters](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/HigherPrimeSummable.lean/declarations/prime-inv-sqrt-le-three-quarters.md) | 38 | `result-track:a14d92290fc0428d57f1ae5982b6074a7f39e32033480eaaff32055c7ae83b3b` |
+| 4 | `theorem` | [higher_prime_weight_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/HigherPrimeSummable.lean/declarations/higher-prime-weight-le.md) | 47 | `result-track:868009cfe54b6b30823dca68c7ec21b2effb8bdc9ebc0c52903b412e5b8e279e` |
+| 5 | `theorem` | [summable_higher_prime_weights](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/HigherPrimeSummable.lean/declarations/summable-higher-prime-weights.md) | 64 | `result-track:cc9ed5af370477069e2e5d3a2e9a362bf7563e017d1410e19fe8a52540b4804c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

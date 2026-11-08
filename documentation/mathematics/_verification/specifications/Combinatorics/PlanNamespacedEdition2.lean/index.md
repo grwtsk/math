@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PlanNamespacedEdition2.lean/index.md) · [Full source](../../../../Combinatorics/PlanNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlanNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlanNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [FileOperationKind](../../../../Combinatorics/PlanNamespacedEdition2.lean/declarations/fileoperationkind.md) | 17 | `declaration-track:cf9d655b4451625f8c1c114e1b1b8d2fedc08bf5b79c3b1cab187f6ff8a87ea2` |
-| 2 | `structure` | [FileOperation](../../../../Combinatorics/PlanNamespacedEdition2.lean/declarations/fileoperation.md) | 24 | `declaration-track:7ddeee20924a35812671a7a751ee94ddf9349b2c544483cb3a86dcdd1f7a48f2` |
-| 3 | `structure` | [Plan](../../../../Combinatorics/PlanNamespacedEdition2.lean/declarations/plan.md) | 32 | `declaration-track:0645108a651e72a8a3dd731a7f451dd494706ff9e17434d446fca0baac11877f` |
+| 1 | `inductive` | [FileOperationKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlanNamespacedEdition2.lean/declarations/fileoperationkind.md) | 17 | `declaration-track:cf9d655b4451625f8c1c114e1b1b8d2fedc08bf5b79c3b1cab187f6ff8a87ea2` |
+| 2 | `structure` | [FileOperation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlanNamespacedEdition2.lean/declarations/fileoperation.md) | 24 | `declaration-track:7ddeee20924a35812671a7a751ee94ddf9349b2c544483cb3a86dcdd1f7a48f2` |
+| 3 | `structure` | [Plan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlanNamespacedEdition2.lean/declarations/plan.md) | 32 | `declaration-track:0645108a651e72a8a3dd731a7f451dd494706ff9e17434d446fca0baac11877f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

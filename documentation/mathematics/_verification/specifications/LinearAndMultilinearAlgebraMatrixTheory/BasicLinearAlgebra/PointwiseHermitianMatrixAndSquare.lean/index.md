@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseHermitianMatrixAndSquare.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseHermitianMatrixAndSquare.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseHermitianMatrixAndSquare.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseHermitianMatrixAndSquare.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -52,7 +52,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.Data.Matrix.Reflection` — import line 22; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.FinCases` — import line 23; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.Ring` — import line 24; external provider; requires a separately pinned dependency.
-- [Gamma Scalars Rotors And Whole Canonical Package](../../../../../RealFunctions/GammaScalarsRotorsAndWholeCanonicalPackage.lean/index.md) — import line 26; pinned internal source present.
+- [Gamma Scalars Rotors And Whole Canonical Package](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GammaScalarsRotorsAndWholeCanonicalPackage.lean/index.md) — import line 26; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -63,11 +63,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [GammaSpindleDirac](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseHermitianMatrixAndSquare.lean/declarations/gammaspindledirac.md) | 53 | `declaration-track:b42ac509d81921a92b72d60acc24e13c2c87e61a8e44953c21f0ec0e4be276c4` |
-| 2 | `theorem` | [gammaSpindleDirac_selfAdjoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseHermitianMatrixAndSquare.lean/declarations/gammaspindledirac-selfadjoint.md) | 60 | `result-track:c33bc357891ffa678990ed1089b5e67d772d7e18ce05a914a620961f829a0cf4` |
-| 3 | `theorem` | [gammaSpindleDirac_characterConjugate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseHermitianMatrixAndSquare.lean/declarations/gammaspindledirac-characterconjugate.md) | 70 | `result-track:5d254b9b33778e5e5d87e078e305ab6512d75cb38bb00cdfc051a23e9a4156af` |
-| 4 | `theorem` | [gammaSpindleDirac_sq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseHermitianMatrixAndSquare.lean/declarations/gammaspindledirac-sq.md) | 76 | `result-track:487d58a5471df37f8a8bd333140886f2a94109e3882ad783a488107be06e3736` |
-| 5 | `theorem` | [gammaSpindle_square_nonnegative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseHermitianMatrixAndSquare.lean/declarations/gammaspindle-square-nonnegative.md) | 90 | `result-track:239a7e59f64ec512d52399ddc14bd961892fb7d1ce89880513f32290b6e08e18` |
+| 1 | `def` | [GammaSpindleDirac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseHermitianMatrixAndSquare.lean/declarations/gammaspindledirac.md) | 53 | `declaration-track:b42ac509d81921a92b72d60acc24e13c2c87e61a8e44953c21f0ec0e4be276c4` |
+| 2 | `theorem` | [gammaSpindleDirac_selfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseHermitianMatrixAndSquare.lean/declarations/gammaspindledirac-selfadjoint.md) | 60 | `result-track:c33bc357891ffa678990ed1089b5e67d772d7e18ce05a914a620961f829a0cf4` |
+| 3 | `theorem` | [gammaSpindleDirac_characterConjugate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseHermitianMatrixAndSquare.lean/declarations/gammaspindledirac-characterconjugate.md) | 70 | `result-track:5d254b9b33778e5e5d87e078e305ab6512d75cb38bb00cdfc051a23e9a4156af` |
+| 4 | `theorem` | [gammaSpindleDirac_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseHermitianMatrixAndSquare.lean/declarations/gammaspindledirac-sq.md) | 76 | `result-track:487d58a5471df37f8a8bd333140886f2a94109e3882ad783a488107be06e3736` |
+| 5 | `theorem` | [gammaSpindle_square_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseHermitianMatrixAndSquare.lean/declarations/gammaspindle-square-nonnegative.md) | 90 | `result-track:239a7e59f64ec512d52399ddc14bd961892fb7d1ce89880513f32290b6e08e18` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

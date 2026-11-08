@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ActualComplexCorrelationAsymptoticEdition2.lean/index.md) · [Full source](../../../../GeneralTopology/ActualComplexCorrelationAsymptoticEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualComplexCorrelationAsymptoticEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualComplexCorrelationAsymptoticEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualCorrelationAsymptoticScale](../../../../GeneralTopology/ActualComplexCorrelationAsymptoticEdition2.lean/declarations/actualcorrelationasymptoticscale.md) | 21 | `declaration-track:699cfc0f8e70e7d26d597996d5301c9a9b97f7086f541f2ef32b1e0a8683618a` |
-| 2 | `theorem` | [actualCorrelationNormalizer_sq](../../../../GeneralTopology/ActualComplexCorrelationAsymptoticEdition2.lean/declarations/actualcorrelationnormalizer-sq.md) | 25 | `result-track:88206c6749e7d7f9541777c8c0932f2ff6ceae7454df77fa061f3aeed138ed59` |
-| 3 | `theorem` | [actualSourceNormalization_tendsto](../../../../GeneralTopology/ActualComplexCorrelationAsymptoticEdition2.lean/declarations/actualsourcenormalization-tendsto.md) | 33 | `result-track:8f1f44efeafb8e1f60317771d1bf227f2d2860cf8f9f8374f85c3a211fc3bddd` |
-| 4 | `theorem` | [actualCorrelationAsymptoticScale_tendsto_zero](../../../../GeneralTopology/ActualComplexCorrelationAsymptoticEdition2.lean/declarations/actualcorrelationasymptoticscale-tendsto-zero.md) | 48 | `result-track:0691c717189476ac29136929d8f0fb4f12aeed2bb418fd9d67d62fda03706eb1` |
-| 5 | `theorem` | [actualBilateralCorrelationTransform_normalized_tendsto](../../../../GeneralTopology/ActualComplexCorrelationAsymptoticEdition2.lean/declarations/actualbilateralcorrelationtransform-normalized-tendsto.md) | 67 | `result-track:f16ef218bb8069568b5a8eb303f96798802a6185ad77fe85e56657160642fc91` |
-| 6 | `theorem` | [actualHalfCorrelationTransform_scaled_error_tendsto_zero](../../../../GeneralTopology/ActualComplexCorrelationAsymptoticEdition2.lean/declarations/actualhalfcorrelationtransform-scaled-error-tendsto-zero.md) | 87 | `result-track:14c5305687011a0122b79b8aa8c856aa99abac2f4530f831e152f3311d97b495` |
-| 7 | `theorem` | [actualHalfCorrelationTransform_normalized_tendsto](../../../../GeneralTopology/ActualComplexCorrelationAsymptoticEdition2.lean/declarations/actualhalfcorrelationtransform-normalized-tendsto.md) | 101 | `result-track:bb901913ef0e43f0d5ccfb04b9d36d96d9f292bfcc27077aa7dd7a48d7ca1fef` |
+| 1 | `def` | [actualCorrelationAsymptoticScale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualComplexCorrelationAsymptoticEdition2.lean/declarations/actualcorrelationasymptoticscale.md) | 21 | `declaration-track:699cfc0f8e70e7d26d597996d5301c9a9b97f7086f541f2ef32b1e0a8683618a` |
+| 2 | `theorem` | [actualCorrelationNormalizer_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualComplexCorrelationAsymptoticEdition2.lean/declarations/actualcorrelationnormalizer-sq.md) | 25 | `result-track:88206c6749e7d7f9541777c8c0932f2ff6ceae7454df77fa061f3aeed138ed59` |
+| 3 | `theorem` | [actualSourceNormalization_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualComplexCorrelationAsymptoticEdition2.lean/declarations/actualsourcenormalization-tendsto.md) | 33 | `result-track:8f1f44efeafb8e1f60317771d1bf227f2d2860cf8f9f8374f85c3a211fc3bddd` |
+| 4 | `theorem` | [actualCorrelationAsymptoticScale_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualComplexCorrelationAsymptoticEdition2.lean/declarations/actualcorrelationasymptoticscale-tendsto-zero.md) | 48 | `result-track:0691c717189476ac29136929d8f0fb4f12aeed2bb418fd9d67d62fda03706eb1` |
+| 5 | `theorem` | [actualBilateralCorrelationTransform_normalized_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualComplexCorrelationAsymptoticEdition2.lean/declarations/actualbilateralcorrelationtransform-normalized-tendsto.md) | 67 | `result-track:f16ef218bb8069568b5a8eb303f96798802a6185ad77fe85e56657160642fc91` |
+| 6 | `theorem` | [actualHalfCorrelationTransform_scaled_error_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualComplexCorrelationAsymptoticEdition2.lean/declarations/actualhalfcorrelationtransform-scaled-error-tendsto-zero.md) | 87 | `result-track:14c5305687011a0122b79b8aa8c856aa99abac2f4530f831e152f3311d97b495` |
+| 7 | `theorem` | [actualHalfCorrelationTransform_normalized_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualComplexCorrelationAsymptoticEdition2.lean/declarations/actualhalfcorrelationtransform-normalized-tendsto.md) | 101 | `result-track:bb901913ef0e43f0d5ccfb04b9d36d96d9f292bfcc27077aa7dd7a48d7ca1fef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

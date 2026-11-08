@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/CoeffMemNamespaced.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/CoeffMemNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/CoeffMemNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/CoeffMemNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [coeff_divModByMonicAux_mem_span_pow_mul_span](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/CoeffMemNamespaced.lean/declarations/coeff-divmodbymonicaux-mem-span-pow-mul-span.md) | 36 | `result-track:19c16af474b1624ea9ad72d20d2ebb07ed3b0b204e507d7cf99ed41f76a8f912` |
-| 2 | `lemma` | [coeff_modByMonic_mem_pow_natDegree_mul](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/CoeffMemNamespaced.lean/declarations/coeff-modbymonic-mem-pow-natdegree-mul.md) | 88 | `result-track:b57681b9c60f7ef7f01fe825d916d2af6904e7e75fdee37ca985ac86150eca3e` |
-| 3 | `lemma` | [coeff_divByMonic_mem_pow_natDegree_mul](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/CoeffMemNamespaced.lean/declarations/coeff-divbymonic-mem-pow-natdegree-mul.md) | 103 | `result-track:cf01b101bade67dbfaa6188b935d229460d90d2722e2e741c0539df86437b721` |
-| 4 | `lemma` | [idealSpan_range_update_divByMonic](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/CoeffMemNamespaced.lean/declarations/idealspan-range-update-divbymonic.md) | 116 | `result-track:fdbac54fb2443928b8e3ad8adcb17e4a9218374d269e1aa451015f35b2a677b0` |
+| 1 | `lemma` | [coeff_divModByMonicAux_mem_span_pow_mul_span](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/CoeffMemNamespaced.lean/declarations/coeff-divmodbymonicaux-mem-span-pow-mul-span.md) | 36 | `result-track:19c16af474b1624ea9ad72d20d2ebb07ed3b0b204e507d7cf99ed41f76a8f912` |
+| 2 | `lemma` | [coeff_modByMonic_mem_pow_natDegree_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/CoeffMemNamespaced.lean/declarations/coeff-modbymonic-mem-pow-natdegree-mul.md) | 88 | `result-track:b57681b9c60f7ef7f01fe825d916d2af6904e7e75fdee37ca985ac86150eca3e` |
+| 3 | `lemma` | [coeff_divByMonic_mem_pow_natDegree_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/CoeffMemNamespaced.lean/declarations/coeff-divbymonic-mem-pow-natdegree-mul.md) | 103 | `result-track:cf01b101bade67dbfaa6188b935d229460d90d2722e2e741c0539df86437b721` |
+| 4 | `lemma` | [idealSpan_range_update_divByMonic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/CoeffMemNamespaced.lean/declarations/idealspan-range-update-divbymonic.md) | 116 | `result-track:fdbac54fb2443928b8e3ad8adcb17e4a9218374d269e1aa451015f35b2a677b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

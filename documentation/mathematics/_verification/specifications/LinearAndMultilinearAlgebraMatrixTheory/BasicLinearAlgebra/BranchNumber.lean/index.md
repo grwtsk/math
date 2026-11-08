@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Dynamics.Avalanche` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Algebra.Order.BigOperators.Group.Finset` — import line 20; external provider; requires a separately pinned dependency.
-- [Coordinate Derivatives](../../../../../Combinatorics/CoordinateDerivatives.lean/index.md) — import line 22; pinned internal source present.
+- [Coordinate Derivatives](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinateDerivatives.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [XorLinearEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/xorlinearequiv.md) | 64 | `declaration-track:8408585f98e8e9f7f4fed21df6b558fa691471680b9d5b604e266f9528748351` |
-| 2 | `def` | [XorLinearEquiv.ofCoordinatePermutation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/xorlinearequiv-ofcoordinatepermutation.md) | 69 | `declaration-track:a1dd65411c4f964ec5cded3645ef218c5eaeea9b3766cc619330e1be621f9916` |
-| 3 | `theorem` | [XorLinearEquiv.map_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/xorlinearequiv-map-zero.md) | 76 | `result-track:aef0c710dfaf036f65ee87d7393fac263d710b0955fce75dbc3372ef1d99915f` |
-| 4 | `def` | [activities](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/activities.md) | 81 | `declaration-track:18b8ed212dba310efaf948e61618e0da122bffa43ce3521b223d3e78d1cc4915` |
-| 5 | `theorem` | [activities_nonempty](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/activities-nonempty.md) | 85 | `result-track:55c6d4a550096fb29aa9c8095a7160e1b1daa0640d958a0f1a8dde2d50581580` |
-| 6 | `def` | [branchNumber](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/branchnumber.md) | 98 | `declaration-track:4c8610ca61239ac4d1c1d85a95c46a9893d69612fb9e5b12a7f0bac6f9a2fa4a` |
-| 7 | `theorem` | [branchNumber_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/branchnumber-zero.md) | 106 | `result-track:0a23abf564c487d6f551e90935f97e59d05f59391d345f571b7530e30deceb27` |
-| 8 | `theorem` | [branchNumber_le_activity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/branchnumber-le-activity.md) | 110 | `result-track:67659fac9e6e8b4458e42ad0badaf2892ad65e03cac04dd435f14ae57d0c6391` |
-| 9 | `theorem` | [hammingWeight_basisBit](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/hammingweight-basisbit.md) | 118 | `result-track:49bb3dc357fb81add9841d8ce68b6695e8912459b596ed48381a165c322613f1` |
-| 10 | `theorem` | [two_le_branchNumber](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/two-le-branchnumber.md) | 127 | `result-track:664ed33ac3e16715633b4b63e44e6cb56a3cd854b28d9cfc1bdacd86fb0503d3` |
-| 11 | `theorem` | [branchNumber_coordinatePermutation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/branchnumber-coordinatepermutation.md) | 151 | `result-track:e31a2bf73e3973b4bd3e56e9479e74c85d80dde232b326f2ba4c3a2a3630efd6` |
+| 1 | `structure` | [XorLinearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/xorlinearequiv.md) | 64 | `declaration-track:8408585f98e8e9f7f4fed21df6b558fa691471680b9d5b604e266f9528748351` |
+| 2 | `def` | [XorLinearEquiv.ofCoordinatePermutation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/xorlinearequiv-ofcoordinatepermutation.md) | 69 | `declaration-track:a1dd65411c4f964ec5cded3645ef218c5eaeea9b3766cc619330e1be621f9916` |
+| 3 | `theorem` | [XorLinearEquiv.map_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/xorlinearequiv-map-zero.md) | 76 | `result-track:aef0c710dfaf036f65ee87d7393fac263d710b0955fce75dbc3372ef1d99915f` |
+| 4 | `def` | [activities](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/activities.md) | 81 | `declaration-track:18b8ed212dba310efaf948e61618e0da122bffa43ce3521b223d3e78d1cc4915` |
+| 5 | `theorem` | [activities_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/activities-nonempty.md) | 85 | `result-track:55c6d4a550096fb29aa9c8095a7160e1b1daa0640d958a0f1a8dde2d50581580` |
+| 6 | `def` | [branchNumber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/branchnumber.md) | 98 | `declaration-track:4c8610ca61239ac4d1c1d85a95c46a9893d69612fb9e5b12a7f0bac6f9a2fa4a` |
+| 7 | `theorem` | [branchNumber_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/branchnumber-zero.md) | 106 | `result-track:0a23abf564c487d6f551e90935f97e59d05f59391d345f571b7530e30deceb27` |
+| 8 | `theorem` | [branchNumber_le_activity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/branchnumber-le-activity.md) | 110 | `result-track:67659fac9e6e8b4458e42ad0badaf2892ad65e03cac04dd435f14ae57d0c6391` |
+| 9 | `theorem` | [hammingWeight_basisBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/hammingweight-basisbit.md) | 118 | `result-track:49bb3dc357fb81add9841d8ce68b6695e8912459b596ed48381a165c322613f1` |
+| 10 | `theorem` | [two_le_branchNumber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/two-le-branchnumber.md) | 127 | `result-track:664ed33ac3e16715633b4b63e44e6cb56a3cd854b28d9cfc1bdacd86fb0503d3` |
+| 11 | `theorem` | [branchNumber_coordinatePermutation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/declarations/branchnumber-coordinatepermutation.md) | 151 | `result-track:e31a2bf73e3973b4bd3e56e9479e74c85d80dde232b326f2ba4c3a2a3630efd6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

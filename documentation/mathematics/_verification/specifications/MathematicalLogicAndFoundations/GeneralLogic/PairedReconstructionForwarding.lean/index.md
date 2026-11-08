@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PairedReconstructionForwarding.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PairedReconstructionForwarding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PairedReconstructionForwarding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PairedReconstructionForwarding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lifted_heat_reconstructs](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PairedReconstructionForwarding.lean/declarations/lifted-heat-reconstructs.md) | 38 | `result-track:d78795046a5b7daef7d0c1abf094646b5257dc1f9cd41178e070f533471396fb` |
+| 1 | `theorem` | [lifted_heat_reconstructs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PairedReconstructionForwarding.lean/declarations/lifted-heat-reconstructs.md) | 38 | `result-track:d78795046a5b7daef7d0c1abf094646b5257dc1f9cd41178e070f533471396fb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

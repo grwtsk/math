@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RieszZeroContinuity.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RieszZeroContinuity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RieszZeroContinuity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RieszZeroContinuity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.FirstRieszZeroTail`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FirstRieszZeroTail.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.FirstRieszZeroTail`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FirstRieszZeroTail.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Topology.UniformSpace.UniformApproximation` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [firstRieszTailBudget_mono](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RieszZeroContinuity.lean/declarations/firstriesztailbudget-mono.md) | 17 | `result-track:f4e2fa06037ee60d731239db2a496ad57dc9d47b5af11fb806d20dd5ce8190be` |
-| 2 | `theorem` | [finiteRieszZeroHead_tendstoUniformlyOn](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RieszZeroContinuity.lean/declarations/finiterieszzerohead-tendstouniformlyon.md) | 28 | `result-track:c0a4e9b8a5c106537ba6b442d8c50616cfafc606e44c8c1bf0771c498c6b9ebd` |
-| 3 | `theorem` | [fullRieszZeroValue_continuousOn](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RieszZeroContinuity.lean/declarations/fullrieszzerovalue-continuouson.md) | 39 | `result-track:e9f83e33d419c4b39e944f6cfe7e9e1368bcb83876fe38329c17f85e8b4caf36` |
+| 1 | `theorem` | [firstRieszTailBudget_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RieszZeroContinuity.lean/declarations/firstriesztailbudget-mono.md) | 17 | `result-track:f4e2fa06037ee60d731239db2a496ad57dc9d47b5af11fb806d20dd5ce8190be` |
+| 2 | `theorem` | [finiteRieszZeroHead_tendstoUniformlyOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RieszZeroContinuity.lean/declarations/finiterieszzerohead-tendstouniformlyon.md) | 28 | `result-track:c0a4e9b8a5c106537ba6b442d8c50616cfafc606e44c8c1bf0771c498c6b9ebd` |
+| 3 | `theorem` | [fullRieszZeroValue_continuousOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RieszZeroContinuity.lean/declarations/fullrieszzerovalue-continuouson.md) | 39 | `result-track:e9f83e33d419c4b39e944f6cfe7e9e1368bcb83876fe38329c17f85e8b4caf36` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

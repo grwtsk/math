@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GreenMellinContinuation.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GreenMellinContinuation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GreenMellinContinuation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GreenMellinContinuation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.VonMangoldt.DyadicEulerIdentification`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicEulerIdentification.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DyadicMellinConvergence.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.VonMangoldt.DyadicEulerIdentification`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicEulerIdentification.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DyadicMellinConvergence.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [continuation_of_energy](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GreenMellinContinuation.lean/declarations/continuation-of-energy.md) | 29 | `result-track:ee012ee7323c86f2797d4f797f51f14a4206f8f20f02c90a48fb67c38563e14e` |
-| 2 | `theorem` | [continuation_differentiableAt_one](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GreenMellinContinuation.lean/declarations/continuation-differentiableat-one.md) | 37 | `result-track:44345322e4affb77185af7dee59526458cfa8bbe57c16ee67f17c0b681256aef` |
-| 3 | `theorem` | [exists_holomorphic_extension](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GreenMellinContinuation.lean/declarations/exists-holomorphic-extension.md) | 46 | `result-track:ed4c862f207edfb780fd616f97d4a59ca97a071a34d9fb89768eca5efb4c8a71` |
+| 1 | `theorem` | [continuation_of_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GreenMellinContinuation.lean/declarations/continuation-of-energy.md) | 29 | `result-track:ee012ee7323c86f2797d4f797f51f14a4206f8f20f02c90a48fb67c38563e14e` |
+| 2 | `theorem` | [continuation_differentiableAt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GreenMellinContinuation.lean/declarations/continuation-differentiableat-one.md) | 37 | `result-track:44345322e4affb77185af7dee59526458cfa8bbe57c16ee67f17c0b681256aef` |
+| 3 | `theorem` | [exists_holomorphic_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GreenMellinContinuation.lean/declarations/exists-holomorphic-extension.md) | 46 | `result-track:ed4c862f207edfb780fd616f97d4a59ca97a071a34d9fb89768eca5efb4c8a71` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

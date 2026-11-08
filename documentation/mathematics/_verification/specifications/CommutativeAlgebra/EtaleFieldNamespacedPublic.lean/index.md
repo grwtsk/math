@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [of_isSeparable_aux](../../../../CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/of-isseparable-aux.md) | 64 | `result-track:e529addff010eb69fdd529ff9927ec258afef0b418359e93fd7d633f6bdf9fc9` |
-| 2 | `lemma` | [of_isSeparable](../../../../CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/of-isseparable.md) | 106 | `result-track:6ef04d530b90a4147a28e7c156df3c18baf6a43ed71880eb88c15c64d100bc40` |
-| 3 | `theorem` | [iff_isSeparable](../../../../CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/iff-isseparable.md) | 166 | `result-track:0dd51d666af787815aae942d03cb375234330cd21c20abbbb11e5147427253ca` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/instance.md) | 170 | `declaration-track:f576fcb19e0a0be661b9c45ebdba6b481b1a1a9745611599c0d1e55fd8f9797d` |
-| 5 | `lemma` | [of_formallyUnramified_of_field](../../../../CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/of-formallyunramified-of-field.md) | 183 | `result-track:78f432ebe891ddcb868205f8149858128c4618195d124bf2d67c87713dfefd88` |
-| 6 | `lemma` | [iff_formallyUnramified_of_field](../../../../CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/iff-formallyunramified-of-field.md) | 193 | `result-track:f82dc50c497d23f80b44e5a6f25936fb83d9775abdf224b53050cbe0abd867f8` |
-| 7 | `theorem` | [iff_exists_algEquiv_prod](../../../../CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/iff-exists-algequiv-prod.md) | 202 | `result-track:aad5d305ad971ef815c09ba502a6e56cad11bce16d928110f159cb91abe38ae9` |
-| 8 | `def` | [equivPiOfIsSepClosed](../../../../CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/equivpiofissepclosed.md) | 225 | `declaration-track:5acc84a93d7e941c592eb83afebe3bb9f220dc92e6e3c1bebcfe3efa5045ed90` |
-| 9 | `lemma` | [equivPiOfIsSepClosed_self_apply](../../../../CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/equivpiofissepclosed-self-apply.md) | 240 | `result-track:b57d26af1b170d163779f1d2ad2902b1860e52986fbd5440e5983fb79599c499` |
-| 10 | `lemma` | [equivPiOfIsSepClosed_comap](../../../../CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/equivpiofissepclosed-comap.md) | 254 | `result-track:8712adbc982751683c42482b78b5ddfdeeb166199c5553d471f48d9d6981a97d` |
-| 11 | `theorem` | [Algebra.Etale.iff_exists_algEquiv_prod](../../../../CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/algebra-etale-iff-exists-algequiv-prod.md) | 279 | `result-track:a4924d01bf6b498248ed566e7254de192a4b439150c1f4774b8d1a3f4a7b4d5b` |
+| 1 | `theorem` | [of_isSeparable_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/of-isseparable-aux.md) | 64 | `result-track:e529addff010eb69fdd529ff9927ec258afef0b418359e93fd7d633f6bdf9fc9` |
+| 2 | `lemma` | [of_isSeparable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/of-isseparable.md) | 106 | `result-track:6ef04d530b90a4147a28e7c156df3c18baf6a43ed71880eb88c15c64d100bc40` |
+| 3 | `theorem` | [iff_isSeparable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/iff-isseparable.md) | 166 | `result-track:0dd51d666af787815aae942d03cb375234330cd21c20abbbb11e5147427253ca` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/instance.md) | 170 | `declaration-track:f576fcb19e0a0be661b9c45ebdba6b481b1a1a9745611599c0d1e55fd8f9797d` |
+| 5 | `lemma` | [of_formallyUnramified_of_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/of-formallyunramified-of-field.md) | 183 | `result-track:78f432ebe891ddcb868205f8149858128c4618195d124bf2d67c87713dfefd88` |
+| 6 | `lemma` | [iff_formallyUnramified_of_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/iff-formallyunramified-of-field.md) | 193 | `result-track:f82dc50c497d23f80b44e5a6f25936fb83d9775abdf224b53050cbe0abd867f8` |
+| 7 | `theorem` | [iff_exists_algEquiv_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/iff-exists-algequiv-prod.md) | 202 | `result-track:aad5d305ad971ef815c09ba502a6e56cad11bce16d928110f159cb91abe38ae9` |
+| 8 | `def` | [equivPiOfIsSepClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/equivpiofissepclosed.md) | 225 | `declaration-track:5acc84a93d7e941c592eb83afebe3bb9f220dc92e6e3c1bebcfe3efa5045ed90` |
+| 9 | `lemma` | [equivPiOfIsSepClosed_self_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/equivpiofissepclosed-self-apply.md) | 240 | `result-track:b57d26af1b170d163779f1d2ad2902b1860e52986fbd5440e5983fb79599c499` |
+| 10 | `lemma` | [equivPiOfIsSepClosed_comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/equivpiofissepclosed-comap.md) | 254 | `result-track:8712adbc982751683c42482b78b5ddfdeeb166199c5553d471f48d9d6981a97d` |
+| 11 | `theorem` | [Algebra.Etale.iff_exists_algEquiv_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespacedPublic.lean/declarations/algebra-etale-iff-exists-algequiv-prod.md) | 279 | `result-track:a4924d01bf6b498248ed566e7254de192a4b439150c1f4774b8d1a3f4a7b4d5b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

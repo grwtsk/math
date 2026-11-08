@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExitPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExitPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExitPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExitPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ExitCode](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExitPublic.lean/declarations/exitcode.md) | 15 | `declaration-track:437621afab00d00b438c39fc13ee0146e34d76465943909a6a84f518dcffa72d` |
-| 2 | `class` | [MonadExit](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExitPublic.lean/declarations/monadexit.md) | 17 | `declaration-track:3902cbdf3e0e9b3034d46940e68bcf5f0430fb3c6ff80c09bfc9ef282ff8ab19` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExitPublic.lean/declarations/instance.md) | 22 | `declaration-track:d9931a454177919c6327621ad0d1363a1e008b47cbba4bd8fbdfe096587f443b` |
-| 4 | `def` | [exitIfErrorCode](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExitPublic.lean/declarations/exitiferrorcode.md) | 26 | `declaration-track:ab8c7cb973c651867ea4bce8b9c8fbf434c66dc8aa5434517d58577577558d8e` |
+| 1 | `abbrev` | [ExitCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExitPublic.lean/declarations/exitcode.md) | 15 | `declaration-track:437621afab00d00b438c39fc13ee0146e34d76465943909a6a84f518dcffa72d` |
+| 2 | `class` | [MonadExit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExitPublic.lean/declarations/monadexit.md) | 17 | `declaration-track:3902cbdf3e0e9b3034d46940e68bcf5f0430fb3c6ff80c09bfc9ef282ff8ab19` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExitPublic.lean/declarations/instance.md) | 22 | `declaration-track:d9931a454177919c6327621ad0d1363a1e008b47cbba4bd8fbdfe096587f443b` |
+| 4 | `def` | [exitIfErrorCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExitPublic.lean/declarations/exitiferrorcode.md) | 26 | `declaration-track:ab8c7cb973c651867ea4bce8b9c8fbf434c66dc8aa5434517d58577577558d8e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

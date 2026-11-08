@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/BasicBasicNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/BasicBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BasicBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BasicBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Hilbert.Space](../../../../FunctionalAnalysis/BasicBasicNamespaced.lean/declarations/hilbert-space.md) | 31 | `declaration-track:976ab591408f391d63630e296b89e62aea61a8560eb4cbb91e45250e8727578d` |
-| 2 | `structure` | [Hilbert.DenseDomain](../../../../FunctionalAnalysis/BasicBasicNamespaced.lean/declarations/hilbert-densedomain.md) | 42 | `declaration-track:0a0b612670fcc6f527169b41bc43e1a4b5184c980d2da12a3371590c9b7a0872` |
-| 3 | `def` | [Hilbert.fullDomain](../../../../FunctionalAnalysis/BasicBasicNamespaced.lean/declarations/hilbert-fulldomain.md) | 50 | `declaration-track:2f09b9ade4e4accb26763c260c93dc31d5868423ecd1be66da921bfe3f49edf6` |
-| 4 | `def` | [Hilbert.standardFinite4](../../../../FunctionalAnalysis/BasicBasicNamespaced.lean/declarations/hilbert-standardfinite4.md) | 62 | `declaration-track:108cda743001992d88ee37dc0d16aab08056c5bdb18a1a0fd6ec5e83dcab39b3` |
-| 5 | `theorem` | [Hilbert.space_complete](../../../../FunctionalAnalysis/BasicBasicNamespaced.lean/declarations/hilbert-space-complete.md) | 76 | `result-track:38f604674a10708b26b3d09fdf8cb7f74a93d1818cbd73767194d568b602adb7` |
+| 1 | `structure` | [Hilbert.Space](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BasicBasicNamespaced.lean/declarations/hilbert-space.md) | 31 | `declaration-track:976ab591408f391d63630e296b89e62aea61a8560eb4cbb91e45250e8727578d` |
+| 2 | `structure` | [Hilbert.DenseDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BasicBasicNamespaced.lean/declarations/hilbert-densedomain.md) | 42 | `declaration-track:0a0b612670fcc6f527169b41bc43e1a4b5184c980d2da12a3371590c9b7a0872` |
+| 3 | `def` | [Hilbert.fullDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BasicBasicNamespaced.lean/declarations/hilbert-fulldomain.md) | 50 | `declaration-track:2f09b9ade4e4accb26763c260c93dc31d5868423ecd1be66da921bfe3f49edf6` |
+| 4 | `def` | [Hilbert.standardFinite4](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BasicBasicNamespaced.lean/declarations/hilbert-standardfinite4.md) | 62 | `declaration-track:108cda743001992d88ee37dc0d16aab08056c5bdb18a1a0fd6ec5e83dcab39b3` |
+| 5 | `theorem` | [Hilbert.space_complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BasicBasicNamespaced.lean/declarations/hilbert-space-complete.md) | 76 | `result-track:38f604674a10708b26b3d09fdf8cb7f74a93d1818cbd73767194d568b602adb7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

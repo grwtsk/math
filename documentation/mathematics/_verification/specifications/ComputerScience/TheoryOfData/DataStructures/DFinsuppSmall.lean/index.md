@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppSmall.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppSmall.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppSmall.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppSmall.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [DFinsupp.small](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppSmall.lean/declarations/dfinsupp-small.md) | 25 | `declaration-track:f5745e17c950d947f8146eb906c458b2912ae0aa34a60bb84bcfff95be4a1140` |
-| 2 | `instance` | [Finsupp.small](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppSmall.lean/declarations/finsupp-small.md) | 29 | `declaration-track:3839e49bd7ca7a510be9fea2b7d649db911b4074ff69132d950c1bab250129c7` |
+| 1 | `instance` | [DFinsupp.small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppSmall.lean/declarations/dfinsupp-small.md) | 25 | `declaration-track:f5745e17c950d947f8146eb906c458b2912ae0aa34a60bb84bcfff95be4a1140` |
+| 2 | `instance` | [Finsupp.small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppSmall.lean/declarations/finsupp-small.md) | 29 | `declaration-track:3839e49bd7ca7a510be9fea2b7d649db911b4074ff69132d950c1bab250129c7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

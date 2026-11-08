@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PPUpperNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PPUpperNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PPUpperNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PPUpperNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [nuBound_Pc'](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PPUpperNamespaced.lean/declarations/nubound-pc.md) | 40 | `result-track:ae0163242053878bf9f93229195de251b03bb57826c7a47235f6f35823fb969c` |
-| 2 | `lemma` | [sumW2g_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PPUpperNamespaced.lean/declarations/sumw2g-le.md) | 48 | `result-track:58eff67b6e3d41591109a80cdff021c42558ad9a33b049978c11a04056ebcf9f` |
-| 3 | `theorem` | [frobSq_Ppart_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PPUpperNamespaced.lean/declarations/frobsq-ppart-le.md) | 64 | `result-track:09a122532ee11999ddb9f1b37c27c5a89722583864623ebec7f481d97480f154` |
+| 1 | `lemma` | [nuBound_Pc'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PPUpperNamespaced.lean/declarations/nubound-pc.md) | 40 | `result-track:ae0163242053878bf9f93229195de251b03bb57826c7a47235f6f35823fb969c` |
+| 2 | `lemma` | [sumW2g_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PPUpperNamespaced.lean/declarations/sumw2g-le.md) | 48 | `result-track:58eff67b6e3d41591109a80cdff021c42558ad9a33b049978c11a04056ebcf9f` |
+| 3 | `theorem` | [frobSq_Ppart_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PPUpperNamespaced.lean/declarations/frobsq-ppart-le.md) | 64 | `result-track:09a122532ee11999ddb9f1b37c27c5a89722583864623ebec7f481d97480f154` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

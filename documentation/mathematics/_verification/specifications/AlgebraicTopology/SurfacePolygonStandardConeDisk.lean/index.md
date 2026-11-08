@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonStandardConeDisk.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonStandardConeDisk.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardConeDisk.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardConeDisk.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport`](../../../../GeneralTopology/SurfacePolygonPerimeterConeCircleTransport.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPerimeterConeCircleTransport.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Complex.CircleMap` — import line 9; external provider; requires a separately pinned dependency.
 - `Mathlib.Topology.Instances.AddCircle.Real` — import line 10; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 11; external provider; requires a separately pinned dependency.
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ClosedComplexUnitDisk](../../../../AlgebraicTopology/SurfacePolygonStandardConeDisk.lean/declarations/closedcomplexunitdisk.md) | 32 | `declaration-track:1f1e5d594ce78ff67f1c886f75bcba15494682d2402b8193e626d04431c1cae0` |
-| 2 | `def` | [realAnglePolar](../../../../AlgebraicTopology/SurfacePolygonStandardConeDisk.lean/declarations/realanglepolar.md) | 35 | `declaration-track:b75e439ff07dced10e8482f6a52b1c4ac394606d6a2ba34442a4cc588c1c6d8a` |
-| 3 | `theorem` | [realAnglePolar_zero](../../../../AlgebraicTopology/SurfacePolygonStandardConeDisk.lean/declarations/realanglepolar-zero.md) | 39 | `result-track:7f341b06596d2cd57491d877942b48abec8386db1971bbd108cd8651a0e3c691` |
-| 4 | `theorem` | [realAnglePolar_norm](../../../../AlgebraicTopology/SurfacePolygonStandardConeDisk.lean/declarations/realanglepolar-norm.md) | 44 | `result-track:141fb7a8ad81e85d9450004e012115e7bc9257ce631d8c7acb5c9b8bf33da68f` |
-| 5 | `def` | [realAnglePolarDisk](../../../../AlgebraicTopology/SurfacePolygonStandardConeDisk.lean/declarations/realanglepolardisk.md) | 49 | `declaration-track:c4191dc437b2984baa98b3ba9bf455155ad350b4d374d6528ee4834f8d4b93b6` |
+| 1 | `abbrev` | [ClosedComplexUnitDisk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardConeDisk.lean/declarations/closedcomplexunitdisk.md) | 32 | `declaration-track:1f1e5d594ce78ff67f1c886f75bcba15494682d2402b8193e626d04431c1cae0` |
+| 2 | `def` | [realAnglePolar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardConeDisk.lean/declarations/realanglepolar.md) | 35 | `declaration-track:b75e439ff07dced10e8482f6a52b1c4ac394606d6a2ba34442a4cc588c1c6d8a` |
+| 3 | `theorem` | [realAnglePolar_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardConeDisk.lean/declarations/realanglepolar-zero.md) | 39 | `result-track:7f341b06596d2cd57491d877942b48abec8386db1971bbd108cd8651a0e3c691` |
+| 4 | `theorem` | [realAnglePolar_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardConeDisk.lean/declarations/realanglepolar-norm.md) | 44 | `result-track:141fb7a8ad81e85d9450004e012115e7bc9257ce631d8c7acb5c9b8bf33da68f` |
+| 5 | `def` | [realAnglePolarDisk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardConeDisk.lean/declarations/realanglepolardisk.md) | 49 | `declaration-track:c4191dc437b2984baa98b3ba9bf455155ad350b4d374d6528ee4834f8d4b93b6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPPiNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPPiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPPiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPPiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [pi](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPPiNamespaced.lean/declarations/pi.md) | 26 | `declaration-track:a993cf4cc73d247113a53263dbd59f89d51d9fcf6d659f630caabfc6cffa27db` |
-| 2 | `instance` | [pi'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPPiNamespaced.lean/declarations/pi-source-edition-2.md) | 38 | `declaration-track:de87a7e123c400b9dd9f4d0da8e8d27d8634d17b021f076dd6f96bc04a355392` |
+| 1 | `instance` | [pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPPiNamespaced.lean/declarations/pi.md) | 26 | `declaration-track:a993cf4cc73d247113a53263dbd59f89d51d9fcf6d659f630caabfc6cffa27db` |
+| 2 | `instance` | [pi'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPPiNamespaced.lean/declarations/pi-source-edition-2.md) | 38 | `declaration-track:de87a7e123c400b9dd9f4d0da8e8d27d8634d17b021f076dd6f96bc04a355392` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [identityRegularizer](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/declarations/identityregularizer.md) | 22 | `declaration-track:a601d3098162458aa1632eb0cfef35a7fa28fbbb6ba7016de91801b294ae0359` |
-| 2 | `theorem` | [identityRegularizer_posDef](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/declarations/identityregularizer-posdef.md) | 26 | `result-track:239c7e27cb3fca16741e902a5544ba2e653230a8a138a218debde21b7736b52a` |
-| 3 | `def` | [regularizedKernel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/declarations/regularizedkernel.md) | 32 | `declaration-track:2cf75e00f646275120540977cec7401a4d1b2863cd678dd7498f9961f5b0184a` |
-| 4 | `theorem` | [regularizedKernel_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/declarations/regularizedkernel-apply.md) | 42 | `result-track:97360b6abfe6326539c7995034b70a13b323fa21536ba3aca3cdd181c927ef9a` |
-| 5 | `theorem` | [regularizedKernel_posDef](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/declarations/regularizedkernel-posdef.md) | 56 | `result-track:78af29259eb9a8f66a2bbdca9d3383fc2e4f22e0b8863023ea298048cea12cae` |
-| 6 | `theorem` | [regularizedKernel_strictOnDistinct](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/declarations/regularizedkernel-strictondistinct.md) | 65 | `result-track:eccad51e2d71e3ca89cef3a0749a0d0f7e1a2307b43009a920dc0c77cddc177b` |
-| 7 | `def` | [zeroSemanticKernel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/declarations/zerosemantickernel.md) | 77 | `declaration-track:71776bb845ecad903502b372900db9268b3527954bd02f0fc4fc60607c76544b` |
-| 8 | `theorem` | [zeroSemanticKernel_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/declarations/zerosemantickernel-apply.md) | 83 | `result-track:b4fca092385848d871cc2e2a714982d169b13d263e0bb01e31b7aca9105b0bb8` |
+| 1 | `def` | [identityRegularizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/declarations/identityregularizer.md) | 22 | `declaration-track:a601d3098162458aa1632eb0cfef35a7fa28fbbb6ba7016de91801b294ae0359` |
+| 2 | `theorem` | [identityRegularizer_posDef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/declarations/identityregularizer-posdef.md) | 26 | `result-track:239c7e27cb3fca16741e902a5544ba2e653230a8a138a218debde21b7736b52a` |
+| 3 | `def` | [regularizedKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/declarations/regularizedkernel.md) | 32 | `declaration-track:2cf75e00f646275120540977cec7401a4d1b2863cd678dd7498f9961f5b0184a` |
+| 4 | `theorem` | [regularizedKernel_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/declarations/regularizedkernel-apply.md) | 42 | `result-track:97360b6abfe6326539c7995034b70a13b323fa21536ba3aca3cdd181c927ef9a` |
+| 5 | `theorem` | [regularizedKernel_posDef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/declarations/regularizedkernel-posdef.md) | 56 | `result-track:78af29259eb9a8f66a2bbdca9d3383fc2e4f22e0b8863023ea298048cea12cae` |
+| 6 | `theorem` | [regularizedKernel_strictOnDistinct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/declarations/regularizedkernel-strictondistinct.md) | 65 | `result-track:eccad51e2d71e3ca89cef3a0749a0d0f7e1a2307b43009a920dc0c77cddc177b` |
+| 7 | `def` | [zeroSemanticKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/declarations/zerosemantickernel.md) | 77 | `declaration-track:71776bb845ecad903502b372900db9268b3527954bd02f0fc4fc60607c76544b` |
+| 8 | `theorem` | [zeroSemanticKernel_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RegularizedKernel.lean/declarations/zerosemantickernel-apply.md) | 83 | `result-track:b4fca092385848d871cc2e2a714982d169b13d263e0bb01e31b7aca9105b0bb8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

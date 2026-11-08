@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ResultsAlternative8.lean/index.md) · [Full source](../../../../RealFunctions/ResultsAlternative8.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ResultsAlternative8.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ResultsAlternative8.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceCorrelation_deriv_zero](../../../../RealFunctions/ResultsAlternative8.lean/declarations/sourcecorrelation-deriv-zero.md) | 25 | `result-track:352629abe554e0c0566f1a1adb626b601cc4d40156e17dfa646ec0753b3d3187` |
-| 2 | `theorem` | [sourceCorrelation_deriv_abs_le_anchored](../../../../RealFunctions/ResultsAlternative8.lean/declarations/sourcecorrelation-deriv-abs-le-anchored.md) | 41 | `result-track:5e52d6b7e555b5fc8bb8c907272204990c176b4e3d4827c8cf43849d95a52f7b` |
-| 3 | `theorem` | [sourceLogKernel_deriv_abs_le_anchored](../../../../RealFunctions/ResultsAlternative8.lean/declarations/sourcelogkernel-deriv-abs-le-anchored.md) | 56 | `result-track:990226485575cb8325b171863c4202a3844381fd23146bc8f0c97c9931d202fd` |
-| 4 | `theorem` | [sourceLogKernel_deriv_abs_le_min](../../../../RealFunctions/ResultsAlternative8.lean/declarations/sourcelogkernel-deriv-abs-le-min.md) | 69 | `result-track:4d035e553d5b9e65171eaf27cd3b500f8331ee97f1a49e039ceef89b453874e4` |
+| 1 | `theorem` | [sourceCorrelation_deriv_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ResultsAlternative8.lean/declarations/sourcecorrelation-deriv-zero.md) | 25 | `result-track:352629abe554e0c0566f1a1adb626b601cc4d40156e17dfa646ec0753b3d3187` |
+| 2 | `theorem` | [sourceCorrelation_deriv_abs_le_anchored](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ResultsAlternative8.lean/declarations/sourcecorrelation-deriv-abs-le-anchored.md) | 41 | `result-track:5e52d6b7e555b5fc8bb8c907272204990c176b4e3d4827c8cf43849d95a52f7b` |
+| 3 | `theorem` | [sourceLogKernel_deriv_abs_le_anchored](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ResultsAlternative8.lean/declarations/sourcelogkernel-deriv-abs-le-anchored.md) | 56 | `result-track:990226485575cb8325b171863c4202a3844381fd23146bc8f0c97c9931d202fd` |
+| 4 | `theorem` | [sourceLogKernel_deriv_abs_le_min](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ResultsAlternative8.lean/declarations/sourcelogkernel-deriv-abs-le-min.md) | 69 | `result-track:4d035e553d5b9e65171eaf27cd3b500f8331ee97f1a49e039ceef89b453874e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

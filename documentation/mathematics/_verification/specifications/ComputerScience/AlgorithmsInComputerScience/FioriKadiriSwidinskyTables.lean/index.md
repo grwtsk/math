@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FioriKadiriSwidinskyTables.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FioriKadiriSwidinskyTables.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FioriKadiriSwidinskyTables.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FioriKadiriSwidinskyTables.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Table7](../../../../../ComputerScience/AlgorithmsInComputerScience/FioriKadiriSwidinskyTables.lean/declarations/table7.md) | 14 | `declaration-track:70063f182d45856d278b83f5206384e51ca961784acc3a3fabbf97ac3e30e502` |
-| 2 | `def` | [Table7'](../../../../../ComputerScience/AlgorithmsInComputerScience/FioriKadiriSwidinskyTables.lean/declarations/table7-source-edition-2.md) | 40 | `declaration-track:e7642bf32006a078d2350c3c89746b02a5747738f49450d3ccb6fab624baa3d3` |
+| 1 | `def` | [Table7](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FioriKadiriSwidinskyTables.lean/declarations/table7.md) | 14 | `declaration-track:70063f182d45856d278b83f5206384e51ca961784acc3a3fabbf97ac3e30e502` |
+| 2 | `def` | [Table7'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FioriKadiriSwidinskyTables.lean/declarations/table7-source-edition-2.md) | 40 | `declaration-track:e7642bf32006a078d2350c3c89746b02a5747738f49450d3ccb6fab624baa3d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

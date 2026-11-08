@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/StripNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/StripNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/StripNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/StripNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [phiC_contDiff](../../../../MeasureAndIntegration/StripNamespaced.lean/declarations/phic-contdiff.md) | 37 | `result-track:ede459eebbd4c02d9834ff0944a383f326cb3618a9f5453315c7980a6cbc955f` |
-| 2 | `theorem` | [phiC_support](../../../../MeasureAndIntegration/StripNamespaced.lean/declarations/phic-support.md) | 41 | `result-track:1b7522428221eb29cddbe14ac9ff4dc37e783579aff686146853c8eeeea55cbc` |
-| 3 | `theorem` | [deriv_ofReal_comp](../../../../MeasureAndIntegration/StripNamespaced.lean/declarations/deriv-ofreal-comp.md) | 48 | `result-track:84b292ba74d08d4abd1224bd52cf7fbba2412b607b97fca5f77a65abaf302ad3` |
-| 4 | `theorem` | [deriv_deriv_phiC](../../../../MeasureAndIntegration/StripNamespaced.lean/declarations/deriv-deriv-phic.md) | 53 | `result-track:2f1bc996831aee397d86e917303d8a590fed450b0c709cbb7309f2cee2f0521d` |
-| 5 | `theorem` | [norm_phiHat_mul_sq_le](../../../../MeasureAndIntegration/StripNamespaced.lean/declarations/norm-phihat-mul-sq-le.md) | 64 | `result-track:299db0689045b5d24725f8fc7a57c26e9fb89703fcbd90afc86dd2611fbfbfb8` |
-| 6 | `theorem` | [integral_phi_le](../../../../MeasureAndIntegration/StripNamespaced.lean/declarations/integral-phi-le.md) | 73 | `result-track:11c634c4da8cb0296a171e259747c153982022d470508fd3e4d32e6225037939` |
-| 7 | `theorem` | [norm_phiHat_le](../../../../MeasureAndIntegration/StripNamespaced.lean/declarations/norm-phihat-le.md) | 93 | `result-track:ad1ccfba1f2e3bbaaed987b692882cb9d6641f8a20ccb5c376814b12ecac3fd2` |
-| 8 | `theorem` | [norm_phiHat_sub_I_mul_le](../../../../MeasureAndIntegration/StripNamespaced.lean/declarations/norm-phihat-sub-i-mul-le.md) | 106 | `result-track:3315c3969efd85fd62a6b7c9501ac7187c6298a380d640b897afd440f218ff22` |
+| 1 | `theorem` | [phiC_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/StripNamespaced.lean/declarations/phic-contdiff.md) | 37 | `result-track:ede459eebbd4c02d9834ff0944a383f326cb3618a9f5453315c7980a6cbc955f` |
+| 2 | `theorem` | [phiC_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/StripNamespaced.lean/declarations/phic-support.md) | 41 | `result-track:1b7522428221eb29cddbe14ac9ff4dc37e783579aff686146853c8eeeea55cbc` |
+| 3 | `theorem` | [deriv_ofReal_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/StripNamespaced.lean/declarations/deriv-ofreal-comp.md) | 48 | `result-track:84b292ba74d08d4abd1224bd52cf7fbba2412b607b97fca5f77a65abaf302ad3` |
+| 4 | `theorem` | [deriv_deriv_phiC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/StripNamespaced.lean/declarations/deriv-deriv-phic.md) | 53 | `result-track:2f1bc996831aee397d86e917303d8a590fed450b0c709cbb7309f2cee2f0521d` |
+| 5 | `theorem` | [norm_phiHat_mul_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/StripNamespaced.lean/declarations/norm-phihat-mul-sq-le.md) | 64 | `result-track:299db0689045b5d24725f8fc7a57c26e9fb89703fcbd90afc86dd2611fbfbfb8` |
+| 6 | `theorem` | [integral_phi_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/StripNamespaced.lean/declarations/integral-phi-le.md) | 73 | `result-track:11c634c4da8cb0296a171e259747c153982022d470508fd3e4d32e6225037939` |
+| 7 | `theorem` | [norm_phiHat_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/StripNamespaced.lean/declarations/norm-phihat-le.md) | 93 | `result-track:ad1ccfba1f2e3bbaaed987b692882cb9d6641f8a20ccb5c376814b12ecac3fd2` |
+| 8 | `theorem` | [norm_phiHat_sub_I_mul_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/StripNamespaced.lean/declarations/norm-phihat-sub-i-mul-le.md) | 106 | `result-track:3315c3969efd85fd62a6b7c9501ac7187c6298a380d640b897afd440f218ff22` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

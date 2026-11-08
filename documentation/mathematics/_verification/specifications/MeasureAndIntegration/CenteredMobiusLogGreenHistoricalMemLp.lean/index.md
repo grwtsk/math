@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenMinimalParseval`](../../../../MeasureAndIntegration/CenteredMobiusLogGreenMinimalParseval.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenMinimalParseval`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenMinimalParseval.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.MeasureTheory.Function.LpSeminorm.Basic` — import line 9; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 10; external provider; requires a separately pinned dependency.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [thinHistoricalStep](../../../../MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/declarations/thinhistoricalstep.md) | 20 | `declaration-track:9f1878752616bb381c68a0452ad23166b8a494b55e64cc35c54a18adeee0299b` |
-| 2 | `def` | [thinHistoricalAtomicCumulative](../../../../MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/declarations/thinhistoricalatomiccumulative.md) | 22 | `declaration-track:07cc2e1f32fcc96c2be3503f3e9125984e97755bbb9f8eb8be7dc1264a32cd1c` |
-| 3 | `theorem` | [cumulative_eq_atomic_sub_log](../../../../MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/declarations/cumulative-eq-atomic-sub-log.md) | 27 | `result-track:ecd1b0127d06b620d5398b09aaaf47ed2d84b54573086e06f56257fdf3bcd026` |
-| 4 | `theorem` | [thinHistoricalStep_measurable](../../../../MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/declarations/thinhistoricalstep-measurable.md) | 33 | `result-track:c64b14d00d46265244db67bdbdbc81cfb919ade5fcd8bce7d74e2c48200d01d3` |
-| 5 | `theorem` | [thinHistoricalAtomicCumulative_measurable](../../../../MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/declarations/thinhistoricalatomiccumulative-measurable.md) | 38 | `result-track:c16fba6c63498dc0942c1087ffc68e7f8c80141ef3fbc3bf104b3e8709c6bd10` |
-| 6 | `theorem` | [thinHistoricalAtomicCumulative_bounded](../../../../MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/declarations/thinhistoricalatomiccumulative-bounded.md) | 43 | `result-track:0ef167563c7cbd127a57796f76d4de2b5bcd0dd78b7b363a102ce6aa2158b1c3` |
-| 7 | `theorem` | [thinHistoricalGreenResidual_aestronglyMeasurable](../../../../MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/declarations/thinhistoricalgreenresidual-aestronglymeasurable.md) | 65 | `result-track:367f4ed6c6a724c5dce6043e3fa2e07edf0a5819cda02ff4bd1ab56659fab276` |
-| 8 | `theorem` | [thinHistoricalGreenResidual_memLp](../../../../MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/declarations/thinhistoricalgreenresidual-memlp.md) | 78 | `result-track:d5e72aa76ba80f73c1f26692e574c96ef5d66e09ec7f2c1b83e9f4b1b0b9e3b0` |
+| 1 | `def` | [thinHistoricalStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/declarations/thinhistoricalstep.md) | 20 | `declaration-track:9f1878752616bb381c68a0452ad23166b8a494b55e64cc35c54a18adeee0299b` |
+| 2 | `def` | [thinHistoricalAtomicCumulative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/declarations/thinhistoricalatomiccumulative.md) | 22 | `declaration-track:07cc2e1f32fcc96c2be3503f3e9125984e97755bbb9f8eb8be7dc1264a32cd1c` |
+| 3 | `theorem` | [cumulative_eq_atomic_sub_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/declarations/cumulative-eq-atomic-sub-log.md) | 27 | `result-track:ecd1b0127d06b620d5398b09aaaf47ed2d84b54573086e06f56257fdf3bcd026` |
+| 4 | `theorem` | [thinHistoricalStep_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/declarations/thinhistoricalstep-measurable.md) | 33 | `result-track:c64b14d00d46265244db67bdbdbc81cfb919ade5fcd8bce7d74e2c48200d01d3` |
+| 5 | `theorem` | [thinHistoricalAtomicCumulative_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/declarations/thinhistoricalatomiccumulative-measurable.md) | 38 | `result-track:c16fba6c63498dc0942c1087ffc68e7f8c80141ef3fbc3bf104b3e8709c6bd10` |
+| 6 | `theorem` | [thinHistoricalAtomicCumulative_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/declarations/thinhistoricalatomiccumulative-bounded.md) | 43 | `result-track:0ef167563c7cbd127a57796f76d4de2b5bcd0dd78b7b363a102ce6aa2158b1c3` |
+| 7 | `theorem` | [thinHistoricalGreenResidual_aestronglyMeasurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/declarations/thinhistoricalgreenresidual-aestronglymeasurable.md) | 65 | `result-track:367f4ed6c6a724c5dce6043e3fa2e07edf0a5819cda02ff4bd1ab56659fab276` |
+| 8 | `theorem` | [thinHistoricalGreenResidual_memLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenHistoricalMemLp.lean/declarations/thinhistoricalgreenresidual-memlp.md) | 78 | `result-track:d5e72aa76ba80f73c1f26692e574c96ef5d66e09ec7f2c1b83e9f4b1b0b9e3b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

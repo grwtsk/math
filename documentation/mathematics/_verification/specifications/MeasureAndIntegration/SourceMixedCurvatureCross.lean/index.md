@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceMixedCurvatureCross.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceMixedCurvatureCross.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureCross.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureCross.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [source_shift_cross_integrable](../../../../MeasureAndIntegration/SourceMixedCurvatureCross.lean/declarations/source-shift-cross-integrable.md) | 31 | `result-track:81e05b1c5d5071be45ff9ffa70186189f300085ec902b14d1ea3b078bf0a9820` |
-| 2 | `theorem` | [deriv_shift_cross_integrable](../../../../MeasureAndIntegration/SourceMixedCurvatureCross.lean/declarations/deriv-shift-cross-integrable.md) | 38 | `result-track:a581d1c617ab5e59bb2ad29bfa7426661470047c26d5df79b2c1e2541db94bfe` |
-| 3 | `theorem` | [correlation_at_shift_difference](../../../../MeasureAndIntegration/SourceMixedCurvatureCross.lean/declarations/correlation-at-shift-difference.md) | 46 | `result-track:27d468ec0dbef9b74668ccf6724b8c1faab8202b0fe4cb05df91bd3e6cd62800` |
-| 4 | `theorem` | [curvature_at_shift_difference](../../../../MeasureAndIntegration/SourceMixedCurvatureCross.lean/declarations/curvature-at-shift-difference.md) | 62 | `result-track:d55b6321f7d94922b230a02ae4585e70a0b43f01780381dd561c47402a0bbb56` |
-| 5 | `theorem` | [actual_mixed_curvature_finite_cross_eq_neg_products](../../../../MeasureAndIntegration/SourceMixedCurvatureCross.lean/declarations/actual-mixed-curvature-finite-cross-eq-neg-products.md) | 83 | `result-track:e37bad0800433742b1a40f03a40b340a6b086e14a92c4ddafa0b25ff21b73639` |
+| 1 | `theorem` | [source_shift_cross_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureCross.lean/declarations/source-shift-cross-integrable.md) | 31 | `result-track:81e05b1c5d5071be45ff9ffa70186189f300085ec902b14d1ea3b078bf0a9820` |
+| 2 | `theorem` | [deriv_shift_cross_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureCross.lean/declarations/deriv-shift-cross-integrable.md) | 38 | `result-track:a581d1c617ab5e59bb2ad29bfa7426661470047c26d5df79b2c1e2541db94bfe` |
+| 3 | `theorem` | [correlation_at_shift_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureCross.lean/declarations/correlation-at-shift-difference.md) | 46 | `result-track:27d468ec0dbef9b74668ccf6724b8c1faab8202b0fe4cb05df91bd3e6cd62800` |
+| 4 | `theorem` | [curvature_at_shift_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureCross.lean/declarations/curvature-at-shift-difference.md) | 62 | `result-track:d55b6321f7d94922b230a02ae4585e70a0b43f01780381dd561c47402a0bbb56` |
+| 5 | `theorem` | [actual_mixed_curvature_finite_cross_eq_neg_products](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureCross.lean/declarations/actual-mixed-curvature-finite-cross-eq-neg-products.md) | 83 | `result-track:e37bad0800433742b1a40f03a40b340a6b086e14a92c4ddafa0b25ff21b73639` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

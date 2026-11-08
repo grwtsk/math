@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsENamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsENamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsENamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsENamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TracesBoundsE](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsENamespaced.lean/declarations/tracesboundse.md) | 41 | `declaration-track:a2200ad544b589c292f02f6f8c087402d321623aff56cc6b2922a25abb4a07ab` |
-| 2 | `lemma` | [TracesBounds.toE](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsENamespaced.lean/declarations/tracesbounds-toe.md) | 48 | `result-track:9ec2b203bc3c91a46d1024d55ccc849d40c9ed9dd763c6f2a44063b1e709ead1` |
-| 3 | `lemma` | [TracesBoundsE.toTracesBounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsENamespaced.lean/declarations/tracesboundse-totracesbounds.md) | 52 | `result-track:f8b1a53b66b9c9766abfaa86ad5f303b1e91dfc06dc4e2db0401b86f30b48bc9` |
-| 4 | `def` | [ThmTracesHypE](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsENamespaced.lean/declarations/thmtraceshype.md) | 57 | `declaration-track:6e3aa49ac2eddff3fe5510ee0f34962661371f9efa5b7102b62aaee03339fd47` |
-| 5 | `lemma` | [thmTracesHyp_iff_E](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsENamespaced.lean/declarations/thmtraceshyp-iff-e.md) | 60 | `result-track:7e8ba9b177c449652aec1910a8809bdb5786ed74f4371ac2f88ab41260cb27df` |
+| 1 | `structure` | [TracesBoundsE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsENamespaced.lean/declarations/tracesboundse.md) | 41 | `declaration-track:a2200ad544b589c292f02f6f8c087402d321623aff56cc6b2922a25abb4a07ab` |
+| 2 | `lemma` | [TracesBounds.toE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsENamespaced.lean/declarations/tracesbounds-toe.md) | 48 | `result-track:9ec2b203bc3c91a46d1024d55ccc849d40c9ed9dd763c6f2a44063b1e709ead1` |
+| 3 | `lemma` | [TracesBoundsE.toTracesBounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsENamespaced.lean/declarations/tracesboundse-totracesbounds.md) | 52 | `result-track:f8b1a53b66b9c9766abfaa86ad5f303b1e91dfc06dc4e2db0401b86f30b48bc9` |
+| 4 | `def` | [ThmTracesHypE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsENamespaced.lean/declarations/thmtraceshype.md) | 57 | `declaration-track:6e3aa49ac2eddff3fe5510ee0f34962661371f9efa5b7102b62aaee03339fd47` |
+| 5 | `lemma` | [thmTracesHyp_iff_E](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsENamespaced.lean/declarations/thmtraceshyp-iff-e.md) | 60 | `result-track:7e8ba9b177c449652aec1910a8809bdb5786ed74f4371ac2f88ab41260cb27df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

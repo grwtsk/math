@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Decoder.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Decoder.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Decoder.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Decoder.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [DecodeResult](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Decoder.lean/declarations/decoderesult.md) | 15 | `declaration-track:e5bac7239e24db285c67d40ebf545012c2ee1a9ce8fcab9922d756d01b36dd25` |
-| 2 | `def` | [DecoderSound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Decoder.lean/declarations/decodersound.md) | 20 | `declaration-track:f48e3991db750375f0abca9026473e1f6b681b85fcc45269d628bb6a8bd944f4` |
-| 3 | `def` | [DecoderSurjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Decoder.lean/declarations/decodersurjective.md) | 27 | `declaration-track:096199d58369d75b6df7d9707d89aedadc9bfbf1662cbea2db003d3c8223794f` |
-| 4 | `def` | [TransitionComplete](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Decoder.lean/declarations/transitioncomplete.md) | 32 | `declaration-track:3ce5220165702114ac8f0800792d381e184f965205556a6f24ad1695de5e7e47` |
-| 5 | `def` | [LatentExact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Decoder.lean/declarations/latentexact.md) | 42 | `declaration-track:e6a6efd0a52c67bff891fcbbc54629e48e0edcb732442250d9619b1fbd7b62ad` |
-| 6 | `structure` | [DecoderObligations](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Decoder.lean/declarations/decoderobligations.md) | 49 | `declaration-track:8cc51b36d0bd95980ddc03c0249d47dc911bc8a3acfa55fc03c1ada3ea96b658` |
-| 7 | `theorem` | [decoder_sound_by_result_type](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Decoder.lean/declarations/decoder-sound-by-result-type.md) | 61 | `result-track:e89f187135c1efdde6cef7f4e531bf8f6c384139c77960b5562d5d7ca677c7e3` |
+| 1 | `inductive` | [DecodeResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Decoder.lean/declarations/decoderesult.md) | 15 | `declaration-track:e5bac7239e24db285c67d40ebf545012c2ee1a9ce8fcab9922d756d01b36dd25` |
+| 2 | `def` | [DecoderSound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Decoder.lean/declarations/decodersound.md) | 20 | `declaration-track:f48e3991db750375f0abca9026473e1f6b681b85fcc45269d628bb6a8bd944f4` |
+| 3 | `def` | [DecoderSurjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Decoder.lean/declarations/decodersurjective.md) | 27 | `declaration-track:096199d58369d75b6df7d9707d89aedadc9bfbf1662cbea2db003d3c8223794f` |
+| 4 | `def` | [TransitionComplete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Decoder.lean/declarations/transitioncomplete.md) | 32 | `declaration-track:3ce5220165702114ac8f0800792d381e184f965205556a6f24ad1695de5e7e47` |
+| 5 | `def` | [LatentExact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Decoder.lean/declarations/latentexact.md) | 42 | `declaration-track:e6a6efd0a52c67bff891fcbbc54629e48e0edcb732442250d9619b1fbd7b62ad` |
+| 6 | `structure` | [DecoderObligations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Decoder.lean/declarations/decoderobligations.md) | 49 | `declaration-track:8cc51b36d0bd95980ddc03c0249d47dc911bc8a3acfa55fc03c1ada3ea96b658` |
+| 7 | `theorem` | [decoder_sound_by_result_type](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Decoder.lean/declarations/decoder-sound-by-result-type.md) | 61 | `result-track:e89f187135c1efdde6cef7f4e531bf8f6c384139c77960b5562d5d7ca677c7e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

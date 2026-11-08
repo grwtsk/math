@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ListNamespacedPublicEdition1.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ListNamespacedPublicEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListNamespacedPublicEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListNamespacedPublicEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [List.step_iter_nil](../../../../../ComputerScience/AlgorithmsInComputerScience/ListNamespacedPublicEdition1.lean/declarations/list-step-iter-nil.md) | 35 | `result-track:fcdda4867b90b695eb94ce7f98d57af2ef6165e0c22eebdd3cb516737bf821de` |
-| 2 | `theorem` | [List.step_iter_cons](../../../../../ComputerScience/AlgorithmsInComputerScience/ListNamespacedPublicEdition1.lean/declarations/list-step-iter-cons.md) | 40 | `result-track:e04fa29895e593b1ec14de1b364cd2f02088aa08d8cd034939166fca423d1e4e` |
-| 3 | `theorem` | [List.toArray_iter](../../../../../ComputerScience/AlgorithmsInComputerScience/ListNamespacedPublicEdition1.lean/declarations/list-toarray-iter.md) | 45 | `result-track:d3b7610342ab9fb85bbd0e0e446711de2340d0160077ac434f8f523c586f50bf` |
-| 4 | `theorem` | [List.toList_iter](../../../../../ComputerScience/AlgorithmsInComputerScience/ListNamespacedPublicEdition1.lean/declarations/list-tolist-iter.md) | 50 | `result-track:4436ea019d609aaeeb49861ae0f0e04474d16cba1d553fe9476823e65e748228` |
-| 5 | `theorem` | [List.toListRev_iter](../../../../../ComputerScience/AlgorithmsInComputerScience/ListNamespacedPublicEdition1.lean/declarations/list-tolistrev-iter.md) | 55 | `result-track:09700c82880a52f9bbf0ad09085e70748c246715cb4b57af2ee1c1363bfb7c41` |
+| 1 | `theorem` | [List.step_iter_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListNamespacedPublicEdition1.lean/declarations/list-step-iter-nil.md) | 35 | `result-track:fcdda4867b90b695eb94ce7f98d57af2ef6165e0c22eebdd3cb516737bf821de` |
+| 2 | `theorem` | [List.step_iter_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListNamespacedPublicEdition1.lean/declarations/list-step-iter-cons.md) | 40 | `result-track:e04fa29895e593b1ec14de1b364cd2f02088aa08d8cd034939166fca423d1e4e` |
+| 3 | `theorem` | [List.toArray_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListNamespacedPublicEdition1.lean/declarations/list-toarray-iter.md) | 45 | `result-track:d3b7610342ab9fb85bbd0e0e446711de2340d0160077ac434f8f523c586f50bf` |
+| 4 | `theorem` | [List.toList_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListNamespacedPublicEdition1.lean/declarations/list-tolist-iter.md) | 50 | `result-track:4436ea019d609aaeeb49861ae0f0e04474d16cba1d553fe9476823e65e748228` |
+| 5 | `theorem` | [List.toListRev_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListNamespacedPublicEdition1.lean/declarations/list-tolistrev-iter.md) | 55 | `result-track:09700c82880a52f9bbf0ad09085e70748c246715cb4b57af2ee1c1363bfb7c41` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

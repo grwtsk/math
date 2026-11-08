@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusCarrierModule.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusCarrierModule.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusCarrierModule.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusCarrierModule.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [carrierModule](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusCarrierModule.lean/declarations/carriermodule.md) | 16 | `declaration-track:6f95d9e051ab9db59662de9b26a25bcb3bba25494bf04e3849a089ab3ade9d57` |
-| 2 | `def` | [evaluationModule](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusCarrierModule.lean/declarations/evaluationmodule.md) | 28 | `declaration-track:c3e11ae52748ddef083c113f1d0412dec9c1daf00f4d7b5f534a6783bc210c6b` |
-| 3 | `def` | [semanticsModule](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusCarrierModule.lean/declarations/semanticsmodule.md) | 40 | `declaration-track:4208a4825edad53c27fd07a7d51df7fdea39bf5cabc64835ada3255fb39f2c86` |
-| 4 | `def` | [algebraModule](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusCarrierModule.lean/declarations/algebramodule.md) | 52 | `declaration-track:56cef36887a507195fdfcad7db559737b92e4815036870e4ae5a3dd754d717e8` |
-| 5 | `def` | [dependencyClosure](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusCarrierModule.lean/declarations/dependencyclosure.md) | 56 | `declaration-track:abad42924223b532c36265afec5505f077f71897062d5b35a12de6eeb140cb58` |
-| 6 | `theorem` | [dependencyClosure_length](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusCarrierModule.lean/declarations/dependencyclosure-length.md) | 63 | `result-track:425caa9d462f81b8f127f4f7a4e1d34e073b39f0442350b5a470854ba666a22b` |
+| 1 | `def` | [carrierModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusCarrierModule.lean/declarations/carriermodule.md) | 16 | `declaration-track:6f95d9e051ab9db59662de9b26a25bcb3bba25494bf04e3849a089ab3ade9d57` |
+| 2 | `def` | [evaluationModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusCarrierModule.lean/declarations/evaluationmodule.md) | 28 | `declaration-track:c3e11ae52748ddef083c113f1d0412dec9c1daf00f4d7b5f534a6783bc210c6b` |
+| 3 | `def` | [semanticsModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusCarrierModule.lean/declarations/semanticsmodule.md) | 40 | `declaration-track:4208a4825edad53c27fd07a7d51df7fdea39bf5cabc64835ada3255fb39f2c86` |
+| 4 | `def` | [algebraModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusCarrierModule.lean/declarations/algebramodule.md) | 52 | `declaration-track:56cef36887a507195fdfcad7db559737b92e4815036870e4ae5a3dd754d717e8` |
+| 5 | `def` | [dependencyClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusCarrierModule.lean/declarations/dependencyclosure.md) | 56 | `declaration-track:abad42924223b532c36265afec5505f077f71897062d5b35a12de6eeb140cb58` |
+| 6 | `theorem` | [dependencyClosure_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusCarrierModule.lean/declarations/dependencyclosure-length.md) | 63 | `result-track:425caa9d462f81b8f127f4f7a4e1d34e073b39f0442350b5a470854ba666a22b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

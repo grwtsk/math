@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [GoalCellId](../../../../../ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/goalcellid.md) | 18 | `declaration-track:610c20077e2bc0bf5c98c7ea612c9d7ff0464a44d4edb7718442308610b76018` |
-| 2 | `inductive` | [GoalCellStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/goalcellstatus.md) | 22 | `declaration-track:2bc12e6dba293ff15414bf96b8ae2530c7a9d06613dca25d3e2236014e34d127` |
-| 3 | `inductive` | [OpenObligationKind](../../../../../ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/openobligationkind.md) | 33 | `declaration-track:c97062d1b54017395f70dd5ce44da7a4f21ca477f339049b643b59e2f56c33b7` |
-| 4 | `structure` | [GoalCell](../../../../../ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/goalcell.md) | 43 | `declaration-track:c211c2e9279d222dabce5e2fb44d4e5be66b3be53be39819ee56b62519bc5126` |
-| 5 | `inductive` | [GoalEdgeKind](../../../../../ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/goaledgekind.md) | 54 | `declaration-track:136abfe4103baeaaeeef2943d7927610630727ff12d4502a3d1ccf2e82c0c7d0` |
-| 6 | `structure` | [GoalEdge](../../../../../ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/goaledge.md) | 66 | `declaration-track:b7a9154e6ef222e9abf4045ab181c3dda8f39878cde6fe47bd4939b7dad5ee2b` |
-| 7 | `structure` | [GoalGraph](../../../../../ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/goalgraph.md) | 74 | `declaration-track:d8337f69310be08733f1769942313113aca04a33a45975a4ea049997714126ac` |
-| 8 | `structure` | [GoalSlice](../../../../../ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/goalslice.md) | 82 | `declaration-track:02434444f5aad7c60bd38fcca0c05873dce70516803ce009c7361712b2465cfc` |
-| 9 | `structure` | [ElaborationSnapshot](../../../../../ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/elaborationsnapshot.md) | 89 | `declaration-track:1b9c74bff63df922e7a2761a2abaaa7453cb351d0d89508a1642b9e6b63e2bb1` |
-| 10 | `def` | [GoalGraph.containsCell](../../../../../ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/goalgraph-containscell.md) | 95 | `declaration-track:559f4917c29020fae958f84f7af70e09a6dfb8fc8fcfec70a912927a391887f9` |
+| 1 | `abbrev` | [GoalCellId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/goalcellid.md) | 18 | `declaration-track:610c20077e2bc0bf5c98c7ea612c9d7ff0464a44d4edb7718442308610b76018` |
+| 2 | `inductive` | [GoalCellStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/goalcellstatus.md) | 22 | `declaration-track:2bc12e6dba293ff15414bf96b8ae2530c7a9d06613dca25d3e2236014e34d127` |
+| 3 | `inductive` | [OpenObligationKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/openobligationkind.md) | 33 | `declaration-track:c97062d1b54017395f70dd5ce44da7a4f21ca477f339049b643b59e2f56c33b7` |
+| 4 | `structure` | [GoalCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/goalcell.md) | 43 | `declaration-track:c211c2e9279d222dabce5e2fb44d4e5be66b3be53be39819ee56b62519bc5126` |
+| 5 | `inductive` | [GoalEdgeKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/goaledgekind.md) | 54 | `declaration-track:136abfe4103baeaaeeef2943d7927610630727ff12d4502a3d1ccf2e82c0c7d0` |
+| 6 | `structure` | [GoalEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/goaledge.md) | 66 | `declaration-track:b7a9154e6ef222e9abf4045ab181c3dda8f39878cde6fe47bd4939b7dad5ee2b` |
+| 7 | `structure` | [GoalGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/goalgraph.md) | 74 | `declaration-track:d8337f69310be08733f1769942313113aca04a33a45975a4ea049997714126ac` |
+| 8 | `structure` | [GoalSlice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/goalslice.md) | 82 | `declaration-track:02434444f5aad7c60bd38fcca0c05873dce70516803ce009c7361712b2465cfc` |
+| 9 | `structure` | [ElaborationSnapshot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/elaborationsnapshot.md) | 89 | `declaration-track:1b9c74bff63df922e7a2761a2abaaa7453cb351d0d89508a1642b9e6b63e2bb1` |
+| 10 | `def` | [GoalGraph.containsCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GoalGraphPublic.lean/declarations/goalgraph-containscell.md) | 95 | `declaration-track:559f4917c29020fae958f84f7af70e09a6dfb8fc8fcfec70a912927a391887f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

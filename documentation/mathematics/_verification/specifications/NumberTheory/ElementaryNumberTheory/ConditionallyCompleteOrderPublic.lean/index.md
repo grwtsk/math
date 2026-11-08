@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/instance.md) | 29 | `declaration-track:34f35d60555a6e3069b5669d758bddcc19963516fea58224551e1edeff7efc56` |
-| 2 | `theorem` | [csSup_eq_greatestOfBdd](../../../../../NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/cssup-eq-greatestofbdd.md) | 50 | `result-track:e75eef717934a9b9d43c7bad0aea20c9bc6403935610bf0d9e5d2c5dcdffcc91` |
-| 3 | `theorem` | [csSup_empty](../../../../../NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/cssup-empty.md) | 57 | `result-track:b84a4bc68da9b1ec34c792952b8fd42b2fa11302ea5aa4dc8ab9cc51b0f3721f` |
-| 4 | `theorem` | [csSup_of_not_bddAbove](../../../../../NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/cssup-of-not-bddabove.md) | 60 | `result-track:dc88521f2b69082c45cfb7e0e74e950f850323b1c561a5d1b818658514f470ff` |
-| 5 | `theorem` | [csInf_eq_leastOfBdd](../../../../../NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/csinf-eq-leastofbdd.md) | 64 | `result-track:d96961db1fdcbf05f89be667054ff27cf4ab3c255e2e8776144b4e77ed13f857` |
-| 6 | `theorem` | [csInf_empty](../../../../../NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/csinf-empty.md) | 71 | `result-track:d5ef5d5f01b2a78a0e7d4ec2b88ece29d3c0df9bdb17910e0e93b63de5804f76` |
-| 7 | `theorem` | [csInf_of_not_bddBelow](../../../../../NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/csinf-of-not-bddbelow.md) | 74 | `result-track:cfb530c5055ef0bb78cd00c6be56ddc46984e72572f6c49d0537b5fc91c9c3ac` |
-| 8 | `theorem` | [csSup_mem](../../../../../NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/cssup-mem.md) | 77 | `result-track:9b3b53f765588c077d46b5dee1d1a9a8cf01cd6e91130683fbc8e686c859fe1b` |
-| 9 | `theorem` | [csInf_mem](../../../../../NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/csinf-mem.md) | 81 | `result-track:26420380040954ee5260e321517c1b565b95823a9042accf483d54cbfaceb64e` |
-| 10 | `example` | [(anonymous)](../../../../../NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/example.md) | 91 | `declaration-track:450731030f90a86dfbef674bfb973157dff46bace865842eb1dd163d79a1ec21` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/instance.md) | 29 | `declaration-track:34f35d60555a6e3069b5669d758bddcc19963516fea58224551e1edeff7efc56` |
+| 2 | `theorem` | [csSup_eq_greatestOfBdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/cssup-eq-greatestofbdd.md) | 50 | `result-track:e75eef717934a9b9d43c7bad0aea20c9bc6403935610bf0d9e5d2c5dcdffcc91` |
+| 3 | `theorem` | [csSup_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/cssup-empty.md) | 57 | `result-track:b84a4bc68da9b1ec34c792952b8fd42b2fa11302ea5aa4dc8ab9cc51b0f3721f` |
+| 4 | `theorem` | [csSup_of_not_bddAbove](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/cssup-of-not-bddabove.md) | 60 | `result-track:dc88521f2b69082c45cfb7e0e74e950f850323b1c561a5d1b818658514f470ff` |
+| 5 | `theorem` | [csInf_eq_leastOfBdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/csinf-eq-leastofbdd.md) | 64 | `result-track:d96961db1fdcbf05f89be667054ff27cf4ab3c255e2e8776144b4e77ed13f857` |
+| 6 | `theorem` | [csInf_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/csinf-empty.md) | 71 | `result-track:d5ef5d5f01b2a78a0e7d4ec2b88ece29d3c0df9bdb17910e0e93b63de5804f76` |
+| 7 | `theorem` | [csInf_of_not_bddBelow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/csinf-of-not-bddbelow.md) | 74 | `result-track:cfb530c5055ef0bb78cd00c6be56ddc46984e72572f6c49d0537b5fc91c9c3ac` |
+| 8 | `theorem` | [csSup_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/cssup-mem.md) | 77 | `result-track:9b3b53f765588c077d46b5dee1d1a9a8cf01cd6e91130683fbc8e686c859fe1b` |
+| 9 | `theorem` | [csInf_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/csinf-mem.md) | 81 | `result-track:26420380040954ee5260e321517c1b565b95823a9042accf483d54cbfaceb64e` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ConditionallyCompleteOrderPublic.lean/declarations/example.md) | 91 | `declaration-track:450731030f90a86dfbef674bfb973157dff46bace865842eb1dd163d79a1ec21` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

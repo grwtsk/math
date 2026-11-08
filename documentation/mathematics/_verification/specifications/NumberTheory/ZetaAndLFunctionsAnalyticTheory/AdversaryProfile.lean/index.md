@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AdversaryProfile.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AdversaryProfile.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AdversaryProfile.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AdversaryProfile.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [AdversaryWitness](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AdversaryProfile.lean/declarations/adversarywitness.md) | 9 | `declaration-track:0debd9e5be1f6eba6700a600e70e9a96ad1370d120f71565f4edf45c1701d960` |
-| 2 | `abbrev` | [ArithmeticKernelLift](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AdversaryProfile.lean/declarations/arithmetickernellift.md) | 11 | `declaration-track:293aea8a25161b3d784a98dba1999d22cbd77df87fefcabe6a03bddb0b0db81d` |
-| 3 | `abbrev` | [ArithmeticAdversaryWitness](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AdversaryProfile.lean/declarations/arithmeticadversarywitness.md) | 13 | `declaration-track:3b5299094e55f4b30c59a47f8e0f8c5a33a81ca17f6a8fcdfb3b9679f9d58248` |
-| 4 | `abbrev` | [ArithmeticAdversaryProfile](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AdversaryProfile.lean/declarations/arithmeticadversaryprofile.md) | 15 | `declaration-track:da27a8aad4b6900a3e4ea43c480d79a9912e2bc6b0ff5d8e757bc450d9889e43` |
-| 5 | `abbrev` | [ArithmeticKernelNormCertificate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AdversaryProfile.lean/declarations/arithmetickernelnormcertificate.md) | 17 | `declaration-track:4d6362d410ab5074c8f80ac56eb6e4cea740175f3b49d70940f5c1c63ec9b2bd` |
+| 1 | `abbrev` | [AdversaryWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AdversaryProfile.lean/declarations/adversarywitness.md) | 9 | `declaration-track:0debd9e5be1f6eba6700a600e70e9a96ad1370d120f71565f4edf45c1701d960` |
+| 2 | `abbrev` | [ArithmeticKernelLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AdversaryProfile.lean/declarations/arithmetickernellift.md) | 11 | `declaration-track:293aea8a25161b3d784a98dba1999d22cbd77df87fefcabe6a03bddb0b0db81d` |
+| 3 | `abbrev` | [ArithmeticAdversaryWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AdversaryProfile.lean/declarations/arithmeticadversarywitness.md) | 13 | `declaration-track:3b5299094e55f4b30c59a47f8e0f8c5a33a81ca17f6a8fcdfb3b9679f9d58248` |
+| 4 | `abbrev` | [ArithmeticAdversaryProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AdversaryProfile.lean/declarations/arithmeticadversaryprofile.md) | 15 | `declaration-track:da27a8aad4b6900a3e4ea43c480d79a9912e2bc6b0ff5d8e757bc450d9889e43` |
+| 5 | `abbrev` | [ArithmeticKernelNormCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AdversaryProfile.lean/declarations/arithmetickernelnormcertificate.md) | 17 | `declaration-track:4d6362d410ab5074c8f80ac56eb6e4cea740175f3b49d70940f5c1c63ec9b2bd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

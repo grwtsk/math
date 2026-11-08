@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/Boundary.lean/index.md) · [Full source](../../../../AlgebraicTopology/Boundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Boundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Boundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [boundary](../../../../AlgebraicTopology/Boundary.lean/declarations/boundary.md) | 33 | `declaration-track:1d15eff36aa3d4e5e45327581172e181c8cb794c873269118c6ecfc07976a223` |
-| 2 | `lemma` | [boundary_eq_iSup](../../../../AlgebraicTopology/Boundary.lean/declarations/boundary-eq-isup.md) | 40 | `result-track:883aacc81ff3e9167d4772d59ac0c3e2075f2f343da534d688330fb5e95129ec` |
-| 3 | `abbrev` | [boundaryInclusion](../../../../AlgebraicTopology/Boundary.lean/declarations/boundaryinclusion.md) | 48 | `declaration-track:545a92572c0ea355a5f6bbc877597295a71d2e4bfb51d3dbdd7492956241526b` |
+| 1 | `def` | [boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Boundary.lean/declarations/boundary.md) | 33 | `declaration-track:1d15eff36aa3d4e5e45327581172e181c8cb794c873269118c6ecfc07976a223` |
+| 2 | `lemma` | [boundary_eq_iSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Boundary.lean/declarations/boundary-eq-isup.md) | 40 | `result-track:883aacc81ff3e9167d4772d59ac0c3e2075f2f343da534d688330fb5e95129ec` |
+| 3 | `abbrev` | [boundaryInclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Boundary.lean/declarations/boundaryinclusion.md) | 48 | `declaration-track:545a92572c0ea355a5f6bbc877597295a71d2e4bfb51d3dbdd7492956241526b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

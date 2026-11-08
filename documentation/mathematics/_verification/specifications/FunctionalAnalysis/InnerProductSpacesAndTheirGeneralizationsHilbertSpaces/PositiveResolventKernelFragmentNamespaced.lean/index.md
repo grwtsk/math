@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveResolventKernelFragmentNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveResolventKernelFragmentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveResolventKernelFragmentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveResolventKernelFragmentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [positive_fixed_direction_le](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveResolventKernelFragmentNamespaced.lean/declarations/positive-fixed-direction-le.md) | 17 | `result-track:eee04343f2a716d8cec38959a20e313ec6f8b91458a31eaafc9afb1e9284b7cf` |
-| 2 | `theorem` | [regularized_resolvent_kernel_apply](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveResolventKernelFragmentNamespaced.lean/declarations/regularized-resolvent-kernel-apply.md) | 50 | `result-track:a5db260acead8c226bac0546462ecc9cb2e1daabcb78043deceae919f9c00337` |
-| 3 | `theorem` | [kernel_witness_regularizedMass_le](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveResolventKernelFragmentNamespaced.lean/declarations/kernel-witness-regularizedmass-le.md) | 58 | `result-track:6e52facdcf80b8db8243918fdb9504439a397ed0f280f6921db15ce2b01f8838` |
+| 1 | `theorem` | [positive_fixed_direction_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveResolventKernelFragmentNamespaced.lean/declarations/positive-fixed-direction-le.md) | 17 | `result-track:eee04343f2a716d8cec38959a20e313ec6f8b91458a31eaafc9afb1e9284b7cf` |
+| 2 | `theorem` | [regularized_resolvent_kernel_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveResolventKernelFragmentNamespaced.lean/declarations/regularized-resolvent-kernel-apply.md) | 50 | `result-track:a5db260acead8c226bac0546462ecc9cb2e1daabcb78043deceae919f9c00337` |
+| 3 | `theorem` | [kernel_witness_regularizedMass_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveResolventKernelFragmentNamespaced.lean/declarations/kernel-witness-regularizedmass-le.md) | 58 | `result-track:6e52facdcf80b8db8243918fdb9504439a397ed0f280f6921db15ce2b01f8838` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

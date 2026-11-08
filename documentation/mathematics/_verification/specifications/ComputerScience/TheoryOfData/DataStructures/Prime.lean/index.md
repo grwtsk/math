@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/Prime.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/Prime.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Prime.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Prime.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [minFacAux](../../../../../../ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/minfacaux.md) | 35 | `declaration-track:600d00104f83359a4380de09c3633f9ab27617fe2e65dadc17276d622f1632f6` |
-| 2 | `theorem` | [minFacAux_to_nat](../../../../../../ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/minfacaux-to-nat.md) | 40 | `result-track:17ff13722fd3d285744ec87a50156613d02ba670dacad144badfc620e502c43a` |
-| 3 | `def` | [minFac](../../../../../../ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/minfac.md) | 53 | `declaration-track:1c509bd67e7b014e0f7ebd843caeaf7449904b49d19fa1ac4a5519a1c13702cd` |
-| 4 | `theorem` | [minFac_to_nat](../../../../../../ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/minfac-to-nat-source-edition-2.md) | 59 | `result-track:e0a7fd245fc50045897d6b6e407b547345b0ffce8e34a50a08fe9d935c2b56a4` |
-| 5 | `def` | [Prime](../../../../../../ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/prime-source-edition-2.md) | 80 | `declaration-track:9382ff28beedc5d611f3546542b93da0b87c8a23c3962f4ced331ffc5db8fd79` |
-| 6 | `instance` | [decidablePrime](../../../../../../ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/decidableprime-source-edition-2.md) | 83 | `declaration-track:baecb8e1187fff020a4715de53e46d56c5f6c831738f153b7c71f4c0f0e6d8e7` |
-| 7 | `def` | [minFac](../../../../../../ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/minfac-source-edition-2.md) | 105 | `declaration-track:378e3b650830e43074df06ca6d65924a493ced1a1aa1a411e2a36f7d90ec620a` |
-| 8 | `theorem` | [minFac_to_nat](../../../../../../ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/minfac-to-nat.md) | 110 | `result-track:2b64c6ede9d6608ee54ca8fa64d746b297f6bb2ad7e34c0d061b5d3f025d0169` |
-| 9 | `def` | [Prime](../../../../../../ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/prime.md) | 116 | `declaration-track:442dbc9e9279e8616796aa86839f89ee01c4c9814ca3a86ba91690f921baa49c` |
-| 10 | `instance` | [decidablePrime](../../../../../../ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/decidableprime.md) | 119 | `declaration-track:686873d3380a883c860ed94c937426babb6c97dc14c4cd9eaf679fccf57b32eb` |
+| 1 | `def` | [minFacAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/minfacaux.md) | 35 | `declaration-track:600d00104f83359a4380de09c3633f9ab27617fe2e65dadc17276d622f1632f6` |
+| 2 | `theorem` | [minFacAux_to_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/minfacaux-to-nat.md) | 40 | `result-track:17ff13722fd3d285744ec87a50156613d02ba670dacad144badfc620e502c43a` |
+| 3 | `def` | [minFac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/minfac.md) | 53 | `declaration-track:1c509bd67e7b014e0f7ebd843caeaf7449904b49d19fa1ac4a5519a1c13702cd` |
+| 4 | `theorem` | [minFac_to_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/minfac-to-nat-source-edition-2.md) | 59 | `result-track:e0a7fd245fc50045897d6b6e407b547345b0ffce8e34a50a08fe9d935c2b56a4` |
+| 5 | `def` | [Prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/prime-source-edition-2.md) | 80 | `declaration-track:9382ff28beedc5d611f3546542b93da0b87c8a23c3962f4ced331ffc5db8fd79` |
+| 6 | `instance` | [decidablePrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/decidableprime-source-edition-2.md) | 83 | `declaration-track:baecb8e1187fff020a4715de53e46d56c5f6c831738f153b7c71f4c0f0e6d8e7` |
+| 7 | `def` | [minFac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/minfac-source-edition-2.md) | 105 | `declaration-track:378e3b650830e43074df06ca6d65924a493ced1a1aa1a411e2a36f7d90ec620a` |
+| 8 | `theorem` | [minFac_to_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/minfac-to-nat.md) | 110 | `result-track:2b64c6ede9d6608ee54ca8fa64d746b297f6bb2ad7e34c0d061b5d3f025d0169` |
+| 9 | `def` | [Prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/prime.md) | 116 | `declaration-track:442dbc9e9279e8616796aa86839f89ee01c4c9814ca3a86ba91690f921baa49c` |
+| 10 | `instance` | [decidablePrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Prime.lean/declarations/decidableprime.md) | 119 | `declaration-track:686873d3380a883c860ed94c937426babb6c97dc14c4cd9eaf679fccf57b32eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

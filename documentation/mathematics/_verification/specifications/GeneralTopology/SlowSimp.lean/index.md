@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SlowSimp.lean/index.md) · [Full source](../../../../GeneralTopology/SlowSimp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SlowSimp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SlowSimp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PointedSpace](../../../../GeneralTopology/SlowSimp.lean/declarations/pointedspace.md) | 23 | `declaration-track:9987f67977dca2ea85c6108a703d41f4e3601759c8d750f508650662a618a40e` |
-| 2 | `structure` | [Hom](../../../../GeneralTopology/SlowSimp.lean/declarations/hom.md) | 32 | `declaration-track:69b7113cf76f5b4a1db120337bbe02d6421cb6103e2814dc5270ddd4e611b75f` |
-| 3 | `def` | [id](../../../../GeneralTopology/SlowSimp.lean/declarations/id.md) | 40 | `declaration-track:040e296ffdd3c668879e34bd4d88868707eff67989afe280d0c44c0d9b2de97b` |
-| 4 | `def` | [comp](../../../../GeneralTopology/SlowSimp.lean/declarations/comp.md) | 42 | `declaration-track:d16c1e1f465c16eda283b1d5f0f6e1e9954172238119451145801449638f8e5d` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/SlowSimp.lean/declarations/instance.md) | 47 | `declaration-track:74c8e4da008f6013223d584f0a092e00be11bafb7bf214437b3026f1c70ccbba` |
-| 6 | `def` | [PointedSpaceEquiv_inverse](../../../../GeneralTopology/SlowSimp.lean/declarations/pointedspaceequiv-inverse.md) | 55 | `declaration-track:29abd2778ff9efa3a44d1ba78a9de363c34e654998653b47e68974eed878af11` |
+| 1 | `structure` | [PointedSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SlowSimp.lean/declarations/pointedspace.md) | 23 | `declaration-track:9987f67977dca2ea85c6108a703d41f4e3601759c8d750f508650662a618a40e` |
+| 2 | `structure` | [Hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SlowSimp.lean/declarations/hom.md) | 32 | `declaration-track:69b7113cf76f5b4a1db120337bbe02d6421cb6103e2814dc5270ddd4e611b75f` |
+| 3 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SlowSimp.lean/declarations/id.md) | 40 | `declaration-track:040e296ffdd3c668879e34bd4d88868707eff67989afe280d0c44c0d9b2de97b` |
+| 4 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SlowSimp.lean/declarations/comp.md) | 42 | `declaration-track:d16c1e1f465c16eda283b1d5f0f6e1e9954172238119451145801449638f8e5d` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SlowSimp.lean/declarations/instance.md) | 47 | `declaration-track:74c8e4da008f6013223d584f0a092e00be11bafb7bf214437b3026f1c70ccbba` |
+| 6 | `def` | [PointedSpaceEquiv_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SlowSimp.lean/declarations/pointedspaceequiv-inverse.md) | 55 | `declaration-track:29abd2778ff9efa3a44d1ba78a9de363c34e654998653b47e68974eed878af11` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

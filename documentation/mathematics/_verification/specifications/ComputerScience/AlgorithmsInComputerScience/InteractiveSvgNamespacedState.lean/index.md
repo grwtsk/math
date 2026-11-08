@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedState.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedState.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedState.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedState.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [State](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedState.lean/declarations/state.md) | 15 | `declaration-track:36aac350219b301c04835662acd52efc6be6aa95773ff9054030b408770fb12a` |
-| 2 | `def` | [isvg](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedState.lean/declarations/isvg.md) | 17 | `declaration-track:b2a2275711a667ffab80d44d5267630f2849dc586849ebd85f904ddde5e3286c` |
-| 3 | `def` | [updateSvg](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedState.lean/declarations/updatesvg.md) | 52 | `declaration-track:dec1ad9f4e73fb9008e15d9acbd6d2ef0416c9e80ff3fa841e512ac98690c342` |
-| 4 | `def` | [SvgWidget](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedState.lean/declarations/svgwidget.md) | 56 | `declaration-track:6d2f2cb6b52f791fd1d04f2cde6990733d4301b13287754dc6726d6a4518fbef` |
-| 5 | `def` | [init](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedState.lean/declarations/init.md) | 59 | `declaration-track:2a38dfdcbd6f82e1e9b0f5d235310f584e82edfeed6b9888499093eccf3c27bc` |
+| 1 | `abbrev` | [State](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedState.lean/declarations/state.md) | 15 | `declaration-track:36aac350219b301c04835662acd52efc6be6aa95773ff9054030b408770fb12a` |
+| 2 | `def` | [isvg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedState.lean/declarations/isvg.md) | 17 | `declaration-track:b2a2275711a667ffab80d44d5267630f2849dc586849ebd85f904ddde5e3286c` |
+| 3 | `def` | [updateSvg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedState.lean/declarations/updatesvg.md) | 52 | `declaration-track:dec1ad9f4e73fb9008e15d9acbd6d2ef0416c9e80ff3fa841e512ac98690c342` |
+| 4 | `def` | [SvgWidget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedState.lean/declarations/svgwidget.md) | 56 | `declaration-track:6d2f2cb6b52f791fd1d04f2cde6990733d4301b13287754dc6726d6a4518fbef` |
+| 5 | `def` | [init](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgNamespacedState.lean/declarations/init.md) | 59 | `declaration-track:2a38dfdcbd6f82e1e9b0f5d235310f584e82edfeed6b9888499093eccf3c27bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

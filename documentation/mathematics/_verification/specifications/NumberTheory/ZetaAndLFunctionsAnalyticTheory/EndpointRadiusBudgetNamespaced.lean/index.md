@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [envelope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/declarations/envelope.md) | 22 | `declaration-track:123003f68021d46778b318a27e849345fbb2d4e6e983e43e281be56d1154a942` |
-| 2 | `def` | [radiusBudget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/declarations/radiusbudget.md) | 23 | `declaration-track:1bfb63ec1a33eb7d3c35c67f84f065c0d3dd450f4d6033f20078f484abaa8510` |
-| 3 | `theorem` | [envelope_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/declarations/envelope-nonneg.md) | 25 | `result-track:c40f9e4e6512ac0208f5258e1218d789287c0ff58b988a37ae26c5442c978d00` |
-| 4 | `theorem` | [envelope_le_peak](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/declarations/envelope-le-peak.md) | 30 | `result-track:366ecbc0d3d72c898caed550564e9ae912f8715aa4c7ef36bbf7a0959c3a59f6` |
-| 5 | `theorem` | [envelope_le_of_three_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/declarations/envelope-le-of-three-le.md) | 63 | `result-track:b8e52f2e316d4ff26b602c8bf3df481ae85280fe92ee221bcb84511fa9d198fe` |
-| 6 | `theorem` | [envelope_le_radiusBudget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/declarations/envelope-le-radiusbudget.md) | 102 | `result-track:582bbe8fc549ba39be5fab8cb95874863e26f15ba79e69904e0866696260eba5` |
-| 7 | `theorem` | [radiusBudget_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/declarations/radiusbudget-nonneg.md) | 112 | `result-track:5a1b0c6a75dafdcbf3b583cca6072e003f34f78fe893439761919c556fd6fabd` |
-| 8 | `theorem` | [radiusBudget_le_three](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/declarations/radiusbudget-le-three.md) | 115 | `result-track:bfe17a926af22402db49ad7c6f440686dbccf3c36417fcaee8f1de2a21c3518f` |
+| 1 | `def` | [envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/declarations/envelope.md) | 22 | `declaration-track:123003f68021d46778b318a27e849345fbb2d4e6e983e43e281be56d1154a942` |
+| 2 | `def` | [radiusBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/declarations/radiusbudget.md) | 23 | `declaration-track:1bfb63ec1a33eb7d3c35c67f84f065c0d3dd450f4d6033f20078f484abaa8510` |
+| 3 | `theorem` | [envelope_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/declarations/envelope-nonneg.md) | 25 | `result-track:c40f9e4e6512ac0208f5258e1218d789287c0ff58b988a37ae26c5442c978d00` |
+| 4 | `theorem` | [envelope_le_peak](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/declarations/envelope-le-peak.md) | 30 | `result-track:366ecbc0d3d72c898caed550564e9ae912f8715aa4c7ef36bbf7a0959c3a59f6` |
+| 5 | `theorem` | [envelope_le_of_three_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/declarations/envelope-le-of-three-le.md) | 63 | `result-track:b8e52f2e316d4ff26b602c8bf3df481ae85280fe92ee221bcb84511fa9d198fe` |
+| 6 | `theorem` | [envelope_le_radiusBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/declarations/envelope-le-radiusbudget.md) | 102 | `result-track:582bbe8fc549ba39be5fab8cb95874863e26f15ba79e69904e0866696260eba5` |
+| 7 | `theorem` | [radiusBudget_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/declarations/radiusbudget-nonneg.md) | 112 | `result-track:5a1b0c6a75dafdcbf3b583cca6072e003f34f78fe893439761919c556fd6fabd` |
+| 8 | `theorem` | [radiusBudget_le_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointRadiusBudgetNamespaced.lean/declarations/radiusbudget-le-three.md) | 115 | `result-track:bfe17a926af22402db49ad7c6f440686dbccf3c36417fcaee8f1de2a21c3518f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

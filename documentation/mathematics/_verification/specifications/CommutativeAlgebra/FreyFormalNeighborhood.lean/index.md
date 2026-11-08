@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FreyFormalNeighborhood.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FreyFormalNeighborhood.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyFormalNeighborhood.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyFormalNeighborhood.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetRecursion`](../../../../CommutativeAlgebra/FreyJetRecursion.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetRecursion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyJetRecursion.lean/index.md) — import line 10; pinned internal source present.
 - `Mathlib.RingTheory.Ideal.Operations` — import line 11; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [element_power_zero](../../../../CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/element-power-zero.md) | 22 | `result-track:4b12e7d274d0266dbdee0bb0a2162bf76c845bc0140d4a50fd91ef076c96ae34` |
-| 2 | `theorem` | [iterate_mem](../../../../CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/iterate-mem.md) | 28 | `result-track:54e81ca11790495aceccd38a3dd2e765b0b15b9de5ba1245592e18e89f146bf6` |
-| 3 | `theorem` | [step_gain_ideal](../../../../CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/step-gain-ideal.md) | 35 | `result-track:445ed4b7888975c1b6ecfaa2ca55fa8c9753e069ef9a6c463769b4d38de95758` |
-| 4 | `theorem` | [solution_unique](../../../../CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/solution-unique.md) | 53 | `result-track:9c95d139a8862251327929f9af8479bbd058313351f32ea2cfbceb507b4ba65f` |
-| 5 | `theorem` | [iterate_solves_ideal](../../../../CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/iterate-solves-ideal.md) | 71 | `result-track:24d28ff3c3934df0ad4c40ae839f9da9191369a408796c183a0a63c72618b09a` |
-| 6 | `theorem` | [solution_eq_iterate](../../../../CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/solution-eq-iterate.md) | 80 | `result-track:dcd41e78f3c9b2b4a8240ea8e4ae01c0dc235cdd27c0c8c28a8411e1e2572be2` |
-| 7 | `theorem` | [solution_square_dvd](../../../../CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/solution-square-dvd.md) | 88 | `result-track:18d48ed5c875bd5f4ff471b7468ce0017fde39e2d0c5c4ceceb3b91e6b09fbcd` |
-| 8 | `def` | [Branch](../../../../CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/branch.md) | 96 | `declaration-track:affa3d5646f353e092562d8b21efe998fea7f9ac9638d98d106481c58bd2e29c` |
-| 9 | `def` | [parameterEquiv](../../../../CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/parameterequiv.md) | 102 | `declaration-track:3c83cb38d72d7eb2ccab32b310550dd6636f0b97c7c892c411a9f2946b8a0a1e` |
-| 10 | `def` | [mapBranch](../../../../CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/mapbranch.md) | 117 | `declaration-track:185e82ba1a86a75b22463cdb85829a2a085765de0596a6e67ed6e919111ec214` |
-| 11 | `theorem` | [parameterEquiv_natural](../../../../CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/parameterequiv-natural.md) | 124 | `result-track:a4b183fbbb1c63d34422d47a900e3bfc4f663bba16f895f76268c916bae1814e` |
-| 12 | `theorem` | [lift_natural](../../../../CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/lift-natural.md) | 135 | `result-track:3f8d0db3af03f34a695d163a4625ff9700d886ea81cfe463b5a64be3ad1f5232` |
-| 13 | `theorem` | [lift_bound_independent](../../../../CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/lift-bound-independent.md) | 148 | `result-track:c9c3d3f3ca6ed89762deba4ee47b04152f58607f94c2a3ae218b2b61da282e28` |
+| 1 | `theorem` | [element_power_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/element-power-zero.md) | 22 | `result-track:4b12e7d274d0266dbdee0bb0a2162bf76c845bc0140d4a50fd91ef076c96ae34` |
+| 2 | `theorem` | [iterate_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/iterate-mem.md) | 28 | `result-track:54e81ca11790495aceccd38a3dd2e765b0b15b9de5ba1245592e18e89f146bf6` |
+| 3 | `theorem` | [step_gain_ideal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/step-gain-ideal.md) | 35 | `result-track:445ed4b7888975c1b6ecfaa2ca55fa8c9753e069ef9a6c463769b4d38de95758` |
+| 4 | `theorem` | [solution_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/solution-unique.md) | 53 | `result-track:9c95d139a8862251327929f9af8479bbd058313351f32ea2cfbceb507b4ba65f` |
+| 5 | `theorem` | [iterate_solves_ideal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/iterate-solves-ideal.md) | 71 | `result-track:24d28ff3c3934df0ad4c40ae839f9da9191369a408796c183a0a63c72618b09a` |
+| 6 | `theorem` | [solution_eq_iterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/solution-eq-iterate.md) | 80 | `result-track:dcd41e78f3c9b2b4a8240ea8e4ae01c0dc235cdd27c0c8c28a8411e1e2572be2` |
+| 7 | `theorem` | [solution_square_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/solution-square-dvd.md) | 88 | `result-track:18d48ed5c875bd5f4ff471b7468ce0017fde39e2d0c5c4ceceb3b91e6b09fbcd` |
+| 8 | `def` | [Branch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/branch.md) | 96 | `declaration-track:affa3d5646f353e092562d8b21efe998fea7f9ac9638d98d106481c58bd2e29c` |
+| 9 | `def` | [parameterEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/parameterequiv.md) | 102 | `declaration-track:3c83cb38d72d7eb2ccab32b310550dd6636f0b97c7c892c411a9f2946b8a0a1e` |
+| 10 | `def` | [mapBranch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/mapbranch.md) | 117 | `declaration-track:185e82ba1a86a75b22463cdb85829a2a085765de0596a6e67ed6e919111ec214` |
+| 11 | `theorem` | [parameterEquiv_natural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/parameterequiv-natural.md) | 124 | `result-track:a4b183fbbb1c63d34422d47a900e3bfc4f663bba16f895f76268c916bae1814e` |
+| 12 | `theorem` | [lift_natural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/lift-natural.md) | 135 | `result-track:3f8d0db3af03f34a695d163a4625ff9700d886ea81cfe463b5a64be3ad1f5232` |
+| 13 | `theorem` | [lift_bound_independent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyFormalNeighborhood.lean/declarations/lift-bound-independent.md) | 148 | `result-track:c9c3d3f3ca6ed89762deba4ee47b04152f58607f94c2a3ae218b2b61da282e28` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

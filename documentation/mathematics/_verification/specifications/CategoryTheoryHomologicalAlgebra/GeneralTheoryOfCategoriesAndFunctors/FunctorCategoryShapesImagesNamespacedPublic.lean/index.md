@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [monoFactorisation](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesNamespacedPublic.lean/declarations/monofactorisation.md) | 37 | `declaration-track:c55aadb9756b44e9aec35834d18007dffd4c24e7ea1e55bdf79ca22330fe68a1` |
-| 2 | `def` | [monoFactorisationIsImage](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesNamespacedPublic.lean/declarations/monofactorisationisimage.md) | 46 | `declaration-track:57c6f7d633f910e70f8512a0db73d1c8697d28074b50dd186d0b78096acaca7d` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesNamespacedPublic.lean/declarations/instance.md) | 60 | `declaration-track:7891090d58214f3ef6305c8686e6ec05328a9071b1782bbf06623b22e75b42d2` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 63 | `declaration-track:e3a53253eca9bc20b2c0fb6d861ff24d873dc84ec2e08a0bbc4d7c599dd3aaaa` |
+| 1 | `def` | [monoFactorisation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesNamespacedPublic.lean/declarations/monofactorisation.md) | 37 | `declaration-track:c55aadb9756b44e9aec35834d18007dffd4c24e7ea1e55bdf79ca22330fe68a1` |
+| 2 | `def` | [monoFactorisationIsImage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesNamespacedPublic.lean/declarations/monofactorisationisimage.md) | 46 | `declaration-track:57c6f7d633f910e70f8512a0db73d1c8697d28074b50dd186d0b78096acaca7d` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesNamespacedPublic.lean/declarations/instance.md) | 60 | `declaration-track:7891090d58214f3ef6305c8686e6ec05328a9071b1782bbf06623b22e75b42d2` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorCategoryShapesImagesNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 63 | `declaration-track:e3a53253eca9bc20b2c0fb6d861ff24d873dc84ec2e08a0bbc4d7c599dd3aaaa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

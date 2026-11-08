@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/OrbitPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/OrbitPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrbitPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrbitPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [startsWith](../../../../GroupTheoryAndGeneralizations/OrbitPublic.lean/declarations/startswith.md) | 31 | `declaration-track:6aa9f0fefafa999d868de3af4532a862a513171f3d143deaa14f847da2566560` |
-| 2 | `theorem` | [startsWith.ne_one](../../../../GroupTheoryAndGeneralizations/OrbitPublic.lean/declarations/startswith-ne-one.md) | 36 | `result-track:edad02fc95867ef827618690594fa44d0834851319e0a49c3f820556b71138c2` |
-| 3 | `lemma` | [startsWith.disjoint_iff_ne](../../../../GroupTheoryAndGeneralizations/OrbitPublic.lean/declarations/startswith-disjoint-iff-ne.md) | 40 | `result-track:e4fd1ddd2902b3e70e3bd4d31c401c79de4e1c4e1d47576dfc218b7d5685306e` |
-| 4 | `lemma` | [startsWith.Injective](../../../../GroupTheoryAndGeneralizations/OrbitPublic.lean/declarations/startswith-injective.md) | 46 | `result-track:4aa1190c4c3508aa9dcebeaf7ab5b981e7a5db47429e75839f5f7cdc3678f810` |
-| 5 | `theorem` | [startsWith_mk_mul](../../../../GroupTheoryAndGeneralizations/OrbitPublic.lean/declarations/startswith-mk-mul.md) | 50 | `result-track:b26a5e28ef6d327b97dce3be0f7b41afdf734cfa3d8666244ff72a4cb124123a` |
-| 6 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/OrbitPublic.lean/declarations/instance.md) | 62 | `declaration-track:efe2bce297f3590a15145de456dc9e836bdaad578eb17460d9d4c3432c054c77` |
-| 7 | `lemma` | [startsWith.smul_def](../../../../GroupTheoryAndGeneralizations/OrbitPublic.lean/declarations/startswith-smul-def.md) | 66 | `result-track:00898bd582108d3cc80ea9b9c0dfc60fd138e827411b2c66a2dd574c25695789` |
-| 8 | `theorem` | [Orbit.duplicate](../../../../GroupTheoryAndGeneralizations/OrbitPublic.lean/declarations/orbit-duplicate.md) | 74 | `result-track:82896f42041c81312e5d0f8b750e7d5dfea3a7106d8b402c4bf2b06b1f1cc6d2` |
+| 1 | `def` | [startsWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrbitPublic.lean/declarations/startswith.md) | 31 | `declaration-track:6aa9f0fefafa999d868de3af4532a862a513171f3d143deaa14f847da2566560` |
+| 2 | `theorem` | [startsWith.ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrbitPublic.lean/declarations/startswith-ne-one.md) | 36 | `result-track:edad02fc95867ef827618690594fa44d0834851319e0a49c3f820556b71138c2` |
+| 3 | `lemma` | [startsWith.disjoint_iff_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrbitPublic.lean/declarations/startswith-disjoint-iff-ne.md) | 40 | `result-track:e4fd1ddd2902b3e70e3bd4d31c401c79de4e1c4e1d47576dfc218b7d5685306e` |
+| 4 | `lemma` | [startsWith.Injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrbitPublic.lean/declarations/startswith-injective.md) | 46 | `result-track:4aa1190c4c3508aa9dcebeaf7ab5b981e7a5db47429e75839f5f7cdc3678f810` |
+| 5 | `theorem` | [startsWith_mk_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrbitPublic.lean/declarations/startswith-mk-mul.md) | 50 | `result-track:b26a5e28ef6d327b97dce3be0f7b41afdf734cfa3d8666244ff72a4cb124123a` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrbitPublic.lean/declarations/instance.md) | 62 | `declaration-track:efe2bce297f3590a15145de456dc9e836bdaad578eb17460d9d4c3432c054c77` |
+| 7 | `lemma` | [startsWith.smul_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrbitPublic.lean/declarations/startswith-smul-def.md) | 66 | `result-track:00898bd582108d3cc80ea9b9c0dfc60fd138e827411b2c66a2dd574c25695789` |
+| 8 | `theorem` | [Orbit.duplicate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrbitPublic.lean/declarations/orbit-duplicate.md) | 74 | `result-track:82896f42041c81312e5d0f8b750e7d5dfea3a7106d8b402c4bf2b06b1f1cc6d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

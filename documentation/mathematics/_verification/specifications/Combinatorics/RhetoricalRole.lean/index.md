@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RhetoricalRole.lean/index.md) · [Full source](../../../../Combinatorics/RhetoricalRole.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RhetoricalRole.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RhetoricalRole.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [RhetoricalRole](../../../../Combinatorics/RhetoricalRole.lean/declarations/rhetoricalrole.md) | 16 | `declaration-track:ec93c4b4905584de267188147a1a09201e759508da6cdbd751a431fe1e8bd4fa` |
-| 2 | `def` | [RhetoricalRole.tag](../../../../Combinatorics/RhetoricalRole.lean/declarations/rhetoricalrole-tag.md) | 28 | `declaration-track:6ceecb7494ac3fc408284f94c2ad7588651f3fa163a839919b10f786a9b0e378` |
-| 3 | `def` | [RhetoricalRole.name](../../../../Combinatorics/RhetoricalRole.lean/declarations/rhetoricalrole-name.md) | 38 | `declaration-track:ec2b1c5c2d6fe81811ac7e2441433117da5a99e962e2d6badbd08121fc36b64c` |
-| 4 | `theorem` | [RhetoricalRole.tag_injective](../../../../Combinatorics/RhetoricalRole.lean/declarations/rhetoricalrole-tag-injective.md) | 47 | `result-track:f137defd8354ce33af4cdc9aee29f5ee0e09cc1d309f1c3ce070020aabd21996` |
+| 1 | `inductive` | [RhetoricalRole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RhetoricalRole.lean/declarations/rhetoricalrole.md) | 16 | `declaration-track:ec93c4b4905584de267188147a1a09201e759508da6cdbd751a431fe1e8bd4fa` |
+| 2 | `def` | [RhetoricalRole.tag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RhetoricalRole.lean/declarations/rhetoricalrole-tag.md) | 28 | `declaration-track:6ceecb7494ac3fc408284f94c2ad7588651f3fa163a839919b10f786a9b0e378` |
+| 3 | `def` | [RhetoricalRole.name](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RhetoricalRole.lean/declarations/rhetoricalrole-name.md) | 38 | `declaration-track:ec2b1c5c2d6fe81811ac7e2441433117da5a99e962e2d6badbd08121fc36b64c` |
+| 4 | `theorem` | [RhetoricalRole.tag_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RhetoricalRole.lean/declarations/rhetoricalrole-tag-injective.md) | 47 | `result-track:f137defd8354ce33af4cdc9aee29f5ee0e09cc1d309f1c3ce070020aabd21996` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

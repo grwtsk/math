@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/LawsNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/LawsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,24 +57,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bot_join](../../../../Combinatorics/LawsNamespaced.lean/declarations/bot-join.md) | 17 | `result-track:66c897c8f38fa7423674d7e14f35f7f8c33ae6eb993017367d97a5f90baeca3d` |
-| 2 | `theorem` | [top_meet](../../../../Combinatorics/LawsNamespaced.lean/declarations/top-meet.md) | 21 | `result-track:f0cab9e98b32b62ad34720d32de26b5a15f4c188d2818b51948036c773a73336` |
-| 3 | `theorem` | [compl_join](../../../../Combinatorics/LawsNamespaced.lean/declarations/compl-join.md) | 25 | `result-track:ff7099b9e6c01f5ebd1ab2ddb45d59d060c16a2947b619715ce536aff49d65f7` |
-| 4 | `theorem` | [compl_meet](../../../../Combinatorics/LawsNamespaced.lean/declarations/compl-meet.md) | 29 | `result-track:efc50fe1d81788fa1672626ce0ca22563cb7b14a99d3a72ed122a278ff78d76f` |
-| 5 | `theorem` | [join_idem](../../../../Combinatorics/LawsNamespaced.lean/declarations/join-idem.md) | 34 | `result-track:4fec7eabe4ab44c132529f656a3c355dd0bc1e5d0dedeadf0964b47b7468fdbd` |
-| 6 | `theorem` | [meet_idem](../../../../Combinatorics/LawsNamespaced.lean/declarations/meet-idem.md) | 48 | `result-track:bd3f74bf0163e5b7fa79b705cc77fadbddc3771069c7076fbafcfaa265d5d878` |
-| 7 | `theorem` | [join_top](../../../../Combinatorics/LawsNamespaced.lean/declarations/join-top.md) | 62 | `result-track:599306a9221efbae5cbd97b5c2885aa5f6215cc218f677b2d1771c17276fb1eb` |
-| 8 | `theorem` | [top_join](../../../../Combinatorics/LawsNamespaced.lean/declarations/top-join.md) | 74 | `result-track:192aac5d46c4f7a86c8852f1abf9f797d3a3a7589eab694155c2a3210c55e7a8` |
-| 9 | `theorem` | [meet_bot](../../../../Combinatorics/LawsNamespaced.lean/declarations/meet-bot.md) | 79 | `result-track:aabe93b63a0121763ebcbfa0b234e8ad0b6fec9724f951b596e2fcc5db475157` |
-| 10 | `theorem` | [bot_meet](../../../../Combinatorics/LawsNamespaced.lean/declarations/bot-meet.md) | 91 | `result-track:c9d35421136bf4e3bf2924f07102806942a69c2b1109d05b73ba6dc98ce69101` |
-| 11 | `theorem` | [join_absorb](../../../../Combinatorics/LawsNamespaced.lean/declarations/join-absorb.md) | 96 | `result-track:57662c89431a28aeb5a45c99ca3e0ba1941f1d09e502cabe57b6a91782570c9f` |
-| 12 | `theorem` | [meet_absorb](../../../../Combinatorics/LawsNamespaced.lean/declarations/meet-absorb.md) | 109 | `result-track:541b3efc43db8a537c06709391d0bc61452bd7008757f52db1f4287fb7a09d88` |
-| 13 | `theorem` | [join_left_comm](../../../../Combinatorics/LawsNamespaced.lean/declarations/join-left-comm.md) | 121 | `result-track:c047a6e1a3f04b23afe9860e22c88b2913cb491a05d087dfdd70437e107c89bd` |
-| 14 | `theorem` | [meet_left_comm](../../../../Combinatorics/LawsNamespaced.lean/declarations/meet-left-comm.md) | 131 | `result-track:ad8dad3bf69dafc142f38358d7fe511b838d921df1f9b069cd5f93755a8d1024` |
-| 15 | `theorem` | [compl_unique](../../../../Combinatorics/LawsNamespaced.lean/declarations/compl-unique.md) | 142 | `result-track:51ac07a21271da6bbeb45b829c98589f8df3e13f1ab0c1745cb4b6dd039fa7f9` |
-| 16 | `theorem` | [compl_involutive](../../../../Combinatorics/LawsNamespaced.lean/declarations/compl-involutive.md) | 175 | `result-track:4c2df9882fd45704ff5be694c31ad6aa85789d4d76b2ee9926ee746029c9ab83` |
-| 17 | `theorem` | [compl_join_eq_meet_compl](../../../../Combinatorics/LawsNamespaced.lean/declarations/compl-join-eq-meet-compl.md) | 182 | `result-track:d21ba8e963ba43d32529b768c05177ec4f93d28616dd7af83173b82ac2e03fa5` |
-| 18 | `theorem` | [compl_meet_eq_join_compl](../../../../Combinatorics/LawsNamespaced.lean/declarations/compl-meet-eq-join-compl.md) | 253 | `result-track:108157fbf96d096963750995c0377e05791e8535d2d7c48b2d4e87dc72ed2c1b` |
+| 1 | `theorem` | [bot_join](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/declarations/bot-join.md) | 17 | `result-track:66c897c8f38fa7423674d7e14f35f7f8c33ae6eb993017367d97a5f90baeca3d` |
+| 2 | `theorem` | [top_meet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/declarations/top-meet.md) | 21 | `result-track:f0cab9e98b32b62ad34720d32de26b5a15f4c188d2818b51948036c773a73336` |
+| 3 | `theorem` | [compl_join](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/declarations/compl-join.md) | 25 | `result-track:ff7099b9e6c01f5ebd1ab2ddb45d59d060c16a2947b619715ce536aff49d65f7` |
+| 4 | `theorem` | [compl_meet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/declarations/compl-meet.md) | 29 | `result-track:efc50fe1d81788fa1672626ce0ca22563cb7b14a99d3a72ed122a278ff78d76f` |
+| 5 | `theorem` | [join_idem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/declarations/join-idem.md) | 34 | `result-track:4fec7eabe4ab44c132529f656a3c355dd0bc1e5d0dedeadf0964b47b7468fdbd` |
+| 6 | `theorem` | [meet_idem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/declarations/meet-idem.md) | 48 | `result-track:bd3f74bf0163e5b7fa79b705cc77fadbddc3771069c7076fbafcfaa265d5d878` |
+| 7 | `theorem` | [join_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/declarations/join-top.md) | 62 | `result-track:599306a9221efbae5cbd97b5c2885aa5f6215cc218f677b2d1771c17276fb1eb` |
+| 8 | `theorem` | [top_join](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/declarations/top-join.md) | 74 | `result-track:192aac5d46c4f7a86c8852f1abf9f797d3a3a7589eab694155c2a3210c55e7a8` |
+| 9 | `theorem` | [meet_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/declarations/meet-bot.md) | 79 | `result-track:aabe93b63a0121763ebcbfa0b234e8ad0b6fec9724f951b596e2fcc5db475157` |
+| 10 | `theorem` | [bot_meet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/declarations/bot-meet.md) | 91 | `result-track:c9d35421136bf4e3bf2924f07102806942a69c2b1109d05b73ba6dc98ce69101` |
+| 11 | `theorem` | [join_absorb](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/declarations/join-absorb.md) | 96 | `result-track:57662c89431a28aeb5a45c99ca3e0ba1941f1d09e502cabe57b6a91782570c9f` |
+| 12 | `theorem` | [meet_absorb](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/declarations/meet-absorb.md) | 109 | `result-track:541b3efc43db8a537c06709391d0bc61452bd7008757f52db1f4287fb7a09d88` |
+| 13 | `theorem` | [join_left_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/declarations/join-left-comm.md) | 121 | `result-track:c047a6e1a3f04b23afe9860e22c88b2913cb491a05d087dfdd70437e107c89bd` |
+| 14 | `theorem` | [meet_left_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/declarations/meet-left-comm.md) | 131 | `result-track:ad8dad3bf69dafc142f38358d7fe511b838d921df1f9b069cd5f93755a8d1024` |
+| 15 | `theorem` | [compl_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/declarations/compl-unique.md) | 142 | `result-track:51ac07a21271da6bbeb45b829c98589f8df3e13f1ab0c1745cb4b6dd039fa7f9` |
+| 16 | `theorem` | [compl_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/declarations/compl-involutive.md) | 175 | `result-track:4c2df9882fd45704ff5be694c31ad6aa85789d4d76b2ee9926ee746029c9ab83` |
+| 17 | `theorem` | [compl_join_eq_meet_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/declarations/compl-join-eq-meet-compl.md) | 182 | `result-track:d21ba8e963ba43d32529b768c05177ec4f93d28616dd7af83173b82ac2e03fa5` |
+| 18 | `theorem` | [compl_meet_eq_join_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LawsNamespaced.lean/declarations/compl-meet-eq-join-compl.md) | 253 | `result-track:108157fbf96d096963750995c0377e05791e8535d2d7c48b2d4e87dc72ed2c1b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UScriptNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UScriptNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UScriptNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UScriptNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [UScript](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UScriptNamespacedPublic.lean/declarations/uscript.md) | 26 | `declaration-track:0b005c52549a7477e5fb45358567e8b4ce4ccf93ae2bdb7a889554360d687c77` |
-| 2 | `def` | [render](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UScriptNamespacedPublic.lean/declarations/render.md) | 31 | `declaration-track:d1779bd35e5ad569c384fb380a94b052507f80b66f6b63ee0419d23e2f996be2` |
-| 3 | `def` | [renderTacticSeq](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UScriptNamespacedPublic.lean/declarations/rendertacticseq.md) | 41 | `declaration-track:77038166ff643ce62a4da872da65b90ef3ca5c3ddb868c42cdfda1bc7f139b05` |
-| 4 | `def` | [validate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UScriptNamespacedPublic.lean/declarations/validate.md) | 46 | `declaration-track:fa886094ff32f2b6932c27cb094732b1fd08360598b658771141b4ae673c704e` |
+| 1 | `abbrev` | [UScript](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UScriptNamespacedPublic.lean/declarations/uscript.md) | 26 | `declaration-track:0b005c52549a7477e5fb45358567e8b4ce4ccf93ae2bdb7a889554360d687c77` |
+| 2 | `def` | [render](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UScriptNamespacedPublic.lean/declarations/render.md) | 31 | `declaration-track:d1779bd35e5ad569c384fb380a94b052507f80b66f6b63ee0419d23e2f996be2` |
+| 3 | `def` | [renderTacticSeq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UScriptNamespacedPublic.lean/declarations/rendertacticseq.md) | 41 | `declaration-track:77038166ff643ce62a4da872da65b90ef3ca5c3ddb868c42cdfda1bc7f139b05` |
+| 4 | `def` | [validate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UScriptNamespacedPublic.lean/declarations/validate.md) | 46 | `declaration-track:fa886094ff32f2b6932c27cb094732b1fd08360598b658771141b4ae673c704e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

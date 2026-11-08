@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/PointwiseFinsetDensity.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/PointwiseFinsetDensity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PointwiseFinsetDensity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PointwiseFinsetDensity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [dens_inv](../../../../GroupTheoryAndGeneralizations/PointwiseFinsetDensity.lean/declarations/dens-inv.md) | 23 | `result-track:76698ab59a8b66a5ccd705fc32718c4ce8b19b95ff1ce677faca924bd52ac5fe` |
-| 2 | `lemma` | [dens_smul_finset](../../../../GroupTheoryAndGeneralizations/PointwiseFinsetDensity.lean/declarations/dens-smul-finset.md) | 27 | `result-track:990645797aa39b4167929196d9925df173910b70aa23abdbfdf15cc66099ff3a` |
+| 1 | `lemma` | [dens_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PointwiseFinsetDensity.lean/declarations/dens-inv.md) | 23 | `result-track:76698ab59a8b66a5ccd705fc32718c4ce8b19b95ff1ce677faca924bd52ac5fe` |
+| 2 | `lemma` | [dens_smul_finset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PointwiseFinsetDensity.lean/declarations/dens-smul-finset.md) | 27 | `result-track:990645797aa39b4167929196d9925df173910b70aa23abdbfdf15cc66099ff3a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

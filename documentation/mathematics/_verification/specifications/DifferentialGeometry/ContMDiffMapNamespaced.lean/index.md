@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/ContMDiffMapNamespaced.lean/index.md) · [Full source](../../../../DifferentialGeometry/ContMDiffMapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ContMDiffMapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ContMDiffMapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,22 +57,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ContMDiffMap](../../../../DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/contmdiffmap.md) | 39 | `declaration-track:b6b776fbd8dd68d6cddedad29bb4577e65b425b49a0fa4275578412c4e9eb085` |
-| 2 | `instance` | [instFunLike](../../../../DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/instfunlike.md) | 57 | `declaration-track:cebeba61f7a404cd1fe86ff29c702b99d03ee6a894e2540b19111c590377fdf2` |
-| 3 | `theorem` | [contMDiff](../../../../DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/contmdiff.md) | 61 | `result-track:bb4754d4f6d61b10ee14c4876aa44586797b0304c3a887151e0e64ba75f009fb` |
-| 4 | `theorem` | [coeFn_mk](../../../../DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/coefn-mk.md) | 75 | `result-track:2604c5c8cf414bf2ece35c148812d1d0b8ca9c98b74b41a47efe08772110d8ee` |
-| 5 | `theorem` | [coe_injective](../../../../DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/coe-injective.md) | 79 | `result-track:3579dd3bd99a2de545d24c3ed067e0172158344db3e9f5499c64467cac4cce95` |
-| 6 | `theorem` | [ext](../../../../DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/ext.md) | 83 | `result-track:21745cf1bfb12fb8198eda2c8e15369ec21eeb09d1d9c843812e76ba34c63a39` |
-| 7 | `instance` | [(anonymous)](../../../../DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/instance-source-edition-2.md) | 85 | `declaration-track:a11e834b7d9be2f74d3c914ac4d704b6179c97e2ff03fb251abee0e706ea7b5d` |
-| 8 | `def` | [id](../../../../DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/id.md) | 89 | `declaration-track:19b82430179fb9f14c317d2142c3572aa04d7e627f57ad9e70ec9df449fd3501` |
-| 9 | `def` | [comp](../../../../DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/comp.md) | 93 | `declaration-track:b296e6805541bc6bea08e6f22e4a7fee7e7a2f856a740676f7fe98553a8cacbd` |
-| 10 | `theorem` | [comp_apply](../../../../DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/comp-apply.md) | 98 | `result-track:b55fcf146eec7643bce55a81becfb5ab61b434979145be14e677e3c41dacbb9b` |
-| 11 | `instance` | [(anonymous)](../../../../DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/instance.md) | 102 | `declaration-track:9b0f118ee1eec0b2c889306c95ac6089949ab7650ba467ef7b27da3110c9a56a` |
-| 12 | `def` | [const](../../../../DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/const.md) | 106 | `declaration-track:82ee101ef6fbddb5e04d4fc08b913ec0e64a18beeded150d7add55480e5fd2d8` |
-| 13 | `def` | [fst](../../../../DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/fst.md) | 110 | `declaration-track:2cfc450bf48c699787e11cca769a6dbec1ba80fe106d7f48fa7d63618477289d` |
-| 14 | `def` | [snd](../../../../DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/snd.md) | 114 | `declaration-track:15dc2c25d6cc08a48c44706fbd2b851902d3aecd12fd7071adb8c54954ca6fdc` |
-| 15 | `def` | [prodMk](../../../../DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/prodmk.md) | 118 | `declaration-track:368d254e18c77b5d4a75b0e887ab73dd4180763ecef122bf6db170a906848f49` |
-| 16 | `instance` | [ContinuousLinearMap.hasCoeToContMDiffMap](../../../../DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/continuouslinearmap-hascoetocontmdiffmap.md) | 123 | `declaration-track:b0f0403cf8b661b7c879739ff4a0ef08bf90afdb040eba722bb420990a8271f1` |
+| 1 | `def` | [ContMDiffMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/contmdiffmap.md) | 39 | `declaration-track:b6b776fbd8dd68d6cddedad29bb4577e65b425b49a0fa4275578412c4e9eb085` |
+| 2 | `instance` | [instFunLike](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/instfunlike.md) | 57 | `declaration-track:cebeba61f7a404cd1fe86ff29c702b99d03ee6a894e2540b19111c590377fdf2` |
+| 3 | `theorem` | [contMDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/contmdiff.md) | 61 | `result-track:bb4754d4f6d61b10ee14c4876aa44586797b0304c3a887151e0e64ba75f009fb` |
+| 4 | `theorem` | [coeFn_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/coefn-mk.md) | 75 | `result-track:2604c5c8cf414bf2ece35c148812d1d0b8ca9c98b74b41a47efe08772110d8ee` |
+| 5 | `theorem` | [coe_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/coe-injective.md) | 79 | `result-track:3579dd3bd99a2de545d24c3ed067e0172158344db3e9f5499c64467cac4cce95` |
+| 6 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/ext.md) | 83 | `result-track:21745cf1bfb12fb8198eda2c8e15369ec21eeb09d1d9c843812e76ba34c63a39` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/instance-source-edition-2.md) | 85 | `declaration-track:a11e834b7d9be2f74d3c914ac4d704b6179c97e2ff03fb251abee0e706ea7b5d` |
+| 8 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/id.md) | 89 | `declaration-track:19b82430179fb9f14c317d2142c3572aa04d7e627f57ad9e70ec9df449fd3501` |
+| 9 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/comp.md) | 93 | `declaration-track:b296e6805541bc6bea08e6f22e4a7fee7e7a2f856a740676f7fe98553a8cacbd` |
+| 10 | `theorem` | [comp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/comp-apply.md) | 98 | `result-track:b55fcf146eec7643bce55a81becfb5ab61b434979145be14e677e3c41dacbb9b` |
+| 11 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/instance.md) | 102 | `declaration-track:9b0f118ee1eec0b2c889306c95ac6089949ab7650ba467ef7b27da3110c9a56a` |
+| 12 | `def` | [const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/const.md) | 106 | `declaration-track:82ee101ef6fbddb5e04d4fc08b913ec0e64a18beeded150d7add55480e5fd2d8` |
+| 13 | `def` | [fst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/fst.md) | 110 | `declaration-track:2cfc450bf48c699787e11cca769a6dbec1ba80fe106d7f48fa7d63618477289d` |
+| 14 | `def` | [snd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/snd.md) | 114 | `declaration-track:15dc2c25d6cc08a48c44706fbd2b851902d3aecd12fd7071adb8c54954ca6fdc` |
+| 15 | `def` | [prodMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/prodmk.md) | 118 | `declaration-track:368d254e18c77b5d4a75b0e887ab73dd4180763ecef122bf6db170a906848f49` |
+| 16 | `instance` | [ContinuousLinearMap.hasCoeToContMDiffMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ContMDiffMapNamespaced.lean/declarations/continuouslinearmap-hascoetocontmdiffmap.md) | 123 | `declaration-track:b0f0403cf8b661b7c879739ff4a0ef08bf90afdb040eba722bb420990a8271f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

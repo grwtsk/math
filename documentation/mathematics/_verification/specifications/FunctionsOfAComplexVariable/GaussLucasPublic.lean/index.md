@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/GaussLucasPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/GaussLucasPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GaussLucasPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GaussLucasPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [derivRootWeight](../../../../FunctionsOfAComplexVariable/GaussLucasPublic.lean/declarations/derivrootweight.md) | 26 | `declaration-track:303bacc3f81a9253a91b2b948be2e444ccc3f924a0db704a5f8ea1cb95b419d1` |
-| 2 | `theorem` | [derivRootWeight_nonneg](../../../../FunctionsOfAComplexVariable/GaussLucasPublic.lean/declarations/derivrootweight-nonneg.md) | 30 | `result-track:1243b8be563673e1cd896cc687178415b10462c057c69dd8ccea3bf15c6146fa` |
-| 3 | `theorem` | [sum_derivRootWeight_pos](../../../../FunctionsOfAComplexVariable/GaussLucasPublic.lean/declarations/sum-derivrootweight-pos.md) | 38 | `result-track:c812d2cac722cb444ae3693da70f2938a060aa370549120305cfa24d573e40c6` |
-| 4 | `theorem` | [eq_centerMass_of_eval_derivative_eq_zero](../../../../FunctionsOfAComplexVariable/GaussLucasPublic.lean/declarations/eq-centermass-of-eval-derivative-eq-zero.md) | 60 | `result-track:75cf4a0f6e82f05f38396a153c8ede7e6c9ed1109bd0ddd9c41d1ebaaea43ae4` |
-| 5 | `theorem` | [rootSet_derivative_subset_convexHull_rootSet](../../../../FunctionsOfAComplexVariable/GaussLucasPublic.lean/declarations/rootset-derivative-subset-convexhull-rootset.md) | 97 | `result-track:4f039e2fa2875147f46d729fc8e9f7c585cc150b33c8fbe916bb74185de1e9d3` |
+| 1 | `def` | [derivRootWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GaussLucasPublic.lean/declarations/derivrootweight.md) | 26 | `declaration-track:303bacc3f81a9253a91b2b948be2e444ccc3f924a0db704a5f8ea1cb95b419d1` |
+| 2 | `theorem` | [derivRootWeight_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GaussLucasPublic.lean/declarations/derivrootweight-nonneg.md) | 30 | `result-track:1243b8be563673e1cd896cc687178415b10462c057c69dd8ccea3bf15c6146fa` |
+| 3 | `theorem` | [sum_derivRootWeight_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GaussLucasPublic.lean/declarations/sum-derivrootweight-pos.md) | 38 | `result-track:c812d2cac722cb444ae3693da70f2938a060aa370549120305cfa24d573e40c6` |
+| 4 | `theorem` | [eq_centerMass_of_eval_derivative_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GaussLucasPublic.lean/declarations/eq-centermass-of-eval-derivative-eq-zero.md) | 60 | `result-track:75cf4a0f6e82f05f38396a153c8ede7e6c9ed1109bd0ddd9c41d1ebaaea43ae4` |
+| 5 | `theorem` | [rootSet_derivative_subset_convexHull_rootSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GaussLucasPublic.lean/declarations/rootset-derivative-subset-convexhull-rootset.md) | 97 | `result-track:4f039e2fa2875147f46d729fc8e9f7c585cc150b33c8fbe916bb74185de1e9d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

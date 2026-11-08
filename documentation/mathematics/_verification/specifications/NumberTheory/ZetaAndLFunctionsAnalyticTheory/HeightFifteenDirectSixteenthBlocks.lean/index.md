@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectSixteenthBlocks.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectSixteenthBlocks.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectSixteenthBlocks.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectSixteenthBlocks.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.BigOperators.CheckedChunkComposition`](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CheckedChunkComposition.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectEighthBlocks`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthBlocks.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Algebra.BigOperators.CheckedChunkComposition`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CheckedChunkComposition.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectEighthBlocks`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthBlocks.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sixteenthWidths](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectSixteenthBlocks.lean/declarations/sixteenthwidths.md) | 24 | `declaration-track:05c8e02247e049caf0006e519c8b778fb2a6d989e6042a5ed05121b5c386fa45` |
-| 2 | `def` | [sixteenthExpected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectSixteenthBlocks.lean/declarations/sixteenthexpected.md) | 27 | `declaration-track:48055c2346d3e4ebbe0d2351d54f0a06903b555d2cdf4e307ad7ce3dd4884102` |
-| 3 | `theorem` | [sixteenthWidths_shape](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectSixteenthBlocks.lean/declarations/sixteenthwidths-shape.md) | 29 | `result-track:337195f4c608ef8bb752bb5d72efd0229aa12fe00519b08cd765d7b2230d908e` |
-| 4 | `theorem` | [sixteenthExpected_shape](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectSixteenthBlocks.lean/declarations/sixteenthexpected-shape.md) | 32 | `result-track:21452b6e9093427e83b5b71c9811948a6c3bcd58f9555eb695c52e81cde011e9` |
-| 5 | `def` | [SixteenthObligations](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectSixteenthBlocks.lean/declarations/sixteenthobligations.md) | 36 | `declaration-track:80a3862e7da56ad9061305dfaf992e5dffa6cc5e4f061d701298359cd15153a8` |
+| 1 | `def` | [sixteenthWidths](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectSixteenthBlocks.lean/declarations/sixteenthwidths.md) | 24 | `declaration-track:05c8e02247e049caf0006e519c8b778fb2a6d989e6042a5ed05121b5c386fa45` |
+| 2 | `def` | [sixteenthExpected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectSixteenthBlocks.lean/declarations/sixteenthexpected.md) | 27 | `declaration-track:48055c2346d3e4ebbe0d2351d54f0a06903b555d2cdf4e307ad7ce3dd4884102` |
+| 3 | `theorem` | [sixteenthWidths_shape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectSixteenthBlocks.lean/declarations/sixteenthwidths-shape.md) | 29 | `result-track:337195f4c608ef8bb752bb5d72efd0229aa12fe00519b08cd765d7b2230d908e` |
+| 4 | `theorem` | [sixteenthExpected_shape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectSixteenthBlocks.lean/declarations/sixteenthexpected-shape.md) | 32 | `result-track:21452b6e9093427e83b5b71c9811948a6c3bcd58f9555eb695c52e81cde011e9` |
+| 5 | `def` | [SixteenthObligations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectSixteenthBlocks.lean/declarations/sixteenthobligations.md) | 36 | `declaration-track:80a3862e7da56ad9061305dfaf992e5dffa6cc5e4f061d701298359cd15153a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

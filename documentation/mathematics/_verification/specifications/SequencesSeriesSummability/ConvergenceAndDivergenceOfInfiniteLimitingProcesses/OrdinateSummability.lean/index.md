@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/OrdinateSummability.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/OrdinateSummability.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/OrdinateSummability.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/OrdinateSummability.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ordinate_weight_comparison](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/OrdinateSummability.lean/declarations/ordinate-weight-comparison.md) | 18 | `result-track:8c8d1e278fa34e5a3260d72a47d3d7e63a953c5cc5e6af1df0d9c0ffe5088a53` |
-| 2 | `theorem` | [actual_positive_max_sixth_summable](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/OrdinateSummability.lean/declarations/actual-positive-max-sixth-summable.md) | 45 | `result-track:0a447b9c6e9754ba5b58a25f3784f542cc82f1b82dd5fdce715669ae1b79a557` |
-| 3 | `theorem` | [actual_positive_sixth_summable](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/OrdinateSummability.lean/declarations/actual-positive-sixth-summable.md) | 59 | `result-track:01a34f1e134a203b48462ff707b1f464847bfd89c6d2b6c0b3fe89aed626ce8e` |
+| 1 | `theorem` | [ordinate_weight_comparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/OrdinateSummability.lean/declarations/ordinate-weight-comparison.md) | 18 | `result-track:8c8d1e278fa34e5a3260d72a47d3d7e63a953c5cc5e6af1df0d9c0ffe5088a53` |
+| 2 | `theorem` | [actual_positive_max_sixth_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/OrdinateSummability.lean/declarations/actual-positive-max-sixth-summable.md) | 45 | `result-track:0a447b9c6e9754ba5b58a25f3784f542cc82f1b82dd5fdce715669ae1b79a557` |
+| 3 | `theorem` | [actual_positive_sixth_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/OrdinateSummability.lean/declarations/actual-positive-sixth-summable.md) | 59 | `result-track:01a34f1e134a203b48462ff707b1f464847bfd89c6d2b6c0b3fe89aed626ce8e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

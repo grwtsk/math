@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SeparationBoundsNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/SeparationBoundsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SeparationBoundsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SeparationBoundsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [card_le_of_pairwise_disjoint_separator_sets](../../../../Combinatorics/SeparationBoundsNamespaced.lean/declarations/card-le-of-pairwise-disjoint-separator-sets.md) | 32 | `result-track:770d87c27d2963c015e40efb5b36d22abcaecf27819d8da7cb265083b528a86e` |
-| 2 | `theorem` | [determinesAt_iff_separatesTarget](../../../../Combinatorics/SeparationBoundsNamespaced.lean/declarations/determinesat-iff-separatestarget.md) | 63 | `result-track:1d3eaa0f63a3b991fdc6a7a4f0e1bfb76e243eddd5bfe81c18cbcf25428b2609` |
-| 3 | `theorem` | [separatesTarget_of_budget_le](../../../../Combinatorics/SeparationBoundsNamespaced.lean/declarations/separatestarget-of-budget-le.md) | 86 | `result-track:e639fa1a67f4444b2c68e5b625ba1b27c8fc81c250b869f1b296851df5723c3c` |
-| 4 | `theorem` | [not_separatesTarget_of_equivalent_ne](../../../../Combinatorics/SeparationBoundsNamespaced.lean/declarations/not-separatestarget-of-equivalent-ne.md) | 98 | `result-track:2a7ccbc3f8ecd11ed2a1e8393e9eb7606f83e8db35e36424f5eb26cfb2413206` |
+| 1 | `theorem` | [card_le_of_pairwise_disjoint_separator_sets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SeparationBoundsNamespaced.lean/declarations/card-le-of-pairwise-disjoint-separator-sets.md) | 32 | `result-track:770d87c27d2963c015e40efb5b36d22abcaecf27819d8da7cb265083b528a86e` |
+| 2 | `theorem` | [determinesAt_iff_separatesTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SeparationBoundsNamespaced.lean/declarations/determinesat-iff-separatestarget.md) | 63 | `result-track:1d3eaa0f63a3b991fdc6a7a4f0e1bfb76e243eddd5bfe81c18cbcf25428b2609` |
+| 3 | `theorem` | [separatesTarget_of_budget_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SeparationBoundsNamespaced.lean/declarations/separatestarget-of-budget-le.md) | 86 | `result-track:e639fa1a67f4444b2c68e5b625ba1b27c8fc81c250b869f1b296851df5723c3c` |
+| 4 | `theorem` | [not_separatesTarget_of_equivalent_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SeparationBoundsNamespaced.lean/declarations/not-separatestarget-of-equivalent-ne.md) | 98 | `result-track:2a7ccbc3f8ecd11ed2a1e8393e9eb7606f83e8db35e36424f5eb26cfb2413206` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

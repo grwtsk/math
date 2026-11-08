@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Prime](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/declarations/prime.md) | 9 | `declaration-track:6fc66a6363eb546e2c99f1f4c16fec32488b8cd8fb39de2cc8131c63fe2c000e` |
-| 2 | `structure` | [PrimeLabel](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/declarations/primelabel.md) | 18 | `declaration-track:218c42f4cd2a3bf64c2fd2fe1a3e000bc32b9324838a85d82f5b90934d9ce636` |
-| 3 | `theorem` | [ext](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/declarations/ext.md) | 24 | `result-track:9b13184f1d0021cf299ec85a377e9e64cdb160edeafdd93bdf2ec54118283c5a` |
-| 4 | `def` | [primeLabelOfNat](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/declarations/primelabelofnat.md) | 36 | `declaration-track:4bdd6efdf025391a44b1df2b7afebd19dea35c86d95684464ec742853c0228e1` |
-| 5 | `structure` | [PrimeEnumerator](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/declarations/primeenumerator.md) | 42 | `declaration-track:bce86f425102263239fb631effee4a3ac5c74dbc8a2031582b649da3d8267732` |
-| 6 | `def` | [linearPrimeEnumerator](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/declarations/linearprimeenumerator.md) | 50 | `declaration-track:a16527286d9b355b27732a68269caff14ea9c06b0fcb61b5d23395648046dc93` |
-| 7 | `theorem` | [primeEnumerator_unbounded](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/declarations/primeenumerator-unbounded.md) | 68 | `result-track:68ee3127148df77dad1ea3f7487e752a5cba55c4e2769997ee1059db4ec286af` |
-| 8 | `theorem` | [primeEnumerator_injective](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/declarations/primeenumerator-injective.md) | 73 | `result-track:76b3f1b01865514cdb558727eca345f14cd5d32bfb08efbf3af4b5e7abe834f3` |
+| 1 | `def` | [Prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/declarations/prime.md) | 9 | `declaration-track:6fc66a6363eb546e2c99f1f4c16fec32488b8cd8fb39de2cc8131c63fe2c000e` |
+| 2 | `structure` | [PrimeLabel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/declarations/primelabel.md) | 18 | `declaration-track:218c42f4cd2a3bf64c2fd2fe1a3e000bc32b9324838a85d82f5b90934d9ce636` |
+| 3 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/declarations/ext.md) | 24 | `result-track:9b13184f1d0021cf299ec85a377e9e64cdb160edeafdd93bdf2ec54118283c5a` |
+| 4 | `def` | [primeLabelOfNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/declarations/primelabelofnat.md) | 36 | `declaration-track:4bdd6efdf025391a44b1df2b7afebd19dea35c86d95684464ec742853c0228e1` |
+| 5 | `structure` | [PrimeEnumerator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/declarations/primeenumerator.md) | 42 | `declaration-track:bce86f425102263239fb631effee4a3ac5c74dbc8a2031582b649da3d8267732` |
+| 6 | `def` | [linearPrimeEnumerator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/declarations/linearprimeenumerator.md) | 50 | `declaration-track:a16527286d9b355b27732a68269caff14ea9c06b0fcb61b5d23395648046dc93` |
+| 7 | `theorem` | [primeEnumerator_unbounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/declarations/primeenumerator-unbounded.md) | 68 | `result-track:68ee3127148df77dad1ea3f7487e752a5cba55c4e2769997ee1059db4ec286af` |
+| 8 | `theorem` | [primeEnumerator_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeLabels.lean/declarations/primeenumerator-injective.md) | 73 | `result-track:76b3f1b01865514cdb558727eca345f14cd5d32bfb08efbf3af4b5e7abe834f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

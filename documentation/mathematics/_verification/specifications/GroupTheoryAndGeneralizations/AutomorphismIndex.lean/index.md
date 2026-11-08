@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/AutomorphismIndex.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/AutomorphismIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AutomorphismIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AutomorphismIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [orbitIndexCode](../../../../GroupTheoryAndGeneralizations/AutomorphismIndex.lean/declarations/orbitindexcode.md) | 28 | `declaration-track:1cf79f06b7e577fd3174ff077f70baf88e1e4a8f5df5a2204446107edf6b21d9` |
-| 2 | `theorem` | [orbitIndexCode_invariant](../../../../GroupTheoryAndGeneralizations/AutomorphismIndex.lean/declarations/orbitindexcode-invariant.md) | 37 | `result-track:ff1b137001d567b0095fc6a5d55228894e935d79fc6dcb795b1ba91545af04d6` |
-| 3 | `theorem` | [orbitIndexCode_eq_iff_sameOrbit](../../../../GroupTheoryAndGeneralizations/AutomorphismIndex.lean/declarations/orbitindexcode-eq-iff-sameorbit.md) | 51 | `result-track:dc0f3012c923cf61ad6defc374edac7f1bd428ba6f46321a40520c4a18131a2f` |
+| 1 | `def` | [orbitIndexCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AutomorphismIndex.lean/declarations/orbitindexcode.md) | 28 | `declaration-track:1cf79f06b7e577fd3174ff077f70baf88e1e4a8f5df5a2204446107edf6b21d9` |
+| 2 | `theorem` | [orbitIndexCode_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AutomorphismIndex.lean/declarations/orbitindexcode-invariant.md) | 37 | `result-track:ff1b137001d567b0095fc6a5d55228894e935d79fc6dcb795b1ba91545af04d6` |
+| 3 | `theorem` | [orbitIndexCode_eq_iff_sameOrbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AutomorphismIndex.lean/declarations/orbitindexcode-eq-iff-sameorbit.md) | 51 | `result-track:dc0f3012c923cf61ad6defc374edac7f1bd428ba6f46321a40520c4a18131a2f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

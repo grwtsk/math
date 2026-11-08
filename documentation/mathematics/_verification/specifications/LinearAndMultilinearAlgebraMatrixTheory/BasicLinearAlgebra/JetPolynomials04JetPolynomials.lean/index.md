@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials04JetPolynomials.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials04JetPolynomials.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials04JetPolynomials.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials04JetPolynomials.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [thetaPhiJetPolynomial](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials04JetPolynomials.lean/declarations/thetaphijetpolynomial.md) | 17 | `declaration-track:b9daaec963448d346c72448a8d3f42b9a07df41cf52c8455fb9f1a981e739154` |
-| 2 | `theorem` | [thetaPhiJetPolynomial_abs_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials04JetPolynomials.lean/declarations/thetaphijetpolynomial-abs-le.md) | 26 | `result-track:eb93e454eaa7a932435ae995163a956634d8701b62255cbaa6d6997366f59e31` |
-| 3 | `def` | [thetaPhiJetDet](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials04JetPolynomials.lean/declarations/thetaphijetdet.md) | 41 | `declaration-track:55d279da55b948f2e920002c3daf0bd390a8402f6dcdb0c4f91a97de73781dbe` |
-| 4 | `theorem` | [thetaPhiJetDet_eq_matrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials04JetPolynomials.lean/declarations/thetaphijetdet-eq-matrix.md) | 46 | `result-track:2c043b3fddbf24679e3ab3e05466494fed298334d98986056e2c9553749fab7f` |
-| 5 | `theorem` | [thetaPhiJetDet_two_modes_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials04JetPolynomials.lean/declarations/thetaphijetdet-two-modes-le.md) | 55 | `result-track:5413c2bc933b3cdb33a020195b2300c6c30b4acd7ade93d260f4014f8d306007` |
+| 1 | `def` | [thetaPhiJetPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials04JetPolynomials.lean/declarations/thetaphijetpolynomial.md) | 17 | `declaration-track:b9daaec963448d346c72448a8d3f42b9a07df41cf52c8455fb9f1a981e739154` |
+| 2 | `theorem` | [thetaPhiJetPolynomial_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials04JetPolynomials.lean/declarations/thetaphijetpolynomial-abs-le.md) | 26 | `result-track:eb93e454eaa7a932435ae995163a956634d8701b62255cbaa6d6997366f59e31` |
+| 3 | `def` | [thetaPhiJetDet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials04JetPolynomials.lean/declarations/thetaphijetdet.md) | 41 | `declaration-track:55d279da55b948f2e920002c3daf0bd390a8402f6dcdb0c4f91a97de73781dbe` |
+| 4 | `theorem` | [thetaPhiJetDet_eq_matrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials04JetPolynomials.lean/declarations/thetaphijetdet-eq-matrix.md) | 46 | `result-track:2c043b3fddbf24679e3ab3e05466494fed298334d98986056e2c9553749fab7f` |
+| 5 | `theorem` | [thetaPhiJetDet_two_modes_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials04JetPolynomials.lean/declarations/thetaphijetdet-two-modes-le.md) | 55 | `result-track:5413c2bc933b3cdb33a020195b2300c6c30b4acd7ade93d260f4014f8d306007` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

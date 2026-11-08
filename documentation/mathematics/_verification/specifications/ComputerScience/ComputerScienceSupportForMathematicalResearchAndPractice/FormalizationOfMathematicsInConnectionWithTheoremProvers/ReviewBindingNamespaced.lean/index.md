@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReviewBindingNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReviewBindingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReviewBindingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReviewBindingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CanonicalIndexPatchReview](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReviewBindingNamespaced.lean/declarations/canonicalindexpatchreview.md) | 17 | `declaration-track:89e15640eda79665763cd9571f8aa8caba36f559489142e76cb7c54d0f846fec` |
-| 2 | `theorem` | [CanonicalIndexPatchReview.targets_exact_roots](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReviewBindingNamespaced.lean/declarations/canonicalindexpatchreview-targets-exact-roots.md) | 25 | `result-track:3ed823b76c2265b5f84d4bfaa8e2b45b22dd503a09651aa548a660ef120850f4` |
+| 1 | `structure` | [CanonicalIndexPatchReview](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReviewBindingNamespaced.lean/declarations/canonicalindexpatchreview.md) | 17 | `declaration-track:89e15640eda79665763cd9571f8aa8caba36f559489142e76cb7c54d0f846fec` |
+| 2 | `theorem` | [CanonicalIndexPatchReview.targets_exact_roots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReviewBindingNamespaced.lean/declarations/canonicalindexpatchreview-targets-exact-roots.md) | 25 | `result-track:3ed823b76c2265b5f84d4bfaa8e2b45b22dd503a09651aa548a660ef120850f4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ReducedFilterInverseNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ReducedFilterInverseNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ReducedFilterInverseNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ReducedFilterInverseNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourcePolynomial_leading_error](../../../../GeneralTopology/ReducedFilterInverseNamespaced.lean/declarations/sourcepolynomial-leading-error.md) | 22 | `result-track:b428e30c0beb8ffb73225bf8f07afb181435f1ba3b40acd02ca098bfcaf06a8c` |
-| 2 | `theorem` | [sourceTailGap_pos](../../../../GeneralTopology/ReducedFilterInverseNamespaced.lean/declarations/sourcetailgap-pos.md) | 44 | `result-track:58e1100e71b6032cbb791beb0454e0877c90856a5b77830a84f4742d75b2cd43` |
-| 3 | `theorem` | [sourceEndpoint_tail_lower](../../../../GeneralTopology/ReducedFilterInverseNamespaced.lean/declarations/sourceendpoint-tail-lower.md) | 49 | `result-track:78ccc98abd69a8add0b089a40a636aa723e176d7550ec532d50cc3d76b6dcbe0` |
-| 4 | `theorem` | [reducedW_closedFormula](../../../../GeneralTopology/ReducedFilterInverseNamespaced.lean/declarations/reducedw-closedformula.md) | 97 | `result-track:273697ad09d7b740ed1d474891e0df075283b673fdec4e06780fa4e2e5e1c23f` |
-| 5 | `theorem` | [norm_add_half_ge](../../../../GeneralTopology/ReducedFilterInverseNamespaced.lean/declarations/norm-add-half-ge.md) | 117 | `result-track:71ecbe384fc791c074de26ec1d6d47ba0625d734e11b004951a4b925dea89073` |
-| 6 | `theorem` | [reducedW_tail_lower](../../../../GeneralTopology/ReducedFilterInverseNamespaced.lean/declarations/reducedw-tail-lower.md) | 127 | `result-track:ca36b1a68413f8688b3a5ade2c473b3989282a6ba21251f0e70be744b74dc398` |
-| 7 | `theorem` | [reducedW_inverse_tail_bound](../../../../GeneralTopology/ReducedFilterInverseNamespaced.lean/declarations/reducedw-inverse-tail-bound.md) | 165 | `result-track:9162aa570012eb926e203f2371414aba51dd02e03ea591073c562fdcaf939ece` |
-| 8 | `theorem` | [reducedW_inverse_uniform_bound](../../../../GeneralTopology/ReducedFilterInverseNamespaced.lean/declarations/reducedw-inverse-uniform-bound.md) | 182 | `result-track:f83c03079b37d9dcd5fb05b0ea4c044239b019a741e75e3e7c47dcd100fbd936` |
+| 1 | `theorem` | [sourcePolynomial_leading_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ReducedFilterInverseNamespaced.lean/declarations/sourcepolynomial-leading-error.md) | 22 | `result-track:b428e30c0beb8ffb73225bf8f07afb181435f1ba3b40acd02ca098bfcaf06a8c` |
+| 2 | `theorem` | [sourceTailGap_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ReducedFilterInverseNamespaced.lean/declarations/sourcetailgap-pos.md) | 44 | `result-track:58e1100e71b6032cbb791beb0454e0877c90856a5b77830a84f4742d75b2cd43` |
+| 3 | `theorem` | [sourceEndpoint_tail_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ReducedFilterInverseNamespaced.lean/declarations/sourceendpoint-tail-lower.md) | 49 | `result-track:78ccc98abd69a8add0b089a40a636aa723e176d7550ec532d50cc3d76b6dcbe0` |
+| 4 | `theorem` | [reducedW_closedFormula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ReducedFilterInverseNamespaced.lean/declarations/reducedw-closedformula.md) | 97 | `result-track:273697ad09d7b740ed1d474891e0df075283b673fdec4e06780fa4e2e5e1c23f` |
+| 5 | `theorem` | [norm_add_half_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ReducedFilterInverseNamespaced.lean/declarations/norm-add-half-ge.md) | 117 | `result-track:71ecbe384fc791c074de26ec1d6d47ba0625d734e11b004951a4b925dea89073` |
+| 6 | `theorem` | [reducedW_tail_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ReducedFilterInverseNamespaced.lean/declarations/reducedw-tail-lower.md) | 127 | `result-track:ca36b1a68413f8688b3a5ade2c473b3989282a6ba21251f0e70be744b74dc398` |
+| 7 | `theorem` | [reducedW_inverse_tail_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ReducedFilterInverseNamespaced.lean/declarations/reducedw-inverse-tail-bound.md) | 165 | `result-track:9162aa570012eb926e203f2371414aba51dd02e03ea591073c562fdcaf939ece` |
+| 8 | `theorem` | [reducedW_inverse_uniform_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ReducedFilterInverseNamespaced.lean/declarations/reducedw-inverse-uniform-bound.md) | 182 | `result-track:f83c03079b37d9dcd5fb05b0ea4c044239b019a741e75e3e7c47dcd100fbd936` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

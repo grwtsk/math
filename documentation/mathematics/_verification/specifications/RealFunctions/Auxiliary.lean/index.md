@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Auxiliary.lean/index.md) · [Full source](../../../../RealFunctions/Auxiliary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Auxiliary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Auxiliary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [hasDerivAt_ofReal](../../../../RealFunctions/Auxiliary.lean/declarations/hasderivat-ofreal.md) | 29 | `result-track:2f0908d4168bdd33b6412dddd45c60b423808b3b51e6d944ca2d21dcee671fcf` |
-| 2 | `lemma` | [deriv_ofReal](../../../../RealFunctions/Auxiliary.lean/declarations/deriv-ofreal.md) | 32 | `result-track:9ba4da0a0eaf3cc3bc5f96a6f971b866c9872d9908646f46ef17581dbdd5b93c` |
-| 3 | `lemma` | [differentiableAt_ofReal](../../../../RealFunctions/Auxiliary.lean/declarations/differentiableat-ofreal.md) | 35 | `result-track:7e113e7217073a9697f9ad368cfd410a705b4ab74d53b2fcd57cfe1e318af076` |
-| 4 | `lemma` | [DifferentiableAt.comp_ofReal](../../../../RealFunctions/Auxiliary.lean/declarations/differentiableat-comp-ofreal.md) | 40 | `result-track:1ad429ac0b8c697b3cc3a1182c0526e572b80685a1e2165760c49563d9d3ddf8` |
-| 5 | `lemma` | [deriv.comp_ofReal](../../../../RealFunctions/Auxiliary.lean/declarations/deriv-comp-ofreal.md) | 44 | `result-track:d28cbac48b39e8e4d8985936a1fb44bdcdcc4fdc1117ba954bd82bf7fc90b02f` |
-| 6 | `lemma` | [Differentiable.comp_ofReal](../../../../RealFunctions/Auxiliary.lean/declarations/differentiable-comp-ofreal.md) | 48 | `result-track:c2b7078a188841c92f1e6d5007753cf3be7ed9433c47ab1db1ed64878d366a7f` |
-| 7 | `lemma` | [DifferentiableAt.ofReal_comp](../../../../RealFunctions/Auxiliary.lean/declarations/differentiableat-ofreal-comp.md) | 52 | `result-track:3dcd66bc5635368e01c396c2a78fba3ff793a2935e98db41ad24e8a499ba4546` |
-| 8 | `lemma` | [Differentiable.ofReal_comp](../../../../RealFunctions/Auxiliary.lean/declarations/differentiable-ofreal-comp.md) | 56 | `result-track:2ca49da907baf5f3eb0b55675c25a4ba8ba3ea436c79a25c7ff2c474ff7cdcd5` |
-| 9 | `lemma` | [HasDerivAt.of_hasDerivAt_ofReal_comp](../../../../RealFunctions/Auxiliary.lean/declarations/hasderivat-of-hasderivat-ofreal-comp.md) | 61 | `result-track:9a6e013b1b88e986fcae6acc5ded6085ff2a349c5dbb91b06aa731ff4dc1356c` |
-| 10 | `lemma` | [DifferentiableAt.ofReal_comp_iff](../../../../RealFunctions/Auxiliary.lean/declarations/differentiableat-ofreal-comp-iff.md) | 72 | `result-track:6fc39718990270a3cd24777d38a9998a8181237eb6bb79c19b30231ecdb56466` |
-| 11 | `lemma` | [Differentiable.ofReal_comp_iff](../../../../RealFunctions/Auxiliary.lean/declarations/differentiable-ofreal-comp-iff.md) | 78 | `result-track:ceb843ee5790db72776cf89d6f19995f9053740931785997450e4865ef35446a` |
-| 12 | `lemma` | [deriv.ofReal_comp](../../../../RealFunctions/Auxiliary.lean/declarations/deriv-ofreal-comp.md) | 82 | `result-track:88de907389c12e06990fa826fe803e4329de329acc8a8bbdf21b1b1e65a7f541` |
+| 1 | `lemma` | [hasDerivAt_ofReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Auxiliary.lean/declarations/hasderivat-ofreal.md) | 29 | `result-track:2f0908d4168bdd33b6412dddd45c60b423808b3b51e6d944ca2d21dcee671fcf` |
+| 2 | `lemma` | [deriv_ofReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Auxiliary.lean/declarations/deriv-ofreal.md) | 32 | `result-track:9ba4da0a0eaf3cc3bc5f96a6f971b866c9872d9908646f46ef17581dbdd5b93c` |
+| 3 | `lemma` | [differentiableAt_ofReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Auxiliary.lean/declarations/differentiableat-ofreal.md) | 35 | `result-track:7e113e7217073a9697f9ad368cfd410a705b4ab74d53b2fcd57cfe1e318af076` |
+| 4 | `lemma` | [DifferentiableAt.comp_ofReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Auxiliary.lean/declarations/differentiableat-comp-ofreal.md) | 40 | `result-track:1ad429ac0b8c697b3cc3a1182c0526e572b80685a1e2165760c49563d9d3ddf8` |
+| 5 | `lemma` | [deriv.comp_ofReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Auxiliary.lean/declarations/deriv-comp-ofreal.md) | 44 | `result-track:d28cbac48b39e8e4d8985936a1fb44bdcdcc4fdc1117ba954bd82bf7fc90b02f` |
+| 6 | `lemma` | [Differentiable.comp_ofReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Auxiliary.lean/declarations/differentiable-comp-ofreal.md) | 48 | `result-track:c2b7078a188841c92f1e6d5007753cf3be7ed9433c47ab1db1ed64878d366a7f` |
+| 7 | `lemma` | [DifferentiableAt.ofReal_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Auxiliary.lean/declarations/differentiableat-ofreal-comp.md) | 52 | `result-track:3dcd66bc5635368e01c396c2a78fba3ff793a2935e98db41ad24e8a499ba4546` |
+| 8 | `lemma` | [Differentiable.ofReal_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Auxiliary.lean/declarations/differentiable-ofreal-comp.md) | 56 | `result-track:2ca49da907baf5f3eb0b55675c25a4ba8ba3ea436c79a25c7ff2c474ff7cdcd5` |
+| 9 | `lemma` | [HasDerivAt.of_hasDerivAt_ofReal_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Auxiliary.lean/declarations/hasderivat-of-hasderivat-ofreal-comp.md) | 61 | `result-track:9a6e013b1b88e986fcae6acc5ded6085ff2a349c5dbb91b06aa731ff4dc1356c` |
+| 10 | `lemma` | [DifferentiableAt.ofReal_comp_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Auxiliary.lean/declarations/differentiableat-ofreal-comp-iff.md) | 72 | `result-track:6fc39718990270a3cd24777d38a9998a8181237eb6bb79c19b30231ecdb56466` |
+| 11 | `lemma` | [Differentiable.ofReal_comp_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Auxiliary.lean/declarations/differentiable-ofreal-comp-iff.md) | 78 | `result-track:ceb843ee5790db72776cf89d6f19995f9053740931785997450e4865ef35446a` |
+| 12 | `lemma` | [deriv.ofReal_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Auxiliary.lean/declarations/deriv-ofreal-comp.md) | 82 | `result-track:88de907389c12e06990fa826fe803e4329de329acc8a8bbdf21b1b1e65a7f541` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

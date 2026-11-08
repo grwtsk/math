@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/NormalForms.lean/index.md) · [Full source](../../../../AlgebraicTopology/NormalForms.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NormalForms.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NormalForms.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,18 +61,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsAdmissible](../../../../AlgebraicTopology/NormalForms.lean/declarations/isadmissible.md) | 52 | `declaration-track:9b82881c4bafb4e762f8bd46763422a0bb33d61394841711195635f972964f62` |
-| 2 | `lemma` | [nil](../../../../AlgebraicTopology/NormalForms.lean/declarations/nil.md) | 58 | `result-track:620738e647e5ab14a52bd86524420a5c8ba83fe2e8f0d32625e62f5ee2ad5bbf` |
-| 3 | `lemma` | [sorted](../../../../AlgebraicTopology/NormalForms.lean/declarations/sorted.md) | 62 | `result-track:b69a4f0748a5e504082e215d6d36fff275b9e380e499a0bb5153250758d40f22` |
-| 4 | `lemma` | [le](../../../../AlgebraicTopology/NormalForms.lean/declarations/le.md) | 64 | `result-track:ae0640355a6415f16d021bf443dc570d069efb09e241201738c8da7d2aae74bf` |
-| 5 | `lemma` | [head_lt](../../../../AlgebraicTopology/NormalForms.lean/declarations/head-lt.md) | 67 | `result-track:073d6fc393937bc0c5b84238882f25398a32d2472e8ecd6607b5240e7a8bad6f` |
-| 6 | `lemma` | [cons](../../../../AlgebraicTopology/NormalForms.lean/declarations/cons.md) | 72 | `result-track:f4f3f80b64eab0c7be0b5479604b5d8938a821c8a834ae9e6b17488787e77821` |
-| 7 | `lemma` | [tail](../../../../AlgebraicTopology/NormalForms.lean/declarations/tail.md) | 94 | `result-track:6763cc4db528245e608d9414bfb1e952ddf587634d0f8bb853c3051ddd854368` |
-| 8 | `def` | [getElemAsFin](../../../../AlgebraicTopology/NormalForms.lean/declarations/getelemasfin.md) | 102 | `declaration-track:0e9670e59ad5080d86c2cecafb7ee2e250f1d7cf76fce6ceda1af6a15b60dc42` |
-| 9 | `def` | [head](../../../../AlgebraicTopology/NormalForms.lean/declarations/head.md) | 108 | `declaration-track:04849e165901c5b90d63e23a2891b8d72bc3c9083b2e184b2df90a9bfbfbddaa` |
-| 10 | `def` | [simplicialInsert](../../../../AlgebraicTopology/NormalForms.lean/declarations/simplicialinsert.md) | 121 | `declaration-track:24dfee85ba91ce23f4b258cd4017f162c13f4c4a5f94072dce3ea2ace393ef03` |
-| 11 | `lemma` | [simplicialInsert_length](../../../../AlgebraicTopology/NormalForms.lean/declarations/simplicialinsert-length.md) | 126 | `result-track:456b91323889ed1f5281af17cc0b221160452a671a29742e97d854263bf710aa` |
-| 12 | `theorem` | [simplicialInsert_isAdmissible](../../../../AlgebraicTopology/NormalForms.lean/declarations/simplicialinsert-isadmissible.md) | 135 | `result-track:698bb34514358ee4f241895ef0126c77e7fa6b4df2c74b1d23b5ca7e4723e337` |
+| 1 | `def` | [IsAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NormalForms.lean/declarations/isadmissible.md) | 52 | `declaration-track:9b82881c4bafb4e762f8bd46763422a0bb33d61394841711195635f972964f62` |
+| 2 | `lemma` | [nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NormalForms.lean/declarations/nil.md) | 58 | `result-track:620738e647e5ab14a52bd86524420a5c8ba83fe2e8f0d32625e62f5ee2ad5bbf` |
+| 3 | `lemma` | [sorted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NormalForms.lean/declarations/sorted.md) | 62 | `result-track:b69a4f0748a5e504082e215d6d36fff275b9e380e499a0bb5153250758d40f22` |
+| 4 | `lemma` | [le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NormalForms.lean/declarations/le.md) | 64 | `result-track:ae0640355a6415f16d021bf443dc570d069efb09e241201738c8da7d2aae74bf` |
+| 5 | `lemma` | [head_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NormalForms.lean/declarations/head-lt.md) | 67 | `result-track:073d6fc393937bc0c5b84238882f25398a32d2472e8ecd6607b5240e7a8bad6f` |
+| 6 | `lemma` | [cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NormalForms.lean/declarations/cons.md) | 72 | `result-track:f4f3f80b64eab0c7be0b5479604b5d8938a821c8a834ae9e6b17488787e77821` |
+| 7 | `lemma` | [tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NormalForms.lean/declarations/tail.md) | 94 | `result-track:6763cc4db528245e608d9414bfb1e952ddf587634d0f8bb853c3051ddd854368` |
+| 8 | `def` | [getElemAsFin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NormalForms.lean/declarations/getelemasfin.md) | 102 | `declaration-track:0e9670e59ad5080d86c2cecafb7ee2e250f1d7cf76fce6ceda1af6a15b60dc42` |
+| 9 | `def` | [head](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NormalForms.lean/declarations/head.md) | 108 | `declaration-track:04849e165901c5b90d63e23a2891b8d72bc3c9083b2e184b2df90a9bfbfbddaa` |
+| 10 | `def` | [simplicialInsert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NormalForms.lean/declarations/simplicialinsert.md) | 121 | `declaration-track:24dfee85ba91ce23f4b258cd4017f162c13f4c4a5f94072dce3ea2ace393ef03` |
+| 11 | `lemma` | [simplicialInsert_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NormalForms.lean/declarations/simplicialinsert-length.md) | 126 | `result-track:456b91323889ed1f5281af17cc0b221160452a671a29742e97d854263bf710aa` |
+| 12 | `theorem` | [simplicialInsert_isAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NormalForms.lean/declarations/simplicialinsert-isadmissible.md) | 135 | `result-track:698bb34514358ee4f241895ef0126c77e7fa6b4df2c74b1d23b5ca7e4723e337` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

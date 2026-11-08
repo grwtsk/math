@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelOfIdentityDifference.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelOfIdentityDifference.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelOfIdentityDifference.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelOfIdentityDifference.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -56,7 +56,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.Analysis.SpecialFunctions.Pow.Real` — import line 27; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` — import line 28; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Rat.Floor` — import line 29; external provider; requires a separately pinned dependency.
-- [Whole Subtype Equivalence](../../../../../Combinatorics/WholeSubtypeEquivalence.lean/index.md) — import line 31; pinned internal source present.
+- [Whole Subtype Equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholeSubtypeEquivalence.lean/index.md) — import line 31; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -67,7 +67,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_fixedSet_linear_iff_mem_ker_id_sub](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelOfIdentityDifference.lean/declarations/mem-fixedset-linear-iff-mem-ker-id-sub.md) | 49 | `result-track:204ad00acc39d962745bdb651a0ca2356e6021efbe11853202ea37466b297c34` |
+| 1 | `theorem` | [mem_fixedSet_linear_iff_mem_ker_id_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelOfIdentityDifference.lean/declarations/mem-fixedset-linear-iff-mem-ker-id-sub.md) | 49 | `result-track:204ad00acc39d962745bdb651a0ca2356e6021efbe11853202ea37466b297c34` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

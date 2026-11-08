@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Stirling.lean/index.md) · [Full source](../../../../RealFunctions/Stirling.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Stirling.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Stirling.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [differentiableAt_digamma](../../../../RealFunctions/Stirling.lean/declarations/differentiableat-digamma.md) | 29 | `result-track:7cb6fa8334990544705e003a4fb30ef7e3f7bc1471f38d8f8f3615641e4af13e` |
-| 2 | `theorem` | [hasSum_trigamma](../../../../RealFunctions/Stirling.lean/declarations/hassum-trigamma.md) | 53 | `result-track:0056be505a9a0267eae9999948cbbb51b9522557ca97969f69416f04b65e9b8e` |
+| 1 | `theorem` | [differentiableAt_digamma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Stirling.lean/declarations/differentiableat-digamma.md) | 29 | `result-track:7cb6fa8334990544705e003a4fb30ef7e3f7bc1471f38d8f8f3615641e4af13e` |
+| 2 | `theorem` | [hasSum_trigamma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Stirling.lean/declarations/hassum-trigamma.md) | 53 | `result-track:0056be505a9a0267eae9999948cbbb51b9522557ca97969f69416f04b65e9b8e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

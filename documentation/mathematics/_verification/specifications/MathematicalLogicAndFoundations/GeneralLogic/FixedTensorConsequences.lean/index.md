@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedTensorConsequences.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedTensorConsequences.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedTensorConsequences.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedTensorConsequences.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fixed_tensor_is_horizontal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedTensorConsequences.lean/declarations/fixed-tensor-is-horizontal.md) | 39 | `result-track:391b02a3b03bfc1024d86d6c193ae728c0b5ec2ea8e61570751a40b2a6351baa` |
-| 2 | `theorem` | [fixed_tensor_is_fixed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedTensorConsequences.lean/declarations/fixed-tensor-is-fixed.md) | 49 | `result-track:a92100ffb419295c1b191b2c09fb0ad8cbb01d00c50f53e9310475e1ca09206c` |
+| 1 | `theorem` | [fixed_tensor_is_horizontal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedTensorConsequences.lean/declarations/fixed-tensor-is-horizontal.md) | 39 | `result-track:391b02a3b03bfc1024d86d6c193ae728c0b5ec2ea8e61570751a40b2a6351baa` |
+| 2 | `theorem` | [fixed_tensor_is_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedTensorConsequences.lean/declarations/fixed-tensor-is-fixed.md) | 49 | `result-track:a92100ffb419295c1b191b2c09fb0ad8cbb01d00c50f53e9310475e1ca09206c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

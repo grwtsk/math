@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Attempt02PsiPositivePrefix.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Attempt02PsiPositivePrefix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Attempt02PsiPositivePrefix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Attempt02PsiPositivePrefix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [psi_positive_prefix](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Attempt02PsiPositivePrefix.lean/declarations/psi-positive-prefix.md) | 16 | `result-track:82ae17bb4c07920f63fb323fa681a90b8a8506d5c397a3dedac6ffbd32b632fe` |
-| 2 | `theorem` | [actualClosedMangoldtXiPair_cell_difference](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Attempt02PsiPositivePrefix.lean/declarations/actualclosedmangoldtxipair-cell-difference.md) | 27 | `result-track:6228539e3b191b3d16778b491df69025d9d25f7b7598d1d061198a89e2cfd474` |
-| 3 | `theorem` | [actualAnchoredXiTailPrimitive_cell_difference](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Attempt02PsiPositivePrefix.lean/declarations/actualanchoredxitailprimitive-cell-difference.md) | 39 | `result-track:5027e199c300b832c313b25fa39e8658d018b62f6c8e306dbbaad537b3fe510a` |
-| 4 | `theorem` | [cell_sqrt_bounds](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Attempt02PsiPositivePrefix.lean/declarations/cell-sqrt-bounds.md) | 73 | `result-track:7b4acc218805fd6698f4ed091736394680fce004c444ad30a4a7263d1ab5f1d9` |
-| 5 | `theorem` | [actualAnchoredXiTailPrimitive_cell_abs_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Attempt02PsiPositivePrefix.lean/declarations/actualanchoredxitailprimitive-cell-abs-le.md) | 100 | `result-track:b74e2a2f62a21182510d4c6d171289dc160fd39271a22bc49e919e1e3cb22ba2` |
+| 1 | `theorem` | [psi_positive_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Attempt02PsiPositivePrefix.lean/declarations/psi-positive-prefix.md) | 16 | `result-track:82ae17bb4c07920f63fb323fa681a90b8a8506d5c397a3dedac6ffbd32b632fe` |
+| 2 | `theorem` | [actualClosedMangoldtXiPair_cell_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Attempt02PsiPositivePrefix.lean/declarations/actualclosedmangoldtxipair-cell-difference.md) | 27 | `result-track:6228539e3b191b3d16778b491df69025d9d25f7b7598d1d061198a89e2cfd474` |
+| 3 | `theorem` | [actualAnchoredXiTailPrimitive_cell_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Attempt02PsiPositivePrefix.lean/declarations/actualanchoredxitailprimitive-cell-difference.md) | 39 | `result-track:5027e199c300b832c313b25fa39e8658d018b62f6c8e306dbbaad537b3fe510a` |
+| 4 | `theorem` | [cell_sqrt_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Attempt02PsiPositivePrefix.lean/declarations/cell-sqrt-bounds.md) | 73 | `result-track:7b4acc218805fd6698f4ed091736394680fce004c444ad30a4a7263d1ab5f1d9` |
+| 5 | `theorem` | [actualAnchoredXiTailPrimitive_cell_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Attempt02PsiPositivePrefix.lean/declarations/actualanchoredxitailprimitive-cell-abs-le.md) | 100 | `result-track:b74e2a2f62a21182510d4c6d171289dc160fd39271a22bc49e919e1e3cb22ba2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

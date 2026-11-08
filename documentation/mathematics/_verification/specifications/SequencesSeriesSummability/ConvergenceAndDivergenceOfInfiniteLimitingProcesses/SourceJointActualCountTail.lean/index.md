@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTail.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTail.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTail.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTail.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [localCount_mono](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTail.lean/declarations/localcount-mono.md) | 17 | `result-track:ead96e6d6f50fdccbdc979d9a014e96fbe24affbbac497a8dd90fb21077796de` |
-| 2 | `theorem` | [sharp_tail_of_six](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTail.lean/declarations/sharp-tail-of-six.md) | 26 | `result-track:5618edcc49d234ac444a32a25eb156511cf5da66d84b8f83f83058a14aba9f88` |
-| 3 | `theorem` | [adaptive_tail_of_sharp](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTail.lean/declarations/adaptive-tail-of-sharp.md) | 63 | `result-track:7221f45493abae8f7b6ff55a07e2d56b0a170b9686e41b23b6e925cd9728118b` |
-| 4 | `theorem` | [actual_joint_max](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTail.lean/declarations/actual-joint-max.md) | 102 | `result-track:014ea7e68c5a730089d8f88138a0a571827ca603d74b927c60036618fd1fdcdc` |
-| 5 | `theorem` | [actual_joint_local_six_sharp_adaptive_witness](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTail.lean/declarations/actual-joint-local-six-sharp-adaptive-witness.md) | 143 | `result-track:9a44dd882c9986c5eba3e3b39f28450e9388bedb351c79396ac4fd33221cad0f` |
+| 1 | `theorem` | [localCount_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTail.lean/declarations/localcount-mono.md) | 17 | `result-track:ead96e6d6f50fdccbdc979d9a014e96fbe24affbbac497a8dd90fb21077796de` |
+| 2 | `theorem` | [sharp_tail_of_six](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTail.lean/declarations/sharp-tail-of-six.md) | 26 | `result-track:5618edcc49d234ac444a32a25eb156511cf5da66d84b8f83f83058a14aba9f88` |
+| 3 | `theorem` | [adaptive_tail_of_sharp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTail.lean/declarations/adaptive-tail-of-sharp.md) | 63 | `result-track:7221f45493abae8f7b6ff55a07e2d56b0a170b9686e41b23b6e925cd9728118b` |
+| 4 | `theorem` | [actual_joint_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTail.lean/declarations/actual-joint-max.md) | 102 | `result-track:014ea7e68c5a730089d8f88138a0a571827ca603d74b927c60036618fd1fdcdc` |
+| 5 | `theorem` | [actual_joint_local_six_sharp_adaptive_witness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTail.lean/declarations/actual-joint-local-six-sharp-adaptive-witness.md) | 143 | `result-track:9a44dd882c9986c5eba3e3b39f28450e9388bedb351c79396ac4fd33221cad0f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

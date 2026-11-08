@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverMembershipWitness.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverMembershipWitness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverMembershipWitness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverMembershipWitness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Folder.CrystallineTensor.InfinitesimalThickening` — import line 15; external provider; requires a separately pinned dependency.
 - `Folder.ResearchTopos.GrothendieckTopology` — import line 16; external provider; requires a separately pinned dependency.
-- [`GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.SuppliedCoverPredicateWitnesses.Variantd3e2f481.SiteIndexingData`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SiteIndexingData.lean/index.md) — import line 18; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.SuppliedCoverPredicateWitnesses.Variantd3e2f481.SiteIndexingData`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SiteIndexingData.lean/index.md) — import line 18; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CrystallineCover](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverMembershipWitness.lean/declarations/crystallinecover.md) | 37 | `declaration-track:eaa61701e688d03f9f04e09c281c2e606767d796e87b29e47bfc57f5a53bb35c` |
-| 2 | `theorem` | [crystalline_cover_is_cover](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverMembershipWitness.lean/declarations/crystalline-cover-is-cover.md) | 43 | `result-track:68f3081096e52fb897acc073e886fca93967782b281a0e45dce955d5d1a0f184` |
+| 1 | `structure` | [CrystallineCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverMembershipWitness.lean/declarations/crystallinecover.md) | 37 | `declaration-track:eaa61701e688d03f9f04e09c281c2e606767d796e87b29e47bfc57f5a53bb35c` |
+| 2 | `theorem` | [crystalline_cover_is_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverMembershipWitness.lean/declarations/crystalline-cover-is-cover.md) | 43 | `result-track:68f3081096e52fb897acc073e886fca93967782b281a0e45dce955d5d1a0f184` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

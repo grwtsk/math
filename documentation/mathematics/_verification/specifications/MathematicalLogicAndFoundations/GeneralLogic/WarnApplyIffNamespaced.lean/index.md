@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WarnApplyIffNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WarnApplyIffNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WarnApplyIffNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WarnApplyIffNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `axiom` | [foo](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WarnApplyIffNamespaced.lean/declarations/foo.md) | 26 | `declaration-track:2a5fa6a332c6c71a6e3b788df84ce95c638f5560f2959a94cdc5b953c8a060ac` |
-| 2 | `axiom` | [bar](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WarnApplyIffNamespaced.lean/declarations/bar.md) | 29 | `declaration-track:9adf092a42a22a0e5b7c82047ecb300cb1909b4b61b89794fcef37ed1c287bbb` |
-| 3 | `axiom` | [baz](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WarnApplyIffNamespaced.lean/declarations/baz.md) | 33 | `declaration-track:ddc9055dc1badf7123c85a426e976ca9f758a52ce142e0877a784e1c06183008` |
+| 1 | `axiom` | [foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WarnApplyIffNamespaced.lean/declarations/foo.md) | 26 | `declaration-track:2a5fa6a332c6c71a6e3b788df84ce95c638f5560f2959a94cdc5b953c8a060ac` |
+| 2 | `axiom` | [bar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WarnApplyIffNamespaced.lean/declarations/bar.md) | 29 | `declaration-track:9adf092a42a22a0e5b7c82047ecb300cb1909b4b61b89794fcef37ed1c287bbb` |
+| 3 | `axiom` | [baz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WarnApplyIffNamespaced.lean/declarations/baz.md) | 33 | `declaration-track:ddc9055dc1badf7123c85a426e976ca9f758a52ce142e0877a784e1c06183008` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

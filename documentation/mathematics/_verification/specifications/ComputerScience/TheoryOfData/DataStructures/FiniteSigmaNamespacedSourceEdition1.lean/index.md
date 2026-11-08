@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteSigmaNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteSigmaNamespacedSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteSigmaNamespacedSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteSigmaNamespacedSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteSigmaNamespacedSourceEdition1.lean/declarations/instance-source-edition-2.md) | 25 | `declaration-track:81be6492b494b1f1bfe291edc6a07e75fb77fbb939e69e20455ab98b8d34c239` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteSigmaNamespacedSourceEdition1.lean/declarations/instance.md) | 30 | `declaration-track:80405c41c930319a89c750384f5c36fc5342f681e550abffb69266d552e7b83a` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteSigmaNamespacedSourceEdition1.lean/declarations/instance-source-edition-2.md) | 25 | `declaration-track:81be6492b494b1f1bfe291edc6a07e75fb77fbb939e69e20455ab98b8d34c239` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteSigmaNamespacedSourceEdition1.lean/declarations/instance.md) | 30 | `declaration-track:80405c41c930319a89c750384f5c36fc5342f681e550abffb69266d552e7b83a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

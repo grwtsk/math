@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [LogL2](../../../../MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/declarations/logl2.md) | 22 | `declaration-track:fdfcce7aed5fddc04935bb22cd70bb6bd16fc9774df749fc30ff56b1d6ceb9c5` |
-| 2 | `theorem` | [integral_exp_jacobian](../../../../MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/declarations/integral-exp-jacobian.md) | 24 | `result-track:6dab8d8daa55e6ca82b4f7cffd775da8b1b1ee7368f6cc18d66bdbba2edd93c3` |
-| 3 | `theorem` | [integrable_exp_jacobian](../../../../MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/declarations/integrable-exp-jacobian.md) | 33 | `result-track:88cec4e0ff3cc33fbb8d17143288778797ffcf713cbeb790221db8b81eb23d8a` |
-| 4 | `theorem` | [exp_quasi](../../../../MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/declarations/exp-quasi.md) | 42 | `result-track:bc10230d511f8fd753f036e66c7e9d6b7e49c923994c82b4213df22efdb04638` |
-| 5 | `theorem` | [log_quasi](../../../../MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/declarations/log-quasi.md) | 62 | `result-track:da8a612e262b917a8f2a96d1f68f6399711aa8225c7be487c6b4d8792216bf83` |
-| 6 | `def` | [logFunc](../../../../MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/declarations/logfunc.md) | 81 | `declaration-track:b0d05442be547750c6be0d8c3aba864c79bc1f3d11bba617d14647602d7f5fe4` |
-| 7 | `def` | [positiveFunc](../../../../MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/declarations/positivefunc.md) | 82 | `declaration-track:03ff8fc25d66256c6629b8885b5c249f4c5bb8fdd477c87170065a62ba6f6c97` |
-| 8 | `theorem` | [logFunc_norm_sq](../../../../MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/declarations/logfunc-norm-sq.md) | 85 | `result-track:fc23cfd14071af26e2d4fcfbd16b6e74417349a4f4c4156c2494892e7da46385` |
-| 9 | `theorem` | [logFunc_memLp](../../../../MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/declarations/logfunc-memlp.md) | 93 | `result-track:ad83264df85c455bbd87c5362c0fef86d54f7731e218b037700ef76d38dd396d` |
+| 1 | `abbrev` | [LogL2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/declarations/logl2.md) | 22 | `declaration-track:fdfcce7aed5fddc04935bb22cd70bb6bd16fc9774df749fc30ff56b1d6ceb9c5` |
+| 2 | `theorem` | [integral_exp_jacobian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/declarations/integral-exp-jacobian.md) | 24 | `result-track:6dab8d8daa55e6ca82b4f7cffd775da8b1b1ee7368f6cc18d66bdbba2edd93c3` |
+| 3 | `theorem` | [integrable_exp_jacobian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/declarations/integrable-exp-jacobian.md) | 33 | `result-track:88cec4e0ff3cc33fbb8d17143288778797ffcf713cbeb790221db8b81eb23d8a` |
+| 4 | `theorem` | [exp_quasi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/declarations/exp-quasi.md) | 42 | `result-track:bc10230d511f8fd753f036e66c7e9d6b7e49c923994c82b4213df22efdb04638` |
+| 5 | `theorem` | [log_quasi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/declarations/log-quasi.md) | 62 | `result-track:da8a612e262b917a8f2a96d1f68f6399711aa8225c7be487c6b4d8792216bf83` |
+| 6 | `def` | [logFunc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/declarations/logfunc.md) | 81 | `declaration-track:b0d05442be547750c6be0d8c3aba864c79bc1f3d11bba617d14647602d7f5fe4` |
+| 7 | `def` | [positiveFunc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/declarations/positivefunc.md) | 82 | `declaration-track:03ff8fc25d66256c6629b8885b5c249f4c5bb8fdd477c87170065a62ba6f6c97` |
+| 8 | `theorem` | [logFunc_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/declarations/logfunc-norm-sq.md) | 85 | `result-track:fc23cfd14071af26e2d4fcfbd16b6e74417349a4f4c4156c2494892e7da46385` |
+| 9 | `theorem` | [logFunc_memLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogCoordinateAttempt01Namespaced.lean/declarations/logfunc-memlp.md) | 93 | `result-track:ad83264df85c455bbd87c5362c0fef86d54f7731e218b037700ef76d38dd396d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

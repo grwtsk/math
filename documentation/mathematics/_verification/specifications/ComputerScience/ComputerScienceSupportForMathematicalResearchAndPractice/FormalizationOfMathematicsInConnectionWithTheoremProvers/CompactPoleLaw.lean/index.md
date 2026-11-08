@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactPoleLaw.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactPoleLaw.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactPoleLaw.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactPoleLaw.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CompactPole](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactPoleLaw.lean/declarations/compactpole.md) | 5 | `declaration-track:5dbc7d9ada6cff38d7db6dea8de9137ff3187daa9f29f1a7f7e7bc2226b3a5b6` |
-| 2 | `def` | [CompactPole.centerControlled](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactPoleLaw.lean/declarations/compactpole-centercontrolled.md) | 17 | `declaration-track:e48a27e27ccefa24029237740e62c2f90bdcedf216d566032d5fcecc2fe0dc80` |
-| 3 | `theorem` | [everyCompactPole_centerControlled](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactPoleLaw.lean/declarations/everycompactpole-centercontrolled.md) | 21 | `result-track:d8e6f29f69517f134b8b1750c6e101547a8455234d638f19a063dbff963f804f` |
+| 1 | `inductive` | [CompactPole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactPoleLaw.lean/declarations/compactpole.md) | 5 | `declaration-track:5dbc7d9ada6cff38d7db6dea8de9137ff3187daa9f29f1a7f7e7bc2226b3a5b6` |
+| 2 | `def` | [CompactPole.centerControlled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactPoleLaw.lean/declarations/compactpole-centercontrolled.md) | 17 | `declaration-track:e48a27e27ccefa24029237740e62c2f90bdcedf216d566032d5fcecc2fe0dc80` |
+| 3 | `theorem` | [everyCompactPole_centerControlled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactPoleLaw.lean/declarations/everycompactpole-centercontrolled.md) | 21 | `result-track:d8e6f29f69517f134b8b1750c6e101547a8455234d638f19a063dbff963f804f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

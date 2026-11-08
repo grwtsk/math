@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHodgeEquivalenceWithoutBothComplexLawsCounterexample.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHodgeEquivalenceWithoutBothComplexLawsCounterexample.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHodgeEquivalenceWithoutBothComplexLawsCounterexample.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHodgeEquivalenceWithoutBothComplexLawsCounterexample.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.GraphHodgePortCore`](../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphHodgePortCore.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Interfaces.GraphHodgePortCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphHodgePortCore.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [zeroDifferential](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHodgeEquivalenceWithoutBothComplexLawsCounterexample.lean/declarations/zerodifferential.md) | 6 | `declaration-track:2a09b3857831658396b935185b8c980013e39d4061ee880b2131c4e6bb887334` |
-| 2 | `def` | [zeroCodifferential](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHodgeEquivalenceWithoutBothComplexLawsCounterexample.lean/declarations/zerocodifferential.md) | 10 | `declaration-track:6524b0a2415cef8d55acf906f5d1c5381e3a28fd30558eda5bf848e54f19b9d2` |
-| 3 | `def` | [identityHodge](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHodgeEquivalenceWithoutBothComplexLawsCounterexample.lean/declarations/identityhodge.md) | 14 | `declaration-track:e42f2bf36344d444c4742fecaea48364f3bbaf864a3d28539a96f0d5ba61903d` |
-| 4 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHodgeEquivalenceWithoutBothComplexLawsCounterexample.lean/declarations/example.md) | 20 | `declaration-track:1e6462642c5d8de5a8e79e1e9a94ab2c9ec3bea5487f7bc0dd99671d1f07e174` |
-| 5 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHodgeEquivalenceWithoutBothComplexLawsCounterexample.lean/declarations/example-source-edition-2.md) | 23 | `declaration-track:38ea50cf9e850f2ece3c643e4a8c97465be49451723eb2d41fea2ec296970c37` |
-| 6 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHodgeEquivalenceWithoutBothComplexLawsCounterexample.lean/declarations/example-source-edition-3.md) | 30 | `declaration-track:dedc58e93cb2bee174e812cea6c8c8bd0cb02a68f2fb2d3c96d03a1a43a8f631` |
-| 7 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHodgeEquivalenceWithoutBothComplexLawsCounterexample.lean/declarations/example-source-edition-4.md) | 33 | `declaration-track:f3d7711ecf32772c665ae8ba4c324b1d97bae4b2ae19a537d6743468d75615bf` |
+| 1 | `def` | [zeroDifferential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHodgeEquivalenceWithoutBothComplexLawsCounterexample.lean/declarations/zerodifferential.md) | 6 | `declaration-track:2a09b3857831658396b935185b8c980013e39d4061ee880b2131c4e6bb887334` |
+| 2 | `def` | [zeroCodifferential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHodgeEquivalenceWithoutBothComplexLawsCounterexample.lean/declarations/zerocodifferential.md) | 10 | `declaration-track:6524b0a2415cef8d55acf906f5d1c5381e3a28fd30558eda5bf848e54f19b9d2` |
+| 3 | `def` | [identityHodge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHodgeEquivalenceWithoutBothComplexLawsCounterexample.lean/declarations/identityhodge.md) | 14 | `declaration-track:e42f2bf36344d444c4742fecaea48364f3bbaf864a3d28539a96f0d5ba61903d` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHodgeEquivalenceWithoutBothComplexLawsCounterexample.lean/declarations/example.md) | 20 | `declaration-track:1e6462642c5d8de5a8e79e1e9a94ab2c9ec3bea5487f7bc0dd99671d1f07e174` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHodgeEquivalenceWithoutBothComplexLawsCounterexample.lean/declarations/example-source-edition-2.md) | 23 | `declaration-track:38ea50cf9e850f2ece3c643e4a8c97465be49451723eb2d41fea2ec296970c37` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHodgeEquivalenceWithoutBothComplexLawsCounterexample.lean/declarations/example-source-edition-3.md) | 30 | `declaration-track:dedc58e93cb2bee174e812cea6c8c8bd0cb02a68f2fb2d3c96d03a1a43a8f631` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHodgeEquivalenceWithoutBothComplexLawsCounterexample.lean/declarations/example-source-edition-4.md) | 33 | `declaration-track:f3d7711ecf32772c665ae8ba4c324b1d97bae4b2ae19a537d6743468d75615bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

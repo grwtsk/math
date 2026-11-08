@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RingSmallPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RingSmallPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RingSmallPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RingSmallPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [essentiallySmall_of_finiteType](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RingSmallPublic.lean/declarations/essentiallysmall-of-finitetype.md) | 24 | `result-track:e35dce58a84f14394a51fb39c6658fac6b230d88ebc8bdb39900352b41647922` |
-| 2 | `lemma` | [essentiallySmall_of_localizationAway](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RingSmallPublic.lean/declarations/essentiallysmall-of-localizationaway.md) | 38 | `result-track:f392196796ca9492605e3b514f7cfb522af66e90b987358f45a04f2cfc16d648` |
+| 1 | `lemma` | [essentiallySmall_of_finiteType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RingSmallPublic.lean/declarations/essentiallysmall-of-finitetype.md) | 24 | `result-track:e35dce58a84f14394a51fb39c6658fac6b230d88ebc8bdb39900352b41647922` |
+| 2 | `lemma` | [essentiallySmall_of_localizationAway](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RingSmallPublic.lean/declarations/essentiallysmall-of-localizationaway.md) | 38 | `result-track:f392196796ca9492605e3b514f7cfb522af66e90b987358f45a04f2cfc16d648` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

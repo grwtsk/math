@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/index.md) · [Full source](../../../../MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope`](../../../../GeneralTopology/GoldbachPrefixFrequencyEnvelope.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GoldbachPrefixFrequencyEnvelope.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.MeasureTheory.Integral.Bochner.Set` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [goldbachClippedFrequencyEnvelope](../../../../MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/goldbachclippedfrequencyenvelope.md) | 40 | `declaration-track:ae96068f13db2577ddce0110ca5323248a70b7b640de6f583052d1c1d978d0b3` |
-| 2 | `def` | [goldbachFrequencyArcErrorBudget](../../../../MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/goldbachfrequencyarcerrorbudget.md) | 49 | `declaration-track:7703150c8654bc31644b2c381e97d0ac705f822d3afcf3003bf3f2bf4e601b77` |
-| 3 | `def` | [goldbachFrequencyMajorErrorBudget](../../../../MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/goldbachfrequencymajorerrorbudget.md) | 55 | `declaration-track:f3cc8d01b47bd5cfb7885b005ed6a5c41568b8132b7c727cfef859cccdbdbf10` |
-| 4 | `theorem` | [continuous_goldbachClippedFrequencyEnvelope](../../../../MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/continuous-goldbachclippedfrequencyenvelope.md) | 60 | `result-track:fd052165ed340fa6b03ff092ac7a88c6ebc0c373ccb4b6fed6714babafd01897` |
-| 5 | `theorem` | [integrableOn_goldbachClippedFrequencyEnvelope](../../../../MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/integrableon-goldbachclippedfrequencyenvelope.md) | 66 | `result-track:768b77a7f08a31f6b5e878a6fefea0b668f835cfc3871f08093b3713fbdcce92` |
-| 6 | `theorem` | [norm_goldbachProgressionResidual_le_clipped_frequency_envelope](../../../../MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/norm-goldbachprogressionresidual-le-clipped-frequency-envelope.md) | 74 | `result-track:148cf608aa96a72567433fcf99450080842a93b0b4f1cf7dc825e5494e6ad170` |
-| 7 | `theorem` | [norm_goldbachProgressionArcResidual_le_frequency_budget](../../../../MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/norm-goldbachprogressionarcresidual-le-frequency-budget.md) | 94 | `result-track:e466f317d4948b62dbd989e7cc738b8f2cbb4369082ae838a1845b4ca598e538` |
-| 8 | `theorem` | [goldbachFrequencyArcErrorBudget_le_coarse](../../../../MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/goldbachfrequencyarcerrorbudget-le-coarse.md) | 109 | `result-track:d135b8907ac8333c36232e54436fad5b5c3b7041a78d3fc65464fd8a12898cf7` |
-| 9 | `theorem` | [goldbachFrequencyMajorErrorBudget_le_prefix](../../../../MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/goldbachfrequencymajorerrorbudget-le-prefix.md) | 137 | `result-track:9229cb423e0cf15ff6a2e5314d00fe75b9e9aa64d9994cb2c43918e4c542889a` |
-| 10 | `theorem` | [goldbachCount_pos_of_frequency_prefix_bounds](../../../../MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/goldbachcount-pos-of-frequency-prefix-bounds.md) | 149 | `result-track:fd39b824d16accecdff16fdfc89bb277886522d9375b80a3b526741dd212d848` |
-| 11 | `theorem` | [goldbachCount_pos_above_of_frequency_prefix_supplier](../../../../MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/goldbachcount-pos-above-of-frequency-prefix-supplier.md) | 167 | `result-track:2b615320545fd4a8d70c10c9548cd921483a8b2fe06fb04b6ad9c856c96e123c` |
+| 1 | `def` | [goldbachClippedFrequencyEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/goldbachclippedfrequencyenvelope.md) | 40 | `declaration-track:ae96068f13db2577ddce0110ca5323248a70b7b640de6f583052d1c1d978d0b3` |
+| 2 | `def` | [goldbachFrequencyArcErrorBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/goldbachfrequencyarcerrorbudget.md) | 49 | `declaration-track:7703150c8654bc31644b2c381e97d0ac705f822d3afcf3003bf3f2bf4e601b77` |
+| 3 | `def` | [goldbachFrequencyMajorErrorBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/goldbachfrequencymajorerrorbudget.md) | 55 | `declaration-track:f3cc8d01b47bd5cfb7885b005ed6a5c41568b8132b7c727cfef859cccdbdbf10` |
+| 4 | `theorem` | [continuous_goldbachClippedFrequencyEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/continuous-goldbachclippedfrequencyenvelope.md) | 60 | `result-track:fd052165ed340fa6b03ff092ac7a88c6ebc0c373ccb4b6fed6714babafd01897` |
+| 5 | `theorem` | [integrableOn_goldbachClippedFrequencyEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/integrableon-goldbachclippedfrequencyenvelope.md) | 66 | `result-track:768b77a7f08a31f6b5e878a6fefea0b668f835cfc3871f08093b3713fbdcce92` |
+| 6 | `theorem` | [norm_goldbachProgressionResidual_le_clipped_frequency_envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/norm-goldbachprogressionresidual-le-clipped-frequency-envelope.md) | 74 | `result-track:148cf608aa96a72567433fcf99450080842a93b0b4f1cf7dc825e5494e6ad170` |
+| 7 | `theorem` | [norm_goldbachProgressionArcResidual_le_frequency_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/norm-goldbachprogressionarcresidual-le-frequency-budget.md) | 94 | `result-track:e466f317d4948b62dbd989e7cc738b8f2cbb4369082ae838a1845b4ca598e538` |
+| 8 | `theorem` | [goldbachFrequencyArcErrorBudget_le_coarse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/goldbachfrequencyarcerrorbudget-le-coarse.md) | 109 | `result-track:d135b8907ac8333c36232e54436fad5b5c3b7041a78d3fc65464fd8a12898cf7` |
+| 9 | `theorem` | [goldbachFrequencyMajorErrorBudget_le_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/goldbachfrequencymajorerrorbudget-le-prefix.md) | 137 | `result-track:9229cb423e0cf15ff6a2e5314d00fe75b9e9aa64d9994cb2c43918e4c542889a` |
+| 10 | `theorem` | [goldbachCount_pos_of_frequency_prefix_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/goldbachcount-pos-of-frequency-prefix-bounds.md) | 149 | `result-track:fd39b824d16accecdff16fdfc89bb277886522d9375b80a3b526741dd212d848` |
+| 11 | `theorem` | [goldbachCount_pos_above_of_frequency_prefix_supplier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/declarations/goldbachcount-pos-above-of-frequency-prefix-supplier.md) | 167 | `result-track:2b615320545fd4a8d70c10c9548cd921483a8b2fe06fb04b6ad9c856c96e123c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.IsolatedSimpleZeroContour`](../../../../FunctionsOfAComplexVariable/IsolatedSimpleZeroContour.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.IsolatedSimpleZeroContour`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsolatedSimpleZeroContour.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.Analytic.Order` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [filledFactor](../../../../FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/declarations/filledfactor.md) | 37 | `declaration-track:7ec58ec0f23691014be894f47f4d481d5ebd01fe5f21aa5662c3f2c94b0f56d5` |
-| 2 | `theorem` | [filledFactor_of_ne](../../../../FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/declarations/filledfactor-of-ne.md) | 41 | `result-track:399230ab2917c414a3e81e9e2dd076ed0e52a69d03c38a7a8d51d008afc31242` |
-| 3 | `theorem` | [filledFactor_factorization](../../../../FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/declarations/filledfactor-factorization.md) | 47 | `result-track:7d4a2e11972c4485ea85266365d07a4e4115e65e9e145bb1b4e915586f3fe5b8` |
-| 4 | `theorem` | [exists_nonvanishing_factor](../../../../FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/declarations/exists-nonvanishing-factor.md) | 59 | `result-track:2a4c255a27503a14f76e7162aa198e62e2c08fea4532699cbc9afdfba7ae4986` |
-| 5 | `theorem` | [log_derivative_split](../../../../FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/declarations/log-derivative-split.md) | 103 | `result-track:bb7113f7e2858524a2272bceebc6d58ef2efa0d08663f98732e1032952089a70` |
-| 6 | `theorem` | [exists_regular_extension](../../../../FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/declarations/exists-regular-extension.md) | 126 | `result-track:4ac3250b8c93359639425f83cb3505ad059bd428805ae4c2736e043a251a14fd` |
-| 7 | `theorem` | [log_derivative_circleIntegral_of_order](../../../../FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/declarations/log-derivative-circleintegral-of-order.md) | 144 | `result-track:c06a39936de2a2865c245b94f7e373604949fa9bc897db7bc96eb3cc37e8ed77` |
-| 8 | `theorem` | [double_zero_isolation_fixture](../../../../FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/declarations/double-zero-isolation-fixture.md) | 190 | `result-track:7921ae025ebb385a2bc560e152964d35be2e75c7ae585235962de5a4ca8fd004` |
-| 9 | `theorem` | [wrong_unit_residue_fixture](../../../../FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/declarations/wrong-unit-residue-fixture.md) | 205 | `result-track:9be2f636218d5c5a2eec4db1c0aad4a88de9695dea10583050a62c21a644e5d4` |
+| 1 | `def` | [filledFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/declarations/filledfactor.md) | 37 | `declaration-track:7ec58ec0f23691014be894f47f4d481d5ebd01fe5f21aa5662c3f2c94b0f56d5` |
+| 2 | `theorem` | [filledFactor_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/declarations/filledfactor-of-ne.md) | 41 | `result-track:399230ab2917c414a3e81e9e2dd076ed0e52a69d03c38a7a8d51d008afc31242` |
+| 3 | `theorem` | [filledFactor_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/declarations/filledfactor-factorization.md) | 47 | `result-track:7d4a2e11972c4485ea85266365d07a4e4115e65e9e145bb1b4e915586f3fe5b8` |
+| 4 | `theorem` | [exists_nonvanishing_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/declarations/exists-nonvanishing-factor.md) | 59 | `result-track:2a4c255a27503a14f76e7162aa198e62e2c08fea4532699cbc9afdfba7ae4986` |
+| 5 | `theorem` | [log_derivative_split](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/declarations/log-derivative-split.md) | 103 | `result-track:bb7113f7e2858524a2272bceebc6d58ef2efa0d08663f98732e1032952089a70` |
+| 6 | `theorem` | [exists_regular_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/declarations/exists-regular-extension.md) | 126 | `result-track:4ac3250b8c93359639425f83cb3505ad059bd428805ae4c2736e043a251a14fd` |
+| 7 | `theorem` | [log_derivative_circleIntegral_of_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/declarations/log-derivative-circleintegral-of-order.md) | 144 | `result-track:c06a39936de2a2865c245b94f7e373604949fa9bc897db7bc96eb3cc37e8ed77` |
+| 8 | `theorem` | [double_zero_isolation_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/declarations/double-zero-isolation-fixture.md) | 190 | `result-track:7921ae025ebb385a2bc560e152964d35be2e75c7ae585235962de5a4ca8fd004` |
+| 9 | `theorem` | [wrong_unit_residue_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsolatedFiniteOrderContour.lean/declarations/wrong-unit-residue-fixture.md) | 205 | `result-track:9be2f636218d5c5a2eec4db1c0aad4a88de9695dea10583050a62c21a644e5d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

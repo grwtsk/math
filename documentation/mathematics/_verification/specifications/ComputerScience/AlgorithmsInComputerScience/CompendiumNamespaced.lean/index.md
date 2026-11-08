@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PhasePaperCluster](../../../../../ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/declarations/phasepapercluster.md) | 27 | `declaration-track:990b87c17057fb85eb0f10973335055035d96c54e026f3459cd0fbf8825b96c8` |
-| 2 | `structure` | [PhaseSummary](../../../../../ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/declarations/phasesummary.md) | 34 | `declaration-track:550d0f10aaf433dfe3449ecd6ac2186a55bd3d9c8e85fd137340ce2edeffe892` |
-| 3 | `def` | [phaseICluster](../../../../../ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/declarations/phaseicluster.md) | 40 | `declaration-track:6702f352a27b8082f6231a18926128ca5e32216b5d79f7faba41f584c8804388` |
-| 4 | `def` | [phaseIICluster](../../../../../ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/declarations/phaseiicluster.md) | 57 | `declaration-track:f1192e800dc18a3891f3fe0448fd414f699a936115edcd7ac49598e61b9b8204` |
-| 5 | `def` | [phaseIIICluster](../../../../../ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/declarations/phaseiiicluster.md) | 73 | `declaration-track:f1a3005e95a26bdf722b17773160bcb881e036bd033244cc5c7e13ebb241f775` |
-| 6 | `theorem` | [phaseI_recommended_order_nonempty](../../../../../ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/declarations/phasei-recommended-order-nonempty.md) | 96 | `result-track:cd076eb5403f7fcb179574e60602856f73058f34c6e53ffb058d520f8b014b7b` |
-| 7 | `theorem` | [phaseII_recommended_order_nonempty](../../../../../ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/declarations/phaseii-recommended-order-nonempty.md) | 100 | `result-track:32b6f8f6632dc470c85bff140fa8d28076239b7fccbaa57d6193d615353a15ba` |
-| 8 | `theorem` | [phaseIII_recommended_order_nonempty](../../../../../ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/declarations/phaseiii-recommended-order-nonempty.md) | 104 | `result-track:dba49a211dca06c842e067d611b906588190e2c87db90f0fbf19e7aac8a43e4d` |
+| 1 | `structure` | [PhasePaperCluster](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/declarations/phasepapercluster.md) | 27 | `declaration-track:990b87c17057fb85eb0f10973335055035d96c54e026f3459cd0fbf8825b96c8` |
+| 2 | `structure` | [PhaseSummary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/declarations/phasesummary.md) | 34 | `declaration-track:550d0f10aaf433dfe3449ecd6ac2186a55bd3d9c8e85fd137340ce2edeffe892` |
+| 3 | `def` | [phaseICluster](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/declarations/phaseicluster.md) | 40 | `declaration-track:6702f352a27b8082f6231a18926128ca5e32216b5d79f7faba41f584c8804388` |
+| 4 | `def` | [phaseIICluster](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/declarations/phaseiicluster.md) | 57 | `declaration-track:f1192e800dc18a3891f3fe0448fd414f699a936115edcd7ac49598e61b9b8204` |
+| 5 | `def` | [phaseIIICluster](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/declarations/phaseiiicluster.md) | 73 | `declaration-track:f1a3005e95a26bdf722b17773160bcb881e036bd033244cc5c7e13ebb241f775` |
+| 6 | `theorem` | [phaseI_recommended_order_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/declarations/phasei-recommended-order-nonempty.md) | 96 | `result-track:cd076eb5403f7fcb179574e60602856f73058f34c6e53ffb058d520f8b014b7b` |
+| 7 | `theorem` | [phaseII_recommended_order_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/declarations/phaseii-recommended-order-nonempty.md) | 100 | `result-track:32b6f8f6632dc470c85bff140fa8d28076239b7fccbaa57d6193d615353a15ba` |
+| 8 | `theorem` | [phaseIII_recommended_order_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompendiumNamespaced.lean/declarations/phaseiii-recommended-order-nonempty.md) | 104 | `result-track:dba49a211dca06c842e067d611b906588190e2c87db90f0fbf19e7aac8a43e4d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

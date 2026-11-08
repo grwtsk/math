@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DecayScratch.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DecayScratch.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DecayScratch.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DecayScratch.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [thetaPhiDecayConstant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DecayScratch.lean/declarations/thetaphidecayconstant.md) | 7 | `declaration-track:22cba6d988388b5c3236bee58e95a3e1fa2f20be63bf7ed6d263aefaf61cd8fb` |
-| 2 | `theorem` | [thetaPhiDecayConstant_positive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DecayScratch.lean/declarations/thetaphidecayconstant-positive.md) | 10 | `result-track:7a04e3487e502c434985c076caddb3a8a660cf5d0cbfd2b26c73bc98acb85929` |
-| 3 | `theorem` | [thetaPhi_le_superexp](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DecayScratch.lean/declarations/thetaphi-le-superexp.md) | 18 | `result-track:aa8a78df4721b73fc13fe13e2f84bf0e8693fd109dd73ce0cf19f9f1f0f02568` |
-| 4 | `theorem` | [thirteen_mul_le_half_pi_exp](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DecayScratch.lean/declarations/thirteen-mul-le-half-pi-exp.md) | 54 | `result-track:93ee0961340d8d9b1549c13b11f83f2ede36aa3ea34888bac35c9850562032ce` |
-| 5 | `theorem` | [thetaPhi_le_exp_neg_four_mul](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DecayScratch.lean/declarations/thetaphi-le-exp-neg-four-mul.md) | 61 | `result-track:103552f39cbbff56efa520fc9d95b04cc46acd8f591db8985d6bc104258ef4e9` |
-| 6 | `theorem` | [thetaPhi_le_exp_neg_two_mul](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DecayScratch.lean/declarations/thetaphi-le-exp-neg-two-mul.md) | 68 | `result-track:5fc5b3cdd22c7deb93bde09bb1867cdd436fc1fff7dfe78ba480b4312491f033` |
+| 1 | `def` | [thetaPhiDecayConstant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DecayScratch.lean/declarations/thetaphidecayconstant.md) | 7 | `declaration-track:22cba6d988388b5c3236bee58e95a3e1fa2f20be63bf7ed6d263aefaf61cd8fb` |
+| 2 | `theorem` | [thetaPhiDecayConstant_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DecayScratch.lean/declarations/thetaphidecayconstant-positive.md) | 10 | `result-track:7a04e3487e502c434985c076caddb3a8a660cf5d0cbfd2b26c73bc98acb85929` |
+| 3 | `theorem` | [thetaPhi_le_superexp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DecayScratch.lean/declarations/thetaphi-le-superexp.md) | 18 | `result-track:aa8a78df4721b73fc13fe13e2f84bf0e8693fd109dd73ce0cf19f9f1f0f02568` |
+| 4 | `theorem` | [thirteen_mul_le_half_pi_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DecayScratch.lean/declarations/thirteen-mul-le-half-pi-exp.md) | 54 | `result-track:93ee0961340d8d9b1549c13b11f83f2ede36aa3ea34888bac35c9850562032ce` |
+| 5 | `theorem` | [thetaPhi_le_exp_neg_four_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DecayScratch.lean/declarations/thetaphi-le-exp-neg-four-mul.md) | 61 | `result-track:103552f39cbbff56efa520fc9d95b04cc46acd8f591db8985d6bc104258ef4e9` |
+| 6 | `theorem` | [thetaPhi_le_exp_neg_two_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DecayScratch.lean/declarations/thetaphi-le-exp-neg-two-mul.md) | 68 | `result-track:5fc5b3cdd22c7deb93bde09bb1867cdd436fc1fff7dfe78ba480b4312491f033` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

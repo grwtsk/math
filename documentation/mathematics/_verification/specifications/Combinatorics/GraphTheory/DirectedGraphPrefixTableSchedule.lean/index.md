@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint`](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Combinatorics.DirectedGraph.PrefixTableCheckpoint`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Action](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/action.md) | 27 | `declaration-track:1d86fd631b4db99ef00e23a0c0aaa822c839c58661877f4c60eed7f014c40d6e` |
-| 2 | `abbrev` | [ValidRootedState](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/validrootedstate.md) | 32 | `declaration-track:ebc37c827ee728eab47979814e03bf98d364236631b140a4c51d4865c2ae5083` |
-| 3 | `def` | [applyAction](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/applyaction.md) | 36 | `declaration-track:7d53dd477ffefdf9c3fc29869b15364d3e534f9f7618a0f8d5e7b908b9e678d1` |
-| 4 | `def` | [executeAt](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/executeat.md) | 42 | `declaration-track:bee676bec91d2072e5191dbfdcfe328d631ebddb5e3407a6eddb7ca4cf023256` |
-| 5 | `def` | [execute](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/execute.md) | 46 | `declaration-track:3a70656cf42869d03d4ca35689381ab20112e246cacb7ba70a23a277456ce1d7` |
-| 6 | `def` | [projectBatches](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/projectbatches.md) | 50 | `declaration-track:cd02dbe2ab13f8543088c8e723414598a290bf19348d30beb5bcbdb031926f8d` |
-| 7 | `theorem` | [execute_root](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/execute-root.md) | 54 | `result-track:2e664e1426485585628921f16559af4144aee1c2eae99422578b6f3527f19b7c` |
-| 8 | `theorem` | [execute_wellFormed](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/execute-wellformed.md) | 58 | `result-track:5b6afc20d2fffcbd43c8e4c0bcc915ca2d5eddbc54eeb42528719c4c872db436` |
-| 9 | `theorem` | [execute_nil](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/execute-nil.md) | 62 | `result-track:4a5e2c359903f9e537c91729dd02455f72385faa44f81332f06560d51f5ba0b7` |
-| 10 | `theorem` | [decode_executeAt](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/decode-executeat.md) | 66 | `result-track:97f80b761025014590f98f0417a8e1f995880ea0d32c3813d5b0ee29a5cc26bb` |
-| 11 | `theorem` | [decode_execute](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/decode-execute.md) | 92 | `result-track:e59a863c946b4f91d28981423142f73e7be9ddf3498f57ebccd3c3a92818d9be` |
-| 12 | `theorem` | [execute_histories](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/execute-histories.md) | 100 | `result-track:194c29b1e76e114194b3d1b0fe379ea657138a45168abf46177c4314863aa30c` |
+| 1 | `abbrev` | [Action](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/action.md) | 27 | `declaration-track:1d86fd631b4db99ef00e23a0c0aaa822c839c58661877f4c60eed7f014c40d6e` |
+| 2 | `abbrev` | [ValidRootedState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/validrootedstate.md) | 32 | `declaration-track:ebc37c827ee728eab47979814e03bf98d364236631b140a4c51d4865c2ae5083` |
+| 3 | `def` | [applyAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/applyaction.md) | 36 | `declaration-track:7d53dd477ffefdf9c3fc29869b15364d3e534f9f7618a0f8d5e7b908b9e678d1` |
+| 4 | `def` | [executeAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/executeat.md) | 42 | `declaration-track:bee676bec91d2072e5191dbfdcfe328d631ebddb5e3407a6eddb7ca4cf023256` |
+| 5 | `def` | [execute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/execute.md) | 46 | `declaration-track:3a70656cf42869d03d4ca35689381ab20112e246cacb7ba70a23a277456ce1d7` |
+| 6 | `def` | [projectBatches](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/projectbatches.md) | 50 | `declaration-track:cd02dbe2ab13f8543088c8e723414598a290bf19348d30beb5bcbdb031926f8d` |
+| 7 | `theorem` | [execute_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/execute-root.md) | 54 | `result-track:2e664e1426485585628921f16559af4144aee1c2eae99422578b6f3527f19b7c` |
+| 8 | `theorem` | [execute_wellFormed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/execute-wellformed.md) | 58 | `result-track:5b6afc20d2fffcbd43c8e4c0bcc915ca2d5eddbc54eeb42528719c4c872db436` |
+| 9 | `theorem` | [execute_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/execute-nil.md) | 62 | `result-track:4a5e2c359903f9e537c91729dd02455f72385faa44f81332f06560d51f5ba0b7` |
+| 10 | `theorem` | [decode_executeAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/decode-executeat.md) | 66 | `result-track:97f80b761025014590f98f0417a8e1f995880ea0d32c3813d5b0ee29a5cc26bb` |
+| 11 | `theorem` | [decode_execute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/decode-execute.md) | 92 | `result-track:e59a863c946b4f91d28981423142f73e7be9ddf3498f57ebccd3c3a92818d9be` |
+| 12 | `theorem` | [execute_histories](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/declarations/execute-histories.md) | 100 | `result-track:194c29b1e76e114194b3d1b0fe379ea657138a45168abf46177c4314863aa30c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

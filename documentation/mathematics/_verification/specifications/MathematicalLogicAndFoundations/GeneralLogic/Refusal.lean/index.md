@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Refusal.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Refusal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Refusal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Refusal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BoundaryRefusal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Refusal.lean/declarations/boundaryrefusal.md) | 7 | `declaration-track:2c159c172c2a542e4e48621399503fa86e7c2a80ace57d8d643ae7c546db0201` |
-| 2 | `def` | [BoundaryRefusal.supported](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Refusal.lean/declarations/boundaryrefusal-supported.md) | 13 | `declaration-track:f6367ad593594f3882125d91ac149f91eb6a4f915d0a4484f3db10016b1b8f92` |
-| 3 | `theorem` | [unsupported_refusal_has_no_witness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Refusal.lean/declarations/unsupported-refusal-has-no-witness.md) | 16 | `result-track:1405cd32cf9ac2928cd2e84c7bbd9447740f4e7b8494760b2c4e014ce78edf21` |
+| 1 | `structure` | [BoundaryRefusal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Refusal.lean/declarations/boundaryrefusal.md) | 7 | `declaration-track:2c159c172c2a542e4e48621399503fa86e7c2a80ace57d8d643ae7c546db0201` |
+| 2 | `def` | [BoundaryRefusal.supported](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Refusal.lean/declarations/boundaryrefusal-supported.md) | 13 | `declaration-track:f6367ad593594f3882125d91ac149f91eb6a4f915d0a4484f3db10016b1b8f92` |
+| 3 | `theorem` | [unsupported_refusal_has_no_witness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Refusal.lean/declarations/unsupported-refusal-has-no-witness.md) | 16 | `result-track:1405cd32cf9ac2928cd2e84c7bbd9447740f4e7b8494760b2c4e014ce78edf21` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

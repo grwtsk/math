@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/WholeSpectralBinarySignature.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/WholeSpectralBinarySignature.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/WholeSpectralBinarySignature.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/WholeSpectralBinarySignature.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Folder.Boolean.NAND` — import line 21; external provider; requires a separately pinned dependency.
 - `Folder.Catalan.Tree` — import line 22; external provider; requires a separately pinned dependency.
 - `Folder.Spectral.Expansion` — import line 23; external provider; requires a separately pinned dependency.
-- [Binary Grammar And Tree Evaluation](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BinaryGrammarAndTreeEvaluation.lean/index.md) — import line 24; pinned internal source present.
+- [Binary Grammar And Tree Evaluation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BinaryGrammarAndTreeEvaluation.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpectralShellExpansionSignature](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/WholeSpectralBinarySignature.lean/declarations/spectralshellexpansionsignature.md) | 46 | `declaration-track:e9e50bd3dc70dadb6b6edab6dc5d9f3b122009c04676717326f5f09945301962` |
-| 2 | `def` | [SpectralShellExpansionSignature.toGrammar](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/WholeSpectralBinarySignature.lean/declarations/spectralshellexpansionsignature-togrammar.md) | 51 | `declaration-track:53e371f94b949798f12261f98fdba446aa10be0f3004e9f8f847740a79ad31ec` |
+| 1 | `structure` | [SpectralShellExpansionSignature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/WholeSpectralBinarySignature.lean/declarations/spectralshellexpansionsignature.md) | 46 | `declaration-track:e9e50bd3dc70dadb6b6edab6dc5d9f3b122009c04676717326f5f09945301962` |
+| 2 | `def` | [SpectralShellExpansionSignature.toGrammar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/WholeSpectralBinarySignature.lean/declarations/spectralshellexpansionsignature-togrammar.md) | 51 | `declaration-track:53e371f94b949798f12261f98fdba446aa10be0f3004e9f8f847740a79ad31ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

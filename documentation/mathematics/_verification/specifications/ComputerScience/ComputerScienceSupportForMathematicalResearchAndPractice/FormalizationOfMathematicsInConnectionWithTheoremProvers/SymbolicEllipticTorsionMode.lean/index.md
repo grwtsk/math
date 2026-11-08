@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicEllipticTorsionMode.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicEllipticTorsionMode.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicEllipticTorsionMode.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicEllipticTorsionMode.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [EllipticTorsionMode](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicEllipticTorsionMode.lean/declarations/elliptictorsionmode.md) | 13 | `declaration-track:ed8634757f1e5e40f6036d8ef93a64b90f831696efb5c8844775c943aa265e9a` |
-| 2 | `def` | [symbolicTorsionLabel](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicEllipticTorsionMode.lean/declarations/symbolictorsionlabel.md) | 19 | `declaration-track:2f3ea70321d94bb8819628049dfd312e7afa4dc209438198b750a0326535c678` |
-| 3 | `def` | [finiteKSymbolTorsionAnalogueLabel](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicEllipticTorsionMode.lean/declarations/finiteksymboltorsionanaloguelabel.md) | 22 | `declaration-track:dd45b5fc640d8803c8a65a457fa9b0a18e7e0c0d291545090398f84a276ecb06` |
+| 1 | `inductive` | [EllipticTorsionMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicEllipticTorsionMode.lean/declarations/elliptictorsionmode.md) | 13 | `declaration-track:ed8634757f1e5e40f6036d8ef93a64b90f831696efb5c8844775c943aa265e9a` |
+| 2 | `def` | [symbolicTorsionLabel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicEllipticTorsionMode.lean/declarations/symbolictorsionlabel.md) | 19 | `declaration-track:2f3ea70321d94bb8819628049dfd312e7afa4dc209438198b750a0326535c678` |
+| 3 | `def` | [finiteKSymbolTorsionAnalogueLabel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SymbolicEllipticTorsionMode.lean/declarations/finiteksymboltorsionanaloguelabel.md) | 22 | `declaration-track:dd45b5fc640d8803c8a65a457fa9b0a18e7e0c0d291545090398f84a276ecb06` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

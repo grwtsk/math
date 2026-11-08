@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualBoundaryCorrelationNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualBoundaryCorrelationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualBoundaryCorrelationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualBoundaryCorrelationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_correlation_upper_strip_integral](../../../../MeasureAndIntegration/ActualBoundaryCorrelationNamespaced.lean/declarations/actual-correlation-upper-strip-integral.md) | 30 | `result-track:36b0cb49159216cc4d0fc7d118e9e9f97f915b3b066e667bc7cca8b725ca4015` |
-| 2 | `theorem` | [actual_correlation_upper_strip_lower](../../../../MeasureAndIntegration/ActualBoundaryCorrelationNamespaced.lean/declarations/actual-correlation-upper-strip-lower.md) | 61 | `result-track:6c91f8954f38c8326f42c1599e080b8b51e888b24a861be0ad8d92836f1ef3df` |
+| 1 | `theorem` | [actual_correlation_upper_strip_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualBoundaryCorrelationNamespaced.lean/declarations/actual-correlation-upper-strip-integral.md) | 30 | `result-track:36b0cb49159216cc4d0fc7d118e9e9f97f915b3b066e667bc7cca8b725ca4015` |
+| 2 | `theorem` | [actual_correlation_upper_strip_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualBoundaryCorrelationNamespaced.lean/declarations/actual-correlation-upper-strip-lower.md) | 61 | `result-track:6c91f8954f38c8326f42c1599e080b8b51e888b24a861be0ad8d92836f1ef3df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

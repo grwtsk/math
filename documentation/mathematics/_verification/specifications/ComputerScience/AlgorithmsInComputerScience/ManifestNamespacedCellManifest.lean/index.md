@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedCellManifest.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedCellManifest.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedCellManifest.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedCellManifest.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CellManifest](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedCellManifest.lean/declarations/cellmanifest.md) | 26 | `declaration-track:1229a0f3a969e244b039ac6a2bb46a3f20bc7990c50acc1ef8b4113e1ad0034f` |
-| 2 | `structure` | [FabricManifest](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedCellManifest.lean/declarations/fabricmanifest.md) | 37 | `declaration-track:11eb8032716ba55c9fec57884fec2d3ce62bd1e4f3247ddb76c148a6e87f898c` |
-| 3 | `def` | [UniqueCellIds](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedCellManifest.lean/declarations/uniquecellids.md) | 45 | `declaration-track:a2c7f81030e4aba336d2023bfce726386fd6479bcab14315a54f04f68c9502af` |
-| 4 | `def` | [ValidFaceReferences](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedCellManifest.lean/declarations/validfacereferences.md) | 49 | `declaration-track:aa89ce8cf7da7e45101718d3614beb6da0db0a54c4fd87b0c39ef20027868e8e` |
-| 5 | `def` | [StructurallyValid](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedCellManifest.lean/declarations/structurallyvalid.md) | 55 | `declaration-track:5d7f84f8b458211442576d57e3c313d5c1f754657cdcdad89c6f8d5fe158e555` |
-| 6 | `theorem` | [uniqueCellIds_of_structurallyValid](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedCellManifest.lean/declarations/uniquecellids-of-structurallyvalid.md) | 58 | `result-track:7712c7eb39b965657ce4a602dd91d23d1d44c89e0d6f4f4d5c54fe87e86e2b08` |
-| 7 | `theorem` | [validFaceReferences_of_structurallyValid](../../../../../ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedCellManifest.lean/declarations/validfacereferences-of-structurallyvalid.md) | 64 | `result-track:7156e7119991d4506224a9adbdfd75d6e9e7868951a375ef2122b1b8e7657d17` |
+| 1 | `structure` | [CellManifest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedCellManifest.lean/declarations/cellmanifest.md) | 26 | `declaration-track:1229a0f3a969e244b039ac6a2bb46a3f20bc7990c50acc1ef8b4113e1ad0034f` |
+| 2 | `structure` | [FabricManifest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedCellManifest.lean/declarations/fabricmanifest.md) | 37 | `declaration-track:11eb8032716ba55c9fec57884fec2d3ce62bd1e4f3247ddb76c148a6e87f898c` |
+| 3 | `def` | [UniqueCellIds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedCellManifest.lean/declarations/uniquecellids.md) | 45 | `declaration-track:a2c7f81030e4aba336d2023bfce726386fd6479bcab14315a54f04f68c9502af` |
+| 4 | `def` | [ValidFaceReferences](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedCellManifest.lean/declarations/validfacereferences.md) | 49 | `declaration-track:aa89ce8cf7da7e45101718d3614beb6da0db0a54c4fd87b0c39ef20027868e8e` |
+| 5 | `def` | [StructurallyValid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedCellManifest.lean/declarations/structurallyvalid.md) | 55 | `declaration-track:5d7f84f8b458211442576d57e3c313d5c1f754657cdcdad89c6f8d5fe158e555` |
+| 6 | `theorem` | [uniqueCellIds_of_structurallyValid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedCellManifest.lean/declarations/uniquecellids-of-structurallyvalid.md) | 58 | `result-track:7712c7eb39b965657ce4a602dd91d23d1d44c89e0d6f4f4d5c54fe87e86e2b08` |
+| 7 | `theorem` | [validFaceReferences_of_structurallyValid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ManifestNamespacedCellManifest.lean/declarations/validfacereferences-of-structurallyvalid.md) | 64 | `result-track:7156e7119991d4506224a9adbdfd75d6e9e7868951a375ef2122b1b8e7657d17` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

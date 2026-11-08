@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBaseChangeNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBaseChangeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBaseChangeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBaseChangeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [mem_subfield_of_mul_eq_one_of_mem_subfield_right](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBaseChangeNamespaced.lean/declarations/mem-subfield-of-mul-eq-one-of-mem-subfield-right.md) | 37 | `result-track:0c08b883c86f3bda22db4eca55443736c0b2a9af74a56bcecaa718d1676f0670` |
-| 2 | `lemma` | [mem_subfield_of_mul_eq_one_of_mem_subfield_left](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBaseChangeNamespaced.lean/declarations/mem-subfield-of-mul-eq-one-of-mem-subfield-left.md) | 59 | `result-track:8c9ad2f19e89ab1fcfdd4d99b7234de07b549a6ca1e3dcd64a9a576077cba313` |
+| 1 | `lemma` | [mem_subfield_of_mul_eq_one_of_mem_subfield_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBaseChangeNamespaced.lean/declarations/mem-subfield-of-mul-eq-one-of-mem-subfield-right.md) | 37 | `result-track:0c08b883c86f3bda22db4eca55443736c0b2a9af74a56bcecaa718d1676f0670` |
+| 2 | `lemma` | [mem_subfield_of_mul_eq_one_of_mem_subfield_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBaseChangeNamespaced.lean/declarations/mem-subfield-of-mul-eq-one-of-mem-subfield-left.md) | 59 | `result-track:8c9ad2f19e89ab1fcfdd4d99b7234de07b549a6ca1e3dcd64a9a576077cba313` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ExtrClosure.lean/index.md) · [Full source](../../../../GeneralTopology/ExtrClosure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsMaxOn.closure](../../../../GeneralTopology/ExtrClosure.lean/declarations/ismaxon-closure.md) | 25 | `result-track:91154ef1a2740705a615c929cd3e91de80267b1164b57c69504e09ab75ae870e` |
-| 2 | `theorem` | [IsMinOn.closure](../../../../GeneralTopology/ExtrClosure.lean/declarations/isminon-closure.md) | 29 | `result-track:ea22bf35519cdb35eb1d4ea67d59bcb9a4923fb061ca9575768979d332c202b9` |
-| 3 | `theorem` | [IsExtrOn.closure](../../../../GeneralTopology/ExtrClosure.lean/declarations/isextron-closure.md) | 33 | `result-track:94d6c0c6c451185692a5eff9220810005022ad811a5c2ede1e5934178c62af40` |
-| 4 | `theorem` | [IsLocalMaxOn.closure](../../../../GeneralTopology/ExtrClosure.lean/declarations/islocalmaxon-closure.md) | 37 | `result-track:496945b90aed9b902cce4a1be12d2b217e9b79bdcbfd7bfef711cba806abc537` |
-| 5 | `theorem` | [IsLocalMinOn.closure](../../../../GeneralTopology/ExtrClosure.lean/declarations/islocalminon-closure.md) | 48 | `result-track:4c6301cdc7949aeeb9e4b1e18d359be50b3f58befdad2a439e569de97d49723d` |
-| 6 | `theorem` | [IsLocalExtrOn.closure](../../../../GeneralTopology/ExtrClosure.lean/declarations/islocalextron-closure.md) | 52 | `result-track:6be36aafb8f015e9a150c177ba6c9dc5f51e91acf22b8f9649b49e3e00a96a5a` |
+| 1 | `theorem` | [IsMaxOn.closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosure.lean/declarations/ismaxon-closure.md) | 25 | `result-track:91154ef1a2740705a615c929cd3e91de80267b1164b57c69504e09ab75ae870e` |
+| 2 | `theorem` | [IsMinOn.closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosure.lean/declarations/isminon-closure.md) | 29 | `result-track:ea22bf35519cdb35eb1d4ea67d59bcb9a4923fb061ca9575768979d332c202b9` |
+| 3 | `theorem` | [IsExtrOn.closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosure.lean/declarations/isextron-closure.md) | 33 | `result-track:94d6c0c6c451185692a5eff9220810005022ad811a5c2ede1e5934178c62af40` |
+| 4 | `theorem` | [IsLocalMaxOn.closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosure.lean/declarations/islocalmaxon-closure.md) | 37 | `result-track:496945b90aed9b902cce4a1be12d2b217e9b79bdcbfd7bfef711cba806abc537` |
+| 5 | `theorem` | [IsLocalMinOn.closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosure.lean/declarations/islocalminon-closure.md) | 48 | `result-track:4c6301cdc7949aeeb9e4b1e18d359be50b3f58befdad2a439e569de97d49723d` |
+| 6 | `theorem` | [IsLocalExtrOn.closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosure.lean/declarations/islocalextron-closure.md) | 52 | `result-track:6be36aafb8f015e9a150c177ba6c9dc5f51e91acf22b8f9649b49e3e00a96a5a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

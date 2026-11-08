@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MechanismPackingRecurrenceRuleControls.lean/index.md) · [Full source](../../../../GeneralTopology/MechanismPackingRecurrenceRuleControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MechanismPackingRecurrenceRuleControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MechanismPackingRecurrenceRuleControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.MechanismPackingRecurrenceRule`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MechanismPackingRecurrenceRule.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.MechanismPackingRecurrenceRule`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MechanismPackingRecurrenceRule.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [recurrence_program_has_no_stage_positivity_obligation](../../../../GeneralTopology/MechanismPackingRecurrenceRuleControls.lean/declarations/recurrence-program-has-no-stage-positivity-obligation.md) | 15 | `result-track:325da9f90f3dc4efd2439ea351bec9c74a33866aae5fa27e970c29d14633a7fe` |
-| 2 | `theorem` | [recurrence_program_has_exact_two_point_memory](../../../../GeneralTopology/MechanismPackingRecurrenceRuleControls.lean/declarations/recurrence-program-has-exact-two-point-memory.md) | 26 | `result-track:8f1453afe83225e22c74c3579ca41ea3607c2121208fbffe272a2542a24141ea` |
+| 1 | `theorem` | [recurrence_program_has_no_stage_positivity_obligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MechanismPackingRecurrenceRuleControls.lean/declarations/recurrence-program-has-no-stage-positivity-obligation.md) | 15 | `result-track:325da9f90f3dc4efd2439ea351bec9c74a33866aae5fa27e970c29d14633a7fe` |
+| 2 | `theorem` | [recurrence_program_has_exact_two_point_memory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MechanismPackingRecurrenceRuleControls.lean/declarations/recurrence-program-has-exact-two-point-memory.md) | 26 | `result-track:8f1453afe83225e22c74c3579ca41ea3607c2121208fbffe272a2542a24141ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

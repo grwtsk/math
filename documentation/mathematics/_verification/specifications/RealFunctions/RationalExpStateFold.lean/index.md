@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/RationalExpStateFold.lean/index.md) · [Full source](../../../../RealFunctions/RationalExpStateFold.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.BigOperators.IndexedStateFold`](../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndexedStateFold.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.ErrorBounds.RationalPowerValue`](../../../../RealFunctions/RationalPowerValue.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Algebra.BigOperators.IndexedStateFold`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IndexedStateFold.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.RationalPowerValue`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalPowerValue.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,24 +58,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [TaylorState](../../../../RealFunctions/RationalExpStateFold.lean/declarations/taylorstate.md) | 25 | `declaration-track:47d550bc5c1271474916eee52cfda5089124801f8c4e42c7eb8a3d9b79c37d42` |
-| 2 | `def` | [taylorStep](../../../../RealFunctions/RationalExpStateFold.lean/declarations/taylorstep.md) | 27 | `declaration-track:d4dc0078a29c07688bf0bfe5f796e4fa8ce2c3a43e370d7716af61e6328ac08f` |
-| 3 | `def` | [taylorSpec](../../../../RealFunctions/RationalExpStateFold.lean/declarations/taylorspec.md) | 31 | `declaration-track:2743f0c2b1910a1fc0333f5d168c3b1743d6e919ee2bb0f641d92dba501ce0e8` |
-| 4 | `theorem` | [taylorStep_spec](../../../../RealFunctions/RationalExpStateFold.lean/declarations/taylorstep-spec.md) | 34 | `result-track:a452ef3f32005a25fb71055a496a86dfb1dae309f7af1df37f8c29d14bc52eea` |
-| 5 | `def` | [taylor](../../../../RealFunctions/RationalExpStateFold.lean/declarations/taylor.md) | 39 | `declaration-track:fe2431cb2529dc92ec3be014046dabdf82a0def4a5957f88922b30cd4727d0df` |
-| 6 | `theorem` | [taylor_eq](../../../../RealFunctions/RationalExpStateFold.lean/declarations/taylor-eq.md) | 43 | `result-track:9ad3660862136efa570622b89d2e371ebb12a12f852348df1e04cd0de208218c` |
-| 7 | `def` | [squareStep](../../../../RealFunctions/RationalExpStateFold.lean/declarations/squarestep.md) | 50 | `declaration-track:c58ea3c7cf2fbb730c8b743df231ef2437b0969cd89ba596ef87aaf593f615e3` |
-| 8 | `def` | [initial](../../../../RealFunctions/RationalExpStateFold.lean/declarations/initial.md) | 55 | `declaration-track:6e5ec53f797a528a1b9026cd5f8d4383cbd1c76ce3739ac660b5cb29d6d1a7dd` |
-| 9 | `def` | [squareSpec](../../../../RealFunctions/RationalExpStateFold.lean/declarations/squarespec.md) | 61 | `declaration-track:d6268e19459d13b6cad53ca0433fd593ba71eae495e567e973a497c526adf5e3` |
-| 10 | `theorem` | [initial_eq](../../../../RealFunctions/RationalExpStateFold.lean/declarations/initial-eq.md) | 69 | `result-track:f0771a344587c72993992f0e146d96c175db011a6fbb60369f6c9e30fda92ba1` |
-| 11 | `theorem` | [squareStep_spec](../../../../RealFunctions/RationalExpStateFold.lean/declarations/squarestep-spec.md) | 74 | `result-track:6b351f8a4259a1c2a36d6c1e3fc83679456ea931cbc9e595fc1355c6fd4cca46` |
-| 12 | `def` | [exponential](../../../../RealFunctions/RationalExpStateFold.lean/declarations/exponential.md) | 80 | `declaration-track:852cf109a512e401db1b716b334a47c3152470a561e16a6f40fd8802ace6b900` |
-| 13 | `theorem` | [outward_congr](../../../../RealFunctions/RationalExpStateFold.lean/declarations/outward-congr.md) | 84 | `result-track:af58e16e85d5b264e34a32252eca4729543c007b9fb35be942480b1e5b528b53` |
-| 14 | `theorem` | [exponential_eq](../../../../RealFunctions/RationalExpStateFold.lean/declarations/exponential-eq.md) | 96 | `result-track:57776caeee58640488cafc2c7866020669ef170cd1973afb8f12ec4ac111ffd9` |
-| 15 | `def` | [withLog](../../../../RealFunctions/RationalExpStateFold.lean/declarations/withlog.md) | 114 | `declaration-track:1ef76445990c9112aad15f1c27c664eee63067f4a7e803e1c00f8d6fcb3888e0` |
-| 16 | `def` | [powerValue](../../../../RealFunctions/RationalExpStateFold.lean/declarations/powervalue.md) | 119 | `declaration-track:7a6cb6d1c3fddeb0ddfeeac872c36b06748e565c81d9b395601a4b7874e08a6a` |
-| 17 | `theorem` | [powerValue_eq](../../../../RealFunctions/RationalExpStateFold.lean/declarations/powervalue-eq.md) | 123 | `result-track:4062ab8de670aa009351cbb4228f5b8a3504fc0a73591e4fcab796a77b5167e6` |
-| 18 | `theorem` | [powerValue_sound](../../../../RealFunctions/RationalExpStateFold.lean/declarations/powervalue-sound.md) | 131 | `result-track:2fee877b2d0e93c531220cfbf625b1c26b0221e04d9cab018d84705e7a9a9380` |
+| 1 | `abbrev` | [TaylorState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/declarations/taylorstate.md) | 25 | `declaration-track:47d550bc5c1271474916eee52cfda5089124801f8c4e42c7eb8a3d9b79c37d42` |
+| 2 | `def` | [taylorStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/declarations/taylorstep.md) | 27 | `declaration-track:d4dc0078a29c07688bf0bfe5f796e4fa8ce2c3a43e370d7716af61e6328ac08f` |
+| 3 | `def` | [taylorSpec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/declarations/taylorspec.md) | 31 | `declaration-track:2743f0c2b1910a1fc0333f5d168c3b1743d6e919ee2bb0f641d92dba501ce0e8` |
+| 4 | `theorem` | [taylorStep_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/declarations/taylorstep-spec.md) | 34 | `result-track:a452ef3f32005a25fb71055a496a86dfb1dae309f7af1df37f8c29d14bc52eea` |
+| 5 | `def` | [taylor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/declarations/taylor.md) | 39 | `declaration-track:fe2431cb2529dc92ec3be014046dabdf82a0def4a5957f88922b30cd4727d0df` |
+| 6 | `theorem` | [taylor_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/declarations/taylor-eq.md) | 43 | `result-track:9ad3660862136efa570622b89d2e371ebb12a12f852348df1e04cd0de208218c` |
+| 7 | `def` | [squareStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/declarations/squarestep.md) | 50 | `declaration-track:c58ea3c7cf2fbb730c8b743df231ef2437b0969cd89ba596ef87aaf593f615e3` |
+| 8 | `def` | [initial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/declarations/initial.md) | 55 | `declaration-track:6e5ec53f797a528a1b9026cd5f8d4383cbd1c76ce3739ac660b5cb29d6d1a7dd` |
+| 9 | `def` | [squareSpec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/declarations/squarespec.md) | 61 | `declaration-track:d6268e19459d13b6cad53ca0433fd593ba71eae495e567e973a497c526adf5e3` |
+| 10 | `theorem` | [initial_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/declarations/initial-eq.md) | 69 | `result-track:f0771a344587c72993992f0e146d96c175db011a6fbb60369f6c9e30fda92ba1` |
+| 11 | `theorem` | [squareStep_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/declarations/squarestep-spec.md) | 74 | `result-track:6b351f8a4259a1c2a36d6c1e3fc83679456ea931cbc9e595fc1355c6fd4cca46` |
+| 12 | `def` | [exponential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/declarations/exponential.md) | 80 | `declaration-track:852cf109a512e401db1b716b334a47c3152470a561e16a6f40fd8802ace6b900` |
+| 13 | `theorem` | [outward_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/declarations/outward-congr.md) | 84 | `result-track:af58e16e85d5b264e34a32252eca4729543c007b9fb35be942480b1e5b528b53` |
+| 14 | `theorem` | [exponential_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/declarations/exponential-eq.md) | 96 | `result-track:57776caeee58640488cafc2c7866020669ef170cd1973afb8f12ec4ac111ffd9` |
+| 15 | `def` | [withLog](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/declarations/withlog.md) | 114 | `declaration-track:1ef76445990c9112aad15f1c27c664eee63067f4a7e803e1c00f8d6fcb3888e0` |
+| 16 | `def` | [powerValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/declarations/powervalue.md) | 119 | `declaration-track:7a6cb6d1c3fddeb0ddfeeac872c36b06748e565c81d9b395601a4b7874e08a6a` |
+| 17 | `theorem` | [powerValue_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/declarations/powervalue-eq.md) | 123 | `result-track:4062ab8de670aa009351cbb4228f5b8a3504fc0a73591e4fcab796a77b5167e6` |
+| 18 | `theorem` | [powerValue_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalExpStateFold.lean/declarations/powervalue-sound.md) | 131 | `result-track:2fee877b2d0e93c531220cfbf625b1c26b0221e04d9cab018d84705e7a9a9380` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

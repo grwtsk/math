@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrect.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [torsion_resolved_means_zero_residue](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrect.lean/declarations/torsion-resolved-means-zero-residue.md) | 7 | `result-track:73eac33f24a69cb6ed91657946e8d9ac62ea1fe5d50252d51e9a23ad8bbf52ff` |
-| 2 | `theorem` | [natural_torsion_restriction_is_admitted](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrect.lean/declarations/natural-torsion-restriction-is-admitted.md) | 13 | `result-track:4a21010a02b2b128e6646a37f7604be9043d089b7b9e11c211520acf41a71235` |
-| 3 | `theorem` | [torsion_witness_bridge_side](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrect.lean/declarations/torsion-witness-bridge-side.md) | 19 | `result-track:0c2395ad93b50a439469694b63d02aa52df5109d0a4f53391338b4f00fa68473` |
+| 1 | `theorem` | [torsion_resolved_means_zero_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrect.lean/declarations/torsion-resolved-means-zero-residue.md) | 7 | `result-track:73eac33f24a69cb6ed91657946e8d9ac62ea1fe5d50252d51e9a23ad8bbf52ff` |
+| 2 | `theorem` | [natural_torsion_restriction_is_admitted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrect.lean/declarations/natural-torsion-restriction-is-admitted.md) | 13 | `result-track:4a21010a02b2b128e6646a37f7604be9043d089b7b9e11c211520acf41a71235` |
+| 3 | `theorem` | [torsion_witness_bridge_side](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrect.lean/declarations/torsion-witness-bridge-side.md) | 19 | `result-track:0c2395ad93b50a439469694b63d02aa52df5109d0a4f53391338b4f00fa68473` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Misc.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Misc.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Misc.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Misc.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [submatrix_succAbove_det_eq_negOnePow_submatrix_succAbove_det](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Misc.lean/declarations/submatrix-succabove-det-eq-negonepow-submatrix-succabove-det-source-edition-2.md) | 23 | `result-track:c023d78ce843dc2a633803a5961e0a88e48e36c648562398852830893817ad6f` |
-| 2 | `theorem` | [submatrix_succAbove_det_eq_negOnePow_submatrix_succAbove_det'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Misc.lean/declarations/submatrix-succabove-det-eq-negonepow-submatrix-succabove-det.md) | 53 | `result-track:0fd764a9bd1b7d091a57b89a9295468d43984cdccedc1b9a3b1d119134c75302` |
-| 3 | `theorem` | [det_eq_sum_column_mul_submatrix_succAbove_succAbove_det](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Misc.lean/declarations/det-eq-sum-column-mul-submatrix-succabove-succabove-det.md) | 66 | `result-track:69fe5da007fc1c643611b73b48aa97fe5c6e0994f5e328af1689de01155dfd20` |
-| 4 | `theorem` | [det_eq_sum_row_mul_submatrix_succAbove_succAbove_det](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Misc.lean/declarations/det-eq-sum-row-mul-submatrix-succabove-succabove-det.md) | 82 | `result-track:9b15287c67c08c25b9bf10003c2e32b78fcce91a64d33ce694fd5d9ca9f42f10` |
+| 1 | `theorem` | [submatrix_succAbove_det_eq_negOnePow_submatrix_succAbove_det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Misc.lean/declarations/submatrix-succabove-det-eq-negonepow-submatrix-succabove-det-source-edition-2.md) | 23 | `result-track:c023d78ce843dc2a633803a5961e0a88e48e36c648562398852830893817ad6f` |
+| 2 | `theorem` | [submatrix_succAbove_det_eq_negOnePow_submatrix_succAbove_det'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Misc.lean/declarations/submatrix-succabove-det-eq-negonepow-submatrix-succabove-det.md) | 53 | `result-track:0fd764a9bd1b7d091a57b89a9295468d43984cdccedc1b9a3b1d119134c75302` |
+| 3 | `theorem` | [det_eq_sum_column_mul_submatrix_succAbove_succAbove_det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Misc.lean/declarations/det-eq-sum-column-mul-submatrix-succabove-succabove-det.md) | 66 | `result-track:69fe5da007fc1c643611b73b48aa97fe5c6e0994f5e328af1689de01155dfd20` |
+| 4 | `theorem` | [det_eq_sum_row_mul_submatrix_succAbove_succAbove_det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Misc.lean/declarations/det-eq-sum-row-mul-submatrix-succabove-succabove-det.md) | 82 | `result-track:9b15287c67c08c25b9bf10003c2e32b78fcce91a64d33ce694fd5d9ca9f42f10` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

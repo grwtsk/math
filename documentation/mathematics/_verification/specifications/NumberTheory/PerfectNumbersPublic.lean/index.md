@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PerfectNumbersPublic.lean/index.md) · [Full source](../../../../NumberTheory/PerfectNumbersPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PerfectNumbersPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PerfectNumbersPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sigma_two_pow_eq_mersenne_succ](../../../../NumberTheory/PerfectNumbersPublic.lean/declarations/sigma-two-pow-eq-mersenne-succ.md) | 40 | `result-track:d19dac480f8bc5f7fa034417c61c0f6d6c1edc696428453ee99d470057294a49` |
-| 2 | `theorem` | [perfect_two_pow_mul_mersenne_of_prime](../../../../NumberTheory/PerfectNumbersPublic.lean/declarations/perfect-two-pow-mul-mersenne-of-prime.md) | 45 | `result-track:5448140506fb9932390ef9471d6f80a34e58ed54b056e29d03280c0898e0b798` |
-| 3 | `theorem` | [ne_zero_of_prime_mersenne](../../../../NumberTheory/PerfectNumbersPublic.lean/declarations/ne-zero-of-prime-mersenne.md) | 54 | `result-track:a804fa28862af94ead05dc3acfc1c4251f7dee2a5110de04a22f4fbf02ed996d` |
-| 4 | `theorem` | [even_two_pow_mul_mersenne_of_prime](../../../../NumberTheory/PerfectNumbersPublic.lean/declarations/even-two-pow-mul-mersenne-of-prime.md) | 58 | `result-track:74a2358d77fd8100ad28d9b696b0c52b33932c8aa17ee3260b259fb5fdc75fd6` |
-| 5 | `theorem` | [eq_two_pow_mul_odd](../../../../NumberTheory/PerfectNumbersPublic.lean/declarations/eq-two-pow-mul-odd.md) | 61 | `result-track:caad448170c56471b516e655c5bad1236dfecdfbbe3748683a926c2cb063050f` |
-| 6 | `theorem` | [eq_two_pow_mul_prime_mersenne_of_even_perfect](../../../../NumberTheory/PerfectNumbersPublic.lean/declarations/eq-two-pow-mul-prime-mersenne-of-even-perfect.md) | 75 | `result-track:4e150c29fa6617105d456730f498cf908c4faaa05bf66c47f68538464668cb40` |
-| 7 | `theorem` | [even_and_perfect_iff](../../../../NumberTheory/PerfectNumbersPublic.lean/declarations/even-and-perfect-iff.md) | 115 | `result-track:4ecc0db699c365be222ac9d320b8fac453768c2e52c4bae33516da5965023092` |
+| 1 | `theorem` | [sigma_two_pow_eq_mersenne_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PerfectNumbersPublic.lean/declarations/sigma-two-pow-eq-mersenne-succ.md) | 40 | `result-track:d19dac480f8bc5f7fa034417c61c0f6d6c1edc696428453ee99d470057294a49` |
+| 2 | `theorem` | [perfect_two_pow_mul_mersenne_of_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PerfectNumbersPublic.lean/declarations/perfect-two-pow-mul-mersenne-of-prime.md) | 45 | `result-track:5448140506fb9932390ef9471d6f80a34e58ed54b056e29d03280c0898e0b798` |
+| 3 | `theorem` | [ne_zero_of_prime_mersenne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PerfectNumbersPublic.lean/declarations/ne-zero-of-prime-mersenne.md) | 54 | `result-track:a804fa28862af94ead05dc3acfc1c4251f7dee2a5110de04a22f4fbf02ed996d` |
+| 4 | `theorem` | [even_two_pow_mul_mersenne_of_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PerfectNumbersPublic.lean/declarations/even-two-pow-mul-mersenne-of-prime.md) | 58 | `result-track:74a2358d77fd8100ad28d9b696b0c52b33932c8aa17ee3260b259fb5fdc75fd6` |
+| 5 | `theorem` | [eq_two_pow_mul_odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PerfectNumbersPublic.lean/declarations/eq-two-pow-mul-odd.md) | 61 | `result-track:caad448170c56471b516e655c5bad1236dfecdfbbe3748683a926c2cb063050f` |
+| 6 | `theorem` | [eq_two_pow_mul_prime_mersenne_of_even_perfect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PerfectNumbersPublic.lean/declarations/eq-two-pow-mul-prime-mersenne-of-even-perfect.md) | 75 | `result-track:4e150c29fa6617105d456730f498cf908c4faaa05bf66c47f68538464668cb40` |
+| 7 | `theorem` | [even_and_perfect_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PerfectNumbersPublic.lean/declarations/even-and-perfect-iff.md) | 115 | `result-track:4ecc0db699c365be222ac9d320b8fac453768c2e52c4bae33516da5965023092` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

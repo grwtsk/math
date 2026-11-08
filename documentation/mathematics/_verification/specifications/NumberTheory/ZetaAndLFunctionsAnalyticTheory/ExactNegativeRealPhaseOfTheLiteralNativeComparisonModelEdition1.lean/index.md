@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNegativeRealPhaseOfTheLiteralNativeComparisonModelEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNegativeRealPhaseOfTheLiteralNativeComparisonModelEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNegativeRealPhaseOfTheLiteralNativeComparisonModelEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNegativeRealPhaseOfTheLiteralNativeComparisonModelEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [literal_phase_norm_exact](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNegativeRealPhaseOfTheLiteralNativeComparisonModelEdition1.lean/declarations/literal-phase-norm-exact.md) | 18 | `result-track:68392e1f90def479b375bca3c863a73c82a354bd2ba032c7d534dafc215e612d` |
-| 2 | `theorem` | [literal_phase_source_coefficient](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNegativeRealPhaseOfTheLiteralNativeComparisonModelEdition1.lean/declarations/literal-phase-source-coefficient.md) | 27 | `result-track:97e27c7716b4ef4be430eb80c2f9afb785a37f6b28c399ea0120f07ccf596280` |
-| 3 | `theorem` | [literal_phase_source_coefficient_negative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNegativeRealPhaseOfTheLiteralNativeComparisonModelEdition1.lean/declarations/literal-phase-source-coefficient-negative.md) | 44 | `result-track:d356c6391e7fabff8ead0b92d32bcf9d95982669b6beb59b5dbcd8e252f3c0dc` |
+| 1 | `theorem` | [literal_phase_norm_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNegativeRealPhaseOfTheLiteralNativeComparisonModelEdition1.lean/declarations/literal-phase-norm-exact.md) | 18 | `result-track:68392e1f90def479b375bca3c863a73c82a354bd2ba032c7d534dafc215e612d` |
+| 2 | `theorem` | [literal_phase_source_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNegativeRealPhaseOfTheLiteralNativeComparisonModelEdition1.lean/declarations/literal-phase-source-coefficient.md) | 27 | `result-track:97e27c7716b4ef4be430eb80c2f9afb785a37f6b28c399ea0120f07ccf596280` |
+| 3 | `theorem` | [literal_phase_source_coefficient_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactNegativeRealPhaseOfTheLiteralNativeComparisonModelEdition1.lean/declarations/literal-phase-source-coefficient-negative.md) | 44 | `result-track:d356c6391e7fabff8ead0b92d32bcf9d95982669b6beb59b5dbcd8e252f3c0dc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

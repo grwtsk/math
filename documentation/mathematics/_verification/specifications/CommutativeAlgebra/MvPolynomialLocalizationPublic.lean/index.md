@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [isLocalization](../../../../CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/declarations/islocalization.md) | 44 | `declaration-track:20d494343fd85f85c86b4891d03dfe9e8e4efd9b8dbd0edf8a7f05ece1e76c89` |
-| 2 | `lemma` | [isLocalization_C_mk'](../../../../CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/declarations/islocalization-c-mk.md) | 48 | `result-track:f48b51200dba25225ded185d2b0361668862193f65d69d46c8ed6e776e1dd176` |
-| 3 | `def` | [auxHom](../../../../CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/declarations/auxhom.md) | 66 | `declaration-track:5287c18636348574de67e4d893454c8d5c52bb4c2135652c016c159c20b23cbd` |
-| 4 | `lemma` | [auxHom_mk](../../../../CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/declarations/auxhom-mk.md) | 79 | `result-track:cbf81df9b3a3d086f90f60c4a5d0fce54d61890acad9424978dd652376a86db2` |
-| 5 | `def` | [auxInv](../../../../CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/declarations/auxinv.md) | 85 | `declaration-track:a745aa630737b4a76923cd01bd50498b5321a9006b991271333fd96bc1dea7af` |
-| 6 | `lemma` | [auxHom_auxInv](../../../../CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/declarations/auxhom-auxinv.md) | 95 | `result-track:f434b358cd141aa2d025076957ef7af9680581a3707f12727768a30b9e6fc98a` |
-| 7 | `lemma` | [auxInv_auxHom](../../../../CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/declarations/auxinv-auxhom.md) | 100 | `result-track:ba21d8ba80f4fefeca71d0f90a957c034a3723f258fc3652c59470adda8184aa` |
-| 8 | `def` | [mvPolynomialQuotientEquiv](../../../../CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/declarations/mvpolynomialquotientequiv.md) | 116 | `declaration-track:8e368f01c01a5289404aff11f7a7902c75f01a13890c978a1d645ac959967902` |
-| 9 | `lemma` | [mvPolynomialQuotientEquiv_apply](../../../../CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/declarations/mvpolynomialquotientequiv-apply.md) | 129 | `result-track:e2d732c21618782dcdad1d1038dea3319c9a0c35c535c7cab23c4732c3032b88` |
+| 1 | `instance` | [isLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/declarations/islocalization.md) | 44 | `declaration-track:20d494343fd85f85c86b4891d03dfe9e8e4efd9b8dbd0edf8a7f05ece1e76c89` |
+| 2 | `lemma` | [isLocalization_C_mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/declarations/islocalization-c-mk.md) | 48 | `result-track:f48b51200dba25225ded185d2b0361668862193f65d69d46c8ed6e776e1dd176` |
+| 3 | `def` | [auxHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/declarations/auxhom.md) | 66 | `declaration-track:5287c18636348574de67e4d893454c8d5c52bb4c2135652c016c159c20b23cbd` |
+| 4 | `lemma` | [auxHom_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/declarations/auxhom-mk.md) | 79 | `result-track:cbf81df9b3a3d086f90f60c4a5d0fce54d61890acad9424978dd652376a86db2` |
+| 5 | `def` | [auxInv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/declarations/auxinv.md) | 85 | `declaration-track:a745aa630737b4a76923cd01bd50498b5321a9006b991271333fd96bc1dea7af` |
+| 6 | `lemma` | [auxHom_auxInv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/declarations/auxhom-auxinv.md) | 95 | `result-track:f434b358cd141aa2d025076957ef7af9680581a3707f12727768a30b9e6fc98a` |
+| 7 | `lemma` | [auxInv_auxHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/declarations/auxinv-auxhom.md) | 100 | `result-track:ba21d8ba80f4fefeca71d0f90a957c034a3723f258fc3652c59470adda8184aa` |
+| 8 | `def` | [mvPolynomialQuotientEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/declarations/mvpolynomialquotientequiv.md) | 116 | `declaration-track:8e368f01c01a5289404aff11f7a7902c75f01a13890c978a1d645ac959967902` |
+| 9 | `lemma` | [mvPolynomialQuotientEquiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationPublic.lean/declarations/mvpolynomialquotientequiv-apply.md) | 129 | `result-track:e2d732c21618782dcdad1d1038dea3319c9a0c35c535c7cab23c4732c3032b88` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

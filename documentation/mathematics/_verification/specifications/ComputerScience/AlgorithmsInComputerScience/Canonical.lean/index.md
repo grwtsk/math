@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Canonical.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Canonical.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Canonical.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Canonical.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [idealPrunedTree](../../../../../ComputerScience/AlgorithmsInComputerScience/Canonical.lean/declarations/idealprunedtree.md) | 7 | `declaration-track:063f697db56e5d2aadb25b3d893a14c616b0ab1629b3f5bfa485435551ceb53d` |
-| 2 | `theorem` | [idealPrunedTree_count](../../../../../ComputerScience/AlgorithmsInComputerScience/Canonical.lean/declarations/idealprunedtree-count.md) | 23 | `result-track:d2335d8e9f29ae4d85e8227731024cfc3c78f8816c0683a2e872ded7c33b6e88` |
-| 3 | `structure` | [CompressionRule](../../../../../ComputerScience/AlgorithmsInComputerScience/Canonical.lean/declarations/compressionrule.md) | 27 | `declaration-track:0a52d3b0aac68b02a9f3803cd3fa0a2420835e525731a383686754cb117e973f` |
-| 4 | `def` | [compressionRules](../../../../../ComputerScience/AlgorithmsInComputerScience/Canonical.lean/declarations/compressionrules.md) | 33 | `declaration-track:cdb11de99aaeacfb4e5383882d595ece24a6c8eb25969f5a9b37caa2d427a41b` |
-| 5 | `theorem` | [compressionRules_count](../../../../../ComputerScience/AlgorithmsInComputerScience/Canonical.lean/declarations/compressionrules-count.md) | 48 | `result-track:f1785849348ff606567f46dedc08fa63cd42d82c3375c7e316f62d554d33b195` |
+| 1 | `def` | [idealPrunedTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Canonical.lean/declarations/idealprunedtree.md) | 7 | `declaration-track:063f697db56e5d2aadb25b3d893a14c616b0ab1629b3f5bfa485435551ceb53d` |
+| 2 | `theorem` | [idealPrunedTree_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Canonical.lean/declarations/idealprunedtree-count.md) | 23 | `result-track:d2335d8e9f29ae4d85e8227731024cfc3c78f8816c0683a2e872ded7c33b6e88` |
+| 3 | `structure` | [CompressionRule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Canonical.lean/declarations/compressionrule.md) | 27 | `declaration-track:0a52d3b0aac68b02a9f3803cd3fa0a2420835e525731a383686754cb117e973f` |
+| 4 | `def` | [compressionRules](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Canonical.lean/declarations/compressionrules.md) | 33 | `declaration-track:cdb11de99aaeacfb4e5383882d595ece24a6c8eb25969f5a9b37caa2d427a41b` |
+| 5 | `theorem` | [compressionRules_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Canonical.lean/declarations/compressionrules-count.md) | 48 | `result-track:f1785849348ff606567f46dedc08fa63cd42d82c3375c7e316f62d554d33b195` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

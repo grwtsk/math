@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/OfFunNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/OfFunNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OfFunNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OfFunNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ofFun](../../../../GeneralTopology/OfFunNamespaced.lean/declarations/offun.md) | 36 | `declaration-track:9bb6ea943ec2a7f20a83c1a2a414226cf22045026807f2ac036d4d55f552b7e5` |
-| 2 | `theorem` | [hasBasis_ofFun](../../../../GeneralTopology/OfFunNamespaced.lean/declarations/hasbasis-offun.md) | 51 | `result-track:132f3ae7d5b8f04c3de4a56ecc6c318dc0332ad266221699dde9b80aef735657` |
+| 1 | `def` | [ofFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OfFunNamespaced.lean/declarations/offun.md) | 36 | `declaration-track:9bb6ea943ec2a7f20a83c1a2a414226cf22045026807f2ac036d4d55f552b7e5` |
+| 2 | `theorem` | [hasBasis_ofFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OfFunNamespaced.lean/declarations/hasbasis-offun.md) | 51 | `result-track:132f3ae7d5b8f04c3de4a56ecc6c318dc0332ad266221699dde9b80aef735657` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

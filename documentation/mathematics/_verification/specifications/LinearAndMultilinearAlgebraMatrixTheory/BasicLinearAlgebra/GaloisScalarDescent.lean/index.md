@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalScalarDescent.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalScalarDescent.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coefficientInclusion](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/coefficientinclusion.md) | 41 | `declaration-track:33c599469126fc3d558706f1f9d502426bb2055735218a82d3e4e8d31152277c` |
-| 2 | `theorem` | [coefficientInclusion_tmul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/coefficientinclusion-tmul.md) | 46 | `result-track:16eba9edf69d273751e851e2b8ac4166f6c4325474c66bb6404feb5862fbd7c6` |
-| 3 | `theorem` | [coefficientInclusion_mem_baseChange](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/coefficientinclusion-mem-basechange.md) | 50 | `result-track:939cdd26e02ff310c30e89611d58612e99eed606da935e0e76684c0b2f0e6d07` |
-| 4 | `theorem` | [rationalPart_comap_coefficientInclusion](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/rationalpart-comap-coefficientinclusion.md) | 61 | `result-track:4428b575a589524d00eb98358865c9af9bac73a610ccc67afbd04073756fa340` |
-| 5 | `theorem` | [tensor_defined_over_finiteGalois](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/tensor-defined-over-finitegalois.md) | 79 | `result-track:92ec59199418c575b46bd761717ec3008bb2e7b3b1d924fd764822a7e317a597` |
-| 6 | `theorem` | [scalarConjugate_restrict](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/scalarconjugate-restrict.md) | 96 | `result-track:18a4a0293069cd22d6231eb380e699ecb0651189468227ade408ff7088a114cd` |
-| 7 | `theorem` | [galoisScalarDescent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/galoisscalardescent.md) | 110 | `result-track:ef874f5070325549087af3318c73728bcb71685d4d6ed039f73a7674d7d3aa78` |
-| 8 | `theorem` | [scalarDescentAmbient](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/scalardescentambient.md) | 147 | `result-track:e2791a434182eb5b64b3ab592152f324d3cd02a584264c8b5f9e65f74621bf4f` |
-| 9 | `abbrev` | [AlgebraicNumbers](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/algebraicnumbers.md) | 164 | `declaration-track:ab0bc4271a12a83a2fa1e5b1c25cb187a09e07e14b0d9041664e4574c8c6fd9e` |
-| 10 | `theorem` | [traceDescent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/tracedescent.md) | 171 | `result-track:65c2f5bd41e5b4a0266e25c394f5d200e3ffeddd44ab106dadf27e0ea281b287` |
+| 1 | `def` | [coefficientInclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/coefficientinclusion.md) | 41 | `declaration-track:33c599469126fc3d558706f1f9d502426bb2055735218a82d3e4e8d31152277c` |
+| 2 | `theorem` | [coefficientInclusion_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/coefficientinclusion-tmul.md) | 46 | `result-track:16eba9edf69d273751e851e2b8ac4166f6c4325474c66bb6404feb5862fbd7c6` |
+| 3 | `theorem` | [coefficientInclusion_mem_baseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/coefficientinclusion-mem-basechange.md) | 50 | `result-track:939cdd26e02ff310c30e89611d58612e99eed606da935e0e76684c0b2f0e6d07` |
+| 4 | `theorem` | [rationalPart_comap_coefficientInclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/rationalpart-comap-coefficientinclusion.md) | 61 | `result-track:4428b575a589524d00eb98358865c9af9bac73a610ccc67afbd04073756fa340` |
+| 5 | `theorem` | [tensor_defined_over_finiteGalois](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/tensor-defined-over-finitegalois.md) | 79 | `result-track:92ec59199418c575b46bd761717ec3008bb2e7b3b1d924fd764822a7e317a597` |
+| 6 | `theorem` | [scalarConjugate_restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/scalarconjugate-restrict.md) | 96 | `result-track:18a4a0293069cd22d6231eb380e699ecb0651189468227ade408ff7088a114cd` |
+| 7 | `theorem` | [galoisScalarDescent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/galoisscalardescent.md) | 110 | `result-track:ef874f5070325549087af3318c73728bcb71685d4d6ed039f73a7674d7d3aa78` |
+| 8 | `theorem` | [scalarDescentAmbient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/scalardescentambient.md) | 147 | `result-track:e2791a434182eb5b64b3ab592152f324d3cd02a584264c8b5f9e65f74621bf4f` |
+| 9 | `abbrev` | [AlgebraicNumbers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/algebraicnumbers.md) | 164 | `declaration-track:ab0bc4271a12a83a2fa1e5b1c25cb187a09e07e14b0d9041664e4574c8c6fd9e` |
+| 10 | `theorem` | [traceDescent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/declarations/tracedescent.md) | 171 | `result-track:65c2f5bd41e5b4a0266e25c394f5d200e3ffeddd44ab106dadf27e0ea281b287` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

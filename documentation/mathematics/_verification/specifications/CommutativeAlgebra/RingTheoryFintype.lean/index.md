@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryFintype.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryFintype.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFintype.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFintype.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Finset.univ_of_card_le_two](../../../../CommutativeAlgebra/RingTheoryFintype.lean/declarations/finset-univ-of-card-le-two.md) | 20 | `result-track:1e78ae26eff9e11e908d0b65a755ca499d758e5b22433e0e5147af8b76be5fb1` |
-| 2 | `lemma` | [Finset.univ_of_card_le_three](../../../../CommutativeAlgebra/RingTheoryFintype.lean/declarations/finset-univ-of-card-le-three.md) | 28 | `result-track:409577b6d5ebc2ce8356317d7d20324c39fec0b5bdc4c9c1d5cc3d59ac71a6fa` |
-| 3 | `theorem` | [card_units_lt](../../../../CommutativeAlgebra/RingTheoryFintype.lean/declarations/card-units-lt.md) | 63 | `result-track:a6c8b89582be979098035e43e446d3974571c03ea3527bb119e2830e398d47d1` |
-| 4 | `lemma` | [natCard_units_lt](../../../../CommutativeAlgebra/RingTheoryFintype.lean/declarations/natcard-units-lt.md) | 66 | `result-track:3a7fb27d379f78d4aa1d4543204957f7379634ea82918396831661fb8b842316` |
-| 5 | `lemma` | [orderOf_lt_card](../../../../CommutativeAlgebra/RingTheoryFintype.lean/declarations/orderof-lt-card.md) | 72 | `result-track:910a44fb88d06c8444908ca159eaf90a74314a067c7c79609946c294a122830a` |
-| 6 | `lemma` | [ZMod.orderOf_lt](../../../../CommutativeAlgebra/RingTheoryFintype.lean/declarations/zmod-orderof-lt.md) | 81 | `result-track:ea9760f0e6712a4f713bd45948691d7140c009ceddd73933555b793d6a7a87a6` |
+| 1 | `lemma` | [Finset.univ_of_card_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFintype.lean/declarations/finset-univ-of-card-le-two.md) | 20 | `result-track:1e78ae26eff9e11e908d0b65a755ca499d758e5b22433e0e5147af8b76be5fb1` |
+| 2 | `lemma` | [Finset.univ_of_card_le_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFintype.lean/declarations/finset-univ-of-card-le-three.md) | 28 | `result-track:409577b6d5ebc2ce8356317d7d20324c39fec0b5bdc4c9c1d5cc3d59ac71a6fa` |
+| 3 | `theorem` | [card_units_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFintype.lean/declarations/card-units-lt.md) | 63 | `result-track:a6c8b89582be979098035e43e446d3974571c03ea3527bb119e2830e398d47d1` |
+| 4 | `lemma` | [natCard_units_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFintype.lean/declarations/natcard-units-lt.md) | 66 | `result-track:3a7fb27d379f78d4aa1d4543204957f7379634ea82918396831661fb8b842316` |
+| 5 | `lemma` | [orderOf_lt_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFintype.lean/declarations/orderof-lt-card.md) | 72 | `result-track:910a44fb88d06c8444908ca159eaf90a74314a067c7c79609946c294a122830a` |
+| 6 | `lemma` | [ZMod.orderOf_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFintype.lean/declarations/zmod-orderof-lt.md) | 81 | `result-track:ea9760f0e6712a4f713bd45948691d7140c009ceddd73933555b793d6a7a87a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

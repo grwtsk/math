@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualZeroNormalizedCancellation.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualZeroNormalizedCancellation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualZeroNormalizedCancellation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualZeroNormalizedCancellation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bump_abs_re_norm_le](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualZeroNormalizedCancellation.lean/declarations/bump-abs-re-norm-le.md) | 29 | `result-track:50a5abc86d8b0cdf565d0aab4713e68db1bed61b269172438da659c3c76eecc8` |
-| 2 | `theorem` | [actualInitialPrimeMellin_scaled_norm_bound](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualZeroNormalizedCancellation.lean/declarations/actualinitialprimemellin-scaled-norm-bound.md) | 39 | `result-track:f35856abe3fae4f3b6dcfb6cec8f67a66200b3ba361e02e27c49d6bb3d7f040c` |
-| 3 | `theorem` | [actualInitialPrimeMellin_scaled_tendsto_zero](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualZeroNormalizedCancellation.lean/declarations/actualinitialprimemellin-scaled-tendsto-zero.md) | 97 | `result-track:35db4efbaf330873512a961f0c8a5b17edd6eb1c9bed03edf1715fc0cefb10f5` |
-| 4 | `theorem` | [actualCarrierMellin_scaled_tendsto_zero](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualZeroNormalizedCancellation.lean/declarations/actualcarriermellin-scaled-tendsto-zero.md) | 116 | `result-track:2583d3ed6f78344a29f9267f26d73f544b76c3db283aff6eaa362961599ba920` |
+| 1 | `theorem` | [bump_abs_re_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualZeroNormalizedCancellation.lean/declarations/bump-abs-re-norm-le.md) | 29 | `result-track:50a5abc86d8b0cdf565d0aab4713e68db1bed61b269172438da659c3c76eecc8` |
+| 2 | `theorem` | [actualInitialPrimeMellin_scaled_norm_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualZeroNormalizedCancellation.lean/declarations/actualinitialprimemellin-scaled-norm-bound.md) | 39 | `result-track:f35856abe3fae4f3b6dcfb6cec8f67a66200b3ba361e02e27c49d6bb3d7f040c` |
+| 3 | `theorem` | [actualInitialPrimeMellin_scaled_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualZeroNormalizedCancellation.lean/declarations/actualinitialprimemellin-scaled-tendsto-zero.md) | 97 | `result-track:35db4efbaf330873512a961f0c8a5b17edd6eb1c9bed03edf1715fc0cefb10f5` |
+| 4 | `theorem` | [actualCarrierMellin_scaled_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualZeroNormalizedCancellation.lean/declarations/actualcarriermellin-scaled-tendsto-zero.md) | 116 | `result-track:2583d3ed6f78344a29f9267f26d73f544b76c3db283aff6eaa362961599ba920` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

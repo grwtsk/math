@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSchedulingSignedProfile.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSchedulingSignedProfile.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSchedulingSignedProfile.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSchedulingSignedProfile.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [signedProfile](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSchedulingSignedProfile.lean/declarations/signedprofile.md) | 33 | `declaration-track:34dc72a3ca8dc2abb9b28f76fce829fc1ba8d18476e72c3dffde57698940b0fe` |
-| 2 | `theorem` | [signedProfile_eq_closed_prefix](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSchedulingSignedProfile.lean/declarations/signedprofile-eq-closed-prefix.md) | 39 | `result-track:6217b3de4b7cbae5a3241b40e1387b0d334b9956ec3e044bc2ae76ddbd548ef8` |
-| 3 | `theorem` | [second_endpoint_integral](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSchedulingSignedProfile.lean/declarations/second-endpoint-integral.md) | 47 | `result-track:7e295aa0fde8ce4095b2cdffd5811d4c375937d55a3859598b3cfe5653150fb7` |
-| 4 | `theorem` | [signedProfile_integral_eq_compensated](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSchedulingSignedProfile.lean/declarations/signedprofile-integral-eq-compensated.md) | 67 | `result-track:9f0bac001a57607a34bc25e6e71697cf9356c3c24859d4884e0dcc05ef332d4c` |
-| 5 | `theorem` | [estimate_of_signed_profile_cap](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSchedulingSignedProfile.lean/declarations/estimate-of-signed-profile-cap.md) | 114 | `result-track:2288f61c93b98bbc03cc3514b4381eb4e1421a84e0d7e33a8c2d075ca4de39d0` |
+| 1 | `def` | [signedProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSchedulingSignedProfile.lean/declarations/signedprofile.md) | 33 | `declaration-track:34dc72a3ca8dc2abb9b28f76fce829fc1ba8d18476e72c3dffde57698940b0fe` |
+| 2 | `theorem` | [signedProfile_eq_closed_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSchedulingSignedProfile.lean/declarations/signedprofile-eq-closed-prefix.md) | 39 | `result-track:6217b3de4b7cbae5a3241b40e1387b0d334b9956ec3e044bc2ae76ddbd548ef8` |
+| 3 | `theorem` | [second_endpoint_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSchedulingSignedProfile.lean/declarations/second-endpoint-integral.md) | 47 | `result-track:7e295aa0fde8ce4095b2cdffd5811d4c375937d55a3859598b3cfe5653150fb7` |
+| 4 | `theorem` | [signedProfile_integral_eq_compensated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSchedulingSignedProfile.lean/declarations/signedprofile-integral-eq-compensated.md) | 67 | `result-track:9f0bac001a57607a34bc25e6e71697cf9356c3c24859d4884e0dcc05ef332d4c` |
+| 5 | `theorem` | [estimate_of_signed_profile_cap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSchedulingSignedProfile.lean/declarations/estimate-of-signed-profile-cap.md) | 114 | `result-track:2288f61c93b98bbc03cc3514b4381eb4e1421a84e0d7e33a8c2d075ca4de39d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

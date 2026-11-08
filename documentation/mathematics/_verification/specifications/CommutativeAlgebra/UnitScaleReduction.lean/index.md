@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/UnitScaleReduction.lean/index.md) · [Full source](../../../../CommutativeAlgebra/UnitScaleReduction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnitScaleReduction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnitScaleReduction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.EllipticCurve.C4MinimalScale`](../../../../CommutativeAlgebra/C4MinimalScale.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.EllipticCurve.C4MinimalScale`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/C4MinimalScale.lean/index.md) — import line 9; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [delta_value_eq](../../../../CommutativeAlgebra/UnitScaleReduction.lean/declarations/delta-value-eq.md) | 24 | `result-track:e7c88602744513c136b7ececea8a577f06eac6d4ad5d146b1bbe611e8fe57527` |
-| 2 | `theorem` | [c4_value_eq](../../../../CommutativeAlgebra/UnitScaleReduction.lean/declarations/c4-value-eq.md) | 30 | `result-track:b20bd28f5194dc8685cae85da7910eeb1898f98e00c888740bc5bcd0a9c005ad` |
-| 3 | `theorem` | [minimal_of_unit_scale](../../../../CommutativeAlgebra/UnitScaleReduction.lean/declarations/minimal-of-unit-scale.md) | 38 | `result-track:579ffb03db7e5cbdeb0b6dd0472c836675f1578dbc62a6887c7634e53675a83a` |
-| 4 | `theorem` | [good_of_unit_scale](../../../../CommutativeAlgebra/UnitScaleReduction.lean/declarations/good-of-unit-scale.md) | 50 | `result-track:26dfd31da183fe65f506391c57d89a44854cb62d875023c9f54c4c50278817dc` |
-| 5 | `theorem` | [multiplicative_of_unit_scale](../../../../CommutativeAlgebra/UnitScaleReduction.lean/declarations/multiplicative-of-unit-scale.md) | 59 | `result-track:c2841dd2eacb63d8441a1169d1adc8665a575b4256e3e0f7ba46b039ec6f2728` |
-| 6 | `theorem` | [additive_of_unit_scale](../../../../CommutativeAlgebra/UnitScaleReduction.lean/declarations/additive-of-unit-scale.md) | 71 | `result-track:e3fcdde1b2ffca3cae1e1a89c732b608aa26473a0fcb7a84489d65ea60248168` |
+| 1 | `theorem` | [delta_value_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnitScaleReduction.lean/declarations/delta-value-eq.md) | 24 | `result-track:e7c88602744513c136b7ececea8a577f06eac6d4ad5d146b1bbe611e8fe57527` |
+| 2 | `theorem` | [c4_value_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnitScaleReduction.lean/declarations/c4-value-eq.md) | 30 | `result-track:b20bd28f5194dc8685cae85da7910eeb1898f98e00c888740bc5bcd0a9c005ad` |
+| 3 | `theorem` | [minimal_of_unit_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnitScaleReduction.lean/declarations/minimal-of-unit-scale.md) | 38 | `result-track:579ffb03db7e5cbdeb0b6dd0472c836675f1578dbc62a6887c7634e53675a83a` |
+| 4 | `theorem` | [good_of_unit_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnitScaleReduction.lean/declarations/good-of-unit-scale.md) | 50 | `result-track:26dfd31da183fe65f506391c57d89a44854cb62d875023c9f54c4c50278817dc` |
+| 5 | `theorem` | [multiplicative_of_unit_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnitScaleReduction.lean/declarations/multiplicative-of-unit-scale.md) | 59 | `result-track:c2841dd2eacb63d8441a1169d1adc8665a575b4256e3e0f7ba46b039ec6f2728` |
+| 6 | `theorem` | [additive_of_unit_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnitScaleReduction.lean/declarations/additive-of-unit-scale.md) | 71 | `result-track:e3fcdde1b2ffca3cae1e1a89c732b608aa26473a0fcb7a84489d65ea60248168` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,15 +63,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ElementalLaw](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/declarations/elementallaw.md) | 28 | `declaration-track:bc02e5dd1dc25f6945c59072b2e195350537129b0f14b1ad7eeadf8a3ff8b044` |
-| 2 | `def` | [allElementalLaws](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/declarations/allelementallaws.md) | 45 | `declaration-track:fafa10ee21a0762ba84e7f00a9f83256ae612051c9ad019a63b258e6bc57b6dd` |
-| 3 | `theorem` | [allElementalLaws_nodup](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/declarations/allelementallaws-nodup.md) | 61 | `result-track:9d09f06ce9608f0a397c483128a5fd33dbaf25a63795d1617b1e3f0981377e7a` |
-| 4 | `inductive` | [PointIdentityWitness](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/declarations/pointidentitywitness.md) | 66 | `declaration-track:1a50f182c0ab5e01ba116b8fa7e260ce27b34f9691ac602450f6402613b0175a` |
-| 5 | `theorem` | [PointIdentityWitness.implies_equal](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/declarations/pointidentitywitness-implies-equal.md) | 73 | `result-track:e763d71aa67228062fa2b74be8e5f214697983e6c19305d759d8e15cf4ba8876` |
-| 6 | `structure` | [SemanticCompletion](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/declarations/semanticcompletion.md) | 82 | `declaration-track:cd02cd241e853d624956479ec3bbb1c68ce0ed15d8b5ef88ba5c0e6df6b624fb` |
-| 7 | `structure` | [ElementalLawEvidence](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/declarations/elementallawevidence.md) | 89 | `declaration-track:cd2a50fabbe8a85fa39527d69106030550448d1fecf5eb187c04038941540741` |
-| 8 | `structure` | [ElementalLawLedger](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/declarations/elementallawledger.md) | 95 | `declaration-track:b46f58fa9f5161dd9aa095b8a80b3642727e497eff384bfaaa9a9f4f4d8a5694` |
-| 9 | `theorem` | [consensus_cannot_authorize_fact](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/declarations/consensus-cannot-authorize-fact.md) | 106 | `result-track:a834e4c2f13002eeaaa80373ee008deb31732c3096dfefef79bf9dc8aef11f18` |
+| 1 | `inductive` | [ElementalLaw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/declarations/elementallaw.md) | 28 | `declaration-track:bc02e5dd1dc25f6945c59072b2e195350537129b0f14b1ad7eeadf8a3ff8b044` |
+| 2 | `def` | [allElementalLaws](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/declarations/allelementallaws.md) | 45 | `declaration-track:fafa10ee21a0762ba84e7f00a9f83256ae612051c9ad019a63b258e6bc57b6dd` |
+| 3 | `theorem` | [allElementalLaws_nodup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/declarations/allelementallaws-nodup.md) | 61 | `result-track:9d09f06ce9608f0a397c483128a5fd33dbaf25a63795d1617b1e3f0981377e7a` |
+| 4 | `inductive` | [PointIdentityWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/declarations/pointidentitywitness.md) | 66 | `declaration-track:1a50f182c0ab5e01ba116b8fa7e260ce27b34f9691ac602450f6402613b0175a` |
+| 5 | `theorem` | [PointIdentityWitness.implies_equal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/declarations/pointidentitywitness-implies-equal.md) | 73 | `result-track:e763d71aa67228062fa2b74be8e5f214697983e6c19305d759d8e15cf4ba8876` |
+| 6 | `structure` | [SemanticCompletion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/declarations/semanticcompletion.md) | 82 | `declaration-track:cd02cd241e853d624956479ec3bbb1c68ce0ed15d8b5ef88ba5c0e6df6b624fb` |
+| 7 | `structure` | [ElementalLawEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/declarations/elementallawevidence.md) | 89 | `declaration-track:cd2a50fabbe8a85fa39527d69106030550448d1fecf5eb187c04038941540741` |
+| 8 | `structure` | [ElementalLawLedger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/declarations/elementallawledger.md) | 95 | `declaration-track:b46f58fa9f5161dd9aa095b8a80b3642727e497eff384bfaaa9a9f4f4d8a5694` |
+| 9 | `theorem` | [consensus_cannot_authorize_fact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalLawsNamespaced.lean/declarations/consensus-cannot-authorize-fact.md) | 106 | `result-track:a834e4c2f13002eeaaa80373ee008deb31732c3096dfefef79bf9dc8aef11f18` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

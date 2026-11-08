@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FrameNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FrameNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FrameNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FrameNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Frame](../../../../../ComputerScience/AlgorithmsInComputerScience/FrameNamespaced.lean/declarations/frame.md) | 15 | `declaration-track:c9168a8326ec1f1d17586529d6e2cad707f4c3c9f20921af924408a803499e6e` |
-| 2 | `theorem` | [frame_payload_is_BinaryLogicMatrix](../../../../../ComputerScience/AlgorithmsInComputerScience/FrameNamespaced.lean/declarations/frame-payload-is-binarylogicmatrix.md) | 33 | `result-track:268d5fc5edced712c4fedf1af22a4842504c0f4141d51745a148dcd556c65c7c` |
+| 1 | `structure` | [Frame](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FrameNamespaced.lean/declarations/frame.md) | 15 | `declaration-track:c9168a8326ec1f1d17586529d6e2cad707f4c3c9f20921af924408a803499e6e` |
+| 2 | `theorem` | [frame_payload_is_BinaryLogicMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FrameNamespaced.lean/declarations/frame-payload-is-binarylogicmatrix.md) | 33 | `result-track:268d5fc5edced712c4fedf1af22a4842504c0f4141d51745a148dcd556c65c7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderNamespacedOrderSignature.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderNamespacedOrderSignature.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderNamespacedOrderSignature.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderNamespacedOrderSignature.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OrderSignature](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderNamespacedOrderSignature.lean/declarations/ordersignature.md) | 23 | `declaration-track:c37d86bf384221ffc9e4f4749051679cb9a15ddf2f8d05af7da68ff5bb0007ee` |
-| 2 | `def` | [BetweennessEndpointSymmetry](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderNamespacedOrderSignature.lean/declarations/betweennessendpointsymmetry.md) | 27 | `declaration-track:3f4080a332ac76b0cb09fb0f6c51caaaa434733a0c0d15683a3b7c979b5b44cc` |
-| 3 | `def` | [BetweennessStrict](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderNamespacedOrderSignature.lean/declarations/betweennessstrict.md) | 35 | `declaration-track:e7a2a1b1eae88a2bf6e92cc5bd930c73c95cf65186fa29861a1e788ba517bf89` |
-| 4 | `def` | [BetweennessAsymmetric](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OrderNamespacedOrderSignature.lean/declarations/betweennessasymmetric.md) | 43 | `declaration-track:76c00809eaf5c6ab18590d45a2d61bee4fcede9efcac653f4b7a1960d2596c3f` |
+| 1 | `structure` | [OrderSignature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderNamespacedOrderSignature.lean/declarations/ordersignature.md) | 23 | `declaration-track:c37d86bf384221ffc9e4f4749051679cb9a15ddf2f8d05af7da68ff5bb0007ee` |
+| 2 | `def` | [BetweennessEndpointSymmetry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderNamespacedOrderSignature.lean/declarations/betweennessendpointsymmetry.md) | 27 | `declaration-track:3f4080a332ac76b0cb09fb0f6c51caaaa434733a0c0d15683a3b7c979b5b44cc` |
+| 3 | `def` | [BetweennessStrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderNamespacedOrderSignature.lean/declarations/betweennessstrict.md) | 35 | `declaration-track:e7a2a1b1eae88a2bf6e92cc5bd930c73c95cf65186fa29861a1e788ba517bf89` |
+| 4 | `def` | [BetweennessAsymmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OrderNamespacedOrderSignature.lean/declarations/betweennessasymmetric.md) | 43 | `declaration-track:76c00809eaf5c6ab18590d45a2d61bee4fcede9efcac653f4b7a1960d2596c3f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

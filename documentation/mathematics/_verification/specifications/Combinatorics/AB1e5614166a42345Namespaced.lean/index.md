@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/AB1e5614166a42345Namespaced.lean/index.md) · [Full source](../../../../Combinatorics/AB1e5614166a42345Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AB1e5614166a42345Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AB1e5614166a42345Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,12 +61,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Record](../../../../Combinatorics/AB1e5614166a42345Namespaced.lean/declarations/record.md) | 21 | `declaration-track:fab9a38639404693626e34c3d8f7a51d182080e066c59f8ef59ee4d3fa78da0f` |
-| 2 | `def` | [SameIdentity](../../../../Combinatorics/AB1e5614166a42345Namespaced.lean/declarations/sameidentity.md) | 42 | `declaration-track:188649c43228c35320cebea8d24b339531ef4122f55649822dcd81a3f0535769` |
-| 3 | `instance` | [(anonymous)](../../../../Combinatorics/AB1e5614166a42345Namespaced.lean/declarations/instance.md) | 44 | `declaration-track:43e6f19aed9fca7d6934b36238fb283e150c064b537482cdb966b1b2051441f6` |
-| 4 | `def` | [AcceptsEntity](../../../../Combinatorics/AB1e5614166a42345Namespaced.lean/declarations/acceptsentity.md) | 48 | `declaration-track:73c246f81d358ba2da5b9e7ff3dad342e64aa34300e28360cfebcc62129a25ca` |
-| 5 | `theorem` | [sameIdentity_of_id_eq](../../../../Combinatorics/AB1e5614166a42345Namespaced.lean/declarations/sameidentity-of-id-eq.md) | 52 | `result-track:a3265c4499bc6b9a4c3a2a066276066e0798ed7e5ebf385de51d05da285f2019` |
-| 6 | `def` | [SameName](../../../../Combinatorics/AB1e5614166a42345Namespaced.lean/declarations/samename.md) | 57 | `declaration-track:a19aa35a7613af01298cde4193dad359305df24c5e60fd7395a667d7c4391634` |
+| 1 | `structure` | [Record](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AB1e5614166a42345Namespaced.lean/declarations/record.md) | 21 | `declaration-track:fab9a38639404693626e34c3d8f7a51d182080e066c59f8ef59ee4d3fa78da0f` |
+| 2 | `def` | [SameIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AB1e5614166a42345Namespaced.lean/declarations/sameidentity.md) | 42 | `declaration-track:188649c43228c35320cebea8d24b339531ef4122f55649822dcd81a3f0535769` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AB1e5614166a42345Namespaced.lean/declarations/instance.md) | 44 | `declaration-track:43e6f19aed9fca7d6934b36238fb283e150c064b537482cdb966b1b2051441f6` |
+| 4 | `def` | [AcceptsEntity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AB1e5614166a42345Namespaced.lean/declarations/acceptsentity.md) | 48 | `declaration-track:73c246f81d358ba2da5b9e7ff3dad342e64aa34300e28360cfebcc62129a25ca` |
+| 5 | `theorem` | [sameIdentity_of_id_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AB1e5614166a42345Namespaced.lean/declarations/sameidentity-of-id-eq.md) | 52 | `result-track:a3265c4499bc6b9a4c3a2a066276066e0798ed7e5ebf385de51d05da285f2019` |
+| 6 | `def` | [SameName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AB1e5614166a42345Namespaced.lean/declarations/samename.md) | 57 | `declaration-track:a19aa35a7613af01298cde4193dad359305df24c5e60fd7395a667d7c4391634` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/Unitary.lean/index.md) · [Full source](../../../../FunctionalAnalysis/Unitary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Unitary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Unitary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [cfc_unitary_iff](../../../../FunctionalAnalysis/Unitary.lean/declarations/cfc-unitary-iff.md) | 25 | `result-track:2800057e18a05346ac5ab77b5587ce0e938b524d91f6458a40cad0928d9aede6` |
-| 2 | `lemma` | [unitary_iff_isStarNormal_and_spectrum_subset_unitary](../../../../FunctionalAnalysis/Unitary.lean/declarations/unitary-iff-isstarnormal-and-spectrum-subset-unitary.md) | 40 | `result-track:a438a123bf87eec7527090a3e25a97e5ebea196a86a8887dec800cf5e6a88c9b` |
-| 3 | `lemma` | [mem_unitary_of_spectrum_subset_unitary](../../../../FunctionalAnalysis/Unitary.lean/declarations/mem-unitary-of-spectrum-subset-unitary.md) | 48 | `result-track:7c6e670eb8925ee8a40a3c5a5e67a32a2a7f201dded0f1ca995db37831e38bd3` |
-| 4 | `lemma` | [spectrum_subset_unitary_of_mem_unitary](../../../../FunctionalAnalysis/Unitary.lean/declarations/spectrum-subset-unitary-of-mem-unitary.md) | 52 | `result-track:59c03d1b9ec66b00a884563105228ca643606e2f3abc4b4f4693e24f92ed2bc1` |
+| 1 | `lemma` | [cfc_unitary_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Unitary.lean/declarations/cfc-unitary-iff.md) | 25 | `result-track:2800057e18a05346ac5ab77b5587ce0e938b524d91f6458a40cad0928d9aede6` |
+| 2 | `lemma` | [unitary_iff_isStarNormal_and_spectrum_subset_unitary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Unitary.lean/declarations/unitary-iff-isstarnormal-and-spectrum-subset-unitary.md) | 40 | `result-track:a438a123bf87eec7527090a3e25a97e5ebea196a86a8887dec800cf5e6a88c9b` |
+| 3 | `lemma` | [mem_unitary_of_spectrum_subset_unitary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Unitary.lean/declarations/mem-unitary-of-spectrum-subset-unitary.md) | 48 | `result-track:7c6e670eb8925ee8a40a3c5a5e67a32a2a7f201dded0f1ca995db37831e38bd3` |
+| 4 | `lemma` | [spectrum_subset_unitary_of_mem_unitary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Unitary.lean/declarations/spectrum-subset-unitary-of-mem-unitary.md) | 52 | `result-track:59c03d1b9ec66b00a884563105228ca643606e2f3abc4b4f4693e24f92ed2bc1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

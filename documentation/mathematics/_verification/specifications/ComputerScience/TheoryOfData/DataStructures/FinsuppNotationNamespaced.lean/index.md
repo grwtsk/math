@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fun₀.matchAlts](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/declarations/fun-matchalts.md) | 30 | `declaration-track:68ea16079cbfef093ab4cea04604b65ef98bf35cd82682977f4c60357d880557` |
-| 2 | `def` | [fun₀](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/declarations/fun.md) | 38 | `declaration-track:b09bdd22cce1190ab86e295002b53f31b055afb76991da360d42bf242602c4cf` |
-| 3 | `def` | [elabSingle₀](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/declarations/elabsingle.md) | 48 | `declaration-track:89ae63d66a89bbc6774d57980eae197536976e0eb4c50d7d96e6d3bcd7e1da86` |
-| 4 | `def` | [elabUpdate₀](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/declarations/elabupdate.md) | 54 | `declaration-track:d9bfb34c3b54c20e6c2bcfddbcc59775e33d6d8a89ca55760e52828b1a6faea0` |
-| 5 | `macro_rules` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/declarations/macro-rules.md) | 58 | `declaration-track:aef1e2d68626357ef124e9914c7f81ac7d5d18118111a0c675432312c7228c73` |
-| 6 | `def` | [singleUnexpander](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/declarations/singleunexpander.md) | 76 | `declaration-track:bca96d58bea74fe13cb116cbc4b62314a5958698d0f8cfc39977d5be6766ba62` |
-| 7 | `def` | [updateUnexpander](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/declarations/updateunexpander.md) | 82 | `declaration-track:c0c71636dc50054ecf707feaebb7f36a78aaaaaf23c4096cdd37dd19532be9a9` |
-| 8 | `instance` | [instRepr](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/declarations/instrepr.md) | 89 | `declaration-track:e87f9f6d23a3e2ce48e96655d27972d16064fc79804d7373a4793043e7092c4c` |
+| 1 | `def` | [fun₀.matchAlts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/declarations/fun-matchalts.md) | 30 | `declaration-track:68ea16079cbfef093ab4cea04604b65ef98bf35cd82682977f4c60357d880557` |
+| 2 | `def` | [fun₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/declarations/fun.md) | 38 | `declaration-track:b09bdd22cce1190ab86e295002b53f31b055afb76991da360d42bf242602c4cf` |
+| 3 | `def` | [elabSingle₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/declarations/elabsingle.md) | 48 | `declaration-track:89ae63d66a89bbc6774d57980eae197536976e0eb4c50d7d96e6d3bcd7e1da86` |
+| 4 | `def` | [elabUpdate₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/declarations/elabupdate.md) | 54 | `declaration-track:d9bfb34c3b54c20e6c2bcfddbcc59775e33d6d8a89ca55760e52828b1a6faea0` |
+| 5 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/declarations/macro-rules.md) | 58 | `declaration-track:aef1e2d68626357ef124e9914c7f81ac7d5d18118111a0c675432312c7228c73` |
+| 6 | `def` | [singleUnexpander](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/declarations/singleunexpander.md) | 76 | `declaration-track:bca96d58bea74fe13cb116cbc4b62314a5958698d0f8cfc39977d5be6766ba62` |
+| 7 | `def` | [updateUnexpander](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/declarations/updateunexpander.md) | 82 | `declaration-track:c0c71636dc50054ecf707feaebb7f36a78aaaaaf23c4096cdd37dd19532be9a9` |
+| 8 | `instance` | [instRepr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppNotationNamespaced.lean/declarations/instrepr.md) | 89 | `declaration-track:e87f9f6d23a3e2ce48e96655d27972d16064fc79804d7373a4793043e7092c4c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

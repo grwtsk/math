@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceChartTerminalBudgetFeedsTheUnchangedEstimate.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceChartTerminalBudgetFeedsTheUnchangedEstimate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceChartTerminalBudgetFeedsTheUnchangedEstimate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceChartTerminalBudgetFeedsTheUnchangedEstimate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [certificate_coordinate_is_source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceChartTerminalBudgetFeedsTheUnchangedEstimate.lean/declarations/certificate-coordinate-is-source.md) | 24 | `result-track:77e083b6752302c3133662b71235f527727b37200dd01c422b25ad003d22eb12` |
-| 2 | `theorem` | [certificate_decoder_is_source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceChartTerminalBudgetFeedsTheUnchangedEstimate.lean/declarations/certificate-decoder-is-source.md) | 27 | `result-track:e692abcf56ea1daa5cb86d63acd42717c81365bab09e81b9889824905ccb952c` |
-| 3 | `theorem` | [terminal_decoder_is_corrected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceChartTerminalBudgetFeedsTheUnchangedEstimate.lean/declarations/terminal-decoder-is-corrected.md) | 32 | `result-track:53660340e4a047f62147794d68041e7f5f52acd2f36e0e6bcd5b26d547d2d1eb` |
-| 4 | `theorem` | [original_lower_of_chart_terminal](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceChartTerminalBudgetFeedsTheUnchangedEstimate.lean/declarations/original-lower-of-chart-terminal.md) | 37 | `result-track:a27568b26929d6df5eabd9b3da93cf3c8dbcea6497c8950a036b466236c72838` |
-| 5 | `theorem` | [estimate_of_chart_terminal](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceChartTerminalBudgetFeedsTheUnchangedEstimate.lean/declarations/estimate-of-chart-terminal.md) | 54 | `result-track:de7fe6a7cc83201dd6bfa684d261104e99edb39c9428dd4050e43bc804703419` |
+| 1 | `theorem` | [certificate_coordinate_is_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceChartTerminalBudgetFeedsTheUnchangedEstimate.lean/declarations/certificate-coordinate-is-source.md) | 24 | `result-track:77e083b6752302c3133662b71235f527727b37200dd01c422b25ad003d22eb12` |
+| 2 | `theorem` | [certificate_decoder_is_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceChartTerminalBudgetFeedsTheUnchangedEstimate.lean/declarations/certificate-decoder-is-source.md) | 27 | `result-track:e692abcf56ea1daa5cb86d63acd42717c81365bab09e81b9889824905ccb952c` |
+| 3 | `theorem` | [terminal_decoder_is_corrected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceChartTerminalBudgetFeedsTheUnchangedEstimate.lean/declarations/terminal-decoder-is-corrected.md) | 32 | `result-track:53660340e4a047f62147794d68041e7f5f52acd2f36e0e6bcd5b26d547d2d1eb` |
+| 4 | `theorem` | [original_lower_of_chart_terminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceChartTerminalBudgetFeedsTheUnchangedEstimate.lean/declarations/original-lower-of-chart-terminal.md) | 37 | `result-track:a27568b26929d6df5eabd9b3da93cf3c8dbcea6497c8950a036b466236c72838` |
+| 5 | `theorem` | [estimate_of_chart_terminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceChartTerminalBudgetFeedsTheUnchangedEstimate.lean/declarations/estimate-of-chart-terminal.md) | 54 | `result-track:de7fe6a7cc83201dd6bfa684d261104e99edb39c9428dd4050e43bc804703419` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/OrdinateKernel.lean/index.md) · [Full source](../../../../MeasureAndIntegration/OrdinateKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrdinateKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrdinateKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ordinateKernel](../../../../MeasureAndIntegration/OrdinateKernel.lean/declarations/ordinatekernel.md) | 19 | `declaration-track:e0f5cbfc78da87ca3295bc000c27713b50d1d32a5ea486339f8990150b205b63` |
-| 2 | `theorem` | [ordinate_kernel_nonnegative](../../../../MeasureAndIntegration/OrdinateKernel.lean/declarations/ordinate-kernel-nonnegative.md) | 21 | `result-track:4b7243b9588a44c13caf781b499ff0c48ce39627c0dff82c39575b2776a03075` |
-| 3 | `theorem` | [negative_seven_real_power](../../../../MeasureAndIntegration/OrdinateKernel.lean/declarations/negative-seven-real-power.md) | 26 | `result-track:eba83e47c2cfea0e3fb4a872459f7392ea51b9a7a0513af012a3d0611f33010b` |
-| 4 | `theorem` | [ordinate_kernel_integrable](../../../../MeasureAndIntegration/OrdinateKernel.lean/declarations/ordinate-kernel-integrable.md) | 33 | `result-track:a63f3e15567c648515691769085ff154331d50bf73758907fc91cc2fda0fbf78` |
-| 5 | `theorem` | [ordinate_kernel_integral](../../../../MeasureAndIntegration/OrdinateKernel.lean/declarations/ordinate-kernel-integral.md) | 44 | `result-track:57cb1110a8c617028a4a5d3966ce67b9a92eaa06c40d9992a67f05717b4e9e24` |
-| 6 | `theorem` | [ordinate_kernel_integral_max](../../../../MeasureAndIntegration/OrdinateKernel.lean/declarations/ordinate-kernel-integral-max.md) | 61 | `result-track:b39a8ed768dc968139d01e6ca1ebb7a088da937bfe208e3e1e4974fe86eac04e` |
-| 7 | `theorem` | [closed_ordinate_kernel_integrable](../../../../MeasureAndIntegration/OrdinateKernel.lean/declarations/closed-ordinate-kernel-integrable.md) | 67 | `result-track:ceecc4276e9e3783abac972cc0da8fe35b051f21aeceff825c4ebdc12a5552d2` |
-| 8 | `theorem` | [closed_ordinate_kernel_integral](../../../../MeasureAndIntegration/OrdinateKernel.lean/declarations/closed-ordinate-kernel-integral.md) | 73 | `result-track:025df97b07992b1b4b798941cfe77fa307a5a3f3f8fa3123a54c0b5ce2bdbfb9` |
-| 9 | `theorem` | [strict_ordinate_weight_eq_closed_integral_sub_endpoint](../../../../MeasureAndIntegration/OrdinateKernel.lean/declarations/strict-ordinate-weight-eq-closed-integral-sub-endpoint.md) | 101 | `result-track:45043097196cfc687aba06d6445433358cbf252ea67c9def447989900c8f0f7c` |
-| 10 | `theorem` | [touching_ordinate_endpoint_cancels](../../../../MeasureAndIntegration/OrdinateKernel.lean/declarations/touching-ordinate-endpoint-cancels.md) | 113 | `result-track:9806f1d1c11786f4d4b1f27706f1352453d0ac6b1fe2d38e8074d35cf584e82f` |
+| 1 | `def` | [ordinateKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrdinateKernel.lean/declarations/ordinatekernel.md) | 19 | `declaration-track:e0f5cbfc78da87ca3295bc000c27713b50d1d32a5ea486339f8990150b205b63` |
+| 2 | `theorem` | [ordinate_kernel_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrdinateKernel.lean/declarations/ordinate-kernel-nonnegative.md) | 21 | `result-track:4b7243b9588a44c13caf781b499ff0c48ce39627c0dff82c39575b2776a03075` |
+| 3 | `theorem` | [negative_seven_real_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrdinateKernel.lean/declarations/negative-seven-real-power.md) | 26 | `result-track:eba83e47c2cfea0e3fb4a872459f7392ea51b9a7a0513af012a3d0611f33010b` |
+| 4 | `theorem` | [ordinate_kernel_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrdinateKernel.lean/declarations/ordinate-kernel-integrable.md) | 33 | `result-track:a63f3e15567c648515691769085ff154331d50bf73758907fc91cc2fda0fbf78` |
+| 5 | `theorem` | [ordinate_kernel_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrdinateKernel.lean/declarations/ordinate-kernel-integral.md) | 44 | `result-track:57cb1110a8c617028a4a5d3966ce67b9a92eaa06c40d9992a67f05717b4e9e24` |
+| 6 | `theorem` | [ordinate_kernel_integral_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrdinateKernel.lean/declarations/ordinate-kernel-integral-max.md) | 61 | `result-track:b39a8ed768dc968139d01e6ca1ebb7a088da937bfe208e3e1e4974fe86eac04e` |
+| 7 | `theorem` | [closed_ordinate_kernel_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrdinateKernel.lean/declarations/closed-ordinate-kernel-integrable.md) | 67 | `result-track:ceecc4276e9e3783abac972cc0da8fe35b051f21aeceff825c4ebdc12a5552d2` |
+| 8 | `theorem` | [closed_ordinate_kernel_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrdinateKernel.lean/declarations/closed-ordinate-kernel-integral.md) | 73 | `result-track:025df97b07992b1b4b798941cfe77fa307a5a3f3f8fa3123a54c0b5ce2bdbfb9` |
+| 9 | `theorem` | [strict_ordinate_weight_eq_closed_integral_sub_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrdinateKernel.lean/declarations/strict-ordinate-weight-eq-closed-integral-sub-endpoint.md) | 101 | `result-track:45043097196cfc687aba06d6445433358cbf252ea67c9def447989900c8f0f7c` |
+| 10 | `theorem` | [touching_ordinate_endpoint_cancels](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrdinateKernel.lean/declarations/touching-ordinate-endpoint-cancels.md) | 113 | `result-track:9806f1d1c11786f4d4b1f27706f1352453d0ac6b1fe2d38e8074d35cf584e82f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

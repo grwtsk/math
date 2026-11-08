@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [matrixAt](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/declarations/matrixat.md) | 24 | `declaration-track:d3fd6bb089f9eaf051676565015de9fcac830e13aba00284897ba1cce504a62c` |
-| 2 | `def` | [firstAt](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/declarations/firstat.md) | 29 | `declaration-track:142245224c2227602cbd2eedfb62c2ce210096261082252066ea367b3c78828f` |
-| 3 | `def` | [secondAt](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/declarations/secondat.md) | 31 | `declaration-track:e7ccdcb35122e5283e348538fee252230afe117c9e01132111b0fbba0360b8de` |
-| 4 | `def` | [movedReadout](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/declarations/movedreadout.md) | 35 | `declaration-track:26438474772edbca3fcda4599a92e17549447a011d9f2ac5909f2827f6ef0c22` |
-| 5 | `theorem` | [literal_readout](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/declarations/literal-readout.md) | 40 | `result-track:203165bde3b544e63888644259fcf8c61cb0c7680bd4ae7767de4eb17cf35208` |
-| 6 | `theorem` | [literal_move_defect](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/declarations/literal-move-defect.md) | 49 | `result-track:43054bd3904e68c9bfe7e5f855d766dfe5ba0ab579c1d06e3a655a4bb88772d5` |
-| 7 | `def` | [dualMovedReadout](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/declarations/dualmovedreadout.md) | 60 | `declaration-track:e4b273004172580113ae3425e9c15f41c5d10dfb763c8a26fdf101fb02721332` |
-| 8 | `theorem` | [literal_dual_compensation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/declarations/literal-dual-compensation.md) | 67 | `result-track:276e4bc4fab901a3aaad732c44ccf050143afb4d786a5b8aa048c95c14b55655` |
+| 1 | `def` | [matrixAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/declarations/matrixat.md) | 24 | `declaration-track:d3fd6bb089f9eaf051676565015de9fcac830e13aba00284897ba1cce504a62c` |
+| 2 | `def` | [firstAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/declarations/firstat.md) | 29 | `declaration-track:142245224c2227602cbd2eedfb62c2ce210096261082252066ea367b3c78828f` |
+| 3 | `def` | [secondAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/declarations/secondat.md) | 31 | `declaration-track:e7ccdcb35122e5283e348538fee252230afe117c9e01132111b0fbba0360b8de` |
+| 4 | `def` | [movedReadout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/declarations/movedreadout.md) | 35 | `declaration-track:26438474772edbca3fcda4599a92e17549447a011d9f2ac5909f2827f6ef0c22` |
+| 5 | `theorem` | [literal_readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/declarations/literal-readout.md) | 40 | `result-track:203165bde3b544e63888644259fcf8c61cb0c7680bd4ae7767de4eb17cf35208` |
+| 6 | `theorem` | [literal_move_defect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/declarations/literal-move-defect.md) | 49 | `result-track:43054bd3904e68c9bfe7e5f855d766dfe5ba0ab579c1d06e3a655a4bb88772d5` |
+| 7 | `def` | [dualMovedReadout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/declarations/dualmovedreadout.md) | 60 | `declaration-track:e4b273004172580113ae3425e9c15f41c5d10dfb763c8a26fdf101fb02721332` |
+| 8 | `theorem` | [literal_dual_compensation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefect.lean/declarations/literal-dual-compensation.md) | 67 | `result-track:276e4bc4fab901a3aaad732c44ccf050143afb4d786a5b8aa048c95c14b55655` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

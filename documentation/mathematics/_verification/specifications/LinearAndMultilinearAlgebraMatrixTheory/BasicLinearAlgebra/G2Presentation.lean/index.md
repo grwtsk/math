@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.Hecke.G2BraidSixMatrices`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2BraidSixMatrices.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.Hecke.G2BraidSixMatrices`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2BraidSixMatrices.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.Algebra.FreeAlgebra` — import line 2; external provider; requires a separately pinned dependency.
 - `Mathlib.Algebra.RingQuot` — import line 3; external provider; requires a separately pinned dependency.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [G2Relation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2relation.md) | 12 | `declaration-track:6b2e19eb1bfbbd676a6d0f59121f4bdb8b68db72d1413d2c4c4a582589bf9a6d` |
-| 2 | `abbrev` | [G2Presented](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2presented.md) | 21 | `declaration-track:9be5fc29810993f27a37f1ea861b9610ea7bb46297eb9a7a2b2b13c8caf82177` |
-| 3 | `def` | [g2Generator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2generator.md) | 24 | `declaration-track:3660ba6cfcc3308adf9ab7736fb51a59fe2d5e369d3ea1110a6628b2445a0f89` |
-| 4 | `theorem` | [g2Generator_quadratic](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2generator-quadratic.md) | 27 | `result-track:9562b126163806b865a1bdd499a0865064e7252ff4a026f3a25279de5df8cd0f` |
-| 5 | `theorem` | [g2Generator_braid](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2generator-braid.md) | 31 | `result-track:285d60b405fbdf08bac5660a44e976df1305c17aeaaaeb3bcf7fa9736c5fd86e` |
-| 6 | `def` | [g2PresentationLift](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2presentationlift.md) | 39 | `declaration-track:94a7e1db0cb4f2f56736333df96e34a363a08c76bf5c90b40072a1b711a2663b` |
-| 7 | `theorem` | [g2PresentationLift_generator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2presentationlift-generator.md) | 49 | `result-track:a720f279b49b391af331cbeed474c2a1fa3da2e2a3e48bdbf354476235fcaefc` |
-| 8 | `theorem` | [g2PresentationLift_unique](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2presentationlift-unique.md) | 56 | `result-track:7fc412c2bf14064c0c731e79495567b64b54b0b7b110797ecbd6bd8f15003804` |
-| 9 | `def` | [g2MatrixRepresentation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2matrixrepresentation.md) | 68 | `declaration-track:cd43b68e058ecc31628dfeebfe5707a77a064475fd907c385b64d374742ef6a3` |
-| 10 | `theorem` | [g2MatrixRepresentation_generator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2matrixrepresentation-generator.md) | 75 | `result-track:dec58d9a3a94c57077d44556f6b1b9749ad2f01995d952be76ece1b91d2584f0` |
+| 1 | `inductive` | [G2Relation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2relation.md) | 12 | `declaration-track:6b2e19eb1bfbbd676a6d0f59121f4bdb8b68db72d1413d2c4c4a582589bf9a6d` |
+| 2 | `abbrev` | [G2Presented](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2presented.md) | 21 | `declaration-track:9be5fc29810993f27a37f1ea861b9610ea7bb46297eb9a7a2b2b13c8caf82177` |
+| 3 | `def` | [g2Generator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2generator.md) | 24 | `declaration-track:3660ba6cfcc3308adf9ab7736fb51a59fe2d5e369d3ea1110a6628b2445a0f89` |
+| 4 | `theorem` | [g2Generator_quadratic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2generator-quadratic.md) | 27 | `result-track:9562b126163806b865a1bdd499a0865064e7252ff4a026f3a25279de5df8cd0f` |
+| 5 | `theorem` | [g2Generator_braid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2generator-braid.md) | 31 | `result-track:285d60b405fbdf08bac5660a44e976df1305c17aeaaaeb3bcf7fa9736c5fd86e` |
+| 6 | `def` | [g2PresentationLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2presentationlift.md) | 39 | `declaration-track:94a7e1db0cb4f2f56736333df96e34a363a08c76bf5c90b40072a1b711a2663b` |
+| 7 | `theorem` | [g2PresentationLift_generator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2presentationlift-generator.md) | 49 | `result-track:a720f279b49b391af331cbeed474c2a1fa3da2e2a3e48bdbf354476235fcaefc` |
+| 8 | `theorem` | [g2PresentationLift_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2presentationlift-unique.md) | 56 | `result-track:7fc412c2bf14064c0c731e79495567b64b54b0b7b110797ecbd6bd8f15003804` |
+| 9 | `def` | [g2MatrixRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2matrixrepresentation.md) | 68 | `declaration-track:cd43b68e058ecc31628dfeebfe5707a77a064475fd907c385b64d374742ef6a3` |
+| 10 | `theorem` | [g2MatrixRepresentation_generator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/G2Presentation.lean/declarations/g2matrixrepresentation-generator.md) | 75 | `result-track:dec58d9a3a94c57077d44556f6b1b9749ad2f01995d952be76ece1b91d2584f0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

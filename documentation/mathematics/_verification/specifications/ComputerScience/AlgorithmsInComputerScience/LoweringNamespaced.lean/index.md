@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/LoweringNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/LoweringNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoweringNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoweringNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [placements](../../../../../ComputerScience/AlgorithmsInComputerScience/LoweringNamespaced.lean/declarations/placements.md) | 15 | `declaration-track:2bcaef999b8c1cc02d2022feeb6a58dda715247f479c27e938a2c248f7b92d22` |
-| 2 | `theorem` | [placements_count](../../../../../ComputerScience/AlgorithmsInComputerScience/LoweringNamespaced.lean/declarations/placements-count.md) | 18 | `result-track:0375d21c0b8b0695e7c24e79f8a0952948ab5136bdd59b566d495e0f3fe8b9ea` |
-| 3 | `theorem` | [placements_centerControlled](../../../../../ComputerScience/AlgorithmsInComputerScience/LoweringNamespaced.lean/declarations/placements-centercontrolled.md) | 22 | `result-track:5bab24dbe521c328294138240fc90cd62651c1f978c7c579b9a076ac43d2d72b` |
+| 1 | `def` | [placements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoweringNamespaced.lean/declarations/placements.md) | 15 | `declaration-track:2bcaef999b8c1cc02d2022feeb6a58dda715247f479c27e938a2c248f7b92d22` |
+| 2 | `theorem` | [placements_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoweringNamespaced.lean/declarations/placements-count.md) | 18 | `result-track:0375d21c0b8b0695e7c24e79f8a0952948ab5136bdd59b566d495e0f3fe8b9ea` |
+| 3 | `theorem` | [placements_centerControlled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoweringNamespaced.lean/declarations/placements-centercontrolled.md) | 22 | `result-track:5bab24dbe521c328294138240fc90cd62651c1f978c7c579b9a076ac43d2d72b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

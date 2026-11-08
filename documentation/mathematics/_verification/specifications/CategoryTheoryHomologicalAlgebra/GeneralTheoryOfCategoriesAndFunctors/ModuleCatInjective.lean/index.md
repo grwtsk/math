@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjective.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjective.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjective.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjective.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [injective_object_of_injective_module](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjective.lean/declarations/injective-object-of-injective-module.md) | 20 | `result-track:7bc0ef243a1c6972e31b53e768def1b5658ff806a0c12c0b8c82f76b7378695e` |
-| 2 | `theorem` | [injective_module_of_injective_object](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjective.lean/declarations/injective-module-of-injective-object.md) | 26 | `result-track:c5abb72fdb8a007c629e4d4e35767ba85dc1aba50194268c3e6d102a98df3a39` |
-| 3 | `theorem` | [injective_iff_injective_object](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjective.lean/declarations/injective-iff-injective-object.md) | 35 | `result-track:285f0048ea93d0637186b3afe64da8653c2c319df970541b311626754f0ea00f` |
-| 4 | `instance` | [ModuleCat.ulift_injective_of_injective.](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjective.lean/declarations/modulecat-ulift-injective-of-injective.md) | 44 | `declaration-track:e0847407d11addfbf5abafc5ea4afa42661196b7bbda715ddcd17d469fa9085d` |
+| 1 | `theorem` | [injective_object_of_injective_module](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjective.lean/declarations/injective-object-of-injective-module.md) | 20 | `result-track:7bc0ef243a1c6972e31b53e768def1b5658ff806a0c12c0b8c82f76b7378695e` |
+| 2 | `theorem` | [injective_module_of_injective_object](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjective.lean/declarations/injective-module-of-injective-object.md) | 26 | `result-track:c5abb72fdb8a007c629e4d4e35767ba85dc1aba50194268c3e6d102a98df3a39` |
+| 3 | `theorem` | [injective_iff_injective_object](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjective.lean/declarations/injective-iff-injective-object.md) | 35 | `result-track:285f0048ea93d0637186b3afe64da8653c2c319df970541b311626754f0ea00f` |
+| 4 | `instance` | [ModuleCat.ulift_injective_of_injective.](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatInjective.lean/declarations/modulecat-ulift-injective-of-injective.md) | 44 | `declaration-track:e0847407d11addfbf5abafc5ea4afa42661196b7bbda715ddcd17d469fa9085d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

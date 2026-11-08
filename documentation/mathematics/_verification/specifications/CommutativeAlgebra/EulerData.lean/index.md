@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/EulerData.lean/index.md) · [Full source](../../../../CommutativeAlgebra/EulerData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EulerData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EulerData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LocalEulerSpecification](../../../../CommutativeAlgebra/EulerData.lean/declarations/localeulerspecification.md) | 24 | `declaration-track:92ce5d279eb51417d6cda1e36c9ddddbcfe59c101a2009252ac5f3817cca9600` |
-| 2 | `structure` | [CandidateLocalEulerDatum](../../../../CommutativeAlgebra/EulerData.lean/declarations/candidatelocaleulerdatum.md) | 31 | `declaration-track:fefa416e769e508fc8c41eb3a820fbb992c580d7796bf955607018957238107c` |
-| 3 | `structure` | [CertifiedLocalEulerDatum](../../../../CommutativeAlgebra/EulerData.lean/declarations/certifiedlocaleulerdatum.md) | 39 | `declaration-track:b44557b00531355a46495a0fd14dafc39f4c277fe8514ec55d0f56581a848c06` |
-| 4 | `structure` | [LocalEulerExtractionCertificate](../../../../CommutativeAlgebra/EulerData.lean/declarations/localeulerextractioncertificate.md) | 50 | `declaration-track:e61cfe25ab4609b9d5180c11a4bcffef17e17108e82f69581834bdacc621c1d0` |
-| 5 | `structure` | [CertifiedEulerFamily](../../../../CommutativeAlgebra/EulerData.lean/declarations/certifiedeulerfamily.md) | 64 | `declaration-track:74e2c1fef76e28e233cc546543e7c59c16a2fcfbaff139d198f1f84703a005ec` |
-| 6 | `def` | [finiteEulerProduct](../../../../CommutativeAlgebra/EulerData.lean/declarations/finiteeulerproduct.md) | 76 | `declaration-track:b2fd5acf4098d922fd02c1bf86835ce05fb07001bf9911e6c95d4336ebb72486` |
-| 7 | `theorem` | [finiteEulerProduct_insert](../../../../CommutativeAlgebra/EulerData.lean/declarations/finiteeulerproduct-insert.md) | 84 | `result-track:c0381fa39e12901cbb1110a2143019471a2073158133e4c8bf64e523e6b414f1` |
+| 1 | `structure` | [LocalEulerSpecification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EulerData.lean/declarations/localeulerspecification.md) | 24 | `declaration-track:92ce5d279eb51417d6cda1e36c9ddddbcfe59c101a2009252ac5f3817cca9600` |
+| 2 | `structure` | [CandidateLocalEulerDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EulerData.lean/declarations/candidatelocaleulerdatum.md) | 31 | `declaration-track:fefa416e769e508fc8c41eb3a820fbb992c580d7796bf955607018957238107c` |
+| 3 | `structure` | [CertifiedLocalEulerDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EulerData.lean/declarations/certifiedlocaleulerdatum.md) | 39 | `declaration-track:b44557b00531355a46495a0fd14dafc39f4c277fe8514ec55d0f56581a848c06` |
+| 4 | `structure` | [LocalEulerExtractionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EulerData.lean/declarations/localeulerextractioncertificate.md) | 50 | `declaration-track:e61cfe25ab4609b9d5180c11a4bcffef17e17108e82f69581834bdacc621c1d0` |
+| 5 | `structure` | [CertifiedEulerFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EulerData.lean/declarations/certifiedeulerfamily.md) | 64 | `declaration-track:74e2c1fef76e28e233cc546543e7c59c16a2fcfbaff139d198f1f84703a005ec` |
+| 6 | `def` | [finiteEulerProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EulerData.lean/declarations/finiteeulerproduct.md) | 76 | `declaration-track:b2fd5acf4098d922fd02c1bf86835ce05fb07001bf9911e6c95d4336ebb72486` |
+| 7 | `theorem` | [finiteEulerProduct_insert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EulerData.lean/declarations/finiteeulerproduct-insert.md) | 84 | `result-track:c0381fa39e12901cbb1110a2143019471a2073158133e4c8bf64e523e6b414f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

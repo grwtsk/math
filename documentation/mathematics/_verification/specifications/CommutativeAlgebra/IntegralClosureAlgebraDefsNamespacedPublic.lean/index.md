@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IntegralClosureAlgebraDefsNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IntegralClosureAlgebraDefsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegralClosureAlgebraDefsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegralClosureAlgebraDefsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Algebra.IsIntegral](../../../../CommutativeAlgebra/IntegralClosureAlgebraDefsNamespacedPublic.lean/declarations/algebra-isintegral.md) | 41 | `declaration-track:a323c039c681c5b696d896060b7532e48eabfba029ad4c19ce845f48458b2496` |
-| 2 | `lemma` | [Algebra.isIntegral_def](../../../../CommutativeAlgebra/IntegralClosureAlgebraDefsNamespacedPublic.lean/declarations/algebra-isintegral-def.md) | 46 | `result-track:e65d57a973270e5ef117cc8efa5e15c70f6cdb5d3fdbf175d93c8b08339f7d72` |
-| 3 | `lemma` | [algebraMap_isIntegral_iff](../../../../CommutativeAlgebra/IntegralClosureAlgebraDefsNamespacedPublic.lean/declarations/algebramap-isintegral-iff.md) | 49 | `result-track:dbef93bb17ff5a0bc3cf8ca42a289d0efd9dee454203f38fd6d48311466a0261` |
+| 1 | `class` | [Algebra.IsIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegralClosureAlgebraDefsNamespacedPublic.lean/declarations/algebra-isintegral.md) | 41 | `declaration-track:a323c039c681c5b696d896060b7532e48eabfba029ad4c19ce845f48458b2496` |
+| 2 | `lemma` | [Algebra.isIntegral_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegralClosureAlgebraDefsNamespacedPublic.lean/declarations/algebra-isintegral-def.md) | 46 | `result-track:e65d57a973270e5ef117cc8efa5e15c70f6cdb5d3fdbf175d93c8b08339f7d72` |
+| 3 | `lemma` | [algebraMap_isIntegral_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegralClosureAlgebraDefsNamespacedPublic.lean/declarations/algebramap-isintegral-iff.md) | 49 | `result-track:dbef93bb17ff5a0bc3cf8ca42a289d0efd9dee454203f38fd6d48311466a0261` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

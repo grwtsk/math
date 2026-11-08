@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Spaces.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Spaces.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Spaces.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Spaces.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [grothendieckTopology](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Spaces.lean/declarations/grothendiecktopology.md) | 44 | `declaration-track:ca52cd8b12b020f01207933c9fedd93636b4d992eb97acc82be2fe6b3e9cb3e3` |
-| 2 | `def` | [pretopology](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Spaces.lean/declarations/pretopology.md) | 57 | `declaration-track:f8253be3a11bb9503dbb4a24973887abde5be4cba21753285dffd8f5dc48c794` |
-| 3 | `theorem` | [pretopology_ofGrothendieck](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Spaces.lean/declarations/pretopology-ofgrothendieck.md) | 74 | `result-track:9fc91c80ebab01a0e3cd473dbe8360b7bc0971e035a82482b559077faecb7ede` |
-| 4 | `theorem` | [pretopology_toGrothendieck](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Spaces.lean/declarations/pretopology-togrothendieck.md) | 87 | `result-track:56f4bab591b6f6d675d29b1ea02a7fa98cf7494bdaa86e100a1f2e0891bfe975` |
+| 1 | `def` | [grothendieckTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Spaces.lean/declarations/grothendiecktopology.md) | 44 | `declaration-track:ca52cd8b12b020f01207933c9fedd93636b4d992eb97acc82be2fe6b3e9cb3e3` |
+| 2 | `def` | [pretopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Spaces.lean/declarations/pretopology.md) | 57 | `declaration-track:f8253be3a11bb9503dbb4a24973887abde5be4cba21753285dffd8f5dc48c794` |
+| 3 | `theorem` | [pretopology_ofGrothendieck](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Spaces.lean/declarations/pretopology-ofgrothendieck.md) | 74 | `result-track:9fc91c80ebab01a0e3cd473dbe8360b7bc0971e035a82482b559077faecb7ede` |
+| 4 | `theorem` | [pretopology_toGrothendieck](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Spaces.lean/declarations/pretopology-togrothendieck.md) | 87 | `result-track:56f4bab591b6f6d675d29b1ea02a7fa98cf7494bdaa86e100a1f2e0891bfe975` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

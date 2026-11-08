@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/KummerNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/KummerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KummerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KummerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteH1Map](../../../../../ComputerScience/AlgorithmsInComputerScience/KummerNamespaced.lean/declarations/finiteh1map.md) | 36 | `declaration-track:fa8792ae16c4050f6dc9f10ebb293b73a8cda63bc40b4d5017c8670f970692bf` |
-| 2 | `structure` | [FiniteKummerSelmerData](../../../../../ComputerScience/AlgorithmsInComputerScience/KummerNamespaced.lean/declarations/finitekummerselmerdata.md) | 50 | `declaration-track:fefa2fbf966d66036ad17a5719d267e8ae1beb06faaeae6895292940dfc791ed` |
-| 3 | `def` | [compatibleWithRestriction](../../../../../ComputerScience/AlgorithmsInComputerScience/KummerNamespaced.lean/declarations/compatiblewithrestriction.md) | 73 | `declaration-track:617f5f093297dd4aec4d54786c2166fef3702c40b12dd29a72622d396f50f2db` |
-| 4 | `theorem` | [compatibleWithRestriction_of_field](../../../../../ComputerScience/AlgorithmsInComputerScience/KummerNamespaced.lean/declarations/compatiblewithrestriction-of-field.md) | 81 | `result-track:f7768b3d8577780c7f79b42c52041f7efaba7b32cf4f0a5926aa8b7efb06c07a` |
-| 5 | `def` | [globalImageLandsInSelmer](../../../../../ComputerScience/AlgorithmsInComputerScience/KummerNamespaced.lean/declarations/globalimagelandsinselmer.md) | 88 | `declaration-track:9cc8b33d2318e41eb6b960633c89c2459140113d986b56b844f4033684f03f75` |
-| 6 | `theorem` | [globalImageLandsInSelmer_of_local_conditions](../../../../../ComputerScience/AlgorithmsInComputerScience/KummerNamespaced.lean/declarations/globalimagelandsinselmer-of-local-conditions.md) | 95 | `result-track:82fe948f4a96eceff87b67a861a3e4f27ed602835bd7384ff7d5d41b1494745e` |
-| 7 | `theorem` | [depends_after_finiteSelmer](../../../../../ComputerScience/AlgorithmsInComputerScience/KummerNamespaced.lean/declarations/depends-after-finiteselmer.md) | 110 | `result-track:4125e8c7758abbc5fb2d275e1375fb7f3ca25b65a986eacefc625507d22896d0` |
+| 1 | `structure` | [FiniteH1Map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KummerNamespaced.lean/declarations/finiteh1map.md) | 36 | `declaration-track:fa8792ae16c4050f6dc9f10ebb293b73a8cda63bc40b4d5017c8670f970692bf` |
+| 2 | `structure` | [FiniteKummerSelmerData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KummerNamespaced.lean/declarations/finitekummerselmerdata.md) | 50 | `declaration-track:fefa2fbf966d66036ad17a5719d267e8ae1beb06faaeae6895292940dfc791ed` |
+| 3 | `def` | [compatibleWithRestriction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KummerNamespaced.lean/declarations/compatiblewithrestriction.md) | 73 | `declaration-track:617f5f093297dd4aec4d54786c2166fef3702c40b12dd29a72622d396f50f2db` |
+| 4 | `theorem` | [compatibleWithRestriction_of_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KummerNamespaced.lean/declarations/compatiblewithrestriction-of-field.md) | 81 | `result-track:f7768b3d8577780c7f79b42c52041f7efaba7b32cf4f0a5926aa8b7efb06c07a` |
+| 5 | `def` | [globalImageLandsInSelmer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KummerNamespaced.lean/declarations/globalimagelandsinselmer.md) | 88 | `declaration-track:9cc8b33d2318e41eb6b960633c89c2459140113d986b56b844f4033684f03f75` |
+| 6 | `theorem` | [globalImageLandsInSelmer_of_local_conditions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KummerNamespaced.lean/declarations/globalimagelandsinselmer-of-local-conditions.md) | 95 | `result-track:82fe948f4a96eceff87b67a861a3e4f27ed602835bd7384ff7d5d41b1494745e` |
+| 7 | `theorem` | [depends_after_finiteSelmer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/KummerNamespaced.lean/declarations/depends-after-finiteselmer.md) | 110 | `result-track:4125e8c7758abbc5fb2d275e1375fb7f3ca25b65a986eacefc625507d22896d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

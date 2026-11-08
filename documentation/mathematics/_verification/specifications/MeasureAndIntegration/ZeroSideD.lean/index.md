@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ZeroSideD.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ZeroSideD.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,25 +60,25 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [atD_phiHat](../../../../MeasureAndIntegration/ZeroSideD.lean/declarations/atd-phihat.md) | 38 | `result-track:192eff8f1db9c391d6bc96b11400e2e7b17a19719da22f651332877d900fd48b` |
-| 2 | `theorem` | [atD_phiHatR](../../../../MeasureAndIntegration/ZeroSideD.lean/declarations/atd-phihatr.md) | 43 | `result-track:e6e64cf8160886b09c2651c8a19ee2cc3f14ff66950743ab01c205f6d90e3779` |
-| 3 | `theorem` | [atD_a_eq_av](../../../../MeasureAndIntegration/ZeroSideD.lean/declarations/atd-a-eq-av.md) | 48 | `result-track:65fb448c8c00180ff5922f37270949dc0824d89afb38f4ae91ed299ccaa20f7e` |
-| 4 | `theorem` | [atD_tau_eq](../../../../MeasureAndIntegration/ZeroSideD.lean/declarations/atd-tau-eq.md) | 52 | `result-track:ee591d33ae631c01ac4a3d5aa0e01f53626e0df1a68b6361f96443f5b6d41717` |
-| 5 | `lemma` | [tendsto_L](../../../../MeasureAndIntegration/ZeroSideD.lean/declarations/tendsto-l.md) | 57 | `result-track:4faafa42116507f047ca750053151e9330ccb9e887f1aad5031f2107706d8d83` |
-| 6 | `lemma` | [eventually_w8](../../../../MeasureAndIntegration/ZeroSideD.lean/declarations/eventually-w8.md) | 62 | `result-track:f43e040235db4c2c7865596a75b5b8abdab4a27c7eb1eba69a1587a51c2c7080` |
-| 7 | `lemma` | [eventually_w4pi](../../../../MeasureAndIntegration/ZeroSideD.lean/declarations/eventually-w4pi.md) | 65 | `result-track:05be6f2612486f2a855100f85eb97fe3846e984b99712ed6439de5ef71143adc` |
-| 8 | `theorem` | [aD_range_of](../../../../MeasureAndIntegration/ZeroSideD.lean/declarations/ad-range-of.md) | 70 | `result-track:b4145777c8a637d078b21490b7df77bf51c2176538befab243a064f32325ef3d` |
-| 9 | `theorem` | [eventually_aD_range](../../../../MeasureAndIntegration/ZeroSideD.lean/declarations/eventually-ad-range.md) | 79 | `result-track:6addc75b34e3262bc6f5c164c2517226e41def0dba045c977863b99c409aab96` |
-| 10 | `theorem` | [poissonSqD](../../../../MeasureAndIntegration/ZeroSideD.lean/declarations/poissonsqd.md) | 86 | `result-track:9027ebcef15b11bea9ed1430d9ac8cdadf62b9479c544898a49384e021414527` |
-| 11 | `theorem` | [blockInputsD_of](../../../../MeasureAndIntegration/ZeroSideD.lean/declarations/blockinputsd-of.md) | 96 | `result-track:82f1ffc362447c694e77dff27b9b539a96d5b8d04f70acead2110567f9eb6c73` |
-| 12 | `theorem` | [eventually_blockInputsD](../../../../MeasureAndIntegration/ZeroSideD.lean/declarations/eventually-blockinputsd.md) | 104 | `result-track:c29b7155312c4a26af5248ba3873b9f406d8c21a7268b3097e2a525f6b0a57b6` |
-| 13 | `theorem` | [GzGpD_of](../../../../MeasureAndIntegration/ZeroSideD.lean/declarations/gzgpd-of.md) | 111 | `result-track:bf4dfb9b058cf8be53a0cf025978c41f5df8a97b49a21ce0de89041aa61a6b68` |
-| 14 | `theorem` | [eventually_GzGpD](../../../../MeasureAndIntegration/ZeroSideD.lean/declarations/eventually-gzgpd.md) | 120 | `result-track:36e35cfefbe2ddae89d96f7e72084a910b31cb06a1147e96beb3f3a41ce0d0a1` |
-| 15 | `def` | [C1D](../../../../MeasureAndIntegration/ZeroSideD.lean/declarations/c1d.md) | 128 | `declaration-track:d992020196bfe890a914bce1227c5eb3fa3c8f87ee59bddc1c52868fc528a675` |
-| 16 | `lemma` | [C1D_nonneg](../../../../MeasureAndIntegration/ZeroSideD.lean/declarations/c1d-nonneg.md) | 130 | `result-track:d049398ec9963d50503497a26844fd59733d675b5c25521ac325315857663639` |
-| 17 | `lemma` | [C1D_le](../../../../MeasureAndIntegration/ZeroSideD.lean/declarations/c1d-le.md) | 133 | `result-track:ae04548cf60104ee28a545155763eb0665b62ddee4e59eb4cd4abb7d1b826637` |
-| 18 | `theorem` | [hdecayD](../../../../MeasureAndIntegration/ZeroSideD.lean/declarations/hdecayd.md) | 141 | `result-track:fa75b3c3ffe04745fdeccce496f9b9bb9602684af6ad604a82d11bf141ecdb76` |
-| 19 | `theorem` | [eventually_tailPackageD](../../../../MeasureAndIntegration/ZeroSideD.lean/declarations/eventually-tailpackaged.md) | 155 | `result-track:8faaf0490e4a33a7375bc3a9134dbd90a8ab9e7089224115abccaf539a15b648` |
+| 1 | `theorem` | [atD_phiHat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/declarations/atd-phihat.md) | 38 | `result-track:192eff8f1db9c391d6bc96b11400e2e7b17a19719da22f651332877d900fd48b` |
+| 2 | `theorem` | [atD_phiHatR](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/declarations/atd-phihatr.md) | 43 | `result-track:e6e64cf8160886b09c2651c8a19ee2cc3f14ff66950743ab01c205f6d90e3779` |
+| 3 | `theorem` | [atD_a_eq_av](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/declarations/atd-a-eq-av.md) | 48 | `result-track:65fb448c8c00180ff5922f37270949dc0824d89afb38f4ae91ed299ccaa20f7e` |
+| 4 | `theorem` | [atD_tau_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/declarations/atd-tau-eq.md) | 52 | `result-track:ee591d33ae631c01ac4a3d5aa0e01f53626e0df1a68b6361f96443f5b6d41717` |
+| 5 | `lemma` | [tendsto_L](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/declarations/tendsto-l.md) | 57 | `result-track:4faafa42116507f047ca750053151e9330ccb9e887f1aad5031f2107706d8d83` |
+| 6 | `lemma` | [eventually_w8](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/declarations/eventually-w8.md) | 62 | `result-track:f43e040235db4c2c7865596a75b5b8abdab4a27c7eb1eba69a1587a51c2c7080` |
+| 7 | `lemma` | [eventually_w4pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/declarations/eventually-w4pi.md) | 65 | `result-track:05be6f2612486f2a855100f85eb97fe3846e984b99712ed6439de5ef71143adc` |
+| 8 | `theorem` | [aD_range_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/declarations/ad-range-of.md) | 70 | `result-track:b4145777c8a637d078b21490b7df77bf51c2176538befab243a064f32325ef3d` |
+| 9 | `theorem` | [eventually_aD_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/declarations/eventually-ad-range.md) | 79 | `result-track:6addc75b34e3262bc6f5c164c2517226e41def0dba045c977863b99c409aab96` |
+| 10 | `theorem` | [poissonSqD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/declarations/poissonsqd.md) | 86 | `result-track:9027ebcef15b11bea9ed1430d9ac8cdadf62b9479c544898a49384e021414527` |
+| 11 | `theorem` | [blockInputsD_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/declarations/blockinputsd-of.md) | 96 | `result-track:82f1ffc362447c694e77dff27b9b539a96d5b8d04f70acead2110567f9eb6c73` |
+| 12 | `theorem` | [eventually_blockInputsD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/declarations/eventually-blockinputsd.md) | 104 | `result-track:c29b7155312c4a26af5248ba3873b9f406d8c21a7268b3097e2a525f6b0a57b6` |
+| 13 | `theorem` | [GzGpD_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/declarations/gzgpd-of.md) | 111 | `result-track:bf4dfb9b058cf8be53a0cf025978c41f5df8a97b49a21ce0de89041aa61a6b68` |
+| 14 | `theorem` | [eventually_GzGpD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/declarations/eventually-gzgpd.md) | 120 | `result-track:36e35cfefbe2ddae89d96f7e72084a910b31cb06a1147e96beb3f3a41ce0d0a1` |
+| 15 | `def` | [C1D](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/declarations/c1d.md) | 128 | `declaration-track:d992020196bfe890a914bce1227c5eb3fa3c8f87ee59bddc1c52868fc528a675` |
+| 16 | `lemma` | [C1D_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/declarations/c1d-nonneg.md) | 130 | `result-track:d049398ec9963d50503497a26844fd59733d675b5c25521ac325315857663639` |
+| 17 | `lemma` | [C1D_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/declarations/c1d-le.md) | 133 | `result-track:ae04548cf60104ee28a545155763eb0665b62ddee4e59eb4cd4abb7d1b826637` |
+| 18 | `theorem` | [hdecayD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/declarations/hdecayd.md) | 141 | `result-track:fa75b3c3ffe04745fdeccce496f9b9bb9602684af6ad604a82d11bf141ecdb76` |
+| 19 | `theorem` | [eventually_tailPackageD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideD.lean/declarations/eventually-tailpackaged.md) | 155 | `result-track:8faaf0490e4a33a7375bc3a9134dbd90a8ab9e7089224115abccaf539a15b648` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

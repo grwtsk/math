@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [NarrowRank](../../../../Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/declarations/narrowrank.md) | 9 | `declaration-track:487a538718b90a510e13400490eb916ea9a1f01cb9cc9b6d01106a3038b909aa` |
-| 2 | `def` | [NarrowRank.cost](../../../../Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/declarations/narrowrank-cost.md) | 16 | `declaration-track:e9ae00762975332e9f1bdb01416693b811587b59ff61d7d8256e99a8ed3eadc8` |
-| 3 | `def` | [LowerRank](../../../../Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/declarations/lowerrank.md) | 19 | `declaration-track:ccf4db006ec73ee7893659c4c6cebd014e11b0c260556bc545006b96d34ffd08` |
-| 4 | `theorem` | [lowerRank_wellFounded](../../../../Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/declarations/lowerrank-wellfounded.md) | 21 | `result-track:7bfc49182c886dddb0d419a640aeb0c97736f31c20c752ba8c7ff4e1fe8ca302` |
-| 5 | `theorem` | [unchanged_rank_rejected](../../../../Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/declarations/unchanged-rank-rejected.md) | 24 | `result-track:97013fa689248bcb325198466c871466c9227e81eff93a202789b4f3affbc17b` |
-| 6 | `theorem` | [nondecreasing_rank_rejected](../../../../Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/declarations/nondecreasing-rank-rejected.md) | 27 | `result-track:3a8e16b944e7631ab1b8dec2bdc78488a6783c8824b4d4cf969e1f0dd45e1234` |
-| 7 | `theorem` | [rank_zero_terminal](../../../../Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/declarations/rank-zero-terminal.md) | 31 | `result-track:a4f8992a744509bf61b7b47be968885467308616cc9e1cd87f96ef1cfe40ed43` |
-| 8 | `theorem` | [descent_chain_length](../../../../Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/declarations/descent-chain-length.md) | 38 | `result-track:0198dc5f822515dd1c515059644d97531cb2adc64d3541b53bc983589b03edbe` |
+| 1 | `structure` | [NarrowRank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/declarations/narrowrank.md) | 9 | `declaration-track:487a538718b90a510e13400490eb916ea9a1f01cb9cc9b6d01106a3038b909aa` |
+| 2 | `def` | [NarrowRank.cost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/declarations/narrowrank-cost.md) | 16 | `declaration-track:e9ae00762975332e9f1bdb01416693b811587b59ff61d7d8256e99a8ed3eadc8` |
+| 3 | `def` | [LowerRank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/declarations/lowerrank.md) | 19 | `declaration-track:ccf4db006ec73ee7893659c4c6cebd014e11b0c260556bc545006b96d34ffd08` |
+| 4 | `theorem` | [lowerRank_wellFounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/declarations/lowerrank-wellfounded.md) | 21 | `result-track:7bfc49182c886dddb0d419a640aeb0c97736f31c20c752ba8c7ff4e1fe8ca302` |
+| 5 | `theorem` | [unchanged_rank_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/declarations/unchanged-rank-rejected.md) | 24 | `result-track:97013fa689248bcb325198466c871466c9227e81eff93a202789b4f3affbc17b` |
+| 6 | `theorem` | [nondecreasing_rank_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/declarations/nondecreasing-rank-rejected.md) | 27 | `result-track:3a8e16b944e7631ab1b8dec2bdc78488a6783c8824b4d4cf969e1f0dd45e1234` |
+| 7 | `theorem` | [rank_zero_terminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/declarations/rank-zero-terminal.md) | 31 | `result-track:a4f8992a744509bf61b7b47be968885467308616cc9e1cd87f96ef1cfe40ed43` |
+| 8 | `theorem` | [descent_chain_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AdditiveNaturalRankHistoricalSourceEdition2.lean/declarations/descent-chain-length.md) | 38 | `result-track:0198dc5f822515dd1c515059644d97531cb2adc64d3541b53bc983589b03edbe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

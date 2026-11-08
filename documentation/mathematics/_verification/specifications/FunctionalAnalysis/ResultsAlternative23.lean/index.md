@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ResultsAlternative23.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ResultsAlternative23.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative23.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative23.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,7 +62,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [kernelVector_injective_of_posDef](../../../../FunctionalAnalysis/ResultsAlternative23.lean/declarations/kernelvector-injective-of-posdef.md) | 24 | `result-track:741e092263a5659f655acf9a92d61eaa0c0434f38107e1bd040d2de0ab94a440` |
+| 1 | `theorem` | [kernelVector_injective_of_posDef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative23.lean/declarations/kernelvector-injective-of-posdef.md) | 24 | `result-track:741e092263a5659f655acf9a92d61eaa0c0434f38107e1bd040d2de0ab94a440` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

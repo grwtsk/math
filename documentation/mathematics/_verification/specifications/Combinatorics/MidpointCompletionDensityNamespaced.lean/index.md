@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/MidpointCompletionDensityNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/MidpointCompletionDensityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MidpointCompletionDensityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MidpointCompletionDensityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CoordinateSeed](../../../../Combinatorics/MidpointCompletionDensityNamespaced.lean/declarations/coordinateseed.md) | 32 | `declaration-track:e91d371b5385a995290c3eaa579049af7b07db0381e8ef407aabab034d8ce111` |
-| 2 | `def` | [CoordinateSeedMidpointDensityStatement](../../../../Combinatorics/MidpointCompletionDensityNamespaced.lean/declarations/coordinateseedmidpointdensitystatement.md) | 37 | `declaration-track:99aa74145e8ce14af9f54379872a11fcb96529e13d96f4f22cdc2a039b2a9a64` |
-| 3 | `def` | [coordinateSeedMidpointDensityOpenElement](../../../../Combinatorics/MidpointCompletionDensityNamespaced.lean/declarations/coordinateseedmidpointdensityopenelement.md) | 43 | `declaration-track:803520881729a2fd3cfb7895cfe2e6637748e97e2f6486a60153d548c78043fa` |
-| 4 | `theorem` | [retainGeneratedBy](../../../../Combinatorics/MidpointCompletionDensityNamespaced.lean/declarations/retaingeneratedby.md) | 58 | `result-track:73f98025d217ab412cb026062c124c4dddb4e210ad88b019c97ff4f2289e6d29` |
-| 5 | `theorem` | [generatedIncidenceOfSupport](../../../../Combinatorics/MidpointCompletionDensityNamespaced.lean/declarations/generatedincidenceofsupport.md) | 77 | `result-track:02a8a70d552a97752994b42ce662749186e7c22548c26580856c1067363646c2` |
-| 6 | `theorem` | [coordinateSeedMidpointDensity](../../../../Combinatorics/MidpointCompletionDensityNamespaced.lean/declarations/coordinateseedmidpointdensity.md) | 200 | `result-track:53c2ae9c0f14b84822db75d3cc21a398225ea0555aa41070d360ca3fa018895e` |
-| 7 | `def` | [coordinateSeedMidpointDensityTheoremElement](../../../../Combinatorics/MidpointCompletionDensityNamespaced.lean/declarations/coordinateseedmidpointdensitytheoremelement.md) | 208 | `declaration-track:8e19203887d0df8a60ccb16b28c1d7facfb3ba89c426b968e412c0a9fc4679c3` |
+| 1 | `def` | [CoordinateSeed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MidpointCompletionDensityNamespaced.lean/declarations/coordinateseed.md) | 32 | `declaration-track:e91d371b5385a995290c3eaa579049af7b07db0381e8ef407aabab034d8ce111` |
+| 2 | `def` | [CoordinateSeedMidpointDensityStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MidpointCompletionDensityNamespaced.lean/declarations/coordinateseedmidpointdensitystatement.md) | 37 | `declaration-track:99aa74145e8ce14af9f54379872a11fcb96529e13d96f4f22cdc2a039b2a9a64` |
+| 3 | `def` | [coordinateSeedMidpointDensityOpenElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MidpointCompletionDensityNamespaced.lean/declarations/coordinateseedmidpointdensityopenelement.md) | 43 | `declaration-track:803520881729a2fd3cfb7895cfe2e6637748e97e2f6486a60153d548c78043fa` |
+| 4 | `theorem` | [retainGeneratedBy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MidpointCompletionDensityNamespaced.lean/declarations/retaingeneratedby.md) | 58 | `result-track:73f98025d217ab412cb026062c124c4dddb4e210ad88b019c97ff4f2289e6d29` |
+| 5 | `theorem` | [generatedIncidenceOfSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MidpointCompletionDensityNamespaced.lean/declarations/generatedincidenceofsupport.md) | 77 | `result-track:02a8a70d552a97752994b42ce662749186e7c22548c26580856c1067363646c2` |
+| 6 | `theorem` | [coordinateSeedMidpointDensity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MidpointCompletionDensityNamespaced.lean/declarations/coordinateseedmidpointdensity.md) | 200 | `result-track:53c2ae9c0f14b84822db75d3cc21a398225ea0555aa41070d360ca3fa018895e` |
+| 7 | `def` | [coordinateSeedMidpointDensityTheoremElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MidpointCompletionDensityNamespaced.lean/declarations/coordinateseedmidpointdensitytheoremelement.md) | 208 | `declaration-track:8e19203887d0df8a60ccb16b28c1d7facfb3ba89c426b968e412c0a9fc4679c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

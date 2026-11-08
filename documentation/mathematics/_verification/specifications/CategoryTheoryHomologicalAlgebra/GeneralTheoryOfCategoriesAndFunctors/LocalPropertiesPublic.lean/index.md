@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalPropertiesPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalPropertiesPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalPropertiesPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalPropertiesPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isIso_of_coversTop](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalPropertiesPublic.lean/declarations/isiso-of-coverstop.md) | 35 | `result-track:0c229ad29af5fe4ec06c83f21b039292e73ce0d4a7b35209889b743397c8a104` |
-| 2 | `lemma` | [isIso_iff_of_coversTop](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalPropertiesPublic.lean/declarations/isiso-iff-of-coverstop.md) | 68 | `result-track:ab10f33a078d3f249c7acebf6d81121229a40094a2c8550b34d1c528be35d5a3` |
+| 1 | `lemma` | [isIso_of_coversTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalPropertiesPublic.lean/declarations/isiso-of-coverstop.md) | 35 | `result-track:0c229ad29af5fe4ec06c83f21b039292e73ce0d4a7b35209889b743397c8a104` |
+| 2 | `lemma` | [isIso_iff_of_coversTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalPropertiesPublic.lean/declarations/isiso-iff-of-coverstop.md) | 68 | `result-track:ab10f33a078d3f249c7acebf6d81121229a40094a2c8550b34d1c528be35d5a3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/NerveNondegeneratePublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/NerveNondegeneratePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveNondegeneratePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveNondegeneratePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [mem_range_nerve_σ_iff](../../../../AlgebraicTopology/NerveNondegeneratePublic.lean/declarations/mem-range-nerve-iff.md) | 33 | `result-track:c5d64eab8433a487642a4553a286623602188978d07d31645f6fb994bc5352b8` |
-| 2 | `lemma` | [mem_nerve_degenerate_of_eq](../../../../AlgebraicTopology/NerveNondegeneratePublic.lean/declarations/mem-nerve-degenerate-of-eq.md) | 52 | `result-track:2fdd931282cfde1ab6b329a39be77755cdaa9e364b5d9b6f14e22ef180f77216` |
-| 3 | `lemma` | [mem_nerve_nonDegenerate_iff_strictMono](../../../../AlgebraicTopology/NerveNondegeneratePublic.lean/declarations/mem-nerve-nondegenerate-iff-strictmono.md) | 58 | `result-track:d71f939c9ae30e4f4efac8b08d97bc9255e0653cfadbb910ff854f6e229ee0c6` |
-| 4 | `lemma` | [mem_nerve_nonDegenerate_iff_injective](../../../../AlgebraicTopology/NerveNondegeneratePublic.lean/declarations/mem-nerve-nondegenerate-iff-injective.md) | 70 | `result-track:a0027d66e556d16d7187efb1cca526d81c94b1293a50ad32442293af66086d2e` |
-| 5 | `lemma` | [nerve_ofSimplex_le_ofSimplex_iff](../../../../AlgebraicTopology/NerveNondegeneratePublic.lean/declarations/nerve-ofsimplex-le-ofsimplex-iff.md) | 78 | `result-track:ded1128d8f614275563168a65b64fd30300105adc47ad431ccffc15079e06cc5` |
+| 1 | `lemma` | [mem_range_nerve_σ_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveNondegeneratePublic.lean/declarations/mem-range-nerve-iff.md) | 33 | `result-track:c5d64eab8433a487642a4553a286623602188978d07d31645f6fb994bc5352b8` |
+| 2 | `lemma` | [mem_nerve_degenerate_of_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveNondegeneratePublic.lean/declarations/mem-nerve-degenerate-of-eq.md) | 52 | `result-track:2fdd931282cfde1ab6b329a39be77755cdaa9e364b5d9b6f14e22ef180f77216` |
+| 3 | `lemma` | [mem_nerve_nonDegenerate_iff_strictMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveNondegeneratePublic.lean/declarations/mem-nerve-nondegenerate-iff-strictmono.md) | 58 | `result-track:d71f939c9ae30e4f4efac8b08d97bc9255e0653cfadbb910ff854f6e229ee0c6` |
+| 4 | `lemma` | [mem_nerve_nonDegenerate_iff_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveNondegeneratePublic.lean/declarations/mem-nerve-nondegenerate-iff-injective.md) | 70 | `result-track:a0027d66e556d16d7187efb1cca526d81c94b1293a50ad32442293af66086d2e` |
+| 5 | `lemma` | [nerve_ofSimplex_le_ofSimplex_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveNondegeneratePublic.lean/declarations/nerve-ofsimplex-le-ofsimplex-iff.md) | 78 | `result-track:ded1128d8f614275563168a65b64fd30300105adc47ad431ccffc15079e06cc5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

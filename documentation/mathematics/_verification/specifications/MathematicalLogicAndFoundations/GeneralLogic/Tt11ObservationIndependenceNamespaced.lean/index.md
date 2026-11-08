@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Tt11ObservationIndependenceNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Tt11ObservationIndependenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Tt11ObservationIndependenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Tt11ObservationIndependenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ref](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Tt11ObservationIndependenceNamespaced.lean/declarations/ref.md) | 20 | `declaration-track:9f0713773609c6e261892660ef4e88cab28f62807cbefd90bc81035af69062b1` |
-| 2 | `def` | [inadmissibleProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Tt11ObservationIndependenceNamespaced.lean/declarations/inadmissibleprofile.md) | 26 | `declaration-track:d8dcd11103c72ed8fbd11086ede0909d7fbeebe3d355ba361d6a769c990db047` |
-| 3 | `def` | [unitInterpretation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Tt11ObservationIndependenceNamespaced.lean/declarations/unitinterpretation.md) | 43 | `declaration-track:9d10df53a85ba27311f9fcff38f3fee38f9e3a9c752d0e4e38ab58b232ec6000` |
-| 4 | `def` | [unitGraph](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Tt11ObservationIndependenceNamespaced.lean/declarations/unitgraph.md) | 56 | `declaration-track:36323d2ca63bfcecd4c91f21401a0a4b2ab329af1fb5d26e10b7052faebe8797` |
-| 5 | `def` | [unitOccurrence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Tt11ObservationIndependenceNamespaced.lean/declarations/unitoccurrence.md) | 62 | `declaration-track:7b8a569783a1f1b01a0c358f1a25869c8ac22328775f28796f7cf782603f9485` |
-| 6 | `def` | [inadmissibleObservation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Tt11ObservationIndependenceNamespaced.lean/declarations/inadmissibleobservation.md) | 70 | `declaration-track:9a525237dcfe84a6435d64bbf31bae0726a8b1b522f63bc288d3070136f73926` |
-| 7 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Tt11ObservationIndependenceNamespaced.lean/declarations/example.md) | 77 | `declaration-track:78e05badd8932bc56aeb5f62995da49b3d059bb0c7ab105e577e4d2daa77d0d9` |
+| 1 | `def` | [ref](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Tt11ObservationIndependenceNamespaced.lean/declarations/ref.md) | 20 | `declaration-track:9f0713773609c6e261892660ef4e88cab28f62807cbefd90bc81035af69062b1` |
+| 2 | `def` | [inadmissibleProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Tt11ObservationIndependenceNamespaced.lean/declarations/inadmissibleprofile.md) | 26 | `declaration-track:d8dcd11103c72ed8fbd11086ede0909d7fbeebe3d355ba361d6a769c990db047` |
+| 3 | `def` | [unitInterpretation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Tt11ObservationIndependenceNamespaced.lean/declarations/unitinterpretation.md) | 43 | `declaration-track:9d10df53a85ba27311f9fcff38f3fee38f9e3a9c752d0e4e38ab58b232ec6000` |
+| 4 | `def` | [unitGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Tt11ObservationIndependenceNamespaced.lean/declarations/unitgraph.md) | 56 | `declaration-track:36323d2ca63bfcecd4c91f21401a0a4b2ab329af1fb5d26e10b7052faebe8797` |
+| 5 | `def` | [unitOccurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Tt11ObservationIndependenceNamespaced.lean/declarations/unitoccurrence.md) | 62 | `declaration-track:7b8a569783a1f1b01a0c358f1a25869c8ac22328775f28796f7cf782603f9485` |
+| 6 | `def` | [inadmissibleObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Tt11ObservationIndependenceNamespaced.lean/declarations/inadmissibleobservation.md) | 70 | `declaration-track:9a525237dcfe84a6435d64bbf31bae0726a8b1b522f63bc288d3070136f73926` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Tt11ObservationIndependenceNamespaced.lean/declarations/example.md) | 77 | `declaration-track:78e05badd8932bc56aeb5f62995da49b3d059bb0c7ab105e577e4d2daa77d0d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Sheafify.lean/index.md) · [Full source](../../../../GeneralTopology/Sheafify.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Sheafify.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Sheafify.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [isGerm](../../../../GeneralTopology/Sheafify.lean/declarations/isgerm.md) | 49 | `declaration-track:f63e4fe2e8d36ca79bd422b44a403605f896babf2e584f12aa3988f5c41e8267` |
-| 2 | `def` | [isLocallyGerm](../../../../GeneralTopology/Sheafify.lean/declarations/islocallygerm.md) | 56 | `declaration-track:d935f1972a27f87d046026170f79384d999bd79f4520ae5f50b9aa3ecc0a2038` |
-| 3 | `def` | [sheafify](../../../../GeneralTopology/Sheafify.lean/declarations/sheafify.md) | 64 | `declaration-track:2b724db84728cb3601f8b7e3538befeaef1b90db3f3769cf37bda9a1e8f5c81a` |
-| 4 | `def` | [toSheafify](../../../../GeneralTopology/Sheafify.lean/declarations/tosheafify.md) | 72 | `declaration-track:89d0299ca4dc6c9e63a5e59ab8c30d3492d4a7df14ca76989e3ed171bc5ce7d4` |
-| 5 | `def` | [stalkToFiber](../../../../GeneralTopology/Sheafify.lean/declarations/stalktofiber.md) | 83 | `declaration-track:c730216dff39cd8fc9062ce46aec2676c3e80a9eb897dfd910a61da151b57fda` |
-| 6 | `theorem` | [stalkToFiber_surjective](../../../../GeneralTopology/Sheafify.lean/declarations/stalktofiber-surjective.md) | 87 | `result-track:1535d29cb39e866a6fcc2bc854c73a93cc7ffb54c24725e0bcdbfcaa83de5a1a` |
-| 7 | `theorem` | [stalkToFiber_injective](../../../../GeneralTopology/Sheafify.lean/declarations/stalktofiber-injective.md) | 97 | `result-track:c9cdecd8f5549eba2f4bac28516c6e89729275fb47eafa364a488f59c13a1c40` |
-| 8 | `def` | [sheafifyStalkIso](../../../../GeneralTopology/Sheafify.lean/declarations/sheafifystalkiso.md) | 122 | `declaration-track:f5653852b0c6ec5b086c602f6069976695ff87dfcebd0c498f6034f5e5bdc22b` |
+| 1 | `def` | [isGerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Sheafify.lean/declarations/isgerm.md) | 49 | `declaration-track:f63e4fe2e8d36ca79bd422b44a403605f896babf2e584f12aa3988f5c41e8267` |
+| 2 | `def` | [isLocallyGerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Sheafify.lean/declarations/islocallygerm.md) | 56 | `declaration-track:d935f1972a27f87d046026170f79384d999bd79f4520ae5f50b9aa3ecc0a2038` |
+| 3 | `def` | [sheafify](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Sheafify.lean/declarations/sheafify.md) | 64 | `declaration-track:2b724db84728cb3601f8b7e3538befeaef1b90db3f3769cf37bda9a1e8f5c81a` |
+| 4 | `def` | [toSheafify](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Sheafify.lean/declarations/tosheafify.md) | 72 | `declaration-track:89d0299ca4dc6c9e63a5e59ab8c30d3492d4a7df14ca76989e3ed171bc5ce7d4` |
+| 5 | `def` | [stalkToFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Sheafify.lean/declarations/stalktofiber.md) | 83 | `declaration-track:c730216dff39cd8fc9062ce46aec2676c3e80a9eb897dfd910a61da151b57fda` |
+| 6 | `theorem` | [stalkToFiber_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Sheafify.lean/declarations/stalktofiber-surjective.md) | 87 | `result-track:1535d29cb39e866a6fcc2bc854c73a93cc7ffb54c24725e0bcdbfcaa83de5a1a` |
+| 7 | `theorem` | [stalkToFiber_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Sheafify.lean/declarations/stalktofiber-injective.md) | 97 | `result-track:c9cdecd8f5549eba2f4bac28516c6e89729275fb47eafa364a488f59c13a1c40` |
+| 8 | `def` | [sheafifyStalkIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Sheafify.lean/declarations/sheafifystalkiso.md) | 122 | `declaration-track:f5653852b0c6ec5b086c602f6069976695ff87dfcebd0c498f6034f5e5bdc22b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCenteredPowerJet.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCenteredPowerJet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCenteredPowerJet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCenteredPowerJet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPowerTaylor`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripPowerTaylor.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPowerTaylor`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripPowerTaylor.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [value](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCenteredPowerJet.lean/declarations/value.md) | 22 | `declaration-track:fa84811faae583dc0cd205a0235eacb633eebe7be22d28288da0a3cdd9a1b99d` |
-| 2 | `lemma` | [displaced_power_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCenteredPowerJet.lean/declarations/displaced-power-bound.md) | 26 | `result-track:419a56abef783dc18e6a2f248aebf6ce8929fee3256aed8a940dec6e2e33835a` |
-| 3 | `theorem` | [encloses](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCenteredPowerJet.lean/declarations/encloses.md) | 37 | `result-track:5c1f4cef673e8b9baa7835b1dbe8fde307c0e4301d04da7af34928c732347c48` |
+| 1 | `def` | [value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCenteredPowerJet.lean/declarations/value.md) | 22 | `declaration-track:fa84811faae583dc0cd205a0235eacb633eebe7be22d28288da0a3cdd9a1b99d` |
+| 2 | `lemma` | [displaced_power_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCenteredPowerJet.lean/declarations/displaced-power-bound.md) | 26 | `result-track:419a56abef783dc18e6a2f248aebf6ce8929fee3256aed8a940dec6e2e33835a` |
+| 3 | `theorem` | [encloses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCenteredPowerJet.lean/declarations/encloses.md) | 37 | `result-track:5c1f4cef673e8b9baa7835b1dbe8fde307c0e4301d04da7af34928c732347c48` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

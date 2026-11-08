@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/HalfTurnInvolution.lean/index.md) · [Full source](../../../../Geometry/HalfTurnInvolution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/HalfTurnInvolution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/HalfTurnInvolution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Mathlib.Data.Real.Basic` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.Ring` — import line 20; external provider; requires a separately pinned dependency.
-- [Supplied Circle Incidence](../../../../Geometry/SuppliedCircleIncidence.lean/index.md) — import line 22; pinned internal source present.
+- [Supplied Circle Incidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SuppliedCircleIncidence.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [halfTurn](../../../../Geometry/HalfTurnInvolution.lean/declarations/halfturn.md) | 38 | `declaration-track:b43f39e2c2aef01e9f43fe65d55847d5233f793368fe0d7f95b29b29393b44b5` |
-| 2 | `theorem` | [halfTurn_involutive](../../../../Geometry/HalfTurnInvolution.lean/declarations/halfturn-involutive.md) | 44 | `result-track:8e35c233508bfeefd257c57ff363f6e76baceedf01119f0432a858d6bb19e8ef` |
+| 1 | `def` | [halfTurn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/HalfTurnInvolution.lean/declarations/halfturn.md) | 38 | `declaration-track:b43f39e2c2aef01e9f43fe65d55847d5233f793368fe0d7f95b29b29393b44b5` |
+| 2 | `theorem` | [halfTurn_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/HalfTurnInvolution.lean/declarations/halfturn-involutive.md) | 44 | `result-track:8e35c233508bfeefd257c57ff363f6e76baceedf01119f0432a858d6bb19e8ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDefsNamespacedPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDefsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDefsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDefsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [VectorMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDefsNamespacedPublic.lean/declarations/vectormeasure.md) | 58 | `declaration-track:1026289eeba91bf88cb6da32c193f2c79f57bebab095fb5844c4b1362b3079a3` |
-| 2 | `abbrev` | [SignedMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDefsNamespacedPublic.lean/declarations/signedmeasure.md) | 71 | `declaration-track:82b11562ed4e16bb47e3bc1e26dc00acce715f241e256189e205ea252a49b746` |
-| 3 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDefsNamespacedPublic.lean/declarations/instance.md) | 81 | `declaration-track:2173c718605a29e3eb7f6040ead0256016c1532450b0478dd099eb6941c76005` |
-| 4 | `theorem` | [coe_mk](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDefsNamespacedPublic.lean/declarations/coe-mk.md) | 87 | `result-track:2d60e32fb438d196e0c39bf9482de4a33139480008fb822d2ac75ccb9fcefc60` |
+| 1 | `structure` | [VectorMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDefsNamespacedPublic.lean/declarations/vectormeasure.md) | 58 | `declaration-track:1026289eeba91bf88cb6da32c193f2c79f57bebab095fb5844c4b1362b3079a3` |
+| 2 | `abbrev` | [SignedMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDefsNamespacedPublic.lean/declarations/signedmeasure.md) | 71 | `declaration-track:82b11562ed4e16bb47e3bc1e26dc00acce715f241e256189e205ea252a49b746` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDefsNamespacedPublic.lean/declarations/instance.md) | 81 | `declaration-track:2173c718605a29e3eb7f6040ead0256016c1532450b0478dd099eb6941c76005` |
+| 4 | `theorem` | [coe_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDefsNamespacedPublic.lean/declarations/coe-mk.md) | 87 | `result-track:2d60e32fb438d196e0c39bf9482de4a33139480008fb822d2ac75ccb9fcefc60` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactId.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactId.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactId.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactId.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ArtifactId](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactId.lean/declarations/artifactid.md) | 15 | `declaration-track:e539cd5a8a8f56f01ce1673699bb2bb98a2b3bbc6c659168e034e426bcf78fab` |
-| 2 | `inductive` | [ArtifactKind](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactId.lean/declarations/artifactkind.md) | 18 | `declaration-track:8a3e2af535975ba698faf9b135528da9dfb6c31a9df243ebda0eef8d69ffea21` |
-| 3 | `structure` | [RawArtifact](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactId.lean/declarations/rawartifact.md) | 33 | `declaration-track:229f3edac7284db851b0bf8f9b2773d828ecf4fcf5b6bb2362119a09a6e49b69` |
-| 4 | `def` | [RawArtifact.IsOpaque](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactId.lean/declarations/rawartifact-isopaque.md) | 52 | `declaration-track:ecca7e3e4e7c63cd7e75b752570e09a8d29eed96f4ec0459153a7b4109ee1af7` |
-| 5 | `theorem` | [RawArtifact.byte_round_trip](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactId.lean/declarations/rawartifact-byte-round-trip.md) | 56 | `result-track:aaf8ee78fa503ff242c235ead46c39b888cbfad49a28d7640dcf2ce78b9532c0` |
+| 1 | `abbrev` | [ArtifactId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactId.lean/declarations/artifactid.md) | 15 | `declaration-track:e539cd5a8a8f56f01ce1673699bb2bb98a2b3bbc6c659168e034e426bcf78fab` |
+| 2 | `inductive` | [ArtifactKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactId.lean/declarations/artifactkind.md) | 18 | `declaration-track:8a3e2af535975ba698faf9b135528da9dfb6c31a9df243ebda0eef8d69ffea21` |
+| 3 | `structure` | [RawArtifact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactId.lean/declarations/rawartifact.md) | 33 | `declaration-track:229f3edac7284db851b0bf8f9b2773d828ecf4fcf5b6bb2362119a09a6e49b69` |
+| 4 | `def` | [RawArtifact.IsOpaque](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactId.lean/declarations/rawartifact-isopaque.md) | 52 | `declaration-track:ecca7e3e4e7c63cd7e75b752570e09a8d29eed96f4ec0459153a7b4109ee1af7` |
+| 5 | `theorem` | [RawArtifact.byte_round_trip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedArtifactId.lean/declarations/rawartifact-byte-round-trip.md) | 56 | `result-track:aaf8ee78fa503ff242c235ead46c39b888cbfad49a28d7640dcf2ce78b9532c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

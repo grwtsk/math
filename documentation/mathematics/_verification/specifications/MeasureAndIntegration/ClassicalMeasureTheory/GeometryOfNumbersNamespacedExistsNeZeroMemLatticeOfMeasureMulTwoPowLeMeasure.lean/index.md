@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GeometryOfNumbersNamespacedExistsNeZeroMemLatticeOfMeasureMulTwoPowLeMeasure.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GeometryOfNumbersNamespacedExistsNeZeroMemLatticeOfMeasureMulTwoPowLeMeasure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GeometryOfNumbersNamespacedExistsNeZeroMemLatticeOfMeasureMulTwoPowLeMeasure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GeometryOfNumbersNamespacedExistsNeZeroMemLatticeOfMeasureMulTwoPowLeMeasure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_pair_mem_lattice_not_disjoint_vadd](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GeometryOfNumbersNamespacedExistsNeZeroMemLatticeOfMeasureMulTwoPowLeMeasure.lean/declarations/exists-pair-mem-lattice-not-disjoint-vadd.md) | 56 | `result-track:6027abf234155141ff325cdd5c99d1c933836b8ba4a4f274bca39f1eb251e88b` |
-| 2 | `theorem` | [exists_ne_zero_mem_lattice_of_measure_mul_two_pow_lt_measure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GeometryOfNumbersNamespacedExistsNeZeroMemLatticeOfMeasureMulTwoPowLeMeasure.lean/declarations/exists-ne-zero-mem-lattice-of-measure-mul-two-pow-lt-measure.md) | 69 | `result-track:3080ccb161eca578fbf937565e8c6bf01ae9a8baa0d33228f3ee102465513ccb` |
-| 3 | `theorem` | [exists_ne_zero_mem_lattice_of_measure_mul_two_pow_le_measure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GeometryOfNumbersNamespacedExistsNeZeroMemLatticeOfMeasureMulTwoPowLeMeasure.lean/declarations/exists-ne-zero-mem-lattice-of-measure-mul-two-pow-le-measure.md) | 96 | `result-track:f64bdfcca31d75559e7cf30fb9726366214f3214180844b2b3c61e209db2f7bc` |
+| 1 | `theorem` | [exists_pair_mem_lattice_not_disjoint_vadd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GeometryOfNumbersNamespacedExistsNeZeroMemLatticeOfMeasureMulTwoPowLeMeasure.lean/declarations/exists-pair-mem-lattice-not-disjoint-vadd.md) | 56 | `result-track:6027abf234155141ff325cdd5c99d1c933836b8ba4a4f274bca39f1eb251e88b` |
+| 2 | `theorem` | [exists_ne_zero_mem_lattice_of_measure_mul_two_pow_lt_measure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GeometryOfNumbersNamespacedExistsNeZeroMemLatticeOfMeasureMulTwoPowLeMeasure.lean/declarations/exists-ne-zero-mem-lattice-of-measure-mul-two-pow-lt-measure.md) | 69 | `result-track:3080ccb161eca578fbf937565e8c6bf01ae9a8baa0d33228f3ee102465513ccb` |
+| 3 | `theorem` | [exists_ne_zero_mem_lattice_of_measure_mul_two_pow_le_measure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GeometryOfNumbersNamespacedExistsNeZeroMemLatticeOfMeasureMulTwoPowLeMeasure.lean/declarations/exists-ne-zero-mem-lattice-of-measure-mul-two-pow-le-measure.md) | 96 | `result-track:f64bdfcca31d75559e7cf30fb9726366214f3214180844b2b3c61e209db2f7bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredSumBoundsHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredSumBoundsHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredSumBoundsHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredSumBoundsHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prime_rational_slack](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredSumBoundsHistoricalSourceEdition2.lean/declarations/prime-rational-slack.md) | 13 | `result-track:09ac1420fe1d974cd9efcb41792d663a65af5b2c809f87608f0e0375adabc1a1` |
-| 2 | `theorem` | [original_root_budget](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredSumBoundsHistoricalSourceEdition2.lean/declarations/original-root-budget.md) | 15 | `result-track:624c9f42f63b59d931c69014f4fbe45238dbca52671f96b1b9179e8b9ae824ef` |
-| 3 | `theorem` | [typeII_root_budget](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredSumBoundsHistoricalSourceEdition2.lean/declarations/typeii-root-budget.md) | 21 | `result-track:10cc7499bfb4a7fb41d3027ea9e53ee09fc6f1d6c3422a355baf92c472d9c5a9` |
-| 4 | `theorem` | [low_first_return](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredSumBoundsHistoricalSourceEdition2.lean/declarations/low-first-return.md) | 36 | `result-track:9308ab89055749e74416f6b9471cb65ee301d77b76ce9b8febb6557948294294` |
-| 5 | `theorem` | [retained_center_return](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredSumBoundsHistoricalSourceEdition2.lean/declarations/retained-center-return.md) | 42 | `result-track:7d4af58485cc37b87288ea0f6adcfeedb3dd5560c097f47db34ea8c27b50aa65` |
+| 1 | `theorem` | [prime_rational_slack](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredSumBoundsHistoricalSourceEdition2.lean/declarations/prime-rational-slack.md) | 13 | `result-track:09ac1420fe1d974cd9efcb41792d663a65af5b2c809f87608f0e0375adabc1a1` |
+| 2 | `theorem` | [original_root_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredSumBoundsHistoricalSourceEdition2.lean/declarations/original-root-budget.md) | 15 | `result-track:624c9f42f63b59d931c69014f4fbe45238dbca52671f96b1b9179e8b9ae824ef` |
+| 3 | `theorem` | [typeII_root_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredSumBoundsHistoricalSourceEdition2.lean/declarations/typeii-root-budget.md) | 21 | `result-track:10cc7499bfb4a7fb41d3027ea9e53ee09fc6f1d6c3422a355baf92c472d9c5a9` |
+| 4 | `theorem` | [low_first_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredSumBoundsHistoricalSourceEdition2.lean/declarations/low-first-return.md) | 36 | `result-track:9308ab89055749e74416f6b9471cb65ee301d77b76ce9b8febb6557948294294` |
+| 5 | `theorem` | [retained_center_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredSumBoundsHistoricalSourceEdition2.lean/declarations/retained-center-return.md) | 42 | `result-track:7d4af58485cc37b87288ea0f6adcfeedb3dd5560c097f47db34ea8c27b50aa65` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

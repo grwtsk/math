@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualXiFi.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualXiFi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiFi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiFi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fixedFrontHeight](../../../../MeasureAndIntegration/SourceActualXiFi.lean/declarations/fixedfrontheight.md) | 23 | `declaration-track:79ec6c3dff8b1c9b875ee7473176cb0345e56d6af1f079f349a4f89e778cf4c1` |
-| 2 | `def` | [fixedFrontBudget](../../../../MeasureAndIntegration/SourceActualXiFi.lean/declarations/fixedfrontbudget.md) | 27 | `declaration-track:76415c340cda7eb122298606c68bb0e7af105d0f4048ed66c1d5572a2aadfe87` |
-| 3 | `theorem` | [fixedFrontHeight_nonneg](../../../../MeasureAndIntegration/SourceActualXiFi.lean/declarations/fixedfrontheight-nonneg.md) | 29 | `result-track:c7ceef7c3a799e7187cf9f08e03561ed971d425f0b4811c85302f9cb924c238d` |
-| 4 | `theorem` | [fixedFrontBudget_nonneg](../../../../MeasureAndIntegration/SourceActualXiFi.lean/declarations/fixedfrontbudget-nonneg.md) | 34 | `result-track:53d5e8d89df091128b1ca4f0e75fe38475a8eb22f4dcc3ccd0f95953d0cafcb5` |
-| 5 | `theorem` | [shiftedActualChebyshev_abs_le_frontHeight](../../../../MeasureAndIntegration/SourceActualXiFi.lean/declarations/shiftedactualchebyshev-abs-le-frontheight.md) | 38 | `result-track:b1aaa34b16c74b98e3dc0b000e082d55f896bd22af28ff4c4d48e92a9a8b75df` |
-| 6 | `theorem` | [actual_transformed_kernel_abs_le_one](../../../../MeasureAndIntegration/SourceActualXiFi.lean/declarations/actual-transformed-kernel-abs-le-one.md) | 57 | `result-track:3a8d7bb665b3c6ab272c4aa0254d457ba65b5120b6ea61218f45c476ee45aac9` |
-| 7 | `theorem` | [actual_transformed_front_density_abs_le](../../../../MeasureAndIntegration/SourceActualXiFi.lean/declarations/actual-transformed-front-density-abs-le.md) | 76 | `result-track:b2061437aa2cb744986f1512b493ac9afa401f2faef1eb37542bc5f1371dfcf4` |
-| 8 | `theorem` | [actual_transformed_front_intervalIntegrable](../../../../MeasureAndIntegration/SourceActualXiFi.lean/declarations/actual-transformed-front-intervalintegrable.md) | 92 | `result-track:212e03fcbc15eb00c9b6efbde0908550decc16bf504c5a1162ef2ce3b5e3b06b` |
-| 9 | `theorem` | [actual_transformed_front_integral_lower](../../../../MeasureAndIntegration/SourceActualXiFi.lean/declarations/actual-transformed-front-integral-lower.md) | 116 | `result-track:d1c5dceb3ec88e78689f8c2745f262dad78501aac8e65bc09397fb06c4293875` |
+| 1 | `def` | [fixedFrontHeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiFi.lean/declarations/fixedfrontheight.md) | 23 | `declaration-track:79ec6c3dff8b1c9b875ee7473176cb0345e56d6af1f079f349a4f89e778cf4c1` |
+| 2 | `def` | [fixedFrontBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiFi.lean/declarations/fixedfrontbudget.md) | 27 | `declaration-track:76415c340cda7eb122298606c68bb0e7af105d0f4048ed66c1d5572a2aadfe87` |
+| 3 | `theorem` | [fixedFrontHeight_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiFi.lean/declarations/fixedfrontheight-nonneg.md) | 29 | `result-track:c7ceef7c3a799e7187cf9f08e03561ed971d425f0b4811c85302f9cb924c238d` |
+| 4 | `theorem` | [fixedFrontBudget_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiFi.lean/declarations/fixedfrontbudget-nonneg.md) | 34 | `result-track:53d5e8d89df091128b1ca4f0e75fe38475a8eb22f4dcc3ccd0f95953d0cafcb5` |
+| 5 | `theorem` | [shiftedActualChebyshev_abs_le_frontHeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiFi.lean/declarations/shiftedactualchebyshev-abs-le-frontheight.md) | 38 | `result-track:b1aaa34b16c74b98e3dc0b000e082d55f896bd22af28ff4c4d48e92a9a8b75df` |
+| 6 | `theorem` | [actual_transformed_kernel_abs_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiFi.lean/declarations/actual-transformed-kernel-abs-le-one.md) | 57 | `result-track:3a8d7bb665b3c6ab272c4aa0254d457ba65b5120b6ea61218f45c476ee45aac9` |
+| 7 | `theorem` | [actual_transformed_front_density_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiFi.lean/declarations/actual-transformed-front-density-abs-le.md) | 76 | `result-track:b2061437aa2cb744986f1512b493ac9afa401f2faef1eb37542bc5f1371dfcf4` |
+| 8 | `theorem` | [actual_transformed_front_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiFi.lean/declarations/actual-transformed-front-intervalintegrable.md) | 92 | `result-track:212e03fcbc15eb00c9b6efbde0908550decc16bf504c5a1162ef2ce3b5e3b06b` |
+| 9 | `theorem` | [actual_transformed_front_integral_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiFi.lean/declarations/actual-transformed-front-integral-lower.md) | 116 | `result-track:d1c5dceb3ec88e78689f8c2745f262dad78501aac8e65bc09397fb06c4293875` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [gammaSet](../../../../NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/gammaset.md) | 47 | `declaration-track:d6e71bf99ab1901e2bb998c5eb0ef3c524e88cfb7b41dcf29039abb696bbef10` |
-| 2 | `lemma` | [pairwise_disjoint_gammaSet](../../../../NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/pairwise-disjoint-gammaset.md) | 50 | `result-track:67b73e2056cc45060ecf83711b267f787c034f5276bf2bd8b75dd138af28606b` |
-| 3 | `lemma` | [gammaSet_one_eq](../../../../NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/gammaset-one-eq.md) | 57 | `result-track:00f45cc13d9c5640cd2b84e093f7037808937530d53e4615cbb4c31425263c19` |
-| 4 | `def` | [gammaSet_one_equiv](../../../../NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/gammaset-one-equiv.md) | 61 | `declaration-track:abb17d167a6616cb823eb21b88310f6f1549308a5afae75e73a976a54dbcfe58` |
-| 5 | `lemma` | [vecMul_SL2_mem_gammaSet](../../../../NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/vecmul-sl2-mem-gammaset.md) | 71 | `result-track:e77d4df1315486892101edd5a0c2c75550f6a8c440a1f58ba374575d891dc03f` |
-| 6 | `def` | [gammaSetEquiv](../../../../NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/gammasetequiv.md) | 81 | `declaration-track:5e567d13171d9294174afe76d55136ec8267493a0d0c618f99b6154614451b2c` |
-| 7 | `def` | [eisSummand](../../../../NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/eissummand.md) | 98 | `declaration-track:e043159fba584dfacf944226979937bca97818e43b6b84c5511e6347fb945ca1` |
-| 8 | `theorem` | [eisSummand_SL2_apply](../../../../NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/eissummand-sl2-apply.md) | 101 | `result-track:f7d2d7362131a6159efbfab2da46cafff7b4f858fa8e556e85b9868b7a5a6b23` |
-| 9 | `def` | [Eisenstein Series Defs Defs Defs Namespaced](../../../../NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/eisensteinseries.md) | 115 | `declaration-track:50cd29d306cfd60d5d3f46b67f6e232ad1193a0e47a0e986db9b664cde2c8505` |
-| 10 | `lemma` | [eisensteinSeries_slash_apply](../../../../NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/eisensteinseries-slash-apply.md) | 117 | `result-track:a9fcdd31be88850dde291d0a87d636f0ba3f5475de10ab6681208f17cbdb26ec` |
-| 11 | `def` | [eisensteinSeries_SIF](../../../../NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/eisensteinseries-sif.md) | 128 | `declaration-track:69d2b8618db0be56a81e2f0c505569a21032f2d89ce9e49dab9db08b15e1bb4d` |
-| 12 | `lemma` | [eisensteinSeries_SIF_apply](../../../../NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/eisensteinseries-sif-apply.md) | 133 | `result-track:d466d259bb84c6ab6fb1756985df61327ed029ccc7a540e99b5dcaf1907cc28e` |
+| 1 | `def` | [gammaSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/gammaset.md) | 47 | `declaration-track:d6e71bf99ab1901e2bb998c5eb0ef3c524e88cfb7b41dcf29039abb696bbef10` |
+| 2 | `lemma` | [pairwise_disjoint_gammaSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/pairwise-disjoint-gammaset.md) | 50 | `result-track:67b73e2056cc45060ecf83711b267f787c034f5276bf2bd8b75dd138af28606b` |
+| 3 | `lemma` | [gammaSet_one_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/gammaset-one-eq.md) | 57 | `result-track:00f45cc13d9c5640cd2b84e093f7037808937530d53e4615cbb4c31425263c19` |
+| 4 | `def` | [gammaSet_one_equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/gammaset-one-equiv.md) | 61 | `declaration-track:abb17d167a6616cb823eb21b88310f6f1549308a5afae75e73a976a54dbcfe58` |
+| 5 | `lemma` | [vecMul_SL2_mem_gammaSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/vecmul-sl2-mem-gammaset.md) | 71 | `result-track:e77d4df1315486892101edd5a0c2c75550f6a8c440a1f58ba374575d891dc03f` |
+| 6 | `def` | [gammaSetEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/gammasetequiv.md) | 81 | `declaration-track:5e567d13171d9294174afe76d55136ec8267493a0d0c618f99b6154614451b2c` |
+| 7 | `def` | [eisSummand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/eissummand.md) | 98 | `declaration-track:e043159fba584dfacf944226979937bca97818e43b6b84c5511e6347fb945ca1` |
+| 8 | `theorem` | [eisSummand_SL2_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/eissummand-sl2-apply.md) | 101 | `result-track:f7d2d7362131a6159efbfab2da46cafff7b4f858fa8e556e85b9868b7a5a6b23` |
+| 9 | `def` | [Eisenstein Series Defs Defs Defs Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/eisensteinseries.md) | 115 | `declaration-track:50cd29d306cfd60d5d3f46b67f6e232ad1193a0e47a0e986db9b664cde2c8505` |
+| 10 | `lemma` | [eisensteinSeries_slash_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/eisensteinseries-slash-apply.md) | 117 | `result-track:a9fcdd31be88850dde291d0a87d636f0ba3f5475de10ab6681208f17cbdb26ec` |
+| 11 | `def` | [eisensteinSeries_SIF](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/eisensteinseries-sif.md) | 128 | `declaration-track:69d2b8618db0be56a81e2f0c505569a21032f2d89ce9e49dab9db08b15e1bb4d` |
+| 12 | `lemma` | [eisensteinSeries_SIF_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesDefsDefsDefsNamespaced.lean/declarations/eisensteinseries-sif-apply.md) | 133 | `result-track:d466d259bb84c6ab6fb1756985df61327ed029ccc7a540e99b5dcaf1907cc28e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

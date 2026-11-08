@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryTensorProductQuotient.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryTensorProductQuotient.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductQuotient.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductQuotient.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quotIdealMapEquivTensorQuotAux](../../../../CommutativeAlgebra/RingTheoryTensorProductQuotient.lean/declarations/quotidealmapequivtensorquotaux.md) | 28 | `declaration-track:29ffee8498b765997e3d2ee172802d01ff54953231eaeedbfe0c1642c8bfbb14` |
-| 2 | `lemma` | [quotIdealMapEquivTensorQuotAux_mk](../../../../CommutativeAlgebra/RingTheoryTensorProductQuotient.lean/declarations/quotidealmapequivtensorquotaux-mk.md) | 37 | `result-track:804aa11648a5ffc3df5484dbef9f1e91748103de57142166723cd2707724f5dc` |
-| 3 | `def` | [quotIdealMapEquivTensorQuot](../../../../CommutativeAlgebra/RingTheoryTensorProductQuotient.lean/declarations/quotidealmapequivtensorquot.md) | 42 | `declaration-track:203883a64a8f57c0b69890a51f3e4ace2fde27c7535f926c19aace21442f7239` |
-| 4 | `lemma` | [quotIdealMapEquivTensorQuot_mk](../../../../CommutativeAlgebra/RingTheoryTensorProductQuotient.lean/declarations/quotidealmapequivtensorquot-mk.md) | 52 | `result-track:ccc9c60784e173aa886582c80dd74b0cb89d6892f715a4171d7d5292215b9f39` |
-| 5 | `lemma` | [quotIdealMapEquivTensorQuot_symm_tmul](../../../../CommutativeAlgebra/RingTheoryTensorProductQuotient.lean/declarations/quotidealmapequivtensorquot-symm-tmul.md) | 57 | `result-track:853807d31d7f5c396c8f68876367507fc4c8accde5234496f601b4fa257428e9` |
+| 1 | `def` | [quotIdealMapEquivTensorQuotAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductQuotient.lean/declarations/quotidealmapequivtensorquotaux.md) | 28 | `declaration-track:29ffee8498b765997e3d2ee172802d01ff54953231eaeedbfe0c1642c8bfbb14` |
+| 2 | `lemma` | [quotIdealMapEquivTensorQuotAux_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductQuotient.lean/declarations/quotidealmapequivtensorquotaux-mk.md) | 37 | `result-track:804aa11648a5ffc3df5484dbef9f1e91748103de57142166723cd2707724f5dc` |
+| 3 | `def` | [quotIdealMapEquivTensorQuot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductQuotient.lean/declarations/quotidealmapequivtensorquot.md) | 42 | `declaration-track:203883a64a8f57c0b69890a51f3e4ace2fde27c7535f926c19aace21442f7239` |
+| 4 | `lemma` | [quotIdealMapEquivTensorQuot_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductQuotient.lean/declarations/quotidealmapequivtensorquot-mk.md) | 52 | `result-track:ccc9c60784e173aa886582c80dd74b0cb89d6892f715a4171d7d5292215b9f39` |
+| 5 | `lemma` | [quotIdealMapEquivTensorQuot_symm_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductQuotient.lean/declarations/quotidealmapequivtensorquot-symm-tmul.md) | 57 | `result-track:853807d31d7f5c396c8f68876367507fc4c8accde5234496f601b4fa257428e9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

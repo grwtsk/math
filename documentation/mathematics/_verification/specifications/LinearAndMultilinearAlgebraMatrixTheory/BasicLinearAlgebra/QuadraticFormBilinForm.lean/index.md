@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticFormBilinForm.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticFormBilinForm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticFormBilinForm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticFormBilinForm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [B](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticFormBilinForm.lean/declarations/b.md) | 30 | `declaration-track:d034d6261479a597cbac22d9d412e04b66e52c2da696e2a04549089933f926f6` |
-| 2 | `theorem` | [B_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticFormBilinForm.lean/declarations/b-apply.md) | 36 | `result-track:7c0a616aa00e36e56367960e29e759d331c6aea354bf2363ec8426bfa6039a92` |
-| 3 | `theorem` | [isSymm_B](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticFormBilinForm.lean/declarations/issymm-b.md) | 40 | `result-track:e255e9faf3d08ad8cfdda9617ea134b17621480a6cdf38725272eb520b03efa4` |
-| 4 | `theorem` | [isAlt_B](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticFormBilinForm.lean/declarations/isalt-b.md) | 43 | `result-track:0b558c65a570ca9afb4bca354e063d1244b19c5d0d1f3de52b0150fc80aa0c21` |
-| 5 | `theorem` | [B_ne_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticFormBilinForm.lean/declarations/b-ne-zero.md) | 46 | `result-track:04513d6e2619836a84c347d4f0f42638c5c31dd9eb2d95a8b2b9766eb746dae2` |
-| 6 | `theorem` | [BilinForm.not_injOn_toQuadraticForm_isSymm.](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticFormBilinForm.lean/declarations/bilinform-not-injon-toquadraticform-issymm.md) | 53 | `result-track:1911ab5cbeeead71687047b717907456ea18085f0075c95f7056413f8aa89b18` |
+| 1 | `def` | [B](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticFormBilinForm.lean/declarations/b.md) | 30 | `declaration-track:d034d6261479a597cbac22d9d412e04b66e52c2da696e2a04549089933f926f6` |
+| 2 | `theorem` | [B_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticFormBilinForm.lean/declarations/b-apply.md) | 36 | `result-track:7c0a616aa00e36e56367960e29e759d331c6aea354bf2363ec8426bfa6039a92` |
+| 3 | `theorem` | [isSymm_B](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticFormBilinForm.lean/declarations/issymm-b.md) | 40 | `result-track:e255e9faf3d08ad8cfdda9617ea134b17621480a6cdf38725272eb520b03efa4` |
+| 4 | `theorem` | [isAlt_B](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticFormBilinForm.lean/declarations/isalt-b.md) | 43 | `result-track:0b558c65a570ca9afb4bca354e063d1244b19c5d0d1f3de52b0150fc80aa0c21` |
+| 5 | `theorem` | [B_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticFormBilinForm.lean/declarations/b-ne-zero.md) | 46 | `result-track:04513d6e2619836a84c347d4f0f42638c5c31dd9eb2d95a8b2b9766eb746dae2` |
+| 6 | `theorem` | [BilinForm.not_injOn_toQuadraticForm_isSymm.](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticFormBilinForm.lean/declarations/bilinform-not-injon-toquadraticform-issymm.md) | 53 | `result-track:1911ab5cbeeead71687047b717907456ea18085f0075c95f7056413f8aa89b18` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RealizationTheory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/declarations/realizationtheory.md) | 23 | `declaration-track:a6430f6299f67b5587ce2af1330bc14b4cf1df4b826e06dce0ddfa9a57454bc9` |
-| 2 | `def` | [realizationMap](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/declarations/realizationmap.md) | 33 | `declaration-track:a5f6170263570fa6b10c9db3815e9641c838cb6bbf7079a16b9c7110782d760b` |
-| 3 | `theorem` | [realizationMap_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/declarations/realizationmap-id.md) | 41 | `result-track:47e82a4ad8865003a1694d35a46936912b15442ea7de9e47705413aa346d73e9` |
-| 4 | `theorem` | [realizationMap_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/declarations/realizationmap-comp.md) | 47 | `result-track:e5aa32588ad91f95672fd5fe0d5b37f86516a1e485cf22efc0f844e40fdc7b51` |
-| 5 | `def` | [realizationIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/declarations/realizationiso.md) | 61 | `declaration-track:11b4df7ad23cc418f21a8665e8b21d1ef8c09f1d84ac46198fba59abed6906c9` |
-| 6 | `theorem` | [realizationIso_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/declarations/realizationiso-hom.md) | 69 | `result-track:cb5ed7ff427079f94baaeefff29365358d0abdefc08e01fd0c14ad6000085002` |
-| 7 | `theorem` | [realizationIso_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/declarations/realizationiso-inv.md) | 77 | `result-track:6d3425d32e42a1bd6e7aa03fe9418301fe9950f78ed180f9548054f1e77757b4` |
-| 8 | `structure` | [FactorPreservingRealization](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/declarations/factorpreservingrealization.md) | 90 | `declaration-track:5807d9c666db0016ff9d6e1cf3bf087de3241f2c8079f889f52eb2eafa024a37` |
+| 1 | `structure` | [RealizationTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/declarations/realizationtheory.md) | 23 | `declaration-track:a6430f6299f67b5587ce2af1330bc14b4cf1df4b826e06dce0ddfa9a57454bc9` |
+| 2 | `def` | [realizationMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/declarations/realizationmap.md) | 33 | `declaration-track:a5f6170263570fa6b10c9db3815e9641c838cb6bbf7079a16b9c7110782d760b` |
+| 3 | `theorem` | [realizationMap_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/declarations/realizationmap-id.md) | 41 | `result-track:47e82a4ad8865003a1694d35a46936912b15442ea7de9e47705413aa346d73e9` |
+| 4 | `theorem` | [realizationMap_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/declarations/realizationmap-comp.md) | 47 | `result-track:e5aa32588ad91f95672fd5fe0d5b37f86516a1e485cf22efc0f844e40fdc7b51` |
+| 5 | `def` | [realizationIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/declarations/realizationiso.md) | 61 | `declaration-track:11b4df7ad23cc418f21a8665e8b21d1ef8c09f1d84ac46198fba59abed6906c9` |
+| 6 | `theorem` | [realizationIso_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/declarations/realizationiso-hom.md) | 69 | `result-track:cb5ed7ff427079f94baaeefff29365358d0abdefc08e01fd0c14ad6000085002` |
+| 7 | `theorem` | [realizationIso_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/declarations/realizationiso-inv.md) | 77 | `result-track:6d3425d32e42a1bd6e7aa03fe9418301fe9950f78ed180f9548054f1e77757b4` |
+| 8 | `structure` | [FactorPreservingRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Realization.lean/declarations/factorpreservingrealization.md) | 90 | `declaration-track:5807d9c666db0016ff9d6e1cf3bf087de3241f2c8079f889f52eb2eafa024a37` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

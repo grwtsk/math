@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instMonoidalCategoryStruct](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalPublic.lean/declarations/instmonoidalcategorystruct.md) | 31 | `declaration-track:b305f875f668a18071abf748f68f9780c5eb5a180a162bca3caec161b7991bce` |
-| 2 | `def` | [MonoidalCategory.inducingFunctorData](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalPublic.lean/declarations/monoidalcategory-inducingfunctordata.md) | 45 | `declaration-track:92c42c4d4b33183625e6c83f57d90a9f7da16e28014faeef8df81fdb1adc589d` |
-| 3 | `instance` | [instMonoidalCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalPublic.lean/declarations/instmonoidalcategory.md) | 59 | `declaration-track:83685913e240a62832096e3a1b8c4767681766a99b5f581d10fc1f14699a9d6e` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalPublic.lean/declarations/instance.md) | 63 | `declaration-track:2b475821885a94ab92056de339bbe9d5e914bd472bf26990ab2d747bf4569068` |
+| 1 | `instance` | [instMonoidalCategoryStruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalPublic.lean/declarations/instmonoidalcategorystruct.md) | 31 | `declaration-track:b305f875f668a18071abf748f68f9780c5eb5a180a162bca3caec161b7991bce` |
+| 2 | `def` | [MonoidalCategory.inducingFunctorData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalPublic.lean/declarations/monoidalcategory-inducingfunctordata.md) | 45 | `declaration-track:92c42c4d4b33183625e6c83f57d90a9f7da16e28014faeef8df81fdb1adc589d` |
+| 3 | `instance` | [instMonoidalCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalPublic.lean/declarations/instmonoidalcategory.md) | 59 | `declaration-track:83685913e240a62832096e3a1b8c4767681766a99b5f581d10fc1f14699a9d6e` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalPublic.lean/declarations/instance.md) | 63 | `declaration-track:2b475821885a94ab92056de339bbe9d5e914bd472bf26990ab2d747bf4569068` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

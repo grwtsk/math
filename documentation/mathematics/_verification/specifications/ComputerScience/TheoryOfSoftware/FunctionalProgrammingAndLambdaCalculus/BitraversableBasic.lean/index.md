@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitraversableBasic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitraversableBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitraversableBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitraversableBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Bitraversable](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitraversableBasic.lean/declarations/bitraversable.md) | 44 | `declaration-track:9a9dbaf685eb85ade6dd91bd80de616a2b1460d173aa76161155582b3215a45a` |
-| 2 | `def` | [bisequence](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitraversableBasic.lean/declarations/bisequence.md) | 52 | `declaration-track:6a591af14eb19c1024093843f4c0c9612cf41d43b2bfdb76d04991eb9673d035` |
-| 3 | `class` | [LawfulBitraversable](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitraversableBasic.lean/declarations/lawfulbitraversable.md) | 58 | `declaration-track:00af007351c31d0ae169fc552689a2506d6798e9e689ea20193fd2db222a6183` |
+| 1 | `class` | [Bitraversable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitraversableBasic.lean/declarations/bitraversable.md) | 44 | `declaration-track:9a9dbaf685eb85ade6dd91bd80de616a2b1460d173aa76161155582b3215a45a` |
+| 2 | `def` | [bisequence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitraversableBasic.lean/declarations/bisequence.md) | 52 | `declaration-track:6a591af14eb19c1024093843f4c0c9612cf41d43b2bfdb76d04991eb9673d035` |
+| 3 | `class` | [LawfulBitraversable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitraversableBasic.lean/declarations/lawfulbitraversable.md) | 58 | `declaration-track:00af007351c31d0ae169fc552689a2506d6798e9e689ea20193fd2db222a6183` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

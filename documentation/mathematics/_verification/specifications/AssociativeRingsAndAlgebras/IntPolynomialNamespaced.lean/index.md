@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/IntPolynomialNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/IntPolynomialNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntPolynomialNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntPolynomialNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Polynomial.int](../../../../AssociativeRingsAndAlgebras/IntPolynomialNamespaced.lean/declarations/polynomial-int.md) | 35 | `declaration-track:442f07e640ee50930766adcb9ea0d1e23d045e53074cfb028f082e50ae5078b0` |
-| 2 | `theorem` | [int_coeff_eq](../../../../AssociativeRingsAndAlgebras/IntPolynomialNamespaced.lean/declarations/int-coeff-eq.md) | 47 | `result-track:90b330e4e72d6a8359902c0677b5d151b7f614f2159c07f55b8d6614efbaa3a6` |
-| 3 | `theorem` | [int_leadingCoeff_eq](../../../../AssociativeRingsAndAlgebras/IntPolynomialNamespaced.lean/declarations/int-leadingcoeff-eq.md) | 50 | `result-track:b3ad69baecccc100557a5b60507f3dae5ce9f91c4b589b588e0d5c6cd0003b2f` |
-| 4 | `theorem` | [int_monic_iff](../../../../AssociativeRingsAndAlgebras/IntPolynomialNamespaced.lean/declarations/int-monic-iff.md) | 53 | `result-track:e65b1be0c7292468a1bd561b0cca1bf78af5cddae21ea0399bd1bbf8635c2cc3` |
-| 5 | `theorem` | [int_natDegree](../../../../AssociativeRingsAndAlgebras/IntPolynomialNamespaced.lean/declarations/int-natdegree.md) | 57 | `result-track:1b4b117019649048d5c9762028ba5379eeb9ee00a0603bd095fbe9e20177acc6` |
-| 6 | `theorem` | [int_eval₂_eq](../../../../AssociativeRingsAndAlgebras/IntPolynomialNamespaced.lean/declarations/int-eval-eq.md) | 62 | `result-track:27d24008d2352a575de8e509dc347128fd7572f785e129d3190f7b1faf4298ae` |
+| 1 | `def` | [Polynomial.int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntPolynomialNamespaced.lean/declarations/polynomial-int.md) | 35 | `declaration-track:442f07e640ee50930766adcb9ea0d1e23d045e53074cfb028f082e50ae5078b0` |
+| 2 | `theorem` | [int_coeff_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntPolynomialNamespaced.lean/declarations/int-coeff-eq.md) | 47 | `result-track:90b330e4e72d6a8359902c0677b5d151b7f614f2159c07f55b8d6614efbaa3a6` |
+| 3 | `theorem` | [int_leadingCoeff_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntPolynomialNamespaced.lean/declarations/int-leadingcoeff-eq.md) | 50 | `result-track:b3ad69baecccc100557a5b60507f3dae5ce9f91c4b589b588e0d5c6cd0003b2f` |
+| 4 | `theorem` | [int_monic_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntPolynomialNamespaced.lean/declarations/int-monic-iff.md) | 53 | `result-track:e65b1be0c7292468a1bd561b0cca1bf78af5cddae21ea0399bd1bbf8635c2cc3` |
+| 5 | `theorem` | [int_natDegree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntPolynomialNamespaced.lean/declarations/int-natdegree.md) | 57 | `result-track:1b4b117019649048d5c9762028ba5379eeb9ee00a0603bd095fbe9e20177acc6` |
+| 6 | `theorem` | [int_eval₂_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntPolynomialNamespaced.lean/declarations/int-eval-eq.md) | 62 | `result-track:27d24008d2352a575de8e509dc347128fd7572f785e129d3190f7b1faf4298ae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

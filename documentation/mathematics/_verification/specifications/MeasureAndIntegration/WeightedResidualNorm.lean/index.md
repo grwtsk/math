@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/WeightedResidualNorm.lean/index.md) · [Full source](../../../../MeasureAndIntegration/WeightedResidualNorm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedResidualNorm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedResidualNorm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [l2_angular_square](../../../../MeasureAndIntegration/WeightedResidualNorm.lean/declarations/l2-angular-square.md) | 17 | `result-track:73afd79286cf96c65fd8e482b2c485c3852969883f272aa2e53bdc56ff758469` |
-| 2 | `theorem` | [weightedResidual_fourier_ae](../../../../MeasureAndIntegration/WeightedResidualNorm.lean/declarations/weightedresidual-fourier-ae.md) | 42 | `result-track:ce64334122cd13c97fc6145e1540f564ebed17006978d6f9b1ab8b8ac87d299a` |
-| 3 | `theorem` | [weightedResidual_norm_sq](../../../../MeasureAndIntegration/WeightedResidualNorm.lean/declarations/weightedresidual-norm-sq.md) | 63 | `result-track:25dcd62294d4a3b194302457a01b3f73b7e6d9462ce995cd3383ca228ba1e93b` |
-| 4 | `theorem` | [arithmeticError_le_core_tails](../../../../MeasureAndIntegration/WeightedResidualNorm.lean/declarations/arithmeticerror-le-core-tails.md) | 71 | `result-track:a923089d5175fecf0dfa4b423d381a0228db52f506c527ff8089bd0432395f5b` |
-| 5 | `theorem` | [arithmeticError_le_scheduled_core](../../../../MeasureAndIntegration/WeightedResidualNorm.lean/declarations/arithmeticerror-le-scheduled-core.md) | 84 | `result-track:daa7df707421ff38b636154a19757968809f8d49efd75b35422d377ff133eb58` |
+| 1 | `theorem` | [l2_angular_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedResidualNorm.lean/declarations/l2-angular-square.md) | 17 | `result-track:73afd79286cf96c65fd8e482b2c485c3852969883f272aa2e53bdc56ff758469` |
+| 2 | `theorem` | [weightedResidual_fourier_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedResidualNorm.lean/declarations/weightedresidual-fourier-ae.md) | 42 | `result-track:ce64334122cd13c97fc6145e1540f564ebed17006978d6f9b1ab8b8ac87d299a` |
+| 3 | `theorem` | [weightedResidual_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedResidualNorm.lean/declarations/weightedresidual-norm-sq.md) | 63 | `result-track:25dcd62294d4a3b194302457a01b3f73b7e6d9462ce995cd3383ca228ba1e93b` |
+| 4 | `theorem` | [arithmeticError_le_core_tails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedResidualNorm.lean/declarations/arithmeticerror-le-core-tails.md) | 71 | `result-track:a923089d5175fecf0dfa4b423d381a0228db52f506c527ff8089bd0432395f5b` |
+| 5 | `theorem` | [arithmeticError_le_scheduled_core](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedResidualNorm.lean/declarations/arithmeticerror-le-scheduled-core.md) | 84 | `result-track:daa7df707421ff38b636154a19757968809f8d49efd75b35422d377ff133eb58` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

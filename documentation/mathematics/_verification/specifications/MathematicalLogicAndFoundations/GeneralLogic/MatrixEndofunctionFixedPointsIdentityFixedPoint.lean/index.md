@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixEndofunctionFixedPointsIdentityFixedPoint.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixEndofunctionFixedPointsIdentityFixedPoint.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixEndofunctionFixedPointsIdentityFixedPoint.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixEndofunctionFixedPointsIdentityFixedPoint.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Carrier.BinaryMatrix` — import line 20; external provider; requires a separately pinned dependency.
-- [Labeled Endofunction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LabeledEndofunction.lean/index.md) — import line 22; pinned internal source present.
+- [Labeled Endofunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LabeledEndofunction.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [copyRule](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixEndofunctionFixedPointsIdentityFixedPoint.lean/declarations/copyrule.md) | 40 | `declaration-track:e04701bd15927192ed9f9d0f5a5d730821b12e1c589a6bab3047208c349748ef` |
-| 2 | `theorem` | [copyRule_fixed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixEndofunctionFixedPointsIdentityFixedPoint.lean/declarations/copyrule-fixed.md) | 44 | `result-track:a390f17925c30485e383722aca25318f96713c3bfcdddcbe1d825440ffa5df5c` |
+| 1 | `def` | [copyRule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixEndofunctionFixedPointsIdentityFixedPoint.lean/declarations/copyrule.md) | 40 | `declaration-track:e04701bd15927192ed9f9d0f5a5d730821b12e1c589a6bab3047208c349748ef` |
+| 2 | `theorem` | [copyRule_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixEndofunctionFixedPointsIdentityFixedPoint.lean/declarations/copyrule-fixed.md) | 44 | `result-track:a390f17925c30485e383722aca25318f96713c3bfcdddcbe1d825440ffa5df5c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

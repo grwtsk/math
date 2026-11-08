@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/LConvolutionNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/LConvolutionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LConvolutionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LConvolutionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mlconvolution](../../../../FunctionalAnalysis/LConvolutionNamespaced.lean/declarations/mlconvolution.md) | 49 | `declaration-track:901186848101cb5e0283fb3fca20bb93f92cb3cb5cd8b0bdb2bcacb5364b0f9c` |
-| 2 | `theorem` | [mlconvolution_def](../../../../FunctionalAnalysis/LConvolutionNamespaced.lean/declarations/mlconvolution-def.md) | 67 | `result-track:61e47c39eb57974fada32d7e0b19d7d65c04ca7321c28602ccc712d5e6d7edca` |
-| 3 | `theorem` | [zero_mlconvolution](../../../../FunctionalAnalysis/LConvolutionNamespaced.lean/declarations/zero-mlconvolution.md) | 73 | `result-track:cb9bb9c5761fbad38696834e8979b2b7af82424cb6f5301d042292cfd4c2c724` |
-| 4 | `theorem` | [mlconvolution_zero](../../../../FunctionalAnalysis/LConvolutionNamespaced.lean/declarations/mlconvolution-zero.md) | 79 | `result-track:abd25fdda215a2c536f6eb2efe93e5d291863fa693457012a53d885321e68681` |
-| 5 | `theorem` | [measurable_mlconvolution](../../../../FunctionalAnalysis/LConvolutionNamespaced.lean/declarations/measurable-mlconvolution.md) | 85 | `result-track:53d63d5990e8133444d368a21a660ec56f47cca75973d4c69cd1f507987445cc` |
+| 1 | `def` | [mlconvolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LConvolutionNamespaced.lean/declarations/mlconvolution.md) | 49 | `declaration-track:901186848101cb5e0283fb3fca20bb93f92cb3cb5cd8b0bdb2bcacb5364b0f9c` |
+| 2 | `theorem` | [mlconvolution_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LConvolutionNamespaced.lean/declarations/mlconvolution-def.md) | 67 | `result-track:61e47c39eb57974fada32d7e0b19d7d65c04ca7321c28602ccc712d5e6d7edca` |
+| 3 | `theorem` | [zero_mlconvolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LConvolutionNamespaced.lean/declarations/zero-mlconvolution.md) | 73 | `result-track:cb9bb9c5761fbad38696834e8979b2b7af82424cb6f5301d042292cfd4c2c724` |
+| 4 | `theorem` | [mlconvolution_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LConvolutionNamespaced.lean/declarations/mlconvolution-zero.md) | 79 | `result-track:abd25fdda215a2c536f6eb2efe93e5d291863fa693457012a53d885321e68681` |
+| 5 | `theorem` | [measurable_mlconvolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LConvolutionNamespaced.lean/declarations/measurable-mlconvolution.md) | 85 | `result-track:53d63d5990e8133444d368a21a660ec56f47cca75973d4c69cd1f507987445cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

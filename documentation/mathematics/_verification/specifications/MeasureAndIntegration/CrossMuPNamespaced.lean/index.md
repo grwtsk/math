@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CrossMuPNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CrossMuPNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Mform_mu_PX_eq](../../../../MeasureAndIntegration/CrossMuPNamespaced.lean/declarations/mform-mu-px-eq.md) | 56 | `result-track:7573fd0353eb2397c8b1207139cf1630aa0ce46e281258dc99b770b048762a5d` |
-| 2 | `theorem` | [prop_cross_muP](../../../../MeasureAndIntegration/CrossMuPNamespaced.lean/declarations/prop-cross-mup.md) | 77 | `result-track:0862564379b0976dab559f828e14f14bbcc70026e161c32b2ebdecf6d27b2fd8` |
+| 1 | `lemma` | [Mform_mu_PX_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPNamespaced.lean/declarations/mform-mu-px-eq.md) | 56 | `result-track:7573fd0353eb2397c8b1207139cf1630aa0ce46e281258dc99b770b048762a5d` |
+| 2 | `theorem` | [prop_cross_muP](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPNamespaced.lean/declarations/prop-cross-mup.md) | 77 | `result-track:0862564379b0976dab559f828e14f14bbcc70026e161c32b2ebdecf6d27b2fd8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

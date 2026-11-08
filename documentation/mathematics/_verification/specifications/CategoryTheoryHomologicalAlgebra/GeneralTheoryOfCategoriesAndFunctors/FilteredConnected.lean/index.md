@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnected.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnected.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnected.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnected.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsFilteredOrEmpty.isPreconnected](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnected.lean/declarations/isfilteredorempty-ispreconnected.md) | 19 | `result-track:e84f262ceb6f8882bd83d88e6c22fe67298487110c6314ee15d101c484f5adde` |
-| 2 | `theorem` | [IsCofilteredOrEmpty.isPreconnected](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnected.lean/declarations/iscofilteredorempty-ispreconnected.md) | 24 | `result-track:e26ef3604ca0aff60f4bce9365ecdfa05a9c2ae0f07ff637ebc1719f6e1eff0c` |
-| 3 | `theorem` | [IsFiltered.isConnected](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnected.lean/declarations/isfiltered-isconnected.md) | 30 | `result-track:bd1189b0987bf5e6a1b46dc7ae9fdc401ceef411cf817c34417a0ae5b8fa955e` |
-| 4 | `theorem` | [IsCofiltered.isConnected](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnected.lean/declarations/iscofiltered-isconnected.md) | 34 | `result-track:0eb2bdf47f47dbcdb65cdf77d9abe271e328b5e31d4c797dd2139c5074d2e61c` |
+| 1 | `theorem` | [IsFilteredOrEmpty.isPreconnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnected.lean/declarations/isfilteredorempty-ispreconnected.md) | 19 | `result-track:e84f262ceb6f8882bd83d88e6c22fe67298487110c6314ee15d101c484f5adde` |
+| 2 | `theorem` | [IsCofilteredOrEmpty.isPreconnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnected.lean/declarations/iscofilteredorempty-ispreconnected.md) | 24 | `result-track:e26ef3604ca0aff60f4bce9365ecdfa05a9c2ae0f07ff637ebc1719f6e1eff0c` |
+| 3 | `theorem` | [IsFiltered.isConnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnected.lean/declarations/isfiltered-isconnected.md) | 30 | `result-track:bd1189b0987bf5e6a1b46dc7ae9fdc401ceef411cf817c34417a0ae5b8fa955e` |
+| 4 | `theorem` | [IsCofiltered.isConnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnected.lean/declarations/iscofiltered-isconnected.md) | 34 | `result-track:0eb2bdf47f47dbcdb65cdf77d9abe271e328b5e31d4c797dd2139c5074d2e61c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

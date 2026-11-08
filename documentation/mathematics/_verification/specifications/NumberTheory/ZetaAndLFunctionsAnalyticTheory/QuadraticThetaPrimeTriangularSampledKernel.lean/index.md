@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularSampledKernel.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularSampledKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularSampledKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularSampledKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeTriangularKernelClosedForm`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularKernelClosedForm.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeTriangularKernelClosedForm`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularKernelClosedForm.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [symmetricTriangularKernelDecay_explicit](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularSampledKernel.lean/declarations/symmetrictriangularkerneldecay-explicit.md) | 12 | `result-track:e0422b8f728d4e89c1362852b1788fe7a9f2e7fa67e0bba3378ff46cd1ab64eb` |
-| 2 | `def` | [sampledTriangularKernel](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularSampledKernel.lean/declarations/sampledtriangularkernel.md) | 60 | `declaration-track:304aeec06946688e757017aef2aca77cfdb9dbfa10f8741c9994fbc22b711926` |
-| 3 | `theorem` | [sampledTriangularKernel_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularSampledKernel.lean/declarations/sampledtriangularkernel-nonnegative.md) | 66 | `result-track:f97817edb6bf6cf34057401888935b077e585d518b1bbec002bb09400f97bc6f` |
-| 4 | `theorem` | [sampledTriangularKernel_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularSampledKernel.lean/declarations/sampledtriangularkernel-le.md) | 74 | `result-track:1bf406960bb77390745b7b64dc3dc31c844578be2a42eb75489fa0f8b7cfd96f` |
-| 5 | `def` | [PrimePrefixSampledKernelTailPropagationClaim](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularSampledKernel.lean/declarations/primeprefixsampledkerneltailpropagationclaim.md) | 115 | `declaration-track:16550c714929a8f8fab9e94dc25c64af943c375ba6601db6f4f692820acd7199` |
+| 1 | `theorem` | [symmetricTriangularKernelDecay_explicit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularSampledKernel.lean/declarations/symmetrictriangularkerneldecay-explicit.md) | 12 | `result-track:e0422b8f728d4e89c1362852b1788fe7a9f2e7fa67e0bba3378ff46cd1ab64eb` |
+| 2 | `def` | [sampledTriangularKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularSampledKernel.lean/declarations/sampledtriangularkernel.md) | 60 | `declaration-track:304aeec06946688e757017aef2aca77cfdb9dbfa10f8741c9994fbc22b711926` |
+| 3 | `theorem` | [sampledTriangularKernel_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularSampledKernel.lean/declarations/sampledtriangularkernel-nonnegative.md) | 66 | `result-track:f97817edb6bf6cf34057401888935b077e585d518b1bbec002bb09400f97bc6f` |
+| 4 | `theorem` | [sampledTriangularKernel_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularSampledKernel.lean/declarations/sampledtriangularkernel-le.md) | 74 | `result-track:1bf406960bb77390745b7b64dc3dc31c844578be2a42eb75489fa0f8b7cfd96f` |
+| 5 | `def` | [PrimePrefixSampledKernelTailPropagationClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularSampledKernel.lean/declarations/primeprefixsampledkerneltailpropagationclaim.md) | 115 | `declaration-track:16550c714929a8f8fab9e94dc25c64af943c375ba6601db6f4f692820acd7199` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

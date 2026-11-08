@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RhGevreyInitialNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RhGevreyInitialNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitialNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitialNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhGevreyInitialNamespaced.lean/declarations/example-source-edition-9.md) | 18 | `declaration-track:ec69f884126fb0a63ecec83d7beb94e5c9f8b58d2f32a9a2a4a536c5cfec2e8d` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhGevreyInitialNamespaced.lean/declarations/example-source-edition-2.md) | 25 | `declaration-track:2af3e3f5bb32130c72b6a9cc8b2ce015c9f55f2fea65ff873a068f5b07e8267c` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhGevreyInitialNamespaced.lean/declarations/example-source-edition-5.md) | 32 | `declaration-track:a7d7967a37fe57791dc47c6129b5df893e487699394abd321b2563e12e49e58c` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhGevreyInitialNamespaced.lean/declarations/example-source-edition-7.md) | 36 | `declaration-track:cc54452d31378b3d1a6ee723c39f311164b9e322abb5993d91cd0fee46b66f9b` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhGevreyInitialNamespaced.lean/declarations/example-source-edition-3.md) | 41 | `declaration-track:3dcbb3cf9e710b5202e3fc2d22caad2935f839fa376f82d2da6dba6b5b4765c0` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhGevreyInitialNamespaced.lean/declarations/example-source-edition-6.md) | 51 | `declaration-track:bf909d50a66621086f398b1932c68470d19410815bffb19ac0d4603b94ee0452` |
-| 7 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhGevreyInitialNamespaced.lean/declarations/example.md) | 57 | `declaration-track:13bdce2cc14d73c6ee1e4d98d04e296b4ea679b37c8982d4aa5ded4ee77204fe` |
-| 8 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhGevreyInitialNamespaced.lean/declarations/example-source-edition-8.md) | 62 | `declaration-track:e8a02e9cdfb1d8f10de0ae83a84b85a04cabbb3435db857582114482641a23a4` |
-| 9 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhGevreyInitialNamespaced.lean/declarations/example-source-edition-4.md) | 66 | `declaration-track:9eeff4f78954e3a6aee18ad8d761edc735416516451b09cdff7613cef1182d10` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitialNamespaced.lean/declarations/example-source-edition-9.md) | 18 | `declaration-track:ec69f884126fb0a63ecec83d7beb94e5c9f8b58d2f32a9a2a4a536c5cfec2e8d` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitialNamespaced.lean/declarations/example-source-edition-2.md) | 25 | `declaration-track:2af3e3f5bb32130c72b6a9cc8b2ce015c9f55f2fea65ff873a068f5b07e8267c` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitialNamespaced.lean/declarations/example-source-edition-5.md) | 32 | `declaration-track:a7d7967a37fe57791dc47c6129b5df893e487699394abd321b2563e12e49e58c` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitialNamespaced.lean/declarations/example-source-edition-7.md) | 36 | `declaration-track:cc54452d31378b3d1a6ee723c39f311164b9e322abb5993d91cd0fee46b66f9b` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitialNamespaced.lean/declarations/example-source-edition-3.md) | 41 | `declaration-track:3dcbb3cf9e710b5202e3fc2d22caad2935f839fa376f82d2da6dba6b5b4765c0` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitialNamespaced.lean/declarations/example-source-edition-6.md) | 51 | `declaration-track:bf909d50a66621086f398b1932c68470d19410815bffb19ac0d4603b94ee0452` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitialNamespaced.lean/declarations/example.md) | 57 | `declaration-track:13bdce2cc14d73c6ee1e4d98d04e296b4ea679b37c8982d4aa5ded4ee77204fe` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitialNamespaced.lean/declarations/example-source-edition-8.md) | 62 | `declaration-track:e8a02e9cdfb1d8f10de0ae83a84b85a04cabbb3435db857582114482641a23a4` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitialNamespaced.lean/declarations/example-source-edition-4.md) | 66 | `declaration-track:9eeff4f78954e3a6aee18ad8d761edc735416516451b09cdff7613cef1182d10` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

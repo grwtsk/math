@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorLatticeGram.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorLatticeGram.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorLatticeGram.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorLatticeGram.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_correlation_deriv_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorLatticeGram.lean/declarations/actual-correlation-deriv-zero.md) | 33 | `result-track:380dc2311a574e5a6c04f72d77a7986bfb064bf2add6e1294b4c3fa87c123947` |
-| 2 | `theorem` | [actual_five_eight_gram_kernel_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorLatticeGram.lean/declarations/actual-five-eight-gram-kernel-lower.md) | 49 | `result-track:c4318e8b99fd31233fe779f3406709368145c01f327d9af355298564a445cd9d` |
-| 3 | `theorem` | [actual_five_eight_gram_kernel_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorLatticeGram.lean/declarations/actual-five-eight-gram-kernel-pos.md) | 67 | `result-track:949565d7fe06db21f74bd0c2c9bef3704f31a3c156bc4f9bc54504e5fed444ae` |
-| 4 | `theorem` | [actual_log_difference_gram_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorLatticeGram.lean/declarations/actual-log-difference-gram-lower.md) | 72 | `result-track:a882c12e179818516348ddfc6db829082a94bd42b203f9f54b39a39c9208ee11` |
-| 5 | `theorem` | [actual_five_eight_L2_gram_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorLatticeGram.lean/declarations/actual-five-eight-l2-gram-lower.md) | 79 | `result-track:8b6096fb9c417caecd2ed15259f1b7465faeb992c0514f34b74e4b956f984c9b` |
-| 6 | `theorem` | [actual_five_eight_L2_gram_ne_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorLatticeGram.lean/declarations/actual-five-eight-l2-gram-ne-zero.md) | 87 | `result-track:0351b0b752e7a112cd561d12d33e94d987dda5a3fabe2e026473d13868c74259` |
+| 1 | `theorem` | [actual_correlation_deriv_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorLatticeGram.lean/declarations/actual-correlation-deriv-zero.md) | 33 | `result-track:380dc2311a574e5a6c04f72d77a7986bfb064bf2add6e1294b4c3fa87c123947` |
+| 2 | `theorem` | [actual_five_eight_gram_kernel_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorLatticeGram.lean/declarations/actual-five-eight-gram-kernel-lower.md) | 49 | `result-track:c4318e8b99fd31233fe779f3406709368145c01f327d9af355298564a445cd9d` |
+| 3 | `theorem` | [actual_five_eight_gram_kernel_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorLatticeGram.lean/declarations/actual-five-eight-gram-kernel-pos.md) | 67 | `result-track:949565d7fe06db21f74bd0c2c9bef3704f31a3c156bc4f9bc54504e5fed444ae` |
+| 4 | `theorem` | [actual_log_difference_gram_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorLatticeGram.lean/declarations/actual-log-difference-gram-lower.md) | 72 | `result-track:a882c12e179818516348ddfc6db829082a94bd42b203f9f54b39a39c9208ee11` |
+| 5 | `theorem` | [actual_five_eight_L2_gram_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorLatticeGram.lean/declarations/actual-five-eight-l2-gram-lower.md) | 79 | `result-track:8b6096fb9c417caecd2ed15259f1b7465faeb992c0514f34b74e4b956f984c9b` |
+| 6 | `theorem` | [actual_five_eight_L2_gram_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDivisorLatticeGram.lean/declarations/actual-five-eight-l2-gram-ne-zero.md) | 87 | `result-track:0351b0b752e7a112cd561d12d33e94d987dda5a3fabe2e026473d13868c74259` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

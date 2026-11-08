@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceEndpointThreeTriangularConsumer.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceEndpointThreeTriangularConsumer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceEndpointThreeTriangularConsumer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceEndpointThreeTriangularConsumer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceEndpoint_abs_le_three](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceEndpointThreeTriangularConsumer.lean/declarations/sourceendpoint-abs-le-three.md) | 20 | `result-track:cf9871855aec4f5768c3741adecee84aa46c98d8d1c68ea46e7b37e80515fd2a` |
-| 2 | `theorem` | [sourceEndpoint_abs_le_exponential](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceEndpointThreeTriangularConsumer.lean/declarations/sourceendpoint-abs-le-exponential.md) | 23 | `result-track:c683f2b12ec01d0a88589a687e4027614f008450a640b699dfa3d7628f6e9dac` |
-| 3 | `theorem` | [residual_upper_of_strict_interior_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceEndpointThreeTriangularConsumer.lean/declarations/residual-upper-of-strict-interior-upper.md) | 28 | `result-track:314a97dafabb5fab3e25f6857ee12cb934fe838acab75a803d7bea87b00bf21b` |
-| 4 | `theorem` | [residual_tail_of_strict_interior_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceEndpointThreeTriangularConsumer.lean/declarations/residual-tail-of-strict-interior-upper.md) | 41 | `result-track:d8f70d404fd92bd41849df889be7b26b376d76cd6b2a309d958d5c99c4ee6d89` |
-| 5 | `theorem` | [residual_tail_of_triangular_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceEndpointThreeTriangularConsumer.lean/declarations/residual-tail-of-triangular-upper.md) | 51 | `result-track:252b29760395a9c91f0a5834aa33c53a8d1c1951b3c8085dae9554b742867d1b` |
-| 6 | `theorem` | [estimate_of_triangular_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceEndpointThreeTriangularConsumer.lean/declarations/estimate-of-triangular-upper.md) | 62 | `result-track:713a46a3c00630286f656cf5227ac357b34ca1c69f70ae03a22b89c3a9c6f4f8` |
+| 1 | `theorem` | [sourceEndpoint_abs_le_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceEndpointThreeTriangularConsumer.lean/declarations/sourceendpoint-abs-le-three.md) | 20 | `result-track:cf9871855aec4f5768c3741adecee84aa46c98d8d1c68ea46e7b37e80515fd2a` |
+| 2 | `theorem` | [sourceEndpoint_abs_le_exponential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceEndpointThreeTriangularConsumer.lean/declarations/sourceendpoint-abs-le-exponential.md) | 23 | `result-track:c683f2b12ec01d0a88589a687e4027614f008450a640b699dfa3d7628f6e9dac` |
+| 3 | `theorem` | [residual_upper_of_strict_interior_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceEndpointThreeTriangularConsumer.lean/declarations/residual-upper-of-strict-interior-upper.md) | 28 | `result-track:314a97dafabb5fab3e25f6857ee12cb934fe838acab75a803d7bea87b00bf21b` |
+| 4 | `theorem` | [residual_tail_of_strict_interior_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceEndpointThreeTriangularConsumer.lean/declarations/residual-tail-of-strict-interior-upper.md) | 41 | `result-track:d8f70d404fd92bd41849df889be7b26b376d76cd6b2a309d958d5c99c4ee6d89` |
+| 5 | `theorem` | [residual_tail_of_triangular_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceEndpointThreeTriangularConsumer.lean/declarations/residual-tail-of-triangular-upper.md) | 51 | `result-track:252b29760395a9c91f0a5834aa33c53a8d1c1951b3c8085dae9554b742867d1b` |
+| 6 | `theorem` | [estimate_of_triangular_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceEndpointThreeTriangularConsumer.lean/declarations/estimate-of-triangular-upper.md) | 62 | `result-track:713a46a3c00630286f656cf5227ac357b34ca1c69f70ae03a22b89c3a9c6f4f8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

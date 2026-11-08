@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/QuadraticIntervalRangeReductionCore.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/QuadraticIntervalRangeReductionCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuadraticIntervalRangeReductionCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuadraticIntervalRangeReductionCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.QuadraticIntervalElementaryCore`](../../../../RealFunctions/QuadraticIntervalElementaryCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.ErrorBounds.DyadicLogEnclosure`](../../../../RealFunctions/DyadicLogEnclosure.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.IntervalMellinRangeReduction`](../../../../FunctionsOfAComplexVariable/IntervalMellinRangeReduction.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Interfaces.QuadraticIntervalElementaryCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuadraticIntervalElementaryCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.DyadicLogEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DyadicLogEnclosure.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.IntervalMellinRangeReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinRangeReduction.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

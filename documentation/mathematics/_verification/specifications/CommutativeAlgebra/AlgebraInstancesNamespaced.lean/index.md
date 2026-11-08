@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AlgebraInstancesNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AlgebraInstancesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraInstancesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraInstancesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/AlgebraInstancesNamespaced.lean/declarations/instance-source-edition-2.md) | 42 | `declaration-track:734dc6cf52906f6c3210601a6095e23f29005975ed9ba53eb28d947add900b8c` |
-| 2 | `theorem` | [algebraMap_injective](../../../../CommutativeAlgebra/AlgebraInstancesNamespaced.lean/declarations/algebramap-injective.md) | 44 | `result-track:b2975f6448a8302a2a4a623d1275932cfe6b67edc96b81be465c0d80a134bde3` |
-| 3 | `theorem` | [isIntegral_of_mem_ringOfIntegers](../../../../CommutativeAlgebra/AlgebraInstancesNamespaced.lean/declarations/isintegral-of-mem-ringofintegers.md) | 47 | `result-track:d37137507f623a33fdec2edb3ccfc37f8629b1fd19d73924b951bd4de280415e` |
-| 4 | `theorem` | [isIntegral_of_mem_ringOfIntegers'](../../../../CommutativeAlgebra/AlgebraInstancesNamespaced.lean/declarations/isintegral-of-mem-ringofintegers-source-edition-2.md) | 54 | `result-track:f1dbc5cd1642814250308168095c17ac0043a1e4d174ff69d934381301f0f130` |
-| 5 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/AlgebraInstancesNamespaced.lean/declarations/instance.md) | 60 | `declaration-track:050969dd4ade6289a112905c0cc3083c318a2e3161b6164fd2a03162902a8e51` |
-| 6 | `instance` | [algebra](../../../../CommutativeAlgebra/AlgebraInstancesNamespaced.lean/declarations/algebra.md) | 64 | `declaration-track:1f2b1a75aaaa5f9a32c39afa4799bc00838ed1aa3d1268cbb02fa64567f70e2e` |
-| 7 | `def` | [equiv](../../../../CommutativeAlgebra/AlgebraInstancesNamespaced.lean/declarations/equiv.md) | 78 | `declaration-track:bd4b22afdd217ed97900dacb7e6c4b5d621ebec91d099d5ff2b7a79bcf21c55c` |
-| 8 | `theorem` | [integralClosure_algebraMap_injective](../../../../CommutativeAlgebra/AlgebraInstancesNamespaced.lean/declarations/integralclosure-algebramap-injective.md) | 86 | `result-track:9490e33db7884f8ab7cb2beae4c792928cccf157cfcd27fd51dcb69a3b9c5717` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraInstancesNamespaced.lean/declarations/instance-source-edition-2.md) | 42 | `declaration-track:734dc6cf52906f6c3210601a6095e23f29005975ed9ba53eb28d947add900b8c` |
+| 2 | `theorem` | [algebraMap_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraInstancesNamespaced.lean/declarations/algebramap-injective.md) | 44 | `result-track:b2975f6448a8302a2a4a623d1275932cfe6b67edc96b81be465c0d80a134bde3` |
+| 3 | `theorem` | [isIntegral_of_mem_ringOfIntegers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraInstancesNamespaced.lean/declarations/isintegral-of-mem-ringofintegers.md) | 47 | `result-track:d37137507f623a33fdec2edb3ccfc37f8629b1fd19d73924b951bd4de280415e` |
+| 4 | `theorem` | [isIntegral_of_mem_ringOfIntegers'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraInstancesNamespaced.lean/declarations/isintegral-of-mem-ringofintegers-source-edition-2.md) | 54 | `result-track:f1dbc5cd1642814250308168095c17ac0043a1e4d174ff69d934381301f0f130` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraInstancesNamespaced.lean/declarations/instance.md) | 60 | `declaration-track:050969dd4ade6289a112905c0cc3083c318a2e3161b6164fd2a03162902a8e51` |
+| 6 | `instance` | [algebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraInstancesNamespaced.lean/declarations/algebra.md) | 64 | `declaration-track:1f2b1a75aaaa5f9a32c39afa4799bc00838ed1aa3d1268cbb02fa64567f70e2e` |
+| 7 | `def` | [equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraInstancesNamespaced.lean/declarations/equiv.md) | 78 | `declaration-track:bd4b22afdd217ed97900dacb7e6c4b5d621ebec91d099d5ff2b7a79bcf21c55c` |
+| 8 | `theorem` | [integralClosure_algebraMap_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraInstancesNamespaced.lean/declarations/integralclosure-algebramap-injective.md) | 86 | `result-track:9490e33db7884f8ab7cb2beae4c792928cccf157cfcd27fd51dcb69a3b9c5717` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

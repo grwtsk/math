@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [logarithmicWeight](../../../../MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/logarithmicweight.md) | 23 | `declaration-track:21610195955f74d8d032b52e847a767ff450a8050b5a01c3b8f02d31aeb09fb4` |
-| 2 | `def` | [rawLogarithmicEnergy](../../../../MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/rawlogarithmicenergy.md) | 26 | `declaration-track:3140996439f3c748aff6e5a3cce6ea32cc7900bad808e7d8bb23eec87c2b7b4b` |
-| 3 | `def` | [sourceLogarithmicEnergy](../../../../MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/sourcelogarithmicenergy.md) | 30 | `declaration-track:0810fc1d9dc3ef18550c4ad79a59d69b34e81377e17f7471d9f8f92d4523f14a` |
-| 4 | `theorem` | [logarithmicWeight_nonneg](../../../../MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/logarithmicweight-nonneg.md) | 34 | `result-track:bd2ed9904e339d6e463eccea32ee3804f8fa67fae39123c6ce46ba0d1fe70c58` |
-| 5 | `theorem` | [logarithmic_integrand_integrable](../../../../MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/logarithmic-integrand-integrable.md) | 41 | `result-track:c93243df2504b79e16934390e513c771497be1e7818e0769a95f7f8d0fc6b1d5` |
-| 6 | `theorem` | [sourceLogarithmic_integrand_integrable](../../../../MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/sourcelogarithmic-integrand-integrable.md) | 53 | `result-track:0f171ff786bf45e29e81ff750f4f32d51fc1cb39d38614d39f4919b7da7c4825` |
-| 7 | `theorem` | [sourceLogarithmicEnergy_eq_integral](../../../../MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/sourcelogarithmicenergy-eq-integral.md) | 61 | `result-track:9be5769bcf08ce37af9a500d9e612a499c5935675444435dccd257cb26286eec` |
-| 8 | `theorem` | [rawLogarithmicEnergy_nonneg](../../../../MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/rawlogarithmicenergy-nonneg.md) | 67 | `result-track:f52092436512658e8cb14bf149a235a2ac2bf8cbca4dc816a5431b9c22048ba7` |
-| 9 | `theorem` | [sourceLogarithmicEnergy_nonneg](../../../../MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/sourcelogarithmicenergy-nonneg.md) | 71 | `result-track:f1de2d837c4b5f43df924cd5d476fd576181fbca0c3671ebfd173c6993cdcc7e` |
-| 10 | `theorem` | [archimedean_integrable_of_c1](../../../../MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/archimedean-integrable-of-c1.md) | 76 | `result-track:0a9a1ef64375ac837047f7c35ec3a6f07df443ed299f76272be32d3bee679855` |
+| 1 | `def` | [logarithmicWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/logarithmicweight.md) | 23 | `declaration-track:21610195955f74d8d032b52e847a767ff450a8050b5a01c3b8f02d31aeb09fb4` |
+| 2 | `def` | [rawLogarithmicEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/rawlogarithmicenergy.md) | 26 | `declaration-track:3140996439f3c748aff6e5a3cce6ea32cc7900bad808e7d8bb23eec87c2b7b4b` |
+| 3 | `def` | [sourceLogarithmicEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/sourcelogarithmicenergy.md) | 30 | `declaration-track:0810fc1d9dc3ef18550c4ad79a59d69b34e81377e17f7471d9f8f92d4523f14a` |
+| 4 | `theorem` | [logarithmicWeight_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/logarithmicweight-nonneg.md) | 34 | `result-track:bd2ed9904e339d6e463eccea32ee3804f8fa67fae39123c6ce46ba0d1fe70c58` |
+| 5 | `theorem` | [logarithmic_integrand_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/logarithmic-integrand-integrable.md) | 41 | `result-track:c93243df2504b79e16934390e513c771497be1e7818e0769a95f7f8d0fc6b1d5` |
+| 6 | `theorem` | [sourceLogarithmic_integrand_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/sourcelogarithmic-integrand-integrable.md) | 53 | `result-track:0f171ff786bf45e29e81ff750f4f32d51fc1cb39d38614d39f4919b7da7c4825` |
+| 7 | `theorem` | [sourceLogarithmicEnergy_eq_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/sourcelogarithmicenergy-eq-integral.md) | 61 | `result-track:9be5769bcf08ce37af9a500d9e612a499c5935675444435dccd257cb26286eec` |
+| 8 | `theorem` | [rawLogarithmicEnergy_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/rawlogarithmicenergy-nonneg.md) | 67 | `result-track:f52092436512658e8cb14bf149a235a2ac2bf8cbca4dc816a5431b9c22048ba7` |
+| 9 | `theorem` | [sourceLogarithmicEnergy_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/sourcelogarithmicenergy-nonneg.md) | 71 | `result-track:f1de2d837c4b5f43df924cd5d476fd576181fbca0c3671ebfd173c6993cdcc7e` |
+| 10 | `theorem` | [archimedean_integrable_of_c1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroLogarithmicNormProbe.lean/declarations/archimedean-integrable-of-c1.md) | 76 | `result-track:0a9a1ef64375ac837047f7c35ec3a6f07df443ed299f76272be32d3bee679855` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

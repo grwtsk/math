@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GluingMatching.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GluingMatching.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GluingMatching.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GluingMatching.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Matching](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GluingMatching.lean/declarations/matching.md) | 7 | `declaration-track:758448b82737b14302181046c40b1adb1acee89f8fbd22433cc9f6d2f0dcfc19` |
-| 2 | `def` | [Glues](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GluingMatching.lean/declarations/glues.md) | 16 | `declaration-track:b10be576c4920670c6c55b9acf328a39a430493b99fbc592dbb9f3b962b2f24e` |
-| 3 | `structure` | [GluingCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GluingMatching.lean/declarations/gluingcertificate.md) | 24 | `declaration-track:5b7d97eedbfec8d674848ba1224e4e0d649ca56297ea739f5dc4d7bff755289b` |
-| 4 | `def` | [ExistsUniqueGluing](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GluingMatching.lean/declarations/existsuniquegluing.md) | 34 | `declaration-track:571539d4bc81f3f154d52452176b3cae63996694d4f067b79dc1b73f363a9f39` |
-| 5 | `theorem` | [gluing_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GluingMatching.lean/declarations/gluing-sound.md) | 42 | `result-track:f765b5727c0528e4d0c806732cfe89da11bbe3aa4319949d415e3fe777b75a9c` |
+| 1 | `def` | [Matching](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GluingMatching.lean/declarations/matching.md) | 7 | `declaration-track:758448b82737b14302181046c40b1adb1acee89f8fbd22433cc9f6d2f0dcfc19` |
+| 2 | `def` | [Glues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GluingMatching.lean/declarations/glues.md) | 16 | `declaration-track:b10be576c4920670c6c55b9acf328a39a430493b99fbc592dbb9f3b962b2f24e` |
+| 3 | `structure` | [GluingCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GluingMatching.lean/declarations/gluingcertificate.md) | 24 | `declaration-track:5b7d97eedbfec8d674848ba1224e4e0d649ca56297ea739f5dc4d7bff755289b` |
+| 4 | `def` | [ExistsUniqueGluing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GluingMatching.lean/declarations/existsuniquegluing.md) | 34 | `declaration-track:571539d4bc81f3f154d52452176b3cae63996694d4f067b79dc1b73f363a9f39` |
+| 5 | `theorem` | [gluing_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GluingMatching.lean/declarations/gluing-sound.md) | 42 | `result-track:f765b5727c0528e4d0c806732cfe89da11bbe3aa4319949d415e3fe777b75a9c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

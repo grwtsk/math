@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FoundationWrapperIsNotTheoremAuthority.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FoundationWrapperIsNotTheoremAuthority.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FoundationWrapperIsNotTheoremAuthority.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FoundationWrapperIsNotTheoremAuthority.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [wrapper_is_not_theorem_authority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FoundationWrapperIsNotTheoremAuthority.lean/declarations/wrapper-is-not-theorem-authority.md) | 13 | `result-track:4cd1e3822c288e191bb4ab248cc6be0d232659c5d039f3fecbdf80d1ae6939c7` |
+| 1 | `theorem` | [wrapper_is_not_theorem_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FoundationWrapperIsNotTheoremAuthority.lean/declarations/wrapper-is-not-theorem-authority.md) | 13 | `result-track:4cd1e3822c288e191bb4ab248cc6be0d232659c5d039f3fecbdf80d1ae6939c7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

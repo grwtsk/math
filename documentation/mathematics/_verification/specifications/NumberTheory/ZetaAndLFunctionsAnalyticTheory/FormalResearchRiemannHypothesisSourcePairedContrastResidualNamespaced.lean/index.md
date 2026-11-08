@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidualNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidualNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidualNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidualNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pairedResidualRemainder](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidualNamespaced.lean/declarations/pairedresidualremainder.md) | 33 | `declaration-track:c5b3941d88140a512fbd9e7c6120375e659cbc23b9595c4e37bde72e07139b63` |
-| 2 | `theorem` | [mertensResidual_eq_contrast_remainder](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidualNamespaced.lean/declarations/mertensresidual-eq-contrast-remainder.md) | 38 | `result-track:5512cdd18e3d540e4549c8cf5255dcc160bf8e07b389d8ba3cd60af2a8de63d5` |
-| 3 | `theorem` | [abs_four_sum_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidualNamespaced.lean/declarations/abs-four-sum-le.md) | 46 | `result-track:d28877c95c077c5024a7fd62f0773b0c02b8950143e1aa88173f982849a3ef4d` |
-| 4 | `theorem` | [pairedResidualRemainder_uniformly_bounded](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidualNamespaced.lean/declarations/pairedresidualremainder-uniformly-bounded.md) | 56 | `result-track:c5a711cae085133512398d7f8bb9234623c3d5b1bd67ccf3c65625ce0a73c732` |
+| 1 | `def` | [pairedResidualRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidualNamespaced.lean/declarations/pairedresidualremainder.md) | 33 | `declaration-track:c5b3941d88140a512fbd9e7c6120375e659cbc23b9595c4e37bde72e07139b63` |
+| 2 | `theorem` | [mertensResidual_eq_contrast_remainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidualNamespaced.lean/declarations/mertensresidual-eq-contrast-remainder.md) | 38 | `result-track:5512cdd18e3d540e4549c8cf5255dcc160bf8e07b389d8ba3cd60af2a8de63d5` |
+| 3 | `theorem` | [abs_four_sum_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidualNamespaced.lean/declarations/abs-four-sum-le.md) | 46 | `result-track:d28877c95c077c5024a7fd62f0773b0c02b8950143e1aa88173f982849a3ef4d` |
+| 4 | `theorem` | [pairedResidualRemainder_uniformly_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidualNamespaced.lean/declarations/pairedresidualremainder-uniformly-bounded.md) | 56 | `result-track:c5a711cae085133512398d7f8bb9234623c3d5b1bd67ccf3c65625ce0a73c732` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

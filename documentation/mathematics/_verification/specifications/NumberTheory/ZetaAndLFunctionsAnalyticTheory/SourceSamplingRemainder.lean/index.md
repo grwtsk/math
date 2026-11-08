@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSamplingRemainder.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSamplingRemainder.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSamplingRemainder.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSamplingRemainder.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [plainModelDerivative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSamplingRemainder.lean/declarations/plainmodelderivative.md) | 22 | `declaration-track:6b18e81058f748d8af1bde2cedf7d716a9ad7038beb25900fe19049b234a9339` |
-| 2 | `def` | [logModelDerivative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSamplingRemainder.lean/declarations/logmodelderivative.md) | 29 | `declaration-track:40f9ef7b7cba403cc268b3761f3c3e79896b616adb66d54f7878e4e4428dbfe2` |
-| 3 | `theorem` | [samplingDerivative_prefactor](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSamplingRemainder.lean/declarations/samplingderivative-prefactor.md) | 37 | `result-track:0354a97c17982176acc6475a54320cf850efd860be49261dd8c694d9a52f1377` |
-| 4 | `theorem` | [plain_derivative_difference](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSamplingRemainder.lean/declarations/plain-derivative-difference.md) | 49 | `result-track:7d58d0a837028a31b7a3940f6a6823dfa7f908fe8e6bbf787a60a8efb8cf2597` |
-| 5 | `theorem` | [log_derivative_difference](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSamplingRemainder.lean/declarations/log-derivative-difference.md) | 61 | `result-track:c5c69de71e13f1339b545d496dfe7eefc6c12456b84e3c3fb93b1b37f859df6b` |
-| 6 | `theorem` | [plain_derivative_difference_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSamplingRemainder.lean/declarations/plain-derivative-difference-abs-le.md) | 74 | `result-track:608189b39e41358cd2014eb3e053fe43ddb07824fe753f10984453dd8f755745` |
-| 7 | `theorem` | [log_derivative_difference_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSamplingRemainder.lean/declarations/log-derivative-difference-abs-le.md) | 101 | `result-track:d5601524bbf599f0c5112cbb74a12a9d588228fc05d1ffa038c6f94bb1e1c807` |
+| 1 | `def` | [plainModelDerivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSamplingRemainder.lean/declarations/plainmodelderivative.md) | 22 | `declaration-track:6b18e81058f748d8af1bde2cedf7d716a9ad7038beb25900fe19049b234a9339` |
+| 2 | `def` | [logModelDerivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSamplingRemainder.lean/declarations/logmodelderivative.md) | 29 | `declaration-track:40f9ef7b7cba403cc268b3761f3c3e79896b616adb66d54f7878e4e4428dbfe2` |
+| 3 | `theorem` | [samplingDerivative_prefactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSamplingRemainder.lean/declarations/samplingderivative-prefactor.md) | 37 | `result-track:0354a97c17982176acc6475a54320cf850efd860be49261dd8c694d9a52f1377` |
+| 4 | `theorem` | [plain_derivative_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSamplingRemainder.lean/declarations/plain-derivative-difference.md) | 49 | `result-track:7d58d0a837028a31b7a3940f6a6823dfa7f908fe8e6bbf787a60a8efb8cf2597` |
+| 5 | `theorem` | [log_derivative_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSamplingRemainder.lean/declarations/log-derivative-difference.md) | 61 | `result-track:c5c69de71e13f1339b545d496dfe7eefc6c12456b84e3c3fb93b1b37f859df6b` |
+| 6 | `theorem` | [plain_derivative_difference_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSamplingRemainder.lean/declarations/plain-derivative-difference-abs-le.md) | 74 | `result-track:608189b39e41358cd2014eb3e053fe43ddb07824fe753f10984453dd8f755745` |
+| 7 | `theorem` | [log_derivative_difference_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSamplingRemainder.lean/declarations/log-derivative-difference-abs-le.md) | 101 | `result-track:d5601524bbf599f0c5112cbb74a12a9d588228fc05d1ffa038c6f94bb1e1c807` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

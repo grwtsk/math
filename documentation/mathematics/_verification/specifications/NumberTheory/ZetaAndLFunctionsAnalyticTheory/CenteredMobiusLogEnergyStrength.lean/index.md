@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogEnergyStrength.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogEnergyStrength.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogEnergyStrength.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogEnergyStrength.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogTwoSupplierReduction`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogTwoSupplierReduction.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogTwoSupplierReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogTwoSupplierReduction.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [centeredMobiusLogEnergy_le_historicalGreenEnergy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogEnergyStrength.lean/declarations/centeredmobiuslogenergy-le-historicalgreenenergy.md) | 16 | `result-track:4481401386bbcec84c4a282ab403744428c4f80a57c668fa8779ab07208419db` |
-| 2 | `theorem` | [historicalGreenEnergy_le_centeredMobiusLogEnergy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogEnergyStrength.lean/declarations/historicalgreenenergy-le-centeredmobiuslogenergy.md) | 48 | `result-track:6f49c95428ab8ec4a122cda5d0eac02d90bfe9f8ae7c6a9d68bbe0c30840533a` |
-| 3 | `def` | [AllDyadicHistoricalGreenEnergyBound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogEnergyStrength.lean/declarations/alldyadichistoricalgreenenergybound.md) | 61 | `declaration-track:790656ef1b25c92c3b2b0a2edfc350225445025afb10c7f82cad6775c3147a4a` |
+| 1 | `theorem` | [centeredMobiusLogEnergy_le_historicalGreenEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogEnergyStrength.lean/declarations/centeredmobiuslogenergy-le-historicalgreenenergy.md) | 16 | `result-track:4481401386bbcec84c4a282ab403744428c4f80a57c668fa8779ab07208419db` |
+| 2 | `theorem` | [historicalGreenEnergy_le_centeredMobiusLogEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogEnergyStrength.lean/declarations/historicalgreenenergy-le-centeredmobiuslogenergy.md) | 48 | `result-track:6f49c95428ab8ec4a122cda5d0eac02d90bfe9f8ae7c6a9d68bbe0c30840533a` |
+| 3 | `def` | [AllDyadicHistoricalGreenEnergyBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogEnergyStrength.lean/declarations/alldyadichistoricalgreenenergybound.md) | 61 | `declaration-track:790656ef1b25c92c3b2b0a2edfc350225445025afb10c7f82cad6775c3147a4a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

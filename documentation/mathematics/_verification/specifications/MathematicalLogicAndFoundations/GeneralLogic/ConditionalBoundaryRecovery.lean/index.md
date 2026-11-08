@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConditionalBoundaryRecovery.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConditionalBoundaryRecovery.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConditionalBoundaryRecovery.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConditionalBoundaryRecovery.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Atomize.Formal.CompileEval` — import line 19; external provider; requires a separately pinned dependency.
-- [Fixed Boundary Reference Data](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedBoundaryReferenceData.lean/index.md) — import line 21; pinned internal source present.
+- [Fixed Boundary Reference Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedBoundaryReferenceData.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CompB](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConditionalBoundaryRecovery.lean/declarations/compb.md) | 90 | `declaration-track:64f0b8de0b8d6eb53bf0e61a332819ba32b6571e1736d7a74a364f8bf4d28cca` |
-| 2 | `theorem` | [eval_compB](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConditionalBoundaryRecovery.lean/declarations/eval-compb.md) | 120 | `result-track:9fe72c071aa76f9c5e60490d84dbc655ae15099700b64f05c70cf4e57ded3055` |
+| 1 | `def` | [CompB](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConditionalBoundaryRecovery.lean/declarations/compb.md) | 90 | `declaration-track:64f0b8de0b8d6eb53bf0e61a332819ba32b6571e1736d7a74a364f8bf4d28cca` |
+| 2 | `theorem` | [eval_compB](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConditionalBoundaryRecovery.lean/declarations/eval-compb.md) | 120 | `result-track:9fe72c071aa76f9c5e60490d84dbc655ae15099700b64f05c70cf4e57ded3055` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

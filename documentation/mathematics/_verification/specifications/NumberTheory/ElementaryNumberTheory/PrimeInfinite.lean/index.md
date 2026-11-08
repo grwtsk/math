@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/PrimeInfinite.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/PrimeInfinite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeInfinite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeInfinite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_infinite_primes](../../../../../NumberTheory/ElementaryNumberTheory/PrimeInfinite.lean/declarations/exists-infinite-primes.md) | 29 | `result-track:cd02fda46df3e2cfdaec73676bde02968f5976272251afa651e61371ecddd272` |
-| 2 | `theorem` | [not_bddAbove_setOf_prime](../../../../../NumberTheory/ElementaryNumberTheory/PrimeInfinite.lean/declarations/not-bddabove-setof-prime.md) | 41 | `result-track:f36aa6eb9b346d142354e1e9c60bd146f98eada0de1c253f7c72f0a7a25e7dc1` |
+| 1 | `theorem` | [exists_infinite_primes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeInfinite.lean/declarations/exists-infinite-primes.md) | 29 | `result-track:cd02fda46df3e2cfdaec73676bde02968f5976272251afa651e61371ecddd272` |
+| 2 | `theorem` | [not_bddAbove_setOf_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeInfinite.lean/declarations/not-bddabove-setof-prime.md) | 41 | `result-track:f36aa6eb9b346d142354e1e9c60bd146f98eada0de1c253f7c72f0a7a25e7dc1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

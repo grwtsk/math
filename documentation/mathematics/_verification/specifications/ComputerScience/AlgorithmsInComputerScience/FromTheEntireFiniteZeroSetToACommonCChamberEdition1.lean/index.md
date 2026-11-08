@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FromTheEntireFiniteZeroSetToACommonCChamberEdition1.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FromTheEntireFiniteZeroSetToACommonCChamberEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FromTheEntireFiniteZeroSetToACommonCChamberEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FromTheEntireFiniteZeroSetToACommonCChamberEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finite_simple_interior_zeros_have_complete_chamber](../../../../../ComputerScience/AlgorithmsInComputerScience/FromTheEntireFiniteZeroSetToACommonCChamberEdition1.lean/declarations/finite-simple-interior-zeros-have-complete-chamber.md) | 22 | `result-track:b4a0fc53e3c21eaef7389be53607edc53e5e4df5699b9c9e77e9942792c24d84` |
+| 1 | `theorem` | [finite_simple_interior_zeros_have_complete_chamber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FromTheEntireFiniteZeroSetToACommonCChamberEdition1.lean/declarations/finite-simple-interior-zeros-have-complete-chamber.md) | 22 | `result-track:b4a0fc53e3c21eaef7389be53607edc53e5e4df5699b9c9e77e9942792c24d84` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

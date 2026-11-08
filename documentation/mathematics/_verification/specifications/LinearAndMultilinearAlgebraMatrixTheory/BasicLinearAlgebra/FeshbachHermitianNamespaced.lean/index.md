@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [completion_of_squares](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianNamespaced.lean/declarations/completion-of-squares.md) | 38 | `result-track:a1ade12566d9d6e6a99017b5f6c11ca7ddd0929519356fcac3533758b5dae17b` |
-| 2 | `theorem` | [isHermitian_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianNamespaced.lean/declarations/ishermitian-iff.md) | 51 | `result-track:26820e904414f192e8d1a63cea6fcd78e7d05646c4f610d7bd8861e3da360871` |
-| 3 | `theorem` | [posSemidef_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianNamespaced.lean/declarations/possemidef-iff.md) | 68 | `result-track:f5162d3978c881685407d08c9dc3e27cf609c3e1c52ff616ce8a840333bf6d39` |
+| 1 | `theorem` | [completion_of_squares](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianNamespaced.lean/declarations/completion-of-squares.md) | 38 | `result-track:a1ade12566d9d6e6a99017b5f6c11ca7ddd0929519356fcac3533758b5dae17b` |
+| 2 | `theorem` | [isHermitian_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianNamespaced.lean/declarations/ishermitian-iff.md) | 51 | `result-track:26820e904414f192e8d1a63cea6fcd78e7d05646c4f610d7bd8861e3da360871` |
+| 3 | `theorem` | [posSemidef_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeshbachHermitianNamespaced.lean/declarations/possemidef-iff.md) | 68 | `result-track:f5162d3978c881685407d08c9dc3e27cf609c3e1c52ff616ce8a840333bf6d39` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

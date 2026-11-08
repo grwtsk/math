@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [«haveI»](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/declarations/havei.md) | 28 | `declaration-track:9e736281dc347a55178f8dcc4c4ce00e2203b00ec0dbc607c7b6d5814b69de52` |
-| 2 | `def` | [«letI»](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/declarations/leti.md) | 31 | `declaration-track:68fdfcbf891c4a8172a0b2ffe81f0b15285be7a3ae19978fd875e060c16e42a6` |
-| 3 | `macro_rules` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/declarations/macro-rules-source-edition-2.md) | 34 | `declaration-track:33d7a41ca470cbf600cd1bbdbf2d710a28fc00ad2a449ffa7659af196cf04de5` |
-| 4 | `macro_rules` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/declarations/macro-rules.md) | 42 | `declaration-track:1cf14d7f7058f842375d7d78c1804f3952ba72dcef1c5499b8314cc91498367e` |
-| 5 | `elab_rules` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/declarations/elab-rules-source-edition-2.md) | 50 | `declaration-track:c0264e398c0c58e021c05ccb5fc7eb53bca32fbf17352e02fcc88083b355d393` |
-| 6 | `elab_rules` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/declarations/elab-rules.md) | 59 | `declaration-track:368ccf850aa9e7eacfad48f00d18748403e43ce5f0908f1edd3be02afd98e51d` |
-| 7 | `macro` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/declarations/macro.md) | 69 | `declaration-track:09be03af1d27204fd864b98c2e14bc2539633f67106fdac62d0c53e28d45baec` |
-| 8 | `macro` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/declarations/macro-source-edition-2.md) | 71 | `declaration-track:88557ea67e6a6aa35dca75823aacc6d3a097ff3d6c946b5637a6b601d1d4e0f7` |
+| 1 | `def` | [«haveI»](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/declarations/havei.md) | 28 | `declaration-track:9e736281dc347a55178f8dcc4c4ce00e2203b00ec0dbc607c7b6d5814b69de52` |
+| 2 | `def` | [«letI»](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/declarations/leti.md) | 31 | `declaration-track:68fdfcbf891c4a8172a0b2ffe81f0b15285be7a3ae19978fd875e060c16e42a6` |
+| 3 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/declarations/macro-rules-source-edition-2.md) | 34 | `declaration-track:33d7a41ca470cbf600cd1bbdbf2d710a28fc00ad2a449ffa7659af196cf04de5` |
+| 4 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/declarations/macro-rules.md) | 42 | `declaration-track:1cf14d7f7058f842375d7d78c1804f3952ba72dcef1c5499b8314cc91498367e` |
+| 5 | `elab_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/declarations/elab-rules-source-edition-2.md) | 50 | `declaration-track:c0264e398c0c58e021c05ccb5fc7eb53bca32fbf17352e02fcc88083b355d393` |
+| 6 | `elab_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/declarations/elab-rules.md) | 59 | `declaration-track:368ccf850aa9e7eacfad48f00d18748403e43ce5f0908f1edd3be02afd98e51d` |
+| 7 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/declarations/macro.md) | 69 | `declaration-track:09be03af1d27204fd864b98c2e14bc2539633f67106fdac62d0c53e28d45baec` |
+| 8 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HaveINamespaced.lean/declarations/macro-source-edition-2.md) | 71 | `declaration-track:88557ea67e6a6aa35dca75823aacc6d3a097ff3d6c946b5637a6b601d1d4e0f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

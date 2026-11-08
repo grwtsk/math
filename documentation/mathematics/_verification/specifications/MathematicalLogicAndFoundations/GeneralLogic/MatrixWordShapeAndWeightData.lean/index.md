@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixWordShapeAndWeightData.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixWordShapeAndWeightData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixWordShapeAndWeightData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixWordShapeAndWeightData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Carrier.BinaryMatrix` — import line 19; external provider; requires a separately pinned dependency.
-- [Finite Matrix Words](../../../../../Combinatorics/FiniteMatrixWords.lean/index.md) — import line 20; pinned internal source present.
+- [Finite Matrix Words](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteMatrixWords.lean/index.md) — import line 20; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MatrixProofBudget](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixWordShapeAndWeightData.lean/declarations/matrixproofbudget.md) | 39 | `declaration-track:4069cc496c7ba48c5543c24c8f95631988bb1f1ba8bb594ee7fc4e05961acda7` |
-| 2 | `structure` | [UniformMatrixProofStream](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixWordShapeAndWeightData.lean/declarations/uniformmatrixproofstream.md) | 48 | `declaration-track:a621c26feb3b3fec823429c25ec76fb798dac851ee7644e3584a66ae93b3f1ba` |
-| 3 | `structure` | [WeightedMatrixProofStream](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MatrixWordShapeAndWeightData.lean/declarations/weightedmatrixproofstream.md) | 61 | `declaration-track:a03f927f2fc925e8e5cc3285c3339bed4e7a352dd0f9b1b91ed0c801e0fad29e` |
+| 1 | `structure` | [MatrixProofBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixWordShapeAndWeightData.lean/declarations/matrixproofbudget.md) | 39 | `declaration-track:4069cc496c7ba48c5543c24c8f95631988bb1f1ba8bb594ee7fc4e05961acda7` |
+| 2 | `structure` | [UniformMatrixProofStream](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixWordShapeAndWeightData.lean/declarations/uniformmatrixproofstream.md) | 48 | `declaration-track:a621c26feb3b3fec823429c25ec76fb798dac851ee7644e3584a66ae93b3f1ba` |
+| 3 | `structure` | [WeightedMatrixProofStream](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MatrixWordShapeAndWeightData.lean/declarations/weightedmatrixproofstream.md) | 61 | `declaration-track:a03f927f2fc925e8e5cc3285c3339bed4e7a352dd0f9b1b91ed0c801e0fad29e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

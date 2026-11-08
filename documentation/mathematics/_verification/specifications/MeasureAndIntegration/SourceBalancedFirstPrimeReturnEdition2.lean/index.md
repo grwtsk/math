@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [balancedFirstPrimeFullWork](../../../../MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/declarations/balancedfirstprimefullwork.md) | 20 | `declaration-track:b63d3f732e7747fccee3cda8d74a760c7f6f4aa130d2b1cca415ab2450543e23` |
-| 2 | `def` | [balancedFirstPrimeTailWork](../../../../MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/declarations/balancedfirstprimetailwork.md) | 24 | `declaration-track:b66fede1ade63b6254683f984e3ea97a41fb872d1f5be5c519faca7d1ee1554f` |
-| 3 | `def` | [firstPrimeZeroHead](../../../../MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/declarations/firstprimezerohead.md) | 29 | `declaration-track:2ef6870df7b8250b1bb3019cde47f9b97c4630d351c77d670796d79721302455` |
-| 4 | `theorem` | [theta_exp_eq_steps](../../../../MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/declarations/theta-exp-eq-steps.md) | 32 | `result-track:89eb201870efc663ead5b9b3348e85d5a0cfa09a242776740e734219bd80c978` |
-| 5 | `theorem` | [theta_mul_deriv_integrable](../../../../MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/declarations/theta-mul-deriv-integrable.md) | 38 | `result-track:d68fee7e96098bc577a6c8ce1eb471624fb24a334f23454ff3353ad314362125` |
-| 6 | `theorem` | [theta_closed_source_work](../../../../MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/declarations/theta-closed-source-work.md) | 57 | `result-track:8c2f6fa926750d1b1036141849e77a2086e505a3509268e89e11c35e01b64954` |
-| 7 | `theorem` | [positive_exponential_weight_work](../../../../MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/declarations/positive-exponential-weight-work.md) | 91 | `result-track:60310d849b391a4c726813d2adea7691eb1e588777b55b4575766f2fcad5562b` |
-| 8 | `theorem` | [minusCorrelationWeight_full_integral](../../../../MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/declarations/minuscorrelationweight-full-integral.md) | 114 | `result-track:700182bcd135f1d9806a7e9dca4a1c8c714fdeb95e63385c667f5939384cca4f` |
-| 9 | `theorem` | [balanced_density_full_source_work](../../../../MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/declarations/balanced-density-full-source-work.md) | 140 | `result-track:925b3eb5e0f41d8d7d8e37814e85d3606b27124d4fdc1fb2210473c9ca69ac33` |
+| 1 | `def` | [balancedFirstPrimeFullWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/declarations/balancedfirstprimefullwork.md) | 20 | `declaration-track:b63d3f732e7747fccee3cda8d74a760c7f6f4aa130d2b1cca415ab2450543e23` |
+| 2 | `def` | [balancedFirstPrimeTailWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/declarations/balancedfirstprimetailwork.md) | 24 | `declaration-track:b66fede1ade63b6254683f984e3ea97a41fb872d1f5be5c519faca7d1ee1554f` |
+| 3 | `def` | [firstPrimeZeroHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/declarations/firstprimezerohead.md) | 29 | `declaration-track:2ef6870df7b8250b1bb3019cde47f9b97c4630d351c77d670796d79721302455` |
+| 4 | `theorem` | [theta_exp_eq_steps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/declarations/theta-exp-eq-steps.md) | 32 | `result-track:89eb201870efc663ead5b9b3348e85d5a0cfa09a242776740e734219bd80c978` |
+| 5 | `theorem` | [theta_mul_deriv_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/declarations/theta-mul-deriv-integrable.md) | 38 | `result-track:d68fee7e96098bc577a6c8ce1eb471624fb24a334f23454ff3353ad314362125` |
+| 6 | `theorem` | [theta_closed_source_work](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/declarations/theta-closed-source-work.md) | 57 | `result-track:8c2f6fa926750d1b1036141849e77a2086e505a3509268e89e11c35e01b64954` |
+| 7 | `theorem` | [positive_exponential_weight_work](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/declarations/positive-exponential-weight-work.md) | 91 | `result-track:60310d849b391a4c726813d2adea7691eb1e588777b55b4575766f2fcad5562b` |
+| 8 | `theorem` | [minusCorrelationWeight_full_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/declarations/minuscorrelationweight-full-integral.md) | 114 | `result-track:700182bcd135f1d9806a7e9dca4a1c8c714fdeb95e63385c667f5939384cca4f` |
+| 9 | `theorem` | [balanced_density_full_source_work](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBalancedFirstPrimeReturnEdition2.lean/declarations/balanced-density-full-source-work.md) | 140 | `result-track:925b3eb5e0f41d8d7d8e37814e85d3606b27124d4fdc1fb2210473c9ca69ac33` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

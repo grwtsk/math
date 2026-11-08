@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCountedEulerDegreeBalance`](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerDegreeBalance.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCountedEulerDegreeBalance`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerDegreeBalance.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CountedEdgeMeets](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/declarations/countededgemeets.md) | 22 | `declaration-track:6c679442bfdd1f9c9e6ddf702a2eebe390e0e873f52655f3f37e6c1dc67fca73` |
-| 2 | `def` | [CountedEdgeCrosses](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/declarations/countededgecrosses.md) | 29 | `declaration-track:4bee540f55fe09bf02d520fce1d6bd2d35ba16bae334d96b976017707ef9b4b5` |
-| 3 | `theorem` | [no_crossing_of_used_internal_unused_disjoint](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/declarations/no-crossing-of-used-internal-unused-disjoint.md) | 38 | `result-track:50c9cda39ad20d9130b03c81edad098bd969b02747bfad0c0f9624c49b01d851` |
-| 4 | `def` | [CountedEdgeSupportCutConnected](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/declarations/countededgesupportcutconnected.md) | 65 | `declaration-track:8ab9d21b82bfa41366dfb843b6c68586708a2bedac213ca253ef4a0788f37b5b` |
-| 5 | `theorem` | [unused_edge_meets_of_support_cut_connected](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/declarations/unused-edge-meets-of-support-cut-connected.md) | 77 | `result-track:31f853c924089bfbdf51839864804241ec1ae1916a1e241eb42c129f9a36e881` |
-| 6 | `theorem` | [FreshCountedTrail.unused_outgoing_at_supported_cut](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/declarations/freshcountedtrail-unused-outgoing-at-supported-cut.md) | 106 | `result-track:edf9a7422995b14d9d60d4d38d0d3875dcb12f2c41844b37c5731691227814ac` |
-| 7 | `theorem` | [FreshCountedTrail.exists_splice_entry_of_outside_support](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/declarations/freshcountedtrail-exists-splice-entry-of-outside-support.md) | 134 | `result-track:6b3d4e8a7427b7dc2a60a947a8e9a3f7f4113e8da17d2c559d15b2589039a2d5` |
-| 8 | `theorem` | [FreshCountedTrail.unused_outgoing_of_meeting_edge](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/declarations/freshcountedtrail-unused-outgoing-of-meeting-edge.md) | 160 | `result-track:6db7461defb4939becc466b8cba7bf65daa4fc56e0c8c428e3d0d47a844eecc2` |
-| 9 | `theorem` | [FreshCountedTrail.unused_outgoing_of_nonempty_residual](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/declarations/freshcountedtrail-unused-outgoing-of-nonempty-residual.md) | 183 | `result-track:7834f257d9838bd4eaf8b0c4063de7d3cb7b1319bd0522af033c07aa12bc3aaa` |
+| 1 | `def` | [CountedEdgeMeets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/declarations/countededgemeets.md) | 22 | `declaration-track:6c679442bfdd1f9c9e6ddf702a2eebe390e0e873f52655f3f37e6c1dc67fca73` |
+| 2 | `def` | [CountedEdgeCrosses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/declarations/countededgecrosses.md) | 29 | `declaration-track:4bee540f55fe09bf02d520fce1d6bd2d35ba16bae334d96b976017707ef9b4b5` |
+| 3 | `theorem` | [no_crossing_of_used_internal_unused_disjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/declarations/no-crossing-of-used-internal-unused-disjoint.md) | 38 | `result-track:50c9cda39ad20d9130b03c81edad098bd969b02747bfad0c0f9624c49b01d851` |
+| 4 | `def` | [CountedEdgeSupportCutConnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/declarations/countededgesupportcutconnected.md) | 65 | `declaration-track:8ab9d21b82bfa41366dfb843b6c68586708a2bedac213ca253ef4a0788f37b5b` |
+| 5 | `theorem` | [unused_edge_meets_of_support_cut_connected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/declarations/unused-edge-meets-of-support-cut-connected.md) | 77 | `result-track:31f853c924089bfbdf51839864804241ec1ae1916a1e241eb42c129f9a36e881` |
+| 6 | `theorem` | [FreshCountedTrail.unused_outgoing_at_supported_cut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/declarations/freshcountedtrail-unused-outgoing-at-supported-cut.md) | 106 | `result-track:edf9a7422995b14d9d60d4d38d0d3875dcb12f2c41844b37c5731691227814ac` |
+| 7 | `theorem` | [FreshCountedTrail.exists_splice_entry_of_outside_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/declarations/freshcountedtrail-exists-splice-entry-of-outside-support.md) | 134 | `result-track:6b3d4e8a7427b7dc2a60a947a8e9a3f7f4113e8da17d2c559d15b2589039a2d5` |
+| 8 | `theorem` | [FreshCountedTrail.unused_outgoing_of_meeting_edge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/declarations/freshcountedtrail-unused-outgoing-of-meeting-edge.md) | 160 | `result-track:6db7461defb4939becc466b8cba7bf65daa4fc56e0c8c428e3d0d47a844eecc2` |
+| 9 | `theorem` | [FreshCountedTrail.unused_outgoing_of_nonempty_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/declarations/freshcountedtrail-unused-outgoing-of-nonempty-residual.md) | 183 | `result-track:7834f257d9838bd4eaf8b0c4063de7d3cb7b1319bd0522af033c07aa12bc3aaa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

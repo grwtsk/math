@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BoolNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BoolNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BoolNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BoolNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Bool.lt_wfRel](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BoolNamespacedPublic.lean/declarations/bool-lt-wfrel.md) | 28 | `declaration-track:92523c2f5c71700a138924c8987d6d865c198fcab651dfa181527702b62894d2` |
-| 2 | `def` | [Bool.gt_wfRel](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BoolNamespacedPublic.lean/declarations/bool-gt-wfrel.md) | 36 | `declaration-track:f43c002e7f0a46634dcba3a984a94681050d8b85298c47191c8b621e3e3bccad` |
+| 1 | `def` | [Bool.lt_wfRel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BoolNamespacedPublic.lean/declarations/bool-lt-wfrel.md) | 28 | `declaration-track:92523c2f5c71700a138924c8987d6d865c198fcab651dfa181527702b62894d2` |
+| 2 | `def` | [Bool.gt_wfRel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BoolNamespacedPublic.lean/declarations/bool-gt-wfrel.md) | 36 | `declaration-track:f43c002e7f0a46634dcba3a984a94681050d8b85298c47191c8b621e3e3bccad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Restrict.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Restrict.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Restrict.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Restrict.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [restrictFullyFaithful](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Restrict.lean/declarations/restrictfullyfaithful.md) | 38 | `declaration-track:9cc6502dc0fae005b4c78ac7f8da99642a8326d4808b7bc682412f84b0b45422` |
-| 2 | `lemma` | [map_restrictFullyFaithful_unit_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Restrict.lean/declarations/map-restrictfullyfaithful-unit-app.md) | 58 | `result-track:cdce13b2b1a0ae13d9045d33df1b88421be2ebd7c395888704a9fc1b524c516b` |
-| 3 | `lemma` | [map_restrictFullyFaithful_counit_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Restrict.lean/declarations/map-restrictfullyfaithful-counit-app.md) | 64 | `result-track:45014f6bedc7f32e722c16e70e6bfdd762d7faca6d7827395c8262d6c46b236e` |
-| 4 | `lemma` | [restrictFullyFaithful_homEquiv_apply](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Restrict.lean/declarations/restrictfullyfaithful-homequiv-apply.md) | 70 | `result-track:729315c71f8e05f92480cc45690b35c9951b7fac8528c88d4184f42a0f494019` |
+| 1 | `def` | [restrictFullyFaithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Restrict.lean/declarations/restrictfullyfaithful.md) | 38 | `declaration-track:9cc6502dc0fae005b4c78ac7f8da99642a8326d4808b7bc682412f84b0b45422` |
+| 2 | `lemma` | [map_restrictFullyFaithful_unit_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Restrict.lean/declarations/map-restrictfullyfaithful-unit-app.md) | 58 | `result-track:cdce13b2b1a0ae13d9045d33df1b88421be2ebd7c395888704a9fc1b524c516b` |
+| 3 | `lemma` | [map_restrictFullyFaithful_counit_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Restrict.lean/declarations/map-restrictfullyfaithful-counit-app.md) | 64 | `result-track:45014f6bedc7f32e722c16e70e6bfdd762d7faca6d7827395c8262d6c46b236e` |
+| 4 | `lemma` | [restrictFullyFaithful_homEquiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Restrict.lean/declarations/restrictfullyfaithful-homequiv-apply.md) | 70 | `result-track:729315c71f8e05f92480cc45690b35c9951b7fac8528c88d4184f42a0f494019` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

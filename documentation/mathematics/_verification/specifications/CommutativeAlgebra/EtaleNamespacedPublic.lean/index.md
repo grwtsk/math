@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/EtaleNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/EtaleNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [adjoin_residue_eq_top_iff_adjoin_eq_top](../../../../CommutativeAlgebra/EtaleNamespacedPublic.lean/declarations/adjoin-residue-eq-top-iff-adjoin-eq-top.md) | 71 | `result-track:5c54faeb0a0c8e3584396a57dcf09ab7bfce46e9b97376a2b4f7fdff5dabaa5c` |
-| 2 | `theorem` | [exists_adjoin_eq_top](../../../../CommutativeAlgebra/EtaleNamespacedPublic.lean/declarations/exists-adjoin-eq-top.md) | 101 | `result-track:b3245f0a5b012143bd360d272a53e42065ae6b5f8c570b0660118ea694d25d80` |
-| 3 | `lemma` | [finrank_eq_finrank_residueField](../../../../CommutativeAlgebra/EtaleNamespacedPublic.lean/declarations/finrank-eq-finrank-residuefield.md) | 112 | `result-track:897ca577421a3248e5e7cd8805203ffbbcfae9f7f7c72acae1f9525a25aac311` |
-| 4 | `lemma` | [minpoly_map_residue](../../../../CommutativeAlgebra/EtaleNamespacedPublic.lean/declarations/minpoly-map-residue.md) | 128 | `result-track:303abfea96995e9879aae3c4f85bbf0e9cbf7a3c0b0b48c4e58b85c270482319` |
-| 5 | `lemma` | [isUnit_aeval_derivative_minpoly_of_adjoin_eq_top](../../../../CommutativeAlgebra/EtaleNamespacedPublic.lean/declarations/isunit-aeval-derivative-minpoly-of-adjoin-eq-top.md) | 148 | `result-track:92ba4af607d2691ddfc6b322e7c9abc5c2bf18fb3aca1765f93477398d6a75ba` |
+| 1 | `lemma` | [adjoin_residue_eq_top_iff_adjoin_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleNamespacedPublic.lean/declarations/adjoin-residue-eq-top-iff-adjoin-eq-top.md) | 71 | `result-track:5c54faeb0a0c8e3584396a57dcf09ab7bfce46e9b97376a2b4f7fdff5dabaa5c` |
+| 2 | `theorem` | [exists_adjoin_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleNamespacedPublic.lean/declarations/exists-adjoin-eq-top.md) | 101 | `result-track:b3245f0a5b012143bd360d272a53e42065ae6b5f8c570b0660118ea694d25d80` |
+| 3 | `lemma` | [finrank_eq_finrank_residueField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleNamespacedPublic.lean/declarations/finrank-eq-finrank-residuefield.md) | 112 | `result-track:897ca577421a3248e5e7cd8805203ffbbcfae9f7f7c72acae1f9525a25aac311` |
+| 4 | `lemma` | [minpoly_map_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleNamespacedPublic.lean/declarations/minpoly-map-residue.md) | 128 | `result-track:303abfea96995e9879aae3c4f85bbf0e9cbf7a3c0b0b48c4e58b85c270482319` |
+| 5 | `lemma` | [isUnit_aeval_derivative_minpoly_of_adjoin_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleNamespacedPublic.lean/declarations/isunit-aeval-derivative-minpoly-of-adjoin-eq-top.md) | 148 | `result-track:92ba4af607d2691ddfc6b322e7c9abc5c2bf18fb3aca1765f93477398d6a75ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

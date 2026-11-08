@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ExactCapacityTelescoping.lean/index.md) · [Full source](../../../../Combinatorics/ExactCapacityTelescoping.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactCapacityTelescoping.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactCapacityTelescoping.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [insertPath](../../../../Combinatorics/ExactCapacityTelescoping.lean/declarations/insertpath.md) | 40 | `declaration-track:7584b1b1ab06cc600e04c5c7573633b173e79db77f335d7dc8a0e1a81709b112` |
-| 2 | `def` | [capacityPathSum](../../../../Combinatorics/ExactCapacityTelescoping.lean/declarations/capacitypathsum.md) | 48 | `declaration-track:f8bdaea410efbc7e3cd65f8010486843b9445cb7812a0b03f674600a1cb849bb` |
-| 3 | `theorem` | [capacityPathSum_eq_terminal_sub_initial](../../../../Combinatorics/ExactCapacityTelescoping.lean/declarations/capacitypathsum-eq-terminal-sub-initial.md) | 59 | `result-track:13227d576eab789c0b1613f46b0f278ca6a69a2b139bd1aa3ba4b4f11bcacdf3` |
-| 4 | `theorem` | [capacity_path_sum_independent](../../../../Combinatorics/ExactCapacityTelescoping.lean/declarations/capacity-path-sum-independent.md) | 87 | `result-track:eadf663fb44c5ab9d95ccf71be5e41abb9d03a0b52775ddebfaa464b29871f11` |
+| 1 | `def` | [insertPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactCapacityTelescoping.lean/declarations/insertpath.md) | 40 | `declaration-track:7584b1b1ab06cc600e04c5c7573633b173e79db77f335d7dc8a0e1a81709b112` |
+| 2 | `def` | [capacityPathSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactCapacityTelescoping.lean/declarations/capacitypathsum.md) | 48 | `declaration-track:f8bdaea410efbc7e3cd65f8010486843b9445cb7812a0b03f674600a1cb849bb` |
+| 3 | `theorem` | [capacityPathSum_eq_terminal_sub_initial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactCapacityTelescoping.lean/declarations/capacitypathsum-eq-terminal-sub-initial.md) | 59 | `result-track:13227d576eab789c0b1613f46b0f278ca6a69a2b139bd1aa3ba4b4f11bcacdf3` |
+| 4 | `theorem` | [capacity_path_sum_independent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactCapacityTelescoping.lean/declarations/capacity-path-sum-independent.md) | 87 | `result-track:eadf663fb44c5ab9d95ccf71be5e41abb9d03a0b52775ddebfaa464b29871f11` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

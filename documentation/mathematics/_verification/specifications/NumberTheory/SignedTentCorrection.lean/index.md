@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/SignedTentCorrection.lean/index.md) · [Full source](../../../../NumberTheory/SignedTentCorrection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SignedTentCorrection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SignedTentCorrection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Real.TentRationalCorrection`](../../../../MeasureAndIntegration/TentRationalCorrection.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CountedTentTail`](../../../../NumberTheory/CountedTentTail.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Real.TentRationalCorrection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentRationalCorrection.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CountedTentTail`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CountedTentTail.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [squareTrivialCorrection](../../../../NumberTheory/SignedTentCorrection.lean/declarations/squaretrivialcorrection.md) | 34 | `declaration-track:8dc51b3fa6831ade62f7ed2e13e2068f45761b8c459f6a6f956285722d8e8912` |
-| 2 | `def` | [squareTrivialBudget](../../../../NumberTheory/SignedTentCorrection.lean/declarations/squaretrivialbudget.md) | 38 | `declaration-track:3d80d6921667995e3cee8554b68e892e0165c6c4cd66e38ce998ec503f572b45` |
-| 3 | `theorem` | [squareTrivialCorrection_bounds](../../../../NumberTheory/SignedTentCorrection.lean/declarations/squaretrivialcorrection-bounds.md) | 42 | `result-track:a85c93558b0a1c0205f57bbdc0f4b1637e36ce48c40603d7815410e60cbeb613` |
-| 4 | `theorem` | [squareTrivialCorrection_neg](../../../../NumberTheory/SignedTentCorrection.lean/declarations/squaretrivialcorrection-neg.md) | 52 | `result-track:a1e95661801364945d285cc1e48fc1f94ca32f400243ea044962581eead804c4` |
-| 5 | `theorem` | [square_correctionPrefix_error](../../../../NumberTheory/SignedTentCorrection.lean/declarations/square-correctionprefix-error.md) | 58 | `result-track:36230131b70e89c5296370e0d00ae5879fef74e795a8d73cc6291c094bea4119` |
-| 6 | `theorem` | [prime_in_square_of_signed_counted_tent](../../../../NumberTheory/SignedTentCorrection.lean/declarations/prime-in-square-of-signed-counted-tent.md) | 69 | `result-track:5a687a40cdd6e75130a8443dda8f26124ed0258ccbbe7008c365311f017aa538` |
+| 1 | `def` | [squareTrivialCorrection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SignedTentCorrection.lean/declarations/squaretrivialcorrection.md) | 34 | `declaration-track:8dc51b3fa6831ade62f7ed2e13e2068f45761b8c459f6a6f956285722d8e8912` |
+| 2 | `def` | [squareTrivialBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SignedTentCorrection.lean/declarations/squaretrivialbudget.md) | 38 | `declaration-track:3d80d6921667995e3cee8554b68e892e0165c6c4cd66e38ce998ec503f572b45` |
+| 3 | `theorem` | [squareTrivialCorrection_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SignedTentCorrection.lean/declarations/squaretrivialcorrection-bounds.md) | 42 | `result-track:a85c93558b0a1c0205f57bbdc0f4b1637e36ce48c40603d7815410e60cbeb613` |
+| 4 | `theorem` | [squareTrivialCorrection_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SignedTentCorrection.lean/declarations/squaretrivialcorrection-neg.md) | 52 | `result-track:a1e95661801364945d285cc1e48fc1f94ca32f400243ea044962581eead804c4` |
+| 5 | `theorem` | [square_correctionPrefix_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SignedTentCorrection.lean/declarations/square-correctionprefix-error.md) | 58 | `result-track:36230131b70e89c5296370e0d00ae5879fef74e795a8d73cc6291c094bea4119` |
+| 6 | `theorem` | [prime_in_square_of_signed_counted_tent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SignedTentCorrection.lean/declarations/prime-in-square-of-signed-counted-tent.md) | 69 | `result-track:5a687a40cdd6e75130a8443dda8f26124ed0258ccbbe7008c365311f017aa538` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

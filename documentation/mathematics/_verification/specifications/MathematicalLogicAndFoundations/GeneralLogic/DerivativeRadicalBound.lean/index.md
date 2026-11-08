@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DerivativeRadicalBound.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DerivativeRadicalBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DerivativeRadicalBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DerivativeRadicalBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [degree_bounds_of_derivative_ne_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DerivativeRadicalBound.lean/declarations/degree-bounds-of-derivative-ne-zero.md) | 15 | `result-track:45312f7d6d3ded89558344dc4da2b57d7011e6d71f15607380c92480ccb88cc7` |
+| 1 | `theorem` | [degree_bounds_of_derivative_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DerivativeRadicalBound.lean/declarations/degree-bounds-of-derivative-ne-zero.md) | 15 | `result-track:45312f7d6d3ded89558344dc4da2b57d7011e6d71f15607380c92480ccb88cc7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

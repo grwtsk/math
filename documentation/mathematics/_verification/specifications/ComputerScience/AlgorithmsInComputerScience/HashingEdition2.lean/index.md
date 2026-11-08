@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HashMemo](../../../../../ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/hashmemo.md) | 15 | `declaration-track:2956c5c3326ce6508b094f505f75c14bce35a1d3c74734c71d95e53dc1b0c168` |
-| 2 | `def` | [insertDeps](../../../../../ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/insertdeps.md) | 22 | `declaration-track:2df8b12022fc4ef0d58f1d2b03a75f25befa308568b77e92af8457a36cb35187` |
-| 3 | `def` | [HashMemo.filterByFilePaths](../../../../../ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/hashmemo-filterbyfilepaths.md) | 33 | `declaration-track:776fac511f857a26b494dfb7efe1ccbbccc6ea5815afe06cd3a14c4b9451c255` |
-| 4 | `abbrev` | [HashM](../../../../../ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/hashm.md) | 42 | `declaration-track:fc27b44f89377e03f0265fbc931bba1da975c8d6801873dc5e445cb26f083487` |
-| 5 | `def` | [getFileImports](../../../../../ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/getfileimports.md) | 45 | `declaration-track:752a59bd13e9e678e602d031445d4ee64668b12cb614a79e60f12b839fef932d` |
-| 6 | `def` | [hashFileContents](../../../../../ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/hashfilecontents.md) | 54 | `declaration-track:c0026b96dec4f2c35c2457a95b23dcc421197b6248edea6be85cb4439d5e8ba4` |
-| 7 | `def` | [getRootHash](../../../../../ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/getroothash.md) | 65 | `declaration-track:5040e9be9445af27fd968f26803a0947ed22663376fad6ace80c7dd1288bf0c9` |
-| 8 | `def` | [getFileHash](../../../../../ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/getfilehash.md) | 78 | `declaration-track:e917703f1861d78ebaef4bd64a5a420f39c654682b68bf1c1a555b14d663f78b` |
-| 9 | `def` | [roots](../../../../../ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/roots.md) | 107 | `declaration-track:4f998e9353a862e451769b04ceac98e1566d60bcbb4c1bbb69e617fbcc25c92d` |
-| 10 | `def` | [getHashMemo](../../../../../ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/gethashmemo.md) | 110 | `declaration-track:99e02f0f9f57ce5c1c2268f07c58b59a235a42aeff4e90aadb46f8ef853deb49` |
+| 1 | `structure` | [HashMemo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/hashmemo.md) | 15 | `declaration-track:2956c5c3326ce6508b094f505f75c14bce35a1d3c74734c71d95e53dc1b0c168` |
+| 2 | `def` | [insertDeps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/insertdeps.md) | 22 | `declaration-track:2df8b12022fc4ef0d58f1d2b03a75f25befa308568b77e92af8457a36cb35187` |
+| 3 | `def` | [HashMemo.filterByFilePaths](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/hashmemo-filterbyfilepaths.md) | 33 | `declaration-track:776fac511f857a26b494dfb7efe1ccbbccc6ea5815afe06cd3a14c4b9451c255` |
+| 4 | `abbrev` | [HashM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/hashm.md) | 42 | `declaration-track:fc27b44f89377e03f0265fbc931bba1da975c8d6801873dc5e445cb26f083487` |
+| 5 | `def` | [getFileImports](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/getfileimports.md) | 45 | `declaration-track:752a59bd13e9e678e602d031445d4ee64668b12cb614a79e60f12b839fef932d` |
+| 6 | `def` | [hashFileContents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/hashfilecontents.md) | 54 | `declaration-track:c0026b96dec4f2c35c2457a95b23dcc421197b6248edea6be85cb4439d5e8ba4` |
+| 7 | `def` | [getRootHash](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/getroothash.md) | 65 | `declaration-track:5040e9be9445af27fd968f26803a0947ed22663376fad6ace80c7dd1288bf0c9` |
+| 8 | `def` | [getFileHash](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/getfilehash.md) | 78 | `declaration-track:e917703f1861d78ebaef4bd64a5a420f39c654682b68bf1c1a555b14d663f78b` |
+| 9 | `def` | [roots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/roots.md) | 107 | `declaration-track:4f998e9353a862e451769b04ceac98e1566d60bcbb4c1bbb69e617fbcc25c92d` |
+| 10 | `def` | [getHashMemo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashingEdition2.lean/declarations/gethashmemo.md) | 110 | `declaration-track:99e02f0f9f57ce5c1c2268f07c58b59a235a42aeff4e90aadb46f8ef853deb49` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

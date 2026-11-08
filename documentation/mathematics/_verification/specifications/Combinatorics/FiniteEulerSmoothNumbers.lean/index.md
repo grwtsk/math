@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FiniteEulerSmoothNumbers.lean/index.md) · [Full source](../../../../Combinatorics/FiniteEulerSmoothNumbers.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteEulerSmoothNumbers.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteEulerSmoothNumbers.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exponentVectorNat](../../../../Combinatorics/FiniteEulerSmoothNumbers.lean/declarations/exponentvectornat.md) | 15 | `declaration-track:d5b10232918c1a83aec4d3f9b89ad6a28cfb92ba7f368136b7c7b98c5d9c2c0b` |
-| 2 | `theorem` | [exponentVectorNat_pos](../../../../Combinatorics/FiniteEulerSmoothNumbers.lean/declarations/exponentvectornat-pos.md) | 21 | `result-track:c056064da1c5b25d5f165dd36508ce080446dface30d7caa1561cc0a6c2cb8c4` |
-| 3 | `def` | [boundedSmoothNumbers](../../../../Combinatorics/FiniteEulerSmoothNumbers.lean/declarations/boundedsmoothnumbers.md) | 30 | `declaration-track:00ddb60657e0e0847ffe80c8679301e8f950c293326ead718468d6399056fa13` |
-| 4 | `theorem` | [exponentVectorNat_mem_boundedSmoothNumbers](../../../../Combinatorics/FiniteEulerSmoothNumbers.lean/declarations/exponentvectornat-mem-boundedsmoothnumbers.md) | 37 | `result-track:95ed357c937819f3727e2c5c8c9966ef758b0647faaf9e92aef631516edd1b9f` |
+| 1 | `def` | [exponentVectorNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteEulerSmoothNumbers.lean/declarations/exponentvectornat.md) | 15 | `declaration-track:d5b10232918c1a83aec4d3f9b89ad6a28cfb92ba7f368136b7c7b98c5d9c2c0b` |
+| 2 | `theorem` | [exponentVectorNat_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteEulerSmoothNumbers.lean/declarations/exponentvectornat-pos.md) | 21 | `result-track:c056064da1c5b25d5f165dd36508ce080446dface30d7caa1561cc0a6c2cb8c4` |
+| 3 | `def` | [boundedSmoothNumbers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteEulerSmoothNumbers.lean/declarations/boundedsmoothnumbers.md) | 30 | `declaration-track:00ddb60657e0e0847ffe80c8679301e8f950c293326ead718468d6399056fa13` |
+| 4 | `theorem` | [exponentVectorNat_mem_boundedSmoothNumbers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteEulerSmoothNumbers.lean/declarations/exponentvectornat-mem-boundedsmoothnumbers.md) | 37 | `result-track:95ed357c937819f3727e2c5c8c9966ef758b0647faaf9e92aef631516edd1b9f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

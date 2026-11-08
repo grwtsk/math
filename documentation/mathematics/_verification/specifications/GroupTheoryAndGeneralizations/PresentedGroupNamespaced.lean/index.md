@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [PresentedGroup](../../../../GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/declarations/presentedgroup.md) | 43 | `declaration-track:d3b09e5b247d9d20df852ef08d0446fd859c544ba4ec598b198072e7375da4e3` |
-| 2 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/declarations/instance.md) | 49 | `declaration-track:255786efb19b930d692505fd4d54c2e60c60d9b9b2f72f25ee505d8c31fca256` |
-| 3 | `def` | [of](../../../../GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/declarations/of.md) | 54 | `declaration-track:b728e99ae280a5a95e269a92cc5d336f8f181bf79dbdd2ed7fe119a1fcfbf71f` |
-| 4 | `theorem` | [closure_rels_subset_ker](../../../../GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/declarations/closure-rels-subset-ker.md) | 73 | `result-track:850705dbfc7895192182bcfbc0b2063a2d2db6fe2573a6ad64a6508f1f93e4f3` |
-| 5 | `theorem` | [to_group_eq_one_of_mem_closure](../../../../GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/declarations/to-group-eq-one-of-mem-closure.md) | 77 | `result-track:0b1a5fb678f21a6750e4b435f36766fd7c734584eb3675ad1d2e641e9fae46fe` |
-| 6 | `def` | [toGroup](../../../../GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/declarations/togroup.md) | 83 | `declaration-track:257969003a641444f9b13296bcc812f25342b4ecb69bb8027472f2455f9c9584` |
-| 7 | `theorem` | [toGroup.of](../../../../GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/declarations/togroup-of.md) | 88 | `result-track:3fb4d5072aeba5a4d7adee9b816cdd19f51717d99549a8931401eba9524570ed` |
-| 8 | `theorem` | [toGroup.unique](../../../../GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/declarations/togroup-unique.md) | 92 | `result-track:c6e11062d1a8acb69e69ae6cfc8784e8d3f7f2b65fef84fd5309294509207c77` |
-| 9 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/declarations/instance-source-edition-2.md) | 101 | `declaration-track:84618dda45014ab406e605e334a7d60d678fc04d31fd9dbc5b95e244b03ac544` |
+| 1 | `def` | [PresentedGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/declarations/presentedgroup.md) | 43 | `declaration-track:d3b09e5b247d9d20df852ef08d0446fd859c544ba4ec598b198072e7375da4e3` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/declarations/instance.md) | 49 | `declaration-track:255786efb19b930d692505fd4d54c2e60c60d9b9b2f72f25ee505d8c31fca256` |
+| 3 | `def` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/declarations/of.md) | 54 | `declaration-track:b728e99ae280a5a95e269a92cc5d336f8f181bf79dbdd2ed7fe119a1fcfbf71f` |
+| 4 | `theorem` | [closure_rels_subset_ker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/declarations/closure-rels-subset-ker.md) | 73 | `result-track:850705dbfc7895192182bcfbc0b2063a2d2db6fe2573a6ad64a6508f1f93e4f3` |
+| 5 | `theorem` | [to_group_eq_one_of_mem_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/declarations/to-group-eq-one-of-mem-closure.md) | 77 | `result-track:0b1a5fb678f21a6750e4b435f36766fd7c734584eb3675ad1d2e641e9fae46fe` |
+| 6 | `def` | [toGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/declarations/togroup.md) | 83 | `declaration-track:257969003a641444f9b13296bcc812f25342b4ecb69bb8027472f2455f9c9584` |
+| 7 | `theorem` | [toGroup.of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/declarations/togroup-of.md) | 88 | `result-track:3fb4d5072aeba5a4d7adee9b816cdd19f51717d99549a8931401eba9524570ed` |
+| 8 | `theorem` | [toGroup.unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/declarations/togroup-unique.md) | 92 | `result-track:c6e11062d1a8acb69e69ae6cfc8784e8d3f7f2b65fef84fd5309294509207c77` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PresentedGroupNamespaced.lean/declarations/instance-source-edition-2.md) | 101 | `declaration-track:84618dda45014ab406e605e334a7d60d678fc04d31fd9dbc5b95e244b03ac544` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/Identity.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/Identity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Identity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Identity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TypeId](../../../../ProbabilityTheoryAndStochasticProcesses/Identity.lean/declarations/typeid.md) | 5 | `declaration-track:2f40894f3c0b344cb280d2bf9f49c66f321ea8710c10ff8213f81a94c1269429` |
-| 2 | `structure` | [TheoremId](../../../../ProbabilityTheoryAndStochasticProcesses/Identity.lean/declarations/theoremid.md) | 6 | `declaration-track:27fe3b11e66a6f5f323226e571c0eb12b82d4a750e58ba21fd98ee30aab69441` |
-| 3 | `def` | [stableIdentity](../../../../ProbabilityTheoryAndStochasticProcesses/Identity.lean/declarations/stableidentity.md) | 9 | `declaration-track:2f2221ed104ea94aa3edea82f273bb912a0279755ed8a561a175963e3ba4f982` |
-| 4 | `theorem` | [stableIdentity_source_range_independent](../../../../ProbabilityTheoryAndStochasticProcesses/Identity.lean/declarations/stableidentity-source-range-independent.md) | 11 | `result-track:57491e62231c3a62dd4209dd2e5af47245f03137c9f3f791307fcfd796460026` |
+| 1 | `structure` | [TypeId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Identity.lean/declarations/typeid.md) | 5 | `declaration-track:2f40894f3c0b344cb280d2bf9f49c66f321ea8710c10ff8213f81a94c1269429` |
+| 2 | `structure` | [TheoremId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Identity.lean/declarations/theoremid.md) | 6 | `declaration-track:27fe3b11e66a6f5f323226e571c0eb12b82d4a750e58ba21fd98ee30aab69441` |
+| 3 | `def` | [stableIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Identity.lean/declarations/stableidentity.md) | 9 | `declaration-track:2f2221ed104ea94aa3edea82f273bb912a0279755ed8a561a175963e3ba4f982` |
+| 4 | `theorem` | [stableIdentity_source_range_independent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Identity.lean/declarations/stableidentity-source-range-independent.md) | 11 | `result-track:57491e62231c3a62dd4209dd2e5af47245f03137c9f3f791307fcfd796460026` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

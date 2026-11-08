@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DirectedEulerActiveSupport.lean/index.md) · [Full source](../../../../Combinatorics/DirectedEulerActiveSupport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerActiveSupport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerActiveSupport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.DirectedEulerExhaustionConsumer`](../../../../Combinatorics/DirectedEulerExhaustionConsumer.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Combinatorics.DirectedEulerExhaustionConsumer`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerExhaustionConsumer.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Logic.Relation` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [incidentEdgeSupport](../../../../Combinatorics/DirectedEulerActiveSupport.lean/declarations/incidentedgesupport.md) | 23 | `declaration-track:8ffff4ddd1ea480952c240ad9013e12bef337185d263fe203badb842719ffbf5` |
-| 2 | `def` | [undirectedEdgeAdjacency](../../../../Combinatorics/DirectedEulerActiveSupport.lean/declarations/undirectededgeadjacency.md) | 27 | `declaration-track:1aedc0637e5d1b952bb3c26805b74cd19936cd99712bd31ed2c6c46d3893f11b` |
-| 3 | `def` | [vertices](../../../../Combinatorics/DirectedEulerActiveSupport.lean/declarations/vertices.md) | 34 | `declaration-track:c9850d9e4511ff45c6067961d2f6b1e29e4e288951790d0ea05cb243126edbd0` |
-| 4 | `theorem` | [start_mem_vertices](../../../../Combinatorics/DirectedEulerActiveSupport.lean/declarations/start-mem-vertices.md) | 38 | `result-track:173d533319e3356ff525947901978bfe29a4837360a3d94f926b4aa2ecf685f0` |
-| 5 | `theorem` | [edge_endpoints_mem_vertices](../../../../Combinatorics/DirectedEulerActiveSupport.lean/declarations/edge-endpoints-mem-vertices.md) | 45 | `result-track:160fb1028c35c4e955393f084be373c3e53934c17604ba85b782e0e30086d1d8` |
-| 6 | `theorem` | [split_at_mem_vertices](../../../../Combinatorics/DirectedEulerActiveSupport.lean/declarations/split-at-mem-vertices.md) | 59 | `result-track:6a2445ccfb578fdd839148f5b3fb1060e4b0382ace86e275c9c81095cd53131c` |
-| 7 | `theorem` | [exists_residual_outgoing_at_visited_vertex](../../../../Combinatorics/DirectedEulerActiveSupport.lean/declarations/exists-residual-outgoing-at-visited-vertex.md) | 79 | `result-track:996b46d4b4266f833ba21c3328e79922660592a90a030c295e3283f381ee9bc3` |
-| 8 | `theorem` | [exists_residual_outgoing_splice_of_connected_support](../../../../Combinatorics/DirectedEulerActiveSupport.lean/declarations/exists-residual-outgoing-splice-of-connected-support.md) | 159 | `result-track:c394b715dc9c225f60614fece6aa45f3d81712ed2638a5bca06bbb1df3382edd` |
-| 9 | `theorem` | [exists_exhaustive_closed_trail_of_balanced_connected_support](../../../../Combinatorics/DirectedEulerActiveSupport.lean/declarations/exists-exhaustive-closed-trail-of-balanced-connected-support.md) | 179 | `result-track:ac6b6d2362a7342cf23ba5c658e9cea43e94aca651e454b3865441888b139328` |
-| 10 | `theorem` | [exists_euler_closed_trail_of_nonempty_balanced_connected_support](../../../../Combinatorics/DirectedEulerActiveSupport.lean/declarations/exists-euler-closed-trail-of-nonempty-balanced-connected-support.md) | 196 | `result-track:eac0dd2e3413e1a92d24ba531174a80d808ee7ac7a6ee3eb0bd79cea8003f926` |
-| 11 | `theorem` | [bool_loop_edges_eq_start](../../../../Combinatorics/DirectedEulerActiveSupport.lean/declarations/bool-loop-edges-eq-start.md) | 212 | `result-track:6b78b61f9be39666f5ada8eb475e049dfe262907ac5d45953e7e15c7868f740f` |
-| 12 | `theorem` | [two_constant_loops_balanced_but_no_euler](../../../../Combinatorics/DirectedEulerActiveSupport.lean/declarations/two-constant-loops-balanced-but-no-euler.md) | 227 | `result-track:5d967bfe748c7b735aeae832cab2451a0416b182a96e44c7434698e80d314b28` |
+| 1 | `def` | [incidentEdgeSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerActiveSupport.lean/declarations/incidentedgesupport.md) | 23 | `declaration-track:8ffff4ddd1ea480952c240ad9013e12bef337185d263fe203badb842719ffbf5` |
+| 2 | `def` | [undirectedEdgeAdjacency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerActiveSupport.lean/declarations/undirectededgeadjacency.md) | 27 | `declaration-track:1aedc0637e5d1b952bb3c26805b74cd19936cd99712bd31ed2c6c46d3893f11b` |
+| 3 | `def` | [vertices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerActiveSupport.lean/declarations/vertices.md) | 34 | `declaration-track:c9850d9e4511ff45c6067961d2f6b1e29e4e288951790d0ea05cb243126edbd0` |
+| 4 | `theorem` | [start_mem_vertices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerActiveSupport.lean/declarations/start-mem-vertices.md) | 38 | `result-track:173d533319e3356ff525947901978bfe29a4837360a3d94f926b4aa2ecf685f0` |
+| 5 | `theorem` | [edge_endpoints_mem_vertices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerActiveSupport.lean/declarations/edge-endpoints-mem-vertices.md) | 45 | `result-track:160fb1028c35c4e955393f084be373c3e53934c17604ba85b782e0e30086d1d8` |
+| 6 | `theorem` | [split_at_mem_vertices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerActiveSupport.lean/declarations/split-at-mem-vertices.md) | 59 | `result-track:6a2445ccfb578fdd839148f5b3fb1060e4b0382ace86e275c9c81095cd53131c` |
+| 7 | `theorem` | [exists_residual_outgoing_at_visited_vertex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerActiveSupport.lean/declarations/exists-residual-outgoing-at-visited-vertex.md) | 79 | `result-track:996b46d4b4266f833ba21c3328e79922660592a90a030c295e3283f381ee9bc3` |
+| 8 | `theorem` | [exists_residual_outgoing_splice_of_connected_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerActiveSupport.lean/declarations/exists-residual-outgoing-splice-of-connected-support.md) | 159 | `result-track:c394b715dc9c225f60614fece6aa45f3d81712ed2638a5bca06bbb1df3382edd` |
+| 9 | `theorem` | [exists_exhaustive_closed_trail_of_balanced_connected_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerActiveSupport.lean/declarations/exists-exhaustive-closed-trail-of-balanced-connected-support.md) | 179 | `result-track:ac6b6d2362a7342cf23ba5c658e9cea43e94aca651e454b3865441888b139328` |
+| 10 | `theorem` | [exists_euler_closed_trail_of_nonempty_balanced_connected_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerActiveSupport.lean/declarations/exists-euler-closed-trail-of-nonempty-balanced-connected-support.md) | 196 | `result-track:eac0dd2e3413e1a92d24ba531174a80d808ee7ac7a6ee3eb0bd79cea8003f926` |
+| 11 | `theorem` | [bool_loop_edges_eq_start](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerActiveSupport.lean/declarations/bool-loop-edges-eq-start.md) | 212 | `result-track:6b78b61f9be39666f5ada8eb475e049dfe262907ac5d45953e7e15c7868f740f` |
+| 12 | `theorem` | [two_constant_loops_balanced_but_no_euler](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerActiveSupport.lean/declarations/two-constant-loops-balanced-but-no-euler.md) | 227 | `result-track:5d967bfe748c7b735aeae832cab2451a0416b182a96e44c7434698e80d314b28` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

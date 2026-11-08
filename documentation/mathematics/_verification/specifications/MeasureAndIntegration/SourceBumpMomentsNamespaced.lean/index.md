@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceBumpMomentsNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceBumpMomentsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpMomentsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpMomentsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bumpMoment](../../../../MeasureAndIntegration/SourceBumpMomentsNamespaced.lean/declarations/bumpmoment.md) | 29 | `declaration-track:ddbc1762500100c5499e8e44a2721ac22caa1cd020645136a52e23bed04e1cc6` |
-| 2 | `theorem` | [bumpMoment_intervalIntegrable](../../../../MeasureAndIntegration/SourceBumpMomentsNamespaced.lean/declarations/bumpmoment-intervalintegrable.md) | 34 | `result-track:d401f686ce4294744edfa3a32f75777e76e434c95d7aa00e153cbde1d9357161` |
-| 3 | `theorem` | [bumpMoment_zero_eq_source](../../../../MeasureAndIntegration/SourceBumpMomentsNamespaced.lean/declarations/bumpmoment-zero-eq-source.md) | 41 | `result-track:34cc88d30ca404184878284330d0b01291ae047a75506f03148ece4524f5971c` |
-| 4 | `theorem` | [bumpMoment_zero_zero](../../../../MeasureAndIntegration/SourceBumpMomentsNamespaced.lean/declarations/bumpmoment-zero-zero.md) | 54 | `result-track:073b5994a5da723270219748d8e8b64e174c98cd2e087e000fd8c33397da46a7` |
-| 5 | `theorem` | [bumpFlux_hasDerivAt](../../../../MeasureAndIntegration/SourceBumpMomentsNamespaced.lean/declarations/bumpflux-hasderivat.md) | 64 | `result-track:3a0d7715968707dc5d9930afb3cfb2a4f7f15d1d16dc6dce77516d41d905e672` |
-| 6 | `theorem` | [bumpMoment_equation](../../../../MeasureAndIntegration/SourceBumpMomentsNamespaced.lean/declarations/bumpmoment-equation.md) | 75 | `result-track:323add31bcb3026ba0199a41f6bee0c35b6aaa3051018e9c3b5eff0f2c360243` |
-| 7 | `theorem` | [re_eq_zero_of_weighted_energy](../../../../MeasureAndIntegration/SourceBumpMomentsNamespaced.lean/declarations/re-eq-zero-of-weighted-energy.md) | 110 | `result-track:8e93206e35b00e44fe45cd83b2e71ee4ede6f09a267b4dee3f0e9515c95aa855` |
+| 1 | `def` | [bumpMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpMomentsNamespaced.lean/declarations/bumpmoment.md) | 29 | `declaration-track:ddbc1762500100c5499e8e44a2721ac22caa1cd020645136a52e23bed04e1cc6` |
+| 2 | `theorem` | [bumpMoment_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpMomentsNamespaced.lean/declarations/bumpmoment-intervalintegrable.md) | 34 | `result-track:d401f686ce4294744edfa3a32f75777e76e434c95d7aa00e153cbde1d9357161` |
+| 3 | `theorem` | [bumpMoment_zero_eq_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpMomentsNamespaced.lean/declarations/bumpmoment-zero-eq-source.md) | 41 | `result-track:34cc88d30ca404184878284330d0b01291ae047a75506f03148ece4524f5971c` |
+| 4 | `theorem` | [bumpMoment_zero_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpMomentsNamespaced.lean/declarations/bumpmoment-zero-zero.md) | 54 | `result-track:073b5994a5da723270219748d8e8b64e174c98cd2e087e000fd8c33397da46a7` |
+| 5 | `theorem` | [bumpFlux_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpMomentsNamespaced.lean/declarations/bumpflux-hasderivat.md) | 64 | `result-track:3a0d7715968707dc5d9930afb3cfb2a4f7f15d1d16dc6dce77516d41d905e672` |
+| 6 | `theorem` | [bumpMoment_equation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpMomentsNamespaced.lean/declarations/bumpmoment-equation.md) | 75 | `result-track:323add31bcb3026ba0199a41f6bee0c35b6aaa3051018e9c3b5eff0f2c360243` |
+| 7 | `theorem` | [re_eq_zero_of_weighted_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpMomentsNamespaced.lean/declarations/re-eq-zero-of-weighted-energy.md) | 110 | `result-track:8e93206e35b00e44fe45cd83b2e71ee4ede6f09a267b4dee3f0e9515c95aa855` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

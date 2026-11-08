@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughProjectives.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughProjectives.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughProjectives.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughProjectives.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isSplitEpi_to_singleFunctor_obj_of_projective](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughProjectives.lean/declarations/issplitepi-to-singlefunctor-obj-of-projective.md) | 34 | `result-track:6efebe67d397a1630505d81029ca92f181f0f6c7556d708bfe9088dbbeea2238` |
-| 2 | `lemma` | [from_singleFunctor_obj_eq_zero_of_projective](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughProjectives.lean/declarations/from-singlefunctor-obj-eq-zero-of-projective.md) | 65 | `result-track:5f377063d76dab7a55fe79a24fb015e2409bc8e7b8c88d1ae142f1b2f30168bc` |
-| 3 | `lemma` | [eq_zero_of_projective](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughProjectives.lean/declarations/eq-zero-of-projective.md) | 93 | `result-track:71a45bb5fcade0cdea9536c74a0bd90f8082b637723b15d63d76122bc6cac43e` |
-| 4 | `lemma` | [hasExt_of_enoughProjectives](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughProjectives.lean/declarations/hasext-of-enoughprojectives.md) | 115 | `result-track:d1b2e7a3e0fb213b7202faaad9aec306ec7a8467511a835df1cb82896a4fe139` |
+| 1 | `lemma` | [isSplitEpi_to_singleFunctor_obj_of_projective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughProjectives.lean/declarations/issplitepi-to-singlefunctor-obj-of-projective.md) | 34 | `result-track:6efebe67d397a1630505d81029ca92f181f0f6c7556d708bfe9088dbbeea2238` |
+| 2 | `lemma` | [from_singleFunctor_obj_eq_zero_of_projective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughProjectives.lean/declarations/from-singlefunctor-obj-eq-zero-of-projective.md) | 65 | `result-track:5f377063d76dab7a55fe79a24fb015e2409bc8e7b8c88d1ae142f1b2f30168bc` |
+| 3 | `lemma` | [eq_zero_of_projective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughProjectives.lean/declarations/eq-zero-of-projective.md) | 93 | `result-track:71a45bb5fcade0cdea9536c74a0bd90f8082b637723b15d63d76122bc6cac43e` |
+| 4 | `lemma` | [hasExt_of_enoughProjectives](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughProjectives.lean/declarations/hasext-of-enoughprojectives.md) | 115 | `result-track:d1b2e7a3e0fb213b7202faaad9aec306ec7a8467511a835df1cb82896a4fe139` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

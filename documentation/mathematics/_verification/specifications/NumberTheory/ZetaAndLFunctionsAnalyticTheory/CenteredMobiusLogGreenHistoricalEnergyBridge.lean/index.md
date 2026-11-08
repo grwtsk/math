@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHistoricalEnergyBridge.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHistoricalEnergyBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHistoricalEnergyBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHistoricalEnergyBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenEnergyTransfer`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenEnergyTransfer.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenEnergyTransfer`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenEnergyTransfer.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Tactic` — import line 9; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [authenticatedGreenArithmeticFourierCoordinate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHistoricalEnergyBridge.lean/declarations/authenticatedgreenarithmeticfouriercoordinate.md) | 17 | `declaration-track:850d8a93c0a5cddf202bdb1ceb88fd9b1b7bb9656296b4258a25aaa953642427` |
-| 2 | `theorem` | [thinGreenArithmeticFourierCoordinate_eq_authenticated](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHistoricalEnergyBridge.lean/declarations/thingreenarithmeticfouriercoordinate-eq-authenticated.md) | 23 | `result-track:93ad0a58049d41264c4fd2170b8b3b362d9af296b354ce810fbb297ef82b76bf` |
-| 3 | `def` | [thinGreenAugmentedEnergy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHistoricalEnergyBridge.lean/declarations/thingreenaugmentedenergy.md) | 31 | `declaration-track:53c1b0f3838fe27af4760fb253716e788b82f437716e1d04aa4ec402f3c908e5` |
-| 4 | `theorem` | [thinGreenAugmentedEnergy_eq_of_greenEnergy_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHistoricalEnergyBridge.lean/declarations/thingreenaugmentedenergy-eq-of-greenenergy-eq.md) | 39 | `result-track:7a50224d2cfad0aaaff69368b3c697acdc236fd63ef09f2745409d798e15fab1` |
-| 5 | `def` | [ThinAllDyadicAugmentedEnergyBound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHistoricalEnergyBridge.lean/declarations/thinalldyadicaugmentedenergybound.md) | 49 | `declaration-track:bd3f5407709dac10693c3966a5203a3b98729649c199e820bce561200ad20d95` |
+| 1 | `def` | [authenticatedGreenArithmeticFourierCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHistoricalEnergyBridge.lean/declarations/authenticatedgreenarithmeticfouriercoordinate.md) | 17 | `declaration-track:850d8a93c0a5cddf202bdb1ceb88fd9b1b7bb9656296b4258a25aaa953642427` |
+| 2 | `theorem` | [thinGreenArithmeticFourierCoordinate_eq_authenticated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHistoricalEnergyBridge.lean/declarations/thingreenarithmeticfouriercoordinate-eq-authenticated.md) | 23 | `result-track:93ad0a58049d41264c4fd2170b8b3b362d9af296b354ce810fbb297ef82b76bf` |
+| 3 | `def` | [thinGreenAugmentedEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHistoricalEnergyBridge.lean/declarations/thingreenaugmentedenergy.md) | 31 | `declaration-track:53c1b0f3838fe27af4760fb253716e788b82f437716e1d04aa4ec402f3c908e5` |
+| 4 | `theorem` | [thinGreenAugmentedEnergy_eq_of_greenEnergy_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHistoricalEnergyBridge.lean/declarations/thingreenaugmentedenergy-eq-of-greenenergy-eq.md) | 39 | `result-track:7a50224d2cfad0aaaff69368b3c697acdc236fd63ef09f2745409d798e15fab1` |
+| 5 | `def` | [ThinAllDyadicAugmentedEnergyBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenHistoricalEnergyBridge.lean/declarations/thinalldyadicaugmentedenergybound.md) | 49 | `declaration-track:bd3f5407709dac10693c3966a5203a3b98729649c199e820bce561200ad20d95` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GeneratorEquiv.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GeneratorEquiv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorEquiv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorEquiv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FreeAbelianGroup.basis](../../../../GroupTheoryAndGeneralizations/GeneratorEquiv.lean/declarations/freeabeliangroup-basis.md) | 29 | `declaration-track:a6044e04407c7479f924243762d777546d5af0ff41c7ca8b1da9b35d16690172` |
-| 2 | `def` | [Equiv.ofFreeAbelianGroupLinearEquiv](../../../../GroupTheoryAndGeneralizations/GeneratorEquiv.lean/declarations/equiv-offreeabeliangrouplinearequiv.md) | 33 | `declaration-track:6114c594d94f05900a485b9c8adee4cdecdb00cea888cefac8386b26a84872e5` |
-| 3 | `def` | [Equiv.ofFreeAbelianGroupEquiv](../../../../GroupTheoryAndGeneralizations/GeneratorEquiv.lean/declarations/equiv-offreeabeliangroupequiv.md) | 38 | `declaration-track:a11e912026a679dedd8b38893fa4a99fc971f2107d06a28d46d140a3e404f054` |
-| 4 | `def` | [Equiv.ofFreeGroupEquiv](../../../../GroupTheoryAndGeneralizations/GeneratorEquiv.lean/declarations/equiv-offreegroupequiv.md) | 42 | `declaration-track:04ede0c10de35321d0bed6fb41ff133e5d2b7db395ea6745cad797d4cb2ec8e7` |
-| 5 | `def` | [Equiv.ofIsFreeGroupEquiv](../../../../GroupTheoryAndGeneralizations/GeneratorEquiv.lean/declarations/equiv-ofisfreegroupequiv.md) | 46 | `declaration-track:4a52540c907ddcbed60cfae6acb1a620769ad525b410df3e575a08154ed26f9d` |
+| 1 | `def` | [FreeAbelianGroup.basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorEquiv.lean/declarations/freeabeliangroup-basis.md) | 29 | `declaration-track:a6044e04407c7479f924243762d777546d5af0ff41c7ca8b1da9b35d16690172` |
+| 2 | `def` | [Equiv.ofFreeAbelianGroupLinearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorEquiv.lean/declarations/equiv-offreeabeliangrouplinearequiv.md) | 33 | `declaration-track:6114c594d94f05900a485b9c8adee4cdecdb00cea888cefac8386b26a84872e5` |
+| 3 | `def` | [Equiv.ofFreeAbelianGroupEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorEquiv.lean/declarations/equiv-offreeabeliangroupequiv.md) | 38 | `declaration-track:a11e912026a679dedd8b38893fa4a99fc971f2107d06a28d46d140a3e404f054` |
+| 4 | `def` | [Equiv.ofFreeGroupEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorEquiv.lean/declarations/equiv-offreegroupequiv.md) | 42 | `declaration-track:04ede0c10de35321d0bed6fb41ff133e5d2b7db395ea6745cad797d4cb2ec8e7` |
+| 5 | `def` | [Equiv.ofIsFreeGroupEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorEquiv.lean/declarations/equiv-ofisfreegroupequiv.md) | 46 | `declaration-track:4a52540c907ddcbed60cfae6acb1a620769ad525b410df3e575a08154ed26f9d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

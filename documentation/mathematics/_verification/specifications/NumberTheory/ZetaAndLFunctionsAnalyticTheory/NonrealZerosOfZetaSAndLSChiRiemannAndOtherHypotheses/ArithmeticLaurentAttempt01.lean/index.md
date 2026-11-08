@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticLaurentAttempt01.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticLaurentAttempt01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticLaurentAttempt01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticLaurentAttempt01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_regular_negative_derivative](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticLaurentAttempt01.lean/declarations/actual-regular-negative-derivative.md) | 14 | `result-track:b5ce91e12ec6f1198ce32ec2d1ced5678d0a30b06b2da35da5b2da1de655771c` |
-| 2 | `theorem` | [actual_regular_negative_slope](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticLaurentAttempt01.lean/declarations/actual-regular-negative-slope.md) | 21 | `result-track:de4a4d21b03fcd5f31fe3ab21a246815b0b4cad1e5b621e3c580868ef3b4e065` |
-| 3 | `theorem` | [actual_negative_log_laurent_slope](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticLaurentAttempt01.lean/declarations/actual-negative-log-laurent-slope.md) | 29 | `result-track:ee151f4a6af50a41ab334d295e0e42403a6e60721d011cf7c991f58f0102270b` |
-| 4 | `theorem` | [actual_vonMangoldt_series_laurent_slope](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticLaurentAttempt01.lean/declarations/actual-vonmangoldt-series-laurent-slope.md) | 38 | `result-track:877b379efa5a62f0bc82271e831bbb5d792715bc444c37b26c4582963322b940` |
+| 1 | `theorem` | [actual_regular_negative_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticLaurentAttempt01.lean/declarations/actual-regular-negative-derivative.md) | 14 | `result-track:b5ce91e12ec6f1198ce32ec2d1ced5678d0a30b06b2da35da5b2da1de655771c` |
+| 2 | `theorem` | [actual_regular_negative_slope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticLaurentAttempt01.lean/declarations/actual-regular-negative-slope.md) | 21 | `result-track:de4a4d21b03fcd5f31fe3ab21a246815b0b4cad1e5b621e3c580868ef3b4e065` |
+| 3 | `theorem` | [actual_negative_log_laurent_slope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticLaurentAttempt01.lean/declarations/actual-negative-log-laurent-slope.md) | 29 | `result-track:ee151f4a6af50a41ab334d295e0e42403a6e60721d011cf7c991f58f0102270b` |
+| 4 | `theorem` | [actual_vonMangoldt_series_laurent_slope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticLaurentAttempt01.lean/declarations/actual-vonmangoldt-series-laurent-slope.md) | 38 | `result-track:877b379efa5a62f0bc82271e831bbb5d792715bc444c37b26c4582963322b940` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

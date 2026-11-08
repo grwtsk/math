@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogOneSupplierReduction.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogOneSupplierReduction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogOneSupplierReduction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogOneSupplierReduction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFromPrefix`](../../../../../MeasureAndIntegration/CenteredMobiusLogGreenFromPrefix.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFromPrefix`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenFromPrefix.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.Tactic` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [allDyadicHistoricalGreenEnergyBound_of_prefixMangoldt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogOneSupplierReduction.lean/declarations/alldyadichistoricalgreenenergybound-of-prefixmangoldt.md) | 17 | `result-track:1a6f23d5fa4627a00b8af749bf594e1fcc7618a0d20d7ab0a31110d3058aaf3d` |
-| 2 | `theorem` | [allDyadicEnergyBound_of_prefixMangoldt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogOneSupplierReduction.lean/declarations/alldyadicenergybound-of-prefixmangoldt.md) | 66 | `result-track:bdd4af557f15a2df9a1178d31cee906076ae8dc1a20d60640464c882841f77b6` |
+| 1 | `theorem` | [allDyadicHistoricalGreenEnergyBound_of_prefixMangoldt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogOneSupplierReduction.lean/declarations/alldyadichistoricalgreenenergybound-of-prefixmangoldt.md) | 17 | `result-track:1a6f23d5fa4627a00b8af749bf594e1fcc7618a0d20d7ab0a31110d3058aaf3d` |
+| 2 | `theorem` | [allDyadicEnergyBound_of_prefixMangoldt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogOneSupplierReduction.lean/declarations/alldyadicenergybound-of-prefixmangoldt.md) | 66 | `result-track:bdd4af557f15a2df9a1178d31cee906076ae8dc1a20d60640464c882841f77b6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

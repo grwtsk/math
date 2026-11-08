@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/WorkflowWorkflowStepRecord.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/WorkflowWorkflowStepRecord.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WorkflowWorkflowStepRecord.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WorkflowWorkflowStepRecord.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [WorkflowStepRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/WorkflowWorkflowStepRecord.lean/declarations/workflowsteprecord.md) | 7 | `declaration-track:c335037c28840bb2ce8bfbbd9e3d23b7067f545e53f58168efb79698fbaaba96` |
-| 2 | `structure` | [WorkflowCompiler](../../../../../ComputerScience/AlgorithmsInComputerScience/WorkflowWorkflowStepRecord.lean/declarations/workflowcompiler.md) | 14 | `declaration-track:e5cda02d99b9031b988cff02b6b1fb4b1a664407d27720227d5f5360ee81c56f` |
-| 3 | `def` | [WorkflowCompiler.hasSuggestion](../../../../../ComputerScience/AlgorithmsInComputerScience/WorkflowWorkflowStepRecord.lean/declarations/workflowcompiler-hassuggestion.md) | 20 | `declaration-track:354b2afa6736a851669b6469e47f75b8fe1489306d265317c92e6dc4c6177431` |
+| 1 | `structure` | [WorkflowStepRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WorkflowWorkflowStepRecord.lean/declarations/workflowsteprecord.md) | 7 | `declaration-track:c335037c28840bb2ce8bfbbd9e3d23b7067f545e53f58168efb79698fbaaba96` |
+| 2 | `structure` | [WorkflowCompiler](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WorkflowWorkflowStepRecord.lean/declarations/workflowcompiler.md) | 14 | `declaration-track:e5cda02d99b9031b988cff02b6b1fb4b1a664407d27720227d5f5360ee81c56f` |
+| 3 | `def` | [WorkflowCompiler.hasSuggestion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WorkflowWorkflowStepRecord.lean/declarations/workflowcompiler-hassuggestion.md) | 20 | `declaration-track:354b2afa6736a851669b6469e47f75b8fe1489306d265317c92e6dc4c6177431` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

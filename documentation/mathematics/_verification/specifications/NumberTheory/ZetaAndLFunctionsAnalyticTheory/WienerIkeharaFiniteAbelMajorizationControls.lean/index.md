@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorizationControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorizationControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorizationControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorizationControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.WienerIkeharaFiniteAbelMajorization`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorization.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.WienerIkeharaFiniteAbelMajorization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorization.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.Tactic` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [wienerAbel_zero_stage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorizationControls.lean/declarations/wienerabel-zero-stage.md) | 19 | `result-track:47720f9384245c0faeb77c566ea5e4d1e25d29bbca1a4b7aedea78cc39d39ca9` |
-| 2 | `theorem` | [wienerAbel_one_stage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorizationControls.lean/declarations/wienerabel-one-stage.md) | 31 | `result-track:7831df7417ac5126ad571bd22bd865aea07c3e1b472303ab61b3ae4edd84c929` |
-| 3 | `theorem` | [wienerAbel_actual_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorizationControls.lean/declarations/wienerabel-actual-identity.md) | 39 | `result-track:01f7e6d4b60c6fcad13a3fe7625fac83661c1e04f0bcb26eeb58f3e63771c8b1` |
-| 4 | `theorem` | [wienerAbel_actual_weighted_majorization](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorizationControls.lean/declarations/wienerabel-actual-weighted-majorization.md) | 50 | `result-track:45fbc838d9a116265457ee8c3f847fd135f3b806fa12e125000c8503bddd45c9` |
-| 5 | `theorem` | [wienerAbel_constant_weight_check](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorizationControls.lean/declarations/wienerabel-constant-weight-check.md) | 66 | `result-track:928dec4bc2cdd023b385e08addd911ac8a8c5612b9a214570d3e204a61f6b117` |
-| 6 | `def` | [wienerAbel_nextObligations](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorizationControls.lean/declarations/wienerabel-nextobligations.md) | 76 | `declaration-track:c781038994ad9c92faf05976d358280d38e6ae240350775e6e1a92fc8430cd5d` |
+| 1 | `theorem` | [wienerAbel_zero_stage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorizationControls.lean/declarations/wienerabel-zero-stage.md) | 19 | `result-track:47720f9384245c0faeb77c566ea5e4d1e25d29bbca1a4b7aedea78cc39d39ca9` |
+| 2 | `theorem` | [wienerAbel_one_stage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorizationControls.lean/declarations/wienerabel-one-stage.md) | 31 | `result-track:7831df7417ac5126ad571bd22bd865aea07c3e1b472303ab61b3ae4edd84c929` |
+| 3 | `theorem` | [wienerAbel_actual_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorizationControls.lean/declarations/wienerabel-actual-identity.md) | 39 | `result-track:01f7e6d4b60c6fcad13a3fe7625fac83661c1e04f0bcb26eeb58f3e63771c8b1` |
+| 4 | `theorem` | [wienerAbel_actual_weighted_majorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorizationControls.lean/declarations/wienerabel-actual-weighted-majorization.md) | 50 | `result-track:45fbc838d9a116265457ee8c3f847fd135f3b806fa12e125000c8503bddd45c9` |
+| 5 | `theorem` | [wienerAbel_constant_weight_check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorizationControls.lean/declarations/wienerabel-constant-weight-check.md) | 66 | `result-track:928dec4bc2cdd023b385e08addd911ac8a8c5612b9a214570d3e204a61f6b117` |
+| 6 | `def` | [wienerAbel_nextObligations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorizationControls.lean/declarations/wienerabel-nextobligations.md) | 76 | `declaration-track:c781038994ad9c92faf05976d358280d38e6ae240350775e6e1a92fc8430cd5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

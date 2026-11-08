@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/TransportHolonomy.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/TransportHolonomy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TransportHolonomy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TransportHolonomy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [InternalAutomorphismAction](../../../../GroupTheoryAndGeneralizations/TransportHolonomy.lean/declarations/internalautomorphismaction.md) | 19 | `declaration-track:6fbb3a5d34ba1d4f3d88839c45caba8b0a64d1e05f21ed2e070a398a4df572be` |
-| 2 | `theorem` | [identity](../../../../GroupTheoryAndGeneralizations/TransportHolonomy.lean/declarations/identity.md) | 28 | `result-track:aebb5462c791d090c2d9ec2ec7b8113d2aea078a4caaca66214557979ac2102a` |
-| 3 | `theorem` | [composition](../../../../GroupTheoryAndGeneralizations/TransportHolonomy.lean/declarations/composition.md) | 35 | `result-track:46e0ab081bef5984b5ec314f83901779eb9d11acf7197417fefa006d88b0d576` |
-| 4 | `structure` | [LoopGeneratingSet](../../../../GroupTheoryAndGeneralizations/TransportHolonomy.lean/declarations/loopgeneratingset.md) | 46 | `declaration-track:974549536fc9cdc3a1fbd85a9b4f3a49e00c2a71ec7c8caa19cb235883994888` |
-| 5 | `def` | [holonomyFixedSubgroup](../../../../GroupTheoryAndGeneralizations/TransportHolonomy.lean/declarations/holonomyfixedsubgroup.md) | 53 | `declaration-track:4257196311a4bab33acdf1690ba44d7912c728394580ce3143de71478318395e` |
-| 6 | `theorem` | [cycleConsistency_of_generators](../../../../GroupTheoryAndGeneralizations/TransportHolonomy.lean/declarations/cycleconsistency-of-generators.md) | 79 | `result-track:073b2d67c2bb50443dcd8a06b61ab0605e425b5b9f2ee7816f8c8efca299b9bf` |
-| 7 | `structure` | [CycleConsistencyCertificate](../../../../GroupTheoryAndGeneralizations/TransportHolonomy.lean/declarations/cycleconsistencycertificate.md) | 101 | `declaration-track:f91606b2bab1e73ba9bc11adcf54c2ad6ad9f7fb67f8b8a7e8c1c3c3efd01475` |
-| 8 | `theorem` | [CycleConsistencyCertificate.allLoops](../../../../GroupTheoryAndGeneralizations/TransportHolonomy.lean/declarations/cycleconsistencycertificate-allloops.md) | 110 | `result-track:424b2a826e242ad7113a2f86d2c36321dac8afd10e432e091d891403ae2353fb` |
+| 1 | `structure` | [InternalAutomorphismAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TransportHolonomy.lean/declarations/internalautomorphismaction.md) | 19 | `declaration-track:6fbb3a5d34ba1d4f3d88839c45caba8b0a64d1e05f21ed2e070a398a4df572be` |
+| 2 | `theorem` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TransportHolonomy.lean/declarations/identity.md) | 28 | `result-track:aebb5462c791d090c2d9ec2ec7b8113d2aea078a4caaca66214557979ac2102a` |
+| 3 | `theorem` | [composition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TransportHolonomy.lean/declarations/composition.md) | 35 | `result-track:46e0ab081bef5984b5ec314f83901779eb9d11acf7197417fefa006d88b0d576` |
+| 4 | `structure` | [LoopGeneratingSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TransportHolonomy.lean/declarations/loopgeneratingset.md) | 46 | `declaration-track:974549536fc9cdc3a1fbd85a9b4f3a49e00c2a71ec7c8caa19cb235883994888` |
+| 5 | `def` | [holonomyFixedSubgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TransportHolonomy.lean/declarations/holonomyfixedsubgroup.md) | 53 | `declaration-track:4257196311a4bab33acdf1690ba44d7912c728394580ce3143de71478318395e` |
+| 6 | `theorem` | [cycleConsistency_of_generators](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TransportHolonomy.lean/declarations/cycleconsistency-of-generators.md) | 79 | `result-track:073b2d67c2bb50443dcd8a06b61ab0605e425b5b9f2ee7816f8c8efca299b9bf` |
+| 7 | `structure` | [CycleConsistencyCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TransportHolonomy.lean/declarations/cycleconsistencycertificate.md) | 101 | `declaration-track:f91606b2bab1e73ba9bc11adcf54c2ad6ad9f7fb67f8b8a7e8c1c3c3efd01475` |
+| 8 | `theorem` | [CycleConsistencyCertificate.allLoops](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TransportHolonomy.lean/declarations/cycleconsistencycertificate-allloops.md) | 110 | `result-track:424b2a826e242ad7113a2f86d2c36321dac8afd10e432e091d891403ae2353fb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

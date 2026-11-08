@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessPrimeCompressionCylinder.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessPrimeCompressionCylinder.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessPrimeCompressionCylinder.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessPrimeCompressionCylinder.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimeCompressionCylinder](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessPrimeCompressionCylinder.lean/declarations/primecompressioncylinder.md) | 9 | `declaration-track:628f8957ae9fbda3d3b90c3817502cb5f65eec1c0d895f8c6c6a887f98c374a9` |
-| 2 | `structure` | [CylinderEmbedding](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessPrimeCompressionCylinder.lean/declarations/cylinderembedding.md) | 16 | `declaration-track:79edbae284390332e952fcd5260dbcd271c4ca6f6cbb1297776bfe6536f3479d` |
-| 3 | `structure` | [CylinderAccessReceipt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessPrimeCompressionCylinder.lean/declarations/cylinderaccessreceipt.md) | 33 | `declaration-track:13977b0cd2b1500f10fff91b02bfe552494a18bea61c5e99f8606a2a6a0e885a` |
+| 1 | `structure` | [PrimeCompressionCylinder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessPrimeCompressionCylinder.lean/declarations/primecompressioncylinder.md) | 9 | `declaration-track:628f8957ae9fbda3d3b90c3817502cb5f65eec1c0d895f8c6c6a887f98c374a9` |
+| 2 | `structure` | [CylinderEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessPrimeCompressionCylinder.lean/declarations/cylinderembedding.md) | 16 | `declaration-track:79edbae284390332e952fcd5260dbcd271c4ca6f6cbb1297776bfe6536f3479d` |
+| 3 | `structure` | [CylinderAccessReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessPrimeCompressionCylinder.lean/declarations/cylinderaccessreceipt.md) | 33 | `declaration-track:13977b0cd2b1500f10fff91b02bfe552494a18bea61c5e99f8606a2a6a0e885a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

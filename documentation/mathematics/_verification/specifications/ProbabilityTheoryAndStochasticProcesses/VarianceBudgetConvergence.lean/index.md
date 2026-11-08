@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/VarianceBudgetConvergence.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/VarianceBudgetConvergence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/VarianceBudgetConvergence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/VarianceBudgetConvergence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Probability.Moments.FiniteCovarianceTail`](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCovarianceTail.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Probability.Moments.FiniteCovarianceTail`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCovarianceTail.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.Topology.Instances.ENNReal.Lemmas` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [model_tail_le_variance_of_bias](../../../../ProbabilityTheoryAndStochasticProcesses/VarianceBudgetConvergence.lean/declarations/model-tail-le-variance-of-bias.md) | 12 | `result-track:83ae7179edc488851e374802e4ab4c4b3d0eea5ac07aa7e1940c05541e057cca` |
-| 2 | `theorem` | [centered_tail_tendsto_zero](../../../../ProbabilityTheoryAndStochasticProcesses/VarianceBudgetConvergence.lean/declarations/centered-tail-tendsto-zero.md) | 26 | `result-track:8f885c8890a951911f91b2df94bd88c033ce1208d318f36783a928e289e1baa2` |
+| 1 | `theorem` | [model_tail_le_variance_of_bias](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/VarianceBudgetConvergence.lean/declarations/model-tail-le-variance-of-bias.md) | 12 | `result-track:83ae7179edc488851e374802e4ab4c4b3d0eea5ac07aa7e1940c05541e057cca` |
+| 2 | `theorem` | [centered_tail_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/VarianceBudgetConvergence.lean/declarations/centered-tail-tendsto-zero.md) | 26 | `result-track:8f885c8890a951911f91b2df94bd88c033ce1208d318f36783a928e289e1baa2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

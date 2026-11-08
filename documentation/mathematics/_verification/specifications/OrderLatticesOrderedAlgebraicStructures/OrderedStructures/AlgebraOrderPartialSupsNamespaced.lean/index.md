@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderPartialSupsNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderPartialSupsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderPartialSupsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderPartialSupsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [partialSups_add_one](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderPartialSupsNamespaced.lean/declarations/partialsups-add-one.md) | 26 | `result-track:3f9bfa7e5918ebd7af71423e03f1fe6e1112fe11bd644b23f5fd0f21867ca335` |
+| 1 | `lemma` | [partialSups_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderPartialSupsNamespaced.lean/declarations/partialsups-add-one.md) | 26 | `result-track:3f9bfa7e5918ebd7af71423e03f1fe6e1112fe11bd644b23f5fd0f21867ca335` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/CircleBoundaryAdapters.lean/index.md) · [Full source](../../../../AlgebraicTopology/CircleBoundaryAdapters.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CircleBoundaryAdapters.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CircleBoundaryAdapters.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [unitAddCircleToComplexCircle](../../../../AlgebraicTopology/CircleBoundaryAdapters.lean/declarations/unitaddcircletocomplexcircle.md) | 25 | `declaration-track:54944fd3bada1f6374f9dfa986e512b345081003a7693dfc9be2fe5a1eebe42f` |
-| 2 | `theorem` | [unitAddCircleToComplexCircle_apply](../../../../AlgebraicTopology/CircleBoundaryAdapters.lean/declarations/unitaddcircletocomplexcircle-apply.md) | 30 | `result-track:013369d607dbc2d1928f739cd2cd98ad3c81797e2ef946d7735585588761ae61` |
-| 3 | `theorem` | [unitAddCircleToComplexCircle_bijective](../../../../AlgebraicTopology/CircleBoundaryAdapters.lean/declarations/unitaddcircletocomplexcircle-bijective.md) | 35 | `result-track:6c7c83a6ad6cbc384cd345b3ae33eea5164d8762adf9820c879e5989d4e6f56c` |
-| 4 | `abbrev` | [EuclideanClosedDisk](../../../../AlgebraicTopology/CircleBoundaryAdapters.lean/declarations/euclideancloseddisk.md) | 41 | `declaration-track:3c67277bc9130c3f6319ed229ae73dd18279058af5d4f0d4162939ce8d8d81f0` |
-| 5 | `abbrev` | [EuclideanDiskBoundary](../../../../AlgebraicTopology/CircleBoundaryAdapters.lean/declarations/euclideandiskboundary.md) | 44 | `declaration-track:657dc9092f2b94584a881b3dcbee5df6c16055be8c12b20e7c932df8bd4ddb36` |
-| 6 | `def` | [BoundaryCompatible](../../../../AlgebraicTopology/CircleBoundaryAdapters.lean/declarations/boundarycompatible.md) | 50 | `declaration-track:b8216ef9c4681ecf855169d54d6cb84f5f3d238b7c0bc2dbbf45091745e1cc2c` |
-| 7 | `theorem` | [boundaryCompatible_iff](../../../../AlgebraicTopology/CircleBoundaryAdapters.lean/declarations/boundarycompatible-iff.md) | 56 | `result-track:709d89aabfaf8fe550dda652f56d0c6408d66826f393a8203025616795d1235a` |
+| 1 | `def` | [unitAddCircleToComplexCircle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CircleBoundaryAdapters.lean/declarations/unitaddcircletocomplexcircle.md) | 25 | `declaration-track:54944fd3bada1f6374f9dfa986e512b345081003a7693dfc9be2fe5a1eebe42f` |
+| 2 | `theorem` | [unitAddCircleToComplexCircle_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CircleBoundaryAdapters.lean/declarations/unitaddcircletocomplexcircle-apply.md) | 30 | `result-track:013369d607dbc2d1928f739cd2cd98ad3c81797e2ef946d7735585588761ae61` |
+| 3 | `theorem` | [unitAddCircleToComplexCircle_bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CircleBoundaryAdapters.lean/declarations/unitaddcircletocomplexcircle-bijective.md) | 35 | `result-track:6c7c83a6ad6cbc384cd345b3ae33eea5164d8762adf9820c879e5989d4e6f56c` |
+| 4 | `abbrev` | [EuclideanClosedDisk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CircleBoundaryAdapters.lean/declarations/euclideancloseddisk.md) | 41 | `declaration-track:3c67277bc9130c3f6319ed229ae73dd18279058af5d4f0d4162939ce8d8d81f0` |
+| 5 | `abbrev` | [EuclideanDiskBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CircleBoundaryAdapters.lean/declarations/euclideandiskboundary.md) | 44 | `declaration-track:657dc9092f2b94584a881b3dcbee5df6c16055be8c12b20e7c932df8bd4ddb36` |
+| 6 | `def` | [BoundaryCompatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CircleBoundaryAdapters.lean/declarations/boundarycompatible.md) | 50 | `declaration-track:b8216ef9c4681ecf855169d54d6cb84f5f3d238b7c0bc2dbbf45091745e1cc2c` |
+| 7 | `theorem` | [boundaryCompatible_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CircleBoundaryAdapters.lean/declarations/boundarycompatible-iff.md) | 56 | `result-track:709d89aabfaf8fe550dda652f56d0c6408d66826f393a8203025616795d1235a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

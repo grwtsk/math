@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [iSup_range_eq_top_of_isColimit](../../../../AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/declarations/isup-range-eq-top-of-iscolimit.md) | 39 | `result-track:b902568880740bbdc56a74e7abe3c5a7ea01217e5e3357c2c8794a686cd510d3` |
-| 2 | `lemma` | [range_eq_iSup_of_isColimit](../../../../AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/declarations/range-eq-isup-of-iscolimit.md) | 47 | `result-track:cd2d75b542875a72f4285bbb07b955a7418181e2b823a411424df29db4833b4d` |
-| 3 | `lemma` | [hasDimensionLT_of_isColimit](../../../../AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/declarations/hasdimensionlt-of-iscolimit.md) | 53 | `result-track:7552471279611393d2f23b73ac02546eb50e62b9ef75a7e0af630cdc77b5fc19` |
-| 4 | `lemma` | [finite_of_isColimit](../../../../AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/declarations/finite-of-iscolimit.md) | 59 | `result-track:08ab105eceac4751e98fee06b1de2acfdcfe2f3192767c8d02b6fa8c31d1bd88` |
-| 5 | `instance` | [(anonymous)](../../../../AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 66 | `declaration-track:9894e70a3a8f4fbf5b20c4e2d717c21ad2214e98b09b7076442e8a08ce8360b4` |
-| 6 | `instance` | [(anonymous)](../../../../AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 70 | `declaration-track:9683786c696a448b5773e7ca9e890b657da660ccb7b3c487ef2e6365d78f7a0e` |
-| 7 | `instance` | [(anonymous)](../../../../AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/declarations/instance.md) | 75 | `declaration-track:8331a60923adae5ef701a2359748e91d58c8403eda25ce9fc20e4f93a73daa40` |
-| 8 | `lemma` | [range_eq_iSup_sigma_ι](../../../../AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/declarations/range-eq-isup-sigma.md) | 83 | `result-track:0381a6afc1d79efacb1d69753e6d34dbaf478ee0b202e15c7d4b2156960e53c8` |
+| 1 | `lemma` | [iSup_range_eq_top_of_isColimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/declarations/isup-range-eq-top-of-iscolimit.md) | 39 | `result-track:b902568880740bbdc56a74e7abe3c5a7ea01217e5e3357c2c8794a686cd510d3` |
+| 2 | `lemma` | [range_eq_iSup_of_isColimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/declarations/range-eq-isup-of-iscolimit.md) | 47 | `result-track:cd2d75b542875a72f4285bbb07b955a7418181e2b823a411424df29db4833b4d` |
+| 3 | `lemma` | [hasDimensionLT_of_isColimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/declarations/hasdimensionlt-of-iscolimit.md) | 53 | `result-track:7552471279611393d2f23b73ac02546eb50e62b9ef75a7e0af630cdc77b5fc19` |
+| 4 | `lemma` | [finite_of_isColimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/declarations/finite-of-iscolimit.md) | 59 | `result-track:08ab105eceac4751e98fee06b1de2acfdcfe2f3192767c8d02b6fa8c31d1bd88` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 66 | `declaration-track:9894e70a3a8f4fbf5b20c4e2d717c21ad2214e98b09b7076442e8a08ce8360b4` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 70 | `declaration-track:9683786c696a448b5773e7ca9e890b657da660ccb7b3c487ef2e6365d78f7a0e` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/declarations/instance.md) | 75 | `declaration-track:8331a60923adae5ef701a2359748e91d58c8403eda25ce9fc20e4f93a73daa40` |
+| 8 | `lemma` | [range_eq_iSup_sigma_ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteColimitsNamespacedPublic.lean/declarations/range-eq-isup-sigma.md) | 83 | `result-track:0381a6afc1d79efacb1d69753e6d34dbaf478ee0b202e15c7d4b2156960e53c8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

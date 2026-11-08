@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AFiniteSampleOnlyCertificateMustCoverTheWholeRealInterval.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AFiniteSampleOnlyCertificateMustCoverTheWholeRealInterval.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AFiniteSampleOnlyCertificateMustCoverTheWholeRealInterval.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AFiniteSampleOnlyCertificateMustCoverTheWholeRealInterval.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finite_cover_length](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AFiniteSampleOnlyCertificateMustCoverTheWholeRealInterval.lean/declarations/finite-cover-length.md) | 26 | `result-track:c35a7c515a7ccd93e2da9dcac533d4fb4ad7d01aa769050098fa5b2fa14b5168` |
-| 2 | `theorem` | [distance_cap_implies_finite_cover](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AFiniteSampleOnlyCertificateMustCoverTheWholeRealInterval.lean/declarations/distance-cap-implies-finite-cover.md) | 50 | `result-track:7a09419c4a6209b3e5eea8d9f1709d6f18e71570b13de7e31201f1ffcd2d0b38` |
-| 3 | `theorem` | [zero_transcript_sample_count](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AFiniteSampleOnlyCertificateMustCoverTheWholeRealInterval.lean/declarations/zero-transcript-sample-count.md) | 62 | `result-track:a0537f693a64bbbdf6789599018c9a72df805afe3ed82b352cfa45f483bb722d` |
-| 4 | `theorem` | [exponential_window_sample_count](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AFiniteSampleOnlyCertificateMustCoverTheWholeRealInterval.lean/declarations/exponential-window-sample-count.md) | 79 | `result-track:7bfe1ad959a283d7c57d989efec6e8da35f8ef1221d1d4668f8532c4ffc28509` |
+| 1 | `theorem` | [finite_cover_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AFiniteSampleOnlyCertificateMustCoverTheWholeRealInterval.lean/declarations/finite-cover-length.md) | 26 | `result-track:c35a7c515a7ccd93e2da9dcac533d4fb4ad7d01aa769050098fa5b2fa14b5168` |
+| 2 | `theorem` | [distance_cap_implies_finite_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AFiniteSampleOnlyCertificateMustCoverTheWholeRealInterval.lean/declarations/distance-cap-implies-finite-cover.md) | 50 | `result-track:7a09419c4a6209b3e5eea8d9f1709d6f18e71570b13de7e31201f1ffcd2d0b38` |
+| 3 | `theorem` | [zero_transcript_sample_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AFiniteSampleOnlyCertificateMustCoverTheWholeRealInterval.lean/declarations/zero-transcript-sample-count.md) | 62 | `result-track:a0537f693a64bbbdf6789599018c9a72df805afe3ed82b352cfa45f483bb722d` |
+| 4 | `theorem` | [exponential_window_sample_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AFiniteSampleOnlyCertificateMustCoverTheWholeRealInterval.lean/declarations/exponential-window-sample-count.md) | 79 | `result-track:7bfe1ad959a283d7c57d989efec6e8da35f8ef1221d1d4668f8532c4ffc28509` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

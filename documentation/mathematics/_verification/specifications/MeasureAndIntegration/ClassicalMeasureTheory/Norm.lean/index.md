@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Norm.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Norm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Norm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Norm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lintegral_ofReal_le_lintegral_enorm](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Norm.lean/declarations/lintegral-ofreal-le-lintegral-enorm.md) | 17 | `result-track:86089057d713ea4a0ab7b1d35778491e3f6da42a72f4a699f2d54ffa1d1e8023` |
-| 2 | `theorem` | [lintegral_enorm_of_ae_nonneg](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Norm.lean/declarations/lintegral-enorm-of-ae-nonneg.md) | 27 | `result-track:89f6c4106f5162e095fc96c4a812af79724719093648e119dd9ad7b4963e61d5` |
-| 3 | `theorem` | [lintegral_enorm_of_nonneg](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Norm.lean/declarations/lintegral-enorm-of-nonneg.md) | 36 | `result-track:8772c5aba299b1ef46fd2459c638f2793f977c18f5f6074a161841093d43880e` |
+| 1 | `theorem` | [lintegral_ofReal_le_lintegral_enorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Norm.lean/declarations/lintegral-ofreal-le-lintegral-enorm.md) | 17 | `result-track:86089057d713ea4a0ab7b1d35778491e3f6da42a72f4a699f2d54ffa1d1e8023` |
+| 2 | `theorem` | [lintegral_enorm_of_ae_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Norm.lean/declarations/lintegral-enorm-of-ae-nonneg.md) | 27 | `result-track:89f6c4106f5162e095fc96c4a812af79724719093648e119dd9ad7b4963e61d5` |
+| 3 | `theorem` | [lintegral_enorm_of_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Norm.lean/declarations/lintegral-enorm-of-nonneg.md) | 36 | `result-track:8772c5aba299b1ef46fd2459c638f2793f977c18f5f6074a161841093d43880e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

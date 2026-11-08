@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/XiMetricDefectNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/XiMetricDefectNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/XiMetricDefectNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/XiMetricDefectNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eigenvector_defect_identity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/XiMetricDefectNamespaced.lean/declarations/eigenvector-defect-identity.md) | 31 | `result-track:1aabba7dcfb98e4d0ed0b05343977f8a760fe1b3f37c9ffcadaa49fc5f2575ba` |
-| 2 | `theorem` | [eigenvalue_im_le_of_relative_defect](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/XiMetricDefectNamespaced.lean/declarations/eigenvalue-im-le-of-relative-defect.md) | 44 | `result-track:9a29633f807491feec38e4dfdc39f3d3840eb19a797984f90a11b708b1c46cb5` |
-| 3 | `theorem` | [no_vanishing_relative_defect_for_sections](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/XiMetricDefectNamespaced.lean/declarations/no-vanishing-relative-defect-for-sections.md) | 61 | `result-track:ba2e61ec26913a33db37996987923c39e6ff65b720346a89b4153ecba76b5c23` |
+| 1 | `theorem` | [eigenvector_defect_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/XiMetricDefectNamespaced.lean/declarations/eigenvector-defect-identity.md) | 31 | `result-track:1aabba7dcfb98e4d0ed0b05343977f8a760fe1b3f37c9ffcadaa49fc5f2575ba` |
+| 2 | `theorem` | [eigenvalue_im_le_of_relative_defect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/XiMetricDefectNamespaced.lean/declarations/eigenvalue-im-le-of-relative-defect.md) | 44 | `result-track:9a29633f807491feec38e4dfdc39f3d3840eb19a797984f90a11b708b1c46cb5` |
+| 3 | `theorem` | [no_vanishing_relative_defect_for_sections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/XiMetricDefectNamespaced.lean/declarations/no-vanishing-relative-defect-for-sections.md) | 61 | `result-track:ba2e61ec26913a33db37996987923c39e6ff65b720346a89b4153ecba76b5c23` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instSupTropical](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/declarations/instsuptropical.md) | 34 | `declaration-track:717d924dc47f9a0b8fe429344f6432b2f0076e71bdbadbda4b45f57be2cf1c12` |
-| 2 | `instance` | [instInfTropical](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/declarations/instinftropical.md) | 37 | `declaration-track:6028f443c9f4658a1fd2a5366b44bac9204354304b9ae908a3470c3690c42c31` |
-| 3 | `instance` | [instSemilatticeInfTropical](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/declarations/instsemilatticeinftropical.md) | 40 | `declaration-track:8bdc749a8205db051935277776cf232467cc1745bec6377a4f0b11f844efafc5` |
-| 4 | `instance` | [instSemilatticeSupTropical](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/declarations/instsemilatticesuptropical.md) | 47 | `declaration-track:93c2703badc25c37f110bd27dc2d34d465b6b95eac5e115fd59837343043d341` |
-| 5 | `instance` | [instLatticeTropical](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/declarations/instlatticetropical.md) | 54 | `declaration-track:586ef48b22c8f317537196526de2a1e8354c0f55b86c73c0963eb285b6e8942d` |
-| 6 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/declarations/instance.md) | 57 | `declaration-track:1820f7d797e0df075594514f78debedcc1db17afe7ebe8d015983bc54e562b7b` |
-| 7 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/declarations/instance-source-edition-3.md) | 59 | `declaration-track:7ac6c6d4fe79a440dbe2b22a3ab1818398f35bad92d167c484da7b34d616bb70` |
-| 8 | `instance` | [instConditionallyCompleteLatticeTropical](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/declarations/instconditionallycompletelatticetropical.md) | 61 | `declaration-track:639eed108c28d02bae8944b0a578b2398c496443e023529412050e91b51c98bf` |
-| 9 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/declarations/instance-source-edition-2.md) | 74 | `declaration-track:2805c68a9edc529dcc067bb33fd7c508f98002ba5836036f68bedbabc32ed92f` |
+| 1 | `instance` | [instSupTropical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/declarations/instsuptropical.md) | 34 | `declaration-track:717d924dc47f9a0b8fe429344f6432b2f0076e71bdbadbda4b45f57be2cf1c12` |
+| 2 | `instance` | [instInfTropical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/declarations/instinftropical.md) | 37 | `declaration-track:6028f443c9f4658a1fd2a5366b44bac9204354304b9ae908a3470c3690c42c31` |
+| 3 | `instance` | [instSemilatticeInfTropical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/declarations/instsemilatticeinftropical.md) | 40 | `declaration-track:8bdc749a8205db051935277776cf232467cc1745bec6377a4f0b11f844efafc5` |
+| 4 | `instance` | [instSemilatticeSupTropical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/declarations/instsemilatticesuptropical.md) | 47 | `declaration-track:93c2703badc25c37f110bd27dc2d34d465b6b95eac5e115fd59837343043d341` |
+| 5 | `instance` | [instLatticeTropical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/declarations/instlatticetropical.md) | 54 | `declaration-track:586ef48b22c8f317537196526de2a1e8354c0f55b86c73c0963eb285b6e8942d` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/declarations/instance.md) | 57 | `declaration-track:1820f7d797e0df075594514f78debedcc1db17afe7ebe8d015983bc54e562b7b` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/declarations/instance-source-edition-3.md) | 59 | `declaration-track:7ac6c6d4fe79a440dbe2b22a3ab1818398f35bad92d167c484da7b34d616bb70` |
+| 8 | `instance` | [instConditionallyCompleteLatticeTropical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/declarations/instconditionallycompletelatticetropical.md) | 61 | `declaration-track:639eed108c28d02bae8944b0a578b2398c496443e023529412050e91b51c98bf` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TropicalLatticeAligned.lean/declarations/instance-source-edition-2.md) | 74 | `declaration-track:2805c68a9edc529dcc067bb33fd7c508f98002ba5836036f68bedbabc32ed92f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

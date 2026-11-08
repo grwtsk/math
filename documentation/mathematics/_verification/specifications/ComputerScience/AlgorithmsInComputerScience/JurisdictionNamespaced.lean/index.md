@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [OracleId](../../../../../ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/declarations/oracleid.md) | 24 | `declaration-track:d4d571adcadadd467718894ca46e9045f76ed9a857128a47fb16f5c7e021ee65` |
-| 2 | `inductive` | [OracleOperation](../../../../../ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/declarations/oracleoperation.md) | 26 | `declaration-track:52bee33eb3ed122f24e817b3076d64d4eed28bab3b55c30ac95cbdde64f43435` |
-| 3 | `inductive` | [OracleAuthorityCeiling](../../../../../ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/declarations/oracleauthorityceiling.md) | 36 | `declaration-track:e4746e363b50649064835e40519246d57007bc30fa8eafe909520d33122e51c1` |
-| 4 | `inductive` | [OracleFailureMode](../../../../../ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/declarations/oraclefailuremode.md) | 43 | `declaration-track:4cf989b6239d94ab75a7b5098e77aa0e657d1a8c2cd2da71d6ef3bd762fdd00a` |
-| 5 | `structure` | [OracleInterface](../../../../../ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/declarations/oracleinterface.md) | 54 | `declaration-track:e8c4b88d7003ef19a6de41d80572178e5d0ad95adeed33de4e71281203f67947` |
-| 6 | `structure` | [ValidFor](../../../../../ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/declarations/validfor.md) | 67 | `declaration-track:02428722fa09f06c532c41dec2989c1f7f01f4cbc8ecac8f6ff3207c5c0e9ac9` |
-| 7 | `structure` | [Jurisdiction](../../../../../ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/declarations/jurisdiction.md) | 83 | `declaration-track:9de583edb5f300ba1b96000e1af27f3c3ecf32d8ac83c8c7abb57b477820499e` |
-| 8 | `structure` | [Jurisdiction.Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/declarations/jurisdiction-valid.md) | 97 | `declaration-track:ccedcc92878c9e11e098a3b4c478c3e985ffa5909672b9a0e2e30166e7978c70` |
-| 9 | `def` | [Jurisdiction.MayInterpret](../../../../../ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/declarations/jurisdiction-mayinterpret.md) | 111 | `declaration-track:aa1331f88f37eb3344e32f8e6bf37e0b7ae6379c9b42103f282cce6d9107d694` |
+| 1 | `abbrev` | [OracleId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/declarations/oracleid.md) | 24 | `declaration-track:d4d571adcadadd467718894ca46e9045f76ed9a857128a47fb16f5c7e021ee65` |
+| 2 | `inductive` | [OracleOperation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/declarations/oracleoperation.md) | 26 | `declaration-track:52bee33eb3ed122f24e817b3076d64d4eed28bab3b55c30ac95cbdde64f43435` |
+| 3 | `inductive` | [OracleAuthorityCeiling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/declarations/oracleauthorityceiling.md) | 36 | `declaration-track:e4746e363b50649064835e40519246d57007bc30fa8eafe909520d33122e51c1` |
+| 4 | `inductive` | [OracleFailureMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/declarations/oraclefailuremode.md) | 43 | `declaration-track:4cf989b6239d94ab75a7b5098e77aa0e657d1a8c2cd2da71d6ef3bd762fdd00a` |
+| 5 | `structure` | [OracleInterface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/declarations/oracleinterface.md) | 54 | `declaration-track:e8c4b88d7003ef19a6de41d80572178e5d0ad95adeed33de4e71281203f67947` |
+| 6 | `structure` | [ValidFor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/declarations/validfor.md) | 67 | `declaration-track:02428722fa09f06c532c41dec2989c1f7f01f4cbc8ecac8f6ff3207c5c0e9ac9` |
+| 7 | `structure` | [Jurisdiction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/declarations/jurisdiction.md) | 83 | `declaration-track:9de583edb5f300ba1b96000e1af27f3c3ecf32d8ac83c8c7abb57b477820499e` |
+| 8 | `structure` | [Jurisdiction.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/declarations/jurisdiction-valid.md) | 97 | `declaration-track:ccedcc92878c9e11e098a3b4c478c3e985ffa5909672b9a0e2e30166e7978c70` |
+| 9 | `def` | [Jurisdiction.MayInterpret](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JurisdictionNamespaced.lean/declarations/jurisdiction-mayinterpret.md) | 111 | `declaration-track:aa1331f88f37eb3344e32f8e6bf37e0b7ae6379c9b42103f282cce6d9107d694` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

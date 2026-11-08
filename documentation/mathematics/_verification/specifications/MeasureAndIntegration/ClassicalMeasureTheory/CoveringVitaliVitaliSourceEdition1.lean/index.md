@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliSourceEdition1.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_disjoint_subfamily_covering_enlargement](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliSourceEdition1.lean/declarations/exists-disjoint-subfamily-covering-enlargement.md) | 56 | `result-track:3476354517364f981821254b9669149a3d9dee846174014ae562ec2e45c08692` |
-| 2 | `theorem` | [exists_disjoint_subfamily_covering_enlargement_closedBall](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliSourceEdition1.lean/declarations/exists-disjoint-subfamily-covering-enlargement-closedball.md) | 160 | `result-track:bb772345957deff9ac6fa3bce601048832899336e84aed8bbc0f1aeef6279ea5` |
-| 3 | `theorem` | [exists_disjoint_covering_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliSourceEdition1.lean/declarations/exists-disjoint-covering-ae.md) | 212 | `result-track:bae1302fea353f714da13c86b092d84c380415070601b76f63d80cbe630b6f84` |
-| 4 | `def` | [vitaliFamily](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliSourceEdition1.lean/declarations/vitalifamily.md) | 404 | `declaration-track:65c8c02c77f2fd9b6097e9bef0dfce719bcf9438b16266d102f6be743d3e35f8` |
+| 1 | `theorem` | [exists_disjoint_subfamily_covering_enlargement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliSourceEdition1.lean/declarations/exists-disjoint-subfamily-covering-enlargement.md) | 56 | `result-track:3476354517364f981821254b9669149a3d9dee846174014ae562ec2e45c08692` |
+| 2 | `theorem` | [exists_disjoint_subfamily_covering_enlargement_closedBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliSourceEdition1.lean/declarations/exists-disjoint-subfamily-covering-enlargement-closedball.md) | 160 | `result-track:bb772345957deff9ac6fa3bce601048832899336e84aed8bbc0f1aeef6279ea5` |
+| 3 | `theorem` | [exists_disjoint_covering_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliSourceEdition1.lean/declarations/exists-disjoint-covering-ae.md) | 212 | `result-track:bae1302fea353f714da13c86b092d84c380415070601b76f63d80cbe630b6f84` |
+| 4 | `def` | [vitaliFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliSourceEdition1.lean/declarations/vitalifamily.md) | 404 | `declaration-track:65c8c02c77f2fd9b6097e9bef0dfce719bcf9438b16266d102f6be743d3e35f8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

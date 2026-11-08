@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BuiltinRulesPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BuiltinRulesPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BuiltinRulesPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BuiltinRulesPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [not_intro](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BuiltinRulesPublic.lean/declarations/not-intro.md) | 48 | `result-track:dd65863127c0017a6080bea96f92a3545bc0b687afaf8b1d11e8fbe45884f46b` |
-| 2 | `theorem` | [empty_false](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BuiltinRulesPublic.lean/declarations/empty-false.md) | 51 | `result-track:ea4964015d3767dcfc3ec9efe7fd00888b261bd8f8c2b23d750920d64bb30dad` |
-| 3 | `theorem` | [pEmpty_false](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BuiltinRulesPublic.lean/declarations/pempty-false.md) | 54 | `result-track:7069c30d397624bd4a189a9f03bc9b92560d74589a393c8982a372408dfd3f85` |
-| 4 | `theorem` | [heq_iff_eq](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BuiltinRulesPublic.lean/declarations/heq-iff-eq.md) | 61 | `result-track:7a77cbce9827f56b2afe8d1c8f39a4180dc41a547d6f97210cd6d375a7f7e250` |
+| 1 | `theorem` | [not_intro](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BuiltinRulesPublic.lean/declarations/not-intro.md) | 48 | `result-track:dd65863127c0017a6080bea96f92a3545bc0b687afaf8b1d11e8fbe45884f46b` |
+| 2 | `theorem` | [empty_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BuiltinRulesPublic.lean/declarations/empty-false.md) | 51 | `result-track:ea4964015d3767dcfc3ec9efe7fd00888b261bd8f8c2b23d750920d64bb30dad` |
+| 3 | `theorem` | [pEmpty_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BuiltinRulesPublic.lean/declarations/pempty-false.md) | 54 | `result-track:7069c30d397624bd4a189a9f03bc9b92560d74589a393c8982a372408dfd3f85` |
+| 4 | `theorem` | [heq_iff_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BuiltinRulesPublic.lean/declarations/heq-iff-eq.md) | 61 | `result-track:7a77cbce9827f56b2afe8d1c8f39a4180dc41a547d6f97210cd6d375a7f7e250` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

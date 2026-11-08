@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RHAdapterNamespacedEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RHAdapterNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RHAdapterNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RHAdapterNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SectorIntegrability](../../../../MeasureAndIntegration/RHAdapterNamespacedEdition2.lean/declarations/sectorintegrability.md) | 31 | `declaration-track:95feb0f42a37c52fe888a401739a6f94920434af1595f790d7f6aca88ca2a363` |
-| 2 | `def` | [evenPairing](../../../../MeasureAndIntegration/RHAdapterNamespacedEdition2.lean/declarations/evenpairing.md) | 54 | `declaration-track:d551ec692404bc7913dc5bdab4984b4fbc8f41d28fbda138718512ac9e2456cd` |
-| 3 | `def` | [oddPairing](../../../../MeasureAndIntegration/RHAdapterNamespacedEdition2.lean/declarations/oddpairing.md) | 60 | `declaration-track:b183acc0043c722db99badce792b1a38cda80b8ab714b96bf390135e7d73f026` |
-| 4 | `def` | [reflectedSourceValue](../../../../MeasureAndIntegration/RHAdapterNamespacedEdition2.lean/declarations/reflectedsourcevalue.md) | 67 | `declaration-track:a856205b28f529571c1beb97235b4f42e0fe9511be24e178274125844a88225a` |
-| 5 | `theorem` | [signed_reflection_with_boundary](../../../../MeasureAndIntegration/RHAdapterNamespacedEdition2.lean/declarations/signed-reflection-with-boundary.md) | 77 | `result-track:815691b9d583232f287ceb05710cf1ffa00e2ed8a6f13cdf90ef275b33667b15` |
-| 6 | `theorem` | [arithmetic_representation_with_reflection](../../../../MeasureAndIntegration/RHAdapterNamespacedEdition2.lean/declarations/arithmetic-representation-with-reflection.md) | 90 | `result-track:35db15342ed1d0989af46babba8fc2e7dcbf22bba0fbf98ad3d2e51e46c67f3f` |
-| 7 | `theorem` | [boundary_removal_iff](../../../../MeasureAndIntegration/RHAdapterNamespacedEdition2.lean/declarations/boundary-removal-iff.md) | 99 | `result-track:ea6c39470555faad5334c7be3cb8e015acc0aa525c1d6c2a4ccf502eab9d0905` |
+| 1 | `structure` | [SectorIntegrability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RHAdapterNamespacedEdition2.lean/declarations/sectorintegrability.md) | 31 | `declaration-track:95feb0f42a37c52fe888a401739a6f94920434af1595f790d7f6aca88ca2a363` |
+| 2 | `def` | [evenPairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RHAdapterNamespacedEdition2.lean/declarations/evenpairing.md) | 54 | `declaration-track:d551ec692404bc7913dc5bdab4984b4fbc8f41d28fbda138718512ac9e2456cd` |
+| 3 | `def` | [oddPairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RHAdapterNamespacedEdition2.lean/declarations/oddpairing.md) | 60 | `declaration-track:b183acc0043c722db99badce792b1a38cda80b8ab714b96bf390135e7d73f026` |
+| 4 | `def` | [reflectedSourceValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RHAdapterNamespacedEdition2.lean/declarations/reflectedsourcevalue.md) | 67 | `declaration-track:a856205b28f529571c1beb97235b4f42e0fe9511be24e178274125844a88225a` |
+| 5 | `theorem` | [signed_reflection_with_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RHAdapterNamespacedEdition2.lean/declarations/signed-reflection-with-boundary.md) | 77 | `result-track:815691b9d583232f287ceb05710cf1ffa00e2ed8a6f13cdf90ef275b33667b15` |
+| 6 | `theorem` | [arithmetic_representation_with_reflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RHAdapterNamespacedEdition2.lean/declarations/arithmetic-representation-with-reflection.md) | 90 | `result-track:35db15342ed1d0989af46babba8fc2e7dcbf22bba0fbf98ad3d2e51e46c67f3f` |
+| 7 | `theorem` | [boundary_removal_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RHAdapterNamespacedEdition2.lean/declarations/boundary-removal-iff.md) | 99 | `result-track:ea6c39470555faad5334c7be3cb8e015acc0aa525c1d6c2a4ccf502eab9d0905` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

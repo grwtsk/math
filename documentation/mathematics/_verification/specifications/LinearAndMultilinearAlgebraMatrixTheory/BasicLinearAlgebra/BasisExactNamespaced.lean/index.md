@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisExactNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisExactNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisExactNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisExactNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [LinearIndependent.linearIndependent_of_exact_of_retraction](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisExactNamespaced.lean/declarations/linearindependent-linearindependent-of-exact-of-retraction.md) | 36 | `result-track:e2a5069a50cce16c96bdfa12c4fc9da2e5caad03f068d19563e4003962f8d135` |
-| 2 | `lemma` | [top_le_span_of_aux](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisExactNamespaced.lean/declarations/top-le-span-of-aux.md) | 56 | `result-track:999115c21440f5361d42434eb60e39da133d1c97c1c1405da97bf3b977c10954` |
-| 3 | `lemma` | [Submodule.top_le_span_of_exact_of_retraction](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisExactNamespaced.lean/declarations/submodule-top-le-span-of-exact-of-retraction.md) | 80 | `result-track:2211638d6a6df69b21f2fb26fcf915ffc1136113e8a87d52cd0768c8c33c0ff4` |
-| 4 | `def` | [Basis.ofSplitExact](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisExactNamespaced.lean/declarations/basis-ofsplitexact.md) | 95 | `declaration-track:d3fe3a13250f41a2c0f539a840e379b740433651d3420b50293867b610fbeae6` |
+| 1 | `lemma` | [LinearIndependent.linearIndependent_of_exact_of_retraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisExactNamespaced.lean/declarations/linearindependent-linearindependent-of-exact-of-retraction.md) | 36 | `result-track:e2a5069a50cce16c96bdfa12c4fc9da2e5caad03f068d19563e4003962f8d135` |
+| 2 | `lemma` | [top_le_span_of_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisExactNamespaced.lean/declarations/top-le-span-of-aux.md) | 56 | `result-track:999115c21440f5361d42434eb60e39da133d1c97c1c1405da97bf3b977c10954` |
+| 3 | `lemma` | [Submodule.top_le_span_of_exact_of_retraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisExactNamespaced.lean/declarations/submodule-top-le-span-of-exact-of-retraction.md) | 80 | `result-track:2211638d6a6df69b21f2fb26fcf915ffc1136113e8a87d52cd0768c8c33c0ff4` |
+| 4 | `def` | [Basis.ofSplitExact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisExactNamespaced.lean/declarations/basis-ofsplitexact.md) | 95 | `declaration-track:d3fe3a13250f41a2c0f539a840e379b740433651d3420b50293867b610fbeae6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

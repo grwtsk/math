@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FinitePatternBoundaryTV`](../../../../ProbabilityTheoryAndStochasticProcesses/FinitePatternBoundaryTV.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FinitePatternBoundaryTV`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FinitePatternBoundaryTV.lean/index.md) — import line 9; pinned internal source present.
 - `Mathlib` — import line 10; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cyclicSeam](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/declarations/cyclicseam.md) | 43 | `declaration-track:120c59af05999c32ee95d31f24be48e7a1ede0c3bba05e4eb7d819686ab37bb8` |
-| 2 | `theorem` | [cyclicSeam_subset_range](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/declarations/cyclicseam-subset-range.md) | 47 | `result-track:0b80de663823618406350b3556fdcfde89c56110a8331ae81b90ba2c08ed1503` |
-| 3 | `theorem` | [cyclicSeam_card](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/declarations/cyclicseam-card.md) | 55 | `result-track:581bd88a419349f2b9404d73d7b7bec3bd5e4de52bdab240d534b707045b38bd` |
-| 4 | `theorem` | [cyclicSeam_zero](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/declarations/cyclicseam-zero.md) | 61 | `result-track:96669ddfece0ea5bfa541f1f5600db30c9ec896963ac944e937304cfd63999ec` |
-| 5 | `theorem` | [root_lt_cutoff_of_not_mem_seam](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/declarations/root-lt-cutoff-of-not-mem-seam.md) | 67 | `result-track:16ee177ffd9b7fad5a8b4479e98a985caed3c0521befae03d655822d7478a708` |
-| 6 | `def` | [ordinaryWindow](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/declarations/ordinarywindow.md) | 79 | `declaration-track:bd3c2f8fbd2a3fda556a0f45a023927eab917cf4a875b8716455f05613fbb050` |
-| 7 | `def` | [cyclicWindow](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/declarations/cyclicwindow.md) | 84 | `declaration-track:52bc7f9cab2479db98f99628bdb4b21503782f66ccd2b74ad55c0353dafbf4e5` |
-| 8 | `theorem` | [ordinaryWindow_eq_cyclic_off](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/declarations/ordinarywindow-eq-cyclic-off.md) | 89 | `result-track:f18ce69cf6a52361de727103fc86b26df8bf29d98a6fa1b8357ce9749f9b81c2` |
-| 9 | `theorem` | [finiteTV_ordinary_cyclicWindow_le](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/declarations/finitetv-ordinary-cyclicwindow-le.md) | 107 | `result-track:244fabc83c07ff7ecb55a1e9748da1aeff09ea219854a53b684a918d5228ad01` |
+| 1 | `def` | [cyclicSeam](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/declarations/cyclicseam.md) | 43 | `declaration-track:120c59af05999c32ee95d31f24be48e7a1ede0c3bba05e4eb7d819686ab37bb8` |
+| 2 | `theorem` | [cyclicSeam_subset_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/declarations/cyclicseam-subset-range.md) | 47 | `result-track:0b80de663823618406350b3556fdcfde89c56110a8331ae81b90ba2c08ed1503` |
+| 3 | `theorem` | [cyclicSeam_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/declarations/cyclicseam-card.md) | 55 | `result-track:581bd88a419349f2b9404d73d7b7bec3bd5e4de52bdab240d534b707045b38bd` |
+| 4 | `theorem` | [cyclicSeam_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/declarations/cyclicseam-zero.md) | 61 | `result-track:96669ddfece0ea5bfa541f1f5600db30c9ec896963ac944e937304cfd63999ec` |
+| 5 | `theorem` | [root_lt_cutoff_of_not_mem_seam](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/declarations/root-lt-cutoff-of-not-mem-seam.md) | 67 | `result-track:16ee177ffd9b7fad5a8b4479e98a985caed3c0521befae03d655822d7478a708` |
+| 6 | `def` | [ordinaryWindow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/declarations/ordinarywindow.md) | 79 | `declaration-track:bd3c2f8fbd2a3fda556a0f45a023927eab917cf4a875b8716455f05613fbb050` |
+| 7 | `def` | [cyclicWindow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/declarations/cyclicwindow.md) | 84 | `declaration-track:52bc7f9cab2479db98f99628bdb4b21503782f66ccd2b74ad55c0353dafbf4e5` |
+| 8 | `theorem` | [ordinaryWindow_eq_cyclic_off](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/declarations/ordinarywindow-eq-cyclic-off.md) | 89 | `result-track:f18ce69cf6a52361de727103fc86b26df8bf29d98a6fa1b8357ce9749f9b81c2` |
+| 9 | `theorem` | [finiteTV_ordinary_cyclicWindow_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicWindowSeam.lean/declarations/finitetv-ordinary-cyclicwindow-le.md) | 107 | `result-track:244fabc83c07ff7ecb55a1e9748da1aeff09ea219854a53b684a918d5228ad01` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

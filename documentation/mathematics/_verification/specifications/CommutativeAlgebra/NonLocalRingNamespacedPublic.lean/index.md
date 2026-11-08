@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/NonLocalRingNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/NonLocalRingNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonLocalRingNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonLocalRingNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [not_isLocalRing_def](../../../../CommutativeAlgebra/NonLocalRingNamespacedPublic.lean/declarations/not-islocalring-def.md) | 48 | `result-track:989100cbb117e91bd6ce08eec1b29cf48fe220328c107ba1669e2971cfe5ef97` |
-| 2 | `theorem` | [not_isLocalRing_of_nontrivial_pi](../../../../CommutativeAlgebra/NonLocalRingNamespacedPublic.lean/declarations/not-islocalring-of-nontrivial-pi.md) | 54 | `result-track:76dcd71869581188dfc822c005f1493f4519750c61056c10bfdea5f2a67c9d3c` |
-| 3 | `theorem` | [not_isLocalRing_of_prod_of_nontrivial](../../../../CommutativeAlgebra/NonLocalRingNamespacedPublic.lean/declarations/not-islocalring-of-prod-of-nontrivial.md) | 65 | `result-track:2af02dad8ad8cb8d4b7de1b34ef3f8110fd5c1687167df3a233d4740a8d7986f` |
-| 4 | `theorem` | [not_isLocalRing_tfae](../../../../CommutativeAlgebra/NonLocalRingNamespacedPublic.lean/declarations/not-islocalring-tfae.md) | 78 | `result-track:f097109fa34838427a386dd676c91ac28c53f4b0aa82ac8fd353e62aef585c10` |
-| 5 | `theorem` | [exists_surjective_of_not_isLocalRing.](../../../../CommutativeAlgebra/NonLocalRingNamespacedPublic.lean/declarations/exists-surjective-of-not-islocalring.md) | 93 | `result-track:695de352c07c01f91d7a3e79901efb50b06477d7b95f383a6088c317c278edbb` |
+| 1 | `theorem` | [not_isLocalRing_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonLocalRingNamespacedPublic.lean/declarations/not-islocalring-def.md) | 48 | `result-track:989100cbb117e91bd6ce08eec1b29cf48fe220328c107ba1669e2971cfe5ef97` |
+| 2 | `theorem` | [not_isLocalRing_of_nontrivial_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonLocalRingNamespacedPublic.lean/declarations/not-islocalring-of-nontrivial-pi.md) | 54 | `result-track:76dcd71869581188dfc822c005f1493f4519750c61056c10bfdea5f2a67c9d3c` |
+| 3 | `theorem` | [not_isLocalRing_of_prod_of_nontrivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonLocalRingNamespacedPublic.lean/declarations/not-islocalring-of-prod-of-nontrivial.md) | 65 | `result-track:2af02dad8ad8cb8d4b7de1b34ef3f8110fd5c1687167df3a233d4740a8d7986f` |
+| 4 | `theorem` | [not_isLocalRing_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonLocalRingNamespacedPublic.lean/declarations/not-islocalring-tfae.md) | 78 | `result-track:f097109fa34838427a386dd676c91ac28c53f4b0aa82ac8fd353e62aef585c10` |
+| 5 | `theorem` | [exists_surjective_of_not_isLocalRing.](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonLocalRingNamespacedPublic.lean/declarations/exists-surjective-of-not-islocalring.md) | 93 | `result-track:695de352c07c01f91d7a3e79901efb50b06477d7b95f383a6088c317c278edbb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

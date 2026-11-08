@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [small_proj_preimage_of_locallySmall](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallNamespaced.lean/declarations/small-proj-preimage-of-locallysmall.md) | 36 | `declaration-track:c3addfeb6afe7b9418e35fb00771a3e3911a408015b3d1b9b892504712af102c` |
-| 2 | `instance` | [small_proj_preimage_of_locallySmall](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallNamespaced.lean/declarations/small-proj-preimage-of-locallysmall-source-edition-2.md) | 49 | `declaration-track:d6b6245de1ca5f783f87417fbf671dd9a0eacc9bf940f2be4ac91c75a1b33997` |
+| 1 | `instance` | [small_proj_preimage_of_locallySmall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallNamespaced.lean/declarations/small-proj-preimage-of-locallysmall.md) | 36 | `declaration-track:c3addfeb6afe7b9418e35fb00771a3e3911a408015b3d1b9b892504712af102c` |
+| 2 | `instance` | [small_proj_preimage_of_locallySmall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallNamespaced.lean/declarations/small-proj-preimage-of-locallysmall-source-edition-2.md) | 49 | `declaration-track:d6b6245de1ca5f783f87417fbf671dd9a0eacc9bf940f2be4ac91c75a1b33997` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

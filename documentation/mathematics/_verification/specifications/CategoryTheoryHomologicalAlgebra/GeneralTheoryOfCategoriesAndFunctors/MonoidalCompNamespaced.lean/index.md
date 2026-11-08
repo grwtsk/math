@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalCompNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalCompNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalCompNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalCompNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalCompNamespaced.lean/declarations/example-source-edition-2.md) | 21 | `declaration-track:9b35f6910601c763718d4bf213c5bbbeec6acc7c6e025bbd21bb79ebfa5ddeb4` |
-| 2 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalCompNamespaced.lean/declarations/example.md) | 23 | `declaration-track:016fe5a737910528fa881af46bd51b9c819caf2c69a6a96dd3a559fb2a77e25c` |
-| 3 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalCompNamespaced.lean/declarations/example-source-edition-5.md) | 28 | `declaration-track:df7f7458e33d77b9aa6c5c515b47ce45cb5dcf0479a0560bf86a77a3d6fc0959` |
-| 4 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalCompNamespaced.lean/declarations/example-source-edition-3.md) | 32 | `declaration-track:b6f404065a5d403714d9e8ba8d05132e07fc4d5dc18c74905c2b1f995f7847ce` |
-| 5 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalCompNamespaced.lean/declarations/example-source-edition-4.md) | 34 | `declaration-track:d0598dcc53f6872db26524d7a7bfc54797af105a18e31b6e74232fbd6fee6d86` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalCompNamespaced.lean/declarations/example-source-edition-2.md) | 21 | `declaration-track:9b35f6910601c763718d4bf213c5bbbeec6acc7c6e025bbd21bb79ebfa5ddeb4` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalCompNamespaced.lean/declarations/example.md) | 23 | `declaration-track:016fe5a737910528fa881af46bd51b9c819caf2c69a6a96dd3a559fb2a77e25c` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalCompNamespaced.lean/declarations/example-source-edition-5.md) | 28 | `declaration-track:df7f7458e33d77b9aa6c5c515b47ce45cb5dcf0479a0560bf86a77a3d6fc0959` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalCompNamespaced.lean/declarations/example-source-edition-3.md) | 32 | `declaration-track:b6f404065a5d403714d9e8ba8d05132e07fc4d5dc18c74905c2b1f995f7847ce` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalCompNamespaced.lean/declarations/example-source-edition-4.md) | 34 | `declaration-track:d0598dcc53f6872db26524d7a7bfc54797af105a18e31b6e74232fbd6fee6d86` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Ranking.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Ranking.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Ranking.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Ranking.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HardAdmission](../../../../../ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/hardadmission.md) | 16 | `declaration-track:f447c4245cefa47f538ae55b74f0f9a13eff99c57bf2d80e75f5080b0a9ef9df` |
-| 2 | `structure` | [Admitted](../../../../../ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/admitted.md) | 32 | `declaration-track:19ad419ff76bfec5cc9f63b8d00175ecbcb0f283cc910ba42ae8f17cd71e769c` |
-| 3 | `structure` | [MutationRankVector](../../../../../ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/mutationrankvector.md) | 36 | `declaration-track:4640453db75867a52a93e4676686a0327ed5876e729462f10246d041a62c2dbd` |
-| 4 | `structure` | [DischargeRankVector](../../../../../ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/dischargerankvector.md) | 49 | `declaration-track:4f5bab394da465cda417ab54280e80e7bf94f21b63fa017969d9c869269b18c1` |
-| 5 | `structure` | [RankProfile](../../../../../ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/rankprofile.md) | 64 | `declaration-track:3d9941024bbc77fc394045101ccb3f06068e6db6b5f3c44d76e2ca60413744c5` |
-| 6 | `def` | [deterministicRank](../../../../../ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/deterministicrank.md) | 71 | `declaration-track:8876ed2383df99227320b99e7b1b6c4b0debd84c6f4207919c78d43af9c72102` |
-| 7 | `def` | [paretoAntichain](../../../../../ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/paretoantichain.md) | 77 | `declaration-track:993001e7e49e463200418405f97e533180c7220782643e6422e3367e4dd73870` |
-| 8 | `theorem` | [mutation_rank_deterministic](../../../../../ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/mutation-rank-deterministic.md) | 85 | `result-track:a0b19d6a58c34e5ff61edf725c7fb277b1d943c7efb0af6bb3d20d26a1b675ba` |
-| 9 | `theorem` | [discharge_rank_deterministic](../../../../../ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/discharge-rank-deterministic.md) | 92 | `result-track:fd56527341336e582b242b0e0fa4f9ffd63dc1169748588d50486a725c9008ac` |
-| 10 | `theorem` | [ranking_preserves_admitted_set](../../../../../ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/ranking-preserves-admitted-set.md) | 99 | `result-track:28f2aefa571fdf534f5784d850c6e6fbcedf1b0b4aaf7e83f29c873bcbb87f2d` |
-| 11 | `theorem` | [recognition_not_rank_input](../../../../../ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/recognition-not-rank-input.md) | 107 | `result-track:9604b4707c6298a9ffba12f3c2410773dc5f6bb5247201a906c9911dec8bb404` |
+| 1 | `structure` | [HardAdmission](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/hardadmission.md) | 16 | `declaration-track:f447c4245cefa47f538ae55b74f0f9a13eff99c57bf2d80e75f5080b0a9ef9df` |
+| 2 | `structure` | [Admitted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/admitted.md) | 32 | `declaration-track:19ad419ff76bfec5cc9f63b8d00175ecbcb0f283cc910ba42ae8f17cd71e769c` |
+| 3 | `structure` | [MutationRankVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/mutationrankvector.md) | 36 | `declaration-track:4640453db75867a52a93e4676686a0327ed5876e729462f10246d041a62c2dbd` |
+| 4 | `structure` | [DischargeRankVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/dischargerankvector.md) | 49 | `declaration-track:4f5bab394da465cda417ab54280e80e7bf94f21b63fa017969d9c869269b18c1` |
+| 5 | `structure` | [RankProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/rankprofile.md) | 64 | `declaration-track:3d9941024bbc77fc394045101ccb3f06068e6db6b5f3c44d76e2ca60413744c5` |
+| 6 | `def` | [deterministicRank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/deterministicrank.md) | 71 | `declaration-track:8876ed2383df99227320b99e7b1b6c4b0debd84c6f4207919c78d43af9c72102` |
+| 7 | `def` | [paretoAntichain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/paretoantichain.md) | 77 | `declaration-track:993001e7e49e463200418405f97e533180c7220782643e6422e3367e4dd73870` |
+| 8 | `theorem` | [mutation_rank_deterministic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/mutation-rank-deterministic.md) | 85 | `result-track:a0b19d6a58c34e5ff61edf725c7fb277b1d943c7efb0af6bb3d20d26a1b675ba` |
+| 9 | `theorem` | [discharge_rank_deterministic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/discharge-rank-deterministic.md) | 92 | `result-track:fd56527341336e582b242b0e0fa4f9ffd63dc1169748588d50486a725c9008ac` |
+| 10 | `theorem` | [ranking_preserves_admitted_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/ranking-preserves-admitted-set.md) | 99 | `result-track:28f2aefa571fdf534f5784d850c6e6fbcedf1b0b4aaf7e83f29c873bcbb87f2d` |
+| 11 | `theorem` | [recognition_not_rank_input](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Ranking.lean/declarations/recognition-not-rank-input.md) | 107 | `result-track:9604b4707c6298a9ffba12f3c2410773dc5f6bb5247201a906c9911dec8bb404` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

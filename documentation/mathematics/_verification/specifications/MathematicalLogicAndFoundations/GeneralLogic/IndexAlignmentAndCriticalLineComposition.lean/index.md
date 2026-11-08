@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexAlignmentAndCriticalLineComposition.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexAlignmentAndCriticalLineComposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexAlignmentAndCriticalLineComposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexAlignmentAndCriticalLineComposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Folder.DerivedSheaf.DiracKTraceFormula` — import line 19; external provider; requires a separately pinned dependency.
 - `Folder.AdelicInfinityTopos.SpectralBoundaryAlignment` — import line 20; external provider; requires a separately pinned dependency.
-- [Boundary Target And Conditional Critical Line](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundaryTargetAndConditionalCriticalLine.lean/index.md) — import line 21; pinned internal source present.
+- [Boundary Target And Conditional Critical Line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundaryTargetAndConditionalCriticalLine.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IndexSpectralAlignmentBridge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexAlignmentAndCriticalLineComposition.lean/declarations/indexspectralalignmentbridge.md) | 45 | `declaration-track:ab48cd40fe786d25cceb90cda79624ecdc9bba97b5d7ec919a6d8864f80f63dd` |
-| 2 | `theorem` | [index_spectral_alignment](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexAlignmentAndCriticalLineComposition.lean/declarations/index-spectral-alignment.md) | 56 | `result-track:1ce76c77eb68e2720e54de61f864ee1bb8e9c5b83a26cf2cc8164325460a9021` |
-| 3 | `theorem` | [critical_line_from_index_spectral_alignment](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexAlignmentAndCriticalLineComposition.lean/declarations/critical-line-from-index-spectral-alignment.md) | 64 | `result-track:54b3c2edb0a6f5c2802a4200b10e9cef9783967a81d0afc420174e27546ffdd7` |
+| 1 | `structure` | [IndexSpectralAlignmentBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexAlignmentAndCriticalLineComposition.lean/declarations/indexspectralalignmentbridge.md) | 45 | `declaration-track:ab48cd40fe786d25cceb90cda79624ecdc9bba97b5d7ec919a6d8864f80f63dd` |
+| 2 | `theorem` | [index_spectral_alignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexAlignmentAndCriticalLineComposition.lean/declarations/index-spectral-alignment.md) | 56 | `result-track:1ce76c77eb68e2720e54de61f864ee1bb8e9c5b83a26cf2cc8164325460a9021` |
+| 3 | `theorem` | [critical_line_from_index_spectral_alignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexAlignmentAndCriticalLineComposition.lean/declarations/critical-line-from-index-spectral-alignment.md) | 64 | `result-track:54b3c2edb0a6f5c2802a4200b10e9cef9783967a81d0afc420174e27546ffdd7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [colim.map_mono'](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/declarations/colim-map-mono.md) | 50 | `result-track:2f5d43b3681f47ee9561e38e13aa531703fcae61053d9b7dd0b1cb1bdbc9ec5e` |
-| 2 | `lemma` | [colim.map_epi'](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/declarations/colim-map-epi.md) | 70 | `result-track:cb37f1e4c15585df191062daea00d5a350edc1c259cf7978ecbbb6e1d61e74f1` |
-| 3 | `lemma` | [IsColimit.mono_ι_app_of_isFiltered](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/declarations/iscolimit-mono-app-of-isfiltered.md) | 85 | `result-track:0849a23d5d7c50e060bf7089c396011dcf377053172b4af27e2ece2fc4113b78` |
-| 4 | `def` | [colim.mapShortComplex](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/declarations/colim-mapshortcomplex.md) | 115 | `declaration-track:54c7f8bc62be5a84225f904135cedba8dd4f503ed96b65f1d0375e393045b7e1` |
-| 5 | `lemma` | [colim.exact_mapShortComplex](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/declarations/colim-exact-mapshortcomplex.md) | 129 | `result-track:500e4ee67c665c00c2ea59b720fcfcd7a4c3a03063cc32bb8d9fdda6285ea11b` |
-| 6 | `instance` | [isStableUnderColimitsOfShape_monomorphisms](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/declarations/isstableundercolimitsofshape-monomorphisms.md) | 157 | `declaration-track:a91b4a4d18307dda6b46a93631f2211c57ecb64f4c158827bd5d16daffc05fed` |
-| 7 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/declarations/instance.md) | 165 | `declaration-track:820832a8ad7dbd2da93babbe47591c252813f173678a269e57c555d5b3d29620` |
-| 8 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 168 | `declaration-track:eb955ac88df7b647b53ad337ed237f5f7d30056e721c737c8a7bcc6f70180a02` |
+| 1 | `lemma` | [colim.map_mono'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/declarations/colim-map-mono.md) | 50 | `result-track:2f5d43b3681f47ee9561e38e13aa531703fcae61053d9b7dd0b1cb1bdbc9ec5e` |
+| 2 | `lemma` | [colim.map_epi'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/declarations/colim-map-epi.md) | 70 | `result-track:cb37f1e4c15585df191062daea00d5a350edc1c259cf7978ecbbb6e1d61e74f1` |
+| 3 | `lemma` | [IsColimit.mono_ι_app_of_isFiltered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/declarations/iscolimit-mono-app-of-isfiltered.md) | 85 | `result-track:0849a23d5d7c50e060bf7089c396011dcf377053172b4af27e2ece2fc4113b78` |
+| 4 | `def` | [colim.mapShortComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/declarations/colim-mapshortcomplex.md) | 115 | `declaration-track:54c7f8bc62be5a84225f904135cedba8dd4f503ed96b65f1d0375e393045b7e1` |
+| 5 | `lemma` | [colim.exact_mapShortComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/declarations/colim-exact-mapshortcomplex.md) | 129 | `result-track:500e4ee67c665c00c2ea59b720fcfcd7a4c3a03063cc32bb8d9fdda6285ea11b` |
+| 6 | `instance` | [isStableUnderColimitsOfShape_monomorphisms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/declarations/isstableundercolimitsofshape-monomorphisms.md) | 157 | `declaration-track:a91b4a4d18307dda6b46a93631f2211c57ecb64f4c158827bd5d16daffc05fed` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/declarations/instance.md) | 165 | `declaration-track:820832a8ad7dbd2da93babbe47591c252813f173678a269e57c555d5b3d29620` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ColimNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 168 | `declaration-track:eb955ac88df7b647b53ad337ed237f5f7d30056e721c737c8a7bcc6f70180a02` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/FundamentalGroupoidProduct.lean/index.md) · [Full source](../../../../AlgebraicTopology/FundamentalGroupoidProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,22 +60,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [proj](../../../../AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/proj.md) | 42 | `declaration-track:dcdf597d7cfb107be9eb1d0cb58eaaf6c8523ead9e7b932f59cca571ef7a7ed4` |
-| 2 | `theorem` | [proj_map](../../../../AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/proj-map.md) | 47 | `result-track:106cfd774265f6cf019673ee4bc3cab9ea0b65e52877ec09f8abf5412ce8dcee` |
-| 3 | `def` | [piToPiTop](../../../../AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/pitopitop.md) | 55 | `declaration-track:5ed7695667125fb3a393042a9578ba4f8fa055b34e75c19b1b9c9b8748f7dbfd` |
-| 4 | `def` | [piIso](../../../../AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/piiso.md) | 68 | `declaration-track:3096a31178db396ac5db50714ad4b34faceb4cfe23f26a06180ca11a9c5d91be` |
-| 5 | `def` | [coneDiscreteComp](../../../../AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/conediscretecomp.md) | 90 | `declaration-track:1a6911d8e8e64e9f2c2b15435d07350aa5415086aa3f80a24475f201f42d8bf4` |
-| 6 | `theorem` | [coneDiscreteComp_obj_mapCone](../../../../AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/conediscretecomp-obj-mapcone.md) | 94 | `result-track:4c9f7e9efab988a50cd1cd7b894eef6d6f56a9b132be7b6ea1b90023e0c9f7e2` |
-| 7 | `def` | [piTopToPiCone](../../../../AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/pitoptopicone.md) | 100 | `declaration-track:fbe69d7a26d8048b5b29fa84c218a7c05c49682690dd28e8d6913a0b4c4a070a` |
-| 8 | `instance` | [(anonymous)](../../../../AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/instance.md) | 104 | `declaration-track:43bcbc137d2cb790914480786e5ec699d4f7fb3186600d0d454636d10b0d8277` |
-| 9 | `lemma` | [preservesProduct](../../../../AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/preservesproduct.md) | 109 | `result-track:a5713ff7f54759c7da513fabda1ae6db325dc3af50466349705ef4b2ab889fba` |
-| 10 | `def` | [projLeft](../../../../AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/projleft.md) | 125 | `declaration-track:f0474cf1675ab482c54b87e3706e45c582723ce06ac94cbdcb175a13ff31cdea` |
-| 11 | `def` | [projRight](../../../../AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/projright.md) | 129 | `declaration-track:54ac6dfab0e0fefbdf47053d1af0ae6f5d194f12a216a7ac92b4fdaf2fc9c2f5` |
-| 12 | `theorem` | [projLeft_map](../../../../AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/projleft-map.md) | 133 | `result-track:1d2114f45e88219f84f0f7c5659bd70664cddadf4099f9a21dc3c55cff59be69` |
-| 13 | `theorem` | [projRight_map](../../../../AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/projright-map.md) | 138 | `result-track:3d06709e90a58d08a4599dd9652d6ec440790acf23c68f5203a7357f873ea71a` |
-| 14 | `def` | [prodToProdTop](../../../../AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/prodtoprodtop.md) | 147 | `declaration-track:227627612d0a3a7975511262849bd71aae93280e1d8b2af1a4c2268363a843a5` |
-| 15 | `theorem` | [prodToProdTop_map](../../../../AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/prodtoprodtop-map.md) | 161 | `result-track:16adef04c469d4299e9b7cf47539372796cad057e19159005dde679e2c77509b` |
-| 16 | `def` | [prodIso](../../../../AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/prodiso.md) | 170 | `declaration-track:e66ba1796e249c237cf7dc4c3f33fa2e5733d2a544a0eef6933a78ce71f59dda` |
+| 1 | `def` | [proj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/proj.md) | 42 | `declaration-track:dcdf597d7cfb107be9eb1d0cb58eaaf6c8523ead9e7b932f59cca571ef7a7ed4` |
+| 2 | `theorem` | [proj_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/proj-map.md) | 47 | `result-track:106cfd774265f6cf019673ee4bc3cab9ea0b65e52877ec09f8abf5412ce8dcee` |
+| 3 | `def` | [piToPiTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/pitopitop.md) | 55 | `declaration-track:5ed7695667125fb3a393042a9578ba4f8fa055b34e75c19b1b9c9b8748f7dbfd` |
+| 4 | `def` | [piIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/piiso.md) | 68 | `declaration-track:3096a31178db396ac5db50714ad4b34faceb4cfe23f26a06180ca11a9c5d91be` |
+| 5 | `def` | [coneDiscreteComp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/conediscretecomp.md) | 90 | `declaration-track:1a6911d8e8e64e9f2c2b15435d07350aa5415086aa3f80a24475f201f42d8bf4` |
+| 6 | `theorem` | [coneDiscreteComp_obj_mapCone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/conediscretecomp-obj-mapcone.md) | 94 | `result-track:4c9f7e9efab988a50cd1cd7b894eef6d6f56a9b132be7b6ea1b90023e0c9f7e2` |
+| 7 | `def` | [piTopToPiCone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/pitoptopicone.md) | 100 | `declaration-track:fbe69d7a26d8048b5b29fa84c218a7c05c49682690dd28e8d6913a0b4c4a070a` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/instance.md) | 104 | `declaration-track:43bcbc137d2cb790914480786e5ec699d4f7fb3186600d0d454636d10b0d8277` |
+| 9 | `lemma` | [preservesProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/preservesproduct.md) | 109 | `result-track:a5713ff7f54759c7da513fabda1ae6db325dc3af50466349705ef4b2ab889fba` |
+| 10 | `def` | [projLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/projleft.md) | 125 | `declaration-track:f0474cf1675ab482c54b87e3706e45c582723ce06ac94cbdcb175a13ff31cdea` |
+| 11 | `def` | [projRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/projright.md) | 129 | `declaration-track:54ac6dfab0e0fefbdf47053d1af0ae6f5d194f12a216a7ac92b4fdaf2fc9c2f5` |
+| 12 | `theorem` | [projLeft_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/projleft-map.md) | 133 | `result-track:1d2114f45e88219f84f0f7c5659bd70664cddadf4099f9a21dc3c55cff59be69` |
+| 13 | `theorem` | [projRight_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/projright-map.md) | 138 | `result-track:3d06709e90a58d08a4599dd9652d6ec440790acf23c68f5203a7357f873ea71a` |
+| 14 | `def` | [prodToProdTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/prodtoprodtop.md) | 147 | `declaration-track:227627612d0a3a7975511262849bd71aae93280e1d8b2af1a4c2268363a843a5` |
+| 15 | `theorem` | [prodToProdTop_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/prodtoprodtop-map.md) | 161 | `result-track:16adef04c469d4299e9b7cf47539372796cad057e19159005dde679e2c77509b` |
+| 16 | `def` | [prodIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroupoidProduct.lean/declarations/prodiso.md) | 170 | `declaration-track:e66ba1796e249c237cf7dc4c3f33fa2e5733d2a544a0eef6933a78ce71f59dda` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

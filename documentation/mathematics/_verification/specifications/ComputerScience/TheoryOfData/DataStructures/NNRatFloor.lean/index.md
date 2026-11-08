@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/instance.md) | 28 | `declaration-track:8da9aafd5c4b153b06b167e582f107754a6917ee905dee7105da6062adb39418` |
-| 2 | `theorem` | [floor_coe](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/floor-coe.md) | 36 | `result-track:eccbd8911f85e5331753afab3cab8c39e806bed756b54f16ebb37043bc8584ee` |
-| 3 | `theorem` | [ceil_coe](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/ceil-coe.md) | 39 | `result-track:05cd189c680a695d7f4c3f96a332575b9b6cc80d4d962c353e536770e24e6f03` |
-| 4 | `theorem` | [coe_floor](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/coe-floor.md) | 42 | `result-track:e1b96c15b996adf6adfe064f95d583b154729548eb24f86b7cc59100c00aaf64` |
-| 5 | `theorem` | [coe_ceil](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/coe-ceil.md) | 45 | `result-track:678611c7c966a78c31d06bb0478913a806e91557d42ed13887f95c9c02b6e470` |
-| 6 | `theorem` | [floor_def](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/floor-def.md) | 47 | `result-track:f1d91b7b8a72583b6410f98b5514f438da4767c73a0b7d894df70d989303428f` |
-| 7 | `theorem` | [floor_cast](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/floor-cast.md) | 55 | `result-track:1e8011cda27c07e3fabc113d9677f04a3fa18088b22dd39c0b8f6ce6a418ab60` |
-| 8 | `theorem` | [ceil_cast](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/ceil-cast.md) | 59 | `result-track:7f3827faa7d5cd2c1025c5b23bced4ea84d31754bc1a0bbbbc846b302934a17d` |
-| 9 | `theorem` | [intFloor_cast](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/intfloor-cast.md) | 71 | `result-track:6672afec7ef486598da9dcf9393a1cb8a7547fbf8bef79f527060d78e4cb33fc` |
-| 10 | `theorem` | [intCeil_cast](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/intceil-cast.md) | 78 | `result-track:a2a4a403c6d246e81411d53e867592e7a808d2cc4fafed8902f009330588b14a` |
-| 11 | `theorem` | [floor_natCast_div_natCast](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/floor-natcast-div-natcast.md) | 91 | `result-track:ca52976577f69bd18a1864ad586a64e5a6d711767be2326d4d30578addc143c7` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/instance.md) | 28 | `declaration-track:8da9aafd5c4b153b06b167e582f107754a6917ee905dee7105da6062adb39418` |
+| 2 | `theorem` | [floor_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/floor-coe.md) | 36 | `result-track:eccbd8911f85e5331753afab3cab8c39e806bed756b54f16ebb37043bc8584ee` |
+| 3 | `theorem` | [ceil_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/ceil-coe.md) | 39 | `result-track:05cd189c680a695d7f4c3f96a332575b9b6cc80d4d962c353e536770e24e6f03` |
+| 4 | `theorem` | [coe_floor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/coe-floor.md) | 42 | `result-track:e1b96c15b996adf6adfe064f95d583b154729548eb24f86b7cc59100c00aaf64` |
+| 5 | `theorem` | [coe_ceil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/coe-ceil.md) | 45 | `result-track:678611c7c966a78c31d06bb0478913a806e91557d42ed13887f95c9c02b6e470` |
+| 6 | `theorem` | [floor_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/floor-def.md) | 47 | `result-track:f1d91b7b8a72583b6410f98b5514f438da4767c73a0b7d894df70d989303428f` |
+| 7 | `theorem` | [floor_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/floor-cast.md) | 55 | `result-track:1e8011cda27c07e3fabc113d9677f04a3fa18088b22dd39c0b8f6ce6a418ab60` |
+| 8 | `theorem` | [ceil_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/ceil-cast.md) | 59 | `result-track:7f3827faa7d5cd2c1025c5b23bced4ea84d31754bc1a0bbbbc846b302934a17d` |
+| 9 | `theorem` | [intFloor_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/intfloor-cast.md) | 71 | `result-track:6672afec7ef486598da9dcf9393a1cb8a7547fbf8bef79f527060d78e4cb33fc` |
+| 10 | `theorem` | [intCeil_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/intceil-cast.md) | 78 | `result-track:a2a4a403c6d246e81411d53e867592e7a808d2cc4fafed8902f009330588b14a` |
+| 11 | `theorem` | [floor_natCast_div_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatFloor.lean/declarations/floor-natcast-div-natcast.md) | 91 | `result-track:ca52976577f69bd18a1864ad586a64e5a6d711767be2326d4d30578addc143c7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

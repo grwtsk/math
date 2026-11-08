@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LocallyFinite.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LocallyFinite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/LocallyFinite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/LocallyFinite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Finite.upperClosure](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LocallyFinite.lean/declarations/finite-upperclosure.md) | 21 | `result-track:b0d71a38d37956c0bab90362c75b3899e375b91efdf1d0210fad258452fab59f` |
-| 2 | `theorem` | [Finite.lowerClosure](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LocallyFinite.lean/declarations/finite-lowerclosure.md) | 26 | `result-track:dbaa22cf698f933526ed89aee1839cfc3b33875d4493afd8c5291a812a90d6cb` |
+| 1 | `theorem` | [Finite.upperClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/LocallyFinite.lean/declarations/finite-upperclosure.md) | 21 | `result-track:b0d71a38d37956c0bab90362c75b3899e375b91efdf1d0210fad258452fab59f` |
+| 2 | `theorem` | [Finite.lowerClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/LocallyFinite.lean/declarations/finite-lowerclosure.md) | 26 | `result-track:dbaa22cf698f933526ed89aee1839cfc3b33875d4493afd8c5291a812a90d6cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

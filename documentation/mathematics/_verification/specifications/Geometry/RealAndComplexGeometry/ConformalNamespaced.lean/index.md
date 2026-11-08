@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Geometry/RealAndComplexGeometry/ConformalNamespaced.lean/index.md) · [Full source](../../../../../Geometry/RealAndComplexGeometry/ConformalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/ConformalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/ConformalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsConformalMap.preserves_angle](../../../../../Geometry/RealAndComplexGeometry/ConformalNamespaced.lean/declarations/isconformalmap-preserves-angle.md) | 31 | `result-track:9a48a1fa50470367a30c9f73f1d3b6a5b53002be5efeadfd4fee58d512edcfb8` |
-| 2 | `theorem` | [ConformalAt.preserves_angle](../../../../../Geometry/RealAndComplexGeometry/ConformalNamespaced.lean/declarations/conformalat-preserves-angle.md) | 38 | `result-track:ee6cccb7712558cf7e05de799e890de64b6621d157980ccb70973f9ebe78efcd` |
+| 1 | `theorem` | [IsConformalMap.preserves_angle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/ConformalNamespaced.lean/declarations/isconformalmap-preserves-angle.md) | 31 | `result-track:9a48a1fa50470367a30c9f73f1d3b6a5b53002be5efeadfd4fee58d512edcfb8` |
+| 2 | `theorem` | [ConformalAt.preserves_angle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/ConformalNamespaced.lean/declarations/conformalat-preserves-angle.md) | 38 | `result-track:ee6cccb7712558cf7e05de799e890de64b6621d157980ccb70973f9ebe78efcd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

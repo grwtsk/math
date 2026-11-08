@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [finFree](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/declarations/finfree.md) | 45 | `declaration-track:0f75800c71083e630bf52732ec0308b9130ea8ba3ad1e2792cecba8f89e0b070` |
-| 2 | `abbrev` | [profiniteFree](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/declarations/profinitefree.md) | 49 | `declaration-track:c9c3d9c48f3154f2cfafd6f7642e34ae8b29571b070d7d69c1dc2a5751c054d4` |
-| 3 | `def` | [profiniteSolid](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/declarations/profinitesolid.md) | 53 | `declaration-track:9695cf380ec471c804cea9f90712bdac5d30e6d7846bc12d848109a9fd800119` |
-| 4 | `def` | [profiniteSolidCounit](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/declarations/profinitesolidcounit.md) | 59 | `declaration-track:9492c43a0883d4959d8254af8b21f08815de5f5163d9a1ea832346db0fe3c977` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/declarations/instance.md) | 62 | `declaration-track:7bd15564c2ce39dbfcabd13477cc19f3bc2f1c0be5c4e4bd47d24e44c3af4fef` |
-| 6 | `def` | [profiniteSolidIsPointwiseRightKanExtension](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/declarations/profinitesolidispointwiserightkanextension.md) | 69 | `declaration-track:25113b21fcec31c2305d1361f5fd750bb1f174a18da21c1b8b7d66f0f5333f48` |
-| 7 | `def` | [profiniteSolidification](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/declarations/profinitesolidification.md) | 74 | `declaration-track:c0525132134f1c1f5ea1dd025bd60a92365ddb9eca8a65ef64ee229250af367b` |
-| 8 | `class` | [CondensedMod.IsSolid](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/declarations/condensedmod-issolid.md) | 80 | `declaration-track:c9b5c1d66fd2761f9145ee09b6ff5ca06c95935a2ad0b790228c99f079af9d03` |
+| 1 | `abbrev` | [finFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/declarations/finfree.md) | 45 | `declaration-track:0f75800c71083e630bf52732ec0308b9130ea8ba3ad1e2792cecba8f89e0b070` |
+| 2 | `abbrev` | [profiniteFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/declarations/profinitefree.md) | 49 | `declaration-track:c9c3d9c48f3154f2cfafd6f7642e34ae8b29571b070d7d69c1dc2a5751c054d4` |
+| 3 | `def` | [profiniteSolid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/declarations/profinitesolid.md) | 53 | `declaration-track:9695cf380ec471c804cea9f90712bdac5d30e6d7846bc12d848109a9fd800119` |
+| 4 | `def` | [profiniteSolidCounit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/declarations/profinitesolidcounit.md) | 59 | `declaration-track:9492c43a0883d4959d8254af8b21f08815de5f5163d9a1ea832346db0fe3c977` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/declarations/instance.md) | 62 | `declaration-track:7bd15564c2ce39dbfcabd13477cc19f3bc2f1c0be5c4e4bd47d24e44c3af4fef` |
+| 6 | `def` | [profiniteSolidIsPointwiseRightKanExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/declarations/profinitesolidispointwiserightkanextension.md) | 69 | `declaration-track:25113b21fcec31c2305d1361f5fd750bb1f174a18da21c1b8b7d66f0f5333f48` |
+| 7 | `def` | [profiniteSolidification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/declarations/profinitesolidification.md) | 74 | `declaration-track:c0525132134f1c1f5ea1dd025bd60a92365ddb9eca8a65ef64ee229250af367b` |
+| 8 | `class` | [CondensedMod.IsSolid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/SolidNamespaced.lean/declarations/condensedmod-issolid.md) | 80 | `declaration-track:c9b5c1d66fd2761f9145ee09b6ff5ca06c95935a2ad0b790228c99f079af9d03` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

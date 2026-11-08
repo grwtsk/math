@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.PortFiber.Path`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Path.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Topology.PortFiber.Path`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Path.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BinaryCover](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/binarycover.md) | 8 | `declaration-track:ab806ffc11c09b033e43bbcbbe266a553e0888690b54c7ae45403eca5f5938bc` |
-| 2 | `def` | [MatchingPair](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/matchingpair.md) | 26 | `declaration-track:69d018c2f84a992ecb4b4a641d4e1b8596b4571491a72cb8f94c2ff87ec00d46` |
-| 3 | `theorem` | [global_matching](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/global-matching.md) | 31 | `result-track:1666e2d7528c09888bfa2457df8225e907a8e312b0809edf438c287c1dbcb81f` |
-| 4 | `structure` | [Glue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/glue.md) | 36 | `declaration-track:3fba1361935c25601de7db631c0304fe4113d9362e1937f37821159e140f6f25` |
-| 5 | `def` | [Separated](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/separated.md) | 43 | `declaration-track:91bea43b9195c83756cf4adbcd7c18d657962720a8da149fec51b9e7e65bcf1e` |
-| 6 | `def` | [HasGluing](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/hasgluing.md) | 50 | `declaration-track:5fc92c155fa406d5d0ac7646c5d5dee820ceef613d68da606d755af7a94a5cd3` |
-| 7 | `structure` | [SheafCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/sheafcertificate.md) | 54 | `declaration-track:435f2311a43ab587793dca4c3ba3efad17e5aaecc213d9ca219e28515301714d` |
-| 8 | `theorem` | [global_unique](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/global-unique.md) | 61 | `result-track:9e46bab41fee94785e0f5f0f28580a13ccadaf2e772c8b7ff5185c8707d9535b` |
-| 9 | `def` | [identityCover](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/identitycover.md) | 72 | `declaration-track:c3a6881f73288e28e1c4fe3911cd1c049cf4dd84cd87c2ae1215b570345675ea` |
-| 10 | `theorem` | [identity_matching_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/identity-matching-iff.md) | 87 | `result-track:588a4cd18bc2c4b2e360a1cf4cd1de780b643af849d7f4c2cc3d5c3cc64a7f19` |
-| 11 | `def` | [identitySheaf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/identitysheaf.md) | 95 | `declaration-track:547f29662ae974cec423e11e4e119e7259a0b613f94e5c5de6acdf10bc5bd09b` |
+| 1 | `structure` | [BinaryCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/binarycover.md) | 8 | `declaration-track:ab806ffc11c09b033e43bbcbbe266a553e0888690b54c7ae45403eca5f5938bc` |
+| 2 | `def` | [MatchingPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/matchingpair.md) | 26 | `declaration-track:69d018c2f84a992ecb4b4a641d4e1b8596b4571491a72cb8f94c2ff87ec00d46` |
+| 3 | `theorem` | [global_matching](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/global-matching.md) | 31 | `result-track:1666e2d7528c09888bfa2457df8225e907a8e312b0809edf438c287c1dbcb81f` |
+| 4 | `structure` | [Glue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/glue.md) | 36 | `declaration-track:3fba1361935c25601de7db631c0304fe4113d9362e1937f37821159e140f6f25` |
+| 5 | `def` | [Separated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/separated.md) | 43 | `declaration-track:91bea43b9195c83756cf4adbcd7c18d657962720a8da149fec51b9e7e65bcf1e` |
+| 6 | `def` | [HasGluing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/hasgluing.md) | 50 | `declaration-track:5fc92c155fa406d5d0ac7646c5d5dee820ceef613d68da606d755af7a94a5cd3` |
+| 7 | `structure` | [SheafCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/sheafcertificate.md) | 54 | `declaration-track:435f2311a43ab587793dca4c3ba3efad17e5aaecc213d9ca219e28515301714d` |
+| 8 | `theorem` | [global_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/global-unique.md) | 61 | `result-track:9e46bab41fee94785e0f5f0f28580a13ccadaf2e772c8b7ff5185c8707d9535b` |
+| 9 | `def` | [identityCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/identitycover.md) | 72 | `declaration-track:c3a6881f73288e28e1c4fe3911cd1c049cf4dd84cd87c2ae1215b570345675ea` |
+| 10 | `theorem` | [identity_matching_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/identity-matching-iff.md) | 87 | `result-track:588a4cd18bc2c4b2e360a1cf4cd1de780b643af849d7f4c2cc3d5c3cc64a7f19` |
+| 11 | `def` | [identitySheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Gluing.lean/declarations/identitysheaf.md) | 95 | `declaration-track:547f29662ae974cec423e11e4e119e7259a0b613f94e5c5de6acdf10bc5bd09b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

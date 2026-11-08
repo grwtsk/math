@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AlgebraIdealPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AlgebraIdealPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraIdealPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraIdealPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [coeff_mem_pow_of_mem_adjoin_C_mul_X](../../../../CommutativeAlgebra/AlgebraIdealPublic.lean/declarations/coeff-mem-pow-of-mem-adjoin-c-mul-x.md) | 32 | `result-track:d6e272ae1d20ef834e814fd159a23a71668787e90c1cb90a18cb09a0d4624b8c` |
-| 2 | `lemma` | [exists_monic_aeval_eq_zero_forall_mem_pow_of_isIntegral](../../../../CommutativeAlgebra/AlgebraIdealPublic.lean/declarations/exists-monic-aeval-eq-zero-forall-mem-pow-of-isintegral.md) | 48 | `result-track:011ee561ba9b5ee76507c6080051cff81724c5e6eff20f3243d515a3fb43d4ed` |
-| 3 | `lemma` | [exists_monic_aeval_eq_zero_forall_mem_pow_of_mem_map](../../../../CommutativeAlgebra/AlgebraIdealPublic.lean/declarations/exists-monic-aeval-eq-zero-forall-mem-pow-of-mem-map.md) | 73 | `result-track:d58a163f101110418d4c6061e1484d8b0ac0b865ca26ac0ea4f9963c43e6e974` |
-| 4 | `lemma` | [exists_monic_aeval_eq_zero_forall_mem_of_mem_map](../../../../CommutativeAlgebra/AlgebraIdealPublic.lean/declarations/exists-monic-aeval-eq-zero-forall-mem-of-mem-map.md) | 92 | `result-track:e676b75eb296a9938880872a30f6a975830341723aa6337843f3aa873d53f3dd` |
+| 1 | `lemma` | [coeff_mem_pow_of_mem_adjoin_C_mul_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraIdealPublic.lean/declarations/coeff-mem-pow-of-mem-adjoin-c-mul-x.md) | 32 | `result-track:d6e272ae1d20ef834e814fd159a23a71668787e90c1cb90a18cb09a0d4624b8c` |
+| 2 | `lemma` | [exists_monic_aeval_eq_zero_forall_mem_pow_of_isIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraIdealPublic.lean/declarations/exists-monic-aeval-eq-zero-forall-mem-pow-of-isintegral.md) | 48 | `result-track:011ee561ba9b5ee76507c6080051cff81724c5e6eff20f3243d515a3fb43d4ed` |
+| 3 | `lemma` | [exists_monic_aeval_eq_zero_forall_mem_pow_of_mem_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraIdealPublic.lean/declarations/exists-monic-aeval-eq-zero-forall-mem-pow-of-mem-map.md) | 73 | `result-track:d58a163f101110418d4c6061e1484d8b0ac0b865ca26ac0ea4f9963c43e6e974` |
+| 4 | `lemma` | [exists_monic_aeval_eq_zero_forall_mem_of_mem_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraIdealPublic.lean/declarations/exists-monic-aeval-eq-zero-forall-mem-of-mem-map.md) | 92 | `result-track:e676b75eb296a9938880872a30f6a975830341723aa6337843f3aa873d53f3dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

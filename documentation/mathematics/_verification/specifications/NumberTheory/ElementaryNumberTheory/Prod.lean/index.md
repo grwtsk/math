@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/Prod.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/Prod.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Prod.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Prod.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../NumberTheory/ElementaryNumberTheory/Prod.lean/declarations/instance.md) | 17 | `declaration-track:2fe2490869accc40ef4b415ea7b475f315cf2953bd57594a449bef21b15a8cc0` |
-| 2 | `theorem` | [fst_intCast](../../../../../NumberTheory/ElementaryNumberTheory/Prod.lean/declarations/fst-intcast.md) | 24 | `result-track:442c156da3de561de2a2663a9b00be438bde2faaca55564c272dd4d4c404271d` |
-| 3 | `theorem` | [snd_intCast](../../../../../NumberTheory/ElementaryNumberTheory/Prod.lean/declarations/snd-intcast.md) | 28 | `result-track:e27eeebe6f603d102547feb8ded3b5e444769f294dfa919b7f10ebe05e849a2d` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Prod.lean/declarations/instance.md) | 17 | `declaration-track:2fe2490869accc40ef4b415ea7b475f315cf2953bd57594a449bef21b15a8cc0` |
+| 2 | `theorem` | [fst_intCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Prod.lean/declarations/fst-intcast.md) | 24 | `result-track:442c156da3de561de2a2663a9b00be438bde2faaca55564c272dd4d4c404271d` |
+| 3 | `theorem` | [snd_intCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Prod.lean/declarations/snd-intcast.md) | 28 | `result-track:e27eeebe6f603d102547feb8ded3b5e444769f294dfa919b7f10ebe05e849a2d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

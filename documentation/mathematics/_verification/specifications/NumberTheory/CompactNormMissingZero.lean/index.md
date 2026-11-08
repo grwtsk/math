@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CompactNormMissingZero.lean/index.md) · [Full source](../../../../NumberTheory/CompactNormMissingZero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CompactNormMissingZero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CompactNormMissingZero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Ideal.Checks.Positive.CompactNormSupport`](../../../../CommutativeAlgebra/PositiveCompactNormSupport.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Ideal.Checks.Positive.CompactNormSupport`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveCompactNormSupport.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../NumberTheory/CompactNormMissingZero.lean/declarations/example.md) | 8 | `declaration-track:2ac2876eb25d8666fd613e92370000d1d718d7cfd66e69f2622a5e81f18cea61` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CompactNormMissingZero.lean/declarations/example.md) | 8 | `declaration-track:2ac2876eb25d8666fd613e92370000d1d718d7cfd66e69f2622a5e81f18cea61` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDiagonalDiagonalNamespacedPublicSourceEdition1.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDiagonalDiagonalNamespacedPublicSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDiagonalDiagonalNamespacedPublicSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDiagonalDiagonalNamespacedPublicSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [proj_diagonal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDiagonalDiagonalNamespacedPublicSourceEdition1.lean/declarations/proj-diagonal.md) | 46 | `result-track:0db9c779464b215201ed0d7cf4425508784e8e5be665354b21d07fbe6727267a` |
-| 2 | `theorem` | [diagonal_comp_single](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDiagonalDiagonalNamespacedPublicSourceEdition1.lean/declarations/diagonal-comp-single.md) | 49 | `result-track:a8ec4c777f757ff8e3d28432414dddc8fa2572733892effb44b6a138f8c8ace6` |
-| 3 | `theorem` | [diagonal_toLin'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDiagonalDiagonalNamespacedPublicSourceEdition1.lean/declarations/diagonal-tolin.md) | 54 | `result-track:cfcdf0c41b4fc93615ea30d839f5a372de24abf73a90d2b20f0689ff105442a7` |
-| 4 | `theorem` | [ker_diagonal_toLin'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDiagonalDiagonalNamespacedPublicSourceEdition1.lean/declarations/ker-diagonal-tolin.md) | 65 | `result-track:e82fb7bc42e0b9f353f6842079a7d5fec4a646112ce88ecf8900b85ccccd41b1` |
-| 5 | `theorem` | [range_diagonal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDiagonalDiagonalNamespacedPublicSourceEdition1.lean/declarations/range-diagonal.md) | 72 | `result-track:621e9619017bbf4d01b281b725da7dd5cd96de6082073f93cf09d52a6534a5e4` |
-| 6 | `theorem` | [rank_diagonal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDiagonalDiagonalNamespacedPublicSourceEdition1.lean/declarations/rank-diagonal.md) | 90 | `result-track:76f6ae1b15f9ffcd4d61a07494885452df810a56a78155b6327e70fb64528c40` |
+| 1 | `theorem` | [proj_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDiagonalDiagonalNamespacedPublicSourceEdition1.lean/declarations/proj-diagonal.md) | 46 | `result-track:0db9c779464b215201ed0d7cf4425508784e8e5be665354b21d07fbe6727267a` |
+| 2 | `theorem` | [diagonal_comp_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDiagonalDiagonalNamespacedPublicSourceEdition1.lean/declarations/diagonal-comp-single.md) | 49 | `result-track:a8ec4c777f757ff8e3d28432414dddc8fa2572733892effb44b6a138f8c8ace6` |
+| 3 | `theorem` | [diagonal_toLin'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDiagonalDiagonalNamespacedPublicSourceEdition1.lean/declarations/diagonal-tolin.md) | 54 | `result-track:cfcdf0c41b4fc93615ea30d839f5a372de24abf73a90d2b20f0689ff105442a7` |
+| 4 | `theorem` | [ker_diagonal_toLin'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDiagonalDiagonalNamespacedPublicSourceEdition1.lean/declarations/ker-diagonal-tolin.md) | 65 | `result-track:e82fb7bc42e0b9f353f6842079a7d5fec4a646112ce88ecf8900b85ccccd41b1` |
+| 5 | `theorem` | [range_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDiagonalDiagonalNamespacedPublicSourceEdition1.lean/declarations/range-diagonal.md) | 72 | `result-track:621e9619017bbf4d01b281b725da7dd5cd96de6082073f93cf09d52a6534a5e4` |
+| 6 | `theorem` | [rank_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDiagonalDiagonalNamespacedPublicSourceEdition1.lean/declarations/rank-diagonal.md) | 90 | `result-track:76f6ae1b15f9ffcd4d61a07494885452df810a56a78155b6327e70fb64528c40` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

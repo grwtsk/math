@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../RealFunctions/InequalitiesInRealAnalysis/CompactProfileDifferentialBounds.lean/index.md) · [Full source](../../../../../RealFunctions/InequalitiesInRealAnalysis/CompactProfileDifferentialBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/CompactProfileDifferentialBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/CompactProfileDifferentialBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Inequalities.FiniteShiftedDerivativeBounds`](../../../../../RealFunctions/InequalitiesInRealAnalysis/InequalitiesFiniteShiftedDerivativeBounds.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Inequalities.FiniteShiftedDerivativeBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/InequalitiesFiniteShiftedDerivativeBounds.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [differential_hasDerivAt](../../../../../RealFunctions/InequalitiesInRealAnalysis/CompactProfileDifferentialBounds.lean/declarations/differential-hasderivat.md) | 23 | `result-track:4a1f9eeeebbefeba998a5bc5a274d5a5ea4e60ac5210bbce6fa897071534aa67` |
-| 2 | `theorem` | [differential_abs_le](../../../../../RealFunctions/InequalitiesInRealAnalysis/CompactProfileDifferentialBounds.lean/declarations/differential-abs-le.md) | 35 | `result-track:295a1452cd4a577464c5cb0866e17ab7e5efba87c805f66c6d84eeb31b3b266a` |
-| 3 | `theorem` | [differential_derivative_abs_le](../../../../../RealFunctions/InequalitiesInRealAnalysis/CompactProfileDifferentialBounds.lean/declarations/differential-derivative-abs-le.md) | 43 | `result-track:afb377a3780e5d72c6e91e492ec9298be3b9ed611b749214dc2f03b7c8692f98` |
-| 4 | `theorem` | [differential_zero_upper](../../../../../RealFunctions/InequalitiesInRealAnalysis/CompactProfileDifferentialBounds.lean/declarations/differential-zero-upper.md) | 53 | `result-track:d167d071768d279e4ecd721fb6fb791f76acd99afedb1db8aa032a439e435814` |
+| 1 | `theorem` | [differential_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/CompactProfileDifferentialBounds.lean/declarations/differential-hasderivat.md) | 23 | `result-track:4a1f9eeeebbefeba998a5bc5a274d5a5ea4e60ac5210bbce6fa897071534aa67` |
+| 2 | `theorem` | [differential_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/CompactProfileDifferentialBounds.lean/declarations/differential-abs-le.md) | 35 | `result-track:295a1452cd4a577464c5cb0866e17ab7e5efba87c805f66c6d84eeb31b3b266a` |
+| 3 | `theorem` | [differential_derivative_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/CompactProfileDifferentialBounds.lean/declarations/differential-derivative-abs-le.md) | 43 | `result-track:afb377a3780e5d72c6e91e492ec9298be3b9ed611b749214dc2f03b7c8692f98` |
+| 4 | `theorem` | [differential_zero_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/CompactProfileDifferentialBounds.lean/declarations/differential-zero-upper.md) | 53 | `result-track:d167d071768d279e4ecd721fb6fb791f76acd99afedb1db8aa032a439e435814` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

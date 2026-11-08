@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BestFirst.lean/index.md) · [Full source](../../../../Combinatorics/BestFirst.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BestFirst.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BestFirst.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Point](../../../../Combinatorics/BestFirst.lean/declarations/point.md) | 12 | `declaration-track:4cd690827880b0e6196d2e21a5c86730d94007b29561dc40169e477009a7f0ef` |
-| 2 | `def` | [wall](../../../../Combinatorics/BestFirst.lean/declarations/wall.md) | 15 | `declaration-track:8387bc18c19e71f9806116440b0e7c8846a84bc3386e66c9499e9cf310fa26c6` |
-| 3 | `def` | [nbhd](../../../../Combinatorics/BestFirst.lean/declarations/nbhd.md) | 18 | `declaration-track:27e96e1134bf5c2b3a526c11678937bedfc9e70458882519563feb1e744e2631` |
-| 4 | `def` | [emb](../../../../Combinatorics/BestFirst.lean/declarations/emb.md) | 22 | `declaration-track:2d19eaa1dc35abbbe4f90ffeda4e11fad6f18b2cf40c23d1fb8099b59dbc6deb` |
-| 5 | `lemma` | [emb_injective](../../../../Combinatorics/BestFirst.lean/declarations/emb-injective.md) | 25 | `result-track:f2bab04a358ae4fafe79971dfe3d5e8a6ee9a31f05298e9db822ae18ed9d745b` |
-| 6 | `instance` | [(anonymous)](../../../../Combinatorics/BestFirst.lean/declarations/instance.md) | 28 | `declaration-track:26e221aa96ee507de89492c1c560f6e3521b0bca1ca1521736ec3d67abaecddd` |
+| 1 | `def` | [Point](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BestFirst.lean/declarations/point.md) | 12 | `declaration-track:4cd690827880b0e6196d2e21a5c86730d94007b29561dc40169e477009a7f0ef` |
+| 2 | `def` | [wall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BestFirst.lean/declarations/wall.md) | 15 | `declaration-track:8387bc18c19e71f9806116440b0e7c8846a84bc3386e66c9499e9cf310fa26c6` |
+| 3 | `def` | [nbhd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BestFirst.lean/declarations/nbhd.md) | 18 | `declaration-track:27e96e1134bf5c2b3a526c11678937bedfc9e70458882519563feb1e744e2631` |
+| 4 | `def` | [emb](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BestFirst.lean/declarations/emb.md) | 22 | `declaration-track:2d19eaa1dc35abbbe4f90ffeda4e11fad6f18b2cf40c23d1fb8099b59dbc6deb` |
+| 5 | `lemma` | [emb_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BestFirst.lean/declarations/emb-injective.md) | 25 | `result-track:f2bab04a358ae4fafe79971dfe3d5e8a6ee9a31f05298e9db822ae18ed9d745b` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BestFirst.lean/declarations/instance.md) | 28 | `declaration-track:26e221aa96ee507de89492c1c560f6e3521b0bca1ca1521736ec3d67abaecddd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

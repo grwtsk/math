@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/ActionSubobjectsNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/ActionSubobjectsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionSubobjectsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionSubobjectsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/ActionSubobjectsNamespaced.lean/declarations/instance.md) | 34 | `declaration-track:64421ecf47aacb98092a9fb0f3c5dadcc95a6a2123f3fe586b7e340b8a36e8b0` |
-| 2 | `instance` | [Submonoid.mulSemiringAction](../../../../AssociativeRingsAndAlgebras/ActionSubobjectsNamespaced.lean/declarations/submonoid-mulsemiringaction.md) | 39 | `declaration-track:f2f2e0a37e19aa189cbad3b55165416c0f4e1d746e3846f20a8c5f6c33a9d023` |
-| 3 | `instance` | [Subgroup.mulSemiringAction](../../../../AssociativeRingsAndAlgebras/ActionSubobjectsNamespaced.lean/declarations/subgroup-mulsemiringaction.md) | 44 | `declaration-track:fe77675201f68022470c59ede890282f656ccb19ca8eec09b2601971ea3cbfa8` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionSubobjectsNamespaced.lean/declarations/instance.md) | 34 | `declaration-track:64421ecf47aacb98092a9fb0f3c5dadcc95a6a2123f3fe586b7e340b8a36e8b0` |
+| 2 | `instance` | [Submonoid.mulSemiringAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionSubobjectsNamespaced.lean/declarations/submonoid-mulsemiringaction.md) | 39 | `declaration-track:f2f2e0a37e19aa189cbad3b55165416c0f4e1d746e3846f20a8c5f6c33a9d023` |
+| 3 | `instance` | [Subgroup.mulSemiringAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionSubobjectsNamespaced.lean/declarations/subgroup-mulsemiringaction.md) | 44 | `declaration-track:fe77675201f68022470c59ede890282f656ccb19ca8eec09b2601971ea3cbfa8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

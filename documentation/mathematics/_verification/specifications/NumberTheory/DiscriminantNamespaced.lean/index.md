@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/DiscriminantNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/DiscriminantNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiscriminantNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiscriminantNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../NumberTheory/DiscriminantNamespaced.lean/declarations/macro-rules.md) | 34 | `declaration-track:ed32c86dafed6b23678681bc069ca4b081fd532556bc25bda29b8a23d2287cf1` |
-| 2 | `theorem` | [discr_zeta_eq_discr_zeta_sub_one](../../../../NumberTheory/DiscriminantNamespaced.lean/declarations/discr-zeta-eq-discr-zeta-sub-one.md) | 48 | `result-track:d81e7672f9504d2b79b64f02c457527ad2626c981e5f3021498aae79fa86fae0` |
-| 3 | `theorem` | [discr_prime_pow_ne_two](../../../../NumberTheory/DiscriminantNamespaced.lean/declarations/discr-prime-pow-ne-two-source-edition-2.md) | 73 | `result-track:9392eeffe0c21477cb425cdd3a66ca45ef841b77cf04ecc11fbbbd35554e040e` |
-| 4 | `theorem` | [discr_prime_pow_ne_two'](../../../../NumberTheory/DiscriminantNamespaced.lean/declarations/discr-prime-pow-ne-two.md) | 140 | `result-track:56d38e11f06e825d3e3b360ce31c7ca31264faff94ae9b359e5aa2d19dd147ed` |
-| 5 | `theorem` | [discr_prime_pow](../../../../NumberTheory/DiscriminantNamespaced.lean/declarations/discr-prime-pow.md) | 152 | `result-track:82f80a87271992c33b47af751bafdb00a7d5d70b1bfd20c1c884192165f23f92` |
-| 6 | `theorem` | [discr_prime_pow_eq_unit_mul_pow](../../../../NumberTheory/DiscriminantNamespaced.lean/declarations/discr-prime-pow-eq-unit-mul-pow.md) | 194 | `result-track:105deba6a312ca5fc67e5b4eb9dd15dc1b966da9b2dcd3fb0c053ec9ab642f96` |
-| 7 | `theorem` | [discr_odd_prime](../../../../NumberTheory/DiscriminantNamespaced.lean/declarations/discr-odd-prime.md) | 208 | `result-track:0196e1e8ac6909ae22554a58c86d5817c442cb727fe8143839d365797a0ed8e6` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiscriminantNamespaced.lean/declarations/macro-rules.md) | 34 | `declaration-track:ed32c86dafed6b23678681bc069ca4b081fd532556bc25bda29b8a23d2287cf1` |
+| 2 | `theorem` | [discr_zeta_eq_discr_zeta_sub_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiscriminantNamespaced.lean/declarations/discr-zeta-eq-discr-zeta-sub-one.md) | 48 | `result-track:d81e7672f9504d2b79b64f02c457527ad2626c981e5f3021498aae79fa86fae0` |
+| 3 | `theorem` | [discr_prime_pow_ne_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiscriminantNamespaced.lean/declarations/discr-prime-pow-ne-two-source-edition-2.md) | 73 | `result-track:9392eeffe0c21477cb425cdd3a66ca45ef841b77cf04ecc11fbbbd35554e040e` |
+| 4 | `theorem` | [discr_prime_pow_ne_two'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiscriminantNamespaced.lean/declarations/discr-prime-pow-ne-two.md) | 140 | `result-track:56d38e11f06e825d3e3b360ce31c7ca31264faff94ae9b359e5aa2d19dd147ed` |
+| 5 | `theorem` | [discr_prime_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiscriminantNamespaced.lean/declarations/discr-prime-pow.md) | 152 | `result-track:82f80a87271992c33b47af751bafdb00a7d5d70b1bfd20c1c884192165f23f92` |
+| 6 | `theorem` | [discr_prime_pow_eq_unit_mul_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiscriminantNamespaced.lean/declarations/discr-prime-pow-eq-unit-mul-pow.md) | 194 | `result-track:105deba6a312ca5fc67e5b4eb9dd15dc1b966da9b2dcd3fb0c053ec9ab642f96` |
+| 7 | `theorem` | [discr_odd_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiscriminantNamespaced.lean/declarations/discr-odd-prime.md) | 208 | `result-track:0196e1e8ac6909ae22554a58c86d5817c442cb727fe8143839d365797a0ed8e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

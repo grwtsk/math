@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionSubobjects.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionSubobjects.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionSubobjects.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionSubobjects.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Submonoid.mulSemiringAction](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionSubobjects.lean/declarations/submonoid-mulsemiringaction.md) | 28 | `declaration-track:8519f877456a01983d116f1d7103316a35e80a4ddb656ec3fb98da57b2091360` |
-| 2 | `instance` | [Subgroup.mulSemiringAction](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionSubobjects.lean/declarations/subgroup-mulsemiringaction.md) | 35 | `declaration-track:0987542ca8444b46c938a33950ac546d8018efe12dd0edc38ec437977e9aa621` |
+| 1 | `instance` | [Submonoid.mulSemiringAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionSubobjects.lean/declarations/submonoid-mulsemiringaction.md) | 28 | `declaration-track:8519f877456a01983d116f1d7103316a35e80a4ddb656ec3fb98da57b2091360` |
+| 2 | `instance` | [Subgroup.mulSemiringAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionSubobjects.lean/declarations/subgroup-mulsemiringaction.md) | 35 | `declaration-track:0987542ca8444b46c938a33950ac546d8018efe12dd0edc38ec437977e9aa621` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

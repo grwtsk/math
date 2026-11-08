@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/CMTypeSlope.lean/index.md) · [Full source](../../../../Geometry/CMTypeSlope.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMTypeSlope.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMTypeSlope.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.Hodge.CMFourBalance`](../../../../Geometry/CMFourBalance.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.Hodge.CMFourBalance`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMFourBalance.lean/index.md) — import line 10; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [slopeFromValuation](../../../../Geometry/CMTypeSlope.lean/declarations/slopefromvaluation.md) | 19 | `declaration-track:05e37dd7c42c00ef7859311cf25fa04ffeff243ec87828aab374d33bd257f385` |
-| 2 | `theorem` | [slope_eq_signSelector](../../../../Geometry/CMTypeSlope.lean/declarations/slope-eq-signselector.md) | 24 | `result-track:f89a7ee010223e521163e711762bb3955e4388a48c4627a13aa43323c50acfb7` |
-| 3 | `theorem` | [slope_eq_one_of_positive](../../../../Geometry/CMTypeSlope.lean/declarations/slope-eq-one-of-positive.md) | 32 | `result-track:e32721b432dd5ef7cc084f0332c3899185f73ed3390429e0bcef6bc6bfeec7fb` |
-| 4 | `theorem` | [slope_eq_zero_of_negative](../../../../Geometry/CMTypeSlope.lean/declarations/slope-eq-zero-of-negative.md) | 38 | `result-track:97256a3e4b92aad06d7123f3d2d3c75cb9d8844c5d2940b66e229f1cb22867ab` |
-| 5 | `theorem` | [slope_zero_or_one_of_sign](../../../../Geometry/CMTypeSlope.lean/declarations/slope-zero-or-one-of-sign.md) | 45 | `result-track:e0e7d3fcf93ee84d1a467ef1c870fec14da74dab2f21ca52e589fb138874dcdf` |
+| 1 | `def` | [slopeFromValuation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMTypeSlope.lean/declarations/slopefromvaluation.md) | 19 | `declaration-track:05e37dd7c42c00ef7859311cf25fa04ffeff243ec87828aab374d33bd257f385` |
+| 2 | `theorem` | [slope_eq_signSelector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMTypeSlope.lean/declarations/slope-eq-signselector.md) | 24 | `result-track:f89a7ee010223e521163e711762bb3955e4388a48c4627a13aa43323c50acfb7` |
+| 3 | `theorem` | [slope_eq_one_of_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMTypeSlope.lean/declarations/slope-eq-one-of-positive.md) | 32 | `result-track:e32721b432dd5ef7cc084f0332c3899185f73ed3390429e0bcef6bc6bfeec7fb` |
+| 4 | `theorem` | [slope_eq_zero_of_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMTypeSlope.lean/declarations/slope-eq-zero-of-negative.md) | 38 | `result-track:97256a3e4b92aad06d7123f3d2d3c75cb9d8844c5d2940b66e229f1cb22867ab` |
+| 5 | `theorem` | [slope_zero_or_one_of_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMTypeSlope.lean/declarations/slope-zero-or-one-of-sign.md) | 45 | `result-track:e0e7d3fcf93ee84d1a467ef1c870fec14da74dab2f21ca52e589fb138874dcdf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

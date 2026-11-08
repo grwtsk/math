@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.KTheory.FormalKK`](../../../../../KTheory/FormalKK.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.LinearAlgebra.FramedFiberPort`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedFiberPort.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Algebra.KTheory.FormalKK`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/FormalKK.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.FramedFiberPort`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedFiberPort.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Variance](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/variance.md) | 12 | `declaration-track:d6add889e0fa21cd769682cf394c23194f2078475578eeb0f47122504142a29a` |
-| 2 | `inductive` | [LiftMode](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/liftmode.md) | 19 | `declaration-track:ec26d801a8ecf12438fee29710a969aa9c7d8e9ef0c687b332de8e966edca26b` |
-| 3 | `structure` | [LiftProfile](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/liftprofile.md) | 28 | `declaration-track:dc5abff64188d1513f52edbed694f4dd8b722839dda38307f988bbc6ca3f5c4f` |
-| 4 | `structure` | [FrameConjugationLift](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/frameconjugationlift.md) | 46 | `declaration-track:6f4ae56e2b05cd19e1f7d4174959b1e0dd99034454ebacabc3d27b5e47497173` |
-| 5 | `def` | [targetOperator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/targetoperator.md) | 55 | `declaration-track:f1a5da535559a699c2033ba89ea17fa42588d68beaa3e9b94cc65c25ad99aff2` |
-| 6 | `theorem` | [intertwines](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/intertwines.md) | 61 | `result-track:9ed7e58e41cad28577266e8d79d93b030c5428f9206d15e512b935a38823dc3f` |
-| 7 | `structure` | [CompressionExtension](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/compressionextension.md) | 70 | `declaration-track:229c85f7695ff3854ece971c3cf84ce6afa9b564db3b3013b2e8c3183efdcff5` |
-| 8 | `def` | [lostComplement](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/lostcomplement.md) | 80 | `declaration-track:5d27165137de469e9d4909fffda82d38458216950e4dd4e2a1d796c9ea8cd648` |
-| 9 | `theorem` | [project_include_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/project-include-apply.md) | 85 | `result-track:e2942414fcc42d1e5a0be83f30d62fe25f49eb6a04cac609e5fadc85a788f1c9` |
-| 10 | `theorem` | [lostComplement_include](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/lostcomplement-include.md) | 92 | `result-track:d66e43e9cd8ba6c5c45b16846b6c04a9e21afaa268afbc37337f8756d909693f` |
-| 11 | `theorem` | [project_lostComplement](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/project-lostcomplement.md) | 98 | `result-track:4309c5d8a5b0f394a042a89be540230f893d2b4dc95eda91541b6ec1a939f8a0` |
-| 12 | `structure` | [ChainIntertwinerLift](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/chainintertwinerlift.md) | 118 | `declaration-track:553c8413b61512b1357db315b9f7bf8dd2fc662e071c168ac41d1b50bf8929f4` |
-| 13 | `structure` | [BivariantOperatorLift](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/bivariantoperatorlift.md) | 139 | `declaration-track:dd840ceb673c84e32a5880729fe9abad89a6c833881617ab041993ac03e176f4` |
+| 1 | `inductive` | [Variance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/variance.md) | 12 | `declaration-track:d6add889e0fa21cd769682cf394c23194f2078475578eeb0f47122504142a29a` |
+| 2 | `inductive` | [LiftMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/liftmode.md) | 19 | `declaration-track:ec26d801a8ecf12438fee29710a969aa9c7d8e9ef0c687b332de8e966edca26b` |
+| 3 | `structure` | [LiftProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/liftprofile.md) | 28 | `declaration-track:dc5abff64188d1513f52edbed694f4dd8b722839dda38307f988bbc6ca3f5c4f` |
+| 4 | `structure` | [FrameConjugationLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/frameconjugationlift.md) | 46 | `declaration-track:6f4ae56e2b05cd19e1f7d4174959b1e0dd99034454ebacabc3d27b5e47497173` |
+| 5 | `def` | [targetOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/targetoperator.md) | 55 | `declaration-track:f1a5da535559a699c2033ba89ea17fa42588d68beaa3e9b94cc65c25ad99aff2` |
+| 6 | `theorem` | [intertwines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/intertwines.md) | 61 | `result-track:9ed7e58e41cad28577266e8d79d93b030c5428f9206d15e512b935a38823dc3f` |
+| 7 | `structure` | [CompressionExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/compressionextension.md) | 70 | `declaration-track:229c85f7695ff3854ece971c3cf84ce6afa9b564db3b3013b2e8c3183efdcff5` |
+| 8 | `def` | [lostComplement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/lostcomplement.md) | 80 | `declaration-track:5d27165137de469e9d4909fffda82d38458216950e4dd4e2a1d796c9ea8cd648` |
+| 9 | `theorem` | [project_include_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/project-include-apply.md) | 85 | `result-track:e2942414fcc42d1e5a0be83f30d62fe25f49eb6a04cac609e5fadc85a788f1c9` |
+| 10 | `theorem` | [lostComplement_include](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/lostcomplement-include.md) | 92 | `result-track:d66e43e9cd8ba6c5c45b16846b6c04a9e21afaa268afbc37337f8756d909693f` |
+| 11 | `theorem` | [project_lostComplement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/project-lostcomplement.md) | 98 | `result-track:4309c5d8a5b0f394a042a89be540230f893d2b4dc95eda91541b6ec1a939f8a0` |
+| 12 | `structure` | [ChainIntertwinerLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/chainintertwinerlift.md) | 118 | `declaration-track:553c8413b61512b1357db315b9f7bf8dd2fc662e071c168ac41d1b50bf8929f4` |
+| 13 | `structure` | [BivariantOperatorLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/bivariantoperatorlift.md) | 139 | `declaration-track:dd840ceb673c84e32a5880729fe9abad89a6c833881617ab041993ac03e176f4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

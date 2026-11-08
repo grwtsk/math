@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRingNamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRingNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRingNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRingNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [EventuallyLE.mul_le_mul](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRingNamespacedPublic.lean/declarations/eventuallyle-mul-le-mul.md) | 32 | `result-track:800b944b71c1d6cb4f167cae3056cf284aa6fa86bdcf62f765c884b3a3f575cd` |
-| 2 | `theorem` | [EventuallyLE.mul_le_mul'](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRingNamespacedPublic.lean/declarations/eventuallyle-mul-le-mul-source-edition-2.md) | 38 | `result-track:d921d70193bfc0656ba6caeeba7f82f285c161362db279b524a9edf3926aceda` |
-| 3 | `theorem` | [EventuallyLE.mul_nonneg](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRingNamespacedPublic.lean/declarations/eventuallyle-mul-nonneg.md) | 43 | `result-track:f7abe03862909355de18cf6758e59f156e7f1f58d9fa1df662bec0a336fc6664` |
-| 4 | `theorem` | [eventually_sub_nonneg](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRingNamespacedPublic.lean/declarations/eventually-sub-nonneg.md) | 47 | `result-track:339e1accc90111d9d784a16299fdf1143fb270365674d7b5dfade37e3d788cf0` |
-| 5 | `instance` | [instIsOrderedRing](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRingNamespacedPublic.lean/declarations/instisorderedring.md) | 56 | `declaration-track:75b940c4b944beb53f0b05e65ab550712829a474e619ae0b293977b24f77ec4f` |
+| 1 | `theorem` | [EventuallyLE.mul_le_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRingNamespacedPublic.lean/declarations/eventuallyle-mul-le-mul.md) | 32 | `result-track:800b944b71c1d6cb4f167cae3056cf284aa6fa86bdcf62f765c884b3a3f575cd` |
+| 2 | `theorem` | [EventuallyLE.mul_le_mul'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRingNamespacedPublic.lean/declarations/eventuallyle-mul-le-mul-source-edition-2.md) | 38 | `result-track:d921d70193bfc0656ba6caeeba7f82f285c161362db279b524a9edf3926aceda` |
+| 3 | `theorem` | [EventuallyLE.mul_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRingNamespacedPublic.lean/declarations/eventuallyle-mul-nonneg.md) | 43 | `result-track:f7abe03862909355de18cf6758e59f156e7f1f58d9fa1df662bec0a336fc6664` |
+| 4 | `theorem` | [eventually_sub_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRingNamespacedPublic.lean/declarations/eventually-sub-nonneg.md) | 47 | `result-track:339e1accc90111d9d784a16299fdf1143fb270365674d7b5dfade37e3d788cf0` |
+| 5 | `instance` | [instIsOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRingNamespacedPublic.lean/declarations/instisorderedring.md) | 56 | `declaration-track:75b940c4b944beb53f0b05e65ab550712829a474e619ae0b293977b24f77ec4f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

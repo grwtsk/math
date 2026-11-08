@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SuccessIfFailWithMsgNamespacedSuccessIfFailWithMessage.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SuccessIfFailWithMsgNamespacedSuccessIfFailWithMessage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SuccessIfFailWithMsgNamespacedSuccessIfFailWithMessage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SuccessIfFailWithMsgNamespacedSuccessIfFailWithMessage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `syntax` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SuccessIfFailWithMsgNamespacedSuccessIfFailWithMessage.lean/declarations/syntax.md) | 36 | `declaration-track:f754e73783dab2f07d52fac716bdbbf93018255cdb2360eb782beb572819528a` |
-| 2 | `def` | [successIfFailWithMessage](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SuccessIfFailWithMsgNamespacedSuccessIfFailWithMessage.lean/declarations/successiffailwithmessage.md) | 40 | `declaration-track:8fc3d4eaf96452c2d35d78811ef8a69409bbc451700c20bf487786b5dc6bdfbc` |
-| 3 | `elab_rules` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SuccessIfFailWithMsgNamespacedSuccessIfFailWithMessage.lean/declarations/elab-rules.md) | 66 | `declaration-track:81d75274cee00fbd938ab406eb74a263f5ea2417c12b957a212c13c43bc8afda` |
+| 1 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SuccessIfFailWithMsgNamespacedSuccessIfFailWithMessage.lean/declarations/syntax.md) | 36 | `declaration-track:f754e73783dab2f07d52fac716bdbbf93018255cdb2360eb782beb572819528a` |
+| 2 | `def` | [successIfFailWithMessage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SuccessIfFailWithMsgNamespacedSuccessIfFailWithMessage.lean/declarations/successiffailwithmessage.md) | 40 | `declaration-track:8fc3d4eaf96452c2d35d78811ef8a69409bbc451700c20bf487786b5dc6bdfbc` |
+| 3 | `elab_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SuccessIfFailWithMsgNamespacedSuccessIfFailWithMessage.lean/declarations/elab-rules.md) | 66 | `declaration-track:81d75274cee00fbd938ab406eb74a263f5ea2417c12b957a212c13c43bc8afda` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

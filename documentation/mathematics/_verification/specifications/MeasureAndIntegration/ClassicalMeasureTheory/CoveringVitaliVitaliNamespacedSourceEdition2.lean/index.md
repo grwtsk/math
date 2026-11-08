@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_disjoint_subfamily_covering_enlargment](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition2.lean/declarations/exists-disjoint-subfamily-covering-enlargment.md) | 67 | `result-track:77716e3fc45db5625f56324c07b21fa7f9b87be25f58d288964496ed87915f3a` |
-| 2 | `theorem` | [exists_disjoint_subfamily_covering_enlargment_closedBall](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition2.lean/declarations/exists-disjoint-subfamily-covering-enlargment-closedball.md) | 170 | `result-track:d895310ac8eeeb23fc552d5497d4434dc1737514e754624be9995aad7184b970` |
-| 3 | `theorem` | [exists_disjoint_covering_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition2.lean/declarations/exists-disjoint-covering-ae.md) | 211 | `result-track:7806b6169c0c9070b1d63a02dbbc8e0898697689be38a4c91b7c7762305cbb8e` |
-| 4 | `def` | [vitaliFamily](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition2.lean/declarations/vitalifamily.md) | 410 | `declaration-track:2ae3106ce0f8279f96d3561b9549d66465515a5948752a67c9ccdc967d90e928` |
+| 1 | `theorem` | [exists_disjoint_subfamily_covering_enlargment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition2.lean/declarations/exists-disjoint-subfamily-covering-enlargment.md) | 67 | `result-track:77716e3fc45db5625f56324c07b21fa7f9b87be25f58d288964496ed87915f3a` |
+| 2 | `theorem` | [exists_disjoint_subfamily_covering_enlargment_closedBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition2.lean/declarations/exists-disjoint-subfamily-covering-enlargment-closedball.md) | 170 | `result-track:d895310ac8eeeb23fc552d5497d4434dc1737514e754624be9995aad7184b970` |
+| 3 | `theorem` | [exists_disjoint_covering_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition2.lean/declarations/exists-disjoint-covering-ae.md) | 211 | `result-track:7806b6169c0c9070b1d63a02dbbc8e0898697689be38a4c91b7c7762305cbb8e` |
+| 4 | `def` | [vitaliFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition2.lean/declarations/vitalifamily.md) | 410 | `declaration-track:2ae3106ce0f8279f96d3561b9549d66465515a5948752a67c9ccdc967d90e928` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Similarity.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Similarity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Similarity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Similarity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rhetoricalSimilarity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Similarity.lean/declarations/rhetoricalsimilarity.md) | 16 | `declaration-track:830b244af8b5ce34785f978eb567695e7d3a02e18ebe33c8931530f177b38a27` |
-| 2 | `theorem` | [rhetoricalSimilarity_comm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Similarity.lean/declarations/rhetoricalsimilarity-comm.md) | 23 | `result-track:6885494be6d52d110a16dc003fcbeefaf4c28f28660973afc746caee19fffb6f` |
-| 3 | `theorem` | [rhetoricalSimilarity_mem_Icc](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Similarity.lean/declarations/rhetoricalsimilarity-mem-icc.md) | 31 | `result-track:48c4bec7dbc5cb91177ec261ac514d4f0c92bfd738fde57cf941fbbbb4b130c7` |
-| 4 | `theorem` | [rhetoricalSimilarity_eq_re_of_base_normalized](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Similarity.lean/declarations/rhetoricalsimilarity-eq-re-of-base-normalized.md) | 41 | `result-track:03c9e0a38efbd91bad92d30d7d495fb99e3a9026ac7e69e321747064104b8457` |
+| 1 | `def` | [rhetoricalSimilarity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Similarity.lean/declarations/rhetoricalsimilarity.md) | 16 | `declaration-track:830b244af8b5ce34785f978eb567695e7d3a02e18ebe33c8931530f177b38a27` |
+| 2 | `theorem` | [rhetoricalSimilarity_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Similarity.lean/declarations/rhetoricalsimilarity-comm.md) | 23 | `result-track:6885494be6d52d110a16dc003fcbeefaf4c28f28660973afc746caee19fffb6f` |
+| 3 | `theorem` | [rhetoricalSimilarity_mem_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Similarity.lean/declarations/rhetoricalsimilarity-mem-icc.md) | 31 | `result-track:48c4bec7dbc5cb91177ec261ac514d4f0c92bfd738fde57cf941fbbbb4b130c7` |
+| 4 | `theorem` | [rhetoricalSimilarity_eq_re_of_base_normalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Similarity.lean/declarations/rhetoricalsimilarity-eq-re-of-base-normalized.md) | 41 | `result-track:03c9e0a38efbd91bad92d30d7d495fb99e3a9026ac7e69e321747064104b8457` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [cast_pow](../../../../../NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/declarations/cast-pow-source-edition-2.md) | 30 | `result-track:fe1d603a9a35ae31b428e81a8425c687eb66b7207461e44d47bbac51dd209870` |
-| 2 | `theorem` | [cast_inv_nat](../../../../../NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/declarations/cast-inv-nat.md) | 35 | `result-track:956bf34c26abf3cadbb010fd1e8ee7a9e8959d1f6b8d8d4ac5e5a419e66e0868` |
-| 3 | `theorem` | [cast_inv_int](../../../../../NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/declarations/cast-inv-int.md) | 42 | `result-track:ec4d46f621d000cff864093f0c0ed2b21d732df48db4a93d5a7e6c12ab110bc7` |
-| 4 | `theorem` | [cast_nnratCast](../../../../../NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/declarations/cast-nnratcast.md) | 48 | `result-track:10e635f2367484ac784fd8b29ba347fdef66b87a8ca60b3dc48d9525c8596215` |
-| 5 | `theorem` | [cast_ofScientific](../../../../../NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/declarations/cast-ofscientific.md) | 59 | `result-track:f6544f83a9f4bb8837e9eea4ae208cbf2a4e9549b46ec59ad5d419174058b13a` |
-| 6 | `theorem` | [cast_pow](../../../../../NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/declarations/cast-pow.md) | 68 | `result-track:ed508d63e53a02c7bb5c5380fec7303f4787cd4197ff4a319f3594219181ea81` |
-| 7 | `theorem` | [cast_zpow_of_ne_zero](../../../../../NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/declarations/cast-zpow-of-ne-zero.md) | 73 | `result-track:ceb0e6fc7c5a85184e5a39fcdce3d15c753da8f0bbcfeda1db48dcc08bb99e6d` |
-| 8 | `theorem` | [cast_mk](../../../../../NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/declarations/cast-mk.md) | 83 | `result-track:25382be7412c6a678b157015d6f67743ab2bf06ea6ac9007684e13e13f975fdd` |
-| 9 | `theorem` | [Nonneg.coe_ofScientific](../../../../../NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/declarations/nonneg-coe-ofscientific.md) | 89 | `result-track:c0cd24bd4cc69c295b3b2e77854c9536c13ce4967d365f99a40838fdea3de958` |
+| 1 | `lemma` | [cast_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/declarations/cast-pow-source-edition-2.md) | 30 | `result-track:fe1d603a9a35ae31b428e81a8425c687eb66b7207461e44d47bbac51dd209870` |
+| 2 | `theorem` | [cast_inv_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/declarations/cast-inv-nat.md) | 35 | `result-track:956bf34c26abf3cadbb010fd1e8ee7a9e8959d1f6b8d8d4ac5e5a419e66e0868` |
+| 3 | `theorem` | [cast_inv_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/declarations/cast-inv-int.md) | 42 | `result-track:ec4d46f621d000cff864093f0c0ed2b21d732df48db4a93d5a7e6c12ab110bc7` |
+| 4 | `theorem` | [cast_nnratCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/declarations/cast-nnratcast.md) | 48 | `result-track:10e635f2367484ac784fd8b29ba347fdef66b87a8ca60b3dc48d9525c8596215` |
+| 5 | `theorem` | [cast_ofScientific](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/declarations/cast-ofscientific.md) | 59 | `result-track:f6544f83a9f4bb8837e9eea4ae208cbf2a4e9549b46ec59ad5d419174058b13a` |
+| 6 | `theorem` | [cast_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/declarations/cast-pow.md) | 68 | `result-track:ed508d63e53a02c7bb5c5380fec7303f4787cd4197ff4a319f3594219181ea81` |
+| 7 | `theorem` | [cast_zpow_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/declarations/cast-zpow-of-ne-zero.md) | 73 | `result-track:ceb0e6fc7c5a85184e5a39fcdce3d15c753da8f0bbcfeda1db48dcc08bb99e6d` |
+| 8 | `theorem` | [cast_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/declarations/cast-mk.md) | 83 | `result-track:25382be7412c6a678b157015d6f67743ab2bf06ea6ac9007684e13e13f975fdd` |
+| 9 | `theorem` | [Nonneg.coe_ofScientific](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastLemmasPublicSourceEdition2.lean/declarations/nonneg-coe-ofscientific.md) | 89 | `result-track:c0cd24bd4cc69c295b3b2e77854c9536c13ce4967d365f99a40838fdea3de958` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

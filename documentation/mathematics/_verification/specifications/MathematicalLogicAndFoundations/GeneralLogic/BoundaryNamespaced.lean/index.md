@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundaryNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundaryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundaryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundaryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [BClosed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundaryNamespaced.lean/declarations/bclosed.md) | 76 | `declaration-track:6deecded242d63683c966dfd87423cc20800427a4610f8cf2d2139dc6c0987ef` |
-| 2 | `def` | [BTreePlan](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundaryNamespaced.lean/declarations/btreeplan.md) | 104 | `declaration-track:a21e56dbde952eab9a771d43a3a8f2e718f1368a4c4ad2534b107d2412fd011d` |
-| 3 | `def` | [CompB](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundaryNamespaced.lean/declarations/compb.md) | 132 | `declaration-track:a716a084a7a1cbf0aae5c959e61bfd190197e80b1d2dc0bb2f40d5af17f14455` |
-| 4 | `theorem` | [eval_compB](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundaryNamespaced.lean/declarations/eval-compb.md) | 162 | `result-track:bc6e0bfb27d3c2f9346f6b3dd33eb61797f66f1673741e3cdda7e6f692c6d284` |
+| 1 | `def` | [BClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundaryNamespaced.lean/declarations/bclosed.md) | 76 | `declaration-track:6deecded242d63683c966dfd87423cc20800427a4610f8cf2d2139dc6c0987ef` |
+| 2 | `def` | [BTreePlan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundaryNamespaced.lean/declarations/btreeplan.md) | 104 | `declaration-track:a21e56dbde952eab9a771d43a3a8f2e718f1368a4c4ad2534b107d2412fd011d` |
+| 3 | `def` | [CompB](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundaryNamespaced.lean/declarations/compb.md) | 132 | `declaration-track:a716a084a7a1cbf0aae5c959e61bfd190197e80b1d2dc0bb2f40d5af17f14455` |
+| 4 | `theorem` | [eval_compB](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundaryNamespaced.lean/declarations/eval-compb.md) | 162 | `result-track:bc6e0bfb27d3c2f9346f6b3dd33eb61797f66f1673741e3cdda7e6f692c6d284` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

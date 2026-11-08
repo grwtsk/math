@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedCategory.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedCategory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedCategory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedCategory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Category](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedCategory.lean/declarations/category.md) | 13 | `declaration-track:cde4b101a245d12befce6afa13bc15722d0186e40d2142a6ec67d74a54d69aa7` |
-| 2 | `structure` | [Functor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedCategory.lean/declarations/functor.md) | 25 | `declaration-track:db1f2fac95503d85a6e6a50daa207854f5e5d21cbb9debc5dbe1d74fb1b44eb1` |
-| 3 | `def` | [Injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedCategory.lean/declarations/injective.md) | 33 | `declaration-track:9b3e8c4e5d412a92590b3d5a941f63aebb49c37c6c299ef9019d8130b2e906a7` |
-| 4 | `def` | [Surjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedCategory.lean/declarations/surjective.md) | 36 | `declaration-track:8192bf1f7aeb50cd02e1e9d2183ab8cf6238cd8fe9729d338849a7a25be361fa` |
-| 5 | `def` | [Bijective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedCategory.lean/declarations/bijective.md) | 39 | `declaration-track:aa635278e73e6029006d843e44ca9877b63e57c4655bca9c7471d3a88003cb68` |
+| 1 | `structure` | [Category](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedCategory.lean/declarations/category.md) | 13 | `declaration-track:cde4b101a245d12befce6afa13bc15722d0186e40d2142a6ec67d74a54d69aa7` |
+| 2 | `structure` | [Functor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedCategory.lean/declarations/functor.md) | 25 | `declaration-track:db1f2fac95503d85a6e6a50daa207854f5e5d21cbb9debc5dbe1d74fb1b44eb1` |
+| 3 | `def` | [Injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedCategory.lean/declarations/injective.md) | 33 | `declaration-track:9b3e8c4e5d412a92590b3d5a941f63aebb49c37c6c299ef9019d8130b2e906a7` |
+| 4 | `def` | [Surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedCategory.lean/declarations/surjective.md) | 36 | `declaration-track:8192bf1f7aeb50cd02e1e9d2183ab8cf6238cd8fe9729d338849a7a25be361fa` |
+| 5 | `def` | [Bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoreNamespacedCategory.lean/declarations/bijective.md) | 39 | `declaration-track:aa635278e73e6029006d843e44ca9877b63e57c4655bca9c7471d3a88003cb68` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

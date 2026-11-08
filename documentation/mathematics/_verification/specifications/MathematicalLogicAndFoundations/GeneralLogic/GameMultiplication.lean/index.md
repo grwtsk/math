@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GameMultiplication.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GameMultiplication.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GameMultiplication.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GameMultiplication.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [star'](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GameMultiplication.lean/declarations/star.md) | 28 | `declaration-track:72a894688a194dc3e8e8d3c3b239332ce5d0902b75f0286d6da37c850b4812f1` |
-| 2 | `theorem` | [neg_star'](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GameMultiplication.lean/declarations/neg-star.md) | 31 | `result-track:7696b44e1ba598913a8c93afdc8c777f971404f9f2727c6e52980274f27464a3` |
-| 3 | `theorem` | [star'_equiv_star](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GameMultiplication.lean/declarations/star-equiv-star.md) | 35 | `result-track:740ccebebe216f5b54dbf8b70e35aff84fc75728a97c5005c34ca31140e92649` |
-| 4 | `theorem` | [star_sq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GameMultiplication.lean/declarations/star-sq.md) | 48 | `result-track:a293543c7a4f181cd17b4d6cbcf617b15cf4a973cef2c4625f56df7cec1b9970` |
-| 5 | `theorem` | [star'_mul_star_lf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GameMultiplication.lean/declarations/star-mul-star-lf.md) | 69 | `result-track:68854a51025576c866e29f07eacdf675a5d010d0083e701b47bd024510de8e06` |
-| 6 | `theorem` | [mul_not_lift](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GameMultiplication.lean/declarations/mul-not-lift.md) | 76 | `result-track:4c51d5a630f7dd736db3c607d6ef564390f1b9143bdd9d79285d12ebd9f1c443` |
+| 1 | `def` | [star'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GameMultiplication.lean/declarations/star.md) | 28 | `declaration-track:72a894688a194dc3e8e8d3c3b239332ce5d0902b75f0286d6da37c850b4812f1` |
+| 2 | `theorem` | [neg_star'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GameMultiplication.lean/declarations/neg-star.md) | 31 | `result-track:7696b44e1ba598913a8c93afdc8c777f971404f9f2727c6e52980274f27464a3` |
+| 3 | `theorem` | [star'_equiv_star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GameMultiplication.lean/declarations/star-equiv-star.md) | 35 | `result-track:740ccebebe216f5b54dbf8b70e35aff84fc75728a97c5005c34ca31140e92649` |
+| 4 | `theorem` | [star_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GameMultiplication.lean/declarations/star-sq.md) | 48 | `result-track:a293543c7a4f181cd17b4d6cbcf617b15cf4a973cef2c4625f56df7cec1b9970` |
+| 5 | `theorem` | [star'_mul_star_lf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GameMultiplication.lean/declarations/star-mul-star-lf.md) | 69 | `result-track:68854a51025576c866e29f07eacdf675a5d010d0083e701b47bd024510de8e06` |
+| 6 | `theorem` | [mul_not_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GameMultiplication.lean/declarations/mul-not-lift.md) | 76 | `result-track:4c51d5a630f7dd736db3c607d6ef564390f1b9143bdd9d79285d12ebd9f1c443` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

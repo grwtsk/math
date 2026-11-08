@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialPolynomial.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialPolynomial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialPolynomial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialPolynomial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [polynomial_eval_eval₂](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialPolynomial.lean/declarations/polynomial-eval-eval.md) | 16 | `result-track:fc48b0b800a0ac9329a7a8e9bb1b983cc29ce9c7415826a7e72a1e7a2e3bb1dd` |
-| 2 | `theorem` | [eval_polynomial_eval_finSuccEquiv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialPolynomial.lean/declarations/eval-polynomial-eval-finsuccequiv.md) | 27 | `result-track:c8867e40ed531e48e91445653ba959709847e52d4ef837c3124cac282f0e1a5c` |
+| 1 | `theorem` | [polynomial_eval_eval₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialPolynomial.lean/declarations/polynomial-eval-eval.md) | 16 | `result-track:fc48b0b800a0ac9329a7a8e9bb1b983cc29ce9c7415826a7e72a1e7a2e3bb1dd` |
+| 2 | `theorem` | [eval_polynomial_eval_finSuccEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialPolynomial.lean/declarations/eval-polynomial-eval-finsuccequiv.md) | 27 | `result-track:c8867e40ed531e48e91445653ba959709847e52d4ef837c3124cac282f0e1a5c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

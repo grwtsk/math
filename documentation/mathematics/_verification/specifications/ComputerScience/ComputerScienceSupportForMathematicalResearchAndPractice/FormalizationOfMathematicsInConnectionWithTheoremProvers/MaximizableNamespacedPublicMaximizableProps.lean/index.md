@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MaximizableNamespacedPublicMaximizableProps.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MaximizableNamespacedPublicMaximizableProps.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MaximizableNamespacedPublicMaximizableProps.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MaximizableNamespacedPublicMaximizableProps.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MaximizableProps](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MaximizableNamespacedPublicMaximizableProps.lean/declarations/maximizableprops.md) | 24 | `declaration-track:893869e098f4bcddeff51a95e21de75a838a08d9b4be07ed389790dc9ab0725b` |
-| 2 | `def` | [Maximizable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MaximizableNamespacedPublicMaximizableProps.lean/declarations/maximizable.md) | 30 | `declaration-track:3805356e1b3b117b1e7a4fb029fe792182a3ce56bebf59555713514be3055246` |
+| 1 | `structure` | [MaximizableProps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MaximizableNamespacedPublicMaximizableProps.lean/declarations/maximizableprops.md) | 24 | `declaration-track:893869e098f4bcddeff51a95e21de75a838a08d9b4be07ed389790dc9ab0725b` |
+| 2 | `def` | [Maximizable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MaximizableNamespacedPublicMaximizableProps.lean/declarations/maximizable.md) | 30 | `declaration-track:3805356e1b3b117b1e7a4fb029fe792182a3ce56bebf59555713514be3055246` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

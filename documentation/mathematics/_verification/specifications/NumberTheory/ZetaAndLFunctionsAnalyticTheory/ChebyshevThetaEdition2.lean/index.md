@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebyshevThetaEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebyshevThetaEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebyshevThetaEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebyshevThetaEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebyshevThetaEdition2.lean/declarations/example.md) | 7 | `declaration-track:6e9301faa4661fa6022c7eedf35f33f76924c4c334d23228be4d1b837347f912` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebyshevThetaEdition2.lean/declarations/example-source-edition-2.md) | 12 | `declaration-track:a7b16f471383f63a95c492317b8af4ac00ec373b39603363f03005e444559449` |
-| 3 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebyshevThetaEdition2.lean/declarations/example-source-edition-4.md) | 16 | `declaration-track:dc9c2e3c49b0b94f5cb4a95a33d47a9b6aedc83eee3d087da87be2a7bd263310` |
-| 4 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebyshevThetaEdition2.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:db72759ebc3eecd0fdb3dc3eb141c7a2efbb65b88cac29912e0e4ed1bf5c80e0` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebyshevThetaEdition2.lean/declarations/example.md) | 7 | `declaration-track:6e9301faa4661fa6022c7eedf35f33f76924c4c334d23228be4d1b837347f912` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebyshevThetaEdition2.lean/declarations/example-source-edition-2.md) | 12 | `declaration-track:a7b16f471383f63a95c492317b8af4ac00ec373b39603363f03005e444559449` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebyshevThetaEdition2.lean/declarations/example-source-edition-4.md) | 16 | `declaration-track:dc9c2e3c49b0b94f5cb4a95a33d47a9b6aedc83eee3d087da87be2a7bd263310` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebyshevThetaEdition2.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:db72759ebc3eecd0fdb3dc3eb141c7a2efbb65b88cac29912e0e4ed1bf5c80e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

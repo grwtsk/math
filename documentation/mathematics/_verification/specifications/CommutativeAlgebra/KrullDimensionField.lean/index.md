@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/KrullDimensionField.lean/index.md) · [Full source](../../../../CommutativeAlgebra/KrullDimensionField.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/KrullDimensionField.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/KrullDimensionField.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ringKrullDim_eq_zero_of_field](../../../../CommutativeAlgebra/KrullDimensionField.lean/declarations/ringkrulldim-eq-zero-of-field.md) | 17 | `result-track:c6ead9a97c0af2c7bd0a3dfb2b5ff792481d38ca0caa32373d49879adf4091ab` |
-| 2 | `theorem` | [ringKrullDim_eq_zero_of_isField](../../../../CommutativeAlgebra/KrullDimensionField.lean/declarations/ringkrulldim-eq-zero-of-isfield.md) | 20 | `result-track:7358152d94e88ce70e19e77ae4a2f2e1423b96bae7613298ddf2c3261f698bb8` |
+| 1 | `theorem` | [ringKrullDim_eq_zero_of_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/KrullDimensionField.lean/declarations/ringkrulldim-eq-zero-of-field.md) | 17 | `result-track:c6ead9a97c0af2c7bd0a3dfb2b5ff792481d38ca0caa32373d49879adf4091ab` |
+| 2 | `theorem` | [ringKrullDim_eq_zero_of_isField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/KrullDimensionField.lean/declarations/ringkrulldim-eq-zero-of-isfield.md) | 20 | `result-track:7358152d94e88ce70e19e77ae4a2f2e1423b96bae7613298ddf2c3261f698bb8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

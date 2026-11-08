@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Attempt04NamespacedEdgeCoordinateBounds.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Attempt04NamespacedEdgeCoordinateBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt04NamespacedEdgeCoordinateBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt04NamespacedEdgeCoordinateBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [edge_coordinate_bounds](../../../../MeasureAndIntegration/Attempt04NamespacedEdgeCoordinateBounds.lean/declarations/edge-coordinate-bounds.md) | 32 | `result-track:f936140c10c57e1591b96da3b519fdd52564f3b942291d749cb79345d274c609` |
-| 2 | `theorem` | [actualEndpointPolynomial_edge_lower](../../../../MeasureAndIntegration/Attempt04NamespacedEdgeCoordinateBounds.lean/declarations/actualendpointpolynomial-edge-lower.md) | 42 | `result-track:7e84c9d0ee28890033b81cdb349c663d3b6cd0148428ab93dd38045a478e09d9` |
-| 3 | `theorem` | [actualEndpointDerivative_edge_lower](../../../../MeasureAndIntegration/Attempt04NamespacedEdgeCoordinateBounds.lean/declarations/actualendpointderivative-edge-lower.md) | 67 | `result-track:f3ddc1f6a720a4d74ee665d8c15d2b601ecc9f4c9dcf828ef2c651aed6f1e156` |
-| 4 | `theorem` | [actualEndpointCritical_edge_upper](../../../../MeasureAndIntegration/Attempt04NamespacedEdgeCoordinateBounds.lean/declarations/actualendpointcritical-edge-upper.md) | 107 | `result-track:2405af19d021e959c6d1b99cd7e5b711397c1964827fc01958da5ea5a3cd69d1` |
-| 5 | `theorem` | [overlap_moment](../../../../MeasureAndIntegration/Attempt04NamespacedEdgeCoordinateBounds.lean/declarations/overlap-moment.md) | 117 | `result-track:378894fd9d27b43d213d9b745dbc71cf4a72d2a8a47c70e3aefaf836ec517d28` |
-| 6 | `theorem` | [actualCriticalKernel_edge_upper](../../../../MeasureAndIntegration/Attempt04NamespacedEdgeCoordinateBounds.lean/declarations/actualcriticalkernel-edge-upper.md) | 131 | `result-track:905c86e28bb6bd5f2346321292bbbad7bef5496ab218489a10b2e86cda8fce24` |
+| 1 | `theorem` | [edge_coordinate_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt04NamespacedEdgeCoordinateBounds.lean/declarations/edge-coordinate-bounds.md) | 32 | `result-track:f936140c10c57e1591b96da3b519fdd52564f3b942291d749cb79345d274c609` |
+| 2 | `theorem` | [actualEndpointPolynomial_edge_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt04NamespacedEdgeCoordinateBounds.lean/declarations/actualendpointpolynomial-edge-lower.md) | 42 | `result-track:7e84c9d0ee28890033b81cdb349c663d3b6cd0148428ab93dd38045a478e09d9` |
+| 3 | `theorem` | [actualEndpointDerivative_edge_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt04NamespacedEdgeCoordinateBounds.lean/declarations/actualendpointderivative-edge-lower.md) | 67 | `result-track:f3ddc1f6a720a4d74ee665d8c15d2b601ecc9f4c9dcf828ef2c651aed6f1e156` |
+| 4 | `theorem` | [actualEndpointCritical_edge_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt04NamespacedEdgeCoordinateBounds.lean/declarations/actualendpointcritical-edge-upper.md) | 107 | `result-track:2405af19d021e959c6d1b99cd7e5b711397c1964827fc01958da5ea5a3cd69d1` |
+| 5 | `theorem` | [overlap_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt04NamespacedEdgeCoordinateBounds.lean/declarations/overlap-moment.md) | 117 | `result-track:378894fd9d27b43d213d9b745dbc71cf4a72d2a8a47c70e3aefaf836ec517d28` |
+| 6 | `theorem` | [actualCriticalKernel_edge_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt04NamespacedEdgeCoordinateBounds.lean/declarations/actualcriticalkernel-edge-upper.md) | 131 | `result-track:905c86e28bb6bd5f2346321292bbbad7bef5496ab218489a10b2e86cda8fce24` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

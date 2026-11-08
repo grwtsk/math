@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteCorrespondence.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteCorrespondence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteCorrespondence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteCorrespondence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteCorrespondenceRecord](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteCorrespondence.lean/declarations/finitecorrespondencerecord.md) | 17 | `declaration-track:b2737624d7ec97ac22b308ee6d1b8743e11eae193485f45f23534067d7429db3` |
-| 2 | `theorem` | [finite_arithmetic_trace_correspondence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteCorrespondence.lean/declarations/finite-arithmetic-trace-correspondence.md) | 40 | `result-track:2af474df3c727535b1f2ca4832cbda000ba9c3aa4afd4698b1ad32523d6e7fb0` |
+| 1 | `structure` | [FiniteCorrespondenceRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteCorrespondence.lean/declarations/finitecorrespondencerecord.md) | 17 | `declaration-track:b2737624d7ec97ac22b308ee6d1b8743e11eae193485f45f23534067d7429db3` |
+| 2 | `theorem` | [finite_arithmetic_trace_correspondence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteCorrespondence.lean/declarations/finite-arithmetic-trace-correspondence.md) | 40 | `result-track:2af474df3c727535b1f2ca4832cbda000ba9c3aa4afd4698b1ad32523d6e7fb0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

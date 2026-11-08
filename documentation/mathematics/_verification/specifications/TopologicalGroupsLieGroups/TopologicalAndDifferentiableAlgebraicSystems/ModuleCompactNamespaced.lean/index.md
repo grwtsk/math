@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleCompactNamespaced.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleCompactNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleCompactNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleCompactNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Submodule.isCompact_of_fg](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleCompactNamespaced.lean/declarations/submodule-iscompact-of-fg.md) | 28 | `result-track:efefdeff5804e7fbff7f62c9fbbb75e339201a1fbefac5229faaab055366344e` |
-| 2 | `lemma` | [Ideal.isCompact_of_fg](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleCompactNamespaced.lean/declarations/ideal-iscompact-of-fg.md) | 39 | `result-track:b5fd2faa211f5bbc053021afef0d89c7ceff3c23ba27a13d82b2b7b38c5f317d` |
-| 3 | `lemma` | [Module.Finite.compactSpace](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleCompactNamespaced.lean/declarations/module-finite-compactspace.md) | 44 | `result-track:3db73453253e9db58dd664af69440c7a7c1c2850b09ef8a4bb296623641fa9b3` |
-| 4 | `instance` | [(anonymous)](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleCompactNamespaced.lean/declarations/instance.md) | 47 | `declaration-track:9a0a79650ac3a146814b12b9cece7c2ad9e927839f9ac73b98c5c91c581735e0` |
+| 1 | `lemma` | [Submodule.isCompact_of_fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleCompactNamespaced.lean/declarations/submodule-iscompact-of-fg.md) | 28 | `result-track:efefdeff5804e7fbff7f62c9fbbb75e339201a1fbefac5229faaab055366344e` |
+| 2 | `lemma` | [Ideal.isCompact_of_fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleCompactNamespaced.lean/declarations/ideal-iscompact-of-fg.md) | 39 | `result-track:b5fd2faa211f5bbc053021afef0d89c7ceff3c23ba27a13d82b2b7b38c5f317d` |
+| 3 | `lemma` | [Module.Finite.compactSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleCompactNamespaced.lean/declarations/module-finite-compactspace.md) | 44 | `result-track:3db73453253e9db58dd664af69440c7a7c1c2850b09ef8a4bb296623641fa9b3` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleCompactNamespaced.lean/declarations/instance.md) | 47 | `declaration-track:9a0a79650ac3a146814b12b9cece7c2ad9e927839f9ac73b98c5c91c581735e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

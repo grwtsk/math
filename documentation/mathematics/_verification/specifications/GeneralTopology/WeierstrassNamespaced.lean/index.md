@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/WeierstrassNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/WeierstrassNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WeierstrassNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WeierstrassNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [polynomialFunctions_closure_eq_top'](../../../../GeneralTopology/WeierstrassNamespaced.lean/declarations/polynomialfunctions-closure-eq-top.md) | 39 | `result-track:9e47ce8757cb207009d5002b6ca4cc09cf7c323c8aa0d25d502c034d0fb46cf7` |
-| 2 | `theorem` | [polynomialFunctions_closure_eq_top](../../../../GeneralTopology/WeierstrassNamespaced.lean/declarations/polynomialfunctions-closure-eq-top-source-edition-2.md) | 57 | `result-track:a89fae6b8de54d2a215ee07625b51d99de5fb83ba48566010bd9ce479a56f97c` |
-| 3 | `theorem` | [continuousMap_mem_polynomialFunctions_closure](../../../../GeneralTopology/WeierstrassNamespaced.lean/declarations/continuousmap-mem-polynomialfunctions-closure.md) | 87 | `result-track:646a136213781073a654c493e2b686624ef314f835747d6e5c521274d1f40f45` |
-| 4 | `theorem` | [exists_polynomial_near_continuousMap](../../../../GeneralTopology/WeierstrassNamespaced.lean/declarations/exists-polynomial-near-continuousmap.md) | 99 | `result-track:c5fb95f85b957dd2db8329c033b396c67c047dbf5a1eec6068baf532f2403128` |
-| 5 | `theorem` | [exists_polynomial_near_of_continuousOn](../../../../GeneralTopology/WeierstrassNamespaced.lean/declarations/exists-polynomial-near-of-continuouson.md) | 113 | `result-track:f0a970de1fd82d4bc52c42803127de5a1f958f90556d6b72472cf7c2a1602cf2` |
+| 1 | `theorem` | [polynomialFunctions_closure_eq_top'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WeierstrassNamespaced.lean/declarations/polynomialfunctions-closure-eq-top.md) | 39 | `result-track:9e47ce8757cb207009d5002b6ca4cc09cf7c323c8aa0d25d502c034d0fb46cf7` |
+| 2 | `theorem` | [polynomialFunctions_closure_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WeierstrassNamespaced.lean/declarations/polynomialfunctions-closure-eq-top-source-edition-2.md) | 57 | `result-track:a89fae6b8de54d2a215ee07625b51d99de5fb83ba48566010bd9ce479a56f97c` |
+| 3 | `theorem` | [continuousMap_mem_polynomialFunctions_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WeierstrassNamespaced.lean/declarations/continuousmap-mem-polynomialfunctions-closure.md) | 87 | `result-track:646a136213781073a654c493e2b686624ef314f835747d6e5c521274d1f40f45` |
+| 4 | `theorem` | [exists_polynomial_near_continuousMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WeierstrassNamespaced.lean/declarations/exists-polynomial-near-continuousmap.md) | 99 | `result-track:c5fb95f85b957dd2db8329c033b396c67c047dbf5a1eec6068baf532f2403128` |
+| 5 | `theorem` | [exists_polynomial_near_of_continuousOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WeierstrassNamespaced.lean/declarations/exists-polynomial-near-of-continuouson.md) | 113 | `result-track:f0a970de1fd82d4bc52c42803127de5a1f958f90556d6b72472cf7c2a1602cf2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

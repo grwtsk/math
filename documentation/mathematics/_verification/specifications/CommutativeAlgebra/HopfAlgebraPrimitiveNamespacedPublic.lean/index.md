@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/HopfAlgebraPrimitiveNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/HopfAlgebraPrimitiveNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraPrimitiveNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraPrimitiveNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [antipode_eq_neg](../../../../CommutativeAlgebra/HopfAlgebraPrimitiveNamespacedPublic.lean/declarations/antipode-eq-neg.md) | 44 | `result-track:10f02321353bffa9a66ae199fef71fa0969d2429607888f5ed91ccab84a9ced6` |
-| 2 | `lemma` | [antipode](../../../../CommutativeAlgebra/HopfAlgebraPrimitiveNamespacedPublic.lean/declarations/antipode.md) | 49 | `result-track:878bfa426ce9cc0c0502c61a138704df2c80c9c2c5a325c56de0b84a9a5b2e47` |
-| 3 | `lemma` | [antipode_antipode](../../../../CommutativeAlgebra/HopfAlgebraPrimitiveNamespacedPublic.lean/declarations/antipode-antipode.md) | 52 | `result-track:55ad2b557a6c2c82ec1a7a1a3a2aebb2aa71f5a8cb55f2bac0f36defa3e642e4` |
+| 1 | `theorem` | [antipode_eq_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraPrimitiveNamespacedPublic.lean/declarations/antipode-eq-neg.md) | 44 | `result-track:10f02321353bffa9a66ae199fef71fa0969d2429607888f5ed91ccab84a9ced6` |
+| 2 | `lemma` | [antipode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraPrimitiveNamespacedPublic.lean/declarations/antipode.md) | 49 | `result-track:878bfa426ce9cc0c0502c61a138704df2c80c9c2c5a325c56de0b84a9a5b2e47` |
+| 3 | `lemma` | [antipode_antipode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraPrimitiveNamespacedPublic.lean/declarations/antipode-antipode.md) | 52 | `result-track:55ad2b557a6c2c82ec1a7a1a3a2aebb2aa71f5a8cb55f2bac0f36defa3e642e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

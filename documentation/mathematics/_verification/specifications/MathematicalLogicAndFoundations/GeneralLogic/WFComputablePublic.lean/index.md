@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [wfRel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/wfrel.md) | 34 | `declaration-track:0c499828c0020d8b662ac6cf582caacf827c682e1b100bc50bd3826b4ddf7073` |
-| 2 | `def` | [recC](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/recc.md) | 39 | `declaration-track:83a3e0c6ea03732bfddf3a266f0ab7f245e39281b2a4d7ca2d949079a4f4b8d1` |
-| 3 | `theorem` | [rec_eq_recC](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/rec-eq-recc.md) | 46 | `result-track:180a087c5a6240b502ad9c52c1fd6b3943833c4d8ade4e0e09c71bc04a3a6962` |
-| 4 | `abbrev` | [ndrecC](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/ndrecc.md) | 55 | `declaration-track:8d1879b5a7ed6ca32779e197797909545ed91a4639750ebea9ba9215e503176c` |
-| 5 | `theorem` | [ndrec_eq_ndrecC](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/ndrec-eq-ndrecc.md) | 60 | `result-track:854f2dd05df70b5672e0525eac0f0a9c2ced70b60989172867b3af1a66217904` |
-| 6 | `abbrev` | [ndrecOnC](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/ndreconc.md) | 65 | `declaration-track:62233535a4f8e95ecb37a698d81c9ae25dd8915fcd08be4a1dfc7ebcf98750ef` |
-| 7 | `theorem` | [ndrecOn_eq_ndrecOnC](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/ndrecon-eq-ndreconc.md) | 69 | `result-track:f63a35817853b8620024ef82722a8021a40f55dd55b8b78864b261f57924fec7` |
-| 8 | `def` | [fixFC](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/fixfc.md) | 78 | `declaration-track:82b21fdc65809aee6457f129db7f965ca2c845013266de07a299cb1935267b51` |
-| 9 | `theorem` | [fixF_eq_fixFC](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/fixf-eq-fixfc.md) | 83 | `result-track:1aea53fc5477653933489e89b98b988ac78b48e6b800467e1fd7650741bea136` |
-| 10 | `def` | [fixC](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/fixc.md) | 88 | `declaration-track:9c89399b2fdb1c909780e27185552741fa2759e3f96b46d00a98e202c3f3319a` |
-| 11 | `theorem` | [fix_eq_fixC](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/fix-eq-fixc.md) | 95 | `result-track:9de33234172e42ab4ab8555e69fbcedc6afbdda75ec56acad12ea61888e6c66c` |
+| 1 | `instance` | [wfRel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/wfrel.md) | 34 | `declaration-track:0c499828c0020d8b662ac6cf582caacf827c682e1b100bc50bd3826b4ddf7073` |
+| 2 | `def` | [recC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/recc.md) | 39 | `declaration-track:83a3e0c6ea03732bfddf3a266f0ab7f245e39281b2a4d7ca2d949079a4f4b8d1` |
+| 3 | `theorem` | [rec_eq_recC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/rec-eq-recc.md) | 46 | `result-track:180a087c5a6240b502ad9c52c1fd6b3943833c4d8ade4e0e09c71bc04a3a6962` |
+| 4 | `abbrev` | [ndrecC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/ndrecc.md) | 55 | `declaration-track:8d1879b5a7ed6ca32779e197797909545ed91a4639750ebea9ba9215e503176c` |
+| 5 | `theorem` | [ndrec_eq_ndrecC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/ndrec-eq-ndrecc.md) | 60 | `result-track:854f2dd05df70b5672e0525eac0f0a9c2ced70b60989172867b3af1a66217904` |
+| 6 | `abbrev` | [ndrecOnC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/ndreconc.md) | 65 | `declaration-track:62233535a4f8e95ecb37a698d81c9ae25dd8915fcd08be4a1dfc7ebcf98750ef` |
+| 7 | `theorem` | [ndrecOn_eq_ndrecOnC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/ndrecon-eq-ndreconc.md) | 69 | `result-track:f63a35817853b8620024ef82722a8021a40f55dd55b8b78864b261f57924fec7` |
+| 8 | `def` | [fixFC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/fixfc.md) | 78 | `declaration-track:82b21fdc65809aee6457f129db7f965ca2c845013266de07a299cb1935267b51` |
+| 9 | `theorem` | [fixF_eq_fixFC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/fixf-eq-fixfc.md) | 83 | `result-track:1aea53fc5477653933489e89b98b988ac78b48e6b800467e1fd7650741bea136` |
+| 10 | `def` | [fixC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/fixc.md) | 88 | `declaration-track:9c89399b2fdb1c909780e27185552741fa2759e3f96b46d00a98e202c3f3319a` |
+| 11 | `theorem` | [fix_eq_fixC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WFComputablePublic.lean/declarations/fix-eq-fixc.md) | 95 | `result-track:9de33234172e42ab4ab8555e69fbcedc6afbdda75ec56acad12ea61888e6c66c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

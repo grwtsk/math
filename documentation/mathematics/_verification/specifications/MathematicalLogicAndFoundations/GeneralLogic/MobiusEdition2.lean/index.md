@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MobiusEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MobiusEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MobiusEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MobiusEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MobiusDirichletIdentityAuthority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MobiusEdition2.lean/declarations/mobiusdirichletidentityauthority.md) | 16 | `declaration-track:86e44a06d69d2282ad452fd1f4c574fad4753d2bd18f2be85c4d6069128375cc` |
-| 2 | `theorem` | [mobius_dirichlet_identity_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MobiusEdition2.lean/declarations/mobius-dirichlet-identity-sound.md) | 27 | `result-track:8e17489769b7c697dcff026c2929dc7a36fe19447a19a7b84bec41fb2a80712e` |
-| 3 | `theorem` | [finite_mobius_window_not_analytic_identity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MobiusEdition2.lean/declarations/finite-mobius-window-not-analytic-identity.md) | 36 | `result-track:0951524c445243c9a0cc21b7795ea42dbb885eb4c481d64a6f70e30270e32b9f` |
+| 1 | `structure` | [MobiusDirichletIdentityAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MobiusEdition2.lean/declarations/mobiusdirichletidentityauthority.md) | 16 | `declaration-track:86e44a06d69d2282ad452fd1f4c574fad4753d2bd18f2be85c4d6069128375cc` |
+| 2 | `theorem` | [mobius_dirichlet_identity_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MobiusEdition2.lean/declarations/mobius-dirichlet-identity-sound.md) | 27 | `result-track:8e17489769b7c697dcff026c2929dc7a36fe19447a19a7b84bec41fb2a80712e` |
+| 3 | `theorem` | [finite_mobius_window_not_analytic_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MobiusEdition2.lean/declarations/finite-mobius-window-not-analytic-identity.md) | 36 | `result-track:0951524c445243c9a0cc21b7795ea42dbb885eb4c481d64a6f70e30270e32b9f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

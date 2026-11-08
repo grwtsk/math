@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/FactorizationRebuildNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/FactorizationRebuildNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FactorizationRebuildNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FactorizationRebuildNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [factorization_reconstructs](../../../../NumberTheory/FactorizationRebuildNamespaced.lean/declarations/factorization-reconstructs.md) | 24 | `result-track:e8bf21b43bbdfdf0c4a0dfaa05483cca3c409fb9df586cd6d6bd1023cd3f7f6f` |
-| 2 | `theorem` | [factorization_support_prime_checked](../../../../NumberTheory/FactorizationRebuildNamespaced.lean/declarations/factorization-support-prime-checked.md) | 29 | `result-track:2828a86a54c654787e2f9f4662279bb7c00c05330b5c0bcd47320659c754d8e8` |
-| 3 | `theorem` | [no_prime_support_of_one](../../../../NumberTheory/FactorizationRebuildNamespaced.lean/declarations/no-prime-support-of-one.md) | 36 | `result-track:85ae6d7064fb9a8ee9c81f1fc3e66667ee753c39e1bc7dd1a869f354ff62f797` |
-| 4 | `theorem` | [exists_prime_support_of_gt_one](../../../../NumberTheory/FactorizationRebuildNamespaced.lean/declarations/exists-prime-support-of-gt-one.md) | 47 | `result-track:9503f5aee65642b82edfb6433172ff02b56a2d39fb3841a66c8a1df92d15041a` |
+| 1 | `theorem` | [factorization_reconstructs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FactorizationRebuildNamespaced.lean/declarations/factorization-reconstructs.md) | 24 | `result-track:e8bf21b43bbdfdf0c4a0dfaa05483cca3c409fb9df586cd6d6bd1023cd3f7f6f` |
+| 2 | `theorem` | [factorization_support_prime_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FactorizationRebuildNamespaced.lean/declarations/factorization-support-prime-checked.md) | 29 | `result-track:2828a86a54c654787e2f9f4662279bb7c00c05330b5c0bcd47320659c754d8e8` |
+| 3 | `theorem` | [no_prime_support_of_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FactorizationRebuildNamespaced.lean/declarations/no-prime-support-of-one.md) | 36 | `result-track:85ae6d7064fb9a8ee9c81f1fc3e66667ee753c39e1bc7dd1a869f354ff62f797` |
+| 4 | `theorem` | [exists_prime_support_of_gt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FactorizationRebuildNamespaced.lean/declarations/exists-prime-support-of-gt-one.md) | 47 | `result-track:9503f5aee65642b82edfb6433172ff02b56a2d39fb3841a66c8a1df92d15041a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

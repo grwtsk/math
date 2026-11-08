@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLocallySmallNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLocallySmallNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLocallySmallNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLocallySmallNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [hasLocalizationOfLocallySmall](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLocallySmallNamespaced.lean/declarations/haslocalizationoflocallysmall.md) | 39 | `declaration-track:35cb9b27b0b6d5815acc46726d67c5c124818c1c71da1f708036e046dcd22c3c` |
-| 2 | `lemma` | [locallySmall_of_hasLocalization](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLocallySmallNamespaced.lean/declarations/locallysmall-of-haslocalization.md) | 73 | `result-track:f986193bac396aff9810bbac0aac5b36bfb0f139a43f36fee2dacb9ac8b87f6d` |
+| 1 | `def` | [hasLocalizationOfLocallySmall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLocallySmallNamespaced.lean/declarations/haslocalizationoflocallysmall.md) | 39 | `declaration-track:35cb9b27b0b6d5815acc46726d67c5c124818c1c71da1f708036e046dcd22c3c` |
+| 2 | `lemma` | [locallySmall_of_hasLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLocallySmallNamespaced.lean/declarations/locallysmall-of-haslocalization.md) | 73 | `result-track:f986193bac396aff9810bbac0aac5b36bfb0f139a43f36fee2dacb9ac8b87f6d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

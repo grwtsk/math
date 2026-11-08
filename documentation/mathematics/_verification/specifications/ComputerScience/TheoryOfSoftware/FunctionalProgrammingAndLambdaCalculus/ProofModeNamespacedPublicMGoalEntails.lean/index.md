@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModeNamespacedPublicMGoalEntails.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModeNamespacedPublicMGoalEntails.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModeNamespacedPublicMGoalEntails.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModeNamespacedPublicMGoalEntails.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `syntax` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModeNamespacedPublicMGoalEntails.lean/declarations/syntax.md) | 26 | `declaration-track:82eb1e05832b8ef5e677a21e557864c5718c5d0b3d5ab58d82217c33108072d6` |
-| 2 | `syntax` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModeNamespacedPublicMGoalEntails.lean/declarations/syntax-source-edition-2.md) | 28 | `declaration-track:d9dd91b3cd02d1b5c6ff00a5478417a889469823ec79ec2e44ac200cbf4d5e7e` |
-| 3 | `abbrev` | [MGoalEntails](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModeNamespacedPublicMGoalEntails.lean/declarations/mgoalentails.md) | 32 | `declaration-track:ee49829ad692d47bca25cffec2508d62dd05b5ae7a4b7d4d22654290e4697c83` |
-| 4 | `def` | [MGoalHypMarker](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModeNamespacedPublicMGoalEntails.lean/declarations/mgoalhypmarker.md) | 36 | `declaration-track:9fa5ec4b38813eb4d3da2000cebc95c57c6fadc5858ee811b921f2e5ba89e1a5` |
+| 1 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModeNamespacedPublicMGoalEntails.lean/declarations/syntax.md) | 26 | `declaration-track:82eb1e05832b8ef5e677a21e557864c5718c5d0b3d5ab58d82217c33108072d6` |
+| 2 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModeNamespacedPublicMGoalEntails.lean/declarations/syntax-source-edition-2.md) | 28 | `declaration-track:d9dd91b3cd02d1b5c6ff00a5478417a889469823ec79ec2e44ac200cbf4d5e7e` |
+| 3 | `abbrev` | [MGoalEntails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModeNamespacedPublicMGoalEntails.lean/declarations/mgoalentails.md) | 32 | `declaration-track:ee49829ad692d47bca25cffec2508d62dd05b5ae7a4b7d4d22654290e4697c83` |
+| 4 | `def` | [MGoalHypMarker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModeNamespacedPublicMGoalEntails.lean/declarations/mgoalhypmarker.md) | 36 | `declaration-track:9fa5ec4b38813eb4d3da2000cebc95c57c6fadc5858ee811b921f2e5ba89e1a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

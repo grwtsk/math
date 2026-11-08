@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Result.lean/index.md) · [Full source](../../../../Combinatorics/Result.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Result.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Result.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FixedCertificate](../../../../Combinatorics/Result.lean/declarations/fixedcertificate.md) | 11 | `declaration-track:99a0f80ddc8527f11a92dd439f88de1f663be24fcb21e2968a229f461ae6ca66` |
-| 2 | `def` | [fixedCertificateOfUnresolvedEmpty](../../../../Combinatorics/Result.lean/declarations/fixedcertificateofunresolvedempty.md) | 24 | `declaration-track:32c2fadfecd5c31a7ea28b9680c20b36d43c8012144fb7763de1527745903b78` |
-| 3 | `structure` | [FrontierCertificate](../../../../Combinatorics/Result.lean/declarations/frontiercertificate.md) | 55 | `declaration-track:8c8354caf8172a014567f345e4ab636c863b5ca2f461f815f44dcaea41a1a316` |
-| 4 | `structure` | [RejectionCertificate](../../../../Combinatorics/Result.lean/declarations/rejectioncertificate.md) | 62 | `declaration-track:ed7691de7f2ed3d66b8c07e86fd4ed35e9339ebdccd93f34e89bbc6878c67154` |
-| 5 | `inductive` | [Continuation](../../../../Combinatorics/Result.lean/declarations/continuation.md) | 67 | `declaration-track:0b2fb3901e963df352f043e37b5064b61f3377ebd9fbc6c6b70c9cf092830e4e` |
-| 6 | `inductive` | [ResolutionResult](../../../../Combinatorics/Result.lean/declarations/resolutionresult.md) | 72 | `declaration-track:88d74fc2d9ce90b875cbc535de19d6b14078bd7aef9bd825155033a9da203da3` |
-| 7 | `inductive` | [AuthorityDecision](../../../../Combinatorics/Result.lean/declarations/authoritydecision.md) | 80 | `declaration-track:1e8bb57869c08c1e46238fc74e77828583a53701be32a9b828fda61e5799e707` |
-| 8 | `structure` | [ScheduleView](../../../../Combinatorics/Result.lean/declarations/scheduleview.md) | 87 | `declaration-track:2d47a00c7ea5627ae528d8fef46ea39231851269af365a219cf9f3eb3d1f056c` |
-| 9 | `def` | [present](../../../../Combinatorics/Result.lean/declarations/present.md) | 90 | `declaration-track:ecdfedb02493bfe47506e6e7a2dcd51c5feda120d5236098e36e1b2144f3a06b` |
+| 1 | `structure` | [FixedCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Result.lean/declarations/fixedcertificate.md) | 11 | `declaration-track:99a0f80ddc8527f11a92dd439f88de1f663be24fcb21e2968a229f461ae6ca66` |
+| 2 | `def` | [fixedCertificateOfUnresolvedEmpty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Result.lean/declarations/fixedcertificateofunresolvedempty.md) | 24 | `declaration-track:32c2fadfecd5c31a7ea28b9680c20b36d43c8012144fb7763de1527745903b78` |
+| 3 | `structure` | [FrontierCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Result.lean/declarations/frontiercertificate.md) | 55 | `declaration-track:8c8354caf8172a014567f345e4ab636c863b5ca2f461f815f44dcaea41a1a316` |
+| 4 | `structure` | [RejectionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Result.lean/declarations/rejectioncertificate.md) | 62 | `declaration-track:ed7691de7f2ed3d66b8c07e86fd4ed35e9339ebdccd93f34e89bbc6878c67154` |
+| 5 | `inductive` | [Continuation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Result.lean/declarations/continuation.md) | 67 | `declaration-track:0b2fb3901e963df352f043e37b5064b61f3377ebd9fbc6c6b70c9cf092830e4e` |
+| 6 | `inductive` | [ResolutionResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Result.lean/declarations/resolutionresult.md) | 72 | `declaration-track:88d74fc2d9ce90b875cbc535de19d6b14078bd7aef9bd825155033a9da203da3` |
+| 7 | `inductive` | [AuthorityDecision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Result.lean/declarations/authoritydecision.md) | 80 | `declaration-track:1e8bb57869c08c1e46238fc74e77828583a53701be32a9b828fda61e5799e707` |
+| 8 | `structure` | [ScheduleView](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Result.lean/declarations/scheduleview.md) | 87 | `declaration-track:2d47a00c7ea5627ae528d8fef46ea39231851269af365a219cf9f3eb3d1f056c` |
+| 9 | `def` | [present](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Result.lean/declarations/present.md) | 90 | `declaration-track:ecdfedb02493bfe47506e6e7a2dcd51c5feda120d5236098e36e1b2144f3a06b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

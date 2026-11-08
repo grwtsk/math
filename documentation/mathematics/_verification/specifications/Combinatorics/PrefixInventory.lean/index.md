@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PrefixInventory.lean/index.md) · [Full source](../../../../Combinatorics/PrefixInventory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.DirectedGraph.PrefixInventory`](../../../../Combinatorics/GraphTheory/PrefixInventory.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Combinatorics.DirectedGraph.PrefixInventory`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixInventory.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,30 +57,30 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [totalEdgeDecidableEq](../../../../Combinatorics/PrefixInventory.lean/declarations/totaledgedecidableeq.md) | 14 | `declaration-track:a3afd4a884eb3f2df2228a4f3deb2624e523d877c1dbf79127e65c12cda011a8` |
-| 2 | `def` | [falseOccurrence](../../../../Combinatorics/PrefixInventory.lean/declarations/falseoccurrence.md) | 17 | `declaration-track:154d597facba4e90b623abd467748a20e7f785d78981c7c63563065e76cfa4c4` |
-| 3 | `def` | [trueOccurrence](../../../../Combinatorics/PrefixInventory.lean/declarations/trueoccurrence.md) | 20 | `declaration-track:fad1f137a873bb225420373cc3beb0d8b87033c9cecfd142f6b2df0d007c004d` |
-| 4 | `def` | [falseTag](../../../../Combinatorics/PrefixInventory.lean/declarations/falsetag.md) | 23 | `declaration-track:d8a92813aa3c0e72e07b25b766b6309b6878de6c904eac8682571063df60b15c` |
-| 5 | `def` | [trueTag](../../../../Combinatorics/PrefixInventory.lean/declarations/truetag.md) | 26 | `declaration-track:7b370cd8ad8be33c8c0091cb24adda820f290b3506c9e9e13a0575b09710e866` |
-| 6 | `theorem` | [tags_distinct](../../../../Combinatorics/PrefixInventory.lean/declarations/tags-distinct.md) | 29 | `result-track:768e1a1d1cb165e6c7f59a0fe6d5c61d1427069e80094599b85833cf1e3c3085` |
-| 7 | `def` | [parallelRows](../../../../Combinatorics/PrefixInventory.lean/declarations/parallelrows.md) | 35 | `declaration-track:b317f3e30136683ba750df0ae7d26761f279cfe0d16a69d9dacff7488eba78c7` |
-| 8 | `theorem` | [parallel_inventory_exact](../../../../Combinatorics/PrefixInventory.lean/declarations/parallel-inventory-exact.md) | 39 | `result-track:2301f5c1d2986087d6bc1c6d9552613c018e02c04c56886457b1c8ffe5069b42` |
-| 9 | `theorem` | [parallel_same_endpoint](../../../../Combinatorics/PrefixInventory.lean/declarations/parallel-same-endpoint.md) | 44 | `result-track:eddcb704ec40354bea5bf5cd148995f2cad51c83545b899ba45a906381986ff5` |
-| 10 | `theorem` | [parallel_occurrences_distinct](../../../../Combinatorics/PrefixInventory.lean/declarations/parallel-occurrences-distinct.md) | 46 | `result-track:bb4e33bd5855352df24fd3ea78833867c239561c64c5b5db187cce5f8babaf9c` |
-| 11 | `theorem` | [parallel_common_prefix_only_empty](../../../../Combinatorics/PrefixInventory.lean/declarations/parallel-common-prefix-only-empty.md) | 51 | `result-track:bb9289bbf897b684fbd7d7fb3fa29e34acc8ea564c36842f4d9408ca644960ad` |
-| 12 | `theorem` | [endpoint_rows_lose_identity](../../../../Combinatorics/PrefixInventory.lean/declarations/endpoint-rows-lose-identity.md) | 63 | `result-track:6b2556ece6725b96e4aef143f64d2c335479113ef9773530bf56f82956d3c60e` |
-| 13 | `example` | [(anonymous)](../../../../Combinatorics/PrefixInventory.lean/declarations/example-source-edition-7.md) | 71 | `declaration-track:67dbc4ea85473a09c433dedc99230312efba4e90a986331c3dca636a8da222d9` |
-| 14 | `example` | [(anonymous)](../../../../Combinatorics/PrefixInventory.lean/declarations/example-source-edition-4.md) | 73 | `declaration-track:39b3e787a7ceec8f1927be660af85b1b69ac4157d4f0f0b45edc869f308f1783` |
-| 15 | `example` | [(anonymous)](../../../../Combinatorics/PrefixInventory.lean/declarations/example-source-edition-3.md) | 76 | `declaration-track:3214404679f28911ce7590af69d015be80f1e0e83510c500c9fb654cb438dad9` |
-| 16 | `example` | [(anonymous)](../../../../Combinatorics/PrefixInventory.lean/declarations/example-source-edition-9.md) | 79 | `declaration-track:c83c4ae3fbec03b7b659a102b6d795320d0c640099535904e398131fb7683cac` |
-| 17 | `example` | [(anonymous)](../../../../Combinatorics/PrefixInventory.lean/declarations/example-source-edition-10.md) | 84 | `declaration-track:eb36361440c66fe0d109a5417f0e44f5c9d7ed8efa34c37e0737e9d3e5a46520` |
-| 18 | `example` | [(anonymous)](../../../../Combinatorics/PrefixInventory.lean/declarations/example-source-edition-6.md) | 87 | `declaration-track:4cefb050a8f378e0f817ac215031c2359c97e66c049f2350fa8a09955bd4dcee` |
-| 19 | `def` | [repeatedRows](../../../../Combinatorics/PrefixInventory.lean/declarations/repeatedrows.md) | 93 | `declaration-track:f179df136fe746e9dbef8824f460c71000474476c23d0f2edbb4a38420012ab6` |
-| 20 | `theorem` | [repeated_references_exact](../../../../Combinatorics/PrefixInventory.lean/declarations/repeated-references-exact.md) | 97 | `result-track:74513407aceeaa1ff942ae9be8854ed0feca25ea2205bb169f558253f8e9749e` |
-| 21 | `example` | [(anonymous)](../../../../Combinatorics/PrefixInventory.lean/declarations/example-source-edition-8.md) | 102 | `declaration-track:aaad774a3c740a85f02758a285df895723164ca41546d471603069054237960e` |
-| 22 | `example` | [(anonymous)](../../../../Combinatorics/PrefixInventory.lean/declarations/example-source-edition-2.md) | 104 | `declaration-track:2ac7c9150794d955c3d9b66883ea607eec3b453e460e337415ece7de2a587426` |
-| 23 | `example` | [(anonymous)](../../../../Combinatorics/PrefixInventory.lean/declarations/example.md) | 107 | `declaration-track:0bb5e97e2382c9d609be89a7b9499ec51923f797f64c02560989ca371877ba07` |
-| 24 | `example` | [(anonymous)](../../../../Combinatorics/PrefixInventory.lean/declarations/example-source-edition-5.md) | 110 | `declaration-track:462c425b033fd0f4e222b72904885d5bc40dd56d8553d58bfa0f557c8b61d0bf` |
+| 1 | `instance` | [totalEdgeDecidableEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/totaledgedecidableeq.md) | 14 | `declaration-track:a3afd4a884eb3f2df2228a4f3deb2624e523d877c1dbf79127e65c12cda011a8` |
+| 2 | `def` | [falseOccurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/falseoccurrence.md) | 17 | `declaration-track:154d597facba4e90b623abd467748a20e7f785d78981c7c63563065e76cfa4c4` |
+| 3 | `def` | [trueOccurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/trueoccurrence.md) | 20 | `declaration-track:fad1f137a873bb225420373cc3beb0d8b87033c9cecfd142f6b2df0d007c004d` |
+| 4 | `def` | [falseTag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/falsetag.md) | 23 | `declaration-track:d8a92813aa3c0e72e07b25b766b6309b6878de6c904eac8682571063df60b15c` |
+| 5 | `def` | [trueTag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/truetag.md) | 26 | `declaration-track:7b370cd8ad8be33c8c0091cb24adda820f290b3506c9e9e13a0575b09710e866` |
+| 6 | `theorem` | [tags_distinct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/tags-distinct.md) | 29 | `result-track:768e1a1d1cb165e6c7f59a0fe6d5c61d1427069e80094599b85833cf1e3c3085` |
+| 7 | `def` | [parallelRows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/parallelrows.md) | 35 | `declaration-track:b317f3e30136683ba750df0ae7d26761f279cfe0d16a69d9dacff7488eba78c7` |
+| 8 | `theorem` | [parallel_inventory_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/parallel-inventory-exact.md) | 39 | `result-track:2301f5c1d2986087d6bc1c6d9552613c018e02c04c56886457b1c8ffe5069b42` |
+| 9 | `theorem` | [parallel_same_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/parallel-same-endpoint.md) | 44 | `result-track:eddcb704ec40354bea5bf5cd148995f2cad51c83545b899ba45a906381986ff5` |
+| 10 | `theorem` | [parallel_occurrences_distinct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/parallel-occurrences-distinct.md) | 46 | `result-track:bb4e33bd5855352df24fd3ea78833867c239561c64c5b5db187cce5f8babaf9c` |
+| 11 | `theorem` | [parallel_common_prefix_only_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/parallel-common-prefix-only-empty.md) | 51 | `result-track:bb9289bbf897b684fbd7d7fb3fa29e34acc8ea564c36842f4d9408ca644960ad` |
+| 12 | `theorem` | [endpoint_rows_lose_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/endpoint-rows-lose-identity.md) | 63 | `result-track:6b2556ece6725b96e4aef143f64d2c335479113ef9773530bf56f82956d3c60e` |
+| 13 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/example-source-edition-7.md) | 71 | `declaration-track:67dbc4ea85473a09c433dedc99230312efba4e90a986331c3dca636a8da222d9` |
+| 14 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/example-source-edition-4.md) | 73 | `declaration-track:39b3e787a7ceec8f1927be660af85b1b69ac4157d4f0f0b45edc869f308f1783` |
+| 15 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/example-source-edition-3.md) | 76 | `declaration-track:3214404679f28911ce7590af69d015be80f1e0e83510c500c9fb654cb438dad9` |
+| 16 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/example-source-edition-9.md) | 79 | `declaration-track:c83c4ae3fbec03b7b659a102b6d795320d0c640099535904e398131fb7683cac` |
+| 17 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/example-source-edition-10.md) | 84 | `declaration-track:eb36361440c66fe0d109a5417f0e44f5c9d7ed8efa34c37e0737e9d3e5a46520` |
+| 18 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/example-source-edition-6.md) | 87 | `declaration-track:4cefb050a8f378e0f817ac215031c2359c97e66c049f2350fa8a09955bd4dcee` |
+| 19 | `def` | [repeatedRows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/repeatedrows.md) | 93 | `declaration-track:f179df136fe746e9dbef8824f460c71000474476c23d0f2edbb4a38420012ab6` |
+| 20 | `theorem` | [repeated_references_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/repeated-references-exact.md) | 97 | `result-track:74513407aceeaa1ff942ae9be8854ed0feca25ea2205bb169f558253f8e9749e` |
+| 21 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/example-source-edition-8.md) | 102 | `declaration-track:aaad774a3c740a85f02758a285df895723164ca41546d471603069054237960e` |
+| 22 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/example-source-edition-2.md) | 104 | `declaration-track:2ac7c9150794d955c3d9b66883ea607eec3b453e460e337415ece7de2a587426` |
+| 23 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/example.md) | 107 | `declaration-track:0bb5e97e2382c9d609be89a7b9499ec51923f797f64c02560989ca371877ba07` |
+| 24 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixInventory.lean/declarations/example-source-edition-5.md) | 110 | `declaration-track:462c425b033fd0f4e222b72904885d5bc40dd56d8553d58bfa0f557c8b61d0bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/HallFiniteNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/HallFiniteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallFiniteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallFiniteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hall_cond_of_erase](../../../../Combinatorics/HallFiniteNamespaced.lean/declarations/hall-cond-of-erase.md) | 57 | `result-track:136f4e7ece087672b5d4dca23d19bf974495f1bd65b81167c54186bc38806655` |
-| 2 | `theorem` | [hall_hard_inductive_step_A](../../../../Combinatorics/HallFiniteNamespaced.lean/declarations/hall-hard-inductive-step-a.md) | 84 | `result-track:8de1aa19ddee399e9302e9229d0ab49514f39ba0cc1277b47ec61882c184655c` |
-| 3 | `theorem` | [hall_cond_of_restrict](../../../../Combinatorics/HallFiniteNamespaced.lean/declarations/hall-cond-of-restrict.md) | 130 | `result-track:5beaf4c60208808b292337dd043b26f6403e8829c48ddb63ef09bd6100c99e07` |
-| 4 | `theorem` | [hall_cond_of_compl](../../../../Combinatorics/HallFiniteNamespaced.lean/declarations/hall-cond-of-compl.md) | 140 | `result-track:9ad97bb9dc35d7746c80b39213a8fd07963243181c3ac526258f64bc26ff3543` |
-| 5 | `theorem` | [hall_hard_inductive_step_B](../../../../Combinatorics/HallFiniteNamespaced.lean/declarations/hall-hard-inductive-step-b.md) | 169 | `result-track:4ebcf7b480312147ce4711d26a834bc90896930a9e642c9b7fa4b96836e74419` |
-| 6 | `theorem` | [hall_hard_inductive](../../../../Combinatorics/HallFiniteNamespaced.lean/declarations/hall-hard-inductive.md) | 227 | `result-track:502980844a78e0b11d655c3af4f8a0777f501649e8d8fe7f03717c26988e5783` |
-| 7 | `theorem` | [Finset.all_card_le_biUnion_card_iff_existsInjective'](../../../../Combinatorics/HallFiniteNamespaced.lean/declarations/finset-all-card-le-biunion-card-iff-existsinjective.md) | 257 | `result-track:f0c386cbb0e341658b1f5d6fdbae1610d9282832d1e94b0a729f59c8509f9dc3` |
+| 1 | `theorem` | [hall_cond_of_erase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallFiniteNamespaced.lean/declarations/hall-cond-of-erase.md) | 57 | `result-track:136f4e7ece087672b5d4dca23d19bf974495f1bd65b81167c54186bc38806655` |
+| 2 | `theorem` | [hall_hard_inductive_step_A](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallFiniteNamespaced.lean/declarations/hall-hard-inductive-step-a.md) | 84 | `result-track:8de1aa19ddee399e9302e9229d0ab49514f39ba0cc1277b47ec61882c184655c` |
+| 3 | `theorem` | [hall_cond_of_restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallFiniteNamespaced.lean/declarations/hall-cond-of-restrict.md) | 130 | `result-track:5beaf4c60208808b292337dd043b26f6403e8829c48ddb63ef09bd6100c99e07` |
+| 4 | `theorem` | [hall_cond_of_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallFiniteNamespaced.lean/declarations/hall-cond-of-compl.md) | 140 | `result-track:9ad97bb9dc35d7746c80b39213a8fd07963243181c3ac526258f64bc26ff3543` |
+| 5 | `theorem` | [hall_hard_inductive_step_B](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallFiniteNamespaced.lean/declarations/hall-hard-inductive-step-b.md) | 169 | `result-track:4ebcf7b480312147ce4711d26a834bc90896930a9e642c9b7fa4b96836e74419` |
+| 6 | `theorem` | [hall_hard_inductive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallFiniteNamespaced.lean/declarations/hall-hard-inductive.md) | 227 | `result-track:502980844a78e0b11d655c3af4f8a0777f501649e8d8fe7f03717c26988e5783` |
+| 7 | `theorem` | [Finset.all_card_le_biUnion_card_iff_existsInjective'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HallFiniteNamespaced.lean/declarations/finset-all-card-le-biunion-card-iff-existsinjective.md) | 257 | `result-track:f0c386cbb0e341658b1f5d6fdbae1610d9282832d1e94b0a729f59c8509f9dc3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolventSeparable.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolventSeparable.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolventSeparable.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolventSeparable.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticBaseResolventRoots`](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolventRoots.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticBaseResolventRoots`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolventRoots.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.FieldTheory.Separable` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [baseAdjacencyResolvent_separable](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolventSeparable.lean/declarations/baseadjacencyresolvent-separable.md) | 28 | `result-track:b3b8e82ad5c617576027187912c0353f26496a755658b61dc28bcf71d69f8fdf` |
-| 2 | `theorem` | [baseAdjacencyResolvent_separable_of_quartic](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolventSeparable.lean/declarations/baseadjacencyresolvent-separable-of-quartic.md) | 42 | `result-track:dd7e20fc8508980228c5f724c8363812670354f6a56788762cc5a00e572dc04f` |
+| 1 | `theorem` | [baseAdjacencyResolvent_separable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolventSeparable.lean/declarations/baseadjacencyresolvent-separable.md) | 28 | `result-track:b3b8e82ad5c617576027187912c0353f26496a755658b61dc28bcf71d69f8fdf` |
+| 2 | `theorem` | [baseAdjacencyResolvent_separable_of_quartic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolventSeparable.lean/declarations/baseadjacencyresolvent-separable-of-quartic.md) | 42 | `result-track:dd7e20fc8508980228c5f724c8363812670354f6a56788762cc5a00e572dc04f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

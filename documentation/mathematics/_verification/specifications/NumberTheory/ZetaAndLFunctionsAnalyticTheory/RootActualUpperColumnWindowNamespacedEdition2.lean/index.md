@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowNamespacedEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualUpperColumn_quotient_gap](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowNamespacedEdition2.lean/declarations/actualuppercolumn-quotient-gap.md) | 29 | `result-track:8e8471b8033fe59998ebe525db106d1a0d230b51a9dbb23db943630090911374` |
-| 2 | `theorem` | [actualUpperColumn_time_width_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowNamespacedEdition2.lean/declarations/actualuppercolumn-time-width-le.md) | 47 | `result-track:142fac22e49122714d449a855f55758dbd905dabf441042a34849ce086266cc3` |
-| 3 | `theorem` | [actualCorrelation_jet_zero_right](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowNamespacedEdition2.lean/declarations/actualcorrelation-jet-zero-right.md) | 85 | `result-track:f57110f7545f08df57913fd1fd5aa543255a8e5111e829e21c5548d025c63d47` |
-| 4 | `theorem` | [actualTwistedTimeDensity_upperColumn_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowNamespacedEdition2.lean/declarations/actualtwistedtimedensity-uppercolumn-zero.md) | 105 | `result-track:a5100930e1f3d37c16f630a3b1f59a6f39d0a10d421aebf16dbc614bdedfa311` |
+| 1 | `theorem` | [actualUpperColumn_quotient_gap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowNamespacedEdition2.lean/declarations/actualuppercolumn-quotient-gap.md) | 29 | `result-track:8e8471b8033fe59998ebe525db106d1a0d230b51a9dbb23db943630090911374` |
+| 2 | `theorem` | [actualUpperColumn_time_width_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowNamespacedEdition2.lean/declarations/actualuppercolumn-time-width-le.md) | 47 | `result-track:142fac22e49122714d449a855f55758dbd905dabf441042a34849ce086266cc3` |
+| 3 | `theorem` | [actualCorrelation_jet_zero_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowNamespacedEdition2.lean/declarations/actualcorrelation-jet-zero-right.md) | 85 | `result-track:f57110f7545f08df57913fd1fd5aa543255a8e5111e829e21c5548d025c63d47` |
+| 4 | `theorem` | [actualTwistedTimeDensity_upperColumn_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowNamespacedEdition2.lean/declarations/actualtwistedtimedensity-uppercolumn-zero.md) | 105 | `result-track:a5100930e1f3d37c16f630a3b1f59a6f39d0a10d421aebf16dbc614bdedfa311` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

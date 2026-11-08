@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.SignedOrientationConnections`](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedOrientationConnections.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.SignedOrientationConnections`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedOrientationConnections.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [positive_metric_negative_signed_fixture](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/declarations/positive-metric-negative-signed-fixture.md) | 17 | `result-track:a2db94d42461d85233b2700fa923b81a354f36642511e8ab5f590795b8a61553` |
-| 2 | `theorem` | [hodge_negative_sector_orientation_sign](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/declarations/hodge-negative-sector-orientation-sign.md) | 23 | `result-track:9b53f2e8aae93eab4cc7962d1f9a5e80da0334dedc0878446429daf70d7b0c7b` |
-| 3 | `theorem` | [screw_penalty_orientation_sign](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/declarations/screw-penalty-orientation-sign.md) | 29 | `result-track:4911181cbef7523b998ec08cb4522f32214712df4ef7b0344bf2c54110844128` |
-| 4 | `theorem` | [quartic_probe_orientation_sign](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/declarations/quartic-probe-orientation-sign.md) | 34 | `result-track:fd543c72a588807dd53131c59655d3fd1a8d12362c601db6271f2eb823e118fd` |
-| 5 | `theorem` | [positive_scalar_does_not_flip_fixture](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/declarations/positive-scalar-does-not-flip-fixture.md) | 39 | `result-track:f46fb6d843b4394e0027feba26a8046cd17fab8c676e17598085f60b3ab5fc4c` |
-| 6 | `theorem` | [hodge_standard_profile_is_source_review_required](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/declarations/hodge-standard-profile-is-source-review-required.md) | 47 | `result-track:12be19c0b321f78f900a1e82a87717f3aba146d1db0777a362b0dbd93a319309` |
-| 7 | `theorem` | [quartic_profile_is_local](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/declarations/quartic-profile-is-local.md) | 54 | `result-track:a40d3987c69efa776416a09bcd5de4953ab04eea27adfd29fdb50d3e497c4a19` |
-| 8 | `theorem` | [c3_profile_is_proposed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/declarations/c3-profile-is-proposed.md) | 60 | `result-track:72a77fd4f18b2a218dba3dd0294f2e01f7f0ed825d0e2d7aa6b79833520441e0` |
+| 1 | `theorem` | [positive_metric_negative_signed_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/declarations/positive-metric-negative-signed-fixture.md) | 17 | `result-track:a2db94d42461d85233b2700fa923b81a354f36642511e8ab5f590795b8a61553` |
+| 2 | `theorem` | [hodge_negative_sector_orientation_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/declarations/hodge-negative-sector-orientation-sign.md) | 23 | `result-track:9b53f2e8aae93eab4cc7962d1f9a5e80da0334dedc0878446429daf70d7b0c7b` |
+| 3 | `theorem` | [screw_penalty_orientation_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/declarations/screw-penalty-orientation-sign.md) | 29 | `result-track:4911181cbef7523b998ec08cb4522f32214712df4ef7b0344bf2c54110844128` |
+| 4 | `theorem` | [quartic_probe_orientation_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/declarations/quartic-probe-orientation-sign.md) | 34 | `result-track:fd543c72a588807dd53131c59655d3fd1a8d12362c601db6271f2eb823e118fd` |
+| 5 | `theorem` | [positive_scalar_does_not_flip_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/declarations/positive-scalar-does-not-flip-fixture.md) | 39 | `result-track:f46fb6d843b4394e0027feba26a8046cd17fab8c676e17598085f60b3ab5fc4c` |
+| 6 | `theorem` | [hodge_standard_profile_is_source_review_required](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/declarations/hodge-standard-profile-is-source-review-required.md) | 47 | `result-track:12be19c0b321f78f900a1e82a87717f3aba146d1db0777a362b0dbd93a319309` |
+| 7 | `theorem` | [quartic_profile_is_local](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/declarations/quartic-profile-is-local.md) | 54 | `result-track:a40d3987c69efa776416a09bcd5de4953ab04eea27adfd29fdb50d3e497c4a19` |
+| 8 | `theorem` | [c3_profile_is_proposed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedOrientationConnectionsControls.lean/declarations/c3-profile-is-proposed.md) | 60 | `result-track:72a77fd4f18b2a218dba3dd0294f2e01f7f0ed825d0e2d7aa6b79833520441e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

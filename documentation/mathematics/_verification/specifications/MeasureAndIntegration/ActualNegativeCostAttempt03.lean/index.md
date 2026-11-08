@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualNegativeCostAttempt03.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualNegativeCostAttempt03.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualNegativeCostAttempt03.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualNegativeCostAttempt03.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualNegativeDensity](../../../../MeasureAndIntegration/ActualNegativeCostAttempt03.lean/declarations/actualnegativedensity.md) | 22 | `declaration-track:b598b243fe85a44b81ae0bb5534f3c73038f370078d18eb023b1a82737f7424f` |
-| 2 | `def` | [actualNegativeLimit](../../../../MeasureAndIntegration/ActualNegativeCostAttempt03.lean/declarations/actualnegativelimit.md) | 27 | `declaration-track:714a85f534e9625aa280045c6c58167d572d769df48a187c613a51948c3e61a2` |
-| 3 | `theorem` | [actual_negative_density_nonneg](../../../../MeasureAndIntegration/ActualNegativeCostAttempt03.lean/declarations/actual-negative-density-nonneg.md) | 30 | `result-track:3451bd7053b40ac5e6bec19610afe28d27850d38ac3063fea398ee8d84792a64` |
-| 4 | `theorem` | [actual_negative_density_integrable](../../../../MeasureAndIntegration/ActualNegativeCostAttempt03.lean/declarations/actual-negative-density-integrable.md) | 37 | `result-track:5db08ce31c3f0481d6275c85e5f943fb91920e038c86cd7dab59f19a52aae769` |
-| 5 | `theorem` | [actual_negative_density_integral](../../../../MeasureAndIntegration/ActualNegativeCostAttempt03.lean/declarations/actual-negative-density-integral.md) | 43 | `result-track:fe2a205511f42a96543246c2f760712209b4a36f420e92d55d1e248bdb2f1fbb` |
-| 6 | `theorem` | [actual_negative_density_fixed_tendsto](../../../../MeasureAndIntegration/ActualNegativeCostAttempt03.lean/declarations/actual-negative-density-fixed-tendsto.md) | 48 | `result-track:e6b56d0afff54beca4ccedafa56cb7434892be8ceaa47eb67c53929c94ce70e4` |
-| 7 | `theorem` | [actual_prime_intercept_pos](../../../../MeasureAndIntegration/ActualNegativeCostAttempt03.lean/declarations/actual-prime-intercept-pos.md) | 69 | `result-track:5ca87863ca28dd67c103d174ca898f7af73178856a761762ea97f45e8daa75d0` |
-| 8 | `theorem` | [actual_negative_limit_not_integrable](../../../../MeasureAndIntegration/ActualNegativeCostAttempt03.lean/declarations/actual-negative-limit-not-integrable.md) | 74 | `result-track:ca6295efc54536eeb8261fe15219b5d70439302773bdb64a9f6672d91cf9c3ad` |
-| 9 | `theorem` | [actual_negative_curvature_budget_false](../../../../MeasureAndIntegration/ActualNegativeCostAttempt03.lean/declarations/actual-negative-curvature-budget-false.md) | 95 | `result-track:7d737d81cad59c3f040b3aaa330dcb359fb29d7c5e0f32f5a32463ea4d00add8` |
+| 1 | `def` | [actualNegativeDensity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualNegativeCostAttempt03.lean/declarations/actualnegativedensity.md) | 22 | `declaration-track:b598b243fe85a44b81ae0bb5534f3c73038f370078d18eb023b1a82737f7424f` |
+| 2 | `def` | [actualNegativeLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualNegativeCostAttempt03.lean/declarations/actualnegativelimit.md) | 27 | `declaration-track:714a85f534e9625aa280045c6c58167d572d769df48a187c613a51948c3e61a2` |
+| 3 | `theorem` | [actual_negative_density_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualNegativeCostAttempt03.lean/declarations/actual-negative-density-nonneg.md) | 30 | `result-track:3451bd7053b40ac5e6bec19610afe28d27850d38ac3063fea398ee8d84792a64` |
+| 4 | `theorem` | [actual_negative_density_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualNegativeCostAttempt03.lean/declarations/actual-negative-density-integrable.md) | 37 | `result-track:5db08ce31c3f0481d6275c85e5f943fb91920e038c86cd7dab59f19a52aae769` |
+| 5 | `theorem` | [actual_negative_density_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualNegativeCostAttempt03.lean/declarations/actual-negative-density-integral.md) | 43 | `result-track:fe2a205511f42a96543246c2f760712209b4a36f420e92d55d1e248bdb2f1fbb` |
+| 6 | `theorem` | [actual_negative_density_fixed_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualNegativeCostAttempt03.lean/declarations/actual-negative-density-fixed-tendsto.md) | 48 | `result-track:e6b56d0afff54beca4ccedafa56cb7434892be8ceaa47eb67c53929c94ce70e4` |
+| 7 | `theorem` | [actual_prime_intercept_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualNegativeCostAttempt03.lean/declarations/actual-prime-intercept-pos.md) | 69 | `result-track:5ca87863ca28dd67c103d174ca898f7af73178856a761762ea97f45e8daa75d0` |
+| 8 | `theorem` | [actual_negative_limit_not_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualNegativeCostAttempt03.lean/declarations/actual-negative-limit-not-integrable.md) | 74 | `result-track:ca6295efc54536eeb8261fe15219b5d70439302773bdb64a9f6672d91cf9c3ad` |
+| 9 | `theorem` | [actual_negative_curvature_budget_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualNegativeCostAttempt03.lean/declarations/actual-negative-curvature-budget-false.md) | 95 | `result-track:7d737d81cad59c3f040b3aaa330dcb359fb29d7c5e0f32f5a32463ea4d00add8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

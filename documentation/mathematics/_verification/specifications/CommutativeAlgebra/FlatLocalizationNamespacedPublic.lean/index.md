@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsLocalization.flat](../../../../CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/islocalization-flat.md) | 45 | `result-track:8f9f94de211b2cd496de1946ab670742782e79328e3bc25ae7a2b4b89e989dee` |
-| 2 | `instance` | [Localization.flat](../../../../CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/localization-flat.md) | 53 | `declaration-track:64d892339fd1e6e956d3303e80257f0755b68aeac3d8c24f2157ec2735e85701` |
-| 3 | `theorem` | [flat_iff_of_isLocalization](../../../../CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/flat-iff-of-islocalization.md) | 60 | `result-track:73253c66f42be1c8315ac1bc751836f752d9108ca62ec8990682da795159bb11` |
-| 4 | `theorem` | [flat_of_isLocalized_maximal](../../../../CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/flat-of-islocalized-maximal.md) | 74 | `result-track:1dc14919d6a508ae223926763d20f1654c9685f1a56f039f7e18d8ea1029f50e` |
-| 5 | `theorem` | [flat_of_localized_maximal](../../../../CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/flat-of-localized-maximal.md) | 83 | `result-track:789418e99046857a1a7dcbd3059e6e0f9b59be33072b8f38d0a6277286c2980f` |
-| 6 | `theorem` | [flat_of_isLocalized_span](../../../../CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/flat-of-islocalized-span.md) | 99 | `result-track:49aab4850d86d3504c1fa61f8c641540618ab3a94fa9b617a381045100effb90` |
-| 7 | `theorem` | [flat_of_localized_span](../../../../CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/flat-of-localized-span.md) | 108 | `result-track:6dab3d580f6c26eda7cc89f03da91c36f0af6761fcc5d92801058b5452732432` |
-| 8 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/instance.md) | 117 | `declaration-track:2e4fd894268d976f2a625a392a54e36c5dadbbf947743677512597ef5da8c839` |
-| 9 | `theorem` | [IsSMulRegular.of_isLocalizedModule](../../../../CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/issmulregular-of-islocalizedmodule.md) | 127 | `result-track:9390e1ecb936f2ae48523ff08a9f7034a36ece090b136d11741f023bbe596b7b` |
-| 10 | `theorem` | [IsSMulRegular.of_isLocalization](../../../../CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/issmulregular-of-islocalization.md) | 134 | `result-track:87787ebce06beb2b9eaba06ff503fb343017366b458288f98a4d7654d39e807a` |
+| 1 | `theorem` | [IsLocalization.flat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/islocalization-flat.md) | 45 | `result-track:8f9f94de211b2cd496de1946ab670742782e79328e3bc25ae7a2b4b89e989dee` |
+| 2 | `instance` | [Localization.flat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/localization-flat.md) | 53 | `declaration-track:64d892339fd1e6e956d3303e80257f0755b68aeac3d8c24f2157ec2735e85701` |
+| 3 | `theorem` | [flat_iff_of_isLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/flat-iff-of-islocalization.md) | 60 | `result-track:73253c66f42be1c8315ac1bc751836f752d9108ca62ec8990682da795159bb11` |
+| 4 | `theorem` | [flat_of_isLocalized_maximal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/flat-of-islocalized-maximal.md) | 74 | `result-track:1dc14919d6a508ae223926763d20f1654c9685f1a56f039f7e18d8ea1029f50e` |
+| 5 | `theorem` | [flat_of_localized_maximal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/flat-of-localized-maximal.md) | 83 | `result-track:789418e99046857a1a7dcbd3059e6e0f9b59be33072b8f38d0a6277286c2980f` |
+| 6 | `theorem` | [flat_of_isLocalized_span](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/flat-of-islocalized-span.md) | 99 | `result-track:49aab4850d86d3504c1fa61f8c641540618ab3a94fa9b617a381045100effb90` |
+| 7 | `theorem` | [flat_of_localized_span](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/flat-of-localized-span.md) | 108 | `result-track:6dab3d580f6c26eda7cc89f03da91c36f0af6761fcc5d92801058b5452732432` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/instance.md) | 117 | `declaration-track:2e4fd894268d976f2a625a392a54e36c5dadbbf947743677512597ef5da8c839` |
+| 9 | `theorem` | [IsSMulRegular.of_isLocalizedModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/issmulregular-of-islocalizedmodule.md) | 127 | `result-track:9390e1ecb936f2ae48523ff08a9f7034a36ece090b136d11741f023bbe596b7b` |
+| 10 | `theorem` | [IsSMulRegular.of_isLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FlatLocalizationNamespacedPublic.lean/declarations/issmulregular-of-islocalization.md) | 134 | `result-track:87787ebce06beb2b9eaba06ff503fb343017366b458288f98a4d7654d39e807a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

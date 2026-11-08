@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuarticCubicResidueDescent.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuarticCubicResidueDescent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicResidueDescent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicResidueDescent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticCubicResidueSeparable`](../../../../CommutativeAlgebra/QuarticCubicResidueSeparable.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticCubicResidueSeparable`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicResidueSeparable.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.FieldTheory.Separable` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [reduced_adjacencyCubic_separable_of_extension_splits](../../../../CommutativeAlgebra/QuarticCubicResidueDescent.lean/declarations/reduced-adjacencycubic-separable-of-extension-splits.md) | 31 | `result-track:1d74c6ebf2ac7bb2be8c6a09b80db8c36c13c2ffeb5b1867b0d6ed6511ffa3ed` |
+| 1 | `theorem` | [reduced_adjacencyCubic_separable_of_extension_splits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicResidueDescent.lean/declarations/reduced-adjacencycubic-separable-of-extension-splits.md) | 31 | `result-track:1d74c6ebf2ac7bb2be8c6a09b80db8c36c13c2ffeb5b1867b0d6ed6511ffa3ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

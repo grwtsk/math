@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedEdition1.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Matrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedEdition1.lean/declarations/matrix.md) | 25 | `declaration-track:8d51cc905e549c94b1e0ddd0cde19ef1acfa2104fc4f3028c11dbc65595dbed9` |
-| 2 | `def` | [Matrix.entry](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedEdition1.lean/declarations/matrix-entry.md) | 29 | `declaration-track:2f4d0cb0a384a19d8fcaeb45061cca0f8fe4c3b134457dd0bb0ad1bb1afacdb8` |
-| 3 | `def` | [Matrix.row](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedEdition1.lean/declarations/matrix-row.md) | 37 | `declaration-track:6d7a5ba1bb6ac6c29ab32dbfdcbe643e8dd7d077211388a2ac7765282ca7b095` |
-| 4 | `def` | [Matrix.col](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedEdition1.lean/declarations/matrix-col.md) | 44 | `declaration-track:dbef330f5a406b6bf7a0ba3f01fff82eaa6333542fef27ea99ccc1d6105872c6` |
-| 5 | `theorem` | [Matrix.entry_eq_false_or_true](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedEdition1.lean/declarations/matrix-entry-eq-false-or-true.md) | 51 | `result-track:a0c8615960c88a7118554b2e4744f0af95c6100ee4dd0819d1c8b699df07fb4c` |
+| 1 | `abbrev` | [Matrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedEdition1.lean/declarations/matrix.md) | 25 | `declaration-track:8d51cc905e549c94b1e0ddd0cde19ef1acfa2104fc4f3028c11dbc65595dbed9` |
+| 2 | `def` | [Matrix.entry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedEdition1.lean/declarations/matrix-entry.md) | 29 | `declaration-track:2f4d0cb0a384a19d8fcaeb45061cca0f8fe4c3b134457dd0bb0ad1bb1afacdb8` |
+| 3 | `def` | [Matrix.row](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedEdition1.lean/declarations/matrix-row.md) | 37 | `declaration-track:6d7a5ba1bb6ac6c29ab32dbfdcbe643e8dd7d077211388a2ac7765282ca7b095` |
+| 4 | `def` | [Matrix.col](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedEdition1.lean/declarations/matrix-col.md) | 44 | `declaration-track:dbef330f5a406b6bf7a0ba3f01fff82eaa6333542fef27ea99ccc1d6105872c6` |
+| 5 | `theorem` | [Matrix.entry_eq_false_or_true](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixNamespacedEdition1.lean/declarations/matrix-entry-eq-false-or-true.md) | 51 | `result-track:a0c8615960c88a7118554b2e4744f0af95c6100ee4dd0819d1c8b699df07fb4c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/OfCompactT2Namespaced.lean/index.md) · [Full source](../../../../GeneralTopology/OfCompactT2Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OfCompactT2Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OfCompactT2Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [uniformSpaceOfCompactT2](../../../../GeneralTopology/OfCompactT2Namespaced.lean/declarations/uniformspaceofcompactt2.md) | 45 | `declaration-track:aff98f5ae225e749af3b28cec59640deec0e7eeced2fe43bf5268bdb705c541b` |
+| 1 | `def` | [uniformSpaceOfCompactT2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OfCompactT2Namespaced.lean/declarations/uniformspaceofcompactt2.md) | 45 | `declaration-track:aff98f5ae225e749af3b28cec59640deec0e7eeced2fe43bf5268bdb705c541b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

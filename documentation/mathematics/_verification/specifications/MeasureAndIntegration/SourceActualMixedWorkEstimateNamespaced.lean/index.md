@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualMixedWorkEstimateNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualMixedWorkEstimateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMixedWorkEstimateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMixedWorkEstimateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_mixed_kernel_abs_le](../../../../MeasureAndIntegration/SourceActualMixedWorkEstimateNamespaced.lean/declarations/actual-mixed-kernel-abs-le.md) | 31 | `result-track:115a9b84cd53991dc0b204a8f23bd49616998f74686606e64e463f106b881264` |
-| 2 | `theorem` | [actual_error_mixed_density_abs_le](../../../../MeasureAndIntegration/SourceActualMixedWorkEstimateNamespaced.lean/declarations/actual-error-mixed-density-abs-le.md) | 45 | `result-track:9dbbeda4d81d23d7229b7c7b7d45fdc269bf104ceeaad0c18bf406c34f675627` |
-| 3 | `def` | [actualErrorExpMass](../../../../MeasureAndIntegration/SourceActualMixedWorkEstimateNamespaced.lean/declarations/actualerrorexpmass.md) | 62 | `declaration-track:6bfda035748d536df414201b8b78f964dbfb754eeef11f3af2c64fb16f6b4771` |
-| 4 | `theorem` | [exp_half_antiderivative](../../../../MeasureAndIntegration/SourceActualMixedWorkEstimateNamespaced.lean/declarations/exp-half-antiderivative.md) | 66 | `result-track:4391c372eea27b5350ce683f230fc8c92d1877f0f2a8621988663f695c454634` |
-| 5 | `theorem` | [actualErrorExpMass_le](../../../../MeasureAndIntegration/SourceActualMixedWorkEstimateNamespaced.lean/declarations/actualerrorexpmass-le.md) | 73 | `result-track:e8b13a4383ebd0b78bb977b61c989d5c8c88a925fff44faa701697caa2eadcaa` |
+| 1 | `theorem` | [actual_mixed_kernel_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMixedWorkEstimateNamespaced.lean/declarations/actual-mixed-kernel-abs-le.md) | 31 | `result-track:115a9b84cd53991dc0b204a8f23bd49616998f74686606e64e463f106b881264` |
+| 2 | `theorem` | [actual_error_mixed_density_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMixedWorkEstimateNamespaced.lean/declarations/actual-error-mixed-density-abs-le.md) | 45 | `result-track:9dbbeda4d81d23d7229b7c7b7d45fdc269bf104ceeaad0c18bf406c34f675627` |
+| 3 | `def` | [actualErrorExpMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMixedWorkEstimateNamespaced.lean/declarations/actualerrorexpmass.md) | 62 | `declaration-track:6bfda035748d536df414201b8b78f964dbfb754eeef11f3af2c64fb16f6b4771` |
+| 4 | `theorem` | [exp_half_antiderivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMixedWorkEstimateNamespaced.lean/declarations/exp-half-antiderivative.md) | 66 | `result-track:4391c372eea27b5350ce683f230fc8c92d1877f0f2a8621988663f695c454634` |
+| 5 | `theorem` | [actualErrorExpMass_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMixedWorkEstimateNamespaced.lean/declarations/actualerrorexpmass-le.md) | 73 | `result-track:e8b13a4383ebd0b78bb977b61c989d5c8c88a925fff44faa701697caa2eadcaa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

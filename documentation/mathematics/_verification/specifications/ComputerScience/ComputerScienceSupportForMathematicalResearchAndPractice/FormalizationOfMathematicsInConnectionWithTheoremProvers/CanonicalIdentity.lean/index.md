@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CanonicalIdentity.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CanonicalIdentity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CanonicalIdentity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CanonicalIdentity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Identity](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CanonicalIdentity.lean/declarations/identity.md) | 7 | `declaration-track:5cbfc9750d617d9db14a080de841d81369092a6d403a74e74e7a0a05f6873980` |
-| 2 | `structure` | [CarrierIdentity](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CanonicalIdentity.lean/declarations/carrieridentity.md) | 14 | `declaration-track:fe00f95e09e4ab09219a46d16f8a895eda83cb942f4db184f8066222f12448bb` |
-| 3 | `theorem` | [carrier_identity_ext](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CanonicalIdentity.lean/declarations/carrier-identity-ext.md) | 19 | `result-track:7429fa1482b396406d1ff17c5cf0e89928d606cfbd724670ce93ca1dc76df603` |
+| 1 | `structure` | [Identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CanonicalIdentity.lean/declarations/identity.md) | 7 | `declaration-track:5cbfc9750d617d9db14a080de841d81369092a6d403a74e74e7a0a05f6873980` |
+| 2 | `structure` | [CarrierIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CanonicalIdentity.lean/declarations/carrieridentity.md) | 14 | `declaration-track:fe00f95e09e4ab09219a46d16f8a895eda83cb942f4db184f8066222f12448bb` |
+| 3 | `theorem` | [carrier_identity_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CanonicalIdentity.lean/declarations/carrier-identity-ext.md) | 19 | `result-track:7429fa1482b396406d1ff17c5cf0e89928d606cfbd724670ce93ca1dc76df603` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

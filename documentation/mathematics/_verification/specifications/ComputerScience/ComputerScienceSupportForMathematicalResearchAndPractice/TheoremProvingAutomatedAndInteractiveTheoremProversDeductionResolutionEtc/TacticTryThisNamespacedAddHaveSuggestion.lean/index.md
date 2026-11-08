@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticTryThisNamespacedAddHaveSuggestion.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticTryThisNamespacedAddHaveSuggestion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticTryThisNamespacedAddHaveSuggestion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticTryThisNamespacedAddHaveSuggestion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [addHaveSuggestion](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticTryThisNamespacedAddHaveSuggestion.lean/declarations/addhavesuggestion.md) | 26 | `declaration-track:6c5e817247987348aba1250813b29166bddffee5089b8f0e98c6c7c9371f20ff` |
-| 2 | `def` | [addRewriteSuggestion](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticTryThisNamespacedAddHaveSuggestion.lean/declarations/addrewritesuggestion.md) | 47 | `declaration-track:2979f1fc5117c63dbd3557e8f4cb23b7d78d0fa0480b4b4fad9d58f601adcd06` |
+| 1 | `def` | [addHaveSuggestion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticTryThisNamespacedAddHaveSuggestion.lean/declarations/addhavesuggestion.md) | 26 | `declaration-track:6c5e817247987348aba1250813b29166bddffee5089b8f0e98c6c7c9371f20ff` |
+| 2 | `def` | [addRewriteSuggestion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticTryThisNamespacedAddHaveSuggestion.lean/declarations/addrewritesuggestion.md) | 47 | `declaration-track:2979f1fc5117c63dbd3557e8f4cb23b7d78d0fa0480b4b4fad9d58f601adcd06` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/HahnSeriesValuationNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/HahnSeriesValuationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HahnSeriesValuationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HahnSeriesValuationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [addVal](../../../../CommutativeAlgebra/HahnSeriesValuationNamespaced.lean/declarations/addval.md) | 47 | `declaration-track:bf60665a48a023c1423b6ceb2766093cfe5886505ac8a06743e6620d1541f7b9` |
-| 2 | `theorem` | [addVal_apply](../../../../CommutativeAlgebra/HahnSeriesValuationNamespaced.lean/declarations/addval-apply.md) | 58 | `result-track:fe7b96c9b8a51518d196edbd6c9c6acde43abf519f2b83cf35508d28ebf99e34` |
-| 3 | `theorem` | [addVal_apply_of_ne](../../../../CommutativeAlgebra/HahnSeriesValuationNamespaced.lean/declarations/addval-apply-of-ne.md) | 63 | `result-track:9ddc29ab040b1901d0e4c35f6e3eb47e8437101a18d9f7ce0f83ab11561c3b20` |
-| 4 | `theorem` | [addVal_le_of_coeff_ne_zero](../../../../CommutativeAlgebra/HahnSeriesValuationNamespaced.lean/declarations/addval-le-of-coeff-ne-zero.md) | 66 | `result-track:618e98ed2b905b324a1851aa059783d9fd0dca52787e82c4a28f7b67a9b3e0bd` |
+| 1 | `def` | [addVal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HahnSeriesValuationNamespaced.lean/declarations/addval.md) | 47 | `declaration-track:bf60665a48a023c1423b6ceb2766093cfe5886505ac8a06743e6620d1541f7b9` |
+| 2 | `theorem` | [addVal_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HahnSeriesValuationNamespaced.lean/declarations/addval-apply.md) | 58 | `result-track:fe7b96c9b8a51518d196edbd6c9c6acde43abf519f2b83cf35508d28ebf99e34` |
+| 3 | `theorem` | [addVal_apply_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HahnSeriesValuationNamespaced.lean/declarations/addval-apply-of-ne.md) | 63 | `result-track:9ddc29ab040b1901d0e4c35f6e3eb47e8437101a18d9f7ce0f83ab11561c3b20` |
+| 4 | `theorem` | [addVal_le_of_coeff_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HahnSeriesValuationNamespaced.lean/declarations/addval-le-of-coeff-ne-zero.md) | 66 | `result-track:618e98ed2b905b324a1851aa059783d9fd0dca52787e82c4a28f7b67a9b3e0bd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

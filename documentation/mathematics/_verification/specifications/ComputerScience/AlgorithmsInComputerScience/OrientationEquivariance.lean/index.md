@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/OrientationEquivariance.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/OrientationEquivariance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrientationEquivariance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrientationEquivariance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [LocalOrientation](../../../../../ComputerScience/AlgorithmsInComputerScience/OrientationEquivariance.lean/declarations/localorientation.md) | 12 | `declaration-track:8e22bc27bebd951acb5681c17c667e8360915d2c94a915894a6409ea627d548a` |
-| 2 | `def` | [orientBit](../../../../../ComputerScience/AlgorithmsInComputerScience/OrientationEquivariance.lean/declarations/orientbit.md) | 17 | `declaration-track:30d6ac105a6e67d9fb2f6c982c3a4a97bbe43ae4bc4952e882730a7cafae413e` |
-| 3 | `def` | [orientPath](../../../../../ComputerScience/AlgorithmsInComputerScience/OrientationEquivariance.lean/declarations/orientpath.md) | 21 | `declaration-track:8b3bf546455e66bc5405f5f8ea6004bb8fb2516992b25b3bfbfcfd280ff040b0` |
-| 4 | `theorem` | [zeroThenOne_preserves_bit](../../../../../ComputerScience/AlgorithmsInComputerScience/OrientationEquivariance.lean/declarations/zerothenone-preserves-bit.md) | 26 | `result-track:1e33ce62b473ff12f680618de5f56611ae1ee75cc6bf32d8d2f764d8a79ef93f` |
-| 5 | `theorem` | [oneThenZero_is_involutive](../../../../../ComputerScience/AlgorithmsInComputerScience/OrientationEquivariance.lean/declarations/onethenzero-is-involutive.md) | 31 | `result-track:d97bf0f96e6c8aec4f7bf150a4a2bb0dfff147e4ab8d60d00d20ff9b7403dd9a` |
+| 1 | `inductive` | [LocalOrientation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrientationEquivariance.lean/declarations/localorientation.md) | 12 | `declaration-track:8e22bc27bebd951acb5681c17c667e8360915d2c94a915894a6409ea627d548a` |
+| 2 | `def` | [orientBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrientationEquivariance.lean/declarations/orientbit.md) | 17 | `declaration-track:30d6ac105a6e67d9fb2f6c982c3a4a97bbe43ae4bc4952e882730a7cafae413e` |
+| 3 | `def` | [orientPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrientationEquivariance.lean/declarations/orientpath.md) | 21 | `declaration-track:8b3bf546455e66bc5405f5f8ea6004bb8fb2516992b25b3bfbfcfd280ff040b0` |
+| 4 | `theorem` | [zeroThenOne_preserves_bit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrientationEquivariance.lean/declarations/zerothenone-preserves-bit.md) | 26 | `result-track:1e33ce62b473ff12f680618de5f56611ae1ee75cc6bf32d8d2f764d8a79ef93f` |
+| 5 | `theorem` | [oneThenZero_is_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrientationEquivariance.lean/declarations/onethenzero-is-involutive.md) | 31 | `result-track:d97bf0f96e6c8aec4f7bf150a4a2bb0dfff147e4ab8d60d00d20ff9b7403dd9a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

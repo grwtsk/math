@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BudgetNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BudgetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BudgetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BudgetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GraphAccessBudget](../../../../../ComputerScience/AlgorithmsInComputerScience/BudgetNamespaced.lean/declarations/graphaccessbudget.md) | 18 | `declaration-track:0a8fd1d41f1503f419c3eec7b6b261ea10daef6012df2079dc9da98f4d2d9017` |
-| 2 | `structure` | [ResidualFrontier](../../../../../ComputerScience/AlgorithmsInComputerScience/BudgetNamespaced.lean/declarations/residualfrontier.md) | 28 | `declaration-track:0b0a21be881e6bb1f9ee12194ccb36a5bd23d820e8a4b40c3e47c917b4fba96b` |
-| 3 | `inductive` | [BudgetedResult](../../../../../ComputerScience/AlgorithmsInComputerScience/BudgetNamespaced.lean/declarations/budgetedresult.md) | 34 | `declaration-track:6b568db6b462072f3a408c2911ddbb8e05bf496c360fa086c60487a3fb4b2b2c` |
-| 4 | `theorem` | [resource_exhaustion_preserves_residual](../../../../../ComputerScience/AlgorithmsInComputerScience/BudgetNamespaced.lean/declarations/resource-exhaustion-preserves-residual.md) | 38 | `result-track:10d082aad163ff49b916527e576c8234eb3f04eb6f3929dacf3f1a588045fcfd` |
+| 1 | `structure` | [GraphAccessBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BudgetNamespaced.lean/declarations/graphaccessbudget.md) | 18 | `declaration-track:0a8fd1d41f1503f419c3eec7b6b261ea10daef6012df2079dc9da98f4d2d9017` |
+| 2 | `structure` | [ResidualFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BudgetNamespaced.lean/declarations/residualfrontier.md) | 28 | `declaration-track:0b0a21be881e6bb1f9ee12194ccb36a5bd23d820e8a4b40c3e47c917b4fba96b` |
+| 3 | `inductive` | [BudgetedResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BudgetNamespaced.lean/declarations/budgetedresult.md) | 34 | `declaration-track:6b568db6b462072f3a408c2911ddbb8e05bf496c360fa086c60487a3fb4b2b2c` |
+| 4 | `theorem` | [resource_exhaustion_preserves_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BudgetNamespaced.lean/declarations/resource-exhaustion-preserves-residual.md) | 38 | `result-track:10d082aad163ff49b916527e576c8234eb3f04eb6f3929dacf3f1a588045fcfd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

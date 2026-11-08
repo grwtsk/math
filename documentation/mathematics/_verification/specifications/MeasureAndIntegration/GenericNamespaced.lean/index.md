@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/GenericNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/GenericNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GenericNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GenericNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [logDeriv_partial_fraction_two_line](../../../../MeasureAndIntegration/GenericNamespaced.lean/declarations/logderiv-partial-fraction-two-line.md) | 49 | `result-track:eaa295d14068cba21ddc729c93080eb90513f1f400d0d2d9c8712f0a32ae9fe4` |
-| 2 | `theorem` | [horizontal_bound_two_line](../../../../MeasureAndIntegration/GenericNamespaced.lean/declarations/horizontal-bound-two-line.md) | 156 | `result-track:440dbc817024cf096d4416fae97674223d1b3125f4a3bc4d4f2054974dae8e5a` |
-| 3 | `theorem` | [half_count_large_two_line](../../../../MeasureAndIntegration/GenericNamespaced.lean/declarations/half-count-large-two-line.md) | 283 | `result-track:ba295956321e09598929c4aea0fdc26df8570938902c3949c5bc4bfb9ac29c66` |
-| 4 | `theorem` | [local_count_two_line](../../../../MeasureAndIntegration/GenericNamespaced.lean/declarations/local-count-two-line.md) | 337 | `result-track:52f05999ac850db9be82194d56db302b319b0ead14e5b99ee552660e62d46dd3` |
-| 5 | `theorem` | [good_heights_two_line](../../../../MeasureAndIntegration/GenericNamespaced.lean/declarations/good-heights-two-line.md) | 383 | `result-track:833b0b3902c2bfdb9ac274aa5c979570e00606f04adb19c88072f73542e42f4a` |
+| 1 | `theorem` | [logDeriv_partial_fraction_two_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GenericNamespaced.lean/declarations/logderiv-partial-fraction-two-line.md) | 49 | `result-track:eaa295d14068cba21ddc729c93080eb90513f1f400d0d2d9c8712f0a32ae9fe4` |
+| 2 | `theorem` | [horizontal_bound_two_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GenericNamespaced.lean/declarations/horizontal-bound-two-line.md) | 156 | `result-track:440dbc817024cf096d4416fae97674223d1b3125f4a3bc4d4f2054974dae8e5a` |
+| 3 | `theorem` | [half_count_large_two_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GenericNamespaced.lean/declarations/half-count-large-two-line.md) | 283 | `result-track:ba295956321e09598929c4aea0fdc26df8570938902c3949c5bc4bfb9ac29c66` |
+| 4 | `theorem` | [local_count_two_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GenericNamespaced.lean/declarations/local-count-two-line.md) | 337 | `result-track:52f05999ac850db9be82194d56db302b319b0ead14e5b99ee552660e62d46dd3` |
+| 5 | `theorem` | [good_heights_two_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GenericNamespaced.lean/declarations/good-heights-two-line.md) | 383 | `result-track:833b0b3902c2bfdb9ac274aa5c979570e00606f04adb19c88072f73542e42f4a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

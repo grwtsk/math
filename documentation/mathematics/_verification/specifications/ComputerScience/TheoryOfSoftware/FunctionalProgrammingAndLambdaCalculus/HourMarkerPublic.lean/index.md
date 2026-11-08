@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [HourMarker](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/declarations/hourmarker.md) | 23 | `declaration-track:51c6a8349496519eb39bc5ab956fe98c5db68da58625651d43208419182c78d4` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/declarations/instance-source-edition-2.md) | 36 | `declaration-track:70fee3a778dd65ea3548f933d79d1755e8c4d75828a66ac7b7d8459a39d882fb` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/declarations/instance-source-edition-4.md) | 43 | `declaration-track:a8a727a3dad0b82d65866bc19c6cef2186a8ee552341d1c0aa89e28dcbdda6d6` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/declarations/instance.md) | 46 | `declaration-track:1365e4a2f4497c95b07523693c33d7972f83d09e5d81406701d3c29660292ced` |
-| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/declarations/instance-source-edition-3.md) | 49 | `declaration-track:9a3fa4e670ba72f4b71363e2840543a9ce98da43c4bd31afe8c014272378cab3` |
-| 6 | `def` | [ofOrdinal](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/declarations/ofordinal.md) | 57 | `declaration-track:e0b0655644d833100f344fbfd6ce036c6e30e43220a707af1c98d688810dfb73` |
-| 7 | `def` | [toAbsolute](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/declarations/toabsolute.md) | 66 | `declaration-track:659f661275d3bb01e4a6a479966f41f6efa664bc51ae36b29f223bb195bb0005` |
-| 8 | `def` | [toRelative](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/declarations/torelative.md) | 74 | `declaration-track:e8c0ed93794b2304e21236aa2bfe34be785d5ffc1d35a2c0598cec8cdc4ba477` |
+| 1 | `inductive` | [HourMarker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/declarations/hourmarker.md) | 23 | `declaration-track:51c6a8349496519eb39bc5ab956fe98c5db68da58625651d43208419182c78d4` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/declarations/instance-source-edition-2.md) | 36 | `declaration-track:70fee3a778dd65ea3548f933d79d1755e8c4d75828a66ac7b7d8459a39d882fb` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/declarations/instance-source-edition-4.md) | 43 | `declaration-track:a8a727a3dad0b82d65866bc19c6cef2186a8ee552341d1c0aa89e28dcbdda6d6` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/declarations/instance.md) | 46 | `declaration-track:1365e4a2f4497c95b07523693c33d7972f83d09e5d81406701d3c29660292ced` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/declarations/instance-source-edition-3.md) | 49 | `declaration-track:9a3fa4e670ba72f4b71363e2840543a9ce98da43c4bd31afe8c014272378cab3` |
+| 6 | `def` | [ofOrdinal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/declarations/ofordinal.md) | 57 | `declaration-track:e0b0655644d833100f344fbfd6ce036c6e30e43220a707af1c98d688810dfb73` |
+| 7 | `def` | [toAbsolute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/declarations/toabsolute.md) | 66 | `declaration-track:659f661275d3bb01e4a6a479966f41f6efa664bc51ae36b29f223bb195bb0005` |
+| 8 | `def` | [toRelative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HourMarkerPublic.lean/declarations/torelative.md) | 74 | `declaration-track:e8c0ed93794b2304e21236aa2bfe34be785d5ffc1d35a2c0598cec8cdc4ba477` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

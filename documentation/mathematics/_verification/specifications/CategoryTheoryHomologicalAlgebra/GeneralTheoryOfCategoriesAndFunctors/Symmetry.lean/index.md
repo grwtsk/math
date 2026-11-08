@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [symmEquivFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/declarations/symmequivfunctor.md) | 36 | `declaration-track:87b6739c2674bd5c41206bba75378731d5006174d9d2c29ed117fad0a28e492e` |
-| 2 | `def` | [symmEquivInverse](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/declarations/symmequivinverse.md) | 43 | `declaration-track:224a68193ab9e819aa2f61aa72b5c74116dc6a5e5dc2ebc1cdf65b312566cc13` |
-| 3 | `def` | [symmEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/declarations/symmequiv.md) | 53 | `declaration-track:87a058c3f028786b3988736e7920477ad4988ffb6f21186e69866c0a49583f50` |
-| 4 | `def` | [inverseFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/declarations/inversefunctor.md) | 68 | `declaration-track:82169c29f18fb86cd42bb595f4a52fc8700cb065ffe601b7175f0fd04eb5203d` |
-| 5 | `def` | [inverseFunctorObjIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/declarations/inversefunctorobjiso.md) | 75 | `declaration-track:ce029fe67db5f19d98a685344042045ddf5f4f5a6df96014f38ff27b13c7537b` |
-| 6 | `lemma` | [inverseFunctorMapIso_symm_eq_isoInverseOfIsoFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/declarations/inversefunctormapiso-symm-eq-isoinverseofisofunctor.md) | 81 | `result-track:e97d863c01605b21aeaf13c6c002a147b83f635cb35135eb5e999f3f27f16959` |
-| 7 | `def` | [inverseFunctorObj'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/declarations/inversefunctorobj.md) | 88 | `declaration-track:0a825e0f10d0054c3b25fb31b8097f144941dccad36f2bf7e901e0160147ce1a` |
-| 8 | `def` | [congrLeftFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/declarations/congrleftfunctor.md) | 95 | `declaration-track:058c57e311cbd35aabd09463f4a6fce70d9c199597d2fb3ed9feff328a1015d1` |
+| 1 | `def` | [symmEquivFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/declarations/symmequivfunctor.md) | 36 | `declaration-track:87b6739c2674bd5c41206bba75378731d5006174d9d2c29ed117fad0a28e492e` |
+| 2 | `def` | [symmEquivInverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/declarations/symmequivinverse.md) | 43 | `declaration-track:224a68193ab9e819aa2f61aa72b5c74116dc6a5e5dc2ebc1cdf65b312566cc13` |
+| 3 | `def` | [symmEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/declarations/symmequiv.md) | 53 | `declaration-track:87a058c3f028786b3988736e7920477ad4988ffb6f21186e69866c0a49583f50` |
+| 4 | `def` | [inverseFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/declarations/inversefunctor.md) | 68 | `declaration-track:82169c29f18fb86cd42bb595f4a52fc8700cb065ffe601b7175f0fd04eb5203d` |
+| 5 | `def` | [inverseFunctorObjIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/declarations/inversefunctorobjiso.md) | 75 | `declaration-track:ce029fe67db5f19d98a685344042045ddf5f4f5a6df96014f38ff27b13c7537b` |
+| 6 | `lemma` | [inverseFunctorMapIso_symm_eq_isoInverseOfIsoFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/declarations/inversefunctormapiso-symm-eq-isoinverseofisofunctor.md) | 81 | `result-track:e97d863c01605b21aeaf13c6c002a147b83f635cb35135eb5e999f3f27f16959` |
+| 7 | `def` | [inverseFunctorObj'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/declarations/inversefunctorobj.md) | 88 | `declaration-track:0a825e0f10d0054c3b25fb31b8097f144941dccad36f2bf7e901e0160147ce1a` |
+| 8 | `def` | [congrLeftFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Symmetry.lean/declarations/congrleftfunctor.md) | 95 | `declaration-track:058c57e311cbd35aabd09463f4a6fce70d9c199597d2fb3ed9feff328a1015d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

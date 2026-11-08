@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/TriangleCycleAndEndpointData.lean/index.md) · [Full source](../../../../Combinatorics/TriangleCycleAndEndpointData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TriangleCycleAndEndpointData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TriangleCycleAndEndpointData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -66,10 +66,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TriangleVertex](../../../../Combinatorics/TriangleCycleAndEndpointData.lean/declarations/trianglevertex.md) | 43 | `declaration-track:6d34f928d6f949a1b61e858920f3f5dba98751571113e1a75dcca9cf4bc4818d` |
-| 2 | `def` | [triangleSuccessor](../../../../Combinatorics/TriangleCycleAndEndpointData.lean/declarations/trianglesuccessor.md) | 50 | `declaration-track:cf01149344c2167d4640cd8e19c1b56ee94c73f326cd3d8efdd607c3819236f8` |
-| 3 | `theorem` | [triangleSuccessor_third_power](../../../../Combinatorics/TriangleCycleAndEndpointData.lean/declarations/trianglesuccessor-third-power.md) | 63 | `result-track:a3c48e18ef37d37dfc46f9a1f34a13d4d8d510964f5c1319876ce9051a5fe241` |
-| 4 | `structure` | [BraidEndpointPresentation](../../../../Combinatorics/TriangleCycleAndEndpointData.lean/declarations/braidendpointpresentation.md) | 68 | `declaration-track:e20a4b312169e75d519a23384eab6e7ad61cf634cc4ee546f0a10c04b01e8af2` |
+| 1 | `inductive` | [TriangleVertex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TriangleCycleAndEndpointData.lean/declarations/trianglevertex.md) | 43 | `declaration-track:6d34f928d6f949a1b61e858920f3f5dba98751571113e1a75dcca9cf4bc4818d` |
+| 2 | `def` | [triangleSuccessor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TriangleCycleAndEndpointData.lean/declarations/trianglesuccessor.md) | 50 | `declaration-track:cf01149344c2167d4640cd8e19c1b56ee94c73f326cd3d8efdd607c3819236f8` |
+| 3 | `theorem` | [triangleSuccessor_third_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TriangleCycleAndEndpointData.lean/declarations/trianglesuccessor-third-power.md) | 63 | `result-track:a3c48e18ef37d37dfc46f9a1f34a13d4d8d510964f5c1319876ce9051a5fe241` |
+| 4 | `structure` | [BraidEndpointPresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TriangleCycleAndEndpointData.lean/declarations/braidendpointpresentation.md) | 68 | `declaration-track:e20a4b312169e75d519a23384eab6e7ad61cf634cc4ee546f0a10c04b01e8af2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

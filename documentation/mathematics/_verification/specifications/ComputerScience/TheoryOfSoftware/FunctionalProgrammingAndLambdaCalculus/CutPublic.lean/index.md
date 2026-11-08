@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CutPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CutPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CutPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CutPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsCut](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CutPublic.lean/declarations/iscut.md) | 20 | `declaration-track:eabc9af0934f2350bd1ab118441552be6445262da46e88d60e032ee9334a4a39` |
-| 2 | `class` | [IsStrictCut](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CutPublic.lean/declarations/isstrictcut.md) | 24 | `declaration-track:ab34240fdbd2062bff2105f74f2117f1518415895341fe7e5083583aae30dc29` |
-| 3 | `theorem` | [IsStrictCut.gt_of_isGE_of_gt](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CutPublic.lean/declarations/isstrictcut-gt-of-isge-of-gt.md) | 29 | `result-track:fafd7d61cdd9746c5ae423476b10076de428f016ad6e28a31c2ce3e0e29c4c67` |
-| 4 | `theorem` | [IsStrictCut.lt_of_isLE_of_lt](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CutPublic.lean/declarations/isstrictcut-lt-of-isle-of-lt.md) | 36 | `result-track:2b5713fb2dc7e1aabf54caff58553e5f9adaf95e1a1fb09e7c62cbc117159df7` |
-| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CutPublic.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:f12c923557657b58379a5a4d19f38c193221d30a5915b22b18d9b42be3505806` |
-| 6 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CutPublic.lean/declarations/instance-source-edition-3.md) | 49 | `declaration-track:fb4066deaae64cef012477c459eb164e872c5faf6fc6c28593e721aac69077b6` |
-| 7 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CutPublic.lean/declarations/instance.md) | 54 | `declaration-track:d391435ceff0d44719b1a4e62d7539f24ffb2912ee4158eee5054c84c7bb99c3` |
+| 1 | `class` | [IsCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CutPublic.lean/declarations/iscut.md) | 20 | `declaration-track:eabc9af0934f2350bd1ab118441552be6445262da46e88d60e032ee9334a4a39` |
+| 2 | `class` | [IsStrictCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CutPublic.lean/declarations/isstrictcut.md) | 24 | `declaration-track:ab34240fdbd2062bff2105f74f2117f1518415895341fe7e5083583aae30dc29` |
+| 3 | `theorem` | [IsStrictCut.gt_of_isGE_of_gt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CutPublic.lean/declarations/isstrictcut-gt-of-isge-of-gt.md) | 29 | `result-track:fafd7d61cdd9746c5ae423476b10076de428f016ad6e28a31c2ce3e0e29c4c67` |
+| 4 | `theorem` | [IsStrictCut.lt_of_isLE_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CutPublic.lean/declarations/isstrictcut-lt-of-isle-of-lt.md) | 36 | `result-track:2b5713fb2dc7e1aabf54caff58553e5f9adaf95e1a1fb09e7c62cbc117159df7` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CutPublic.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:f12c923557657b58379a5a4d19f38c193221d30a5915b22b18d9b42be3505806` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CutPublic.lean/declarations/instance-source-edition-3.md) | 49 | `declaration-track:fb4066deaae64cef012477c459eb164e872c5faf6fc6c28593e721aac69077b6` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CutPublic.lean/declarations/instance.md) | 54 | `declaration-track:d391435ceff0d44719b1a4e62d7539f24ffb2912ee4158eee5054c84c7bb99c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

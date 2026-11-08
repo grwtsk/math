@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/AbsMaxNamespacedPublicNormLeOfMemBallOfForallSphereNormLe.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/AbsMaxNamespacedPublicNormLeOfMemBallOfForallSphereNormLe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AbsMaxNamespacedPublicNormLeOfMemBallOfForallSphereNormLe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AbsMaxNamespacedPublicNormLeOfMemBallOfForallSphereNormLe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [norm_le_of_mem_ball_of_forall_sphere_norm_le](../../../../FunctionsOfAComplexVariable/AbsMaxNamespacedPublicNormLeOfMemBallOfForallSphereNormLe.lean/declarations/norm-le-of-mem-ball-of-forall-sphere-norm-le.md) | 28 | `result-track:a2d0027778ddc4b8ba5270e82fa5ac487148ea144d9c386614252eaafeab2185` |
+| 1 | `theorem` | [norm_le_of_mem_ball_of_forall_sphere_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AbsMaxNamespacedPublicNormLeOfMemBallOfForallSphereNormLe.lean/declarations/norm-le-of-mem-ball-of-forall-sphere-norm-le.md) | 28 | `result-track:a2d0027778ddc4b8ba5270e82fa5ac487148ea144d9c386614252eaafeab2185` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

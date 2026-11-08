@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LocalPropertiesProjective.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LocalPropertiesProjective.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesProjective.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesProjective.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,13 +61,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Module.free_of_isLocalizedModule](../../../../CommutativeAlgebra/LocalPropertiesProjective.lean/declarations/module-free-of-islocalizedmodule.md) | 33 | `result-track:f6bfc5f4edf99e5b86c020fde28bf2ccb7863acdc498bd596949ba2c33d57105` |
-| 2 | `theorem` | [Module.lift_rank_of_isLocalizedModule_of_free](../../../../CommutativeAlgebra/LocalPropertiesProjective.lean/declarations/module-lift-rank-of-islocalizedmodule-of-free.md) | 44 | `result-track:99d587821a643460029756b40580965a50af32b1364c60b39cc460528236778c` |
-| 3 | `theorem` | [Module.finrank_of_isLocalizedModule_of_free](../../../../CommutativeAlgebra/LocalPropertiesProjective.lean/declarations/module-finrank-of-islocalizedmodule-of-free.md) | 58 | `result-track:28c762eb8fb8c10b90659995866df63c18ffc57c3c462c043fb2cb85ab567e1a` |
-| 4 | `theorem` | [Module.projective_of_isLocalizedModule](../../../../CommutativeAlgebra/LocalPropertiesProjective.lean/declarations/module-projective-of-islocalizedmodule.md) | 66 | `result-track:a639209b62f68fe942062fcaf2e6d6bc9fca153a261fcdcb75d6927ae4eb7634` |
-| 5 | `theorem` | [LinearMap.split_surjective_of_localization_maximal](../../../../CommutativeAlgebra/LocalPropertiesProjective.lean/declarations/linearmap-split-surjective-of-localization-maximal.md) | 72 | `result-track:f4da801d0ced0da3bcedf0167a2f6e8f5588ef451c8597307ca8bb3e11952038` |
-| 6 | `theorem` | [Module.projective_of_localization_maximal](../../../../CommutativeAlgebra/LocalPropertiesProjective.lean/declarations/module-projective-of-localization-maximal-source-edition-2.md) | 120 | `result-track:b2d614b75a7ba3d471419acb7ac3c2d9fe6bed283fd69d4e9c8c3b8b000fba4b` |
-| 7 | `theorem` | [Module.projective_of_localization_maximal'](../../../../CommutativeAlgebra/LocalPropertiesProjective.lean/declarations/module-projective-of-localization-maximal.md) | 157 | `result-track:b28ac479837811fd65d591c9d7696e57d7df002049aea98927812f480d599918` |
+| 1 | `theorem` | [Module.free_of_isLocalizedModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesProjective.lean/declarations/module-free-of-islocalizedmodule.md) | 33 | `result-track:f6bfc5f4edf99e5b86c020fde28bf2ccb7863acdc498bd596949ba2c33d57105` |
+| 2 | `theorem` | [Module.lift_rank_of_isLocalizedModule_of_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesProjective.lean/declarations/module-lift-rank-of-islocalizedmodule-of-free.md) | 44 | `result-track:99d587821a643460029756b40580965a50af32b1364c60b39cc460528236778c` |
+| 3 | `theorem` | [Module.finrank_of_isLocalizedModule_of_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesProjective.lean/declarations/module-finrank-of-islocalizedmodule-of-free.md) | 58 | `result-track:28c762eb8fb8c10b90659995866df63c18ffc57c3c462c043fb2cb85ab567e1a` |
+| 4 | `theorem` | [Module.projective_of_isLocalizedModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesProjective.lean/declarations/module-projective-of-islocalizedmodule.md) | 66 | `result-track:a639209b62f68fe942062fcaf2e6d6bc9fca153a261fcdcb75d6927ae4eb7634` |
+| 5 | `theorem` | [LinearMap.split_surjective_of_localization_maximal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesProjective.lean/declarations/linearmap-split-surjective-of-localization-maximal.md) | 72 | `result-track:f4da801d0ced0da3bcedf0167a2f6e8f5588ef451c8597307ca8bb3e11952038` |
+| 6 | `theorem` | [Module.projective_of_localization_maximal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesProjective.lean/declarations/module-projective-of-localization-maximal-source-edition-2.md) | 120 | `result-track:b2d614b75a7ba3d471419acb7ac3c2d9fe6bed283fd69d4e9c8c3b8b000fba4b` |
+| 7 | `theorem` | [Module.projective_of_localization_maximal'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesProjective.lean/declarations/module-projective-of-localization-maximal.md) | 157 | `result-track:b28ac479837811fd65d591c9d7696e57d7df002049aea98927812f480d599918` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

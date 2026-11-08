@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/SignedRationalRoundingExamples.lean/index.md) · [Full source](../../../../NumberTheory/SignedRationalRoundingExamples.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SignedRationalRoundingExamples.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SignedRationalRoundingExamples.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,12 +62,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../NumberTheory/SignedRationalRoundingExamples.lean/declarations/example-source-edition-4.md) | 35 | `declaration-track:62629259b961258e9faee0931f8a6c510040a64a7208a5f665dc50dd44fbdaaf` |
-| 2 | `example` | [(anonymous)](../../../../NumberTheory/SignedRationalRoundingExamples.lean/declarations/example.md) | 39 | `declaration-track:0417bbbc5376e4e8bc35250b6703ffebae4d1c1ba12a1d99fcbf35769a7e0601` |
-| 3 | `example` | [(anonymous)](../../../../NumberTheory/SignedRationalRoundingExamples.lean/declarations/example-source-edition-6.md) | 43 | `declaration-track:c025d6146f3457d99d7bed5c9261735966712e725630e0199348c82e0b4a1e93` |
-| 4 | `example` | [(anonymous)](../../../../NumberTheory/SignedRationalRoundingExamples.lean/declarations/example-source-edition-2.md) | 55 | `declaration-track:1f427438525fb371dec18c7a70f9dfd5247014ba373ecdbb6acff99010d31659` |
-| 5 | `example` | [(anonymous)](../../../../NumberTheory/SignedRationalRoundingExamples.lean/declarations/example-source-edition-3.md) | 66 | `declaration-track:2095ac9b65562e91144709a1da388b93902cb1bcb0a200735abd0b1f7f7ad8b8` |
-| 6 | `example` | [(anonymous)](../../../../NumberTheory/SignedRationalRoundingExamples.lean/declarations/example-source-edition-5.md) | 70 | `declaration-track:9edbd27e6204bd924cf808f0ee62a71fbed9efeebf68893abada2a478523e217` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SignedRationalRoundingExamples.lean/declarations/example-source-edition-4.md) | 35 | `declaration-track:62629259b961258e9faee0931f8a6c510040a64a7208a5f665dc50dd44fbdaaf` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SignedRationalRoundingExamples.lean/declarations/example.md) | 39 | `declaration-track:0417bbbc5376e4e8bc35250b6703ffebae4d1c1ba12a1d99fcbf35769a7e0601` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SignedRationalRoundingExamples.lean/declarations/example-source-edition-6.md) | 43 | `declaration-track:c025d6146f3457d99d7bed5c9261735966712e725630e0199348c82e0b4a1e93` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SignedRationalRoundingExamples.lean/declarations/example-source-edition-2.md) | 55 | `declaration-track:1f427438525fb371dec18c7a70f9dfd5247014ba373ecdbb6acff99010d31659` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SignedRationalRoundingExamples.lean/declarations/example-source-edition-3.md) | 66 | `declaration-track:2095ac9b65562e91144709a1da388b93902cb1bcb0a200735abd0b1f7f7ad8b8` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SignedRationalRoundingExamples.lean/declarations/example-source-edition-5.md) | 70 | `declaration-track:9edbd27e6204bd924cf808f0ee62a71fbed9efeebf68893abada2a478523e217` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

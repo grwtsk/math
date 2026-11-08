@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [ContainsZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/declarations/containszero.md) | 34 | `declaration-track:6fe7e968d8d58c5176d38a218681716022ae265a3a497b37a7b356053476390d` |
-| 2 | `lemma` | [exists_prop_of_containsZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/declarations/exists-prop-of-containszero.md) | 37 | `result-track:d7048608f47bedfecc6435666269d45e7d85dc8d83c130a089224340f5e15e0a` |
-| 3 | `lemma` | [prop_of_isZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/declarations/prop-of-iszero.md) | 41 | `result-track:bfa6c1f9dc6975d88c727e5640e864df24bbd407a5d5e7e7771884b7a5bf3420` |
-| 4 | `lemma` | [prop_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/declarations/prop-zero.md) | 47 | `result-track:989e0deb052e033ac4d1f306cf282961675fdc33464e56a96038eb25e417737c` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/declarations/instance-source-edition-4.md) | 51 | `declaration-track:d89f03798d11109105c7ce6e86db3af8ef014c5aa8ed2794eb51ea2cff046fce` |
-| 6 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/declarations/instance-source-edition-3.md) | 54 | `declaration-track:cddd1030d5b5e2c249aa7d929e52f0a1e94a76178fe7012446d12293aecb549a` |
-| 7 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/declarations/instance-source-edition-2.md) | 57 | `declaration-track:bc8987131636ae5d6d0be74b05d7fae5a96ee9c0d47337ea6fb7fac4cca830d2` |
-| 8 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/declarations/instance.md) | 63 | `declaration-track:5509bbe84dd229c8353af5e656954f08dd29e7db21ba13ca8aaecc5fa8f32893` |
+| 1 | `class` | [ContainsZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/declarations/containszero.md) | 34 | `declaration-track:6fe7e968d8d58c5176d38a218681716022ae265a3a497b37a7b356053476390d` |
+| 2 | `lemma` | [exists_prop_of_containsZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/declarations/exists-prop-of-containszero.md) | 37 | `result-track:d7048608f47bedfecc6435666269d45e7d85dc8d83c130a089224340f5e15e0a` |
+| 3 | `lemma` | [prop_of_isZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/declarations/prop-of-iszero.md) | 41 | `result-track:bfa6c1f9dc6975d88c727e5640e864df24bbd407a5d5e7e7771884b7a5bf3420` |
+| 4 | `lemma` | [prop_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/declarations/prop-zero.md) | 47 | `result-track:989e0deb052e033ac4d1f306cf282961675fdc33464e56a96038eb25e417737c` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/declarations/instance-source-edition-4.md) | 51 | `declaration-track:d89f03798d11109105c7ce6e86db3af8ef014c5aa8ed2794eb51ea2cff046fce` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/declarations/instance-source-edition-3.md) | 54 | `declaration-track:cddd1030d5b5e2c249aa7d929e52f0a1e94a76178fe7012446d12293aecb549a` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/declarations/instance-source-edition-2.md) | 57 | `declaration-track:bc8987131636ae5d6d0be74b05d7fae5a96ee9c0d47337ea6fb7fac4cca830d2` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContainsZero.lean/declarations/instance.md) | 63 | `declaration-track:5509bbe84dd229c8353af5e656954f08dd29e7db21ba13ca8aaecc5fa8f32893` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

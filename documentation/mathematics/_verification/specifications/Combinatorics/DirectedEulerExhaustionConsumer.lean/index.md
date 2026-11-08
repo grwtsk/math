@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DirectedEulerExhaustionConsumer.lean/index.md) · [Full source](../../../../Combinatorics/DirectedEulerExhaustionConsumer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerExhaustionConsumer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerExhaustionConsumer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.DirectedEulerMaximalTrail`](../../../../Combinatorics/DirectedEulerMaximalTrail.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Combinatorics.DirectedEulerMaximalTrail`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerMaximalTrail.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Data.Nat.Find` — import line 4; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Finset.SDiff` — import line 5; external provider; requires a separately pinned dependency.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_exhaustive_closed_trail_of_splice_vertex](../../../../Combinatorics/DirectedEulerExhaustionConsumer.lean/declarations/exists-exhaustive-closed-trail-of-splice-vertex.md) | 33 | `result-track:bf1c7d33121fbaa868713966bd9c9478a68db82a00cf631e01aa443d20a074b8` |
+| 1 | `theorem` | [exists_exhaustive_closed_trail_of_splice_vertex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerExhaustionConsumer.lean/declarations/exists-exhaustive-closed-trail-of-splice-vertex.md) | 33 | `result-track:bf1c7d33121fbaa868713966bd9c9478a68db82a00cf631e01aa443d20a074b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

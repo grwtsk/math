@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/HallPublic.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/HallPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/HallPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/HallPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [hall_subgraph](../../../../../Combinatorics/GraphTheory/HallPublic.lean/declarations/hall-subgraph.md) | 41 | `declaration-track:bd826cd685bf082d9c4149323e7f6024b8a14577ecf95834f1f4574ab300a015` |
-| 2 | `theorem` | [exists_isMatching_of_forall_ncard_le](../../../../../Combinatorics/GraphTheory/HallPublic.lean/declarations/exists-ismatching-of-forall-ncard-le.md) | 60 | `result-track:60e28f905316877ed2430fa8e33ae85cd9664b0368deb866779b39c58993ca74` |
-| 3 | `lemma` | [union_eq_univ_of_forall_ncard_le](../../../../../Combinatorics/GraphTheory/HallPublic.lean/declarations/union-eq-univ-of-forall-ncard-le.md) | 81 | `result-track:826163eddbb7041dceee99374a803401fe622919d10e43a292e1adebe67df57a` |
-| 4 | `lemma` | [exists_bijective_of_forall_ncard_le](../../../../../Combinatorics/GraphTheory/HallPublic.lean/declarations/exists-bijective-of-forall-ncard-le.md) | 92 | `result-track:671fbd87cf3b671d8ff6b62e8dd81e976cc4e7087f50664154a7d9432dfd4dec` |
-| 5 | `theorem` | [exists_isPerfectMatching_of_forall_ncard_le](../../../../../Combinatorics/GraphTheory/HallPublic.lean/declarations/exists-isperfectmatching-of-forall-ncard-le.md) | 116 | `result-track:9d1708349b2cfe4bb107208267aefad5c8b4c162792c97619cb9dd2f8b1b26f3` |
+| 1 | `abbrev` | [hall_subgraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/HallPublic.lean/declarations/hall-subgraph.md) | 41 | `declaration-track:bd826cd685bf082d9c4149323e7f6024b8a14577ecf95834f1f4574ab300a015` |
+| 2 | `theorem` | [exists_isMatching_of_forall_ncard_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/HallPublic.lean/declarations/exists-ismatching-of-forall-ncard-le.md) | 60 | `result-track:60e28f905316877ed2430fa8e33ae85cd9664b0368deb866779b39c58993ca74` |
+| 3 | `lemma` | [union_eq_univ_of_forall_ncard_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/HallPublic.lean/declarations/union-eq-univ-of-forall-ncard-le.md) | 81 | `result-track:826163eddbb7041dceee99374a803401fe622919d10e43a292e1adebe67df57a` |
+| 4 | `lemma` | [exists_bijective_of_forall_ncard_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/HallPublic.lean/declarations/exists-bijective-of-forall-ncard-le.md) | 92 | `result-track:671fbd87cf3b671d8ff6b62e8dd81e976cc4e7087f50664154a7d9432dfd4dec` |
+| 5 | `theorem` | [exists_isPerfectMatching_of_forall_ncard_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/HallPublic.lean/declarations/exists-isperfectmatching-of-forall-ncard-le.md) | 116 | `result-track:9d1708349b2cfe4bb107208267aefad5c8b4c162792c97619cb9dd2f8b1b26f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

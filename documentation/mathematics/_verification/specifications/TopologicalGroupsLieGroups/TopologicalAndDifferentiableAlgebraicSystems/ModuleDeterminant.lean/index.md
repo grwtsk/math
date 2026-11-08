@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleDeterminant.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleDeterminant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleDeterminant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleDeterminant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [det](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleDeterminant.lean/declarations/det.md) | 19 | `declaration-track:83023b6b260727c12cd25a4779bd4f821f05a46a60fe546a408e1ce3ea197396` |
-| 2 | `theorem` | [det_pi](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleDeterminant.lean/declarations/det-pi.md) | 23 | `result-track:c0edfb8a4754443a9a106eac0b1c41a985e3c3f401ed9fb64bda51a9b85b20c7` |
-| 3 | `theorem` | [det_one_smulRight](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleDeterminant.lean/declarations/det-one-smulright.md) | 29 | `result-track:d2b863ce242901ca019d049f1870f9dca5c91d7b3ba3264d0297dc018e25d4d3` |
-| 4 | `theorem` | [det_coe_symm](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleDeterminant.lean/declarations/det-coe-symm.md) | 45 | `result-track:1c9afc070b13b8852b49b360f0d494fb1e5e606c66f8da17bd7d587232df6492` |
+| 1 | `abbrev` | [det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleDeterminant.lean/declarations/det.md) | 19 | `declaration-track:83023b6b260727c12cd25a4779bd4f821f05a46a60fe546a408e1ce3ea197396` |
+| 2 | `theorem` | [det_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleDeterminant.lean/declarations/det-pi.md) | 23 | `result-track:c0edfb8a4754443a9a106eac0b1c41a985e3c3f401ed9fb64bda51a9b85b20c7` |
+| 3 | `theorem` | [det_one_smulRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleDeterminant.lean/declarations/det-one-smulright.md) | 29 | `result-track:d2b863ce242901ca019d049f1870f9dca5c91d7b3ba3264d0297dc018e25d4d3` |
+| 4 | `theorem` | [det_coe_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ModuleDeterminant.lean/declarations/det-coe-symm.md) | 45 | `result-track:1c9afc070b13b8852b49b360f0d494fb1e5e606c66f8da17bd7d587232df6492` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

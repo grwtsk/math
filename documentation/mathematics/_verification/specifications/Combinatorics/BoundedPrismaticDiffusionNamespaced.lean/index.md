@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GlobalReferenceMetricAnchor](../../../../Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/declarations/globalreferencemetricanchor.md) | 41 | `declaration-track:752a4beb50fb0d8bb624681f2a0961cdc393f0f8e2afe712d2e72b9bff997370` |
-| 2 | `structure` | [CompleteLegalityGate](../../../../Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/declarations/completelegalitygate.md) | 54 | `declaration-track:61e1cb4455f18a3d78d69c9710e1937e075b773cfa5e1b469ff7c95710138e5e` |
-| 3 | `theorem` | [admitted_is_completely_legal](../../../../Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/declarations/admitted-is-completely-legal.md) | 104 | `result-track:a5f0203faa13a58544a0c1f5127514e36c911e755cac6a7156310a91ec481994` |
-| 4 | `structure` | [LegalBoundedPrismaticDiffusion](../../../../Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/declarations/legalboundedprismaticdiffusion.md) | 142 | `declaration-track:c1bca0f6fe58992f681c69be8fc4af09b37f9628d82965d82c00de138f1d175a` |
-| 5 | `theorem` | [referenceMetric_eq_globalReference](../../../../Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/declarations/referencemetric-eq-globalreference.md) | 179 | `result-track:28e1b97bbc42ab6b98fe6c7841e2a381d533059103322f1aba264e2a14cdc863` |
-| 6 | `theorem` | [neighbor_has_complete_legality](../../../../Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/declarations/neighbor-has-complete-legality.md) | 187 | `result-track:b5e0f0d4805dd85a296483586d88b6baeec03a17be8a5c0b75b674fccb0c0a13` |
-| 7 | `theorem` | [horizon_add](../../../../Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/declarations/horizon-add.md) | 208 | `result-track:3ad1ea7308b876aa94a1996faba591b610b39e8da8a6b5721b07cfe8b7843734` |
-| 8 | `theorem` | [threshold_is_terminal](../../../../Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/declarations/threshold-is-terminal.md) | 216 | `result-track:70baa9c7ed735df8728024aa918ab441dbfaedafa354281b0491f0d76e18701f` |
+| 1 | `structure` | [GlobalReferenceMetricAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/declarations/globalreferencemetricanchor.md) | 41 | `declaration-track:752a4beb50fb0d8bb624681f2a0961cdc393f0f8e2afe712d2e72b9bff997370` |
+| 2 | `structure` | [CompleteLegalityGate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/declarations/completelegalitygate.md) | 54 | `declaration-track:61e1cb4455f18a3d78d69c9710e1937e075b773cfa5e1b469ff7c95710138e5e` |
+| 3 | `theorem` | [admitted_is_completely_legal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/declarations/admitted-is-completely-legal.md) | 104 | `result-track:a5f0203faa13a58544a0c1f5127514e36c911e755cac6a7156310a91ec481994` |
+| 4 | `structure` | [LegalBoundedPrismaticDiffusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/declarations/legalboundedprismaticdiffusion.md) | 142 | `declaration-track:c1bca0f6fe58992f681c69be8fc4af09b37f9628d82965d82c00de138f1d175a` |
+| 5 | `theorem` | [referenceMetric_eq_globalReference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/declarations/referencemetric-eq-globalreference.md) | 179 | `result-track:28e1b97bbc42ab6b98fe6c7841e2a381d533059103322f1aba264e2a14cdc863` |
+| 6 | `theorem` | [neighbor_has_complete_legality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/declarations/neighbor-has-complete-legality.md) | 187 | `result-track:b5e0f0d4805dd85a296483586d88b6baeec03a17be8a5c0b75b674fccb0c0a13` |
+| 7 | `theorem` | [horizon_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/declarations/horizon-add.md) | 208 | `result-track:3ad1ea7308b876aa94a1996faba591b610b39e8da8a6b5721b07cfe8b7843734` |
+| 8 | `theorem` | [threshold_is_terminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedPrismaticDiffusionNamespaced.lean/declarations/threshold-is-terminal.md) | 216 | `result-track:70baa9c7ed735df8728024aa918ab441dbfaedafa354281b0491f0d76e18701f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/BoundaryCochainNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/BoundaryCochainNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BoundaryCochainNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BoundaryCochainNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [insertList](../../../../ProbabilityTheoryAndStochasticProcesses/BoundaryCochainNamespaced.lean/declarations/insertlist.md) | 23 | `declaration-track:9591eed6fac61caaf530d2b1d1f7160d361db83e3c95a9c828216cff413dd439` |
-| 2 | `def` | [boundaryPathSum](../../../../ProbabilityTheoryAndStochasticProcesses/BoundaryCochainNamespaced.lean/declarations/boundarypathsum.md) | 31 | `declaration-track:4235fc8467842e97ef7ca41e3bcb6aef0b7c3628ab2155e794f55a24b66ab895` |
-| 3 | `theorem` | [increment_square_closed](../../../../ProbabilityTheoryAndStochasticProcesses/BoundaryCochainNamespaced.lean/declarations/increment-square-closed.md) | 44 | `result-track:b098e9ee582c537d0afd6ab29a8c87c56324952537688a999934b5e632cdd3ba` |
-| 4 | `def` | [boundaryCurvature](../../../../ProbabilityTheoryAndStochasticProcesses/BoundaryCochainNamespaced.lean/declarations/boundarycurvature.md) | 60 | `declaration-track:a9773a9cf713ef075b8cb2039c9f33825fa253a456b9835fc29168e1f54d960d` |
-| 5 | `theorem` | [boundaryCurvature_eq_zero](../../../../ProbabilityTheoryAndStochasticProcesses/BoundaryCochainNamespaced.lean/declarations/boundarycurvature-eq-zero.md) | 74 | `result-track:b3c942300c87fc169dca0267b66cd0133d30d8ceeb541d9b8540dfb33730e7c6` |
-| 6 | `theorem` | [boundaryPathSum_telescope](../../../../ProbabilityTheoryAndStochasticProcesses/BoundaryCochainNamespaced.lean/declarations/boundarypathsum-telescope.md) | 89 | `result-track:fef32b2a1887dc0a614d5ddd6efe4ce996789058fd35caf990d61b55d2920281` |
-| 7 | `theorem` | [boundaryPathSum_independent](../../../../ProbabilityTheoryAndStochasticProcesses/BoundaryCochainNamespaced.lean/declarations/boundarypathsum-independent.md) | 109 | `result-track:4f7cfe1b30986628373c66521cb0c351fcf8293b707aa99d33041c1db7d55f4c` |
+| 1 | `def` | [insertList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BoundaryCochainNamespaced.lean/declarations/insertlist.md) | 23 | `declaration-track:9591eed6fac61caaf530d2b1d1f7160d361db83e3c95a9c828216cff413dd439` |
+| 2 | `def` | [boundaryPathSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BoundaryCochainNamespaced.lean/declarations/boundarypathsum.md) | 31 | `declaration-track:4235fc8467842e97ef7ca41e3bcb6aef0b7c3628ab2155e794f55a24b66ab895` |
+| 3 | `theorem` | [increment_square_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BoundaryCochainNamespaced.lean/declarations/increment-square-closed.md) | 44 | `result-track:b098e9ee582c537d0afd6ab29a8c87c56324952537688a999934b5e632cdd3ba` |
+| 4 | `def` | [boundaryCurvature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BoundaryCochainNamespaced.lean/declarations/boundarycurvature.md) | 60 | `declaration-track:a9773a9cf713ef075b8cb2039c9f33825fa253a456b9835fc29168e1f54d960d` |
+| 5 | `theorem` | [boundaryCurvature_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BoundaryCochainNamespaced.lean/declarations/boundarycurvature-eq-zero.md) | 74 | `result-track:b3c942300c87fc169dca0267b66cd0133d30d8ceeb541d9b8540dfb33730e7c6` |
+| 6 | `theorem` | [boundaryPathSum_telescope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BoundaryCochainNamespaced.lean/declarations/boundarypathsum-telescope.md) | 89 | `result-track:fef32b2a1887dc0a614d5ddd6efe4ce996789058fd35caf990d61b55d2920281` |
+| 7 | `theorem` | [boundaryPathSum_independent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BoundaryCochainNamespaced.lean/declarations/boundarypathsum-independent.md) | 109 | `result-track:4f7cfe1b30986628373c66521cb0c351fcf8293b707aa99d33041c1db7d55f4c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

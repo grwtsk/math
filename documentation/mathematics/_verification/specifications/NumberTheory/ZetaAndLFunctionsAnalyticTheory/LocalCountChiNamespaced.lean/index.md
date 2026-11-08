@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChiNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [gfunL](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChiNamespaced.lean/declarations/gfunl.md) | 39 | `declaration-track:5d7e728b5245954aebcd8894d72ec34f14c500c5d040852fef243f66180dc086` |
-| 2 | `lemma` | [gfunL_analyticAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChiNamespaced.lean/declarations/gfunl-analyticat.md) | 41 | `result-track:3b2141a5c1481852014d2b08deab52552c6e691ade8ad3d65a4b2f9cfff24bab` |
-| 3 | `lemma` | [analyticOrderNatAt_gfunL](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChiNamespaced.lean/declarations/analyticordernatat-gfunl.md) | 50 | `result-track:0599fdbc363909d90294702e61bbe7303f8752fde7a86445990fe8c87b041777` |
-| 4 | `theorem` | [localCountChi_uniform_proof](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChiNamespaced.lean/declarations/localcountchi-uniform-proof.md) | 77 | `result-track:0e5b09872091a1d66ed1c72531946031e96e914d76bc4fd76ed14d0cc9f44094` |
-| 5 | `theorem` | [localCountChi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChiNamespaced.lean/declarations/localcountchi.md) | 245 | `result-track:06a786194c3873f4d43fde45ce5cd444a3bb8c641225aa31b7068e0bdf583f0e` |
+| 1 | `def` | [gfunL](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChiNamespaced.lean/declarations/gfunl.md) | 39 | `declaration-track:5d7e728b5245954aebcd8894d72ec34f14c500c5d040852fef243f66180dc086` |
+| 2 | `lemma` | [gfunL_analyticAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChiNamespaced.lean/declarations/gfunl-analyticat.md) | 41 | `result-track:3b2141a5c1481852014d2b08deab52552c6e691ade8ad3d65a4b2f9cfff24bab` |
+| 3 | `lemma` | [analyticOrderNatAt_gfunL](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChiNamespaced.lean/declarations/analyticordernatat-gfunl.md) | 50 | `result-track:0599fdbc363909d90294702e61bbe7303f8752fde7a86445990fe8c87b041777` |
+| 4 | `theorem` | [localCountChi_uniform_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChiNamespaced.lean/declarations/localcountchi-uniform-proof.md) | 77 | `result-track:0e5b09872091a1d66ed1c72531946031e96e914d76bc4fd76ed14d0cc9f44094` |
+| 5 | `theorem` | [localCountChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChiNamespaced.lean/declarations/localcountchi.md) | 245 | `result-track:06a786194c3873f4d43fde45ce5cd444a3bb8c641225aa31b7068e0bdf583f0e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

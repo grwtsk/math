@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEulerExpansionIndex.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEulerExpansionIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEulerExpansionIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEulerExpansionIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [weightedFiniteCauchyProductAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEulerExpansionIndex.lean/declarations/weightedfinitecauchyproductanchor.md) | 15 | `declaration-track:1a067ff3cd5a3f84869fe62749d6ed3d4ae804f22c7ce71bba3457159dbd6fdb` |
-| 2 | `def` | [finiteExponentVectorEulerExpansionAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEulerExpansionIndex.lean/declarations/finiteexponentvectoreulerexpansionanchor.md) | 25 | `declaration-track:cf5dc382779ecfc49c4ce8181044c6906d34f285df642721e4b41c3d25921443` |
-| 3 | `def` | [boundedSmoothNumberReindexingAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEulerExpansionIndex.lean/declarations/boundedsmoothnumberreindexinganchor.md) | 35 | `declaration-track:5d61f68e270381f711a37b31056d1b5068e22b42457a20125b6b7596fe0e4e6b` |
-| 4 | `def` | [infiniteEulerProductTargetAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEulerExpansionIndex.lean/declarations/infiniteeulerproducttargetanchor.md) | 45 | `declaration-track:ae74b83b9c38395b2adca526200dd22ae4e9dff1b8f76e471e6c473b1be31f46` |
-| 5 | `def` | [dirichletSeriesCauchyProductTargetAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEulerExpansionIndex.lean/declarations/dirichletseriescauchyproducttargetanchor.md) | 55 | `declaration-track:482ca14e7de3416a5742579a23690ba84ed1683783d5c042e77ea4870ee53e8a` |
-| 6 | `def` | [finiteEulerExpansionAnchors](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEulerExpansionIndex.lean/declarations/finiteeulerexpansionanchors.md) | 65 | `declaration-track:897cc8911fc6b79c080a051fc7e4e4584733e06c2779a423454db1b487c3c4f7` |
+| 1 | `def` | [weightedFiniteCauchyProductAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEulerExpansionIndex.lean/declarations/weightedfinitecauchyproductanchor.md) | 15 | `declaration-track:1a067ff3cd5a3f84869fe62749d6ed3d4ae804f22c7ce71bba3457159dbd6fdb` |
+| 2 | `def` | [finiteExponentVectorEulerExpansionAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEulerExpansionIndex.lean/declarations/finiteexponentvectoreulerexpansionanchor.md) | 25 | `declaration-track:cf5dc382779ecfc49c4ce8181044c6906d34f285df642721e4b41c3d25921443` |
+| 3 | `def` | [boundedSmoothNumberReindexingAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEulerExpansionIndex.lean/declarations/boundedsmoothnumberreindexinganchor.md) | 35 | `declaration-track:5d61f68e270381f711a37b31056d1b5068e22b42457a20125b6b7596fe0e4e6b` |
+| 4 | `def` | [infiniteEulerProductTargetAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEulerExpansionIndex.lean/declarations/infiniteeulerproducttargetanchor.md) | 45 | `declaration-track:ae74b83b9c38395b2adca526200dd22ae4e9dff1b8f76e471e6c473b1be31f46` |
+| 5 | `def` | [dirichletSeriesCauchyProductTargetAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEulerExpansionIndex.lean/declarations/dirichletseriescauchyproducttargetanchor.md) | 55 | `declaration-track:482ca14e7de3416a5742579a23690ba84ed1683783d5c042e77ea4870ee53e8a` |
+| 6 | `def` | [finiteEulerExpansionAnchors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEulerExpansionIndex.lean/declarations/finiteeulerexpansionanchors.md) | 65 | `declaration-track:897cc8911fc6b79c080a051fc7e4e4584733e06c2779a423454db1b487c3c4f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

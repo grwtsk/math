@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CalculusLogDeriv.lean/index.md) · [Full source](../../../../RealFunctions/CalculusLogDeriv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusLogDeriv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusLogDeriv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,23 +57,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [logDeriv](../../../../RealFunctions/CalculusLogDeriv.lean/declarations/logderiv.md) | 27 | `declaration-track:ff58706d67328a9f0f5fb2d3ca03b113c6b802d4119676869e521d6215576116` |
-| 2 | `theorem` | [logDeriv_apply](../../../../RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-apply.md) | 30 | `result-track:69405c38dc3d699ac0a89d0f1fdcf9cae241e5c169867e143c1b46fdc599fd94` |
-| 3 | `lemma` | [logDeriv_eq_zero_of_not_differentiableAt](../../../../RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-eq-zero-of-not-differentiableat.md) | 32 | `result-track:ca62c0ab29bf3a020a0f439c3d5d9c34baa9ee26649e600c288311b846738b43` |
-| 4 | `theorem` | [logDeriv_id](../../../../RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-id-source-edition-2.md) | 37 | `result-track:d6e9c3f7a202ec191c6d8fa74be4aeef8943059edd68f19158829dd782624892` |
-| 5 | `theorem` | [logDeriv_id'](../../../../RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-id.md) | 40 | `result-track:4fdabe3a7bf30c404ab3610f9ae9d36b16ade8d40c9a6731cb990a0483995adb` |
-| 6 | `theorem` | [logDeriv_const](../../../../RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-const.md) | 43 | `result-track:d184186a8f3de75f4e15e6f4ff754dffdb57620fb5493acb094406d5c05b3ef6` |
-| 7 | `theorem` | [logDeriv_mul](../../../../RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-mul.md) | 47 | `result-track:3f0a1a227d9eaa489688e9a848ceccb28bed73253ca563e4f4517298fcc360d6` |
-| 8 | `theorem` | [logDeriv_div](../../../../RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-div.md) | 53 | `result-track:06c7b2d516d4cba25b9ce7f0b5ce57f2ccba7ec300030605a336991f22b11aeb` |
-| 9 | `theorem` | [logDeriv_mul_const](../../../../RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-mul-const.md) | 60 | `result-track:5f8bde43f91ef2cf64ff0fbe7025d88b664b3104d87ccfb7e607de3c154e3bd4` |
-| 10 | `theorem` | [logDeriv_const_mul](../../../../RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-const-mul.md) | 64 | `result-track:2af7ec1fe7b0ffc4a99131a61ab921755e99eb6dfba73bd07a858fa5b510e9cb` |
-| 11 | `theorem` | [logDeriv_prod](../../../../RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-prod.md) | 69 | `result-track:9c39092ff7ad19a1a560af7d1eb4c1ef2336fbed0aaff7458861f3afa3aaf54c` |
-| 12 | `lemma` | [logDeriv_fun_zpow](../../../../RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-fun-zpow.md) | 83 | `result-track:7681bce234146d13f011dce847fbb91f3367d1e2c551febfea9ad8a667118106` |
-| 13 | `lemma` | [logDeriv_fun_pow](../../../../RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-fun-pow.md) | 93 | `result-track:00b7aba936921f04d2eddc4eacf9d584c4dc98abb5f7231d27174559c067b2e4` |
-| 14 | `lemma` | [logDeriv_zpow](../../../../RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-zpow.md) | 98 | `result-track:ca4d4269ee551424c888a8155228711dda48bd05e11a4115b66a1f12e8227067` |
-| 15 | `lemma` | [logDeriv_pow](../../../../RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-pow.md) | 102 | `result-track:dc38b6ae916ef7d494b5d73b4feca94ddee171a1e358fcb95b7d53c0ff1302bd` |
-| 16 | `lemma` | [logDeriv_inv](../../../../RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-inv.md) | 105 | `result-track:f3b6a459f0b1939bec22cafc3d3b7d543afa35ab820b77be0712502353bf39f9` |
-| 17 | `theorem` | [logDeriv_comp](../../../../RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-comp.md) | 108 | `result-track:fac2f476c8a520b1120376de76b11bdd7d01a523833cd4368e4696629bf69521` |
+| 1 | `def` | [logDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusLogDeriv.lean/declarations/logderiv.md) | 27 | `declaration-track:ff58706d67328a9f0f5fb2d3ca03b113c6b802d4119676869e521d6215576116` |
+| 2 | `theorem` | [logDeriv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-apply.md) | 30 | `result-track:69405c38dc3d699ac0a89d0f1fdcf9cae241e5c169867e143c1b46fdc599fd94` |
+| 3 | `lemma` | [logDeriv_eq_zero_of_not_differentiableAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-eq-zero-of-not-differentiableat.md) | 32 | `result-track:ca62c0ab29bf3a020a0f439c3d5d9c34baa9ee26649e600c288311b846738b43` |
+| 4 | `theorem` | [logDeriv_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-id-source-edition-2.md) | 37 | `result-track:d6e9c3f7a202ec191c6d8fa74be4aeef8943059edd68f19158829dd782624892` |
+| 5 | `theorem` | [logDeriv_id'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-id.md) | 40 | `result-track:4fdabe3a7bf30c404ab3610f9ae9d36b16ade8d40c9a6731cb990a0483995adb` |
+| 6 | `theorem` | [logDeriv_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-const.md) | 43 | `result-track:d184186a8f3de75f4e15e6f4ff754dffdb57620fb5493acb094406d5c05b3ef6` |
+| 7 | `theorem` | [logDeriv_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-mul.md) | 47 | `result-track:3f0a1a227d9eaa489688e9a848ceccb28bed73253ca563e4f4517298fcc360d6` |
+| 8 | `theorem` | [logDeriv_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-div.md) | 53 | `result-track:06c7b2d516d4cba25b9ce7f0b5ce57f2ccba7ec300030605a336991f22b11aeb` |
+| 9 | `theorem` | [logDeriv_mul_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-mul-const.md) | 60 | `result-track:5f8bde43f91ef2cf64ff0fbe7025d88b664b3104d87ccfb7e607de3c154e3bd4` |
+| 10 | `theorem` | [logDeriv_const_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-const-mul.md) | 64 | `result-track:2af7ec1fe7b0ffc4a99131a61ab921755e99eb6dfba73bd07a858fa5b510e9cb` |
+| 11 | `theorem` | [logDeriv_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-prod.md) | 69 | `result-track:9c39092ff7ad19a1a560af7d1eb4c1ef2336fbed0aaff7458861f3afa3aaf54c` |
+| 12 | `lemma` | [logDeriv_fun_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-fun-zpow.md) | 83 | `result-track:7681bce234146d13f011dce847fbb91f3367d1e2c551febfea9ad8a667118106` |
+| 13 | `lemma` | [logDeriv_fun_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-fun-pow.md) | 93 | `result-track:00b7aba936921f04d2eddc4eacf9d584c4dc98abb5f7231d27174559c067b2e4` |
+| 14 | `lemma` | [logDeriv_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-zpow.md) | 98 | `result-track:ca4d4269ee551424c888a8155228711dda48bd05e11a4115b66a1f12e8227067` |
+| 15 | `lemma` | [logDeriv_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-pow.md) | 102 | `result-track:dc38b6ae916ef7d494b5d73b4feca94ddee171a1e358fcb95b7d53c0ff1302bd` |
+| 16 | `lemma` | [logDeriv_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-inv.md) | 105 | `result-track:f3b6a459f0b1939bec22cafc3d3b7d543afa35ab820b77be0712502353bf39f9` |
+| 17 | `theorem` | [logDeriv_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusLogDeriv.lean/declarations/logderiv-comp.md) | 108 | `result-track:fac2f476c8a520b1120376de76b11bdd7d01a523833cd4368e4696629bf69521` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

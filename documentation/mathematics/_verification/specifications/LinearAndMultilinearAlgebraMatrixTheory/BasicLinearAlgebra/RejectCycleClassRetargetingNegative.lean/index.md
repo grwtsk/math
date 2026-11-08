@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectCycleClassRetargetingNegative.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectCycleClassRetargetingNegative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectCycleClassRetargetingNegative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectCycleClassRetargetingNegative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.GraphHodgePortCore`](../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphHodgePortCore.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Interfaces.GraphHodgePortCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphHodgePortCore.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [zeroCycleClass](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectCycleClassRetargetingNegative.lean/declarations/zerocycleclass.md) | 7 | `declaration-track:256e157f6c98e44953f826141d100754a0ab410f98ff61ee6f72c2b45735fb1e` |
-| 2 | `def` | [missingSquare](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectCycleClassRetargetingNegative.lean/declarations/missingsquare.md) | 9 | `declaration-track:120219ddbd3be0c29d35dc113d6c6ba42638a41b943099fa156806d62347bed2` |
+| 1 | `def` | [zeroCycleClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectCycleClassRetargetingNegative.lean/declarations/zerocycleclass.md) | 7 | `declaration-track:256e157f6c98e44953f826141d100754a0ab410f98ff61ee6f72c2b45735fb1e` |
+| 2 | `def` | [missingSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectCycleClassRetargetingNegative.lean/declarations/missingsquare.md) | 9 | `declaration-track:120219ddbd3be0c29d35dc113d6c6ba42638a41b943099fa156806d62347bed2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

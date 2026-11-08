@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/LegendreSymbolGaussSumNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/LegendreSymbolGaussSumNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolGaussSumNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolGaussSumNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [gaussSum](../../../../NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/gausssum.md) | 79 | `declaration-track:89d00a04780b6a7d00eabc7093f073eb30efbc8f7c5efbf8d82dc09d288cf9c6` |
-| 2 | `theorem` | [gaussSum_mulShift](../../../../NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/gausssum-mulshift.md) | 84 | `result-track:046eb51b2836257c0509521488e0b279f63b388c763d8a5c56fac8872949a9b3` |
-| 3 | `theorem` | [gaussSum_mul_aux](../../../../NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/gausssum-mul-aux.md) | 105 | `result-track:69d9c34ae4a54b52ac9f53b43ff7123ef256fd8c642c394c3965678543608411` |
-| 4 | `theorem` | [gaussSum_mul_gaussSum_eq_card](../../../../NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/gausssum-mul-gausssum-eq-card.md) | 118 | `result-track:855a5dd1ca2ddedcb429db8bad44dfcf0f2c4267a3cb710b20ba30c4e11a3f01` |
-| 5 | `theorem` | [gaussSum_sq](../../../../NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/gausssum-sq.md) | 137 | `result-track:6be5044d23575574edcf587dcfafb31ec9f3d8c22cbbefe7985e8af93b585bec` |
-| 6 | `theorem` | [gaussSum_frob](../../../../NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/gausssum-frob.md) | 161 | `result-track:b58fcb7ae2793232776d8293df64a623af91205cbcbe12d54713bcda5844b85d` |
-| 7 | `theorem` | [MulChar.IsQuadratic.gaussSum_frob](../../../../NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/mulchar-isquadratic-gausssum-frob.md) | 172 | `result-track:54a1b11f3407b22a0423e55b65c74bd6a8cc808e0dfbd44452f890fb8e5dee29` |
-| 8 | `theorem` | [MulChar.IsQuadratic.gaussSum_frob_iter](../../../../NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/mulchar-isquadratic-gausssum-frob-iter.md) | 182 | `result-track:8f0c754f6dde42eaae62af8bdbfc4ccea5d2da0bacb059cda5d3d294597a2dde` |
-| 9 | `theorem` | [Char.card_pow_char_pow](../../../../NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/char-card-pow-char-pow.md) | 206 | `result-track:c5645982c3badb7113d20a68023e72a49d3d76b5bb7e51b0a06184a145c8bcda` |
-| 10 | `theorem` | [Char.card_pow_card](../../../../NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/char-card-pow-card.md) | 221 | `result-track:dfe7fe718a4b2d78fc620df7c35091c7a0ef168ea2e8ef5c9ee1f75a20327a36` |
-| 11 | `theorem` | [FiniteField.two_pow_card](../../../../NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/finitefield-two-pow-card.md) | 274 | `result-track:8faee693cec797eae30ffd9b8371318aae4e8ce342d432fee70d8cd7eaf9b7be` |
+| 1 | `def` | [gaussSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/gausssum.md) | 79 | `declaration-track:89d00a04780b6a7d00eabc7093f073eb30efbc8f7c5efbf8d82dc09d288cf9c6` |
+| 2 | `theorem` | [gaussSum_mulShift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/gausssum-mulshift.md) | 84 | `result-track:046eb51b2836257c0509521488e0b279f63b388c763d8a5c56fac8872949a9b3` |
+| 3 | `theorem` | [gaussSum_mul_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/gausssum-mul-aux.md) | 105 | `result-track:69d9c34ae4a54b52ac9f53b43ff7123ef256fd8c642c394c3965678543608411` |
+| 4 | `theorem` | [gaussSum_mul_gaussSum_eq_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/gausssum-mul-gausssum-eq-card.md) | 118 | `result-track:855a5dd1ca2ddedcb429db8bad44dfcf0f2c4267a3cb710b20ba30c4e11a3f01` |
+| 5 | `theorem` | [gaussSum_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/gausssum-sq.md) | 137 | `result-track:6be5044d23575574edcf587dcfafb31ec9f3d8c22cbbefe7985e8af93b585bec` |
+| 6 | `theorem` | [gaussSum_frob](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/gausssum-frob.md) | 161 | `result-track:b58fcb7ae2793232776d8293df64a623af91205cbcbe12d54713bcda5844b85d` |
+| 7 | `theorem` | [MulChar.IsQuadratic.gaussSum_frob](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/mulchar-isquadratic-gausssum-frob.md) | 172 | `result-track:54a1b11f3407b22a0423e55b65c74bd6a8cc808e0dfbd44452f890fb8e5dee29` |
+| 8 | `theorem` | [MulChar.IsQuadratic.gaussSum_frob_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/mulchar-isquadratic-gausssum-frob-iter.md) | 182 | `result-track:8f0c754f6dde42eaae62af8bdbfc4ccea5d2da0bacb059cda5d3d294597a2dde` |
+| 9 | `theorem` | [Char.card_pow_char_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/char-card-pow-char-pow.md) | 206 | `result-track:c5645982c3badb7113d20a68023e72a49d3d76b5bb7e51b0a06184a145c8bcda` |
+| 10 | `theorem` | [Char.card_pow_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/char-card-pow-card.md) | 221 | `result-track:dfe7fe718a4b2d78fc620df7c35091c7a0ef168ea2e8ef5c9ee1f75a20327a36` |
+| 11 | `theorem` | [FiniteField.two_pow_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolGaussSumNamespaced.lean/declarations/finitefield-two-pow-card.md) | 274 | `result-track:8faee693cec797eae30ffd9b8371318aae4e8ce342d432fee70d8cd7eaf9b7be` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

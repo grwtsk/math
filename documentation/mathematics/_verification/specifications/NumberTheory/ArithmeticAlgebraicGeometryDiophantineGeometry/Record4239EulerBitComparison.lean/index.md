@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239EulerBitComparison.lean/index.md) · [Full source](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239EulerBitComparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239EulerBitComparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239EulerBitComparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239LocalSquareClass`](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239LocalSquareClass.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239LocalSquareClass`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239LocalSquareClass.lean/index.md) — import line 10; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sourceEulerBit](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239EulerBitComparison.lean/declarations/sourceeulerbit.md) | 34 | `declaration-track:e636e363ce6db5bf9ee3591ee0432a9c07304a2822823e649a58b233863e94ea` |
-| 2 | `theorem` | [sourceEulerBit_eq_localBit](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239EulerBitComparison.lean/declarations/sourceeulerbit-eq-localbit.md) | 44 | `result-track:a75bb470eda5039d6b7e706db943c7722f4279d9c3ad9077792dbe576ef89983` |
-| 3 | `theorem` | [sourceEulerBit_eq_characterMatrix](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239EulerBitComparison.lean/declarations/sourceeulerbit-eq-charactermatrix.md) | 51 | `result-track:9112d0d6e9b50c8f6cbfba14d4b479d8e6e3ad41948e562e3a1fcd6e4ee3df21` |
-| 4 | `def` | [EulerBitsMatch](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239EulerBitComparison.lean/declarations/eulerbitsmatch.md) | 58 | `declaration-track:dc9ca975765978b00399473d44b9917afd48ecbff29eb725960b2c3bb445f794` |
-| 5 | `theorem` | [eulerBitsMatch](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239EulerBitComparison.lean/declarations/eulerbitsmatch-source-edition-2.md) | 61 | `result-track:f6ec3625feb339337ccfe604736e60e2d44b45b668bbbde5e6ede9d1e6549713` |
-| 6 | `def` | [QuadraticEulerAgreement](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239EulerBitComparison.lean/declarations/quadraticeuleragreement.md) | 68 | `declaration-track:d97881bc0a3190a4628264a93d26def727436fa735bff8d07ff424b872b2c5fc` |
-| 7 | `theorem` | [sourceBitsMatch_of_quadraticEulerAgreement](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239EulerBitComparison.lean/declarations/sourcebitsmatch-of-quadraticeuleragreement.md) | 74 | `result-track:002ea4f41b34488c601dac84ea6756089115c8f30d87d3ceb262828da779cf45` |
+| 1 | `def` | [sourceEulerBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239EulerBitComparison.lean/declarations/sourceeulerbit.md) | 34 | `declaration-track:e636e363ce6db5bf9ee3591ee0432a9c07304a2822823e649a58b233863e94ea` |
+| 2 | `theorem` | [sourceEulerBit_eq_localBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239EulerBitComparison.lean/declarations/sourceeulerbit-eq-localbit.md) | 44 | `result-track:a75bb470eda5039d6b7e706db943c7722f4279d9c3ad9077792dbe576ef89983` |
+| 3 | `theorem` | [sourceEulerBit_eq_characterMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239EulerBitComparison.lean/declarations/sourceeulerbit-eq-charactermatrix.md) | 51 | `result-track:9112d0d6e9b50c8f6cbfba14d4b479d8e6e3ad41948e562e3a1fcd6e4ee3df21` |
+| 4 | `def` | [EulerBitsMatch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239EulerBitComparison.lean/declarations/eulerbitsmatch.md) | 58 | `declaration-track:dc9ca975765978b00399473d44b9917afd48ecbff29eb725960b2c3bb445f794` |
+| 5 | `theorem` | [eulerBitsMatch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239EulerBitComparison.lean/declarations/eulerbitsmatch-source-edition-2.md) | 61 | `result-track:f6ec3625feb339337ccfe604736e60e2d44b45b668bbbde5e6ede9d1e6549713` |
+| 6 | `def` | [QuadraticEulerAgreement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239EulerBitComparison.lean/declarations/quadraticeuleragreement.md) | 68 | `declaration-track:d97881bc0a3190a4628264a93d26def727436fa735bff8d07ff424b872b2c5fc` |
+| 7 | `theorem` | [sourceBitsMatch_of_quadraticEulerAgreement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239EulerBitComparison.lean/declarations/sourcebitsmatch-of-quadraticeuleragreement.md) | 74 | `result-track:002ea4f41b34488c601dac84ea6756089115c8f30d87d3ceb262828da779cf45` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

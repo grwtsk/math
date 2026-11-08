@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/UnramifiedPiNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/UnramifiedPiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedPiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedPiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pi_iff](../../../../CommutativeAlgebra/UnramifiedPiNamespaced.lean/declarations/pi-iff.md) | 34 | `result-track:f7ef8600179b3f86f6884c4a729144e920d89cbb18a724cdf3e168081265edcb` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/UnramifiedPiNamespaced.lean/declarations/instance.md) | 106 | `declaration-track:be8a8885eb2684bedae4dede7dcf5e34afb2217535040d98c52a9c356ed63d86` |
+| 1 | `theorem` | [pi_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedPiNamespaced.lean/declarations/pi-iff.md) | 34 | `result-track:f7ef8600179b3f86f6884c4a729144e920d89cbb18a724cdf3e168081265edcb` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedPiNamespaced.lean/declarations/instance.md) | 106 | `declaration-track:be8a8885eb2684bedae4dede7dcf5e34afb2217535040d98c52a9c356ed63d86` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

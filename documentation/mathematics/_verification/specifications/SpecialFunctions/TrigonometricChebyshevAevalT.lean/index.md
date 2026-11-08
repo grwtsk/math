@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/TrigonometricChebyshevAevalT.lean/index.md) · [Full source](../../../../SpecialFunctions/TrigonometricChebyshevAevalT.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricChebyshevAevalT.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricChebyshevAevalT.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,16 +60,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [aeval_T](../../../../SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/aeval-t.md) | 29 | `result-track:4f55d29a503d274772e44919c5e17c077f9d75b19ec8f9efb80de32d6db61a20` |
-| 2 | `theorem` | [aeval_U](../../../../SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/aeval-u.md) | 34 | `result-track:617c5c5a9cd0e741909f1cd3cb45dbee399bf80219b1a5a850b8fbd81eb19da5` |
-| 3 | `theorem` | [algebraMap_eval_T](../../../../SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/algebramap-eval-t.md) | 39 | `result-track:38d5fca478d2ef9af6fb2a8eeea1ed8c2998e50a1b68b9f17b5cb1e17b969be0` |
-| 4 | `theorem` | [algebraMap_eval_U](../../../../SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/algebramap-eval-u.md) | 45 | `result-track:c10f36605672a6b3b99011ada3aa1ef24781878c9960bb369b6dbeeb51e0848a` |
-| 5 | `theorem` | [complex_ofReal_eval_T](../../../../SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/complex-ofreal-eval-t.md) | 52 | `result-track:0ff608a50f416fffb7eeaf6906e6164e7dd040ecc599674567d49e78171b412f` |
-| 6 | `theorem` | [complex_ofReal_eval_U](../../../../SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/complex-ofreal-eval-u.md) | 58 | `result-track:b3aa7752db24d3fe56501f8771b1057ae776ddd7e9b648e3e2f3f34c12526028` |
-| 7 | `theorem` | [T_complex_cos](../../../../SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/t-complex-cos.md) | 74 | `result-track:f037757b20270a1169e97e9a3870b0b7a517d87102155cf6e13e23d7d88432f5` |
-| 8 | `theorem` | [U_complex_cos](../../../../SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/u-complex-cos.md) | 91 | `result-track:113a4b56da3cfbd29836933dbfaf189d1c87dd100b8fc978763129fb9d00edd2` |
-| 9 | `theorem` | [T_real_cos](../../../../SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/t-real-cos.md) | 116 | `result-track:cd4144797df6c7c092da1180065c1eac2dccc0e27c5c09c55de2e21bf58fe17d` |
-| 10 | `theorem` | [U_real_cos](../../../../SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/u-real-cos.md) | 122 | `result-track:946728fe4ce2404828a34c9ea06a03a86dd44d7f955ee8a43bd284c8d3aaccee` |
+| 1 | `theorem` | [aeval_T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/aeval-t.md) | 29 | `result-track:4f55d29a503d274772e44919c5e17c077f9d75b19ec8f9efb80de32d6db61a20` |
+| 2 | `theorem` | [aeval_U](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/aeval-u.md) | 34 | `result-track:617c5c5a9cd0e741909f1cd3cb45dbee399bf80219b1a5a850b8fbd81eb19da5` |
+| 3 | `theorem` | [algebraMap_eval_T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/algebramap-eval-t.md) | 39 | `result-track:38d5fca478d2ef9af6fb2a8eeea1ed8c2998e50a1b68b9f17b5cb1e17b969be0` |
+| 4 | `theorem` | [algebraMap_eval_U](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/algebramap-eval-u.md) | 45 | `result-track:c10f36605672a6b3b99011ada3aa1ef24781878c9960bb369b6dbeeb51e0848a` |
+| 5 | `theorem` | [complex_ofReal_eval_T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/complex-ofreal-eval-t.md) | 52 | `result-track:0ff608a50f416fffb7eeaf6906e6164e7dd040ecc599674567d49e78171b412f` |
+| 6 | `theorem` | [complex_ofReal_eval_U](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/complex-ofreal-eval-u.md) | 58 | `result-track:b3aa7752db24d3fe56501f8771b1057ae776ddd7e9b648e3e2f3f34c12526028` |
+| 7 | `theorem` | [T_complex_cos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/t-complex-cos.md) | 74 | `result-track:f037757b20270a1169e97e9a3870b0b7a517d87102155cf6e13e23d7d88432f5` |
+| 8 | `theorem` | [U_complex_cos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/u-complex-cos.md) | 91 | `result-track:113a4b56da3cfbd29836933dbfaf189d1c87dd100b8fc978763129fb9d00edd2` |
+| 9 | `theorem` | [T_real_cos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/t-real-cos.md) | 116 | `result-track:cd4144797df6c7c092da1180065c1eac2dccc0e27c5c09c55de2e21bf58fe17d` |
+| 10 | `theorem` | [U_real_cos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricChebyshevAevalT.lean/declarations/u-real-cos.md) | 122 | `result-track:946728fe4ce2404828a34c9ea06a03a86dd44d7f955ee8a43bd284c8d3aaccee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

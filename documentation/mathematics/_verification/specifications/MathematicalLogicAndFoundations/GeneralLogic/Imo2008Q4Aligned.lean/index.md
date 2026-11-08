@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo2008Q4Aligned.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo2008Q4Aligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo2008Q4Aligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo2008Q4Aligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [abs_eq_one_of_pow_eq_one](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo2008Q4Aligned.lean/declarations/abs-eq-one-of-pow-eq-one.md) | 31 | `result-track:008de6ea4eda8974766a16a803dccbe654f1e3bb24c3ecbf9557eb61ff525aca` |
-| 2 | `theorem` | [imo2008_q4](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo2008Q4Aligned.lean/declarations/imo2008-q4.md) | 40 | `result-track:1b95fd9adbe5a6f584cde5c3bff2257f39f4e8760b5a3c8720691ff5bc3fdf52` |
+| 1 | `theorem` | [abs_eq_one_of_pow_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo2008Q4Aligned.lean/declarations/abs-eq-one-of-pow-eq-one.md) | 31 | `result-track:008de6ea4eda8974766a16a803dccbe654f1e3bb24c3ecbf9557eb61ff525aca` |
+| 2 | `theorem` | [imo2008_q4](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo2008Q4Aligned.lean/declarations/imo2008-q4.md) | 40 | `result-track:1b95fd9adbe5a6f584cde5c3bff2257f39f4e8760b5a3c8720691ff5bc3fdf52` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

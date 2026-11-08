@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/HomNamespacedPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/HomNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/HomNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/HomNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [OrderRingHom.subsingleton](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/HomNamespacedPublic.lean/declarations/orderringhom-subsingleton.md) | 35 | `declaration-track:287a40ff99d46405ed1badc90a7c64ee7baed1a83bbd13fff2bb91892ccfb7a3` |
-| 2 | `instance` | [OrderRingIso.subsingleton_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/HomNamespacedPublic.lean/declarations/orderringiso-subsingleton-right.md) | 51 | `declaration-track:40d44837ef4a6f95b84bb6cdce0584e60472917e3f45deb59618f529ea7ee67d` |
-| 3 | `instance` | [OrderRingIso.subsingleton_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/HomNamespacedPublic.lean/declarations/orderringiso-subsingleton-left.md) | 57 | `declaration-track:e27a2a777ddc1266b7b9299364cbc49769b797c83ebaf7f1f323944520409a0a` |
-| 4 | `theorem` | [OrderRingHom.eq_id](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/HomNamespacedPublic.lean/declarations/orderringhom-eq-id.md) | 61 | `result-track:c1643352bc21f5e38fe88a353695e98db2308c93aa9f51e265c7ece05cc976d0` |
-| 5 | `theorem` | [OrderRingIso.eq_refl](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/HomNamespacedPublic.lean/declarations/orderringiso-eq-refl.md) | 64 | `result-track:e4e4579ebd32d8737eb8cb7759d6bf8033731788542fdb03e65cc508efadae1d` |
-| 6 | `theorem` | [OrderRingHom.apply_eq_self](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/HomNamespacedPublic.lean/declarations/orderringhom-apply-eq-self.md) | 67 | `result-track:489e96b5151cecea316b8d20b0bf45f5fd86f2fe83d5ec80f7550157902184bd` |
-| 7 | `theorem` | [OrderRingIso.apply_eq_self](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/HomNamespacedPublic.lean/declarations/orderringiso-apply-eq-self.md) | 71 | `result-track:1e0488416b31a52c04efccdbb4ef7a23e9b02f88596383f14db4cc0e301c9e87` |
+| 1 | `instance` | [OrderRingHom.subsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/HomNamespacedPublic.lean/declarations/orderringhom-subsingleton.md) | 35 | `declaration-track:287a40ff99d46405ed1badc90a7c64ee7baed1a83bbd13fff2bb91892ccfb7a3` |
+| 2 | `instance` | [OrderRingIso.subsingleton_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/HomNamespacedPublic.lean/declarations/orderringiso-subsingleton-right.md) | 51 | `declaration-track:40d44837ef4a6f95b84bb6cdce0584e60472917e3f45deb59618f529ea7ee67d` |
+| 3 | `instance` | [OrderRingIso.subsingleton_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/HomNamespacedPublic.lean/declarations/orderringiso-subsingleton-left.md) | 57 | `declaration-track:e27a2a777ddc1266b7b9299364cbc49769b797c83ebaf7f1f323944520409a0a` |
+| 4 | `theorem` | [OrderRingHom.eq_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/HomNamespacedPublic.lean/declarations/orderringhom-eq-id.md) | 61 | `result-track:c1643352bc21f5e38fe88a353695e98db2308c93aa9f51e265c7ece05cc976d0` |
+| 5 | `theorem` | [OrderRingIso.eq_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/HomNamespacedPublic.lean/declarations/orderringiso-eq-refl.md) | 64 | `result-track:e4e4579ebd32d8737eb8cb7759d6bf8033731788542fdb03e65cc508efadae1d` |
+| 6 | `theorem` | [OrderRingHom.apply_eq_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/HomNamespacedPublic.lean/declarations/orderringhom-apply-eq-self.md) | 67 | `result-track:489e96b5151cecea316b8d20b0bf45f5fd86f2fe83d5ec80f7550157902184bd` |
+| 7 | `theorem` | [OrderRingIso.apply_eq_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/HomNamespacedPublic.lean/declarations/orderringiso-apply-eq-self.md) | 71 | `result-track:1e0488416b31a52c04efccdbb4ef7a23e9b02f88596383f14db4cc0e301c9e87` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/GaussianMomentsNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/GaussianMomentsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GaussianMomentsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GaussianMomentsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integrable_id](../../../../MeasureAndIntegration/GaussianMomentsNamespaced.lean/declarations/integrable-id.md) | 19 | `result-track:1013db6038feacf80cf894f581bbfe7e89257b5bfebd609e3c2150862e100ac3` |
-| 2 | `theorem` | [integrable_square](../../../../MeasureAndIntegration/GaussianMomentsNamespaced.lean/declarations/integrable-square.md) | 24 | `result-track:29690e0e43046ab88abd9865c6bf29d2e890ed2097480f912c39d26093804c17` |
-| 3 | `theorem` | [integral_id_zero](../../../../MeasureAndIntegration/GaussianMomentsNamespaced.lean/declarations/integral-id-zero.md) | 28 | `result-track:d46bab345309a66bb65d4cc58aaa5652e20d993d2242f5b292a17891818b7cb9` |
-| 4 | `theorem` | [integral_square](../../../../MeasureAndIntegration/GaussianMomentsNamespaced.lean/declarations/integral-square.md) | 32 | `result-track:be38d6ba45d75bf5891d17df553d29928f9bbca05f815e72fc5a2c609e65f043` |
-| 5 | `theorem` | [integrable_abs](../../../../MeasureAndIntegration/GaussianMomentsNamespaced.lean/declarations/integrable-abs.md) | 38 | `result-track:2624e9e089a75d332189dd5cc0795b7cb356f65de40b687f3be9ceeb4ced8b18` |
-| 6 | `theorem` | [integral_abs_le_sqrt](../../../../MeasureAndIntegration/GaussianMomentsNamespaced.lean/declarations/integral-abs-le-sqrt.md) | 42 | `result-track:01fd51f75caf991917f39400ece089518a70bec84e6e29b5ce7e4ca5aa363f5b` |
+| 1 | `theorem` | [integrable_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GaussianMomentsNamespaced.lean/declarations/integrable-id.md) | 19 | `result-track:1013db6038feacf80cf894f581bbfe7e89257b5bfebd609e3c2150862e100ac3` |
+| 2 | `theorem` | [integrable_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GaussianMomentsNamespaced.lean/declarations/integrable-square.md) | 24 | `result-track:29690e0e43046ab88abd9865c6bf29d2e890ed2097480f912c39d26093804c17` |
+| 3 | `theorem` | [integral_id_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GaussianMomentsNamespaced.lean/declarations/integral-id-zero.md) | 28 | `result-track:d46bab345309a66bb65d4cc58aaa5652e20d993d2242f5b292a17891818b7cb9` |
+| 4 | `theorem` | [integral_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GaussianMomentsNamespaced.lean/declarations/integral-square.md) | 32 | `result-track:be38d6ba45d75bf5891d17df553d29928f9bbca05f815e72fc5a2c609e65f043` |
+| 5 | `theorem` | [integrable_abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GaussianMomentsNamespaced.lean/declarations/integrable-abs.md) | 38 | `result-track:2624e9e089a75d332189dd5cc0795b7cb356f65de40b687f3be9ceeb4ced8b18` |
+| 6 | `theorem` | [integral_abs_le_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GaussianMomentsNamespaced.lean/declarations/integral-abs-le-sqrt.md) | 42 | `result-track:01fd51f75caf991917f39400ece089518a70bec84e6e29b5ce7e4ca5aa363f5b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

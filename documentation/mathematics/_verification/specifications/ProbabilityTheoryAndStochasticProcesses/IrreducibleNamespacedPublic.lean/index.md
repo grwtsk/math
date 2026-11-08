@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/IrreducibleNamespacedPublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/IrreducibleNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IrreducibleNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IrreducibleNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsIrreducible](../../../../ProbabilityTheoryAndStochasticProcesses/IrreducibleNamespacedPublic.lean/declarations/isirreducible.md) | 64 | `declaration-track:533a6014db20dedfbd53300d9e011b5b78289a6fc4725538ca56a17c2b2bb2b4` |
-| 2 | `instance` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/IrreducibleNamespacedPublic.lean/declarations/instance.md) | 68 | `declaration-track:4bd5cbb18ba08818aa8f9d2f68fdbae8b8190ec2de719692f49a12a09f57640f` |
-| 3 | `instance` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/IrreducibleNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 77 | `declaration-track:ea5ea8747ef9806a8fea96c4d3be67867e60095889d68af207604346dc86227a` |
-| 4 | `lemma` | [isIrreducible_of_le_measure](../../../../ProbabilityTheoryAndStochasticProcesses/IrreducibleNamespacedPublic.lean/declarations/isirreducible-of-le-measure.md) | 82 | `result-track:f79da0b5bd1e742443fb9509d02dceb265aafd4d1140f801e53143800079d852` |
+| 1 | `class` | [IsIrreducible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IrreducibleNamespacedPublic.lean/declarations/isirreducible.md) | 64 | `declaration-track:533a6014db20dedfbd53300d9e011b5b78289a6fc4725538ca56a17c2b2bb2b4` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IrreducibleNamespacedPublic.lean/declarations/instance.md) | 68 | `declaration-track:4bd5cbb18ba08818aa8f9d2f68fdbae8b8190ec2de719692f49a12a09f57640f` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IrreducibleNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 77 | `declaration-track:ea5ea8747ef9806a8fea96c4d3be67867e60095889d68af207604346dc86227a` |
+| 4 | `lemma` | [isIrreducible_of_le_measure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IrreducibleNamespacedPublic.lean/declarations/isirreducible-of-le-measure.md) | 82 | `result-track:f79da0b5bd1e742443fb9509d02dceb265aafd4d1140f801e53143800079d852` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

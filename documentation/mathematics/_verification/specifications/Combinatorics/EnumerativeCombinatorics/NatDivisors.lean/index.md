@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/NatDivisors.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/NatDivisors.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/NatDivisors.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/NatDivisors.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Nat.divisors_mul](../../../../../Combinatorics/EnumerativeCombinatorics/NatDivisors.lean/declarations/nat-divisors-mul.md) | 21 | `result-track:6a69bed3c84fe71762e94f2402a2bb2f9dd6141de7537b5a81f9db57896d6999` |
-| 2 | `def` | [Nat.divisorsHom](../../../../../Combinatorics/EnumerativeCombinatorics/NatDivisors.lean/declarations/nat-divisorshom.md) | 29 | `declaration-track:5250ed4c2a400aa71fae6230a5da5ac822b8ba02c900c19cd60d07373823e6b4` |
-| 3 | `lemma` | [Nat.Prime.divisors_sq](../../../../../Combinatorics/EnumerativeCombinatorics/NatDivisors.lean/declarations/nat-prime-divisors-sq.md) | 34 | `result-track:35fbb7f848f68b8cc276d6b553d7dd32f62b4406a83a66e905b296b3281f54c5` |
-| 4 | `lemma` | [List.nat_divisors_prod](../../../../../Combinatorics/EnumerativeCombinatorics/NatDivisors.lean/declarations/list-nat-divisors-prod.md) | 37 | `result-track:2e8d8521a5f687caf74a6f32abfe1d37476b710b8160d789de2fe3e802154e0f` |
-| 5 | `lemma` | [Multiset.nat_divisors_prod](../../../../../Combinatorics/EnumerativeCombinatorics/NatDivisors.lean/declarations/multiset-nat-divisors-prod.md) | 40 | `result-track:215d88158af3e46adf9f1b07bda69a367c7fbca7fbcaa097440471aedc53f94a` |
-| 6 | `lemma` | [Finset.nat_divisors_prod](../../../../../Combinatorics/EnumerativeCombinatorics/NatDivisors.lean/declarations/finset-nat-divisors-prod.md) | 43 | `result-track:08223138c280d6eabbca2f09900ff0ca5c04047e5eb01a3bbfbc86d65610d4e5` |
+| 1 | `lemma` | [Nat.divisors_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/NatDivisors.lean/declarations/nat-divisors-mul.md) | 21 | `result-track:6a69bed3c84fe71762e94f2402a2bb2f9dd6141de7537b5a81f9db57896d6999` |
+| 2 | `def` | [Nat.divisorsHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/NatDivisors.lean/declarations/nat-divisorshom.md) | 29 | `declaration-track:5250ed4c2a400aa71fae6230a5da5ac822b8ba02c900c19cd60d07373823e6b4` |
+| 3 | `lemma` | [Nat.Prime.divisors_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/NatDivisors.lean/declarations/nat-prime-divisors-sq.md) | 34 | `result-track:35fbb7f848f68b8cc276d6b553d7dd32f62b4406a83a66e905b296b3281f54c5` |
+| 4 | `lemma` | [List.nat_divisors_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/NatDivisors.lean/declarations/list-nat-divisors-prod.md) | 37 | `result-track:2e8d8521a5f687caf74a6f32abfe1d37476b710b8160d789de2fe3e802154e0f` |
+| 5 | `lemma` | [Multiset.nat_divisors_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/NatDivisors.lean/declarations/multiset-nat-divisors-prod.md) | 40 | `result-track:215d88158af3e46adf9f1b07bda69a367c7fbca7fbcaa097440471aedc53f94a` |
+| 6 | `lemma` | [Finset.nat_divisors_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/NatDivisors.lean/declarations/finset-nat-divisors-prod.md) | 43 | `result-track:08223138c280d6eabbca2f09900ff0ca5c04047e5eb01a3bbfbc86d65610d4e5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

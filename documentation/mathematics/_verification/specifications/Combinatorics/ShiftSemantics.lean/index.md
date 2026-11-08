@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ShiftSemantics.lean/index.md) · [Full source](../../../../Combinatorics/ShiftSemantics.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShiftSemantics.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShiftSemantics.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [hammingDistance](../../../../Combinatorics/ShiftSemantics.lean/declarations/hammingdistance.md) | 14 | `declaration-track:652093ba9cc003bd36c49561fbbe335c8b77424d888898cf24abdb652def3ef6` |
-| 2 | `def` | [zeroFillShift](../../../../Combinatorics/ShiftSemantics.lean/declarations/zerofillshift.md) | 18 | `declaration-track:9f9f456a1b4c2925d4e56d027c08eecd7ef58d660875d8cc49bf1a67831960e8` |
-| 3 | `structure` | [LogicalShift](../../../../Combinatorics/ShiftSemantics.lean/declarations/logicalshift.md) | 29 | `declaration-track:4221dd62816bff475afd557b0adeb8a9f36a846c5c2c20f8f9595b13b14c4829` |
-| 4 | `inductive` | [OverflowBehavior](../../../../Combinatorics/ShiftSemantics.lean/declarations/overflowbehavior.md) | 40 | `declaration-track:56c2ec5cd257b538d447aa47bc03964eb4bc6d566015208fbc4417816a7b80cf` |
-| 5 | `structure` | [FixedPointDecoder](../../../../Combinatorics/ShiftSemantics.lean/declarations/fixedpointdecoder.md) | 48 | `declaration-track:8f8919b7e94410c91860354a0cacd20f03fc8e12c0fbf45354711fc867a2e9fa` |
-| 6 | `structure` | [ShiftScaleCertificate](../../../../Combinatorics/ShiftSemantics.lean/declarations/shiftscalecertificate.md) | 52 | `declaration-track:ddd924ff67c3f56dc1ccd5b4f60465c70c077bdb5d131d919167232b7f9911a8` |
+| 1 | `def` | [hammingDistance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShiftSemantics.lean/declarations/hammingdistance.md) | 14 | `declaration-track:652093ba9cc003bd36c49561fbbe335c8b77424d888898cf24abdb652def3ef6` |
+| 2 | `def` | [zeroFillShift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShiftSemantics.lean/declarations/zerofillshift.md) | 18 | `declaration-track:9f9f456a1b4c2925d4e56d027c08eecd7ef58d660875d8cc49bf1a67831960e8` |
+| 3 | `structure` | [LogicalShift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShiftSemantics.lean/declarations/logicalshift.md) | 29 | `declaration-track:4221dd62816bff475afd557b0adeb8a9f36a846c5c2c20f8f9595b13b14c4829` |
+| 4 | `inductive` | [OverflowBehavior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShiftSemantics.lean/declarations/overflowbehavior.md) | 40 | `declaration-track:56c2ec5cd257b538d447aa47bc03964eb4bc6d566015208fbc4417816a7b80cf` |
+| 5 | `structure` | [FixedPointDecoder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShiftSemantics.lean/declarations/fixedpointdecoder.md) | 48 | `declaration-track:8f8919b7e94410c91860354a0cacd20f03fc8e12c0fbf45354711fc867a2e9fa` |
+| 6 | `structure` | [ShiftScaleCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShiftSemantics.lean/declarations/shiftscalecertificate.md) | 52 | `declaration-track:ddd924ff67c3f56dc1ccd5b4f60465c70c077bdb5d131d919167232b7f9911a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

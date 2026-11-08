@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignment.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CanonicalPathProgram](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignment.lean/declarations/canonicalpathprogram.md) | 28 | `declaration-track:e8c01d9f55f9ee103c2e54328a686df6782f917c7c0ab22a49a18e7406a4520f` |
-| 2 | `theorem` | [canonical_path_transport_invariant](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignment.lean/declarations/canonical-path-transport-invariant.md) | 41 | `result-track:8424ccbb2604e59f22bdfeed923410aa5c4d918f438e7e4c876a9516b7409fe6` |
-| 3 | `theorem` | [canonical_path_global_index_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignment.lean/declarations/canonical-path-global-index-nonzero.md) | 47 | `result-track:120ff03585222fdd415c6e3c7fd9f53dc63e63e31ca12f34e45dea40cc434c82` |
-| 4 | `theorem` | [canonical_path_spectral_alignment](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignment.lean/declarations/canonical-path-spectral-alignment.md) | 55 | `result-track:d07baf9363ea15a3c1f4742583f12f718f4049cfe690baa901592ce3e548e2e7` |
-| 5 | `theorem` | [conditional_global_spectral_alignment_from_supplied_bridge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignment.lean/declarations/conditional-global-spectral-alignment-from-supplied-bridge.md) | 64 | `result-track:bca894aaaa3a981af001200b95762fd51422b9e40d90c5cf9d9f83010cc00f20` |
+| 1 | `structure` | [CanonicalPathProgram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignment.lean/declarations/canonicalpathprogram.md) | 28 | `declaration-track:e8c01d9f55f9ee103c2e54328a686df6782f917c7c0ab22a49a18e7406a4520f` |
+| 2 | `theorem` | [canonical_path_transport_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignment.lean/declarations/canonical-path-transport-invariant.md) | 41 | `result-track:8424ccbb2604e59f22bdfeed923410aa5c4d918f438e7e4c876a9516b7409fe6` |
+| 3 | `theorem` | [canonical_path_global_index_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignment.lean/declarations/canonical-path-global-index-nonzero.md) | 47 | `result-track:120ff03585222fdd415c6e3c7fd9f53dc63e63e31ca12f34e45dea40cc434c82` |
+| 4 | `theorem` | [canonical_path_spectral_alignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignment.lean/declarations/canonical-path-spectral-alignment.md) | 55 | `result-track:d07baf9363ea15a3c1f4742583f12f718f4049cfe690baa901592ce3e548e2e7` |
+| 5 | `theorem` | [conditional_global_spectral_alignment_from_supplied_bridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignment.lean/declarations/conditional-global-spectral-alignment-from-supplied-bridge.md) | 64 | `result-track:bca894aaaa3a981af001200b95762fd51422b9e40d90c5cf9d9f83010cc00f20` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

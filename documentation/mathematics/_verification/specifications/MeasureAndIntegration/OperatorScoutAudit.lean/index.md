@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/OperatorScoutAudit.lean/index.md) · [Full source](../../../../MeasureAndIntegration/OperatorScoutAudit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OperatorScoutAudit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OperatorScoutAudit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [FullH](../../../../MeasureAndIntegration/OperatorScoutAudit.lean/declarations/fullh.md) | 12 | `declaration-track:764fcf90cd958eaf8ffca7089631ae395fbd1ba1cb73cb095d42e238db52ef3f` |
-| 2 | `def` | [fullShift](../../../../MeasureAndIntegration/OperatorScoutAudit.lean/declarations/fullshift.md) | 14 | `declaration-track:88b18629a129c6f58311ab94f11c7425d55fa8723f6e854b882efec86309a784` |
-| 3 | `theorem` | [fullShift_ae](../../../../MeasureAndIntegration/OperatorScoutAudit.lean/declarations/fullshift-ae.md) | 17 | `result-track:243454377f09bdb751d00283de2acb80fea4f377aa5e992721f63c632e2b9617` |
-| 4 | `theorem` | [fullShift_continuous](../../../../MeasureAndIntegration/OperatorScoutAudit.lean/declarations/fullshift-continuous.md) | 21 | `result-track:26102296be787ded6c6eb1d0e1da29f11429a13fb7dcdfd4c473c333aa0d936e` |
-| 5 | `theorem` | [halfLine_zeroExtension_memLp](../../../../MeasureAndIntegration/OperatorScoutAudit.lean/declarations/halfline-zeroextension-memlp.md) | 29 | `result-track:d78d123a9d42fbbfee11e6dbbee909555374bd4e1fb3e283d510e86930e2bd26` |
-| 6 | `theorem` | [weighted_shift_integrable](../../../../MeasureAndIntegration/OperatorScoutAudit.lean/declarations/weighted-shift-integrable.md) | 34 | `result-track:9ff67ddb73a4015acd663b93f4833780db03e9621baf67a942be1989b909031d` |
-| 7 | `def` | [bochnerVector](../../../../MeasureAndIntegration/OperatorScoutAudit.lean/declarations/bochnervector.md) | 44 | `declaration-track:7644627e6d18767c5958bd1f0afd9edae2ab40cd684cb0a147398c7807c13e72` |
-| 8 | `theorem` | [bochnerVector_norm_le](../../../../MeasureAndIntegration/OperatorScoutAudit.lean/declarations/bochnervector-norm-le.md) | 46 | `result-track:db3e32e3de1831ab687fe1dd4ce31445faaf10feefd7693ddb8c87290ddb2840` |
+| 1 | `abbrev` | [FullH](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OperatorScoutAudit.lean/declarations/fullh.md) | 12 | `declaration-track:764fcf90cd958eaf8ffca7089631ae395fbd1ba1cb73cb095d42e238db52ef3f` |
+| 2 | `def` | [fullShift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OperatorScoutAudit.lean/declarations/fullshift.md) | 14 | `declaration-track:88b18629a129c6f58311ab94f11c7425d55fa8723f6e854b882efec86309a784` |
+| 3 | `theorem` | [fullShift_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OperatorScoutAudit.lean/declarations/fullshift-ae.md) | 17 | `result-track:243454377f09bdb751d00283de2acb80fea4f377aa5e992721f63c632e2b9617` |
+| 4 | `theorem` | [fullShift_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OperatorScoutAudit.lean/declarations/fullshift-continuous.md) | 21 | `result-track:26102296be787ded6c6eb1d0e1da29f11429a13fb7dcdfd4c473c333aa0d936e` |
+| 5 | `theorem` | [halfLine_zeroExtension_memLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OperatorScoutAudit.lean/declarations/halfline-zeroextension-memlp.md) | 29 | `result-track:d78d123a9d42fbbfee11e6dbbee909555374bd4e1fb3e283d510e86930e2bd26` |
+| 6 | `theorem` | [weighted_shift_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OperatorScoutAudit.lean/declarations/weighted-shift-integrable.md) | 34 | `result-track:9ff67ddb73a4015acd663b93f4833780db03e9621baf67a942be1989b909031d` |
+| 7 | `def` | [bochnerVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OperatorScoutAudit.lean/declarations/bochnervector.md) | 44 | `declaration-track:7644627e6d18767c5958bd1f0afd9edae2ab40cd684cb0a147398c7807c13e72` |
+| 8 | `theorem` | [bochnerVector_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OperatorScoutAudit.lean/declarations/bochnervector-norm-le.md) | 46 | `result-track:db3e32e3de1831ab687fe1dd4ce31445faaf10feefd7693ddb8c87290ddb2840` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

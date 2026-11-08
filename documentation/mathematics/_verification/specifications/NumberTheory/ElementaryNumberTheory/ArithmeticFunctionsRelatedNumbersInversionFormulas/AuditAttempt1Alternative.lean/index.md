@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/AuditAttempt1Alternative.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/AuditAttempt1Alternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/AuditAttempt1Alternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/AuditAttempt1Alternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/AuditAttempt1Alternative.lean/declarations/example-source-edition-6.md) | 21 | `declaration-track:fea41945d95f0645ffa0a4a3b63fb1f2329237677e0839e883262125c2f6c213` |
-| 2 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/AuditAttempt1Alternative.lean/declarations/example-source-edition-2.md) | 23 | `declaration-track:2e36db3d7d0f302c6bd2301fc415049cedad430a8d8bbc2226fdf42bde57aa92` |
-| 3 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/AuditAttempt1Alternative.lean/declarations/example-source-edition-3.md) | 32 | `declaration-track:348f5032683ab6e63b452fc3c60db2ebd93776a4bc5af6164e5725de09e1f179` |
-| 4 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/AuditAttempt1Alternative.lean/declarations/example-source-edition-4.md) | 38 | `declaration-track:5dca299b285c78bd37b04726d4111e7b3f797d1ed732758b9f7f330fbf795139` |
-| 5 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/AuditAttempt1Alternative.lean/declarations/example.md) | 43 | `declaration-track:0dec9956e4ef9f2ab7e3f5b3c79743a2c4e29fa4f029e16311937105bcef1e0a` |
-| 6 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/AuditAttempt1Alternative.lean/declarations/example-source-edition-5.md) | 48 | `declaration-track:c0ef7a6f6a1d6b42b5a0811686c07ddd5b34c8bf59c3eb91d6edc258bc24c948` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/AuditAttempt1Alternative.lean/declarations/example-source-edition-6.md) | 21 | `declaration-track:fea41945d95f0645ffa0a4a3b63fb1f2329237677e0839e883262125c2f6c213` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/AuditAttempt1Alternative.lean/declarations/example-source-edition-2.md) | 23 | `declaration-track:2e36db3d7d0f302c6bd2301fc415049cedad430a8d8bbc2226fdf42bde57aa92` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/AuditAttempt1Alternative.lean/declarations/example-source-edition-3.md) | 32 | `declaration-track:348f5032683ab6e63b452fc3c60db2ebd93776a4bc5af6164e5725de09e1f179` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/AuditAttempt1Alternative.lean/declarations/example-source-edition-4.md) | 38 | `declaration-track:5dca299b285c78bd37b04726d4111e7b3f797d1ed732758b9f7f330fbf795139` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/AuditAttempt1Alternative.lean/declarations/example.md) | 43 | `declaration-track:0dec9956e4ef9f2ab7e3f5b3c79743a2c4e29fa4f029e16311937105bcef1e0a` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/AuditAttempt1Alternative.lean/declarations/example-source-edition-5.md) | 48 | `declaration-track:c0ef7a6f6a1d6b42b5a0811686c07ddd5b34c8bf59c3eb91d6edc258bc24c948` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

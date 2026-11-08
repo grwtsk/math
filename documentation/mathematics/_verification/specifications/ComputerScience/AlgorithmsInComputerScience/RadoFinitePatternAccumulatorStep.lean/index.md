@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorStep.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorStep.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorStep.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorStep.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [PatternAccumulator](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorStep.lean/declarations/patternaccumulator.md) | 22 | `declaration-track:f94af8860507687ba45007a80a9db57b8685eb6bdd6abbb455d35e1bb01e64f5` |
-| 2 | `theorem` | [bitRado_extend_pattern_accumulator_step](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorStep.lean/declarations/bitrado-extend-pattern-accumulator-step.md) | 33 | `result-track:e5e4168939b42225ba1d991a68e48dc12cf680c54b84d91998a37a5511d0bb06` |
+| 1 | `def` | [PatternAccumulator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorStep.lean/declarations/patternaccumulator.md) | 22 | `declaration-track:f94af8860507687ba45007a80a9db57b8685eb6bdd6abbb455d35e1bb01e64f5` |
+| 2 | `theorem` | [bitRado_extend_pattern_accumulator_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorStep.lean/declarations/bitrado-extend-pattern-accumulator-step.md) | 33 | `result-track:e5e4168939b42225ba1d991a68e48dc12cf680c54b84d91998a37a5511d0bb06` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

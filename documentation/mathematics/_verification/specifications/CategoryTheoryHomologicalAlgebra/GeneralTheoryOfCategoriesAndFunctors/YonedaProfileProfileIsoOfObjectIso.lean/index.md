@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileProfileIsoOfObjectIso.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileProfileIsoOfObjectIso.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileProfileIsoOfObjectIso.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileProfileIsoOfObjectIso.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [CompleteMorphismProfile](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileProfileIsoOfObjectIso.lean/declarations/completemorphismprofile.md) | 20 | `declaration-track:32d83829264f4281be3d6ad69e9f6b06b074a1229fac48ffbbe5531c4343dd64` |
-| 2 | `def` | [profileIsoOfObjectIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileProfileIsoOfObjectIso.lean/declarations/profileisoofobjectiso.md) | 24 | `declaration-track:ea157acca384e2c482afc1b6381bc0f34a8c08b0bfc547d543db42f862af4d3b` |
-| 3 | `def` | [reconstructIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileProfileIsoOfObjectIso.lean/declarations/reconstructiso.md) | 32 | `declaration-track:e673f3db564eaf479b2cef92086dc1e6418939912767b2bcd465aa0a06f5c204` |
-| 4 | `theorem` | [reconstructIso_profileIsoOfObjectIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileProfileIsoOfObjectIso.lean/declarations/reconstructiso-profileisoofobjectiso.md) | 41 | `result-track:d3a7a53e733e13335fb6d4557dd16edd6bb62debaa4b87fd459760433335e239` |
-| 5 | `theorem` | [profileIso_nonempty_iff_objectIso_nonempty](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileProfileIsoOfObjectIso.lean/declarations/profileiso-nonempty-iff-objectiso-nonempty.md) | 51 | `result-track:fe08ee55d2a8c62494b35e8dd551b13ad8768f87bc0d52a056c69e17e8a732c4` |
+| 1 | `abbrev` | [CompleteMorphismProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileProfileIsoOfObjectIso.lean/declarations/completemorphismprofile.md) | 20 | `declaration-track:32d83829264f4281be3d6ad69e9f6b06b074a1229fac48ffbbe5531c4343dd64` |
+| 2 | `def` | [profileIsoOfObjectIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileProfileIsoOfObjectIso.lean/declarations/profileisoofobjectiso.md) | 24 | `declaration-track:ea157acca384e2c482afc1b6381bc0f34a8c08b0bfc547d543db42f862af4d3b` |
+| 3 | `def` | [reconstructIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileProfileIsoOfObjectIso.lean/declarations/reconstructiso.md) | 32 | `declaration-track:e673f3db564eaf479b2cef92086dc1e6418939912767b2bcd465aa0a06f5c204` |
+| 4 | `theorem` | [reconstructIso_profileIsoOfObjectIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileProfileIsoOfObjectIso.lean/declarations/reconstructiso-profileisoofobjectiso.md) | 41 | `result-track:d3a7a53e733e13335fb6d4557dd16edd6bb62debaa4b87fd459760433335e239` |
+| 5 | `theorem` | [profileIso_nonempty_iff_objectIso_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileProfileIsoOfObjectIso.lean/declarations/profileiso-nonempty-iff-objectiso-nonempty.md) | 51 | `result-track:fe08ee55d2a8c62494b35e8dd551b13ad8768f87bc0d52a056c69e17e8a732c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

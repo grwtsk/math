@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/CoefficientsNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/CoefficientsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoefficientsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoefficientsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,22 +61,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CoefficientContext](../../../../CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/coefficientcontext.md) | 27 | `declaration-track:df4aafab73cdbec94b86db4612708bc50bc74d6afbc6eae9f362190a3907cde4` |
-| 2 | `def` | [integral](../../../../CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/integral.md) | 36 | `declaration-track:ddfdd21f926ce720d2e6f628026038883b12f6b355acd58f37907d123a503e49` |
-| 3 | `def` | [integralLifted](../../../../CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/integrallifted.md) | 40 | `declaration-track:89fc0fc05c940865bf749ae9c5ae34ccbc867bc36f159d102a53f89a29a02788` |
-| 4 | `def` | [rational](../../../../CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/rational.md) | 44 | `declaration-track:77d00e2fedae43f62b5173f1787ffc00c47e1ba47944b5437f317290b0db3ffd` |
-| 5 | `def` | [modulo](../../../../CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/modulo.md) | 48 | `declaration-track:87ee2f4281ab6657d1de5fc7ad2005e1106892bfeaa519bf8b292a13c9b5fc77` |
-| 6 | `structure` | [LocalizationDatum](../../../../CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/localizationdatum.md) | 54 | `declaration-track:4fc13e3177dd84b0cccc15fe8360aa85ecebe66fc8e25fb3cb521a219c1f200e` |
-| 7 | `def` | [context](../../../../CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/context.md) | 60 | `declaration-track:186fc2c1c25da6c98153a14e870ff67459c044a52074e004761419e6532059b7` |
-| 8 | `def` | [algebraMapComparison](../../../../CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/algebramapcomparison.md) | 65 | `declaration-track:52932a94052294c668c0f9adc13e0e5a854c61261c93e2831a19d57d053c30d4` |
-| 9 | `structure` | [CompletionDatum](../../../../CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/completiondatum.md) | 76 | `declaration-track:715d56cef3807c6cc163296d4127fe210051dd95b54129f7e83840e66d40d54f` |
-| 10 | `def` | [context](../../../../CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/context-source-edition-2.md) | 85 | `declaration-track:9f5eee2c2140b044a6fede661920884cc8fa1fe004ba417dafd30bacad4c055f` |
-| 11 | `def` | [algebraMapComparison](../../../../CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/algebramapcomparison-source-edition-2.md) | 89 | `declaration-track:852df04ad8cfe5b05e603264e760883392a9c7f2f293c9642741b8e0a81bde4f` |
-| 12 | `structure` | [CoefficientChange](../../../../CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/coefficientchange.md) | 96 | `declaration-track:3c1126f7bb961be7e1ba4f96b55f78181a5a725b3e8d3317819f9c0bc262ba77` |
-| 13 | `def` | [id](../../../../CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/id.md) | 103 | `declaration-track:c0aaeb67fbc6a2f6879de2586c7038cb770c81b7f60c9aa3603bf0754c163085` |
-| 14 | `def` | [comp](../../../../CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/comp.md) | 107 | `declaration-track:f260183e4f206d1d9f0137683b0227e48c74bb0a6ff25d714272c49683a518bb` |
-| 15 | `theorem` | [id_apply](../../../../CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/id-apply.md) | 116 | `result-track:2e06178721d5244a0c340821508a239c25cb006a8cfaf2c910f2aa8c58938014` |
-| 16 | `theorem` | [comp_apply](../../../../CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/comp-apply.md) | 121 | `result-track:e56422e622864b2fd129c771283a4cff3a3e9fcfec22ca9cd05c320fa27b7169` |
+| 1 | `structure` | [CoefficientContext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/coefficientcontext.md) | 27 | `declaration-track:df4aafab73cdbec94b86db4612708bc50bc74d6afbc6eae9f362190a3907cde4` |
+| 2 | `def` | [integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/integral.md) | 36 | `declaration-track:ddfdd21f926ce720d2e6f628026038883b12f6b355acd58f37907d123a503e49` |
+| 3 | `def` | [integralLifted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/integrallifted.md) | 40 | `declaration-track:89fc0fc05c940865bf749ae9c5ae34ccbc867bc36f159d102a53f89a29a02788` |
+| 4 | `def` | [rational](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/rational.md) | 44 | `declaration-track:77d00e2fedae43f62b5173f1787ffc00c47e1ba47944b5437f317290b0db3ffd` |
+| 5 | `def` | [modulo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/modulo.md) | 48 | `declaration-track:87ee2f4281ab6657d1de5fc7ad2005e1106892bfeaa519bf8b292a13c9b5fc77` |
+| 6 | `structure` | [LocalizationDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/localizationdatum.md) | 54 | `declaration-track:4fc13e3177dd84b0cccc15fe8360aa85ecebe66fc8e25fb3cb521a219c1f200e` |
+| 7 | `def` | [context](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/context.md) | 60 | `declaration-track:186fc2c1c25da6c98153a14e870ff67459c044a52074e004761419e6532059b7` |
+| 8 | `def` | [algebraMapComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/algebramapcomparison.md) | 65 | `declaration-track:52932a94052294c668c0f9adc13e0e5a854c61261c93e2831a19d57d053c30d4` |
+| 9 | `structure` | [CompletionDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/completiondatum.md) | 76 | `declaration-track:715d56cef3807c6cc163296d4127fe210051dd95b54129f7e83840e66d40d54f` |
+| 10 | `def` | [context](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/context-source-edition-2.md) | 85 | `declaration-track:9f5eee2c2140b044a6fede661920884cc8fa1fe004ba417dafd30bacad4c055f` |
+| 11 | `def` | [algebraMapComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/algebramapcomparison-source-edition-2.md) | 89 | `declaration-track:852df04ad8cfe5b05e603264e760883392a9c7f2f293c9642741b8e0a81bde4f` |
+| 12 | `structure` | [CoefficientChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/coefficientchange.md) | 96 | `declaration-track:3c1126f7bb961be7e1ba4f96b55f78181a5a725b3e8d3317819f9c0bc262ba77` |
+| 13 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/id.md) | 103 | `declaration-track:c0aaeb67fbc6a2f6879de2586c7038cb770c81b7f60c9aa3603bf0754c163085` |
+| 14 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/comp.md) | 107 | `declaration-track:f260183e4f206d1d9f0137683b0227e48c74bb0a6ff25d714272c49683a518bb` |
+| 15 | `theorem` | [id_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/id-apply.md) | 116 | `result-track:2e06178721d5244a0c340821508a239c25cb006a8cfaf2c910f2aa8c58938014` |
+| 16 | `theorem` | [comp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoefficientsNamespaced.lean/declarations/comp-apply.md) | 121 | `result-track:e56422e622864b2fd129c771283a4cff3a3e9fcfec22ca9cd05c320fa27b7169` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

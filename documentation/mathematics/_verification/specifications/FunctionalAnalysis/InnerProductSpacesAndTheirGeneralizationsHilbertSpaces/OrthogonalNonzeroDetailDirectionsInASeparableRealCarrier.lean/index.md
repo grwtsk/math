@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OrthogonalNonzeroDetailDirectionsInASeparableRealCarrier.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OrthogonalNonzeroDetailDirectionsInASeparableRealCarrier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OrthogonalNonzeroDetailDirectionsInASeparableRealCarrier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OrthogonalNonzeroDetailDirectionsInASeparableRealCarrier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [orthonormal_directions_countable](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OrthogonalNonzeroDetailDirectionsInASeparableRealCarrier.lean/declarations/orthonormal-directions-countable.md) | 23 | `result-track:5da39bbc41866222817bbdff570970e5d05a04176f762878ee249989faa9cf02` |
-| 2 | `theorem` | [nonzero_orthogonal_directions_countable](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OrthogonalNonzeroDetailDirectionsInASeparableRealCarrier.lean/declarations/nonzero-orthogonal-directions-countable.md) | 45 | `result-track:34f5be823b9db07a973fbf56609be080fcf2d148efccc23fc0828f19139e1e71` |
-| 3 | `theorem` | [summable_energy_active_support_countable](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OrthogonalNonzeroDetailDirectionsInASeparableRealCarrier.lean/declarations/summable-energy-active-support-countable.md) | 58 | `result-track:4191c231643903e493e8d7e8e31d4f40fd46fc2e5df50ed4ea98d32c5879a24b` |
+| 1 | `theorem` | [orthonormal_directions_countable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OrthogonalNonzeroDetailDirectionsInASeparableRealCarrier.lean/declarations/orthonormal-directions-countable.md) | 23 | `result-track:5da39bbc41866222817bbdff570970e5d05a04176f762878ee249989faa9cf02` |
+| 2 | `theorem` | [nonzero_orthogonal_directions_countable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OrthogonalNonzeroDetailDirectionsInASeparableRealCarrier.lean/declarations/nonzero-orthogonal-directions-countable.md) | 45 | `result-track:34f5be823b9db07a973fbf56609be080fcf2d148efccc23fc0828f19139e1e71` |
+| 3 | `theorem` | [summable_energy_active_support_countable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OrthogonalNonzeroDetailDirectionsInASeparableRealCarrier.lean/declarations/summable-energy-active-support-countable.md) | 58 | `result-track:4191c231643903e493e8d7e8e31d4f40fd46fc2e5df50ed4ea98d32c5879a24b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

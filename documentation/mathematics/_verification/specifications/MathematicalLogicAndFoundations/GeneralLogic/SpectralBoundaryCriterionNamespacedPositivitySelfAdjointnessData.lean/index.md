@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryCriterionNamespacedPositivitySelfAdjointnessData.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryCriterionNamespacedPositivitySelfAdjointnessData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryCriterionNamespacedPositivitySelfAdjointnessData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryCriterionNamespacedPositivitySelfAdjointnessData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PositivitySelfAdjointnessData](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryCriterionNamespacedPositivitySelfAdjointnessData.lean/declarations/positivityselfadjointnessdata.md) | 26 | `declaration-track:ec2601a29e8c12fb0657e7ce1a9e93dded202f84eb7c9c44e695e79f358aa916` |
-| 2 | `structure` | [SpectralBoundaryCriterion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryCriterionNamespacedPositivitySelfAdjointnessData.lean/declarations/spectralboundarycriterion.md) | 34 | `declaration-track:f422005e73b4340f066600da20c39bfcc1b3920a9a86176ec9c9a3f6dd13ba60` |
-| 3 | `theorem` | [positivity_rules_out_offcritical_resonances](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryCriterionNamespacedPositivitySelfAdjointnessData.lean/declarations/positivity-rules-out-offcritical-resonances.md) | 41 | `result-track:6555376f127b677475cbd4d3a026f7dc168c9b73e5e87c68b9d4a46e4886d43b` |
-| 4 | `theorem` | [spectral_boundary_alignment_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryCriterionNamespacedPositivitySelfAdjointnessData.lean/declarations/spectral-boundary-alignment-if-supplied.md) | 46 | `result-track:133129c7d88280d3ea709ad916f68c7ea05ecc3b928eeaf64340a8d41922dd4e` |
+| 1 | `structure` | [PositivitySelfAdjointnessData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryCriterionNamespacedPositivitySelfAdjointnessData.lean/declarations/positivityselfadjointnessdata.md) | 26 | `declaration-track:ec2601a29e8c12fb0657e7ce1a9e93dded202f84eb7c9c44e695e79f358aa916` |
+| 2 | `structure` | [SpectralBoundaryCriterion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryCriterionNamespacedPositivitySelfAdjointnessData.lean/declarations/spectralboundarycriterion.md) | 34 | `declaration-track:f422005e73b4340f066600da20c39bfcc1b3920a9a86176ec9c9a3f6dd13ba60` |
+| 3 | `theorem` | [positivity_rules_out_offcritical_resonances](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryCriterionNamespacedPositivitySelfAdjointnessData.lean/declarations/positivity-rules-out-offcritical-resonances.md) | 41 | `result-track:6555376f127b677475cbd4d3a026f7dc168c9b73e5e87c68b9d4a46e4886d43b` |
+| 4 | `theorem` | [spectral_boundary_alignment_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryCriterionNamespacedPositivitySelfAdjointnessData.lean/declarations/spectral-boundary-alignment-if-supplied.md) | 46 | `result-track:133129c7d88280d3ea709ad916f68c7ea05ecc3b928eeaf64340a8d41922dd4e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

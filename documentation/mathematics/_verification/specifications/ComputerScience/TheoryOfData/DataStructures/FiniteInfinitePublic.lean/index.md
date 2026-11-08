@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteInfinitePublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteInfinitePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteInfinitePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteInfinitePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [DFinsupp.fintype](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteInfinitePublic.lean/declarations/dfinsupp-fintype.md) | 31 | `declaration-track:62fb7d9a1f5393f25f1f1818c4ea535d9ca741f7eb459f95f939642a59e10096` |
-| 2 | `instance` | [DFinsupp.infinite_of_left](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteInfinitePublic.lean/declarations/dfinsupp-infinite-of-left.md) | 35 | `declaration-track:553575cd3076369d5bdfc5d55dbfe035f32afb493f74a2469d8c229cdb419902` |
-| 3 | `theorem` | [DFinsupp.infinite_of_exists_right](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteInfinitePublic.lean/declarations/dfinsupp-infinite-of-exists-right.md) | 42 | `result-track:10fe45c784a3c0c65bc6a40c68fb06666c2e9310029205baf0ca1eaeb5dba3ce` |
-| 4 | `instance` | [DFinsupp.infinite_of_right](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteInfinitePublic.lean/declarations/dfinsupp-infinite-of-right.md) | 48 | `declaration-track:4aa3e9d87df5bea207098c03676648d8153d5c39528f0481e714c910053941c8` |
+| 1 | `instance` | [DFinsupp.fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteInfinitePublic.lean/declarations/dfinsupp-fintype.md) | 31 | `declaration-track:62fb7d9a1f5393f25f1f1818c4ea535d9ca741f7eb459f95f939642a59e10096` |
+| 2 | `instance` | [DFinsupp.infinite_of_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteInfinitePublic.lean/declarations/dfinsupp-infinite-of-left.md) | 35 | `declaration-track:553575cd3076369d5bdfc5d55dbfe035f32afb493f74a2469d8c229cdb419902` |
+| 3 | `theorem` | [DFinsupp.infinite_of_exists_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteInfinitePublic.lean/declarations/dfinsupp-infinite-of-exists-right.md) | 42 | `result-track:10fe45c784a3c0c65bc6a40c68fb06666c2e9310029205baf0ca1eaeb5dba3ce` |
+| 4 | `instance` | [DFinsupp.infinite_of_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteInfinitePublic.lean/declarations/dfinsupp-infinite-of-right.md) | 48 | `declaration-track:4aa3e9d87df5bea207098c03676648d8153d5c39528f0481e714c910053941c8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ListPublicSatisfiesMFoldlM.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ListPublicSatisfiesMFoldlM.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ListPublicSatisfiesMFoldlM.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ListPublicSatisfiesMFoldlM.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [satisfiesM_foldlM](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ListPublicSatisfiesMFoldlM.lean/declarations/satisfiesm-foldlm.md) | 19 | `result-track:0a6b4a6c1f96c481c93172dccbfd2851c50f617b8c20dad390b7455769400375` |
-| 2 | `theorem` | [satisfiesM_foldrM](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ListPublicSatisfiesMFoldlM.lean/declarations/satisfiesm-foldrm.md) | 31 | `result-track:d9390812155bd81900b05803fb0dca21491b2e1598af8e68b14a6a5a6d3164b9` |
+| 1 | `theorem` | [satisfiesM_foldlM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ListPublicSatisfiesMFoldlM.lean/declarations/satisfiesm-foldlm.md) | 19 | `result-track:0a6b4a6c1f96c481c93172dccbfd2851c50f617b8c20dad390b7455769400375` |
+| 2 | `theorem` | [satisfiesM_foldrM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ListPublicSatisfiesMFoldlM.lean/declarations/satisfiesm-foldrm.md) | 31 | `result-track:d9390812155bd81900b05803fb0dca21491b2e1598af8e68b14a6a5a6d3164b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

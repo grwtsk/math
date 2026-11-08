@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicWordFromBalancedSupport.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicWordFromBalancedSupport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicWordFromBalancedSupport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicWordFromBalancedSupport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.DirectedEulerActiveSupport`](../../../../Combinatorics/DirectedEulerActiveSupport.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.CountedCyclicEulerFromClosedWalk`](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicEulerFromClosedWalk.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Combinatorics.DirectedEulerActiveSupport`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerActiveSupport.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.CountedCyclicEulerFromClosedWalk`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicEulerFromClosedWalk.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [countedBinaryEdgeInstanceSupply](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicWordFromBalancedSupport.lean/declarations/countedbinaryedgeinstancesupply.md) | 26 | `declaration-track:2f328b66326804c6e41bb9d33204fa0acd8db43b1a1974deec733343e07442ab` |
-| 2 | `theorem` | [mem_countedBinaryEdgeInstanceSupply](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicWordFromBalancedSupport.lean/declarations/mem-countedbinaryedgeinstancesupply.md) | 34 | `result-track:3d8adb3dca0a31601858ecd53265febd4c39e667767bd7d9f248d41f803cd89c` |
-| 3 | `theorem` | [countedBinaryEdgeInstanceSupply_card](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicWordFromBalancedSupport.lean/declarations/countedbinaryedgeinstancesupply-card.md) | 44 | `result-track:05e284e92de88d46ae5295a019a4d5799c3425fbe1204756f40d05481866d99a` |
-| 4 | `theorem` | [exists_cyclicBinaryWord_of_balanced_connected_counted_support](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicWordFromBalancedSupport.lean/declarations/exists-cyclicbinaryword-of-balanced-connected-counted-support.md) | 83 | `result-track:babcc350672566123b25bff48effc0973046621795389a8fb8b193d135e8164b` |
-| 5 | `theorem` | [cyclicCountRealizable_of_balanced_connected_counted_support](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicWordFromBalancedSupport.lean/declarations/cycliccountrealizable-of-balanced-connected-counted-support.md) | 100 | `result-track:a66b6a8168d349070f2b7dcf56466cf0e3d41de8d90d1b91a8d56dc4d4ad7581` |
+| 1 | `def` | [countedBinaryEdgeInstanceSupply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicWordFromBalancedSupport.lean/declarations/countedbinaryedgeinstancesupply.md) | 26 | `declaration-track:2f328b66326804c6e41bb9d33204fa0acd8db43b1a1974deec733343e07442ab` |
+| 2 | `theorem` | [mem_countedBinaryEdgeInstanceSupply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicWordFromBalancedSupport.lean/declarations/mem-countedbinaryedgeinstancesupply.md) | 34 | `result-track:3d8adb3dca0a31601858ecd53265febd4c39e667767bd7d9f248d41f803cd89c` |
+| 3 | `theorem` | [countedBinaryEdgeInstanceSupply_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicWordFromBalancedSupport.lean/declarations/countedbinaryedgeinstancesupply-card.md) | 44 | `result-track:05e284e92de88d46ae5295a019a4d5799c3425fbe1204756f40d05481866d99a` |
+| 4 | `theorem` | [exists_cyclicBinaryWord_of_balanced_connected_counted_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicWordFromBalancedSupport.lean/declarations/exists-cyclicbinaryword-of-balanced-connected-counted-support.md) | 83 | `result-track:babcc350672566123b25bff48effc0973046621795389a8fb8b193d135e8164b` |
+| 5 | `theorem` | [cyclicCountRealizable_of_balanced_connected_counted_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicWordFromBalancedSupport.lean/declarations/cycliccountrealizable-of-balanced-connected-counted-support.md) | 100 | `result-track:a66b6a8168d349070f2b7dcf56466cf0e3d41de8d90d1b91a8d56dc4d4ad7581` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

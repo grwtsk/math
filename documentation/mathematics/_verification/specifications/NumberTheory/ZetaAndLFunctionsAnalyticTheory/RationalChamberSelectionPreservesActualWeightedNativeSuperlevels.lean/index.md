@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalChamberSelectionPreservesActualWeightedNativeSuperlevels.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalChamberSelectionPreservesActualWeightedNativeSuperlevels.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalChamberSelectionPreservesActualWeightedNativeSuperlevels.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalChamberSelectionPreservesActualWeightedNativeSuperlevels.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [chamber_preserves_superlevel_mass](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalChamberSelectionPreservesActualWeightedNativeSuperlevels.lean/declarations/chamber-preserves-superlevel-mass.md) | 27 | `result-track:86d47f36cea59a1300efebe5cb3e498f545f9f811c0cf8b78060b8a6ab6c7080` |
-| 2 | `theorem` | [selected_rational_recovers_atomic_mass](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalChamberSelectionPreservesActualWeightedNativeSuperlevels.lean/declarations/selected-rational-recovers-atomic-mass.md) | 44 | `result-track:f94ca22126ce96d152c17a2efd7211c24b9d27c95d71ef0b92ea96bb626ed83b` |
-| 3 | `theorem` | [selected_rational_recovers_actual_native_Q](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalChamberSelectionPreservesActualWeightedNativeSuperlevels.lean/declarations/selected-rational-recovers-actual-native-q.md) | 54 | `result-track:ae335cb2d6267846fcc33ba3da9798ac57d42c59c066d559a70cac8fa039a096` |
+| 1 | `theorem` | [chamber_preserves_superlevel_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalChamberSelectionPreservesActualWeightedNativeSuperlevels.lean/declarations/chamber-preserves-superlevel-mass.md) | 27 | `result-track:86d47f36cea59a1300efebe5cb3e498f545f9f811c0cf8b78060b8a6ab6c7080` |
+| 2 | `theorem` | [selected_rational_recovers_atomic_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalChamberSelectionPreservesActualWeightedNativeSuperlevels.lean/declarations/selected-rational-recovers-atomic-mass.md) | 44 | `result-track:f94ca22126ce96d152c17a2efd7211c24b9d27c95d71ef0b92ea96bb626ed83b` |
+| 3 | `theorem` | [selected_rational_recovers_actual_native_Q](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalChamberSelectionPreservesActualWeightedNativeSuperlevels.lean/declarations/selected-rational-recovers-actual-native-q.md) | 54 | `result-track:ae335cb2d6267846fcc33ba3da9798ac57d42c59c066d559a70cac8fa039a096` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

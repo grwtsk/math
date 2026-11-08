@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNatNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNatNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNatNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNatNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instOrderBot](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNatNamespaced.lean/declarations/instorderbot.md) | 32 | `declaration-track:639eafc20881fcac8047c406dcda92fab7f33539101f9e628957780db7a77ed5` |
-| 2 | `instance` | [instNoMaxOrder](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNatNamespaced.lean/declarations/instnomaxorder.md) | 36 | `declaration-track:aceb8f73ccef28f428437dea453fbc0a2996c545dee327a4cbbff7c12be011ed` |
-| 3 | `lemma` | [bot_eq_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNatNamespaced.lean/declarations/bot-eq-zero.md) | 41 | `result-track:c2ff78d0bbecd55060bc1bb1280e12cc334c1e9ad4ba62a11b2e2dc4d0fedd26` |
-| 4 | `lemma` | [isLeast_find](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNatNamespaced.lean/declarations/isleast-find.md) | 44 | `result-track:c6b55236935618c96e531a1cd77b22b4c87ebe267714360876719610d27abae4` |
-| 5 | `lemma` | [Set.Nonempty.isLeast_natFind](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNatNamespaced.lean/declarations/set-nonempty-isleast-natfind.md) | 51 | `result-track:aaf50145637f956bb8ab691dafd87bba0ab816642efb82eea0284d9245d50d86` |
+| 1 | `instance` | [instOrderBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNatNamespaced.lean/declarations/instorderbot.md) | 32 | `declaration-track:639eafc20881fcac8047c406dcda92fab7f33539101f9e628957780db7a77ed5` |
+| 2 | `instance` | [instNoMaxOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNatNamespaced.lean/declarations/instnomaxorder.md) | 36 | `declaration-track:aceb8f73ccef28f428437dea453fbc0a2996c545dee327a4cbbff7c12be011ed` |
+| 3 | `lemma` | [bot_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNatNamespaced.lean/declarations/bot-eq-zero.md) | 41 | `result-track:c2ff78d0bbecd55060bc1bb1280e12cc334c1e9ad4ba62a11b2e2dc4d0fedd26` |
+| 4 | `lemma` | [isLeast_find](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNatNamespaced.lean/declarations/isleast-find.md) | 44 | `result-track:c6b55236935618c96e531a1cd77b22b4c87ebe267714360876719610d27abae4` |
+| 5 | `lemma` | [Set.Nonempty.isLeast_natFind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNatNamespaced.lean/declarations/set-nonempty-isleast-natfind.md) | 51 | `result-track:aaf50145637f956bb8ab691dafd87bba0ab816642efb82eea0284d9245d50d86` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

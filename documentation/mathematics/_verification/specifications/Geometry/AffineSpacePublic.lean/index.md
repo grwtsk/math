@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/AffineSpacePublic.lean/index.md) · [Full source](../../../../Geometry/AffineSpacePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpacePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpacePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [convexCombination](../../../../Geometry/AffineSpacePublic.lean/declarations/convexcombination.md) | 39 | `declaration-track:1a358755bd4a08a6928b25489e215ef7188e4ac96039007016c16787b6df2860` |
-| 2 | `theorem` | [convexCombination_single](../../../../Geometry/AffineSpacePublic.lean/declarations/convexcombination-single.md) | 42 | `result-track:2cdfc97a305bd82adc091c4d6ae5618d9afe5383f6c5ce65ca4ca0aeaefcc4c9` |
-| 3 | `theorem` | [convexCombination_assoc](../../../../Geometry/AffineSpacePublic.lean/declarations/convexcombination-assoc.md) | 49 | `result-track:b477aeb3e7ba86adc1bd128ff083998a2d51794e26f74cf8b77e42debb3f1bff` |
-| 4 | `def` | [ConvexSpace.ofAddTorsor](../../../../Geometry/AffineSpacePublic.lean/declarations/convexspace-ofaddtorsor.md) | 109 | `declaration-track:3fcfaf4f423a6266674b765ed1b5bc6317024200fa6e0010467deeef46b0efaf` |
-| 5 | `class` | [IsAffineConvexSpace](../../../../Geometry/AffineSpacePublic.lean/declarations/isaffineconvexspace.md) | 120 | `declaration-track:175ef63e4393f32365b40e42db4e90107c94eacd6545b7ef9ed415e7776c872f` |
-| 6 | `instance` | [IsAffineConvexSpace.ofAddTorsor](../../../../Geometry/AffineSpacePublic.lean/declarations/isaffineconvexspace-ofaddtorsor.md) | 125 | `declaration-track:a3e58c753a7a6ba3352ec5b7a8f529de2c6f94d610472a75ab3741e5430653d9` |
-| 7 | `instance` | [IsModuleConvexSpace.isAffineConvexSpace](../../../../Geometry/AffineSpacePublic.lean/declarations/ismoduleconvexspace-isaffineconvexspace.md) | 128 | `declaration-track:15a26c1871d518ee5101c7782a65c22376c171e950c5e7b0e0fc091631ac328e` |
-| 8 | `theorem` | [sConvexComb_eq_affineCombination](../../../../Geometry/AffineSpacePublic.lean/declarations/sconvexcomb-eq-affinecombination.md) | 147 | `result-track:4f4f1b05a65de811d8dddea9e4e2aef1864d48616c4d85275ff77180b575aa89` |
-| 9 | `theorem` | [iConvexComb_eq_affineCombination](../../../../Geometry/AffineSpacePublic.lean/declarations/iconvexcomb-eq-affinecombination.md) | 154 | `result-track:000ea8855be6fc37e3eacba4eb61d4b1f50ae3d614f1bdd4e2ee12baf78d0305` |
-| 10 | `theorem` | [convexCombPair_eq_lineMap](../../../../Geometry/AffineSpacePublic.lean/declarations/convexcombpair-eq-linemap.md) | 167 | `result-track:90cbc0508b324d7a99f66d7fb35c8c0f29110eb08a5a229ff8e509345973d2cd` |
+| 1 | `def` | [convexCombination](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpacePublic.lean/declarations/convexcombination.md) | 39 | `declaration-track:1a358755bd4a08a6928b25489e215ef7188e4ac96039007016c16787b6df2860` |
+| 2 | `theorem` | [convexCombination_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpacePublic.lean/declarations/convexcombination-single.md) | 42 | `result-track:2cdfc97a305bd82adc091c4d6ae5618d9afe5383f6c5ce65ca4ca0aeaefcc4c9` |
+| 3 | `theorem` | [convexCombination_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpacePublic.lean/declarations/convexcombination-assoc.md) | 49 | `result-track:b477aeb3e7ba86adc1bd128ff083998a2d51794e26f74cf8b77e42debb3f1bff` |
+| 4 | `def` | [ConvexSpace.ofAddTorsor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpacePublic.lean/declarations/convexspace-ofaddtorsor.md) | 109 | `declaration-track:3fcfaf4f423a6266674b765ed1b5bc6317024200fa6e0010467deeef46b0efaf` |
+| 5 | `class` | [IsAffineConvexSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpacePublic.lean/declarations/isaffineconvexspace.md) | 120 | `declaration-track:175ef63e4393f32365b40e42db4e90107c94eacd6545b7ef9ed415e7776c872f` |
+| 6 | `instance` | [IsAffineConvexSpace.ofAddTorsor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpacePublic.lean/declarations/isaffineconvexspace-ofaddtorsor.md) | 125 | `declaration-track:a3e58c753a7a6ba3352ec5b7a8f529de2c6f94d610472a75ab3741e5430653d9` |
+| 7 | `instance` | [IsModuleConvexSpace.isAffineConvexSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpacePublic.lean/declarations/ismoduleconvexspace-isaffineconvexspace.md) | 128 | `declaration-track:15a26c1871d518ee5101c7782a65c22376c171e950c5e7b0e0fc091631ac328e` |
+| 8 | `theorem` | [sConvexComb_eq_affineCombination](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpacePublic.lean/declarations/sconvexcomb-eq-affinecombination.md) | 147 | `result-track:4f4f1b05a65de811d8dddea9e4e2aef1864d48616c4d85275ff77180b575aa89` |
+| 9 | `theorem` | [iConvexComb_eq_affineCombination](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpacePublic.lean/declarations/iconvexcomb-eq-affinecombination.md) | 154 | `result-track:000ea8855be6fc37e3eacba4eb61d4b1f50ae3d614f1bdd4e2ee12baf78d0305` |
+| 10 | `theorem` | [convexCombPair_eq_lineMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpacePublic.lean/declarations/convexcombpair-eq-linemap.md) | 167 | `result-track:90cbc0508b324d7a99f66d7fb35c8c0f29110eb08a5a229ff8e509345973d2cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

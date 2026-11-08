@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Locale](../../../../GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/declarations/locale.md) | 32 | `declaration-track:c22f62c64c359e8674e90d1eff3fe8cd9a3234f53fb3e00e19e725fc9529ff6d` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:3bce6d85a7e7af346940e3eb7690e590431c291e4bb3a2b74662ce49f3aa1ce2` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/declarations/instance-source-edition-3.md) | 41 | `declaration-track:e97d326359a59b93903f6c0ac92dc6ed63ed3274c3b9b9156b350576d9597df2` |
-| 4 | `def` | [of](../../../../GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/declarations/of.md) | 45 | `declaration-track:a87b4aafba12a5220880817ee5add055d7ac893111d1a2ec47dd72c5d289d16d` |
-| 5 | `theorem` | [coe_of](../../../../GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/declarations/coe-of.md) | 50 | `result-track:6b3e2c079ed1044056da5a4e0843c76b56efab55002c74dd25eb1be9edfd3737` |
-| 6 | `instance` | [(anonymous)](../../../../GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/declarations/instance.md) | 54 | `declaration-track:0cbda78c0f766a24e14aa9ac317cad78c79da2f7bdd9e1e2ba53cd0c0a900429` |
-| 7 | `def` | [topToLocale](../../../../GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/declarations/toptolocale.md) | 62 | `declaration-track:1813cfa53ce981f6120e542cdf4727967dfbd43cb6b625c01ceb71bf3e58daf4` |
-| 8 | `instance` | [CompHausToLocale.faithful](../../../../GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/declarations/comphaustolocale-faithful.md) | 67 | `declaration-track:328389ea912f799f55a92cfe556f00c7e5f3b68c350110d80cefd3a2df40cdff` |
+| 1 | `def` | [Locale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/declarations/locale.md) | 32 | `declaration-track:c22f62c64c359e8674e90d1eff3fe8cd9a3234f53fb3e00e19e725fc9529ff6d` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:3bce6d85a7e7af346940e3eb7690e590431c291e4bb3a2b74662ce49f3aa1ce2` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/declarations/instance-source-edition-3.md) | 41 | `declaration-track:e97d326359a59b93903f6c0ac92dc6ed63ed3274c3b9b9156b350576d9597df2` |
+| 4 | `def` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/declarations/of.md) | 45 | `declaration-track:a87b4aafba12a5220880817ee5add055d7ac893111d1a2ec47dd72c5d289d16d` |
+| 5 | `theorem` | [coe_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/declarations/coe-of.md) | 50 | `result-track:6b3e2c079ed1044056da5a4e0843c76b56efab55002c74dd25eb1be9edfd3737` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/declarations/instance.md) | 54 | `declaration-track:0cbda78c0f766a24e14aa9ac317cad78c79da2f7bdd9e1e2ba53cd0c0a900429` |
+| 7 | `def` | [topToLocale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/declarations/toptolocale.md) | 62 | `declaration-track:1813cfa53ce981f6120e542cdf4727967dfbd43cb6b625c01ceb71bf3e58daf4` |
+| 8 | `instance` | [CompHausToLocale.faithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CategoryLocaleLocaleNamespacedSourceEdition1.lean/declarations/comphaustolocale-faithful.md) | 67 | `declaration-track:328389ea912f799f55a92cfe556f00c7e5f3b68c350110d80cefd3a2df40cdff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/SubtypeNeLiftNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/SubtypeNeLiftNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SubtypeNeLiftNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SubtypeNeLiftNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [subtypeNeLift](../../../../../../ComputerScience/TheoryOfData/DataStructures/SubtypeNeLiftNamespacedPublic.lean/declarations/subtypenelift.md) | 37 | `declaration-track:4ddd67ef096c5147fc3a9a4548c53de9cab7990398ae5719f3212be4bb50fcd1` |
-| 2 | `lemma` | [subtypeNeLift_self](../../../../../../ComputerScience/TheoryOfData/DataStructures/SubtypeNeLiftNamespacedPublic.lean/declarations/subtypenelift-self.md) | 41 | `result-track:850f07b08dc67a43a8d0d955a894c9b459b8e059f8680971e411ec78dc1a32f3` |
-| 3 | `lemma` | [subtypeNeLift_of_neq](../../../../../../ComputerScience/TheoryOfData/DataStructures/SubtypeNeLiftNamespacedPublic.lean/declarations/subtypenelift-of-neq.md) | 43 | `result-track:c2494a96ea006271d1199a6f68365ef288b3ff23631e6d9a9cbf64f8651b8ca1` |
-| 4 | `lemma` | [subtypeNeLift_restriction](../../../../../../ComputerScience/TheoryOfData/DataStructures/SubtypeNeLiftNamespacedPublic.lean/declarations/subtypenelift-restriction.md) | 47 | `result-track:56c72e14f02b43d7a1ba6f24ef37207e65e2de44604ed151e404a3df002df827` |
+| 1 | `def` | [subtypeNeLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SubtypeNeLiftNamespacedPublic.lean/declarations/subtypenelift.md) | 37 | `declaration-track:4ddd67ef096c5147fc3a9a4548c53de9cab7990398ae5719f3212be4bb50fcd1` |
+| 2 | `lemma` | [subtypeNeLift_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SubtypeNeLiftNamespacedPublic.lean/declarations/subtypenelift-self.md) | 41 | `result-track:850f07b08dc67a43a8d0d955a894c9b459b8e059f8680971e411ec78dc1a32f3` |
+| 3 | `lemma` | [subtypeNeLift_of_neq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SubtypeNeLiftNamespacedPublic.lean/declarations/subtypenelift-of-neq.md) | 43 | `result-track:c2494a96ea006271d1199a6f68365ef288b3ff23631e6d9a9cbf64f8651b8ca1` |
+| 4 | `lemma` | [subtypeNeLift_restriction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SubtypeNeLiftNamespacedPublic.lean/declarations/subtypenelift-restriction.md) | 47 | `result-track:56c72e14f02b43d7a1ba6f24ef37207e65e2de44604ed151e404a3df002df827` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

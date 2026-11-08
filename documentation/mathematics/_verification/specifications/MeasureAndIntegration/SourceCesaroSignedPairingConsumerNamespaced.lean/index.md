@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceCesaroSignedPairingConsumerNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceCesaroSignedPairingConsumerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCesaroSignedPairingConsumerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCesaroSignedPairingConsumerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [signedCesaroPairing](../../../../MeasureAndIntegration/SourceCesaroSignedPairingConsumerNamespaced.lean/declarations/signedcesaropairing.md) | 34 | `declaration-track:05d16f7cfaa59831f091a66e7f22c60481d2ce6a18dd98806129d5cf2f3cef26` |
-| 2 | `theorem` | [signedCesaroPairing_le_remainingAtomWork](../../../../MeasureAndIntegration/SourceCesaroSignedPairingConsumerNamespaced.lean/declarations/signedcesaropairing-le-remainingatomwork.md) | 39 | `result-track:74dcf24ca41313156d3c0302269f5a36c15cdf6c807af22d06d2065d2aec97a9` |
-| 3 | `theorem` | [remainingAtomWork_lower_of_signed_pairing](../../../../MeasureAndIntegration/SourceCesaroSignedPairingConsumerNamespaced.lean/declarations/remainingatomwork-lower-of-signed-pairing.md) | 51 | `result-track:21efda7e9897c5ba351bd2de9d0d72fc1cb1bc731a4a5a1e98a623839f3cfbb9` |
-| 4 | `theorem` | [all_real_source_lower_of_signed_pairing](../../../../MeasureAndIntegration/SourceCesaroSignedPairingConsumerNamespaced.lean/declarations/all-real-source-lower-of-signed-pairing.md) | 57 | `result-track:a7a2fcbeec3776abee4119ce3e08f87e2e0a1b6a4aff0b43ffc14c3411073881` |
-| 5 | `theorem` | [estimate_of_signed_pairing](../../../../MeasureAndIntegration/SourceCesaroSignedPairingConsumerNamespaced.lean/declarations/estimate-of-signed-pairing.md) | 69 | `result-track:e615e722d2f716b62c990c8cec9ccdee12c1bbe69c597df8ab99f3b4ebcbd206` |
-| 6 | `theorem` | [estimate_of_signed_pairing_exists](../../../../MeasureAndIntegration/SourceCesaroSignedPairingConsumerNamespaced.lean/declarations/estimate-of-signed-pairing-exists.md) | 77 | `result-track:8bd7347dc7908e0338335c037f45b753ba3876c6d5485a8b2191300f059b958f` |
+| 1 | `def` | [signedCesaroPairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCesaroSignedPairingConsumerNamespaced.lean/declarations/signedcesaropairing.md) | 34 | `declaration-track:05d16f7cfaa59831f091a66e7f22c60481d2ce6a18dd98806129d5cf2f3cef26` |
+| 2 | `theorem` | [signedCesaroPairing_le_remainingAtomWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCesaroSignedPairingConsumerNamespaced.lean/declarations/signedcesaropairing-le-remainingatomwork.md) | 39 | `result-track:74dcf24ca41313156d3c0302269f5a36c15cdf6c807af22d06d2065d2aec97a9` |
+| 3 | `theorem` | [remainingAtomWork_lower_of_signed_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCesaroSignedPairingConsumerNamespaced.lean/declarations/remainingatomwork-lower-of-signed-pairing.md) | 51 | `result-track:21efda7e9897c5ba351bd2de9d0d72fc1cb1bc731a4a5a1e98a623839f3cfbb9` |
+| 4 | `theorem` | [all_real_source_lower_of_signed_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCesaroSignedPairingConsumerNamespaced.lean/declarations/all-real-source-lower-of-signed-pairing.md) | 57 | `result-track:a7a2fcbeec3776abee4119ce3e08f87e2e0a1b6a4aff0b43ffc14c3411073881` |
+| 5 | `theorem` | [estimate_of_signed_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCesaroSignedPairingConsumerNamespaced.lean/declarations/estimate-of-signed-pairing.md) | 69 | `result-track:e615e722d2f716b62c990c8cec9ccdee12c1bbe69c597df8ab99f3b4ebcbd206` |
+| 6 | `theorem` | [estimate_of_signed_pairing_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCesaroSignedPairingConsumerNamespaced.lean/declarations/estimate-of-signed-pairing-exists.md) | 77 | `result-track:8bd7347dc7908e0338335c037f45b753ba3876c6d5485a8b2191300f059b958f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TotalSpaceNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TotalSpaceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TotalSpaceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TotalSpaceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [TotalSpace](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TotalSpaceNamespaced.lean/declarations/totalspace.md) | 29 | `declaration-track:1a8923d1d93d33e638b4935d6196839d43b4e4adae35d6deb4adac19574468c7` |
-| 2 | `def` | [projection](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TotalSpaceNamespaced.lean/declarations/projection.md) | 33 | `declaration-track:8f687ab3bc76d14439a1941bb58ae6382ab31dedab60f9a38f32c8936c0e58cc` |
-| 3 | `theorem` | [projection_mk](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TotalSpaceNamespaced.lean/declarations/projection-mk.md) | 38 | `result-track:c900d060b4b1494846b6f4a82e99df970361c146cbafac1d9e44536d45d2eb37` |
+| 1 | `def` | [TotalSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TotalSpaceNamespaced.lean/declarations/totalspace.md) | 29 | `declaration-track:1a8923d1d93d33e638b4935d6196839d43b4e4adae35d6deb4adac19574468c7` |
+| 2 | `def` | [projection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TotalSpaceNamespaced.lean/declarations/projection.md) | 33 | `declaration-track:8f687ab3bc76d14439a1941bb58ae6382ab31dedab60f9a38f32c8936c0e58cc` |
+| 3 | `theorem` | [projection_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TotalSpaceNamespaced.lean/declarations/projection-mk.md) | 38 | `result-track:c900d060b4b1494846b6f4a82e99df970361c146cbafac1d9e44536d45d2eb37` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

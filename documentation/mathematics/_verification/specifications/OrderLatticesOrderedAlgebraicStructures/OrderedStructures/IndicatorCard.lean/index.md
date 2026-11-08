@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IndicatorCard.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IndicatorCard.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IndicatorCard.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IndicatorCard.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [sum_indicator_eventually_eq_card](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IndicatorCard.lean/declarations/sum-indicator-eventually-eq-card.md) | 26 | `result-track:965a5c5ec57dd3aae5c5cb0579cd5e788295aa9dd5e0c7ba74f0ba0bfab6368a` |
-| 2 | `lemma` | [infinite_iff_tendsto_sum_indicator_atTop](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IndicatorCard.lean/declarations/infinite-iff-tendsto-sum-indicator-attop.md) | 39 | `result-track:56e58ee7086b74ed072c5d49c9fc70c3c64b86a7d187f46f49197ed2367ff7a9` |
-| 3 | `lemma` | [limsup_eq_tendsto_sum_indicator_atTop](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IndicatorCard.lean/declarations/limsup-eq-tendsto-sum-indicator-attop.md) | 67 | `result-track:c84779c8abe32595825b310313e263bd5386f4519751d7ed76b612642ca15938` |
+| 1 | `lemma` | [sum_indicator_eventually_eq_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IndicatorCard.lean/declarations/sum-indicator-eventually-eq-card.md) | 26 | `result-track:965a5c5ec57dd3aae5c5cb0579cd5e788295aa9dd5e0c7ba74f0ba0bfab6368a` |
+| 2 | `lemma` | [infinite_iff_tendsto_sum_indicator_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IndicatorCard.lean/declarations/infinite-iff-tendsto-sum-indicator-attop.md) | 39 | `result-track:56e58ee7086b74ed072c5d49c9fc70c3c64b86a7d187f46f49197ed2367ff7a9` |
+| 3 | `lemma` | [limsup_eq_tendsto_sum_indicator_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IndicatorCard.lean/declarations/limsup-eq-tendsto-sum-indicator-attop.md) | 67 | `result-track:c84779c8abe32595825b310313e263bd5386f4519751d7ed76b612642ca15938` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

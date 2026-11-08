@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/NonZeroDivisorsPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/NonZeroDivisorsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonZeroDivisorsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonZeroDivisorsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [ringKrullDim_quotient](../../../../CommutativeAlgebra/NonZeroDivisorsPublic.lean/declarations/ringkrulldim-quotient.md) | 31 | `result-track:b7671ad4cb09e4939e7d0d055872f56f1fc10af9a0a6f0f14969817904e3bebd` |
-| 2 | `lemma` | [ringKrullDim_quotient_succ_le_of_nonZeroDivisor](../../../../CommutativeAlgebra/NonZeroDivisorsPublic.lean/declarations/ringkrulldim-quotient-succ-le-of-nonzerodivisor.md) | 36 | `result-track:b606a424f92824e68abce03517df1cc05c15aae9ad2796e4b94cf4d0129af66f` |
-| 3 | `lemma` | [ringKrullDim_succ_le_of_surjective](../../../../CommutativeAlgebra/NonZeroDivisorsPublic.lean/declarations/ringkrulldim-succ-le-of-surjective.md) | 60 | `result-track:fdd6960696965a9f6e4f39aa093ae00d4443e6ccd1a1ca2412c8001af85e1a60` |
-| 4 | `lemma` | [ringKrullDim_succ_le_ringKrullDim_polynomial](../../../../CommutativeAlgebra/NonZeroDivisorsPublic.lean/declarations/ringkrulldim-succ-le-ringkrulldim-polynomial.md) | 68 | `result-track:c32d05eb1f6a19d1513ff706e318bad4192ddcc1f12ec364628220d03d0bc1ba` |
-| 5 | `lemma` | [ringKrullDim_mvPolynomial_of_isEmpty](../../../../CommutativeAlgebra/NonZeroDivisorsPublic.lean/declarations/ringkrulldim-mvpolynomial-of-isempty.md) | 75 | `result-track:ea9ddf7eaf6b949776d2b34baaca9114f5d47169fb903ad2b1444e8e70ab5ac1` |
-| 6 | `lemma` | [ringKrullDim_add_natCard_le_ringKrullDim_mvPolynomial](../../../../CommutativeAlgebra/NonZeroDivisorsPublic.lean/declarations/ringkrulldim-add-natcard-le-ringkrulldim-mvpolynomial.md) | 80 | `result-track:de4d8577a4f02e0e9661083dbe16a25c4d357e811506eeeb96a9accaa265f515` |
-| 7 | `lemma` | [ringKrullDim_add_enatCard_le_ringKrullDim_mvPolynomial](../../../../CommutativeAlgebra/NonZeroDivisorsPublic.lean/declarations/ringkrulldim-add-enatcard-le-ringkrulldim-mvpolynomial.md) | 95 | `result-track:d54a940133d4f9b6cbcdee69e48714888aa42d52c712159d385bd3bf6f098ca8` |
-| 8 | `lemma` | [ringKrullDim_mvPolynomial_of_infinite](../../../../CommutativeAlgebra/NonZeroDivisorsPublic.lean/declarations/ringkrulldim-mvpolynomial-of-infinite.md) | 120 | `result-track:d3d7b135f427eaa73a3e54a7f2a6b3b14c14919181062c8bda8f1a07a58a72f8` |
-| 9 | `lemma` | [ringKrullDim_succ_le_ringKrullDim_powerseries](../../../../CommutativeAlgebra/NonZeroDivisorsPublic.lean/declarations/ringkrulldim-succ-le-ringkrulldim-powerseries.md) | 126 | `result-track:69b9716b6a49db87f9325decb681fc430b687a67056a978546395def5e7cad32` |
+| 1 | `lemma` | [ringKrullDim_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonZeroDivisorsPublic.lean/declarations/ringkrulldim-quotient.md) | 31 | `result-track:b7671ad4cb09e4939e7d0d055872f56f1fc10af9a0a6f0f14969817904e3bebd` |
+| 2 | `lemma` | [ringKrullDim_quotient_succ_le_of_nonZeroDivisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonZeroDivisorsPublic.lean/declarations/ringkrulldim-quotient-succ-le-of-nonzerodivisor.md) | 36 | `result-track:b606a424f92824e68abce03517df1cc05c15aae9ad2796e4b94cf4d0129af66f` |
+| 3 | `lemma` | [ringKrullDim_succ_le_of_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonZeroDivisorsPublic.lean/declarations/ringkrulldim-succ-le-of-surjective.md) | 60 | `result-track:fdd6960696965a9f6e4f39aa093ae00d4443e6ccd1a1ca2412c8001af85e1a60` |
+| 4 | `lemma` | [ringKrullDim_succ_le_ringKrullDim_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonZeroDivisorsPublic.lean/declarations/ringkrulldim-succ-le-ringkrulldim-polynomial.md) | 68 | `result-track:c32d05eb1f6a19d1513ff706e318bad4192ddcc1f12ec364628220d03d0bc1ba` |
+| 5 | `lemma` | [ringKrullDim_mvPolynomial_of_isEmpty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonZeroDivisorsPublic.lean/declarations/ringkrulldim-mvpolynomial-of-isempty.md) | 75 | `result-track:ea9ddf7eaf6b949776d2b34baaca9114f5d47169fb903ad2b1444e8e70ab5ac1` |
+| 6 | `lemma` | [ringKrullDim_add_natCard_le_ringKrullDim_mvPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonZeroDivisorsPublic.lean/declarations/ringkrulldim-add-natcard-le-ringkrulldim-mvpolynomial.md) | 80 | `result-track:de4d8577a4f02e0e9661083dbe16a25c4d357e811506eeeb96a9accaa265f515` |
+| 7 | `lemma` | [ringKrullDim_add_enatCard_le_ringKrullDim_mvPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonZeroDivisorsPublic.lean/declarations/ringkrulldim-add-enatcard-le-ringkrulldim-mvpolynomial.md) | 95 | `result-track:d54a940133d4f9b6cbcdee69e48714888aa42d52c712159d385bd3bf6f098ca8` |
+| 8 | `lemma` | [ringKrullDim_mvPolynomial_of_infinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonZeroDivisorsPublic.lean/declarations/ringkrulldim-mvpolynomial-of-infinite.md) | 120 | `result-track:d3d7b135f427eaa73a3e54a7f2a6b3b14c14919181062c8bda8f1a07a58a72f8` |
+| 9 | `lemma` | [ringKrullDim_succ_le_ringKrullDim_powerseries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonZeroDivisorsPublic.lean/declarations/ringkrulldim-succ-le-ringkrulldim-powerseries.md) | 126 | `result-track:69b9716b6a49db87f9325decb681fc430b687a67056a978546395def5e7cad32` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

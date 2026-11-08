@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianComonNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianComonNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianComonNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianComonNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cartesianComon_](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianComonNamespaced.lean/declarations/cartesiancomon.md) | 38 | `declaration-track:3336fd13c96c8a63689df0cce66a7deb94d3dfa3c1cc7d531a0758523d483736` |
-| 2 | `theorem` | [counit_eq_toUnit](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianComonNamespaced.lean/declarations/counit-eq-tounit.md) | 48 | `result-track:1c40dc5675c464c0919a0362d7fac1186ca680ec543f1be36fd4397a619be056` |
-| 3 | `theorem` | [comul_eq_lift](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianComonNamespaced.lean/declarations/comul-eq-lift.md) | 52 | `result-track:fe740e029fb9ddc076e688285ac2ed6082f6f0a847d27490eca0f705eff7a3e0` |
-| 4 | `def` | [iso_cartesianComon_](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianComonNamespaced.lean/declarations/iso-cartesiancomon.md) | 63 | `declaration-track:a0ea032a67a5c77b0e2c406981cbe52e03f18d1d87099d58811a7dfcc0e08e1f` |
-| 5 | `def` | [comonEquiv](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianComonNamespaced.lean/declarations/comonequiv.md) | 71 | `declaration-track:f94d4935f4c0e1572ac8b54af3495736cffdf581f9f122995f0fc493dfc633f3` |
+| 1 | `def` | [cartesianComon_](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianComonNamespaced.lean/declarations/cartesiancomon.md) | 38 | `declaration-track:3336fd13c96c8a63689df0cce66a7deb94d3dfa3c1cc7d531a0758523d483736` |
+| 2 | `theorem` | [counit_eq_toUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianComonNamespaced.lean/declarations/counit-eq-tounit.md) | 48 | `result-track:1c40dc5675c464c0919a0362d7fac1186ca680ec543f1be36fd4397a619be056` |
+| 3 | `theorem` | [comul_eq_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianComonNamespaced.lean/declarations/comul-eq-lift.md) | 52 | `result-track:fe740e029fb9ddc076e688285ac2ed6082f6f0a847d27490eca0f705eff7a3e0` |
+| 4 | `def` | [iso_cartesianComon_](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianComonNamespaced.lean/declarations/iso-cartesiancomon.md) | 63 | `declaration-track:a0ea032a67a5c77b0e2c406981cbe52e03f18d1d87099d58811a7dfcc0e08e1f` |
+| 5 | `def` | [comonEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianComonNamespaced.lean/declarations/comonequiv.md) | 71 | `declaration-track:f94d4935f4c0e1572ac8b54af3495736cffdf581f9f122995f0fc493dfc633f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

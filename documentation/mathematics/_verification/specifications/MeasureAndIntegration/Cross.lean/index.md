@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Cross.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Cross.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Cross.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Cross.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Mform_u_Pc_eq](../../../../MeasureAndIntegration/Cross.lean/declarations/mform-u-pc-eq.md) | 34 | `result-track:c02acb2d41eb11fdaad97032c70de8fb5de9e0b28fa55ba13f47f72c88362fda` |
-| 2 | `theorem` | [cross_muPc](../../../../MeasureAndIntegration/Cross.lean/declarations/cross-mupc.md) | 71 | `result-track:2d2c08b375d6f086acf0a34ffea56bf702ab7a9381ff688bcb2042942d7cd781` |
+| 1 | `lemma` | [Mform_u_Pc_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Cross.lean/declarations/mform-u-pc-eq.md) | 34 | `result-track:c02acb2d41eb11fdaad97032c70de8fb5de9e0b28fa55ba13f47f72c88362fda` |
+| 2 | `theorem` | [cross_muPc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Cross.lean/declarations/cross-mupc.md) | 71 | `result-track:2d2c08b375d6f086acf0a34ffea56bf702ab7a9381ff688bcb2042942d7cd781` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

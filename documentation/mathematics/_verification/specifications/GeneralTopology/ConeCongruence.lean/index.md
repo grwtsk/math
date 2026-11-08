@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ConeCongruence.lean/index.md) · [Full source](../../../../GeneralTopology/ConeCongruence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConeCongruence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConeCongruence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.CircleCone`](../../../../GeneralTopology/CircleCone.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.CircleCone`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CircleCone.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [radius](../../../../GeneralTopology/ConeCongruence.lean/declarations/radius.md) | 24 | `declaration-track:35ba84d8f04ad6afb3c40bd912a9e105c77c222ba33b8ffde2098ae8ba961126` |
-| 2 | `theorem` | [radius_coneMk](../../../../GeneralTopology/ConeCongruence.lean/declarations/radius-conemk.md) | 31 | `result-track:da4bd286f6010c6070f8073a332c9808addc44cceb97751f639c4342526746ca` |
-| 3 | `def` | [homeomorph](../../../../GeneralTopology/ConeCongruence.lean/declarations/homeomorph.md) | 35 | `declaration-track:281da593f3fb2fd6e0b369dfb1dbfe9f882c6f5135443cf3e305a6b1437c3e95` |
-| 4 | `theorem` | [homeomorph_coneMk](../../../../GeneralTopology/ConeCongruence.lean/declarations/homeomorph-conemk.md) | 43 | `result-track:3b35eb2e39f7a0fc2cae1b25c3a22582b721319c393dc86d68148fb193d26f4b` |
-| 5 | `theorem` | [radius_homeomorph](../../../../GeneralTopology/ConeCongruence.lean/declarations/radius-homeomorph.md) | 46 | `result-track:e7185b5904262dfa21c8951a6c4d183c1587635eff8369403b18b52f281c7820` |
-| 6 | `def` | [boundary](../../../../GeneralTopology/ConeCongruence.lean/declarations/boundary.md) | 53 | `declaration-track:8123ca8db597412d2e1bb3e7d21b537c0825a6457fe310d6a6903bc4f660b1b4` |
-| 7 | `theorem` | [homeomorph_boundary](../../../../GeneralTopology/ConeCongruence.lean/declarations/homeomorph-boundary.md) | 55 | `result-track:1929def83a8bd4cbad36a2b0adc714b486704cb769f04ca518cf0e77417a4ba7` |
-| 8 | `def` | [apex](../../../../GeneralTopology/ConeCongruence.lean/declarations/apex.md) | 59 | `declaration-track:2d58f24c189dc3533a15fc9aed2bf1f8698b4b3d8ecab98684e364249aba182b` |
-| 9 | `theorem` | [apex_eq](../../../../GeneralTopology/ConeCongruence.lean/declarations/apex-eq.md) | 62 | `result-track:d3098da129f90d4c3d976140f8abdaa1ae6f97c42f360fe11c08fcf5840e3b02` |
-| 10 | `theorem` | [homeomorph_apex](../../../../GeneralTopology/ConeCongruence.lean/declarations/homeomorph-apex.md) | 66 | `result-track:6a241d0a2bdda3b31f18de1862d4ee3fb9512c4632221f30b009a8e869e1c43f` |
-| 11 | `theorem` | [homeomorph_refl](../../../../GeneralTopology/ConeCongruence.lean/declarations/homeomorph-refl.md) | 69 | `result-track:e372744821316b158c2bdc23133644b6e976a0ee0f2d6d87baf8fe8423587a2f` |
-| 12 | `theorem` | [homeomorph_trans](../../../../GeneralTopology/ConeCongruence.lean/declarations/homeomorph-trans.md) | 77 | `result-track:3d7aa8fd89c59b0bf30b3a348dec1b268bd0ebd435e655d1aac84d51de874ff7` |
-| 13 | `theorem` | [homeomorph_symm](../../../../GeneralTopology/ConeCongruence.lean/declarations/homeomorph-symm.md) | 85 | `result-track:842bd17d8a800749ca556bb7c9626031f8540a9692f7a578c973c42ba6840aaf` |
+| 1 | `def` | [radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConeCongruence.lean/declarations/radius.md) | 24 | `declaration-track:35ba84d8f04ad6afb3c40bd912a9e105c77c222ba33b8ffde2098ae8ba961126` |
+| 2 | `theorem` | [radius_coneMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConeCongruence.lean/declarations/radius-conemk.md) | 31 | `result-track:da4bd286f6010c6070f8073a332c9808addc44cceb97751f639c4342526746ca` |
+| 3 | `def` | [homeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConeCongruence.lean/declarations/homeomorph.md) | 35 | `declaration-track:281da593f3fb2fd6e0b369dfb1dbfe9f882c6f5135443cf3e305a6b1437c3e95` |
+| 4 | `theorem` | [homeomorph_coneMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConeCongruence.lean/declarations/homeomorph-conemk.md) | 43 | `result-track:3b35eb2e39f7a0fc2cae1b25c3a22582b721319c393dc86d68148fb193d26f4b` |
+| 5 | `theorem` | [radius_homeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConeCongruence.lean/declarations/radius-homeomorph.md) | 46 | `result-track:e7185b5904262dfa21c8951a6c4d183c1587635eff8369403b18b52f281c7820` |
+| 6 | `def` | [boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConeCongruence.lean/declarations/boundary.md) | 53 | `declaration-track:8123ca8db597412d2e1bb3e7d21b537c0825a6457fe310d6a6903bc4f660b1b4` |
+| 7 | `theorem` | [homeomorph_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConeCongruence.lean/declarations/homeomorph-boundary.md) | 55 | `result-track:1929def83a8bd4cbad36a2b0adc714b486704cb769f04ca518cf0e77417a4ba7` |
+| 8 | `def` | [apex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConeCongruence.lean/declarations/apex.md) | 59 | `declaration-track:2d58f24c189dc3533a15fc9aed2bf1f8698b4b3d8ecab98684e364249aba182b` |
+| 9 | `theorem` | [apex_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConeCongruence.lean/declarations/apex-eq.md) | 62 | `result-track:d3098da129f90d4c3d976140f8abdaa1ae6f97c42f360fe11c08fcf5840e3b02` |
+| 10 | `theorem` | [homeomorph_apex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConeCongruence.lean/declarations/homeomorph-apex.md) | 66 | `result-track:6a241d0a2bdda3b31f18de1862d4ee3fb9512c4632221f30b009a8e869e1c43f` |
+| 11 | `theorem` | [homeomorph_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConeCongruence.lean/declarations/homeomorph-refl.md) | 69 | `result-track:e372744821316b158c2bdc23133644b6e976a0ee0f2d6d87baf8fe8423587a2f` |
+| 12 | `theorem` | [homeomorph_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConeCongruence.lean/declarations/homeomorph-trans.md) | 77 | `result-track:3d7aa8fd89c59b0bf30b3a348dec1b268bd0ebd435e655d1aac84d51de874ff7` |
+| 13 | `theorem` | [homeomorph_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConeCongruence.lean/declarations/homeomorph-symm.md) | 85 | `result-track:842bd17d8a800749ca556bb7c9626031f8540a9692f7a578c973c42ba6840aaf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

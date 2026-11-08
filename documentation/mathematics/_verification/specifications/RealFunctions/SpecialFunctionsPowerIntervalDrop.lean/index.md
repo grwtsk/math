@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SpecialFunctionsPowerIntervalDrop.lean/index.md) · [Full source](../../../../RealFunctions/SpecialFunctionsPowerIntervalDrop.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsPowerIntervalDrop.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsPowerIntervalDrop.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rpow_sub_rpow_add_one_le](../../../../RealFunctions/SpecialFunctionsPowerIntervalDrop.lean/declarations/rpow-sub-rpow-add-one-le.md) | 24 | `result-track:7e84fe2532f90b59594ba23c595aefd63cdda5d428cc0e2de1cbed632efc1435` |
+| 1 | `theorem` | [rpow_sub_rpow_add_one_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsPowerIntervalDrop.lean/declarations/rpow-sub-rpow-add-one-le.md) | 24 | `result-track:7e84fe2532f90b59594ba23c595aefd63cdda5d428cc0e2de1cbed632efc1435` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/RootActualXiConditionalComplexLaplace.lean/index.md) · [Full source](../../../../GeneralTopology/RootActualXiConditionalComplexLaplace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RootActualXiConditionalComplexLaplace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RootActualXiConditionalComplexLaplace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [primitive_continuousOn_Ici](../../../../GeneralTopology/RootActualXiConditionalComplexLaplace.lean/declarations/primitive-continuouson-ici.md) | 19 | `result-track:f09e0c91f17ece7681bfd329dbe40ddf1b13e529dcf62a7118ee8d4a530ee8f7` |
-| 2 | `theorem` | [actualXiComplexLaplaceKernel_norm_eq](../../../../GeneralTopology/RootActualXiConditionalComplexLaplace.lean/declarations/actualxicomplexlaplacekernel-norm-eq.md) | 32 | `result-track:3f0673792f1830535b58bf950274ad4d2d9498153a3a409034b128382fdc77e0` |
-| 3 | `theorem` | [actualXiComplexLaplace_integrableOn_of_future_average](../../../../GeneralTopology/RootActualXiConditionalComplexLaplace.lean/declarations/actualxicomplexlaplace-integrableon-of-future-average.md) | 40 | `result-track:f251cc5debebdea317ed110c4b2c0d4ec37ef0f480df1aa9080d83b93593d24c` |
-| 4 | `theorem` | [actualXiComplexLaplace_norm_le_of_future_average](../../../../GeneralTopology/RootActualXiConditionalComplexLaplace.lean/declarations/actualxicomplexlaplace-norm-le-of-future-average.md) | 56 | `result-track:4ebecf6d7451ecc3655b4c1c188a86d25f831dc1e7ad456e33e65a1582f97282` |
+| 1 | `theorem` | [primitive_continuousOn_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RootActualXiConditionalComplexLaplace.lean/declarations/primitive-continuouson-ici.md) | 19 | `result-track:f09e0c91f17ece7681bfd329dbe40ddf1b13e529dcf62a7118ee8d4a530ee8f7` |
+| 2 | `theorem` | [actualXiComplexLaplaceKernel_norm_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RootActualXiConditionalComplexLaplace.lean/declarations/actualxicomplexlaplacekernel-norm-eq.md) | 32 | `result-track:3f0673792f1830535b58bf950274ad4d2d9498153a3a409034b128382fdc77e0` |
+| 3 | `theorem` | [actualXiComplexLaplace_integrableOn_of_future_average](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RootActualXiConditionalComplexLaplace.lean/declarations/actualxicomplexlaplace-integrableon-of-future-average.md) | 40 | `result-track:f251cc5debebdea317ed110c4b2c0d4ec37ef0f480df1aa9080d83b93593d24c` |
+| 4 | `theorem` | [actualXiComplexLaplace_norm_le_of_future_average](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RootActualXiConditionalComplexLaplace.lean/declarations/actualxicomplexlaplace-norm-le-of-future-average.md) | 56 | `result-track:4ebecf6d7451ecc3655b4c1c188a86d25f831dc1e7ad456e33e65a1582f97282` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

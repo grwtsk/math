@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CostaPereira.lean/index.md) · [Full source](../../../../RealFunctions/CostaPereira.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereira.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereira.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sublemma_1_1](../../../../RealFunctions/CostaPereira.lean/declarations/sublemma-1-1.md) | 30 | `result-track:2a943134bfc75336e40feee33057889c84a1c566e8dc7a4323811bc7124e1371` |
-| 2 | `theorem` | [sublemma_1_2](../../../../RealFunctions/CostaPereira.lean/declarations/sublemma-1-2.md) | 91 | `result-track:6e3632e323afc3c68a60e4d8daaa5689efd002de411ac0655617c32f6d2e85e6` |
-| 3 | `theorem` | [sublemma_1_3](../../../../RealFunctions/CostaPereira.lean/declarations/sublemma-1-3.md) | 112 | `result-track:d548078f32bf1c8cdae972a4f57678063e1af97dfee54c501ba55e3e7a152c73` |
-| 4 | `theorem` | [sublemma_1_4](../../../../RealFunctions/CostaPereira.lean/declarations/sublemma-1-4.md) | 155 | `result-track:31b219e20df6547e722b5e8ca155b937454d5e59e6f98ecce7fbba7cedb2c1c8` |
-| 5 | `theorem` | [sublemma_1_5](../../../../RealFunctions/CostaPereira.lean/declarations/sublemma-1-5.md) | 232 | `result-track:9c2c3eadfcff91ad188f2b462606a0e810a1485632e6a9993ad49e51e89a8982` |
-| 6 | `theorem` | [sublemma_1_6](../../../../RealFunctions/CostaPereira.lean/declarations/sublemma-1-6.md) | 337 | `result-track:cd135630fbed29c02953674bc68471472a9127369b88fa03a3fa13c6e25e9ce0` |
-| 7 | `theorem` | [sublemma_1_7](../../../../RealFunctions/CostaPereira.lean/declarations/sublemma-1-7.md) | 367 | `result-track:d5fb24d8accfadcb2cea50986a511a986655bbdb6dc8d757e7a13ddecaa5305a` |
-| 8 | `theorem` | [sublemma_1_8](../../../../RealFunctions/CostaPereira.lean/declarations/sublemma-1-8.md) | 486 | `result-track:22599247c1edc2f0d43f44e247f214145692287d0c111038265230dbf0c92356` |
-| 9 | `theorem` | [theorem_1a](../../../../RealFunctions/CostaPereira.lean/declarations/theorem-1a.md) | 662 | `result-track:76885a997ab37286d5d535942cf5b4db06171fad0c4523a90e1ca86fc51a908a` |
-| 10 | `theorem` | [theorem_1b](../../../../RealFunctions/CostaPereira.lean/declarations/theorem-1b.md) | 679 | `result-track:8630b0ef43b72add1d4ce4c31c386a095967494f2991ddbd32ac613fb0991dbf` |
+| 1 | `theorem` | [sublemma_1_1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereira.lean/declarations/sublemma-1-1.md) | 30 | `result-track:2a943134bfc75336e40feee33057889c84a1c566e8dc7a4323811bc7124e1371` |
+| 2 | `theorem` | [sublemma_1_2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereira.lean/declarations/sublemma-1-2.md) | 91 | `result-track:6e3632e323afc3c68a60e4d8daaa5689efd002de411ac0655617c32f6d2e85e6` |
+| 3 | `theorem` | [sublemma_1_3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereira.lean/declarations/sublemma-1-3.md) | 112 | `result-track:d548078f32bf1c8cdae972a4f57678063e1af97dfee54c501ba55e3e7a152c73` |
+| 4 | `theorem` | [sublemma_1_4](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereira.lean/declarations/sublemma-1-4.md) | 155 | `result-track:31b219e20df6547e722b5e8ca155b937454d5e59e6f98ecce7fbba7cedb2c1c8` |
+| 5 | `theorem` | [sublemma_1_5](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereira.lean/declarations/sublemma-1-5.md) | 232 | `result-track:9c2c3eadfcff91ad188f2b462606a0e810a1485632e6a9993ad49e51e89a8982` |
+| 6 | `theorem` | [sublemma_1_6](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereira.lean/declarations/sublemma-1-6.md) | 337 | `result-track:cd135630fbed29c02953674bc68471472a9127369b88fa03a3fa13c6e25e9ce0` |
+| 7 | `theorem` | [sublemma_1_7](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereira.lean/declarations/sublemma-1-7.md) | 367 | `result-track:d5fb24d8accfadcb2cea50986a511a986655bbdb6dc8d757e7a13ddecaa5305a` |
+| 8 | `theorem` | [sublemma_1_8](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereira.lean/declarations/sublemma-1-8.md) | 486 | `result-track:22599247c1edc2f0d43f44e247f214145692287d0c111038265230dbf0c92356` |
+| 9 | `theorem` | [theorem_1a](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereira.lean/declarations/theorem-1a.md) | 662 | `result-track:76885a997ab37286d5d535942cf5b4db06171fad0c4523a90e1ca86fc51a908a` |
+| 10 | `theorem` | [theorem_1b](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CostaPereira.lean/declarations/theorem-1b.md) | 679 | `result-track:8630b0ef43b72add1d4ce4c31c386a095967494f2991ddbd32ac613fb0991dbf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

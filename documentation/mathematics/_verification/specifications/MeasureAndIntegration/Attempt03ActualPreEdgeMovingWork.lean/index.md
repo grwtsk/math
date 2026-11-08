@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Attempt03ActualPreEdgeMovingWork.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Attempt03ActualPreEdgeMovingWork.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt03ActualPreEdgeMovingWork.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt03ActualPreEdgeMovingWork.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualPreEdgeMovingWork](../../../../MeasureAndIntegration/Attempt03ActualPreEdgeMovingWork.lean/declarations/actualpreedgemovingwork.md) | 25 | `declaration-track:dedc091b330074f8c891514b43cb43d745da2bd4496690705d4b1f7b908d8f0d` |
-| 2 | `theorem` | [moving_density_intervalIntegrable](../../../../MeasureAndIntegration/Attempt03ActualPreEdgeMovingWork.lean/declarations/moving-density-intervalintegrable.md) | 30 | `result-track:47e6da9e1d96a840659fa423b496a87735c408f3147f6f6c67992288aebba9a8` |
-| 3 | `theorem` | [actualCriticalCovariance_eq_full_edge_assembly](../../../../MeasureAndIntegration/Attempt03ActualPreEdgeMovingWork.lean/declarations/actualcriticalcovariance-eq-full-edge-assembly.md) | 49 | `result-track:f5356353b98683c2281afc2936d05a0b66176a08780670bb556d17f77fd51a40` |
-| 4 | `theorem` | [actualFullMovingCompensation_gap_lower](../../../../MeasureAndIntegration/Attempt03ActualPreEdgeMovingWork.lean/declarations/actualfullmovingcompensation-gap-lower.md) | 71 | `result-track:da9ca17584770b87a29ad19a64296f2ac78d97f2a3ec384d8b1fd2e34a4f4776` |
-| 5 | `theorem` | [actualCovariance_lower_requires_full_compensation](../../../../MeasureAndIntegration/Attempt03ActualPreEdgeMovingWork.lean/declarations/actualcovariance-lower-requires-full-compensation.md) | 85 | `result-track:cfd60ebf6efeb25c62a3f517f6e644fe1733e275b7476291957f6ede757f7efe` |
+| 1 | `def` | [actualPreEdgeMovingWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt03ActualPreEdgeMovingWork.lean/declarations/actualpreedgemovingwork.md) | 25 | `declaration-track:dedc091b330074f8c891514b43cb43d745da2bd4496690705d4b1f7b908d8f0d` |
+| 2 | `theorem` | [moving_density_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt03ActualPreEdgeMovingWork.lean/declarations/moving-density-intervalintegrable.md) | 30 | `result-track:47e6da9e1d96a840659fa423b496a87735c408f3147f6f6c67992288aebba9a8` |
+| 3 | `theorem` | [actualCriticalCovariance_eq_full_edge_assembly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt03ActualPreEdgeMovingWork.lean/declarations/actualcriticalcovariance-eq-full-edge-assembly.md) | 49 | `result-track:f5356353b98683c2281afc2936d05a0b66176a08780670bb556d17f77fd51a40` |
+| 4 | `theorem` | [actualFullMovingCompensation_gap_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt03ActualPreEdgeMovingWork.lean/declarations/actualfullmovingcompensation-gap-lower.md) | 71 | `result-track:da9ca17584770b87a29ad19a64296f2ac78d97f2a3ec384d8b1fd2e34a4f4776` |
+| 5 | `theorem` | [actualCovariance_lower_requires_full_compensation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt03ActualPreEdgeMovingWork.lean/declarations/actualcovariance-lower-requires-full-compensation.md) | 85 | `result-track:cfd60ebf6efeb25c62a3f517f6e644fe1733e275b7476291957f6ede757f7efe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

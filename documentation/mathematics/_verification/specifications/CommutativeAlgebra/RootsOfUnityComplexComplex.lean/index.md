@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RootsOfUnityComplexComplex.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RootsOfUnityComplexComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityComplexComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityComplexComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isPrimitiveRoot_exp_of_coprime](../../../../CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/isprimitiveroot-exp-of-coprime.md) | 32 | `result-track:bb3c67ded577cd27fedbd714faad7373a51f5c4e785461410e9ace2f053ae45e` |
-| 2 | `theorem` | [isPrimitiveRoot_exp](../../../../CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/isprimitiveroot-exp.md) | 52 | `result-track:5a4210c07321d1e47ae1cd02896938f3a17b924a1847805a132daab9b17bb318` |
-| 3 | `theorem` | [isPrimitiveRoot_iff](../../../../CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/isprimitiveroot-iff.md) | 57 | `result-track:373cb63d6e7c4150a96b020c76613fcdbea4053217439ce5f2261fc62fdffec4` |
-| 4 | `theorem` | [mem_rootsOfUnity](../../../../CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/mem-rootsofunity.md) | 73 | `result-track:d96d0f6180a3a2b6eb839dfd0ec88281cae60b7982201e770df2446a644ac378` |
-| 5 | `theorem` | [card_rootsOfUnity](../../../../CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/card-rootsofunity.md) | 91 | `result-track:25b0fb490284588613b5419936996591cf2a8505231a265ee06231d9ea686b14` |
-| 6 | `theorem` | [card_primitiveRoots](../../../../CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/card-primitiveroots.md) | 95 | `result-track:30300a525b136eb5f3b85ae9732904f69cbaeb08fd509523a6c47bda33c23c96` |
-| 7 | `theorem` | [IsPrimitiveRoot.norm'_eq_one](../../../../CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/isprimitiveroot-norm-eq-one.md) | 103 | `result-track:6838024f9ee0583a5fb17bd57b5e76a648fb709e51fd9836c116af8cf1f85eff` |
-| 8 | `theorem` | [IsPrimitiveRoot.nnnorm_eq_one](../../../../CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/isprimitiveroot-nnnorm-eq-one.md) | 108 | `result-track:4708cf51215710e69afa57efaedaa003c9787ae40d88a9692872f32f8b98cf18` |
-| 9 | `theorem` | [IsPrimitiveRoot.arg_ext](../../../../CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/isprimitiveroot-arg-ext.md) | 113 | `result-track:472a6f12fe6906fbb2c0139ccb4220991bc8bf90a0de4b6469d5d577a125465e` |
-| 10 | `theorem` | [IsPrimitiveRoot.arg_eq_zero_iff](../../../../CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/isprimitiveroot-arg-eq-zero-iff.md) | 118 | `result-track:e731b5c0895ba74d5f24a8273d66734d1fb489e1fdd9dd88c01816e08808b4a3` |
-| 11 | `theorem` | [IsPrimitiveRoot.arg_eq_pi_iff](../../../../CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/isprimitiveroot-arg-eq-pi-iff.md) | 124 | `result-track:7dea47c620b8291ee5ec80004b2fb89d3ff51417ba2353a0a677d6b61fcc2487` |
-| 12 | `theorem` | [IsPrimitiveRoot.arg](../../../../CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/isprimitiveroot-arg.md) | 132 | `result-track:a3df0b975773ccd28671f44022d3de7fd62fc10a7c294f04f0bcf4c6353165b8` |
+| 1 | `theorem` | [isPrimitiveRoot_exp_of_coprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/isprimitiveroot-exp-of-coprime.md) | 32 | `result-track:bb3c67ded577cd27fedbd714faad7373a51f5c4e785461410e9ace2f053ae45e` |
+| 2 | `theorem` | [isPrimitiveRoot_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/isprimitiveroot-exp.md) | 52 | `result-track:5a4210c07321d1e47ae1cd02896938f3a17b924a1847805a132daab9b17bb318` |
+| 3 | `theorem` | [isPrimitiveRoot_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/isprimitiveroot-iff.md) | 57 | `result-track:373cb63d6e7c4150a96b020c76613fcdbea4053217439ce5f2261fc62fdffec4` |
+| 4 | `theorem` | [mem_rootsOfUnity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/mem-rootsofunity.md) | 73 | `result-track:d96d0f6180a3a2b6eb839dfd0ec88281cae60b7982201e770df2446a644ac378` |
+| 5 | `theorem` | [card_rootsOfUnity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/card-rootsofunity.md) | 91 | `result-track:25b0fb490284588613b5419936996591cf2a8505231a265ee06231d9ea686b14` |
+| 6 | `theorem` | [card_primitiveRoots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/card-primitiveroots.md) | 95 | `result-track:30300a525b136eb5f3b85ae9732904f69cbaeb08fd509523a6c47bda33c23c96` |
+| 7 | `theorem` | [IsPrimitiveRoot.norm'_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/isprimitiveroot-norm-eq-one.md) | 103 | `result-track:6838024f9ee0583a5fb17bd57b5e76a648fb709e51fd9836c116af8cf1f85eff` |
+| 8 | `theorem` | [IsPrimitiveRoot.nnnorm_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/isprimitiveroot-nnnorm-eq-one.md) | 108 | `result-track:4708cf51215710e69afa57efaedaa003c9787ae40d88a9692872f32f8b98cf18` |
+| 9 | `theorem` | [IsPrimitiveRoot.arg_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/isprimitiveroot-arg-ext.md) | 113 | `result-track:472a6f12fe6906fbb2c0139ccb4220991bc8bf90a0de4b6469d5d577a125465e` |
+| 10 | `theorem` | [IsPrimitiveRoot.arg_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/isprimitiveroot-arg-eq-zero-iff.md) | 118 | `result-track:e731b5c0895ba74d5f24a8273d66734d1fb489e1fdd9dd88c01816e08808b4a3` |
+| 11 | `theorem` | [IsPrimitiveRoot.arg_eq_pi_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/isprimitiveroot-arg-eq-pi-iff.md) | 124 | `result-track:7dea47c620b8291ee5ec80004b2fb89d3ff51417ba2353a0a677d6b61fcc2487` |
+| 12 | `theorem` | [IsPrimitiveRoot.arg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityComplexComplex.lean/declarations/isprimitiveroot-arg.md) | 132 | `result-track:a3df0b975773ccd28671f44022d3de7fd62fc10a7c294f04f0bcf4c6353165b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointNamespaced.lean/index.md) · [Full source](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HasFixedPoint](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointNamespaced.lean/declarations/hasfixedpoint.md) | 27 | `declaration-track:b92ac1bb7c35ffc28c2d5e80f48f0405dc9ad2f475a466f717ad30b247462b81` |
-| 2 | `structure` | [HasUniqueFixedPoint](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointNamespaced.lean/declarations/hasuniquefixedpoint.md) | 31 | `declaration-track:ccc2eafefade65ad09d92242b39a324c6a800d7d9fb9a7be58c01fdedf3aeef6` |
-| 3 | `structure` | [ContractiveFixedPointContract](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointNamespaced.lean/declarations/contractivefixedpointcontract.md) | 35 | `declaration-track:8a948f20776374b85877db34d8d0326807feae2e43f953d9c5ca29f1a3a9ee63` |
-| 4 | `theorem` | [fixed_point_is_fixed](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointNamespaced.lean/declarations/fixed-point-is-fixed.md) | 43 | `result-track:a4583fc7c960252e248afcba3faa7bab76e41a3ed5fae5893375d05767f0d7fa` |
-| 5 | `theorem` | [unique_fixed_point_eq](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointNamespaced.lean/declarations/unique-fixed-point-eq.md) | 48 | `result-track:51b67027ee40f2c49d8e92bb3a76e9d28011cab59aecb54fd1328a4da0cabedd` |
+| 1 | `structure` | [HasFixedPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointNamespaced.lean/declarations/hasfixedpoint.md) | 27 | `declaration-track:b92ac1bb7c35ffc28c2d5e80f48f0405dc9ad2f475a466f717ad30b247462b81` |
+| 2 | `structure` | [HasUniqueFixedPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointNamespaced.lean/declarations/hasuniquefixedpoint.md) | 31 | `declaration-track:ccc2eafefade65ad09d92242b39a324c6a800d7d9fb9a7be58c01fdedf3aeef6` |
+| 3 | `structure` | [ContractiveFixedPointContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointNamespaced.lean/declarations/contractivefixedpointcontract.md) | 35 | `declaration-track:8a948f20776374b85877db34d8d0326807feae2e43f953d9c5ca29f1a3a9ee63` |
+| 4 | `theorem` | [fixed_point_is_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointNamespaced.lean/declarations/fixed-point-is-fixed.md) | 43 | `result-track:a4583fc7c960252e248afcba3faa7bab76e41a3ed5fae5893375d05767f0d7fa` |
+| 5 | `theorem` | [unique_fixed_point_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/FixedPointNamespaced.lean/declarations/unique-fixed-point-eq.md) | 48 | `result-track:51b67027ee40f2c49d8e92bb3a76e9d28011cab59aecb54fd1328a4da0cabedd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

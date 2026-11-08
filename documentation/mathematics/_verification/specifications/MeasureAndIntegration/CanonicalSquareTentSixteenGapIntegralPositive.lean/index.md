@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CanonicalSquareTentSixteenGapIntegralPositive.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CanonicalSquareTentSixteenGapIntegralPositive.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CanonicalSquareTentSixteenGapIntegralPositive.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CanonicalSquareTentSixteenGapIntegralPositive.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenGapIntegrability`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenGapIntegrability.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenGapIntegrability`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentSixteenGapIntegrability.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.Tactic` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [stageThreeSixteenGap_integral_pos](../../../../MeasureAndIntegration/CanonicalSquareTentSixteenGapIntegralPositive.lean/declarations/stagethreesixteengap-integral-pos.md) | 27 | `result-track:fbe6abd44a5a967fbfd879e91a734af1605022b980052c6c70ae6cf2ff5ff2ab` |
-| 2 | `theorem` | [stageFourSixteenGap_integral_pos](../../../../MeasureAndIntegration/CanonicalSquareTentSixteenGapIntegralPositive.lean/declarations/stagefoursixteengap-integral-pos.md) | 46 | `result-track:c1e931c00b27b068563e44a0acc99b748c5396d79245724aed2ec7999045e19e` |
+| 1 | `theorem` | [stageThreeSixteenGap_integral_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CanonicalSquareTentSixteenGapIntegralPositive.lean/declarations/stagethreesixteengap-integral-pos.md) | 27 | `result-track:fbe6abd44a5a967fbfd879e91a734af1605022b980052c6c70ae6cf2ff5ff2ab` |
+| 2 | `theorem` | [stageFourSixteenGap_integral_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CanonicalSquareTentSixteenGapIntegralPositive.lean/declarations/stagefoursixteengap-integral-pos.md) | 46 | `result-track:c1e931c00b27b068563e44a0acc99b748c5396d79245724aed2ec7999045e19e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

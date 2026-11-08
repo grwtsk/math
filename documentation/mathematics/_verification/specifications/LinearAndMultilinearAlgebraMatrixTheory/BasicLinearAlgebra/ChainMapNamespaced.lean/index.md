@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMapNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FoldUnitary](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMapNamespaced.lean/declarations/foldunitary.md) | 31 | `declaration-track:c1cd8b4d332d8e256c2e121e75a26d10ec6c6fbe01de3c49977c1e2a6d88ab6f` |
-| 2 | `theorem` | [intertwinesCodifferential](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMapNamespaced.lean/declarations/intertwinescodifferential.md) | 48 | `result-track:e7848a6242c741bc5d7800a2920609b842805dc0a709d705e50cf5bf048dfc0b` |
-| 3 | `theorem` | [fold_intertwines_hodgeDirac](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMapNamespaced.lean/declarations/fold-intertwines-hodgedirac.md) | 73 | `result-track:036026164beec9b94618fa3a4f08de1ee26850b0918e9002642c12c14cdcc3ac` |
-| 4 | `theorem` | [fold_intertwines_laplacian](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMapNamespaced.lean/declarations/fold-intertwines-laplacian.md) | 79 | `result-track:c47f22d69623e9649dc84afb31cb642f78957afa8eda4e6050778a90e6661efa` |
-| 5 | `theorem` | [isUnitary](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMapNamespaced.lean/declarations/isunitary.md) | 98 | `result-track:28f4bbc841026ba7d3dabe9e6cea6832f45f083713c055336a3594eff1e2071b` |
+| 1 | `structure` | [FoldUnitary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMapNamespaced.lean/declarations/foldunitary.md) | 31 | `declaration-track:c1cd8b4d332d8e256c2e121e75a26d10ec6c6fbe01de3c49977c1e2a6d88ab6f` |
+| 2 | `theorem` | [intertwinesCodifferential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMapNamespaced.lean/declarations/intertwinescodifferential.md) | 48 | `result-track:e7848a6242c741bc5d7800a2920609b842805dc0a709d705e50cf5bf048dfc0b` |
+| 3 | `theorem` | [fold_intertwines_hodgeDirac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMapNamespaced.lean/declarations/fold-intertwines-hodgedirac.md) | 73 | `result-track:036026164beec9b94618fa3a4f08de1ee26850b0918e9002642c12c14cdcc3ac` |
+| 4 | `theorem` | [fold_intertwines_laplacian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMapNamespaced.lean/declarations/fold-intertwines-laplacian.md) | 79 | `result-track:c47f22d69623e9649dc84afb31cb642f78957afa8eda4e6050778a90e6661efa` |
+| 5 | `theorem` | [isUnitary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMapNamespaced.lean/declarations/isunitary.md) | 98 | `result-track:28f4bbc841026ba7d3dabe9e6cea6832f45f083713c055336a3594eff1e2071b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

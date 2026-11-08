@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MetrizableContinuousMapNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/MetrizableContinuousMapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableContinuousMapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableContinuousMapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/MetrizableContinuousMapNamespaced.lean/declarations/instance-source-edition-2.md) | 32 | `declaration-track:d8f194ac7db9ea668ac37c993d8b91e7f3a7aac92676c63b2b868e2313ac1eba` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/MetrizableContinuousMapNamespaced.lean/declarations/instance.md) | 36 | `declaration-track:5fe81e1a182d1981f9afde1684bba06cc93235261c2ce5397708cc86700a4220` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableContinuousMapNamespaced.lean/declarations/instance-source-edition-2.md) | 32 | `declaration-track:d8f194ac7db9ea668ac37c993d8b91e7f3a7aac92676c63b2b868e2313ac1eba` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableContinuousMapNamespaced.lean/declarations/instance.md) | 36 | `declaration-track:5fe81e1a182d1981f9afde1684bba06cc93235261c2ce5397708cc86700a4220` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

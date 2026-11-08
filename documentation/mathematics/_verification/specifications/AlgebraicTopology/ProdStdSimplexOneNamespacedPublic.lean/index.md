@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [nonDegenerateEquiv](../../../../AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/nondegenerateequiv.md) | 51 | `declaration-track:82f3e4af513c97f5c6959e7da0ea549a382da24a2bda7b8af704c56d5f6fa029` |
-| 2 | `lemma` | [nonDegenerateEquiv_fst](../../../../AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/nondegenerateequiv-fst.md) | 90 | `result-track:992415ddaa154c9fc5cab05f33c11fa78a53e1f844b3dce44c10d9057ccf1033` |
-| 3 | `lemma` | [nonDegenerateEquiv_snd](../../../../AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/nondegenerateequiv-snd.md) | 95 | `result-track:5d72065f1c42f6d09156407ccee4b2d2858b68c0dba865d36ae41a0aba99d51d` |
-| 4 | `def` | [filtration](../../../../AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/filtration.md) | 101 | `declaration-track:63fcfc81d94570251d945a85a96f22c275cb1d09550106791678d5f6a27b7908` |
-| 5 | `lemma` | [ofSimplex_le_filtration](../../../../AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/ofsimplex-le-filtration.md) | 104 | `result-track:e1baa53d8c7b249f0c448ba203f257599871257c696b1257e90556ba24cdc2fa` |
-| 6 | `lemma` | [filtration_zero](../../../../AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/filtration-zero.md) | 110 | `result-track:e4d92495ac473bdc7935ed8dc407416bd722eb5e2f172d1d492dfda5a8138813` |
-| 7 | `lemma` | [filtration_last](../../../../AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/filtration-last.md) | 115 | `result-track:ee2d2be2019ab0dc7557dbb71d9cc22d51fb3cf778dd745f1890e9d9a4bcf334` |
-| 8 | `lemma` | [filtration_monotone](../../../../AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/filtration-monotone.md) | 124 | `result-track:9aae9f880509d2ff43ea84ca39cdb2e8fe487d662b8e1f1142f2b4687bf4b6bd` |
-| 9 | `abbrev` | [intersectionNondeg](../../../../AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/intersectionnondeg.md) | 135 | `declaration-track:39504ccf77dc0700ee98995d5d6b48ab81d85d749df2d396300b75f8473c44d6` |
-| 10 | `def` | [codimOneSimplex](../../../../AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/codimonesimplex.md) | 144 | `declaration-track:9fa692e56d53d933482e14d084adc998a72643435adb6219faa502fc12ee0a84` |
-| 11 | `lemma` | [δ_castSucc_nonDegenerateEquiv](../../../../AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/castsucc-nondegenerateequiv.md) | 151 | `result-track:43c1e08ae18da74eae3f181b2fd23c6b50ffb6d4f0879fe885d47b5876524d00` |
-| 12 | `lemma` | [δ_succ_nonDegenerateEquiv](../../../../AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/succ-nondegenerateequiv.md) | 161 | `result-track:660b0f5a3a37acc42ee94bbe3dc3a6721d4c5163513924c35a946395b61b2a1c` |
+| 1 | `def` | [nonDegenerateEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/nondegenerateequiv.md) | 51 | `declaration-track:82f3e4af513c97f5c6959e7da0ea549a382da24a2bda7b8af704c56d5f6fa029` |
+| 2 | `lemma` | [nonDegenerateEquiv_fst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/nondegenerateequiv-fst.md) | 90 | `result-track:992415ddaa154c9fc5cab05f33c11fa78a53e1f844b3dce44c10d9057ccf1033` |
+| 3 | `lemma` | [nonDegenerateEquiv_snd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/nondegenerateequiv-snd.md) | 95 | `result-track:5d72065f1c42f6d09156407ccee4b2d2858b68c0dba865d36ae41a0aba99d51d` |
+| 4 | `def` | [filtration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/filtration.md) | 101 | `declaration-track:63fcfc81d94570251d945a85a96f22c275cb1d09550106791678d5f6a27b7908` |
+| 5 | `lemma` | [ofSimplex_le_filtration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/ofsimplex-le-filtration.md) | 104 | `result-track:e1baa53d8c7b249f0c448ba203f257599871257c696b1257e90556ba24cdc2fa` |
+| 6 | `lemma` | [filtration_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/filtration-zero.md) | 110 | `result-track:e4d92495ac473bdc7935ed8dc407416bd722eb5e2f172d1d492dfda5a8138813` |
+| 7 | `lemma` | [filtration_last](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/filtration-last.md) | 115 | `result-track:ee2d2be2019ab0dc7557dbb71d9cc22d51fb3cf778dd745f1890e9d9a4bcf334` |
+| 8 | `lemma` | [filtration_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/filtration-monotone.md) | 124 | `result-track:9aae9f880509d2ff43ea84ca39cdb2e8fe487d662b8e1f1142f2b4687bf4b6bd` |
+| 9 | `abbrev` | [intersectionNondeg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/intersectionnondeg.md) | 135 | `declaration-track:39504ccf77dc0700ee98995d5d6b48ab81d85d749df2d396300b75f8473c44d6` |
+| 10 | `def` | [codimOneSimplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/codimonesimplex.md) | 144 | `declaration-track:9fa692e56d53d933482e14d084adc998a72643435adb6219faa502fc12ee0a84` |
+| 11 | `lemma` | [δ_castSucc_nonDegenerateEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/castsucc-nondegenerateequiv.md) | 151 | `result-track:43c1e08ae18da74eae3f181b2fd23c6b50ffb6d4f0879fe885d47b5876524d00` |
+| 12 | `lemma` | [δ_succ_nonDegenerateEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ProdStdSimplexOneNamespacedPublic.lean/declarations/succ-nondegenerateequiv.md) | 161 | `result-track:660b0f5a3a37acc42ee94bbe3dc3a6721d4c5163513924c35a946395b61b2a1c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

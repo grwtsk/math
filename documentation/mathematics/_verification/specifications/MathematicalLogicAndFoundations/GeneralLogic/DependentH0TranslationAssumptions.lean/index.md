@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentH0TranslationAssumptions.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentH0TranslationAssumptions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentH0TranslationAssumptions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentH0TranslationAssumptions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [H0RealZeroTranslation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentH0TranslationAssumptions.lean/declarations/h0realzerotranslation.md) | 42 | `declaration-track:195051bcbd2d86e9a54887cd76626706ff51da78416ff8a176c031cbaa1cb740` |
-| 2 | `theorem` | [h0_translation_matches_completed_zeta_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentH0TranslationAssumptions.lean/declarations/h0-translation-matches-completed-zeta-if-supplied.md) | 52 | `result-track:a6422b79c5809af4c93dec18302b6c3b86eb1771b4222fa90beb8dae2a7e255b` |
-| 3 | `theorem` | [h0_translation_equivalence_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentH0TranslationAssumptions.lean/declarations/h0-translation-equivalence-if-supplied.md) | 57 | `result-track:a32dd2cb6c45275001e17a6d1cbd97235d54802d8c33b9e793af33dfcf3d9a51` |
+| 1 | `structure` | [H0RealZeroTranslation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentH0TranslationAssumptions.lean/declarations/h0realzerotranslation.md) | 42 | `declaration-track:195051bcbd2d86e9a54887cd76626706ff51da78416ff8a176c031cbaa1cb740` |
+| 2 | `theorem` | [h0_translation_matches_completed_zeta_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentH0TranslationAssumptions.lean/declarations/h0-translation-matches-completed-zeta-if-supplied.md) | 52 | `result-track:a6422b79c5809af4c93dec18302b6c3b86eb1771b4222fa90beb8dae2a7e255b` |
+| 3 | `theorem` | [h0_translation_equivalence_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentH0TranslationAssumptions.lean/declarations/h0-translation-equivalence-if-supplied.md) | 57 | `result-track:a32dd2cb6c45275001e17a6d1cbd97235d54802d8c33b9e793af33dfcf3d9a51` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

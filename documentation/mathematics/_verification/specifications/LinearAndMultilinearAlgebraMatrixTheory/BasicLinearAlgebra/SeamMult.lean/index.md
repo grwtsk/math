@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeamMult.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeamMult.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeamMult.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeamMult.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ctr_sub_frobSq_perturb](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeamMult.lean/declarations/ctr-sub-frobsq-perturb.md) | 26 | `result-track:240a2a5da20ea8b7147c89a5b76000ae1b169e9de632e0ab2711b7a84c9b679f` |
-| 2 | `theorem` | [seamA_mult2](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeamMult.lean/declarations/seama-mult2.md) | 46 | `result-track:dc8c975db8721e768e0e0c08e50e6b420701712521cdc5e37d956d97724e76f9` |
-| 3 | `theorem` | [seamA_mult3](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeamMult.lean/declarations/seama-mult3.md) | 69 | `result-track:cd6867ed2b8bf2bc197b0ca83c4ccbc2c914c8c0a6ec560c2d5ca483254ba608` |
+| 1 | `theorem` | [ctr_sub_frobSq_perturb](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeamMult.lean/declarations/ctr-sub-frobsq-perturb.md) | 26 | `result-track:240a2a5da20ea8b7147c89a5b76000ae1b169e9de632e0ab2711b7a84c9b679f` |
+| 2 | `theorem` | [seamA_mult2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeamMult.lean/declarations/seama-mult2.md) | 46 | `result-track:dc8c975db8721e768e0e0c08e50e6b420701712521cdc5e37d956d97724e76f9` |
+| 3 | `theorem` | [seamA_mult3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeamMult.lean/declarations/seama-mult3.md) | 69 | `result-track:cd6867ed2b8bf2bc197b0ca83c4ccbc2c914c8c0a6ec560c2d5ca483254ba608` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

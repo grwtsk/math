@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/NormedSpaceExtend.lean/index.md) · [Full source](../../../../FunctionalAnalysis/NormedSpaceExtend.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceExtend.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceExtend.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,20 +59,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [extendTo𝕜'](../../../../FunctionalAnalysis/NormedSpaceExtend.lean/declarations/extendto.md) | 45 | `declaration-track:39b056984ee09a689337fc089d5459c927c0986729f6e8f66d5e2478afa195ab` |
-| 2 | `theorem` | [extendTo𝕜'_apply](../../../../FunctionalAnalysis/NormedSpaceExtend.lean/declarations/extendto-apply.md) | 79 | `result-track:9b785d3f16bd68f74695106c57e0acbf2b24991b59c9ebc057da831efae6e54f` |
-| 3 | `theorem` | [extendTo𝕜'_apply_re](../../../../FunctionalAnalysis/NormedSpaceExtend.lean/declarations/extendto-apply-re.md) | 83 | `result-track:4f86ba4185e8fbc92ef6894b06e47f540cdf20b2b5befa47c88269f9623b63cf` |
-| 4 | `theorem` | [norm_extendTo𝕜'_apply_sq](../../../../FunctionalAnalysis/NormedSpaceExtend.lean/declarations/norm-extendto-apply-sq.md) | 87 | `result-track:01fae408633b1e4ff1132947eb7e7e63d7852339811abfbf694ca346636d5a25` |
-| 5 | `theorem` | [norm_extendTo𝕜'_bound](../../../../FunctionalAnalysis/NormedSpaceExtend.lean/declarations/norm-extendto-bound.md) | 103 | `result-track:9c9cda274875ffa3f166204cde4adbe959ea48b606a07f95d9ce63e19873929c` |
-| 6 | `def` | [extendTo𝕜'](../../../../FunctionalAnalysis/NormedSpaceExtend.lean/declarations/extendto-source-edition-2.md) | 117 | `declaration-track:faf25986e64ced0a634ec8b1fe1d5574c89548aeea1dbff67e5c0a78232d0e49` |
-| 7 | `theorem` | [extendTo𝕜'_apply](../../../../FunctionalAnalysis/NormedSpaceExtend.lean/declarations/extendto-apply-source-edition-2.md) | 120 | `result-track:9ff50a2ea2c78a57d5cc278d2017725f6263ba779cef78332f622a52a29d032f` |
-| 8 | `theorem` | [norm_extendTo𝕜'](../../../../FunctionalAnalysis/NormedSpaceExtend.lean/declarations/norm-extendto.md) | 124 | `result-track:23fe836f720d8b645021ad9cad9aab253496e765afb0a2c73ee7ff97fa9f7611` |
-| 9 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/NormedSpaceExtend.lean/declarations/instance.md) | 135 | `declaration-track:ff7c8b68a5d5229e09b20428cb3c6afd18a43eda13393a17a2acd0e83ebdd3ff` |
-| 10 | `def` | [LinearMap.extendTo𝕜](../../../../FunctionalAnalysis/NormedSpaceExtend.lean/declarations/linearmap-extendto.md) | 140 | `declaration-track:5e219d6eecb1416d343b1afad136f95f2ec16f8fd8ec8a4fd90321b4c4703a1f` |
-| 11 | `theorem` | [LinearMap.extendTo𝕜_apply](../../../../FunctionalAnalysis/NormedSpaceExtend.lean/declarations/linearmap-extendto-apply.md) | 143 | `result-track:87b66dd0586e9b6c74b917ce4583c0b4324cb377c215c11dc1e86aac4761f449` |
-| 12 | `def` | [ContinuousLinearMap.extendTo𝕜](../../../../FunctionalAnalysis/NormedSpaceExtend.lean/declarations/continuouslinearmap-extendto.md) | 147 | `declaration-track:4200847c5e84b12978c5300a3c07416f03e8af4a9ff798c0ba69b787e05f5a22` |
-| 13 | `theorem` | [ContinuousLinearMap.extendTo𝕜_apply](../../../../FunctionalAnalysis/NormedSpaceExtend.lean/declarations/continuouslinearmap-extendto-apply.md) | 150 | `result-track:7b30c514c4f9a00af34ca57a54dcc55b3fdd9f039f9c69f60c78b4f0e95c7f46` |
-| 14 | `theorem` | [ContinuousLinearMap.norm_extendTo𝕜](../../../../FunctionalAnalysis/NormedSpaceExtend.lean/declarations/continuouslinearmap-norm-extendto.md) | 154 | `result-track:baa486eb886f20397df979630bc100c58ba0700e7d9a0cf843b18db69ff7fed8` |
+| 1 | `def` | [extendTo𝕜'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceExtend.lean/declarations/extendto.md) | 45 | `declaration-track:39b056984ee09a689337fc089d5459c927c0986729f6e8f66d5e2478afa195ab` |
+| 2 | `theorem` | [extendTo𝕜'_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceExtend.lean/declarations/extendto-apply.md) | 79 | `result-track:9b785d3f16bd68f74695106c57e0acbf2b24991b59c9ebc057da831efae6e54f` |
+| 3 | `theorem` | [extendTo𝕜'_apply_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceExtend.lean/declarations/extendto-apply-re.md) | 83 | `result-track:4f86ba4185e8fbc92ef6894b06e47f540cdf20b2b5befa47c88269f9623b63cf` |
+| 4 | `theorem` | [norm_extendTo𝕜'_apply_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceExtend.lean/declarations/norm-extendto-apply-sq.md) | 87 | `result-track:01fae408633b1e4ff1132947eb7e7e63d7852339811abfbf694ca346636d5a25` |
+| 5 | `theorem` | [norm_extendTo𝕜'_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceExtend.lean/declarations/norm-extendto-bound.md) | 103 | `result-track:9c9cda274875ffa3f166204cde4adbe959ea48b606a07f95d9ce63e19873929c` |
+| 6 | `def` | [extendTo𝕜'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceExtend.lean/declarations/extendto-source-edition-2.md) | 117 | `declaration-track:faf25986e64ced0a634ec8b1fe1d5574c89548aeea1dbff67e5c0a78232d0e49` |
+| 7 | `theorem` | [extendTo𝕜'_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceExtend.lean/declarations/extendto-apply-source-edition-2.md) | 120 | `result-track:9ff50a2ea2c78a57d5cc278d2017725f6263ba779cef78332f622a52a29d032f` |
+| 8 | `theorem` | [norm_extendTo𝕜'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceExtend.lean/declarations/norm-extendto.md) | 124 | `result-track:23fe836f720d8b645021ad9cad9aab253496e765afb0a2c73ee7ff97fa9f7611` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceExtend.lean/declarations/instance.md) | 135 | `declaration-track:ff7c8b68a5d5229e09b20428cb3c6afd18a43eda13393a17a2acd0e83ebdd3ff` |
+| 10 | `def` | [LinearMap.extendTo𝕜](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceExtend.lean/declarations/linearmap-extendto.md) | 140 | `declaration-track:5e219d6eecb1416d343b1afad136f95f2ec16f8fd8ec8a4fd90321b4c4703a1f` |
+| 11 | `theorem` | [LinearMap.extendTo𝕜_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceExtend.lean/declarations/linearmap-extendto-apply.md) | 143 | `result-track:87b66dd0586e9b6c74b917ce4583c0b4324cb377c215c11dc1e86aac4761f449` |
+| 12 | `def` | [ContinuousLinearMap.extendTo𝕜](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceExtend.lean/declarations/continuouslinearmap-extendto.md) | 147 | `declaration-track:4200847c5e84b12978c5300a3c07416f03e8af4a9ff798c0ba69b787e05f5a22` |
+| 13 | `theorem` | [ContinuousLinearMap.extendTo𝕜_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceExtend.lean/declarations/continuouslinearmap-extendto-apply.md) | 150 | `result-track:7b30c514c4f9a00af34ca57a54dcc55b3fdd9f039f9c69f60c78b4f0e95c7f46` |
+| 14 | `theorem` | [ContinuousLinearMap.norm_extendTo𝕜](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceExtend.lean/declarations/continuouslinearmap-norm-extendto.md) | 154 | `result-track:baa486eb886f20397df979630bc100c58ba0700e7d9a0cf843b18db69ff7fed8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

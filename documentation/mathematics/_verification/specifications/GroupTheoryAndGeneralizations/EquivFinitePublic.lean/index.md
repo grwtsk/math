@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/EquivFinitePublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/EquivFinitePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/EquivFinitePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/EquivFinitePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [decidableEqMulEquivFintype](../../../../GroupTheoryAndGeneralizations/EquivFinitePublic.lean/declarations/decidableeqmulequivfintype.md) | 37 | `declaration-track:2e99a32e9d9c995901bab274d2d7bb7cbb12b431df2e3f677190b229a44ba78d` |
+| 1 | `instance` | [decidableEqMulEquivFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/EquivFinitePublic.lean/declarations/decidableeqmulequivfintype.md) | 37 | `declaration-track:2e99a32e9d9c995901bab274d2d7bb7cbb12b431df2e3f677190b229a44ba78d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

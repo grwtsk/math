@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNat.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instOrderBot](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNat.lean/declarations/instorderbot.md) | 24 | `declaration-track:3041eaf27a21266c5be5b4d8b803fde7401f578a6507dbf7a64687ce771147c7` |
-| 2 | `instance` | [instNoMaxOrder](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNat.lean/declarations/instnomaxorder.md) | 28 | `declaration-track:464535233270ae371a4815bb6007b84e103af56a6fe738fe2bb6a993b3a48c76` |
-| 3 | `lemma` | [bot_eq_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNat.lean/declarations/bot-eq-zero.md) | 33 | `result-track:8a5dda37bc1168e2ed80ff5f64c87ee9965579b4a2198190a861a0290caac32f` |
-| 4 | `lemma` | [isLeast_find](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNat.lean/declarations/isleast-find.md) | 36 | `result-track:19a9dd0c44b93f055aafee2bb977aa34d093784e6b7cf4373fa557f25a42d7f8` |
-| 5 | `lemma` | [Set.Nonempty.isLeast_natFind](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNat.lean/declarations/set-nonempty-isleast-natfind.md) | 43 | `result-track:2db70bb468ff8f5b5c392a5fe0bdd62e5d3aeb72434b7e411456912146522704` |
+| 1 | `instance` | [instOrderBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNat.lean/declarations/instorderbot.md) | 24 | `declaration-track:3041eaf27a21266c5be5b4d8b803fde7401f578a6507dbf7a64687ce771147c7` |
+| 2 | `instance` | [instNoMaxOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNat.lean/declarations/instnomaxorder.md) | 28 | `declaration-track:464535233270ae371a4815bb6007b84e103af56a6fe738fe2bb6a993b3a48c76` |
+| 3 | `lemma` | [bot_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNat.lean/declarations/bot-eq-zero.md) | 33 | `result-track:8a5dda37bc1168e2ed80ff5f64c87ee9965579b4a2198190a861a0290caac32f` |
+| 4 | `lemma` | [isLeast_find](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNat.lean/declarations/isleast-find.md) | 36 | `result-track:19a9dd0c44b93f055aafee2bb977aa34d093784e6b7cf4373fa557f25a42d7f8` |
+| 5 | `lemma` | [Set.Nonempty.isLeast_natFind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderNat.lean/declarations/set-nonempty-isleast-natfind.md) | 43 | `result-track:2db70bb468ff8f5b5c392a5fe0bdd62e5d3aeb72434b7e411456912146522704` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

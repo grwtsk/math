@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualMellinFilterAttempt04.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualMellinFilterAttempt04.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMellinFilterAttempt04.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMellinFilterAttempt04.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quarticBumpLaplace](../../../../MeasureAndIntegration/ActualMellinFilterAttempt04.lean/declarations/quarticbumplaplace.md) | 19 | `declaration-track:df029e7fe644b0f89d536c113e6e63099d52f9222088e6ad39bc3e7b80ab116e` |
-| 2 | `theorem` | [quarticBumpLaplace_integrable](../../../../MeasureAndIntegration/ActualMellinFilterAttempt04.lean/declarations/quarticbumplaplace-integrable.md) | 22 | `result-track:6ae64c791b75b7fc50e1fe2ef7a25531505d0cb3099ee61bc86d786f254df35d` |
-| 3 | `theorem` | [primitiveTransform_eq_interval](../../../../MeasureAndIntegration/ActualMellinFilterAttempt04.lean/declarations/primitivetransform-eq-interval.md) | 28 | `result-track:d96f0985d8bc7ddadeea1eb2942fab320904c50427866b3aead40383cb32ef9d` |
-| 4 | `theorem` | [primitiveTransform_eq_quartic](../../../../MeasureAndIntegration/ActualMellinFilterAttempt04.lean/declarations/primitivetransform-eq-quartic.md) | 41 | `result-track:a4b5cd22fa95d1243604f2bfc307c2d23a11bcbe8cdf8d210024728a532f82de` |
-| 5 | `theorem` | [actual_mellin_eq_normalizedTransform](../../../../MeasureAndIntegration/ActualMellinFilterAttempt04.lean/declarations/actual-mellin-eq-normalizedtransform.md) | 65 | `result-track:7fcce42ad03300a655f37b8c37e3a3f8a10e89f249ffe9869d6f94a7f9a5d087` |
-| 6 | `theorem` | [actual_mellin_pole_filter](../../../../MeasureAndIntegration/ActualMellinFilterAttempt04.lean/declarations/actual-mellin-pole-filter.md) | 70 | `result-track:5be9a63b02c32ff823fb5085020a28b80e3631489b793eb616d7bbe2d554c4e0` |
-| 7 | `theorem` | [actual_mellin_pole_filter_unnormalized](../../../../MeasureAndIntegration/ActualMellinFilterAttempt04.lean/declarations/actual-mellin-pole-filter-unnormalized.md) | 77 | `result-track:20987ca5743d31921139d55a281605b02b8b39851d422d3c0e7f1752aa929b19` |
-| 8 | `theorem` | [actual_mellin_nonzero_iff_bump](../../../../MeasureAndIntegration/ActualMellinFilterAttempt04.lean/declarations/actual-mellin-nonzero-iff-bump.md) | 83 | `result-track:b0f5913ebd9af179972a7e52aef41bb4a91040b132e4a84a82f5603ab7056368` |
-| 9 | `theorem` | [actual_mellin_halfstrip_nonzero_iff_bump](../../../../MeasureAndIntegration/ActualMellinFilterAttempt04.lean/declarations/actual-mellin-halfstrip-nonzero-iff-bump.md) | 93 | `result-track:8900021718fb6cbe6ff6d6ee4f2c5d3ee0aaab03487fcceec5ea6db2b7b0c7b9` |
+| 1 | `def` | [quarticBumpLaplace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMellinFilterAttempt04.lean/declarations/quarticbumplaplace.md) | 19 | `declaration-track:df029e7fe644b0f89d536c113e6e63099d52f9222088e6ad39bc3e7b80ab116e` |
+| 2 | `theorem` | [quarticBumpLaplace_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMellinFilterAttempt04.lean/declarations/quarticbumplaplace-integrable.md) | 22 | `result-track:6ae64c791b75b7fc50e1fe2ef7a25531505d0cb3099ee61bc86d786f254df35d` |
+| 3 | `theorem` | [primitiveTransform_eq_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMellinFilterAttempt04.lean/declarations/primitivetransform-eq-interval.md) | 28 | `result-track:d96f0985d8bc7ddadeea1eb2942fab320904c50427866b3aead40383cb32ef9d` |
+| 4 | `theorem` | [primitiveTransform_eq_quartic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMellinFilterAttempt04.lean/declarations/primitivetransform-eq-quartic.md) | 41 | `result-track:a4b5cd22fa95d1243604f2bfc307c2d23a11bcbe8cdf8d210024728a532f82de` |
+| 5 | `theorem` | [actual_mellin_eq_normalizedTransform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMellinFilterAttempt04.lean/declarations/actual-mellin-eq-normalizedtransform.md) | 65 | `result-track:7fcce42ad03300a655f37b8c37e3a3f8a10e89f249ffe9869d6f94a7f9a5d087` |
+| 6 | `theorem` | [actual_mellin_pole_filter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMellinFilterAttempt04.lean/declarations/actual-mellin-pole-filter.md) | 70 | `result-track:5be9a63b02c32ff823fb5085020a28b80e3631489b793eb616d7bbe2d554c4e0` |
+| 7 | `theorem` | [actual_mellin_pole_filter_unnormalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMellinFilterAttempt04.lean/declarations/actual-mellin-pole-filter-unnormalized.md) | 77 | `result-track:20987ca5743d31921139d55a281605b02b8b39851d422d3c0e7f1752aa929b19` |
+| 8 | `theorem` | [actual_mellin_nonzero_iff_bump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMellinFilterAttempt04.lean/declarations/actual-mellin-nonzero-iff-bump.md) | 83 | `result-track:b0f5913ebd9af179972a7e52aef41bb4a91040b132e4a84a82f5603ab7056368` |
+| 9 | `theorem` | [actual_mellin_halfstrip_nonzero_iff_bump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMellinFilterAttempt04.lean/declarations/actual-mellin-halfstrip-nonzero-iff-bump.md) | 93 | `result-track:8900021718fb6cbe6ff6d6ee4f2c5d3ee0aaab03487fcceec5ea6db2b7b0c7b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

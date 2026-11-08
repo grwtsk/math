@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFiniteNamespaced.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFiniteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFiniteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFiniteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [finite](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFiniteNamespaced.lean/declarations/finite.md) | 35 | `result-track:bc8106fd75979d589bae7f3742011783af639744eee58ea7b43a9ea6efabcbf9` |
-| 2 | `lemma` | [finitePresentation](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFiniteNamespaced.lean/declarations/finitepresentation.md) | 39 | `result-track:9bb0745c4ed8ed919d6db018c72aeea334149f9123664095f4a2ec6fa5884695` |
-| 3 | `lemma` | [finitePresentation_iff_exists_presentation](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFiniteNamespaced.lean/declarations/finitepresentation-iff-exists-presentation.md) | 47 | `result-track:207d3ad0d303783171345de4813db487ded0a4918f9863389c69fc92fd4657ca` |
+| 1 | `lemma` | [finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFiniteNamespaced.lean/declarations/finite.md) | 35 | `result-track:bc8106fd75979d589bae7f3742011783af639744eee58ea7b43a9ea6efabcbf9` |
+| 2 | `lemma` | [finitePresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFiniteNamespaced.lean/declarations/finitepresentation.md) | 39 | `result-track:9bb0745c4ed8ed919d6db018c72aeea334149f9123664095f4a2ec6fa5884695` |
+| 3 | `lemma` | [finitePresentation_iff_exists_presentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFiniteNamespaced.lean/declarations/finitepresentation-iff-exists-presentation.md) | 47 | `result-track:207d3ad0d303783171345de4813db487ded0a4918f9863389c69fc92fd4657ca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

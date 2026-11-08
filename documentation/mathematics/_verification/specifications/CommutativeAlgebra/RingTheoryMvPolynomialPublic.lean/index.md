@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryMvPolynomialPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryMvPolynomialPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quotient_mk_comp_C_injective](../../../../CommutativeAlgebra/RingTheoryMvPolynomialPublic.lean/declarations/quotient-mk-comp-c-injective.md) | 34 | `result-track:ed2d154afa0e28548b6e615c34506768056059f32a0166beb23a57f5630de255` |
-| 2 | `theorem` | [rank_eq_lift](../../../../CommutativeAlgebra/RingTheoryMvPolynomialPublic.lean/declarations/rank-eq-lift.md) | 45 | `result-track:a0e2ef442974f284f537429091feba5841e8850426e9a8c23bde9c3f257ec8ac` |
-| 3 | `theorem` | [rank_eq](../../../../CommutativeAlgebra/RingTheoryMvPolynomialPublic.lean/declarations/rank-eq.md) | 48 | `result-track:415298662986c9c811dae888e7a873269374ce428254bddc41f215a6f7cfad68` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/RingTheoryMvPolynomialPublic.lean/declarations/instance.md) | 51 | `declaration-track:8e6706bffcf12d9527d46dac6301fefa7e904991d22cfd93e576b0cb364c2389` |
-| 5 | `theorem` | [finrank_eq_zero](../../../../CommutativeAlgebra/RingTheoryMvPolynomialPublic.lean/declarations/finrank-eq-zero.md) | 54 | `result-track:f9c601f1ae1eb02c5b7cb1fe16cbbabb4a6351e5c3bfb2c10c979666f497e3f8` |
-| 6 | `theorem` | [finrank_eq_one](../../../../CommutativeAlgebra/RingTheoryMvPolynomialPublic.lean/declarations/finrank-eq-one.md) | 58 | `result-track:fdd30c1e5d6106c031a8535061c2a0410a9fa1970d830eb502c4b57de1766bb0` |
+| 1 | `theorem` | [quotient_mk_comp_C_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialPublic.lean/declarations/quotient-mk-comp-c-injective.md) | 34 | `result-track:ed2d154afa0e28548b6e615c34506768056059f32a0166beb23a57f5630de255` |
+| 2 | `theorem` | [rank_eq_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialPublic.lean/declarations/rank-eq-lift.md) | 45 | `result-track:a0e2ef442974f284f537429091feba5841e8850426e9a8c23bde9c3f257ec8ac` |
+| 3 | `theorem` | [rank_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialPublic.lean/declarations/rank-eq.md) | 48 | `result-track:415298662986c9c811dae888e7a873269374ce428254bddc41f215a6f7cfad68` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialPublic.lean/declarations/instance.md) | 51 | `declaration-track:8e6706bffcf12d9527d46dac6301fefa7e904991d22cfd93e576b0cb364c2389` |
+| 5 | `theorem` | [finrank_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialPublic.lean/declarations/finrank-eq-zero.md) | 54 | `result-track:f9c601f1ae1eb02c5b7cb1fe16cbbabb4a6351e5c3bfb2c10c979666f497e3f8` |
+| 6 | `theorem` | [finrank_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialPublic.lean/declarations/finrank-eq-one.md) | 58 | `result-track:fdd30c1e5d6106c031a8535061c2a0410a9fa1970d830eb502c4b57de1766bb0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

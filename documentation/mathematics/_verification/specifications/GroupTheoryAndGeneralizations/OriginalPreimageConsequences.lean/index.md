@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/OriginalPreimageConsequences.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/OriginalPreimageConsequences.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OriginalPreimageConsequences.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OriginalPreimageConsequences.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [every_selected_twist_has_preimage](../../../../GroupTheoryAndGeneralizations/OriginalPreimageConsequences.lean/declarations/every-selected-twist-has-preimage.md) | 39 | `result-track:6a73764b4e909256cc2c69d1b9c95d9d99566ad4b69e94d6a0ca9aaee03e65b1` |
-| 2 | `theorem` | [selected_twist_preimage_unique_of_faithful](../../../../GroupTheoryAndGeneralizations/OriginalPreimageConsequences.lean/declarations/selected-twist-preimage-unique-of-faithful.md) | 52 | `result-track:5ab50be9fed41af778245fcc0c4c7dfeee48b3163dce43e8cee3009e82186287` |
+| 1 | `theorem` | [every_selected_twist_has_preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OriginalPreimageConsequences.lean/declarations/every-selected-twist-has-preimage.md) | 39 | `result-track:6a73764b4e909256cc2c69d1b9c95d9d99566ad4b69e94d6a0ca9aaee03e65b1` |
+| 2 | `theorem` | [selected_twist_preimage_unique_of_faithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OriginalPreimageConsequences.lean/declarations/selected-twist-preimage-unique-of-faithful.md) | 52 | `result-track:5ab50be9fed41af778245fcc0c4c7dfeee48b3163dce43e8cee3009e82186287` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

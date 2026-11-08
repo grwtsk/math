@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Condensation.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Condensation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Condensation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Condensation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ObservationPreservationMode](../../../../../ComputerScience/AlgorithmsInComputerScience/Condensation.lean/declarations/observationpreservationmode.md) | 12 | `declaration-track:4c5bd9952c3be76419955f4cb1002d4ac69a97a77bf904e67548566e2f641786` |
-| 2 | `structure` | [ProtectedBlockObservation](../../../../../ComputerScience/AlgorithmsInComputerScience/Condensation.lean/declarations/protectedblockobservation.md) | 17 | `declaration-track:2f19c7b1c6680044d465296d7bb281ba91df6e1334c8480f2e1359a5ac44b328` |
-| 3 | `def` | [ProtectedBlockObservation.Certified](../../../../../ComputerScience/AlgorithmsInComputerScience/Condensation.lean/declarations/protectedblockobservation-certified.md) | 29 | `declaration-track:07c0e8707534f935147e38783527d006e61f2ff21e4a851d5332341788cc1c14` |
-| 4 | `theorem` | [ProtectedBlockObservation.certified](../../../../../ComputerScience/AlgorithmsInComputerScience/Condensation.lean/declarations/protectedblockobservation-certified-source-edition-2.md) | 40 | `result-track:988367362b32b63c64f71366840c03511109a2217391607662cc5ea88979d3e9` |
-| 5 | `structure` | [BlockAttentionCondensationCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Condensation.lean/declarations/blockattentioncondensationcertificate.md) | 49 | `declaration-track:582592b0fe679090dda1f5617acfca90080995ebc8ce851fa40750a55e07e2fa` |
-| 6 | `def` | [BlockAttentionCondensationCertificate.Certified](../../../../../ComputerScience/AlgorithmsInComputerScience/Condensation.lean/declarations/blockattentioncondensationcertificate-certified.md) | 59 | `declaration-track:1bdb750588004c01802a2bc1ddc81e45623eff289574b57afe5940c204c0628c` |
+| 1 | `inductive` | [ObservationPreservationMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Condensation.lean/declarations/observationpreservationmode.md) | 12 | `declaration-track:4c5bd9952c3be76419955f4cb1002d4ac69a97a77bf904e67548566e2f641786` |
+| 2 | `structure` | [ProtectedBlockObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Condensation.lean/declarations/protectedblockobservation.md) | 17 | `declaration-track:2f19c7b1c6680044d465296d7bb281ba91df6e1334c8480f2e1359a5ac44b328` |
+| 3 | `def` | [ProtectedBlockObservation.Certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Condensation.lean/declarations/protectedblockobservation-certified.md) | 29 | `declaration-track:07c0e8707534f935147e38783527d006e61f2ff21e4a851d5332341788cc1c14` |
+| 4 | `theorem` | [ProtectedBlockObservation.certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Condensation.lean/declarations/protectedblockobservation-certified-source-edition-2.md) | 40 | `result-track:988367362b32b63c64f71366840c03511109a2217391607662cc5ea88979d3e9` |
+| 5 | `structure` | [BlockAttentionCondensationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Condensation.lean/declarations/blockattentioncondensationcertificate.md) | 49 | `declaration-track:582592b0fe679090dda1f5617acfca90080995ebc8ce851fa40750a55e07e2fa` |
+| 6 | `def` | [BlockAttentionCondensationCertificate.Certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Condensation.lean/declarations/blockattentioncondensationcertificate-certified.md) | 59 | `declaration-track:1bdb750588004c01802a2bc1ddc81e45623eff289574b57afe5940c204c0628c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CenteredMobiusLogGreenMinimalParseval.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CenteredMobiusLogGreenMinimalParseval.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenMinimalParseval.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenMinimalParseval.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogHistoricalDyadicEnergy`](../../../../MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogHistoricalDyadicEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Analysis.Fourier.AddCircle` — import line 9; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 10; external provider; requires a separately pinned dependency.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [thinHistoricalGreenResidual](../../../../MeasureAndIntegration/CenteredMobiusLogGreenMinimalParseval.lean/declarations/thinhistoricalgreenresidual.md) | 21 | `declaration-track:c2da0cf71dcb22cf370469c5e254ac3a46195209983a2ddb2468a19ae5d3cde3` |
-| 2 | `def` | [thinHistoricalGreenFourierCoeff](../../../../MeasureAndIntegration/CenteredMobiusLogGreenMinimalParseval.lean/declarations/thinhistoricalgreenfouriercoeff.md) | 24 | `declaration-track:a2c6209327b63c006a06d86e8cf6c30a746a2be2ab933dc0c08125c494e879ea` |
-| 3 | `theorem` | [thinHistoricalGreenResidual_interval_norm_sq](../../../../MeasureAndIntegration/CenteredMobiusLogGreenMinimalParseval.lean/declarations/thinhistoricalgreenresidual-interval-norm-sq.md) | 29 | `result-track:ac7d36dd983ff75dec8b80fc2af302be7ddbb4e79ed75d62bee0228b64dbfc02` |
-| 4 | `theorem` | [thinHistoricalGreenFourier_parseval_hasSum](../../../../MeasureAndIntegration/CenteredMobiusLogGreenMinimalParseval.lean/declarations/thinhistoricalgreenfourier-parseval-hassum.md) | 39 | `result-track:7fcd6e439073996bd847358bbaa0aad389c203d7490a409e83aff0668ec642c3` |
-| 5 | `theorem` | [thinGreenEnergy_eq_greenEnergy_of_coeff](../../../../MeasureAndIntegration/CenteredMobiusLogGreenMinimalParseval.lean/declarations/thingreenenergy-eq-greenenergy-of-coeff.md) | 55 | `result-track:480185664e149922112a75eef9d2aed089f6c3136675a722a99a484e872d0837` |
+| 1 | `def` | [thinHistoricalGreenResidual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenMinimalParseval.lean/declarations/thinhistoricalgreenresidual.md) | 21 | `declaration-track:c2da0cf71dcb22cf370469c5e254ac3a46195209983a2ddb2468a19ae5d3cde3` |
+| 2 | `def` | [thinHistoricalGreenFourierCoeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenMinimalParseval.lean/declarations/thinhistoricalgreenfouriercoeff.md) | 24 | `declaration-track:a2c6209327b63c006a06d86e8cf6c30a746a2be2ab933dc0c08125c494e879ea` |
+| 3 | `theorem` | [thinHistoricalGreenResidual_interval_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenMinimalParseval.lean/declarations/thinhistoricalgreenresidual-interval-norm-sq.md) | 29 | `result-track:ac7d36dd983ff75dec8b80fc2af302be7ddbb4e79ed75d62bee0228b64dbfc02` |
+| 4 | `theorem` | [thinHistoricalGreenFourier_parseval_hasSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenMinimalParseval.lean/declarations/thinhistoricalgreenfourier-parseval-hassum.md) | 39 | `result-track:7fcd6e439073996bd847358bbaa0aad389c203d7490a409e83aff0668ec642c3` |
+| 5 | `theorem` | [thinGreenEnergy_eq_greenEnergy_of_coeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenMinimalParseval.lean/declarations/thingreenenergy-eq-greenenergy-of-coeff.md) | 55 | `result-track:480185664e149922112a75eef9d2aed089f6c3136675a722a99a484e872d0837` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

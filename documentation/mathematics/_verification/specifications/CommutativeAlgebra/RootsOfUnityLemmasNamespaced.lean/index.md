@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RootsOfUnityLemmasNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RootsOfUnityLemmasNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityLemmasNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityLemmasNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [prod_one_sub_pow_eq_order](../../../../CommutativeAlgebra/RootsOfUnityLemmasNamespaced.lean/declarations/prod-one-sub-pow-eq-order.md) | 37 | `result-track:4071c15e9cb7924d32d493807604f882990af15fb3ad6f72be58e23bb0cec318` |
-| 2 | `lemma` | [prod_pow_sub_one_eq_order](../../../../CommutativeAlgebra/RootsOfUnityLemmasNamespaced.lean/declarations/prod-pow-sub-one-eq-order.md) | 48 | `result-track:689d050dd5d4736befdfc4adae0a8dfb95ac90a7818269d360decb80b107fd1d` |
-| 3 | `lemma` | [self_sub_one_pow_dvd_order](../../../../CommutativeAlgebra/RootsOfUnityLemmasNamespaced.lean/declarations/self-sub-one-pow-dvd-order.md) | 56 | `result-track:1beed1436a868c91e2d4cf8d9b51037fd68302bab12d879264e3946aaab91842` |
+| 1 | `lemma` | [prod_one_sub_pow_eq_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityLemmasNamespaced.lean/declarations/prod-one-sub-pow-eq-order.md) | 37 | `result-track:4071c15e9cb7924d32d493807604f882990af15fb3ad6f72be58e23bb0cec318` |
+| 2 | `lemma` | [prod_pow_sub_one_eq_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityLemmasNamespaced.lean/declarations/prod-pow-sub-one-eq-order.md) | 48 | `result-track:689d050dd5d4736befdfc4adae0a8dfb95ac90a7818269d360decb80b107fd1d` |
+| 3 | `lemma` | [self_sub_one_pow_dvd_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityLemmasNamespaced.lean/declarations/self-sub-one-pow-dvd-order.md) | 56 | `result-track:1beed1436a868c91e2d4cf8d9b51037fd68302bab12d879264e3946aaab91842` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

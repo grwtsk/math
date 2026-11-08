@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AnalyticScratch.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AnalyticScratch.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AnalyticScratch.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AnalyticScratch.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thetaPhi_summable](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AnalyticScratch.lean/declarations/thetaphi-summable.md) | 7 | `result-track:16d7608ad62e14663e8381142af174ae391f9df767451fa6b835c9fc8fd993fa` |
-| 2 | `theorem` | [thetaPhiTerm_positive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AnalyticScratch.lean/declarations/thetaphiterm-positive.md) | 17 | `result-track:d5d81c9208fa88138fdb421e5f1f0d5bb31584e08e34fb7ae8e9bbb71eae8392` |
-| 3 | `theorem` | [thetaPhi_positive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AnalyticScratch.lean/declarations/thetaphi-positive.md) | 29 | `result-track:1a6902cd8f33ba79b7f37525526a6b273e036845fa37e4313a7bbfe7c456db74` |
+| 1 | `theorem` | [thetaPhi_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AnalyticScratch.lean/declarations/thetaphi-summable.md) | 7 | `result-track:16d7608ad62e14663e8381142af174ae391f9df767451fa6b835c9fc8fd993fa` |
+| 2 | `theorem` | [thetaPhiTerm_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AnalyticScratch.lean/declarations/thetaphiterm-positive.md) | 17 | `result-track:d5d81c9208fa88138fdb421e5f1f0d5bb31584e08e34fb7ae8e9bbb71eae8392` |
+| 3 | `theorem` | [thetaPhi_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AnalyticScratch.lean/declarations/thetaphi-positive.md) | 29 | `result-track:1a6902cd8f33ba79b7f37525526a6b273e036845fa37e4313a7bbfe7c456db74` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

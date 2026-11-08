@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PointUniverseNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PointUniverseNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointUniverseNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointUniverseNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PointUniverse](../../../../../ComputerScience/AlgorithmsInComputerScience/PointUniverseNamespaced.lean/declarations/pointuniverse.md) | 24 | `declaration-track:8c68b7f87ccf2e4f7e0fe3c18c298bfbc5eff627256c9466d23abd58e92197fb` |
-| 2 | `theorem` | [point_unique](../../../../../ComputerScience/AlgorithmsInComputerScience/PointUniverseNamespaced.lean/declarations/point-unique.md) | 62 | `result-track:6d8ee4405355f8ffc69eb5ce1eadbb861f55d05738f078edf707e9ba1caf1d66` |
-| 3 | `theorem` | [relation_endpoints_resolve](../../../../../ComputerScience/AlgorithmsInComputerScience/PointUniverseNamespaced.lean/declarations/relation-endpoints-resolve.md) | 73 | `result-track:32ff275e0ff86fdbc26d9b6a133aa0b697dcf14f98d3221f4b8e285902b49c81` |
-| 4 | `theorem` | [relation_has_provenance](../../../../../ComputerScience/AlgorithmsInComputerScience/PointUniverseNamespaced.lean/declarations/relation-has-provenance.md) | 82 | `result-track:6c8e7ab417e9493599b33db0d38b451e13099bce7c10fdb9009a1ed925a3b170` |
+| 1 | `structure` | [PointUniverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointUniverseNamespaced.lean/declarations/pointuniverse.md) | 24 | `declaration-track:8c68b7f87ccf2e4f7e0fe3c18c298bfbc5eff627256c9466d23abd58e92197fb` |
+| 2 | `theorem` | [point_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointUniverseNamespaced.lean/declarations/point-unique.md) | 62 | `result-track:6d8ee4405355f8ffc69eb5ce1eadbb861f55d05738f078edf707e9ba1caf1d66` |
+| 3 | `theorem` | [relation_endpoints_resolve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointUniverseNamespaced.lean/declarations/relation-endpoints-resolve.md) | 73 | `result-track:32ff275e0ff86fdbc26d9b6a133aa0b697dcf14f98d3221f4b8e285902b49c81` |
+| 4 | `theorem` | [relation_has_provenance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointUniverseNamespaced.lean/declarations/relation-has-provenance.md) | 82 | `result-track:6c8e7ab417e9493599b33db0d38b451e13099bce7c10fdb9009a1ed925a3b170` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

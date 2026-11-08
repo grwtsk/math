@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/AsymptoticsPublic.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/AsymptoticsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/AsymptoticsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/AsymptoticsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_norm_le_and_mk_eq_div_atTop_aux₁](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/AsymptoticsPublic.lean/declarations/tendsto-norm-le-and-mk-eq-div-attop-aux-source-edition-2.md) | 44 | `result-track:cd3286ace159234fc4b302ee042a4c5d88709be4133976ceeee88edbfc0cef51` |
-| 2 | `def` | [tendsto_norm_le_and_mk_eq_div_atTop_aux₂](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/AsymptoticsPublic.lean/declarations/tendsto-norm-le-and-mk-eq-div-attop-aux.md) | 59 | `declaration-track:b11e3f5da5800c2149c28c9ff89f50cefbc493a2313b752c7db3ba6a2b6759c3` |
-| 3 | `theorem` | [tendsto_norm_le_and_mk_eq_div_atTop](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/AsymptoticsPublic.lean/declarations/tendsto-norm-le-and-mk-eq-div-attop.md) | 80 | `result-track:c366f37bd9bda2a284f5283c2b194fc10a353db3f5d75b8c203a4ad939b99ea8` |
-| 4 | `theorem` | [tendsto_norm_le_div_atTop₀](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/AsymptoticsPublic.lean/declarations/tendsto-norm-le-div-attop.md) | 128 | `result-track:01198247c1667c53120123a9bb366971fc32146a8315a99921478e1450c7522f` |
-| 5 | `theorem` | [tendsto_norm_le_div_atTop](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/AsymptoticsPublic.lean/declarations/tendsto-norm-le-div-attop-source-edition-2.md) | 152 | `result-track:9b740e47567c9e18ba6b6009446928b2d6c60f82e5eeb147f4749be66e4a749b` |
+| 1 | `theorem` | [tendsto_norm_le_and_mk_eq_div_atTop_aux₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/AsymptoticsPublic.lean/declarations/tendsto-norm-le-and-mk-eq-div-attop-aux-source-edition-2.md) | 44 | `result-track:cd3286ace159234fc4b302ee042a4c5d88709be4133976ceeee88edbfc0cef51` |
+| 2 | `def` | [tendsto_norm_le_and_mk_eq_div_atTop_aux₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/AsymptoticsPublic.lean/declarations/tendsto-norm-le-and-mk-eq-div-attop-aux.md) | 59 | `declaration-track:b11e3f5da5800c2149c28c9ff89f50cefbc493a2313b752c7db3ba6a2b6759c3` |
+| 3 | `theorem` | [tendsto_norm_le_and_mk_eq_div_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/AsymptoticsPublic.lean/declarations/tendsto-norm-le-and-mk-eq-div-attop.md) | 80 | `result-track:c366f37bd9bda2a284f5283c2b194fc10a353db3f5d75b8c203a4ad939b99ea8` |
+| 4 | `theorem` | [tendsto_norm_le_div_atTop₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/AsymptoticsPublic.lean/declarations/tendsto-norm-le-div-attop.md) | 128 | `result-track:01198247c1667c53120123a9bb366971fc32146a8315a99921478e1450c7522f` |
+| 5 | `theorem` | [tendsto_norm_le_div_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/AsymptoticsPublic.lean/declarations/tendsto-norm-le-div-attop-source-edition-2.md) | 152 | `result-track:9b740e47567c9e18ba6b6009446928b2d6c60f82e5eeb147f4749be66e4a749b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

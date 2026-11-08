@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/GoldbachRationalArcExpansion.lean/index.md) · [Full source](../../../../MeasureAndIntegration/GoldbachRationalArcExpansion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachRationalArcExpansion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachRationalArcExpansion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.GoldbachRationalArcCriterion`](../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcCriterion.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.GoldbachRationalArcSeparation`](../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparation.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachRationalArcCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcCriterion.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachRationalArcSeparation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparation.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.MeasureTheory.Integral.Bochner.Set` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 7; external provider; requires a separately pinned dependency.
 
@@ -60,16 +60,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [goldbachClippedRationalArc](../../../../MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/goldbachclippedrationalarc.md) | 43 | `declaration-track:3b4dfb9100782e19c13be8c0b8c06aa8d56d4f4a2baf5e31539498037565b268` |
-| 2 | `theorem` | [measurable_goldbachClippedRationalArc](../../../../MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/measurable-goldbachclippedrationalarc.md) | 49 | `result-track:3f2c76cef85f0505c6cae9bc1f0ec36d6f7d24eb21407ae97eb42242c065b46d` |
-| 3 | `theorem` | [goldbachRationalMajorArcSet_eq_biUnion_clipped](../../../../MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/goldbachrationalmajorarcset-eq-biunion-clipped.md) | 58 | `result-track:83cc2a418fc6f2b0c093f98193d97fc0877fa8196e83b8895164a8673cb1be3f` |
-| 4 | `theorem` | [goldbachClippedRationalArcs_pairwiseDisjoint](../../../../MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/goldbachclippedrationalarcs-pairwisedisjoint.md) | 72 | `result-track:e51883d6fa9761bbd97a7a2d9b2997a9b1c193319ed8f078ec124c5d701373f6` |
-| 5 | `theorem` | [integrableOn_goldbachCircleIntegrand_clipped](../../../../MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/integrableon-goldbachcircleintegrand-clipped.md) | 85 | `result-track:83e2a24e0779160e9d3d050da5d5d6eaea9453ed3ee6233af5bb38157dd903dd` |
-| 6 | `def` | [goldbachSingleRationalArcContribution](../../../../MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/goldbachsinglerationalarccontribution.md) | 93 | `declaration-track:2e22f7fa985889e4ab399eb5a8b78ef2af40bd173cd8759307a355407acaf6e1` |
-| 7 | `theorem` | [goldbachRationalMajorContribution_eq_sum](../../../../MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/goldbachrationalmajorcontribution-eq-sum.md) | 100 | `result-track:e008bf62652db299f1ceeed1951fe16038c60e9d7ebdd91927b75a486fa56a0a` |
-| 8 | `theorem` | [goldbachRationalArcSum_add_minor_eq_logMass](../../../../MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/goldbachrationalarcsum-add-minor-eq-logmass.md) | 122 | `result-track:2b542c5019d23ed68de3a7033384e9e35d33ca69cd4e4e76a587c081462fb19a` |
-| 9 | `theorem` | [goldbachCount_pos_of_rational_arc_sum_bounds](../../../../MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/goldbachcount-pos-of-rational-arc-sum-bounds.md) | 133 | `result-track:f76abf79f43369a9ce70aefe80b6aa2db11e8ad4306a9039f071cfaaf4f0a8b4` |
-| 10 | `theorem` | [goldbachCount_pos_of_rational_arc_sum_truncated_certificate](../../../../MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/goldbachcount-pos-of-rational-arc-sum-truncated-certificate.md) | 154 | `result-track:0d34911b22a96c48f3cc3900a94ee1478fea6917e816dbbf8dfa6168f15db719` |
+| 1 | `def` | [goldbachClippedRationalArc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/goldbachclippedrationalarc.md) | 43 | `declaration-track:3b4dfb9100782e19c13be8c0b8c06aa8d56d4f4a2baf5e31539498037565b268` |
+| 2 | `theorem` | [measurable_goldbachClippedRationalArc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/measurable-goldbachclippedrationalarc.md) | 49 | `result-track:3f2c76cef85f0505c6cae9bc1f0ec36d6f7d24eb21407ae97eb42242c065b46d` |
+| 3 | `theorem` | [goldbachRationalMajorArcSet_eq_biUnion_clipped](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/goldbachrationalmajorarcset-eq-biunion-clipped.md) | 58 | `result-track:83cc2a418fc6f2b0c093f98193d97fc0877fa8196e83b8895164a8673cb1be3f` |
+| 4 | `theorem` | [goldbachClippedRationalArcs_pairwiseDisjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/goldbachclippedrationalarcs-pairwisedisjoint.md) | 72 | `result-track:e51883d6fa9761bbd97a7a2d9b2997a9b1c193319ed8f078ec124c5d701373f6` |
+| 5 | `theorem` | [integrableOn_goldbachCircleIntegrand_clipped](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/integrableon-goldbachcircleintegrand-clipped.md) | 85 | `result-track:83e2a24e0779160e9d3d050da5d5d6eaea9453ed3ee6233af5bb38157dd903dd` |
+| 6 | `def` | [goldbachSingleRationalArcContribution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/goldbachsinglerationalarccontribution.md) | 93 | `declaration-track:2e22f7fa985889e4ab399eb5a8b78ef2af40bd173cd8759307a355407acaf6e1` |
+| 7 | `theorem` | [goldbachRationalMajorContribution_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/goldbachrationalmajorcontribution-eq-sum.md) | 100 | `result-track:e008bf62652db299f1ceeed1951fe16038c60e9d7ebdd91927b75a486fa56a0a` |
+| 8 | `theorem` | [goldbachRationalArcSum_add_minor_eq_logMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/goldbachrationalarcsum-add-minor-eq-logmass.md) | 122 | `result-track:2b542c5019d23ed68de3a7033384e9e35d33ca69cd4e4e76a587c081462fb19a` |
+| 9 | `theorem` | [goldbachCount_pos_of_rational_arc_sum_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/goldbachcount-pos-of-rational-arc-sum-bounds.md) | 133 | `result-track:f76abf79f43369a9ce70aefe80b6aa2db11e8ad4306a9039f071cfaaf4f0a8b4` |
+| 10 | `theorem` | [goldbachCount_pos_of_rational_arc_sum_truncated_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachRationalArcExpansion.lean/declarations/goldbachcount-pos-of-rational-arc-sum-truncated-certificate.md) | 154 | `result-track:0d34911b22a96c48f3cc3900a94ee1478fea6917e816dbbf8dfa6168f15db719` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

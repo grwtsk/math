@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ReciprocalPolynomial.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ReciprocalPolynomial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReciprocalPolynomial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReciprocalPolynomial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [generic_factorization](../../../../CommutativeAlgebra/ReciprocalPolynomial.lean/declarations/generic-factorization.md) | 10 | `result-track:8e51d72e6a2c86c1f3c555af2f8d0fc1e5526c5f5cfedf3b37ea0c6dacd40895` |
-| 2 | `theorem` | [determinant_one_polynomial](../../../../CommutativeAlgebra/ReciprocalPolynomial.lean/declarations/determinant-one-polynomial.md) | 16 | `result-track:534d7aa51a53bf803f82a5971e4ba7d1cfcc49d11a9a3a5a38259143ea770a20` |
-| 3 | `theorem` | [inverse_involution](../../../../CommutativeAlgebra/ReciprocalPolynomial.lean/declarations/inverse-involution.md) | 23 | `result-track:e66e7000d2b35610bd7ca735c4f02f91be8d06dacaef5aef2420e98a8d6437b2` |
-| 4 | `def` | [characterDual](../../../../CommutativeAlgebra/ReciprocalPolynomial.lean/declarations/characterdual.md) | 26 | `declaration-track:c0fe6bcf35de5e5f5b86dd72a5114f87ee1617b732ec5b4531afdbc4f66ba46f` |
+| 1 | `theorem` | [generic_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReciprocalPolynomial.lean/declarations/generic-factorization.md) | 10 | `result-track:8e51d72e6a2c86c1f3c555af2f8d0fc1e5526c5f5cfedf3b37ea0c6dacd40895` |
+| 2 | `theorem` | [determinant_one_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReciprocalPolynomial.lean/declarations/determinant-one-polynomial.md) | 16 | `result-track:534d7aa51a53bf803f82a5971e4ba7d1cfcc49d11a9a3a5a38259143ea770a20` |
+| 3 | `theorem` | [inverse_involution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReciprocalPolynomial.lean/declarations/inverse-involution.md) | 23 | `result-track:e66e7000d2b35610bd7ca735c4f02f91be8d06dacaef5aef2420e98a8d6437b2` |
+| 4 | `def` | [characterDual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReciprocalPolynomial.lean/declarations/characterdual.md) | 26 | `declaration-track:c0fe6bcf35de5e5f5b86dd72a5114f87ee1617b732ec5b4531afdbc4f66ba46f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

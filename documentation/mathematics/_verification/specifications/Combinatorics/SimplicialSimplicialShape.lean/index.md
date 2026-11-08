@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SimplicialSimplicialShape.lean/index.md) · [Full source](../../../../Combinatorics/SimplicialSimplicialShape.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplicialSimplicialShape.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplicialSimplicialShape.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SimplicialShape](../../../../Combinatorics/SimplicialSimplicialShape.lean/declarations/simplicialshape.md) | 11 | `declaration-track:89f8966a1bf423c41606074f1604e88e06fb09fe89f4d24168cbbe9d74515f93` |
-| 2 | `structure` | [Presentation](../../../../Combinatorics/SimplicialSimplicialShape.lean/declarations/presentation.md) | 18 | `declaration-track:8d3f8254ca046217d459193d35253d3f3f2b62d54964e873af9347610a5a1418` |
+| 1 | `structure` | [SimplicialShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplicialSimplicialShape.lean/declarations/simplicialshape.md) | 11 | `declaration-track:89f8966a1bf423c41606074f1604e88e06fb09fe89f4d24168cbbe9d74515f93` |
+| 2 | `structure` | [Presentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SimplicialSimplicialShape.lean/declarations/presentation.md) | 18 | `declaration-track:8d3f8254ca046217d459193d35253d3f3f2b62d54964e873af9347610a5a1418` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

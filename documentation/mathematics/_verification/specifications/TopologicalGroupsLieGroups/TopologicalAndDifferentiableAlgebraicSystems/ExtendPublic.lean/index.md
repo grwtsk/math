@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ExtendPublic.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ExtendPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ExtendPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ExtendPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [extend](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ExtendPublic.lean/declarations/extend.md) | 29 | `declaration-track:64a01cd72facb668c77357522ce557f19e5640511946e5090f8a27357f1df3ea` |
-| 2 | `theorem` | [extend_eq](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ExtendPublic.lean/declarations/extend-eq.md) | 56 | `result-track:78342649bab2bda15bece728c58a470c1656df2d442e9c0d310856c5646a318d` |
-| 3 | `theorem` | [extend_unique](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ExtendPublic.lean/declarations/extend-unique.md) | 61 | `result-track:39f11e59e6a762b1d81b28ad0dec5fbbd40f657588a0374eeef1c33e03694932` |
-| 4 | `theorem` | [extend_zero](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ExtendPublic.lean/declarations/extend-zero.md) | 67 | `result-track:d0bfef84d8977c3f6c5771ae5a0efec4ffeed779bab18b2532ae4dd74530ce99` |
+| 1 | `def` | [extend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ExtendPublic.lean/declarations/extend.md) | 29 | `declaration-track:64a01cd72facb668c77357522ce557f19e5640511946e5090f8a27357f1df3ea` |
+| 2 | `theorem` | [extend_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ExtendPublic.lean/declarations/extend-eq.md) | 56 | `result-track:78342649bab2bda15bece728c58a470c1656df2d442e9c0d310856c5646a318d` |
+| 3 | `theorem` | [extend_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ExtendPublic.lean/declarations/extend-unique.md) | 61 | `result-track:39f11e59e6a762b1d81b28ad0dec5fbbd40f657588a0374eeef1c33e03694932` |
+| 4 | `theorem` | [extend_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ExtendPublic.lean/declarations/extend-zero.md) | 67 | `result-track:d0bfef84d8977c3f6c5771ae5a0efec4ffeed779bab18b2532ae4dd74530ce99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

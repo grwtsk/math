@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ColimitTensorProductNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ColimitTensorProductNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ColimitTensorProductNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ColimitTensorProductNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Submodule.FG.exists_rTensor_fg_inclusion_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ColimitTensorProductNamespaced.lean/declarations/submodule-fg-exists-rtensor-fg-inclusion-eq.md) | 33 | `result-track:574bc2f57737467f7b15534f42ba51660b30f15cf50a1107bcacb3ff622b5e80` |
+| 1 | `theorem` | [Submodule.FG.exists_rTensor_fg_inclusion_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ColimitTensorProductNamespaced.lean/declarations/submodule-fg-exists-rtensor-fg-inclusion-eq.md) | 33 | `result-track:574bc2f57737467f7b15534f42ba51660b30f15cf50a1107bcacb3ff622b5e80` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

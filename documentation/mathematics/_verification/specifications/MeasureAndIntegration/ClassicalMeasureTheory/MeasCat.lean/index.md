@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MeasCat](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/meascat.md) | 39 | `declaration-track:eb53211233260221d04615ce8c5131adedd792b415290197e72cbd442e556426` |
-| 2 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/instance.md) | 48 | `declaration-track:1e59b3ca8650a497d25f4b99cacaca21445061fc4ec37c3a1fbf982e8e061987` |
-| 3 | `abbrev` | [of](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/of.md) | 52 | `declaration-track:b0add4aa652e8307bcc699a3afc37bb836b27305edfbd447837852a74124126f` |
-| 4 | `theorem` | [coe_of](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/coe-of.md) | 55 | `result-track:ace56e8fa1f59ce3ac747c0867e065b9c668933bc401a3779037412a512325c2` |
-| 5 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/instance-source-edition-2.md) | 58 | `declaration-track:4bc27eecee84ca0a1c1073d0dc13e9128faa52cf1b99ff3afcbcb15a1bb4726c` |
-| 6 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/instance-source-edition-4.md) | 63 | `declaration-track:e9655786d7787a1dc4c56acb945c1fb7dc09c711523b5a4e380246977a52ff09` |
-| 7 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/instance-source-edition-3.md) | 67 | `declaration-track:e5d9409ee3bb50d1bdf73c9a37b3cd117e68adff9d541f01ef821bc13bbe1091` |
-| 8 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/instance-source-edition-5.md) | 71 | `declaration-track:fa70ee1b878eb7badc983a36715733412e41f262f416b2ea4771f37a1a9a3506` |
-| 9 | `def` | [Measure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/measure.md) | 83 | `declaration-track:e8f6b69b9ab5541993590212852318608297819392a5889609f95a740e63efb7` |
-| 10 | `def` | [Giry](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/giry.md) | 90 | `declaration-track:9c43822d72ee55141b81d28d67bff41e35fd64ec248743e25169cdbe705c8894` |
-| 11 | `def` | [Integral](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/integral.md) | 104 | `declaration-track:a034f766fc23cac2e9b53646f446d531ce87d2aee05e259b025f7a7ded30989a` |
-| 12 | `instance` | [TopCat.hasForgetToMeasCat](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/topcat-hasforgettomeascat.md) | 115 | `declaration-track:47d56ce08848733605c0779402a32152cc0056639d1c8e0a3cb9d8d983909721` |
-| 13 | `abbrev` | [Borel](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/borel.md) | 120 | `declaration-track:10a794798ed4674c05196f359101d23a76b1f619d9b53e08df4f91688c9835b3` |
+| 1 | `structure` | [MeasCat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/meascat.md) | 39 | `declaration-track:eb53211233260221d04615ce8c5131adedd792b415290197e72cbd442e556426` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/instance.md) | 48 | `declaration-track:1e59b3ca8650a497d25f4b99cacaca21445061fc4ec37c3a1fbf982e8e061987` |
+| 3 | `abbrev` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/of.md) | 52 | `declaration-track:b0add4aa652e8307bcc699a3afc37bb836b27305edfbd447837852a74124126f` |
+| 4 | `theorem` | [coe_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/coe-of.md) | 55 | `result-track:ace56e8fa1f59ce3ac747c0867e065b9c668933bc401a3779037412a512325c2` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/instance-source-edition-2.md) | 58 | `declaration-track:4bc27eecee84ca0a1c1073d0dc13e9128faa52cf1b99ff3afcbcb15a1bb4726c` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/instance-source-edition-4.md) | 63 | `declaration-track:e9655786d7787a1dc4c56acb945c1fb7dc09c711523b5a4e380246977a52ff09` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/instance-source-edition-3.md) | 67 | `declaration-track:e5d9409ee3bb50d1bdf73c9a37b3cd117e68adff9d541f01ef821bc13bbe1091` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/instance-source-edition-5.md) | 71 | `declaration-track:fa70ee1b878eb7badc983a36715733412e41f262f416b2ea4771f37a1a9a3506` |
+| 9 | `def` | [Measure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/measure.md) | 83 | `declaration-track:e8f6b69b9ab5541993590212852318608297819392a5889609f95a740e63efb7` |
+| 10 | `def` | [Giry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/giry.md) | 90 | `declaration-track:9c43822d72ee55141b81d28d67bff41e35fd64ec248743e25169cdbe705c8894` |
+| 11 | `def` | [Integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/integral.md) | 104 | `declaration-track:a034f766fc23cac2e9b53646f446d531ce87d2aee05e259b025f7a7ded30989a` |
+| 12 | `instance` | [TopCat.hasForgetToMeasCat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/topcat-hasforgettomeascat.md) | 115 | `declaration-track:47d56ce08848733605c0779402a32152cc0056639d1c8e0a3cb9d8d983909721` |
+| 13 | `abbrev` | [Borel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasCat.lean/declarations/borel.md) | 120 | `declaration-track:10a794798ed4674c05196f359101d23a76b1f619d9b53e08df4f91688c9835b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

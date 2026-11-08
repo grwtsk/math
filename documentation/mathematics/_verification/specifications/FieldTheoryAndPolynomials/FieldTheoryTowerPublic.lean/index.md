@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/FieldTheoryTowerPublic.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/FieldTheoryTowerPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryTowerPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryTowerPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [left](../../../../FieldTheoryAndPolynomials/FieldTheoryTowerPublic.lean/declarations/left.md) | 47 | `result-track:19fea2d2b08ffb7e5595b7c18963243fb69f906caf0fd0c73832a6133eef509c` |
-| 2 | `theorem` | [right](../../../../FieldTheoryAndPolynomials/FieldTheoryTowerPublic.lean/declarations/right.md) | 55 | `result-track:039638bfe7362adbc9443e0fa524452ae3eeceb8abf838f34fc647e48c8807c5` |
+| 1 | `theorem` | [left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryTowerPublic.lean/declarations/left.md) | 47 | `result-track:19fea2d2b08ffb7e5595b7c18963243fb69f906caf0fd0c73832a6133eef509c` |
+| 2 | `theorem` | [right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryTowerPublic.lean/declarations/right.md) | 55 | `result-track:039638bfe7362adbc9443e0fa524452ae3eeceb8abf838f34fc647e48c8807c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

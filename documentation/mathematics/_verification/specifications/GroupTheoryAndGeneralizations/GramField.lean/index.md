@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GramField.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GramField.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GramField.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GramField.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PositiveGram](../../../../GroupTheoryAndGeneralizations/GramField.lean/declarations/positivegram.md) | 19 | `declaration-track:fe85474dc71b8e5129c7408e9f8abae42f19519321468050b85069232efb8b69` |
-| 2 | `def` | [squaredNorm](../../../../GroupTheoryAndGeneralizations/GramField.lean/declarations/squarednorm.md) | 32 | `declaration-track:fb5e15d7a53de980990886a71a48de1010e5e4dccf03645365e05a38f5b6e536` |
-| 3 | `def` | [squaredDistance](../../../../GroupTheoryAndGeneralizations/GramField.lean/declarations/squareddistance.md) | 35 | `declaration-track:23a7dcf90184387317e7375912fddf2f316482403251d299da6bb488f1e3b6cb` |
-| 4 | `theorem` | [squaredNorm_nonnegative](../../../../GroupTheoryAndGeneralizations/GramField.lean/declarations/squarednorm-nonnegative.md) | 38 | `result-track:e5a037fa61bafdfce8fe5c19186ba8c125a217ff11d9186c5172b5ce40d7e1b2` |
-| 5 | `theorem` | [squaredNorm_eq_zero_iff](../../../../GroupTheoryAndGeneralizations/GramField.lean/declarations/squarednorm-eq-zero-iff.md) | 44 | `result-track:3206f50056aaf10b8be4c5bc582354320738e7a6186fe58525e7b15885e4c39d` |
-| 6 | `theorem` | [squaredDistance_self](../../../../GroupTheoryAndGeneralizations/GramField.lean/declarations/squareddistance-self.md) | 55 | `result-track:2cb73b1fe6f6dd198e0b1d75f13deb5d288f5b8e633a27888a648c8fd14ea98b` |
-| 7 | `abbrev` | [GramField](../../../../GroupTheoryAndGeneralizations/GramField.lean/declarations/gramfield.md) | 62 | `declaration-track:8f04d3cdbe3dd65bb4d17045f5131ffd711b27f639479c0aff55960e75e09398` |
+| 1 | `structure` | [PositiveGram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GramField.lean/declarations/positivegram.md) | 19 | `declaration-track:fe85474dc71b8e5129c7408e9f8abae42f19519321468050b85069232efb8b69` |
+| 2 | `def` | [squaredNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GramField.lean/declarations/squarednorm.md) | 32 | `declaration-track:fb5e15d7a53de980990886a71a48de1010e5e4dccf03645365e05a38f5b6e536` |
+| 3 | `def` | [squaredDistance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GramField.lean/declarations/squareddistance.md) | 35 | `declaration-track:23a7dcf90184387317e7375912fddf2f316482403251d299da6bb488f1e3b6cb` |
+| 4 | `theorem` | [squaredNorm_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GramField.lean/declarations/squarednorm-nonnegative.md) | 38 | `result-track:e5a037fa61bafdfce8fe5c19186ba8c125a217ff11d9186c5172b5ce40d7e1b2` |
+| 5 | `theorem` | [squaredNorm_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GramField.lean/declarations/squarednorm-eq-zero-iff.md) | 44 | `result-track:3206f50056aaf10b8be4c5bc582354320738e7a6186fe58525e7b15885e4c39d` |
+| 6 | `theorem` | [squaredDistance_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GramField.lean/declarations/squareddistance-self.md) | 55 | `result-track:2cb73b1fe6f6dd198e0b1d75f13deb5d288f5b8e633a27888a648c8fd14ea98b` |
+| 7 | `abbrev` | [GramField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GramField.lean/declarations/gramfield.md) | 62 | `declaration-track:8f04d3cdbe3dd65bb4d17045f5131ffd711b27f639479c0aff55960e75e09398` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

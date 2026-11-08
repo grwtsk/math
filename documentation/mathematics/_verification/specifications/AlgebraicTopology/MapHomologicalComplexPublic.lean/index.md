@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/MapHomologicalComplexPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/MapHomologicalComplexPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/MapHomologicalComplexPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/MapHomologicalComplexPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [chainComplexFunctorObjCompMapIso](../../../../AlgebraicTopology/MapHomologicalComplexPublic.lean/declarations/chaincomplexfunctorobjcompmapiso.md) | 45 | `declaration-track:e37981055377b5bf8383a401ce9864af1a93066810755bd2a58cdd2aab16a0b7` |
-| 2 | `lemma` | [map_ιChainComplex_chainComplexFunctorObjCompMapIso_hom_app_f](../../../../AlgebraicTopology/MapHomologicalComplexPublic.lean/declarations/map-chaincomplex-chaincomplexfunctorobjcompmapiso-hom-app-f.md) | 64 | `result-track:39ab45acee81fd2a47a1bf22302a5cf51b8c78ebfdb41bfc03bda4f3c203ff35` |
+| 1 | `def` | [chainComplexFunctorObjCompMapIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/MapHomologicalComplexPublic.lean/declarations/chaincomplexfunctorobjcompmapiso.md) | 45 | `declaration-track:e37981055377b5bf8383a401ce9864af1a93066810755bd2a58cdd2aab16a0b7` |
+| 2 | `lemma` | [map_ιChainComplex_chainComplexFunctorObjCompMapIso_hom_app_f](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/MapHomologicalComplexPublic.lean/declarations/map-chaincomplex-chaincomplexfunctorobjcompmapiso-hom-app-f.md) | 64 | `result-track:39ab45acee81fd2a47a1bf22302a5cf51b8c78ebfdb41bfc03bda4f3c203ff35` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

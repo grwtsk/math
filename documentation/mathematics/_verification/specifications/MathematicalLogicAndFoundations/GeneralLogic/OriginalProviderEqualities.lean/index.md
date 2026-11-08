@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OriginalProviderEqualities.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OriginalProviderEqualities.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OriginalProviderEqualities.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OriginalProviderEqualities.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bsd_rank_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OriginalProviderEqualities.lean/declarations/bsd-rank-eq.md) | 37 | `result-track:d1e7ddd5dc7d1ff59bf5005f4aacf9dcd60c121a38b8fcbfddf6696a24aa6f8b` |
-| 2 | `theorem` | [bsd_sha_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OriginalProviderEqualities.lean/declarations/bsd-sha-eq.md) | 42 | `result-track:053173f9b98f888118a76abe6f89864da921da236c31a874390d502975c0d4f2` |
+| 1 | `theorem` | [bsd_rank_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OriginalProviderEqualities.lean/declarations/bsd-rank-eq.md) | 37 | `result-track:d1e7ddd5dc7d1ff59bf5005f4aacf9dcd60c121a38b8fcbfddf6696a24aa6f8b` |
+| 2 | `theorem` | [bsd_sha_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OriginalProviderEqualities.lean/declarations/bsd-sha-eq.md) | 42 | `result-track:053173f9b98f888118a76abe6f89864da921da236c31a874390d502975c0d4f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

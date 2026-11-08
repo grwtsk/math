@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FiniteAntipodalWalshExpansion.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FiniteAntipodalWalshExpansion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteAntipodalWalshExpansion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteAntipodalWalshExpansion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [product_one_sub_eq_powerset_sum](../../../../CommutativeAlgebra/FiniteAntipodalWalshExpansion.lean/declarations/product-one-sub-eq-powerset-sum.md) | 19 | `result-track:3b9794f83c0e61dfd8b5bead21cc24d8298989cec7d79c97ac791b6cb793c86d` |
+| 1 | `theorem` | [product_one_sub_eq_powerset_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteAntipodalWalshExpansion.lean/declarations/product-one-sub-eq-powerset-sum.md) | 19 | `result-track:3b9794f83c0e61dfd8b5bead21cc24d8298989cec7d79c97ac791b6cb793c86d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

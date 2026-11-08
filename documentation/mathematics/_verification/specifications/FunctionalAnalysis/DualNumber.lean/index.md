@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/DualNumber.lean/index.md) · [Full source](../../../../FunctionalAnalysis/DualNumber.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DualNumber.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DualNumber.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exp_eps](../../../../FunctionalAnalysis/DualNumber.lean/declarations/exp-eps.md) | 31 | `result-track:cd033bf2eb83ec7e05ea544e061515a032493fb5d788e3fe76d06fe62bca7b72` |
-| 2 | `theorem` | [exp_smul_eps](../../../../FunctionalAnalysis/DualNumber.lean/declarations/exp-smul-eps.md) | 35 | `result-track:bd7ead290081bff4195d17f169638ddc738f2ab6e1b1b65d0b3bdccd774713f3` |
+| 1 | `theorem` | [exp_eps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DualNumber.lean/declarations/exp-eps.md) | 31 | `result-track:cd033bf2eb83ec7e05ea544e061515a032493fb5d788e3fe76d06fe62bca7b72` |
+| 2 | `theorem` | [exp_smul_eps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DualNumber.lean/declarations/exp-smul-eps.md) | 35 | `result-track:bd7ead290081bff4195d17f169638ddc738f2ab6e1b1b65d0b3bdccd774713f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

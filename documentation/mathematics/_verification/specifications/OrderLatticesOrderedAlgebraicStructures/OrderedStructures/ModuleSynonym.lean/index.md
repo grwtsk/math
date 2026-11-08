@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleSynonym.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleSynonym.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleSynonym.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleSynonym.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instModule](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleSynonym.lean/declarations/instmodule-source-edition-3.md) | 27 | `declaration-track:5ef6355202ca4b393ea3eb3e2db0feb7bdef88c831a2b03f3d8bff6d7d491dc7` |
-| 2 | `instance` | [instModule'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleSynonym.lean/declarations/instmodule-source-edition-2.md) | 31 | `declaration-track:38cdf817270014a62ac536ab73144d67f15106170d54bb025f05f7da30c60790` |
-| 3 | `instance` | [instModule](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleSynonym.lean/declarations/instmodule-source-edition-4.md) | 39 | `declaration-track:f6b12eb1ef03a1831a6abf0076f0a34ded07bfc78163bae85f4e15debfbb9300` |
-| 4 | `instance` | [instModule'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleSynonym.lean/declarations/instmodule.md) | 42 | `declaration-track:0c71a0e9ead0376f749674d6d2f7e672ca63549c15d9e9f7312add52c1d53d4c` |
+| 1 | `instance` | [instModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleSynonym.lean/declarations/instmodule-source-edition-3.md) | 27 | `declaration-track:5ef6355202ca4b393ea3eb3e2db0feb7bdef88c831a2b03f3d8bff6d7d491dc7` |
+| 2 | `instance` | [instModule'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleSynonym.lean/declarations/instmodule-source-edition-2.md) | 31 | `declaration-track:38cdf817270014a62ac536ab73144d67f15106170d54bb025f05f7da30c60790` |
+| 3 | `instance` | [instModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleSynonym.lean/declarations/instmodule-source-edition-4.md) | 39 | `declaration-track:f6b12eb1ef03a1831a6abf0076f0a34ded07bfc78163bae85f4e15debfbb9300` |
+| 4 | `instance` | [instModule'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleSynonym.lean/declarations/instmodule.md) | 42 | `declaration-track:0c71a0e9ead0376f749674d6d2f7e672ca63549c15d9e9f7312add52c1d53d4c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

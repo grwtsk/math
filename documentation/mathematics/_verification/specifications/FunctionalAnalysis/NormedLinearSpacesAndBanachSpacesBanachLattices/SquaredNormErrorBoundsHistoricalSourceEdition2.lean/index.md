@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SquaredNormErrorBoundsHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SquaredNormErrorBoundsHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SquaredNormErrorBoundsHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SquaredNormErrorBoundsHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [strict_squared_return](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SquaredNormErrorBoundsHistoricalSourceEdition2.lean/declarations/strict-squared-return.md) | 13 | `result-track:835e3770defc6727ec544e3066715d4eb363a9deae1a8198cd23595136f49ac6` |
-| 2 | `theorem` | [concrete_tensor_slack](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SquaredNormErrorBoundsHistoricalSourceEdition2.lean/declarations/concrete-tensor-slack.md) | 27 | `result-track:77efbf49e16750edd8c359808a38340d290aabaf4738bf073b93691ffbe56635` |
-| 3 | `theorem` | [tensor_source_norm_return](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SquaredNormErrorBoundsHistoricalSourceEdition2.lean/declarations/tensor-source-norm-return.md) | 35 | `result-track:ee2222471fe02dd54e3bb5ac6d09a9a93f2ce8c0bf08afad37dcb1657680a0ab` |
+| 1 | `theorem` | [strict_squared_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SquaredNormErrorBoundsHistoricalSourceEdition2.lean/declarations/strict-squared-return.md) | 13 | `result-track:835e3770defc6727ec544e3066715d4eb363a9deae1a8198cd23595136f49ac6` |
+| 2 | `theorem` | [concrete_tensor_slack](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SquaredNormErrorBoundsHistoricalSourceEdition2.lean/declarations/concrete-tensor-slack.md) | 27 | `result-track:77efbf49e16750edd8c359808a38340d290aabaf4738bf073b93691ffbe56635` |
+| 3 | `theorem` | [tensor_source_norm_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SquaredNormErrorBoundsHistoricalSourceEdition2.lean/declarations/tensor-source-norm-return.md) | 35 | `result-track:ee2222471fe02dd54e3bb5ac6d09a9a93f2ce8c0bf08afad37dcb1657680a0ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

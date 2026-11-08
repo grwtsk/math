@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PathCompensation.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PathCompensation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PathCompensation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PathCompensation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pathCompensation](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PathCompensation.lean/declarations/pathcompensation.md) | 17 | `declaration-track:b8378f84e6c183a7c0f39596306156ad576f2e7937b4161df5330c9b87ff01ec` |
-| 2 | `def` | [pathCompensationBudget](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PathCompensation.lean/declarations/pathcompensationbudget.md) | 39 | `declaration-track:9d013f94c5b7828f7b1db096bc585331036a2467507a6110c7ffb0d707989c97` |
-| 3 | `theorem` | [pathEnergy_difference_eq_compensation](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PathCompensation.lean/declarations/pathenergy-difference-eq-compensation.md) | 64 | `result-track:5159968e5b30cac5fef074cf9644b96592fbc6ecdb65aa5ae21a50e31f69ea7e` |
-| 4 | `theorem` | [pathEnergy_compensation_bound](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PathCompensation.lean/declarations/pathenergy-compensation-bound.md) | 98 | `result-track:eacc12373ccbf8454bacf640445fb903377fc52442bd0bb7ea583e941b7619a6` |
-| 5 | `theorem` | [pathEnergy_invariant_of_exactCompensation](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PathCompensation.lean/declarations/pathenergy-invariant-of-exactcompensation.md) | 157 | `result-track:ed9ef02e74ab450aeff126636e42f04af41f77c8ce69e1c6d7b915bc7a73df82` |
+| 1 | `def` | [pathCompensation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PathCompensation.lean/declarations/pathcompensation.md) | 17 | `declaration-track:b8378f84e6c183a7c0f39596306156ad576f2e7937b4161df5330c9b87ff01ec` |
+| 2 | `def` | [pathCompensationBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PathCompensation.lean/declarations/pathcompensationbudget.md) | 39 | `declaration-track:9d013f94c5b7828f7b1db096bc585331036a2467507a6110c7ffb0d707989c97` |
+| 3 | `theorem` | [pathEnergy_difference_eq_compensation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PathCompensation.lean/declarations/pathenergy-difference-eq-compensation.md) | 64 | `result-track:5159968e5b30cac5fef074cf9644b96592fbc6ecdb65aa5ae21a50e31f69ea7e` |
+| 4 | `theorem` | [pathEnergy_compensation_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PathCompensation.lean/declarations/pathenergy-compensation-bound.md) | 98 | `result-track:eacc12373ccbf8454bacf640445fb903377fc52442bd0bb7ea583e941b7619a6` |
+| 5 | `theorem` | [pathEnergy_invariant_of_exactCompensation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PathCompensation.lean/declarations/pathenergy-invariant-of-exactcompensation.md) | 157 | `result-track:ed9ef02e74ab450aeff126636e42f04af41f77c8ce69e1c6d7b915bc7a73df82` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

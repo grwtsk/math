@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PoleNormalizedEndpointJet`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PoleNormalizedEndpointJet.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalEndpointJet`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PoleNormalizedEndpointJet`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PoleNormalizedEndpointJet.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalEndpointJet`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalEndpointJet.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Data.Rat.BigOperators` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [regularJet](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/regularjet.md) | 31 | `declaration-track:bee491fc6b79c15fc79d64b4d0ac98def08e87899cf99d1c36dfed6cad60b0ff` |
-| 2 | `def` | [coefficientJet](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/coefficientjet.md) | 39 | `declaration-track:be6eadb3934b6937efa76d9b75b251eb209d4aad8528b27f6e6a60d96976d022` |
-| 3 | `theorem` | [regularJet_refines](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/regularjet-refines.md) | 44 | `result-track:8e1cf5a5f4032a47a0b47b45a31bfeb9bb3c49afa7a158cb583cb3feac1d7bcf` |
-| 4 | `theorem` | [coefficientJet_refines](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/coefficientjet-refines.md) | 57 | `result-track:99a599345295cd3077d7eb4fb2e9e08ade04ef471c3ab33fc27fa6282b82e190` |
-| 5 | `def` | [assemble](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/assemble.md) | 66 | `declaration-track:4e64b1224ff359a88b7e47190e66015ff9cb9a0b72e258ef48a2807cd7e7865d` |
-| 6 | `theorem` | [assemble_sound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/assemble-sound.md) | 77 | `result-track:b834cc922986036078887d1bdf4dfaa16ff3e34ed4da4edb5442860d326a51ec` |
-| 7 | `def` | [tailAllowance](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/tailallowance.md) | 108 | `declaration-track:6d15e83db69bbdf1697c3522526a932ddc5549dbf5fb06fa55883d113e28c521` |
-| 8 | `def` | [sourceAllowance](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/sourceallowance.md) | 113 | `declaration-track:e854788c754a153018c291ecf59bb16fb0eef379aeab0fad69d6ac737663bfe9` |
-| 9 | `def` | [sourceBall](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/sourceball.md) | 116 | `declaration-track:e185e5869e69811729f6eef2141f83005139461624642bdf8bcc5f4a452034bf` |
-| 10 | `theorem` | [source_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/source-error.md) | 120 | `result-track:bc1f064f4a9403da99c1847d4f774d7f2dd79dd28dea722bbe098c13e1605289` |
-| 11 | `theorem` | [sourceBall_sound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/sourceball-sound.md) | 143 | `result-track:7e333124725d2a0339ef2345196f538f6fca5343a235927a441ea566c5a2ff15` |
+| 1 | `def` | [regularJet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/regularjet.md) | 31 | `declaration-track:bee491fc6b79c15fc79d64b4d0ac98def08e87899cf99d1c36dfed6cad60b0ff` |
+| 2 | `def` | [coefficientJet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/coefficientjet.md) | 39 | `declaration-track:be6eadb3934b6937efa76d9b75b251eb209d4aad8528b27f6e6a60d96976d022` |
+| 3 | `theorem` | [regularJet_refines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/regularjet-refines.md) | 44 | `result-track:8e1cf5a5f4032a47a0b47b45a31bfeb9bb3c49afa7a158cb583cb3feac1d7bcf` |
+| 4 | `theorem` | [coefficientJet_refines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/coefficientjet-refines.md) | 57 | `result-track:99a599345295cd3077d7eb4fb2e9e08ade04ef471c3ab33fc27fa6282b82e190` |
+| 5 | `def` | [assemble](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/assemble.md) | 66 | `declaration-track:4e64b1224ff359a88b7e47190e66015ff9cb9a0b72e258ef48a2807cd7e7865d` |
+| 6 | `theorem` | [assemble_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/assemble-sound.md) | 77 | `result-track:b834cc922986036078887d1bdf4dfaa16ff3e34ed4da4edb5442860d326a51ec` |
+| 7 | `def` | [tailAllowance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/tailallowance.md) | 108 | `declaration-track:6d15e83db69bbdf1697c3522526a932ddc5549dbf5fb06fa55883d113e28c521` |
+| 8 | `def` | [sourceAllowance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/sourceallowance.md) | 113 | `declaration-track:e854788c754a153018c291ecf59bb16fb0eef379aeab0fad69d6ac737663bfe9` |
+| 9 | `def` | [sourceBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/sourceball.md) | 116 | `declaration-track:e185e5869e69811729f6eef2141f83005139461624642bdf8bcc5f4a452034bf` |
+| 10 | `theorem` | [source_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/source-error.md) | 120 | `result-track:bc1f064f4a9403da99c1847d4f774d7f2dd79dd28dea722bbe098c13e1605289` |
+| 11 | `theorem` | [sourceBall_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/declarations/sourceball-sound.md) | 143 | `result-track:7e333124725d2a0339ef2345196f538f6fca5343a235927a441ea566c5a2ff15` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

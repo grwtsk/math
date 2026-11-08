@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AFc702078bf5578a5Namespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AFc702078bf5578a5Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AFc702078bf5578a5Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AFc702078bf5578a5Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [HomeCandidateAuthority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AFc702078bf5578a5Namespaced.lean/declarations/homecandidateauthority.md) | 20 | `declaration-track:c2d5dd5932fa2c4be24df023faa06959c025152d40141a000fa45e2b55dd7637` |
-| 2 | `structure` | [HomeCandidate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AFc702078bf5578a5Namespaced.lean/declarations/homecandidate.md) | 24 | `declaration-track:d0751702de2b0ae7853bd7e61cdff5e5f157285779e40b1552bae91b34db7c8f` |
-| 3 | `theorem` | [candidate_authority_navigation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AFc702078bf5578a5Namespaced.lean/declarations/candidate-authority-navigation.md) | 33 | `result-track:2a601fd2ad062d09a94406fad41ff87ac912ba5cfb9f8e5f7edad745e58de8ff` |
+| 1 | `inductive` | [HomeCandidateAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AFc702078bf5578a5Namespaced.lean/declarations/homecandidateauthority.md) | 20 | `declaration-track:c2d5dd5932fa2c4be24df023faa06959c025152d40141a000fa45e2b55dd7637` |
+| 2 | `structure` | [HomeCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AFc702078bf5578a5Namespaced.lean/declarations/homecandidate.md) | 24 | `declaration-track:d0751702de2b0ae7853bd7e61cdff5e5f157285779e40b1552bae91b34db7c8f` |
+| 3 | `theorem` | [candidate_authority_navigation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AFc702078bf5578a5Namespaced.lean/declarations/candidate-authority-navigation.md) | 33 | `result-track:2a601fd2ad062d09a94406fad41ff87ac912ba5cfb9f8e5f7edad745e58de8ff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

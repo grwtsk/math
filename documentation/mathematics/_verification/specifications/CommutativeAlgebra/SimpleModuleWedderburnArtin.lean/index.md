@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsSimpleRing.tfae](../../../../CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/issimplering-tfae.md) | 18 | `result-track:0a9d031efe44b9e74dd1177754b250e1577f0693080fd1e5b4cf7d9eca41ad03` |
-| 2 | `theorem` | [IsSimpleRing.isSemisimpleRing_iff_isArtinianRing](../../../../CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/issimplering-issemisimplering-iff-isartinianring.md) | 31 | `result-track:7def0ab4ca1f94cc54c0489c2a3a11288f0dc346d18d6e19f85d4c1c6e5b232b` |
-| 3 | `theorem` | [isSimpleRing_isArtinianRing_iff](../../../../CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/issimplering-isartinianring-iff.md) | 34 | `result-track:86ed9ee0f1e1ede5464c2c6380524c7f582d692ce04673382c03ed0173506e45` |
-| 4 | `theorem` | [isIsotypic](../../../../CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/isisotypic.md) | 47 | `result-track:a58685bc2302b0d49e96f76ab7afbf5e0dce3d3345c01c8b539e7d400374a450` |
-| 5 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/instance.md) | 50 | `declaration-track:096cf3534cbe34d03c39b8bbd636714f8931e0aa3fd659180d3a2d960ba4cc12` |
-| 6 | `theorem` | [exists_ringEquiv_matrix_end_mulOpposite](../../../../CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/exists-ringequiv-matrix-end-mulopposite.md) | 55 | `result-track:62e5d84880a3e131b1d621cbb659678be2bece013c7960ec05a26050e329a25d` |
-| 7 | `theorem` | [exists_ringEquiv_matrix_divisionRing](../../../../CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/exists-ringequiv-matrix-divisionring.md) | 64 | `result-track:38f4b4b504b90f50cdf28618e138284a8251b500bec5a1ce701eb9614bb842ba` |
-| 8 | `theorem` | [exists_algEquiv_matrix_end_mulOpposite](../../../../CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/exists-algequiv-matrix-end-mulopposite.md) | 72 | `result-track:19a69be15593bcd52401c83df6121d710e9f76bac5f5064b5e124b228c4891f9` |
-| 9 | `theorem` | [exists_algEquiv_matrix_divisionRing](../../../../CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/exists-algequiv-matrix-divisionring.md) | 81 | `result-track:20da8b2db60ec37172c75a0a54f98fb33cfce835b7e95bf99b1f9d2f2c627338` |
-| 10 | `theorem` | [exists_algEquiv_matrix_divisionRing_finite](../../../../CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/exists-algequiv-matrix-divisionring-finite.md) | 89 | `result-track:acb90d6332c9ff6f76e83abaebd4348b9a6af962425921a6d7173b8033c633a6` |
+| 1 | `theorem` | [IsSimpleRing.tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/issimplering-tfae.md) | 18 | `result-track:0a9d031efe44b9e74dd1177754b250e1577f0693080fd1e5b4cf7d9eca41ad03` |
+| 2 | `theorem` | [IsSimpleRing.isSemisimpleRing_iff_isArtinianRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/issimplering-issemisimplering-iff-isartinianring.md) | 31 | `result-track:7def0ab4ca1f94cc54c0489c2a3a11288f0dc346d18d6e19f85d4c1c6e5b232b` |
+| 3 | `theorem` | [isSimpleRing_isArtinianRing_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/issimplering-isartinianring-iff.md) | 34 | `result-track:86ed9ee0f1e1ede5464c2c6380524c7f582d692ce04673382c03ed0173506e45` |
+| 4 | `theorem` | [isIsotypic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/isisotypic.md) | 47 | `result-track:a58685bc2302b0d49e96f76ab7afbf5e0dce3d3345c01c8b539e7d400374a450` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/instance.md) | 50 | `declaration-track:096cf3534cbe34d03c39b8bbd636714f8931e0aa3fd659180d3a2d960ba4cc12` |
+| 6 | `theorem` | [exists_ringEquiv_matrix_end_mulOpposite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/exists-ringequiv-matrix-end-mulopposite.md) | 55 | `result-track:62e5d84880a3e131b1d621cbb659678be2bece013c7960ec05a26050e329a25d` |
+| 7 | `theorem` | [exists_ringEquiv_matrix_divisionRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/exists-ringequiv-matrix-divisionring.md) | 64 | `result-track:38f4b4b504b90f50cdf28618e138284a8251b500bec5a1ce701eb9614bb842ba` |
+| 8 | `theorem` | [exists_algEquiv_matrix_end_mulOpposite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/exists-algequiv-matrix-end-mulopposite.md) | 72 | `result-track:19a69be15593bcd52401c83df6121d710e9f76bac5f5064b5e124b228c4891f9` |
+| 9 | `theorem` | [exists_algEquiv_matrix_divisionRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/exists-algequiv-matrix-divisionring.md) | 81 | `result-track:20da8b2db60ec37172c75a0a54f98fb33cfce835b7e95bf99b1f9d2f2c627338` |
+| 10 | `theorem` | [exists_algEquiv_matrix_divisionRing_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleModuleWedderburnArtin.lean/declarations/exists-algequiv-matrix-divisionring-finite.md) | 89 | `result-track:acb90d6332c9ff6f76e83abaebd4348b9a6af962425921a6d7173b8033c633a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

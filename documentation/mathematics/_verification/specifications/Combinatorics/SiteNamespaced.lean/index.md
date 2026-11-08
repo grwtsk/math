@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SiteNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/SiteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SiteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SiteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteCommunicationSite](../../../../Combinatorics/SiteNamespaced.lean/declarations/finitecommunicationsite.md) | 24 | `declaration-track:6c9016c115166390469dda24e571746b54f4ebb20085d880c76f67f159379b06` |
-| 2 | `def` | [le](../../../../Combinatorics/SiteNamespaced.lean/declarations/le.md) | 43 | `declaration-track:4c9f7a7cf1f4054ce874f83dc88251c562ec04fb6f86a908b906a1062f26b469` |
-| 3 | `instance` | [(anonymous)](../../../../Combinatorics/SiteNamespaced.lean/declarations/instance.md) | 46 | `declaration-track:36dcd109f4e7a883a261eb2f5aca3dbd255a4be480bb253e050ac8be62d473ff` |
-| 4 | `theorem` | [le_refl](../../../../Combinatorics/SiteNamespaced.lean/declarations/le-refl.md) | 50 | `result-track:c88a7d7d21d28ef951bfa62fa24c4aad86aa92e3594c2a21fc3673aeedc7175d` |
-| 5 | `theorem` | [le_trans](../../../../Combinatorics/SiteNamespaced.lean/declarations/le-trans.md) | 55 | `result-track:a5a6efd4b38dff528547c177d7f205779ea511d74df4790f42bf7a467e5ef8cd` |
-| 6 | `theorem` | [cover_member_below](../../../../Combinatorics/SiteNamespaced.lean/declarations/cover-member-below.md) | 65 | `result-track:a2fd41767d08090663bf52a30c2f5a7495aa7ab62f57494afb98a39bef912244` |
-| 7 | `theorem` | [cover_finite](../../../../Combinatorics/SiteNamespaced.lean/declarations/cover-finite.md) | 73 | `result-track:35a45a51793ee8458e48f60fc80e5476a61f7b8f0ce0777242a35db842f545ad` |
+| 1 | `structure` | [FiniteCommunicationSite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SiteNamespaced.lean/declarations/finitecommunicationsite.md) | 24 | `declaration-track:6c9016c115166390469dda24e571746b54f4ebb20085d880c76f67f159379b06` |
+| 2 | `def` | [le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SiteNamespaced.lean/declarations/le.md) | 43 | `declaration-track:4c9f7a7cf1f4054ce874f83dc88251c562ec04fb6f86a908b906a1062f26b469` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SiteNamespaced.lean/declarations/instance.md) | 46 | `declaration-track:36dcd109f4e7a883a261eb2f5aca3dbd255a4be480bb253e050ac8be62d473ff` |
+| 4 | `theorem` | [le_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SiteNamespaced.lean/declarations/le-refl.md) | 50 | `result-track:c88a7d7d21d28ef951bfa62fa24c4aad86aa92e3594c2a21fc3673aeedc7175d` |
+| 5 | `theorem` | [le_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SiteNamespaced.lean/declarations/le-trans.md) | 55 | `result-track:a5a6efd4b38dff528547c177d7f205779ea511d74df4790f42bf7a467e5ef8cd` |
+| 6 | `theorem` | [cover_member_below](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SiteNamespaced.lean/declarations/cover-member-below.md) | 65 | `result-track:a2fd41767d08090663bf52a30c2f5a7495aa7ab62f57494afb98a39bef912244` |
+| 7 | `theorem` | [cover_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SiteNamespaced.lean/declarations/cover-finite.md) | 73 | `result-track:35a45a51793ee8458e48f60fc80e5476a61f7b8f0ce0777242a35db842f545ad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ConvolutionNamespacedAeConvolutionTendstoRightOfLocallyIntegrable.lean/index.md) · [Full source](../../../../RealFunctions/ConvolutionNamespacedAeConvolutionTendstoRightOfLocallyIntegrable.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConvolutionNamespacedAeConvolutionTendstoRightOfLocallyIntegrable.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConvolutionNamespacedAeConvolutionTendstoRightOfLocallyIntegrable.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,12 +63,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [convolution_eq_right](../../../../RealFunctions/ConvolutionNamespacedAeConvolutionTendstoRightOfLocallyIntegrable.lean/declarations/convolution-eq-right.md) | 61 | `result-track:f1ccb285e340cf2ccd915861fa35f5fd2883b0403fd9eb6297964a4553a6fe43` |
-| 2 | `theorem` | [normed_convolution_eq_right](../../../../RealFunctions/ConvolutionNamespacedAeConvolutionTendstoRightOfLocallyIntegrable.lean/declarations/normed-convolution-eq-right.md) | 69 | `result-track:702cf51c7febb9875f1d86824992f4547bb1deffff24be98781dc0b67d764da0` |
-| 3 | `theorem` | [dist_normed_convolution_le](../../../../RealFunctions/ConvolutionNamespacedAeConvolutionTendstoRightOfLocallyIntegrable.lean/declarations/dist-normed-convolution-le.md) | 79 | `result-track:acdd223f47c9c4d0c262385695e9b688e160242a2eb61a7dddf26859d5116330` |
-| 4 | `theorem` | [convolution_tendsto_right](../../../../RealFunctions/ConvolutionNamespacedAeConvolutionTendstoRightOfLocallyIntegrable.lean/declarations/convolution-tendsto-right.md) | 91 | `result-track:786a7e00a4cb389f749595940a1b345ef1e9f51bb8697cb34160375932770916` |
-| 5 | `theorem` | [convolution_tendsto_right_of_continuous](../../../../RealFunctions/ConvolutionNamespacedAeConvolutionTendstoRightOfLocallyIntegrable.lean/declarations/convolution-tendsto-right-of-continuous.md) | 102 | `result-track:20202c4005c2c1e7332b16249ce4f0fea18b4ffb2fdc69dd928a9f20da60f2ef` |
-| 6 | `theorem` | [ae_convolution_tendsto_right_of_locallyIntegrable](../../../../RealFunctions/ConvolutionNamespacedAeConvolutionTendstoRightOfLocallyIntegrable.lean/declarations/ae-convolution-tendsto-right-of-locallyintegrable.md) | 111 | `result-track:6a272a4e92889717977d43b351df87c18443e5753c0cf061b3ffcbc2c622966b` |
+| 1 | `theorem` | [convolution_eq_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConvolutionNamespacedAeConvolutionTendstoRightOfLocallyIntegrable.lean/declarations/convolution-eq-right.md) | 61 | `result-track:f1ccb285e340cf2ccd915861fa35f5fd2883b0403fd9eb6297964a4553a6fe43` |
+| 2 | `theorem` | [normed_convolution_eq_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConvolutionNamespacedAeConvolutionTendstoRightOfLocallyIntegrable.lean/declarations/normed-convolution-eq-right.md) | 69 | `result-track:702cf51c7febb9875f1d86824992f4547bb1deffff24be98781dc0b67d764da0` |
+| 3 | `theorem` | [dist_normed_convolution_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConvolutionNamespacedAeConvolutionTendstoRightOfLocallyIntegrable.lean/declarations/dist-normed-convolution-le.md) | 79 | `result-track:acdd223f47c9c4d0c262385695e9b688e160242a2eb61a7dddf26859d5116330` |
+| 4 | `theorem` | [convolution_tendsto_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConvolutionNamespacedAeConvolutionTendstoRightOfLocallyIntegrable.lean/declarations/convolution-tendsto-right.md) | 91 | `result-track:786a7e00a4cb389f749595940a1b345ef1e9f51bb8697cb34160375932770916` |
+| 5 | `theorem` | [convolution_tendsto_right_of_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConvolutionNamespacedAeConvolutionTendstoRightOfLocallyIntegrable.lean/declarations/convolution-tendsto-right-of-continuous.md) | 102 | `result-track:20202c4005c2c1e7332b16249ce4f0fea18b4ffb2fdc69dd928a9f20da60f2ef` |
+| 6 | `theorem` | [ae_convolution_tendsto_right_of_locallyIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConvolutionNamespacedAeConvolutionTendstoRightOfLocallyIntegrable.lean/declarations/ae-convolution-tendsto-right-of-locallyintegrable.md) | 111 | `result-track:6a272a4e92889717977d43b351df87c18443e5753c0cf061b3ffcbc2c622966b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

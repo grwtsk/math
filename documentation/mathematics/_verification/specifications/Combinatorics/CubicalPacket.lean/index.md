@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CubicalPacket.lean/index.md) · [Full source](../../../../Combinatorics/CubicalPacket.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CubicalPacket.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CubicalPacket.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ExactSkeleton](../../../../Combinatorics/CubicalPacket.lean/declarations/exactskeleton.md) | 18 | `declaration-track:2dbb519cc77eaddb1842d081b0be0689da3aaa216dba4b726337b97a00d60672` |
-| 2 | `def` | [rationalRealize](../../../../Combinatorics/CubicalPacket.lean/declarations/rationalrealize.md) | 28 | `declaration-track:984946ead2e995f2348545c7d3c3c6ea599e0a9a9b97c4a1051b2fc14e0151f5` |
-| 3 | `def` | [rationalSquaredCost](../../../../Combinatorics/CubicalPacket.lean/declarations/rationalsquaredcost.md) | 32 | `declaration-track:b04d223fbd602bd322bfb4e322724fbaeb6ef6ee2aac3f29f0d05c842a52a490` |
-| 4 | `structure` | [ExactDynamics](../../../../Combinatorics/CubicalPacket.lean/declarations/exactdynamics.md) | 37 | `declaration-track:381306bac86b69f89588b2a7b191e940d3959637af40cede66040c8ecc6deba5` |
-| 5 | `structure` | [MLPacket](../../../../Combinatorics/CubicalPacket.lean/declarations/mlpacket.md) | 51 | `declaration-track:25c36d595a66355cb3d8fec72c1e3935bbc77ac3c0ba6be61ce0028821cfbe43` |
-| 6 | `def` | [consume](../../../../Combinatorics/CubicalPacket.lean/declarations/consume.md) | 61 | `declaration-track:d17016838bde0e7aa2ff1f2a0b64834b2b8ca4382e07178cbd537b07fd15e8a0` |
-| 7 | `theorem` | [consume_preserves_skeleton](../../../../Combinatorics/CubicalPacket.lean/declarations/consume-preserves-skeleton.md) | 71 | `result-track:4773975409e67d0bcb408de4fbd3ffcb55fc16baa55f9484612f0e8ba3a114fe` |
-| 8 | `structure` | [CoveredDecoder](../../../../Combinatorics/CubicalPacket.lean/declarations/covereddecoder.md) | 80 | `declaration-track:d3b40d697c623280b045ddba0e6dcaf8087dbb808b63f4dbd9d31b0c604cadf5` |
-| 9 | `theorem` | [decode_surjective](../../../../Combinatorics/CubicalPacket.lean/declarations/decode-surjective.md) | 84 | `result-track:0c56bd8ff8ec46dc3ee69d54b21af85da172e47eafd1110b2a3114ead7af4a68` |
+| 1 | `structure` | [ExactSkeleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CubicalPacket.lean/declarations/exactskeleton.md) | 18 | `declaration-track:2dbb519cc77eaddb1842d081b0be0689da3aaa216dba4b726337b97a00d60672` |
+| 2 | `def` | [rationalRealize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CubicalPacket.lean/declarations/rationalrealize.md) | 28 | `declaration-track:984946ead2e995f2348545c7d3c3c6ea599e0a9a9b97c4a1051b2fc14e0151f5` |
+| 3 | `def` | [rationalSquaredCost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CubicalPacket.lean/declarations/rationalsquaredcost.md) | 32 | `declaration-track:b04d223fbd602bd322bfb4e322724fbaeb6ef6ee2aac3f29f0d05c842a52a490` |
+| 4 | `structure` | [ExactDynamics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CubicalPacket.lean/declarations/exactdynamics.md) | 37 | `declaration-track:381306bac86b69f89588b2a7b191e940d3959637af40cede66040c8ecc6deba5` |
+| 5 | `structure` | [MLPacket](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CubicalPacket.lean/declarations/mlpacket.md) | 51 | `declaration-track:25c36d595a66355cb3d8fec72c1e3935bbc77ac3c0ba6be61ce0028821cfbe43` |
+| 6 | `def` | [consume](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CubicalPacket.lean/declarations/consume.md) | 61 | `declaration-track:d17016838bde0e7aa2ff1f2a0b64834b2b8ca4382e07178cbd537b07fd15e8a0` |
+| 7 | `theorem` | [consume_preserves_skeleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CubicalPacket.lean/declarations/consume-preserves-skeleton.md) | 71 | `result-track:4773975409e67d0bcb408de4fbd3ffcb55fc16baa55f9484612f0e8ba3a114fe` |
+| 8 | `structure` | [CoveredDecoder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CubicalPacket.lean/declarations/covereddecoder.md) | 80 | `declaration-track:d3b40d697c623280b045ddba0e6dcaf8087dbb808b63f4dbd9d31b0c604cadf5` |
+| 9 | `theorem` | [decode_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CubicalPacket.lean/declarations/decode-surjective.md) | 84 | `result-track:0c56bd8ff8ec46dc3ee69d54b21af85da172e47eafd1110b2a3114ead7af4a68` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

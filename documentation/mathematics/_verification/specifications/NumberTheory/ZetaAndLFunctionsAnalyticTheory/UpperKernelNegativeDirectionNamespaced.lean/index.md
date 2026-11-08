@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [log_thirty_two_ge_three](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionNamespaced.lean/declarations/log-thirty-two-ge-three.md) | 20 | `result-track:c965e33a8b944fc10def7e289250df3bb1bf907831e695974d66aceac8af8b96` |
-| 2 | `theorem` | [actual_upper_pair](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionNamespaced.lean/declarations/actual-upper-pair.md) | 29 | `result-track:42e0d4f2f8f9e0a3ab47f9c2cc417aeaee8158e9eeb19da131de876958c7af0f` |
-| 3 | `theorem` | [actual_diagonal_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionNamespaced.lean/declarations/actual-diagonal-zero.md) | 34 | `result-track:4f365be32832cd0d5b7dd2870c8251db0a86593b74910fbe40108b412be52ef8` |
-| 4 | `theorem` | [actual_offDiagonal_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionNamespaced.lean/declarations/actual-offdiagonal-pos.md) | 42 | `result-track:ef5a59bfd2949673dd19175fbf999eb66b040465d9b1b7a784d87774c8304ad6` |
-| 5 | `theorem` | [actual_pair_determinant_neg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionNamespaced.lean/declarations/actual-pair-determinant-neg.md) | 48 | `result-track:08a1e7e3370d722bc316baab1a8f1dce29cabe98e6a9f4039a8a6ecaf15ee56e` |
-| 6 | `theorem` | [actual_negative_direction](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionNamespaced.lean/declarations/actual-negative-direction.md) | 55 | `result-track:9e77f18cd39d9ac2fb2b8890b8a047831ca4d62584c900ee077a130abf53903a` |
-| 7 | `theorem` | [not_actual_pair_positiveSemidefinite](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionNamespaced.lean/declarations/not-actual-pair-positivesemidefinite.md) | 70 | `result-track:567eb1454881a8ec0aeebdb35e847c6086952286add4dd2d260381688730ef34` |
+| 1 | `theorem` | [log_thirty_two_ge_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionNamespaced.lean/declarations/log-thirty-two-ge-three.md) | 20 | `result-track:c965e33a8b944fc10def7e289250df3bb1bf907831e695974d66aceac8af8b96` |
+| 2 | `theorem` | [actual_upper_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionNamespaced.lean/declarations/actual-upper-pair.md) | 29 | `result-track:42e0d4f2f8f9e0a3ab47f9c2cc417aeaee8158e9eeb19da131de876958c7af0f` |
+| 3 | `theorem` | [actual_diagonal_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionNamespaced.lean/declarations/actual-diagonal-zero.md) | 34 | `result-track:4f365be32832cd0d5b7dd2870c8251db0a86593b74910fbe40108b412be52ef8` |
+| 4 | `theorem` | [actual_offDiagonal_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionNamespaced.lean/declarations/actual-offdiagonal-pos.md) | 42 | `result-track:ef5a59bfd2949673dd19175fbf999eb66b040465d9b1b7a784d87774c8304ad6` |
+| 5 | `theorem` | [actual_pair_determinant_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionNamespaced.lean/declarations/actual-pair-determinant-neg.md) | 48 | `result-track:08a1e7e3370d722bc316baab1a8f1dce29cabe98e6a9f4039a8a6ecaf15ee56e` |
+| 6 | `theorem` | [actual_negative_direction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionNamespaced.lean/declarations/actual-negative-direction.md) | 55 | `result-track:9e77f18cd39d9ac2fb2b8890b8a047831ca4d62584c900ee077a130abf53903a` |
+| 7 | `theorem` | [not_actual_pair_positiveSemidefinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionNamespaced.lean/declarations/not-actual-pair-positivesemidefinite.md) | 70 | `result-track:567eb1454881a8ec0aeebdb35e847c6086952286add4dd2d260381688730ef34` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

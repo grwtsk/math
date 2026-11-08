@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificatePacketEnergyTelescopeCertificate.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificatePacketEnergyTelescopeCertificate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificatePacketEnergyTelescopeCertificate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificatePacketEnergyTelescopeCertificate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PacketEnergyTelescopeCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificatePacketEnergyTelescopeCertificate.lean/declarations/packetenergytelescopecertificate.md) | 9 | `declaration-track:34250d40ab3bd929b018493a132365ed2bc7b0376dad108e7a06068ad2473c1f` |
+| 1 | `structure` | [PacketEnergyTelescopeCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificatePacketEnergyTelescopeCertificate.lean/declarations/packetenergytelescopecertificate.md) | 9 | `declaration-track:34250d40ab3bd929b018493a132365ed2bc7b0376dad108e7a06068ad2473c1f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

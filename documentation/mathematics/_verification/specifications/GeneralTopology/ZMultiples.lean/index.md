@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ZMultiples.lean/index.md) · [Full source](../../../../GeneralTopology/ZMultiples.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZMultiples.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZMultiples.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/ZMultiples.lean/declarations/instance.md) | 32 | `declaration-track:c83644c165182b6c762073a92b38b2ce6808b495c823543c48d653b12bf3f244` |
-| 2 | `theorem` | [tendsto_coe_cofinite](../../../../GeneralTopology/ZMultiples.lean/declarations/tendsto-coe-cofinite.md) | 43 | `result-track:f55afbd16e9ee255c8c6ad11f909035a443eb37ee0c351079c19fc4981185002` |
-| 3 | `theorem` | [tendsto_zmultiplesHom_cofinite](../../../../GeneralTopology/ZMultiples.lean/declarations/tendsto-zmultipleshom-cofinite.md) | 50 | `result-track:639785f16eb934ef2a369d9a21824c066b5a08ceafc9f9751fbf3873b353004e` |
-| 4 | `theorem` | [tendsto_zmultiples_subtype_cofinite](../../../../GeneralTopology/ZMultiples.lean/declarations/tendsto-zmultiples-subtype-cofinite.md) | 62 | `result-track:20d61a7bf29bafce983e1c10b5b483ebab2a8ad9f840f49475d63fd9c1902daf` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZMultiples.lean/declarations/instance.md) | 32 | `declaration-track:c83644c165182b6c762073a92b38b2ce6808b495c823543c48d653b12bf3f244` |
+| 2 | `theorem` | [tendsto_coe_cofinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZMultiples.lean/declarations/tendsto-coe-cofinite.md) | 43 | `result-track:f55afbd16e9ee255c8c6ad11f909035a443eb37ee0c351079c19fc4981185002` |
+| 3 | `theorem` | [tendsto_zmultiplesHom_cofinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZMultiples.lean/declarations/tendsto-zmultipleshom-cofinite.md) | 50 | `result-track:639785f16eb934ef2a369d9a21824c066b5a08ceafc9f9751fbf3873b353004e` |
+| 4 | `theorem` | [tendsto_zmultiples_subtype_cofinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ZMultiples.lean/declarations/tendsto-zmultiples-subtype-cofinite.md) | 62 | `result-track:20d61a7bf29bafce983e1c10b5b483ebab2a8ad9f840f49475d63fd9c1902daf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

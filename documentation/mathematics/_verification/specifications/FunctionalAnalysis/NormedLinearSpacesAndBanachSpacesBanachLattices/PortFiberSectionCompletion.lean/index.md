@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.PortFiberSectionInnerProduct`](../../../../../FunctionsOfAComplexVariable/PortFiberSectionInnerProduct.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicLineSectionCompletion`](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/HolomorphicLineSectionCompletion.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberSectionInnerProduct`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionInnerProduct.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicLineSectionCompletion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/HolomorphicLineSectionCompletion.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [schemaVersion](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/schemaversion.md) | 32 | `declaration-track:9ae1cbe57fe423efb8777a11647be87fa8b0799142e3f2cddd4cc430adbbdd47` |
-| 2 | `inductive` | [AddedIndex](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/addedindex.md) | 34 | `declaration-track:f317124efb3417dcb46bc50576698d141446b04f1bf1fdd3aa1dea5ae2ef459e` |
-| 3 | `def` | [AddedClaim](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/addedclaim.md) | 45 | `declaration-track:8746875808d3a7d6ca84dd0e039cc16205d67d4d4eb9a5ca0e2b5b1b6441ae84` |
-| 4 | `theorem` | [addedClaim_proof](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/addedclaim-proof.md) | 114 | `result-track:abc9f9498f112f813f0bc287295acdf76bf000b042daf4a8e56bdcb8e8f470d2` |
-| 5 | `def` | [portfolio](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/portfolio.md) | 160 | `declaration-track:bec2176b3f8c6e4f39c512ac3700caa1d27d8f0b4a0eda6071d33ccdfd1c6854` |
-| 6 | `def` | [architecture](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/architecture.md) | 163 | `declaration-track:07604662daafa500084c9c672c3035e5b82a8a37d13f538b7ad4f063d50114bd` |
-| 7 | `abbrev` | [PreviousIndex](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/previousindex.md) | 167 | `declaration-track:2bcbafca6a5954e6cf5945f9a2211dba55388839fd48cdbf50fdb45d8313a825` |
-| 8 | `theorem` | [original_branch_unchanged](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/original-branch-unchanged.md) | 171 | `result-track:d2039febd257a7d6923ba50808c662edfd84a67e6f350420be9d3e2d24f9058e` |
-| 9 | `theorem` | [new_branch_proved](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/new-branch-proved.md) | 177 | `result-track:22e285610c6d24fef182c845eefe25837e739ecbce925f86b16e549ab1cb1c8a` |
-| 10 | `theorem` | [target_unchanged](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/target-unchanged.md) | 182 | `result-track:a9c6f662b4f58cfbae71e9e1c9d50dad55fc5a7cd1f6821a23bdf17ae9c93ea0` |
-| 11 | `theorem` | [retarget_preserves_new](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/retarget-preserves-new.md) | 187 | `result-track:ca2c4d0dc70b01de046d658dbc3fb054341e561658c22c62ccd2b2cef2f0c7b5` |
+| 1 | `def` | [schemaVersion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/schemaversion.md) | 32 | `declaration-track:9ae1cbe57fe423efb8777a11647be87fa8b0799142e3f2cddd4cc430adbbdd47` |
+| 2 | `inductive` | [AddedIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/addedindex.md) | 34 | `declaration-track:f317124efb3417dcb46bc50576698d141446b04f1bf1fdd3aa1dea5ae2ef459e` |
+| 3 | `def` | [AddedClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/addedclaim.md) | 45 | `declaration-track:8746875808d3a7d6ca84dd0e039cc16205d67d4d4eb9a5ca0e2b5b1b6441ae84` |
+| 4 | `theorem` | [addedClaim_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/addedclaim-proof.md) | 114 | `result-track:abc9f9498f112f813f0bc287295acdf76bf000b042daf4a8e56bdcb8e8f470d2` |
+| 5 | `def` | [portfolio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/portfolio.md) | 160 | `declaration-track:bec2176b3f8c6e4f39c512ac3700caa1d27d8f0b4a0eda6071d33ccdfd1c6854` |
+| 6 | `def` | [architecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/architecture.md) | 163 | `declaration-track:07604662daafa500084c9c672c3035e5b82a8a37d13f538b7ad4f063d50114bd` |
+| 7 | `abbrev` | [PreviousIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/previousindex.md) | 167 | `declaration-track:2bcbafca6a5954e6cf5945f9a2211dba55388839fd48cdbf50fdb45d8313a825` |
+| 8 | `theorem` | [original_branch_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/original-branch-unchanged.md) | 171 | `result-track:d2039febd257a7d6923ba50808c662edfd84a67e6f350420be9d3e2d24f9058e` |
+| 9 | `theorem` | [new_branch_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/new-branch-proved.md) | 177 | `result-track:22e285610c6d24fef182c845eefe25837e739ecbce925f86b16e549ab1cb1c8a` |
+| 10 | `theorem` | [target_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/target-unchanged.md) | 182 | `result-track:a9c6f662b4f58cfbae71e9e1c9d50dad55fc5a7cd1f6821a23bdf17ae9c93ea0` |
+| 11 | `theorem` | [retarget_preserves_new](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberSectionCompletion.lean/declarations/retarget-preserves-new.md) | 187 | `result-track:ca2c4d0dc70b01de046d658dbc3fb054341e561658c22c62ccd2b2cef2f0c7b5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

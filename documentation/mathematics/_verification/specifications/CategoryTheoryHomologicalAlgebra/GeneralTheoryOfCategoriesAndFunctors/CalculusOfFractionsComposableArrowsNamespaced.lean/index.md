@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CalculusOfFractionsComposableArrowsNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CalculusOfFractionsComposableArrowsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CalculusOfFractionsComposableArrowsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CalculusOfFractionsComposableArrowsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [essSurj_mapComposableArrows_of_hasRightCalculusOfFractions](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CalculusOfFractionsComposableArrowsNamespaced.lean/declarations/esssurj-mapcomposablearrows-of-hasrightcalculusoffractions.md) | 35 | `result-track:535919d432a206e8f4ab00f21a6b281224820d37ecb9177aac137374a157e208` |
-| 2 | `lemma` | [essSurj_mapComposableArrows](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CalculusOfFractionsComposableArrowsNamespaced.lean/declarations/esssurj-mapcomposablearrows.md) | 54 | `result-track:f8751c61c37175f261cb69ed1750e78f4e4fc56d1d548ee70b9692f504eb11d9` |
+| 1 | `lemma` | [essSurj_mapComposableArrows_of_hasRightCalculusOfFractions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CalculusOfFractionsComposableArrowsNamespaced.lean/declarations/esssurj-mapcomposablearrows-of-hasrightcalculusoffractions.md) | 35 | `result-track:535919d432a206e8f4ab00f21a6b281224820d37ecb9177aac137374a157e208` |
+| 2 | `lemma` | [essSurj_mapComposableArrows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CalculusOfFractionsComposableArrowsNamespaced.lean/declarations/esssurj-mapcomposablearrows.md) | 54 | `result-track:f8751c61c37175f261cb69ed1750e78f4e4fc56d1d548ee70b9692f504eb11d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefixHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefixHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefixHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefixHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.FunctionFieldArithmetic.DensityFiniteSums`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSumsHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.FunctionFieldArithmetic.DensityFiniteSums`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSumsHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Algebra.Order.Floor.Semifield` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [densityMobiusReciprocalPrefix](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefixHistoricalSourceEdition2.lean/declarations/densitymobiusreciprocalprefix.md) | 18 | `declaration-track:cf07d8f781a485b43b4892670c5d90ee1bd1203e723cce1048e5499674569375` |
-| 2 | `theorem` | [density_mobius_reciprocal_prefix_source_inventory](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefixHistoricalSourceEdition2.lean/declarations/density-mobius-reciprocal-prefix-source-inventory.md) | 21 | `result-track:d516661dd9c2a7c6852196bb952e01f648559be4ed85794da04922befa3d783a` |
-| 3 | `theorem` | [density_mobius_reciprocal_prefix_zero_of_lt_one](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefixHistoricalSourceEdition2.lean/declarations/density-mobius-reciprocal-prefix-zero-of-lt-one.md) | 26 | `result-track:c745a64cc7b06e93abc5a8b19c30f8659eb1c5be55ab981793579cdef2471d0c` |
-| 4 | `theorem` | [density_mobius_closed_floor_convolution](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefixHistoricalSourceEdition2.lean/declarations/density-mobius-closed-floor-convolution.md) | 30 | `result-track:58d79cfee029eddb7354960a3999a1faaa48a803ecb123fd72a096c2114b8caa` |
-| 5 | `theorem` | [density_mobius_reciprocal_prefix_abs_le_one](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefixHistoricalSourceEdition2.lean/declarations/density-mobius-reciprocal-prefix-abs-le-one.md) | 51 | `result-track:48c634181d9e14a0263c6bfd3deabd70f4c16704955b5a1f069579f45c944c31` |
+| 1 | `def` | [densityMobiusReciprocalPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefixHistoricalSourceEdition2.lean/declarations/densitymobiusreciprocalprefix.md) | 18 | `declaration-track:cf07d8f781a485b43b4892670c5d90ee1bd1203e723cce1048e5499674569375` |
+| 2 | `theorem` | [density_mobius_reciprocal_prefix_source_inventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefixHistoricalSourceEdition2.lean/declarations/density-mobius-reciprocal-prefix-source-inventory.md) | 21 | `result-track:d516661dd9c2a7c6852196bb952e01f648559be4ed85794da04922befa3d783a` |
+| 3 | `theorem` | [density_mobius_reciprocal_prefix_zero_of_lt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefixHistoricalSourceEdition2.lean/declarations/density-mobius-reciprocal-prefix-zero-of-lt-one.md) | 26 | `result-track:c745a64cc7b06e93abc5a8b19c30f8659eb1c5be55ab981793579cdef2471d0c` |
+| 4 | `theorem` | [density_mobius_closed_floor_convolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefixHistoricalSourceEdition2.lean/declarations/density-mobius-closed-floor-convolution.md) | 30 | `result-track:58d79cfee029eddb7354960a3999a1faaa48a803ecb123fd72a096c2114b8caa` |
+| 5 | `theorem` | [density_mobius_reciprocal_prefix_abs_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefixHistoricalSourceEdition2.lean/declarations/density-mobius-reciprocal-prefix-abs-le-one.md) | 51 | `result-track:48c634181d9e14a0263c6bfd3deabd70f4c16704955b5a1f069579f45c944c31` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

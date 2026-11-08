@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ModN](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/modn.md) | 30 | `declaration-track:5d3b5ed66eac1b5beac10ef687b53fea434b86465ad20cdbd18ea3e5215060dd` |
-| 2 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/instance.md) | 34 | `declaration-track:3955d5b5a272f615ab6e2a7445e5ae2f722c19101b50dd2119559898a2a05cb4` |
-| 3 | `def` | [liftEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/liftequiv.md) | 38 | `declaration-track:797a2b576b6fe03911df20fea543a9b79d06824d40f889285faa662c6caee838` |
-| 4 | `def` | [liftEquiv'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/liftequiv-source-edition-2.md) | 55 | `declaration-track:820dd5bfcf63724825d3039512c904f5ed2e401bf490482bc0054109e707cc37` |
-| 5 | `def` | [mkQ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/mkq.md) | 61 | `declaration-track:76d9ffd36d54da85c14dad7b0ba670834b4f1011d914c29f0157881f72ca90c3` |
-| 6 | `def` | [basis](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/basis.md) | 67 | `declaration-track:1050180bffd9ef652bbe727abb079ae8f4f38922670fdcbfda6ed198fcfa476f` |
-| 7 | `lemma` | [basis_apply_eq_mkQ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/basis-apply-eq-mkq.md) | 98 | `result-track:a2f9276eb73e17822b07856af5c31b2e904847904f5b38f71920a52f1b8c3630` |
-| 8 | `instance` | [instModuleFinite](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/instmodulefinite.md) | 103 | `declaration-track:afed9c9199519951dd6d3a0134a0a002a8ecb20303b5975f6d3a2d20775ad103` |
-| 9 | `instance` | [instFinite](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/instfinite.md) | 106 | `declaration-track:d8d5f29b784d87b4958c09e61d768babf9da117370ea1d408ba7c4c1eda858d2` |
-| 10 | `lemma` | [natCard_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/natcard-eq.md) | 109 | `result-track:97dcde9ebb88c3f2aaabe0d8bdfa9d85840ca63b701cbc2234c1fd582d24c364` |
+| 1 | `abbrev` | [ModN](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/modn.md) | 30 | `declaration-track:5d3b5ed66eac1b5beac10ef687b53fea434b86465ad20cdbd18ea3e5215060dd` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/instance.md) | 34 | `declaration-track:3955d5b5a272f615ab6e2a7445e5ae2f722c19101b50dd2119559898a2a05cb4` |
+| 3 | `def` | [liftEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/liftequiv.md) | 38 | `declaration-track:797a2b576b6fe03911df20fea543a9b79d06824d40f889285faa662c6caee838` |
+| 4 | `def` | [liftEquiv'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/liftequiv-source-edition-2.md) | 55 | `declaration-track:820dd5bfcf63724825d3039512c904f5ed2e401bf490482bc0054109e707cc37` |
+| 5 | `def` | [mkQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/mkq.md) | 61 | `declaration-track:76d9ffd36d54da85c14dad7b0ba670834b4f1011d914c29f0157881f72ca90c3` |
+| 6 | `def` | [basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/basis.md) | 67 | `declaration-track:1050180bffd9ef652bbe727abb079ae8f4f38922670fdcbfda6ed198fcfa476f` |
+| 7 | `lemma` | [basis_apply_eq_mkQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/basis-apply-eq-mkq.md) | 98 | `result-track:a2f9276eb73e17822b07856af5c31b2e904847904f5b38f71920a52f1b8c3630` |
+| 8 | `instance` | [instModuleFinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/instmodulefinite.md) | 103 | `declaration-track:afed9c9199519951dd6d3a0134a0a002a8ecb20303b5975f6d3a2d20775ad103` |
+| 9 | `instance` | [instFinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/instfinite.md) | 106 | `declaration-track:d8d5f29b784d87b4958c09e61d768babf9da117370ea1d408ba7c4c1eda858d2` |
+| 10 | `lemma` | [natCard_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModNNamespaced.lean/declarations/natcard-eq.md) | 109 | `result-track:97dcde9ebb88c3f2aaabe0d8bdfa9d85840ca63b701cbc2234c1fd582d24c364` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

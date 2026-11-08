@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/WolffAxiomsNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/WolffAxiomsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WolffAxiomsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WolffAxiomsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [WolffAxioms](../../../../../ComputerScience/AlgorithmsInComputerScience/WolffAxiomsNamespaced.lean/declarations/wolffaxioms.md) | 25 | `declaration-track:180528208010b208661cd68bcc1feff7f8b3c0081f1da7eabed816709ada091b` |
-| 2 | `def` | [WolffAxioms.usableForMajorProof](../../../../../ComputerScience/AlgorithmsInComputerScience/WolffAxiomsNamespaced.lean/declarations/wolffaxioms-usableformajorproof.md) | 35 | `declaration-track:14b4fc34489c95f4a80b79a5cadcb922c5d3afc658782fdac3d3489c4358e7b5` |
-| 3 | `theorem` | [WolffAxioms.usableForMajorProof_of_fields](../../../../../ComputerScience/AlgorithmsInComputerScience/WolffAxiomsNamespaced.lean/declarations/wolffaxioms-usableformajorproof-of-fields.md) | 41 | `result-track:a48a15f08900bbdc44d81744605ee2d834c773c3d2478a2dc512ea9121b48afe` |
+| 1 | `structure` | [WolffAxioms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WolffAxiomsNamespaced.lean/declarations/wolffaxioms.md) | 25 | `declaration-track:180528208010b208661cd68bcc1feff7f8b3c0081f1da7eabed816709ada091b` |
+| 2 | `def` | [WolffAxioms.usableForMajorProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WolffAxiomsNamespaced.lean/declarations/wolffaxioms-usableformajorproof.md) | 35 | `declaration-track:14b4fc34489c95f4a80b79a5cadcb922c5d3afc658782fdac3d3489c4358e7b5` |
+| 3 | `theorem` | [WolffAxioms.usableForMajorProof_of_fields](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WolffAxiomsNamespaced.lean/declarations/wolffaxioms-usableformajorproof-of-fields.md) | 41 | `result-track:a48a15f08900bbdc44d81744605ee2d834c773c3d2478a2dc512ea9121b48afe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

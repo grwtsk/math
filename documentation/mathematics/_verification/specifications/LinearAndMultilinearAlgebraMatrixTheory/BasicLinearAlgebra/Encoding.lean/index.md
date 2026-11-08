@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Encoding.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Encoding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Encoding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Encoding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rowMajorBits](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Encoding.lean/declarations/rowmajorbits.md) | 8 | `declaration-track:2d91bfa8afb11b2d61e16a630afd1716e78683f00f238e676ae53994d4de0d16` |
-| 2 | `def` | [support](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Encoding.lean/declarations/support.md) | 15 | `declaration-track:c530397577101f733117b5b176826b9b4a13b00d2865e63a3dc102836f689ef3` |
-| 3 | `def` | [fromBoolList](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Encoding.lean/declarations/fromboollist.md) | 27 | `declaration-track:33193941193a5a691db33892dc94729635830d1ef3182b354e7038af226065ec` |
-| 4 | `theorem` | [rowMajor_length_visible](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Encoding.lean/declarations/rowmajor-length-visible.md) | 33 | `result-track:e528ba2a2611871cbcfabe5ad5a681896faf5a961c1bd151da8a06b97446609f` |
+| 1 | `def` | [rowMajorBits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Encoding.lean/declarations/rowmajorbits.md) | 8 | `declaration-track:2d91bfa8afb11b2d61e16a630afd1716e78683f00f238e676ae53994d4de0d16` |
+| 2 | `def` | [support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Encoding.lean/declarations/support.md) | 15 | `declaration-track:c530397577101f733117b5b176826b9b4a13b00d2865e63a3dc102836f689ef3` |
+| 3 | `def` | [fromBoolList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Encoding.lean/declarations/fromboollist.md) | 27 | `declaration-track:33193941193a5a691db33892dc94729635830d1ef3182b354e7038af226065ec` |
+| 4 | `theorem` | [rowMajor_length_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Encoding.lean/declarations/rowmajor-length-visible.md) | 33 | `result-track:e528ba2a2611871cbcfabe5ad5a681896faf5a961c1bd151da8a06b97446609f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

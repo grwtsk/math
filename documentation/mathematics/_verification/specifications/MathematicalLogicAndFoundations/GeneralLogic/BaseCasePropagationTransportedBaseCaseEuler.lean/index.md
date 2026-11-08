@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationTransportedBaseCaseEuler.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationTransportedBaseCaseEuler.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationTransportedBaseCaseEuler.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationTransportedBaseCaseEuler.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TransportedBaseCaseEuler](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationTransportedBaseCaseEuler.lean/declarations/transportedbasecaseeuler.md) | 28 | `declaration-track:619947a6e6f864dddc15be782243d77502144e83c78e655c069f2a1f6d0e039f` |
-| 2 | `theorem` | [transported_base_case_euler_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationTransportedBaseCaseEuler.lean/declarations/transported-base-case-euler-nonzero.md) | 39 | `result-track:8f1e648e287a187bfe122f17860abb89a6f443994b77c23d8127e936d6a8e1ad` |
-| 3 | `structure` | [BaseCaseCriticalLinePropagation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationTransportedBaseCaseEuler.lean/declarations/basecasecriticallinepropagation.md) | 58 | `declaration-track:fc48e62d6171c5c75f4021cc19edddd519ae6b2d77aec2d5eefb8f9bc1aa372b` |
-| 4 | `theorem` | [base_case_propagation_conclusion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationTransportedBaseCaseEuler.lean/declarations/base-case-propagation-conclusion.md) | 66 | `result-track:940086d8a94f2ba784e686d77e75f0be58447d8dbe395dee04d4fb7e2129b990` |
+| 1 | `structure` | [TransportedBaseCaseEuler](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationTransportedBaseCaseEuler.lean/declarations/transportedbasecaseeuler.md) | 28 | `declaration-track:619947a6e6f864dddc15be782243d77502144e83c78e655c069f2a1f6d0e039f` |
+| 2 | `theorem` | [transported_base_case_euler_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationTransportedBaseCaseEuler.lean/declarations/transported-base-case-euler-nonzero.md) | 39 | `result-track:8f1e648e287a187bfe122f17860abb89a6f443994b77c23d8127e936d6a8e1ad` |
+| 3 | `structure` | [BaseCaseCriticalLinePropagation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationTransportedBaseCaseEuler.lean/declarations/basecasecriticallinepropagation.md) | 58 | `declaration-track:fc48e62d6171c5c75f4021cc19edddd519ae6b2d77aec2d5eefb8f9bc1aa372b` |
+| 4 | `theorem` | [base_case_propagation_conclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCasePropagationTransportedBaseCaseEuler.lean/declarations/base-case-propagation-conclusion.md) | 66 | `result-track:940086d8a94f2ba784e686d77e75f0be58447d8dbe395dee04d4fb7e2129b990` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

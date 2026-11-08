@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionComplement.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionComplement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionComplement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionComplement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [retractionComplement](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionComplement.lean/declarations/retractioncomplement.md) | 11 | `declaration-track:d82ef2c691868ba0e5508b5c8bdca1abc243767b2c562cc6b4bfde41b2290102` |
-| 2 | `theorem` | [retractionComplement_in_kernel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionComplement.lean/declarations/retractioncomplement-in-kernel.md) | 15 | `result-track:6488242cd1fc09f552f6295522a650eb21ee076f708f1098335f44e1d39f1778` |
-| 3 | `theorem` | [retractionComplement_on_image](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionComplement.lean/declarations/retractioncomplement-on-image.md) | 20 | `result-track:2d0373c2655ab7257151aa5197141a4da8a5674b556d6d2f90ccfe49fa6fdad6` |
-| 4 | `theorem` | [retractionComplement_idempotent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionComplement.lean/declarations/retractioncomplement-idempotent.md) | 25 | `result-track:088fc089b393d0d73908a7eafbb0b4060416ad10a2e9614043a5d501a443557f` |
-| 5 | `theorem` | [retractionComplement_decomposition](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionComplement.lean/declarations/retractioncomplement-decomposition.md) | 33 | `result-track:242642249ce9956e44ffeb6a2c54e0d1762a3b9cde689ff7364b058f9081739f` |
-| 6 | `theorem` | [retractionComplement_commutes](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionComplement.lean/declarations/retractioncomplement-commutes.md) | 38 | `result-track:a29a8431c82aef9fcd96493ce3c53fd0c35d2ec0bc4a35c69fb796dff879e459` |
+| 1 | `def` | [retractionComplement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionComplement.lean/declarations/retractioncomplement.md) | 11 | `declaration-track:d82ef2c691868ba0e5508b5c8bdca1abc243767b2c562cc6b4bfde41b2290102` |
+| 2 | `theorem` | [retractionComplement_in_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionComplement.lean/declarations/retractioncomplement-in-kernel.md) | 15 | `result-track:6488242cd1fc09f552f6295522a650eb21ee076f708f1098335f44e1d39f1778` |
+| 3 | `theorem` | [retractionComplement_on_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionComplement.lean/declarations/retractioncomplement-on-image.md) | 20 | `result-track:2d0373c2655ab7257151aa5197141a4da8a5674b556d6d2f90ccfe49fa6fdad6` |
+| 4 | `theorem` | [retractionComplement_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionComplement.lean/declarations/retractioncomplement-idempotent.md) | 25 | `result-track:088fc089b393d0d73908a7eafbb0b4060416ad10a2e9614043a5d501a443557f` |
+| 5 | `theorem` | [retractionComplement_decomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionComplement.lean/declarations/retractioncomplement-decomposition.md) | 33 | `result-track:242642249ce9956e44ffeb6a2c54e0d1762a3b9cde689ff7364b058f9081739f` |
+| 6 | `theorem` | [retractionComplement_commutes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionComplement.lean/declarations/retractioncomplement-commutes.md) | 38 | `result-track:a29a8431c82aef9fcd96493ce3c53fd0c35d2ec0bc4a35c69fb796dff879e459` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

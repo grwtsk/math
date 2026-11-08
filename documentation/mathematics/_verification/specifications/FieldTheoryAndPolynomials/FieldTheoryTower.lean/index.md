@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/FieldTheoryTower.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/FieldTheoryTower.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryTower.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryTower.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [left](../../../../FieldTheoryAndPolynomials/FieldTheoryTower.lean/declarations/left.md) | 43 | `result-track:0f13d897bbc1cd521a388350e9bc30251aa5c358e9e5383409e994dc3af97378` |
-| 2 | `theorem` | [right](../../../../FieldTheoryAndPolynomials/FieldTheoryTower.lean/declarations/right.md) | 51 | `result-track:0f9849d0309cb32b4ad38539476415f06be616ea795b6008b19ac7ec65f285a1` |
+| 1 | `theorem` | [left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryTower.lean/declarations/left.md) | 43 | `result-track:0f13d897bbc1cd521a388350e9bc30251aa5c358e9e5383409e994dc3af97378` |
+| 2 | `theorem` | [right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryTower.lean/declarations/right.md) | 51 | `result-track:0f9849d0309cb32b4ad38539476415f06be616ea795b6008b19ac7ec65f285a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

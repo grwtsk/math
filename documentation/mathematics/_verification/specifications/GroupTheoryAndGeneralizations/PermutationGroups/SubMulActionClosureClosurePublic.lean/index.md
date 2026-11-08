@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [closure](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/declarations/closure.md) | 21 | `declaration-track:72478e6a499e1714f406498fcf41e5c121a89d4ea95102840a2be8c243555d4f` |
-| 2 | `theorem` | [mem_closure](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/declarations/mem-closure.md) | 27 | `result-track:084fa1ccc330c07b85ea8084150a65f7e9a9900e65594765699b013e3b5586e3` |
-| 3 | `theorem` | [subset_closure](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/declarations/subset-closure.md) | 31 | `result-track:69e4fcd2da5b31be10ca44dc8107be2b89650048f4740f1a948553eff949214a` |
-| 4 | `theorem` | [mem_closure_of_mem](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/declarations/mem-closure-of-mem.md) | 34 | `result-track:fd524b3420b593b8577045a2ca2781613f614f7c555d131079d729035a0099d8` |
-| 5 | `theorem` | [closure_le](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/declarations/closure-le.md) | 37 | `result-track:da21943d48e5e4e3b9e2be441eaa81e0499e4b11e776039c2c954eaab7e1b8e3` |
-| 6 | `theorem` | [closure_mono](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/declarations/closure-mono.md) | 41 | `result-track:ca56a5905ede14aa9789175ed2e87bcf431198228598246fe37d0e5065016525` |
-| 7 | `def` | [FG](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/declarations/fg.md) | 46 | `declaration-track:4de40360d38823a2b4b79b77932f75a4ae85c00c1a5f6bbf0f669388acc314b5` |
-| 8 | `theorem` | [fg_iff](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/declarations/fg-iff.md) | 50 | `result-track:f22a121ae353273f0bf55d11b6935609e8f39397d8d2e77937fbcd602beadbd4` |
+| 1 | `def` | [closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/declarations/closure.md) | 21 | `declaration-track:72478e6a499e1714f406498fcf41e5c121a89d4ea95102840a2be8c243555d4f` |
+| 2 | `theorem` | [mem_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/declarations/mem-closure.md) | 27 | `result-track:084fa1ccc330c07b85ea8084150a65f7e9a9900e65594765699b013e3b5586e3` |
+| 3 | `theorem` | [subset_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/declarations/subset-closure.md) | 31 | `result-track:69e4fcd2da5b31be10ca44dc8107be2b89650048f4740f1a948553eff949214a` |
+| 4 | `theorem` | [mem_closure_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/declarations/mem-closure-of-mem.md) | 34 | `result-track:fd524b3420b593b8577045a2ca2781613f614f7c555d131079d729035a0099d8` |
+| 5 | `theorem` | [closure_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/declarations/closure-le.md) | 37 | `result-track:da21943d48e5e4e3b9e2be441eaa81e0499e4b11e776039c2c954eaab7e1b8e3` |
+| 6 | `theorem` | [closure_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/declarations/closure-mono.md) | 41 | `result-track:ca56a5905ede14aa9789175ed2e87bcf431198228598246fe37d0e5065016525` |
+| 7 | `def` | [FG](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/declarations/fg.md) | 46 | `declaration-track:4de40360d38823a2b4b79b77932f75a4ae85c00c1a5f6bbf0f669388acc314b5` |
+| 8 | `theorem` | [fg_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionClosureClosurePublic.lean/declarations/fg-iff.md) | 50 | `result-track:f22a121ae353273f0bf55d11b6935609e8f39397d8d2e77937fbcd602beadbd4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

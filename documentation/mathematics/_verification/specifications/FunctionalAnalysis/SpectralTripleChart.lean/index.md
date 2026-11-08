@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectralTripleChart.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralTripleChart.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralTripleChart.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralTripleChart.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [surfaceId](../../../../FunctionalAnalysis/SpectralTripleChart.lean/declarations/surfaceid.md) | 8 | `declaration-track:4f2b8d3b19a1c04c934abd090a647412c2927694141f4bdb50470d9f85671061` |
-| 2 | `def` | [ownsDeclaredSurface](../../../../FunctionalAnalysis/SpectralTripleChart.lean/declarations/ownsdeclaredsurface.md) | 9 | `declaration-track:3f41d5ef8ca16bfbf12c3ecb4ae7f325cdf9d3cb34920de8c4fdfbd4b607141e` |
-| 3 | `def` | [crossLeafReasoningRequiresGlue](../../../../FunctionalAnalysis/SpectralTripleChart.lean/declarations/crossleafreasoningrequiresglue.md) | 10 | `declaration-track:6b87cbe90053e81a5662ffd7f15919bd9aff304b4d0d66afd5e08bbd65b35ab9` |
-| 4 | `theorem` | [surface_id_declared](../../../../FunctionalAnalysis/SpectralTripleChart.lean/declarations/surface-id-declared.md) | 12 | `result-track:6b193a964a3eaea2acf2b11c6ba2efbcff74c67381922237c207ebd3bf22bd2a` |
-| 5 | `theorem` | [owns_declared_surface](../../../../FunctionalAnalysis/SpectralTripleChart.lean/declarations/owns-declared-surface.md) | 16 | `result-track:86a0f01195ecde7991a4686e989d4df7bf909ce6987b4032043e3733fff168ea` |
+| 1 | `def` | [surfaceId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralTripleChart.lean/declarations/surfaceid.md) | 8 | `declaration-track:4f2b8d3b19a1c04c934abd090a647412c2927694141f4bdb50470d9f85671061` |
+| 2 | `def` | [ownsDeclaredSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralTripleChart.lean/declarations/ownsdeclaredsurface.md) | 9 | `declaration-track:3f41d5ef8ca16bfbf12c3ecb4ae7f325cdf9d3cb34920de8c4fdfbd4b607141e` |
+| 3 | `def` | [crossLeafReasoningRequiresGlue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralTripleChart.lean/declarations/crossleafreasoningrequiresglue.md) | 10 | `declaration-track:6b87cbe90053e81a5662ffd7f15919bd9aff304b4d0d66afd5e08bbd65b35ab9` |
+| 4 | `theorem` | [surface_id_declared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralTripleChart.lean/declarations/surface-id-declared.md) | 12 | `result-track:6b193a964a3eaea2acf2b11c6ba2efbcff74c67381922237c207ebd3bf22bd2a` |
+| 5 | `theorem` | [owns_declared_surface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralTripleChart.lean/declarations/owns-declared-surface.md) | 16 | `result-track:86a0f01195ecde7991a4686e989d4df7bf909ce6987b4032043e3733fff168ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

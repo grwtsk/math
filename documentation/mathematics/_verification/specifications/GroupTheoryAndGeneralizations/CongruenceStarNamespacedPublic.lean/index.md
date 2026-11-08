@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CongruenceStarNamespacedPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CongruenceStarNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CongruenceStarNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CongruenceStarNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ConGen.Rel.star](../../../../GroupTheoryAndGeneralizations/CongruenceStarNamespacedPublic.lean/declarations/congen-rel-star.md) | 30 | `result-track:f3ef47b0f605d70f02eb5e73794c0e744488f17b2969c5c10ebc379346a3a73c` |
-| 2 | `theorem` | [conGen_star](../../../../GroupTheoryAndGeneralizations/CongruenceStarNamespacedPublic.lean/declarations/congen-star.md) | 40 | `result-track:d335578b97b33e99571ecaa225d6d95b6ed2e1d483ce7fc2c82cd4d2d2148af3` |
-| 3 | `theorem` | [AddConGen.Rel.star](../../../../GroupTheoryAndGeneralizations/CongruenceStarNamespacedPublic.lean/declarations/addcongen-rel-star.md) | 48 | `result-track:dae67dff8de528e829eef4dfe39f308417a3a45431ddb367bb7e549ded6e7c05` |
-| 4 | `theorem` | [addConGen_star](../../../../GroupTheoryAndGeneralizations/CongruenceStarNamespacedPublic.lean/declarations/addcongen-star.md) | 58 | `result-track:afc1a05550883a81691015a031b83d0a71c34c6c9812cc623007516864d09297` |
+| 1 | `theorem` | [ConGen.Rel.star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CongruenceStarNamespacedPublic.lean/declarations/congen-rel-star.md) | 30 | `result-track:f3ef47b0f605d70f02eb5e73794c0e744488f17b2969c5c10ebc379346a3a73c` |
+| 2 | `theorem` | [conGen_star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CongruenceStarNamespacedPublic.lean/declarations/congen-star.md) | 40 | `result-track:d335578b97b33e99571ecaa225d6d95b6ed2e1d483ce7fc2c82cd4d2d2148af3` |
+| 3 | `theorem` | [AddConGen.Rel.star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CongruenceStarNamespacedPublic.lean/declarations/addcongen-rel-star.md) | 48 | `result-track:dae67dff8de528e829eef4dfe39f308417a3a45431ddb367bb7e549ded6e7c05` |
+| 4 | `theorem` | [addConGen_star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CongruenceStarNamespacedPublic.lean/declarations/addcongen-star.md) | 58 | `result-track:afc1a05550883a81691015a031b83d0a71c34c6c9812cc623007516864d09297` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

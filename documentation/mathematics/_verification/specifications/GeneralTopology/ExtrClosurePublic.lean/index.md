@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ExtrClosurePublic.lean/index.md) · [Full source](../../../../GeneralTopology/ExtrClosurePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosurePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosurePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsMaxOn.closure](../../../../GeneralTopology/ExtrClosurePublic.lean/declarations/ismaxon-closure.md) | 27 | `result-track:c0992d3c08bdd4ce01a8b82459e633074d988e00f64a2490da43561cdca26d27` |
-| 2 | `theorem` | [IsMinOn.closure](../../../../GeneralTopology/ExtrClosurePublic.lean/declarations/isminon-closure.md) | 31 | `result-track:593f31c3d8dca972f9866a0d8fedb7d878c164ebbc5e01ca28e4d946dcf012ad` |
-| 3 | `theorem` | [IsExtrOn.closure](../../../../GeneralTopology/ExtrClosurePublic.lean/declarations/isextron-closure.md) | 35 | `result-track:0151541498a0f183e6b144eb354c645174c43718df6c5322b6b6016a7005f01e` |
-| 4 | `theorem` | [IsLocalMaxOn.closure](../../../../GeneralTopology/ExtrClosurePublic.lean/declarations/islocalmaxon-closure.md) | 39 | `result-track:ec45e59a99d9ba31c297106b83d76e0b3132b9fb48f47b9eccbef7fb51b80178` |
-| 5 | `theorem` | [IsLocalMinOn.closure](../../../../GeneralTopology/ExtrClosurePublic.lean/declarations/islocalminon-closure.md) | 50 | `result-track:726ba7216b08cd2ea5fef97cafcf216d41c7d0f834643d4ddb293be8e6c218c9` |
-| 6 | `theorem` | [IsLocalExtrOn.closure](../../../../GeneralTopology/ExtrClosurePublic.lean/declarations/islocalextron-closure.md) | 54 | `result-track:7d3083b27479c3392b0dfcda661c2a61b6ec5dd69310c0506339dcc2fdb7e6c1` |
+| 1 | `theorem` | [IsMaxOn.closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosurePublic.lean/declarations/ismaxon-closure.md) | 27 | `result-track:c0992d3c08bdd4ce01a8b82459e633074d988e00f64a2490da43561cdca26d27` |
+| 2 | `theorem` | [IsMinOn.closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosurePublic.lean/declarations/isminon-closure.md) | 31 | `result-track:593f31c3d8dca972f9866a0d8fedb7d878c164ebbc5e01ca28e4d946dcf012ad` |
+| 3 | `theorem` | [IsExtrOn.closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosurePublic.lean/declarations/isextron-closure.md) | 35 | `result-track:0151541498a0f183e6b144eb354c645174c43718df6c5322b6b6016a7005f01e` |
+| 4 | `theorem` | [IsLocalMaxOn.closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosurePublic.lean/declarations/islocalmaxon-closure.md) | 39 | `result-track:ec45e59a99d9ba31c297106b83d76e0b3132b9fb48f47b9eccbef7fb51b80178` |
+| 5 | `theorem` | [IsLocalMinOn.closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosurePublic.lean/declarations/islocalminon-closure.md) | 50 | `result-track:726ba7216b08cd2ea5fef97cafcf216d41c7d0f834643d4ddb293be8e6c218c9` |
+| 6 | `theorem` | [IsLocalExtrOn.closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ExtrClosurePublic.lean/declarations/islocalextron-closure.md) | 54 | `result-track:7d3083b27479c3392b0dfcda661c2a61b6ec5dd69310c0506339dcc2fdb7e6c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

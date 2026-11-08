@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CommutatorNamespacedAligned.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CommutatorNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommutatorNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommutatorNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [commutatorElement](../../../../GroupTheoryAndGeneralizations/CommutatorNamespacedAligned.lean/declarations/commutatorelement.md) | 24 | `declaration-track:83ba9b8ddca03fcda1f7e9da72cce7d3f0425d5b7b8a61bce700c1e602bc84e5` |
-| 2 | `theorem` | [commutatorElement_def](../../../../GroupTheoryAndGeneralizations/CommutatorNamespacedAligned.lean/declarations/commutatorelement-def.md) | 28 | `result-track:a3877ed7fab456158c104edd58fa5f9df459be000b602108c4c4779f342850c2` |
+| 1 | `instance` | [commutatorElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommutatorNamespacedAligned.lean/declarations/commutatorelement.md) | 24 | `declaration-track:83ba9b8ddca03fcda1f7e9da72cce7d3f0425d5b7b8a61bce700c1e602bc84e5` |
+| 2 | `theorem` | [commutatorElement_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommutatorNamespacedAligned.lean/declarations/commutatorelement-def.md) | 28 | `result-track:a3877ed7fab456158c104edd58fa5f9df459be000b602108c4c4779f342850c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

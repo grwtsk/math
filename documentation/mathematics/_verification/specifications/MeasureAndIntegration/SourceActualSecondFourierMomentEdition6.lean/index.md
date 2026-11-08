@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualSecondFourierMomentEdition6.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualSecondFourierMomentEdition6.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualSecondFourierMomentEdition6.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualSecondFourierMomentEdition6.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualCorrelationComplex_contDiff_four](../../../../MeasureAndIntegration/SourceActualSecondFourierMomentEdition6.lean/declarations/actualcorrelationcomplex-contdiff-four.md) | 25 | `result-track:39a71d06ad78a475e36332b52113d1c097c42927c2696e5481c81c43e69fb8cc` |
-| 2 | `theorem` | [actualSecondCorrelation_fourier_integrable](../../../../MeasureAndIntegration/SourceActualSecondFourierMomentEdition6.lean/declarations/actualsecondcorrelation-fourier-integrable.md) | 30 | `result-track:82301f7acafc0128ea424b7c040aea9830fb03e5c302d6a1b0db40d6dd5e2de6` |
-| 3 | `theorem` | [actualSecondCorrelation_fourier_eq](../../../../MeasureAndIntegration/SourceActualSecondFourierMomentEdition6.lean/declarations/actualsecondcorrelation-fourier-eq.md) | 44 | `result-track:ee96b7c2f5075ff2a6ee78c33cb89990e278b7f7ba05d001e081903dfb096778` |
+| 1 | `theorem` | [actualCorrelationComplex_contDiff_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualSecondFourierMomentEdition6.lean/declarations/actualcorrelationcomplex-contdiff-four.md) | 25 | `result-track:39a71d06ad78a475e36332b52113d1c097c42927c2696e5481c81c43e69fb8cc` |
+| 2 | `theorem` | [actualSecondCorrelation_fourier_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualSecondFourierMomentEdition6.lean/declarations/actualsecondcorrelation-fourier-integrable.md) | 30 | `result-track:82301f7acafc0128ea424b7c040aea9830fb03e5c302d6a1b0db40d6dd5e2de6` |
+| 3 | `theorem` | [actualSecondCorrelation_fourier_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualSecondFourierMomentEdition6.lean/declarations/actualsecondcorrelation-fourier-eq.md) | 44 | `result-track:ee96b7c2f5075ff2a6ee78c33cb89990e278b7f7ba05d001e081903dfb096778` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

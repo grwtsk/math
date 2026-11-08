@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,19 +62,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsIdempotentElem](../../../../GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/isidempotentelem.md) | 42 | `declaration-track:9c04a4f53a99bb941c9838727a1e52d07f972ef7c294b822d676356cee8c37ed` |
-| 2 | `lemma` | [of_isIdempotent](../../../../GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/of-isidempotent.md) | 48 | `result-track:e9f51436d7327dc7b137fb3713b5e4a2717ae84fd513c52d5c5eeae7969ba02d` |
-| 3 | `lemma` | [eq](../../../../GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/eq.md) | 51 | `result-track:67b35677b2328d46ecabf63824c22bed58fdfe28a658ea9ff25f4f19a13984e6` |
-| 4 | `lemma` | [mul_of_commute](../../../../GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/mul-of-commute.md) | 58 | `result-track:6604d726477fecafc4c6ad2048ce1b2e219076162f6f17b5d63bb254e767fd80` |
-| 5 | `lemma` | [mul](../../../../GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/mul.md) | 66 | `result-track:0ab4e655f52b5ce2f144d16e3a89b53eb776b8a2e39995b529415ee0f8761d9f` |
-| 6 | `lemma` | [one](../../../../GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/one.md) | 74 | `result-track:c245a6cc44ba86f8529aead36adc05a5cb292703a705779a44995b9f5f565f27` |
-| 7 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/instance.md) | 76 | `declaration-track:6c9146accedb56693f7054df667fcf965a9d7854f1fe593a333aa275ed4553d9` |
-| 8 | `lemma` | [coe_one](../../../../GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/coe-one.md) | 78 | `result-track:4aea81cbe47c0daf7a40a472c3aa35974117a188e9a20fa7862708d79cbfc2da` |
-| 9 | `lemma` | [pow](../../../../GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/pow.md) | 85 | `result-track:703b1ed19b9f3e44884b30accdb61324c32ed8a7c21a3f654c99c1c2a16f1264` |
-| 10 | `lemma` | [pow_succ_eq](../../../../GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/pow-succ-eq.md) | 91 | `result-track:2777b6ab8f18855d9e60611cbc8b0f5771ec8c03536ae4a31ab6a494abccadf6` |
-| 11 | `theorem` | [iff_eq_one_of_isUnit](../../../../GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/iff-eq-one-of-isunit.md) | 94 | `result-track:28f051127593538a2f8320a0460384212607b79c8641b892f3458326119bdac2` |
-| 12 | `lemma` | [iff_eq_one](../../../../GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/iff-eq-one.md) | 105 | `result-track:12d09faac249a2aed8aa4d80d9206807698beb0f02fffd3a2a83114a1bf92dc2` |
-| 13 | `lemma` | [map](../../../../GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/map.md) | 109 | `result-track:32caf4f79ec1e616fc5f1ba3156de2c0699d655b3d94398a12c1a4423c0e2856` |
+| 1 | `def` | [IsIdempotentElem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/isidempotentelem.md) | 42 | `declaration-track:9c04a4f53a99bb941c9838727a1e52d07f972ef7c294b822d676356cee8c37ed` |
+| 2 | `lemma` | [of_isIdempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/of-isidempotent.md) | 48 | `result-track:e9f51436d7327dc7b137fb3713b5e4a2717ae84fd513c52d5c5eeae7969ba02d` |
+| 3 | `lemma` | [eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/eq.md) | 51 | `result-track:67b35677b2328d46ecabf63824c22bed58fdfe28a658ea9ff25f4f19a13984e6` |
+| 4 | `lemma` | [mul_of_commute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/mul-of-commute.md) | 58 | `result-track:6604d726477fecafc4c6ad2048ce1b2e219076162f6f17b5d63bb254e767fd80` |
+| 5 | `lemma` | [mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/mul.md) | 66 | `result-track:0ab4e655f52b5ce2f144d16e3a89b53eb776b8a2e39995b529415ee0f8761d9f` |
+| 6 | `lemma` | [one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/one.md) | 74 | `result-track:c245a6cc44ba86f8529aead36adc05a5cb292703a705779a44995b9f5f565f27` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/instance.md) | 76 | `declaration-track:6c9146accedb56693f7054df667fcf965a9d7854f1fe593a333aa275ed4553d9` |
+| 8 | `lemma` | [coe_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/coe-one.md) | 78 | `result-track:4aea81cbe47c0daf7a40a472c3aa35974117a188e9a20fa7862708d79cbfc2da` |
+| 9 | `lemma` | [pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/pow.md) | 85 | `result-track:703b1ed19b9f3e44884b30accdb61324c32ed8a7c21a3f654c99c1c2a16f1264` |
+| 10 | `lemma` | [pow_succ_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/pow-succ-eq.md) | 91 | `result-track:2777b6ab8f18855d9e60611cbc8b0f5771ec8c03536ae4a31ab6a494abccadf6` |
+| 11 | `theorem` | [iff_eq_one_of_isUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/iff-eq-one-of-isunit.md) | 94 | `result-track:28f051127593538a2f8320a0460384212607b79c8641b892f3458326119bdac2` |
+| 12 | `lemma` | [iff_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/iff-eq-one.md) | 105 | `result-track:12d09faac249a2aed8aa4d80d9206807698beb0f02fffd3a2a83114a1bf92dc2` |
+| 13 | `lemma` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdempotentNamespaced.lean/declarations/map.md) | 109 | `result-track:32caf4f79ec1e616fc5f1ba3156de2c0699d655b3d94398a12c1a4423c0e2856` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

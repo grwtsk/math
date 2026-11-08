@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixPeriodFixtures.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixPeriodFixtures.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixPeriodFixtures.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixPeriodFixtures.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coefficient_period_zero_does_not_make_prefix_period_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixPeriodFixtures.lean/declarations/coefficient-period-zero-does-not-make-prefix-period-zero.md) | 14 | `result-track:f0e5454f7ad9d19882591259b22e82b0c92309f223edf5720e70d2416354d776` |
-| 2 | `theorem` | [actual_prefixes_are_not_all_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixPeriodFixtures.lean/declarations/actual-prefixes-are-not-all-nonnegative.md) | 21 | `result-track:fc5823384722b03a0b9cb084be7925cf94116b4d2053ec8badf473075b72e934` |
-| 3 | `theorem` | [actual_prefixes_are_not_all_nonpositive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixPeriodFixtures.lean/declarations/actual-prefixes-are-not-all-nonpositive.md) | 28 | `result-track:8b88dcc396c8d66254bc138e70e240b4951c318c1e5029a0834d3394da58d363` |
+| 1 | `theorem` | [coefficient_period_zero_does_not_make_prefix_period_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixPeriodFixtures.lean/declarations/coefficient-period-zero-does-not-make-prefix-period-zero.md) | 14 | `result-track:f0e5454f7ad9d19882591259b22e82b0c92309f223edf5720e70d2416354d776` |
+| 2 | `theorem` | [actual_prefixes_are_not_all_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixPeriodFixtures.lean/declarations/actual-prefixes-are-not-all-nonnegative.md) | 21 | `result-track:fc5823384722b03a0b9cb084be7925cf94116b4d2053ec8badf473075b72e934` |
+| 3 | `theorem` | [actual_prefixes_are_not_all_nonpositive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BetaPrefixPeriodFixtures.lean/declarations/actual-prefixes-are-not-all-nonpositive.md) | 28 | `result-track:8b88dcc396c8d66254bc138e70e240b4951c318c1e5029a0834d3394da58d363` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

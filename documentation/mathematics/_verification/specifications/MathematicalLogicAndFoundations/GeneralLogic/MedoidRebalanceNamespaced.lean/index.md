@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MedoidRebalanceNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MedoidRebalanceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MedoidRebalanceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MedoidRebalanceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [MedoidMoveVerdict](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MedoidRebalanceNamespaced.lean/declarations/medoidmoveverdict.md) | 20 | `declaration-track:76c9e880675ed1488a45664dce969d611169daa07f9b5c857b31dd9e2c480ecd` |
-| 2 | `structure` | [MedoidMoveValidator](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MedoidRebalanceNamespaced.lean/declarations/medoidmovevalidator.md) | 32 | `declaration-track:95d505d1cd4af6e2fa2fbf8f8af3a4845027ae15ed2c369f2bf21abcb8193e06` |
-| 3 | `def` | [accepts](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MedoidRebalanceNamespaced.lean/declarations/accepts.md) | 42 | `declaration-track:58cdfa647715affd485b849bd9d80b47c3a7da8ef82816297fc2060131288f54` |
-| 4 | `theorem` | [unchecked_authority_refuses](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MedoidRebalanceNamespaced.lean/declarations/unchecked-authority-refuses.md) | 51 | `result-track:9069d9714e79ff23d2c0dfb25f2bb8068ecbdbb706b4918bffbbef0e0bfa1f5c` |
-| 5 | `structure` | [PipelineSourceRebalance](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MedoidRebalanceNamespaced.lean/declarations/pipelinesourcerebalance.md) | 59 | `declaration-track:43da98bd0b0a900a0d3ff74461d24f453ba40bd07c4b211ef992381bec6b276e` |
-| 6 | `def` | [stable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MedoidRebalanceNamespaced.lean/declarations/stable.md) | 68 | `declaration-track:39133cc22177848dc3e12f94262d206f830d64ec8b31f81f2678b0fbf85022ff` |
-| 7 | `theorem` | [fixed_point_not_impossibility](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MedoidRebalanceNamespaced.lean/declarations/fixed-point-not-impossibility.md) | 71 | `result-track:e738813a477853c522686bcf75bb92ad1051c67a9e376b6a86e5cb71f3ce85cf` |
+| 1 | `inductive` | [MedoidMoveVerdict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MedoidRebalanceNamespaced.lean/declarations/medoidmoveverdict.md) | 20 | `declaration-track:76c9e880675ed1488a45664dce969d611169daa07f9b5c857b31dd9e2c480ecd` |
+| 2 | `structure` | [MedoidMoveValidator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MedoidRebalanceNamespaced.lean/declarations/medoidmovevalidator.md) | 32 | `declaration-track:95d505d1cd4af6e2fa2fbf8f8af3a4845027ae15ed2c369f2bf21abcb8193e06` |
+| 3 | `def` | [accepts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MedoidRebalanceNamespaced.lean/declarations/accepts.md) | 42 | `declaration-track:58cdfa647715affd485b849bd9d80b47c3a7da8ef82816297fc2060131288f54` |
+| 4 | `theorem` | [unchecked_authority_refuses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MedoidRebalanceNamespaced.lean/declarations/unchecked-authority-refuses.md) | 51 | `result-track:9069d9714e79ff23d2c0dfb25f2bb8068ecbdbb706b4918bffbbef0e0bfa1f5c` |
+| 5 | `structure` | [PipelineSourceRebalance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MedoidRebalanceNamespaced.lean/declarations/pipelinesourcerebalance.md) | 59 | `declaration-track:43da98bd0b0a900a0d3ff74461d24f453ba40bd07c4b211ef992381bec6b276e` |
+| 6 | `def` | [stable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MedoidRebalanceNamespaced.lean/declarations/stable.md) | 68 | `declaration-track:39133cc22177848dc3e12f94262d206f830d64ec8b31f81f2678b0fbf85022ff` |
+| 7 | `theorem` | [fixed_point_not_impossibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MedoidRebalanceNamespaced.lean/declarations/fixed-point-not-impossibility.md) | 71 | `result-track:e738813a477853c522686bcf75bb92ad1051c67a9e376b6a86e5cb71f3ce85cf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

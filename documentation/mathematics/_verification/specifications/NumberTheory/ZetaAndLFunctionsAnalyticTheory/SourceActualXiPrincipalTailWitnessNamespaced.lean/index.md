@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitnessNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitnessNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitnessNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitnessNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [principalCompleteTailBudget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitnessNamespaced.lean/declarations/principalcompletetailbudget.md) | 27 | `declaration-track:5ff00fb54fd71dc859b6c26aa6e408f70c7ed4ac28a7cf215eac3722fba29e73` |
-| 2 | `theorem` | [principalCompleteTailBudget_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitnessNamespaced.lean/declarations/principalcompletetailbudget-nonneg.md) | 31 | `result-track:de34356eec9d013c448aa24dca72122eee139524a9576c034df3a8e566271243` |
-| 3 | `theorem` | [complete_tail_lower_of_actual_signed_block](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitnessNamespaced.lean/declarations/complete-tail-lower-of-actual-signed-block.md) | 35 | `result-track:47faaeee985cdadca48b7663addf983a57f01dd092ec58db218ec3f61d2e9410` |
-| 4 | `theorem` | [complete_tail_witness_of_actual_signed_block](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitnessNamespaced.lean/declarations/complete-tail-witness-of-actual-signed-block.md) | 53 | `result-track:4c0e7e06e53bcd862241ca1302961a46ae160ef6fa633e1ed344dc8ee7b706dd` |
+| 1 | `def` | [principalCompleteTailBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitnessNamespaced.lean/declarations/principalcompletetailbudget.md) | 27 | `declaration-track:5ff00fb54fd71dc859b6c26aa6e408f70c7ed4ac28a7cf215eac3722fba29e73` |
+| 2 | `theorem` | [principalCompleteTailBudget_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitnessNamespaced.lean/declarations/principalcompletetailbudget-nonneg.md) | 31 | `result-track:de34356eec9d013c448aa24dca72122eee139524a9576c034df3a8e566271243` |
+| 3 | `theorem` | [complete_tail_lower_of_actual_signed_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitnessNamespaced.lean/declarations/complete-tail-lower-of-actual-signed-block.md) | 35 | `result-track:47faaeee985cdadca48b7663addf983a57f01dd092ec58db218ec3f61d2e9410` |
+| 4 | `theorem` | [complete_tail_witness_of_actual_signed_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitnessNamespaced.lean/declarations/complete-tail-witness-of-actual-signed-block.md) | 53 | `result-track:4c0e7e06e53bcd862241ca1302961a46ae160ef6fa633e1ed344dc8ee7b706dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

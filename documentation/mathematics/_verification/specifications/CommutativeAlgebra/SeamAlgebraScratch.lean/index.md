@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SeamAlgebraScratch.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SeamAlgebraScratch.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SeamAlgebraScratch.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SeamAlgebraScratch.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bumpCorrelation](../../../../CommutativeAlgebra/SeamAlgebraScratch.lean/declarations/bumpcorrelation.md) | 6 | `declaration-track:11ea6929b8474d587fb1913221f0f63349464ef4803e8b6d48fb0fe23492c641` |
-| 2 | `def` | [bumpCorrelationFirst](../../../../CommutativeAlgebra/SeamAlgebraScratch.lean/declarations/bumpcorrelationfirst.md) | 11 | `declaration-track:6ec8c51aec1b2bdd46b19624af5690ad5e12ad736985d0094de439deaafbb141` |
-| 3 | `def` | [bumpCorrelationSecond](../../../../CommutativeAlgebra/SeamAlgebraScratch.lean/declarations/bumpcorrelationsecond.md) | 16 | `declaration-track:68b52d97b7890bfacc2c18f0cd3869af29f9b6a549610a8bde60b0841768e7e5` |
-| 4 | `def` | [bumpCorrelationThird](../../../../CommutativeAlgebra/SeamAlgebraScratch.lean/declarations/bumpcorrelationthird.md) | 21 | `declaration-track:26812e0f5c912c96ec4c5dcd26d1576a60d8573968de21a1a924a3c5238d0f2c` |
-| 5 | `def` | [bumpCorrelationFourth](../../../../CommutativeAlgebra/SeamAlgebraScratch.lean/declarations/bumpcorrelationfourth.md) | 26 | `declaration-track:2a0a2eb26337cc558841b3f5324766922b706b977cc4e24907ad9c13389c853e` |
-| 6 | `theorem` | [seam_algebra](../../../../CommutativeAlgebra/SeamAlgebraScratch.lean/declarations/seam-algebra.md) | 30 | `result-track:0781dd94914c3fd8fc2f28da8c16e04ff6c6512487f0f932c2ba6cee2833bd86` |
+| 1 | `def` | [bumpCorrelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SeamAlgebraScratch.lean/declarations/bumpcorrelation.md) | 6 | `declaration-track:11ea6929b8474d587fb1913221f0f63349464ef4803e8b6d48fb0fe23492c641` |
+| 2 | `def` | [bumpCorrelationFirst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SeamAlgebraScratch.lean/declarations/bumpcorrelationfirst.md) | 11 | `declaration-track:6ec8c51aec1b2bdd46b19624af5690ad5e12ad736985d0094de439deaafbb141` |
+| 3 | `def` | [bumpCorrelationSecond](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SeamAlgebraScratch.lean/declarations/bumpcorrelationsecond.md) | 16 | `declaration-track:68b52d97b7890bfacc2c18f0cd3869af29f9b6a549610a8bde60b0841768e7e5` |
+| 4 | `def` | [bumpCorrelationThird](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SeamAlgebraScratch.lean/declarations/bumpcorrelationthird.md) | 21 | `declaration-track:26812e0f5c912c96ec4c5dcd26d1576a60d8573968de21a1a924a3c5238d0f2c` |
+| 5 | `def` | [bumpCorrelationFourth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SeamAlgebraScratch.lean/declarations/bumpcorrelationfourth.md) | 26 | `declaration-track:2a0a2eb26337cc558841b3f5324766922b706b977cc4e24907ad9c13389c853e` |
+| 6 | `theorem` | [seam_algebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SeamAlgebraScratch.lean/declarations/seam-algebra.md) | 30 | `result-track:0781dd94914c3fd8fc2f28da8c16e04ff6c6512487f0f932c2ba6cee2833bd86` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

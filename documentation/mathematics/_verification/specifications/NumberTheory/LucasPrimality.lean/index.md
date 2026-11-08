@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/LucasPrimality.lean/index.md) · [Full source](../../../../NumberTheory/LucasPrimality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LucasPrimality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LucasPrimality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lucas_primality](../../../../NumberTheory/LucasPrimality.lean/declarations/lucas-primality.md) | 35 | `result-track:b84383fc484a5c79c1a4b2a9f9f42f8301e6a7940fa755b0efade93486f51615` |
-| 2 | `theorem` | [reverse_lucas_primality](../../../../NumberTheory/LucasPrimality.lean/declarations/reverse-lucas-primality.md) | 53 | `result-track:8b56075878f8ea345f9db7a5ae9687970a1bf56f5d69dccc205b5a34c7778e23` |
-| 3 | `theorem` | [lucas_primality_iff](../../../../NumberTheory/LucasPrimality.lean/declarations/lucas-primality-iff.md) | 69 | `result-track:cf13a8225c5e1dfb1557b07903af407a11561ccf274beb0c58241ae6152a3342` |
+| 1 | `theorem` | [lucas_primality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LucasPrimality.lean/declarations/lucas-primality.md) | 35 | `result-track:b84383fc484a5c79c1a4b2a9f9f42f8301e6a7940fa755b0efade93486f51615` |
+| 2 | `theorem` | [reverse_lucas_primality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LucasPrimality.lean/declarations/reverse-lucas-primality.md) | 53 | `result-track:8b56075878f8ea345f9db7a5ae9687970a1bf56f5d69dccc205b5a34c7778e23` |
+| 3 | `theorem` | [lucas_primality_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LucasPrimality.lean/declarations/lucas-primality-iff.md) | 69 | `result-track:cf13a8225c5e1dfb1557b07903af407a11561ccf274beb0c58241ae6152a3342` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

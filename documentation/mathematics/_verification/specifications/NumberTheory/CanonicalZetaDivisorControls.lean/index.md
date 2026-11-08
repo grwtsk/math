@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalZetaDivisorControls.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalZetaDivisorControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZetaDivisorControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZetaDivisorControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalZetaTent`](../../../../NumberTheory/CanonicalZetaTent.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroExclusions`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroExclusions.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalZetaTent`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZetaTent.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroExclusions`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroExclusions.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [trivial_point_excluded](../../../../NumberTheory/CanonicalZetaDivisorControls.lean/declarations/trivial-point-excluded.md) | 19 | `result-track:344b0397b92312a1409cd9c004f19aaaad0550ee87644c494f113490f25ef06d` |
-| 2 | `theorem` | [pole_point_excluded](../../../../NumberTheory/CanonicalZetaDivisorControls.lean/declarations/pole-point-excluded.md) | 23 | `result-track:23f0d0b2c821bc73434329829150eef7aaec2b41d032bc6badf92c5bddfb5e3c` |
-| 3 | `theorem` | [canonical_weight_not_zero](../../../../NumberTheory/CanonicalZetaDivisorControls.lean/declarations/canonical-weight-not-zero.md) | 26 | `result-track:2b1bc24067604c258314410915065ab62b8cd50dbabd5f80f049c7fedf06ce5b` |
-| 4 | `theorem` | [boundary_atom_retained](../../../../NumberTheory/CanonicalZetaDivisorControls.lean/declarations/boundary-atom-retained.md) | 30 | `result-track:31aa4a2c6133690f4978b338f93e5fd3394334a1a630b046ea521d8915ded46e` |
-| 5 | `theorem` | [negative_cutoff_empty](../../../../NumberTheory/CanonicalZetaDivisorControls.lean/declarations/negative-cutoff-empty.md) | 34 | `result-track:a381d12b314f43f0e823512bae2857bb399a6c4ed35030283dd64010dd9f4a98` |
-| 6 | `theorem` | [infinite_order_conversion_control](../../../../NumberTheory/CanonicalZetaDivisorControls.lean/declarations/infinite-order-conversion-control.md) | 39 | `result-track:68a5be63b0aed10c08d658eab633870c97494b3948363356e90389d82000c055` |
-| 7 | `theorem` | [polynomial_double_root_control](../../../../NumberTheory/CanonicalZetaDivisorControls.lean/declarations/polynomial-double-root-control.md) | 47 | `result-track:36b300160a2408ce5bfe1124241f1f17bf87c377fe23db4b4c8762e0896bc3a9` |
-| 8 | `theorem` | [equal_absolute_height_distinct_points](../../../../NumberTheory/CanonicalZetaDivisorControls.lean/declarations/equal-absolute-height-distinct-points.md) | 55 | `result-track:bb75d242431c6c1352ad5e3dac136ed998b9d7578d6a0df7d1970ef0b2b6030c` |
+| 1 | `theorem` | [trivial_point_excluded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZetaDivisorControls.lean/declarations/trivial-point-excluded.md) | 19 | `result-track:344b0397b92312a1409cd9c004f19aaaad0550ee87644c494f113490f25ef06d` |
+| 2 | `theorem` | [pole_point_excluded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZetaDivisorControls.lean/declarations/pole-point-excluded.md) | 23 | `result-track:23f0d0b2c821bc73434329829150eef7aaec2b41d032bc6badf92c5bddfb5e3c` |
+| 3 | `theorem` | [canonical_weight_not_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZetaDivisorControls.lean/declarations/canonical-weight-not-zero.md) | 26 | `result-track:2b1bc24067604c258314410915065ab62b8cd50dbabd5f80f049c7fedf06ce5b` |
+| 4 | `theorem` | [boundary_atom_retained](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZetaDivisorControls.lean/declarations/boundary-atom-retained.md) | 30 | `result-track:31aa4a2c6133690f4978b338f93e5fd3394334a1a630b046ea521d8915ded46e` |
+| 5 | `theorem` | [negative_cutoff_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZetaDivisorControls.lean/declarations/negative-cutoff-empty.md) | 34 | `result-track:a381d12b314f43f0e823512bae2857bb399a6c4ed35030283dd64010dd9f4a98` |
+| 6 | `theorem` | [infinite_order_conversion_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZetaDivisorControls.lean/declarations/infinite-order-conversion-control.md) | 39 | `result-track:68a5be63b0aed10c08d658eab633870c97494b3948363356e90389d82000c055` |
+| 7 | `theorem` | [polynomial_double_root_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZetaDivisorControls.lean/declarations/polynomial-double-root-control.md) | 47 | `result-track:36b300160a2408ce5bfe1124241f1f17bf87c377fe23db4b4c8762e0896bc3a9` |
+| 8 | `theorem` | [equal_absolute_height_distinct_points](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZetaDivisorControls.lean/declarations/equal-absolute-height-distinct-points.md) | 55 | `result-track:bb75d242431c6c1352ad5e3dac136ed998b9d7578d6a0df7d1970ef0b2b6030c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

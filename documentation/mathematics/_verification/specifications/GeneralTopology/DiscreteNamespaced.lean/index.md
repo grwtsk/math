@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/DiscreteNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/DiscreteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/DiscreteNamespaced.lean/declarations/instance.md) | 36 | `declaration-track:485ba48702da371c78f883e23cb6ac9880da2ad8e2f61beacc9694a908834c62` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/DiscreteNamespaced.lean/declarations/instance-source-edition-2.md) | 40 | `declaration-track:b14949c3cbddb86131c3216c63842140b0a60600b1a8d685b88fe32991c7843e` |
-| 3 | `theorem` | [LinearOrder.bot_topologicalSpace_eq_generateFrom](../../../../GeneralTopology/DiscreteNamespaced.lean/declarations/linearorder-bot-topologicalspace-eq-generatefrom.md) | 48 | `result-track:9da8755ab8a75b0d600d19f55a8737e3653a3eb07c29a9b428256400a55c564f` |
-| 4 | `theorem` | [discreteTopology_iff_orderTopology_of_pred_succ](../../../../GeneralTopology/DiscreteNamespaced.lean/declarations/discretetopology-iff-ordertopology-of-pred-succ.md) | 58 | `result-track:9754f7451667e9ba13f482ca203b7b271b0b3229de864e53b417eb68134f961e` |
-| 5 | `instance` | [OrderTopology.of_discreteTopology](../../../../GeneralTopology/DiscreteNamespaced.lean/declarations/ordertopology-of-discretetopology.md) | 67 | `declaration-track:43484fdac2b68e21523c45ac44e6126ad5a47c19bd1acaf56824fa13f5327632` |
-| 6 | `instance` | [OrderTopology.of_linearLocallyFinite](../../../../GeneralTopology/DiscreteNamespaced.lean/declarations/ordertopology-of-linearlocallyfinite.md) | 71 | `declaration-track:fd39de303787a3861a891c4239984849df22d925d7241d67998ee50597a90098` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteNamespaced.lean/declarations/instance.md) | 36 | `declaration-track:485ba48702da371c78f883e23cb6ac9880da2ad8e2f61beacc9694a908834c62` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteNamespaced.lean/declarations/instance-source-edition-2.md) | 40 | `declaration-track:b14949c3cbddb86131c3216c63842140b0a60600b1a8d685b88fe32991c7843e` |
+| 3 | `theorem` | [LinearOrder.bot_topologicalSpace_eq_generateFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteNamespaced.lean/declarations/linearorder-bot-topologicalspace-eq-generatefrom.md) | 48 | `result-track:9da8755ab8a75b0d600d19f55a8737e3653a3eb07c29a9b428256400a55c564f` |
+| 4 | `theorem` | [discreteTopology_iff_orderTopology_of_pred_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteNamespaced.lean/declarations/discretetopology-iff-ordertopology-of-pred-succ.md) | 58 | `result-track:9754f7451667e9ba13f482ca203b7b271b0b3229de864e53b417eb68134f961e` |
+| 5 | `instance` | [OrderTopology.of_discreteTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteNamespaced.lean/declarations/ordertopology-of-discretetopology.md) | 67 | `declaration-track:43484fdac2b68e21523c45ac44e6126ad5a47c19bd1acaf56824fa13f5327632` |
+| 6 | `instance` | [OrderTopology.of_linearLocallyFinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteNamespaced.lean/declarations/ordertopology-of-linearlocallyfinite.md) | 71 | `declaration-track:fd39de303787a3861a891c4239984849df22d925d7241d67998ee50597a90098` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

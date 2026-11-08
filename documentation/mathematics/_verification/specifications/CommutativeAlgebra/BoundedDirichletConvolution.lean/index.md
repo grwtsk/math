@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/BoundedDirichletConvolution.lean/index.md) · [Full source](../../../../CommutativeAlgebra/BoundedDirichletConvolution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BoundedDirichletConvolution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BoundedDirichletConvolution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [boundedDivisorPairs](../../../../CommutativeAlgebra/BoundedDirichletConvolution.lean/declarations/boundeddivisorpairs.md) | 17 | `declaration-track:d01602e03f6d853a69dde369210ebabc20581941b7d8c9a1e3a84e3c4c9e2819` |
-| 2 | `theorem` | [mem_boundedDivisorPairs_iff](../../../../CommutativeAlgebra/BoundedDirichletConvolution.lean/declarations/mem-boundeddivisorpairs-iff.md) | 22 | `result-track:586ef7b724dedcd16cba57b051b9681cb11ac87c4dd8c22d2ba64146ef886a24` |
-| 3 | `theorem` | [boundedDirichletConv_eq_sum](../../../../CommutativeAlgebra/BoundedDirichletConvolution.lean/declarations/boundeddirichletconv-eq-sum.md) | 28 | `result-track:0e44e579a2f43bfc48041cdb6c0ca8872198fc609aa8b9b07cfcc946dae8a226` |
-| 4 | `def` | [pairProductByValue](../../../../CommutativeAlgebra/BoundedDirichletConvolution.lean/declarations/pairproductbyvalue.md) | 38 | `declaration-track:cb34442a19b9196ecd7ccb324a244b59c1580b48dcdc76b14ef0ab6ce74be824` |
-| 5 | `theorem` | [pairProductByValue_eq_boundedDirichletConv](../../../../CommutativeAlgebra/BoundedDirichletConvolution.lean/declarations/pairproductbyvalue-eq-boundeddirichletconv.md) | 46 | `result-track:63122f8137c506ca82e7d603d38c47571858c6dbe5ac985c6ceab4b6f6df8db6` |
+| 1 | `def` | [boundedDivisorPairs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BoundedDirichletConvolution.lean/declarations/boundeddivisorpairs.md) | 17 | `declaration-track:d01602e03f6d853a69dde369210ebabc20581941b7d8c9a1e3a84e3c4c9e2819` |
+| 2 | `theorem` | [mem_boundedDivisorPairs_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BoundedDirichletConvolution.lean/declarations/mem-boundeddivisorpairs-iff.md) | 22 | `result-track:586ef7b724dedcd16cba57b051b9681cb11ac87c4dd8c22d2ba64146ef886a24` |
+| 3 | `theorem` | [boundedDirichletConv_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BoundedDirichletConvolution.lean/declarations/boundeddirichletconv-eq-sum.md) | 28 | `result-track:0e44e579a2f43bfc48041cdb6c0ca8872198fc609aa8b9b07cfcc946dae8a226` |
+| 4 | `def` | [pairProductByValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BoundedDirichletConvolution.lean/declarations/pairproductbyvalue.md) | 38 | `declaration-track:cb34442a19b9196ecd7ccb324a244b59c1580b48dcdc76b14ef0ab6ce74be824` |
+| 5 | `theorem` | [pairProductByValue_eq_boundedDirichletConv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BoundedDirichletConvolution.lean/declarations/pairproductbyvalue-eq-boundeddirichletconv.md) | 46 | `result-track:63122f8137c506ca82e7d603d38c47571858c6dbe5ac985c6ceab4b6f6df8db6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

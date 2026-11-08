@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FacetNamespacedEdition1.lean/index.md) · [Full source](../../../../Combinatorics/FacetNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FacetNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FacetNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FacetRecord](../../../../Combinatorics/FacetNamespacedEdition1.lean/declarations/facetrecord.md) | 22 | `declaration-track:b3838cd1e7c79b7fc5c734cc28dab50af32165d4a1750c274826ef07d980dd20` |
-| 2 | `structure` | [FacetRegistry](../../../../Combinatorics/FacetNamespacedEdition1.lean/declarations/facetregistry.md) | 30 | `declaration-track:edb107f558eae8c41b3f0301688b02406d4a91292473099007ed7e04defdf558` |
-| 3 | `def` | [UniqueIds](../../../../Combinatorics/FacetNamespacedEdition1.lean/declarations/uniqueids.md) | 35 | `declaration-track:a8b82ddd11d4fc936418ec4b4f3f37c7559bc1a4c553d28f47d1c8c3728a83dd` |
-| 4 | `def` | [find?](../../../../Combinatorics/FacetNamespacedEdition1.lean/declarations/find.md) | 38 | `declaration-track:887714613c97453dbeae519fbb6380614375dc155cfb47ac883d0d3f8ccde881` |
+| 1 | `structure` | [FacetRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FacetNamespacedEdition1.lean/declarations/facetrecord.md) | 22 | `declaration-track:b3838cd1e7c79b7fc5c734cc28dab50af32165d4a1750c274826ef07d980dd20` |
+| 2 | `structure` | [FacetRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FacetNamespacedEdition1.lean/declarations/facetregistry.md) | 30 | `declaration-track:edb107f558eae8c41b3f0301688b02406d4a91292473099007ed7e04defdf558` |
+| 3 | `def` | [UniqueIds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FacetNamespacedEdition1.lean/declarations/uniqueids.md) | 35 | `declaration-track:a8b82ddd11d4fc936418ec4b4f3f37c7559bc1a4c553d28f47d1c8c3728a83dd` |
+| 4 | `def` | [find?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FacetNamespacedEdition1.lean/declarations/find.md) | 38 | `declaration-track:887714613c97453dbeae519fbb6380614375dc155cfb47ac883d0d3f8ccde881` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

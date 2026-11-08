@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/MainTermChiNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/MainTermChiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MainTermChiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MainTermChiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -67,16 +67,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [zerosInL_subset_of_le](../../../../MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/zerosinl-subset-of-le.md) | 48 | `result-track:c85ac03ed6c515b9c5b42d0bf8957a24a2c02d658bfc06c7f75364c3c285cb67` |
-| 2 | `lemma` | [NcountL_le_of_subset](../../../../MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/ncountl-le-of-subset.md) | 53 | `result-track:2b04c7ef7de4990ced02acb6b17d00e6c09343ec31f3cda61293422f8db800e1` |
-| 3 | `lemma` | [NcountL_add](../../../../MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/ncountl-add.md) | 66 | `result-track:86673133851cb721538d071ac38f3af3aea340830ba16e0f785fc7e122f155ce` |
-| 4 | `lemma` | [exists_goodHeightL](../../../../MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/exists-goodheightl.md) | 73 | `result-track:9329ce1724b8d808718dc475b9b848b2c17bd7db6ae249e267108c220d1393df` |
-| 5 | `lemma` | [LFunction_ne_zero_on_segment'](../../../../MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/lfunction-ne-zero-on-segment.md) | 93 | `result-track:c0a9c44bf3090b81ec4cb8393472ccda538b739a0fa11280c6bf6e50767e440e` |
-| 6 | `lemma` | [continuousOn_logDeriv_LFunction](../../../../MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/continuouson-logderiv-lfunction.md) | 102 | `result-track:5de613a00f11c7d1daed25039e5f9b179ba08be246df5cd358d20e4e3847ff56` |
-| 7 | `lemma` | [halfContourChi_split](../../../../MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/halfcontourchi-split.md) | 114 | `result-track:5b03fdbd00d7ce7401a5bd0b1d8b7ad3af5b4265cfd1d52b489ec415e886559e` |
-| 8 | `theorem` | [muq_le_log_uniform](../../../../MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/muq-le-log-uniform.md) | 196 | `result-track:30a0dfe6f0a0f35fc64415514c06bc10753d1fec7d7ba763bc198a4371634225` |
-| 9 | `theorem` | [mainChi_uniform_aux](../../../../MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/mainchi-uniform-aux.md) | 268 | `result-track:40644e36a9f0feac3c3d4bb2417c6ae7e0fb8c8906fd4728b5e03870e4796183` |
-| 10 | `theorem` | [mainChi](../../../../MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/mainchi.md) | 522 | `result-track:37e0cbfd437ac9254c9009788a9f4505b546e9619674e72419b2157694adcdb6` |
+| 1 | `lemma` | [zerosInL_subset_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/zerosinl-subset-of-le.md) | 48 | `result-track:c85ac03ed6c515b9c5b42d0bf8957a24a2c02d658bfc06c7f75364c3c285cb67` |
+| 2 | `lemma` | [NcountL_le_of_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/ncountl-le-of-subset.md) | 53 | `result-track:2b04c7ef7de4990ced02acb6b17d00e6c09343ec31f3cda61293422f8db800e1` |
+| 3 | `lemma` | [NcountL_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/ncountl-add.md) | 66 | `result-track:86673133851cb721538d071ac38f3af3aea340830ba16e0f785fc7e122f155ce` |
+| 4 | `lemma` | [exists_goodHeightL](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/exists-goodheightl.md) | 73 | `result-track:9329ce1724b8d808718dc475b9b848b2c17bd7db6ae249e267108c220d1393df` |
+| 5 | `lemma` | [LFunction_ne_zero_on_segment'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/lfunction-ne-zero-on-segment.md) | 93 | `result-track:c0a9c44bf3090b81ec4cb8393472ccda538b739a0fa11280c6bf6e50767e440e` |
+| 6 | `lemma` | [continuousOn_logDeriv_LFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/continuouson-logderiv-lfunction.md) | 102 | `result-track:5de613a00f11c7d1daed25039e5f9b179ba08be246df5cd358d20e4e3847ff56` |
+| 7 | `lemma` | [halfContourChi_split](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/halfcontourchi-split.md) | 114 | `result-track:5b03fdbd00d7ce7401a5bd0b1d8b7ad3af5b4265cfd1d52b489ec415e886559e` |
+| 8 | `theorem` | [muq_le_log_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/muq-le-log-uniform.md) | 196 | `result-track:30a0dfe6f0a0f35fc64415514c06bc10753d1fec7d7ba763bc198a4371634225` |
+| 9 | `theorem` | [mainChi_uniform_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/mainchi-uniform-aux.md) | 268 | `result-track:40644e36a9f0feac3c3d4bb2417c6ae7e0fb8c8906fd4728b5e03870e4796183` |
+| 10 | `theorem` | [mainChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MainTermChiNamespaced.lean/declarations/mainchi.md) | 522 | `result-track:37e0cbfd437ac9254c9009788a9f4505b546e9619674e72419b2157694adcdb6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

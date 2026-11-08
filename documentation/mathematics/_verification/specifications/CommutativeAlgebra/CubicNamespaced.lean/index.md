@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/CubicNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/CubicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CubicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CubicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cubic](../../../../CommutativeAlgebra/CubicNamespaced.lean/declarations/cubic.md) | 24 | `declaration-track:0aaf779c543e47eedffe8d65c1c08012883f4a7a1fe26916c04f16067f6fced3` |
-| 2 | `theorem` | [eval_cubic](../../../../CommutativeAlgebra/CubicNamespaced.lean/declarations/eval-cubic.md) | 27 | `result-track:9de932ca6c6761df3caa540badba5944ddfeaafc8915b0f0c9b89ec15187711b` |
+| 1 | `def` | [cubic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CubicNamespaced.lean/declarations/cubic.md) | 24 | `declaration-track:0aaf779c543e47eedffe8d65c1c08012883f4a7a1fe26916c04f16067f6fced3` |
+| 2 | `theorem` | [eval_cubic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CubicNamespaced.lean/declarations/eval-cubic.md) | 27 | `result-track:9de932ca6c6761df3caa540badba5944ddfeaafc8915b0f0c9b89ec15187711b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

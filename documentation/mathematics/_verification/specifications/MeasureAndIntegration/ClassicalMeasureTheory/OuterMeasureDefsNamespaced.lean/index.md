@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OuterMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsNamespaced.lean/declarations/outermeasure.md) | 55 | `declaration-track:75bfea21c3e446ab916f99f7829e2903a0b244089f3b4473292ebbe5494ac03a` |
-| 2 | `class` | [OuterMeasureClass](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsNamespaced.lean/declarations/outermeasureclass.md) | 66 | `declaration-track:e0cf34a5a9ccc732d6458f474517d6c18666297046a1302ea62280e9f3d09eb1` |
-| 3 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsNamespaced.lean/declarations/instance-source-edition-2.md) | 74 | `declaration-track:be970903b6931f19f10133e741115311ca2548c741f45892ce66ea71d8fcaaef` |
-| 4 | `theorem` | [measureOf_eq_coe](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsNamespaced.lean/declarations/measureof-eq-coe.md) | 78 | `result-track:250d351849d3023de6c61ea200346baafc33da4d816b8032c1a167afa9c3a57e` |
-| 5 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsNamespaced.lean/declarations/instance.md) | 80 | `declaration-track:4760dc14c8708a6f8e3dd04d718acc3926cce0c5c3e0e921fe2d042f5cecde3a` |
+| 1 | `structure` | [OuterMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsNamespaced.lean/declarations/outermeasure.md) | 55 | `declaration-track:75bfea21c3e446ab916f99f7829e2903a0b244089f3b4473292ebbe5494ac03a` |
+| 2 | `class` | [OuterMeasureClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsNamespaced.lean/declarations/outermeasureclass.md) | 66 | `declaration-track:e0cf34a5a9ccc732d6458f474517d6c18666297046a1302ea62280e9f3d09eb1` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsNamespaced.lean/declarations/instance-source-edition-2.md) | 74 | `declaration-track:be970903b6931f19f10133e741115311ca2548c741f45892ce66ea71d8fcaaef` |
+| 4 | `theorem` | [measureOf_eq_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsNamespaced.lean/declarations/measureof-eq-coe.md) | 78 | `result-track:250d351849d3023de6c61ea200346baafc33da4d816b8032c1a167afa9c3a57e` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsNamespaced.lean/declarations/instance.md) | 80 | `declaration-track:4760dc14c8708a6f8e3dd04d718acc3926cce0c5c3e0e921fe2d042f5cecde3a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IdentityCompositionAndConstants.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IdentityCompositionAndConstants.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IdentityCompositionAndConstants.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IdentityCompositionAndConstants.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GraphHeat](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IdentityCompositionAndConstants.lean/declarations/graphheat.md) | 41 | `declaration-track:1d696c339a192fe5a70e105aace528ff9fb4919959cdbf8eb422de299eb48835` |
+| 1 | `structure` | [GraphHeat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IdentityCompositionAndConstants.lean/declarations/graphheat.md) | 41 | `declaration-track:1d696c339a192fe5a70e105aace528ff9fb4919959cdbf8eb422de299eb48835` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

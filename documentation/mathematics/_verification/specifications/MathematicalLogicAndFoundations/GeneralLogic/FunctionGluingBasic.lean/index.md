@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FunctionGluingBasic.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FunctionGluingBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FunctionGluingBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FunctionGluingBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [glue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FunctionGluingBasic.lean/declarations/glue.md) | 10 | `declaration-track:433463ef88a1491b3cd01b9b7411d92337df719558b4632b00ee1742cad3dd2c` |
-| 2 | `theorem` | [restrict_glue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FunctionGluingBasic.lean/declarations/restrict-glue.md) | 13 | `result-track:72f1cbf865bc213e14570d2c07f1c02dae987cc8635dab73e6e338da915381a0` |
-| 3 | `theorem` | [unique_glue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FunctionGluingBasic.lean/declarations/unique-glue.md) | 21 | `result-track:30e1b1adee30f4b4ed2fbe56571dc156f632528cda05755d6b5f476f9f7dfe99` |
+| 1 | `def` | [glue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FunctionGluingBasic.lean/declarations/glue.md) | 10 | `declaration-track:433463ef88a1491b3cd01b9b7411d92337df719558b4632b00ee1742cad3dd2c` |
+| 2 | `theorem` | [restrict_glue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FunctionGluingBasic.lean/declarations/restrict-glue.md) | 13 | `result-track:72f1cbf865bc213e14570d2c07f1c02dae987cc8635dab73e6e338da915381a0` |
+| 3 | `theorem` | [unique_glue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FunctionGluingBasic.lean/declarations/unique-glue.md) | 21 | `result-track:30e1b1adee30f4b4ed2fbe56571dc156f632528cda05755d6b5f476f9f7dfe99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

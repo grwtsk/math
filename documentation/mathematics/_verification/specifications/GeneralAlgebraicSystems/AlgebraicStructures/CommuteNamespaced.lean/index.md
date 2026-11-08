@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CommuteNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CommuteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CommuteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CommuteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [SemiconjBy.map](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CommuteNamespaced.lean/declarations/semiconjby-map.md) | 30 | `result-track:2b6ea4dbfe71fca558e70900bbc64291f9533dbbacdb84d89adce0d779dec613` |
-| 2 | `theorem` | [Commute.map](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CommuteNamespaced.lean/declarations/commute-map.md) | 36 | `result-track:c2730e71c8bbcc11fe164ece79aaec25dd1cb7172d575937064c82c2164afbf9` |
-| 3 | `theorem` | [SemiconjBy.of_map](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CommuteNamespaced.lean/declarations/semiconjby-of-map.md) | 42 | `result-track:dcda171049dbf0079f6185081847b6367745d2f29625f3522ce8ca861fe98315` |
-| 4 | `theorem` | [Commute.of_map](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CommuteNamespaced.lean/declarations/commute-of-map.md) | 47 | `result-track:49c6305dfc96b90e4f72db99167daefc0c9c03c2f13b41fdf4f2717559907422` |
+| 1 | `theorem` | [SemiconjBy.map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CommuteNamespaced.lean/declarations/semiconjby-map.md) | 30 | `result-track:2b6ea4dbfe71fca558e70900bbc64291f9533dbbacdb84d89adce0d779dec613` |
+| 2 | `theorem` | [Commute.map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CommuteNamespaced.lean/declarations/commute-map.md) | 36 | `result-track:c2730e71c8bbcc11fe164ece79aaec25dd1cb7172d575937064c82c2164afbf9` |
+| 3 | `theorem` | [SemiconjBy.of_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CommuteNamespaced.lean/declarations/semiconjby-of-map.md) | 42 | `result-track:dcda171049dbf0079f6185081847b6367745d2f29625f3522ce8ca861fe98315` |
+| 4 | `theorem` | [Commute.of_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CommuteNamespaced.lean/declarations/commute-of-map.md) | 47 | `result-track:49c6305dfc96b90e4f72db99167daefc0c9c03c2f13b41fdf4f2717559907422` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

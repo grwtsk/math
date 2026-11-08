@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/XYZPublic.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/XYZPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/XYZPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/XYZPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ForbiddenAnalyticAuthority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/XYZPublic.lean/declarations/forbiddenanalyticauthority.md) | 27 | `declaration-track:60b6747f6d743ad3899ace9afb75619f2ff3cd92fa809af80beaaad229d87f9d` |
-| 2 | `def` | [ProvesForbiddenAnalyticAuthority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/XYZPublic.lean/declarations/provesforbiddenanalyticauthority.md) | 43 | `declaration-track:1837271eae5e5aa64e663d9c818114e9701f104d20cc34504d8a84362fb85f7c` |
-| 3 | `def` | [FiniteXYZTransportHasAnalyticAuthority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/XYZPublic.lean/declarations/finitexyztransporthasanalyticauthority.md) | 48 | `declaration-track:f4a0a939fea6a448a76c0640c04945834d0a9281c7eab2f5f58c92fba9bfea48` |
-| 4 | `theorem` | [finiteXYZTransport_has_no_analytic_authority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/XYZPublic.lean/declarations/finitexyztransport-has-no-analytic-authority.md) | 52 | `result-track:f7787c77e1d92686ebe9129dd724d58333af63f6c0d7f3dd971f3382d9b22c59` |
+| 1 | `inductive` | [ForbiddenAnalyticAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/XYZPublic.lean/declarations/forbiddenanalyticauthority.md) | 27 | `declaration-track:60b6747f6d743ad3899ace9afb75619f2ff3cd92fa809af80beaaad229d87f9d` |
+| 2 | `def` | [ProvesForbiddenAnalyticAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/XYZPublic.lean/declarations/provesforbiddenanalyticauthority.md) | 43 | `declaration-track:1837271eae5e5aa64e663d9c818114e9701f104d20cc34504d8a84362fb85f7c` |
+| 3 | `def` | [FiniteXYZTransportHasAnalyticAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/XYZPublic.lean/declarations/finitexyztransporthasanalyticauthority.md) | 48 | `declaration-track:f4a0a939fea6a448a76c0640c04945834d0a9281c7eab2f5f58c92fba9bfea48` |
+| 4 | `theorem` | [finiteXYZTransport_has_no_analytic_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/XYZPublic.lean/declarations/finitexyztransport-has-no-analytic-authority.md) | 52 | `result-track:f7787c77e1d92686ebe9129dd724d58333af63f6c0d7f3dd971f3382d9b22c59` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

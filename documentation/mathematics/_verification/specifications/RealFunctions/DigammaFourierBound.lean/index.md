@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DigammaFourierBound.lean/index.md) · [Full source](../../../../RealFunctions/DigammaFourierBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigammaFourierBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigammaFourierBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.DigammaSeries`](../../../../MeasureAndIntegration/AnalysisDigammaSeries.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.ReciprocalKernel`](../../../../MeasureAndIntegration/AnalysisReciprocalKernel.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.Fourier.DigammaMultiplier`](../../../../MeasureAndIntegration/DigammaMultiplier.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.DigammaSeries`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AnalysisDigammaSeries.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ReciprocalKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AnalysisReciprocalKernel.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.DigammaMultiplier`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DigammaMultiplier.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [QuarterSeriesObligation](../../../../RealFunctions/DigammaFourierBound.lean/declarations/quarterseriesobligation.md) | 28 | `declaration-track:4db39d06f63251a95430b03e5f5edff40e3caefde55d5ff12781b43520d92c4f` |
-| 2 | `theorem` | [actual_multiplier_difference](../../../../RealFunctions/DigammaFourierBound.lean/declarations/actual-multiplier-difference.md) | 33 | `result-track:5f30d098fb4d884ca8213a9a74aced74d47b61298f61f9c260af4f735cab0fa9` |
-| 3 | `theorem` | [quarter_series_of_derivative_limit](../../../../RealFunctions/DigammaFourierBound.lean/declarations/quarter-series-of-derivative-limit.md) | 43 | `result-track:e9860dee068ee13d3102a7d043832df0160e421ce3541004b72b6db431cea8c1` |
-| 4 | `theorem` | [multiplier_estimate_of_series](../../../../RealFunctions/DigammaFourierBound.lean/declarations/multiplier-estimate-of-series.md) | 52 | `result-track:a0f7c5853810e530cd612c1228c7d4383355cf195e09b177f08564e5a06f8bcd` |
-| 5 | `theorem` | [archimedean_integrability_of_series](../../../../RealFunctions/DigammaFourierBound.lean/declarations/archimedean-integrability-of-series.md) | 60 | `result-track:af92132ca0bbf12541f607d60ad2fb37b218811498ad7acf212bed858fb0bd52` |
-| 6 | `theorem` | [admission_of_derivative_limit](../../../../RealFunctions/DigammaFourierBound.lean/declarations/admission-of-derivative-limit.md) | 67 | `result-track:91628891aadc046f986e4bc20d7e43813450bc2eff1df6b93a9cc61ff092f978` |
-| 7 | `theorem` | [quarter_series](../../../../RealFunctions/DigammaFourierBound.lean/declarations/quarter-series.md) | 73 | `result-track:cc345f0a8ef2b88a3505981822da0b4b3c961677f0c8b8e1ffb6605625ed2169` |
-| 8 | `theorem` | [multiplier_estimate](../../../../RealFunctions/DigammaFourierBound.lean/declarations/multiplier-estimate.md) | 77 | `result-track:516a9369d1a97c7b1ea1eabe10c5fdcfbba29d2c34419614730e9a95b2acb289` |
-| 9 | `theorem` | [archimedean_integrability](../../../../RealFunctions/DigammaFourierBound.lean/declarations/archimedean-integrability.md) | 81 | `result-track:3b2384cb83e480482034c1ca4f6ebbc225c767fd4e5fea708ebffee16c215db0` |
-| 10 | `theorem` | [normalization_admissibility](../../../../RealFunctions/DigammaFourierBound.lean/declarations/normalization-admissibility.md) | 86 | `result-track:3f4e330af3685fd1b29087559b40f89a6aabbcd5661e39bd41d7142ca08b292a` |
+| 1 | `def` | [QuarterSeriesObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigammaFourierBound.lean/declarations/quarterseriesobligation.md) | 28 | `declaration-track:4db39d06f63251a95430b03e5f5edff40e3caefde55d5ff12781b43520d92c4f` |
+| 2 | `theorem` | [actual_multiplier_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigammaFourierBound.lean/declarations/actual-multiplier-difference.md) | 33 | `result-track:5f30d098fb4d884ca8213a9a74aced74d47b61298f61f9c260af4f735cab0fa9` |
+| 3 | `theorem` | [quarter_series_of_derivative_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigammaFourierBound.lean/declarations/quarter-series-of-derivative-limit.md) | 43 | `result-track:e9860dee068ee13d3102a7d043832df0160e421ce3541004b72b6db431cea8c1` |
+| 4 | `theorem` | [multiplier_estimate_of_series](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigammaFourierBound.lean/declarations/multiplier-estimate-of-series.md) | 52 | `result-track:a0f7c5853810e530cd612c1228c7d4383355cf195e09b177f08564e5a06f8bcd` |
+| 5 | `theorem` | [archimedean_integrability_of_series](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigammaFourierBound.lean/declarations/archimedean-integrability-of-series.md) | 60 | `result-track:af92132ca0bbf12541f607d60ad2fb37b218811498ad7acf212bed858fb0bd52` |
+| 6 | `theorem` | [admission_of_derivative_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigammaFourierBound.lean/declarations/admission-of-derivative-limit.md) | 67 | `result-track:91628891aadc046f986e4bc20d7e43813450bc2eff1df6b93a9cc61ff092f978` |
+| 7 | `theorem` | [quarter_series](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigammaFourierBound.lean/declarations/quarter-series.md) | 73 | `result-track:cc345f0a8ef2b88a3505981822da0b4b3c961677f0c8b8e1ffb6605625ed2169` |
+| 8 | `theorem` | [multiplier_estimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigammaFourierBound.lean/declarations/multiplier-estimate.md) | 77 | `result-track:516a9369d1a97c7b1ea1eabe10c5fdcfbba29d2c34419614730e9a95b2acb289` |
+| 9 | `theorem` | [archimedean_integrability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigammaFourierBound.lean/declarations/archimedean-integrability.md) | 81 | `result-track:3b2384cb83e480482034c1ca4f6ebbc225c767fd4e5fea708ebffee16c215db0` |
+| 10 | `theorem` | [normalization_admissibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigammaFourierBound.lean/declarations/normalization-admissibility.md) | 86 | `result-track:3f4e330af3685fd1b29087559b40f89a6aabbcd5661e39bd41d7142ca08b292a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

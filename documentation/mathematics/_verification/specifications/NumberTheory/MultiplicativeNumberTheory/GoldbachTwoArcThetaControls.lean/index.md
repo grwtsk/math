@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaControls.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.GoldbachThetaExplicitCutoff`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachThetaExplicitCutoff`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachThetaExplicitCutoff.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [theta_prefix_zero_endpoint](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaControls.lean/declarations/theta-prefix-zero-endpoint.md) | 16 | `result-track:2d1402a55f3017a6b7d4ef54144d94a405231671f7b847464e1c1b94e1066560` |
-| 2 | `theorem` | [zero_prefix_budget_impossible](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaControls.lean/declarations/zero-prefix-budget-impossible.md) | 21 | `result-track:b4641e4adf27a2e623fb63fdfec6ba43043ad16293c4e198bca53dba20d095fb` |
-| 3 | `theorem` | [odd_prefix_at_two](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaControls.lean/declarations/odd-prefix-at-two.md) | 28 | `result-track:714eb0afed8246bb461d8fc342f30758c177dfbed788eae74913f3b19511c51b` |
-| 4 | `theorem` | [even_prime_correction_begins_at_two](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaControls.lean/declarations/even-prime-correction-begins-at-two.md) | 35 | `result-track:a407b29c4d7468f9cccc86a87cf06ee009aa705de0b5899169837c4922f225da` |
-| 5 | `theorem` | [even_prime_correction_at_four](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaControls.lean/declarations/even-prime-correction-at-four.md) | 41 | `result-track:f7672b3f8df03af7753f478c20a815fedfd4ebfa43704bc4bece4f0c4323cd41` |
-| 6 | `theorem` | [small_prefix_allowance_requires_payment](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaControls.lean/declarations/small-prefix-allowance-requires-payment.md) | 47 | `result-track:ef6d793ecfb89ccd6e062ff656e44b88719f912ae1a8ec7e215de7366d7f8713` |
-| 7 | `theorem` | [declared_cutoff_pays_small_prefix_allowance](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaControls.lean/declarations/declared-cutoff-pays-small-prefix-allowance.md) | 50 | `result-track:fa3a22dbf162b68147f10fbba8624cc6c28aa431a5d0582775a697a9c87ffa44` |
+| 1 | `theorem` | [theta_prefix_zero_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaControls.lean/declarations/theta-prefix-zero-endpoint.md) | 16 | `result-track:2d1402a55f3017a6b7d4ef54144d94a405231671f7b847464e1c1b94e1066560` |
+| 2 | `theorem` | [zero_prefix_budget_impossible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaControls.lean/declarations/zero-prefix-budget-impossible.md) | 21 | `result-track:b4641e4adf27a2e623fb63fdfec6ba43043ad16293c4e198bca53dba20d095fb` |
+| 3 | `theorem` | [odd_prefix_at_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaControls.lean/declarations/odd-prefix-at-two.md) | 28 | `result-track:714eb0afed8246bb461d8fc342f30758c177dfbed788eae74913f3b19511c51b` |
+| 4 | `theorem` | [even_prime_correction_begins_at_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaControls.lean/declarations/even-prime-correction-begins-at-two.md) | 35 | `result-track:a407b29c4d7468f9cccc86a87cf06ee009aa705de0b5899169837c4922f225da` |
+| 5 | `theorem` | [even_prime_correction_at_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaControls.lean/declarations/even-prime-correction-at-four.md) | 41 | `result-track:f7672b3f8df03af7753f478c20a815fedfd4ebfa43704bc4bece4f0c4323cd41` |
+| 6 | `theorem` | [small_prefix_allowance_requires_payment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaControls.lean/declarations/small-prefix-allowance-requires-payment.md) | 47 | `result-track:ef6d793ecfb89ccd6e062ff656e44b88719f912ae1a8ec7e215de7366d7f8713` |
+| 7 | `theorem` | [declared_cutoff_pays_small_prefix_allowance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcThetaControls.lean/declarations/declared-cutoff-pays-small-prefix-allowance.md) | 50 | `result-track:fa3a22dbf162b68147f10fbba8624cc6c28aa431a5d0582775a697a9c87ffa44` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

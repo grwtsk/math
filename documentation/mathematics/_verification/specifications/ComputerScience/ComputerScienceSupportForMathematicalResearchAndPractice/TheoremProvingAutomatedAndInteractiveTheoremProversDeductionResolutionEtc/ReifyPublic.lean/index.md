@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifyPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifyPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifyPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifyPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ReifiedBVExpr.of](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifyPublic.lean/declarations/reifiedbvexpr-of.md) | 27 | `declaration-track:c58ab03b2ef5706f35b643458969c47076e87ec65e5e027121020f7579e03551` |
-| 2 | `def` | [ReifiedBVPred.of](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifyPublic.lean/declarations/reifiedbvpred-of.md) | 303 | `declaration-track:434299ddbe4bf2da062fc05dc75e445a6cde48985e4fb0192b164d73d5eec583` |
-| 3 | `def` | [ReifiedBVLogical.of](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifyPublic.lean/declarations/reifiedbvlogical-of.md) | 335 | `declaration-track:a7d87464c08e0638d9a69a735f5f3c42ec03732886170a56522707394999820b` |
+| 1 | `def` | [ReifiedBVExpr.of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifyPublic.lean/declarations/reifiedbvexpr-of.md) | 27 | `declaration-track:c58ab03b2ef5706f35b643458969c47076e87ec65e5e027121020f7579e03551` |
+| 2 | `def` | [ReifiedBVPred.of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifyPublic.lean/declarations/reifiedbvpred-of.md) | 303 | `declaration-track:434299ddbe4bf2da062fc05dc75e445a6cde48985e4fb0192b164d73d5eec583` |
+| 3 | `def` | [ReifiedBVLogical.of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifyPublic.lean/declarations/reifiedbvlogical-of.md) | 335 | `declaration-track:a7d87464c08e0638d9a69a735f5f3c42ec03732886170a56522707394999820b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetaNamespacedPublicExpandCmdDo.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetaNamespacedPublicExpandCmdDo.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetaNamespacedPublicExpandCmdDo.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetaNamespacedPublicExpandCmdDo.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [expandCmdDo](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetaNamespacedPublicExpandCmdDo.lean/declarations/expandcmddo.md) | 29 | `declaration-track:1fab8a3dd774cd6f791500b36224325e03659e59da9c6f1b28783a1e1e2faae7` |
-| 2 | `def` | [elabMetaIf](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetaNamespacedPublicExpandCmdDo.lean/declarations/elabmetaif.md) | 35 | `declaration-track:b5f1fbc4602f004d5480d5d5eea82e6c2f28ae32e360b972e138a067ee129900` |
-| 3 | `def` | [toExprIO](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetaNamespacedPublicExpandCmdDo.lean/declarations/toexprio.md) | 47 | `declaration-track:8ccba4d6c41dec541b08a2d6ff78a7f34bf38375e8c976cd9705a3049f7f24c9` |
-| 4 | `def` | [elabRunIO](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetaNamespacedPublicExpandCmdDo.lean/declarations/elabrunio.md) | 51 | `declaration-track:a38b17550dc949b934c7f2b9dff6d2082187dd2257684b7e46cd162a8af5cb5c` |
+| 1 | `def` | [expandCmdDo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetaNamespacedPublicExpandCmdDo.lean/declarations/expandcmddo.md) | 29 | `declaration-track:1fab8a3dd774cd6f791500b36224325e03659e59da9c6f1b28783a1e1e2faae7` |
+| 2 | `def` | [elabMetaIf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetaNamespacedPublicExpandCmdDo.lean/declarations/elabmetaif.md) | 35 | `declaration-track:b5f1fbc4602f004d5480d5d5eea82e6c2f28ae32e360b972e138a067ee129900` |
+| 3 | `def` | [toExprIO](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetaNamespacedPublicExpandCmdDo.lean/declarations/toexprio.md) | 47 | `declaration-track:8ccba4d6c41dec541b08a2d6ff78a7f34bf38375e8c976cd9705a3049f7f24c9` |
+| 4 | `def` | [elabRunIO](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetaNamespacedPublicExpandCmdDo.lean/declarations/elabrunio.md) | 51 | `declaration-track:a38b17550dc949b934c7f2b9dff6d2082187dd2257684b7e46cd162a8af5cb5c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SourceCriticalSecondAbelNamespacedEdition3.lean/index.md) · [Full source](../../../../RealFunctions/SourceCriticalSecondAbelNamespacedEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCriticalSecondAbelNamespacedEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCriticalSecondAbelNamespacedEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [criticalPrimeTest_contDiff_two](../../../../RealFunctions/SourceCriticalSecondAbelNamespacedEdition3.lean/declarations/criticalprimetest-contdiff-two.md) | 33 | `result-track:f989f44b3680365f9a6f53e5f188325988ef8141a849dde866cdfd922050d590` |
-| 2 | `theorem` | [criticalPrimeTest_deriv_lipschitz](../../../../RealFunctions/SourceCriticalSecondAbelNamespacedEdition3.lean/declarations/criticalprimetest-deriv-lipschitz.md) | 39 | `result-track:d4dc53d46d6ceb0336328db74da9e8930a5c4cd441c3287ac10e95b76c8b2b06` |
-| 3 | `theorem` | [pairedTailTest_deriv_absolutelyContinuous](../../../../RealFunctions/SourceCriticalSecondAbelNamespacedEdition3.lean/declarations/pairedtailtest-deriv-absolutelycontinuous.md) | 48 | `result-track:bf9edf91159aa2b872b3e76958f5ff84be542365043e5cb74698477fbf48994a` |
+| 1 | `theorem` | [criticalPrimeTest_contDiff_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCriticalSecondAbelNamespacedEdition3.lean/declarations/criticalprimetest-contdiff-two.md) | 33 | `result-track:f989f44b3680365f9a6f53e5f188325988ef8141a849dde866cdfd922050d590` |
+| 2 | `theorem` | [criticalPrimeTest_deriv_lipschitz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCriticalSecondAbelNamespacedEdition3.lean/declarations/criticalprimetest-deriv-lipschitz.md) | 39 | `result-track:d4dc53d46d6ceb0336328db74da9e8930a5c4cd441c3287ac10e95b76c8b2b06` |
+| 3 | `theorem` | [pairedTailTest_deriv_absolutelyContinuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCriticalSecondAbelNamespacedEdition3.lean/declarations/pairedtailtest-deriv-absolutelycontinuous.md) | 48 | `result-track:bf9edf91159aa2b872b3e76958f5ff84be542365043e5cb74698477fbf48994a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

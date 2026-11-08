@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyAndPointwiseMap.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyAndPointwiseMap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyAndPointwiseMap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyAndPointwiseMap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [IndexedAll](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyAndPointwiseMap.lean/declarations/indexedall.md) | 29 | `declaration-track:f5340c6121100f71433f864950d8a96ecb9aaa7d94ffe5bd732a0c2d4c79e7fe` |
-| 2 | `def` | [map](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyAndPointwiseMap.lean/declarations/map.md) | 36 | `declaration-track:e29d3e1d33d73b5bcd2c136c2c05695d833895ba5e05759abce0a04435542ca5` |
+| 1 | `inductive` | [IndexedAll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyAndPointwiseMap.lean/declarations/indexedall.md) | 29 | `declaration-track:f5340c6121100f71433f864950d8a96ecb9aaa7d94ffe5bd732a0c2d4c79e7fe` |
+| 2 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyAndPointwiseMap.lean/declarations/map.md) | 36 | `declaration-track:e29d3e1d33d73b5bcd2c136c2c05695d833895ba5e05759abce0a04435542ca5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

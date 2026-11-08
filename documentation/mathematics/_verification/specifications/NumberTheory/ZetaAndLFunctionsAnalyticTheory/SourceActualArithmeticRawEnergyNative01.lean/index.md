@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualArithmeticRawEnergyNative01.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualArithmeticRawEnergyNative01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualArithmeticRawEnergyNative01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualArithmeticRawEnergyNative01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualRawArithmeticSquaredMass](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualArithmeticRawEnergyNative01.lean/declarations/actualrawarithmeticsquaredmass.md) | 20 | `declaration-track:74b5532b13fb748e4480b14bd94c7c288e2788f7fe61ff3ca2c8f593c6607b40` |
-| 2 | `def` | [unitDivisorAtom](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualArithmeticRawEnergyNative01.lean/declarations/unitdivisoratom.md) | 23 | `declaration-track:8fb2034b7c0e08edefa2a7f5294c48aa20ae9a57ff2178134406ec4fffeec23d` |
-| 3 | `theorem` | [actualUnitDivisor_coordinates](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualArithmeticRawEnergyNative01.lean/declarations/actualunitdivisor-coordinates.md) | 29 | `result-track:91f265dd88218dbd86e3625ebadc1a583cd49ddfac4cead4c975eed576865b4b` |
-| 4 | `theorem` | [actualRawArithmeticSquaredMass_ge_unit_log](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualArithmeticRawEnergyNative01.lean/declarations/actualrawarithmeticsquaredmass-ge-unit-log.md) | 37 | `result-track:8b3bfb4112bde59015cea5753bb57776c4483d3fcc26dbaf1d6e6d57dab8fb80` |
-| 5 | `theorem` | [actualPrimePower_rawMass_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualArithmeticRawEnergyNative01.lean/declarations/actualprimepower-rawmass-lower.md) | 56 | `result-track:56eef3972aee834c9944b7461489d70f67663d5a78720efeb5ef4c5066ac980d` |
-| 6 | `theorem` | [actualRawArithmeticSquaredMass_primePowerDilation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualArithmeticRawEnergyNative01.lean/declarations/actualrawarithmeticsquaredmass-primepowerdilation.md) | 73 | `result-track:6dfe5b7a332247b7913caf02d7378f4b611651600f12a401f876df497c6f009c` |
+| 1 | `def` | [actualRawArithmeticSquaredMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualArithmeticRawEnergyNative01.lean/declarations/actualrawarithmeticsquaredmass.md) | 20 | `declaration-track:74b5532b13fb748e4480b14bd94c7c288e2788f7fe61ff3ca2c8f593c6607b40` |
+| 2 | `def` | [unitDivisorAtom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualArithmeticRawEnergyNative01.lean/declarations/unitdivisoratom.md) | 23 | `declaration-track:8fb2034b7c0e08edefa2a7f5294c48aa20ae9a57ff2178134406ec4fffeec23d` |
+| 3 | `theorem` | [actualUnitDivisor_coordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualArithmeticRawEnergyNative01.lean/declarations/actualunitdivisor-coordinates.md) | 29 | `result-track:91f265dd88218dbd86e3625ebadc1a583cd49ddfac4cead4c975eed576865b4b` |
+| 4 | `theorem` | [actualRawArithmeticSquaredMass_ge_unit_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualArithmeticRawEnergyNative01.lean/declarations/actualrawarithmeticsquaredmass-ge-unit-log.md) | 37 | `result-track:8b3bfb4112bde59015cea5753bb57776c4483d3fcc26dbaf1d6e6d57dab8fb80` |
+| 5 | `theorem` | [actualPrimePower_rawMass_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualArithmeticRawEnergyNative01.lean/declarations/actualprimepower-rawmass-lower.md) | 56 | `result-track:56eef3972aee834c9944b7461489d70f67663d5a78720efeb5ef4c5066ac980d` |
+| 6 | `theorem` | [actualRawArithmeticSquaredMass_primePowerDilation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualArithmeticRawEnergyNative01.lean/declarations/actualrawarithmeticsquaredmass-primepowerdilation.md) | 73 | `result-track:6dfe5b7a332247b7913caf02d7378f4b611651600f12a401f876df497c6f009c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

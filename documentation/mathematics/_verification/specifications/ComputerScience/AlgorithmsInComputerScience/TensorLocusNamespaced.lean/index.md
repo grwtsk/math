@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TensorLocusNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TensorLocusNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TensorLocusNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TensorLocusNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TensorLocus](../../../../../ComputerScience/AlgorithmsInComputerScience/TensorLocusNamespaced.lean/declarations/tensorlocus.md) | 15 | `declaration-track:451dd610d3fad6497f1cfa00a33164bda4dcbae31213890a97f8157622db89e9` |
-| 2 | `theorem` | [tensorLocus_is_matrix_backed](../../../../../ComputerScience/AlgorithmsInComputerScience/TensorLocusNamespaced.lean/declarations/tensorlocus-is-matrix-backed.md) | 24 | `result-track:f4bec6815a6bf7813cd20892db36669c559c27c41c5185c207275c5b4db999e1` |
-| 3 | `structure` | [TensorAnchoringFiber](../../../../../ComputerScience/AlgorithmsInComputerScience/TensorLocusNamespaced.lean/declarations/tensoranchoringfiber.md) | 30 | `declaration-track:68debe0d50a7b9e9556be352d38da0cd099c90327697d265781623aa6366237b` |
-| 4 | `theorem` | [tensorAnchor_is_BinaryLogicMatrix](../../../../../ComputerScience/AlgorithmsInComputerScience/TensorLocusNamespaced.lean/declarations/tensoranchor-is-binarylogicmatrix.md) | 40 | `result-track:f01a45ae7d57540093d8ed2e5762fc6a2844b407e1b510801511092a863b30de` |
+| 1 | `structure` | [TensorLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TensorLocusNamespaced.lean/declarations/tensorlocus.md) | 15 | `declaration-track:451dd610d3fad6497f1cfa00a33164bda4dcbae31213890a97f8157622db89e9` |
+| 2 | `theorem` | [tensorLocus_is_matrix_backed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TensorLocusNamespaced.lean/declarations/tensorlocus-is-matrix-backed.md) | 24 | `result-track:f4bec6815a6bf7813cd20892db36669c559c27c41c5185c207275c5b4db999e1` |
+| 3 | `structure` | [TensorAnchoringFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TensorLocusNamespaced.lean/declarations/tensoranchoringfiber.md) | 30 | `declaration-track:68debe0d50a7b9e9556be352d38da0cd099c90327697d265781623aa6366237b` |
+| 4 | `theorem` | [tensorAnchor_is_BinaryLogicMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TensorLocusNamespaced.lean/declarations/tensoranchor-is-binarylogicmatrix.md) | 40 | `result-track:f01a45ae7d57540093d8ed2e5762fc6a2844b407e1b510801511092a863b30de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

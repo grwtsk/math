@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidualNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidualNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidualNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidualNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [residual_integrable](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidualNamespaced.lean/declarations/residual-integrable.md) | 29 | `result-track:4fb79324e7bb18ac0786f5e0c87cf908621524ee398f9b4693388d19634461e0` |
-| 2 | `theorem` | [residual_fourier](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidualNamespaced.lean/declarations/residual-fourier.md) | 42 | `result-track:d71e5005d26ba59cb595e8f5b68ab76e1c8e6e5342cbcb756b024c6bd790d61f` |
-| 3 | `theorem` | [residual_norm_sq](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidualNamespaced.lean/declarations/residual-norm-sq.md) | 64 | `result-track:add6f701f223d56d5330e8feb237212d0fc578ce9fc81bad8768599f5e440603` |
-| 4 | `theorem` | [residual_norm_le_delta_add_error](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidualNamespaced.lean/declarations/residual-norm-le-delta-add-error.md) | 80 | `result-track:f21cc4286450c8a5cdd7c3e4fd48e48afb84f6a024c9dd0586c8866decb90f5e` |
+| 1 | `theorem` | [residual_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidualNamespaced.lean/declarations/residual-integrable.md) | 29 | `result-track:4fb79324e7bb18ac0786f5e0c87cf908621524ee398f9b4693388d19634461e0` |
+| 2 | `theorem` | [residual_fourier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidualNamespaced.lean/declarations/residual-fourier.md) | 42 | `result-track:d71e5005d26ba59cb595e8f5b68ab76e1c8e6e5342cbcb756b024c6bd790d61f` |
+| 3 | `theorem` | [residual_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidualNamespaced.lean/declarations/residual-norm-sq.md) | 64 | `result-track:add6f701f223d56d5330e8feb237212d0fc578ce9fc81bad8768599f5e440603` |
+| 4 | `theorem` | [residual_norm_le_delta_add_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidualNamespaced.lean/declarations/residual-norm-le-delta-add-error.md) | 80 | `result-track:f21cc4286450c8a5cdd7c3e4fd48e48afb84f6a024c9dd0586c8866decb90f5e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

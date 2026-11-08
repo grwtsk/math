@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactFiniteDimensionPublic.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactFiniteDimensionPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactFiniteDimensionPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactFiniteDimensionPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isCompactOperator_id_iff_finiteDimensional](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactFiniteDimensionPublic.lean/declarations/iscompactoperator-id-iff-finitedimensional.md) | 26 | `result-track:fbe6bfa22be98973ed55647def782d2779f23fd6012143b6969595fcd38fe383` |
-| 2 | `lemma` | [FiniteDimensional.of_isCompactOperator_id](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactFiniteDimensionPublic.lean/declarations/finitedimensional-of-iscompactoperator-id.md) | 33 | `result-track:4088d6db47b9614709f84532cfeabd00b93ba28a6024149d277beb0e5d19981b` |
+| 1 | `theorem` | [isCompactOperator_id_iff_finiteDimensional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactFiniteDimensionPublic.lean/declarations/iscompactoperator-id-iff-finitedimensional.md) | 26 | `result-track:fbe6bfa22be98973ed55647def782d2779f23fd6012143b6969595fcd38fe383` |
+| 2 | `lemma` | [FiniteDimensional.of_isCompactOperator_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactFiniteDimensionPublic.lean/declarations/finitedimensional-of-iscompactoperator-id.md) | 33 | `result-track:4088d6db47b9614709f84532cfeabd00b93ba28a6024149d277beb0e5d19981b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

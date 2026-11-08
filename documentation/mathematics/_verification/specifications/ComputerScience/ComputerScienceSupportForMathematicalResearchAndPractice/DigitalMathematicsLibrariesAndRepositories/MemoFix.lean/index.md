@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFix.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ObjectMap](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFix.lean/declarations/objectmap.md) | 17 | `declaration-track:676ea6b9a1e2972e5b8a4d9711bcd197f2e2b339d6773cee300b442c9435b30b` |
-| 2 | `def` | [memoFixImplObj](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFix.lean/declarations/memofiximplobj.md) | 19 | `declaration-track:7b1ca7d9ca8d78d7ffe37e29df80095172f6ad68934e945ec83c0ce79aab3a16` |
-| 3 | `def` | [memoFixImpl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFix.lean/declarations/memofiximpl.md) | 30 | `declaration-track:c2c1f251f1b1db87e95b20cebbd420243607037f2407203e58376f2eac408498` |
-| 4 | `opaque` | [memoFix](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFix.lean/declarations/memofix.md) | 41 | `declaration-track:091b238237400c82685778ae5f1dbb245130de393ca6ca0838da75c124616365` |
+| 1 | `abbrev` | [ObjectMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFix.lean/declarations/objectmap.md) | 17 | `declaration-track:676ea6b9a1e2972e5b8a4d9711bcd197f2e2b339d6773cee300b442c9435b30b` |
+| 2 | `def` | [memoFixImplObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFix.lean/declarations/memofiximplobj.md) | 19 | `declaration-track:7b1ca7d9ca8d78d7ffe37e29df80095172f6ad68934e945ec83c0ce79aab3a16` |
+| 3 | `def` | [memoFixImpl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFix.lean/declarations/memofiximpl.md) | 30 | `declaration-track:c2c1f251f1b1db87e95b20cebbd420243607037f2407203e58376f2eac408498` |
+| 4 | `opaque` | [memoFix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/MemoFix.lean/declarations/memofix.md) | 41 | `declaration-track:091b238237400c82685778ae5f1dbb245130de393ca6ca0838da75c124616365` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

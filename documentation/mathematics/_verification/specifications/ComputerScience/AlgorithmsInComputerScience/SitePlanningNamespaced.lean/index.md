@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SitePlanningNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SitePlanningNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SitePlanningNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SitePlanningNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ComplexSitePlan](../../../../../ComputerScience/AlgorithmsInComputerScience/SitePlanningNamespaced.lean/declarations/complexsiteplan.md) | 15 | `declaration-track:0c10c8119ee02f11241f2b57880b69cbe8d92b64b2cad83f7ac727c255fc699c` |
-| 2 | `def` | [complexSitePlan](../../../../../ComputerScience/AlgorithmsInComputerScience/SitePlanningNamespaced.lean/declarations/complexsiteplan-source-edition-2.md) | 25 | `declaration-track:8af1e4627ed71f390f3959170d185909bc7437f0651f2ca277d4404c9816403e` |
-| 3 | `theorem` | [complexSitePlan_primeModularities_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/SitePlanningNamespaced.lean/declarations/complexsiteplan-primemodularities-visible.md) | 43 | `result-track:e665c4f08f5d500cd7c01b794d46b83d54caa6f51ffe0715de09112b39ee41f5` |
-| 4 | `theorem` | [complexSitePlan_topologyPrime_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/SitePlanningNamespaced.lean/declarations/complexsiteplan-topologyprime-visible.md) | 50 | `result-track:3f8c5e99a6357ac00b6169af45ef3c6b1a03ed98b5406e111fef5b6117093a93` |
-| 5 | `theorem` | [complexSitePlan_claimBoundary_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/SitePlanningNamespaced.lean/declarations/complexsiteplan-claimboundary-visible.md) | 57 | `result-track:acfa607039a339a2afbfa0ce5bdb1df573c9fa061de3c17cc4baa4de620ac300` |
+| 1 | `structure` | [ComplexSitePlan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SitePlanningNamespaced.lean/declarations/complexsiteplan.md) | 15 | `declaration-track:0c10c8119ee02f11241f2b57880b69cbe8d92b64b2cad83f7ac727c255fc699c` |
+| 2 | `def` | [complexSitePlan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SitePlanningNamespaced.lean/declarations/complexsiteplan-source-edition-2.md) | 25 | `declaration-track:8af1e4627ed71f390f3959170d185909bc7437f0651f2ca277d4404c9816403e` |
+| 3 | `theorem` | [complexSitePlan_primeModularities_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SitePlanningNamespaced.lean/declarations/complexsiteplan-primemodularities-visible.md) | 43 | `result-track:e665c4f08f5d500cd7c01b794d46b83d54caa6f51ffe0715de09112b39ee41f5` |
+| 4 | `theorem` | [complexSitePlan_topologyPrime_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SitePlanningNamespaced.lean/declarations/complexsiteplan-topologyprime-visible.md) | 50 | `result-track:3f8c5e99a6357ac00b6169af45ef3c6b1a03ed98b5406e111fef5b6117093a93` |
+| 5 | `theorem` | [complexSitePlan_claimBoundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SitePlanningNamespaced.lean/declarations/complexsiteplan-claimboundary-visible.md) | 57 | `result-track:acfa607039a339a2afbfa0ce5bdb1df573c9fa061de3c17cc4baa4de620ac300` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

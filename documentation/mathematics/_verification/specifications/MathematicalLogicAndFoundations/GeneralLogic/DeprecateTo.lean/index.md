@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeprecateTo.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeprecateTo.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeprecateTo.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeprecateTo.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mul_easy_deprecated](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeprecateTo.lean/declarations/mul-easy-deprecated.md) | 24 | `result-track:b2b9997716c6e06a9d12327145d36dd3f6485c7e9ae7a3f3e98b3047404d90d8` |
+| 1 | `theorem` | [mul_easy_deprecated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeprecateTo.lean/declarations/mul-easy-deprecated.md) | 24 | `result-track:b2b9997716c6e06a9d12327145d36dd3f6485c7e9ae7a3f3e98b3047404d90d8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

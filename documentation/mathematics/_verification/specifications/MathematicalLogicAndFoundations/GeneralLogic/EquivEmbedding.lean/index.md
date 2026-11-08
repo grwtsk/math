@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivEmbedding.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivEmbedding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivEmbedding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivEmbedding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sumEmbeddingEquivProdEmbeddingDisjoint](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivEmbedding.lean/declarations/sumembeddingequivprodembeddingdisjoint.md) | 21 | `declaration-track:f491981f6a863df333f218b53924e1e8f525dbd753484304c5442ddff18c4d22` |
-| 2 | `def` | [codRestrict](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivEmbedding.lean/declarations/codrestrict.md) | 53 | `declaration-track:ebc03bd1f74e4761b22d5ed69492d029965d3b0b3d5e43e7d477dd6bdb7eda9e` |
-| 3 | `def` | [prodEmbeddingDisjointEquivSigmaEmbeddingRestricted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivEmbedding.lean/declarations/prodembeddingdisjointequivsigmaembeddingrestricted.md) | 63 | `declaration-track:809f10ac1452ad9e1a890585455045856766caaecadc83865d2c116f80837ac0` |
-| 4 | `def` | [sumEmbeddingEquivSigmaEmbeddingRestricted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivEmbedding.lean/declarations/sumembeddingequivsigmaembeddingrestricted.md) | 77 | `declaration-track:0d0f895ea08a0f44cbaae1e68041e57a6d51ad3005898aa2ea697bd65318d693` |
-| 5 | `def` | [uniqueEmbeddingEquivResult](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivEmbedding.lean/declarations/uniqueembeddingequivresult.md) | 83 | `declaration-track:77860142868fbd74085b4ccb94746d3ab1156e7e428bd32d2dd71a053400e034` |
+| 1 | `def` | [sumEmbeddingEquivProdEmbeddingDisjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivEmbedding.lean/declarations/sumembeddingequivprodembeddingdisjoint.md) | 21 | `declaration-track:f491981f6a863df333f218b53924e1e8f525dbd753484304c5442ddff18c4d22` |
+| 2 | `def` | [codRestrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivEmbedding.lean/declarations/codrestrict.md) | 53 | `declaration-track:ebc03bd1f74e4761b22d5ed69492d029965d3b0b3d5e43e7d477dd6bdb7eda9e` |
+| 3 | `def` | [prodEmbeddingDisjointEquivSigmaEmbeddingRestricted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivEmbedding.lean/declarations/prodembeddingdisjointequivsigmaembeddingrestricted.md) | 63 | `declaration-track:809f10ac1452ad9e1a890585455045856766caaecadc83865d2c116f80837ac0` |
+| 4 | `def` | [sumEmbeddingEquivSigmaEmbeddingRestricted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivEmbedding.lean/declarations/sumembeddingequivsigmaembeddingrestricted.md) | 77 | `declaration-track:0d0f895ea08a0f44cbaae1e68041e57a6d51ad3005898aa2ea697bd65318d693` |
+| 5 | `def` | [uniqueEmbeddingEquivResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EquivEmbedding.lean/declarations/uniqueembeddingequivresult.md) | 83 | `declaration-track:77860142868fbd74085b4ccb94746d3ab1156e7e428bd32d2dd71a053400e034` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

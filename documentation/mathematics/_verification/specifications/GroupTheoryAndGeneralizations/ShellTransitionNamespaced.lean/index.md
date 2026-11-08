@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ShellTransitionNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ShellTransitionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ShellTransitionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ShellTransitionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [GramTransport](../../../../GroupTheoryAndGeneralizations/ShellTransitionNamespaced.lean/declarations/gramtransport.md) | 27 | `declaration-track:9492bef0d86615988e44e619f7e57e1c17a1761050b6980816ae3f719cc9e979` |
-| 2 | `structure` | [CohomologicalShellTransition](../../../../GroupTheoryAndGeneralizations/ShellTransitionNamespaced.lean/declarations/cohomologicalshelltransition.md) | 51 | `declaration-track:3180201153f70a4fac561be28656ff69b2dd57e1a8767d8777e7238efd9c143d` |
+| 1 | `inductive` | [GramTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ShellTransitionNamespaced.lean/declarations/gramtransport.md) | 27 | `declaration-track:9492bef0d86615988e44e619f7e57e1c17a1761050b6980816ae3f719cc9e979` |
+| 2 | `structure` | [CohomologicalShellTransition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ShellTransitionNamespaced.lean/declarations/cohomologicalshelltransition.md) | 51 | `declaration-track:3180201153f70a4fac561be28656ff69b2dd57e1a8767d8777e7238efd9c143d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

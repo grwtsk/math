@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CompHausLikeEffectiveEpiNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/CompHausLikeEffectiveEpiNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLikeEffectiveEpiNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLikeEffectiveEpiNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [effectiveEpiStruct](../../../../GeneralTopology/CompHausLikeEffectiveEpiNamespacedPublic.lean/declarations/effectiveepistruct.md) | 44 | `declaration-track:8084d485a8226b345636634ed8e2840bae895191828a2f8efd7a2cf3fc8df83c` |
-| 2 | `theorem` | [preregular](../../../../GeneralTopology/CompHausLikeEffectiveEpiNamespacedPublic.lean/declarations/preregular.md) | 72 | `result-track:fd6cae107b83ade635696f4120e6aa22679f54e7374dacfb733fd5c8eeb7b887` |
-| 3 | `theorem` | [precoherent](../../../../GeneralTopology/CompHausLikeEffectiveEpiNamespacedPublic.lean/declarations/precoherent.md) | 83 | `result-track:3311b2e1789952afcf9561109d1a457c35bedb319e5dbaba746c02406193d76f` |
+| 1 | `def` | [effectiveEpiStruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLikeEffectiveEpiNamespacedPublic.lean/declarations/effectiveepistruct.md) | 44 | `declaration-track:8084d485a8226b345636634ed8e2840bae895191828a2f8efd7a2cf3fc8df83c` |
+| 2 | `theorem` | [preregular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLikeEffectiveEpiNamespacedPublic.lean/declarations/preregular.md) | 72 | `result-track:fd6cae107b83ade635696f4120e6aa22679f54e7374dacfb733fd5c8eeb7b887` |
+| 3 | `theorem` | [precoherent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLikeEffectiveEpiNamespacedPublic.lean/declarations/precoherent.md) | 83 | `result-track:3311b2e1789952afcf9561109d1a457c35bedb319e5dbaba746c02406193d76f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

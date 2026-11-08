@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ReciprocalSquareTail.lean/index.md) · [Full source](../../../../RealFunctions/ReciprocalSquareTail.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ReciprocalSquareTail.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ReciprocalSquareTail.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,9 +63,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [reciprocal_square_le_difference](../../../../RealFunctions/ReciprocalSquareTail.lean/declarations/reciprocal-square-le-difference.md) | 27 | `result-track:33d8b2dcbdc8fd0be84857c567f1fc5e111f1f127a9ccf11ce4fe77287157e7e` |
-| 2 | `theorem` | [finite_square_tail_le](../../../../RealFunctions/ReciprocalSquareTail.lean/declarations/finite-square-tail-le.md) | 39 | `result-track:f17ec33a3331e3ec47eaebd895a5685c27329fab08454ed9783e32214416c009` |
-| 3 | `theorem` | [finite_square_tail_le_reciprocal](../../../../RealFunctions/ReciprocalSquareTail.lean/declarations/finite-square-tail-le-reciprocal.md) | 55 | `result-track:2c1cdf42e4ba63f501e3dcd41fcec80f9a3ff3d7293ef415dade368d52b06b4d` |
+| 1 | `theorem` | [reciprocal_square_le_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ReciprocalSquareTail.lean/declarations/reciprocal-square-le-difference.md) | 27 | `result-track:33d8b2dcbdc8fd0be84857c567f1fc5e111f1f127a9ccf11ce4fe77287157e7e` |
+| 2 | `theorem` | [finite_square_tail_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ReciprocalSquareTail.lean/declarations/finite-square-tail-le.md) | 39 | `result-track:f17ec33a3331e3ec47eaebd895a5685c27329fab08454ed9783e32214416c009` |
+| 3 | `theorem` | [finite_square_tail_le_reciprocal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ReciprocalSquareTail.lean/declarations/finite-square-tail-le-reciprocal.md) | 55 | `result-track:2c1cdf42e4ba63f501e3dcd41fcec80f9a3ff3d7293ef415dade368d52b06b4d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactificationNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactificationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactificationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactificationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [stereographicCompactify](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactificationNamespaced.lean/declarations/stereographiccompactify.md) | 23 | `declaration-track:5a93049f878efb12c98dc04294d4d389793f0213dc142c8b3d6a568ae579bc6a` |
-| 2 | `def` | [liftCompactifiedSymmetry](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactificationNamespaced.lean/declarations/liftcompactifiedsymmetry.md) | 32 | `declaration-track:b1006e70266406224bce601197b807df25b5bf708036bc9574afe7b8ebc3973d` |
-| 3 | `theorem` | [stereographicCompactify_equivariant](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactificationNamespaced.lean/declarations/stereographiccompactify-equivariant.md) | 40 | `result-track:fd9488715a6242faa16ad7c1a83755c13cba9530d60110d233ca2b7e85823aaa` |
-| 4 | `structure` | [CompactificationCertificate](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactificationNamespaced.lean/declarations/compactificationcertificate.md) | 53 | `declaration-track:bdf39cac85952777b2c27a7c1fe0ebde6dec1d2d50038d9c3ebebfd70c3fccd4` |
-| 5 | `theorem` | [CompactificationCertificate.reflectsFixedness](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactificationNamespaced.lean/declarations/compactificationcertificate-reflectsfixedness.md) | 64 | `result-track:1bcab3c02d7d0e9a211e63dc96f78dd79b59e8ffe7812e7634fa9b4d1fb21525` |
+| 1 | `def` | [stereographicCompactify](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactificationNamespaced.lean/declarations/stereographiccompactify.md) | 23 | `declaration-track:5a93049f878efb12c98dc04294d4d389793f0213dc142c8b3d6a568ae579bc6a` |
+| 2 | `def` | [liftCompactifiedSymmetry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactificationNamespaced.lean/declarations/liftcompactifiedsymmetry.md) | 32 | `declaration-track:b1006e70266406224bce601197b807df25b5bf708036bc9574afe7b8ebc3973d` |
+| 3 | `theorem` | [stereographicCompactify_equivariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactificationNamespaced.lean/declarations/stereographiccompactify-equivariant.md) | 40 | `result-track:fd9488715a6242faa16ad7c1a83755c13cba9530d60110d233ca2b7e85823aaa` |
+| 4 | `structure` | [CompactificationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactificationNamespaced.lean/declarations/compactificationcertificate.md) | 53 | `declaration-track:bdf39cac85952777b2c27a7c1fe0ebde6dec1d2d50038d9c3ebebfd70c3fccd4` |
+| 5 | `theorem` | [CompactificationCertificate.reflectsFixedness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CompactificationNamespaced.lean/declarations/compactificationcertificate-reflectsfixedness.md) | 64 | `result-track:1bcab3c02d7d0e9a211e63dc96f78dd79b59e8ffe7812e7634fa9b4d1fb21525` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

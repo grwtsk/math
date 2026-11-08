@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/AFbdb003817c56c2Namespaced.lean/index.md) · [Full source](../../../../Combinatorics/AFbdb003817c56c2Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AFbdb003817c56c2Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AFbdb003817c56c2Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [RepresentationMedium](../../../../Combinatorics/AFbdb003817c56c2Namespaced.lean/declarations/representationmedium.md) | 18 | `declaration-track:ea6258bd1dfeafb73c335dec56c1c7de3bfbdaa90c00e6b6e37644c6dc78fe35` |
-| 2 | `inductive` | [RepresentationExactness](../../../../Combinatorics/AFbdb003817c56c2Namespaced.lean/declarations/representationexactness.md) | 30 | `declaration-track:9d2ec1ad8d2effdf0b47c79eb9ea16758f7d68ff3a3414cb4219968b8aede29c` |
-| 3 | `structure` | [RepresentationInvariant](../../../../Combinatorics/AFbdb003817c56c2Namespaced.lean/declarations/representationinvariant.md) | 41 | `declaration-track:38e39d8d3b6703946fae45c7cd9d60b4a5cb7be342d3ee1f192874681a64b66a` |
-| 4 | `structure` | [RepresentationRecord](../../../../Combinatorics/AFbdb003817c56c2Namespaced.lean/declarations/representationrecord.md) | 47 | `declaration-track:bbdd6b44a5f0993eabd62da574f02fb1835481f1d65b091fbf9158e9821f73b0` |
+| 1 | `inductive` | [RepresentationMedium](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AFbdb003817c56c2Namespaced.lean/declarations/representationmedium.md) | 18 | `declaration-track:ea6258bd1dfeafb73c335dec56c1c7de3bfbdaa90c00e6b6e37644c6dc78fe35` |
+| 2 | `inductive` | [RepresentationExactness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AFbdb003817c56c2Namespaced.lean/declarations/representationexactness.md) | 30 | `declaration-track:9d2ec1ad8d2effdf0b47c79eb9ea16758f7d68ff3a3414cb4219968b8aede29c` |
+| 3 | `structure` | [RepresentationInvariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AFbdb003817c56c2Namespaced.lean/declarations/representationinvariant.md) | 41 | `declaration-track:38e39d8d3b6703946fae45c7cd9d60b4a5cb7be342d3ee1f192874681a64b66a` |
+| 4 | `structure` | [RepresentationRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AFbdb003817c56c2Namespaced.lean/declarations/representationrecord.md) | 47 | `declaration-track:bbdd6b44a5f0993eabd62da574f02fb1835481f1d65b091fbf9158e9821f73b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

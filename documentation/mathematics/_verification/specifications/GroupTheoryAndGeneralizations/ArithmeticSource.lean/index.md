@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ArithmeticSource.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ArithmeticSource.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ArithmeticSource.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ArithmeticSource.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ArithmeticEnhancement](../../../../GroupTheoryAndGeneralizations/ArithmeticSource.lean/declarations/arithmeticenhancement.md) | 16 | `declaration-track:d2004933f71ccc44afc921f442395ebce4cd595473b4a3b1cc7c19774cf7005f` |
-| 2 | `structure` | [ArithmeticSource](../../../../GroupTheoryAndGeneralizations/ArithmeticSource.lean/declarations/arithmeticsource.md) | 19 | `declaration-track:45f0e931456cc5ebba0080d16ab01ebac0dff641bd07b6f5ce27c2b873d76010` |
-| 3 | `structure` | [ReducedArithmeticSource](../../../../GroupTheoryAndGeneralizations/ArithmeticSource.lean/declarations/reducedarithmeticsource.md) | 28 | `declaration-track:74cbde31f41718dd8e4128a38cfed3218281da3ecea4a1668f2920e0b92e765a` |
-| 4 | `def` | [invariant](../../../../GroupTheoryAndGeneralizations/ArithmeticSource.lean/declarations/invariant.md) | 36 | `declaration-track:45919e8c95b52c44ac0c82ded78f197d3dfb282fde0e18333bf47846b30e7413` |
-| 5 | `def` | [reduced](../../../../GroupTheoryAndGeneralizations/ArithmeticSource.lean/declarations/reduced.md) | 41 | `declaration-track:c412669d30b0ee829e61f8857155fc83dbc8974d263441c85be4c7097185aac2` |
-| 6 | `theorem` | [invariant_reduced_eq_zero](../../../../GroupTheoryAndGeneralizations/ArithmeticSource.lean/declarations/invariant-reduced-eq-zero.md) | 46 | `result-track:364128b4f1e5d571cc2635526d1b2daf636cfaa51fcf55a3a7654d437e8755c4` |
+| 1 | `abbrev` | [ArithmeticEnhancement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ArithmeticSource.lean/declarations/arithmeticenhancement.md) | 16 | `declaration-track:d2004933f71ccc44afc921f442395ebce4cd595473b4a3b1cc7c19774cf7005f` |
+| 2 | `structure` | [ArithmeticSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ArithmeticSource.lean/declarations/arithmeticsource.md) | 19 | `declaration-track:45f0e931456cc5ebba0080d16ab01ebac0dff641bd07b6f5ce27c2b873d76010` |
+| 3 | `structure` | [ReducedArithmeticSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ArithmeticSource.lean/declarations/reducedarithmeticsource.md) | 28 | `declaration-track:74cbde31f41718dd8e4128a38cfed3218281da3ecea4a1668f2920e0b92e765a` |
+| 4 | `def` | [invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ArithmeticSource.lean/declarations/invariant.md) | 36 | `declaration-track:45919e8c95b52c44ac0c82ded78f197d3dfb282fde0e18333bf47846b30e7413` |
+| 5 | `def` | [reduced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ArithmeticSource.lean/declarations/reduced.md) | 41 | `declaration-track:c412669d30b0ee829e61f8857155fc83dbc8974d263441c85be4c7097185aac2` |
+| 6 | `theorem` | [invariant_reduced_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ArithmeticSource.lean/declarations/invariant-reduced-eq-zero.md) | 46 | `result-track:364128b4f1e5d571cc2635526d1b2daf636cfaa51fcf55a3a7654d437e8755c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

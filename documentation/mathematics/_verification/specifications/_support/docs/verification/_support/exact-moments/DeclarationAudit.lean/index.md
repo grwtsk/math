@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../../../_support/docs/verification/_support/exact-moments/DeclarationAudit.lean/index.md) · [Full source](../../../../../../../../_support/docs/verification/_support/exact-moments/DeclarationAudit.lean/source.md)
+[Module and every result](../../../../../../../../_support/provider-documentation/exact-moments/DeclarationAudit.lean/index.md) · [Full source](../../../../../../../../_support/provider-documentation/exact-moments/DeclarationAudit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.CodingTheory.Lossless`](../../../../../../../../Combinatorics/Lossless.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.Combinatorics.GraphTheory.RootHeatState`](../../../../../../../../Combinatorics/GraphTheory/RootHeatState.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Combinatorics.CodingTheory.Lossless`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Lossless.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Combinatorics.GraphTheory.RootHeatState`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RootHeatState.lean/index.md) — import line 3; pinned internal source present.
 - `Lean.Util.CollectAxioms` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric

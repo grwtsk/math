@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CS12ControlledSphericalHierarchyNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/CS12ControlledSphericalHierarchyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CS12ControlledSphericalHierarchyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CS12ControlledSphericalHierarchyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cs12_controlledSphericalHierarchy](../../../../GeneralTopology/CS12ControlledSphericalHierarchyNamespaced.lean/declarations/cs12-controlledsphericalhierarchy.md) | 20 | `result-track:d2a748c61afeefebc120e1edff8d8c8685b155df94532d8d483e8018aa1cf0b4` |
+| 1 | `theorem` | [cs12_controlledSphericalHierarchy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CS12ControlledSphericalHierarchyNamespaced.lean/declarations/cs12-controlledsphericalhierarchy.md) | 20 | `result-track:d2a748c61afeefebc120e1edff8d8c8685b155df94532d8d483e8018aa1cf0b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

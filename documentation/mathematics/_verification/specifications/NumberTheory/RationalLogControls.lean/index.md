@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/RationalLogControls.lean/index.md) · [Full source](../../../../NumberTheory/RationalLogControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalLogControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalLogControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentLogEvaluation`](../../../../NumberTheory/CanonicalTentLogEvaluation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentLogEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentLogEvaluation.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ratio_two](../../../../NumberTheory/RationalLogControls.lean/declarations/ratio-two.md) | 15 | `result-track:8f582e23a6cad8cc32382e4dd98bd88e722156a1ca46f3ba520ec6a85287ce69` |
-| 2 | `theorem` | [one_has_zero_width](../../../../NumberTheory/RationalLogControls.lean/declarations/one-has-zero-width.md) | 17 | `result-track:f37ebfe5b70d2d0bd6508eeec68ac8ca281f465e4f3256e5e3cbc7ea806325c1` |
-| 3 | `theorem` | [empty_prefix_has_remainder](../../../../NumberTheory/RationalLogControls.lean/declarations/empty-prefix-has-remainder.md) | 20 | `result-track:2558ed21f3f4d5a00201bb23e57914cd145229898ed11dbbfeffe6715efc05fd` |
-| 4 | `theorem` | [first_term_and_full_width](../../../../NumberTheory/RationalLogControls.lean/declarations/first-term-and-full-width.md) | 23 | `result-track:da98d25e4e49f605849aebb6b82b20a4745a3aef9d8d0d024081a292c8998f81` |
-| 5 | `theorem` | [midpoint_not_lower_endpoint](../../../../NumberTheory/RationalLogControls.lean/declarations/midpoint-not-lower-endpoint.md) | 27 | `result-track:45102427efd60ccdcdfe96fe83ccf9474c7a5e000415341bbb6054d4a1be9769` |
-| 6 | `theorem` | [half_width_at_lower_is_unsound](../../../../NumberTheory/RationalLogControls.lean/declarations/half-width-at-lower-is-unsound.md) | 34 | `result-track:81d2369587ba46e882bd57b1bfdd75255a7c137e6573c20c8c0edb130e162010` |
-| 7 | `theorem` | [exponent_scales_log_two_error](../../../../NumberTheory/RationalLogControls.lean/declarations/exponent-scales-log-two-error.md) | 40 | `result-track:4554717219707657c5d8d7875e16db5aba9b52a6066708499b7e45970895979c` |
-| 8 | `theorem` | [wrong_dyadic_source_rejected](../../../../NumberTheory/RationalLogControls.lean/declarations/wrong-dyadic-source-rejected.md) | 44 | `result-track:eb60d25b64b76897bba3b6fe87a3e63704e2014d4a7f407760e0fb5ae89c8999` |
-| 9 | `theorem` | [invalid_mantissa_rejected](../../../../NumberTheory/RationalLogControls.lean/declarations/invalid-mantissa-rejected.md) | 46 | `result-track:d762150bc17af0faa3151c7e0a4c43bf7c7e343491812289e5211494347dab5c` |
-| 10 | `theorem` | [unreduced_ratio_can_exceed_third](../../../../NumberTheory/RationalLogControls.lean/declarations/unreduced-ratio-can-exceed-third.md) | 48 | `result-track:dd8516aeae1d0c2523c00c0f1aae38b030fb1b2a3fecf73596767d908d4d6572` |
-| 11 | `theorem` | [log_accuracy_does_not_discharge_exp_degree](../../../../NumberTheory/RationalLogControls.lean/declarations/log-accuracy-does-not-discharge-exp-degree.md) | 51 | `result-track:0c476156b773aea0b46d5310c23aba7dadc6a8f6569b42fa9883f0341bb1a46a` |
-| 12 | `theorem` | [coarse_log_displacement_rejected](../../../../NumberTheory/RationalLogControls.lean/declarations/coarse-log-displacement-rejected.md) | 54 | `result-track:46624ea105a43dd5ddff25617420002332c390b79d33b13c81e72cc0f2c71886` |
+| 1 | `theorem` | [ratio_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalLogControls.lean/declarations/ratio-two.md) | 15 | `result-track:8f582e23a6cad8cc32382e4dd98bd88e722156a1ca46f3ba520ec6a85287ce69` |
+| 2 | `theorem` | [one_has_zero_width](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalLogControls.lean/declarations/one-has-zero-width.md) | 17 | `result-track:f37ebfe5b70d2d0bd6508eeec68ac8ca281f465e4f3256e5e3cbc7ea806325c1` |
+| 3 | `theorem` | [empty_prefix_has_remainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalLogControls.lean/declarations/empty-prefix-has-remainder.md) | 20 | `result-track:2558ed21f3f4d5a00201bb23e57914cd145229898ed11dbbfeffe6715efc05fd` |
+| 4 | `theorem` | [first_term_and_full_width](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalLogControls.lean/declarations/first-term-and-full-width.md) | 23 | `result-track:da98d25e4e49f605849aebb6b82b20a4745a3aef9d8d0d024081a292c8998f81` |
+| 5 | `theorem` | [midpoint_not_lower_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalLogControls.lean/declarations/midpoint-not-lower-endpoint.md) | 27 | `result-track:45102427efd60ccdcdfe96fe83ccf9474c7a5e000415341bbb6054d4a1be9769` |
+| 6 | `theorem` | [half_width_at_lower_is_unsound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalLogControls.lean/declarations/half-width-at-lower-is-unsound.md) | 34 | `result-track:81d2369587ba46e882bd57b1bfdd75255a7c137e6573c20c8c0edb130e162010` |
+| 7 | `theorem` | [exponent_scales_log_two_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalLogControls.lean/declarations/exponent-scales-log-two-error.md) | 40 | `result-track:4554717219707657c5d8d7875e16db5aba9b52a6066708499b7e45970895979c` |
+| 8 | `theorem` | [wrong_dyadic_source_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalLogControls.lean/declarations/wrong-dyadic-source-rejected.md) | 44 | `result-track:eb60d25b64b76897bba3b6fe87a3e63704e2014d4a7f407760e0fb5ae89c8999` |
+| 9 | `theorem` | [invalid_mantissa_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalLogControls.lean/declarations/invalid-mantissa-rejected.md) | 46 | `result-track:d762150bc17af0faa3151c7e0a4c43bf7c7e343491812289e5211494347dab5c` |
+| 10 | `theorem` | [unreduced_ratio_can_exceed_third](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalLogControls.lean/declarations/unreduced-ratio-can-exceed-third.md) | 48 | `result-track:dd8516aeae1d0c2523c00c0f1aae38b030fb1b2a3fecf73596767d908d4d6572` |
+| 11 | `theorem` | [log_accuracy_does_not_discharge_exp_degree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalLogControls.lean/declarations/log-accuracy-does-not-discharge-exp-degree.md) | 51 | `result-track:0c476156b773aea0b46d5310c23aba7dadc6a8f6569b42fa9883f0341bb1a46a` |
+| 12 | `theorem` | [coarse_log_displacement_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalLogControls.lean/declarations/coarse-log-displacement-rejected.md) | 54 | `result-track:46624ea105a43dd5ddff25617420002332c390b79d33b13c81e72cc0f2c71886` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

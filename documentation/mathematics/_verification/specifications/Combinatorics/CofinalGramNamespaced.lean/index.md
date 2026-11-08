@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CofinalGramNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/CofinalGramNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CofinalGramNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CofinalGramNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CofinalPrimeHorizon](../../../../Combinatorics/CofinalGramNamespaced.lean/declarations/cofinalprimehorizon.md) | 21 | `declaration-track:721eb53ee6eaa5c04ef8d38fdb32416e5db928f7648e1413f4f001d313bab528` |
-| 2 | `inductive` | [GramConvergenceMode](../../../../Combinatorics/CofinalGramNamespaced.lean/declarations/gramconvergencemode.md) | 35 | `declaration-track:8a18204df2362a1e1bd63e19b0f28ff3fa29048e38a21988545036bb9f7cc7cc` |
-| 3 | `structure` | [CofinalSoninGramStability](../../../../Combinatorics/CofinalGramNamespaced.lean/declarations/cofinalsoningramstability.md) | 41 | `declaration-track:416e717aa1e4d2f33c3bf965a53db11189cb07a013ae6dbdb6ec004c85406381` |
+| 1 | `structure` | [CofinalPrimeHorizon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CofinalGramNamespaced.lean/declarations/cofinalprimehorizon.md) | 21 | `declaration-track:721eb53ee6eaa5c04ef8d38fdb32416e5db928f7648e1413f4f001d313bab528` |
+| 2 | `inductive` | [GramConvergenceMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CofinalGramNamespaced.lean/declarations/gramconvergencemode.md) | 35 | `declaration-track:8a18204df2362a1e1bd63e19b0f28ff3fa29048e38a21988545036bb9f7cc7cc` |
+| 3 | `structure` | [CofinalSoninGramStability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CofinalGramNamespaced.lean/declarations/cofinalsoningramstability.md) | 41 | `declaration-track:416e717aa1e4d2f33c3bf965a53db11189cb07a013ae6dbdb6ec004c85406381` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

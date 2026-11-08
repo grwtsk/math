@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesNamespacedSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesNamespacedSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesNamespacedSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [of_convs_eq_convs'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesNamespacedSourceEdition1.lean/declarations/of-convs-eq-convs.md) | 55 | `result-track:186469c83a42dd0c70065d814bfdac7acfcf2c8d368c6f7393e2fd8f2619a22f` |
-| 2 | `theorem` | [convs_succ](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesNamespacedSourceEdition1.lean/declarations/convs-succ.md) | 61 | `result-track:d100f959307a888aedccd133f1a5959aa7545f535f2b0f1ff79815d3983bc023` |
-| 3 | `theorem` | [of_convergence_epsilon](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesNamespacedSourceEdition1.lean/declarations/of-convergence-epsilon.md) | 78 | `result-track:9f89c55dfaee3c8f162acf793cad88105a58008025b4c44d55942e817497f4ba` |
-| 4 | `theorem` | [of_convergence](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesNamespacedSourceEdition1.lean/declarations/of-convergence.md) | 123 | `result-track:a232866e8e8c3e88d83a51a115eca6d73707ccb73b3f71adc6af36c2e42793b1` |
+| 1 | `theorem` | [of_convs_eq_convs'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesNamespacedSourceEdition1.lean/declarations/of-convs-eq-convs.md) | 55 | `result-track:186469c83a42dd0c70065d814bfdac7acfcf2c8d368c6f7393e2fd8f2619a22f` |
+| 2 | `theorem` | [convs_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesNamespacedSourceEdition1.lean/declarations/convs-succ.md) | 61 | `result-track:d100f959307a888aedccd133f1a5959aa7545f535f2b0f1ff79815d3983bc023` |
+| 3 | `theorem` | [of_convergence_epsilon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesNamespacedSourceEdition1.lean/declarations/of-convergence-epsilon.md) | 78 | `result-track:9f89c55dfaee3c8f162acf793cad88105a58008025b4c44d55942e817497f4ba` |
+| 4 | `theorem` | [of_convergence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesNamespacedSourceEdition1.lean/declarations/of-convergence.md) | 123 | `result-track:a232866e8e8c3e88d83a51a115eca6d73707ccb73b3f71adc6af36c2e42793b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

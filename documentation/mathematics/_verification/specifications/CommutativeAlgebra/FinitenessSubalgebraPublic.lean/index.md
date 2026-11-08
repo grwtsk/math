@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FinitenessSubalgebraPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FinitenessSubalgebraPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebraPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebraPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fg_bot_toSubmodule](../../../../CommutativeAlgebra/FinitenessSubalgebraPublic.lean/declarations/fg-bot-tosubmodule.md) | 26 | `result-track:4012c66ebfe01f90df09f56984c993fb39343a046e0de26e302d018186768862` |
-| 2 | `instance` | [finite_bot](../../../../CommutativeAlgebra/FinitenessSubalgebraPublic.lean/declarations/finite-bot.md) | 29 | `declaration-track:5b98191cccc0b3b7891e43cb19b14d2fcc0e344053dd731f19cc4ae8e5ad35d8` |
-| 3 | `theorem` | [fg_unit](../../../../CommutativeAlgebra/FinitenessSubalgebraPublic.lean/declarations/fg-unit.md) | 36 | `result-track:2b9990e9e5c951405c5a3d3731a9991e9f6a8fea74b1b2154feb51bdff8420e4` |
-| 4 | `theorem` | [fg_of_isUnit](../../../../CommutativeAlgebra/FinitenessSubalgebraPublic.lean/declarations/fg-of-isunit.md) | 44 | `result-track:38a4c1fb1c3256b4713bc629d9cb26bb215e291a615576464f3422e1dd919e24` |
-| 5 | `theorem` | [FG.mul](../../../../CommutativeAlgebra/FinitenessSubalgebraPublic.lean/declarations/fg-mul.md) | 53 | `result-track:3d6a5f9ab159587b160e68487f1ba0a0f6b4789a0e87ec92ae29b54b4bfc84c9` |
-| 6 | `theorem` | [FG.pow](../../../../CommutativeAlgebra/FinitenessSubalgebraPublic.lean/declarations/fg-pow.md) | 56 | `result-track:25f0d5acdb587e0e0696b76e8b83f6eaf106b940e3dec1c5d0aff17739cfb6ed` |
+| 1 | `theorem` | [fg_bot_toSubmodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebraPublic.lean/declarations/fg-bot-tosubmodule.md) | 26 | `result-track:4012c66ebfe01f90df09f56984c993fb39343a046e0de26e302d018186768862` |
+| 2 | `instance` | [finite_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebraPublic.lean/declarations/finite-bot.md) | 29 | `declaration-track:5b98191cccc0b3b7891e43cb19b14d2fcc0e344053dd731f19cc4ae8e5ad35d8` |
+| 3 | `theorem` | [fg_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebraPublic.lean/declarations/fg-unit.md) | 36 | `result-track:2b9990e9e5c951405c5a3d3731a9991e9f6a8fea74b1b2154feb51bdff8420e4` |
+| 4 | `theorem` | [fg_of_isUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebraPublic.lean/declarations/fg-of-isunit.md) | 44 | `result-track:38a4c1fb1c3256b4713bc629d9cb26bb215e291a615576464f3422e1dd919e24` |
+| 5 | `theorem` | [FG.mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebraPublic.lean/declarations/fg-mul.md) | 53 | `result-track:3d6a5f9ab159587b160e68487f1ba0a0f6b4789a0e87ec92ae29b54b4bfc84c9` |
+| 6 | `theorem` | [FG.pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebraPublic.lean/declarations/fg-pow.md) | 56 | `result-track:25f0d5acdb587e0e0696b76e8b83f6eaf106b940e3dec1c5d0aff17739cfb6ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

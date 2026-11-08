@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [heatEulerStep](../../../../Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/heateulerstep.md) | 31 | `declaration-track:9c2f50300692847fc32492b99aff48b72a317cdfb53abe2e712085607bbfcca5` |
-| 2 | `def` | [graphHeatEulerStep](../../../../Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/graphheateulerstep.md) | 39 | `declaration-track:a9f5edf2e1cfb7f776da61f165807f2f3e75c939e68bb89b3cd4a29a0a2ba94c` |
-| 3 | `theorem` | [graphHeatEulerStep_const](../../../../Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/graphheateulerstep-const.md) | 49 | `result-track:6bfeb25301b723f6a5abba49adcf0eb66b3ed7e29666a3bf3f38daf799cd0b73` |
-| 4 | `structure` | [QuasiLaplacianCompatibility](../../../../Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/quasilaplaciancompatibility.md) | 66 | `declaration-track:98d0332fe38fab302a6a55f2dd2c0c4f5de04144c50614d124e4dccd3e3422b4` |
-| 5 | `def` | [laplacianCommutator](../../../../Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/laplaciancommutator.md) | 91 | `declaration-track:5aac94e72f82dfac86bc0ea07ad4a2b45f6ba10dafccd4b1e8612450e0ecb353` |
-| 6 | `theorem` | [laplacianCommutator_bound](../../../../Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/laplaciancommutator-bound.md) | 95 | `result-track:c972b89e8fbc8a830dd31e701269444c2475ec01d44a7438de5fe38c1f42f87e` |
-| 7 | `theorem` | [heatEulerStep_commutator_identity](../../../../Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/heateulerstep-commutator-identity.md) | 105 | `result-track:3aa0c23cca2a44a777398a0e3926b6a0cc1d27a80eb9737b9ffc1d1686bace00` |
-| 8 | `theorem` | [heatEulerStep_quasi_commutes](../../../../Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/heateulerstep-quasi-commutes.md) | 124 | `result-track:2c34c7e6239adfde7c7582c9a096fb7484266fdfd73a156fb63e10457f8bd574` |
-| 9 | `theorem` | [heatEulerStep_quasi_commutes_of_nonneg_step](../../../../Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/heateulerstep-quasi-commutes-of-nonneg-step.md) | 152 | `result-track:738b9ff86bd9cf628458478e61e5c907858d7d17a1ed4d44ac01b4c6f939766c` |
-| 10 | `theorem` | [laplacian_commutes_of_zero_error](../../../../Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/laplacian-commutes-of-zero-error.md) | 161 | `result-track:a9de86ad2ac8546ff35dc97571e52aca628a295a638f82d368e740f27a2c1603` |
-| 11 | `theorem` | [heatEulerStep_commutes_of_zero_error](../../../../Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/heateulerstep-commutes-of-zero-error.md) | 172 | `result-track:03f1fd735c00633eed9e2136799e02708b7930edff497c2de256f98d8e47c6be` |
+| 1 | `def` | [heatEulerStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/heateulerstep.md) | 31 | `declaration-track:9c2f50300692847fc32492b99aff48b72a317cdfb53abe2e712085607bbfcca5` |
+| 2 | `def` | [graphHeatEulerStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/graphheateulerstep.md) | 39 | `declaration-track:a9f5edf2e1cfb7f776da61f165807f2f3e75c939e68bb89b3cd4a29a0a2ba94c` |
+| 3 | `theorem` | [graphHeatEulerStep_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/graphheateulerstep-const.md) | 49 | `result-track:6bfeb25301b723f6a5abba49adcf0eb66b3ed7e29666a3bf3f38daf799cd0b73` |
+| 4 | `structure` | [QuasiLaplacianCompatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/quasilaplaciancompatibility.md) | 66 | `declaration-track:98d0332fe38fab302a6a55f2dd2c0c4f5de04144c50614d124e4dccd3e3422b4` |
+| 5 | `def` | [laplacianCommutator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/laplaciancommutator.md) | 91 | `declaration-track:5aac94e72f82dfac86bc0ea07ad4a2b45f6ba10dafccd4b1e8612450e0ecb353` |
+| 6 | `theorem` | [laplacianCommutator_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/laplaciancommutator-bound.md) | 95 | `result-track:c972b89e8fbc8a830dd31e701269444c2475ec01d44a7438de5fe38c1f42f87e` |
+| 7 | `theorem` | [heatEulerStep_commutator_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/heateulerstep-commutator-identity.md) | 105 | `result-track:3aa0c23cca2a44a777398a0e3926b6a0cc1d27a80eb9737b9ffc1d1686bace00` |
+| 8 | `theorem` | [heatEulerStep_quasi_commutes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/heateulerstep-quasi-commutes.md) | 124 | `result-track:2c34c7e6239adfde7c7582c9a096fb7484266fdfd73a156fb63e10457f8bd574` |
+| 9 | `theorem` | [heatEulerStep_quasi_commutes_of_nonneg_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/heateulerstep-quasi-commutes-of-nonneg-step.md) | 152 | `result-track:738b9ff86bd9cf628458478e61e5c907858d7d17a1ed4d44ac01b4c6f939766c` |
+| 10 | `theorem` | [laplacian_commutes_of_zero_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/laplacian-commutes-of-zero-error.md) | 161 | `result-track:a9de86ad2ac8546ff35dc97571e52aca628a295a638f82d368e740f27a2c1603` |
+| 11 | `theorem` | [heatEulerStep_commutes_of_zero_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryMatrixHeatFlowNamespaced.lean/declarations/heateulerstep-commutes-of-zero-error.md) | 172 | `result-track:03f1fd735c00633eed9e2136799e02708b7930edff497c2de256f98d8e47c6be` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

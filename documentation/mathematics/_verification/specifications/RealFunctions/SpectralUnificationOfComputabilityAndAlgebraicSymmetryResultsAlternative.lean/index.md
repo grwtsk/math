@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative.lean/index.md) · [Full source](../../../../RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rowWeight](../../../../RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative.lean/declarations/rowweight.md) | 18 | `declaration-track:5cfecd7e70b307a589822d5fb519b6406dd503f935764149aa13efb8613fb6a5` |
-| 2 | `def` | [correlationSlope](../../../../RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative.lean/declarations/correlationslope.md) | 21 | `declaration-track:d76ab72885dc71cda1636733224b1b64bc365bd1679c1441274f1ba8310251db` |
-| 3 | `theorem` | [rowWeight_eq_exponential](../../../../RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative.lean/declarations/rowweight-eq-exponential.md) | 26 | `result-track:a70c64522c5b6613f8d93f3414ddf78e43fa259c976e982d59e9eeb5a5bdeef4` |
-| 4 | `theorem` | [rowWeight_hasDerivAt](../../../../RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative.lean/declarations/rowweight-hasderivat.md) | 36 | `result-track:91b196439ee66f599b4d02b7c172233e0740d08309e4c81bbd66b7b8a72f53b1` |
-| 5 | `theorem` | [rowWeight_deriv](../../../../RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative.lean/declarations/rowweight-deriv.md) | 69 | `result-track:fff07c0d75075ba2240e0f00e0f5bb7436aa45e7d6ee76c950cc392914f96b37` |
-| 6 | `theorem` | [rowWeight_contDiffOn](../../../../RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative.lean/declarations/rowweight-contdiffon.md) | 74 | `result-track:bb7b7d4e91cb803726f747ac235dae3251f46cec6ecd20f9d796b6ff4934e56e` |
-| 7 | `theorem` | [rowWeight_deriv_integrable](../../../../RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative.lean/declarations/rowweight-deriv-integrable.md) | 87 | `result-track:b8895c6c8f283482fd64d6d4ea1b86123db349ffd1534509d461b578f9fc80e8` |
+| 1 | `def` | [rowWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative.lean/declarations/rowweight.md) | 18 | `declaration-track:5cfecd7e70b307a589822d5fb519b6406dd503f935764149aa13efb8613fb6a5` |
+| 2 | `def` | [correlationSlope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative.lean/declarations/correlationslope.md) | 21 | `declaration-track:d76ab72885dc71cda1636733224b1b64bc365bd1679c1441274f1ba8310251db` |
+| 3 | `theorem` | [rowWeight_eq_exponential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative.lean/declarations/rowweight-eq-exponential.md) | 26 | `result-track:a70c64522c5b6613f8d93f3414ddf78e43fa259c976e982d59e9eeb5a5bdeef4` |
+| 4 | `theorem` | [rowWeight_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative.lean/declarations/rowweight-hasderivat.md) | 36 | `result-track:91b196439ee66f599b4d02b7c172233e0740d08309e4c81bbd66b7b8a72f53b1` |
+| 5 | `theorem` | [rowWeight_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative.lean/declarations/rowweight-deriv.md) | 69 | `result-track:fff07c0d75075ba2240e0f00e0f5bb7436aa45e7d6ee76c950cc392914f96b37` |
+| 6 | `theorem` | [rowWeight_contDiffOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative.lean/declarations/rowweight-contdiffon.md) | 74 | `result-track:bb7b7d4e91cb803726f747ac235dae3251f46cec6ecd20f9d796b6ff4934e56e` |
+| 7 | `theorem` | [rowWeight_deriv_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative.lean/declarations/rowweight-deriv-integrable.md) | 87 | `result-track:b8895c6c8f283482fd64d6d4ea1b86123db349ffd1534509d461b578f9fc80e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

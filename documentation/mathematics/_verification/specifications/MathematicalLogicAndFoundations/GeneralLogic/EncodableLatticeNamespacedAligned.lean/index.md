@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EncodableLatticeNamespacedAligned.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EncodableLatticeNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EncodableLatticeNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EncodableLatticeNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [iSup_decode₂](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EncodableLatticeNamespacedAligned.lean/declarations/isup-decode.md) | 37 | `result-track:8ffb0eafab173eef718e792eb68bf8df4f26de126ba51a54c9112e326e4653d9` |
-| 2 | `theorem` | [iUnion_decode₂](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EncodableLatticeNamespacedAligned.lean/declarations/iunion-decode.md) | 43 | `result-track:08d99be2ca8a0b0cc7a5dd30e78834efc1dbdc8c73f21e315aaa7dcf192f34e9` |
-| 3 | `theorem` | [iUnion_decode₂_cases](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EncodableLatticeNamespacedAligned.lean/declarations/iunion-decode-cases.md) | 49 | `result-track:006282b77c18465bc1ecd233a6b9bcb5dff8d1f28a709c520ba8443fee0ec833` |
-| 4 | `theorem` | [iUnion_decode₂_disjoint_on](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EncodableLatticeNamespacedAligned.lean/declarations/iunion-decode-disjoint-on.md) | 60 | `result-track:26051533c068b4cda08568e75d845f66e8511a1fa3f99b88e1d4dbd43fb410b3` |
+| 1 | `theorem` | [iSup_decode₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EncodableLatticeNamespacedAligned.lean/declarations/isup-decode.md) | 37 | `result-track:8ffb0eafab173eef718e792eb68bf8df4f26de126ba51a54c9112e326e4653d9` |
+| 2 | `theorem` | [iUnion_decode₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EncodableLatticeNamespacedAligned.lean/declarations/iunion-decode.md) | 43 | `result-track:08d99be2ca8a0b0cc7a5dd30e78834efc1dbdc8c73f21e315aaa7dcf192f34e9` |
+| 3 | `theorem` | [iUnion_decode₂_cases](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EncodableLatticeNamespacedAligned.lean/declarations/iunion-decode-cases.md) | 49 | `result-track:006282b77c18465bc1ecd233a6b9bcb5dff8d1f28a709c520ba8443fee0ec833` |
+| 4 | `theorem` | [iUnion_decode₂_disjoint_on](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EncodableLatticeNamespacedAligned.lean/declarations/iunion-decode-disjoint-on.md) | 60 | `result-track:26051533c068b4cda08568e75d845f66e8511a1fa3f99b88e1d4dbd43fb410b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/GammaSideChi.lean/index.md) · [Full source](../../../../MeasureAndIntegration/GammaSideChi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideChi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideChi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [archChi](../../../../MeasureAndIntegration/GammaSideChi.lean/declarations/archchi.md) | 31 | `declaration-track:52b449aafb51c59fa291a06d165c5073b41844a13c06f340de33e8ea5bf424aa` |
-| 2 | `lemma` | [q_cpow_ne_zero](../../../../MeasureAndIntegration/GammaSideChi.lean/declarations/q-cpow-ne-zero.md) | 33 | `result-track:1e0d0a9766a3a2a968149d9c13d3e97d52e680f89bd23b2e45db312bd687f1c1` |
-| 3 | `lemma` | [archChi_differentiableOn](../../../../MeasureAndIntegration/GammaSideChi.lean/declarations/archchi-differentiableon.md) | 37 | `result-track:a3a24b9a948d4b8a85aa52d0012f74e01172825333f2d1716d5f20629110c1d9` |
-| 4 | `lemma` | [archChi_ne_zero](../../../../MeasureAndIntegration/GammaSideChi.lean/declarations/archchi-ne-zero.md) | 59 | `result-track:0d6291afbee9c3e67689763e7112c3592c9a4d01335337b1c14b59dbd4e9ae32` |
-| 5 | `lemma` | [logDeriv_archChi_differentiableOn](../../../../MeasureAndIntegration/GammaSideChi.lean/declarations/logderiv-archchi-differentiableon.md) | 67 | `result-track:7dbf3a6991be4180444295730c85b0c3daaa15e8f8b2d3b19eadeb269858b8ce` |
-| 6 | `theorem` | [logDeriv_archChi](../../../../MeasureAndIntegration/GammaSideChi.lean/declarations/logderiv-archchi.md) | 77 | `result-track:8878fd6de389acbb7d914c9d074f030d7727aa0ba8ec555cf095fbaa659c8151` |
-| 7 | `theorem` | [re_logDeriv_archChi_half](../../../../MeasureAndIntegration/GammaSideChi.lean/declarations/re-logderiv-archchi-half.md) | 130 | `result-track:b728738de1aeb1182f82d1e40583a244abd447f76002a4346405c0e24327c089` |
-| 8 | `theorem` | [gammaSideChi](../../../../MeasureAndIntegration/GammaSideChi.lean/declarations/gammasidechi.md) | 147 | `result-track:b802545d7a8cfb627db8119de8304b674471b5e1c07628fa2eb9c3a4a1cb84e1` |
+| 1 | `def` | [archChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideChi.lean/declarations/archchi.md) | 31 | `declaration-track:52b449aafb51c59fa291a06d165c5073b41844a13c06f340de33e8ea5bf424aa` |
+| 2 | `lemma` | [q_cpow_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideChi.lean/declarations/q-cpow-ne-zero.md) | 33 | `result-track:1e0d0a9766a3a2a968149d9c13d3e97d52e680f89bd23b2e45db312bd687f1c1` |
+| 3 | `lemma` | [archChi_differentiableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideChi.lean/declarations/archchi-differentiableon.md) | 37 | `result-track:a3a24b9a948d4b8a85aa52d0012f74e01172825333f2d1716d5f20629110c1d9` |
+| 4 | `lemma` | [archChi_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideChi.lean/declarations/archchi-ne-zero.md) | 59 | `result-track:0d6291afbee9c3e67689763e7112c3592c9a4d01335337b1c14b59dbd4e9ae32` |
+| 5 | `lemma` | [logDeriv_archChi_differentiableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideChi.lean/declarations/logderiv-archchi-differentiableon.md) | 67 | `result-track:7dbf3a6991be4180444295730c85b0c3daaa15e8f8b2d3b19eadeb269858b8ce` |
+| 6 | `theorem` | [logDeriv_archChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideChi.lean/declarations/logderiv-archchi.md) | 77 | `result-track:8878fd6de389acbb7d914c9d074f030d7727aa0ba8ec555cf095fbaa659c8151` |
+| 7 | `theorem` | [re_logDeriv_archChi_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideChi.lean/declarations/re-logderiv-archchi-half.md) | 130 | `result-track:b728738de1aeb1182f82d1e40583a244abd447f76002a4346405c0e24327c089` |
+| 8 | `theorem` | [gammaSideChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideChi.lean/declarations/gammasidechi.md) | 147 | `result-track:b802545d7a8cfb627db8119de8304b674471b5e1c07628fa2eb9c3a4a1cb84e1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SplitPublicDrop.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SplitPublicDrop.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SplitPublicDrop.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SplitPublicDrop.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [drop](../../../../../ComputerScience/AlgorithmsInComputerScience/SplitPublicDrop.lean/declarations/drop.md) | 31 | `declaration-track:95f1b7568521ec7d5fa17222513d29787f444d44a70bbea8b78a548b1ff5291b` |
-| 2 | `def` | [take](../../../../../ComputerScience/AlgorithmsInComputerScience/SplitPublicDrop.lean/declarations/take.md) | 43 | `declaration-track:7ccbcb18c7d472d0f19ae529f5d1875892f5c4bae875eda11a3f8a7390b6fc79` |
-| 3 | `def` | [split](../../../../../ComputerScience/AlgorithmsInComputerScience/SplitPublicDrop.lean/declarations/split.md) | 59 | `declaration-track:89c2819dd514af5ad677e7f575c3a25cbbbab2595ce0c8af777abfe91b5aee30` |
+| 1 | `def` | [drop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SplitPublicDrop.lean/declarations/drop.md) | 31 | `declaration-track:95f1b7568521ec7d5fa17222513d29787f444d44a70bbea8b78a548b1ff5291b` |
+| 2 | `def` | [take](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SplitPublicDrop.lean/declarations/take.md) | 43 | `declaration-track:7ccbcb18c7d472d0f19ae529f5d1875892f5c4bae875eda11a3f8a7390b6fc79` |
+| 3 | `def` | [split](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SplitPublicDrop.lean/declarations/split.md) | 59 | `declaration-track:89c2819dd514af5ad677e7f575c3a25cbbbab2595ce0c8af777abfe91b5aee30` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

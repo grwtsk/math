@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Report.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Report.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Report.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Report.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ModuleRegenerationReport](../../../../../ComputerScience/AlgorithmsInComputerScience/Report.lean/declarations/moduleregenerationreport.md) | 6 | `declaration-track:f7564f8452beac2f4c2e0a4691bcf21affcd6c7811759b93b0c882ecc3c26a52` |
-| 2 | `structure` | [IncrementalGenerationResult](../../../../../ComputerScience/AlgorithmsInComputerScience/Report.lean/declarations/incrementalgenerationresult.md) | 26 | `declaration-track:8bfbdd442d23085c7b923d36dc7ff7acff90a72f17bf88c6027ff02481c25599` |
-| 3 | `theorem` | [incrementalResult_success_has_no_preservationFailures](../../../../../ComputerScience/AlgorithmsInComputerScience/Report.lean/declarations/incrementalresult-success-has-no-preservationfailures.md) | 43 | `result-track:f304d7088d821df6132726425c7dc9813319138e2ec93643f661ee832d3f6acc` |
-| 4 | `theorem` | [incrementalResult_success_has_empty_failure_list](../../../../../ComputerScience/AlgorithmsInComputerScience/Report.lean/declarations/incrementalresult-success-has-empty-failure-list.md) | 48 | `result-track:c284830a34b0ab62468bf24144af8f02f16e08542b47c14eec0b853a075c31ec` |
-| 5 | `theorem` | [incrementalResult_every_regenerated_module_has_reason](../../../../../ComputerScience/AlgorithmsInComputerScience/Report.lean/declarations/incrementalresult-every-regenerated-module-has-reason.md) | 53 | `result-track:4a212498f50b35d7bdc66e7d8950763ca7a4a85663cc3e65f1449a55ac419fa9` |
-| 6 | `theorem` | [incrementalResult_reports_every_regenerated_module](../../../../../ComputerScience/AlgorithmsInComputerScience/Report.lean/declarations/incrementalresult-reports-every-regenerated-module.md) | 62 | `result-track:88d75656603510470895e50ec73b8fe4fdcfac84fb5660a1d66637f82a4f92d4` |
-| 7 | `theorem` | [incrementalResult_emits_only_planned_artifacts](../../../../../ComputerScience/AlgorithmsInComputerScience/Report.lean/declarations/incrementalresult-emits-only-planned-artifacts.md) | 71 | `result-track:61c84dc026ac607364d344067c4c0f052a9fa931702d9d8367b193fec32992d4` |
+| 1 | `structure` | [ModuleRegenerationReport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Report.lean/declarations/moduleregenerationreport.md) | 6 | `declaration-track:f7564f8452beac2f4c2e0a4691bcf21affcd6c7811759b93b0c882ecc3c26a52` |
+| 2 | `structure` | [IncrementalGenerationResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Report.lean/declarations/incrementalgenerationresult.md) | 26 | `declaration-track:8bfbdd442d23085c7b923d36dc7ff7acff90a72f17bf88c6027ff02481c25599` |
+| 3 | `theorem` | [incrementalResult_success_has_no_preservationFailures](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Report.lean/declarations/incrementalresult-success-has-no-preservationfailures.md) | 43 | `result-track:f304d7088d821df6132726425c7dc9813319138e2ec93643f661ee832d3f6acc` |
+| 4 | `theorem` | [incrementalResult_success_has_empty_failure_list](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Report.lean/declarations/incrementalresult-success-has-empty-failure-list.md) | 48 | `result-track:c284830a34b0ab62468bf24144af8f02f16e08542b47c14eec0b853a075c31ec` |
+| 5 | `theorem` | [incrementalResult_every_regenerated_module_has_reason](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Report.lean/declarations/incrementalresult-every-regenerated-module-has-reason.md) | 53 | `result-track:4a212498f50b35d7bdc66e7d8950763ca7a4a85663cc3e65f1449a55ac419fa9` |
+| 6 | `theorem` | [incrementalResult_reports_every_regenerated_module](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Report.lean/declarations/incrementalresult-reports-every-regenerated-module.md) | 62 | `result-track:88d75656603510470895e50ec73b8fe4fdcfac84fb5660a1d66637f82a4f92d4` |
+| 7 | `theorem` | [incrementalResult_emits_only_planned_artifacts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Report.lean/declarations/incrementalresult-emits-only-planned-artifacts.md) | 71 | `result-track:61c84dc026ac607364d344067c4c0f052a9fa931702d9d8367b193fec32992d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

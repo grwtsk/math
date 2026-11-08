@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/NoEigenDraft.lean/index.md) · [Full source](../../../../MeasureAndIntegration/NoEigenDraft.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NoEigenDraft.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NoEigenDraft.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [shiftedDensityMeasure](../../../../MeasureAndIntegration/NoEigenDraft.lean/declarations/shifteddensitymeasure.md) | 16 | `declaration-track:0526c7d4753a4a02d1fa5174e368789bb02779b8891cb082fd080bfde7edb625` |
-| 2 | `theorem` | [shiftedDensityMeasure_nullSingleton](../../../../MeasureAndIntegration/NoEigenDraft.lean/declarations/shifteddensitymeasure-nullsingleton.md) | 20 | `result-track:e4bd4b5bcb753e38e8f9fa52028dcf9a278c50fc594cf9d497721ad385d62415` |
-| 3 | `theorem` | [coordinate_eigenvector_eq_zero](../../../../MeasureAndIntegration/NoEigenDraft.lean/declarations/coordinate-eigenvector-eq-zero.md) | 35 | `result-track:f85448cafeddbc0c6c3d110514792bbf242fd28d17477b2d653625e7b28441bb` |
-| 4 | `theorem` | [shiftedDensity_coordinate_eigenvector_eq_zero](../../../../MeasureAndIntegration/NoEigenDraft.lean/declarations/shifteddensity-coordinate-eigenvector-eq-zero.md) | 57 | `result-track:63d4cd2832793b844f2da56a0a8be7562c556131d14b653565dadaafa5535a68` |
+| 1 | `def` | [shiftedDensityMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NoEigenDraft.lean/declarations/shifteddensitymeasure.md) | 16 | `declaration-track:0526c7d4753a4a02d1fa5174e368789bb02779b8891cb082fd080bfde7edb625` |
+| 2 | `theorem` | [shiftedDensityMeasure_nullSingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NoEigenDraft.lean/declarations/shifteddensitymeasure-nullsingleton.md) | 20 | `result-track:e4bd4b5bcb753e38e8f9fa52028dcf9a278c50fc594cf9d497721ad385d62415` |
+| 3 | `theorem` | [coordinate_eigenvector_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NoEigenDraft.lean/declarations/coordinate-eigenvector-eq-zero.md) | 35 | `result-track:f85448cafeddbc0c6c3d110514792bbf242fd28d17477b2d653625e7b28441bb` |
+| 4 | `theorem` | [shiftedDensity_coordinate_eigenvector_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NoEigenDraft.lean/declarations/shifteddensity-coordinate-eigenvector-eq-zero.md) | 57 | `result-track:63d4cd2832793b844f2da56a0a8be7562c556131d14b653565dadaafa5535a68` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

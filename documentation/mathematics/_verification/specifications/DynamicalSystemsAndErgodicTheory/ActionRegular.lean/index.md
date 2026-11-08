@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/ActionRegular.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/ActionRegular.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionRegular.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionRegular.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../DynamicalSystemsAndErgodicTheory/ActionRegular.lean/declarations/instance.md) | 22 | `declaration-track:2d451b3e25504d172bd2f2ac6d198f58e2527888ff879fd62b18269f75cc066d` |
-| 2 | `instance` | [(anonymous)](../../../../DynamicalSystemsAndErgodicTheory/ActionRegular.lean/declarations/instance-source-edition-2.md) | 37 | `declaration-track:ead67fa34bf7a32684e7a5ba2712326eeed1c464b963647276f26e4640a2a7a1` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionRegular.lean/declarations/instance.md) | 22 | `declaration-track:2d451b3e25504d172bd2f2ac6d198f58e2527888ff879fd62b18269f75cc066d` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionRegular.lean/declarations/instance-source-edition-2.md) | 37 | `declaration-track:ead67fa34bf7a32684e7a5ba2712326eeed1c464b963647276f26e4640a2a7a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

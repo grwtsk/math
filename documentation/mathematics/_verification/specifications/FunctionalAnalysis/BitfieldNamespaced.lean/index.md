@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/BitfieldNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/BitfieldNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BitfieldNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BitfieldNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [SpectralId](../../../../FunctionalAnalysis/BitfieldNamespaced.lean/declarations/spectralid.md) | 22 | `declaration-track:633f57e92cac33ab389366a8bad52701e08cbb2cabc1ccec66319de95ae44f89` |
-| 2 | `abbrev` | [Bitfield](../../../../FunctionalAnalysis/BitfieldNamespaced.lean/declarations/bitfield.md) | 23 | `declaration-track:537ca8c6bdbf01f75c3e5b81d169a449012282c68d5d53bea2fee783ecce768e` |
-| 3 | `inductive` | [ProofDisposition](../../../../FunctionalAnalysis/BitfieldNamespaced.lean/declarations/proofdisposition.md) | 25 | `declaration-track:2eb8c1a0c33448a455ad1511996b660a67aa2d7a891e85b7c4c3fb56ff5ef062` |
-| 4 | `inductive` | [CoordinateAuthority](../../../../FunctionalAnalysis/BitfieldNamespaced.lean/declarations/coordinateauthority.md) | 31 | `declaration-track:08d888f9a33968e50cb64837f7866681cc92369829d2e3b61522be35a5b45d19` |
-| 5 | `inductive` | [WeightKind](../../../../FunctionalAnalysis/BitfieldNamespaced.lean/declarations/weightkind.md) | 37 | `declaration-track:24835da775b1c0e5e3e59dabaf37706cae24724462a71e13af005476a30fbfaf` |
-| 6 | `structure` | [BitCoordinate](../../../../FunctionalAnalysis/BitfieldNamespaced.lean/declarations/bitcoordinate.md) | 46 | `declaration-track:0ad5ca80687006e29138ce55165387312f6ddbde965b58fde9d1639e19983d13` |
-| 7 | `structure` | [CoordinateRegistry](../../../../FunctionalAnalysis/BitfieldNamespaced.lean/declarations/coordinateregistry.md) | 61 | `declaration-track:dd8cdcca562648dd1df0c4574c6a39890c945598971bc810c14ed48f453445f4` |
-| 8 | `def` | [AdmissibilityMask](../../../../FunctionalAnalysis/BitfieldNamespaced.lean/declarations/admissibilitymask.md) | 65 | `declaration-track:a57c1662fee2f9bb815afa3ed93da081c811aff5ddcbf1b6f2981b3957c829c9` |
-| 9 | `def` | [flipAt](../../../../FunctionalAnalysis/BitfieldNamespaced.lean/declarations/flipat.md) | 68 | `declaration-track:257f2ba5648119bad386b4c100752276e7161f52f3d2f4f888eba7ea69f97aaa` |
-| 10 | `theorem` | [flipAt_selected](../../../../FunctionalAnalysis/BitfieldNamespaced.lean/declarations/flipat-selected.md) | 76 | `result-track:be1685704d2e31b5435be2bfbb102d8ddef7d4dc264d21f00a2bba4f1f3ce0aa` |
-| 11 | `theorem` | [flipAt_other](../../../../FunctionalAnalysis/BitfieldNamespaced.lean/declarations/flipat-other.md) | 83 | `result-track:b3569071acea7bfaa10934c17dbd9287cac215057d1a8c83ec92057dfa52f45e` |
-| 12 | `theorem` | [flipAt_involutive](../../../../FunctionalAnalysis/BitfieldNamespaced.lean/declarations/flipat-involutive.md) | 91 | `result-track:0ee407340f7185e2924a2ef5f5f35ce878ea3bf6dad24bf14a095addbf37f87d` |
-| 13 | `theorem` | [every_coordinate_has_registered_semantics](../../../../FunctionalAnalysis/BitfieldNamespaced.lean/declarations/every-coordinate-has-registered-semantics.md) | 102 | `result-track:313aceb433ce45f6bfa51b37ed6b770ccb0e9d16f8790cc5caea0a6674a0b85e` |
+| 1 | `abbrev` | [SpectralId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BitfieldNamespaced.lean/declarations/spectralid.md) | 22 | `declaration-track:633f57e92cac33ab389366a8bad52701e08cbb2cabc1ccec66319de95ae44f89` |
+| 2 | `abbrev` | [Bitfield](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BitfieldNamespaced.lean/declarations/bitfield.md) | 23 | `declaration-track:537ca8c6bdbf01f75c3e5b81d169a449012282c68d5d53bea2fee783ecce768e` |
+| 3 | `inductive` | [ProofDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BitfieldNamespaced.lean/declarations/proofdisposition.md) | 25 | `declaration-track:2eb8c1a0c33448a455ad1511996b660a67aa2d7a891e85b7c4c3fb56ff5ef062` |
+| 4 | `inductive` | [CoordinateAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BitfieldNamespaced.lean/declarations/coordinateauthority.md) | 31 | `declaration-track:08d888f9a33968e50cb64837f7866681cc92369829d2e3b61522be35a5b45d19` |
+| 5 | `inductive` | [WeightKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BitfieldNamespaced.lean/declarations/weightkind.md) | 37 | `declaration-track:24835da775b1c0e5e3e59dabaf37706cae24724462a71e13af005476a30fbfaf` |
+| 6 | `structure` | [BitCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BitfieldNamespaced.lean/declarations/bitcoordinate.md) | 46 | `declaration-track:0ad5ca80687006e29138ce55165387312f6ddbde965b58fde9d1639e19983d13` |
+| 7 | `structure` | [CoordinateRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BitfieldNamespaced.lean/declarations/coordinateregistry.md) | 61 | `declaration-track:dd8cdcca562648dd1df0c4574c6a39890c945598971bc810c14ed48f453445f4` |
+| 8 | `def` | [AdmissibilityMask](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BitfieldNamespaced.lean/declarations/admissibilitymask.md) | 65 | `declaration-track:a57c1662fee2f9bb815afa3ed93da081c811aff5ddcbf1b6f2981b3957c829c9` |
+| 9 | `def` | [flipAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BitfieldNamespaced.lean/declarations/flipat.md) | 68 | `declaration-track:257f2ba5648119bad386b4c100752276e7161f52f3d2f4f888eba7ea69f97aaa` |
+| 10 | `theorem` | [flipAt_selected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BitfieldNamespaced.lean/declarations/flipat-selected.md) | 76 | `result-track:be1685704d2e31b5435be2bfbb102d8ddef7d4dc264d21f00a2bba4f1f3ce0aa` |
+| 11 | `theorem` | [flipAt_other](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BitfieldNamespaced.lean/declarations/flipat-other.md) | 83 | `result-track:b3569071acea7bfaa10934c17dbd9287cac215057d1a8c83ec92057dfa52f45e` |
+| 12 | `theorem` | [flipAt_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BitfieldNamespaced.lean/declarations/flipat-involutive.md) | 91 | `result-track:0ee407340f7185e2924a2ef5f5f35ce878ea3bf6dad24bf14a095addbf37f87d` |
+| 13 | `theorem` | [every_coordinate_has_registered_semantics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BitfieldNamespaced.lean/declarations/every-coordinate-has-registered-semantics.md) | 102 | `result-track:313aceb433ce45f6bfa51b37ed6b770ccb0e9d16f8790cc5caea0a6674a0b85e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

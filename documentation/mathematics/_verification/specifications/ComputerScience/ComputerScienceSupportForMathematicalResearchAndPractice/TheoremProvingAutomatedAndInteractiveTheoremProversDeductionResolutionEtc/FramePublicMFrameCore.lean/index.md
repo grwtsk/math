@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FramePublicMFrameCore.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FramePublicMFrameCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FramePublicMFrameCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FramePublicMFrameCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [transferHypNames](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FramePublicMFrameCore.lean/declarations/transferhypnames.md) | 22 | `declaration-track:64fbd350cb88f6feb36a2c551c7a3430fbcd07f9e4749129e3947a169990c85d` |
-| 2 | `def` | [mFrameCore](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FramePublicMFrameCore.lean/declarations/mframecore.md) | 53 | `declaration-track:b8e4a062ed72c148972c7154421f0f8c9862310345ca6dd5d490ed9358eeda9b` |
-| 3 | `def` | [mTryFrame](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FramePublicMFrameCore.lean/declarations/mtryframe.md) | 71 | `declaration-track:353585725e3949cb848227eff8591e7177fad29251c78854fbc3b431cae9dae2` |
-| 4 | `def` | [elabMFrame](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FramePublicMFrameCore.lean/declarations/elabmframe.md) | 76 | `declaration-track:e7bf6549afd124433e39d8a15c67309fbc1c685d7f1bd9ba5e7242d65d07f8d2` |
+| 1 | `def` | [transferHypNames](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FramePublicMFrameCore.lean/declarations/transferhypnames.md) | 22 | `declaration-track:64fbd350cb88f6feb36a2c551c7a3430fbcd07f9e4749129e3947a169990c85d` |
+| 2 | `def` | [mFrameCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FramePublicMFrameCore.lean/declarations/mframecore.md) | 53 | `declaration-track:b8e4a062ed72c148972c7154421f0f8c9862310345ca6dd5d490ed9358eeda9b` |
+| 3 | `def` | [mTryFrame](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FramePublicMFrameCore.lean/declarations/mtryframe.md) | 71 | `declaration-track:353585725e3949cb848227eff8591e7177fad29251c78854fbc3b431cae9dae2` |
+| 4 | `def` | [elabMFrame](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FramePublicMFrameCore.lean/declarations/elabmframe.md) | 76 | `declaration-track:e7bf6549afd124433e39d8a15c67309fbc1c685d7f1bd9ba5e7242d65d07f8d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

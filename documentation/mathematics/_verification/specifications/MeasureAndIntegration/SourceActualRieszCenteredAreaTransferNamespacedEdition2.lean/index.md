@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualRieszCenteredAreaTransferNamespacedEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualRieszCenteredAreaTransferNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszCenteredAreaTransferNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszCenteredAreaTransferNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [centered_profiles_sub](../../../../MeasureAndIntegration/SourceActualRieszCenteredAreaTransferNamespacedEdition2.lean/declarations/centered-profiles-sub.md) | 26 | `result-track:03a1ab30376c6d19649ddf798bf836c17828f6f950e629ccfee49ab1454da335` |
-| 2 | `theorem` | [actualRiesz_centered_absolute_area_difference_bound](../../../../MeasureAndIntegration/SourceActualRieszCenteredAreaTransferNamespacedEdition2.lean/declarations/actualriesz-centered-absolute-area-difference-bound.md) | 34 | `result-track:980f4edef273ce4e8106efdcbb80b054d6b88d941ea114abc5858c142a7a6c1b` |
-| 3 | `theorem` | [actualRiesz_centered_absolute_area_difference_le_112](../../../../MeasureAndIntegration/SourceActualRieszCenteredAreaTransferNamespacedEdition2.lean/declarations/actualriesz-centered-absolute-area-difference-le-112.md) | 80 | `result-track:7464afccbe632f7d8bd74ce817931428ed9f42b1416329d09bbe2220ffee64c6` |
-| 4 | `theorem` | [actualRiesz_centered_absolute_area_paid_bounds](../../../../MeasureAndIntegration/SourceActualRieszCenteredAreaTransferNamespacedEdition2.lean/declarations/actualriesz-centered-absolute-area-paid-bounds.md) | 90 | `result-track:01021d309232079a14fbbe594cc57d7de600d6409737e2af5e42fb716dddebaa` |
-| 5 | `theorem` | [actualRiesz_centered_quadratic_area_budget_transfer](../../../../MeasureAndIntegration/SourceActualRieszCenteredAreaTransferNamespacedEdition2.lean/declarations/actualriesz-centered-quadratic-area-budget-transfer.md) | 100 | `result-track:ac5071d349a7b66aea1e4ad4a087cb03a7269e4569f90747f04dddc7b90ee997` |
+| 1 | `theorem` | [centered_profiles_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszCenteredAreaTransferNamespacedEdition2.lean/declarations/centered-profiles-sub.md) | 26 | `result-track:03a1ab30376c6d19649ddf798bf836c17828f6f950e629ccfee49ab1454da335` |
+| 2 | `theorem` | [actualRiesz_centered_absolute_area_difference_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszCenteredAreaTransferNamespacedEdition2.lean/declarations/actualriesz-centered-absolute-area-difference-bound.md) | 34 | `result-track:980f4edef273ce4e8106efdcbb80b054d6b88d941ea114abc5858c142a7a6c1b` |
+| 3 | `theorem` | [actualRiesz_centered_absolute_area_difference_le_112](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszCenteredAreaTransferNamespacedEdition2.lean/declarations/actualriesz-centered-absolute-area-difference-le-112.md) | 80 | `result-track:7464afccbe632f7d8bd74ce817931428ed9f42b1416329d09bbe2220ffee64c6` |
+| 4 | `theorem` | [actualRiesz_centered_absolute_area_paid_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszCenteredAreaTransferNamespacedEdition2.lean/declarations/actualriesz-centered-absolute-area-paid-bounds.md) | 90 | `result-track:01021d309232079a14fbbe594cc57d7de600d6409737e2af5e42fb716dddebaa` |
+| 5 | `theorem` | [actualRiesz_centered_quadratic_area_budget_transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszCenteredAreaTransferNamespacedEdition2.lean/declarations/actualriesz-centered-quadratic-area-budget-transfer.md) | 100 | `result-track:ac5071d349a7b66aea1e4ad4a087cb03a7269e4569f90747f04dddc7b90ee997` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

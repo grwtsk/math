@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFieldNamespacedAligned.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFieldNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFieldNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFieldNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [FiniteField.Matrix.charpoly_pow_card](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFieldNamespacedAligned.lean/declarations/finitefield-matrix-charpoly-pow-card.md) | 34 | `result-track:53f2643d0fd96aa8735b666e405642c564b36cf2fa31ce0317ae85453c61cfbb` |
-| 2 | `theorem` | [ZMod.charpoly_pow_card](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFieldNamespacedAligned.lean/declarations/zmod-charpoly-pow-card.md) | 55 | `result-track:f9d9225aaa4addafa33b9f93c61a4e564a1ac1fd997a76a601ba261d9716bd62` |
-| 3 | `theorem` | [FiniteField.trace_pow_card](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFieldNamespacedAligned.lean/declarations/finitefield-trace-pow-card.md) | 61 | `result-track:9aa83d24f2d1402ebdba65576c831c0fe4f4be5d1c18cc5f74995d4a7e88610d` |
-| 4 | `theorem` | [ZMod.trace_pow_card](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFieldNamespacedAligned.lean/declarations/zmod-trace-pow-card.md) | 69 | `result-track:313162a771f1b76cf8db4c792d2d9cf855ef80febb3530c4abbdf114b36fc594` |
+| 1 | `theorem` | [FiniteField.Matrix.charpoly_pow_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFieldNamespacedAligned.lean/declarations/finitefield-matrix-charpoly-pow-card.md) | 34 | `result-track:53f2643d0fd96aa8735b666e405642c564b36cf2fa31ce0317ae85453c61cfbb` |
+| 2 | `theorem` | [ZMod.charpoly_pow_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFieldNamespacedAligned.lean/declarations/zmod-charpoly-pow-card.md) | 55 | `result-track:f9d9225aaa4addafa33b9f93c61a4e564a1ac1fd997a76a601ba261d9716bd62` |
+| 3 | `theorem` | [FiniteField.trace_pow_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFieldNamespacedAligned.lean/declarations/finitefield-trace-pow-card.md) | 61 | `result-track:9aa83d24f2d1402ebdba65576c831c0fe4f4be5d1c18cc5f74995d4a7e88610d` |
+| 4 | `theorem` | [ZMod.trace_pow_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFieldNamespacedAligned.lean/declarations/zmod-trace-pow-card.md) | 69 | `result-track:313162a771f1b76cf8db4c792d2d9cf855ef80febb3530c4abbdf114b36fc594` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

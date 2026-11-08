@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ResultsAlternative2.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ResultsAlternative2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ResultsAlternative2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ResultsAlternative2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [twistedD0](../../../../GroupTheoryAndGeneralizations/ResultsAlternative2.lean/declarations/twistedd0.md) | 14 | `declaration-track:fea7184a2c035f804228ab8941f670c37c95cf9df8891994df636f0fabbcbad6` |
+| 1 | `def` | [twistedD0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ResultsAlternative2.lean/declarations/twistedd0.md) | 14 | `declaration-track:fea7184a2c035f804228ab8941f670c37c95cf9df8891994df636f0fabbcbad6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialMonomialMonomial.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialMonomialMonomial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialMonomialMonomial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialMonomialMonomial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [monomial_one_eq_iff](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialMonomialMonomial.lean/declarations/monomial-one-eq-iff.md) | 23 | `result-track:17d9ada900f92025c2c0ddad2e537db2e287b0f0cf4d315b0e34613b52da1232` |
-| 2 | `instance` | [infinite](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialMonomialMonomial.lean/declarations/infinite.md) | 28 | `declaration-track:65c860cab5a6f812577d5b693ab180ebc20adf2cf0758985a985291ed280b362` |
-| 3 | `theorem` | [card_support_le_one_iff_monomial](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialMonomialMonomial.lean/declarations/card-support-le-one-iff-monomial.md) | 31 | `result-track:b05a2037e54b823098c4befe3591569a0203af1a275e4ed1acfbadc06dd5cd8f` |
-| 4 | `theorem` | [ringHom_ext](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialMonomialMonomial.lean/declarations/ringhom-ext-source-edition-2.md) | 50 | `result-track:c5f312666c3f31ce72330a8e74d6923223f522e24bf36d7aae650c48419792cb` |
-| 5 | `theorem` | [ringHom_ext'](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialMonomialMonomial.lean/declarations/ringhom-ext.md) | 71 | `result-track:0160d1c10c3b231f5ed4f6c1da51051b2138717a1fabb7ac6f6eb54a6695a1ab` |
+| 1 | `theorem` | [monomial_one_eq_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialMonomialMonomial.lean/declarations/monomial-one-eq-iff.md) | 23 | `result-track:17d9ada900f92025c2c0ddad2e537db2e287b0f0cf4d315b0e34613b52da1232` |
+| 2 | `instance` | [infinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialMonomialMonomial.lean/declarations/infinite.md) | 28 | `declaration-track:65c860cab5a6f812577d5b693ab180ebc20adf2cf0758985a985291ed280b362` |
+| 3 | `theorem` | [card_support_le_one_iff_monomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialMonomialMonomial.lean/declarations/card-support-le-one-iff-monomial.md) | 31 | `result-track:b05a2037e54b823098c4befe3591569a0203af1a275e4ed1acfbadc06dd5cd8f` |
+| 4 | `theorem` | [ringHom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialMonomialMonomial.lean/declarations/ringhom-ext-source-edition-2.md) | 50 | `result-track:c5f312666c3f31ce72330a8e74d6923223f522e24bf36d7aae650c48419792cb` |
+| 5 | `theorem` | [ringHom_ext'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialMonomialMonomial.lean/declarations/ringhom-ext.md) | 71 | `result-track:0160d1c10c3b231f5ed4f6c1da51051b2138717a1fabb7ac6f6eb54a6695a1ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

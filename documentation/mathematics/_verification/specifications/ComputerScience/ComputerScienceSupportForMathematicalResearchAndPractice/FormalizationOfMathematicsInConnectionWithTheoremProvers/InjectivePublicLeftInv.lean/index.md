@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InjectivePublicLeftInv.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InjectivePublicLeftInv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InjectivePublicLeftInv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InjectivePublicLeftInv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [leftInv](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InjectivePublicLeftInv.lean/declarations/leftinv.md) | 15 | `declaration-track:214e39b920057094e3005026b99c41b1f7009af273fcf0fb68f700d333fe5ff2` |
-| 2 | `theorem` | [leftInv_eq](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InjectivePublicLeftInv.lean/declarations/leftinv-eq.md) | 18 | `result-track:f4fa5f8ce3a9e6c20fc9bc5554aaac73a996f464646f73c05427af0e91f4573c` |
-| 3 | `def` | [leftInvUnexpander](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InjectivePublicLeftInv.lean/declarations/leftinvunexpander.md) | 22 | `declaration-track:acb8de9108076718b5f8001bb968e214333fb236e95f796f51cbff5945b5d761` |
+| 1 | `def` | [leftInv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InjectivePublicLeftInv.lean/declarations/leftinv.md) | 15 | `declaration-track:214e39b920057094e3005026b99c41b1f7009af273fcf0fb68f700d333fe5ff2` |
+| 2 | `theorem` | [leftInv_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InjectivePublicLeftInv.lean/declarations/leftinv-eq.md) | 18 | `result-track:f4fa5f8ce3a9e6c20fc9bc5554aaac73a996f464646f73c05427af0e91f4573c` |
+| 3 | `def` | [leftInvUnexpander](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InjectivePublicLeftInv.lean/declarations/leftinvunexpander.md) | 22 | `declaration-track:acb8de9108076718b5f8001bb968e214333fb236e95f796f51cbff5945b5d761` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

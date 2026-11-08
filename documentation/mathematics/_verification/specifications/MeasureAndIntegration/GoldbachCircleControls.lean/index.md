@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/GoldbachCircleControls.lean/index.md) · [Full source](../../../../MeasureAndIntegration/GoldbachCircleControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.GoldbachCircleIntegral`](../../../../MeasureAndIntegration/GoldbachCircleIntegral.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachCircleIntegral`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleIntegral.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.NormNum` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [zero_frequency_integral](../../../../MeasureAndIntegration/GoldbachCircleControls.lean/declarations/zero-frequency-integral.md) | 25 | `result-track:ebfb75862ccc98f4ec10fbe52be41b809c6fd46bb7de37438884103cd76f1648` |
-| 2 | `theorem` | [positive_frequency_integral](../../../../MeasureAndIntegration/GoldbachCircleControls.lean/declarations/positive-frequency-integral.md) | 30 | `result-track:ffb0cfd23b273e801e89bdeb7a16135c528d7af420cadcfd69576a0c26feca3a` |
-| 3 | `theorem` | [negative_frequency_integral](../../../../MeasureAndIntegration/GoldbachCircleControls.lean/declarations/negative-frequency-integral.md) | 35 | `result-track:b3046adfc8480d403d729aaa0463567935bfed6a2b3af9bd20576eb4eec6cd7c` |
-| 4 | `theorem` | [missing_negative_phase_control](../../../../MeasureAndIntegration/GoldbachCircleControls.lean/declarations/missing-negative-phase-control.md) | 41 | `result-track:504f03f9ebb09b73edb1114fb92c8502dfd12ddb4d6f64192235df469bf968dc` |
-| 5 | `theorem` | [four_circle_identity](../../../../MeasureAndIntegration/GoldbachCircleControls.lean/declarations/four-circle-identity.md) | 48 | `result-track:6fb60abfa2e0d5835ca17534a9f7ffdc7a7f5b9f450f15c25aa9be96589fb35b` |
-| 6 | `theorem` | [frequency_match_without_prime_weight](../../../../MeasureAndIntegration/GoldbachCircleControls.lean/declarations/frequency-match-without-prime-weight.md) | 57 | `result-track:cc6dfd380c97d522ff68b12ae8b072dd4f4e1e3887dd5ad4738945f250fe0a38` |
+| 1 | `theorem` | [zero_frequency_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleControls.lean/declarations/zero-frequency-integral.md) | 25 | `result-track:ebfb75862ccc98f4ec10fbe52be41b809c6fd46bb7de37438884103cd76f1648` |
+| 2 | `theorem` | [positive_frequency_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleControls.lean/declarations/positive-frequency-integral.md) | 30 | `result-track:ffb0cfd23b273e801e89bdeb7a16135c528d7af420cadcfd69576a0c26feca3a` |
+| 3 | `theorem` | [negative_frequency_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleControls.lean/declarations/negative-frequency-integral.md) | 35 | `result-track:b3046adfc8480d403d729aaa0463567935bfed6a2b3af9bd20576eb4eec6cd7c` |
+| 4 | `theorem` | [missing_negative_phase_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleControls.lean/declarations/missing-negative-phase-control.md) | 41 | `result-track:504f03f9ebb09b73edb1114fb92c8502dfd12ddb4d6f64192235df469bf968dc` |
+| 5 | `theorem` | [four_circle_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleControls.lean/declarations/four-circle-identity.md) | 48 | `result-track:6fb60abfa2e0d5835ca17534a9f7ffdc7a7f5b9f450f15c25aa9be96589fb35b` |
+| 6 | `theorem` | [frequency_match_without_prime_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachCircleControls.lean/declarations/frequency-match-without-prime-weight.md) | 57 | `result-track:cc6dfd380c97d522ff68b12ae8b072dd4f4e1e3887dd5ad4738945f250fe0a38` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

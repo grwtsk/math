@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exp_coe](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/declarations/exp-coe.md) | 41 | `result-track:d4f6543cb93af5ecfdc26fe23e8247d5fdf696296bda7547f7504b81d361ab44` |
-| 2 | `macro_rules` | [(anonymous)](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/declarations/macro-rules.md) | 45 | `declaration-track:2f5bb6c523248c5f78abe379e4b1d4d04c66bdbee901d8dd37f14e5239b0a08e` |
-| 3 | `theorem` | [hasSum_expSeries_of_imaginary](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/declarations/hassum-expseries-of-imaginary.md) | 49 | `result-track:fd10e92d0bda597c35ef233ba1b8d1bc3644627ab7fb3b50ae1fc82811b0e0a6` |
-| 4 | `theorem` | [exp_of_re_eq_zero](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/declarations/exp-of-re-eq-zero.md) | 100 | `result-track:8486bbd3b9f7bf9cf2a589d8442a693404d1f4968e8cf4ce791f1542a1a563b8` |
-| 5 | `theorem` | [exp_eq](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/declarations/exp-eq.md) | 109 | `result-track:6525ef0923f45d83730a0f809d47f96e065c9fee5888209b3ea063073d071013` |
-| 6 | `theorem` | [re_exp](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/declarations/re-exp.md) | 116 | `result-track:3fa1e9c93fe89a6d92bcec54daaee8f9f5e4b69addb7b14e5b8a16f65669be90` |
-| 7 | `theorem` | [im_exp](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/declarations/im-exp.md) | 119 | `result-track:a92560ecafebd1e0791ac1f7b11528e10bda18d28abfa813b39e968a864b1c04` |
-| 8 | `theorem` | [normSq_exp](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/declarations/normsq-exp.md) | 123 | `result-track:824afb3f4dcd4eea7e3485a78d0f7c7c845541381e94fc288278ec4f0c6c615a` |
-| 9 | `theorem` | [norm_exp](../../../../FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/declarations/norm-exp.md) | 144 | `result-track:71e0a83bb157ac8b5d483f452b2572b972629feb3d928c3e8ca4018f9637180f` |
+| 1 | `theorem` | [exp_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/declarations/exp-coe.md) | 41 | `result-track:d4f6543cb93af5ecfdc26fe23e8247d5fdf696296bda7547f7504b81d361ab44` |
+| 2 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/declarations/macro-rules.md) | 45 | `declaration-track:2f5bb6c523248c5f78abe379e4b1d4d04c66bdbee901d8dd37f14e5239b0a08e` |
+| 3 | `theorem` | [hasSum_expSeries_of_imaginary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/declarations/hassum-expseries-of-imaginary.md) | 49 | `result-track:fd10e92d0bda597c35ef233ba1b8d1bc3644627ab7fb3b50ae1fc82811b0e0a6` |
+| 4 | `theorem` | [exp_of_re_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/declarations/exp-of-re-eq-zero.md) | 100 | `result-track:8486bbd3b9f7bf9cf2a589d8442a693404d1f4968e8cf4ce791f1542a1a563b8` |
+| 5 | `theorem` | [exp_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/declarations/exp-eq.md) | 109 | `result-track:6525ef0923f45d83730a0f809d47f96e065c9fee5888209b3ea063073d071013` |
+| 6 | `theorem` | [re_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/declarations/re-exp.md) | 116 | `result-track:3fa1e9c93fe89a6d92bcec54daaee8f9f5e4b69addb7b14e5b8a16f65669be90` |
+| 7 | `theorem` | [im_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/declarations/im-exp.md) | 119 | `result-track:a92560ecafebd1e0791ac1f7b11528e10bda18d28abfa813b39e968a864b1c04` |
+| 8 | `theorem` | [normSq_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/declarations/normsq-exp.md) | 123 | `result-track:824afb3f4dcd4eea7e3485a78d0f7c7c845541381e94fc288278ec4f0c6c615a` |
+| 9 | `theorem` | [norm_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceQuaternionExponentialNamespaced.lean/declarations/norm-exp.md) | 144 | `result-track:71e0a83bb157ac8b5d483f452b2572b972629feb3d928c3e8ca4018f9637180f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/DeckNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/DeckNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeckNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeckNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [deck](../../../../GeneralTopology/DeckNamespacedPublic.lean/declarations/deck.md) | 49 | `declaration-track:01bcf52128277bca56ec0f40bc4f06620b4d26194f4eaaca7b435ecd712023cb` |
-| 2 | `theorem` | [mem_iff](../../../../GeneralTopology/DeckNamespacedPublic.lean/declarations/mem-iff.md) | 59 | `result-track:a8d2cacb3c9e97337a6fde13c6068ae27ae74c24de4d318a50369988beb948f0` |
-| 3 | `theorem` | [comp_eq](../../../../GeneralTopology/DeckNamespacedPublic.lean/declarations/comp-eq.md) | 62 | `result-track:b8958a6d1e7d6427fb2937ed79c25d8c6e59b54bff8bba7aa18c29e566a6d3b7` |
-| 4 | `theorem` | [proj_smul](../../../../GeneralTopology/DeckNamespacedPublic.lean/declarations/proj-smul.md) | 64 | `result-track:6311ef86141537928f9126791df0e352fad2583ab7352ad7b0062f5b7c109748` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/DeckNamespacedPublic.lean/declarations/instance.md) | 67 | `declaration-track:ae5c4a2337fc19eca833e2b2a00d422aa4d35e54ba1ab24bff63958b281e8dae` |
+| 1 | `def` | [deck](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeckNamespacedPublic.lean/declarations/deck.md) | 49 | `declaration-track:01bcf52128277bca56ec0f40bc4f06620b4d26194f4eaaca7b435ecd712023cb` |
+| 2 | `theorem` | [mem_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeckNamespacedPublic.lean/declarations/mem-iff.md) | 59 | `result-track:a8d2cacb3c9e97337a6fde13c6068ae27ae74c24de4d318a50369988beb948f0` |
+| 3 | `theorem` | [comp_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeckNamespacedPublic.lean/declarations/comp-eq.md) | 62 | `result-track:b8958a6d1e7d6427fb2937ed79c25d8c6e59b54bff8bba7aa18c29e566a6d3b7` |
+| 4 | `theorem` | [proj_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeckNamespacedPublic.lean/declarations/proj-smul.md) | 64 | `result-track:6311ef86141537928f9126791df0e352fad2583ab7352ad7b0062f5b7c109748` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DeckNamespacedPublic.lean/declarations/instance.md) | 67 | `declaration-track:ae5c4a2337fc19eca833e2b2a00d422aa4d35e54ba1ab24bff63958b281e8dae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

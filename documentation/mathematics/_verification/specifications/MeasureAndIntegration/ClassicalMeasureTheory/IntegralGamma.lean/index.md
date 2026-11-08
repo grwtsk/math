@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integral_rpow_mul_exp_neg_rpow](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/declarations/integral-rpow-mul-exp-neg-rpow.md) | 21 | `result-track:04d4b6085af6b1ed233aa56cc2fa7d0459696c72b5f7f30e4f6cdc61dadb8848` |
-| 2 | `theorem` | [integral_rpow_mul_exp_neg_mul_rpow](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/declarations/integral-rpow-mul-exp-neg-mul-rpow.md) | 39 | `result-track:d254ba09dfa2b82e476b614e10bcdd2992058182e92f416dfc734a368c7366ac` |
-| 3 | `theorem` | [integral_exp_neg_rpow](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/declarations/integral-exp-neg-rpow.md) | 59 | `result-track:55574d4f84d65b02903f23922f9de10ae253524ee7f9b99bbdb2f0c80d4706b2` |
-| 4 | `theorem` | [integral_exp_neg_mul_rpow](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/declarations/integral-exp-neg-mul-rpow.md) | 65 | `result-track:514d68d1842ceacad82b3e6faa7df850485c626e65e49a4fadc3eddef3bcbe59` |
-| 5 | `theorem` | [Complex.integral_rpow_mul_exp_neg_rpow](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/declarations/complex-integral-rpow-mul-exp-neg-rpow.md) | 75 | `result-track:4b88c8012e848f09ed54a3783f2bceeabc50ca22eb04960c59b87789ccf60c9b` |
-| 6 | `theorem` | [Complex.integral_rpow_mul_exp_neg_mul_rpow](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/declarations/complex-integral-rpow-mul-exp-neg-mul-rpow.md) | 100 | `result-track:190ec910b4156ccf239023b7b5ae6919c0f23d22c0a27ac75ef38fd01adeebd2` |
-| 7 | `theorem` | [Complex.integral_exp_neg_rpow](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/declarations/complex-integral-exp-neg-rpow.md) | 127 | `result-track:17b1a0fe6afd2d03d3cee1ec8a634e77038070b8796e74bbd7f882d7b5f0eaf3` |
-| 8 | `theorem` | [Complex.integral_exp_neg_mul_rpow](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/declarations/complex-integral-exp-neg-mul-rpow.md) | 134 | `result-track:ab85ff9181ec6d12135656afa27ec649d844b507e444c390e7bcceb340c6e6d5` |
+| 1 | `theorem` | [integral_rpow_mul_exp_neg_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/declarations/integral-rpow-mul-exp-neg-rpow.md) | 21 | `result-track:04d4b6085af6b1ed233aa56cc2fa7d0459696c72b5f7f30e4f6cdc61dadb8848` |
+| 2 | `theorem` | [integral_rpow_mul_exp_neg_mul_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/declarations/integral-rpow-mul-exp-neg-mul-rpow.md) | 39 | `result-track:d254ba09dfa2b82e476b614e10bcdd2992058182e92f416dfc734a368c7366ac` |
+| 3 | `theorem` | [integral_exp_neg_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/declarations/integral-exp-neg-rpow.md) | 59 | `result-track:55574d4f84d65b02903f23922f9de10ae253524ee7f9b99bbdb2f0c80d4706b2` |
+| 4 | `theorem` | [integral_exp_neg_mul_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/declarations/integral-exp-neg-mul-rpow.md) | 65 | `result-track:514d68d1842ceacad82b3e6faa7df850485c626e65e49a4fadc3eddef3bcbe59` |
+| 5 | `theorem` | [Complex.integral_rpow_mul_exp_neg_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/declarations/complex-integral-rpow-mul-exp-neg-rpow.md) | 75 | `result-track:4b88c8012e848f09ed54a3783f2bceeabc50ca22eb04960c59b87789ccf60c9b` |
+| 6 | `theorem` | [Complex.integral_rpow_mul_exp_neg_mul_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/declarations/complex-integral-rpow-mul-exp-neg-mul-rpow.md) | 100 | `result-track:190ec910b4156ccf239023b7b5ae6919c0f23d22c0a27ac75ef38fd01adeebd2` |
+| 7 | `theorem` | [Complex.integral_exp_neg_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/declarations/complex-integral-exp-neg-rpow.md) | 127 | `result-track:17b1a0fe6afd2d03d3cee1ec8a634e77038070b8796e74bbd7f882d7b5f0eaf3` |
+| 8 | `theorem` | [Complex.integral_exp_neg_mul_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralGamma.lean/declarations/complex-integral-exp-neg-mul-rpow.md) | 134 | `result-track:ab85ff9181ec6d12135656afa27ec649d844b507e444c390e7bcceb340c6e6d5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

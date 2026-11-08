@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeIntervalBoundsHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeIntervalBoundsHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeIntervalBoundsHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeIntervalBoundsHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,8 +48,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Mathlib.NumberTheory.Chebyshev` — import line 1; external provider; requires a separately pinned dependency.
 - `Mathlib.NumberTheory.Harmonic.Bounds` — import line 2; external provider; requires a separately pinned dependency.
-- [`GRWTSK.NumberTheory.Moebius.FiniteProductResponseIdentification`](../../../../../MeasureAndIntegration/FiniteProductResponseIdentification.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.Analysis.AsymptoticAnalysis.ExponentialEnergyObstruction`](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ExponentialEnergyObstructionHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.FiniteProductResponseIdentification`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteProductResponseIdentification.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.AsymptoticAnalysis.ExponentialEnergyObstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ExponentialEnergyObstructionHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [inventoryHarmonicMass](../../../../../NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeIntervalBoundsHistoricalSourceEdition2.lean/declarations/inventoryharmonicmass.md) | 21 | `declaration-track:45b1436e805c3e4006fc7012175424290642e5f8b22715b175191ccebc6037c4` |
-| 2 | `theorem` | [inventory_harmonic_linear_bound](../../../../../NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeIntervalBoundsHistoricalSourceEdition2.lean/declarations/inventory-harmonic-linear-bound.md) | 26 | `result-track:e4be4955df874a83d40dc3c0631d6ff320d177570ca4021c26a2f0d4f42a5300` |
-| 3 | `theorem` | [harmonicMass_le_card_div_lower](../../../../../NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeIntervalBoundsHistoricalSourceEdition2.lean/declarations/harmonicmass-le-card-div-lower.md) | 47 | `result-track:ede4eb22d55ba17d7cc8d930499013bc3347edb72cc1800f779a81a8c59039f1` |
-| 4 | `theorem` | [prime_interval_harmonic_bound](../../../../../NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeIntervalBoundsHistoricalSourceEdition2.lean/declarations/prime-interval-harmonic-bound.md) | 58 | `result-track:b481ebfd64589ad7b5fbeb801259e4023fb2d18ed447b7ca3d2fba497de85ece` |
-| 5 | `theorem` | [fixed_ratio_horizon_mass_bound](../../../../../NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeIntervalBoundsHistoricalSourceEdition2.lean/declarations/fixed-ratio-horizon-mass-bound.md) | 78 | `result-track:8b80b0dee65d549f0666ed44f51a60d6dd863d0e8619cc1f8a659d547f70f518` |
+| 1 | `def` | [inventoryHarmonicMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeIntervalBoundsHistoricalSourceEdition2.lean/declarations/inventoryharmonicmass.md) | 21 | `declaration-track:45b1436e805c3e4006fc7012175424290642e5f8b22715b175191ccebc6037c4` |
+| 2 | `theorem` | [inventory_harmonic_linear_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeIntervalBoundsHistoricalSourceEdition2.lean/declarations/inventory-harmonic-linear-bound.md) | 26 | `result-track:e4be4955df874a83d40dc3c0631d6ff320d177570ca4021c26a2f0d4f42a5300` |
+| 3 | `theorem` | [harmonicMass_le_card_div_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeIntervalBoundsHistoricalSourceEdition2.lean/declarations/harmonicmass-le-card-div-lower.md) | 47 | `result-track:ede4eb22d55ba17d7cc8d930499013bc3347edb72cc1800f779a81a8c59039f1` |
+| 4 | `theorem` | [prime_interval_harmonic_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeIntervalBoundsHistoricalSourceEdition2.lean/declarations/prime-interval-harmonic-bound.md) | 58 | `result-track:b481ebfd64589ad7b5fbeb801259e4023fb2d18ed447b7ca3d2fba497de85ece` |
+| 5 | `theorem` | [fixed_ratio_horizon_mass_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeIntervalBoundsHistoricalSourceEdition2.lean/declarations/fixed-ratio-horizon-mass-bound.md) | 78 | `result-track:8b80b0dee65d549f0666ed44f51a60d6dd863d0e8619cc1f8a659d547f70f518` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

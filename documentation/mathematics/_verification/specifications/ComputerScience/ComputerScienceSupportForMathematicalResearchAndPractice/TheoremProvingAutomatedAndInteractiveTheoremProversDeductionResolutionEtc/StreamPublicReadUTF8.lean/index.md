@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/StreamPublicReadUTF8.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/StreamPublicReadUTF8.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/StreamPublicReadUTF8.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/StreamPublicReadUTF8.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [readUTF8](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/StreamPublicReadUTF8.lean/declarations/readutf8.md) | 21 | `declaration-track:fb23a26555644f05c9bb56690da54654636cc503373d76cff14be9d401a312b8` |
-| 2 | `def` | [readJson](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/StreamPublicReadUTF8.lean/declarations/readjson.md) | 27 | `declaration-track:269b4ea2e3c016d5943ee6522315007aaf92ae850afb8ee5e523d4e19d9c7ba3` |
-| 3 | `def` | [writeJson](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/StreamPublicReadUTF8.lean/declarations/writejson.md) | 32 | `declaration-track:a468f1739395eeb322834c7e9461a714299a73fb5a37bb366a052fddf00c154f` |
+| 1 | `def` | [readUTF8](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/StreamPublicReadUTF8.lean/declarations/readutf8.md) | 21 | `declaration-track:fb23a26555644f05c9bb56690da54654636cc503373d76cff14be9d401a312b8` |
+| 2 | `def` | [readJson](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/StreamPublicReadUTF8.lean/declarations/readjson.md) | 27 | `declaration-track:269b4ea2e3c016d5943ee6522315007aaf92ae850afb8ee5e523d4e19d9c7ba3` |
+| 3 | `def` | [writeJson](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/StreamPublicReadUTF8.lean/declarations/writejson.md) | 32 | `declaration-track:a468f1739395eeb322834c7e9461a714299a73fb5a37bb366a052fddf00c154f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

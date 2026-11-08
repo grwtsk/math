@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicList.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicList.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicList.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicList.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [List.toString](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicList.lean/declarations/list-tostring.md) | 36 | `declaration-track:81513b20101df422bbcc7987ef46a3fac31e7895668b622ee15f5e6f008bbf41` |
-| 2 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicList.lean/declarations/instance.md) | 41 | `declaration-track:35a4d1f7a62cbd6b728396549bd1762af1feb49daf338d2264fc44e850d13ab9` |
-| 3 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicList.lean/declarations/instance-source-edition-3.md) | 44 | `declaration-track:7e626636c8307f639141135f0cf1037ef5e3e9b6bb0ac4b15d2e0fc728691d8c` |
-| 4 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicList.lean/declarations/instance-source-edition-4.md) | 47 | `declaration-track:f190d132964673347f5f497d936320b7242bd49de3ac72e1e91b2c4bbdb143cb` |
-| 5 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicList.lean/declarations/instance-source-edition-2.md) | 49 | `declaration-track:5c33bcd032e67d9b48329662f69d7b12f75be2f939083e6143f82d60ec8ce23d` |
+| 1 | `def` | [List.toString](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicList.lean/declarations/list-tostring.md) | 36 | `declaration-track:81513b20101df422bbcc7987ef46a3fac31e7895668b622ee15f5e6f008bbf41` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicList.lean/declarations/instance.md) | 41 | `declaration-track:35a4d1f7a62cbd6b728396549bd1762af1feb49daf338d2264fc44e850d13ab9` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicList.lean/declarations/instance-source-edition-3.md) | 44 | `declaration-track:7e626636c8307f639141135f0cf1037ef5e3e9b6bb0ac4b15d2e0fc728691d8c` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicList.lean/declarations/instance-source-edition-4.md) | 47 | `declaration-track:f190d132964673347f5f497d936320b7242bd49de3ac72e1e91b2c4bbdb143cb` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicList.lean/declarations/instance-source-edition-2.md) | 49 | `declaration-track:5c33bcd032e67d9b48329662f69d7b12f75be2f939083e6143f82d60ec8ce23d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

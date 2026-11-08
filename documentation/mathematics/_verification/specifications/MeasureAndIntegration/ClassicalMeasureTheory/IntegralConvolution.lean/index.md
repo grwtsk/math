@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralConvolution.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralConvolution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralConvolution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralConvolution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [integrable_mconv_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralConvolution.lean/declarations/integrable-mconv-iff.md) | 32 | `result-track:3310d46d643cf52bd512e4d913df439c6596df6ecd13d279710f7bd32f96ec8b` |
-| 2 | `lemma` | [integral_mconv](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralConvolution.lean/declarations/integral-mconv.md) | 40 | `result-track:65d8279e881e3806d852c10a39edfb5036604f444d56114a91f0444c9d5643ef` |
+| 1 | `lemma` | [integrable_mconv_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralConvolution.lean/declarations/integrable-mconv-iff.md) | 32 | `result-track:3310d46d643cf52bd512e4d913df439c6596df6ecd13d279710f7bd32f96ec8b` |
+| 2 | `lemma` | [integral_mconv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralConvolution.lean/declarations/integral-mconv.md) | 40 | `result-track:65d8279e881e3806d852c10a39edfb5036604f444d56114a91f0444c9d5643ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

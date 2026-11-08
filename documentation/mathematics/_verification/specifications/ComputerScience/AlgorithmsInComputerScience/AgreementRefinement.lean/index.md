@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AgreementRefinement.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AgreementRefinement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AgreementRefinement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AgreementRefinement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AgreementLedger.oracleIds](../../../../../ComputerScience/AlgorithmsInComputerScience/AgreementRefinement.lean/declarations/agreementledger-oracleids.md) | 15 | `declaration-track:636561dc7b3e5c6619fa05f0a0ab4d98b91bc61c6784ca9a94d2857e545dc966` |
-| 2 | `structure` | [StableDisagreementPartition](../../../../../ComputerScience/AlgorithmsInComputerScience/AgreementRefinement.lean/declarations/stabledisagreementpartition.md) | 19 | `declaration-track:e752a6ceec77d93de61da3425f162585b0941521ed5ea908707cf70d0bac35b4` |
-| 3 | `def` | [OracleDisagreementRefinementStatement](../../../../../ComputerScience/AlgorithmsInComputerScience/AgreementRefinement.lean/declarations/oracledisagreementrefinementstatement.md) | 46 | `declaration-track:bf824105493cde74eb898b58042148dbc428ab7a98fbe4e5229e6680999c249a` |
-| 4 | `def` | [oracleDisagreementRefinementOpenElement](../../../../../ComputerScience/AlgorithmsInComputerScience/AgreementRefinement.lean/declarations/oracledisagreementrefinementopenelement.md) | 51 | `declaration-track:f37c2ec3a2f820314e1dda3fc9066f0b89131ce473f04253f137a9dbcba4a501` |
+| 1 | `def` | [AgreementLedger.oracleIds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AgreementRefinement.lean/declarations/agreementledger-oracleids.md) | 15 | `declaration-track:636561dc7b3e5c6619fa05f0a0ab4d98b91bc61c6784ca9a94d2857e545dc966` |
+| 2 | `structure` | [StableDisagreementPartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AgreementRefinement.lean/declarations/stabledisagreementpartition.md) | 19 | `declaration-track:e752a6ceec77d93de61da3425f162585b0941521ed5ea908707cf70d0bac35b4` |
+| 3 | `def` | [OracleDisagreementRefinementStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AgreementRefinement.lean/declarations/oracledisagreementrefinementstatement.md) | 46 | `declaration-track:bf824105493cde74eb898b58042148dbc428ab7a98fbe4e5229e6680999c249a` |
+| 4 | `def` | [oracleDisagreementRefinementOpenElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AgreementRefinement.lean/declarations/oracledisagreementrefinementopenelement.md) | 51 | `declaration-track:f37c2ec3a2f820314e1dda3fc9066f0b89131ce473f04253f137a9dbcba4a501` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

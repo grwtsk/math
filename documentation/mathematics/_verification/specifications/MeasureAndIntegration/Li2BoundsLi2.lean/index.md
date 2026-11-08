@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Li2BoundsLi2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Li2BoundsLi2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Li2BoundsLi2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Li2BoundsLi2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,22 +58,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [g](../../../../MeasureAndIntegration/Li2BoundsLi2.lean/declarations/g.md) | 51 | `declaration-track:223baf6a48372b0f212753d94016d47eba12a4a4f60a9bd1f514d8e633f7d048` |
-| 2 | `def` | [li2](../../../../MeasureAndIntegration/Li2BoundsLi2.lean/declarations/li2.md) | 55 | `declaration-track:6821fb2fd6a69599993a51e8a3c6e7a756aa115ddfb1561f82f5b91ec788091d` |
-| 3 | `theorem` | [g_eq](../../../../MeasureAndIntegration/Li2BoundsLi2.lean/declarations/g-eq.md) | 60 | `result-track:1c3a782ed19849741960f7518cdc52a7984948c668a96f6653ac50093ae8b55a` |
-| 4 | `theorem` | [g_alt](../../../../MeasureAndIntegration/Li2BoundsLi2.lean/declarations/g-alt.md) | 63 | `result-track:b11cd9efb343417e7e70b60338edbc53a3e6473040bb02768762a0fe0b68ac87` |
-| 5 | `theorem` | [g_tendsto_one](../../../../MeasureAndIntegration/Li2BoundsLi2.lean/declarations/g-tendsto-one.md) | 68 | `result-track:73301df7577af9b28926ae21cbf8aa7d3ca8f3c8119052ea5b85588f85675e7c` |
-| 6 | `theorem` | [g_bounded](../../../../MeasureAndIntegration/Li2BoundsLi2.lean/declarations/g-bounded.md) | 73 | `result-track:59fcc19c6938398cd013bdfde4736192191d2c12959effc075bab7940cd06fba` |
-| 7 | `theorem` | [g_pos](../../../../MeasureAndIntegration/Li2BoundsLi2.lean/declarations/g-pos.md) | 80 | `result-track:6d32abe90ad02ba7a0d0bd2b828cd122b8c540ed4a868af9101d10151bd3bb9e` |
-| 8 | `theorem` | [g_le_two](../../../../MeasureAndIntegration/Li2BoundsLi2.lean/declarations/g-le-two.md) | 97 | `result-track:2d2b357f8774280e8d680949269bfd60fba4d67f422694feee084130c81a1949` |
-| 9 | `theorem` | [g_intervalIntegrable_full](../../../../MeasureAndIntegration/Li2BoundsLi2.lean/declarations/g-intervalintegrable-full.md) | 152 | `result-track:aa28e8bc7d62c078c115d8b1a28249bd78cd58fd2bd8aa528fed29bea7a852c0` |
-| 10 | `theorem` | [g_intervalIntegrable](../../../../MeasureAndIntegration/Li2BoundsLi2.lean/declarations/g-intervalintegrable.md) | 178 | `result-track:37413e536fb398c8d9d45437b4b92582e2fc1f01fed10df5ef7f0ab2dd77a59a` |
-| 11 | `theorem` | [li2_upper_crude](../../../../MeasureAndIntegration/Li2BoundsLi2.lean/declarations/li2-upper-crude.md) | 207 | `result-track:dde1789dd6dba973e79a857f07887b2ad71214d098f91dffd2b686dbc07f4541` |
-| 12 | `theorem` | [li2_pos](../../../../MeasureAndIntegration/Li2BoundsLi2.lean/declarations/li2-pos.md) | 223 | `result-track:4fb5bae9da6f69d6dd9131a30d7cb90c819c27fd7c78df07520d81782f11492e` |
-| 13 | `theorem` | [li2_lower](../../../../MeasureAndIntegration/Li2BoundsLi2.lean/declarations/li2-lower.md) | 250 | `result-track:1effe5f2127868a18e183d485d35773596a444ec3c4e225b15bcf22c847c648d` |
-| 14 | `theorem` | [li2_upper](../../../../MeasureAndIntegration/Li2BoundsLi2.lean/declarations/li2-upper.md) | 255 | `result-track:4e866f8e6f0103524817fbf22013892291585ebf445fba010f9e0d9995f4fe0e` |
-| 15 | `theorem` | [li2_bounds](../../../../MeasureAndIntegration/Li2BoundsLi2.lean/declarations/li2-bounds.md) | 259 | `result-track:94d78efdc891d34be2060b11f71e491cf65572ff8cd1ba3b2a971ce3262614b3` |
-| 16 | `theorem` | [li2_approx_1045](../../../../MeasureAndIntegration/Li2BoundsLi2.lean/declarations/li2-approx-1045.md) | 264 | `result-track:bb2d9faf5823c446c7aa35ead98966f289c9daff87cba0fed4cc2305cef55277` |
+| 1 | `def` | [g](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Li2BoundsLi2.lean/declarations/g.md) | 51 | `declaration-track:223baf6a48372b0f212753d94016d47eba12a4a4f60a9bd1f514d8e633f7d048` |
+| 2 | `def` | [li2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Li2BoundsLi2.lean/declarations/li2.md) | 55 | `declaration-track:6821fb2fd6a69599993a51e8a3c6e7a756aa115ddfb1561f82f5b91ec788091d` |
+| 3 | `theorem` | [g_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Li2BoundsLi2.lean/declarations/g-eq.md) | 60 | `result-track:1c3a782ed19849741960f7518cdc52a7984948c668a96f6653ac50093ae8b55a` |
+| 4 | `theorem` | [g_alt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Li2BoundsLi2.lean/declarations/g-alt.md) | 63 | `result-track:b11cd9efb343417e7e70b60338edbc53a3e6473040bb02768762a0fe0b68ac87` |
+| 5 | `theorem` | [g_tendsto_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Li2BoundsLi2.lean/declarations/g-tendsto-one.md) | 68 | `result-track:73301df7577af9b28926ae21cbf8aa7d3ca8f3c8119052ea5b85588f85675e7c` |
+| 6 | `theorem` | [g_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Li2BoundsLi2.lean/declarations/g-bounded.md) | 73 | `result-track:59fcc19c6938398cd013bdfde4736192191d2c12959effc075bab7940cd06fba` |
+| 7 | `theorem` | [g_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Li2BoundsLi2.lean/declarations/g-pos.md) | 80 | `result-track:6d32abe90ad02ba7a0d0bd2b828cd122b8c540ed4a868af9101d10151bd3bb9e` |
+| 8 | `theorem` | [g_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Li2BoundsLi2.lean/declarations/g-le-two.md) | 97 | `result-track:2d2b357f8774280e8d680949269bfd60fba4d67f422694feee084130c81a1949` |
+| 9 | `theorem` | [g_intervalIntegrable_full](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Li2BoundsLi2.lean/declarations/g-intervalintegrable-full.md) | 152 | `result-track:aa28e8bc7d62c078c115d8b1a28249bd78cd58fd2bd8aa528fed29bea7a852c0` |
+| 10 | `theorem` | [g_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Li2BoundsLi2.lean/declarations/g-intervalintegrable.md) | 178 | `result-track:37413e536fb398c8d9d45437b4b92582e2fc1f01fed10df5ef7f0ab2dd77a59a` |
+| 11 | `theorem` | [li2_upper_crude](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Li2BoundsLi2.lean/declarations/li2-upper-crude.md) | 207 | `result-track:dde1789dd6dba973e79a857f07887b2ad71214d098f91dffd2b686dbc07f4541` |
+| 12 | `theorem` | [li2_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Li2BoundsLi2.lean/declarations/li2-pos.md) | 223 | `result-track:4fb5bae9da6f69d6dd9131a30d7cb90c819c27fd7c78df07520d81782f11492e` |
+| 13 | `theorem` | [li2_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Li2BoundsLi2.lean/declarations/li2-lower.md) | 250 | `result-track:1effe5f2127868a18e183d485d35773596a444ec3c4e225b15bcf22c847c648d` |
+| 14 | `theorem` | [li2_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Li2BoundsLi2.lean/declarations/li2-upper.md) | 255 | `result-track:4e866f8e6f0103524817fbf22013892291585ebf445fba010f9e0d9995f4fe0e` |
+| 15 | `theorem` | [li2_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Li2BoundsLi2.lean/declarations/li2-bounds.md) | 259 | `result-track:94d78efdc891d34be2060b11f71e491cf65572ff8cd1ba3b2a971ce3262614b3` |
+| 16 | `theorem` | [li2_approx_1045](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Li2BoundsLi2.lean/declarations/li2-approx-1045.md) | 264 | `result-track:bb2d9faf5823c446c7aa35ead98966f289c9daff87cba0fed4cc2305cef55277` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheoryTraceRankHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheoryTraceRankHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheoryTraceRankHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheoryTraceRankHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Inequalities.FiniteSquareSum`](../../../../../RealFunctions/InequalitiesInRealAnalysis/FiniteSquareSum.lean/index.md) — import line 12; pinned internal source present.
+- [`GRWTSK.Analysis.Inequalities.FiniteSquareSum`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/FiniteSquareSum.lean/index.md) — import line 12; pinned internal source present.
 - `Mathlib.Analysis.Matrix.Spectrum` — import line 13; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hermitian_trace_sq_eq_sum_eigenvalues_sq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheoryTraceRankHistoricalSourceEdition2.lean/declarations/hermitian-trace-sq-eq-sum-eigenvalues-sq.md) | 31 | `result-track:828f93f0ee59be6d8eaf0b800e95b56f995cb5a9e50613026bc39b2ed1351db4` |
-| 2 | `theorem` | [hermitian_trace_sq_le_rank_mul_trace_sq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheoryTraceRankHistoricalSourceEdition2.lean/declarations/hermitian-trace-sq-le-rank-mul-trace-sq.md) | 40 | `result-track:d21a735f84a5501061c32e99268ba2fd0ecdc3d3972bf12ef2a70badd7c3cb2c` |
-| 3 | `theorem` | [hermitian_trace_sq_pos](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheoryTraceRankHistoricalSourceEdition2.lean/declarations/hermitian-trace-sq-pos.md) | 49 | `result-track:1375367ee7862031a3726630426dba931e58fa680705437ba984e4117a415852` |
-| 4 | `theorem` | [hermitian_rank_ge_trace_ratio](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheoryTraceRankHistoricalSourceEdition2.lean/declarations/hermitian-rank-ge-trace-ratio.md) | 61 | `result-track:73581ccf170301c2bd7c23cfb169892518cd22342a3e84db656c52151567f8fb` |
-| 5 | `theorem` | [gram_rank_ge_trace_ratio](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheoryTraceRankHistoricalSourceEdition2.lean/declarations/gram-rank-ge-trace-ratio.md) | 69 | `result-track:93c890fc4019d4a0896fc88f56d088aa8748294c8da2b378994f76580eb1e63f` |
+| 1 | `theorem` | [hermitian_trace_sq_eq_sum_eigenvalues_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheoryTraceRankHistoricalSourceEdition2.lean/declarations/hermitian-trace-sq-eq-sum-eigenvalues-sq.md) | 31 | `result-track:828f93f0ee59be6d8eaf0b800e95b56f995cb5a9e50613026bc39b2ed1351db4` |
+| 2 | `theorem` | [hermitian_trace_sq_le_rank_mul_trace_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheoryTraceRankHistoricalSourceEdition2.lean/declarations/hermitian-trace-sq-le-rank-mul-trace-sq.md) | 40 | `result-track:d21a735f84a5501061c32e99268ba2fd0ecdc3d3972bf12ef2a70badd7c3cb2c` |
+| 3 | `theorem` | [hermitian_trace_sq_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheoryTraceRankHistoricalSourceEdition2.lean/declarations/hermitian-trace-sq-pos.md) | 49 | `result-track:1375367ee7862031a3726630426dba931e58fa680705437ba984e4117a415852` |
+| 4 | `theorem` | [hermitian_rank_ge_trace_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheoryTraceRankHistoricalSourceEdition2.lean/declarations/hermitian-rank-ge-trace-ratio.md) | 61 | `result-track:73581ccf170301c2bd7c23cfb169892518cd22342a3e84db656c52151567f8fb` |
+| 5 | `theorem` | [gram_rank_ge_trace_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheoryTraceRankHistoricalSourceEdition2.lean/declarations/gram-rank-ge-trace-ratio.md) | 69 | `result-track:93c890fc4019d4a0896fc88f56d088aa8748294c8da2b378994f76580eb1e63f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

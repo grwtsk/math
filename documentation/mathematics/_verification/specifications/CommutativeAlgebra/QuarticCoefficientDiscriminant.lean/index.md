@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuarticCoefficientDiscriminant.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuarticCoefficientDiscriminant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCoefficientDiscriminant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCoefficientDiscriminant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticCubicDiscriminant`](../../../../CommutativeAlgebra/QuarticCubicDiscriminant.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticCubicDiscriminant`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicDiscriminant.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [monicQuarticDiscriminant](../../../../CommutativeAlgebra/QuarticCoefficientDiscriminant.lean/declarations/monicquarticdiscriminant.md) | 23 | `declaration-track:393dcfe87433e09b167650d95fd62e0ffb67dc186bdec02500e473285f378806` |
-| 2 | `theorem` | [monicQuarticDiscriminant_eq_adjacencyCubic_discr](../../../../CommutativeAlgebra/QuarticCoefficientDiscriminant.lean/declarations/monicquarticdiscriminant-eq-adjacencycubic-discr.md) | 35 | `result-track:ef35bad04922e88a3567f238c7d2c0d1d97e1854923d694f99d5d7c8b5b8276d` |
-| 3 | `theorem` | [monicQuarticDiscriminant_map](../../../../CommutativeAlgebra/QuarticCoefficientDiscriminant.lean/declarations/monicquarticdiscriminant-map.md) | 45 | `result-track:2d9b1fea1d1edbec2a6df2b23f66e15a5df32488b0a56ae572095d0287bbd8db` |
+| 1 | `def` | [monicQuarticDiscriminant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCoefficientDiscriminant.lean/declarations/monicquarticdiscriminant.md) | 23 | `declaration-track:393dcfe87433e09b167650d95fd62e0ffb67dc186bdec02500e473285f378806` |
+| 2 | `theorem` | [monicQuarticDiscriminant_eq_adjacencyCubic_discr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCoefficientDiscriminant.lean/declarations/monicquarticdiscriminant-eq-adjacencycubic-discr.md) | 35 | `result-track:ef35bad04922e88a3567f238c7d2c0d1d97e1854923d694f99d5d7c8b5b8276d` |
+| 3 | `theorem` | [monicQuarticDiscriminant_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCoefficientDiscriminant.lean/declarations/monicquarticdiscriminant-map.md) | 45 | `result-track:2d9b1fea1d1edbec2a6df2b23f66e15a5df32488b0a56ae572095d0287bbd8db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

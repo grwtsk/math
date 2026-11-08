@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cfcAux](../../../../FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/declarations/cfcaux.md) | 50 | `declaration-track:507278105a6f48c200d3a13f503a510cfb3c32032fa7836b3c2d76b0d1e24ad3` |
-| 2 | `lemma` | [isClosedEmbedding_cfcAux](../../../../FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/declarations/isclosedembedding-cfcaux.md) | 71 | `result-track:c8a57811dd37208b8a14960c682bd7609a6779da443d1ad9975b13eb90acc80e` |
-| 3 | `lemma` | [cfcAux_id](../../../../FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/declarations/cfcaux-id.md) | 91 | `result-track:74516e833ad15c938f7a9fb3ec4978631036020dde05febeb909ec16c2d75832` |
-| 4 | `instance` | [instContinuousFunctionalCalculus](../../../../FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/declarations/instcontinuousfunctionalcalculus.md) | 97 | `declaration-track:cd36c2692b93dcb9f068e342bad79ab4d3abc04a1414d2d5e8b8cb52238c079c` |
-| 5 | `def` | [cfc](../../../../FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/declarations/cfc.md) | 132 | `declaration-track:2e2b81e04a96e7b7e7bdf0fef8a7d59ff94ca5e54ac5d4175fea1694f2ceae1a` |
-| 6 | `lemma` | [cfcHom_eq_cfcAux](../../../../FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/declarations/cfchom-eq-cfcaux.md) | 135 | `result-track:e10e46ddf1b2d5d51a6c28f3e92f0688b3123e8ba7f7d9b0dee8a07493b7f3c6` |
-| 7 | `instance` | [instContinuousFunctionalCalculusIsClosedEmbedding](../../../../FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/declarations/instcontinuousfunctionalcalculusisclosedembedding.md) | 139 | `declaration-track:1b5009bbbd3db387d50270d6a4e131e264c99d06e7ab747e9876f7b908a26a2a` |
-| 8 | `lemma` | [cfc_eq](../../../../FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/declarations/cfc-eq.md) | 143 | `result-track:7fc6ab88168f19b4460b1aa0bfeca01d6c10bcd30a4becf968ffa3ea36078d12` |
-| 9 | `lemma` | [charpoly_cfc_eq](../../../../FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/declarations/charpoly-cfc-eq.md) | 152 | `result-track:98488ad378b0c8222caf2385a3239c6cf6e542ae40df6108f0875a91b0aff85d` |
+| 1 | `def` | [cfcAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/declarations/cfcaux.md) | 50 | `declaration-track:507278105a6f48c200d3a13f503a510cfb3c32032fa7836b3c2d76b0d1e24ad3` |
+| 2 | `lemma` | [isClosedEmbedding_cfcAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/declarations/isclosedembedding-cfcaux.md) | 71 | `result-track:c8a57811dd37208b8a14960c682bd7609a6779da443d1ad9975b13eb90acc80e` |
+| 3 | `lemma` | [cfcAux_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/declarations/cfcaux-id.md) | 91 | `result-track:74516e833ad15c938f7a9fb3ec4978631036020dde05febeb909ec16c2d75832` |
+| 4 | `instance` | [instContinuousFunctionalCalculus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/declarations/instcontinuousfunctionalcalculus.md) | 97 | `declaration-track:cd36c2692b93dcb9f068e342bad79ab4d3abc04a1414d2d5e8b8cb52238c079c` |
+| 5 | `def` | [cfc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/declarations/cfc.md) | 132 | `declaration-track:2e2b81e04a96e7b7e7bdf0fef8a7d59ff94ca5e54ac5d4175fea1694f2ceae1a` |
+| 6 | `lemma` | [cfcHom_eq_cfcAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/declarations/cfchom-eq-cfcaux.md) | 135 | `result-track:e10e46ddf1b2d5d51a6c28f3e92f0688b3123e8ba7f7d9b0dee8a07493b7f3c6` |
+| 7 | `instance` | [instContinuousFunctionalCalculusIsClosedEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/declarations/instcontinuousfunctionalcalculusisclosedembedding.md) | 139 | `declaration-track:1b5009bbbd3db387d50270d6a4e131e264c99d06e7ab747e9876f7b908a26a2a` |
+| 8 | `lemma` | [cfc_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/declarations/cfc-eq.md) | 143 | `result-track:7fc6ab88168f19b4460b1aa0bfeca01d6c10bcd30a4becf968ffa3ea36078d12` |
+| 9 | `lemma` | [charpoly_cfc_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixHermitianFunctionalCalculusPublic.lean/declarations/charpoly-cfc-eq.md) | 152 | `result-track:98488ad378b0c8222caf2385a3239c6cf6e542ae40df6108f0875a91b0aff85d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

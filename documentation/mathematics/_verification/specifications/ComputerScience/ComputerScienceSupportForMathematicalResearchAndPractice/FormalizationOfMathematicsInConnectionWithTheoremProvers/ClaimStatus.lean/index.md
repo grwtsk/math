@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClaimStatus.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClaimStatus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClaimStatus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClaimStatus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ClaimStatus](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClaimStatus.lean/declarations/claimstatus.md) | 7 | `declaration-track:ec2d8aefaeb79026e5a1920f08aa5c10766462c6a2916b56781dfd21e3becda5` |
-| 2 | `def` | [ClaimStatus.crossesTheoremBoundary](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClaimStatus.lean/declarations/claimstatus-crossestheoremboundary.md) | 17 | `declaration-track:aaf07fef17e96c05dc0e46ec7408e7eebeb7a87adadd95505b4bb3f4665e0c1a` |
-| 3 | `def` | [apiMayEmitCheckedTheorem](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClaimStatus.lean/declarations/apimayemitcheckedtheorem.md) | 21 | `declaration-track:b2ce892af0cb51217cf24d342501f3dc4c0e6de1b43eb174e14bf8f8b995d049` |
-| 4 | `theorem` | [api_does_not_emit_checked_theorem](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClaimStatus.lean/declarations/api-does-not-emit-checked-theorem.md) | 23 | `result-track:af0f0398864fe1887b6cf712a12a3f6b5f42bc5626c193776a4d54a1f6e970e8` |
+| 1 | `inductive` | [ClaimStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClaimStatus.lean/declarations/claimstatus.md) | 7 | `declaration-track:ec2d8aefaeb79026e5a1920f08aa5c10766462c6a2916b56781dfd21e3becda5` |
+| 2 | `def` | [ClaimStatus.crossesTheoremBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClaimStatus.lean/declarations/claimstatus-crossestheoremboundary.md) | 17 | `declaration-track:aaf07fef17e96c05dc0e46ec7408e7eebeb7a87adadd95505b4bb3f4665e0c1a` |
+| 3 | `def` | [apiMayEmitCheckedTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClaimStatus.lean/declarations/apimayemitcheckedtheorem.md) | 21 | `declaration-track:b2ce892af0cb51217cf24d342501f3dc4c0e6de1b43eb174e14bf8f8b995d049` |
+| 4 | `theorem` | [api_does_not_emit_checked_theorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClaimStatus.lean/declarations/api-does-not-emit-checked-theorem.md) | 23 | `result-track:af0f0398864fe1887b6cf712a12a3f6b5f42bc5626c193776a4d54a1f6e970e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

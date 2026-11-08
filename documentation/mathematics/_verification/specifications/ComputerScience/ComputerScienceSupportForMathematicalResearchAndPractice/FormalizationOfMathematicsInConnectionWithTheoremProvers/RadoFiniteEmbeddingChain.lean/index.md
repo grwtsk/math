@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoFiniteEmbeddingChain.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoFiniteEmbeddingChain.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoFiniteEmbeddingChain.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoFiniteEmbeddingChain.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AgreesOnPrefix](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoFiniteEmbeddingChain.lean/declarations/agreesonprefix.md) | 22 | `declaration-track:4913569cca8d4b9a9d036446470e28bad3198cb5737dd00e4ad07680ced5eacf` |
-| 2 | `theorem` | [agreesOnPrefix_refl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoFiniteEmbeddingChain.lean/declarations/agreesonprefix-refl.md) | 25 | `result-track:caf01f648915495f5708628f030ce1dbea499d060f33e6816318c62901c470a3` |
-| 3 | `theorem` | [agreesOnPrefix_extend](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoFiniteEmbeddingChain.lean/declarations/agreesonprefix-extend.md) | 30 | `result-track:f46abf7698b58e088c8505ed0eb2e6d00253d54b74893122ce5fb0d21e307752` |
-| 4 | `theorem` | [bitRado_extend_embedding_prefix_by_steps](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoFiniteEmbeddingChain.lean/declarations/bitrado-extend-embedding-prefix-by-steps.md) | 41 | `result-track:2043a34915c63220610413e88fb62a2b522ab37f7666ecaa85f49c713e578e30` |
+| 1 | `def` | [AgreesOnPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoFiniteEmbeddingChain.lean/declarations/agreesonprefix.md) | 22 | `declaration-track:4913569cca8d4b9a9d036446470e28bad3198cb5737dd00e4ad07680ced5eacf` |
+| 2 | `theorem` | [agreesOnPrefix_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoFiniteEmbeddingChain.lean/declarations/agreesonprefix-refl.md) | 25 | `result-track:caf01f648915495f5708628f030ce1dbea499d060f33e6816318c62901c470a3` |
+| 3 | `theorem` | [agreesOnPrefix_extend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoFiniteEmbeddingChain.lean/declarations/agreesonprefix-extend.md) | 30 | `result-track:f46abf7698b58e088c8505ed0eb2e6d00253d54b74893122ce5fb0d21e307752` |
+| 4 | `theorem` | [bitRado_extend_embedding_prefix_by_steps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoFiniteEmbeddingChain.lean/declarations/bitrado-extend-embedding-prefix-by-steps.md) | 41 | `result-track:2043a34915c63220610413e88fb62a2b522ab37f7666ecaa85f49c713e578e30` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

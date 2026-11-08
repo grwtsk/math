@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/BlaschkeQuotientLogarithm.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/BlaschkeQuotientLogarithm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BlaschkeQuotientLogarithm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BlaschkeQuotientLogarithm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.NormalizedDiskLogarithm`](../../../../FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.NormalizedDiskLogarithm`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.Complex.AbsMax` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [norm_product_on_boundary](../../../../FunctionsOfAComplexVariable/BlaschkeQuotientLogarithm.lean/declarations/norm-product-on-boundary.md) | 30 | `result-track:dd920e95522792aa923f7b5a835da82b7439efef9c1c8327a6b099d9ddb64cda` |
-| 2 | `theorem` | [norm_product_at_center_le_one](../../../../FunctionsOfAComplexVariable/BlaschkeQuotientLogarithm.lean/declarations/norm-product-at-center-le-one.md) | 40 | `result-track:43ca2e48c8a06a48b9796955d26f17d9de8567c6ce248f9c86e26383f87c272e` |
-| 3 | `theorem` | [quotient_norm_le](../../../../FunctionsOfAComplexVariable/BlaschkeQuotientLogarithm.lean/declarations/quotient-norm-le.md) | 52 | `result-track:c44c6b4cc81abfaf1b90aa9ac31807931420a6cd85c8c2909b3664253d2c7ab9` |
-| 4 | `theorem` | [quotient_center_floor](../../../../FunctionsOfAComplexVariable/BlaschkeQuotientLogarithm.lean/declarations/quotient-center-floor.md) | 71 | `result-track:1ba2c8286d206954272e215cc18b2cb84323cdc82a5cda6374bce933982750c1` |
-| 5 | `theorem` | [exists_log_from_quotient](../../../../FunctionsOfAComplexVariable/BlaschkeQuotientLogarithm.lean/declarations/exists-log-from-quotient.md) | 84 | `result-track:9da2450837edd679620e7f40fcee412d9608d550ffcca6674466ae65739b4256` |
+| 1 | `theorem` | [norm_product_on_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BlaschkeQuotientLogarithm.lean/declarations/norm-product-on-boundary.md) | 30 | `result-track:dd920e95522792aa923f7b5a835da82b7439efef9c1c8327a6b099d9ddb64cda` |
+| 2 | `theorem` | [norm_product_at_center_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BlaschkeQuotientLogarithm.lean/declarations/norm-product-at-center-le-one.md) | 40 | `result-track:43ca2e48c8a06a48b9796955d26f17d9de8567c6ce248f9c86e26383f87c272e` |
+| 3 | `theorem` | [quotient_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BlaschkeQuotientLogarithm.lean/declarations/quotient-norm-le.md) | 52 | `result-track:c44c6b4cc81abfaf1b90aa9ac31807931420a6cd85c8c2909b3664253d2c7ab9` |
+| 4 | `theorem` | [quotient_center_floor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BlaschkeQuotientLogarithm.lean/declarations/quotient-center-floor.md) | 71 | `result-track:1ba2c8286d206954272e215cc18b2cb84323cdc82a5cda6374bce933982750c1` |
+| 5 | `theorem` | [exists_log_from_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BlaschkeQuotientLogarithm.lean/declarations/exists-log-from-quotient.md) | 84 | `result-track:9da2450837edd679620e7f40fcee412d9608d550ffcca6674466ae65739b4256` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

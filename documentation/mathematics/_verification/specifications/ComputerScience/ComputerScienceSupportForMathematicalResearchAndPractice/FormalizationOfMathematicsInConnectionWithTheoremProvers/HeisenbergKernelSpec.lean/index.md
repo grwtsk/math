@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HeisenbergKernelSpec.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HeisenbergKernelSpec.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HeisenbergKernelSpec.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HeisenbergKernelSpec.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HeisenbergKernelWitness](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HeisenbergKernelSpec.lean/declarations/heisenbergkernelwitness.md) | 19 | `declaration-track:ddfa5e17dcb7f56c22b8f9414a9414c4fb07ebbdd7ebd884000cbd092181ad14` |
-| 2 | `theorem` | [heisenberg_kernel_phase_correct](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HeisenbergKernelSpec.lean/declarations/heisenberg-kernel-phase-correct.md) | 25 | `result-track:9dcef3834e04c7913198573895b77ccb07dc7fc4be6e1adf5776325d664e514d` |
+| 1 | `structure` | [HeisenbergKernelWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HeisenbergKernelSpec.lean/declarations/heisenbergkernelwitness.md) | 19 | `declaration-track:ddfa5e17dcb7f56c22b8f9414a9414c4fb07ebbdd7ebd884000cbd092181ad14` |
+| 2 | `theorem` | [heisenberg_kernel_phase_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HeisenbergKernelSpec.lean/declarations/heisenberg-kernel-phase-correct.md) | 25 | `result-track:9dcef3834e04c7913198573895b77ccb07dc7fc4be6e1adf5776325d664e514d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

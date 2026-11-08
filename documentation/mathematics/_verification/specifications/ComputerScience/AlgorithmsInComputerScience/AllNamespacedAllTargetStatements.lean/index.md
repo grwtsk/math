@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AllNamespacedAllTargetStatements.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AllNamespacedAllTargetStatements.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllNamespacedAllTargetStatements.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllNamespacedAllTargetStatements.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -78,8 +78,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [allTargetStatements](../../../../../ComputerScience/AlgorithmsInComputerScience/AllNamespacedAllTargetStatements.lean/declarations/alltargetstatements.md) | 36 | `declaration-track:6f5aa93c5e94b12c29903b4dac8fe4ac67be04126dfc2e33136858184a1ee2dd` |
-| 2 | `theorem` | [allTargetStatements_count](../../../../../ComputerScience/AlgorithmsInComputerScience/AllNamespacedAllTargetStatements.lean/declarations/alltargetstatements-count.md) | 39 | `result-track:21e7850d5f821d0f68cc9b263078272b2c551ae6ae5571a1fb9cae1bc1562333` |
+| 1 | `def` | [allTargetStatements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllNamespacedAllTargetStatements.lean/declarations/alltargetstatements.md) | 36 | `declaration-track:6f5aa93c5e94b12c29903b4dac8fe4ac67be04126dfc2e33136858184a1ee2dd` |
+| 2 | `theorem` | [allTargetStatements_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllNamespacedAllTargetStatements.lean/declarations/alltargetstatements-count.md) | 39 | `result-track:21e7850d5f821d0f68cc9b263078272b2c551ae6ae5571a1fb9cae1bc1562333` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

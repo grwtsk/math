@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceDualSupportAlternative.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceDualSupportAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDualSupportAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDualSupportAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [standard_dual_not_integrable](../../../../MeasureAndIntegration/SourceDualSupportAlternative.lean/declarations/standard-dual-not-integrable.md) | 26 | `result-track:0cd21ba9bed756bede5f63551ae5d8494639340afb6598b8e8f2063d7d003541` |
-| 2 | `theorem` | [angular_dual_not_integrable](../../../../MeasureAndIntegration/SourceDualSupportAlternative.lean/declarations/angular-dual-not-integrable.md) | 49 | `result-track:f356c6820548e878668a966bd6178de7f6a90557f6fac17ec183b926d4298d5e` |
-| 3 | `theorem` | [integrable_of_memLp_two_compact](../../../../MeasureAndIntegration/SourceDualSupportAlternative.lean/declarations/integrable-of-memlp-two-compact.md) | 63 | `result-track:7c667b98ba12a9fe790b5ceca868fb7075e7e025cbe1510fa7c49150a8142f87` |
-| 4 | `theorem` | [angular_dual_no_compact_representative](../../../../MeasureAndIntegration/SourceDualSupportAlternative.lean/declarations/angular-dual-no-compact-representative.md) | 69 | `result-track:23dd0ee505d3a46ebb4e55871495774ea9826adaa90a87868beeb36d45f5a927` |
+| 1 | `theorem` | [standard_dual_not_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDualSupportAlternative.lean/declarations/standard-dual-not-integrable.md) | 26 | `result-track:0cd21ba9bed756bede5f63551ae5d8494639340afb6598b8e8f2063d7d003541` |
+| 2 | `theorem` | [angular_dual_not_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDualSupportAlternative.lean/declarations/angular-dual-not-integrable.md) | 49 | `result-track:f356c6820548e878668a966bd6178de7f6a90557f6fac17ec183b926d4298d5e` |
+| 3 | `theorem` | [integrable_of_memLp_two_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDualSupportAlternative.lean/declarations/integrable-of-memlp-two-compact.md) | 63 | `result-track:7c667b98ba12a9fe790b5ceca868fb7075e7e025cbe1510fa7c49150a8142f87` |
+| 4 | `theorem` | [angular_dual_no_compact_representative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDualSupportAlternative.lean/declarations/angular-dual-no-compact-representative.md) | 69 | `result-track:23dd0ee505d3a46ebb4e55871495774ea9826adaa90a87868beeb36d45f5a927` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

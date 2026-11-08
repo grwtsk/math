@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [BinaryValue](../../../../../ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/declarations/binaryvalue.md) | 21 | `declaration-track:18ee3044a9d5bd65574929aae467886b30558d479770332aa012ccf9dbcbfc6f` |
-| 2 | `structure` | [BinaryFrontierAddress](../../../../../ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/declarations/binaryfrontieraddress.md) | 27 | `declaration-track:ca44725a8f099de0e7675807815dd9e881bf304c9d45709949e495454f0af3df` |
-| 3 | `def` | [ListPrefix](../../../../../ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/declarations/listprefix.md) | 48 | `declaration-track:be04706ea255af16ccb9d76c71822770b47e91298df6c041aacab05ff88b5f06` |
-| 4 | `def` | [TerminalPrefixFree](../../../../../ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/declarations/terminalprefixfree.md) | 51 | `declaration-track:2064c6a72d630e5c69cf892ddc2dcc63ce8eb26c901de4b76060b6d15ca35a35` |
-| 5 | `def` | [DyadicIntervalsDisjoint](../../../../../ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/declarations/dyadicintervalsdisjoint.md) | 57 | `declaration-track:c6f4372e63fc3afb14f4344cf6637252d2e94c7b9999c36fb328b21ec3514e9b` |
-| 6 | `structure` | [CertifiedTerminalAddresses](../../../../../ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/declarations/certifiedterminaladdresses.md) | 66 | `declaration-track:1559464e2329659a1d30d41e97e448c6c64b8702f4df566447bc8ccc9c839e1b` |
-| 7 | `theorem` | [terminal_addresses_prefix_free](../../../../../ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/declarations/terminal-addresses-prefix-free.md) | 74 | `result-track:507e011053ee524c866b28959dffcbbc3c9c802fc883fae7c2200aaa1b01da37` |
-| 8 | `theorem` | [dyadic_terminal_intervals_disjoint](../../../../../ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/declarations/dyadic-terminal-intervals-disjoint.md) | 79 | `result-track:c110fb7266c3c130d18596dacda6167f239b237f5a038aff7181f6ba8a6627d8` |
+| 1 | `def` | [BinaryValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/declarations/binaryvalue.md) | 21 | `declaration-track:18ee3044a9d5bd65574929aae467886b30558d479770332aa012ccf9dbcbfc6f` |
+| 2 | `structure` | [BinaryFrontierAddress](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/declarations/binaryfrontieraddress.md) | 27 | `declaration-track:ca44725a8f099de0e7675807815dd9e881bf304c9d45709949e495454f0af3df` |
+| 3 | `def` | [ListPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/declarations/listprefix.md) | 48 | `declaration-track:be04706ea255af16ccb9d76c71822770b47e91298df6c041aacab05ff88b5f06` |
+| 4 | `def` | [TerminalPrefixFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/declarations/terminalprefixfree.md) | 51 | `declaration-track:2064c6a72d630e5c69cf892ddc2dcc63ce8eb26c901de4b76060b6d15ca35a35` |
+| 5 | `def` | [DyadicIntervalsDisjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/declarations/dyadicintervalsdisjoint.md) | 57 | `declaration-track:c6f4372e63fc3afb14f4344cf6637252d2e94c7b9999c36fb328b21ec3514e9b` |
+| 6 | `structure` | [CertifiedTerminalAddresses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/declarations/certifiedterminaladdresses.md) | 66 | `declaration-track:1559464e2329659a1d30d41e97e448c6c64b8702f4df566447bc8ccc9c839e1b` |
+| 7 | `theorem` | [terminal_addresses_prefix_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/declarations/terminal-addresses-prefix-free.md) | 74 | `result-track:507e011053ee524c866b28959dffcbbc3c9c802fc883fae7c2200aaa1b01da37` |
+| 8 | `theorem` | [dyadic_terminal_intervals_disjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AddressNamespaced.lean/declarations/dyadic-terminal-intervals-disjoint.md) | 79 | `result-track:c110fb7266c3c130d18596dacda6167f239b237f5a038aff7181f6ba8a6627d8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/IsBoundedAtImInftyPublic.lean/index.md) · [Full source](../../../../NumberTheory/IsBoundedAtImInftyPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IsBoundedAtImInftyPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IsBoundedAtImInftyPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [summable_norm_eisSummand](../../../../NumberTheory/IsBoundedAtImInftyPublic.lean/declarations/summable-norm-eissummand.md) | 39 | `result-track:ae9fd863336bfe355342655dc6810d5d77dd11f0fa790746ef1ca12c996c7187` |
-| 2 | `lemma` | [norm_le_tsum_norm](../../../../NumberTheory/IsBoundedAtImInftyPublic.lean/declarations/norm-le-tsum-norm.md) | 49 | `result-track:2064899bcb53141d3789c8fe4d6c6f0920bffe037e3574c17a58705b12877d45` |
-| 3 | `theorem` | [isBoundedAtImInfty_eisensteinSeriesSIF](../../../../NumberTheory/IsBoundedAtImInftyPublic.lean/declarations/isboundedatiminfty-eisensteinseriessif.md) | 57 | `result-track:f637d31433233549813b10f441391ec3100dfbcde651b8128f1f9d5c8d50d2ac` |
+| 1 | `lemma` | [summable_norm_eisSummand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IsBoundedAtImInftyPublic.lean/declarations/summable-norm-eissummand.md) | 39 | `result-track:ae9fd863336bfe355342655dc6810d5d77dd11f0fa790746ef1ca12c996c7187` |
+| 2 | `lemma` | [norm_le_tsum_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IsBoundedAtImInftyPublic.lean/declarations/norm-le-tsum-norm.md) | 49 | `result-track:2064899bcb53141d3789c8fe4d6c6f0920bffe037e3574c17a58705b12877d45` |
+| 3 | `theorem` | [isBoundedAtImInfty_eisensteinSeriesSIF](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IsBoundedAtImInftyPublic.lean/declarations/isboundedatiminfty-eisensteinseriessif.md) | 57 | `result-track:f637d31433233549813b10f441391ec3100dfbcde651b8128f1f9d5c8d50d2ac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

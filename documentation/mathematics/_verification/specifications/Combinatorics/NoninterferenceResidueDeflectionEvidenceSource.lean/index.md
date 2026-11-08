@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/NoninterferenceResidueDeflectionEvidenceSource.lean/index.md) · [Full source](../../../../Combinatorics/NoninterferenceResidueDeflectionEvidenceSource.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NoninterferenceResidueDeflectionEvidenceSource.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NoninterferenceResidueDeflectionEvidenceSource.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ResidueDeflectionEvidenceSource](../../../../Combinatorics/NoninterferenceResidueDeflectionEvidenceSource.lean/declarations/residuedeflectionevidencesource.md) | 13 | `declaration-track:c90ce2c331ad41c60471de74f200aa1108b58cef25652b3d51249906dc390383` |
-| 2 | `inductive` | [MayCloseResidueDeflection](../../../../Combinatorics/NoninterferenceResidueDeflectionEvidenceSource.lean/declarations/maycloseresiduedeflection.md) | 27 | `declaration-track:07ef006c3e5b18cff2e280a0f8c2afa1a32c01d58501b092de5fdb6ec79276c5` |
-| 3 | `theorem` | [observation_cannot_close](../../../../Combinatorics/NoninterferenceResidueDeflectionEvidenceSource.lean/declarations/observation-cannot-close.md) | 71 | `result-track:0fc8040a329bec1b4f28dd83279ff4e6d7cbad9715eb53ce0ff2f928c272b98f` |
-| 4 | `theorem` | [phase_cannot_close_bypass](../../../../Combinatorics/NoninterferenceResidueDeflectionEvidenceSource.lean/declarations/phase-cannot-close-bypass.md) | 78 | `result-track:a3168c1cefca8aeff5a43b22f3c9561e4331a76f2d5083a19f47747afcffc76a` |
-| 5 | `theorem` | [phase_cannot_close_arithmetic_trace](../../../../Combinatorics/NoninterferenceResidueDeflectionEvidenceSource.lean/declarations/phase-cannot-close-arithmetic-trace.md) | 85 | `result-track:5c4e372c5aa211b85fdcf1233f31d00ee4275b3a4d65832b8185127ca75f0a9e` |
-| 6 | `theorem` | [bypass_cannot_close_trace_compensation](../../../../Combinatorics/NoninterferenceResidueDeflectionEvidenceSource.lean/declarations/bypass-cannot-close-trace-compensation.md) | 92 | `result-track:b9fb47e5bf884b6b42b96f0ebc6db4c82d05e9544b8f51904318a7eef9c66021` |
-| 7 | `theorem` | [phase_cannot_remove_zero_obstruction](../../../../Combinatorics/NoninterferenceResidueDeflectionEvidenceSource.lean/declarations/phase-cannot-remove-zero-obstruction.md) | 99 | `result-track:1179689fb0b47c53b11f1eb66ebe2844280c83a0d2cefae47ddf9e6077a1041c` |
+| 1 | `inductive` | [ResidueDeflectionEvidenceSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NoninterferenceResidueDeflectionEvidenceSource.lean/declarations/residuedeflectionevidencesource.md) | 13 | `declaration-track:c90ce2c331ad41c60471de74f200aa1108b58cef25652b3d51249906dc390383` |
+| 2 | `inductive` | [MayCloseResidueDeflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NoninterferenceResidueDeflectionEvidenceSource.lean/declarations/maycloseresiduedeflection.md) | 27 | `declaration-track:07ef006c3e5b18cff2e280a0f8c2afa1a32c01d58501b092de5fdb6ec79276c5` |
+| 3 | `theorem` | [observation_cannot_close](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NoninterferenceResidueDeflectionEvidenceSource.lean/declarations/observation-cannot-close.md) | 71 | `result-track:0fc8040a329bec1b4f28dd83279ff4e6d7cbad9715eb53ce0ff2f928c272b98f` |
+| 4 | `theorem` | [phase_cannot_close_bypass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NoninterferenceResidueDeflectionEvidenceSource.lean/declarations/phase-cannot-close-bypass.md) | 78 | `result-track:a3168c1cefca8aeff5a43b22f3c9561e4331a76f2d5083a19f47747afcffc76a` |
+| 5 | `theorem` | [phase_cannot_close_arithmetic_trace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NoninterferenceResidueDeflectionEvidenceSource.lean/declarations/phase-cannot-close-arithmetic-trace.md) | 85 | `result-track:5c4e372c5aa211b85fdcf1233f31d00ee4275b3a4d65832b8185127ca75f0a9e` |
+| 6 | `theorem` | [bypass_cannot_close_trace_compensation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NoninterferenceResidueDeflectionEvidenceSource.lean/declarations/bypass-cannot-close-trace-compensation.md) | 92 | `result-track:b9fb47e5bf884b6b42b96f0ebc6db4c82d05e9544b8f51904318a7eef9c66021` |
+| 7 | `theorem` | [phase_cannot_remove_zero_obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NoninterferenceResidueDeflectionEvidenceSource.lean/declarations/phase-cannot-remove-zero-obstruction.md) | 99 | `result-track:1179689fb0b47c53b11f1eb66ebe2844280c83a0d2cefae47ddf9e6077a1041c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

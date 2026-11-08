@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/RepresentationNamespacedPublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/RepresentationNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/RepresentationNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/RepresentationNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [exists_measurable_map_eq_unitInterval_aux](../../../../ProbabilityTheoryAndStochasticProcesses/RepresentationNamespacedPublic.lean/declarations/exists-measurable-map-eq-unitinterval-aux.md) | 54 | `result-track:cae3401b887cc2a8badc353be429568a5e1e02b6eece7cbdd3d74693b8880b28` |
-| 2 | `theorem` | [exists_measurable_map_eq_unitInterval](../../../../ProbabilityTheoryAndStochasticProcesses/RepresentationNamespacedPublic.lean/declarations/exists-measurable-map-eq-unitinterval.md) | 119 | `result-track:5586140fa6506eda6602f5c8bf619a4bb2f0bf53f9f33c2b15488378485a5e4c` |
-| 3 | `theorem` | [MeasureTheory.Measure.exists_measurable_map_eq](../../../../ProbabilityTheoryAndStochasticProcesses/RepresentationNamespacedPublic.lean/declarations/measuretheory-measure-exists-measurable-map-eq.md) | 134 | `result-track:1ff782120049d8a2b8bee6f0274e5a4e6aa811b8a2dfa4b00875d0dcbd9670b9` |
+| 1 | `lemma` | [exists_measurable_map_eq_unitInterval_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/RepresentationNamespacedPublic.lean/declarations/exists-measurable-map-eq-unitinterval-aux.md) | 54 | `result-track:cae3401b887cc2a8badc353be429568a5e1e02b6eece7cbdd3d74693b8880b28` |
+| 2 | `theorem` | [exists_measurable_map_eq_unitInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/RepresentationNamespacedPublic.lean/declarations/exists-measurable-map-eq-unitinterval.md) | 119 | `result-track:5586140fa6506eda6602f5c8bf619a4bb2f0bf53f9f33c2b15488378485a5e4c` |
+| 3 | `theorem` | [MeasureTheory.Measure.exists_measurable_map_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/RepresentationNamespacedPublic.lean/declarations/measuretheory-measure-exists-measurable-map-eq.md) | 134 | `result-track:1ff782120049d8a2b8bee6f0274e5a4e6aa811b8a2dfa4b00875d0dcbd9670b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

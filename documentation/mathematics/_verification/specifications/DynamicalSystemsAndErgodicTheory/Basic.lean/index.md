@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/Basic.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/Basic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Basic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Basic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [constantAffineBound](../../../../DynamicalSystemsAndErgodicTheory/Basic.lean/declarations/constantaffinebound.md) | 21 | `declaration-track:d8d10b5d8dee37468a8040eafcd3eb30c09696b31b5dfd556e249a14c4566b0f` |
-| 2 | `theorem` | [constantAffineBound_zero](../../../../DynamicalSystemsAndErgodicTheory/Basic.lean/declarations/constantaffinebound-zero.md) | 25 | `result-track:b6120131aee498eac31be117cf5deaba871ca283b6aa5ef0edf174a8d5841d30` |
-| 3 | `theorem` | [constantAffineBound_succ](../../../../DynamicalSystemsAndErgodicTheory/Basic.lean/declarations/constantaffinebound-succ.md) | 28 | `result-track:d88b0bb156a14100765ace96a2ae0e605bbb6482a4655c2dec9d395e84504c24` |
-| 4 | `theorem` | [iterated_affine_defect_bound](../../../../DynamicalSystemsAndErgodicTheory/Basic.lean/declarations/iterated-affine-defect-bound.md) | 33 | `result-track:5d22ee4f7ccde501e488d6061b55081cae00c31dcfd3e492bf3f2ccef41dce76` |
+| 1 | `def` | [constantAffineBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Basic.lean/declarations/constantaffinebound.md) | 21 | `declaration-track:d8d10b5d8dee37468a8040eafcd3eb30c09696b31b5dfd556e249a14c4566b0f` |
+| 2 | `theorem` | [constantAffineBound_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Basic.lean/declarations/constantaffinebound-zero.md) | 25 | `result-track:b6120131aee498eac31be117cf5deaba871ca283b6aa5ef0edf174a8d5841d30` |
+| 3 | `theorem` | [constantAffineBound_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Basic.lean/declarations/constantaffinebound-succ.md) | 28 | `result-track:d88b0bb156a14100765ace96a2ae0e605bbb6482a4655c2dec9d395e84504c24` |
+| 4 | `theorem` | [iterated_affine_defect_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Basic.lean/declarations/iterated-affine-defect-bound.md) | 33 | `result-track:5d22ee4f7ccde501e488d6061b55081cae00c31dcfd3e492bf3f2ccef41dce76` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instCoalgebra](../../../../CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/instcoalgebra-source-edition-2.md) | 40 | `declaration-track:8a204213d953b4f60027631c2efca8f60e5f2a64105e6efe8ae81e2bc35a4a4f` |
-| 2 | `lemma` | [counit_single](../../../../CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/counit-single-source-edition-2.md) | 43 | `result-track:f35569f24e7ecb6c814d17cefaaf927e1056f7c8fd043cd71061702621a32e40` |
-| 3 | `lemma` | [comul_single](../../../../CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/comul-single.md) | 48 | `result-track:ce9468ecfcc8ac52e908d1fc0a1c58fe6625227000f2e45d53c27c06ff4d7938` |
-| 4 | `instance` | [instCoalgebra](../../../../CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/instcoalgebra.md) | 61 | `declaration-track:336aa828f08cb10c93802ecfaf89f79d6f39b731278a7e3876b59c07a9d618c3` |
-| 5 | `lemma` | [counit_single](../../../../CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/counit-single.md) | 64 | `result-track:cbcf22954c564cf1530969dfe46186e3f230bbee5d25a8c49d453f7853012948` |
-| 6 | `lemma` | [comul_single](../../../../CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/comul-single-source-edition-2.md) | 69 | `result-track:e1bafb376d5ffb87011ef89f02d695ac2177d058804eb668ea491405976fbf60` |
-| 7 | `instance` | [instCoalgebra](../../../../CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/instcoalgebra-source-edition-3.md) | 82 | `declaration-track:f65c56c3be65057b95b18565c84da449d49d9f55a41c0aac7eb0989002780994` |
-| 8 | `theorem` | [comul_C](../../../../CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/comul-c.md) | 89 | `result-track:16bef9ff169a1e86c2be27e5efa4729df9095c15e32ebb667739211a691b8d6c` |
-| 9 | `theorem` | [comul_C_mul_T](../../../../CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/comul-c-mul-t.md) | 95 | `result-track:85e0f14682afd8931673bda6252085073639523f5b57fd2446523aef59c3617b` |
-| 10 | `theorem` | [comul_C_mul_T_self](../../../../CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/comul-c-mul-t-self.md) | 100 | `result-track:87443f74d91f2f19d6ccd188e9a7fcc4232a22d018e6cc18acc22fce31abbd3d` |
-| 11 | `theorem` | [counit_C](../../../../CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/counit-c.md) | 105 | `result-track:15368e1a8e0161bb5cc22d8856337e6f2b62a30450c1fd2b5bde5917935e1cca` |
-| 12 | `theorem` | [counit_C_mul_T](../../../../CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/counit-c-mul-t.md) | 110 | `result-track:4dd0b46828ea4c6d88f6b47cacea9926d30739a5fb5abd23be5312cfab95fd8e` |
+| 1 | `instance` | [instCoalgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/instcoalgebra-source-edition-2.md) | 40 | `declaration-track:8a204213d953b4f60027631c2efca8f60e5f2a64105e6efe8ae81e2bc35a4a4f` |
+| 2 | `lemma` | [counit_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/counit-single-source-edition-2.md) | 43 | `result-track:f35569f24e7ecb6c814d17cefaaf927e1056f7c8fd043cd71061702621a32e40` |
+| 3 | `lemma` | [comul_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/comul-single.md) | 48 | `result-track:ce9468ecfcc8ac52e908d1fc0a1c58fe6625227000f2e45d53c27c06ff4d7938` |
+| 4 | `instance` | [instCoalgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/instcoalgebra.md) | 61 | `declaration-track:336aa828f08cb10c93802ecfaf89f79d6f39b731278a7e3876b59c07a9d618c3` |
+| 5 | `lemma` | [counit_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/counit-single.md) | 64 | `result-track:cbcf22954c564cf1530969dfe46186e3f230bbee5d25a8c49d453f7853012948` |
+| 6 | `lemma` | [comul_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/comul-single-source-edition-2.md) | 69 | `result-track:e1bafb376d5ffb87011ef89f02d695ac2177d058804eb668ea491405976fbf60` |
+| 7 | `instance` | [instCoalgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/instcoalgebra-source-edition-3.md) | 82 | `declaration-track:f65c56c3be65057b95b18565c84da449d49d9f55a41c0aac7eb0989002780994` |
+| 8 | `theorem` | [comul_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/comul-c.md) | 89 | `result-track:16bef9ff169a1e86c2be27e5efa4729df9095c15e32ebb667739211a691b8d6c` |
+| 9 | `theorem` | [comul_C_mul_T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/comul-c-mul-t.md) | 95 | `result-track:85e0f14682afd8931673bda6252085073639523f5b57fd2446523aef59c3617b` |
+| 10 | `theorem` | [comul_C_mul_T_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/comul-c-mul-t-self.md) | 100 | `result-track:87443f74d91f2f19d6ccd188e9a7fcc4232a22d018e6cc18acc22fce31abbd3d` |
+| 11 | `theorem` | [counit_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/counit-c.md) | 105 | `result-track:15368e1a8e0161bb5cc22d8856337e6f2b62a30450c1fd2b5bde5917935e1cca` |
+| 12 | `theorem` | [counit_C_mul_T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CoalgebraMonoidAlgebraNamespaced.lean/declarations/counit-c-mul-t.md) | 110 | `result-track:4dd0b46828ea4c6d88f6b47cacea9926d30739a5fb5abd23be5312cfab95fd8e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

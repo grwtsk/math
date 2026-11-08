@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/OctahedralIntegerDirections.lean/index.md) · [Full source](../../../../Combinatorics/OctahedralIntegerDirections.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OctahedralIntegerDirections.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OctahedralIntegerDirections.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Boolean.Cube.PrismaticGeometry.OctahedralChain` — import line 19; external provider; requires a separately pinned dependency.
-- [Octahedral Direction Shadow Data](../../../../MathematicalLogicAndFoundations/GeneralLogic/OctahedralDirectionShadowData.lean/index.md) — import line 20; pinned internal source present.
+- [Octahedral Direction Shadow Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OctahedralDirectionShadowData.lean/index.md) — import line 20; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OctahedralExactVectorExport](../../../../Combinatorics/OctahedralIntegerDirections.lean/declarations/octahedralexactvectorexport.md) | 42 | `declaration-track:16cb73cfd15819647ddc898f90bfecfde477b45884aa8e62f024d3ef56ad59c1` |
-| 2 | `def` | [octahedralExactDirection](../../../../Combinatorics/OctahedralIntegerDirections.lean/declarations/octahedralexactdirection.md) | 48 | `declaration-track:c29c291ab2c092ca356dfec85d752aad4a982b05b6194ef427b2c7ede308e6b3` |
-| 3 | `def` | [octahedralExactNormSquared](../../../../Combinatorics/OctahedralIntegerDirections.lean/declarations/octahedralexactnormsquared.md) | 57 | `declaration-track:67f3b969a82a1b75c1d11fe4c2142200daff9387fa7699ef7b0ce9f67a37c49b` |
-| 4 | `def` | [octahedralNegateExactVector](../../../../Combinatorics/OctahedralIntegerDirections.lean/declarations/octahedralnegateexactvector.md) | 61 | `declaration-track:428a9c6bad85cab5d485c2c2c3c70c54b712961f1bcf01f7d3640901f163fcf8` |
-| 5 | `def` | [OctahedralExactDirectionSound](../../../../Combinatorics/OctahedralIntegerDirections.lean/declarations/octahedralexactdirectionsound.md) | 65 | `declaration-track:3b1b5e68e78c29fdc4a54ce3d9bc781b70dcc26b50222a285a3e9ecc2a2ba9f9` |
-| 6 | `theorem` | [octahedralExactDirectionSoundProof](../../../../Combinatorics/OctahedralIntegerDirections.lean/declarations/octahedralexactdirectionsoundproof.md) | 71 | `result-track:31b7eeff20d686f4565448a7520e8899194ec12d27f386e49e33a57177974fb7` |
+| 1 | `structure` | [OctahedralExactVectorExport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OctahedralIntegerDirections.lean/declarations/octahedralexactvectorexport.md) | 42 | `declaration-track:16cb73cfd15819647ddc898f90bfecfde477b45884aa8e62f024d3ef56ad59c1` |
+| 2 | `def` | [octahedralExactDirection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OctahedralIntegerDirections.lean/declarations/octahedralexactdirection.md) | 48 | `declaration-track:c29c291ab2c092ca356dfec85d752aad4a982b05b6194ef427b2c7ede308e6b3` |
+| 3 | `def` | [octahedralExactNormSquared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OctahedralIntegerDirections.lean/declarations/octahedralexactnormsquared.md) | 57 | `declaration-track:67f3b969a82a1b75c1d11fe4c2142200daff9387fa7699ef7b0ce9f67a37c49b` |
+| 4 | `def` | [octahedralNegateExactVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OctahedralIntegerDirections.lean/declarations/octahedralnegateexactvector.md) | 61 | `declaration-track:428a9c6bad85cab5d485c2c2c3c70c54b712961f1bcf01f7d3640901f163fcf8` |
+| 5 | `def` | [OctahedralExactDirectionSound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OctahedralIntegerDirections.lean/declarations/octahedralexactdirectionsound.md) | 65 | `declaration-track:3b1b5e68e78c29fdc4a54ce3d9bc781b70dcc26b50222a285a3e9ecc2a2ba9f9` |
+| 6 | `theorem` | [octahedralExactDirectionSoundProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OctahedralIntegerDirections.lean/declarations/octahedralexactdirectionsoundproof.md) | 71 | `result-track:31b7eeff20d686f4565448a7520e8899194ec12d27f386e49e33a57177974fb7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

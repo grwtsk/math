@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupBasicPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupBasicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupBasicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupBasicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [planeConformalMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupBasicPublic.lean/declarations/planeconformalmatrix.md) | 26 | `declaration-track:50d7a993852a27154a41b5ac1052d425e54cb9b8e93665ddbb7077de97a91a33` |
-| 2 | `lemma` | [mem_center_iff_val_mem_range_scalar](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupBasicPublic.lean/declarations/mem-center-iff-val-mem-range-scalar.md) | 42 | `result-track:f2bb9af01843ae55bfb4fe88ed6fd33f14eaef511ba9cf69e31b7c35e68f974d` |
-| 3 | `lemma` | [center_eq_range_scalar](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupBasicPublic.lean/declarations/center-eq-range-scalar.md) | 52 | `result-track:96fd949c6243614ad98216b563238c3ce217c8093bf6d71e73a3f78770070076` |
-| 4 | `lemma` | [map_center_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupBasicPublic.lean/declarations/map-center-le.md) | 71 | `result-track:959b6a32a09049b2a96fb4643bd2816c2defb3340f9a47bec5fe9408a3ab198f` |
-| 5 | `lemma` | [SpecialLinearGroup.toGL_mem_center_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupBasicPublic.lean/declarations/speciallineargroup-togl-mem-center-iff.md) | 82 | `result-track:b1c627ae0aeca87f6d24311a6a25f827771b1a4e1baea61c8c23599dadc31f1a` |
+| 1 | `def` | [planeConformalMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupBasicPublic.lean/declarations/planeconformalmatrix.md) | 26 | `declaration-track:50d7a993852a27154a41b5ac1052d425e54cb9b8e93665ddbb7077de97a91a33` |
+| 2 | `lemma` | [mem_center_iff_val_mem_range_scalar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupBasicPublic.lean/declarations/mem-center-iff-val-mem-range-scalar.md) | 42 | `result-track:f2bb9af01843ae55bfb4fe88ed6fd33f14eaef511ba9cf69e31b7c35e68f974d` |
+| 3 | `lemma` | [center_eq_range_scalar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupBasicPublic.lean/declarations/center-eq-range-scalar.md) | 52 | `result-track:96fd949c6243614ad98216b563238c3ce217c8093bf6d71e73a3f78770070076` |
+| 4 | `lemma` | [map_center_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupBasicPublic.lean/declarations/map-center-le.md) | 71 | `result-track:959b6a32a09049b2a96fb4643bd2816c2defb3340f9a47bec5fe9408a3ab198f` |
+| 5 | `lemma` | [SpecialLinearGroup.toGL_mem_center_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupBasicPublic.lean/declarations/speciallineargroup-togl-mem-center-iff.md) | 82 | `result-track:b1c627ae0aeca87f6d24311a6a25f827771b1a4e1baea61c8c23599dadc31f1a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

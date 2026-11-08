@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.FinitePowerPatch`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinitePowerPatch.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPowerTaylor`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripPowerTaylor.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.FinitePowerPatch`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinitePowerPatch.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPowerTaylor`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripPowerTaylor.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,21 +58,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-7.md) | 12 | `declaration-track:616259b220fecfc0ab2eee435f81376d2ada0e18e7b148cfd0e09a9354086071` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-9.md) | 14 | `declaration-track:7f471702d9e6d152abb8fabcb7b581a9b73b6a699a1357248e211fe6ce5d2018` |
-| 3 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-5.md) | 18 | `declaration-track:4440d1eea8c630fb90166bae85e62c98a78e4456130f6c203660278de23b1e0f` |
-| 4 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-13.md) | 21 | `declaration-track:e27e9e5200329c846634b28b6fb9a8f94d6372fa9b60fa2857084269d7a9c529` |
-| 5 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-3.md) | 24 | `declaration-track:216719592a44cd812903f4a82df1cf20ea024a63ca6b0bc2e10cfcd6ad365f7a` |
-| 6 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-10.md) | 31 | `declaration-track:8ea46fe9b0adf512b62ad5b56f953f151f9fae3dfc957ab38699a9b646748bc7` |
-| 7 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-8.md) | 38 | `declaration-track:7b70e4d0bc2f60904b518daf9824b2c505905fcd68b88dd92a5d2894c0669e02` |
-| 8 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-2.md) | 41 | `declaration-track:16dd35ea035376ee0a561e8dbee50f560b081804f291c91cc154c691792b6d6f` |
-| 9 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-15.md) | 44 | `declaration-track:ff1f15aa89550c9a17b3395b497aeffabab8719a5e0227a915c3749118032003` |
-| 10 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example.md) | 48 | `declaration-track:14a3b934015236c66d55432070da93ad96579cdba969d112e4a90657bc861473` |
-| 11 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-12.md) | 57 | `declaration-track:da338e79e88a6fcb98df2a0bb2fec3b4b3562e3228a59c0cc7e47d982cb3c010` |
-| 12 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-14.md) | 58 | `declaration-track:fb85436a9fcd97a9c507d314080de660cf7b1f394e13e12e19292e344714c887` |
-| 13 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-11.md) | 59 | `declaration-track:d1ea4c9b69550225ad03771949a8fcd154817d73672fc3aa348d0d7289a19c16` |
-| 14 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-4.md) | 60 | `declaration-track:22acf37abfb0fa46b8fd2a0f72c11257a1caa43d253eac2bdcddd74e0e9e5860` |
-| 15 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-6.md) | 64 | `declaration-track:48d3e07708a64ef9003bfb4dfd36570f185c67109456437f01d12faaae9dfdef` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-7.md) | 12 | `declaration-track:616259b220fecfc0ab2eee435f81376d2ada0e18e7b148cfd0e09a9354086071` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-9.md) | 14 | `declaration-track:7f471702d9e6d152abb8fabcb7b581a9b73b6a699a1357248e211fe6ce5d2018` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-5.md) | 18 | `declaration-track:4440d1eea8c630fb90166bae85e62c98a78e4456130f6c203660278de23b1e0f` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-13.md) | 21 | `declaration-track:e27e9e5200329c846634b28b6fb9a8f94d6372fa9b60fa2857084269d7a9c529` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-3.md) | 24 | `declaration-track:216719592a44cd812903f4a82df1cf20ea024a63ca6b0bc2e10cfcd6ad365f7a` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-10.md) | 31 | `declaration-track:8ea46fe9b0adf512b62ad5b56f953f151f9fae3dfc957ab38699a9b646748bc7` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-8.md) | 38 | `declaration-track:7b70e4d0bc2f60904b518daf9824b2c505905fcd68b88dd92a5d2894c0669e02` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-2.md) | 41 | `declaration-track:16dd35ea035376ee0a561e8dbee50f560b081804f291c91cc154c691792b6d6f` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-15.md) | 44 | `declaration-track:ff1f15aa89550c9a17b3395b497aeffabab8719a5e0227a915c3749118032003` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example.md) | 48 | `declaration-track:14a3b934015236c66d55432070da93ad96579cdba969d112e4a90657bc861473` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-12.md) | 57 | `declaration-track:da338e79e88a6fcb98df2a0bb2fec3b4b3562e3228a59c0cc7e47d982cb3c010` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-14.md) | 58 | `declaration-track:fb85436a9fcd97a9c507d314080de660cf7b1f394e13e12e19292e344714c887` |
+| 13 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-11.md) | 59 | `declaration-track:d1ea4c9b69550225ad03771949a8fcd154817d73672fc3aa348d0d7289a19c16` |
+| 14 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-4.md) | 60 | `declaration-track:22acf37abfb0fa46b8fd2a0f72c11257a1caa43d253eac2bdcddd74e0e9e5860` |
+| 15 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/declarations/example-source-edition-6.md) | 64 | `declaration-track:48d3e07708a64ef9003bfb4dfd36570f185c67109456437f01d12faaae9dfdef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

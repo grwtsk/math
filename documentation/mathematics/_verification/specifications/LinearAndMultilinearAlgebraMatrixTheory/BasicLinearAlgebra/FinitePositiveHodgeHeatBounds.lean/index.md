@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinitePositiveHodgeHeatBounds.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinitePositiveHodgeHeatBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinitePositiveHodgeHeatBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinitePositiveHodgeHeatBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.FinitePositiveHodgeHeat`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinitePositiveHodgeHeat.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.FinitePositiveHodgeHeat`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinitePositiveHodgeHeat.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [heat_gap_contracts](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinitePositiveHodgeHeatBounds.lean/declarations/heat-gap-contracts.md) | 12 | `result-track:d8ed84f316f739b0b91a5d048475fcc122c2d91325503901e5fd63c16323169c` |
-| 2 | `theorem` | [energy_smul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinitePositiveHodgeHeatBounds.lean/declarations/energy-smul.md) | 58 | `result-track:aca952e371e084905e19ea82784a4be22be4e17efdbf7915a8b099b77c4235f3` |
-| 3 | `theorem` | [energy_inv_smul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinitePositiveHodgeHeatBounds.lean/declarations/energy-inv-smul.md) | 68 | `result-track:434cd418793343e59c5323aeb92fd337f7e36d5d9c66b1861cb44c231f9bbae9` |
-| 4 | `def` | [signedQuadratic](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinitePositiveHodgeHeatBounds.lean/declarations/signedquadratic.md) | 73 | `declaration-track:5a63ec42e78464632f9141fc69a628afd33691669ea7741ac54f574d753f9471` |
-| 5 | `theorem` | [signedQuadratic_negative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinitePositiveHodgeHeatBounds.lean/declarations/signedquadratic-negative.md) | 77 | `result-track:330d5c537fcdb22e099b263b5f51fc5c445c42ba93be1cdf748fd238f79766ea` |
+| 1 | `theorem` | [heat_gap_contracts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinitePositiveHodgeHeatBounds.lean/declarations/heat-gap-contracts.md) | 12 | `result-track:d8ed84f316f739b0b91a5d048475fcc122c2d91325503901e5fd63c16323169c` |
+| 2 | `theorem` | [energy_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinitePositiveHodgeHeatBounds.lean/declarations/energy-smul.md) | 58 | `result-track:aca952e371e084905e19ea82784a4be22be4e17efdbf7915a8b099b77c4235f3` |
+| 3 | `theorem` | [energy_inv_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinitePositiveHodgeHeatBounds.lean/declarations/energy-inv-smul.md) | 68 | `result-track:434cd418793343e59c5323aeb92fd337f7e36d5d9c66b1861cb44c231f9bbae9` |
+| 4 | `def` | [signedQuadratic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinitePositiveHodgeHeatBounds.lean/declarations/signedquadratic.md) | 73 | `declaration-track:5a63ec42e78464632f9141fc69a628afd33691669ea7741ac54f574d753f9471` |
+| 5 | `theorem` | [signedQuadratic_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinitePositiveHodgeHeatBounds.lean/declarations/signedquadratic-negative.md) | 77 | `result-track:330d5c537fcdb22e099b263b5f51fc5c445c42ba93be1cdf748fd238f79766ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

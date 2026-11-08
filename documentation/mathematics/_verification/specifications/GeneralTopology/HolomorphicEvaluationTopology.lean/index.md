@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/HolomorphicEvaluationTopology.lean/index.md) · [Full source](../../../../GeneralTopology/HolomorphicEvaluationTopology.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicEvaluationTopology.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicEvaluationTopology.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.HolomorphicEvaluationSpectrum`](../../../../FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicEvaluationSpectrum`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicEvaluationSpectrum.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [section_continuous](../../../../GeneralTopology/HolomorphicEvaluationTopology.lean/declarations/section-continuous.md) | 13 | `result-track:b5473200913b644e0b9494d256fa5faf00ce2e9ff79934a41fd64a6910d143d6` |
-| 2 | `theorem` | [preimage_zeroLocus](../../../../GeneralTopology/HolomorphicEvaluationTopology.lean/declarations/preimage-zerolocus.md) | 23 | `result-track:0536cc9c1838b9158de622ab40b419aec91507e947ddd6a6705adec7fb957ec8` |
-| 3 | `theorem` | [pointToSpectrum_continuous](../../../../GeneralTopology/HolomorphicEvaluationTopology.lean/declarations/pointtospectrum-continuous.md) | 40 | `result-track:55b3134d33195a01bfb129d93cbd5b3f692a558fb1970762876cca3f1dda5c12` |
-| 4 | `def` | [continuousPointToSpectrum](../../../../GeneralTopology/HolomorphicEvaluationTopology.lean/declarations/continuouspointtospectrum.md) | 50 | `declaration-track:2c40d88c88c133dfb8eda96d7b33e9069e85f89761dda68ff91ff3f666cb7c86` |
-| 5 | `def` | [constantSection](../../../../GeneralTopology/HolomorphicEvaluationTopology.lean/declarations/constantsection.md) | 56 | `declaration-track:4fdbbae98bfbc0c6e572f51f1b56643bcd24ab9f769b3a17f64b8c1884afbc8b` |
-| 6 | `def` | [coordinateSection](../../../../GeneralTopology/HolomorphicEvaluationTopology.lean/declarations/coordinatesection.md) | 61 | `declaration-track:659a12fb6d32205cf2a994548110945a8ce8fc9d969fbfa85b15579d8e55494b` |
-| 7 | `theorem` | [evaluationRingHom_surjective](../../../../GeneralTopology/HolomorphicEvaluationTopology.lean/declarations/evaluationringhom-surjective.md) | 66 | `result-track:8352d8098f60e7aedac497cf23eee1aef353369c96a2576b4b534f481847c618` |
-| 8 | `theorem` | [pointToSpectrum_injective](../../../../GeneralTopology/HolomorphicEvaluationTopology.lean/declarations/pointtospectrum-injective.md) | 75 | `result-track:03db7c846281edcb48617e5ab29f2592be28a85770741050cf38ad0dd06f2b06` |
-| 9 | `theorem` | [continuous_restriction_naturality](../../../../GeneralTopology/HolomorphicEvaluationTopology.lean/declarations/continuous-restriction-naturality.md) | 89 | `result-track:f1861bf8ac3bae0efda3abeb16d6f48bc1e6c3f299e9bc567876a4b333a4258a` |
+| 1 | `theorem` | [section_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicEvaluationTopology.lean/declarations/section-continuous.md) | 13 | `result-track:b5473200913b644e0b9494d256fa5faf00ce2e9ff79934a41fd64a6910d143d6` |
+| 2 | `theorem` | [preimage_zeroLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicEvaluationTopology.lean/declarations/preimage-zerolocus.md) | 23 | `result-track:0536cc9c1838b9158de622ab40b419aec91507e947ddd6a6705adec7fb957ec8` |
+| 3 | `theorem` | [pointToSpectrum_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicEvaluationTopology.lean/declarations/pointtospectrum-continuous.md) | 40 | `result-track:55b3134d33195a01bfb129d93cbd5b3f692a558fb1970762876cca3f1dda5c12` |
+| 4 | `def` | [continuousPointToSpectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicEvaluationTopology.lean/declarations/continuouspointtospectrum.md) | 50 | `declaration-track:2c40d88c88c133dfb8eda96d7b33e9069e85f89761dda68ff91ff3f666cb7c86` |
+| 5 | `def` | [constantSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicEvaluationTopology.lean/declarations/constantsection.md) | 56 | `declaration-track:4fdbbae98bfbc0c6e572f51f1b56643bcd24ab9f769b3a17f64b8c1884afbc8b` |
+| 6 | `def` | [coordinateSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicEvaluationTopology.lean/declarations/coordinatesection.md) | 61 | `declaration-track:659a12fb6d32205cf2a994548110945a8ce8fc9d969fbfa85b15579d8e55494b` |
+| 7 | `theorem` | [evaluationRingHom_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicEvaluationTopology.lean/declarations/evaluationringhom-surjective.md) | 66 | `result-track:8352d8098f60e7aedac497cf23eee1aef353369c96a2576b4b534f481847c618` |
+| 8 | `theorem` | [pointToSpectrum_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicEvaluationTopology.lean/declarations/pointtospectrum-injective.md) | 75 | `result-track:03db7c846281edcb48617e5ab29f2592be28a85770741050cf38ad0dd06f2b06` |
+| 9 | `theorem` | [continuous_restriction_naturality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicEvaluationTopology.lean/declarations/continuous-restriction-naturality.md) | 89 | `result-track:f1861bf8ac3bae0efda3abeb16d6f48bc1e6c3f299e9bc567876a4b333a4258a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

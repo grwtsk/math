@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingRat.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingRat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingRat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingRat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instIsOrderedAddMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingRat.lean/declarations/instisorderedaddmonoid.md) | 27 | `declaration-track:f224e8b0dab2ec7472aa888e6898b96322d38cb4286150dbcdc2b9a63d42c508` |
-| 2 | `instance` | [instZeroLEOneClass](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingRat.lean/declarations/instzeroleoneclass.md) | 30 | `declaration-track:7489577d6277a1f4244c332b57adc9a1f27d1da8dc28a066b838092fbadf0477` |
-| 3 | `instance` | [instIsStrictOrderedRing](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingRat.lean/declarations/instisstrictorderedring.md) | 33 | `declaration-track:972f34a4c25ba65257d98840785761fff6bb029b13a16ec33f1a8e5dec138ab1` |
+| 1 | `instance` | [instIsOrderedAddMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingRat.lean/declarations/instisorderedaddmonoid.md) | 27 | `declaration-track:f224e8b0dab2ec7472aa888e6898b96322d38cb4286150dbcdc2b9a63d42c508` |
+| 2 | `instance` | [instZeroLEOneClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingRat.lean/declarations/instzeroleoneclass.md) | 30 | `declaration-track:7489577d6277a1f4244c332b57adc9a1f27d1da8dc28a066b838092fbadf0477` |
+| 3 | `instance` | [instIsStrictOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingRat.lean/declarations/instisstrictorderedring.md) | 33 | `declaration-track:972f34a4c25ba65257d98840785761fff6bb029b13a16ec33f1a8e5dec138ab1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

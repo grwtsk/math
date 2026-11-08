@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConfigNamespacedPublicToH1Config.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConfigNamespacedPublicToH1Config.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConfigNamespacedPublicToH1Config.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConfigNamespacedPublicToH1Config.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Config](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConfigNamespacedPublicToH1Config.lean/declarations/config.md) | 36 | `declaration-track:7a51eb364782bd5185fbfd2a12d345dd289f426b92c163ab813c0fd97a4d7838` |
-| 2 | `def` | [toH1Config](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConfigNamespacedPublicToH1Config.lean/declarations/toh1config.md) | 183 | `declaration-track:be05ba2edf0ad7b5f71822057f47e2beff0de3ff0ddb69d141c39b0c2102b11d` |
+| 1 | `structure` | [Config](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConfigNamespacedPublicToH1Config.lean/declarations/config.md) | 36 | `declaration-track:7a51eb364782bd5185fbfd2a12d345dd289f426b92c163ab813c0fd97a4d7838` |
+| 2 | `def` | [toH1Config](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConfigNamespacedPublicToH1Config.lean/declarations/toh1config.md) | 183 | `declaration-track:be05ba2edf0ad7b5f71822057f47e2beff0de3ff0ddb69d141c39b0c2102b11d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

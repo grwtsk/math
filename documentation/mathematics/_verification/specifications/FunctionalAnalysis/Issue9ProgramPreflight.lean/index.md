@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/Issue9ProgramPreflight.lean/index.md) · [Full source](../../../../FunctionalAnalysis/Issue9ProgramPreflight.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Issue9ProgramPreflight.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Issue9ProgramPreflight.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CoordinationChecked.exact_candidate](../../../../FunctionalAnalysis/Issue9ProgramPreflight.lean/declarations/formalresearch-spectralunificationofcomputabilityandalgebraicsymmetry-co.md) | 4 | `result-track:8aed965d138bdc829830862efae7de010dbc4eb5f3f3574fe804665777af1000` |
+| 1 | `theorem` | [FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CoordinationChecked.exact_candidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Issue9ProgramPreflight.lean/declarations/formalresearch-spectralunificationofcomputabilityandalgebraicsymmetry-co.md) | 4 | `result-track:8aed965d138bdc829830862efae7de010dbc4eb5f3f3574fe804665777af1000` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

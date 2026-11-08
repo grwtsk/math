@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SecondCountableSpace.lean/index.md) · [Full source](../../../../GeneralTopology/SecondCountableSpace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SecondCountableSpace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SecondCountableSpace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [compactOpen_eq_generateFrom](../../../../GeneralTopology/SecondCountableSpace.lean/declarations/compactopen-eq-generatefrom.md) | 24 | `result-track:eca0781aa97e20e58e9f1aa22ff623cc0205c05f7b2c8cc730eb7bbd75c4b774` |
-| 2 | `theorem` | [secondCountableTopology](../../../../GeneralTopology/SecondCountableSpace.lean/declarations/secondcountabletopology.md) | 68 | `result-track:ce2dcfe80b7a09335a5f5fdf34dcf637242e8260ea81a6456af03806095c430a` |
-| 3 | `instance` | [instSecondCountableTopology](../../../../GeneralTopology/SecondCountableSpace.lean/declarations/instsecondcountabletopology.md) | 80 | `declaration-track:375a36c79fd52bffb2e9cb66c0a34523da9eee650cd3c97f83899674fe83d2be` |
-| 4 | `instance` | [instSeparableSpace](../../../../GeneralTopology/SecondCountableSpace.lean/declarations/instseparablespace.md) | 104 | `declaration-track:6591c0d323186ec97db752c50b7612be398246f1906a1981b84f3df5f106732e` |
+| 1 | `theorem` | [compactOpen_eq_generateFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SecondCountableSpace.lean/declarations/compactopen-eq-generatefrom.md) | 24 | `result-track:eca0781aa97e20e58e9f1aa22ff623cc0205c05f7b2c8cc730eb7bbd75c4b774` |
+| 2 | `theorem` | [secondCountableTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SecondCountableSpace.lean/declarations/secondcountabletopology.md) | 68 | `result-track:ce2dcfe80b7a09335a5f5fdf34dcf637242e8260ea81a6456af03806095c430a` |
+| 3 | `instance` | [instSecondCountableTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SecondCountableSpace.lean/declarations/instsecondcountabletopology.md) | 80 | `declaration-track:375a36c79fd52bffb2e9cb66c0a34523da9eee650cd3c97f83899674fe83d2be` |
+| 4 | `instance` | [instSeparableSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SecondCountableSpace.lean/declarations/instseparablespace.md) | 104 | `declaration-track:6591c0d323186ec97db752c50b7612be398246f1906a1981b84f3df5f106732e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

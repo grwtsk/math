@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/ChooseNamespaced.lean/index.md) · [Full source](../../../../SpecialFunctions/ChooseNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ChooseNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ChooseNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isEquivalent_descFactorial](../../../../SpecialFunctions/ChooseNamespaced.lean/declarations/isequivalent-descfactorial.md) | 34 | `result-track:aea78ab799194c0262b8ca58add2150775cc7ca549385131416e7069b2d94116` |
-| 2 | `theorem` | [isEquivalent_choose](../../../../SpecialFunctions/ChooseNamespaced.lean/declarations/isequivalent-choose.md) | 47 | `result-track:4338ae5cb3df8911420d0582588398d217e3441c1e0daa9163209c6d0ba29664` |
-| 3 | `theorem` | [isTheta_choose](../../../../SpecialFunctions/ChooseNamespaced.lean/declarations/istheta-choose.md) | 56 | `result-track:d8bf68d218325a01494466bf0102d35bbef8871e4bd7de83f75c5a7883e385e2` |
+| 1 | `lemma` | [isEquivalent_descFactorial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ChooseNamespaced.lean/declarations/isequivalent-descfactorial.md) | 34 | `result-track:aea78ab799194c0262b8ca58add2150775cc7ca549385131416e7069b2d94116` |
+| 2 | `theorem` | [isEquivalent_choose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ChooseNamespaced.lean/declarations/isequivalent-choose.md) | 47 | `result-track:4338ae5cb3df8911420d0582588398d217e3441c1e0daa9163209c6d0ba29664` |
+| 3 | `theorem` | [isTheta_choose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ChooseNamespaced.lean/declarations/istheta-choose.md) | 56 | `result-track:d8bf68d218325a01494466bf0102d35bbef8871e4bd7de83f75c5a7883e385e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualSourceConsumer.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualSourceConsumer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualSourceConsumer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualSourceConsumer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [smoothedTangentReadout](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualSourceConsumer.lean/declarations/smoothedtangentreadout.md) | 34 | `declaration-track:e74820344426f7b64e63d1ecbbf4a73c4f2e41afaa9ac5b729d7cdfcafabf0b4` |
-| 2 | `def` | [smoothedTangentPrice](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualSourceConsumer.lean/declarations/smoothedtangentprice.md) | 41 | `declaration-track:d2ca5a16a712c0a6c224538ae7305ce5010eef238244574b58d138015218724e` |
-| 3 | `theorem` | [compensatedSourceSum_eq_finiteCompensatedReadout](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualSourceConsumer.lean/declarations/compensatedsourcesum-eq-finitecompensatedreadout.md) | 51 | `result-track:6e573a82e52b28ea767ad68feae9590722a0e8c06f70aebc03e967ac4a4b7d87` |
-| 4 | `theorem` | [compensatedSourceSum_smoothed_tangent_error](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualSourceConsumer.lean/declarations/compensatedsourcesum-smoothed-tangent-error.md) | 61 | `result-track:92ac44e389b3108c437c6b2d4fea00e7eb58a2177512e9009305d054e388ab88` |
-| 5 | `theorem` | [estimate_of_smoothed_tangent_cap](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualSourceConsumer.lean/declarations/estimate-of-smoothed-tangent-cap.md) | 72 | `result-track:aa755cd626b6d0d1726ed3a3745ce339891490554b6bcc669924d5d219be8b1b` |
+| 1 | `def` | [smoothedTangentReadout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualSourceConsumer.lean/declarations/smoothedtangentreadout.md) | 34 | `declaration-track:e74820344426f7b64e63d1ecbbf4a73c4f2e41afaa9ac5b729d7cdfcafabf0b4` |
+| 2 | `def` | [smoothedTangentPrice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualSourceConsumer.lean/declarations/smoothedtangentprice.md) | 41 | `declaration-track:d2ca5a16a712c0a6c224538ae7305ce5010eef238244574b58d138015218724e` |
+| 3 | `theorem` | [compensatedSourceSum_eq_finiteCompensatedReadout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualSourceConsumer.lean/declarations/compensatedsourcesum-eq-finitecompensatedreadout.md) | 51 | `result-track:6e573a82e52b28ea767ad68feae9590722a0e8c06f70aebc03e967ac4a4b7d87` |
+| 4 | `theorem` | [compensatedSourceSum_smoothed_tangent_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualSourceConsumer.lean/declarations/compensatedsourcesum-smoothed-tangent-error.md) | 61 | `result-track:92ac44e389b3108c437c6b2d4fea00e7eb58a2177512e9009305d054e388ab88` |
+| 5 | `theorem` | [estimate_of_smoothed_tangent_cap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualSourceConsumer.lean/declarations/estimate-of-smoothed-tangent-cap.md) | 72 | `result-track:aa755cd626b6d0d1726ed3a3745ce339891490554b6bcc669924d5d219be8b1b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EcosystemNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EcosystemNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EcosystemNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EcosystemNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ThinkMathlibEcosystem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EcosystemNamespaced.lean/declarations/thinkmathlibecosystem.md) | 13 | `declaration-track:b680278aba5b3eec84b8183ad4bfd6579d5bfd8d19c71a183da3d00a43b1fc19` |
-| 2 | `def` | [ThinkMathlibEcosystem.noVisualAuthority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EcosystemNamespaced.lean/declarations/thinkmathlibecosystem-novisualauthority.md) | 36 | `declaration-track:9d96a117422a84593d04186ebf212ebc14fee39d279fa9f81c98f18665430483` |
+| 1 | `structure` | [ThinkMathlibEcosystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EcosystemNamespaced.lean/declarations/thinkmathlibecosystem.md) | 13 | `declaration-track:b680278aba5b3eec84b8183ad4bfd6579d5bfd8d19c71a183da3d00a43b1fc19` |
+| 2 | `def` | [ThinkMathlibEcosystem.noVisualAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EcosystemNamespaced.lean/declarations/thinkmathlibecosystem-novisualauthority.md) | 36 | `declaration-track:9d96a117422a84593d04186ebf212ebc14fee39d279fa9f81c98f18665430483` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

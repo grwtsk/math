@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/PiBoundsNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/PiBoundsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PiBoundsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PiBoundsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,23 +57,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../RealFunctions/PiBoundsNamespaced.lean/declarations/macro-rules.md) | 30 | `declaration-track:86d45c9779a007bbe1dcdc9a4ba731f4b06a104505811fcd04da4657164fb818` |
-| 2 | `theorem` | [pi_gt_sqrtTwoAddSeries](../../../../RealFunctions/PiBoundsNamespaced.lean/declarations/pi-gt-sqrttwoaddseries.md) | 38 | `result-track:757f06530345ffe13c9cdc340ec3ff1313b1310a316bd76bde91fc1ebe5d2496` |
-| 3 | `theorem` | [pi_lt_sqrtTwoAddSeries](../../../../RealFunctions/PiBoundsNamespaced.lean/declarations/pi-lt-sqrttwoaddseries.md) | 47 | `result-track:95fd7420db699cb22777993602f19d9e8d74180dc89ff305f825b322d26f96be` |
-| 4 | `theorem` | [pi_lower_bound_start](../../../../RealFunctions/PiBoundsNamespaced.lean/declarations/pi-lower-bound-start.md) | 81 | `result-track:d9f21f320f2c0f7b206f1b4b18f7544e903028031abd03ffecdfd7ded5cf335b` |
-| 5 | `theorem` | [sqrtTwoAddSeries_step_up](../../../../RealFunctions/PiBoundsNamespaced.lean/declarations/sqrttwoaddseries-step-up.md) | 89 | `result-track:ecb3341e73233d1f243868f2131dc047078de7970c379860af0d73d04b7e3563` |
-| 6 | `def` | [numDen](../../../../RealFunctions/PiBoundsNamespaced.lean/declarations/numden.md) | 108 | `declaration-track:058082517d34b440bd5a048539314d62bc87df9dd9e128ad7a86085c95c48330` |
-| 7 | `elab` | [(anonymous)](../../../../RealFunctions/PiBoundsNamespaced.lean/declarations/elab.md) | 115 | `declaration-track:1d98f2f6a5e9b217eed3d3917cf45da705067a703bbc36e16facdf626b2974f9` |
-| 8 | `theorem` | [pi_upper_bound_start](../../../../RealFunctions/PiBoundsNamespaced.lean/declarations/pi-upper-bound-start.md) | 132 | `result-track:d509a4ee0ad2ddf483fa3dd2d99467791ff4ee734a540b2588f79ee0431a9a47` |
-| 9 | `theorem` | [sqrtTwoAddSeries_step_down](../../../../RealFunctions/PiBoundsNamespaced.lean/declarations/sqrttwoaddseries-step-down.md) | 143 | `result-track:fa4ed871131fdf36af3f4afd8af9efda3abbfebd556e2767e357f237f01dc6aa` |
-| 10 | `elab` | [(anonymous)](../../../../RealFunctions/PiBoundsNamespaced.lean/declarations/elab-source-edition-2.md) | 161 | `declaration-track:3bea36c2a7af73d33e9753674e5962a6ad6f3f13d5042a6d5892099baa050462` |
-| 11 | `theorem` | [pi_gt_three](../../../../RealFunctions/PiBoundsNamespaced.lean/declarations/pi-gt-three.md) | 175 | `result-track:11221ee90a5e4517dc2d69af15b7e1a1554b9d406c7b473fcc9b7279f454c402` |
-| 12 | `theorem` | [pi_gt_314](../../../../RealFunctions/PiBoundsNamespaced.lean/declarations/pi-gt-314.md) | 179 | `result-track:2b6178f8c95d59b11d0e4f4d77d03e07d1c3da3eafd258c0028d280ac0e255f0` |
-| 13 | `theorem` | [pi_lt_315](../../../../RealFunctions/PiBoundsNamespaced.lean/declarations/pi-lt-315.md) | 183 | `result-track:dd13b69f3b710203e5958c91286810c87e5a764765dab75847690e1bad2e1a69` |
-| 14 | `theorem` | [pi_gt_31415](../../../../RealFunctions/PiBoundsNamespaced.lean/declarations/pi-gt-31415.md) | 187 | `result-track:0ec9f1ba4b49d47e4d3fe255236622304b73fd470bc14353be79e2e544214189` |
-| 15 | `theorem` | [pi_lt_31416](../../../../RealFunctions/PiBoundsNamespaced.lean/declarations/pi-lt-31416.md) | 192 | `result-track:20c41c00d743cc3d96731c349d80f4db8b054c63debca7e7ec46234492f397f7` |
-| 16 | `theorem` | [pi_gt_3141592](../../../../RealFunctions/PiBoundsNamespaced.lean/declarations/pi-gt-3141592.md) | 198 | `result-track:156a13f1e8434263b82661eac455c74f27a2c68b90c56ccd091bfba0f06c4889` |
-| 17 | `theorem` | [pi_lt_3141593](../../../../RealFunctions/PiBoundsNamespaced.lean/declarations/pi-lt-3141593.md) | 204 | `result-track:abd1f8024890884fa8032f496ad9b3e748d434737088272fb3e0bf5ef1ee0c65` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PiBoundsNamespaced.lean/declarations/macro-rules.md) | 30 | `declaration-track:86d45c9779a007bbe1dcdc9a4ba731f4b06a104505811fcd04da4657164fb818` |
+| 2 | `theorem` | [pi_gt_sqrtTwoAddSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PiBoundsNamespaced.lean/declarations/pi-gt-sqrttwoaddseries.md) | 38 | `result-track:757f06530345ffe13c9cdc340ec3ff1313b1310a316bd76bde91fc1ebe5d2496` |
+| 3 | `theorem` | [pi_lt_sqrtTwoAddSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PiBoundsNamespaced.lean/declarations/pi-lt-sqrttwoaddseries.md) | 47 | `result-track:95fd7420db699cb22777993602f19d9e8d74180dc89ff305f825b322d26f96be` |
+| 4 | `theorem` | [pi_lower_bound_start](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PiBoundsNamespaced.lean/declarations/pi-lower-bound-start.md) | 81 | `result-track:d9f21f320f2c0f7b206f1b4b18f7544e903028031abd03ffecdfd7ded5cf335b` |
+| 5 | `theorem` | [sqrtTwoAddSeries_step_up](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PiBoundsNamespaced.lean/declarations/sqrttwoaddseries-step-up.md) | 89 | `result-track:ecb3341e73233d1f243868f2131dc047078de7970c379860af0d73d04b7e3563` |
+| 6 | `def` | [numDen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PiBoundsNamespaced.lean/declarations/numden.md) | 108 | `declaration-track:058082517d34b440bd5a048539314d62bc87df9dd9e128ad7a86085c95c48330` |
+| 7 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PiBoundsNamespaced.lean/declarations/elab.md) | 115 | `declaration-track:1d98f2f6a5e9b217eed3d3917cf45da705067a703bbc36e16facdf626b2974f9` |
+| 8 | `theorem` | [pi_upper_bound_start](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PiBoundsNamespaced.lean/declarations/pi-upper-bound-start.md) | 132 | `result-track:d509a4ee0ad2ddf483fa3dd2d99467791ff4ee734a540b2588f79ee0431a9a47` |
+| 9 | `theorem` | [sqrtTwoAddSeries_step_down](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PiBoundsNamespaced.lean/declarations/sqrttwoaddseries-step-down.md) | 143 | `result-track:fa4ed871131fdf36af3f4afd8af9efda3abbfebd556e2767e357f237f01dc6aa` |
+| 10 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PiBoundsNamespaced.lean/declarations/elab-source-edition-2.md) | 161 | `declaration-track:3bea36c2a7af73d33e9753674e5962a6ad6f3f13d5042a6d5892099baa050462` |
+| 11 | `theorem` | [pi_gt_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PiBoundsNamespaced.lean/declarations/pi-gt-three.md) | 175 | `result-track:11221ee90a5e4517dc2d69af15b7e1a1554b9d406c7b473fcc9b7279f454c402` |
+| 12 | `theorem` | [pi_gt_314](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PiBoundsNamespaced.lean/declarations/pi-gt-314.md) | 179 | `result-track:2b6178f8c95d59b11d0e4f4d77d03e07d1c3da3eafd258c0028d280ac0e255f0` |
+| 13 | `theorem` | [pi_lt_315](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PiBoundsNamespaced.lean/declarations/pi-lt-315.md) | 183 | `result-track:dd13b69f3b710203e5958c91286810c87e5a764765dab75847690e1bad2e1a69` |
+| 14 | `theorem` | [pi_gt_31415](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PiBoundsNamespaced.lean/declarations/pi-gt-31415.md) | 187 | `result-track:0ec9f1ba4b49d47e4d3fe255236622304b73fd470bc14353be79e2e544214189` |
+| 15 | `theorem` | [pi_lt_31416](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PiBoundsNamespaced.lean/declarations/pi-lt-31416.md) | 192 | `result-track:20c41c00d743cc3d96731c349d80f4db8b054c63debca7e7ec46234492f397f7` |
+| 16 | `theorem` | [pi_gt_3141592](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PiBoundsNamespaced.lean/declarations/pi-gt-3141592.md) | 198 | `result-track:156a13f1e8434263b82661eac455c74f27a2c68b90c56ccd091bfba0f06c4889` |
+| 17 | `theorem` | [pi_lt_3141593](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PiBoundsNamespaced.lean/declarations/pi-lt-3141593.md) | 204 | `result-track:abd1f8024890884fa8032f496ad9b3e748d434737088272fb3e0bf5ef1ee0c65` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [productCone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsNamespaced.lean/declarations/productcone.md) | 39 | `declaration-track:eb66fa7bdc60bf67cc7ee19b04bf3551b4d253603159ff074d4edddcb58bb19d` |
-| 2 | `def` | [productConeIsLimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsNamespaced.lean/declarations/productconeislimit.md) | 44 | `declaration-track:af28bdfcd9aff85d136d00deaa0931de4008ae6e0496a7efc4502c7c31ef45f6` |
-| 3 | `def` | [piIsoPi](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsNamespaced.lean/declarations/piisopi.md) | 62 | `declaration-track:41690a6882fd5fcda9a9d2a284ade074cc5eb60100c80022911a8dc4068f2741` |
-| 4 | `theorem` | [piIsoPi_inv_kernel_ι](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsNamespaced.lean/declarations/piisopi-inv-kernel.md) | 68 | `result-track:ea572eb073fd1689f1052b56b18271ed1a1f40eba475c3cb5cd96fea6609fb83` |
-| 5 | `theorem` | [piIsoPi_hom_ker_subtype](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsNamespaced.lean/declarations/piisopi-hom-ker-subtype.md) | 74 | `result-track:9cfe77fc4b3b659579bf09ed4c7c88b808c197a6e4e51b15f71631b2e9354026` |
+| 1 | `def` | [productCone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsNamespaced.lean/declarations/productcone.md) | 39 | `declaration-track:eb66fa7bdc60bf67cc7ee19b04bf3551b4d253603159ff074d4edddcb58bb19d` |
+| 2 | `def` | [productConeIsLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsNamespaced.lean/declarations/productconeislimit.md) | 44 | `declaration-track:af28bdfcd9aff85d136d00deaa0931de4008ae6e0496a7efc4502c7c31ef45f6` |
+| 3 | `def` | [piIsoPi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsNamespaced.lean/declarations/piisopi.md) | 62 | `declaration-track:41690a6882fd5fcda9a9d2a284ade074cc5eb60100c80022911a8dc4068f2741` |
+| 4 | `theorem` | [piIsoPi_inv_kernel_ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsNamespaced.lean/declarations/piisopi-inv-kernel.md) | 68 | `result-track:ea572eb073fd1689f1052b56b18271ed1a1f40eba475c3cb5cd96fea6609fb83` |
+| 5 | `theorem` | [piIsoPi_hom_ker_subtype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsNamespaced.lean/declarations/piisopi-hom-ker-subtype.md) | 74 | `result-track:9cfe77fc4b3b659579bf09ed4c7c88b808c197a6e4e51b15f71631b2e9354026` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

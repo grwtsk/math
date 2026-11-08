@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SymmNamespacedSymmExt.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SymmNamespacedSymmExt.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SymmNamespacedSymmExt.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SymmNamespacedSymmExt.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [symmExt.config](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SymmNamespacedSymmExt.lean/declarations/symmext-config.md) | 30 | `declaration-track:8cd534e16a0d1acd1a3138a898c284bf7bdaaf1428fb98bd31aa2692d6d307fd` |
-| 2 | `initialize` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SymmNamespacedSymmExt.lean/declarations/initialize-source-edition-2.md) | 33 | `declaration-track:ef52bbef7a6519dccb69b80a30a150945ee6196e95266ec31a51ebc37c534822` |
-| 3 | `initialize` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SymmNamespacedSymmExt.lean/declarations/initialize.md) | 40 | `declaration-track:7d811c96a649e786282eaa9048e91d64a3e57a3da855e5cb9c5386d1918a8926` |
-| 4 | `def` | [applySymm](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SymmNamespacedSymmExt.lean/declarations/applysymm-source-edition-2.md) | 62 | `declaration-track:da403fecee0b93d3b45559bb5398af36a276e4774c82fcb14c7102b05a2b51a6` |
-| 5 | `def` | [applySymm](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SymmNamespacedSymmExt.lean/declarations/applysymm.md) | 97 | `declaration-track:c073798f53ef60408149d9118134571e2a36581f6059c50b1bd22bc7f52ce4a1` |
-| 6 | `def` | [applySymmAt](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SymmNamespacedSymmExt.lean/declarations/applysymmat.md) | 121 | `declaration-track:2594caf7a61a73e1f5f5fe5a5043580bfa9edf161833c66b714f3974b53a8fda` |
-| 7 | `elab` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SymmNamespacedSymmExt.lean/declarations/elab.md) | 137 | `declaration-track:3524497eac4d4e8c0a28068438109a31158107f12e7d2c15bb5857f27e8c3bd9` |
+| 1 | `def` | [symmExt.config](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SymmNamespacedSymmExt.lean/declarations/symmext-config.md) | 30 | `declaration-track:8cd534e16a0d1acd1a3138a898c284bf7bdaaf1428fb98bd31aa2692d6d307fd` |
+| 2 | `initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SymmNamespacedSymmExt.lean/declarations/initialize-source-edition-2.md) | 33 | `declaration-track:ef52bbef7a6519dccb69b80a30a150945ee6196e95266ec31a51ebc37c534822` |
+| 3 | `initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SymmNamespacedSymmExt.lean/declarations/initialize.md) | 40 | `declaration-track:7d811c96a649e786282eaa9048e91d64a3e57a3da855e5cb9c5386d1918a8926` |
+| 4 | `def` | [applySymm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SymmNamespacedSymmExt.lean/declarations/applysymm-source-edition-2.md) | 62 | `declaration-track:da403fecee0b93d3b45559bb5398af36a276e4774c82fcb14c7102b05a2b51a6` |
+| 5 | `def` | [applySymm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SymmNamespacedSymmExt.lean/declarations/applysymm.md) | 97 | `declaration-track:c073798f53ef60408149d9118134571e2a36581f6059c50b1bd22bc7f52ce4a1` |
+| 6 | `def` | [applySymmAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SymmNamespacedSymmExt.lean/declarations/applysymmat.md) | 121 | `declaration-track:2594caf7a61a73e1f5f5fe5a5043580bfa9edf161833c66b714f3974b53a8fda` |
+| 7 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SymmNamespacedSymmExt.lean/declarations/elab.md) | 137 | `declaration-track:3524497eac4d4e8c0a28068438109a31158107f12e7d2c15bb5857f27e8c3bd9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

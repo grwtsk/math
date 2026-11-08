@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/RationalPairSupport.lean/index.md) · [Full source](../../../../NumberTheory/RationalPairSupport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalPairSupport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalPairSupport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Factorization.NaturalRadicalExcess`](../../../../NumberTheory/NaturalRadicalExcess.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.NumberTheory.Factorization.NaturalRadicalExcess`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NaturalRadicalExcess.lean/index.md) — import line 11; pinned internal source present.
 - `Mathlib.NumberTheory.Padics.PadicVal.Basic` — import line 12; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Nat.GCD.Basic` — import line 13; external provider; requires a separately pinned dependency.
 
@@ -59,20 +59,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coprime_depths](../../../../NumberTheory/RationalPairSupport.lean/declarations/coprime-depths.md) | 23 | `result-track:c266778603279a47dbc29a5a10a4b5e94e614fa85cdff05bdb767f6a54ce29a1` |
-| 2 | `def` | [support](../../../../NumberTheory/RationalPairSupport.lean/declarations/support.md) | 36 | `declaration-track:2ad60578ddc18e15ffec66793bae87ad8c4c8b75ac96f8572a4d7d04c02468c0` |
-| 3 | `theorem` | [support_prime](../../../../NumberTheory/RationalPairSupport.lean/declarations/support-prime.md) | 38 | `result-track:d52e12d413f3f2cc567c695d6472b6b00d88ad9cc618f5989226e5ea7c418b4f` |
-| 4 | `theorem` | [valuation_factorization](../../../../NumberTheory/RationalPairSupport.lean/declarations/valuation-factorization.md) | 48 | `result-track:71fb6a05c6b7064e4bf0686cdddef3055baa3617a050acdf23a7f9bd02be7cdc` |
-| 5 | `theorem` | [mem_support_iff_valuation](../../../../NumberTheory/RationalPairSupport.lean/declarations/mem-support-iff-valuation.md) | 55 | `result-track:07e381d920150da8177ab07901d6322c8607b567d04b3827795b80930277d6a9` |
-| 6 | `def` | [IsSUnit](../../../../NumberTheory/RationalPairSupport.lean/declarations/issunit.md) | 66 | `declaration-track:21f5914dc299285ca0c82474b352fe54686b07964305773d702a3a452f937db3` |
-| 7 | `def` | [pairSupport](../../../../NumberTheory/RationalPairSupport.lean/declarations/pairsupport.md) | 69 | `declaration-track:1b9930914b94621eac7a86d4194671c1941007e36939d0deddefbe9309a7999a` |
-| 8 | `theorem` | [pairSupport_prime](../../../../NumberTheory/RationalPairSupport.lean/declarations/pairsupport-prime.md) | 71 | `result-track:cc113d92e3a4fd6c32297048e84a43eb4d06aa2b73bc5f40ec59b31f63377e01` |
-| 9 | `theorem` | [mem_pairSupport_iff](../../../../NumberTheory/RationalPairSupport.lean/declarations/mem-pairsupport-iff.md) | 76 | `result-track:1add53362e7ffa7603e87df7b8e2701019a5331cb358375141a977ceba38e30b` |
-| 10 | `theorem` | [pair_SUnit_iff](../../../../NumberTheory/RationalPairSupport.lean/declarations/pair-sunit-iff.md) | 82 | `result-track:286f5648df735512ebbd9f9121e5ed503dce04067798076a81a3bf34ba3b6855` |
-| 11 | `def` | [boundaryDepth](../../../../NumberTheory/RationalPairSupport.lean/declarations/boundarydepth.md) | 88 | `declaration-track:4d1479249014408a861913ef57990cb50b621af1bf3576bcf94490f758f88987` |
-| 12 | `theorem` | [boundaryDepth_ne_zero_iff](../../../../NumberTheory/RationalPairSupport.lean/declarations/boundarydepth-ne-zero-iff.md) | 91 | `result-track:40f4d41b4f03ac20d320eb1a88d4f328fb0d714f339baa28f47b79ec1d46caed` |
-| 13 | `theorem` | [supportLog_coprime](../../../../NumberTheory/RationalPairSupport.lean/declarations/supportlog-coprime.md) | 105 | `result-track:475fd05d6be3e0d9afa7fe293da6436fbc47aaa5dc0c57b18776adb379d93741` |
-| 14 | `theorem` | [zero_not_SUnit](../../../../NumberTheory/RationalPairSupport.lean/declarations/zero-not-sunit.md) | 118 | `result-track:333ee5db7a26fbba62aa8d5c3602c733343acbdb404d798eab579e733bac5954` |
+| 1 | `theorem` | [coprime_depths](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalPairSupport.lean/declarations/coprime-depths.md) | 23 | `result-track:c266778603279a47dbc29a5a10a4b5e94e614fa85cdff05bdb767f6a54ce29a1` |
+| 2 | `def` | [support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalPairSupport.lean/declarations/support.md) | 36 | `declaration-track:2ad60578ddc18e15ffec66793bae87ad8c4c8b75ac96f8572a4d7d04c02468c0` |
+| 3 | `theorem` | [support_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalPairSupport.lean/declarations/support-prime.md) | 38 | `result-track:d52e12d413f3f2cc567c695d6472b6b00d88ad9cc618f5989226e5ea7c418b4f` |
+| 4 | `theorem` | [valuation_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalPairSupport.lean/declarations/valuation-factorization.md) | 48 | `result-track:71fb6a05c6b7064e4bf0686cdddef3055baa3617a050acdf23a7f9bd02be7cdc` |
+| 5 | `theorem` | [mem_support_iff_valuation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalPairSupport.lean/declarations/mem-support-iff-valuation.md) | 55 | `result-track:07e381d920150da8177ab07901d6322c8607b567d04b3827795b80930277d6a9` |
+| 6 | `def` | [IsSUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalPairSupport.lean/declarations/issunit.md) | 66 | `declaration-track:21f5914dc299285ca0c82474b352fe54686b07964305773d702a3a452f937db3` |
+| 7 | `def` | [pairSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalPairSupport.lean/declarations/pairsupport.md) | 69 | `declaration-track:1b9930914b94621eac7a86d4194671c1941007e36939d0deddefbe9309a7999a` |
+| 8 | `theorem` | [pairSupport_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalPairSupport.lean/declarations/pairsupport-prime.md) | 71 | `result-track:cc113d92e3a4fd6c32297048e84a43eb4d06aa2b73bc5f40ec59b31f63377e01` |
+| 9 | `theorem` | [mem_pairSupport_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalPairSupport.lean/declarations/mem-pairsupport-iff.md) | 76 | `result-track:1add53362e7ffa7603e87df7b8e2701019a5331cb358375141a977ceba38e30b` |
+| 10 | `theorem` | [pair_SUnit_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalPairSupport.lean/declarations/pair-sunit-iff.md) | 82 | `result-track:286f5648df735512ebbd9f9121e5ed503dce04067798076a81a3bf34ba3b6855` |
+| 11 | `def` | [boundaryDepth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalPairSupport.lean/declarations/boundarydepth.md) | 88 | `declaration-track:4d1479249014408a861913ef57990cb50b621af1bf3576bcf94490f758f88987` |
+| 12 | `theorem` | [boundaryDepth_ne_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalPairSupport.lean/declarations/boundarydepth-ne-zero-iff.md) | 91 | `result-track:40f4d41b4f03ac20d320eb1a88d4f328fb0d714f339baa28f47b79ec1d46caed` |
+| 13 | `theorem` | [supportLog_coprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalPairSupport.lean/declarations/supportlog-coprime.md) | 105 | `result-track:475fd05d6be3e0d9afa7fe293da6436fbc47aaa5dc0c57b18776adb379d93741` |
+| 14 | `theorem` | [zero_not_SUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalPairSupport.lean/declarations/zero-not-sunit.md) | 118 | `result-track:333ee5db7a26fbba62aa8d5c3602c733343acbdb404d798eab579e733bac5954` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

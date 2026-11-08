@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [logSquareQuadrature](../../../../MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/logsquarequadrature.md) | 24 | `declaration-track:efec85622d8f8a42d4c7877a9f20830aa34aacdd66cd00bc1debd3a2b8f28961` |
-| 2 | `theorem` | [logSquare_monotoneOn](../../../../MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/logsquare-monotoneon.md) | 28 | `result-track:6111413c28a30de45edbe190595cce95a4c6e3171bdc9c40beb944e997516245` |
-| 3 | `theorem` | [logSquare_intervalIntegrable](../../../../MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/logsquare-intervalintegrable.md) | 33 | `result-track:573e2d4626e37c4bf7d822d4781f44f0181398c94117018c6f60641c01efdbb5` |
-| 4 | `theorem` | [logSquare_integer_bounds](../../../../MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/logsquare-integer-bounds.md) | 40 | `result-track:9f9b033b51033f618989dc18e09580019ec5f47c69e43b239a641d87c8065506` |
-| 5 | `theorem` | [logSquareQuadrature_abs_le](../../../../MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/logsquarequadrature-abs-le.md) | 73 | `result-track:199dfa1e31b196c44584f46c3a6ac9f7844139e211b1d3459a688d30dd71c3da` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/example-source-edition-3.md) | 107 | `declaration-track:86975511719813796f9765887870a0d07f1a9aaadcd0f4148219f828fceb7aa9` |
-| 7 | `example` | [(anonymous)](../../../../MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/example.md) | 111 | `declaration-track:0473ea8da194ba4507222b3c05dbd1243327f6f80e6f3210827bd4bdef192a57` |
-| 8 | `example` | [(anonymous)](../../../../MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/example-source-edition-4.md) | 114 | `declaration-track:b58a6b2023b6b056eb00713d210c162d6052dcc2aadebff371384c4c20cd0ee1` |
-| 9 | `example` | [(anonymous)](../../../../MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/example-source-edition-5.md) | 118 | `declaration-track:e4c5203d6f320f7037f9ea35b0157ad3e4988f83e58e4871390d5d4530310e3e` |
-| 10 | `example` | [(anonymous)](../../../../MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/example-source-edition-2.md) | 125 | `declaration-track:3f84ef2c23b8fca4b0c77562edc72bf5d176728b81f97f682b6423d7d4543c58` |
+| 1 | `def` | [logSquareQuadrature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/logsquarequadrature.md) | 24 | `declaration-track:efec85622d8f8a42d4c7877a9f20830aa34aacdd66cd00bc1debd3a2b8f28961` |
+| 2 | `theorem` | [logSquare_monotoneOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/logsquare-monotoneon.md) | 28 | `result-track:6111413c28a30de45edbe190595cce95a4c6e3171bdc9c40beb944e997516245` |
+| 3 | `theorem` | [logSquare_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/logsquare-intervalintegrable.md) | 33 | `result-track:573e2d4626e37c4bf7d822d4781f44f0181398c94117018c6f60641c01efdbb5` |
+| 4 | `theorem` | [logSquare_integer_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/logsquare-integer-bounds.md) | 40 | `result-track:9f9b033b51033f618989dc18e09580019ec5f47c69e43b239a641d87c8065506` |
+| 5 | `theorem` | [logSquareQuadrature_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/logsquarequadrature-abs-le.md) | 73 | `result-track:199dfa1e31b196c44584f46c3a6ac9f7844139e211b1d3459a688d30dd71c3da` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/example-source-edition-3.md) | 107 | `declaration-track:86975511719813796f9765887870a0d07f1a9aaadcd0f4148219f828fceb7aa9` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/example.md) | 111 | `declaration-track:0473ea8da194ba4507222b3c05dbd1243327f6f80e6f3210827bd4bdef192a57` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/example-source-edition-4.md) | 114 | `declaration-track:b58a6b2023b6b056eb00713d210c162d6052dcc2aadebff371384c4c20cd0ee1` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/example-source-edition-5.md) | 118 | `declaration-track:e4c5203d6f320f7037f9ea35b0157ad3e4988f83e58e4871390d5d4530310e3e` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogSquareQuadratureStatementsNamespaced.lean/declarations/example-source-edition-2.md) | 125 | `declaration-track:3f84ef2c23b8fca4b0c77562edc72bf5d176728b81f97f682b6423d7d4543c58` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

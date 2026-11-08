@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/SetNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/SetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [smul_set_neg](../../../../AssociativeRingsAndAlgebras/SetNamespaced.lean/declarations/smul-set-neg.md) | 42 | `result-track:1a350c8e12b090c0b5693300ad1c1e47e0fc1192d70e172560b0ef3ff2c80acb` |
-| 2 | `lemma` | [smul_neg](../../../../AssociativeRingsAndAlgebras/SetNamespaced.lean/declarations/smul-neg.md) | 46 | `result-track:f76c320ffc29109cecd5b5938debc88507428038906382c5d63c0d7cc12f01aa` |
-| 3 | `lemma` | [add_smul_subset](../../../../AssociativeRingsAndAlgebras/SetNamespaced.lean/declarations/add-smul-subset.md) | 55 | `result-track:9df4cc0a90bb00adc5e7c2801a3f1b17f069064fe21ddb47a5951312d01808f7` |
-| 4 | `lemma` | [neg_smul_set](../../../../AssociativeRingsAndAlgebras/SetNamespaced.lean/declarations/neg-smul-set.md) | 65 | `result-track:72326827e03233aa049de146d683b579cfed25fe59d532a412e8bbd3098b5612` |
-| 5 | `lemma` | [neg_smul](../../../../AssociativeRingsAndAlgebras/SetNamespaced.lean/declarations/neg-smul.md) | 69 | `result-track:f8568b7fe9b32f8ce69608b50d0db7315284eafd4eb88b90642a02442dfb873d` |
+| 1 | `lemma` | [smul_set_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SetNamespaced.lean/declarations/smul-set-neg.md) | 42 | `result-track:1a350c8e12b090c0b5693300ad1c1e47e0fc1192d70e172560b0ef3ff2c80acb` |
+| 2 | `lemma` | [smul_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SetNamespaced.lean/declarations/smul-neg.md) | 46 | `result-track:f76c320ffc29109cecd5b5938debc88507428038906382c5d63c0d7cc12f01aa` |
+| 3 | `lemma` | [add_smul_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SetNamespaced.lean/declarations/add-smul-subset.md) | 55 | `result-track:9df4cc0a90bb00adc5e7c2801a3f1b17f069064fe21ddb47a5951312d01808f7` |
+| 4 | `lemma` | [neg_smul_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SetNamespaced.lean/declarations/neg-smul-set.md) | 65 | `result-track:72326827e03233aa049de146d683b579cfed25fe59d532a412e8bbd3098b5612` |
+| 5 | `lemma` | [neg_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SetNamespaced.lean/declarations/neg-smul.md) | 69 | `result-track:f8568b7fe9b32f8ce69608b50d0db7315284eafd4eb88b90642a02442dfb873d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

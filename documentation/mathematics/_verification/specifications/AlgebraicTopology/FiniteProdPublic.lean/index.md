@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/FiniteProdPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/FiniteProdPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [iSup_subcomplexOfSimplex_prod_eq_top](../../../../AlgebraicTopology/FiniteProdPublic.lean/declarations/isup-subcomplexofsimplex-prod-eq-top.md) | 34 | `result-track:d277be5f6f7b37753a402758d846715c47540ce98fdae009706ecd08133e2b30` |
-| 2 | `lemma` | [Subcomplex.ofSimplexProd_eq_range](../../../../AlgebraicTopology/FiniteProdPublic.lean/declarations/subcomplex-ofsimplexprod-eq-range.md) | 47 | `result-track:580b15b011ca5583cf8f38f37ccc0142b52e83926372fe1ab14aae08163eca64` |
-| 3 | `lemma` | [hasDimensionLT_prod](../../../../AlgebraicTopology/FiniteProdPublic.lean/declarations/hasdimensionlt-prod.md) | 53 | `result-track:d43c25478cb8c04355f866630ac815e6150f2a256004f841bb15613261ed2d5d` |
-| 4 | `lemma` | [hasDimensionLE_prod](../../../../AlgebraicTopology/FiniteProdPublic.lean/declarations/hasdimensionle-prod.md) | 66 | `result-track:c98845c90b48824afe47b6b9c2203a74ad9bd1d002c30a662ced538be4ee25e5` |
-| 5 | `instance` | [(anonymous)](../../../../AlgebraicTopology/FiniteProdPublic.lean/declarations/instance.md) | 72 | `declaration-track:22009f5a21b624d59a6f27244ba283482ae10c2d4620bb0f1245fc8aefa1e314` |
-| 6 | `instance` | [(anonymous)](../../../../AlgebraicTopology/FiniteProdPublic.lean/declarations/instance-source-edition-4.md) | 76 | `declaration-track:b8855dc7ea0fd940d46d6e62d9f744bef181a832da01170fddd3194791923b2d` |
-| 7 | `instance` | [(anonymous)](../../../../AlgebraicTopology/FiniteProdPublic.lean/declarations/instance-source-edition-2.md) | 80 | `declaration-track:6813c70ee20582398fc18ccaead8c5f0152d0cce4f68dbcb9cf161d8a211aa1e` |
-| 8 | `lemma` | [finite_of_isPullback](../../../../AlgebraicTopology/FiniteProdPublic.lean/declarations/finite-of-ispullback.md) | 86 | `result-track:dd8d9eda89a49e5398288cefe15070222a13d580456f000afd9bfedd90be9af0` |
-| 9 | `instance` | [(anonymous)](../../../../AlgebraicTopology/FiniteProdPublic.lean/declarations/instance-source-edition-3.md) | 92 | `declaration-track:a5c3beda4425af05c3121be419b01ddcf34c89604e1b39d9809005afb5118b7c` |
+| 1 | `lemma` | [iSup_subcomplexOfSimplex_prod_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdPublic.lean/declarations/isup-subcomplexofsimplex-prod-eq-top.md) | 34 | `result-track:d277be5f6f7b37753a402758d846715c47540ce98fdae009706ecd08133e2b30` |
+| 2 | `lemma` | [Subcomplex.ofSimplexProd_eq_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdPublic.lean/declarations/subcomplex-ofsimplexprod-eq-range.md) | 47 | `result-track:580b15b011ca5583cf8f38f37ccc0142b52e83926372fe1ab14aae08163eca64` |
+| 3 | `lemma` | [hasDimensionLT_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdPublic.lean/declarations/hasdimensionlt-prod.md) | 53 | `result-track:d43c25478cb8c04355f866630ac815e6150f2a256004f841bb15613261ed2d5d` |
+| 4 | `lemma` | [hasDimensionLE_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdPublic.lean/declarations/hasdimensionle-prod.md) | 66 | `result-track:c98845c90b48824afe47b6b9c2203a74ad9bd1d002c30a662ced538be4ee25e5` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdPublic.lean/declarations/instance.md) | 72 | `declaration-track:22009f5a21b624d59a6f27244ba283482ae10c2d4620bb0f1245fc8aefa1e314` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdPublic.lean/declarations/instance-source-edition-4.md) | 76 | `declaration-track:b8855dc7ea0fd940d46d6e62d9f744bef181a832da01170fddd3194791923b2d` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdPublic.lean/declarations/instance-source-edition-2.md) | 80 | `declaration-track:6813c70ee20582398fc18ccaead8c5f0152d0cce4f68dbcb9cf161d8a211aa1e` |
+| 8 | `lemma` | [finite_of_isPullback](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdPublic.lean/declarations/finite-of-ispullback.md) | 86 | `result-track:dd8d9eda89a49e5398288cefe15070222a13d580456f000afd9bfedd90be9af0` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdPublic.lean/declarations/instance-source-edition-3.md) | 92 | `declaration-track:a5c3beda4425af05c3121be419b01ddcf34c89604e1b39d9809005afb5118b7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

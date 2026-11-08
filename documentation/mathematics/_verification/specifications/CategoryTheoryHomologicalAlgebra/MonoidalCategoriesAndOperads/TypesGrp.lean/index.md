@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrp.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [grpGroup](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrp.lean/declarations/grpgroup.md) | 25 | `declaration-track:0f842339e04d3c07559226b61c62b284b21ee9285154442586cf8c459677031c` |
-| 2 | `def` | [functor](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrp.lean/declarations/functor.md) | 31 | `declaration-track:2c313d97172ff3af8d9cdd2a6e6a5072d16d57acbc39e37fe2a3d25291d5375f` |
-| 3 | `def` | [inverse](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrp.lean/declarations/inverse.md) | 36 | `declaration-track:a739d3a39599fbb65f4cd893e9d497b72ee859a3f105b9221aee3dcc6a47e266` |
-| 4 | `def` | [grpTypeEquivalenceGrp](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrp.lean/declarations/grptypeequivalencegrp.md) | 51 | `declaration-track:52e3b0f70151e37382bc4fa3ec98adeb1ef5ddc3585784c406bafe0d92b5c7c0` |
-| 5 | `def` | [grpTypeEquivalenceGrpForget](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrp.lean/declarations/grptypeequivalencegrpforget.md) | 62 | `declaration-track:375ded328e5f31f6f9dfff19c4b1597b943fa69be0fce9bdacf447640c11d543` |
+| 1 | `instance` | [grpGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrp.lean/declarations/grpgroup.md) | 25 | `declaration-track:0f842339e04d3c07559226b61c62b284b21ee9285154442586cf8c459677031c` |
+| 2 | `def` | [functor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrp.lean/declarations/functor.md) | 31 | `declaration-track:2c313d97172ff3af8d9cdd2a6e6a5072d16d57acbc39e37fe2a3d25291d5375f` |
+| 3 | `def` | [inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrp.lean/declarations/inverse.md) | 36 | `declaration-track:a739d3a39599fbb65f4cd893e9d497b72ee859a3f105b9221aee3dcc6a47e266` |
+| 4 | `def` | [grpTypeEquivalenceGrp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrp.lean/declarations/grptypeequivalencegrp.md) | 51 | `declaration-track:52e3b0f70151e37382bc4fa3ec98adeb1ef5ddc3585784c406bafe0d92b5c7c0` |
+| 5 | `def` | [grpTypeEquivalenceGrpForget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrp.lean/declarations/grptypeequivalencegrpforget.md) | 62 | `declaration-track:375ded328e5f31f6f9dfff19c4b1597b943fa69be0fce9bdacf447640c11d543` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

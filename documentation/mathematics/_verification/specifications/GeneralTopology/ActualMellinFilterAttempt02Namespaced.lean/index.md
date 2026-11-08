@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ActualMellinFilterAttempt02Namespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ActualMellinFilterAttempt02Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualMellinFilterAttempt02Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualMellinFilterAttempt02Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_mellin_eq_normalizedTransform](../../../../GeneralTopology/ActualMellinFilterAttempt02Namespaced.lean/declarations/actual-mellin-eq-normalizedtransform.md) | 26 | `result-track:908de2f8a6dd04e4a603c8e313b2e8d30f97b8bad376448174ebc12cd84caf2f` |
-| 2 | `theorem` | [actual_mellin_pole_filter](../../../../GeneralTopology/ActualMellinFilterAttempt02Namespaced.lean/declarations/actual-mellin-pole-filter.md) | 31 | `result-track:2d0ea7421f604cba89843c90c912feb67795a3f71a6f4a75b62ccbd058662cea` |
-| 3 | `theorem` | [actual_mellin_pole_filter_unnormalized](../../../../GeneralTopology/ActualMellinFilterAttempt02Namespaced.lean/declarations/actual-mellin-pole-filter-unnormalized.md) | 38 | `result-track:d0fc94728ac14aa7c0b274355dd40c5080a70f1fe774f6b17d48db68f971efae` |
-| 4 | `theorem` | [actual_mellin_nonzero_iff_bump](../../../../GeneralTopology/ActualMellinFilterAttempt02Namespaced.lean/declarations/actual-mellin-nonzero-iff-bump.md) | 44 | `result-track:ce20647ca5614996449ae109eb5feb9974ad63a61ad1395d441a275e52cd55af` |
-| 5 | `theorem` | [actual_mellin_halfstrip_nonzero_iff_bump](../../../../GeneralTopology/ActualMellinFilterAttempt02Namespaced.lean/declarations/actual-mellin-halfstrip-nonzero-iff-bump.md) | 54 | `result-track:3a5d3dbd92d7be2ca0cf9abc7438198bb76e2ca5136d471c7a9121ede2317290` |
+| 1 | `theorem` | [actual_mellin_eq_normalizedTransform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualMellinFilterAttempt02Namespaced.lean/declarations/actual-mellin-eq-normalizedtransform.md) | 26 | `result-track:908de2f8a6dd04e4a603c8e313b2e8d30f97b8bad376448174ebc12cd84caf2f` |
+| 2 | `theorem` | [actual_mellin_pole_filter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualMellinFilterAttempt02Namespaced.lean/declarations/actual-mellin-pole-filter.md) | 31 | `result-track:2d0ea7421f604cba89843c90c912feb67795a3f71a6f4a75b62ccbd058662cea` |
+| 3 | `theorem` | [actual_mellin_pole_filter_unnormalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualMellinFilterAttempt02Namespaced.lean/declarations/actual-mellin-pole-filter-unnormalized.md) | 38 | `result-track:d0fc94728ac14aa7c0b274355dd40c5080a70f1fe774f6b17d48db68f971efae` |
+| 4 | `theorem` | [actual_mellin_nonzero_iff_bump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualMellinFilterAttempt02Namespaced.lean/declarations/actual-mellin-nonzero-iff-bump.md) | 44 | `result-track:ce20647ca5614996449ae109eb5feb9974ad63a61ad1395d441a275e52cd55af` |
+| 5 | `theorem` | [actual_mellin_halfstrip_nonzero_iff_bump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualMellinFilterAttempt02Namespaced.lean/declarations/actual-mellin-halfstrip-nonzero-iff-bump.md) | 54 | `result-track:3a5d3dbd92d7be2ca0cf9abc7438198bb76e2ca5136d471c7a9121ede2317290` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

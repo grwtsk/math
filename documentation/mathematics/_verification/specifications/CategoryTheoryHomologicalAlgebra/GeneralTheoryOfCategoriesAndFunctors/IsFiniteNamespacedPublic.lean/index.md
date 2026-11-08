@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFiniteNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFiniteNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFiniteNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFiniteNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [isFinite](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFiniteNamespacedPublic.lean/declarations/isfinite.md) | 41 | `declaration-track:14eb9ea341dae7dd87140b2e490e116f8db7bb9f4f4bf93c5011470478b5a4d3` |
-| 2 | `lemma` | [prop_isFinite_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFiniteNamespacedPublic.lean/declarations/prop-isfinite-iff.md) | 45 | `result-track:d29bbc7969362480d1efe6aa37febd667db9ddd3998f690304e7838b9f8f4893` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFiniteNamespacedPublic.lean/declarations/instance.md) | 47 | `declaration-track:ead7e33688ec0216f50ce9eb03980816beb37589433c7c88139c1e87c73d1c92` |
+| 1 | `def` | [isFinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFiniteNamespacedPublic.lean/declarations/isfinite.md) | 41 | `declaration-track:14eb9ea341dae7dd87140b2e490e116f8db7bb9f4f4bf93c5011470478b5a4d3` |
+| 2 | `lemma` | [prop_isFinite_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFiniteNamespacedPublic.lean/declarations/prop-isfinite-iff.md) | 45 | `result-track:d29bbc7969362480d1efe6aa37febd667db9ddd3998f690304e7838b9f8f4893` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFiniteNamespacedPublic.lean/declarations/instance.md) | 47 | `declaration-track:ead7e33688ec0216f50ce9eb03980816beb37589433c7c88139c1e87c73d1c92` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

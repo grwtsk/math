@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySignsNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySignsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySignsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySignsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_plain_profile_derivative_neg_on_twenty](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySignsNamespaced.lean/declarations/actual-plain-profile-derivative-neg-on-twenty.md) | 31 | `result-track:db69c95c8cb3deda10a385b25e0b00161028357dc5b6eaf9ed6d77041509b2b3` |
-| 2 | `theorem` | [actual_signed_psi_floor_negative_block](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySignsNamespaced.lean/declarations/actual-signed-psi-floor-negative-block.md) | 74 | `result-track:3fac5bc1e602138f7fb30e27103a2a46e300d9af98632a9d1e9719d191a3ee58` |
-| 3 | `theorem` | [actual_signed_psi_floor_positive_block](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySignsNamespaced.lean/declarations/actual-signed-psi-floor-positive-block.md) | 86 | `result-track:c17edb890953b20e9e74a59635194b276cf9e1ffa684673a7d03a0c3e141035e` |
-| 4 | `theorem` | [actual_signed_psi_floor_pairing_density_both_signs](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySignsNamespaced.lean/declarations/actual-signed-psi-floor-pairing-density-both-signs.md) | 98 | `result-track:3e8ecf14eff3be1d3e4c27315840524e254e2cb3f717efaafc8cf51453c98a7b` |
+| 1 | `theorem` | [actual_plain_profile_derivative_neg_on_twenty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySignsNamespaced.lean/declarations/actual-plain-profile-derivative-neg-on-twenty.md) | 31 | `result-track:db69c95c8cb3deda10a385b25e0b00161028357dc5b6eaf9ed6d77041509b2b3` |
+| 2 | `theorem` | [actual_signed_psi_floor_negative_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySignsNamespaced.lean/declarations/actual-signed-psi-floor-negative-block.md) | 74 | `result-track:3fac5bc1e602138f7fb30e27103a2a46e300d9af98632a9d1e9719d191a3ee58` |
+| 3 | `theorem` | [actual_signed_psi_floor_positive_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySignsNamespaced.lean/declarations/actual-signed-psi-floor-positive-block.md) | 86 | `result-track:c17edb890953b20e9e74a59635194b276cf9e1ffa684673a7d03a0c3e141035e` |
+| 4 | `theorem` | [actual_signed_psi_floor_pairing_density_both_signs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySignsNamespaced.lean/declarations/actual-signed-psi-floor-pairing-density-both-signs.md) | 98 | `result-track:3e8ecf14eff3be1d3e4c27315840524e254e2cb3f717efaafc8cf51453c98a7b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

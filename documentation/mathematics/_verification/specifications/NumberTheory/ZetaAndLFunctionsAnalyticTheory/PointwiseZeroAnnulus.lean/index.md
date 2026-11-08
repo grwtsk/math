@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseZeroAnnulus.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseZeroAnnulus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseZeroAnnulus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseZeroAnnulus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PointwiseFiniteZeroHead`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalHighCounting`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalHighCounting.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PointwiseFiniteZeroHead`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalHighCounting`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalHighCounting.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [norm_pointwiseZeroTerm_le_of_height](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseZeroAnnulus.lean/declarations/norm-pointwisezeroterm-le-of-height.md) | 26 | `result-track:2417979a7289c27507959dc5ac9fcb6096e03d5ed1776912a0c83fd4dcee5400` |
-| 2 | `def` | [pointwiseAnnulusBudget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseZeroAnnulus.lean/declarations/pointwiseannulusbudget.md) | 41 | `declaration-track:0124f05931ca4935459d2d444a23b3896f1e06493e0e1a2faae4e243c9027a54` |
-| 3 | `theorem` | [norm_finiteHeightZeroHead_sub_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseZeroAnnulus.lean/declarations/norm-finiteheightzerohead-sub-le.md) | 46 | `result-track:20679219593049c7c5f9ea9c19f094df0f7ceb948ee40bd8e8f68d6da6aaee6d` |
-| 4 | `theorem` | [pointwiseAnnulusBudget_dyadic](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseZeroAnnulus.lean/declarations/pointwiseannulusbudget-dyadic.md) | 87 | `result-track:25432c77fdd055516091d266bc510e82b0116b79003ab6b470bac3b7574c8ffc` |
-| 5 | `theorem` | [pointwiseAnnulusBudget_dyadic_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseZeroAnnulus.lean/declarations/pointwiseannulusbudget-dyadic-lower.md) | 92 | `result-track:82e5b70fe69ffbf42bc696c56ecef5949c30f45b3b07a3de0a99ba86332470cb` |
+| 1 | `theorem` | [norm_pointwiseZeroTerm_le_of_height](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseZeroAnnulus.lean/declarations/norm-pointwisezeroterm-le-of-height.md) | 26 | `result-track:2417979a7289c27507959dc5ac9fcb6096e03d5ed1776912a0c83fd4dcee5400` |
+| 2 | `def` | [pointwiseAnnulusBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseZeroAnnulus.lean/declarations/pointwiseannulusbudget.md) | 41 | `declaration-track:0124f05931ca4935459d2d444a23b3896f1e06493e0e1a2faae4e243c9027a54` |
+| 3 | `theorem` | [norm_finiteHeightZeroHead_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseZeroAnnulus.lean/declarations/norm-finiteheightzerohead-sub-le.md) | 46 | `result-track:20679219593049c7c5f9ea9c19f094df0f7ceb948ee40bd8e8f68d6da6aaee6d` |
+| 4 | `theorem` | [pointwiseAnnulusBudget_dyadic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseZeroAnnulus.lean/declarations/pointwiseannulusbudget-dyadic.md) | 87 | `result-track:25432c77fdd055516091d266bc510e82b0116b79003ab6b470bac3b7574c8ffc` |
+| 5 | `theorem` | [pointwiseAnnulusBudget_dyadic_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseZeroAnnulus.lean/declarations/pointwiseannulusbudget-dyadic-lower.md) | 92 | `result-track:82e5b70fe69ffbf42bc696c56ecef5949c30f45b3b07a3de0a99ba86332470cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

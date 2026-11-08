@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/Prism.lean/index.md) · [Full source](../../../../NumberTheory/Prism.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Prism.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Prism.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Prism](../../../../NumberTheory/Prism.lean/declarations/prism.md) | 17 | `declaration-track:c5dfb528cda774386e203b64cf8bc94c3ad1295349ed9e888e2614c9a8b7790f` |
-| 2 | `theorem` | [prism_has_carrier_label](../../../../NumberTheory/Prism.lean/declarations/prism-has-carrier-label.md) | 22 | `result-track:e454d31242b4a1ea5d0d82131b52f4ab3cdb569ab4fd163c15e7ca5f5944c301` |
+| 1 | `structure` | [Prism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Prism.lean/declarations/prism.md) | 17 | `declaration-track:c5dfb528cda774386e203b64cf8bc94c3ad1295349ed9e888e2614c9a8b7790f` |
+| 2 | `theorem` | [prism_has_carrier_label](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Prism.lean/declarations/prism-has-carrier-label.md) | 22 | `result-track:e454d31242b4a1ea5d0d82131b52f4ab3cdb569ab4fd163c15e7ca5f5944c301` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

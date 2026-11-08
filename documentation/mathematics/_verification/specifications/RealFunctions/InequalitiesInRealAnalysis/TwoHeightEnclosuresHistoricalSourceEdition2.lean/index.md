@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosuresHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosuresHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosuresHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosuresHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathlib` — import line 9; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Analysis.Inequalities.ResidualEnclosure`](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.Analysis.Inequalities.ResidualEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/index.md) — import line 10; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [from_interval_endpoints](../../../../../RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosuresHistoricalSourceEdition2.lean/declarations/from-interval-endpoints.md) | 19 | `result-track:343906e77b4a48ca9f71337553dc32fb3ea514558550d543e01e26b02364826b` |
-| 2 | `theorem` | [lower_endpoint_is_not_an_upper_bound](../../../../../RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosuresHistoricalSourceEdition2.lean/declarations/lower-endpoint-is-not-an-upper-bound.md) | 29 | `result-track:ad95b7bf36505da2f5beeef813c9c2fa63f4ad66039b3fa7d716aeadd4ce45ab` |
-| 3 | `theorem` | [silent_green_endpoint_has_nonzero_augmented_mass](../../../../../RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosuresHistoricalSourceEdition2.lean/declarations/silent-green-endpoint-has-nonzero-augmented-mass.md) | 33 | `result-track:51fb91b41fc0e32ca658884c8dbe37ed13d073d02ba9bd517f78676e5290bc87` |
+| 1 | `theorem` | [from_interval_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosuresHistoricalSourceEdition2.lean/declarations/from-interval-endpoints.md) | 19 | `result-track:343906e77b4a48ca9f71337553dc32fb3ea514558550d543e01e26b02364826b` |
+| 2 | `theorem` | [lower_endpoint_is_not_an_upper_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosuresHistoricalSourceEdition2.lean/declarations/lower-endpoint-is-not-an-upper-bound.md) | 29 | `result-track:ad95b7bf36505da2f5beeef813c9c2fa63f4ad66039b3fa7d716aeadd4ce45ab` |
+| 3 | `theorem` | [silent_green_endpoint_has_nonzero_augmented_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosuresHistoricalSourceEdition2.lean/declarations/silent-green-endpoint-has-nonzero-augmented-mass.md) | 33 | `result-track:51fb91b41fc0e32ca658884c8dbe37ed13d073d02ba9bd517f78676e5290bc87` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

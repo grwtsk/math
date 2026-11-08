@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenMeshPhase.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenMeshPhase.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenMeshPhase.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenMeshPhase.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenConstantResidual`](../../../../../MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenConstantResidual`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenConstantResidual.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [greenMeshPhase](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenMeshPhase.lean/declarations/greenmeshphase.md) | 16 | `declaration-track:e782c594a7c42ad5d6ff49ab8cc951911a380f0b962d8a00de338756231c7b31` |
-| 2 | `theorem` | [norm_greenMeshPhase](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenMeshPhase.lean/declarations/norm-greenmeshphase.md) | 19 | `result-track:b8e3ccc80edd175c910f108efa1401343e9b99982635fde9f136499442baef47` |
-| 3 | `theorem` | [fourier_mesh_eq_phase_pow](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenMeshPhase.lean/declarations/fourier-mesh-eq-phase-pow.md) | 26 | `result-track:546232993c52399293a388b184018f4c3e7bbd7691655a3f0391c9822b61e140` |
-| 4 | `theorem` | [greenMeshPhase_ne_one_of_nonaliasing](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenMeshPhase.lean/declarations/greenmeshphase-ne-one-of-nonaliasing.md) | 39 | `result-track:0a16f4765b690a81235002db2bbb67f7117fe54963e000ad6d6544a1fa38c2a7` |
-| 5 | `theorem` | [sum_greenMeshPhase_pow](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenMeshPhase.lean/declarations/sum-greenmeshphase-pow.md) | 58 | `result-track:05b74ceb89b88d46563d61abd477398389d7a15225c1db2c25b44598ffd8bb75` |
-| 6 | `theorem` | [norm_sum_greenMeshPhase_pow_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenMeshPhase.lean/declarations/norm-sum-greenmeshphase-pow-le.md) | 71 | `result-track:f2ce86a9ca7f9dfef49bd8fe8a6d4e600ae8f966ea4e534ffe27e9d17b8b326e` |
+| 1 | `def` | [greenMeshPhase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenMeshPhase.lean/declarations/greenmeshphase.md) | 16 | `declaration-track:e782c594a7c42ad5d6ff49ab8cc951911a380f0b962d8a00de338756231c7b31` |
+| 2 | `theorem` | [norm_greenMeshPhase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenMeshPhase.lean/declarations/norm-greenmeshphase.md) | 19 | `result-track:b8e3ccc80edd175c910f108efa1401343e9b99982635fde9f136499442baef47` |
+| 3 | `theorem` | [fourier_mesh_eq_phase_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenMeshPhase.lean/declarations/fourier-mesh-eq-phase-pow.md) | 26 | `result-track:546232993c52399293a388b184018f4c3e7bbd7691655a3f0391c9822b61e140` |
+| 4 | `theorem` | [greenMeshPhase_ne_one_of_nonaliasing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenMeshPhase.lean/declarations/greenmeshphase-ne-one-of-nonaliasing.md) | 39 | `result-track:0a16f4765b690a81235002db2bbb67f7117fe54963e000ad6d6544a1fa38c2a7` |
+| 5 | `theorem` | [sum_greenMeshPhase_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenMeshPhase.lean/declarations/sum-greenmeshphase-pow.md) | 58 | `result-track:05b74ceb89b88d46563d61abd477398389d7a15225c1db2c25b44598ffd8bb75` |
+| 6 | `theorem` | [norm_sum_greenMeshPhase_pow_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenMeshPhase.lean/declarations/norm-sum-greenmeshphase-pow-le.md) | 71 | `result-track:f2ce86a9ca7f9dfef49bd8fe8a6d4e600ae8f966ea4e534ffe27e9d17b8b326e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

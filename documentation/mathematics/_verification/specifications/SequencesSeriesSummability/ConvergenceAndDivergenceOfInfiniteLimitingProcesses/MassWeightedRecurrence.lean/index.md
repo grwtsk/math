@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrence.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mass](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrence.lean/declarations/mass.md) | 14 | `declaration-track:4b8d691d59754aaa823712ff922aba3643dcdfbe06a92c805016cc1119a2f357` |
-| 2 | `theorem` | [mass_zero](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrence.lean/declarations/mass-zero.md) | 17 | `result-track:eeb97af030556365ec12828e6212e8f69bf649f0381eb004096bd54bf4b0375e` |
-| 3 | `theorem` | [mass_succ](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrence.lean/declarations/mass-succ.md) | 18 | `result-track:45cf96298f643a1b052567fb1504ca20af4fa258743988a7450be86ff4ad5257` |
-| 4 | `theorem` | [mass_nonneg](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrence.lean/declarations/mass-nonneg.md) | 20 | `result-track:37bb62d61be4e76be07add7d53e6c7d615866f7aa7332058bc08a6b7579d193e` |
-| 5 | `theorem` | [amortized_iteration](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrence.lean/declarations/amortized-iteration.md) | 28 | `result-track:876980291a5950054e30c67152efe8ef9231d844fc5db520f59eae51c66d2392` |
-| 6 | `theorem` | [terminal_transfer](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrence.lean/declarations/terminal-transfer.md) | 75 | `result-track:14dd68ae149022d12eb7d4c45d8694e8977d4564b23038e62cec88997b58aceb` |
-| 7 | `theorem` | [shifted_homogeneous_iteration](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrence.lean/declarations/shifted-homogeneous-iteration.md) | 82 | `result-track:dab43eecd02c9960654c0f2825c5e737505a403b388f5f87e98ab857e885aece` |
+| 1 | `def` | [mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrence.lean/declarations/mass.md) | 14 | `declaration-track:4b8d691d59754aaa823712ff922aba3643dcdfbe06a92c805016cc1119a2f357` |
+| 2 | `theorem` | [mass_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrence.lean/declarations/mass-zero.md) | 17 | `result-track:eeb97af030556365ec12828e6212e8f69bf649f0381eb004096bd54bf4b0375e` |
+| 3 | `theorem` | [mass_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrence.lean/declarations/mass-succ.md) | 18 | `result-track:45cf96298f643a1b052567fb1504ca20af4fa258743988a7450be86ff4ad5257` |
+| 4 | `theorem` | [mass_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrence.lean/declarations/mass-nonneg.md) | 20 | `result-track:37bb62d61be4e76be07add7d53e6c7d615866f7aa7332058bc08a6b7579d193e` |
+| 5 | `theorem` | [amortized_iteration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrence.lean/declarations/amortized-iteration.md) | 28 | `result-track:876980291a5950054e30c67152efe8ef9231d844fc5db520f59eae51c66d2392` |
+| 6 | `theorem` | [terminal_transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrence.lean/declarations/terminal-transfer.md) | 75 | `result-track:14dd68ae149022d12eb7d4c45d8694e8977d4564b23038e62cec88997b58aceb` |
+| 7 | `theorem` | [shifted_homogeneous_iteration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrence.lean/declarations/shifted-homogeneous-iteration.md) | 82 | `result-track:dab43eecd02c9960654c0f2825c5e737505a403b388f5f87e98ab857e885aece` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrectNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrectNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrectNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrectNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [projection_rules_cover_canonical_fibers](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrectNamespaced.lean/declarations/projection-rules-cover-canonical-fibers.md) | 15 | `result-track:524498a30cafc90aa7cdfb6d88e6c342c359abb2a76ba2d89c78102bf3d7fb8a` |
-| 2 | `theorem` | [projected_core_is_center](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrectNamespaced.lean/declarations/projected-core-is-center.md) | 19 | `result-track:2d17f1ed27cfeab44e2241ad25997d05073311cde60f17573c631c6a3da0ed8a` |
-| 3 | `theorem` | [rado_projected_pass_has_residue](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrectNamespaced.lean/declarations/rado-projected-pass-has-residue.md) | 24 | `result-track:6cb79e9d8d3ef50618581fe354e2286c1b653d0e62e991bd4ab850f4eafea12e` |
+| 1 | `theorem` | [projection_rules_cover_canonical_fibers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrectNamespaced.lean/declarations/projection-rules-cover-canonical-fibers.md) | 15 | `result-track:524498a30cafc90aa7cdfb6d88e6c342c359abb2a76ba2d89c78102bf3d7fb8a` |
+| 2 | `theorem` | [projected_core_is_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrectNamespaced.lean/declarations/projected-core-is-center.md) | 19 | `result-track:2d17f1ed27cfeab44e2241ad25997d05073311cde60f17573c631c6a3da0ed8a` |
+| 3 | `theorem` | [rado_projected_pass_has_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RadoProjectionCorrectNamespaced.lean/declarations/rado-projected-pass-has-residue.md) | 24 | `result-track:6cb79e9d8d3ef50618581fe354e2286c1b653d0e62e991bd4ab850f4eafea12e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

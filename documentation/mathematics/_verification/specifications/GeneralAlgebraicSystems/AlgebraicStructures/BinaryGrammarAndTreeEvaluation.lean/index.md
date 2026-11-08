@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BinaryGrammarAndTreeEvaluation.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BinaryGrammarAndTreeEvaluation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BinaryGrammarAndTreeEvaluation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BinaryGrammarAndTreeEvaluation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BinaryGrammar](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BinaryGrammarAndTreeEvaluation.lean/declarations/binarygrammar.md) | 41 | `declaration-track:18385ed02516b47438b633d140ad23028035a8c44df7f8fdf8b06cd7930e11b1` |
-| 2 | `def` | [eval](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BinaryGrammarAndTreeEvaluation.lean/declarations/eval.md) | 47 | `declaration-track:d83c8b48cec07b590611b29e841c88089cc4c23402a00f9843e927e278241687` |
-| 3 | `theorem` | [eval_leaf](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BinaryGrammarAndTreeEvaluation.lean/declarations/eval-leaf.md) | 52 | `result-track:e839453d2ccbb8d0930214ccfbb76fd88a441366eeb141ab7035dc1f7b05f2d8` |
-| 4 | `theorem` | [eval_node](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BinaryGrammarAndTreeEvaluation.lean/declarations/eval-node.md) | 57 | `result-track:7d1f5802064325472d2b1b62aeb66994f1cf0db2c9800593d2ae01e7384b60d5` |
+| 1 | `structure` | [BinaryGrammar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BinaryGrammarAndTreeEvaluation.lean/declarations/binarygrammar.md) | 41 | `declaration-track:18385ed02516b47438b633d140ad23028035a8c44df7f8fdf8b06cd7930e11b1` |
+| 2 | `def` | [eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BinaryGrammarAndTreeEvaluation.lean/declarations/eval.md) | 47 | `declaration-track:d83c8b48cec07b590611b29e841c88089cc4c23402a00f9843e927e278241687` |
+| 3 | `theorem` | [eval_leaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BinaryGrammarAndTreeEvaluation.lean/declarations/eval-leaf.md) | 52 | `result-track:e839453d2ccbb8d0930214ccfbb76fd88a441366eeb141ab7035dc1f7b05f2d8` |
+| 4 | `theorem` | [eval_node](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BinaryGrammarAndTreeEvaluation.lean/declarations/eval-node.md) | 57 | `result-track:7d1f5802064325472d2b1b62aeb66994f1cf0db2c9800593d2ae01e7384b60d5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

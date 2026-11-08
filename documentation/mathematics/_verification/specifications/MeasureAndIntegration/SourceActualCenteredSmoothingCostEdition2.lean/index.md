@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualCenteredSmoothingCostEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualCenteredSmoothingCostEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCenteredSmoothingCostEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCenteredSmoothingCostEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualCenteredKernelVariation](../../../../MeasureAndIntegration/SourceActualCenteredSmoothingCostEdition2.lean/declarations/actualcenteredkernelvariation.md) | 20 | `declaration-track:8fde5858f5344715205a7b64c45d2a12ad987b8b03cc99ef9e2d76ca72a90f67` |
-| 2 | `theorem` | [actual_centered_Mangoldt_error_abs_le](../../../../MeasureAndIntegration/SourceActualCenteredSmoothingCostEdition2.lean/declarations/actual-centered-mangoldt-error-abs-le.md) | 24 | `result-track:0c10bb3d74a4597f083f7ff90f73c796d231a8b6ea28ce50d378a6f87c7cebc7` |
-| 3 | `theorem` | [actual_critical_derivative_early_lower](../../../../MeasureAndIntegration/SourceActualCenteredSmoothingCostEdition2.lean/declarations/actual-critical-derivative-early-lower.md) | 36 | `result-track:06740c88ac963db89cead449fa4b479fe18bda99d2d5136143c62d9e2d8b12bb` |
-| 4 | `theorem` | [actual_centered_kernel_variation_exponential_lower](../../../../MeasureAndIntegration/SourceActualCenteredSmoothingCostEdition2.lean/declarations/actual-centered-kernel-variation-exponential-lower.md) | 58 | `result-track:8727722fa512186c6ee9608044e75371e095bd68111bb6337e19cab09db7334e` |
-| 5 | `theorem` | [actual_centered_kernel_variation_linear_lower](../../../../MeasureAndIntegration/SourceActualCenteredSmoothingCostEdition2.lean/declarations/actual-centered-kernel-variation-linear-lower.md) | 99 | `result-track:eae33e85dbe4956cba5804b52ee345e468fb9512efd463fcfc3ba940aba7e80d` |
-| 6 | `theorem` | [actual_centered_kernel_variation_not_eventually_bounded](../../../../MeasureAndIntegration/SourceActualCenteredSmoothingCostEdition2.lean/declarations/actual-centered-kernel-variation-not-eventually-bounded.md) | 106 | `result-track:fb655b0d136a40b5298985ddf573f9a25ab42f187a89adb8846960f52d2a9b3e` |
+| 1 | `def` | [actualCenteredKernelVariation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCenteredSmoothingCostEdition2.lean/declarations/actualcenteredkernelvariation.md) | 20 | `declaration-track:8fde5858f5344715205a7b64c45d2a12ad987b8b03cc99ef9e2d76ca72a90f67` |
+| 2 | `theorem` | [actual_centered_Mangoldt_error_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCenteredSmoothingCostEdition2.lean/declarations/actual-centered-mangoldt-error-abs-le.md) | 24 | `result-track:0c10bb3d74a4597f083f7ff90f73c796d231a8b6ea28ce50d378a6f87c7cebc7` |
+| 3 | `theorem` | [actual_critical_derivative_early_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCenteredSmoothingCostEdition2.lean/declarations/actual-critical-derivative-early-lower.md) | 36 | `result-track:06740c88ac963db89cead449fa4b479fe18bda99d2d5136143c62d9e2d8b12bb` |
+| 4 | `theorem` | [actual_centered_kernel_variation_exponential_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCenteredSmoothingCostEdition2.lean/declarations/actual-centered-kernel-variation-exponential-lower.md) | 58 | `result-track:8727722fa512186c6ee9608044e75371e095bd68111bb6337e19cab09db7334e` |
+| 5 | `theorem` | [actual_centered_kernel_variation_linear_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCenteredSmoothingCostEdition2.lean/declarations/actual-centered-kernel-variation-linear-lower.md) | 99 | `result-track:eae33e85dbe4956cba5804b52ee345e468fb9512efd463fcfc3ba940aba7e80d` |
+| 6 | `theorem` | [actual_centered_kernel_variation_not_eventually_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualCenteredSmoothingCostEdition2.lean/declarations/actual-centered-kernel-variation-not-eventually-bounded.md) | 106 | `result-track:fb655b0d136a40b5298985ddf573f9a25ab42f187a89adb8846960f52d2a9b3e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

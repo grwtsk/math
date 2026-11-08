@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.GoldbachFrequencyArcBudget`](../../../../../MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachFrequencyArcBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [goldbachProgressionModel_add_residual_add_minor](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/declarations/goldbachprogressionmodel-add-residual-add-minor.md) | 35 | `result-track:10bd73aac41b7a5bf5fee2276484440d229e722df6538226d82c77451de135da` |
-| 2 | `theorem` | [norm_goldbachProgressionResidualSum_le_frequency](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/declarations/norm-goldbachprogressionresidualsum-le-frequency.md) | 46 | `result-track:96c837e9369a9b783b4bd9729c93f4bbcc665289dadf251a0c1858ccca2143cb` |
-| 3 | `theorem` | [mass_interval_of_norm_margin](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/declarations/mass-interval-of-norm-margin.md) | 58 | `result-track:fa5fffb62b49ee3cfeaf7a111a228aa048bde7c047e0d7eee5ea3945b6b7aff3` |
-| 4 | `theorem` | [goldbachLogMass_interval_of_frequency_norm_margin](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/declarations/goldbachlogmass-interval-of-frequency-norm-margin.md) | 71 | `result-track:e5fedfd3f29e2b81457a2dd408700de2b8555224173d5951877a072e1e4e16c3` |
-| 5 | `theorem` | [no_frequency_norm_margin_of_large_logMass](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/declarations/no-frequency-norm-margin-of-large-logmass.md) | 87 | `result-track:2fa5fe34574119bdac28db44e8e2b3ec9941c136a00c698aeb4abfb3a4c7acff` |
-| 6 | `theorem` | [mass_lower_of_signed_minor_lower](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/declarations/mass-lower-of-signed-minor-lower.md) | 104 | `result-track:94ffc4c7031c1a2878feeee251cb87abddee36ee885d239955650166a40f9965` |
-| 7 | `theorem` | [goldbachCount_pos_of_frequency_signed_minor_lower](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/declarations/goldbachcount-pos-of-frequency-signed-minor-lower.md) | 116 | `result-track:819e6c684fdf92c1477a9ba9ff9fadac3148df2cbb80851d8455baf061276e4f` |
-| 8 | `theorem` | [goldbachCount_pos_above_of_frequency_signed_minor_supplier](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/declarations/goldbachcount-pos-above-of-frequency-signed-minor-supplier.md) | 133 | `result-track:73871c9c05aad7c82382278440dd2c0e9ec65e693f8099b83918a5bafb565af1` |
+| 1 | `theorem` | [goldbachProgressionModel_add_residual_add_minor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/declarations/goldbachprogressionmodel-add-residual-add-minor.md) | 35 | `result-track:10bd73aac41b7a5bf5fee2276484440d229e722df6538226d82c77451de135da` |
+| 2 | `theorem` | [norm_goldbachProgressionResidualSum_le_frequency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/declarations/norm-goldbachprogressionresidualsum-le-frequency.md) | 46 | `result-track:96c837e9369a9b783b4bd9729c93f4bbcc665289dadf251a0c1858ccca2143cb` |
+| 3 | `theorem` | [mass_interval_of_norm_margin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/declarations/mass-interval-of-norm-margin.md) | 58 | `result-track:fa5fffb62b49ee3cfeaf7a111a228aa048bde7c047e0d7eee5ea3945b6b7aff3` |
+| 4 | `theorem` | [goldbachLogMass_interval_of_frequency_norm_margin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/declarations/goldbachlogmass-interval-of-frequency-norm-margin.md) | 71 | `result-track:e5fedfd3f29e2b81457a2dd408700de2b8555224173d5951877a072e1e4e16c3` |
+| 5 | `theorem` | [no_frequency_norm_margin_of_large_logMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/declarations/no-frequency-norm-margin-of-large-logmass.md) | 87 | `result-track:2fa5fe34574119bdac28db44e8e2b3ec9941c136a00c698aeb4abfb3a4c7acff` |
+| 6 | `theorem` | [mass_lower_of_signed_minor_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/declarations/mass-lower-of-signed-minor-lower.md) | 104 | `result-track:94ffc4c7031c1a2878feeee251cb87abddee36ee885d239955650166a40f9965` |
+| 7 | `theorem` | [goldbachCount_pos_of_frequency_signed_minor_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/declarations/goldbachcount-pos-of-frequency-signed-minor-lower.md) | 116 | `result-track:819e6c684fdf92c1477a9ba9ff9fadac3148df2cbb80851d8455baf061276e4f` |
+| 8 | `theorem` | [goldbachCount_pos_above_of_frequency_signed_minor_supplier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/declarations/goldbachcount-pos-above-of-frequency-signed-minor-supplier.md) | 133 | `result-track:73871c9c05aad7c82382278440dd2c0e9ec65e693f8099b83918a5bafb565af1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

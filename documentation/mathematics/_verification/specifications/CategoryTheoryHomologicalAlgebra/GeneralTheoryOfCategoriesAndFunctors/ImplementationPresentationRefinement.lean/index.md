@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ImplementationPresentationRefinement.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ImplementationPresentationRefinement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ImplementationPresentationRefinement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ImplementationPresentationRefinement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mapSpecPresentation](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ImplementationPresentationRefinement.lean/declarations/mapspecpresentation.md) | 37 | `declaration-track:9fe6de8c5b7ccbeb5202b66868989c77576e97bcfb19a0e280b9a882d2a31abe` |
-| 2 | `def` | [mapImplPresentation](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ImplementationPresentationRefinement.lean/declarations/mapimplpresentation.md) | 45 | `declaration-track:a864b3244bf81011b56ebd3b802dd5e7b1a4b8ca0befa1ee3ec00b6f159f08b4` |
-| 3 | `def` | [matrixImplementationRefinement](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ImplementationPresentationRefinement.lean/declarations/matriximplementationrefinement.md) | 53 | `declaration-track:c098b1afa3fa072350c2d782c6b87e42b0cb5b72a465165d872ba2fd369f4ef0` |
-| 4 | `theorem` | [matrixImplementationRefinement_abstract](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ImplementationPresentationRefinement.lean/declarations/matriximplementationrefinement-abstract.md) | 60 | `result-track:ff8feedc3e7f379b0cb0a36416c330dfdb2fafec72577a7537e75d5613612448` |
+| 1 | `def` | [mapSpecPresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ImplementationPresentationRefinement.lean/declarations/mapspecpresentation.md) | 37 | `declaration-track:9fe6de8c5b7ccbeb5202b66868989c77576e97bcfb19a0e280b9a882d2a31abe` |
+| 2 | `def` | [mapImplPresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ImplementationPresentationRefinement.lean/declarations/mapimplpresentation.md) | 45 | `declaration-track:a864b3244bf81011b56ebd3b802dd5e7b1a4b8ca0befa1ee3ec00b6f159f08b4` |
+| 3 | `def` | [matrixImplementationRefinement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ImplementationPresentationRefinement.lean/declarations/matriximplementationrefinement.md) | 53 | `declaration-track:c098b1afa3fa072350c2d782c6b87e42b0cb5b72a465165d872ba2fd369f4ef0` |
+| 4 | `theorem` | [matrixImplementationRefinement_abstract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ImplementationPresentationRefinement.lean/declarations/matriximplementationrefinement-abstract.md) | 60 | `result-track:ff8feedc3e7f379b0cb0a36416c330dfdb2fafec72577a7537e75d5613612448` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

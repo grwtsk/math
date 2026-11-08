@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CompleteNontrivialCharacterPaymentsBoundTheActualCenteredUnitPacket.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CompleteNontrivialCharacterPaymentsBoundTheActualCenteredUnitPacket.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompleteNontrivialCharacterPaymentsBoundTheActualCenteredUnitPacket.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompleteNontrivialCharacterPaymentsBoundTheActualCenteredUnitPacket.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [complete_character_payment](../../../../GroupTheoryAndGeneralizations/CompleteNontrivialCharacterPaymentsBoundTheActualCenteredUnitPacket.lean/declarations/complete-character-payment.md) | 22 | `result-track:4df6f4c188499fe2045300faa2dce3a8eced489701ed5df71c7b007c4004cf3e` |
-| 2 | `theorem` | [supplied_character_cap_pays_cardinality](../../../../GroupTheoryAndGeneralizations/CompleteNontrivialCharacterPaymentsBoundTheActualCenteredUnitPacket.lean/declarations/supplied-character-cap-pays-cardinality.md) | 37 | `result-track:885e9d6f799f98d77f5357bf18888c3ac9e7ee32d29228e31321dd0cd678bc54` |
-| 3 | `theorem` | [actual_mangoldt_complete_character_payment](../../../../GroupTheoryAndGeneralizations/CompleteNontrivialCharacterPaymentsBoundTheActualCenteredUnitPacket.lean/declarations/actual-mangoldt-complete-character-payment.md) | 48 | `result-track:715120cefcd1132f32c5fa5e796410af68099a4e7d55a5846ba9cfe2d7304f9c` |
-| 4 | `theorem` | [actual_mangoldt_character_cap_consumer](../../../../GroupTheoryAndGeneralizations/CompleteNontrivialCharacterPaymentsBoundTheActualCenteredUnitPacket.lean/declarations/actual-mangoldt-character-cap-consumer.md) | 55 | `result-track:b4815fef859eb16f0246226a600527f2f6389cbac66ad3cd66c61e8e36f09fd9` |
+| 1 | `theorem` | [complete_character_payment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompleteNontrivialCharacterPaymentsBoundTheActualCenteredUnitPacket.lean/declarations/complete-character-payment.md) | 22 | `result-track:4df6f4c188499fe2045300faa2dce3a8eced489701ed5df71c7b007c4004cf3e` |
+| 2 | `theorem` | [supplied_character_cap_pays_cardinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompleteNontrivialCharacterPaymentsBoundTheActualCenteredUnitPacket.lean/declarations/supplied-character-cap-pays-cardinality.md) | 37 | `result-track:885e9d6f799f98d77f5357bf18888c3ac9e7ee32d29228e31321dd0cd678bc54` |
+| 3 | `theorem` | [actual_mangoldt_complete_character_payment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompleteNontrivialCharacterPaymentsBoundTheActualCenteredUnitPacket.lean/declarations/actual-mangoldt-complete-character-payment.md) | 48 | `result-track:715120cefcd1132f32c5fa5e796410af68099a4e7d55a5846ba9cfe2d7304f9c` |
+| 4 | `theorem` | [actual_mangoldt_character_cap_consumer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CompleteNontrivialCharacterPaymentsBoundTheActualCenteredUnitPacket.lean/declarations/actual-mangoldt-character-cap-consumer.md) | 55 | `result-track:b4815fef859eb16f0246226a600527f2f6389cbac66ad3cd66c61e8e36f09fd9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

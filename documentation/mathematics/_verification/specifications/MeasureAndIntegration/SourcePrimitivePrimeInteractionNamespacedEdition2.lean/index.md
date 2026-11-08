@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourcePrimitivePrimeInteractionNamespacedEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourcePrimitivePrimeInteractionNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitivePrimeInteractionNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitivePrimeInteractionNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [primitiveCorrelationZero](../../../../MeasureAndIntegration/SourcePrimitivePrimeInteractionNamespacedEdition2.lean/declarations/primitivecorrelationzero.md) | 36 | `declaration-track:db0397d440b91b9af636dd36e39229017becaa712c701b1988b5780c04f74fb3` |
-| 2 | `def` | [primitiveCorrelationOne](../../../../MeasureAndIntegration/SourcePrimitivePrimeInteractionNamespacedEdition2.lean/declarations/primitivecorrelationone.md) | 40 | `declaration-track:7c2d475569641343b6b966a0b2fa09557dc629efd8a0bc303587b88880ad8b1c` |
-| 3 | `def` | [primitiveCorrelationTwo](../../../../MeasureAndIntegration/SourcePrimitivePrimeInteractionNamespacedEdition2.lean/declarations/primitivecorrelationtwo.md) | 45 | `declaration-track:d157546bc2230f01f8f4cb1371f7505abab8cf74e04a4e32e4140daab5b85f07` |
-| 4 | `theorem` | [compact_shifted_product_integrable](../../../../MeasureAndIntegration/SourcePrimitivePrimeInteractionNamespacedEdition2.lean/declarations/compact-shifted-product-integrable.md) | 49 | `result-track:5a3290544c52eb3fc291f2d46d1ae35b1a6e24e88ebb40b6d60fcd34699e0501` |
-| 5 | `theorem` | [primitive_mixed_second_integrals](../../../../MeasureAndIntegration/SourcePrimitivePrimeInteractionNamespacedEdition2.lean/declarations/primitive-mixed-second-integrals.md) | 56 | `result-track:d0d759350bf520d621a5bb0718dab6c7434b6f36101b856117a142d564e90fac` |
-| 6 | `theorem` | [sourceCorrelation_eq_primitive_filter](../../../../MeasureAndIntegration/SourcePrimitivePrimeInteractionNamespacedEdition2.lean/declarations/sourcecorrelation-eq-primitive-filter.md) | 100 | `result-track:4d0a07a5a553a919f622a285fe19ec277003eabfff8e5349f6c469de43bc4bc3` |
-| 7 | `theorem` | [firstPrimeMoment_eq_primitive_filter](../../../../MeasureAndIntegration/SourcePrimitivePrimeInteractionNamespacedEdition2.lean/declarations/firstprimemoment-eq-primitive-filter.md) | 142 | `result-track:c1460270b17aa8ecc3894794993ac05edcf4dd79700977f73b568ea9ab62d68b` |
+| 1 | `def` | [primitiveCorrelationZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitivePrimeInteractionNamespacedEdition2.lean/declarations/primitivecorrelationzero.md) | 36 | `declaration-track:db0397d440b91b9af636dd36e39229017becaa712c701b1988b5780c04f74fb3` |
+| 2 | `def` | [primitiveCorrelationOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitivePrimeInteractionNamespacedEdition2.lean/declarations/primitivecorrelationone.md) | 40 | `declaration-track:7c2d475569641343b6b966a0b2fa09557dc629efd8a0bc303587b88880ad8b1c` |
+| 3 | `def` | [primitiveCorrelationTwo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitivePrimeInteractionNamespacedEdition2.lean/declarations/primitivecorrelationtwo.md) | 45 | `declaration-track:d157546bc2230f01f8f4cb1371f7505abab8cf74e04a4e32e4140daab5b85f07` |
+| 4 | `theorem` | [compact_shifted_product_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitivePrimeInteractionNamespacedEdition2.lean/declarations/compact-shifted-product-integrable.md) | 49 | `result-track:5a3290544c52eb3fc291f2d46d1ae35b1a6e24e88ebb40b6d60fcd34699e0501` |
+| 5 | `theorem` | [primitive_mixed_second_integrals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitivePrimeInteractionNamespacedEdition2.lean/declarations/primitive-mixed-second-integrals.md) | 56 | `result-track:d0d759350bf520d621a5bb0718dab6c7434b6f36101b856117a142d564e90fac` |
+| 6 | `theorem` | [sourceCorrelation_eq_primitive_filter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitivePrimeInteractionNamespacedEdition2.lean/declarations/sourcecorrelation-eq-primitive-filter.md) | 100 | `result-track:4d0a07a5a553a919f622a285fe19ec277003eabfff8e5349f6c469de43bc4bc3` |
+| 7 | `theorem` | [firstPrimeMoment_eq_primitive_filter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitivePrimeInteractionNamespacedEdition2.lean/declarations/firstprimemoment-eq-primitive-filter.md) | 142 | `result-track:c1460270b17aa8ecc3894794993ac05edcf4dd79700977f73b568ea9ab62d68b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

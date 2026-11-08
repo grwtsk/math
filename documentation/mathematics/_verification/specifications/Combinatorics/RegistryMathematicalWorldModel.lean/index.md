@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RegistryMathematicalWorldModel.lean/index.md) · [Full source](../../../../Combinatorics/RegistryMathematicalWorldModel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryMathematicalWorldModel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryMathematicalWorldModel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MathematicalWorldModel](../../../../Combinatorics/RegistryMathematicalWorldModel.lean/declarations/mathematicalworldmodel.md) | 19 | `declaration-track:7794f25ddee000763b3713d26869b384dfbeb1607593ab3b7cb37e6dd6c56c7d` |
-| 2 | `structure` | [WorldModelRegistry](../../../../Combinatorics/RegistryMathematicalWorldModel.lean/declarations/worldmodelregistry.md) | 49 | `declaration-track:148b1abbe964e89a7ea4d924cd3d0fe67e166c09b9c8ff3a56fbb33c48d1fe9b` |
-| 3 | `abbrev` | [ModelId](../../../../Combinatorics/RegistryMathematicalWorldModel.lean/declarations/modelid.md) | 68 | `declaration-track:1823bb46e47dfee0e35518572d8faeb7cb00ca75224d4735f4b5503fe5ae732d` |
-| 4 | `def` | [Version](../../../../Combinatorics/RegistryMathematicalWorldModel.lean/declarations/version.md) | 72 | `declaration-track:26d6cdabbdfc035adc485f9a9ea1beb42a31b25052198a6d09fa5024d0b9983a` |
-| 5 | `def` | [HasVersion](../../../../Combinatorics/RegistryMathematicalWorldModel.lean/declarations/hasversion.md) | 77 | `declaration-track:94352e1be413824484a6cb80876d8c4f3d8b13185b6c5350a880bf63f77e4e7f` |
-| 6 | `theorem` | [version_slot_unique](../../../../Combinatorics/RegistryMathematicalWorldModel.lean/declarations/version-slot-unique.md) | 83 | `result-track:d7580c080fc5c9b4cb7f68b3de357e3973def95f4c05595a1ba99d1e94e46465` |
-| 7 | `theorem` | [stored_source_digest_valid](../../../../Combinatorics/RegistryMathematicalWorldModel.lean/declarations/stored-source-digest-valid.md) | 91 | `result-track:b6282b117ad80e1950c507d659f3811f4744db5b2e103ef0b014901267bf8e37` |
-| 8 | `theorem` | [supersession_wellFounded](../../../../Combinatorics/RegistryMathematicalWorldModel.lean/declarations/supersession-wellfounded.md) | 98 | `result-track:d147c93e8df5fcbc321b30b8b7553dc518d7682a5cb87e2216acf39916f1e7da` |
-| 9 | `theorem` | [no_supersession_cycle](../../../../Combinatorics/RegistryMathematicalWorldModel.lean/declarations/no-supersession-cycle.md) | 107 | `result-track:a82d511b01922bc5cb990b847534905e4f4ecf838520c3e94a9bc693ba515273` |
+| 1 | `structure` | [MathematicalWorldModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryMathematicalWorldModel.lean/declarations/mathematicalworldmodel.md) | 19 | `declaration-track:7794f25ddee000763b3713d26869b384dfbeb1607593ab3b7cb37e6dd6c56c7d` |
+| 2 | `structure` | [WorldModelRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryMathematicalWorldModel.lean/declarations/worldmodelregistry.md) | 49 | `declaration-track:148b1abbe964e89a7ea4d924cd3d0fe67e166c09b9c8ff3a56fbb33c48d1fe9b` |
+| 3 | `abbrev` | [ModelId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryMathematicalWorldModel.lean/declarations/modelid.md) | 68 | `declaration-track:1823bb46e47dfee0e35518572d8faeb7cb00ca75224d4735f4b5503fe5ae732d` |
+| 4 | `def` | [Version](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryMathematicalWorldModel.lean/declarations/version.md) | 72 | `declaration-track:26d6cdabbdfc035adc485f9a9ea1beb42a31b25052198a6d09fa5024d0b9983a` |
+| 5 | `def` | [HasVersion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryMathematicalWorldModel.lean/declarations/hasversion.md) | 77 | `declaration-track:94352e1be413824484a6cb80876d8c4f3d8b13185b6c5350a880bf63f77e4e7f` |
+| 6 | `theorem` | [version_slot_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryMathematicalWorldModel.lean/declarations/version-slot-unique.md) | 83 | `result-track:d7580c080fc5c9b4cb7f68b3de357e3973def95f4c05595a1ba99d1e94e46465` |
+| 7 | `theorem` | [stored_source_digest_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryMathematicalWorldModel.lean/declarations/stored-source-digest-valid.md) | 91 | `result-track:b6282b117ad80e1950c507d659f3811f4744db5b2e103ef0b014901267bf8e37` |
+| 8 | `theorem` | [supersession_wellFounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryMathematicalWorldModel.lean/declarations/supersession-wellfounded.md) | 98 | `result-track:d147c93e8df5fcbc321b30b8b7553dc518d7682a5cb87e2216acf39916f1e7da` |
+| 9 | `theorem` | [no_supersession_cycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryMathematicalWorldModel.lean/declarations/no-supersession-cycle.md) | 107 | `result-track:a82d511b01922bc5cb990b847534905e4f4ecf838520c3e94a9bc693ba515273` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

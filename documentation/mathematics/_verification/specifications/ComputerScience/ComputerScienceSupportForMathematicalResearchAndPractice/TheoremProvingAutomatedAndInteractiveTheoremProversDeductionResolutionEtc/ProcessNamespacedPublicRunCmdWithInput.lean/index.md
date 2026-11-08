@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ProcessNamespacedPublicRunCmdWithInput.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ProcessNamespacedPublicRunCmdWithInput.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ProcessNamespacedPublicRunCmdWithInput.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ProcessNamespacedPublicRunCmdWithInput.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [runCmdWithInput'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ProcessNamespacedPublicRunCmdWithInput.lean/declarations/runcmdwithinput.md) | 30 | `declaration-track:367da6d3ec6c6f887a02edf5ee765abd6d4a8e203a0800ad7f7ab0c97fc9b9c2` |
-| 2 | `def` | [runCmdWithInput](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ProcessNamespacedPublicRunCmdWithInput.lean/declarations/runcmdwithinput-source-edition-2.md) | 50 | `declaration-track:b0dfdaa5198860a9266675707151b3e1053722a7000a88efe3ae0102526e4c08` |
+| 1 | `def` | [runCmdWithInput'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ProcessNamespacedPublicRunCmdWithInput.lean/declarations/runcmdwithinput.md) | 30 | `declaration-track:367da6d3ec6c6f887a02edf5ee765abd6d4a8e203a0800ad7f7ab0c97fc9b9c2` |
+| 2 | `def` | [runCmdWithInput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ProcessNamespacedPublicRunCmdWithInput.lean/declarations/runcmdwithinput-source-edition-2.md) | 50 | `declaration-track:b0dfdaa5198860a9266675707151b3e1053722a7000a88efe3ae0102526e4c08` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

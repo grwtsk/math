@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/IsCommutativePublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/IsCommutativePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IsCommutativePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IsCommutativePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/IsCommutativePublic.lean/declarations/instance-source-edition-4.md) | 44 | `declaration-track:66480c88570527d1d61fbfbfed8b4c33f764bdc4947de881b89659b6b459dbbb` |
-| 2 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/IsCommutativePublic.lean/declarations/instance-source-edition-5.md) | 64 | `declaration-track:af5c76339d66cdc87a9f6eedfddc92653df4bbe3600c2f8083a691b056216201` |
-| 3 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/IsCommutativePublic.lean/declarations/instance.md) | 84 | `declaration-track:36e2859279f88d0f69e84a10fd578157426bb6d067167a45d823c225ca387149` |
-| 4 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/IsCommutativePublic.lean/declarations/instance-source-edition-3.md) | 104 | `declaration-track:51e9634cfb0a286295234704984b2697570241a591c19389f9de99fbbe8c9652` |
-| 5 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/IsCommutativePublic.lean/declarations/instance-source-edition-2.md) | 124 | `declaration-track:50443724cc76e7daf696d5841e9a6e04dc648b72f674b91f7e7e84c909351d33` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IsCommutativePublic.lean/declarations/instance-source-edition-4.md) | 44 | `declaration-track:66480c88570527d1d61fbfbfed8b4c33f764bdc4947de881b89659b6b459dbbb` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IsCommutativePublic.lean/declarations/instance-source-edition-5.md) | 64 | `declaration-track:af5c76339d66cdc87a9f6eedfddc92653df4bbe3600c2f8083a691b056216201` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IsCommutativePublic.lean/declarations/instance.md) | 84 | `declaration-track:36e2859279f88d0f69e84a10fd578157426bb6d067167a45d823c225ca387149` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IsCommutativePublic.lean/declarations/instance-source-edition-3.md) | 104 | `declaration-track:51e9634cfb0a286295234704984b2697570241a591c19389f9de99fbbe8c9652` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IsCommutativePublic.lean/declarations/instance-source-edition-2.md) | 124 | `declaration-track:50443724cc76e7daf696d5841e9a6e04dc648b72f674b91f7e7e84c909351d33` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PseudometrizableLindelof.lean/index.md) · [Full source](../../../../GeneralTopology/PseudometrizableLindelof.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PseudometrizableLindelof.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PseudometrizableLindelof.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [SecondCountableTopology.ofPseudoMetrizableSpaceLindelofSpace](../../../../GeneralTopology/PseudometrizableLindelof.lean/declarations/secondcountabletopology-ofpseudometrizablespacelindelofspace.md) | 21 | `declaration-track:472580416b57f4f7fa7033dcd2d070cd45d126aa8a91bbc7a0c6a259795edf01` |
+| 1 | `instance` | [SecondCountableTopology.ofPseudoMetrizableSpaceLindelofSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PseudometrizableLindelof.lean/declarations/secondcountabletopology-ofpseudometrizablespacelindelofspace.md) | 21 | `declaration-track:472580416b57f4f7fa7033dcd2d070cd45d126aa8a91bbc7a0c6a259795edf01` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

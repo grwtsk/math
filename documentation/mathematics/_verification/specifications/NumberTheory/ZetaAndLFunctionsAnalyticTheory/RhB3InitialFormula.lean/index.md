@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormula.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormula.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormula.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormula.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormula.lean/declarations/example.md) | 9 | `declaration-track:0f2705a3d259598ee2bbf97378e0cfe9969f840af15df934ca5d48bde74518df` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormula.lean/declarations/example-source-edition-5.md) | 11 | `declaration-track:8c55b641696239a6f6fb971d08a52d30840a59a674939e0ed2c34777c9133587` |
-| 3 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormula.lean/declarations/example-source-edition-3.md) | 13 | `declaration-track:5f506e7bb5b0d97ed5e91f71876bbe6649eaad588376dbb493ee7ea28d9921c1` |
-| 4 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormula.lean/declarations/example-source-edition-2.md) | 15 | `declaration-track:42c00f253dc00a8f3c4b4ce4a24000dc4dacef5ed97473c2f74a1e8dffc4d7f3` |
-| 5 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormula.lean/declarations/example-source-edition-4.md) | 18 | `declaration-track:74fd13b839b026de013c613dec0d4a347a57736538f2bb846bdbb14cc16030a0` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormula.lean/declarations/example.md) | 9 | `declaration-track:0f2705a3d259598ee2bbf97378e0cfe9969f840af15df934ca5d48bde74518df` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormula.lean/declarations/example-source-edition-5.md) | 11 | `declaration-track:8c55b641696239a6f6fb971d08a52d30840a59a674939e0ed2c34777c9133587` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormula.lean/declarations/example-source-edition-3.md) | 13 | `declaration-track:5f506e7bb5b0d97ed5e91f71876bbe6649eaad588376dbb493ee7ea28d9921c1` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormula.lean/declarations/example-source-edition-2.md) | 15 | `declaration-track:42c00f253dc00a8f3c4b4ce4a24000dc4dacef5ed97473c2f74a1e8dffc4d7f3` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormula.lean/declarations/example-source-edition-4.md) | 18 | `declaration-track:74fd13b839b026de013c613dec0d4a347a57736538f2bb846bdbb14cc16030a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

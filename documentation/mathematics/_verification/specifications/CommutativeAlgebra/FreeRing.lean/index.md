@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FreeRing.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FreeRing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreeRing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreeRing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,23 +57,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FreeRing](../../../../CommutativeAlgebra/FreeRing.lean/declarations/freering.md) | 49 | `declaration-track:a3467fa43d989be1de8bda86bec6753b3b0e0488717bfade021d5915456f5c9d` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/FreeRing.lean/declarations/instance-source-edition-3.md) | 52 | `declaration-track:ca48dadd056e1bdc52ffb42501ded4c734d53964fa9af87cff06fc0a57ea5442` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/FreeRing.lean/declarations/instance-source-edition-2.md) | 55 | `declaration-track:9cf52a1d4b633331f53c82d0e783dfc98c153920f62871f44d0805c3a6bc56f0` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/FreeRing.lean/declarations/instance.md) | 59 | `declaration-track:718061896c675b1b8039c83b44548dec0f24030b75b80b8c7f9d008c58759081` |
-| 5 | `def` | [of](../../../../CommutativeAlgebra/FreeRing.lean/declarations/of.md) | 67 | `declaration-track:7d14cca5ae35dc1d307cecbd5b70687871d5f89f76ea91fc548db629dc3bf83d` |
-| 6 | `theorem` | [of_injective](../../../../CommutativeAlgebra/FreeRing.lean/declarations/of-injective.md) | 70 | `result-track:d76ea96f9f7e2f54b1b64cfd6150d1f5ab82819ebd66d0be58b7160c393e2115` |
-| 7 | `theorem` | [of_ne_zero](../../../../CommutativeAlgebra/FreeRing.lean/declarations/of-ne-zero.md) | 74 | `result-track:9e33803e5a99a7f71fa8de6d6cf1fd709e5e15ce4ce28ff0095664c2c39e4ae8` |
-| 8 | `theorem` | [zero_ne_of](../../../../CommutativeAlgebra/FreeRing.lean/declarations/zero-ne-of.md) | 77 | `result-track:94d9bdc25f529af29593c81c5d8c4f0a0a4ee079eb0b07d18973d7238cfb41f7` |
-| 9 | `theorem` | [of_ne_one](../../../../CommutativeAlgebra/FreeRing.lean/declarations/of-ne-one.md) | 80 | `result-track:3b396454ef7b8ceca716caff4c4c53aef313fc77bc8b9190727b5fa9893b96e5` |
-| 10 | `theorem` | [one_ne_of](../../../../CommutativeAlgebra/FreeRing.lean/declarations/one-ne-of.md) | 83 | `result-track:5e98af404f778a576be909f213f0495d3d042d33aafb4a85af829cb382378d50` |
-| 11 | `theorem` | [induction_on](../../../../CommutativeAlgebra/FreeRing.lean/declarations/induction-on.md) | 86 | `result-track:5937b973644f6b4811dff26fa85d1abccf4909a7ad0974c946b42eed59da6ef3` |
-| 12 | `def` | [lift](../../../../CommutativeAlgebra/FreeRing.lean/declarations/lift.md) | 104 | `declaration-track:5f4fdd25d6dd9f43e4a25aa46015aedd929c35d47126186def6ea13eebc0b14f` |
-| 13 | `theorem` | [lift_of](../../../../CommutativeAlgebra/FreeRing.lean/declarations/lift-of.md) | 108 | `result-track:6b6e4ab1465bcdcfabd84338965f79c45c39b58519f02988f747f4747cd325e0` |
-| 14 | `theorem` | [lift_comp_of](../../../../CommutativeAlgebra/FreeRing.lean/declarations/lift-comp-of.md) | 112 | `result-track:c96ab80edb158b48498a04c15fc9fef356d313d8a9045e51bff56df3c10c815f` |
-| 15 | `theorem` | [hom_ext](../../../../CommutativeAlgebra/FreeRing.lean/declarations/hom-ext.md) | 116 | `result-track:bde4c31151c71e64f104eabeadc20c3afb83d08e1ce698967065a9e8cb454dc4` |
-| 16 | `def` | [map](../../../../CommutativeAlgebra/FreeRing.lean/declarations/map.md) | 124 | `declaration-track:121a2ea2514c6885205be45cea779ba915ddec17e852b861aa2d78baa1123df8` |
-| 17 | `theorem` | [map_of](../../../../CommutativeAlgebra/FreeRing.lean/declarations/map-of.md) | 128 | `result-track:9d726e9059576733cc8edba844559cce252d704f6f3bde0595de8738621406a7` |
+| 1 | `def` | [FreeRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreeRing.lean/declarations/freering.md) | 49 | `declaration-track:a3467fa43d989be1de8bda86bec6753b3b0e0488717bfade021d5915456f5c9d` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreeRing.lean/declarations/instance-source-edition-3.md) | 52 | `declaration-track:ca48dadd056e1bdc52ffb42501ded4c734d53964fa9af87cff06fc0a57ea5442` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreeRing.lean/declarations/instance-source-edition-2.md) | 55 | `declaration-track:9cf52a1d4b633331f53c82d0e783dfc98c153920f62871f44d0805c3a6bc56f0` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreeRing.lean/declarations/instance.md) | 59 | `declaration-track:718061896c675b1b8039c83b44548dec0f24030b75b80b8c7f9d008c58759081` |
+| 5 | `def` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreeRing.lean/declarations/of.md) | 67 | `declaration-track:7d14cca5ae35dc1d307cecbd5b70687871d5f89f76ea91fc548db629dc3bf83d` |
+| 6 | `theorem` | [of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreeRing.lean/declarations/of-injective.md) | 70 | `result-track:d76ea96f9f7e2f54b1b64cfd6150d1f5ab82819ebd66d0be58b7160c393e2115` |
+| 7 | `theorem` | [of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreeRing.lean/declarations/of-ne-zero.md) | 74 | `result-track:9e33803e5a99a7f71fa8de6d6cf1fd709e5e15ce4ce28ff0095664c2c39e4ae8` |
+| 8 | `theorem` | [zero_ne_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreeRing.lean/declarations/zero-ne-of.md) | 77 | `result-track:94d9bdc25f529af29593c81c5d8c4f0a0a4ee079eb0b07d18973d7238cfb41f7` |
+| 9 | `theorem` | [of_ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreeRing.lean/declarations/of-ne-one.md) | 80 | `result-track:3b396454ef7b8ceca716caff4c4c53aef313fc77bc8b9190727b5fa9893b96e5` |
+| 10 | `theorem` | [one_ne_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreeRing.lean/declarations/one-ne-of.md) | 83 | `result-track:5e98af404f778a576be909f213f0495d3d042d33aafb4a85af829cb382378d50` |
+| 11 | `theorem` | [induction_on](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreeRing.lean/declarations/induction-on.md) | 86 | `result-track:5937b973644f6b4811dff26fa85d1abccf4909a7ad0974c946b42eed59da6ef3` |
+| 12 | `def` | [lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreeRing.lean/declarations/lift.md) | 104 | `declaration-track:5f4fdd25d6dd9f43e4a25aa46015aedd929c35d47126186def6ea13eebc0b14f` |
+| 13 | `theorem` | [lift_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreeRing.lean/declarations/lift-of.md) | 108 | `result-track:6b6e4ab1465bcdcfabd84338965f79c45c39b58519f02988f747f4747cd325e0` |
+| 14 | `theorem` | [lift_comp_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreeRing.lean/declarations/lift-comp-of.md) | 112 | `result-track:c96ab80edb158b48498a04c15fc9fef356d313d8a9045e51bff56df3c10c815f` |
+| 15 | `theorem` | [hom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreeRing.lean/declarations/hom-ext.md) | 116 | `result-track:bde4c31151c71e64f104eabeadc20c3afb83d08e1ce698967065a9e8cb454dc4` |
+| 16 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreeRing.lean/declarations/map.md) | 124 | `declaration-track:121a2ea2514c6885205be45cea779ba915ddec17e852b861aa2d78baa1123df8` |
+| 17 | `theorem` | [map_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreeRing.lean/declarations/map-of.md) | 128 | `result-track:9d726e9059576733cc8edba844559cce252d704f6f3bde0595de8738621406a7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mkGeneralizationForbiddenSet](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsNamespacedPublic.lean/declarations/mkgeneralizationforbiddenset.md) | 27 | `declaration-track:b0db43403fb16744a1d3f10d2a4b0953218a11685ce53430175cf7ea3fde1e72` |
-| 2 | `def` | [getFVarSetToGeneralize](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsNamespacedPublic.lean/declarations/getfvarsettogeneralize.md) | 70 | `declaration-track:5badbb3f13a1de960771da43694f9ea0fc51943605cb7253adf9795b358e49a9` |
-| 3 | `def` | [getFVarsToGeneralize](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsNamespacedPublic.lean/declarations/getfvarstogeneralize.md) | 81 | `declaration-track:8ac5dfb3cfae47f77e553bf74fa447797ccb794afbe0949575807a6945d55f73` |
+| 1 | `def` | [mkGeneralizationForbiddenSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsNamespacedPublic.lean/declarations/mkgeneralizationforbiddenset.md) | 27 | `declaration-track:b0db43403fb16744a1d3f10d2a4b0953218a11685ce53430175cf7ea3fde1e72` |
+| 2 | `def` | [getFVarSetToGeneralize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsNamespacedPublic.lean/declarations/getfvarsettogeneralize.md) | 70 | `declaration-track:5badbb3f13a1de960771da43694f9ea0fc51943605cb7253adf9795b358e49a9` |
+| 3 | `def` | [getFVarsToGeneralize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsNamespacedPublic.lean/declarations/getfvarstogeneralize.md) | 81 | `declaration-track:8ac5dfb3cfae47f77e553bf74fa447797ccb794afbe0949575807a6945d55f73` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

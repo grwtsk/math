@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologicalAbelianizationNamespacedPublic.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologicalAbelianizationNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologicalAbelianizationNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologicalAbelianizationNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instNormalCommutatorClosure](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologicalAbelianizationNamespacedPublic.lean/declarations/instnormalcommutatorclosure.md) | 45 | `declaration-track:a35ec912ec9e987ac87829d8b989dc65ec3a9474b8e6415c5dc5eed351488db9` |
-| 2 | `abbrev` | [TopologicalAbelianization](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologicalAbelianizationNamespacedPublic.lean/declarations/topologicalabelianization.md) | 50 | `declaration-track:fbfbc5ae067656715b37ac9e341a516dc61e85c8d3d7bdbe1801a8534283db02` |
-| 3 | `instance` | [commGroup](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologicalAbelianizationNamespacedPublic.lean/declarations/commgroup.md) | 56 | `declaration-track:f16a134179367a244f7cd0d373a8378c759b94648d0987e28fb86dfa79587dd8` |
+| 1 | `instance` | [instNormalCommutatorClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologicalAbelianizationNamespacedPublic.lean/declarations/instnormalcommutatorclosure.md) | 45 | `declaration-track:a35ec912ec9e987ac87829d8b989dc65ec3a9474b8e6415c5dc5eed351488db9` |
+| 2 | `abbrev` | [TopologicalAbelianization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologicalAbelianizationNamespacedPublic.lean/declarations/topologicalabelianization.md) | 50 | `declaration-track:fbfbc5ae067656715b37ac9e341a516dc61e85c8d3d7bdbe1801a8534283db02` |
+| 3 | `instance` | [commGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologicalAbelianizationNamespacedPublic.lean/declarations/commgroup.md) | 56 | `declaration-track:f16a134179367a244f7cd0d373a8378c759b94648d0987e28fb86dfa79587dd8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

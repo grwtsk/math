@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIntegrableOnIntegrableOnPublicSourceEdition2.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIntegrableOnIntegrableOnPublicSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIntegrableOnIntegrableOnPublicSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIntegrableOnIntegrableOnPublicSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IntegrableOn.mono'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIntegrableOnIntegrableOnPublicSourceEdition2.lean/declarations/integrableon-mono.md) | 19 | `result-track:5159c00a5e21c245ae6c015bff10f1ef001999fbfc7481cf057587e43cac5bb7` |
+| 1 | `lemma` | [IntegrableOn.mono'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIntegrableOnIntegrableOnPublicSourceEdition2.lean/declarations/integrableon-mono.md) | 19 | `result-track:5159c00a5e21c245ae6c015bff10f1ef001999fbfc7481cf057587e43cac5bb7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

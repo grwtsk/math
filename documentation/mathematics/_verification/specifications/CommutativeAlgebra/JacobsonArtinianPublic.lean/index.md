@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/JacobsonArtinianPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/JacobsonArtinianPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/JacobsonArtinianPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/JacobsonArtinianPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Module.finite_of_isSemisimpleRing](../../../../CommutativeAlgebra/JacobsonArtinianPublic.lean/declarations/module-finite-of-issemisimplering.md) | 25 | `result-track:5979707f0995cd95c0823900ef9e1b7e757d4d01cda246a0b41536eeebd213f2` |
-| 2 | `lemma` | [Module.finite_of_isArtinianRing](../../../../CommutativeAlgebra/JacobsonArtinianPublic.lean/declarations/module-finite-of-isartinianring.md) | 35 | `result-track:31a98f8ad780c32f04a4e5c772a2a533cd254412b910995c72ce9181ec85e64d` |
-| 3 | `lemma` | [Module.finite_iff_isArtinianRing](../../../../CommutativeAlgebra/JacobsonArtinianPublic.lean/declarations/module-finite-iff-isartinianring.md) | 42 | `result-track:6277e199cb973d910e62702fcd59b2a388f52ff068aa87d53d7a088d0f9daac6` |
-| 4 | `lemma` | [Module.finite_iff_krullDimLE_zero](../../../../CommutativeAlgebra/JacobsonArtinianPublic.lean/declarations/module-finite-iff-krulldimle-zero.md) | 49 | `result-track:51cbeffc3e50457f5142ba116ff8999b3a35b49477be7cc690464d25d419a9a9` |
+| 1 | `lemma` | [Module.finite_of_isSemisimpleRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/JacobsonArtinianPublic.lean/declarations/module-finite-of-issemisimplering.md) | 25 | `result-track:5979707f0995cd95c0823900ef9e1b7e757d4d01cda246a0b41536eeebd213f2` |
+| 2 | `lemma` | [Module.finite_of_isArtinianRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/JacobsonArtinianPublic.lean/declarations/module-finite-of-isartinianring.md) | 35 | `result-track:31a98f8ad780c32f04a4e5c772a2a533cd254412b910995c72ce9181ec85e64d` |
+| 3 | `lemma` | [Module.finite_iff_isArtinianRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/JacobsonArtinianPublic.lean/declarations/module-finite-iff-isartinianring.md) | 42 | `result-track:6277e199cb973d910e62702fcd59b2a388f52ff068aa87d53d7a088d0f9daac6` |
+| 4 | `lemma` | [Module.finite_iff_krullDimLE_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/JacobsonArtinianPublic.lean/declarations/module-finite-iff-krulldimle-zero.md) | 49 | `result-track:51cbeffc3e50457f5142ba116ff8999b3a35b49477be7cc690464d25d419a9a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

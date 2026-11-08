@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CountOccurrences.lean/index.md) · [Full source](../../../../Combinatorics/CountOccurrences.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountOccurrences.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountOccurrences.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [PositiveOccurrenceWindow](../../../../Combinatorics/CountOccurrences.lean/declarations/positiveoccurrencewindow.md) | 19 | `declaration-track:a500834ee518ab0e94e2d24a1e10223b36c4ee83d31c037faa17768ec08e4314` |
-| 2 | `def` | [PositiveCountFibres](../../../../Combinatorics/CountOccurrences.lean/declarations/positivecountfibres.md) | 23 | `declaration-track:66d262e791461013b94807a45ee1271482228b9250b6c519aaddbda32c017a87` |
-| 3 | `def` | [positiveOccurrenceWindowEquiv](../../../../Combinatorics/CountOccurrences.lean/declarations/positiveoccurrencewindowequiv.md) | 28 | `declaration-track:27efbd89b20e4a11b00ac3ad637b23a047df02647e31322bd9a0239e41d59d96` |
-| 4 | `theorem` | [positive_occurrence_window_finite](../../../../Combinatorics/CountOccurrences.lean/declarations/positive-occurrence-window-finite.md) | 42 | `result-track:4b3d1347cc17e7c86363258bfd93f63df63be0b8e985fa3df648643bf1a00cfa` |
-| 5 | `theorem` | [positive_occurrence_window_card_eq_count](../../../../Combinatorics/CountOccurrences.lean/declarations/positive-occurrence-window-card-eq-count.md) | 52 | `result-track:85e46de13149be504bda1da28c6d45824886429c94483144742768da0a85410d` |
+| 1 | `def` | [PositiveOccurrenceWindow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountOccurrences.lean/declarations/positiveoccurrencewindow.md) | 19 | `declaration-track:a500834ee518ab0e94e2d24a1e10223b36c4ee83d31c037faa17768ec08e4314` |
+| 2 | `def` | [PositiveCountFibres](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountOccurrences.lean/declarations/positivecountfibres.md) | 23 | `declaration-track:66d262e791461013b94807a45ee1271482228b9250b6c519aaddbda32c017a87` |
+| 3 | `def` | [positiveOccurrenceWindowEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountOccurrences.lean/declarations/positiveoccurrencewindowequiv.md) | 28 | `declaration-track:27efbd89b20e4a11b00ac3ad637b23a047df02647e31322bd9a0239e41d59d96` |
+| 4 | `theorem` | [positive_occurrence_window_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountOccurrences.lean/declarations/positive-occurrence-window-finite.md) | 42 | `result-track:4b3d1347cc17e7c86363258bfd93f63df63be0b8e985fa3df648643bf1a00cfa` |
+| 5 | `theorem` | [positive_occurrence_window_card_eq_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountOccurrences.lean/declarations/positive-occurrence-window-card-eq-count.md) | 52 | `result-track:85e46de13149be504bda1da28c6d45824886429c94483144742768da0a85410d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../../../../../_support/docs/verification/_support/lean-provider-adapters/BitMatrix/FiniteField/Galois.lean/index.md) · [Full source](../../../../../../../../../../_support/docs/verification/_support/lean-provider-adapters/BitMatrix/FiniteField/Galois.lean/source.md)
+[Module and every result](../../../../../../../../../../_support/provider-documentation/lean-provider-adapters/BitMatrix/FiniteField/Galois.lean/index.md) · [Full source](../../../../../../../../../../_support/provider-documentation/lean-provider-adapters/BitMatrix/FiniteField/Galois.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,12 +46,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Boolean Coefficient Equivalence](../../../../../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanCoefficientEquivalence.lean/index.md) — import line 1; pinned internal source present.
-- [Row Major Boolean Coordinates](../../../../../../../../../../FieldTheoryAndPolynomials/RowMajorBooleanCoordinates.lean/index.md) — import line 2; pinned internal source present.
-- [Pointwise Product Obstruction](../../../../../../../../../../FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/index.md) — import line 3; pinned internal source present.
-- [Supplied Linear Field Encoding](../../../../../../../../../../AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/index.md) — import line 4; pinned internal source present.
-- [Transported Field Operations](../../../../../../../../../../AssociativeRingsAndAlgebras/TransportedFieldOperations.lean/index.md) — import line 5; pinned internal source present.
-- [Encoding Quantizer Image](../../../../../../../../../../AssociativeRingsAndAlgebras/EncodingQuantizerImage.lean/index.md) — import line 6; pinned internal source present.
+- [Boolean Coefficient Equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanCoefficientEquivalence.lean/index.md) — import line 1; pinned internal source present.
+- [Row Major Boolean Coordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RowMajorBooleanCoordinates.lean/index.md) — import line 2; pinned internal source present.
+- [Pointwise Product Obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/index.md) — import line 3; pinned internal source present.
+- [Supplied Linear Field Encoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/index.md) — import line 4; pinned internal source present.
+- [Transported Field Operations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/TransportedFieldOperations.lean/index.md) — import line 5; pinned internal source present.
+- [Encoding Quantizer Image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/EncodingQuantizerImage.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

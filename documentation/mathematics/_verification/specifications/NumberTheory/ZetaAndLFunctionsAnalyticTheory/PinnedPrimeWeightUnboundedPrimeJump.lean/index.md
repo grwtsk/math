@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJump.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJump.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJump.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJump.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightPsiCapacityNoGo`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightPsiCapacityNoGo`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.NumberTheory.Bertrand` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.NumberTheory.Chebyshev` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 7; external provider; requires a separately pinned dependency.
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [chebyshevPsi_nat_prime_jump](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJump.lean/declarations/chebyshevpsi-nat-prime-jump.md) | 43 | `result-track:fb463971063d52364c586658e4ebe0ef7a534b91c4061a3dbd1f215d1e0d2eee` |
-| 2 | `theorem` | [psiError_nat_prime_jump](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJump.lean/declarations/psierror-nat-prime-jump.md) | 69 | `result-track:58a563eadc5120fd125717d7c048d92cc02a665c5475c7745e046f8f5c4a9c1f` |
-| 3 | `theorem` | [two_mul_dyadicScale_eq_pow](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJump.lean/declarations/two-mul-dyadicscale-eq-pow.md) | 96 | `result-track:8c17bdb78badb218f1cb67968316a0ccb468a8ba988d795fe74cc22572b1f974` |
-| 4 | `theorem` | [log_two_mul_dyadicScale](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJump.lean/declarations/log-two-mul-dyadicscale.md) | 109 | `result-track:90d83bc5dfbd81626eceb8147cf0781731899ae5d1d21a13e4580ae958571253` |
-| 5 | `theorem` | [exists_dyadic_bertrandPrime_log_gt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJump.lean/declarations/exists-dyadic-bertrandprime-log-gt.md) | 127 | `result-track:65ae7655091aa8ba4d42cdcb8ab9a4cb91cc7dd69f20d1172d445c7ac1e76dfe` |
-| 6 | `theorem` | [unboundedAdjacentPsiJump_of_bertrand](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJump.lean/declarations/unboundedadjacentpsijump-of-bertrand.md) | 171 | `result-track:08c746a79783953dc63d278fa639f0e6c3630fd9339f8035b873d5556bb877bb` |
+| 1 | `theorem` | [chebyshevPsi_nat_prime_jump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJump.lean/declarations/chebyshevpsi-nat-prime-jump.md) | 43 | `result-track:fb463971063d52364c586658e4ebe0ef7a534b91c4061a3dbd1f215d1e0d2eee` |
+| 2 | `theorem` | [psiError_nat_prime_jump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJump.lean/declarations/psierror-nat-prime-jump.md) | 69 | `result-track:58a563eadc5120fd125717d7c048d92cc02a665c5475c7745e046f8f5c4a9c1f` |
+| 3 | `theorem` | [two_mul_dyadicScale_eq_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJump.lean/declarations/two-mul-dyadicscale-eq-pow.md) | 96 | `result-track:8c17bdb78badb218f1cb67968316a0ccb468a8ba988d795fe74cc22572b1f974` |
+| 4 | `theorem` | [log_two_mul_dyadicScale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJump.lean/declarations/log-two-mul-dyadicscale.md) | 109 | `result-track:90d83bc5dfbd81626eceb8147cf0781731899ae5d1d21a13e4580ae958571253` |
+| 5 | `theorem` | [exists_dyadic_bertrandPrime_log_gt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJump.lean/declarations/exists-dyadic-bertrandprime-log-gt.md) | 127 | `result-track:65ae7655091aa8ba4d42cdcb8ab9a4cb91cc7dd69f20d1172d445c7ac1e76dfe` |
+| 6 | `theorem` | [unboundedAdjacentPsiJump_of_bertrand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJump.lean/declarations/unboundedadjacentpsijump-of-bertrand.md) | 171 | `result-track:08c746a79783953dc63d278fa639f0e6c3630fd9339f8035b873d5556bb877bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

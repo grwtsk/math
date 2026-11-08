@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/ErgodicRadonNikodymNamespaced.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/ErgodicRadonNikodymNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ErgodicRadonNikodymNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ErgodicRadonNikodymNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [singularPart](../../../../DynamicalSystemsAndErgodicTheory/ErgodicRadonNikodymNamespaced.lean/declarations/singularpart.md) | 42 | `result-track:e5ee43cd8c7880060fa4591f71a312d5efd15d4326d7a98c5630e8fa905bfd02` |
-| 2 | `theorem` | [withDensity_rnDeriv](../../../../DynamicalSystemsAndErgodicTheory/ErgodicRadonNikodymNamespaced.lean/declarations/withdensity-rnderiv.md) | 64 | `result-track:e01876ecad71d67dc4f87bb06ca6493885c69f508421b35b31a745a45b20e7cf` |
-| 3 | `theorem` | [rnDeriv_comp_aeEq](../../../../DynamicalSystemsAndErgodicTheory/ErgodicRadonNikodymNamespaced.lean/declarations/rnderiv-comp-aeeq.md) | 76 | `result-track:1344a2dfb8c4ede5b1640beb5ec05477538cad576143978d3c55b249defd1317` |
+| 1 | `theorem` | [singularPart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ErgodicRadonNikodymNamespaced.lean/declarations/singularpart.md) | 42 | `result-track:e5ee43cd8c7880060fa4591f71a312d5efd15d4326d7a98c5630e8fa905bfd02` |
+| 2 | `theorem` | [withDensity_rnDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ErgodicRadonNikodymNamespaced.lean/declarations/withdensity-rnderiv.md) | 64 | `result-track:e01876ecad71d67dc4f87bb06ca6493885c69f508421b35b31a745a45b20e7cf` |
+| 3 | `theorem` | [rnDeriv_comp_aeEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ErgodicRadonNikodymNamespaced.lean/declarations/rnderiv-comp-aeeq.md) | 76 | `result-track:1344a2dfb8c4ede5b1640beb5ec05477538cad576143978d3c55b249defd1317` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

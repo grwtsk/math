@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [paperSources](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/declarations/papersources.md) | 7 | `declaration-track:fa37a287eae95b6425047041527405bfc4808c6250d328a2cc8e0bdc5ef9a5cd` |
-| 2 | `theorem` | [paperSources_count](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/declarations/papersources-count.md) | 70 | `result-track:814b3156dc882659a974c0679d31635aab9bdca5646600a9f234775931f9f834` |
-| 3 | `def` | [theoremLikeTargetTotal](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/declarations/theoremliketargettotal.md) | 73 | `declaration-track:246d688b0d370c69e9043e8f6d3d59129461533cdebf2de4f2fb3fa10ba5087d` |
-| 4 | `def` | [frameworkPrimitiveTotal](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/declarations/frameworkprimitivetotal.md) | 74 | `declaration-track:3a8a55dd860dd9148fbe0bcaeed866e9100ead79bebb793bdcb58fbf47f9b29e` |
-| 5 | `def` | [openMentionTotal](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/declarations/openmentiontotal.md) | 75 | `declaration-track:635b873ca4032ee3272fbb3ad7d0986bb79ee5c7348e96db129b686a5d637c96` |
-| 6 | `theorem` | [theoremLikeTargetTotal_correct](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/declarations/theoremliketargettotal-correct.md) | 77 | `result-track:a2101f27b291e133977f6789d83f05c325c1d11cc1266007a3b58e0248e8f999` |
-| 7 | `theorem` | [frameworkPrimitiveTotal_correct](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/declarations/frameworkprimitivetotal-correct.md) | 80 | `result-track:849117b3d9f13bd1a6b37a735546d5ea95366fcdb0cdb48c3078e33802c1396d` |
-| 8 | `theorem` | [openMentionTotal_correct](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/declarations/openmentiontotal-correct.md) | 83 | `result-track:015c83a0fe8be3c2f52c05c5282bca2f3b2bd9cf089672365dc3be96a51bd9e8` |
+| 1 | `def` | [paperSources](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/declarations/papersources.md) | 7 | `declaration-track:fa37a287eae95b6425047041527405bfc4808c6250d328a2cc8e0bdc5ef9a5cd` |
+| 2 | `theorem` | [paperSources_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/declarations/papersources-count.md) | 70 | `result-track:814b3156dc882659a974c0679d31635aab9bdca5646600a9f234775931f9f834` |
+| 3 | `def` | [theoremLikeTargetTotal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/declarations/theoremliketargettotal.md) | 73 | `declaration-track:246d688b0d370c69e9043e8f6d3d59129461533cdebf2de4f2fb3fa10ba5087d` |
+| 4 | `def` | [frameworkPrimitiveTotal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/declarations/frameworkprimitivetotal.md) | 74 | `declaration-track:3a8a55dd860dd9148fbe0bcaeed866e9100ead79bebb793bdcb58fbf47f9b29e` |
+| 5 | `def` | [openMentionTotal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/declarations/openmentiontotal.md) | 75 | `declaration-track:635b873ca4032ee3272fbb3ad7d0986bb79ee5c7348e96db129b686a5d637c96` |
+| 6 | `theorem` | [theoremLikeTargetTotal_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/declarations/theoremliketargettotal-correct.md) | 77 | `result-track:a2101f27b291e133977f6789d83f05c325c1d11cc1266007a3b58e0248e8f999` |
+| 7 | `theorem` | [frameworkPrimitiveTotal_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/declarations/frameworkprimitivetotal-correct.md) | 80 | `result-track:849117b3d9f13bd1a6b37a735546d5ea95366fcdb0cdb48c3078e33802c1396d` |
+| 8 | `theorem` | [openMentionTotal_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusPaperSources.lean/declarations/openmentiontotal-correct.md) | 83 | `result-track:015c83a0fe8be3c2f52c05c5282bca2f3b2bd9cf089672365dc3be96a51bd9e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

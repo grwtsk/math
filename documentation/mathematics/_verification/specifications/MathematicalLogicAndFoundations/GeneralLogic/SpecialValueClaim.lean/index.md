@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpecialValueClaim.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpecialValueClaim.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpecialValueClaim.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpecialValueClaim.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpecialValueClaim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpecialValueClaim.lean/declarations/specialvalueclaim.md) | 30 | `declaration-track:97bf3abc2494b3d5e1155c469a591f266272292abbd7b8535155ce3004bf0a06` |
-| 2 | `def` | [spec](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpecialValueClaim.lean/declarations/spec.md) | 48 | `declaration-track:55b065fc4db469c39a2a2951443859584089f2c0af8ef49cf4f97703e4666ce5` |
-| 3 | `theorem` | [spec_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpecialValueClaim.lean/declarations/spec-apply.md) | 54 | `result-track:f1083983278cd19df0b7fe7072c0405acff30f29d3c0c32e591c7fa594fe6eee` |
-| 4 | `def` | [claim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpecialValueClaim.lean/declarations/claim.md) | 61 | `declaration-track:bc30fe206e92a5447241546cd5b9749045092e6932e7cd9efea90623aa0388f4` |
-| 5 | `theorem` | [certificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpecialValueClaim.lean/declarations/certificate.md) | 67 | `result-track:4c0283c361698550226dd1c2edf54d2c05d51e22021287f443d8d9e9859bd05f` |
-| 6 | `def` | [conditionalCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpecialValueClaim.lean/declarations/conditionalcertificate.md) | 74 | `declaration-track:c803c845d08143fa39dbb69858dc2af01ce47cdf69fdefa8209fc241e40dfb18` |
+| 1 | `structure` | [SpecialValueClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpecialValueClaim.lean/declarations/specialvalueclaim.md) | 30 | `declaration-track:97bf3abc2494b3d5e1155c469a591f266272292abbd7b8535155ce3004bf0a06` |
+| 2 | `def` | [spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpecialValueClaim.lean/declarations/spec.md) | 48 | `declaration-track:55b065fc4db469c39a2a2951443859584089f2c0af8ef49cf4f97703e4666ce5` |
+| 3 | `theorem` | [spec_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpecialValueClaim.lean/declarations/spec-apply.md) | 54 | `result-track:f1083983278cd19df0b7fe7072c0405acff30f29d3c0c32e591c7fa594fe6eee` |
+| 4 | `def` | [claim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpecialValueClaim.lean/declarations/claim.md) | 61 | `declaration-track:bc30fe206e92a5447241546cd5b9749045092e6932e7cd9efea90623aa0388f4` |
+| 5 | `theorem` | [certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpecialValueClaim.lean/declarations/certificate.md) | 67 | `result-track:4c0283c361698550226dd1c2edf54d2c05d51e22021287f443d8d9e9859bd05f` |
+| 6 | `def` | [conditionalCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpecialValueClaim.lean/declarations/conditionalcertificate.md) | 74 | `declaration-track:c803c845d08143fa39dbb69858dc2af01ce47cdf69fdefa8209fc241e40dfb18` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

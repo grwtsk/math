@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProductDiagonalAndFixedPointExamples.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProductDiagonalAndFixedPointExamples.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProductDiagonalAndFixedPointExamples.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProductDiagonalAndFixedPointExamples.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,12 +62,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProductDiagonalAndFixedPointExamples.lean/declarations/example-source-edition-5.md) | 30 | `declaration-track:93dbaf0ce3bf6931a8d050d317ddccf82b62bdb26e43dd89b7a02ce61c013a57` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProductDiagonalAndFixedPointExamples.lean/declarations/example-source-edition-6.md) | 35 | `declaration-track:d597e8131d1dae0e135009e950522fba082fde2d50d588bd81f7013bdc4667ba` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProductDiagonalAndFixedPointExamples.lean/declarations/example.md) | 41 | `declaration-track:3e5ac65e989dcb2b8cb0814810ff15d7472c6678912191f3e88e6ffe01effdb1` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProductDiagonalAndFixedPointExamples.lean/declarations/example-source-edition-4.md) | 48 | `declaration-track:90fd70d30885ee4f08c218592e9d5ed10c6aa8aaa726a2636628ed0689560bec` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProductDiagonalAndFixedPointExamples.lean/declarations/example-source-edition-2.md) | 53 | `declaration-track:51507e8d0435db2aac1ecadd85bcd224426ce87c78ce7a63300f3bb1b45237e6` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProductDiagonalAndFixedPointExamples.lean/declarations/example-source-edition-3.md) | 57 | `declaration-track:79d35f689eead0279311639acec93084b15d9a3e6481897899bb2cf04d42e965` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProductDiagonalAndFixedPointExamples.lean/declarations/example-source-edition-5.md) | 30 | `declaration-track:93dbaf0ce3bf6931a8d050d317ddccf82b62bdb26e43dd89b7a02ce61c013a57` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProductDiagonalAndFixedPointExamples.lean/declarations/example-source-edition-6.md) | 35 | `declaration-track:d597e8131d1dae0e135009e950522fba082fde2d50d588bd81f7013bdc4667ba` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProductDiagonalAndFixedPointExamples.lean/declarations/example.md) | 41 | `declaration-track:3e5ac65e989dcb2b8cb0814810ff15d7472c6678912191f3e88e6ffe01effdb1` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProductDiagonalAndFixedPointExamples.lean/declarations/example-source-edition-4.md) | 48 | `declaration-track:90fd70d30885ee4f08c218592e9d5ed10c6aa8aaa726a2636628ed0689560bec` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProductDiagonalAndFixedPointExamples.lean/declarations/example-source-edition-2.md) | 53 | `declaration-track:51507e8d0435db2aac1ecadd85bcd224426ce87c78ce7a63300f3bb1b45237e6` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProductDiagonalAndFixedPointExamples.lean/declarations/example-source-edition-3.md) | 57 | `declaration-track:79d35f689eead0279311639acec93084b15d9a3e6481897899bb2cf04d42e965` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

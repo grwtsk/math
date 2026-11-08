@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationLocallySmall.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationLocallySmall.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationLocallySmall.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationLocallySmall.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [colimitYonedaHomEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationLocallySmall.lean/declarations/colimityonedahomequiv.md) | 40 | `declaration-track:50722e36194c009eae3b0dbdd383c09ca495dea54e46a874477d8566d04391d6` |
-| 2 | `theorem` | [colimitYonedaHomEquiv_π_apply](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationLocallySmall.lean/declarations/colimityonedahomequiv-apply.md) | 50 | `result-track:452f427831d1346eaaf84e1ac83aaf232348d175eff7d8b08779fc2d47bd3ba8` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationLocallySmall.lean/declarations/instance.md) | 63 | `declaration-track:03dd75fa85d576a55fa0b7ff177806be6dabd314336391907e069903b6d286ae` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationLocallySmall.lean/declarations/instance-source-edition-2.md) | 68 | `declaration-track:6521f0c6d4aa4ecf13a39bd7b34e24203c56dcb8eed101098cacc527c6b3f601` |
+| 1 | `def` | [colimitYonedaHomEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationLocallySmall.lean/declarations/colimityonedahomequiv.md) | 40 | `declaration-track:50722e36194c009eae3b0dbdd383c09ca495dea54e46a874477d8566d04391d6` |
+| 2 | `theorem` | [colimitYonedaHomEquiv_π_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationLocallySmall.lean/declarations/colimityonedahomequiv-apply.md) | 50 | `result-track:452f427831d1346eaaf84e1ac83aaf232348d175eff7d8b08779fc2d47bd3ba8` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationLocallySmall.lean/declarations/instance.md) | 63 | `declaration-track:03dd75fa85d576a55fa0b7ff177806be6dabd314336391907e069903b6d286ae` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationLocallySmall.lean/declarations/instance-source-edition-2.md) | 68 | `declaration-track:6521f0c6d4aa4ecf13a39bd7b34e24203c56dcb8eed101098cacc527c6b3f601` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

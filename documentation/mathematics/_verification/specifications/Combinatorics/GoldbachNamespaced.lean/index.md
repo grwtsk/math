@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/GoldbachNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/GoldbachNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GoldbachNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GoldbachNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [even_conjecture](../../../../Combinatorics/GoldbachNamespaced.lean/declarations/even-conjecture.md) | 28 | `declaration-track:0737c9abbefc6220069edfc671db9e0bb67bb3a0798018a9283c4bd731903ddb` |
-| 2 | `lemma` | [even_conjecture_mono](../../../../Combinatorics/GoldbachNamespaced.lean/declarations/even-conjecture-mono.md) | 31 | `result-track:db6e14ddf13db696ea608341fedfda0a6c77b9d5dd91be0815549842ef63a70e` |
-| 3 | `theorem` | [even_goldbach_test](../../../../Combinatorics/GoldbachNamespaced.lean/declarations/even-goldbach-test.md) | 45 | `result-track:f5bfc4a6b144492cb54e9013881a56c2f2dc5edeb1414f1579358fc9c913b52f` |
-| 4 | `def` | [odd_conjecture](../../../../Combinatorics/GoldbachNamespaced.lean/declarations/odd-conjecture.md) | 70 | `declaration-track:81dda0f0259563255ca5b665eb467c8376eec90e8de3cc01b050164c457d2830` |
-| 5 | `lemma` | [odd_conjecture_mono](../../../../Combinatorics/GoldbachNamespaced.lean/declarations/odd-conjecture-mono.md) | 74 | `result-track:8268bfa8f05f1318401685180682b99fdc520cbf3ad5c9d5ef7640bb462f9178` |
-| 6 | `theorem` | [even_to_odd_goldbach_triv](../../../../Combinatorics/GoldbachNamespaced.lean/declarations/even-to-odd-goldbach-triv.md) | 91 | `result-track:3a173078335cf6035a4a9a70e8ec45134b5a1f9a23940de46da9cee802fed81f` |
-| 7 | `theorem` | [odd_goldbach_test](../../../../Combinatorics/GoldbachNamespaced.lean/declarations/odd-goldbach-test.md) | 98 | `result-track:26e0883de3d633fe3dec8d784ffad3ee5d1fc152a7eb7b9311d26992f47c4a98` |
-| 8 | `theorem` | [even_to_odd_goldbach](../../../../Combinatorics/GoldbachNamespaced.lean/declarations/even-to-odd-goldbach.md) | 114 | `result-track:b48d8cad410583ce6788dfa055aa5e3d8d15027924822a669d96f7809f05a9f2` |
-| 9 | `theorem` | [richstein_goldbach](../../../../Combinatorics/GoldbachNamespaced.lean/declarations/richstein-goldbach.md) | 163 | `result-track:40170afb064117121f392590b4fd8a3e901921526ede8adea074b058499655ef` |
-| 10 | `theorem` | [ramare_saouter_odd_goldbach](../../../../Combinatorics/GoldbachNamespaced.lean/declarations/ramare-saouter-odd-goldbach.md) | 174 | `result-track:e9756166838fada9d0b8d1476063a73bff0e7a3582aa739b0ab9193cd1980e45` |
-| 11 | `theorem` | [e_silva_herzog_piranian_goldbach](../../../../Combinatorics/GoldbachNamespaced.lean/declarations/e-silva-herzog-piranian-goldbach.md) | 190 | `result-track:47fb3ae8cf65129384a0ce79cb8bb3383a0ef9ca3bfb5335ef79c1194d345489` |
-| 12 | `theorem` | [helfgott_odd_goldbach_finite](../../../../Combinatorics/GoldbachNamespaced.lean/declarations/helfgott-odd-goldbach-finite.md) | 201 | `result-track:b01238780e3bab80c313e625b9bf862ca48e44a37fedd94e4edb50a592574113` |
-| 13 | `theorem` | [e_silva_herzog_piranian_goldbach_ext](../../../../Combinatorics/GoldbachNamespaced.lean/declarations/e-silva-herzog-piranian-goldbach-ext.md) | 222 | `result-track:4a0fc987b6c4855735e41ce6c07f08ea07c973222506083f3ae88711cf3d01a9` |
-| 14 | `theorem` | [kadiri_lumley_odd_goldbach_finite](../../../../Combinatorics/GoldbachNamespaced.lean/declarations/kadiri-lumley-odd-goldbach-finite.md) | 245 | `result-track:2eb5651175142b15361a0fdf364da867bbdc2eef8a6cb3da115e0ba6461d87d9` |
+| 1 | `def` | [even_conjecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GoldbachNamespaced.lean/declarations/even-conjecture.md) | 28 | `declaration-track:0737c9abbefc6220069edfc671db9e0bb67bb3a0798018a9283c4bd731903ddb` |
+| 2 | `lemma` | [even_conjecture_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GoldbachNamespaced.lean/declarations/even-conjecture-mono.md) | 31 | `result-track:db6e14ddf13db696ea608341fedfda0a6c77b9d5dd91be0815549842ef63a70e` |
+| 3 | `theorem` | [even_goldbach_test](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GoldbachNamespaced.lean/declarations/even-goldbach-test.md) | 45 | `result-track:f5bfc4a6b144492cb54e9013881a56c2f2dc5edeb1414f1579358fc9c913b52f` |
+| 4 | `def` | [odd_conjecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GoldbachNamespaced.lean/declarations/odd-conjecture.md) | 70 | `declaration-track:81dda0f0259563255ca5b665eb467c8376eec90e8de3cc01b050164c457d2830` |
+| 5 | `lemma` | [odd_conjecture_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GoldbachNamespaced.lean/declarations/odd-conjecture-mono.md) | 74 | `result-track:8268bfa8f05f1318401685180682b99fdc520cbf3ad5c9d5ef7640bb462f9178` |
+| 6 | `theorem` | [even_to_odd_goldbach_triv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GoldbachNamespaced.lean/declarations/even-to-odd-goldbach-triv.md) | 91 | `result-track:3a173078335cf6035a4a9a70e8ec45134b5a1f9a23940de46da9cee802fed81f` |
+| 7 | `theorem` | [odd_goldbach_test](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GoldbachNamespaced.lean/declarations/odd-goldbach-test.md) | 98 | `result-track:26e0883de3d633fe3dec8d784ffad3ee5d1fc152a7eb7b9311d26992f47c4a98` |
+| 8 | `theorem` | [even_to_odd_goldbach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GoldbachNamespaced.lean/declarations/even-to-odd-goldbach.md) | 114 | `result-track:b48d8cad410583ce6788dfa055aa5e3d8d15027924822a669d96f7809f05a9f2` |
+| 9 | `theorem` | [richstein_goldbach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GoldbachNamespaced.lean/declarations/richstein-goldbach.md) | 163 | `result-track:40170afb064117121f392590b4fd8a3e901921526ede8adea074b058499655ef` |
+| 10 | `theorem` | [ramare_saouter_odd_goldbach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GoldbachNamespaced.lean/declarations/ramare-saouter-odd-goldbach.md) | 174 | `result-track:e9756166838fada9d0b8d1476063a73bff0e7a3582aa739b0ab9193cd1980e45` |
+| 11 | `theorem` | [e_silva_herzog_piranian_goldbach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GoldbachNamespaced.lean/declarations/e-silva-herzog-piranian-goldbach.md) | 190 | `result-track:47fb3ae8cf65129384a0ce79cb8bb3383a0ef9ca3bfb5335ef79c1194d345489` |
+| 12 | `theorem` | [helfgott_odd_goldbach_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GoldbachNamespaced.lean/declarations/helfgott-odd-goldbach-finite.md) | 201 | `result-track:b01238780e3bab80c313e625b9bf862ca48e44a37fedd94e4edb50a592574113` |
+| 13 | `theorem` | [e_silva_herzog_piranian_goldbach_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GoldbachNamespaced.lean/declarations/e-silva-herzog-piranian-goldbach-ext.md) | 222 | `result-track:4a0fc987b6c4855735e41ce6c07f08ea07c973222506083f3ae88711cf3d01a9` |
+| 14 | `theorem` | [kadiri_lumley_odd_goldbach_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GoldbachNamespaced.lean/declarations/kadiri-lumley-odd-goldbach-finite.md) | 245 | `result-track:2eb5651175142b15361a0fdf364da867bbdc2eef8a6cb3da115e0ba6461d87d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

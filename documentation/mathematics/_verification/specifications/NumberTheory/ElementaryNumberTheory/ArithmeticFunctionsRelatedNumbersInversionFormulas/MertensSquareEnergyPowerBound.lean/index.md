@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyPowerBound.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyPowerBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyPowerBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyPowerBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationMertensEnergy`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixVariationMertensEnergy.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationMertensEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalPrefixVariationMertensEnergy.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mertensSquareEnergy_le_of_powerBound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyPowerBound.lean/declarations/mertenssquareenergy-le-of-powerbound.md) | 30 | `result-track:b06e62a2860129647c6fe607d7f7ac9df8dcfaf8d09b0ae584ed0dd55506ca02` |
-| 2 | `theorem` | [mertensSquareEnergyPowerSaving_of_mertensPowerBound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyPowerBound.lean/declarations/mertenssquareenergypowersaving-of-mertenspowerbound.md) | 154 | `result-track:97b9e2a6133b48cd0954b82fd2a9538c6711892575419e735b423433b3238640` |
-| 3 | `theorem` | [criticalBoundary_of_mertensPowerBound_viaSquareEnergy](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyPowerBound.lean/declarations/criticalboundary-of-mertenspowerbound-viasquareenergy.md) | 175 | `result-track:b22bf906d9fbe5101d2b2df6b7d6383239c0a08ca4c57102f66515f1055df29f` |
+| 1 | `theorem` | [mertensSquareEnergy_le_of_powerBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyPowerBound.lean/declarations/mertenssquareenergy-le-of-powerbound.md) | 30 | `result-track:b06e62a2860129647c6fe607d7f7ac9df8dcfaf8d09b0ae584ed0dd55506ca02` |
+| 2 | `theorem` | [mertensSquareEnergyPowerSaving_of_mertensPowerBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyPowerBound.lean/declarations/mertenssquareenergypowersaving-of-mertenspowerbound.md) | 154 | `result-track:97b9e2a6133b48cd0954b82fd2a9538c6711892575419e735b423433b3238640` |
+| 3 | `theorem` | [criticalBoundary_of_mertensPowerBound_viaSquareEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyPowerBound.lean/declarations/criticalboundary-of-mertenspowerbound-viasquareenergy.md) | 175 | `result-track:b22bf906d9fbe5101d2b2df6b7d6383239c0a08ca4c57102f66515f1055df29f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

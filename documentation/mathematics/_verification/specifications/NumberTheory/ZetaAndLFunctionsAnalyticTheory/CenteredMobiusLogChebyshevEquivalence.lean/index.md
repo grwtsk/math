@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevEquivalence.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogChebyshevConverse`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevConverse.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogChebyshevConverse`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevConverse.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_dyadic_block](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevEquivalence.lean/declarations/exists-dyadic-block.md) | 13 | `result-track:fd9e0124d779e8309853e22a3b996b309377355bd2334b73baebed8ec8d26efe` |
-| 2 | `theorem` | [pow_two_eq_dyadicScale_pred](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevEquivalence.lean/declarations/pow-two-eq-dyadicscale-pred.md) | 22 | `result-track:3463badfd9a60a8ce5d86e9416a1b62f02e50834674a0b76b28c5a2f55ac3038` |
-| 3 | `theorem` | [globalChebyshev_of_prefixMangoldt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevEquivalence.lean/declarations/globalchebyshev-of-prefixmangoldt.md) | 31 | `result-track:bbdd78ebbb8fba6454ab2e719cae059800cfbba5e568fd0607636136d099df0b` |
-| 4 | `theorem` | [globalChebyshev_iff_prefixMangoldt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevEquivalence.lean/declarations/globalchebyshev-iff-prefixmangoldt.md) | 132 | `result-track:7ae76461f9fa0c99bfd19a1aeacf2a397e62aab9cca9e94e08dd4bb589061ef4` |
+| 1 | `theorem` | [exists_dyadic_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevEquivalence.lean/declarations/exists-dyadic-block.md) | 13 | `result-track:fd9e0124d779e8309853e22a3b996b309377355bd2334b73baebed8ec8d26efe` |
+| 2 | `theorem` | [pow_two_eq_dyadicScale_pred](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevEquivalence.lean/declarations/pow-two-eq-dyadicscale-pred.md) | 22 | `result-track:3463badfd9a60a8ce5d86e9416a1b62f02e50834674a0b76b28c5a2f55ac3038` |
+| 3 | `theorem` | [globalChebyshev_of_prefixMangoldt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevEquivalence.lean/declarations/globalchebyshev-of-prefixmangoldt.md) | 31 | `result-track:bbdd78ebbb8fba6454ab2e719cae059800cfbba5e568fd0607636136d099df0b` |
+| 4 | `theorem` | [globalChebyshev_iff_prefixMangoldt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevEquivalence.lean/declarations/globalchebyshev-iff-prefixmangoldt.md) | 132 | `result-track:7ae76461f9fa0c99bfd19a1aeacf2a397e62aab9cca9e94e08dd4bb589061ef4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

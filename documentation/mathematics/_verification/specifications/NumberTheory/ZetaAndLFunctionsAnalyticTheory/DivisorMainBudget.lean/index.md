@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DivisorMainBudget.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DivisorMainBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DivisorMainBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DivisorMainBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [comparisonBudget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DivisorMainBudget.lean/declarations/comparisonbudget.md) | 16 | `declaration-track:651c5164c9da3139993116866d7afd3fd5c2fdb8515e3b4458a08392230aca9d` |
-| 2 | `theorem` | [arithmeticError_le_main_budget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DivisorMainBudget.lean/declarations/arithmeticerror-le-main-budget.md) | 22 | `result-track:2870a25d638a7dc2812780d253c9e828f4cf93b600cbfdfa95d166d73f7866b3` |
-| 3 | `theorem` | [comparisonBudget_tendsto_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DivisorMainBudget.lean/declarations/comparisonbudget-tendsto-zero.md) | 47 | `result-track:2cedb19b9287af7fc154bd001733fe69bb06db0a2327517a058a281c27187c7e` |
+| 1 | `def` | [comparisonBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DivisorMainBudget.lean/declarations/comparisonbudget.md) | 16 | `declaration-track:651c5164c9da3139993116866d7afd3fd5c2fdb8515e3b4458a08392230aca9d` |
+| 2 | `theorem` | [arithmeticError_le_main_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DivisorMainBudget.lean/declarations/arithmeticerror-le-main-budget.md) | 22 | `result-track:2870a25d638a7dc2812780d253c9e828f4cf93b600cbfdfa95d166d73f7866b3` |
+| 3 | `theorem` | [comparisonBudget_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DivisorMainBudget.lean/declarations/comparisonbudget-tendsto-zero.md) | 47 | `result-track:2cedb19b9287af7fc154bd001733fe69bb06db0a2327517a058a281c27187c7e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

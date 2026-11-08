@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLineDefect.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLineDefect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLineDefect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLineDefect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroDefinitions`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroDefinitionsHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroDefinitions`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroDefinitionsHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rh_defect_eq_norm_sq](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLineDefect.lean/declarations/rh-defect-eq-norm-sq.md) | 17 | `result-track:144ce1645ae25f9502a41e942a5594d5a5669cd8383b857f348474870facbc77` |
-| 2 | `theorem` | [rh_defect_nonneg](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLineDefect.lean/declarations/rh-defect-nonneg.md) | 22 | `result-track:ad6c09296a5cdf3aedc6d316661f54b54e106e76a56811bc844b59f5b664f493` |
-| 3 | `theorem` | [rh_defect_eq_square](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLineDefect.lean/declarations/rh-defect-eq-square.md) | 26 | `result-track:c96e9f61a8a2216be4714fe33dc14c1c00a0b48d53c63d5c536774b6c8c67a39` |
-| 4 | `theorem` | [rh_defect_eq_zero_iff](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLineDefect.lean/declarations/rh-defect-eq-zero-iff.md) | 31 | `result-track:2972ee9f466dec3530f1c43e3139426a99272f11d64b4d378660c83f4788a443` |
-| 5 | `theorem` | [riemann_hypothesis_iff_defect_zero](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLineDefect.lean/declarations/riemann-hypothesis-iff-defect-zero.md) | 41 | `result-track:282c30e8f759a23741e8a979330910423345f371037dee5c6b85b3fa69f9f6b3` |
-| 6 | `theorem` | [defect_nonnegative_does_not_force_universal_vanishing](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLineDefect.lean/declarations/defect-nonnegative-does-not-force-universal-vanishing.md) | 51 | `result-track:5d6ebae322ee2502bf1dd58673ebaa23453ddef85cdbdeaa3addb7ce2b14af30` |
+| 1 | `theorem` | [rh_defect_eq_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLineDefect.lean/declarations/rh-defect-eq-norm-sq.md) | 17 | `result-track:144ce1645ae25f9502a41e942a5594d5a5669cd8383b857f348474870facbc77` |
+| 2 | `theorem` | [rh_defect_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLineDefect.lean/declarations/rh-defect-nonneg.md) | 22 | `result-track:ad6c09296a5cdf3aedc6d316661f54b54e106e76a56811bc844b59f5b664f493` |
+| 3 | `theorem` | [rh_defect_eq_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLineDefect.lean/declarations/rh-defect-eq-square.md) | 26 | `result-track:c96e9f61a8a2216be4714fe33dc14c1c00a0b48d53c63d5c536774b6c8c67a39` |
+| 4 | `theorem` | [rh_defect_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLineDefect.lean/declarations/rh-defect-eq-zero-iff.md) | 31 | `result-track:2972ee9f466dec3530f1c43e3139426a99272f11d64b4d378660c83f4788a443` |
+| 5 | `theorem` | [riemann_hypothesis_iff_defect_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLineDefect.lean/declarations/riemann-hypothesis-iff-defect-zero.md) | 41 | `result-track:282c30e8f759a23741e8a979330910423345f371037dee5c6b85b3fa69f9f6b3` |
+| 6 | `theorem` | [defect_nonnegative_does_not_force_universal_vanishing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLineDefect.lean/declarations/defect-nonnegative-does-not-force-universal-vanishing.md) | 51 | `result-track:5d6ebae322ee2502bf1dd58673ebaa23453ddef85cdbdeaa3addb7ce2b14af30` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

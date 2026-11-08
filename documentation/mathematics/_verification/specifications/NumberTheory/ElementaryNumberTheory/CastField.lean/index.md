@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/CastField.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/CastField.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastField.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastField.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cast_neg_natCast](../../../../../NumberTheory/ElementaryNumberTheory/CastField.lean/declarations/cast-neg-natcast.md) | 32 | `result-track:1c4ee59ad4be20a09c2b9b43b9a11dfe7b2f02b3008cb268c902430a83528660` |
-| 2 | `theorem` | [cast_div](../../../../../NumberTheory/ElementaryNumberTheory/CastField.lean/declarations/cast-div.md) | 35 | `result-track:d80f07138d5ec27204283fcaf8cb93ed8385e0c5d87b9c3b30eda875e2290e87` |
+| 1 | `theorem` | [cast_neg_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastField.lean/declarations/cast-neg-natcast.md) | 32 | `result-track:1c4ee59ad4be20a09c2b9b43b9a11dfe7b2f02b3008cb268c902430a83528660` |
+| 2 | `theorem` | [cast_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastField.lean/declarations/cast-div.md) | 35 | `result-track:d80f07138d5ec27204283fcaf8cb93ed8385e0c5d87b9c3b30eda875e2290e87` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

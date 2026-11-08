@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CtorPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CtorPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CtorPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CtorPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [propagateInjEqs](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CtorPublic.lean/declarations/propagateinjeqs.md) | 14 | `declaration-track:336dec665012073ecb3c4f3c405fbe3a69a33a97e6301eb095f159d6406cb5ce` |
-| 2 | `def` | [propagateCtorHomo](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CtorPublic.lean/declarations/propagatectorhomo.md) | 40 | `declaration-track:fe17300e6c53b836744493eb96a4231297c719164bcf2339f0c245830fa2e0e6` |
-| 3 | `def` | [propagateCtorHetero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CtorPublic.lean/declarations/propagatectorhetero.md) | 67 | `declaration-track:4b42baa932d560bdae0a6edf244402aac291a5bdecdde1d1eb83d21c56be85b7` |
-| 4 | `def` | [propagateCtor](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CtorPublic.lean/declarations/propagatector.md) | 103 | `declaration-track:ff2da4eef129a9f421d698954a6c58926dc581da117589a0055b018a2df2e29a` |
+| 1 | `def` | [propagateInjEqs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CtorPublic.lean/declarations/propagateinjeqs.md) | 14 | `declaration-track:336dec665012073ecb3c4f3c405fbe3a69a33a97e6301eb095f159d6406cb5ce` |
+| 2 | `def` | [propagateCtorHomo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CtorPublic.lean/declarations/propagatectorhomo.md) | 40 | `declaration-track:fe17300e6c53b836744493eb96a4231297c719164bcf2339f0c245830fa2e0e6` |
+| 3 | `def` | [propagateCtorHetero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CtorPublic.lean/declarations/propagatectorhetero.md) | 67 | `declaration-track:4b42baa932d560bdae0a6edf244402aac291a5bdecdde1d1eb83d21c56be85b7` |
+| 4 | `def` | [propagateCtor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CtorPublic.lean/declarations/propagatector.md) | 103 | `declaration-track:ff2da4eef129a9f421d698954a6c58926dc581da117589a0055b018a2df2e29a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

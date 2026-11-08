@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/DegeneraciesPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/DegeneraciesPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DegeneraciesPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DegeneraciesPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [HigherFacesVanish.comp_σ](../../../../AlgebraicTopology/DegeneraciesPublic.lean/declarations/higherfacesvanish-comp.md) | 45 | `result-track:8bb3cb3149502920d35854805ec1b08c09b4d37cecd5702cfb97d5fb1910cee3` |
-| 2 | `theorem` | [σ_comp_P_eq_zero](../../../../AlgebraicTopology/DegeneraciesPublic.lean/declarations/comp-p-eq-zero.md) | 61 | `result-track:6aecf0abf6e5bd584ff89e39f3c6bd34b4bdb4e51e3d1b91c2ef652e08938c7e` |
-| 3 | `theorem` | [σ_comp_PInfty](../../../../AlgebraicTopology/DegeneraciesPublic.lean/declarations/comp-pinfty.md) | 122 | `result-track:4d4de34a0df58fb292dfb7c57a50c92facf50d51c2e409b408849fb2f9cfb8f7` |
-| 4 | `theorem` | [degeneracy_comp_PInfty](../../../../AlgebraicTopology/DegeneraciesPublic.lean/declarations/degeneracy-comp-pinfty.md) | 128 | `result-track:3198b8acae612600adcfea3a22b6f5bb4bae3ba1252aebf08fa4941aef307a57` |
-| 5 | `def` | [DegeneraciesVanish](../../../../AlgebraicTopology/DegeneraciesPublic.lean/declarations/degeneraciesvanish.md) | 149 | `declaration-track:39fc64f3e1961e45a79264276d7526a2c26b271bd04df52e67810992882d9730` |
-| 6 | `lemma` | [degeneraciesVanish_zero_iff_true](../../../../AlgebraicTopology/DegeneraciesPublic.lean/declarations/degeneraciesvanish-zero-iff-true.md) | 155 | `result-track:8d20738bbb4facb1b82e5b2693cdfafdb56f300dca696884620a86d3062a9ec6` |
-| 7 | `lemma` | [degeneraciesVanish_succ_iff](../../../../AlgebraicTopology/DegeneraciesPublic.lean/declarations/degeneraciesvanish-succ-iff.md) | 158 | `result-track:09a9977ef495557370fae1d724fe6790d49e91fbcf89e4db38be11732c20f196` |
-| 8 | `lemma` | [DegeneraciesVanish.σ_comp](../../../../AlgebraicTopology/DegeneraciesPublic.lean/declarations/degeneraciesvanish-comp.md) | 162 | `result-track:adc381554bee3de03747d652bcd096f25460f45e38711d70ffcc244400c755ea` |
-| 9 | `lemma` | [DegeneraciesVanish.comp](../../../../AlgebraicTopology/DegeneraciesPublic.lean/declarations/degeneraciesvanish-comp-source-edition-2.md) | 167 | `result-track:d5edfc2cc1d396e473bbda1f52388d816d8112ce37231b61c0227cd956a8a6df` |
-| 10 | `lemma` | [degeneraciesVanishPInfty_f](../../../../AlgebraicTopology/DegeneraciesPublic.lean/declarations/degeneraciesvanishpinfty-f.md) | 175 | `result-track:ef6240b4db9ccee4d94028d4553592bdb1dfaec2d1acd6a848738e2d92840583` |
-| 11 | `lemma` | [degeneraciesVanish_iff_QInfty_f_comp](../../../../AlgebraicTopology/DegeneraciesPublic.lean/declarations/degeneraciesvanish-iff-qinfty-f-comp.md) | 181 | `result-track:1ffc4ea7aebfc4c64c9346c7d920de0898289254525fd2d0d40b505574719891` |
+| 1 | `theorem` | [HigherFacesVanish.comp_σ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DegeneraciesPublic.lean/declarations/higherfacesvanish-comp.md) | 45 | `result-track:8bb3cb3149502920d35854805ec1b08c09b4d37cecd5702cfb97d5fb1910cee3` |
+| 2 | `theorem` | [σ_comp_P_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DegeneraciesPublic.lean/declarations/comp-p-eq-zero.md) | 61 | `result-track:6aecf0abf6e5bd584ff89e39f3c6bd34b4bdb4e51e3d1b91c2ef652e08938c7e` |
+| 3 | `theorem` | [σ_comp_PInfty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DegeneraciesPublic.lean/declarations/comp-pinfty.md) | 122 | `result-track:4d4de34a0df58fb292dfb7c57a50c92facf50d51c2e409b408849fb2f9cfb8f7` |
+| 4 | `theorem` | [degeneracy_comp_PInfty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DegeneraciesPublic.lean/declarations/degeneracy-comp-pinfty.md) | 128 | `result-track:3198b8acae612600adcfea3a22b6f5bb4bae3ba1252aebf08fa4941aef307a57` |
+| 5 | `def` | [DegeneraciesVanish](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DegeneraciesPublic.lean/declarations/degeneraciesvanish.md) | 149 | `declaration-track:39fc64f3e1961e45a79264276d7526a2c26b271bd04df52e67810992882d9730` |
+| 6 | `lemma` | [degeneraciesVanish_zero_iff_true](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DegeneraciesPublic.lean/declarations/degeneraciesvanish-zero-iff-true.md) | 155 | `result-track:8d20738bbb4facb1b82e5b2693cdfafdb56f300dca696884620a86d3062a9ec6` |
+| 7 | `lemma` | [degeneraciesVanish_succ_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DegeneraciesPublic.lean/declarations/degeneraciesvanish-succ-iff.md) | 158 | `result-track:09a9977ef495557370fae1d724fe6790d49e91fbcf89e4db38be11732c20f196` |
+| 8 | `lemma` | [DegeneraciesVanish.σ_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DegeneraciesPublic.lean/declarations/degeneraciesvanish-comp.md) | 162 | `result-track:adc381554bee3de03747d652bcd096f25460f45e38711d70ffcc244400c755ea` |
+| 9 | `lemma` | [DegeneraciesVanish.comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DegeneraciesPublic.lean/declarations/degeneraciesvanish-comp-source-edition-2.md) | 167 | `result-track:d5edfc2cc1d396e473bbda1f52388d816d8112ce37231b61c0227cd956a8a6df` |
+| 10 | `lemma` | [degeneraciesVanishPInfty_f](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DegeneraciesPublic.lean/declarations/degeneraciesvanishpinfty-f.md) | 175 | `result-track:ef6240b4db9ccee4d94028d4553592bdb1dfaec2d1acd6a848738e2d92840583` |
+| 11 | `lemma` | [degeneraciesVanish_iff_QInfty_f_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DegeneraciesPublic.lean/declarations/degeneraciesvanish-iff-qinfty-f-comp.md) | 181 | `result-track:1ffc4ea7aebfc4c64c9346c7d920de0898289254525fd2d0d40b505574719891` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

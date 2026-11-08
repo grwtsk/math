@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroup.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroup.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroup.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroup.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [absoluteGaloisGroup](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroup.lean/declarations/absolutegaloisgroup.md) | 39 | `declaration-track:6ff949f8c2288e5651cbc9619ee55b1fc38e8919e08473ab82b9c41974fd0e25` |
-| 2 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroup.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:fd18d88bf9bd8660d49271d7847b40a499e975a14d8c87d761db8843884488cd` |
-| 3 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroup.lean/declarations/instance.md) | 46 | `declaration-track:b062bfe9a639b6cb81d0c4f6321daffb6adcad3b5aa5857fc92864cfc1c0bbf4` |
-| 4 | `instance` | [absoluteGaloisGroup.commutator_closure_isNormal](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroup.lean/declarations/absolutegaloisgroup-commutator-closure-isnormal.md) | 50 | `declaration-track:adaacf98be7afcaa39f2ffae9787b37749fd825026c30d57f66abfa9b640cb2c` |
-| 5 | `abbrev` | [absoluteGaloisGroupAbelianization](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroup.lean/declarations/absolutegaloisgroupabelianization.md) | 56 | `declaration-track:37b8b5a1b89ed79939b13d52c87160a20c922030e3021aed5b663e856601e40a` |
+| 1 | `def` | [absoluteGaloisGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroup.lean/declarations/absolutegaloisgroup.md) | 39 | `declaration-track:6ff949f8c2288e5651cbc9619ee55b1fc38e8919e08473ab82b9c41974fd0e25` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroup.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:fd18d88bf9bd8660d49271d7847b40a499e975a14d8c87d761db8843884488cd` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroup.lean/declarations/instance.md) | 46 | `declaration-track:b062bfe9a639b6cb81d0c4f6321daffb6adcad3b5aa5857fc92864cfc1c0bbf4` |
+| 4 | `instance` | [absoluteGaloisGroup.commutator_closure_isNormal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroup.lean/declarations/absolutegaloisgroup-commutator-closure-isnormal.md) | 50 | `declaration-track:adaacf98be7afcaa39f2ffae9787b37749fd825026c30d57f66abfa9b640cb2c` |
+| 5 | `abbrev` | [absoluteGaloisGroupAbelianization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroup.lean/declarations/absolutegaloisgroupabelianization.md) | 56 | `declaration-track:37b8b5a1b89ed79939b13d52c87160a20c922030e3021aed5b663e856601e40a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

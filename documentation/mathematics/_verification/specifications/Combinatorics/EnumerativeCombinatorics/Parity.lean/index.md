@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/Parity.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/Parity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Parity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Parity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [IsSquare.decidablePred](../../../../../Combinatorics/EnumerativeCombinatorics/Parity.lean/declarations/issquare-decidablepred.md) | 18 | `declaration-track:3881bf241fca8d4686fc68aa165a91308b2209a4825b73654b68b521190c651b` |
-| 2 | `instance` | [card_fin_two](../../../../../Combinatorics/EnumerativeCombinatorics/Parity.lean/declarations/card-fin-two.md) | 23 | `declaration-track:758ff692d3dcc39f746454420b071b1860773e3eac3eb00e3377f40d66ecd514` |
+| 1 | `instance` | [IsSquare.decidablePred](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Parity.lean/declarations/issquare-decidablepred.md) | 18 | `declaration-track:3881bf241fca8d4686fc68aa165a91308b2209a4825b73654b68b521190c651b` |
+| 2 | `instance` | [card_fin_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Parity.lean/declarations/card-fin-two.md) | 23 | `declaration-track:758ff692d3dcc39f746454420b071b1860773e3eac3eb00e3377f40d66ecd514` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

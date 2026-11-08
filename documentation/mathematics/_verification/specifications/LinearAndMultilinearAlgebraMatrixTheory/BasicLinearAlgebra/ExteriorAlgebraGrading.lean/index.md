@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [GradedAlgebra.ι](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/declarations/gradedalgebra.md) | 27 | `declaration-track:44941455145d9eb8448ed8e8b7a0483263e19d145ea0785723b3534cbac6e402` |
-| 2 | `theorem` | [GradedAlgebra.ι_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/declarations/gradedalgebra-apply.md) | 32 | `result-track:b343916bd6cf9d12069c275be85f9ae2217cfc6a4fabdf77f02b1e450f612408` |
-| 3 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/declarations/instance.md) | 41 | `declaration-track:17a50e5b2c1bd437a9363c46245a3272cc8365727bbe24d2d19f88b240b8b442` |
-| 4 | `theorem` | [GradedAlgebra.ι_sq_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/declarations/gradedalgebra-sq-zero.md) | 44 | `result-track:6b7f5cfca6a171e59a36e0bbaa7047759fdd2960a4a16f40b962b5dcda7b1762` |
-| 5 | `def` | [GradedAlgebra.liftι](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/declarations/gradedalgebra-lift.md) | 50 | `declaration-track:1d4c226cf6fa8ca835c40c4cc58c4dc7f275922736a41a275e1ef1117c9da690` |
-| 6 | `theorem` | [GradedAlgebra.liftι_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/declarations/gradedalgebra-lift-eq.md) | 54 | `result-track:65e072a34abaee0154bfcc345187eb653fdda9a2b8677ac48a6fe37f48c73421` |
-| 7 | `instance` | [gradedAlgebra](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/declarations/gradedalgebra-source-edition-2.md) | 68 | `declaration-track:d0f7738702e70418042a0a51466b63aca128d4498f8bda66dc5c022712348d4c` |
-| 8 | `lemma` | [ιMulti_span](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/declarations/multi-span.md) | 82 | `result-track:3bd9230f20830606708ebe9aa85202c88d46f2261169be0ee3f6608f3f24f136` |
+| 1 | `def` | [GradedAlgebra.ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/declarations/gradedalgebra.md) | 27 | `declaration-track:44941455145d9eb8448ed8e8b7a0483263e19d145ea0785723b3534cbac6e402` |
+| 2 | `theorem` | [GradedAlgebra.ι_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/declarations/gradedalgebra-apply.md) | 32 | `result-track:b343916bd6cf9d12069c275be85f9ae2217cfc6a4fabdf77f02b1e450f612408` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/declarations/instance.md) | 41 | `declaration-track:17a50e5b2c1bd437a9363c46245a3272cc8365727bbe24d2d19f88b240b8b442` |
+| 4 | `theorem` | [GradedAlgebra.ι_sq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/declarations/gradedalgebra-sq-zero.md) | 44 | `result-track:6b7f5cfca6a171e59a36e0bbaa7047759fdd2960a4a16f40b962b5dcda7b1762` |
+| 5 | `def` | [GradedAlgebra.liftι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/declarations/gradedalgebra-lift.md) | 50 | `declaration-track:1d4c226cf6fa8ca835c40c4cc58c4dc7f275922736a41a275e1ef1117c9da690` |
+| 6 | `theorem` | [GradedAlgebra.liftι_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/declarations/gradedalgebra-lift-eq.md) | 54 | `result-track:65e072a34abaee0154bfcc345187eb653fdda9a2b8677ac48a6fe37f48c73421` |
+| 7 | `instance` | [gradedAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/declarations/gradedalgebra-source-edition-2.md) | 68 | `declaration-track:d0f7738702e70418042a0a51466b63aca128d4498f8bda66dc5c022712348d4c` |
+| 8 | `lemma` | [ιMulti_span](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorAlgebraGrading.lean/declarations/multi-span.md) | 82 | `result-track:3bd9230f20830606708ebe9aa85202c88d46f2261169be0ee3f6608f3f24f136` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

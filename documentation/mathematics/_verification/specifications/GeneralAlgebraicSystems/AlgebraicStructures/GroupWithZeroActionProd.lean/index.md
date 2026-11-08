@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [smul_zero_mk](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/declarations/smul-zero-mk.md) | 31 | `result-track:a217e1c47f826d4c1fb2d8806c18301cc1a4d318698b094e89fac7b4c9b19624` |
-| 2 | `theorem` | [smul_mk_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/declarations/smul-mk-zero.md) | 34 | `result-track:806c6babd3ee2998696a7ea44e891b607a7e5fa0abbc2d7138143d92c4831fc6` |
-| 3 | `instance` | [smulZeroClass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/declarations/smulzeroclass.md) | 39 | `declaration-track:6a58c3deb15f88af22c0c471ae3626b37c40ffb05d808344e16c2dcf1d65eebf` |
-| 4 | `instance` | [distribSMul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/declarations/distribsmul.md) | 42 | `declaration-track:e3a3b06521ec6ae3b0809978ab826b3a07eb9a831f65a1dcbdedddb7baae8c30` |
-| 5 | `instance` | [distribMulAction](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/declarations/distribmulaction.md) | 46 | `declaration-track:71e8fa4e220aa72bdc1a340f82851cd0e26ffadf33b63c6bb0372a5112c8365c` |
-| 6 | `instance` | [mulDistribMulAction](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/declarations/muldistribmulaction.md) | 50 | `declaration-track:dde8c5cda8ef0a58654fcfc51413ad6695645556d63e41f1f46a4184b40486cd` |
-| 7 | `abbrev` | [DistribMulAction.prodOfSMulCommClass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/declarations/distribmulaction-prodofsmulcommclass.md) | 64 | `declaration-track:94c3641704b9750c0504c70552503673a83ca3444f6d1ec47af3bc4ec2d14269` |
-| 8 | `def` | [DistribMulAction.prodEquiv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/declarations/distribmulaction-prodequiv.md) | 72 | `declaration-track:921cdd96a210bff7a4a7118a309bff295c92542010e0a470938e43426536793d` |
+| 1 | `theorem` | [smul_zero_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/declarations/smul-zero-mk.md) | 31 | `result-track:a217e1c47f826d4c1fb2d8806c18301cc1a4d318698b094e89fac7b4c9b19624` |
+| 2 | `theorem` | [smul_mk_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/declarations/smul-mk-zero.md) | 34 | `result-track:806c6babd3ee2998696a7ea44e891b607a7e5fa0abbc2d7138143d92c4831fc6` |
+| 3 | `instance` | [smulZeroClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/declarations/smulzeroclass.md) | 39 | `declaration-track:6a58c3deb15f88af22c0c471ae3626b37c40ffb05d808344e16c2dcf1d65eebf` |
+| 4 | `instance` | [distribSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/declarations/distribsmul.md) | 42 | `declaration-track:e3a3b06521ec6ae3b0809978ab826b3a07eb9a831f65a1dcbdedddb7baae8c30` |
+| 5 | `instance` | [distribMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/declarations/distribmulaction.md) | 46 | `declaration-track:71e8fa4e220aa72bdc1a340f82851cd0e26ffadf33b63c6bb0372a5112c8365c` |
+| 6 | `instance` | [mulDistribMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/declarations/muldistribmulaction.md) | 50 | `declaration-track:dde8c5cda8ef0a58654fcfc51413ad6695645556d63e41f1f46a4184b40486cd` |
+| 7 | `abbrev` | [DistribMulAction.prodOfSMulCommClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/declarations/distribmulaction-prodofsmulcommclass.md) | 64 | `declaration-track:94c3641704b9750c0504c70552503673a83ca3444f6d1ec47af3bc4ec2d14269` |
+| 8 | `def` | [DistribMulAction.prodEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionProd.lean/declarations/distribmulaction-prodequiv.md) | 72 | `declaration-track:921cdd96a210bff7a4a7118a309bff295c92542010e0a470938e43426536793d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

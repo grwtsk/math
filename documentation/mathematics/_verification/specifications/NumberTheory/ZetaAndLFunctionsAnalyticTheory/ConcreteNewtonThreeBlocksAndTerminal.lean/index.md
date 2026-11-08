@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonTwoBlocksAndTerminal`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTwoBlocksAndTerminal.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonThirdBlock`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirdBlock.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonTwoBlocksAndTerminal`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTwoBlocksAndTerminal.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonThirdBlock`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirdBlock.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fill](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/fill.md) | 23 | `declaration-track:4647019d406724083b08eceee345b22f527ca953a7364fed198cb69cf4d2559a` |
-| 2 | `theorem` | [first_check](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/first-check.md) | 27 | `result-track:24b4718cbab0aab89e3c3e03904505d2f1a6667f6c0ccb719cdef45197a6da2c` |
-| 3 | `theorem` | [second_check](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/second-check.md) | 33 | `result-track:35bbbea30b066a2973c6d1ae9d239344b6fa4c2ae192240046ce846cee8c8609` |
-| 4 | `theorem` | [third_record](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/third-record.md) | 39 | `result-track:232e7f187488e372ac27515e7829ba0a5888cc99ef55cd420c6991602349b83a` |
-| 5 | `theorem` | [third_check](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/third-check.md) | 48 | `result-track:2ba593fd610dd48c25fc2b48e48b9f8c78040b2ec741379d9460a16896537ad5` |
-| 6 | `theorem` | [terminal_check](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/terminal-check.md) | 53 | `result-track:b18dd3e77dd62167de434661846ff8479390229c5777197df8d5bdaf0752e5be` |
-| 7 | `theorem` | [later_record](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/later-record.md) | 58 | `result-track:09e05158dbab5f5ccaa13115c281b8f5111fb291d54e54f698e7cf8db2132fd3` |
-| 8 | `def` | [remainingBlock](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/remainingblock.md) | 64 | `declaration-track:ebba0bf5504590b27a14774c5337db63ee13326c2a89d933f3de8b50122e6b84` |
-| 9 | `theorem` | [remaining_cover](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/remaining-cover.md) | 66 | `result-track:01a2fd844ba0a45afc1e875dcf15796f1be9da44b37d72fc4d92b52ecd3e93a3` |
-| 10 | `theorem` | [source_of_remaining](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/source-of-remaining.md) | 77 | `result-track:74a356e5938f9e0e7499475caf3ff7cae7e19c467bff5b9bc8bbebd97445cd98` |
+| 1 | `def` | [fill](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/fill.md) | 23 | `declaration-track:4647019d406724083b08eceee345b22f527ca953a7364fed198cb69cf4d2559a` |
+| 2 | `theorem` | [first_check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/first-check.md) | 27 | `result-track:24b4718cbab0aab89e3c3e03904505d2f1a6667f6c0ccb719cdef45197a6da2c` |
+| 3 | `theorem` | [second_check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/second-check.md) | 33 | `result-track:35bbbea30b066a2973c6d1ae9d239344b6fa4c2ae192240046ce846cee8c8609` |
+| 4 | `theorem` | [third_record](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/third-record.md) | 39 | `result-track:232e7f187488e372ac27515e7829ba0a5888cc99ef55cd420c6991602349b83a` |
+| 5 | `theorem` | [third_check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/third-check.md) | 48 | `result-track:2ba593fd610dd48c25fc2b48e48b9f8c78040b2ec741379d9460a16896537ad5` |
+| 6 | `theorem` | [terminal_check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/terminal-check.md) | 53 | `result-track:b18dd3e77dd62167de434661846ff8479390229c5777197df8d5bdaf0752e5be` |
+| 7 | `theorem` | [later_record](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/later-record.md) | 58 | `result-track:09e05158dbab5f5ccaa13115c281b8f5111fb291d54e54f698e7cf8db2132fd3` |
+| 8 | `def` | [remainingBlock](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/remainingblock.md) | 64 | `declaration-track:ebba0bf5504590b27a14774c5337db63ee13326c2a89d933f3de8b50122e6b84` |
+| 9 | `theorem` | [remaining_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/remaining-cover.md) | 66 | `result-track:01a2fd844ba0a45afc1e875dcf15796f1be9da44b37d72fc4d92b52ecd3e93a3` |
+| 10 | `theorem` | [source_of_remaining](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThreeBlocksAndTerminal.lean/declarations/source-of-remaining.md) | 77 | `result-track:74a356e5938f9e0e7499475caf3ff7cae7e19c467bff5b9bc8bbebd97445cd98` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

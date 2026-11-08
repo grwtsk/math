@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/DualNumberNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/DualNumberNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DualNumberNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DualNumberNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exp_eps](../../../../FunctionalAnalysis/DualNumberNamespaced.lean/declarations/exp-eps.md) | 39 | `result-track:6c75b1107c5099a52764c214ecb7ef47a7d614452a2c3c0140a46af5e60d8d42` |
-| 2 | `theorem` | [exp_smul_eps](../../../../FunctionalAnalysis/DualNumberNamespaced.lean/declarations/exp-smul-eps.md) | 43 | `result-track:2bfa974f748c529d721e5c1b59e3fb8cd3caf0e9bf4dfdc556b88d04fa26c19f` |
+| 1 | `theorem` | [exp_eps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DualNumberNamespaced.lean/declarations/exp-eps.md) | 39 | `result-track:6c75b1107c5099a52764c214ecb7ef47a7d614452a2c3c0140a46af5e60d8d42` |
+| 2 | `theorem` | [exp_smul_eps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DualNumberNamespaced.lean/declarations/exp-smul-eps.md) | 43 | `result-track:2bfa974f748c529d721e5c1b59e3fb8cd3caf0e9bf4dfdc556b88d04fa26c19f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

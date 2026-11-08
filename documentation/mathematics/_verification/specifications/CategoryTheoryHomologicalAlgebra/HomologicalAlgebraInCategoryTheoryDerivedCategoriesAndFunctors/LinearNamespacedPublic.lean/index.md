@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LinearNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LinearNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LinearNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LinearNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LinearNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 37 | `declaration-track:c752e7264eab6fd14d95d99b080e10faa3e4f20a0294c68a14b38369d23479b0` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LinearNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 41 | `declaration-track:ccbdcb23da2a5d051017f1fbb94737bbc9c4ee7d44ceadd52e0c44a18c3294bf` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LinearNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 44 | `declaration-track:9d7be7916c78a9f843feb96e23b66ca414900657e87c4158bf9eb693cc90c779` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LinearNamespacedPublic.lean/declarations/instance.md) | 47 | `declaration-track:79a322b9bbe58d646da1ecc1d085a40f2d4d2eb2e66d7167d08a2ff0d774db42` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LinearNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 50 | `declaration-track:90401760870ae1c353ed9a5fef43a75c9700a449c8d68593b31dbd5749446b4b` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LinearNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 37 | `declaration-track:c752e7264eab6fd14d95d99b080e10faa3e4f20a0294c68a14b38369d23479b0` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LinearNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 41 | `declaration-track:ccbdcb23da2a5d051017f1fbb94737bbc9c4ee7d44ceadd52e0c44a18c3294bf` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LinearNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 44 | `declaration-track:9d7be7916c78a9f843feb96e23b66ca414900657e87c4158bf9eb693cc90c779` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LinearNamespacedPublic.lean/declarations/instance.md) | 47 | `declaration-track:79a322b9bbe58d646da1ecc1d085a40f2d4d2eb2e66d7167d08a2ff0d774db42` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LinearNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 50 | `declaration-track:90401760870ae1c353ed9a5fef43a75c9700a449c8d68593b31dbd5749446b4b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

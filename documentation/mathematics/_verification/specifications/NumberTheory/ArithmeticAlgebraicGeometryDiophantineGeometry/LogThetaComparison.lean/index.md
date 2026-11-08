@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/index.md) · [Full source](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.OrientedRealLine.Coherence`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Coherence.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.OrientedRealLine.Coherence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Coherence.lean/index.md) — import line 11; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SourceLocator](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/declarations/sourcelocator.md) | 24 | `declaration-track:e52b815df7eca7ea6a1be78bbb33d7ab87b05a07add2720828107722d01308eb` |
-| 2 | `structure` | [LocatedInterpretation](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/declarations/locatedinterpretation.md) | 31 | `declaration-track:dbfe87d4446a3eb699e1513745571077a325b53e62d4eb7cdae81df39ae36f9e` |
-| 3 | `structure` | [PilotDiagram](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/declarations/pilotdiagram.md) | 36 | `declaration-track:dfdc78975778a1a2aeb387f3ae7ee709f4995ab5bb9d2083c51d325b6415f699` |
-| 4 | `def` | [leftRoute](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/declarations/leftroute.md) | 52 | `declaration-track:78cc5237c8420786e2e9264c467774f3ab4ae6c4426c383196d1eb71ef2a0de2` |
-| 5 | `def` | [rightRoute](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/declarations/rightroute.md) | 56 | `declaration-track:53a97a3146ce65f114b5985ad45cfe850254e0a5571bc0d0f0915ad7be17bf39` |
-| 6 | `def` | [defect](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/declarations/defect.md) | 60 | `declaration-track:61e9aef5de9525b54d809511e62be29944b876181eb64d4006756889117eedd5` |
-| 7 | `theorem` | [square_normalization_obstruction](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/declarations/square-normalization-obstruction.md) | 64 | `result-track:89a48f3792c8586f74a7dcd3d78c4819406738a558ba67d2079c894f4096eb31` |
-| 8 | `structure` | [IUTSourceCorrespondence](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/declarations/iutsourcecorrespondence.md) | 79 | `declaration-track:8124a7bea2aaac7d7de0d6594a49a9bd6205b11cc8cbc2f81e605d8a39ed7dba` |
+| 1 | `structure` | [SourceLocator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/declarations/sourcelocator.md) | 24 | `declaration-track:e52b815df7eca7ea6a1be78bbb33d7ab87b05a07add2720828107722d01308eb` |
+| 2 | `structure` | [LocatedInterpretation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/declarations/locatedinterpretation.md) | 31 | `declaration-track:dbfe87d4446a3eb699e1513745571077a325b53e62d4eb7cdae81df39ae36f9e` |
+| 3 | `structure` | [PilotDiagram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/declarations/pilotdiagram.md) | 36 | `declaration-track:dfdc78975778a1a2aeb387f3ae7ee709f4995ab5bb9d2083c51d325b6415f699` |
+| 4 | `def` | [leftRoute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/declarations/leftroute.md) | 52 | `declaration-track:78cc5237c8420786e2e9264c467774f3ab4ae6c4426c383196d1eb71ef2a0de2` |
+| 5 | `def` | [rightRoute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/declarations/rightroute.md) | 56 | `declaration-track:53a97a3146ce65f114b5985ad45cfe850254e0a5571bc0d0f0915ad7be17bf39` |
+| 6 | `def` | [defect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/declarations/defect.md) | 60 | `declaration-track:61e9aef5de9525b54d809511e62be29944b876181eb64d4006756889117eedd5` |
+| 7 | `theorem` | [square_normalization_obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/declarations/square-normalization-obstruction.md) | 64 | `result-track:89a48f3792c8586f74a7dcd3d78c4819406738a558ba67d2079c894f4096eb31` |
+| 8 | `structure` | [IUTSourceCorrespondence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/LogThetaComparison.lean/declarations/iutsourcecorrespondence.md) | 79 | `declaration-track:8124a7bea2aaac7d7de0d6594a49a9bd6205b11cc8cbc2f81e605d8a39ed7dba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

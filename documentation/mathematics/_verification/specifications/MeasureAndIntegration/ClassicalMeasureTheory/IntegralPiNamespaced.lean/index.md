@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralPiNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralPiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralPiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralPiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fin_nat_prod](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralPiNamespaced.lean/declarations/fin-nat-prod.md) | 36 | `result-track:878d589c15e598200b945cfa7d3c169eb6d00817bbe84884cb6fe45d99a5914a` |
-| 2 | `theorem` | [fintype_prod_dep](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralPiNamespaced.lean/declarations/fintype-prod-dep.md) | 55 | `result-track:d948d150aff288283c2d608ba5fdf49a4fe0a25df56087008d00c13ba567ca52` |
-| 3 | `theorem` | [fintype_prod](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralPiNamespaced.lean/declarations/fintype-prod.md) | 68 | `result-track:9e0851b4b9a2dd8e3a759fc7d920252d8d4f046fd4c2c76eb861e63dfff7889d` |
-| 4 | `theorem` | [integral_fin_nat_prod_eq_prod](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralPiNamespaced.lean/declarations/integral-fin-nat-prod-eq-prod.md) | 79 | `result-track:2b4c9101c21388589015819e0b9743afcd2ddb6fd744569fb8034b0c75957f97` |
-| 5 | `theorem` | [integral_fintype_prod_eq_prod](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralPiNamespaced.lean/declarations/integral-fintype-prod-eq-prod.md) | 100 | `result-track:b3fecfcaa99215776c249dfee1bae1c520971cbbe1131ae057f3de0e0981b213` |
-| 6 | `theorem` | [integral_fintype_prod_eq_pow](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralPiNamespaced.lean/declarations/integral-fintype-prod-eq-pow.md) | 108 | `result-track:cedadd67023381b328aeb41ce9d8df894decaaa8f5480534de6144461e0919ad` |
+| 1 | `theorem` | [fin_nat_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralPiNamespaced.lean/declarations/fin-nat-prod.md) | 36 | `result-track:878d589c15e598200b945cfa7d3c169eb6d00817bbe84884cb6fe45d99a5914a` |
+| 2 | `theorem` | [fintype_prod_dep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralPiNamespaced.lean/declarations/fintype-prod-dep.md) | 55 | `result-track:d948d150aff288283c2d608ba5fdf49a4fe0a25df56087008d00c13ba567ca52` |
+| 3 | `theorem` | [fintype_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralPiNamespaced.lean/declarations/fintype-prod.md) | 68 | `result-track:9e0851b4b9a2dd8e3a759fc7d920252d8d4f046fd4c2c76eb861e63dfff7889d` |
+| 4 | `theorem` | [integral_fin_nat_prod_eq_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralPiNamespaced.lean/declarations/integral-fin-nat-prod-eq-prod.md) | 79 | `result-track:2b4c9101c21388589015819e0b9743afcd2ddb6fd744569fb8034b0c75957f97` |
+| 5 | `theorem` | [integral_fintype_prod_eq_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralPiNamespaced.lean/declarations/integral-fintype-prod-eq-prod.md) | 100 | `result-track:b3fecfcaa99215776c249dfee1bae1c520971cbbe1131ae057f3de0e0981b213` |
+| 6 | `theorem` | [integral_fintype_prod_eq_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralPiNamespaced.lean/declarations/integral-fintype-prod-eq-pow.md) | 108 | `result-track:cedadd67023381b328aeb41ce9d8df894decaaa8f5480534de6144461e0919ad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

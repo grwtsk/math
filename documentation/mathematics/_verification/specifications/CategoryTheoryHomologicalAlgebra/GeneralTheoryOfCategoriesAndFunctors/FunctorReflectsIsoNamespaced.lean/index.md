@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorReflectsIsoNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorReflectsIsoNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorReflectsIsoNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorReflectsIsoNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [ReflectsIsomorphisms](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorReflectsIsoNamespaced.lean/declarations/reflectsisomorphisms.md) | 49 | `declaration-track:e4fbd2c9ba83ff746e5136a93218e95a74b6020ba7ccadc48da12566eace22ae` |
-| 2 | `theorem` | [isIso_of_reflects_iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorReflectsIsoNamespaced.lean/declarations/isiso-of-reflects-iso.md) | 55 | `result-track:badceedb948524fee1e30205184fe9b2fadc4a92b940e06de7d13b54f712c3f7` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorReflectsIsoNamespaced.lean/declarations/instance-source-edition-2.md) | 60 | `declaration-track:7f2feb52090b041a7a356ae223396d2da6f1bad533ffde18f3087df6a3266100` |
-| 4 | `instance` | [reflectsIsomorphisms_of_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorReflectsIsoNamespaced.lean/declarations/reflectsisomorphisms-of-comp.md) | 67 | `declaration-track:112676d70f5fd20ca971f4130f896dd770e99ac9feea4c39dd54327384d980df` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorReflectsIsoNamespaced.lean/declarations/instance.md) | 74 | `declaration-track:5594b162dec3b20bad54ab8b6abbb7e5a768d37b7a146478f6d1ef402b80c0cf` |
+| 1 | `class` | [ReflectsIsomorphisms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorReflectsIsoNamespaced.lean/declarations/reflectsisomorphisms.md) | 49 | `declaration-track:e4fbd2c9ba83ff746e5136a93218e95a74b6020ba7ccadc48da12566eace22ae` |
+| 2 | `theorem` | [isIso_of_reflects_iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorReflectsIsoNamespaced.lean/declarations/isiso-of-reflects-iso.md) | 55 | `result-track:badceedb948524fee1e30205184fe9b2fadc4a92b940e06de7d13b54f712c3f7` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorReflectsIsoNamespaced.lean/declarations/instance-source-edition-2.md) | 60 | `declaration-track:7f2feb52090b041a7a356ae223396d2da6f1bad533ffde18f3087df6a3266100` |
+| 4 | `instance` | [reflectsIsomorphisms_of_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorReflectsIsoNamespaced.lean/declarations/reflectsisomorphisms-of-comp.md) | 67 | `declaration-track:112676d70f5fd20ca971f4130f896dd770e99ac9feea4c39dd54327384d980df` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorReflectsIsoNamespaced.lean/declarations/instance.md) | 74 | `declaration-track:5594b162dec3b20bad54ab8b6abbb7e5a768d37b7a146478f6d1ef402b80c0cf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Operator.UnboundedPort`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPort.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Operator.UnboundedPort`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPort.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [graph](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/declarations/graph.md) | 13 | `declaration-track:06be09040dcf17851ba0b8fe59ee0fc1bb3fef9aac181b6b6f493e895315933e` |
-| 2 | `theorem` | [mem_graph](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/declarations/mem-graph.md) | 17 | `result-track:9a4b36f2975b773f0ab2a13a25eaae647c79f4d01139e8d907db18ba80119460` |
-| 3 | `def` | [graphMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/declarations/graphmap.md) | 35 | `declaration-track:10b7d4cc40e03d7702e57a342d9ceb85bb4a27d61d200e55988157d1c8b82e0d` |
-| 4 | `theorem` | [graphMap_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/declarations/graphmap-apply.md) | 43 | `result-track:1aeb399bf6268842e247813b11131c84ff777aae96a6e75fb7ea061839a22673` |
-| 5 | `theorem` | [graphMap_comp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/declarations/graphmap-comp.md) | 47 | `result-track:6337d42c3cb28ede374ee0527fe017042c54e05a5e859f51324d7801ca68802b` |
-| 6 | `theorem` | [graphMap_identity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/declarations/graphmap-identity.md) | 52 | `result-track:df0a55aa480db8b22230ebb5bdcf04ba8906614476a3fdbdfa5f63474cfc47e2` |
-| 7 | `theorem` | [maps_graph_of_intertwines](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/declarations/maps-graph-of-intertwines.md) | 57 | `result-track:e20adcd1260c34bc4bc2cab2737e951c44c5d652f6b491c48cdb021cbd4b2233` |
-| 8 | `theorem` | [maps_graph](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/declarations/maps-graph.md) | 72 | `result-track:57a748210c4a6e665befbcce18ce56bfc961f6123250cf839ccc8ec5e6922cfb` |
+| 1 | `def` | [graph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/declarations/graph.md) | 13 | `declaration-track:06be09040dcf17851ba0b8fe59ee0fc1bb3fef9aac181b6b6f493e895315933e` |
+| 2 | `theorem` | [mem_graph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/declarations/mem-graph.md) | 17 | `result-track:9a4b36f2975b773f0ab2a13a25eaae647c79f4d01139e8d907db18ba80119460` |
+| 3 | `def` | [graphMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/declarations/graphmap.md) | 35 | `declaration-track:10b7d4cc40e03d7702e57a342d9ceb85bb4a27d61d200e55988157d1c8b82e0d` |
+| 4 | `theorem` | [graphMap_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/declarations/graphmap-apply.md) | 43 | `result-track:1aeb399bf6268842e247813b11131c84ff777aae96a6e75fb7ea061839a22673` |
+| 5 | `theorem` | [graphMap_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/declarations/graphmap-comp.md) | 47 | `result-track:6337d42c3cb28ede374ee0527fe017042c54e05a5e859f51324d7801ca68802b` |
+| 6 | `theorem` | [graphMap_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/declarations/graphmap-identity.md) | 52 | `result-track:df0a55aa480db8b22230ebb5bdcf04ba8906614476a3fdbdfa5f63474cfc47e2` |
+| 7 | `theorem` | [maps_graph_of_intertwines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/declarations/maps-graph-of-intertwines.md) | 57 | `result-track:e20adcd1260c34bc4bc2cab2737e951c44c5d652f6b491c48cdb021cbd4b2233` |
+| 8 | `theorem` | [maps_graph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedGraph.lean/declarations/maps-graph.md) | 72 | `result-track:57a748210c4a6e665befbcce18ce56bfc961f6123250cf839ccc8ec5e6922cfb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

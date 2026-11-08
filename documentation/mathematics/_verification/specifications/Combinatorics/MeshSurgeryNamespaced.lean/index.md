@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/MeshSurgeryNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/MeshSurgeryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MeshSurgeryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MeshSurgeryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [vertexInMeshLocus](../../../../Combinatorics/MeshSurgeryNamespaced.lean/declarations/vertexinmeshlocus.md) | 29 | `declaration-track:a51aa24ab9afa6c9b78d9b9360a7c65ece26137322432918ba08e8c0eb08d3b2` |
-| 2 | `def` | [cellTouchesMeshLocus](../../../../Combinatorics/MeshSurgeryNamespaced.lean/declarations/celltouchesmeshlocus.md) | 42 | `declaration-track:215ca6846b6dbc1e014234693f69ecab315ae8d0009c38f83fcc0f5dd82ba9e0` |
-| 3 | `structure` | [MeshSurgery](../../../../Combinatorics/MeshSurgeryNamespaced.lean/declarations/meshsurgery.md) | 59 | `declaration-track:cf668af62dae2c9110efa25fa15a3b4e060647d9515ed3fb886b8fe25c72bf63` |
-| 4 | `theorem` | [mem_removedCells_iff](../../../../Combinatorics/MeshSurgeryNamespaced.lean/declarations/mem-removedcells-iff.md) | 122 | `result-track:cccc1154e3a09912fd4c60d76fb6899cc4ec2b3ac70dc98d99ce7b26a14cb58b` |
-| 5 | `theorem` | [mem_insertedCells_iff](../../../../Combinatorics/MeshSurgeryNamespaced.lean/declarations/mem-insertedcells-iff.md) | 131 | `result-track:d234c6a51f6a16e587d11ca1999a7d9c4530bc1ffcf10810f31c515b0920875d` |
-| 6 | `theorem` | [after_covers_carrier](../../../../Combinatorics/MeshSurgeryNamespaced.lean/declarations/after-covers-carrier.md) | 140 | `result-track:d755df99d64be4e7aea527de8d6b5d0b29aa97218b9e8a045958806453b939e5` |
-| 7 | `structure` | [ReversibleMeshSurgery](../../../../Combinatorics/MeshSurgeryNamespaced.lean/declarations/reversiblemeshsurgery.md) | 148 | `declaration-track:40ddc4cbe0225da5cd8aa4b025ad417d2540bbffa7fd03b4a63e9a87c27a3374` |
+| 1 | `def` | [vertexInMeshLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MeshSurgeryNamespaced.lean/declarations/vertexinmeshlocus.md) | 29 | `declaration-track:a51aa24ab9afa6c9b78d9b9360a7c65ece26137322432918ba08e8c0eb08d3b2` |
+| 2 | `def` | [cellTouchesMeshLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MeshSurgeryNamespaced.lean/declarations/celltouchesmeshlocus.md) | 42 | `declaration-track:215ca6846b6dbc1e014234693f69ecab315ae8d0009c38f83fcc0f5dd82ba9e0` |
+| 3 | `structure` | [MeshSurgery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MeshSurgeryNamespaced.lean/declarations/meshsurgery.md) | 59 | `declaration-track:cf668af62dae2c9110efa25fa15a3b4e060647d9515ed3fb886b8fe25c72bf63` |
+| 4 | `theorem` | [mem_removedCells_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MeshSurgeryNamespaced.lean/declarations/mem-removedcells-iff.md) | 122 | `result-track:cccc1154e3a09912fd4c60d76fb6899cc4ec2b3ac70dc98d99ce7b26a14cb58b` |
+| 5 | `theorem` | [mem_insertedCells_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MeshSurgeryNamespaced.lean/declarations/mem-insertedcells-iff.md) | 131 | `result-track:d234c6a51f6a16e587d11ca1999a7d9c4530bc1ffcf10810f31c515b0920875d` |
+| 6 | `theorem` | [after_covers_carrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MeshSurgeryNamespaced.lean/declarations/after-covers-carrier.md) | 140 | `result-track:d755df99d64be4e7aea527de8d6b5d0b29aa97218b9e8a045958806453b939e5` |
+| 7 | `structure` | [ReversibleMeshSurgery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MeshSurgeryNamespaced.lean/declarations/reversiblemeshsurgery.md) | 148 | `declaration-track:40ddc4cbe0225da5cd8aa4b025ad417d2540bbffa7fd03b4a63e9a87c27a3374` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

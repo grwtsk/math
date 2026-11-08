@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/CanonicalDecompositionNamespacedPublicBlaschkeFactor.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/CanonicalDecompositionNamespacedPublicBlaschkeFactor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CanonicalDecompositionNamespacedPublicBlaschkeFactor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CanonicalDecompositionNamespacedPublicBlaschkeFactor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [blaschkeFactor](../../../../FunctionsOfAComplexVariable/CanonicalDecompositionNamespacedPublicBlaschkeFactor.lean/declarations/blaschkefactor.md) | 24 | `declaration-track:6fa7e2ab302f6a561fcfbc3a53ca45c6b87f31064cae27aac454b2a0cdeab7c9` |
-| 2 | `lemma` | [blaschkeFactor_def](../../../../FunctionsOfAComplexVariable/CanonicalDecompositionNamespacedPublicBlaschkeFactor.lean/declarations/blaschkefactor-def.md) | 26 | `result-track:296d964482a1ed39630d36a731db12332e80593f898900e46984e9b6e891bd3d` |
+| 1 | `abbrev` | [blaschkeFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CanonicalDecompositionNamespacedPublicBlaschkeFactor.lean/declarations/blaschkefactor.md) | 24 | `declaration-track:6fa7e2ab302f6a561fcfbc3a53ca45c6b87f31064cae27aac454b2a0cdeab7c9` |
+| 2 | `lemma` | [blaschkeFactor_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CanonicalDecompositionNamespacedPublicBlaschkeFactor.lean/declarations/blaschkefactor-def.md) | 26 | `result-track:296d964482a1ed39630d36a731db12332e80593f898900e46984e9b6e891bd3d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

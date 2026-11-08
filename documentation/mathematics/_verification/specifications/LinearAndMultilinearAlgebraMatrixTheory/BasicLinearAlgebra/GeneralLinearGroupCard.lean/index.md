@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCard.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCard.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCard.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCard.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [card_linearIndependent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCard.lean/declarations/card-linearindependent.md) | 36 | `result-track:0ee17206b8a631d8e523d74c1a2c00045a80c515a7603fed7c84272c67989218` |
-| 2 | `def` | [equiv_GL_linearindependent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCard.lean/declarations/equiv-gl-linearindependent.md) | 68 | `declaration-track:0a26a692fdae5a04ab8d60a25f2838e7af3cf4c9f2ab16c3ceb63a81cc692b0c` |
-| 3 | `theorem` | [card_GL_field](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCard.lean/declarations/card-gl-field.md) | 84 | `result-track:94a31b34a34cdfb44c2aa3e4eacc7ed1eca89d303d4a57ca98da7484a0f4ce6b` |
+| 1 | `theorem` | [card_linearIndependent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCard.lean/declarations/card-linearindependent.md) | 36 | `result-track:0ee17206b8a631d8e523d74c1a2c00045a80c515a7603fed7c84272c67989218` |
+| 2 | `def` | [equiv_GL_linearindependent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCard.lean/declarations/equiv-gl-linearindependent.md) | 68 | `declaration-track:0a26a692fdae5a04ab8d60a25f2838e7af3cf4c9f2ab16c3ceb63a81cc692b0c` |
+| 3 | `theorem` | [card_GL_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeneralLinearGroupCard.lean/declarations/card-gl-field.md) | 84 | `result-track:94a31b34a34cdfb44c2aa3e4eacc7ed1eca89d303d4a57ca98da7484a0f4ce6b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

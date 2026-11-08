@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MvPolynomialIdealNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MvPolynomialIdealNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialIdealNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialIdealNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_ideal_span_monomial_image](../../../../CommutativeAlgebra/MvPolynomialIdealNamespaced.lean/declarations/mem-ideal-span-monomial-image.md) | 38 | `result-track:d8f1817e1fa22005e583a2bc4f7df5011af89cc68bad0c1a94e5511d0a01a8f8` |
-| 2 | `theorem` | [mem_ideal_span_monomial_image_iff_dvd](../../../../CommutativeAlgebra/MvPolynomialIdealNamespaced.lean/declarations/mem-ideal-span-monomial-image-iff-dvd.md) | 44 | `result-track:6eac752bae58cb572fcaef2b897a52291c28ac82f4d37f392e9491b16bf08757` |
-| 3 | `theorem` | [mem_ideal_span_X_image](../../../../CommutativeAlgebra/MvPolynomialIdealNamespaced.lean/declarations/mem-ideal-span-x-image.md) | 52 | `result-track:0252be9e1cce06c9c4511722be831f3be806e420ff896000c43f0a4a1662a751` |
+| 1 | `theorem` | [mem_ideal_span_monomial_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialIdealNamespaced.lean/declarations/mem-ideal-span-monomial-image.md) | 38 | `result-track:d8f1817e1fa22005e583a2bc4f7df5011af89cc68bad0c1a94e5511d0a01a8f8` |
+| 2 | `theorem` | [mem_ideal_span_monomial_image_iff_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialIdealNamespaced.lean/declarations/mem-ideal-span-monomial-image-iff-dvd.md) | 44 | `result-track:6eac752bae58cb572fcaef2b897a52291c28ac82f4d37f392e9491b16bf08757` |
+| 3 | `theorem` | [mem_ideal_span_X_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialIdealNamespaced.lean/declarations/mem-ideal-span-x-image.md) | 52 | `result-track:0252be9e1cce06c9c4511722be831f3be806e420ff896000c43f0a4a1662a751` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

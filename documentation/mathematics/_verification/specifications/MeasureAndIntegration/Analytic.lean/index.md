@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Analytic.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Analytic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Analytic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Analytic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [transform](../../../../MeasureAndIntegration/Analytic.lean/declarations/transform.md) | 13 | `declaration-track:31e6ce1873ceea1c3d40fe89ec0617284f2d6163033a40f5aeec32958ae863d8` |
-| 2 | `theorem` | [transform_analytic](../../../../MeasureAndIntegration/Analytic.lean/declarations/transform-analytic.md) | 17 | `result-track:33a7aaa31f5606b55fe1293b2afe77005f3fad81a7ea79b1397c6fbf3aad0180` |
+| 1 | `def` | [transform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Analytic.lean/declarations/transform.md) | 13 | `declaration-track:31e6ce1873ceea1c3d40fe89ec0617284f2d6163033a40f5aeec32958ae863d8` |
+| 2 | `theorem` | [transform_analytic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Analytic.lean/declarations/transform-analytic.md) | 17 | `result-track:33a7aaa31f5606b55fe1293b2afe77005f3fad81a7ea79b1397c6fbf3aad0180` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

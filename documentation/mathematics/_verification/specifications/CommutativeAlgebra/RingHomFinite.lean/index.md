@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingHomFinite.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingHomFinite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finite_stableUnderComposition](../../../../CommutativeAlgebra/RingHomFinite.lean/declarations/finite-stableundercomposition.md) | 32 | `result-track:c57fc2eb6fe5b0f5828e69a45f3d4a6baa514280a9a62e28414897a0f64c24e8` |
-| 2 | `theorem` | [finite_respectsIso](../../../../CommutativeAlgebra/RingHomFinite.lean/declarations/finite-respectsiso.md) | 36 | `result-track:a84782045228f8b628f5ff53b83491cd1c72998a6bb47fda4e02ea4f42870468` |
-| 3 | `lemma` | [finite_containsIdentities](../../../../CommutativeAlgebra/RingHomFinite.lean/declarations/finite-containsidentities.md) | 41 | `result-track:022128266d6c6e19779364336881e4b73388440a65e4d16ae079b9665cfffce1` |
-| 4 | `theorem` | [finite_isStableUnderBaseChange](../../../../CommutativeAlgebra/RingHomFinite.lean/declarations/finite-isstableunderbasechange.md) | 43 | `result-track:2ce17ff180fbd23b51f2cc6944800478078328b65e36b3c180a07ccf5a3381f3` |
-| 5 | `lemma` | [Module.Finite_of_isLocalization](../../../../CommutativeAlgebra/RingHomFinite.lean/declarations/module-finite-of-islocalization.md) | 63 | `result-track:df9901931b9c3b1c640c0d0928555f6eb4e284fefa196f2e873879a290ccc309` |
-| 6 | `theorem` | [RingHom.finite_localizationPreserves](../../../../CommutativeAlgebra/RingHomFinite.lean/declarations/ringhom-finite-localizationpreserves.md) | 100 | `result-track:ed3c6e96f3707a042ac4761e8c987d6c4562042efb64ca756c7f52f9633785bf` |
-| 7 | `theorem` | [RingHom.localization_away_map_finite](../../../../CommutativeAlgebra/RingHomFinite.lean/declarations/ringhom-localization-away-map-finite.md) | 114 | `result-track:05cf2abdab2dc00b8d35a4b6a07a7992025ebe996cd43b6e67aa252deaaef2bc` |
-| 8 | `theorem` | [IsLocalization.smul_mem_finsetIntegerMultiple_span](../../../../CommutativeAlgebra/RingHomFinite.lean/declarations/islocalization-smul-mem-finsetintegermultiple-span.md) | 124 | `result-track:0023bf12f90997df4a1e4262900ad0414ececc668b62032954f053767f38d5d6` |
-| 9 | `theorem` | [multiple_mem_span_of_mem_localization_span](../../../../CommutativeAlgebra/RingHomFinite.lean/declarations/multiple-mem-span-of-mem-localization-span.md) | 163 | `result-track:f9eff9113c6377ce1e2e891f4d2ca9f792523fb8ab29c2e6338eb887d42cf8f7` |
-| 10 | `theorem` | [multiple_mem_adjoin_of_mem_localization_adjoin](../../../../CommutativeAlgebra/RingHomFinite.lean/declarations/multiple-mem-adjoin-of-mem-localization-adjoin.md) | 189 | `result-track:352200e0dba8613670eca13a1eae0d5fbee4d2d8f7f684e59969e4d26c0c4a68` |
-| 11 | `theorem` | [RingHom.finite_ofLocalizationSpan](../../../../CommutativeAlgebra/RingHomFinite.lean/declarations/ringhom-finite-oflocalizationspan.md) | 199 | `result-track:79c80cf1ecfc085aadc7640b31a03282091c7b3ccf64827b492891d63407e9a2` |
+| 1 | `theorem` | [finite_stableUnderComposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinite.lean/declarations/finite-stableundercomposition.md) | 32 | `result-track:c57fc2eb6fe5b0f5828e69a45f3d4a6baa514280a9a62e28414897a0f64c24e8` |
+| 2 | `theorem` | [finite_respectsIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinite.lean/declarations/finite-respectsiso.md) | 36 | `result-track:a84782045228f8b628f5ff53b83491cd1c72998a6bb47fda4e02ea4f42870468` |
+| 3 | `lemma` | [finite_containsIdentities](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinite.lean/declarations/finite-containsidentities.md) | 41 | `result-track:022128266d6c6e19779364336881e4b73388440a65e4d16ae079b9665cfffce1` |
+| 4 | `theorem` | [finite_isStableUnderBaseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinite.lean/declarations/finite-isstableunderbasechange.md) | 43 | `result-track:2ce17ff180fbd23b51f2cc6944800478078328b65e36b3c180a07ccf5a3381f3` |
+| 5 | `lemma` | [Module.Finite_of_isLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinite.lean/declarations/module-finite-of-islocalization.md) | 63 | `result-track:df9901931b9c3b1c640c0d0928555f6eb4e284fefa196f2e873879a290ccc309` |
+| 6 | `theorem` | [RingHom.finite_localizationPreserves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinite.lean/declarations/ringhom-finite-localizationpreserves.md) | 100 | `result-track:ed3c6e96f3707a042ac4761e8c987d6c4562042efb64ca756c7f52f9633785bf` |
+| 7 | `theorem` | [RingHom.localization_away_map_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinite.lean/declarations/ringhom-localization-away-map-finite.md) | 114 | `result-track:05cf2abdab2dc00b8d35a4b6a07a7992025ebe996cd43b6e67aa252deaaef2bc` |
+| 8 | `theorem` | [IsLocalization.smul_mem_finsetIntegerMultiple_span](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinite.lean/declarations/islocalization-smul-mem-finsetintegermultiple-span.md) | 124 | `result-track:0023bf12f90997df4a1e4262900ad0414ececc668b62032954f053767f38d5d6` |
+| 9 | `theorem` | [multiple_mem_span_of_mem_localization_span](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinite.lean/declarations/multiple-mem-span-of-mem-localization-span.md) | 163 | `result-track:f9eff9113c6377ce1e2e891f4d2ca9f792523fb8ab29c2e6338eb887d42cf8f7` |
+| 10 | `theorem` | [multiple_mem_adjoin_of_mem_localization_adjoin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinite.lean/declarations/multiple-mem-adjoin-of-mem-localization-adjoin.md) | 189 | `result-track:352200e0dba8613670eca13a1eae0d5fbee4d2d8f7f684e59969e4d26c0c4a68` |
+| 11 | `theorem` | [RingHom.finite_ofLocalizationSpan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinite.lean/declarations/ringhom-finite-oflocalizationspan.md) | 199 | `result-track:79c80cf1ecfc085aadc7640b31a03282091c7b3ccf64827b492891d63407e9a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

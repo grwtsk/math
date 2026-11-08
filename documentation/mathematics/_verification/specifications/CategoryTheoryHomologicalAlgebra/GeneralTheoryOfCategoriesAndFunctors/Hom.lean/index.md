@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Hom.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Hom.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Hom.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Hom.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HomEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Hom.lean/declarations/homequivalence.md) | 5 | `declaration-track:edaac19ffe503a1f6b85737b021c841f9c8d60b60ab59988d9183141ab38aae3` |
-| 2 | `theorem` | [HomEquivalence.injective_on_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Hom.lean/declarations/homequivalence-injective-on-hom.md) | 14 | `result-track:0e66dadedd27a9f29cd9a1af3979a0b00514f5423301c5174c6f5d7aa22f4ef3` |
-| 3 | `theorem` | [HomEquivalence.surjective_on_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Hom.lean/declarations/homequivalence-surjective-on-hom.md) | 27 | `result-track:3456c2914ea43fdfcf8b46748cfe64e0cc53c15f3b2e0f2c9e31130b3b7f9730` |
+| 1 | `structure` | [HomEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Hom.lean/declarations/homequivalence.md) | 5 | `declaration-track:edaac19ffe503a1f6b85737b021c841f9c8d60b60ab59988d9183141ab38aae3` |
+| 2 | `theorem` | [HomEquivalence.injective_on_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Hom.lean/declarations/homequivalence-injective-on-hom.md) | 14 | `result-track:0e66dadedd27a9f29cd9a1af3979a0b00514f5423301c5174c6f5d7aa22f4ef3` |
+| 3 | `theorem` | [HomEquivalence.surjective_on_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Hom.lean/declarations/homequivalence-surjective-on-hom.md) | 27 | `result-track:3456c2914ea43fdfcf8b46748cfe64e0cc53c15f3b2e0f2c9e31130b3b7f9730` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivLe.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivLe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivLe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivLe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cast_div](../../../../../NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivLe.lean/declarations/cast-div.md) | 37 | `result-track:1ed8d8caef637879d54a1681caa15dd31d7d1d46a22bd91e79fdf9e17cb37c08` |
-| 2 | `theorem` | [cast_div_div_div_cancel_right](../../../../../NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivLe.lean/declarations/cast-div-div-div-cancel-right.md) | 46 | `result-track:301e346bf4706996ca31c5e9a2062b193f4a1617c0e0e501f0ccd8fedfc5f9b3` |
-| 3 | `theorem` | [cast_div_le](../../../../../NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivLe.lean/declarations/cast-div-le.md) | 60 | `result-track:1068a1f75d698e49adb8b0860fac0d8f5d618f6803af5515290bc3c4047feb3c` |
-| 4 | `theorem` | [inv_pos_of_nat](../../../../../NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivLe.lean/declarations/inv-pos-of-nat.md) | 68 | `result-track:647d005327ba9bf419fe8153d804efdc8f4b9ac79ee877c0508ac1f104da68af` |
-| 5 | `theorem` | [one_div_pos_of_nat](../../../../../NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivLe.lean/declarations/one-div-pos-of-nat.md) | 72 | `result-track:4745e3938b538ff8b34974addf18498f5e8b3e702609e89d8cb8ff2979cfd965` |
-| 6 | `theorem` | [one_div_le_one_div](../../../../../NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivLe.lean/declarations/one-div-le-one-div.md) | 77 | `result-track:4d38cec86fef90ebb77a27a7e6b7e1be337e0d767962946f1bd3d270790c9c9b` |
-| 7 | `theorem` | [one_div_lt_one_div](../../../../../NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivLe.lean/declarations/one-div-lt-one-div.md) | 83 | `result-track:359a0de0d734b3760d152f08ee6f616c1c6dfd0ce2e2c55b999312bf18ecdc36` |
+| 1 | `theorem` | [cast_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivLe.lean/declarations/cast-div.md) | 37 | `result-track:1ed8d8caef637879d54a1681caa15dd31d7d1d46a22bd91e79fdf9e17cb37c08` |
+| 2 | `theorem` | [cast_div_div_div_cancel_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivLe.lean/declarations/cast-div-div-div-cancel-right.md) | 46 | `result-track:301e346bf4706996ca31c5e9a2062b193f4a1617c0e0e501f0ccd8fedfc5f9b3` |
+| 3 | `theorem` | [cast_div_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivLe.lean/declarations/cast-div-le.md) | 60 | `result-track:1068a1f75d698e49adb8b0860fac0d8f5d618f6803af5515290bc3c4047feb3c` |
+| 4 | `theorem` | [inv_pos_of_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivLe.lean/declarations/inv-pos-of-nat.md) | 68 | `result-track:647d005327ba9bf419fe8153d804efdc8f4b9ac79ee877c0508ac1f104da68af` |
+| 5 | `theorem` | [one_div_pos_of_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivLe.lean/declarations/one-div-pos-of-nat.md) | 72 | `result-track:4745e3938b538ff8b34974addf18498f5e8b3e702609e89d8cb8ff2979cfd965` |
+| 6 | `theorem` | [one_div_le_one_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivLe.lean/declarations/one-div-le-one-div.md) | 77 | `result-track:4d38cec86fef90ebb77a27a7e6b7e1be337e0d767962946f1bd3d270790c9c9b` |
+| 7 | `theorem` | [one_div_lt_one_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivLe.lean/declarations/one-div-lt-one-div.md) | 83 | `result-track:359a0de0d734b3760d152f08ee6f616c1c6dfd0ce2e2c55b999312bf18ecdc36` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

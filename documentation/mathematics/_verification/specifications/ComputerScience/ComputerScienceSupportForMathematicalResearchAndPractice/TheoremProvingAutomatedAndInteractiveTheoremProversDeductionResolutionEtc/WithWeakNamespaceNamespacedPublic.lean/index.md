@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespaceNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespaceNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespaceNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespaceNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [resolveNamespaceRelative](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespaceNamespacedPublic.lean/declarations/resolvenamespacerelative.md) | 27 | `declaration-track:705cce41ae4eb433016aff770bdee9e4526beceb6e9f8543b124a01313f04582` |
-| 2 | `def` | [withWeakNamespace](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespaceNamespacedPublic.lean/declarations/withweaknamespace.md) | 34 | `declaration-track:c26e418e756b6edd3764d8749ce3415e7b3a3a0a2e88474398c6e4f9b3d65224` |
-| 3 | `def` | [elabWithWeakNamespace](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespaceNamespacedPublic.lean/declarations/elabwithweaknamespace.md) | 42 | `declaration-track:d77bd561c62b7c7f94be6477b91d92071d3c286154f02890aab757737714315f` |
+| 1 | `def` | [resolveNamespaceRelative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespaceNamespacedPublic.lean/declarations/resolvenamespacerelative.md) | 27 | `declaration-track:705cce41ae4eb433016aff770bdee9e4526beceb6e9f8543b124a01313f04582` |
+| 2 | `def` | [withWeakNamespace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespaceNamespacedPublic.lean/declarations/withweaknamespace.md) | 34 | `declaration-track:c26e418e756b6edd3764d8749ce3415e7b3a3a0a2e88474398c6e4f9b3d65224` |
+| 3 | `def` | [elabWithWeakNamespace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespaceNamespacedPublic.lean/declarations/elabwithweaknamespace.md) | 42 | `declaration-track:d77bd561c62b7c7f94be6477b91d92071d3c286154f02890aab757737714315f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

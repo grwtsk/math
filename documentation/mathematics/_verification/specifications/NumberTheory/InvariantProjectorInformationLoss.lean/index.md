@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/InvariantProjectorInformationLoss.lean/index.md) · [Full source](../../../../NumberTheory/InvariantProjectorInformationLoss.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/InvariantProjectorInformationLoss.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/InvariantProjectorInformationLoss.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Farey.GroupSpectralChannel`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.NumberTheory.Farey.GroupSpectralChannel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/index.md) — import line 9; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [native_projector_erases_all_or_retains_all](../../../../NumberTheory/InvariantProjectorInformationLoss.lean/declarations/native-projector-erases-all-or-retains-all.md) | 34 | `result-track:1631eb1a0a0f81662b563383eaadfe6d61bd7412bba3863f5589788ed3332db4` |
-| 2 | `theorem` | [no_native_projector_with_partial_information](../../../../NumberTheory/InvariantProjectorInformationLoss.lean/declarations/no-native-projector-with-partial-information.md) | 51 | `result-track:a575f20d6ed4e4632799a662fb5856fdfd04cf0480fe6a038c63a4d1714960e2` |
+| 1 | `theorem` | [native_projector_erases_all_or_retains_all](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/InvariantProjectorInformationLoss.lean/declarations/native-projector-erases-all-or-retains-all.md) | 34 | `result-track:1631eb1a0a0f81662b563383eaadfe6d61bd7412bba3863f5589788ed3332db4` |
+| 2 | `theorem` | [no_native_projector_with_partial_information](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/InvariantProjectorInformationLoss.lean/declarations/no-native-projector-with-partial-information.md) | 51 | `result-track:a575f20d6ed4e4632799a662fb5856fdfd04cf0480fe6a038c63a4d1714960e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

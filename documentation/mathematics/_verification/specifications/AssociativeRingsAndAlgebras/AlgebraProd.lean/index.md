@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/AlgebraProd.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/AlgebraProd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraProd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraProd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,22 +59,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [algebra](../../../../AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/algebra.md) | 35 | `declaration-track:f34ba70cd306c3c29ff6208f8c9524f5e01ea38f44e93112b3d1a670d8d80815` |
-| 2 | `theorem` | [algebraMap_apply](../../../../AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/algebramap-apply.md) | 49 | `result-track:16465cac94ecd74fd365689a7efce96416e36128d1365bc7b625b075d246bd5d` |
-| 3 | `def` | [fst](../../../../AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/fst.md) | 59 | `declaration-track:07f3abeddcd4b40c199fb3adac5c018d62af7d656322a33c756551ab436fedc7` |
-| 4 | `def` | [snd](../../../../AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/snd.md) | 63 | `declaration-track:81be5ee1880268aeaa50c18a98a15208e034b68cb5f0105bd7638b4334e74c43` |
-| 5 | `theorem` | [fst_apply](../../../../AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/fst-apply.md) | 69 | `result-track:52626336ef1fcb3232457256bf88e5d9af2994a1f221c575fa0a309d277a2a72` |
-| 6 | `theorem` | [snd_apply](../../../../AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/snd-apply.md) | 72 | `result-track:b37943d1386387ba0a69a943620ab9c751a41d945e4296e8b9b7a93d91d365e8` |
-| 7 | `def` | [prod](../../../../AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/prod.md) | 78 | `declaration-track:1e0f608b38049f02c31614a95ec44614233b71df758eb64af47db42e2429bd25` |
-| 8 | `theorem` | [coe_prod](../../../../AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/coe-prod.md) | 84 | `result-track:2e4df257a082bfee7f337de4569742e1fdf4543ca5285962507d67283d33a8cb` |
-| 9 | `theorem` | [fst_prod](../../../../AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/fst-prod.md) | 88 | `result-track:151981a740438c4e639aa2ae58299a6cd988f71419f1d5dba41acbc97028ce3f` |
-| 10 | `theorem` | [snd_prod](../../../../AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/snd-prod.md) | 91 | `result-track:a8b51767834a7a53a44fefd0075b0b58d474e0a5621d7b2f70fb61701ee3d692` |
-| 11 | `theorem` | [prod_fst_snd](../../../../AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/prod-fst-snd.md) | 94 | `result-track:7fa47cd6955fcdb747b361045437785cb79e3882e91b4ec9fdd9ac3aa51b572b` |
-| 12 | `theorem` | [prod_comp](../../../../AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/prod-comp.md) | 96 | `result-track:11aed4af0631a3cae1f7dca5687c00dfcd2483bcc748fd84a8787ae6fb6382e5` |
-| 13 | `def` | [prodEquiv](../../../../AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/prodequiv.md) | 103 | `declaration-track:79f3229c7f79add6a555457231e94b227c49eb83ca9f1c36768bb2bf37f1d3af` |
-| 14 | `def` | [prodMap](../../../../AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/prodmap.md) | 110 | `declaration-track:cf850d6e934f288c2d8d8f476a15ed51bcfd8c6abeabfe5e82e6b849e36bec6d` |
-| 15 | `def` | [prodUnique](../../../../AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/produnique.md) | 122 | `declaration-track:92619097ed7e533462f1500ffec2bd048dff98ac0e498f6fabe98a7518c138b1` |
-| 16 | `def` | [uniqueProd](../../../../AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/uniqueprod.md) | 132 | `declaration-track:b3373d5903c5ac50288a19d66daa588727d912f2ec970c4b62f9f8dff97166cc` |
+| 1 | `instance` | [algebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/algebra.md) | 35 | `declaration-track:f34ba70cd306c3c29ff6208f8c9524f5e01ea38f44e93112b3d1a670d8d80815` |
+| 2 | `theorem` | [algebraMap_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/algebramap-apply.md) | 49 | `result-track:16465cac94ecd74fd365689a7efce96416e36128d1365bc7b625b075d246bd5d` |
+| 3 | `def` | [fst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/fst.md) | 59 | `declaration-track:07f3abeddcd4b40c199fb3adac5c018d62af7d656322a33c756551ab436fedc7` |
+| 4 | `def` | [snd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/snd.md) | 63 | `declaration-track:81be5ee1880268aeaa50c18a98a15208e034b68cb5f0105bd7638b4334e74c43` |
+| 5 | `theorem` | [fst_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/fst-apply.md) | 69 | `result-track:52626336ef1fcb3232457256bf88e5d9af2994a1f221c575fa0a309d277a2a72` |
+| 6 | `theorem` | [snd_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/snd-apply.md) | 72 | `result-track:b37943d1386387ba0a69a943620ab9c751a41d945e4296e8b9b7a93d91d365e8` |
+| 7 | `def` | [prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/prod.md) | 78 | `declaration-track:1e0f608b38049f02c31614a95ec44614233b71df758eb64af47db42e2429bd25` |
+| 8 | `theorem` | [coe_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/coe-prod.md) | 84 | `result-track:2e4df257a082bfee7f337de4569742e1fdf4543ca5285962507d67283d33a8cb` |
+| 9 | `theorem` | [fst_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/fst-prod.md) | 88 | `result-track:151981a740438c4e639aa2ae58299a6cd988f71419f1d5dba41acbc97028ce3f` |
+| 10 | `theorem` | [snd_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/snd-prod.md) | 91 | `result-track:a8b51767834a7a53a44fefd0075b0b58d474e0a5621d7b2f70fb61701ee3d692` |
+| 11 | `theorem` | [prod_fst_snd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/prod-fst-snd.md) | 94 | `result-track:7fa47cd6955fcdb747b361045437785cb79e3882e91b4ec9fdd9ac3aa51b572b` |
+| 12 | `theorem` | [prod_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/prod-comp.md) | 96 | `result-track:11aed4af0631a3cae1f7dca5687c00dfcd2483bcc748fd84a8787ae6fb6382e5` |
+| 13 | `def` | [prodEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/prodequiv.md) | 103 | `declaration-track:79f3229c7f79add6a555457231e94b227c49eb83ca9f1c36768bb2bf37f1d3af` |
+| 14 | `def` | [prodMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/prodmap.md) | 110 | `declaration-track:cf850d6e934f288c2d8d8f476a15ed51bcfd8c6abeabfe5e82e6b849e36bec6d` |
+| 15 | `def` | [prodUnique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/produnique.md) | 122 | `declaration-track:92619097ed7e533462f1500ffec2bd048dff98ac0e498f6fabe98a7518c138b1` |
+| 16 | `def` | [uniqueProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraProd.lean/declarations/uniqueprod.md) | 132 | `declaration-track:b3373d5903c5ac50288a19d66daa588727d912f2ec970c4b62f9f8dff97166cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

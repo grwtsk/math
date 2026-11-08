@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EigenIdentity.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EigenIdentity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EigenIdentity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EigenIdentity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [norm_sq_eq_re_mul_conj](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EigenIdentity.lean/declarations/norm-sq-eq-re-mul-conj.md) | 39 | `result-track:c077114d80304c9f5a3cb9cc6eb3b48249d4081a398c5643887bbe9475f83bcb` |
-| 2 | `lemma` | [re_mul_conj_comm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EigenIdentity.lean/declarations/re-mul-conj-comm.md) | 43 | `result-track:09deb481cb0d1ae294781ab541573dabd407b81b8fb335129bf83ef9ab48eb3b` |
-| 3 | `theorem` | [eigen_identity'](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EigenIdentity.lean/declarations/eigen-identity.md) | 47 | `result-track:4bc689e1ccce28734907031f4bbb13dffd73c1ac6c984ee3334d51cd539dfc36` |
+| 1 | `lemma` | [norm_sq_eq_re_mul_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EigenIdentity.lean/declarations/norm-sq-eq-re-mul-conj.md) | 39 | `result-track:c077114d80304c9f5a3cb9cc6eb3b48249d4081a398c5643887bbe9475f83bcb` |
+| 2 | `lemma` | [re_mul_conj_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EigenIdentity.lean/declarations/re-mul-conj-comm.md) | 43 | `result-track:09deb481cb0d1ae294781ab541573dabd407b81b8fb335129bf83ef9ab48eb3b` |
+| 3 | `theorem` | [eigen_identity'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EigenIdentity.lean/declarations/eigen-identity.md) | 47 | `result-track:4bc689e1ccce28734907031f4bbb13dffd73c1ac6c984ee3334d51cd539dfc36` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

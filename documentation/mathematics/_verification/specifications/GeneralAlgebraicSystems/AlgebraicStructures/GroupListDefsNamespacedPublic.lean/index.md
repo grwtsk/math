@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [alternatingSum](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/declarations/alternatingsum.md) | 38 | `declaration-track:a17519f2db7f92407ee66df5a167bc3f9491ab4f95cb8e2f162121d19e9e2b1f` |
-| 2 | `def` | [alternatingProd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/declarations/alternatingprod.md) | 45 | `declaration-track:b0ccc25d0dc8db62650cc813740387f1fc2b1384a058e128d5230fb6df56df95` |
-| 3 | `lemma` | [prod_induction](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/declarations/prod-induction.md) | 57 | `result-track:ba01f23d756843621a3fecc5519e83b2dc5801803088332c1ef9774bac473e26` |
-| 4 | `theorem` | [prod_map_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/declarations/prod-map-one.md) | 74 | `result-track:375095b12921a19728e433893784573dbdd1ec6295840096b2df1e5393575e3a` |
-| 5 | `lemma` | [prod_induction_nonempty](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/declarations/prod-induction-nonempty.md) | 79 | `result-track:7a72ee458d3d1448be910a60d1930f4afe59d0ef264bfba273ee3f46caae0872` |
-| 6 | `theorem` | [prod_replicate](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/declarations/prod-replicate.md) | 98 | `result-track:2df9a690c3c1911da7ef57dc0cbd704b1078280ed1a7c766890973c3400bc037` |
-| 7 | `theorem` | [prod_eq_pow_length](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/declarations/prod-eq-pow-length.md) | 104 | `result-track:3219fdd1a891de955945fc4bad90638d16c1af27bbdaaaa5a22788552d8f2a47` |
-| 8 | `theorem` | [prod_hom_rel](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/declarations/prod-hom-rel.md) | 111 | `result-track:34050addda4e9f9b5f7db8c5058de12b30bdc3ed00c3f57b23198456db439856` |
+| 1 | `def` | [alternatingSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/declarations/alternatingsum.md) | 38 | `declaration-track:a17519f2db7f92407ee66df5a167bc3f9491ab4f95cb8e2f162121d19e9e2b1f` |
+| 2 | `def` | [alternatingProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/declarations/alternatingprod.md) | 45 | `declaration-track:b0ccc25d0dc8db62650cc813740387f1fc2b1384a058e128d5230fb6df56df95` |
+| 3 | `lemma` | [prod_induction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/declarations/prod-induction.md) | 57 | `result-track:ba01f23d756843621a3fecc5519e83b2dc5801803088332c1ef9774bac473e26` |
+| 4 | `theorem` | [prod_map_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/declarations/prod-map-one.md) | 74 | `result-track:375095b12921a19728e433893784573dbdd1ec6295840096b2df1e5393575e3a` |
+| 5 | `lemma` | [prod_induction_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/declarations/prod-induction-nonempty.md) | 79 | `result-track:7a72ee458d3d1448be910a60d1930f4afe59d0ef264bfba273ee3f46caae0872` |
+| 6 | `theorem` | [prod_replicate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/declarations/prod-replicate.md) | 98 | `result-track:2df9a690c3c1911da7ef57dc0cbd704b1078280ed1a7c766890973c3400bc037` |
+| 7 | `theorem` | [prod_eq_pow_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/declarations/prod-eq-pow-length.md) | 104 | `result-track:3219fdd1a891de955945fc4bad90638d16c1af27bbdaaaa5a22788552d8f2a47` |
+| 8 | `theorem` | [prod_hom_rel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupListDefsNamespacedPublic.lean/declarations/prod-hom-rel.md) | 111 | `result-track:34050addda4e9f9b5f7db8c5058de12b30bdc3ed00c3f57b23198456db439856` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

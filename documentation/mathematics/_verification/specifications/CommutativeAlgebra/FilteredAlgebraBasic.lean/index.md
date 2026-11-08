@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FilteredAlgebraBasic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FilteredAlgebraBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FilteredAlgebraBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FilteredAlgebraBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,13 +61,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsFiltration](../../../../CommutativeAlgebra/FilteredAlgebraBasic.lean/declarations/isfiltration.md) | 44 | `declaration-track:e93ee0a4f23618a4b5eaa13d11dd1cd9b3c19a1a6d194c5629721f385fd49082` |
-| 2 | `lemma` | [IsFiltration.F_lt_le_F](../../../../CommutativeAlgebra/FilteredAlgebraBasic.lean/declarations/isfiltration-f-lt-le-f.md) | 49 | `result-track:372a0772fbe3e42949ab3dd8e06a468d62697fdd366d4633edbdee73bbd22889` |
-| 3 | `lemma` | [IsFiltration.mk_int](../../../../CommutativeAlgebra/FilteredAlgebraBasic.lean/declarations/isfiltration-mk-int.md) | 54 | `result-track:e33ae82ee40a90f4f071571290d1e2644ce8fba3f4097298e2d7b3f099ac2fac` |
-| 4 | `class` | [IsRingFiltration](../../../../CommutativeAlgebra/FilteredAlgebraBasic.lean/declarations/isringfiltration.md) | 70 | `declaration-track:ace800624bf6799982c54ec42be5e10e082080da94d734dd0784acc35cb6d740` |
-| 5 | `lemma` | [IsRingFiltration.mk_int](../../../../CommutativeAlgebra/FilteredAlgebraBasic.lean/declarations/isringfiltration-mk-int.md) | 74 | `result-track:c25ea26fbd8e62d6b1facd2b2004dd10b5ca9ad86374510dceb1e8dba04ea62d` |
-| 6 | `class` | [IsModuleFiltration](../../../../CommutativeAlgebra/FilteredAlgebraBasic.lean/declarations/ismodulefiltration.md) | 90 | `declaration-track:668116bc8553c9ddb2192c2ca3a229778442a5f12e3469cf98ac55d412fc2917` |
-| 7 | `lemma` | [IsModuleFiltration.mk_int](../../../../CommutativeAlgebra/FilteredAlgebraBasic.lean/declarations/ismodulefiltration-mk-int.md) | 95 | `result-track:a49b7782e3ec868a7037a85a4b1e510ed1abb15e8feec7a46624a657fb4c34dd` |
+| 1 | `class` | [IsFiltration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FilteredAlgebraBasic.lean/declarations/isfiltration.md) | 44 | `declaration-track:e93ee0a4f23618a4b5eaa13d11dd1cd9b3c19a1a6d194c5629721f385fd49082` |
+| 2 | `lemma` | [IsFiltration.F_lt_le_F](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FilteredAlgebraBasic.lean/declarations/isfiltration-f-lt-le-f.md) | 49 | `result-track:372a0772fbe3e42949ab3dd8e06a468d62697fdd366d4633edbdee73bbd22889` |
+| 3 | `lemma` | [IsFiltration.mk_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FilteredAlgebraBasic.lean/declarations/isfiltration-mk-int.md) | 54 | `result-track:e33ae82ee40a90f4f071571290d1e2644ce8fba3f4097298e2d7b3f099ac2fac` |
+| 4 | `class` | [IsRingFiltration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FilteredAlgebraBasic.lean/declarations/isringfiltration.md) | 70 | `declaration-track:ace800624bf6799982c54ec42be5e10e082080da94d734dd0784acc35cb6d740` |
+| 5 | `lemma` | [IsRingFiltration.mk_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FilteredAlgebraBasic.lean/declarations/isringfiltration-mk-int.md) | 74 | `result-track:c25ea26fbd8e62d6b1facd2b2004dd10b5ca9ad86374510dceb1e8dba04ea62d` |
+| 6 | `class` | [IsModuleFiltration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FilteredAlgebraBasic.lean/declarations/ismodulefiltration.md) | 90 | `declaration-track:668116bc8553c9ddb2192c2ca3a229778442a5f12e3469cf98ac55d412fc2917` |
+| 7 | `lemma` | [IsModuleFiltration.mk_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FilteredAlgebraBasic.lean/declarations/ismodulefiltration-mk-int.md) | 95 | `result-track:a49b7782e3ec868a7037a85a4b1e510ed1abb15e8feec7a46624a657fb4c34dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

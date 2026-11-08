@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RefinementNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RefinementNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RefinementNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RefinementNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [monitor_preserves_service](../../../../../ComputerScience/AlgorithmsInComputerScience/RefinementNamespaced.lean/declarations/monitor-preserves-service.md) | 19 | `result-track:c376930094b37bc84f9fce06b095cdc0ff8ebabe0e6af1653b1d6e46cddb5a82` |
-| 2 | `theorem` | [network_refresh_preserves_active](../../../../../ComputerScience/AlgorithmsInComputerScience/RefinementNamespaced.lean/declarations/network-refresh-preserves-active.md) | 26 | `result-track:d29806b08b26ed9c3a045f4c2e0da15095a0fdf2fc689dcfaa8fa55339e0f1a7` |
-| 3 | `theorem` | [network_refresh_preserves_authority](../../../../../ComputerScience/AlgorithmsInComputerScience/RefinementNamespaced.lean/declarations/network-refresh-preserves-authority.md) | 33 | `result-track:6441984dd1b33101547fce5750e09cbc824fd62ad34799c9ead0cc60ad5f72d2` |
-| 4 | `theorem` | [network_activation_refines_service](../../../../../ComputerScience/AlgorithmsInComputerScience/RefinementNamespaced.lean/declarations/network-activation-refines-service.md) | 40 | `result-track:6bab6525f5589c3d515f229ddeeb0697e0c70c6401c14487f1ffa4a3f5f6abe5` |
-| 5 | `theorem` | [network_replay_idempotent](../../../../../ComputerScience/AlgorithmsInComputerScience/RefinementNamespaced.lean/declarations/network-replay-idempotent.md) | 55 | `result-track:ce2f3fcd0488862dd3e9c775f5cc8a08c901ada4ec367fbee11d15d4f7c634e2` |
-| 6 | `theorem` | [network_stale_event_preserves_service](../../../../../ComputerScience/AlgorithmsInComputerScience/RefinementNamespaced.lean/declarations/network-stale-event-preserves-service.md) | 63 | `result-track:adabcf08c8b6fefb2513436fa026597c0e49be72bff30a82b615b6ceec02f1cb` |
+| 1 | `theorem` | [monitor_preserves_service](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RefinementNamespaced.lean/declarations/monitor-preserves-service.md) | 19 | `result-track:c376930094b37bc84f9fce06b095cdc0ff8ebabe0e6af1653b1d6e46cddb5a82` |
+| 2 | `theorem` | [network_refresh_preserves_active](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RefinementNamespaced.lean/declarations/network-refresh-preserves-active.md) | 26 | `result-track:d29806b08b26ed9c3a045f4c2e0da15095a0fdf2fc689dcfaa8fa55339e0f1a7` |
+| 3 | `theorem` | [network_refresh_preserves_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RefinementNamespaced.lean/declarations/network-refresh-preserves-authority.md) | 33 | `result-track:6441984dd1b33101547fce5750e09cbc824fd62ad34799c9ead0cc60ad5f72d2` |
+| 4 | `theorem` | [network_activation_refines_service](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RefinementNamespaced.lean/declarations/network-activation-refines-service.md) | 40 | `result-track:6bab6525f5589c3d515f229ddeeb0697e0c70c6401c14487f1ffa4a3f5f6abe5` |
+| 5 | `theorem` | [network_replay_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RefinementNamespaced.lean/declarations/network-replay-idempotent.md) | 55 | `result-track:ce2f3fcd0488862dd3e9c775f5cc8a08c901ada4ec367fbee11d15d4f7c634e2` |
+| 6 | `theorem` | [network_stale_event_preserves_service](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RefinementNamespaced.lean/declarations/network-stale-event-preserves-service.md) | 63 | `result-track:adabcf08c8b6fefb2513436fa026597c0e49be72bff30a82b615b6ceec02f1cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

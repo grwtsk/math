@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.PolygonalQuarticSplitting`](../../../../AssociativeRingsAndAlgebras/PolygonalQuarticSplitting.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Algebra.QuarticResolventRingNaturality`](../../../../CommutativeAlgebra/QuarticResolventRingNaturality.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Algebra.PolygonalQuarticSplitting`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/PolygonalQuarticSplitting.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticResolventRingNaturality`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticResolventRingNaturality.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [baseAdjacencyResolvent](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/declarations/baseadjacencyresolvent.md) | 28 | `declaration-track:441126fae9a65628bd4a45e272f4100e10314bb95049b997f2e32d231ccfc525` |
-| 2 | `theorem` | [baseAdjacencyResolvent_ringHom_map](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/declarations/baseadjacencyresolvent-ringhom-map.md) | 33 | `result-track:a1aee8b010dc02d5d52e77a455292a48c2e97f429b62475566f3a205259a09e8` |
-| 3 | `theorem` | [baseAdjacencyResolvent_map](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/declarations/baseadjacencyresolvent-map.md) | 41 | `result-track:abb3cfc13c4e39f174029ed08b9911c6b79cc4ed869468daa3bf1a60ef80ba64` |
-| 4 | `theorem` | [actual_quartic_base_resolvent](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/declarations/actual-quartic-base-resolvent.md) | 51 | `result-track:6ed178c555aeb8156e5500e50350589a5edda1de6cce9dbb24a1a6f808866568` |
-| 5 | `theorem` | [actual_quartic_base_resolvent_order_independent](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/declarations/actual-quartic-base-resolvent-order-independent.md) | 69 | `result-track:191b651f2366d52b642228240305b625116f4a3896c72722e92ba7b35594ba95` |
-| 6 | `theorem` | [actual_quartic_base_resolvent_in_splitting_field](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/declarations/actual-quartic-base-resolvent-in-splitting-field.md) | 77 | `result-track:29f4debe5958d02fa61abd1b54ec76632a7558eafadf67229dfd73afecb43a9a` |
-| 7 | `theorem` | [baseAdjacencyResolvent_map_tower](../../../../AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/declarations/baseadjacencyresolvent-map-tower.md) | 91 | `result-track:d80d2930f5c995539d72cc936c0ad483b97d8712cd402f686371ea4b083e874c` |
+| 1 | `def` | [baseAdjacencyResolvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/declarations/baseadjacencyresolvent.md) | 28 | `declaration-track:441126fae9a65628bd4a45e272f4100e10314bb95049b997f2e32d231ccfc525` |
+| 2 | `theorem` | [baseAdjacencyResolvent_ringHom_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/declarations/baseadjacencyresolvent-ringhom-map.md) | 33 | `result-track:a1aee8b010dc02d5d52e77a455292a48c2e97f429b62475566f3a205259a09e8` |
+| 3 | `theorem` | [baseAdjacencyResolvent_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/declarations/baseadjacencyresolvent-map.md) | 41 | `result-track:abb3cfc13c4e39f174029ed08b9911c6b79cc4ed869468daa3bf1a60ef80ba64` |
+| 4 | `theorem` | [actual_quartic_base_resolvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/declarations/actual-quartic-base-resolvent.md) | 51 | `result-track:6ed178c555aeb8156e5500e50350589a5edda1de6cce9dbb24a1a6f808866568` |
+| 5 | `theorem` | [actual_quartic_base_resolvent_order_independent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/declarations/actual-quartic-base-resolvent-order-independent.md) | 69 | `result-track:191b651f2366d52b642228240305b625116f4a3896c72722e92ba7b35594ba95` |
+| 6 | `theorem` | [actual_quartic_base_resolvent_in_splitting_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/declarations/actual-quartic-base-resolvent-in-splitting-field.md) | 77 | `result-track:29f4debe5958d02fa61abd1b54ec76632a7558eafadf67229dfd73afecb43a9a` |
+| 7 | `theorem` | [baseAdjacencyResolvent_map_tower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticBaseResolvent.lean/declarations/baseadjacencyresolvent-map-tower.md) | 91 | `result-track:d80d2930f5c995539d72cc936c0ad483b97d8712cd402f686371ea4b083e874c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

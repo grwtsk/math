@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/EngelSubalgebraNamespacedPublic.lean/index.md) · [Full source](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/EngelSubalgebraNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/EngelSubalgebraNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/EngelSubalgebraNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [engel](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/EngelSubalgebraNamespacedPublic.lean/declarations/engel.md) | 60 | `declaration-track:c0e9187f4087d3f60adb487acdc8bc8469f7c8ffc4392aa159d33653a3154fbe` |
-| 2 | `lemma` | [mem_engel_iff](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/EngelSubalgebraNamespacedPublic.lean/declarations/mem-engel-iff.md) | 74 | `result-track:bc3d549e5cc44cbb0853b3c543054305c18e2d288229272ebbb98c0c4c29a938` |
-| 3 | `lemma` | [self_mem_engel](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/EngelSubalgebraNamespacedPublic.lean/declarations/self-mem-engel.md) | 78 | `result-track:eaa27b5e80dd1c647ca288e1a9540bb91155de0ac0fa2453f55dfa7aeef09bf1` |
-| 4 | `lemma` | [engel_zero](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/EngelSubalgebraNamespacedPublic.lean/declarations/engel-zero.md) | 83 | `result-track:d1c2e236f62701ddcfbbfd5b8ba22993a0702812493360d0cf4c8a788d5fbcd5` |
-| 5 | `lemma` | [normalizer_engel](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/EngelSubalgebraNamespacedPublic.lean/declarations/normalizer-engel.md) | 95 | `result-track:001ff9cabba3e366903533c966a392ca24b276a161c7b0f4f3635a2832cd909c` |
-| 6 | `lemma` | [normalizer_eq_self_of_engel_le](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/EngelSubalgebraNamespacedPublic.lean/declarations/normalizer-eq-self-of-engel-le.md) | 114 | `result-track:b5a4ab12752edff4c8a8dfd70e78328d696c08b16aa07b15e8cb681c96d7b89b` |
-| 7 | `lemma` | [isNilpotent_of_forall_le_engel](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/EngelSubalgebraNamespacedPublic.lean/declarations/isnilpotent-of-forall-le-engel.md) | 157 | `result-track:1dcbc309f2404ea4212e23b277e002a322e13c1221f1bef3bd457aad15d8c83c` |
+| 1 | `def` | [engel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/EngelSubalgebraNamespacedPublic.lean/declarations/engel.md) | 60 | `declaration-track:c0e9187f4087d3f60adb487acdc8bc8469f7c8ffc4392aa159d33653a3154fbe` |
+| 2 | `lemma` | [mem_engel_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/EngelSubalgebraNamespacedPublic.lean/declarations/mem-engel-iff.md) | 74 | `result-track:bc3d549e5cc44cbb0853b3c543054305c18e2d288229272ebbb98c0c4c29a938` |
+| 3 | `lemma` | [self_mem_engel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/EngelSubalgebraNamespacedPublic.lean/declarations/self-mem-engel.md) | 78 | `result-track:eaa27b5e80dd1c647ca288e1a9540bb91155de0ac0fa2453f55dfa7aeef09bf1` |
+| 4 | `lemma` | [engel_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/EngelSubalgebraNamespacedPublic.lean/declarations/engel-zero.md) | 83 | `result-track:d1c2e236f62701ddcfbbfd5b8ba22993a0702812493360d0cf4c8a788d5fbcd5` |
+| 5 | `lemma` | [normalizer_engel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/EngelSubalgebraNamespacedPublic.lean/declarations/normalizer-engel.md) | 95 | `result-track:001ff9cabba3e366903533c966a392ca24b276a161c7b0f4f3635a2832cd909c` |
+| 6 | `lemma` | [normalizer_eq_self_of_engel_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/EngelSubalgebraNamespacedPublic.lean/declarations/normalizer-eq-self-of-engel-le.md) | 114 | `result-track:b5a4ab12752edff4c8a8dfd70e78328d696c08b16aa07b15e8cb681c96d7b89b` |
+| 7 | `lemma` | [isNilpotent_of_forall_le_engel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/EngelSubalgebraNamespacedPublic.lean/declarations/isnilpotent-of-forall-le-engel.md) | 157 | `result-track:1dcbc309f2404ea4212e23b277e002a322e13c1221f1bef3bd457aad15d8c83c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

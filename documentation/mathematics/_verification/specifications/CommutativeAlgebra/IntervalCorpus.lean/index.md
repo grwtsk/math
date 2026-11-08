@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IntervalCorpus.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IntervalCorpus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntervalCorpus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntervalCorpus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [source](../../../../CommutativeAlgebra/IntervalCorpus.lean/declarations/source.md) | 17 | `declaration-track:8d7303b7fab977633d400e017e6b783cf9354c6e2688970d673d01f03b20b425` |
-| 2 | `def` | [endpointDifference](../../../../CommutativeAlgebra/IntervalCorpus.lean/declarations/endpointdifference.md) | 42 | `declaration-track:9cbb7056e18f66b65d83cbc7ee1a113cb052db2b27cce1842392f40961f081b5` |
-| 3 | `def` | [endpointDifferenceSelf](../../../../CommutativeAlgebra/IntervalCorpus.lean/declarations/endpointdifferenceself.md) | 61 | `declaration-track:6d02f28acb9074de2c7c98a43d890ee0d5e96f64d60cccbe9c3e0a85c246d268` |
-| 4 | `def` | [endpointDifferenceComposition](../../../../CommutativeAlgebra/IntervalCorpus.lean/declarations/endpointdifferencecomposition.md) | 80 | `declaration-track:fe17623da75da250e50654ce11b368f3ee50f602ac475d28a222381f8ba10fd5` |
-| 5 | `def` | [genuineIntervalIntegral](../../../../CommutativeAlgebra/IntervalCorpus.lean/declarations/genuineintervalintegral.md) | 99 | `declaration-track:22526046b911c20b141a0137102decea5aba490756b94ac0de19598f128cb03d` |
-| 6 | `def` | [links](../../../../CommutativeAlgebra/IntervalCorpus.lean/declarations/links.md) | 118 | `declaration-track:21a1c0890cb643ce9f8c6d8a533cccff446b2cc06019d9f75cd87c71a3553aca` |
-| 7 | `theorem` | [links_length](../../../../CommutativeAlgebra/IntervalCorpus.lean/declarations/links-length.md) | 125 | `result-track:1be855832d912fa9055d8441e05cb9579db0880f5c75ecc84ae2f512b31f0aea` |
+| 1 | `def` | [source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntervalCorpus.lean/declarations/source.md) | 17 | `declaration-track:8d7303b7fab977633d400e017e6b783cf9354c6e2688970d673d01f03b20b425` |
+| 2 | `def` | [endpointDifference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntervalCorpus.lean/declarations/endpointdifference.md) | 42 | `declaration-track:9cbb7056e18f66b65d83cbc7ee1a113cb052db2b27cce1842392f40961f081b5` |
+| 3 | `def` | [endpointDifferenceSelf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntervalCorpus.lean/declarations/endpointdifferenceself.md) | 61 | `declaration-track:6d02f28acb9074de2c7c98a43d890ee0d5e96f64d60cccbe9c3e0a85c246d268` |
+| 4 | `def` | [endpointDifferenceComposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntervalCorpus.lean/declarations/endpointdifferencecomposition.md) | 80 | `declaration-track:fe17623da75da250e50654ce11b368f3ee50f602ac475d28a222381f8ba10fd5` |
+| 5 | `def` | [genuineIntervalIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntervalCorpus.lean/declarations/genuineintervalintegral.md) | 99 | `declaration-track:22526046b911c20b141a0137102decea5aba490756b94ac0de19598f128cb03d` |
+| 6 | `def` | [links](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntervalCorpus.lean/declarations/links.md) | 118 | `declaration-track:21a1c0890cb643ce9f8c6d8a533cccff446b2cc06019d9f75cd87c71a3553aca` |
+| 7 | `theorem` | [links_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntervalCorpus.lean/declarations/links-length.md) | 125 | `result-track:1be855832d912fa9055d8441e05cb9579db0880f5c75ecc84ae2f512b31f0aea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

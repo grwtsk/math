@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAuditNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAuditNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAuditNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAuditNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prime_lcm](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAuditNamespaced.lean/declarations/prime-lcm.md) | 18 | `result-track:2cb46a97bb56e24aa76eaae2f2116821867f6abdcd93fc5b0c5353228ac18988` |
-| 2 | `theorem` | [prime_moebius_lcm_identity](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAuditNamespaced.lean/declarations/prime-moebius-lcm-identity.md) | 26 | `result-track:2280641c9632a0892327b794696e93130c3d63b09343abb0254ca0b89b5e9125` |
-| 3 | `theorem` | [prime_moebius_lcm_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAuditNamespaced.lean/declarations/prime-moebius-lcm-le.md) | 72 | `result-track:ea5b080b0683728da581f125e286c65a9e15f77bfa679afdf163e90096fa6f9a` |
-| 4 | `theorem` | [prime_moebius_lcm_le_card](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAuditNamespaced.lean/declarations/prime-moebius-lcm-le-card.md) | 108 | `result-track:c21b7f589dee88641e5b9927fe76c0a697fb265155ecf8b126918fdfa665ed7e` |
+| 1 | `theorem` | [prime_lcm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAuditNamespaced.lean/declarations/prime-lcm.md) | 18 | `result-track:2cb46a97bb56e24aa76eaae2f2116821867f6abdcd93fc5b0c5353228ac18988` |
+| 2 | `theorem` | [prime_moebius_lcm_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAuditNamespaced.lean/declarations/prime-moebius-lcm-identity.md) | 26 | `result-track:2280641c9632a0892327b794696e93130c3d63b09343abb0254ca0b89b5e9125` |
+| 3 | `theorem` | [prime_moebius_lcm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAuditNamespaced.lean/declarations/prime-moebius-lcm-le.md) | 72 | `result-track:ea5b080b0683728da581f125e286c65a9e15f77bfa679afdf163e90096fa6f9a` |
+| 4 | `theorem` | [prime_moebius_lcm_le_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAuditNamespaced.lean/declarations/prime-moebius-lcm-le-card.md) | 108 | `result-track:c21b7f589dee88641e5b9927fe76c0a697fb265155ecf8b126918fdfa665ed7e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

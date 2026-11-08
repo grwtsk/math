@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/OldIntegralCaptureRegressionNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/OldIntegralCaptureRegressionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OldIntegralCaptureRegressionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OldIntegralCaptureRegressionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [oldUnparenthesized0](../../../../MeasureAndIntegration/OldIntegralCaptureRegressionNamespaced.lean/declarations/oldunparenthesized0.md) | 18 | `declaration-track:07ebc518b5d43e29315c985b7507a93b6716b6cd7bf016b7ed79516ecbe9f5d7` |
-| 2 | `theorem` | [oldUnparenthesized0_false_at_zero](../../../../MeasureAndIntegration/OldIntegralCaptureRegressionNamespaced.lean/declarations/oldunparenthesized0-false-at-zero.md) | 28 | `result-track:ad501751a5ea44d1eb8d305049e4ac2e31d3a1fe2ccd8b6a362b7206d3222a29` |
-| 3 | `def` | [oldUnparenthesized1](../../../../MeasureAndIntegration/OldIntegralCaptureRegressionNamespaced.lean/declarations/oldunparenthesized1.md) | 32 | `declaration-track:10af23f29ead18d967278f2c1404d38fd100d0bb3481372c26d7f426cd796a4a` |
-| 4 | `theorem` | [oldUnparenthesized1_false_at_zero](../../../../MeasureAndIntegration/OldIntegralCaptureRegressionNamespaced.lean/declarations/oldunparenthesized1-false-at-zero.md) | 43 | `result-track:b72ae4b4894f35ea10aadda5a47eb30178ecd9101168a11c0e99badb106ee512` |
-| 5 | `theorem` | [corrected_identity_valid_at_zero](../../../../MeasureAndIntegration/OldIntegralCaptureRegressionNamespaced.lean/declarations/corrected-identity-valid-at-zero.md) | 47 | `result-track:dab746c2ad2ab6cecb3fced5f8f75a9d23aab6e4b184dd03ad4a1d878360cc87` |
+| 1 | `def` | [oldUnparenthesized0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OldIntegralCaptureRegressionNamespaced.lean/declarations/oldunparenthesized0.md) | 18 | `declaration-track:07ebc518b5d43e29315c985b7507a93b6716b6cd7bf016b7ed79516ecbe9f5d7` |
+| 2 | `theorem` | [oldUnparenthesized0_false_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OldIntegralCaptureRegressionNamespaced.lean/declarations/oldunparenthesized0-false-at-zero.md) | 28 | `result-track:ad501751a5ea44d1eb8d305049e4ac2e31d3a1fe2ccd8b6a362b7206d3222a29` |
+| 3 | `def` | [oldUnparenthesized1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OldIntegralCaptureRegressionNamespaced.lean/declarations/oldunparenthesized1.md) | 32 | `declaration-track:10af23f29ead18d967278f2c1404d38fd100d0bb3481372c26d7f426cd796a4a` |
+| 4 | `theorem` | [oldUnparenthesized1_false_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OldIntegralCaptureRegressionNamespaced.lean/declarations/oldunparenthesized1-false-at-zero.md) | 43 | `result-track:b72ae4b4894f35ea10aadda5a47eb30178ecd9101168a11c0e99badb106ee512` |
+| 5 | `theorem` | [corrected_identity_valid_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OldIntegralCaptureRegressionNamespaced.lean/declarations/corrected-identity-valid-at-zero.md) | 47 | `result-track:dab746c2ad2ab6cecb3fced5f8f75a9d23aab6e4b184dd03ad4a1d878360cc87` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

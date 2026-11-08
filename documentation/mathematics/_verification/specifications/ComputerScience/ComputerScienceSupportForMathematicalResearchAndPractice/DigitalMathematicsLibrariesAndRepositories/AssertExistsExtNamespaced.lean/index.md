@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AssertExistsExtNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AssertExistsExtNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AssertExistsExtNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AssertExistsExtNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AssertExists](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AssertExistsExtNamespaced.lean/declarations/assertexists.md) | 30 | `declaration-track:6da88bfb19c54c2586de8cfa87ce8a822767a5ff08224f600ac35cab5864af11` |
-| 2 | `initialize` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AssertExistsExtNamespaced.lean/declarations/initialize.md) | 41 | `declaration-track:21b366621fabe3ab2c34cf2c6c8b4d47f04d1aebc7aba7f1a36cf435db2fa617` |
-| 3 | `def` | [addDeclEntry](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AssertExistsExtNamespaced.lean/declarations/adddeclentry.md) | 54 | `declaration-track:0c1555ccb6a091b524f0da7a9097ed6c9a873adced29d7fd6a03a52d579b81c8` |
-| 4 | `def` | [Lean.Environment.getSortedAssertExists](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AssertExistsExtNamespaced.lean/declarations/lean-environment-getsortedassertexists.md) | 63 | `declaration-track:f9c8818fc16f2248113c7ab6e7fd14a171e3b686f1e6fd0b0419fa0d652071a3` |
+| 1 | `structure` | [AssertExists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AssertExistsExtNamespaced.lean/declarations/assertexists.md) | 30 | `declaration-track:6da88bfb19c54c2586de8cfa87ce8a822767a5ff08224f600ac35cab5864af11` |
+| 2 | `initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AssertExistsExtNamespaced.lean/declarations/initialize.md) | 41 | `declaration-track:21b366621fabe3ab2c34cf2c6c8b4d47f04d1aebc7aba7f1a36cf435db2fa617` |
+| 3 | `def` | [addDeclEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AssertExistsExtNamespaced.lean/declarations/adddeclentry.md) | 54 | `declaration-track:0c1555ccb6a091b524f0da7a9097ed6c9a873adced29d7fd6a03a52d579b81c8` |
+| 4 | `def` | [Lean.Environment.getSortedAssertExists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/AssertExistsExtNamespaced.lean/declarations/lean-environment-getsortedassertexists.md) | 63 | `declaration-track:f9c8818fc16f2248113c7ab6e7fd14a171e3b686f1e6fd0b0419fa0d652071a3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/BoundaryLaplacianNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/BoundaryLaplacianNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundaryLaplacianNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundaryLaplacianNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BoundaryLaplacianEffect](../../../../FunctionalAnalysis/BoundaryLaplacianNamespaced.lean/declarations/boundarylaplacianeffect.md) | 26 | `declaration-track:14a44a550e78f72167e0771311e954d5e4248ba823ecaac860c2d973507fd5d5` |
-| 2 | `theorem` | [boundary_laplacian_significant](../../../../FunctionalAnalysis/BoundaryLaplacianNamespaced.lean/declarations/boundary-laplacian-significant.md) | 33 | `result-track:c2d21f1f7680b2968b9a301a9a34e720e10b29e3a2c50d945c7f817eefc3ecfd` |
+| 1 | `structure` | [BoundaryLaplacianEffect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundaryLaplacianNamespaced.lean/declarations/boundarylaplacianeffect.md) | 26 | `declaration-track:14a44a550e78f72167e0771311e954d5e4248ba823ecaac860c2d973507fd5d5` |
+| 2 | `theorem` | [boundary_laplacian_significant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundaryLaplacianNamespaced.lean/declarations/boundary-laplacian-significant.md) | 33 | `result-track:c2d21f1f7680b2968b9a301a9a34e720e10b29e3a2c50d945c7f817eefc3ecfd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

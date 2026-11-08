@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [_root_.IsSMulRegular.pi](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/declarations/root-issmulregular-pi.md) | 27 | `result-track:b83e919791048dc49e40ee6627a0ef18a5f9db4e2d5801c2980b22756c714cf9` |
-| 2 | `instance` | [smulWithZero](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/declarations/smulwithzero-source-edition-2.md) | 31 | `declaration-track:bbcf583fd77ca4fef984051e776a1a7c36445a00ebb2358adcf8885064f1d2a0` |
-| 3 | `instance` | [smulWithZero'](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/declarations/smulwithzero.md) | 37 | `declaration-track:52a94a551dfe9d27531bca8e1026112985e747a8029c9c227765f94c700d48b0` |
-| 4 | `instance` | [mulActionWithZero](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/declarations/mulactionwithzero-source-edition-2.md) | 43 | `declaration-track:d8a7cf5a5cfc4cdaca0601defcd530110593d4f357f92fbbbdda9a33cc9d7d83` |
-| 5 | `instance` | [mulActionWithZero'](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/declarations/mulactionwithzero.md) | 47 | `declaration-track:ceac87eb49b5a6674b3810af67254642bb53822e200723f2994c48e36e6ce42b` |
-| 6 | `instance` | [module](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/declarations/module.md) | 53 | `declaration-track:56b1e163cff0eec18aafbe2f5523781c9b50dd52169506e30af7b5e62d302b8b` |
-| 7 | `instance` | [Function.module](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/declarations/function-module.md) | 68 | `declaration-track:3c2d6075a0f5fc559a217732d14432803b61507b94c75b8d54be3611b8f680f0` |
-| 8 | `instance` | [module'](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/declarations/module-source-edition-2.md) | 74 | `declaration-track:ac0dbff6979b1669588ab31abdc76e8900ee0b746f7e211e07598755f4f592a1` |
+| 1 | `theorem` | [_root_.IsSMulRegular.pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/declarations/root-issmulregular-pi.md) | 27 | `result-track:b83e919791048dc49e40ee6627a0ef18a5f9db4e2d5801c2980b22756c714cf9` |
+| 2 | `instance` | [smulWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/declarations/smulwithzero-source-edition-2.md) | 31 | `declaration-track:bbcf583fd77ca4fef984051e776a1a7c36445a00ebb2358adcf8885064f1d2a0` |
+| 3 | `instance` | [smulWithZero'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/declarations/smulwithzero.md) | 37 | `declaration-track:52a94a551dfe9d27531bca8e1026112985e747a8029c9c227765f94c700d48b0` |
+| 4 | `instance` | [mulActionWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/declarations/mulactionwithzero-source-edition-2.md) | 43 | `declaration-track:d8a7cf5a5cfc4cdaca0601defcd530110593d4f357f92fbbbdda9a33cc9d7d83` |
+| 5 | `instance` | [mulActionWithZero'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/declarations/mulactionwithzero.md) | 47 | `declaration-track:ceac87eb49b5a6674b3810af67254642bb53822e200723f2994c48e36e6ce42b` |
+| 6 | `instance` | [module](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/declarations/module.md) | 53 | `declaration-track:56b1e163cff0eec18aafbe2f5523781c9b50dd52169506e30af7b5e62d302b8b` |
+| 7 | `instance` | [Function.module](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/declarations/function-module.md) | 68 | `declaration-track:3c2d6075a0f5fc559a217732d14432803b61507b94c75b8d54be3611b8f680f0` |
+| 8 | `instance` | [module'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePi.lean/declarations/module-source-edition-2.md) | 74 | `declaration-track:ac0dbff6979b1669588ab31abdc76e8900ee0b746f7e211e07598755f4f592a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

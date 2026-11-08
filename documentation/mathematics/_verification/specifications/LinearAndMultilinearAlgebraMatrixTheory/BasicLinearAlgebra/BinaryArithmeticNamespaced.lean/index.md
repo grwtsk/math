@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryArithmeticNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryArithmeticNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryArithmeticNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryArithmeticNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [unary_encoding_decodes](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryArithmeticNamespaced.lean/declarations/unary-encoding-decodes.md) | 26 | `result-track:e0a96e6d2c54f4ece8c03eae7e87480c4324dd0b2ad3d3fad6c1373303059c8f` |
-| 2 | `theorem` | [unary_encoding_matrix_rows](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryArithmeticNamespaced.lean/declarations/unary-encoding-matrix-rows.md) | 31 | `result-track:0a8938284647ed9c1807e18b4370835f22716643bbc6586e18255aaef94f55ce` |
-| 3 | `theorem` | [unary_encoding_matrix_cols](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryArithmeticNamespaced.lean/declarations/unary-encoding-matrix-cols.md) | 36 | `result-track:7199fc9b46cf01f92cc45d099f038ee35235164e26c0c2590d095deb2c317c49` |
+| 1 | `theorem` | [unary_encoding_decodes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryArithmeticNamespaced.lean/declarations/unary-encoding-decodes.md) | 26 | `result-track:e0a96e6d2c54f4ece8c03eae7e87480c4324dd0b2ad3d3fad6c1373303059c8f` |
+| 2 | `theorem` | [unary_encoding_matrix_rows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryArithmeticNamespaced.lean/declarations/unary-encoding-matrix-rows.md) | 31 | `result-track:0a8938284647ed9c1807e18b4370835f22716643bbc6586e18255aaef94f55ce` |
+| 3 | `theorem` | [unary_encoding_matrix_cols](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryArithmeticNamespaced.lean/declarations/unary-encoding-matrix-cols.md) | 36 | `result-track:7199fc9b46cf01f92cc45d099f038ee35235164e26c0c2590d095deb2c317c49` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

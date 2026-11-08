@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/KrullDimensionFieldNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/KrullDimensionFieldNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/KrullDimensionFieldNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/KrullDimensionFieldNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ringKrullDim_eq_zero_of_field](../../../../CommutativeAlgebra/KrullDimensionFieldNamespaced.lean/declarations/ringkrulldim-eq-zero-of-field.md) | 25 | `result-track:2eb47911f670cc49083c8ee94205e111a7e6a760d3509479f7a6e4a1edde8f05` |
-| 2 | `theorem` | [ringKrullDim_eq_zero_of_isField](../../../../CommutativeAlgebra/KrullDimensionFieldNamespaced.lean/declarations/ringkrulldim-eq-zero-of-isfield.md) | 28 | `result-track:4687cad41b26b34528dcdd5119e609c8fbcceb607c0e7a56b2959c52d0d3528d` |
+| 1 | `theorem` | [ringKrullDim_eq_zero_of_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/KrullDimensionFieldNamespaced.lean/declarations/ringkrulldim-eq-zero-of-field.md) | 25 | `result-track:2eb47911f670cc49083c8ee94205e111a7e6a760d3509479f7a6e4a1edde8f05` |
+| 2 | `theorem` | [ringKrullDim_eq_zero_of_isField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/KrullDimensionFieldNamespaced.lean/declarations/ringkrulldim-eq-zero-of-isfield.md) | 28 | `result-track:4687cad41b26b34528dcdd5119e609c8fbcceb607c0e7a56b2959c52d0d3528d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

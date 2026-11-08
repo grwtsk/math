@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportDifferenceNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportDifferenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportDifferenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportDifferenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ArithmeticTraceCorrespondence.transportDifference](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportDifferenceNamespaced.lean/declarations/arithmetictracecorrespondence-transportdifference.md) | 22 | `declaration-track:bb9e84fa1ae0556ca25af0631de09d1647a0dfae901ba822b57323a94084c6a0` |
-| 2 | `def` | [ArithmeticTraceCorrespondence.arithmeticDisplacement](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportDifferenceNamespaced.lean/declarations/arithmetictracecorrespondence-arithmeticdisplacement.md) | 47 | `declaration-track:0818679e33ff8fdef8f8a9d369654201406e91c8bbb06a1164ec31fa5d5d5b5e` |
-| 3 | `theorem` | [arithmeticDisplacement_eq](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportDifferenceNamespaced.lean/declarations/arithmeticdisplacement-eq.md) | 69 | `result-track:7591ac0aebe56cb1edc4f506a008d5b74dc18a4fb6f2568996d28d11e6a01f41` |
+| 1 | `def` | [ArithmeticTraceCorrespondence.transportDifference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportDifferenceNamespaced.lean/declarations/arithmetictracecorrespondence-transportdifference.md) | 22 | `declaration-track:bb9e84fa1ae0556ca25af0631de09d1647a0dfae901ba822b57323a94084c6a0` |
+| 2 | `def` | [ArithmeticTraceCorrespondence.arithmeticDisplacement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportDifferenceNamespaced.lean/declarations/arithmetictracecorrespondence-arithmeticdisplacement.md) | 47 | `declaration-track:0818679e33ff8fdef8f8a9d369654201406e91c8bbb06a1164ec31fa5d5d5b5e` |
+| 3 | `theorem` | [arithmeticDisplacement_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportDifferenceNamespaced.lean/declarations/arithmeticdisplacement-eq.md) | 69 | `result-track:7591ac0aebe56cb1edc4f506a008d5b74dc18a4fb6f2568996d28d11e6a01f41` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

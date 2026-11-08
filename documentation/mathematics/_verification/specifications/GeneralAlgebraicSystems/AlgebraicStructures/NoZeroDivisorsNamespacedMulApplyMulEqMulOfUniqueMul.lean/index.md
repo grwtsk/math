@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsNamespacedMulApplyMulEqMulOfUniqueMul.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsNamespacedMulApplyMulEqMulOfUniqueMul.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsNamespacedMulApplyMulEqMulOfUniqueMul.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsNamespacedMulApplyMulEqMulOfUniqueMul.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mul_apply_mul_eq_mul_of_uniqueMul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsNamespacedMulApplyMulEqMulOfUniqueMul.lean/declarations/mul-apply-mul-eq-mul-of-uniquemul.md) | 77 | `result-track:52cfc96aa5311d134fbd8e73b5d7030d71eddb84b63c9bb36709f4ec3f70f71d` |
-| 2 | `instance` | [instNoZeroDivisorsOfUniqueProds](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsNamespacedMulApplyMulEqMulOfUniqueMul.lean/declarations/instnozerodivisorsofuniqueprods.md) | 90 | `declaration-track:26d2f53a0d8bd93e51f256af193dc80d742573406fd8cc6fd3a13bd971d9fa8b` |
-| 3 | `theorem` | [mul_apply_add_eq_mul_of_uniqueAdd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsNamespacedMulApplyMulEqMulOfUniqueMul.lean/declarations/mul-apply-add-eq-mul-of-uniqueadd.md) | 106 | `result-track:27ad826036ac7f8d729d89dce32834ade6920d9d72642778354bf9f3787392dc` |
-| 4 | `instance` | [instNoZeroDivisorsOfUniqueSums](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsNamespacedMulApplyMulEqMulOfUniqueMul.lean/declarations/instnozerodivisorsofuniquesums.md) | 111 | `declaration-track:86ece9ec4603e0da80eff72fc208a3ca11bb119acfccd36df62623008c04e323` |
-| 5 | `instance` | [instIsDomainOfUniqueProds](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsNamespacedMulApplyMulEqMulOfUniqueMul.lean/declarations/instisdomainofuniqueprods.md) | 122 | `declaration-track:a84a05481ef71a4bd9486057c2022f97171cc8c4a20281bfa08fa7fc9eb4fc16` |
-| 6 | `instance` | [instIsDomainOfUniqueSums](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsNamespacedMulApplyMulEqMulOfUniqueMul.lean/declarations/instisdomainofuniquesums.md) | 129 | `declaration-track:87b35c9625e0e23c37acf6d9f8fb0dc098f21e285d78ebdbab4ac1d9a84d93c0` |
+| 1 | `theorem` | [mul_apply_mul_eq_mul_of_uniqueMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsNamespacedMulApplyMulEqMulOfUniqueMul.lean/declarations/mul-apply-mul-eq-mul-of-uniquemul.md) | 77 | `result-track:52cfc96aa5311d134fbd8e73b5d7030d71eddb84b63c9bb36709f4ec3f70f71d` |
+| 2 | `instance` | [instNoZeroDivisorsOfUniqueProds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsNamespacedMulApplyMulEqMulOfUniqueMul.lean/declarations/instnozerodivisorsofuniqueprods.md) | 90 | `declaration-track:26d2f53a0d8bd93e51f256af193dc80d742573406fd8cc6fd3a13bd971d9fa8b` |
+| 3 | `theorem` | [mul_apply_add_eq_mul_of_uniqueAdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsNamespacedMulApplyMulEqMulOfUniqueMul.lean/declarations/mul-apply-add-eq-mul-of-uniqueadd.md) | 106 | `result-track:27ad826036ac7f8d729d89dce32834ade6920d9d72642778354bf9f3787392dc` |
+| 4 | `instance` | [instNoZeroDivisorsOfUniqueSums](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsNamespacedMulApplyMulEqMulOfUniqueMul.lean/declarations/instnozerodivisorsofuniquesums.md) | 111 | `declaration-track:86ece9ec4603e0da80eff72fc208a3ca11bb119acfccd36df62623008c04e323` |
+| 5 | `instance` | [instIsDomainOfUniqueProds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsNamespacedMulApplyMulEqMulOfUniqueMul.lean/declarations/instisdomainofuniqueprods.md) | 122 | `declaration-track:a84a05481ef71a4bd9486057c2022f97171cc8c4a20281bfa08fa7fc9eb4fc16` |
+| 6 | `instance` | [instIsDomainOfUniqueSums](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsNamespacedMulApplyMulEqMulOfUniqueMul.lean/declarations/instisdomainofuniquesums.md) | 129 | `declaration-track:87b35c9625e0e23c37acf6d9f8fb0dc098f21e285d78ebdbab4ac1d9a84d93c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

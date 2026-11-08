@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CoordinateSystemVersion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/declarations/coordinatesystemversion.md) | 16 | `declaration-track:4af27a915d3303118bc677878f3854c724920e91ac3f9a83d0a9a2953fe1b595` |
-| 2 | `structure` | [CoordinateDenotation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/declarations/coordinatedenotation.md) | 22 | `declaration-track:763681c739364c2774e5ee84bcb6779b2f20d1e53c99973a73adc912a2c4ac6e` |
-| 3 | `structure` | [BinaryInterpretation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/declarations/binaryinterpretation.md) | 30 | `declaration-track:2c9cd0d31643c5da0b6ab6bfee033d63f8cd034c14e7a7fd48622bda15ebd8b7` |
-| 4 | `structure` | [BinaryConstraint](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/declarations/binaryconstraint.md) | 40 | `declaration-track:66f2c43ce3d951d7376992fafb47c3278ef53cc7bf5a1c7521c08bde2e642933` |
-| 5 | `structure` | [InterpretationBridge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/declarations/interpretationbridge.md) | 45 | `declaration-track:3d37bb5bb4e31126eeacb1c857ff9494ede34bd91d7ea4db9a3888c96ea9360d` |
-| 6 | `structure` | [InterpretationReflection](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/declarations/interpretationreflection.md) | 69 | `declaration-track:346caaaf6bd18580943885d8c6fc58f36eb4b8c4c5218e6a26b9df51d8e8ea24` |
-| 7 | `structure` | [ConstraintEvidence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/declarations/constraintevidence.md) | 84 | `declaration-track:dd7a970f448a8662342a5317db1c7e9fe1222da485ff550f6ea2e110a41e8bd5` |
-| 8 | `structure` | [InterpretationEvent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/declarations/interpretationevent.md) | 99 | `declaration-track:a6fccf04fa0beed8d81f48711c4c7782fc1c01e4c9ef7097b5a86929a30780e6` |
+| 1 | `structure` | [CoordinateSystemVersion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/declarations/coordinatesystemversion.md) | 16 | `declaration-track:4af27a915d3303118bc677878f3854c724920e91ac3f9a83d0a9a2953fe1b595` |
+| 2 | `structure` | [CoordinateDenotation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/declarations/coordinatedenotation.md) | 22 | `declaration-track:763681c739364c2774e5ee84bcb6779b2f20d1e53c99973a73adc912a2c4ac6e` |
+| 3 | `structure` | [BinaryInterpretation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/declarations/binaryinterpretation.md) | 30 | `declaration-track:2c9cd0d31643c5da0b6ab6bfee033d63f8cd034c14e7a7fd48622bda15ebd8b7` |
+| 4 | `structure` | [BinaryConstraint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/declarations/binaryconstraint.md) | 40 | `declaration-track:66f2c43ce3d951d7376992fafb47c3278ef53cc7bf5a1c7521c08bde2e642933` |
+| 5 | `structure` | [InterpretationBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/declarations/interpretationbridge.md) | 45 | `declaration-track:3d37bb5bb4e31126eeacb1c857ff9494ede34bd91d7ea4db9a3888c96ea9360d` |
+| 6 | `structure` | [InterpretationReflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/declarations/interpretationreflection.md) | 69 | `declaration-track:346caaaf6bd18580943885d8c6fc58f36eb4b8c4c5218e6a26b9df51d8e8ea24` |
+| 7 | `structure` | [ConstraintEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/declarations/constraintevidence.md) | 84 | `declaration-track:dd7a970f448a8662342a5317db1c7e9fe1222da485ff550f6ea2e110a41e8bd5` |
+| 8 | `structure` | [InterpretationEvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoordinateNamespaced.lean/declarations/interpretationevent.md) | 99 | `declaration-track:a6fccf04fa0beed8d81f48711c4c7782fc1c01e4c9ef7097b5a86929a30780e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

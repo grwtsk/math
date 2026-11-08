@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualRelativeKernelMomentsNamespacedEdition3.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualRelativeKernelMomentsNamespacedEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRelativeKernelMomentsNamespacedEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRelativeKernelMomentsNamespacedEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mellin_eq_closed](../../../../MeasureAndIntegration/SourceActualRelativeKernelMomentsNamespacedEdition3.lean/declarations/mellin-eq-closed.md) | 33 | `result-track:52b5108dfb2c5251ddfdce1e267288f88f62fb4636631e019d3a300ecec794a6` |
-| 2 | `theorem` | [actualInitialPrimeMellin_hasDerivAt_closed_first](../../../../MeasureAndIntegration/SourceActualRelativeKernelMomentsNamespacedEdition3.lean/declarations/actualinitialprimemellin-hasderivat-closed-first.md) | 49 | `result-track:b139b09d00f9c664cd9496452aa43d4cc1b71f0092f63df4482b618575a0373e` |
-| 3 | `theorem` | [actualCorrelation_closed_first_moment_zero](../../../../MeasureAndIntegration/SourceActualRelativeKernelMomentsNamespacedEdition3.lean/declarations/actualcorrelation-closed-first-moment-zero.md) | 120 | `result-track:0a015bd38e25fa40c0326f55c935c8e7e25a751d2ea153e843d0001b6d24f32e` |
-| 4 | `theorem` | [actualCorrelation_positive_first_eq_negative](../../../../MeasureAndIntegration/SourceActualRelativeKernelMomentsNamespacedEdition3.lean/declarations/actualcorrelation-positive-first-eq-negative.md) | 146 | `result-track:044e3f6e0a329959f141c03c2ce783a07adcb837444c67ef1b986a5752605a2f` |
+| 1 | `theorem` | [mellin_eq_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRelativeKernelMomentsNamespacedEdition3.lean/declarations/mellin-eq-closed.md) | 33 | `result-track:52b5108dfb2c5251ddfdce1e267288f88f62fb4636631e019d3a300ecec794a6` |
+| 2 | `theorem` | [actualInitialPrimeMellin_hasDerivAt_closed_first](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRelativeKernelMomentsNamespacedEdition3.lean/declarations/actualinitialprimemellin-hasderivat-closed-first.md) | 49 | `result-track:b139b09d00f9c664cd9496452aa43d4cc1b71f0092f63df4482b618575a0373e` |
+| 3 | `theorem` | [actualCorrelation_closed_first_moment_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRelativeKernelMomentsNamespacedEdition3.lean/declarations/actualcorrelation-closed-first-moment-zero.md) | 120 | `result-track:0a015bd38e25fa40c0326f55c935c8e7e25a751d2ea153e843d0001b6d24f32e` |
+| 4 | `theorem` | [actualCorrelation_positive_first_eq_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRelativeKernelMomentsNamespacedEdition3.lean/declarations/actualcorrelation-positive-first-eq-negative.md) | 146 | `result-track:044e3f6e0a329959f141c03c2ce783a07adcb837444c67ef1b986a5752605a2f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

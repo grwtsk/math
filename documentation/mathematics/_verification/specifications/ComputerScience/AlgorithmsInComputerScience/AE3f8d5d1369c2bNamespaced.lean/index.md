@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AE3f8d5d1369c2bNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AE3f8d5d1369c2bNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AE3f8d5d1369c2bNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AE3f8d5d1369c2bNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -73,7 +73,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [EnvironmentExtraction](../../../../../ComputerScience/AlgorithmsInComputerScience/AE3f8d5d1369c2bNamespaced.lean/declarations/environmentextraction.md) | 34 | `declaration-track:67df1aef78b3f111f2d211944dfcc18f193a9c87bbc720ed942f8f509dd70b20` |
+| 1 | `structure` | [EnvironmentExtraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AE3f8d5d1369c2bNamespaced.lean/declarations/environmentextraction.md) | 34 | `declaration-track:67df1aef78b3f111f2d211944dfcc18f193a9c87bbc720ed942f8f509dd70b20` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

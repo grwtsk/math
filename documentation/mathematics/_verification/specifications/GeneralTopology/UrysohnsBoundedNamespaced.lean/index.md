@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/UrysohnsBoundedNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/UrysohnsBoundedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UrysohnsBoundedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UrysohnsBoundedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_bounded_zero_one_of_closed](../../../../GeneralTopology/UrysohnsBoundedNamespaced.lean/declarations/exists-bounded-zero-one-of-closed.md) | 41 | `result-track:ba8a7da239c36c48068e9102559737720ddb0f0e6cfe6aa914507eef598fbb8f` |
-| 2 | `theorem` | [exists_bounded_mem_Icc_of_closed_of_le](../../../../GeneralTopology/UrysohnsBoundedNamespaced.lean/declarations/exists-bounded-mem-icc-of-closed-of-le.md) | 54 | `result-track:f3561272e78beacc676f59133c5a036b9b46f7a37b632096683d6b3609754db7` |
+| 1 | `theorem` | [exists_bounded_zero_one_of_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UrysohnsBoundedNamespaced.lean/declarations/exists-bounded-zero-one-of-closed.md) | 41 | `result-track:ba8a7da239c36c48068e9102559737720ddb0f0e6cfe6aa914507eef598fbb8f` |
+| 2 | `theorem` | [exists_bounded_mem_Icc_of_closed_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UrysohnsBoundedNamespaced.lean/declarations/exists-bounded-mem-icc-of-closed-of-le.md) | 54 | `result-track:f3561272e78beacc676f59133c5a036b9b46f7a37b632096683d6b3609754db7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianDyadicSummation.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianDyadicSummation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianDyadicSummation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianDyadicSummation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms`](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianWindowSeminorms.lean/index.md) — import line 12; pinned internal source present.
-- [`GRWTSK.Analysis.Series.DyadicKernel`](../../../../RealFunctions/SeriesDyadicKernel.lean/index.md) — import line 13; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianWindowSeminorms.lean/index.md) — import line 12; pinned internal source present.
+- [`GRWTSK.Analysis.Series.DyadicKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SeriesDyadicKernel.lean/index.md) — import line 13; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [gaussianDyadicSchwartz_polynomial_decay](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianDyadicSummation.lean/declarations/gaussiandyadicschwartz-polynomial-decay.md) | 22 | `result-track:48654d1711612a7586375dd2a44cf1088a845e995dd4d668e64b81dc549d0887` |
-| 2 | `theorem` | [gaussianDyadicSchwartz_summed](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianDyadicSummation.lean/declarations/gaussiandyadicschwartz-summed.md) | 56 | `result-track:03037899d71a799bf44f5d66a4bb746c2186ef0fbc7e8c5e34a0e49059c92ce3` |
-| 3 | `theorem` | [gaussianDyadicProfile_values_summed](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianDyadicSummation.lean/declarations/gaussiandyadicprofile-values-summed.md) | 85 | `result-track:64ba64c123a36473f7619e74bb26313e429f381bc74c6e4272dedb32d249fa5c` |
+| 1 | `lemma` | [gaussianDyadicSchwartz_polynomial_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianDyadicSummation.lean/declarations/gaussiandyadicschwartz-polynomial-decay.md) | 22 | `result-track:48654d1711612a7586375dd2a44cf1088a845e995dd4d668e64b81dc549d0887` |
+| 2 | `theorem` | [gaussianDyadicSchwartz_summed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianDyadicSummation.lean/declarations/gaussiandyadicschwartz-summed.md) | 56 | `result-track:03037899d71a799bf44f5d66a4bb746c2186ef0fbc7e8c5e34a0e49059c92ce3` |
+| 3 | `theorem` | [gaussianDyadicProfile_values_summed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianDyadicSummation.lean/declarations/gaussiandyadicprofile-values-summed.md) | 85 | `result-track:64ba64c123a36473f7619e74bb26313e429f381bc74c6e4272dedb32d249fa5c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

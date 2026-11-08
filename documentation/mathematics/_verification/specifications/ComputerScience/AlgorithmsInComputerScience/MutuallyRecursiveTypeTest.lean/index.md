@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTest.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTest.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTest.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTest.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [NatTree](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTest.lean/declarations/nattree.md) | 42 | `declaration-track:d87eab8f938d32d382de4970a74892af84dc5e5b4ca1d10595c1ff62fc64fe09` |
-| 2 | `structure` | [Node](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTest.lean/declarations/node.md) | 48 | `declaration-track:21daaff2b6e607af072d8492d1addde477a664f3263432bc356492eeb58366df` |
-| 3 | `def` | [search](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTest.lean/declarations/search.md) | 134 | `declaration-track:901efcd6ae5d65f1b9b33e423de26bc1cfe4d3457f90429aec8819a52c5b272b` |
-| 4 | `def` | [shrinkNatTree](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTest.lean/declarations/shrinknattree.md) | 142 | `declaration-track:03eb341dd648cdebf36b5fcb531aee26dac7cb92241e08389029b7138ca052b7` |
-| 5 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTest.lean/declarations/instance.md) | 152 | `declaration-track:b13d5e83d72b68d1479ead85dd253b21ed0acbb9edd3c3355574b027d27195df` |
+| 1 | `inductive` | [NatTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTest.lean/declarations/nattree.md) | 42 | `declaration-track:d87eab8f938d32d382de4970a74892af84dc5e5b4ca1d10595c1ff62fc64fe09` |
+| 2 | `structure` | [Node](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTest.lean/declarations/node.md) | 48 | `declaration-track:21daaff2b6e607af072d8492d1addde477a664f3263432bc356492eeb58366df` |
+| 3 | `def` | [search](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTest.lean/declarations/search.md) | 134 | `declaration-track:901efcd6ae5d65f1b9b33e423de26bc1cfe4d3457f90429aec8819a52c5b272b` |
+| 4 | `def` | [shrinkNatTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTest.lean/declarations/shrinknattree.md) | 142 | `declaration-track:03eb341dd648cdebf36b5fcb531aee26dac7cb92241e08389029b7138ca052b7` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTest.lean/declarations/instance.md) | 152 | `declaration-track:b13d5e83d72b68d1479ead85dd253b21ed0acbb9edd3c3355574b027d27195df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

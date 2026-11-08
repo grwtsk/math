@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SeparableNotSecondCountableNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/SeparableNotSecondCountableNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparableNotSecondCountableNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparableNotSecondCountableNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instTopologicalSpace](../../../../GeneralTopology/SeparableNotSecondCountableNamespacedPublic.lean/declarations/insttopologicalspace.md) | 35 | `declaration-track:9b9ef4b523160a2079a285e704b3e8e3cc28825ba8d5aba187ee774a34c6d879` |
-| 2 | `instance` | [instOrderTopology](../../../../GeneralTopology/SeparableNotSecondCountableNamespacedPublic.lean/declarations/instordertopology.md) | 36 | `declaration-track:c3c8b69bf1be9af42a5aa4313115c2bf7d2a791708bd497af5e3ac0e7553fd6c` |
-| 3 | `instance` | [instLinearOrder](../../../../GeneralTopology/SeparableNotSecondCountableNamespacedPublic.lean/declarations/instlinearorder.md) | 37 | `declaration-track:570770068276d104a37ddff194eef4560672c27aef24ef936f432b487155e6eb` |
-| 4 | `instance` | [instSeparableSpace](../../../../GeneralTopology/SeparableNotSecondCountableNamespacedPublic.lean/declarations/instseparablespace.md) | 39 | `declaration-track:ec7aecb29067a9c9ded8e7c72c0312c6dac4a355e434688cb7b033b501c9476d` |
-| 5 | `theorem` | [not_secondCountableTopology](../../../../GeneralTopology/SeparableNotSecondCountableNamespacedPublic.lean/declarations/not-secondcountabletopology.md) | 56 | `result-track:58e8dea87e204d2a9f756c5a5c61f8959f967a3f26c3563f1631fe16c2ea192e` |
+| 1 | `instance` | [instTopologicalSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparableNotSecondCountableNamespacedPublic.lean/declarations/insttopologicalspace.md) | 35 | `declaration-track:9b9ef4b523160a2079a285e704b3e8e3cc28825ba8d5aba187ee774a34c6d879` |
+| 2 | `instance` | [instOrderTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparableNotSecondCountableNamespacedPublic.lean/declarations/instordertopology.md) | 36 | `declaration-track:c3c8b69bf1be9af42a5aa4313115c2bf7d2a791708bd497af5e3ac0e7553fd6c` |
+| 3 | `instance` | [instLinearOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparableNotSecondCountableNamespacedPublic.lean/declarations/instlinearorder.md) | 37 | `declaration-track:570770068276d104a37ddff194eef4560672c27aef24ef936f432b487155e6eb` |
+| 4 | `instance` | [instSeparableSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparableNotSecondCountableNamespacedPublic.lean/declarations/instseparablespace.md) | 39 | `declaration-track:ec7aecb29067a9c9ded8e7c72c0312c6dac4a355e434688cb7b033b501c9476d` |
+| 5 | `theorem` | [not_secondCountableTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparableNotSecondCountableNamespacedPublic.lean/declarations/not-secondcountabletopology.md) | 56 | `result-track:58e8dea87e204d2a9f756c5a5c61f8959f967a3f26c3563f1631fe16c2ea192e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

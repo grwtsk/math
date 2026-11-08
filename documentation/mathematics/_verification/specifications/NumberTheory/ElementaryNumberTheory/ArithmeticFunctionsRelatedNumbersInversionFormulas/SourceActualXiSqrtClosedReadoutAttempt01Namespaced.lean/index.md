@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualXiSqrtClosedReadoutAttempt01Namespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualXiSqrtClosedReadoutAttempt01Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualXiSqrtClosedReadoutAttempt01Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualXiSqrtClosedReadoutAttempt01Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sqrtBaselinePrimitive](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualXiSqrtClosedReadoutAttempt01Namespaced.lean/declarations/sqrtbaselineprimitive.md) | 26 | `declaration-track:636d67263c7e30f149b6a95865f1b005efe4c8a9d26f3df6fb658939cb7db460` |
-| 2 | `theorem` | [sqrtBaselinePrimitive_hasDerivAt](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualXiSqrtClosedReadoutAttempt01Namespaced.lean/declarations/sqrtbaselineprimitive-hasderivat.md) | 29 | `result-track:c0fd577a2f77c51c23f7aa9ead2c7aaa794bdf6df84728ae59e104d2c9a7bb44` |
-| 3 | `theorem` | [actualXiLogPrimitive_log_eq_closed_atoms](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualXiSqrtClosedReadoutAttempt01Namespaced.lean/declarations/actualxilogprimitive-log-eq-closed-atoms.md) | 39 | `result-track:486903abb8908b12b9981cd9edcb8a61f2e558b26dbcb74146774a62f9d37ae6` |
+| 1 | `def` | [sqrtBaselinePrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualXiSqrtClosedReadoutAttempt01Namespaced.lean/declarations/sqrtbaselineprimitive.md) | 26 | `declaration-track:636d67263c7e30f149b6a95865f1b005efe4c8a9d26f3df6fb658939cb7db460` |
+| 2 | `theorem` | [sqrtBaselinePrimitive_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualXiSqrtClosedReadoutAttempt01Namespaced.lean/declarations/sqrtbaselineprimitive-hasderivat.md) | 29 | `result-track:c0fd577a2f77c51c23f7aa9ead2c7aaa794bdf6df84728ae59e104d2c9a7bb44` |
+| 3 | `theorem` | [actualXiLogPrimitive_log_eq_closed_atoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualXiSqrtClosedReadoutAttempt01Namespaced.lean/declarations/actualxilogprimitive-log-eq-closed-atoms.md) | 39 | `result-track:486903abb8908b12b9981cd9edcb8a61f2e558b26dbcb74146774a62f9d37ae6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

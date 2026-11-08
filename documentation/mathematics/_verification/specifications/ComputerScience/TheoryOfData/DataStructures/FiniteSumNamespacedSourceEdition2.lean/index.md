@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteSumNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteSumNamespacedSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteSumNamespacedSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteSumNamespacedSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteSumNamespacedSourceEdition2.lean/declarations/instance.md) | 24 | `declaration-track:7b11a30a814f3ed479472e00e19eb7a8ccd09aa5b8d1e0b556de117d3a72d0b1` |
-| 2 | `theorem` | [sum_left](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteSumNamespacedSourceEdition2.lean/declarations/sum-left.md) | 29 | `result-track:74acceb88759da160294d138ae38b1547c8e3bce033cae169702ba80d8d31810` |
-| 3 | `theorem` | [sum_right](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteSumNamespacedSourceEdition2.lean/declarations/sum-right.md) | 32 | `result-track:074ffa012194c4a8f36efff3079c74771607188c1d6f7155e15f762f62ad30fd` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteSumNamespacedSourceEdition2.lean/declarations/instance-source-edition-2.md) | 35 | `declaration-track:7cdc0058143841d2bd2da1587ffce6e3d06c60d5eb13824a999dbd12a8e691a5` |
-| 5 | `theorem` | [psum_left](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteSumNamespacedSourceEdition2.lean/declarations/psum-left.md) | 38 | `result-track:27f1eb8d723011dc2182180169bae15f57bcaa43849072d557ce2fead6a2b299` |
-| 6 | `theorem` | [psum_right](../../../../../../ComputerScience/TheoryOfData/DataStructures/FiniteSumNamespacedSourceEdition2.lean/declarations/psum-right.md) | 41 | `result-track:875a4354b8eb356f2adb9bdc24aa883c09e8756d42dcc2b8e247851f035943de` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteSumNamespacedSourceEdition2.lean/declarations/instance.md) | 24 | `declaration-track:7b11a30a814f3ed479472e00e19eb7a8ccd09aa5b8d1e0b556de117d3a72d0b1` |
+| 2 | `theorem` | [sum_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteSumNamespacedSourceEdition2.lean/declarations/sum-left.md) | 29 | `result-track:74acceb88759da160294d138ae38b1547c8e3bce033cae169702ba80d8d31810` |
+| 3 | `theorem` | [sum_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteSumNamespacedSourceEdition2.lean/declarations/sum-right.md) | 32 | `result-track:074ffa012194c4a8f36efff3079c74771607188c1d6f7155e15f762f62ad30fd` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteSumNamespacedSourceEdition2.lean/declarations/instance-source-edition-2.md) | 35 | `declaration-track:7cdc0058143841d2bd2da1587ffce6e3d06c60d5eb13824a999dbd12a8e691a5` |
+| 5 | `theorem` | [psum_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteSumNamespacedSourceEdition2.lean/declarations/psum-left.md) | 38 | `result-track:27f1eb8d723011dc2182180169bae15f57bcaa43849072d557ce2fead6a2b299` |
+| 6 | `theorem` | [psum_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FiniteSumNamespacedSourceEdition2.lean/declarations/psum-right.md) | 41 | `result-track:875a4354b8eb356f2adb9bdc24aa883c09e8756d42dcc2b8e247851f035943de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

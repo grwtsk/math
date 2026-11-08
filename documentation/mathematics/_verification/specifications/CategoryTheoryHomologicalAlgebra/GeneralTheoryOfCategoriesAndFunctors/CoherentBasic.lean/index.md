@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Precoherent](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/declarations/precoherent.md) | 52 | `declaration-track:bab26a179480e619ccb5dc93df9f757f4e2dc915de6fd5b1dca517ce4c639a73` |
-| 2 | `def` | [coherentCoverage](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/declarations/coherentcoverage.md) | 68 | `declaration-track:a139d3f262db192a0da4f95cd9796f560bb84a2ddc86bc2513fd9b3c2d118b3c` |
-| 3 | `def` | [coherentTopology](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/declarations/coherenttopology.md) | 81 | `declaration-track:116aea0cdf6ae94e02745f9f9475e7edf692ffb827267ca48be816eaa4f8078d` |
-| 4 | `class` | [Preregular](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/declarations/preregular.md) | 90 | `declaration-track:c5c655713b2f6d03e8b255b329f4fced092c5d699954cd33723d27b8b41d85d3` |
-| 5 | `def` | [regularCoverage](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/declarations/regularcoverage.md) | 109 | `declaration-track:6622cdf119cfc9e11348c51dcb35143cd5c2aa9aabef185576f019c667dddce7` |
-| 6 | `def` | [regularTopology](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/declarations/regulartopology.md) | 128 | `declaration-track:12611ec4c0a63e038a6950e10cefdde46806eb9aa2b21ea8e508b3bd0d9bd624` |
-| 7 | `def` | [extensiveCoverage](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/declarations/extensivecoverage.md) | 136 | `declaration-track:d5c4fe9be7f4dc541f47591f49979b3090293cb4c533c2c7753a10c0cc59e217` |
-| 8 | `def` | [extensiveTopology](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/declarations/extensivetopology.md) | 155 | `declaration-track:78b9a5a0b0692791b833e407573d1a21c0317b3723e6972598dde507177fe6ca` |
+| 1 | `class` | [Precoherent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/declarations/precoherent.md) | 52 | `declaration-track:bab26a179480e619ccb5dc93df9f757f4e2dc915de6fd5b1dca517ce4c639a73` |
+| 2 | `def` | [coherentCoverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/declarations/coherentcoverage.md) | 68 | `declaration-track:a139d3f262db192a0da4f95cd9796f560bb84a2ddc86bc2513fd9b3c2d118b3c` |
+| 3 | `def` | [coherentTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/declarations/coherenttopology.md) | 81 | `declaration-track:116aea0cdf6ae94e02745f9f9475e7edf692ffb827267ca48be816eaa4f8078d` |
+| 4 | `class` | [Preregular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/declarations/preregular.md) | 90 | `declaration-track:c5c655713b2f6d03e8b255b329f4fced092c5d699954cd33723d27b8b41d85d3` |
+| 5 | `def` | [regularCoverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/declarations/regularcoverage.md) | 109 | `declaration-track:6622cdf119cfc9e11348c51dcb35143cd5c2aa9aabef185576f019c667dddce7` |
+| 6 | `def` | [regularTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/declarations/regulartopology.md) | 128 | `declaration-track:12611ec4c0a63e038a6950e10cefdde46806eb9aa2b21ea8e508b3bd0d9bd624` |
+| 7 | `def` | [extensiveCoverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/declarations/extensivecoverage.md) | 136 | `declaration-track:d5c4fe9be7f4dc541f47591f49979b3090293cb4c533c2c7753a10c0cc59e217` |
+| 8 | `def` | [extensiveTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentBasic.lean/declarations/extensivetopology.md) | 155 | `declaration-track:78b9a5a0b0692791b833e407573d1a21c0317b3723e6972598dde507177fe6ca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

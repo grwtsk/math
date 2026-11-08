@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/JapaneseBracketAligned.lean/index.md) · [Full source](../../../../SpecialFunctions/JapaneseBracketAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../SpecialFunctions/JapaneseBracketAligned.lean/declarations/macro-rules.md) | 29 | `declaration-track:61e3c3071d7354550950dfb988df7c628aedf4b0646e139a81c7ef438c99738c` |
-| 2 | `theorem` | [sqrt_one_add_norm_sq_le](../../../../SpecialFunctions/JapaneseBracketAligned.lean/declarations/sqrt-one-add-norm-sq-le.md) | 36 | `result-track:e38c2527ee4fae8cfee103ee29dbf5ef7901627a6c1ff35e74ed7ec23eea659f` |
-| 3 | `theorem` | [one_add_norm_le_sqrt_two_mul_sqrt](../../../../SpecialFunctions/JapaneseBracketAligned.lean/declarations/one-add-norm-le-sqrt-two-mul-sqrt.md) | 41 | `result-track:9349f5d52cd7f9b15b39596bee7d79a7e236ac4eee8479e4798c65bada5d955b` |
-| 4 | `theorem` | [rpow_neg_one_add_norm_sq_le](../../../../SpecialFunctions/JapaneseBracketAligned.lean/declarations/rpow-neg-one-add-norm-sq-le.md) | 49 | `result-track:df725c1615884fedc143bb5f5538567551ad306e94a089ba35dac6cbdbdffcbf` |
-| 5 | `theorem` | [le_rpow_one_add_norm_iff_norm_le](../../../../SpecialFunctions/JapaneseBracketAligned.lean/declarations/le-rpow-one-add-norm-iff-norm-le.md) | 62 | `result-track:03a15ac1483971d324dcb1506e0285f3007a7e64669c6c89809536320348102c` |
-| 6 | `theorem` | [closedBall_rpow_sub_one_eq_empty_aux](../../../../SpecialFunctions/JapaneseBracketAligned.lean/declarations/closedball-rpow-sub-one-eq-empty-aux.md) | 70 | `result-track:94b650bbc4aad8418dd7f2ca620663d9852ec23904c1fe0016547df9cc00ce2c` |
-| 7 | `theorem` | [finite_integral_rpow_sub_one_pow_aux](../../../../SpecialFunctions/JapaneseBracketAligned.lean/declarations/finite-integral-rpow-sub-one-pow-aux.md) | 80 | `result-track:c1fa4e5082c999bd3f8de5ee13b7d57ee5af2910ca36a045d743bec22e511311` |
-| 8 | `theorem` | [finite_integral_one_add_norm](../../../../SpecialFunctions/JapaneseBracketAligned.lean/declarations/finite-integral-one-add-norm.md) | 99 | `result-track:ed3406004bfea70abedd85840c25d0a4e4ad104723d1ca782efb3bc1cefe55f0` |
-| 9 | `theorem` | [integrable_one_add_norm](../../../../SpecialFunctions/JapaneseBracketAligned.lean/declarations/integrable-one-add-norm.md) | 142 | `result-track:7056d59f6226c152898a94619bfeb162ecfb422e286a3a8848926766796d43d0` |
-| 10 | `theorem` | [integrable_rpow_neg_one_add_norm_sq](../../../../SpecialFunctions/JapaneseBracketAligned.lean/declarations/integrable-rpow-neg-one-add-norm-sq.md) | 154 | `result-track:55468e8ede2e32687df9e34e0ed6c0f771e918d24de3375c18bed7b9325bca7e` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketAligned.lean/declarations/macro-rules.md) | 29 | `declaration-track:61e3c3071d7354550950dfb988df7c628aedf4b0646e139a81c7ef438c99738c` |
+| 2 | `theorem` | [sqrt_one_add_norm_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketAligned.lean/declarations/sqrt-one-add-norm-sq-le.md) | 36 | `result-track:e38c2527ee4fae8cfee103ee29dbf5ef7901627a6c1ff35e74ed7ec23eea659f` |
+| 3 | `theorem` | [one_add_norm_le_sqrt_two_mul_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketAligned.lean/declarations/one-add-norm-le-sqrt-two-mul-sqrt.md) | 41 | `result-track:9349f5d52cd7f9b15b39596bee7d79a7e236ac4eee8479e4798c65bada5d955b` |
+| 4 | `theorem` | [rpow_neg_one_add_norm_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketAligned.lean/declarations/rpow-neg-one-add-norm-sq-le.md) | 49 | `result-track:df725c1615884fedc143bb5f5538567551ad306e94a089ba35dac6cbdbdffcbf` |
+| 5 | `theorem` | [le_rpow_one_add_norm_iff_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketAligned.lean/declarations/le-rpow-one-add-norm-iff-norm-le.md) | 62 | `result-track:03a15ac1483971d324dcb1506e0285f3007a7e64669c6c89809536320348102c` |
+| 6 | `theorem` | [closedBall_rpow_sub_one_eq_empty_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketAligned.lean/declarations/closedball-rpow-sub-one-eq-empty-aux.md) | 70 | `result-track:94b650bbc4aad8418dd7f2ca620663d9852ec23904c1fe0016547df9cc00ce2c` |
+| 7 | `theorem` | [finite_integral_rpow_sub_one_pow_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketAligned.lean/declarations/finite-integral-rpow-sub-one-pow-aux.md) | 80 | `result-track:c1fa4e5082c999bd3f8de5ee13b7d57ee5af2910ca36a045d743bec22e511311` |
+| 8 | `theorem` | [finite_integral_one_add_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketAligned.lean/declarations/finite-integral-one-add-norm.md) | 99 | `result-track:ed3406004bfea70abedd85840c25d0a4e4ad104723d1ca782efb3bc1cefe55f0` |
+| 9 | `theorem` | [integrable_one_add_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketAligned.lean/declarations/integrable-one-add-norm.md) | 142 | `result-track:7056d59f6226c152898a94619bfeb162ecfb422e286a3a8848926766796d43d0` |
+| 10 | `theorem` | [integrable_rpow_neg_one_add_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/JapaneseBracketAligned.lean/declarations/integrable-rpow-neg-one-add-norm-sq.md) | 154 | `result-track:55468e8ede2e32687df9e34e0ed6c0f771e918d24de3375c18bed7b9325bca7e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RigidifierStoreNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RigidifierStoreNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RigidifierStoreNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RigidifierStoreNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StoredSourceObject](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RigidifierStoreNamespaced.lean/declarations/storedsourceobject.md) | 21 | `declaration-track:00038ee632eaabb3c8fc301a461ec2590770deb6bc41cd98415dfc3ccbf94cfc` |
-| 2 | `structure` | [DependencyBitfieldBasis](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RigidifierStoreNamespaced.lean/declarations/dependencybitfieldbasis.md) | 45 | `declaration-track:3fda8b510ccfada3cf3e07d8a49db19ca41fd5ae2e557cb68a3d62164b32ac76` |
-| 3 | `structure` | [CertifiedDependencyBitfield](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RigidifierStoreNamespaced.lean/declarations/certifieddependencybitfield.md) | 73 | `declaration-track:b13a7cf0cfe04635ad222fe8344d69b4d13dcc9f6fc7841a4339fc11465d8353` |
-| 4 | `structure` | [CompilerProxy](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RigidifierStoreNamespaced.lean/declarations/compilerproxy.md) | 102 | `declaration-track:ea386a1cca621bb2eb17fe71635039b84ec8cfa03557943d363d02613fac57f4` |
-| 5 | `def` | [CompilerProxy.reusable](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RigidifierStoreNamespaced.lean/declarations/compilerproxy-reusable.md) | 151 | `declaration-track:3f91135b20f30025c549a5560caa6df07a3889c4ec1a0295c504f5cf8a9ec2c1` |
+| 1 | `structure` | [StoredSourceObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RigidifierStoreNamespaced.lean/declarations/storedsourceobject.md) | 21 | `declaration-track:00038ee632eaabb3c8fc301a461ec2590770deb6bc41cd98415dfc3ccbf94cfc` |
+| 2 | `structure` | [DependencyBitfieldBasis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RigidifierStoreNamespaced.lean/declarations/dependencybitfieldbasis.md) | 45 | `declaration-track:3fda8b510ccfada3cf3e07d8a49db19ca41fd5ae2e557cb68a3d62164b32ac76` |
+| 3 | `structure` | [CertifiedDependencyBitfield](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RigidifierStoreNamespaced.lean/declarations/certifieddependencybitfield.md) | 73 | `declaration-track:b13a7cf0cfe04635ad222fe8344d69b4d13dcc9f6fc7841a4339fc11465d8353` |
+| 4 | `structure` | [CompilerProxy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RigidifierStoreNamespaced.lean/declarations/compilerproxy.md) | 102 | `declaration-track:ea386a1cca621bb2eb17fe71635039b84ec8cfa03557943d363d02613fac57f4` |
+| 5 | `def` | [CompilerProxy.reusable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RigidifierStoreNamespaced.lean/declarations/compilerproxy-reusable.md) | 151 | `declaration-track:3f91135b20f30025c549a5560caa6df07a3889c4ec1a0295c504f5cf8a9ec2c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

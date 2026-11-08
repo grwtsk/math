@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingRat.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingRat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,21 +61,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [commRing](../../../../AssociativeRingsAndAlgebras/RingRat.lean/declarations/commring.md) | 26 | `declaration-track:379184822f760a788ca407d3e39dbbf469e82ffc80be4a3cf190162334706828` |
-| 2 | `instance` | [commGroupWithZero](../../../../AssociativeRingsAndAlgebras/RingRat.lean/declarations/commgroupwithzero.md) | 40 | `declaration-track:21f99d59faf4d005072bdfe3a6ccf0e02cef91d5539ed18587a9801f49d83eab` |
-| 3 | `instance` | [isDomain](../../../../AssociativeRingsAndAlgebras/RingRat.lean/declarations/isdomain.md) | 50 | `declaration-track:4acff1e946b7fb13d5762f48e96d2f8e23c5797db6325b2359310fe4d42604ea` |
-| 4 | `instance` | [instCharZero](../../../../AssociativeRingsAndAlgebras/RingRat.lean/declarations/instcharzero.md) | 53 | `declaration-track:7d71e245a57bf483c2d8f8d1098239e4c2282b9c6b9a987b2e574c87b935b598` |
-| 5 | `instance` | [commSemiring](../../../../AssociativeRingsAndAlgebras/RingRat.lean/declarations/commsemiring.md) | 61 | `declaration-track:ffdc3a903e11fd949a130ff7078552eac9acc492a92213c8ecae13596c57bf6c` |
-| 6 | `instance` | [semiring](../../../../AssociativeRingsAndAlgebras/RingRat.lean/declarations/semiring.md) | 62 | `declaration-track:9d7dbf6d0feff6908fe79b0cb7c3f6024be64a39c7587c5705aff9f8f0883b9b` |
-| 7 | `lemma` | [mkRat_eq_div](../../../../AssociativeRingsAndAlgebras/RingRat.lean/declarations/mkrat-eq-div.md) | 66 | `result-track:103b3e2a4dbefe2db742f031f1364399fb56221a80b37db618cdadf22058631b` |
-| 8 | `lemma` | [divInt_div_divInt_cancel_left](../../../../AssociativeRingsAndAlgebras/RingRat.lean/declarations/divint-div-divint-cancel-left.md) | 69 | `result-track:21d4f8bb0d22fac9440c8daa8129af6d654f07adc2eedd5ea2b964d33f9f7dfd` |
-| 9 | `lemma` | [divInt_div_divInt_cancel_right](../../../../AssociativeRingsAndAlgebras/RingRat.lean/declarations/divint-div-divint-cancel-right.md) | 73 | `result-track:01de09bf4b719780173b779ba7d88cdaa1de549921ce0e09a14e70f5dc767540` |
-| 10 | `lemma` | [num_div_den](../../../../AssociativeRingsAndAlgebras/RingRat.lean/declarations/num-div-den.md) | 77 | `result-track:65f4247defae052d1dea4b5916c99e1de510a6b0e9895d99e0ce5592641d895f` |
-| 11 | `lemma` | [divInt_pow](../../../../AssociativeRingsAndAlgebras/RingRat.lean/declarations/divint-pow.md) | 80 | `result-track:3fdb660644f93fe9d621184d28d4c2b6bb2ce15327cd754a40bacd9a49cc5503` |
-| 12 | `lemma` | [mkRat_pow](../../../../AssociativeRingsAndAlgebras/RingRat.lean/declarations/mkrat-pow.md) | 83 | `result-track:15fbf2494d9416d43d17686a2ecbec5a40096d713beead4212a7c4ffe0e7daac` |
-| 13 | `lemma` | [natCast_eq_divInt](../../../../AssociativeRingsAndAlgebras/RingRat.lean/declarations/natcast-eq-divint.md) | 86 | `result-track:251004eaa08e2beeba6d0c146f8b5c2e0edde1a66f18a08f3e80731cb0767a71` |
-| 14 | `lemma` | [mul_den_eq_num](../../../../AssociativeRingsAndAlgebras/RingRat.lean/declarations/mul-den-eq-num.md) | 88 | `result-track:b6108947ecd172d4648288d3150bc5355fd467093d177a6b29997c8c0e7b44a1` |
-| 15 | `lemma` | [den_mul_eq_num](../../../../AssociativeRingsAndAlgebras/RingRat.lean/declarations/den-mul-eq-num.md) | 95 | `result-track:6bb375b8b89662a3710c6b34858f99c271f9303514262b93af2627428a638506` |
+| 1 | `instance` | [commRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRat.lean/declarations/commring.md) | 26 | `declaration-track:379184822f760a788ca407d3e39dbbf469e82ffc80be4a3cf190162334706828` |
+| 2 | `instance` | [commGroupWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRat.lean/declarations/commgroupwithzero.md) | 40 | `declaration-track:21f99d59faf4d005072bdfe3a6ccf0e02cef91d5539ed18587a9801f49d83eab` |
+| 3 | `instance` | [isDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRat.lean/declarations/isdomain.md) | 50 | `declaration-track:4acff1e946b7fb13d5762f48e96d2f8e23c5797db6325b2359310fe4d42604ea` |
+| 4 | `instance` | [instCharZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRat.lean/declarations/instcharzero.md) | 53 | `declaration-track:7d71e245a57bf483c2d8f8d1098239e4c2282b9c6b9a987b2e574c87b935b598` |
+| 5 | `instance` | [commSemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRat.lean/declarations/commsemiring.md) | 61 | `declaration-track:ffdc3a903e11fd949a130ff7078552eac9acc492a92213c8ecae13596c57bf6c` |
+| 6 | `instance` | [semiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRat.lean/declarations/semiring.md) | 62 | `declaration-track:9d7dbf6d0feff6908fe79b0cb7c3f6024be64a39c7587c5705aff9f8f0883b9b` |
+| 7 | `lemma` | [mkRat_eq_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRat.lean/declarations/mkrat-eq-div.md) | 66 | `result-track:103b3e2a4dbefe2db742f031f1364399fb56221a80b37db618cdadf22058631b` |
+| 8 | `lemma` | [divInt_div_divInt_cancel_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRat.lean/declarations/divint-div-divint-cancel-left.md) | 69 | `result-track:21d4f8bb0d22fac9440c8daa8129af6d654f07adc2eedd5ea2b964d33f9f7dfd` |
+| 9 | `lemma` | [divInt_div_divInt_cancel_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRat.lean/declarations/divint-div-divint-cancel-right.md) | 73 | `result-track:01de09bf4b719780173b779ba7d88cdaa1de549921ce0e09a14e70f5dc767540` |
+| 10 | `lemma` | [num_div_den](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRat.lean/declarations/num-div-den.md) | 77 | `result-track:65f4247defae052d1dea4b5916c99e1de510a6b0e9895d99e0ce5592641d895f` |
+| 11 | `lemma` | [divInt_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRat.lean/declarations/divint-pow.md) | 80 | `result-track:3fdb660644f93fe9d621184d28d4c2b6bb2ce15327cd754a40bacd9a49cc5503` |
+| 12 | `lemma` | [mkRat_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRat.lean/declarations/mkrat-pow.md) | 83 | `result-track:15fbf2494d9416d43d17686a2ecbec5a40096d713beead4212a7c4ffe0e7daac` |
+| 13 | `lemma` | [natCast_eq_divInt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRat.lean/declarations/natcast-eq-divint.md) | 86 | `result-track:251004eaa08e2beeba6d0c146f8b5c2e0edde1a66f18a08f3e80731cb0767a71` |
+| 14 | `lemma` | [mul_den_eq_num](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRat.lean/declarations/mul-den-eq-num.md) | 88 | `result-track:b6108947ecd172d4648288d3150bc5355fd467093d177a6b29997c8c0e7b44a1` |
+| 15 | `lemma` | [den_mul_eq_num](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRat.lean/declarations/den-mul-eq-num.md) | 95 | `result-track:6bb375b8b89662a3710c6b34858f99c271f9303514262b93af2627428a638506` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndexNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -71,11 +71,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [BoundaryClass](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndexNamespaced.lean/declarations/boundaryclass.md) | 29 | `declaration-track:f20cff5d95aa5dfc3246ae1460266a60dffb511b30ac1f4f03a7f1670cf26484` |
-| 2 | `structure` | [BoundaryAtom](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndexNamespaced.lean/declarations/boundaryatom.md) | 38 | `declaration-track:76945c0156d70d788440d03cc145480a555c4bd9a4aa89fee38ba514b8863155` |
-| 3 | `def` | [boundaryAtoms](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndexNamespaced.lean/declarations/boundaryatoms.md) | 45 | `declaration-track:f914f71c98491366d830971823b305a01da2bafede84f7f3fec42caae8351b61` |
-| 4 | `theorem` | [boundaryAtoms_no_artificial_residue](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndexNamespaced.lean/declarations/boundaryatoms-no-artificial-residue.md) | 448 | `result-track:7f87c058b6a42234ddb3149de35f6b881e475a08bb2c8649579eefe6d225c1c8` |
-| 5 | `theorem` | [boundaryAtoms_count](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndexNamespaced.lean/declarations/boundaryatoms-count.md) | 452 | `result-track:3e57b2221af17560678bbc0c79c8e2722e0b8e33956686effcf6cac395923658` |
+| 1 | `inductive` | [BoundaryClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndexNamespaced.lean/declarations/boundaryclass.md) | 29 | `declaration-track:f20cff5d95aa5dfc3246ae1460266a60dffb511b30ac1f4f03a7f1670cf26484` |
+| 2 | `structure` | [BoundaryAtom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndexNamespaced.lean/declarations/boundaryatom.md) | 38 | `declaration-track:76945c0156d70d788440d03cc145480a555c4bd9a4aa89fee38ba514b8863155` |
+| 3 | `def` | [boundaryAtoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndexNamespaced.lean/declarations/boundaryatoms.md) | 45 | `declaration-track:f914f71c98491366d830971823b305a01da2bafede84f7f3fec42caae8351b61` |
+| 4 | `theorem` | [boundaryAtoms_no_artificial_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndexNamespaced.lean/declarations/boundaryatoms-no-artificial-residue.md) | 448 | `result-track:7f87c058b6a42234ddb3149de35f6b881e475a08bb2c8649579eefe6d225c1c8` |
+| 5 | `theorem` | [boundaryAtoms_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndexNamespaced.lean/declarations/boundaryatoms-count.md) | 452 | `result-track:3e57b2221af17560678bbc0c79c8e2722e0b8e33956686effcf6cac395923658` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

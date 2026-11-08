@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LoogleSyntaxPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LoogleSyntaxPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LoogleSyntaxPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LoogleSyntaxPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LoogleMatch](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LoogleSyntaxPublic.lean/declarations/looglematch.md) | 39 | `declaration-track:3a74d4fd2d5f428218de4e97b0bc597c38c90b6e79fde4fdcb22f905aa56f59f` |
-| 2 | `inductive` | [LoogleResult](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LoogleSyntaxPublic.lean/declarations/loogleresult.md) | 45 | `declaration-track:f064489289537c4a453e404665fc4b6b6387e2484553b55bee8c05c2cdff4df7` |
-| 3 | `initialize` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LoogleSyntaxPublic.lean/declarations/initialize.md) | 51 | `declaration-track:ab1632541e7f50aa93a1963da1f0735e8ba71d99d31fbdabe6c902f1f58ed158` |
-| 4 | `def` | [getLoogleQueryJson](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LoogleSyntaxPublic.lean/declarations/getlooglequeryjson.md) | 54 | `declaration-track:d384855336b3f66d1e9cb246bb500679558189a3ae8a0fbf30455155aff58067` |
+| 1 | `structure` | [LoogleMatch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LoogleSyntaxPublic.lean/declarations/looglematch.md) | 39 | `declaration-track:3a74d4fd2d5f428218de4e97b0bc597c38c90b6e79fde4fdcb22f905aa56f59f` |
+| 2 | `inductive` | [LoogleResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LoogleSyntaxPublic.lean/declarations/loogleresult.md) | 45 | `declaration-track:f064489289537c4a453e404665fc4b6b6387e2484553b55bee8c05c2cdff4df7` |
+| 3 | `initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LoogleSyntaxPublic.lean/declarations/initialize.md) | 51 | `declaration-track:ab1632541e7f50aa93a1963da1f0735e8ba71d99d31fbdabe6c902f1f58ed158` |
+| 4 | `def` | [getLoogleQueryJson](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LoogleSyntaxPublic.lean/declarations/getlooglequeryjson.md) | 54 | `declaration-track:d384855336b3f66d1e9cb246bb500679558189a3ae8a0fbf30455155aff58067` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/QuadraticMapNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/QuadraticMapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuadraticMapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuadraticMapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasLineDerivAt](../../../../RealFunctions/QuadraticMapNamespaced.lean/declarations/haslinederivat.md) | 32 | `result-track:facca91a66dbcb7d08fefc28cec485fe6e3d0a9ce91873248098e49bd308453a` |
-| 2 | `theorem` | [lineDifferentiableAt](../../../../RealFunctions/QuadraticMapNamespaced.lean/declarations/linedifferentiableat.md) | 39 | `result-track:9f59cf60af07e7403fb3d1b63ee6d20e1ae207814a1a39ce3b9f4b4bf9139d49` |
-| 3 | `theorem` | [lineDeriv](../../../../RealFunctions/QuadraticMapNamespaced.lean/declarations/linederiv.md) | 43 | `result-track:8446944b7dfb1cc7987a46a8be6d3933d022b7243b68a2cc36616c83c411cf04` |
+| 1 | `theorem` | [hasLineDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuadraticMapNamespaced.lean/declarations/haslinederivat.md) | 32 | `result-track:facca91a66dbcb7d08fefc28cec485fe6e3d0a9ce91873248098e49bd308453a` |
+| 2 | `theorem` | [lineDifferentiableAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuadraticMapNamespaced.lean/declarations/linedifferentiableat.md) | 39 | `result-track:9f59cf60af07e7403fb3d1b63ee6d20e1ae207814a1a39ce3b9f4b4bf9139d49` |
+| 3 | `theorem` | [lineDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuadraticMapNamespaced.lean/declarations/linederiv.md) | 43 | `result-track:8446944b7dfb1cc7987a46a8be6d3933d022b7243b68a2cc36616c83c411cf04` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

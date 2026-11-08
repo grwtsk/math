@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [recOnPrimePow](../../../../../NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/declarations/reconprimepow.md) | 31 | `declaration-track:a8af5d4795944d26bec01d616844d7dd7dd75fa00becbb21401f12e0070ec7ba` |
-| 2 | `def` | [recOnPosPrimePosCoprime](../../../../../NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/declarations/reconposprimeposcoprime.md) | 52 | `declaration-track:33b079d3dd3adfcd976ac29200c58347bb3dbf6af13ef15eec67e2e0de8589e7` |
-| 3 | `def` | [recOnPrimeCoprime](../../../../../NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/declarations/reconprimecoprime.md) | 68 | `declaration-track:79d5a9c66b3d080165413947b03c07e642575922944c51bc24627f1e62896d0e` |
-| 4 | `def` | [recOnMul](../../../../../NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/declarations/reconmul.md) | 75 | `declaration-track:849113158e37e39ebabb473ac439eaabe3c33ee2d1948a53dc9b2920c30a5da0` |
-| 5 | `lemma` | [Induction Namespaced](../../../../../NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/declarations/induction-on-primes.md) | 85 | `result-track:d8ae89f721147571d9c64d4e1d3f5bb731680c937d5ca5b979b5797f2a4fe36b` |
-| 6 | `lemma` | [prime_composite_induction](../../../../../NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/declarations/prime-composite-induction.md) | 94 | `result-track:48f77246b06d011022c082792a2dc7ef52fd5ed85ad3eac3ad26700e7804e159` |
-| 7 | `theorem` | [multiplicative_factorization](../../../../../NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/declarations/multiplicative-factorization.md) | 107 | `result-track:43bbff08a0117f056008a670c9b4a4a511f6ad2e408c6f3b6dfaa261c078a3d1` |
-| 8 | `theorem` | [multiplicative_factorization'](../../../../../NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/declarations/multiplicative-factorization-source-edition-2.md) | 124 | `result-track:6fd358aa289fc04c2e20e0ba4ff4ef9ba463ab20a3b73fd94d6c2a7a03c17390` |
+| 1 | `def` | [recOnPrimePow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/declarations/reconprimepow.md) | 31 | `declaration-track:a8af5d4795944d26bec01d616844d7dd7dd75fa00becbb21401f12e0070ec7ba` |
+| 2 | `def` | [recOnPosPrimePosCoprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/declarations/reconposprimeposcoprime.md) | 52 | `declaration-track:33b079d3dd3adfcd976ac29200c58347bb3dbf6af13ef15eec67e2e0de8589e7` |
+| 3 | `def` | [recOnPrimeCoprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/declarations/reconprimecoprime.md) | 68 | `declaration-track:79d5a9c66b3d080165413947b03c07e642575922944c51bc24627f1e62896d0e` |
+| 4 | `def` | [recOnMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/declarations/reconmul.md) | 75 | `declaration-track:849113158e37e39ebabb473ac439eaabe3c33ee2d1948a53dc9b2920c30a5da0` |
+| 5 | `lemma` | [Induction Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/declarations/induction-on-primes.md) | 85 | `result-track:d8ae89f721147571d9c64d4e1d3f5bb731680c937d5ca5b979b5797f2a4fe36b` |
+| 6 | `lemma` | [prime_composite_induction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/declarations/prime-composite-induction.md) | 94 | `result-track:48f77246b06d011022c082792a2dc7ef52fd5ed85ad3eac3ad26700e7804e159` |
+| 7 | `theorem` | [multiplicative_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/declarations/multiplicative-factorization.md) | 107 | `result-track:43bbff08a0117f056008a670c9b4a4a511f6ad2e408c6f3b6dfaa261c078a3d1` |
+| 8 | `theorem` | [multiplicative_factorization'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/InductionNamespaced.lean/declarations/multiplicative-factorization-source-edition-2.md) | 124 | `result-track:6fd358aa289fc04c2e20e0ba4ff4ef9ba463ab20a3b73fd94d6c2a7a03c17390` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

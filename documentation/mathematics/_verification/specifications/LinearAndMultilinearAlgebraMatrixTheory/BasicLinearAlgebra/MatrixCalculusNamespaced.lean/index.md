@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mutationMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/declarations/mutationmatrix.md) | 15 | `declaration-track:1ac6aba7de906137c510250c75cb0b85aa383b04d89dc4c591ea22c4c5bff2a8` |
-| 2 | `theorem` | [mutationMatrix_mulVec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/declarations/mutationmatrix-mulvec.md) | 19 | `result-track:25596ce0cd71d6e6a8d0d7dbebb5d9a9df286d64f99735a40baf1e771be2ba21` |
-| 3 | `theorem` | [mutationMatrix_sq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/declarations/mutationmatrix-sq.md) | 39 | `result-track:c83ed60409388af118eb7abedb33eee068229df24a3d4e6b5944531d4e1dc064` |
-| 4 | `theorem` | [mutationMatrix_det](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/declarations/mutationmatrix-det.md) | 46 | `result-track:27111ea34777648f81febe7f102a058f6a8ce193606534ffeadacf4bb8eaf0cb` |
-| 5 | `def` | [wordMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/declarations/wordmatrix.md) | 56 | `declaration-track:3e201e1ec75b2b3d685a6134c91692d688c3eaa85c25f0519ad282517cbc193a` |
-| 6 | `theorem` | [wordMatrix_mulVec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/declarations/wordmatrix-mulvec.md) | 61 | `result-track:bd749b18ea649aa69ac9dfc2fd1ffc3b2982ec8498552ee7ef2ad27d15a48b24` |
-| 7 | `theorem` | [wordMatrix_append](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/declarations/wordmatrix-append.md) | 68 | `result-track:feacefb52a1b5d3856b6f2b3fe34ca94e8fda41e6c46fd57403b1d7a53589634` |
-| 8 | `theorem` | [wordMatrix_reverse](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/declarations/wordmatrix-reverse.md) | 75 | `result-track:3130d0621943fc6cc374f03c9aceafbac5905b1b1cffc71232679bdcea36cf68` |
+| 1 | `def` | [mutationMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/declarations/mutationmatrix.md) | 15 | `declaration-track:1ac6aba7de906137c510250c75cb0b85aa383b04d89dc4c591ea22c4c5bff2a8` |
+| 2 | `theorem` | [mutationMatrix_mulVec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/declarations/mutationmatrix-mulvec.md) | 19 | `result-track:25596ce0cd71d6e6a8d0d7dbebb5d9a9df286d64f99735a40baf1e771be2ba21` |
+| 3 | `theorem` | [mutationMatrix_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/declarations/mutationmatrix-sq.md) | 39 | `result-track:c83ed60409388af118eb7abedb33eee068229df24a3d4e6b5944531d4e1dc064` |
+| 4 | `theorem` | [mutationMatrix_det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/declarations/mutationmatrix-det.md) | 46 | `result-track:27111ea34777648f81febe7f102a058f6a8ce193606534ffeadacf4bb8eaf0cb` |
+| 5 | `def` | [wordMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/declarations/wordmatrix.md) | 56 | `declaration-track:3e201e1ec75b2b3d685a6134c91692d688c3eaa85c25f0519ad282517cbc193a` |
+| 6 | `theorem` | [wordMatrix_mulVec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/declarations/wordmatrix-mulvec.md) | 61 | `result-track:bd749b18ea649aa69ac9dfc2fd1ffc3b2982ec8498552ee7ef2ad27d15a48b24` |
+| 7 | `theorem` | [wordMatrix_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/declarations/wordmatrix-append.md) | 68 | `result-track:feacefb52a1b5d3856b6f2b3fe34ca94e8fda41e6c46fd57403b1d7a53589634` |
+| 8 | `theorem` | [wordMatrix_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixCalculusNamespaced.lean/declarations/wordmatrix-reverse.md) | 75 | `result-track:3130d0621943fc6cc374f03c9aceafbac5905b1b1cffc71232679bdcea36cf68` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

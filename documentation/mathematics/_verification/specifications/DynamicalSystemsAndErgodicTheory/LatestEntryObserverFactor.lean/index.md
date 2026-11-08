@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/LatestEntryObserverFactor.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/LatestEntryObserverFactor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/LatestEntryObserverFactor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/LatestEntryObserverFactor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [RingResolution](../../../../DynamicalSystemsAndErgodicTheory/LatestEntryObserverFactor.lean/declarations/ringresolution.md) | 52 | `declaration-track:b63e53dfbb8ff55c83e423c3e055423a0c5e72b281d2bb36772df631daf0d34f` |
-| 2 | `def` | [RingObservation](../../../../DynamicalSystemsAndErgodicTheory/LatestEntryObserverFactor.lean/declarations/ringobservation.md) | 58 | `declaration-track:362c9def7c82d46488def1e0e283f8cb75727533d2ca46d9e7a0ff49759ffdef` |
-| 3 | `def` | [observedRingSystem](../../../../DynamicalSystemsAndErgodicTheory/LatestEntryObserverFactor.lean/declarations/observedringsystem.md) | 65 | `declaration-track:d93947d4c656db9528bd3d7a9f566c06ae4f56087b81ba9bf6960123581c1f94` |
-| 4 | `def` | [latestObserverReducer](../../../../DynamicalSystemsAndErgodicTheory/LatestEntryObserverFactor.lean/declarations/latestobserverreducer.md) | 77 | `declaration-track:bb5bff2e7fae3fe39ee8708cbf97d1fc09e48fc5e2a2573f7189d5469533c163` |
+| 1 | `inductive` | [RingResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/LatestEntryObserverFactor.lean/declarations/ringresolution.md) | 52 | `declaration-track:b63e53dfbb8ff55c83e423c3e055423a0c5e72b281d2bb36772df631daf0d34f` |
+| 2 | `def` | [RingObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/LatestEntryObserverFactor.lean/declarations/ringobservation.md) | 58 | `declaration-track:362c9def7c82d46488def1e0e283f8cb75727533d2ca46d9e7a0ff49759ffdef` |
+| 3 | `def` | [observedRingSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/LatestEntryObserverFactor.lean/declarations/observedringsystem.md) | 65 | `declaration-track:d93947d4c656db9528bd3d7a9f566c06ae4f56087b81ba9bf6960123581c1f94` |
+| 4 | `def` | [latestObserverReducer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/LatestEntryObserverFactor.lean/declarations/latestobserverreducer.md) | 77 | `declaration-track:bb5bff2e7fae3fe39ee8708cbf97d1fc09e48fc5e2a2573f7189d5469533c163` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

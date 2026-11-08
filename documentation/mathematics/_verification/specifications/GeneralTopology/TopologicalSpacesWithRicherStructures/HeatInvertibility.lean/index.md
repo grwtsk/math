@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/index.md) · [Full source](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HasTwoSidedInverse](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/declarations/hastwosidedinverse.md) | 22 | `declaration-track:1811f63361c6df486620391cc6e1520bf088d0b9095268b782685ec77f32786f` |
-| 2 | `structure` | [StableInverse](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/declarations/stableinverse.md) | 29 | `declaration-track:6cea24e803fb09dad03f90c5a0abc6e89ecbf86339f13eef6aeaf3939b4935c8` |
-| 3 | `structure` | [LiftedHeatInverse](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/declarations/liftedheatinverse.md) | 37 | `declaration-track:d09b745da452d6de75f68f0bbd33056a76a6b0e7f20d8ba17bc07e54da0c98c6` |
-| 4 | `def` | [spectralLiftedHeatInverse](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/declarations/spectralliftedheatinverse.md) | 45 | `declaration-track:e0330d1506e1657ddb42d37cd6e3503cde4050a992ab1f8290d7c694419eab95` |
-| 5 | `theorem` | [lifted_heat_reconstructs](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/declarations/lifted-heat-reconstructs.md) | 59 | `result-track:eecb25d1a364fe315ead6744868e246e3582286c4283b744f72548acc262ff3f` |
-| 6 | `theorem` | [ordinary_heat_left_inverse](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/declarations/ordinary-heat-left-inverse.md) | 67 | `result-track:4c35af981e4d9bd4ec47f25ada8259bcb271f4118ef4aa2e9cadd1baf4ee5f60` |
-| 7 | `theorem` | [ordinary_heat_right_inverse](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/declarations/ordinary-heat-right-inverse.md) | 75 | `result-track:633243ce2325fb18fb170c2a507db171685cad7bd951208aeeafa6d34065cdad` |
-| 8 | `theorem` | [stable_inverse_has_lipschitz_bound](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/declarations/stable-inverse-has-lipschitz-bound.md) | 83 | `result-track:0e5e10f156e94abab709cc589a5f05349f225701ba0912042aa84e206c9acc53` |
+| 1 | `structure` | [HasTwoSidedInverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/declarations/hastwosidedinverse.md) | 22 | `declaration-track:1811f63361c6df486620391cc6e1520bf088d0b9095268b782685ec77f32786f` |
+| 2 | `structure` | [StableInverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/declarations/stableinverse.md) | 29 | `declaration-track:6cea24e803fb09dad03f90c5a0abc6e89ecbf86339f13eef6aeaf3939b4935c8` |
+| 3 | `structure` | [LiftedHeatInverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/declarations/liftedheatinverse.md) | 37 | `declaration-track:d09b745da452d6de75f68f0bbd33056a76a6b0e7f20d8ba17bc07e54da0c98c6` |
+| 4 | `def` | [spectralLiftedHeatInverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/declarations/spectralliftedheatinverse.md) | 45 | `declaration-track:e0330d1506e1657ddb42d37cd6e3503cde4050a992ab1f8290d7c694419eab95` |
+| 5 | `theorem` | [lifted_heat_reconstructs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/declarations/lifted-heat-reconstructs.md) | 59 | `result-track:eecb25d1a364fe315ead6744868e246e3582286c4283b744f72548acc262ff3f` |
+| 6 | `theorem` | [ordinary_heat_left_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/declarations/ordinary-heat-left-inverse.md) | 67 | `result-track:4c35af981e4d9bd4ec47f25ada8259bcb271f4118ef4aa2e9cadd1baf4ee5f60` |
+| 7 | `theorem` | [ordinary_heat_right_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/declarations/ordinary-heat-right-inverse.md) | 75 | `result-track:633243ce2325fb18fb170c2a507db171685cad7bd951208aeeafa6d34065cdad` |
+| 8 | `theorem` | [stable_inverse_has_lipschitz_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/HeatInvertibility.lean/declarations/stable-inverse-has-lipschitz-bound.md) | 83 | `result-track:0e5e10f156e94abab709cc589a5f05349f225701ba0912042aa84e206c9acc53` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

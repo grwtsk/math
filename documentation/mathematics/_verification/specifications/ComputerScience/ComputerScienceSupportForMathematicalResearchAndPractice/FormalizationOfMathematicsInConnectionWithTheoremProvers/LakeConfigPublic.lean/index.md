@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakeConfigPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakeConfigPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakeConfigPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakeConfigPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CacheServiceKind](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakeConfigPublic.lean/declarations/cacheservicekind.md) | 17 | `declaration-track:38ffaa4d96fb5c0a44b123a8554f342115ebf6081ce9876a9f28010f99eeff36` |
-| 2 | `def` | [CacheServiceKind.ofString?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakeConfigPublic.lean/declarations/cacheservicekind-ofstring.md) | 24 | `declaration-track:d856f728e9865cbe125d9420d537f00bf23b3cd6c831fe87fe43cec92768946a` |
-| 3 | `abbrev` | [CacheServiceMap](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakeConfigPublic.lean/declarations/cacheservicemap.md) | 48 | `declaration-track:45e9b8d3d6d8ee1cd52b6793e02378027c9f1bb2008c283dd26b0556f5632137` |
-| 4 | `structure` | [LoadedLakeConfig](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakeConfigPublic.lean/declarations/loadedlakeconfig.md) | 50 | `declaration-track:4f1d98dfaa625db7861ac7ed37a0fdc95fe43264418369a22cd3b1fb2b99e3d0` |
+| 1 | `inductive` | [CacheServiceKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakeConfigPublic.lean/declarations/cacheservicekind.md) | 17 | `declaration-track:38ffaa4d96fb5c0a44b123a8554f342115ebf6081ce9876a9f28010f99eeff36` |
+| 2 | `def` | [CacheServiceKind.ofString?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakeConfigPublic.lean/declarations/cacheservicekind-ofstring.md) | 24 | `declaration-track:d856f728e9865cbe125d9420d537f00bf23b3cd6c831fe87fe43cec92768946a` |
+| 3 | `abbrev` | [CacheServiceMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakeConfigPublic.lean/declarations/cacheservicemap.md) | 48 | `declaration-track:45e9b8d3d6d8ee1cd52b6793e02378027c9f1bb2008c283dd26b0556f5632137` |
+| 4 | `structure` | [LoadedLakeConfig](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakeConfigPublic.lean/declarations/loadedlakeconfig.md) | 50 | `declaration-track:4f1d98dfaa625db7861ac7ed37a0fdc95fe43264418369a22cd3b1fb2b99e3d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

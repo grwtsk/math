@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MayerVietorisNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/MayerVietorisNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MayerVietorisNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MayerVietorisNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mayerVietorisSquare'](../../../../GeneralTopology/MayerVietorisNamespaced.lean/declarations/mayervietorissquare.md) | 46 | `declaration-track:08c91ce81197ccd98ff9a7b819b84441d935d33a7d4513b8949c2f704cd5063f` |
-| 2 | `def` | [mayerVietorisSquare](../../../../GeneralTopology/MayerVietorisNamespaced.lean/declarations/mayervietorissquare-source-edition-2.md) | 67 | `declaration-track:9cd1e12dce0dd31cf967ebd4ab78b4ed959a38905eaec8da1d3e42e523c4d7f3` |
+| 1 | `def` | [mayerVietorisSquare'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MayerVietorisNamespaced.lean/declarations/mayervietorissquare.md) | 46 | `declaration-track:08c91ce81197ccd98ff9a7b819b84441d935d33a7d4513b8949c2f704cd5063f` |
+| 2 | `def` | [mayerVietorisSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MayerVietorisNamespaced.lean/declarations/mayervietorissquare-source-edition-2.md) | 67 | `declaration-track:9cd1e12dce0dd31cf967ebd4ab78b4ed959a38905eaec8da1d3e42e523c4d7f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

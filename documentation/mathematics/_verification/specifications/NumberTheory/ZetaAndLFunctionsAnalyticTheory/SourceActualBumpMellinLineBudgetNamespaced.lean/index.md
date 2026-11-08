@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMellinLineBudgetNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMellinLineBudgetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMellinLineBudgetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMellinLineBudgetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bumpMellinWeight](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMellinLineBudgetNamespaced.lean/declarations/bumpmellinweight.md) | 26 | `declaration-track:81a9dc476db9f5ce9d2048f75036d32d09fa9be4a9881105a4784e21aae0223c` |
-| 2 | `theorem` | [bump_on_right_line_norm_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMellinLineBudgetNamespaced.lean/declarations/bump-on-right-line-norm-le.md) | 31 | `result-track:7656929a092801e310076d2dedf6d7cd28751798f1921ccc6fbd73362d503a21` |
-| 3 | `theorem` | [pole_norm_on_line_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMellinLineBudgetNamespaced.lean/declarations/pole-norm-on-line-le.md) | 53 | `result-track:2ec62bed4b3fec029e51261db469986e98f3edb7044644a5124b005853e209d4` |
-| 4 | `theorem` | [bumpMellinWeight_on_line_norm_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMellinLineBudgetNamespaced.lean/declarations/bumpmellinweight-on-line-norm-le.md) | 83 | `result-track:aa9e3486c97f416b217fc622c9b26e9d8ae2d6a0e85c69dadea4cbe1b7a760ab` |
+| 1 | `def` | [bumpMellinWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMellinLineBudgetNamespaced.lean/declarations/bumpmellinweight.md) | 26 | `declaration-track:81a9dc476db9f5ce9d2048f75036d32d09fa9be4a9881105a4784e21aae0223c` |
+| 2 | `theorem` | [bump_on_right_line_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMellinLineBudgetNamespaced.lean/declarations/bump-on-right-line-norm-le.md) | 31 | `result-track:7656929a092801e310076d2dedf6d7cd28751798f1921ccc6fbd73362d503a21` |
+| 3 | `theorem` | [pole_norm_on_line_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMellinLineBudgetNamespaced.lean/declarations/pole-norm-on-line-le.md) | 53 | `result-track:2ec62bed4b3fec029e51261db469986e98f3edb7044644a5124b005853e209d4` |
+| 4 | `theorem` | [bumpMellinWeight_on_line_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMellinLineBudgetNamespaced.lean/declarations/bumpmellinweight-on-line-norm-le.md) | 83 | `result-track:aa9e3486c97f416b217fc622c9b26e9d8ae2d6a0e85c69dadea4cbe1b7a760ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

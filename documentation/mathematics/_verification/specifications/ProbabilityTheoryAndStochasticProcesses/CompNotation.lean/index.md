@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CompNotation.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CompNotation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompNotation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompNotation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [comp_apply_univ](../../../../ProbabilityTheoryAndStochasticProcesses/CompNotation.lean/declarations/comp-apply-univ.md) | 40 | `result-track:87d790ed2575ace4cff0393eecb2b7fb11b02566f46190e916fdc771c89dde34` |
-| 2 | `lemma` | [deterministic_comp_eq_map](../../../../ProbabilityTheoryAndStochasticProcesses/CompNotation.lean/declarations/deterministic-comp-eq-map.md) | 43 | `result-track:f31fb8908fbfae1059aa0db2f69bd12228308f7e2c1c02e8cfc21f1ee6049c85` |
-| 3 | `lemma` | [id_comp](../../../../ProbabilityTheoryAndStochasticProcesses/CompNotation.lean/declarations/id-comp.md) | 48 | `result-track:bd4ae3cfdbe1251ea003aae340f85fe641d275691eb02db4b0570038a9411a64` |
-| 4 | `lemma` | [swap_comp](../../../../ProbabilityTheoryAndStochasticProcesses/CompNotation.lean/declarations/swap-comp.md) | 50 | `result-track:9aec3a397f5140a5d2d337802aaf5e694fca4225d61d7a6468d4a94af2f5c44b` |
-| 5 | `lemma` | [const_comp](../../../../ProbabilityTheoryAndStochasticProcesses/CompNotation.lean/declarations/const-comp.md) | 54 | `result-track:d37c85d9bf0478aec4e0ce84fb67855c97c350d31e00b1673b8afd08f592d41e` |
+| 1 | `lemma` | [comp_apply_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompNotation.lean/declarations/comp-apply-univ.md) | 40 | `result-track:87d790ed2575ace4cff0393eecb2b7fb11b02566f46190e916fdc771c89dde34` |
+| 2 | `lemma` | [deterministic_comp_eq_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompNotation.lean/declarations/deterministic-comp-eq-map.md) | 43 | `result-track:f31fb8908fbfae1059aa0db2f69bd12228308f7e2c1c02e8cfc21f1ee6049c85` |
+| 3 | `lemma` | [id_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompNotation.lean/declarations/id-comp.md) | 48 | `result-track:bd4ae3cfdbe1251ea003aae340f85fe641d275691eb02db4b0570038a9411a64` |
+| 4 | `lemma` | [swap_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompNotation.lean/declarations/swap-comp.md) | 50 | `result-track:9aec3a397f5140a5d2d337802aaf5e694fca4225d61d7a6468d4a94af2f5c44b` |
+| 5 | `lemma` | [const_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompNotation.lean/declarations/const-comp.md) | 54 | `result-track:d37c85d9bf0478aec4e0ce84fb67855c97c350d31e00b1673b8afd08f592d41e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

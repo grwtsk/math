@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/PushNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/PushNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Push](../../../../../Combinatorics/GraphTheory/PushNamespaced.lean/declarations/push.md) | 33 | `declaration-track:2784d20f9af3c3b4ad8d26f507c68a3512ab9d06cdf073ac63ce07d3581a677f` |
-| 2 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/PushNamespaced.lean/declarations/instance-source-edition-2.md) | 36 | `declaration-track:ca5fc74209267348da41cb31caba4a5149d0166ce4eae15e1b96eac53d21581e` |
-| 3 | `inductive` | [PushQuiver](../../../../../Combinatorics/GraphTheory/PushNamespaced.lean/declarations/pushquiver.md) | 40 | `declaration-track:372d51d36ff471ff60f7f7f42ac778c8651b6cc7061783c1c28a1c870e6d12bf` |
-| 4 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/PushNamespaced.lean/declarations/instance.md) | 43 | `declaration-track:0c57f39324a37433924d2c3e57c503c0048e7819b9a633e8dbbb9dd478fd2e73` |
-| 5 | `def` | [of](../../../../../Combinatorics/GraphTheory/PushNamespaced.lean/declarations/of.md) | 49 | `declaration-track:e87b4d179f58209c046d6bd6e0580329590fe77290265ff8c638052c80a03601` |
-| 6 | `theorem` | [of_obj](../../../../../Combinatorics/GraphTheory/PushNamespaced.lean/declarations/of-obj.md) | 54 | `result-track:3a723dcc7dd452edf901007d5a49e6f989ebc525723be1315ea60132afc8cdba` |
-| 7 | `def` | [lift](../../../../../Combinatorics/GraphTheory/PushNamespaced.lean/declarations/lift.md) | 62 | `declaration-track:54a5cdd82cd0f8b82035bb8fb2c22ab720c9edb606a46472f43672e08a7edf7e` |
-| 8 | `theorem` | [lift_obj](../../../../../Combinatorics/GraphTheory/PushNamespaced.lean/declarations/lift-obj.md) | 70 | `result-track:641e57933774399535d3371eaa855b895ad3c5b4d064ee986b775aa61a57f612` |
-| 9 | `theorem` | [lift_comp](../../../../../Combinatorics/GraphTheory/PushNamespaced.lean/declarations/lift-comp.md) | 73 | `result-track:64125bb2887a24d85ca5e2bea3e6d0c6a19ad95860d49a9a5114729c54931476` |
-| 10 | `theorem` | [lift_unique](../../../../../Combinatorics/GraphTheory/PushNamespaced.lean/declarations/lift-unique.md) | 91 | `result-track:c30f67769c25e8a06220ec15732f03d7766e5a30b73b835237ff44d9cf3368ae` |
+| 1 | `def` | [Push](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushNamespaced.lean/declarations/push.md) | 33 | `declaration-track:2784d20f9af3c3b4ad8d26f507c68a3512ab9d06cdf073ac63ce07d3581a677f` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushNamespaced.lean/declarations/instance-source-edition-2.md) | 36 | `declaration-track:ca5fc74209267348da41cb31caba4a5149d0166ce4eae15e1b96eac53d21581e` |
+| 3 | `inductive` | [PushQuiver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushNamespaced.lean/declarations/pushquiver.md) | 40 | `declaration-track:372d51d36ff471ff60f7f7f42ac778c8651b6cc7061783c1c28a1c870e6d12bf` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushNamespaced.lean/declarations/instance.md) | 43 | `declaration-track:0c57f39324a37433924d2c3e57c503c0048e7819b9a633e8dbbb9dd478fd2e73` |
+| 5 | `def` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushNamespaced.lean/declarations/of.md) | 49 | `declaration-track:e87b4d179f58209c046d6bd6e0580329590fe77290265ff8c638052c80a03601` |
+| 6 | `theorem` | [of_obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushNamespaced.lean/declarations/of-obj.md) | 54 | `result-track:3a723dcc7dd452edf901007d5a49e6f989ebc525723be1315ea60132afc8cdba` |
+| 7 | `def` | [lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushNamespaced.lean/declarations/lift.md) | 62 | `declaration-track:54a5cdd82cd0f8b82035bb8fb2c22ab720c9edb606a46472f43672e08a7edf7e` |
+| 8 | `theorem` | [lift_obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushNamespaced.lean/declarations/lift-obj.md) | 70 | `result-track:641e57933774399535d3371eaa855b895ad3c5b4d064ee986b775aa61a57f612` |
+| 9 | `theorem` | [lift_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushNamespaced.lean/declarations/lift-comp.md) | 73 | `result-track:64125bb2887a24d85ca5e2bea3e6d0c6a19ad95860d49a9a5114729c54931476` |
+| 10 | `theorem` | [lift_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PushNamespaced.lean/declarations/lift-unique.md) | 91 | `result-track:c30f67769c25e8a06220ec15732f03d7766e5a30b73b835237ff44d9cf3368ae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

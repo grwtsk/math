@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CurvaturePacketCertificates.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CurvaturePacketCertificates.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CurvaturePacketCertificates.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CurvaturePacketCertificates.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [packetValue](../../../../MeasureAndIntegration/CurvaturePacketCertificates.lean/declarations/packetvalue.md) | 37 | `declaration-track:6526c274f66ac186b121c303c6479229ae4cf20854236180f17e7d646cec275a` |
-| 2 | `theorem` | [packet_constant](../../../../MeasureAndIntegration/CurvaturePacketCertificates.lean/declarations/packet-constant.md) | 40 | `result-track:34a131a5842392a5ee1706f087e7dd12b94877a2db4c340d4cdc822916538dda` |
-| 3 | `theorem` | [packet_affine](../../../../MeasureAndIntegration/CurvaturePacketCertificates.lean/declarations/packet-affine.md) | 46 | `result-track:c7f4148fc22b79f26dd500612b1c35d00911f67ce2a953e4083bc2b6f954ab3b` |
-| 4 | `theorem` | [packet_centered_second_moment](../../../../MeasureAndIntegration/CurvaturePacketCertificates.lean/declarations/packet-centered-second-moment.md) | 52 | `result-track:8b267619a519bbaca964f1ba9c607ad9b463cffc74e50d9bf1a595e634409c10` |
-| 5 | `theorem` | [packet_green_local](../../../../MeasureAndIntegration/CurvaturePacketCertificates.lean/declarations/packet-green-local.md) | 59 | `result-track:f4e767d33ed2adca6dd7f030c652143c5797ebe8cebde8bea654133abe94a121` |
-| 6 | `theorem` | [packet_green](../../../../MeasureAndIntegration/CurvaturePacketCertificates.lean/declarations/packet-green.md) | 75 | `result-track:0383b2d778269a8e7721a0008f21d39524c3f85e348b687695bac3c3f48840e7` |
-| 7 | `theorem` | [packet_tent_mass](../../../../MeasureAndIntegration/CurvaturePacketCertificates.lean/declarations/packet-tent-mass.md) | 99 | `result-track:ae9b9d2a64a260d29ba0716427031fbefa49d479409ed165fb81f7af886936ad` |
-| 8 | `theorem` | [packet_abs_le_curvature](../../../../MeasureAndIntegration/CurvaturePacketCertificates.lean/declarations/packet-abs-le-curvature.md) | 121 | `result-track:8e9393aed479f59ca83e7232e72bc93f2d3b6186f2afa88c6473934d01b9b5cf` |
-| 9 | `theorem` | [critical_packet_green](../../../../MeasureAndIntegration/CurvaturePacketCertificates.lean/declarations/critical-packet-green.md) | 148 | `result-track:934fc10f0e87c8177422b4f7538c732964700e8cdf5077ee02d16a685c3b3b33` |
+| 1 | `def` | [packetValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CurvaturePacketCertificates.lean/declarations/packetvalue.md) | 37 | `declaration-track:6526c274f66ac186b121c303c6479229ae4cf20854236180f17e7d646cec275a` |
+| 2 | `theorem` | [packet_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CurvaturePacketCertificates.lean/declarations/packet-constant.md) | 40 | `result-track:34a131a5842392a5ee1706f087e7dd12b94877a2db4c340d4cdc822916538dda` |
+| 3 | `theorem` | [packet_affine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CurvaturePacketCertificates.lean/declarations/packet-affine.md) | 46 | `result-track:c7f4148fc22b79f26dd500612b1c35d00911f67ce2a953e4083bc2b6f954ab3b` |
+| 4 | `theorem` | [packet_centered_second_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CurvaturePacketCertificates.lean/declarations/packet-centered-second-moment.md) | 52 | `result-track:8b267619a519bbaca964f1ba9c607ad9b463cffc74e50d9bf1a595e634409c10` |
+| 5 | `theorem` | [packet_green_local](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CurvaturePacketCertificates.lean/declarations/packet-green-local.md) | 59 | `result-track:f4e767d33ed2adca6dd7f030c652143c5797ebe8cebde8bea654133abe94a121` |
+| 6 | `theorem` | [packet_green](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CurvaturePacketCertificates.lean/declarations/packet-green.md) | 75 | `result-track:0383b2d778269a8e7721a0008f21d39524c3f85e348b687695bac3c3f48840e7` |
+| 7 | `theorem` | [packet_tent_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CurvaturePacketCertificates.lean/declarations/packet-tent-mass.md) | 99 | `result-track:ae9b9d2a64a260d29ba0716427031fbefa49d479409ed165fb81f7af886936ad` |
+| 8 | `theorem` | [packet_abs_le_curvature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CurvaturePacketCertificates.lean/declarations/packet-abs-le-curvature.md) | 121 | `result-track:8e9393aed479f59ca83e7232e72bc93f2d3b6186f2afa88c6473934d01b9b5cf` |
+| 9 | `theorem` | [critical_packet_green](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CurvaturePacketCertificates.lean/declarations/critical-packet-green.md) | 148 | `result-track:934fc10f0e87c8177422b4f7538c732964700e8cdf5077ee02d16a685c3b3b33` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

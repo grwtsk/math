@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixTransferCore.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixTransferCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixTransferCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixTransferCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,10 +46,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.GoldbachProgressionModelCore`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionModelCore.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixDiscrepancy.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.GoldbachPrefixArcTransfer`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.Checks.GoldbachPrefixControls`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixControls.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Interfaces.GoldbachProgressionModelCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionModelCore.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixDiscrepancy.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachPrefixArcTransfer`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixArcTransfer.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.Checks.GoldbachPrefixControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixControls.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

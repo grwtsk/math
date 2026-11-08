@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsPWO.smul](../../../../../Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/ispwo-smul.md) | 30 | `result-track:d7aec80b4ffe72b267719e70e17c8a953b862fd268d05829b322a1be229314ba` |
-| 2 | `theorem` | [IsWF.smul](../../../../../Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/iswf-smul.md) | 36 | `result-track:fcf26a7cd392109174892fa433eb39ee40dcd2cc455c3c2c10eb0124dd846c82` |
-| 3 | `theorem` | [IsWF.min_smul](../../../../../Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/iswf-min-smul.md) | 41 | `result-track:befc1f2a59c63ab95ce49d4e1b5a27d771399d2217e70ae20e272d8e1905c9f0` |
-| 4 | `def` | [SMulAntidiagonal](../../../../../Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/smulantidiagonal.md) | 67 | `declaration-track:4d6d9685ac1adc98e60ee9dcb83c27f3ee5592826173b4f44080a6cc2917b0b3` |
-| 5 | `theorem` | [mem_smulAntidiagonal](../../../../../Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/mem-smulantidiagonal.md) | 72 | `result-track:386e2a0c00b0be40e7e40e1001047ec12917b6c85f0abe03702640e132bc58b2` |
-| 6 | `theorem` | [smulAntidiagonal_mono_left](../../../../../Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/smulantidiagonal-mono-left.md) | 78 | `result-track:4e1eef9accc01ad9b87a059e6129688e6a8dc3eb07d1a944dc232ec13800b749` |
-| 7 | `theorem` | [smulAntidiagonal_mono_right](../../../../../Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/smulantidiagonal-mono-right.md) | 83 | `result-track:1e6e30e8aa3c49b53925ee70e66f7ae4fbf0e8ae4fe49094a154b25209ab9d13` |
-| 8 | `theorem` | [support_smulAntidiagonal_subset_smul](../../../../../Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/support-smulantidiagonal-subset-smul.md) | 88 | `result-track:8bbc07a60ce1bbe783fa444ad9dbb2f0dd403baec4c73060fc7cdea299961e08` |
-| 9 | `theorem` | [isPWO_support_smulAntidiagonal](../../../../../Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/ispwo-support-smulantidiagonal.md) | 99 | `result-track:ed36f29de5601b83f7b5b864ba818d149782f84d7d7cb55184f57b7fbdb6c8a2` |
-| 10 | `theorem` | [smulAntidiagonal_min_smul_min](../../../../../Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/smulantidiagonal-min-smul-min.md) | 106 | `result-track:ecce4d5a5445d920490f189fbc7029260db7633bfe57916f26f9f78d833e35ab` |
+| 1 | `theorem` | [IsPWO.smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/ispwo-smul.md) | 30 | `result-track:d7aec80b4ffe72b267719e70e17c8a953b862fd268d05829b322a1be229314ba` |
+| 2 | `theorem` | [IsWF.smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/iswf-smul.md) | 36 | `result-track:fcf26a7cd392109174892fa433eb39ee40dcd2cc455c3c2c10eb0124dd846c82` |
+| 3 | `theorem` | [IsWF.min_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/iswf-min-smul.md) | 41 | `result-track:befc1f2a59c63ab95ce49d4e1b5a27d771399d2217e70ae20e272d8e1905c9f0` |
+| 4 | `def` | [SMulAntidiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/smulantidiagonal.md) | 67 | `declaration-track:4d6d9685ac1adc98e60ee9dcb83c27f3ee5592826173b4f44080a6cc2917b0b3` |
+| 5 | `theorem` | [mem_smulAntidiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/mem-smulantidiagonal.md) | 72 | `result-track:386e2a0c00b0be40e7e40e1001047ec12917b6c85f0abe03702640e132bc58b2` |
+| 6 | `theorem` | [smulAntidiagonal_mono_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/smulantidiagonal-mono-left.md) | 78 | `result-track:4e1eef9accc01ad9b87a059e6129688e6a8dc3eb07d1a944dc232ec13800b749` |
+| 7 | `theorem` | [smulAntidiagonal_mono_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/smulantidiagonal-mono-right.md) | 83 | `result-track:1e6e30e8aa3c49b53925ee70e66f7ae4fbf0e8ae4fe49094a154b25209ab9d13` |
+| 8 | `theorem` | [support_smulAntidiagonal_subset_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/support-smulantidiagonal-subset-smul.md) | 88 | `result-track:8bbc07a60ce1bbe783fa444ad9dbb2f0dd403baec4c73060fc7cdea299961e08` |
+| 9 | `theorem` | [isPWO_support_smulAntidiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/ispwo-support-smulantidiagonal.md) | 99 | `result-track:ed36f29de5601b83f7b5b864ba818d149782f84d7d7cb55184f57b7fbdb6c8a2` |
+| 10 | `theorem` | [smulAntidiagonal_min_smul_min](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/SMulAntidiagonal.lean/declarations/smulantidiagonal-min-smul-min.md) | 106 | `result-track:ecce4d5a5445d920490f189fbc7029260db7633bfe57916f26f9f78d833e35ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

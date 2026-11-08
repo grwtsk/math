@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PriestleyExistsIsClopenUpperOfNotLe.lean/index.md) · [Full source](../../../../GeneralTopology/PriestleyExistsIsClopenUpperOfNotLe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyExistsIsClopenUpperOfNotLe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyExistsIsClopenUpperOfNotLe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [PriestleySpace](../../../../GeneralTopology/PriestleyExistsIsClopenUpperOfNotLe.lean/declarations/priestleyspace.md) | 38 | `declaration-track:9486c7e9fdf98aa4042a75f498e2d695159a11655e44d0cbf8d0ccf9c8b9b177` |
-| 2 | `theorem` | [exists_isClopen_upper_of_not_le](../../../../GeneralTopology/PriestleyExistsIsClopenUpperOfNotLe.lean/declarations/exists-isclopen-upper-of-not-le.md) | 47 | `result-track:3cecc2f22c080f571c3e88c0f3804198e0707e1bccb9041dc382339ae6955a54` |
-| 3 | `theorem` | [exists_isClopen_lower_of_not_le](../../../../GeneralTopology/PriestleyExistsIsClopenUpperOfNotLe.lean/declarations/exists-isclopen-lower-of-not-le.md) | 51 | `result-track:2c0fab796c7f2ffeea54fe195961c534405e3eddacabd6f6c711d16709e2f036` |
-| 4 | `theorem` | [exists_isClopen_upper_or_lower_of_ne](../../../../GeneralTopology/PriestleyExistsIsClopenUpperOfNotLe.lean/declarations/exists-isclopen-upper-or-lower-of-ne.md) | 62 | `result-track:7942475709c42243941f4a0c192fa98624ae44a3c4fa3292de13fcec0487e3b5` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/PriestleyExistsIsClopenUpperOfNotLe.lean/declarations/instance.md) | 70 | `declaration-track:ded3200961a1c4bbd2a261887ae71c1ba51f6b024ac203b0bffa9ffd4b9c68e7` |
+| 1 | `class` | [PriestleySpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyExistsIsClopenUpperOfNotLe.lean/declarations/priestleyspace.md) | 38 | `declaration-track:9486c7e9fdf98aa4042a75f498e2d695159a11655e44d0cbf8d0ccf9c8b9b177` |
+| 2 | `theorem` | [exists_isClopen_upper_of_not_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyExistsIsClopenUpperOfNotLe.lean/declarations/exists-isclopen-upper-of-not-le.md) | 47 | `result-track:3cecc2f22c080f571c3e88c0f3804198e0707e1bccb9041dc382339ae6955a54` |
+| 3 | `theorem` | [exists_isClopen_lower_of_not_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyExistsIsClopenUpperOfNotLe.lean/declarations/exists-isclopen-lower-of-not-le.md) | 51 | `result-track:2c0fab796c7f2ffeea54fe195961c534405e3eddacabd6f6c711d16709e2f036` |
+| 4 | `theorem` | [exists_isClopen_upper_or_lower_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyExistsIsClopenUpperOfNotLe.lean/declarations/exists-isclopen-upper-or-lower-of-ne.md) | 62 | `result-track:7942475709c42243941f4a0c192fa98624ae44a3c4fa3292de13fcec0487e3b5` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyExistsIsClopenUpperOfNotLe.lean/declarations/instance.md) | 70 | `declaration-track:ded3200961a1c4bbd2a261887ae71c1ba51f6b024ac203b0bffa9ffd4b9c68e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

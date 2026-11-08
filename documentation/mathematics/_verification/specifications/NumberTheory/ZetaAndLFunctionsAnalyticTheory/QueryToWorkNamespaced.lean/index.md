@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QueryToWorkNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QueryToWorkNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QueryToWorkNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QueryToWorkNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [OracleToConcreteReduction](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QueryToWorkNamespaced.lean/declarations/oracletoconcretereduction.md) | 17 | `declaration-track:e453d7a92420eb3850d17626d1b64a3f6439433c2e5dbef306ebdfee7ec90e45` |
-| 2 | `abbrev` | [QueryToWorkCertificate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QueryToWorkNamespaced.lean/declarations/querytoworkcertificate.md) | 19 | `declaration-track:98c988491bcd823dcdb58c307d4fa6ec81fe62c91e8564a3cb7e01d4498184fd` |
-| 3 | `abbrev` | [ConcreteHardnessCertificate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QueryToWorkNamespaced.lean/declarations/concretehardnesscertificate.md) | 21 | `declaration-track:43cd1590a1d64d4855bb985b947806f43db4037b16d7a2dafee0372f443bf975` |
+| 1 | `abbrev` | [OracleToConcreteReduction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QueryToWorkNamespaced.lean/declarations/oracletoconcretereduction.md) | 17 | `declaration-track:e453d7a92420eb3850d17626d1b64a3f6439433c2e5dbef306ebdfee7ec90e45` |
+| 2 | `abbrev` | [QueryToWorkCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QueryToWorkNamespaced.lean/declarations/querytoworkcertificate.md) | 19 | `declaration-track:98c988491bcd823dcdb58c307d4fa6ec81fe62c91e8564a3cb7e01d4498184fd` |
+| 3 | `abbrev` | [ConcreteHardnessCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QueryToWorkNamespaced.lean/declarations/concretehardnesscertificate.md) | 21 | `declaration-track:43cd1590a1d64d4855bb985b947806f43db4037b16d7a2dafee0372f443bf975` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

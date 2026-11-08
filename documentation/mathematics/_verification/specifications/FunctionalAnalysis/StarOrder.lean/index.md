@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/StarOrder.lean/index.md) · [Full source](../../../../FunctionalAnalysis/StarOrder.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/StarOrder.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/StarOrder.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IsPositive.spectrumRestricts](../../../../FunctionalAnalysis/StarOrder.lean/declarations/ispositive-spectrumrestricts.md) | 30 | `result-track:79405ea654b9e39bab512f6d117fd75eaa5365beb2e9260da942527b43c1cef0` |
-| 2 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/StarOrder.lean/declarations/instance.md) | 48 | `declaration-track:44fd1a9654bfaecc65a7cf16a45949e976f305c17606266ab1cd61cb4cc3e319` |
-| 3 | `lemma` | [instStarOrderedRingRCLike](../../../../FunctionalAnalysis/StarOrder.lean/declarations/inststarorderedringrclike.md) | 54 | `result-track:37ee8074036996f6b37e03d2fb77398057175497b6c75b24c79053637d783969` |
-| 4 | `instance` | [instStarOrderedRing](../../../../FunctionalAnalysis/StarOrder.lean/declarations/inststarorderedring.md) | 74 | `declaration-track:53b98c04a76a2b9d0cecec8135520d4b0bd08b10cac982bcaa33412cb5e9fb19` |
+| 1 | `lemma` | [IsPositive.spectrumRestricts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/StarOrder.lean/declarations/ispositive-spectrumrestricts.md) | 30 | `result-track:79405ea654b9e39bab512f6d117fd75eaa5365beb2e9260da942527b43c1cef0` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/StarOrder.lean/declarations/instance.md) | 48 | `declaration-track:44fd1a9654bfaecc65a7cf16a45949e976f305c17606266ab1cd61cb4cc3e319` |
+| 3 | `lemma` | [instStarOrderedRingRCLike](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/StarOrder.lean/declarations/inststarorderedringrclike.md) | 54 | `result-track:37ee8074036996f6b37e03d2fb77398057175497b6c75b24c79053637d783969` |
+| 4 | `instance` | [instStarOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/StarOrder.lean/declarations/inststarorderedring.md) | 74 | `declaration-track:53b98c04a76a2b9d0cecec8135520d4b0bd08b10cac982bcaa33412cb5e9fb19` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

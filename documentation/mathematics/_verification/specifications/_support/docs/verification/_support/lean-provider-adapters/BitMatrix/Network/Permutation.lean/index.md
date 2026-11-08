@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../../../../../_support/docs/verification/_support/lean-provider-adapters/BitMatrix/Network/Permutation.lean/index.md) · [Full source](../../../../../../../../../../_support/docs/verification/_support/lean-provider-adapters/BitMatrix/Network/Permutation.lean/source.md)
+[Module and every result](../../../../../../../../../../_support/provider-documentation/lean-provider-adapters/BitMatrix/Network/Permutation.lean/index.md) · [Full source](../../../../../../../../../../_support/provider-documentation/lean-provider-adapters/BitMatrix/Network/Permutation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,14 +46,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Round Composition](../../../../../../../../../../Combinatorics/RoundComposition.lean/index.md) — import line 1; pinned internal source present.
-- [Boolean Permutation Components Identity Avalanche Counterexample](../../../../../../../../../../Combinatorics/BooleanPermutationComponentsIdentityAvalancheCounterexample.lean/index.md) — import line 2; pinned internal source present.
-- [Coordinate Derivatives](../../../../../../../../../../Combinatorics/CoordinateDerivatives.lean/index.md) — import line 3; pinned internal source present.
-- [Branch Number](../../../../../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/index.md) — import line 4; pinned internal source present.
-- [State Dependent Corrections](../../../../../../../../../../Combinatorics/StateDependentCorrections.lean/index.md) — import line 5; pinned internal source present.
-- [Two Step Maps](../../../../../../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/index.md) — import line 6; pinned internal source present.
-- [Exact Correction Counterexample](../../../../../../../../../../Combinatorics/ExactCorrectionCounterexample.lean/index.md) — import line 7; pinned internal source present.
-- [Square Zero Maps](../../../../../../../../../../MathematicalLogicAndFoundations/GeneralLogic/SquareZeroMaps.lean/index.md) — import line 8; pinned internal source present.
+- [Round Composition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/index.md) — import line 1; pinned internal source present.
+- [Boolean Permutation Components Identity Avalanche Counterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanPermutationComponentsIdentityAvalancheCounterexample.lean/index.md) — import line 2; pinned internal source present.
+- [Coordinate Derivatives](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinateDerivatives.lean/index.md) — import line 3; pinned internal source present.
+- [Branch Number](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BranchNumber.lean/index.md) — import line 4; pinned internal source present.
+- [State Dependent Corrections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StateDependentCorrections.lean/index.md) — import line 5; pinned internal source present.
+- [Two Step Maps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/index.md) — import line 6; pinned internal source present.
+- [Exact Correction Counterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactCorrectionCounterexample.lean/index.md) — import line 7; pinned internal source present.
+- [Square Zero Maps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SquareZeroMaps.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -64,14 +64,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [xorTranslation](../../../../../../../../../../_support/docs/verification/_support/lean-provider-adapters/BitMatrix/Network/Permutation.lean/declarations/xortranslation--b2561516ef073b684fdae15e.md) | 24 | `declaration-track:b2561516ef073b684fdae15e293b3716baa0eda5f21c8f76af06f5be98e9a3d2` |
-| 2 | `theorem` | [xorTranslation_apply](../../../../../../../../../../_support/docs/verification/_support/lean-provider-adapters/BitMatrix/Network/Permutation.lean/declarations/xortranslation-apply--a9bf95a9b22c7775a17ef92b.md) | 27 | `result-track:a9bf95a9b22c7775a17ef92b62e74fe394b4111860aa0aeb77298cb40975983b` |
-| 3 | `abbrev` | [coordinatePermutation](../../../../../../../../../../_support/docs/verification/_support/lean-provider-adapters/BitMatrix/Network/Permutation.lean/declarations/coordinatepermutation--aa8c97ffe9fc432aceb27975.md) | 31 | `declaration-track:aa8c97ffe9fc432aceb27975d7d71d4c1f70e42d0481cf05135ad3962998f8b4` |
-| 4 | `theorem` | [coordinatePermutation_apply](../../../../../../../../../../_support/docs/verification/_support/lean-provider-adapters/BitMatrix/Network/Permutation.lean/declarations/coordinatepermutation-apply--c953197926291d99811dd26b.md) | 35 | `result-track:c953197926291d99811dd26bde9b8e76f4a9bf4be33643c8e4a7f05e2cafc43c` |
-| 5 | `theorem` | [coordinatePermutation_xor](../../../../../../../../../../_support/docs/verification/_support/lean-provider-adapters/BitMatrix/Network/Permutation.lean/declarations/coordinatepermutation-xor--4ff791a709abef2c77aca9ee.md) | 40 | `result-track:4ff791a709abef2c77aca9ee9049bbd1927abc16b4c0d597a11d7209e1f1d9d4` |
-| 6 | `theorem` | [hammingWeight_coordinatePermutation](../../../../../../../../../../_support/docs/verification/_support/lean-provider-adapters/BitMatrix/Network/Permutation.lean/declarations/hammingweight-coordinatepermutation--d817ae18a939dd7774e2951a.md) | 46 | `result-track:d817ae18a939dd7774e2951ad06197de610db88322a3ada5d2a6b66471e964f4` |
-| 7 | `theorem` | [coordinatePermutation_sacScore](../../../../../../../../../../_support/docs/verification/_support/lean-provider-adapters/BitMatrix/Network/Permutation.lean/declarations/coordinatepermutation-sacscore--5c562943facf608817dfc459.md) | 51 | `result-track:5c562943facf608817dfc4590049fdf729fd6c9a47f74a199a514b8d0ca023af` |
-| 8 | `theorem` | [coordinatePermutation_varianceScore](../../../../../../../../../../_support/docs/verification/_support/lean-provider-adapters/BitMatrix/Network/Permutation.lean/declarations/coordinatepermutation-variancescore--ba296697475407b7a76dd759.md) | 56 | `result-track:ba296697475407b7a76dd7590d9e013735331f5ffc518ec51f705916b58d0325` |
+| 1 | `abbrev` | [xorTranslation](../../../../../../../../../../_support/provider-documentation/lean-provider-adapters/BitMatrix/Network/Permutation.lean/declarations/xortranslation.md) | 24 | `declaration-track:b2561516ef073b684fdae15e293b3716baa0eda5f21c8f76af06f5be98e9a3d2` |
+| 2 | `theorem` | [xorTranslation_apply](../../../../../../../../../../_support/provider-documentation/lean-provider-adapters/BitMatrix/Network/Permutation.lean/declarations/xortranslation-apply.md) | 27 | `result-track:a9bf95a9b22c7775a17ef92b62e74fe394b4111860aa0aeb77298cb40975983b` |
+| 3 | `abbrev` | [coordinatePermutation](../../../../../../../../../../_support/provider-documentation/lean-provider-adapters/BitMatrix/Network/Permutation.lean/declarations/coordinatepermutation.md) | 31 | `declaration-track:aa8c97ffe9fc432aceb27975d7d71d4c1f70e42d0481cf05135ad3962998f8b4` |
+| 4 | `theorem` | [coordinatePermutation_apply](../../../../../../../../../../_support/provider-documentation/lean-provider-adapters/BitMatrix/Network/Permutation.lean/declarations/coordinatepermutation-apply.md) | 35 | `result-track:c953197926291d99811dd26bde9b8e76f4a9bf4be33643c8e4a7f05e2cafc43c` |
+| 5 | `theorem` | [coordinatePermutation_xor](../../../../../../../../../../_support/provider-documentation/lean-provider-adapters/BitMatrix/Network/Permutation.lean/declarations/coordinatepermutation-xor.md) | 40 | `result-track:4ff791a709abef2c77aca9ee9049bbd1927abc16b4c0d597a11d7209e1f1d9d4` |
+| 6 | `theorem` | [hammingWeight_coordinatePermutation](../../../../../../../../../../_support/provider-documentation/lean-provider-adapters/BitMatrix/Network/Permutation.lean/declarations/hammingweight-coordinatepermutation.md) | 46 | `result-track:d817ae18a939dd7774e2951ad06197de610db88322a3ada5d2a6b66471e964f4` |
+| 7 | `theorem` | [coordinatePermutation_sacScore](../../../../../../../../../../_support/provider-documentation/lean-provider-adapters/BitMatrix/Network/Permutation.lean/declarations/coordinatepermutation-sacscore.md) | 51 | `result-track:5c562943facf608817dfc4590049fdf729fd6c9a47f74a199a514b8d0ca023af` |
+| 8 | `theorem` | [coordinatePermutation_varianceScore](../../../../../../../../../../_support/provider-documentation/lean-provider-adapters/BitMatrix/Network/Permutation.lean/declarations/coordinatepermutation-variancescore.md) | 56 | `result-track:ba296697475407b7a76dd7590d9e013735331f5ffc518ec51f705916b58d0325` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

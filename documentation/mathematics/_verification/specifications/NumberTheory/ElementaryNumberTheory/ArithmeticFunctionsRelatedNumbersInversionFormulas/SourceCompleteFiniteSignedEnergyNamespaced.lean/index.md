@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCompleteFiniteSignedEnergyNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCompleteFiniteSignedEnergyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCompleteFiniteSignedEnergyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCompleteFiniteSignedEnergyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [strictColumnInterior_eq_complete_signed_energy](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCompleteFiniteSignedEnergyNamespaced.lean/declarations/strictcolumninterior-eq-complete-signed-energy.md) | 35 | `result-track:0e6a82330e63fd5764a9e126b07d820f4167e2068262ef22195ab05695d00796` |
-| 2 | `theorem` | [strictColumnInterior_eq_aligned_divisor_energy](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCompleteFiniteSignedEnergyNamespaced.lean/declarations/strictcolumninterior-eq-aligned-divisor-energy.md) | 53 | `result-track:60de569cb0c4b7ab1ee9df46bcb4e6b1ffa87fd9894e4f38b8eb25883f9a38dc` |
-| 3 | `theorem` | [complete_density_square_completion](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCompleteFiniteSignedEnergyNamespaced.lean/declarations/complete-density-square-completion.md) | 70 | `result-track:ad4eb61290d7c587bc7e0809739da6d87de73835b46e6ee23f61adfe975fcb47` |
+| 1 | `theorem` | [strictColumnInterior_eq_complete_signed_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCompleteFiniteSignedEnergyNamespaced.lean/declarations/strictcolumninterior-eq-complete-signed-energy.md) | 35 | `result-track:0e6a82330e63fd5764a9e126b07d820f4167e2068262ef22195ab05695d00796` |
+| 2 | `theorem` | [strictColumnInterior_eq_aligned_divisor_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCompleteFiniteSignedEnergyNamespaced.lean/declarations/strictcolumninterior-eq-aligned-divisor-energy.md) | 53 | `result-track:60de569cb0c4b7ab1ee9df46bcb4e6b1ffa87fd9894e4f38b8eb25883f9a38dc` |
+| 3 | `theorem` | [complete_density_square_completion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCompleteFiniteSignedEnergyNamespaced.lean/declarations/complete-density-square-completion.md) | 70 | `result-track:ad4eb61290d7c587bc7e0809739da6d87de73835b46e6ee23f61adfe975fcb47` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

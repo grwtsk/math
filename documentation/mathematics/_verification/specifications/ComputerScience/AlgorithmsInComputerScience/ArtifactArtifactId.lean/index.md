@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactArtifactId.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactArtifactId.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactArtifactId.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactArtifactId.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ArtifactId](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactArtifactId.lean/declarations/artifactid.md) | 7 | `declaration-track:86f751ec7249643d148f16eda62cee774d16cba65175c15763c5e3b7dceaa883` |
-| 2 | `inductive` | [ArtifactKind](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactArtifactId.lean/declarations/artifactkind.md) | 10 | `declaration-track:2d26c869325c3a03dfd22910f1397ef4d372ddfb7f5c35c5d16c7fd56d6815c2` |
-| 3 | `structure` | [RawArtifact](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactArtifactId.lean/declarations/rawartifact.md) | 25 | `declaration-track:04c5681a537ee129344561da04539cb589e8c0ddf279b5feb863e73c9bfcf5aa` |
-| 4 | `def` | [RawArtifact.IsOpaque](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactArtifactId.lean/declarations/rawartifact-isopaque.md) | 44 | `declaration-track:c9fa4b14ab6e01ef0ba594c7d4fb9bbb64b5e7fb2bf4842d8aeb82f91bad1b5c` |
-| 5 | `theorem` | [RawArtifact.byte_round_trip](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactArtifactId.lean/declarations/rawartifact-byte-round-trip.md) | 48 | `result-track:9ab4c9952fb78f9fc2d488b3e97348d83bed07feb9fadc496e2b1c6e48ccb203` |
+| 1 | `abbrev` | [ArtifactId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactArtifactId.lean/declarations/artifactid.md) | 7 | `declaration-track:86f751ec7249643d148f16eda62cee774d16cba65175c15763c5e3b7dceaa883` |
+| 2 | `inductive` | [ArtifactKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactArtifactId.lean/declarations/artifactkind.md) | 10 | `declaration-track:2d26c869325c3a03dfd22910f1397ef4d372ddfb7f5c35c5d16c7fd56d6815c2` |
+| 3 | `structure` | [RawArtifact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactArtifactId.lean/declarations/rawartifact.md) | 25 | `declaration-track:04c5681a537ee129344561da04539cb589e8c0ddf279b5feb863e73c9bfcf5aa` |
+| 4 | `def` | [RawArtifact.IsOpaque](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactArtifactId.lean/declarations/rawartifact-isopaque.md) | 44 | `declaration-track:c9fa4b14ab6e01ef0ba594c7d4fb9bbb64b5e7fb2bf4842d8aeb82f91bad1b5c` |
+| 5 | `theorem` | [RawArtifact.byte_round_trip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArtifactArtifactId.lean/declarations/rawartifact-byte-round-trip.md) | 48 | `result-track:9ab4c9952fb78f9fc2d488b3e97348d83bed07feb9fadc496e2b1c6e48ccb203` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

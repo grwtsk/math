@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/ImproperIntegralsNamespaced.lean/index.md) · [Full source](../../../../SpecialFunctions/ImproperIntegralsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegralsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegralsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integrableOn_exp_Iic](../../../../SpecialFunctions/ImproperIntegralsNamespaced.lean/declarations/integrableon-exp-iic.md) | 40 | `result-track:dc2ddd9664c64ba75783ab1ab0adeb6dab92b0f51c1d1aaeb440c3fe76a1499e` |
-| 2 | `theorem` | [integral_exp_Iic](../../../../SpecialFunctions/ImproperIntegralsNamespaced.lean/declarations/integral-exp-iic.md) | 49 | `result-track:44a2237df46c3bd4e65848896375ceb8ef2f23b360f5ad9ef81ad6e7a090f2ff` |
-| 3 | `theorem` | [integral_exp_Iic_zero](../../../../SpecialFunctions/ImproperIntegralsNamespaced.lean/declarations/integral-exp-iic-zero.md) | 57 | `result-track:3a3693aa943ea4122aa15abfa1a14a3b61327a68e3d3a80084d0235d5a7dd557` |
-| 4 | `theorem` | [integral_exp_neg_Ioi](../../../../SpecialFunctions/ImproperIntegralsNamespaced.lean/declarations/integral-exp-neg-ioi.md) | 61 | `result-track:2cc0e54beeb1d55dcb500d1d2bc09988f8f06fb02f131c7c4b9725f76a79337a` |
-| 5 | `theorem` | [integral_exp_neg_Ioi_zero](../../../../SpecialFunctions/ImproperIntegralsNamespaced.lean/declarations/integral-exp-neg-ioi-zero.md) | 65 | `result-track:54ff4ae814c793ac1aae871d95bb6efa1c15d22135dab4c6bce404fd364a89d1` |
-| 6 | `theorem` | [integrableOn_Ioi_rpow_of_lt](../../../../SpecialFunctions/ImproperIntegralsNamespaced.lean/declarations/integrableon-ioi-rpow-of-lt.md) | 70 | `result-track:459c23967a2a08c04920df99c3c76806fe38e8f080b029b4cbb4ccdba2d6ef59` |
-| 7 | `theorem` | [integral_Ioi_rpow_of_lt](../../../../SpecialFunctions/ImproperIntegralsNamespaced.lean/declarations/integral-ioi-rpow-of-lt.md) | 84 | `result-track:b353049478d1ba7a0261c97f7e3ff87b5670c4ed53dbbe3d052e07568a101b76` |
-| 8 | `theorem` | [integrableOn_Ioi_cpow_of_lt](../../../../SpecialFunctions/ImproperIntegralsNamespaced.lean/declarations/integrableon-ioi-cpow-of-lt.md) | 97 | `result-track:0bab53dc6f90490a6545968815ca380d4a8b8089c665ef1b27c3481a95859a9b` |
-| 9 | `theorem` | [integral_Ioi_cpow_of_lt](../../../../SpecialFunctions/ImproperIntegralsNamespaced.lean/declarations/integral-ioi-cpow-of-lt.md) | 108 | `result-track:95f919742de11d5ca088cf0b238e9dae99217d7dc335505c8cf4861f873e29da` |
+| 1 | `theorem` | [integrableOn_exp_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegralsNamespaced.lean/declarations/integrableon-exp-iic.md) | 40 | `result-track:dc2ddd9664c64ba75783ab1ab0adeb6dab92b0f51c1d1aaeb440c3fe76a1499e` |
+| 2 | `theorem` | [integral_exp_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegralsNamespaced.lean/declarations/integral-exp-iic.md) | 49 | `result-track:44a2237df46c3bd4e65848896375ceb8ef2f23b360f5ad9ef81ad6e7a090f2ff` |
+| 3 | `theorem` | [integral_exp_Iic_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegralsNamespaced.lean/declarations/integral-exp-iic-zero.md) | 57 | `result-track:3a3693aa943ea4122aa15abfa1a14a3b61327a68e3d3a80084d0235d5a7dd557` |
+| 4 | `theorem` | [integral_exp_neg_Ioi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegralsNamespaced.lean/declarations/integral-exp-neg-ioi.md) | 61 | `result-track:2cc0e54beeb1d55dcb500d1d2bc09988f8f06fb02f131c7c4b9725f76a79337a` |
+| 5 | `theorem` | [integral_exp_neg_Ioi_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegralsNamespaced.lean/declarations/integral-exp-neg-ioi-zero.md) | 65 | `result-track:54ff4ae814c793ac1aae871d95bb6efa1c15d22135dab4c6bce404fd364a89d1` |
+| 6 | `theorem` | [integrableOn_Ioi_rpow_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegralsNamespaced.lean/declarations/integrableon-ioi-rpow-of-lt.md) | 70 | `result-track:459c23967a2a08c04920df99c3c76806fe38e8f080b029b4cbb4ccdba2d6ef59` |
+| 7 | `theorem` | [integral_Ioi_rpow_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegralsNamespaced.lean/declarations/integral-ioi-rpow-of-lt.md) | 84 | `result-track:b353049478d1ba7a0261c97f7e3ff87b5670c4ed53dbbe3d052e07568a101b76` |
+| 8 | `theorem` | [integrableOn_Ioi_cpow_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegralsNamespaced.lean/declarations/integrableon-ioi-cpow-of-lt.md) | 97 | `result-track:0bab53dc6f90490a6545968815ca380d4a8b8089c665ef1b27c3481a95859a9b` |
+| 9 | `theorem` | [integral_Ioi_cpow_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegralsNamespaced.lean/declarations/integral-ioi-cpow-of-lt.md) | 108 | `result-track:95f919742de11d5ca088cf0b238e9dae99217d7dc335505c8cf4861f873e29da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

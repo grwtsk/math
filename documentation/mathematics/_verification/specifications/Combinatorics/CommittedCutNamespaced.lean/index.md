@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CommittedCutNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/CommittedCutNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CommittedCutNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CommittedCutNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MobiusSnapshotFamily](../../../../Combinatorics/CommittedCutNamespaced.lean/declarations/mobiussnapshotfamily.md) | 22 | `declaration-track:dc31e0a9d7d630aaa35dc376da577fee70c0101fb8e9022ce1c173d9883fb134` |
-| 2 | `structure` | [SnapshotBoundCertificate](../../../../Combinatorics/CommittedCutNamespaced.lean/declarations/snapshotboundcertificate.md) | 31 | `declaration-track:2d52178acdc79febcc72b7f9f9aed4a915a515256ea42b7e74b7a7fc8f72df65` |
-| 3 | `structure` | [MobiusOntologyCommittedCut](../../../../Combinatorics/CommittedCutNamespaced.lean/declarations/mobiusontologycommittedcut.md) | 39 | `declaration-track:0f6347466278f210ef1ea61d2e6320ed286c9f62f8a5bf54c657a72caa02fba4` |
-| 4 | `theorem` | [committed_event_exactly_once](../../../../Combinatorics/CommittedCutNamespaced.lean/declarations/committed-event-exactly-once.md) | 67 | `result-track:7414710427882a04e0eb5784765f5e02403bbb658037bdf1773f3ba4157a29c2` |
+| 1 | `structure` | [MobiusSnapshotFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CommittedCutNamespaced.lean/declarations/mobiussnapshotfamily.md) | 22 | `declaration-track:dc31e0a9d7d630aaa35dc376da577fee70c0101fb8e9022ce1c173d9883fb134` |
+| 2 | `structure` | [SnapshotBoundCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CommittedCutNamespaced.lean/declarations/snapshotboundcertificate.md) | 31 | `declaration-track:2d52178acdc79febcc72b7f9f9aed4a915a515256ea42b7e74b7a7fc8f72df65` |
+| 3 | `structure` | [MobiusOntologyCommittedCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CommittedCutNamespaced.lean/declarations/mobiusontologycommittedcut.md) | 39 | `declaration-track:0f6347466278f210ef1ea61d2e6320ed286c9f62f8a5bf54c657a72caa02fba4` |
+| 4 | `theorem` | [committed_event_exactly_once](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CommittedCutNamespaced.lean/declarations/committed-event-exactly-once.md) | 67 | `result-track:7414710427882a04e0eb5784765f5e02403bbb658037bdf1773f3ba4157a29c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

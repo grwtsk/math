@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CombinatorsDropDropNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CombinatorsDropDropNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CombinatorsDropDropNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CombinatorsDropDropNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,12 +62,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Iter.drop_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CombinatorsDropDropNamespacedPublic.lean/declarations/iter-drop-eq.md) | 32 | `result-track:f72d9fd38c4dfc1f2e1baa4949b778a260eeabbdc3477c046410b7b241a6f398` |
-| 2 | `theorem` | [Iter.step_drop](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CombinatorsDropDropNamespacedPublic.lean/declarations/iter-step-drop.md) | 37 | `result-track:6403649fc7627eaa4a1389f7b4e563fc828fa0be3b7080c1feff1fdc40e41999` |
-| 3 | `theorem` | [Iter.atIdxSlow?_drop](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CombinatorsDropDropNamespacedPublic.lean/declarations/iter-atidxslow-drop.md) | 51 | `result-track:02e0b7e07825dfd0992f03f76ec4323f60d65ec07cb0febf18dbbb13fe67209f` |
-| 4 | `theorem` | [Iter.toList_drop](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CombinatorsDropDropNamespacedPublic.lean/declarations/iter-tolist-drop.md) | 62 | `result-track:44eeac17d385ab46ed2eb9cf4b080dd9b3586ab54053f9f7123c6e05991dd4d2` |
-| 5 | `theorem` | [Iter.toListRev_drop](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CombinatorsDropDropNamespacedPublic.lean/declarations/iter-tolistrev-drop.md) | 70 | `result-track:7dbaac5e5ff5f343d1415a5fc49b39af8d7a2c6446907cb089f7e7875a509b40` |
-| 6 | `theorem` | [Iter.toArray_drop](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CombinatorsDropDropNamespacedPublic.lean/declarations/iter-toarray-drop.md) | 76 | `result-track:a28469c3ff07ad133f78f04a3ff1305cb5a83205f4072a85aed3f559034eeeed` |
+| 1 | `theorem` | [Iter.drop_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CombinatorsDropDropNamespacedPublic.lean/declarations/iter-drop-eq.md) | 32 | `result-track:f72d9fd38c4dfc1f2e1baa4949b778a260eeabbdc3477c046410b7b241a6f398` |
+| 2 | `theorem` | [Iter.step_drop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CombinatorsDropDropNamespacedPublic.lean/declarations/iter-step-drop.md) | 37 | `result-track:6403649fc7627eaa4a1389f7b4e563fc828fa0be3b7080c1feff1fdc40e41999` |
+| 3 | `theorem` | [Iter.atIdxSlow?_drop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CombinatorsDropDropNamespacedPublic.lean/declarations/iter-atidxslow-drop.md) | 51 | `result-track:02e0b7e07825dfd0992f03f76ec4323f60d65ec07cb0febf18dbbb13fe67209f` |
+| 4 | `theorem` | [Iter.toList_drop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CombinatorsDropDropNamespacedPublic.lean/declarations/iter-tolist-drop.md) | 62 | `result-track:44eeac17d385ab46ed2eb9cf4b080dd9b3586ab54053f9f7123c6e05991dd4d2` |
+| 5 | `theorem` | [Iter.toListRev_drop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CombinatorsDropDropNamespacedPublic.lean/declarations/iter-tolistrev-drop.md) | 70 | `result-track:7dbaac5e5ff5f343d1415a5fc49b39af8d7a2c6446907cb089f7e7875a509b40` |
+| 6 | `theorem` | [Iter.toArray_drop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CombinatorsDropDropNamespacedPublic.lean/declarations/iter-toarray-drop.md) | 76 | `result-track:a28469c3ff07ad133f78f04a3ff1305cb5a83205f4072a85aed3f559034eeeed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

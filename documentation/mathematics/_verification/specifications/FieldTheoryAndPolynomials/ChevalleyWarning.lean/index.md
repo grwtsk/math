@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/ChevalleyWarning.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/ChevalleyWarning.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarning.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarning.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [MvPolynomial.sum_eval_eq_zero](../../../../FieldTheoryAndPolynomials/ChevalleyWarning.lean/declarations/mvpolynomial-sum-eval-eq-zero.md) | 51 | `result-track:cf0b46b7ec8f455a0e5c818a5553d4d4b8e7cb8881eebf4d004878825ba13ec9` |
-| 2 | `theorem` | [char_dvd_card_solutions_of_sum_lt](../../../../FieldTheoryAndPolynomials/ChevalleyWarning.lean/declarations/char-dvd-card-solutions-of-sum-lt.md) | 104 | `result-track:ef596f2c005055d7befbd2e8fa89edec9cc1fb4f7fcead1690c78dc101f63695` |
-| 3 | `theorem` | [char_dvd_card_solutions_of_fintype_sum_lt](../../../../FieldTheoryAndPolynomials/ChevalleyWarning.lean/declarations/char-dvd-card-solutions-of-fintype-sum-lt.md) | 162 | `result-track:5c9fcf287e458a37d56968c937b7078c278c7cf2cdd4986b267d1d3cab65084e` |
-| 4 | `theorem` | [char_dvd_card_solutions](../../../../FieldTheoryAndPolynomials/ChevalleyWarning.lean/declarations/char-dvd-card-solutions.md) | 173 | `result-track:1939d25a30d82bdd3cfeb50df702f4e6587d8688a4d896b9d2841007fda0fbf8` |
-| 5 | `theorem` | [char_dvd_card_solutions_of_add_lt](../../../../FieldTheoryAndPolynomials/ChevalleyWarning.lean/declarations/char-dvd-card-solutions-of-add-lt.md) | 185 | `result-track:4c6b115390c1129e21263cbef9deaa2bc170de1db83c4dc5f3ff6df90bbf1f5d` |
+| 1 | `theorem` | [MvPolynomial.sum_eval_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarning.lean/declarations/mvpolynomial-sum-eval-eq-zero.md) | 51 | `result-track:cf0b46b7ec8f455a0e5c818a5553d4d4b8e7cb8881eebf4d004878825ba13ec9` |
+| 2 | `theorem` | [char_dvd_card_solutions_of_sum_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarning.lean/declarations/char-dvd-card-solutions-of-sum-lt.md) | 104 | `result-track:ef596f2c005055d7befbd2e8fa89edec9cc1fb4f7fcead1690c78dc101f63695` |
+| 3 | `theorem` | [char_dvd_card_solutions_of_fintype_sum_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarning.lean/declarations/char-dvd-card-solutions-of-fintype-sum-lt.md) | 162 | `result-track:5c9fcf287e458a37d56968c937b7078c278c7cf2cdd4986b267d1d3cab65084e` |
+| 4 | `theorem` | [char_dvd_card_solutions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarning.lean/declarations/char-dvd-card-solutions.md) | 173 | `result-track:1939d25a30d82bdd3cfeb50df702f4e6587d8688a4d896b9d2841007fda0fbf8` |
+| 5 | `theorem` | [char_dvd_card_solutions_of_add_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarning.lean/declarations/char-dvd-card-solutions-of-add-lt.md) | 185 | `result-track:4c6b115390c1129e21263cbef9deaa2bc170de1db83c4dc5f3ff6df90bbf1f5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/WeightedSummatoryNamespacedPublic.lean/index.md) · [Full source](../../../../RealFunctions/WeightedSummatoryNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedSummatoryNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedSummatoryNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [HasWeightedSummatoryBound](../../../../RealFunctions/WeightedSummatoryNamespacedPublic.lean/declarations/hasweightedsummatorybound.md) | 36 | `declaration-track:b6e9a40f9bdb688a49c963caf0781d5074e85718ae712dfff4d4ff1e9f1eed81` |
-| 2 | `theorem` | [HasWeightedSummatoryBound.mono_exponent](../../../../RealFunctions/WeightedSummatoryNamespacedPublic.lean/declarations/hasweightedsummatorybound-mono-exponent.md) | 43 | `result-track:9cbbc334f3a8b9d106579ff6020f40fb8abd33e507ab1fd434e01a9b4e0bbcaf` |
-| 3 | `theorem` | [hasWeightedSummatoryBound_mono](../../../../RealFunctions/WeightedSummatoryNamespacedPublic.lean/declarations/hasweightedsummatorybound-mono.md) | 61 | `result-track:e40635a7e5b36738c1eb496047c894e61ed1aa5d9b2cdde954c9aaf438ca9f58` |
+| 1 | `def` | [HasWeightedSummatoryBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedSummatoryNamespacedPublic.lean/declarations/hasweightedsummatorybound.md) | 36 | `declaration-track:b6e9a40f9bdb688a49c963caf0781d5074e85718ae712dfff4d4ff1e9f1eed81` |
+| 2 | `theorem` | [HasWeightedSummatoryBound.mono_exponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedSummatoryNamespacedPublic.lean/declarations/hasweightedsummatorybound-mono-exponent.md) | 43 | `result-track:9cbbc334f3a8b9d106579ff6020f40fb8abd33e507ab1fd434e01a9b4e0bbcaf` |
+| 3 | `theorem` | [hasWeightedSummatoryBound_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedSummatoryNamespacedPublic.lean/declarations/hasweightedsummatorybound-mono.md) | 61 | `result-track:e40635a7e5b36738c1eb496047c894e61ed1aa5d9b2cdde954c9aaf438ca9f58` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

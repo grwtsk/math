@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalSymmetric.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalSymmetric.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalSymmetric.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalSymmetric.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [braiding](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalSymmetric.lean/declarations/braiding.md) | 25 | `declaration-track:4c308a03cd6d479d4438eb1db3dcd962cef9535e67a03fd819b5e02d3b8533c9` |
-| 2 | `theorem` | [braiding_naturality](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalSymmetric.lean/declarations/braiding-naturality.md) | 33 | `result-track:e8e423c15f7ec1c1889f20e2e1aace4e237871f1944dea8c38a591b6a7d7d461` |
-| 3 | `theorem` | [hexagon_forward](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalSymmetric.lean/declarations/hexagon-forward.md) | 42 | `result-track:e0c9214626f6aad692a2de459ad8568859028e464a5731e04bf763ac199a9f1d` |
-| 4 | `theorem` | [hexagon_reverse](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalSymmetric.lean/declarations/hexagon-reverse.md) | 52 | `result-track:b2392f6c8c27d68be5627ba75ea68dc31b5eae211c34bb9b0a3f5df4d082614f` |
-| 5 | `instance` | [symmetricCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalSymmetric.lean/declarations/symmetriccategory.md) | 65 | `declaration-track:7e55a4cf545ec9aebbc13633ff934c1393453217a81d008f6b08cdae3dbbc52d` |
-| 6 | `theorem` | [braiding_hom_apply](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalSymmetric.lean/declarations/braiding-hom-apply.md) | 79 | `result-track:08d2b8caea4600ca762885af04bed41d78f68fe4140aa21d6615fb9f2112eed7` |
-| 7 | `theorem` | [braiding_inv_apply](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalSymmetric.lean/declarations/braiding-inv-apply.md) | 86 | `result-track:dce9598d0cf324222122ce13ccb84a249f2c0a0bde4c056f9cd45f75ea346845` |
+| 1 | `def` | [braiding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalSymmetric.lean/declarations/braiding.md) | 25 | `declaration-track:4c308a03cd6d479d4438eb1db3dcd962cef9535e67a03fd819b5e02d3b8533c9` |
+| 2 | `theorem` | [braiding_naturality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalSymmetric.lean/declarations/braiding-naturality.md) | 33 | `result-track:e8e423c15f7ec1c1889f20e2e1aace4e237871f1944dea8c38a591b6a7d7d461` |
+| 3 | `theorem` | [hexagon_forward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalSymmetric.lean/declarations/hexagon-forward.md) | 42 | `result-track:e0c9214626f6aad692a2de459ad8568859028e464a5731e04bf763ac199a9f1d` |
+| 4 | `theorem` | [hexagon_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalSymmetric.lean/declarations/hexagon-reverse.md) | 52 | `result-track:b2392f6c8c27d68be5627ba75ea68dc31b5eae211c34bb9b0a3f5df4d082614f` |
+| 5 | `instance` | [symmetricCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalSymmetric.lean/declarations/symmetriccategory.md) | 65 | `declaration-track:7e55a4cf545ec9aebbc13633ff934c1393453217a81d008f6b08cdae3dbbc52d` |
+| 6 | `theorem` | [braiding_hom_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalSymmetric.lean/declarations/braiding-hom-apply.md) | 79 | `result-track:08d2b8caea4600ca762885af04bed41d78f68fe4140aa21d6615fb9f2112eed7` |
+| 7 | `theorem` | [braiding_inv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonoidalSymmetric.lean/declarations/braiding-inv-apply.md) | 86 | `result-track:dce9598d0cf324222122ce13ccb84a249f2c0a0bde4c056f9cd45f75ea346845` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

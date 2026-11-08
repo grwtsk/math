@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MetrizableContinuousMap.lean/index.md) · [Full source](../../../../GeneralTopology/MetrizableContinuousMap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableContinuousMap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableContinuousMap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/MetrizableContinuousMap.lean/declarations/instance.md) | 24 | `declaration-track:05fe25ec6e33c206ea542d865f575fbfe4c014836389e4af09115cebc40f92d8` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/MetrizableContinuousMap.lean/declarations/instance-source-edition-2.md) | 28 | `declaration-track:3e5976255566696924e37c41190f636c590700578d458faac619646ca41da998` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableContinuousMap.lean/declarations/instance.md) | 24 | `declaration-track:05fe25ec6e33c206ea542d865f575fbfe4c014836389e4af09115cebc40f92d8` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableContinuousMap.lean/declarations/instance-source-edition-2.md) | 28 | `declaration-track:3e5976255566696924e37c41190f636c590700578d458faac619646ca41da998` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

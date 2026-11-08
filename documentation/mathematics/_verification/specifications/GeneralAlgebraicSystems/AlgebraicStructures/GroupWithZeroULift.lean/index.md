@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULift.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULift.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULift.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULift.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [mulZeroOneClass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULift.lean/declarations/mulzerooneclass.md) | 25 | `declaration-track:ecd18ca89ee8081c49eef90bb46f23a321df8e3459608c0df16c36bf4eb98f32` |
-| 2 | `instance` | [monoidWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULift.lean/declarations/monoidwithzero.md) | 28 | `declaration-track:fb9814d7ce14a0cf460e5d14fe6e36a3ff93ea2753bc0651394155a61133780b` |
-| 3 | `instance` | [commMonoidWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULift.lean/declarations/commmonoidwithzero.md) | 31 | `declaration-track:08d08b24a385d20345e515636d3c8efa798985c75992a95f65d9a403b35d2472` |
-| 4 | `instance` | [groupWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULift.lean/declarations/groupwithzero.md) | 34 | `declaration-track:0a4541a6b9c686d1e97a7fe72098383843b17147770f80ff0715b97a2f802fdf` |
-| 5 | `instance` | [commGroupWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULift.lean/declarations/commgroupwithzero.md) | 38 | `declaration-track:7f2122cca898ab3e512973b59a89d512a6127d48e7662038b592e1786329765a` |
+| 1 | `instance` | [mulZeroOneClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULift.lean/declarations/mulzerooneclass.md) | 25 | `declaration-track:ecd18ca89ee8081c49eef90bb46f23a321df8e3459608c0df16c36bf4eb98f32` |
+| 2 | `instance` | [monoidWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULift.lean/declarations/monoidwithzero.md) | 28 | `declaration-track:fb9814d7ce14a0cf460e5d14fe6e36a3ff93ea2753bc0651394155a61133780b` |
+| 3 | `instance` | [commMonoidWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULift.lean/declarations/commmonoidwithzero.md) | 31 | `declaration-track:08d08b24a385d20345e515636d3c8efa798985c75992a95f65d9a403b35d2472` |
+| 4 | `instance` | [groupWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULift.lean/declarations/groupwithzero.md) | 34 | `declaration-track:0a4541a6b9c686d1e97a7fe72098383843b17147770f80ff0715b97a2f802fdf` |
+| 5 | `instance` | [commGroupWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroULift.lean/declarations/commgroupwithzero.md) | 38 | `declaration-track:7f2122cca898ab3e512973b59a89d512a6127d48e7662038b592e1786329765a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

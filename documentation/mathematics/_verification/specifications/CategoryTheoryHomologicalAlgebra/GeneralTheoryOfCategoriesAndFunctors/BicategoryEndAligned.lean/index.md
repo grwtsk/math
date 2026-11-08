@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryEndAligned.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryEndAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryEndAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryEndAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [EndMonoidal](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryEndAligned.lean/declarations/endmonoidal.md) | 21 | `declaration-track:d2464abb867664775519cb4c0b2db447c8ba426886f80a8c1333a9dacc450ca3` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryEndAligned.lean/declarations/instance.md) | 27 | `declaration-track:350bdabdf7fe43a7d2606c7585dbe6119cd21d5f2b4c25c65d010011a22d5997` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryEndAligned.lean/declarations/instance-source-edition-2.md) | 30 | `declaration-track:69c4a79cf44b82a996e6343c0eeb7de55db627fc8353190fc1341015e1ecab38` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryEndAligned.lean/declarations/instance-source-edition-3.md) | 40 | `declaration-track:982b7ab352e5770f7bbfc0209a27c0755be412e5d6fbb9edbc134bbbef7e7095` |
+| 1 | `def` | [EndMonoidal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryEndAligned.lean/declarations/endmonoidal.md) | 21 | `declaration-track:d2464abb867664775519cb4c0b2db447c8ba426886f80a8c1333a9dacc450ca3` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryEndAligned.lean/declarations/instance.md) | 27 | `declaration-track:350bdabdf7fe43a7d2606c7585dbe6119cd21d5f2b4c25c65d010011a22d5997` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryEndAligned.lean/declarations/instance-source-edition-2.md) | 30 | `declaration-track:69c4a79cf44b82a996e6343c0eeb7de55db627fc8353190fc1341015e1ecab38` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryEndAligned.lean/declarations/instance-source-edition-3.md) | 40 | `declaration-track:982b7ab352e5770f7bbfc0209a27c0755be412e5d6fbb9edbc134bbbef7e7095` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ArithMultNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ArithMultNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ArithMultNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ArithMultNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ArithMultNamespaced.lean/declarations/example-source-edition-2.md) | 24 | `declaration-track:4ead518dee9f1f1a2f6396443c7106fae1acbf15221dc9ba0a8f3c2a1d82370b` |
-| 2 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ArithMultNamespaced.lean/declarations/example-source-edition-5.md) | 26 | `declaration-track:8fb9c706c8265d76dc59d1ae9966245bd412bf9c1fee8e3b75ef040cf27af8de` |
-| 3 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ArithMultNamespaced.lean/declarations/example.md) | 28 | `declaration-track:1cd4f0a90b9ef01bc07461c8683c02b9358163647d541018738c99cf12c50f47` |
-| 4 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ArithMultNamespaced.lean/declarations/example-source-edition-3.md) | 31 | `declaration-track:5218483607a52f9dabab26ef8493e5b3adc88705b7b5a46ba22a42877a30f7be` |
-| 5 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ArithMultNamespaced.lean/declarations/example-source-edition-4.md) | 34 | `declaration-track:543ffeb779583e770a61087c8ee798a527902800a8e98e9be5340dbe31a43499` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ArithMultNamespaced.lean/declarations/example-source-edition-2.md) | 24 | `declaration-track:4ead518dee9f1f1a2f6396443c7106fae1acbf15221dc9ba0a8f3c2a1d82370b` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ArithMultNamespaced.lean/declarations/example-source-edition-5.md) | 26 | `declaration-track:8fb9c706c8265d76dc59d1ae9966245bd412bf9c1fee8e3b75ef040cf27af8de` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ArithMultNamespaced.lean/declarations/example.md) | 28 | `declaration-track:1cd4f0a90b9ef01bc07461c8683c02b9358163647d541018738c99cf12c50f47` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ArithMultNamespaced.lean/declarations/example-source-edition-3.md) | 31 | `declaration-track:5218483607a52f9dabab26ef8493e5b3adc88705b7b5a46ba22a42877a30f7be` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ArithMultNamespaced.lean/declarations/example-source-edition-4.md) | 34 | `declaration-track:543ffeb779583e770a61087c8ee798a527902800a8e98e9be5340dbe31a43499` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

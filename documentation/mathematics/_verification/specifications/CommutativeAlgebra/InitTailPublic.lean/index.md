@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/InitTailPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/InitTailPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,26 +57,26 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [select](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/select.md) | 59 | `declaration-track:078b95492436829f68e840ef4ebcc2b1b242a5211b037498e5944acdd4ea3a3a` |
-| 2 | `def` | [selectPoly](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/selectpoly.md) | 69 | `declaration-track:063026dbfcbc67b50da1e92db2811ff65fde926166c9dd53d6b4a7fb5d853760` |
-| 3 | `theorem` | [coeff_select](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/coeff-select.md) | 72 | `result-track:1d1dd64884855a77a23f0ebdded84602cda910350949926e01234f69c20f9b1d` |
-| 4 | `instance` | [select_isPoly](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/select-ispoly.md) | 77 | `declaration-track:7ccd5968dc1ce66134eaa7f242b97cdb202d2d2aeb481a5b2daaaeefab71e916` |
-| 5 | `theorem` | [select_add_select_not](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/select-add-select-not.md) | 85 | `result-track:9f78bef5721ad21948f9b55667e1fb2e48cce8cb80ae9db00b51fb37a1b84887` |
-| 6 | `theorem` | [coeff_add_of_disjoint](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/coeff-add-of-disjoint.md) | 108 | `result-track:459af215819db44c336a416fcff138bc0393f41588dc604538e23b10e20cf13d` |
-| 7 | `def` | [init](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/init.md) | 139 | `declaration-track:eafb7c96f9e3328229207932176f3c153a4f8202a4384ff65dab272b91cec55a` |
-| 8 | `def` | [tail](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/tail.md) | 145 | `declaration-track:329f691fd24a2b219d651f338657b17509af65634e7f5c476e60048cdcf39a8a` |
-| 9 | `theorem` | [init_add_tail](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/init-add-tail.md) | 149 | `result-track:942c482181ec9af43ddb6f2b8d0565c480ca5e63eb9b9e8c125fd48a6142d86d` |
-| 10 | `syntax` | [(anonymous)](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/syntax.md) | 157 | `declaration-track:0ea7dd4ac205954003aff2370c35071374f4dc164f54410c2f04e3e19ed7915e` |
-| 11 | `elab_rules` | [(anonymous)](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/elab-rules.md) | 162 | `declaration-track:1d75ab3282797fa13ca65ac578224b0d8e69e18388b2f25aab2ffe6afd2dcffe` |
-| 12 | `theorem` | [init_init](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/init-init.md) | 186 | `result-track:8a69e7bf142581090b6ad9890ca6d2b1771bfa19c5aaca8494d42e8f89fb4297` |
-| 13 | `theorem` | [init_add](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/init-add.md) | 192 | `result-track:7dd028604a6a35908732d87bd8808751a43bfc79fc7687eef77284fac6640ad5` |
-| 14 | `theorem` | [init_mul](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/init-mul.md) | 195 | `result-track:b524ec79569030008f639f635bb436a8834375ad0846b480873d2fc15472b890` |
-| 15 | `theorem` | [init_neg](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/init-neg.md) | 198 | `result-track:4c2c9b66a3c9d1ca3c3d12b2c44dde9e90593fc56c2d6f1e89927d33ae43de08` |
-| 16 | `theorem` | [init_sub](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/init-sub.md) | 201 | `result-track:925c2b39734b530bf3a2e1012d67cd5a627bc7519092ab2e5678bbd69404d9c7` |
-| 17 | `theorem` | [init_nsmul](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/init-nsmul.md) | 204 | `result-track:0759b8f37f47a4687fb70fdee47ca9fa78e8b4f4aec71825a5f49cf96e94ce77` |
-| 18 | `theorem` | [init_zsmul](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/init-zsmul.md) | 207 | `result-track:37d9e300236ba31171449f0a53f04d1273e4b501c8ee7738a3c76fde707c45cc` |
-| 19 | `theorem` | [init_pow](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/init-pow.md) | 210 | `result-track:c679b08600779596211f37982214c186a422f0a937e7a5d9cd9f900040690067` |
-| 20 | `theorem` | [init_isPoly](../../../../CommutativeAlgebra/InitTailPublic.lean/declarations/init-ispoly.md) | 219 | `result-track:2ac90ee17628b33ec6c32ded6cd35190df63635090955f661a74a0fdc8b40f5e` |
+| 1 | `def` | [select](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/select.md) | 59 | `declaration-track:078b95492436829f68e840ef4ebcc2b1b242a5211b037498e5944acdd4ea3a3a` |
+| 2 | `def` | [selectPoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/selectpoly.md) | 69 | `declaration-track:063026dbfcbc67b50da1e92db2811ff65fde926166c9dd53d6b4a7fb5d853760` |
+| 3 | `theorem` | [coeff_select](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/coeff-select.md) | 72 | `result-track:1d1dd64884855a77a23f0ebdded84602cda910350949926e01234f69c20f9b1d` |
+| 4 | `instance` | [select_isPoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/select-ispoly.md) | 77 | `declaration-track:7ccd5968dc1ce66134eaa7f242b97cdb202d2d2aeb481a5b2daaaeefab71e916` |
+| 5 | `theorem` | [select_add_select_not](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/select-add-select-not.md) | 85 | `result-track:9f78bef5721ad21948f9b55667e1fb2e48cce8cb80ae9db00b51fb37a1b84887` |
+| 6 | `theorem` | [coeff_add_of_disjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/coeff-add-of-disjoint.md) | 108 | `result-track:459af215819db44c336a416fcff138bc0393f41588dc604538e23b10e20cf13d` |
+| 7 | `def` | [init](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/init.md) | 139 | `declaration-track:eafb7c96f9e3328229207932176f3c153a4f8202a4384ff65dab272b91cec55a` |
+| 8 | `def` | [tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/tail.md) | 145 | `declaration-track:329f691fd24a2b219d651f338657b17509af65634e7f5c476e60048cdcf39a8a` |
+| 9 | `theorem` | [init_add_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/init-add-tail.md) | 149 | `result-track:942c482181ec9af43ddb6f2b8d0565c480ca5e63eb9b9e8c125fd48a6142d86d` |
+| 10 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/syntax.md) | 157 | `declaration-track:0ea7dd4ac205954003aff2370c35071374f4dc164f54410c2f04e3e19ed7915e` |
+| 11 | `elab_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/elab-rules.md) | 162 | `declaration-track:1d75ab3282797fa13ca65ac578224b0d8e69e18388b2f25aab2ffe6afd2dcffe` |
+| 12 | `theorem` | [init_init](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/init-init.md) | 186 | `result-track:8a69e7bf142581090b6ad9890ca6d2b1771bfa19c5aaca8494d42e8f89fb4297` |
+| 13 | `theorem` | [init_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/init-add.md) | 192 | `result-track:7dd028604a6a35908732d87bd8808751a43bfc79fc7687eef77284fac6640ad5` |
+| 14 | `theorem` | [init_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/init-mul.md) | 195 | `result-track:b524ec79569030008f639f635bb436a8834375ad0846b480873d2fc15472b890` |
+| 15 | `theorem` | [init_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/init-neg.md) | 198 | `result-track:4c2c9b66a3c9d1ca3c3d12b2c44dde9e90593fc56c2d6f1e89927d33ae43de08` |
+| 16 | `theorem` | [init_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/init-sub.md) | 201 | `result-track:925c2b39734b530bf3a2e1012d67cd5a627bc7519092ab2e5678bbd69404d9c7` |
+| 17 | `theorem` | [init_nsmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/init-nsmul.md) | 204 | `result-track:0759b8f37f47a4687fb70fdee47ca9fa78e8b4f4aec71825a5f49cf96e94ce77` |
+| 18 | `theorem` | [init_zsmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/init-zsmul.md) | 207 | `result-track:37d9e300236ba31171449f0a53f04d1273e4b501c8ee7738a3c76fde707c45cc` |
+| 19 | `theorem` | [init_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/init-pow.md) | 210 | `result-track:c679b08600779596211f37982214c186a422f0a937e7a5d9cd9f900040690067` |
+| 20 | `theorem` | [init_isPoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InitTailPublic.lean/declarations/init-ispoly.md) | 219 | `result-track:2ac90ee17628b33ec6c32ded6cd35190df63635090955f661a74a0fdc8b40f5e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

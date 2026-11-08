@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraGradingNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraGradingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraGradingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraGradingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [GradedAlgebra.ι](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraGradingNamespaced.lean/declarations/gradedalgebra.md) | 36 | `declaration-track:6d3dd7340136c1ca0226ee82cd120246cd6d8d7c7ac8411da63c3c60d83bd456` |
-| 2 | `theorem` | [GradedAlgebra.ι_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraGradingNamespaced.lean/declarations/gradedalgebra-apply.md) | 40 | `result-track:9e5ac1248bf99a78565b80159a89757863fdf03ad3269a5041c9d56ea23389d7` |
-| 3 | `instance` | [gradedAlgebra](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraGradingNamespaced.lean/declarations/gradedalgebra-source-edition-2.md) | 49 | `declaration-track:fe0d052689d1009d60e0d0b1713f3b3ec2bef96cbf081f333f1eb5d475f71276` |
+| 1 | `def` | [GradedAlgebra.ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraGradingNamespaced.lean/declarations/gradedalgebra.md) | 36 | `declaration-track:6d3dd7340136c1ca0226ee82cd120246cd6d8d7c7ac8411da63c3c60d83bd456` |
+| 2 | `theorem` | [GradedAlgebra.ι_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraGradingNamespaced.lean/declarations/gradedalgebra-apply.md) | 40 | `result-track:9e5ac1248bf99a78565b80159a89757863fdf03ad3269a5041c9d56ea23389d7` |
+| 3 | `instance` | [gradedAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraGradingNamespaced.lean/declarations/gradedalgebra-source-edition-2.md) | 49 | `declaration-track:fe0d052689d1009d60e0d0b1713f3b3ec2bef96cbf081f333f1eb5d475f71276` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

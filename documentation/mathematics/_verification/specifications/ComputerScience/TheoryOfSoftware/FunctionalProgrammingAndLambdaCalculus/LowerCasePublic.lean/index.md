@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LowerCasePublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LowerCasePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LowerCasePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LowerCasePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsLowerCase](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LowerCasePublic.lean/declarations/islowercase.md) | 33 | `declaration-track:35d4e34eae3ee164807475966f0e5dc02105badedcada6af1385eaa7df8f93f8` |
-| 2 | `theorem` | [Char.toLower_eq_self_iff](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LowerCasePublic.lean/declarations/char-tolower-eq-self-iff.md) | 36 | `result-track:1eb11854575406b09eabbaac1de5096cf83fa51caa87cf7f63b350460345795e` |
-| 3 | `theorem` | [String.toLower_eq_self_iff](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LowerCasePublic.lean/declarations/string-tolower-eq-self-iff.md) | 40 | `result-track:67eaf1a6d37f8411f86b93a0b7519841107b1f4afb52db0b5f77b3be0ff03af3` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LowerCasePublic.lean/declarations/instance.md) | 46 | `declaration-track:70ae490d17cc1f68c0a80f69fe28555ee64a0992ba44c18af282cdaa3803ca92` |
-| 5 | `theorem` | [Char.toLower_idempotent](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LowerCasePublic.lean/declarations/char-tolower-idempotent.md) | 52 | `result-track:9e064f9a0c1f6cbface00f915f2192977b42e10c53e366bcd890efd2360384a6` |
-| 6 | `theorem` | [isLowerCase_toLower](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LowerCasePublic.lean/declarations/islowercase-tolower.md) | 66 | `result-track:6631f33dec8678792c4761160eb65eee52167985947a1e58fe4b8b83f0733f95` |
-| 7 | `theorem` | [isLowerCase_empty](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LowerCasePublic.lean/declarations/islowercase-empty.md) | 71 | `result-track:016f94d25e2d402e1f97ae50995c7ea54f1633e97fb8fc65fb348a31191b9f4f` |
+| 1 | `def` | [IsLowerCase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LowerCasePublic.lean/declarations/islowercase.md) | 33 | `declaration-track:35d4e34eae3ee164807475966f0e5dc02105badedcada6af1385eaa7df8f93f8` |
+| 2 | `theorem` | [Char.toLower_eq_self_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LowerCasePublic.lean/declarations/char-tolower-eq-self-iff.md) | 36 | `result-track:1eb11854575406b09eabbaac1de5096cf83fa51caa87cf7f63b350460345795e` |
+| 3 | `theorem` | [String.toLower_eq_self_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LowerCasePublic.lean/declarations/string-tolower-eq-self-iff.md) | 40 | `result-track:67eaf1a6d37f8411f86b93a0b7519841107b1f4afb52db0b5f77b3be0ff03af3` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LowerCasePublic.lean/declarations/instance.md) | 46 | `declaration-track:70ae490d17cc1f68c0a80f69fe28555ee64a0992ba44c18af282cdaa3803ca92` |
+| 5 | `theorem` | [Char.toLower_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LowerCasePublic.lean/declarations/char-tolower-idempotent.md) | 52 | `result-track:9e064f9a0c1f6cbface00f915f2192977b42e10c53e366bcd890efd2360384a6` |
+| 6 | `theorem` | [isLowerCase_toLower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LowerCasePublic.lean/declarations/islowercase-tolower.md) | 66 | `result-track:6631f33dec8678792c4761160eb65eee52167985947a1e58fe4b8b83f0733f95` |
+| 7 | `theorem` | [isLowerCase_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LowerCasePublic.lean/declarations/islowercase-empty.md) | 71 | `result-track:016f94d25e2d402e1f97ae50995c7ea54f1633e97fb8fc65fb348a31191b9f4f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

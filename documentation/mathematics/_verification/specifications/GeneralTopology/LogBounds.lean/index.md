@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LogBounds.lean/index.md) · [Full source](../../../../GeneralTopology/LogBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,22 +60,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [log_lower_taylor](../../../../GeneralTopology/LogBounds.lean/declarations/log-lower-taylor.md) | 38 | `result-track:a7559668c609c98a29f9b55db39a7123d0aeb7c9a941a9175b48b27ea3bfa6d5` |
-| 2 | `theorem` | [log_ge'](../../../../GeneralTopology/LogBounds.lean/declarations/log-ge.md) | 57 | `result-track:a43f5a64fdbbe19b9bf839b326d80d5025f7607f99f78d59ae04f330148d200d` |
-| 3 | `def` | [symmetricLogComb](../../../../GeneralTopology/LogBounds.lean/declarations/symmetriclogcomb.md) | 88 | `declaration-track:c81766a81b7f60e62234057d9230983fe4d3a3025a9dc22dbb9db126b9071d2e` |
-| 4 | `theorem` | [symmetricLogComb_pos](../../../../GeneralTopology/LogBounds.lean/declarations/symmetriclogcomb-pos.md) | 92 | `result-track:60347ff6bd8c1a74f595d57813b7a0c3ae94eb5653eaa569dabcf8e1b90c4860` |
-| 5 | `theorem` | [symmetricLogComb_alt](../../../../GeneralTopology/LogBounds.lean/declarations/symmetriclogcomb-alt.md) | 116 | `result-track:f1a8f5a5480e7e0e2425a555bb2dc29ce537ed06e40d3a70c8089067e6c0a3da` |
-| 6 | `theorem` | [symmetricLogComb_le_two](../../../../GeneralTopology/LogBounds.lean/declarations/symmetriclogcomb-le-two.md) | 134 | `result-track:fc3ccd0f153912f4274d2c989411db0f7089c4171f75fd2e6c0dd0655fa8624c` |
-| 7 | `theorem` | [symmetricLogComb_abs_le_two](../../../../GeneralTopology/LogBounds.lean/declarations/symmetriclogcomb-abs-le-two.md) | 186 | `result-track:ec89f1657cef5ee99c2d5f3ff5d921f6ea9fa347ee6c142978e8f41c6c0a7b2a` |
-| 8 | `theorem` | [log_three_half_ge](../../../../GeneralTopology/LogBounds.lean/declarations/log-three-half-ge.md) | 209 | `result-track:fec8c789db6a275d6a654f79addba1b522844211ff02d8a7bcbdec37204eef72` |
-| 9 | `theorem` | [log_three_half_gt](../../../../GeneralTopology/LogBounds.lean/declarations/log-three-half-gt.md) | 217 | `result-track:9750130d86e7a70fae259cd94b2571c2275e54bf43680af36d610374090f5f35` |
-| 10 | `theorem` | [symmetricLogComb_half](../../../../GeneralTopology/LogBounds.lean/declarations/symmetriclogcomb-half.md) | 223 | `result-track:97f28d37ff3660ce7922ae2bc69684885c4b73f38c52515f96f1a12e05cd1f1f` |
-| 11 | `theorem` | [symmetricLogComb_half_lt_four_thirds](../../../../GeneralTopology/LogBounds.lean/declarations/symmetriclogcomb-half-lt-four-thirds.md) | 235 | `result-track:c903af2edc5d4b2b98242934d267c0bdfbe1c774506d99b0ad25a3885ecccb7a` |
-| 12 | `theorem` | [symmetricLogComb_le_four_thirds](../../../../GeneralTopology/LogBounds.lean/declarations/symmetriclogcomb-le-four-thirds.md) | 260 | `result-track:ed8d5a4d7204f6a17b294cdbbfd26df8a6a29ef94a46eb74f09fc8ccf248b0f0` |
-| 13 | `theorem` | [tendsto_log_one_add_div_self](../../../../GeneralTopology/LogBounds.lean/declarations/tendsto-log-one-add-div-self.md) | 360 | `result-track:c50434a2bb6d21b3c01ce0c81bd1fe3e2b3ab100d95efb5c2fa907d09c41fb36` |
-| 14 | `theorem` | [tendsto_log_one_sub_div_self](../../../../GeneralTopology/LogBounds.lean/declarations/tendsto-log-one-sub-div-self.md) | 371 | `result-track:c0f54c668747d96a15913d6af925416a8d9527282fe7c6bf7aa9f4098555a0e2` |
-| 15 | `theorem` | [tendsto_log_one_sub_sq_div_sq](../../../../GeneralTopology/LogBounds.lean/declarations/tendsto-log-one-sub-sq-div-sq.md) | 385 | `result-track:fe9347445851efd804801fdf14734110fc6ffb00cc681ecc9b0d22fcc272f63c` |
-| 16 | `theorem` | [symmetricLogComb_tendsto_one](../../../../GeneralTopology/LogBounds.lean/declarations/symmetriclogcomb-tendsto-one.md) | 411 | `result-track:b619fea7aa1ae0d025fd84a9f0378b9f49a1d6c08779e1cc80a5c6c7e2c90dd8` |
+| 1 | `theorem` | [log_lower_taylor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogBounds.lean/declarations/log-lower-taylor.md) | 38 | `result-track:a7559668c609c98a29f9b55db39a7123d0aeb7c9a941a9175b48b27ea3bfa6d5` |
+| 2 | `theorem` | [log_ge'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogBounds.lean/declarations/log-ge.md) | 57 | `result-track:a43f5a64fdbbe19b9bf839b326d80d5025f7607f99f78d59ae04f330148d200d` |
+| 3 | `def` | [symmetricLogComb](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogBounds.lean/declarations/symmetriclogcomb.md) | 88 | `declaration-track:c81766a81b7f60e62234057d9230983fe4d3a3025a9dc22dbb9db126b9071d2e` |
+| 4 | `theorem` | [symmetricLogComb_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogBounds.lean/declarations/symmetriclogcomb-pos.md) | 92 | `result-track:60347ff6bd8c1a74f595d57813b7a0c3ae94eb5653eaa569dabcf8e1b90c4860` |
+| 5 | `theorem` | [symmetricLogComb_alt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogBounds.lean/declarations/symmetriclogcomb-alt.md) | 116 | `result-track:f1a8f5a5480e7e0e2425a555bb2dc29ce537ed06e40d3a70c8089067e6c0a3da` |
+| 6 | `theorem` | [symmetricLogComb_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogBounds.lean/declarations/symmetriclogcomb-le-two.md) | 134 | `result-track:fc3ccd0f153912f4274d2c989411db0f7089c4171f75fd2e6c0dd0655fa8624c` |
+| 7 | `theorem` | [symmetricLogComb_abs_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogBounds.lean/declarations/symmetriclogcomb-abs-le-two.md) | 186 | `result-track:ec89f1657cef5ee99c2d5f3ff5d921f6ea9fa347ee6c142978e8f41c6c0a7b2a` |
+| 8 | `theorem` | [log_three_half_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogBounds.lean/declarations/log-three-half-ge.md) | 209 | `result-track:fec8c789db6a275d6a654f79addba1b522844211ff02d8a7bcbdec37204eef72` |
+| 9 | `theorem` | [log_three_half_gt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogBounds.lean/declarations/log-three-half-gt.md) | 217 | `result-track:9750130d86e7a70fae259cd94b2571c2275e54bf43680af36d610374090f5f35` |
+| 10 | `theorem` | [symmetricLogComb_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogBounds.lean/declarations/symmetriclogcomb-half.md) | 223 | `result-track:97f28d37ff3660ce7922ae2bc69684885c4b73f38c52515f96f1a12e05cd1f1f` |
+| 11 | `theorem` | [symmetricLogComb_half_lt_four_thirds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogBounds.lean/declarations/symmetriclogcomb-half-lt-four-thirds.md) | 235 | `result-track:c903af2edc5d4b2b98242934d267c0bdfbe1c774506d99b0ad25a3885ecccb7a` |
+| 12 | `theorem` | [symmetricLogComb_le_four_thirds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogBounds.lean/declarations/symmetriclogcomb-le-four-thirds.md) | 260 | `result-track:ed8d5a4d7204f6a17b294cdbbfd26df8a6a29ef94a46eb74f09fc8ccf248b0f0` |
+| 13 | `theorem` | [tendsto_log_one_add_div_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogBounds.lean/declarations/tendsto-log-one-add-div-self.md) | 360 | `result-track:c50434a2bb6d21b3c01ce0c81bd1fe3e2b3ab100d95efb5c2fa907d09c41fb36` |
+| 14 | `theorem` | [tendsto_log_one_sub_div_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogBounds.lean/declarations/tendsto-log-one-sub-div-self.md) | 371 | `result-track:c0f54c668747d96a15913d6af925416a8d9527282fe7c6bf7aa9f4098555a0e2` |
+| 15 | `theorem` | [tendsto_log_one_sub_sq_div_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogBounds.lean/declarations/tendsto-log-one-sub-sq-div-sq.md) | 385 | `result-track:fe9347445851efd804801fdf14734110fc6ffb00cc681ecc9b0d22fcc272f63c` |
+| 16 | `theorem` | [symmetricLogComb_tendsto_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogBounds.lean/declarations/symmetriclogcomb-tendsto-one.md) | 411 | `result-track:b619fea7aa1ae0d025fd84a9f0378b9f49a1d6c08779e1cc80a5c6c7e2c90dd8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

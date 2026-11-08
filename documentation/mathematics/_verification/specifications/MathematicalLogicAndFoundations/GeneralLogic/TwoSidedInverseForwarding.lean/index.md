@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverseForwarding.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverseForwarding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverseForwarding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverseForwarding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ordinary_heat_left_inverse](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverseForwarding.lean/declarations/ordinary-heat-left-inverse.md) | 38 | `result-track:49c729faef39061061a67937d1226153b782783176871d7869cc8f75faa2edc4` |
-| 2 | `theorem` | [ordinary_heat_right_inverse](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverseForwarding.lean/declarations/ordinary-heat-right-inverse.md) | 46 | `result-track:7d5344202b9dbbaf063fdf354f687eb488922d6f1827b748c92aa8caf36b261e` |
+| 1 | `theorem` | [ordinary_heat_left_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverseForwarding.lean/declarations/ordinary-heat-left-inverse.md) | 38 | `result-track:49c729faef39061061a67937d1226153b782783176871d7869cc8f75faa2edc4` |
+| 2 | `theorem` | [ordinary_heat_right_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverseForwarding.lean/declarations/ordinary-heat-right-inverse.md) | 46 | `result-track:7d5344202b9dbbaf063fdf354f687eb488922d6f1827b748c92aa8caf36b261e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

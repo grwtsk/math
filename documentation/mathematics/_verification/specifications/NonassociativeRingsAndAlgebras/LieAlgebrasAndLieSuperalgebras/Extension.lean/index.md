@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/Extension.lean/index.md) · [Full source](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/Extension.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/Extension.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/Extension.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsExtension](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/Extension.lean/declarations/isextension.md) | 37 | `declaration-track:1a550884121b2c070e7edbd5d7523e709ed1b0d8f17e1c13f36bf36a8ce81543` |
-| 2 | `structure` | [Extension](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/Extension.lean/declarations/extension.md) | 45 | `declaration-track:b2f210211404c2e7253159072535dbcdf61b00c4b641ca232abc2ece40420223` |
-| 3 | `def` | [IsExtension.extension](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/Extension.lean/declarations/isextension-extension.md) | 59 | `declaration-track:0e520f791e486f9e5c4422b71a257cdcec25d509125cfa5d0da00f2944c1e0ee` |
-| 4 | `theorem` | [isExtension_of_surjective](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/Extension.lean/declarations/isextension-of-surjective.md) | 64 | `result-track:8bbf1cf244c4e581e2e8f90e5be47ccf3103761600eadd8326427c84565aa742` |
+| 1 | `class` | [IsExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/Extension.lean/declarations/isextension.md) | 37 | `declaration-track:1a550884121b2c070e7edbd5d7523e709ed1b0d8f17e1c13f36bf36a8ce81543` |
+| 2 | `structure` | [Extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/Extension.lean/declarations/extension.md) | 45 | `declaration-track:b2f210211404c2e7253159072535dbcdf61b00c4b641ca232abc2ece40420223` |
+| 3 | `def` | [IsExtension.extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/Extension.lean/declarations/isextension-extension.md) | 59 | `declaration-track:0e520f791e486f9e5c4422b71a257cdcec25d509125cfa5d0da00f2944c1e0ee` |
+| 4 | `theorem` | [isExtension_of_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/Extension.lean/declarations/isextension-of-surjective.md) | 64 | `result-track:8bbf1cf244c4e581e2e8f90e5be47ccf3103761600eadd8326427c84565aa742` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

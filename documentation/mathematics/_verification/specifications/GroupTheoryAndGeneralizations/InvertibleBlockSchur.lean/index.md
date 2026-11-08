@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [provenanceCrossMap](../../../../GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/provenancecrossmap.md) | 28 | `declaration-track:7ed7726e7018c007256b3bc100d50da93e321d7b0a0613580d2748ad07e63c6b` |
-| 2 | `theorem` | [provenanceCrossMap_apply](../../../../GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/provenancecrossmap-apply.md) | 55 | `result-track:0421f64797d2c54d706b2ebb2cf429d3762d80b6bbe08042a52de96ad5554767` |
-| 3 | `structure` | [InvertibleProvenanceBlock](../../../../GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/invertibleprovenanceblock.md) | 62 | `declaration-track:578079a5d7be67245fa73837b0277dc35977f90dec17eb94d11a2cbfa8430bf8` |
-| 4 | `def` | [solve](../../../../GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/solve.md) | 74 | `declaration-track:a10f39778c090dde8c40da6233b1a2e16a2afa8979b07b70d2b12ecfb9135a6a` |
-| 5 | `theorem` | [gramEquiv_solve](../../../../GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/gramequiv-solve.md) | 78 | `result-track:e69e973e58e1db7b92e400d0f276c7302ef124b40d3c04e33f6cae44cac625ac` |
-| 6 | `theorem` | [provenance_form_solve](../../../../GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/provenance-form-solve.md) | 84 | `result-track:804956d77d20ca20d443d7df89de5c7878b7ef3087fe7eb9e47f79d5f0eceac2` |
-| 7 | `theorem` | [form_sub_right](../../../../GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/form-sub-right.md) | 96 | `result-track:c180576f30663ef488f5a7601c742147ec9f1f9b329b1e497639f2cea0438749` |
-| 8 | `def` | [blockSchurSolver](../../../../GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/blockschursolver.md) | 107 | `declaration-track:fe6ad9eae2302ee8c4a7b95b8404aba40bab8dfbd55c602efe6200532d6f2204` |
-| 9 | `theorem` | [blockSchurSolver_solve](../../../../GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/blockschursolver-solve.md) | 117 | `result-track:8e0a4ae00ae63544c21de092ea99f512295b498371f71ea8082119df64d142ac` |
-| 10 | `theorem` | [schur_nonnegative](../../../../GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/schur-nonnegative.md) | 123 | `result-track:ae356e21606aef86a20994c45e0ba3b4161292f93efbb06a52ebcd765d3dff63` |
-| 11 | `theorem` | [schur_eq_sub](../../../../GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/schur-eq-sub.md) | 129 | `result-track:cf4ef0b3401f99e2ffe0fcef0b9931d98b2dbcf3e2108b57175ce7828190155e` |
-| 12 | `theorem` | [schur_diagonal_nonnegative](../../../../GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/schur-diagonal-nonnegative.md) | 137 | `result-track:be702bc4f41ba5a6bd1bf854b72b15e22589b5b275b8da61edce276e559654c5` |
+| 1 | `def` | [provenanceCrossMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/provenancecrossmap.md) | 28 | `declaration-track:7ed7726e7018c007256b3bc100d50da93e321d7b0a0613580d2748ad07e63c6b` |
+| 2 | `theorem` | [provenanceCrossMap_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/provenancecrossmap-apply.md) | 55 | `result-track:0421f64797d2c54d706b2ebb2cf429d3762d80b6bbe08042a52de96ad5554767` |
+| 3 | `structure` | [InvertibleProvenanceBlock](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/invertibleprovenanceblock.md) | 62 | `declaration-track:578079a5d7be67245fa73837b0277dc35977f90dec17eb94d11a2cbfa8430bf8` |
+| 4 | `def` | [solve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/solve.md) | 74 | `declaration-track:a10f39778c090dde8c40da6233b1a2e16a2afa8979b07b70d2b12ecfb9135a6a` |
+| 5 | `theorem` | [gramEquiv_solve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/gramequiv-solve.md) | 78 | `result-track:e69e973e58e1db7b92e400d0f276c7302ef124b40d3c04e33f6cae44cac625ac` |
+| 6 | `theorem` | [provenance_form_solve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/provenance-form-solve.md) | 84 | `result-track:804956d77d20ca20d443d7df89de5c7878b7ef3087fe7eb9e47f79d5f0eceac2` |
+| 7 | `theorem` | [form_sub_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/form-sub-right.md) | 96 | `result-track:c180576f30663ef488f5a7601c742147ec9f1f9b329b1e497639f2cea0438749` |
+| 8 | `def` | [blockSchurSolver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/blockschursolver.md) | 107 | `declaration-track:fe6ad9eae2302ee8c4a7b95b8404aba40bab8dfbd55c602efe6200532d6f2204` |
+| 9 | `theorem` | [blockSchurSolver_solve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/blockschursolver-solve.md) | 117 | `result-track:8e0a4ae00ae63544c21de092ea99f512295b498371f71ea8082119df64d142ac` |
+| 10 | `theorem` | [schur_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/schur-nonnegative.md) | 123 | `result-track:ae356e21606aef86a20994c45e0ba3b4161292f93efbb06a52ebcd765d3dff63` |
+| 11 | `theorem` | [schur_eq_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/schur-eq-sub.md) | 129 | `result-track:cf4ef0b3401f99e2ffe0fcef0b9931d98b2dbcf3e2108b57175ce7828190155e` |
+| 12 | `theorem` | [schur_diagonal_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/InvertibleBlockSchur.lean/declarations/schur-diagonal-nonnegative.md) | 137 | `result-track:be702bc4f41ba5a6bd1bf854b72b15e22589b5b275b8da61edce276e559654c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

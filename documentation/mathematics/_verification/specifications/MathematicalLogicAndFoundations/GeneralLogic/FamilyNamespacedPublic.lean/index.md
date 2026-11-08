@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [FamilyDef](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/declarations/familydef.md) | 155 | `declaration-track:e6e55c1f7cf6cd9774419b8ee7ab7b97ed1ce07a4badaf6acc0179fb9f6cdd12` |
-| 2 | `class` | [FamilyOut](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/declarations/familyout.md) | 159 | `declaration-track:2906c64c339fe2e929e9f6c7f46a20badf30c21d38c4609cba193590c488ce7a` |
-| 3 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 168 | `declaration-track:6c3e3df95a441b840685de9b4fa1d2ff35f5d01d69df95216068f9d66e7536fd` |
-| 4 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 172 | `declaration-track:977934d15b6f7d03aa4a2d2d97a10aff4a62d0d877d1500052f3e91b1db9d003` |
-| 5 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/declarations/instance.md) | 176 | `declaration-track:48207fdff9b0142ace4ab8477d7c86e88b5c36ddfa014e8f0d348123e233890f` |
-| 6 | `def` | [toFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/declarations/tofamily.md) | 180 | `declaration-track:53dbebb55330f48ca74c5ed508a5e22a7e2f06adf8433a0eed7b449a30c6d177` |
-| 7 | `def` | [ofFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/declarations/offamily.md) | 184 | `declaration-track:900052fac07589e435675cc98a8029ce39543c6648e10538ea78ac4e3d96d159` |
-| 8 | `macro` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/declarations/macro.md) | 199 | `declaration-track:2d2e8d4d0e5c818690420c597c7e2217dc51c2556471b1fe80cbb4ddc420bfc3` |
-| 9 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 208 | `declaration-track:eb4f861f97f76b4a5f18d7407727b27987bab27f99f11bddfa89f23b62cdfa7d` |
+| 1 | `class` | [FamilyDef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/declarations/familydef.md) | 155 | `declaration-track:e6e55c1f7cf6cd9774419b8ee7ab7b97ed1ce07a4badaf6acc0179fb9f6cdd12` |
+| 2 | `class` | [FamilyOut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/declarations/familyout.md) | 159 | `declaration-track:2906c64c339fe2e929e9f6c7f46a20badf30c21d38c4609cba193590c488ce7a` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 168 | `declaration-track:6c3e3df95a441b840685de9b4fa1d2ff35f5d01d69df95216068f9d66e7536fd` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 172 | `declaration-track:977934d15b6f7d03aa4a2d2d97a10aff4a62d0d877d1500052f3e91b1db9d003` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/declarations/instance.md) | 176 | `declaration-track:48207fdff9b0142ace4ab8477d7c86e88b5c36ddfa014e8f0d348123e233890f` |
+| 6 | `def` | [toFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/declarations/tofamily.md) | 180 | `declaration-track:53dbebb55330f48ca74c5ed508a5e22a7e2f06adf8433a0eed7b449a30c6d177` |
+| 7 | `def` | [ofFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/declarations/offamily.md) | 184 | `declaration-track:900052fac07589e435675cc98a8029ce39543c6648e10538ea78ac4e3d96d159` |
+| 8 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/declarations/macro.md) | 199 | `declaration-track:2d2e8d4d0e5c818690420c597c7e2217dc51c2556471b1fe80cbb4ddc420bfc3` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 208 | `declaration-track:eb4f861f97f76b4a5f18d7407727b27987bab27f99f11bddfa89f23b62cdfa7d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

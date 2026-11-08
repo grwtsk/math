@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RuntimeHostedCellState.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RuntimeHostedCellState.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RuntimeHostedCellState.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RuntimeHostedCellState.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HostedCellState](../../../../../ComputerScience/AlgorithmsInComputerScience/RuntimeHostedCellState.lean/declarations/hostedcellstate.md) | 18 | `declaration-track:8260b5cf48b14755997f4fe6abce1a8ca0e17443e426330a3521c17bd311d667` |
-| 2 | `structure` | [BoundaryDefectSummary](../../../../../ComputerScience/AlgorithmsInComputerScience/RuntimeHostedCellState.lean/declarations/boundarydefectsummary.md) | 26 | `declaration-track:aa8cbe8a1ddf25299ad5f9ef5dec025c109eaaccc7cb6db2ff22df4baaa2f0c1` |
-| 3 | `structure` | [CellStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/RuntimeHostedCellState.lean/declarations/cellstatus.md) | 33 | `declaration-track:c1111b8a3674cd20dd2005b2c2855818efc6786a1dc2525af57be964743e5fd4` |
-| 4 | `def` | [CellStatus.BoundaryClean](../../../../../ComputerScience/AlgorithmsInComputerScience/RuntimeHostedCellState.lean/declarations/cellstatus-boundaryclean.md) | 42 | `declaration-track:ffa7b985225b7ffe860a5a6f364c219217a240ab3dbc8794a0e3c466427589d4` |
+| 1 | `structure` | [HostedCellState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RuntimeHostedCellState.lean/declarations/hostedcellstate.md) | 18 | `declaration-track:8260b5cf48b14755997f4fe6abce1a8ca0e17443e426330a3521c17bd311d667` |
+| 2 | `structure` | [BoundaryDefectSummary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RuntimeHostedCellState.lean/declarations/boundarydefectsummary.md) | 26 | `declaration-track:aa8cbe8a1ddf25299ad5f9ef5dec025c109eaaccc7cb6db2ff22df4baaa2f0c1` |
+| 3 | `structure` | [CellStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RuntimeHostedCellState.lean/declarations/cellstatus.md) | 33 | `declaration-track:c1111b8a3674cd20dd2005b2c2855818efc6786a1dc2525af57be964743e5fd4` |
+| 4 | `def` | [CellStatus.BoundaryClean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RuntimeHostedCellState.lean/declarations/cellstatus-boundaryclean.md) | 42 | `declaration-track:ffa7b985225b7ffe860a5a6f364c219217a240ab3dbc8794a0e3c466427589d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TwoStepComplex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/declarations/twostepcomplex.md) | 62 | `declaration-track:aaa7e2b5737002888f5c8ca9c18e9eb06ffb04c2e50e7f08997a9587c0d1903e` |
-| 2 | `def` | [TwoStepComplex.Closed₁](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/declarations/twostepcomplex-closed.md) | 69 | `declaration-track:5beebaf95fbebd9b5f77ef7bf389ce4b17701ac8f66fd5d6dfe3b7051ca6000e` |
-| 3 | `def` | [TwoStepComplex.Exact₁](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/declarations/twostepcomplex-exact.md) | 73 | `declaration-track:0b239fa9c5a570425cc9d272c7645a63354ea4015fb87c761c9fae1826c83ddf` |
-| 4 | `def` | [TwoStepComplex.H1Trivial](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/declarations/twostepcomplex-h1trivial.md) | 77 | `declaration-track:4dd2865fe5052d5c199bd5bccb18fb37ee54197b7b41b8b59331207fbe26e457` |
-| 5 | `def` | [identityZeroComplex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/declarations/identityzerocomplex.md) | 81 | `declaration-track:92b0e90a87ce5641437d0ab18589dd3403a5ef9ea794e0e93172436eee1a8b81` |
-| 6 | `theorem` | [identityZeroComplex_h1Trivial](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/declarations/identityzerocomplex-h1trivial.md) | 90 | `result-track:b3fe66abb08fe2029d8d7456e5a35954eb9759021368fd1cc86838899574b7f4` |
+| 1 | `structure` | [TwoStepComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/declarations/twostepcomplex.md) | 62 | `declaration-track:aaa7e2b5737002888f5c8ca9c18e9eb06ffb04c2e50e7f08997a9587c0d1903e` |
+| 2 | `def` | [TwoStepComplex.Closed₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/declarations/twostepcomplex-closed.md) | 69 | `declaration-track:5beebaf95fbebd9b5f77ef7bf389ce4b17701ac8f66fd5d6dfe3b7051ca6000e` |
+| 3 | `def` | [TwoStepComplex.Exact₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/declarations/twostepcomplex-exact.md) | 73 | `declaration-track:0b239fa9c5a570425cc9d272c7645a63354ea4015fb87c761c9fae1826c83ddf` |
+| 4 | `def` | [TwoStepComplex.H1Trivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/declarations/twostepcomplex-h1trivial.md) | 77 | `declaration-track:4dd2865fe5052d5c199bd5bccb18fb37ee54197b7b41b8b59331207fbe26e457` |
+| 5 | `def` | [identityZeroComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/declarations/identityzerocomplex.md) | 81 | `declaration-track:92b0e90a87ce5641437d0ab18589dd3403a5ef9ea794e0e93172436eee1a8b81` |
+| 6 | `theorem` | [identityZeroComplex_h1Trivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoStepMaps.lean/declarations/identityzerocomplex-h1trivial.md) | 90 | `result-track:b3fe66abb08fe2029d8d7456e5a35954eb9759021368fd1cc86838899574b7f4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

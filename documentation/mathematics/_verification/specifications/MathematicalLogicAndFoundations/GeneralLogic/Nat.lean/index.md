@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Nat.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Nat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Nat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Nat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [boolProdNatEquivNat](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Nat.lean/declarations/boolprodnatequivnat.md) | 27 | `declaration-track:f8a683a5fc7144204d50b099b45d281b0cd2adb45741b1cee232025b23cbacca` |
-| 2 | `def` | [natSumNatEquivNat](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Nat.lean/declarations/natsumnatequivnat.md) | 37 | `declaration-track:e22d30cd141b33e537ba6d8a390948cc2556876679ac76a116f4e46e3ba83685` |
-| 3 | `theorem` | [natSumNatEquivNat_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Nat.lean/declarations/natsumnatequivnat-apply.md) | 41 | `result-track:3d282e0a8261af9c7d64ffa342ce24d183dcad456c5a759a75be9d3d5b6b391e` |
-| 4 | `def` | [intEquivNat](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Nat.lean/declarations/intequivnat.md) | 46 | `declaration-track:bc39de47cc235d14a3ccc71a1da84371de8402ac7416b644954dd21dd3d9d1c5` |
-| 5 | `def` | [prodEquivOfEquivNat](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Nat.lean/declarations/prodequivofequivnat.md) | 51 | `declaration-track:42758082433443f2719e8a31bc15c9feb880ed3a3d71ee2f13cf01f94c644e84` |
+| 1 | `def` | [boolProdNatEquivNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Nat.lean/declarations/boolprodnatequivnat.md) | 27 | `declaration-track:f8a683a5fc7144204d50b099b45d281b0cd2adb45741b1cee232025b23cbacca` |
+| 2 | `def` | [natSumNatEquivNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Nat.lean/declarations/natsumnatequivnat.md) | 37 | `declaration-track:e22d30cd141b33e537ba6d8a390948cc2556876679ac76a116f4e46e3ba83685` |
+| 3 | `theorem` | [natSumNatEquivNat_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Nat.lean/declarations/natsumnatequivnat-apply.md) | 41 | `result-track:3d282e0a8261af9c7d64ffa342ce24d183dcad456c5a759a75be9d3d5b6b391e` |
+| 4 | `def` | [intEquivNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Nat.lean/declarations/intequivnat.md) | 46 | `declaration-track:bc39de47cc235d14a3ccc71a1da84371de8402ac7416b644954dd21dd3d9d1c5` |
+| 5 | `def` | [prodEquivOfEquivNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Nat.lean/declarations/prodequivofequivnat.md) | 51 | `declaration-track:42758082433443f2719e8a31bc15c9feb880ed3a3d71ee2f13cf01f94c644e84` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

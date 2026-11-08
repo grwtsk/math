@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAll.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAll.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAll.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAll.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [getLeanLibs](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAll.lean/declarations/getleanlibs.md) | 26 | `declaration-track:f69b2b75cbbbd837a2d24597e5cec097c8bf91c885fb5b815ab29e815e85ef41` |
-| 2 | `def` | [mkAllCLI](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAll.lean/declarations/mkallcli.md) | 42 | `declaration-track:2e02e2dc7b83690e00b4fea2590af1edde085c108ec172872d9b87e44b609d49` |
-| 3 | `def` | [mkAll](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAll.lean/declarations/mkall.md) | 85 | `declaration-track:ae3c9070e67e0edbc69fe64b4c9d65fd07b9a0a246c02b339fe40da3e39a61a0` |
-| 4 | `def` | [main](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAll.lean/declarations/main.md) | 100 | `declaration-track:b7e4d0cbba5a18bf7f03f7336dc746c755203c65fd3444015b5351de55bec9c0` |
+| 1 | `def` | [getLeanLibs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAll.lean/declarations/getleanlibs.md) | 26 | `declaration-track:f69b2b75cbbbd837a2d24597e5cec097c8bf91c885fb5b815ab29e815e85ef41` |
+| 2 | `def` | [mkAllCLI](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAll.lean/declarations/mkallcli.md) | 42 | `declaration-track:2e02e2dc7b83690e00b4fea2590af1edde085c108ec172872d9b87e44b609d49` |
+| 3 | `def` | [mkAll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAll.lean/declarations/mkall.md) | 85 | `declaration-track:ae3c9070e67e0edbc69fe64b4c9d65fd07b9a0a246c02b339fe40da3e39a61a0` |
+| 4 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAll.lean/declarations/main.md) | 100 | `declaration-track:b7e4d0cbba5a18bf7f03f7336dc746c755203c65fd3444015b5351de55bec9c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/RadiusLiminfNamespacedAligned.lean/index.md) · [Full source](../../../../FunctionalAnalysis/RadiusLiminfNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RadiusLiminfNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RadiusLiminfNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../FunctionalAnalysis/RadiusLiminfNamespacedAligned.lean/declarations/macro-rules.md) | 38 | `declaration-track:ab898bb6ef047957e40d4f5f4d764e518c8aec4648e32c561749506d68303830` |
-| 2 | `theorem` | [radius_eq_liminf](../../../../FunctionalAnalysis/RadiusLiminfNamespacedAligned.lean/declarations/radius-eq-liminf.md) | 45 | `result-track:8e6ff80b49e60f7516b98e09995282edf6c420f6d1e42e358fd5aa964ec3f7c2` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RadiusLiminfNamespacedAligned.lean/declarations/macro-rules.md) | 38 | `declaration-track:ab898bb6ef047957e40d4f5f4d764e518c8aec4648e32c561749506d68303830` |
+| 2 | `theorem` | [radius_eq_liminf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RadiusLiminfNamespacedAligned.lean/declarations/radius-eq-liminf.md) | 45 | `result-track:8e6ff80b49e60f7516b98e09995282edf6c420f6d1e42e358fd5aa964ec3f7c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

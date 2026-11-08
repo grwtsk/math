@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorSection.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorSection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorSection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorSection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TensorRank](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorSection.lean/declarations/tensorrank.md) | 18 | `declaration-track:e1dd2543c590ccf758015016c00367a1a87f37db392fb4362de9878eb78ee663` |
-| 2 | `structure` | [TensorSection](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorSection.lean/declarations/tensorsection.md) | 21 | `declaration-track:6f058037bd82617146ea529d36b5e77fbb56a766110e6ebb89fd9562c07545e6` |
-| 3 | `def` | [TensorSection.HasRank](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorSection.lean/declarations/tensorsection-hasrank.md) | 30 | `declaration-track:792a08241be59f9ab131029f95cf6edf7a96edd69505d580d94ba5dcc8f978c8` |
-| 4 | `theorem` | [tensor_section_has_some_rank](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorSection.lean/declarations/tensor-section-has-some-rank.md) | 38 | `result-track:7ef4cd1e4ed45afac5a8d01bf62d83bb5f41e178a65d0efe8f7dbc9c92a337be` |
+| 1 | `structure` | [TensorRank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorSection.lean/declarations/tensorrank.md) | 18 | `declaration-track:e1dd2543c590ccf758015016c00367a1a87f37db392fb4362de9878eb78ee663` |
+| 2 | `structure` | [TensorSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorSection.lean/declarations/tensorsection.md) | 21 | `declaration-track:6f058037bd82617146ea529d36b5e77fbb56a766110e6ebb89fd9562c07545e6` |
+| 3 | `def` | [TensorSection.HasRank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorSection.lean/declarations/tensorsection-hasrank.md) | 30 | `declaration-track:792a08241be59f9ab131029f95cf6edf7a96edd69505d580d94ba5dcc8f978c8` |
+| 4 | `theorem` | [tensor_section_has_some_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorSection.lean/declarations/tensor-section-has-some-rank.md) | 38 | `result-track:7ef4cd1e4ed45afac5a8d01bf62d83bb5f41e178a65d0efe8f7dbc9c92a337be` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

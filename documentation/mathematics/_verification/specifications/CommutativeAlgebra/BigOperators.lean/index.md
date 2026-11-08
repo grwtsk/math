@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/BigOperators.lean/index.md) · [Full source](../../../../CommutativeAlgebra/BigOperators.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BigOperators.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BigOperators.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [listSum_mem](../../../../CommutativeAlgebra/BigOperators.lean/declarations/listsum-mem.md) | 21 | `result-track:59ade0cc72cf0502aa24e4f217b1a7fbbabbf13dd354a2a00f42301bf793510b` |
-| 2 | `lemma` | [multisetSum_mem](../../../../CommutativeAlgebra/BigOperators.lean/declarations/multisetsum-mem.md) | 26 | `result-track:2bd304e2bf36d98c6feb6b13f1628c866f3e82fe6ed9e6b7ca4f0afe1d6585e6` |
-| 3 | `lemma` | [finsetSum_mem](../../../../CommutativeAlgebra/BigOperators.lean/declarations/finsetsum-mem.md) | 31 | `result-track:a69bae80e101ec66745eb724a3b3a34144475f253c1d6ed9325edbbdfd76316c` |
-| 4 | `lemma` | [listProd_mem](../../../../CommutativeAlgebra/BigOperators.lean/declarations/listprod-mem.md) | 44 | `result-track:2688e27f9f6ca3f41ebc5bbe3d9fb8fb61635c66cca7e1e5743b903a7f128154` |
-| 5 | `lemma` | [multiSetProd_mem](../../../../CommutativeAlgebra/BigOperators.lean/declarations/multisetprod-mem.md) | 60 | `result-track:80b03b3e0ef277311988a5989e80083b5790933d23d6b0d7b22af2e2e6e2108f` |
-| 6 | `lemma` | [finsetProd_mem](../../../../CommutativeAlgebra/BigOperators.lean/declarations/finsetprod-mem.md) | 65 | `result-track:c8e801d577231cba010cc2b1f06660f568e4fff9bcfcb26620d349a968c98b7f` |
+| 1 | `lemma` | [listSum_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BigOperators.lean/declarations/listsum-mem.md) | 21 | `result-track:59ade0cc72cf0502aa24e4f217b1a7fbbabbf13dd354a2a00f42301bf793510b` |
+| 2 | `lemma` | [multisetSum_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BigOperators.lean/declarations/multisetsum-mem.md) | 26 | `result-track:2bd304e2bf36d98c6feb6b13f1628c866f3e82fe6ed9e6b7ca4f0afe1d6585e6` |
+| 3 | `lemma` | [finsetSum_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BigOperators.lean/declarations/finsetsum-mem.md) | 31 | `result-track:a69bae80e101ec66745eb724a3b3a34144475f253c1d6ed9325edbbdfd76316c` |
+| 4 | `lemma` | [listProd_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BigOperators.lean/declarations/listprod-mem.md) | 44 | `result-track:2688e27f9f6ca3f41ebc5bbe3d9fb8fb61635c66cca7e1e5743b903a7f128154` |
+| 5 | `lemma` | [multiSetProd_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BigOperators.lean/declarations/multisetprod-mem.md) | 60 | `result-track:80b03b3e0ef277311988a5989e80083b5790933d23d6b0d7b22af2e2e6e2108f` |
+| 6 | `lemma` | [finsetProd_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BigOperators.lean/declarations/finsetprod-mem.md) | 65 | `result-track:c8e801d577231cba010cc2b1f06660f568e4fff9bcfcb26620d349a968c98b7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

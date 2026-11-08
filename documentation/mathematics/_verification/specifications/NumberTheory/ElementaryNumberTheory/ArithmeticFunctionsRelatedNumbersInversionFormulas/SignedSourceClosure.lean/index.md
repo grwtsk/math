@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedSourceClosure.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedSourceClosure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedSourceClosure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedSourceClosure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [source_upper_bound_iff_residual_tail](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedSourceClosure.lean/declarations/source-upper-bound-iff-residual-tail.md) | 30 | `result-track:7197db7794005aef99d21f2538fc651f300a6d97f6bebd1bda045bce96548e7b` |
-| 2 | `theorem` | [sourceOperatorValue_eq_signed_abel](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedSourceClosure.lean/declarations/sourceoperatorvalue-eq-signed-abel.md) | 49 | `result-track:946b4e068c5c5615561fb1eee211eec579c0495117d0928f179fc88be8ab23c0` |
-| 3 | `theorem` | [sourceOperatorValue_eq_signed_derivative_rows](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedSourceClosure.lean/declarations/sourceoperatorvalue-eq-signed-derivative-rows.md) | 58 | `result-track:5b15cde29e795bdab2ded9cb805f40925c215c4f2fd1140f51bc39751f6b7c4c` |
-| 4 | `theorem` | [source_upper_bound_iff_signed_abel_tail](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedSourceClosure.lean/declarations/source-upper-bound-iff-signed-abel-tail.md) | 76 | `result-track:ae65e75b6e0631489e25b749ed518dc6e34593397fc00677ac1021dc7fe242db` |
-| 5 | `theorem` | [estimate_of_source_upper_bound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedSourceClosure.lean/declarations/estimate-of-source-upper-bound.md) | 98 | `result-track:fbfb852482ff86400458b32b92390a7ae6631a131d359edcdac684cd2ba0913e` |
+| 1 | `theorem` | [source_upper_bound_iff_residual_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedSourceClosure.lean/declarations/source-upper-bound-iff-residual-tail.md) | 30 | `result-track:7197db7794005aef99d21f2538fc651f300a6d97f6bebd1bda045bce96548e7b` |
+| 2 | `theorem` | [sourceOperatorValue_eq_signed_abel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedSourceClosure.lean/declarations/sourceoperatorvalue-eq-signed-abel.md) | 49 | `result-track:946b4e068c5c5615561fb1eee211eec579c0495117d0928f179fc88be8ab23c0` |
+| 3 | `theorem` | [sourceOperatorValue_eq_signed_derivative_rows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedSourceClosure.lean/declarations/sourceoperatorvalue-eq-signed-derivative-rows.md) | 58 | `result-track:5b15cde29e795bdab2ded9cb805f40925c215c4f2fd1140f51bc39751f6b7c4c` |
+| 4 | `theorem` | [source_upper_bound_iff_signed_abel_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedSourceClosure.lean/declarations/source-upper-bound-iff-signed-abel-tail.md) | 76 | `result-track:ae65e75b6e0631489e25b749ed518dc6e34593397fc00677ac1021dc7fe242db` |
+| 5 | `theorem` | [estimate_of_source_upper_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedSourceClosure.lean/declarations/estimate-of-source-upper-bound.md) | 98 | `result-track:fbfb852482ff86400458b32b92390a7ae6631a131d359edcdac684cd2ba0913e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/LosslessPackage.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/LosslessPackage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LosslessPackage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LosslessPackage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [NormalizedPolyhierarchy](../../../../../ComputerScience/AlgorithmsInComputerScience/LosslessPackage.lean/declarations/normalizedpolyhierarchy.md) | 9 | `declaration-track:4e7b3e79cd55dd146daf8df9841acbbc72e6c1e146fd514778e39534d779119b` |
-| 2 | `def` | [decodeProjection](../../../../../ComputerScience/AlgorithmsInComputerScience/LosslessPackage.lean/declarations/decodeprojection.md) | 18 | `declaration-track:7cad0d94e26478b5f4067d3c624ae4f445e54e452afc6baec500881cd8052404` |
-| 3 | `structure` | [LosslessPackage](../../../../../ComputerScience/AlgorithmsInComputerScience/LosslessPackage.lean/declarations/losslesspackage.md) | 24 | `declaration-track:8fd68cbc5c871601d3b996c1f7159c921408730c8a411dbc62ea8cc53ffafdcc` |
-| 4 | `theorem` | [LosslessPackage.decode_eq_source](../../../../../ComputerScience/AlgorithmsInComputerScience/LosslessPackage.lean/declarations/losslesspackage-decode-eq-source.md) | 29 | `result-track:86de76308a643e240115ec55e67479d127c83171bf33c54d18b99909d08cade8` |
+| 1 | `structure` | [NormalizedPolyhierarchy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LosslessPackage.lean/declarations/normalizedpolyhierarchy.md) | 9 | `declaration-track:4e7b3e79cd55dd146daf8df9841acbbc72e6c1e146fd514778e39534d779119b` |
+| 2 | `def` | [decodeProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LosslessPackage.lean/declarations/decodeprojection.md) | 18 | `declaration-track:7cad0d94e26478b5f4067d3c624ae4f445e54e452afc6baec500881cd8052404` |
+| 3 | `structure` | [LosslessPackage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LosslessPackage.lean/declarations/losslesspackage.md) | 24 | `declaration-track:8fd68cbc5c871601d3b996c1f7159c921408730c8a411dbc62ea8cc53ffafdcc` |
+| 4 | `theorem` | [LosslessPackage.decode_eq_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LosslessPackage.lean/declarations/losslesspackage-decode-eq-source.md) | 29 | `result-track:86de76308a643e240115ec55e67479d127c83171bf33c54d18b99909d08cade8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

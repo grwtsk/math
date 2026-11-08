@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Weight.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Weight.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Weight.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Weight.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [poleBaseWeight](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Weight.lean/declarations/polebaseweight.md) | 10 | `declaration-track:3f3f24ccf7dc2a1e9b831c3cb21a87aed6cd8ec663e8598b79600a5321f1a0df` |
-| 2 | `def` | [poleWeight](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Weight.lean/declarations/poleweight.md) | 21 | `declaration-track:43bcd85b3660a252420584665c06766e8e819cd298392bc81c705b76b91baa33` |
-| 3 | `theorem` | [poleBaseWeight_pos](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Weight.lean/declarations/polebaseweight-pos.md) | 24 | `result-track:5d2f6ab608cbbc75f5bd782d57a96edb52ae5f63f981ba67d174e219cb35d897` |
+| 1 | `def` | [poleBaseWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Weight.lean/declarations/polebaseweight.md) | 10 | `declaration-track:3f3f24ccf7dc2a1e9b831c3cb21a87aed6cd8ec663e8598b79600a5321f1a0df` |
+| 2 | `def` | [poleWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Weight.lean/declarations/poleweight.md) | 21 | `declaration-track:43bcd85b3660a252420584665c06766e8e819cd298392bc81c705b76b91baa33` |
+| 3 | `theorem` | [poleBaseWeight_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Weight.lean/declarations/polebaseweight-pos.md) | 24 | `result-track:5d2f6ab608cbbc75f5bd782d57a96edb52ae5f63f981ba67d174e219cb35d897` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

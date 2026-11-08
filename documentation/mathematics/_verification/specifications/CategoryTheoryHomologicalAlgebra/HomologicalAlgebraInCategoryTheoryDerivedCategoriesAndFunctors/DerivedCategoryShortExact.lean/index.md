@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/DerivedCategoryShortExact.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/DerivedCategoryShortExact.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/DerivedCategoryShortExact.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/DerivedCategoryShortExact.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [triangleOfSESδ](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/DerivedCategoryShortExact.lean/declarations/triangleofses-source-edition-2.md) | 34 | `declaration-track:df5e02c45d315fa0aba95c1f7b68afa135f7df7474c7133e26f0fc91ef855ce3` |
-| 2 | `def` | [triangleOfSES](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/DerivedCategoryShortExact.lean/declarations/triangleofses.md) | 44 | `declaration-track:85fe22d3da0b9cbf65f2d643057a8bb36e9108cb949eca2eddcd6f4e4039e056` |
-| 3 | `def` | [triangleOfSESIso](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/DerivedCategoryShortExact.lean/declarations/triangleofsesiso.md) | 50 | `declaration-track:023bb0f29003b9e81701866bab61e9c0afcfa810f8ae6a80d9c73856ba128c5b` |
-| 4 | `lemma` | [triangleOfSES_distinguished](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/DerivedCategoryShortExact.lean/declarations/triangleofses-distinguished.md) | 62 | `result-track:1189276b7391345eff64ca9270797e26f34b1c27679a642f8dc344421f13e3ef` |
+| 1 | `def` | [triangleOfSESδ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/DerivedCategoryShortExact.lean/declarations/triangleofses-source-edition-2.md) | 34 | `declaration-track:df5e02c45d315fa0aba95c1f7b68afa135f7df7474c7133e26f0fc91ef855ce3` |
+| 2 | `def` | [triangleOfSES](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/DerivedCategoryShortExact.lean/declarations/triangleofses.md) | 44 | `declaration-track:85fe22d3da0b9cbf65f2d643057a8bb36e9108cb949eca2eddcd6f4e4039e056` |
+| 3 | `def` | [triangleOfSESIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/DerivedCategoryShortExact.lean/declarations/triangleofsesiso.md) | 50 | `declaration-track:023bb0f29003b9e81701866bab61e9c0afcfa810f8ae6a80d9c73856ba128c5b` |
+| 4 | `lemma` | [triangleOfSES_distinguished](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/DerivedCategoryShortExact.lean/declarations/triangleofses-distinguished.md) | 62 | `result-track:1189276b7391345eff64ca9270797e26f34b1c27679a642f8dc344421f13e3ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

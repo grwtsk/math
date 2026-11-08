@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ActualSixthCensusGrowthAfterItsCompleteFiniteErrorPayment.lean/index.md) · [Full source](../../../../RealFunctions/ActualSixthCensusGrowthAfterItsCompleteFiniteErrorPayment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualSixthCensusGrowthAfterItsCompleteFiniteErrorPayment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualSixthCensusGrowthAfterItsCompleteFiniteErrorPayment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_sixth_census_exponential_lower](../../../../RealFunctions/ActualSixthCensusGrowthAfterItsCompleteFiniteErrorPayment.lean/declarations/actual-sixth-census-exponential-lower.md) | 24 | `result-track:2994fdd9aa8fe8f33229a687e822752fff261d7779f3b06e3236722fde5aaa64` |
-| 2 | `theorem` | [actual_sixth_census_has_no_eventual_polynomial_upper](../../../../RealFunctions/ActualSixthCensusGrowthAfterItsCompleteFiniteErrorPayment.lean/declarations/actual-sixth-census-has-no-eventual-polynomial-upper.md) | 29 | `result-track:ed381d124bf858fa2871985c10cef00b7cb2529ce707f38650bd0372bda93a5e` |
+| 1 | `theorem` | [actual_sixth_census_exponential_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualSixthCensusGrowthAfterItsCompleteFiniteErrorPayment.lean/declarations/actual-sixth-census-exponential-lower.md) | 24 | `result-track:2994fdd9aa8fe8f33229a687e822752fff261d7779f3b06e3236722fde5aaa64` |
+| 2 | `theorem` | [actual_sixth_census_has_no_eventual_polynomial_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualSixthCensusGrowthAfterItsCompleteFiniteErrorPayment.lean/declarations/actual-sixth-census-has-no-eventual-polynomial-upper.md) | 29 | `result-track:ed381d124bf858fa2871985c10cef00b7cb2529ce707f38650bd0372bda93a5e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quadraticCompositeSurvivor](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/quadraticcompositesurvivor.md) | 23 | `declaration-track:b26dfd6698c23dcdc1e3d4cc1cf38a316efae443c8eb6e480319df6c4bf69b00` |
-| 2 | `theorem` | [dvd_quadraticCompositeSurvivor](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/dvd-quadraticcompositesurvivor.md) | 27 | `result-track:68660554e0d91b521f689d64e88f26603d137aacbee333784b9aeeab0bb6d440` |
-| 3 | `theorem` | [not_dvd_quadraticValue_of_dvd_index](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/not-dvd-quadraticvalue-of-dvd-index.md) | 32 | `result-track:1cd4f637e54536f6ffbff438e3bd9952356955796c5a16306a45b00ed3c13ed1` |
-| 4 | `theorem` | [quadraticCompositeSurvivor_gt](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/quadraticcompositesurvivor-gt.md) | 42 | `result-track:25e26617579845e9abb4f2f0ec8829a3fd0d95260231b51845db6f60fdf5a29e` |
-| 5 | `theorem` | [quadraticCompositeSurvivor_value_dvd](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/quadraticcompositesurvivor-value-dvd.md) | 54 | `result-track:525da06be5e30b34d75958746904ad0a65eab32132c86e3a73ba6f0976677d3d` |
-| 6 | `theorem` | [quadraticCompositeSurvivor_not_prime](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/quadraticcompositesurvivor-not-prime.md) | 62 | `result-track:35eb5170eb1b4a603a6bc393f1192c2e8ff627e7a58481394d7443daa56a34cb` |
-| 7 | `theorem` | [unbounded_composite_quadratic_survivors](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/unbounded-composite-quadratic-survivors.md) | 79 | `result-track:191a577afef6ce6d79ee0205e7ed9aff17ef1d9d2a69e3fc0347f8f27e2f8fd3` |
+| 1 | `def` | [quadraticCompositeSurvivor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/quadraticcompositesurvivor.md) | 23 | `declaration-track:b26dfd6698c23dcdc1e3d4cc1cf38a316efae443c8eb6e480319df6c4bf69b00` |
+| 2 | `theorem` | [dvd_quadraticCompositeSurvivor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/dvd-quadraticcompositesurvivor.md) | 27 | `result-track:68660554e0d91b521f689d64e88f26603d137aacbee333784b9aeeab0bb6d440` |
+| 3 | `theorem` | [not_dvd_quadraticValue_of_dvd_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/not-dvd-quadraticvalue-of-dvd-index.md) | 32 | `result-track:1cd4f637e54536f6ffbff438e3bd9952356955796c5a16306a45b00ed3c13ed1` |
+| 4 | `theorem` | [quadraticCompositeSurvivor_gt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/quadraticcompositesurvivor-gt.md) | 42 | `result-track:25e26617579845e9abb4f2f0ec8829a3fd0d95260231b51845db6f60fdf5a29e` |
+| 5 | `theorem` | [quadraticCompositeSurvivor_value_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/quadraticcompositesurvivor-value-dvd.md) | 54 | `result-track:525da06be5e30b34d75958746904ad0a65eab32132c86e3a73ba6f0976677d3d` |
+| 6 | `theorem` | [quadraticCompositeSurvivor_not_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/quadraticcompositesurvivor-not-prime.md) | 62 | `result-track:35eb5170eb1b4a603a6bc393f1192c2e8ff627e7a58481394d7443daa56a34cb` |
+| 7 | `theorem` | [unbounded_composite_quadratic_survivors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/unbounded-composite-quadratic-survivors.md) | 79 | `result-track:191a577afef6ce6d79ee0205e7ed9aff17ef1d9d2a69e3fc0347f8f27e2f8fd3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

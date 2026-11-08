@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuarticAdjacencyDiscriminant.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuarticAdjacencyDiscriminant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticAdjacencyDiscriminant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticAdjacencyDiscriminant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.PolygonalQuarticSeparable`](../../../../CommutativeAlgebra/PolygonalQuarticSeparable.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.PolygonalQuarticSeparable`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticSeparable.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quarticVandermonde](../../../../CommutativeAlgebra/QuarticAdjacencyDiscriminant.lean/declarations/quarticvandermonde.md) | 24 | `declaration-track:421881bb404e92f79540e80df29a1fd23cc2fcc4d58f55b9c75d0ed6f2469c2a` |
-| 2 | `def` | [adjacencyVandermonde](../../../../CommutativeAlgebra/QuarticAdjacencyDiscriminant.lean/declarations/adjacencyvandermonde.md) | 29 | `declaration-track:ad744fc4650232fa32d1530ab2c7ae05409387345ee5f3863d0b556b92d8810b` |
-| 3 | `theorem` | [adjacencyVandermonde_eq_neg_quartic](../../../../CommutativeAlgebra/QuarticAdjacencyDiscriminant.lean/declarations/adjacencyvandermonde-eq-neg-quartic.md) | 35 | `result-track:87809fcb0b58afda96e2727fed8a57173abf1627ca22f3974f4019b9a4e39e68` |
-| 4 | `theorem` | [adjacency_discriminant_product_eq_quartic](../../../../CommutativeAlgebra/QuarticAdjacencyDiscriminant.lean/declarations/adjacency-discriminant-product-eq-quartic.md) | 46 | `result-track:8f2d2a8c6a1f421729ff4f083653aaf656df82059c3f24bfca7c12bbc0720e81` |
+| 1 | `def` | [quarticVandermonde](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticAdjacencyDiscriminant.lean/declarations/quarticvandermonde.md) | 24 | `declaration-track:421881bb404e92f79540e80df29a1fd23cc2fcc4d58f55b9c75d0ed6f2469c2a` |
+| 2 | `def` | [adjacencyVandermonde](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticAdjacencyDiscriminant.lean/declarations/adjacencyvandermonde.md) | 29 | `declaration-track:ad744fc4650232fa32d1530ab2c7ae05409387345ee5f3863d0b556b92d8810b` |
+| 3 | `theorem` | [adjacencyVandermonde_eq_neg_quartic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticAdjacencyDiscriminant.lean/declarations/adjacencyvandermonde-eq-neg-quartic.md) | 35 | `result-track:87809fcb0b58afda96e2727fed8a57173abf1627ca22f3974f4019b9a4e39e68` |
+| 4 | `theorem` | [adjacency_discriminant_product_eq_quartic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticAdjacencyDiscriminant.lean/declarations/adjacency-discriminant-product-eq-quartic.md) | 46 | `result-track:8f2d2a8c6a1f421729ff4f083653aaf656df82059c3f24bfca7c12bbc0720e81` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

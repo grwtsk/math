@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [singleδ](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespacedPublic.lean/declarations/single.md) | 53 | `declaration-track:86f4f6e7dd12d2b8f7b1a81feaa1ceacffcde19829dc0ea9063bbf932b9dc2fc` |
-| 2 | `def` | [singleTriangle](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespacedPublic.lean/declarations/singletriangle.md) | 60 | `declaration-track:7c2e299e52f5a3de0053af706f96b772d0f0c6803085692a41b9a7edb3b96754` |
-| 3 | `def` | [singleTriangleIso](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespacedPublic.lean/declarations/singletriangleiso.md) | 70 | `declaration-track:7a92356395fae08d5680bae65bcb29264144737d193b3def785f49568534bc1b` |
-| 4 | `lemma` | [singleTriangle_distinguished](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespacedPublic.lean/declarations/singletriangle-distinguished.md) | 77 | `result-track:0e418ec2de07085b270a1c2eb4730f40870bdcad366300a7ebc301c1a979aea2` |
-| 5 | `def` | [singleTriangle.map](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespacedPublic.lean/declarations/singletriangle-map.md) | 88 | `declaration-track:b9cc9a6d35bd33a261039948b2d84d717989de153505945707b348edf64c34d2` |
+| 1 | `def` | [singleδ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespacedPublic.lean/declarations/single.md) | 53 | `declaration-track:86f4f6e7dd12d2b8f7b1a81feaa1ceacffcde19829dc0ea9063bbf932b9dc2fc` |
+| 2 | `def` | [singleTriangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespacedPublic.lean/declarations/singletriangle.md) | 60 | `declaration-track:7c2e299e52f5a3de0053af706f96b772d0f0c6803085692a41b9a7edb3b96754` |
+| 3 | `def` | [singleTriangleIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespacedPublic.lean/declarations/singletriangleiso.md) | 70 | `declaration-track:7a92356395fae08d5680bae65bcb29264144737d193b3def785f49568534bc1b` |
+| 4 | `lemma` | [singleTriangle_distinguished](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespacedPublic.lean/declarations/singletriangle-distinguished.md) | 77 | `result-track:0e418ec2de07085b270a1c2eb4730f40870bdcad366300a7ebc301c1a979aea2` |
+| 5 | `def` | [singleTriangle.map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespacedPublic.lean/declarations/singletriangle-map.md) | 88 | `declaration-track:b9cc9a6d35bd33a261039948b2d84d717989de153505945707b348edf64c34d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

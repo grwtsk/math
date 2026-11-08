@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AdicCompletionNoetherianNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AdicCompletionNoetherianNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionNoetherianNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionNoetherianNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IsHausdorff.of_le_jacobson](../../../../CommutativeAlgebra/AdicCompletionNoetherianNamespaced.lean/declarations/ishausdorff-of-le-jacobson.md) | 26 | `result-track:f6d69a1dd9cf591b99ace31a91dc014753bbd4cb67b389c749c3f9c421ad2515` |
-| 2 | `theorem` | [IsHausdorff.of_isLocalRing](../../../../CommutativeAlgebra/AdicCompletionNoetherianNamespaced.lean/declarations/ishausdorff-of-islocalring.md) | 29 | `result-track:b55651bd60223fc93e0d11bb758da2fab2fcc0f3da5e0b8df25c463bc4850abe` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/AdicCompletionNoetherianNamespaced.lean/declarations/instance.md) | 32 | `declaration-track:89b6e278b16dc3d1c36329e46545891f6efc652bd580032538eec097e58e85b8` |
-| 4 | `theorem` | [IsHausdorff.of_noZeroSMulDivisors](../../../../CommutativeAlgebra/AdicCompletionNoetherianNamespaced.lean/declarations/ishausdorff-of-nozerosmuldivisors.md) | 35 | `result-track:6095e2596927b3a23b6863a462106011719ade3a4fd600d175c2987efca9a045` |
-| 5 | `theorem` | [IsHausdorff.of_isDomain](../../../../CommutativeAlgebra/AdicCompletionNoetherianNamespaced.lean/declarations/ishausdorff-of-isdomain.md) | 38 | `result-track:d79c718d3c1e6aa3cbca6fd976711d23572b4ea2cab646429c7861f4eeeb3160` |
+| 1 | `lemma` | [IsHausdorff.of_le_jacobson](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionNoetherianNamespaced.lean/declarations/ishausdorff-of-le-jacobson.md) | 26 | `result-track:f6d69a1dd9cf591b99ace31a91dc014753bbd4cb67b389c749c3f9c421ad2515` |
+| 2 | `theorem` | [IsHausdorff.of_isLocalRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionNoetherianNamespaced.lean/declarations/ishausdorff-of-islocalring.md) | 29 | `result-track:b55651bd60223fc93e0d11bb758da2fab2fcc0f3da5e0b8df25c463bc4850abe` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionNoetherianNamespaced.lean/declarations/instance.md) | 32 | `declaration-track:89b6e278b16dc3d1c36329e46545891f6efc652bd580032538eec097e58e85b8` |
+| 4 | `theorem` | [IsHausdorff.of_noZeroSMulDivisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionNoetherianNamespaced.lean/declarations/ishausdorff-of-nozerosmuldivisors.md) | 35 | `result-track:6095e2596927b3a23b6863a462106011719ade3a4fd600d175c2987efca9a045` |
+| 5 | `theorem` | [IsHausdorff.of_isDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionNoetherianNamespaced.lean/declarations/ishausdorff-of-isdomain.md) | 38 | `result-track:d79c718d3c1e6aa3cbca6fd976711d23572b4ea2cab646429c7861f4eeeb3160` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/index.md) · [Full source](../../../../Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [continuous_convexCombPair](../../../../Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/declarations/continuous-convexcombpair.md) | 30 | `result-track:314b1eb3e7f3c54e2b2a7ef3e96beb56c500251dcbca158181876a60bb9be866` |
-| 2 | `lemma` | [continuous_duple](../../../../Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/declarations/continuous-duple.md) | 51 | `result-track:bf7e0c857649bd771ad8e1710eecee5c0a6a612943bda86a901ac4e1a107215d` |
-| 3 | `instance` | [pathConnectedSpace](../../../../Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/declarations/pathconnectedspace.md) | 57 | `declaration-track:678b5d3a6fd7f35159ff94e43f7ff89ff2abffb280ca5acfe52f36157a5bdd45` |
-| 4 | `def` | [homeomorphI](../../../../Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/declarations/homeomorphi.md) | 66 | `declaration-track:62ddc6fab11c2d47f716b914aeaae9591dbe78829997d2f5360ca5edd650e591` |
-| 5 | `lemma` | [homeomorphI_apply_coe](../../../../Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/declarations/homeomorphi-apply-coe.md) | 70 | `result-track:5f6c1ee6084285e6c766c7aa9df275b03eaeef02054810091b31f8f24a672cc9` |
-| 6 | `lemma` | [homeomorphI_single_zero](../../../../Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/declarations/homeomorphi-single-zero.md) | 75 | `result-track:82c4dbf23ab7332a7529df7f277bb929bb3749fa12a1bfa1f597d96b2a48ab03` |
-| 7 | `lemma` | [homeomorphI_single_one](../../../../Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/declarations/homeomorphi-single-one.md) | 78 | `result-track:a7e25f97fdb582153aca8629c20be25c8468d3de81bca9522a9b4e3922965769` |
-| 8 | `lemma` | [homeomorphI_symm_zero](../../../../Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/declarations/homeomorphi-symm-zero.md) | 81 | `result-track:05f74bfa734bbda01de1cb74fca97818ae28645e64a67c10ca0f0eca5101e46c` |
-| 9 | `lemma` | [homeomorphI_symm_one](../../../../Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/declarations/homeomorphi-symm-one.md) | 85 | `result-track:3d57bd2c8d790f3dbb88c46c9cf7083903d8f872a0863fe16411f101dc20c411` |
+| 1 | `lemma` | [continuous_convexCombPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/declarations/continuous-convexcombpair.md) | 30 | `result-track:314b1eb3e7f3c54e2b2a7ef3e96beb56c500251dcbca158181876a60bb9be866` |
+| 2 | `lemma` | [continuous_duple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/declarations/continuous-duple.md) | 51 | `result-track:bf7e0c857649bd771ad8e1710eecee5c0a6a612943bda86a901ac4e1a107215d` |
+| 3 | `instance` | [pathConnectedSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/declarations/pathconnectedspace.md) | 57 | `declaration-track:678b5d3a6fd7f35159ff94e43f7ff89ff2abffb280ca5acfe52f36157a5bdd45` |
+| 4 | `def` | [homeomorphI](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/declarations/homeomorphi.md) | 66 | `declaration-track:62ddc6fab11c2d47f716b914aeaae9591dbe78829997d2f5360ca5edd650e591` |
+| 5 | `lemma` | [homeomorphI_apply_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/declarations/homeomorphi-apply-coe.md) | 70 | `result-track:5f6c1ee6084285e6c766c7aa9df275b03eaeef02054810091b31f8f24a672cc9` |
+| 6 | `lemma` | [homeomorphI_single_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/declarations/homeomorphi-single-zero.md) | 75 | `result-track:82c4dbf23ab7332a7529df7f277bb929bb3749fa12a1bfa1f597d96b2a48ab03` |
+| 7 | `lemma` | [homeomorphI_single_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/declarations/homeomorphi-single-one.md) | 78 | `result-track:a7e25f97fdb582153aca8629c20be25c8468d3de81bca9522a9b4e3922965769` |
+| 8 | `lemma` | [homeomorphI_symm_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/declarations/homeomorphi-symm-zero.md) | 81 | `result-track:05f74bfa734bbda01de1cb74fca97818ae28645e64a67c10ca0f0eca5101e46c` |
+| 9 | `lemma` | [homeomorphI_symm_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PathConnectedSpaceStdSimplexNamespacedPublic.lean/declarations/homeomorphi-symm-one.md) | 85 | `result-track:3d57bd2c8d790f3dbb88c46c9cf7083903d8f872a0863fe16411f101dc20c411` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

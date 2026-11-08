@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/CofinalNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/CofinalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CofinalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CofinalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CountingMeasure](../../../../FunctionalAnalysis/CofinalNamespaced.lean/declarations/countingmeasure.md) | 20 | `declaration-track:35873b7e1bd50cc26d313f5359783c64143cdef5b6d2cc5bed0bfafaf6a9bc0d` |
-| 2 | `def` | [RiemannHypothesisFor](../../../../FunctionalAnalysis/CofinalNamespaced.lean/declarations/riemannhypothesisfor.md) | 24 | `declaration-track:ad349cdc95873e452a91c654095a406aaba3eff81536ddb11d50120e5a120190` |
-| 3 | `structure` | [CofinalHeightSystem](../../../../FunctionalAnalysis/CofinalNamespaced.lean/declarations/cofinalheightsystem.md) | 33 | `declaration-track:163575af32f9b4bdbdfc05d653e3c0beb40b7c63ff9c01e737ae3231560e55b4` |
-| 4 | `theorem` | [cofinal_measure_equality_implies_RH](../../../../FunctionalAnalysis/CofinalNamespaced.lean/declarations/cofinal-measure-equality-implies-rh.md) | 64 | `result-track:3476427fbfd93dab80dc1d0a5c195076d325d3992114d0db8ec2ab7934f33f8a` |
+| 1 | `structure` | [CountingMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CofinalNamespaced.lean/declarations/countingmeasure.md) | 20 | `declaration-track:35873b7e1bd50cc26d313f5359783c64143cdef5b6d2cc5bed0bfafaf6a9bc0d` |
+| 2 | `def` | [RiemannHypothesisFor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CofinalNamespaced.lean/declarations/riemannhypothesisfor.md) | 24 | `declaration-track:ad349cdc95873e452a91c654095a406aaba3eff81536ddb11d50120e5a120190` |
+| 3 | `structure` | [CofinalHeightSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CofinalNamespaced.lean/declarations/cofinalheightsystem.md) | 33 | `declaration-track:163575af32f9b4bdbdfc05d653e3c0beb40b7c63ff9c01e737ae3231560e55b4` |
+| 4 | `theorem` | [cofinal_measure_equality_implies_RH](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CofinalNamespaced.lean/declarations/cofinal-measure-equality-implies-rh.md) | 64 | `result-track:3476427fbfd93dab80dc1d0a5c195076d325d3992114d0db8ec2ab7934f33f8a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

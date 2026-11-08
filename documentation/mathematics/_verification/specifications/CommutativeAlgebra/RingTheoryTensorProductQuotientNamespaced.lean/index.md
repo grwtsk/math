@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryTensorProductQuotientNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryTensorProductQuotientNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductQuotientNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductQuotientNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quotIdealMapEquivTensorQuotAux](../../../../CommutativeAlgebra/RingTheoryTensorProductQuotientNamespaced.lean/declarations/quotidealmapequivtensorquotaux.md) | 36 | `declaration-track:fde18a6ce9d4ee2cd52783874c77de2a0e8877405fb4f3e41e8829d53cc1a9fb` |
-| 2 | `lemma` | [quotIdealMapEquivTensorQuotAux_mk](../../../../CommutativeAlgebra/RingTheoryTensorProductQuotientNamespaced.lean/declarations/quotidealmapequivtensorquotaux-mk.md) | 45 | `result-track:744f62b1c932171351fe1e4aa56dbc4dde88aa4910cea5fbc7da67dd31324b5c` |
-| 3 | `def` | [quotIdealMapEquivTensorQuot](../../../../CommutativeAlgebra/RingTheoryTensorProductQuotientNamespaced.lean/declarations/quotidealmapequivtensorquot.md) | 50 | `declaration-track:316c8698eb7f0e6e95d37b650d27dd1f6cff621e24f2f4bee1971af9abedc22a` |
-| 4 | `lemma` | [quotIdealMapEquivTensorQuot_mk](../../../../CommutativeAlgebra/RingTheoryTensorProductQuotientNamespaced.lean/declarations/quotidealmapequivtensorquot-mk.md) | 60 | `result-track:f6cccee7f2d62616e4a0eb268961570746291902030ab7adf9929798c09d8ee4` |
-| 5 | `lemma` | [quotIdealMapEquivTensorQuot_symm_tmul](../../../../CommutativeAlgebra/RingTheoryTensorProductQuotientNamespaced.lean/declarations/quotidealmapequivtensorquot-symm-tmul.md) | 65 | `result-track:5f5deeee885fee2f693a50100334ec4ef22821c10f5f91ee2a6fbfb1640304c0` |
+| 1 | `def` | [quotIdealMapEquivTensorQuotAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductQuotientNamespaced.lean/declarations/quotidealmapequivtensorquotaux.md) | 36 | `declaration-track:fde18a6ce9d4ee2cd52783874c77de2a0e8877405fb4f3e41e8829d53cc1a9fb` |
+| 2 | `lemma` | [quotIdealMapEquivTensorQuotAux_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductQuotientNamespaced.lean/declarations/quotidealmapequivtensorquotaux-mk.md) | 45 | `result-track:744f62b1c932171351fe1e4aa56dbc4dde88aa4910cea5fbc7da67dd31324b5c` |
+| 3 | `def` | [quotIdealMapEquivTensorQuot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductQuotientNamespaced.lean/declarations/quotidealmapequivtensorquot.md) | 50 | `declaration-track:316c8698eb7f0e6e95d37b650d27dd1f6cff621e24f2f4bee1971af9abedc22a` |
+| 4 | `lemma` | [quotIdealMapEquivTensorQuot_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductQuotientNamespaced.lean/declarations/quotidealmapequivtensorquot-mk.md) | 60 | `result-track:f6cccee7f2d62616e4a0eb268961570746291902030ab7adf9929798c09d8ee4` |
+| 5 | `lemma` | [quotIdealMapEquivTensorQuot_symm_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductQuotientNamespaced.lean/declarations/quotidealmapequivtensorquot-symm-tmul.md) | 65 | `result-track:5f5deeee885fee2f693a50100334ec4ef22821c10f5f91ee2a6fbfb1640304c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

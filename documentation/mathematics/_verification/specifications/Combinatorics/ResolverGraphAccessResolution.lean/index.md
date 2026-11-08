@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ResolverGraphAccessResolution.lean/index.md) · [Full source](../../../../Combinatorics/ResolverGraphAccessResolution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverGraphAccessResolution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverGraphAccessResolution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [GraphAccessResolution](../../../../Combinatorics/ResolverGraphAccessResolution.lean/declarations/graphaccessresolution.md) | 12 | `declaration-track:4f2ea49a0ea7bfbd8b65919ae3ee212b9389e7b60bf94876b868c1e615f116b8` |
-| 2 | `structure` | [ModeBackendRegistry](../../../../Combinatorics/ResolverGraphAccessResolution.lean/declarations/modebackendregistry.md) | 33 | `declaration-track:de6875cdef945cefe34dc1d46b58cd8d8c966a86ba48335004ed98b9570cab2a` |
-| 3 | `def` | [resolveGraphAccess](../../../../Combinatorics/ResolverGraphAccessResolution.lean/declarations/resolvegraphaccess.md) | 43 | `declaration-track:f37856a200035f5e24396e40f8fed0a96fd4390821165f81019dbf9e769ef7ce` |
+| 1 | `inductive` | [GraphAccessResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverGraphAccessResolution.lean/declarations/graphaccessresolution.md) | 12 | `declaration-track:4f2ea49a0ea7bfbd8b65919ae3ee212b9389e7b60bf94876b868c1e615f116b8` |
+| 2 | `structure` | [ModeBackendRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverGraphAccessResolution.lean/declarations/modebackendregistry.md) | 33 | `declaration-track:de6875cdef945cefe34dc1d46b58cd8d8c966a86ba48335004ed98b9570cab2a` |
+| 3 | `def` | [resolveGraphAccess](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverGraphAccessResolution.lean/declarations/resolvegraphaccess.md) | 43 | `declaration-track:f37856a200035f5e24396e40f8fed0a96fd4390821165f81019dbf9e769ef7ce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

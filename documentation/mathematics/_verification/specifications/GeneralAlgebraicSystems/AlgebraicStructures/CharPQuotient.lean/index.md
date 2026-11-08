@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotient.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotient.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotient.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotient.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quotient](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotient.lean/declarations/quotient.md) | 20 | `result-track:a527563242d206aeea86a4a63888f093b4edd7054d3573cec14901007fe0e8ba` |
-| 2 | `theorem` | [quotient'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotient.lean/declarations/quotient-source-edition-2.md) | 36 | `result-track:f8df7f32c1bbb6c1fe17ca1889821fd256ef00da3630fe6b3b3b4ec678663584` |
-| 3 | `theorem` | [Ideal.Quotient.index_eq_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotient.lean/declarations/ideal-quotient-index-eq-zero.md) | 47 | `result-track:4a96af71caae9ebb620c5f803b402b5008f5a24932cbd6746df479832af80e78` |
+| 1 | `theorem` | [quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotient.lean/declarations/quotient.md) | 20 | `result-track:a527563242d206aeea86a4a63888f093b4edd7054d3573cec14901007fe0e8ba` |
+| 2 | `theorem` | [quotient'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotient.lean/declarations/quotient-source-edition-2.md) | 36 | `result-track:f8df7f32c1bbb6c1fe17ca1889821fd256ef00da3630fe6b3b3b4ec678663584` |
+| 3 | `theorem` | [Ideal.Quotient.index_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotient.lean/declarations/ideal-quotient-index-eq-zero.md) | 47 | `result-track:4a96af71caae9ebb620c5f803b402b5008f5a24932cbd6746df479832af80e78` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

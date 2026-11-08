@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.ConfigurationCounts`](../../../../../NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.ConfigurationCounts`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Algebra.Order.BigOperators.Group.Finset` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.SpecialFunctions.Log.Basic` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 7; external provider; requires a separately pinned dependency.
@@ -60,18 +60,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [goldbachBox](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/goldbachbox.md) | 27 | `declaration-track:5f646fccc0908a630d0f9c39a7f04b142987e4009698debf72c22d4596e6fad3` |
-| 2 | `theorem` | [mem_goldbachBox](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/mem-goldbachbox.md) | 31 | `result-track:4487d7407d51e6f5c0e8df076fe13a67a550b813c834d28a9e5366ae922bead7` |
-| 3 | `def` | [primeLogWeight](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/primelogweight.md) | 37 | `declaration-track:d72f9bd2a2a10b0d79693d6474820dea27f7e4fd352de950cd537304734aadb3` |
-| 4 | `theorem` | [primeLogWeight_nonneg](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/primelogweight-nonneg.md) | 41 | `result-track:12655f29bf39f80b51c8fa54d1b79ada7784b58941cf83abae59870ebb926d25` |
-| 5 | `theorem` | [primeLogWeight_pos_iff](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/primelogweight-pos-iff.md) | 49 | `result-track:83402db6cf927bcb740013f72754bde0573b0b81bc2244a278b607e9427d2ae2` |
-| 6 | `def` | [goldbachLogTerm](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/goldbachlogterm.md) | 62 | `declaration-track:530ed9c7963ad255db8265c97656c020ce315526c0471952fac6d3fb7a8578c9` |
-| 7 | `theorem` | [goldbachLogTerm_nonneg](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/goldbachlogterm-nonneg.md) | 66 | `result-track:834cafa36eaa3fb4b071554a0c43d716566ca69ab56eaf3402e5902efcc81a6d` |
-| 8 | `theorem` | [goldbachLogTerm_pos_iff](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/goldbachlogterm-pos-iff.md) | 74 | `result-track:ed1978d24a6d4b6980d6120ec46275e9284dc6d9b311c7e9dd8981734f23d25b` |
-| 9 | `def` | [goldbachLogMass](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/goldbachlogmass.md) | 91 | `declaration-track:f6a56c7fbeb0d9049fd24f087bc6f104ad10d8cf930c17bb2e71c2c836d78145` |
-| 10 | `theorem` | [goldbachLogMass_nonneg](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/goldbachlogmass-nonneg.md) | 95 | `result-track:eb5a1a6d7ebbe6ccf38d4004e56e07dfad69b6450a2f4f3e28bd7433e2626bf9` |
-| 11 | `theorem` | [goldbachLogMass_pos_iff](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/goldbachlogmass-pos-iff.md) | 101 | `result-track:ca948b75f873b7b3ebcfd3113337389ee6ebaf4a81e68aabfe6a31876e49ea2c` |
-| 12 | `theorem` | [goldbachLogMass_pos_iff_count_pos](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/goldbachlogmass-pos-iff-count-pos.md) | 120 | `result-track:da6d0d72b4429975c1c425ceba1ced49dcc11d651babb8fb370a7110e922eebf` |
+| 1 | `def` | [goldbachBox](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/goldbachbox.md) | 27 | `declaration-track:5f646fccc0908a630d0f9c39a7f04b142987e4009698debf72c22d4596e6fad3` |
+| 2 | `theorem` | [mem_goldbachBox](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/mem-goldbachbox.md) | 31 | `result-track:4487d7407d51e6f5c0e8df076fe13a67a550b813c834d28a9e5366ae922bead7` |
+| 3 | `def` | [primeLogWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/primelogweight.md) | 37 | `declaration-track:d72f9bd2a2a10b0d79693d6474820dea27f7e4fd352de950cd537304734aadb3` |
+| 4 | `theorem` | [primeLogWeight_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/primelogweight-nonneg.md) | 41 | `result-track:12655f29bf39f80b51c8fa54d1b79ada7784b58941cf83abae59870ebb926d25` |
+| 5 | `theorem` | [primeLogWeight_pos_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/primelogweight-pos-iff.md) | 49 | `result-track:83402db6cf927bcb740013f72754bde0573b0b81bc2244a278b607e9427d2ae2` |
+| 6 | `def` | [goldbachLogTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/goldbachlogterm.md) | 62 | `declaration-track:530ed9c7963ad255db8265c97656c020ce315526c0471952fac6d3fb7a8578c9` |
+| 7 | `theorem` | [goldbachLogTerm_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/goldbachlogterm-nonneg.md) | 66 | `result-track:834cafa36eaa3fb4b071554a0c43d716566ca69ab56eaf3402e5902efcc81a6d` |
+| 8 | `theorem` | [goldbachLogTerm_pos_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/goldbachlogterm-pos-iff.md) | 74 | `result-track:ed1978d24a6d4b6980d6120ec46275e9284dc6d9b311c7e9dd8981734f23d25b` |
+| 9 | `def` | [goldbachLogMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/goldbachlogmass.md) | 91 | `declaration-track:f6a56c7fbeb0d9049fd24f087bc6f104ad10d8cf930c17bb2e71c2c836d78145` |
+| 10 | `theorem` | [goldbachLogMass_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/goldbachlogmass-nonneg.md) | 95 | `result-track:eb5a1a6d7ebbe6ccf38d4004e56e07dfad69b6450a2f4f3e28bd7433e2626bf9` |
+| 11 | `theorem` | [goldbachLogMass_pos_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/goldbachlogmass-pos-iff.md) | 101 | `result-track:ca948b75f873b7b3ebcfd3113337389ee6ebaf4a81e68aabfe6a31876e49ea2c` |
+| 12 | `theorem` | [goldbachLogMass_pos_iff_count_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/declarations/goldbachlogmass-pos-iff-count-pos.md) | 120 | `result-track:da6d0d72b4429975c1c425ceba1ced49dcc11d651babb8fb370a7110e922eebf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

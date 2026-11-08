@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/AnalyticZeroOrderDetector.lean/index.md) · [Full source](../../../../GeneralTopology/AnalyticZeroOrderDetector.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticZeroOrderDetector.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticZeroOrderDetector.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.LogarithmicOrderDetection`](../../../../GeneralTopology/LogarithmicOrderDetection.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.LogarithmicOrderDetection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicOrderDetection.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.Analysis.Analytic.Uniqueness` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [analytic_order_finite_of_nonzero_value](../../../../GeneralTopology/AnalyticZeroOrderDetector.lean/declarations/analytic-order-finite-of-nonzero-value.md) | 11 | `result-track:22b7aa5d7e84825e7e685d5fe0fec584d8038e167f1214d8c91ebf036cd830fb` |
-| 2 | `theorem` | [analytic_finite_order_factorization](../../../../GeneralTopology/AnalyticZeroOrderDetector.lean/declarations/analytic-finite-order-factorization.md) | 20 | `result-track:3d5227f01b6627a0cf13926216b991979e662dfaa1b561c066231bb6bdcd682a` |
-| 3 | `theorem` | [analytic_finite_order_scaled_coefficient](../../../../GeneralTopology/AnalyticZeroOrderDetector.lean/declarations/analytic-finite-order-scaled-coefficient.md) | 29 | `result-track:1065c801f4aed0bc0d89ac1325101182da31e738683844e5e5ac306379b8f8f5` |
-| 4 | `theorem` | [analytic_zero_order_pos](../../../../GeneralTopology/AnalyticZeroOrderDetector.lean/declarations/analytic-zero-order-pos.md) | 38 | `result-track:446e579870b02d4646d2dfee025a1d6b60efe3212a8cbd66cf0af59cd1b57ba3` |
-| 5 | `theorem` | [analytic_zero_no_continuous_logDeriv_extension](../../../../GeneralTopology/AnalyticZeroOrderDetector.lean/declarations/analytic-zero-no-continuous-logderiv-extension.md) | 49 | `result-track:ae4a80d69b50429aa6c802127aebc62b92934287702a4341270b6ce700056ed9` |
-| 6 | `theorem` | [analytic_zero_detector_of_nonzero_value](../../../../GeneralTopology/AnalyticZeroOrderDetector.lean/declarations/analytic-zero-detector-of-nonzero-value.md) | 57 | `result-track:621d037c68fb1836420b42e0deb6fe5178591d2a59c60684775db25115688c2c` |
+| 1 | `theorem` | [analytic_order_finite_of_nonzero_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticZeroOrderDetector.lean/declarations/analytic-order-finite-of-nonzero-value.md) | 11 | `result-track:22b7aa5d7e84825e7e685d5fe0fec584d8038e167f1214d8c91ebf036cd830fb` |
+| 2 | `theorem` | [analytic_finite_order_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticZeroOrderDetector.lean/declarations/analytic-finite-order-factorization.md) | 20 | `result-track:3d5227f01b6627a0cf13926216b991979e662dfaa1b561c066231bb6bdcd682a` |
+| 3 | `theorem` | [analytic_finite_order_scaled_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticZeroOrderDetector.lean/declarations/analytic-finite-order-scaled-coefficient.md) | 29 | `result-track:1065c801f4aed0bc0d89ac1325101182da31e738683844e5e5ac306379b8f8f5` |
+| 4 | `theorem` | [analytic_zero_order_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticZeroOrderDetector.lean/declarations/analytic-zero-order-pos.md) | 38 | `result-track:446e579870b02d4646d2dfee025a1d6b60efe3212a8cbd66cf0af59cd1b57ba3` |
+| 5 | `theorem` | [analytic_zero_no_continuous_logDeriv_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticZeroOrderDetector.lean/declarations/analytic-zero-no-continuous-logderiv-extension.md) | 49 | `result-track:ae4a80d69b50429aa6c802127aebc62b92934287702a4341270b6ce700056ed9` |
+| 6 | `theorem` | [analytic_zero_detector_of_nonzero_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticZeroOrderDetector.lean/declarations/analytic-zero-detector-of-nonzero-value.md) | 57 | `result-track:621d037c68fb1836420b42e0deb6fe5178591d2a59c60684775db25115688c2c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/RealVectorSpace.lean/index.md) · [Full source](../../../../GeneralTopology/RealVectorSpace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealVectorSpace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealVectorSpace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [map_real_smul](../../../../GeneralTopology/RealVectorSpace.lean/declarations/map-real-smul.md) | 22 | `result-track:4a3f1c72ebd7ec92b961081bbf4d21447c82b872a7bb85d5141824eb89e2e469` |
-| 2 | `def` | [toRealLinearMap](../../../../GeneralTopology/RealVectorSpace.lean/declarations/toreallinearmap.md) | 33 | `declaration-track:5bb5b92b0c31e5d668b03ae0b824de5fcbb0616aa2c8da2a932c72100e45147b` |
-| 3 | `theorem` | [coe_toRealLinearMap](../../../../GeneralTopology/RealVectorSpace.lean/declarations/coe-toreallinearmap.md) | 39 | `result-track:e3ba5bd1542e7f5b71cd5706a05636ea6895f4fc294a57b2288f0dda5bed1800` |
-| 4 | `def` | [AddEquiv.toRealLinearEquiv](../../../../GeneralTopology/RealVectorSpace.lean/declarations/addequiv-toreallinearequiv.md) | 46 | `declaration-track:b3fd15b5df2755f46a8a8e81cf2335a2a1522b732205742fd4c44911dfafb765` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/RealVectorSpace.lean/declarations/instance.md) | 53 | `declaration-track:6e1c5a5f872d8627f2b31493ea695d566bfcbde8a3c6296ea87d980e61e8e5de` |
+| 1 | `theorem` | [map_real_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealVectorSpace.lean/declarations/map-real-smul.md) | 22 | `result-track:4a3f1c72ebd7ec92b961081bbf4d21447c82b872a7bb85d5141824eb89e2e469` |
+| 2 | `def` | [toRealLinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealVectorSpace.lean/declarations/toreallinearmap.md) | 33 | `declaration-track:5bb5b92b0c31e5d668b03ae0b824de5fcbb0616aa2c8da2a932c72100e45147b` |
+| 3 | `theorem` | [coe_toRealLinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealVectorSpace.lean/declarations/coe-toreallinearmap.md) | 39 | `result-track:e3ba5bd1542e7f5b71cd5706a05636ea6895f4fc294a57b2288f0dda5bed1800` |
+| 4 | `def` | [AddEquiv.toRealLinearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealVectorSpace.lean/declarations/addequiv-toreallinearequiv.md) | 46 | `declaration-track:b3fd15b5df2755f46a8a8e81cf2335a2a1522b732205742fd4c44911dfafb765` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealVectorSpace.lean/declarations/instance.md) | 53 | `declaration-track:6e1c5a5f872d8627f2b31493ea695d566bfcbde8a3c6296ea87d980e61e8e5de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

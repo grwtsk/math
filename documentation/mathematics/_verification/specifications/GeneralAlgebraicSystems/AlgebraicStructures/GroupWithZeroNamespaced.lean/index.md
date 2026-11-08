@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mulLeft₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNamespaced.lean/declarations/mulleft.md) | 35 | `declaration-track:1500a44e1d95e103278c1bfbc8431c211ec9fef72eef26608c75293de378307a` |
-| 2 | `theorem` | [Group With Zero Namespaced](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-mathematicallogic-mulleft-vari-source-edition-2.md) | 41 | `result-track:31dec3e470e2564cd788dd2ec087e907b412baf62b871bd76f09d043d677f0b6` |
-| 3 | `def` | [mulRight₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNamespaced.lean/declarations/mulright.md) | 48 | `declaration-track:9d3c80760101d1b45304762cede80aa04e8d5b70337eefab3b8408ba46535ede` |
-| 4 | `theorem` | [Group With Zero Namespaced](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-mathematicallogic-mulleft-vari.md) | 54 | `result-track:06947ce552e8c69ecc8639806929731919526cf76ffea77ffb8b2d3e5acaca8f` |
+| 1 | `def` | [mulLeft₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNamespaced.lean/declarations/mulleft.md) | 35 | `declaration-track:1500a44e1d95e103278c1bfbc8431c211ec9fef72eef26608c75293de378307a` |
+| 2 | `theorem` | [Group With Zero Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-mathematicallogic-mulleft-vari-source-edition-2.md) | 41 | `result-track:31dec3e470e2564cd788dd2ec087e907b412baf62b871bd76f09d043d677f0b6` |
+| 3 | `def` | [mulRight₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNamespaced.lean/declarations/mulright.md) | 48 | `declaration-track:9d3c80760101d1b45304762cede80aa04e8d5b70337eefab3b8408ba46535ede` |
+| 4 | `theorem` | [Group With Zero Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-mathematicallogic-mulleft-vari.md) | 54 | `result-track:06947ce552e8c69ecc8639806929731919526cf76ffea77ffb8b2d3e5acaca8f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

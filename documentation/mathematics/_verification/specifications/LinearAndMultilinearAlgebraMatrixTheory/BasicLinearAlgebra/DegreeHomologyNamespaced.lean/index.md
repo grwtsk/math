@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomologyNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomologyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomologyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomologyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cycles](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomologyNamespaced.lean/declarations/cycles.md) | 24 | `declaration-track:ff0305c938fdd9102a1b884612b05910975438bb83af1ff3fceaba056973e5ca` |
-| 2 | `theorem` | [boundary_mem_cycles](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomologyNamespaced.lean/declarations/boundary-mem-cycles.md) | 33 | `result-track:417b103f22fad093a2cc7629fc7447d0d3ab09b05465c2960d6fc6eba64f196b` |
-| 3 | `def` | [boundaryIntoCycles](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomologyNamespaced.lean/declarations/boundaryintocycles.md) | 55 | `declaration-track:83633a4cc7413b2eb87da43ca1ab3d16be189110cdac141ae64e6967972b3dca` |
-| 4 | `def` | [boundaries](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomologyNamespaced.lean/declarations/boundaries.md) | 70 | `declaration-track:3a585b7dc4c00141f3823485dd8afaf2c313923b51ca918858a7db91dd407635` |
-| 5 | `abbrev` | [DegreeHomology](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomologyNamespaced.lean/declarations/degreehomology.md) | 76 | `declaration-track:7d4cc07d835e1e9a6db090c1039637901ee0e8d0d343fb218ce4570dee7711f9` |
+| 1 | `def` | [cycles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomologyNamespaced.lean/declarations/cycles.md) | 24 | `declaration-track:ff0305c938fdd9102a1b884612b05910975438bb83af1ff3fceaba056973e5ca` |
+| 2 | `theorem` | [boundary_mem_cycles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomologyNamespaced.lean/declarations/boundary-mem-cycles.md) | 33 | `result-track:417b103f22fad093a2cc7629fc7447d0d3ab09b05465c2960d6fc6eba64f196b` |
+| 3 | `def` | [boundaryIntoCycles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomologyNamespaced.lean/declarations/boundaryintocycles.md) | 55 | `declaration-track:83633a4cc7413b2eb87da43ca1ab3d16be189110cdac141ae64e6967972b3dca` |
+| 4 | `def` | [boundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomologyNamespaced.lean/declarations/boundaries.md) | 70 | `declaration-track:3a585b7dc4c00141f3823485dd8afaf2c313923b51ca918858a7db91dd407635` |
+| 5 | `abbrev` | [DegreeHomology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeHomologyNamespaced.lean/declarations/degreehomology.md) | 76 | `declaration-track:7d4cc07d835e1e9a6db090c1039637901ee0e8d0d343fb218ce4570dee7711f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

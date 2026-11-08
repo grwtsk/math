@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OperatorBanachSteinhaus.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OperatorBanachSteinhaus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OperatorBanachSteinhaus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OperatorBanachSteinhaus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [banach_steinhaus](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OperatorBanachSteinhaus.lean/declarations/banach-steinhaus.md) | 32 | `result-track:797d6c3273c51d54c80a58424bcc9af77de968a907f161a7b8dae26767aebff5` |
-| 2 | `theorem` | [banach_steinhaus_iSup_nnnorm](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OperatorBanachSteinhaus.lean/declarations/banach-steinhaus-isup-nnnorm.md) | 42 | `result-track:1e9e244a35c2814fdb1de9e583408a5e4eb1dfcf1b04a2acd5c1efb9e42052ab` |
-| 3 | `abbrev` | [continuousLinearMapOfTendsto](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OperatorBanachSteinhaus.lean/declarations/continuouslinearmapoftendsto.md) | 55 | `declaration-track:d4407c1b8513738890b5a1d5e87cfeda5fe8d06a83b34eacd674d4c115fef4de` |
+| 1 | `theorem` | [banach_steinhaus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OperatorBanachSteinhaus.lean/declarations/banach-steinhaus.md) | 32 | `result-track:797d6c3273c51d54c80a58424bcc9af77de968a907f161a7b8dae26767aebff5` |
+| 2 | `theorem` | [banach_steinhaus_iSup_nnnorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OperatorBanachSteinhaus.lean/declarations/banach-steinhaus-isup-nnnorm.md) | 42 | `result-track:1e9e244a35c2814fdb1de9e583408a5e4eb1dfcf1b04a2acd5c1efb9e42052ab` |
+| 3 | `abbrev` | [continuousLinearMapOfTendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OperatorBanachSteinhaus.lean/declarations/continuouslinearmapoftendsto.md) | 55 | `declaration-track:d4407c1b8513738890b5a1d5e87cfeda5fe8d06a83b34eacd674d4c115fef4de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

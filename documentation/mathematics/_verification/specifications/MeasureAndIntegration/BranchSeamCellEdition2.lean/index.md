@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/BranchSeamCellEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/BranchSeamCellEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchSeamCellEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchSeamCellEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [four_seam_cells_cancel](../../../../MeasureAndIntegration/BranchSeamCellEdition2.lean/declarations/four-seam-cells-cancel.md) | 40 | `result-track:2d5cbd04cf341d29b742f14663c0629567407ccc6aca554ccccc6511e437cc0e` |
-| 2 | `theorem` | [coefficientOneForm_curveIntegral_segment](../../../../MeasureAndIntegration/BranchSeamCellEdition2.lean/declarations/coefficientoneform-curveintegral-segment.md) | 112 | `result-track:03b1d61fa0d00fd88fc22e70f21906123fc6fdb9163fb33011e3f08b732fdc04` |
+| 1 | `theorem` | [four_seam_cells_cancel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchSeamCellEdition2.lean/declarations/four-seam-cells-cancel.md) | 40 | `result-track:2d5cbd04cf341d29b742f14663c0629567407ccc6aca554ccccc6511e437cc0e` |
+| 2 | `theorem` | [coefficientOneForm_curveIntegral_segment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchSeamCellEdition2.lean/declarations/coefficientoneform-curveintegral-segment.md) | 112 | `result-track:03b1d61fa0d00fd88fc22e70f21906123fc6fdb9163fb33011e3f08b732fdc04` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

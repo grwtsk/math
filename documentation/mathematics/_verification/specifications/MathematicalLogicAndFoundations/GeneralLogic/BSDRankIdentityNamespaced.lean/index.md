@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentityNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BSDRankSurface](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentityNamespaced.lean/declarations/bsdranksurface.md) | 15 | `declaration-track:a53ae88c96613b02362fedc4aec2505345f282bc2fbc99ceab273c5f2a662552` |
-| 2 | `def` | [bsdRankIdentityClaim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentityNamespaced.lean/declarations/bsdrankidentityclaim.md) | 22 | `declaration-track:5ec863492d0a651d0fb4e876a7d16c8fcf803f433c32325f714fa63730cccf50` |
-| 3 | `def` | [bsdRankIdentityResidue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentityNamespaced.lean/declarations/bsdrankidentityresidue.md) | 24 | `declaration-track:86b0c4da3c014763e3abbe1f0d931780ef423ace054ebb2f1de2b0d81ab6451a` |
-| 4 | `def` | [bsdRankIdentityChecked](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentityNamespaced.lean/declarations/bsdrankidentitychecked.md) | 33 | `declaration-track:817c0a677d37b7e76ebe4efefd67968b54856576bbef2f9e4d466a25058645bc` |
-| 5 | `theorem` | [bsdRankIdentity_hasResidue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentityNamespaced.lean/declarations/bsdrankidentity-hasresidue.md) | 37 | `result-track:f3364210ca30885c04e74aae6b8e6f028c5f78bda736d3f7c6bfd5f9f4ef42f0` |
+| 1 | `structure` | [BSDRankSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentityNamespaced.lean/declarations/bsdranksurface.md) | 15 | `declaration-track:a53ae88c96613b02362fedc4aec2505345f282bc2fbc99ceab273c5f2a662552` |
+| 2 | `def` | [bsdRankIdentityClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentityNamespaced.lean/declarations/bsdrankidentityclaim.md) | 22 | `declaration-track:5ec863492d0a651d0fb4e876a7d16c8fcf803f433c32325f714fa63730cccf50` |
+| 3 | `def` | [bsdRankIdentityResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentityNamespaced.lean/declarations/bsdrankidentityresidue.md) | 24 | `declaration-track:86b0c4da3c014763e3abbe1f0d931780ef423ace054ebb2f1de2b0d81ab6451a` |
+| 4 | `def` | [bsdRankIdentityChecked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentityNamespaced.lean/declarations/bsdrankidentitychecked.md) | 33 | `declaration-track:817c0a677d37b7e76ebe4efefd67968b54856576bbef2f9e4d466a25058645bc` |
+| 5 | `theorem` | [bsdRankIdentity_hasResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BSDRankIdentityNamespaced.lean/declarations/bsdrankidentity-hasresidue.md) | 37 | `result-track:f3364210ca30885c04e74aae6b8e6f028c5f78bda736d3f7c6bfd5f9f4ef42f0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

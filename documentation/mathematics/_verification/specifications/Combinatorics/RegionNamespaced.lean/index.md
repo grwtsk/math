@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RegionNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/RegionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ConceptRegion](../../../../Combinatorics/RegionNamespaced.lean/declarations/conceptregion.md) | 15 | `declaration-track:ee43167ad5a838a2d229199f4c0a92ac4e6ce703ca7b665024eea06f3391a28d` |
+| 1 | `structure` | [ConceptRegion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegionNamespaced.lean/declarations/conceptregion.md) | 15 | `declaration-track:ee43167ad5a838a2d229199f4c0a92ac4e6ce703ca7b665024eea06f3391a28d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

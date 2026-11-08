@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/BorelCaratheodory.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/BorelCaratheodory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BorelCaratheodory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BorelCaratheodory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [divRemovable_zero](../../../../FunctionsOfAComplexVariable/BorelCaratheodory.lean/declarations/divremovable-zero.md) | 22 | `declaration-track:a6576a15b415b19002763a3d44136a5d529eb9c2263036f689f0d5ca4aefe91e` |
-| 2 | `lemma` | [divRemovable_zero_of_ne_zero](../../../../FunctionsOfAComplexVariable/BorelCaratheodory.lean/declarations/divremovable-zero-of-ne-zero.md) | 36 | `result-track:2c755f9bba23a9f38682e2def281b607abbdadf1852e4c854e78fda582a8433b` |
-| 3 | `lemma` | [AnalyticOn_divRemovable_zero](../../../../FunctionsOfAComplexVariable/BorelCaratheodory.lean/declarations/analyticon-divremovable-zero.md) | 66 | `result-track:ce6d82bc756258b22ed39dd6545f77bffc8cc639476f4e6b6bebc337a98f83c5` |
-| 4 | `lemma` | [AnalyticOn_divRemovable_zero_closedBall](../../../../FunctionsOfAComplexVariable/BorelCaratheodory.lean/declarations/analyticon-divremovable-zero-closedball.md) | 121 | `result-track:dee1c4b4ed791a76d2e0e5e90ff0d8eb29a135a3201c1546b1dbef819827b3e9` |
-| 5 | `abbrev` | [schwartzQuotient](../../../../FunctionsOfAComplexVariable/BorelCaratheodory.lean/declarations/schwartzquotient.md) | 204 | `declaration-track:52d5f125c9f8fee7060c86d1bcca9440eb8d10698d0973d58fee3c3fd0ce3b14` |
-| 6 | `lemma` | [AnalyticOn.schwartzQuotient](../../../../FunctionsOfAComplexVariable/BorelCaratheodory.lean/declarations/analyticon-schwartzquotient.md) | 223 | `result-track:d2f3f4e19ad045bcb1eb6e4cfdd2bf61ac29983e29a55ae6ce2d0899b11c2115` |
-| 7 | `lemma` | [Complex.norm_le_norm_two_mul_sub_of_re_le](../../../../FunctionsOfAComplexVariable/BorelCaratheodory.lean/declarations/complex-norm-le-norm-two-mul-sub-of-re-le.md) | 247 | `result-track:54336060f769dfbd75582671c2a1c9b1235a5f1a7f623e20be82ab7a4561ebd2` |
-| 8 | `theorem` | [borelCaratheodory_closedBall](../../../../FunctionsOfAComplexVariable/BorelCaratheodory.lean/declarations/borelcaratheodory-closedball.md) | 321 | `result-track:a197f819e1747e9332457d7d57ce90b30f5ab3487fa432dddd5ad991ecba3da5` |
+| 1 | `abbrev` | [divRemovable_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BorelCaratheodory.lean/declarations/divremovable-zero.md) | 22 | `declaration-track:a6576a15b415b19002763a3d44136a5d529eb9c2263036f689f0d5ca4aefe91e` |
+| 2 | `lemma` | [divRemovable_zero_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BorelCaratheodory.lean/declarations/divremovable-zero-of-ne-zero.md) | 36 | `result-track:2c755f9bba23a9f38682e2def281b607abbdadf1852e4c854e78fda582a8433b` |
+| 3 | `lemma` | [AnalyticOn_divRemovable_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BorelCaratheodory.lean/declarations/analyticon-divremovable-zero.md) | 66 | `result-track:ce6d82bc756258b22ed39dd6545f77bffc8cc639476f4e6b6bebc337a98f83c5` |
+| 4 | `lemma` | [AnalyticOn_divRemovable_zero_closedBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BorelCaratheodory.lean/declarations/analyticon-divremovable-zero-closedball.md) | 121 | `result-track:dee1c4b4ed791a76d2e0e5e90ff0d8eb29a135a3201c1546b1dbef819827b3e9` |
+| 5 | `abbrev` | [schwartzQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BorelCaratheodory.lean/declarations/schwartzquotient.md) | 204 | `declaration-track:52d5f125c9f8fee7060c86d1bcca9440eb8d10698d0973d58fee3c3fd0ce3b14` |
+| 6 | `lemma` | [AnalyticOn.schwartzQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BorelCaratheodory.lean/declarations/analyticon-schwartzquotient.md) | 223 | `result-track:d2f3f4e19ad045bcb1eb6e4cfdd2bf61ac29983e29a55ae6ce2d0899b11c2115` |
+| 7 | `lemma` | [Complex.norm_le_norm_two_mul_sub_of_re_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BorelCaratheodory.lean/declarations/complex-norm-le-norm-two-mul-sub-of-re-le.md) | 247 | `result-track:54336060f769dfbd75582671c2a1c9b1235a5f1a7f623e20be82ab7a4561ebd2` |
+| 8 | `theorem` | [borelCaratheodory_closedBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BorelCaratheodory.lean/declarations/borelcaratheodory-closedball.md) | 321 | `result-track:a197f819e1747e9332457d7d57ce90b30f5ab3487fa432dddd5ad991ecba3da5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

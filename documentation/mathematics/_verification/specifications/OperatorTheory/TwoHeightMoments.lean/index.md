@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../OperatorTheory/TwoHeightMoments.lean/index.md) · [Full source](../../../../OperatorTheory/TwoHeightMoments.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/TwoHeightMoments.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/TwoHeightMoments.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathlib` — import line 9; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Analysis.Inequalities.ResidualEnclosure`](../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.Analysis.Inequalities.ResidualEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/index.md) — import line 10; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [scalar_resolvent_drop](../../../../OperatorTheory/TwoHeightMoments.lean/declarations/scalar-resolvent-drop.md) | 25 | `result-track:71897235012b96b5c0fcc36d3637df0508050626c4189a881d17275e332f0101` |
-| 2 | `theorem` | [scalar_drop_nonneg](../../../../OperatorTheory/TwoHeightMoments.lean/declarations/scalar-drop-nonneg.md) | 32 | `result-track:0236c5163e05827be5ae090d8b8f74917ec6d1e2774edba96277987959765275` |
-| 3 | `theorem` | [scalar_inverse_sandwich](../../../../OperatorTheory/TwoHeightMoments.lean/declarations/scalar-inverse-sandwich.md) | 37 | `result-track:df67cd21003e353e9509ee9f49bc1b92426161b92aaa78c446b9b9b92bbcfcc1` |
-| 4 | `def` | [response](../../../../OperatorTheory/TwoHeightMoments.lean/declarations/response.md) | 46 | `declaration-track:e0b94c1b49b585cb94aa5f9e8158b4304bfbc4637a31d7f59557620fddc49e9f` |
-| 5 | `def` | [inverseMoment](../../../../OperatorTheory/TwoHeightMoments.lean/declarations/inversemoment.md) | 49 | `declaration-track:b297c9778a7ff18b2ac78c270263d58e3218df01dc46ac277a3f66b440ce2897` |
-| 6 | `theorem` | [finite_drop_identity](../../../../OperatorTheory/TwoHeightMoments.lean/declarations/finite-drop-identity.md) | 52 | `result-track:17d8b46f45fef55470548666e60a04568e4e15d76479f9939563974846aeff16` |
-| 7 | `theorem` | [finite_drop_le_inverseMoment](../../../../OperatorTheory/TwoHeightMoments.lean/declarations/finite-drop-le-inversemoment.md) | 66 | `result-track:06b2beacfd91fe96ef4f62c15bfc0b367482cd181cbb43316e82676dba341317` |
-| 8 | `theorem` | [zero_mode_drop](../../../../OperatorTheory/TwoHeightMoments.lean/declarations/zero-mode-drop.md) | 78 | `result-track:da313f8c41dcda48f2934be2feee5e8960dcc3616ad74a4dcb5e73d33a50e781` |
-| 9 | `theorem` | [finite_low_mass_bound](../../../../OperatorTheory/TwoHeightMoments.lean/declarations/finite-low-mass-bound.md) | 85 | `result-track:d629b4b5ea9efc406f1847a2a6ed29505e6dd4fc98664407c6945486853ee6db` |
+| 1 | `theorem` | [scalar_resolvent_drop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/TwoHeightMoments.lean/declarations/scalar-resolvent-drop.md) | 25 | `result-track:71897235012b96b5c0fcc36d3637df0508050626c4189a881d17275e332f0101` |
+| 2 | `theorem` | [scalar_drop_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/TwoHeightMoments.lean/declarations/scalar-drop-nonneg.md) | 32 | `result-track:0236c5163e05827be5ae090d8b8f74917ec6d1e2774edba96277987959765275` |
+| 3 | `theorem` | [scalar_inverse_sandwich](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/TwoHeightMoments.lean/declarations/scalar-inverse-sandwich.md) | 37 | `result-track:df67cd21003e353e9509ee9f49bc1b92426161b92aaa78c446b9b9b92bbcfcc1` |
+| 4 | `def` | [response](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/TwoHeightMoments.lean/declarations/response.md) | 46 | `declaration-track:e0b94c1b49b585cb94aa5f9e8158b4304bfbc4637a31d7f59557620fddc49e9f` |
+| 5 | `def` | [inverseMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/TwoHeightMoments.lean/declarations/inversemoment.md) | 49 | `declaration-track:b297c9778a7ff18b2ac78c270263d58e3218df01dc46ac277a3f66b440ce2897` |
+| 6 | `theorem` | [finite_drop_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/TwoHeightMoments.lean/declarations/finite-drop-identity.md) | 52 | `result-track:17d8b46f45fef55470548666e60a04568e4e15d76479f9939563974846aeff16` |
+| 7 | `theorem` | [finite_drop_le_inverseMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/TwoHeightMoments.lean/declarations/finite-drop-le-inversemoment.md) | 66 | `result-track:06b2beacfd91fe96ef4f62c15bfc0b367482cd181cbb43316e82676dba341317` |
+| 8 | `theorem` | [zero_mode_drop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/TwoHeightMoments.lean/declarations/zero-mode-drop.md) | 78 | `result-track:da313f8c41dcda48f2934be2feee5e8960dcc3616ad74a4dcb5e73d33a50e781` |
+| 9 | `theorem` | [finite_low_mass_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/TwoHeightMoments.lean/declarations/finite-low-mass-bound.md) | 85 | `result-track:d629b4b5ea9efc406f1847a2a6ed29505e6dd4fc98664407c6945486853ee6db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteFourier.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteFourier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteFourier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteFourier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Fourier.FiniteAdditiveProjector`](../../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.GoldbachWeighted`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.FiniteAdditiveProjector`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachWeighted`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachWeighted.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Data.Complex.BigOperators` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 7; external provider; requires a separately pinned dependency.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [goldbachProjectorMass](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteFourier.lean/declarations/goldbachprojectormass.md) | 32 | `declaration-track:6c2a32dcdf6945fb3bc0e07022b4d88a058007d7bf50a4ced9e8bc34a24fa2e7` |
-| 2 | `theorem` | [goldbachProjectorMass_eq_fullFrequency](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteFourier.lean/declarations/goldbachprojectormass-eq-fullfrequency.md) | 39 | `result-track:401a2c1e9be0f30d30368875a625be1a079c921f080048cba03db55e167d7de3` |
-| 3 | `theorem` | [goldbachProjectorMass_eq_logMass](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteFourier.lean/declarations/goldbachprojectormass-eq-logmass.md) | 53 | `result-track:ba388d09a6dd7fb41c11f6098b5d1a1a86eb08cc3431228f612710fd9efcd3f5` |
+| 1 | `def` | [goldbachProjectorMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteFourier.lean/declarations/goldbachprojectormass.md) | 32 | `declaration-track:6c2a32dcdf6945fb3bc0e07022b4d88a058007d7bf50a4ced9e8bc34a24fa2e7` |
+| 2 | `theorem` | [goldbachProjectorMass_eq_fullFrequency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteFourier.lean/declarations/goldbachprojectormass-eq-fullfrequency.md) | 39 | `result-track:401a2c1e9be0f30d30368875a625be1a079c921f080048cba03db55e167d7de3` |
+| 3 | `theorem` | [goldbachProjectorMass_eq_logMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteFourier.lean/declarations/goldbachprojectormass-eq-logmass.md) | 53 | `result-track:ba388d09a6dd7fb41c11f6098b5d1a1a86eb08cc3431228f612710fd9efcd3f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

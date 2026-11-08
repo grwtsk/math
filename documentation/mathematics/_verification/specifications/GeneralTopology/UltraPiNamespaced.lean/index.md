@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/UltraPiNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/UltraPiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraPiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraPiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Pi.instIsUltrametricDist](../../../../GeneralTopology/UltraPiNamespaced.lean/declarations/pi-instisultrametricdist.md) | 30 | `declaration-track:2509a514bd86b2d061e22caf538bfacaf0354149b8177dec6614498154aa8a1c` |
+| 1 | `instance` | [Pi.instIsUltrametricDist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraPiNamespaced.lean/declarations/pi-instisultrametricdist.md) | 30 | `declaration-track:2509a514bd86b2d061e22caf538bfacaf0354149b8177dec6614498154aa8a1c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

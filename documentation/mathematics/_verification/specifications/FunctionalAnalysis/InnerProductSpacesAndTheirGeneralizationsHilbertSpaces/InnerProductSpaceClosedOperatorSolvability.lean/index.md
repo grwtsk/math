@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceClosedOperatorSolvability.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceClosedOperatorSolvability.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceClosedOperatorSolvability.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceClosedOperatorSolvability.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_graph_of_adjoint_identity](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceClosedOperatorSolvability.lean/declarations/mem-graph-of-adjoint-identity.md) | 39 | `result-track:da225349e6aa6a786812e217e523374e00af264f8746709f8361efd28588bb0b` |
-| 2 | `theorem` | [exists_solution_of_adjoint_bound](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceClosedOperatorSolvability.lean/declarations/exists-solution-of-adjoint-bound.md) | 78 | `result-track:0121e821e1ab47aeb7e745a7ceb92e0ccddea96f1d7da99522efadb8ae541e5b` |
+| 1 | `theorem` | [mem_graph_of_adjoint_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceClosedOperatorSolvability.lean/declarations/mem-graph-of-adjoint-identity.md) | 39 | `result-track:da225349e6aa6a786812e217e523374e00af264f8746709f8361efd28588bb0b` |
+| 2 | `theorem` | [exists_solution_of_adjoint_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceClosedOperatorSolvability.lean/declarations/exists-solution-of-adjoint-bound.md) | 78 | `result-track:0121e821e1ab47aeb7e745a7ceb92e0ccddea96f1d7da99522efadb8ae541e5b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

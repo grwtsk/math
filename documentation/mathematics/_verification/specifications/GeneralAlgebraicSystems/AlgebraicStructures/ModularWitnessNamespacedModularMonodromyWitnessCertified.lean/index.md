@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessNamespacedModularMonodromyWitnessCertified.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessNamespacedModularMonodromyWitnessCertified.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessNamespacedModularMonodromyWitnessCertified.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessNamespacedModularMonodromyWitnessCertified.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [modular_monodromy_witness_certified](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessNamespacedModularMonodromyWitnessCertified.lean/declarations/modular-monodromy-witness-certified.md) | 27 | `result-track:1ccc00813e4c8a5fb08a05a0cc59ca059ec18986d5ca3118cb49a5940d53f9d7` |
+| 1 | `theorem` | [modular_monodromy_witness_certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessNamespacedModularMonodromyWitnessCertified.lean/declarations/modular-monodromy-witness-certified.md) | 27 | `result-track:1ccc00813e4c8a5fb08a05a0cc59ca059ec18986d5ca3118cb49a5940d53f9d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Readiness.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Readiness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Readiness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Readiness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AnalyticPDEInterfaceReadiness](../../../../../ComputerScience/AlgorithmsInComputerScience/Readiness.lean/declarations/analyticpdeinterfacereadiness.md) | 35 | `declaration-track:9e202991a49a2f7f58f5e5914280da6484ae7594eb7902f073c7fbd7f959f01f` |
-| 2 | `def` | [AnalyticPDEInterfaceReadiness.ready](../../../../../ComputerScience/AlgorithmsInComputerScience/Readiness.lean/declarations/analyticpdeinterfacereadiness-ready.md) | 50 | `declaration-track:f908260853f98815a0cebc3f8c48e7ba412a303a265583899643985c31a5cf20` |
-| 3 | `def` | [AnalyticPDEInterfaceReadiness.theoremReady](../../../../../ComputerScience/AlgorithmsInComputerScience/Readiness.lean/declarations/analyticpdeinterfacereadiness-theoremready.md) | 66 | `declaration-track:373eea59203b11c6689aa39f6f452b8b065a0062d6413a95c26c54be01807109` |
-| 4 | `def` | [currentAnalyticPDEReadiness](../../../../../ComputerScience/AlgorithmsInComputerScience/Readiness.lean/declarations/currentanalyticpdereadiness.md) | 80 | `declaration-track:9fc3ff9e3767aae06683e9943e9d9ae27be807b50e9ba35d76069745ea7aeb30` |
-| 5 | `theorem` | [currentAnalyticPDEReadiness_not_theoremReady](../../../../../ComputerScience/AlgorithmsInComputerScience/Readiness.lean/declarations/currentanalyticpdereadiness-not-theoremready.md) | 101 | `result-track:1ce59044a729ec7617036588ed0f7b3e5bdc5ef759e697262ae1d1b328061e4d` |
-| 6 | `theorem` | [currentAnalyticPDEReadiness_not_ready](../../../../../ComputerScience/AlgorithmsInComputerScience/Readiness.lean/declarations/currentanalyticpdereadiness-not-ready.md) | 106 | `result-track:20701496590860f5cc05b3399abae261e67a7eec3fb8745c789a849d2644eb60` |
-| 7 | `theorem` | [currentAnalyticPDEReadiness_interfaces_are_not_authority](../../../../../ComputerScience/AlgorithmsInComputerScience/Readiness.lean/declarations/currentanalyticpdereadiness-interfaces-are-not-authority.md) | 113 | `result-track:63ce1845db86147aeb8f0a21a9b0bc7aed673939b2d7fab71d7484e474ca75bf` |
+| 1 | `structure` | [AnalyticPDEInterfaceReadiness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Readiness.lean/declarations/analyticpdeinterfacereadiness.md) | 35 | `declaration-track:9e202991a49a2f7f58f5e5914280da6484ae7594eb7902f073c7fbd7f959f01f` |
+| 2 | `def` | [AnalyticPDEInterfaceReadiness.ready](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Readiness.lean/declarations/analyticpdeinterfacereadiness-ready.md) | 50 | `declaration-track:f908260853f98815a0cebc3f8c48e7ba412a303a265583899643985c31a5cf20` |
+| 3 | `def` | [AnalyticPDEInterfaceReadiness.theoremReady](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Readiness.lean/declarations/analyticpdeinterfacereadiness-theoremready.md) | 66 | `declaration-track:373eea59203b11c6689aa39f6f452b8b065a0062d6413a95c26c54be01807109` |
+| 4 | `def` | [currentAnalyticPDEReadiness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Readiness.lean/declarations/currentanalyticpdereadiness.md) | 80 | `declaration-track:9fc3ff9e3767aae06683e9943e9d9ae27be807b50e9ba35d76069745ea7aeb30` |
+| 5 | `theorem` | [currentAnalyticPDEReadiness_not_theoremReady](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Readiness.lean/declarations/currentanalyticpdereadiness-not-theoremready.md) | 101 | `result-track:1ce59044a729ec7617036588ed0f7b3e5bdc5ef759e697262ae1d1b328061e4d` |
+| 6 | `theorem` | [currentAnalyticPDEReadiness_not_ready](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Readiness.lean/declarations/currentanalyticpdereadiness-not-ready.md) | 106 | `result-track:20701496590860f5cc05b3399abae261e67a7eec3fb8745c789a849d2644eb60` |
+| 7 | `theorem` | [currentAnalyticPDEReadiness_interfaces_are_not_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Readiness.lean/declarations/currentanalyticpdereadiness-interfaces-are-not-authority.md) | 113 | `result-track:63ce1845db86147aeb8f0a21a9b0bc7aed673939b2d7fab71d7484e474ca75bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

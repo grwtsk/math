@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcRationalBudget.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcRationalBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcRationalBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcRationalBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.GoldbachFrequencyArcBudget`](../../../../../MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachFrequencyArcBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [GoldbachThetaPrefixSupplier](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcRationalBudget.lean/declarations/goldbachthetaprefixsupplier.md) | 26 | `declaration-track:f28a113f760f1495af38097701d032a7d4f2238ed50a227918d5dbc17f42a050` |
-| 2 | `def` | [goldbachTwoArcRationalBudget](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcRationalBudget.lean/declarations/goldbachtwoarcrationalbudget.md) | 32 | `declaration-track:6fb6f842d384a20122e048dc1038beb91efe2af5a4c0d57eaf821301e5a25790` |
-| 3 | `theorem` | [goldbachTwoArcRationalBudget_nonneg](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcRationalBudget.lean/declarations/goldbachtwoarcrationalbudget-nonneg.md) | 35 | `result-track:0e3ff7d150990080301c50eb21e70607f0923277a38430dd774166b072b0d4d0` |
-| 4 | `theorem` | [goldbachTwoArcRationalBudget_le_half](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcRationalBudget.lean/declarations/goldbachtwoarcrationalbudget-le-half.md) | 43 | `result-track:645655e8d823f947935dc9e426d397ece73f5f24d895689cbe4773ce1f921ef1` |
-| 5 | `theorem` | [goldbachTwoArcRationalBudget_strict_margin](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcRationalBudget.lean/declarations/goldbachtwoarcrationalbudget-strict-margin.md) | 61 | `result-track:904b7e7f6d0b0a663497aee723a6a92252dab8750fbbba8c09952661415aeb20` |
+| 1 | `def` | [GoldbachThetaPrefixSupplier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcRationalBudget.lean/declarations/goldbachthetaprefixsupplier.md) | 26 | `declaration-track:f28a113f760f1495af38097701d032a7d4f2238ed50a227918d5dbc17f42a050` |
+| 2 | `def` | [goldbachTwoArcRationalBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcRationalBudget.lean/declarations/goldbachtwoarcrationalbudget.md) | 32 | `declaration-track:6fb6f842d384a20122e048dc1038beb91efe2af5a4c0d57eaf821301e5a25790` |
+| 3 | `theorem` | [goldbachTwoArcRationalBudget_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcRationalBudget.lean/declarations/goldbachtwoarcrationalbudget-nonneg.md) | 35 | `result-track:0e3ff7d150990080301c50eb21e70607f0923277a38430dd774166b072b0d4d0` |
+| 4 | `theorem` | [goldbachTwoArcRationalBudget_le_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcRationalBudget.lean/declarations/goldbachtwoarcrationalbudget-le-half.md) | 43 | `result-track:645655e8d823f947935dc9e426d397ece73f5f24d895689cbe4773ce1f921ef1` |
+| 5 | `theorem` | [goldbachTwoArcRationalBudget_strict_margin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcRationalBudget.lean/declarations/goldbachtwoarcrationalbudget-strict-margin.md) | 61 | `result-track:904b7e7f6d0b0a663497aee723a6a92252dab8750fbbba8c09952661415aeb20` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

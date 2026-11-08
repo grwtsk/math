@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PositiveThirdCyclotomicJacobi.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PositiveThirdCyclotomicJacobi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicJacobi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicJacobi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicJacobi`](../../../../CommutativeAlgebra/CyclotomicThirdCyclotomicJacobi.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicJacobi`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CyclotomicThirdCyclotomicJacobi.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [quotientFintype](../../../../CommutativeAlgebra/PositiveThirdCyclotomicJacobi.lean/declarations/quotientfintype.md) | 19 | `declaration-track:4c5de81e76e8762d467c84b66f0c1952704c80e6b6d46371b0412167435e71c8` |
-| 2 | `instance` | [quotientField](../../../../CommutativeAlgebra/PositiveThirdCyclotomicJacobi.lean/declarations/quotientfield.md) | 22 | `declaration-track:d9a4a9056300f1b786c45f2a537452f4eb662ce8570fad2e7e7e8f5956106756` |
-| 3 | `instance` | [quotientDecidableEq](../../../../CommutativeAlgebra/PositiveThirdCyclotomicJacobi.lean/declarations/quotientdecidableeq.md) | 25 | `declaration-track:7d69b77e4ac2e92f941c9cd8762425c851ff2411f6ebcc5d54b8b968791770a4` |
-| 4 | `theorem` | [actual_zero_summand](../../../../CommutativeAlgebra/PositiveThirdCyclotomicJacobi.lean/declarations/actual-zero-summand.md) | 29 | `result-track:c8928c106a91c968353982cb6e4bfe699d0a1da21873eb434e59b122860ed86d` |
-| 5 | `theorem` | [actual_one_summand](../../../../CommutativeAlgebra/PositiveThirdCyclotomicJacobi.lean/declarations/actual-one-summand.md) | 34 | `result-track:43ec3dcf357721add9cda41cdfc4e4e3843cbd56f6c5c684fe5150ed7987350a` |
-| 6 | `theorem` | [actual_sum_excludes_endpoints](../../../../CommutativeAlgebra/PositiveThirdCyclotomicJacobi.lean/declarations/actual-sum-excludes-endpoints.md) | 39 | `result-track:9b96c44abaf2e99e2878888206e431bf1277371e2b88eb6d600440d5051405ee` |
-| 7 | `theorem` | [actual_good_jacobi_nonvacuous](../../../../CommutativeAlgebra/PositiveThirdCyclotomicJacobi.lean/declarations/actual-good-jacobi-nonvacuous.md) | 48 | `result-track:5f3fbaf48fc1f55021555664e9b8982c5c5381fc2da853858ca214d8144144dc` |
+| 1 | `instance` | [quotientFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicJacobi.lean/declarations/quotientfintype.md) | 19 | `declaration-track:4c5de81e76e8762d467c84b66f0c1952704c80e6b6d46371b0412167435e71c8` |
+| 2 | `instance` | [quotientField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicJacobi.lean/declarations/quotientfield.md) | 22 | `declaration-track:d9a4a9056300f1b786c45f2a537452f4eb662ce8570fad2e7e7e8f5956106756` |
+| 3 | `instance` | [quotientDecidableEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicJacobi.lean/declarations/quotientdecidableeq.md) | 25 | `declaration-track:7d69b77e4ac2e92f941c9cd8762425c851ff2411f6ebcc5d54b8b968791770a4` |
+| 4 | `theorem` | [actual_zero_summand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicJacobi.lean/declarations/actual-zero-summand.md) | 29 | `result-track:c8928c106a91c968353982cb6e4bfe699d0a1da21873eb434e59b122860ed86d` |
+| 5 | `theorem` | [actual_one_summand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicJacobi.lean/declarations/actual-one-summand.md) | 34 | `result-track:43ec3dcf357721add9cda41cdfc4e4e3843cbd56f6c5c684fe5150ed7987350a` |
+| 6 | `theorem` | [actual_sum_excludes_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicJacobi.lean/declarations/actual-sum-excludes-endpoints.md) | 39 | `result-track:9b96c44abaf2e99e2878888206e431bf1277371e2b88eb6d600440d5051405ee` |
+| 7 | `theorem` | [actual_good_jacobi_nonvacuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicJacobi.lean/declarations/actual-good-jacobi-nonvacuous.md) | 48 | `result-track:5f3fbaf48fc1f55021555664e9b8982c5c5381fc2da853858ca214d8144144dc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

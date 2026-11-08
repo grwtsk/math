@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RadiationNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RadiationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RadiationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RadiationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RadiationSpine](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RadiationNamespaced.lean/declarations/radiationspine.md) | 28 | `declaration-track:f0831eefa97a942bf6f05be84b170c8b8a11df37ba147e3a5f614538afa55139` |
-| 2 | `def` | [binaryMatrixSpine](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RadiationNamespaced.lean/declarations/binarymatrixspine.md) | 32 | `declaration-track:dd1fc82680dcf8ee1a877d424b091555a649c81003eda0224e21931d1cbd375e` |
+| 1 | `structure` | [RadiationSpine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RadiationNamespaced.lean/declarations/radiationspine.md) | 28 | `declaration-track:f0831eefa97a942bf6f05be84b170c8b8a11df37ba147e3a5f614538afa55139` |
+| 2 | `def` | [binaryMatrixSpine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RadiationNamespaced.lean/declarations/binarymatrixspine.md) | 32 | `declaration-track:dd1fc82680dcf8ee1a877d424b091555a649c81003eda0224e21931d1cbd375e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

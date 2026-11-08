@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompressionGrowth.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompressionGrowth.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompressionGrowth.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompressionGrowth.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DecisionProblem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompressionGrowth.lean/declarations/decisionproblem.md) | 17 | `declaration-track:4a1de974a5313511f3b90794450fd56b124172bff68084da3df00c6981419ffb` |
-| 2 | `structure` | [CertificateSystem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompressionGrowth.lean/declarations/certificatesystem.md) | 20 | `declaration-track:15b5f592e94faa18f9ac84f3886f54787f7a357ffe597eb4e3a0dc8f4f845742` |
-| 3 | `structure` | [CompressionGrowthProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompressionGrowth.lean/declarations/compressiongrowthprofile.md) | 26 | `declaration-track:70e87d60b59cd7a537f2cb115a4eee942a1810d5310950e1d756a92993ae7479` |
-| 4 | `theorem` | [complexity_polynomial_verification_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompressionGrowth.lean/declarations/complexity-polynomial-verification-if-supplied.md) | 32 | `result-track:9a79d07a6dea4e351fbf814701f401b53811a5e9f9186330299076f6a8f43e4a` |
+| 1 | `structure` | [DecisionProblem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompressionGrowth.lean/declarations/decisionproblem.md) | 17 | `declaration-track:4a1de974a5313511f3b90794450fd56b124172bff68084da3df00c6981419ffb` |
+| 2 | `structure` | [CertificateSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompressionGrowth.lean/declarations/certificatesystem.md) | 20 | `declaration-track:15b5f592e94faa18f9ac84f3886f54787f7a357ffe597eb4e3a0dc8f4f845742` |
+| 3 | `structure` | [CompressionGrowthProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompressionGrowth.lean/declarations/compressiongrowthprofile.md) | 26 | `declaration-track:70e87d60b59cd7a537f2cb115a4eee942a1810d5310950e1d756a92993ae7479` |
+| 4 | `theorem` | [complexity_polynomial_verification_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompressionGrowth.lean/declarations/complexity-polynomial-verification-if-supplied.md) | 32 | `result-track:9a79d07a6dea4e351fbf814701f401b53811a5e9f9186330299076f6a8f43e4a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

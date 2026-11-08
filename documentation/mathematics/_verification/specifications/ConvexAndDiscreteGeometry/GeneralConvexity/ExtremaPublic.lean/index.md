@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ExtremaPublic.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ExtremaPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ExtremaPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ExtremaPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsMinOn.of_isLocalMinOn_of_convexOn_Icc](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ExtremaPublic.lean/declarations/isminon-of-islocalminon-of-convexon-icc.md) | 33 | `result-track:68b911e5ec4157317ff96dae9fa92bf9dbcd196bd8feaf3a409c4edf0a6140d3` |
-| 2 | `theorem` | [IsMinOn.of_isLocalMinOn_of_convexOn](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ExtremaPublic.lean/declarations/isminon-of-islocalminon-of-convexon.md) | 55 | `result-track:84e6845d6c6ba0bbe2fbfe6f12594960c25bc6894029c1ddb2dd544e84b7e607` |
-| 3 | `theorem` | [IsMaxOn.of_isLocalMaxOn_of_concaveOn](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ExtremaPublic.lean/declarations/ismaxon-of-islocalmaxon-of-concaveon.md) | 74 | `result-track:a91992d5ac57fed44036cc3922d631bf5b0782f5eb4ef39fb00a9fae0153b6e6` |
-| 4 | `theorem` | [IsMinOn.of_isLocalMin_of_convex_univ](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ExtremaPublic.lean/declarations/isminon-of-islocalmin-of-convex-univ.md) | 79 | `result-track:d2c4a95fc4a4c8e7fc3575b199e6446d648d10719018cdbabe229002416d3237` |
-| 5 | `theorem` | [IsMaxOn.of_isLocalMax_of_convex_univ](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ExtremaPublic.lean/declarations/ismaxon-of-islocalmax-of-convex-univ.md) | 85 | `result-track:49633497b8df5385071e2e13bf9551991626aa7d38ef66fcef2660d5f377c5f7` |
+| 1 | `theorem` | [IsMinOn.of_isLocalMinOn_of_convexOn_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ExtremaPublic.lean/declarations/isminon-of-islocalminon-of-convexon-icc.md) | 33 | `result-track:68b911e5ec4157317ff96dae9fa92bf9dbcd196bd8feaf3a409c4edf0a6140d3` |
+| 2 | `theorem` | [IsMinOn.of_isLocalMinOn_of_convexOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ExtremaPublic.lean/declarations/isminon-of-islocalminon-of-convexon.md) | 55 | `result-track:84e6845d6c6ba0bbe2fbfe6f12594960c25bc6894029c1ddb2dd544e84b7e607` |
+| 3 | `theorem` | [IsMaxOn.of_isLocalMaxOn_of_concaveOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ExtremaPublic.lean/declarations/ismaxon-of-islocalmaxon-of-concaveon.md) | 74 | `result-track:a91992d5ac57fed44036cc3922d631bf5b0782f5eb4ef39fb00a9fae0153b6e6` |
+| 4 | `theorem` | [IsMinOn.of_isLocalMin_of_convex_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ExtremaPublic.lean/declarations/isminon-of-islocalmin-of-convex-univ.md) | 79 | `result-track:d2c4a95fc4a4c8e7fc3575b199e6446d648d10719018cdbabe229002416d3237` |
+| 5 | `theorem` | [IsMaxOn.of_isLocalMax_of_convex_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ExtremaPublic.lean/declarations/ismaxon-of-islocalmax-of-convex-univ.md) | 85 | `result-track:49633497b8df5385071e2e13bf9551991626aa7d38ef66fcef2660d5f377c5f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionFinite.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionFinite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionFinite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionFinite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [rank_eq_zero_iff_isTorsion](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionFinite.lean/declarations/rank-eq-zero-iff-istorsion.md) | 16 | `result-track:fbdb73d5770530f2434185438ac0c38b2f1d620c3d44f4542b70eee3da7289a6` |
-| 2 | `theorem` | [Module.finrank_eq_zero_iff_isTorsion](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionFinite.lean/declarations/module-finrank-eq-zero-iff-istorsion.md) | 21 | `result-track:31568c68cd2b92e5351fd83a1964051bcceb08c2673ed59520de25510908bb7a` |
+| 1 | `lemma` | [rank_eq_zero_iff_isTorsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionFinite.lean/declarations/rank-eq-zero-iff-istorsion.md) | 16 | `result-track:fbdb73d5770530f2434185438ac0c38b2f1d620c3d44f4542b70eee3da7289a6` |
+| 2 | `theorem` | [Module.finrank_eq_zero_iff_isTorsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionFinite.lean/declarations/module-finrank-eq-zero-iff-istorsion.md) | 21 | `result-track:31568c68cd2b92e5351fd83a1964051bcceb08c2673ed59520de25510908bb7a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TheoremSeedEdition1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TheoremSeedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TheoremSeedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TheoremSeedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TheoremCellSeedAuthority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TheoremSeedEdition1.lean/declarations/theoremcellseedauthority.md) | 17 | `declaration-track:d44833482863301925515ad267d2ee07346e1e8fd14bf111eba91719c92e74df` |
-| 2 | `structure` | [TheoremCellSeed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TheoremSeedEdition1.lean/declarations/theoremcellseed.md) | 21 | `declaration-track:fbecc90d1930221b8593093f97721b97304d2f440252c553d26721b00a1dfc9c` |
-| 3 | `def` | [TrustAligned](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TheoremSeedEdition1.lean/declarations/trustaligned.md) | 39 | `declaration-track:9d5a878e39e66c27018e7a0086870b33c41543cdfe719bf55a26aca36cdc1dca` |
+| 1 | `inductive` | [TheoremCellSeedAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TheoremSeedEdition1.lean/declarations/theoremcellseedauthority.md) | 17 | `declaration-track:d44833482863301925515ad267d2ee07346e1e8fd14bf111eba91719c92e74df` |
+| 2 | `structure` | [TheoremCellSeed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TheoremSeedEdition1.lean/declarations/theoremcellseed.md) | 21 | `declaration-track:fbecc90d1930221b8593093f97721b97304d2f440252c553d26721b00a1dfc9c` |
+| 3 | `def` | [TrustAligned](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TheoremSeedEdition1.lean/declarations/trustaligned.md) | 39 | `declaration-track:9d5a878e39e66c27018e7a0086870b33c41543cdfe719bf55a26aca36cdc1dca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

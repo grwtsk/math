@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenGramFormControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenGramFormControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenGramFormControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenGramFormControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenGramForm`](../../../../../MeasureAndIntegration/DyadicGreenGramForm.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenGramForm`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenGramForm.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exact_full_form_is_augmented_energy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenGramFormControls.lean/declarations/exact-full-form-is-augmented-energy.md) | 14 | `result-track:ba4451122b1af4caa51b394c292758764a839828ee045cbfb1d59fe1e1269de4` |
-| 2 | `theorem` | [full_source_dimension_grows_with_window](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenGramFormControls.lean/declarations/full-source-dimension-grows-with-window.md) | 19 | `result-track:b70240771731ff1a5888e1128b695cd8f1626908fc852ea8047a5930f729dada` |
+| 1 | `theorem` | [exact_full_form_is_augmented_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenGramFormControls.lean/declarations/exact-full-form-is-augmented-energy.md) | 14 | `result-track:ba4451122b1af4caa51b394c292758764a839828ee045cbfb1d59fe1e1269de4` |
+| 2 | `theorem` | [full_source_dimension_grows_with_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenGramFormControls.lean/declarations/full-source-dimension-grows-with-window.md) | 19 | `result-track:b70240771731ff1a5888e1128b695cd8f1626908fc852ea8047a5930f729dada` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

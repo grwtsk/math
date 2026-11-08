@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/AttachCellsNamespaced.lean/index.md) · [Full source](../../../../AlgebraicTopology/AttachCellsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AttachCellsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AttachCellsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AttachCells](../../../../AlgebraicTopology/AttachCellsNamespaced.lean/declarations/attachcells.md) | 50 | `declaration-track:b628193a2cb65500a77040180f13d9242bb33c2fc71d707a70eae5351a9c4068` |
-| 2 | `lemma` | [pushouts_coproducts](../../../../AlgebraicTopology/AttachCellsNamespaced.lean/declarations/pushouts-coproducts.md) | 82 | `result-track:a2bff03f17e1ad35afac55ae0c22c0ad9c9b5b64364054c7935a157914f609a1` |
-| 3 | `def` | [cell](../../../../AlgebraicTopology/AttachCellsNamespaced.lean/declarations/cell.md) | 91 | `declaration-track:02be8eeefb5bb7d59de6e73d6e917e62045718ed9b9f867bda166dbbfb68583a` |
-| 4 | `lemma` | [cell_def](../../../../AlgebraicTopology/AttachCellsNamespaced.lean/declarations/cell-def.md) | 94 | `result-track:9a708625e669bf60443c819d1f399f19d22a8000ef9bcf39b20b7ea480c07d7a` |
-| 5 | `lemma` | [hom_ext](../../../../AlgebraicTopology/AttachCellsNamespaced.lean/declarations/hom-ext.md) | 96 | `result-track:66cd81bcae277e670d724e03a89074ea1af10f1310c7ee2ee3b879a2455dbf0c` |
-| 6 | `def` | [ofArrowIso](../../../../AlgebraicTopology/AttachCellsNamespaced.lean/declarations/ofarrowiso.md) | 107 | `declaration-track:abf37d29ae09baea1f5c79ea9f58bc64bdcec7a84221ec2fcf04bdb9a36cf958` |
-| 7 | `def` | [reindex](../../../../AlgebraicTopology/AttachCellsNamespaced.lean/declarations/reindex.md) | 125 | `declaration-track:96c89e5897b9a560f1c4677f216983f86e724bec9ed4162cd7650af171fc11fb` |
-| 8 | `def` | [reindexCellTypes](../../../../AlgebraicTopology/AttachCellsNamespaced.lean/declarations/reindexcelltypes.md) | 147 | `declaration-track:475000674f4d57fa27fbdaf9160dc74dacaefaf85ba8047cdaadcbee0ea9d646` |
-| 9 | `lemma` | [nonempty_attachCells_iff](../../../../AlgebraicTopology/AttachCellsNamespaced.lean/declarations/nonempty-attachcells-iff.md) | 178 | `result-track:a62cd22f4958e31ac6fc38d757ccbf2d937c0a4b390c92c00d0f43c62fffe9f1` |
+| 1 | `structure` | [AttachCells](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AttachCellsNamespaced.lean/declarations/attachcells.md) | 50 | `declaration-track:b628193a2cb65500a77040180f13d9242bb33c2fc71d707a70eae5351a9c4068` |
+| 2 | `lemma` | [pushouts_coproducts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AttachCellsNamespaced.lean/declarations/pushouts-coproducts.md) | 82 | `result-track:a2bff03f17e1ad35afac55ae0c22c0ad9c9b5b64364054c7935a157914f609a1` |
+| 3 | `def` | [cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AttachCellsNamespaced.lean/declarations/cell.md) | 91 | `declaration-track:02be8eeefb5bb7d59de6e73d6e917e62045718ed9b9f867bda166dbbfb68583a` |
+| 4 | `lemma` | [cell_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AttachCellsNamespaced.lean/declarations/cell-def.md) | 94 | `result-track:9a708625e669bf60443c819d1f399f19d22a8000ef9bcf39b20b7ea480c07d7a` |
+| 5 | `lemma` | [hom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AttachCellsNamespaced.lean/declarations/hom-ext.md) | 96 | `result-track:66cd81bcae277e670d724e03a89074ea1af10f1310c7ee2ee3b879a2455dbf0c` |
+| 6 | `def` | [ofArrowIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AttachCellsNamespaced.lean/declarations/ofarrowiso.md) | 107 | `declaration-track:abf37d29ae09baea1f5c79ea9f58bc64bdcec7a84221ec2fcf04bdb9a36cf958` |
+| 7 | `def` | [reindex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AttachCellsNamespaced.lean/declarations/reindex.md) | 125 | `declaration-track:96c89e5897b9a560f1c4677f216983f86e724bec9ed4162cd7650af171fc11fb` |
+| 8 | `def` | [reindexCellTypes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AttachCellsNamespaced.lean/declarations/reindexcelltypes.md) | 147 | `declaration-track:475000674f4d57fa27fbdaf9160dc74dacaefaf85ba8047cdaadcbee0ea9d646` |
+| 9 | `lemma` | [nonempty_attachCells_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AttachCellsNamespaced.lean/declarations/nonempty-attachcells-iff.md) | 178 | `result-track:a62cd22f4958e31ac6fc38d757ccbf2d937c0a4b390c92c00d0f43c62fffe9f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

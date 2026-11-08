@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Quartic.lean/index.md) · [Full source](../../../../RealFunctions/Quartic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,34 +59,34 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fQ](../../../../RealFunctions/Quartic.lean/declarations/fq.md) | 29 | `declaration-track:aeb0e4f9457a75301175f5121c0e6a749a305fa9d32f5bc6b0b35ec4f4eb48fc` |
-| 2 | `def` | [hQ](../../../../RealFunctions/Quartic.lean/declarations/hq.md) | 32 | `declaration-track:69cf0f8b3ce62c79a90ff8c8d3981d19d9baf8e6557eed5ed10f391c96422728` |
-| 3 | `lemma` | [hQ_eq](../../../../RealFunctions/Quartic.lean/declarations/hq-eq.md) | 34 | `result-track:f27d68343738506ebc8e9ce3d4d773a616454ed254d66a436c220e5f3f416f00` |
-| 4 | `lemma` | [vQuartic_pos_of_abs_le](../../../../RealFunctions/Quartic.lean/declarations/vquartic-pos-of-abs-le.md) | 38 | `result-track:b7636ec8bb7658ab7ee6380aa7c1f0cb1eb46f1e702ec986ff15eec649907a97` |
-| 5 | `lemma` | [vQuartic_antitoneOn](../../../../RealFunctions/Quartic.lean/declarations/vquartic-antitoneon.md) | 48 | `result-track:2abbbc26dc3af63cc20521583d1ab3528af0b09116cc1d67ee797e39256e258f` |
-| 6 | `lemma` | [fQ_even](../../../../RealFunctions/Quartic.lean/declarations/fq-even.md) | 58 | `result-track:a6201b9ee916b57c8295901049cd3130c568cd0afe3e99e0de1fc39368bf1624` |
-| 7 | `lemma` | [fQ_nonneg](../../../../RealFunctions/Quartic.lean/declarations/fq-nonneg.md) | 61 | `result-track:28ee4b742698364bf543f34dc8541bc1923832ea61341ce84cb74e772bb4b768` |
-| 8 | `lemma` | [fQ_le_one](../../../../RealFunctions/Quartic.lean/declarations/fq-le-one.md) | 63 | `result-track:60f3a45f621d3bd2d2664a4ecd6c1f1cf62e22f5c4b722df1844a2b6d2899fdd` |
-| 9 | `lemma` | [core_mem](../../../../RealFunctions/Quartic.lean/declarations/core-mem.md) | 69 | `result-track:4ffbda3c77f80a6828027f89e00424f19e101ab38fb79258ab3e3ace92420ac3` |
-| 10 | `lemma` | [hQ_core_ge](../../../../RealFunctions/Quartic.lean/declarations/hq-core-ge.md) | 75 | `result-track:8fbebf9d6cc7d970826473524840558e454946cbe55ef6861d5a71fa8d63f55f` |
-| 11 | `lemma` | [fQ_core_ge](../../../../RealFunctions/Quartic.lean/declarations/fq-core-ge.md) | 79 | `result-track:2477f650563deb63c6a7f62f2f61811cf3c72e6fa24a6fdbc73b4bbdd171ce00` |
-| 12 | `lemma` | [hQ_pos_of_mem](../../../../RealFunctions/Quartic.lean/declarations/hq-pos-of-mem.md) | 87 | `result-track:7204f659202531b1b9707facee02a0a75262a0c79a2a25badc0186bb5f0fa8b1` |
-| 13 | `lemma` | [fQ_eq_sqrt_of_mem](../../../../RealFunctions/Quartic.lean/declarations/fq-eq-sqrt-of-mem.md) | 93 | `result-track:b01cf95349ba9a0f3cd89004437c7d8d2d144243b0d5559520f970a1d6861b5a` |
-| 14 | `lemma` | [hQ_contDiff](../../../../RealFunctions/Quartic.lean/declarations/hq-contdiff.md) | 98 | `result-track:c1ba13e76af6b2d69cc325771219ec26d83817005e6ef436ee2e9934bac675e8` |
-| 15 | `lemma` | [fQ_contDiffOn](../../../../RealFunctions/Quartic.lean/declarations/fq-contdiffon.md) | 102 | `result-track:298d0d964dd7d1636c7a23a3461afe5fd198e19e53d947473e350e2e48e8a7aa` |
-| 16 | `lemma` | [fQ_mul_self_of_mem](../../../../RealFunctions/Quartic.lean/declarations/fq-mul-self-of-mem.md) | 109 | `result-track:4c2698553545b164902c698b652a9885afc5bf971efb4352538f620b2c8b0ce1` |
-| 17 | `lemma` | [hasDerivAt_hQ](../../../../RealFunctions/Quartic.lean/declarations/hasderivat-hq.md) | 115 | `result-track:69b737460970e0c1b0044c1641defe7e82fc2c3c775d0c27e03b16523bb7c598` |
-| 18 | `lemma` | [deriv_hQ](../../../../RealFunctions/Quartic.lean/declarations/deriv-hq.md) | 124 | `result-track:190789bdb30bd382ab3cb0621386f4a84fafb48afc5cc7278be252c7d14612d2` |
-| 19 | `lemma` | [hasDerivAt_deriv_hQ](../../../../RealFunctions/Quartic.lean/declarations/hasderivat-deriv-hq.md) | 127 | `result-track:497fd545dd43e13e806600a1927cbd8df2b19e030ede31f47ad9f559fd50a79f` |
-| 20 | `lemma` | [deriv2_hQ](../../../../RealFunctions/Quartic.lean/declarations/deriv2-hq.md) | 142 | `result-track:3b841bc64e5b9a530df5b13b1e8c80bd208149e82959db57b5de3279b250646e` |
-| 21 | `lemma` | [abs_deriv_hQ_le](../../../../RealFunctions/Quartic.lean/declarations/abs-deriv-hq-le.md) | 146 | `result-track:638d6f4bfaf83fd2fd418d61e5a37b8790a62b51f7c2ec31adf62f777b680939` |
-| 22 | `lemma` | [abs_deriv2_hQ_le](../../../../RealFunctions/Quartic.lean/declarations/abs-deriv2-hq-le.md) | 168 | `result-track:34e1f1d40609d84ec723715818cbcdb83757f5aef1ea66654049fbcc9ef37b35` |
-| 23 | `lemma` | [abs_deriv_fQ_le](../../../../RealFunctions/Quartic.lean/declarations/abs-deriv-fq-le.md) | 193 | `result-track:5ab72f57ea04fa988cb8b1a30b60dea2a6792010ef5e2b9b3a9a4b7b19d92007` |
-| 24 | `lemma` | [abs_deriv2_fQ_le](../../../../RealFunctions/Quartic.lean/declarations/abs-deriv2-fq-le.md) | 215 | `result-track:ca44158cf3e89c7b2004d5ed62f5a73cd65b782154cb529b845935b1495379de` |
-| 25 | `theorem` | [modFactor_fQ](../../../../RealFunctions/Quartic.lean/declarations/modfactor-fq.md) | 257 | `result-track:01dad36d082cca8eac8b33e37fce7d363768261face567ba17d543dcbb9c2f47` |
-| 26 | `def` | [cQ](../../../../RealFunctions/Quartic.lean/declarations/cq.md) | 275 | `declaration-track:16c4486aca2136267867b346f998193710e2a6d814554e58e18ec795c92bbddb` |
-| 27 | `theorem` | [phiV_quartic_eq](../../../../RealFunctions/Quartic.lean/declarations/phiv-quartic-eq.md) | 278 | `result-track:d0b4130502603bafc7424fc2392786e69760cfdcdfa227122fdf7da8683c6fc0` |
-| 28 | `theorem` | [admWindow_phiV_quartic](../../../../RealFunctions/Quartic.lean/declarations/admwindow-phiv-quartic.md) | 281 | `result-track:5e66782e43d3b0b340ab75bcfbf2b06f864242f86dc80613eea8b86c4baadd7c` |
+| 1 | `def` | [fQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/fq.md) | 29 | `declaration-track:aeb0e4f9457a75301175f5121c0e6a749a305fa9d32f5bc6b0b35ec4f4eb48fc` |
+| 2 | `def` | [hQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/hq.md) | 32 | `declaration-track:69cf0f8b3ce62c79a90ff8c8d3981d19d9baf8e6557eed5ed10f391c96422728` |
+| 3 | `lemma` | [hQ_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/hq-eq.md) | 34 | `result-track:f27d68343738506ebc8e9ce3d4d773a616454ed254d66a436c220e5f3f416f00` |
+| 4 | `lemma` | [vQuartic_pos_of_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/vquartic-pos-of-abs-le.md) | 38 | `result-track:b7636ec8bb7658ab7ee6380aa7c1f0cb1eb46f1e702ec986ff15eec649907a97` |
+| 5 | `lemma` | [vQuartic_antitoneOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/vquartic-antitoneon.md) | 48 | `result-track:2abbbc26dc3af63cc20521583d1ab3528af0b09116cc1d67ee797e39256e258f` |
+| 6 | `lemma` | [fQ_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/fq-even.md) | 58 | `result-track:a6201b9ee916b57c8295901049cd3130c568cd0afe3e99e0de1fc39368bf1624` |
+| 7 | `lemma` | [fQ_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/fq-nonneg.md) | 61 | `result-track:28ee4b742698364bf543f34dc8541bc1923832ea61341ce84cb74e772bb4b768` |
+| 8 | `lemma` | [fQ_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/fq-le-one.md) | 63 | `result-track:60f3a45f621d3bd2d2664a4ecd6c1f1cf62e22f5c4b722df1844a2b6d2899fdd` |
+| 9 | `lemma` | [core_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/core-mem.md) | 69 | `result-track:4ffbda3c77f80a6828027f89e00424f19e101ab38fb79258ab3e3ace92420ac3` |
+| 10 | `lemma` | [hQ_core_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/hq-core-ge.md) | 75 | `result-track:8fbebf9d6cc7d970826473524840558e454946cbe55ef6861d5a71fa8d63f55f` |
+| 11 | `lemma` | [fQ_core_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/fq-core-ge.md) | 79 | `result-track:2477f650563deb63c6a7f62f2f61811cf3c72e6fa24a6fdbc73b4bbdd171ce00` |
+| 12 | `lemma` | [hQ_pos_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/hq-pos-of-mem.md) | 87 | `result-track:7204f659202531b1b9707facee02a0a75262a0c79a2a25badc0186bb5f0fa8b1` |
+| 13 | `lemma` | [fQ_eq_sqrt_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/fq-eq-sqrt-of-mem.md) | 93 | `result-track:b01cf95349ba9a0f3cd89004437c7d8d2d144243b0d5559520f970a1d6861b5a` |
+| 14 | `lemma` | [hQ_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/hq-contdiff.md) | 98 | `result-track:c1ba13e76af6b2d69cc325771219ec26d83817005e6ef436ee2e9934bac675e8` |
+| 15 | `lemma` | [fQ_contDiffOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/fq-contdiffon.md) | 102 | `result-track:298d0d964dd7d1636c7a23a3461afe5fd198e19e53d947473e350e2e48e8a7aa` |
+| 16 | `lemma` | [fQ_mul_self_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/fq-mul-self-of-mem.md) | 109 | `result-track:4c2698553545b164902c698b652a9885afc5bf971efb4352538f620b2c8b0ce1` |
+| 17 | `lemma` | [hasDerivAt_hQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/hasderivat-hq.md) | 115 | `result-track:69b737460970e0c1b0044c1641defe7e82fc2c3c775d0c27e03b16523bb7c598` |
+| 18 | `lemma` | [deriv_hQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/deriv-hq.md) | 124 | `result-track:190789bdb30bd382ab3cb0621386f4a84fafb48afc5cc7278be252c7d14612d2` |
+| 19 | `lemma` | [hasDerivAt_deriv_hQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/hasderivat-deriv-hq.md) | 127 | `result-track:497fd545dd43e13e806600a1927cbd8df2b19e030ede31f47ad9f559fd50a79f` |
+| 20 | `lemma` | [deriv2_hQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/deriv2-hq.md) | 142 | `result-track:3b841bc64e5b9a530df5b13b1e8c80bd208149e82959db57b5de3279b250646e` |
+| 21 | `lemma` | [abs_deriv_hQ_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/abs-deriv-hq-le.md) | 146 | `result-track:638d6f4bfaf83fd2fd418d61e5a37b8790a62b51f7c2ec31adf62f777b680939` |
+| 22 | `lemma` | [abs_deriv2_hQ_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/abs-deriv2-hq-le.md) | 168 | `result-track:34e1f1d40609d84ec723715818cbcdb83757f5aef1ea66654049fbcc9ef37b35` |
+| 23 | `lemma` | [abs_deriv_fQ_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/abs-deriv-fq-le.md) | 193 | `result-track:5ab72f57ea04fa988cb8b1a30b60dea2a6792010ef5e2b9b3a9a4b7b19d92007` |
+| 24 | `lemma` | [abs_deriv2_fQ_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/abs-deriv2-fq-le.md) | 215 | `result-track:ca44158cf3e89c7b2004d5ed62f5a73cd65b782154cb529b845935b1495379de` |
+| 25 | `theorem` | [modFactor_fQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/modfactor-fq.md) | 257 | `result-track:01dad36d082cca8eac8b33e37fce7d363768261face567ba17d543dcbb9c2f47` |
+| 26 | `def` | [cQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/cq.md) | 275 | `declaration-track:16c4486aca2136267867b346f998193710e2a6d814554e58e18ec795c92bbddb` |
+| 27 | `theorem` | [phiV_quartic_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/phiv-quartic-eq.md) | 278 | `result-track:d0b4130502603bafc7424fc2392786e69760cfdcdfa227122fdf7da8683c6fc0` |
+| 28 | `theorem` | [admWindow_phiV_quartic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Quartic.lean/declarations/admwindow-phiv-quartic.md) | 281 | `result-track:5e66782e43d3b0b340ab75bcfbf2b06f864242f86dc80613eea8b86c4baadd7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

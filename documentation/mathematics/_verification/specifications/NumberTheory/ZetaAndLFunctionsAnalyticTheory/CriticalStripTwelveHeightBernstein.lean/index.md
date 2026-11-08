@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripElevenHeightBernstein`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripElevenHeightBernstein.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripElevenHeightBernstein`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripElevenHeightBernstein.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [projectionReal](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/projectionreal.md) | 19 | `declaration-track:a5806dbad1fb98629fd12876b0171e19cac0dd40f9f5fea914b930d3b47f06af` |
-| 2 | `def` | [projectionSlope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/projectionslope.md) | 22 | `declaration-track:bf18ca42548ce3b4dc4f68cce7042b7338330413bf708256ecadac15ea6958aa` |
-| 3 | `def` | [slopeGap](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/slopegap.md) | 25 | `declaration-track:d03ae6df810873fccda653c7ed379d8adbc8d72f5cca1d280ced40efb185df09` |
-| 4 | `def` | [tailGap](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/tailgap.md) | 26 | `declaration-track:4eb776336811b6885f072424435787dfcec86af6ab20ad93456e9ba0f626e12d` |
-| 5 | `def` | [projectionCoefficients](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/projectioncoefficients.md) | 29 | `declaration-track:17d38e7d4110c2fedc6c36612052a47506a0ba0bd463d3a38959568f4fec93a6` |
-| 6 | `def` | [slopeCoefficients](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/slopecoefficients.md) | 41 | `declaration-track:c79b4ee9cc84dd4095d2ab24cea24e3d590649826442cf69a56071f4f7fe5331` |
-| 7 | `def` | [tailCoefficients](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/tailcoefficients.md) | 53 | `declaration-track:2aae8a8a6c2aec0b71c33270e7d5d384b57aadc22687824e243eb04b7e081f75` |
-| 8 | `theorem` | [projection_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/projection-identity.md) | 70 | `result-track:38bec055e8c7fecb74b549409288c2a53c8f511f18b399d0040ceee902acfbc4` |
-| 9 | `theorem` | [slope_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/slope-identity.md) | 75 | `result-track:b17e960316cbf326a891778bc2ab168c8806a0b5954346c5f4a6374e47092645` |
-| 10 | `theorem` | [tail_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/tail-identity.md) | 80 | `result-track:8bc5ac31ce39407d9a82135d926f458b27edb44030b0fdc38131bc3b97e91673` |
-| 11 | `theorem` | [bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/bounds.md) | 85 | `result-track:1e05144e51597bd54a1f437c6641cbc90ff42e8c513e56516883a6e0430465ee` |
-| 12 | `theorem` | [tail_gap_negative_at_thirteen](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/tail-gap-negative-at-thirteen.md) | 109 | `result-track:9901bd093a0c530de8a74108345f263ed6f5cd607bee5eff993e42584eb54dc9` |
+| 1 | `def` | [projectionReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/projectionreal.md) | 19 | `declaration-track:a5806dbad1fb98629fd12876b0171e19cac0dd40f9f5fea914b930d3b47f06af` |
+| 2 | `def` | [projectionSlope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/projectionslope.md) | 22 | `declaration-track:bf18ca42548ce3b4dc4f68cce7042b7338330413bf708256ecadac15ea6958aa` |
+| 3 | `def` | [slopeGap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/slopegap.md) | 25 | `declaration-track:d03ae6df810873fccda653c7ed379d8adbc8d72f5cca1d280ced40efb185df09` |
+| 4 | `def` | [tailGap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/tailgap.md) | 26 | `declaration-track:4eb776336811b6885f072424435787dfcec86af6ab20ad93456e9ba0f626e12d` |
+| 5 | `def` | [projectionCoefficients](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/projectioncoefficients.md) | 29 | `declaration-track:17d38e7d4110c2fedc6c36612052a47506a0ba0bd463d3a38959568f4fec93a6` |
+| 6 | `def` | [slopeCoefficients](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/slopecoefficients.md) | 41 | `declaration-track:c79b4ee9cc84dd4095d2ab24cea24e3d590649826442cf69a56071f4f7fe5331` |
+| 7 | `def` | [tailCoefficients](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/tailcoefficients.md) | 53 | `declaration-track:2aae8a8a6c2aec0b71c33270e7d5d384b57aadc22687824e243eb04b7e081f75` |
+| 8 | `theorem` | [projection_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/projection-identity.md) | 70 | `result-track:38bec055e8c7fecb74b549409288c2a53c8f511f18b399d0040ceee902acfbc4` |
+| 9 | `theorem` | [slope_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/slope-identity.md) | 75 | `result-track:b17e960316cbf326a891778bc2ab168c8806a0b5954346c5f4a6374e47092645` |
+| 10 | `theorem` | [tail_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/tail-identity.md) | 80 | `result-track:8bc5ac31ce39407d9a82135d926f458b27edb44030b0fdc38131bc3b97e91673` |
+| 11 | `theorem` | [bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/bounds.md) | 85 | `result-track:1e05144e51597bd54a1f437c6641cbc90ff42e8c513e56516883a6e0430465ee` |
+| 12 | `theorem` | [tail_gap_negative_at_thirteen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTwelveHeightBernstein.lean/declarations/tail-gap-negative-at-thirteen.md) | 109 | `result-track:9901bd093a0c530de8a74108345f263ed6f5cd607bee5eff993e42584eb54dc9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

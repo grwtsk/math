@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/WithZero.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/WithZero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toNNReal](../../../../../NumberTheory/ElementaryNumberTheory/WithZero.lean/declarations/tonnreal.md) | 41 | `declaration-track:8f8600842a6ee5cfdc633f6fb0c7235cd20992c1ad80678ab22e4e73f3cd4356` |
-| 2 | `theorem` | [toNNReal_pos_apply](../../../../../NumberTheory/ElementaryNumberTheory/WithZero.lean/declarations/tonnreal-pos-apply.md) | 59 | `result-track:8e3a35623ca37eb2b2dee0c7701943fa019465f8de261d77f490186c6e7bf238` |
-| 3 | `theorem` | [toNNReal_neg_apply](../../../../../NumberTheory/ElementaryNumberTheory/WithZero.lean/declarations/tonnreal-neg-apply.md) | 64 | `result-track:cbebee87670a342877b5415af2f9a495bc023ccc49d6e8cda5954d32a02ebe5b` |
-| 4 | `theorem` | [toNNReal_ne_zero](../../../../../NumberTheory/ElementaryNumberTheory/WithZero.lean/declarations/tonnreal-ne-zero.md) | 72 | `result-track:c1c6504f606e2d9ba8e03bd5ea56acaaa6f2bdb3d25bd6199ac387f3722537e2` |
-| 5 | `theorem` | [toNNReal_pos](../../../../../NumberTheory/ElementaryNumberTheory/WithZero.lean/declarations/tonnreal-pos.md) | 76 | `result-track:2d59e537e6bae4d71cd908680c2b0047f98267545771f992612e15a27bbaabf3` |
-| 6 | `theorem` | [toNNReal_strictMono](../../../../../NumberTheory/ElementaryNumberTheory/WithZero.lean/declarations/tonnreal-strictmono.md) | 80 | `result-track:36c988de9ba3b2b1bdad5a12b796ac4e7b67ea95932acc81f72c7dff586585d8` |
-| 7 | `theorem` | [toNNReal_eq_one_iff](../../../../../NumberTheory/ElementaryNumberTheory/WithZero.lean/declarations/tonnreal-eq-one-iff.md) | 92 | `result-track:919d7709365a613cb80bff7889fc6b31e77dc37baa64bb08b175e4b7b4754c55` |
-| 8 | `theorem` | [toNNReal_lt_one_iff](../../../../../NumberTheory/ElementaryNumberTheory/WithZero.lean/declarations/tonnreal-lt-one-iff.md) | 100 | `result-track:18980bb222e2dea7a119d27fe1cccd5cc0b9e3e32659b58dbc3deae83e866e7d` |
-| 9 | `theorem` | [toNNReal_le_one_iff](../../../../../NumberTheory/ElementaryNumberTheory/WithZero.lean/declarations/tonnreal-le-one-iff.md) | 104 | `result-track:d69bc7f867b36c87f213f04cbfa47519884ded96c69e25798c241f46427bd55d` |
+| 1 | `def` | [toNNReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZero.lean/declarations/tonnreal.md) | 41 | `declaration-track:8f8600842a6ee5cfdc633f6fb0c7235cd20992c1ad80678ab22e4e73f3cd4356` |
+| 2 | `theorem` | [toNNReal_pos_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZero.lean/declarations/tonnreal-pos-apply.md) | 59 | `result-track:8e3a35623ca37eb2b2dee0c7701943fa019465f8de261d77f490186c6e7bf238` |
+| 3 | `theorem` | [toNNReal_neg_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZero.lean/declarations/tonnreal-neg-apply.md) | 64 | `result-track:cbebee87670a342877b5415af2f9a495bc023ccc49d6e8cda5954d32a02ebe5b` |
+| 4 | `theorem` | [toNNReal_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZero.lean/declarations/tonnreal-ne-zero.md) | 72 | `result-track:c1c6504f606e2d9ba8e03bd5ea56acaaa6f2bdb3d25bd6199ac387f3722537e2` |
+| 5 | `theorem` | [toNNReal_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZero.lean/declarations/tonnreal-pos.md) | 76 | `result-track:2d59e537e6bae4d71cd908680c2b0047f98267545771f992612e15a27bbaabf3` |
+| 6 | `theorem` | [toNNReal_strictMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZero.lean/declarations/tonnreal-strictmono.md) | 80 | `result-track:36c988de9ba3b2b1bdad5a12b796ac4e7b67ea95932acc81f72c7dff586585d8` |
+| 7 | `theorem` | [toNNReal_eq_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZero.lean/declarations/tonnreal-eq-one-iff.md) | 92 | `result-track:919d7709365a613cb80bff7889fc6b31e77dc37baa64bb08b175e4b7b4754c55` |
+| 8 | `theorem` | [toNNReal_lt_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZero.lean/declarations/tonnreal-lt-one-iff.md) | 100 | `result-track:18980bb222e2dea7a119d27fe1cccd5cc0b9e3e32659b58dbc3deae83e866e7d` |
+| 9 | `theorem` | [toNNReal_le_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/WithZero.lean/declarations/tonnreal-le-one-iff.md) | 104 | `result-track:d69bc7f867b36c87f213f04cbfa47519884ded96c69e25798c241f46427bd55d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

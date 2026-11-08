@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SmoothExistenceEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SmoothExistenceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SmoothExistenceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SmoothExistenceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [smooth_urysohn_support_Ioo](../../../../MeasureAndIntegration/SmoothExistenceEdition1.lean/declarations/smooth-urysohn-support-ioo.md) | 22 | `result-track:8d4c1c608d4b69c700cb40b5269f4864418232db6081c06e733ea5117f53a0b7` |
-| 2 | `lemma` | [SmoothExistence](../../../../MeasureAndIntegration/SmoothExistenceEdition1.lean/declarations/smoothexistence.md) | 57 | `result-track:d52d3bfdd22d5216d1863262b4f12b2eded1b561877deb604c813148bb1b19c3` |
+| 1 | `lemma` | [smooth_urysohn_support_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SmoothExistenceEdition1.lean/declarations/smooth-urysohn-support-ioo.md) | 22 | `result-track:8d4c1c608d4b69c700cb40b5269f4864418232db6081c06e733ea5117f53a0b7` |
+| 2 | `lemma` | [SmoothExistence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SmoothExistenceEdition1.lean/declarations/smoothexistence.md) | 57 | `result-track:d52d3bfdd22d5216d1863262b4f12b2eded1b561877deb604c813148bb1b19c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

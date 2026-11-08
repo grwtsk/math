@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KTheoryClassKTheorySpace.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KTheoryClassKTheorySpace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KTheoryClassKTheorySpace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KTheoryClassKTheorySpace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [KTheorySpace](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KTheoryClassKTheorySpace.lean/declarations/ktheoryspace.md) | 18 | `declaration-track:4a5a62d0bca486b42edd84136eb1afd25d20a094111c0aa608b0ed4c67e8519e` |
-| 2 | `structure` | [KTheoryClass](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KTheoryClassKTheorySpace.lean/declarations/ktheoryclass.md) | 26 | `declaration-track:3e7813a9d31969d2134782710469efc447900fcec8f98f284152d47a29020a6e` |
-| 3 | `def` | [KTheoryClass.IsZero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KTheoryClassKTheorySpace.lean/declarations/ktheoryclass-iszero.md) | 31 | `declaration-track:5ab21cf4a0c7554d99d8a650cb5bd84e1c126268574d2a9724bed8a0989e2255` |
-| 4 | `def` | [KTheoryClass.Nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KTheoryClassKTheorySpace.lean/declarations/ktheoryclass-nonzero.md) | 36 | `declaration-track:c70c0c1cda1899116d49c3636f6cef61fcc63fd8ca4310a16b8726372dd79767` |
-| 5 | `theorem` | [ktheory_class_has_value](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KTheoryClassKTheorySpace.lean/declarations/ktheory-class-has-value.md) | 41 | `result-track:f1293ac908947fc28b8d1fad70cad98f58f4269c8570692d43fe95a3c192e189` |
+| 1 | `structure` | [KTheorySpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KTheoryClassKTheorySpace.lean/declarations/ktheoryspace.md) | 18 | `declaration-track:4a5a62d0bca486b42edd84136eb1afd25d20a094111c0aa608b0ed4c67e8519e` |
+| 2 | `structure` | [KTheoryClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KTheoryClassKTheorySpace.lean/declarations/ktheoryclass.md) | 26 | `declaration-track:3e7813a9d31969d2134782710469efc447900fcec8f98f284152d47a29020a6e` |
+| 3 | `def` | [KTheoryClass.IsZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KTheoryClassKTheorySpace.lean/declarations/ktheoryclass-iszero.md) | 31 | `declaration-track:5ab21cf4a0c7554d99d8a650cb5bd84e1c126268574d2a9724bed8a0989e2255` |
+| 4 | `def` | [KTheoryClass.Nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KTheoryClassKTheorySpace.lean/declarations/ktheoryclass-nonzero.md) | 36 | `declaration-track:c70c0c1cda1899116d49c3636f6cef61fcc63fd8ca4310a16b8726372dd79767` |
+| 5 | `theorem` | [ktheory_class_has_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KTheoryClassKTheorySpace.lean/declarations/ktheory-class-has-value.md) | 41 | `result-track:f1293ac908947fc28b8d1fad70cad98f58f4269c8570692d43fe95a3c192e189` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/AC3aba59dd9df82d6Namespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/AC3aba59dd9df82d6Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AC3aba59dd9df82d6Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AC3aba59dd9df82d6Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RotationLabelledNamingEdge](../../../../GroupTheoryAndGeneralizations/AC3aba59dd9df82d6Namespaced.lean/declarations/rotationlabellednamingedge.md) | 21 | `declaration-track:6890b0f0317fe0b0850d223e9002556b1e68185e2665abf30961c6e2bff45712` |
+| 1 | `structure` | [RotationLabelledNamingEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AC3aba59dd9df82d6Namespaced.lean/declarations/rotationlabellednamingedge.md) | 21 | `declaration-track:6890b0f0317fe0b0850d223e9002556b1e68185e2665abf30961c6e2bff45712` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

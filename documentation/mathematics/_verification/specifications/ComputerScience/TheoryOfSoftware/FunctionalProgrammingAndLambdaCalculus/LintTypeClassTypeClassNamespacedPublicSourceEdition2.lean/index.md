@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LintTypeClassTypeClassNamespacedPublicSourceEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LintTypeClassTypeClassNamespacedPublicSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LintTypeClassTypeClassNamespacedPublicSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LintTypeClassTypeClassNamespacedPublicSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [impossibleInstance](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LintTypeClassTypeClassNamespacedPublicSourceEdition2.lean/declarations/impossibleinstance.md) | 31 | `declaration-track:be81753ccf88e288c4d66f2f3efe9c1862e995445c19664f77a2d53db38031c8` |
-| 2 | `def` | [nonClassInstance](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LintTypeClassTypeClassNamespacedPublicSourceEdition2.lean/declarations/nonclassinstance.md) | 56 | `declaration-track:6496d31f6b10531c67d2946bfe9fe84fcf0cc8c312e1cb8d4ad55912caa314f7` |
+| 1 | `def` | [impossibleInstance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LintTypeClassTypeClassNamespacedPublicSourceEdition2.lean/declarations/impossibleinstance.md) | 31 | `declaration-track:be81753ccf88e288c4d66f2f3efe9c1862e995445c19664f77a2d53db38031c8` |
+| 2 | `def` | [nonClassInstance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LintTypeClassTypeClassNamespacedPublicSourceEdition2.lean/declarations/nonclassinstance.md) | 56 | `declaration-track:6496d31f6b10531c67d2946bfe9fe84fcf0cc8c312e1cb8d4ad55912caa314f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/PosPartIsometric.lean/index.md) · [Full source](../../../../SpecialFunctions/PosPartIsometric.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosPartIsometric.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosPartIsometric.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [CStarAlgebra.norm_posPart_le](../../../../SpecialFunctions/PosPartIsometric.lean/declarations/cstaralgebra-norm-pospart-le.md) | 27 | `result-track:53a9d888f880d19b59d1d49a535f29ad1899d46f55ac90c4ff0391127a7a4485` |
-| 2 | `lemma` | [CStarAlgebra.norm_negPart_le](../../../../SpecialFunctions/PosPartIsometric.lean/declarations/cstaralgebra-norm-negpart-le.md) | 37 | `result-track:0560695e8ebf556e23500773d2cb8dc84b0b043869ef84fd8b15939cbf6202c8` |
-| 3 | `lemma` | [IsSelfAdjoint.norm_eq_max_norm_posPart_negPart](../../../../SpecialFunctions/PosPartIsometric.lean/declarations/isselfadjoint-norm-eq-max-norm-pospart-negpart.md) | 41 | `result-track:271e925891610bacdaab397b83e14c882580a096abb52ed271d75aaed8d47888` |
+| 1 | `lemma` | [CStarAlgebra.norm_posPart_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosPartIsometric.lean/declarations/cstaralgebra-norm-pospart-le.md) | 27 | `result-track:53a9d888f880d19b59d1d49a535f29ad1899d46f55ac90c4ff0391127a7a4485` |
+| 2 | `lemma` | [CStarAlgebra.norm_negPart_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosPartIsometric.lean/declarations/cstaralgebra-norm-negpart-le.md) | 37 | `result-track:0560695e8ebf556e23500773d2cb8dc84b0b043869ef84fd8b15939cbf6202c8` |
+| 3 | `lemma` | [IsSelfAdjoint.norm_eq_max_norm_posPart_negPart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosPartIsometric.lean/declarations/isselfadjoint-norm-eq-max-norm-pospart-negpart.md) | 41 | `result-track:271e925891610bacdaab397b83e14c882580a096abb52ed271d75aaed8d47888` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

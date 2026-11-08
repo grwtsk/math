@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/OrderToExactPeriodForwarding.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/OrderToExactPeriodForwarding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderToExactPeriodForwarding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderToExactPeriodForwarding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exact_period_of_hasOrder_and_faithful](../../../../GroupTheoryAndGeneralizations/OrderToExactPeriodForwarding.lean/declarations/exact-period-of-hasorder-and-faithful.md) | 38 | `result-track:136d4c8b084e1ef32f8808f6d60ff6aebb0f52c63f2b8f8e0925b717ac837970` |
+| 1 | `theorem` | [exact_period_of_hasOrder_and_faithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderToExactPeriodForwarding.lean/declarations/exact-period-of-hasorder-and-faithful.md) | 38 | `result-track:136d4c8b084e1ef32f8808f6d60ff6aebb0f52c63f2b8f8e0925b717ac837970` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Realization.lean/index.md) · [Full source](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Realization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Realization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Realization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BiaxialAttentionRealizationProfile](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Realization.lean/declarations/biaxialattentionrealizationprofile.md) | 16 | `declaration-track:f54b76cd398efbaca4c8c73cbf8ce11542d29b536cebb881cd4c75b787808f72` |
-| 2 | `def` | [BiaxialAttentionRealizationProfile.Certified](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Realization.lean/declarations/biaxialattentionrealizationprofile-certified.md) | 32 | `declaration-track:246dd2a972ca700e24ee3645e110ed0fb64039903fdafdbe6fb796b0dcf44203` |
-| 3 | `inductive` | [BiaxialAttentionObservationResult](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Realization.lean/declarations/biaxialattentionobservationresult.md) | 51 | `declaration-track:cb6477e7c94b1e1fd6f6f50e0d83f776cf2ec7d69f9f55bdaa071ad689145da5` |
-| 4 | `def` | [observeBiaxialAttention](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Realization.lean/declarations/observebiaxialattention.md) | 60 | `declaration-track:d1001448cbf73cf5141174bbd51e6fb7d309067cfe0550b487d3051312bfb716` |
-| 5 | `theorem` | [observe_biaxial_attention_total](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Realization.lean/declarations/observe-biaxial-attention-total.md) | 69 | `result-track:f411003540d759ca6d509c33e1c41a3128edb09a3871517566facff9ae92e210` |
-| 6 | `structure` | [BiaxialReplayCertificate](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Realization.lean/declarations/biaxialreplaycertificate.md) | 77 | `declaration-track:969e0770f359742fc618d98660c5355157775cea631dc92794785ab0b68d1c55` |
-| 7 | `theorem` | [exact_biaxial_replay_of_zero_budget](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/Realization.lean/declarations/exact-biaxial-replay-of-zero-budget.md) | 87 | `result-track:e0a14c3f9ccc110202db7c3435622d6c1e8f023086cd1820745e14952dbc5a0b` |
+| 1 | `structure` | [BiaxialAttentionRealizationProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Realization.lean/declarations/biaxialattentionrealizationprofile.md) | 16 | `declaration-track:f54b76cd398efbaca4c8c73cbf8ce11542d29b536cebb881cd4c75b787808f72` |
+| 2 | `def` | [BiaxialAttentionRealizationProfile.Certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Realization.lean/declarations/biaxialattentionrealizationprofile-certified.md) | 32 | `declaration-track:246dd2a972ca700e24ee3645e110ed0fb64039903fdafdbe6fb796b0dcf44203` |
+| 3 | `inductive` | [BiaxialAttentionObservationResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Realization.lean/declarations/biaxialattentionobservationresult.md) | 51 | `declaration-track:cb6477e7c94b1e1fd6f6f50e0d83f776cf2ec7d69f9f55bdaa071ad689145da5` |
+| 4 | `def` | [observeBiaxialAttention](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Realization.lean/declarations/observebiaxialattention.md) | 60 | `declaration-track:d1001448cbf73cf5141174bbd51e6fb7d309067cfe0550b487d3051312bfb716` |
+| 5 | `theorem` | [observe_biaxial_attention_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Realization.lean/declarations/observe-biaxial-attention-total.md) | 69 | `result-track:f411003540d759ca6d509c33e1c41a3128edb09a3871517566facff9ae92e210` |
+| 6 | `structure` | [BiaxialReplayCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Realization.lean/declarations/biaxialreplaycertificate.md) | 77 | `declaration-track:969e0770f359742fc618d98660c5355157775cea631dc92794785ab0b68d1c55` |
+| 7 | `theorem` | [exact_biaxial_replay_of_zero_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/Realization.lean/declarations/exact-biaxial-replay-of-zero-budget.md) | 87 | `result-track:e0a14c3f9ccc110202db7c3435622d6c1e8f023086cd1820745e14952dbc5a0b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsOpenUnitsNamespacedPublic.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsOpenUnitsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsOpenUnitsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsOpenUnitsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsOpenUnits](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsOpenUnitsNamespacedPublic.lean/declarations/isopenunits.md) | 49 | `declaration-track:4f0dc6f146f0c96b2dfd1a8a4a5e726d977b5ff5e2292f20c3c9726e193f1b42` |
-| 2 | `instance` | [(anonymous)](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsOpenUnitsNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 52 | `declaration-track:85ba3a768601f7db1c2c424aa25584c7e91c44fad2b6a69d7f3b890f2f39b467` |
-| 3 | `instance` | [(anonymous)](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsOpenUnitsNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 58 | `declaration-track:f9327c1868122e310fb1214ba699737c2cd88e36cc70c492f4ccf045e7e2fe15` |
-| 4 | `instance` | [(anonymous)](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsOpenUnitsNamespacedPublic.lean/declarations/instance.md) | 62 | `declaration-track:58048c8a0c4bbe810a61a7b32b33c2b40cf07faf08758cd3ca5862f95c9990f1` |
-| 5 | `lemma` | [IsOpenUnits.of_isAdic](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsOpenUnitsNamespacedPublic.lean/declarations/isopenunits-of-isadic.md) | 73 | `result-track:f466a77109ebec05b63a1e71d93e1feeb414eb76dd71c47f19c468d253286fae` |
+| 1 | `class` | [IsOpenUnits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsOpenUnitsNamespacedPublic.lean/declarations/isopenunits.md) | 49 | `declaration-track:4f0dc6f146f0c96b2dfd1a8a4a5e726d977b5ff5e2292f20c3c9726e193f1b42` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsOpenUnitsNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 52 | `declaration-track:85ba3a768601f7db1c2c424aa25584c7e91c44fad2b6a69d7f3b890f2f39b467` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsOpenUnitsNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 58 | `declaration-track:f9327c1868122e310fb1214ba699737c2cd88e36cc70c492f4ccf045e7e2fe15` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsOpenUnitsNamespacedPublic.lean/declarations/instance.md) | 62 | `declaration-track:58048c8a0c4bbe810a61a7b32b33c2b40cf07faf08758cd3ca5862f95c9990f1` |
+| 5 | `lemma` | [IsOpenUnits.of_isAdic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IsOpenUnitsNamespacedPublic.lean/declarations/isopenunits-of-isadic.md) | 73 | `result-track:f466a77109ebec05b63a1e71d93e1feeb414eb76dd71c47f19c468d253286fae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

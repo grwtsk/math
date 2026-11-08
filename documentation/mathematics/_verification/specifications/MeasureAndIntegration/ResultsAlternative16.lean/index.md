@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ResultsAlternative16.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ResultsAlternative16.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative16.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative16.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [critical_majorant_eq_absolute_signed_integral](../../../../MeasureAndIntegration/ResultsAlternative16.lean/declarations/critical-majorant-eq-absolute-signed-integral.md) | 25 | `result-track:663bdc65d43d16c99caa088034f2ff6557a64911f492f876eec8d441f425e7b9` |
-| 2 | `theorem` | [unitCorrelation_truncated_mass_ge_sub](../../../../MeasureAndIntegration/ResultsAlternative16.lean/declarations/unitcorrelation-truncated-mass-ge-sub.md) | 45 | `result-track:a20fdd5467a96752e7bc0ee4a5afe037ae80fa2009867cfcc269d323e52ea63f` |
-| 3 | `theorem` | [unitCorrelation_truncated_mass_ge](../../../../MeasureAndIntegration/ResultsAlternative16.lean/declarations/unitcorrelation-truncated-mass-ge.md) | 65 | `result-track:bbbc3e76d4ff0363baa34ec944179332bd2b60f26b6bb0d5f436ede18b5a18c3` |
-| 4 | `theorem` | [critical_majorant_signed_integral_eq](../../../../MeasureAndIntegration/ResultsAlternative16.lean/declarations/critical-majorant-signed-integral-eq.md) | 78 | `result-track:81f4a3218ff256109443d1dd807d7391cd5d12051c54e312843ca37f705d1904` |
-| 5 | `theorem` | [critical_majorant_ge_affine](../../../../MeasureAndIntegration/ResultsAlternative16.lean/declarations/critical-majorant-ge-affine.md) | 95 | `result-track:fc348171325d7a4284e540c2517d73df57025c821668a9ce8fe41b548858c3dd` |
-| 6 | `theorem` | [critical_majorant_ge_linear](../../../../MeasureAndIntegration/ResultsAlternative16.lean/declarations/critical-majorant-ge-linear.md) | 117 | `result-track:fea3e20ff2886a6c163ebfec081741ecea2b4160f1f81cfce1be7b85badc6a3a` |
-| 7 | `theorem` | [critical_majorant_linear_growth](../../../../MeasureAndIntegration/ResultsAlternative16.lean/declarations/critical-majorant-linear-growth.md) | 125 | `result-track:dddebea5bc8377cd5396e1865c157f16a0637457003d6168a46108ed59437099` |
+| 1 | `theorem` | [critical_majorant_eq_absolute_signed_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative16.lean/declarations/critical-majorant-eq-absolute-signed-integral.md) | 25 | `result-track:663bdc65d43d16c99caa088034f2ff6557a64911f492f876eec8d441f425e7b9` |
+| 2 | `theorem` | [unitCorrelation_truncated_mass_ge_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative16.lean/declarations/unitcorrelation-truncated-mass-ge-sub.md) | 45 | `result-track:a20fdd5467a96752e7bc0ee4a5afe037ae80fa2009867cfcc269d323e52ea63f` |
+| 3 | `theorem` | [unitCorrelation_truncated_mass_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative16.lean/declarations/unitcorrelation-truncated-mass-ge.md) | 65 | `result-track:bbbc3e76d4ff0363baa34ec944179332bd2b60f26b6bb0d5f436ede18b5a18c3` |
+| 4 | `theorem` | [critical_majorant_signed_integral_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative16.lean/declarations/critical-majorant-signed-integral-eq.md) | 78 | `result-track:81f4a3218ff256109443d1dd807d7391cd5d12051c54e312843ca37f705d1904` |
+| 5 | `theorem` | [critical_majorant_ge_affine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative16.lean/declarations/critical-majorant-ge-affine.md) | 95 | `result-track:fc348171325d7a4284e540c2517d73df57025c821668a9ce8fe41b548858c3dd` |
+| 6 | `theorem` | [critical_majorant_ge_linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative16.lean/declarations/critical-majorant-ge-linear.md) | 117 | `result-track:fea3e20ff2886a6c163ebfec081741ecea2b4160f1f81cfce1be7b85badc6a3a` |
+| 7 | `theorem` | [critical_majorant_linear_growth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative16.lean/declarations/critical-majorant-linear-growth.md) | 125 | `result-track:dddebea5bc8377cd5396e1865c157f16a0637457003d6168a46108ed59437099` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

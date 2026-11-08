@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [UniformityModel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/declarations/uniformitymodel.md) | 16 | `declaration-track:98e29532cce6efcc4de7729aa09e012cd02eea13857b329341201be6c31a4ee0` |
-| 2 | `structure` | [EffectiveResourceModel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/declarations/effectiveresourcemodel.md) | 24 | `declaration-track:2f344b0df0c955014da9dfdac298aa80f33d524766f6cda1c735afdd415bfd77` |
-| 3 | `structure` | [EffectiveArithmeticSource](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/declarations/effectivearithmeticsource.md) | 35 | `declaration-track:842a595d848df01625b42fe72754a00176f8338a2de39220b9b03c9a8dc8eb3c` |
-| 4 | `structure` | [EffectiveArithmeticMorphism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/declarations/effectivearithmeticmorphism.md) | 51 | `declaration-track:d49bb6534598c4d45ccc44d9edbfdf80e079b4919b3f39b2b7b5f8ef9923ebd2` |
-| 5 | `def` | [identity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/declarations/identity.md) | 87 | `declaration-track:e74f1e172633bda52808116e3fe9435573b01cfc1fe4178053f16456395d304e` |
-| 6 | `def` | [comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/declarations/comp.md) | 108 | `declaration-track:499a666d12a42c101863563b4bf687545217957e3ae93d60bc0475438348e966` |
-| 7 | `theorem` | [comp_cost](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/declarations/comp-cost.md) | 150 | `result-track:3cc28ca476461a263d42f5b487c8986e1fe4e7e555fc3c23b829f698fb3b013e` |
-| 8 | `theorem` | [comp_advantageLoss](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/declarations/comp-advantageloss.md) | 161 | `result-track:a96c1de4dbac164dc9a9ac1142b063f7dcb200194ca238e9873c2efec2c26cad` |
+| 1 | `inductive` | [UniformityModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/declarations/uniformitymodel.md) | 16 | `declaration-track:98e29532cce6efcc4de7729aa09e012cd02eea13857b329341201be6c31a4ee0` |
+| 2 | `structure` | [EffectiveResourceModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/declarations/effectiveresourcemodel.md) | 24 | `declaration-track:2f344b0df0c955014da9dfdac298aa80f33d524766f6cda1c735afdd415bfd77` |
+| 3 | `structure` | [EffectiveArithmeticSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/declarations/effectivearithmeticsource.md) | 35 | `declaration-track:842a595d848df01625b42fe72754a00176f8338a2de39220b9b03c9a8dc8eb3c` |
+| 4 | `structure` | [EffectiveArithmeticMorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/declarations/effectivearithmeticmorphism.md) | 51 | `declaration-track:d49bb6534598c4d45ccc44d9edbfdf80e079b4919b3f39b2b7b5f8ef9923ebd2` |
+| 5 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/declarations/identity.md) | 87 | `declaration-track:e74f1e172633bda52808116e3fe9435573b01cfc1fe4178053f16456395d304e` |
+| 6 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/declarations/comp.md) | 108 | `declaration-track:499a666d12a42c101863563b4bf687545217957e3ae93d60bc0475438348e966` |
+| 7 | `theorem` | [comp_cost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/declarations/comp-cost.md) | 150 | `result-track:3cc28ca476461a263d42f5b487c8986e1fe4e7e555fc3c23b829f698fb3b013e` |
+| 8 | `theorem` | [comp_advantageLoss](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSource.lean/declarations/comp-advantageloss.md) | 161 | `result-track:a96c1de4dbac164dc9a9ac1142b063f7dcb200194ca238e9873c2efec2c26cad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

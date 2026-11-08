@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/WholeQuantizedPotentialAndLoopEquality.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/WholeQuantizedPotentialAndLoopEquality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/WholeQuantizedPotentialAndLoopEquality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/WholeQuantizedPotentialAndLoopEquality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HeatQuantizedShellTorsion](../../../../../Combinatorics/GraphTheory/WholeQuantizedPotentialAndLoopEquality.lean/declarations/heatquantizedshelltorsion.md) | 37 | `declaration-track:766d4cf24347cc6d908f5172988c7677f7d93121f6f75821f0e987f2ab0d18af` |
-| 2 | `def` | [q](../../../../../Combinatorics/GraphTheory/WholeQuantizedPotentialAndLoopEquality.lean/declarations/q.md) | 47 | `declaration-track:1e2b31db3e5067e9c4b978dc22ac31f2947830e2205f3513b37545575f61174d` |
-| 3 | `def` | [connection](../../../../../Combinatorics/GraphTheory/WholeQuantizedPotentialAndLoopEquality.lean/declarations/connection.md) | 52 | `declaration-track:3755bfd9ddc224365db88dd90ab1c6613f54092c0be76ea4cb7566bf2559e088` |
-| 4 | `def` | [torsionClass](../../../../../Combinatorics/GraphTheory/WholeQuantizedPotentialAndLoopEquality.lean/declarations/torsionclass.md) | 57 | `declaration-track:6bf31634815ece48038d8f5ccc750440deb68179032712f4cda297cc8b5814a8` |
-| 5 | `theorem` | [heatQuantizedShellTorsion_loop_eq_scan](../../../../../Combinatorics/GraphTheory/WholeQuantizedPotentialAndLoopEquality.lean/declarations/heatquantizedshelltorsion-loop-eq-scan.md) | 62 | `result-track:9f3b91d52d0b4ac72bdfe72f958cf4e73d5d34587d32ef207f29f4a17049e3e3` |
+| 1 | `structure` | [HeatQuantizedShellTorsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/WholeQuantizedPotentialAndLoopEquality.lean/declarations/heatquantizedshelltorsion.md) | 37 | `declaration-track:766d4cf24347cc6d908f5172988c7677f7d93121f6f75821f0e987f2ab0d18af` |
+| 2 | `def` | [q](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/WholeQuantizedPotentialAndLoopEquality.lean/declarations/q.md) | 47 | `declaration-track:1e2b31db3e5067e9c4b978dc22ac31f2947830e2205f3513b37545575f61174d` |
+| 3 | `def` | [connection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/WholeQuantizedPotentialAndLoopEquality.lean/declarations/connection.md) | 52 | `declaration-track:3755bfd9ddc224365db88dd90ab1c6613f54092c0be76ea4cb7566bf2559e088` |
+| 4 | `def` | [torsionClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/WholeQuantizedPotentialAndLoopEquality.lean/declarations/torsionclass.md) | 57 | `declaration-track:6bf31634815ece48038d8f5ccc750440deb68179032712f4cda297cc8b5814a8` |
+| 5 | `theorem` | [heatQuantizedShellTorsion_loop_eq_scan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/WholeQuantizedPotentialAndLoopEquality.lean/declarations/heatquantizedshelltorsion-loop-eq-scan.md) | 62 | `result-track:9f3b91d52d0b4ac72bdfe72f958cf4e73d5d34587d32ef207f29f4a17049e3e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

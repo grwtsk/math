@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SequenceRealizationAuditHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SequenceRealizationAuditHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SequenceRealizationAuditHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SequenceRealizationAuditHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.ContinuedFractions.FrequencyRealization`](../../../../../../NumberTheory/FrequencyRealization.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators`](../../../../../../NumberTheory/ScheduledDenominators.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.DynamicalSystems.Sequences.ApproximationReturn`](../../../../../../DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.ContinuedFractions.FrequencyRealization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FrequencyRealization.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ScheduledDenominators.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.DynamicalSystems.Sequences.ApproximationReturn`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/index.md) — import line 3; pinned internal source present.
 - `Lean` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SequenceRealizationAuditHistoricalSourceEdition2.lean/declarations/elab.md) | 8 | `declaration-track:053df19ce530636b4d7ac2939f10678ea8fd81759883456395ca0119b7d3a531` |
+| 1 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SequenceRealizationAuditHistoricalSourceEdition2.lean/declarations/elab.md) | 8 | `declaration-track:053df19ce530636b4d7ac2939f10678ea8fd81759883456395ca0119b7d3a531` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

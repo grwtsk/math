@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightPsiSourceRule`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRule.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightPsiSourceRule`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRule.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [concrete_psi_source_exact_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/declarations/concrete-psi-source-exact-identity.md) | 16 | `result-track:56868daac3fb29119a97399e4228f0d57e0d5a22949e83af8deafd8322206a3d` |
-| 2 | `theorem` | [concrete_psi_response_bound_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/declarations/concrete-psi-response-bound-iff.md) | 27 | `result-track:4bf9f4815c80697163c53b3711057fdcf93e4d8a8655f92544011c1cca06655b` |
-| 3 | `theorem` | [concrete_psi_residual_sevenEighths](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/declarations/concrete-psi-residual-seveneighths.md) | 37 | `result-track:8f6d888d343a61d600244a6e794fad0c8f00e3a250143093fa044f96db9ffed7` |
-| 4 | `theorem` | [concrete_psi_residual_threeQuarters](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/declarations/concrete-psi-residual-threequarters.md) | 48 | `result-track:06124c92222f931a6862c9e585904a2cbee62e86e7cc9036f9ea65faae2eb140` |
-| 5 | `theorem` | [zero_amplitude_response_bound_forces_psiError_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/declarations/zero-amplitude-response-bound-forces-psierror-zero.md) | 60 | `result-track:00aab11faa379096f0b2e5bf886754ddfa2035044b6263b587a349e448740822` |
-| 6 | `theorem` | [psi_response_eq_targetFitted_iff_psi_eq_theta](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/declarations/psi-response-eq-targetfitted-iff-psi-eq-theta.md) | 85 | `result-track:db9474c8ab1f2acb10b4975d945c62d5c008352f9f40457baf77cd14af92c1e4` |
-| 7 | `def` | [remainingPsiSourceObligations](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/declarations/remainingpsisourceobligations.md) | 104 | `declaration-track:c78e63089209ce6e3939b84d3de35d3a9d43e3c647c461e9677c30057c564a6b` |
-| 8 | `def` | [prohibitedPromotions](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/declarations/prohibitedpromotions.md) | 112 | `declaration-track:2f6be734e6e9f29d817e9822bff993a5a71a921dfde85fe4a69134c308f0bb1d` |
+| 1 | `theorem` | [concrete_psi_source_exact_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/declarations/concrete-psi-source-exact-identity.md) | 16 | `result-track:56868daac3fb29119a97399e4228f0d57e0d5a22949e83af8deafd8322206a3d` |
+| 2 | `theorem` | [concrete_psi_response_bound_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/declarations/concrete-psi-response-bound-iff.md) | 27 | `result-track:4bf9f4815c80697163c53b3711057fdcf93e4d8a8655f92544011c1cca06655b` |
+| 3 | `theorem` | [concrete_psi_residual_sevenEighths](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/declarations/concrete-psi-residual-seveneighths.md) | 37 | `result-track:8f6d888d343a61d600244a6e794fad0c8f00e3a250143093fa044f96db9ffed7` |
+| 4 | `theorem` | [concrete_psi_residual_threeQuarters](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/declarations/concrete-psi-residual-threequarters.md) | 48 | `result-track:06124c92222f931a6862c9e585904a2cbee62e86e7cc9036f9ea65faae2eb140` |
+| 5 | `theorem` | [zero_amplitude_response_bound_forces_psiError_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/declarations/zero-amplitude-response-bound-forces-psierror-zero.md) | 60 | `result-track:00aab11faa379096f0b2e5bf886754ddfa2035044b6263b587a349e448740822` |
+| 6 | `theorem` | [psi_response_eq_targetFitted_iff_psi_eq_theta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/declarations/psi-response-eq-targetfitted-iff-psi-eq-theta.md) | 85 | `result-track:db9474c8ab1f2acb10b4975d945c62d5c008352f9f40457baf77cd14af92c1e4` |
+| 7 | `def` | [remainingPsiSourceObligations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/declarations/remainingpsisourceobligations.md) | 104 | `declaration-track:c78e63089209ce6e3939b84d3de35d3a9d43e3c647c461e9677c30057c564a6b` |
+| 8 | `def` | [prohibitedPromotions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiSourceRuleControls.lean/declarations/prohibitedpromotions.md) | 112 | `declaration-track:2f6be734e6e9f29d817e9822bff993a5a71a921dfde85fe4a69134c308f0bb1d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

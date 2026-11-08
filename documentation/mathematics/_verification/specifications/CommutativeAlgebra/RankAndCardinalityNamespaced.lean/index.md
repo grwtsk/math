@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RankAndCardinalityNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RankAndCardinalityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankAndCardinalityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankAndCardinalityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,10 +62,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsTranscendenceBasis.lift_cardinalMk_eq_max_lift](../../../../CommutativeAlgebra/RankAndCardinalityNamespaced.lean/declarations/istranscendencebasis-lift-cardinalmk-eq-max-lift.md) | 49 | `result-track:fcb3a314823e515c56403182e8c43cf697fdd595c4240d7393fd5bb83396f185` |
-| 2 | `theorem` | [IsTranscendenceBasis.lift_rank_eq_max_lift](../../../../CommutativeAlgebra/RankAndCardinalityNamespaced.lean/declarations/istranscendencebasis-lift-rank-eq-max-lift.md) | 60 | `result-track:0902dcbed5e5fa78293e20695f79cfa3b8d3250f94f87c3ca3bd369568af1ea6` |
-| 3 | `theorem` | [Algebra.Transcendental.rank_eq_cardinalMk](../../../../CommutativeAlgebra/RankAndCardinalityNamespaced.lean/declarations/algebra-transcendental-rank-eq-cardinalmk.md) | 72 | `result-track:eb6f831e0ddeb78801b9652366e7bd72c9cb353a7ad9ccc59f3e70726bafb734` |
-| 4 | `theorem` | [IntermediateField.rank_sup_le](../../../../CommutativeAlgebra/RankAndCardinalityNamespaced.lean/declarations/intermediatefield-rank-sup-le.md) | 79 | `result-track:12481f6d1c51eee46a35c987428b71ce5e06b999ec6a6ebc55b6c751897c6f27` |
+| 1 | `theorem` | [IsTranscendenceBasis.lift_cardinalMk_eq_max_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankAndCardinalityNamespaced.lean/declarations/istranscendencebasis-lift-cardinalmk-eq-max-lift.md) | 49 | `result-track:fcb3a314823e515c56403182e8c43cf697fdd595c4240d7393fd5bb83396f185` |
+| 2 | `theorem` | [IsTranscendenceBasis.lift_rank_eq_max_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankAndCardinalityNamespaced.lean/declarations/istranscendencebasis-lift-rank-eq-max-lift.md) | 60 | `result-track:0902dcbed5e5fa78293e20695f79cfa3b8d3250f94f87c3ca3bd369568af1ea6` |
+| 3 | `theorem` | [Algebra.Transcendental.rank_eq_cardinalMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankAndCardinalityNamespaced.lean/declarations/algebra-transcendental-rank-eq-cardinalmk.md) | 72 | `result-track:eb6f831e0ddeb78801b9652366e7bd72c9cb353a7ad9ccc59f3e70726bafb734` |
+| 4 | `theorem` | [IntermediateField.rank_sup_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankAndCardinalityNamespaced.lean/declarations/intermediatefield-rank-sup-le.md) | 79 | `result-track:12481f6d1c51eee46a35c987428b71ce5e06b999ec6a6ebc55b6c751897c6f27` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

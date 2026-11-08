@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/BoundedDirichletConvolutionNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/BoundedDirichletConvolutionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BoundedDirichletConvolutionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BoundedDirichletConvolutionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [boundedDivisorPairs](../../../../CommutativeAlgebra/BoundedDirichletConvolutionNamespaced.lean/declarations/boundeddivisorpairs.md) | 25 | `declaration-track:de72289d939e87405bf5d4565454e1f5d8df872b6e26967f451c1e2a9e0f7689` |
-| 2 | `theorem` | [mem_boundedDivisorPairs_iff](../../../../CommutativeAlgebra/BoundedDirichletConvolutionNamespaced.lean/declarations/mem-boundeddivisorpairs-iff.md) | 30 | `result-track:8796268fb876d6fbc91a5e2e22913155544e94842a42d622b673f96336725fd0` |
-| 3 | `theorem` | [boundedDirichletConv_eq_sum](../../../../CommutativeAlgebra/BoundedDirichletConvolutionNamespaced.lean/declarations/boundeddirichletconv-eq-sum.md) | 36 | `result-track:94fdbdbc6bf35139071972186709fce0b24626b01125192e374280308fef17f0` |
-| 4 | `def` | [pairProductByValue](../../../../CommutativeAlgebra/BoundedDirichletConvolutionNamespaced.lean/declarations/pairproductbyvalue.md) | 46 | `declaration-track:74281efae3dd9d271dabbc4259d48ac5dc2cebcb1e1afd1d06d0b155f46ffeed` |
-| 5 | `theorem` | [pairProductByValue_eq_boundedDirichletConv](../../../../CommutativeAlgebra/BoundedDirichletConvolutionNamespaced.lean/declarations/pairproductbyvalue-eq-boundeddirichletconv.md) | 54 | `result-track:18d963a815d1c86670aae6600808b304bcd3391326d0200588e08fb8e005ccda` |
+| 1 | `def` | [boundedDivisorPairs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BoundedDirichletConvolutionNamespaced.lean/declarations/boundeddivisorpairs.md) | 25 | `declaration-track:de72289d939e87405bf5d4565454e1f5d8df872b6e26967f451c1e2a9e0f7689` |
+| 2 | `theorem` | [mem_boundedDivisorPairs_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BoundedDirichletConvolutionNamespaced.lean/declarations/mem-boundeddivisorpairs-iff.md) | 30 | `result-track:8796268fb876d6fbc91a5e2e22913155544e94842a42d622b673f96336725fd0` |
+| 3 | `theorem` | [boundedDirichletConv_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BoundedDirichletConvolutionNamespaced.lean/declarations/boundeddirichletconv-eq-sum.md) | 36 | `result-track:94fdbdbc6bf35139071972186709fce0b24626b01125192e374280308fef17f0` |
+| 4 | `def` | [pairProductByValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BoundedDirichletConvolutionNamespaced.lean/declarations/pairproductbyvalue.md) | 46 | `declaration-track:74281efae3dd9d271dabbc4259d48ac5dc2cebcb1e1afd1d06d0b155f46ffeed` |
+| 5 | `theorem` | [pairProductByValue_eq_boundedDirichletConv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BoundedDirichletConvolutionNamespaced.lean/declarations/pairproductbyvalue-eq-boundeddirichletconv.md) | 54 | `result-track:18d963a815d1c86670aae6600808b304bcd3391326d0200588e08fb8e005ccda` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

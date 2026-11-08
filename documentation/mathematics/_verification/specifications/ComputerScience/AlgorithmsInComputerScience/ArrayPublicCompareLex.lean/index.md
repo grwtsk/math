@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [compareLex](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/declarations/comparelex.md) | 20 | `declaration-track:ed8b7145ca11590092901fbaef6b963e2665e23374e7c7801745369c163e4dca` |
-| 2 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/declarations/instance.md) | 34 | `declaration-track:191bad3b0954c131e9b273f074a944289a57e17c3d8e38111b7e2f51c6a43498` |
-| 3 | `theorem` | [compare_eq_compareLex](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/declarations/compare-eq-comparelex.md) | 37 | `result-track:57db1a72e401e1d9f86521a7dde19a2ce2614f2dfcebcd6e082ffe5eccb403b7` |
-| 4 | `theorem` | [compareLex.go_succ](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/declarations/comparelex-go-succ.md) | 40 | `result-track:bd67b248778c767fd73e155fa31c4ef624a738154c630f3b9735c8f2efbd2071` |
-| 5 | `theorem` | [_root_.List.compareLex_eq_compareLex_toArray](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/declarations/root-list-comparelex-eq-comparelex-toarray.md) | 49 | `result-track:2d74a656c0a5ccbeb5b26d29ae28a6eb8bde2b95f70d97cd5d90fe46d4ee3f5c` |
-| 6 | `theorem` | [_root_.List.compare_eq_compare_toArray](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/declarations/root-list-compare-eq-compare-toarray.md) | 65 | `result-track:8e6e3978ef86159e0d2051e9faa749175f9a5569e433740d9599a65ab18074c2` |
-| 7 | `theorem` | [compareLex_eq_compareLex_toList](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/declarations/comparelex-eq-comparelex-tolist.md) | 69 | `result-track:5f128362fb24a9c41819bf89563b6ee5207833d042421de87376b2fd31f5307c` |
-| 8 | `theorem` | [compare_eq_compare_toList](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/declarations/compare-eq-compare-tolist.md) | 73 | `result-track:d8452e78f8660c89083463ee1b18e2fc746a682e44e10a2ede525435c0105fe9` |
+| 1 | `def` | [compareLex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/declarations/comparelex.md) | 20 | `declaration-track:ed8b7145ca11590092901fbaef6b963e2665e23374e7c7801745369c163e4dca` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/declarations/instance.md) | 34 | `declaration-track:191bad3b0954c131e9b273f074a944289a57e17c3d8e38111b7e2f51c6a43498` |
+| 3 | `theorem` | [compare_eq_compareLex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/declarations/compare-eq-comparelex.md) | 37 | `result-track:57db1a72e401e1d9f86521a7dde19a2ce2614f2dfcebcd6e082ffe5eccb403b7` |
+| 4 | `theorem` | [compareLex.go_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/declarations/comparelex-go-succ.md) | 40 | `result-track:bd67b248778c767fd73e155fa31c4ef624a738154c630f3b9735c8f2efbd2071` |
+| 5 | `theorem` | [_root_.List.compareLex_eq_compareLex_toArray](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/declarations/root-list-comparelex-eq-comparelex-toarray.md) | 49 | `result-track:2d74a656c0a5ccbeb5b26d29ae28a6eb8bde2b95f70d97cd5d90fe46d4ee3f5c` |
+| 6 | `theorem` | [_root_.List.compare_eq_compare_toArray](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/declarations/root-list-compare-eq-compare-toarray.md) | 65 | `result-track:8e6e3978ef86159e0d2051e9faa749175f9a5569e433740d9599a65ab18074c2` |
+| 7 | `theorem` | [compareLex_eq_compareLex_toList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/declarations/comparelex-eq-comparelex-tolist.md) | 69 | `result-track:5f128362fb24a9c41819bf89563b6ee5207833d042421de87376b2fd31f5307c` |
+| 8 | `theorem` | [compare_eq_compare_toList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayPublicCompareLex.lean/declarations/compare-eq-compare-tolist.md) | 73 | `result-track:d8452e78f8660c89083463ee1b18e2fc746a682e44e10a2ede525435c0105fe9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopologyUltrafilterNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/TopologyUltrafilterNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyUltrafilterNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyUltrafilterNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Ultrafilter.clusterPt_iff](../../../../GeneralTopology/TopologyUltrafilterNamespaced.lean/declarations/ultrafilter-clusterpt-iff.md) | 26 | `result-track:4249a4c79bb21e9cb55b1fa976460032c00068e2dde4e0c9f2bb6aa6741589b8` |
-| 2 | `theorem` | [clusterPt_iff_ultrafilter](../../../../GeneralTopology/TopologyUltrafilterNamespaced.lean/declarations/clusterpt-iff-ultrafilter.md) | 29 | `result-track:d5e6032f3f88e5f3fbc2034f0da7b74564fa0eba27539db2f97f6e1c6c98d0aa` |
-| 3 | `theorem` | [mapClusterPt_iff_ultrafilter](../../../../GeneralTopology/TopologyUltrafilterNamespaced.lean/declarations/mapclusterpt-iff-ultrafilter.md) | 33 | `result-track:f1f68a1ca117d1a601f02e3a28b0fbc68820856dfc875f0ec32a80c05af4a913` |
-| 4 | `theorem` | [isOpen_iff_ultrafilter](../../../../GeneralTopology/TopologyUltrafilterNamespaced.lean/declarations/isopen-iff-ultrafilter.md) | 38 | `result-track:a75cd39684e1ce9d08347a5a8614d0e1710ddc931a9e93feeb4cbc436423d446` |
-| 5 | `theorem` | [mem_closure_iff_ultrafilter](../../../../GeneralTopology/TopologyUltrafilterNamespaced.lean/declarations/mem-closure-iff-ultrafilter.md) | 44 | `result-track:297b8b500b8d23567d2d270d16b2d518e3777e90edf1424226e782cb22ec7185` |
-| 6 | `theorem` | [isClosed_iff_ultrafilter](../../../../GeneralTopology/TopologyUltrafilterNamespaced.lean/declarations/isclosed-iff-ultrafilter.md) | 48 | `result-track:868dd11646d057916041bfb45a5a8fecca21b55191524b69a67c618e7baad8f8` |
-| 7 | `theorem` | [continuousAt_iff_ultrafilter](../../../../GeneralTopology/TopologyUltrafilterNamespaced.lean/declarations/continuousat-iff-ultrafilter.md) | 54 | `result-track:d3ea6613b196141ec91737733f099e7784abcdbcf229f3470fc10725f2af82e1` |
-| 8 | `theorem` | [continuous_iff_ultrafilter](../../../../GeneralTopology/TopologyUltrafilterNamespaced.lean/declarations/continuous-iff-ultrafilter.md) | 58 | `result-track:82b341e4b2752e4e42b257988b818f70c3503ab47a54ecef38280855692a89d3` |
+| 1 | `theorem` | [Ultrafilter.clusterPt_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyUltrafilterNamespaced.lean/declarations/ultrafilter-clusterpt-iff.md) | 26 | `result-track:4249a4c79bb21e9cb55b1fa976460032c00068e2dde4e0c9f2bb6aa6741589b8` |
+| 2 | `theorem` | [clusterPt_iff_ultrafilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyUltrafilterNamespaced.lean/declarations/clusterpt-iff-ultrafilter.md) | 29 | `result-track:d5e6032f3f88e5f3fbc2034f0da7b74564fa0eba27539db2f97f6e1c6c98d0aa` |
+| 3 | `theorem` | [mapClusterPt_iff_ultrafilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyUltrafilterNamespaced.lean/declarations/mapclusterpt-iff-ultrafilter.md) | 33 | `result-track:f1f68a1ca117d1a601f02e3a28b0fbc68820856dfc875f0ec32a80c05af4a913` |
+| 4 | `theorem` | [isOpen_iff_ultrafilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyUltrafilterNamespaced.lean/declarations/isopen-iff-ultrafilter.md) | 38 | `result-track:a75cd39684e1ce9d08347a5a8614d0e1710ddc931a9e93feeb4cbc436423d446` |
+| 5 | `theorem` | [mem_closure_iff_ultrafilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyUltrafilterNamespaced.lean/declarations/mem-closure-iff-ultrafilter.md) | 44 | `result-track:297b8b500b8d23567d2d270d16b2d518e3777e90edf1424226e782cb22ec7185` |
+| 6 | `theorem` | [isClosed_iff_ultrafilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyUltrafilterNamespaced.lean/declarations/isclosed-iff-ultrafilter.md) | 48 | `result-track:868dd11646d057916041bfb45a5a8fecca21b55191524b69a67c618e7baad8f8` |
+| 7 | `theorem` | [continuousAt_iff_ultrafilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyUltrafilterNamespaced.lean/declarations/continuousat-iff-ultrafilter.md) | 54 | `result-track:d3ea6613b196141ec91737733f099e7784abcdbcf229f3470fc10725f2af82e1` |
+| 8 | `theorem` | [continuous_iff_ultrafilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyUltrafilterNamespaced.lean/declarations/continuous-iff-ultrafilter.md) | 58 | `result-track:82b341e4b2752e4e42b257988b818f70c3503ab47a54ecef38280855692a89d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

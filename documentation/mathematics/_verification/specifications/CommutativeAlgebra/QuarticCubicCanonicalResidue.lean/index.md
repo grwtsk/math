@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuarticCubicCanonicalResidue.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuarticCubicCanonicalResidue.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicCanonicalResidue.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicCanonicalResidue.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticCubicResidueSplittingField`](../../../../CommutativeAlgebra/QuarticCubicResidueSplittingField.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticCubicResidueSplittingField`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicResidueSplittingField.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.FieldTheory.SplittingField.Construction` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [reduced_adjacencyCubic_separable_canonical](../../../../CommutativeAlgebra/QuarticCubicCanonicalResidue.lean/declarations/reduced-adjacencycubic-separable-canonical.md) | 27 | `result-track:20e70c0be15750df0ab44c49645fa0d7b6d01dd3e8ba7d6ff1f15ec1be50c88d` |
+| 1 | `theorem` | [reduced_adjacencyCubic_separable_canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicCanonicalResidue.lean/declarations/reduced-adjacencycubic-separable-canonical.md) | 27 | `result-track:20e70c0be15750df0ab44c49645fa0d7b6d01dd3e8ba7d6ff1f15ec1be50c88d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

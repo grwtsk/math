@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/OneVariable.lean/index.md) · [Full source](../../../../NumberTheory/OneVariable.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OneVariable.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OneVariable.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [jacobiTheta](../../../../NumberTheory/OneVariable.lean/declarations/jacobitheta.md) | 25 | `declaration-track:be51fc7066d4cb25764869159c15f7f10d93507a059c3609aff048c56bb85bbf` |
-| 2 | `lemma` | [jacobiTheta_eq_jacobiTheta₂](../../../../NumberTheory/OneVariable.lean/declarations/jacobitheta-eq-jacobitheta.md) | 27 | `result-track:8672fc6a7b5796cad84e698dfe18241764bc64264bedb5c5e104bd1f73ebafce` |
-| 3 | `theorem` | [jacobiTheta_two_add](../../../../NumberTheory/OneVariable.lean/declarations/jacobitheta-two-add.md) | 30 | `result-track:85099aa5d75d32bb1e10ed6d46d1b606dea49671c637cb75315bc1684eec7059` |
-| 4 | `theorem` | [jacobiTheta_T_sq_smul](../../../../NumberTheory/OneVariable.lean/declarations/jacobitheta-t-sq-smul.md) | 33 | `result-track:0538634e56cbaff9761f074117757eb021a2d03dc7b3f2e8f2359fd45d04fe86` |
-| 5 | `theorem` | [jacobiTheta_S_smul](../../../../NumberTheory/OneVariable.lean/declarations/jacobitheta-s-smul.md) | 39 | `result-track:44f992b6f7ba3dfa7f3094c62813636ab74283721ee9be42aab23bb1dc8ad30b` |
-| 6 | `theorem` | [norm_exp_mul_sq_le](../../../../NumberTheory/OneVariable.lean/declarations/norm-exp-mul-sq-le.md) | 51 | `result-track:6ac137d31ccc6082263ea52f6c4f730ab3ff9a43ba001cb478f92cf2620a5e90` |
-| 7 | `theorem` | [hasSum_nat_jacobiTheta](../../../../NumberTheory/OneVariable.lean/declarations/hassum-nat-jacobitheta.md) | 67 | `result-track:3786f94b7d08279f71043412a3cfa3a658d2fb57186d613ceeb5733a5b1a2439` |
-| 8 | `theorem` | [jacobiTheta_eq_tsum_nat](../../../../NumberTheory/OneVariable.lean/declarations/jacobitheta-eq-tsum-nat.md) | 80 | `result-track:5a602befbd1acd19087eead56c979f0aca6ea327f8030e09c24f627699eed809` |
-| 9 | `theorem` | [norm_jacobiTheta_sub_one_le](../../../../NumberTheory/OneVariable.lean/declarations/norm-jacobitheta-sub-one-le.md) | 86 | `result-track:18216eb37b16c9da18fae8213f3be856b136cba6b791fd056187233d64e2bba6` |
-| 10 | `theorem` | [isBigO_at_im_infty_jacobiTheta_sub_one](../../../../NumberTheory/OneVariable.lean/declarations/isbigo-at-im-infty-jacobitheta-sub-one.md) | 108 | `result-track:8c390fa2b1ee1ca2cd3dbc62a517c757b63190d282b587f1c6ceb9c49a01be2d` |
-| 11 | `theorem` | [differentiableAt_jacobiTheta](../../../../NumberTheory/OneVariable.lean/declarations/differentiableat-jacobitheta.md) | 117 | `result-track:c52dc7952566d1a567d06e9a00249f12308d22fb674321377b77dacd0fd8bb82` |
-| 12 | `theorem` | [continuousAt_jacobiTheta](../../../../NumberTheory/OneVariable.lean/declarations/continuousat-jacobitheta.md) | 122 | `result-track:98bfafbd4ce868b7b58be6bbaeeb21b317540668e57ea23738850695f3f7da17` |
+| 1 | `def` | [jacobiTheta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OneVariable.lean/declarations/jacobitheta.md) | 25 | `declaration-track:be51fc7066d4cb25764869159c15f7f10d93507a059c3609aff048c56bb85bbf` |
+| 2 | `lemma` | [jacobiTheta_eq_jacobiTheta₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OneVariable.lean/declarations/jacobitheta-eq-jacobitheta.md) | 27 | `result-track:8672fc6a7b5796cad84e698dfe18241764bc64264bedb5c5e104bd1f73ebafce` |
+| 3 | `theorem` | [jacobiTheta_two_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OneVariable.lean/declarations/jacobitheta-two-add.md) | 30 | `result-track:85099aa5d75d32bb1e10ed6d46d1b606dea49671c637cb75315bc1684eec7059` |
+| 4 | `theorem` | [jacobiTheta_T_sq_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OneVariable.lean/declarations/jacobitheta-t-sq-smul.md) | 33 | `result-track:0538634e56cbaff9761f074117757eb021a2d03dc7b3f2e8f2359fd45d04fe86` |
+| 5 | `theorem` | [jacobiTheta_S_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OneVariable.lean/declarations/jacobitheta-s-smul.md) | 39 | `result-track:44f992b6f7ba3dfa7f3094c62813636ab74283721ee9be42aab23bb1dc8ad30b` |
+| 6 | `theorem` | [norm_exp_mul_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OneVariable.lean/declarations/norm-exp-mul-sq-le.md) | 51 | `result-track:6ac137d31ccc6082263ea52f6c4f730ab3ff9a43ba001cb478f92cf2620a5e90` |
+| 7 | `theorem` | [hasSum_nat_jacobiTheta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OneVariable.lean/declarations/hassum-nat-jacobitheta.md) | 67 | `result-track:3786f94b7d08279f71043412a3cfa3a658d2fb57186d613ceeb5733a5b1a2439` |
+| 8 | `theorem` | [jacobiTheta_eq_tsum_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OneVariable.lean/declarations/jacobitheta-eq-tsum-nat.md) | 80 | `result-track:5a602befbd1acd19087eead56c979f0aca6ea327f8030e09c24f627699eed809` |
+| 9 | `theorem` | [norm_jacobiTheta_sub_one_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OneVariable.lean/declarations/norm-jacobitheta-sub-one-le.md) | 86 | `result-track:18216eb37b16c9da18fae8213f3be856b136cba6b791fd056187233d64e2bba6` |
+| 10 | `theorem` | [isBigO_at_im_infty_jacobiTheta_sub_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OneVariable.lean/declarations/isbigo-at-im-infty-jacobitheta-sub-one.md) | 108 | `result-track:8c390fa2b1ee1ca2cd3dbc62a517c757b63190d282b587f1c6ceb9c49a01be2d` |
+| 11 | `theorem` | [differentiableAt_jacobiTheta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OneVariable.lean/declarations/differentiableat-jacobitheta.md) | 117 | `result-track:c52dc7952566d1a567d06e9a00249f12308d22fb674321377b77dacd0fd8bb82` |
+| 12 | `theorem` | [continuousAt_jacobiTheta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OneVariable.lean/declarations/continuousat-jacobitheta.md) | 122 | `result-track:98bfafbd4ce868b7b58be6bbaeeb21b317540668e57ea23738850695f3f7da17` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

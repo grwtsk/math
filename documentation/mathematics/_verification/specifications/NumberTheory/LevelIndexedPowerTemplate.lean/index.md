@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/LevelIndexedPowerTemplate.lean/index.md) · [Full source](../../../../NumberTheory/LevelIndexedPowerTemplate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LevelIndexedPowerTemplate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LevelIndexedPowerTemplate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RefinementLevel](../../../../NumberTheory/LevelIndexedPowerTemplate.lean/declarations/refinementlevel.md) | 35 | `declaration-track:0ccfc84fa2b0707836483a682bfeb92ee245f62cdd8c6c9826ea253d69fc69e7` |
-| 2 | `def` | [abstractRefinedVertexCount](../../../../NumberTheory/LevelIndexedPowerTemplate.lean/declarations/abstractrefinedvertexcount.md) | 43 | `declaration-track:0c67d965b79936badbe59a118ee7afd9dd9e8d6d6abc7d78ba3f9192222c1637` |
+| 1 | `structure` | [RefinementLevel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LevelIndexedPowerTemplate.lean/declarations/refinementlevel.md) | 35 | `declaration-track:0ccfc84fa2b0707836483a682bfeb92ee245f62cdd8c6c9826ea253d69fc69e7` |
+| 2 | `def` | [abstractRefinedVertexCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LevelIndexedPowerTemplate.lean/declarations/abstractrefinedvertexcount.md) | 43 | `declaration-track:0c67d965b79936badbe59a118ee7afd9dd9e8d6d6abc7d78ba3f9192222c1637` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

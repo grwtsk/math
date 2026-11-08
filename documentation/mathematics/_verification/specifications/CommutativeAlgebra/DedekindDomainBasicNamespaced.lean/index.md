@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Ring.DimensionLEOne](../../../../CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/ring-dimensionleone.md) | 56 | `declaration-track:00d17dc592248681a1bdbd26efc18a932de8ea890b26cc6657cdc53f5b94a933` |
-| 2 | `theorem` | [Ideal.IsPrime.isMaximal](../../../../CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/ideal-isprime-ismaximal.md) | 62 | `result-track:d953f1a9bd78f04703b869ec597d28623e908ff7aa55962bc19040fbbac7ae33` |
-| 3 | `instance` | [DimensionLEOne.principal_ideal_ring](../../../../CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/dimensionleone-principal-ideal-ring.md) | 68 | `declaration-track:7eccd341cda0ad554c48889bd8fa9a65a1add069126f9294f92e219e0aa9ddcd` |
-| 4 | `theorem` | [DimensionLEOne.isIntegralClosure](../../../../CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/dimensionleone-isintegralclosure.md) | 74 | `result-track:1907ca41f7180565ea32467eda4976a66fccb113caecf857fbe74a421dfb22b4` |
-| 5 | `instance` | [DimensionLEOne.integralClosure](../../../../CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/dimensionleone-integralclosure.md) | 82 | `declaration-track:aed5e1c8080ebb6338088de5ec3710136ef5bea2d545050d82a07c8802d4c34f` |
-| 6 | `theorem` | [DimensionLEOne.not_lt_lt](../../../../CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/dimensionleone-not-lt-lt.md) | 89 | `result-track:60bff2d0bfabed654c9a2dd457ddfc5f70e3b42b9f72ee9ae8ecfddcaab29c8b` |
-| 7 | `theorem` | [DimensionLEOne.eq_bot_of_lt](../../../../CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/dimensionleone-eq-bot-of-lt.md) | 94 | `result-track:d79b3d3402d3ecd93b0b2a1202856c4486dba51d84bdb4977652f82b33153554` |
-| 8 | `class` | [IsDedekindDomain](../../../../CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/isdedekinddomain.md) | 113 | `declaration-track:5def973010c49aff8a04a64f2a7c7cf8b82cd8f5971ca76194c2a2b19dd9be21` |
-| 9 | `theorem` | [isDedekindDomain_iff](../../../../CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/isdedekinddomain-iff.md) | 120 | `result-track:ad815402293be6684269000395bbd504545747001674f4b8d3c0a68267b30310` |
-| 10 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/instance.md) | 130 | `declaration-track:5609a20da57d3771db0c5a2844e7a793b7d19a2844022d450f764efea12054a1` |
+| 1 | `class` | [Ring.DimensionLEOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/ring-dimensionleone.md) | 56 | `declaration-track:00d17dc592248681a1bdbd26efc18a932de8ea890b26cc6657cdc53f5b94a933` |
+| 2 | `theorem` | [Ideal.IsPrime.isMaximal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/ideal-isprime-ismaximal.md) | 62 | `result-track:d953f1a9bd78f04703b869ec597d28623e908ff7aa55962bc19040fbbac7ae33` |
+| 3 | `instance` | [DimensionLEOne.principal_ideal_ring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/dimensionleone-principal-ideal-ring.md) | 68 | `declaration-track:7eccd341cda0ad554c48889bd8fa9a65a1add069126f9294f92e219e0aa9ddcd` |
+| 4 | `theorem` | [DimensionLEOne.isIntegralClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/dimensionleone-isintegralclosure.md) | 74 | `result-track:1907ca41f7180565ea32467eda4976a66fccb113caecf857fbe74a421dfb22b4` |
+| 5 | `instance` | [DimensionLEOne.integralClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/dimensionleone-integralclosure.md) | 82 | `declaration-track:aed5e1c8080ebb6338088de5ec3710136ef5bea2d545050d82a07c8802d4c34f` |
+| 6 | `theorem` | [DimensionLEOne.not_lt_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/dimensionleone-not-lt-lt.md) | 89 | `result-track:60bff2d0bfabed654c9a2dd457ddfc5f70e3b42b9f72ee9ae8ecfddcaab29c8b` |
+| 7 | `theorem` | [DimensionLEOne.eq_bot_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/dimensionleone-eq-bot-of-lt.md) | 94 | `result-track:d79b3d3402d3ecd93b0b2a1202856c4486dba51d84bdb4977652f82b33153554` |
+| 8 | `class` | [IsDedekindDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/isdedekinddomain.md) | 113 | `declaration-track:5def973010c49aff8a04a64f2a7c7cf8b82cd8f5971ca76194c2a2b19dd9be21` |
+| 9 | `theorem` | [isDedekindDomain_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/isdedekinddomain-iff.md) | 120 | `result-track:ad815402293be6684269000395bbd504545747001674f4b8d3c0a68267b30310` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DedekindDomainBasicNamespaced.lean/declarations/instance.md) | 130 | `declaration-track:5609a20da57d3771db0c5a2844e7a793b7d19a2844022d450f764efea12054a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

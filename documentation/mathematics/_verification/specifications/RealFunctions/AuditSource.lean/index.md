@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AuditSource.lean/index.md) · [Full source](../../../../RealFunctions/AuditSource.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AuditSource.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AuditSource.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceKernelTerm_hasDerivAt](../../../../RealFunctions/AuditSource.lean/declarations/sourcekernelterm-hasderivat.md) | 25 | `result-track:0b339b708361a1d4d1bea97e6491e38963a0bf93727ad889167ebd1f05bb7508` |
-| 2 | `theorem` | [sourceKernelTerm_deriv](../../../../RealFunctions/AuditSource.lean/declarations/sourcekernelterm-deriv.md) | 67 | `result-track:1c6994036b7270c88b18e2ea7eef7e4f149a7eb75b93e6e06f719ce3fd966348` |
-| 3 | `theorem` | [sourceMobiusKernel_deriv](../../../../RealFunctions/AuditSource.lean/declarations/sourcemobiuskernel-deriv.md) | 79 | `result-track:d0c8cb07df9027908cce5eed739041a88a8f053afb99d6220fcfd24e217b46a6` |
-| 4 | `theorem` | [sourceCorrelation_deriv_zero_of_two_mul_le](../../../../RealFunctions/AuditSource.lean/declarations/sourcecorrelation-deriv-zero-of-two-mul-le.md) | 98 | `result-track:2c6fee8130657b78398e0122af23f3485a5b611c124b6c1666d5e38c44f7a79d` |
-| 5 | `theorem` | [sourceKernelTerm_deriv_upper_zero](../../../../RealFunctions/AuditSource.lean/declarations/sourcekernelterm-deriv-upper-zero.md) | 113 | `result-track:128cb35329e4e56ef10d2ac6b6b8058b5413b8f670f18316c16014845996cd6b` |
-| 6 | `theorem` | [sourceMobiusKernel_deriv_upper_zero](../../../../RealFunctions/AuditSource.lean/declarations/sourcemobiuskernel-deriv-upper-zero.md) | 133 | `result-track:17e61c3b72051fb0d953af6b47c8f051123e17bef9970b6c6280fe4cedfedd6c` |
+| 1 | `theorem` | [sourceKernelTerm_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AuditSource.lean/declarations/sourcekernelterm-hasderivat.md) | 25 | `result-track:0b339b708361a1d4d1bea97e6491e38963a0bf93727ad889167ebd1f05bb7508` |
+| 2 | `theorem` | [sourceKernelTerm_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AuditSource.lean/declarations/sourcekernelterm-deriv.md) | 67 | `result-track:1c6994036b7270c88b18e2ea7eef7e4f149a7eb75b93e6e06f719ce3fd966348` |
+| 3 | `theorem` | [sourceMobiusKernel_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AuditSource.lean/declarations/sourcemobiuskernel-deriv.md) | 79 | `result-track:d0c8cb07df9027908cce5eed739041a88a8f053afb99d6220fcfd24e217b46a6` |
+| 4 | `theorem` | [sourceCorrelation_deriv_zero_of_two_mul_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AuditSource.lean/declarations/sourcecorrelation-deriv-zero-of-two-mul-le.md) | 98 | `result-track:2c6fee8130657b78398e0122af23f3485a5b611c124b6c1666d5e38c44f7a79d` |
+| 5 | `theorem` | [sourceKernelTerm_deriv_upper_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AuditSource.lean/declarations/sourcekernelterm-deriv-upper-zero.md) | 113 | `result-track:128cb35329e4e56ef10d2ac6b6b8058b5413b8f670f18316c16014845996cd6b` |
+| 6 | `theorem` | [sourceMobiusKernel_deriv_upper_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AuditSource.lean/declarations/sourcemobiuskernel-deriv-upper-zero.md) | 133 | `result-track:17e61c3b72051fb0d953af6b47c8f051123e17bef9970b6c6280fe4cedfedd6c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Execution.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Execution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Execution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Execution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Allows](../../../../../ComputerScience/AlgorithmsInComputerScience/Execution.lean/declarations/allows.md) | 16 | `declaration-track:cc364e434c101e56e52f478fdb3cf296ddf78625bdda5fc8e681edf7d3bef219` |
-| 2 | `theorem` | [Allows.with_future_revocation](../../../../../ComputerScience/AlgorithmsInComputerScience/Execution.lean/declarations/allows-with-future-revocation.md) | 35 | `result-track:e1d352996f14647f7d9d30b3561774885eed282cb7c638f16f18d58cf83c659d` |
-| 3 | `inductive` | [MonitorDecision](../../../../../ComputerScience/AlgorithmsInComputerScience/Execution.lean/declarations/monitordecision.md) | 60 | `declaration-track:cf95dfee0f10ca43ac47fb8b148d0bbf0be122b1850d2193dca4c8d4ff7d1631` |
-| 4 | `structure` | [ExecutionReceipt](../../../../../ComputerScience/AlgorithmsInComputerScience/Execution.lean/declarations/executionreceipt.md) | 68 | `declaration-track:215eba788ba30773ea7313d6deebb3eb2ebff107e808a85437e5074fb7cf2858` |
-| 5 | `def` | [ExecutionReceipt.evidenceKind](../../../../../ComputerScience/AlgorithmsInComputerScience/Execution.lean/declarations/executionreceipt-evidencekind.md) | 76 | `declaration-track:acd6782dabc5853e07758f5110e9c34a2b9bd26b96795b6a82b8d6c591ecd4b3` |
-| 6 | `theorem` | [execution_receipt_has_no_theorem_authority](../../../../../ComputerScience/AlgorithmsInComputerScience/Execution.lean/declarations/execution-receipt-has-no-theorem-authority.md) | 81 | `result-track:8291c74b6e83d242c9b8abd08c02527a889fa9b9f83dbaabf012ecef5761bb42` |
-| 7 | `structure` | [ModelProposal](../../../../../ComputerScience/AlgorithmsInComputerScience/Execution.lean/declarations/modelproposal.md) | 87 | `declaration-track:6b818cf7066849cd4d0a3bec12dbb51f8c8890ff2bdabab223e6f7839f0d8a3a` |
-| 8 | `def` | [ModelProposal.evidenceKind](../../../../../ComputerScience/AlgorithmsInComputerScience/Execution.lean/declarations/modelproposal-evidencekind.md) | 92 | `declaration-track:f19772f5121eb301bf1ce9e81587c77f8766e95a091a0b374b9f89de10109a0f` |
-| 9 | `theorem` | [model_proposal_has_no_theorem_authority](../../../../../ComputerScience/AlgorithmsInComputerScience/Execution.lean/declarations/model-proposal-has-no-theorem-authority.md) | 97 | `result-track:b29d79162f768703b9d542861e928e10246e06e0afb66e95f86a0f13c43b62ba` |
+| 1 | `structure` | [Allows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Execution.lean/declarations/allows.md) | 16 | `declaration-track:cc364e434c101e56e52f478fdb3cf296ddf78625bdda5fc8e681edf7d3bef219` |
+| 2 | `theorem` | [Allows.with_future_revocation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Execution.lean/declarations/allows-with-future-revocation.md) | 35 | `result-track:e1d352996f14647f7d9d30b3561774885eed282cb7c638f16f18d58cf83c659d` |
+| 3 | `inductive` | [MonitorDecision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Execution.lean/declarations/monitordecision.md) | 60 | `declaration-track:cf95dfee0f10ca43ac47fb8b148d0bbf0be122b1850d2193dca4c8d4ff7d1631` |
+| 4 | `structure` | [ExecutionReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Execution.lean/declarations/executionreceipt.md) | 68 | `declaration-track:215eba788ba30773ea7313d6deebb3eb2ebff107e808a85437e5074fb7cf2858` |
+| 5 | `def` | [ExecutionReceipt.evidenceKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Execution.lean/declarations/executionreceipt-evidencekind.md) | 76 | `declaration-track:acd6782dabc5853e07758f5110e9c34a2b9bd26b96795b6a82b8d6c591ecd4b3` |
+| 6 | `theorem` | [execution_receipt_has_no_theorem_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Execution.lean/declarations/execution-receipt-has-no-theorem-authority.md) | 81 | `result-track:8291c74b6e83d242c9b8abd08c02527a889fa9b9f83dbaabf012ecef5761bb42` |
+| 7 | `structure` | [ModelProposal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Execution.lean/declarations/modelproposal.md) | 87 | `declaration-track:6b818cf7066849cd4d0a3bec12dbb51f8c8890ff2bdabab223e6f7839f0d8a3a` |
+| 8 | `def` | [ModelProposal.evidenceKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Execution.lean/declarations/modelproposal-evidencekind.md) | 92 | `declaration-track:f19772f5121eb301bf1ce9e81587c77f8766e95a091a0b374b9f89de10109a0f` |
+| 9 | `theorem` | [model_proposal_has_no_theorem_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Execution.lean/declarations/model-proposal-has-no-theorem-authority.md) | 97 | `result-track:b29d79162f768703b9d542861e928e10246e06e0afb66e95f86a0f13c43b62ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

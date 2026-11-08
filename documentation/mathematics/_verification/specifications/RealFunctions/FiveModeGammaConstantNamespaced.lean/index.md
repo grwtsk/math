@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/FiveModeGammaConstantNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/FiveModeGammaConstantNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiveModeGammaConstantNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiveModeGammaConstantNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quarter_digamma_le_one_sub_three](../../../../RealFunctions/FiveModeGammaConstantNamespaced.lean/declarations/quarter-digamma-le-one-sub-three.md) | 32 | `result-track:218cb93fc101f8459eafb0e9d94cdf2568632e052e31e2e0b0af66185da846db` |
-| 2 | `theorem` | [actual_archimedeanConstant_gt_four](../../../../RealFunctions/FiveModeGammaConstantNamespaced.lean/declarations/actual-archimedeanconstant-gt-four.md) | 69 | `result-track:9f8527623034e20df1018b2dfd181eaf0d8bc3d1d4b122d0271f44ed4f67e93a` |
-| 3 | `theorem` | [actual_gamma_constant_lt_neg_four](../../../../RealFunctions/FiveModeGammaConstantNamespaced.lean/declarations/actual-gamma-constant-lt-neg-four.md) | 80 | `result-track:637c75e0556e307c1e95ed251bf0d76d29e03ebe5de8ada721565fbc1ae23e18` |
+| 1 | `theorem` | [quarter_digamma_le_one_sub_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiveModeGammaConstantNamespaced.lean/declarations/quarter-digamma-le-one-sub-three.md) | 32 | `result-track:218cb93fc101f8459eafb0e9d94cdf2568632e052e31e2e0b0af66185da846db` |
+| 2 | `theorem` | [actual_archimedeanConstant_gt_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiveModeGammaConstantNamespaced.lean/declarations/actual-archimedeanconstant-gt-four.md) | 69 | `result-track:9f8527623034e20df1018b2dfd181eaf0d8bc3d1d4b122d0271f44ed4f67e93a` |
+| 3 | `theorem` | [actual_gamma_constant_lt_neg_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiveModeGammaConstantNamespaced.lean/declarations/actual-gamma-constant-lt-neg-four.md) | 80 | `result-track:637c75e0556e307c1e95ed251bf0d76d29e03ebe5de8ada721565fbc1ae23e18` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

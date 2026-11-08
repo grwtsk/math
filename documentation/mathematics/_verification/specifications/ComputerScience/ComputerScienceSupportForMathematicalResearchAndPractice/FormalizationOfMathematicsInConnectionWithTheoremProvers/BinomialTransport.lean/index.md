@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransport.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PlaceholderCover](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransport.lean/declarations/placeholdercover.md) | 8 | `declaration-track:dfdb66bc2f692576207a43ed1f4aa7acf6f48833aca13f57cfec36adad93cbca` |
-| 2 | `def` | [binomialTransportRootPlaceholder](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransport.lean/declarations/binomialtransportrootplaceholder.md) | 15 | `declaration-track:649b188e58ab34b6a6286276a3c5df8446c0b29ee98665b8a150b0b53ab84609` |
-| 3 | `theorem` | [binomialTransportRootPlaceholder_nonowning](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransport.lean/declarations/binomialtransportrootplaceholder-nonowning.md) | 23 | `result-track:50866874c2ae26038bdbb2aa6e79598e38fe97599986f8bf1ea84c39f8250761` |
+| 1 | `structure` | [PlaceholderCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransport.lean/declarations/placeholdercover.md) | 8 | `declaration-track:dfdb66bc2f692576207a43ed1f4aa7acf6f48833aca13f57cfec36adad93cbca` |
+| 2 | `def` | [binomialTransportRootPlaceholder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransport.lean/declarations/binomialtransportrootplaceholder.md) | 15 | `declaration-track:649b188e58ab34b6a6286276a3c5df8446c0b29ee98665b8a150b0b53ab84609` |
+| 3 | `theorem` | [binomialTransportRootPlaceholder_nonowning](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BinomialTransport.lean/declarations/binomialtransportrootplaceholder-nonowning.md) | 23 | `result-track:50866874c2ae26038bdbb2aa6e79598e38fe97599986f8bf1ea84c39f8250761` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

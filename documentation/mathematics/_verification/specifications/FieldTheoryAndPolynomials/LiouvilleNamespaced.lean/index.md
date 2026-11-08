@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/LiouvilleNamespaced.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/LiouvilleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LiouvilleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LiouvilleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,13 +61,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsLiouville](../../../../FieldTheoryAndPolynomials/LiouvilleNamespaced.lean/declarations/isliouville.md) | 49 | `declaration-track:3bc0b764e2cf586fdbd417c111ba96b3e1190b599b2b42f99b6b059c4eb219cc` |
-| 2 | `instance` | [IsLiouville.rfl](../../../../FieldTheoryAndPolynomials/LiouvilleNamespaced.lean/declarations/isliouville-rfl.md) | 55 | `declaration-track:890cc410c55edc8260238e6eb3610c2349a49ea91f769423952051855adaf18b` |
-| 3 | `lemma` | [IsLiouville.trans](../../../../FieldTheoryAndPolynomials/LiouvilleNamespaced.lean/declarations/isliouville-trans.md) | 60 | `result-track:277eee885a74a4c5c08598bc33af47e7065befd982e332db5c6eb2ecd1d30d9c` |
-| 4 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/LiouvilleNamespaced.lean/declarations/instance.md) | 91 | `declaration-track:a63aa6bc81d9440923cc8a7078a966b334d6f1994861eca75494d8dde03fa681` |
-| 5 | `lemma` | [IsLiouville.equiv](../../../../FieldTheoryAndPolynomials/LiouvilleNamespaced.lean/declarations/isliouville-equiv.md) | 114 | `result-track:5a4b4ac5b3db4c35a1a9cf23214b77bccda0885a2314099be962bfc7cdffbfca` |
-| 6 | `instance` | [isLiouville_of_finiteDimensional_galois](../../../../FieldTheoryAndPolynomials/LiouvilleNamespaced.lean/declarations/isliouville-of-finitedimensional-galois.md) | 127 | `declaration-track:c4368d88ea5d4759c17d2176543758e0247049abf11fba14b92364bad0fe6e77` |
-| 7 | `instance` | [isLiouville_of_finiteDimensional](../../../../FieldTheoryAndPolynomials/LiouvilleNamespaced.lean/declarations/isliouville-of-finitedimensional.md) | 203 | `declaration-track:b5c980b6ef42c02baeee34dc61c9546f0b274e090b9f0a0299e5e5d1229280b9` |
+| 1 | `class` | [IsLiouville](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LiouvilleNamespaced.lean/declarations/isliouville.md) | 49 | `declaration-track:3bc0b764e2cf586fdbd417c111ba96b3e1190b599b2b42f99b6b059c4eb219cc` |
+| 2 | `instance` | [IsLiouville.rfl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LiouvilleNamespaced.lean/declarations/isliouville-rfl.md) | 55 | `declaration-track:890cc410c55edc8260238e6eb3610c2349a49ea91f769423952051855adaf18b` |
+| 3 | `lemma` | [IsLiouville.trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LiouvilleNamespaced.lean/declarations/isliouville-trans.md) | 60 | `result-track:277eee885a74a4c5c08598bc33af47e7065befd982e332db5c6eb2ecd1d30d9c` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LiouvilleNamespaced.lean/declarations/instance.md) | 91 | `declaration-track:a63aa6bc81d9440923cc8a7078a966b334d6f1994861eca75494d8dde03fa681` |
+| 5 | `lemma` | [IsLiouville.equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LiouvilleNamespaced.lean/declarations/isliouville-equiv.md) | 114 | `result-track:5a4b4ac5b3db4c35a1a9cf23214b77bccda0885a2314099be962bfc7cdffbfca` |
+| 6 | `instance` | [isLiouville_of_finiteDimensional_galois](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LiouvilleNamespaced.lean/declarations/isliouville-of-finitedimensional-galois.md) | 127 | `declaration-track:c4368d88ea5d4759c17d2176543758e0247049abf11fba14b92364bad0fe6e77` |
+| 7 | `instance` | [isLiouville_of_finiteDimensional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/LiouvilleNamespaced.lean/declarations/isliouville-of-finitedimensional.md) | 203 | `declaration-track:b5c980b6ef42c02baeee34dc61c9546f0b274e090b9f0a0299e5e5d1229280b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

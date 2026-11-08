@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteController](../../../../MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/finitecontroller.md) | 19 | `declaration-track:e4935957fa816b27f09b324ca187b8385b4bd09275ee61af34323c8d12b51e9d` |
-| 2 | `def` | [sourceGram](../../../../MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/sourcegram.md) | 23 | `declaration-track:2a9756a5455d6b9eced025427b2a99aaa03041f935a68a8fcdd9600115c1519a` |
-| 3 | `theorem` | [finiteController_reference_re](../../../../MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/finitecontroller-reference-re.md) | 27 | `result-track:3f0a004282b492cfd0f7e3e20644d82bb4966b2cb30cd6b2dfe0f9515c24174e` |
-| 4 | `theorem` | [finiteController_norm_sq](../../../../MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/finitecontroller-norm-sq.md) | 44 | `result-track:467d40ee529a97d53a217b8156ce4280b9b9f9931191039e16160fa1177c3f9a` |
-| 5 | `theorem` | [finiteController_response_norm_sq](../../../../MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/finitecontroller-response-norm-sq.md) | 60 | `result-track:d052cbae7723a37cdbc88cf6c2e304faddef0cb8b5dc184c268a18c53202e7f5` |
-| 6 | `theorem` | [finiteController_energy](../../../../MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/finitecontroller-energy.md) | 81 | `result-track:5a2df19efa390346525197a627515ceddc696635545a4731e7d3507aeb199d25` |
-| 7 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/example.md) | 106 | `declaration-track:2dd4e48c00ca20825f9fccf32d44ee1dad6c9b0a25fac8ff74487f970b234481` |
-| 8 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/example-source-edition-4.md) | 108 | `declaration-track:c7a9d67b4f11cb5b1fe6bda36c13f172ae07d1979aa11bbe6375f6bed373c07a` |
-| 9 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/example-source-edition-6.md) | 111 | `declaration-track:d7547af5a749c00d371a59cd1b6ca36405bc54291fd6459ad58deba4d4e80af8` |
-| 10 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/example-source-edition-5.md) | 115 | `declaration-track:c97bc5ebbab575ffa722fca71db25eb7d4bf7dda08c5c30b20b6f8d3d52b0727` |
-| 11 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/example-source-edition-2.md) | 118 | `declaration-track:77c331239dc6e76b12d80e1ae70fff3e434948ec7e753206dac28e8cb70d3774` |
-| 12 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/example-source-edition-3.md) | 122 | `declaration-track:b57cae0709a567af86732dfd91cb21085e5cef1a9b45ffad73a45c2a33bf0496` |
+| 1 | `def` | [finiteController](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/finitecontroller.md) | 19 | `declaration-track:e4935957fa816b27f09b324ca187b8385b4bd09275ee61af34323c8d12b51e9d` |
+| 2 | `def` | [sourceGram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/sourcegram.md) | 23 | `declaration-track:2a9756a5455d6b9eced025427b2a99aaa03041f935a68a8fcdd9600115c1519a` |
+| 3 | `theorem` | [finiteController_reference_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/finitecontroller-reference-re.md) | 27 | `result-track:3f0a004282b492cfd0f7e3e20644d82bb4966b2cb30cd6b2dfe0f9515c24174e` |
+| 4 | `theorem` | [finiteController_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/finitecontroller-norm-sq.md) | 44 | `result-track:467d40ee529a97d53a217b8156ce4280b9b9f9931191039e16160fa1177c3f9a` |
+| 5 | `theorem` | [finiteController_response_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/finitecontroller-response-norm-sq.md) | 60 | `result-track:d052cbae7723a37cdbc88cf6c2e304faddef0cb8b5dc184c268a18c53202e7f5` |
+| 6 | `theorem` | [finiteController_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/finitecontroller-energy.md) | 81 | `result-track:5a2df19efa390346525197a627515ceddc696635545a4731e7d3507aeb199d25` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/example.md) | 106 | `declaration-track:2dd4e48c00ca20825f9fccf32d44ee1dad6c9b0a25fac8ff74487f970b234481` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/example-source-edition-4.md) | 108 | `declaration-track:c7a9d67b4f11cb5b1fe6bda36c13f172ae07d1979aa11bbe6375f6bed373c07a` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/example-source-edition-6.md) | 111 | `declaration-track:d7547af5a749c00d371a59cd1b6ca36405bc54291fd6459ad58deba4d4e80af8` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/example-source-edition-5.md) | 115 | `declaration-track:c97bc5ebbab575ffa722fca71db25eb7d4bf7dda08c5c30b20b6f8d3d52b0727` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/example-source-edition-2.md) | 118 | `declaration-track:77c331239dc6e76b12d80e1ae70fff3e434948ec7e753206dac28e8cb70d3774` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyLiteralCheck.lean/declarations/example-source-edition-3.md) | 122 | `declaration-track:b57cae0709a567af86732dfd91cb21085e5cef1a9b45ffad73a45c2a33bf0496` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

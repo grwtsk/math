@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionSourceStatements.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionSourceStatements.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionSourceStatements.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionSourceStatements.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionSourceStatements.lean/declarations/example-source-edition-2.md) | 8 | `declaration-track:14d38a66af15ccb9f3f552003ecc3163bd13ea1fa5edaf9a773517b53bb4a72f` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionSourceStatements.lean/declarations/example-source-edition-3.md) | 10 | `declaration-track:1bdc9879385597184a4f6af2e00bbb6eb0b8eaac5e5dfd511bd50bc911bcf464` |
-| 3 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionSourceStatements.lean/declarations/example-source-edition-7.md) | 15 | `declaration-track:a153b3c30ea8433b6b57662f049ceca8d617e2844a07ebe5bf9728f60abc416c` |
-| 4 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionSourceStatements.lean/declarations/example-source-edition-4.md) | 18 | `declaration-track:1e75570ff892c1e04418312a842622673dc914fc749cdc61912aad1e1ea7cfb0` |
-| 5 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionSourceStatements.lean/declarations/example-source-edition-6.md) | 21 | `declaration-track:6ad34bef0b1487cfe84068f8c51563abdac51af6264da0e70793139329c30a93` |
-| 6 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionSourceStatements.lean/declarations/example-source-edition-5.md) | 27 | `declaration-track:4b67331384d25c292e86f275e6c0430ad88312f9ec424e3df1c872440c946202` |
-| 7 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionSourceStatements.lean/declarations/example.md) | 33 | `declaration-track:103704a6d4235fb4d3d797b8d8daf20227d8a68c076d41b3f94a302b5abf7c13` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionSourceStatements.lean/declarations/example-source-edition-2.md) | 8 | `declaration-track:14d38a66af15ccb9f3f552003ecc3163bd13ea1fa5edaf9a773517b53bb4a72f` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionSourceStatements.lean/declarations/example-source-edition-3.md) | 10 | `declaration-track:1bdc9879385597184a4f6af2e00bbb6eb0b8eaac5e5dfd511bd50bc911bcf464` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionSourceStatements.lean/declarations/example-source-edition-7.md) | 15 | `declaration-track:a153b3c30ea8433b6b57662f049ceca8d617e2844a07ebe5bf9728f60abc416c` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionSourceStatements.lean/declarations/example-source-edition-4.md) | 18 | `declaration-track:1e75570ff892c1e04418312a842622673dc914fc749cdc61912aad1e1ea7cfb0` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionSourceStatements.lean/declarations/example-source-edition-6.md) | 21 | `declaration-track:6ad34bef0b1487cfe84068f8c51563abdac51af6264da0e70793139329c30a93` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionSourceStatements.lean/declarations/example-source-edition-5.md) | 27 | `declaration-track:4b67331384d25c292e86f275e6c0430ad88312f9ec424e3df1c872440c946202` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/UpperKernelNegativeDirectionSourceStatements.lean/declarations/example.md) | 33 | `declaration-track:103704a6d4235fb4d3d797b8d8daf20227d8a68c076d41b3f94a302b5abf7c13` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

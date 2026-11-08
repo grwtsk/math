@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Shadow.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Shadow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Shadow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Shadow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ShadowMutationResult](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Shadow.lean/declarations/shadowmutationresult.md) | 13 | `declaration-track:4804e281a61e8191b95d67379f9df1820b86c5baef6dc5f1437b668a4249743e` |
-| 2 | `def` | [applyShadowMutation](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Shadow.lean/declarations/applyshadowmutation.md) | 22 | `declaration-track:c1f63a530cf5a24610a1b7a4783bcf1edb573a9ca953d16d201fc0205854f220` |
-| 3 | `theorem` | [shadow_mutation_preserves_canonical](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Shadow.lean/declarations/shadow-mutation-preserves-canonical.md) | 32 | `result-track:91ed048609a354d11af70a47da196c1ddf00e5f906bc72cee845c4ef0232427b` |
+| 1 | `structure` | [ShadowMutationResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Shadow.lean/declarations/shadowmutationresult.md) | 13 | `declaration-track:4804e281a61e8191b95d67379f9df1820b86c5baef6dc5f1437b668a4249743e` |
+| 2 | `def` | [applyShadowMutation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Shadow.lean/declarations/applyshadowmutation.md) | 22 | `declaration-track:c1f63a530cf5a24610a1b7a4783bcf1edb573a9ca953d16d201fc0205854f220` |
+| 3 | `theorem` | [shadow_mutation_preserves_canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Shadow.lean/declarations/shadow-mutation-preserves-canonical.md) | 32 | `result-track:91ed048609a354d11af70a47da196c1ddf00e5f906bc72cee845c4ef0232427b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

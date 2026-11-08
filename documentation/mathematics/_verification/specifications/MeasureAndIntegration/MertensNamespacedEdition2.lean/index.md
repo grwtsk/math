@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/MertensNamespacedEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/MertensNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MertensNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MertensNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -65,19 +65,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [sum_Ioc_one_eq_sum_Ioc_zero](../../../../MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/sum-ioc-one-eq-sum-ioc-zero.md) | 63 | `result-track:3fdf92aecb7cb931afb8b24e57fbb967d51da163fb85a0f266dcd850340a2005` |
-| 2 | `theorem` | [sum_log_eq](../../../../MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/sum-log-eq.md) | 69 | `result-track:2f9f6aa0e15fc04c34d89c2d95ad3273208c9295aa9ff3279092a01bc909a432` |
-| 3 | `theorem` | [sum_log_le](../../../../MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/sum-log-le.md) | 87 | `result-track:3e82bd24ffc0da2285f8aecc06a72b16c9492f1a2aeafca0979355df3a78ecc8` |
-| 4 | `lemma` | [integral_log_le](../../../../MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/integral-log-le.md) | 101 | `result-track:df44de285eb1f98908c7baa26c94c7313a0915b424cb3d767681d89a74cfbc6a` |
-| 5 | `theorem` | [sum_log_ge](../../../../MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/sum-log-ge.md) | 113 | `result-track:a8c7e2ff5d0b24e3d8ce5b085b42bbc103a85de5990e3c9a5fe4d828bed69f16` |
-| 6 | `theorem` | [sum_log_eq_log_factorial](../../../../MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/sum-log-eq-log-factorial.md) | 142 | `result-track:fd3226001710a03c0866baa32fe0ee7406f4da005ca25e328df4bdec4f285d32` |
-| 7 | `theorem` | [sum_log_eq_sum_mangoldt](../../../../MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/sum-log-eq-sum-mangoldt.md) | 151 | `result-track:78adfb3dd5d6e32065d9177d2269c0becc7b4283e5b9a04855d486dcfe2b61a8` |
-| 8 | `abbrev` | [E₁Λ](../../../../MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/e.md) | 157 | `declaration-track:c434a0178cd2138ff9a4551e23b518e294dde0a63b8f84042814cd06da2ef154` |
-| 9 | `theorem` | [sum_mangoldt_div_eq](../../../../MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/sum-mangoldt-div-eq.md) | 159 | `result-track:ab649fc03d6d7793ac8309cbfa43cb0a7c3a8b541fd48af0a9c670d73ebe71ea` |
-| 10 | `theorem` | [E₁Λ.ge](../../../../MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/e-ge.md) | 163 | `result-track:cb89e7e5ed775d4a0af3c9fa860bed7e2efce5b12f3985a5fe3de9823cc88a19` |
-| 11 | `theorem` | [E₁Λ.le](../../../../MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/e-le.md) | 181 | `result-track:db8a2f622afdc32f673f3b191ccb3d23922f0902a5b269532ae9035aab22c7af` |
-| 12 | `theorem` | [sum_mangoldt_div_eq_log](../../../../MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/sum-mangoldt-div-eq-log.md) | 203 | `result-track:caa5231feea6378629e8c1254e84fa20f5e7d902d39cc34f7ef7c81e864d5263` |
-| 13 | `theorem` | [E₁Λ.bounded'](../../../../MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/e-bounded.md) | 207 | `result-track:14eb45df05366eca7a210607d931468b2082467587743a0ac0a13d58656933eb` |
+| 1 | `lemma` | [sum_Ioc_one_eq_sum_Ioc_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/sum-ioc-one-eq-sum-ioc-zero.md) | 63 | `result-track:3fdf92aecb7cb931afb8b24e57fbb967d51da163fb85a0f266dcd850340a2005` |
+| 2 | `theorem` | [sum_log_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/sum-log-eq.md) | 69 | `result-track:2f9f6aa0e15fc04c34d89c2d95ad3273208c9295aa9ff3279092a01bc909a432` |
+| 3 | `theorem` | [sum_log_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/sum-log-le.md) | 87 | `result-track:3e82bd24ffc0da2285f8aecc06a72b16c9492f1a2aeafca0979355df3a78ecc8` |
+| 4 | `lemma` | [integral_log_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/integral-log-le.md) | 101 | `result-track:df44de285eb1f98908c7baa26c94c7313a0915b424cb3d767681d89a74cfbc6a` |
+| 5 | `theorem` | [sum_log_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/sum-log-ge.md) | 113 | `result-track:a8c7e2ff5d0b24e3d8ce5b085b42bbc103a85de5990e3c9a5fe4d828bed69f16` |
+| 6 | `theorem` | [sum_log_eq_log_factorial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/sum-log-eq-log-factorial.md) | 142 | `result-track:fd3226001710a03c0866baa32fe0ee7406f4da005ca25e328df4bdec4f285d32` |
+| 7 | `theorem` | [sum_log_eq_sum_mangoldt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/sum-log-eq-sum-mangoldt.md) | 151 | `result-track:78adfb3dd5d6e32065d9177d2269c0becc7b4283e5b9a04855d486dcfe2b61a8` |
+| 8 | `abbrev` | [E₁Λ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/e.md) | 157 | `declaration-track:c434a0178cd2138ff9a4551e23b518e294dde0a63b8f84042814cd06da2ef154` |
+| 9 | `theorem` | [sum_mangoldt_div_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/sum-mangoldt-div-eq.md) | 159 | `result-track:ab649fc03d6d7793ac8309cbfa43cb0a7c3a8b541fd48af0a9c670d73ebe71ea` |
+| 10 | `theorem` | [E₁Λ.ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/e-ge.md) | 163 | `result-track:cb89e7e5ed775d4a0af3c9fa860bed7e2efce5b12f3985a5fe3de9823cc88a19` |
+| 11 | `theorem` | [E₁Λ.le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/e-le.md) | 181 | `result-track:db8a2f622afdc32f673f3b191ccb3d23922f0902a5b269532ae9035aab22c7af` |
+| 12 | `theorem` | [sum_mangoldt_div_eq_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/sum-mangoldt-div-eq-log.md) | 203 | `result-track:caa5231feea6378629e8c1254e84fa20f5e7d902d39cc34f7ef7c81e864d5263` |
+| 13 | `theorem` | [E₁Λ.bounded'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MertensNamespacedEdition2.lean/declarations/e-bounded.md) | 207 | `result-track:14eb45df05366eca7a210607d931468b2082467587743a0ac0a13d58656933eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

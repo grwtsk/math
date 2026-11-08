@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,16 +61,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Iter.take_eq_toIter_take_toIterM](../../../../../ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-take-eq-toiter-take-toiterm.md) | 24 | `result-track:55aed725d53de4eca085546f741d432ee3e01938b2184fdd828fbeb69204e8c1` |
-| 2 | `theorem` | [Iter.toTake_eq_toIter_toTake_toIterM](../../../../../ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-totake-eq-toiter-totake-toiterm.md) | 29 | `result-track:2e24446f19896013a4e34ce0f6c870fe50897411be16465958c8298d1f9aab0a` |
-| 3 | `theorem` | [Iter.step_take](../../../../../ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-step-take.md) | 34 | `result-track:34621d1d62714aee27425c7ecfc8a9c584979bb2c6f9a4b43695db32280a5b80` |
-| 4 | `theorem` | [Iter.atIdxSlow?_take](../../../../../ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-atidxslow-take.md) | 52 | `result-track:a8bc8cc3e518e822fa961de934d20815ec7f8216e7da89150cb07c75694827fe` |
-| 5 | `theorem` | [Iter.toList_take_of_finite](../../../../../ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-tolist-take-of-finite.md) | 71 | `result-track:a43ae84d75502449701966f37524b42a7298ef4557b9ae1bfdbab757b2819c69` |
-| 6 | `theorem` | [Iter.toListRev_take_of_finite](../../../../../ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-tolistrev-take-of-finite.md) | 87 | `result-track:7bee20106543341b8b88e3210c1e6e2e42ac6bedba0f22977e6455a0373ad57e` |
-| 7 | `theorem` | [Iter.toArray_take_of_finite](../../../../../ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-toarray-take-of-finite.md) | 93 | `result-track:bcc03a5cf30667c1b2ab1a2ac79d4a1447c665a2aa891191df8248e6501eaa00` |
-| 8 | `theorem` | [Iter.toList_take_zero](../../../../../ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-tolist-take-zero.md) | 99 | `result-track:bf6d57e965dd9887ae5a335ac394a9f30d5cf8cb31f0d4d172ec424970de2598` |
-| 9 | `theorem` | [Iter.step_toTake](../../../../../ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-step-totake.md) | 105 | `result-track:ccbe1ce98e3f5bb246038cba8c16d0a7b4b306e82b6caad31cdd8e3de964fd67` |
-| 10 | `theorem` | [Iter.toList_toTake](../../../../../ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-tolist-totake.md) | 118 | `result-track:c695782b74f3376d73077313487f585f1bc37fe3c01335167efe5d8fd1cfbdd2` |
+| 1 | `theorem` | [Iter.take_eq_toIter_take_toIterM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-take-eq-toiter-take-toiterm.md) | 24 | `result-track:55aed725d53de4eca085546f741d432ee3e01938b2184fdd828fbeb69204e8c1` |
+| 2 | `theorem` | [Iter.toTake_eq_toIter_toTake_toIterM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-totake-eq-toiter-totake-toiterm.md) | 29 | `result-track:2e24446f19896013a4e34ce0f6c870fe50897411be16465958c8298d1f9aab0a` |
+| 3 | `theorem` | [Iter.step_take](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-step-take.md) | 34 | `result-track:34621d1d62714aee27425c7ecfc8a9c584979bb2c6f9a4b43695db32280a5b80` |
+| 4 | `theorem` | [Iter.atIdxSlow?_take](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-atidxslow-take.md) | 52 | `result-track:a8bc8cc3e518e822fa961de934d20815ec7f8216e7da89150cb07c75694827fe` |
+| 5 | `theorem` | [Iter.toList_take_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-tolist-take-of-finite.md) | 71 | `result-track:a43ae84d75502449701966f37524b42a7298ef4557b9ae1bfdbab757b2819c69` |
+| 6 | `theorem` | [Iter.toListRev_take_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-tolistrev-take-of-finite.md) | 87 | `result-track:7bee20106543341b8b88e3210c1e6e2e42ac6bedba0f22977e6455a0373ad57e` |
+| 7 | `theorem` | [Iter.toArray_take_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-toarray-take-of-finite.md) | 93 | `result-track:bcc03a5cf30667c1b2ab1a2ac79d4a1447c665a2aa891191df8248e6501eaa00` |
+| 8 | `theorem` | [Iter.toList_take_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-tolist-take-zero.md) | 99 | `result-track:bf6d57e965dd9887ae5a335ac394a9f30d5cf8cb31f0d4d172ec424970de2598` |
+| 9 | `theorem` | [Iter.step_toTake](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-step-totake.md) | 105 | `result-track:ccbe1ce98e3f5bb246038cba8c16d0a7b4b306e82b6caad31cdd8e3de964fd67` |
+| 10 | `theorem` | [Iter.toList_toTake](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TakePublic.lean/declarations/iter-tolist-totake.md) | 118 | `result-track:c695782b74f3376d73077313487f585f1bc37fe3c01335167efe5d8fd1cfbdd2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

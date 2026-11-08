@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/HenselianIsLocalRingHomOfLeJacobsonBot.lean/index.md) · [Full source](../../../../CommutativeAlgebra/HenselianIsLocalRingHomOfLeJacobsonBot.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HenselianIsLocalRingHomOfLeJacobsonBot.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HenselianIsLocalRingHomOfLeJacobsonBot.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isLocalRingHom_of_le_jacobson_bot](../../../../CommutativeAlgebra/HenselianIsLocalRingHomOfLeJacobsonBot.lean/declarations/islocalringhom-of-le-jacobson-bot.md) | 65 | `result-track:fb2a1264587886e9ccc4c5f0161d80364e08faa55e23566526f5afbfd2559182` |
-| 2 | `class` | [HenselianRing](../../../../CommutativeAlgebra/HenselianIsLocalRingHomOfLeJacobsonBot.lean/declarations/henselianring.md) | 93 | `declaration-track:bbf414957392165325edd5f8c4f0c369b343a64172779a6fd4213ec76f8ccbe9` |
-| 3 | `class` | [HenselianLocalRing](../../../../CommutativeAlgebra/HenselianIsLocalRingHomOfLeJacobsonBot.lean/declarations/henselianlocalring.md) | 108 | `declaration-track:fddc741a91b32b5275ee47b05cc81083cba7657588dec5b9386f008d7b51f65e` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/HenselianIsLocalRingHomOfLeJacobsonBot.lean/declarations/instance.md) | 115 | `declaration-track:8b1d3df9ab976e1ef3623e31a8f7e6be7e5f28b1437bb604ca766fc6f9a03888` |
-| 5 | `theorem` | [HenselianLocalRing.TFAE](../../../../CommutativeAlgebra/HenselianIsLocalRingHomOfLeJacobsonBot.lean/declarations/henselianlocalring-tfae.md) | 121 | `result-track:ec81c7bb81dede00905f6f1260eed689610ff6f5369a0d5d24dcd69cff0c5159` |
-| 6 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/HenselianIsLocalRingHomOfLeJacobsonBot.lean/declarations/instance-source-edition-2.md) | 159 | `declaration-track:8e87acde217261806e1d6516ca4fe5a646d1f948dd0dfed76cdf6d24ae0bec03` |
-| 7 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/HenselianIsLocalRingHomOfLeJacobsonBot.lean/declarations/instance-source-edition-3.md) | 175 | `declaration-track:bb886241117a3a528b0b3a54b3229a533393471be48818f72c97a55428664d76` |
+| 1 | `theorem` | [isLocalRingHom_of_le_jacobson_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HenselianIsLocalRingHomOfLeJacobsonBot.lean/declarations/islocalringhom-of-le-jacobson-bot.md) | 65 | `result-track:fb2a1264587886e9ccc4c5f0161d80364e08faa55e23566526f5afbfd2559182` |
+| 2 | `class` | [HenselianRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HenselianIsLocalRingHomOfLeJacobsonBot.lean/declarations/henselianring.md) | 93 | `declaration-track:bbf414957392165325edd5f8c4f0c369b343a64172779a6fd4213ec76f8ccbe9` |
+| 3 | `class` | [HenselianLocalRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HenselianIsLocalRingHomOfLeJacobsonBot.lean/declarations/henselianlocalring.md) | 108 | `declaration-track:fddc741a91b32b5275ee47b05cc81083cba7657588dec5b9386f008d7b51f65e` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HenselianIsLocalRingHomOfLeJacobsonBot.lean/declarations/instance.md) | 115 | `declaration-track:8b1d3df9ab976e1ef3623e31a8f7e6be7e5f28b1437bb604ca766fc6f9a03888` |
+| 5 | `theorem` | [HenselianLocalRing.TFAE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HenselianIsLocalRingHomOfLeJacobsonBot.lean/declarations/henselianlocalring-tfae.md) | 121 | `result-track:ec81c7bb81dede00905f6f1260eed689610ff6f5369a0d5d24dcd69cff0c5159` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HenselianIsLocalRingHomOfLeJacobsonBot.lean/declarations/instance-source-edition-2.md) | 159 | `declaration-track:8e87acde217261806e1d6516ca4fe5a646d1f948dd0dfed76cdf6d24ae0bec03` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HenselianIsLocalRingHomOfLeJacobsonBot.lean/declarations/instance-source-edition-3.md) | 175 | `declaration-track:bb886241117a3a528b0b3a54b3229a533393471be48818f72c97a55428664d76` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

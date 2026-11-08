@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/LocalSystemNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/LocalSystemNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LocalSystemNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LocalSystemNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TerrainFacet](../../../../FunctionalAnalysis/LocalSystemNamespaced.lean/declarations/terrainfacet.md) | 30 | `declaration-track:38bfbff5754f7c4c8703a46836357a777ea4418269611ee3ac933322f6029e2b` |
-| 2 | `structure` | [CertifiedPartialIsometry](../../../../FunctionalAnalysis/LocalSystemNamespaced.lean/declarations/certifiedpartialisometry.md) | 43 | `declaration-track:06036b2be07ba0fe1bd331605e0a8da802f0d63ae73fc08308e527bdfe7c8e66` |
-| 3 | `structure` | [FiniteLocalSystem](../../../../FunctionalAnalysis/LocalSystemNamespaced.lean/declarations/finitelocalsystem.md) | 58 | `declaration-track:63d0b33a53d04e3acafb816a39092a855fbc2d113077dc26da0b0fa2c90d6026` |
-| 4 | `theorem` | [transport_edge_resolves](../../../../FunctionalAnalysis/LocalSystemNamespaced.lean/declarations/transport-edge-resolves.md) | 74 | `result-track:988649e4904e8ac49ad60283774bce6342efb8c2e4e571ce780f0af4a8e0f7cf` |
+| 1 | `inductive` | [TerrainFacet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LocalSystemNamespaced.lean/declarations/terrainfacet.md) | 30 | `declaration-track:38bfbff5754f7c4c8703a46836357a777ea4418269611ee3ac933322f6029e2b` |
+| 2 | `structure` | [CertifiedPartialIsometry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LocalSystemNamespaced.lean/declarations/certifiedpartialisometry.md) | 43 | `declaration-track:06036b2be07ba0fe1bd331605e0a8da802f0d63ae73fc08308e527bdfe7c8e66` |
+| 3 | `structure` | [FiniteLocalSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LocalSystemNamespaced.lean/declarations/finitelocalsystem.md) | 58 | `declaration-track:63d0b33a53d04e3acafb816a39092a855fbc2d113077dc26da0b0fa2c90d6026` |
+| 4 | `theorem` | [transport_edge_resolves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LocalSystemNamespaced.lean/declarations/transport-edge-resolves.md) | 74 | `result-track:988649e4904e8ac49ad60283774bce6342efb8c2e4e571ce780f0af4a8e0f7cf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

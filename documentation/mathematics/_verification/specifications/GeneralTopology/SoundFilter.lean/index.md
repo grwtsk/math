@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SoundFilter.lean/index.md) · [Full source](../../../../GeneralTopology/SoundFilter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SoundFilter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SoundFilter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Accepts](../../../../GeneralTopology/SoundFilter.lean/declarations/accepts.md) | 5 | `declaration-track:c75c55436908e8c126a09180b1b2618ae744da615d718fc2a4a7aac2fc5a4ba0` |
-| 2 | `theorem` | [prime_or_not_dvd](../../../../GeneralTopology/SoundFilter.lean/declarations/prime-or-not-dvd.md) | 7 | `result-track:1adfc32f23fd9baede9532a95678db3616cef6acb84fd3dc66d2c3a314172710` |
-| 3 | `theorem` | [sound_filter_retains_prime](../../../../GeneralTopology/SoundFilter.lean/declarations/sound-filter-retains-prime.md) | 17 | `result-track:b54fa6c6d0f7ad4108b135f75a63d553367dd34d78fce311705dda79de8db8d1` |
-| 4 | `theorem` | [filter_retains_own_prime](../../../../GeneralTopology/SoundFilter.lean/declarations/filter-retains-own-prime.md) | 20 | `result-track:241a712827d1a5a1360b669a5a6c2cf1a5c62a7ddedd37d3a3f441c5aa9a9810` |
+| 1 | `def` | [Accepts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SoundFilter.lean/declarations/accepts.md) | 5 | `declaration-track:c75c55436908e8c126a09180b1b2618ae744da615d718fc2a4a7aac2fc5a4ba0` |
+| 2 | `theorem` | [prime_or_not_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SoundFilter.lean/declarations/prime-or-not-dvd.md) | 7 | `result-track:1adfc32f23fd9baede9532a95678db3616cef6acb84fd3dc66d2c3a314172710` |
+| 3 | `theorem` | [sound_filter_retains_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SoundFilter.lean/declarations/sound-filter-retains-prime.md) | 17 | `result-track:b54fa6c6d0f7ad4108b135f75a63d553367dd34d78fce311705dda79de8db8d1` |
+| 4 | `theorem` | [filter_retains_own_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SoundFilter.lean/declarations/filter-retains-own-prime.md) | 20 | `result-track:241a712827d1a5a1360b669a5a6c2cf1a5c62a7ddedd37d3a3f441c5aa9a9810` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

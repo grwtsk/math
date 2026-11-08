@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/NumericMeanBoundsNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/NumericMeanBoundsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumericMeanBoundsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumericMeanBoundsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,13 +61,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [log_pi_lower](../../../../NumberTheory/NumericMeanBoundsNamespaced.lean/declarations/log-pi-lower.md) | 23 | `result-track:a6affcb6a57b5da925402b25002ddc72bc5f27887401c6f5ad743c50cd754dec` |
-| 2 | `theorem` | [actual_endpoint_lt](../../../../NumberTheory/NumericMeanBoundsNamespaced.lean/declarations/actual-endpoint-lt.md) | 34 | `result-track:41f2628da3c1925d3147ba53d6b9dde14feb8b860bb4b90a6644cfcf781fc956` |
-| 3 | `theorem` | [sqrt_two_bounds](../../../../NumberTheory/NumericMeanBoundsNamespaced.lean/declarations/sqrt-two-bounds.md) | 40 | `result-track:2865ddcae84be0e1129ac29b96451384038c533f8b78901447ec81482fcaf794` |
-| 4 | `theorem` | [sqrt_three_bounds](../../../../NumberTheory/NumericMeanBoundsNamespaced.lean/declarations/sqrt-three-bounds.md) | 45 | `result-track:2e5c87797d2a91610a35ead6c4d4142f1ffc50835b9d631fabb23fb96f296d93` |
-| 5 | `theorem` | [fixed_prime_sum_gt](../../../../NumberTheory/NumericMeanBoundsNamespaced.lean/declarations/fixed-prime-sum-gt.md) | 50 | `result-track:15b7f0ada1c0bb5326ffa3527fb5efbea37543ee17de6064e2a0e26e50b1ee2b` |
-| 6 | `theorem` | [actual_coarse_calibration_lt](../../../../NumberTheory/NumericMeanBoundsNamespaced.lean/declarations/actual-coarse-calibration-lt.md) | 65 | `result-track:5b7f4d1e52b7035e0a9a8a3e0b6d201daa9079f22b1aaef2d694fd0a49baa816` |
-| 7 | `theorem` | [actual_sharp_calibration_lt](../../../../NumberTheory/NumericMeanBoundsNamespaced.lean/declarations/actual-sharp-calibration-lt.md) | 86 | `result-track:c2f0e37fbfc485f015ed4afe78eb0434bd400d3c51353fc065a0cb589a3b3139` |
+| 1 | `theorem` | [log_pi_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumericMeanBoundsNamespaced.lean/declarations/log-pi-lower.md) | 23 | `result-track:a6affcb6a57b5da925402b25002ddc72bc5f27887401c6f5ad743c50cd754dec` |
+| 2 | `theorem` | [actual_endpoint_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumericMeanBoundsNamespaced.lean/declarations/actual-endpoint-lt.md) | 34 | `result-track:41f2628da3c1925d3147ba53d6b9dde14feb8b860bb4b90a6644cfcf781fc956` |
+| 3 | `theorem` | [sqrt_two_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumericMeanBoundsNamespaced.lean/declarations/sqrt-two-bounds.md) | 40 | `result-track:2865ddcae84be0e1129ac29b96451384038c533f8b78901447ec81482fcaf794` |
+| 4 | `theorem` | [sqrt_three_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumericMeanBoundsNamespaced.lean/declarations/sqrt-three-bounds.md) | 45 | `result-track:2e5c87797d2a91610a35ead6c4d4142f1ffc50835b9d631fabb23fb96f296d93` |
+| 5 | `theorem` | [fixed_prime_sum_gt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumericMeanBoundsNamespaced.lean/declarations/fixed-prime-sum-gt.md) | 50 | `result-track:15b7f0ada1c0bb5326ffa3527fb5efbea37543ee17de6064e2a0e26e50b1ee2b` |
+| 6 | `theorem` | [actual_coarse_calibration_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumericMeanBoundsNamespaced.lean/declarations/actual-coarse-calibration-lt.md) | 65 | `result-track:5b7f4d1e52b7035e0a9a8a3e0b6d201daa9079f22b1aaef2d694fd0a49baa816` |
+| 7 | `theorem` | [actual_sharp_calibration_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumericMeanBoundsNamespaced.lean/declarations/actual-sharp-calibration-lt.md) | 86 | `result-track:c2f0e37fbfc485f015ed4afe78eb0434bd400d3c51353fc065a0cb589a3b3139` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

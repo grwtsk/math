@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/FiberPartitionNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/FiberPartitionNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiberPartitionNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiberPartitionNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sigmaIsoHom](../../../../GeneralTopology/FiberPartitionNamespacedPublic.lean/declarations/sigmaisohom.md) | 44 | `declaration-track:b85771f004fb5a79e0d012fcfcc38a5ae3d8c2984d8a930fa8feebc645ec6cda` |
-| 2 | `lemma` | [sigmaIsoHom_inj](../../../../GeneralTopology/FiberPartitionNamespacedPublic.lean/declarations/sigmaisohom-inj.md) | 49 | `result-track:b0a8b5655a161cae84b0d84374dd9cdc70a1f77644f9dabca77bedcacec06b64` |
-| 3 | `lemma` | [sigmaIsoHom_surj](../../../../GeneralTopology/FiberPartitionNamespacedPublic.lean/declarations/sigmaisohom-surj.md) | 56 | `result-track:d14f80b2add588bb332d58dbc1339fc329ba0c7633f740658f1ab56e517c6fbb` |
-| 4 | `def` | [sigmaIncl](../../../../GeneralTopology/FiberPartitionNamespacedPublic.lean/declarations/sigmaincl.md) | 60 | `declaration-track:509e5160cec25a374ce6f3bd9a204b1b1fa356cab6bbc6092c516faf461ae3fa` |
-| 5 | `def` | [sigmaInclIncl](../../../../GeneralTopology/FiberPartitionNamespacedPublic.lean/declarations/sigmainclincl.md) | 65 | `declaration-track:89eebfceb7faf425fd06fb79c76b2020186a403afe9c65f09acca434bd6725fb` |
-| 6 | `instance` | [(anonymous)](../../../../GeneralTopology/FiberPartitionNamespacedPublic.lean/declarations/instance.md) | 76 | `declaration-track:61faa5b0468eda42af2ad904ef1bef8e5d2994abdf4745b15440120e677ec705` |
-| 7 | `instance` | [(anonymous)](../../../../GeneralTopology/FiberPartitionNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 81 | `declaration-track:78118a088f784b97d44320cc1e6fbfbc3f394257b51296d34cef29cb1300f1d8` |
+| 1 | `def` | [sigmaIsoHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiberPartitionNamespacedPublic.lean/declarations/sigmaisohom.md) | 44 | `declaration-track:b85771f004fb5a79e0d012fcfcc38a5ae3d8c2984d8a930fa8feebc645ec6cda` |
+| 2 | `lemma` | [sigmaIsoHom_inj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiberPartitionNamespacedPublic.lean/declarations/sigmaisohom-inj.md) | 49 | `result-track:b0a8b5655a161cae84b0d84374dd9cdc70a1f77644f9dabca77bedcacec06b64` |
+| 3 | `lemma` | [sigmaIsoHom_surj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiberPartitionNamespacedPublic.lean/declarations/sigmaisohom-surj.md) | 56 | `result-track:d14f80b2add588bb332d58dbc1339fc329ba0c7633f740658f1ab56e517c6fbb` |
+| 4 | `def` | [sigmaIncl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiberPartitionNamespacedPublic.lean/declarations/sigmaincl.md) | 60 | `declaration-track:509e5160cec25a374ce6f3bd9a204b1b1fa356cab6bbc6092c516faf461ae3fa` |
+| 5 | `def` | [sigmaInclIncl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiberPartitionNamespacedPublic.lean/declarations/sigmainclincl.md) | 65 | `declaration-track:89eebfceb7faf425fd06fb79c76b2020186a403afe9c65f09acca434bd6725fb` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiberPartitionNamespacedPublic.lean/declarations/instance.md) | 76 | `declaration-track:61faa5b0468eda42af2ad904ef1bef8e5d2994abdf4745b15440120e677ec705` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiberPartitionNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 81 | `declaration-track:78118a088f784b97d44320cc1e6fbfbc3f394257b51296d34cef29cb1300f1d8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

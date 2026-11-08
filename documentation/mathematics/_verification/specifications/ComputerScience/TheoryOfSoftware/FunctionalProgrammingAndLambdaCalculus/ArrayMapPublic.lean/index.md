@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ArrayMapPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ArrayMapPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ArrayMapPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ArrayMapPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toArrayMap](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ArrayMapPublic.lean/declarations/toarraymap.md) | 20 | `declaration-track:07bf2aec7b3359dedcce8130da1bc6e4c68a9376b387ebb3c179f7f29baf4ba9` |
-| 2 | `theorem` | [toArrayMap_toList](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ArrayMapPublic.lean/declarations/toarraymap-tolist.md) | 27 | `result-track:0a9b12739c7826f38db0a2c778a9aaf2932a8090150d25288be389ef69ac8c85` |
-| 3 | `theorem` | [toArrayMap_eq_toArray_map](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ArrayMapPublic.lean/declarations/toarraymap-eq-toarray-map.md) | 40 | `result-track:c1a47f28d70663e5c4627ea3202181a0e027e08ddf4601777faf0e2d6d609cc6` |
+| 1 | `def` | [toArrayMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ArrayMapPublic.lean/declarations/toarraymap.md) | 20 | `declaration-track:07bf2aec7b3359dedcce8130da1bc6e4c68a9376b387ebb3c179f7f29baf4ba9` |
+| 2 | `theorem` | [toArrayMap_toList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ArrayMapPublic.lean/declarations/toarraymap-tolist.md) | 27 | `result-track:0a9b12739c7826f38db0a2c778a9aaf2932a8090150d25288be389ef69ac8c85` |
+| 3 | `theorem` | [toArrayMap_eq_toArray_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ArrayMapPublic.lean/declarations/toarraymap-eq-toarray-map.md) | 40 | `result-track:c1a47f28d70663e5c4627ea3202181a0e027e08ddf4601777faf0e2d6d609cc6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

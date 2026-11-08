@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/WordMetricNamespacedPublic.lean/index.md) · [Full source](../../../../Geometry/WordMetricNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordMetricNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordMetricNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [wordLength](../../../../Geometry/WordMetricNamespacedPublic.lean/declarations/wordlength.md) | 70 | `declaration-track:882992968c71c16d2265b5a7339169cfca36f0e9476ed0b80f503efebc333976` |
-| 2 | `def` | [IsGeodesic](../../../../Geometry/WordMetricNamespacedPublic.lean/declarations/isgeodesic.md) | 76 | `declaration-track:b4e24cf0789ec41f6ca2618d0b80c141b9121aa2c46f0783eb8c61b9c2b91c7b` |
-| 3 | `lemma` | [IsGeodesic.eq](../../../../Geometry/WordMetricNamespacedPublic.lean/declarations/isgeodesic-eq.md) | 78 | `result-track:c8d5380e9b548512f0f3d688253864b9177621f65053be978d25ca4af62ced74` |
-| 4 | `theorem` | [exists_isGeodesic](../../../../Geometry/WordMetricNamespacedPublic.lean/declarations/exists-isgeodesic.md) | 82 | `result-track:d299b5f229a32e8ee926fa29f21d4df5cf414d708c163bdf436d6632c500349b` |
-| 5 | `lemma` | [wordLength_wordProd_le](../../../../Geometry/WordMetricNamespacedPublic.lean/declarations/wordlength-wordprod-le.md) | 88 | `result-track:ce31260d8a7a11006f128417861619369f6b3f31e742d67d5f5ebfddad448336` |
-| 6 | `theorem` | [wordLength_le_iff](../../../../Geometry/WordMetricNamespacedPublic.lean/declarations/wordlength-le-iff.md) | 93 | `result-track:b997dadd905657f0e6d050e1c0b77a896a6bae2da890f4970c6d9666dd81d62d` |
-| 7 | `lemma` | [wordLength_eq_zero_iff](../../../../Geometry/WordMetricNamespacedPublic.lean/declarations/wordlength-eq-zero-iff.md) | 103 | `result-track:5e105b7796dc9681c0f4799472ee4d34181b45434d02f08ce57e517f33ffed4a` |
-| 8 | `lemma` | [wordLength_one](../../../../Geometry/WordMetricNamespacedPublic.lean/declarations/wordlength-one.md) | 108 | `result-track:c1a015ba31b943bef96a0d40530d4fda97792cc13e9311c7bf775158a9511698` |
-| 9 | `lemma` | [wordLength_inv_le](../../../../Geometry/WordMetricNamespacedPublic.lean/declarations/wordlength-inv-le.md) | 112 | `result-track:2fbb3173efedd27bf181a865e84d6672db72561ed6a59e785769859a2f8a141e` |
-| 10 | `lemma` | [wordLength_inv](../../../../Geometry/WordMetricNamespacedPublic.lean/declarations/wordlength-inv.md) | 117 | `result-track:fba596be24ba7b43f68ee1c3be77b695834ef11d26603d6ed074488ef77068c8` |
-| 11 | `lemma` | [wordLength_mul_le](../../../../Geometry/WordMetricNamespacedPublic.lean/declarations/wordlength-mul-le.md) | 122 | `result-track:419be717306fc2dc8d16f22d4de85b930c0734abf51518c53ae70d329e4112f7` |
-| 12 | `def` | [groupNorm](../../../../Geometry/WordMetricNamespacedPublic.lean/declarations/groupnorm.md) | 128 | `declaration-track:5eb9b812c8ee872028847f1982afac49a8f771dc6a72c6677955c087559d781a` |
-| 13 | `def` | [normedGroup](../../../../Geometry/WordMetricNamespacedPublic.lean/declarations/normedgroup.md) | 140 | `declaration-track:1021c6f265336f419b8ac15bfbb9eebc3d5c18156ff3ab40007829889238504d` |
+| 1 | `def` | [wordLength](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordMetricNamespacedPublic.lean/declarations/wordlength.md) | 70 | `declaration-track:882992968c71c16d2265b5a7339169cfca36f0e9476ed0b80f503efebc333976` |
+| 2 | `def` | [IsGeodesic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordMetricNamespacedPublic.lean/declarations/isgeodesic.md) | 76 | `declaration-track:b4e24cf0789ec41f6ca2618d0b80c141b9121aa2c46f0783eb8c61b9c2b91c7b` |
+| 3 | `lemma` | [IsGeodesic.eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordMetricNamespacedPublic.lean/declarations/isgeodesic-eq.md) | 78 | `result-track:c8d5380e9b548512f0f3d688253864b9177621f65053be978d25ca4af62ced74` |
+| 4 | `theorem` | [exists_isGeodesic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordMetricNamespacedPublic.lean/declarations/exists-isgeodesic.md) | 82 | `result-track:d299b5f229a32e8ee926fa29f21d4df5cf414d708c163bdf436d6632c500349b` |
+| 5 | `lemma` | [wordLength_wordProd_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordMetricNamespacedPublic.lean/declarations/wordlength-wordprod-le.md) | 88 | `result-track:ce31260d8a7a11006f128417861619369f6b3f31e742d67d5f5ebfddad448336` |
+| 6 | `theorem` | [wordLength_le_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordMetricNamespacedPublic.lean/declarations/wordlength-le-iff.md) | 93 | `result-track:b997dadd905657f0e6d050e1c0b77a896a6bae2da890f4970c6d9666dd81d62d` |
+| 7 | `lemma` | [wordLength_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordMetricNamespacedPublic.lean/declarations/wordlength-eq-zero-iff.md) | 103 | `result-track:5e105b7796dc9681c0f4799472ee4d34181b45434d02f08ce57e517f33ffed4a` |
+| 8 | `lemma` | [wordLength_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordMetricNamespacedPublic.lean/declarations/wordlength-one.md) | 108 | `result-track:c1a015ba31b943bef96a0d40530d4fda97792cc13e9311c7bf775158a9511698` |
+| 9 | `lemma` | [wordLength_inv_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordMetricNamespacedPublic.lean/declarations/wordlength-inv-le.md) | 112 | `result-track:2fbb3173efedd27bf181a865e84d6672db72561ed6a59e785769859a2f8a141e` |
+| 10 | `lemma` | [wordLength_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordMetricNamespacedPublic.lean/declarations/wordlength-inv.md) | 117 | `result-track:fba596be24ba7b43f68ee1c3be77b695834ef11d26603d6ed074488ef77068c8` |
+| 11 | `lemma` | [wordLength_mul_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordMetricNamespacedPublic.lean/declarations/wordlength-mul-le.md) | 122 | `result-track:419be717306fc2dc8d16f22d4de85b930c0734abf51518c53ae70d329e4112f7` |
+| 12 | `def` | [groupNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordMetricNamespacedPublic.lean/declarations/groupnorm.md) | 128 | `declaration-track:5eb9b812c8ee872028847f1982afac49a8f771dc6a72c6677955c087559d781a` |
+| 13 | `def` | [normedGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordMetricNamespacedPublic.lean/declarations/normedgroup.md) | 140 | `declaration-track:1021c6f265336f419b8ac15bfbb9eebc3d5c18156ff3ab40007829889238504d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

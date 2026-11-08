@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/NewtonLow.lean/index.md) · [Full source](../../../../CommutativeAlgebra/NewtonLow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NewtonLow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NewtonLow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [esymm_cons_succ](../../../../CommutativeAlgebra/NewtonLow.lean/declarations/esymm-cons-succ.md) | 5 | `result-track:921c0ea5940e7a4db7aa6a4e30ee584bff758d5de40e71778dc67899d4e952de` |
-| 2 | `lemma` | [esymm_zero](../../../../CommutativeAlgebra/NewtonLow.lean/declarations/esymm-zero.md) | 8 | `result-track:1063ced90d2a2ca19c23c75cc5ef50627594b13816ad9990ae26011d68556a90` |
-| 3 | `lemma` | [newton_low](../../../../CommutativeAlgebra/NewtonLow.lean/declarations/newton-low.md) | 10 | `result-track:8eec02a4acf1fb3d393a97813ea7e8eb0a607bce1fd7f97d39cb81d1542ca5bf` |
+| 1 | `lemma` | [esymm_cons_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NewtonLow.lean/declarations/esymm-cons-succ.md) | 5 | `result-track:921c0ea5940e7a4db7aa6a4e30ee584bff758d5de40e71778dc67899d4e952de` |
+| 2 | `lemma` | [esymm_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NewtonLow.lean/declarations/esymm-zero.md) | 8 | `result-track:1063ced90d2a2ca19c23c75cc5ef50627594b13816ad9990ae26011d68556a90` |
+| 3 | `lemma` | [newton_low](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NewtonLow.lean/declarations/newton-low.md) | 10 | `result-track:8eec02a4acf1fb3d393a97813ea7e8eb0a607bce1fd7f97d39cb81d1542ca5bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightFunctorsNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightFunctorsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightFunctorsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightFunctorsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [lightProfiniteToLightCondSet](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightFunctorsNamespaced.lean/declarations/lightprofinitetolightcondset.md) | 35 | `declaration-track:6fc444f02520ca1008e90a424b8da42c7580fdf877cce48fa58f617176debe6b` |
-| 2 | `abbrev` | [LightProfinite.toCondensed](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightFunctorsNamespaced.lean/declarations/lightprofinite-tocondensed.md) | 39 | `declaration-track:19a3d5e3ced52d7b091bedb9b0b456e630a294907a36dab4080b1b697e96029c` |
-| 3 | `abbrev` | [lightProfiniteToLightCondSetFullyFaithful](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightFunctorsNamespaced.lean/declarations/lightprofinitetolightcondsetfullyfaithful.md) | 43 | `declaration-track:3bc4150b01cb25325444a040f78ec538aac2eb8b376b6f03fd5324c6129bb756` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightFunctorsNamespaced.lean/declarations/instance.md) | 47 | `declaration-track:0410ac334b60f9f02c569f068f8dabd983b5c2aaff45adc9187167e4322664df` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightFunctorsNamespaced.lean/declarations/instance-source-edition-2.md) | 50 | `declaration-track:5a71ac8f8759d0040de36f07d971a26932b8e3068b41b942bcd9bd38d7bb213d` |
+| 1 | `def` | [lightProfiniteToLightCondSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightFunctorsNamespaced.lean/declarations/lightprofinitetolightcondset.md) | 35 | `declaration-track:6fc444f02520ca1008e90a424b8da42c7580fdf877cce48fa58f617176debe6b` |
+| 2 | `abbrev` | [LightProfinite.toCondensed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightFunctorsNamespaced.lean/declarations/lightprofinite-tocondensed.md) | 39 | `declaration-track:19a3d5e3ced52d7b091bedb9b0b456e630a294907a36dab4080b1b697e96029c` |
+| 3 | `abbrev` | [lightProfiniteToLightCondSetFullyFaithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightFunctorsNamespaced.lean/declarations/lightprofinitetolightcondsetfullyfaithful.md) | 43 | `declaration-track:3bc4150b01cb25325444a040f78ec538aac2eb8b376b6f03fd5324c6129bb756` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightFunctorsNamespaced.lean/declarations/instance.md) | 47 | `declaration-track:0410ac334b60f9f02c569f068f8dabd983b5c2aaff45adc9187167e4322664df` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightFunctorsNamespaced.lean/declarations/instance-source-edition-2.md) | 50 | `declaration-track:5a71ac8f8759d0040de36f07d971a26932b8e3068b41b942bcd9bd38d7bb213d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

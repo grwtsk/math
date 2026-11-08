@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/ProperSpacePublic.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/ProperSpacePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/ProperSpacePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/ProperSpacePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [totallyBounded_univ](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/ProperSpacePublic.lean/declarations/totallybounded-univ.md) | 47 | `result-track:938abb3d8783ce889b80947df502d0d581f7fc7ed30b08ad63e161a634f784f9` |
-| 2 | `instance` | [compactSpace](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/ProperSpacePublic.lean/declarations/compactspace.md) | 57 | `declaration-track:e27f6c01266ebd9467329219d5e65434bdf5ffc78c2e30303e1e1f08a7bdbba4` |
-| 3 | `instance` | [(anonymous)](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/ProperSpacePublic.lean/declarations/instance.md) | 66 | `declaration-track:6a88d50df285b952c18e154ed0c6e7e61d6086ef31d8e936d62a004f101a8113` |
+| 1 | `theorem` | [totallyBounded_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/ProperSpacePublic.lean/declarations/totallybounded-univ.md) | 47 | `result-track:938abb3d8783ce889b80947df502d0d581f7fc7ed30b08ad63e161a634f784f9` |
+| 2 | `instance` | [compactSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/ProperSpacePublic.lean/declarations/compactspace.md) | 57 | `declaration-track:e27f6c01266ebd9467329219d5e65434bdf5ffc78c2e30303e1e1f08a7bdbba4` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryLocalFields/ProperSpacePublic.lean/declarations/instance.md) | 66 | `declaration-track:6a88d50df285b952c18e154ed0c6e7e61d6086ef31d8e936d62a004f101a8113` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

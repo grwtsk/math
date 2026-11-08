@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaNamespacedPublicDeltaLocalDecl.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaNamespacedPublicDeltaLocalDecl.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaNamespacedPublicDeltaLocalDecl.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaNamespacedPublicDeltaLocalDecl.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [deltaLocalDecl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaNamespacedPublicDeltaLocalDecl.lean/declarations/deltalocaldecl.md) | 25 | `declaration-track:f2aea68a790fca11965d440297fe4f7f0d5f6cc98848a4881916be6364a1b8ff` |
-| 2 | `def` | [deltaTarget](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaNamespacedPublicDeltaLocalDecl.lean/declarations/deltatarget.md) | 33 | `declaration-track:d87a03c6bf12182c55c37038ee1688f4b8177feafaaa80aaf59b701c4b48553d` |
-| 3 | `def` | [evalDelta](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaNamespacedPublicDeltaLocalDecl.lean/declarations/evaldelta.md) | 42 | `declaration-track:aa9d915aa44e09eaac452134481f6de295cf429e60bddbeb68a8fde966a47e42` |
+| 1 | `def` | [deltaLocalDecl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaNamespacedPublicDeltaLocalDecl.lean/declarations/deltalocaldecl.md) | 25 | `declaration-track:f2aea68a790fca11965d440297fe4f7f0d5f6cc98848a4881916be6364a1b8ff` |
+| 2 | `def` | [deltaTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaNamespacedPublicDeltaLocalDecl.lean/declarations/deltatarget.md) | 33 | `declaration-track:d87a03c6bf12182c55c37038ee1688f4b8177feafaaa80aaf59b701c4b48553d` |
+| 3 | `def` | [evalDelta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaNamespacedPublicDeltaLocalDecl.lean/declarations/evaldelta.md) | 42 | `declaration-track:aa9d915aa44e09eaac452134481f6de295cf429e60bddbeb68a8fde966a47e42` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

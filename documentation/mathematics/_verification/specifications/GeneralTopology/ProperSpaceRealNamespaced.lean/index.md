@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ProperSpaceRealNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ProperSpaceRealNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceRealNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceRealNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,12 +63,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/ProperSpaceRealNamespaced.lean/declarations/instance-source-edition-3.md) | 35 | `declaration-track:73f7a453baf0462666739489504b1fccca6b0afdcf823899079362324e3f246d` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/ProperSpaceRealNamespaced.lean/declarations/instance-source-edition-4.md) | 40 | `declaration-track:cb69ba9108c1baa2f15b57eebc71061ce3dc550544838293710c96cfefd65cd9` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/ProperSpaceRealNamespaced.lean/declarations/instance-source-edition-5.md) | 44 | `declaration-track:ef9617ad0ee10150ac3d80cead087fb78462bfd9d7aed76d2663d6b8e64a5c89` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/ProperSpaceRealNamespaced.lean/declarations/instance.md) | 56 | `declaration-track:5b58d998830fa3b50fa4fc6031a165da314d627c16dcef4248ecdc00a9456b04` |
-| 5 | `instance` | [instProperSpace](../../../../GeneralTopology/ProperSpaceRealNamespaced.lean/declarations/instproperspace.md) | 59 | `declaration-track:82b58c66816a8272814946f80029dd0a82e17f0b5f9505b39a3bfd15b04b2fd2` |
-| 6 | `instance` | [(anonymous)](../../../../GeneralTopology/ProperSpaceRealNamespaced.lean/declarations/instance-source-edition-2.md) | 68 | `declaration-track:5f417a99c3854d7a9726298d88f35c000ff9b350dab976be0d1d2d875aa15f7b` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceRealNamespaced.lean/declarations/instance-source-edition-3.md) | 35 | `declaration-track:73f7a453baf0462666739489504b1fccca6b0afdcf823899079362324e3f246d` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceRealNamespaced.lean/declarations/instance-source-edition-4.md) | 40 | `declaration-track:cb69ba9108c1baa2f15b57eebc71061ce3dc550544838293710c96cfefd65cd9` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceRealNamespaced.lean/declarations/instance-source-edition-5.md) | 44 | `declaration-track:ef9617ad0ee10150ac3d80cead087fb78462bfd9d7aed76d2663d6b8e64a5c89` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceRealNamespaced.lean/declarations/instance.md) | 56 | `declaration-track:5b58d998830fa3b50fa4fc6031a165da314d627c16dcef4248ecdc00a9456b04` |
+| 5 | `instance` | [instProperSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceRealNamespaced.lean/declarations/instproperspace.md) | 59 | `declaration-track:82b58c66816a8272814946f80029dd0a82e17f0b5f9505b39a3bfd15b04b2fd2` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperSpaceRealNamespaced.lean/declarations/instance-source-edition-2.md) | 68 | `declaration-track:5f417a99c3854d7a9726298d88f35c000ff9b350dab976be0d1d2d875aa15f7b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

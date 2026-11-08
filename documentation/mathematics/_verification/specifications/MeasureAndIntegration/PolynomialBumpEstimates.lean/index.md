@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PolynomialBumpEstimates.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PolynomialBumpEstimates.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpEstimates.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpEstimates.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Convolution.PolynomialBumpRegularity`](../../../../MeasureAndIntegration/PolynomialBumpRegularity.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Convolution.PolynomialBumpRegularity`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpRegularity.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.Fourier.FourierTransformDeriv` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.Complex.RealDeriv` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.Calculus.Deriv.Support` — import line 7; external provider; requires a separately pinned dependency.
@@ -62,19 +62,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceFourier_eq_fourier](../../../../MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/sourcefourier-eq-fourier.md) | 30 | `result-track:36cef2188e9121fb8121a7ca9f0fa0f25743f64e780d65bdb4f6750decd05c16` |
-| 2 | `theorem` | [deriv_complexification](../../../../MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/deriv-complexification.md) | 44 | `result-track:ba43e160aaf55fb570321570cdb65cfed425337b0a936ba0ad8245ce5a4ee4dd` |
-| 3 | `theorem` | [sourceFourier_norm_le](../../../../MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/sourcefourier-norm-le.md) | 50 | `result-track:85b6f2707a70e244431ab8ee0ec7a8733e11dfc6396ca1c3464d94a05055ad0b` |
-| 4 | `theorem` | [sourceFourier_deriv](../../../../MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/sourcefourier-deriv.md) | 60 | `result-track:bd622607a819d35234aa6d83321a5b705d40d7a5e5e649384f00a32edc621336` |
-| 5 | `theorem` | [sourceFourier_frequency_bound](../../../../MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/sourcefourier-frequency-bound.md) | 79 | `result-track:55afd4d350831ed8c91effccc5f1b3a212db9f70d5b48a67de45054b8c74f8be` |
-| 6 | `theorem` | [sourceFourier_continuous](../../../../MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/sourcefourier-continuous.md) | 87 | `result-track:f071c9af59692aafdd5c8422fe71d9bc79b4d695a3042d2ca8c775512635228c` |
-| 7 | `theorem` | [log_fourier_majorant](../../../../MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/log-fourier-majorant.md) | 99 | `result-track:4d22e430def0501307aa10e43f179e9fc20451c531d392d224e4577b06d72708` |
-| 8 | `theorem` | [logarithmic_fourier_integrable](../../../../MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/logarithmic-fourier-integrable.md) | 136 | `result-track:6156e682b81e01c1be135cef4da229c08249204d83b0d193f895d7e9d4e9f30c` |
-| 9 | `theorem` | [fourier_normSq_integrable](../../../../MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/fourier-normsq-integrable.md) | 161 | `result-track:c7b6d65d0b32105254de930bdd629fea38786626e91b37b6b1cb97889472fc87` |
-| 10 | `theorem` | [actual_derivative_integrable](../../../../MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/actual-derivative-integrable.md) | 183 | `result-track:72f42766663fa9acf4f1797faba8ea338179942c49fa4d44d392302fa22d68ec` |
-| 11 | `theorem` | [actual_fourier_frequency_bound](../../../../MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/actual-fourier-frequency-bound.md) | 190 | `result-track:58d7eae19f1707664ef44c9412ed25ccc7ceea4c5974255e23a2e252ed7acdda` |
-| 12 | `theorem` | [actual_logarithmic_fourier_integrable](../../../../MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/actual-logarithmic-fourier-integrable.md) | 199 | `result-track:ed00bd57eeeda2afcbf19e049842d08f88af5ba68d129b829b1cc45f7fdb532c` |
-| 13 | `theorem` | [actual_fourier_square_integrable](../../../../MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/actual-fourier-square-integrable.md) | 208 | `result-track:bed0582df3bf10fdcc4b0684e09752e3d96890c04c12f517359d77a12e133b67` |
+| 1 | `theorem` | [sourceFourier_eq_fourier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/sourcefourier-eq-fourier.md) | 30 | `result-track:36cef2188e9121fb8121a7ca9f0fa0f25743f64e780d65bdb4f6750decd05c16` |
+| 2 | `theorem` | [deriv_complexification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/deriv-complexification.md) | 44 | `result-track:ba43e160aaf55fb570321570cdb65cfed425337b0a936ba0ad8245ce5a4ee4dd` |
+| 3 | `theorem` | [sourceFourier_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/sourcefourier-norm-le.md) | 50 | `result-track:85b6f2707a70e244431ab8ee0ec7a8733e11dfc6396ca1c3464d94a05055ad0b` |
+| 4 | `theorem` | [sourceFourier_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/sourcefourier-deriv.md) | 60 | `result-track:bd622607a819d35234aa6d83321a5b705d40d7a5e5e649384f00a32edc621336` |
+| 5 | `theorem` | [sourceFourier_frequency_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/sourcefourier-frequency-bound.md) | 79 | `result-track:55afd4d350831ed8c91effccc5f1b3a212db9f70d5b48a67de45054b8c74f8be` |
+| 6 | `theorem` | [sourceFourier_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/sourcefourier-continuous.md) | 87 | `result-track:f071c9af59692aafdd5c8422fe71d9bc79b4d695a3042d2ca8c775512635228c` |
+| 7 | `theorem` | [log_fourier_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/log-fourier-majorant.md) | 99 | `result-track:4d22e430def0501307aa10e43f179e9fc20451c531d392d224e4577b06d72708` |
+| 8 | `theorem` | [logarithmic_fourier_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/logarithmic-fourier-integrable.md) | 136 | `result-track:6156e682b81e01c1be135cef4da229c08249204d83b0d193f895d7e9d4e9f30c` |
+| 9 | `theorem` | [fourier_normSq_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/fourier-normsq-integrable.md) | 161 | `result-track:c7b6d65d0b32105254de930bdd629fea38786626e91b37b6b1cb97889472fc87` |
+| 10 | `theorem` | [actual_derivative_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/actual-derivative-integrable.md) | 183 | `result-track:72f42766663fa9acf4f1797faba8ea338179942c49fa4d44d392302fa22d68ec` |
+| 11 | `theorem` | [actual_fourier_frequency_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/actual-fourier-frequency-bound.md) | 190 | `result-track:58d7eae19f1707664ef44c9412ed25ccc7ceea4c5974255e23a2e252ed7acdda` |
+| 12 | `theorem` | [actual_logarithmic_fourier_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/actual-logarithmic-fourier-integrable.md) | 199 | `result-track:ed00bd57eeeda2afcbf19e049842d08f88af5ba68d129b829b1cc45f7fdb532c` |
+| 13 | `theorem` | [actual_fourier_square_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpEstimates.lean/declarations/actual-fourier-square-integrable.md) | 208 | `result-track:bed0582df3bf10fdcc4b0684e09752e3d96890c04c12f517359d77a12e133b67` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

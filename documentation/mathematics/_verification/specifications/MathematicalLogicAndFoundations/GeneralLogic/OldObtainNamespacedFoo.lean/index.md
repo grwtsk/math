@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OldObtainNamespacedFoo.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OldObtainNamespacedFoo.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OldObtainNamespacedFoo.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OldObtainNamespacedFoo.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [foo](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OldObtainNamespacedFoo.lean/declarations/foo.md) | 21 | `result-track:4b10bed57389c410afc9877a058a9ef6d182bc901235ea2d58877d7bbe153e89` |
-| 2 | `theorem` | [foo'](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OldObtainNamespacedFoo.lean/declarations/foo-source-edition-2.md) | 35 | `result-track:87333e230936091e870d58498142f606a5dfd76d87a1bd9a2a8e3f7206b0b504` |
-| 3 | `theorem` | [foo''](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OldObtainNamespacedFoo.lean/declarations/foo-source-edition-3.md) | 45 | `result-track:87c1278b3bc3a9ff984810b6c8184287708c60b8090414b7daa10588751bdd2a` |
+| 1 | `theorem` | [foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OldObtainNamespacedFoo.lean/declarations/foo.md) | 21 | `result-track:4b10bed57389c410afc9877a058a9ef6d182bc901235ea2d58877d7bbe153e89` |
+| 2 | `theorem` | [foo'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OldObtainNamespacedFoo.lean/declarations/foo-source-edition-2.md) | 35 | `result-track:87333e230936091e870d58498142f606a5dfd76d87a1bd9a2a8e3f7206b0b504` |
+| 3 | `theorem` | [foo''](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OldObtainNamespacedFoo.lean/declarations/foo-source-edition-3.md) | 45 | `result-track:87c1278b3bc3a9ff984810b6c8184287708c60b8090414b7daa10588751bdd2a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

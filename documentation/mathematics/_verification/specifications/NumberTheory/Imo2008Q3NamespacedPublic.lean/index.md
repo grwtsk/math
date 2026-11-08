@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/Imo2008Q3NamespacedPublic.lean/index.md) · [Full source](../../../../NumberTheory/Imo2008Q3NamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2008Q3NamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2008Q3NamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [p_lemma](../../../../NumberTheory/Imo2008Q3NamespacedPublic.lean/declarations/p-lemma.md) | 46 | `result-track:08c4e0f2826a46a2844065faa04d4d8fb9a819420ba97f8cfb8b35aa55ff3646` |
-| 2 | `theorem` | [imo2008_q3](../../../../NumberTheory/Imo2008Q3NamespacedPublic.lean/declarations/imo2008-q3.md) | 87 | `result-track:eb1d9750e7f9b15953b19a5dc841285af06033f53c09f6e6257727eeff0d2e45` |
+| 1 | `theorem` | [p_lemma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2008Q3NamespacedPublic.lean/declarations/p-lemma.md) | 46 | `result-track:08c4e0f2826a46a2844065faa04d4d8fb9a819420ba97f8cfb8b35aa55ff3646` |
+| 2 | `theorem` | [imo2008_q3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2008Q3NamespacedPublic.lean/declarations/imo2008-q3.md) | 87 | `result-track:eb1d9750e7f9b15953b19a5dc841285af06033f53c09f6e6257727eeff0d2e45` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

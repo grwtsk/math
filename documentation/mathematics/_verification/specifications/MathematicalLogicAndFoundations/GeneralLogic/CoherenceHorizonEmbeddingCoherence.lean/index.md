@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoherenceHorizonEmbeddingCoherence.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoherenceHorizonEmbeddingCoherence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoherenceHorizonEmbeddingCoherence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoherenceHorizonEmbeddingCoherence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HorizonEmbeddingCoherence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoherenceHorizonEmbeddingCoherence.lean/declarations/horizonembeddingcoherence.md) | 9 | `declaration-track:67236a2ddea3c05e81755d69b1420ceb6a48c139af634c373cb49afa23683c4c` |
+| 1 | `structure` | [HorizonEmbeddingCoherence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoherenceHorizonEmbeddingCoherence.lean/declarations/horizonembeddingcoherence.md) | 9 | `declaration-track:67236a2ddea3c05e81755d69b1420ceb6a48c139af634c373cb49afa23683c4c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

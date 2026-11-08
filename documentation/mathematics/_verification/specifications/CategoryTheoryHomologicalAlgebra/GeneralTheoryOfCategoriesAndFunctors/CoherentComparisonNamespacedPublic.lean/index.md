@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentComparisonNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentComparisonNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentComparisonNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentComparisonNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentComparisonNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 41 | `declaration-track:910756e5e0090468ed47b59d0fbabddd2a158dd49097c26e38588dd95f40f478` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentComparisonNamespacedPublic.lean/declarations/instance.md) | 51 | `declaration-track:6d03f63cf17d2aaca245cb49705db7a3538cf629d473b65701f9fd121b89b786` |
-| 3 | `theorem` | [extensive_regular_generate_coherent](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentComparisonNamespacedPublic.lean/declarations/extensive-regular-generate-coherent.md) | 69 | `result-track:9d1e22a329a4eb9e76656c2ea7b51954539347e49e7083e737feca1fa56ae1bf` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentComparisonNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 41 | `declaration-track:910756e5e0090468ed47b59d0fbabddd2a158dd49097c26e38588dd95f40f478` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentComparisonNamespacedPublic.lean/declarations/instance.md) | 51 | `declaration-track:6d03f63cf17d2aaca245cb49705db7a3538cf629d473b65701f9fd121b89b786` |
+| 3 | `theorem` | [extensive_regular_generate_coherent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoherentComparisonNamespacedPublic.lean/declarations/extensive-regular-generate-coherent.md) | 69 | `result-track:9d1e22a329a4eb9e76656c2ea7b51954539347e49e7083e737feca1fa56ae1bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

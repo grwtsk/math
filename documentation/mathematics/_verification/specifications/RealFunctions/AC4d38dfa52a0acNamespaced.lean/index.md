@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AC4d38dfa52a0acNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/AC4d38dfa52a0acNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AC4d38dfa52a0acNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AC4d38dfa52a0acNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coboundary_integral_closedWalk_eq_zero](../../../../RealFunctions/AC4d38dfa52a0acNamespaced.lean/declarations/coboundary-integral-closedwalk-eq-zero.md) | 22 | `result-track:5cef7c879997a56a27cae900f1a9e9ca23a60a8f955b79b15d9d4685f77432e2` |
+| 1 | `theorem` | [coboundary_integral_closedWalk_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AC4d38dfa52a0acNamespaced.lean/declarations/coboundary-integral-closedwalk-eq-zero.md) | 22 | `result-track:5cef7c879997a56a27cae900f1a9e9ca23a60a8f955b79b15d9d4685f77432e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

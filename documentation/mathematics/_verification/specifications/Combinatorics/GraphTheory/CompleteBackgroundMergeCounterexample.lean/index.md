@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `BitMatrix.Surgery.CanonicalRaster` — import line 19; external provider; requires a separately pinned dependency.
-- [Configurations Policies And Exterior Links](../../../../../Combinatorics/GraphTheory/ConfigurationsPoliciesAndExteriorLinks.lean/index.md) — import line 21; pinned internal source present.
+- [Configurations Policies And Exterior Links](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ConfigurationsPoliciesAndExteriorLinks.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [backgroundMergeBefore](../../../../../Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/backgroundmergebefore.md) | 44 | `declaration-track:6a53433488b2fd5901cf7bbbd74c0ffdd590f0418a1605291c4e511836ce5c01` |
-| 2 | `def` | [backgroundMergeAfter](../../../../../Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/backgroundmergeafter.md) | 48 | `declaration-track:182d8ea0df1fc57d4d4c7d4321facc85aa7ef8fbe4d8bfb5610c6d498680db52` |
-| 3 | `def` | [backgroundMergeCut](../../../../../Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/backgroundmergecut.md) | 52 | `declaration-track:eb3f21acee997e9955bb99f0918f40bae583e32cc66256971161c919ff4683e5` |
-| 4 | `def` | [backgroundMergeRepair](../../../../../Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/backgroundmergerepair.md) | 56 | `declaration-track:3e9ecb4a1ed34defaec89b525a41b6f60da1589bfcb096c47ad78855d46955ca` |
-| 5 | `theorem` | [backgroundMergeRepair_apply](../../../../../Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/backgroundmergerepair-apply.md) | 59 | `result-track:b7902a182c99cf2022b649514af3ef7308f0813f4c51ce1007a87a581178bfee` |
-| 6 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/example.md) | 66 | `declaration-track:2042eaebe024ecfd392f2564880b2edffb7c663b6494b3cf5c81c74be60340c1` |
-| 7 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/example-source-edition-2.md) | 72 | `declaration-track:45e0cec90bd2dfe7806a8a3b6ea1d6e2dc765b314ece4df5e06a2c412372c082` |
-| 8 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/example-source-edition-6.md) | 75 | `declaration-track:8b6c7e56004616cb05a1b2fb515fc074c414c40fadb619c4e0fb818d79e974e3` |
-| 9 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/example-source-edition-4.md) | 81 | `declaration-track:7f2ebbf9d22648dfe6ef01c81051a847e106e81639bdfbd1802cb9ae7c3765ea` |
-| 10 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/example-source-edition-7.md) | 87 | `declaration-track:e8a570bfdcd08d2e7acbd4afd5cf198632f0365155a2b65d3ad00040dc303548` |
-| 11 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/example-source-edition-5.md) | 97 | `declaration-track:897dd64bbb022d876e4da2e5deebade83ae23032cd6ebdb13e47abb0adafd218` |
-| 12 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/example-source-edition-3.md) | 106 | `declaration-track:559e37bdaafcf42eb35e6e4d890cbe64dc42a6abb921bff590d943834f582190` |
+| 1 | `def` | [backgroundMergeBefore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/backgroundmergebefore.md) | 44 | `declaration-track:6a53433488b2fd5901cf7bbbd74c0ffdd590f0418a1605291c4e511836ce5c01` |
+| 2 | `def` | [backgroundMergeAfter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/backgroundmergeafter.md) | 48 | `declaration-track:182d8ea0df1fc57d4d4c7d4321facc85aa7ef8fbe4d8bfb5610c6d498680db52` |
+| 3 | `def` | [backgroundMergeCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/backgroundmergecut.md) | 52 | `declaration-track:eb3f21acee997e9955bb99f0918f40bae583e32cc66256971161c919ff4683e5` |
+| 4 | `def` | [backgroundMergeRepair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/backgroundmergerepair.md) | 56 | `declaration-track:3e9ecb4a1ed34defaec89b525a41b6f60da1589bfcb096c47ad78855d46955ca` |
+| 5 | `theorem` | [backgroundMergeRepair_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/backgroundmergerepair-apply.md) | 59 | `result-track:b7902a182c99cf2022b649514af3ef7308f0813f4c51ce1007a87a581178bfee` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/example.md) | 66 | `declaration-track:2042eaebe024ecfd392f2564880b2edffb7c663b6494b3cf5c81c74be60340c1` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/example-source-edition-2.md) | 72 | `declaration-track:45e0cec90bd2dfe7806a8a3b6ea1d6e2dc765b314ece4df5e06a2c412372c082` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/example-source-edition-6.md) | 75 | `declaration-track:8b6c7e56004616cb05a1b2fb515fc074c414c40fadb619c4e0fb818d79e974e3` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/example-source-edition-4.md) | 81 | `declaration-track:7f2ebbf9d22648dfe6ef01c81051a847e106e81639bdfbd1802cb9ae7c3765ea` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/example-source-edition-7.md) | 87 | `declaration-track:e8a570bfdcd08d2e7acbd4afd5cf198632f0365155a2b65d3ad00040dc303548` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/example-source-edition-5.md) | 97 | `declaration-track:897dd64bbb022d876e4da2e5deebade83ae23032cd6ebdb13e47abb0adafd218` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteBackgroundMergeCounterexample.lean/declarations/example-source-edition-3.md) | 106 | `declaration-track:559e37bdaafcf42eb35e6e4d890cbe64dc42a6abb921bff590d943834f582190` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

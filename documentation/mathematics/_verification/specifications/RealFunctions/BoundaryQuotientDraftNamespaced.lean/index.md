@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/BoundaryQuotientDraftNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/BoundaryQuotientDraftNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BoundaryQuotientDraftNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BoundaryQuotientDraftNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [boundary_quotient_factor_draft](../../../../RealFunctions/BoundaryQuotientDraftNamespaced.lean/declarations/boundary-quotient-factor-draft.md) | 25 | `result-track:8c74f5102f9c57e358b7ac3a0273d5e5ccbb8ed4901c6e25940fbe06bafc2545` |
-| 2 | `theorem` | [boundary_quotient_of_succ_order_draft](../../../../RealFunctions/BoundaryQuotientDraftNamespaced.lean/declarations/boundary-quotient-of-succ-order-draft.md) | 65 | `result-track:c5537cb619dcbee7a8c6d05c585e1d44f90e0bbca49c27779fa7c4895d6f710f` |
-| 3 | `theorem` | [boundary_quotient_simple_draft](../../../../RealFunctions/BoundaryQuotientDraftNamespaced.lean/declarations/boundary-quotient-simple-draft.md) | 87 | `result-track:6363288af30486593a446ff3333676c759eedc1c01f5623f9c11d655b2e20b2a` |
-| 4 | `example` | [(anonymous)](../../../../RealFunctions/BoundaryQuotientDraftNamespaced.lean/declarations/example-source-edition-2.md) | 96 | `declaration-track:85a45d6bb92ce34d21ea9e25ebc79655b704883befd9cb0ad6933e304e235400` |
-| 5 | `example` | [(anonymous)](../../../../RealFunctions/BoundaryQuotientDraftNamespaced.lean/declarations/example.md) | 103 | `declaration-track:4561b6e31f3fadab2ffdd8c4e161e576751161507ff6a92bc92a06445330c12b` |
-| 6 | `example` | [(anonymous)](../../../../RealFunctions/BoundaryQuotientDraftNamespaced.lean/declarations/example-source-edition-3.md) | 110 | `declaration-track:e94ccce25b013221532461d83668e8ed4ac32e1ea0831d685f31da2859813288` |
+| 1 | `theorem` | [boundary_quotient_factor_draft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BoundaryQuotientDraftNamespaced.lean/declarations/boundary-quotient-factor-draft.md) | 25 | `result-track:8c74f5102f9c57e358b7ac3a0273d5e5ccbb8ed4901c6e25940fbe06bafc2545` |
+| 2 | `theorem` | [boundary_quotient_of_succ_order_draft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BoundaryQuotientDraftNamespaced.lean/declarations/boundary-quotient-of-succ-order-draft.md) | 65 | `result-track:c5537cb619dcbee7a8c6d05c585e1d44f90e0bbca49c27779fa7c4895d6f710f` |
+| 3 | `theorem` | [boundary_quotient_simple_draft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BoundaryQuotientDraftNamespaced.lean/declarations/boundary-quotient-simple-draft.md) | 87 | `result-track:6363288af30486593a446ff3333676c759eedc1c01f5623f9c11d655b2e20b2a` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BoundaryQuotientDraftNamespaced.lean/declarations/example-source-edition-2.md) | 96 | `declaration-track:85a45d6bb92ce34d21ea9e25ebc79655b704883befd9cb0ad6933e304e235400` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BoundaryQuotientDraftNamespaced.lean/declarations/example.md) | 103 | `declaration-track:4561b6e31f3fadab2ffdd8c4e161e576751161507ff6a92bc92a06445330c12b` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BoundaryQuotientDraftNamespaced.lean/declarations/example-source-edition-3.md) | 110 | `declaration-track:e94ccce25b013221532461d83668e8ed4ac32e1ea0831d685f31da2859813288` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

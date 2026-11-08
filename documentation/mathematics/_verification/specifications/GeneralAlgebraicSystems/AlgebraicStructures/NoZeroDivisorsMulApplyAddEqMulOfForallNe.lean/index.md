@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsMulApplyAddEqMulOfForallNe.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsMulApplyAddEqMulOfForallNe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsMulApplyAddEqMulOfForallNe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsMulApplyAddEqMulOfForallNe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mul_apply_add_eq_mul_of_forall_ne](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsMulApplyAddEqMulOfForallNe.lean/declarations/mul-apply-add-eq-mul-of-forall-ne.md) | 53 | `result-track:5795f6785c676eb94cc1fff0b010d3ab8a4d9fe0dacdc8446ed35257f45c548d` |
-| 2 | `theorem` | [Left.exists_add_of_mem_support_single_mul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsMulApplyAddEqMulOfForallNe.lean/declarations/left-exists-add-of-mem-support-single-mul.md) | 70 | `result-track:3598c164e8cc3df60501c203c62dee3df2edc0f138498bcf276888e5adba9f54` |
-| 3 | `theorem` | [Right.exists_add_of_mem_support_single_mul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsMulApplyAddEqMulOfForallNe.lean/declarations/right-exists-add-of-mem-support-single-mul.md) | 77 | `result-track:b022562999af52e7bf1b9d282fb7bfdcbeb6ca2c380d7f85ab3787a531f0d5db` |
-| 4 | `theorem` | [NoZeroDivisors.of_left_ordered](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsMulApplyAddEqMulOfForallNe.lean/declarations/nozerodivisors-of-left-ordered.md) | 86 | `result-track:d062aba5e8a53cbe9e8945682b78ecd04bcf531e78d90a157a17e3142588ee46` |
-| 5 | `theorem` | [NoZeroDivisors.of_right_ordered](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsMulApplyAddEqMulOfForallNe.lean/declarations/nozerodivisors-of-right-ordered.md) | 124 | `result-track:6146208e91de6b8468973eef7b6e3363f0234be914a4c66e9ab4466f00519524` |
+| 1 | `theorem` | [mul_apply_add_eq_mul_of_forall_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsMulApplyAddEqMulOfForallNe.lean/declarations/mul-apply-add-eq-mul-of-forall-ne.md) | 53 | `result-track:5795f6785c676eb94cc1fff0b010d3ab8a4d9fe0dacdc8446ed35257f45c548d` |
+| 2 | `theorem` | [Left.exists_add_of_mem_support_single_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsMulApplyAddEqMulOfForallNe.lean/declarations/left-exists-add-of-mem-support-single-mul.md) | 70 | `result-track:3598c164e8cc3df60501c203c62dee3df2edc0f138498bcf276888e5adba9f54` |
+| 3 | `theorem` | [Right.exists_add_of_mem_support_single_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsMulApplyAddEqMulOfForallNe.lean/declarations/right-exists-add-of-mem-support-single-mul.md) | 77 | `result-track:b022562999af52e7bf1b9d282fb7bfdcbeb6ca2c380d7f85ab3787a531f0d5db` |
+| 4 | `theorem` | [NoZeroDivisors.of_left_ordered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsMulApplyAddEqMulOfForallNe.lean/declarations/nozerodivisors-of-left-ordered.md) | 86 | `result-track:d062aba5e8a53cbe9e8945682b78ecd04bcf531e78d90a157a17e3142588ee46` |
+| 5 | `theorem` | [NoZeroDivisors.of_right_ordered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroDivisorsMulApplyAddEqMulOfForallNe.lean/declarations/nozerodivisors-of-right-ordered.md) | 124 | `result-track:6146208e91de6b8468973eef7b6e3363f0234be914a4c66e9ab4466f00519524` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

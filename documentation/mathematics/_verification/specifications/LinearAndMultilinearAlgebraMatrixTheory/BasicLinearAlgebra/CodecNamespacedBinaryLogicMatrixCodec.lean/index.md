@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CodecNamespacedBinaryLogicMatrixCodec.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CodecNamespacedBinaryLogicMatrixCodec.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CodecNamespacedBinaryLogicMatrixCodec.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CodecNamespacedBinaryLogicMatrixCodec.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [BinaryLogicMatrixCodec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CodecNamespacedBinaryLogicMatrixCodec.lean/declarations/binarylogicmatrixcodec.md) | 13 | `declaration-track:087bc42c67ea8da1d22dd556be2e167ec43c3127070df5299b80404de9d43f6b` |
-| 2 | `def` | [encodeSigma](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CodecNamespacedBinaryLogicMatrixCodec.lean/declarations/encodesigma.md) | 22 | `declaration-track:26a7964d8629a4d9d71e33004c8e5accd22f6203895bfe29ad6d5875e0513ccd` |
-| 3 | `theorem` | [roundTrip_checked](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CodecNamespacedBinaryLogicMatrixCodec.lean/declarations/roundtrip-checked.md) | 26 | `result-track:ff5ae4a24c6d99d2a38d956e5e407c64086f1ea12afb715e9f85e0f5add5e048` |
+| 1 | `class` | [BinaryLogicMatrixCodec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CodecNamespacedBinaryLogicMatrixCodec.lean/declarations/binarylogicmatrixcodec.md) | 13 | `declaration-track:087bc42c67ea8da1d22dd556be2e167ec43c3127070df5299b80404de9d43f6b` |
+| 2 | `def` | [encodeSigma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CodecNamespacedBinaryLogicMatrixCodec.lean/declarations/encodesigma.md) | 22 | `declaration-track:26a7964d8629a4d9d71e33004c8e5accd22f6203895bfe29ad6d5875e0513ccd` |
+| 3 | `theorem` | [roundTrip_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CodecNamespacedBinaryLogicMatrixCodec.lean/declarations/roundtrip-checked.md) | 26 | `result-track:ff5ae4a24c6d99d2a38d956e5e407c64086f1ea12afb715e9f85e0f5add5e048` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

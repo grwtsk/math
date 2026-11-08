@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentationHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentationHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentationHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentationHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IncrementalComposition`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalComposition.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IncrementalComposition`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalComposition.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [firstBatch](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentationHistoricalSourceEdition2.lean/declarations/firstbatch.md) | 7 | `declaration-track:b35f33cc15f90fc3248d640a8dc2dea711c06c242da4d3bcf70495a8317f5867` |
-| 2 | `def` | [secondBatch](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentationHistoricalSourceEdition2.lean/declarations/secondbatch.md) | 8 | `declaration-track:6ce4a2c7da6947f2c9e7b6f02b13a2fa092261c372bc2ef6badd9c84b75f2cc7` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentationHistoricalSourceEdition2.lean/declarations/example.md) | 11 | `declaration-track:33b4ff448ddb6ee7ba826f3444763afe9609dac714612d86103e9b07a494801e` |
+| 1 | `def` | [firstBatch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentationHistoricalSourceEdition2.lean/declarations/firstbatch.md) | 7 | `declaration-track:b35f33cc15f90fc3248d640a8dc2dea711c06c242da4d3bcf70495a8317f5867` |
+| 2 | `def` | [secondBatch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentationHistoricalSourceEdition2.lean/declarations/secondbatch.md) | 8 | `declaration-track:6ce4a2c7da6947f2c9e7b6f02b13a2fa092261c372bc2ef6badd9c84b75f2cc7` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentationHistoricalSourceEdition2.lean/declarations/example.md) | 11 | `declaration-track:33b4ff448ddb6ee7ba826f3444763afe9609dac714612d86103e9b07a494801e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

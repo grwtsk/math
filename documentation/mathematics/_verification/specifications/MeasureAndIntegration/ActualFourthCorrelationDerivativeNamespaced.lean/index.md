@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualFourthCorrelationDerivativeNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualFourthCorrelationDerivativeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualFourthCorrelationDerivativeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualFourthCorrelationDerivativeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_first_derivative_bounded](../../../../MeasureAndIntegration/ActualFourthCorrelationDerivativeNamespaced.lean/declarations/actual-first-derivative-bounded.md) | 37 | `result-track:a468522420b7ec6a7cc9bc8b3b64ac2dd810418ce83a5259724a723ae1322b50` |
-| 2 | `theorem` | [actual_translate_product_hasDerivAt](../../../../MeasureAndIntegration/ActualFourthCorrelationDerivativeNamespaced.lean/declarations/actual-translate-product-hasderivat.md) | 56 | `result-track:9f119cd0365a9d3b652447760806c1e5f800cf57d2fa2a28f48680312bf44350` |
-| 3 | `theorem` | [actual_translate_add_product_hasDerivAt](../../../../MeasureAndIntegration/ActualFourthCorrelationDerivativeNamespaced.lean/declarations/actual-translate-add-product-hasderivat.md) | 106 | `result-track:0571b75bb8772cb3af13401646af9e4008f5c9c40026472f403e39c3fbc5459f` |
-| 4 | `theorem` | [actual_correlation_third_derivative](../../../../MeasureAndIntegration/ActualFourthCorrelationDerivativeNamespaced.lean/declarations/actual-correlation-third-derivative.md) | 116 | `result-track:db8a85fdda3c75e5ce3ae2bdae42b61cc69c35ae10d111fec722558bebb556d6` |
-| 5 | `theorem` | [actual_correlation_fourth_derivative](../../../../MeasureAndIntegration/ActualFourthCorrelationDerivativeNamespaced.lean/declarations/actual-correlation-fourth-derivative.md) | 135 | `result-track:09b9b290cd685f33286afabc9139097c7afad0642421056f6a254c44c7778013` |
-| 6 | `theorem` | [actual_correlation_fourth_derivative_eq](../../../../MeasureAndIntegration/ActualFourthCorrelationDerivativeNamespaced.lean/declarations/actual-correlation-fourth-derivative-eq.md) | 153 | `result-track:453364b545693babe641f279d4f0b2f1141bd8409c2ae3294a8861af5fc2a395` |
+| 1 | `theorem` | [actual_first_derivative_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualFourthCorrelationDerivativeNamespaced.lean/declarations/actual-first-derivative-bounded.md) | 37 | `result-track:a468522420b7ec6a7cc9bc8b3b64ac2dd810418ce83a5259724a723ae1322b50` |
+| 2 | `theorem` | [actual_translate_product_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualFourthCorrelationDerivativeNamespaced.lean/declarations/actual-translate-product-hasderivat.md) | 56 | `result-track:9f119cd0365a9d3b652447760806c1e5f800cf57d2fa2a28f48680312bf44350` |
+| 3 | `theorem` | [actual_translate_add_product_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualFourthCorrelationDerivativeNamespaced.lean/declarations/actual-translate-add-product-hasderivat.md) | 106 | `result-track:0571b75bb8772cb3af13401646af9e4008f5c9c40026472f403e39c3fbc5459f` |
+| 4 | `theorem` | [actual_correlation_third_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualFourthCorrelationDerivativeNamespaced.lean/declarations/actual-correlation-third-derivative.md) | 116 | `result-track:db8a85fdda3c75e5ce3ae2bdae42b61cc69c35ae10d111fec722558bebb556d6` |
+| 5 | `theorem` | [actual_correlation_fourth_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualFourthCorrelationDerivativeNamespaced.lean/declarations/actual-correlation-fourth-derivative.md) | 135 | `result-track:09b9b290cd685f33286afabc9139097c7afad0642421056f6a254c44c7778013` |
+| 6 | `theorem` | [actual_correlation_fourth_derivative_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualFourthCorrelationDerivativeNamespaced.lean/declarations/actual-correlation-fourth-derivative-eq.md) | 153 | `result-track:453364b545693babe641f279d4f0b2f1141bd8409c2ae3294a8861af5fc2a395` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

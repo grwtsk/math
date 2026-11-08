@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanRecursorContracts.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanRecursorContracts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanRecursorContracts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanRecursorContracts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sameRule](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanRecursorContracts.lean/declarations/samerule.md) | 10 | `declaration-track:e072991f13df83c816e5977649fc5d2db8a3da27797bb67d0e2861d697a41f6b` |
-| 2 | `def` | [sameRecursor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanRecursorContracts.lean/declarations/samerecursor.md) | 13 | `declaration-track:64bb27822abd0c8f15ede62ea2e5bbc48c29a1a896baf968bd3137794a0f9da9` |
-| 3 | `def` | [majorOwner?](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanRecursorContracts.lean/declarations/majorowner.md) | 20 | `declaration-track:bdc160d1398b82d0b271215b4ea9aadfea7f833ee925bd24d1faf56493300003` |
-| 4 | `def` | [guardRecursor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanRecursorContracts.lean/declarations/guardrecursor.md) | 33 | `declaration-track:6efd09e303614ad41c14172774cb26507f371cb263b8ac5e5738a8f2f2ad8e81` |
-| 5 | `def` | [association](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanRecursorContracts.lean/declarations/association.md) | 40 | `declaration-track:749fe9d6cf2b9a8c934c18c2ac57cc027ab487b8a54554c16c75ec46dbb5e6c9` |
-| 6 | `def` | [metadata](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanRecursorContracts.lean/declarations/metadata.md) | 57 | `declaration-track:32d1f1bf0c5ce7dd6c34fe3912d5320d45975ff036f46f157d9bd43826653f55` |
-| 7 | `def` | [observe](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanRecursorContracts.lean/declarations/observe.md) | 63 | `declaration-track:4d3e9a82b13df23d5b7222cb535cbc5e3f24a7b15430f3e2847a2d5e513349f6` |
+| 1 | `def` | [sameRule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanRecursorContracts.lean/declarations/samerule.md) | 10 | `declaration-track:e072991f13df83c816e5977649fc5d2db8a3da27797bb67d0e2861d697a41f6b` |
+| 2 | `def` | [sameRecursor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanRecursorContracts.lean/declarations/samerecursor.md) | 13 | `declaration-track:64bb27822abd0c8f15ede62ea2e5bbc48c29a1a896baf968bd3137794a0f9da9` |
+| 3 | `def` | [majorOwner?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanRecursorContracts.lean/declarations/majorowner.md) | 20 | `declaration-track:bdc160d1398b82d0b271215b4ea9aadfea7f833ee925bd24d1faf56493300003` |
+| 4 | `def` | [guardRecursor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanRecursorContracts.lean/declarations/guardrecursor.md) | 33 | `declaration-track:6efd09e303614ad41c14172774cb26507f371cb263b8ac5e5738a8f2f2ad8e81` |
+| 5 | `def` | [association](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanRecursorContracts.lean/declarations/association.md) | 40 | `declaration-track:749fe9d6cf2b9a8c934c18c2ac57cc027ab487b8a54554c16c75ec46dbb5e6c9` |
+| 6 | `def` | [metadata](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanRecursorContracts.lean/declarations/metadata.md) | 57 | `declaration-track:32d1f1bf0c5ce7dd6c34fe3912d5320d45975ff036f46f157d9bd43826653f55` |
+| 7 | `def` | [observe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanRecursorContracts.lean/declarations/observe.md) | 63 | `declaration-track:4d3e9a82b13df23d5b7222cb535cbc5e3f24a7b15430f3e2847a2d5e513349f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

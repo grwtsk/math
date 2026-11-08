@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerCertifiedTransition.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerCertifiedTransition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerCertifiedTransition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerCertifiedTransition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedTransition](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerCertifiedTransition.lean/declarations/certifiedtransition.md) | 7 | `declaration-track:19b0a8d3f2a77c1331d17c77bc76d56180f7bc0fb397772de7d11cb053f7a937` |
-| 2 | `structure` | [CertificateLedger](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerCertifiedTransition.lean/declarations/certificateledger.md) | 13 | `declaration-track:bf43af04179910cba64d21c51f82055c4701bec4310d1f5c14e8b860a5fce8cc` |
-| 3 | `def` | [appendCertified](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerCertifiedTransition.lean/declarations/appendcertified.md) | 20 | `declaration-track:d9eb7b96fbd246f67de90092ac09d99b5956cb78f17d68cb72f65e3f04d4aab8` |
+| 1 | `structure` | [CertifiedTransition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerCertifiedTransition.lean/declarations/certifiedtransition.md) | 7 | `declaration-track:19b0a8d3f2a77c1331d17c77bc76d56180f7bc0fb397772de7d11cb053f7a937` |
+| 2 | `structure` | [CertificateLedger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerCertifiedTransition.lean/declarations/certificateledger.md) | 13 | `declaration-track:bf43af04179910cba64d21c51f82055c4701bec4310d1f5c14e8b860a5fce8cc` |
+| 3 | `def` | [appendCertified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerCertifiedTransition.lean/declarations/appendcertified.md) | 20 | `declaration-track:d9eb7b96fbd246f67de90092ac09d99b5956cb78f17d68cb72f65e3f04d4aab8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

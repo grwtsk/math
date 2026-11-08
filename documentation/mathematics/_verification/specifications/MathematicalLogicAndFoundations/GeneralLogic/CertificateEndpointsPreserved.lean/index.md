@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificateEndpointsPreserved.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificateEndpointsPreserved.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificateEndpointsPreserved.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificateEndpointsPreserved.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [EndpointsPreserved](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificateEndpointsPreserved.lean/declarations/endpointspreserved.md) | 8 | `declaration-track:1ed40d489908b477df6c60965f5efa7b164bdafb1138bf9c0b2756c3a18f9a1a` |
-| 2 | `def` | [endpointCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificateEndpointsPreserved.lean/declarations/endpointcertificate.md) | 11 | `declaration-track:87f5d01618467ab5a54a3d5ff2f2ef8cee237685cdd05ba65e6dbba78fcb7f2d` |
+| 1 | `def` | [EndpointsPreserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificateEndpointsPreserved.lean/declarations/endpointspreserved.md) | 8 | `declaration-track:1ed40d489908b477df6c60965f5efa7b164bdafb1138bf9c0b2756c3a18f9a1a` |
+| 2 | `def` | [endpointCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificateEndpointsPreserved.lean/declarations/endpointcertificate.md) | 11 | `declaration-track:87f5d01618467ab5a54a3d5ff2f2ef8cee237685cdd05ba65e6dbba78fcb7f2d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

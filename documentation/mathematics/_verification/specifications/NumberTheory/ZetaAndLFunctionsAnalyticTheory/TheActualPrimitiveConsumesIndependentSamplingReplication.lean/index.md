@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualPrimitiveConsumesIndependentSamplingReplication.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualPrimitiveConsumesIndependentSamplingReplication.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualPrimitiveConsumesIndependentSamplingReplication.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualPrimitiveConsumesIndependentSamplingReplication.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [literal_primitive_sampling_mean](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualPrimitiveConsumesIndependentSamplingReplication.lean/declarations/literal-primitive-sampling-mean.md) | 22 | `result-track:c9828b15d79093cfa0284352bc740538b2743da26b6b703878feff9826f11732` |
-| 2 | `theorem` | [literal_primitive_sampling_mass](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualPrimitiveConsumesIndependentSamplingReplication.lean/declarations/literal-primitive-sampling-mass.md) | 26 | `result-track:13ed27c08e78975763baf93cbcff3247d0487615643a17a36bec493d78c0acf5` |
-| 3 | `theorem` | [actual_primitive_sampling_unbiased](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualPrimitiveConsumesIndependentSamplingReplication.lean/declarations/actual-primitive-sampling-unbiased.md) | 30 | `result-track:c4cb277e2f94f98d99a5c5f806de3af821f310bbff41aefe4f40255ed509c760` |
-| 4 | `theorem` | [actual_primitive_replication_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualPrimitiveConsumesIndependentSamplingReplication.lean/declarations/actual-primitive-replication-lower.md) | 36 | `result-track:e93d37b12827e105a2161d98643b4f52c0fb834de47ef1aed02614c3a946abcb` |
-| 5 | `theorem` | [conditional_actual_primitive_sample_count](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualPrimitiveConsumesIndependentSamplingReplication.lean/declarations/conditional-actual-primitive-sample-count.md) | 44 | `result-track:286f3b8a7a67c6c1d18566e0b808eebb43c6d53d95a2e16c58407042f188e23e` |
+| 1 | `theorem` | [literal_primitive_sampling_mean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualPrimitiveConsumesIndependentSamplingReplication.lean/declarations/literal-primitive-sampling-mean.md) | 22 | `result-track:c9828b15d79093cfa0284352bc740538b2743da26b6b703878feff9826f11732` |
+| 2 | `theorem` | [literal_primitive_sampling_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualPrimitiveConsumesIndependentSamplingReplication.lean/declarations/literal-primitive-sampling-mass.md) | 26 | `result-track:13ed27c08e78975763baf93cbcff3247d0487615643a17a36bec493d78c0acf5` |
+| 3 | `theorem` | [actual_primitive_sampling_unbiased](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualPrimitiveConsumesIndependentSamplingReplication.lean/declarations/actual-primitive-sampling-unbiased.md) | 30 | `result-track:c4cb277e2f94f98d99a5c5f806de3af821f310bbff41aefe4f40255ed509c760` |
+| 4 | `theorem` | [actual_primitive_replication_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualPrimitiveConsumesIndependentSamplingReplication.lean/declarations/actual-primitive-replication-lower.md) | 36 | `result-track:e93d37b12827e105a2161d98643b4f52c0fb834de47ef1aed02614c3a946abcb` |
+| 5 | `theorem` | [conditional_actual_primitive_sample_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualPrimitiveConsumesIndependentSamplingReplication.lean/declarations/conditional-actual-primitive-sample-count.md) | 44 | `result-track:286f3b8a7a67c6c1d18566e0b808eebb43c6d53d95a2e16c58407042f188e23e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

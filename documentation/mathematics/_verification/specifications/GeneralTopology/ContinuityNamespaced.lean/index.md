@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ContinuityNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ContinuityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ContinuitySignature](../../../../GeneralTopology/ContinuityNamespaced.lean/declarations/continuitysignature.md) | 24 | `declaration-track:5c88b93f6b9b94d8d44a60c7b600508015d8633f5d00343da6712a1e629307a4` |
-| 2 | `def` | [SequentialCompleteness](../../../../GeneralTopology/ContinuityNamespaced.lean/declarations/sequentialcompleteness.md) | 29 | `declaration-track:3b45d0e8d066043173335772e91fa28047ff4e8de2dec7a9142e5a605905ff82` |
-| 3 | `def` | [SequentialLimitUniqueness](../../../../GeneralTopology/ContinuityNamespaced.lean/declarations/sequentiallimituniqueness.md) | 37 | `declaration-track:f8a78c29f9202dfe884d7458d6322c2e5d16de48cb0dd5090cb6b7aabeb87f89` |
+| 1 | `structure` | [ContinuitySignature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuityNamespaced.lean/declarations/continuitysignature.md) | 24 | `declaration-track:5c88b93f6b9b94d8d44a60c7b600508015d8633f5d00343da6712a1e629307a4` |
+| 2 | `def` | [SequentialCompleteness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuityNamespaced.lean/declarations/sequentialcompleteness.md) | 29 | `declaration-track:3b45d0e8d066043173335772e91fa28047ff4e8de2dec7a9142e5a605905ff82` |
+| 3 | `def` | [SequentialLimitUniqueness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuityNamespaced.lean/declarations/sequentiallimituniqueness.md) | 37 | `declaration-track:f8a78c29f9202dfe884d7458d6322c2e5d16de48cb0dd5090cb6b7aabeb87f89` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

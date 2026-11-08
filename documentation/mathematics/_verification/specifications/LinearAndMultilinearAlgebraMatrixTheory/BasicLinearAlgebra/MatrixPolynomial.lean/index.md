@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixPolynomial.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixPolynomial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixPolynomial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixPolynomial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [natDegree_det_X_add_C_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixPolynomial.lean/declarations/natdegree-det-x-add-c-le.md) | 36 | `result-track:812f367594e10cdfd661275454eacdb4288db3e50449f190c9a1a786be53ba22` |
-| 2 | `theorem` | [coeff_det_X_add_C_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixPolynomial.lean/declarations/coeff-det-x-add-c-zero.md) | 58 | `result-track:3748d4fb3813c48121cd16b8bd28d92e23f7ebf7e46c4f7154aec271c8c9f12a` |
-| 3 | `theorem` | [coeff_det_X_add_C_card](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixPolynomial.lean/declarations/coeff-det-x-add-c-card.md) | 68 | `result-track:a657f60ddc9ec0849fd187019ce75f3cce3b5f8ab29ff06a0a4128e41d2f1f9c` |
-| 4 | `theorem` | [leadingCoeff_det_X_one_add_C](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixPolynomial.lean/declarations/leadingcoeff-det-x-one-add-c.md) | 83 | `result-track:0ec94696039f4e5fd5f8994d075d5af6c38d7f91bd56d8ec9d6e50db7dd319da` |
+| 1 | `theorem` | [natDegree_det_X_add_C_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixPolynomial.lean/declarations/natdegree-det-x-add-c-le.md) | 36 | `result-track:812f367594e10cdfd661275454eacdb4288db3e50449f190c9a1a786be53ba22` |
+| 2 | `theorem` | [coeff_det_X_add_C_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixPolynomial.lean/declarations/coeff-det-x-add-c-zero.md) | 58 | `result-track:3748d4fb3813c48121cd16b8bd28d92e23f7ebf7e46c4f7154aec271c8c9f12a` |
+| 3 | `theorem` | [coeff_det_X_add_C_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixPolynomial.lean/declarations/coeff-det-x-add-c-card.md) | 68 | `result-track:a657f60ddc9ec0849fd187019ce75f3cce3b5f8ab29ff06a0a4128e41d2f1f9c` |
+| 4 | `theorem` | [leadingCoeff_det_X_one_add_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixPolynomial.lean/declarations/leadingcoeff-det-x-one-add-c.md) | 83 | `result-track:0ec94696039f4e5fd5f8994d075d5af6c38d7f91bd56d8ec9d6e50db7dd319da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

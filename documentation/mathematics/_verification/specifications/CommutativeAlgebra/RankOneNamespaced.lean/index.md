@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RankOneNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RankOneNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankOneNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankOneNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [RankOne](../../../../CommutativeAlgebra/RankOneNamespaced.lean/declarations/rankone.md) | 43 | `declaration-track:4d1b8fea612ecb5d1985989d036217686c0d2487d05a8bad825cce693795b4c5` |
-| 2 | `lemma` | [strictMono](../../../../CommutativeAlgebra/RankOneNamespaced.lean/declarations/strictmono.md) | 53 | `result-track:bbdc0df9bc96caa25eb9e9468a5b2b5dde95e944f26c3ea58427bb124de94d55` |
-| 3 | `lemma` | [nontrivial](../../../../CommutativeAlgebra/RankOneNamespaced.lean/declarations/nontrivial.md) | 55 | `result-track:8323eeba36bc76fbcd391ed712f2a447fb63b9e0cdea4383565e1c9b0a0fbb69` |
-| 4 | `theorem` | [zero_of_hom_zero](../../../../CommutativeAlgebra/RankOneNamespaced.lean/declarations/zero-of-hom-zero.md) | 59 | `result-track:5e0d6e84faac3be48404e0455e7dea594bb205610e0682748cf23e5d301c1a30` |
-| 5 | `theorem` | [hom_eq_zero_iff](../../../../CommutativeAlgebra/RankOneNamespaced.lean/declarations/hom-eq-zero-iff.md) | 67 | `result-track:e0d3536086459c95dea322a82faf92afb8bda8730ea264546fd1da07f29a8616` |
-| 6 | `def` | [unit](../../../../CommutativeAlgebra/RankOneNamespaced.lean/declarations/unit.md) | 71 | `declaration-track:c2579a3042de3f1f07466c2de0b8ef3f04390b8e2646ea56869b2e1d7f04ffb0` |
-| 7 | `theorem` | [unit_ne_one](../../../../CommutativeAlgebra/RankOneNamespaced.lean/declarations/unit-ne-one.md) | 75 | `result-track:a50c619a398f294554fdda8a9d7b1fb81a1ce240e24da07bb077a8fe2b2be5b2` |
+| 1 | `class` | [RankOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankOneNamespaced.lean/declarations/rankone.md) | 43 | `declaration-track:4d1b8fea612ecb5d1985989d036217686c0d2487d05a8bad825cce693795b4c5` |
+| 2 | `lemma` | [strictMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankOneNamespaced.lean/declarations/strictmono.md) | 53 | `result-track:bbdc0df9bc96caa25eb9e9468a5b2b5dde95e944f26c3ea58427bb124de94d55` |
+| 3 | `lemma` | [nontrivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankOneNamespaced.lean/declarations/nontrivial.md) | 55 | `result-track:8323eeba36bc76fbcd391ed712f2a447fb63b9e0cdea4383565e1c9b0a0fbb69` |
+| 4 | `theorem` | [zero_of_hom_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankOneNamespaced.lean/declarations/zero-of-hom-zero.md) | 59 | `result-track:5e0d6e84faac3be48404e0455e7dea594bb205610e0682748cf23e5d301c1a30` |
+| 5 | `theorem` | [hom_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankOneNamespaced.lean/declarations/hom-eq-zero-iff.md) | 67 | `result-track:e0d3536086459c95dea322a82faf92afb8bda8730ea264546fd1da07f29a8616` |
+| 6 | `def` | [unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankOneNamespaced.lean/declarations/unit.md) | 71 | `declaration-track:c2579a3042de3f1f07466c2de0b8ef3f04390b8e2646ea56869b2e1d7f04ffb0` |
+| 7 | `theorem` | [unit_ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankOneNamespaced.lean/declarations/unit-ne-one.md) | 75 | `result-track:a50c619a398f294554fdda8a9d7b1fb81a1ce240e24da07bb077a8fe2b2be5b2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

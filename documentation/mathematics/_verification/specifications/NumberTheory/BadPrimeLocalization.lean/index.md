@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/BadPrimeLocalization.lean/index.md) · [Full source](../../../../NumberTheory/BadPrimeLocalization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BadPrimeLocalization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BadPrimeLocalization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BadPrimeTMFLocalization](../../../../NumberTheory/BadPrimeLocalization.lean/declarations/badprimetmflocalization.md) | 18 | `declaration-track:eced173130e1fc6f5f56372a8fb19cb1c6618f57733a975746ef6e03bba7d70b` |
-| 2 | `theorem` | [bad_prime_localization_is_bad](../../../../NumberTheory/BadPrimeLocalization.lean/declarations/bad-prime-localization-is-bad.md) | 26 | `result-track:13dbcf453024d119a9bfaaf63672cd90bef0aa891654674151116383b1a39a1c` |
+| 1 | `structure` | [BadPrimeTMFLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BadPrimeLocalization.lean/declarations/badprimetmflocalization.md) | 18 | `declaration-track:eced173130e1fc6f5f56372a8fb19cb1c6618f57733a975746ef6e03bba7d70b` |
+| 2 | `theorem` | [bad_prime_localization_is_bad](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BadPrimeLocalization.lean/declarations/bad-prime-localization-is-bad.md) | 26 | `result-track:13dbcf453024d119a9bfaaf63672cd90bef0aa891654674151116383b1a39a1c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecordReconstructionSmallSimp.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecordReconstructionSmallSimp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecordReconstructionSmallSimp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecordReconstructionSmallSimp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [decode_reconstruct_supported](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecordReconstructionSmallSimp.lean/declarations/decode-reconstruct-supported.md) | 7 | `result-track:4c545f5faa437001d49d73e37ea0e33cad4bfd06f7468416329f52640d94cf6f` |
-| 2 | `theorem` | [accepted_byte_inverse](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecordReconstructionSmallSimp.lean/declarations/accepted-byte-inverse.md) | 16 | `result-track:44611bf2330e5bd1f571dc9e572f3904964877e4dfcf03055d4b4df3623b6343` |
-| 3 | `theorem` | [decode_supported](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecordReconstructionSmallSimp.lean/declarations/decode-supported.md) | 19 | `result-track:b35898a9fbc39b8adc6fddb0d32c81b5cef77fde8f9587806315b84dd6a3649c` |
-| 4 | `theorem` | [accepted_bytes_iff](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecordReconstructionSmallSimp.lean/declarations/accepted-bytes-iff.md) | 22 | `result-track:e8a2d67ca5ff9332aa1cc4762947333c4f33dff63c86cad3e28102d9942b2c9f` |
+| 1 | `theorem` | [decode_reconstruct_supported](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecordReconstructionSmallSimp.lean/declarations/decode-reconstruct-supported.md) | 7 | `result-track:4c545f5faa437001d49d73e37ea0e33cad4bfd06f7468416329f52640d94cf6f` |
+| 2 | `theorem` | [accepted_byte_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecordReconstructionSmallSimp.lean/declarations/accepted-byte-inverse.md) | 16 | `result-track:44611bf2330e5bd1f571dc9e572f3904964877e4dfcf03055d4b4df3623b6343` |
+| 3 | `theorem` | [decode_supported](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecordReconstructionSmallSimp.lean/declarations/decode-supported.md) | 19 | `result-track:b35898a9fbc39b8adc6fddb0d32c81b5cef77fde8f9587806315b84dd6a3649c` |
+| 4 | `theorem` | [accepted_bytes_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecordReconstructionSmallSimp.lean/declarations/accepted-bytes-iff.md) | 22 | `result-track:e8a2d67ca5ff9332aa1cc4762947333c4f33dff63c86cad3e28102d9942b2c9f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

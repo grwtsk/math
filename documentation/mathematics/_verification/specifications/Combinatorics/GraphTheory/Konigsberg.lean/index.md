@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/Konigsberg.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/Konigsberg.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Konigsberg.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Konigsberg.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Verts](../../../../../Combinatorics/GraphTheory/Konigsberg.lean/declarations/verts.md) | 22 | `declaration-track:ec5301d64f985988ff05d222289c9d0bd969d0e1173b8049af195608435bf5f2` |
-| 2 | `def` | [edges](../../../../../Combinatorics/GraphTheory/Konigsberg.lean/declarations/edges.md) | 33 | `declaration-track:25b4c8e5fcaf2d4fe355951f9323a1860371ab1ab3ba30bf085bf5e6b74b4fae` |
-| 3 | `def` | [adj](../../../../../Combinatorics/GraphTheory/Konigsberg.lean/declarations/adj.md) | 40 | `declaration-track:3b37b7102ebc594736600302760eaf462d8fa2e8b69ac46b5b07b4b840aeab29` |
-| 4 | `def` | [graph](../../../../../Combinatorics/GraphTheory/Konigsberg.lean/declarations/graph.md) | 50 | `declaration-track:8b959b481014cf2915f96e663fb5e827e08e1dfecdc197759d5db63e53094538` |
-| 5 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/Konigsberg.lean/declarations/instance.md) | 59 | `declaration-track:b6ec629bd4c67974ad183925715872f367cda07ea3b2c29c53c4df582f44aa52` |
-| 6 | `def` | [degree](../../../../../Combinatorics/GraphTheory/Konigsberg.lean/declarations/degree.md) | 63 | `declaration-track:8b0eb2c3b61b2f60de8b37dab10cfaf18e8be24a4113e9a1c48c00a97ab05a8a` |
-| 7 | `lemma` | [degree_eq_degree](../../../../../Combinatorics/GraphTheory/Konigsberg.lean/declarations/degree-eq-degree.md) | 68 | `result-track:dba2c646510d5158927782efba63d28a5f987fe0d637b51ac491a467da6a4289` |
-| 8 | `lemma` | [not_even_degree_iff](../../../../../Combinatorics/GraphTheory/Konigsberg.lean/declarations/not-even-degree-iff.md) | 70 | `result-track:e5ca80946864f61455c4dfc34475fbb30811a8cdbf9b592e826d8cb55346d35b` |
-| 9 | `lemma` | [setOf_odd_degree_eq](../../../../../Combinatorics/GraphTheory/Konigsberg.lean/declarations/setof-odd-degree-eq.md) | 73 | `result-track:b98e107c7e1056266a05f55588bc46a96d0450fc92bcaf22d57997210c6cba1b` |
-| 10 | `theorem` | [not_isEulerian](../../../../../Combinatorics/GraphTheory/Konigsberg.lean/declarations/not-iseulerian.md) | 79 | `result-track:a8f2cead376044f3556b355b3de656703f08058de635b37529c4dc913dbf2a9d` |
+| 1 | `inductive` | [Verts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Konigsberg.lean/declarations/verts.md) | 22 | `declaration-track:ec5301d64f985988ff05d222289c9d0bd969d0e1173b8049af195608435bf5f2` |
+| 2 | `def` | [edges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Konigsberg.lean/declarations/edges.md) | 33 | `declaration-track:25b4c8e5fcaf2d4fe355951f9323a1860371ab1ab3ba30bf085bf5e6b74b4fae` |
+| 3 | `def` | [adj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Konigsberg.lean/declarations/adj.md) | 40 | `declaration-track:3b37b7102ebc594736600302760eaf462d8fa2e8b69ac46b5b07b4b840aeab29` |
+| 4 | `def` | [graph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Konigsberg.lean/declarations/graph.md) | 50 | `declaration-track:8b959b481014cf2915f96e663fb5e827e08e1dfecdc197759d5db63e53094538` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Konigsberg.lean/declarations/instance.md) | 59 | `declaration-track:b6ec629bd4c67974ad183925715872f367cda07ea3b2c29c53c4df582f44aa52` |
+| 6 | `def` | [degree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Konigsberg.lean/declarations/degree.md) | 63 | `declaration-track:8b0eb2c3b61b2f60de8b37dab10cfaf18e8be24a4113e9a1c48c00a97ab05a8a` |
+| 7 | `lemma` | [degree_eq_degree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Konigsberg.lean/declarations/degree-eq-degree.md) | 68 | `result-track:dba2c646510d5158927782efba63d28a5f987fe0d637b51ac491a467da6a4289` |
+| 8 | `lemma` | [not_even_degree_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Konigsberg.lean/declarations/not-even-degree-iff.md) | 70 | `result-track:e5ca80946864f61455c4dfc34475fbb30811a8cdbf9b592e826d8cb55346d35b` |
+| 9 | `lemma` | [setOf_odd_degree_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Konigsberg.lean/declarations/setof-odd-degree-eq.md) | 73 | `result-track:b98e107c7e1056266a05f55588bc46a96d0450fc92bcaf22d57997210c6cba1b` |
+| 10 | `theorem` | [not_isEulerian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Konigsberg.lean/declarations/not-iseulerian.md) | 79 | `result-track:a8f2cead376044f3556b355b3de656703f08058de635b37529c4dc913dbf2a9d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

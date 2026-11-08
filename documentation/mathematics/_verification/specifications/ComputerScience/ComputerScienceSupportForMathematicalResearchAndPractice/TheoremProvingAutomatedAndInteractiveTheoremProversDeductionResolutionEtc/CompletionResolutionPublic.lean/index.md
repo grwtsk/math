@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompletionResolutionPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompletionResolutionPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompletionResolutionPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompletionResolutionPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [consumeImplicitPrefix](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompletionResolutionPublic.lean/declarations/consumeimplicitprefix.md) | 17 | `declaration-track:69356ab90762156fe707a9be27ff84adf65c7133c755f644f3a9dd1bc4829013` |
-| 2 | `def` | [CompletionItem.resolve](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompletionResolutionPublic.lean/declarations/completionitem-resolve.md) | 31 | `declaration-track:26425ba17c3ee65ca5e29063295be9fa563e1417c85f746b648ea135bde158bf` |
-| 3 | `def` | [resolveCompletionItem?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompletionResolutionPublic.lean/declarations/resolvecompletionitem.md) | 90 | `declaration-track:2f7901797574c0a68d1d7bf2fd51eacc3dd231d9dba5255a5cfd65c898fd54a0` |
+| 1 | `def` | [consumeImplicitPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompletionResolutionPublic.lean/declarations/consumeimplicitprefix.md) | 17 | `declaration-track:69356ab90762156fe707a9be27ff84adf65c7133c755f644f3a9dd1bc4829013` |
+| 2 | `def` | [CompletionItem.resolve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompletionResolutionPublic.lean/declarations/completionitem-resolve.md) | 31 | `declaration-track:26425ba17c3ee65ca5e29063295be9fa563e1417c85f746b648ea135bde158bf` |
+| 3 | `def` | [resolveCompletionItem?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CompletionResolutionPublic.lean/declarations/resolvecompletionitem.md) | 90 | `declaration-track:2f7901797574c0a68d1d7bf2fd51eacc3dd231d9dba5255a5cfd65c898fd54a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

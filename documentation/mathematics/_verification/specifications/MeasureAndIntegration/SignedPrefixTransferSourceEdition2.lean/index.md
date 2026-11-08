@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SignedPrefixTransferSourceEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SignedPrefixTransferSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedPrefixTransferSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedPrefixTransferSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cumulativeSum](../../../../MeasureAndIntegration/SignedPrefixTransferSourceEdition2.lean/declarations/cumulativesum.md) | 20 | `declaration-track:e3e802e3926e5eb461d68de6135d45777053fca027e999e1b522e30be2c18f28` |
-| 2 | `theorem` | [signed_sum_by_parts](../../../../MeasureAndIntegration/SignedPrefixTransferSourceEdition2.lean/declarations/signed-sum-by-parts.md) | 25 | `result-track:c8989f02ab1bc4f0ffea716f478e2c5515865b9b61e93d565e7796d1ed551609` |
-| 3 | `theorem` | [abs_weighted_sum_le_prefix_variation](../../../../MeasureAndIntegration/SignedPrefixTransferSourceEdition2.lean/declarations/abs-weighted-sum-le-prefix-variation.md) | 38 | `result-track:9193ac1553f6bebbc6b3497ea0bd063624da836b32c019a2bbd82475ad556393` |
-| 4 | `theorem` | [weighted_actual_le_model_add_budget](../../../../MeasureAndIntegration/SignedPrefixTransferSourceEdition2.lean/declarations/weighted-actual-le-model-add-budget.md) | 56 | `result-track:0a3718305b457ed60f96099eebbf4be671ebeb738da2adb9443e40c8f485fdcf` |
-| 5 | `theorem` | [closed_sum_eq_neg_cumulative_integral](../../../../MeasureAndIntegration/SignedPrefixTransferSourceEdition2.lean/declarations/closed-sum-eq-neg-cumulative-integral.md) | 73 | `result-track:df08c050f94dd153d6cc7f8cf614d36d7c25cb32a6aa549c3d605ec4990cb128` |
+| 1 | `def` | [cumulativeSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedPrefixTransferSourceEdition2.lean/declarations/cumulativesum.md) | 20 | `declaration-track:e3e802e3926e5eb461d68de6135d45777053fca027e999e1b522e30be2c18f28` |
+| 2 | `theorem` | [signed_sum_by_parts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedPrefixTransferSourceEdition2.lean/declarations/signed-sum-by-parts.md) | 25 | `result-track:c8989f02ab1bc4f0ffea716f478e2c5515865b9b61e93d565e7796d1ed551609` |
+| 3 | `theorem` | [abs_weighted_sum_le_prefix_variation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedPrefixTransferSourceEdition2.lean/declarations/abs-weighted-sum-le-prefix-variation.md) | 38 | `result-track:9193ac1553f6bebbc6b3497ea0bd063624da836b32c019a2bbd82475ad556393` |
+| 4 | `theorem` | [weighted_actual_le_model_add_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedPrefixTransferSourceEdition2.lean/declarations/weighted-actual-le-model-add-budget.md) | 56 | `result-track:0a3718305b457ed60f96099eebbf4be671ebeb738da2adb9443e40c8f485fdcf` |
+| 5 | `theorem` | [closed_sum_eq_neg_cumulative_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedPrefixTransferSourceEdition2.lean/declarations/closed-sum-eq-neg-cumulative-integral.md) | 73 | `result-track:df08c050f94dd153d6cc7f8cf614d36d7c25cb32a6aa549c3d605ec4990cb128` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

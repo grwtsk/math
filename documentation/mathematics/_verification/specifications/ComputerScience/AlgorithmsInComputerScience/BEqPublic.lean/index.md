@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BEqPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BEqPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BEqPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BEqPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isEqv_eq_decide](../../../../../ComputerScience/AlgorithmsInComputerScience/BEqPublic.lean/declarations/iseqv-eq-decide.md) | 22 | `result-track:962d770da6c39b64e62b1ab73f9982bfc4261ba700274d4d222539c164bbadca` |
-| 2 | `theorem` | [beq_eq_isEqv](../../../../../ComputerScience/AlgorithmsInComputerScience/BEqPublic.lean/declarations/beq-eq-iseqv.md) | 37 | `result-track:689711fd3a6047468538561311aa02409deda3218e4f77d93aafd4750aa444c2` |
-| 3 | `theorem` | [beq_eq_decide](../../../../../ComputerScience/AlgorithmsInComputerScience/BEqPublic.lean/declarations/beq-eq-decide.md) | 50 | `result-track:5ad1980ac5dae7243d13ec200f3e94b3a4b632f54a3e0079fa141e87f5ff28db` |
+| 1 | `theorem` | [isEqv_eq_decide](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BEqPublic.lean/declarations/iseqv-eq-decide.md) | 22 | `result-track:962d770da6c39b64e62b1ab73f9982bfc4261ba700274d4d222539c164bbadca` |
+| 2 | `theorem` | [beq_eq_isEqv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BEqPublic.lean/declarations/beq-eq-iseqv.md) | 37 | `result-track:689711fd3a6047468538561311aa02409deda3218e4f77d93aafd4750aa444c2` |
+| 3 | `theorem` | [beq_eq_decide](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BEqPublic.lean/declarations/beq-eq-decide.md) | 50 | `result-track:5ad1980ac5dae7243d13ec200f3e94b3a4b632f54a3e0079fa141e87f5ff28db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathlib.Topology.Algebra.Module.Equiv` — import line 1; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Analysis.Operator.UnboundedPortEquivalence`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.Operator.UnboundedPortEquivalence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ContinuousFramedEquivalence](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/continuousframedequivalence.md) | 14 | `declaration-track:9c74d6885498c38470ad778c4f669ef4bfd032ecd35710254c85bd548bf614e2` |
-| 2 | `def` | [toAlgebraic](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/toalgebraic.md) | 28 | `declaration-track:5567562180e1e4abe99d31dc8e719b52d8834b873d5cededd2b8b1707604191c` |
-| 3 | `def` | [symm](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/symm.md) | 36 | `declaration-track:3ccb7d5e5444c2ea5475fc2975f3ff318dc627b528d79eff8adf829b0f4d8211` |
-| 4 | `theorem` | [image_domain](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/image-domain.md) | 44 | `result-track:0c71bf8143fd06590b7f803c4e99de9db7f4e77ecedb27bc03148b0c5fb91291` |
-| 5 | `theorem` | [dense_domain](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/dense-domain.md) | 55 | `result-track:601704d4746c4880fa6f96235840f880926b2bdf82346f7e497e7f0b39099165` |
-| 6 | `theorem` | [dense_domain_iff](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/dense-domain-iff.md) | 65 | `result-track:b016024cc47f7a494b67e8942735f0310cf77f73f94f9af9088c438641620bda` |
-| 7 | `def` | [pairFrame](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/pairframe.md) | 72 | `declaration-track:4575bd30d2d096629a18e86fd171bf409bb2e2f3e555925ea5ba433595ba0f20` |
-| 8 | `theorem` | [image_graphSet](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/image-graphset.md) | 77 | `result-track:4ba796a0cd1138b2eb319f2cdd4df3f4419e75f2ad0ae727c690ed5733a7c14f` |
-| 9 | `theorem` | [closed_graph_iff](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/closed-graph-iff.md) | 97 | `result-track:a5d5e4baa3358a922a8dd382fae3e790ec924ed6a206cc0463b1053ad7ab9941` |
-| 10 | `structure` | [AnalyticProfile](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/analyticprofile.md) | 103 | `declaration-track:6272a4307b2d60a1703624c10e0b4f029e90b7ce71e7f7a52b62efb7558cbc72` |
-| 11 | `theorem` | [transportProfile](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/transportprofile.md) | 108 | `result-track:57ecc3e133ceda6c59c4df403cbe4b152ff78757ef941b42d254bd4137e22a82` |
+| 1 | `structure` | [ContinuousFramedEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/continuousframedequivalence.md) | 14 | `declaration-track:9c74d6885498c38470ad778c4f669ef4bfd032ecd35710254c85bd548bf614e2` |
+| 2 | `def` | [toAlgebraic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/toalgebraic.md) | 28 | `declaration-track:5567562180e1e4abe99d31dc8e719b52d8834b873d5cededd2b8b1707604191c` |
+| 3 | `def` | [symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/symm.md) | 36 | `declaration-track:3ccb7d5e5444c2ea5475fc2975f3ff318dc627b528d79eff8adf829b0f4d8211` |
+| 4 | `theorem` | [image_domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/image-domain.md) | 44 | `result-track:0c71bf8143fd06590b7f803c4e99de9db7f4e77ecedb27bc03148b0c5fb91291` |
+| 5 | `theorem` | [dense_domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/dense-domain.md) | 55 | `result-track:601704d4746c4880fa6f96235840f880926b2bdf82346f7e497e7f0b39099165` |
+| 6 | `theorem` | [dense_domain_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/dense-domain-iff.md) | 65 | `result-track:b016024cc47f7a494b67e8942735f0310cf77f73f94f9af9088c438641620bda` |
+| 7 | `def` | [pairFrame](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/pairframe.md) | 72 | `declaration-track:4575bd30d2d096629a18e86fd171bf409bb2e2f3e555925ea5ba433595ba0f20` |
+| 8 | `theorem` | [image_graphSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/image-graphset.md) | 77 | `result-track:4ba796a0cd1138b2eb319f2cdd4df3f4419e75f2ad0ae727c690ed5733a7c14f` |
+| 9 | `theorem` | [closed_graph_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/closed-graph-iff.md) | 97 | `result-track:a5d5e4baa3358a922a8dd382fae3e790ec924ed6a206cc0463b1053ad7ab9941` |
+| 10 | `structure` | [AnalyticProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/analyticprofile.md) | 103 | `declaration-track:6272a4307b2d60a1703624c10e0b4f029e90b7ce71e7f7a52b62efb7558cbc72` |
+| 11 | `theorem` | [transportProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UnboundedPortAnalytic.lean/declarations/transportprofile.md) | 108 | `result-track:57ecc3e133ceda6c59c4df403cbe4b152ff78757ef941b42d254bd4137e22a82` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

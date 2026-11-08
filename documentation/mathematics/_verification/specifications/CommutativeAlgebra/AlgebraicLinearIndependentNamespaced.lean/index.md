@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AlgebraicLinearIndependentNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AlgebraicLinearIndependentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicLinearIndependentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicLinearIndependentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Transcendental.linearIndependent_sub_inv](../../../../CommutativeAlgebra/AlgebraicLinearIndependentNamespaced.lean/declarations/transcendental-linearindependent-sub-inv.md) | 32 | `result-track:5678a8045e52904ea66d7454c5907109b1f61d7ad736e1fac1788b0b322c23c0` |
+| 1 | `theorem` | [Transcendental.linearIndependent_sub_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicLinearIndependentNamespaced.lean/declarations/transcendental-linearindependent-sub-inv.md) | 32 | `result-track:5678a8045e52904ea66d7454c5907109b1f61d7ad736e1fac1788b0b322c23c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

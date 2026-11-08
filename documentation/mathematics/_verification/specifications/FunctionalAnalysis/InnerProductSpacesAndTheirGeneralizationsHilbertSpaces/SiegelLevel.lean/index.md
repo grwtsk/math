@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SiegelLevel.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SiegelLevel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SiegelLevel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SiegelLevel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [SymplecticLevelMarkingKind](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SiegelLevel.lean/declarations/symplecticlevelmarkingkind.md) | 18 | `declaration-track:f8a6fb049739269cd6c38ff29a651687cd3f5996adc404c9c8f229b38e348c42` |
-| 2 | `structure` | [SiegelLevelEnrichment](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SiegelLevel.lean/declarations/siegellevelenrichment.md) | 25 | `declaration-track:d42e0ea3c65cc255c354c7fa93c0e7d33d5193b69dae7c2a3caddcb765820aeb` |
-| 3 | `structure` | [SiegelModularFormDatum](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SiegelLevel.lean/declarations/siegelmodularformdatum.md) | 67 | `declaration-track:70f69625133995cfb855168129c733394ec704768fc16fbe37ea3ed66d4b8738` |
+| 1 | `inductive` | [SymplecticLevelMarkingKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SiegelLevel.lean/declarations/symplecticlevelmarkingkind.md) | 18 | `declaration-track:f8a6fb049739269cd6c38ff29a651687cd3f5996adc404c9c8f229b38e348c42` |
+| 2 | `structure` | [SiegelLevelEnrichment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SiegelLevel.lean/declarations/siegellevelenrichment.md) | 25 | `declaration-track:d42e0ea3c65cc255c354c7fa93c0e7d33d5193b69dae7c2a3caddcb765820aeb` |
+| 3 | `structure` | [SiegelModularFormDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SiegelLevel.lean/declarations/siegelmodularformdatum.md) | 67 | `declaration-track:70f69625133995cfb855168129c733394ec704768fc16fbe37ea3ed66d4b8738` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

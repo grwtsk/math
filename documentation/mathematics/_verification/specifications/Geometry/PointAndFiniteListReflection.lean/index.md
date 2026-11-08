@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/PointAndFiniteListReflection.lean/index.md) · [Full source](../../../../Geometry/PointAndFiniteListReflection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PointAndFiniteListReflection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PointAndFiniteListReflection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -66,16 +66,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RasterPoint](../../../../Geometry/PointAndFiniteListReflection.lean/declarations/rasterpoint.md) | 43 | `declaration-track:ee369ece04d049fd3eaa3f25c1475c8bf0143c2ffe9f7259515f28b5cd04ca17` |
-| 2 | `def` | [RasterPoint.reflectDiagonal](../../../../Geometry/PointAndFiniteListReflection.lean/declarations/rasterpoint-reflectdiagonal.md) | 49 | `declaration-track:08684c51c0b3f2351caf02304105d94559f48ec5b95d0f23bb363f55ba175d5a` |
-| 3 | `theorem` | [RasterPoint.reflectDiagonal_involutive](../../../../Geometry/PointAndFiniteListReflection.lean/declarations/rasterpoint-reflectdiagonal-involutive.md) | 52 | `result-track:2fa8b197989e9c541796d9bfc91f156c42a3dd91465228c0f72c61791f0f7c47` |
-| 4 | `inductive` | [ReflectionDescriptor](../../../../Geometry/PointAndFiniteListReflection.lean/declarations/reflectiondescriptor.md) | 58 | `declaration-track:c72d738712b60fd613594bb23e12a971aa719b670e092483a814452f834b3efa` |
-| 5 | `def` | [reflectPoint](../../../../Geometry/PointAndFiniteListReflection.lean/declarations/reflectpoint.md) | 69 | `declaration-track:486cdfde4e2bbd4bf0f9a43fa84f6c9d9493419d841dc738a836f4419ce9db70` |
-| 6 | `def` | [reflectCarrierSpace](../../../../Geometry/PointAndFiniteListReflection.lean/declarations/reflectcarrierspace.md) | 84 | `declaration-track:8e71d4fc6b3ae17d9feb7ae169fd2e28d8dae71131e6bd3c69679d75ef070b46` |
-| 7 | `def` | [reflectCarrierDiagonal](../../../../Geometry/PointAndFiniteListReflection.lean/declarations/reflectcarrierdiagonal.md) | 89 | `declaration-track:9a34198e7148438172ffec5384898aa81eb86e495d2bc93f349439f06aa7bf59` |
-| 8 | `theorem` | [reflectCarrierSpace_length](../../../../Geometry/PointAndFiniteListReflection.lean/declarations/reflectcarrierspace-length.md) | 92 | `result-track:593ca12c7a8d9d598f8955b43df8f6bac5bf8f94de1063680a315088263f77e3` |
-| 9 | `theorem` | [reflectPoint_diagonal_zero](../../../../Geometry/PointAndFiniteListReflection.lean/declarations/reflectpoint-diagonal-zero.md) | 97 | `result-track:73ba119802e1d4ad97a1570a37b3ebd51bd4cbdb0cdedb1582286848d9872213` |
-| 10 | `theorem` | [reflectCarrierDiagonal_involutive](../../../../Geometry/PointAndFiniteListReflection.lean/declarations/reflectcarrierdiagonal-involutive.md) | 102 | `result-track:4819bbc5ed9e5b96d5687afa8f1ef7bd7a711fa8fd89fa2b9f9652850c7e22d2` |
+| 1 | `structure` | [RasterPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PointAndFiniteListReflection.lean/declarations/rasterpoint.md) | 43 | `declaration-track:ee369ece04d049fd3eaa3f25c1475c8bf0143c2ffe9f7259515f28b5cd04ca17` |
+| 2 | `def` | [RasterPoint.reflectDiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PointAndFiniteListReflection.lean/declarations/rasterpoint-reflectdiagonal.md) | 49 | `declaration-track:08684c51c0b3f2351caf02304105d94559f48ec5b95d0f23bb363f55ba175d5a` |
+| 3 | `theorem` | [RasterPoint.reflectDiagonal_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PointAndFiniteListReflection.lean/declarations/rasterpoint-reflectdiagonal-involutive.md) | 52 | `result-track:2fa8b197989e9c541796d9bfc91f156c42a3dd91465228c0f72c61791f0f7c47` |
+| 4 | `inductive` | [ReflectionDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PointAndFiniteListReflection.lean/declarations/reflectiondescriptor.md) | 58 | `declaration-track:c72d738712b60fd613594bb23e12a971aa719b670e092483a814452f834b3efa` |
+| 5 | `def` | [reflectPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PointAndFiniteListReflection.lean/declarations/reflectpoint.md) | 69 | `declaration-track:486cdfde4e2bbd4bf0f9a43fa84f6c9d9493419d841dc738a836f4419ce9db70` |
+| 6 | `def` | [reflectCarrierSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PointAndFiniteListReflection.lean/declarations/reflectcarrierspace.md) | 84 | `declaration-track:8e71d4fc6b3ae17d9feb7ae169fd2e28d8dae71131e6bd3c69679d75ef070b46` |
+| 7 | `def` | [reflectCarrierDiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PointAndFiniteListReflection.lean/declarations/reflectcarrierdiagonal.md) | 89 | `declaration-track:9a34198e7148438172ffec5384898aa81eb86e495d2bc93f349439f06aa7bf59` |
+| 8 | `theorem` | [reflectCarrierSpace_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PointAndFiniteListReflection.lean/declarations/reflectcarrierspace-length.md) | 92 | `result-track:593ca12c7a8d9d598f8955b43df8f6bac5bf8f94de1063680a315088263f77e3` |
+| 9 | `theorem` | [reflectPoint_diagonal_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PointAndFiniteListReflection.lean/declarations/reflectpoint-diagonal-zero.md) | 97 | `result-track:73ba119802e1d4ad97a1570a37b3ebd51bd4cbdb0cdedb1582286848d9872213` |
+| 10 | `theorem` | [reflectCarrierDiagonal_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PointAndFiniteListReflection.lean/declarations/reflectcarrierdiagonal-involutive.md) | 102 | `result-track:4819bbc5ed9e5b96d5687afa8f1ef7bd7a711fa8fd89fa2b9f9652850c7e22d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

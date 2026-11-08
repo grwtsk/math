@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LocalPropertiesProjectiveDimensionPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LocalPropertiesProjectiveDimensionPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesProjectiveDimensionPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesProjectiveDimensionPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/LocalPropertiesProjectiveDimensionPublic.lean/declarations/instance.md) | 34 | `declaration-track:5534ea93a2171429a59df5b95971f8410f41ad7e64bc0657a5e789c3f224f4a4` |
-| 2 | `lemma` | [localizedModule_hasProjectiveDimensionLE](../../../../CommutativeAlgebra/LocalPropertiesProjectiveDimensionPublic.lean/declarations/localizedmodule-hasprojectivedimensionle.md) | 43 | `result-track:1b54bc6f5fb925232ba721bcfaa387342eb07d5e068737e6bfd4db7560638712` |
-| 3 | `lemma` | [projectiveDimension_le_projectiveDimension_of_isLocalizedModule](../../../../CommutativeAlgebra/LocalPropertiesProjectiveDimensionPublic.lean/declarations/projectivedimension-le-projectivedimension-of-islocalizedmodule.md) | 63 | `result-track:af79be3357b24ca2535d2c0a63b708498417e533fc86acdca2b72435b11835e2` |
-| 4 | `lemma` | [hasProjectiveDimensionLE_iff_forall_maximalSpectrum](../../../../CommutativeAlgebra/LocalPropertiesProjectiveDimensionPublic.lean/declarations/hasprojectivedimensionle-iff-forall-maximalspectrum.md) | 82 | `result-track:86e3620eb4e579e9ea684b4a85989f647a66874bbe690f4b7b0f11b179cd3251` |
-| 5 | `lemma` | [hasProjectiveDimensionLE_iff_forall_primeSpectrum](../../../../CommutativeAlgebra/LocalPropertiesProjectiveDimensionPublic.lean/declarations/hasprojectivedimensionle-iff-forall-primespectrum.md) | 120 | `result-track:75fce1a12a5fa8ad9534b05a3558577d8d9a2de6b3d727c9e6debe5694531e87` |
-| 6 | `lemma` | [projectiveDimension_eq_iSup_localizedModule_prime](../../../../CommutativeAlgebra/LocalPropertiesProjectiveDimensionPublic.lean/declarations/projectivedimension-eq-isup-localizedmodule-prime.md) | 127 | `result-track:608c257b2732bc31010ca4f875c5fa1c7f98045c489784bc359dc054180f8571` |
-| 7 | `lemma` | [projectiveDimension_eq_iSup_localizedModule_maximal](../../../../CommutativeAlgebra/LocalPropertiesProjectiveDimensionPublic.lean/declarations/projectivedimension-eq-isup-localizedmodule-maximal.md) | 149 | `result-track:237d60442a50b809b1b035ac0b7359968fdbeea0a3c02fc6fa8be295d2371dd1` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesProjectiveDimensionPublic.lean/declarations/instance.md) | 34 | `declaration-track:5534ea93a2171429a59df5b95971f8410f41ad7e64bc0657a5e789c3f224f4a4` |
+| 2 | `lemma` | [localizedModule_hasProjectiveDimensionLE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesProjectiveDimensionPublic.lean/declarations/localizedmodule-hasprojectivedimensionle.md) | 43 | `result-track:1b54bc6f5fb925232ba721bcfaa387342eb07d5e068737e6bfd4db7560638712` |
+| 3 | `lemma` | [projectiveDimension_le_projectiveDimension_of_isLocalizedModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesProjectiveDimensionPublic.lean/declarations/projectivedimension-le-projectivedimension-of-islocalizedmodule.md) | 63 | `result-track:af79be3357b24ca2535d2c0a63b708498417e533fc86acdca2b72435b11835e2` |
+| 4 | `lemma` | [hasProjectiveDimensionLE_iff_forall_maximalSpectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesProjectiveDimensionPublic.lean/declarations/hasprojectivedimensionle-iff-forall-maximalspectrum.md) | 82 | `result-track:86e3620eb4e579e9ea684b4a85989f647a66874bbe690f4b7b0f11b179cd3251` |
+| 5 | `lemma` | [hasProjectiveDimensionLE_iff_forall_primeSpectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesProjectiveDimensionPublic.lean/declarations/hasprojectivedimensionle-iff-forall-primespectrum.md) | 120 | `result-track:75fce1a12a5fa8ad9534b05a3558577d8d9a2de6b3d727c9e6debe5694531e87` |
+| 6 | `lemma` | [projectiveDimension_eq_iSup_localizedModule_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesProjectiveDimensionPublic.lean/declarations/projectivedimension-eq-isup-localizedmodule-prime.md) | 127 | `result-track:608c257b2732bc31010ca4f875c5fa1c7f98045c489784bc359dc054180f8571` |
+| 7 | `lemma` | [projectiveDimension_eq_iSup_localizedModule_maximal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalPropertiesProjectiveDimensionPublic.lean/declarations/projectivedimension-eq-isup-localizedmodule-maximal.md) | 149 | `result-track:237d60442a50b809b1b035ac0b7359968fdbeea0a3c02fc6fa8be295d2371dd1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

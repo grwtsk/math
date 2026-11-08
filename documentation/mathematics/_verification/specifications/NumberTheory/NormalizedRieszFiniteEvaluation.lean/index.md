@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/NormalizedRieszFiniteEvaluation.lean/index.md) · [Full source](../../../../NumberTheory/NormalizedRieszFiniteEvaluation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedRieszFiniteEvaluation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedRieszFiniteEvaluation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.GlobalRieszAffineNormalization`](../../../../MeasureAndIntegration/GlobalRieszAffineNormalization.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.RieszPointwiseReconstruction`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.GlobalRieszAffineNormalization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GlobalRieszAffineNormalization.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.RieszPointwiseReconstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszPointwiseReconstruction.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteNormalizedRiesz](../../../../NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/finitenormalizedriesz.md) | 23 | `declaration-track:67e487cc6365ff6fc856e9626bc22f24670a3a198f4093d086a91520157b03c0` |
-| 2 | `def` | [normalizedRieszTailBudget](../../../../NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/normalizedriesztailbudget.md) | 29 | `declaration-track:8160064883ceae3fcd11864b2997077f3caec04158db01f15e05315ab2c41774` |
-| 3 | `theorem` | [source_sub_finite_eq](../../../../NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/source-sub-finite-eq.md) | 33 | `result-track:3d127b977c320ce584df16a4c340bdb6b7666d188341eaeb64ec09606af86a3b` |
-| 4 | `theorem` | [norm_source_sub_finite_le](../../../../NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/norm-source-sub-finite-le.md) | 45 | `result-track:99ccde4e8befe606a9da2f77a937195bba2e97d3791e21e577ed416988f2e73e` |
-| 5 | `theorem` | [normalizedRieszTailBudget_tendsto_zero](../../../../NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/normalizedriesztailbudget-tendsto-zero.md) | 62 | `result-track:bbb0777d76d5e3f74a2a23695435777f1f2ed6e21a6c57bc6054958fe9e229a6` |
-| 6 | `theorem` | [finiteNormalizedRiesz_tendsto_source](../../../../NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/finitenormalizedriesz-tendsto-source.md) | 70 | `result-track:928849b964744ef5279c895ecdb9d732c3ae1ca52a148164aa6290e42da62cb9` |
-| 7 | `def` | [finiteNormalizedPointwise](../../../../NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/finitenormalizedpointwise.md) | 80 | `declaration-track:1752b1c34cc181e388c1d627bc23d0923e3c4e170429a6f77686bb91b08c4df5` |
-| 8 | `def` | [pointwiseRieszTailBudget](../../../../NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/pointwiseriesztailbudget.md) | 83 | `declaration-track:fd71f6dff7687188118d454cb0b8afa4b2eb875770e614a4882c0dbe780be766` |
-| 9 | `theorem` | [norm_pointwise_sub_finite_le](../../../../NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/norm-pointwise-sub-finite-le.md) | 87 | `result-track:67384fc514c62c7c6e79c2a5c4efffba2c010f276c6b9dae9161cff7ba3575df` |
-| 10 | `theorem` | [pointwiseRieszTailBudget_tendsto_zero](../../../../NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/pointwiseriesztailbudget-tendsto-zero.md) | 96 | `result-track:7c8c33ab847296d35312b95df30473f2c959280a8a4b7ea6d9ff2ddcbb4e2ca0` |
-| 11 | `theorem` | [finiteNormalizedPointwise_tendsto_psiHalf](../../../../NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/finitenormalizedpointwise-tendsto-psihalf.md) | 105 | `result-track:231ec4d499adb40edca462f99600a1476514da0f89193ba73c61e29e8eedc196` |
+| 1 | `def` | [finiteNormalizedRiesz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/finitenormalizedriesz.md) | 23 | `declaration-track:67e487cc6365ff6fc856e9626bc22f24670a3a198f4093d086a91520157b03c0` |
+| 2 | `def` | [normalizedRieszTailBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/normalizedriesztailbudget.md) | 29 | `declaration-track:8160064883ceae3fcd11864b2997077f3caec04158db01f15e05315ab2c41774` |
+| 3 | `theorem` | [source_sub_finite_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/source-sub-finite-eq.md) | 33 | `result-track:3d127b977c320ce584df16a4c340bdb6b7666d188341eaeb64ec09606af86a3b` |
+| 4 | `theorem` | [norm_source_sub_finite_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/norm-source-sub-finite-le.md) | 45 | `result-track:99ccde4e8befe606a9da2f77a937195bba2e97d3791e21e577ed416988f2e73e` |
+| 5 | `theorem` | [normalizedRieszTailBudget_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/normalizedriesztailbudget-tendsto-zero.md) | 62 | `result-track:bbb0777d76d5e3f74a2a23695435777f1f2ed6e21a6c57bc6054958fe9e229a6` |
+| 6 | `theorem` | [finiteNormalizedRiesz_tendsto_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/finitenormalizedriesz-tendsto-source.md) | 70 | `result-track:928849b964744ef5279c895ecdb9d732c3ae1ca52a148164aa6290e42da62cb9` |
+| 7 | `def` | [finiteNormalizedPointwise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/finitenormalizedpointwise.md) | 80 | `declaration-track:1752b1c34cc181e388c1d627bc23d0923e3c4e170429a6f77686bb91b08c4df5` |
+| 8 | `def` | [pointwiseRieszTailBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/pointwiseriesztailbudget.md) | 83 | `declaration-track:fd71f6dff7687188118d454cb0b8afa4b2eb875770e614a4882c0dbe780be766` |
+| 9 | `theorem` | [norm_pointwise_sub_finite_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/norm-pointwise-sub-finite-le.md) | 87 | `result-track:67384fc514c62c7c6e79c2a5c4efffba2c010f276c6b9dae9161cff7ba3575df` |
+| 10 | `theorem` | [pointwiseRieszTailBudget_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/pointwiseriesztailbudget-tendsto-zero.md) | 96 | `result-track:7c8c33ab847296d35312b95df30473f2c959280a8a4b7ea6d9ff2ddcbb4e2ca0` |
+| 11 | `theorem` | [finiteNormalizedPointwise_tendsto_psiHalf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedRieszFiniteEvaluation.lean/declarations/finitenormalizedpointwise-tendsto-psihalf.md) | 105 | `result-track:231ec4d499adb40edca462f99600a1476514da0f89193ba73c61e29e8eedc196` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

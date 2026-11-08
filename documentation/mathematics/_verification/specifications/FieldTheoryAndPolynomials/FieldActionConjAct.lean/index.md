@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/FieldActionConjAct.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/FieldActionConjAct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldActionConjAct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldActionConjAct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [distribMulAction₀](../../../../FieldTheoryAndPolynomials/FieldActionConjAct.lean/declarations/distribmulaction.md) | 18 | `declaration-track:fbaf17877fa36d7254e63a3a274958f55ca61de6f0484c11e6cf28c91eefa6c4` |
+| 1 | `instance` | [distribMulAction₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldActionConjAct.lean/declarations/distribmulaction.md) | 18 | `declaration-track:fbaf17877fa36d7254e63a3a274958f55ca61de6f0484c11e6cf28c91eefa6c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

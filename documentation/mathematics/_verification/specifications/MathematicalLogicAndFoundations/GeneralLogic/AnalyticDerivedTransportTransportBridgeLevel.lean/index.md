@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportTransportBridgeLevel.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportTransportBridgeLevel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportTransportBridgeLevel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportTransportBridgeLevel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TransportBridgeLevel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportTransportBridgeLevel.lean/declarations/transportbridgelevel.md) | 19 | `declaration-track:b9ba510fb3c381790d41e3b6872ea68c50fd6492847d4934397509c12ceea028` |
-| 2 | `structure` | [AnalyticDerivedTransportModel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportTransportBridgeLevel.lean/declarations/analyticderivedtransportmodel.md) | 35 | `declaration-track:565d3b92c80b59e24a0fb1c2a19f13fb03840d390f341d561a9fe3d2b5d74674` |
-| 3 | `theorem` | [transport_model_euler_invariant_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportTransportBridgeLevel.lean/declarations/transport-model-euler-invariant-if-supplied.md) | 45 | `result-track:86247cc5b1ad08d606d1520e96b113328518806465ca833c2b721c34c6ac6018` |
-| 4 | `theorem` | [transport_model_quasi_iso_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportTransportBridgeLevel.lean/declarations/transport-model-quasi-iso-if-supplied.md) | 50 | `result-track:cc3b62d4e246e2d18a042bf9425be7a6a9b6613504a27db4b981e01e52477e0b` |
+| 1 | `inductive` | [TransportBridgeLevel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportTransportBridgeLevel.lean/declarations/transportbridgelevel.md) | 19 | `declaration-track:b9ba510fb3c381790d41e3b6872ea68c50fd6492847d4934397509c12ceea028` |
+| 2 | `structure` | [AnalyticDerivedTransportModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportTransportBridgeLevel.lean/declarations/analyticderivedtransportmodel.md) | 35 | `declaration-track:565d3b92c80b59e24a0fb1c2a19f13fb03840d390f341d561a9fe3d2b5d74674` |
+| 3 | `theorem` | [transport_model_euler_invariant_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportTransportBridgeLevel.lean/declarations/transport-model-euler-invariant-if-supplied.md) | 45 | `result-track:86247cc5b1ad08d606d1520e96b113328518806465ca833c2b721c34c6ac6018` |
+| 4 | `theorem` | [transport_model_quasi_iso_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AnalyticDerivedTransportTransportBridgeLevel.lean/declarations/transport-model-quasi-iso-if-supplied.md) | 50 | `result-track:cc3b62d4e246e2d18a042bf9425be7a6a9b6613504a27db4b981e01e52477e0b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

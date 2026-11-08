@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearIndependentBaseChangeNamespacedPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearIndependentBaseChangeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearIndependentBaseChangeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearIndependentBaseChangeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [LinearIndependent.linearIndependent_algebraMap_comp_aux](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearIndependentBaseChangeNamespacedPublic.lean/declarations/linearindependent-linearindependent-algebramap-comp-aux.md) | 38 | `result-track:96e71018d6eb46d9e08e0dc76cc3f0237447d1b3344b773f2eda9c333e1a10c1` |
-| 2 | `lemma` | [linearIndependent_algebraMap_comp_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearIndependentBaseChangeNamespacedPublic.lean/declarations/linearindependent-algebramap-comp-iff.md) | 54 | `result-track:0a64e6ae402f2fb5f601e3acbddd7776ebf99a620989714a3305caf1f0283e2f` |
+| 1 | `lemma` | [LinearIndependent.linearIndependent_algebraMap_comp_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearIndependentBaseChangeNamespacedPublic.lean/declarations/linearindependent-linearindependent-algebramap-comp-aux.md) | 38 | `result-track:96e71018d6eb46d9e08e0dc76cc3f0237447d1b3344b773f2eda9c333e1a10c1` |
+| 2 | `lemma` | [linearIndependent_algebraMap_comp_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearIndependentBaseChangeNamespacedPublic.lean/declarations/linearindependent-algebramap-comp-iff.md) | 54 | `result-track:0a64e6ae402f2fb5f601e3acbddd7776ebf99a620989714a3305caf1f0283e2f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicBasicNamespacedRebuildCheckedStatusAllowed.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicBasicNamespacedRebuildCheckedStatusAllowed.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicBasicNamespacedRebuildCheckedStatusAllowed.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicBasicNamespacedRebuildCheckedStatusAllowed.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rebuild_checked_status_allowed](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicBasicNamespacedRebuildCheckedStatusAllowed.lean/declarations/rebuild-checked-status-allowed.md) | 21 | `result-track:02e1fb0e4c78cfe4033b20e1ab984d475385c9388f61cb30cc5c04c59cb0bc00` |
-| 2 | `theorem` | [rebuild_mathlib_status_allowed](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicBasicNamespacedRebuildCheckedStatusAllowed.lean/declarations/rebuild-mathlib-status-allowed.md) | 26 | `result-track:10b55d42bc64fd3e855dbccfb325eddc27b7edbf4ceb6b1e12455af791324f78` |
+| 1 | `theorem` | [rebuild_checked_status_allowed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicBasicNamespacedRebuildCheckedStatusAllowed.lean/declarations/rebuild-checked-status-allowed.md) | 21 | `result-track:02e1fb0e4c78cfe4033b20e1ab984d475385c9388f61cb30cc5c04c59cb0bc00` |
+| 2 | `theorem` | [rebuild_mathlib_status_allowed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicBasicNamespacedRebuildCheckedStatusAllowed.lean/declarations/rebuild-mathlib-status-allowed.md) | 26 | `result-track:10b55d42bc64fd3e855dbccfb325eddc27b7edbf4ceb6b1e12455af791324f78` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

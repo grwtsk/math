@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/OrderedGlobalLoci.lean/index.md) · [Full source](../../../../Combinatorics/OrderedGlobalLoci.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,23 +58,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MatrixLocus](../../../../Combinatorics/OrderedGlobalLoci.lean/declarations/matrixlocus.md) | 37 | `declaration-track:b5eb01c677df05ed02f8f225fc0ece8b7324779d66f93c01851deb30878cc8d9` |
-| 2 | `def` | [rowEmbed](../../../../Combinatorics/OrderedGlobalLoci.lean/declarations/rowembed.md) | 48 | `declaration-track:27edbaa686785c8e5eeb8821800088ea63f6ed7d5b5a1ec67a5f0a905baea3fd` |
-| 3 | `def` | [columnEmbed](../../../../Combinatorics/OrderedGlobalLoci.lean/declarations/columnembed.md) | 53 | `declaration-track:ef6bd52c2084a20e2829a42104a24bca7165f6875cbf148671f7b10d17922d0b` |
-| 4 | `theorem` | [rowEmbed_mem](../../../../Combinatorics/OrderedGlobalLoci.lean/declarations/rowembed-mem.md) | 58 | `result-track:ed435faa516218f4953cb5de49043bccc6d14099ea0aed47f7ac31f9af2dab4e` |
-| 5 | `theorem` | [columnEmbed_mem](../../../../Combinatorics/OrderedGlobalLoci.lean/declarations/columnembed-mem.md) | 64 | `result-track:b26e8447dad901710512d80a398abdac689e6ccff5ed85c65f406cd8494e1e80` |
-| 6 | `theorem` | [rowEmbed_injective](../../../../Combinatorics/OrderedGlobalLoci.lean/declarations/rowembed-injective.md) | 69 | `result-track:684356e2d20c7327d408f085a4611924d02b65a94abb5983b54ed77cc2c50c0a` |
-| 7 | `theorem` | [columnEmbed_injective](../../../../Combinatorics/OrderedGlobalLoci.lean/declarations/columnembed-injective.md) | 74 | `result-track:f04fd587b5a32882de086b55647d6d5495f7483ab15ee31fb2a999dcb7adb078` |
-| 8 | `def` | [localRow?](../../../../Combinatorics/OrderedGlobalLoci.lean/declarations/localrow.md) | 80 | `declaration-track:20664ec819b6c43d86206e10b6d7bba1ecdbca6617379244edf4e8f2f3c6f2cc` |
-| 9 | `def` | [localColumn?](../../../../Combinatorics/OrderedGlobalLoci.lean/declarations/localcolumn.md) | 88 | `declaration-track:3b3d679e550c068648949e6b8466992daae03c8d768c5775b1e3999add5db8a9` |
-| 10 | `theorem` | [localRow?_rowEmbed](../../../../Combinatorics/OrderedGlobalLoci.lean/declarations/localrow-rowembed.md) | 97 | `result-track:73eda443bd6feb09fa76af6c7bd380958af7c00b2f7c5db0010b8a04846eda3a` |
-| 11 | `theorem` | [localColumn?_columnEmbed](../../../../Combinatorics/OrderedGlobalLoci.lean/declarations/localcolumn-columnembed.md) | 110 | `result-track:25aaa366297117b785ba6dee6db5707ae2e1eb098fdbb9f117eebbe06f0262f3` |
-| 12 | `theorem` | [localRow?_eq_none_iff](../../../../Combinatorics/OrderedGlobalLoci.lean/declarations/localrow-eq-none-iff.md) | 123 | `result-track:3a9a3b029aa029b493f952c7b5e8e6fd3324a68299757ae1d288b60db2cd116e` |
-| 13 | `theorem` | [localColumn?_eq_none_iff](../../../../Combinatorics/OrderedGlobalLoci.lean/declarations/localcolumn-eq-none-iff.md) | 128 | `result-track:79e8e3e8d0b28033e3b23fe2b6af56963219cfe8f3ca3ceacb2539c4d6e6f7fd` |
-| 14 | `theorem` | [localRow?_eq_some_iff](../../../../Combinatorics/OrderedGlobalLoci.lean/declarations/localrow-eq-some-iff.md) | 133 | `result-track:aaf8c84a1bb9934a9214b34792af371b1f33b6a1efd088f94a342ddb9ab70264` |
-| 15 | `theorem` | [localColumn?_eq_some_iff](../../../../Combinatorics/OrderedGlobalLoci.lean/declarations/localcolumn-eq-some-iff.md) | 149 | `result-track:cb0b95eeaaeb7ad5b31c45e2972842d119cc50d2cf5df5c49d2e007f070a4104` |
-| 16 | `theorem` | [rowEmbed_range](../../../../Combinatorics/OrderedGlobalLoci.lean/declarations/rowembed-range.md) | 165 | `result-track:b640b611b8f1a1b272f081018b87ae0f9385cf5e0d227cec3073163e455adc9a` |
-| 17 | `theorem` | [columnEmbed_range](../../../../Combinatorics/OrderedGlobalLoci.lean/declarations/columnembed-range.md) | 170 | `result-track:fb96c8bd42fd6320776bd85927c97d269c9308524b3a834ca5d0fd3035510bb8` |
+| 1 | `structure` | [MatrixLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/declarations/matrixlocus.md) | 37 | `declaration-track:b5eb01c677df05ed02f8f225fc0ece8b7324779d66f93c01851deb30878cc8d9` |
+| 2 | `def` | [rowEmbed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/declarations/rowembed.md) | 48 | `declaration-track:27edbaa686785c8e5eeb8821800088ea63f6ed7d5b5a1ec67a5f0a905baea3fd` |
+| 3 | `def` | [columnEmbed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/declarations/columnembed.md) | 53 | `declaration-track:ef6bd52c2084a20e2829a42104a24bca7165f6875cbf148671f7b10d17922d0b` |
+| 4 | `theorem` | [rowEmbed_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/declarations/rowembed-mem.md) | 58 | `result-track:ed435faa516218f4953cb5de49043bccc6d14099ea0aed47f7ac31f9af2dab4e` |
+| 5 | `theorem` | [columnEmbed_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/declarations/columnembed-mem.md) | 64 | `result-track:b26e8447dad901710512d80a398abdac689e6ccff5ed85c65f406cd8494e1e80` |
+| 6 | `theorem` | [rowEmbed_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/declarations/rowembed-injective.md) | 69 | `result-track:684356e2d20c7327d408f085a4611924d02b65a94abb5983b54ed77cc2c50c0a` |
+| 7 | `theorem` | [columnEmbed_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/declarations/columnembed-injective.md) | 74 | `result-track:f04fd587b5a32882de086b55647d6d5495f7483ab15ee31fb2a999dcb7adb078` |
+| 8 | `def` | [localRow?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/declarations/localrow.md) | 80 | `declaration-track:20664ec819b6c43d86206e10b6d7bba1ecdbca6617379244edf4e8f2f3c6f2cc` |
+| 9 | `def` | [localColumn?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/declarations/localcolumn.md) | 88 | `declaration-track:3b3d679e550c068648949e6b8466992daae03c8d768c5775b1e3999add5db8a9` |
+| 10 | `theorem` | [localRow?_rowEmbed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/declarations/localrow-rowembed.md) | 97 | `result-track:73eda443bd6feb09fa76af6c7bd380958af7c00b2f7c5db0010b8a04846eda3a` |
+| 11 | `theorem` | [localColumn?_columnEmbed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/declarations/localcolumn-columnembed.md) | 110 | `result-track:25aaa366297117b785ba6dee6db5707ae2e1eb098fdbb9f117eebbe06f0262f3` |
+| 12 | `theorem` | [localRow?_eq_none_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/declarations/localrow-eq-none-iff.md) | 123 | `result-track:3a9a3b029aa029b493f952c7b5e8e6fd3324a68299757ae1d288b60db2cd116e` |
+| 13 | `theorem` | [localColumn?_eq_none_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/declarations/localcolumn-eq-none-iff.md) | 128 | `result-track:79e8e3e8d0b28033e3b23fe2b6af56963219cfe8f3ca3ceacb2539c4d6e6f7fd` |
+| 14 | `theorem` | [localRow?_eq_some_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/declarations/localrow-eq-some-iff.md) | 133 | `result-track:aaf8c84a1bb9934a9214b34792af371b1f33b6a1efd088f94a342ddb9ab70264` |
+| 15 | `theorem` | [localColumn?_eq_some_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/declarations/localcolumn-eq-some-iff.md) | 149 | `result-track:cb0b95eeaaeb7ad5b31c45e2972842d119cc50d2cf5df5c49d2e007f070a4104` |
+| 16 | `theorem` | [rowEmbed_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/declarations/rowembed-range.md) | 165 | `result-track:b640b611b8f1a1b272f081018b87ae0f9385cf5e0d227cec3073163e455adc9a` |
+| 17 | `theorem` | [columnEmbed_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/declarations/columnembed-range.md) | 170 | `result-track:fb96c8bd42fd6320776bd85927c97d269c9308524b3a834ca5d0fd3035510bb8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

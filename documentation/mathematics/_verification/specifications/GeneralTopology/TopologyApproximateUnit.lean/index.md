@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopologyApproximateUnit.lean/index.md) · [Full source](../../../../GeneralTopology/TopologyApproximateUnit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyApproximateUnit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyApproximateUnit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Filter.IsApproximateUnit](../../../../GeneralTopology/TopologyApproximateUnit.lean/declarations/filter-isapproximateunit.md) | 25 | `declaration-track:932edb8fb4020ea19b477f3705f0f9069e2a7357055b601c396bb3e38ecad2f2` |
-| 2 | `lemma` | [pure_one](../../../../GeneralTopology/TopologyApproximateUnit.lean/declarations/pure-one.md) | 42 | `result-track:2d7d6388a25d0bc024d1fd4e783e2081d999dc4f3a973cce8d0b3034044f85fb` |
-| 3 | `lemma` | [mono](../../../../GeneralTopology/TopologyApproximateUnit.lean/declarations/mono.md) | 48 | `result-track:f10db6571f024712c1d1770444bd24cc0ce095d8104080db62d60dcc2b5167a7` |
-| 4 | `lemma` | [nhds_one](../../../../GeneralTopology/TopologyApproximateUnit.lean/declarations/nhds-one.md) | 55 | `result-track:6feb2c4cbb7136362a6c7c53504f546a1526fa8d4f988892a311eff590348431` |
-| 5 | `lemma` | [iff_neBot_and_le_nhds_one](../../../../GeneralTopology/TopologyApproximateUnit.lean/declarations/iff-nebot-and-le-nhds-one.md) | 60 | `result-track:fcc0576ee4747188bb10237b2abe579101c7b9adf3d75cce5f91a5f0cbe3b178` |
-| 6 | `lemma` | [iff_le_nhds_one](../../../../GeneralTopology/TopologyApproximateUnit.lean/declarations/iff-le-nhds-one.md) | 66 | `result-track:793103b635590441fbd331d56f9fe6db9f651e594eb7e5a6e46a3cfc96d25a25` |
+| 1 | `structure` | [Filter.IsApproximateUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyApproximateUnit.lean/declarations/filter-isapproximateunit.md) | 25 | `declaration-track:932edb8fb4020ea19b477f3705f0f9069e2a7357055b601c396bb3e38ecad2f2` |
+| 2 | `lemma` | [pure_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyApproximateUnit.lean/declarations/pure-one.md) | 42 | `result-track:2d7d6388a25d0bc024d1fd4e783e2081d999dc4f3a973cce8d0b3034044f85fb` |
+| 3 | `lemma` | [mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyApproximateUnit.lean/declarations/mono.md) | 48 | `result-track:f10db6571f024712c1d1770444bd24cc0ce095d8104080db62d60dcc2b5167a7` |
+| 4 | `lemma` | [nhds_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyApproximateUnit.lean/declarations/nhds-one.md) | 55 | `result-track:6feb2c4cbb7136362a6c7c53504f546a1526fa8d4f988892a311eff590348431` |
+| 5 | `lemma` | [iff_neBot_and_le_nhds_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyApproximateUnit.lean/declarations/iff-nebot-and-le-nhds-one.md) | 60 | `result-track:fcc0576ee4747188bb10237b2abe579101c7b9adf3d75cce5f91a5f0cbe3b178` |
+| 6 | `lemma` | [iff_le_nhds_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyApproximateUnit.lean/declarations/iff-le-nhds-one.md) | 66 | `result-track:793103b635590441fbd331d56f9fe6db9f651e594eb7e5a6e46a3cfc96d25a25` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

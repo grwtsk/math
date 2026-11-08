@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BranchSeparationNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BranchSeparationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BranchSeparationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BranchSeparationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ProofDomain](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BranchSeparationNamespaced.lean/declarations/proofdomain.md) | 22 | `declaration-track:f9c6f4cfbe21020d6cc09ee4f831d4b3b11e0d207008d956d8fe5faed4301a1a` |
-| 2 | `inductive` | [DomainTransition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BranchSeparationNamespaced.lean/declarations/domaintransition.md) | 29 | `declaration-track:dd6fadbba64366bf132a28d0871b74b0ef5ea90f6694181c2d1d19c10729acfe` |
-| 3 | `theorem` | [no_analytic_to_security_without_bridge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BranchSeparationNamespaced.lean/declarations/no-analytic-to-security-without-bridge.md) | 45 | `result-track:ab83489d4db9789f72f7ce4e1dd2ecbe95175c292a2f1a9f99164b300e6f81b2` |
-| 4 | `inductive` | [ProhibitedCrossBranchInference](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BranchSeparationNamespaced.lean/declarations/prohibitedcrossbranchinference.md) | 50 | `declaration-track:8e495547e38e6d7ff40f42805defe93b6b7b15beaf25e7617db0d4e9fddcbe53` |
-| 5 | `def` | [ProhibitedCrossBranchInference.admissible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BranchSeparationNamespaced.lean/declarations/prohibitedcrossbranchinference-admissible.md) | 60 | `declaration-track:55530e7c6a238348c370320ef54abc3f0bf400ef8d3e3f15cdb9dcb4e8d19126` |
-| 6 | `theorem` | [prohibitedCrossBranchInference_rejected](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BranchSeparationNamespaced.lean/declarations/prohibitedcrossbranchinference-rejected.md) | 64 | `result-track:f6a5f0764ccba8c9f05b2a631d38907fe2cb8dfda6716d93a735c24961899d5c` |
+| 1 | `inductive` | [ProofDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BranchSeparationNamespaced.lean/declarations/proofdomain.md) | 22 | `declaration-track:f9c6f4cfbe21020d6cc09ee4f831d4b3b11e0d207008d956d8fe5faed4301a1a` |
+| 2 | `inductive` | [DomainTransition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BranchSeparationNamespaced.lean/declarations/domaintransition.md) | 29 | `declaration-track:dd6fadbba64366bf132a28d0871b74b0ef5ea90f6694181c2d1d19c10729acfe` |
+| 3 | `theorem` | [no_analytic_to_security_without_bridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BranchSeparationNamespaced.lean/declarations/no-analytic-to-security-without-bridge.md) | 45 | `result-track:ab83489d4db9789f72f7ce4e1dd2ecbe95175c292a2f1a9f99164b300e6f81b2` |
+| 4 | `inductive` | [ProhibitedCrossBranchInference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BranchSeparationNamespaced.lean/declarations/prohibitedcrossbranchinference.md) | 50 | `declaration-track:8e495547e38e6d7ff40f42805defe93b6b7b15beaf25e7617db0d4e9fddcbe53` |
+| 5 | `def` | [ProhibitedCrossBranchInference.admissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BranchSeparationNamespaced.lean/declarations/prohibitedcrossbranchinference-admissible.md) | 60 | `declaration-track:55530e7c6a238348c370320ef54abc3f0bf400ef8d3e3f15cdb9dcb4e8d19126` |
+| 6 | `theorem` | [prohibitedCrossBranchInference_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BranchSeparationNamespaced.lean/declarations/prohibitedcrossbranchinference-rejected.md) | 64 | `result-track:f6a5f0764ccba8c9f05b2a631d38907fe2cb8dfda6716d93a735c24961899d5c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

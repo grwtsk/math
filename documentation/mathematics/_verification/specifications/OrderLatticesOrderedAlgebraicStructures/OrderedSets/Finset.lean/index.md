@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [orderIsoSingleton](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/declarations/orderisosingleton.md) | 30 | `declaration-track:031fefb3bc01520bddbede1136a95aaeac38b57dc233495e1beee28746e75d5e` |
-| 2 | `lemma` | [orderIsoSingleton_apply](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/declarations/orderisosingleton-apply.md) | 35 | `result-track:0463fa1be0800df816457ab14d14aad4dd5d86b1660924f02285e5c935633f16` |
-| 3 | `def` | [orderIsoPair](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/declarations/orderisopair.md) | 45 | `declaration-track:61bfce436e12c2fea11a00a90d786086125ab59723c8a68abc94d021ded6c144` |
-| 4 | `lemma` | [orderIsoPair_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/declarations/orderisopair-zero.md) | 54 | `result-track:9d0f7d0eea42e70e34903547cd3f53ae7989016e474be3b6981d61d67556e75c` |
-| 5 | `lemma` | [orderIsoPair_one](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/declarations/orderisopair-one.md) | 55 | `result-track:162a2db61d45884b3aed13d1e986d16d07d68c1d280b505eabbc320e4f22eb09` |
-| 6 | `def` | [orderIsoTriple](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/declarations/orderisotriple.md) | 65 | `declaration-track:d9ff814366e3b87becab62dfd467225cae11e9362be596e979759eb633f607ae` |
-| 7 | `lemma` | [orderIsoTriple_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/declarations/orderisotriple-zero.md) | 75 | `result-track:832b440f3e42f8db306eed3753d0040d422d9a90a45957ac03ab94d298c17e2e` |
-| 8 | `lemma` | [orderIsoTriple_one](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/declarations/orderisotriple-one.md) | 76 | `result-track:69e097515e128761456665a399e19cc20ba051501387e40f9e33baa246a76b37` |
-| 9 | `lemma` | [orderIsoTriple_two](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/declarations/orderisotriple-two.md) | 77 | `result-track:0a5a3cdceb59a5745d48277ee6d27f93bee775446d7ca6b2865bd477b422353f` |
+| 1 | `def` | [orderIsoSingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/declarations/orderisosingleton.md) | 30 | `declaration-track:031fefb3bc01520bddbede1136a95aaeac38b57dc233495e1beee28746e75d5e` |
+| 2 | `lemma` | [orderIsoSingleton_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/declarations/orderisosingleton-apply.md) | 35 | `result-track:0463fa1be0800df816457ab14d14aad4dd5d86b1660924f02285e5c935633f16` |
+| 3 | `def` | [orderIsoPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/declarations/orderisopair.md) | 45 | `declaration-track:61bfce436e12c2fea11a00a90d786086125ab59723c8a68abc94d021ded6c144` |
+| 4 | `lemma` | [orderIsoPair_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/declarations/orderisopair-zero.md) | 54 | `result-track:9d0f7d0eea42e70e34903547cd3f53ae7989016e474be3b6981d61d67556e75c` |
+| 5 | `lemma` | [orderIsoPair_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/declarations/orderisopair-one.md) | 55 | `result-track:162a2db61d45884b3aed13d1e986d16d07d68c1d280b505eabbc320e4f22eb09` |
+| 6 | `def` | [orderIsoTriple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/declarations/orderisotriple.md) | 65 | `declaration-track:d9ff814366e3b87becab62dfd467225cae11e9362be596e979759eb633f607ae` |
+| 7 | `lemma` | [orderIsoTriple_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/declarations/orderisotriple-zero.md) | 75 | `result-track:832b440f3e42f8db306eed3753d0040d422d9a90a45957ac03ab94d298c17e2e` |
+| 8 | `lemma` | [orderIsoTriple_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/declarations/orderisotriple-one.md) | 76 | `result-track:69e097515e128761456665a399e19cc20ba051501387e40f9e33baa246a76b37` |
+| 9 | `lemma` | [orderIsoTriple_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Finset.lean/declarations/orderisotriple-two.md) | 77 | `result-track:0a5a3cdceb59a5745d48277ee6d27f93bee775446d7ca6b2865bd477b422353f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

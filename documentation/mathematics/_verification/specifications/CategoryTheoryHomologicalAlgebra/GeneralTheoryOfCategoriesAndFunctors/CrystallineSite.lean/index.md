@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CrystallineSite.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CrystallineSite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CrystallineSite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CrystallineSite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CrystallineSite](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CrystallineSite.lean/declarations/crystallinesite.md) | 25 | `declaration-track:8b5eadf44881f86ef0f0a36e276ec950c77020f06d6fec2273339108fd989e8a` |
-| 2 | `structure` | [CrystallineCover](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CrystallineSite.lean/declarations/crystallinecover.md) | 32 | `declaration-track:49482ca3334003bb3c79bc5b36700461d40f5e9740ec079f437cd480a6a3ff40` |
-| 3 | `theorem` | [crystalline_cover_is_cover](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CrystallineSite.lean/declarations/crystalline-cover-is-cover.md) | 38 | `result-track:dae19356c3224acd0c52849641895a2d0f4250e67755e93e48f520180891d09b` |
+| 1 | `structure` | [CrystallineSite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CrystallineSite.lean/declarations/crystallinesite.md) | 25 | `declaration-track:8b5eadf44881f86ef0f0a36e276ec950c77020f06d6fec2273339108fd989e8a` |
+| 2 | `structure` | [CrystallineCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CrystallineSite.lean/declarations/crystallinecover.md) | 32 | `declaration-track:49482ca3334003bb3c79bc5b36700461d40f5e9740ec079f437cd480a6a3ff40` |
+| 3 | `theorem` | [crystalline_cover_is_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CrystallineSite.lean/declarations/crystalline-cover-is-cover.md) | 38 | `result-track:dae19356c3224acd0c52849641895a2d0f4250e67755e93e48f520180891d09b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

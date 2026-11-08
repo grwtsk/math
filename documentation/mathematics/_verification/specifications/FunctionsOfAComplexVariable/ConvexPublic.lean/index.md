@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ConvexPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ConvexPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ConvexPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ConvexPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isPathConnected_halfSpace_re_gt_diff_singleton](../../../../FunctionsOfAComplexVariable/ConvexPublic.lean/declarations/ispathconnected-halfspace-re-gt-diff-singleton.md) | 21 | `result-track:d46b07b869a192d27b920a99ae545ea9305bd5c56491242dc605f326eea04367` |
+| 1 | `theorem` | [isPathConnected_halfSpace_re_gt_diff_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ConvexPublic.lean/declarations/ispathconnected-halfspace-re-gt-diff-singleton.md) | 21 | `result-track:d46b07b869a192d27b920a99ae545ea9305bd5c56491242dc605f326eea04367` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

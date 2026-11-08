@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ErdosGinzburgZiv.lean/index.md) · [Full source](../../../../Combinatorics/ErdosGinzburgZiv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZiv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZiv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [f₁](../../../../Combinatorics/ErdosGinzburgZiv.lean/declarations/f-source-edition-2.md) | 32 | `declaration-track:f0a3f68426e9bb369004803b65f2de87e691246e28bd26bc744dbae9eaa4a85e` |
-| 2 | `def` | [f₂](../../../../Combinatorics/ErdosGinzburgZiv.lean/declarations/f.md) | 36 | `declaration-track:4beaf1a2cab53de359a73de1becbff618e4d358ba6138d5266bd0d41252c338d` |
-| 3 | `lemma` | [totalDegree_f₁_add_totalDegree_f₂](../../../../Combinatorics/ErdosGinzburgZiv.lean/declarations/totaldegree-f-add-totaldegree-f.md) | 39 | `result-track:a140a71656336db539ea9692e9d207d48139ebd06f5dcceee6541807d9bb6d66` |
-| 4 | `theorem` | [ZMod.erdos_ginzburg_ziv_prime](../../../../Combinatorics/ErdosGinzburgZiv.lean/declarations/zmod-erdos-ginzburg-ziv-prime.md) | 52 | `result-track:d86a3f8cd7a217332848d303e2a9f66b0b52b1e28e6fd436b330543ad0058730` |
-| 5 | `theorem` | [Int.erdos_ginzburg_ziv_prime](../../../../Combinatorics/ErdosGinzburgZiv.lean/declarations/int-erdos-ginzburg-ziv-prime.md) | 92 | `result-track:7ecda631cce34d5c43a5ba085c312069b502f04356c3a0c10f72d8f9405fe7d1` |
-| 6 | `theorem` | [Int.erdos_ginzburg_ziv](../../../../Combinatorics/ErdosGinzburgZiv.lean/declarations/int-erdos-ginzburg-ziv.md) | 106 | `result-track:802a65713fe56dfdae13964a8e15af8e5446eb0edb537168158cbc09456c0e57` |
-| 7 | `theorem` | [ZMod.erdos_ginzburg_ziv](../../../../Combinatorics/ErdosGinzburgZiv.lean/declarations/zmod-erdos-ginzburg-ziv.md) | 180 | `result-track:1d34baddd8cb8a2af79eeeba785518b5890fa3a566ad59c846493a5630af3bb4` |
-| 8 | `theorem` | [Int.erdos_ginzburg_ziv_multiset](../../../../Combinatorics/ErdosGinzburgZiv.lean/declarations/int-erdos-ginzburg-ziv-multiset.md) | 188 | `result-track:84a6fd94b3c8ba199941f152c0e2b95dc1e527b3d138b21e6175a1f4a79e8807` |
-| 9 | `theorem` | [ZMod.erdos_ginzburg_ziv_multiset](../../../../Combinatorics/ErdosGinzburgZiv.lean/declarations/zmod-erdos-ginzburg-ziv-multiset.md) | 197 | `result-track:47bc51e90ab5e2aa7975507a14a78ef89516b30f702c0074fce9758462362509` |
+| 1 | `def` | [f₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZiv.lean/declarations/f-source-edition-2.md) | 32 | `declaration-track:f0a3f68426e9bb369004803b65f2de87e691246e28bd26bc744dbae9eaa4a85e` |
+| 2 | `def` | [f₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZiv.lean/declarations/f.md) | 36 | `declaration-track:4beaf1a2cab53de359a73de1becbff618e4d358ba6138d5266bd0d41252c338d` |
+| 3 | `lemma` | [totalDegree_f₁_add_totalDegree_f₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZiv.lean/declarations/totaldegree-f-add-totaldegree-f.md) | 39 | `result-track:a140a71656336db539ea9692e9d207d48139ebd06f5dcceee6541807d9bb6d66` |
+| 4 | `theorem` | [ZMod.erdos_ginzburg_ziv_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZiv.lean/declarations/zmod-erdos-ginzburg-ziv-prime.md) | 52 | `result-track:d86a3f8cd7a217332848d303e2a9f66b0b52b1e28e6fd436b330543ad0058730` |
+| 5 | `theorem` | [Int.erdos_ginzburg_ziv_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZiv.lean/declarations/int-erdos-ginzburg-ziv-prime.md) | 92 | `result-track:7ecda631cce34d5c43a5ba085c312069b502f04356c3a0c10f72d8f9405fe7d1` |
+| 6 | `theorem` | [Int.erdos_ginzburg_ziv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZiv.lean/declarations/int-erdos-ginzburg-ziv.md) | 106 | `result-track:802a65713fe56dfdae13964a8e15af8e5446eb0edb537168158cbc09456c0e57` |
+| 7 | `theorem` | [ZMod.erdos_ginzburg_ziv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZiv.lean/declarations/zmod-erdos-ginzburg-ziv.md) | 180 | `result-track:1d34baddd8cb8a2af79eeeba785518b5890fa3a566ad59c846493a5630af3bb4` |
+| 8 | `theorem` | [Int.erdos_ginzburg_ziv_multiset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZiv.lean/declarations/int-erdos-ginzburg-ziv-multiset.md) | 188 | `result-track:84a6fd94b3c8ba199941f152c0e2b95dc1e527b3d138b21e6175a1f4a79e8807` |
+| 9 | `theorem` | [ZMod.erdos_ginzburg_ziv_multiset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZiv.lean/declarations/zmod-erdos-ginzburg-ziv-multiset.md) | 197 | `result-track:47bc51e90ab5e2aa7975507a14a78ef89516b30f702c0074fce9758462362509` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFiniteGammaReturn.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFiniteGammaReturn.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFiniteGammaReturn.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFiniteGammaReturn.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [gammaTraceFloor](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFiniteGammaReturn.lean/declarations/gammatracefloor.md) | 19 | `declaration-track:310817c4f5d58ad7bf151349d3c5d0307f226da0965228d45b6b3d6b4029a758` |
-| 2 | `theorem` | [actual_first_prime_correlation_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFiniteGammaReturn.lean/declarations/actual-first-prime-correlation-lower.md) | 24 | `result-track:08dc88d8b87bb8ce71af681f38f5a993563ee1ae6f2c5291393b2067b330d2c5` |
-| 3 | `theorem` | [gammaTraceFloor_le_actual](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFiniteGammaReturn.lean/declarations/gammatracefloor-le-actual.md) | 45 | `result-track:117da6d0d1f2e2cebcfc6b570df16c5c9de868122a8c5543e29ab5e3491b5538` |
-| 4 | `theorem` | [gammaTraceFloor_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFiniteGammaReturn.lean/declarations/gammatracefloor-nonneg.md) | 56 | `result-track:55a098a871d82981f8334f0a65a2d25f7925aa00c74a9e570ba7ff2fbed99223` |
+| 1 | `def` | [gammaTraceFloor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFiniteGammaReturn.lean/declarations/gammatracefloor.md) | 19 | `declaration-track:310817c4f5d58ad7bf151349d3c5d0307f226da0965228d45b6b3d6b4029a758` |
+| 2 | `theorem` | [actual_first_prime_correlation_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFiniteGammaReturn.lean/declarations/actual-first-prime-correlation-lower.md) | 24 | `result-track:08dc88d8b87bb8ce71af681f38f5a993563ee1ae6f2c5291393b2067b330d2c5` |
+| 3 | `theorem` | [gammaTraceFloor_le_actual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFiniteGammaReturn.lean/declarations/gammatracefloor-le-actual.md) | 45 | `result-track:117da6d0d1f2e2cebcfc6b570df16c5c9de868122a8c5543e29ab5e3491b5538` |
+| 4 | `theorem` | [gammaTraceFloor_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFiniteGammaReturn.lean/declarations/gammatracefloor-nonneg.md) | 56 | `result-track:55a098a871d82981f8334f0a65a2d25f7925aa00c74a9e570ba7ff2fbed99223` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

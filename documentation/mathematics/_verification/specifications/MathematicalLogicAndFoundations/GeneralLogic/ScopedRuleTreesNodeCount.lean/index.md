@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScopedRuleTreesNodeCount.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScopedRuleTreesNodeCount.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScopedRuleTreesNodeCount.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScopedRuleTreesNodeCount.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Atomize.Formal.RawDerivation` — import line 20; external provider; requires a separately pinned dependency.
-- [Indexed Tree And Root](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexedTreeAndRoot.lean/index.md) — import line 22; pinned internal source present.
+- [Indexed Tree And Root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexedTreeAndRoot.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [size](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScopedRuleTreesNodeCount.lean/declarations/size.md) | 86 | `declaration-track:4b5b6f16e472efce142b74aa13862fcfc2e0ca771189ca6bb26f1d84ac7c17ce` |
-| 2 | `def` | [sizeAll](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScopedRuleTreesNodeCount.lean/declarations/sizeall.md) | 102 | `declaration-track:785d00c6de3aca7baa7c32cf94c89ec37a01cb9e496357a585ffbddfd75cacb0` |
+| 1 | `def` | [size](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScopedRuleTreesNodeCount.lean/declarations/size.md) | 86 | `declaration-track:4b5b6f16e472efce142b74aa13862fcfc2e0ca771189ca6bb26f1d84ac7c17ce` |
+| 2 | `def` | [sizeAll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScopedRuleTreesNodeCount.lean/declarations/sizeall.md) | 102 | `declaration-track:785d00c6de3aca7baa7c32cf94c89ec37a01cb9e496357a585ffbddfd75cacb0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

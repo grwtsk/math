@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LexOrderNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LexOrderNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LexOrderNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LexOrderNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [lexOrder](../../../../CommutativeAlgebra/LexOrderNamespaced.lean/declarations/lexorder.md) | 38 | `declaration-track:d469b60e726ca12c9ab3150014db0dc8b02ecd702aa55f351a6a1385b1f4a391` |
-| 2 | `theorem` | [lexOrder_def_of_ne_zero](../../../../CommutativeAlgebra/LexOrderNamespaced.lean/declarations/lexorder-def-of-ne-zero.md) | 48 | `result-track:199bd27248a49580431ba0f622c087b13f62a872ab29ef66c4b98aa4d6ef0f2f` |
-| 3 | `theorem` | [lexOrder_eq_top_iff_eq_zero](../../../../CommutativeAlgebra/LexOrderNamespaced.lean/declarations/lexorder-eq-top-iff-eq-zero.md) | 59 | `result-track:a02a468d09603dd5771e3f45d9e8e4dc719946ba16747a071ab7a9f71f3e6578` |
-| 4 | `theorem` | [lexOrder_zero](../../../../CommutativeAlgebra/LexOrderNamespaced.lean/declarations/lexorder-zero.md) | 66 | `result-track:40c1adb0b9db8fb78df47016802a020dbc7c26d93fffa9585736dca8e3ba9c3e` |
-| 5 | `theorem` | [exists_finsupp_eq_lexOrder_of_ne_zero](../../../../CommutativeAlgebra/LexOrderNamespaced.lean/declarations/exists-finsupp-eq-lexorder-of-ne-zero.md) | 70 | `result-track:903d0473100542957c4cc4620bd3aac6bc7006947612d9e248d008281a9a984f` |
-| 6 | `theorem` | [coeff_ne_zero_of_lexOrder](../../../../CommutativeAlgebra/LexOrderNamespaced.lean/declarations/coeff-ne-zero-of-lexorder.md) | 76 | `result-track:c79b9036488ba67afb69aa38b3607d9fb477e301dc52cdeb5dd36b6f37dcd70f` |
-| 7 | `theorem` | [coeff_eq_zero_of_lt_lexOrder](../../../../CommutativeAlgebra/LexOrderNamespaced.lean/declarations/coeff-eq-zero-of-lt-lexorder.md) | 89 | `result-track:bdd84af0773859fb0938bdaee9d9d5630d48c79d97da18d6a2fdb7defbd711df` |
-| 8 | `theorem` | [lexOrder_le_of_coeff_ne_zero](../../../../CommutativeAlgebra/LexOrderNamespaced.lean/declarations/lexorder-le-of-coeff-ne-zero.md) | 98 | `result-track:85e872822929f53323a61bdcf05a5300b722eb825111b7d675338f73b74a8fca` |
-| 9 | `theorem` | [le_lexOrder_iff](../../../../CommutativeAlgebra/LexOrderNamespaced.lean/declarations/le-lexorder-iff.md) | 104 | `result-track:ade226031fd8f072e4e19757bcc031e976f7396114179fc053eb9ce32140b08d` |
-| 10 | `theorem` | [min_lexOrder_le](../../../../CommutativeAlgebra/LexOrderNamespaced.lean/declarations/min-lexorder-le.md) | 120 | `result-track:318c346fafc31f427844b84c2977b47b8c13a482356cb16b60cb665b716383d4` |
-| 11 | `theorem` | [coeff_mul_of_add_lexOrder](../../../../CommutativeAlgebra/LexOrderNamespaced.lean/declarations/coeff-mul-of-add-lexorder.md) | 127 | `result-track:023585fbf771ad8a2973092d015a414281da9b686c8fe7ef4274824dfc5410e4` |
-| 12 | `theorem` | [le_lexOrder_mul](../../../../CommutativeAlgebra/LexOrderNamespaced.lean/declarations/le-lexorder-mul.md) | 142 | `result-track:278059339566adad3cc83cdde38adc952d9ab8c3f3678a5b6e394c2a0de8306d` |
-| 13 | `theorem` | [lexOrder_mul](../../../../CommutativeAlgebra/LexOrderNamespaced.lean/declarations/lexorder-mul.md) | 163 | `result-track:8f4d8577131a5b3c13762e9839927185dc762d44c8f108b1264721c85a27a945` |
+| 1 | `def` | [lexOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LexOrderNamespaced.lean/declarations/lexorder.md) | 38 | `declaration-track:d469b60e726ca12c9ab3150014db0dc8b02ecd702aa55f351a6a1385b1f4a391` |
+| 2 | `theorem` | [lexOrder_def_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LexOrderNamespaced.lean/declarations/lexorder-def-of-ne-zero.md) | 48 | `result-track:199bd27248a49580431ba0f622c087b13f62a872ab29ef66c4b98aa4d6ef0f2f` |
+| 3 | `theorem` | [lexOrder_eq_top_iff_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LexOrderNamespaced.lean/declarations/lexorder-eq-top-iff-eq-zero.md) | 59 | `result-track:a02a468d09603dd5771e3f45d9e8e4dc719946ba16747a071ab7a9f71f3e6578` |
+| 4 | `theorem` | [lexOrder_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LexOrderNamespaced.lean/declarations/lexorder-zero.md) | 66 | `result-track:40c1adb0b9db8fb78df47016802a020dbc7c26d93fffa9585736dca8e3ba9c3e` |
+| 5 | `theorem` | [exists_finsupp_eq_lexOrder_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LexOrderNamespaced.lean/declarations/exists-finsupp-eq-lexorder-of-ne-zero.md) | 70 | `result-track:903d0473100542957c4cc4620bd3aac6bc7006947612d9e248d008281a9a984f` |
+| 6 | `theorem` | [coeff_ne_zero_of_lexOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LexOrderNamespaced.lean/declarations/coeff-ne-zero-of-lexorder.md) | 76 | `result-track:c79b9036488ba67afb69aa38b3607d9fb477e301dc52cdeb5dd36b6f37dcd70f` |
+| 7 | `theorem` | [coeff_eq_zero_of_lt_lexOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LexOrderNamespaced.lean/declarations/coeff-eq-zero-of-lt-lexorder.md) | 89 | `result-track:bdd84af0773859fb0938bdaee9d9d5630d48c79d97da18d6a2fdb7defbd711df` |
+| 8 | `theorem` | [lexOrder_le_of_coeff_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LexOrderNamespaced.lean/declarations/lexorder-le-of-coeff-ne-zero.md) | 98 | `result-track:85e872822929f53323a61bdcf05a5300b722eb825111b7d675338f73b74a8fca` |
+| 9 | `theorem` | [le_lexOrder_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LexOrderNamespaced.lean/declarations/le-lexorder-iff.md) | 104 | `result-track:ade226031fd8f072e4e19757bcc031e976f7396114179fc053eb9ce32140b08d` |
+| 10 | `theorem` | [min_lexOrder_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LexOrderNamespaced.lean/declarations/min-lexorder-le.md) | 120 | `result-track:318c346fafc31f427844b84c2977b47b8c13a482356cb16b60cb665b716383d4` |
+| 11 | `theorem` | [coeff_mul_of_add_lexOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LexOrderNamespaced.lean/declarations/coeff-mul-of-add-lexorder.md) | 127 | `result-track:023585fbf771ad8a2973092d015a414281da9b686c8fe7ef4274824dfc5410e4` |
+| 12 | `theorem` | [le_lexOrder_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LexOrderNamespaced.lean/declarations/le-lexorder-mul.md) | 142 | `result-track:278059339566adad3cc83cdde38adc952d9ab8c3f3678a5b6e394c2a0de8306d` |
+| 13 | `theorem` | [lexOrder_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LexOrderNamespaced.lean/declarations/lexorder-mul.md) | 163 | `result-track:8f4d8577131a5b3c13762e9839927185dc762d44c8f108b1264721c85a27a945` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

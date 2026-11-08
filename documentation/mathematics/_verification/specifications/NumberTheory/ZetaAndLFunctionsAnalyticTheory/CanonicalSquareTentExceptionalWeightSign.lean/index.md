@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightSign.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightSign.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightSign.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightSign.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentExceptionalWeightNonzero`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightNonzero.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenMomentGaps`](../../../../../MeasureAndIntegration/CanonicalSquareTentSixteenMomentGaps.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentExceptionalWeightNonzero`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightNonzero.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenMomentGaps`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CanonicalSquareTentSixteenMomentGaps.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [realFirstCofactor](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightSign.lean/declarations/realfirstcofactor.md) | 32 | `declaration-track:09b8eda71ba5baa1d4d0fac8316211b34337a26159ebff5b40b0ed3af6aab49f` |
-| 2 | `theorem` | [realFirstCofactor_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightSign.lean/declarations/realfirstcofactor-pos.md) | 38 | `result-track:e9dcf90201bd13e571a13407014a1f37cef56375160fdee8cad5f25cc26ad82b` |
-| 3 | `def` | [realExceptionalWeight](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightSign.lean/declarations/realexceptionalweight.md) | 52 | `declaration-track:7eff2c2334a9c46f822acb144f7da30c2534af6218992f46feaa223fcc481ad3` |
-| 4 | `theorem` | [realExceptionalWeight_neg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightSign.lean/declarations/realexceptionalweight-neg.md) | 56 | `result-track:882b1d608145ee348ef1e2c3b87cc382212bb620f3e87ea640812ce3bc40527d` |
+| 1 | `def` | [realFirstCofactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightSign.lean/declarations/realfirstcofactor.md) | 32 | `declaration-track:09b8eda71ba5baa1d4d0fac8316211b34337a26159ebff5b40b0ed3af6aab49f` |
+| 2 | `theorem` | [realFirstCofactor_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightSign.lean/declarations/realfirstcofactor-pos.md) | 38 | `result-track:e9dcf90201bd13e571a13407014a1f37cef56375160fdee8cad5f25cc26ad82b` |
+| 3 | `def` | [realExceptionalWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightSign.lean/declarations/realexceptionalweight.md) | 52 | `declaration-track:7eff2c2334a9c46f822acb144f7da30c2534af6218992f46feaa223fcc481ad3` |
+| 4 | `theorem` | [realExceptionalWeight_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightSign.lean/declarations/realexceptionalweight-neg.md) | 56 | `result-track:882b1d608145ee348ef1e2c3b87cc382212bb620f3e87ea640812ce3bc40527d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

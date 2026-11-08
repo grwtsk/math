@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAbelianNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAbelianNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAbelianNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAbelianNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [normalMono](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAbelianNamespacedPublic.lean/declarations/normalmono.md) | 41 | `declaration-track:aad654f7297f07b7f895e1b904e833099618875e94b3dc7366cb87178dab7c66` |
-| 2 | `def` | [normalEpi](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAbelianNamespacedPublic.lean/declarations/normalepi.md) | 47 | `declaration-track:91198b13f78fa1adad24f9f1e447015d6c436fffd85bc2a35c5c787f7bb84fb9` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAbelianNamespacedPublic.lean/declarations/instance.md) | 52 | `declaration-track:91747fa8d7dab1c1e19c22f0c8e49bbbe601251f98bf3d0ee034db7774b801b1` |
+| 1 | `def` | [normalMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAbelianNamespacedPublic.lean/declarations/normalmono.md) | 41 | `declaration-track:aad654f7297f07b7f895e1b904e833099618875e94b3dc7366cb87178dab7c66` |
+| 2 | `def` | [normalEpi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAbelianNamespacedPublic.lean/declarations/normalepi.md) | 47 | `declaration-track:91198b13f78fa1adad24f9f1e447015d6c436fffd85bc2a35c5c787f7bb84fb9` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GrpAbelianNamespacedPublic.lean/declarations/instance.md) | 52 | `declaration-track:91747fa8d7dab1c1e19c22f0c8e49bbbe601251f98bf3d0ee034db7774b801b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

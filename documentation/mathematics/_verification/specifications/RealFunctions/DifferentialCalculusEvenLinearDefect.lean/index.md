@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DifferentialCalculusEvenLinearDefect.lean/index.md) · [Full source](../../../../RealFunctions/DifferentialCalculusEvenLinearDefect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DifferentialCalculusEvenLinearDefect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DifferentialCalculusEvenLinearDefect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [even_deriv_at_zero](../../../../RealFunctions/DifferentialCalculusEvenLinearDefect.lean/declarations/even-deriv-at-zero.md) | 21 | `result-track:57ca9699b90ed4c5bab96079b746759044476e59cede7a5b51f065d088c742e4` |
-| 2 | `theorem` | [not_differentiable_at_zero_of_linear_defect](../../../../RealFunctions/DifferentialCalculusEvenLinearDefect.lean/declarations/not-differentiable-at-zero-of-linear-defect.md) | 35 | `result-track:b3232ad20f4207d5204136b943b768067b9817218a6ada83c3024bf24dd01cec` |
+| 1 | `theorem` | [even_deriv_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DifferentialCalculusEvenLinearDefect.lean/declarations/even-deriv-at-zero.md) | 21 | `result-track:57ca9699b90ed4c5bab96079b746759044476e59cede7a5b51f065d088c742e4` |
+| 2 | `theorem` | [not_differentiable_at_zero_of_linear_defect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DifferentialCalculusEvenLinearDefect.lean/declarations/not-differentiable-at-zero-of-linear-defect.md) | 35 | `result-track:b3232ad20f4207d5204136b943b768067b9817218a6ada83c3024bf24dd01cec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

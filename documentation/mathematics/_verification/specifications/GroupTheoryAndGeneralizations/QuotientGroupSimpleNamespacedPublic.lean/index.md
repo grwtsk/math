@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/QuotientGroupSimpleNamespacedPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/QuotientGroupSimpleNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupSimpleNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupSimpleNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [CommGroup.isSimpleGroup_iff_isCoatom](../../../../GroupTheoryAndGeneralizations/QuotientGroupSimpleNamespacedPublic.lean/declarations/commgroup-issimplegroup-iff-iscoatom.md) | 37 | `result-track:c1aa21bdf99e19986c92a6d1ad1c47d4e50890c986d60bef65288fa455cce831` |
+| 1 | `theorem` | [CommGroup.isSimpleGroup_iff_isCoatom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupSimpleNamespacedPublic.lean/declarations/commgroup-issimplegroup-iff-iscoatom.md) | 37 | `result-track:c1aa21bdf99e19986c92a6d1ad1c47d4e50890c986d60bef65288fa455cce831` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

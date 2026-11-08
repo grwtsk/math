@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NullSubmodule.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NullSubmodule.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NullSubmodule.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NullSubmodule.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [nullSubgroup](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NullSubmodule.lean/declarations/nullsubgroup.md) | 34 | `declaration-track:cc9d84a79784c593eb805a8775abcf8b535700f5fe3a65d6a56a6ae8f5ef0567` |
-| 2 | `lemma` | [isClosed_nullSubgroup](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NullSubmodule.lean/declarations/isclosed-nullsubgroup.md) | 44 | `result-track:6738db671ba1019d63de18e36f6279710f7cb81402803ae057c117201d66ae4d` |
-| 3 | `lemma` | [mem_nullSubgroup_iff](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NullSubmodule.lean/declarations/mem-nullsubgroup-iff.md) | 48 | `result-track:b411a20553d0e2f26cc8d00f64be64dc60cc0614bf4f4d1009ee21aeeda5ae3b` |
-| 4 | `def` | [nullSubmodule](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NullSubmodule.lean/declarations/nullsubmodule.md) | 55 | `declaration-track:b36b19347ccc0938ab8c8090b6c6fa72170fd7763969e14d8191be0665fc5b67` |
-| 5 | `lemma` | [isClosed_nullSubmodule](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NullSubmodule.lean/declarations/isclosed-nullsubmodule.md) | 62 | `result-track:5bd50ce81bf264e86bf3e3c5913dad50d2c2615fd156bd1f1feafe54722898a5` |
-| 6 | `lemma` | [mem_nullSubmodule_iff](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NullSubmodule.lean/declarations/mem-nullsubmodule-iff.md) | 65 | `result-track:cfcf7ec8aad4c4dcaac347bb8c2fcb7cbcfea99025e3f51ccee9bf468b157939` |
+| 1 | `def` | [nullSubgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NullSubmodule.lean/declarations/nullsubgroup.md) | 34 | `declaration-track:cc9d84a79784c593eb805a8775abcf8b535700f5fe3a65d6a56a6ae8f5ef0567` |
+| 2 | `lemma` | [isClosed_nullSubgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NullSubmodule.lean/declarations/isclosed-nullsubgroup.md) | 44 | `result-track:6738db671ba1019d63de18e36f6279710f7cb81402803ae057c117201d66ae4d` |
+| 3 | `lemma` | [mem_nullSubgroup_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NullSubmodule.lean/declarations/mem-nullsubgroup-iff.md) | 48 | `result-track:b411a20553d0e2f26cc8d00f64be64dc60cc0614bf4f4d1009ee21aeeda5ae3b` |
+| 4 | `def` | [nullSubmodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NullSubmodule.lean/declarations/nullsubmodule.md) | 55 | `declaration-track:b36b19347ccc0938ab8c8090b6c6fa72170fd7763969e14d8191be0665fc5b67` |
+| 5 | `lemma` | [isClosed_nullSubmodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NullSubmodule.lean/declarations/isclosed-nullsubmodule.md) | 62 | `result-track:5bd50ce81bf264e86bf3e3c5913dad50d2c2615fd156bd1f1feafe54722898a5` |
+| 6 | `lemma` | [mem_nullSubmodule_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NullSubmodule.lean/declarations/mem-nullsubmodule-iff.md) | 65 | `result-track:cfcf7ec8aad4c4dcaac347bb8c2fcb7cbcfea99025e3f51ccee9bf468b157939` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

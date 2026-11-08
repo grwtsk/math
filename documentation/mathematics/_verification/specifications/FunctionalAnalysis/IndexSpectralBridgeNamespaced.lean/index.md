@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/IndexSpectralBridgeNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/IndexSpectralBridgeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralBridgeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralBridgeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [index_spectral_bridge_from_trace_formula](../../../../FunctionalAnalysis/IndexSpectralBridgeNamespaced.lean/declarations/index-spectral-bridge-from-trace-formula.md) | 28 | `result-track:7435a329dd531c34937a49b327de3f21857c11f27cdfc4585e33a93e48e5351a` |
-| 2 | `theorem` | [index_spectral_bridge_has_operator](../../../../FunctionalAnalysis/IndexSpectralBridgeNamespaced.lean/declarations/index-spectral-bridge-has-operator.md) | 34 | `result-track:8e3e84cfdab3bcde5d945ba95fbf346da049ceb2ef10acf4bc19bc6bb57f68aa` |
-| 3 | `theorem` | [index_spectral_bridge_has_pairing](../../../../FunctionalAnalysis/IndexSpectralBridgeNamespaced.lean/declarations/index-spectral-bridge-has-pairing.md) | 39 | `result-track:ed64fd65ac64e0e7c9ae12fae4dfcbc5248db05663f999ffa6183335209a5ac7` |
+| 1 | `theorem` | [index_spectral_bridge_from_trace_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralBridgeNamespaced.lean/declarations/index-spectral-bridge-from-trace-formula.md) | 28 | `result-track:7435a329dd531c34937a49b327de3f21857c11f27cdfc4585e33a93e48e5351a` |
+| 2 | `theorem` | [index_spectral_bridge_has_operator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralBridgeNamespaced.lean/declarations/index-spectral-bridge-has-operator.md) | 34 | `result-track:8e3e84cfdab3bcde5d945ba95fbf346da049ceb2ef10acf4bc19bc6bb57f68aa` |
+| 3 | `theorem` | [index_spectral_bridge_has_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralBridgeNamespaced.lean/declarations/index-spectral-bridge-has-pairing.md) | 39 | `result-track:ed64fd65ac64e0e7c9ae12fae4dfcbc5248db05663f999ffa6183335209a5ac7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

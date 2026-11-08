@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/Geometry.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/Geometry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Geometry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Geometry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ReciprocalScaleExponent](../../../../GroupTheoryAndGeneralizations/Geometry.lean/declarations/reciprocalscaleexponent.md) | 16 | `declaration-track:77d14b57b7fbf56767d883268bbaf19e71a5708147c4eba0b2e4680b476f304b` |
-| 2 | `structure` | [PerspectiveExponent](../../../../GroupTheoryAndGeneralizations/Geometry.lean/declarations/perspectiveexponent.md) | 19 | `declaration-track:bec1d0149ddd673b08ecb0d047a9a27026a9234300d02afc55a7d97e260a06db` |
-| 3 | `structure` | [SymmetryPhase](../../../../GroupTheoryAndGeneralizations/Geometry.lean/declarations/symmetryphase.md) | 22 | `declaration-track:9735cec6fbf0bfcf97ac8a78fb3c83488b8cb600c155c46b4c1c9819fec037e5` |
-| 4 | `def` | [reciprocalRadius](../../../../GroupTheoryAndGeneralizations/Geometry.lean/declarations/reciprocalradius.md) | 26 | `declaration-track:818be1050bf19779d46e542b3b9f33040ded4c5ebb4ced7c7fc2734ebeb7b088` |
-| 5 | `structure` | [PerspectiveBound](../../../../GroupTheoryAndGeneralizations/Geometry.lean/declarations/perspectivebound.md) | 30 | `declaration-track:cd16ba3bce2dd733a4b21731f9889646afbe463d0885cc6b54854b2e83d254ad` |
-| 6 | `structure` | [GeometricStage](../../../../GroupTheoryAndGeneralizations/Geometry.lean/declarations/geometricstage.md) | 38 | `declaration-track:56c5ad70264d9e5cb636539f36042f0a35d4326022b36296d2aa5dd51e0409c8` |
-| 7 | `def` | [Stabilizes](../../../../GroupTheoryAndGeneralizations/Geometry.lean/declarations/stabilizes.md) | 46 | `declaration-track:e5fde74f0265089ef6614b5acda46311105f8c68954e085f96caaf54988d5034` |
-| 8 | `theorem` | [fixed_return_iff_relative_stabilizes](../../../../GroupTheoryAndGeneralizations/Geometry.lean/declarations/fixed-return-iff-relative-stabilizes.md) | 53 | `result-track:dac5c08c32458637d14ddd21334066082a6d0fc287e7779119ef9e7cd0b21c6c` |
-| 9 | `structure` | [GeometricReflectionCertificate](../../../../GroupTheoryAndGeneralizations/Geometry.lean/declarations/geometricreflectioncertificate.md) | 96 | `declaration-track:9210ca1ec13cd54c19e73934863dcf372e4a07dbac1b4d7b7cf9a753a83c3580` |
+| 1 | `structure` | [ReciprocalScaleExponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Geometry.lean/declarations/reciprocalscaleexponent.md) | 16 | `declaration-track:77d14b57b7fbf56767d883268bbaf19e71a5708147c4eba0b2e4680b476f304b` |
+| 2 | `structure` | [PerspectiveExponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Geometry.lean/declarations/perspectiveexponent.md) | 19 | `declaration-track:bec1d0149ddd673b08ecb0d047a9a27026a9234300d02afc55a7d97e260a06db` |
+| 3 | `structure` | [SymmetryPhase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Geometry.lean/declarations/symmetryphase.md) | 22 | `declaration-track:9735cec6fbf0bfcf97ac8a78fb3c83488b8cb600c155c46b4c1c9819fec037e5` |
+| 4 | `def` | [reciprocalRadius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Geometry.lean/declarations/reciprocalradius.md) | 26 | `declaration-track:818be1050bf19779d46e542b3b9f33040ded4c5ebb4ced7c7fc2734ebeb7b088` |
+| 5 | `structure` | [PerspectiveBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Geometry.lean/declarations/perspectivebound.md) | 30 | `declaration-track:cd16ba3bce2dd733a4b21731f9889646afbe463d0885cc6b54854b2e83d254ad` |
+| 6 | `structure` | [GeometricStage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Geometry.lean/declarations/geometricstage.md) | 38 | `declaration-track:56c5ad70264d9e5cb636539f36042f0a35d4326022b36296d2aa5dd51e0409c8` |
+| 7 | `def` | [Stabilizes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Geometry.lean/declarations/stabilizes.md) | 46 | `declaration-track:e5fde74f0265089ef6614b5acda46311105f8c68954e085f96caaf54988d5034` |
+| 8 | `theorem` | [fixed_return_iff_relative_stabilizes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Geometry.lean/declarations/fixed-return-iff-relative-stabilizes.md) | 53 | `result-track:dac5c08c32458637d14ddd21334066082a6d0fc287e7779119ef9e7cd0b21c6c` |
+| 9 | `structure` | [GeometricReflectionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Geometry.lean/declarations/geometricreflectioncertificate.md) | 96 | `declaration-track:9210ca1ec13cd54c19e73934863dcf372e4a07dbac1b4d7b7cf9a753a83c3580` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

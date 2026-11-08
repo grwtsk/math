@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.PortFiberSectionQuotient`](../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicLineSectionLinear`](../../../../MeasureAndIntegration/HolomorphicLineSectionLinear.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberSectionQuotient`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicLineSectionLinear`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicLineSectionLinear.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [schemaVersion](../../../../FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/schemaversion.md) | 33 | `declaration-track:e020b44c77a5364bbb817739d7f19e0d0135608ac25993f1ce7d4784720c503d` |
-| 2 | `inductive` | [AddedIndex](../../../../FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/addedindex.md) | 35 | `declaration-track:4189676cf0ab2dd3dad9102cc02099d32c56516170e414b16738bc172bf52213` |
-| 3 | `def` | [AddedClaim](../../../../FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/addedclaim.md) | 46 | `declaration-track:3a37d79fcb5a14b1441afa89c4e135653b90838ea599233e873110533c3ebffc` |
-| 4 | `theorem` | [addedClaim_proof](../../../../FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/addedclaim-proof.md) | 119 | `result-track:4578d47d3573b303b44372ec89f2c4134f615d9f3f1ede7aea5c55e398b929e7` |
-| 5 | `def` | [portfolio](../../../../FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/portfolio.md) | 151 | `declaration-track:dd0d72159b6d7c4178f994e0c484070894920744dfb7deb6b37c6521fc948fa0` |
-| 6 | `def` | [architecture](../../../../FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/architecture.md) | 154 | `declaration-track:efa252d0090fa62d6b1bdcc9fc70409edce999a8b627909011834cc24f00b6ed` |
-| 7 | `abbrev` | [PreviousIndex](../../../../FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/previousindex.md) | 158 | `declaration-track:c6ae9530b2b2b3555071bfc5bc60e4148e99fe39d17fbea23afe1bc3029fc03f` |
-| 8 | `theorem` | [original_branch_unchanged](../../../../FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/original-branch-unchanged.md) | 162 | `result-track:37b12a0e74514dc611ed4db92af16b50dbc452d62c09428f94c380584fd2e685` |
-| 9 | `theorem` | [new_branch_proved](../../../../FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/new-branch-proved.md) | 168 | `result-track:4e93ff1983074902a3d5fb4c90b27e89e5d92e50495bffa29aa7fdeec68990a3` |
-| 10 | `theorem` | [target_unchanged](../../../../FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/target-unchanged.md) | 173 | `result-track:fc5ae2cea24e3f19a228342242dafec4dd49462a8ce84f9cdf3122ad178891d6` |
-| 11 | `theorem` | [retarget_preserves_new](../../../../FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/retarget-preserves-new.md) | 178 | `result-track:28f14ab6f2878d521e753a3e92d1ba7775b0dda1987cc442cca0db51ff11043c` |
+| 1 | `def` | [schemaVersion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/schemaversion.md) | 33 | `declaration-track:e020b44c77a5364bbb817739d7f19e0d0135608ac25993f1ce7d4784720c503d` |
+| 2 | `inductive` | [AddedIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/addedindex.md) | 35 | `declaration-track:4189676cf0ab2dd3dad9102cc02099d32c56516170e414b16738bc172bf52213` |
+| 3 | `def` | [AddedClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/addedclaim.md) | 46 | `declaration-track:3a37d79fcb5a14b1441afa89c4e135653b90838ea599233e873110533c3ebffc` |
+| 4 | `theorem` | [addedClaim_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/addedclaim-proof.md) | 119 | `result-track:4578d47d3573b303b44372ec89f2c4134f615d9f3f1ede7aea5c55e398b929e7` |
+| 5 | `def` | [portfolio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/portfolio.md) | 151 | `declaration-track:dd0d72159b6d7c4178f994e0c484070894920744dfb7deb6b37c6521fc948fa0` |
+| 6 | `def` | [architecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/architecture.md) | 154 | `declaration-track:efa252d0090fa62d6b1bdcc9fc70409edce999a8b627909011834cc24f00b6ed` |
+| 7 | `abbrev` | [PreviousIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/previousindex.md) | 158 | `declaration-track:c6ae9530b2b2b3555071bfc5bc60e4148e99fe39d17fbea23afe1bc3029fc03f` |
+| 8 | `theorem` | [original_branch_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/original-branch-unchanged.md) | 162 | `result-track:37b12a0e74514dc611ed4db92af16b50dbc452d62c09428f94c380584fd2e685` |
+| 9 | `theorem` | [new_branch_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/new-branch-proved.md) | 168 | `result-track:4e93ff1983074902a3d5fb4c90b27e89e5d92e50495bffa29aa7fdeec68990a3` |
+| 10 | `theorem` | [target_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/target-unchanged.md) | 173 | `result-track:fc5ae2cea24e3f19a228342242dafec4dd49462a8ce84f9cdf3122ad178891d6` |
+| 11 | `theorem` | [retarget_preserves_new](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/declarations/retarget-preserves-new.md) | 178 | `result-track:28f14ab6f2878d521e753a3e92d1ba7775b0dda1987cc442cca0db51ff11043c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Certified.lean/index.md) · [Full source](../../../../GeneralTopology/Certified.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Certified.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Certified.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.PortFiber.Path`](../../../../MathematicalLogicAndFoundations/GeneralLogic/Path.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Topology.PortFiber.Path`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Path.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ContinuousCertificate](../../../../GeneralTopology/Certified.lean/declarations/continuouscertificate.md) | 11 | `declaration-track:08b85cadb95bca27150685e4baf45144836f85fbf291ed8a48b340dbc113e643` |
-| 2 | `def` | [identity](../../../../GeneralTopology/Certified.lean/declarations/identity.md) | 17 | `declaration-track:477243baed7018f4e2147d09c0f202f662984d50a0c2f26a8c838868c537d2d0` |
-| 3 | `def` | [comp](../../../../GeneralTopology/Certified.lean/declarations/comp.md) | 26 | `declaration-track:fe982f7c2fba0e86409e86769122a0de6c583c13b02700040f33f273b441761b` |
-| 4 | `def` | [composableProperty](../../../../GeneralTopology/Certified.lean/declarations/composableproperty.md) | 37 | `declaration-track:81332b6025eb73986bc2e252fa9a635990c76854688695715e45614650a4c2aa` |
+| 1 | `structure` | [ContinuousCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Certified.lean/declarations/continuouscertificate.md) | 11 | `declaration-track:08b85cadb95bca27150685e4baf45144836f85fbf291ed8a48b340dbc113e643` |
+| 2 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Certified.lean/declarations/identity.md) | 17 | `declaration-track:477243baed7018f4e2147d09c0f202f662984d50a0c2f26a8c838868c537d2d0` |
+| 3 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Certified.lean/declarations/comp.md) | 26 | `declaration-track:fe982f7c2fba0e86409e86769122a0de6c583c13b02700040f33f273b441761b` |
+| 4 | `def` | [composableProperty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Certified.lean/declarations/composableproperty.md) | 37 | `declaration-track:81332b6025eb73986bc2e252fa9a635990c76854688695715e45614650a4c2aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

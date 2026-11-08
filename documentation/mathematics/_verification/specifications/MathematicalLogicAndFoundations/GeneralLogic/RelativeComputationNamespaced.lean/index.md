@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelativeComputationNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelativeComputationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelativeComputationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelativeComputationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [every_function_is_computable_relative_to_its_evaluation_oracle](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelativeComputationNamespaced.lean/declarations/every-function-is-computable-relative-to-its-evaluation-oracle.md) | 24 | `result-track:5d84529dcc98558caaba15dd4a6eb83026e318d788e4e05a9999fd0421355bb1` |
+| 1 | `theorem` | [every_function_is_computable_relative_to_its_evaluation_oracle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelativeComputationNamespaced.lean/declarations/every-function-is-computable-relative-to-its-evaluation-oracle.md) | 24 | `result-track:5d84529dcc98558caaba15dd4a6eb83026e318d788e4e05a9999fd0421355bb1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimitiveFamilyNamespacedPublicPrimitiveCharacterDataFamilyGRH.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimitiveFamilyNamespacedPublicPrimitiveCharacterDataFamilyGRH.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimitiveFamilyNamespacedPublicPrimitiveCharacterDataFamilyGRH.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimitiveFamilyNamespacedPublicPrimitiveCharacterDataFamilyGRH.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [DirichletGRH](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimitiveFamilyNamespacedPublicPrimitiveCharacterDataFamilyGRH.lean/declarations/dirichletgrh.md) | 34 | `declaration-track:4e5144626f8fcfa3cd20247affcd7270a84ca0a164b41cb5abbfff9e905508b2` |
-| 2 | `def` | [PrimitiveCharacterDataFamilyGRH](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimitiveFamilyNamespacedPublicPrimitiveCharacterDataFamilyGRH.lean/declarations/primitivecharacterdatafamilygrh.md) | 44 | `declaration-track:a9b95b33a8d7e6808ad90c28728b3a5507185d528a449b9e76fcea0368f35933` |
-| 3 | `theorem` | [dirichletGRH_forCharacter](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimitiveFamilyNamespacedPublicPrimitiveCharacterDataFamilyGRH.lean/declarations/dirichletgrh-forcharacter.md) | 49 | `result-track:ce13adc951ca92273c51e6e5aec4bc4e3da1232214f20e905b722ee5904d299a` |
-| 4 | `theorem` | [dirichletGRH_iff_primitiveFamily](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimitiveFamilyNamespacedPublicPrimitiveCharacterDataFamilyGRH.lean/declarations/dirichletgrh-iff-primitivefamily.md) | 61 | `result-track:655bd40ecc30fc3b665d5301c37ad666556b62c44bdb7c6ff4075ae9211c56c6` |
-| 5 | `theorem` | [dirichletGRH_iff_dataFamily](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimitiveFamilyNamespacedPublicPrimitiveCharacterDataFamilyGRH.lean/declarations/dirichletgrh-iff-datafamily.md) | 73 | `result-track:fdd0eec607e983a4fad2d2ba67c9a794c6e0a98cc167459ba567e749b670f7bb` |
+| 1 | `def` | [DirichletGRH](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimitiveFamilyNamespacedPublicPrimitiveCharacterDataFamilyGRH.lean/declarations/dirichletgrh.md) | 34 | `declaration-track:4e5144626f8fcfa3cd20247affcd7270a84ca0a164b41cb5abbfff9e905508b2` |
+| 2 | `def` | [PrimitiveCharacterDataFamilyGRH](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimitiveFamilyNamespacedPublicPrimitiveCharacterDataFamilyGRH.lean/declarations/primitivecharacterdatafamilygrh.md) | 44 | `declaration-track:a9b95b33a8d7e6808ad90c28728b3a5507185d528a449b9e76fcea0368f35933` |
+| 3 | `theorem` | [dirichletGRH_forCharacter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimitiveFamilyNamespacedPublicPrimitiveCharacterDataFamilyGRH.lean/declarations/dirichletgrh-forcharacter.md) | 49 | `result-track:ce13adc951ca92273c51e6e5aec4bc4e3da1232214f20e905b722ee5904d299a` |
+| 4 | `theorem` | [dirichletGRH_iff_primitiveFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimitiveFamilyNamespacedPublicPrimitiveCharacterDataFamilyGRH.lean/declarations/dirichletgrh-iff-primitivefamily.md) | 61 | `result-track:655bd40ecc30fc3b665d5301c37ad666556b62c44bdb7c6ff4075ae9211c56c6` |
+| 5 | `theorem` | [dirichletGRH_iff_dataFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimitiveFamilyNamespacedPublicPrimitiveCharacterDataFamilyGRH.lean/declarations/dirichletgrh-iff-datafamily.md) | 73 | `result-track:fdd0eec607e983a4fad2d2ba67c9a794c6e0a98cc167459ba567e749b670f7bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

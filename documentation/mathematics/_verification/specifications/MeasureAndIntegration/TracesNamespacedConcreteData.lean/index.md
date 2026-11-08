@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TracesNamespacedConcreteData.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TracesNamespacedConcreteData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesNamespacedConcreteData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesNamespacedConcreteData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [concreteData](../../../../MeasureAndIntegration/TracesNamespacedConcreteData.lean/declarations/concretedata.md) | 56 | `declaration-track:2e4402802a1d32021e09b5121aceb72c36f9ae12e6e0edb56248fe11c9803294` |
-| 2 | `lemma` | [rvm_evBound](../../../../MeasureAndIntegration/TracesNamespacedConcreteData.lean/declarations/rvm-evbound.md) | 75 | `result-track:96c49979dcbceca2ecbe924240906ce5166b9dc14fa4e09a1b60175d649ef0d6` |
-| 3 | `theorem` | [concreteFacts](../../../../MeasureAndIntegration/TracesNamespacedConcreteData.lean/declarations/concretefacts.md) | 104 | `result-track:bce50f40bf04a836c24fafff442080c984eb80f6aada568fb0b0fadc43b6b53c` |
-| 4 | `theorem` | [thm_traces_of_localHyps](../../../../MeasureAndIntegration/TracesNamespacedConcreteData.lean/declarations/thm-traces-of-localhyps.md) | 209 | `result-track:329f4a9e6e89e3ab0e941fcdc04c156d9550decf728bb84a52637910dec9c8c4` |
+| 1 | `def` | [concreteData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesNamespacedConcreteData.lean/declarations/concretedata.md) | 56 | `declaration-track:2e4402802a1d32021e09b5121aceb72c36f9ae12e6e0edb56248fe11c9803294` |
+| 2 | `lemma` | [rvm_evBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesNamespacedConcreteData.lean/declarations/rvm-evbound.md) | 75 | `result-track:96c49979dcbceca2ecbe924240906ce5166b9dc14fa4e09a1b60175d649ef0d6` |
+| 3 | `theorem` | [concreteFacts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesNamespacedConcreteData.lean/declarations/concretefacts.md) | 104 | `result-track:bce50f40bf04a836c24fafff442080c984eb80f6aada568fb0b0fadc43b6b53c` |
+| 4 | `theorem` | [thm_traces_of_localHyps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesNamespacedConcreteData.lean/declarations/thm-traces-of-localhyps.md) | 209 | `result-track:329f4a9e6e89e3ab0e941fcdc04c156d9550decf728bb84a52637910dec9c8c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

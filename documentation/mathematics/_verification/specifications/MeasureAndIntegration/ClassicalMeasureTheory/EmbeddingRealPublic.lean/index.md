@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/EmbeddingRealPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/EmbeddingRealPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/EmbeddingRealPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/EmbeddingRealPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_nat_measurableEquiv_range_coe_fin_of_finite](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/EmbeddingRealPublic.lean/declarations/exists-nat-measurableequiv-range-coe-fin-of-finite.md) | 22 | `result-track:c69116042e0c634563e79bb4c4ed3a5991ff2d4cacdfbfd8b1074acd50bf5069` |
-| 2 | `theorem` | [measurableEquiv_range_coe_nat_of_infinite_of_countable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/EmbeddingRealPublic.lean/declarations/measurableequiv-range-coe-nat-of-infinite-of-countable.md) | 28 | `result-track:b7b727151db64a8934120d78207841fe5a284647a36ef1373e52217dbe574f89` |
-| 3 | `theorem` | [exists_subset_real_measurableEquiv](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/EmbeddingRealPublic.lean/declarations/exists-subset-real-measurableequiv.md) | 37 | `result-track:33067b198c69b6179b78bdb39dd1502da89a0b9de4a7d0d2fa532af83545a9b4` |
-| 4 | `theorem` | [exists_measurableEmbedding_real](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/EmbeddingRealPublic.lean/declarations/exists-measurableembedding-real.md) | 52 | `result-track:d9bdecbae6372dc4728eb4b88ce8968435fcb3deb3c3be8a8276033a0051e9fc` |
-| 5 | `def` | [embeddingReal](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/EmbeddingRealPublic.lean/declarations/embeddingreal.md) | 58 | `declaration-track:c28ccceed1b0c671ae982896269c00c8b6414ba3376cd2d6b898bddea6b613ab` |
-| 6 | `lemma` | [measurableEmbedding_embeddingReal](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/EmbeddingRealPublic.lean/declarations/measurableembedding-embeddingreal.md) | 61 | `result-track:020918c2f91114de95d0e857b56456554dc3cafe0668380aecd13432c175fa70` |
-| 7 | `lemma` | [measurable_embeddingReal](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/EmbeddingRealPublic.lean/declarations/measurable-embeddingreal.md) | 66 | `result-track:6b778a31732e1dec38624e75856cd216bef9a68cf6a9552fde133076bb57c1a2` |
+| 1 | `theorem` | [exists_nat_measurableEquiv_range_coe_fin_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/EmbeddingRealPublic.lean/declarations/exists-nat-measurableequiv-range-coe-fin-of-finite.md) | 22 | `result-track:c69116042e0c634563e79bb4c4ed3a5991ff2d4cacdfbfd8b1074acd50bf5069` |
+| 2 | `theorem` | [measurableEquiv_range_coe_nat_of_infinite_of_countable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/EmbeddingRealPublic.lean/declarations/measurableequiv-range-coe-nat-of-infinite-of-countable.md) | 28 | `result-track:b7b727151db64a8934120d78207841fe5a284647a36ef1373e52217dbe574f89` |
+| 3 | `theorem` | [exists_subset_real_measurableEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/EmbeddingRealPublic.lean/declarations/exists-subset-real-measurableequiv.md) | 37 | `result-track:33067b198c69b6179b78bdb39dd1502da89a0b9de4a7d0d2fa532af83545a9b4` |
+| 4 | `theorem` | [exists_measurableEmbedding_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/EmbeddingRealPublic.lean/declarations/exists-measurableembedding-real.md) | 52 | `result-track:d9bdecbae6372dc4728eb4b88ce8968435fcb3deb3c3be8a8276033a0051e9fc` |
+| 5 | `def` | [embeddingReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/EmbeddingRealPublic.lean/declarations/embeddingreal.md) | 58 | `declaration-track:c28ccceed1b0c671ae982896269c00c8b6414ba3376cd2d6b898bddea6b613ab` |
+| 6 | `lemma` | [measurableEmbedding_embeddingReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/EmbeddingRealPublic.lean/declarations/measurableembedding-embeddingreal.md) | 61 | `result-track:020918c2f91114de95d0e857b56456554dc3cafe0668380aecd13432c175fa70` |
+| 7 | `lemma` | [measurable_embeddingReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/EmbeddingRealPublic.lean/declarations/measurable-embeddingreal.md) | 66 | `result-track:6b778a31732e1dec38624e75856cd216bef9a68cf6a9552fde133076bb57c1a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

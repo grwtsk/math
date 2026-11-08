@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Admission.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Admission.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Admission.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Admission.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AdmissionStatus](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Admission.lean/declarations/admissionstatus.md) | 8 | `declaration-track:fad7439573544d2efa5083c3966957159bf4ff64d02f5e1c871df959f8744ff0` |
-| 2 | `structure` | [ProjectAdmission](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Admission.lean/declarations/projectadmission.md) | 15 | `declaration-track:bfcb96c9ccbb1f1d7e37a0a953cd87e44b51f6072c677bf643d2b9d5e8079810` |
-| 3 | `theorem` | [legal_of_admitted](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Admission.lean/declarations/legal-of-admitted.md) | 32 | `result-track:fb202de49cb65626f21db783b672a9d971a75e4e6ca83fae492ede9b473cb757` |
+| 1 | `inductive` | [AdmissionStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Admission.lean/declarations/admissionstatus.md) | 8 | `declaration-track:fad7439573544d2efa5083c3966957159bf4ff64d02f5e1c871df959f8744ff0` |
+| 2 | `structure` | [ProjectAdmission](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Admission.lean/declarations/projectadmission.md) | 15 | `declaration-track:bfcb96c9ccbb1f1d7e37a0a953cd87e44b51f6072c677bf643d2b9d5e8079810` |
+| 3 | `theorem` | [legal_of_admitted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Admission.lean/declarations/legal-of-admitted.md) | 32 | `result-track:fb202de49cb65626f21db783b672a9d971a75e4e6ca83fae492ede9b473cb757` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

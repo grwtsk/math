@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/KatonaCirclePublic.lean/index.md) · [Full source](../../../../Combinatorics/KatonaCirclePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KatonaCirclePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KatonaCirclePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Numbering](../../../../Combinatorics/KatonaCirclePublic.lean/declarations/numbering.md) | 28 | `declaration-track:d0dde4ca4b91380915f21aae478f552acbb7fe1735ed66fdb58c3e67d06b2eb7` |
-| 2 | `lemma` | [Fintype.card_numbering](../../../../Combinatorics/KatonaCirclePublic.lean/declarations/fintype-card-numbering.md) | 30 | `result-track:88a69e485c7cbc6a155ff75f195a96925b943ec1e33dca62e050dbb5b5803c94` |
-| 3 | `def` | [IsPrefix](../../../../Combinatorics/KatonaCirclePublic.lean/declarations/isprefix.md) | 38 | `declaration-track:c0229d44e15c253c414fa4674b1e0d831e70723b8ddc8f5002727969bb4ec572` |
-| 4 | `lemma` | [IsPrefix.subset_of_card_le_card](../../../../Combinatorics/KatonaCirclePublic.lean/declarations/isprefix-subset-of-card-le-card.md) | 40 | `result-track:6618b2abc9864c973d17348e04c09264878e1c73656ffb49e83c64de681c5299` |
-| 5 | `instance` | [(anonymous)](../../../../Combinatorics/KatonaCirclePublic.lean/declarations/instance.md) | 45 | `declaration-track:d2a776016f7348bddb9a30ea6f33e950d0818c0091cd4bd4fe9fec864452c84d` |
-| 6 | `def` | [prefixed](../../../../Combinatorics/KatonaCirclePublic.lean/declarations/prefixed.md) | 48 | `declaration-track:dd211543ce15323482d9e3fec54397e438372a94a541daee01d7af94252818d2` |
-| 7 | `lemma` | [mem_prefixed](../../../../Combinatorics/KatonaCirclePublic.lean/declarations/mem-prefixed.md) | 50 | `result-track:f380befaf1a1b0ca5e7beec6e410bab67ddcfcf46ec8633d56801a38c08f1e4c` |
-| 8 | `def` | [prefixedEquiv](../../../../Combinatorics/KatonaCirclePublic.lean/declarations/prefixedequiv.md) | 54 | `declaration-track:50f8511e976fdd3edbd7cb6ecc31b1abc41a357bedd838bfa907217c0f1498b4` |
-| 9 | `lemma` | [card_prefixed](../../../../Combinatorics/KatonaCirclePublic.lean/declarations/card-prefixed.md) | 107 | `result-track:7d4a4a132d50aaa7e1ec96b98a339b6ef0d9f4b83d582c2671fad5cd9a7cc179` |
-| 10 | `lemma` | [dens_prefixed](../../../../Combinatorics/KatonaCirclePublic.lean/declarations/dens-prefixed.md) | 111 | `result-track:c0f25ff1e7dd9fcdaceb45196f54d783e95a44b1cba7ab9af51239d523fae4f2` |
-| 11 | `lemma` | [disjoint_prefixed_prefixed](../../../../Combinatorics/KatonaCirclePublic.lean/declarations/disjoint-prefixed-prefixed.md) | 115 | `result-track:ecd97576cece115142e71af854d79fbf63a095a72b38c6596bd2baa3b91c998a` |
+| 1 | `abbrev` | [Numbering](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KatonaCirclePublic.lean/declarations/numbering.md) | 28 | `declaration-track:d0dde4ca4b91380915f21aae478f552acbb7fe1735ed66fdb58c3e67d06b2eb7` |
+| 2 | `lemma` | [Fintype.card_numbering](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KatonaCirclePublic.lean/declarations/fintype-card-numbering.md) | 30 | `result-track:88a69e485c7cbc6a155ff75f195a96925b943ec1e33dca62e050dbb5b5803c94` |
+| 3 | `def` | [IsPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KatonaCirclePublic.lean/declarations/isprefix.md) | 38 | `declaration-track:c0229d44e15c253c414fa4674b1e0d831e70723b8ddc8f5002727969bb4ec572` |
+| 4 | `lemma` | [IsPrefix.subset_of_card_le_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KatonaCirclePublic.lean/declarations/isprefix-subset-of-card-le-card.md) | 40 | `result-track:6618b2abc9864c973d17348e04c09264878e1c73656ffb49e83c64de681c5299` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KatonaCirclePublic.lean/declarations/instance.md) | 45 | `declaration-track:d2a776016f7348bddb9a30ea6f33e950d0818c0091cd4bd4fe9fec864452c84d` |
+| 6 | `def` | [prefixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KatonaCirclePublic.lean/declarations/prefixed.md) | 48 | `declaration-track:dd211543ce15323482d9e3fec54397e438372a94a541daee01d7af94252818d2` |
+| 7 | `lemma` | [mem_prefixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KatonaCirclePublic.lean/declarations/mem-prefixed.md) | 50 | `result-track:f380befaf1a1b0ca5e7beec6e410bab67ddcfcf46ec8633d56801a38c08f1e4c` |
+| 8 | `def` | [prefixedEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KatonaCirclePublic.lean/declarations/prefixedequiv.md) | 54 | `declaration-track:50f8511e976fdd3edbd7cb6ecc31b1abc41a357bedd838bfa907217c0f1498b4` |
+| 9 | `lemma` | [card_prefixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KatonaCirclePublic.lean/declarations/card-prefixed.md) | 107 | `result-track:7d4a4a132d50aaa7e1ec96b98a339b6ef0d9f4b83d582c2671fad5cd9a7cc179` |
+| 10 | `lemma` | [dens_prefixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KatonaCirclePublic.lean/declarations/dens-prefixed.md) | 111 | `result-track:c0f25ff1e7dd9fcdaceb45196f54d783e95a44b1cba7ab9af51239d523fae4f2` |
+| 11 | `lemma` | [disjoint_prefixed_prefixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KatonaCirclePublic.lean/declarations/disjoint-prefixed-prefixed.md) | 115 | `result-track:ecd97576cece115142e71af854d79fbf63a095a72b38c6596bd2baa3b91c998a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

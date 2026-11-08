@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MediumPNTLogErrorAttempt03.lean/index.md) · [Full source](../../../../GeneralTopology/MediumPNTLogErrorAttempt03.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MediumPNTLogErrorAttempt03.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MediumPNTLogErrorAttempt03.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [psiRelativeError](../../../../GeneralTopology/MediumPNTLogErrorAttempt03.lean/declarations/psirelativeerror.md) | 11 | `declaration-track:9a4c3d45082a2c01adf1fb6303c1d76e824ec1ca80990bceb7d5cd7fadc5cb48` |
-| 2 | `theorem` | [psiRelativeError_eq](../../../../GeneralTopology/MediumPNTLogErrorAttempt03.lean/declarations/psirelativeerror-eq.md) | 13 | `result-track:0489c8c052a43d6fd1d60516e21d24f8a344be830766514f8a2a863bdf1e32ed` |
-| 3 | `theorem` | [psiRelativeError_medium_bound](../../../../GeneralTopology/MediumPNTLogErrorAttempt03.lean/declarations/psirelativeerror-medium-bound.md) | 20 | `result-track:f47ed048d5cf0bc8f2841630052830c2752079b1c7a1fc447948557d422870a1` |
-| 4 | `theorem` | [power_stretched_exp_tendsto_zero](../../../../GeneralTopology/MediumPNTLogErrorAttempt03.lean/declarations/power-stretched-exp-tendsto-zero.md) | 40 | `result-track:cd5a03a0bd0df8999ee61354fa2c72a825cfa2d78937f783213fbfce8720c55d` |
-| 5 | `theorem` | [psiRelativeError_mul_pow_tendsto_zero](../../../../GeneralTopology/MediumPNTLogErrorAttempt03.lean/declarations/psirelativeerror-mul-pow-tendsto-zero.md) | 51 | `result-track:d77c52d49d9913ab90bf40fcc1c97226ae8435619cb6f01f500f700507927fb9` |
+| 1 | `def` | [psiRelativeError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MediumPNTLogErrorAttempt03.lean/declarations/psirelativeerror.md) | 11 | `declaration-track:9a4c3d45082a2c01adf1fb6303c1d76e824ec1ca80990bceb7d5cd7fadc5cb48` |
+| 2 | `theorem` | [psiRelativeError_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MediumPNTLogErrorAttempt03.lean/declarations/psirelativeerror-eq.md) | 13 | `result-track:0489c8c052a43d6fd1d60516e21d24f8a344be830766514f8a2a863bdf1e32ed` |
+| 3 | `theorem` | [psiRelativeError_medium_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MediumPNTLogErrorAttempt03.lean/declarations/psirelativeerror-medium-bound.md) | 20 | `result-track:f47ed048d5cf0bc8f2841630052830c2752079b1c7a1fc447948557d422870a1` |
+| 4 | `theorem` | [power_stretched_exp_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MediumPNTLogErrorAttempt03.lean/declarations/power-stretched-exp-tendsto-zero.md) | 40 | `result-track:cd5a03a0bd0df8999ee61354fa2c72a825cfa2d78937f783213fbfce8720c55d` |
+| 5 | `theorem` | [psiRelativeError_mul_pow_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MediumPNTLogErrorAttempt03.lean/declarations/psirelativeerror-mul-pow-tendsto-zero.md) | 51 | `result-track:d77c52d49d9913ab90bf40fcc1c97226ae8435619cb6f01f500f700507927fb9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessNamespacedPrimeCompressionCylinder.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessNamespacedPrimeCompressionCylinder.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessNamespacedPrimeCompressionCylinder.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessNamespacedPrimeCompressionCylinder.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimeCompressionCylinder](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessNamespacedPrimeCompressionCylinder.lean/declarations/primecompressioncylinder.md) | 17 | `declaration-track:c1f46d4e1510f5afb365727547eee023c15230d86a86a6245c6680bac7dcf702` |
-| 2 | `structure` | [CylinderEmbedding](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessNamespacedPrimeCompressionCylinder.lean/declarations/cylinderembedding.md) | 24 | `declaration-track:84078cac0f6ffd90a8a4e414365a3cc36908948953e827d121a8bbbab12ffcbd` |
-| 3 | `structure` | [CylinderAccessReceipt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessNamespacedPrimeCompressionCylinder.lean/declarations/cylinderaccessreceipt.md) | 41 | `declaration-track:2564ca3309b9cf30b9da88bde6757bfa9b3deebbeae33deb4cb379cb77d0732e` |
+| 1 | `structure` | [PrimeCompressionCylinder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessNamespacedPrimeCompressionCylinder.lean/declarations/primecompressioncylinder.md) | 17 | `declaration-track:c1f46d4e1510f5afb365727547eee023c15230d86a86a6245c6680bac7dcf702` |
+| 2 | `structure` | [CylinderEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessNamespacedPrimeCompressionCylinder.lean/declarations/cylinderembedding.md) | 24 | `declaration-track:84078cac0f6ffd90a8a4e414365a3cc36908948953e827d121a8bbbab12ffcbd` |
+| 3 | `structure` | [CylinderAccessReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAccessNamespacedPrimeCompressionCylinder.lean/declarations/cylinderaccessreceipt.md) | 41 | `declaration-track:2564ca3309b9cf30b9da88bde6757bfa9b3deebbeae33deb4cb379cb77d0732e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

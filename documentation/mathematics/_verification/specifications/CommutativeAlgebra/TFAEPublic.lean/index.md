@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/TFAEPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/TFAEPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TFAEPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TFAEPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_maximalIdeal_pow_eq_of_principal](../../../../CommutativeAlgebra/TFAEPublic.lean/declarations/exists-maximalideal-pow-eq-of-principal.md) | 40 | `result-track:02f12662658fee0b959604bf396c04c7b1f7d552a585e0b92e7fadb5db993c0b` |
-| 2 | `theorem` | [maximalIdeal_isPrincipal_of_isDedekindDomain](../../../../CommutativeAlgebra/TFAEPublic.lean/declarations/maximalideal-isprincipal-of-isdedekinddomain.md) | 95 | `result-track:ecbe95700029a4668efa3dc3e51fd3925997b9b23af34ad8d5591cc6a8f29028` |
-| 3 | `theorem` | [tfae_of_isNoetherianRing_of_isLocalRing_of_isDomain](../../../../CommutativeAlgebra/TFAEPublic.lean/declarations/tfae-of-isnoetherianring-of-islocalring-of-isdomain.md) | 168 | `result-track:6de9d579ba48daa4fb5ee74beb708df1c560de861569bb2762fba7e4ef1a1e6d` |
-| 4 | `theorem` | [IsDiscreteValuationRing.TFAE](../../../../CommutativeAlgebra/TFAEPublic.lean/declarations/isdiscretevaluationring-tfae.md) | 210 | `result-track:976cf26ed3cb728b3be627856e70549d59cd9f5e2ce22a3fe3151b1ef7644126` |
-| 5 | `lemma` | [IsLocalRing.finrank_CotangentSpace_eq_one_iff](../../../../CommutativeAlgebra/TFAEPublic.lean/declarations/islocalring-finrank-cotangentspace-eq-one-iff.md) | 229 | `result-track:e5a8af089904d2308a3eda284fc42853833099bec1bceaea3fef04f0e5320c5f` |
-| 6 | `lemma` | [IsLocalRing.finrank_CotangentSpace_eq_one](../../../../CommutativeAlgebra/TFAEPublic.lean/declarations/islocalring-finrank-cotangentspace-eq-one.md) | 239 | `result-track:92c775d362aa5524a5ce01db570946594314a406b54638d628747a22bec2a77b` |
-| 7 | `lemma` | [IsDiscreteValuationRing.ringKrullDim_eq_one](../../../../CommutativeAlgebra/TFAEPublic.lean/declarations/isdiscretevaluationring-ringkrulldim-eq-one.md) | 244 | `result-track:78d64e1baf68ed0fac1881544571166db2592c3bd8cd188a3b548df1ee8facb7` |
-| 8 | `lemma` | [IsDiscreteValuationRing.not_krullDimLE_zero](../../../../CommutativeAlgebra/TFAEPublic.lean/declarations/isdiscretevaluationring-not-krulldimle-zero.md) | 252 | `result-track:7647560828209b970be125032e8947a868d06bf93d4e46885cdca28bd839cd2b` |
-| 9 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/TFAEPublic.lean/declarations/instance.md) | 257 | `declaration-track:3475c9009af239d2b690e961c121e96859b763eb13f43be6234e787592e8d428` |
-| 10 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/TFAEPublic.lean/declarations/instance-source-edition-2.md) | 260 | `declaration-track:d875d2a3ca175057e19bb9f90ace2817abd16fb2858498d609ddbb678fc1232b` |
+| 1 | `theorem` | [exists_maximalIdeal_pow_eq_of_principal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TFAEPublic.lean/declarations/exists-maximalideal-pow-eq-of-principal.md) | 40 | `result-track:02f12662658fee0b959604bf396c04c7b1f7d552a585e0b92e7fadb5db993c0b` |
+| 2 | `theorem` | [maximalIdeal_isPrincipal_of_isDedekindDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TFAEPublic.lean/declarations/maximalideal-isprincipal-of-isdedekinddomain.md) | 95 | `result-track:ecbe95700029a4668efa3dc3e51fd3925997b9b23af34ad8d5591cc6a8f29028` |
+| 3 | `theorem` | [tfae_of_isNoetherianRing_of_isLocalRing_of_isDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TFAEPublic.lean/declarations/tfae-of-isnoetherianring-of-islocalring-of-isdomain.md) | 168 | `result-track:6de9d579ba48daa4fb5ee74beb708df1c560de861569bb2762fba7e4ef1a1e6d` |
+| 4 | `theorem` | [IsDiscreteValuationRing.TFAE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TFAEPublic.lean/declarations/isdiscretevaluationring-tfae.md) | 210 | `result-track:976cf26ed3cb728b3be627856e70549d59cd9f5e2ce22a3fe3151b1ef7644126` |
+| 5 | `lemma` | [IsLocalRing.finrank_CotangentSpace_eq_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TFAEPublic.lean/declarations/islocalring-finrank-cotangentspace-eq-one-iff.md) | 229 | `result-track:e5a8af089904d2308a3eda284fc42853833099bec1bceaea3fef04f0e5320c5f` |
+| 6 | `lemma` | [IsLocalRing.finrank_CotangentSpace_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TFAEPublic.lean/declarations/islocalring-finrank-cotangentspace-eq-one.md) | 239 | `result-track:92c775d362aa5524a5ce01db570946594314a406b54638d628747a22bec2a77b` |
+| 7 | `lemma` | [IsDiscreteValuationRing.ringKrullDim_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TFAEPublic.lean/declarations/isdiscretevaluationring-ringkrulldim-eq-one.md) | 244 | `result-track:78d64e1baf68ed0fac1881544571166db2592c3bd8cd188a3b548df1ee8facb7` |
+| 8 | `lemma` | [IsDiscreteValuationRing.not_krullDimLE_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TFAEPublic.lean/declarations/isdiscretevaluationring-not-krulldimle-zero.md) | 252 | `result-track:7647560828209b970be125032e8947a868d06bf93d4e46885cdca28bd839cd2b` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TFAEPublic.lean/declarations/instance.md) | 257 | `declaration-track:3475c9009af239d2b690e961c121e96859b763eb13f43be6234e787592e8d428` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TFAEPublic.lean/declarations/instance-source-edition-2.md) | 260 | `declaration-track:d875d2a3ca175057e19bb9f90ace2817abd16fb2858498d609ddbb678fc1232b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

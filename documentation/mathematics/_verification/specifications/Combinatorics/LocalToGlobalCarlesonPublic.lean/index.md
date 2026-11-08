@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/LocalToGlobalCarlesonPublic.lean/index.md) · [Full source](../../../../Combinatorics/LocalToGlobalCarlesonPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LocalToGlobalCarlesonPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LocalToGlobalCarlesonPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LocalToGlobalCarlesonData](../../../../Combinatorics/LocalToGlobalCarlesonPublic.lean/declarations/localtoglobalcarlesondata.md) | 31 | `declaration-track:944441587788528eee40a80bec26023680a12427d625214ccdf39bc799bb6652` |
-| 2 | `def` | [LocalToGlobalCarlesonData.levelContribution](../../../../Combinatorics/LocalToGlobalCarlesonPublic.lean/declarations/localtoglobalcarlesondata-levelcontribution.md) | 52 | `declaration-track:e4beb47054b5a926868d6a140bfc45e352727a7383c99704c42adba25c080eec` |
-| 3 | `def` | [LocalToGlobalCarlesonData.totalContribution](../../../../Combinatorics/LocalToGlobalCarlesonPublic.lean/declarations/localtoglobalcarlesondata-totalcontribution.md) | 60 | `declaration-track:e481b8432dd326ad0cc6f0bd0a47de08e136307a741b6b99c575ba14d5d4456f` |
-| 4 | `def` | [LocalToGlobalCarlesonData.levelMass](../../../../Combinatorics/LocalToGlobalCarlesonPublic.lean/declarations/localtoglobalcarlesondata-levelmass.md) | 66 | `declaration-track:5154c442ca10c4833a0935c24a595f98ffeb12d5f73e35d93934e172fd99e49a` |
-| 5 | `theorem` | [LocalToGlobalCarlesonData.sum_levelContribution](../../../../Combinatorics/LocalToGlobalCarlesonPublic.lean/declarations/localtoglobalcarlesondata-sum-levelcontribution.md) | 73 | `result-track:e53fe9149942ba60e980d08f51f8b02ef2bac2dc011789d2a5efe5d1a6b21b5a` |
-| 6 | `def` | [LocalCrossSquareEstimate](../../../../Combinatorics/LocalToGlobalCarlesonPublic.lean/declarations/localcrosssquareestimate.md) | 92 | `declaration-track:95482c4440e13571f3fcb07969457791638e03f1d19585533c887be40b4c7b95` |
-| 7 | `def` | [LevelwiseMassPacking](../../../../Combinatorics/LocalToGlobalCarlesonPublic.lean/declarations/levelwisemasspacking.md) | 98 | `declaration-track:b3084aa863b24bc971c0d88545295ebd4c3d0071799a8b10171d3198fc7cdd3b` |
-| 8 | `theorem` | [LocalToGlobalCarlesonData.levelContribution_norm_le](../../../../Combinatorics/LocalToGlobalCarlesonPublic.lean/declarations/localtoglobalcarlesondata-levelcontribution-norm-le.md) | 104 | `result-track:90fe555dbe5d22b4306d14ba9b57fba4308594b765acd88ce957e9b609f27cc3` |
-| 9 | `theorem` | [treeCrossCarleson_of_localSquare](../../../../Combinatorics/LocalToGlobalCarlesonPublic.lean/declarations/treecrosscarleson-of-localsquare.md) | 142 | `result-track:b4604362669a4a78b0c702822b9f6c35ae4f94f2ed1d10246a82fd67ce372344` |
+| 1 | `structure` | [LocalToGlobalCarlesonData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LocalToGlobalCarlesonPublic.lean/declarations/localtoglobalcarlesondata.md) | 31 | `declaration-track:944441587788528eee40a80bec26023680a12427d625214ccdf39bc799bb6652` |
+| 2 | `def` | [LocalToGlobalCarlesonData.levelContribution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LocalToGlobalCarlesonPublic.lean/declarations/localtoglobalcarlesondata-levelcontribution.md) | 52 | `declaration-track:e4beb47054b5a926868d6a140bfc45e352727a7383c99704c42adba25c080eec` |
+| 3 | `def` | [LocalToGlobalCarlesonData.totalContribution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LocalToGlobalCarlesonPublic.lean/declarations/localtoglobalcarlesondata-totalcontribution.md) | 60 | `declaration-track:e481b8432dd326ad0cc6f0bd0a47de08e136307a741b6b99c575ba14d5d4456f` |
+| 4 | `def` | [LocalToGlobalCarlesonData.levelMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LocalToGlobalCarlesonPublic.lean/declarations/localtoglobalcarlesondata-levelmass.md) | 66 | `declaration-track:5154c442ca10c4833a0935c24a595f98ffeb12d5f73e35d93934e172fd99e49a` |
+| 5 | `theorem` | [LocalToGlobalCarlesonData.sum_levelContribution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LocalToGlobalCarlesonPublic.lean/declarations/localtoglobalcarlesondata-sum-levelcontribution.md) | 73 | `result-track:e53fe9149942ba60e980d08f51f8b02ef2bac2dc011789d2a5efe5d1a6b21b5a` |
+| 6 | `def` | [LocalCrossSquareEstimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LocalToGlobalCarlesonPublic.lean/declarations/localcrosssquareestimate.md) | 92 | `declaration-track:95482c4440e13571f3fcb07969457791638e03f1d19585533c887be40b4c7b95` |
+| 7 | `def` | [LevelwiseMassPacking](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LocalToGlobalCarlesonPublic.lean/declarations/levelwisemasspacking.md) | 98 | `declaration-track:b3084aa863b24bc971c0d88545295ebd4c3d0071799a8b10171d3198fc7cdd3b` |
+| 8 | `theorem` | [LocalToGlobalCarlesonData.levelContribution_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LocalToGlobalCarlesonPublic.lean/declarations/localtoglobalcarlesondata-levelcontribution-norm-le.md) | 104 | `result-track:90fe555dbe5d22b4306d14ba9b57fba4308594b765acd88ce957e9b609f27cc3` |
+| 9 | `theorem` | [treeCrossCarleson_of_localSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LocalToGlobalCarlesonPublic.lean/declarations/treecrosscarleson-of-localsquare.md) | 142 | `result-track:b4604362669a4a78b0c702822b9f6c35ae4f94f2ed1d10246a82fd67ce372344` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

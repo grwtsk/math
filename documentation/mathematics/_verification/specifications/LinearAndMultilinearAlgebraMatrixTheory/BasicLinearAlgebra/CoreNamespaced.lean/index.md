@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Theory](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespaced.lean/declarations/theory.md) | 40 | `declaration-track:64a00296275cf9f193c473932c83a6c887d1fe8e5797a0156714248a2c3631c3` |
-| 2 | `theorem` | [lineEquiv_refl_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespaced.lean/declarations/lineequiv-refl-apply.md) | 77 | `result-track:bc9c6217eed5d944b1b8a3a83973c6df2a4501f706df8f84dbebbfd256ebc97f` |
-| 3 | `theorem` | [quasiIsoEquiv_id_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespaced.lean/declarations/quasiisoequiv-id-apply.md) | 85 | `result-track:0edd07ad37f0ee6e8b7f215a20ac877baa5e6c961c88b86d9a552dd44bc316a9` |
-| 4 | `def` | [model](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespaced.lean/declarations/model.md) | 104 | `declaration-track:55876f714913bfc1c819c93338915081660e75ae4a7ef6554ca6ee2460a7f97b` |
-| 5 | `def` | [theory](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespaced.lean/declarations/theory-source-edition-2.md) | 149 | `declaration-track:6e7a81534b2bc2eb260082adc025bbda44c8641e46574947f7eb5ca005ed2de9` |
-| 6 | `def` | [negQuasiIso](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespaced.lean/declarations/negquasiiso.md) | 168 | `declaration-track:8a97d2ae8809e50d59a586ab7f2e9bcbdef646162610188feec026377a2ef50f` |
-| 7 | `theorem` | [negQuasiIso_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespaced.lean/declarations/negquasiiso-apply.md) | 174 | `result-track:67ce1c136b563f8655f1a6b3c0fc2f14176ee557a4da1276b6732ac59890b2b7` |
+| 1 | `structure` | [Theory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespaced.lean/declarations/theory.md) | 40 | `declaration-track:64a00296275cf9f193c473932c83a6c887d1fe8e5797a0156714248a2c3631c3` |
+| 2 | `theorem` | [lineEquiv_refl_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespaced.lean/declarations/lineequiv-refl-apply.md) | 77 | `result-track:bc9c6217eed5d944b1b8a3a83973c6df2a4501f706df8f84dbebbfd256ebc97f` |
+| 3 | `theorem` | [quasiIsoEquiv_id_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespaced.lean/declarations/quasiisoequiv-id-apply.md) | 85 | `result-track:0edd07ad37f0ee6e8b7f215a20ac877baa5e6c961c88b86d9a552dd44bc316a9` |
+| 4 | `def` | [model](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespaced.lean/declarations/model.md) | 104 | `declaration-track:55876f714913bfc1c819c93338915081660e75ae4a7ef6554ca6ee2460a7f97b` |
+| 5 | `def` | [theory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespaced.lean/declarations/theory-source-edition-2.md) | 149 | `declaration-track:6e7a81534b2bc2eb260082adc025bbda44c8641e46574947f7eb5ca005ed2de9` |
+| 6 | `def` | [negQuasiIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespaced.lean/declarations/negquasiiso.md) | 168 | `declaration-track:8a97d2ae8809e50d59a586ab7f2e9bcbdef646162610188feec026377a2ef50f` |
+| 7 | `theorem` | [negQuasiIso_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespaced.lean/declarations/negquasiiso-apply.md) | 174 | `result-track:67ce1c136b563f8655f1a6b3c0fc2f14176ee557a4da1276b6732ac59890b2b7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

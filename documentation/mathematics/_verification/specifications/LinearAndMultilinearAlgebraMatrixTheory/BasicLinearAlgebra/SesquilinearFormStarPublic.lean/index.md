@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SesquilinearFormStarPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SesquilinearFormStarPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SesquilinearFormStarPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SesquilinearFormStarPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [LinearMap.isSymm_iff_basis](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SesquilinearFormStarPublic.lean/declarations/linearmap-issymm-iff-basis.md) | 25 | `result-track:9bb21643a0429c4a03254739b4eed5c8b10e75454771a24ba60da275e6edae8e` |
-| 2 | `lemma` | [LinearMap.isSymm_iff_isHermitian_toMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SesquilinearFormStarPublic.lean/declarations/linearmap-issymm-iff-ishermitian-tomatrix.md) | 44 | `result-track:ee7db929e285b90a2afe39936f874ae902160a4610eb437ef9e9eba5d89029a7` |
-| 3 | `lemma` | [star_dotProduct_toMatrix₂_mulVec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SesquilinearFormStarPublic.lean/declarations/star-dotproduct-tomatrix-mulvec.md) | 48 | `result-track:de9eff7bf530d947dbaf3ce09e63b672299f46aa7d15e217430b0454d95aac7e` |
-| 4 | `lemma` | [apply_eq_star_dotProduct_toMatrix₂_mulVec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SesquilinearFormStarPublic.lean/declarations/apply-eq-star-dotproduct-tomatrix-mulvec.md) | 52 | `result-track:504a96b6ac2102997fea21684eb11d2ff40686f4231208d75cf45d73aec7056e` |
-| 5 | `lemma` | [LinearMap.isPosSemidef_iff_posSemidef_toMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SesquilinearFormStarPublic.lean/declarations/linearmap-ispossemidef-iff-possemidef-tomatrix.md) | 59 | `result-track:e063947d574ee3460c59fe79dd0cb99ed0005d3a7af410b6599d8f98aa357fa2` |
+| 1 | `lemma` | [LinearMap.isSymm_iff_basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SesquilinearFormStarPublic.lean/declarations/linearmap-issymm-iff-basis.md) | 25 | `result-track:9bb21643a0429c4a03254739b4eed5c8b10e75454771a24ba60da275e6edae8e` |
+| 2 | `lemma` | [LinearMap.isSymm_iff_isHermitian_toMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SesquilinearFormStarPublic.lean/declarations/linearmap-issymm-iff-ishermitian-tomatrix.md) | 44 | `result-track:ee7db929e285b90a2afe39936f874ae902160a4610eb437ef9e9eba5d89029a7` |
+| 3 | `lemma` | [star_dotProduct_toMatrix₂_mulVec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SesquilinearFormStarPublic.lean/declarations/star-dotproduct-tomatrix-mulvec.md) | 48 | `result-track:de9eff7bf530d947dbaf3ce09e63b672299f46aa7d15e217430b0454d95aac7e` |
+| 4 | `lemma` | [apply_eq_star_dotProduct_toMatrix₂_mulVec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SesquilinearFormStarPublic.lean/declarations/apply-eq-star-dotproduct-tomatrix-mulvec.md) | 52 | `result-track:504a96b6ac2102997fea21684eb11d2ff40686f4231208d75cf45d73aec7056e` |
+| 5 | `lemma` | [LinearMap.isPosSemidef_iff_posSemidef_toMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SesquilinearFormStarPublic.lean/declarations/linearmap-ispossemidef-iff-possemidef-tomatrix.md) | 59 | `result-track:e063947d574ee3460c59fe79dd0cb99ed0005d3a7af410b6599d8f98aa357fa2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

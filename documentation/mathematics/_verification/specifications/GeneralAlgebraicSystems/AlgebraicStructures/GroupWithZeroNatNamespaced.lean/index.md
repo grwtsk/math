@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instMulZeroClass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/declarations/instmulzeroclass.md) | 30 | `declaration-track:75a43a08dfddeec77385b3ede7ff19b921f2c7bebc809df2bff9df9ed8f06d1d` |
-| 2 | `instance` | [instSemigroupWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/declarations/instsemigroupwithzero.md) | 34 | `declaration-track:ac4b5f8b8b45cd066a5d8ee73e8a10a63bebef6385025085b6d4fcd56b7be6a6` |
-| 3 | `instance` | [instMonoidWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/declarations/instmonoidwithzero.md) | 38 | `declaration-track:2c554e1ed2d83a899a90bbd475b2346607d15b0973e49434dbc0a367780f0565` |
-| 4 | `instance` | [instCommMonoidWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/declarations/instcommmonoidwithzero.md) | 43 | `declaration-track:2c271fe6ef08ac0f856e7f9d323c6de23d8350d4bc5379604a5d367c5d8af113` |
-| 5 | `instance` | [instIsLeftCancelMulZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/declarations/instisleftcancelmulzero.md) | 47 | `declaration-track:236eb7afea2e4ab2641693cf9712b28df3ed597986aec355ec52a93f8ca998ae` |
-| 6 | `instance` | [instCancelCommMonoidWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/declarations/instcancelcommmonoidwithzero.md) | 50 | `declaration-track:0a2d2be1b05156db67d9a9523487f61a8c4e835a1d0a3f7331fe7854204c6de3` |
-| 7 | `instance` | [instMulDivCancelClass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/declarations/instmuldivcancelclass.md) | 54 | `declaration-track:848681eb4f6e6baeb91d86d567b630c91f548881d1b872d23d1b4361d1e523c6` |
-| 8 | `instance` | [instMulZeroOneClass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/declarations/instmulzerooneclass.md) | 57 | `declaration-track:8525f190dc3aaa930ba11b49992c56366c256b9ed78251718cfc66a5e181879b` |
+| 1 | `instance` | [instMulZeroClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/declarations/instmulzeroclass.md) | 30 | `declaration-track:75a43a08dfddeec77385b3ede7ff19b921f2c7bebc809df2bff9df9ed8f06d1d` |
+| 2 | `instance` | [instSemigroupWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/declarations/instsemigroupwithzero.md) | 34 | `declaration-track:ac4b5f8b8b45cd066a5d8ee73e8a10a63bebef6385025085b6d4fcd56b7be6a6` |
+| 3 | `instance` | [instMonoidWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/declarations/instmonoidwithzero.md) | 38 | `declaration-track:2c554e1ed2d83a899a90bbd475b2346607d15b0973e49434dbc0a367780f0565` |
+| 4 | `instance` | [instCommMonoidWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/declarations/instcommmonoidwithzero.md) | 43 | `declaration-track:2c271fe6ef08ac0f856e7f9d323c6de23d8350d4bc5379604a5d367c5d8af113` |
+| 5 | `instance` | [instIsLeftCancelMulZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/declarations/instisleftcancelmulzero.md) | 47 | `declaration-track:236eb7afea2e4ab2641693cf9712b28df3ed597986aec355ec52a93f8ca998ae` |
+| 6 | `instance` | [instCancelCommMonoidWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/declarations/instcancelcommmonoidwithzero.md) | 50 | `declaration-track:0a2d2be1b05156db67d9a9523487f61a8c4e835a1d0a3f7331fe7854204c6de3` |
+| 7 | `instance` | [instMulDivCancelClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/declarations/instmuldivcancelclass.md) | 54 | `declaration-track:848681eb4f6e6baeb91d86d567b630c91f548881d1b872d23d1b4361d1e523c6` |
+| 8 | `instance` | [instMulZeroOneClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroNatNamespaced.lean/declarations/instmulzerooneclass.md) | 57 | `declaration-track:8525f190dc3aaa930ba11b49992c56366c256b9ed78251718cfc66a5e181879b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

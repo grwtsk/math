@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedPairingIdentityData.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedPairingIdentityData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedPairingIdentityData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedPairingIdentityData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ExplicitFormulaTraceIdentity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedPairingIdentityData.lean/declarations/explicitformulatraceidentity.md) | 45 | `declaration-track:00acf77c3d0941b86ce0ca8c8971cf86dfc801a7278df426a4db119ae00477b0` |
-| 2 | `theorem` | [explicit_formula_pairing_equality](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedPairingIdentityData.lean/declarations/explicit-formula-pairing-equality.md) | 53 | `result-track:0877dba58af3202932fdc5c3da125f871c96d99f8aba55316f8fe8072e626cb0` |
+| 1 | `structure` | [ExplicitFormulaTraceIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedPairingIdentityData.lean/declarations/explicitformulatraceidentity.md) | 45 | `declaration-track:00acf77c3d0941b86ce0ca8c8971cf86dfc801a7278df426a4db119ae00477b0` |
+| 2 | `theorem` | [explicit_formula_pairing_equality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedPairingIdentityData.lean/declarations/explicit-formula-pairing-equality.md) | 53 | `result-track:0877dba58af3202932fdc5c3da125f871c96d99f8aba55316f8fe8072e626cb0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

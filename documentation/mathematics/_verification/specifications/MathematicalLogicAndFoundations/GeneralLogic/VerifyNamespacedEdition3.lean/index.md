@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/VerifyNamespacedEdition3.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/VerifyNamespacedEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/VerifyNamespacedEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/VerifyNamespacedEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LedgerVerificationInputs](../../../../../MathematicalLogicAndFoundations/GeneralLogic/VerifyNamespacedEdition3.lean/declarations/ledgerverificationinputs.md) | 22 | `declaration-track:749e9e33678e4b7c89512c859557eeafb7e15a4ee306c84077be7d81e7e2ceed` |
-| 2 | `structure` | [Valid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/VerifyNamespacedEdition3.lean/declarations/valid.md) | 29 | `declaration-track:5c6d5bf6b5b87dea884ed2f29bca8ea5906d9c953c8b993a37f561d392fef6fd` |
+| 1 | `structure` | [LedgerVerificationInputs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/VerifyNamespacedEdition3.lean/declarations/ledgerverificationinputs.md) | 22 | `declaration-track:749e9e33678e4b7c89512c859557eeafb7e15a4ee306c84077be7d81e7e2ceed` |
+| 2 | `structure` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/VerifyNamespacedEdition3.lean/declarations/valid.md) | 29 | `declaration-track:5c6d5bf6b5b87dea884ed2f29bca8ea5906d9c953c8b993a37f561d392fef6fd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

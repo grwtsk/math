@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceiptNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceiptNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceiptNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceiptNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [arxiv181204760CheckedProofReceipt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceiptNamespaced.lean/declarations/arxiv181204760checkedproofreceipt.md) | 15 | `declaration-track:afad27e0d305c841c5f3cdb6449fee08a23c48e64d18be93db0129c137124d12` |
-| 2 | `theorem` | [arxiv181204760_receipt_not_promotable_to_checked_proof](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceiptNamespaced.lean/declarations/arxiv181204760-receipt-not-promotable-to-checked-proof.md) | 25 | `result-track:c2289e2f55f2968434f92011b34099dba16b60473c320c6216cafc953d7a959a` |
-| 3 | `theorem` | [arxiv181204760_receipt_has_open_residue](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceiptNamespaced.lean/declarations/arxiv181204760-receipt-has-open-residue.md) | 28 | `result-track:532f16564ba8ede9907e13af2f8f8f9e44285e4de837856755e4656d93d3d2f9` |
+| 1 | `def` | [arxiv181204760CheckedProofReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceiptNamespaced.lean/declarations/arxiv181204760checkedproofreceipt.md) | 15 | `declaration-track:afad27e0d305c841c5f3cdb6449fee08a23c48e64d18be93db0129c137124d12` |
+| 2 | `theorem` | [arxiv181204760_receipt_not_promotable_to_checked_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceiptNamespaced.lean/declarations/arxiv181204760-receipt-not-promotable-to-checked-proof.md) | 25 | `result-track:c2289e2f55f2968434f92011b34099dba16b60473c320c6216cafc953d7a959a` |
+| 3 | `theorem` | [arxiv181204760_receipt_has_open_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CheckedProofReceiptNamespaced.lean/declarations/arxiv181204760-receipt-has-open-residue.md) | 28 | `result-track:532f16564ba8ede9907e13af2f8f8f9e44285e4de837856755e4656d93d3d2f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

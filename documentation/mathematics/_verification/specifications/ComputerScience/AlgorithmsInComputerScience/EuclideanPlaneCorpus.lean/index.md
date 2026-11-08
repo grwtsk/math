@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/EuclideanPlaneCorpus.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/EuclideanPlaneCorpus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EuclideanPlaneCorpus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EuclideanPlaneCorpus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sourceModule](../../../../../ComputerScience/AlgorithmsInComputerScience/EuclideanPlaneCorpus.lean/declarations/sourcemodule.md) | 16 | `declaration-track:098f47331d47dd3115c3a3915c8eb403d63be2db40cc3252c7f0d809d1664b34` |
-| 2 | `def` | [dependencyClosure](../../../../../ComputerScience/AlgorithmsInComputerScience/EuclideanPlaneCorpus.lean/declarations/dependencyclosure.md) | 29 | `declaration-track:9a26a3cdf5564ace1dd1215463e9286aeffc949a9db771f38acc2d7426c0e530` |
-| 3 | `theorem` | [dependencyClosure_length](../../../../../ComputerScience/AlgorithmsInComputerScience/EuclideanPlaneCorpus.lean/declarations/dependencyclosure-length.md) | 31 | `result-track:fb1f22b5fcef9f51d5fc45539609f3e25d3cfe38a8e8d1485df8a8bf4ba4caf5` |
+| 1 | `def` | [sourceModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EuclideanPlaneCorpus.lean/declarations/sourcemodule.md) | 16 | `declaration-track:098f47331d47dd3115c3a3915c8eb403d63be2db40cc3252c7f0d809d1664b34` |
+| 2 | `def` | [dependencyClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EuclideanPlaneCorpus.lean/declarations/dependencyclosure.md) | 29 | `declaration-track:9a26a3cdf5564ace1dd1215463e9286aeffc949a9db771f38acc2d7426c0e530` |
+| 3 | `theorem` | [dependencyClosure_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EuclideanPlaneCorpus.lean/declarations/dependencyclosure-length.md) | 31 | `result-track:fb1f22b5fcef9f51d5fc45539609f3e25d3cfe38a8e8d1485df8a8bf4ba4caf5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

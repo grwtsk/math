@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/GridEdgeConstruction.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/GridEdgeConstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GridEdgeConstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GridEdgeConstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Symmetric Irreflexive Relation Data](../../../../../Combinatorics/GraphTheory/SymmetricIrreflexiveRelationData.lean/index.md) — import line 19; pinned internal source present.
+- [Symmetric Irreflexive Relation Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/SymmetricIrreflexiveRelationData.lean/index.md) — import line 19; pinned internal source present.
 - `Folder.Carrier.Grid` — import line 21; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [gridEdgeGraph](../../../../../Combinatorics/GraphTheory/GridEdgeConstruction.lean/declarations/gridedgegraph.md) | 44 | `declaration-track:bab9754c39b05ed11084399c701b73b4f28c6a4722dbf7515b615803bebc3e07` |
+| 1 | `def` | [gridEdgeGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GridEdgeConstruction.lean/declarations/gridedgegraph.md) | 44 | `declaration-track:bab9754c39b05ed11084399c701b73b4f28c6a4722dbf7515b615803bebc3e07` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

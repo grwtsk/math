@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [commonFacets](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/commonfacets.md) | 21 | `declaration-track:918f95e95f71150efabd1847af33240a9c720474a4c429c5dabaaa4ef76d5440` |
-| 2 | `def` | [domainFacets](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/domainfacets.md) | 24 | `declaration-track:d7b208881f7313ef64d0b44855d341183611b2777dcca5c19a97c09f9e00756f` |
-| 3 | `def` | [facetsFor](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/facetsfor.md) | 35 | `declaration-track:7024b892fc9e5f03d6b61fb76769890e654673b2a698b6dfb8d164b3593f87aa` |
-| 4 | `def` | [moduleName](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/modulename.md) | 38 | `declaration-track:163c65dc28bd71f0b9080847b21c4156474d116ce82a20efe4830c01a4bb0de0` |
-| 5 | `def` | [declaredModules](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/declaredmodules.md) | 41 | `declaration-track:b0cc8c5d176ddeb61be30138af624dc88b1cedd4ef97ac4cae55e6dcc9ed8057` |
-| 6 | `def` | [moduleContractFor](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/modulecontractfor.md) | 46 | `declaration-track:d383c566436b20b636490dcb6e594b2388f333f63878bb2731260fb102c740e8` |
-| 7 | `def` | [declaredModuleContracts](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/declaredmodulecontracts.md) | 52 | `declaration-track:34b90d4b0a6f0ae05b3d52c7832b5349651bb48b1d1e3e8f09a4f2ac90dbdfaf` |
-| 8 | `theorem` | [commonFacets_count](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/commonfacets-count.md) | 55 | `result-track:6ea4922c4c37cbcfcaf645314fa07a2fa9a530960a00121955d7c26575d342ad` |
-| 9 | `theorem` | [declaredModules_count](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/declaredmodules-count.md) | 58 | `result-track:02952c3de0d79525b52d4459e090869cc2d54cd265571deea110b7f397ef61e0` |
-| 10 | `theorem` | [declaredModuleContracts_count](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/declaredmodulecontracts-count.md) | 61 | `result-track:b50194da8dc2032a11884f31a56207f34a65695474e43d805ab032e43c079ec6` |
+| 1 | `def` | [commonFacets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/commonfacets.md) | 21 | `declaration-track:918f95e95f71150efabd1847af33240a9c720474a4c429c5dabaaa4ef76d5440` |
+| 2 | `def` | [domainFacets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/domainfacets.md) | 24 | `declaration-track:d7b208881f7313ef64d0b44855d341183611b2777dcca5c19a97c09f9e00756f` |
+| 3 | `def` | [facetsFor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/facetsfor.md) | 35 | `declaration-track:7024b892fc9e5f03d6b61fb76769890e654673b2a698b6dfb8d164b3593f87aa` |
+| 4 | `def` | [moduleName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/modulename.md) | 38 | `declaration-track:163c65dc28bd71f0b9080847b21c4156474d116ce82a20efe4830c01a4bb0de0` |
+| 5 | `def` | [declaredModules](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/declaredmodules.md) | 41 | `declaration-track:b0cc8c5d176ddeb61be30138af624dc88b1cedd4ef97ac4cae55e6dcc9ed8057` |
+| 6 | `def` | [moduleContractFor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/modulecontractfor.md) | 46 | `declaration-track:d383c566436b20b636490dcb6e594b2388f333f63878bb2731260fb102c740e8` |
+| 7 | `def` | [declaredModuleContracts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/declaredmodulecontracts.md) | 52 | `declaration-track:34b90d4b0a6f0ae05b3d52c7832b5349651bb48b1d1e3e8f09a4f2ac90dbdfaf` |
+| 8 | `theorem` | [commonFacets_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/commonfacets-count.md) | 55 | `result-track:6ea4922c4c37cbcfcaf645314fa07a2fa9a530960a00121955d7c26575d342ad` |
+| 9 | `theorem` | [declaredModules_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/declaredmodules-count.md) | 58 | `result-track:02952c3de0d79525b52d4459e090869cc2d54cd265571deea110b7f397ef61e0` |
+| 10 | `theorem` | [declaredModuleContracts_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTriplesNamespaced.lean/declarations/declaredmodulecontracts-count.md) | 61 | `result-track:b50194da8dc2032a11884f31a56207f34a65695474e43d805ab032e43c079ec6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

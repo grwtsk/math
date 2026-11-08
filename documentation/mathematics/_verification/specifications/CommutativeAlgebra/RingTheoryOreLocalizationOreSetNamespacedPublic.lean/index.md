@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryOreLocalizationOreSetNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryOreLocalizationOreSetNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryOreLocalizationOreSetNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryOreLocalizationOreSetNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [oreSetOfIsCancelMulZero](../../../../CommutativeAlgebra/RingTheoryOreLocalizationOreSetNamespacedPublic.lean/declarations/oresetofiscancelmulzero.md) | 41 | `declaration-track:a097f61eb24b892f72d81c8622db16c351a40a5a5bce661c4317dda3881d5cbb` |
-| 2 | `def` | [oreSetOfNoZeroDivisors](../../../../CommutativeAlgebra/RingTheoryOreLocalizationOreSetNamespacedPublic.lean/declarations/oresetofnozerodivisors.md) | 52 | `declaration-track:7ec469534075e8cf5dc29a0319ebf2444249d5f7c3b5388c39f1e36dbf36f24f` |
-| 3 | `lemma` | [nonempty_oreSet_iff](../../../../CommutativeAlgebra/RingTheoryOreLocalizationOreSetNamespacedPublic.lean/declarations/nonempty-oreset-iff.md) | 58 | `result-track:e439710564f14e132d1f6013eb7e45f482ef544d3a15a4cfba331867213fc83b` |
-| 4 | `lemma` | [nonempty_oreSet_iff_of_noZeroDivisors](../../../../CommutativeAlgebra/RingTheoryOreLocalizationOreSetNamespacedPublic.lean/declarations/nonempty-oreset-iff-of-nozerodivisors.md) | 67 | `result-track:0817e23ddb0fcd41c9e0b8d1a10825e47ad70de6df8057c4a8550ddcc476c85e` |
+| 1 | `def` | [oreSetOfIsCancelMulZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryOreLocalizationOreSetNamespacedPublic.lean/declarations/oresetofiscancelmulzero.md) | 41 | `declaration-track:a097f61eb24b892f72d81c8622db16c351a40a5a5bce661c4317dda3881d5cbb` |
+| 2 | `def` | [oreSetOfNoZeroDivisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryOreLocalizationOreSetNamespacedPublic.lean/declarations/oresetofnozerodivisors.md) | 52 | `declaration-track:7ec469534075e8cf5dc29a0319ebf2444249d5f7c3b5388c39f1e36dbf36f24f` |
+| 3 | `lemma` | [nonempty_oreSet_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryOreLocalizationOreSetNamespacedPublic.lean/declarations/nonempty-oreset-iff.md) | 58 | `result-track:e439710564f14e132d1f6013eb7e45f482ef544d3a15a4cfba331867213fc83b` |
+| 4 | `lemma` | [nonempty_oreSet_iff_of_noZeroDivisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryOreLocalizationOreSetNamespacedPublic.lean/declarations/nonempty-oreset-iff-of-nozerodivisors.md) | 67 | `result-track:0817e23ddb0fcd41c9e0b8d1a10825e47ad70de6df8057c4a8550ddcc476c85e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

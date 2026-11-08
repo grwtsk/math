@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationRadonNikodymNamespacedPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationRadonNikodymNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationRadonNikodymNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationRadonNikodymNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [toReal_rnDeriv_map](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationRadonNikodymNamespacedPublic.lean/declarations/toreal-rnderiv-map.md) | 60 | `result-track:cc4dca2c625c374b32952ce4df572aa8156f826f7385c08581dcfb983fc16dda` |
-| 2 | `lemma` | [rnDeriv_map](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationRadonNikodymNamespacedPublic.lean/declarations/rnderiv-map.md) | 91 | `result-track:a1b2a6ae769651bd1525493ce6ce8999e085fcfba0b6d70ce224dc800a40c9a8` |
-| 3 | `lemma` | [rnDeriv_map_ae_eq_trim](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationRadonNikodymNamespacedPublic.lean/declarations/rnderiv-map-ae-eq-trim.md) | 111 | `result-track:beff395db864217f0db7acb178490140701977cf4c537f62f789fbc82e4be8ed` |
-| 4 | `lemma` | [toReal_rnDeriv_map_ae_eq_trim](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationRadonNikodymNamespacedPublic.lean/declarations/toreal-rnderiv-map-ae-eq-trim.md) | 127 | `result-track:aca2edb8894d76bf407e1304cffc29f79037b8561dd0269954663241003fdf7d` |
-| 5 | `lemma` | [toReal_rnDeriv_trim](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationRadonNikodymNamespacedPublic.lean/declarations/toreal-rnderiv-trim.md) | 142 | `result-track:9e96767d9a39dade5588c486af7c34e452fbfd0c37327b546fe02835682f9319` |
-| 6 | `lemma` | [rnDeriv_trim](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationRadonNikodymNamespacedPublic.lean/declarations/rnderiv-trim.md) | 155 | `result-track:c1d980f6c33291cfb09b2638d5b81d3f61576e6c5b75b5cb3b04634240ffc8b9` |
+| 1 | `lemma` | [toReal_rnDeriv_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationRadonNikodymNamespacedPublic.lean/declarations/toreal-rnderiv-map.md) | 60 | `result-track:cc4dca2c625c374b32952ce4df572aa8156f826f7385c08581dcfb983fc16dda` |
+| 2 | `lemma` | [rnDeriv_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationRadonNikodymNamespacedPublic.lean/declarations/rnderiv-map.md) | 91 | `result-track:a1b2a6ae769651bd1525493ce6ce8999e085fcfba0b6d70ce224dc800a40c9a8` |
+| 3 | `lemma` | [rnDeriv_map_ae_eq_trim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationRadonNikodymNamespacedPublic.lean/declarations/rnderiv-map-ae-eq-trim.md) | 111 | `result-track:beff395db864217f0db7acb178490140701977cf4c537f62f789fbc82e4be8ed` |
+| 4 | `lemma` | [toReal_rnDeriv_map_ae_eq_trim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationRadonNikodymNamespacedPublic.lean/declarations/toreal-rnderiv-map-ae-eq-trim.md) | 127 | `result-track:aca2edb8894d76bf407e1304cffc29f79037b8561dd0269954663241003fdf7d` |
+| 5 | `lemma` | [toReal_rnDeriv_trim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationRadonNikodymNamespacedPublic.lean/declarations/toreal-rnderiv-trim.md) | 142 | `result-track:9e96767d9a39dade5588c486af7c34e452fbfd0c37327b546fe02835682f9319` |
+| 6 | `lemma` | [rnDeriv_trim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationRadonNikodymNamespacedPublic.lean/declarations/rnderiv-trim.md) | 155 | `result-track:c1d980f6c33291cfb09b2638d5b81d3f61576e6c5b75b5cb3b04634240ffc8b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

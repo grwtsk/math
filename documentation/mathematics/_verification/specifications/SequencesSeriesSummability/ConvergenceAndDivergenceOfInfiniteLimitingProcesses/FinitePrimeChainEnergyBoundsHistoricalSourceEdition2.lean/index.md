@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBoundsHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBoundsHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBoundsHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBoundsHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.InnerProductSpace.MoebiusResponseGramExpansion`](../../../../../GeneralTopology/MoebiusResponseGramExpansion.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.FiniteProductResponseIdentification`](../../../../../MeasureAndIntegration/FiniteProductResponseIdentification.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.Analysis.AsymptoticAnalysis.ExponentialRecurrence`](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ExponentialRecurrenceHistoricalSourceEdition2.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.MoebiusResponseGramExpansion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MoebiusResponseGramExpansion.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.FiniteProductResponseIdentification`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteProductResponseIdentification.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.AsymptoticAnalysis.ExponentialRecurrence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ExponentialRecurrenceHistoricalSourceEdition2.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompletionChain](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBoundsHistoricalSourceEdition2.lean/declarations/completionchain.md) | 14 | `declaration-track:8a32db84f35dc3636c08b8ac7ff28c02653547ad3cf7f52a436a4788df0b2788` |
-| 2 | `structure` | [AmortizedCompletion](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBoundsHistoricalSourceEdition2.lean/declarations/amortizedcompletion.md) | 27 | `declaration-track:3c7b18c375f1dbd121a3da734c3df701a457c9b2974ea89b3e7ca0c6d7af623c` |
-| 3 | `theorem` | [completion_energy_bound](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBoundsHistoricalSourceEdition2.lean/declarations/completion-energy-bound.md) | 43 | `result-track:b7a09774e9be941e8836d6c92495f56ca0b13963f4f0bc0adc474020ad9102f3` |
-| 4 | `theorem` | [amortized_completion_implies_P04](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBoundsHistoricalSourceEdition2.lean/declarations/amortized-completion-implies-p04.md) | 85 | `result-track:d4af93f41cc2871e379d006d5386cecf1bbeaf3fcbc446aa7c4747f74e5638a0` |
+| 1 | `structure` | [CompletionChain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBoundsHistoricalSourceEdition2.lean/declarations/completionchain.md) | 14 | `declaration-track:8a32db84f35dc3636c08b8ac7ff28c02653547ad3cf7f52a436a4788df0b2788` |
+| 2 | `structure` | [AmortizedCompletion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBoundsHistoricalSourceEdition2.lean/declarations/amortizedcompletion.md) | 27 | `declaration-track:3c7b18c375f1dbd121a3da734c3df701a457c9b2974ea89b3e7ca0c6d7af623c` |
+| 3 | `theorem` | [completion_energy_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBoundsHistoricalSourceEdition2.lean/declarations/completion-energy-bound.md) | 43 | `result-track:b7a09774e9be941e8836d6c92495f56ca0b13963f4f0bc0adc474020ad9102f3` |
+| 4 | `theorem` | [amortized_completion_implies_P04](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBoundsHistoricalSourceEdition2.lean/declarations/amortized-completion-implies-p04.md) | 85 | `result-track:d4af93f41cc2871e379d006d5386cecf1bbeaf3fcbc446aa7c4747f74e5638a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

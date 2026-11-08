@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CryptographicReduction.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CryptographicReduction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CryptographicReduction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CryptographicReduction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OracleToConcreteReduction](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CryptographicReduction.lean/declarations/oracletoconcretereduction.md) | 20 | `declaration-track:a9769e8026b83942c60798009f9c24eb4ebd238130d657769d389e9919cb9d46` |
-| 2 | `structure` | [QueryToWorkTranslation](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CryptographicReduction.lean/declarations/querytoworktranslation.md) | 38 | `declaration-track:caf773965ae99a35045b41c1672851657cfa87961c27fdc033db70d1ab1459f7` |
-| 3 | `structure` | [ConcreteHardnessCertificate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CryptographicReduction.lean/declarations/concretehardnesscertificate.md) | 51 | `declaration-track:115d9d1b357f97b83f889a6bdd25bae497efa61fe8985955c9eed16e8102cf56` |
-| 4 | `theorem` | [work_lower_bound](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CryptographicReduction.lean/declarations/work-lower-bound.md) | 79 | `result-track:0a69eba2e2fa04b4f5a85cf775f70646f1ef49a3ae978ef2caea3902cdda696f` |
+| 1 | `structure` | [OracleToConcreteReduction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CryptographicReduction.lean/declarations/oracletoconcretereduction.md) | 20 | `declaration-track:a9769e8026b83942c60798009f9c24eb4ebd238130d657769d389e9919cb9d46` |
+| 2 | `structure` | [QueryToWorkTranslation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CryptographicReduction.lean/declarations/querytoworktranslation.md) | 38 | `declaration-track:caf773965ae99a35045b41c1672851657cfa87961c27fdc033db70d1ab1459f7` |
+| 3 | `structure` | [ConcreteHardnessCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CryptographicReduction.lean/declarations/concretehardnesscertificate.md) | 51 | `declaration-track:115d9d1b357f97b83f889a6bdd25bae497efa61fe8985955c9eed16e8102cf56` |
+| 4 | `theorem` | [work_lower_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CryptographicReduction.lean/declarations/work-lower-bound.md) | 79 | `result-track:0a69eba2e2fa04b4f5a85cf775f70646f1ef49a3ae978ef2caea3902cdda696f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RootNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RootNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RootNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RootNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [controlledRoot](../../../../../ComputerScience/AlgorithmsInComputerScience/RootNamespaced.lean/declarations/controlledroot.md) | 23 | `declaration-track:2e2196627858a4cc753ffbc7e9e8ce38d27f69544f141568e05c919278624040` |
-| 2 | `def` | [importsCorpus](../../../../../ComputerScience/AlgorithmsInComputerScience/RootNamespaced.lean/declarations/importscorpus.md) | 25 | `declaration-track:12fb533ba410f6450a29ddb6887b6cbc2f1b8122afe71cb85fd302f3164480bb` |
-| 3 | `def` | [bandedRoots](../../../../../ComputerScience/AlgorithmsInComputerScience/RootNamespaced.lean/declarations/bandedroots.md) | 27 | `declaration-track:f74039d5b671f5fa0edb6ba3bf20f2e82ee545e42a47b7481c11eec4cbf27b91` |
-| 4 | `theorem` | [importsCorpus_false](../../../../../ComputerScience/AlgorithmsInComputerScience/RootNamespaced.lean/declarations/importscorpus-false.md) | 40 | `result-track:67b2307f23f4a525e97d61431605ad82d9551981b197c23a2fc2aad2cfd716b0` |
-| 5 | `theorem` | [bandedRoots_count](../../../../../ComputerScience/AlgorithmsInComputerScience/RootNamespaced.lean/declarations/bandedroots-count.md) | 43 | `result-track:0dce13d5f6b7259757a33d5355d4505088a4aa0f62114e6498d3033e1e50e21a` |
+| 1 | `def` | [controlledRoot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RootNamespaced.lean/declarations/controlledroot.md) | 23 | `declaration-track:2e2196627858a4cc753ffbc7e9e8ce38d27f69544f141568e05c919278624040` |
+| 2 | `def` | [importsCorpus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RootNamespaced.lean/declarations/importscorpus.md) | 25 | `declaration-track:12fb533ba410f6450a29ddb6887b6cbc2f1b8122afe71cb85fd302f3164480bb` |
+| 3 | `def` | [bandedRoots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RootNamespaced.lean/declarations/bandedroots.md) | 27 | `declaration-track:f74039d5b671f5fa0edb6ba3bf20f2e82ee545e42a47b7481c11eec4cbf27b91` |
+| 4 | `theorem` | [importsCorpus_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RootNamespaced.lean/declarations/importscorpus-false.md) | 40 | `result-track:67b2307f23f4a525e97d61431605ad82d9551981b197c23a2fc2aad2cfd716b0` |
+| 5 | `theorem` | [bandedRoots_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RootNamespaced.lean/declarations/bandedroots-count.md) | 43 | `result-track:0dce13d5f6b7259757a33d5355d4505088a4aa0f62114e6498d3033e1e50e21a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

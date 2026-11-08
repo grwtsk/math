@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConditionalListRoundTrip.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConditionalListRoundTrip.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConditionalListRoundTrip.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConditionalListRoundTrip.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Folder.Archive.Byte` — import line 19; external provider; requires a separately pinned dependency.
 - `Folder.Carrier.BinaryMatrix` — import line 20; external provider; requires a separately pinned dependency.
-- [List Matrix Functions](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ListMatrixFunctions.lean/index.md) — import line 22; pinned internal source present.
+- [List Matrix Functions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ListMatrixFunctions.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [matrixToBytes?_bytesToMatrix_of_codec](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConditionalListRoundTrip.lean/declarations/matrixtobytes-bytestomatrix-of-codec.md) | 41 | `result-track:b42375d2b071fef74e4f53d44caa569e6c5eeaf08c23f28578c72d842c34b5f4` |
+| 1 | `theorem` | [matrixToBytes?_bytesToMatrix_of_codec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConditionalListRoundTrip.lean/declarations/matrixtobytes-bytestomatrix-of-codec.md) | 41 | `result-track:b42375d2b071fef74e4f53d44caa569e6c5eeaf08c23f28578c72d842c34b5f4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

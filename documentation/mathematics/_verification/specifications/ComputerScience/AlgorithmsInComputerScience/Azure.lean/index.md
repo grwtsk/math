@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Azure.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Azure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Azure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Azure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [azureUploadDestFrom](../../../../../ComputerScience/AlgorithmsInComputerScience/Azure.lean/declarations/azureuploaddestfrom.md) | 34 | `declaration-track:34d02b6f8a52bd28d38f3f24a38e7dfa845697f9401c42d8d47b8e1d5df77439` |
-| 2 | `def` | [azureBearerApiVersionHeader](../../../../../ComputerScience/AlgorithmsInComputerScience/Azure.lean/declarations/azurebearerapiversionheader.md) | 45 | `declaration-track:361ffbcb8ddc4730dcffba0d6445d733342346a095c14ecaa0fd020ffa85ebbe` |
-| 3 | `def` | [getAzureDateHeader](../../../../../ComputerScience/AlgorithmsInComputerScience/Azure.lean/declarations/getazuredateheader.md) | 49 | `declaration-track:d64a3be7be621af7fd42ce5f59012a11891c859880e63438bc38baf8158e267f` |
-| 4 | `def` | [azureBearerCurlArgs](../../../../../ComputerScience/AlgorithmsInComputerScience/Azure.lean/declarations/azurebearercurlargs.md) | 62 | `declaration-track:99f372d1d0f7611ec6da636fca35e003a5b192bc1e780b2ba4102a625ab5244c` |
-| 5 | `def` | [azureAuthFrom](../../../../../ComputerScience/AlgorithmsInComputerScience/Azure.lean/declarations/azureauthfrom.md) | 73 | `declaration-track:d05e798ae7a3c1affae684d6f0b49b12f7f227433eea3fe3c2219f8ea1b22307` |
-| 6 | `def` | [getAzureAuth](../../../../../ComputerScience/AlgorithmsInComputerScience/Azure.lean/declarations/getazureauth.md) | 83 | `declaration-track:c1cf6efd20c5746b01aa2d67344c354dc135157bcb2740eaf09c41901c83f35c` |
-| 7 | `def` | [azurePutStaged](../../../../../ComputerScience/AlgorithmsInComputerScience/Azure.lean/declarations/azureputstaged.md) | 90 | `declaration-track:95c0c490c1fa0ac4d77b541176af0cafc8384b129911e92e4d27052c4f889c1c` |
+| 1 | `def` | [azureUploadDestFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Azure.lean/declarations/azureuploaddestfrom.md) | 34 | `declaration-track:34d02b6f8a52bd28d38f3f24a38e7dfa845697f9401c42d8d47b8e1d5df77439` |
+| 2 | `def` | [azureBearerApiVersionHeader](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Azure.lean/declarations/azurebearerapiversionheader.md) | 45 | `declaration-track:361ffbcb8ddc4730dcffba0d6445d733342346a095c14ecaa0fd020ffa85ebbe` |
+| 3 | `def` | [getAzureDateHeader](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Azure.lean/declarations/getazuredateheader.md) | 49 | `declaration-track:d64a3be7be621af7fd42ce5f59012a11891c859880e63438bc38baf8158e267f` |
+| 4 | `def` | [azureBearerCurlArgs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Azure.lean/declarations/azurebearercurlargs.md) | 62 | `declaration-track:99f372d1d0f7611ec6da636fca35e003a5b192bc1e780b2ba4102a625ab5244c` |
+| 5 | `def` | [azureAuthFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Azure.lean/declarations/azureauthfrom.md) | 73 | `declaration-track:d05e798ae7a3c1affae684d6f0b49b12f7f227433eea3fe3c2219f8ea1b22307` |
+| 6 | `def` | [getAzureAuth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Azure.lean/declarations/getazureauth.md) | 83 | `declaration-track:c1cf6efd20c5746b01aa2d67344c354dc135157bcb2740eaf09c41901c83f35c` |
+| 7 | `def` | [azurePutStaged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Azure.lean/declarations/azureputstaged.md) | 90 | `declaration-track:95c0c490c1fa0ac4d77b541176af0cafc8384b129911e92e4d27052c4f889c1c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

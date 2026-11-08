@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TubesNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TubesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TubesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TubesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ScaleData](../../../../../ComputerScience/AlgorithmsInComputerScience/TubesNamespaced.lean/declarations/scaledata.md) | 32 | `declaration-track:c9b1d5609a2a5e74ff9f112db716f520f1497dba1750dc622693f1287188ec96` |
-| 2 | `structure` | [Tube](../../../../../ComputerScience/AlgorithmsInComputerScience/TubesNamespaced.lean/declarations/tube.md) | 40 | `declaration-track:0485cb5c0ddba682a07d01e794196455fc73dd52402406b1efec751aa62122de` |
-| 3 | `structure` | [TubeConfiguration](../../../../../ComputerScience/AlgorithmsInComputerScience/TubesNamespaced.lean/declarations/tubeconfiguration.md) | 54 | `declaration-track:bf2770625d3cdd51cb7da9dba422d09d89bb23563791a971d528fd0f4e6dc794` |
+| 1 | `structure` | [ScaleData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TubesNamespaced.lean/declarations/scaledata.md) | 32 | `declaration-track:c9b1d5609a2a5e74ff9f112db716f520f1497dba1750dc622693f1287188ec96` |
+| 2 | `structure` | [Tube](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TubesNamespaced.lean/declarations/tube.md) | 40 | `declaration-track:0485cb5c0ddba682a07d01e794196455fc73dd52402406b1efec751aa62122de` |
+| 3 | `structure` | [TubeConfiguration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TubesNamespaced.lean/declarations/tubeconfiguration.md) | 54 | `declaration-track:bf2770625d3cdd51cb7da9dba422d09d89bb23563791a971d528fd0f4e6dc794` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Mathlib.Data.Matrix.Basic` — import line 19; external provider; requires a separately pinned dependency.
 - `Init.Data.Array.MapIdx` — import line 20; external provider; requires a separately pinned dependency.
-- [Row Major Array Representation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/index.md) — import line 22; pinned internal source present.
+- [Row Major Array Representation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorArrayRepresentation.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [get_mapInPlace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/declarations/get-mapinplace.md) | 57 | `result-track:e0fa762be5c5a992074237ebd20945aae53c7878d5287545eea0176c3fd7e6ed` |
-| 2 | `theorem` | [get_zipWithInPlace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/declarations/get-zipwithinplace.md) | 68 | `result-track:465335ed0e68c11504a46bd6e78f0dc0a66ea4d1b558c2785149617d33d72201` |
-| 3 | `theorem` | [mapInPlace_spec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/declarations/mapinplace-spec.md) | 82 | `result-track:ceeb0c6a3de0eb68429508eab43026db20013657ab9cb017d44d8a4cc03919e0` |
-| 4 | `theorem` | [zipWithInPlace_spec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/declarations/zipwithinplace-spec.md) | 97 | `result-track:be7528f4ec3946db6727d8516c4a908250414c43b08953a93b2860585069481b` |
-| 5 | `theorem` | [andInPlace_spec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/declarations/andinplace-spec.md) | 106 | `result-track:147d5d8f7a55b0927fbbd0c02782e79de34a599564021ce30de8e7e8eb254cab` |
-| 6 | `theorem` | [orInPlace_spec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/declarations/orinplace-spec.md) | 113 | `result-track:dd928f6da51adfe8d0f507025e4aca153c2895e28749675cdf0b98cfb734567b` |
-| 7 | `theorem` | [xorInPlace_spec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/declarations/xorinplace-spec.md) | 120 | `result-track:bbd97e302149ef5b7fe1349dd7e9b292de8fd02677850e70109edeacb1c0676d` |
-| 8 | `theorem` | [notInPlace_spec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/declarations/notinplace-spec.md) | 127 | `result-track:8c0f805364825822f60a65ad6489dcf2103cccf5c871fc67f196bfdc7d820a3e` |
+| 1 | `theorem` | [get_mapInPlace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/declarations/get-mapinplace.md) | 57 | `result-track:e0fa762be5c5a992074237ebd20945aae53c7878d5287545eea0176c3fd7e6ed` |
+| 2 | `theorem` | [get_zipWithInPlace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/declarations/get-zipwithinplace.md) | 68 | `result-track:465335ed0e68c11504a46bd6e78f0dc0a66ea4d1b558c2785149617d33d72201` |
+| 3 | `theorem` | [mapInPlace_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/declarations/mapinplace-spec.md) | 82 | `result-track:ceeb0c6a3de0eb68429508eab43026db20013657ab9cb017d44d8a4cc03919e0` |
+| 4 | `theorem` | [zipWithInPlace_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/declarations/zipwithinplace-spec.md) | 97 | `result-track:be7528f4ec3946db6727d8516c4a908250414c43b08953a93b2860585069481b` |
+| 5 | `theorem` | [andInPlace_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/declarations/andinplace-spec.md) | 106 | `result-track:147d5d8f7a55b0927fbbd0c02782e79de34a599564021ce30de8e7e8eb254cab` |
+| 6 | `theorem` | [orInPlace_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/declarations/orinplace-spec.md) | 113 | `result-track:dd928f6da51adfe8d0f507025e4aca153c2895e28749675cdf0b98cfb734567b` |
+| 7 | `theorem` | [xorInPlace_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/declarations/xorinplace-spec.md) | 120 | `result-track:bbd97e302149ef5b7fe1349dd7e9b292de8fd02677850e70109edeacb1c0676d` |
+| 8 | `theorem` | [notInPlace_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseSpecifications.lean/declarations/notinplace-spec.md) | 127 | `result-track:8c0f805364825822f60a65ad6489dcf2103cccf5c871fc67f196bfdc7d820a3e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

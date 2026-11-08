@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AsymptoticConePublic.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AsymptoticConePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AsymptoticConePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AsymptoticConePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [AffineSpace.asymptoticNhds_le_cobounded](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AsymptoticConePublic.lean/declarations/affinespace-asymptoticnhds-le-cobounded.md) | 27 | `result-track:1d41a288042258915570486b82d376d91c5e1612ef276b50268383277e3e081b` |
-| 2 | `theorem` | [asymptoticCone_subset_singleton_of_bounded](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AsymptoticConePublic.lean/declarations/asymptoticcone-subset-singleton-of-bounded.md) | 39 | `result-track:03fed4c9f5ae76cf73865e0747370dff0de24512fa58b3f59e5a7f62c8c3bba3` |
-| 3 | `theorem` | [AffineSpace.cobounded_eq_iSup_sphere_asymptoticNhds](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AsymptoticConePublic.lean/declarations/affinespace-cobounded-eq-isup-sphere-asymptoticnhds.md) | 47 | `result-track:fc5972eda4fb587cc3f081557e6cdc9b603e8d4f5b66071019096c4e101c41b4` |
-| 4 | `theorem` | [isBounded_iff_asymptoticCone_subset_singleton](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AsymptoticConePublic.lean/declarations/isbounded-iff-asymptoticcone-subset-singleton.md) | 69 | `result-track:4b01ea75a3d44ba03598a5b37abd32363046d1d484b066f7d0e71f5c7229fdc8` |
-| 5 | `theorem` | [not_bounded_iff_exists_ne_zero_mem_asymptoticCone](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AsymptoticConePublic.lean/declarations/not-bounded-iff-exists-ne-zero-mem-asymptoticcone.md) | 79 | `result-track:95c67d7d8818ec982e522f4647fc16b41131ef1623bfd8aee10747a823985fbc` |
+| 1 | `theorem` | [AffineSpace.asymptoticNhds_le_cobounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AsymptoticConePublic.lean/declarations/affinespace-asymptoticnhds-le-cobounded.md) | 27 | `result-track:1d41a288042258915570486b82d376d91c5e1612ef276b50268383277e3e081b` |
+| 2 | `theorem` | [asymptoticCone_subset_singleton_of_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AsymptoticConePublic.lean/declarations/asymptoticcone-subset-singleton-of-bounded.md) | 39 | `result-track:03fed4c9f5ae76cf73865e0747370dff0de24512fa58b3f59e5a7f62c8c3bba3` |
+| 3 | `theorem` | [AffineSpace.cobounded_eq_iSup_sphere_asymptoticNhds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AsymptoticConePublic.lean/declarations/affinespace-cobounded-eq-isup-sphere-asymptoticnhds.md) | 47 | `result-track:fc5972eda4fb587cc3f081557e6cdc9b603e8d4f5b66071019096c4e101c41b4` |
+| 4 | `theorem` | [isBounded_iff_asymptoticCone_subset_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AsymptoticConePublic.lean/declarations/isbounded-iff-asymptoticcone-subset-singleton.md) | 69 | `result-track:4b01ea75a3d44ba03598a5b37abd32363046d1d484b066f7d0e71f5c7229fdc8` |
+| 5 | `theorem` | [not_bounded_iff_exists_ne_zero_mem_asymptoticCone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AsymptoticConePublic.lean/declarations/not-bounded-iff-exists-ne-zero-mem-asymptoticcone.md) | 79 | `result-track:95c67d7d8818ec982e522f4647fc16b41131ef1623bfd8aee10747a823985fbc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

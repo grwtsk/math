@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFullResidualEnergy.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFullResidualEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFullResidualEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFullResidualEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFiniteExhaustion`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteExhaustion.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFiniteExhaustion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteExhaustion.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Topology.Algebra.InfiniteSum.Real` — import line 8; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 9; external provider; requires a separately pinned dependency.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [greenFullResidualEnergyBound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFullResidualEnergy.lean/declarations/greenfullresidualenergybound.md) | 16 | `declaration-track:fd4f2b2d16ea5719b670ffd127b931c923ed085cf5b468fbbaa10506c4d4df84` |
-| 2 | `theorem` | [greenResidual_any_finset_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFullResidualEnergy.lean/declarations/greenresidual-any-finset-le.md) | 31 | `result-track:bcf3790a263720cac0ef1fe69cc1df9543e99bf5b85a0d60960cc7f8d815a091` |
-| 3 | `theorem` | [summable_sq_norm_greenCenteringResidual](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFullResidualEnergy.lean/declarations/summable-sq-norm-greencenteringresidual.md) | 68 | `result-track:3b053b686f165680e9313854958715bb92204b494e5b24e06c0e02078a69a4e0` |
-| 4 | `theorem` | [tsum_sq_norm_greenCenteringResidual_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFullResidualEnergy.lean/declarations/tsum-sq-norm-greencenteringresidual-le.md) | 79 | `result-track:2dd035ecf3edd45011fd5c454a4d264cf816a408c5f74dff97b2631a878bcc0c` |
-| 5 | `theorem` | [greenFullResidualEnergyBound_eventually_small](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFullResidualEnergy.lean/declarations/greenfullresidualenergybound-eventually-small.md) | 91 | `result-track:ab34663f603daed90a76370f1e674942cee45384a292be642b41db0b81effa99` |
+| 1 | `def` | [greenFullResidualEnergyBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFullResidualEnergy.lean/declarations/greenfullresidualenergybound.md) | 16 | `declaration-track:fd4f2b2d16ea5719b670ffd127b931c923ed085cf5b468fbbaa10506c4d4df84` |
+| 2 | `theorem` | [greenResidual_any_finset_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFullResidualEnergy.lean/declarations/greenresidual-any-finset-le.md) | 31 | `result-track:bcf3790a263720cac0ef1fe69cc1df9543e99bf5b85a0d60960cc7f8d815a091` |
+| 3 | `theorem` | [summable_sq_norm_greenCenteringResidual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFullResidualEnergy.lean/declarations/summable-sq-norm-greencenteringresidual.md) | 68 | `result-track:3b053b686f165680e9313854958715bb92204b494e5b24e06c0e02078a69a4e0` |
+| 4 | `theorem` | [tsum_sq_norm_greenCenteringResidual_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFullResidualEnergy.lean/declarations/tsum-sq-norm-greencenteringresidual-le.md) | 79 | `result-track:2dd035ecf3edd45011fd5c454a4d264cf816a408c5f74dff97b2631a878bcc0c` |
+| 5 | `theorem` | [greenFullResidualEnergyBound_eventually_small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFullResidualEnergy.lean/declarations/greenfullresidualenergybound-eventually-small.md) | 91 | `result-track:ab34663f603daed90a76370f1e674942cee45384a292be642b41db0b81effa99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

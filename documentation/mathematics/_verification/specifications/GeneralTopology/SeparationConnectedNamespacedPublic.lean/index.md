@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SeparationConnectedNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/SeparationConnectedNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationConnectedNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationConnectedNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/SeparationConnectedNamespacedPublic.lean/declarations/instance.md) | 31 | `declaration-track:424540a99e3d6f05ae4cf8b17293ecee7463f877c4fc4184308b374bb9e05658` |
-| 2 | `theorem` | [PreconnectedSpace.trivial_of_discrete](../../../../GeneralTopology/SeparationConnectedNamespacedPublic.lean/declarations/preconnectedspace-trivial-of-discrete.md) | 38 | `result-track:4fc2ca599d205c54583cbdeec18ca4db9184a1db683ad4bc481cc3ed073ca8ad` |
-| 3 | `theorem` | [IsPreconnected.infinite_of_nontrivial](../../../../GeneralTopology/SeparationConnectedNamespacedPublic.lean/declarations/ispreconnected-infinite-of-nontrivial.md) | 44 | `result-track:c79eb325ea18566abb66e1b592df2747cf3885f49ea0ca0569bb8abac11089b9` |
-| 4 | `theorem` | [PreconnectedSpace.infinite](../../../../GeneralTopology/SeparationConnectedNamespacedPublic.lean/declarations/preconnectedspace-infinite.md) | 50 | `result-track:8df2ef958bf23229b0b41d247362b9002a414e772ab5f1fc1d186df40965320a` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/SeparationConnectedNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 54 | `declaration-track:891125b0f783bdfdf6ee3556c532cd7b968e870613e3cc792893b5542d625a3a` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationConnectedNamespacedPublic.lean/declarations/instance.md) | 31 | `declaration-track:424540a99e3d6f05ae4cf8b17293ecee7463f877c4fc4184308b374bb9e05658` |
+| 2 | `theorem` | [PreconnectedSpace.trivial_of_discrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationConnectedNamespacedPublic.lean/declarations/preconnectedspace-trivial-of-discrete.md) | 38 | `result-track:4fc2ca599d205c54583cbdeec18ca4db9184a1db683ad4bc481cc3ed073ca8ad` |
+| 3 | `theorem` | [IsPreconnected.infinite_of_nontrivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationConnectedNamespacedPublic.lean/declarations/ispreconnected-infinite-of-nontrivial.md) | 44 | `result-track:c79eb325ea18566abb66e1b592df2747cf3885f49ea0ca0569bb8abac11089b9` |
+| 4 | `theorem` | [PreconnectedSpace.infinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationConnectedNamespacedPublic.lean/declarations/preconnectedspace-infinite.md) | 50 | `result-track:8df2ef958bf23229b0b41d247362b9002a414e772ab5f1fc1d186df40965320a` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationConnectedNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 54 | `declaration-track:891125b0f783bdfdf6ee3556c532cd7b968e870613e3cc792893b5542d625a3a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

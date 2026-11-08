@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instMonoidalCategoryStruct](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespaced.lean/declarations/instmonoidalcategorystruct.md) | 35 | `declaration-track:6b4d87c98b1dd2ce3f6578b14efe522cfe68ef659922ef062a02eddfd330a3de` |
-| 2 | `def` | [MonoidalCategory.inducingFunctorData](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespaced.lean/declarations/monoidalcategory-inducingfunctordata.md) | 49 | `declaration-track:3091e091919a863b601984f60d66d149d39102fe2a7e0aebb057a7aad3697646` |
-| 3 | `instance` | [instMonoidalCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespaced.lean/declarations/instmonoidalcategory.md) | 63 | `declaration-track:42e712fbb4699d5ea2f674197e7c3145adf81e3e7e8896db623035ff0b64563c` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespaced.lean/declarations/instance.md) | 67 | `declaration-track:aea000e152e992b85ab9658eeb87a8597dd2523998ecd80f937d951fa48413db` |
+| 1 | `instance` | [instMonoidalCategoryStruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespaced.lean/declarations/instmonoidalcategorystruct.md) | 35 | `declaration-track:6b4d87c98b1dd2ce3f6578b14efe522cfe68ef659922ef062a02eddfd330a3de` |
+| 2 | `def` | [MonoidalCategory.inducingFunctorData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespaced.lean/declarations/monoidalcategory-inducingfunctordata.md) | 49 | `declaration-track:3091e091919a863b601984f60d66d149d39102fe2a7e0aebb057a7aad3697646` |
+| 3 | `instance` | [instMonoidalCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespaced.lean/declarations/instmonoidalcategory.md) | 63 | `declaration-track:42e712fbb4699d5ea2f674197e7c3145adf81e3e7e8896db623035ff0b64563c` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HopfAlgCatMonoidalNamespaced.lean/declarations/instance.md) | 67 | `declaration-track:aea000e152e992b85ab9658eeb87a8597dd2523998ecd80f937d951fa48413db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefsDefsNamespacedPublicKeys.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefsDefsNamespacedPublicKeys.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefsDefsNamespacedPublicKeys.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefsDefsNamespacedPublicKeys.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [keys](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefsDefsNamespacedPublicKeys.lean/declarations/keys.md) | 41 | `declaration-track:7321d22deebbdd632b4eb16d288c91f4be0ceddb384e31aeaeb8377c2f59d4b4` |
-| 2 | `structure` | [DistinctKeys](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefsDefsNamespacedPublicKeys.lean/declarations/distinctkeys.md) | 46 | `declaration-track:aba488e0b04c3030412139edb6287057a00a3ddb8df6f85fb98a159b36bf23d2` |
-| 3 | `def` | [values](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefsDefsNamespacedPublicKeys.lean/declarations/values.md) | 51 | `declaration-track:e92012c3630fe032091cc66dc00feba4a43118be4766a21a79f5a2910f9b0af9` |
+| 1 | `def` | [keys](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefsDefsNamespacedPublicKeys.lean/declarations/keys.md) | 41 | `declaration-track:7321d22deebbdd632b4eb16d288c91f4be0ceddb384e31aeaeb8377c2f59d4b4` |
+| 2 | `structure` | [DistinctKeys](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefsDefsNamespacedPublicKeys.lean/declarations/distinctkeys.md) | 46 | `declaration-track:aba488e0b04c3030412139edb6287057a00a3ddb8df6f85fb98a159b36bf23d2` |
+| 3 | `def` | [values](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefsDefsNamespacedPublicKeys.lean/declarations/values.md) | 51 | `declaration-track:e92012c3630fe032091cc66dc00feba4a43118be4766a21a79f5a2910f9b0af9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

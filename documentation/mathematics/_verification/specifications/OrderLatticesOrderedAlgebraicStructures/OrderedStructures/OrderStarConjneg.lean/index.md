@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderStarConjneg.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderStarConjneg.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderStarConjneg.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderStarConjneg.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [conjneg_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderStarConjneg.lean/declarations/conjneg-nonneg.md) | 21 | `result-track:910126919a872ddeafa55e188aa1829d8d9216c048ccc86512df9cdd6ed7035a` |
-| 2 | `lemma` | [conjneg_pos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderStarConjneg.lean/declarations/conjneg-pos.md) | 24 | `result-track:d67d750e7ce73dfb46e7c66faebc9cb6100b9ab5e002df38347908c8a2e16bbb` |
-| 3 | `lemma` | [conjneg_nonpos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderStarConjneg.lean/declarations/conjneg-nonpos.md) | 32 | `result-track:b173886aca77501c86dc7ec06e3fd638bedb8b4e7efa34f7dad64699600410ff` |
-| 4 | `lemma` | [conjneg_neg'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderStarConjneg.lean/declarations/conjneg-neg.md) | 35 | `result-track:2226ed620632317d56c23c2c5c2d8d94666126cbf8f50bc966e856050a08b630` |
+| 1 | `lemma` | [conjneg_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderStarConjneg.lean/declarations/conjneg-nonneg.md) | 21 | `result-track:910126919a872ddeafa55e188aa1829d8d9216c048ccc86512df9cdd6ed7035a` |
+| 2 | `lemma` | [conjneg_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderStarConjneg.lean/declarations/conjneg-pos.md) | 24 | `result-track:d67d750e7ce73dfb46e7c66faebc9cb6100b9ab5e002df38347908c8a2e16bbb` |
+| 3 | `lemma` | [conjneg_nonpos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderStarConjneg.lean/declarations/conjneg-nonpos.md) | 32 | `result-track:b173886aca77501c86dc7ec06e3fd638bedb8b4e7efa34f7dad64699600410ff` |
+| 4 | `lemma` | [conjneg_neg'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderStarConjneg.lean/declarations/conjneg-neg.md) | 35 | `result-track:2226ed620632317d56c23c2c5c2d8d94666126cbf8f50bc966e856050a08b630` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/NonLocalRing.lean/index.md) · [Full source](../../../../CommutativeAlgebra/NonLocalRing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonLocalRing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonLocalRing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [not_isLocalRing_def](../../../../CommutativeAlgebra/NonLocalRing.lean/declarations/not-islocalring-def.md) | 36 | `result-track:cd860043024bb2e5c983367b86a36ca70329a683644e3cde77cc78878fc94463` |
-| 2 | `theorem` | [not_isLocalRing_of_nontrivial_pi](../../../../CommutativeAlgebra/NonLocalRing.lean/declarations/not-islocalring-of-nontrivial-pi.md) | 42 | `result-track:7a5861e482de45d09d6f8692c2a46b3e2a4cf82f5888cd3173336434dca4e997` |
-| 3 | `theorem` | [not_isLocalRing_of_prod_of_nontrivial](../../../../CommutativeAlgebra/NonLocalRing.lean/declarations/not-islocalring-of-prod-of-nontrivial.md) | 53 | `result-track:adcc7b71c8a73df232eab1e6555cf33eec051984d7684d44b7149cbc5032d377` |
-| 4 | `theorem` | [not_isLocalRing_tfae](../../../../CommutativeAlgebra/NonLocalRing.lean/declarations/not-islocalring-tfae.md) | 66 | `result-track:5105571b6675189da6bbc16176d04f40abb5924a601af101e99acfb31fc765a6` |
-| 5 | `theorem` | [exists_surjective_of_not_isLocalRing.](../../../../CommutativeAlgebra/NonLocalRing.lean/declarations/exists-surjective-of-not-islocalring.md) | 81 | `result-track:29db75618eb50b5e54e7a8ba5028a4459095deec346d51874edb769ee7c5b52f` |
+| 1 | `theorem` | [not_isLocalRing_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonLocalRing.lean/declarations/not-islocalring-def.md) | 36 | `result-track:cd860043024bb2e5c983367b86a36ca70329a683644e3cde77cc78878fc94463` |
+| 2 | `theorem` | [not_isLocalRing_of_nontrivial_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonLocalRing.lean/declarations/not-islocalring-of-nontrivial-pi.md) | 42 | `result-track:7a5861e482de45d09d6f8692c2a46b3e2a4cf82f5888cd3173336434dca4e997` |
+| 3 | `theorem` | [not_isLocalRing_of_prod_of_nontrivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonLocalRing.lean/declarations/not-islocalring-of-prod-of-nontrivial.md) | 53 | `result-track:adcc7b71c8a73df232eab1e6555cf33eec051984d7684d44b7149cbc5032d377` |
+| 4 | `theorem` | [not_isLocalRing_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonLocalRing.lean/declarations/not-islocalring-tfae.md) | 66 | `result-track:5105571b6675189da6bbc16176d04f40abb5924a601af101e99acfb31fc765a6` |
+| 5 | `theorem` | [exists_surjective_of_not_isLocalRing.](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NonLocalRing.lean/declarations/exists-surjective-of-not-islocalring.md) | 81 | `result-track:29db75618eb50b5e54e7a8ba5028a4459095deec346d51874edb769ee7c5b52f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

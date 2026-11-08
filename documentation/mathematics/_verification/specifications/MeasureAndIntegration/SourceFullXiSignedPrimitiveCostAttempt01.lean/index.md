@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceFullXiSignedPrimitiveCostAttempt01.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceFullXiSignedPrimitiveCostAttempt01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiSignedPrimitiveCostAttempt01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiSignedPrimitiveCostAttempt01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_fullXiLogWeight_deriv](../../../../MeasureAndIntegration/SourceFullXiSignedPrimitiveCostAttempt01.lean/declarations/actual-fullxilogweight-deriv.md) | 18 | `result-track:1aca32f1d3bec8545360ee5dc31185df406b8d11c52cb3d64be5ff6fbce212f8` |
-| 2 | `theorem` | [actual_fullXiLogWeight_deriv_abs_le](../../../../MeasureAndIntegration/SourceFullXiSignedPrimitiveCostAttempt01.lean/declarations/actual-fullxilogweight-deriv-abs-le.md) | 25 | `result-track:1cae9f7210ca1f7241b20614051ce248bef7e30edc54bb39a1d7487525513096` |
-| 3 | `theorem` | [actual_fullXiLogWeight_deriv_continuous](../../../../MeasureAndIntegration/SourceFullXiSignedPrimitiveCostAttempt01.lean/declarations/actual-fullxilogweight-deriv-continuous.md) | 38 | `result-track:bc394b56e16905b9ce7e4fea224e2662246ba19c69b3d938b9c1fad30ae35b82` |
-| 4 | `theorem` | [actual_fullXi_signed_primitive_derivative_cost](../../../../MeasureAndIntegration/SourceFullXiSignedPrimitiveCostAttempt01.lean/declarations/actual-fullxi-signed-primitive-derivative-cost.md) | 49 | `result-track:f434409a5b8545057b1e942dc705e4e76ce0d0a2a277a091afd0b87d5be4df4e` |
+| 1 | `theorem` | [actual_fullXiLogWeight_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiSignedPrimitiveCostAttempt01.lean/declarations/actual-fullxilogweight-deriv.md) | 18 | `result-track:1aca32f1d3bec8545360ee5dc31185df406b8d11c52cb3d64be5ff6fbce212f8` |
+| 2 | `theorem` | [actual_fullXiLogWeight_deriv_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiSignedPrimitiveCostAttempt01.lean/declarations/actual-fullxilogweight-deriv-abs-le.md) | 25 | `result-track:1cae9f7210ca1f7241b20614051ce248bef7e30edc54bb39a1d7487525513096` |
+| 3 | `theorem` | [actual_fullXiLogWeight_deriv_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiSignedPrimitiveCostAttempt01.lean/declarations/actual-fullxilogweight-deriv-continuous.md) | 38 | `result-track:bc394b56e16905b9ce7e4fea224e2662246ba19c69b3d938b9c1fad30ae35b82` |
+| 4 | `theorem` | [actual_fullXi_signed_primitive_derivative_cost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiSignedPrimitiveCostAttempt01.lean/declarations/actual-fullxi-signed-primitive-derivative-cost.md) | 49 | `result-track:f434409a5b8545057b1e942dc705e4e76ce0d0a2a277a091afd0b87d5be4df4e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

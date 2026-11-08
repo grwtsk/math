@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralCoupling.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralCoupling.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralCoupling.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralCoupling.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ConstructionProvenance](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralCoupling.lean/declarations/constructionprovenance.md) | 15 | `declaration-track:49acbf86403e7b6cc01cef866b72663d643a61afcf51f26befdce55297d80b1a` |
-| 2 | `abbrev` | [ProjectorProvenance](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralCoupling.lean/declarations/projectorprovenance.md) | 18 | `declaration-track:1b0b3cb8c7222a8beff9b3dc796890c61201a90b410ab882e6d5b6fe14538686` |
-| 3 | `structure` | [StructuralIncidence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralCoupling.lean/declarations/structuralincidence.md) | 21 | `declaration-track:b9bd5337e9df6e2f7547aa768cea70c375557b36cc66dbcaccc13cd9f43a8a4b` |
-| 4 | `structure` | [StructuralCoupling](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralCoupling.lean/declarations/structuralcoupling.md) | 27 | `declaration-track:f83326d12380e404802c4e82056cb1bbd0309e29136fd0429501d1659ec37ab0` |
-| 5 | `structure` | [StructuralProjectorCoupling](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralCoupling.lean/declarations/structuralprojectorcoupling.md) | 36 | `declaration-track:524fd8d0be8f80afc2826ccdfdb9ea00a28ffd4dd84e5d348c5edf7a230db84d` |
+| 1 | `abbrev` | [ConstructionProvenance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralCoupling.lean/declarations/constructionprovenance.md) | 15 | `declaration-track:49acbf86403e7b6cc01cef866b72663d643a61afcf51f26befdce55297d80b1a` |
+| 2 | `abbrev` | [ProjectorProvenance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralCoupling.lean/declarations/projectorprovenance.md) | 18 | `declaration-track:1b0b3cb8c7222a8beff9b3dc796890c61201a90b410ab882e6d5b6fe14538686` |
+| 3 | `structure` | [StructuralIncidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralCoupling.lean/declarations/structuralincidence.md) | 21 | `declaration-track:b9bd5337e9df6e2f7547aa768cea70c375557b36cc66dbcaccc13cd9f43a8a4b` |
+| 4 | `structure` | [StructuralCoupling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralCoupling.lean/declarations/structuralcoupling.md) | 27 | `declaration-track:f83326d12380e404802c4e82056cb1bbd0309e29136fd0429501d1659ec37ab0` |
+| 5 | `structure` | [StructuralProjectorCoupling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralCoupling.lean/declarations/structuralprojectorcoupling.md) | 36 | `declaration-track:524fd8d0be8f80afc2826ccdfdb9ea00a28ffd4dd84e5d348c5edf7a230db84d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

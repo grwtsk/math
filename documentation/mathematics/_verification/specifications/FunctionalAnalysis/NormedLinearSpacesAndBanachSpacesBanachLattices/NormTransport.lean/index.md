@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NormTransport.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NormTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NormTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NormTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [reconstruction_bound](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NormTransport.lean/declarations/reconstruction-bound.md) | 14 | `result-track:166e3e2d316c26445e81f4eded629cd418be3a4b3d50acf751a9b4904c444e4c` |
-| 2 | `def` | [budget](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NormTransport.lean/declarations/budget.md) | 21 | `declaration-track:fd60347c6161444078e87dd7af9a7dde65f3ee5a54ba3cc5c92b00361d69f805` |
-| 3 | `inductive` | [Chain](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NormTransport.lean/declarations/chain.md) | 26 | `declaration-track:15bfa8aed426fdfea23d0f3be25f54bb0345eed59415c1978b1b8b581f922eb5` |
-| 4 | `theorem` | [Chain.bound](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NormTransport.lean/declarations/chain-bound.md) | 33 | `result-track:831ca1a815205c62bfde3fa62ea79a30bbed2e54b45bb88bb837976814f9a5fc` |
-| 5 | `theorem` | [budget_nonnegative](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NormTransport.lean/declarations/budget-nonnegative.md) | 45 | `result-track:5f26fc0e73eacfd755ccbf639a214efaa5cec7f474c06c058185229cd0866e13` |
-| 6 | `theorem` | [budget_unit_gains](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NormTransport.lean/declarations/budget-unit-gains.md) | 57 | `result-track:0488d3c5e1cd5ab06114721d8a0f9e940f69406f2bfd8e315b130f6e45339dc0` |
+| 1 | `theorem` | [reconstruction_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NormTransport.lean/declarations/reconstruction-bound.md) | 14 | `result-track:166e3e2d316c26445e81f4eded629cd418be3a4b3d50acf751a9b4904c444e4c` |
+| 2 | `def` | [budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NormTransport.lean/declarations/budget.md) | 21 | `declaration-track:fd60347c6161444078e87dd7af9a7dde65f3ee5a54ba3cc5c92b00361d69f805` |
+| 3 | `inductive` | [Chain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NormTransport.lean/declarations/chain.md) | 26 | `declaration-track:15bfa8aed426fdfea23d0f3be25f54bb0345eed59415c1978b1b8b581f922eb5` |
+| 4 | `theorem` | [Chain.bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NormTransport.lean/declarations/chain-bound.md) | 33 | `result-track:831ca1a815205c62bfde3fa62ea79a30bbed2e54b45bb88bb837976814f9a5fc` |
+| 5 | `theorem` | [budget_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NormTransport.lean/declarations/budget-nonnegative.md) | 45 | `result-track:5f26fc0e73eacfd755ccbf639a214efaa5cec7f474c06c058185229cd0866e13` |
+| 6 | `theorem` | [budget_unit_gains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/NormTransport.lean/declarations/budget-unit-gains.md) | 57 | `result-track:0488d3c5e1cd5ab06114721d8a0f9e940f69406f2bfd8e315b130f6e45339dc0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

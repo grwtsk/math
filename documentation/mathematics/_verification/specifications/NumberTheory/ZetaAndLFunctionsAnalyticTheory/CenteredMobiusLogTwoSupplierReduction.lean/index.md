@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogTwoSupplierReduction.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogTwoSupplierReduction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogTwoSupplierReduction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogTwoSupplierReduction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogBoundaryPrefixSupplier`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryPrefixSupplier.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogBoundaryPrefixSupplier`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryPrefixSupplier.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prefixMangoldtError_two_mul_eq_raw](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogTwoSupplierReduction.lean/declarations/prefixmangoldterror-two-mul-eq-raw.md) | 15 | `result-track:4258d034b5e45a844188c7802badcff00c38c586e0a20168d7d6a4d3ff13c7a5` |
-| 2 | `theorem` | [allDyadicRawMangoldt_of_prefixMangoldt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogTwoSupplierReduction.lean/declarations/alldyadicrawmangoldt-of-prefixmangoldt.md) | 25 | `result-track:2223889a5bafa13b75d1de85fd78b77e128d2319960f9bafac87ee2551499f43` |
-| 3 | `theorem` | [allDyadicNormalizedMangoldt_of_prefixMangoldt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogTwoSupplierReduction.lean/declarations/alldyadicnormalizedmangoldt-of-prefixmangoldt.md) | 40 | `result-track:a77f90ab46a4ac939b532470b86799bd93ed5e6c09301705eb16e8b010910eb6` |
-| 4 | `theorem` | [allDyadicBoundaryBounds_of_prefixMangoldt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogTwoSupplierReduction.lean/declarations/alldyadicboundarybounds-of-prefixmangoldt.md) | 47 | `result-track:603fd7bccf43f002a6b25b887c6cdec1426a4bfa1ccff74e19fd5be5323376ea` |
-| 5 | `def` | [CenteredMobiusLogTwoSupplierPackage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogTwoSupplierReduction.lean/declarations/centeredmobiuslogtwosupplierpackage.md) | 57 | `declaration-track:889dfbe0ed22e4e9ca9d850713c5a37d381c35eabaea2f0311a13927c347627b` |
-| 6 | `theorem` | [allDyadicEnergyBound_of_twoSupplierPackage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogTwoSupplierReduction.lean/declarations/alldyadicenergybound-of-twosupplierpackage.md) | 61 | `result-track:ec6a9df585a9fe18c63c922e2e2e9678ea17afc3903482ec10f93dcd083189af` |
+| 1 | `theorem` | [prefixMangoldtError_two_mul_eq_raw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogTwoSupplierReduction.lean/declarations/prefixmangoldterror-two-mul-eq-raw.md) | 15 | `result-track:4258d034b5e45a844188c7802badcff00c38c586e0a20168d7d6a4d3ff13c7a5` |
+| 2 | `theorem` | [allDyadicRawMangoldt_of_prefixMangoldt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogTwoSupplierReduction.lean/declarations/alldyadicrawmangoldt-of-prefixmangoldt.md) | 25 | `result-track:2223889a5bafa13b75d1de85fd78b77e128d2319960f9bafac87ee2551499f43` |
+| 3 | `theorem` | [allDyadicNormalizedMangoldt_of_prefixMangoldt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogTwoSupplierReduction.lean/declarations/alldyadicnormalizedmangoldt-of-prefixmangoldt.md) | 40 | `result-track:a77f90ab46a4ac939b532470b86799bd93ed5e6c09301705eb16e8b010910eb6` |
+| 4 | `theorem` | [allDyadicBoundaryBounds_of_prefixMangoldt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogTwoSupplierReduction.lean/declarations/alldyadicboundarybounds-of-prefixmangoldt.md) | 47 | `result-track:603fd7bccf43f002a6b25b887c6cdec1426a4bfa1ccff74e19fd5be5323376ea` |
+| 5 | `def` | [CenteredMobiusLogTwoSupplierPackage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogTwoSupplierReduction.lean/declarations/centeredmobiuslogtwosupplierpackage.md) | 57 | `declaration-track:889dfbe0ed22e4e9ca9d850713c5a37d381c35eabaea2f0311a13927c347627b` |
+| 6 | `theorem` | [allDyadicEnergyBound_of_twoSupplierPackage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogTwoSupplierReduction.lean/declarations/alldyadicenergybound-of-twosupplierpackage.md) | 61 | `result-track:ec6a9df585a9fe18c63c922e2e2e9678ea17afc3903482ec10f93dcd083189af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

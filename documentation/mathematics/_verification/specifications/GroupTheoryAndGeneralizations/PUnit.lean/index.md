@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/PUnit.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/PUnit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PUnit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PUnit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [commGroup](../../../../GroupTheoryAndGeneralizations/PUnit.lean/declarations/commgroup.md) | 20 | `declaration-track:7e22a358564496c3b1bac3470821f0d6ec00adc277b5cac6cc912fc7b4147626` |
-| 2 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/PUnit.lean/declarations/instance.md) | 34 | `declaration-track:15a0cdf42f5502245d7f172f02330339c8bef885c4738d3a92229b83cb4be735` |
-| 3 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/PUnit.lean/declarations/instance-source-edition-3.md) | 35 | `declaration-track:7cd489248a1d1fc73dbd9b39e934793f5eb6502956cc29bf7bef95a5e49ad07e` |
-| 4 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/PUnit.lean/declarations/instance-source-edition-2.md) | 36 | `declaration-track:76d203ff420cf82835b1f8a0f649db436aaa9a8cb17b39efb5ec1cf181b38fc9` |
-| 5 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/PUnit.lean/declarations/instance-source-edition-4.md) | 37 | `declaration-track:eba6e5fad89b6b13f8553327ead529efacefcb8d79a974066389018e4dc2ed7b` |
-| 6 | `lemma` | [one_eq](../../../../GroupTheoryAndGeneralizations/PUnit.lean/declarations/one-eq.md) | 39 | `result-track:e0cc43a77719335de5e0da8b4864646313d675d7b0e1b3d49ff69b292b340b92` |
-| 7 | `lemma` | [mul_eq](../../../../GroupTheoryAndGeneralizations/PUnit.lean/declarations/mul-eq.md) | 42 | `result-track:1d642948b93ba5d413cb71c418a3998a513987060f7b0d5bd91916f53f7e86a1` |
-| 8 | `lemma` | [div_eq](../../../../GroupTheoryAndGeneralizations/PUnit.lean/declarations/div-eq.md) | 44 | `result-track:beeccf644c42a78566cc69d5cdc7546974b6ad6376884b466f091a2f818aad4a` |
-| 9 | `lemma` | [inv_eq](../../../../GroupTheoryAndGeneralizations/PUnit.lean/declarations/inv-eq.md) | 45 | `result-track:80ff85d88aaaa1e291ab7be075e00ed00962863da563e17216386fa575af5e0a` |
+| 1 | `instance` | [commGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PUnit.lean/declarations/commgroup.md) | 20 | `declaration-track:7e22a358564496c3b1bac3470821f0d6ec00adc277b5cac6cc912fc7b4147626` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PUnit.lean/declarations/instance.md) | 34 | `declaration-track:15a0cdf42f5502245d7f172f02330339c8bef885c4738d3a92229b83cb4be735` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PUnit.lean/declarations/instance-source-edition-3.md) | 35 | `declaration-track:7cd489248a1d1fc73dbd9b39e934793f5eb6502956cc29bf7bef95a5e49ad07e` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PUnit.lean/declarations/instance-source-edition-2.md) | 36 | `declaration-track:76d203ff420cf82835b1f8a0f649db436aaa9a8cb17b39efb5ec1cf181b38fc9` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PUnit.lean/declarations/instance-source-edition-4.md) | 37 | `declaration-track:eba6e5fad89b6b13f8553327ead529efacefcb8d79a974066389018e4dc2ed7b` |
+| 6 | `lemma` | [one_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PUnit.lean/declarations/one-eq.md) | 39 | `result-track:e0cc43a77719335de5e0da8b4864646313d675d7b0e1b3d49ff69b292b340b92` |
+| 7 | `lemma` | [mul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PUnit.lean/declarations/mul-eq.md) | 42 | `result-track:1d642948b93ba5d413cb71c418a3998a513987060f7b0d5bd91916f53f7e86a1` |
+| 8 | `lemma` | [div_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PUnit.lean/declarations/div-eq.md) | 44 | `result-track:beeccf644c42a78566cc69d5cdc7546974b6ad6376884b466f091a2f818aad4a` |
+| 9 | `lemma` | [inv_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PUnit.lean/declarations/inv-eq.md) | 45 | `result-track:80ff85d88aaaa1e291ab7be075e00ed00962863da563e17216386fa575af5e0a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

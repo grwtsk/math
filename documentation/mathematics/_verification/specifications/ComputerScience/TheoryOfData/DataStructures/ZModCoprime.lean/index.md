@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ZModCoprime.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ZModCoprime.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ZModCoprime.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ZModCoprime.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eq_zero_iff_gcd_ne_one](../../../../../../ComputerScience/TheoryOfData/DataStructures/ZModCoprime.lean/declarations/eq-zero-iff-gcd-ne-one.md) | 24 | `result-track:a67af42401a3e2fbd9d10541f5193b0c4a7da3a2d89c4cf8f1d1aaf997c82e3b` |
-| 2 | `theorem` | [ne_zero_of_gcd_eq_one](../../../../../../ComputerScience/TheoryOfData/DataStructures/ZModCoprime.lean/declarations/ne-zero-of-gcd-eq-one.md) | 31 | `result-track:e2d8a8c71f526e876f6b697af7d773dde4e0d830947813a7d7ea217d083a6963` |
-| 3 | `theorem` | [eq_zero_of_gcd_ne_one](../../../../../../ComputerScience/TheoryOfData/DataStructures/ZModCoprime.lean/declarations/eq-zero-of-gcd-ne-one.md) | 35 | `result-track:16a3f9d96c2d16ef389dc8e60c4a2b69b6db5019d44bef43bc4d2a2ae0d0422e` |
+| 1 | `theorem` | [eq_zero_iff_gcd_ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ZModCoprime.lean/declarations/eq-zero-iff-gcd-ne-one.md) | 24 | `result-track:a67af42401a3e2fbd9d10541f5193b0c4a7da3a2d89c4cf8f1d1aaf997c82e3b` |
+| 2 | `theorem` | [ne_zero_of_gcd_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ZModCoprime.lean/declarations/ne-zero-of-gcd-eq-one.md) | 31 | `result-track:e2d8a8c71f526e876f6b697af7d773dde4e0d830947813a7d7ea217d083a6963` |
+| 3 | `theorem` | [eq_zero_of_gcd_ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ZModCoprime.lean/declarations/eq-zero-of-gcd-ne-one.md) | 35 | `result-track:16a3f9d96c2d16ef389dc8e60c4a2b69b6db5019d44bef43bc4d2a2ae0d0422e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

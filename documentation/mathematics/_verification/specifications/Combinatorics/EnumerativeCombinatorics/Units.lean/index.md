@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/Units.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/Units.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Units.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Units.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [UnitsInt.fintype](../../../../../Combinatorics/EnumerativeCombinatorics/Units.lean/declarations/unitsint-fintype.md) | 19 | `declaration-track:b1e3bf94210f4095521c8b7b076ef803582da10954edd481198cae12ac0a17a2` |
-| 2 | `theorem` | [UnitsInt.univ](../../../../../Combinatorics/EnumerativeCombinatorics/Units.lean/declarations/unitsint-univ.md) | 23 | `result-track:db2cd06f1590e799d4b34768809c897939db9b127486bd14a865aa57ebd53b58` |
-| 3 | `theorem` | [Fintype.card_units_int](../../../../../Combinatorics/EnumerativeCombinatorics/Units.lean/declarations/fintype-card-units-int.md) | 26 | `result-track:4b21ca8a8c176600aecec45ac6f5392d469c1aece8e75a86fed1d7194591c05e` |
-| 4 | `instance` | [(anonymous)](../../../../../Combinatorics/EnumerativeCombinatorics/Units.lean/declarations/instance.md) | 28 | `declaration-track:4bcecb593d78ed0369cd1e6034e38e554ee3dbe21fea761200ea403bf2b59793` |
-| 5 | `instance` | [(anonymous)](../../../../../Combinatorics/EnumerativeCombinatorics/Units.lean/declarations/instance-source-edition-2.md) | 31 | `declaration-track:fdf2589a28f98202ebe36fe830e17f6b9d096a3980799c603b322b1a80281a14` |
-| 6 | `theorem` | [Nat.card_units](../../../../../Combinatorics/EnumerativeCombinatorics/Units.lean/declarations/nat-card-units.md) | 35 | `result-track:b2ea7f399ee3b4ebcd4b736d5eaa72b0a2fbd3139dfeeaa2be0adf0eef0ef265` |
-| 7 | `theorem` | [Nat.card_eq_card_units_add_one](../../../../../Combinatorics/EnumerativeCombinatorics/Units.lean/declarations/nat-card-eq-card-units-add-one.md) | 43 | `result-track:d0c0947cee1372cc18fe93a84a14badd679731d1bcd7bde169173f62be46a503` |
-| 8 | `theorem` | [Fintype.card_units](../../../../../Combinatorics/EnumerativeCombinatorics/Units.lean/declarations/fintype-card-units.md) | 47 | `result-track:2bf685f4a4a22588652fd3181c6fbea27d30124d13f7b09608754a9938c4c9e8` |
-| 9 | `theorem` | [Fintype.card_eq_card_units_add_one](../../../../../Combinatorics/EnumerativeCombinatorics/Units.lean/declarations/fintype-card-eq-card-units-add-one.md) | 51 | `result-track:f33d62395fc5083f5e4e84beb11364dc665d782032ae45013c16defd4747b157` |
+| 1 | `instance` | [UnitsInt.fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Units.lean/declarations/unitsint-fintype.md) | 19 | `declaration-track:b1e3bf94210f4095521c8b7b076ef803582da10954edd481198cae12ac0a17a2` |
+| 2 | `theorem` | [UnitsInt.univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Units.lean/declarations/unitsint-univ.md) | 23 | `result-track:db2cd06f1590e799d4b34768809c897939db9b127486bd14a865aa57ebd53b58` |
+| 3 | `theorem` | [Fintype.card_units_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Units.lean/declarations/fintype-card-units-int.md) | 26 | `result-track:4b21ca8a8c176600aecec45ac6f5392d469c1aece8e75a86fed1d7194591c05e` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Units.lean/declarations/instance.md) | 28 | `declaration-track:4bcecb593d78ed0369cd1e6034e38e554ee3dbe21fea761200ea403bf2b59793` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Units.lean/declarations/instance-source-edition-2.md) | 31 | `declaration-track:fdf2589a28f98202ebe36fe830e17f6b9d096a3980799c603b322b1a80281a14` |
+| 6 | `theorem` | [Nat.card_units](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Units.lean/declarations/nat-card-units.md) | 35 | `result-track:b2ea7f399ee3b4ebcd4b736d5eaa72b0a2fbd3139dfeeaa2be0adf0eef0ef265` |
+| 7 | `theorem` | [Nat.card_eq_card_units_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Units.lean/declarations/nat-card-eq-card-units-add-one.md) | 43 | `result-track:d0c0947cee1372cc18fe93a84a14badd679731d1bcd7bde169173f62be46a503` |
+| 8 | `theorem` | [Fintype.card_units](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Units.lean/declarations/fintype-card-units.md) | 47 | `result-track:2bf685f4a4a22588652fd3181c6fbea27d30124d13f7b09608754a9938c4c9e8` |
+| 9 | `theorem` | [Fintype.card_eq_card_units_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Units.lean/declarations/fintype-card-eq-card-units-add-one.md) | 51 | `result-track:f33d62395fc5083f5e4e84beb11364dc665d782032ae45013c16defd4747b157` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

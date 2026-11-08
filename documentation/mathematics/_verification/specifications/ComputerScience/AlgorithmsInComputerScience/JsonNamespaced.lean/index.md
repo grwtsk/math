@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/JsonNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/JsonNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JsonNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JsonNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IncrementalReportFiles](../../../../../ComputerScience/AlgorithmsInComputerScience/JsonNamespaced.lean/declarations/incrementalreportfiles.md) | 14 | `declaration-track:4b3e8828e89b441c2344623957d696e84eaf38a412924500586d7104a36f6d6f` |
-| 2 | `def` | [standardIncrementalReportFiles](../../../../../ComputerScience/AlgorithmsInComputerScience/JsonNamespaced.lean/declarations/standardincrementalreportfiles.md) | 28 | `declaration-track:26cca89de9b17a67a07934c2a976f56b97988ae1e6a27ec62663bcda0d63bfd7` |
-| 3 | `theorem` | [incrementalReportFiles_deterministic](../../../../../ComputerScience/AlgorithmsInComputerScience/JsonNamespaced.lean/declarations/incrementalreportfiles-deterministic.md) | 43 | `result-track:03ce368dc9369b10e86ef958bfcde09417161b59c1473a91215a53e72a6b22da` |
+| 1 | `structure` | [IncrementalReportFiles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JsonNamespaced.lean/declarations/incrementalreportfiles.md) | 14 | `declaration-track:4b3e8828e89b441c2344623957d696e84eaf38a412924500586d7104a36f6d6f` |
+| 2 | `def` | [standardIncrementalReportFiles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JsonNamespaced.lean/declarations/standardincrementalreportfiles.md) | 28 | `declaration-track:26cca89de9b17a67a07934c2a976f56b97988ae1e6a27ec62663bcda0d63bfd7` |
+| 3 | `theorem` | [incrementalReportFiles_deterministic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/JsonNamespaced.lean/declarations/incrementalreportfiles-deterministic.md) | 43 | `result-track:03ce368dc9369b10e86ef958bfcde09417161b59c1473a91215a53e72a6b22da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

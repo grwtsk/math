@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/DampedPhaseDifferential.lean/index.md) · [Full source](../../../../GeneralTopology/DampedPhaseDifferential.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedPhaseDifferential.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedPhaseDifferential.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.CubicWavePhase`](../../../../GeneralTopology/CubicWavePhase.lean/index.md) — import line 11; pinned internal source present.
-- [`GRWTSK.Analysis.LinearAlgebra.ThreePhaseCoefficientHeat`](../../../../GeneralTopology/ThreePhaseCoefficientHeat.lean/index.md) — import line 12; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.CubicWavePhase`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CubicWavePhase.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.Analysis.LinearAlgebra.ThreePhaseCoefficientHeat`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ThreePhaseCoefficientHeat.lean/index.md) — import line 12; pinned internal source present.
 - `Mathlib.Analysis.Complex.RealDeriv` — import line 13; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv` — import line 14; external provider; requires a separately pinned dependency.
 
@@ -60,16 +60,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rotation_hasDerivAt](../../../../GeneralTopology/DampedPhaseDifferential.lean/declarations/rotation-hasderivat.md) | 25 | `result-track:36797aef0211038e92242198e6de40a2bff4b7d14324240e2576570ca032ef8f` |
-| 2 | `theorem` | [decay_hasDerivAt](../../../../GeneralTopology/DampedPhaseDifferential.lean/declarations/decay-hasderivat.md) | 36 | `result-track:db275970d45fb7e9245c0eeb9845d1d5cc1e5298ede43d724b504215877c3b5c` |
-| 3 | `def` | [profile](../../../../GeneralTopology/DampedPhaseDifferential.lean/declarations/profile.md) | 42 | `declaration-track:7bf707bebed5169105f36ca80b41296544ab729b6f75baaed42057da3d60f46d` |
-| 4 | `def` | [residual](../../../../GeneralTopology/DampedPhaseDifferential.lean/declarations/residual.md) | 46 | `declaration-track:14a2633edbd3131b39af4500adfb4f8c3b2c77e4bd075758cbd2c6cabcb8dbf3` |
-| 5 | `theorem` | [profile_continuous](../../../../GeneralTopology/DampedPhaseDifferential.lean/declarations/profile-continuous.md) | 50 | `result-track:3391789fe47c07cea0903fe6309fe2d5a240d9ac8e2c90697d6974d75ba73b85` |
-| 6 | `theorem` | [profile_hasDerivAt](../../../../GeneralTopology/DampedPhaseDifferential.lean/declarations/profile-hasderivat.md) | 57 | `result-track:cf99aa43115a9aba2db0752bf3323d9d2af8c10e88f10319b5e9341593c196ff` |
-| 7 | `theorem` | [profile_angle_derivative](../../../../GeneralTopology/DampedPhaseDifferential.lean/declarations/profile-angle-derivative.md) | 70 | `result-track:2bb6f2f39f697f99b531497f4e1c47958afc7dbf6a7668cfb3e9a4d1f97d5658` |
-| 8 | `theorem` | [profile_heat_derivative](../../../../GeneralTopology/DampedPhaseDifferential.lean/declarations/profile-heat-derivative.md) | 77 | `result-track:be24165e0aa3979131a062baaaaf4a3d91893bfb6083e18ecb0d311bbb6a8194` |
-| 9 | `theorem` | [residual_hasDerivAt](../../../../GeneralTopology/DampedPhaseDifferential.lean/declarations/residual-hasderivat.md) | 84 | `result-track:84bd347dbf32bd77ccf91169f4d6e5705b33749553a53117a15c3a1b98be3169` |
-| 10 | `theorem` | [squared_decay_hasDerivAt](../../../../GeneralTopology/DampedPhaseDifferential.lean/declarations/squared-decay-hasderivat.md) | 95 | `result-track:d5ae3b24a4c768e25f029985a96f4f64c66629afde8088c4fbec9b9c9131a787` |
+| 1 | `theorem` | [rotation_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedPhaseDifferential.lean/declarations/rotation-hasderivat.md) | 25 | `result-track:36797aef0211038e92242198e6de40a2bff4b7d14324240e2576570ca032ef8f` |
+| 2 | `theorem` | [decay_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedPhaseDifferential.lean/declarations/decay-hasderivat.md) | 36 | `result-track:db275970d45fb7e9245c0eeb9845d1d5cc1e5298ede43d724b504215877c3b5c` |
+| 3 | `def` | [profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedPhaseDifferential.lean/declarations/profile.md) | 42 | `declaration-track:7bf707bebed5169105f36ca80b41296544ab729b6f75baaed42057da3d60f46d` |
+| 4 | `def` | [residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedPhaseDifferential.lean/declarations/residual.md) | 46 | `declaration-track:14a2633edbd3131b39af4500adfb4f8c3b2c77e4bd075758cbd2c6cabcb8dbf3` |
+| 5 | `theorem` | [profile_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedPhaseDifferential.lean/declarations/profile-continuous.md) | 50 | `result-track:3391789fe47c07cea0903fe6309fe2d5a240d9ac8e2c90697d6974d75ba73b85` |
+| 6 | `theorem` | [profile_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedPhaseDifferential.lean/declarations/profile-hasderivat.md) | 57 | `result-track:cf99aa43115a9aba2db0752bf3323d9d2af8c10e88f10319b5e9341593c196ff` |
+| 7 | `theorem` | [profile_angle_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedPhaseDifferential.lean/declarations/profile-angle-derivative.md) | 70 | `result-track:2bb6f2f39f697f99b531497f4e1c47958afc7dbf6a7668cfb3e9a4d1f97d5658` |
+| 8 | `theorem` | [profile_heat_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedPhaseDifferential.lean/declarations/profile-heat-derivative.md) | 77 | `result-track:be24165e0aa3979131a062baaaaf4a3d91893bfb6083e18ecb0d311bbb6a8194` |
+| 9 | `theorem` | [residual_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedPhaseDifferential.lean/declarations/residual-hasderivat.md) | 84 | `result-track:84bd347dbf32bd77ccf91169f4d6e5705b33749553a53117a15c3a1b98be3169` |
+| 10 | `theorem` | [squared_decay_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedPhaseDifferential.lean/declarations/squared-decay-hasderivat.md) | 95 | `result-track:d5ae3b24a4c768e25f029985a96f4f64c66629afde8088c4fbec9b9c9131a787` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

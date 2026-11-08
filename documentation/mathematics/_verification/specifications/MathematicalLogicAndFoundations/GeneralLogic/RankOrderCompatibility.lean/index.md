@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RankOrderCompatibility.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RankOrderCompatibility.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RankOrderCompatibility.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RankOrderCompatibility.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RankOrderData](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RankOrderCompatibility.lean/declarations/rankorderdata.md) | 19 | `declaration-track:7714641b102ffd9d4b325f5d48e34b153f73c3572eadf6d5b202ac73c6d067a4` |
-| 2 | `structure` | [RankOrderCompatibility](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RankOrderCompatibility.lean/declarations/rankordercompatibility.md) | 25 | `declaration-track:7bfbd2bdcd2aed3e2ed62db88e15c9eadab18515e85d15bf5d33329bc8cccb84` |
-| 3 | `theorem` | [bsd_rank_order_compatible_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RankOrderCompatibility.lean/declarations/bsd-rank-order-compatible-if-supplied.md) | 33 | `result-track:00e9eca27004642455e9998fe26231ee2c25b7e1e2d3a3dd4d3b935bddf5633d` |
-| 4 | `theorem` | [bsd_mismatch_obstruction_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RankOrderCompatibility.lean/declarations/bsd-mismatch-obstruction-if-supplied.md) | 38 | `result-track:65c71329fc134d5d2d52b63859625f34b7f7ae2db63402acfbb45b2fe63fb8ed` |
+| 1 | `structure` | [RankOrderData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RankOrderCompatibility.lean/declarations/rankorderdata.md) | 19 | `declaration-track:7714641b102ffd9d4b325f5d48e34b153f73c3572eadf6d5b202ac73c6d067a4` |
+| 2 | `structure` | [RankOrderCompatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RankOrderCompatibility.lean/declarations/rankordercompatibility.md) | 25 | `declaration-track:7bfbd2bdcd2aed3e2ed62db88e15c9eadab18515e85d15bf5d33329bc8cccb84` |
+| 3 | `theorem` | [bsd_rank_order_compatible_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RankOrderCompatibility.lean/declarations/bsd-rank-order-compatible-if-supplied.md) | 33 | `result-track:00e9eca27004642455e9998fe26231ee2c25b7e1e2d3a3dd4d3b935bddf5633d` |
+| 4 | `theorem` | [bsd_mismatch_obstruction_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RankOrderCompatibility.lean/declarations/bsd-mismatch-obstruction-if-supplied.md) | 38 | `result-track:65c71329fc134d5d2d52b63859625f34b7f7ae2db63402acfbb45b2fe63fb8ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

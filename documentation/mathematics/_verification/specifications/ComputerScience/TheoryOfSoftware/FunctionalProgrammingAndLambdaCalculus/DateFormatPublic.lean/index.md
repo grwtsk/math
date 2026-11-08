@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateFormatPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateFormatPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateFormatPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateFormatPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DayPeriodSymbols](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateFormatPublic.lean/declarations/dayperiodsymbols.md) | 24 | `declaration-track:bcb59c8a79ccb9bfd93f80dd804fc5d2c112fdd42cffef05252ebf141f9bbdad` |
-| 2 | `structure` | [DateFormatSymbols](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateFormatPublic.lean/declarations/dateformatsymbols.md) | 38 | `declaration-track:a92d3511830525ad503b90a033cd822b20838eb44a2202cc4a6b0b4a8b285cc9` |
-| 3 | `def` | [enUS](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateFormatPublic.lean/declarations/enus-source-edition-2.md) | 177 | `declaration-track:dab807db6b12468079163393d0c20508b8650f5851e74b5245b4f36fdc94dc4e` |
-| 4 | `structure` | [DateFormat](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateFormatPublic.lean/declarations/dateformat.md) | 210 | `declaration-track:7ebf73ab8b7f7b0e193e31e3f159e01a6b22a393819c1bc1f150aed708869838` |
-| 5 | `def` | [enUS](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateFormatPublic.lean/declarations/enus.md) | 234 | `declaration-track:cce0b6407e0cf573cdfb0ee0c3689501b657b6a50a5852ba0bf7bd9be0ae0f1a` |
+| 1 | `structure` | [DayPeriodSymbols](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateFormatPublic.lean/declarations/dayperiodsymbols.md) | 24 | `declaration-track:bcb59c8a79ccb9bfd93f80dd804fc5d2c112fdd42cffef05252ebf141f9bbdad` |
+| 2 | `structure` | [DateFormatSymbols](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateFormatPublic.lean/declarations/dateformatsymbols.md) | 38 | `declaration-track:a92d3511830525ad503b90a033cd822b20838eb44a2202cc4a6b0b4a8b285cc9` |
+| 3 | `def` | [enUS](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateFormatPublic.lean/declarations/enus-source-edition-2.md) | 177 | `declaration-track:dab807db6b12468079163393d0c20508b8650f5851e74b5245b4f36fdc94dc4e` |
+| 4 | `structure` | [DateFormat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateFormatPublic.lean/declarations/dateformat.md) | 210 | `declaration-track:7ebf73ab8b7f7b0e193e31e3f159e01a6b22a393819c1bc1f150aed708869838` |
+| 5 | `def` | [enUS](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateFormatPublic.lean/declarations/enus.md) | 234 | `declaration-track:cce0b6407e0cf573cdfb0ee0c3689501b657b6a50a5852ba0bf7bd9be0ae0f1a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RoundtripNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RoundtripNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RoundtripNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RoundtripNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [roundtripDag](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RoundtripNamespaced.lean/declarations/roundtripdag.md) | 20 | `declaration-track:e8e74260e12b52df49d208b78236a6640c0894fc1b73c81bc519277f681e9ebb` |
-| 2 | `def` | [encodeDag](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RoundtripNamespaced.lean/declarations/encodedag.md) | 35 | `declaration-track:ab11d7cf5341989982b48cb3ccb9427d481d732e24f680c4cb7cc9c5ba835c6d` |
-| 3 | `def` | [decodeDag](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RoundtripNamespaced.lean/declarations/decodedag.md) | 41 | `declaration-track:5bac2bb92287be04e00d44b7805344618c4ca637b37689b87be7fa73e2c09ead` |
-| 4 | `def` | [testRoundTrip](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RoundtripNamespaced.lean/declarations/testroundtrip.md) | 47 | `declaration-track:42c3132f3845df10f4e34f81a1fc70a3829db0fca04983499a9a35e456c52b1e` |
+| 1 | `def` | [roundtripDag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RoundtripNamespaced.lean/declarations/roundtripdag.md) | 20 | `declaration-track:e8e74260e12b52df49d208b78236a6640c0894fc1b73c81bc519277f681e9ebb` |
+| 2 | `def` | [encodeDag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RoundtripNamespaced.lean/declarations/encodedag.md) | 35 | `declaration-track:ab11d7cf5341989982b48cb3ccb9427d481d732e24f680c4cb7cc9c5ba835c6d` |
+| 3 | `def` | [decodeDag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RoundtripNamespaced.lean/declarations/decodedag.md) | 41 | `declaration-track:5bac2bb92287be04e00d44b7805344618c4ca637b37689b87be7fa73e2c09ead` |
+| 4 | `def` | [testRoundTrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RoundtripNamespaced.lean/declarations/testroundtrip.md) | 47 | `declaration-track:42c3132f3845df10f4e34f81a1fc70a3829db0fca04983499a9a35e456c52b1e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

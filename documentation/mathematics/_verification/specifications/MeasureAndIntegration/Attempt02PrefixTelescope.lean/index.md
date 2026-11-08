@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Attempt02PrefixTelescope.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Attempt02PrefixTelescope.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02PrefixTelescope.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02PrefixTelescope.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prefix_telescope](../../../../MeasureAndIntegration/Attempt02PrefixTelescope.lean/declarations/prefix-telescope.md) | 25 | `result-track:f55775e707ceeab668bc77921040b4bce6d761a431f4b6fdfe86d76f408a9e91` |
-| 2 | `theorem` | [exp_log_half](../../../../MeasureAndIntegration/Attempt02PrefixTelescope.lean/declarations/exp-log-half.md) | 37 | `result-track:bfe177e376020a8f89972095487379910d20c0c6e0ca845aa95e69a978c87912` |
-| 3 | `theorem` | [exp_neg_log_half](../../../../MeasureAndIntegration/Attempt02PrefixTelescope.lean/declarations/exp-neg-log-half.md) | 41 | `result-track:59abc85914be2c9831f343d6563f28f0fa338d80f6932d0edbd193b208b1762f` |
-| 4 | `theorem` | [exp_neg_half_integral](../../../../MeasureAndIntegration/Attempt02PrefixTelescope.lean/declarations/exp-neg-half-integral.md) | 46 | `result-track:96859304d82d25cbc728f54fa8f6476e555a794e04384f15bb392a43fe0fa44a` |
-| 5 | `theorem` | [integer_prefix_integral](../../../../MeasureAndIntegration/Attempt02PrefixTelescope.lean/declarations/integer-prefix-integral.md) | 60 | `result-track:0c7f914c9ef0a2e2351c760b578bcd483c6bb17a5429c59f571725f0ca1166bf` |
-| 6 | `theorem` | [partial_cell_integral](../../../../MeasureAndIntegration/Attempt02PrefixTelescope.lean/declarations/partial-cell-integral.md) | 102 | `result-track:f12dbf8359716a514986e0b28866fa30d2a6378f611e7dcdc9eef0d326f0509a` |
-| 7 | `theorem` | [actual_prefix_half_integral_eq_closed_inventory](../../../../MeasureAndIntegration/Attempt02PrefixTelescope.lean/declarations/actual-prefix-half-integral-eq-closed-inventory.md) | 124 | `result-track:e6e9063a6e637b516050fc143a9d4c425aad225f7fae3f1c8fae32c2b8592ed5` |
+| 1 | `theorem` | [prefix_telescope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02PrefixTelescope.lean/declarations/prefix-telescope.md) | 25 | `result-track:f55775e707ceeab668bc77921040b4bce6d761a431f4b6fdfe86d76f408a9e91` |
+| 2 | `theorem` | [exp_log_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02PrefixTelescope.lean/declarations/exp-log-half.md) | 37 | `result-track:bfe177e376020a8f89972095487379910d20c0c6e0ca845aa95e69a978c87912` |
+| 3 | `theorem` | [exp_neg_log_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02PrefixTelescope.lean/declarations/exp-neg-log-half.md) | 41 | `result-track:59abc85914be2c9831f343d6563f28f0fa338d80f6932d0edbd193b208b1762f` |
+| 4 | `theorem` | [exp_neg_half_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02PrefixTelescope.lean/declarations/exp-neg-half-integral.md) | 46 | `result-track:96859304d82d25cbc728f54fa8f6476e555a794e04384f15bb392a43fe0fa44a` |
+| 5 | `theorem` | [integer_prefix_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02PrefixTelescope.lean/declarations/integer-prefix-integral.md) | 60 | `result-track:0c7f914c9ef0a2e2351c760b578bcd483c6bb17a5429c59f571725f0ca1166bf` |
+| 6 | `theorem` | [partial_cell_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02PrefixTelescope.lean/declarations/partial-cell-integral.md) | 102 | `result-track:f12dbf8359716a514986e0b28866fa30d2a6378f611e7dcdc9eef0d326f0509a` |
+| 7 | `theorem` | [actual_prefix_half_integral_eq_closed_inventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02PrefixTelescope.lean/declarations/actual-prefix-half-integral-eq-closed-inventory.md) | 124 | `result-track:e6e9063a6e637b516050fc143a9d4c425aad225f7fae3f1c8fae32c2b8592ed5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

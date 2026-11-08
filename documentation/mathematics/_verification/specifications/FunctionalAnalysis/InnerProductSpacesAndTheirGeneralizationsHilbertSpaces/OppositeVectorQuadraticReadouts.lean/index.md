@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OppositeVectorQuadraticReadouts.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OppositeVectorQuadraticReadouts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OppositeVectorQuadraticReadouts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OppositeVectorQuadraticReadouts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [opposite_row_readout](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OppositeVectorQuadraticReadouts.lean/declarations/opposite-row-readout.md) | 29 | `result-track:1a9cc5a30f65432cb2bb9bb02e0a689b6fdaccdbdd4bffbf67812bf3da55877e` |
-| 2 | `theorem` | [opposite_row_scale_readout](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OppositeVectorQuadraticReadouts.lean/declarations/opposite-row-scale-readout.md) | 35 | `result-track:271d9e7eda2ba4d0400ea4c81274ad4a9279c02b855f2ac2bc5199ca11b2e1cf` |
+| 1 | `theorem` | [opposite_row_readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OppositeVectorQuadraticReadouts.lean/declarations/opposite-row-readout.md) | 29 | `result-track:1a9cc5a30f65432cb2bb9bb02e0a689b6fdaccdbdd4bffbf67812bf3da55877e` |
+| 2 | `theorem` | [opposite_row_scale_readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OppositeVectorQuadraticReadouts.lean/declarations/opposite-row-scale-readout.md) | 35 | `result-track:271d9e7eda2ba4d0400ea4c81274ad4a9279c02b855f2ac2bc5199ca11b2e1cf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

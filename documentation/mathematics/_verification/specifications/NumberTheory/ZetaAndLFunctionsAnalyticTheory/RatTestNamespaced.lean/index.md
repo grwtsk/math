@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RatTestNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RatTestNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RatTestNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RatTestNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RatTestNamespaced.lean/declarations/example-source-edition-3.md) | 10 | `declaration-track:cd6fd5a53adfaa30bdabc272fc363ac87cc26b9d74739a784a8ce629b48895be` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RatTestNamespaced.lean/declarations/example.md) | 11 | `declaration-track:9bd51ac93ad9d3b36a223b3b608d68663a92fafdde4b58f893ab7840e2451cef` |
-| 3 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RatTestNamespaced.lean/declarations/example-source-edition-2.md) | 12 | `declaration-track:9bff91881d08e1d70afa841c7a3fe06afd2c02575f9255e69008b8aaca8adcab` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RatTestNamespaced.lean/declarations/example-source-edition-3.md) | 10 | `declaration-track:cd6fd5a53adfaa30bdabc272fc363ac87cc26b9d74739a784a8ce629b48895be` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RatTestNamespaced.lean/declarations/example.md) | 11 | `declaration-track:9bd51ac93ad9d3b36a223b3b608d68663a92fafdde4b58f893ab7840e2451cef` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RatTestNamespaced.lean/declarations/example-source-edition-2.md) | 12 | `declaration-track:9bff91881d08e1d70afa841c7a3fe06afd2c02575f9255e69008b8aaca8adcab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DistinguishedNaturalTags.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DistinguishedNaturalTags.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DistinguishedNaturalTags.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DistinguishedNaturalTags.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Place](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DistinguishedNaturalTags.lean/declarations/place.md) | 33 | `declaration-track:b26fc8567f90840c49eb27f1e16aae358616e417e03b0e16c7ce8fa9e5bf8ce5` |
-| 2 | `def` | [IsArchimedeanPlace](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DistinguishedNaturalTags.lean/declarations/isarchimedeanplace.md) | 38 | `declaration-track:3a1bfa7e5fa8a48d44291ba50506ee03b0314053dfbcbdea8905ea0a2bc9ed6e` |
-| 3 | `theorem` | [archimedean_ne_finite](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DistinguishedNaturalTags.lean/declarations/archimedean-ne-finite.md) | 41 | `result-track:e16cf1e4ac7cb1184e36d56b924eeaf05eb4f9692814eff0469e52d5bcd8af78` |
+| 1 | `inductive` | [Place](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DistinguishedNaturalTags.lean/declarations/place.md) | 33 | `declaration-track:b26fc8567f90840c49eb27f1e16aae358616e417e03b0e16c7ce8fa9e5bf8ce5` |
+| 2 | `def` | [IsArchimedeanPlace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DistinguishedNaturalTags.lean/declarations/isarchimedeanplace.md) | 38 | `declaration-track:3a1bfa7e5fa8a48d44291ba50506ee03b0314053dfbcbdea8905ea0a2bc9ed6e` |
+| 3 | `theorem` | [archimedean_ne_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DistinguishedNaturalTags.lean/declarations/archimedean-ne-finite.md) | 41 | `result-track:e16cf1e4ac7cb1184e36d56b924eeaf05eb4f9692814eff0469e52d5bcd8af78` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

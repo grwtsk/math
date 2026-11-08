@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArithmeticHierarchyNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArithmeticHierarchyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArithmeticHierarchyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArithmeticHierarchyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ArithmeticHierarchyDescriptor](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArithmeticHierarchyNamespaced.lean/declarations/arithmetichierarchydescriptor.md) | 24 | `declaration-track:025dda56458e12e9e91ef12aeb32e34741560000771f8514d2b1a1c869db0805` |
-| 2 | `theorem` | [arithmeticHierarchy_descriptor_is_relative](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArithmeticHierarchyNamespaced.lean/declarations/arithmetichierarchy-descriptor-is-relative.md) | 28 | `result-track:b788a68a1bb2349d86424da18cc713dc9b745671bb3cbd91a71e407377faeb7f` |
+| 1 | `structure` | [ArithmeticHierarchyDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArithmeticHierarchyNamespaced.lean/declarations/arithmetichierarchydescriptor.md) | 24 | `declaration-track:025dda56458e12e9e91ef12aeb32e34741560000771f8514d2b1a1c869db0805` |
+| 2 | `theorem` | [arithmeticHierarchy_descriptor_is_relative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ArithmeticHierarchyNamespaced.lean/declarations/arithmetichierarchy-descriptor-is-relative.md) | 28 | `result-track:b788a68a1bb2349d86424da18cc713dc9b745671bb3cbd91a71e407377faeb7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

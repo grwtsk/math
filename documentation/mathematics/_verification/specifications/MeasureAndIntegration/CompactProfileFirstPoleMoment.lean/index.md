@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CompactProfileFirstPoleMoment.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CompactProfileFirstPoleMoment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileFirstPoleMoment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileFirstPoleMoment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Distribution.CompactProfileDilation`](../../../../MeasureAndIntegration/CompactProfileDilation.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Convolution.ExponentialMoments`](../../../../MeasureAndIntegration/ExponentialMoments.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.Convolution.FirstMomentConvolution`](../../../../MeasureAndIntegration/FirstMomentConvolution.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.Distribution.CompactProfileDilation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileDilation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Convolution.ExponentialMoments`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExponentialMoments.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Convolution.FirstMomentConvolution`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FirstMomentConvolution.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [normalized_source_first_exponential_integrable](../../../../MeasureAndIntegration/CompactProfileFirstPoleMoment.lean/declarations/normalized-source-first-exponential-integrable.md) | 29 | `result-track:8fc9bac8a12fa632f68b63d96caa1244d687c01a0b1ac77ad38382f95c7e6f6d` |
-| 2 | `theorem` | [first_exponential_correlation_integrable](../../../../MeasureAndIntegration/CompactProfileFirstPoleMoment.lean/declarations/first-exponential-correlation-integrable.md) | 40 | `result-track:a48ebc552804e1753ae4b5a5355d44a4152b006a80ff167f808aa7e3c12902fe` |
-| 3 | `theorem` | [first_pole_correlation_integral_zero](../../../../MeasureAndIntegration/CompactProfileFirstPoleMoment.lean/declarations/first-pole-correlation-integral-zero.md) | 74 | `result-track:35cd06efa95a2f5a27068d858f5cb0971a81d7eed43169e15cffb7114a7b3bcb` |
+| 1 | `theorem` | [normalized_source_first_exponential_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileFirstPoleMoment.lean/declarations/normalized-source-first-exponential-integrable.md) | 29 | `result-track:8fc9bac8a12fa632f68b63d96caa1244d687c01a0b1ac77ad38382f95c7e6f6d` |
+| 2 | `theorem` | [first_exponential_correlation_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileFirstPoleMoment.lean/declarations/first-exponential-correlation-integrable.md) | 40 | `result-track:a48ebc552804e1753ae4b5a5355d44a4152b006a80ff167f808aa7e3c12902fe` |
+| 3 | `theorem` | [first_pole_correlation_integral_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileFirstPoleMoment.lean/declarations/first-pole-correlation-integral-zero.md) | 74 | `result-track:35cd06efa95a2f5a27068d858f5cb0971a81d7eed43169e15cffb7114a7b3bcb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderSupport.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderSupport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderSupport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderSupport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [HasCompactMulSupport.sup](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderSupport.lean/declarations/hascompactmulsupport-sup.md) | 25 | `result-track:1b6364b8493a4a6be57b9a15588df6b7b4c4cc291c2eab175987c675bf169e5c` |
-| 2 | `theorem` | [HasCompactMulSupport.inf](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderSupport.lean/declarations/hascompactmulsupport-inf.md) | 39 | `result-track:3b7844f302591abe6ee60c58c9cb67f01e014b89a474ee01da47dbdcc171676e` |
+| 1 | `theorem` | [HasCompactMulSupport.sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderSupport.lean/declarations/hascompactmulsupport-sup.md) | 25 | `result-track:1b6364b8493a4a6be57b9a15588df6b7b4c4cc291c2eab175987c675bf169e5c` |
+| 2 | `theorem` | [HasCompactMulSupport.inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderSupport.lean/declarations/hascompactmulsupport-inf.md) | 39 | `result-track:3b7844f302591abe6ee60c58c9cb67f01e014b89a474ee01da47dbdcc171676e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

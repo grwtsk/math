@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComap.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [iterateMapComap](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComap.lean/declarations/iteratemapcomap.md) | 42 | `declaration-track:1a0df67bc2846a6b572f5c041253bc83fbc32899f7fe661e04b1db948a5bd5bc` |
-| 2 | `theorem` | [iterateMapComap_le_succ](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComap.lean/declarations/iteratemapcomap-le-succ.md) | 45 | `result-track:ec3f0ef31f462ecc333a937204ba2d8ed5b89b51cbf5adf7339f81cb00ac1b24` |
-| 3 | `theorem` | [iterateMapComap_eq_succ](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComap.lean/declarations/iteratemapcomap-eq-succ.md) | 65 | `result-track:1fa4b3e0a0b954af04b2ce4f41dde7e708d561bda1090636e2334b90dc0ffd2c` |
-| 4 | `theorem` | [ker_le_of_iterateMapComap_eq_succ](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComap.lean/declarations/ker-le-of-iteratemapcomap-eq-succ.md) | 88 | `result-track:28bb67a464a7df943c20d50e186c70e3a68ff3f1f4d97fb833ac641cff930f32` |
+| 1 | `def` | [iterateMapComap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComap.lean/declarations/iteratemapcomap.md) | 42 | `declaration-track:1a0df67bc2846a6b572f5c041253bc83fbc32899f7fe661e04b1db948a5bd5bc` |
+| 2 | `theorem` | [iterateMapComap_le_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComap.lean/declarations/iteratemapcomap-le-succ.md) | 45 | `result-track:ec3f0ef31f462ecc333a937204ba2d8ed5b89b51cbf5adf7339f81cb00ac1b24` |
+| 3 | `theorem` | [iterateMapComap_eq_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComap.lean/declarations/iteratemapcomap-eq-succ.md) | 65 | `result-track:1fa4b3e0a0b954af04b2ce4f41dde7e708d561bda1090636e2334b90dc0ffd2c` |
+| 4 | `theorem` | [ker_le_of_iterateMapComap_eq_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/IterateMapComap.lean/declarations/ker-le-of-iteratemapcomap-eq-succ.md) | 88 | `result-track:28bb67a464a7df943c20d50e186c70e3a68ff3f1f4d97fb833ac641cff930f32` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

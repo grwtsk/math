@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicReciprocalAbel.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicReciprocalAbel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicReciprocalAbel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicReciprocalAbel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.CharacterSums.FiniteCyclicReciprocalAbel`](../../../../../../NumberTheory/FiniteCyclicReciprocalAbel.lean/index.md) — import line 11; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicCoordinates`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicCoordinates.lean/index.md) — import line 12; pinned internal source present.
+- [`GRWTSK.NumberTheory.CharacterSums.FiniteCyclicReciprocalAbel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalAbel.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicCoordinates`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicCoordinates.lean/index.md) — import line 12; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coreGrowingShiftEndpointTransverseNatCharacter_reciprocal_Ico_norm_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicReciprocalAbel.lean/declarations/coregrowingshiftendpointtransversenatcharacter-reciprocal-ico-norm-le.md) | 24 | `result-track:2a08601395f4b2e91365fe511ba1de0f07a177e5714b9c326aa52a0b24041077` |
-| 2 | `theorem` | [coreGrowingShiftEndpointTransverseTailHarmonicLiteral_norm_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicReciprocalAbel.lean/declarations/coregrowingshiftendpointtransversetailharmonicliteral-norm-le.md) | 52 | `result-track:9634b8da085be23e2b325b4295693ee81409f0bf228bee18eef26e2857e20f11` |
+| 1 | `theorem` | [coreGrowingShiftEndpointTransverseNatCharacter_reciprocal_Ico_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicReciprocalAbel.lean/declarations/coregrowingshiftendpointtransversenatcharacter-reciprocal-ico-norm-le.md) | 24 | `result-track:2a08601395f4b2e91365fe511ba1de0f07a177e5714b9c326aa52a0b24041077` |
+| 2 | `theorem` | [coreGrowingShiftEndpointTransverseTailHarmonicLiteral_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreGrowingShiftEndpointCyclicReciprocalAbel.lean/declarations/coregrowingshiftendpointtransversetailharmonicliteral-norm-le.md) | 52 | `result-track:9634b8da085be23e2b325b4295693ee81409f0bf228bee18eef26e2857e20f11` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

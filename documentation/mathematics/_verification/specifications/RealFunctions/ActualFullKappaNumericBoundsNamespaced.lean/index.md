@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ActualFullKappaNumericBoundsNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/ActualFullKappaNumericBoundsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFullKappaNumericBoundsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFullKappaNumericBoundsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualUpperCoefficientMoment_abs_le](../../../../RealFunctions/ActualFullKappaNumericBoundsNamespaced.lean/declarations/actualuppercoefficientmoment-abs-le.md) | 29 | `result-track:f881ebd0f299ac4db60eb29e4eb15530fd21d064d70d25089e229611434f4a1a` |
-| 2 | `theorem` | [actualUpperKappa_succ_abs_le](../../../../RealFunctions/ActualFullKappaNumericBoundsNamespaced.lean/declarations/actualupperkappa-succ-abs-le.md) | 48 | `result-track:eeebce34961a3e7f4828db5f8a755b350211d0c30801b82ea070e90092108e39` |
-| 3 | `theorem` | [actualFullPositiveKappa_succ_abs_le](../../../../RealFunctions/ActualFullKappaNumericBoundsNamespaced.lean/declarations/actualfullpositivekappa-succ-abs-le.md) | 73 | `result-track:48ef09c58633e2e5cc5b74ee455a8cb4a60934d6dd836581fe01e73ffcd287d1` |
-| 4 | `theorem` | [actualFullPositiveKappa_one_bounds](../../../../RealFunctions/ActualFullKappaNumericBoundsNamespaced.lean/declarations/actualfullpositivekappa-one-bounds.md) | 92 | `result-track:f1add1371c622ee28cabd1a84a86eb905501c7b9da1a4e92900c2992c23e3820` |
-| 5 | `theorem` | [actualFullPositiveKappa_one_pos](../../../../RealFunctions/ActualFullKappaNumericBoundsNamespaced.lean/declarations/actualfullpositivekappa-one-pos.md) | 102 | `result-track:a9e74a39cda5a951a11d8215dbbf1a1a0f2d5cc1450ef555f0c85aca7a81b67f` |
-| 6 | `theorem` | [actualFullPositiveKappa_four_abs_bounds](../../../../RealFunctions/ActualFullKappaNumericBoundsNamespaced.lean/declarations/actualfullpositivekappa-four-abs-bounds.md) | 106 | `result-track:dc9b28eecfc62cb717107891f06ba5f774a90a142c3f1a05700f36f171768b52` |
+| 1 | `theorem` | [actualUpperCoefficientMoment_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFullKappaNumericBoundsNamespaced.lean/declarations/actualuppercoefficientmoment-abs-le.md) | 29 | `result-track:f881ebd0f299ac4db60eb29e4eb15530fd21d064d70d25089e229611434f4a1a` |
+| 2 | `theorem` | [actualUpperKappa_succ_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFullKappaNumericBoundsNamespaced.lean/declarations/actualupperkappa-succ-abs-le.md) | 48 | `result-track:eeebce34961a3e7f4828db5f8a755b350211d0c30801b82ea070e90092108e39` |
+| 3 | `theorem` | [actualFullPositiveKappa_succ_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFullKappaNumericBoundsNamespaced.lean/declarations/actualfullpositivekappa-succ-abs-le.md) | 73 | `result-track:48ef09c58633e2e5cc5b74ee455a8cb4a60934d6dd836581fe01e73ffcd287d1` |
+| 4 | `theorem` | [actualFullPositiveKappa_one_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFullKappaNumericBoundsNamespaced.lean/declarations/actualfullpositivekappa-one-bounds.md) | 92 | `result-track:f1add1371c622ee28cabd1a84a86eb905501c7b9da1a4e92900c2992c23e3820` |
+| 5 | `theorem` | [actualFullPositiveKappa_one_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFullKappaNumericBoundsNamespaced.lean/declarations/actualfullpositivekappa-one-pos.md) | 102 | `result-track:a9e74a39cda5a951a11d8215dbbf1a1a0f2d5cc1450ef555f0c85aca7a81b67f` |
+| 6 | `theorem` | [actualFullPositiveKappa_four_abs_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFullKappaNumericBoundsNamespaced.lean/declarations/actualfullpositivekappa-four-abs-bounds.md) | 106 | `result-track:dc9b28eecfc62cb717107891f06ba5f774a90a142c3f1a05700f36f171768b52` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HeatKernelTransportModelNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HeatKernelTransportModelNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HeatKernelTransportModelNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HeatKernelTransportModelNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HeatKernelIndexModel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HeatKernelTransportModelNamespaced.lean/declarations/heatkernelindexmodel.md) | 29 | `declaration-track:18545ae4cb9ae0bfa0bc5969e83c6eaa1f1984b441e1f42a8e327a10a6d39202` |
-| 2 | `theorem` | [heat_kernel_index_invariant_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HeatKernelTransportModelNamespaced.lean/declarations/heat-kernel-index-invariant-if-supplied.md) | 37 | `result-track:64f7ca7cd706fff63f49ad360f65dd2ecdb8426646f87f6723322148f71ff589` |
+| 1 | `structure` | [HeatKernelIndexModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HeatKernelTransportModelNamespaced.lean/declarations/heatkernelindexmodel.md) | 29 | `declaration-track:18545ae4cb9ae0bfa0bc5969e83c6eaa1f1984b441e1f42a8e327a10a6d39202` |
+| 2 | `theorem` | [heat_kernel_index_invariant_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HeatKernelTransportModelNamespaced.lean/declarations/heat-kernel-index-invariant-if-supplied.md) | 37 | `result-track:64f7ca7cd706fff63f49ad360f65dd2ecdb8426646f87f6723322148f71ff589` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

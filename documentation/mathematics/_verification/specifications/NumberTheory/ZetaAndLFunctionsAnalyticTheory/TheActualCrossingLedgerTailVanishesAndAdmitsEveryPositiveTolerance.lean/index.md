@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualCrossingLedgerTailVanishesAndAdmitsEveryPositiveTolerance.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualCrossingLedgerTailVanishesAndAdmitsEveryPositiveTolerance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualCrossingLedgerTailVanishesAndAdmitsEveryPositiveTolerance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualCrossingLedgerTailVanishesAndAdmitsEveryPositiveTolerance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exact_envelope_tends_to_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualCrossingLedgerTailVanishesAndAdmitsEveryPositiveTolerance.lean/declarations/exact-envelope-tends-to-zero.md) | 22 | `result-track:aa3b84b554965fb283fe1ec79ed0f4fb7b126126d44796edda0b1ac1355b5874` |
-| 2 | `theorem` | [actual_tail_price_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualCrossingLedgerTailVanishesAndAdmitsEveryPositiveTolerance.lean/declarations/actual-tail-price-nonnegative.md) | 37 | `result-track:65858e5f1817c0e30b77d7b7410c24fd7e33fa6c18d11303b237ffe745c595c5` |
-| 3 | `theorem` | [actual_native_ledger_tail_tends_to_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualCrossingLedgerTailVanishesAndAdmitsEveryPositiveTolerance.lean/declarations/actual-native-ledger-tail-tends-to-zero.md) | 48 | `result-track:75411eb1cef7389e5e56aeee17e7d7ff5e04db9950bbb5964d8018517ed62ea4` |
-| 4 | `theorem` | [every_positive_tolerance_has_uniform_actual_entrance](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualCrossingLedgerTailVanishesAndAdmitsEveryPositiveTolerance.lean/declarations/every-positive-tolerance-has-uniform-actual-entrance.md) | 55 | `result-track:e50d62e4bb172a7779e6f89dbb844283c563692e1f1a5ab1d0e0aaa16a52f353` |
+| 1 | `theorem` | [exact_envelope_tends_to_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualCrossingLedgerTailVanishesAndAdmitsEveryPositiveTolerance.lean/declarations/exact-envelope-tends-to-zero.md) | 22 | `result-track:aa3b84b554965fb283fe1ec79ed0f4fb7b126126d44796edda0b1ac1355b5874` |
+| 2 | `theorem` | [actual_tail_price_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualCrossingLedgerTailVanishesAndAdmitsEveryPositiveTolerance.lean/declarations/actual-tail-price-nonnegative.md) | 37 | `result-track:65858e5f1817c0e30b77d7b7410c24fd7e33fa6c18d11303b237ffe745c595c5` |
+| 3 | `theorem` | [actual_native_ledger_tail_tends_to_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualCrossingLedgerTailVanishesAndAdmitsEveryPositiveTolerance.lean/declarations/actual-native-ledger-tail-tends-to-zero.md) | 48 | `result-track:75411eb1cef7389e5e56aeee17e7d7ff5e04db9950bbb5964d8018517ed62ea4` |
+| 4 | `theorem` | [every_positive_tolerance_has_uniform_actual_entrance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualCrossingLedgerTailVanishesAndAdmitsEveryPositiveTolerance.lean/declarations/every-positive-tolerance-has-uniform-actual-entrance.md) | 55 | `result-track:e50d62e4bb172a7779e6f89dbb844283c563692e1f1a5ab1d0e0aaa16a52f353` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

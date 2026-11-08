@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RotateLeftPublicBlastRotateLeft.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RotateLeftPublicBlastRotateLeft.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RotateLeftPublicBlastRotateLeft.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RotateLeftPublicBlastRotateLeft.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [blastRotateLeft](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RotateLeftPublicBlastRotateLeft.lean/declarations/blastrotateleft.md) | 29 | `declaration-track:f9daa70b259dceefe8acecf8d3e5347c9376d014b8de973d3e4a2a1c91c385e5` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RotateLeftPublicBlastRotateLeft.lean/declarations/instance.md) | 51 | `declaration-track:bafbc29384057e525530c0411f64144e5d3a09c2d45e25176f3c0ea27dfcf03e` |
+| 1 | `def` | [blastRotateLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RotateLeftPublicBlastRotateLeft.lean/declarations/blastrotateleft.md) | 29 | `declaration-track:f9daa70b259dceefe8acecf8d3e5347c9376d014b8de973d3e4a2a1c91c385e5` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RotateLeftPublicBlastRotateLeft.lean/declarations/instance.md) | 51 | `declaration-track:bafbc29384057e525530c0411f64144e5d3a09c2d45e25176f3c0ea27dfcf03e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

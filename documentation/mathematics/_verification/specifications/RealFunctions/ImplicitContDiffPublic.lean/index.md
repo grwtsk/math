@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ImplicitContDiffPublic.lean/index.md) · [Full source](../../../../RealFunctions/ImplicitContDiffPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ImplicitContDiffPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ImplicitContDiffPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [contDiffAt_implicitFunction](../../../../RealFunctions/ImplicitContDiffPublic.lean/declarations/contdiffat-implicitfunction-source-edition-2.md) | 41 | `result-track:453196a20f1103db6f18dacb12c4dbe1d1bb66c75ee83089ff9f9d996f0726a1` |
-| 2 | `def` | [implicitFunction](../../../../RealFunctions/ImplicitContDiffPublic.lean/declarations/implicitfunction.md) | 55 | `declaration-track:ed499e78582f68526f1f24cd29b279d3fda8b7e547e6b79048da685ba1674b6e` |
-| 3 | `theorem` | [implicitFunction_def](../../../../RealFunctions/ImplicitContDiffPublic.lean/declarations/implicitfunction-def.md) | 60 | `result-track:5487c26efd298deb1113f7f8a45f445d53d7c1630b07b8efcbd6327109bd73ea` |
-| 4 | `theorem` | [implicitFunction_apply_self](../../../../RealFunctions/ImplicitContDiffPublic.lean/declarations/implicitfunction-apply-self.md) | 66 | `result-track:b096fcf5a3a98901f553cfc891a6fb8c9891129b7a85c5783ff4b87f3bd4f63a` |
-| 5 | `theorem` | [eventually_apply_implicitFunction](../../../../RealFunctions/ImplicitContDiffPublic.lean/declarations/eventually-apply-implicitfunction.md) | 72 | `result-track:39c744ac586a3950226010ece48a0748f7add1bac5b6e8ea0ee71188e9a11148` |
-| 6 | `theorem` | [eventually_apply_eq_iff_implicitFunction](../../../../RealFunctions/ImplicitContDiffPublic.lean/declarations/eventually-apply-eq-iff-implicitfunction.md) | 77 | `result-track:b6507a12360d8ee68aec54377d8ec602f1e3f6e52ae9508311bce6b255ce4ae9` |
-| 7 | `theorem` | [hasStrictFDerivAt_implicitFunction](../../../../RealFunctions/ImplicitContDiffPublic.lean/declarations/hasstrictfderivat-implicitfunction.md) | 82 | `result-track:e5e51f5c09aa2528b9623148358f05f4f1baa2a620f6d8a73dd6907723659b70` |
-| 8 | `theorem` | [contDiffAt_implicitFunction](../../../../RealFunctions/ImplicitContDiffPublic.lean/declarations/contdiffat-implicitfunction.md) | 90 | `result-track:160eaa1ec2785584f2371778c469e84abb3428ef4007e1e0a360684cc6689545` |
+| 1 | `theorem` | [contDiffAt_implicitFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ImplicitContDiffPublic.lean/declarations/contdiffat-implicitfunction-source-edition-2.md) | 41 | `result-track:453196a20f1103db6f18dacb12c4dbe1d1bb66c75ee83089ff9f9d996f0726a1` |
+| 2 | `def` | [implicitFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ImplicitContDiffPublic.lean/declarations/implicitfunction.md) | 55 | `declaration-track:ed499e78582f68526f1f24cd29b279d3fda8b7e547e6b79048da685ba1674b6e` |
+| 3 | `theorem` | [implicitFunction_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ImplicitContDiffPublic.lean/declarations/implicitfunction-def.md) | 60 | `result-track:5487c26efd298deb1113f7f8a45f445d53d7c1630b07b8efcbd6327109bd73ea` |
+| 4 | `theorem` | [implicitFunction_apply_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ImplicitContDiffPublic.lean/declarations/implicitfunction-apply-self.md) | 66 | `result-track:b096fcf5a3a98901f553cfc891a6fb8c9891129b7a85c5783ff4b87f3bd4f63a` |
+| 5 | `theorem` | [eventually_apply_implicitFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ImplicitContDiffPublic.lean/declarations/eventually-apply-implicitfunction.md) | 72 | `result-track:39c744ac586a3950226010ece48a0748f7add1bac5b6e8ea0ee71188e9a11148` |
+| 6 | `theorem` | [eventually_apply_eq_iff_implicitFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ImplicitContDiffPublic.lean/declarations/eventually-apply-eq-iff-implicitfunction.md) | 77 | `result-track:b6507a12360d8ee68aec54377d8ec602f1e3f6e52ae9508311bce6b255ce4ae9` |
+| 7 | `theorem` | [hasStrictFDerivAt_implicitFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ImplicitContDiffPublic.lean/declarations/hasstrictfderivat-implicitfunction.md) | 82 | `result-track:e5e51f5c09aa2528b9623148358f05f4f1baa2a620f6d8a73dd6907723659b70` |
+| 8 | `theorem` | [contDiffAt_implicitFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ImplicitContDiffPublic.lean/declarations/contdiffat-implicitfunction.md) | 90 | `result-track:160eaa1ec2785584f2371778c469e84abb3428ef4007e1e0a360684cc6689545` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

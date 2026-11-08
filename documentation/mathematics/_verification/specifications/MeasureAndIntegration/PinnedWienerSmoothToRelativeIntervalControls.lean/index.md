@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedWienerSmoothToRelativeInterval`](../../../../MeasureAndIntegration/PinnedWienerSmoothToRelativeInterval.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedWienerSmoothToRelativeInterval`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothToRelativeInterval.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [literal_ceil_index_iff](../../../../MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/literal-ceil-index-iff.md) | 16 | `result-track:2b3887907bf365fb1be7ad8720b2e0e7070afa98712883777fcc39a89c0752d1` |
-| 2 | `theorem` | [exact_right_endpoint_excluded](../../../../MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/exact-right-endpoint-excluded.md) | 23 | `result-track:3ffb7c5ff4cb21ce5eeb9096381609f72e0d5024bc213077c44db2c0eae45e8e` |
-| 3 | `theorem` | [zero_index_excluded_of_positive_left](../../../../MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/zero-index-excluded-of-positive-left.md) | 34 | `result-track:e57fcc715b6560d006ede2f10cf5bbbd63b1930ff21133d850d54e232942837b` |
-| 4 | `theorem` | [actual_lambda_indicator_tsum_is_finite_window](../../../../MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/actual-lambda-indicator-tsum-is-finite-window.md) | 44 | `result-track:0f407ffb45680325ff50f2cec0d32b27a43194960f8b51ab19f4dfa679d9a789` |
-| 5 | `theorem` | [actual_lambda_smooth_weight_summable](../../../../MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/actual-lambda-smooth-weight-summable.md) | 56 | `result-track:0034f345a37b6a08297234f31639b035694ca79c11c40b99d0f91bb6cb4f4d80` |
-| 6 | `theorem` | [actual_lambda_relativeWindow_of_smoothWiener](../../../../MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/actual-lambda-relativewindow-of-smoothwiener.md) | 66 | `result-track:63cfc6d67b1f29815c922d223900dc57f171e089f41be37a26ea544e34e5dd1c` |
-| 7 | `theorem` | [actual_lambda_weakPNT_of_smoothWiener](../../../../MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/actual-lambda-weakpnt-of-smoothwiener.md) | 73 | `result-track:913147c67a2491687e35ffaf47663bb2b3739108c0e02c6cadd85284bfaa05e2` |
-| 8 | `theorem` | [zero_sequence_rejects_unit_smoothTestLimit](../../../../MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/zero-sequence-rejects-unit-smoothtestlimit.md) | 85 | `result-track:9196b9c887d55a112c0b6cd3eb63968f6f5cedc1f04b2aa34d3b2eecb157a26e` |
-| 9 | `def` | [remainingSmoothWienerProofObligations](../../../../MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/remainingsmoothwienerproofobligations.md) | 111 | `declaration-track:10bf56e5117bbee3f5a46e35f24d5471f0f38638d7872f2157705568f594b2fe` |
-| 10 | `def` | [prohibitedPromotions](../../../../MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/prohibitedpromotions.md) | 119 | `declaration-track:879f3874ebe939e592a933511fd4be526a44a9794175fe356cbc6c0e40856706` |
+| 1 | `theorem` | [literal_ceil_index_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/literal-ceil-index-iff.md) | 16 | `result-track:2b3887907bf365fb1be7ad8720b2e0e7070afa98712883777fcc39a89c0752d1` |
+| 2 | `theorem` | [exact_right_endpoint_excluded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/exact-right-endpoint-excluded.md) | 23 | `result-track:3ffb7c5ff4cb21ce5eeb9096381609f72e0d5024bc213077c44db2c0eae45e8e` |
+| 3 | `theorem` | [zero_index_excluded_of_positive_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/zero-index-excluded-of-positive-left.md) | 34 | `result-track:e57fcc715b6560d006ede2f10cf5bbbd63b1930ff21133d850d54e232942837b` |
+| 4 | `theorem` | [actual_lambda_indicator_tsum_is_finite_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/actual-lambda-indicator-tsum-is-finite-window.md) | 44 | `result-track:0f407ffb45680325ff50f2cec0d32b27a43194960f8b51ab19f4dfa679d9a789` |
+| 5 | `theorem` | [actual_lambda_smooth_weight_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/actual-lambda-smooth-weight-summable.md) | 56 | `result-track:0034f345a37b6a08297234f31639b035694ca79c11c40b99d0f91bb6cb4f4d80` |
+| 6 | `theorem` | [actual_lambda_relativeWindow_of_smoothWiener](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/actual-lambda-relativewindow-of-smoothwiener.md) | 66 | `result-track:63cfc6d67b1f29815c922d223900dc57f171e089f41be37a26ea544e34e5dd1c` |
+| 7 | `theorem` | [actual_lambda_weakPNT_of_smoothWiener](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/actual-lambda-weakpnt-of-smoothwiener.md) | 73 | `result-track:913147c67a2491687e35ffaf47663bb2b3739108c0e02c6cadd85284bfaa05e2` |
+| 8 | `theorem` | [zero_sequence_rejects_unit_smoothTestLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/zero-sequence-rejects-unit-smoothtestlimit.md) | 85 | `result-track:9196b9c887d55a112c0b6cd3eb63968f6f5cedc1f04b2aa34d3b2eecb157a26e` |
+| 9 | `def` | [remainingSmoothWienerProofObligations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/remainingsmoothwienerproofobligations.md) | 111 | `declaration-track:10bf56e5117bbee3f5a46e35f24d5471f0f38638d7872f2157705568f594b2fe` |
+| 10 | `def` | [prohibitedPromotions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothToRelativeIntervalControls.lean/declarations/prohibitedpromotions.md) | 119 | `declaration-track:879f3874ebe939e592a933511fd4be526a44a9794175fe356cbc6c0e40856706` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

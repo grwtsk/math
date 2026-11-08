@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/index.md) · [Full source](../../../../GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [normalizedInterior_two_factor](../../../../GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/declarations/normalizedinterior-two-factor.md) | 31 | `result-track:2d44fc0fed01f6fd9b98d2ac3f31ec5437b18c5d1e539c9f226d4ccc23eb8f43` |
-| 2 | `theorem` | [normalizedTest_two_nonneg](../../../../GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/declarations/normalizedtest-two-nonneg.md) | 39 | `result-track:f9f3c49d45731ba1a969daa27cd76281c3a41d64ed2290110c1268645ef87320` |
-| 3 | `theorem` | [normalizedTest_two_pos](../../../../GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/declarations/normalizedtest-two-pos.md) | 56 | `result-track:5fd494dc079fe208edbe637c59ea1917c6f692e9ca854fe5ecf5e29dfb2b410b` |
-| 4 | `theorem` | [sourceCorrelation_two_pos](../../../../GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/declarations/sourcecorrelation-two-pos.md) | 72 | `result-track:23c848f0ee7c5d10a06fa4aaf30cdf8a69b4aa5a2f617bf491786b078d69fdcf` |
-| 5 | `theorem` | [log_thirtyfive_bounds](../../../../GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/declarations/log-thirtyfive-bounds.md) | 105 | `result-track:077abb3c02606cb5714c57867934c7e744c79aa16c3efe52a63f1248c4d34961` |
-| 6 | `theorem` | [actual_five_seven_kernel_pos](../../../../GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/declarations/actual-five-seven-kernel-pos.md) | 126 | `result-track:473fa69d80d6283f1a2a3a77ee6a67ab82a270cacdd824a685202cad59b8d03b` |
-| 7 | `theorem` | [log_forty_bounds](../../../../GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/declarations/log-forty-bounds.md) | 133 | `result-track:d8e65611b19c5ad6df3dc92d2f68ba0a4e51e856be3e6f973b656ad448045c35` |
-| 8 | `theorem` | [actual_five_eight_kernel_pos](../../../../GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/declarations/actual-five-eight-kernel-pos.md) | 146 | `result-track:cd3ea5e5ad42a7ea86d4b11b23123ca22d6ec5c53844494ccb9d1d15961c7f90` |
+| 1 | `theorem` | [normalizedInterior_two_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/declarations/normalizedinterior-two-factor.md) | 31 | `result-track:2d44fc0fed01f6fd9b98d2ac3f31ec5437b18c5d1e539c9f226d4ccc23eb8f43` |
+| 2 | `theorem` | [normalizedTest_two_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/declarations/normalizedtest-two-nonneg.md) | 39 | `result-track:f9f3c49d45731ba1a969daa27cd76281c3a41d64ed2290110c1268645ef87320` |
+| 3 | `theorem` | [normalizedTest_two_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/declarations/normalizedtest-two-pos.md) | 56 | `result-track:5fd494dc079fe208edbe637c59ea1917c6f692e9ca854fe5ecf5e29dfb2b410b` |
+| 4 | `theorem` | [sourceCorrelation_two_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/declarations/sourcecorrelation-two-pos.md) | 72 | `result-track:23c848f0ee7c5d10a06fa4aaf30cdf8a69b4aa5a2f617bf491786b078d69fdcf` |
+| 5 | `theorem` | [log_thirtyfive_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/declarations/log-thirtyfive-bounds.md) | 105 | `result-track:077abb3c02606cb5714c57867934c7e744c79aa16c3efe52a63f1248c4d34961` |
+| 6 | `theorem` | [actual_five_seven_kernel_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/declarations/actual-five-seven-kernel-pos.md) | 126 | `result-track:473fa69d80d6283f1a2a3a77ee6a67ab82a270cacdd824a685202cad59b8d03b` |
+| 7 | `theorem` | [log_forty_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/declarations/log-forty-bounds.md) | 133 | `result-track:d8e65611b19c5ad6df3dc92d2f68ba0a4e51e856be3e6f973b656ad448045c35` |
+| 8 | `theorem` | [actual_five_eight_kernel_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceDivisorLatticeKernelNamespacedEdition1.lean/declarations/actual-five-eight-kernel-pos.md) | 146 | `result-track:cd3ea5e5ad42a7ea86d4b11b23123ca22d6ec5c53844494ccb9d1d15961c7f90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

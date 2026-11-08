@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [StrictMonoOn.union](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/declarations/strictmonoon-union.md) | 33 | `result-track:7ba10e011aa2d055a9441a54b3179865b4e344d84600e014703b413827ce3d3b` |
-| 2 | `theorem` | [StrictMonoOn.Iic_union_Ici](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/declarations/strictmonoon-iic-union-ici.md) | 62 | `result-track:c9502eac9d49253e45f1886864eaa3895ac1f47c40194c2a653892d7166720f4` |
-| 3 | `theorem` | [StrictAntiOn.union](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/declarations/strictantion-union.md) | 69 | `result-track:5ad7171dc08d151362a01e97b8740a6892002edff5f58f67b66814c725fd12e6` |
-| 4 | `theorem` | [StrictAntiOn.Iic_union_Ici](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/declarations/strictantion-iic-union-ici.md) | 75 | `result-track:d1cc28d096c47c3d899a0528f878a98c789a638e2b0f89e0919299832658ce7e` |
-| 5 | `theorem` | [MonotoneOn.union_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/declarations/monotoneon-union-right.md) | 81 | `result-track:1ae68b18771099ad545396311118a0cbcb1b4f2b053d1cfc3750d15cdba14559` |
-| 6 | `theorem` | [MonotoneOn.Iic_union_Ici](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/declarations/monotoneon-iic-union-ici.md) | 109 | `result-track:2a9d4f32a563e825873cd20521ea439853b16ed73e2fad4936e29a93216e4919` |
-| 7 | `theorem` | [AntitoneOn.union_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/declarations/antitoneon-union-right.md) | 116 | `result-track:0dee8fe810e77cdcb72a6488f16e0542d172c0ad766f29230e28934c5fbcef0d` |
-| 8 | `theorem` | [AntitoneOn.Iic_union_Ici](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/declarations/antitoneon-iic-union-ici.md) | 121 | `result-track:9fcc05902250c7339f057820256cfff051baec1eceeb5f1c1616532d2628455d` |
+| 1 | `theorem` | [StrictMonoOn.union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/declarations/strictmonoon-union.md) | 33 | `result-track:7ba10e011aa2d055a9441a54b3179865b4e344d84600e014703b413827ce3d3b` |
+| 2 | `theorem` | [StrictMonoOn.Iic_union_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/declarations/strictmonoon-iic-union-ici.md) | 62 | `result-track:c9502eac9d49253e45f1886864eaa3895ac1f47c40194c2a653892d7166720f4` |
+| 3 | `theorem` | [StrictAntiOn.union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/declarations/strictantion-union.md) | 69 | `result-track:5ad7171dc08d151362a01e97b8740a6892002edff5f58f67b66814c725fd12e6` |
+| 4 | `theorem` | [StrictAntiOn.Iic_union_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/declarations/strictantion-iic-union-ici.md) | 75 | `result-track:d1cc28d096c47c3d899a0528f878a98c789a638e2b0f89e0919299832658ce7e` |
+| 5 | `theorem` | [MonotoneOn.union_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/declarations/monotoneon-union-right.md) | 81 | `result-track:1ae68b18771099ad545396311118a0cbcb1b4f2b053d1cfc3750d15cdba14559` |
+| 6 | `theorem` | [MonotoneOn.Iic_union_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/declarations/monotoneon-iic-union-ici.md) | 109 | `result-track:2a9d4f32a563e825873cd20521ea439853b16ed73e2fad4936e29a93216e4919` |
+| 7 | `theorem` | [AntitoneOn.union_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/declarations/antitoneon-union-right.md) | 116 | `result-track:0dee8fe810e77cdcb72a6488f16e0542d172c0ad766f29230e28934c5fbcef0d` |
+| 8 | `theorem` | [AntitoneOn.Iic_union_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/UnionNamespaced.lean/declarations/antitoneon-iic-union-ici.md) | 121 | `result-track:9fcc05902250c7339f057820256cfff051baec1eceeb5f1c1616532d2628455d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

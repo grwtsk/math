@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ResultsAlternative21.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ResultsAlternative21.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative21.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative21.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [powerErrorMajorant](../../../../MeasureAndIntegration/ResultsAlternative21.lean/declarations/powererrormajorant.md) | 24 | `declaration-track:9aafba3dcf7687bee4e200592b91254496a9ed7f2f75c827858208af415596ac` |
-| 2 | `theorem` | [chebyshev_log_abs_le_power_majorant](../../../../MeasureAndIntegration/ResultsAlternative21.lean/declarations/chebyshev-log-abs-le-power-majorant.md) | 29 | `result-track:3a31c584120732453b8083c1e79b4d641f49f2a3b7574197040beb152e42aec9` |
-| 3 | `theorem` | [critical_prime_error_abs_le_power_majorant](../../../../MeasureAndIntegration/ResultsAlternative21.lean/declarations/critical-prime-error-abs-le-power-majorant.md) | 49 | `result-track:b732bc20bd0af458e62e86c1c7e79b8f123b760f35e34e21bfda89bd2a94d4a8` |
-| 4 | `theorem` | [power_majorant_integral_eq_unit_scale](../../../../MeasureAndIntegration/ResultsAlternative21.lean/declarations/power-majorant-integral-eq-unit-scale.md) | 76 | `result-track:8cc9e16af69349dcd8baf81815514e3915a60068a44ce7dcdf651629e808c51a` |
-| 5 | `theorem` | [critical_power_majorant_eq_unit_scale](../../../../MeasureAndIntegration/ResultsAlternative21.lean/declarations/critical-power-majorant-eq-unit-scale.md) | 92 | `result-track:022727952ccc8712aaf8e375442ab3a5f40300db3870dbf4407986192b8dc42f` |
-| 6 | `theorem` | [power_exponential_factor_upper](../../../../MeasureAndIntegration/ResultsAlternative21.lean/declarations/power-exponential-factor-upper.md) | 100 | `result-track:20b361709fffadb2cba2145cad45dfd683707e2c9ba3e9bdac6b2f92bc1cdd7a` |
+| 1 | `def` | [powerErrorMajorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative21.lean/declarations/powererrormajorant.md) | 24 | `declaration-track:9aafba3dcf7687bee4e200592b91254496a9ed7f2f75c827858208af415596ac` |
+| 2 | `theorem` | [chebyshev_log_abs_le_power_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative21.lean/declarations/chebyshev-log-abs-le-power-majorant.md) | 29 | `result-track:3a31c584120732453b8083c1e79b4d641f49f2a3b7574197040beb152e42aec9` |
+| 3 | `theorem` | [critical_prime_error_abs_le_power_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative21.lean/declarations/critical-prime-error-abs-le-power-majorant.md) | 49 | `result-track:b732bc20bd0af458e62e86c1c7e79b8f123b760f35e34e21bfda89bd2a94d4a8` |
+| 4 | `theorem` | [power_majorant_integral_eq_unit_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative21.lean/declarations/power-majorant-integral-eq-unit-scale.md) | 76 | `result-track:8cc9e16af69349dcd8baf81815514e3915a60068a44ce7dcdf651629e808c51a` |
+| 5 | `theorem` | [critical_power_majorant_eq_unit_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative21.lean/declarations/critical-power-majorant-eq-unit-scale.md) | 92 | `result-track:022727952ccc8712aaf8e375442ab3a5f40300db3870dbf4407986192b8dc42f` |
+| 6 | `theorem` | [power_exponential_factor_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative21.lean/declarations/power-exponential-factor-upper.md) | 100 | `result-track:20b361709fffadb2cba2145cad45dfd683707e2c9ba3e9bdac6b2f92bc1cdd7a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

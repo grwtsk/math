@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/BlaschkeFloor.lean/index.md) · [Full source](../../../../RealFunctions/BlaschkeFloor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [blaschkeAtOne](../../../../RealFunctions/BlaschkeFloor.lean/declarations/blaschkeatone.md) | 9 | `declaration-track:925365b0654d6fb2821e20db723632454eb2432dd9bce29d81a6e95858280902` |
-| 2 | `theorem` | [reference_denominator_ne_zero](../../../../RealFunctions/BlaschkeFloor.lean/declarations/reference-denominator-ne-zero.md) | 12 | `result-track:0302c1f1081d7cb2d6e0aff7017add7c458881dd4856f8f1ce425e1af928f71e` |
-| 3 | `theorem` | [reference_denominator_normSq](../../../../RealFunctions/BlaschkeFloor.lean/declarations/reference-denominator-normsq.md) | 20 | `result-track:c00b91e8a72c1a1adc8b4412b95ab5a960ea41b732714d1212437e5af56c0906` |
-| 4 | `theorem` | [blaschke_deficit](../../../../RealFunctions/BlaschkeFloor.lean/declarations/blaschke-deficit.md) | 27 | `result-track:f122e666fe271395304ef008f51122f2164f96694dec4ed498c63998f233000e` |
-| 5 | `theorem` | [factor_deficit_lower](../../../../RealFunctions/BlaschkeFloor.lean/declarations/factor-deficit-lower.md) | 39 | `result-track:4d7cb1b7ceb13515b06b3b7148ceccddb4541a8cfaff8b156b2d10af3e481311` |
-| 6 | `theorem` | [blaschke_floor_pos](../../../../RealFunctions/BlaschkeFloor.lean/declarations/blaschke-floor-pos.md) | 47 | `result-track:8f15511c72fdbcac9eb00a5c1eb4d2268d4d6d92100a944cc357cd184b513b46` |
+| 1 | `def` | [blaschkeAtOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloor.lean/declarations/blaschkeatone.md) | 9 | `declaration-track:925365b0654d6fb2821e20db723632454eb2432dd9bce29d81a6e95858280902` |
+| 2 | `theorem` | [reference_denominator_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloor.lean/declarations/reference-denominator-ne-zero.md) | 12 | `result-track:0302c1f1081d7cb2d6e0aff7017add7c458881dd4856f8f1ce425e1af928f71e` |
+| 3 | `theorem` | [reference_denominator_normSq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloor.lean/declarations/reference-denominator-normsq.md) | 20 | `result-track:c00b91e8a72c1a1adc8b4412b95ab5a960ea41b732714d1212437e5af56c0906` |
+| 4 | `theorem` | [blaschke_deficit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloor.lean/declarations/blaschke-deficit.md) | 27 | `result-track:f122e666fe271395304ef008f51122f2164f96694dec4ed498c63998f233000e` |
+| 5 | `theorem` | [factor_deficit_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloor.lean/declarations/factor-deficit-lower.md) | 39 | `result-track:4d7cb1b7ceb13515b06b3b7148ceccddb4541a8cfaff8b156b2d10af3e481311` |
+| 6 | `theorem` | [blaschke_floor_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloor.lean/declarations/blaschke-floor-pos.md) | 47 | `result-track:8f15511c72fdbcac9eb00a5c1eb4d2268d4d6d92100a944cc357cd184b513b46` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

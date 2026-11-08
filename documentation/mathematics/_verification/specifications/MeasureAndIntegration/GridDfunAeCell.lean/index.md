@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/GridDfunAeCell.lean/index.md) · [Full source](../../../../MeasureAndIntegration/GridDfunAeCell.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GridDfunAeCell.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GridDfunAeCell.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Dfun_ae_cell](../../../../MeasureAndIntegration/GridDfunAeCell.lean/declarations/dfun-ae-cell.md) | 23 | `result-track:2ef07ed1fe0234671d0e722f929869a9f56829e157f618df9e05bf058314ef16` |
-| 2 | `lemma` | [integral_Dfun_cell](../../../../MeasureAndIntegration/GridDfunAeCell.lean/declarations/integral-dfun-cell.md) | 29 | `result-track:374e2f5d6cb621645d26b575984e00200cce2540d39c1117b1b4369121953e41` |
-| 3 | `theorem` | [Efun_grid](../../../../MeasureAndIntegration/GridDfunAeCell.lean/declarations/efun-grid.md) | 47 | `result-track:8ba47a1aba58929ec96de8480282d5fea5e93341b27735626a82b5f07a50da3b` |
-| 4 | `theorem` | [Dfun_grid](../../../../MeasureAndIntegration/GridDfunAeCell.lean/declarations/dfun-grid.md) | 65 | `result-track:953136bd4badcc5a5b3c5251ac0f6fb9a896555b924703e6e9c4d6a389958581` |
+| 1 | `lemma` | [Dfun_ae_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GridDfunAeCell.lean/declarations/dfun-ae-cell.md) | 23 | `result-track:2ef07ed1fe0234671d0e722f929869a9f56829e157f618df9e05bf058314ef16` |
+| 2 | `lemma` | [integral_Dfun_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GridDfunAeCell.lean/declarations/integral-dfun-cell.md) | 29 | `result-track:374e2f5d6cb621645d26b575984e00200cce2540d39c1117b1b4369121953e41` |
+| 3 | `theorem` | [Efun_grid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GridDfunAeCell.lean/declarations/efun-grid.md) | 47 | `result-track:8ba47a1aba58929ec96de8480282d5fea5e93341b27735626a82b5f07a50da3b` |
+| 4 | `theorem` | [Dfun_grid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GridDfunAeCell.lean/declarations/dfun-grid.md) | 65 | `result-track:953136bd4badcc5a5b3c5251ac0f6fb9a896555b924703e6e9c4d6a389958581` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

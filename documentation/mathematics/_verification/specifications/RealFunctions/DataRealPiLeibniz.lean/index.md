@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DataRealPiLeibniz.lean/index.md) · [Full source](../../../../RealFunctions/DataRealPiLeibniz.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiLeibniz.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiLeibniz.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_sum_pi_div_four](../../../../RealFunctions/DataRealPiLeibniz.lean/declarations/tendsto-sum-pi-div-four.md) | 19 | `result-track:b9783bba84c7fd84fd514dd1e269ce04cab37fdbcbfe38b58e4f5c418e9ed877` |
+| 1 | `theorem` | [tendsto_sum_pi_div_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiLeibniz.lean/declarations/tendsto-sum-pi-div-four.md) | 19 | `result-track:b9783bba84c7fd84fd514dd1e269ce04cab37fdbcbfe38b58e4f5c418e9ed877` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

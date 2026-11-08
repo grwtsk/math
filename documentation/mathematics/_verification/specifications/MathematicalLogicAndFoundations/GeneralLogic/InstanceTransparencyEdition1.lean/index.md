@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InstanceTransparencyEdition1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InstanceTransparencyEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InstanceTransparencyEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InstanceTransparencyEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InstanceTransparencyEdition1.lean/declarations/example-source-edition-2.md) | 18 | `declaration-track:3ca769905ee1868d83b55523e4d795fa5f5bf339932e2f24bd0c79380ec0aabc` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InstanceTransparencyEdition1.lean/declarations/example.md) | 22 | `declaration-track:33dbe604045544e3ee42704708305c0482995bc6eb0279707190b91df74e93b1` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InstanceTransparencyEdition1.lean/declarations/example-source-edition-3.md) | 27 | `declaration-track:ab356bf63b663d6ada6b9e3b00d3abafa094e992a27ad5cb820f6c40b4318ec5` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InstanceTransparencyEdition1.lean/declarations/example-source-edition-2.md) | 18 | `declaration-track:3ca769905ee1868d83b55523e4d795fa5f5bf339932e2f24bd0c79380ec0aabc` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InstanceTransparencyEdition1.lean/declarations/example.md) | 22 | `declaration-track:33dbe604045544e3ee42704708305c0482995bc6eb0279707190b91df74e93b1` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InstanceTransparencyEdition1.lean/declarations/example-source-edition-3.md) | 27 | `declaration-track:ab356bf63b663d6ada6b9e3b00d3abafa094e992a27ad5cb820f6c40b4318ec5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

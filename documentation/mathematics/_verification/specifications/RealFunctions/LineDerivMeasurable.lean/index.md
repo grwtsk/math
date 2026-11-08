@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/LineDerivMeasurable.lean/index.md) · [Full source](../../../../RealFunctions/LineDerivMeasurable.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LineDerivMeasurable.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LineDerivMeasurable.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [measurableSet_lineDifferentiableAt](../../../../RealFunctions/LineDerivMeasurable.lean/declarations/measurableset-linedifferentiableat.md) | 33 | `result-track:1d65b78f80567d4ff707b756bde4e45bcead35ece29dcb4c80d9f0345da94422` |
-| 2 | `theorem` | [measurable_lineDeriv](../../../../RealFunctions/LineDerivMeasurable.lean/declarations/measurable-linederiv.md) | 40 | `result-track:cdb5e5e7cdb38ac09e425a3f1e8a309c179fadf6d06f3d5c6c0357e22eb1afa5` |
-| 3 | `theorem` | [stronglyMeasurable_lineDeriv](../../../../RealFunctions/LineDerivMeasurable.lean/declarations/stronglymeasurable-linederiv.md) | 47 | `result-track:f907c8300c3878a36710dc65631b21e9e1bba7b713d75a0d9b457df457b4c68c` |
-| 4 | `theorem` | [aemeasurable_lineDeriv](../../../../RealFunctions/LineDerivMeasurable.lean/declarations/aemeasurable-linederiv.md) | 54 | `result-track:cc20784bc6a875e8595ad995b7e6d33bdb9b82f1df9ca8eef9d5b1919a2d5f69` |
-| 5 | `theorem` | [aestronglyMeasurable_lineDeriv](../../../../RealFunctions/LineDerivMeasurable.lean/declarations/aestronglymeasurable-linederiv.md) | 59 | `result-track:86f0c6bb168b981a25ef945a47bfde51813e5086ec3d6814b20703dadb0fcd56` |
-| 6 | `theorem` | [measurableSet_lineDifferentiableAt_uncurry](../../../../RealFunctions/LineDerivMeasurable.lean/declarations/measurableset-linedifferentiableat-uncurry.md) | 72 | `result-track:9457fb65e1c414f3badddef10c19edd7ec957db2b7e90bd8e1f47e2e8a0ecb5f` |
-| 7 | `theorem` | [measurable_lineDeriv_uncurry](../../../../RealFunctions/LineDerivMeasurable.lean/declarations/measurable-linederiv-uncurry.md) | 83 | `result-track:dd06abfbca3b6567c0e24387c4946d5c3bef7d9aad7e7d5d214d114fb4ace994` |
-| 8 | `theorem` | [stronglyMeasurable_lineDeriv_uncurry](../../../../RealFunctions/LineDerivMeasurable.lean/declarations/stronglymeasurable-linederiv-uncurry.md) | 92 | `result-track:b938f1ae8c43db6ca243871e156734ca9aefbc72ccc06e1ab0f5d7b2ca901722` |
-| 9 | `theorem` | [aemeasurable_lineDeriv_uncurry](../../../../RealFunctions/LineDerivMeasurable.lean/declarations/aemeasurable-linederiv-uncurry.md) | 101 | `result-track:d94808d7437cdb2948132aea65973c311ce564d9b9209c04e11717c141603aa9` |
-| 10 | `theorem` | [aestronglyMeasurable_lineDeriv_uncurry](../../../../RealFunctions/LineDerivMeasurable.lean/declarations/aestronglymeasurable-linederiv-uncurry.md) | 106 | `result-track:f27c4cc15665d4c495d93a384fc00a66667ce08d38f150bcd1437422c2d517b4` |
+| 1 | `theorem` | [measurableSet_lineDifferentiableAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LineDerivMeasurable.lean/declarations/measurableset-linedifferentiableat.md) | 33 | `result-track:1d65b78f80567d4ff707b756bde4e45bcead35ece29dcb4c80d9f0345da94422` |
+| 2 | `theorem` | [measurable_lineDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LineDerivMeasurable.lean/declarations/measurable-linederiv.md) | 40 | `result-track:cdb5e5e7cdb38ac09e425a3f1e8a309c179fadf6d06f3d5c6c0357e22eb1afa5` |
+| 3 | `theorem` | [stronglyMeasurable_lineDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LineDerivMeasurable.lean/declarations/stronglymeasurable-linederiv.md) | 47 | `result-track:f907c8300c3878a36710dc65631b21e9e1bba7b713d75a0d9b457df457b4c68c` |
+| 4 | `theorem` | [aemeasurable_lineDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LineDerivMeasurable.lean/declarations/aemeasurable-linederiv.md) | 54 | `result-track:cc20784bc6a875e8595ad995b7e6d33bdb9b82f1df9ca8eef9d5b1919a2d5f69` |
+| 5 | `theorem` | [aestronglyMeasurable_lineDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LineDerivMeasurable.lean/declarations/aestronglymeasurable-linederiv.md) | 59 | `result-track:86f0c6bb168b981a25ef945a47bfde51813e5086ec3d6814b20703dadb0fcd56` |
+| 6 | `theorem` | [measurableSet_lineDifferentiableAt_uncurry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LineDerivMeasurable.lean/declarations/measurableset-linedifferentiableat-uncurry.md) | 72 | `result-track:9457fb65e1c414f3badddef10c19edd7ec957db2b7e90bd8e1f47e2e8a0ecb5f` |
+| 7 | `theorem` | [measurable_lineDeriv_uncurry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LineDerivMeasurable.lean/declarations/measurable-linederiv-uncurry.md) | 83 | `result-track:dd06abfbca3b6567c0e24387c4946d5c3bef7d9aad7e7d5d214d114fb4ace994` |
+| 8 | `theorem` | [stronglyMeasurable_lineDeriv_uncurry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LineDerivMeasurable.lean/declarations/stronglymeasurable-linederiv-uncurry.md) | 92 | `result-track:b938f1ae8c43db6ca243871e156734ca9aefbc72ccc06e1ab0f5d7b2ca901722` |
+| 9 | `theorem` | [aemeasurable_lineDeriv_uncurry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LineDerivMeasurable.lean/declarations/aemeasurable-linederiv-uncurry.md) | 101 | `result-track:d94808d7437cdb2948132aea65973c311ce564d9b9209c04e11717c141603aa9` |
+| 10 | `theorem` | [aestronglyMeasurable_lineDeriv_uncurry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LineDerivMeasurable.lean/declarations/aestronglymeasurable-linederiv-uncurry.md) | 106 | `result-track:f27c4cc15665d4c495d93a384fc00a66667ce08d38f150bcd1437422c2d517b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

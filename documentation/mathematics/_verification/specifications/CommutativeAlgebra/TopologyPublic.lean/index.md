@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/TopologyPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/TopologyPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TopologyPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TopologyPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IsAdic.isHausdorff_iff](../../../../CommutativeAlgebra/TopologyPublic.lean/declarations/isadic-ishausdorff-iff.md) | 31 | `result-track:62ab0572fec00983893bf3225c18a9947c3c779539c382e68287ac1b05ddf0cd` |
-| 2 | `lemma` | [IsAdic.isPrecomplete_iff](../../../../CommutativeAlgebra/TopologyPublic.lean/declarations/isadic-isprecomplete-iff.md) | 46 | `result-track:54ea59b25b57e687afa7e3a4fa5398b644a8e3d5afa205e232f35f8489557605` |
-| 3 | `lemma` | [IsAdic.isAdicComplete_iff](../../../../CommutativeAlgebra/TopologyPublic.lean/declarations/isadic-isadiccomplete-iff.md) | 76 | `result-track:d1ca67c266870cf5ff6fc050454264453377cdb8106c131898760d9d6b666885` |
-| 4 | `theorem` | [IsPrecomplete.congr_ringEquiv](../../../../CommutativeAlgebra/TopologyPublic.lean/declarations/isprecomplete-congr-ringequiv.md) | 85 | `result-track:c88b64331ada6464f1a50735b42ec75cd39d068c0b31163ff6ae8573ea185b40` |
-| 5 | `theorem` | [IsHausdorff.congr_ringEquiv](../../../../CommutativeAlgebra/TopologyPublic.lean/declarations/ishausdorff-congr-ringequiv.md) | 92 | `result-track:a968a44d70ced6caef3820b480fe78b96382d956497671330bcd7f96b5e1518d` |
-| 6 | `theorem` | [IsAdicComplete.congr_ringEquiv](../../../../CommutativeAlgebra/TopologyPublic.lean/declarations/isadiccomplete-congr-ringequiv.md) | 99 | `result-track:ff4d4aef843094cd87ef813e36d738181ab40c6cf212352ce85f960567165ee4` |
+| 1 | `lemma` | [IsAdic.isHausdorff_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TopologyPublic.lean/declarations/isadic-ishausdorff-iff.md) | 31 | `result-track:62ab0572fec00983893bf3225c18a9947c3c779539c382e68287ac1b05ddf0cd` |
+| 2 | `lemma` | [IsAdic.isPrecomplete_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TopologyPublic.lean/declarations/isadic-isprecomplete-iff.md) | 46 | `result-track:54ea59b25b57e687afa7e3a4fa5398b644a8e3d5afa205e232f35f8489557605` |
+| 3 | `lemma` | [IsAdic.isAdicComplete_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TopologyPublic.lean/declarations/isadic-isadiccomplete-iff.md) | 76 | `result-track:d1ca67c266870cf5ff6fc050454264453377cdb8106c131898760d9d6b666885` |
+| 4 | `theorem` | [IsPrecomplete.congr_ringEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TopologyPublic.lean/declarations/isprecomplete-congr-ringequiv.md) | 85 | `result-track:c88b64331ada6464f1a50735b42ec75cd39d068c0b31163ff6ae8573ea185b40` |
+| 5 | `theorem` | [IsHausdorff.congr_ringEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TopologyPublic.lean/declarations/ishausdorff-congr-ringequiv.md) | 92 | `result-track:a968a44d70ced6caef3820b480fe78b96382d956497671330bcd7f96b5e1518d` |
+| 6 | `theorem` | [IsAdicComplete.congr_ringEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TopologyPublic.lean/declarations/isadiccomplete-congr-ringequiv.md) | 99 | `result-track:ff4d4aef843094cd87ef813e36d738181ab40c6cf212352ce85f960567165ee4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

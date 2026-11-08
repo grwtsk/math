@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalZRouteNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalZRouteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalZRouteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalZRouteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GlobalZTMFRoute](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalZRouteNamespaced.lean/declarations/globalztmfroute.md) | 26 | `declaration-track:d334615d2d1f71f71dc4943ec22eea5b7afe2d7f1152ff6e12882e12e3d86e59` |
-| 2 | `theorem` | [global_route_tracks_all_primes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalZRouteNamespaced.lean/declarations/global-route-tracks-all-primes.md) | 34 | `result-track:ab86a2e13474527545df4a3c40e159c589a04efbe73611c9f08c20baefd5b9f1` |
+| 1 | `structure` | [GlobalZTMFRoute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalZRouteNamespaced.lean/declarations/globalztmfroute.md) | 26 | `declaration-track:d334615d2d1f71f71dc4943ec22eea5b7afe2d7f1152ff6e12882e12e3d86e59` |
+| 2 | `theorem` | [global_route_tracks_all_primes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalZRouteNamespaced.lean/declarations/global-route-tracks-all-primes.md) | 34 | `result-track:ab86a2e13474527545df4a3c40e159c589a04efbe73611c9f08c20baefd5b9f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

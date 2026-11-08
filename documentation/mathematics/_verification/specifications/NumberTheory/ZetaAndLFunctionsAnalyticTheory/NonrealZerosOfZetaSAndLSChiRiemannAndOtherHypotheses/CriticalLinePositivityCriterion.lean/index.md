@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLinePositivityCriterion.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLinePositivityCriterion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLinePositivityCriterion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLinePositivityCriterion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalLineDefect`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLineDefect.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.WeilPositiveLimitCore`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilPositiveLimitCore.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalLineDefect`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLineDefect.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.WeilPositiveLimitCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilPositiveLimitCore.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CriticalLineTest](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLinePositivityCriterion.lean/declarations/criticallinetest.md) | 25 | `declaration-track:9248474fd92f0b421591cf841bceda3fabbbf83789ca7069210e40ee6bbf85a2` |
-| 2 | `def` | [criticalLineDefectForm](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLinePositivityCriterion.lean/declarations/criticallinedefectform.md) | 28 | `declaration-track:59a6fd1b7068c4696f75c5337a40656360ca380541b08de7766c045580fe9ad9` |
-| 3 | `theorem` | [criticalLineDefectForm_diagonal](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLinePositivityCriterion.lean/declarations/criticallinedefectform-diagonal.md) | 32 | `result-track:f34aa9cfd9f135e3c2f1c12d880ae160810d3aa86c31002b104f00d33889acc7` |
-| 4 | `theorem` | [criticalLineDefectPositivity_iff_rh](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLinePositivityCriterion.lean/declarations/criticallinedefectpositivity-iff-rh.md) | 39 | `result-track:6204be477d15efb7bc8a70183bd7d246d3961ded83caf48f09e23069f934a549` |
-| 5 | `theorem` | [criticalLineDefectCriterion](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLinePositivityCriterion.lean/declarations/criticallinedefectcriterion.md) | 55 | `result-track:e0ff7c1e712df4f395050aa155581fe17e2afee0a3d1bb3d737465976bf09a3a` |
-| 6 | `theorem` | [riemannHypothesis_of_criticalLineDefectPositiveLimit](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLinePositivityCriterion.lean/declarations/riemannhypothesis-of-criticallinedefectpositivelimit.md) | 62 | `result-track:ce49ee63c33b2c858bf564b693156d39895e1f39fb6c33320d9968de414527fe` |
+| 1 | `def` | [CriticalLineTest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLinePositivityCriterion.lean/declarations/criticallinetest.md) | 25 | `declaration-track:9248474fd92f0b421591cf841bceda3fabbbf83789ca7069210e40ee6bbf85a2` |
+| 2 | `def` | [criticalLineDefectForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLinePositivityCriterion.lean/declarations/criticallinedefectform.md) | 28 | `declaration-track:59a6fd1b7068c4696f75c5337a40656360ca380541b08de7766c045580fe9ad9` |
+| 3 | `theorem` | [criticalLineDefectForm_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLinePositivityCriterion.lean/declarations/criticallinedefectform-diagonal.md) | 32 | `result-track:f34aa9cfd9f135e3c2f1c12d880ae160810d3aa86c31002b104f00d33889acc7` |
+| 4 | `theorem` | [criticalLineDefectPositivity_iff_rh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLinePositivityCriterion.lean/declarations/criticallinedefectpositivity-iff-rh.md) | 39 | `result-track:6204be477d15efb7bc8a70183bd7d246d3961ded83caf48f09e23069f934a549` |
+| 5 | `theorem` | [criticalLineDefectCriterion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLinePositivityCriterion.lean/declarations/criticallinedefectcriterion.md) | 55 | `result-track:e0ff7c1e712df4f395050aa155581fe17e2afee0a3d1bb3d737465976bf09a3a` |
+| 6 | `theorem` | [riemannHypothesis_of_criticalLineDefectPositiveLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalLinePositivityCriterion.lean/declarations/riemannhypothesis-of-criticallinedefectpositivelimit.md) | 62 | `result-track:ce49ee63c33b2c858bf564b693156d39895e1f39fb6c33320d9968de414527fe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:223a5e5e5629dcb4f8f42ecde125ec8eb345cc58bb8d515657b91dcd29571133` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 35 | `declaration-track:ef8320efcd8140b6e64c1b75e52a34af1d131963de325b5057d792abb4b485bb` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerNamespacedPublic.lean/declarations/instance.md) | 60 | `declaration-track:17a0e84203eed733b8a9d1830e5797947c2a72a2d7a5557f5ed0c08cddf8de07` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 62 | `declaration-track:4ad5f949b38af444311e0f73ea5f285171b338d668bc96e75f7d0fa41517b972` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:223a5e5e5629dcb4f8f42ecde125ec8eb345cc58bb8d515657b91dcd29571133` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 35 | `declaration-track:ef8320efcd8140b6e64c1b75e52a34af1d131963de325b5057d792abb4b485bb` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerNamespacedPublic.lean/declarations/instance.md) | 60 | `declaration-track:17a0e84203eed733b8a9d1830e5797947c2a72a2d7a5557f5ed0c08cddf8de07` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 62 | `declaration-track:4ad5f949b38af444311e0f73ea5f285171b338d668bc96e75f7d0fa41517b972` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

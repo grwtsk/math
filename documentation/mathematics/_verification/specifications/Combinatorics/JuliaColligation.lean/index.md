@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/JuliaColligation.lean/index.md) · [Full source](../../../../Combinatorics/JuliaColligation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/JuliaColligation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/JuliaColligation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [JuliaColligation](../../../../Combinatorics/JuliaColligation.lean/declarations/juliacolligation.md) | 13 | `declaration-track:3b0bcc01b35f0d36d5dc611c4a1e30f24d40dab8e9938131a260ed41fe16d18b` |
+| 1 | `structure` | [JuliaColligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/JuliaColligation.lean/declarations/juliacolligation.md) | 13 | `declaration-track:3b0bcc01b35f0d36d5dc611c4a1e30f24d40dab8e9938131a260ed41fe16d18b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

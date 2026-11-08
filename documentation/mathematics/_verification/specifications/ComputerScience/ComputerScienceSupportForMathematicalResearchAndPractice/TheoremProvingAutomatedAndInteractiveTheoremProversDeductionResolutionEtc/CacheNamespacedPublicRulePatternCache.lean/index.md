@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CacheNamespacedPublicRulePatternCache.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CacheNamespacedPublicRulePatternCache.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CacheNamespacedPublicRulePatternCache.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CacheNamespacedPublicRulePatternCache.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [RulePatternCache.Entry](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CacheNamespacedPublicRulePatternCache.lean/declarations/rulepatterncache-entry.md) | 28 | `declaration-track:44eae786ed9e04d0b4773cded6ff53aff110510f29bb762bbcd50ad18183406b` |
-| 2 | `structure` | [RulePatternCache](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CacheNamespacedPublicRulePatternCache.lean/declarations/rulepatterncache.md) | 32 | `declaration-track:6c4675f4ef7d02d40b89112539ff04edff3f7b7e408c408f3536e7f1b29b525b` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CacheNamespacedPublicRulePatternCache.lean/declarations/instance.md) | 36 | `declaration-track:b1593999df1677b9b9dc4debe7b90433594023bbf7b5bcffd5d5fb76506b9021` |
+| 1 | `def` | [RulePatternCache.Entry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CacheNamespacedPublicRulePatternCache.lean/declarations/rulepatterncache-entry.md) | 28 | `declaration-track:44eae786ed9e04d0b4773cded6ff53aff110510f29bb762bbcd50ad18183406b` |
+| 2 | `structure` | [RulePatternCache](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CacheNamespacedPublicRulePatternCache.lean/declarations/rulepatterncache.md) | 32 | `declaration-track:6c4675f4ef7d02d40b89112539ff04edff3f7b7e408c408f3536e7f1b29b525b` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CacheNamespacedPublicRulePatternCache.lean/declarations/instance.md) | 36 | `declaration-track:b1593999df1677b9b9dc4debe7b90433594023bbf7b5bcffd5d5fb76506b9021` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

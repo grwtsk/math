@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Normalize.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Normalize.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Normalize.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Normalize.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Tree.nnf](../../../../../ComputerScience/AlgorithmsInComputerScience/Normalize.lean/declarations/tree-nnf.md) | 17 | `declaration-track:4098389e49d4f930591a2f632168a5f71c06a190fefb5fac334fc0d309ec8e13` |
-| 2 | `def` | [Tree.negNnf](../../../../../ComputerScience/AlgorithmsInComputerScience/Normalize.lean/declarations/tree-negnnf.md) | 31 | `declaration-track:c605e8f4b838c11bc5a31af8dabdd19a770a8210e6cc7e7493ae9dbc0d97aeec` |
-| 3 | `theorem` | [Tree.eval_nnf_and_negNnf](../../../../../ComputerScience/AlgorithmsInComputerScience/Normalize.lean/declarations/tree-eval-nnf-and-negnnf.md) | 47 | `result-track:e809d37bc5a8484d8087d03ffe511eb365f5d1214c3e38320f61b9712f5ba164` |
-| 4 | `theorem` | [Tree.eval_nnf](../../../../../ComputerScience/AlgorithmsInComputerScience/Normalize.lean/declarations/tree-eval-nnf.md) | 97 | `result-track:9013a59a00ae680664f6d61241053a734ac6ed586d5f4cc3494572e8f6146292` |
-| 5 | `theorem` | [Tree.eval_negNnf](../../../../../ComputerScience/AlgorithmsInComputerScience/Normalize.lean/declarations/tree-eval-negnnf.md) | 103 | `result-track:6ab4f6b4a301eb8248031562ae2af5536222a2f233305071469bf3ab2e63a89c` |
+| 1 | `def` | [Tree.nnf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Normalize.lean/declarations/tree-nnf.md) | 17 | `declaration-track:4098389e49d4f930591a2f632168a5f71c06a190fefb5fac334fc0d309ec8e13` |
+| 2 | `def` | [Tree.negNnf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Normalize.lean/declarations/tree-negnnf.md) | 31 | `declaration-track:c605e8f4b838c11bc5a31af8dabdd19a770a8210e6cc7e7493ae9dbc0d97aeec` |
+| 3 | `theorem` | [Tree.eval_nnf_and_negNnf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Normalize.lean/declarations/tree-eval-nnf-and-negnnf.md) | 47 | `result-track:e809d37bc5a8484d8087d03ffe511eb365f5d1214c3e38320f61b9712f5ba164` |
+| 4 | `theorem` | [Tree.eval_nnf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Normalize.lean/declarations/tree-eval-nnf.md) | 97 | `result-track:9013a59a00ae680664f6d61241053a734ac6ed586d5f4cc3494572e8f6146292` |
+| 5 | `theorem` | [Tree.eval_negNnf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Normalize.lean/declarations/tree-eval-negnnf.md) | 103 | `result-track:6ab4f6b4a301eb8248031562ae2af5536222a2f233305071469bf3ab2e63a89c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

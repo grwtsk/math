@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/InterpolationNamespacedLinear.lean/index.md) · [Full source](../../../../RealFunctions/InterpolationNamespacedLinear.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InterpolationNamespacedLinear.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InterpolationNamespacedLinear.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [linear](../../../../RealFunctions/InterpolationNamespacedLinear.lean/declarations/linear.md) | 19 | `declaration-track:3a788eba823560d62e3f3f2ecc9182b15699d364ac89c52accd3a5503b5d07c1` |
-| 2 | `theorem` | [left_endpoint](../../../../RealFunctions/InterpolationNamespacedLinear.lean/declarations/left-endpoint.md) | 22 | `result-track:dddb0a72a8a6a10f8a2bc90bbf7973508967dd782f4a3f936e15efcf30a73d3d` |
-| 3 | `theorem` | [right_endpoint](../../../../RealFunctions/InterpolationNamespacedLinear.lean/declarations/right-endpoint.md) | 26 | `result-track:af6a3dd0c0ac681ec5d97211ab1fc253e9ada74a79414a8161716a3b10364e8e` |
-| 4 | `def` | [exactLinear](../../../../RealFunctions/InterpolationNamespacedLinear.lean/declarations/exactlinear.md) | 30 | `declaration-track:8bad222d3d4cc977df738565a55dbc690a5b3f3fd634714da9a15d707c5ac5f0` |
-| 5 | `def` | [scalarLinear](../../../../RealFunctions/InterpolationNamespacedLinear.lean/declarations/scalarlinear.md) | 38 | `declaration-track:8867025b651706015fbd3739b69e96b5bb883db13ef2ac5889bb70ea1103f3ee` |
-| 6 | `theorem` | [monotone](../../../../RealFunctions/InterpolationNamespacedLinear.lean/declarations/monotone.md) | 41 | `result-track:c4e9154015f9d2d376ef23d2baa665b270b0ac55f423a71d83467cc7a62e4d7e` |
+| 1 | `def` | [linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InterpolationNamespacedLinear.lean/declarations/linear.md) | 19 | `declaration-track:3a788eba823560d62e3f3f2ecc9182b15699d364ac89c52accd3a5503b5d07c1` |
+| 2 | `theorem` | [left_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InterpolationNamespacedLinear.lean/declarations/left-endpoint.md) | 22 | `result-track:dddb0a72a8a6a10f8a2bc90bbf7973508967dd782f4a3f936e15efcf30a73d3d` |
+| 3 | `theorem` | [right_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InterpolationNamespacedLinear.lean/declarations/right-endpoint.md) | 26 | `result-track:af6a3dd0c0ac681ec5d97211ab1fc253e9ada74a79414a8161716a3b10364e8e` |
+| 4 | `def` | [exactLinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InterpolationNamespacedLinear.lean/declarations/exactlinear.md) | 30 | `declaration-track:8bad222d3d4cc977df738565a55dbc690a5b3f3fd634714da9a15d707c5ac5f0` |
+| 5 | `def` | [scalarLinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InterpolationNamespacedLinear.lean/declarations/scalarlinear.md) | 38 | `declaration-track:8867025b651706015fbd3739b69e96b5bb883db13ef2ac5889bb70ea1103f3ee` |
+| 6 | `theorem` | [monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InterpolationNamespacedLinear.lean/declarations/monotone.md) | 41 | `result-track:c4e9154015f9d2d376ef23d2baa665b270b0ac55f423a71d83467cc7a62e4d7e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,14 +61,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [one_le_dite](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/declarations/one-le-dite.md) | 22 | `result-track:f02f2842b1df0a4b0dc1b4d253576906730113efaf82b7883918ef36d74a52a9` |
-| 2 | `lemma` | [dite_le_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/declarations/dite-le-one.md) | 26 | `result-track:092d790820eedf584eddeef5b690fdf0012728beb8f8a91b731567501bfb14df` |
-| 3 | `lemma` | [one_lt_dite](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/declarations/one-lt-dite.md) | 30 | `result-track:ee535d26a2ab88194341f27c54642fb84977a428abb439af1227d59f8095f4bd` |
-| 4 | `lemma` | [dite_lt_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/declarations/dite-lt-one.md) | 34 | `result-track:85b01683b4833519af51cd51b1390ba642fbefa2878e64c6c57790cc75acdd09` |
-| 5 | `lemma` | [one_le_ite](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/declarations/one-le-ite.md) | 43 | `result-track:f0d82b666bac29fbb9738f40e4f1e7eb82c0fc97f2979089073a63aeb632cd92` |
-| 6 | `lemma` | [ite_le_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/declarations/ite-le-one.md) | 46 | `result-track:4b620e43169862d9f7a7eaa1fc34f901c81053ea62f1cb343db6baaca48e60ce` |
-| 7 | `lemma` | [one_lt_ite](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/declarations/one-lt-ite.md) | 49 | `result-track:f67a8787116f3e5b6d5fa52fbecb07db2ca849a9062d48e25577a838d2013b68` |
-| 8 | `lemma` | [ite_lt_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/declarations/ite-lt-one.md) | 52 | `result-track:91e086b34e5ce9ff93c9b55c96d81e30f4aef4a1d992d6065672bd3eab840486` |
+| 1 | `lemma` | [one_le_dite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/declarations/one-le-dite.md) | 22 | `result-track:f02f2842b1df0a4b0dc1b4d253576906730113efaf82b7883918ef36d74a52a9` |
+| 2 | `lemma` | [dite_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/declarations/dite-le-one.md) | 26 | `result-track:092d790820eedf584eddeef5b690fdf0012728beb8f8a91b731567501bfb14df` |
+| 3 | `lemma` | [one_lt_dite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/declarations/one-lt-dite.md) | 30 | `result-track:ee535d26a2ab88194341f27c54642fb84977a428abb439af1227d59f8095f4bd` |
+| 4 | `lemma` | [dite_lt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/declarations/dite-lt-one.md) | 34 | `result-track:85b01683b4833519af51cd51b1390ba642fbefa2878e64c6c57790cc75acdd09` |
+| 5 | `lemma` | [one_le_ite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/declarations/one-le-ite.md) | 43 | `result-track:f0d82b666bac29fbb9738f40e4f1e7eb82c0fc97f2979089073a63aeb632cd92` |
+| 6 | `lemma` | [ite_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/declarations/ite-le-one.md) | 46 | `result-track:4b620e43169862d9f7a7eaa1fc34f901c81053ea62f1cb343db6baaca48e60ce` |
+| 7 | `lemma` | [one_lt_ite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/declarations/one-lt-ite.md) | 49 | `result-track:f67a8787116f3e5b6d5fa52fbecb07db2ca849a9062d48e25577a838d2013b68` |
+| 8 | `lemma` | [ite_lt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NotationLemmas.lean/declarations/ite-lt-one.md) | 52 | `result-track:91e086b34e5ce9ff93c9b55c96d81e30f4aef4a1d992d6065672bd3eab840486` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/EulerFunctionPublic.lean/index.md) · [Full source](../../../../Combinatorics/EulerFunctionPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerFunctionPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerFunctionPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [pow_mul_prod_bound](../../../../Combinatorics/EulerFunctionPublic.lean/declarations/pow-mul-prod-bound.md) | 43 | `result-track:2a41293a8e0666cb1d4947b39c26229cd4928cf2465c4604f914789e6c082001` |
-| 2 | `lemma` | [summable_norm_pow_mul_prod](../../../../Combinatorics/EulerFunctionPublic.lean/declarations/summable-norm-pow-mul-prod.md) | 55 | `result-track:7d12f8885cbd4b418fe21765c8ae571e4992aff76c7a0b6275ce36576f2bb10d` |
-| 3 | `lemma` | [tsum_pow_mul_prod_bound](../../../../Combinatorics/EulerFunctionPublic.lean/declarations/tsum-pow-mul-prod-bound.md) | 63 | `result-track:b374871a76c596256f5f0a8fa3391fe61f6656697e114182b62290fe33557db8` |
-| 4 | `lemma` | [multipliable_one_sub_pow_add](../../../../Combinatorics/EulerFunctionPublic.lean/declarations/multipliable-one-sub-pow-add.md) | 74 | `result-track:fb35f56c94b5519d37fb1ccef2ec36ad18e90e8a370e9cc9b9fc9ac0c090aa17` |
-| 5 | `def` | [eulerFunction](../../../../Combinatorics/EulerFunctionPublic.lean/declarations/eulerfunction.md) | 88 | `declaration-track:51512b3e9a43a912f0520f4c5ce7cbf599dc97c3f24ad66627c8457381ddd824` |
-| 6 | `theorem` | [eulerFunction_def](../../../../Combinatorics/EulerFunctionPublic.lean/declarations/eulerfunction-def.md) | 92 | `result-track:ea3e1ae3a7b81a7d77bda363b0c40697acc5510056d4fe18e2a85f2224a4b687` |
-| 7 | `theorem` | [eulerFunction_eq_tsum_pentagonal](../../../../Combinatorics/EulerFunctionPublic.lean/declarations/eulerfunction-eq-tsum-pentagonal.md) | 97 | `result-track:3d06f89b8ec720a13198f3f218d3c87beecfdd230bcca814ffdfe9e53593ce89` |
-| 8 | `theorem` | [hasSum_eulerFunction_pentagonalSeries](../../../../Combinatorics/EulerFunctionPublic.lean/declarations/hassum-eulerfunction-pentagonalseries.md) | 103 | `result-track:ec0b1e7b22f6cffde759141ed7200e08e6f4f1fa02eb62935375e11bcc071843` |
-| 9 | `theorem` | [hasSum_eulerFunction_pentagonal](../../../../Combinatorics/EulerFunctionPublic.lean/declarations/hassum-eulerfunction-pentagonal.md) | 114 | `result-track:6d64705e85bf30756bb2be3b4de5b9f2044da488d4c068006b8d86fd58a5d243` |
-| 10 | `theorem` | [hasSum_eulerFunction_pentagonal_pair](../../../../Combinatorics/EulerFunctionPublic.lean/declarations/hassum-eulerfunction-pentagonal-pair.md) | 119 | `result-track:6bc649eac54c3fdff1b3b223e1d233721187de50ba84c7eaedb1331854561333` |
-| 11 | `theorem` | [eulerFunction_eq_tsum_pentagonal_pair](../../../../Combinatorics/EulerFunctionPublic.lean/declarations/eulerfunction-eq-tsum-pentagonal-pair.md) | 128 | `result-track:b52568996480610e178549d91c608d156c14809fd142620aa8ad1ad59ad47d56` |
-| 12 | `theorem` | [eulerFunction_eq_tprod](../../../../Combinatorics/EulerFunctionPublic.lean/declarations/eulerfunction-eq-tprod.md) | 134 | `result-track:22a0b49e36f96c021cb00e32c8178689f9b1a8f786fa7d35a778feb0be0cf0f8` |
-| 13 | `theorem` | [hasProd_eulerFunction](../../../../Combinatorics/EulerFunctionPublic.lean/declarations/hasprod-eulerfunction.md) | 151 | `result-track:b0b2f04c67ef8175a7c8ddf50358e11fddbc5b1248e5e3457f916035a1b53a29` |
+| 1 | `lemma` | [pow_mul_prod_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerFunctionPublic.lean/declarations/pow-mul-prod-bound.md) | 43 | `result-track:2a41293a8e0666cb1d4947b39c26229cd4928cf2465c4604f914789e6c082001` |
+| 2 | `lemma` | [summable_norm_pow_mul_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerFunctionPublic.lean/declarations/summable-norm-pow-mul-prod.md) | 55 | `result-track:7d12f8885cbd4b418fe21765c8ae571e4992aff76c7a0b6275ce36576f2bb10d` |
+| 3 | `lemma` | [tsum_pow_mul_prod_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerFunctionPublic.lean/declarations/tsum-pow-mul-prod-bound.md) | 63 | `result-track:b374871a76c596256f5f0a8fa3391fe61f6656697e114182b62290fe33557db8` |
+| 4 | `lemma` | [multipliable_one_sub_pow_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerFunctionPublic.lean/declarations/multipliable-one-sub-pow-add.md) | 74 | `result-track:fb35f56c94b5519d37fb1ccef2ec36ad18e90e8a370e9cc9b9fc9ac0c090aa17` |
+| 5 | `def` | [eulerFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerFunctionPublic.lean/declarations/eulerfunction.md) | 88 | `declaration-track:51512b3e9a43a912f0520f4c5ce7cbf599dc97c3f24ad66627c8457381ddd824` |
+| 6 | `theorem` | [eulerFunction_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerFunctionPublic.lean/declarations/eulerfunction-def.md) | 92 | `result-track:ea3e1ae3a7b81a7d77bda363b0c40697acc5510056d4fe18e2a85f2224a4b687` |
+| 7 | `theorem` | [eulerFunction_eq_tsum_pentagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerFunctionPublic.lean/declarations/eulerfunction-eq-tsum-pentagonal.md) | 97 | `result-track:3d06f89b8ec720a13198f3f218d3c87beecfdd230bcca814ffdfe9e53593ce89` |
+| 8 | `theorem` | [hasSum_eulerFunction_pentagonalSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerFunctionPublic.lean/declarations/hassum-eulerfunction-pentagonalseries.md) | 103 | `result-track:ec0b1e7b22f6cffde759141ed7200e08e6f4f1fa02eb62935375e11bcc071843` |
+| 9 | `theorem` | [hasSum_eulerFunction_pentagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerFunctionPublic.lean/declarations/hassum-eulerfunction-pentagonal.md) | 114 | `result-track:6d64705e85bf30756bb2be3b4de5b9f2044da488d4c068006b8d86fd58a5d243` |
+| 10 | `theorem` | [hasSum_eulerFunction_pentagonal_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerFunctionPublic.lean/declarations/hassum-eulerfunction-pentagonal-pair.md) | 119 | `result-track:6bc649eac54c3fdff1b3b223e1d233721187de50ba84c7eaedb1331854561333` |
+| 11 | `theorem` | [eulerFunction_eq_tsum_pentagonal_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerFunctionPublic.lean/declarations/eulerfunction-eq-tsum-pentagonal-pair.md) | 128 | `result-track:b52568996480610e178549d91c608d156c14809fd142620aa8ad1ad59ad47d56` |
+| 12 | `theorem` | [eulerFunction_eq_tprod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerFunctionPublic.lean/declarations/eulerfunction-eq-tprod.md) | 134 | `result-track:22a0b49e36f96c021cb00e32c8178689f9b1a8f786fa7d35a778feb0be0cf0f8` |
+| 13 | `theorem` | [hasProd_eulerFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerFunctionPublic.lean/declarations/hasprod-eulerfunction.md) | 151 | `result-track:b0b2f04c67ef8175a7c8ddf50358e11fddbc5b1248e5e3457f916035a1b53a29` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

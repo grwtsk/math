@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/ModularPhaseQuantizerAndPointwiseMap.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/ModularPhaseQuantizerAndPointwiseMap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModularPhaseQuantizerAndPointwiseMap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModularPhaseQuantizerAndPointwiseMap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Cellular.Cube` — import line 19; external provider; requires a separately pinned dependency.
-- [Bounded Vertex Fields And Supplied Time Maps](../../../../RealFunctions/BoundedVertexFieldsAndSuppliedTimeMaps.lean/index.md) — import line 21; pinned internal source present.
+- [Bounded Vertex Fields And Supplied Time Maps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BoundedVertexFieldsAndSuppliedTimeMaps.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Phase](../../../../AssociativeRingsAndAlgebras/ModularPhaseQuantizerAndPointwiseMap.lean/declarations/phase.md) | 39 | `declaration-track:4837a507f943773e029223d511fec1a4b9b49c79810d2002663a0864fa4ff189` |
-| 2 | `structure` | [PhaseQuantizer](../../../../AssociativeRingsAndAlgebras/ModularPhaseQuantizerAndPointwiseMap.lean/declarations/phasequantizer.md) | 41 | `declaration-track:04af53b5a9161f3abf6325a1f01bd914db8341c9cfb9d96a338c901b8a267b49` |
-| 3 | `def` | [quantizedField](../../../../AssociativeRingsAndAlgebras/ModularPhaseQuantizerAndPointwiseMap.lean/declarations/quantizedfield.md) | 44 | `declaration-track:849a6538f0f427d878d8a69732f8836e6ca743c1fd7129bcee285b1f244f3ff0` |
+| 1 | `abbrev` | [Phase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModularPhaseQuantizerAndPointwiseMap.lean/declarations/phase.md) | 39 | `declaration-track:4837a507f943773e029223d511fec1a4b9b49c79810d2002663a0864fa4ff189` |
+| 2 | `structure` | [PhaseQuantizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModularPhaseQuantizerAndPointwiseMap.lean/declarations/phasequantizer.md) | 41 | `declaration-track:04af53b5a9161f3abf6325a1f01bd914db8341c9cfb9d96a338c901b8a267b49` |
+| 3 | `def` | [quantizedField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModularPhaseQuantizerAndPointwiseMap.lean/declarations/quantizedfield.md) | 44 | `declaration-track:849a6538f0f427d878d8a69732f8836e6ca743c1fd7129bcee285b1f244f3ff0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

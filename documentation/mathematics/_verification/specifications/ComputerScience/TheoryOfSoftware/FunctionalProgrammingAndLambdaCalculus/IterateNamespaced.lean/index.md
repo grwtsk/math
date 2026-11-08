@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IterateNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IterateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IterateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IterateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [hIterateFrom](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IterateNamespaced.lean/declarations/hiteratefrom.md) | 25 | `declaration-track:2d969f2c75b5dab72d947969f4f60c4b5d64c726d9628087c08f0c914aaf6fbf` |
-| 2 | `def` | [hIterate](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IterateNamespaced.lean/declarations/hiterate.md) | 50 | `declaration-track:5490a035ed25cf18914b5fd52e5cf91cd927ce12b8bdbf1db60ff18d056feccd` |
-| 3 | `theorem` | [hIterateFrom_elim](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IterateNamespaced.lean/declarations/hiteratefrom-elim.md) | 54 | `result-track:6d8702f02acb3ba78efe91c4dc01d46d9071863079ca2248e0ff175435437c85` |
-| 4 | `theorem` | [hIterate_elim](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IterateNamespaced.lean/declarations/hiterate-elim.md) | 82 | `result-track:0d9ad677af51b9c378dc1470e1d49ce8889e1c7280bac474779185e168f9b001` |
-| 5 | `theorem` | [hIterate_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IterateNamespaced.lean/declarations/hiterate-eq.md) | 95 | `result-track:7d263b50e63747b2bacb59bcd28bab5747bd1c5430589a6e756fd20f4ea1d693` |
+| 1 | `def` | [hIterateFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IterateNamespaced.lean/declarations/hiteratefrom.md) | 25 | `declaration-track:2d969f2c75b5dab72d947969f4f60c4b5d64c726d9628087c08f0c914aaf6fbf` |
+| 2 | `def` | [hIterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IterateNamespaced.lean/declarations/hiterate.md) | 50 | `declaration-track:5490a035ed25cf18914b5fd52e5cf91cd927ce12b8bdbf1db60ff18d056feccd` |
+| 3 | `theorem` | [hIterateFrom_elim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IterateNamespaced.lean/declarations/hiteratefrom-elim.md) | 54 | `result-track:6d8702f02acb3ba78efe91c4dc01d46d9071863079ca2248e0ff175435437c85` |
+| 4 | `theorem` | [hIterate_elim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IterateNamespaced.lean/declarations/hiterate-elim.md) | 82 | `result-track:0d9ad677af51b9c378dc1470e1d49ce8889e1c7280bac474779185e168f9b001` |
+| 5 | `theorem` | [hIterate_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IterateNamespaced.lean/declarations/hiterate-eq.md) | 95 | `result-track:7d263b50e63747b2bacb59bcd28bab5747bd1c5430589a6e756fd20f4ea1d693` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

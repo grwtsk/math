@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SmallNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SmallNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmallNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmallNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -65,17 +65,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [small_sup](../../../../CommutativeAlgebra/SmallNamespaced.lean/declarations/small-sup.md) | 32 | `declaration-track:5854e1edfcab95e450434f925fcc9560583b0a18d338055451b95f43fc0c92f4` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/SmallNamespaced.lean/declarations/instance-source-edition-2.md) | 37 | `declaration-track:855c0a4beda38e5d9015f1917b1f949de93b3512d769b285f8cbf74217ae9b49` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/SmallNamespaced.lean/declarations/instance.md) | 45 | `declaration-track:3b24412123d500031c814c75903f21ce74ec7fa0bc2d0c5ec297ff19965c5d68` |
-| 4 | `instance` | [small_iSup](../../../../CommutativeAlgebra/SmallNamespaced.lean/declarations/small-isup.md) | 48 | `declaration-track:57ddc3863d10f7e6251cd936cad6edf6d17c964e319e4e44c060da712234e9a3` |
-| 5 | `theorem` | [FG.small](../../../../CommutativeAlgebra/SmallNamespaced.lean/declarations/fg-small.md) | 55 | `result-track:4abf887d4e781f53fc7d05bf07d9484a31b04f4db5889c2dd21e7c93a49578a6` |
-| 6 | `theorem` | [Small Namespaced](../../../../CommutativeAlgebra/SmallNamespaced.lean/declarations/small-source-line-62-occurrence-2.md) | 62 | `result-track:a8b758f8fb756fc06f9332d00f4dc744639b1e56c915bb6fe4d6a1b823f176c1` |
-| 7 | `instance` | [small_span_singleton](../../../../CommutativeAlgebra/SmallNamespaced.lean/declarations/small-span-singleton.md) | 67 | `declaration-track:476f0f817fdcf31c0c8efc9c06cff78bb7324696ef096c87d2093170fa9a04bb` |
-| 8 | `theorem` | [small_span](../../../../CommutativeAlgebra/SmallNamespaced.lean/declarations/small-span.md) | 70 | `result-track:6ded6f1641eb92ab4066181837e938c072d2558fd14e1c29a3c28b1ed1a1b5ce` |
-| 9 | `instance` | [small_adjoin](../../../../CommutativeAlgebra/SmallNamespaced.lean/declarations/small-adjoin.md) | 85 | `declaration-track:7c0113f9951831bb512f42484e884ec436514c6ef21e5beed37743bb06a5436e` |
-| 10 | `theorem` | [Small Namespaced](../../../../CommutativeAlgebra/SmallNamespaced.lean/declarations/small.md) | 90 | `result-track:8058a13acea95dd49fecf526ba9e2ecfc75877e50aeb2f3435b18f08c2b56619` |
-| 11 | `theorem` | [FiniteType.small](../../../../CommutativeAlgebra/SmallNamespaced.lean/declarations/finitetype-small.md) | 95 | `result-track:bc775b8727903f7a6c861d1ccab7273bc68414d4a6870bd4c94b8056f2af3000` |
+| 1 | `instance` | [small_sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmallNamespaced.lean/declarations/small-sup.md) | 32 | `declaration-track:5854e1edfcab95e450434f925fcc9560583b0a18d338055451b95f43fc0c92f4` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmallNamespaced.lean/declarations/instance-source-edition-2.md) | 37 | `declaration-track:855c0a4beda38e5d9015f1917b1f949de93b3512d769b285f8cbf74217ae9b49` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmallNamespaced.lean/declarations/instance.md) | 45 | `declaration-track:3b24412123d500031c814c75903f21ce74ec7fa0bc2d0c5ec297ff19965c5d68` |
+| 4 | `instance` | [small_iSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmallNamespaced.lean/declarations/small-isup.md) | 48 | `declaration-track:57ddc3863d10f7e6251cd936cad6edf6d17c964e319e4e44c060da712234e9a3` |
+| 5 | `theorem` | [FG.small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmallNamespaced.lean/declarations/fg-small.md) | 55 | `result-track:4abf887d4e781f53fc7d05bf07d9484a31b04f4db5889c2dd21e7c93a49578a6` |
+| 6 | `theorem` | [Small Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmallNamespaced.lean/declarations/small-source-line-62-occurrence-2.md) | 62 | `result-track:a8b758f8fb756fc06f9332d00f4dc744639b1e56c915bb6fe4d6a1b823f176c1` |
+| 7 | `instance` | [small_span_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmallNamespaced.lean/declarations/small-span-singleton.md) | 67 | `declaration-track:476f0f817fdcf31c0c8efc9c06cff78bb7324696ef096c87d2093170fa9a04bb` |
+| 8 | `theorem` | [small_span](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmallNamespaced.lean/declarations/small-span.md) | 70 | `result-track:6ded6f1641eb92ab4066181837e938c072d2558fd14e1c29a3c28b1ed1a1b5ce` |
+| 9 | `instance` | [small_adjoin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmallNamespaced.lean/declarations/small-adjoin.md) | 85 | `declaration-track:7c0113f9951831bb512f42484e884ec436514c6ef21e5beed37743bb06a5436e` |
+| 10 | `theorem` | [Small Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmallNamespaced.lean/declarations/small.md) | 90 | `result-track:8058a13acea95dd49fecf526ba9e2ecfc75877e50aeb2f3435b18f08c2b56619` |
+| 11 | `theorem` | [FiniteType.small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmallNamespaced.lean/declarations/finitetype-small.md) | 95 | `result-track:bc775b8727903f7a6c861d1ccab7273bc68414d4a6870bd4c94b8056f2af3000` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

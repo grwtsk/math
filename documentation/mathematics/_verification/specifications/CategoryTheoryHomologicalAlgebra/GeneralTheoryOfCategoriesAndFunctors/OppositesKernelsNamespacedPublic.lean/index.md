@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CokernelCofork.IsColimit.ofπOp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsNamespacedPublic.lean/declarations/cokernelcofork-iscolimit-of-op.md) | 46 | `declaration-track:6074048aeb1c4ae6c6138a68cc5fddf68c67a6417be788487fb96c39c1652ee2` |
-| 2 | `def` | [CokernelCofork.IsColimit.ofπUnop](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsNamespacedPublic.lean/declarations/cokernelcofork-iscolimit-of-unop.md) | 57 | `declaration-track:465413774694b1f54148c3ec76ef14d90059ef28eca2930cd95ba7744f83a57b` |
-| 3 | `def` | [KernelFork.IsLimit.ofιOp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsNamespacedPublic.lean/declarations/kernelfork-islimit-of-op.md) | 67 | `declaration-track:5a21032116bbceac326c44f33c664e44e9acee86e77072cd819dddf62ffefc7b` |
-| 4 | `def` | [KernelFork.IsLimit.ofιUnop](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsNamespacedPublic.lean/declarations/kernelfork-islimit-of-unop.md) | 79 | `declaration-track:ff8fb76d648705d5458720fb1cd6339e77c1338a3d3e7df0a3bc2bfedefbe1cb` |
+| 1 | `def` | [CokernelCofork.IsColimit.ofπOp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsNamespacedPublic.lean/declarations/cokernelcofork-iscolimit-of-op.md) | 46 | `declaration-track:6074048aeb1c4ae6c6138a68cc5fddf68c67a6417be788487fb96c39c1652ee2` |
+| 2 | `def` | [CokernelCofork.IsColimit.ofπUnop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsNamespacedPublic.lean/declarations/cokernelcofork-iscolimit-of-unop.md) | 57 | `declaration-track:465413774694b1f54148c3ec76ef14d90059ef28eca2930cd95ba7744f83a57b` |
+| 3 | `def` | [KernelFork.IsLimit.ofιOp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsNamespacedPublic.lean/declarations/kernelfork-islimit-of-op.md) | 67 | `declaration-track:5a21032116bbceac326c44f33c664e44e9acee86e77072cd819dddf62ffefc7b` |
+| 4 | `def` | [KernelFork.IsLimit.ofιUnop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesKernelsNamespacedPublic.lean/declarations/kernelfork-islimit-of-unop.md) | 79 | `declaration-track:ff8fb76d648705d5458720fb1cd6339e77c1338a3d3e7df0a3bc2bfedefbe1cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

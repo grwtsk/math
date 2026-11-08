@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryBalanced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryBalanced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryBalanced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryBalanced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Balanced](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryBalanced.lean/declarations/balanced.md) | 31 | `declaration-track:4526b9e2ddf8c01237c5627cb4614a26c23730849c77836829a78a4cb1294cda` |
-| 2 | `theorem` | [isIso_of_mono_of_epi](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryBalanced.lean/declarations/isiso-of-mono-of-epi.md) | 36 | `result-track:4a10861ebc77cc467283dcacc64e08dc25f0fe5c5a34469136f60c5419c6da02` |
-| 3 | `theorem` | [isIso_iff_mono_and_epi](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryBalanced.lean/declarations/isiso-iff-mono-and-epi.md) | 39 | `result-track:ab46e66af80e19f68f7d6564f2b598de0f3050e837405df005b73280f900ab1e` |
-| 4 | `instance` | [balanced_opposite](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryBalanced.lean/declarations/balanced-opposite.md) | 46 | `declaration-track:a200f84e7199966aeb9deccc8686d57b48e944b79a9e0853ed5450ad99fe6e57` |
+| 1 | `class` | [Balanced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryBalanced.lean/declarations/balanced.md) | 31 | `declaration-track:4526b9e2ddf8c01237c5627cb4614a26c23730849c77836829a78a4cb1294cda` |
+| 2 | `theorem` | [isIso_of_mono_of_epi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryBalanced.lean/declarations/isiso-of-mono-of-epi.md) | 36 | `result-track:4a10861ebc77cc467283dcacc64e08dc25f0fe5c5a34469136f60c5419c6da02` |
+| 3 | `theorem` | [isIso_iff_mono_and_epi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryBalanced.lean/declarations/isiso-iff-mono-and-epi.md) | 39 | `result-track:ab46e66af80e19f68f7d6564f2b598de0f3050e837405df005b73280f900ab1e` |
+| 4 | `instance` | [balanced_opposite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryBalanced.lean/declarations/balanced-opposite.md) | 46 | `declaration-track:a200f84e7199966aeb9deccc8686d57b48e944b79a9e0853ed5450ad99fe6e57` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

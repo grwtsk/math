@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/IntercalatePublicIter.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/IntercalatePublicIter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IntercalatePublicIter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IntercalatePublicIter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Iter.joinString](../../../../../ComputerScience/AlgorithmsInComputerScience/IntercalatePublicIter.lean/declarations/iter-joinstring.md) | 21 | `declaration-track:ccefdd0a52c6dec6b7ef70ec85152c4b707fe986aed81094fe8948f5580ad1f3` |
-| 2 | `def` | [Iter.intercalateString](../../../../../ComputerScience/AlgorithmsInComputerScience/IntercalatePublicIter.lean/declarations/iter-intercalatestring.md) | 29 | `declaration-track:518223f28770abcac880e324cb18df39427d353e36d2a3985adf149756523344` |
+| 1 | `def` | [Iter.joinString](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IntercalatePublicIter.lean/declarations/iter-joinstring.md) | 21 | `declaration-track:ccefdd0a52c6dec6b7ef70ec85152c4b707fe986aed81094fe8948f5580ad1f3` |
+| 2 | `def` | [Iter.intercalateString](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IntercalatePublicIter.lean/declarations/iter-intercalatestring.md) | 29 | `declaration-track:518223f28770abcac880e324cb18df39427d353e36d2a3985adf149756523344` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

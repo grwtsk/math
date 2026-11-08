@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Support.lean/index.md) · [Full source](../../../../RealFunctions/Support.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Support.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Support.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [support_deriv_subset](../../../../RealFunctions/Support.lean/declarations/support-deriv-subset.md) | 34 | `result-track:cca79f13a501c16601b761acec7cb8edbe13b726a6d6d4e3c1accf0056859af2` |
-| 2 | `theorem` | [HasCompactSupport.deriv](../../../../RealFunctions/Support.lean/declarations/hascompactsupport-deriv.md) | 41 | `result-track:8955589c0b3480b8bba23fcefba3c8add461cb7f325ca84996b2c9279ad4f2f4` |
+| 1 | `theorem` | [support_deriv_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Support.lean/declarations/support-deriv-subset.md) | 34 | `result-track:cca79f13a501c16601b761acec7cb8edbe13b726a6d6d4e3c1accf0056859af2` |
+| 2 | `theorem` | [HasCompactSupport.deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Support.lean/declarations/hascompactsupport-deriv.md) | 41 | `result-track:8955589c0b3480b8bba23fcefba3c8add461cb7f325ca84996b2c9279ad4f2f4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

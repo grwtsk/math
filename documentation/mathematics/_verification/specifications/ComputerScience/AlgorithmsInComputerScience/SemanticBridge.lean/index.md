@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [BridgeDependencyDomain](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/declarations/bridgedependencydomain.md) | 19 | `declaration-track:ef62b1f832b4adab4db050969190803ffe7332bb8947c06160f4796f563c42f6` |
-| 2 | `structure` | [BridgeDependency](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/declarations/bridgedependency.md) | 25 | `declaration-track:26dd23df938d3d65abf9269fe2e5a0a33cc79a5b5fcfb89745a63b099a67722b` |
-| 3 | `inductive` | [TensorDerivedSEAProof](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/declarations/tensorderivedseaproof.md) | 31 | `declaration-track:64a37db25d1c6e12a61a27b1b7e07857dd8a4a117b303de12b966b5fe9eea622` |
-| 4 | `theorem` | [no_tensor_derived_sea_proof](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/declarations/no-tensor-derived-sea-proof.md) | 33 | `result-track:8e11f4be7fcd55eee39ac1387db7234cfb89fee9be1f24358ccbe8989fe58c46` |
-| 5 | `structure` | [SEAContextBridgeCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/declarations/seacontextbridgecertificate.md) | 38 | `declaration-track:e2286251051886a0f49bf131df0d8f4144c1cae38cc3aa867f54a26902bb16b1` |
-| 6 | `def` | [CertifiedSEAContextBridge](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/declarations/certifiedseacontextbridge.md) | 67 | `declaration-track:d336f1696045f7ada6f5396e369fdf65a703fddfb071fb0e58bc0b99ce1fed9e` |
-| 7 | `theorem` | [SEAContextBridgeCertificate.certified](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/declarations/seacontextbridgecertificate-certified.md) | 84 | `result-track:9241cec350b9fb263e4bcf11218fa6d49b12683bb26adcf404115126be949e37` |
-| 8 | `theorem` | [gauge_change_preserves_sea_result](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/declarations/gauge-change-preserves-sea-result.md) | 102 | `result-track:f60f4194b46f8fc1aab3d7cb0697ef8704afeaa20128f002d0650a1a9c41e4f5` |
-| 9 | `theorem` | [anchor_rebirth_preserves_sea_receipt](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/declarations/anchor-rebirth-preserves-sea-receipt.md) | 110 | `result-track:7be0f26361197023721c15d868f36e05af5b612f444d7fa191db739cb42ca2f9` |
+| 1 | `inductive` | [BridgeDependencyDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/declarations/bridgedependencydomain.md) | 19 | `declaration-track:ef62b1f832b4adab4db050969190803ffe7332bb8947c06160f4796f563c42f6` |
+| 2 | `structure` | [BridgeDependency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/declarations/bridgedependency.md) | 25 | `declaration-track:26dd23df938d3d65abf9269fe2e5a0a33cc79a5b5fcfb89745a63b099a67722b` |
+| 3 | `inductive` | [TensorDerivedSEAProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/declarations/tensorderivedseaproof.md) | 31 | `declaration-track:64a37db25d1c6e12a61a27b1b7e07857dd8a4a117b303de12b966b5fe9eea622` |
+| 4 | `theorem` | [no_tensor_derived_sea_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/declarations/no-tensor-derived-sea-proof.md) | 33 | `result-track:8e11f4be7fcd55eee39ac1387db7234cfb89fee9be1f24358ccbe8989fe58c46` |
+| 5 | `structure` | [SEAContextBridgeCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/declarations/seacontextbridgecertificate.md) | 38 | `declaration-track:e2286251051886a0f49bf131df0d8f4144c1cae38cc3aa867f54a26902bb16b1` |
+| 6 | `def` | [CertifiedSEAContextBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/declarations/certifiedseacontextbridge.md) | 67 | `declaration-track:d336f1696045f7ada6f5396e369fdf65a703fddfb071fb0e58bc0b99ce1fed9e` |
+| 7 | `theorem` | [SEAContextBridgeCertificate.certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/declarations/seacontextbridgecertificate-certified.md) | 84 | `result-track:9241cec350b9fb263e4bcf11218fa6d49b12683bb26adcf404115126be949e37` |
+| 8 | `theorem` | [gauge_change_preserves_sea_result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/declarations/gauge-change-preserves-sea-result.md) | 102 | `result-track:f60f4194b46f8fc1aab3d7cb0697ef8704afeaa20128f002d0650a1a9c41e4f5` |
+| 9 | `theorem` | [anchor_rebirth_preserves_sea_receipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticBridge.lean/declarations/anchor-rebirth-preserves-sea-receipt.md) | 110 | `result-track:7be0f26361197023721c15d868f36e05af5b612f444d7fa191db739cb42ca2f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

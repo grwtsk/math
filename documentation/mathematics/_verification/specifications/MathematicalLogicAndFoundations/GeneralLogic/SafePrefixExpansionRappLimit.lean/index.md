@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SafePrefixExpansionRappLimit.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SafePrefixExpansionRappLimit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SafePrefixExpansionRappLimit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SafePrefixExpansionRappLimit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `axiom` | [loopy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SafePrefixExpansionRappLimit.lean/declarations/loopy.md) | 10 | `declaration-track:345e362949a71703869269a5c79447e6319fef233132ca70faedb5259dc1f081` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SafePrefixExpansionRappLimit.lean/declarations/example-source-edition-2.md) | 21 | `declaration-track:d23fdf67976d7efc774a4d9d20491b42b5ac033a19057d361fd9bf37804be5b9` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SafePrefixExpansionRappLimit.lean/declarations/example.md) | 33 | `declaration-track:6a18780cbf27b2aafe1abe63e5dd4a182f76f197af415152b7c67d200d80f51e` |
+| 1 | `axiom` | [loopy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SafePrefixExpansionRappLimit.lean/declarations/loopy.md) | 10 | `declaration-track:345e362949a71703869269a5c79447e6319fef233132ca70faedb5259dc1f081` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SafePrefixExpansionRappLimit.lean/declarations/example-source-edition-2.md) | 21 | `declaration-track:d23fdf67976d7efc774a4d9d20491b42b5ac033a19057d361fd9bf37804be5b9` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SafePrefixExpansionRappLimit.lean/declarations/example.md) | 33 | `declaration-track:6a18780cbf27b2aafe1abe63e5dd4a182f76f197af415152b7c67d200d80f51e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

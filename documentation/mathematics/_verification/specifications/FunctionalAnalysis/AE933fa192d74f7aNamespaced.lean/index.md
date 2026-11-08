@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/AE933fa192d74f7aNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/AE933fa192d74f7aNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AE933fa192d74f7aNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AE933fa192d74f7aNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [raw_eq_zero_of_posDef](../../../../FunctionalAnalysis/AE933fa192d74f7aNamespaced.lean/declarations/raw-eq-zero-of-posdef.md) | 30 | `result-track:b446f05dfc93a8d32d5adcd545e2d3a9fee5ed77016aedbd79f35c7dfe9fa33f` |
+| 1 | `theorem` | [raw_eq_zero_of_posDef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AE933fa192d74f7aNamespaced.lean/declarations/raw-eq-zero-of-posdef.md) | 30 | `result-track:b446f05dfc93a8d32d5adcd545e2d3a9fee5ed77016aedbd79f35c7dfe9fa33f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

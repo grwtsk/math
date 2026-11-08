@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative28.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative28.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative28.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative28.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thetaTailSignRegular_orientation_initial_seven](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative28.lean/declarations/thetatailsignregular-orientation-initial-seven.md) | 18 | `result-track:42e8c346e9cb9e7a3f7f81b130afa26a9a08cfdf2780dfc58100de44e77edd8f` |
-| 2 | `theorem` | [thetaTailSignRegular_two_iff_ratio](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative28.lean/declarations/thetatailsignregular-two-iff-ratio.md) | 24 | `result-track:630fd3159ba6110d85b11306cabab3b1d17513c6769ff0fbf85824c9fa270830` |
-| 3 | `theorem` | [hasDerivAt_thetaTail_ratio](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative28.lean/declarations/hasderivat-thetatail-ratio.md) | 40 | `result-track:9b8b16af41e6157a99dec171af32ec848e194aab488fba2f1eafa3a86d6586c6` |
+| 1 | `theorem` | [thetaTailSignRegular_orientation_initial_seven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative28.lean/declarations/thetatailsignregular-orientation-initial-seven.md) | 18 | `result-track:42e8c346e9cb9e7a3f7f81b130afa26a9a08cfdf2780dfc58100de44e77edd8f` |
+| 2 | `theorem` | [thetaTailSignRegular_two_iff_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative28.lean/declarations/thetatailsignregular-two-iff-ratio.md) | 24 | `result-track:630fd3159ba6110d85b11306cabab3b1d17513c6769ff0fbf85824c9fa270830` |
+| 3 | `theorem` | [hasDerivAt_thetaTail_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResultsAlternative28.lean/declarations/hasderivat-thetatail-ratio.md) | 40 | `result-track:9b8b16af41e6157a99dec171af32ec848e194aab488fba2f1eafa3a86d6586c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

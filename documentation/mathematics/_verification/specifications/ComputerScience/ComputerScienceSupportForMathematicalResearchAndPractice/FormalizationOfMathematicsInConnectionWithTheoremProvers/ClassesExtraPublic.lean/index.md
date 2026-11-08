@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClassesExtraPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClassesExtraPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClassesExtraPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClassesExtraPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [LawfulOrderOrd](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClassesExtraPublic.lean/declarations/lawfulorderord.md) | 26 | `declaration-track:b961a33a07813fca739e0cf046c6e02d56506dd0491cc8f94f5e8c9218ddd0a8` |
-| 2 | `theorem` | [LawfulOrderOrd.isLE_compare_eq_false](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClassesExtraPublic.lean/declarations/lawfulorderord-isle-compare-eq-false.md) | 30 | `result-track:2520b86e384ef2461d54b7579eaa4ecbb646628200a76e299e24b99057f245cd` |
-| 3 | `theorem` | [LawfulOrderOrd.isGE_compare_eq_false](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClassesExtraPublic.lean/declarations/lawfulorderord-isge-compare-eq-false.md) | 34 | `result-track:78402f075dbe74691904b5af4f4d7dcbad0b1c419de4f5fc958fdc82de72ffc9` |
-| 4 | `abbrev` | [LawfulOrderCmp](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClassesExtraPublic.lean/declarations/lawfulordercmp.md) | 38 | `declaration-track:713be86411d232f8cc2454d9b0b5b02db4d8a669595b379876973911b5c2210d` |
+| 1 | `class` | [LawfulOrderOrd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClassesExtraPublic.lean/declarations/lawfulorderord.md) | 26 | `declaration-track:b961a33a07813fca739e0cf046c6e02d56506dd0491cc8f94f5e8c9218ddd0a8` |
+| 2 | `theorem` | [LawfulOrderOrd.isLE_compare_eq_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClassesExtraPublic.lean/declarations/lawfulorderord-isle-compare-eq-false.md) | 30 | `result-track:2520b86e384ef2461d54b7579eaa4ecbb646628200a76e299e24b99057f245cd` |
+| 3 | `theorem` | [LawfulOrderOrd.isGE_compare_eq_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClassesExtraPublic.lean/declarations/lawfulorderord-isge-compare-eq-false.md) | 34 | `result-track:78402f075dbe74691904b5af4f4d7dcbad0b1c419de4f5fc958fdc82de72ffc9` |
+| 4 | `abbrev` | [LawfulOrderCmp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClassesExtraPublic.lean/declarations/lawfulordercmp.md) | 38 | `declaration-track:713be86411d232f8cc2454d9b0b5b02db4d8a669595b379876973911b5c2210d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

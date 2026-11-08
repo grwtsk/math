@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [javascriptWire](../../../../../ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/declarations/javascriptwire.md) | 24 | `declaration-track:a63a0a2a2a73b343abec6c96b5949e284a624b56e30631d686b6236ae8a9f6d0` |
-| 2 | `def` | [rustWire](../../../../../ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/declarations/rustwire.md) | 37 | `declaration-track:9b58d8a9f5b63c5abefba40559b3aa61faa2c5000d2af446624b9568edf77b13` |
-| 3 | `theorem` | [javascriptAccepted](../../../../../ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/declarations/javascriptaccepted.md) | 50 | `result-track:de382bed12868bd1c257a73a3aac8c31d3966f5410ad2777ee72594b433fd5b2` |
-| 4 | `theorem` | [rustAccepted](../../../../../ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/declarations/rustaccepted.md) | 53 | `result-track:db17c42e445dc7357bc928b5dddcfcec9b31103ae5ac4244f712f6396c21c8c0` |
-| 5 | `theorem` | [javascriptRepresents](../../../../../ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/declarations/javascriptrepresents.md) | 56 | `result-track:294ab66858e8cddbef13df327eb768ffb851ae98e8b43a4f67da175e285450e9` |
-| 6 | `theorem` | [rustRepresents](../../../../../ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/declarations/rustrepresents.md) | 61 | `result-track:d70ce31f1d077eb5595185327e67b781404bf86f273fd612143e06bbe1f40905` |
-| 7 | `theorem` | [javascriptOperationPreserved](../../../../../ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/declarations/javascriptoperationpreserved.md) | 66 | `result-track:6c4bf2f52d10bb89982603e38a4690701e0246637a145558c5ddd5ab7bf904b4` |
-| 8 | `theorem` | [rustOperationPreserved](../../../../../ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/declarations/rustoperationpreserved.md) | 74 | `result-track:05219b10f6eb830ac02e2e9600f1400ad5bff3746d6f724c3fe2a330206c2e99` |
+| 1 | `def` | [javascriptWire](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/declarations/javascriptwire.md) | 24 | `declaration-track:a63a0a2a2a73b343abec6c96b5949e284a624b56e30631d686b6236ae8a9f6d0` |
+| 2 | `def` | [rustWire](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/declarations/rustwire.md) | 37 | `declaration-track:9b58d8a9f5b63c5abefba40559b3aa61faa2c5000d2af446624b9568edf77b13` |
+| 3 | `theorem` | [javascriptAccepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/declarations/javascriptaccepted.md) | 50 | `result-track:de382bed12868bd1c257a73a3aac8c31d3966f5410ad2777ee72594b433fd5b2` |
+| 4 | `theorem` | [rustAccepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/declarations/rustaccepted.md) | 53 | `result-track:db17c42e445dc7357bc928b5dddcfcec9b31103ae5ac4244f712f6396c21c8c0` |
+| 5 | `theorem` | [javascriptRepresents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/declarations/javascriptrepresents.md) | 56 | `result-track:294ab66858e8cddbef13df327eb768ffb851ae98e8b43a4f67da175e285450e9` |
+| 6 | `theorem` | [rustRepresents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/declarations/rustrepresents.md) | 61 | `result-track:d70ce31f1d077eb5595185327e67b781404bf86f273fd612143e06bbe1f40905` |
+| 7 | `theorem` | [javascriptOperationPreserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/declarations/javascriptoperationpreserved.md) | 66 | `result-track:6c4bf2f52d10bb89982603e38a4690701e0246637a145558c5ddd5ab7bf904b4` |
+| 8 | `theorem` | [rustOperationPreserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ForeignTraceEvidenceGeneratedNamespaced.lean/declarations/rustoperationpreserved.md) | 74 | `result-track:05219b10f6eb830ac02e2e9600f1400ad5bff3746d6f724c3fe2a330206c2e99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/Fa9b97a69b9b8abSourceMangoldtDirectBudget.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/Fa9b97a69b9b8abSourceMangoldtDirectBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/Fa9b97a69b9b8abSourceMangoldtDirectBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/Fa9b97a69b9b8abSourceMangoldtDirectBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [residual_upper_of_original_Mangoldt_work_lower](../../../../../NumberTheory/MultiplicativeNumberTheory/Fa9b97a69b9b8abSourceMangoldtDirectBudget.lean/declarations/residual-upper-of-original-mangoldt-work-lower.md) | 21 | `result-track:01ec358f09e1a3ae6913606af31b48502c47babaccefff5b82c0f46d9c7ba61e` |
-| 2 | `theorem` | [all_real_source_lower_of_original_Mangoldt_work_tail](../../../../../NumberTheory/MultiplicativeNumberTheory/Fa9b97a69b9b8abSourceMangoldtDirectBudget.lean/declarations/all-real-source-lower-of-original-mangoldt-work-tail.md) | 30 | `result-track:13062fed695338513ac6ed8b90f4fc8f3d7c2850e0b87cff2fc19f4647e91a26` |
+| 1 | `theorem` | [residual_upper_of_original_Mangoldt_work_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/Fa9b97a69b9b8abSourceMangoldtDirectBudget.lean/declarations/residual-upper-of-original-mangoldt-work-lower.md) | 21 | `result-track:01ec358f09e1a3ae6913606af31b48502c47babaccefff5b82c0f46d9c7ba61e` |
+| 2 | `theorem` | [all_real_source_lower_of_original_Mangoldt_work_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/Fa9b97a69b9b8abSourceMangoldtDirectBudget.lean/declarations/all-real-source-lower-of-original-mangoldt-work-tail.md) | 30 | `result-track:13062fed695338513ac6ed8b90f4fc8f3d7c2850e0b87cff2fc19f4647e91a26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PositiveOrderAndTorsion.lean/index.md) · [Full source](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PositiveOrderAndTorsion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PositiveOrderAndTorsion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PositiveOrderAndTorsion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Point Multiple Recursion](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PointMultipleRecursion.lean/index.md) — import line 19; pinned internal source present.
+- [Point Multiple Recursion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PointMultipleRecursion.lean/index.md) — import line 19; pinned internal source present.
 - `Folder.Arithmetic.EllipticCurve` — import line 21; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsTorsion](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PositiveOrderAndTorsion.lean/declarations/istorsion.md) | 41 | `declaration-track:eca3ab1c972f40dd809cf2ca2623a4c3d92aa45a6ebf6d6fc02bb408e7257005` |
-| 2 | `def` | [HasOrder](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PositiveOrderAndTorsion.lean/declarations/hasorder.md) | 47 | `declaration-track:91f0b02e0fc7804d52f1e16ddbe61119207dd48580b8a1a86f95edf11eac10ef` |
-| 3 | `theorem` | [torsion_of_hasOrder](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PositiveOrderAndTorsion.lean/declarations/torsion-of-hasorder.md) | 55 | `result-track:833859dab69a8276a308311b481e548a65b3aa37a1db23a1b301543f924b2249` |
+| 1 | `def` | [IsTorsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PositiveOrderAndTorsion.lean/declarations/istorsion.md) | 41 | `declaration-track:eca3ab1c972f40dd809cf2ca2623a4c3d92aa45a6ebf6d6fc02bb408e7257005` |
+| 2 | `def` | [HasOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PositiveOrderAndTorsion.lean/declarations/hasorder.md) | 47 | `declaration-track:91f0b02e0fc7804d52f1e16ddbe61119207dd48580b8a1a86f95edf11eac10ef` |
+| 3 | `theorem` | [torsion_of_hasOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PositiveOrderAndTorsion.lean/declarations/torsion-of-hasorder.md) | 55 | `result-track:833859dab69a8276a308311b481e548a65b3aa37a1db23a1b301543f924b2249` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

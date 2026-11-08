@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatPreadditiveNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatPreadditiveNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatPreadditiveNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatPreadditiveNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatPreadditiveNamespaced.lean/declarations/instance.md) | 30 | `declaration-track:248f1320c43d6d795a68b861cd319eb6fb547e4018e0e3a022651890b9e99b34` |
-| 2 | `lemma` | [hom_add_apply](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatPreadditiveNamespaced.lean/declarations/hom-add-apply.md) | 35 | `result-track:75cd808ecc097565c3b1602300ef0a9eb6ce55416fa305808d362be43ef058b9` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatPreadditiveNamespaced.lean/declarations/instance-source-edition-2.md) | 46 | `declaration-track:f135b96619f98ed1ab5a8df52afb527cf5d08ffbbe0204f5ea3c07a6f31d2fd9` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatPreadditiveNamespaced.lean/declarations/instance.md) | 30 | `declaration-track:248f1320c43d6d795a68b861cd319eb6fb547e4018e0e3a022651890b9e99b34` |
+| 2 | `lemma` | [hom_add_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatPreadditiveNamespaced.lean/declarations/hom-add-apply.md) | 35 | `result-track:75cd808ecc097565c3b1602300ef0a9eb6ce55416fa305808d362be43ef058b9` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupCatPreadditiveNamespaced.lean/declarations/instance-source-edition-2.md) | 46 | `declaration-track:f135b96619f98ed1ab5a8df52afb527cf5d08ffbbe0204f5ea3c07a6f31d2fd9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

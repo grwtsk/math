@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecamanNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecamanNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecamanNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecamanNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RecamanProposal](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecamanNamespaced.lean/declarations/recamanproposal.md) | 15 | `declaration-track:52a8c7645733f0a7d9f8e2a6846cf9c79618f0252f6a3ecb32435631a21011b6` |
-| 2 | `theorem` | [recaman_proposal_has_no_authority](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecamanNamespaced.lean/declarations/recaman-proposal-has-no-authority.md) | 25 | `result-track:4d2b94f06b64efafedf295c3c98ec897f0a6c0fca3bfc8f9a48d2b0397f8d67e` |
-| 3 | `theorem` | [recaman_requires_declared_plateau](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecamanNamespaced.lean/declarations/recaman-requires-declared-plateau.md) | 30 | `result-track:65722c812e396e07796e55a90935bec6f1ad1ab727bb9b2efe6518b6470288cd` |
+| 1 | `structure` | [RecamanProposal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecamanNamespaced.lean/declarations/recamanproposal.md) | 15 | `declaration-track:52a8c7645733f0a7d9f8e2a6846cf9c79618f0252f6a3ecb32435631a21011b6` |
+| 2 | `theorem` | [recaman_proposal_has_no_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecamanNamespaced.lean/declarations/recaman-proposal-has-no-authority.md) | 25 | `result-track:4d2b94f06b64efafedf295c3c98ec897f0a6c0fca3bfc8f9a48d2b0397f8d67e` |
+| 3 | `theorem` | [recaman_requires_declared_plateau](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RecamanNamespaced.lean/declarations/recaman-requires-declared-plateau.md) | 30 | `result-track:65722c812e396e07796e55a90935bec6f1ad1ab727bb9b2efe6518b6470288cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

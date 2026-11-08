@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncrementNamespacedSoninPacketEnergyIncrementEqNormSq.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncrementNamespacedSoninPacketEnergyIncrementEqNormSq.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncrementNamespacedSoninPacketEnergyIncrementEqNormSq.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncrementNamespacedSoninPacketEnergyIncrementEqNormSq.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [soninPacketEnergy_increment_eq_normSq](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncrementNamespacedSoninPacketEnergyIncrementEqNormSq.lean/declarations/soninpacketenergy-increment-eq-normsq.md) | 17 | `result-track:277143456ad397410623e5ad25524393b6dd576a790add5756888466b00f2ba8` |
-| 2 | `theorem` | [soninPacketEnergy_increment_nonnegative](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncrementNamespacedSoninPacketEnergyIncrementEqNormSq.lean/declarations/soninpacketenergy-increment-nonnegative.md) | 76 | `result-track:276aa8807783a69e43dbba353622ef475a1004bdf300bb4adc48632e7428c13c` |
+| 1 | `theorem` | [soninPacketEnergy_increment_eq_normSq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncrementNamespacedSoninPacketEnergyIncrementEqNormSq.lean/declarations/soninpacketenergy-increment-eq-normsq.md) | 17 | `result-track:277143456ad397410623e5ad25524393b6dd576a790add5756888466b00f2ba8` |
+| 2 | `theorem` | [soninPacketEnergy_increment_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncrementNamespacedSoninPacketEnergyIncrementEqNormSq.lean/declarations/soninpacketenergy-increment-nonnegative.md) | 76 | `result-track:276aa8807783a69e43dbba353622ef475a1004bdf300bb4adc48632e7428c13c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

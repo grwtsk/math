@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Surgery.Digital` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Combinatorics.SimpleGraph.Connectivity.Finite` — import line 20; external provider; requires a separately pinned dependency.
-- [Foreground Components And Cycle Rank](../../../../../Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/index.md) — import line 22; pinned internal source present.
+- [Foreground Components And Cycle Rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ForegroundComponentsAndCycleRank.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,21 +59,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CanonicalAdjacencyPair](../../../../../Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/canonicaladjacencypair.md) | 49 | `declaration-track:59ea5f24dcc8ea6d53c0b97601940b0570d2da023b753e7d52bb130da313a4a4` |
-| 2 | `instance` | [canonicalAdjacencyPairDecidable](../../../../../Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/canonicaladjacencypairdecidable.md) | 52 | `declaration-track:0a4958b059d3efa3b5542a67e9d8ac1167dc20152b93ec5a572586ff221f1169` |
-| 3 | `theorem` | [vertexAdjacent_iff_coordinate_bounds](../../../../../Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/vertexadjacent-iff-coordinate-bounds.md) | 60 | `result-track:e4441f8b0d0faa1bec585d15102d9f1f007b3747d05b95661a02697d82004394` |
-| 4 | `def` | [foregroundDegree](../../../../../Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/foregrounddegree.md) | 80 | `declaration-track:f054420f158f4d41057329b2bb2cf1bdb1cc6d94720f34177aad4a066f364b24` |
-| 5 | `def` | [NonbranchingCubicalGraph](../../../../../Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/nonbranchingcubicalgraph.md) | 88 | `declaration-track:a011e4e672e318164dc1252cc933e9fcf8df23943a99304b9f9ada0ca7dad1c8` |
-| 6 | `instance` | [nonbranchingCubicalGraphDecidable](../../../../../Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/nonbranchingcubicalgraphdecidable.md) | 92 | `declaration-track:0f01e0802f19d06677974bae0e9d379c3bb457d598c11e91f513efc64bd5d33f` |
-| 7 | `def` | [canonicalCubicalManifold](../../../../../Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/canonicalcubicalmanifold.md) | 100 | `declaration-track:d8823d8438722c26017edbd84502b199fd718b80289c8423629070d081f039e7` |
-| 8 | `def` | [canonicalExactCarrierCompatible](../../../../../Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/canonicalexactcarriercompatible.md) | 108 | `declaration-track:d0cb8d9e55cf50706f5c2883d9b5fcdc36988e9b052ff848d58bf935985f26e0` |
-| 9 | `def` | [foregroundLink](../../../../../Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/foregroundlink.md) | 117 | `declaration-track:0f44e302cf5ad6fc54e7a5c6b0c4a71e56b65919958f8e6a998948050956001d` |
-| 10 | `theorem` | [foregroundLink_subset_exterior](../../../../../Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/foregroundlink-subset-exterior.md) | 125 | `result-track:d971868e2bc08556bfbe62f5c87dd14dff924f2927e30b49a41b6d46a9b8fce1` |
-| 11 | `def` | [backgroundState](../../../../../Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/backgroundstate.md) | 133 | `declaration-track:7da5c252814ab2d51e397c86caac3a884e806172eb946a891bf89c1304f1557e` |
-| 12 | `def` | [backgroundLink](../../../../../Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/backgroundlink.md) | 139 | `declaration-track:8b172621b12bfa0dc0a4758acc2f5ec58864ba0bc313a222b57badb75a54a6e8` |
-| 13 | `def` | [backgroundBetaZero](../../../../../Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/backgroundbetazero.md) | 145 | `declaration-track:54680b4abc14489578fd47f134f2f6d39e821f5d72bcd1e369217f2929b723d7` |
-| 14 | `def` | [canonicalLinkCondition](../../../../../Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/canonicallinkcondition.md) | 156 | `declaration-track:93e884fe31d6fd094058723e04f6fe5bca82d1f4845fb555b4d29063a50718b7` |
-| 15 | `def` | [boundaryComponentCount](../../../../../Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/boundarycomponentcount.md) | 175 | `declaration-track:b16f7498eb54f6261db6b164af963bd6276c0b81251fa3b7b3e1c00f9d811015` |
+| 1 | `def` | [CanonicalAdjacencyPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/canonicaladjacencypair.md) | 49 | `declaration-track:59ea5f24dcc8ea6d53c0b97601940b0570d2da023b753e7d52bb130da313a4a4` |
+| 2 | `instance` | [canonicalAdjacencyPairDecidable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/canonicaladjacencypairdecidable.md) | 52 | `declaration-track:0a4958b059d3efa3b5542a67e9d8ac1167dc20152b93ec5a572586ff221f1169` |
+| 3 | `theorem` | [vertexAdjacent_iff_coordinate_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/vertexadjacent-iff-coordinate-bounds.md) | 60 | `result-track:e4441f8b0d0faa1bec585d15102d9f1f007b3747d05b95661a02697d82004394` |
+| 4 | `def` | [foregroundDegree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/foregrounddegree.md) | 80 | `declaration-track:f054420f158f4d41057329b2bb2cf1bdb1cc6d94720f34177aad4a066f364b24` |
+| 5 | `def` | [NonbranchingCubicalGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/nonbranchingcubicalgraph.md) | 88 | `declaration-track:a011e4e672e318164dc1252cc933e9fcf8df23943a99304b9f9ada0ca7dad1c8` |
+| 6 | `instance` | [nonbranchingCubicalGraphDecidable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/nonbranchingcubicalgraphdecidable.md) | 92 | `declaration-track:0f01e0802f19d06677974bae0e9d379c3bb457d598c11e91f513efc64bd5d33f` |
+| 7 | `def` | [canonicalCubicalManifold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/canonicalcubicalmanifold.md) | 100 | `declaration-track:d8823d8438722c26017edbd84502b199fd718b80289c8423629070d081f039e7` |
+| 8 | `def` | [canonicalExactCarrierCompatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/canonicalexactcarriercompatible.md) | 108 | `declaration-track:d0cb8d9e55cf50706f5c2883d9b5fcdc36988e9b052ff848d58bf935985f26e0` |
+| 9 | `def` | [foregroundLink](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/foregroundlink.md) | 117 | `declaration-track:0f44e302cf5ad6fc54e7a5c6b0c4a71e56b65919958f8e6a998948050956001d` |
+| 10 | `theorem` | [foregroundLink_subset_exterior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/foregroundlink-subset-exterior.md) | 125 | `result-track:d971868e2bc08556bfbe62f5c87dd14dff924f2927e30b49a41b6d46a9b8fce1` |
+| 11 | `def` | [backgroundState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/backgroundstate.md) | 133 | `declaration-track:7da5c252814ab2d51e397c86caac3a884e806172eb946a891bf89c1304f1557e` |
+| 12 | `def` | [backgroundLink](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/backgroundlink.md) | 139 | `declaration-track:8b172621b12bfa0dc0a4758acc2f5ec58864ba0bc313a222b57badb75a54a6e8` |
+| 13 | `def` | [backgroundBetaZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/backgroundbetazero.md) | 145 | `declaration-track:54680b4abc14489578fd47f134f2f6d39e821f5d72bcd1e369217f2929b723d7` |
+| 14 | `def` | [canonicalLinkCondition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/canonicallinkcondition.md) | 156 | `declaration-track:93e884fe31d6fd094058723e04f6fe5bca82d1f4845fb555b4d29063a50718b7` |
+| 15 | `def` | [boundaryComponentCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LocalGraphPredicatesAndLinks.lean/declarations/boundarycomponentcount.md) | 175 | `declaration-track:b16f7498eb54f6261db6b164af963bd6276c0b81251fa3b7b3e1c00f9d811015` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

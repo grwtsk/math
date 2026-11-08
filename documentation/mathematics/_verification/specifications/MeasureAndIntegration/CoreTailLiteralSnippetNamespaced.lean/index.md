@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CoreTailLiteralSnippetNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CoreTailLiteralSnippetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreTailLiteralSnippetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreTailLiteralSnippetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/CoreTailLiteralSnippetNamespaced.lean/declarations/example.md) | 18 | `declaration-track:0664907fbf015e1b383936ba89053caf8eeece8c63c0b1ce88704d4b7c86ab05` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/CoreTailLiteralSnippetNamespaced.lean/declarations/example-source-edition-4.md) | 21 | `declaration-track:aad7ecfcde4add8bfbf9dfbb254c94534bf65721d5b2f0b4eb3bce90ec1c11dc` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/CoreTailLiteralSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 25 | `declaration-track:a954a97a0a1ce3442d3242a3bddefd330fdec5c887eda973af36953b85fe5d1d` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/CoreTailLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 28 | `declaration-track:3c94ea865e379aad6cd095c04f615ea0b0613e76905c4b48c5d2bddc5a7989b5` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/CoreTailLiteralSnippetNamespaced.lean/declarations/example-source-edition-5.md) | 32 | `declaration-track:fe72791cd753450f174c21f159e60bedd4bd16a5773bdcf4dc97a3cdde8fb33b` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/CoreTailLiteralSnippetNamespaced.lean/declarations/example-source-edition-6.md) | 39 | `declaration-track:ff65be1e6991e795b49b507aa70f5b7cf225f0bb8ce2331c1a80e0456f659cb5` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreTailLiteralSnippetNamespaced.lean/declarations/example.md) | 18 | `declaration-track:0664907fbf015e1b383936ba89053caf8eeece8c63c0b1ce88704d4b7c86ab05` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreTailLiteralSnippetNamespaced.lean/declarations/example-source-edition-4.md) | 21 | `declaration-track:aad7ecfcde4add8bfbf9dfbb254c94534bf65721d5b2f0b4eb3bce90ec1c11dc` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreTailLiteralSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 25 | `declaration-track:a954a97a0a1ce3442d3242a3bddefd330fdec5c887eda973af36953b85fe5d1d` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreTailLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 28 | `declaration-track:3c94ea865e379aad6cd095c04f615ea0b0613e76905c4b48c5d2bddc5a7989b5` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreTailLiteralSnippetNamespaced.lean/declarations/example-source-edition-5.md) | 32 | `declaration-track:fe72791cd753450f174c21f159e60bedd4bd16a5773bdcf4dc97a3cdde8fb33b` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreTailLiteralSnippetNamespaced.lean/declarations/example-source-edition-6.md) | 39 | `declaration-track:ff65be1e6991e795b49b507aa70f5b7cf225f0bb8ce2331c1a80e0456f659cb5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

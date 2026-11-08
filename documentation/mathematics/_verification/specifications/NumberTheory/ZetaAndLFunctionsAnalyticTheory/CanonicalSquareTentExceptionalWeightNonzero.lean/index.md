@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightNonzero.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightNonzero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightNonzero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightNonzero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentActualExceptionalWeight`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentActualExceptionalWeight.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentActualExceptionalWeight`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentActualExceptionalWeight.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exceptionalWeight_ne_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightNonzero.lean/declarations/exceptionalweight-ne-zero.md) | 34 | `result-track:ac73b5c771f7ff3c23e780b4a497eb07aa997dfa91178445823bb9f8d4c1be8b` |
-| 2 | `theorem` | [unmixed_third_coordinate_injective](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightNonzero.lean/declarations/unmixed-third-coordinate-injective.md) | 41 | `result-track:dc076d484c1148402253a5d7e232e0464f8429fafe2ce1adef3b85850e54f992` |
+| 1 | `theorem` | [exceptionalWeight_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightNonzero.lean/declarations/exceptionalweight-ne-zero.md) | 34 | `result-track:ac73b5c771f7ff3c23e780b4a497eb07aa997dfa91178445823bb9f8d4c1be8b` |
+| 2 | `theorem` | [unmixed_third_coordinate_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightNonzero.lean/declarations/unmixed-third-coordinate-injective.md) | 41 | `result-track:dc076d484c1148402253a5d7e232e0464f8429fafe2ce1adef3b85850e54f992` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

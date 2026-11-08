@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Semigroup.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Semigroup.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Semigroup.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Semigroup.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HeatSemigroupCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Semigroup.lean/declarations/heatsemigroupcertificate.md) | 5 | `declaration-track:024c4c1d957b7c4779a60002b65de6347bc1ffa9615faff1cdc5ced72db89f07` |
-| 2 | `theorem` | [heatSemigroup_requires_identity_and_composition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Semigroup.lean/declarations/heatsemigroup-requires-identity-and-composition.md) | 10 | `result-track:fb6791aa8b68fab0aa992d8ba64cd8c92e2f605b9d6c4440fdf35afc164f4634` |
+| 1 | `structure` | [HeatSemigroupCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Semigroup.lean/declarations/heatsemigroupcertificate.md) | 5 | `declaration-track:024c4c1d957b7c4779a60002b65de6347bc1ffa9615faff1cdc5ced72db89f07` |
+| 2 | `theorem` | [heatSemigroup_requires_identity_and_composition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Semigroup.lean/declarations/heatsemigroup-requires-identity-and-composition.md) | 10 | `result-track:fb6791aa8b68fab0aa992d8ba64cd8c92e2f605b9d6c4440fdf35afc164f4634` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

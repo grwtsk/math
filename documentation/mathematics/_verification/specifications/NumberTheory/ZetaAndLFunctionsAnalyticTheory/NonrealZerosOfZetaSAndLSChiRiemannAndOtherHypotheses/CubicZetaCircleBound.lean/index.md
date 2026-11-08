@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CubicZetaIdentity`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaIdentity.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CubicCircleGeometry`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCircleGeometry.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CubicZetaIdentity`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaIdentity.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CubicCircleGeometry`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCircleGeometry.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [norm_zeta_le_cube_on_disk](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/declarations/norm-zeta-le-cube-on-disk.md) | 30 | `result-track:a34b635f544dfa7476b9dfee4fc3720f3238d3506e2c1f02349bb735ce97f071` |
-| 2 | `theorem` | [upper_circle_bound](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/declarations/upper-circle-bound.md) | 44 | `result-track:c0aa6721c2cb9191f64818612684b55fed7adaf33c4f53eda9d13c73987799fc` |
-| 3 | `theorem` | [lower_circle_bound](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/declarations/lower-circle-bound.md) | 49 | `result-track:5d3e7d4d9854ec10a405053ab4286597f46a2c86b54a6df4685d0307d035039f` |
-| 4 | `def` | [localCountBudget](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/declarations/localcountbudget.md) | 55 | `declaration-track:a527452c43a39e83ed30e14db4a6f6386842e55730ee8aafa118fb4d2fb4e214` |
-| 5 | `theorem` | [bandMass_le_localCountBudget](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/declarations/bandmass-le-localcountbudget.md) | 59 | `result-track:684b23f039aa8342b06f8b736aff5372611485fe5ff9c301b0fc2f9895f72ddd` |
-| 6 | `theorem` | [localCountBudget_nonneg](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/declarations/localcountbudget-nonneg.md) | 66 | `result-track:c047fbd53b3fe86c0cbeb41f69e97336a10345c0151a1c611d3a7749c2e6e5fd` |
-| 7 | `theorem` | [clearance_le_actual](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/declarations/clearance-le-actual.md) | 73 | `result-track:a8505769081c6078025f20d0496a9ff5055b44f0d772dfa9c7e18a5eb2213e33` |
-| 8 | `theorem` | [local_principal_le](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/declarations/local-principal-le.md) | 78 | `result-track:4a482bf1801f98b9f27b0e41f39a6c1ab950c4a2b3a861f222743184b0c4149b` |
+| 1 | `theorem` | [norm_zeta_le_cube_on_disk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/declarations/norm-zeta-le-cube-on-disk.md) | 30 | `result-track:a34b635f544dfa7476b9dfee4fc3720f3238d3506e2c1f02349bb735ce97f071` |
+| 2 | `theorem` | [upper_circle_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/declarations/upper-circle-bound.md) | 44 | `result-track:c0aa6721c2cb9191f64818612684b55fed7adaf33c4f53eda9d13c73987799fc` |
+| 3 | `theorem` | [lower_circle_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/declarations/lower-circle-bound.md) | 49 | `result-track:5d3e7d4d9854ec10a405053ab4286597f46a2c86b54a6df4685d0307d035039f` |
+| 4 | `def` | [localCountBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/declarations/localcountbudget.md) | 55 | `declaration-track:a527452c43a39e83ed30e14db4a6f6386842e55730ee8aafa118fb4d2fb4e214` |
+| 5 | `theorem` | [bandMass_le_localCountBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/declarations/bandmass-le-localcountbudget.md) | 59 | `result-track:684b23f039aa8342b06f8b736aff5372611485fe5ff9c301b0fc2f9895f72ddd` |
+| 6 | `theorem` | [localCountBudget_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/declarations/localcountbudget-nonneg.md) | 66 | `result-track:c047fbd53b3fe86c0cbeb41f69e97336a10345c0151a1c611d3a7749c2e6e5fd` |
+| 7 | `theorem` | [clearance_le_actual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/declarations/clearance-le-actual.md) | 73 | `result-track:a8505769081c6078025f20d0496a9ff5055b44f0d772dfa9c7e18a5eb2213e33` |
+| 8 | `theorem` | [local_principal_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicZetaCircleBound.lean/declarations/local-principal-le.md) | 78 | `result-track:4a482bf1801f98b9f27b0e41f39a6c1ab950c4a2b3a861f222743184b0c4149b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

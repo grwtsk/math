@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/Radical.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/Radical.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/Radical.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/Radical.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Definitions`](../../../../../NumberTheory/DiophantineEquations/Definitions.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Definitions`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/Definitions.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.RingTheory.Radical.NatInt` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [radical](../../../../../NumberTheory/DiophantineEquations/Radical.lean/declarations/radical.md) | 14 | `declaration-track:e1f28382b251d1d5a53e51e05de8b7cbab6ae9b96f5af965f80060f823be8bc0` |
-| 2 | `theorem` | [radical_pos](../../../../../NumberTheory/DiophantineEquations/Radical.lean/declarations/radical-pos.md) | 19 | `result-track:883cd06cc1fc4f1f484bff831b32c2d5020206f4b25ba39478e1796fcea6af41` |
-| 3 | `theorem` | [radical_two_le](../../../../../NumberTheory/DiophantineEquations/Radical.lean/declarations/radical-two-le.md) | 21 | `result-track:90801e886f1737c23ae8bef23968b007bbb40709f597e2e9589d903bc87e60c2` |
-| 4 | `theorem` | [radical_eq_product](../../../../../NumberTheory/DiophantineEquations/Radical.lean/declarations/radical-eq-product.md) | 29 | `result-track:c5bd4558fb0f5977d08b0903283f6a29ca88df0983e50bfb3883ade7b8ceb1d6` |
-| 5 | `theorem` | [radical_dvd_product](../../../../../NumberTheory/DiophantineEquations/Radical.lean/declarations/radical-dvd-product.md) | 38 | `result-track:a96cfb5b4d61540d686dff8f8c1e0d9f2462a9bd9956391892493e59f1dd616d` |
-| 6 | `theorem` | [radical_le_product](../../../../../NumberTheory/DiophantineEquations/Radical.lean/declarations/radical-le-product.md) | 41 | `result-track:40873036be50305f93da53d9c96a5c991bcc291a63e44b2f21a8487c8a288eff` |
+| 1 | `def` | [radical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/Radical.lean/declarations/radical.md) | 14 | `declaration-track:e1f28382b251d1d5a53e51e05de8b7cbab6ae9b96f5af965f80060f823be8bc0` |
+| 2 | `theorem` | [radical_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/Radical.lean/declarations/radical-pos.md) | 19 | `result-track:883cd06cc1fc4f1f484bff831b32c2d5020206f4b25ba39478e1796fcea6af41` |
+| 3 | `theorem` | [radical_two_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/Radical.lean/declarations/radical-two-le.md) | 21 | `result-track:90801e886f1737c23ae8bef23968b007bbb40709f597e2e9589d903bc87e60c2` |
+| 4 | `theorem` | [radical_eq_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/Radical.lean/declarations/radical-eq-product.md) | 29 | `result-track:c5bd4558fb0f5977d08b0903283f6a29ca88df0983e50bfb3883ade7b8ceb1d6` |
+| 5 | `theorem` | [radical_dvd_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/Radical.lean/declarations/radical-dvd-product.md) | 38 | `result-track:a96cfb5b4d61540d686dff8f8c1e0d9f2462a9bd9956391892493e59f1dd616d` |
+| 6 | `theorem` | [radical_le_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/Radical.lean/declarations/radical-le-product.md) | 41 | `result-track:40873036be50305f93da53d9c96a5c991bcc291a63e44b2f21a8487c8a288eff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

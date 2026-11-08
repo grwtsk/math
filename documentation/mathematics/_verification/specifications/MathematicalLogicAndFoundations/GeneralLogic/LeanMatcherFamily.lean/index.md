@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [profile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/declarations/profile.md) | 9 | `declaration-track:38b4e76713f1d2ba7623020adedaf95d60c29d2cd38034088351c7da501ed408` |
-| 2 | `def` | [obj](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/declarations/obj.md) | 10 | `declaration-track:5d8fe26d51eb7b98792e2fcca276dc708eb864b1c6069820faae7b8079737c4a` |
-| 3 | `def` | [nameJson](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/declarations/namejson.md) | 11 | `declaration-track:56fdda1e85d54531cc28031c30d376b793d94f5087fce287eff250c5cdd7342e` |
-| 4 | `def` | [names](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/declarations/names.md) | 15 | `declaration-track:ae8886cc25f09b952af5a816118eda3fc5104e52ba69f23aa1b7e26876e17467` |
-| 5 | `def` | [infoJson](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/declarations/infojson.md) | 17 | `declaration-track:1958c51b4509dca7a49aa0079b88cf8a7db616f6fd820bdb35a9bcf2400cf4fa` |
-| 6 | `def` | [added](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/declarations/added.md) | 25 | `declaration-track:73eb7878039e2c70d47028c353c052ceabf974184b6a87356c7fdd3aa42c84f8` |
-| 7 | `def` | [observeWithMembers](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/declarations/observewithmembers.md) | 30 | `declaration-track:54dc03107c132effd49c498e767236fc942e26a6d2ba723dd1dd43a55f2e1b70` |
-| 8 | `def` | [observe](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/declarations/observe.md) | 72 | `declaration-track:81a6cf0df1451954ee748cd63996cd67d626aa35c4b322525a85eb04a7a4ef54` |
+| 1 | `def` | [profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/declarations/profile.md) | 9 | `declaration-track:38b4e76713f1d2ba7623020adedaf95d60c29d2cd38034088351c7da501ed408` |
+| 2 | `def` | [obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/declarations/obj.md) | 10 | `declaration-track:5d8fe26d51eb7b98792e2fcca276dc708eb864b1c6069820faae7b8079737c4a` |
+| 3 | `def` | [nameJson](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/declarations/namejson.md) | 11 | `declaration-track:56fdda1e85d54531cc28031c30d376b793d94f5087fce287eff250c5cdd7342e` |
+| 4 | `def` | [names](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/declarations/names.md) | 15 | `declaration-track:ae8886cc25f09b952af5a816118eda3fc5104e52ba69f23aa1b7e26876e17467` |
+| 5 | `def` | [infoJson](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/declarations/infojson.md) | 17 | `declaration-track:1958c51b4509dca7a49aa0079b88cf8a7db616f6fd820bdb35a9bcf2400cf4fa` |
+| 6 | `def` | [added](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/declarations/added.md) | 25 | `declaration-track:73eb7878039e2c70d47028c353c052ceabf974184b6a87356c7fdd3aa42c84f8` |
+| 7 | `def` | [observeWithMembers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/declarations/observewithmembers.md) | 30 | `declaration-track:54dc03107c132effd49c498e767236fc942e26a6d2ba723dd1dd43a55f2e1b70` |
+| 8 | `def` | [observe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanMatcherFamily.lean/declarations/observe.md) | 72 | `declaration-track:81a6cf0df1451954ee748cd63996cd67d626aa35c4b322525a85eb04a7a4ef54` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwiseNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwiseNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwiseNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwiseNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [plainProfile_sum_eq_sourcePlainKernel](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwiseNamespaced.lean/declarations/plainprofile-sum-eq-sourceplainkernel.md) | 31 | `result-track:acfac649975cd6f13771722daae5fcdad871083836d055a32fada6ef53545faa` |
-| 2 | `theorem` | [logProfile_sum_eq_sourceMobiusKernel](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwiseNamespaced.lean/declarations/logprofile-sum-eq-sourcemobiuskernel.md) | 41 | `result-track:0be5413b0133d145aad95f03bee7143bc24e4e0d931094037846662f19e308ec` |
-| 3 | `theorem` | [sourcePlainKernel_sub_mainTerm_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwiseNamespaced.lean/declarations/sourceplainkernel-sub-mainterm-abs-le.md) | 52 | `result-track:964744fc05d40e996257e6a9d52683042da685ab4e6d2f7ed0e9b7258d205c4b` |
-| 4 | `theorem` | [sourceMobiusKernel_sub_mainTerm_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwiseNamespaced.lean/declarations/sourcemobiuskernel-sub-mainterm-abs-le.md) | 59 | `result-track:dff3181b1bedb6212468987b324550e0aeee522f8a9400a7887bb2a6796f94e6` |
+| 1 | `theorem` | [plainProfile_sum_eq_sourcePlainKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwiseNamespaced.lean/declarations/plainprofile-sum-eq-sourceplainkernel.md) | 31 | `result-track:acfac649975cd6f13771722daae5fcdad871083836d055a32fada6ef53545faa` |
+| 2 | `theorem` | [logProfile_sum_eq_sourceMobiusKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwiseNamespaced.lean/declarations/logprofile-sum-eq-sourcemobiuskernel.md) | 41 | `result-track:0be5413b0133d145aad95f03bee7143bc24e4e0d931094037846662f19e308ec` |
+| 3 | `theorem` | [sourcePlainKernel_sub_mainTerm_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwiseNamespaced.lean/declarations/sourceplainkernel-sub-mainterm-abs-le.md) | 52 | `result-track:964744fc05d40e996257e6a9d52683042da685ab4e6d2f7ed0e9b7258d205c4b` |
+| 4 | `theorem` | [sourceMobiusKernel_sub_mainTerm_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceShortSamplingPointwiseNamespaced.lean/declarations/sourcemobiuskernel-sub-mainterm-abs-le.md) | 59 | `result-track:dff3181b1bedb6212468987b324550e0aeee522f8a9400a7887bb2a6796f94e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

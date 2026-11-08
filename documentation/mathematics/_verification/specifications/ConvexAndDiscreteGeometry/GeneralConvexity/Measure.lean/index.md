@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Measure.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Measure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Measure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Measure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [addHaar_frontier](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Measure.lean/declarations/addhaar-frontier.md) | 33 | `result-track:92e7361539479e9a709cd6b7bc4de5d7e66b7ad61273d2af88df8eebf5e35bdd` |
-| 2 | `theorem` | [nullMeasurableSet](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Measure.lean/declarations/nullmeasurableset.md) | 87 | `result-track:693d6a3bc4d25733276a16baefed076d5c4cacf8f857866ec7331087cbd4cb6d` |
+| 1 | `theorem` | [addHaar_frontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Measure.lean/declarations/addhaar-frontier.md) | 33 | `result-track:92e7361539479e9a709cd6b7bc4de5d7e66b7ad61273d2af88df8eebf5e35bdd` |
+| 2 | `theorem` | [nullMeasurableSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Measure.lean/declarations/nullmeasurableset.md) | 87 | `result-track:693d6a3bc4d25733276a16baefed076d5c4cacf8f857866ec7331087cbd4cb6d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamiliesIndexClassPointwiseGlobalIndexNonzeroIfSupplied.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamiliesIndexClassPointwiseGlobalIndexNonzeroIfSupplied.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamiliesIndexClassPointwiseGlobalIndexNonzeroIfSupplied.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamiliesIndexClassPointwiseGlobalIndexNonzeroIfSupplied.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [families_index_nontrivial](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamiliesIndexClassPointwiseGlobalIndexNonzeroIfSupplied.lean/declarations/families-index-nontrivial.md) | 19 | `result-track:bca81d556781b9d2e8342b8801875e69064523ee453ccd33d27b639d33011222` |
-| 2 | `theorem` | [families_index_specializes](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamiliesIndexClassPointwiseGlobalIndexNonzeroIfSupplied.lean/declarations/families-index-specializes.md) | 26 | `result-track:23b930ee676b0f49601ccd753e5fbafd3fc1b43d4e1bc3b49625e2b1f76f3e87` |
-| 3 | `theorem` | [pointwise_global_index_nonzero_if_supplied](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamiliesIndexClassPointwiseGlobalIndexNonzeroIfSupplied.lean/declarations/pointwise-global-index-nonzero-if-supplied.md) | 33 | `result-track:120fc7ee1509ac3e3773021ead41137544169100927af4f15c8df6332a9bb5cc` |
+| 1 | `theorem` | [families_index_nontrivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamiliesIndexClassPointwiseGlobalIndexNonzeroIfSupplied.lean/declarations/families-index-nontrivial.md) | 19 | `result-track:bca81d556781b9d2e8342b8801875e69064523ee453ccd33d27b639d33011222` |
+| 2 | `theorem` | [families_index_specializes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamiliesIndexClassPointwiseGlobalIndexNonzeroIfSupplied.lean/declarations/families-index-specializes.md) | 26 | `result-track:23b930ee676b0f49601ccd753e5fbafd3fc1b43d4e1bc3b49625e2b1f76f3e87` |
+| 3 | `theorem` | [pointwise_global_index_nonzero_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamiliesIndexClassPointwiseGlobalIndexNonzeroIfSupplied.lean/declarations/pointwise-global-index-nonzero-if-supplied.md) | 33 | `result-track:120fc7ee1509ac3e3773021ead41137544169100927af4f15c8df6332a9bb5cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

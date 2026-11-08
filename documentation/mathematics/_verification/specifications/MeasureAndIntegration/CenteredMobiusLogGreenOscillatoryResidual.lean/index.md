@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CenteredMobiusLogGreenOscillatoryResidual.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CenteredMobiusLogGreenOscillatoryResidual.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenOscillatoryResidual.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenOscillatoryResidual.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFiniteHeadComparison`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFiniteHeadComparison`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHeadComparison.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fourierModeValue_factor_phase_sub_one](../../../../MeasureAndIntegration/CenteredMobiusLogGreenOscillatoryResidual.lean/declarations/fouriermodevalue-factor-phase-sub-one.md) | 16 | `result-track:8147f46c7970ea17666f826c5005c64cc64b56f1d441969de41b159e9ce0993a` |
-| 2 | `def` | [greenConstantHarmonicResidual](../../../../MeasureAndIntegration/CenteredMobiusLogGreenOscillatoryResidual.lean/declarations/greenconstantharmonicresidual.md) | 27 | `declaration-track:21a17959df75a576f3f625b8b84f89a8fcf709f6a497d0097366667afe3c4f56` |
-| 3 | `def` | [greenPhaseHarmonicResidual](../../../../MeasureAndIntegration/CenteredMobiusLogGreenOscillatoryResidual.lean/declarations/greenphaseharmonicresidual.md) | 34 | `declaration-track:9108e1752293770bb9056f1613a3ca6ee49258b49a67d8809e2a04f690e586bf` |
-| 4 | `theorem` | [greenCenteringResidual_eq_phase_sub_constant](../../../../MeasureAndIntegration/CenteredMobiusLogGreenOscillatoryResidual.lean/declarations/greencenteringresidual-eq-phase-sub-constant.md) | 45 | `result-track:e849106215ba50c810a48c7709bed2e52f874f0f6cc36dfb0906106efbe0c887` |
-| 5 | `def` | [GreenMeshAliasing](../../../../MeasureAndIntegration/CenteredMobiusLogGreenOscillatoryResidual.lean/declarations/greenmeshaliasing.md) | 63 | `declaration-track:e18630c41c7dc19c9ff3ed39194a2bc270140f6c43c5cdce3ed887bad80e90d2` |
-| 6 | `def` | [GreenMeshNonaliasing](../../../../MeasureAndIntegration/CenteredMobiusLogGreenOscillatoryResidual.lean/declarations/greenmeshnonaliasing.md) | 67 | `declaration-track:571f6afe4cfbc39b37ac80437492bcc75a7d5c28bd633b1b69f24543d409d6bd` |
+| 1 | `theorem` | [fourierModeValue_factor_phase_sub_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenOscillatoryResidual.lean/declarations/fouriermodevalue-factor-phase-sub-one.md) | 16 | `result-track:8147f46c7970ea17666f826c5005c64cc64b56f1d441969de41b159e9ce0993a` |
+| 2 | `def` | [greenConstantHarmonicResidual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenOscillatoryResidual.lean/declarations/greenconstantharmonicresidual.md) | 27 | `declaration-track:21a17959df75a576f3f625b8b84f89a8fcf709f6a497d0097366667afe3c4f56` |
+| 3 | `def` | [greenPhaseHarmonicResidual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenOscillatoryResidual.lean/declarations/greenphaseharmonicresidual.md) | 34 | `declaration-track:9108e1752293770bb9056f1613a3ca6ee49258b49a67d8809e2a04f690e586bf` |
+| 4 | `theorem` | [greenCenteringResidual_eq_phase_sub_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenOscillatoryResidual.lean/declarations/greencenteringresidual-eq-phase-sub-constant.md) | 45 | `result-track:e849106215ba50c810a48c7709bed2e52f874f0f6cc36dfb0906106efbe0c887` |
+| 5 | `def` | [GreenMeshAliasing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenOscillatoryResidual.lean/declarations/greenmeshaliasing.md) | 63 | `declaration-track:e18630c41c7dc19c9ff3ed39194a2bc270140f6c43c5cdce3ed887bad80e90d2` |
+| 6 | `def` | [GreenMeshNonaliasing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenOscillatoryResidual.lean/declarations/greenmeshnonaliasing.md) | 67 | `declaration-track:571f6afe4cfbc39b37ac80437492bcc75a7d5c28bd633b1b69f24543d409d6bd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

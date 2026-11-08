@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelevantFamilyAndUniformNonzero.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelevantFamilyAndUniformNonzero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelevantFamilyAndUniformNonzero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelevantFamilyAndUniformNonzero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RelevantArithmeticFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelevantFamilyAndUniformNonzero.lean/declarations/relevantarithmeticfamily.md) | 40 | `declaration-track:149a846835a4429bbf6377e6fdce3e70f5b719ef2bd973d6c22634c1c47c78eb` |
-| 2 | `structure` | [GlobalKIndexNonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelevantFamilyAndUniformNonzero.lean/declarations/globalkindexnonzero.md) | 52 | `declaration-track:a37cc29f7b56b529f1be484594933f35498c40821a1cf30315a663cec668267b` |
-| 3 | `theorem` | [global_k_index_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelevantFamilyAndUniformNonzero.lean/declarations/global-k-index-nonzero.md) | 58 | `result-track:987757792a2bbdfe9642a05d1ae86a3a834c923d4df60432edb77f6798424b9f` |
+| 1 | `structure` | [RelevantArithmeticFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelevantFamilyAndUniformNonzero.lean/declarations/relevantarithmeticfamily.md) | 40 | `declaration-track:149a846835a4429bbf6377e6fdce3e70f5b719ef2bd973d6c22634c1c47c78eb` |
+| 2 | `structure` | [GlobalKIndexNonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelevantFamilyAndUniformNonzero.lean/declarations/globalkindexnonzero.md) | 52 | `declaration-track:a37cc29f7b56b529f1be484594933f35498c40821a1cf30315a663cec668267b` |
+| 3 | `theorem` | [global_k_index_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelevantFamilyAndUniformNonzero.lean/declarations/global-k-index-nonzero.md) | 58 | `result-track:987757792a2bbdfe9642a05d1ae86a3a834c923d4df60432edb77f6798424b9f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

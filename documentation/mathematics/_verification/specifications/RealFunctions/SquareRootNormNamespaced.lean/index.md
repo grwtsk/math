@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SquareRootNormNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/SquareRootNormNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNormNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNormNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [squareRootWeight](../../../../RealFunctions/SquareRootNormNamespaced.lean/declarations/squarerootweight.md) | 24 | `declaration-track:90e71dc2a2c363ed9bbc6eebf1315f35a79b80d82a490357585d48576c375a2f` |
-| 2 | `structure` | [SquareRootNormCertificate](../../../../RealFunctions/SquareRootNormNamespaced.lean/declarations/squarerootnormcertificate.md) | 28 | `declaration-track:403117b2db79d922f3fc4124aaafed682c44deb853b1a575dbc22fed92e8c0c5` |
-| 3 | `constant` | [(anonymous)](../../../../RealFunctions/SquareRootNormNamespaced.lean/declarations/constant.md) | 32 | `declaration-track:9e5e6f1e58019cca27c1fd1ccfe3db8e6fa80a1b52e95d939595bd81ef40e58c` |
-| 4 | `constant` | [*](../../../../RealFunctions/SquareRootNormNamespaced.lean/declarations/anonymous-source-edition-3.md) | 38 | `declaration-track:bddaac1828210735537954d17cace10bf37992a933a5f6db83a7ee49d13e7bcd` |
-| 5 | `def` | [SquareRootNormFinite](../../../../RealFunctions/SquareRootNormNamespaced.lean/declarations/squarerootnormfinite.md) | 41 | `declaration-track:634163b5655686be956138fc165aacc39e070246fdb3dad921d0364af2221da6` |
-| 6 | `constant` | [*](../../../../RealFunctions/SquareRootNormNamespaced.lean/declarations/anonymous.md) | 48 | `declaration-track:20b718dc2d2f8bc28275ceb2e01f21136930c9820c0b68c15297c2918701ac74` |
-| 7 | `theorem` | [squareRootNorm_finite](../../../../RealFunctions/SquareRootNormNamespaced.lean/declarations/squarerootnorm-finite.md) | 51 | `result-track:a81195a8bb3d3b7d6cb33ba7f00054a6fe16dec20bc29408a4bea2f689ed19c3` |
-| 8 | `structure` | [BitfieldSquareRootBudget](../../../../RealFunctions/SquareRootNormNamespaced.lean/declarations/bitfieldsquarerootbudget.md) | 60 | `declaration-track:6baac0772005b36cf9e776e4077275c530bcedecb3fbbdd4d33b3de758f8002f` |
-| 9 | `constant` | [(anonymous)](../../../../RealFunctions/SquareRootNormNamespaced.lean/declarations/constant-source-edition-2.md) | 65 | `declaration-track:e9a7544b457dca07457cac6a20ba674cfb64c3342a34bc9f3468126a82279998` |
-| 10 | `constant` | [*](../../../../RealFunctions/SquareRootNormNamespaced.lean/declarations/anonymous-source-edition-2.md) | 69 | `declaration-track:4bae5cecb61b56d1617e698fdb69b08c99597552331a21a4f9ca1a04f0a3e51d` |
+| 1 | `def` | [squareRootWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNormNamespaced.lean/declarations/squarerootweight.md) | 24 | `declaration-track:90e71dc2a2c363ed9bbc6eebf1315f35a79b80d82a490357585d48576c375a2f` |
+| 2 | `structure` | [SquareRootNormCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNormNamespaced.lean/declarations/squarerootnormcertificate.md) | 28 | `declaration-track:403117b2db79d922f3fc4124aaafed682c44deb853b1a575dbc22fed92e8c0c5` |
+| 3 | `constant` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNormNamespaced.lean/declarations/constant.md) | 32 | `declaration-track:9e5e6f1e58019cca27c1fd1ccfe3db8e6fa80a1b52e95d939595bd81ef40e58c` |
+| 4 | `constant` | [*](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNormNamespaced.lean/declarations/anonymous-source-edition-3.md) | 38 | `declaration-track:bddaac1828210735537954d17cace10bf37992a933a5f6db83a7ee49d13e7bcd` |
+| 5 | `def` | [SquareRootNormFinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNormNamespaced.lean/declarations/squarerootnormfinite.md) | 41 | `declaration-track:634163b5655686be956138fc165aacc39e070246fdb3dad921d0364af2221da6` |
+| 6 | `constant` | [*](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNormNamespaced.lean/declarations/anonymous.md) | 48 | `declaration-track:20b718dc2d2f8bc28275ceb2e01f21136930c9820c0b68c15297c2918701ac74` |
+| 7 | `theorem` | [squareRootNorm_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNormNamespaced.lean/declarations/squarerootnorm-finite.md) | 51 | `result-track:a81195a8bb3d3b7d6cb33ba7f00054a6fe16dec20bc29408a4bea2f689ed19c3` |
+| 8 | `structure` | [BitfieldSquareRootBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNormNamespaced.lean/declarations/bitfieldsquarerootbudget.md) | 60 | `declaration-track:6baac0772005b36cf9e776e4077275c530bcedecb3fbbdd4d33b3de758f8002f` |
+| 9 | `constant` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNormNamespaced.lean/declarations/constant-source-edition-2.md) | 65 | `declaration-track:e9a7544b457dca07457cac6a20ba674cfb64c3342a34bc9f3468126a82279998` |
+| 10 | `constant` | [*](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNormNamespaced.lean/declarations/anonymous-source-edition-2.md) | 69 | `declaration-track:4bae5cecb61b56d1617e698fdb69b08c99597552331a21a4f9ca1a04f0a3e51d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

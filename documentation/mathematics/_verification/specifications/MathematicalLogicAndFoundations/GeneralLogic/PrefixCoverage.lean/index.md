@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -67,15 +67,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [workClock](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/declarations/workclock.md) | 27 | `declaration-track:d741d8be8e21f7831247c14cd39769343fb0418d49542415bcb91d28fb4c2e9a` |
-| 2 | `theorem` | [workClock_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/declarations/workclock-zero.md) | 30 | `result-track:3a34aaaab7eca586eac4de9f0798952b31445f9126b8b90c5aabd31265dfbb2a` |
-| 3 | `theorem` | [workClock_succ](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/declarations/workclock-succ.md) | 31 | `result-track:8c2d9d74ece3b903b7d1650f4206d44aa9f897d231eb0115fb7b6f87c59742c7` |
-| 4 | `theorem` | [workClock_ge_index](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/declarations/workclock-ge-index.md) | 34 | `result-track:7b574dd1ecd42a204d05b27b2fd56b2d42d8520310eb0805e14287e9e0eed6f0` |
-| 5 | `theorem` | [prefix_obligation_covered](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/declarations/prefix-obligation-covered.md) | 41 | `result-track:b986cf136e6896d2063e4911e0bfe0839f35923701eb586fb5cba6128fabb5f3` |
-| 6 | `def` | [batchSize](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/declarations/batchsize.md) | 45 | `declaration-track:ecdc8b757a8acfbbbce3e0f9c4a9e9fd87bba517b332de304f9aae3c695f463c` |
-| 7 | `theorem` | [batchSize_bounds](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/declarations/batchsize-bounds.md) | 47 | `result-track:0bc68e1a18862570d4be7861c733a705876ab5e330b1f7755cb78686ed0dea05` |
-| 8 | `theorem` | [unbounded_clock_does_not_imply_channel_service](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/declarations/unbounded-clock-does-not-imply-channel-service.md) | 58 | `result-track:4b6a066475f0a7c0a5617a1dc5ff0eda6808d302bca65155626de47bac705148` |
-| 9 | `theorem` | [fractional_rounding_starves](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/declarations/fractional-rounding-starves.md) | 63 | `result-track:61c0397911fccb5f48b65f35348966dbb1fe5371e9c2ce11b97e60b842dabdf7` |
+| 1 | `def` | [workClock](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/declarations/workclock.md) | 27 | `declaration-track:d741d8be8e21f7831247c14cd39769343fb0418d49542415bcb91d28fb4c2e9a` |
+| 2 | `theorem` | [workClock_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/declarations/workclock-zero.md) | 30 | `result-track:3a34aaaab7eca586eac4de9f0798952b31445f9126b8b90c5aabd31265dfbb2a` |
+| 3 | `theorem` | [workClock_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/declarations/workclock-succ.md) | 31 | `result-track:8c2d9d74ece3b903b7d1650f4206d44aa9f897d231eb0115fb7b6f87c59742c7` |
+| 4 | `theorem` | [workClock_ge_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/declarations/workclock-ge-index.md) | 34 | `result-track:7b574dd1ecd42a204d05b27b2fd56b2d42d8520310eb0805e14287e9e0eed6f0` |
+| 5 | `theorem` | [prefix_obligation_covered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/declarations/prefix-obligation-covered.md) | 41 | `result-track:b986cf136e6896d2063e4911e0bfe0839f35923701eb586fb5cba6128fabb5f3` |
+| 6 | `def` | [batchSize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/declarations/batchsize.md) | 45 | `declaration-track:ecdc8b757a8acfbbbce3e0f9c4a9e9fd87bba517b332de304f9aae3c695f463c` |
+| 7 | `theorem` | [batchSize_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/declarations/batchsize-bounds.md) | 47 | `result-track:0bc68e1a18862570d4be7861c733a705876ab5e330b1f7755cb78686ed0dea05` |
+| 8 | `theorem` | [unbounded_clock_does_not_imply_channel_service](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/declarations/unbounded-clock-does-not-imply-channel-service.md) | 58 | `result-track:4b6a066475f0a7c0a5617a1dc5ff0eda6808d302bca65155626de47bac705148` |
+| 9 | `theorem` | [fractional_rounding_starves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrefixCoverage.lean/declarations/fractional-rounding-starves.md) | 63 | `result-track:61c0397911fccb5f48b65f35348966dbb1fe5371e9c2ce11b97e60b842dabdf7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

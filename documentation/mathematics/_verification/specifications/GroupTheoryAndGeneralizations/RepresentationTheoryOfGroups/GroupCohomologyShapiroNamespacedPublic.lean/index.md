@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/GroupCohomologyShapiroNamespacedPublic.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/GroupCohomologyShapiroNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/GroupCohomologyShapiroNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/GroupCohomologyShapiroNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [linearYonedaObjResProjectiveResolutionIso](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/GroupCohomologyShapiroNamespacedPublic.lean/declarations/linearyonedaobjresprojectiveresolutioniso.md) | 56 | `declaration-track:3ce9d567065e2c7d8d1743124db4b77f61c30080108d17984216e5bb4f188981` |
-| 2 | `def` | [coindIso](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/GroupCohomologyShapiroNamespacedPublic.lean/declarations/coindiso.md) | 67 | `declaration-track:4a0329bd8fd7aaa93e375615446b8a2b9dcd58f167e34773f7efb46fd2557760` |
+| 1 | `def` | [linearYonedaObjResProjectiveResolutionIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/GroupCohomologyShapiroNamespacedPublic.lean/declarations/linearyonedaobjresprojectiveresolutioniso.md) | 56 | `declaration-track:3ce9d567065e2c7d8d1743124db4b77f61c30080108d17984216e5bb4f188981` |
+| 2 | `def` | [coindIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/GroupCohomologyShapiroNamespacedPublic.lean/declarations/coindiso.md) | 67 | `declaration-track:4a0329bd8fd7aaa93e375615446b8a2b9dcd58f167e34773f7efb46fd2557760` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

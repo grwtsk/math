@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [WalkingPair](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/declarations/walkingpair.md) | 14 | `declaration-track:e90ec5c0f9c1349c2c9764e67ebd8ac1e186ad1399331048d95853a732801b76` |
-| 2 | `def` | [WidePullbackShape](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/declarations/widepullbackshape.md) | 16 | `declaration-track:d4ef129494971642734048b93cc58e443befcc31d021c7283e223ab3df30e02e` |
-| 3 | `abbrev` | [WalkingCospan](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/declarations/walkingcospan.md) | 18 | `declaration-track:98aa31d51368094807bc05fbaa9709f015342839afc9816aa4cccfb8449fd15c` |
-| 4 | `def` | [WalkingCospan_elim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/declarations/walkingcospan-elim.md) | 21 | `declaration-track:22cbcb36ccde8a4579cf3a8b19e869a9975bfdac45d9ac756c9d4501034d418e` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/declarations/example-source-edition-3.md) | 37 | `declaration-track:c2b7278b3b37ef864fd873738b2355bb0729836a5f8978a7539b7bdf842b6430` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/declarations/example-source-edition-2.md) | 40 | `declaration-track:7c84b02d33c2747eed9392ab386f35a0bc99a2b12db141d24729aec392967a68` |
-| 7 | `def` | [Foo](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/declarations/foo.md) | 44 | `declaration-track:144c1065853b8734ca89286aac1d3a5cb0a874236f7804fcbe9fd9bbcd3d841a` |
-| 8 | `def` | [Bar](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/declarations/bar.md) | 47 | `declaration-track:3772fae86cba3842dad3546c37f7525537640984d7ca97af50732464abcb5e74` |
-| 9 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/declarations/example.md) | 64 | `declaration-track:225e8e5b350efa16c313f0caff509be59fa98cef27db48a4756ac057c9cdd02e` |
+| 1 | `structure` | [WalkingPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/declarations/walkingpair.md) | 14 | `declaration-track:e90ec5c0f9c1349c2c9764e67ebd8ac1e186ad1399331048d95853a732801b76` |
+| 2 | `def` | [WidePullbackShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/declarations/widepullbackshape.md) | 16 | `declaration-track:d4ef129494971642734048b93cc58e443befcc31d021c7283e223ab3df30e02e` |
+| 3 | `abbrev` | [WalkingCospan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/declarations/walkingcospan.md) | 18 | `declaration-track:98aa31d51368094807bc05fbaa9709f015342839afc9816aa4cccfb8449fd15c` |
+| 4 | `def` | [WalkingCospan_elim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/declarations/walkingcospan-elim.md) | 21 | `declaration-track:22cbcb36ccde8a4579cf3a8b19e869a9975bfdac45d9ac756c9d4501034d418e` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/declarations/example-source-edition-3.md) | 37 | `declaration-track:c2b7278b3b37ef864fd873738b2355bb0729836a5f8978a7539b7bdf842b6430` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/declarations/example-source-edition-2.md) | 40 | `declaration-track:7c84b02d33c2747eed9392ab386f35a0bc99a2b12db141d24729aec392967a68` |
+| 7 | `def` | [Foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/declarations/foo.md) | 44 | `declaration-track:144c1065853b8734ca89286aac1d3a5cb0a874236f7804fcbe9fd9bbcd3d841a` |
+| 8 | `def` | [Bar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/declarations/bar.md) | 47 | `declaration-track:3772fae86cba3842dad3546c37f7525537640984d7ca97af50732464abcb5e74` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Unfold.lean/declarations/example.md) | 64 | `declaration-track:225e8e5b350efa16c313f0caff509be59fa98cef27db48a4756ac057c9cdd02e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

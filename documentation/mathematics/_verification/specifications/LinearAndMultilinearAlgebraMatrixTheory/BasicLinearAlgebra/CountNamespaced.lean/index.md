@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CountNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CountNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CountNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CountNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [trueCount](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CountNamespaced.lean/declarations/truecount.md) | 17 | `declaration-track:02d95ade784fe0174f5aa24ef69ab3b80ea776c03c4d2037fe681b787c410aa2` |
-| 2 | `theorem` | [trueCount_nonneg](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CountNamespaced.lean/declarations/truecount-nonneg.md) | 22 | `result-track:af33b312197498d5bd096b0f2ff4b30207d3022297f7bc193174e9ea0fc6519f` |
-| 3 | `theorem` | [trueCount_zeros](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CountNamespaced.lean/declarations/truecount-zeros.md) | 27 | `result-track:4f9bea3ec98ec25d71b27a63a44adc9a42db9446228e1ce709a0590893bc0650` |
+| 1 | `def` | [trueCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CountNamespaced.lean/declarations/truecount.md) | 17 | `declaration-track:02d95ade784fe0174f5aa24ef69ab3b80ea776c03c4d2037fe681b787c410aa2` |
+| 2 | `theorem` | [trueCount_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CountNamespaced.lean/declarations/truecount-nonneg.md) | 22 | `result-track:af33b312197498d5bd096b0f2ff4b30207d3022297f7bc193174e9ea0fc6519f` |
+| 3 | `theorem` | [trueCount_zeros](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CountNamespaced.lean/declarations/truecount-zeros.md) | 27 | `result-track:4f9bea3ec98ec25d71b27a63a44adc9a42db9446228e1ce709a0590893bc0650` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

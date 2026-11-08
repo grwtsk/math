@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFunctorToTypesPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFunctorToTypesPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFunctorToTypesPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFunctorToTypesPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [jointly_surjective](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFunctorToTypesPublic.lean/declarations/jointly-surjective-source-edition-2.md) | 30 | `result-track:45ef67568641e6b094169904b9adb4211e0e7ee6f9f9c3d4f4cbeb67f698c768` |
-| 2 | `theorem` | [jointly_surjective'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFunctorToTypesPublic.lean/declarations/jointly-surjective.md) | 36 | `result-track:1d3e71e4499022e079ed5d2dcdbcf6718205f379f33692bfde941e0c0137d990` |
-| 3 | `theorem` | [colimit.map_ι_apply](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFunctorToTypesPublic.lean/declarations/colimit-map-apply.md) | 40 | `result-track:30fe8d00f1ec3fde621d60c7b60e738305ac4e7fe668d439cf1a905c32354440` |
+| 1 | `theorem` | [jointly_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFunctorToTypesPublic.lean/declarations/jointly-surjective-source-edition-2.md) | 30 | `result-track:45ef67568641e6b094169904b9adb4211e0e7ee6f9f9c3d4f4cbeb67f698c768` |
+| 2 | `theorem` | [jointly_surjective'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFunctorToTypesPublic.lean/declarations/jointly-surjective.md) | 36 | `result-track:1d3e71e4499022e079ed5d2dcdbcf6718205f379f33692bfde941e0c0137d990` |
+| 3 | `theorem` | [colimit.map_ι_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFunctorToTypesPublic.lean/declarations/colimit-map-apply.md) | 40 | `result-track:30fe8d00f1ec3fde621d60c7b60e738305ac4e7fe668d439cf1a905c32354440` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

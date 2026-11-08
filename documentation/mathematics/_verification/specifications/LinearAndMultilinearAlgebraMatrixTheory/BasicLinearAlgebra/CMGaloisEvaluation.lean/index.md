@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.Hodge.CMGaloisEmbeddingMatrix`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEmbeddingMatrix.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.AlgebraicGeometry.Hodge.CMRegularBaseChange`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMRegularBaseChange.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.Hodge.CMGaloisEmbeddingMatrix`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEmbeddingMatrix.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.Hodge.CMRegularBaseChange`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMRegularBaseChange.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.LinearAlgebra.FiniteDimensional.Lemmas` — import line 7; external provider; requires a separately pinned dependency.
 - `Mathlib.RingTheory.TensorProduct.Free` — import line 8; external provider; requires a separately pinned dependency.
 
@@ -60,17 +60,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [embeddingValues](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/embeddingvalues.md) | 39 | `declaration-track:44b109c90111da367d025e70297103455b983c95fad82bb04e6564002e37d316` |
-| 2 | `def` | [evaluation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/evaluation.md) | 49 | `declaration-track:aa93b9dd8b02585a8f3b28666b36573de2cb4b0e5e8e7ed756222d9d58a3f38c` |
-| 3 | `theorem` | [evaluation_tmul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/evaluation-tmul.md) | 53 | `result-track:607de6266839a0e6929f0bf779f13b28e1d03743132aece47c89623c153a05ba` |
-| 4 | `def` | [sourceBasis](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/sourcebasis.md) | 59 | `declaration-track:a4cf64f9e9f5d9fe6b46035bbec5ac5654da41d9b661673f914719eac2de8e7f` |
-| 5 | `theorem` | [evaluation_toMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/evaluation-tomatrix.md) | 63 | `result-track:11cb42e1013ff850275f5a05a3d6a75efe2ef9e1b3d0b259f4d824cc7ed1a50e` |
-| 6 | `theorem` | [evaluation_matrix_det_ne_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/evaluation-matrix-det-ne-zero.md) | 73 | `result-track:bd003ee1209473e30ceed61df75f0012f0ce48676a19682fdc010a49fa4b0410` |
-| 7 | `theorem` | [evaluation_injective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/evaluation-injective.md) | 80 | `result-track:c0a444c9b84318d88358aab72c4ddc1652355dcef6e2a34ed1feb53712e874f5` |
-| 8 | `theorem` | [evaluation_finrank_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/evaluation-finrank-eq.md) | 94 | `result-track:b2d60a931299919f86d9be49a4c308f0adf6013786c6f1d405a5520728533c1c` |
-| 9 | `def` | [evaluationEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/evaluationequiv.md) | 100 | `declaration-track:3221de93a1326ea75335aa316bf6d9e049c163b4f2ac448fe51417d1ab92d38f` |
-| 10 | `theorem` | [evaluationEquiv_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/evaluationequiv-apply.md) | 106 | `result-track:7b464c33e22c01b5807a5be196d5becf5694d7c1306dc96c55d481643c9ebfe8` |
-| 11 | `theorem` | [evaluationEquiv_tmul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/evaluationequiv-tmul.md) | 110 | `result-track:950c8ef0e477c99c369b7b24ff04f7de05ab636761eb4a0e30a1e09c14c32464` |
+| 1 | `def` | [embeddingValues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/embeddingvalues.md) | 39 | `declaration-track:44b109c90111da367d025e70297103455b983c95fad82bb04e6564002e37d316` |
+| 2 | `def` | [evaluation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/evaluation.md) | 49 | `declaration-track:aa93b9dd8b02585a8f3b28666b36573de2cb4b0e5e8e7ed756222d9d58a3f38c` |
+| 3 | `theorem` | [evaluation_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/evaluation-tmul.md) | 53 | `result-track:607de6266839a0e6929f0bf779f13b28e1d03743132aece47c89623c153a05ba` |
+| 4 | `def` | [sourceBasis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/sourcebasis.md) | 59 | `declaration-track:a4cf64f9e9f5d9fe6b46035bbec5ac5654da41d9b661673f914719eac2de8e7f` |
+| 5 | `theorem` | [evaluation_toMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/evaluation-tomatrix.md) | 63 | `result-track:11cb42e1013ff850275f5a05a3d6a75efe2ef9e1b3d0b259f4d824cc7ed1a50e` |
+| 6 | `theorem` | [evaluation_matrix_det_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/evaluation-matrix-det-ne-zero.md) | 73 | `result-track:bd003ee1209473e30ceed61df75f0012f0ce48676a19682fdc010a49fa4b0410` |
+| 7 | `theorem` | [evaluation_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/evaluation-injective.md) | 80 | `result-track:c0a444c9b84318d88358aab72c4ddc1652355dcef6e2a34ed1feb53712e874f5` |
+| 8 | `theorem` | [evaluation_finrank_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/evaluation-finrank-eq.md) | 94 | `result-track:b2d60a931299919f86d9be49a4c308f0adf6013786c6f1d405a5520728533c1c` |
+| 9 | `def` | [evaluationEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/evaluationequiv.md) | 100 | `declaration-track:3221de93a1326ea75335aa316bf6d9e049c163b4f2ac448fe51417d1ab92d38f` |
+| 10 | `theorem` | [evaluationEquiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/evaluationequiv-apply.md) | 106 | `result-track:7b464c33e22c01b5807a5be196d5becf5694d7c1306dc96c55d481643c9ebfe8` |
+| 11 | `theorem` | [evaluationEquiv_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMGaloisEvaluation.lean/declarations/evaluationequiv-tmul.md) | 110 | `result-track:950c8ef0e477c99c369b7b24ff04f7de05ab636761eb4a0e30a1e09c14c32464` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

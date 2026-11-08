@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [eqLocus](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/declarations/eqlocus.md) | 43 | `declaration-track:b85c38ffa6dfdb5b667806f826830935c773035b79bd5638169c64382be77cbb` |
-| 2 | `theorem` | [mem_eqLocus](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/declarations/mem-eqlocus.md) | 51 | `result-track:045e976d4fb570b94a6e5ed461e07f9ffb4e40657327829428cdc7ac86a78bb7` |
-| 3 | `theorem` | [eqLocus_toAddSubmonoid](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/declarations/eqlocus-toaddsubmonoid.md) | 54 | `result-track:943d396e14f739ae7326d57807d1480ab1207dc3238289170decbc508b58779f` |
-| 4 | `theorem` | [eqLocus_eq_top](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/declarations/eqlocus-eq-top.md) | 59 | `result-track:229621e2bbe86b6c8afc0db8bc99fa5dd6e35ee1e5705d7e159849ba9a73cfa8` |
-| 5 | `theorem` | [eqLocus_same](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/declarations/eqlocus-same.md) | 63 | `result-track:1a5042750083f29f384ee565a0fed4f0b7dd8021f42bf43f92c73bf75fec50f7` |
-| 6 | `theorem` | [le_eqLocus](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/declarations/le-eqlocus.md) | 65 | `result-track:de4eaab691d1893c91d3e1a93c6f4dc832870801b957a223b9e435113887355f` |
-| 7 | `theorem` | [eqOn_sup](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/declarations/eqon-sup.md) | 68 | `result-track:71131070cba2bf5dd8689339d4f39f7ccb197c0ac65276fddf8c46750f05518f` |
-| 8 | `theorem` | [ext_on_codisjoint](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/declarations/ext-on-codisjoint.md) | 74 | `result-track:67752aeafb2a205b1a9419da75b24a2f1e3748c54c71793570a308484b6a1c79` |
-| 9 | `theorem` | [eqLocus_eq_ker_sub](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/declarations/eqlocus-eq-ker-sub.md) | 91 | `result-track:914e33a9003ea24261013f5b46b753625a4bc3eb24d04effb770b08bc44f6414` |
+| 1 | `def` | [eqLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/declarations/eqlocus.md) | 43 | `declaration-track:b85c38ffa6dfdb5b667806f826830935c773035b79bd5638169c64382be77cbb` |
+| 2 | `theorem` | [mem_eqLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/declarations/mem-eqlocus.md) | 51 | `result-track:045e976d4fb570b94a6e5ed461e07f9ffb4e40657327829428cdc7ac86a78bb7` |
+| 3 | `theorem` | [eqLocus_toAddSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/declarations/eqlocus-toaddsubmonoid.md) | 54 | `result-track:943d396e14f739ae7326d57807d1480ab1207dc3238289170decbc508b58779f` |
+| 4 | `theorem` | [eqLocus_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/declarations/eqlocus-eq-top.md) | 59 | `result-track:229621e2bbe86b6c8afc0db8bc99fa5dd6e35ee1e5705d7e159849ba9a73cfa8` |
+| 5 | `theorem` | [eqLocus_same](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/declarations/eqlocus-same.md) | 63 | `result-track:1a5042750083f29f384ee565a0fed4f0b7dd8021f42bf43f92c73bf75fec50f7` |
+| 6 | `theorem` | [le_eqLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/declarations/le-eqlocus.md) | 65 | `result-track:de4eaab691d1893c91d3e1a93c6f4dc832870801b957a223b9e435113887355f` |
+| 7 | `theorem` | [eqOn_sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/declarations/eqon-sup.md) | 68 | `result-track:71131070cba2bf5dd8689339d4f39f7ccb197c0ac65276fddf8c46750f05518f` |
+| 8 | `theorem` | [ext_on_codisjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/declarations/ext-on-codisjoint.md) | 74 | `result-track:67752aeafb2a205b1a9419da75b24a2f1e3748c54c71793570a308484b6a1c79` |
+| 9 | `theorem` | [eqLocus_eq_ker_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EqLocus.lean/declarations/eqlocus-eq-ker-sub.md) | 91 | `result-track:914e33a9003ea24261013f5b46b753625a4bc3eb24d04effb770b08bc44f6414` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

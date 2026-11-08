@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Cochain0](../../../../../Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/declarations/cochain0.md) | 38 | `declaration-track:d11e5b0e43f41c274e136f7af99370a2524e256e26515fba357c93e00f99c4c1` |
-| 2 | `abbrev` | [Cochain1](../../../../../Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/declarations/cochain1.md) | 41 | `declaration-track:2e3503c2fb402225b62bc9c14acf4b8083e859af1ed5a96ab10b901726b6231f` |
-| 3 | `def` | [coboundary](../../../../../Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/declarations/coboundary.md) | 44 | `declaration-track:ab5f17a557b657bba09146f5f1d430fe51171cc69b87ff0ea0b51d39a2bb28c4` |
-| 4 | `inductive` | [EdgePath](../../../../../Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/declarations/edgepath.md) | 49 | `declaration-track:849d300382c3a539cf0111c4ae02a76ad4545903d35aa6c9236781a1e128b00e` |
-| 5 | `def` | [pathIntegral](../../../../../Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/declarations/pathintegral.md) | 57 | `declaration-track:42a2cea5ef72017b3f1065769b17991b44c559bb83add950964c05846586ea09` |
-| 6 | `theorem` | [pathIntegral_coboundary](../../../../../Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/declarations/pathintegral-coboundary.md) | 63 | `result-track:60d791fc005d71967b5ba8d37ba056220963f11b3efca5dadca204da1939f9ee` |
-| 7 | `theorem` | [loopIntegral_coboundary_zero](../../../../../Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/declarations/loopintegral-coboundary-zero.md) | 73 | `result-track:1e7bc918579b34cf50f6ebcc1c0dc34bdb455a3a01cafddf3440ed7056440439` |
-| 8 | `theorem` | [pathIntegral_add](../../../../../Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/declarations/pathintegral-add.md) | 80 | `result-track:bacd1085939c79ff3fb0f8705316f0ba7810f4e3d8f865de94fd844d7635bef2` |
+| 1 | `abbrev` | [Cochain0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/declarations/cochain0.md) | 38 | `declaration-track:d11e5b0e43f41c274e136f7af99370a2524e256e26515fba357c93e00f99c4c1` |
+| 2 | `abbrev` | [Cochain1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/declarations/cochain1.md) | 41 | `declaration-track:2e3503c2fb402225b62bc9c14acf4b8083e859af1ed5a96ab10b901726b6231f` |
+| 3 | `def` | [coboundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/declarations/coboundary.md) | 44 | `declaration-track:ab5f17a557b657bba09146f5f1d430fe51171cc69b87ff0ea0b51d39a2bb28c4` |
+| 4 | `inductive` | [EdgePath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/declarations/edgepath.md) | 49 | `declaration-track:849d300382c3a539cf0111c4ae02a76ad4545903d35aa6c9236781a1e128b00e` |
+| 5 | `def` | [pathIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/declarations/pathintegral.md) | 57 | `declaration-track:42a2cea5ef72017b3f1065769b17991b44c559bb83add950964c05846586ea09` |
+| 6 | `theorem` | [pathIntegral_coboundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/declarations/pathintegral-coboundary.md) | 63 | `result-track:60d791fc005d71967b5ba8d37ba056220963f11b3efca5dadca204da1939f9ee` |
+| 7 | `theorem` | [loopIntegral_coboundary_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/declarations/loopintegral-coboundary-zero.md) | 73 | `result-track:1e7bc918579b34cf50f6ebcc1c0dc34bdb455a3a01cafddf3440ed7056440439` |
+| 8 | `theorem` | [pathIntegral_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/declarations/pathintegral-add.md) | 80 | `result-track:bacd1085939c79ff3fb0f8705316f0ba7810f4e3d8f865de94fd844d7635bef2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

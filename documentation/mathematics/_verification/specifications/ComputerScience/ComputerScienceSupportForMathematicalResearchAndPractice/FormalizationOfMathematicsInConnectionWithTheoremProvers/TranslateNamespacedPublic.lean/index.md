@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TranslateNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TranslateNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TranslateNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TranslateNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [descopeSyntax](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TranslateNamespacedPublic.lean/declarations/descopesyntax.md) | 27 | `declaration-track:50dd5f4020caf80d9b75add145589795d65feb0e33807aeb838962b2821b97ce` |
-| 2 | `def` | [descopeTSyntax](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TranslateNamespacedPublic.lean/declarations/descopetsyntax.md) | 33 | `declaration-track:5f5ca0f085fd7b4417d38f387b2a38a402732fe9b6544c3255e34331dae3aeb8` |
-| 3 | `def` | [Package.mkConfigString](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TranslateNamespacedPublic.lean/declarations/package-mkconfigstring.md) | 36 | `declaration-track:245dbe40a6e1253c4a8fc24ab8f7bd4db17348bc80d407705e70c603b9b56674` |
+| 1 | `def` | [descopeSyntax](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TranslateNamespacedPublic.lean/declarations/descopesyntax.md) | 27 | `declaration-track:50dd5f4020caf80d9b75add145589795d65feb0e33807aeb838962b2821b97ce` |
+| 2 | `def` | [descopeTSyntax](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TranslateNamespacedPublic.lean/declarations/descopetsyntax.md) | 33 | `declaration-track:5f5ca0f085fd7b4417d38f387b2a38a402732fe9b6544c3255e34331dae3aeb8` |
+| 3 | `def` | [Package.mkConfigString](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TranslateNamespacedPublic.lean/declarations/package-mkconfigstring.md) | 36 | `declaration-track:245dbe40a6e1253c4a8fc24ab8f7bd4db17348bc80d407705e70c603b9b56674` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

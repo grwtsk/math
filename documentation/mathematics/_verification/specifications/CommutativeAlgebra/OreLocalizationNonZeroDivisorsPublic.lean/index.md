@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nontrivial_of_nonZeroDivisorsLeft](../../../../CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/nontrivial-of-nonzerodivisorsleft.md) | 25 | `result-track:cffa618a7907adf51e993c6b81a0a4bd336bcbb91445929562193b2f4cfb1897` |
-| 2 | `theorem` | [nontrivial_of_nonZeroDivisorsRight](../../../../CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/nontrivial-of-nonzerodivisorsright.md) | 29 | `result-track:c4c639a51049107722aab43329b417e32182bb2d30aa3eee0485c437bd60530c` |
-| 3 | `theorem` | [nontrivial_of_nonZeroDivisors](../../../../CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/nontrivial-of-nonzerodivisors.md) | 33 | `result-track:9a591edbf7b4581b4d815d0750154c06ff587c9094ee0dd729efa65f27bf3835` |
-| 4 | `instance` | [nontrivial](../../../../CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/nontrivial.md) | 39 | `declaration-track:05bda791255f886a2821a982e2afc3800ba972001c5efb7ee838e4b5c9d4ef5f` |
-| 5 | `def` | [inv](../../../../CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/inv.md) | 48 | `declaration-track:5ee1ca81bf176acbfedb620b9daae0d53dd9eb50115c5d9499886308c2ce96dd` |
-| 6 | `instance` | [inv'](../../../../CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/inv-source-edition-2.md) | 64 | `declaration-track:e74eaefc20f3a9a666bcb9e189eb33290ced128f8c824af88f9799f8d0ff857b` |
-| 7 | `theorem` | [inv_def](../../../../CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/inv-def.md) | 68 | `result-track:433b198e9281bd80d833cdb79e198d524e3cea2ba05436e204aeb10e42e55527` |
-| 8 | `theorem` | [mul_inv_cancel](../../../../CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/mul-inv-cancel.md) | 74 | `result-track:92cadbe002e37666f7b50ccfb9d70cd9f321657e51c43fbfea2f208811b72ad2` |
-| 9 | `theorem` | [inv_zero](../../../../CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/inv-zero.md) | 83 | `result-track:41f34e2d49b550ddfe01ebd7133bfee9a3538185b272766b8bf8eb3b4d537699` |
-| 10 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/instance-source-edition-2.md) | 87 | `declaration-track:3a44559066563effbab6bb23ac6de13e66d4c72e273adfbf9f5002a4a223271b` |
-| 11 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/instance.md) | 97 | `declaration-track:11a6b5bafa125d3384eb216b9022335543cecd4bee724733157750c66920d247` |
+| 1 | `theorem` | [nontrivial_of_nonZeroDivisorsLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/nontrivial-of-nonzerodivisorsleft.md) | 25 | `result-track:cffa618a7907adf51e993c6b81a0a4bd336bcbb91445929562193b2f4cfb1897` |
+| 2 | `theorem` | [nontrivial_of_nonZeroDivisorsRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/nontrivial-of-nonzerodivisorsright.md) | 29 | `result-track:c4c639a51049107722aab43329b417e32182bb2d30aa3eee0485c437bd60530c` |
+| 3 | `theorem` | [nontrivial_of_nonZeroDivisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/nontrivial-of-nonzerodivisors.md) | 33 | `result-track:9a591edbf7b4581b4d815d0750154c06ff587c9094ee0dd729efa65f27bf3835` |
+| 4 | `instance` | [nontrivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/nontrivial.md) | 39 | `declaration-track:05bda791255f886a2821a982e2afc3800ba972001c5efb7ee838e4b5c9d4ef5f` |
+| 5 | `def` | [inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/inv.md) | 48 | `declaration-track:5ee1ca81bf176acbfedb620b9daae0d53dd9eb50115c5d9499886308c2ce96dd` |
+| 6 | `instance` | [inv'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/inv-source-edition-2.md) | 64 | `declaration-track:e74eaefc20f3a9a666bcb9e189eb33290ced128f8c824af88f9799f8d0ff857b` |
+| 7 | `theorem` | [inv_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/inv-def.md) | 68 | `result-track:433b198e9281bd80d833cdb79e198d524e3cea2ba05436e204aeb10e42e55527` |
+| 8 | `theorem` | [mul_inv_cancel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/mul-inv-cancel.md) | 74 | `result-track:92cadbe002e37666f7b50ccfb9d70cd9f321657e51c43fbfea2f208811b72ad2` |
+| 9 | `theorem` | [inv_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/inv-zero.md) | 83 | `result-track:41f34e2d49b550ddfe01ebd7133bfee9a3538185b272766b8bf8eb3b4d537699` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/instance-source-edition-2.md) | 87 | `declaration-track:3a44559066563effbab6bb23ac6de13e66d4c72e273adfbf9f5002a4a223271b` |
+| 11 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OreLocalizationNonZeroDivisorsPublic.lean/declarations/instance.md) | 97 | `declaration-track:11a6b5bafa125d3384eb216b9022335543cecd4bee724733157750c66920d247` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

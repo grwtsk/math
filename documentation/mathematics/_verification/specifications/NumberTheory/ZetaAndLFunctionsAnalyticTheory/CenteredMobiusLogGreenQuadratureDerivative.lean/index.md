@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivative.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenQuadrature`](../../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenQuadrature`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadrature.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [thinFourierModeSlope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivative.lean/declarations/thinfouriermodeslope.md) | 17 | `declaration-track:c4cb3dd76328328e9ec264aaf1d518e5584b49d51c23b7d9f87c8a495e5c0a28` |
-| 2 | `theorem` | [fourierModePrimitive_hasDerivAt_thin](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivative.lean/declarations/fouriermodeprimitive-hasderivat-thin.md) | 20 | `result-track:95e8e071e6eefbdbdf9c319ab913979351fb622aa5c775fd9651c6de30e11275` |
-| 3 | `theorem` | [fourierModeValue_hasDerivAt_thin](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivative.lean/declarations/fouriermodevalue-hasderivat-thin.md) | 28 | `result-track:686662213fec0d429c08f14f438a4971281906ae7142aa4b46d209cf9d145ab9` |
-| 4 | `theorem` | [norm_thinFourierModeSlope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivative.lean/declarations/norm-thinfouriermodeslope.md) | 36 | `result-track:4522c104860dfe15b38c3cda4c8796f01d4a884c5364fab52628f81c71b7826c` |
-| 5 | `theorem` | [greenFourierBackgroundIntegrand_hasDerivAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivative.lean/declarations/greenfourierbackgroundintegrand-hasderivat.md) | 41 | `result-track:03af953a288671c5c1e8f65cf4c9d8804a858e3c9ca971c71e34d23fd6daf573` |
-| 6 | `def` | [GreenCellDerivativeBound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivative.lean/declarations/greencellderivativebound.md) | 66 | `declaration-track:bf8c783000442bfa77a7b9968b4cfb0bfab83e85b86208826563ff2c28886683` |
+| 1 | `def` | [thinFourierModeSlope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivative.lean/declarations/thinfouriermodeslope.md) | 17 | `declaration-track:c4cb3dd76328328e9ec264aaf1d518e5584b49d51c23b7d9f87c8a495e5c0a28` |
+| 2 | `theorem` | [fourierModePrimitive_hasDerivAt_thin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivative.lean/declarations/fouriermodeprimitive-hasderivat-thin.md) | 20 | `result-track:95e8e071e6eefbdbdf9c319ab913979351fb622aa5c775fd9651c6de30e11275` |
+| 3 | `theorem` | [fourierModeValue_hasDerivAt_thin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivative.lean/declarations/fouriermodevalue-hasderivat-thin.md) | 28 | `result-track:686662213fec0d429c08f14f438a4971281906ae7142aa4b46d209cf9d145ab9` |
+| 4 | `theorem` | [norm_thinFourierModeSlope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivative.lean/declarations/norm-thinfouriermodeslope.md) | 36 | `result-track:4522c104860dfe15b38c3cda4c8796f01d4a884c5364fab52628f81c71b7826c` |
+| 5 | `theorem` | [greenFourierBackgroundIntegrand_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivative.lean/declarations/greenfourierbackgroundintegrand-hasderivat.md) | 41 | `result-track:03af953a288671c5c1e8f65cf4c9d8804a858e3c9ca971c71e34d23fd6daf573` |
+| 6 | `def` | [GreenCellDerivativeBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivative.lean/declarations/greencellderivativebound.md) | 66 | `declaration-track:bf8c783000442bfa77a7b9968b4cfb0bfab83e85b86208826563ff2c28886683` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

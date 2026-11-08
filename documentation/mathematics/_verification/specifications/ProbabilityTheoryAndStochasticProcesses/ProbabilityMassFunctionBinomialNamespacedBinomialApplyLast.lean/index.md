@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomialNamespacedBinomialApplyLast.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomialNamespacedBinomialApplyLast.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomialNamespacedBinomialApplyLast.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomialNamespacedBinomialApplyLast.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [binomial](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomialNamespacedBinomialApplyLast.lean/declarations/binomial.md) | 33 | `declaration-track:3a92b543d178b530d74d926be7405d2cea5429fb106791bb34bbdfcdf03e47c4` |
-| 2 | `theorem` | [binomial_apply](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomialNamespacedBinomialApplyLast.lean/declarations/binomial-apply.md) | 48 | `result-track:15ef51113cec5b32ca695411f9893b839f616b9fea0cd3d268b42a75b5150621` |
-| 3 | `theorem` | [binomial_apply_zero](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomialNamespacedBinomialApplyLast.lean/declarations/binomial-apply-zero.md) | 54 | `result-track:026bb22c9513d7cfdfaa6d0a13779edac18c3894825479511405f8f2a97856a6` |
-| 4 | `theorem` | [binomial_apply_last](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomialNamespacedBinomialApplyLast.lean/declarations/binomial-apply-last.md) | 59 | `result-track:a7448b2591e858bd4456961803e0a938bd07740d6c964cc1b5de4169f51375ec` |
-| 5 | `theorem` | [binomial_apply_self](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomialNamespacedBinomialApplyLast.lean/declarations/binomial-apply-self.md) | 63 | `result-track:58e54bcf8ff73b3c04e6709cbd69c38245c07a1b6e7245776c835c20ba7f9061` |
-| 6 | `theorem` | [binomial_one_eq_bernoulli](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomialNamespacedBinomialApplyLast.lean/declarations/binomial-one-eq-bernoulli.md) | 67 | `result-track:59cde4fa3e34032cb9b2e399df869a78c00fd1ea5fa1ce5af22e769daa80cd53` |
+| 1 | `def` | [binomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomialNamespacedBinomialApplyLast.lean/declarations/binomial.md) | 33 | `declaration-track:3a92b543d178b530d74d926be7405d2cea5429fb106791bb34bbdfcdf03e47c4` |
+| 2 | `theorem` | [binomial_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomialNamespacedBinomialApplyLast.lean/declarations/binomial-apply.md) | 48 | `result-track:15ef51113cec5b32ca695411f9893b839f616b9fea0cd3d268b42a75b5150621` |
+| 3 | `theorem` | [binomial_apply_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomialNamespacedBinomialApplyLast.lean/declarations/binomial-apply-zero.md) | 54 | `result-track:026bb22c9513d7cfdfaa6d0a13779edac18c3894825479511405f8f2a97856a6` |
+| 4 | `theorem` | [binomial_apply_last](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomialNamespacedBinomialApplyLast.lean/declarations/binomial-apply-last.md) | 59 | `result-track:a7448b2591e858bd4456961803e0a938bd07740d6c964cc1b5de4169f51375ec` |
+| 5 | `theorem` | [binomial_apply_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomialNamespacedBinomialApplyLast.lean/declarations/binomial-apply-self.md) | 63 | `result-track:58e54bcf8ff73b3c04e6709cbd69c38245c07a1b6e7245776c835c20ba7f9061` |
+| 6 | `theorem` | [binomial_one_eq_bernoulli](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomialNamespacedBinomialApplyLast.lean/declarations/binomial-one-eq-bernoulli.md) | 67 | `result-track:59cde4fa3e34032cb9b2e399df869a78c00fd1ea5fa1ce5af22e769daa80cd53` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

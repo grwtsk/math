@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/EulerPhi.lean/index.md) · [Full source](../../../../NumberTheory/EulerPhi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EulerPhi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EulerPhi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [eulerPhi](../../../../NumberTheory/EulerPhi.lean/declarations/eulerphi.md) | 14 | `declaration-track:18ddaf066efb00c2249394047a1c5a1c4d3fe6d0055a966cbc31d5328429a487` |
-| 2 | `theorem` | [eulerPhi_one](../../../../NumberTheory/EulerPhi.lean/declarations/eulerphi-one.md) | 17 | `result-track:0e4070e86718b70d46fb778643d5824833dea59f329b8249c6885d5983579d81` |
-| 3 | `theorem` | [eulerPhi_prime](../../../../NumberTheory/EulerPhi.lean/declarations/eulerphi-prime.md) | 21 | `result-track:baf74c46b15ff06da8a6e680d179228905fa5e319af359f858f7d8fd1f4b274d` |
-| 4 | `theorem` | [eulerPhi_prime_power](../../../../NumberTheory/EulerPhi.lean/declarations/eulerphi-prime-power.md) | 27 | `result-track:7c33da5dc5d227f42e8c95df1b8bd4a63bf902ec1437906f53c753190db8b543` |
-| 5 | `theorem` | [eulerPhi_mul_of_coprime](../../../../NumberTheory/EulerPhi.lean/declarations/eulerphi-mul-of-coprime.md) | 44 | `result-track:ce685b6aff72d8b66b9e6ce433df263b6e2295512753a6f0090bf4f9ff6a65aa` |
+| 1 | `def` | [eulerPhi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EulerPhi.lean/declarations/eulerphi.md) | 14 | `declaration-track:18ddaf066efb00c2249394047a1c5a1c4d3fe6d0055a966cbc31d5328429a487` |
+| 2 | `theorem` | [eulerPhi_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EulerPhi.lean/declarations/eulerphi-one.md) | 17 | `result-track:0e4070e86718b70d46fb778643d5824833dea59f329b8249c6885d5983579d81` |
+| 3 | `theorem` | [eulerPhi_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EulerPhi.lean/declarations/eulerphi-prime.md) | 21 | `result-track:baf74c46b15ff06da8a6e680d179228905fa5e319af359f858f7d8fd1f4b274d` |
+| 4 | `theorem` | [eulerPhi_prime_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EulerPhi.lean/declarations/eulerphi-prime-power.md) | 27 | `result-track:7c33da5dc5d227f42e8c95df1b8bd4a63bf902ec1437906f53c753190db8b543` |
+| 5 | `theorem` | [eulerPhi_mul_of_coprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EulerPhi.lean/declarations/eulerphi-mul-of-coprime.md) | 44 | `result-track:ce685b6aff72d8b66b9e6ce433df263b6e2295512753a6f0090bf4f9ff6a65aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

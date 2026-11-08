@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AddTorsorAffineMap.lean/index.md) · [Full source](../../../../RealFunctions/AddTorsorAffineMap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AddTorsorAffineMap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AddTorsorAffineMap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [contDiff](../../../../RealFunctions/AddTorsorAffineMap.lean/declarations/contdiff.md) | 28 | `result-track:0fd4584144b28822a34fb3e498ef537b1a31d961caa2762e716a364b90e2ff5d` |
+| 1 | `theorem` | [contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AddTorsorAffineMap.lean/declarations/contdiff.md) | 28 | `result-track:0fd4584144b28822a34fb3e498ef537b1a31d961caa2762e716a364b90e2ff5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

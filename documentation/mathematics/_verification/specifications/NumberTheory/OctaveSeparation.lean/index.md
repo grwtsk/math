@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/OctaveSeparation.lean/index.md) · [Full source](../../../../NumberTheory/OctaveSeparation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OctaveSeparation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OctaveSeparation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [one_le_power](../../../../NumberTheory/OctaveSeparation.lean/declarations/one-le-power.md) | 17 | `result-track:d960f5c1cd980b5d6ecc09d5031d5122aa3cec242e5401bb40f20d4c5cf343a6` |
-| 2 | `theorem` | [two_le_positive_power](../../../../NumberTheory/OctaveSeparation.lean/declarations/two-le-positive-power.md) | 24 | `result-track:f96b3c311bcbe6f4d4bb070e65e50b2c0af0f8fd65e5ce37c2b81ceb6fdbb38d` |
-| 3 | `theorem` | [later_power_at_least_double](../../../../NumberTheory/OctaveSeparation.lean/declarations/later-power-at-least-double.md) | 32 | `result-track:b013390f0a27b1e239be66e8f4f1960f39615f48aed5ecfee586f7ab26867e28` |
-| 4 | `theorem` | [exponent_unique](../../../../NumberTheory/OctaveSeparation.lean/declarations/exponent-unique.md) | 41 | `result-track:2aea2879bd7d37b339949fbb0aabca7487d1bc3310b09d8eaf45f7b725eea2a5` |
-| 5 | `theorem` | [lower_endpoint_excluded](../../../../NumberTheory/OctaveSeparation.lean/declarations/lower-endpoint-excluded.md) | 52 | `result-track:bb64b3330ac0de4de3cc8236262427bfe546847aca40f762ee45b87b90341700` |
-| 6 | `theorem` | [upper_endpoint_allowed](../../../../NumberTheory/OctaveSeparation.lean/declarations/upper-endpoint-allowed.md) | 54 | `result-track:ff69be967f9a73789a702a9d53d0e350f2e2afee12808b8c94ea7fa609f622ee` |
+| 1 | `theorem` | [one_le_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OctaveSeparation.lean/declarations/one-le-power.md) | 17 | `result-track:d960f5c1cd980b5d6ecc09d5031d5122aa3cec242e5401bb40f20d4c5cf343a6` |
+| 2 | `theorem` | [two_le_positive_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OctaveSeparation.lean/declarations/two-le-positive-power.md) | 24 | `result-track:f96b3c311bcbe6f4d4bb070e65e50b2c0af0f8fd65e5ce37c2b81ceb6fdbb38d` |
+| 3 | `theorem` | [later_power_at_least_double](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OctaveSeparation.lean/declarations/later-power-at-least-double.md) | 32 | `result-track:b013390f0a27b1e239be66e8f4f1960f39615f48aed5ecfee586f7ab26867e28` |
+| 4 | `theorem` | [exponent_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OctaveSeparation.lean/declarations/exponent-unique.md) | 41 | `result-track:2aea2879bd7d37b339949fbb0aabca7487d1bc3310b09d8eaf45f7b725eea2a5` |
+| 5 | `theorem` | [lower_endpoint_excluded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OctaveSeparation.lean/declarations/lower-endpoint-excluded.md) | 52 | `result-track:bb64b3330ac0de4de3cc8236262427bfe546847aca40f762ee45b87b90341700` |
+| 6 | `theorem` | [upper_endpoint_allowed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OctaveSeparation.lean/declarations/upper-endpoint-allowed.md) | 54 | `result-track:ff69be967f9a73789a702a9d53d0e350f2e2afee12808b8c94ea7fa609f622ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

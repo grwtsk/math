@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Grammar.lean/index.md) · [Full source](../../../../Combinatorics/Grammar.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Grammar.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Grammar.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BinaryGrammar](../../../../Combinatorics/Grammar.lean/declarations/binarygrammar.md) | 21 | `declaration-track:139e6c70e441d6ae0dd9b814362d13cdb771018bfa4b44b31c9166f1ee49c5ea` |
-| 2 | `def` | [eval](../../../../Combinatorics/Grammar.lean/declarations/eval.md) | 27 | `declaration-track:40a7ae7e0238a58dc89a427928c5bac7f84eefad560492b8cdfa2a0c66bd90e6` |
-| 3 | `theorem` | [eval_leaf](../../../../Combinatorics/Grammar.lean/declarations/eval-leaf.md) | 32 | `result-track:a868556c24389c9e3d8e77b7f79bfd7de62b3e46e9a0eaaf94cf976c84a823d9` |
-| 4 | `theorem` | [eval_node](../../../../Combinatorics/Grammar.lean/declarations/eval-node.md) | 37 | `result-track:20d5dfe26304382b074098f1e9088629376aa19fd07b573a8d6ccf70d5f55a24` |
-| 5 | `def` | [nandGrammar](../../../../Combinatorics/Grammar.lean/declarations/nandgrammar.md) | 44 | `declaration-track:0b2a8c0bd16f69e68a8cabc62ab2c633be823feee9375bd5885f51ef9fd965b3` |
-| 6 | `structure` | [SpectralShellExpansionSignature](../../../../Combinatorics/Grammar.lean/declarations/spectralshellexpansionsignature.md) | 48 | `declaration-track:59ec4724dc0e35daa53811e12db612b33d1f87e06961ac06a2fea09c460365dd` |
-| 7 | `def` | [SpectralShellExpansionSignature.toGrammar](../../../../Combinatorics/Grammar.lean/declarations/spectralshellexpansionsignature-togrammar.md) | 53 | `declaration-track:9530752dbf909eb6b059e81f0e91ff1d7ba13834db1c9080dfbddb3e52d4b6fa` |
-| 8 | `structure` | [EMLSignature](../../../../Combinatorics/Grammar.lean/declarations/emlsignature.md) | 59 | `declaration-track:a78e02a2c3ab6b9fc2c904106b5ca0b4de1d9cf194475fa210b1fdf20d9c2ce3` |
-| 9 | `def` | [EMLSignature.toGrammar](../../../../Combinatorics/Grammar.lean/declarations/emlsignature-togrammar.md) | 64 | `declaration-track:08a01a2a9bf35327224a90783dde7e5468034adfdde3739f85b4264bdd5b5ffa` |
+| 1 | `structure` | [BinaryGrammar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Grammar.lean/declarations/binarygrammar.md) | 21 | `declaration-track:139e6c70e441d6ae0dd9b814362d13cdb771018bfa4b44b31c9166f1ee49c5ea` |
+| 2 | `def` | [eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Grammar.lean/declarations/eval.md) | 27 | `declaration-track:40a7ae7e0238a58dc89a427928c5bac7f84eefad560492b8cdfa2a0c66bd90e6` |
+| 3 | `theorem` | [eval_leaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Grammar.lean/declarations/eval-leaf.md) | 32 | `result-track:a868556c24389c9e3d8e77b7f79bfd7de62b3e46e9a0eaaf94cf976c84a823d9` |
+| 4 | `theorem` | [eval_node](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Grammar.lean/declarations/eval-node.md) | 37 | `result-track:20d5dfe26304382b074098f1e9088629376aa19fd07b573a8d6ccf70d5f55a24` |
+| 5 | `def` | [nandGrammar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Grammar.lean/declarations/nandgrammar.md) | 44 | `declaration-track:0b2a8c0bd16f69e68a8cabc62ab2c633be823feee9375bd5885f51ef9fd965b3` |
+| 6 | `structure` | [SpectralShellExpansionSignature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Grammar.lean/declarations/spectralshellexpansionsignature.md) | 48 | `declaration-track:59ec4724dc0e35daa53811e12db612b33d1f87e06961ac06a2fea09c460365dd` |
+| 7 | `def` | [SpectralShellExpansionSignature.toGrammar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Grammar.lean/declarations/spectralshellexpansionsignature-togrammar.md) | 53 | `declaration-track:9530752dbf909eb6b059e81f0e91ff1d7ba13834db1c9080dfbddb3e52d4b6fa` |
+| 8 | `structure` | [EMLSignature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Grammar.lean/declarations/emlsignature.md) | 59 | `declaration-track:a78e02a2c3ab6b9fc2c904106b5ca0b4de1d9cf194475fa210b1fdf20d9c2ce3` |
+| 9 | `def` | [EMLSignature.toGrammar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Grammar.lean/declarations/emlsignature-togrammar.md) | 64 | `declaration-track:08a01a2a9bf35327224a90783dde7e5468034adfdde3739f85b4264bdd5b5ffa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

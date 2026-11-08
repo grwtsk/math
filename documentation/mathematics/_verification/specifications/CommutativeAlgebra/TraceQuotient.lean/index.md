@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/TraceQuotient.lean/index.md) · [Full source](../../../../CommutativeAlgebra/TraceQuotient.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceQuotient.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceQuotient.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Algebra.trace_quotient_mk](../../../../CommutativeAlgebra/TraceQuotient.lean/declarations/algebra-trace-quotient-mk.md) | 36 | `result-track:76f89346510a858b769bfdf345af770a5572ff6682716a4534c60c1fa249090e` |
-| 2 | `def` | [equivQuotMaximalIdealOfIsLocalization](../../../../CommutativeAlgebra/TraceQuotient.lean/declarations/equivquotmaximalidealofislocalization.md) | 67 | `declaration-track:f61bf2428a4e5e7243278a2de437f6c4dcb93a39dceeb200056fb5ddac22855c` |
-| 3 | `lemma` | [IsLocalization.AtPrime.map_eq_maximalIdeal](../../../../CommutativeAlgebra/TraceQuotient.lean/declarations/islocalization-atprime-map-eq-maximalideal.md) | 91 | `result-track:7170bb6456a5eb93349a832f5381bb87637339d51b13d2cd29f0e28742190ad7` |
-| 4 | `lemma` | [comap_map_eq_map_of_isLocalization_algebraMapSubmonoid](../../../../CommutativeAlgebra/TraceQuotient.lean/declarations/comap-map-eq-map-of-islocalization-algebramapsubmonoid.md) | 100 | `result-track:6b72934495d5b89099f1c4e226adc0e2b402b89db0177c950a7254d90ca9f336` |
-| 5 | `def` | [quotMapEquivQuotMapMaximalIdealOfIsLocalization](../../../../CommutativeAlgebra/TraceQuotient.lean/declarations/quotmapequivquotmapmaximalidealofislocalization.md) | 133 | `declaration-track:dce8b2f3c063f2d0ddb688af0544a74156a3e63e48973c8334e5bab1d2346124` |
-| 6 | `lemma` | [trace_quotient_eq_trace_localization_quotient](../../../../CommutativeAlgebra/TraceQuotient.lean/declarations/trace-quotient-eq-trace-localization-quotient.md) | 168 | `result-track:102b8208ad115901edc198f1f934a8f42cfc8eb5b1f6aabdd02887a1624b93cf` |
-| 7 | `lemma` | [Algebra.trace_quotient_eq_of_isDedekindDomain](../../../../CommutativeAlgebra/TraceQuotient.lean/declarations/algebra-trace-quotient-eq-of-isdedekinddomain.md) | 189 | `result-track:9eab7b80c168cc2474b73c007fe901bb0ae226587dca0c0efe9eb704fde3e8a2` |
+| 1 | `lemma` | [Algebra.trace_quotient_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceQuotient.lean/declarations/algebra-trace-quotient-mk.md) | 36 | `result-track:76f89346510a858b769bfdf345af770a5572ff6682716a4534c60c1fa249090e` |
+| 2 | `def` | [equivQuotMaximalIdealOfIsLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceQuotient.lean/declarations/equivquotmaximalidealofislocalization.md) | 67 | `declaration-track:f61bf2428a4e5e7243278a2de437f6c4dcb93a39dceeb200056fb5ddac22855c` |
+| 3 | `lemma` | [IsLocalization.AtPrime.map_eq_maximalIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceQuotient.lean/declarations/islocalization-atprime-map-eq-maximalideal.md) | 91 | `result-track:7170bb6456a5eb93349a832f5381bb87637339d51b13d2cd29f0e28742190ad7` |
+| 4 | `lemma` | [comap_map_eq_map_of_isLocalization_algebraMapSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceQuotient.lean/declarations/comap-map-eq-map-of-islocalization-algebramapsubmonoid.md) | 100 | `result-track:6b72934495d5b89099f1c4e226adc0e2b402b89db0177c950a7254d90ca9f336` |
+| 5 | `def` | [quotMapEquivQuotMapMaximalIdealOfIsLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceQuotient.lean/declarations/quotmapequivquotmapmaximalidealofislocalization.md) | 133 | `declaration-track:dce8b2f3c063f2d0ddb688af0544a74156a3e63e48973c8334e5bab1d2346124` |
+| 6 | `lemma` | [trace_quotient_eq_trace_localization_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceQuotient.lean/declarations/trace-quotient-eq-trace-localization-quotient.md) | 168 | `result-track:102b8208ad115901edc198f1f934a8f42cfc8eb5b1f6aabdd02887a1624b93cf` |
+| 7 | `lemma` | [Algebra.trace_quotient_eq_of_isDedekindDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TraceQuotient.lean/declarations/algebra-trace-quotient-eq-of-isdedekinddomain.md) | 189 | `result-track:9eab7b80c168cc2474b73c007fe901bb0ae226587dca0c0efe9eb704fde3e8a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

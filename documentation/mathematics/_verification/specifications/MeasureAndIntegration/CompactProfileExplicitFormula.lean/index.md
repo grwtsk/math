@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CompactProfileExplicitFormula.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CompactProfileExplicitFormula.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileExplicitFormula.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileExplicitFormula.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Distribution.CompactProfileDilation`](../../../../MeasureAndIntegration/CompactProfileDilation.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.SpecialFunctions.DigammaFourierBound`](../../../../RealFunctions/DigammaFourierBound.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Distribution.CompactProfileDilation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileDilation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.SpecialFunctions.DigammaFourierBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigammaFourierBound.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [source_second_eq_explicit](../../../../MeasureAndIntegration/CompactProfileExplicitFormula.lean/declarations/source-second-eq-explicit.md) | 27 | `result-track:9a47dd9b5e4e79d5cb75f8864a0eeb2dd019cdb7f3602607f3e957526afb60b4` |
-| 2 | `theorem` | [normalized_test_eq_explicit](../../../../MeasureAndIntegration/CompactProfileExplicitFormula.lean/declarations/normalized-test-eq-explicit.md) | 42 | `result-track:bd28fc4be76321dd2269dfc5d8cc28f678abc86a7b3f61a567adaed26795790a` |
-| 3 | `theorem` | [actual_archimedean_integrable](../../../../MeasureAndIntegration/CompactProfileExplicitFormula.lean/declarations/actual-archimedean-integrable.md) | 49 | `result-track:505bc4dd244fb885bde900bd820d51ac344883c73b8ee8405d422161aebb9d07` |
-| 4 | `def` | [admittedDilationRealization](../../../../MeasureAndIntegration/CompactProfileExplicitFormula.lean/declarations/admitteddilationrealization.md) | 60 | `declaration-track:71362b08098b9b1545c32cf8277cdf54f7da2565a8eed5f44be496d6627ec0f3` |
-| 5 | `theorem` | [admitted_second_derivative](../../../../MeasureAndIntegration/CompactProfileExplicitFormula.lean/declarations/admitted-second-derivative.md) | 64 | `result-track:a83e3d4cd4e86741a20d70419a1f96973f4578cf213f8db0309b6d62f37253d1` |
-| 6 | `theorem` | [source_realization_exists](../../../../MeasureAndIntegration/CompactProfileExplicitFormula.lean/declarations/source-realization-exists.md) | 67 | `result-track:169cfc61891c7f6f890813a7999bb76f489a98c43aaf39db1643068620d82f0b` |
-| 7 | `theorem` | [arithmetic_representation](../../../../MeasureAndIntegration/CompactProfileExplicitFormula.lean/declarations/arithmetic-representation.md) | 72 | `result-track:28663fc5aa926339be7312bf94b9ebbecf356b1a2653d1795899c795292aafb1` |
+| 1 | `theorem` | [source_second_eq_explicit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileExplicitFormula.lean/declarations/source-second-eq-explicit.md) | 27 | `result-track:9a47dd9b5e4e79d5cb75f8864a0eeb2dd019cdb7f3602607f3e957526afb60b4` |
+| 2 | `theorem` | [normalized_test_eq_explicit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileExplicitFormula.lean/declarations/normalized-test-eq-explicit.md) | 42 | `result-track:bd28fc4be76321dd2269dfc5d8cc28f678abc86a7b3f61a567adaed26795790a` |
+| 3 | `theorem` | [actual_archimedean_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileExplicitFormula.lean/declarations/actual-archimedean-integrable.md) | 49 | `result-track:505bc4dd244fb885bde900bd820d51ac344883c73b8ee8405d422161aebb9d07` |
+| 4 | `def` | [admittedDilationRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileExplicitFormula.lean/declarations/admitteddilationrealization.md) | 60 | `declaration-track:71362b08098b9b1545c32cf8277cdf54f7da2565a8eed5f44be496d6627ec0f3` |
+| 5 | `theorem` | [admitted_second_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileExplicitFormula.lean/declarations/admitted-second-derivative.md) | 64 | `result-track:a83e3d4cd4e86741a20d70419a1f96973f4578cf213f8db0309b6d62f37253d1` |
+| 6 | `theorem` | [source_realization_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileExplicitFormula.lean/declarations/source-realization-exists.md) | 67 | `result-track:169cfc61891c7f6f890813a7999bb76f489a98c43aaf39db1643068620d82f0b` |
+| 7 | `theorem` | [arithmetic_representation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileExplicitFormula.lean/declarations/arithmetic-representation.md) | 72 | `result-track:28663fc5aa926339be7312bf94b9ebbecf356b1a2653d1795899c795292aafb1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

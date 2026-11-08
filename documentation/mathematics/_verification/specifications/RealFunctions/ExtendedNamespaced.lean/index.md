@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ExtendedNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/ExtendedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [evalInterval](../../../../RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval-source-edition-2.md) | 58 | `declaration-track:dfd94709d81b5307e8eab5da08235dd5d3af40d3d8a75cb9924610db7f310a06` |
-| 2 | `theorem` | [evalInterval_correct](../../../../RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval-correct.md) | 85 | `result-track:05dc8097bdfcbbb4b7109746523c32bdf3549d0ee296cee90122ebb5cc7cda30` |
-| 3 | `def` | [evalInterval1](../../../../RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval1.md) | 124 | `declaration-track:318a507c4672ade489451daa77d33e78d67fde3939bcf747a10f9a94875d39a6` |
-| 4 | `theorem` | [evalInterval1_correct](../../../../RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval1-correct.md) | 128 | `result-track:b281278762de3935858a54e7aefa8f2b64082eaa586f18a593fc0f337e4a9162` |
-| 5 | `def` | [evalIntervalLogDepth](../../../../RealFunctions/ExtendedNamespaced.lean/declarations/evalintervallogdepth.md) | 145 | `declaration-track:4cbb453c568c1a55ffa652155cf0535381f4243448a3f3e5dc13835f36eb9d32` |
-| 6 | `def` | [evalIntervalExpDepth](../../../../RealFunctions/ExtendedNamespaced.lean/declarations/evalintervalexpdepth.md) | 147 | `declaration-track:d4fa6acf287b2f6ce0b2894e4e66a621844723789ce1e8d23df4b70043531375` |
-| 7 | `def` | [evalInterval?](../../../../RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval.md) | 149 | `declaration-track:1b1182c39ac6df50daca9eaed60b414d03d9b76a64920cbbcb9c0219dde0c6c4` |
-| 8 | `theorem` | [evalInterval?_correct](../../../../RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval-correct-source-edition-2.md) | 242 | `result-track:2fe27680360ca0324f63be486687dd75aee24308be5bfb854b53accb0933cbf2` |
-| 9 | `def` | [evalInterval?1](../../../../RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval-1.md) | 426 | `declaration-track:69974e21c8c46a3d6ea4b8a1f5bb93594dfe83f168937e39f1bf2e34684b8cd4` |
-| 10 | `theorem` | [evalInterval?1_correct](../../../../RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval-1-correct.md) | 430 | `result-track:5666641e6cdde4823db7ed84d8e6580e9bc176e8d5e8e714e5e0096189e07f17` |
-| 11 | `theorem` | [evalInterval?_le_of_hi](../../../../RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval-le-of-hi.md) | 438 | `result-track:ab42eeadf36ec1b30e8a2378689b3f3fa8e64ca96ba4e0857a780eb12eb9f7fa` |
-| 12 | `theorem` | [evalInterval?_ge_of_lo](../../../../RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval-ge-of-lo.md) | 451 | `result-track:da0aa8cf352b56db148f3e4aaea44ba6771369c23331e2c4b0e0057b956befea` |
+| 1 | `def` | [evalInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval-source-edition-2.md) | 58 | `declaration-track:dfd94709d81b5307e8eab5da08235dd5d3af40d3d8a75cb9924610db7f310a06` |
+| 2 | `theorem` | [evalInterval_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval-correct.md) | 85 | `result-track:05dc8097bdfcbbb4b7109746523c32bdf3549d0ee296cee90122ebb5cc7cda30` |
+| 3 | `def` | [evalInterval1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval1.md) | 124 | `declaration-track:318a507c4672ade489451daa77d33e78d67fde3939bcf747a10f9a94875d39a6` |
+| 4 | `theorem` | [evalInterval1_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval1-correct.md) | 128 | `result-track:b281278762de3935858a54e7aefa8f2b64082eaa586f18a593fc0f337e4a9162` |
+| 5 | `def` | [evalIntervalLogDepth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendedNamespaced.lean/declarations/evalintervallogdepth.md) | 145 | `declaration-track:4cbb453c568c1a55ffa652155cf0535381f4243448a3f3e5dc13835f36eb9d32` |
+| 6 | `def` | [evalIntervalExpDepth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendedNamespaced.lean/declarations/evalintervalexpdepth.md) | 147 | `declaration-track:d4fa6acf287b2f6ce0b2894e4e66a621844723789ce1e8d23df4b70043531375` |
+| 7 | `def` | [evalInterval?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval.md) | 149 | `declaration-track:1b1182c39ac6df50daca9eaed60b414d03d9b76a64920cbbcb9c0219dde0c6c4` |
+| 8 | `theorem` | [evalInterval?_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval-correct-source-edition-2.md) | 242 | `result-track:2fe27680360ca0324f63be486687dd75aee24308be5bfb854b53accb0933cbf2` |
+| 9 | `def` | [evalInterval?1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval-1.md) | 426 | `declaration-track:69974e21c8c46a3d6ea4b8a1f5bb93594dfe83f168937e39f1bf2e34684b8cd4` |
+| 10 | `theorem` | [evalInterval?1_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval-1-correct.md) | 430 | `result-track:5666641e6cdde4823db7ed84d8e6580e9bc176e8d5e8e714e5e0096189e07f17` |
+| 11 | `theorem` | [evalInterval?_le_of_hi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval-le-of-hi.md) | 438 | `result-track:ab42eeadf36ec1b30e8a2378689b3f3fa8e64ca96ba4e0857a780eb12eb9f7fa` |
+| 12 | `theorem` | [evalInterval?_ge_of_lo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExtendedNamespaced.lean/declarations/evalinterval-ge-of-lo.md) | 451 | `result-track:da0aa8cf352b56db148f3e4aaea44ba6771369c23331e2c4b0e0057b956befea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

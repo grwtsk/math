@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GrammarNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GrammarNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GrammarNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GrammarNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cellularToArithmetic_arithmeticToCellular](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GrammarNamespaced.lean/declarations/cellulartoarithmetic-arithmetictocellular.md) | 27 | `result-track:e8dcb3cf5e26dfea678418578408605f8ff6e43c05345c0c9936c7d69367a65b` |
-| 2 | `theorem` | [arithmeticToCellular_cellularToArithmetic](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GrammarNamespaced.lean/declarations/arithmetictocellular-cellulartoarithmetic.md) | 33 | `result-track:65cbbd8c8c90b3d0eee21425776bcb08d5489047ecaecff258ad87e54170a217` |
-| 3 | `theorem` | [decode_arithmeticToCellular](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GrammarNamespaced.lean/declarations/decode-arithmetictocellular.md) | 39 | `result-track:ef308ca3e9f3329e64f362d1b335d702011ffec94f808b29cecfa9a08d25768d` |
+| 1 | `theorem` | [cellularToArithmetic_arithmeticToCellular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GrammarNamespaced.lean/declarations/cellulartoarithmetic-arithmetictocellular.md) | 27 | `result-track:e8dcb3cf5e26dfea678418578408605f8ff6e43c05345c0c9936c7d69367a65b` |
+| 2 | `theorem` | [arithmeticToCellular_cellularToArithmetic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GrammarNamespaced.lean/declarations/arithmetictocellular-cellulartoarithmetic.md) | 33 | `result-track:65cbbd8c8c90b3d0eee21425776bcb08d5489047ecaecff258ad87e54170a217` |
+| 3 | `theorem` | [decode_arithmeticToCellular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GrammarNamespaced.lean/declarations/decode-arithmetictocellular.md) | 39 | `result-track:ef308ca3e9f3329e64f362d1b335d702011ffec94f808b29cecfa9a08d25768d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

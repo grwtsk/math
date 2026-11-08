@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/CMFourBalance.lean/index.md) · [Full source](../../../../Geometry/CMFourBalance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMFourBalance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMFourBalance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsSign](../../../../Geometry/CMFourBalance.lean/declarations/issign.md) | 33 | `declaration-track:e1ab751e864974b016c0ceee83fb8440b7e8957fd8f2ab7b4614d4d133d67cbf` |
-| 2 | `def` | [holomorphicIndex](../../../../Geometry/CMFourBalance.lean/declarations/holomorphicindex.md) | 36 | `declaration-track:b7123ce3bdb1b4e85244f6c6a54a29e47dd98be55f7b37a6a3a5abff24c5553e` |
-| 3 | `theorem` | [fourSign_balance_holomorphicCount](../../../../Geometry/CMFourBalance.lean/declarations/foursign-balance-holomorphiccount.md) | 41 | `result-track:6ff989e44afda18800f93012c411e07c04619d1885fd140501879c008b310102` |
-| 4 | `structure` | [OddSignRow](../../../../Geometry/CMFourBalance.lean/declarations/oddsignrow.md) | 56 | `declaration-track:a5239cc8f4647d92c9de04dcb474d3ba63d5153d980365edd75d12454bf49488` |
-| 5 | `def` | [FourBalance](../../../../Geometry/CMFourBalance.lean/declarations/fourbalance.md) | 62 | `declaration-track:f04808d3fabf0f826f875080b5cda63484d8fe8439e62ee2b39af1458b967022` |
-| 6 | `theorem` | [fourBalance_holomorphicCount](../../../../Geometry/CMFourBalance.lean/declarations/fourbalance-holomorphiccount.md) | 73 | `result-track:bfc930e3ad3be48bb24ef1a691e65390c44e15d7ce6760d8c2b82ac1b867bc38` |
-| 7 | `def` | [HasTwoTwoSignProfile](../../../../Geometry/CMFourBalance.lean/declarations/hastwotwosignprofile.md) | 89 | `declaration-track:c7ae76416dbafa32e238aa7f03853dbb6cb9a95e2f8de3fb8adc8ea42e5a412e` |
-| 8 | `theorem` | [fourBalance_twoTwoSignProfile](../../../../Geometry/CMFourBalance.lean/declarations/fourbalance-twotwosignprofile.md) | 101 | `result-track:db54ec53bb571594313651f28a5aadd5af19acb1e1d3c7931ddb1e2c09a8870a` |
-| 9 | `theorem` | [fourBalance_at](../../../../Geometry/CMFourBalance.lean/declarations/fourbalance-at.md) | 111 | `result-track:ac34a5155d56e916d761524282f250b7bf16e7aee8f5a7e7b05e43cd69fdd88f` |
+| 1 | `def` | [IsSign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMFourBalance.lean/declarations/issign.md) | 33 | `declaration-track:e1ab751e864974b016c0ceee83fb8440b7e8957fd8f2ab7b4614d4d133d67cbf` |
+| 2 | `def` | [holomorphicIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMFourBalance.lean/declarations/holomorphicindex.md) | 36 | `declaration-track:b7123ce3bdb1b4e85244f6c6a54a29e47dd98be55f7b37a6a3a5abff24c5553e` |
+| 3 | `theorem` | [fourSign_balance_holomorphicCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMFourBalance.lean/declarations/foursign-balance-holomorphiccount.md) | 41 | `result-track:6ff989e44afda18800f93012c411e07c04619d1885fd140501879c008b310102` |
+| 4 | `structure` | [OddSignRow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMFourBalance.lean/declarations/oddsignrow.md) | 56 | `declaration-track:a5239cc8f4647d92c9de04dcb474d3ba63d5153d980365edd75d12454bf49488` |
+| 5 | `def` | [FourBalance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMFourBalance.lean/declarations/fourbalance.md) | 62 | `declaration-track:f04808d3fabf0f826f875080b5cda63484d8fe8439e62ee2b39af1458b967022` |
+| 6 | `theorem` | [fourBalance_holomorphicCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMFourBalance.lean/declarations/fourbalance-holomorphiccount.md) | 73 | `result-track:bfc930e3ad3be48bb24ef1a691e65390c44e15d7ce6760d8c2b82ac1b867bc38` |
+| 7 | `def` | [HasTwoTwoSignProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMFourBalance.lean/declarations/hastwotwosignprofile.md) | 89 | `declaration-track:c7ae76416dbafa32e238aa7f03853dbb6cb9a95e2f8de3fb8adc8ea42e5a412e` |
+| 8 | `theorem` | [fourBalance_twoTwoSignProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMFourBalance.lean/declarations/fourbalance-twotwosignprofile.md) | 101 | `result-track:db54ec53bb571594313651f28a5aadd5af19acb1e1d3c7931ddb1e2c09a8870a` |
+| 9 | `theorem` | [fourBalance_at](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMFourBalance.lean/declarations/fourbalance-at.md) | 111 | `result-track:ac34a5155d56e916d761524282f250b7bf16e7aee8f5a7e7b05e43cd69fdd88f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PositiveMassExhaustion.lean/index.md) · [Full source](../../../../Combinatorics/PositiveMassExhaustion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveMassExhaustion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveMassExhaustion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bijective_and_weights_eq](../../../../Combinatorics/PositiveMassExhaustion.lean/declarations/bijective-and-weights-eq.md) | 24 | `result-track:3d51110dbcbff97b656d0099e1086c4f5f92fd613a5ce96ab803e29222945cd3` |
-| 2 | `theorem` | [total_eq_of_saturation](../../../../Combinatorics/PositiveMassExhaustion.lean/declarations/total-eq-of-saturation.md) | 65 | `result-track:16a3097674e1f597f13bd8b9a00cfa77e1ff63bdd3a1ee7dc1ac35f4957d5df5` |
+| 1 | `theorem` | [bijective_and_weights_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveMassExhaustion.lean/declarations/bijective-and-weights-eq.md) | 24 | `result-track:3d51110dbcbff97b656d0099e1086c4f5f92fd613a5ce96ab803e29222945cd3` |
+| 2 | `theorem` | [total_eq_of_saturation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveMassExhaustion.lean/declarations/total-eq-of-saturation.md) | 65 | `result-track:16a3097674e1f597f13bd8b9a00cfa77e1ff63bdd3a1ee7dc1ac35f4957d5df5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

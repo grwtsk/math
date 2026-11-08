@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/HalfCenteringPredicate.lean/index.md) · [Full source](../../../../RealFunctions/HalfCenteringPredicate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HalfCenteringPredicate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HalfCenteringPredicate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CenteredAroundHalf](../../../../RealFunctions/HalfCenteringPredicate.lean/declarations/centeredaroundhalf.md) | 42 | `declaration-track:47f86caa65a8ac6528ea75fe7c660c41bfd4b6e970e93c30f60b96764c410d16` |
+| 1 | `def` | [CenteredAroundHalf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/HalfCenteringPredicate.lean/declarations/centeredaroundhalf.md) | 42 | `declaration-track:47f86caa65a8ac6528ea75fe7c660c41bfd4b6e970e93c30f60b96764c410d16` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

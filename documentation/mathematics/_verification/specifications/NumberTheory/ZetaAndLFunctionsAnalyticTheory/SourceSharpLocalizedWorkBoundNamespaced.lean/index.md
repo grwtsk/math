@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpLocalizedWorkBoundNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpLocalizedWorkBoundNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpLocalizedWorkBoundNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpLocalizedWorkBoundNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [centeredErrorWork_abs_le_localized_cutoff_ratio](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpLocalizedWorkBoundNamespaced.lean/declarations/centerederrorwork-abs-le-localized-cutoff-ratio.md) | 30 | `result-track:6b799ee0c9efac590af7174d087df8e3bc0039900a8fe4ed5e5c8bb760e9b697` |
-| 2 | `theorem` | [jointMangoldtErrorWork_abs_le_localized_cutoff_ratio](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpLocalizedWorkBoundNamespaced.lean/declarations/jointmangoldterrorwork-abs-le-localized-cutoff-ratio.md) | 66 | `result-track:c78e6b87b8aa2390ef3a8ab9b0e66404b0e28ed2a478932bea691945efc885d5` |
+| 1 | `theorem` | [centeredErrorWork_abs_le_localized_cutoff_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpLocalizedWorkBoundNamespaced.lean/declarations/centerederrorwork-abs-le-localized-cutoff-ratio.md) | 30 | `result-track:6b799ee0c9efac590af7174d087df8e3bc0039900a8fe4ed5e5c8bb760e9b697` |
+| 2 | `theorem` | [jointMangoldtErrorWork_abs_le_localized_cutoff_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpLocalizedWorkBoundNamespaced.lean/declarations/jointmangoldterrorwork-abs-le-localized-cutoff-ratio.md) | 66 | `result-track:c78e6b87b8aa2390ef3a8ab9b0e66404b0e28ed2a478932bea691945efc885d5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

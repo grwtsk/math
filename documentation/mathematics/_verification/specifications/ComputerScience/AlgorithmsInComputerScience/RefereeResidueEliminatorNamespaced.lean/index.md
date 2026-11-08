@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RefereeResidueEliminatorNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RefereeResidueEliminatorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RefereeResidueEliminatorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RefereeResidueEliminatorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [acceptedRole](../../../../../ComputerScience/AlgorithmsInComputerScience/RefereeResidueEliminatorNamespaced.lean/declarations/acceptedrole.md) | 20 | `declaration-track:6568ed19ee1126d33d6524d999559bd13880cc9d2cdf3f190dfe4b92b074f215` |
-| 2 | `def` | [forbiddenRoles](../../../../../ComputerScience/AlgorithmsInComputerScience/RefereeResidueEliminatorNamespaced.lean/declarations/forbiddenroles.md) | 22 | `declaration-track:1eca26fa2be11f62a5c23d6ec2733724a734bdb95f33fc1c70a13071bf5d880e` |
-| 3 | `theorem` | [accepted_role_exact](../../../../../ComputerScience/AlgorithmsInComputerScience/RefereeResidueEliminatorNamespaced.lean/declarations/accepted-role-exact.md) | 31 | `result-track:bebeb84a852c4aa95313af7164bc604c60f15934a7e210d0f65d7336a14b794e` |
-| 4 | `theorem` | [theorem_authority_forbidden](../../../../../ComputerScience/AlgorithmsInComputerScience/RefereeResidueEliminatorNamespaced.lean/declarations/theorem-authority-forbidden.md) | 34 | `result-track:19b7f4794f30c8bf27e8e4af15b4d355719d39ecc9858739ea329c02d6e17236` |
+| 1 | `def` | [acceptedRole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RefereeResidueEliminatorNamespaced.lean/declarations/acceptedrole.md) | 20 | `declaration-track:6568ed19ee1126d33d6524d999559bd13880cc9d2cdf3f190dfe4b92b074f215` |
+| 2 | `def` | [forbiddenRoles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RefereeResidueEliminatorNamespaced.lean/declarations/forbiddenroles.md) | 22 | `declaration-track:1eca26fa2be11f62a5c23d6ec2733724a734bdb95f33fc1c70a13071bf5d880e` |
+| 3 | `theorem` | [accepted_role_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RefereeResidueEliminatorNamespaced.lean/declarations/accepted-role-exact.md) | 31 | `result-track:bebeb84a852c4aa95313af7164bc604c60f15934a7e210d0f65d7336a14b794e` |
+| 4 | `theorem` | [theorem_authority_forbidden](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RefereeResidueEliminatorNamespaced.lean/declarations/theorem-authority-forbidden.md) | 34 | `result-track:19b7f4794f30c8bf27e8e4af15b4d355719d39ecc9858739ea329c02d6e17236` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

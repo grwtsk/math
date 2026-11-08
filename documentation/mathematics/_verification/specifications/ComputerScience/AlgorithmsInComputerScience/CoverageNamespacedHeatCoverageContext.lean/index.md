@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CoverageNamespacedHeatCoverageContext.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CoverageNamespacedHeatCoverageContext.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoverageNamespacedHeatCoverageContext.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoverageNamespacedHeatCoverageContext.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HeatCoverageContext](../../../../../ComputerScience/AlgorithmsInComputerScience/CoverageNamespacedHeatCoverageContext.lean/declarations/heatcoveragecontext.md) | 34 | `declaration-track:0355cf0a2d5ca5e34ad9b6a7ede7120fc669ca8d983b4eabb7d9de898df3c876` |
-| 2 | `def` | [HeatFlowCoverageAdmissible](../../../../../ComputerScience/AlgorithmsInComputerScience/CoverageNamespacedHeatCoverageContext.lean/declarations/heatflowcoverageadmissible.md) | 38 | `declaration-track:a28b0e9946de187ab0cab909508bd7e982beb937af49b139255022fd280ef763` |
-| 3 | `theorem` | [heatFlowCoverage_requires_foundation](../../../../../ComputerScience/AlgorithmsInComputerScience/CoverageNamespacedHeatCoverageContext.lean/declarations/heatflowcoverage-requires-foundation.md) | 43 | `result-track:ebd917e9e1a862dee9f34348fc8962c9342d4a3fdbabbaa0a1a943a57d03b921` |
+| 1 | `structure` | [HeatCoverageContext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoverageNamespacedHeatCoverageContext.lean/declarations/heatcoveragecontext.md) | 34 | `declaration-track:0355cf0a2d5ca5e34ad9b6a7ede7120fc669ca8d983b4eabb7d9de898df3c876` |
+| 2 | `def` | [HeatFlowCoverageAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoverageNamespacedHeatCoverageContext.lean/declarations/heatflowcoverageadmissible.md) | 38 | `declaration-track:a28b0e9946de187ab0cab909508bd7e982beb937af49b139255022fd280ef763` |
+| 3 | `theorem` | [heatFlowCoverage_requires_foundation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoverageNamespacedHeatCoverageContext.lean/declarations/heatflowcoverage-requires-foundation.md) | 43 | `result-track:ebd917e9e1a862dee9f34348fc8962c9342d4a3fdbabbaa0a1a943a57d03b921` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

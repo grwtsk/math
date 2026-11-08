@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Operator.UnboundedPort`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPort.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Operator.UnboundedPort`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPort.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [graphSet](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/graphset.md) | 14 | `declaration-track:6ab9fa55d3430e6f7cc36374453deb7b13ba97dc667fef0fac1a4c12f0533ce9` |
-| 2 | `structure` | [FramedEquivalence](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/framedequivalence.md) | 20 | `declaration-track:09400cdebb09e2858a5f1666c96277dc5ac64805e8442ea9b3dcefd7e93d0384` |
-| 3 | `def` | [toPort](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/toport.md) | 35 | `declaration-track:f6c4f6b6614d8ff9e3bf457fa2d28fb1c60a857f91a65f2ccff2905933e992ce` |
-| 4 | `def` | [domainEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/domainequiv.md) | 40 | `declaration-track:7666ae4169b457cf43bd9ffd44c46ffa1b298de8ccaff32682ada36ca6c9fbe2` |
-| 5 | `theorem` | [coe_domainEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/coe-domainequiv.md) | 57 | `result-track:98db8ec84902c0b847be27e8b8887a32c1f94d4f340d3f7ca4ad68fd8c10276f` |
-| 6 | `theorem` | [intertwines_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/intertwines-apply.md) | 61 | `result-track:141b548128f30d7855f19f0e62b7c435e0e0303254b39d6e5fcb9ffe48db00cb` |
-| 7 | `def` | [symm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/symm.md) | 68 | `declaration-track:75f0f6f4b7c6cb11371cce39d183d0099a5a608abfbe66d0cc7b655e1c068303` |
-| 8 | `def` | [identity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/identity.md) | 81 | `declaration-track:bb561470b7b3de3342c7adf0e0a1fc6e8229a44c86344b7eb970eb2a8b1813b8` |
-| 9 | `def` | [comp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/comp.md) | 88 | `declaration-track:af0ce98a534dc31566ba81cb76506ba1fe736feb457a4d10bd32b5e5cf7667e2` |
-| 10 | `theorem` | [conjugation_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/conjugation-apply.md) | 104 | `result-track:6d8402fc83fbaae43a1d982c2a96df70787fb1e9d799e3bda287c1b39cba4948` |
-| 11 | `def` | [graphFrame](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/graphframe.md) | 109 | `declaration-track:b0402039c2436f0cd242354b2585b1918d179eabc74357286e35956b9e18985e` |
-| 12 | `theorem` | [image_graphSet](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/image-graphset.md) | 113 | `result-track:141806b8059fed3320064742c3c42b444b8ded5a48f926c10c7684c7faddac93` |
+| 1 | `def` | [graphSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/graphset.md) | 14 | `declaration-track:6ab9fa55d3430e6f7cc36374453deb7b13ba97dc667fef0fac1a4c12f0533ce9` |
+| 2 | `structure` | [FramedEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/framedequivalence.md) | 20 | `declaration-track:09400cdebb09e2858a5f1666c96277dc5ac64805e8442ea9b3dcefd7e93d0384` |
+| 3 | `def` | [toPort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/toport.md) | 35 | `declaration-track:f6c4f6b6614d8ff9e3bf457fa2d28fb1c60a857f91a65f2ccff2905933e992ce` |
+| 4 | `def` | [domainEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/domainequiv.md) | 40 | `declaration-track:7666ae4169b457cf43bd9ffd44c46ffa1b298de8ccaff32682ada36ca6c9fbe2` |
+| 5 | `theorem` | [coe_domainEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/coe-domainequiv.md) | 57 | `result-track:98db8ec84902c0b847be27e8b8887a32c1f94d4f340d3f7ca4ad68fd8c10276f` |
+| 6 | `theorem` | [intertwines_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/intertwines-apply.md) | 61 | `result-track:141b548128f30d7855f19f0e62b7c435e0e0303254b39d6e5fcb9ffe48db00cb` |
+| 7 | `def` | [symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/symm.md) | 68 | `declaration-track:75f0f6f4b7c6cb11371cce39d183d0099a5a608abfbe66d0cc7b655e1c068303` |
+| 8 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/identity.md) | 81 | `declaration-track:bb561470b7b3de3342c7adf0e0a1fc6e8229a44c86344b7eb970eb2a8b1813b8` |
+| 9 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/comp.md) | 88 | `declaration-track:af0ce98a534dc31566ba81cb76506ba1fe736feb457a4d10bd32b5e5cf7667e2` |
+| 10 | `theorem` | [conjugation_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/conjugation-apply.md) | 104 | `result-track:6d8402fc83fbaae43a1d982c2a96df70787fb1e9d799e3bda287c1b39cba4948` |
+| 11 | `def` | [graphFrame](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/graphframe.md) | 109 | `declaration-track:b0402039c2436f0cd242354b2585b1918d179eabc74357286e35956b9e18985e` |
+| 12 | `theorem` | [image_graphSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/declarations/image-graphset.md) | 113 | `result-track:141806b8059fed3320064742c3c42b444b8ded5a48f926c10c7684c7faddac93` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScaleNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScaleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScaleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScaleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ScaleWindow](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScaleNamespaced.lean/declarations/scalewindow.md) | 22 | `declaration-track:bb3f6246528498266990a0df03c3c4a40250a7183f029288cfee9a08a7cfa2d2` |
-| 2 | `theorem` | [ScaleWindow.coarsePositive](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScaleNamespaced.lean/declarations/scalewindow-coarsepositive.md) | 28 | `result-track:e8432536545dc18d5a121441435bcddc29e9c69cbea0542d53ed700c6c22b163` |
-| 3 | `theorem` | [ScaleWindow.fineNonnegative](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScaleNamespaced.lean/declarations/scalewindow-finenonnegative.md) | 32 | `result-track:1b8f46c6b2d107026301d54d8fce2efbb7b945659a4a0c44b15deffa91fc766b` |
-| 4 | `theorem` | [ScaleWindow.coarseNonnegative](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScaleNamespaced.lean/declarations/scalewindow-coarsenonnegative.md) | 36 | `result-track:15bb7ea2efb0bbd8420a1dafbc61ad1fdac2f84b2692a04b3c95c08c5f636b0c` |
+| 1 | `structure` | [ScaleWindow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScaleNamespaced.lean/declarations/scalewindow.md) | 22 | `declaration-track:bb3f6246528498266990a0df03c3c4a40250a7183f029288cfee9a08a7cfa2d2` |
+| 2 | `theorem` | [ScaleWindow.coarsePositive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScaleNamespaced.lean/declarations/scalewindow-coarsepositive.md) | 28 | `result-track:e8432536545dc18d5a121441435bcddc29e9c69cbea0542d53ed700c6c22b163` |
+| 3 | `theorem` | [ScaleWindow.fineNonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScaleNamespaced.lean/declarations/scalewindow-finenonnegative.md) | 32 | `result-track:1b8f46c6b2d107026301d54d8fce2efbb7b945659a4a0c44b15deffa91fc766b` |
+| 4 | `theorem` | [ScaleWindow.coarseNonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScaleNamespaced.lean/declarations/scalewindow-coarsenonnegative.md) | 36 | `result-track:15bb7ea2efb0bbd8420a1dafbc61ad1fdac2f84b2692a04b3c95c08c5f636b0c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

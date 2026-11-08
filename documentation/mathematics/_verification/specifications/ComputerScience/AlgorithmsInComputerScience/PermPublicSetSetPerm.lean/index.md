@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PermPublicSetSetPerm.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PermPublicSetSetPerm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PermPublicSetSetPerm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PermPublicSetSetPerm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [set_set_perm'](../../../../../ComputerScience/AlgorithmsInComputerScience/PermPublicSetSetPerm.lean/declarations/set-set-perm-source-edition-2.md) | 24 | `result-track:faa649d848d1cbdbb12d81e13479643b67a0a2280b841cf0194215a6814bbda4` |
-| 2 | `theorem` | [set_set_perm](../../../../../ComputerScience/AlgorithmsInComputerScience/PermPublicSetSetPerm.lean/declarations/set-set-perm.md) | 46 | `result-track:8296c748b6a37d934deba5cc54a836caf7104eca22b43da7db34e7fc3a3c6ced` |
-| 3 | `theorem` | [take_of_getElem?](../../../../../ComputerScience/AlgorithmsInComputerScience/PermPublicSetSetPerm.lean/declarations/take-of-getelem.md) | 68 | `result-track:79127ccc2a3d057643c8f6a076f4fa0d9ed0d840eab9886fb324cc49bb240cdd` |
-| 4 | `theorem` | [drop_of_getElem?](../../../../../ComputerScience/AlgorithmsInComputerScience/PermPublicSetSetPerm.lean/declarations/drop-of-getelem.md) | 75 | `result-track:d36245fa397e21225d0538de48095fcf1339d1968d12d8c62f55967f2c6dadd9` |
+| 1 | `theorem` | [set_set_perm'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PermPublicSetSetPerm.lean/declarations/set-set-perm-source-edition-2.md) | 24 | `result-track:faa649d848d1cbdbb12d81e13479643b67a0a2280b841cf0194215a6814bbda4` |
+| 2 | `theorem` | [set_set_perm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PermPublicSetSetPerm.lean/declarations/set-set-perm.md) | 46 | `result-track:8296c748b6a37d934deba5cc54a836caf7104eca22b43da7db34e7fc3a3c6ced` |
+| 3 | `theorem` | [take_of_getElem?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PermPublicSetSetPerm.lean/declarations/take-of-getelem.md) | 68 | `result-track:79127ccc2a3d057643c8f6a076f4fa0d9ed0d840eab9886fb324cc49bb240cdd` |
+| 4 | `theorem` | [drop_of_getElem?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PermPublicSetSetPerm.lean/declarations/drop-of-getelem.md) | 75 | `result-track:d36245fa397e21225d0538de48095fcf1339d1968d12d8c62f55967f2c6dadd9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

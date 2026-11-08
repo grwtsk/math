@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmall.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmall.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmall.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmall.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasLimitsOfShape_of_essentiallySmall](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmall.lean/declarations/haslimitsofshape-of-essentiallysmall.md) | 29 | `result-track:4606f690da57ad6d8bc3ecc917bfa54c1dc3de3d24ef361a04bd4f37c8798b6f` |
-| 2 | `theorem` | [hasColimitsOfShape_of_essentiallySmall](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmall.lean/declarations/hascolimitsofshape-of-essentiallysmall.md) | 33 | `result-track:f46d887d75b8e8e4091c79517f7471d7f2b20fa5f3f1dc7600186ea359b1cc11` |
-| 3 | `theorem` | [hasProductsOfShape_of_small](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmall.lean/declarations/hasproductsofshape-of-small.md) | 37 | `result-track:ca85d7b2f592778ebb5a1077bf8024139027585ee3d9871a8947287f015b1627` |
-| 4 | `theorem` | [hasCoproductsOfShape_of_small](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmall.lean/declarations/hascoproductsofshape-of-small.md) | 41 | `result-track:a28cbdbdf6112837257d1170e5acd645726d76e62f9cf1e194fe299211ae1544` |
+| 1 | `theorem` | [hasLimitsOfShape_of_essentiallySmall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmall.lean/declarations/haslimitsofshape-of-essentiallysmall.md) | 29 | `result-track:4606f690da57ad6d8bc3ecc917bfa54c1dc3de3d24ef361a04bd4f37c8798b6f` |
+| 2 | `theorem` | [hasColimitsOfShape_of_essentiallySmall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmall.lean/declarations/hascolimitsofshape-of-essentiallysmall.md) | 33 | `result-track:f46d887d75b8e8e4091c79517f7471d7f2b20fa5f3f1dc7600186ea359b1cc11` |
+| 3 | `theorem` | [hasProductsOfShape_of_small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmall.lean/declarations/hasproductsofshape-of-small.md) | 37 | `result-track:ca85d7b2f592778ebb5a1077bf8024139027585ee3d9871a8947287f015b1627` |
+| 4 | `theorem` | [hasCoproductsOfShape_of_small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEssentiallySmall.lean/declarations/hascoproductsofshape-of-small.md) | 41 | `result-track:a28cbdbdf6112837257d1170e5acd645726d76e62f9cf1e194fe299211ae1544` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

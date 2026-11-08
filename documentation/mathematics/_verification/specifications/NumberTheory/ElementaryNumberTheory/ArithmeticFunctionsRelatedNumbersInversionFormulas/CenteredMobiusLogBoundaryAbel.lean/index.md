@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogBoundaryAbel.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogBoundaryAbel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogBoundaryAbel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogBoundaryAbel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogBoundaryEndpointObstruction`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogBoundaryEndpointObstruction.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogBoundaryEndpointObstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogBoundaryEndpointObstruction.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [centeredGreenBaselineHarmonicResidual](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogBoundaryAbel.lean/declarations/centeredgreenbaselineharmonicresidual.md) | 15 | `declaration-track:8278df6c194b7023576a4aa37ee4d63102288ac8b751d92af02c70fadb088cad` |
-| 2 | `theorem` | [prefixMangoldtError_increment](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogBoundaryAbel.lean/declarations/prefixmangoldterror-increment.md) | 19 | `result-track:753af4f958448cf868fb905b23b96724b5d539b938f679637ca583408eb9e7e2` |
-| 3 | `theorem` | [harmonicMangoldtDiscrepancy_abel](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogBoundaryAbel.lean/declarations/harmonicmangoldtdiscrepancy-abel.md) | 37 | `result-track:b2178e61897359e8f7a9cfe3318b8ac30fabd24bb83b4b0e5f5ab94ab7e8daa5` |
-| 4 | `theorem` | [abs_centeredGreenBaselineHarmonicResidual_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogBoundaryAbel.lean/declarations/abs-centeredgreenbaselineharmonicresidual-le.md) | 85 | `result-track:61229b36510e0cdc90637d50deaa6970bf6481c65d75a31845190fb8081b4a69` |
+| 1 | `def` | [centeredGreenBaselineHarmonicResidual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogBoundaryAbel.lean/declarations/centeredgreenbaselineharmonicresidual.md) | 15 | `declaration-track:8278df6c194b7023576a4aa37ee4d63102288ac8b751d92af02c70fadb088cad` |
+| 2 | `theorem` | [prefixMangoldtError_increment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogBoundaryAbel.lean/declarations/prefixmangoldterror-increment.md) | 19 | `result-track:753af4f958448cf868fb905b23b96724b5d539b938f679637ca583408eb9e7e2` |
+| 3 | `theorem` | [harmonicMangoldtDiscrepancy_abel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogBoundaryAbel.lean/declarations/harmonicmangoldtdiscrepancy-abel.md) | 37 | `result-track:b2178e61897359e8f7a9cfe3318b8ac30fabd24bb83b4b0e5f5ab94ab7e8daa5` |
+| 4 | `theorem` | [abs_centeredGreenBaselineHarmonicResidual_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogBoundaryAbel.lean/declarations/abs-centeredgreenbaselineharmonicresidual-le.md) | 85 | `result-track:61229b36510e0cdc90637d50deaa6970bf6481c65d75a31845190fb8081b4a69` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

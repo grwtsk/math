@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ENNReal.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ENNReal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ENNReal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ENNReal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [ENNReal.finStronglyMeasurable_of_measurable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ENNReal.lean/declarations/ennreal-finstronglymeasurable-of-measurable.md) | 23 | `result-track:215e51fb1b1d3eff318b4c4d1c73a09ca29add2ae072309aebebc3be51b3d9a2` |
-| 2 | `lemma` | [ENNReal.aefinStronglyMeasurable_of_aemeasurable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ENNReal.lean/declarations/ennreal-aefinstronglymeasurable-of-aemeasurable.md) | 29 | `result-track:eae142189a00440a29bf3a04a98291805c4e7fa3ca44fa1f710eeb08c40d81cc` |
+| 1 | `lemma` | [ENNReal.finStronglyMeasurable_of_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ENNReal.lean/declarations/ennreal-finstronglymeasurable-of-measurable.md) | 23 | `result-track:215e51fb1b1d3eff318b4c4d1c73a09ca29add2ae072309aebebc3be51b3d9a2` |
+| 2 | `lemma` | [ENNReal.aefinStronglyMeasurable_of_aemeasurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ENNReal.lean/declarations/ennreal-aefinstronglymeasurable-of-aemeasurable.md) | 29 | `result-track:eae142189a00440a29bf3a04a98291805c4e7fa3ca44fa1f710eeb08c40d81cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [expand](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/expand.md) | 28 | `declaration-track:fd0ee3749615cc27b41e20b51aa29ce51c1348c5f27902efcca7afb16d73192e` |
-| 2 | `theorem` | [expand_C](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/expand-c.md) | 32 | `result-track:7d34151d1eb334e8c56d90b229ae30a8ccf6875e4a1277785747d9547f9af74b` |
-| 3 | `theorem` | [expand_X](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/expand-x.md) | 36 | `result-track:9312ae00d71da426b6b0f84818f2d961bbc1eb0ae785b0582bb809be6fe9b3d8` |
-| 4 | `theorem` | [expand_monomial](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/expand-monomial.md) | 40 | `result-track:d89ab602ecb8b930d1fed9ec591a2c6e15bbbe75ec0e5326ddd8c93233ab2215` |
-| 5 | `theorem` | [expand_one_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/expand-one-apply.md) | 44 | `result-track:d81bfd400eba76ac4cd48bdaa962639d36eb27ee5c74cd50454f8bec23e1b7fc` |
-| 6 | `theorem` | [expand_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/expand-one.md) | 49 | `result-track:5be8f786fb07f71f3f201fcea722bcfcaf4f431882d6bc21ff65fdab57723386` |
-| 7 | `theorem` | [expand_comp_bind₁](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/expand-comp-bind.md) | 53 | `result-track:07ed6ac6ced90bb7ac1330817c33f53c5aeac6cf082b68213c1a6ba2a9ca152e` |
-| 8 | `theorem` | [expand_bind₁](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/expand-bind.md) | 59 | `result-track:83558b80000e7d6d77cb58a136f56f844b842d43af16ae964ac36f98a3d031ac` |
-| 9 | `theorem` | [map_expand](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/map-expand.md) | 64 | `result-track:e066cec12875716ca33299a95cca5aa48252fcc316e109154ebf19e4614c85b1` |
-| 10 | `theorem` | [rename_expand](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/rename-expand.md) | 68 | `result-track:ded1d21e164bcd18a95c642d80e7d0dadf2fb7fead43f379d68b2dcb37eea7f4` |
-| 11 | `theorem` | [rename_comp_expand](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/rename-comp-expand.md) | 73 | `result-track:34d7218ef57204db2d5c252e2388aa7bf293e2947a0da438da7661c81da0177b` |
+| 1 | `def` | [expand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/expand.md) | 28 | `declaration-track:fd0ee3749615cc27b41e20b51aa29ce51c1348c5f27902efcca7afb16d73192e` |
+| 2 | `theorem` | [expand_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/expand-c.md) | 32 | `result-track:7d34151d1eb334e8c56d90b229ae30a8ccf6875e4a1277785747d9547f9af74b` |
+| 3 | `theorem` | [expand_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/expand-x.md) | 36 | `result-track:9312ae00d71da426b6b0f84818f2d961bbc1eb0ae785b0582bb809be6fe9b3d8` |
+| 4 | `theorem` | [expand_monomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/expand-monomial.md) | 40 | `result-track:d89ab602ecb8b930d1fed9ec591a2c6e15bbbe75ec0e5326ddd8c93233ab2215` |
+| 5 | `theorem` | [expand_one_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/expand-one-apply.md) | 44 | `result-track:d81bfd400eba76ac4cd48bdaa962639d36eb27ee5c74cd50454f8bec23e1b7fc` |
+| 6 | `theorem` | [expand_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/expand-one.md) | 49 | `result-track:5be8f786fb07f71f3f201fcea722bcfcaf4f431882d6bc21ff65fdab57723386` |
+| 7 | `theorem` | [expand_comp_bind₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/expand-comp-bind.md) | 53 | `result-track:07ed6ac6ced90bb7ac1330817c33f53c5aeac6cf082b68213c1a6ba2a9ca152e` |
+| 8 | `theorem` | [expand_bind₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/expand-bind.md) | 59 | `result-track:83558b80000e7d6d77cb58a136f56f844b842d43af16ae964ac36f98a3d031ac` |
+| 9 | `theorem` | [map_expand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/map-expand.md) | 64 | `result-track:e066cec12875716ca33299a95cca5aa48252fcc316e109154ebf19e4614c85b1` |
+| 10 | `theorem` | [rename_expand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/rename-expand.md) | 68 | `result-track:ded1d21e164bcd18a95c642d80e7d0dadf2fb7fead43f379d68b2dcb37eea7f4` |
+| 11 | `theorem` | [rename_comp_expand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraMvPolynomialExpand.lean/declarations/rename-comp-expand.md) | 73 | `result-track:34d7218ef57204db2d5c252e2388aa7bf293e2947a0da438da7661c81da0177b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

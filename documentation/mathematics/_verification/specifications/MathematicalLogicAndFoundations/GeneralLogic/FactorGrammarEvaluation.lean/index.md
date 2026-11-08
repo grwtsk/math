@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarEvaluation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarEvaluation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarEvaluation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarEvaluation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.NumberTheory.PrimePower` — import line 19; external provider; requires a separately pinned dependency.
-- [Factor Grammar Conversions](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarConversions.lean/index.md) — import line 20; pinned internal source present.
+- [Factor Grammar Conversions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarConversions.lean/index.md) — import line 20; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [eval](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarEvaluation.lean/declarations/eval.md) | 39 | `declaration-track:e0b8cd07ac8ac244d765a47ae6689357ffa0289c8582ab4e3ee3dbbb5963bc7c` |
-| 2 | `def` | [decode](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarEvaluation.lean/declarations/decode.md) | 46 | `declaration-track:ed432a501e71b80431b81e8b0923de94aacc31046225e1ae90431d52b1f151d3` |
-| 3 | `theorem` | [decode_arithmeticToCellular](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarEvaluation.lean/declarations/decode-arithmetictocellular.md) | 51 | `result-track:20affa0b078d7e0196d19e958b754332cb1118ed4c7ca70f3b7d177f2dce8525` |
+| 1 | `def` | [eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarEvaluation.lean/declarations/eval.md) | 39 | `declaration-track:e0b8cd07ac8ac244d765a47ae6689357ffa0289c8582ab4e3ee3dbbb5963bc7c` |
+| 2 | `def` | [decode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarEvaluation.lean/declarations/decode.md) | 46 | `declaration-track:ed432a501e71b80431b81e8b0923de94aacc31046225e1ae90431d52b1f151d3` |
+| 3 | `theorem` | [decode_arithmeticToCellular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorGrammarEvaluation.lean/declarations/decode-arithmetictocellular.md) | 51 | `result-track:20affa0b078d7e0196d19e958b754332cb1118ed4c7ca70f3b7d177f2dce8525` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

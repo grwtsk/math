@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [matrixAt](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/declarations/matrixat.md) | 32 | `declaration-track:b2fe5258daee184868c9cf82d25cd15ed4f342750df756ae6639bf447116a875` |
-| 2 | `def` | [firstAt](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/declarations/firstat.md) | 37 | `declaration-track:c03f130739aaca0deb74622d576903556bf644b7b7522407a4e00e59d6d805f2` |
-| 3 | `def` | [secondAt](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/declarations/secondat.md) | 39 | `declaration-track:c07e6221f797c66c465e0dd596799f76b11300d0f97db7975a0fc6fd2b87d19c` |
-| 4 | `def` | [movedReadout](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/declarations/movedreadout.md) | 43 | `declaration-track:862b10b03342e57898bdcdf3a97bef441be606484f9ac543491dd8d1fdddf11d` |
-| 5 | `theorem` | [literal_readout](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/declarations/literal-readout.md) | 48 | `result-track:fca74ffb52ab769a290d71846b2b5e9a66bf7423e6fb2766ab3f2dde65552d91` |
-| 6 | `theorem` | [literal_move_defect](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/declarations/literal-move-defect.md) | 57 | `result-track:232704a665dfe9abef2a17dbb470560f8a74f4700a708c40c5128c8d5ba2b824` |
-| 7 | `def` | [dualMovedReadout](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/declarations/dualmovedreadout.md) | 68 | `declaration-track:f9d86bba2cfb67679dff78e62217e83c3126f772c0fc85fb283c6bf7ce7ba1c5` |
-| 8 | `theorem` | [literal_dual_compensation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/declarations/literal-dual-compensation.md) | 75 | `result-track:1d4e4e44173bc5393a7c14a7eada88c8b6a52df60a23bf801a41a634cf5ca5b0` |
+| 1 | `def` | [matrixAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/declarations/matrixat.md) | 32 | `declaration-track:b2fe5258daee184868c9cf82d25cd15ed4f342750df756ae6639bf447116a875` |
+| 2 | `def` | [firstAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/declarations/firstat.md) | 37 | `declaration-track:c03f130739aaca0deb74622d576903556bf644b7b7522407a4e00e59d6d805f2` |
+| 3 | `def` | [secondAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/declarations/secondat.md) | 39 | `declaration-track:c07e6221f797c66c465e0dd596799f76b11300d0f97db7975a0fc6fd2b87d19c` |
+| 4 | `def` | [movedReadout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/declarations/movedreadout.md) | 43 | `declaration-track:862b10b03342e57898bdcdf3a97bef441be606484f9ac543491dd8d1fdddf11d` |
+| 5 | `theorem` | [literal_readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/declarations/literal-readout.md) | 48 | `result-track:fca74ffb52ab769a290d71846b2b5e9a66bf7423e6fb2766ab3f2dde65552d91` |
+| 6 | `theorem` | [literal_move_defect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/declarations/literal-move-defect.md) | 57 | `result-track:232704a665dfe9abef2a17dbb470560f8a74f4700a708c40c5128c8d5ba2b824` |
+| 7 | `def` | [dualMovedReadout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/declarations/dualmovedreadout.md) | 68 | `declaration-track:f9d86bba2cfb67679dff78e62217e83c3126f772c0fc85fb283c6bf7ce7ba1c5` |
+| 8 | `theorem` | [literal_dual_compensation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ArithmeticDefectNamespaced.lean/declarations/literal-dual-compensation.md) | 75 | `result-track:1d4e4e44173bc5393a7c14a7eada88c8b6a52df60a23bf801a41a634cf5ca5b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

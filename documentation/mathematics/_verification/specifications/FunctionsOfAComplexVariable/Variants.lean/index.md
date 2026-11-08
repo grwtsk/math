@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/Variants.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/Variants.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Variants.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Variants.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [no_finite_order_zero](../../../../FunctionsOfAComplexVariable/Variants.lean/declarations/no-finite-order-zero.md) | 24 | `result-track:c05947d4dc205e2006ac8390a50184663dc3249fe32190dad0e55c5b219deb04` |
-| 2 | `theorem` | [finite_order_on_connected](../../../../FunctionsOfAComplexVariable/Variants.lean/declarations/finite-order-on-connected.md) | 57 | `result-track:a818fc3b7957b4558edfbe7afd4f8be0594fd7150764629c0533821a2cc9b6b5` |
-| 3 | `theorem` | [nonvanishing](../../../../FunctionsOfAComplexVariable/Variants.lean/declarations/nonvanishing.md) | 68 | `result-track:58cea1de4557f310ed727bf3c2133588c1235fdec92cf855a39349dd6c41f531` |
+| 1 | `theorem` | [no_finite_order_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Variants.lean/declarations/no-finite-order-zero.md) | 24 | `result-track:c05947d4dc205e2006ac8390a50184663dc3249fe32190dad0e55c5b219deb04` |
+| 2 | `theorem` | [finite_order_on_connected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Variants.lean/declarations/finite-order-on-connected.md) | 57 | `result-track:a818fc3b7957b4558edfbe7afd4f8be0594fd7150764629c0533821a2cc9b6b5` |
+| 3 | `theorem` | [nonvanishing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Variants.lean/declarations/nonvanishing.md) | 68 | `result-track:58cea1de4557f310ed727bf3c2133588c1235fdec92cf855a39349dd6c41f531` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [LDL.lowerInv](../../../../FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-lowerinv.md) | 58 | `declaration-track:f7bcdcdef8ac7121a98c46e2dec0d2957ee381d1d669be79fad3d84bf40b7cb6` |
-| 2 | `theorem` | [LDL.lowerInv_eq_gramSchmidtBasis](../../../../FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-lowerinv-eq-gramschmidtbasis.md) | 62 | `result-track:9174ebd0acc5abb2a622e29f9b7f713e54b8eddbd2a12dc17141d8ee3540890e` |
-| 3 | `instance` | [LDL.invertibleLowerInv](../../../../FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-invertiblelowerinv.md) | 73 | `declaration-track:bb353c792895caea192a566e3be176668ca96fa52b263a2e8cd0bd56f1040f1b` |
-| 4 | `theorem` | [LDL.lowerInv_orthogonal](../../../../FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-lowerinv-orthogonal.md) | 81 | `result-track:95313afcb30be55efc7a659e4dcce8ba2a4c39635c95027854b94e63d627b7f8` |
-| 5 | `def` | [LDL.diagEntries](../../../../FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-diagentries.md) | 87 | `declaration-track:17626d9929fc7794dd0f5c00e714904c1b431622dfac0d3e0396f4890d5c8c06` |
-| 6 | `def` | [LDL.diag](../../../../FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-diag.md) | 91 | `declaration-track:0a89bc0acd4c505a118ae8f26e57502284c2b9cb41e9b188deee7df20679ac86` |
-| 7 | `theorem` | [LDL.isLowerTriangular_lowerInv](../../../../FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-islowertriangular-lowerinv.md) | 94 | `result-track:270752d60dd1f89dff8221eac1d9068a0ca2237499288766b1e55cf41496c8fd` |
-| 8 | `theorem` | [LDL.diag_eq_lowerInv_conj](../../../../FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-diag-eq-lowerinv-conj.md) | 103 | `result-track:debe4e5e87eb7be68ce9b0eb524fda2331d96a2dc44861858a5a692c2713a3be` |
-| 9 | `def` | [LDL.lower](../../../../FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-lower.md) | 117 | `declaration-track:f62c96628bfe8e44f0f07923a6fd1f19f718cf9a52ce32f3d8979a3eb59b5271` |
-| 10 | `theorem` | [LDL.isLowerTriangular_lower](../../../../FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-islowertriangular-lower.md) | 120 | `result-track:02b4d51e6eb65fb7c1c61ecae5bdfa1dddae121445b07723bcfc4937db0041d2` |
-| 11 | `theorem` | [LDL.lower_conj_diag](../../../../FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-lower-conj-diag.md) | 125 | `result-track:f72ad9e700fce6449f362fda0444072d2a069e8747353cd7acc695bc5a70b76a` |
+| 1 | `def` | [LDL.lowerInv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-lowerinv.md) | 58 | `declaration-track:f7bcdcdef8ac7121a98c46e2dec0d2957ee381d1d669be79fad3d84bf40b7cb6` |
+| 2 | `theorem` | [LDL.lowerInv_eq_gramSchmidtBasis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-lowerinv-eq-gramschmidtbasis.md) | 62 | `result-track:9174ebd0acc5abb2a622e29f9b7f713e54b8eddbd2a12dc17141d8ee3540890e` |
+| 3 | `instance` | [LDL.invertibleLowerInv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-invertiblelowerinv.md) | 73 | `declaration-track:bb353c792895caea192a566e3be176668ca96fa52b263a2e8cd0bd56f1040f1b` |
+| 4 | `theorem` | [LDL.lowerInv_orthogonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-lowerinv-orthogonal.md) | 81 | `result-track:95313afcb30be55efc7a659e4dcce8ba2a4c39635c95027854b94e63d627b7f8` |
+| 5 | `def` | [LDL.diagEntries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-diagentries.md) | 87 | `declaration-track:17626d9929fc7794dd0f5c00e714904c1b431622dfac0d3e0396f4890d5c8c06` |
+| 6 | `def` | [LDL.diag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-diag.md) | 91 | `declaration-track:0a89bc0acd4c505a118ae8f26e57502284c2b9cb41e9b188deee7df20679ac86` |
+| 7 | `theorem` | [LDL.isLowerTriangular_lowerInv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-islowertriangular-lowerinv.md) | 94 | `result-track:270752d60dd1f89dff8221eac1d9068a0ca2237499288766b1e55cf41496c8fd` |
+| 8 | `theorem` | [LDL.diag_eq_lowerInv_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-diag-eq-lowerinv-conj.md) | 103 | `result-track:debe4e5e87eb7be68ce9b0eb524fda2331d96a2dc44861858a5a692c2713a3be` |
+| 9 | `def` | [LDL.lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-lower.md) | 117 | `declaration-track:f62c96628bfe8e44f0f07923a6fd1f19f718cf9a52ce32f3d8979a3eb59b5271` |
+| 10 | `theorem` | [LDL.isLowerTriangular_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-islowertriangular-lower.md) | 120 | `result-track:02b4d51e6eb65fb7c1c61ecae5bdfa1dddae121445b07723bcfc4937db0041d2` |
+| 11 | `theorem` | [LDL.lower_conj_diag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisMatrixLDLNamespacedPublic.lean/declarations/ldl-lower-conj-diag.md) | 125 | `result-track:f72ad9e700fce6449f362fda0444072d2a069e8747353cd7acc695bc5a70b76a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

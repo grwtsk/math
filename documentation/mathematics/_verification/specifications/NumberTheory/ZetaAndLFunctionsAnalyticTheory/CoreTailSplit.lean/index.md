@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoreTailSplit.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoreTailSplit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoreTailSplit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoreTailSplit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fullResidualVector](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoreTailSplit.lean/declarations/fullresidualvector.md) | 14 | `declaration-track:31cd140ea8e27f70fb84bf2792fc46b4310284a5b386b4042dd766f88cc9cc7d` |
-| 2 | `def` | [coreResidualVector](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoreTailSplit.lean/declarations/coreresidualvector.md) | 18 | `declaration-track:f7ba6d5261d4b8b6aad0f201544ae232a5d13b4cb34a0b8bdad42a8ae963c28b` |
-| 3 | `theorem` | [fullResidualVector_ae](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoreTailSplit.lean/declarations/fullresidualvector-ae.md) | 23 | `result-track:f4cd25062276e07b2f9a772712a642ae6f7c3a06a50b50620e7897622a3068c4` |
-| 4 | `theorem` | [coreResidualVector_ae](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoreTailSplit.lean/declarations/coreresidualvector-ae.md) | 28 | `result-track:49abdaafe0489692d24d2bb78d9966b9c6d4fc5bde8d4ed57293379bfc0e19d6` |
-| 5 | `theorem` | [fullResidualVector_decomposition](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoreTailSplit.lean/declarations/fullresidualvector-decomposition.md) | 34 | `result-track:1d286bbeb2651c3d9822261037feb1761a3790c4b03002ad804d3b3387c57081` |
-| 6 | `theorem` | [filtered_full_norm_le_core_tails](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoreTailSplit.lean/declarations/filtered-full-norm-le-core-tails.md) | 75 | `result-track:1f9b24f289b0a8bfb1f6f05ac6a2514f2bc94ede996041c0a1c61f8f78206bda` |
+| 1 | `def` | [fullResidualVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoreTailSplit.lean/declarations/fullresidualvector.md) | 14 | `declaration-track:31cd140ea8e27f70fb84bf2792fc46b4310284a5b386b4042dd766f88cc9cc7d` |
+| 2 | `def` | [coreResidualVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoreTailSplit.lean/declarations/coreresidualvector.md) | 18 | `declaration-track:f7ba6d5261d4b8b6aad0f201544ae232a5d13b4cb34a0b8bdad42a8ae963c28b` |
+| 3 | `theorem` | [fullResidualVector_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoreTailSplit.lean/declarations/fullresidualvector-ae.md) | 23 | `result-track:f4cd25062276e07b2f9a772712a642ae6f7c3a06a50b50620e7897622a3068c4` |
+| 4 | `theorem` | [coreResidualVector_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoreTailSplit.lean/declarations/coreresidualvector-ae.md) | 28 | `result-track:49abdaafe0489692d24d2bb78d9966b9c6d4fc5bde8d4ed57293379bfc0e19d6` |
+| 5 | `theorem` | [fullResidualVector_decomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoreTailSplit.lean/declarations/fullresidualvector-decomposition.md) | 34 | `result-track:1d286bbeb2651c3d9822261037feb1761a3790c4b03002ad804d3b3387c57081` |
+| 6 | `theorem` | [filtered_full_norm_le_core_tails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoreTailSplit.lean/declarations/filtered-full-norm-le-core-tails.md) | 75 | `result-track:1f9b24f289b0a8bfb1f6f05ac6a2514f2bc94ede996041c0a1c61f8f78206bda` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

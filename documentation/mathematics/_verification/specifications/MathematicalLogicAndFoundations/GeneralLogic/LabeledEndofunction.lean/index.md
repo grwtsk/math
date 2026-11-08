@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LabeledEndofunction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LabeledEndofunction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LabeledEndofunction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LabeledEndofunction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PresentationRule](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LabeledEndofunction.lean/declarations/presentationrule.md) | 38 | `declaration-track:1d22df01656761050fecf22fa0a81f11b653ded9f3f80f98abceb8d809a8e73c` |
-| 2 | `def` | [IsFixedBy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LabeledEndofunction.lean/declarations/isfixedby.md) | 42 | `declaration-track:5ac305929edf22b819ab3356c75b1d8071fb60c622df516f0a7abd8a2f9262bf` |
+| 1 | `structure` | [PresentationRule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LabeledEndofunction.lean/declarations/presentationrule.md) | 38 | `declaration-track:1d22df01656761050fecf22fa0a81f11b653ded9f3f80f98abceb8d809a8e73c` |
+| 2 | `def` | [IsFixedBy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LabeledEndofunction.lean/declarations/isfixedby.md) | 42 | `declaration-track:5ac305929edf22b819ab3356c75b1d8071fb60c622df516f0a7abd8a2f9262bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

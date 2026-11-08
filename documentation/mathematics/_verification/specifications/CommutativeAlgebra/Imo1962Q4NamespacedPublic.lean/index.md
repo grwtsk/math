@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ProblemEquation](../../../../CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/problemequation.md) | 35 | `declaration-track:c3c4c011fb0f88259c49b4c2ad67f881cb799f2683b360a5d5b062e0f51935ec` |
-| 2 | `def` | [solutionSet](../../../../CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/solutionset.md) | 38 | `declaration-track:01a94331e96fd2e8738b6bfaeb7bef23bd77b99bb22efad2c2ce0c9bb3671312` |
-| 3 | `def` | [altFormula](../../../../CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/altformula.md) | 45 | `declaration-track:92efe513bca823486a103b2647be1ae164942bb3f7c2fa165ace8597db7cb163` |
-| 4 | `theorem` | [cos_sum_equiv](../../../../CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/cos-sum-equiv.md) | 48 | `result-track:b7f71f7401209c143a16ad44487cd7091055d2aa834741168b7dc72832948ea0` |
-| 5 | `theorem` | [alt_equiv](../../../../CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/alt-equiv.md) | 53 | `result-track:3d62bd9fa5b79a7eb7622cfe1612fe63a3232bb090fec96ba833eb5e42c0671d` |
-| 6 | `theorem` | [finding_zeros](../../../../CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/finding-zeros.md) | 57 | `result-track:e4eb86ab44aac5ec2021caa2d4c2faad08099a01cd2a1b20e32e3de48a2e74d0` |
-| 7 | `theorem` | [solve_cos2_half](../../../../CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/solve-cos2-half.md) | 70 | `result-track:aa1f3bc6c4e46f2245eecfd5639dfd997bc574dc47945662f96926ed3d048892` |
-| 8 | `theorem` | [solve_cos3x_0](../../../../CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/solve-cos3x-0.md) | 79 | `result-track:8b98a31154d7aab345b295ea19109ee5e47b0e45e942d98291333875406ffa70` |
-| 9 | `theorem` | [imo1962_q4](../../../../CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/imo1962-q4.md) | 93 | `result-track:2ca7ad0c8194f9399d79af3a1b633418422be98c338cc7f7edf436293fedb742` |
-| 10 | `theorem` | [formula](../../../../CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/formula.md) | 104 | `result-track:c39d19986ce39fd92939fe3d8d32665efe9da0397b91b6d338a5b0c0bf6449c3` |
-| 11 | `theorem` | [solve_cos2x_0](../../../../CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/solve-cos2x-0.md) | 116 | `result-track:61fb18dec2cf8a9e9dc8ee9dafb30977f2f710c9a3aa83ffdff21f34ce5c0309` |
-| 12 | `theorem` | [imo1962_q4'](../../../../CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/imo1962-q4-source-edition-2.md) | 128 | `result-track:2f32a795c148c45448d28f40a9d584845da19e1e625e007fb880202afb174224` |
+| 1 | `def` | [ProblemEquation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/problemequation.md) | 35 | `declaration-track:c3c4c011fb0f88259c49b4c2ad67f881cb799f2683b360a5d5b062e0f51935ec` |
+| 2 | `def` | [solutionSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/solutionset.md) | 38 | `declaration-track:01a94331e96fd2e8738b6bfaeb7bef23bd77b99bb22efad2c2ce0c9bb3671312` |
+| 3 | `def` | [altFormula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/altformula.md) | 45 | `declaration-track:92efe513bca823486a103b2647be1ae164942bb3f7c2fa165ace8597db7cb163` |
+| 4 | `theorem` | [cos_sum_equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/cos-sum-equiv.md) | 48 | `result-track:b7f71f7401209c143a16ad44487cd7091055d2aa834741168b7dc72832948ea0` |
+| 5 | `theorem` | [alt_equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/alt-equiv.md) | 53 | `result-track:3d62bd9fa5b79a7eb7622cfe1612fe63a3232bb090fec96ba833eb5e42c0671d` |
+| 6 | `theorem` | [finding_zeros](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/finding-zeros.md) | 57 | `result-track:e4eb86ab44aac5ec2021caa2d4c2faad08099a01cd2a1b20e32e3de48a2e74d0` |
+| 7 | `theorem` | [solve_cos2_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/solve-cos2-half.md) | 70 | `result-track:aa1f3bc6c4e46f2245eecfd5639dfd997bc574dc47945662f96926ed3d048892` |
+| 8 | `theorem` | [solve_cos3x_0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/solve-cos3x-0.md) | 79 | `result-track:8b98a31154d7aab345b295ea19109ee5e47b0e45e942d98291333875406ffa70` |
+| 9 | `theorem` | [imo1962_q4](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/imo1962-q4.md) | 93 | `result-track:2ca7ad0c8194f9399d79af3a1b633418422be98c338cc7f7edf436293fedb742` |
+| 10 | `theorem` | [formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/formula.md) | 104 | `result-track:c39d19986ce39fd92939fe3d8d32665efe9da0397b91b6d338a5b0c0bf6449c3` |
+| 11 | `theorem` | [solve_cos2x_0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/solve-cos2x-0.md) | 116 | `result-track:61fb18dec2cf8a9e9dc8ee9dafb30977f2f710c9a3aa83ffdff21f34ce5c0309` |
+| 12 | `theorem` | [imo1962_q4'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Imo1962Q4NamespacedPublic.lean/declarations/imo1962-q4-source-edition-2.md) | 128 | `result-track:2f32a795c148c45448d28f40a9d584845da19e1e625e007fb880202afb174224` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

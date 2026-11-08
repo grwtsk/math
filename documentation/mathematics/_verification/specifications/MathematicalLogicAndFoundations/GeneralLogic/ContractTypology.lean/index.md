@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContractTypology.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContractTypology.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContractTypology.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContractTypology.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ClaimStatus](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContractTypology.lean/declarations/claimstatus.md) | 18 | `declaration-track:31c9fba5b7ace664b10bd2b89ce307058bd0b510aba0d28512811094e73e0153` |
-| 2 | `structure` | [TypedClaim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContractTypology.lean/declarations/typedclaim.md) | 28 | `declaration-track:b931d242b976107ca23df6e069766aef6c660185ae07b039b0a830d64bbc4ad2` |
-| 3 | `def` | [IsInternalProof](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContractTypology.lean/declarations/isinternalproof.md) | 34 | `declaration-track:6a1e632a4101ec3d4414d59b9971a0482b1fac9bf1d01b35b38f0dc720928b82` |
-| 4 | `def` | [IsContractBoundary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContractTypology.lean/declarations/iscontractboundary.md) | 37 | `declaration-track:9acb6bc2f5909dcdce992fac7fcbea81543976dabba5fe9796e1c30bd0692951` |
-| 5 | `theorem` | [proved_ne_contract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContractTypology.lean/declarations/proved-ne-contract.md) | 42 | `result-track:6c08110375e11e33681961af998fa38d98e97d9abe5368c0c5bc268e7d459208` |
-| 6 | `theorem` | [shaderMirror_ne_proved](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContractTypology.lean/declarations/shadermirror-ne-proved.md) | 46 | `result-track:cb9c94348383afe49382558947265593b808986d2e79873e03c1dbff38ec474b` |
-| 7 | `theorem` | [runtimeChecker_ne_proved](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContractTypology.lean/declarations/runtimechecker-ne-proved.md) | 50 | `result-track:b0f9e94dba70d93ffd14c0ab923b4fe7367f0123a687ce9c67eb46e2367ffb60` |
+| 1 | `inductive` | [ClaimStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContractTypology.lean/declarations/claimstatus.md) | 18 | `declaration-track:31c9fba5b7ace664b10bd2b89ce307058bd0b510aba0d28512811094e73e0153` |
+| 2 | `structure` | [TypedClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContractTypology.lean/declarations/typedclaim.md) | 28 | `declaration-track:b931d242b976107ca23df6e069766aef6c660185ae07b039b0a830d64bbc4ad2` |
+| 3 | `def` | [IsInternalProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContractTypology.lean/declarations/isinternalproof.md) | 34 | `declaration-track:6a1e632a4101ec3d4414d59b9971a0482b1fac9bf1d01b35b38f0dc720928b82` |
+| 4 | `def` | [IsContractBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContractTypology.lean/declarations/iscontractboundary.md) | 37 | `declaration-track:9acb6bc2f5909dcdce992fac7fcbea81543976dabba5fe9796e1c30bd0692951` |
+| 5 | `theorem` | [proved_ne_contract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContractTypology.lean/declarations/proved-ne-contract.md) | 42 | `result-track:6c08110375e11e33681961af998fa38d98e97d9abe5368c0c5bc268e7d459208` |
+| 6 | `theorem` | [shaderMirror_ne_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContractTypology.lean/declarations/shadermirror-ne-proved.md) | 46 | `result-track:cb9c94348383afe49382558947265593b808986d2e79873e03c1dbff38ec474b` |
+| 7 | `theorem` | [runtimeChecker_ne_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContractTypology.lean/declarations/runtimechecker-ne-proved.md) | 50 | `result-track:b0f9e94dba70d93ffd14c0ab923b4fe7367f0123a687ce9c67eb46e2367ffb60` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

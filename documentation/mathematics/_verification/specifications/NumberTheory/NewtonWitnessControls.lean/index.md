@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/NewtonWitnessControls.lean/index.md) · [Full source](../../../../NumberTheory/NewtonWitnessControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonWitnessControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonWitnessControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalNewtonHeadBinding`](../../../../NumberTheory/CanonicalNewtonHeadBinding.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalNewtonHeadBinding`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalNewtonHeadBinding.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [residual_alone_fails](../../../../NumberTheory/NewtonWitnessControls.lean/declarations/residual-alone-fails.md) | 14 | `result-track:9033462cd04176fc1c574c76c9c3209b95494684aafe83f19199ad6d4b908df2` |
-| 2 | `theorem` | [zero_inverse_fixed](../../../../NumberTheory/NewtonWitnessControls.lean/declarations/zero-inverse-fixed.md) | 19 | `result-track:f8660b3a32b8b217509948f6ecbaa7a7c5dcd4ae1c50c2ec2820d01d0044cb1f` |
-| 3 | `theorem` | [zero_inverse_defect](../../../../NumberTheory/NewtonWitnessControls.lean/declarations/zero-inverse-defect.md) | 22 | `result-track:9562f7606b34e7dd7673e4c3d7f5a1f319eaf7efa89eefa4f411994cc4d7e27d` |
-| 4 | `theorem` | [noncontracting_threshold_rejected](../../../../NumberTheory/NewtonWitnessControls.lean/declarations/noncontracting-threshold-rejected.md) | 24 | `result-track:464e56315e4760330cbb1db5ee8ae59df014a0807c9ca5642342f868fe2d72e5` |
-| 5 | `theorem` | [self_map_failure](../../../../NumberTheory/NewtonWitnessControls.lean/declarations/self-map-failure.md) | 26 | `result-track:e5537901fc7bbc4e640b111dbc694baa3c4b8d92100c4edcff287ce322528637` |
-| 6 | `theorem` | [omitted_curvature_changes_guard](../../../../NumberTheory/NewtonWitnessControls.lean/declarations/omitted-curvature-changes-guard.md) | 29 | `result-track:eead5fcb63beeca3490f52ed1dfef44436e075b961faf0df56ce46b28db74c0a` |
-| 7 | `theorem` | [cauchy_second_constant](../../../../NumberTheory/NewtonWitnessControls.lean/declarations/cauchy-second-constant.md) | 32 | `result-track:aa537e353fb299169ec950ef9f9fd049a18d9dc65f3e26c1323d8978746859f2` |
-| 8 | `theorem` | [outer_domain_low_stage](../../../../NumberTheory/NewtonWitnessControls.lean/declarations/outer-domain-low-stage.md) | 34 | `result-track:4b0adc597078c48b0d98a26109231173cc5df9549034e3f13fef1ffecdf7d5a9` |
-| 9 | `theorem` | [negative_margin_countermodel](../../../../NumberTheory/NewtonWitnessControls.lean/declarations/negative-margin-countermodel.md) | 37 | `result-track:099545edf2d85404aa9f3daea2b87d0d10802f5e8a0b8f65ef1f34df3cd62184` |
-| 10 | `theorem` | [center_on_line_does_not_fix_point](../../../../NumberTheory/NewtonWitnessControls.lean/declarations/center-on-line-does-not-fix-point.md) | 41 | `result-track:cbba76b179344eeb281c2cbd87a4ee77e929e7f37bd9d395789fc59d8930e378` |
-| 11 | `theorem` | [radius_cost_not_constant](../../../../NumberTheory/NewtonWitnessControls.lean/declarations/radius-cost-not-constant.md) | 45 | `result-track:89b60754975cc5daa82ab752be663cc823fe3b6c68a294114fe81dbb7cc8cbac` |
-| 12 | `theorem` | [invariance_equality_allowed](../../../../NumberTheory/NewtonWitnessControls.lean/declarations/invariance-equality-allowed.md) | 48 | `result-track:bbea0a811a93ac80d8038b17b9b1350402965ffa42108eb3107bcaa2165ac5b1` |
+| 1 | `theorem` | [residual_alone_fails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonWitnessControls.lean/declarations/residual-alone-fails.md) | 14 | `result-track:9033462cd04176fc1c574c76c9c3209b95494684aafe83f19199ad6d4b908df2` |
+| 2 | `theorem` | [zero_inverse_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonWitnessControls.lean/declarations/zero-inverse-fixed.md) | 19 | `result-track:f8660b3a32b8b217509948f6ecbaa7a7c5dcd4ae1c50c2ec2820d01d0044cb1f` |
+| 3 | `theorem` | [zero_inverse_defect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonWitnessControls.lean/declarations/zero-inverse-defect.md) | 22 | `result-track:9562f7606b34e7dd7673e4c3d7f5a1f319eaf7efa89eefa4f411994cc4d7e27d` |
+| 4 | `theorem` | [noncontracting_threshold_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonWitnessControls.lean/declarations/noncontracting-threshold-rejected.md) | 24 | `result-track:464e56315e4760330cbb1db5ee8ae59df014a0807c9ca5642342f868fe2d72e5` |
+| 5 | `theorem` | [self_map_failure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonWitnessControls.lean/declarations/self-map-failure.md) | 26 | `result-track:e5537901fc7bbc4e640b111dbc694baa3c4b8d92100c4edcff287ce322528637` |
+| 6 | `theorem` | [omitted_curvature_changes_guard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonWitnessControls.lean/declarations/omitted-curvature-changes-guard.md) | 29 | `result-track:eead5fcb63beeca3490f52ed1dfef44436e075b961faf0df56ce46b28db74c0a` |
+| 7 | `theorem` | [cauchy_second_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonWitnessControls.lean/declarations/cauchy-second-constant.md) | 32 | `result-track:aa537e353fb299169ec950ef9f9fd049a18d9dc65f3e26c1323d8978746859f2` |
+| 8 | `theorem` | [outer_domain_low_stage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonWitnessControls.lean/declarations/outer-domain-low-stage.md) | 34 | `result-track:4b0adc597078c48b0d98a26109231173cc5df9549034e3f13fef1ffecdf7d5a9` |
+| 9 | `theorem` | [negative_margin_countermodel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonWitnessControls.lean/declarations/negative-margin-countermodel.md) | 37 | `result-track:099545edf2d85404aa9f3daea2b87d0d10802f5e8a0b8f65ef1f34df3cd62184` |
+| 10 | `theorem` | [center_on_line_does_not_fix_point](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonWitnessControls.lean/declarations/center-on-line-does-not-fix-point.md) | 41 | `result-track:cbba76b179344eeb281c2cbd87a4ee77e929e7f37bd9d395789fc59d8930e378` |
+| 11 | `theorem` | [radius_cost_not_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonWitnessControls.lean/declarations/radius-cost-not-constant.md) | 45 | `result-track:89b60754975cc5daa82ab752be663cc823fe3b6c68a294114fe81dbb7cc8cbac` |
+| 12 | `theorem` | [invariance_equality_allowed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonWitnessControls.lean/declarations/invariance-equality-allowed.md) | 48 | `result-track:bbea0a811a93ac80d8038b17b9b1350402965ffa42108eb3107bcaa2165ac5b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ClosureCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/declarations/closurecertificate.md) | 13 | `declaration-track:1d5b19972bd37993f40161a54529a40e927bc23edfdac4577c70922d1885b182` |
-| 2 | `structure` | [FixedClassWitness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/declarations/fixedclasswitness.md) | 20 | `declaration-track:939bd84ac84a53b6448ca8e864000832dee4d6fc2d250d29a5acdbd9a5938954` |
-| 3 | `def` | [prefixFaithful](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/declarations/prefixfaithful.md) | 27 | `declaration-track:757e4383151aa8a8f4333b674cddc0f4f680d6e1916d2d0a50ea10da0011acac` |
-| 4 | `def` | [fixedClassCertified](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/declarations/fixedclasscertified.md) | 34 | `declaration-track:4011ba4ed4fad070534bd18b54b48ca535a58421b80eb7ab312ed1e95c156f59` |
-| 5 | `def` | [claimBoundary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/declarations/claimboundary.md) | 44 | `declaration-track:0b94fb13bc54cd0ab0a3937f06113571e2fee471ab7e562cd414af348399b14f` |
-| 6 | `theorem` | [nonRationalUniversalRejected](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/declarations/nonrationaluniversalrejected.md) | 48 | `result-track:c88ff1f49d8b786bbbca1fcd58d35850aa9e0860a13c5f09aba9b2f8f4e7b03d` |
-| 7 | `def` | [classicalTargetAvailable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/declarations/classicaltargetavailable.md) | 58 | `declaration-track:50b78d8530bd71a7db3df7abe90a6944d51b835949455e59dce6e65e3179b85d` |
-| 8 | `theorem` | [universalGateUnavailable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/declarations/universalgateunavailable.md) | 61 | `result-track:0e7a7b2404bb5ed548df3285c15dc12f57a553a64017171f8e670be000e89d3c` |
+| 1 | `structure` | [ClosureCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/declarations/closurecertificate.md) | 13 | `declaration-track:1d5b19972bd37993f40161a54529a40e927bc23edfdac4577c70922d1885b182` |
+| 2 | `structure` | [FixedClassWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/declarations/fixedclasswitness.md) | 20 | `declaration-track:939bd84ac84a53b6448ca8e864000832dee4d6fc2d250d29a5acdbd9a5938954` |
+| 3 | `def` | [prefixFaithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/declarations/prefixfaithful.md) | 27 | `declaration-track:757e4383151aa8a8f4333b674cddc0f4f680d6e1916d2d0a50ea10da0011acac` |
+| 4 | `def` | [fixedClassCertified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/declarations/fixedclasscertified.md) | 34 | `declaration-track:4011ba4ed4fad070534bd18b54b48ca535a58421b80eb7ab312ed1e95c156f59` |
+| 5 | `def` | [claimBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/declarations/claimboundary.md) | 44 | `declaration-track:0b94fb13bc54cd0ab0a3937f06113571e2fee471ab7e562cd414af348399b14f` |
+| 6 | `theorem` | [nonRationalUniversalRejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/declarations/nonrationaluniversalrejected.md) | 48 | `result-track:c88ff1f49d8b786bbbca1fcd58d35850aa9e0860a13c5f09aba9b2f8f4e7b03d` |
+| 7 | `def` | [classicalTargetAvailable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/declarations/classicaltargetavailable.md) | 58 | `declaration-track:50b78d8530bd71a7db3df7abe90a6944d51b835949455e59dce6e65e3179b85d` |
+| 8 | `theorem` | [universalGateUnavailable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosureNamespaced.lean/declarations/universalgateunavailable.md) | 61 | `result-track:0e7a7b2404bb5ed548df3285c15dc12f57a553a64017171f8e670be000e89d3c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

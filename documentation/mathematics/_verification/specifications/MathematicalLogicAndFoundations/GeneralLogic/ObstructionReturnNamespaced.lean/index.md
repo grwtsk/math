@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ObstructionReturnNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ObstructionReturnNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ObstructionReturnNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ObstructionReturnNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimitiveObstructionCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ObstructionReturnNamespaced.lean/declarations/primitiveobstructioncertificate.md) | 18 | `declaration-track:b8be0b72624104556e6114d873bf8637fbed736b5c100186d5ba3eedb6390197` |
-| 2 | `theorem` | [primitive_obstruction_blocks_target](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ObstructionReturnNamespaced.lean/declarations/primitive-obstruction-blocks-target.md) | 30 | `result-track:df994a5d22d6dbfb83bac0c037631831c9f018a045ee2cd04bd0ef21e808f24c` |
+| 1 | `structure` | [PrimitiveObstructionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ObstructionReturnNamespaced.lean/declarations/primitiveobstructioncertificate.md) | 18 | `declaration-track:b8be0b72624104556e6114d873bf8637fbed736b5c100186d5ba3eedb6390197` |
+| 2 | `theorem` | [primitive_obstruction_blocks_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ObstructionReturnNamespaced.lean/declarations/primitive-obstruction-blocks-target.md) | 30 | `result-track:df994a5d22d6dbfb83bac0c037631831c9f018a045ee2cd04bd0ef21e808f24c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

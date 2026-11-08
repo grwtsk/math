@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Reflection.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Reflection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Reflection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Reflection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,20 +59,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [intervalReflection](../../../../MeasureAndIntegration/Reflection.lean/declarations/intervalreflection.md) | 23 | `declaration-track:a04d734aace90386f8b8cf7c2a856ac3986363eaf30f4fd94176b504876bd332` |
-| 2 | `theorem` | [interval_reflection_involutive](../../../../MeasureAndIntegration/Reflection.lean/declarations/interval-reflection-involutive.md) | 26 | `result-track:e0ef202898262e47ba49abfe76facd307cbce32d851f8c18757be0a35b569569` |
-| 3 | `theorem` | [interval_reflection_mem_Icc_iff](../../../../MeasureAndIntegration/Reflection.lean/declarations/interval-reflection-mem-icc-iff.md) | 33 | `result-track:869716fef0aa8a8e144bc51663125e1e1e0d163928ae77e56f38b20d88b8f0bd` |
-| 4 | `def` | [evenPart](../../../../MeasureAndIntegration/Reflection.lean/declarations/evenpart.md) | 39 | `declaration-track:dac1c7fce8662f6247f855925146dbfd4ed77545b431196effc5da832fce411a` |
-| 5 | `def` | [oddPart](../../../../MeasureAndIntegration/Reflection.lean/declarations/oddpart.md) | 43 | `declaration-track:1e82e47287f0a276fa537dd7e30947c0e3a9a699b806ecbd1e03c01707dcb27f` |
-| 6 | `theorem` | [even_add_odd](../../../../MeasureAndIntegration/Reflection.lean/declarations/even-add-odd.md) | 46 | `result-track:4e79a14dc747ccc8384a86646e307e21e9c388f6d3cb09da59a7e62962797b44` |
-| 7 | `theorem` | [even_part_reflection](../../../../MeasureAndIntegration/Reflection.lean/declarations/even-part-reflection.md) | 51 | `result-track:71592aa40e281af29763fa481a3a451c47a280d977f4a46466fb714bdd7c5ad3` |
-| 8 | `theorem` | [odd_part_reflection](../../../../MeasureAndIntegration/Reflection.lean/declarations/odd-part-reflection.md) | 56 | `result-track:3b7b69b14f65d65635cf98fcc3ec85b47144edc72ca331c80809e84a536a1c50` |
-| 9 | `theorem` | [integral_reflection](../../../../MeasureAndIntegration/Reflection.lean/declarations/integral-reflection.md) | 62 | `result-track:27b439cc5870fc49c66fd60fa8123cc2086de1302a084f443eb00b8a3bfb9714` |
-| 10 | `theorem` | [integral_eq_zero_of_reflection_odd](../../../../MeasureAndIntegration/Reflection.lean/declarations/integral-eq-zero-of-reflection-odd.md) | 69 | `result-track:186441e8a61e9426b4a4f8246f17b57d8dc02babf9010a494e74f39211c03c9c` |
-| 11 | `theorem` | [integral_even_mul_odd](../../../../MeasureAndIntegration/Reflection.lean/declarations/integral-even-mul-odd.md) | 77 | `result-track:bd320a68365bdc1ff4d887dc5b897044f8d3aacfbb8d88e9c6764d04217b0568` |
-| 12 | `theorem` | [integral_odd_mul_even](../../../../MeasureAndIntegration/Reflection.lean/declarations/integral-odd-mul-even.md) | 84 | `result-track:08ba0d5c32249bd8a4ee4744f050e3bffb0e6f97b486c02c2062c5c7c9a8fd49` |
-| 13 | `theorem` | [integral_product_eq_signed_squares](../../../../MeasureAndIntegration/Reflection.lean/declarations/integral-product-eq-signed-squares.md) | 90 | `result-track:f01cf064fd9959402968c6ddc5dbb1cd546dd73723ef3ed1681cb118a38755dd` |
-| 14 | `theorem` | [integral_product_eq_even_add_odd](../../../../MeasureAndIntegration/Reflection.lean/declarations/integral-product-eq-even-add-odd.md) | 106 | `result-track:e3578031f118806135a54492b2b1a8d55a6b13bc5981068c2c5d7efceac77608` |
+| 1 | `def` | [intervalReflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Reflection.lean/declarations/intervalreflection.md) | 23 | `declaration-track:a04d734aace90386f8b8cf7c2a856ac3986363eaf30f4fd94176b504876bd332` |
+| 2 | `theorem` | [interval_reflection_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Reflection.lean/declarations/interval-reflection-involutive.md) | 26 | `result-track:e0ef202898262e47ba49abfe76facd307cbce32d851f8c18757be0a35b569569` |
+| 3 | `theorem` | [interval_reflection_mem_Icc_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Reflection.lean/declarations/interval-reflection-mem-icc-iff.md) | 33 | `result-track:869716fef0aa8a8e144bc51663125e1e1e0d163928ae77e56f38b20d88b8f0bd` |
+| 4 | `def` | [evenPart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Reflection.lean/declarations/evenpart.md) | 39 | `declaration-track:dac1c7fce8662f6247f855925146dbfd4ed77545b431196effc5da832fce411a` |
+| 5 | `def` | [oddPart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Reflection.lean/declarations/oddpart.md) | 43 | `declaration-track:1e82e47287f0a276fa537dd7e30947c0e3a9a699b806ecbd1e03c01707dcb27f` |
+| 6 | `theorem` | [even_add_odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Reflection.lean/declarations/even-add-odd.md) | 46 | `result-track:4e79a14dc747ccc8384a86646e307e21e9c388f6d3cb09da59a7e62962797b44` |
+| 7 | `theorem` | [even_part_reflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Reflection.lean/declarations/even-part-reflection.md) | 51 | `result-track:71592aa40e281af29763fa481a3a451c47a280d977f4a46466fb714bdd7c5ad3` |
+| 8 | `theorem` | [odd_part_reflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Reflection.lean/declarations/odd-part-reflection.md) | 56 | `result-track:3b7b69b14f65d65635cf98fcc3ec85b47144edc72ca331c80809e84a536a1c50` |
+| 9 | `theorem` | [integral_reflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Reflection.lean/declarations/integral-reflection.md) | 62 | `result-track:27b439cc5870fc49c66fd60fa8123cc2086de1302a084f443eb00b8a3bfb9714` |
+| 10 | `theorem` | [integral_eq_zero_of_reflection_odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Reflection.lean/declarations/integral-eq-zero-of-reflection-odd.md) | 69 | `result-track:186441e8a61e9426b4a4f8246f17b57d8dc02babf9010a494e74f39211c03c9c` |
+| 11 | `theorem` | [integral_even_mul_odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Reflection.lean/declarations/integral-even-mul-odd.md) | 77 | `result-track:bd320a68365bdc1ff4d887dc5b897044f8d3aacfbb8d88e9c6764d04217b0568` |
+| 12 | `theorem` | [integral_odd_mul_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Reflection.lean/declarations/integral-odd-mul-even.md) | 84 | `result-track:08ba0d5c32249bd8a4ee4744f050e3bffb0e6f97b486c02c2062c5c7c9a8fd49` |
+| 13 | `theorem` | [integral_product_eq_signed_squares](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Reflection.lean/declarations/integral-product-eq-signed-squares.md) | 90 | `result-track:f01cf064fd9959402968c6ddc5dbb1cd546dd73723ef3ed1681cb118a38755dd` |
+| 14 | `theorem` | [integral_product_eq_even_add_odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Reflection.lean/declarations/integral-product-eq-even-add-odd.md) | 106 | `result-track:e3578031f118806135a54492b2b1a8d55a6b13bc5981068c2c5d7efceac77608` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isTheta_ofReal](../../../../FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/declarations/istheta-ofreal.md) | 27 | `result-track:39fbab907fea18483b814c080fa4411bd4336c97a6c3f9c92b321b776d4a8266` |
-| 2 | `theorem` | [isLittleO_ofReal_left](../../../../FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/declarations/islittleo-ofreal-left.md) | 31 | `result-track:7de17bdbcfefbcfb1cb4c20e1bff71851657b18b55c057e9e07fa10093824e0e` |
-| 3 | `theorem` | [isLittleO_ofReal_right](../../../../FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/declarations/islittleo-ofreal-right.md) | 35 | `result-track:a62908c7940c55816c2ec762c0209751392f736669eb119ca57bb47ae4cb8269` |
-| 4 | `theorem` | [isBigO_ofReal_left](../../../../FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/declarations/isbigo-ofreal-left.md) | 39 | `result-track:782b5c997766be1d29bdeeb2c82557beab0d5220760b9b358ffd151872eabec4` |
-| 5 | `theorem` | [isBigO_ofReal_right](../../../../FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/declarations/isbigo-ofreal-right.md) | 43 | `result-track:463a4e9edc70a23d6eab282973be56a4b0faf833019872fe46befc235aa35833` |
-| 6 | `theorem` | [isTheta_ofReal_left](../../../../FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/declarations/istheta-ofreal-left.md) | 47 | `result-track:1b212a1ab6577ff3ced39053351639a10440c0c434f9f57bed079a888cbe978a` |
-| 7 | `theorem` | [isTheta_ofReal_right](../../../../FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/declarations/istheta-ofreal-right.md) | 51 | `result-track:b40b960c26662effcb85f89bb91b3b0665af5ce58969bbb302f30bc826a73d3b` |
-| 8 | `lemma` | [isBigO_comp_ofReal_nhds](../../../../FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/declarations/isbigo-comp-ofreal-nhds.md) | 56 | `result-track:9888eccb00d8d0e0dab0e7e7b3e07446f9c55303c4d9a8a6777cabd5915d80ca` |
-| 9 | `lemma` | [isBigO_comp_ofReal_nhds_ne](../../../../FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/declarations/isbigo-comp-ofreal-nhds-ne.md) | 60 | `result-track:51390261584d903408ae845efd0c50f092e332efed44c32dc977f65a14fd0f02` |
+| 1 | `theorem` | [isTheta_ofReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/declarations/istheta-ofreal.md) | 27 | `result-track:39fbab907fea18483b814c080fa4411bd4336c97a6c3f9c92b321b776d4a8266` |
+| 2 | `theorem` | [isLittleO_ofReal_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/declarations/islittleo-ofreal-left.md) | 31 | `result-track:7de17bdbcfefbcfb1cb4c20e1bff71851657b18b55c057e9e07fa10093824e0e` |
+| 3 | `theorem` | [isLittleO_ofReal_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/declarations/islittleo-ofreal-right.md) | 35 | `result-track:a62908c7940c55816c2ec762c0209751392f736669eb119ca57bb47ae4cb8269` |
+| 4 | `theorem` | [isBigO_ofReal_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/declarations/isbigo-ofreal-left.md) | 39 | `result-track:782b5c997766be1d29bdeeb2c82557beab0d5220760b9b358ffd151872eabec4` |
+| 5 | `theorem` | [isBigO_ofReal_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/declarations/isbigo-ofreal-right.md) | 43 | `result-track:463a4e9edc70a23d6eab282973be56a4b0faf833019872fe46befc235aa35833` |
+| 6 | `theorem` | [isTheta_ofReal_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/declarations/istheta-ofreal-left.md) | 47 | `result-track:1b212a1ab6577ff3ced39053351639a10440c0c434f9f57bed079a888cbe978a` |
+| 7 | `theorem` | [isTheta_ofReal_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/declarations/istheta-ofreal-right.md) | 51 | `result-track:b40b960c26662effcb85f89bb91b3b0665af5ce58969bbb302f30bc826a73d3b` |
+| 8 | `lemma` | [isBigO_comp_ofReal_nhds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/declarations/isbigo-comp-ofreal-nhds.md) | 56 | `result-track:9888eccb00d8d0e0dab0e7e7b3e07446f9c55303c4d9a8a6777cabd5915d80ca` |
+| 9 | `lemma` | [isBigO_comp_ofReal_nhds_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptoticsNamespaced.lean/declarations/isbigo-comp-ofreal-nhds-ne.md) | 60 | `result-track:51390261584d903408ae845efd0c50f092e332efed44c32dc977f65a14fd0f02` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

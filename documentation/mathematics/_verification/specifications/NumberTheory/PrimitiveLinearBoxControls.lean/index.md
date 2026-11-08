@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PrimitiveLinearBoxControls.lean/index.md) · [Full source](../../../../NumberTheory/PrimitiveLinearBoxControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearBoxControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearBoxControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel`](../../../../NumberTheory/PrimitiveLinearKernel.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetGeometryLatticeInput`](../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearKernel.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetGeometryLatticeInput`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [unitData](../../../../NumberTheory/PrimitiveLinearBoxControls.lean/declarations/unitdata.md) | 25 | `declaration-track:4cc5cc080fdde2d2655128939c06a02f85437c5d30486b4ca2b8fe4101879648` |
-| 2 | `theorem` | [unitData_count_control](../../../../NumberTheory/PrimitiveLinearBoxControls.lean/declarations/unitdata-count-control.md) | 41 | `result-track:acfa5005634264b07c6752bd0f314a8bc44aca2c66597d82bd826e5f813ec6bf` |
-| 3 | `theorem` | [unitData_member_control](../../../../NumberTheory/PrimitiveLinearBoxControls.lean/declarations/unitdata-member-control.md) | 46 | `result-track:aa8a0facb4eafbb7da50ef5e74b60f7f8a41b41ad75997dd5bf1e97634aa1c8f` |
-| 4 | `theorem` | [coefficient_primitive_not_variable_primitive_control](../../../../NumberTheory/PrimitiveLinearBoxControls.lean/declarations/coefficient-primitive-not-variable-primitive-control.md) | 52 | `result-track:81a8fabfbf60185b100bca02e3ce11dd53877178c3896fda12e17238e6a380aa` |
-| 5 | `theorem` | [primitive_ray_control](../../../../NumberTheory/PrimitiveLinearBoxControls.lean/declarations/primitive-ray-control.md) | 61 | `result-track:fc1f394b637c354f9ef29952fba889de607802d7ab41c83354459b2f733dc373` |
-| 6 | `theorem` | [saturated_kernel_control](../../../../NumberTheory/PrimitiveLinearBoxControls.lean/declarations/saturated-kernel-control.md) | 67 | `result-track:22d6ff74532bb48da83d43ce3e04f8295dfac92767860c1fb1ab71ae9f5caa69` |
-| 7 | `theorem` | [primitive_normal_control](../../../../NumberTheory/PrimitiveLinearBoxControls.lean/declarations/primitive-normal-control.md) | 74 | `result-track:6347895512c9da316ed45f30cd8e74a8e3558fe669218988e8cf93b7116efb30` |
-| 8 | `theorem` | [primitive_normal_surjective_control](../../../../NumberTheory/PrimitiveLinearBoxControls.lean/declarations/primitive-normal-surjective-control.md) | 79 | `result-track:1ee2cbdc95800b1b587bce0b63976871064b6279fe15eb218383cb127effd79e` |
-| 9 | `def` | [lopsidedData](../../../../NumberTheory/PrimitiveLinearBoxControls.lean/declarations/lopsideddata.md) | 85 | `declaration-track:75328cb628b2c737d0f7441e0faf2bad2530dce63d80abe1e4a952e1bea92743` |
-| 10 | `theorem` | [lopsided_scaleHeight_control](../../../../NumberTheory/PrimitiveLinearBoxControls.lean/declarations/lopsided-scaleheight-control.md) | 100 | `result-track:7ecc60c21d68e584fc7fbd7283dbbfdf6fd240a496f67fd13259da6ea972b64e` |
-| 11 | `theorem` | [natural_division_rejected_control](../../../../NumberTheory/PrimitiveLinearBoxControls.lean/declarations/natural-division-rejected-control.md) | 106 | `result-track:7bea8af453acd2f4535809d82613e697f528d44d3025155192ce4f8d80b86b7b` |
-| 12 | `theorem` | [denominator_positive_control](../../../../NumberTheory/PrimitiveLinearBoxControls.lean/declarations/denominator-positive-control.md) | 112 | `result-track:0d686e7fe9dbb9c561b90fb1b2f092684da857eaa888ee3f01a694ce4b374e50` |
-| 13 | `theorem` | [named_bound_not_automatic_control](../../../../NumberTheory/PrimitiveLinearBoxControls.lean/declarations/named-bound-not-automatic-control.md) | 118 | `result-track:c79ebf0cc7993cb5cc5de79af7707565b9bcc2bc4828e45bc79505a133ab379c` |
+| 1 | `def` | [unitData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearBoxControls.lean/declarations/unitdata.md) | 25 | `declaration-track:4cc5cc080fdde2d2655128939c06a02f85437c5d30486b4ca2b8fe4101879648` |
+| 2 | `theorem` | [unitData_count_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearBoxControls.lean/declarations/unitdata-count-control.md) | 41 | `result-track:acfa5005634264b07c6752bd0f314a8bc44aca2c66597d82bd826e5f813ec6bf` |
+| 3 | `theorem` | [unitData_member_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearBoxControls.lean/declarations/unitdata-member-control.md) | 46 | `result-track:aa8a0facb4eafbb7da50ef5e74b60f7f8a41b41ad75997dd5bf1e97634aa1c8f` |
+| 4 | `theorem` | [coefficient_primitive_not_variable_primitive_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearBoxControls.lean/declarations/coefficient-primitive-not-variable-primitive-control.md) | 52 | `result-track:81a8fabfbf60185b100bca02e3ce11dd53877178c3896fda12e17238e6a380aa` |
+| 5 | `theorem` | [primitive_ray_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearBoxControls.lean/declarations/primitive-ray-control.md) | 61 | `result-track:fc1f394b637c354f9ef29952fba889de607802d7ab41c83354459b2f733dc373` |
+| 6 | `theorem` | [saturated_kernel_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearBoxControls.lean/declarations/saturated-kernel-control.md) | 67 | `result-track:22d6ff74532bb48da83d43ce3e04f8295dfac92767860c1fb1ab71ae9f5caa69` |
+| 7 | `theorem` | [primitive_normal_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearBoxControls.lean/declarations/primitive-normal-control.md) | 74 | `result-track:6347895512c9da316ed45f30cd8e74a8e3558fe669218988e8cf93b7116efb30` |
+| 8 | `theorem` | [primitive_normal_surjective_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearBoxControls.lean/declarations/primitive-normal-surjective-control.md) | 79 | `result-track:1ee2cbdc95800b1b587bce0b63976871064b6279fe15eb218383cb127effd79e` |
+| 9 | `def` | [lopsidedData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearBoxControls.lean/declarations/lopsideddata.md) | 85 | `declaration-track:75328cb628b2c737d0f7441e0faf2bad2530dce63d80abe1e4a952e1bea92743` |
+| 10 | `theorem` | [lopsided_scaleHeight_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearBoxControls.lean/declarations/lopsided-scaleheight-control.md) | 100 | `result-track:7ecc60c21d68e584fc7fbd7283dbbfdf6fd240a496f67fd13259da6ea972b64e` |
+| 11 | `theorem` | [natural_division_rejected_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearBoxControls.lean/declarations/natural-division-rejected-control.md) | 106 | `result-track:7bea8af453acd2f4535809d82613e697f528d44d3025155192ce4f8d80b86b7b` |
+| 12 | `theorem` | [denominator_positive_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearBoxControls.lean/declarations/denominator-positive-control.md) | 112 | `result-track:0d686e7fe9dbb9c561b90fb1b2f092684da857eaa888ee3f01a694ce4b374e50` |
+| 13 | `theorem` | [named_bound_not_automatic_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearBoxControls.lean/declarations/named-bound-not-automatic-control.md) | 118 | `result-track:c79ebf0cc7993cb5cc5de79af7707565b9bcc2bc4828e45bc79505a133ab379c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

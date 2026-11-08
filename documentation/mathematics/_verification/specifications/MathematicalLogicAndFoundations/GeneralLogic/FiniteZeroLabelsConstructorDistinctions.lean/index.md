@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteZeroLabelsConstructorDistinctions.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteZeroLabelsConstructorDistinctions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteZeroLabelsConstructorDistinctions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteZeroLabelsConstructorDistinctions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ZeroKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteZeroLabelsConstructorDistinctions.lean/declarations/zerokind.md) | 35 | `declaration-track:c3e4dc845aec8dfe3b3bd5d3cf258ca3f9983e1b116ed4e8b5b64cd0845c17c3` |
-| 2 | `theorem` | [spectralFieldZero_ne_ellipticIdentityZero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteZeroLabelsConstructorDistinctions.lean/declarations/spectralfieldzero-ne-ellipticidentityzero.md) | 47 | `result-track:de3d4db4bf6fcb7fd0fdc608079a0234fcac48d52c596e0f9830cba82f4f4186` |
-| 3 | `theorem` | [heatResidualZero_ne_lFunctionZero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteZeroLabelsConstructorDistinctions.lean/declarations/heatresidualzero-ne-lfunctionzero.md) | 51 | `result-track:16e809e2cd2a48306ea50c778e71eb959da1b621b18093d84fdab82ff22c86eb` |
-| 4 | `theorem` | [shellHolonomyZero_ne_deBruijnNewmanZero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteZeroLabelsConstructorDistinctions.lean/declarations/shellholonomyzero-ne-debruijnnewmanzero.md) | 55 | `result-track:153b18f39d802cda674b3b1b55b5fb214d430b807abbf17ba675dc21177f1b40` |
-| 5 | `theorem` | [neutralPhaseZero_ne_spectralModeZero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteZeroLabelsConstructorDistinctions.lean/declarations/neutralphasezero-ne-spectralmodezero.md) | 59 | `result-track:49bc6a334ce60216ce0917659724bc3f59d22b313d116170b2f651c66b13afe0` |
+| 1 | `inductive` | [ZeroKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteZeroLabelsConstructorDistinctions.lean/declarations/zerokind.md) | 35 | `declaration-track:c3e4dc845aec8dfe3b3bd5d3cf258ca3f9983e1b116ed4e8b5b64cd0845c17c3` |
+| 2 | `theorem` | [spectralFieldZero_ne_ellipticIdentityZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteZeroLabelsConstructorDistinctions.lean/declarations/spectralfieldzero-ne-ellipticidentityzero.md) | 47 | `result-track:de3d4db4bf6fcb7fd0fdc608079a0234fcac48d52c596e0f9830cba82f4f4186` |
+| 3 | `theorem` | [heatResidualZero_ne_lFunctionZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteZeroLabelsConstructorDistinctions.lean/declarations/heatresidualzero-ne-lfunctionzero.md) | 51 | `result-track:16e809e2cd2a48306ea50c778e71eb959da1b621b18093d84fdab82ff22c86eb` |
+| 4 | `theorem` | [shellHolonomyZero_ne_deBruijnNewmanZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteZeroLabelsConstructorDistinctions.lean/declarations/shellholonomyzero-ne-debruijnnewmanzero.md) | 55 | `result-track:153b18f39d802cda674b3b1b55b5fb214d430b807abbf17ba675dc21177f1b40` |
+| 5 | `theorem` | [neutralPhaseZero_ne_spectralModeZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteZeroLabelsConstructorDistinctions.lean/declarations/neutralphasezero-ne-spectralmodezero.md) | 59 | `result-track:49bc6a334ce60216ce0917659724bc3f59d22b313d116170b2f651c66b13afe0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

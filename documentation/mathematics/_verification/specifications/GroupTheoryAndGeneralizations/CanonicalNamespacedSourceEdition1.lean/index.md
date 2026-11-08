@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CanonicalNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CanonicalNamespacedSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalNamespacedSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalNamespacedSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [SameOrbit](../../../../GroupTheoryAndGeneralizations/CanonicalNamespacedSourceEdition1.lean/declarations/sameorbit.md) | 22 | `declaration-track:5fa62941d0428fa80a383579d3fd3ad98077754889d934db5e6135fb36c00b1e` |
-| 2 | `structure` | [FiniteDataCanonicalizer](../../../../GroupTheoryAndGeneralizations/CanonicalNamespacedSourceEdition1.lean/declarations/finitedatacanonicalizer.md) | 30 | `declaration-track:c3665e63f24a79d3a63f209f627db78b3a6dd1954c4b5e9b67c3f37508228c86` |
-| 3 | `theorem` | [canon_smul](../../../../GroupTheoryAndGeneralizations/CanonicalNamespacedSourceEdition1.lean/declarations/canon-smul.md) | 55 | `result-track:775840e7611a633963eb1bf0520b294a66d3f27afeee0af395f08e198d5be913` |
-| 4 | `theorem` | [canon_idempotent](../../../../GroupTheoryAndGeneralizations/CanonicalNamespacedSourceEdition1.lean/declarations/canon-idempotent.md) | 67 | `result-track:a75ec26711e49b2fbbd0d761039534112a81640304e81d0bfa8a7b7026c6fc93` |
-| 5 | `theorem` | [canon_eq_iff_same_orbit](../../../../GroupTheoryAndGeneralizations/CanonicalNamespacedSourceEdition1.lean/declarations/canon-eq-iff-same-orbit.md) | 79 | `result-track:c811003048b683f5fce2b6345d418b1804bc7fbe032beead809758f700272bbf` |
+| 1 | `def` | [SameOrbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalNamespacedSourceEdition1.lean/declarations/sameorbit.md) | 22 | `declaration-track:5fa62941d0428fa80a383579d3fd3ad98077754889d934db5e6135fb36c00b1e` |
+| 2 | `structure` | [FiniteDataCanonicalizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalNamespacedSourceEdition1.lean/declarations/finitedatacanonicalizer.md) | 30 | `declaration-track:c3665e63f24a79d3a63f209f627db78b3a6dd1954c4b5e9b67c3f37508228c86` |
+| 3 | `theorem` | [canon_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalNamespacedSourceEdition1.lean/declarations/canon-smul.md) | 55 | `result-track:775840e7611a633963eb1bf0520b294a66d3f27afeee0af395f08e198d5be913` |
+| 4 | `theorem` | [canon_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalNamespacedSourceEdition1.lean/declarations/canon-idempotent.md) | 67 | `result-track:a75ec26711e49b2fbbd0d761039534112a81640304e81d0bfa8a7b7026c6fc93` |
+| 5 | `theorem` | [canon_eq_iff_same_orbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalNamespacedSourceEdition1.lean/declarations/canon-eq-iff-same-orbit.md) | 79 | `result-track:c811003048b683f5fce2b6345d418b1804bc7fbe032beead809758f700272bbf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

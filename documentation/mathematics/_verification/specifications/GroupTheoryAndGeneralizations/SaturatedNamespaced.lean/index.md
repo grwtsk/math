@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/SaturatedNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/SaturatedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SaturatedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SaturatedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Saturated](../../../../GroupTheoryAndGeneralizations/SaturatedNamespaced.lean/declarations/saturated.md) | 35 | `declaration-track:301efc6e24b84786fa00df1db50c7d0a428bbc12ef8eed1a3faac8870ddcc787` |
-| 2 | `theorem` | [saturated_iff_npow](../../../../GroupTheoryAndGeneralizations/SaturatedNamespaced.lean/declarations/saturated-iff-npow.md) | 39 | `result-track:0598e7a3de951a94320dc2b1028e7fc252f239aff8af2b7a5efede8f3bb745ae` |
-| 3 | `theorem` | [saturated_iff_zpow](../../../../GroupTheoryAndGeneralizations/SaturatedNamespaced.lean/declarations/saturated-iff-zpow.md) | 44 | `result-track:52aaf3ed3674fdc043488ac8ac92b9fdca36f85685540df46d84a087fcf3ef31` |
-| 4 | `theorem` | [ker_saturated](../../../../GroupTheoryAndGeneralizations/SaturatedNamespaced.lean/declarations/ker-saturated.md) | 66 | `result-track:0c8e8d240cbd614c66d2acc962f2b648de86aaa89f869c59e68a2d614d0b2900` |
+| 1 | `def` | [Saturated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SaturatedNamespaced.lean/declarations/saturated.md) | 35 | `declaration-track:301efc6e24b84786fa00df1db50c7d0a428bbc12ef8eed1a3faac8870ddcc787` |
+| 2 | `theorem` | [saturated_iff_npow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SaturatedNamespaced.lean/declarations/saturated-iff-npow.md) | 39 | `result-track:0598e7a3de951a94320dc2b1028e7fc252f239aff8af2b7a5efede8f3bb745ae` |
+| 3 | `theorem` | [saturated_iff_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SaturatedNamespaced.lean/declarations/saturated-iff-zpow.md) | 44 | `result-track:52aaf3ed3674fdc043488ac8ac92b9fdca36f85685540df46d84a087fcf3ef31` |
+| 4 | `theorem` | [ker_saturated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SaturatedNamespaced.lean/declarations/ker-saturated.md) | 66 | `result-track:0c8e8d240cbd614c66d2acc962f2b648de86aaa89f869c59e68a2d614d0b2900` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

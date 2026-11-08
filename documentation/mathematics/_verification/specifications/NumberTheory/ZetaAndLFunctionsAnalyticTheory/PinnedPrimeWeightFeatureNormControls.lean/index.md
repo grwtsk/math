@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ClauseIndexedPinnedPrimeWeight`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ClauseIndexedPinnedPrimeWeight.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ClauseIndexedPinnedPrimeWeight`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ClauseIndexedPinnedPrimeWeight.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [positivePolarity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/positivepolarity.md) | 16 | `declaration-track:b3578f5c0fd219f311b4d96453bee8aab4e8eaf6df381134d562b52b7fc1c7e6` |
-| 2 | `theorem` | [dyadic_prime_coefficient_uniform_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/dyadic-prime-coefficient-uniform-bound.md) | 21 | `result-track:78d89e3b4ec9e95fce3174d02d80044188bc584525bc53193e2512307aa977a6` |
-| 3 | `theorem` | [concrete_three_clause_pinned_criterion](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/concrete-three-clause-pinned-criterion.md) | 28 | `result-track:b841fcf76c78990f224baecf0554cee1e030318eaf1b4165db83dfee2858e5d5` |
-| 4 | `theorem` | [concrete_two_clause_pinned_criterion](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/concrete-two-clause-pinned-criterion.md) | 35 | `result-track:dfbc4dcfe3db10190c60013599e7b788b12e8450e08b5978d8ada53a18d57386` |
-| 5 | `def` | [zeroPinnedPrimeWeightStage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/zeropinnedprimeweightstage.md) | 44 | `declaration-track:b52f57e237aef1aba36d551185799f3ce547c442be08467a33389d6a5d01ad20` |
-| 6 | `theorem` | [zeroPinnedPrimeWeightStage_response](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/zeropinnedprimeweightstage-response.md) | 50 | `result-track:2fd540372c96b34b4630d3368467a010e4bae1dee3d20f774d4a89280738de79` |
-| 7 | `theorem` | [zero_pinned_stage_not_source_majorant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/zero-pinned-stage-not-source-majorant.md) | 59 | `result-track:41b277fb8e19e72e6617b77705e70694fc1e2d79f490a65796535ae84f56b5c3` |
-| 8 | `def` | [completedSourceChannels](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/completedsourcechannels.md) | 72 | `declaration-track:ed731cf99f7c12f54b6581b5139ce67c52a9d9f6890a57ab252a8f5590ed9bba` |
-| 9 | `def` | [requiredAnalyticObligations](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/requiredanalyticobligations.md) | 80 | `declaration-track:d6ff827a12d06a38c19edba69f7e988a2f65590aeba4c640d3583509c1bb9f0f` |
-| 10 | `def` | [prohibitedPromotions](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/prohibitedpromotions.md) | 88 | `declaration-track:85422a8afdbf94a2aa631608e9af1a796a7ddcda368b20c1ec83cb17a441b066` |
+| 1 | `def` | [positivePolarity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/positivepolarity.md) | 16 | `declaration-track:b3578f5c0fd219f311b4d96453bee8aab4e8eaf6df381134d562b52b7fc1c7e6` |
+| 2 | `theorem` | [dyadic_prime_coefficient_uniform_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/dyadic-prime-coefficient-uniform-bound.md) | 21 | `result-track:78d89e3b4ec9e95fce3174d02d80044188bc584525bc53193e2512307aa977a6` |
+| 3 | `theorem` | [concrete_three_clause_pinned_criterion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/concrete-three-clause-pinned-criterion.md) | 28 | `result-track:b841fcf76c78990f224baecf0554cee1e030318eaf1b4165db83dfee2858e5d5` |
+| 4 | `theorem` | [concrete_two_clause_pinned_criterion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/concrete-two-clause-pinned-criterion.md) | 35 | `result-track:dfbc4dcfe3db10190c60013599e7b788b12e8450e08b5978d8ada53a18d57386` |
+| 5 | `def` | [zeroPinnedPrimeWeightStage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/zeropinnedprimeweightstage.md) | 44 | `declaration-track:b52f57e237aef1aba36d551185799f3ce547c442be08467a33389d6a5d01ad20` |
+| 6 | `theorem` | [zeroPinnedPrimeWeightStage_response](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/zeropinnedprimeweightstage-response.md) | 50 | `result-track:2fd540372c96b34b4630d3368467a010e4bae1dee3d20f774d4a89280738de79` |
+| 7 | `theorem` | [zero_pinned_stage_not_source_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/zero-pinned-stage-not-source-majorant.md) | 59 | `result-track:41b277fb8e19e72e6617b77705e70694fc1e2d79f490a65796535ae84f56b5c3` |
+| 8 | `def` | [completedSourceChannels](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/completedsourcechannels.md) | 72 | `declaration-track:ed731cf99f7c12f54b6581b5139ce67c52a9d9f6890a57ab252a8f5590ed9bba` |
+| 9 | `def` | [requiredAnalyticObligations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/requiredanalyticobligations.md) | 80 | `declaration-track:d6ff827a12d06a38c19edba69f7e988a2f65590aeba4c640d3583509c1bb9f0f` |
+| 10 | `def` | [prohibitedPromotions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightFeatureNormControls.lean/declarations/prohibitedpromotions.md) | 88 | `declaration-track:85422a8afdbf94a2aa631608e9af1a796a7ddcda368b20c1ec83cb17a441b066` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

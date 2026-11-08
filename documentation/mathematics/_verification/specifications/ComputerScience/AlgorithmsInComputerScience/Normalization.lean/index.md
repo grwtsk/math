@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Normalization.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Normalization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Normalization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Normalization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [UnicodeNormalization](../../../../../ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/unicodenormalization.md) | 12 | `declaration-track:88f8f93a100b6bb9086a94005d9fb9f0f524be53b693f583b2fb3cdc9f586da6` |
-| 2 | `inductive` | [CasePolicy](../../../../../ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/casepolicy.md) | 20 | `declaration-track:d724228505c340bc88e93a4b24031085e48296a6dbc26ffe58190df777d25afc` |
-| 3 | `inductive` | [LineEndingPolicy](../../../../../ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/lineendingpolicy.md) | 27 | `declaration-track:0cf75e2978564d31d1375812e9113b6a6b91b54d2070581b4fd2bf6ea05643c1` |
-| 4 | `inductive` | [RetentionPolicy](../../../../../ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/retentionpolicy.md) | 33 | `declaration-track:ddd526530b15ff345b697b1be841ae1f71c267c52016f36725dfa97fd97dcf61` |
-| 5 | `inductive` | [OffsetUnit](../../../../../ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/offsetunit.md) | 39 | `declaration-track:8f4053a9155fa2e33ed79be4f9f04589531bb1f1887e38a60be68debfd122220` |
-| 6 | `structure` | [NormalizationSpec](../../../../../ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/normalizationspec.md) | 45 | `declaration-track:6f0bf4d10c1a340506cdf85cdc2fede7c9a719142b13adb9f87da0a70f8ac0a3` |
-| 7 | `structure` | [OffsetPair](../../../../../ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/offsetpair.md) | 55 | `declaration-track:84a15fd0ad0666bdc7c16d6821b37a4cffaf0b93fbc2be9014bf6fcf66e3349b` |
-| 8 | `structure` | [OffsetTransportCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/offsettransportcertificate.md) | 60 | `declaration-track:cb0ee05059758ae69eda79f9c2eb22cd155a8eeae57bdbc42143b9a45bd3883f` |
-| 9 | `structure` | [NormalizationCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/normalizationcertificate.md) | 82 | `declaration-track:d101d0dd2c1c6d4b81bf0aff519577f76e3d3d99c348458be67a921bb26145f6` |
-| 10 | `theorem` | [NormalizationCertificate.output_exact](../../../../../ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/normalizationcertificate-output-exact.md) | 91 | `result-track:5b135aba89d73971ab7a44aea3306d0afaed9a898ada0030517fdbf4ce101c3f` |
+| 1 | `inductive` | [UnicodeNormalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/unicodenormalization.md) | 12 | `declaration-track:88f8f93a100b6bb9086a94005d9fb9f0f524be53b693f583b2fb3cdc9f586da6` |
+| 2 | `inductive` | [CasePolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/casepolicy.md) | 20 | `declaration-track:d724228505c340bc88e93a4b24031085e48296a6dbc26ffe58190df777d25afc` |
+| 3 | `inductive` | [LineEndingPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/lineendingpolicy.md) | 27 | `declaration-track:0cf75e2978564d31d1375812e9113b6a6b91b54d2070581b4fd2bf6ea05643c1` |
+| 4 | `inductive` | [RetentionPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/retentionpolicy.md) | 33 | `declaration-track:ddd526530b15ff345b697b1be841ae1f71c267c52016f36725dfa97fd97dcf61` |
+| 5 | `inductive` | [OffsetUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/offsetunit.md) | 39 | `declaration-track:8f4053a9155fa2e33ed79be4f9f04589531bb1f1887e38a60be68debfd122220` |
+| 6 | `structure` | [NormalizationSpec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/normalizationspec.md) | 45 | `declaration-track:6f0bf4d10c1a340506cdf85cdc2fede7c9a719142b13adb9f87da0a70f8ac0a3` |
+| 7 | `structure` | [OffsetPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/offsetpair.md) | 55 | `declaration-track:84a15fd0ad0666bdc7c16d6821b37a4cffaf0b93fbc2be9014bf6fcf66e3349b` |
+| 8 | `structure` | [OffsetTransportCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/offsettransportcertificate.md) | 60 | `declaration-track:cb0ee05059758ae69eda79f9c2eb22cd155a8eeae57bdbc42143b9a45bd3883f` |
+| 9 | `structure` | [NormalizationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/normalizationcertificate.md) | 82 | `declaration-track:d101d0dd2c1c6d4b81bf0aff519577f76e3d3d99c348458be67a921bb26145f6` |
+| 10 | `theorem` | [NormalizationCertificate.output_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Normalization.lean/declarations/normalizationcertificate-output-exact.md) | 91 | `result-track:5b135aba89d73971ab7a44aea3306d0afaed9a898ada0030517fdbf4ce101c3f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

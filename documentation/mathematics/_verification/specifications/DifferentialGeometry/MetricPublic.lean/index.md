@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/MetricPublic.lean/index.md) · [Full source](../../../../DifferentialGeometry/MetricPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MetricPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MetricPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `syntax` | [(anonymous)](../../../../DifferentialGeometry/MetricPublic.lean/declarations/syntax.md) | 80 | `declaration-track:dfa3ffc41e47077cbd561c354a7a22ce67e158766eb3f8ca67a9440d7f233f15` |
-| 2 | `macro_rules` | [(anonymous)](../../../../DifferentialGeometry/MetricPublic.lean/declarations/macro-rules.md) | 81 | `declaration-track:8bb34c51fd76a55e5d3a5e0ddd8872f06705f2d0d6bcdd396ed614f8b99b1b93` |
-| 3 | `def` | [derivMetricTensorAux](../../../../DifferentialGeometry/MetricPublic.lean/declarations/derivmetrictensoraux.md) | 85 | `declaration-track:8efd312570eeae614ad4a03ec3c3def570782cc5f06e90e0e22c781fd614cd07` |
-| 4 | `lemma` | [derivMetricTensorAux_apply](../../../../DifferentialGeometry/MetricPublic.lean/declarations/derivmetrictensoraux-apply.md) | 89 | `result-track:622ba87f337e35ed20f4c1b38a699d1efce8970abc9e0e6dfd0dc9f057cee330` |
-| 5 | `theorem` | [tensorial_derivMetricTensorAux₁](../../../../DifferentialGeometry/MetricPublic.lean/declarations/tensorial-derivmetrictensoraux.md) | 98 | `result-track:1b07d7e68f760e62d0d43103538cf5ffbdde4886dfa64d4b27d7a95e7f44e203` |
-| 6 | `theorem` | [tensorial_derivMetricTensorAux₂](../../../../DifferentialGeometry/MetricPublic.lean/declarations/tensorial-derivmetrictensoraux-source-edition-2.md) | 111 | `result-track:8c2ccac2a3818b10b2e4ce5c16dda57226d6a31f298f74b1d81c45869408c72c` |
-| 7 | `def` | [derivMetricTensor](../../../../DifferentialGeometry/MetricPublic.lean/declarations/derivmetrictensor.md) | 127 | `declaration-track:29f320061dbe41f0ce8cb4b848897581a357151b867fb610de6582658b683fb5` |
-| 8 | `theorem` | [derivMetricTensor_apply](../../../../DifferentialGeometry/MetricPublic.lean/declarations/derivmetrictensor-apply.md) | 135 | `result-track:f8aa6c429d6ae7ceebe71f088db3977119d6e78ab7f30182acea18a1ee494469` |
-| 9 | `theorem` | [derivMetricTensor_apply_eq_extend](../../../../DifferentialGeometry/MetricPublic.lean/declarations/derivmetrictensor-apply-eq-extend.md) | 143 | `result-track:2ccbd0f6406b8f46cbef0867823c239571cca9dc0ab2d16fd9d91048aa5f3008` |
-| 10 | `def` | [IsMetricCompatible](../../../../DifferentialGeometry/MetricPublic.lean/declarations/ismetriccompatible.md) | 155 | `declaration-track:19a014dca434f3296fdf61a74e808afa440f7cac0c1f62e58a61744810226f78` |
-| 11 | `lemma` | [IsMetricCompatible.mvfderiv_inner_eq](../../../../DifferentialGeometry/MetricPublic.lean/declarations/ismetriccompatible-mvfderiv-inner-eq.md) | 160 | `result-track:8c76716b1b2779aa03057489f9d2213233b425c263057823c326e0ba79fa049d` |
-| 12 | `lemma` | [isMetricCompatible_iff](../../../../DifferentialGeometry/MetricPublic.lean/declarations/ismetriccompatible-iff.md) | 170 | `result-track:ee9ba247dc223c2b7ac38857e5decfeb5b5418562edbab1b0a02bc7d8cb72aab` |
+| 1 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MetricPublic.lean/declarations/syntax.md) | 80 | `declaration-track:dfa3ffc41e47077cbd561c354a7a22ce67e158766eb3f8ca67a9440d7f233f15` |
+| 2 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MetricPublic.lean/declarations/macro-rules.md) | 81 | `declaration-track:8bb34c51fd76a55e5d3a5e0ddd8872f06705f2d0d6bcdd396ed614f8b99b1b93` |
+| 3 | `def` | [derivMetricTensorAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MetricPublic.lean/declarations/derivmetrictensoraux.md) | 85 | `declaration-track:8efd312570eeae614ad4a03ec3c3def570782cc5f06e90e0e22c781fd614cd07` |
+| 4 | `lemma` | [derivMetricTensorAux_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MetricPublic.lean/declarations/derivmetrictensoraux-apply.md) | 89 | `result-track:622ba87f337e35ed20f4c1b38a699d1efce8970abc9e0e6dfd0dc9f057cee330` |
+| 5 | `theorem` | [tensorial_derivMetricTensorAux₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MetricPublic.lean/declarations/tensorial-derivmetrictensoraux.md) | 98 | `result-track:1b07d7e68f760e62d0d43103538cf5ffbdde4886dfa64d4b27d7a95e7f44e203` |
+| 6 | `theorem` | [tensorial_derivMetricTensorAux₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MetricPublic.lean/declarations/tensorial-derivmetrictensoraux-source-edition-2.md) | 111 | `result-track:8c2ccac2a3818b10b2e4ce5c16dda57226d6a31f298f74b1d81c45869408c72c` |
+| 7 | `def` | [derivMetricTensor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MetricPublic.lean/declarations/derivmetrictensor.md) | 127 | `declaration-track:29f320061dbe41f0ce8cb4b848897581a357151b867fb610de6582658b683fb5` |
+| 8 | `theorem` | [derivMetricTensor_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MetricPublic.lean/declarations/derivmetrictensor-apply.md) | 135 | `result-track:f8aa6c429d6ae7ceebe71f088db3977119d6e78ab7f30182acea18a1ee494469` |
+| 9 | `theorem` | [derivMetricTensor_apply_eq_extend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MetricPublic.lean/declarations/derivmetrictensor-apply-eq-extend.md) | 143 | `result-track:2ccbd0f6406b8f46cbef0867823c239571cca9dc0ab2d16fd9d91048aa5f3008` |
+| 10 | `def` | [IsMetricCompatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MetricPublic.lean/declarations/ismetriccompatible.md) | 155 | `declaration-track:19a014dca434f3296fdf61a74e808afa440f7cac0c1f62e58a61744810226f78` |
+| 11 | `lemma` | [IsMetricCompatible.mvfderiv_inner_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MetricPublic.lean/declarations/ismetriccompatible-mvfderiv-inner-eq.md) | 160 | `result-track:8c76716b1b2779aa03057489f9d2213233b425c263057823c326e0ba79fa049d` |
+| 12 | `lemma` | [isMetricCompatible_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MetricPublic.lean/declarations/ismetriccompatible-iff.md) | 170 | `result-track:ee9ba247dc223c2b7ac38857e5decfeb5b5418562edbab1b0a02bc7d8cb72aab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ModularCharacterNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ModularCharacterNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ModularCharacterNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ModularCharacterNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,13 +62,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [modularCharacterFun](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ModularCharacterNamespaced.lean/declarations/modularcharacterfun.md) | 54 | `declaration-track:33a3cb780ed566115035e9a070379a1c232c034fceded4e3f8ccab1c442c5e4e` |
-| 2 | `lemma` | [modularCharacterFun_eq_haarScalarFactor](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ModularCharacterNamespaced.lean/declarations/modularcharacterfun-eq-haarscalarfactor.md) | 61 | `result-track:65d6a99bf65ae585e86c437253e6fa8fc8fe6e1eb52215a470bd2123a8db8df3` |
-| 3 | `lemma` | [map_right_mul_eq_modularCharacterFun_smul](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ModularCharacterNamespaced.lean/declarations/map-right-mul-eq-modularcharacterfun-smul.md) | 102 | `result-track:982ea5277b71f75afd3c40fe09d22532e923fb769ea74917b3459a0b667b2270` |
-| 4 | `lemma` | [modularCharacterFun_pos](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ModularCharacterNamespaced.lean/declarations/modularcharacterfun-pos.md) | 108 | `result-track:1704fb72132d32fcb782548147783ab3d91e4b06e952e16c5fc878fa50f79209` |
-| 5 | `lemma` | [modularCharacterFun_map_one](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ModularCharacterNamespaced.lean/declarations/modularcharacterfun-map-one.md) | 114 | `result-track:f478ff48da9b152d56298e01315464bc2d5c7e011cfcfc8cb2fd5bdf74a8ccca` |
-| 6 | `lemma` | [modularCharacterFun_map_mul](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ModularCharacterNamespaced.lean/declarations/modularcharacterfun-map-mul.md) | 118 | `result-track:ef129b4e0e6f0f8ecc501721fb5607ef14f136b9f400411f0f5b5eb21f95307e` |
-| 7 | `def` | [modularCharacter](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ModularCharacterNamespaced.lean/declarations/modularcharacter.md) | 139 | `declaration-track:428f7d08c6b3870746390197dbd76aa8b1e41ed69a88094ec6390ecacf37a982` |
+| 1 | `def` | [modularCharacterFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ModularCharacterNamespaced.lean/declarations/modularcharacterfun.md) | 54 | `declaration-track:33a3cb780ed566115035e9a070379a1c232c034fceded4e3f8ccab1c442c5e4e` |
+| 2 | `lemma` | [modularCharacterFun_eq_haarScalarFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ModularCharacterNamespaced.lean/declarations/modularcharacterfun-eq-haarscalarfactor.md) | 61 | `result-track:65d6a99bf65ae585e86c437253e6fa8fc8fe6e1eb52215a470bd2123a8db8df3` |
+| 3 | `lemma` | [map_right_mul_eq_modularCharacterFun_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ModularCharacterNamespaced.lean/declarations/map-right-mul-eq-modularcharacterfun-smul.md) | 102 | `result-track:982ea5277b71f75afd3c40fe09d22532e923fb769ea74917b3459a0b667b2270` |
+| 4 | `lemma` | [modularCharacterFun_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ModularCharacterNamespaced.lean/declarations/modularcharacterfun-pos.md) | 108 | `result-track:1704fb72132d32fcb782548147783ab3d91e4b06e952e16c5fc878fa50f79209` |
+| 5 | `lemma` | [modularCharacterFun_map_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ModularCharacterNamespaced.lean/declarations/modularcharacterfun-map-one.md) | 114 | `result-track:f478ff48da9b152d56298e01315464bc2d5c7e011cfcfc8cb2fd5bdf74a8ccca` |
+| 6 | `lemma` | [modularCharacterFun_map_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ModularCharacterNamespaced.lean/declarations/modularcharacterfun-map-mul.md) | 118 | `result-track:ef129b4e0e6f0f8ecc501721fb5607ef14f136b9f400411f0f5b5eb21f95307e` |
+| 7 | `def` | [modularCharacter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ModularCharacterNamespaced.lean/declarations/modularcharacter.md) | 139 | `declaration-track:428f7d08c6b3870746390197dbd76aa8b1e41ed69a88094ec6390ecacf37a982` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/FourNeighborEdgeAdjacency.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/FourNeighborEdgeAdjacency.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FourNeighborEdgeAdjacency.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FourNeighborEdgeAdjacency.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [EdgeAdjacent](../../../../../Combinatorics/GraphTheory/FourNeighborEdgeAdjacency.lean/declarations/edgeadjacent.md) | 36 | `declaration-track:f2b53a557d4c4d067e862fd886295fc4cdb71f3b2419749e5e88a48d3a087990` |
-| 2 | `instance` | [edgeAdjacentDecidable](../../../../../Combinatorics/GraphTheory/FourNeighborEdgeAdjacency.lean/declarations/edgeadjacentdecidable.md) | 45 | `declaration-track:d7a0c350233788f58aedff234575bb7db2c11cd82d833bb13f039a644ce8f3f5` |
-| 3 | `theorem` | [edgeAdjacent_symmetric](../../../../../Combinatorics/GraphTheory/FourNeighborEdgeAdjacency.lean/declarations/edgeadjacent-symmetric.md) | 51 | `result-track:8dbf9321e4cf0729941d0ef1b24bcf777d5d29dcae4e749b5df5ff17d040cd29` |
-| 4 | `theorem` | [not_edgeAdjacent_self](../../../../../Combinatorics/GraphTheory/FourNeighborEdgeAdjacency.lean/declarations/not-edgeadjacent-self.md) | 60 | `result-track:44d669572ddff21df60c5743f3c316f39530498732fbae21fc16b4f6d7304d8a` |
+| 1 | `def` | [EdgeAdjacent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FourNeighborEdgeAdjacency.lean/declarations/edgeadjacent.md) | 36 | `declaration-track:f2b53a557d4c4d067e862fd886295fc4cdb71f3b2419749e5e88a48d3a087990` |
+| 2 | `instance` | [edgeAdjacentDecidable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FourNeighborEdgeAdjacency.lean/declarations/edgeadjacentdecidable.md) | 45 | `declaration-track:d7a0c350233788f58aedff234575bb7db2c11cd82d833bb13f039a644ce8f3f5` |
+| 3 | `theorem` | [edgeAdjacent_symmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FourNeighborEdgeAdjacency.lean/declarations/edgeadjacent-symmetric.md) | 51 | `result-track:8dbf9321e4cf0729941d0ef1b24bcf777d5d29dcae4e749b5df5ff17d040cd29` |
+| 4 | `theorem` | [not_edgeAdjacent_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FourNeighborEdgeAdjacency.lean/declarations/not-edgeadjacent-self.md) | 60 | `result-track:44d669572ddff21df60c5743f3c316f39530498732fbae21fc16b4f6d7304d8a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

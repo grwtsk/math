@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/SpecificationAndPrimeEnumeration.lean/index.md) · [Full source](../../../../NumberTheory/SpecificationAndPrimeEnumeration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SpecificationAndPrimeEnumeration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SpecificationAndPrimeEnumeration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SequentialPrimeSpecification](../../../../NumberTheory/SpecificationAndPrimeEnumeration.lean/declarations/sequentialprimespecification.md) | 35 | `declaration-track:8fc0947ba140c34647ef3f28554018461ad38fb06fb7327a366cec34a3f688f0` |
-| 2 | `def` | [rank](../../../../NumberTheory/SpecificationAndPrimeEnumeration.lean/declarations/rank.md) | 44 | `declaration-track:d9e5334eff26378ab922f2d462d1bfd452e03a2e4cab6fbcbcf006a7ca1da48b` |
-| 3 | `structure` | [PrimeEnumeration](../../../../NumberTheory/SpecificationAndPrimeEnumeration.lean/declarations/primeenumeration.md) | 48 | `declaration-track:7faddeaa0b509cf36ed89e0124780f5082b89481ebe38b591a4dc350d3187843` |
-| 4 | `def` | [canonicalPrimeEnumeration](../../../../NumberTheory/SpecificationAndPrimeEnumeration.lean/declarations/canonicalprimeenumeration.md) | 59 | `declaration-track:a8f1751f90dbc7f1a8007e40c26f3bdd00e9ed73fb98a3264f1c9c71ca1ede07` |
-| 5 | `theorem` | [canonicalPrimeEnumeration_value](../../../../NumberTheory/SpecificationAndPrimeEnumeration.lean/declarations/canonicalprimeenumeration-value.md) | 66 | `result-track:6dd93c3dd8c17cd52777ce989ddbfe4af479f66b74b2db4794516e5d8b7cbe7d` |
-| 6 | `theorem` | [canonicalPrimeEnumeration_prime](../../../../NumberTheory/SpecificationAndPrimeEnumeration.lean/declarations/canonicalprimeenumeration-prime.md) | 70 | `result-track:44b45870e9c246e97348c5faf6eff3cc089ffa80f6b17ef84317ffb9631a9018` |
-| 7 | `theorem` | [canonicalPrimeEnumeration_strictlyIncreasing](../../../../NumberTheory/SpecificationAndPrimeEnumeration.lean/declarations/canonicalprimeenumeration-strictlyincreasing.md) | 74 | `result-track:6462d0464e8bcbd8687de99a381f2a22c5de860f367566f1f47b8d6a14b059f2` |
+| 1 | `structure` | [SequentialPrimeSpecification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SpecificationAndPrimeEnumeration.lean/declarations/sequentialprimespecification.md) | 35 | `declaration-track:8fc0947ba140c34647ef3f28554018461ad38fb06fb7327a366cec34a3f688f0` |
+| 2 | `def` | [rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SpecificationAndPrimeEnumeration.lean/declarations/rank.md) | 44 | `declaration-track:d9e5334eff26378ab922f2d462d1bfd452e03a2e4cab6fbcbcf006a7ca1da48b` |
+| 3 | `structure` | [PrimeEnumeration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SpecificationAndPrimeEnumeration.lean/declarations/primeenumeration.md) | 48 | `declaration-track:7faddeaa0b509cf36ed89e0124780f5082b89481ebe38b591a4dc350d3187843` |
+| 4 | `def` | [canonicalPrimeEnumeration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SpecificationAndPrimeEnumeration.lean/declarations/canonicalprimeenumeration.md) | 59 | `declaration-track:a8f1751f90dbc7f1a8007e40c26f3bdd00e9ed73fb98a3264f1c9c71ca1ede07` |
+| 5 | `theorem` | [canonicalPrimeEnumeration_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SpecificationAndPrimeEnumeration.lean/declarations/canonicalprimeenumeration-value.md) | 66 | `result-track:6dd93c3dd8c17cd52777ce989ddbfe4af479f66b74b2db4794516e5d8b7cbe7d` |
+| 6 | `theorem` | [canonicalPrimeEnumeration_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SpecificationAndPrimeEnumeration.lean/declarations/canonicalprimeenumeration-prime.md) | 70 | `result-track:44b45870e9c246e97348c5faf6eff3cc089ffa80f6b17ef84317ffb9631a9018` |
+| 7 | `theorem` | [canonicalPrimeEnumeration_strictlyIncreasing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SpecificationAndPrimeEnumeration.lean/declarations/canonicalprimeenumeration-strictlyincreasing.md) | 74 | `result-track:6462d0464e8bcbd8687de99a381f2a22c5de860f367566f1f47b8d6a14b059f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

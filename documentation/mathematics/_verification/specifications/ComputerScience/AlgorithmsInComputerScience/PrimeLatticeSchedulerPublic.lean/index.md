@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeLatticeSchedulerPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeLatticeSchedulerPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeLatticeSchedulerPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeLatticeSchedulerPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimeLatticeScheduler](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeLatticeSchedulerPublic.lean/declarations/primelatticescheduler.md) | 22 | `declaration-track:07f29ec195777c469cb7640bcee1ef1a5c6480c436623b806ffbaf0e5237db07` |
-| 2 | `def` | [tick](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeLatticeSchedulerPublic.lean/declarations/tick.md) | 32 | `declaration-track:851e40180469adc6bbed892b5c5a68e90ce430c93ffd586a51595b38a3900a7b` |
-| 3 | `theorem` | [tick_eq_observe_then_advance](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeLatticeSchedulerPublic.lean/declarations/tick-eq-observe-then-advance.md) | 37 | `result-track:6070a41b910659df0b1830015a1e861ece5dab9bc33cf8ba7389219ca20ede55` |
-| 4 | `structure` | [PrimeLatticeObservation](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeLatticeSchedulerPublic.lean/declarations/primelatticeobservation.md) | 48 | `declaration-track:f80240a5f80003f77d4142631727ad5cd03bb531617d65c647e4886166426030` |
-| 5 | `def` | [primeLatticeSchedulerAuthority](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeLatticeSchedulerPublic.lean/declarations/primelatticeschedulerauthority.md) | 61 | `declaration-track:58e93e602bd091b9dfd83ccf03715a165a0356a27cf182dc76d2bfcab6571ed4` |
-| 6 | `theorem` | [primeLattice_scheduler_not_kernel_authority](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeLatticeSchedulerPublic.lean/declarations/primelattice-scheduler-not-kernel-authority.md) | 64 | `result-track:86d343f82b6419f7da8b674985960a5ead37e8da4eaab06a554e3ad29f14428c` |
+| 1 | `structure` | [PrimeLatticeScheduler](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeLatticeSchedulerPublic.lean/declarations/primelatticescheduler.md) | 22 | `declaration-track:07f29ec195777c469cb7640bcee1ef1a5c6480c436623b806ffbaf0e5237db07` |
+| 2 | `def` | [tick](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeLatticeSchedulerPublic.lean/declarations/tick.md) | 32 | `declaration-track:851e40180469adc6bbed892b5c5a68e90ce430c93ffd586a51595b38a3900a7b` |
+| 3 | `theorem` | [tick_eq_observe_then_advance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeLatticeSchedulerPublic.lean/declarations/tick-eq-observe-then-advance.md) | 37 | `result-track:6070a41b910659df0b1830015a1e861ece5dab9bc33cf8ba7389219ca20ede55` |
+| 4 | `structure` | [PrimeLatticeObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeLatticeSchedulerPublic.lean/declarations/primelatticeobservation.md) | 48 | `declaration-track:f80240a5f80003f77d4142631727ad5cd03bb531617d65c647e4886166426030` |
+| 5 | `def` | [primeLatticeSchedulerAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeLatticeSchedulerPublic.lean/declarations/primelatticeschedulerauthority.md) | 61 | `declaration-track:58e93e602bd091b9dfd83ccf03715a165a0356a27cf182dc76d2bfcab6571ed4` |
+| 6 | `theorem` | [primeLattice_scheduler_not_kernel_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeLatticeSchedulerPublic.lean/declarations/primelattice-scheduler-not-kernel-authority.md) | 64 | `result-track:86d343f82b6419f7da8b674985960a5ead37e8da4eaab06a554e3ad29f14428c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

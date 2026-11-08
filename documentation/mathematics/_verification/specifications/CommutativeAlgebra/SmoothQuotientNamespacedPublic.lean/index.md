@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SmoothQuotientNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SmoothQuotientNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothQuotientNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothQuotientNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [LinearMap.ker_inf_smul_top_eq_smul_of_flat](../../../../CommutativeAlgebra/SmoothQuotientNamespacedPublic.lean/declarations/linearmap-ker-inf-smul-top-eq-smul-of-flat.md) | 34 | `result-track:eab167b5b197643828075aa67a83d76e5d4b1ddfbf04eb2667cd324cbd485559` |
-| 2 | `lemma` | [comap_ker_eq_sup_of_ker_eq_map](../../../../CommutativeAlgebra/SmoothQuotientNamespacedPublic.lean/declarations/comap-ker-eq-sup-of-ker-eq-map.md) | 71 | `result-track:a07393cbc39378edce9eabdfa0baa4f8608593a77a41b24bf65934357fba3f88` |
-| 3 | `lemma` | [mul_le_ker_of_range_le_mul_of_sq_zero](../../../../CommutativeAlgebra/SmoothQuotientNamespacedPublic.lean/declarations/mul-le-ker-of-range-le-mul-of-sq-zero.md) | 79 | `result-track:16f491e3ff0db8f53d368df87ef6f60aacdd4f2214d298d1b987ceb5c9219cb7` |
-| 4 | `lemma` | [Algebra.FormallySmooth.of_surjective_of_ker_eq_map_of_flat](../../../../CommutativeAlgebra/SmoothQuotientNamespacedPublic.lean/declarations/algebra-formallysmooth-of-surjective-of-ker-eq-map-of-flat.md) | 105 | `result-track:8d7be337a07c3d579cc64f5504d84b46d09d185750122924c85889b5ad9d9f00` |
-| 5 | `lemma` | [RingHom.FormallySmooth.of_flat_of_ker_eq_map_of_square_zero](../../../../CommutativeAlgebra/SmoothQuotientNamespacedPublic.lean/declarations/ringhom-formallysmooth-of-flat-of-ker-eq-map-of-square-zero.md) | 225 | `result-track:c4b836c1409cf8613675440b832939a9fb88385f833981c5ad102db476c5d134` |
+| 1 | `lemma` | [LinearMap.ker_inf_smul_top_eq_smul_of_flat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothQuotientNamespacedPublic.lean/declarations/linearmap-ker-inf-smul-top-eq-smul-of-flat.md) | 34 | `result-track:eab167b5b197643828075aa67a83d76e5d4b1ddfbf04eb2667cd324cbd485559` |
+| 2 | `lemma` | [comap_ker_eq_sup_of_ker_eq_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothQuotientNamespacedPublic.lean/declarations/comap-ker-eq-sup-of-ker-eq-map.md) | 71 | `result-track:a07393cbc39378edce9eabdfa0baa4f8608593a77a41b24bf65934357fba3f88` |
+| 3 | `lemma` | [mul_le_ker_of_range_le_mul_of_sq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothQuotientNamespacedPublic.lean/declarations/mul-le-ker-of-range-le-mul-of-sq-zero.md) | 79 | `result-track:16f491e3ff0db8f53d368df87ef6f60aacdd4f2214d298d1b987ceb5c9219cb7` |
+| 4 | `lemma` | [Algebra.FormallySmooth.of_surjective_of_ker_eq_map_of_flat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothQuotientNamespacedPublic.lean/declarations/algebra-formallysmooth-of-surjective-of-ker-eq-map-of-flat.md) | 105 | `result-track:8d7be337a07c3d579cc64f5504d84b46d09d185750122924c85889b5ad9d9f00` |
+| 5 | `lemma` | [RingHom.FormallySmooth.of_flat_of_ker_eq_map_of_square_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothQuotientNamespacedPublic.lean/declarations/ringhom-formallysmooth-of-flat-of-ker-eq-map-of-square-zero.md) | 225 | `result-track:c4b836c1409cf8613675440b832939a9fb88385f833981c5ad102db476c5d134` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

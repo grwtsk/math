@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/UnramifiedQp.lean/index.md) · [Full source](../../../../NumberTheory/UnramifiedQp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UnramifiedQp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UnramifiedQp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [UnramifiedQpExtensionReference](../../../../NumberTheory/UnramifiedQp.lean/declarations/unramifiedqpextensionreference.md) | 3 | `declaration-track:95754d215798a51f0fe3389ea5e951f918156d0c982d34d97b437ceba44eaa96` |
-| 2 | `def` | [FrobeniusLabel](../../../../NumberTheory/UnramifiedQp.lean/declarations/frobeniuslabel.md) | 9 | `declaration-track:52b2f2782ac9e65346293878be58044a0f2e955c1eb270790ef65dd69f83cb4c` |
-| 3 | `theorem` | [unramified_qp_reference_layer](../../../../NumberTheory/UnramifiedQp.lean/declarations/unramified-qp-reference-layer.md) | 17 | `result-track:277ce867013cd3197f793b9d27d63883eda2c80170905f3840d287b184e8a6f9` |
+| 1 | `structure` | [UnramifiedQpExtensionReference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UnramifiedQp.lean/declarations/unramifiedqpextensionreference.md) | 3 | `declaration-track:95754d215798a51f0fe3389ea5e951f918156d0c982d34d97b437ceba44eaa96` |
+| 2 | `def` | [FrobeniusLabel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UnramifiedQp.lean/declarations/frobeniuslabel.md) | 9 | `declaration-track:52b2f2782ac9e65346293878be58044a0f2e955c1eb270790ef65dd69f83cb4c` |
+| 3 | `theorem` | [unramified_qp_reference_layer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/UnramifiedQp.lean/declarations/unramified-qp-reference-layer.md) | 17 | `result-track:277ce867013cd3197f793b9d27d63883eda2c80170905f3840d287b184e8a6f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

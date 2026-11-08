@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/QuasicategoryStrictSegalPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/QuasicategoryStrictSegalPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryStrictSegalPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryStrictSegalPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quasicategory](../../../../AlgebraicTopology/QuasicategoryStrictSegalPublic.lean/declarations/quasicategory.md) | 36 | `result-track:aaf6f77b8199c47552e1a306bbf7c0ae93e34da38fac42f0ac3da781053c2596` |
-| 2 | `instance` | [quasicategory'](../../../../AlgebraicTopology/QuasicategoryStrictSegalPublic.lean/declarations/quasicategory-source-edition-2.md) | 103 | `declaration-track:bfe1ae6a4cc5db188fb0b888cddeec392f302cee51dcfe93caad74ac76e93ed7` |
+| 1 | `theorem` | [quasicategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryStrictSegalPublic.lean/declarations/quasicategory.md) | 36 | `result-track:aaf6f77b8199c47552e1a306bbf7c0ae93e34da38fac42f0ac3da781053c2596` |
+| 2 | `instance` | [quasicategory'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryStrictSegalPublic.lean/declarations/quasicategory-source-edition-2.md) | 103 | `declaration-track:bfe1ae6a4cc5db188fb0b888cddeec392f302cee51dcfe93caad74ac76e93ed7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

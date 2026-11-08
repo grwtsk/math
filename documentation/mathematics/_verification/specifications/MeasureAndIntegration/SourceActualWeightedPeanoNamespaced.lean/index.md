@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualWeightedPeanoNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualWeightedPeanoNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualWeightedPeanoNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualWeightedPeanoNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [weightedCorrelation_contDiff_two](../../../../MeasureAndIntegration/SourceActualWeightedPeanoNamespaced.lean/declarations/weightedcorrelation-contdiff-two.md) | 30 | `result-track:4f29c28be439b158eb15e18114e84c943d60f2beef6f7b59b5713438d650c643` |
-| 2 | `theorem` | [actual_correlation_deriv_zero](../../../../MeasureAndIntegration/SourceActualWeightedPeanoNamespaced.lean/declarations/actual-correlation-deriv-zero.md) | 36 | `result-track:9ec80913593fc4dd235ea6a040166162e4b42a42a3a8ec1f3efe1e0f76765fb0` |
-| 3 | `theorem` | [weightedCorrelation_zero](../../../../MeasureAndIntegration/SourceActualWeightedPeanoNamespaced.lean/declarations/weightedcorrelation-zero.md) | 49 | `result-track:5989dbef83364b602642c77c4d842bd6638f9e0531f898c9a324c9f0dc79fa19` |
-| 4 | `theorem` | [weightedCorrelation_deriv_zero](../../../../MeasureAndIntegration/SourceActualWeightedPeanoNamespaced.lean/declarations/weightedcorrelation-deriv-zero.md) | 53 | `result-track:d29409e19e984c432e71f963f10d12933f3eceb4500b28bb5e5a12745c160182` |
-| 5 | `theorem` | [weightedCorrelation_peano](../../../../MeasureAndIntegration/SourceActualWeightedPeanoNamespaced.lean/declarations/weightedcorrelation-peano.md) | 66 | `result-track:16f2df943d212b9d6b1fcd062dcafa1f5baf366c01f592fa18e63ef7dc7d1a05` |
+| 1 | `theorem` | [weightedCorrelation_contDiff_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualWeightedPeanoNamespaced.lean/declarations/weightedcorrelation-contdiff-two.md) | 30 | `result-track:4f29c28be439b158eb15e18114e84c943d60f2beef6f7b59b5713438d650c643` |
+| 2 | `theorem` | [actual_correlation_deriv_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualWeightedPeanoNamespaced.lean/declarations/actual-correlation-deriv-zero.md) | 36 | `result-track:9ec80913593fc4dd235ea6a040166162e4b42a42a3a8ec1f3efe1e0f76765fb0` |
+| 3 | `theorem` | [weightedCorrelation_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualWeightedPeanoNamespaced.lean/declarations/weightedcorrelation-zero.md) | 49 | `result-track:5989dbef83364b602642c77c4d842bd6638f9e0531f898c9a324c9f0dc79fa19` |
+| 4 | `theorem` | [weightedCorrelation_deriv_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualWeightedPeanoNamespaced.lean/declarations/weightedcorrelation-deriv-zero.md) | 53 | `result-track:d29409e19e984c432e71f963f10d12933f3eceb4500b28bb5e5a12745c160182` |
+| 5 | `theorem` | [weightedCorrelation_peano](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualWeightedPeanoNamespaced.lean/declarations/weightedcorrelation-peano.md) | 66 | `result-track:16f2df943d212b9d6b1fcd062dcafa1f5baf366c01f592fa18e63ef7dc7d1a05` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

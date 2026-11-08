@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/GNSCovarianceDeterminantExactness.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/GNSCovarianceDeterminantExactness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/GNSCovarianceDeterminantExactness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/GNSCovarianceDeterminantExactness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [GNSCovarianceDeterminantExactnessBoundary](../../../../ProbabilityTheoryAndStochasticProcesses/GNSCovarianceDeterminantExactness.lean/declarations/gnscovariancedeterminantexactnessboundary.md) | 17 | `declaration-track:69b550a3148874be17146a8435adbdf73887e1852dbe0e7f0bcbd044fb35eb00` |
-| 2 | `abbrev` | [defaultGNSCovarianceDeterminantExactnessBoundary](../../../../ProbabilityTheoryAndStochasticProcesses/GNSCovarianceDeterminantExactness.lean/declarations/defaultgnscovariancedeterminantexactnessboundary.md) | 20 | `declaration-track:c03c68a50882c121480a16cb09274ebe4c2d42ba5098ce45972e9f6bdcd5d7f2` |
-| 3 | `abbrev` | [completedConditionalDeterminantExactnessBoundary](../../../../ProbabilityTheoryAndStochasticProcesses/GNSCovarianceDeterminantExactness.lean/declarations/completedconditionaldeterminantexactnessboundary.md) | 23 | `declaration-track:70050e3d5dbbbcf9eb90e1a20f35fdf33a115ff9bfdd5c9948219428d736e0aa` |
-| 4 | `theorem` | [completed_boundary_admits_determinant_exactness_conditionally](../../../../ProbabilityTheoryAndStochasticProcesses/GNSCovarianceDeterminantExactness.lean/declarations/completed-boundary-admits-determinant-exactness-conditionally.md) | 28 | `result-track:a50637bc5d08499199f61fb84b54412729649e62eb9e307ed5b92af560bf2d3f` |
-| 5 | `theorem` | [gns_covariance_alone_does_not_give_determinant_exactness](../../../../ProbabilityTheoryAndStochasticProcesses/GNSCovarianceDeterminantExactness.lean/declarations/gns-covariance-alone-does-not-give-determinant-exactness.md) | 36 | `result-track:11c4107aee7c838212eeb16137b0b58d2b749ae3ff2bcf857aaf97c90cddbf7a` |
+| 1 | `abbrev` | [GNSCovarianceDeterminantExactnessBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/GNSCovarianceDeterminantExactness.lean/declarations/gnscovariancedeterminantexactnessboundary.md) | 17 | `declaration-track:69b550a3148874be17146a8435adbdf73887e1852dbe0e7f0bcbd044fb35eb00` |
+| 2 | `abbrev` | [defaultGNSCovarianceDeterminantExactnessBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/GNSCovarianceDeterminantExactness.lean/declarations/defaultgnscovariancedeterminantexactnessboundary.md) | 20 | `declaration-track:c03c68a50882c121480a16cb09274ebe4c2d42ba5098ce45972e9f6bdcd5d7f2` |
+| 3 | `abbrev` | [completedConditionalDeterminantExactnessBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/GNSCovarianceDeterminantExactness.lean/declarations/completedconditionaldeterminantexactnessboundary.md) | 23 | `declaration-track:70050e3d5dbbbcf9eb90e1a20f35fdf33a115ff9bfdd5c9948219428d736e0aa` |
+| 4 | `theorem` | [completed_boundary_admits_determinant_exactness_conditionally](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/GNSCovarianceDeterminantExactness.lean/declarations/completed-boundary-admits-determinant-exactness-conditionally.md) | 28 | `result-track:a50637bc5d08499199f61fb84b54412729649e62eb9e307ed5b92af560bf2d3f` |
+| 5 | `theorem` | [gns_covariance_alone_does_not_give_determinant_exactness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/GNSCovarianceDeterminantExactness.lean/declarations/gns-covariance-alone-does-not-give-determinant-exactness.md) | 36 | `result-track:11c4107aee7c838212eeb16137b0b58d2b749ae3ff2bcf857aaf97c90cddbf7a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

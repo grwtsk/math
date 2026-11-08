@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/SelectedTwists.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/SelectedTwists.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SelectedTwists.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SelectedTwists.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SelectedTwistGroup](../../../../GroupTheoryAndGeneralizations/SelectedTwists.lean/declarations/selectedtwistgroup.md) | 40 | `declaration-track:848ee22c32b9adb1d842e5f9cc6bff1e1454a65e719cf0b4de6e0f15be7a6314` |
+| 1 | `structure` | [SelectedTwistGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SelectedTwists.lean/declarations/selectedtwistgroup.md) | 40 | `declaration-track:848ee22c32b9adb1d842e5f9cc6bff1e1454a65e719cf0b4de6e0f15be7a6314` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

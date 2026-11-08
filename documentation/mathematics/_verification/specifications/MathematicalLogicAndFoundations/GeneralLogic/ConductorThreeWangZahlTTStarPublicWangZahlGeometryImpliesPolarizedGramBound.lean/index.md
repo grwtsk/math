@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConductorThreeWangZahlTTStarPublicWangZahlGeometryImpliesPolarizedGramBound.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConductorThreeWangZahlTTStarPublicWangZahlGeometryImpliesPolarizedGramBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConductorThreeWangZahlTTStarPublicWangZahlGeometryImpliesPolarizedGramBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConductorThreeWangZahlTTStarPublicWangZahlGeometryImpliesPolarizedGramBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PolarizedMomentEngine](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConductorThreeWangZahlTTStarPublicWangZahlGeometryImpliesPolarizedGramBound.lean/declarations/polarizedmomentengine.md) | 28 | `declaration-track:404b49874301685370932117422f6a093667b75183a140dfc6b5804f800bd85c` |
-| 2 | `def` | [WangZahlGeometryImpliesPolarizedGramBound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConductorThreeWangZahlTTStarPublicWangZahlGeometryImpliesPolarizedGramBound.lean/declarations/wangzahlgeometryimpliespolarizedgrambound.md) | 35 | `declaration-track:83cbfe5f6835fae2789271d696a402892a2e073df50ce3917c99a5720f0ac834` |
+| 1 | `structure` | [PolarizedMomentEngine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConductorThreeWangZahlTTStarPublicWangZahlGeometryImpliesPolarizedGramBound.lean/declarations/polarizedmomentengine.md) | 28 | `declaration-track:404b49874301685370932117422f6a093667b75183a140dfc6b5804f800bd85c` |
+| 2 | `def` | [WangZahlGeometryImpliesPolarizedGramBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConductorThreeWangZahlTTStarPublicWangZahlGeometryImpliesPolarizedGramBound.lean/declarations/wangzahlgeometryimpliespolarizedgrambound.md) | 35 | `declaration-track:83cbfe5f6835fae2789271d696a402892a2e073df50ce3917c99a5720f0ac834` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

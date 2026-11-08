@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/AbsoluteValuePublic.lean/index.md) · [Full source](../../../../GeneralTopology/AbsoluteValuePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteValuePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteValuePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [uniformSpace](../../../../GeneralTopology/AbsoluteValuePublic.lean/declarations/uniformspace.md) | 42 | `declaration-track:a9f2ba271d0b513256e0c734822da935facebb564d6420b4178f40153ed72bed` |
-| 2 | `theorem` | [hasBasis_uniformity](../../../../GeneralTopology/AbsoluteValuePublic.lean/declarations/hasbasis-uniformity.md) | 47 | `result-track:9a16f97be3325f932bb068c0198ae060e300d27b089ca3685be0fae9ad57fcb5` |
+| 1 | `def` | [uniformSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteValuePublic.lean/declarations/uniformspace.md) | 42 | `declaration-track:a9f2ba271d0b513256e0c734822da935facebb564d6420b4178f40153ed72bed` |
+| 2 | `theorem` | [hasBasis_uniformity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteValuePublic.lean/declarations/hasbasis-uniformity.md) | 47 | `result-track:9a16f97be3325f932bb068c0198ae060e300d27b089ca3685be0fae9ad57fcb5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

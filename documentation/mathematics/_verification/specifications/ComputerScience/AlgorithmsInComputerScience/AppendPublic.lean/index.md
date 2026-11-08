@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AppendPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AppendPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AppendPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AppendPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IterM.step_append](../../../../../ComputerScience/AlgorithmsInComputerScience/AppendPublic.lean/declarations/iterm-step-append.md) | 23 | `result-track:7f4a6088f8bb22d822f3d14b1222d168381ca74974d3cac657c9fee3d1e261ac` |
-| 2 | `theorem` | [IterM.Intermediate.step_appendSnd](../../../../../ComputerScience/AlgorithmsInComputerScience/AppendPublic.lean/declarations/iterm-intermediate-step-appendsnd.md) | 37 | `result-track:36bdb096e233f941d6be2d4452e462bdf1c436ce4768ff9d77368e5a7bbfcb97` |
-| 3 | `theorem` | [IterM.toList_appendSnd](../../../../../ComputerScience/AlgorithmsInComputerScience/AppendPublic.lean/declarations/iterm-tolist-appendsnd.md) | 52 | `result-track:6f4f8d99bc91c25df2c88dfc1fb1630d35ffb5a00ec88c695f51bfc7eb97ed06` |
-| 4 | `theorem` | [IterM.toList_append](../../../../../ComputerScience/AlgorithmsInComputerScience/AppendPublic.lean/declarations/iterm-tolist-append.md) | 67 | `result-track:92f43208e637db487f95945169c87d5e39117b71f25c4e38265f54774f63af5e` |
-| 5 | `theorem` | [IterM.toListRev_append](../../../../../ComputerScience/AlgorithmsInComputerScience/AppendPublic.lean/declarations/iterm-tolistrev-append.md) | 84 | `result-track:bc0df1ec4e95913ab4ccf0ffd1f5ec22f3f4e86e24c9cab8ffa629b3221ebbbd` |
-| 6 | `theorem` | [IterM.toArray_append](../../../../../ComputerScience/AlgorithmsInComputerScience/AppendPublic.lean/declarations/iterm-toarray-append.md) | 96 | `result-track:dd8ed7435659c2ddbc8eda046408157d47bfb30f61ddb0a91d7b28d0a7a5575e` |
+| 1 | `theorem` | [IterM.step_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AppendPublic.lean/declarations/iterm-step-append.md) | 23 | `result-track:7f4a6088f8bb22d822f3d14b1222d168381ca74974d3cac657c9fee3d1e261ac` |
+| 2 | `theorem` | [IterM.Intermediate.step_appendSnd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AppendPublic.lean/declarations/iterm-intermediate-step-appendsnd.md) | 37 | `result-track:36bdb096e233f941d6be2d4452e462bdf1c436ce4768ff9d77368e5a7bbfcb97` |
+| 3 | `theorem` | [IterM.toList_appendSnd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AppendPublic.lean/declarations/iterm-tolist-appendsnd.md) | 52 | `result-track:6f4f8d99bc91c25df2c88dfc1fb1630d35ffb5a00ec88c695f51bfc7eb97ed06` |
+| 4 | `theorem` | [IterM.toList_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AppendPublic.lean/declarations/iterm-tolist-append.md) | 67 | `result-track:92f43208e637db487f95945169c87d5e39117b71f25c4e38265f54774f63af5e` |
+| 5 | `theorem` | [IterM.toListRev_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AppendPublic.lean/declarations/iterm-tolistrev-append.md) | 84 | `result-track:bc0df1ec4e95913ab4ccf0ffd1f5ec22f3f4e86e24c9cab8ffa629b3221ebbbd` |
+| 6 | `theorem` | [IterM.toArray_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AppendPublic.lean/declarations/iterm-toarray-append.md) | 96 | `result-track:dd8ed7435659c2ddbc8eda046408157d47bfb30f61ddb0a91d7b28d0a7a5575e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

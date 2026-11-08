@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BlueprintCorpusNotImportedC15bc3e7ae3.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BlueprintCorpusNotImportedC15bc3e7ae3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BlueprintCorpusNotImportedC15bc3e7ae3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BlueprintCorpusNotImportedC15bc3e7ae3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [importsBlueprintCorpus](../../../../../ComputerScience/AlgorithmsInComputerScience/BlueprintCorpusNotImportedC15bc3e7ae3.lean/declarations/importsblueprintcorpus.md) | 13 | `declaration-track:e82d636ceace8a02ba3e83b4f989d4c4cb0e2fbc58d1cf0b7f4827154e4a500b` |
-| 2 | `theorem` | [blueprint_corpus_not_imported](../../../../../ComputerScience/AlgorithmsInComputerScience/BlueprintCorpusNotImportedC15bc3e7ae3.lean/declarations/blueprint-corpus-not-imported.md) | 15 | `result-track:de2ba94888f03d14e79d64d19dde88fbd1883585845f2c1f498fe04f98787291` |
-| 3 | `def` | [conceptualBoundaries](../../../../../ComputerScience/AlgorithmsInComputerScience/BlueprintCorpusNotImportedC15bc3e7ae3.lean/declarations/conceptualboundaries.md) | 18 | `declaration-track:18e244c2f64b9b83997f915a59dcbfae40fddaa13bd04ea8a9a4357bcd0680a4` |
-| 4 | `theorem` | [conceptualBoundaries_count](../../../../../ComputerScience/AlgorithmsInComputerScience/BlueprintCorpusNotImportedC15bc3e7ae3.lean/declarations/conceptualboundaries-count.md) | 24 | `result-track:0aa45b35983792fae058e0eed3a0bf31b7c5147ef1598ee16ece7dde44eaa4d1` |
+| 1 | `def` | [importsBlueprintCorpus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BlueprintCorpusNotImportedC15bc3e7ae3.lean/declarations/importsblueprintcorpus.md) | 13 | `declaration-track:e82d636ceace8a02ba3e83b4f989d4c4cb0e2fbc58d1cf0b7f4827154e4a500b` |
+| 2 | `theorem` | [blueprint_corpus_not_imported](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BlueprintCorpusNotImportedC15bc3e7ae3.lean/declarations/blueprint-corpus-not-imported.md) | 15 | `result-track:de2ba94888f03d14e79d64d19dde88fbd1883585845f2c1f498fe04f98787291` |
+| 3 | `def` | [conceptualBoundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BlueprintCorpusNotImportedC15bc3e7ae3.lean/declarations/conceptualboundaries.md) | 18 | `declaration-track:18e244c2f64b9b83997f915a59dcbfae40fddaa13bd04ea8a9a4357bcd0680a4` |
+| 4 | `theorem` | [conceptualBoundaries_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BlueprintCorpusNotImportedC15bc3e7ae3.lean/declarations/conceptualboundaries-count.md) | 24 | `result-track:0aa45b35983792fae058e0eed3a0bf31b7c5147ef1598ee16ece7dde44eaa4d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

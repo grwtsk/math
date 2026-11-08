@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteIteration.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteIteration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteIteration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteIteration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [iterate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteIteration.lean/declarations/iterate.md) | 31 | `declaration-track:f24c0070cf3c7c3083cf155952c7dfeed130f378b21d5c06ff09f015a4b711c2` |
-| 2 | `theorem` | [iterate_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteIteration.lean/declarations/iterate-zero.md) | 39 | `result-track:40498ecd3076557b59ab5fd8419b8739d7bfb69563f671a00b479e7d6cb10a30` |
-| 3 | `theorem` | [iterate_succ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteIteration.lean/declarations/iterate-succ.md) | 46 | `result-track:239c5ce4e18de9a887901c32bf09ec87ec4879e95dda14e24186957bbedfc2e3` |
+| 1 | `def` | [iterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteIteration.lean/declarations/iterate.md) | 31 | `declaration-track:f24c0070cf3c7c3083cf155952c7dfeed130f378b21d5c06ff09f015a4b711c2` |
+| 2 | `theorem` | [iterate_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteIteration.lean/declarations/iterate-zero.md) | 39 | `result-track:40498ecd3076557b59ab5fd8419b8739d7bfb69563f671a00b479e7d6cb10a30` |
+| 3 | `theorem` | [iterate_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteIteration.lean/declarations/iterate-succ.md) | 46 | `result-track:239c5ce4e18de9a887901c32bf09ec87ec4879e95dda14e24186957bbedfc2e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

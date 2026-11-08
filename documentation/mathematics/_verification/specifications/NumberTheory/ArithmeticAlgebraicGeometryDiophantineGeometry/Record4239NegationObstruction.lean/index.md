@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/index.md) · [Full source](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239FiniteCharacterMatrix`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239FiniteCharacterMatrix.lean/index.md) — import line 13; pinned internal source present.
+- [`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239FiniteCharacterMatrix`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239FiniteCharacterMatrix.lean/index.md) — import line 13; pinned internal source present.
 - `Mathlib.RingTheory.Polynomial.RationalRoot` — import line 14; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [shortCubic](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/shortcubic.md) | 38 | `declaration-track:ce6281b1eb6b8dd176f6c0518fcf9aa31e498522e2dc68860a9a1f44d0036c90` |
-| 2 | `theorem` | [shortCubic_monic](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/shortcubic-monic.md) | 40 | `result-track:8376d828ad8f3d6aa2d2a91e573c874164de0f633bc925ad187a9d54dcf09cbe` |
-| 3 | `theorem` | [shortCubic_noRoot_modSeven](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/shortcubic-noroot-modseven.md) | 46 | `result-track:63bfed4c3529f56c8e7c0291d61763ac202bcd779ba3147480186006f71d91be` |
-| 4 | `theorem` | [shortCubic_noIntegerRoot](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/shortcubic-nointegerroot.md) | 52 | `result-track:416908d04f78c884cf8809621a6c68758e0bde89d0ababfe08b25039e60fc68b` |
-| 5 | `theorem` | [shortCubic_noRationalRoot](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/shortcubic-norationalroot.md) | 63 | `result-track:6db4d9c1d129b2e2a30b487ec86b05cc9a2aa3672f3a6b2588b0e9b11838415f` |
-| 6 | `theorem` | [shortA_relation](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/shorta-relation.md) | 78 | `result-track:f23e511a29630838ca6e293874645d7d9c808aabfac8b333e57a5c33c4fe9bea` |
-| 7 | `theorem` | [shortB_relation](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/shortb-relation.md) | 82 | `result-track:6bd46e62704a2299d16e1fdb7e2eb65aa41ccf31d4f95ba027c1afdef79c0795` |
-| 8 | `theorem` | [shortEquation_of_record](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/shortequation-of-record.md) | 89 | `result-track:44d32e4b376e063f43a81463384bc47eada98cbcba091a8a26b85f3a3f366fdd` |
-| 9 | `theorem` | [noRationalAffineNegationFixedPoint](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/norationalaffinenegationfixedpoint.md) | 120 | `result-track:95a066e8c4633acfa4131dc9c66a19920724a44c8422c545558fa055902ba996` |
-| 10 | `theorem` | [noRationalVerticalTangency](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/norationalverticaltangency.md) | 134 | `result-track:d0f44097bfa85e61c885bfe48762b7c4394024abf4d038c19e8ef8375f806703` |
+| 1 | `def` | [shortCubic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/shortcubic.md) | 38 | `declaration-track:ce6281b1eb6b8dd176f6c0518fcf9aa31e498522e2dc68860a9a1f44d0036c90` |
+| 2 | `theorem` | [shortCubic_monic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/shortcubic-monic.md) | 40 | `result-track:8376d828ad8f3d6aa2d2a91e573c874164de0f633bc925ad187a9d54dcf09cbe` |
+| 3 | `theorem` | [shortCubic_noRoot_modSeven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/shortcubic-noroot-modseven.md) | 46 | `result-track:63bfed4c3529f56c8e7c0291d61763ac202bcd779ba3147480186006f71d91be` |
+| 4 | `theorem` | [shortCubic_noIntegerRoot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/shortcubic-nointegerroot.md) | 52 | `result-track:416908d04f78c884cf8809621a6c68758e0bde89d0ababfe08b25039e60fc68b` |
+| 5 | `theorem` | [shortCubic_noRationalRoot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/shortcubic-norationalroot.md) | 63 | `result-track:6db4d9c1d129b2e2a30b487ec86b05cc9a2aa3672f3a6b2588b0e9b11838415f` |
+| 6 | `theorem` | [shortA_relation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/shorta-relation.md) | 78 | `result-track:f23e511a29630838ca6e293874645d7d9c808aabfac8b333e57a5c33c4fe9bea` |
+| 7 | `theorem` | [shortB_relation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/shortb-relation.md) | 82 | `result-track:6bd46e62704a2299d16e1fdb7e2eb65aa41ccf31d4f95ba027c1afdef79c0795` |
+| 8 | `theorem` | [shortEquation_of_record](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/shortequation-of-record.md) | 89 | `result-track:44d32e4b376e063f43a81463384bc47eada98cbcba091a8a26b85f3a3f366fdd` |
+| 9 | `theorem` | [noRationalAffineNegationFixedPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/norationalaffinenegationfixedpoint.md) | 120 | `result-track:95a066e8c4633acfa4131dc9c66a19920724a44c8422c545558fa055902ba996` |
+| 10 | `theorem` | [noRationalVerticalTangency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/declarations/norationalverticaltangency.md) | 134 | `result-track:d0f44097bfa85e61c885bfe48762b7c4394024abf4d038c19e8ef8375f806703` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

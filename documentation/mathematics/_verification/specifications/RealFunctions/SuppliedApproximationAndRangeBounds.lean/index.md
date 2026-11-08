@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SuppliedApproximationAndRangeBounds.lean/index.md) · [Full source](../../../../RealFunctions/SuppliedApproximationAndRangeBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SuppliedApproximationAndRangeBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SuppliedApproximationAndRangeBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,8 +62,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../RealFunctions/SuppliedApproximationAndRangeBounds.lean/declarations/example-source-edition-2.md) | 30 | `declaration-track:7527b6cc29e71e14b56453e53b8552e90a311dee74ddac16df21a0195eaf0614` |
-| 2 | `example` | [(anonymous)](../../../../RealFunctions/SuppliedApproximationAndRangeBounds.lean/declarations/example.md) | 38 | `declaration-track:16b976ca01d6abe7dc1ee819bbc3f89aa3bf9639f6175f51992968e4fd242a78` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SuppliedApproximationAndRangeBounds.lean/declarations/example-source-edition-2.md) | 30 | `declaration-track:7527b6cc29e71e14b56453e53b8552e90a311dee74ddac16df21a0195eaf0614` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SuppliedApproximationAndRangeBounds.lean/declarations/example.md) | 38 | `declaration-track:16b976ca01d6abe7dc1ee819bbc3f89aa3bf9639f6175f51992968e4fd242a78` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralConditioning.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralConditioning.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralConditioning.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralConditioning.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpectralConditioningModulus](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralConditioning.lean/declarations/spectralconditioningmodulus.md) | 22 | `declaration-track:31fcaa406ef09ea29a3f1987e0c4437747058c0e64eb9c05486644aa62ac1649` |
-| 2 | `theorem` | [exact_spectral_distance_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralConditioning.lean/declarations/exact-spectral-distance-zero.md) | 39 | `result-track:5e95d1ee374212a8cbf2284bc8de31d8614427231e9991559b9dcf6d6ab42ca1` |
-| 3 | `structure` | [JordanOrderCertificate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralConditioning.lean/declarations/jordanordercertificate.md) | 52 | `declaration-track:e313060a804e2efbf8654992549dcf2996ee64d7e235b4283a806f00bbfdb688` |
-| 4 | `structure` | [JordanSensitiveObservable](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralConditioning.lean/declarations/jordansensitiveobservable.md) | 64 | `declaration-track:95890fa85660b09c5e5b7ff624d7716e376f1249ea93fa2190134c41a90910c9` |
+| 1 | `structure` | [SpectralConditioningModulus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralConditioning.lean/declarations/spectralconditioningmodulus.md) | 22 | `declaration-track:31fcaa406ef09ea29a3f1987e0c4437747058c0e64eb9c05486644aa62ac1649` |
+| 2 | `theorem` | [exact_spectral_distance_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralConditioning.lean/declarations/exact-spectral-distance-zero.md) | 39 | `result-track:5e95d1ee374212a8cbf2284bc8de31d8614427231e9991559b9dcf6d6ab42ca1` |
+| 3 | `structure` | [JordanOrderCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralConditioning.lean/declarations/jordanordercertificate.md) | 52 | `declaration-track:e313060a804e2efbf8654992549dcf2996ee64d7e235b4283a806f00bbfdb688` |
+| 4 | `structure` | [JordanSensitiveObservable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpectralConditioning.lean/declarations/jordansensitiveobservable.md) | 64 | `declaration-track:95890fa85660b09c5e5b7ff624d7716e376f1249ea93fa2190134c41a90910c9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

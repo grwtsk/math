@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/HomotopiesPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/HomotopiesPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopiesPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopiesPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,21 +57,21 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [c](../../../../AlgebraicTopology/HomotopiesPublic.lean/declarations/c.md) | 79 | `declaration-track:3ca985e6d2aed3737121d4d771fd8bb8157e3ff8e7591d6d6def4805acb5187a` |
-| 2 | `theorem` | [c_mk](../../../../AlgebraicTopology/HomotopiesPublic.lean/declarations/c-mk.md) | 84 | `result-track:97e4abec69df8c79e7f74295914d617355e235a200624fb1c0a4b2c8d39b6a08` |
-| 3 | `theorem` | [cs_down_0_not_rel_left](../../../../AlgebraicTopology/HomotopiesPublic.lean/declarations/cs-down-0-not-rel-left.md) | 89 | `result-track:898dab006e4720799219d324f4104d2eeadaee92c9651540821c5e6353d23c87` |
-| 4 | `def` | [hσ](../../../../AlgebraicTopology/HomotopiesPublic.lean/declarations/h-source-edition-2.md) | 97 | `declaration-track:8498f188e770e2ccf90ae17514431ab02d6c9ca6578140698b1927ec9bffcf3a` |
-| 5 | `def` | [hσ'](../../../../AlgebraicTopology/HomotopiesPublic.lean/declarations/h.md) | 101 | `declaration-track:1f4358b43a7bfc986118df118cbc67126162e77f25bda35ddd0ad5d36acaf926` |
-| 6 | `theorem` | [hσ'_eq_zero](../../../../AlgebraicTopology/HomotopiesPublic.lean/declarations/h-eq-zero.md) | 104 | `result-track:9d746826e98d3c21bdf84123a8b939206109c7a684cb818295ff55057039a678` |
-| 7 | `theorem` | [hσ'_eq](../../../../AlgebraicTopology/HomotopiesPublic.lean/declarations/h-eq-source-edition-2.md) | 110 | `result-track:d4ffd2593e07f43926fb6f7ec9d8c1cf001d4481f2fc59bc2957d74343c4aca5` |
-| 8 | `theorem` | [hσ'_eq'](../../../../AlgebraicTopology/HomotopiesPublic.lean/declarations/h-eq.md) | 120 | `result-track:45c01f65779db947a0c2312c0a13d9cd7df3953738a724dff07950dce20adb9e` |
-| 9 | `def` | [Hσ](../../../../AlgebraicTopology/HomotopiesPublic.lean/declarations/h-source-edition-3.md) | 126 | `declaration-track:cd8bbec4d4b26cfd04591d133b9d93c7a02bde712aabcd17e1666756cc548548` |
-| 10 | `def` | [homotopyHσToZero](../../../../AlgebraicTopology/HomotopiesPublic.lean/declarations/homotopyh-tozero.md) | 130 | `declaration-track:a77e243a060803756fa1ecbb91a67f4cf203e7e4cfee674d504e7319265f1b57` |
-| 11 | `theorem` | [Hσ_eq_zero](../../../../AlgebraicTopology/HomotopiesPublic.lean/declarations/h-eq-zero-source-edition-2.md) | 134 | `result-track:d9d596b8f8da2f4c3769f01506f459c2d862885d3415c9761d0dcace1ee50d0e` |
-| 12 | `theorem` | [hσ'_naturality](../../../../AlgebraicTopology/HomotopiesPublic.lean/declarations/h-naturality.md) | 145 | `result-track:fa08d8558cfae698fd50f35b5a50146898e0d8fcf24285b92fc4e7eb92777b83` |
-| 13 | `def` | [natTransHσ](../../../../AlgebraicTopology/HomotopiesPublic.lean/declarations/nattransh.md) | 155 | `declaration-track:ceffa8fe71c58904c8cd55e0391fd93cac19c93e1a9876398101b915baf03975` |
-| 14 | `theorem` | [map_hσ'](../../../../AlgebraicTopology/HomotopiesPublic.lean/declarations/map-h-source-edition-2.md) | 165 | `result-track:8a4b41c76897e580a60e775589b02d52de93432c95735fe4bea6fc16969c2bd9` |
-| 15 | `theorem` | [map_Hσ](../../../../AlgebraicTopology/HomotopiesPublic.lean/declarations/map-h.md) | 176 | `result-track:5944f312bee2424526537260dd89af56abce6be7976419ad2a2d990b488426e2` |
+| 1 | `abbrev` | [c](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopiesPublic.lean/declarations/c.md) | 79 | `declaration-track:3ca985e6d2aed3737121d4d771fd8bb8157e3ff8e7591d6d6def4805acb5187a` |
+| 2 | `theorem` | [c_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopiesPublic.lean/declarations/c-mk.md) | 84 | `result-track:97e4abec69df8c79e7f74295914d617355e235a200624fb1c0a4b2c8d39b6a08` |
+| 3 | `theorem` | [cs_down_0_not_rel_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopiesPublic.lean/declarations/cs-down-0-not-rel-left.md) | 89 | `result-track:898dab006e4720799219d324f4104d2eeadaee92c9651540821c5e6353d23c87` |
+| 4 | `def` | [hσ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopiesPublic.lean/declarations/h-source-edition-2.md) | 97 | `declaration-track:8498f188e770e2ccf90ae17514431ab02d6c9ca6578140698b1927ec9bffcf3a` |
+| 5 | `def` | [hσ'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopiesPublic.lean/declarations/h.md) | 101 | `declaration-track:1f4358b43a7bfc986118df118cbc67126162e77f25bda35ddd0ad5d36acaf926` |
+| 6 | `theorem` | [hσ'_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopiesPublic.lean/declarations/h-eq-zero.md) | 104 | `result-track:9d746826e98d3c21bdf84123a8b939206109c7a684cb818295ff55057039a678` |
+| 7 | `theorem` | [hσ'_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopiesPublic.lean/declarations/h-eq-source-edition-2.md) | 110 | `result-track:d4ffd2593e07f43926fb6f7ec9d8c1cf001d4481f2fc59bc2957d74343c4aca5` |
+| 8 | `theorem` | [hσ'_eq'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopiesPublic.lean/declarations/h-eq.md) | 120 | `result-track:45c01f65779db947a0c2312c0a13d9cd7df3953738a724dff07950dce20adb9e` |
+| 9 | `def` | [Hσ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopiesPublic.lean/declarations/h-source-edition-3.md) | 126 | `declaration-track:cd8bbec4d4b26cfd04591d133b9d93c7a02bde712aabcd17e1666756cc548548` |
+| 10 | `def` | [homotopyHσToZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopiesPublic.lean/declarations/homotopyh-tozero.md) | 130 | `declaration-track:a77e243a060803756fa1ecbb91a67f4cf203e7e4cfee674d504e7319265f1b57` |
+| 11 | `theorem` | [Hσ_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopiesPublic.lean/declarations/h-eq-zero-source-edition-2.md) | 134 | `result-track:d9d596b8f8da2f4c3769f01506f459c2d862885d3415c9761d0dcace1ee50d0e` |
+| 12 | `theorem` | [hσ'_naturality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopiesPublic.lean/declarations/h-naturality.md) | 145 | `result-track:fa08d8558cfae698fd50f35b5a50146898e0d8fcf24285b92fc4e7eb92777b83` |
+| 13 | `def` | [natTransHσ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopiesPublic.lean/declarations/nattransh.md) | 155 | `declaration-track:ceffa8fe71c58904c8cd55e0391fd93cac19c93e1a9876398101b915baf03975` |
+| 14 | `theorem` | [map_hσ'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopiesPublic.lean/declarations/map-h-source-edition-2.md) | 165 | `result-track:8a4b41c76897e580a60e775589b02d52de93432c95735fe4bea6fc16969c2bd9` |
+| 15 | `theorem` | [map_Hσ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopiesPublic.lean/declarations/map-h.md) | 176 | `result-track:5944f312bee2424526537260dd89af56abce6be7976419ad2a2d990b488426e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

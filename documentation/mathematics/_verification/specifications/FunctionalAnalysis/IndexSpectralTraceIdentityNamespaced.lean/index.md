@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/IndexSpectralTraceIdentityNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/IndexSpectralTraceIdentityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralTraceIdentityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralTraceIdentityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [explicit_formula_pairing_equality](../../../../FunctionalAnalysis/IndexSpectralTraceIdentityNamespaced.lean/declarations/explicit-formula-pairing-equality.md) | 27 | `result-track:9612b2fc76fdc9127924fb9bcdec37277f4a78e75b9d6005e524a7a7f16e2086` |
-| 2 | `theorem` | [index_spectral_trace_identity_validated](../../../../FunctionalAnalysis/IndexSpectralTraceIdentityNamespaced.lean/declarations/index-spectral-trace-identity-validated.md) | 32 | `result-track:d660ab46926c2968116315b93e0a7ee554cb5c0d41d0cd350e302504cf33471d` |
-| 3 | `theorem` | [index_spectral_trace_identity_holds](../../../../FunctionalAnalysis/IndexSpectralTraceIdentityNamespaced.lean/declarations/index-spectral-trace-identity-holds.md) | 37 | `result-track:01cc605ee09c2094aa2d78e028f8b5389f5259c8d1f72c976d0e40ae10bfa672` |
+| 1 | `theorem` | [explicit_formula_pairing_equality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralTraceIdentityNamespaced.lean/declarations/explicit-formula-pairing-equality.md) | 27 | `result-track:9612b2fc76fdc9127924fb9bcdec37277f4a78e75b9d6005e524a7a7f16e2086` |
+| 2 | `theorem` | [index_spectral_trace_identity_validated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralTraceIdentityNamespaced.lean/declarations/index-spectral-trace-identity-validated.md) | 32 | `result-track:d660ab46926c2968116315b93e0a7ee554cb5c0d41d0cd350e302504cf33471d` |
+| 3 | `theorem` | [index_spectral_trace_identity_holds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralTraceIdentityNamespaced.lean/declarations/index-spectral-trace-identity-holds.md) | 37 | `result-track:01cc605ee09c2094aa2d78e028f8b5389f5259c8d1f72c976d0e40ae10bfa672` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

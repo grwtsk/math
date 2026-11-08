@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/FreyGlobalMinimalDiscriminantCore.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/FreyGlobalMinimalDiscriminantCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyGlobalMinimalDiscriminantCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyGlobalMinimalDiscriminantCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.FreyTwoBranchDecisionCore`](../../../../../NumberTheory/DiophantineEquations/FreyTwoBranchDecisionCore.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.AlgebraicGeometry.EllipticCurve.UnitScaleReduction`](../../../../../CommutativeAlgebra/UnitScaleReduction.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyGlobalMinimalDiscriminant`](../../../../../CommutativeAlgebra/FreyGlobalMinimalDiscriminant.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Interfaces.FreyTwoBranchDecisionCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyTwoBranchDecisionCore.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.EllipticCurve.UnitScaleReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnitScaleReduction.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyGlobalMinimalDiscriminant`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FreyGlobalMinimalDiscriminant.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

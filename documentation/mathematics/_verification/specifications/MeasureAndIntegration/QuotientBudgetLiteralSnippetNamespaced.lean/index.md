@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 15 | `declaration-track:2fb264bbf39a5a22a7573b03cc26f8f36660ec903e6faab5ec96b858761b70a6` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/declarations/example.md) | 18 | `declaration-track:10046957295b2f4cee1daf1771ee41c875bd79a6fbbbcea8ba51d42bf067eabd` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/declarations/example-source-edition-5.md) | 22 | `declaration-track:88912e07a30f321e45f3a3f80f3c4a17fd6e7032289a2ea245d7f22dded3341c` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/declarations/example-source-edition-7.md) | 23 | `declaration-track:be6ad8ab544801543c6f209939bc7a5eae5708ba4fcf1c0855414413f6a82597` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 27 | `declaration-track:3a7f4d9094eb173cf3b897873d23aa766382c065e359ee94edcb966a7abbf9b1` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/declarations/example-source-edition-4.md) | 29 | `declaration-track:78815c0ff90c13f435123d3f49a2f2007e74012cc486a80cb69cc54e1ee86509` |
-| 7 | `example` | [(anonymous)](../../../../MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/declarations/example-source-edition-8.md) | 31 | `declaration-track:c0cf3ec308ae3144235abc30f94ce74c4bc5755da9d566be65a3123597ced6ee` |
-| 8 | `example` | [(anonymous)](../../../../MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/declarations/example-source-edition-6.md) | 35 | `declaration-track:a32c5060d091dc927d99ddd57bc3ba279a08a292923db7d61334c86b8aacbced` |
-| 9 | `example` | [(anonymous)](../../../../MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/declarations/example-source-edition-9.md) | 38 | `declaration-track:ec01726e9207b2caca47a2e28ca2faa0b658c3c17297de4d56ec4aa93fdcfd6d` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 15 | `declaration-track:2fb264bbf39a5a22a7573b03cc26f8f36660ec903e6faab5ec96b858761b70a6` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/declarations/example.md) | 18 | `declaration-track:10046957295b2f4cee1daf1771ee41c875bd79a6fbbbcea8ba51d42bf067eabd` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/declarations/example-source-edition-5.md) | 22 | `declaration-track:88912e07a30f321e45f3a3f80f3c4a17fd6e7032289a2ea245d7f22dded3341c` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/declarations/example-source-edition-7.md) | 23 | `declaration-track:be6ad8ab544801543c6f209939bc7a5eae5708ba4fcf1c0855414413f6a82597` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 27 | `declaration-track:3a7f4d9094eb173cf3b897873d23aa766382c065e359ee94edcb966a7abbf9b1` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/declarations/example-source-edition-4.md) | 29 | `declaration-track:78815c0ff90c13f435123d3f49a2f2007e74012cc486a80cb69cc54e1ee86509` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/declarations/example-source-edition-8.md) | 31 | `declaration-track:c0cf3ec308ae3144235abc30f94ce74c4bc5755da9d566be65a3123597ced6ee` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/declarations/example-source-edition-6.md) | 35 | `declaration-track:a32c5060d091dc927d99ddd57bc3ba279a08a292923db7d61334c86b8aacbced` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuotientBudgetLiteralSnippetNamespaced.lean/declarations/example-source-edition-9.md) | 38 | `declaration-track:ec01726e9207b2caca47a2e28ca2faa0b658c3c17297de4d56ec4aa93fdcfd6d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

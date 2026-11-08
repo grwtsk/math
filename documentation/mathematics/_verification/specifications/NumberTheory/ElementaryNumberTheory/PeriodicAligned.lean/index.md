@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/PeriodicAligned.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/PeriodicAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PeriodicAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PeriodicAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [periodic_gcd](../../../../../NumberTheory/ElementaryNumberTheory/PeriodicAligned.lean/declarations/periodic-gcd.md) | 24 | `result-track:fb97c5a21f587bb9fc25baccedeef345533f1d9e9e21b74f94428994fe4928cf` |
-| 2 | `theorem` | [periodic_coprime](../../../../../NumberTheory/ElementaryNumberTheory/PeriodicAligned.lean/declarations/periodic-coprime.md) | 28 | `result-track:47e92ac7a8dc33101bac53f9c0dcff0a833af29fe1d88b1a4dfb0bcdb7d9a5d4` |
-| 3 | `theorem` | [periodic_mod](../../../../../NumberTheory/ElementaryNumberTheory/PeriodicAligned.lean/declarations/periodic-mod.md) | 32 | `result-track:b4b5805fe848348b9978b044e951090a6c9c6dea99366a5347b9d1214b32dc43` |
-| 4 | `theorem` | [_root_.Function.Periodic.map_mod_nat](../../../../../NumberTheory/ElementaryNumberTheory/PeriodicAligned.lean/declarations/root-function-periodic-map-mod-nat.md) | 36 | `result-track:2b2e95762663b0277a3e4502a555adc0f6055e170aa0c0ee73943b99e6aa1dc1` |
-| 5 | `theorem` | [filter_multiset_Ico_card_eq_of_periodic](../../../../../NumberTheory/ElementaryNumberTheory/PeriodicAligned.lean/declarations/filter-multiset-ico-card-eq-of-periodic.md) | 47 | `result-track:06dd3e3c880f113c24d2c4341389204d39a1625e6bc11ec483ed408fba077ee7` |
-| 6 | `theorem` | [filter_Ico_card_eq_of_periodic](../../../../../NumberTheory/ElementaryNumberTheory/PeriodicAligned.lean/declarations/filter-ico-card-eq-of-periodic.md) | 64 | `result-track:4549d1f1afe2613e8df4ef68f1f220832fbb23cbc55e3bdb43d86eb6a9c465bd` |
+| 1 | `theorem` | [periodic_gcd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PeriodicAligned.lean/declarations/periodic-gcd.md) | 24 | `result-track:fb97c5a21f587bb9fc25baccedeef345533f1d9e9e21b74f94428994fe4928cf` |
+| 2 | `theorem` | [periodic_coprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PeriodicAligned.lean/declarations/periodic-coprime.md) | 28 | `result-track:47e92ac7a8dc33101bac53f9c0dcff0a833af29fe1d88b1a4dfb0bcdb7d9a5d4` |
+| 3 | `theorem` | [periodic_mod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PeriodicAligned.lean/declarations/periodic-mod.md) | 32 | `result-track:b4b5805fe848348b9978b044e951090a6c9c6dea99366a5347b9d1214b32dc43` |
+| 4 | `theorem` | [_root_.Function.Periodic.map_mod_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PeriodicAligned.lean/declarations/root-function-periodic-map-mod-nat.md) | 36 | `result-track:2b2e95762663b0277a3e4502a555adc0f6055e170aa0c0ee73943b99e6aa1dc1` |
+| 5 | `theorem` | [filter_multiset_Ico_card_eq_of_periodic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PeriodicAligned.lean/declarations/filter-multiset-ico-card-eq-of-periodic.md) | 47 | `result-track:06dd3e3c880f113c24d2c4341389204d39a1625e6bc11ec483ed408fba077ee7` |
+| 6 | `theorem` | [filter_Ico_card_eq_of_periodic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PeriodicAligned.lean/declarations/filter-ico-card-eq-of-periodic.md) | 64 | `result-track:4549d1f1afe2613e8df4ef68f1f220832fbb23cbc55e3bdb43d86eb6a9c465bd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

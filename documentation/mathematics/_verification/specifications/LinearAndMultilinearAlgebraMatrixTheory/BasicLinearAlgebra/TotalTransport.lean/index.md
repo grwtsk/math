@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TotalTransport.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TotalTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TotalTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TotalTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [liftedOperator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TotalTransport.lean/declarations/liftedoperator.md) | 32 | `declaration-track:117e7494f51babcd623645893438f3f68ca2c19bc091e547421719c9ed66bbe6` |
-| 2 | `theorem` | [liftedOperator_unitary_left](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TotalTransport.lean/declarations/liftedoperator-unitary-left.md) | 36 | `result-track:01ef6adec052b9b203720b55f8e3067f1a7bcf495af61ee76365c46e93979efa` |
-| 3 | `theorem` | [liftedOperator_unitary_right](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TotalTransport.lean/declarations/liftedoperator-unitary-right.md) | 44 | `result-track:bde951d90e081ac000c300713c76a24e32955c5b220b7abe55cb37157673bf64` |
-| 4 | `theorem` | [fold_intertwines_totalOperator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TotalTransport.lean/declarations/fold-intertwines-totaloperator.md) | 53 | `result-track:e426cc509794157282cac7eee151e96130ca148d9215200797ad7a2088039782` |
-| 5 | `theorem` | [fold_intertwines_totalDiffuser](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TotalTransport.lean/declarations/fold-intertwines-totaldiffuser.md) | 78 | `result-track:70deae11e06bdcc0b1cfbb593cbffc35ae9d301196d94af6394c37575980b624` |
-| 6 | `def` | [vectorProjectionMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TotalTransport.lean/declarations/vectorprojectionmatrix.md) | 104 | `declaration-track:b82152e91927b1ff64d0873d4e2f581be7c4e30f7a31f6ac6053031572263142` |
-| 7 | `theorem` | [fold_transports_pointProjection](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TotalTransport.lean/declarations/fold-transports-pointprojection.md) | 110 | `result-track:e105010e87047ceeacd74ff6ea3487a470f14440127564434f14d301107bc9bb` |
+| 1 | `def` | [liftedOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TotalTransport.lean/declarations/liftedoperator.md) | 32 | `declaration-track:117e7494f51babcd623645893438f3f68ca2c19bc091e547421719c9ed66bbe6` |
+| 2 | `theorem` | [liftedOperator_unitary_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TotalTransport.lean/declarations/liftedoperator-unitary-left.md) | 36 | `result-track:01ef6adec052b9b203720b55f8e3067f1a7bcf495af61ee76365c46e93979efa` |
+| 3 | `theorem` | [liftedOperator_unitary_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TotalTransport.lean/declarations/liftedoperator-unitary-right.md) | 44 | `result-track:bde951d90e081ac000c300713c76a24e32955c5b220b7abe55cb37157673bf64` |
+| 4 | `theorem` | [fold_intertwines_totalOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TotalTransport.lean/declarations/fold-intertwines-totaloperator.md) | 53 | `result-track:e426cc509794157282cac7eee151e96130ca148d9215200797ad7a2088039782` |
+| 5 | `theorem` | [fold_intertwines_totalDiffuser](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TotalTransport.lean/declarations/fold-intertwines-totaldiffuser.md) | 78 | `result-track:70deae11e06bdcc0b1cfbb593cbffc35ae9d301196d94af6394c37575980b624` |
+| 6 | `def` | [vectorProjectionMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TotalTransport.lean/declarations/vectorprojectionmatrix.md) | 104 | `declaration-track:b82152e91927b1ff64d0873d4e2f581be7c4e30f7a31f6ac6053031572263142` |
+| 7 | `theorem` | [fold_transports_pointProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TotalTransport.lean/declarations/fold-transports-pointprojection.md) | 110 | `result-track:e105010e87047ceeacd74ff6ea3487a470f14440127564434f14d301107bc9bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

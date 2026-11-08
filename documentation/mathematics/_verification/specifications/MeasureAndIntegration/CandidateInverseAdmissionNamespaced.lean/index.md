@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CandidateInverseAdmissionNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CandidateInverseAdmissionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateInverseAdmissionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateInverseAdmissionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [candidate_boundaryInverse_bounded](../../../../MeasureAndIntegration/CandidateInverseAdmissionNamespaced.lean/declarations/candidate-boundaryinverse-bounded.md) | 24 | `result-track:bcc4d8fba994a660af025d0418b5a798d821e984a6f58cddf989a58a0e202a5d` |
-| 2 | `theorem` | [candidate_boundaryInverse_half_shift](../../../../MeasureAndIntegration/CandidateInverseAdmissionNamespaced.lean/declarations/candidate-boundaryinverse-half-shift.md) | 44 | `result-track:fd6ea4b3cd0ed69cd8d0861cd87e0c666b0d248479bcd55eb8ac4aa773632d8b` |
-| 3 | `theorem` | [candidate_boundaryInverse_exp_bound](../../../../MeasureAndIntegration/CandidateInverseAdmissionNamespaced.lean/declarations/candidate-boundaryinverse-exp-bound.md) | 60 | `result-track:db3a5e128bffb0284b171a5a54db4002479a3ec8d7f7a87ec60bed676ad8cea1` |
-| 4 | `theorem` | [candidate_boundaryInverse_integrable](../../../../MeasureAndIntegration/CandidateInverseAdmissionNamespaced.lean/declarations/candidate-boundaryinverse-integrable.md) | 72 | `result-track:dcf2360eb64ead77b4e3dce782a6ba785611fc020b791b56397a7c3188e0e8f6` |
-| 5 | `theorem` | [candidate_boundaryInverse_laplace_integrable](../../../../MeasureAndIntegration/CandidateInverseAdmissionNamespaced.lean/declarations/candidate-boundaryinverse-laplace-integrable.md) | 91 | `result-track:7b3f038bda84bf55455a945a1ef2069457202dd96f5be836896589878ae9dee8` |
+| 1 | `theorem` | [candidate_boundaryInverse_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateInverseAdmissionNamespaced.lean/declarations/candidate-boundaryinverse-bounded.md) | 24 | `result-track:bcc4d8fba994a660af025d0418b5a798d821e984a6f58cddf989a58a0e202a5d` |
+| 2 | `theorem` | [candidate_boundaryInverse_half_shift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateInverseAdmissionNamespaced.lean/declarations/candidate-boundaryinverse-half-shift.md) | 44 | `result-track:fd6ea4b3cd0ed69cd8d0861cd87e0c666b0d248479bcd55eb8ac4aa773632d8b` |
+| 3 | `theorem` | [candidate_boundaryInverse_exp_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateInverseAdmissionNamespaced.lean/declarations/candidate-boundaryinverse-exp-bound.md) | 60 | `result-track:db3a5e128bffb0284b171a5a54db4002479a3ec8d7f7a87ec60bed676ad8cea1` |
+| 4 | `theorem` | [candidate_boundaryInverse_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateInverseAdmissionNamespaced.lean/declarations/candidate-boundaryinverse-integrable.md) | 72 | `result-track:dcf2360eb64ead77b4e3dce782a6ba785611fc020b791b56397a7c3188e0e8f6` |
+| 5 | `theorem` | [candidate_boundaryInverse_laplace_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateInverseAdmissionNamespaced.lean/declarations/candidate-boundaryinverse-laplace-integrable.md) | 91 | `result-track:7b3f038bda84bf55455a945a1ef2069457202dd96f5be836896589878ae9dee8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

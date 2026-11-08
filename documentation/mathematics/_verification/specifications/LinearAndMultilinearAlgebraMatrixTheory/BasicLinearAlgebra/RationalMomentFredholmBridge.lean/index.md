@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.LinearMap.FrequencyScrew`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FrequencyScrew.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.ArithmeticFunctions.RationalMomentAlgebra`](../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RationalMomentAlgebra.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.LinearMap.FrequencyScrew`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FrequencyScrew.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.ArithmeticFunctions.RationalMomentAlgebra`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RationalMomentAlgebra.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.LinearAlgebra.Determinant` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MomentSheaf](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/momentsheaf.md) | 33 | `declaration-track:3bb3f623f280fd74208afd34e5470725c3b28b1d3c45b21713e3c889dd703f93` |
-| 2 | `def` | [transport](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/transport.md) | 47 | `declaration-track:8a3a812d923efc0fae1ebf3b82dc13a81a082873f2b978d14fceba7da588b4b2` |
-| 3 | `theorem` | [transport_naturality](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/transport-naturality.md) | 53 | `result-track:011dc63465b05d3ff2bda25c205019fe60ea02a9d26a4bb861e317d6d6de3e69` |
-| 4 | `structure` | [SpectralComponent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/spectralcomponent.md) | 68 | `declaration-track:8b5a10e4e70569e8f1cd4b662d3e6f4c70a97eb131b361dc19578692f5224cf6` |
-| 5 | `theorem` | [zeta_preserved](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/zeta-preserved.md) | 84 | `result-track:1add4b520806bd0ab7d23c9b0ec9d9c792886d54e8516211b1ae472250c29d63` |
-| 6 | `theorem` | [mobius_preserved](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/mobius-preserved.md) | 94 | `result-track:d5485880950eef0286ea3412f7e7043fdd24319e4643881911687ef9b797a995` |
-| 7 | `theorem` | [mobius_zeta_on_component](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/mobius-zeta-on-component.md) | 105 | `result-track:6561ddd794e940d3cc39da616521ee1f83fad2577ad7f0c49dbb99ff50748939` |
-| 8 | `structure` | [FiniteFredholmBridge](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/finitefredholmbridge.md) | 117 | `declaration-track:68a59fb28f073a241396dda4a13409296ff4ec11abf1f04f46700246ab40332c` |
-| 9 | `def` | [FiniteFredholmBridge.determinant](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/finitefredholmbridge-determinant.md) | 127 | `declaration-track:5a26701d425f7422a45d5adcba81a71cbb60e5e48b189d89a6b6214bb10bb944` |
-| 10 | `theorem` | [FiniteFredholmBridge.determinant_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/finitefredholmbridge-determinant-zero.md) | 136 | `result-track:cedc094aa1bdb108d0677cb1b90e010ff757676db46726498578dab5d2d2649f` |
+| 1 | `structure` | [MomentSheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/momentsheaf.md) | 33 | `declaration-track:3bb3f623f280fd74208afd34e5470725c3b28b1d3c45b21713e3c889dd703f93` |
+| 2 | `def` | [transport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/transport.md) | 47 | `declaration-track:8a3a812d923efc0fae1ebf3b82dc13a81a082873f2b978d14fceba7da588b4b2` |
+| 3 | `theorem` | [transport_naturality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/transport-naturality.md) | 53 | `result-track:011dc63465b05d3ff2bda25c205019fe60ea02a9d26a4bb861e317d6d6de3e69` |
+| 4 | `structure` | [SpectralComponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/spectralcomponent.md) | 68 | `declaration-track:8b5a10e4e70569e8f1cd4b662d3e6f4c70a97eb131b361dc19578692f5224cf6` |
+| 5 | `theorem` | [zeta_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/zeta-preserved.md) | 84 | `result-track:1add4b520806bd0ab7d23c9b0ec9d9c792886d54e8516211b1ae472250c29d63` |
+| 6 | `theorem` | [mobius_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/mobius-preserved.md) | 94 | `result-track:d5485880950eef0286ea3412f7e7043fdd24319e4643881911687ef9b797a995` |
+| 7 | `theorem` | [mobius_zeta_on_component](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/mobius-zeta-on-component.md) | 105 | `result-track:6561ddd794e940d3cc39da616521ee1f83fad2577ad7f0c49dbb99ff50748939` |
+| 8 | `structure` | [FiniteFredholmBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/finitefredholmbridge.md) | 117 | `declaration-track:68a59fb28f073a241396dda4a13409296ff4ec11abf1f04f46700246ab40332c` |
+| 9 | `def` | [FiniteFredholmBridge.determinant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/finitefredholmbridge-determinant.md) | 127 | `declaration-track:5a26701d425f7422a45d5adcba81a71cbb60e5e48b189d89a6b6214bb10bb944` |
+| 10 | `theorem` | [FiniteFredholmBridge.determinant_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalMomentFredholmBridge.lean/declarations/finitefredholmbridge-determinant-zero.md) | 136 | `result-track:cedc094aa1bdb108d0677cb1b90e010ff757676db46726498578dab5d2d2649f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

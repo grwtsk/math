@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceBumpHorizontalFragmentNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceBumpHorizontalFragmentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpHorizontalFragmentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpHorizontalFragmentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [radial_boundary_energy_identity](../../../../MeasureAndIntegration/SourceBumpHorizontalFragmentNamespaced.lean/declarations/radial-boundary-energy-identity.md) | 17 | `result-track:73320a8b2b00d7d8e8cce4c0519eadd83fb7de5114a6ca41949c587e49bbc1bd` |
-| 2 | `theorem` | [bumpMoment_derivative_pairing_nonneg](../../../../MeasureAndIntegration/SourceBumpHorizontalFragmentNamespaced.lean/declarations/bumpmoment-derivative-pairing-nonneg.md) | 84 | `result-track:38e37db344eaa0a7c423241d01d0a48398f5e26174c9d875bdbb1431c6a004eb` |
-| 3 | `theorem` | [bumpMoment_horizontal_norm_sq_hasDerivAt](../../../../MeasureAndIntegration/SourceBumpHorizontalFragmentNamespaced.lean/declarations/bumpmoment-horizontal-norm-sq-hasderivat.md) | 107 | `result-track:439f2a3a7e3ccc2b72baa6e8d6697d5dc8b6eed7d9b10764663ab36c14038dcb` |
-| 4 | `theorem` | [bumpMoment_horizontal_norm_monotone](../../../../MeasureAndIntegration/SourceBumpHorizontalFragmentNamespaced.lean/declarations/bumpmoment-horizontal-norm-monotone.md) | 119 | `result-track:6a80e47dc2a30e061fdb5ca64cc85253c351ed9981162ac12d604cb0ca695a3a` |
-| 5 | `theorem` | [bumpMoment_horizontal_norm_le](../../../../MeasureAndIntegration/SourceBumpHorizontalFragmentNamespaced.lean/declarations/bumpmoment-horizontal-norm-le.md) | 140 | `result-track:e44feca43ea0de34e005d401e8a7b727dbb75d023f14e89fc27538f26099a077` |
+| 1 | `theorem` | [radial_boundary_energy_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpHorizontalFragmentNamespaced.lean/declarations/radial-boundary-energy-identity.md) | 17 | `result-track:73320a8b2b00d7d8e8cce4c0519eadd83fb7de5114a6ca41949c587e49bbc1bd` |
+| 2 | `theorem` | [bumpMoment_derivative_pairing_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpHorizontalFragmentNamespaced.lean/declarations/bumpmoment-derivative-pairing-nonneg.md) | 84 | `result-track:38e37db344eaa0a7c423241d01d0a48398f5e26174c9d875bdbb1431c6a004eb` |
+| 3 | `theorem` | [bumpMoment_horizontal_norm_sq_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpHorizontalFragmentNamespaced.lean/declarations/bumpmoment-horizontal-norm-sq-hasderivat.md) | 107 | `result-track:439f2a3a7e3ccc2b72baa6e8d6697d5dc8b6eed7d9b10764663ab36c14038dcb` |
+| 4 | `theorem` | [bumpMoment_horizontal_norm_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpHorizontalFragmentNamespaced.lean/declarations/bumpmoment-horizontal-norm-monotone.md) | 119 | `result-track:6a80e47dc2a30e061fdb5ca64cc85253c351ed9981162ac12d604cb0ca695a3a` |
+| 5 | `theorem` | [bumpMoment_horizontal_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpHorizontalFragmentNamespaced.lean/declarations/bumpmoment-horizontal-norm-le.md) | 140 | `result-track:e44feca43ea0de34e005d401e8a7b727dbb75d023f14e89fc27538f26099a077` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

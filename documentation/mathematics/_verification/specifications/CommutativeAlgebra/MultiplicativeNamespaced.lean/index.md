@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MultiplicativeNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MultiplicativeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MultiplicativeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MultiplicativeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prime_pow_coprime_prod_of_coprime_insert](../../../../CommutativeAlgebra/MultiplicativeNamespaced.lean/declarations/prime-pow-coprime-prod-of-coprime-insert.md) | 39 | `result-track:58da7fb08477b6a2418b48dc247a3f25fa9c2d713b5a51a75010fa448746809a` |
-| 2 | `theorem` | [induction_on_prime_power](../../../../CommutativeAlgebra/MultiplicativeNamespaced.lean/declarations/induction-on-prime-power.md) | 60 | `result-track:cae0dc870c8954f56811c876eab18e7bb3866a12f4cc865cbf319bb23b03f746` |
-| 3 | `theorem` | [induction_on_coprime](../../../../CommutativeAlgebra/MultiplicativeNamespaced.lean/declarations/induction-on-coprime.md) | 79 | `result-track:07ece2dce9a1795e9f21dba61876c98402f4fccfd05b1385ad2060aa0550490e` |
-| 4 | `theorem` | [multiplicative_prime_power](../../../../CommutativeAlgebra/MultiplicativeNamespaced.lean/declarations/multiplicative-prime-power.md) | 98 | `result-track:d5bfdb9f59dbdc5670d77acdaa2fe0d1897eca115363de5a2e9c6ed1abd3866f` |
-| 5 | `theorem` | [multiplicative_of_coprime](../../../../CommutativeAlgebra/MultiplicativeNamespaced.lean/declarations/multiplicative-of-coprime.md) | 118 | `result-track:74d2185bd16c9191af3d356aaf3660f1bd0ba4c4e8bc4700597c1e85807ce83f` |
+| 1 | `theorem` | [prime_pow_coprime_prod_of_coprime_insert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MultiplicativeNamespaced.lean/declarations/prime-pow-coprime-prod-of-coprime-insert.md) | 39 | `result-track:58da7fb08477b6a2418b48dc247a3f25fa9c2d713b5a51a75010fa448746809a` |
+| 2 | `theorem` | [induction_on_prime_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MultiplicativeNamespaced.lean/declarations/induction-on-prime-power.md) | 60 | `result-track:cae0dc870c8954f56811c876eab18e7bb3866a12f4cc865cbf319bb23b03f746` |
+| 3 | `theorem` | [induction_on_coprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MultiplicativeNamespaced.lean/declarations/induction-on-coprime.md) | 79 | `result-track:07ece2dce9a1795e9f21dba61876c98402f4fccfd05b1385ad2060aa0550490e` |
+| 4 | `theorem` | [multiplicative_prime_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MultiplicativeNamespaced.lean/declarations/multiplicative-prime-power.md) | 98 | `result-track:d5bfdb9f59dbdc5670d77acdaa2fe0d1897eca115363de5a2e9c6ed1abd3866f` |
+| 5 | `theorem` | [multiplicative_of_coprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MultiplicativeNamespaced.lean/declarations/multiplicative-of-coprime.md) | 118 | `result-track:74d2185bd16c9191af3d356aaf3660f1bd0ba4c4e8bc4700597c1e85807ce83f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

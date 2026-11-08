@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/CurveNamespaced.lean/index.md) · [Full source](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/CurveNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/CurveNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/CurveNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ShortWeierstrassCurve](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/CurveNamespaced.lean/declarations/shortweierstrasscurve.md) | 20 | `declaration-track:4309a53bf169f9a2e7eb10c1a901dee44c1d3c629d6e4b1c986cb1d1d73b1c80` |
-| 2 | `def` | [KEqual](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/CurveNamespaced.lean/declarations/kequal.md) | 26 | `declaration-track:ba76b29808a750f6bff7a51cf3b0709542ae764ce6517109051aa22cd69599d7` |
-| 3 | `def` | [TorsionResidueHeat](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/CurveNamespaced.lean/declarations/torsionresidueheat.md) | 29 | `declaration-track:1a5c924d923c8dd4265a22454f2a803be7a74848ea4d449fc6886ed75cd8e620` |
-| 4 | `def` | [KTorsionClaim](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/CurveNamespaced.lean/declarations/ktorsionclaim.md) | 32 | `declaration-track:1fc2c9cb65ea66d9fee864c38867a2899bfa8e3f60fb64ec5f548d66d5bc2957` |
+| 1 | `structure` | [ShortWeierstrassCurve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/CurveNamespaced.lean/declarations/shortweierstrasscurve.md) | 20 | `declaration-track:4309a53bf169f9a2e7eb10c1a901dee44c1d3c629d6e4b1c986cb1d1d73b1c80` |
+| 2 | `def` | [KEqual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/CurveNamespaced.lean/declarations/kequal.md) | 26 | `declaration-track:ba76b29808a750f6bff7a51cf3b0709542ae764ce6517109051aa22cd69599d7` |
+| 3 | `def` | [TorsionResidueHeat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/CurveNamespaced.lean/declarations/torsionresidueheat.md) | 29 | `declaration-track:1a5c924d923c8dd4265a22454f2a803be7a74848ea4d449fc6886ed75cd8e620` |
+| 4 | `def` | [KTorsionClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/CurveNamespaced.lean/declarations/ktorsionclaim.md) | 32 | `declaration-track:1fc2c9cb65ea66d9fee864c38867a2899bfa8e3f60fb64ec5f548d66d5bc2957` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

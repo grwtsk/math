@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [S](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/declarations/s.md) | 9 | `declaration-track:4ae8422e18ac8c8e0caa2b6feae605f3a764dd7db9ea820af28c7ea33d8b4ca7` |
-| 2 | `def` | [append](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/declarations/append.md) | 10 | `declaration-track:2a202bc1d6e5cabf1e2bd1bd95c11d6c57bacfd0f526540d52e7846c6877a48a` |
-| 3 | `def` | [F](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/declarations/f.md) | 13 | `declaration-track:e79d91d6dc44248c169a792507ea3bfba95ba08130035ffc1b05d5d76dda374c` |
-| 4 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/declarations/example.md) | 28 | `declaration-track:94ed664c6e5ab7e4fe6a5e43e26810e0d8236210599eb17ae288a718c407ed1d` |
-| 5 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/declarations/example-source-edition-2.md) | 30 | `declaration-track:96dd75ecfbeb2928952e0ae401ae6a6a9d6251e750c09977cf313df2ee889d36` |
-| 6 | `def` | [l1](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/declarations/l1.md) | 35 | `declaration-track:5eceba611f6683c41afc049abe99c89232c160f95d55d5a7b626eb8284ab7fab` |
-| 7 | `def` | [l2](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/declarations/l2.md) | 36 | `declaration-track:419f6667ed5b0ff6f6a53fc98ec9b4baafd5824ef1e8d520fff9fd7102f429ab` |
-| 8 | `def` | [ll](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/declarations/ll.md) | 37 | `declaration-track:aac744915e477386854b02fb3ecabfdac61d4863ab887ce06270d2c9738203a6` |
-| 9 | `def` | [half_or_fail](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/declarations/half-or-fail.md) | 43 | `declaration-track:4dcf69348859a7cc0881eacc4a1800a08a5d7edf96d441f9f8f757c7e8410cde` |
+| 1 | `def` | [S](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/declarations/s.md) | 9 | `declaration-track:4ae8422e18ac8c8e0caa2b6feae605f3a764dd7db9ea820af28c7ea33d8b4ca7` |
+| 2 | `def` | [append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/declarations/append.md) | 10 | `declaration-track:2a202bc1d6e5cabf1e2bd1bd95c11d6c57bacfd0f526540d52e7846c6877a48a` |
+| 3 | `def` | [F](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/declarations/f.md) | 13 | `declaration-track:e79d91d6dc44248c169a792507ea3bfba95ba08130035ffc1b05d5d76dda374c` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/declarations/example.md) | 28 | `declaration-track:94ed664c6e5ab7e4fe6a5e43e26810e0d8236210599eb17ae288a718c407ed1d` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/declarations/example-source-edition-2.md) | 30 | `declaration-track:96dd75ecfbeb2928952e0ae401ae6a6a9d6251e750c09977cf313df2ee889d36` |
+| 6 | `def` | [l1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/declarations/l1.md) | 35 | `declaration-track:5eceba611f6683c41afc049abe99c89232c160f95d55d5a7b626eb8284ab7fab` |
+| 7 | `def` | [l2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/declarations/l2.md) | 36 | `declaration-track:419f6667ed5b0ff6f6a53fc98ec9b4baafd5824ef1e8d520fff9fd7102f429ab` |
+| 8 | `def` | [ll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/declarations/ll.md) | 37 | `declaration-track:aac744915e477386854b02fb3ecabfdac61d4863ab887ce06270d2c9738203a6` |
+| 9 | `def` | [half_or_fail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListAppend.lean/declarations/half-or-fail.md) | 43 | `declaration-track:4dcf69348859a7cc0881eacc4a1800a08a5d7edf96d441f9f8f757c7e8410cde` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

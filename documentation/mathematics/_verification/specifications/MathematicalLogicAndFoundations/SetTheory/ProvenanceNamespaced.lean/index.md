@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [EuclidBook](../../../../../MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/declarations/euclidbook.md) | 20 | `declaration-track:c375ac49592fabfe23f5995b73b25912c76b65170e2826a0cddd1dd3e4721be9` |
-| 2 | `inductive` | [HistoricalPlace](../../../../../MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/declarations/historicalplace.md) | 25 | `declaration-track:6534ee95fb1da46eb4b9a0b713bfdfd2198ce2ec92d527080bae22af32aadb46` |
-| 3 | `inductive` | [HistoricalItemKind](../../../../../MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/declarations/historicalitemkind.md) | 30 | `declaration-track:df651f0157cb0911ed1775392d94bda30c54e20d8562aaccdec7cc2e4331f197` |
-| 4 | `structure` | [HistoricalCoordinate](../../../../../MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/declarations/historicalcoordinate.md) | 38 | `declaration-track:9887d801b09b3df8a976790de2d599f4f9968597c6045d03ad7db2fc12fce2aa` |
-| 5 | `structure` | [HistoricalProvenance](../../../../../MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/declarations/historicalprovenance.md) | 45 | `declaration-track:21f148c33de6687266a0c19717e9d62435034044ed5cad550c64db416d983c62` |
-| 6 | `def` | [commonNotion](../../../../../MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/declarations/commonnotion.md) | 52 | `declaration-track:54e41b6264bfef44902b05d9a2abd7f30410736c126fda3ad9e04103d1c7e1f9` |
-| 7 | `def` | [bookDefinition](../../../../../MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/declarations/bookdefinition.md) | 65 | `declaration-track:0f845c81ccbd7d1915db63de733f715e494d78cef9070bd40dd946f3be0346f0` |
-| 8 | `def` | [postulate](../../../../../MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/declarations/postulate.md) | 79 | `declaration-track:26e2f6cd4a2f1ca7d40c59898590b2404d481f0c1c424ab756b2b1040ef9d4ee` |
-| 9 | `def` | [bookProposition](../../../../../MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/declarations/bookproposition.md) | 92 | `declaration-track:3a85fe533a1bf31c83f00599efa83f57139277b6f2c8fe58400e6bb84095e82d` |
+| 1 | `inductive` | [EuclidBook](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/declarations/euclidbook.md) | 20 | `declaration-track:c375ac49592fabfe23f5995b73b25912c76b65170e2826a0cddd1dd3e4721be9` |
+| 2 | `inductive` | [HistoricalPlace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/declarations/historicalplace.md) | 25 | `declaration-track:6534ee95fb1da46eb4b9a0b713bfdfd2198ce2ec92d527080bae22af32aadb46` |
+| 3 | `inductive` | [HistoricalItemKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/declarations/historicalitemkind.md) | 30 | `declaration-track:df651f0157cb0911ed1775392d94bda30c54e20d8562aaccdec7cc2e4331f197` |
+| 4 | `structure` | [HistoricalCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/declarations/historicalcoordinate.md) | 38 | `declaration-track:9887d801b09b3df8a976790de2d599f4f9968597c6045d03ad7db2fc12fce2aa` |
+| 5 | `structure` | [HistoricalProvenance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/declarations/historicalprovenance.md) | 45 | `declaration-track:21f148c33de6687266a0c19717e9d62435034044ed5cad550c64db416d983c62` |
+| 6 | `def` | [commonNotion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/declarations/commonnotion.md) | 52 | `declaration-track:54e41b6264bfef44902b05d9a2abd7f30410736c126fda3ad9e04103d1c7e1f9` |
+| 7 | `def` | [bookDefinition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/declarations/bookdefinition.md) | 65 | `declaration-track:0f845c81ccbd7d1915db63de733f715e494d78cef9070bd40dd946f3be0346f0` |
+| 8 | `def` | [postulate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/declarations/postulate.md) | 79 | `declaration-track:26e2f6cd4a2f1ca7d40c59898590b2404d481f0c1c424ab756b2b1040ef9d4ee` |
+| 9 | `def` | [bookProposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/ProvenanceNamespaced.lean/declarations/bookproposition.md) | 92 | `declaration-track:3a85fe533a1bf31c83f00599efa83f57139277b6f2c8fe58400e6bb84095e82d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

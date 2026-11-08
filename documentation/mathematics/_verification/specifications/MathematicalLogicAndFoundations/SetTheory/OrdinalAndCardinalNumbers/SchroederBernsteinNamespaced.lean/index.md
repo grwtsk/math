@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/SchroederBernsteinNamespaced.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/SchroederBernsteinNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/SchroederBernsteinNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/SchroederBernsteinNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [schroeder_bernstein](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/SchroederBernsteinNamespaced.lean/declarations/schroeder-bernstein.md) | 51 | `result-track:0aa18550f1979b46ea64b87bc0cad5c6c62fd86e3a4ad4c604536d7b4b34f8d0` |
-| 2 | `theorem` | [antisymm](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/SchroederBernsteinNamespaced.lean/declarations/antisymm.md) | 84 | `result-track:87824fd9920e7c64b44d29247f433bc285bbfc07ff9507e4648f17d90e5730b7` |
-| 3 | `abbrev` | [sets](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/SchroederBernsteinNamespaced.lean/declarations/sets.md) | 96 | `declaration-track:0740778aeba8b4b60dd419d93a5c5ebe6993078e512b7da7a2db49a47812e0fb` |
-| 4 | `theorem` | [min_injective](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/SchroederBernsteinNamespaced.lean/declarations/min-injective.md) | 102 | `result-track:11cb4aa348ce1ccebb3b151e73656b3d0e033e2f245ff45df4533c21e9ab01fb` |
-| 5 | `theorem` | [total](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/SchroederBernsteinNamespaced.lean/declarations/total.md) | 134 | `result-track:7a1e40511cd4be3efb090f72ed887f152a3c7f804621f16ef5f1144f5d731596` |
+| 1 | `theorem` | [schroeder_bernstein](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/SchroederBernsteinNamespaced.lean/declarations/schroeder-bernstein.md) | 51 | `result-track:0aa18550f1979b46ea64b87bc0cad5c6c62fd86e3a4ad4c604536d7b4b34f8d0` |
+| 2 | `theorem` | [antisymm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/SchroederBernsteinNamespaced.lean/declarations/antisymm.md) | 84 | `result-track:87824fd9920e7c64b44d29247f433bc285bbfc07ff9507e4648f17d90e5730b7` |
+| 3 | `abbrev` | [sets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/SchroederBernsteinNamespaced.lean/declarations/sets.md) | 96 | `declaration-track:0740778aeba8b4b60dd419d93a5c5ebe6993078e512b7da7a2db49a47812e0fb` |
+| 4 | `theorem` | [min_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/SchroederBernsteinNamespaced.lean/declarations/min-injective.md) | 102 | `result-track:11cb4aa348ce1ccebb3b151e73656b3d0e033e2f245ff45df4533c21e9ab01fb` |
+| 5 | `theorem` | [total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/SchroederBernsteinNamespaced.lean/declarations/total.md) | 134 | `result-track:7a1e40511cd4be3efb090f72ed887f152a3c7f804621f16ef5f1144f5d731596` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

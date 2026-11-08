@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Matching.lean/index.md) · [Full source](../../../../Combinatorics/Matching.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Matching.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Matching.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteSpectralMatchingCertificate](../../../../Combinatorics/Matching.lean/declarations/finitespectralmatchingcertificate.md) | 16 | `declaration-track:6b2b60906726a217f4026ad919bc74907c65955061045eb3f58da6564d4b8854` |
-| 2 | `theorem` | [perfectCertifiedMatching_noMissing](../../../../Combinatorics/Matching.lean/declarations/perfectcertifiedmatching-nomissing.md) | 56 | `result-track:ed156dfc7dc85e745473302207668cf378a66f6c052ae33f50ad30205298a0d6` |
-| 3 | `theorem` | [perfectCertifiedMatching_noSpurious](../../../../Combinatorics/Matching.lean/declarations/perfectcertifiedmatching-nospurious.md) | 70 | `result-track:f3254aac92661f45acb919e08e1441f3289e4ef028081a0a43bfbe3e15eb33ce` |
-| 4 | `theorem` | [perfectCertifiedMatching_preservesMultiplicity](../../../../Combinatorics/Matching.lean/declarations/perfectcertifiedmatching-preservesmultiplicity.md) | 84 | `result-track:ce1e88a019907a80da1eacc3966e34d803d2e7ef6f5b6a02f17a42a1de79a559` |
-| 5 | `theorem` | [perfectCertifiedMatching_noMissing_noSpurious](../../../../Combinatorics/Matching.lean/declarations/perfectcertifiedmatching-nomissing-nospurious.md) | 97 | `result-track:6a83c6a40231b3c8398083ca6d98343fcb481dc08cf002715319992f2ff3ec1e` |
+| 1 | `structure` | [FiniteSpectralMatchingCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Matching.lean/declarations/finitespectralmatchingcertificate.md) | 16 | `declaration-track:6b2b60906726a217f4026ad919bc74907c65955061045eb3f58da6564d4b8854` |
+| 2 | `theorem` | [perfectCertifiedMatching_noMissing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Matching.lean/declarations/perfectcertifiedmatching-nomissing.md) | 56 | `result-track:ed156dfc7dc85e745473302207668cf378a66f6c052ae33f50ad30205298a0d6` |
+| 3 | `theorem` | [perfectCertifiedMatching_noSpurious](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Matching.lean/declarations/perfectcertifiedmatching-nospurious.md) | 70 | `result-track:f3254aac92661f45acb919e08e1441f3289e4ef028081a0a43bfbe3e15eb33ce` |
+| 4 | `theorem` | [perfectCertifiedMatching_preservesMultiplicity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Matching.lean/declarations/perfectcertifiedmatching-preservesmultiplicity.md) | 84 | `result-track:ce1e88a019907a80da1eacc3966e34d803d2e7ef6f5b6a02f17a42a1de79a559` |
+| 5 | `theorem` | [perfectCertifiedMatching_noMissing_noSpurious](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Matching.lean/declarations/perfectcertifiedmatching-nomissing-nospurious.md) | 97 | `result-track:6a83c6a40231b3c8398083ca6d98343fcb481dc08cf002715319992f2ff3ec1e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

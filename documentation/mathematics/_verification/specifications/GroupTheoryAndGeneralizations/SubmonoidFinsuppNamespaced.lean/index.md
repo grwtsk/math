@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/SubmonoidFinsuppNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/SubmonoidFinsuppNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidFinsuppNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidFinsuppNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_finsupp_of_mem_closure_range](../../../../GroupTheoryAndGeneralizations/SubmonoidFinsuppNamespaced.lean/declarations/exists-finsupp-of-mem-closure-range.md) | 25 | `result-track:68113b70f6a84139f196dc1ca4b1ce9653bc25a0bd92ee9d2f54b8d03c0602a0` |
-| 2 | `theorem` | [mem_closure_range_iff](../../../../GroupTheoryAndGeneralizations/SubmonoidFinsuppNamespaced.lean/declarations/mem-closure-range-iff.md) | 40 | `result-track:7cf7f3b91dca524b4b02b4eb3a7ced56e54e802b1b50c9cfd9289401d5c02d96` |
-| 3 | `theorem` | [exists_of_mem_closure_range](../../../../GroupTheoryAndGeneralizations/SubmonoidFinsuppNamespaced.lean/declarations/exists-of-mem-closure-range.md) | 47 | `result-track:880e55f996be56c535531a03fdda3f8b32de355121883d4e50cead15505c30bd` |
-| 4 | `theorem` | [mem_closure_range_iff_of_fintype](../../../../GroupTheoryAndGeneralizations/SubmonoidFinsuppNamespaced.lean/declarations/mem-closure-range-iff-of-fintype.md) | 54 | `result-track:bb6dce81f40a50a7846980509acb3ceea97c5e8befa0337e06d5e10a31f1d01d` |
+| 1 | `theorem` | [exists_finsupp_of_mem_closure_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidFinsuppNamespaced.lean/declarations/exists-finsupp-of-mem-closure-range.md) | 25 | `result-track:68113b70f6a84139f196dc1ca4b1ce9653bc25a0bd92ee9d2f54b8d03c0602a0` |
+| 2 | `theorem` | [mem_closure_range_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidFinsuppNamespaced.lean/declarations/mem-closure-range-iff.md) | 40 | `result-track:7cf7f3b91dca524b4b02b4eb3a7ced56e54e802b1b50c9cfd9289401d5c02d96` |
+| 3 | `theorem` | [exists_of_mem_closure_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidFinsuppNamespaced.lean/declarations/exists-of-mem-closure-range.md) | 47 | `result-track:880e55f996be56c535531a03fdda3f8b32de355121883d4e50cead15505c30bd` |
+| 4 | `theorem` | [mem_closure_range_iff_of_fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidFinsuppNamespaced.lean/declarations/mem-closure-range-iff-of-fintype.md) | 54 | `result-track:bb6dce81f40a50a7846980509acb3ceea97c5e8befa0337e06d5e10a31f1d01d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

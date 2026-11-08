@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IsIntegralClosureDefs.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IsIntegralClosureDefs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsIntegralClosureDefs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsIntegralClosureDefs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsIntegralClosure](../../../../CommutativeAlgebra/IsIntegralClosureDefs.lean/declarations/isintegralclosure.md) | 27 | `declaration-track:8e493918d19a749ee6c335659e2d08dbe70a00bb38ccedccb14aef0b41532f04` |
+| 1 | `class` | [IsIntegralClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsIntegralClosureDefs.lean/declarations/isintegralclosure.md) | 27 | `declaration-track:8e493918d19a749ee6c335659e2d08dbe70a00bb38ccedccb14aef0b41532f04` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

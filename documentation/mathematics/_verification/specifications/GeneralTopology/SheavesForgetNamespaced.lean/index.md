@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SheavesForgetNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/SheavesForgetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesForgetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesForgetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [diagramCompPreservesLimits](../../../../GeneralTopology/SheavesForgetNamespaced.lean/declarations/diagramcomppreserveslimits.md) | 74 | `declaration-track:6ab7ad829b9016b1a1d6905566cbc6ef7208518f1edd00e0c3624982c5081f79` |
-| 2 | `def` | [mapConeFork](../../../../GeneralTopology/SheavesForgetNamespaced.lean/declarations/mapconefork.md) | 111 | `declaration-track:1bec0dedea8717f5d794af186bc663d4667bad03e445eae81da243576703877f` |
-| 3 | `theorem` | [isSheaf_iff_isSheaf_comp](../../../../GeneralTopology/SheavesForgetNamespaced.lean/declarations/issheaf-iff-issheaf-comp.md) | 168 | `result-track:94adc41f25a4402769f9eac8024045d1523fc8b422926051dc40b92d9c2f2da4` |
-| 4 | `example` | [(anonymous)](../../../../GeneralTopology/SheavesForgetNamespaced.lean/declarations/example.md) | 252 | `declaration-track:55b525bd57cb667339ba74c0baf8582cfee205fa8622fbd9bb24920ab55d8554` |
+| 1 | `def` | [diagramCompPreservesLimits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesForgetNamespaced.lean/declarations/diagramcomppreserveslimits.md) | 74 | `declaration-track:6ab7ad829b9016b1a1d6905566cbc6ef7208518f1edd00e0c3624982c5081f79` |
+| 2 | `def` | [mapConeFork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesForgetNamespaced.lean/declarations/mapconefork.md) | 111 | `declaration-track:1bec0dedea8717f5d794af186bc663d4667bad03e445eae81da243576703877f` |
+| 3 | `theorem` | [isSheaf_iff_isSheaf_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesForgetNamespaced.lean/declarations/issheaf-iff-issheaf-comp.md) | 168 | `result-track:94adc41f25a4402769f9eac8024045d1523fc8b422926051dc40b92d9c2f2da4` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesForgetNamespaced.lean/declarations/example.md) | 252 | `declaration-track:55b525bd57cb667339ba74c0baf8582cfee205fa8622fbd9bb24920ab55d8554` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

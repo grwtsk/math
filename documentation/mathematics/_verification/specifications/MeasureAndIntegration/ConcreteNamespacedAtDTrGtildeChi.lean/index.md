@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ConcreteNamespacedAtDTrGtildeChi.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ConcreteNamespacedAtDTrGtildeChi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ConcreteNamespacedAtDTrGtildeChi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ConcreteNamespacedAtDTrGtildeChi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [atD_trGtildeChi](../../../../MeasureAndIntegration/ConcreteNamespacedAtDTrGtildeChi.lean/declarations/atd-trgtildechi.md) | 39 | `result-track:18108d3011ff01b9019dcc7198ee32fdbaa025ac12df82275bfdba63fe948fff` |
-| 2 | `theorem` | [atD_trGtildeSqChi](../../../../MeasureAndIntegration/ConcreteNamespacedAtDTrGtildeChi.lean/declarations/atd-trgtildesqchi.md) | 43 | `result-track:3c0d35079dbc37b1b25c78aee0847a5618f9a631254d7299b7778c526a6a0f7f` |
-| 3 | `def` | [concreteDataDChi](../../../../MeasureAndIntegration/ConcreteNamespacedAtDTrGtildeChi.lean/declarations/concretedatadchi.md) | 58 | `declaration-track:66c945228c4cfb56168a6c8d4db27309bc21c084958c221d115d53e0f5d21e32` |
-| 4 | `lemma` | [autocorr_eq_zero_of_support](../../../../MeasureAndIntegration/ConcreteNamespacedAtDTrGtildeChi.lean/declarations/autocorr-eq-zero-of-support.md) | 75 | `result-track:1fe535b4dd5fbd70507c4fc2bd5571f4d55a0d4ca5be9d4586266fa46ef10e8f` |
-| 5 | `theorem` | [concreteFactsDChi](../../../../MeasureAndIntegration/ConcreteNamespacedAtDTrGtildeChi.lean/declarations/concretefactsdchi.md) | 96 | `result-track:39dbd75d3712dce00e61e091cb110085a095a0d7d194b986b982e2f7d6b3a8e4` |
-| 6 | `theorem` | [tracesBoundsDChi_concrete](../../../../MeasureAndIntegration/ConcreteNamespacedAtDTrGtildeChi.lean/declarations/tracesboundsdchi-concrete.md) | 239 | `result-track:9d8f0d7b9876ebdb1de08b3c7be6f5f8c4fde08f4c07901a11dd03c87befd3f6` |
+| 1 | `theorem` | [atD_trGtildeChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ConcreteNamespacedAtDTrGtildeChi.lean/declarations/atd-trgtildechi.md) | 39 | `result-track:18108d3011ff01b9019dcc7198ee32fdbaa025ac12df82275bfdba63fe948fff` |
+| 2 | `theorem` | [atD_trGtildeSqChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ConcreteNamespacedAtDTrGtildeChi.lean/declarations/atd-trgtildesqchi.md) | 43 | `result-track:3c0d35079dbc37b1b25c78aee0847a5618f9a631254d7299b7778c526a6a0f7f` |
+| 3 | `def` | [concreteDataDChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ConcreteNamespacedAtDTrGtildeChi.lean/declarations/concretedatadchi.md) | 58 | `declaration-track:66c945228c4cfb56168a6c8d4db27309bc21c084958c221d115d53e0f5d21e32` |
+| 4 | `lemma` | [autocorr_eq_zero_of_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ConcreteNamespacedAtDTrGtildeChi.lean/declarations/autocorr-eq-zero-of-support.md) | 75 | `result-track:1fe535b4dd5fbd70507c4fc2bd5571f4d55a0d4ca5be9d4586266fa46ef10e8f` |
+| 5 | `theorem` | [concreteFactsDChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ConcreteNamespacedAtDTrGtildeChi.lean/declarations/concretefactsdchi.md) | 96 | `result-track:39dbd75d3712dce00e61e091cb110085a095a0d7d194b986b982e2f7d6b3a8e4` |
+| 6 | `theorem` | [tracesBoundsDChi_concrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ConcreteNamespacedAtDTrGtildeChi.lean/declarations/tracesboundsdchi-concrete.md) | 239 | `result-track:9d8f0d7b9876ebdb1de08b3c7be6f5f8c4fde08f4c07901a11dd03c87befd3f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

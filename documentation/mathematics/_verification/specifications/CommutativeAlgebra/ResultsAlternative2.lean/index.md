@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ResultsAlternative2.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ResultsAlternative2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResultsAlternative2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResultsAlternative2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceCorrelation_seam_neg](../../../../CommutativeAlgebra/ResultsAlternative2.lean/declarations/sourcecorrelation-seam-neg.md) | 26 | `result-track:bf22e628225bc0a849c0388cb773f060a3694eaf6280df758931e4678ea39668` |
-| 2 | `theorem` | [not_eventually_sourceCorrelation_nonnegative](../../../../CommutativeAlgebra/ResultsAlternative2.lean/declarations/not-eventually-sourcecorrelation-nonnegative.md) | 61 | `result-track:6aa92fd4205e4f9288d8e99009a5275baf80cbe6eb94119eab932b7d186263c6` |
+| 1 | `theorem` | [sourceCorrelation_seam_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResultsAlternative2.lean/declarations/sourcecorrelation-seam-neg.md) | 26 | `result-track:bf22e628225bc0a849c0388cb773f060a3694eaf6280df758931e4678ea39668` |
+| 2 | `theorem` | [not_eventually_sourceCorrelation_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResultsAlternative2.lean/declarations/not-eventually-sourcecorrelation-nonnegative.md) | 61 | `result-track:6aa92fd4205e4f9288d8e99009a5275baf80cbe6eb94119eab932b7d186263c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

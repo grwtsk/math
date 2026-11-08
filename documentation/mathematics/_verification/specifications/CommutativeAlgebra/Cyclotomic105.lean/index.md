@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Cyclotomic105.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Cyclotomic105.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cyclotomic105.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cyclotomic105.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,21 +58,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Nat.fact_prime_five](../../../../CommutativeAlgebra/Cyclotomic105.lean/declarations/nat-fact-prime-five.md) | 26 | `declaration-track:f2d423ee1f17eeaa029a922bc1c864db3f8a4db453beac77fcd7bf16f1cc7e90` |
-| 2 | `instance` | [Nat.fact_prime_seven](../../../../CommutativeAlgebra/Cyclotomic105.lean/declarations/nat-fact-prime-seven.md) | 29 | `declaration-track:44642d6693ff625b55002f1e77822d72a4874c84bb628aafdfe33770ae4c54a3` |
-| 3 | `theorem` | [properDivisors_15](../../../../CommutativeAlgebra/Cyclotomic105.lean/declarations/properdivisors-15.md) | 32 | `result-track:3ec3ecf43dddc74a91b8928d39ca3105f6a2286498dee3ecc2924ea6f2629c0b` |
-| 4 | `theorem` | [properDivisors_21](../../../../CommutativeAlgebra/Cyclotomic105.lean/declarations/properdivisors-21.md) | 35 | `result-track:37f186df7fc57d50d83c2e3735795c95097c213cac7513d5c7b12c41693b507c` |
-| 5 | `theorem` | [properDivisors_35](../../../../CommutativeAlgebra/Cyclotomic105.lean/declarations/properdivisors-35.md) | 38 | `result-track:6441def72520354dfee9832db8153d228b70e8020e90f40df687914523343b42` |
-| 6 | `theorem` | [properDivisors_105](../../../../CommutativeAlgebra/Cyclotomic105.lean/declarations/properdivisors-105.md) | 41 | `result-track:29a42068101a90a8ccf6e66fc0ea300b02aee2f633c80b7afb1779edff906ac1` |
-| 7 | `theorem` | [cyclotomic_3](../../../../CommutativeAlgebra/Cyclotomic105.lean/declarations/cyclotomic-3.md) | 48 | `result-track:5aea124bc0853d8a11cd3303a9ef81be18a880a02c31416b3de31fe61ff866a6` |
-| 8 | `theorem` | [cyclotomic_5](../../../../CommutativeAlgebra/Cyclotomic105.lean/declarations/cyclotomic-5.md) | 51 | `result-track:11a1882e5111f40ce24154458f29f1aee0c33ffed1df2e6e9e70ad9ef4017cf5` |
-| 9 | `theorem` | [cyclotomic_7](../../../../CommutativeAlgebra/Cyclotomic105.lean/declarations/cyclotomic-7.md) | 54 | `result-track:483c84e95123ae9b21e44299e9454495d1ee2705af9ad7111516f37fae965284` |
-| 10 | `theorem` | [cyclotomic_15](../../../../CommutativeAlgebra/Cyclotomic105.lean/declarations/cyclotomic-15.md) | 57 | `result-track:33e404e25e66a59c340e3b25abdcdf2dd70011cbb7eaceb1327e851829b35a91` |
-| 11 | `theorem` | [cyclotomic_21](../../../../CommutativeAlgebra/Cyclotomic105.lean/declarations/cyclotomic-21.md) | 64 | `result-track:69216aff8f9a531772f14ec29e390bbac9b467499d707e1c9d3f4ba39eca9130` |
-| 12 | `theorem` | [cyclotomic_35](../../../../CommutativeAlgebra/Cyclotomic105.lean/declarations/cyclotomic-35.md) | 72 | `result-track:26c08e001699a68e80cab908cb5d91ce33aadfaf3f2f26bbdcb29b2d0d920973` |
-| 13 | `theorem` | [cyclotomic_105](../../../../CommutativeAlgebra/Cyclotomic105.lean/declarations/cyclotomic-105.md) | 82 | `result-track:7af57ebc946275e77d283d3075fc50983388193bb9b82d6ed4bc3bca952b2bad` |
-| 14 | `theorem` | [coeff_cyclotomic_105](../../../../CommutativeAlgebra/Cyclotomic105.lean/declarations/coeff-cyclotomic-105.md) | 96 | `result-track:355d3c4fddd1f5abd753363430ebe714c4598169d3a92510e15ea9552a02f8a7` |
-| 15 | `theorem` | [not_forall_coeff_cyclotomic_neg_one_zero_one](../../../../CommutativeAlgebra/Cyclotomic105.lean/declarations/not-forall-coeff-cyclotomic-neg-one-zero-one.md) | 99 | `result-track:c202b0780364776d8d826dbffc4364d05e049deae45a748f5b4e8ea7fee08e8e` |
+| 1 | `instance` | [Nat.fact_prime_five](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cyclotomic105.lean/declarations/nat-fact-prime-five.md) | 26 | `declaration-track:f2d423ee1f17eeaa029a922bc1c864db3f8a4db453beac77fcd7bf16f1cc7e90` |
+| 2 | `instance` | [Nat.fact_prime_seven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cyclotomic105.lean/declarations/nat-fact-prime-seven.md) | 29 | `declaration-track:44642d6693ff625b55002f1e77822d72a4874c84bb628aafdfe33770ae4c54a3` |
+| 3 | `theorem` | [properDivisors_15](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cyclotomic105.lean/declarations/properdivisors-15.md) | 32 | `result-track:3ec3ecf43dddc74a91b8928d39ca3105f6a2286498dee3ecc2924ea6f2629c0b` |
+| 4 | `theorem` | [properDivisors_21](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cyclotomic105.lean/declarations/properdivisors-21.md) | 35 | `result-track:37f186df7fc57d50d83c2e3735795c95097c213cac7513d5c7b12c41693b507c` |
+| 5 | `theorem` | [properDivisors_35](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cyclotomic105.lean/declarations/properdivisors-35.md) | 38 | `result-track:6441def72520354dfee9832db8153d228b70e8020e90f40df687914523343b42` |
+| 6 | `theorem` | [properDivisors_105](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cyclotomic105.lean/declarations/properdivisors-105.md) | 41 | `result-track:29a42068101a90a8ccf6e66fc0ea300b02aee2f633c80b7afb1779edff906ac1` |
+| 7 | `theorem` | [cyclotomic_3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cyclotomic105.lean/declarations/cyclotomic-3.md) | 48 | `result-track:5aea124bc0853d8a11cd3303a9ef81be18a880a02c31416b3de31fe61ff866a6` |
+| 8 | `theorem` | [cyclotomic_5](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cyclotomic105.lean/declarations/cyclotomic-5.md) | 51 | `result-track:11a1882e5111f40ce24154458f29f1aee0c33ffed1df2e6e9e70ad9ef4017cf5` |
+| 9 | `theorem` | [cyclotomic_7](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cyclotomic105.lean/declarations/cyclotomic-7.md) | 54 | `result-track:483c84e95123ae9b21e44299e9454495d1ee2705af9ad7111516f37fae965284` |
+| 10 | `theorem` | [cyclotomic_15](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cyclotomic105.lean/declarations/cyclotomic-15.md) | 57 | `result-track:33e404e25e66a59c340e3b25abdcdf2dd70011cbb7eaceb1327e851829b35a91` |
+| 11 | `theorem` | [cyclotomic_21](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cyclotomic105.lean/declarations/cyclotomic-21.md) | 64 | `result-track:69216aff8f9a531772f14ec29e390bbac9b467499d707e1c9d3f4ba39eca9130` |
+| 12 | `theorem` | [cyclotomic_35](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cyclotomic105.lean/declarations/cyclotomic-35.md) | 72 | `result-track:26c08e001699a68e80cab908cb5d91ce33aadfaf3f2f26bbdcb29b2d0d920973` |
+| 13 | `theorem` | [cyclotomic_105](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cyclotomic105.lean/declarations/cyclotomic-105.md) | 82 | `result-track:7af57ebc946275e77d283d3075fc50983388193bb9b82d6ed4bc3bca952b2bad` |
+| 14 | `theorem` | [coeff_cyclotomic_105](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cyclotomic105.lean/declarations/coeff-cyclotomic-105.md) | 96 | `result-track:355d3c4fddd1f5abd753363430ebe714c4598169d3a92510e15ea9552a02f8a7` |
+| 15 | `theorem` | [not_forall_coeff_cyclotomic_neg_one_zero_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cyclotomic105.lean/declarations/not-forall-coeff-cyclotomic-neg-one-zero-one.md) | 99 | `result-track:c202b0780364776d8d826dbffc4364d05e049deae45a748f5b4e8ea7fee08e8e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

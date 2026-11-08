@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mul_inverse_rev'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/mul-inverse-rev-source-edition-2.md) | 26 | `result-track:b2d5e93f67bc7025e2c2f4843d60eafe8ddc797e7960c9086f68b50012afc684` |
-| 2 | `theorem` | [mul_inverse_rev](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/mul-inverse-rev.md) | 36 | `result-track:0110c0f8d43fb4fe0fa18eee464dbdfa515147e35c448cb3a1abb7abf59d5cb6` |
-| 3 | `theorem` | [Commute.ring_inverse_ring_inverse](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/commute-ring-inverse-ring-inverse.md) | 43 | `result-track:7ffae318370ee04a8a63824d516afc24d01f689d13fcd160754f3286dd1249e0` |
-| 4 | `theorem` | [zero_right](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/zero-right.md) | 52 | `result-track:7713c9f6fbf4df497f06ae4c39a3e1aeff639fa06543c8e8836e7dc04bb6022f` |
-| 5 | `theorem` | [zero_left](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/zero-left.md) | 57 | `result-track:ddb8570f62a3ea5f808664026a27ba87b76ec86611433bc94ffe37d9632ca683` |
-| 6 | `theorem` | [inv_left_iff₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/inv-left-iff.md) | 64 | `result-track:4362fd052b979053078c8f5e4f02c592e12ee58f943bc3ef801904dfcc1dd3ee` |
-| 7 | `theorem` | [inv_left₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/inv-left.md) | 68 | `result-track:7522450032c5edd95907cb55fe466b6c9f75a6f2d801672d5c92c476419bdd47` |
-| 8 | `theorem` | [inv_right_iff₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/inv-right-iff.md) | 73 | `result-track:5e3ae4b810ca36985c953b2ed335def24049ef34aae8f61390c2563ff49c1edf` |
-| 9 | `theorem` | [inv_right₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/inv-right.md) | 77 | `result-track:6e100c9e952b0f2ced35b09bd4241b40734c0a59c3090820ae57620b311b5178` |
-| 10 | `theorem` | [div_right](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/div-right.md) | 82 | `result-track:83fd0597be459d6b9181b5eee5c328da76ba7062b189312d897d8a44213f845f` |
-| 11 | `theorem` | [div_left](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/div-left.md) | 87 | `result-track:3a60fddf3845b017d272c9b40c6114c8f08eb3bf583e8613ec65aa83aeb515aa` |
+| 1 | `theorem` | [mul_inverse_rev'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/mul-inverse-rev-source-edition-2.md) | 26 | `result-track:b2d5e93f67bc7025e2c2f4843d60eafe8ddc797e7960c9086f68b50012afc684` |
+| 2 | `theorem` | [mul_inverse_rev](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/mul-inverse-rev.md) | 36 | `result-track:0110c0f8d43fb4fe0fa18eee464dbdfa515147e35c448cb3a1abb7abf59d5cb6` |
+| 3 | `theorem` | [Commute.ring_inverse_ring_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/commute-ring-inverse-ring-inverse.md) | 43 | `result-track:7ffae318370ee04a8a63824d516afc24d01f689d13fcd160754f3286dd1249e0` |
+| 4 | `theorem` | [zero_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/zero-right.md) | 52 | `result-track:7713c9f6fbf4df497f06ae4c39a3e1aeff639fa06543c8e8836e7dc04bb6022f` |
+| 5 | `theorem` | [zero_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/zero-left.md) | 57 | `result-track:ddb8570f62a3ea5f808664026a27ba87b76ec86611433bc94ffe37d9632ca683` |
+| 6 | `theorem` | [inv_left_iff₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/inv-left-iff.md) | 64 | `result-track:4362fd052b979053078c8f5e4f02c592e12ee58f943bc3ef801904dfcc1dd3ee` |
+| 7 | `theorem` | [inv_left₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/inv-left.md) | 68 | `result-track:7522450032c5edd95907cb55fe466b6c9f75a6f2d801672d5c92c476419bdd47` |
+| 8 | `theorem` | [inv_right_iff₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/inv-right-iff.md) | 73 | `result-track:5e3ae4b810ca36985c953b2ed335def24049ef34aae8f61390c2563ff49c1edf` |
+| 9 | `theorem` | [inv_right₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/inv-right.md) | 77 | `result-track:6e100c9e952b0f2ced35b09bd4241b40734c0a59c3090820ae57620b311b5178` |
+| 10 | `theorem` | [div_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/div-right.md) | 82 | `result-track:83fd0597be459d6b9181b5eee5c328da76ba7062b189312d897d8a44213f845f` |
+| 11 | `theorem` | [div_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCommute.lean/declarations/div-left.md) | 87 | `result-track:3a60fddf3845b017d272c9b40c6114c8f08eb3bf583e8613ec65aa83aeb515aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

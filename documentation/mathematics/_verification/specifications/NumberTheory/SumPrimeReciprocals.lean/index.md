@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/SumPrimeReciprocals.lean/index.md) · [Full source](../../../../NumberTheory/SumPrimeReciprocals.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumPrimeReciprocals.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumPrimeReciprocals.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Nat.roughNumbersUpTo_card_le'](../../../../NumberTheory/SumPrimeReciprocals.lean/declarations/nat-roughnumbersupto-card-le.md) | 33 | `result-track:311a45c0fe96ec34c8421600f0b21e0f3cb5331970f7c59144b01ad36fee2004` |
-| 2 | `lemma` | [one_half_le_sum_primes_ge_one_div](../../../../NumberTheory/SumPrimeReciprocals.lean/declarations/one-half-le-sum-primes-ge-one-div.md) | 41 | `result-track:5d9c7797b926734caf60c37875bf60e93244441218d1440a3a3a07b611357d1a` |
-| 3 | `theorem` | [not_summable_one_div_on_primes](../../../../NumberTheory/SumPrimeReciprocals.lean/declarations/not-summable-one-div-on-primes.md) | 65 | `result-track:0a6695954f62b27906473f27758675c5cd43068b76d8e0c3702d32b26795255f` |
-| 4 | `theorem` | [Nat.Primes.not_summable_one_div](../../../../NumberTheory/SumPrimeReciprocals.lean/declarations/nat-primes-not-summable-one-div.md) | 83 | `result-track:0646fd17942aea51df3830a6b91bfe80f3c1beaf9a0f2e8fe21a43c0dc29b70a` |
-| 5 | `theorem` | [Nat.Primes.summable_rpow](../../../../NumberTheory/SumPrimeReciprocals.lean/declarations/nat-primes-summable-rpow.md) | 87 | `result-track:69fd6c0e52c462c0a029ffe2f7c162d4d1a21662d07e202b5c9b3e00d4f6addc` |
+| 1 | `lemma` | [Nat.roughNumbersUpTo_card_le'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumPrimeReciprocals.lean/declarations/nat-roughnumbersupto-card-le.md) | 33 | `result-track:311a45c0fe96ec34c8421600f0b21e0f3cb5331970f7c59144b01ad36fee2004` |
+| 2 | `lemma` | [one_half_le_sum_primes_ge_one_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumPrimeReciprocals.lean/declarations/one-half-le-sum-primes-ge-one-div.md) | 41 | `result-track:5d9c7797b926734caf60c37875bf60e93244441218d1440a3a3a07b611357d1a` |
+| 3 | `theorem` | [not_summable_one_div_on_primes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumPrimeReciprocals.lean/declarations/not-summable-one-div-on-primes.md) | 65 | `result-track:0a6695954f62b27906473f27758675c5cd43068b76d8e0c3702d32b26795255f` |
+| 4 | `theorem` | [Nat.Primes.not_summable_one_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumPrimeReciprocals.lean/declarations/nat-primes-not-summable-one-div.md) | 83 | `result-track:0646fd17942aea51df3830a6b91bfe80f3c1beaf9a0f2e8fe21a43c0dc29b70a` |
+| 5 | `theorem` | [Nat.Primes.summable_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SumPrimeReciprocals.lean/declarations/nat-primes-summable-rpow.md) | 87 | `result-track:69fd6c0e52c462c0a029ffe2f7c162d4d1a21662d07e202b5c9b3e00d4f6addc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

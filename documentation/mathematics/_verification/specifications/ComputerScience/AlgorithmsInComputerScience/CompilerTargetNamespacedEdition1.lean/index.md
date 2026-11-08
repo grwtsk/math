@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CompilerTargetNamespacedEdition1.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CompilerTargetNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompilerTargetNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompilerTargetNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompilerTarget](../../../../../ComputerScience/AlgorithmsInComputerScience/CompilerTargetNamespacedEdition1.lean/declarations/compilertarget.md) | 25 | `declaration-track:5ebb233b4ca2fad1e9028eb19eb525e4a287079ffe28abff56c478badf70f528` |
-| 2 | `def` | [maximumSupportedResolution](../../../../../ComputerScience/AlgorithmsInComputerScience/CompilerTargetNamespacedEdition1.lean/declarations/maximumsupportedresolution.md) | 35 | `declaration-track:ae104db77497dc161821feea84a21cd8ac9e811f74dd8b0603aa1e1ed7036417` |
-| 3 | `theorem` | [maximumSupportedResolution_value](../../../../../ComputerScience/AlgorithmsInComputerScience/CompilerTargetNamespacedEdition1.lean/declarations/maximumsupportedresolution-value.md) | 41 | `result-track:ab85e3558faf22f0ff4957c26ea6f4563fa701ed18c10979d5305f0566bbd4a7` |
+| 1 | `structure` | [CompilerTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompilerTargetNamespacedEdition1.lean/declarations/compilertarget.md) | 25 | `declaration-track:5ebb233b4ca2fad1e9028eb19eb525e4a287079ffe28abff56c478badf70f528` |
+| 2 | `def` | [maximumSupportedResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompilerTargetNamespacedEdition1.lean/declarations/maximumsupportedresolution.md) | 35 | `declaration-track:ae104db77497dc161821feea84a21cd8ac9e811f74dd8b0603aa1e1ed7036417` |
+| 3 | `theorem` | [maximumSupportedResolution_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompilerTargetNamespacedEdition1.lean/declarations/maximumsupportedresolution-value.md) | 41 | `result-track:ab85e3558faf22f0ff4957c26ea6f4563fa701ed18c10979d5305f0566bbd4a7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

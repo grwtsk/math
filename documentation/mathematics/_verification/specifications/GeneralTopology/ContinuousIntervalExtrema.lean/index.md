@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ContinuousIntervalExtrema.lean/index.md) · [Full source](../../../../GeneralTopology/ContinuousIntervalExtrema.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousIntervalExtrema.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousIntervalExtrema.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `AnalyticNumber.Mathlib.Certificate` — import line 15; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Topology.GeneralTopology.Compactness.RealIntervals.Variant225c3280.ClosedIntervalCompactness`](../../../../GeneralTopology/ClosedIntervalCompactness.lean/index.md) — import line 17; pinned internal source present.
+- [`GRWTSK.Topology.GeneralTopology.Compactness.RealIntervals.Variant225c3280.ClosedIntervalCompactness`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ClosedIntervalCompactness.lean/index.md) — import line 17; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [continuousOn_Icc_attains_max](../../../../GeneralTopology/ContinuousIntervalExtrema.lean/declarations/continuouson-icc-attains-max.md) | 38 | `result-track:02023d393b2cfff58fa4fd26fe8718b01620284e9c5c707276dc6bd837a6c9ec` |
-| 2 | `theorem` | [continuousOn_Icc_attains_min](../../../../GeneralTopology/ContinuousIntervalExtrema.lean/declarations/continuouson-icc-attains-min.md) | 50 | `result-track:a4e61e0e0c0b8b1eee78f50eafa4ebfaf112bc65f41c23de7075b7acd14e9920` |
+| 1 | `theorem` | [continuousOn_Icc_attains_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousIntervalExtrema.lean/declarations/continuouson-icc-attains-max.md) | 38 | `result-track:02023d393b2cfff58fa4fd26fe8718b01620284e9c5c707276dc6bd837a6c9ec` |
+| 2 | `theorem` | [continuousOn_Icc_attains_min](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousIntervalExtrema.lean/declarations/continuouson-icc-attains-min.md) | 50 | `result-track:a4e61e0e0c0b8b1eee78f50eafa4ebfaf112bc65f41c23de7075b7acd14e9920` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

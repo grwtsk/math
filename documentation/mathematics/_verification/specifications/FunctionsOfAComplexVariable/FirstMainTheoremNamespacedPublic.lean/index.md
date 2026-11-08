@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/FirstMainTheoremNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/FirstMainTheoremNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FirstMainTheoremNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FirstMainTheoremNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [characteristic_sub_characteristic_inv](../../../../FunctionsOfAComplexVariable/FirstMainTheoremNamespacedPublic.lean/declarations/characteristic-sub-characteristic-inv.md) | 55 | `result-track:18b3e989c46efa6c47b1645fc77c0bfbe7c7f3c3c4061d7bdfa1c27c065c2020` |
-| 2 | `lemma` | [characteristic_sub_characteristic_inv_of_ne_zero](../../../../FunctionsOfAComplexVariable/FirstMainTheoremNamespacedPublic.lean/declarations/characteristic-sub-characteristic-inv-of-ne-zero.md) | 73 | `result-track:6c969343b0206fc8631c6506377e0c7f99583a3e653e56e59135c60909e17139` |
-| 3 | `lemma` | [characteristic_sub_characteristic_inv_at_zero](../../../../FunctionsOfAComplexVariable/FirstMainTheoremNamespacedPublic.lean/declarations/characteristic-sub-characteristic-inv-at-zero.md) | 91 | `result-track:d66755e5fd06e40647152880d43c8cd933cb77c482eec4637157ff70baaaf8e2` |
-| 4 | `theorem` | [characteristic_sub_characteristic_inv_le](../../../../FunctionsOfAComplexVariable/FirstMainTheoremNamespacedPublic.lean/declarations/characteristic-sub-characteristic-inv-le.md) | 105 | `result-track:c13f06210b3c46dc7fd6afddccf9a79591b9a8f43dad7aa853b9fdf07d8b2a69` |
-| 5 | `theorem` | [isBigO_characteristic_sub_characteristic_inv](../../../../FunctionsOfAComplexVariable/FirstMainTheoremNamespacedPublic.lean/declarations/isbigo-characteristic-sub-characteristic-inv.md) | 117 | `result-track:05feb09b968b33eefb19a22d3cccc57d2cff8bc645e5ff32db3dc8cd20788935` |
-| 6 | `theorem` | [abs_characteristic_sub_characteristic_shift_le](../../../../FunctionsOfAComplexVariable/FirstMainTheoremNamespacedPublic.lean/declarations/abs-characteristic-sub-characteristic-shift-le.md) | 139 | `result-track:4ad0117708fe1c03de50e29f41b2b960a151fab84d1a2db48a5bed4516adb10d` |
-| 7 | `theorem` | [isBigO_characteristic_sub_characteristic_shift](../../../../FunctionsOfAComplexVariable/FirstMainTheoremNamespacedPublic.lean/declarations/isbigo-characteristic-sub-characteristic-shift.md) | 168 | `result-track:cfcbf064e56631dfa1e22a2414966ce8686531f18047868173318bb865c8042d` |
+| 1 | `lemma` | [characteristic_sub_characteristic_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FirstMainTheoremNamespacedPublic.lean/declarations/characteristic-sub-characteristic-inv.md) | 55 | `result-track:18b3e989c46efa6c47b1645fc77c0bfbe7c7f3c3c4061d7bdfa1c27c065c2020` |
+| 2 | `lemma` | [characteristic_sub_characteristic_inv_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FirstMainTheoremNamespacedPublic.lean/declarations/characteristic-sub-characteristic-inv-of-ne-zero.md) | 73 | `result-track:6c969343b0206fc8631c6506377e0c7f99583a3e653e56e59135c60909e17139` |
+| 3 | `lemma` | [characteristic_sub_characteristic_inv_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FirstMainTheoremNamespacedPublic.lean/declarations/characteristic-sub-characteristic-inv-at-zero.md) | 91 | `result-track:d66755e5fd06e40647152880d43c8cd933cb77c482eec4637157ff70baaaf8e2` |
+| 4 | `theorem` | [characteristic_sub_characteristic_inv_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FirstMainTheoremNamespacedPublic.lean/declarations/characteristic-sub-characteristic-inv-le.md) | 105 | `result-track:c13f06210b3c46dc7fd6afddccf9a79591b9a8f43dad7aa853b9fdf07d8b2a69` |
+| 5 | `theorem` | [isBigO_characteristic_sub_characteristic_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FirstMainTheoremNamespacedPublic.lean/declarations/isbigo-characteristic-sub-characteristic-inv.md) | 117 | `result-track:05feb09b968b33eefb19a22d3cccc57d2cff8bc645e5ff32db3dc8cd20788935` |
+| 6 | `theorem` | [abs_characteristic_sub_characteristic_shift_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FirstMainTheoremNamespacedPublic.lean/declarations/abs-characteristic-sub-characteristic-shift-le.md) | 139 | `result-track:4ad0117708fe1c03de50e29f41b2b960a151fab84d1a2db48a5bed4516adb10d` |
+| 7 | `theorem` | [isBigO_characteristic_sub_characteristic_shift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FirstMainTheoremNamespacedPublic.lean/declarations/isbigo-characteristic-sub-characteristic-shift.md) | 168 | `result-track:cfcbf064e56631dfa1e22a2414966ce8686531f18047868173318bb865c8042d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

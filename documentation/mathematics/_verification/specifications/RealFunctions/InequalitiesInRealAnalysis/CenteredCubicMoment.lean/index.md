@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../RealFunctions/InequalitiesInRealAnalysis/CenteredCubicMoment.lean/index.md) · [Full source](../../../../../RealFunctions/InequalitiesInRealAnalysis/CenteredCubicMoment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/CenteredCubicMoment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/CenteredCubicMoment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,12 +63,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [residual](../../../../../RealFunctions/InequalitiesInRealAnalysis/CenteredCubicMoment.lean/declarations/residual.md) | 22 | `declaration-track:f5b555b265235f83f1ebea3b5c398603ee42bd4d29d3feb4c2957f883e3e514d` |
-| 2 | `theorem` | [pointwise_identity](../../../../../RealFunctions/InequalitiesInRealAnalysis/CenteredCubicMoment.lean/declarations/pointwise-identity.md) | 25 | `result-track:e0c082818832602ce1bcfb5cfb0e5b9c93b40f2af1f5a69e86fcafce5b2ed747` |
-| 3 | `theorem` | [residual_identity](../../../../../RealFunctions/InequalitiesInRealAnalysis/CenteredCubicMoment.lean/declarations/residual-identity.md) | 29 | `result-track:c5d7c396760da0efb4143011c4895ec24096ca1db108a36fd6ddf090c4e9a26a` |
-| 4 | `theorem` | [residual_nonnegative](../../../../../RealFunctions/InequalitiesInRealAnalysis/CenteredCubicMoment.lean/declarations/residual-nonnegative.md) | 39 | `result-track:c892078b88571fe7e61bf53804bcdb2c1a6d5a846b301b6b66c44deef9ec9f05` |
-| 5 | `theorem` | [coordinate_contribution_le](../../../../../RealFunctions/InequalitiesInRealAnalysis/CenteredCubicMoment.lean/declarations/coordinate-contribution-le.md) | 45 | `result-track:282e3c2cbd40eca4155284421cb320aae90d4df4f0c977a6f65ea6287cedec1e` |
-| 6 | `theorem` | [coordinate_lt_of_residual](../../../../../RealFunctions/InequalitiesInRealAnalysis/CenteredCubicMoment.lean/declarations/coordinate-lt-of-residual.md) | 55 | `result-track:3cd5a911e3d0c057ae9e3200e21f9d1a19bdbfa52b6910f50e548c262eac48bf` |
+| 1 | `def` | [residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/CenteredCubicMoment.lean/declarations/residual.md) | 22 | `declaration-track:f5b555b265235f83f1ebea3b5c398603ee42bd4d29d3feb4c2957f883e3e514d` |
+| 2 | `theorem` | [pointwise_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/CenteredCubicMoment.lean/declarations/pointwise-identity.md) | 25 | `result-track:e0c082818832602ce1bcfb5cfb0e5b9c93b40f2af1f5a69e86fcafce5b2ed747` |
+| 3 | `theorem` | [residual_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/CenteredCubicMoment.lean/declarations/residual-identity.md) | 29 | `result-track:c5d7c396760da0efb4143011c4895ec24096ca1db108a36fd6ddf090c4e9a26a` |
+| 4 | `theorem` | [residual_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/CenteredCubicMoment.lean/declarations/residual-nonnegative.md) | 39 | `result-track:c892078b88571fe7e61bf53804bcdb2c1a6d5a846b301b6b66c44deef9ec9f05` |
+| 5 | `theorem` | [coordinate_contribution_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/CenteredCubicMoment.lean/declarations/coordinate-contribution-le.md) | 45 | `result-track:282e3c2cbd40eca4155284421cb320aae90d4df4f0c977a6f65ea6287cedec1e` |
+| 6 | `theorem` | [coordinate_lt_of_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/CenteredCubicMoment.lean/declarations/coordinate-lt-of-residual.md) | 55 | `result-track:3cd5a911e3d0c057ae9e3200e21f9d1a19bdbfa52b6910f50e548c262eac48bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

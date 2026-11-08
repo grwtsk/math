@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BoundaryBoundaryDecision.lean/index.md) · [Full source](../../../../Combinatorics/BoundaryBoundaryDecision.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryBoundaryDecision.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryBoundaryDecision.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [BoundaryDecision](../../../../Combinatorics/BoundaryBoundaryDecision.lean/declarations/boundarydecision.md) | 9 | `declaration-track:98fa5145f0eee6f96abb5f58da55968df11deb8be72c11f5cd4782fd105a96a0` |
-| 2 | `inductive` | [MissingFieldPolicy](../../../../Combinatorics/BoundaryBoundaryDecision.lean/declarations/missingfieldpolicy.md) | 15 | `declaration-track:d949afcfd2018648e8df5fe23da920c4ddd39a952eddddc457653536a12ee103` |
-| 3 | `inductive` | [TiePolicy](../../../../Combinatorics/BoundaryBoundaryDecision.lean/declarations/tiepolicy.md) | 22 | `declaration-track:4c99cecd51af58372f1852b970a867e80d322fead7db263570ae196bdd470199` |
-| 4 | `structure` | [BoundaryRule](../../../../Combinatorics/BoundaryBoundaryDecision.lean/declarations/boundaryrule.md) | 28 | `declaration-track:85e92d7eaf8b6801afbbf89a346e451425bc9ec495e8056fdd483d28146288b7` |
-| 5 | `structure` | [BoundaryCertificate](../../../../Combinatorics/BoundaryBoundaryDecision.lean/declarations/boundarycertificate.md) | 38 | `declaration-track:61f0b63728adeee20756460827a1993051e54628e43f2e5f605649540ca2866b` |
-| 6 | `structure` | [MetadataPerturbation](../../../../Combinatorics/BoundaryBoundaryDecision.lean/declarations/metadataperturbation.md) | 53 | `declaration-track:149971ad836ccf2d104d542b070cd02c69c50d41003c1e483e8622a3fbdbe1c6` |
-| 7 | `structure` | [BoundaryStabilityCertificate](../../../../Combinatorics/BoundaryBoundaryDecision.lean/declarations/boundarystabilitycertificate.md) | 64 | `declaration-track:a100f46f4562a0407f9acc60a86c5b6232601f86dd5e5b0f93429dd3aa3a77a9` |
-| 8 | `structure` | [ThresholdMarginCertificate](../../../../Combinatorics/BoundaryBoundaryDecision.lean/declarations/thresholdmargincertificate.md) | 90 | `declaration-track:b5c7c455a1226cb040271efec1db545521a46ccb4bb979c50816d2e759bb53d3` |
-| 9 | `theorem` | [boundary_decision_rule_correct](../../../../Combinatorics/BoundaryBoundaryDecision.lean/declarations/boundary-decision-rule-correct.md) | 106 | `result-track:841f038d4e08d53b484e28c5dee94364a5d499eadd8eaa75bc99bdf090d0393b` |
+| 1 | `inductive` | [BoundaryDecision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryBoundaryDecision.lean/declarations/boundarydecision.md) | 9 | `declaration-track:98fa5145f0eee6f96abb5f58da55968df11deb8be72c11f5cd4782fd105a96a0` |
+| 2 | `inductive` | [MissingFieldPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryBoundaryDecision.lean/declarations/missingfieldpolicy.md) | 15 | `declaration-track:d949afcfd2018648e8df5fe23da920c4ddd39a952eddddc457653536a12ee103` |
+| 3 | `inductive` | [TiePolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryBoundaryDecision.lean/declarations/tiepolicy.md) | 22 | `declaration-track:4c99cecd51af58372f1852b970a867e80d322fead7db263570ae196bdd470199` |
+| 4 | `structure` | [BoundaryRule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryBoundaryDecision.lean/declarations/boundaryrule.md) | 28 | `declaration-track:85e92d7eaf8b6801afbbf89a346e451425bc9ec495e8056fdd483d28146288b7` |
+| 5 | `structure` | [BoundaryCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryBoundaryDecision.lean/declarations/boundarycertificate.md) | 38 | `declaration-track:61f0b63728adeee20756460827a1993051e54628e43f2e5f605649540ca2866b` |
+| 6 | `structure` | [MetadataPerturbation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryBoundaryDecision.lean/declarations/metadataperturbation.md) | 53 | `declaration-track:149971ad836ccf2d104d542b070cd02c69c50d41003c1e483e8622a3fbdbe1c6` |
+| 7 | `structure` | [BoundaryStabilityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryBoundaryDecision.lean/declarations/boundarystabilitycertificate.md) | 64 | `declaration-track:a100f46f4562a0407f9acc60a86c5b6232601f86dd5e5b0f93429dd3aa3a77a9` |
+| 8 | `structure` | [ThresholdMarginCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryBoundaryDecision.lean/declarations/thresholdmargincertificate.md) | 90 | `declaration-track:b5c7c455a1226cb040271efec1db545521a46ccb4bb979c50816d2e759bb53d3` |
+| 9 | `theorem` | [boundary_decision_rule_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryBoundaryDecision.lean/declarations/boundary-decision-rule-correct.md) | 106 | `result-track:841f038d4e08d53b484e28c5dee94364a5d499eadd8eaa75bc99bdf090d0393b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixInvariantBasisNumberNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixInvariantBasisNumberNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixInvariantBasisNumberNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixInvariantBasisNumberNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Matrix.square_of_invertible](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixInvariantBasisNumberNamespaced.lean/declarations/square-of-invertible.md) | 27 | `result-track:a35cc6c49e611e63bc928fb5f3fc64aeec53c1825a830da9adf6ac809d7c5281` |
-| 2 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixInvariantBasisNumberNamespaced.lean/declarations/anonymous-instance.md) | 36 | `declaration-track:963efff1b3530c623418f39bd6f52d84059730429b4eac6a57aa6ec76331e723` |
+| 1 | `theorem` | [Matrix.square_of_invertible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixInvariantBasisNumberNamespaced.lean/declarations/square-of-invertible.md) | 27 | `result-track:a35cc6c49e611e63bc928fb5f3fc64aeec53c1825a830da9adf6ac809d7c5281` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixInvariantBasisNumberNamespaced.lean/declarations/anonymous-instance.md) | 36 | `declaration-track:963efff1b3530c623418f39bd6f52d84059730429b4eac6a57aa6ec76331e723` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

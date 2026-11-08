@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DirectedEulerWalkCyclicIndex.lean/index.md) · [Full source](../../../../Combinatorics/DirectedEulerWalkCyclicIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerWalkCyclicIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerWalkCyclicIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.DirectedEulerSplicing`](../../../../Combinatorics/DirectedEulerSplicing.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Combinatorics.DirectedEulerSplicing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerSplicing.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tail_getElem_zero](../../../../Combinatorics/DirectedEulerWalkCyclicIndex.lean/declarations/tail-getelem-zero.md) | 17 | `result-track:f9f49184c8ebcadc04a43c68664c6a925c46f1958c00e83a08db198ea85f6285` |
-| 2 | `theorem` | [endpoints_eq_of_length_zero](../../../../Combinatorics/DirectedEulerWalkCyclicIndex.lean/declarations/endpoints-eq-of-length-zero.md) | 24 | `result-track:4cfe2d00bc393b23b7b402ca5223bee1b6d561117b4f8519b58dd9259adc6bbd` |
-| 3 | `theorem` | [head_getElem_last](../../../../Combinatorics/DirectedEulerWalkCyclicIndex.lean/declarations/head-getelem-last.md) | 32 | `result-track:a58ea7f479d0d9479561d586a8531d77174ea12e76f15caa39411b1c2a067d9a` |
-| 4 | `theorem` | [head_getElem_succ](../../../../Combinatorics/DirectedEulerWalkCyclicIndex.lean/declarations/head-getelem-succ.md) | 54 | `result-track:4eba639a324b0ce1f1e41312eca5e2bdb33ec92d94a663471f4f0b139cdfe313` |
-| 5 | `theorem` | [closed_get_cyclic](../../../../Combinatorics/DirectedEulerWalkCyclicIndex.lean/declarations/closed-get-cyclic.md) | 75 | `result-track:9d19b10d29be8f863f8093699f333f1733553a03ada00c1d98fc0333dd457298` |
+| 1 | `theorem` | [tail_getElem_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerWalkCyclicIndex.lean/declarations/tail-getelem-zero.md) | 17 | `result-track:f9f49184c8ebcadc04a43c68664c6a925c46f1958c00e83a08db198ea85f6285` |
+| 2 | `theorem` | [endpoints_eq_of_length_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerWalkCyclicIndex.lean/declarations/endpoints-eq-of-length-zero.md) | 24 | `result-track:4cfe2d00bc393b23b7b402ca5223bee1b6d561117b4f8519b58dd9259adc6bbd` |
+| 3 | `theorem` | [head_getElem_last](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerWalkCyclicIndex.lean/declarations/head-getelem-last.md) | 32 | `result-track:a58ea7f479d0d9479561d586a8531d77174ea12e76f15caa39411b1c2a067d9a` |
+| 4 | `theorem` | [head_getElem_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerWalkCyclicIndex.lean/declarations/head-getelem-succ.md) | 54 | `result-track:4eba639a324b0ce1f1e41312eca5e2bdb33ec92d94a663471f4f0b139cdfe313` |
+| 5 | `theorem` | [closed_get_cyclic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerWalkCyclicIndex.lean/declarations/closed-get-cyclic.md) | 75 | `result-track:9d19b10d29be8f863f8093699f333f1733553a03ada00c1d98fc0333dd457298` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

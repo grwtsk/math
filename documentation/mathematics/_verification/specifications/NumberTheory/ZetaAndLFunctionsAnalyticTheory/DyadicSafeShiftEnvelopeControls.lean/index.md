@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftEnvelopeControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftEnvelopeControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftEnvelopeControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftEnvelopeControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicSafeShiftEnvelope`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftEnvelope.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicSafeShiftEnvelope`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftEnvelope.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [plus_block_has_source_envelope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftEnvelopeControls.lean/declarations/plus-block-has-source-envelope.md) | 14 | `result-track:b53e288bf4562fab8326742849e2ac0994ccc44da528f62221170e520445a960` |
-| 2 | `theorem` | [minus_block_has_source_envelope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftEnvelopeControls.lean/declarations/minus-block-has-source-envelope.md) | 18 | `result-track:77da720b9fc964eff188a7f186c1a2a0fade2cb0ebfd16f6d4b149ab0e8a564b` |
+| 1 | `theorem` | [plus_block_has_source_envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftEnvelopeControls.lean/declarations/plus-block-has-source-envelope.md) | 14 | `result-track:b53e288bf4562fab8326742849e2ac0994ccc44da528f62221170e520445a960` |
+| 2 | `theorem` | [minus_block_has_source_envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftEnvelopeControls.lean/declarations/minus-block-has-source-envelope.md) | 18 | `result-track:77da720b9fc964eff188a7f186c1a2a0fade2cb0ebfd16f6d4b149ab0e8a564b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

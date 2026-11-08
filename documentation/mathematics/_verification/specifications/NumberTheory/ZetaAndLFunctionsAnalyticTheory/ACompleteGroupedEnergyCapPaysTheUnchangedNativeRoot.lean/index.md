@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ACompleteGroupedEnergyCapPaysTheUnchangedNativeRoot.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ACompleteGroupedEnergyCapPaysTheUnchangedNativeRoot.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ACompleteGroupedEnergyCapPaysTheUnchangedNativeRoot.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ACompleteGroupedEnergyCapPaysTheUnchangedNativeRoot.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [grouped_energy_retains_root](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ACompleteGroupedEnergyCapPaysTheUnchangedNativeRoot.lean/declarations/grouped-energy-retains-root.md) | 23 | `result-track:56e48a5efcafee439c48015d907f1434a0650824888b7cd31e45502979c2c150` |
-| 2 | `theorem` | [actual_compressed_energy_pays_primitive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ACompleteGroupedEnergyCapPaysTheUnchangedNativeRoot.lean/declarations/actual-compressed-energy-pays-primitive.md) | 34 | `result-track:9d70a5ee7b6a262e21416a838bd1ba0a58608d9941ef480c212601f456cd4d55` |
-| 3 | `theorem` | [uniform_grouped_cap_bounds_every_real_prefix](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ACompleteGroupedEnergyCapPaysTheUnchangedNativeRoot.lean/declarations/uniform-grouped-cap-bounds-every-real-prefix.md) | 67 | `result-track:90f717819a0f6136aa48c7239bb6b5e7287e8cf79ba425153a58facad18f903e` |
+| 1 | `theorem` | [grouped_energy_retains_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ACompleteGroupedEnergyCapPaysTheUnchangedNativeRoot.lean/declarations/grouped-energy-retains-root.md) | 23 | `result-track:56e48a5efcafee439c48015d907f1434a0650824888b7cd31e45502979c2c150` |
+| 2 | `theorem` | [actual_compressed_energy_pays_primitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ACompleteGroupedEnergyCapPaysTheUnchangedNativeRoot.lean/declarations/actual-compressed-energy-pays-primitive.md) | 34 | `result-track:9d70a5ee7b6a262e21416a838bd1ba0a58608d9941ef480c212601f456cd4d55` |
+| 3 | `theorem` | [uniform_grouped_cap_bounds_every_real_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ACompleteGroupedEnergyCapPaysTheUnchangedNativeRoot.lean/declarations/uniform-grouped-cap-bounds-every-real-prefix.md) | 67 | `result-track:90f717819a0f6136aa48c7239bb6b5e7287e8cf79ba425153a58facad18f903e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

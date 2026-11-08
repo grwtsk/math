@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AdjoinFieldLiftOfSplits.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AdjoinFieldLiftOfSplits.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinFieldLiftOfSplits.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinFieldLiftOfSplits.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AlgEquiv.adjoinSingletonEquivAdjoinRootMinpoly](../../../../CommutativeAlgebra/AdjoinFieldLiftOfSplits.lean/declarations/algequiv-adjoinsingletonequivadjoinrootminpoly.md) | 35 | `declaration-track:2ad2f5cb6086ebfca080ec7edffaf6484de0e0b630f4290ae3cb55cfb18d358e` |
-| 2 | `theorem` | [lift_of_splits](../../../../CommutativeAlgebra/AdjoinFieldLiftOfSplits.lean/declarations/lift-of-splits.md) | 63 | `result-track:ec8c2b39446bdd75a3c89312656ea999454c7596edd96f63a3fb6a15fcc27d80` |
+| 1 | `def` | [AlgEquiv.adjoinSingletonEquivAdjoinRootMinpoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinFieldLiftOfSplits.lean/declarations/algequiv-adjoinsingletonequivadjoinrootminpoly.md) | 35 | `declaration-track:2ad2f5cb6086ebfca080ec7edffaf6484de0e0b630f4290ae3cb55cfb18d358e` |
+| 2 | `theorem` | [lift_of_splits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinFieldLiftOfSplits.lean/declarations/lift-of-splits.md) | 63 | `result-track:ec8c2b39446bdd75a3c89312656ea999454c7596edd96f63a3fb6a15fcc27d80` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/ShortIntervalExceptional.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/ShortIntervalExceptional.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ShortIntervalExceptional.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ShortIntervalExceptional.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.DyadicAnatomicPublic`](../../../../../NumberTheory/DiophantineEquations/DyadicAnatomicPublic.lean/index.md) — import line 13; pinned internal source present.
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Radical`](../../../../../NumberTheory/DiophantineEquations/Radical.lean/index.md) — import line 14; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.DyadicAnatomicPublic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/DyadicAnatomicPublic.lean/index.md) — import line 13; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Radical`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/Radical.lean/index.md) — import line 14; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Pow.Real` — import line 15; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 16; external provider; requires a separately pinned dependency.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [nStarTriples](../../../../../NumberTheory/DiophantineEquations/ShortIntervalExceptional.lean/declarations/nstartriples.md) | 32 | `declaration-track:4c52cf60f836be52fbed3afdca287d7804cf1521c1383ac7da81c3c4d59e5f4a` |
-| 2 | `theorem` | [mem_nStarTriples](../../../../../NumberTheory/DiophantineEquations/ShortIntervalExceptional.lean/declarations/mem-nstartriples.md) | 40 | `result-track:8c680adf2303ab8dbf2f19f6009ce730fd3ae045d3f32323c166f192fb1a88b5` |
-| 3 | `def` | [nStarCount](../../../../../NumberTheory/DiophantineEquations/ShortIntervalExceptional.lean/declarations/nstarcount.md) | 51 | `declaration-track:e3e29cc2f6459fde92698e2c3cf13b40e44da8db34477d7cd0cda3f73fa6d1c4` |
-| 4 | `theorem` | [nStarTriples_subset_boundedTriples](../../../../../NumberTheory/DiophantineEquations/ShortIntervalExceptional.lean/declarations/nstartriples-subset-boundedtriples.md) | 54 | `result-track:3effbb45222ffd48265956a44144e066060d249e6e48eca6f5086d7f99e2d3db` |
-| 5 | `theorem` | [nStarTriples_subset_covered](../../../../../NumberTheory/DiophantineEquations/ShortIntervalExceptional.lean/declarations/nstartriples-subset-covered.md) | 61 | `result-track:717a9545b978621e3ca6e88bb29e6da16d59879f41c545953af003d5049d32d4` |
-| 6 | `theorem` | [nStarCount_le_parameter_mul_sup](../../../../../NumberTheory/DiophantineEquations/ShortIntervalExceptional.lean/declarations/nstarcount-le-parameter-mul-sup.md) | 72 | `result-track:4178cd59804911751a20f5a34514f00ed6fdb8054dd8dc09e8828edd2573c95f` |
-| 7 | `theorem` | [nStarCount_le_explicit_parameter_bound](../../../../../NumberTheory/DiophantineEquations/ShortIntervalExceptional.lean/declarations/nstarcount-le-explicit-parameter-bound.md) | 85 | `result-track:cc20d49feaf4382bd5ff00955d8dd6c3158fcc65284ff7f5b8303cd12fc71e88` |
+| 1 | `def` | [nStarTriples](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ShortIntervalExceptional.lean/declarations/nstartriples.md) | 32 | `declaration-track:4c52cf60f836be52fbed3afdca287d7804cf1521c1383ac7da81c3c4d59e5f4a` |
+| 2 | `theorem` | [mem_nStarTriples](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ShortIntervalExceptional.lean/declarations/mem-nstartriples.md) | 40 | `result-track:8c680adf2303ab8dbf2f19f6009ce730fd3ae045d3f32323c166f192fb1a88b5` |
+| 3 | `def` | [nStarCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ShortIntervalExceptional.lean/declarations/nstarcount.md) | 51 | `declaration-track:e3e29cc2f6459fde92698e2c3cf13b40e44da8db34477d7cd0cda3f73fa6d1c4` |
+| 4 | `theorem` | [nStarTriples_subset_boundedTriples](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ShortIntervalExceptional.lean/declarations/nstartriples-subset-boundedtriples.md) | 54 | `result-track:3effbb45222ffd48265956a44144e066060d249e6e48eca6f5086d7f99e2d3db` |
+| 5 | `theorem` | [nStarTriples_subset_covered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ShortIntervalExceptional.lean/declarations/nstartriples-subset-covered.md) | 61 | `result-track:717a9545b978621e3ca6e88bb29e6da16d59879f41c545953af003d5049d32d4` |
+| 6 | `theorem` | [nStarCount_le_parameter_mul_sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ShortIntervalExceptional.lean/declarations/nstarcount-le-parameter-mul-sup.md) | 72 | `result-track:4178cd59804911751a20f5a34514f00ed6fdb8054dd8dc09e8828edd2573c95f` |
+| 7 | `theorem` | [nStarCount_le_explicit_parameter_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ShortIntervalExceptional.lean/declarations/nstarcount-le-explicit-parameter-bound.md) | 85 | `result-track:cc20d49feaf4382bd5ff00955d8dd6c3158fcc65284ff7f5b8303cd12fc71e88` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

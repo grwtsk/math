@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [timeFirst](../../../../MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/timefirst.md) | 22 | `declaration-track:f0f7f32c2e2971a93df27564d53ebff587a5e91fc67236bddbb2e50789debd00` |
-| 2 | `def` | [innerPrimitive](../../../../MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/innerprimitive.md) | 25 | `declaration-track:06bb5ba25e5cb7242a7e674f92150432510f327a2a5c720117b0099a0ddb1e85` |
-| 3 | `theorem` | [literalXiWeight_time_hasDerivAt](../../../../MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/literalxiweight-time-hasderivat.md) | 29 | `result-track:c2fb89759d31cfced18dc6b89e23d534968bb5fe09e3675d930036ca3838bdb5` |
-| 4 | `theorem` | [timeFirst_hasDerivAt](../../../../MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/timefirst-hasderivat.md) | 38 | `result-track:a5713d80752f46657c366cdff009d90445a5ff6930fc0edceaa61e7601e82d4b` |
-| 5 | `theorem` | [actual_kprime_differentiable](../../../../MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/actual-kprime-differentiable.md) | 44 | `result-track:1762a2b596c5d941f2a2bdfb2c286cfe00917d9ca1e7fd5bad5455aa9dfa246e` |
-| 6 | `theorem` | [innerPrimitive_hasDerivAt](../../../../MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/innerprimitive-hasderivat.md) | 55 | `result-track:12098b785620d52187cc04255077fb764cfd941f5fe162b54e9d42df2a408a43` |
-| 7 | `theorem` | [actual_upper_traces](../../../../MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/actual-upper-traces.md) | 67 | `result-track:8049f46d967cea6855b758c876eb0dca6d00e1ead44e2a4b766e514f8691079a` |
-| 8 | `theorem` | [positive_power_coefficient](../../../../MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/positive-power-coefficient.md) | 77 | `result-track:2cf8071a24e93a43f284abf15b00672b14e00ea38ff51b2198f3719d3be471f0` |
-| 9 | `theorem` | [literal_lower_traces](../../../../MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/literal-lower-traces.md) | 93 | `result-track:f85407ee3c95de44d0b3b3e4d4b8a8f209863a8c2d6c2fef9ad12d6e6605b315` |
-| 10 | `theorem` | [plain_prefactor_eq](../../../../MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/plain-prefactor-eq.md) | 104 | `result-track:601e9150f6a857f9d8d442e339f6b5d6ab4ab71b10fc2dc6519faf8a737076ea` |
-| 11 | `theorem` | [inner_kernel_eq_actual_plain_derivative](../../../../MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/inner-kernel-eq-actual-plain-derivative.md) | 114 | `result-track:2a09d0110116a016243290f3108eb1789cf15ecb6471c2d243a2cd47af900703` |
+| 1 | `def` | [timeFirst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/timefirst.md) | 22 | `declaration-track:f0f7f32c2e2971a93df27564d53ebff587a5e91fc67236bddbb2e50789debd00` |
+| 2 | `def` | [innerPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/innerprimitive.md) | 25 | `declaration-track:06bb5ba25e5cb7242a7e674f92150432510f327a2a5c720117b0099a0ddb1e85` |
+| 3 | `theorem` | [literalXiWeight_time_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/literalxiweight-time-hasderivat.md) | 29 | `result-track:c2fb89759d31cfced18dc6b89e23d534968bb5fe09e3675d930036ca3838bdb5` |
+| 4 | `theorem` | [timeFirst_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/timefirst-hasderivat.md) | 38 | `result-track:a5713d80752f46657c366cdff009d90445a5ff6930fc0edceaa61e7601e82d4b` |
+| 5 | `theorem` | [actual_kprime_differentiable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/actual-kprime-differentiable.md) | 44 | `result-track:1762a2b596c5d941f2a2bdfb2c286cfe00917d9ca1e7fd5bad5455aa9dfa246e` |
+| 6 | `theorem` | [innerPrimitive_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/innerprimitive-hasderivat.md) | 55 | `result-track:12098b785620d52187cc04255077fb764cfd941f5fe162b54e9d42df2a408a43` |
+| 7 | `theorem` | [actual_upper_traces](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/actual-upper-traces.md) | 67 | `result-track:8049f46d967cea6855b758c876eb0dca6d00e1ead44e2a4b766e514f8691079a` |
+| 8 | `theorem` | [positive_power_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/positive-power-coefficient.md) | 77 | `result-track:2cf8071a24e93a43f284abf15b00672b14e00ea38ff51b2198f3719d3be471f0` |
+| 9 | `theorem` | [literal_lower_traces](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/literal-lower-traces.md) | 93 | `result-track:f85407ee3c95de44d0b3b3e4d4b8a8f209863a8c2d6c2fef9ad12d6e6605b315` |
+| 10 | `theorem` | [plain_prefactor_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/plain-prefactor-eq.md) | 104 | `result-track:601e9150f6a857f9d8d442e339f6b5d6ab4ab71b10fc2dc6519faf8a737076ea` |
+| 11 | `theorem` | [inner_kernel_eq_actual_plain_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePrimitiveInnerKernel.lean/declarations/inner-kernel-eq-actual-plain-derivative.md) | 114 | `result-track:2a09d0110116a016243290f3108eb1789cf15ecb6471c2d243a2cd47af900703` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/ChooseVandermondeVandermondeNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/ChooseVandermondeVandermondeNamespacedSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ChooseVandermondeVandermondeNamespacedSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ChooseVandermondeVandermondeNamespacedSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Nat.add_choose_eq](../../../../../NumberTheory/ElementaryNumberTheory/ChooseVandermondeVandermondeNamespacedSourceEdition1.lean/declarations/nat-add-choose-eq.md) | 37 | `result-track:f434e0436cc8877cee0136e2e5eb1a79d2fc50afd5e5ae3b5ad3472092b1b78e` |
+| 1 | `theorem` | [Nat.add_choose_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ChooseVandermondeVandermondeNamespacedSourceEdition1.lean/declarations/nat-add-choose-eq.md) | 37 | `result-track:f434e0436cc8877cee0136e2e5eb1a79d2fc50afd5e5ae3b5ad3472092b1b78e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

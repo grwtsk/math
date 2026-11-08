@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedTensorNamespacedFixedTensor.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedTensorNamespacedFixedTensor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedTensorNamespacedFixedTensor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedTensorNamespacedFixedTensor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FixedTensor](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedTensorNamespacedFixedTensor.lean/declarations/fixedtensor.md) | 27 | `declaration-track:1d1e2bee10ff5198f65f10d706f6f8e7b7d16ed9b64c3d7b431879c466d5e731` |
-| 2 | `theorem` | [fixed_tensor_is_horizontal](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedTensorNamespacedFixedTensor.lean/declarations/fixed-tensor-is-horizontal.md) | 39 | `result-track:1589799739f4ce4b0be2b1d921da120febc9742701ddab901fdc74886776a1e3` |
-| 3 | `theorem` | [fixed_tensor_is_fixed](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedTensorNamespacedFixedTensor.lean/declarations/fixed-tensor-is-fixed.md) | 49 | `result-track:24766b65aa9f0447401621daa2caa066a0e7556713660616fe53d92bf4c9e9c3` |
+| 1 | `structure` | [FixedTensor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedTensorNamespacedFixedTensor.lean/declarations/fixedtensor.md) | 27 | `declaration-track:1d1e2bee10ff5198f65f10d706f6f8e7b7d16ed9b64c3d7b431879c466d5e731` |
+| 2 | `theorem` | [fixed_tensor_is_horizontal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedTensorNamespacedFixedTensor.lean/declarations/fixed-tensor-is-horizontal.md) | 39 | `result-track:1589799739f4ce4b0be2b1d921da120febc9742701ddab901fdc74886776a1e3` |
+| 3 | `theorem` | [fixed_tensor_is_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedTensorNamespacedFixedTensor.lean/declarations/fixed-tensor-is-fixed.md) | 49 | `result-track:24766b65aa9f0447401621daa2caa066a0e7556713660616fe53d92bf4c9e9c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

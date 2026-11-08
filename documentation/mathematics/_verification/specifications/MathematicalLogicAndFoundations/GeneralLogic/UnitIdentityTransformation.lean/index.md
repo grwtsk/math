@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnitIdentityTransformation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnitIdentityTransformation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnitIdentityTransformation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnitIdentityTransformation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Complete Action And Shape Equations](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteActionAndShapeEquations.lean/index.md) — import line 17; pinned internal source present.
+- [Complete Action And Shape Equations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteActionAndShapeEquations.lean/index.md) — import line 17; pinned internal source present.
 - `Folder.Archive.Spin` — import line 19; external provider; requires a separately pinned dependency.
 - `Folder.Carrier.BinaryMatrix` — import line 20; external provider; requires a separately pinned dependency.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [copyAction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnitIdentityTransformation.lean/declarations/copyaction.md) | 38 | `declaration-track:eaa7d77187e4cb21bbb59f482810a657be2dc1c5b980d9baf0d4418933d23f5e` |
-| 2 | `theorem` | [copyAction_id_act](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnitIdentityTransformation.lean/declarations/copyaction-id-act.md) | 51 | `result-track:dbccdc978d6a12beec217629f88a8a8db74d9075dcfbb6084b0f19e516d901be` |
+| 1 | `def` | [copyAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnitIdentityTransformation.lean/declarations/copyaction.md) | 38 | `declaration-track:eaa7d77187e4cb21bbb59f482810a657be2dc1c5b980d9baf0d4418933d23f5e` |
+| 2 | `theorem` | [copyAction_id_act](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnitIdentityTransformation.lean/declarations/copyaction-id-act.md) | 51 | `result-track:dbccdc978d6a12beec217629f88a8a8db74d9075dcfbb6084b0f19e516d901be` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

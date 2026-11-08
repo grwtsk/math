@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatExtBasicNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatExtBasicNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatExtBasicNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatExtBasicNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Ext.postcomp_smul_id_eq_zero_of_mem_annihilator](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatExtBasicNamespacedPublic.lean/declarations/ext-postcomp-smul-id-eq-zero-of-mem-annihilator.md) | 42 | `result-track:be46ea034e3ed6d43628f742a8129c240cf8fab7867d710fcd65ca06d642da44` |
-| 2 | `lemma` | [Ext.postcomp_smul_id_mono_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatExtBasicNamespacedPublic.lean/declarations/ext-postcomp-smul-id-mono-iff.md) | 52 | `result-track:7082b6c523d9c3ea575bc89cac7ece93b1917f4f4b7b1fc2199a4ec4ac4e4af1` |
+| 1 | `lemma` | [Ext.postcomp_smul_id_eq_zero_of_mem_annihilator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatExtBasicNamespacedPublic.lean/declarations/ext-postcomp-smul-id-eq-zero-of-mem-annihilator.md) | 42 | `result-track:be46ea034e3ed6d43628f742a8129c240cf8fab7867d710fcd65ca06d642da44` |
+| 2 | `lemma` | [Ext.postcomp_smul_id_mono_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatExtBasicNamespacedPublic.lean/declarations/ext-postcomp-smul-id-mono-iff.md) | 52 | `result-track:7082b6c523d9c3ea575bc89cac7ece93b1917f4f4b7b1fc2199a4ec4ac4e4af1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/Manifold.lean/index.md) · [Full source](../../../../NumberTheory/Manifold.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Manifold.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Manifold.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mdifferentiable_jacobiTheta](../../../../NumberTheory/Manifold.lean/declarations/mdifferentiable-jacobitheta.md) | 24 | `result-track:e3942b4ed6e3d8f291865d8ec25fde5f9b0e12506c9689452373ea7a3961a762` |
+| 1 | `theorem` | [mdifferentiable_jacobiTheta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Manifold.lean/declarations/mdifferentiable-jacobitheta.md) | 24 | `result-track:e3942b4ed6e3d8f291865d8ec25fde5f9b0e12506c9689452373ea7a3961a762` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Imo2006Q3.lean/index.md) · [Full source](../../../../RealFunctions/Imo2006Q3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2006Q3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2006Q3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lhs_ineq](../../../../RealFunctions/Imo2006Q3.lean/declarations/lhs-ineq.md) | 36 | `result-track:88862b974216831ce32139c22a04934b54b973c77f73e0f8c35148fdadb1ff07` |
-| 2 | `theorem` | [four_pow_four_pos](../../../../RealFunctions/Imo2006Q3.lean/declarations/four-pow-four-pos.md) | 42 | `result-track:71396b3f625f58afd07e4c64691109dda49ca86ce28f6301a601537af24a97ef` |
-| 3 | `theorem` | [mid_ineq](../../../../RealFunctions/Imo2006Q3.lean/declarations/mid-ineq.md) | 44 | `result-track:97b6730c82eef8592fc3c6fc0db0b0d207108cf0cc2e7972e17920f3256b4bc0` |
-| 4 | `theorem` | [rhs_ineq](../../../../RealFunctions/Imo2006Q3.lean/declarations/rhs-ineq.md) | 50 | `result-track:cbc8b5413aa5582a26bd4b5f67545e8a743853b34457509af226c98608133522` |
-| 5 | `theorem` | [zero_lt_32](../../../../RealFunctions/Imo2006Q3.lean/declarations/zero-lt-32.md) | 54 | `result-track:26aea31d5d4040354ab6e748fa0a4e3c3b66edd704929de116b36ab6102722a9` |
-| 6 | `theorem` | [subst_wlog](../../../../RealFunctions/Imo2006Q3.lean/declarations/subst-wlog.md) | 56 | `result-track:0f379a6c2fcd2d20a298c5b92176618e4f00e7b69de5f07acb3d8304cc5eedee` |
-| 7 | `theorem` | [subst_proof₁](../../../../RealFunctions/Imo2006Q3.lean/declarations/subst-proof.md) | 78 | `result-track:a4f9d9717385253a60f7b75432727c07c2c6390c4b485cf95b80c1c3d43cf36f` |
-| 8 | `theorem` | [proof₁](../../../../RealFunctions/Imo2006Q3.lean/declarations/proof.md) | 87 | `result-track:625d08176c1077b5f92f0a2441d61af89f0ef436d5a17c7c627f4851ae50fb71` |
-| 9 | `theorem` | [proof₂](../../../../RealFunctions/Imo2006Q3.lean/declarations/proof-source-edition-2.md) | 95 | `result-track:8bf8f456492958a3f26a8867ad58987c476553996458d43afd2ef98490f6c099` |
-| 10 | `theorem` | [imo2006_q3](../../../../RealFunctions/Imo2006Q3.lean/declarations/imo2006-q3.md) | 118 | `result-track:7155290c86206922a6c710b59d581a581f19f24124e26785ff8c808ee3b47eab` |
+| 1 | `theorem` | [lhs_ineq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2006Q3.lean/declarations/lhs-ineq.md) | 36 | `result-track:88862b974216831ce32139c22a04934b54b973c77f73e0f8c35148fdadb1ff07` |
+| 2 | `theorem` | [four_pow_four_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2006Q3.lean/declarations/four-pow-four-pos.md) | 42 | `result-track:71396b3f625f58afd07e4c64691109dda49ca86ce28f6301a601537af24a97ef` |
+| 3 | `theorem` | [mid_ineq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2006Q3.lean/declarations/mid-ineq.md) | 44 | `result-track:97b6730c82eef8592fc3c6fc0db0b0d207108cf0cc2e7972e17920f3256b4bc0` |
+| 4 | `theorem` | [rhs_ineq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2006Q3.lean/declarations/rhs-ineq.md) | 50 | `result-track:cbc8b5413aa5582a26bd4b5f67545e8a743853b34457509af226c98608133522` |
+| 5 | `theorem` | [zero_lt_32](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2006Q3.lean/declarations/zero-lt-32.md) | 54 | `result-track:26aea31d5d4040354ab6e748fa0a4e3c3b66edd704929de116b36ab6102722a9` |
+| 6 | `theorem` | [subst_wlog](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2006Q3.lean/declarations/subst-wlog.md) | 56 | `result-track:0f379a6c2fcd2d20a298c5b92176618e4f00e7b69de5f07acb3d8304cc5eedee` |
+| 7 | `theorem` | [subst_proof₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2006Q3.lean/declarations/subst-proof.md) | 78 | `result-track:a4f9d9717385253a60f7b75432727c07c2c6390c4b485cf95b80c1c3d43cf36f` |
+| 8 | `theorem` | [proof₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2006Q3.lean/declarations/proof.md) | 87 | `result-track:625d08176c1077b5f92f0a2441d61af89f0ef436d5a17c7c627f4851ae50fb71` |
+| 9 | `theorem` | [proof₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2006Q3.lean/declarations/proof-source-edition-2.md) | 95 | `result-track:8bf8f456492958a3f26a8867ad58987c476553996458d43afd2ef98490f6c099` |
+| 10 | `theorem` | [imo2006_q3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2006Q3.lean/declarations/imo2006-q3.md) | 118 | `result-track:7155290c86206922a6c710b59d581a581f19f24124e26785ff8c808ee3b47eab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

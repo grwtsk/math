@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionSiteNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionSiteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionSiteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionSiteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [iteratedAction](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionSiteNamespaced.lean/declarations/iteratedaction.md) | 13 | `declaration-track:7a8489d7b303bff12232db34bdbafbb30d3d627c27156c542edcd3fe5218a750` |
-| 2 | `structure` | [TorsionAtSite](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionSiteNamespaced.lean/declarations/torsionatsite.md) | 20 | `declaration-track:345a0116190a53c376465b9f8faf01c2c66dfeffae17048d8a1a19ab76beb50f` |
-| 3 | `theorem` | [torsionAtSite_has_positive_order](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionSiteNamespaced.lean/declarations/torsionatsite-has-positive-order.md) | 31 | `result-track:69b7a81067581a2085f8d5802ffde375664a95604cc6206f0ad3120da7f47d08` |
-| 4 | `theorem` | [torsionAtSite_returns_to_site](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionSiteNamespaced.lean/declarations/torsionatsite-returns-to-site.md) | 39 | `result-track:40df31d25df7b27b8c111c35930844c23ffa60ebc54b53f25947b88523d686ef` |
+| 1 | `def` | [iteratedAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionSiteNamespaced.lean/declarations/iteratedaction.md) | 13 | `declaration-track:7a8489d7b303bff12232db34bdbafbb30d3d627c27156c542edcd3fe5218a750` |
+| 2 | `structure` | [TorsionAtSite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionSiteNamespaced.lean/declarations/torsionatsite.md) | 20 | `declaration-track:345a0116190a53c376465b9f8faf01c2c66dfeffae17048d8a1a19ab76beb50f` |
+| 3 | `theorem` | [torsionAtSite_has_positive_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionSiteNamespaced.lean/declarations/torsionatsite-has-positive-order.md) | 31 | `result-track:69b7a81067581a2085f8d5802ffde375664a95604cc6206f0ad3120da7f47d08` |
+| 4 | `theorem` | [torsionAtSite_returns_to_site](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionSiteNamespaced.lean/declarations/torsionatsite-returns-to-site.md) | 39 | `result-track:40df31d25df7b27b8c111c35930844c23ffa60ebc54b53f25947b88523d686ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

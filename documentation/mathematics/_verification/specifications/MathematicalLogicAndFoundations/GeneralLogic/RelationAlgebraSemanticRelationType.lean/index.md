@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationAlgebraSemanticRelationType.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationAlgebraSemanticRelationType.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationAlgebraSemanticRelationType.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationAlgebraSemanticRelationType.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [SemanticRelationType](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationAlgebraSemanticRelationType.lean/declarations/semanticrelationtype.md) | 9 | `declaration-track:e10971e3cfc93d0f871589721264ce8e37015625828fb48c26ae3aaf39cc290a` |
-| 2 | `structure` | [RelationLaw](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationAlgebraSemanticRelationType.lean/declarations/relationlaw.md) | 32 | `declaration-track:7abc9a3d55d48698097404445ab8106b0ebe2ef5cfb9ce69d6ed780f00712061` |
-| 3 | `structure` | [RelationAlgebra](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationAlgebraSemanticRelationType.lean/declarations/relationalgebra.md) | 39 | `declaration-track:09d5d4f9c3516fb51e20b4ee7cb596e376721200849049fbba0acdf7aeea3306` |
-| 4 | `def` | [conservative](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationAlgebraSemanticRelationType.lean/declarations/conservative.md) | 50 | `declaration-track:0a387d3c4c9851c2c12e1d7f35746ea2571b975ddec5e94b1331fc546968b5e0` |
-| 5 | `structure` | [TransitivityCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationAlgebraSemanticRelationType.lean/declarations/transitivitycertificate.md) | 74 | `declaration-track:e033c7be26157f01be77561c0462a877395f9e708a0ce1c065de5d9e315f0280` |
+| 1 | `inductive` | [SemanticRelationType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationAlgebraSemanticRelationType.lean/declarations/semanticrelationtype.md) | 9 | `declaration-track:e10971e3cfc93d0f871589721264ce8e37015625828fb48c26ae3aaf39cc290a` |
+| 2 | `structure` | [RelationLaw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationAlgebraSemanticRelationType.lean/declarations/relationlaw.md) | 32 | `declaration-track:7abc9a3d55d48698097404445ab8106b0ebe2ef5cfb9ce69d6ed780f00712061` |
+| 3 | `structure` | [RelationAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationAlgebraSemanticRelationType.lean/declarations/relationalgebra.md) | 39 | `declaration-track:09d5d4f9c3516fb51e20b4ee7cb596e376721200849049fbba0acdf7aeea3306` |
+| 4 | `def` | [conservative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationAlgebraSemanticRelationType.lean/declarations/conservative.md) | 50 | `declaration-track:0a387d3c4c9851c2c12e1d7f35746ea2571b975ddec5e94b1331fc546968b5e0` |
+| 5 | `structure` | [TransitivityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationAlgebraSemanticRelationType.lean/declarations/transitivitycertificate.md) | 74 | `declaration-track:e033c7be26157f01be77561c0462a877395f9e708a0ce1c065de5d9e315f0280` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

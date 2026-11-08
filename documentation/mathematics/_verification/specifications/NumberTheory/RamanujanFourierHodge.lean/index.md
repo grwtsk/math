@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/RamanujanFourierHodge.lean/index.md) · [Full source](../../../../NumberTheory/RamanujanFourierHodge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFourierHodge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFourierHodge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Farey.CyclicResidueHodge`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CyclicResidueHodge.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Farey.CyclicResidueHodge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CyclicResidueHodge.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar` — import line 8; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 9; external provider; requires a separately pinned dependency.
 
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [additiveMode](../../../../NumberTheory/RamanujanFourierHodge.lean/declarations/additivemode.md) | 38 | `declaration-track:50e849d5d28024e63c077590957ac790635b322f1ac49eaa6347f1cd4b0a67af` |
-| 2 | `theorem` | [additiveMode_shift](../../../../NumberTheory/RamanujanFourierHodge.lean/declarations/additivemode-shift.md) | 43 | `result-track:61e5eb28c533cce97d23b87b50ff46626009008b5d33ab318faee479421044f8` |
-| 3 | `theorem` | [additiveMode_shift_back](../../../../NumberTheory/RamanujanFourierHodge.lean/declarations/additivemode-shift-back.md) | 52 | `result-track:ff4d9056cba2e14f5a7ca125fe2c03bd5d95ae4964468872d568879dd97f4583` |
-| 4 | `def` | [cyclicDifference](../../../../NumberTheory/RamanujanFourierHodge.lean/declarations/cyclicdifference.md) | 61 | `declaration-track:2bf18438d7933dcb408332b1dc6938ae154ba2cf9d862f6606fa2e1757694d3e` |
-| 5 | `def` | [cyclicDifferenceStar](../../../../NumberTheory/RamanujanFourierHodge.lean/declarations/cyclicdifferencestar.md) | 66 | `declaration-track:04c9eecbf5582d2eeb6264b6a35df1ed862cc7d85736af68dc454b8f45ab92e5` |
-| 6 | `def` | [cyclicComplexLaplacian](../../../../NumberTheory/RamanujanFourierHodge.lean/declarations/cycliccomplexlaplacian.md) | 71 | `declaration-track:d87f267487acdbc6e9e27c9561ccd4a38fe04bf1016a79db0255ee754a777935` |
-| 7 | `theorem` | [cyclicDifferenceStar_difference_eq_laplacian](../../../../NumberTheory/RamanujanFourierHodge.lean/declarations/cyclicdifferencestar-difference-eq-laplacian.md) | 76 | `result-track:3ef1aeeede247786447ca6b6e65d0be3619f80231e628e1fd25a67b8385f8437` |
-| 8 | `theorem` | [additiveMode_laplacian_eigen](../../../../NumberTheory/RamanujanFourierHodge.lean/declarations/additivemode-laplacian-eigen.md) | 87 | `result-track:21646a13a4ff0cad85e083eb3e615cc77e7a6ea0b92df5e3d93ac186afbe5406` |
-| 9 | `def` | [primitiveRamanujanSum](../../../../NumberTheory/RamanujanFourierHodge.lean/declarations/primitiveramanujansum.md) | 97 | `declaration-track:0feaffed9aa5428b7ad3fd00b9498750fc8e5a5195e8471c202069f60e56cd6a` |
-| 10 | `def` | [nonprimitiveFrequencySum](../../../../NumberTheory/RamanujanFourierHodge.lean/declarations/nonprimitivefrequencysum.md) | 104 | `declaration-track:2a5735b4b853427b5f0281750b9fcc624cd6ffb25946da55d48e9bed66494951` |
-| 11 | `theorem` | [fullFrequency_eq_primitive_add_nonprimitive](../../../../NumberTheory/RamanujanFourierHodge.lean/declarations/fullfrequency-eq-primitive-add-nonprimitive.md) | 112 | `result-track:6639b2ea72438addcbf6565a1a35d211d11d75207f0d7b0e78a849e825e9a7af` |
-| 12 | `theorem` | [characterAverage_primitive_nonprimitive](../../../../NumberTheory/RamanujanFourierHodge.lean/declarations/characteraverage-primitive-nonprimitive.md) | 125 | `result-track:01c97c245d6af9c0c35b47dbb372919d5601ad3c51eb8b709bb21c2646e9e3e3` |
+| 1 | `def` | [additiveMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFourierHodge.lean/declarations/additivemode.md) | 38 | `declaration-track:50e849d5d28024e63c077590957ac790635b322f1ac49eaa6347f1cd4b0a67af` |
+| 2 | `theorem` | [additiveMode_shift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFourierHodge.lean/declarations/additivemode-shift.md) | 43 | `result-track:61e5eb28c533cce97d23b87b50ff46626009008b5d33ab318faee479421044f8` |
+| 3 | `theorem` | [additiveMode_shift_back](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFourierHodge.lean/declarations/additivemode-shift-back.md) | 52 | `result-track:ff4d9056cba2e14f5a7ca125fe2c03bd5d95ae4964468872d568879dd97f4583` |
+| 4 | `def` | [cyclicDifference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFourierHodge.lean/declarations/cyclicdifference.md) | 61 | `declaration-track:2bf18438d7933dcb408332b1dc6938ae154ba2cf9d862f6606fa2e1757694d3e` |
+| 5 | `def` | [cyclicDifferenceStar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFourierHodge.lean/declarations/cyclicdifferencestar.md) | 66 | `declaration-track:04c9eecbf5582d2eeb6264b6a35df1ed862cc7d85736af68dc454b8f45ab92e5` |
+| 6 | `def` | [cyclicComplexLaplacian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFourierHodge.lean/declarations/cycliccomplexlaplacian.md) | 71 | `declaration-track:d87f267487acdbc6e9e27c9561ccd4a38fe04bf1016a79db0255ee754a777935` |
+| 7 | `theorem` | [cyclicDifferenceStar_difference_eq_laplacian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFourierHodge.lean/declarations/cyclicdifferencestar-difference-eq-laplacian.md) | 76 | `result-track:3ef1aeeede247786447ca6b6e65d0be3619f80231e628e1fd25a67b8385f8437` |
+| 8 | `theorem` | [additiveMode_laplacian_eigen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFourierHodge.lean/declarations/additivemode-laplacian-eigen.md) | 87 | `result-track:21646a13a4ff0cad85e083eb3e615cc77e7a6ea0b92df5e3d93ac186afbe5406` |
+| 9 | `def` | [primitiveRamanujanSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFourierHodge.lean/declarations/primitiveramanujansum.md) | 97 | `declaration-track:0feaffed9aa5428b7ad3fd00b9498750fc8e5a5195e8471c202069f60e56cd6a` |
+| 10 | `def` | [nonprimitiveFrequencySum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFourierHodge.lean/declarations/nonprimitivefrequencysum.md) | 104 | `declaration-track:2a5735b4b853427b5f0281750b9fcc624cd6ffb25946da55d48e9bed66494951` |
+| 11 | `theorem` | [fullFrequency_eq_primitive_add_nonprimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFourierHodge.lean/declarations/fullfrequency-eq-primitive-add-nonprimitive.md) | 112 | `result-track:6639b2ea72438addcbf6565a1a35d211d11d75207f0d7b0e78a849e825e9a7af` |
+| 12 | `theorem` | [characterAverage_primitive_nonprimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFourierHodge.lean/declarations/characteraverage-primitive-nonprimitive.md) | 125 | `result-track:01c97c245d6af9c0c35b47dbb372919d5601ad3c51eb8b709bb21c2646e9e3e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

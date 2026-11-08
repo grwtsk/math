@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Completion.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Completion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Completion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Completion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IdealLike](../../../../../ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/ideallike.md) | 21 | `declaration-track:1792e09dd7f6d26ef6fcfe19162e99ba5e57b64e36543d6ff5e2cf8573b66fcd` |
-| 2 | `structure` | [Generates](../../../../../ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/generates.md) | 36 | `declaration-track:b3182742618138e689b731a90efb970f64dcc3a1770b434d9f0c393fe1941e02` |
-| 3 | `structure` | [CartierDivisorCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/cartierdivisorcertificate.md) | 47 | `declaration-track:38314b65d57ae566c63e0d3c00de5d2240a87883135b01190f6e78f58e2b43d2` |
-| 4 | `structure` | [DerivedCompleteCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/derivedcompletecertificate.md) | 56 | `declaration-track:de30a291bd56a21eb687fab18fedb20c64ce34c22042230c962300c7c4599d6d` |
-| 5 | `structure` | [ClassicalCompleteCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/classicalcompletecertificate.md) | 65 | `declaration-track:2645a76c5d5eb4d8c615f812c2cf8e5b8e0706c5e2f701ada2399e1a8a189024` |
-| 6 | `structure` | [BoundedPTorsionCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/boundedptorsioncertificate.md) | 74 | `declaration-track:c1e439482ecb26dfafd411f2d3dd906398fe2a08b1fadb97bf7f32227385d692` |
-| 7 | `structure` | [CompletelyFlatCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/completelyflatcertificate.md) | 81 | `declaration-track:2431e82b82adcf5f8646a4cd5134730bcc48d10008900973f15e5d7e8507a137` |
-| 8 | `structure` | [FaithfullyFlatCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/faithfullyflatcertificate.md) | 89 | `declaration-track:e3944f158c0e507e483c1cb701488f0b2773f4e746a084868189c8ecbf7eb260` |
-| 9 | `structure` | [ContainsPCondition](../../../../../ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/containspcondition.md) | 97 | `declaration-track:25e16bb3baea4cd26e38c2fec4cf0013cc12c14ea08476eaf84f40e49080fa5b` |
-| 10 | `def` | [unitIdeal](../../../../../ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/unitideal.md) | 106 | `declaration-track:02df0aad4a7e7b53923ce73b18e060021b52324d8f50057408f94000c7754381` |
+| 1 | `structure` | [IdealLike](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/ideallike.md) | 21 | `declaration-track:1792e09dd7f6d26ef6fcfe19162e99ba5e57b64e36543d6ff5e2cf8573b66fcd` |
+| 2 | `structure` | [Generates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/generates.md) | 36 | `declaration-track:b3182742618138e689b731a90efb970f64dcc3a1770b434d9f0c393fe1941e02` |
+| 3 | `structure` | [CartierDivisorCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/cartierdivisorcertificate.md) | 47 | `declaration-track:38314b65d57ae566c63e0d3c00de5d2240a87883135b01190f6e78f58e2b43d2` |
+| 4 | `structure` | [DerivedCompleteCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/derivedcompletecertificate.md) | 56 | `declaration-track:de30a291bd56a21eb687fab18fedb20c64ce34c22042230c962300c7c4599d6d` |
+| 5 | `structure` | [ClassicalCompleteCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/classicalcompletecertificate.md) | 65 | `declaration-track:2645a76c5d5eb4d8c615f812c2cf8e5b8e0706c5e2f701ada2399e1a8a189024` |
+| 6 | `structure` | [BoundedPTorsionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/boundedptorsioncertificate.md) | 74 | `declaration-track:c1e439482ecb26dfafd411f2d3dd906398fe2a08b1fadb97bf7f32227385d692` |
+| 7 | `structure` | [CompletelyFlatCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/completelyflatcertificate.md) | 81 | `declaration-track:2431e82b82adcf5f8646a4cd5134730bcc48d10008900973f15e5d7e8507a137` |
+| 8 | `structure` | [FaithfullyFlatCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/faithfullyflatcertificate.md) | 89 | `declaration-track:e3944f158c0e507e483c1cb701488f0b2773f4e746a084868189c8ecbf7eb260` |
+| 9 | `structure` | [ContainsPCondition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/containspcondition.md) | 97 | `declaration-track:25e16bb3baea4cd26e38c2fec4cf0013cc12c14ea08476eaf84f40e49080fa5b` |
+| 10 | `def` | [unitIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Completion.lean/declarations/unitideal.md) | 106 | `declaration-track:02df0aad4a7e7b53923ce73b18e060021b52324d8f50057408f94000c7754381` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

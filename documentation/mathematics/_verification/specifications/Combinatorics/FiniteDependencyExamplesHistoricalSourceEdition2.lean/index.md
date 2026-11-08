@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FiniteDependencyExamplesHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../Combinatorics/FiniteDependencyExamplesHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteDependencyExamplesHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteDependencyExamplesHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Order.Closure.FiniteDependencyClosure`](../../../../Combinatorics/FiniteDependencyClosureHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Order.Closure.FiniteDependencyClosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteDependencyClosureHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cyclicDependencies](../../../../Combinatorics/FiniteDependencyExamplesHistoricalSourceEdition2.lean/declarations/cyclicdependencies.md) | 27 | `declaration-track:6eef88ae79662592c2f96b2ae427084c08f86db2f412b2f7f19d1b455d56d3b1` |
-| 2 | `theorem` | [cyclic_affected_exact](../../../../Combinatorics/FiniteDependencyExamplesHistoricalSourceEdition2.lean/declarations/cyclic-affected-exact.md) | 34 | `result-track:ac13557987318cefdd0da2c2375d7bd498a6eafc4509772032e157db05c06427` |
-| 3 | `theorem` | [unrelated_survives](../../../../Combinatorics/FiniteDependencyExamplesHistoricalSourceEdition2.lean/declarations/unrelated-survives.md) | 47 | `result-track:cb2cbe1e8504ffca270fa3e09e2e3b589a35508f954e69a1e60b47e776829f5c` |
-| 4 | `theorem` | [unseeded_cycle_stays_clear](../../../../Combinatorics/FiniteDependencyExamplesHistoricalSourceEdition2.lean/declarations/unseeded-cycle-stays-clear.md) | 53 | `result-track:f647ea005c661e3999a2fd1b621548e7ff552e4fa36ec709d075f7da923a6b88` |
-| 5 | `theorem` | [transitive_consumer_not_in_first_pass](../../../../Combinatorics/FiniteDependencyExamplesHistoricalSourceEdition2.lean/declarations/transitive-consumer-not-in-first-pass.md) | 57 | `result-track:8c03e8303dba186e84c71a13b0dee8e38fdd78d749d82cc80cb273aeefbfaf91` |
-| 6 | `theorem` | [transitive_consumer_invalidated](../../../../Combinatorics/FiniteDependencyExamplesHistoricalSourceEdition2.lean/declarations/transitive-consumer-invalidated.md) | 62 | `result-track:44e5618de3b5a172ba49ee362b6300317f530a1139f1e3b4d53179dfc5d2c087` |
-| 7 | `theorem` | [changed_consumer_does_not_invalidate_prerequisite](../../../../Combinatorics/FiniteDependencyExamplesHistoricalSourceEdition2.lean/declarations/changed-consumer-does-not-invalidate-prerequisite.md) | 69 | `result-track:538512552e421515fa2cf5c6979a15ec5f075ea158ff78f2d11749996d68d735` |
+| 1 | `def` | [cyclicDependencies](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteDependencyExamplesHistoricalSourceEdition2.lean/declarations/cyclicdependencies.md) | 27 | `declaration-track:6eef88ae79662592c2f96b2ae427084c08f86db2f412b2f7f19d1b455d56d3b1` |
+| 2 | `theorem` | [cyclic_affected_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteDependencyExamplesHistoricalSourceEdition2.lean/declarations/cyclic-affected-exact.md) | 34 | `result-track:ac13557987318cefdd0da2c2375d7bd498a6eafc4509772032e157db05c06427` |
+| 3 | `theorem` | [unrelated_survives](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteDependencyExamplesHistoricalSourceEdition2.lean/declarations/unrelated-survives.md) | 47 | `result-track:cb2cbe1e8504ffca270fa3e09e2e3b589a35508f954e69a1e60b47e776829f5c` |
+| 4 | `theorem` | [unseeded_cycle_stays_clear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteDependencyExamplesHistoricalSourceEdition2.lean/declarations/unseeded-cycle-stays-clear.md) | 53 | `result-track:f647ea005c661e3999a2fd1b621548e7ff552e4fa36ec709d075f7da923a6b88` |
+| 5 | `theorem` | [transitive_consumer_not_in_first_pass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteDependencyExamplesHistoricalSourceEdition2.lean/declarations/transitive-consumer-not-in-first-pass.md) | 57 | `result-track:8c03e8303dba186e84c71a13b0dee8e38fdd78d749d82cc80cb273aeefbfaf91` |
+| 6 | `theorem` | [transitive_consumer_invalidated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteDependencyExamplesHistoricalSourceEdition2.lean/declarations/transitive-consumer-invalidated.md) | 62 | `result-track:44e5618de3b5a172ba49ee362b6300317f530a1139f1e3b4d53179dfc5d2c087` |
+| 7 | `theorem` | [changed_consumer_does_not_invalidate_prerequisite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteDependencyExamplesHistoricalSourceEdition2.lean/declarations/changed-consumer-does-not-invalidate-prerequisite.md) | 69 | `result-track:538512552e421515fa2cf5c6979a15ec5f075ea158ff78f2d11749996d68d735` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

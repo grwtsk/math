@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thmE_A_lam](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/declarations/thme-a-lam.md) | 29 | `result-track:daf947fe752b838cd4b8af89ef6bc6f5eea0248187a313b186c991fdcea8aa83` |
-| 2 | `theorem` | [thmE_A](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/declarations/thme-a-source-edition-2.md) | 42 | `result-track:9145b7d6ca4d218782ddb3bbbf823ef1012a43e4a4474903fdff10bc288e24b2` |
-| 3 | `theorem` | [thmE_B](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/declarations/thme-b.md) | 51 | `result-track:54d2cbec7f54326966461467c807613936ab02d4ba67245cc2d0646535862662` |
-| 4 | `theorem` | [thmE_C](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/declarations/thme-c.md) | 66 | `result-track:bdd0a31eeead5dc67c35f5ae9102ce863d181af0dfb3ae3feedfb417525fb50a` |
-| 5 | `theorem` | [paperInputsChi_L](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/declarations/paperinputschi-l.md) | 83 | `result-track:0a86fdd80261d18c4c21f8e430c5a8655eadcd486914c7735a52fe642e10b569` |
-| 6 | `theorem` | [thmE_A₀](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/declarations/thme-a.md) | 93 | `result-track:1f08f753913a04ce45df40bde9f99efb2bfbf6572743af8320698b2e29281c18` |
-| 7 | `theorem` | [thmE_B₀](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/declarations/thme-b-source-edition-2.md) | 99 | `result-track:6ce5151459c3a361d36f69df3643176e9edb9b204761a2d07521c433e6d172c7` |
-| 8 | `theorem` | [thmE_C₀](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/declarations/thme-c-source-edition-2.md) | 105 | `result-track:c6e0811ef99f02fdc5c4be9a2954c3509293b7d0829bf456d607420bebacb713` |
+| 1 | `theorem` | [thmE_A_lam](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/declarations/thme-a-lam.md) | 29 | `result-track:daf947fe752b838cd4b8af89ef6bc6f5eea0248187a313b186c991fdcea8aa83` |
+| 2 | `theorem` | [thmE_A](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/declarations/thme-a-source-edition-2.md) | 42 | `result-track:9145b7d6ca4d218782ddb3bbbf823ef1012a43e4a4474903fdff10bc288e24b2` |
+| 3 | `theorem` | [thmE_B](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/declarations/thme-b.md) | 51 | `result-track:54d2cbec7f54326966461467c807613936ab02d4ba67245cc2d0646535862662` |
+| 4 | `theorem` | [thmE_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/declarations/thme-c.md) | 66 | `result-track:bdd0a31eeead5dc67c35f5ae9102ce863d181af0dfb3ae3feedfb417525fb50a` |
+| 5 | `theorem` | [paperInputsChi_L](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/declarations/paperinputschi-l.md) | 83 | `result-track:0a86fdd80261d18c4c21f8e430c5a8655eadcd486914c7735a52fe642e10b569` |
+| 6 | `theorem` | [thmE_A₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/declarations/thme-a.md) | 93 | `result-track:1f08f753913a04ce45df40bde9f99efb2bfbf6572743af8320698b2e29281c18` |
+| 7 | `theorem` | [thmE_B₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/declarations/thme-b-source-edition-2.md) | 99 | `result-track:6ce5151459c3a361d36f69df3643176e9edb9b204761a2d07521c433e6d172c7` |
+| 8 | `theorem` | [thmE_C₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalEFLitChiL.lean/declarations/thme-c-source-edition-2.md) | 105 | `result-track:c6e0811ef99f02fdc5c4be9a2954c3509293b7d0829bf456d607420bebacb713` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

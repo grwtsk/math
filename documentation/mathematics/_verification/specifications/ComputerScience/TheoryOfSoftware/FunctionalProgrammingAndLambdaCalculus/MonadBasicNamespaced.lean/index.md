@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadBasicNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [map_eq_bind_pure_comp](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadBasicNamespaced.lean/declarations/map-eq-bind-pure-comp.md) | 51 | `result-track:9a11aef6776d883e9466cd04e5e0daae503f0d551ad14cf18cc79f2f7b2bb0de` |
-| 2 | `def` | [StateT.eval](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadBasicNamespaced.lean/declarations/statet-eval.md) | 56 | `declaration-track:9c47b01cc42a446d7dbbfdcfa3c99174dcd5efd8b74d0a8049ce10728ebab2ea` |
-| 3 | `def` | [StateT.equiv](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadBasicNamespaced.lean/declarations/statet-equiv.md) | 62 | `declaration-track:7bf8b129cc4c6fbf32d3ed04759c2c6fb0231c0f148e948ee727782416f7532d` |
-| 4 | `def` | [ReaderT.equiv](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadBasicNamespaced.lean/declarations/readert-equiv.md) | 69 | `declaration-track:7c7c45a367e824e3d599cf4ebdabd62a47a6af2abda4e26928be2b943ef274e6` |
+| 1 | `theorem` | [map_eq_bind_pure_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadBasicNamespaced.lean/declarations/map-eq-bind-pure-comp.md) | 51 | `result-track:9a11aef6776d883e9466cd04e5e0daae503f0d551ad14cf18cc79f2f7b2bb0de` |
+| 2 | `def` | [StateT.eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadBasicNamespaced.lean/declarations/statet-eval.md) | 56 | `declaration-track:9c47b01cc42a446d7dbbfdcfa3c99174dcd5efd8b74d0a8049ce10728ebab2ea` |
+| 3 | `def` | [StateT.equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadBasicNamespaced.lean/declarations/statet-equiv.md) | 62 | `declaration-track:7bf8b129cc4c6fbf32d3ed04759c2c6fb0231c0f148e948ee727782416f7532d` |
+| 4 | `def` | [ReaderT.equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadBasicNamespaced.lean/declarations/readert-equiv.md) | 69 | `declaration-track:7c7c45a367e824e3d599cf4ebdabd62a47a6af2abda4e26928be2b943ef274e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

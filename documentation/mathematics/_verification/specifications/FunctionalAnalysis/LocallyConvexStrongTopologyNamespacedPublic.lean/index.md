@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/LocallyConvexStrongTopologyNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/LocallyConvexStrongTopologyNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LocallyConvexStrongTopologyNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LocallyConvexStrongTopologyNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [locallyConvexSpace](../../../../FunctionalAnalysis/LocallyConvexStrongTopologyNamespacedPublic.lean/declarations/locallyconvexspace.md) | 54 | `result-track:b45dad16526418e571dba79c24921aded20ffc58af63eb8fd72905bf0ef1ba35` |
-| 2 | `instance` | [instLocallyConvexSpace](../../../../FunctionalAnalysis/LocallyConvexStrongTopologyNamespacedPublic.lean/declarations/instlocallyconvexspace.md) | 75 | `declaration-track:4b604d5b9c7177f9e230df6ae16f0ba9ad56fab83031afc3930590770ebb3712` |
+| 1 | `theorem` | [locallyConvexSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LocallyConvexStrongTopologyNamespacedPublic.lean/declarations/locallyconvexspace.md) | 54 | `result-track:b45dad16526418e571dba79c24921aded20ffc58af63eb8fd72905bf0ef1ba35` |
+| 2 | `instance` | [instLocallyConvexSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LocallyConvexStrongTopologyNamespacedPublic.lean/declarations/instlocallyconvexspace.md) | 75 | `declaration-track:4b604d5b9c7177f9e230df6ae16f0ba9ad56fab83031afc3930590770ebb3712` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

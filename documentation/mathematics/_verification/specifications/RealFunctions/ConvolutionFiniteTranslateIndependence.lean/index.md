@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ConvolutionFiniteTranslateIndependence.lean/index.md) · [Full source](../../../../RealFunctions/ConvolutionFiniteTranslateIndependence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConvolutionFiniteTranslateIndependence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConvolutionFiniteTranslateIndependence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isolate_rightmost_translate](../../../../RealFunctions/ConvolutionFiniteTranslateIndependence.lean/declarations/isolate-rightmost-translate.md) | 36 | `result-track:0da1663bdd4f24a633d4c8f7c8ce4764cc729c1861e1562adf2aa3e6f0c89778` |
-| 2 | `theorem` | [finite_translate_combination_ne_zero](../../../../RealFunctions/ConvolutionFiniteTranslateIndependence.lean/declarations/finite-translate-combination-ne-zero.md) | 67 | `result-track:8b1d4276bdc913bc871b264cc8d2d2f82157bdb7eaa0fe34f22dc36429f2d815` |
-| 3 | `theorem` | [finite_translate_combination_eq_zero_iff](../../../../RealFunctions/ConvolutionFiniteTranslateIndependence.lean/declarations/finite-translate-combination-eq-zero-iff.md) | 100 | `result-track:2834e507824643ec2817fe1a5ea3b873883738ebd18c6086506f7f1dcbd34d6d` |
-| 4 | `theorem` | [finite_translates_linearIndependent](../../../../RealFunctions/ConvolutionFiniteTranslateIndependence.lean/declarations/finite-translates-linearindependent.md) | 119 | `result-track:5e460ee20a89f2b19c8906d5947f43bf14ed24ab68db077e6cd0c90f9e0c40cb` |
+| 1 | `theorem` | [isolate_rightmost_translate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConvolutionFiniteTranslateIndependence.lean/declarations/isolate-rightmost-translate.md) | 36 | `result-track:0da1663bdd4f24a633d4c8f7c8ce4764cc729c1861e1562adf2aa3e6f0c89778` |
+| 2 | `theorem` | [finite_translate_combination_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConvolutionFiniteTranslateIndependence.lean/declarations/finite-translate-combination-ne-zero.md) | 67 | `result-track:8b1d4276bdc913bc871b264cc8d2d2f82157bdb7eaa0fe34f22dc36429f2d815` |
+| 3 | `theorem` | [finite_translate_combination_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConvolutionFiniteTranslateIndependence.lean/declarations/finite-translate-combination-eq-zero-iff.md) | 100 | `result-track:2834e507824643ec2817fe1a5ea3b873883738ebd18c6086506f7f1dcbd34d6d` |
+| 4 | `theorem` | [finite_translates_linearIndependent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConvolutionFiniteTranslateIndependence.lean/declarations/finite-translates-linearindependent.md) | 119 | `result-track:5e460ee20a89f2b19c8906d5947f43bf14ed24ab68db077e6cd0c90f9e0c40cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SemanticRealizationFiber.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SemanticRealizationFiber.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SemanticRealizationFiber.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SemanticRealizationFiber.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SemanticRealizationSystem](../../../../FunctionalAnalysis/SemanticRealizationFiber.lean/declarations/semanticrealizationsystem.md) | 18 | `declaration-track:338e53b6f8147a78a1839eab4da5e1be1e911cd47655aba40bac3f68e7c3102f` |
-| 2 | `abbrev` | [BanachFiber](../../../../FunctionalAnalysis/SemanticRealizationFiber.lean/declarations/banachfiber.md) | 37 | `declaration-track:fe920230cc05d7c0b8cdfe99655e4d287805a9193c2538fda439ebb10969e3de` |
-| 3 | `abbrev` | [HilbertFiber](../../../../FunctionalAnalysis/SemanticRealizationFiber.lean/declarations/hilbertfiber.md) | 41 | `declaration-track:f53469f1f8644cbdbb1bf966cc7fd2fe62bfaff7a8a06357f7e160806635e784` |
-| 4 | `def` | [realize](../../../../FunctionalAnalysis/SemanticRealizationFiber.lean/declarations/realize.md) | 45 | `declaration-track:9ee426f7f701e8d307e5f7cf94ad798651549a6ac020d7d2d2c5af460886526d` |
-| 5 | `structure` | [SemanticFiberTransformation](../../../../FunctionalAnalysis/SemanticRealizationFiber.lean/declarations/semanticfibertransformation.md) | 57 | `declaration-track:53c25cc70c8e5c54a16617c8460ec5de85b6dbe5c4777acd5e84c925bf33b0a4` |
-| 6 | `theorem` | [realize_map](../../../../FunctionalAnalysis/SemanticRealizationFiber.lean/declarations/realize-map.md) | 81 | `result-track:1ca0853c4612710f21d99e03ea9662dccd0a389d915514134189c248a027cb88` |
-| 7 | `structure` | [SemanticFiberIsometricEquivalence](../../../../FunctionalAnalysis/SemanticRealizationFiber.lean/declarations/semanticfiberisometricequivalence.md) | 96 | `declaration-track:fc90115952e09562c89f08322d0b0175c31396a759cfa535d6de902926da1458` |
+| 1 | `structure` | [SemanticRealizationSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SemanticRealizationFiber.lean/declarations/semanticrealizationsystem.md) | 18 | `declaration-track:338e53b6f8147a78a1839eab4da5e1be1e911cd47655aba40bac3f68e7c3102f` |
+| 2 | `abbrev` | [BanachFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SemanticRealizationFiber.lean/declarations/banachfiber.md) | 37 | `declaration-track:fe920230cc05d7c0b8cdfe99655e4d287805a9193c2538fda439ebb10969e3de` |
+| 3 | `abbrev` | [HilbertFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SemanticRealizationFiber.lean/declarations/hilbertfiber.md) | 41 | `declaration-track:f53469f1f8644cbdbb1bf966cc7fd2fe62bfaff7a8a06357f7e160806635e784` |
+| 4 | `def` | [realize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SemanticRealizationFiber.lean/declarations/realize.md) | 45 | `declaration-track:9ee426f7f701e8d307e5f7cf94ad798651549a6ac020d7d2d2c5af460886526d` |
+| 5 | `structure` | [SemanticFiberTransformation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SemanticRealizationFiber.lean/declarations/semanticfibertransformation.md) | 57 | `declaration-track:53c25cc70c8e5c54a16617c8460ec5de85b6dbe5c4777acd5e84c925bf33b0a4` |
+| 6 | `theorem` | [realize_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SemanticRealizationFiber.lean/declarations/realize-map.md) | 81 | `result-track:1ca0853c4612710f21d99e03ea9662dccd0a389d915514134189c248a027cb88` |
+| 7 | `structure` | [SemanticFiberIsometricEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SemanticRealizationFiber.lean/declarations/semanticfiberisometricequivalence.md) | 96 | `declaration-track:fc90115952e09562c89f08322d0b0175c31396a759cfa535d6de902926da1458` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

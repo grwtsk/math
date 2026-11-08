@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverConnectedNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverConnectedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverConnectedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverConnectedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [natTransInOver](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverConnectedNamespaced.lean/declarations/nattransinover.md) | 44 | `declaration-track:e377e4ee7f8a8eb91458e01118deb355b1e0eb135c4e3ef5537271bc1f87eade` |
-| 2 | `def` | [raiseCone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverConnectedNamespaced.lean/declarations/raisecone.md) | 52 | `declaration-track:9b39993465337707de4cc9c9e0487b88d9c7cff06556ffeff63d58724e1d95eb` |
-| 3 | `theorem` | [raised_cone_lowers_to_original](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverConnectedNamespaced.lean/declarations/raised-cone-lowers-to-original.md) | 64 | `result-track:4af3520e754158902be0e8424272dead24cdb8db544c97e6c7e3e696dcf94bb5` |
-| 4 | `def` | [raisedConeIsLimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverConnectedNamespaced.lean/declarations/raisedconeislimit.md) | 69 | `declaration-track:18002215b920f8ada795b17748abff38f5df36b70726a16a5df75e9143d7ca39` |
-| 5 | `instance` | [forgetCreatesConnectedLimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverConnectedNamespaced.lean/declarations/forgetcreatesconnectedlimits.md) | 82 | `declaration-track:596d28909ba2d16ac8eee29c9447d6038361dcc8f47dcb7a3627d5a58c518ce0` |
-| 6 | `instance` | [has_connected_limits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverConnectedNamespaced.lean/declarations/has-connected-limits.md) | 91 | `declaration-track:42898082f7dc7942e219f518ebfb79de919b5303e3d201668061f6be0546ff3f` |
+| 1 | `def` | [natTransInOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverConnectedNamespaced.lean/declarations/nattransinover.md) | 44 | `declaration-track:e377e4ee7f8a8eb91458e01118deb355b1e0eb135c4e3ef5537271bc1f87eade` |
+| 2 | `def` | [raiseCone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverConnectedNamespaced.lean/declarations/raisecone.md) | 52 | `declaration-track:9b39993465337707de4cc9c9e0487b88d9c7cff06556ffeff63d58724e1d95eb` |
+| 3 | `theorem` | [raised_cone_lowers_to_original](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverConnectedNamespaced.lean/declarations/raised-cone-lowers-to-original.md) | 64 | `result-track:4af3520e754158902be0e8424272dead24cdb8db544c97e6c7e3e696dcf94bb5` |
+| 4 | `def` | [raisedConeIsLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverConnectedNamespaced.lean/declarations/raisedconeislimit.md) | 69 | `declaration-track:18002215b920f8ada795b17748abff38f5df36b70726a16a5df75e9143d7ca39` |
+| 5 | `instance` | [forgetCreatesConnectedLimits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverConnectedNamespaced.lean/declarations/forgetcreatesconnectedlimits.md) | 82 | `declaration-track:596d28909ba2d16ac8eee29c9447d6038361dcc8f47dcb7a3627d5a58c518ce0` |
+| 6 | `instance` | [has_connected_limits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OverConnectedNamespaced.lean/declarations/has-connected-limits.md) | 91 | `declaration-track:42898082f7dc7942e219f518ebfb79de919b5303e3d201668061f6be0546ff3f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,14 +62,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IsNilpotent.charpoly_eq_X_pow_finrank](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/declarations/isnilpotent-charpoly-eq-x-pow-finrank.md) | 39 | `result-track:edb43fba8718c48df4b3801504791a03400dec09787dcf94efae7e218394cedc` |
-| 2 | `lemma` | [isNilpotent_iff_charpoly](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/declarations/isnilpotent-iff-charpoly.md) | 49 | `result-track:2a091e98df8de9c7617fc75bb9df23cc5a9a93c3222d23090455c3d99e9a9bfe` |
-| 3 | `lemma` | [charpoly_nilpotent_tfae](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/declarations/charpoly-nilpotent-tfae.md) | 55 | `result-track:00f9ba5523ec62531f2790a791e853338c3fbd213c54cce9a64eae0baff926c8` |
-| 4 | `lemma` | [charpoly_eq_X_pow_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/declarations/charpoly-eq-x-pow-iff.md) | 80 | `result-track:e3cf0f01254c20eaa118ee5f1b1bf454161a9505413726b735fe73c3c9cce931` |
-| 5 | `lemma` | [hasEigenvalue_zero_tfae](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/declarations/haseigenvalue-zero-tfae.md) | 85 | `result-track:22923375ba58ba26aa3761503875c04d7643d7e4b3aae1905c5d55acf8de83a4` |
-| 6 | `lemma` | [charpoly_constantCoeff_eq_zero_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/declarations/charpoly-constantcoeff-eq-zero-iff.md) | 116 | `result-track:ff58a46b35ee181390f18d341ab203dc0fc55c1a23255e4acddcad000f0a0d15` |
-| 7 | `lemma` | [not_hasEigenvalue_zero_tfae](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/declarations/not-haseigenvalue-zero-tfae.md) | 121 | `result-track:e9aaa9b9b501a57ea4e333bf33cf425ccc7004276c1a6705009fd9d29a9b2e4e` |
-| 8 | `lemma` | [finrank_maxGenEigenspace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/declarations/finrank-maxgeneigenspace.md) | 137 | `result-track:ba4d97b64c3a6f2359a02994e7cc158c4fe6a99c5557872b4eeb5c56afed92dd` |
+| 1 | `lemma` | [IsNilpotent.charpoly_eq_X_pow_finrank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/declarations/isnilpotent-charpoly-eq-x-pow-finrank.md) | 39 | `result-track:edb43fba8718c48df4b3801504791a03400dec09787dcf94efae7e218394cedc` |
+| 2 | `lemma` | [isNilpotent_iff_charpoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/declarations/isnilpotent-iff-charpoly.md) | 49 | `result-track:2a091e98df8de9c7617fc75bb9df23cc5a9a93c3222d23090455c3d99e9a9bfe` |
+| 3 | `lemma` | [charpoly_nilpotent_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/declarations/charpoly-nilpotent-tfae.md) | 55 | `result-track:00f9ba5523ec62531f2790a791e853338c3fbd213c54cce9a64eae0baff926c8` |
+| 4 | `lemma` | [charpoly_eq_X_pow_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/declarations/charpoly-eq-x-pow-iff.md) | 80 | `result-track:e3cf0f01254c20eaa118ee5f1b1bf454161a9505413726b735fe73c3c9cce931` |
+| 5 | `lemma` | [hasEigenvalue_zero_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/declarations/haseigenvalue-zero-tfae.md) | 85 | `result-track:22923375ba58ba26aa3761503875c04d7643d7e4b3aae1905c5d55acf8de83a4` |
+| 6 | `lemma` | [charpoly_constantCoeff_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/declarations/charpoly-constantcoeff-eq-zero-iff.md) | 116 | `result-track:ff58a46b35ee181390f18d341ab203dc0fc55c1a23255e4acddcad000f0a0d15` |
+| 7 | `lemma` | [not_hasEigenvalue_zero_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/declarations/not-haseigenvalue-zero-tfae.md) | 121 | `result-track:e9aaa9b9b501a57ea4e333bf33cf425ccc7004276c1a6705009fd9d29a9b2e4e` |
+| 8 | `lemma` | [finrank_maxGenEigenspace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Zero.lean/declarations/finrank-maxgeneigenspace.md) | 137 | `result-track:ba4d97b64c3a6f2359a02994e7cc158c4fe6a99c5557872b4eeb5c56afed92dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

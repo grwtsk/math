@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/NamespacedAlternative3.lean/index.md) · [Full source](../../../../GeneralTopology/NamespacedAlternative3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NamespacedAlternative3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NamespacedAlternative3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [higherPrimePower_abs_le](../../../../GeneralTopology/NamespacedAlternative3.lean/declarations/higherprimepower-abs-le.md) | 36 | `result-track:d9392a5aab3591955d23f1e2b326f44df733f613f62aa065d6438c8b8958772f` |
-| 2 | `theorem` | [higherPrimePower_sub_main_abs_le](../../../../GeneralTopology/NamespacedAlternative3.lean/declarations/higherprimepower-sub-main-abs-le.md) | 49 | `result-track:01529f48aee728b3f129b267995a3a975c08583a45cc011e20f19c9a9260270b` |
-| 3 | `theorem` | [higherPrimePower_normalized_error_tendsto](../../../../GeneralTopology/NamespacedAlternative3.lean/declarations/higherprimepower-normalized-error-tendsto.md) | 63 | `result-track:d6c5b74fb8f38c69a2cdf934b10bc43fb46b6bd779eaa7ebe16281b1e6d381f5` |
-| 4 | `theorem` | [higherPrimePower_div_scale_tendsto](../../../../GeneralTopology/NamespacedAlternative3.lean/declarations/higherprimepower-div-scale-tendsto.md) | 83 | `result-track:fc10a655572f5f86b9a0d1b86fe08b9165faf6fd902953054c6163d54e79a40d` |
-| 5 | `theorem` | [polynomial_residual_of_prime_first_bound](../../../../GeneralTopology/NamespacedAlternative3.lean/declarations/polynomial-residual-of-prime-first-bound.md) | 91 | `result-track:9fd1068d3b24c9ec21e579b34c43144af6b48d14e6726faf0a8ad181e2fe10f3` |
+| 1 | `theorem` | [higherPrimePower_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NamespacedAlternative3.lean/declarations/higherprimepower-abs-le.md) | 36 | `result-track:d9392a5aab3591955d23f1e2b326f44df733f613f62aa065d6438c8b8958772f` |
+| 2 | `theorem` | [higherPrimePower_sub_main_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NamespacedAlternative3.lean/declarations/higherprimepower-sub-main-abs-le.md) | 49 | `result-track:01529f48aee728b3f129b267995a3a975c08583a45cc011e20f19c9a9260270b` |
+| 3 | `theorem` | [higherPrimePower_normalized_error_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NamespacedAlternative3.lean/declarations/higherprimepower-normalized-error-tendsto.md) | 63 | `result-track:d6c5b74fb8f38c69a2cdf934b10bc43fb46b6bd779eaa7ebe16281b1e6d381f5` |
+| 4 | `theorem` | [higherPrimePower_div_scale_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NamespacedAlternative3.lean/declarations/higherprimepower-div-scale-tendsto.md) | 83 | `result-track:fc10a655572f5f86b9a0d1b86fe08b9165faf6fd902953054c6163d54e79a40d` |
+| 5 | `theorem` | [polynomial_residual_of_prime_first_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NamespacedAlternative3.lean/declarations/polynomial-residual-of-prime-first-bound.md) | 91 | `result-track:9fd1068d3b24c9ec21e579b34c43144af6b48d14e6726faf0a8ad181e2fe10f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

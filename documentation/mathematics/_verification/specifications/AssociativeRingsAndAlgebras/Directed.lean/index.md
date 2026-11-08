@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/Directed.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/Directed.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Directed.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Directed.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coe_iSup_of_directed](../../../../AssociativeRingsAndAlgebras/Directed.lean/declarations/coe-isup-of-directed.md) | 29 | `result-track:d27890475b04b5f11b560593c57680e7104a37d58ae4313ff6a02774c4a4a770` |
-| 2 | `def` | [iSupLift](../../../../AssociativeRingsAndAlgebras/Directed.lean/declarations/isuplift.md) | 45 | `declaration-track:dc451dfcc4a1fbebf4a33d2fd67b7a42e3c9866d581f9f9db00fc0edcae38de2` |
-| 3 | `theorem` | [iSupLift_inclusion](../../../../AssociativeRingsAndAlgebras/Directed.lean/declarations/isuplift-inclusion.md) | 71 | `result-track:15e93faae744a1f27795981ec4d2c6243a709310c4e8499983d838f9011155e7` |
-| 4 | `theorem` | [iSupLift_comp_inclusion](../../../../AssociativeRingsAndAlgebras/Directed.lean/declarations/isuplift-comp-inclusion.md) | 79 | `result-track:7029c7899e0ffc50ccdee7c87bc62af62f5238a417075093ac1e0d2d2e364296` |
-| 5 | `theorem` | [iSupLift_mk](../../../../AssociativeRingsAndAlgebras/Directed.lean/declarations/isuplift-mk.md) | 85 | `result-track:b3d37b3f52a12eb864d5ad1100cf04f1eb20cbc5e2beaff867033602e91e74eb` |
-| 6 | `theorem` | [iSupLift_of_mem](../../../../AssociativeRingsAndAlgebras/Directed.lean/declarations/isuplift-of-mem.md) | 92 | `result-track:da7569aac60c62d31d0707cbecbf741744ff910bdeabea74fb51e77d5b5f93a4` |
+| 1 | `theorem` | [coe_iSup_of_directed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Directed.lean/declarations/coe-isup-of-directed.md) | 29 | `result-track:d27890475b04b5f11b560593c57680e7104a37d58ae4313ff6a02774c4a4a770` |
+| 2 | `def` | [iSupLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Directed.lean/declarations/isuplift.md) | 45 | `declaration-track:dc451dfcc4a1fbebf4a33d2fd67b7a42e3c9866d581f9f9db00fc0edcae38de2` |
+| 3 | `theorem` | [iSupLift_inclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Directed.lean/declarations/isuplift-inclusion.md) | 71 | `result-track:15e93faae744a1f27795981ec4d2c6243a709310c4e8499983d838f9011155e7` |
+| 4 | `theorem` | [iSupLift_comp_inclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Directed.lean/declarations/isuplift-comp-inclusion.md) | 79 | `result-track:7029c7899e0ffc50ccdee7c87bc62af62f5238a417075093ac1e0d2d2e364296` |
+| 5 | `theorem` | [iSupLift_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Directed.lean/declarations/isuplift-mk.md) | 85 | `result-track:b3d37b3f52a12eb864d5ad1100cf04f1eb20cbc5e2beaff867033602e91e74eb` |
+| 6 | `theorem` | [iSupLift_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Directed.lean/declarations/isuplift-of-mem.md) | 92 | `result-track:da7569aac60c62d31d0707cbecbf741744ff910bdeabea74fb51e77d5b5f93a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

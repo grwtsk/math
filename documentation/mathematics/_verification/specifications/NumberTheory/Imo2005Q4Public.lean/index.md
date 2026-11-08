@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/Imo2005Q4Public.lean/index.md) · [Full source](../../../../NumberTheory/Imo2005Q4Public.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2005Q4Public.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2005Q4Public.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [a](../../../../NumberTheory/Imo2005Q4Public.lean/declarations/a.md) | 25 | `declaration-track:7130f565d17e9f990d0de2a0b74c695a38e5f05e1bfeff81adde280bbd4577c9` |
-| 2 | `theorem` | [find_specified_factor](../../../../NumberTheory/Imo2005Q4Public.lean/declarations/find-specified-factor.md) | 30 | `result-track:e1a8f2b39a454df2e5f3f9eae4cd52d89d22cd2339bcc37cb65e71ffce80d457` |
-| 3 | `theorem` | [imo2005_q4](../../../../NumberTheory/Imo2005Q4Public.lean/declarations/imo2005-q4.md) | 54 | `result-track:edf81dcdccbb57fec40a4e9fe4858ac28dc8dfb6ff0bb45eb4e5e427ab25e992` |
+| 1 | `def` | [a](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2005Q4Public.lean/declarations/a.md) | 25 | `declaration-track:7130f565d17e9f990d0de2a0b74c695a38e5f05e1bfeff81adde280bbd4577c9` |
+| 2 | `theorem` | [find_specified_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2005Q4Public.lean/declarations/find-specified-factor.md) | 30 | `result-track:e1a8f2b39a454df2e5f3f9eae4cd52d89d22cd2339bcc37cb65e71ffce80d457` |
+| 3 | `theorem` | [imo2005_q4](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo2005Q4Public.lean/declarations/imo2005-q4.md) | 54 | `result-track:edf81dcdccbb57fec40a4e9fe4858ac28dc8dfb6ff0bb45eb4e5e427ab25e992` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

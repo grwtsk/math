@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ReconstructionAndLocalSupport.lean/index.md) · [Full source](../../../../GeneralTopology/ReconstructionAndLocalSupport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ReconstructionAndLocalSupport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ReconstructionAndLocalSupport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../GeneralTopology/ReconstructionAndLocalSupport.lean/declarations/example-source-edition-3.md) | 29 | `declaration-track:7b9b91bf73384daf67ee8f6ec11bce0cc8579343afb39b60e69fa57e36cc86c0` |
-| 2 | `example` | [(anonymous)](../../../../GeneralTopology/ReconstructionAndLocalSupport.lean/declarations/example.md) | 35 | `declaration-track:007fe0f7a8843c1c7960c66220970869d74f9a8740d7638fc2cc5e6ea5395679` |
-| 3 | `example` | [(anonymous)](../../../../GeneralTopology/ReconstructionAndLocalSupport.lean/declarations/example-source-edition-2.md) | 41 | `declaration-track:12246b98043af9e18d15784efb7317c95305c04187be1c0e80fd7702cd6caff0` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ReconstructionAndLocalSupport.lean/declarations/example-source-edition-3.md) | 29 | `declaration-track:7b9b91bf73384daf67ee8f6ec11bce0cc8579343afb39b60e69fa57e36cc86c0` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ReconstructionAndLocalSupport.lean/declarations/example.md) | 35 | `declaration-track:007fe0f7a8843c1c7960c66220970869d74f9a8740d7638fc2cc5e6ea5395679` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ReconstructionAndLocalSupport.lean/declarations/example-source-edition-2.md) | 41 | `declaration-track:12246b98043af9e18d15784efb7317c95305c04187be1c0e80fd7702cd6caff0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

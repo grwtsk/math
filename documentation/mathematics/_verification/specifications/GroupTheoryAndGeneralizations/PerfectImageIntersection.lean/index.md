@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/PerfectImageIntersection.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/PerfectImageIntersection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PerfectImageIntersection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PerfectImageIntersection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [perfect_image_intersection](../../../../GroupTheoryAndGeneralizations/PerfectImageIntersection.lean/declarations/perfect-image-intersection.md) | 21 | `result-track:2da30836361a7dc424cce1ca8252ae85ab1964ea15be2df773ee48c8ab2cb93d` |
-| 2 | `theorem` | [perfect_image_finset_intersection](../../../../GroupTheoryAndGeneralizations/PerfectImageIntersection.lean/declarations/perfect-image-finset-intersection.md) | 32 | `result-track:84cc013ac04f20ff2364f9624f06d62914cf0c0642ce980a35b8d22721b63588` |
-| 3 | `theorem` | [perfect_cyclic_source_subgroup_eq_bot](../../../../GroupTheoryAndGeneralizations/PerfectImageIntersection.lean/declarations/perfect-cyclic-source-subgroup-eq-bot.md) | 54 | `result-track:627acbcd2af00c22716389f77d82fd2bcfd657e383e9c9d484123f8cd18f897a` |
+| 1 | `theorem` | [perfect_image_intersection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PerfectImageIntersection.lean/declarations/perfect-image-intersection.md) | 21 | `result-track:2da30836361a7dc424cce1ca8252ae85ab1964ea15be2df773ee48c8ab2cb93d` |
+| 2 | `theorem` | [perfect_image_finset_intersection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PerfectImageIntersection.lean/declarations/perfect-image-finset-intersection.md) | 32 | `result-track:84cc013ac04f20ff2364f9624f06d62914cf0c0642ce980a35b8d22721b63588` |
+| 3 | `theorem` | [perfect_cyclic_source_subgroup_eq_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PerfectImageIntersection.lean/declarations/perfect-cyclic-source-subgroup-eq-bot.md) | 54 | `result-track:627acbcd2af00c22716389f77d82fd2bcfd657e383e9c9d484123f8cd18f897a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

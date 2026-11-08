@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/EquivalenceAdditive.lean/index.md) · [Full source](../../../../AlgebraicTopology/EquivalenceAdditive.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalenceAdditive.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalenceAdditive.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [N](../../../../AlgebraicTopology/EquivalenceAdditive.lean/declarations/n.md) | 34 | `declaration-track:f4637ee4bde4e40d0b90082f334ded6f95a2f6e0710b87e266c16231fa1a62d3` |
-| 2 | `def` | [Γ](../../../../AlgebraicTopology/EquivalenceAdditive.lean/declarations/anonymous.md) | 42 | `declaration-track:3f9bbeb55f3b6b9e2ac573b114259cefd472b677de1de5b41c7d215fa421c5b2` |
-| 3 | `def` | [equivalence](../../../../AlgebraicTopology/EquivalenceAdditive.lean/declarations/equivalence.md) | 48 | `declaration-track:8c313a27ffdd54b3e8e43b799010244228a526979d010872fc858b8e8a54b12b` |
+| 1 | `def` | [N](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalenceAdditive.lean/declarations/n.md) | 34 | `declaration-track:f4637ee4bde4e40d0b90082f334ded6f95a2f6e0710b87e266c16231fa1a62d3` |
+| 2 | `def` | [Γ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalenceAdditive.lean/declarations/anonymous.md) | 42 | `declaration-track:3f9bbeb55f3b6b9e2ac573b114259cefd472b677de1de5b41c7d215fa421c5b2` |
+| 3 | `def` | [equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalenceAdditive.lean/declarations/equivalence.md) | 48 | `declaration-track:8c313a27ffdd54b3e8e43b799010244228a526979d010872fc858b8e8a54b12b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

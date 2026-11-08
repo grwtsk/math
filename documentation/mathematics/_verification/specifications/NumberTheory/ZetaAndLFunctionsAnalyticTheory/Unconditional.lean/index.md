@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Unconditional.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Unconditional.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Unconditional.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Unconditional.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [two_thirds_on_critical_line](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Unconditional.lean/declarations/two-thirds-on-critical-line.md) | 31 | `result-track:f8d119c536e8061bcdd0db35e57312cec9b87ba037d24bfc84b9caa23caf75b3` |
-| 2 | `theorem` | [two_thirds_on_critical_line_cumulative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Unconditional.lean/declarations/two-thirds-on-critical-line-cumulative.md) | 36 | `result-track:e8289c3f905283394c9d5fa69d7f065e52ddf14958283bb08f1a8987c24e2f06` |
-| 3 | `theorem` | [half_simple_on_critical_line](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Unconditional.lean/declarations/half-simple-on-critical-line.md) | 41 | `result-track:046f3de0fe4de324b65be8301dbb00e45dde96673d27d620113aac1d1a090359` |
-| 4 | `theorem` | [three_quarters_distinct](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Unconditional.lean/declarations/three-quarters-distinct.md) | 46 | `result-track:4cc39ec2593310dfe7c3c7a62fc387a5e6200d3fd305969ab0ddae85796db6da` |
+| 1 | `theorem` | [two_thirds_on_critical_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Unconditional.lean/declarations/two-thirds-on-critical-line.md) | 31 | `result-track:f8d119c536e8061bcdd0db35e57312cec9b87ba037d24bfc84b9caa23caf75b3` |
+| 2 | `theorem` | [two_thirds_on_critical_line_cumulative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Unconditional.lean/declarations/two-thirds-on-critical-line-cumulative.md) | 36 | `result-track:e8289c3f905283394c9d5fa69d7f065e52ddf14958283bb08f1a8987c24e2f06` |
+| 3 | `theorem` | [half_simple_on_critical_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Unconditional.lean/declarations/half-simple-on-critical-line.md) | 41 | `result-track:046f3de0fe4de324b65be8301dbb00e45dde96673d27d620113aac1d1a090359` |
+| 4 | `theorem` | [three_quarters_distinct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Unconditional.lean/declarations/three-quarters-distinct.md) | 46 | `result-track:4cc39ec2593310dfe7c3c7a62fc387a5e6200d3fd305969ab0ddae85796db6da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

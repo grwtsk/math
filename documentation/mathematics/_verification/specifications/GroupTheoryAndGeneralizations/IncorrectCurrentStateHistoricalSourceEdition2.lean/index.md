@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/IncorrectCurrentStateHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/IncorrectCurrentStateHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IncorrectCurrentStateHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IncorrectCurrentStateHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.LinearAlgebra.GaugeState`](../../../../GroupTheoryAndGeneralizations/GaugeStateHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.LinearAlgebra.GaugeState`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaugeStateHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [B](../../../../GroupTheoryAndGeneralizations/IncorrectCurrentStateHistoricalSourceEdition2.lean/declarations/b.md) | 3 | `declaration-track:777ce17acb62ccadb8628ff4ff4c94fcdb2a33d16f91e64353631dec58f80798` |
-| 2 | `def` | [X](../../../../GroupTheoryAndGeneralizations/IncorrectCurrentStateHistoricalSourceEdition2.lean/declarations/x.md) | 4 | `declaration-track:db8b69f9c4f51f5e2876d5ab02fc01016d7b250c25510f0be8fefc5027a8a5f4` |
-| 3 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/IncorrectCurrentStateHistoricalSourceEdition2.lean/declarations/example.md) | 5 | `declaration-track:e1a86b143b9e41d86e21c861ddada9f908a1927df238ba397768ab5dce767193` |
+| 1 | `def` | [B](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IncorrectCurrentStateHistoricalSourceEdition2.lean/declarations/b.md) | 3 | `declaration-track:777ce17acb62ccadb8628ff4ff4c94fcdb2a33d16f91e64353631dec58f80798` |
+| 2 | `def` | [X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IncorrectCurrentStateHistoricalSourceEdition2.lean/declarations/x.md) | 4 | `declaration-track:db8b69f9c4f51f5e2876d5ab02fc01016d7b250c25510f0be8fefc5027a8a5f4` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IncorrectCurrentStateHistoricalSourceEdition2.lean/declarations/example.md) | 5 | `declaration-track:e1a86b143b9e41d86e21c861ddada9f908a1927df238ba397768ab5dce767193` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

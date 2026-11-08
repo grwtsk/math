@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/BalanceGauge.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/BalanceGauge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BalanceGauge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BalanceGauge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BalanceGauge](../../../../GroupTheoryAndGeneralizations/BalanceGauge.lean/declarations/balancegauge.md) | 16 | `declaration-track:bd0c32418c06c781344ec03d1accfaf00c60b68dc9ad67c8450ca947229b9a82` |
-| 2 | `def` | [BalanceGauge.act](../../../../GroupTheoryAndGeneralizations/BalanceGauge.lean/declarations/balancegauge-act.md) | 26 | `declaration-track:5900364e81cb816bd1806dec2a78b3ab991c269126a66310800e1fe4803f6542` |
-| 3 | `theorem` | [BalanceGauge.product_act](../../../../GroupTheoryAndGeneralizations/BalanceGauge.lean/declarations/balancegauge-product-act.md) | 38 | `result-track:aa5507490bdccc15d47c2a7de2bbcf4688bb1573e726c336ce66f595b54b19ed` |
-| 4 | `structure` | [BalanceGaugeInvariantDefect](../../../../GroupTheoryAndGeneralizations/BalanceGauge.lean/declarations/balancegaugeinvariantdefect.md) | 52 | `declaration-track:f3337437affb1dd086168f53b73e5b3af2a9b3e8246f7a059b9f47cda2affe5c` |
-| 5 | `structure` | [BalanceGaugeInvariantTrace](../../../../GroupTheoryAndGeneralizations/BalanceGauge.lean/declarations/balancegaugeinvarianttrace.md) | 70 | `declaration-track:6ba9d214959df07e606d96c9f25e201a2eec56aec459b598a7eba768c7c3c89c` |
+| 1 | `structure` | [BalanceGauge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BalanceGauge.lean/declarations/balancegauge.md) | 16 | `declaration-track:bd0c32418c06c781344ec03d1accfaf00c60b68dc9ad67c8450ca947229b9a82` |
+| 2 | `def` | [BalanceGauge.act](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BalanceGauge.lean/declarations/balancegauge-act.md) | 26 | `declaration-track:5900364e81cb816bd1806dec2a78b3ab991c269126a66310800e1fe4803f6542` |
+| 3 | `theorem` | [BalanceGauge.product_act](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BalanceGauge.lean/declarations/balancegauge-product-act.md) | 38 | `result-track:aa5507490bdccc15d47c2a7de2bbcf4688bb1573e726c336ce66f595b54b19ed` |
+| 4 | `structure` | [BalanceGaugeInvariantDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BalanceGauge.lean/declarations/balancegaugeinvariantdefect.md) | 52 | `declaration-track:f3337437affb1dd086168f53b73e5b3af2a9b3e8246f7a059b9f47cda2affe5c` |
+| 5 | `structure` | [BalanceGaugeInvariantTrace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BalanceGauge.lean/declarations/balancegaugeinvarianttrace.md) | 70 | `declaration-track:6ba9d214959df07e606d96c9f25e201a2eec56aec459b598a7eba768c7c3c89c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

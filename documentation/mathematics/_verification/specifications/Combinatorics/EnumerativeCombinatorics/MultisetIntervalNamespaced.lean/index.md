@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instLocallyFiniteOrder](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/declarations/instlocallyfiniteorder.md) | 45 | `declaration-track:b6390978f25f5a194585d656a398e2a3b80153962a47746117c211989f7df214` |
-| 2 | `theorem` | [Icc_eq](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/declarations/icc-eq.md) | 51 | `result-track:ac6361c1902f69ba3c7bfb437c0f78aa580b76cfcf159a64fbc159bae77ba021` |
-| 3 | `theorem` | [uIcc_eq](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/declarations/uicc-eq.md) | 56 | `result-track:40b6712f8cade42f4601d28eec7a4df36b8b38a5ac6f06f8423dfb2a80763bc1` |
-| 4 | `theorem` | [card_Icc](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/declarations/card-icc.md) | 61 | `result-track:3b5b7b8a183d9193aad6bd6fc4d46d8cbc7c9686045319fb56e3199f1195692d` |
-| 5 | `theorem` | [card_Ico](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/declarations/card-ico.md) | 66 | `result-track:21781271dd2d8214cb7bb4e19c9f4486b6ddf8c0355982876904f89c8c330374` |
-| 6 | `theorem` | [card_Ioc](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/declarations/card-ioc.md) | 70 | `result-track:594fe92d889a6ea1f0eca31e6e920f1251869c3925b9a208992b51e65bd8aa46` |
-| 7 | `theorem` | [card_Ioo](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/declarations/card-ioo.md) | 74 | `result-track:0c4c9444510d608c29cf9a27065e57df32b227c8b9abbc35a9dde886d0e73515` |
-| 8 | `theorem` | [card_uIcc](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/declarations/card-uicc.md) | 78 | `result-track:ede52c81c9e821ae26bc84b2e544061f6050edaebe0e14264e7f15af8ede6ca6` |
-| 9 | `theorem` | [card_Iic](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/declarations/card-iic.md) | 83 | `result-track:1d80b8e1c3c33cace8f2a990643bf6545e992a591ec903d0d46c5eaf0930ad8e` |
+| 1 | `instance` | [instLocallyFiniteOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/declarations/instlocallyfiniteorder.md) | 45 | `declaration-track:b6390978f25f5a194585d656a398e2a3b80153962a47746117c211989f7df214` |
+| 2 | `theorem` | [Icc_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/declarations/icc-eq.md) | 51 | `result-track:ac6361c1902f69ba3c7bfb437c0f78aa580b76cfcf159a64fbc159bae77ba021` |
+| 3 | `theorem` | [uIcc_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/declarations/uicc-eq.md) | 56 | `result-track:40b6712f8cade42f4601d28eec7a4df36b8b38a5ac6f06f8423dfb2a80763bc1` |
+| 4 | `theorem` | [card_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/declarations/card-icc.md) | 61 | `result-track:3b5b7b8a183d9193aad6bd6fc4d46d8cbc7c9686045319fb56e3199f1195692d` |
+| 5 | `theorem` | [card_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/declarations/card-ico.md) | 66 | `result-track:21781271dd2d8214cb7bb4e19c9f4486b6ddf8c0355982876904f89c8c330374` |
+| 6 | `theorem` | [card_Ioc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/declarations/card-ioc.md) | 70 | `result-track:594fe92d889a6ea1f0eca31e6e920f1251869c3925b9a208992b51e65bd8aa46` |
+| 7 | `theorem` | [card_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/declarations/card-ioo.md) | 74 | `result-track:0c4c9444510d608c29cf9a27065e57df32b227c8b9abbc35a9dde886d0e73515` |
+| 8 | `theorem` | [card_uIcc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/declarations/card-uicc.md) | 78 | `result-track:ede52c81c9e821ae26bc84b2e544061f6050edaebe0e14264e7f15af8ede6ca6` |
+| 9 | `theorem` | [card_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetIntervalNamespaced.lean/declarations/card-iic.md) | 83 | `result-track:1d80b8e1c3c33cace8f2a990643bf6545e992a591ec903d0d46c5eaf0930ad8e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

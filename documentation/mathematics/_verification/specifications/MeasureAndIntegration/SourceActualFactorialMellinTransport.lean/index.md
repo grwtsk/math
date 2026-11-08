@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualFactorialMellinTransport.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualFactorialMellinTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFactorialMellinTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFactorialMellinTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [scaled_factorial_density](../../../../MeasureAndIntegration/SourceActualFactorialMellinTransport.lean/declarations/scaled-factorial-density.md) | 21 | `result-track:45bbc1bbcba70c4f065827ccd09511b812ca792068668881f10e1408a9887137` |
-| 2 | `theorem` | [scaledFactorialMellin_integrable](../../../../MeasureAndIntegration/SourceActualFactorialMellinTransport.lean/declarations/scaledfactorialmellin-integrable.md) | 34 | `result-track:71019ab66d9c7b14c0f3ba9ffabb320593d4863d9309171ade3d95a84b3a72d3` |
-| 3 | `theorem` | [scaledFactorialMellin_integral](../../../../MeasureAndIntegration/SourceActualFactorialMellinTransport.lean/declarations/scaledfactorialmellin-integral.md) | 48 | `result-track:6d29f6f55a020b4210628290022320be102939085670de85f3287ffb0a756194` |
-| 4 | `theorem` | [shortFactorialMellin_integrable](../../../../MeasureAndIntegration/SourceActualFactorialMellinTransport.lean/declarations/shortfactorialmellin-integrable.md) | 68 | `result-track:c5c6fe94cd9fcb26b59804ab928d78b3429978aadc6f77df32af96e12fa7444f` |
-| 5 | `theorem` | [shortFactorialMellin_integral](../../../../MeasureAndIntegration/SourceActualFactorialMellinTransport.lean/declarations/shortfactorialmellin-integral.md) | 81 | `result-track:466f3f8e87ba8507195ef7c8ab38d07621389a55fa58789b5309dbd6672bdee1` |
-| 6 | `theorem` | [fullKappa_signed_half_inventory_eq_factorial_integral](../../../../MeasureAndIntegration/SourceActualFactorialMellinTransport.lean/declarations/fullkappa-signed-half-inventory-eq-factorial-integral.md) | 103 | `result-track:65cccd22f8ae86b585f86d81183affdb16a16af52bbb5f67c5271cd46e3dd302` |
+| 1 | `theorem` | [scaled_factorial_density](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFactorialMellinTransport.lean/declarations/scaled-factorial-density.md) | 21 | `result-track:45bbc1bbcba70c4f065827ccd09511b812ca792068668881f10e1408a9887137` |
+| 2 | `theorem` | [scaledFactorialMellin_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFactorialMellinTransport.lean/declarations/scaledfactorialmellin-integrable.md) | 34 | `result-track:71019ab66d9c7b14c0f3ba9ffabb320593d4863d9309171ade3d95a84b3a72d3` |
+| 3 | `theorem` | [scaledFactorialMellin_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFactorialMellinTransport.lean/declarations/scaledfactorialmellin-integral.md) | 48 | `result-track:6d29f6f55a020b4210628290022320be102939085670de85f3287ffb0a756194` |
+| 4 | `theorem` | [shortFactorialMellin_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFactorialMellinTransport.lean/declarations/shortfactorialmellin-integrable.md) | 68 | `result-track:c5c6fe94cd9fcb26b59804ab928d78b3429978aadc6f77df32af96e12fa7444f` |
+| 5 | `theorem` | [shortFactorialMellin_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFactorialMellinTransport.lean/declarations/shortfactorialmellin-integral.md) | 81 | `result-track:466f3f8e87ba8507195ef7c8ab38d07621389a55fa58789b5309dbd6672bdee1` |
+| 6 | `theorem` | [fullKappa_signed_half_inventory_eq_factorial_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFactorialMellinTransport.lean/declarations/fullkappa-signed-half-inventory-eq-factorial-integral.md) | 103 | `result-track:65cccd22f8ae86b585f86d81183affdb16a16af52bbb5f67c5271cd46e3dd302` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

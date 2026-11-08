@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rieszMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/declarations/rieszmeasure.md) | 61 | `declaration-track:9820048da1e3f139a0f2b02d2f50151fe86f1f8884bb81cd7aa71c0fbb8d568b` |
-| 2 | `lemma` | [le_rieszMeasure_tsupport_subset](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/declarations/le-rieszmeasure-tsupport-subset.md) | 65 | `result-track:80666ce27e97478ad652fdb122317fc4e5bff823b3187599cb4b6cd1f88fbdf9` |
-| 3 | `lemma` | [rieszMeasure_le_of_eq_one](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/declarations/rieszmeasure-le-of-eq-one.md) | 84 | `result-track:710a8c1d8747c5a4d37bffaedb6248d38849ff66455e30d00d4e9eca289219f2` |
-| 4 | `lemma` | [range_cut_partition](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/declarations/range-cut-partition.md) | 102 | `result-track:0a223317dc2b0c5319eca15147e2ce197798eb65c66a92ec149e522671b44b20` |
-| 5 | `lemma` | [exists_open_approx](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/declarations/exists-open-approx.md) | 151 | `result-track:1038319b31dc6e7e571d30d1069c6d5985d5d1321604f5d0ccbd968889275f1e` |
-| 6 | `lemma` | [exists_nat_large](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/declarations/exists-nat-large.md) | 169 | `result-track:8e0a8e507e5c8ce0ac6cee4850637a7e36fb36a818e4a9c7c9f90f1419f4026c` |
-| 7 | `lemma` | [integral_riesz_aux](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/declarations/integral-riesz-aux.md) | 182 | `result-track:e81afd794b4ff9f3cd179ae56041dd79827fcd7cd25d60402442c656fd44f561` |
-| 8 | `theorem` | [integral_rieszMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/declarations/integral-rieszmeasure.md) | 336 | `result-track:4c0865a916fa9d5e725df49e7ee540177d735bf3c55096f4b5b78deff0edae18` |
+| 1 | `def` | [rieszMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/declarations/rieszmeasure.md) | 61 | `declaration-track:9820048da1e3f139a0f2b02d2f50151fe86f1f8884bb81cd7aa71c0fbb8d568b` |
+| 2 | `lemma` | [le_rieszMeasure_tsupport_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/declarations/le-rieszmeasure-tsupport-subset.md) | 65 | `result-track:80666ce27e97478ad652fdb122317fc4e5bff823b3187599cb4b6cd1f88fbdf9` |
+| 3 | `lemma` | [rieszMeasure_le_of_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/declarations/rieszmeasure-le-of-eq-one.md) | 84 | `result-track:710a8c1d8747c5a4d37bffaedb6248d38849ff66455e30d00d4e9eca289219f2` |
+| 4 | `lemma` | [range_cut_partition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/declarations/range-cut-partition.md) | 102 | `result-track:0a223317dc2b0c5319eca15147e2ce197798eb65c66a92ec149e522671b44b20` |
+| 5 | `lemma` | [exists_open_approx](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/declarations/exists-open-approx.md) | 151 | `result-track:1038319b31dc6e7e571d30d1069c6d5985d5d1321604f5d0ccbd968889275f1e` |
+| 6 | `lemma` | [exists_nat_large](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/declarations/exists-nat-large.md) | 169 | `result-track:8e0a8e507e5c8ce0ac6cee4850637a7e36fb36a818e4a9c7c9f90f1419f4026c` |
+| 7 | `lemma` | [integral_riesz_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/declarations/integral-riesz-aux.md) | 182 | `result-track:e81afd794b4ff9f3cd179ae56041dd79827fcd7cd25d60402442c656fd44f561` |
+| 8 | `theorem` | [integral_rieszMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealRealNamespaced.lean/declarations/integral-rieszmeasure.md) | 336 | `result-track:4c0865a916fa9d5e725df49e7ee540177d735bf3c55096f4b5b78deff0edae18` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

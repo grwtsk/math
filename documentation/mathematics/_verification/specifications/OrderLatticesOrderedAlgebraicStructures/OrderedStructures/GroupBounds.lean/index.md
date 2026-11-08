@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupBounds.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsGLB.exists_between_self_add](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupBounds.lean/declarations/isglb-exists-between-self-add-source-edition-2.md) | 17 | `result-track:8b8b2bd73618a089b113f9f2aa9b747d6c9d6d28fdf73eced374d88ccc23af51` |
-| 2 | `theorem` | [IsGLB.exists_between_self_add'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupBounds.lean/declarations/isglb-exists-between-self-add.md) | 20 | `result-track:88af6dd6e2c58e0e50204595d625b061839cd757c47ae9091f6510c91f81c10f` |
-| 3 | `theorem` | [IsLUB.exists_between_sub_self](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupBounds.lean/declarations/islub-exists-between-sub-self-source-edition-2.md) | 24 | `result-track:6665f4cabda1255333ce1d3e05d5a7580cc2987dd1d7dd60143643365b89e3a2` |
-| 4 | `theorem` | [IsLUB.exists_between_sub_self'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupBounds.lean/declarations/islub-exists-between-sub-self.md) | 27 | `result-track:1950dafee649de639678585cdf616507aad32eaf68c161ce69404d3643b92c97` |
+| 1 | `theorem` | [IsGLB.exists_between_self_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupBounds.lean/declarations/isglb-exists-between-self-add-source-edition-2.md) | 17 | `result-track:8b8b2bd73618a089b113f9f2aa9b747d6c9d6d28fdf73eced374d88ccc23af51` |
+| 2 | `theorem` | [IsGLB.exists_between_self_add'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupBounds.lean/declarations/isglb-exists-between-self-add.md) | 20 | `result-track:88af6dd6e2c58e0e50204595d625b061839cd757c47ae9091f6510c91f81c10f` |
+| 3 | `theorem` | [IsLUB.exists_between_sub_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupBounds.lean/declarations/islub-exists-between-sub-self-source-edition-2.md) | 24 | `result-track:6665f4cabda1255333ce1d3e05d5a7580cc2987dd1d7dd60143643365b89e3a2` |
+| 4 | `theorem` | [IsLUB.exists_between_sub_self'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupBounds.lean/declarations/islub-exists-between-sub-self.md) | 27 | `result-track:1950dafee649de639678585cdf616507aad32eaf68c161ce69404d3643b92c97` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

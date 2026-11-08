@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Dependency.lean/index.md) · [Full source](../../../../Combinatorics/Dependency.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dependency.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dependency.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [DependsTransitively](../../../../Combinatorics/Dependency.lean/declarations/dependstransitively.md) | 17 | `declaration-track:6d028f69eb5cdba9f1396ca10c319c7cde24a17e2027ed7a52b47a3e8df5d449` |
-| 2 | `structure` | [DependencyGraph](../../../../Combinatorics/Dependency.lean/declarations/dependencygraph.md) | 29 | `declaration-track:14ed959fb25f2635a550a2b59a71c23ecb5a0e346444f9f3ae9130e651f58eff` |
-| 3 | `theorem` | [wellFoundedCertificate](../../../../Combinatorics/Dependency.lean/declarations/wellfoundedcertificate.md) | 39 | `result-track:88357c84c1f2220ee1f7dd97d7db517d5ad46f8d3415aa7794dcf7861f3f7cb3` |
-| 4 | `theorem` | [noDependencyCycle](../../../../Combinatorics/Dependency.lean/declarations/nodependencycycle.md) | 48 | `result-track:05415ed65a4e0ea4b95055a5b994b6bb2a7921722bf9c1fbd6af85524b2687a9` |
-| 5 | `theorem` | [transitiveRankLt](../../../../Combinatorics/Dependency.lean/declarations/transitiveranklt.md) | 58 | `result-track:a5b3d85e8164b31cfb615bf49f8af48e6eeec9ed659927ea0c83a36c20db836d` |
-| 6 | `theorem` | [noTransitiveSelfDependency](../../../../Combinatorics/Dependency.lean/declarations/notransitiveselfdependency.md) | 70 | `result-track:860bd2ca934da4d95b5b4b91b6a82d43ac393f57b2ef325f8ea70d1095358f5f` |
-| 7 | `inductive` | [AssuranceProjectComponent](../../../../Combinatorics/Dependency.lean/declarations/assuranceprojectcomponent.md) | 81 | `declaration-track:91b18cce4d85f73ab3fde69efb594c685a8778156281941b667d1b6091488855` |
-| 8 | `def` | [assuranceProjectRank](../../../../Combinatorics/Dependency.lean/declarations/assuranceprojectrank.md) | 91 | `declaration-track:3e8b721b912e6b2f44cf5c34471d52f7871b4e4b044488e903693c2476471fe3` |
-| 9 | `inductive` | [AssuranceProjectDepends](../../../../Combinatorics/Dependency.lean/declarations/assuranceprojectdepends.md) | 100 | `declaration-track:079dbc233f3127a3b600c6e4a59898cff4df7360e8509311822bc55c18c298bc` |
-| 10 | `def` | [assuranceProjectGraph](../../../../Combinatorics/Dependency.lean/declarations/assuranceprojectgraph.md) | 109 | `declaration-track:f6515526a2c176b90f34eff66b9754bee9e0563a7f8e849bd897593d52880ded` |
-| 11 | `theorem` | [assuranceProjectGraph_acyclic](../../../../Combinatorics/Dependency.lean/declarations/assuranceprojectgraph-acyclic.md) | 117 | `result-track:d3c1b257efe655d0cb2a5a9eb2052e7039ab776829037ae5f608ad13d8b2bf26` |
+| 1 | `inductive` | [DependsTransitively](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dependency.lean/declarations/dependstransitively.md) | 17 | `declaration-track:6d028f69eb5cdba9f1396ca10c319c7cde24a17e2027ed7a52b47a3e8df5d449` |
+| 2 | `structure` | [DependencyGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dependency.lean/declarations/dependencygraph.md) | 29 | `declaration-track:14ed959fb25f2635a550a2b59a71c23ecb5a0e346444f9f3ae9130e651f58eff` |
+| 3 | `theorem` | [wellFoundedCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dependency.lean/declarations/wellfoundedcertificate.md) | 39 | `result-track:88357c84c1f2220ee1f7dd97d7db517d5ad46f8d3415aa7794dcf7861f3f7cb3` |
+| 4 | `theorem` | [noDependencyCycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dependency.lean/declarations/nodependencycycle.md) | 48 | `result-track:05415ed65a4e0ea4b95055a5b994b6bb2a7921722bf9c1fbd6af85524b2687a9` |
+| 5 | `theorem` | [transitiveRankLt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dependency.lean/declarations/transitiveranklt.md) | 58 | `result-track:a5b3d85e8164b31cfb615bf49f8af48e6eeec9ed659927ea0c83a36c20db836d` |
+| 6 | `theorem` | [noTransitiveSelfDependency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dependency.lean/declarations/notransitiveselfdependency.md) | 70 | `result-track:860bd2ca934da4d95b5b4b91b6a82d43ac393f57b2ef325f8ea70d1095358f5f` |
+| 7 | `inductive` | [AssuranceProjectComponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dependency.lean/declarations/assuranceprojectcomponent.md) | 81 | `declaration-track:91b18cce4d85f73ab3fde69efb594c685a8778156281941b667d1b6091488855` |
+| 8 | `def` | [assuranceProjectRank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dependency.lean/declarations/assuranceprojectrank.md) | 91 | `declaration-track:3e8b721b912e6b2f44cf5c34471d52f7871b4e4b044488e903693c2476471fe3` |
+| 9 | `inductive` | [AssuranceProjectDepends](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dependency.lean/declarations/assuranceprojectdepends.md) | 100 | `declaration-track:079dbc233f3127a3b600c6e4a59898cff4df7360e8509311822bc55c18c298bc` |
+| 10 | `def` | [assuranceProjectGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dependency.lean/declarations/assuranceprojectgraph.md) | 109 | `declaration-track:f6515526a2c176b90f34eff66b9754bee9e0563a7f8e849bd897593d52880ded` |
+| 11 | `theorem` | [assuranceProjectGraph_acyclic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Dependency.lean/declarations/assuranceprojectgraph-acyclic.md) | 117 | `result-track:d3c1b257efe655d0cb2a5a9eb2052e7039ab776829037ae5f608ad13d8b2bf26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

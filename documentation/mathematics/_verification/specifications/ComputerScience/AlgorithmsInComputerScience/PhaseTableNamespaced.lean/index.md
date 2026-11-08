@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [phaseTable](../../../../../ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/declarations/phasetable.md) | 18 | `declaration-track:5450b2dddc69396c8d27f574414c0ec24979f2662a03eacbcc79c39977f6dcdc` |
-| 2 | `def` | [allPhaseModules](../../../../../ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/declarations/allphasemodules.md) | 21 | `declaration-track:f3f46937f8595727174251df539e52474335db017f21ff49171452b654321c9c` |
-| 3 | `theorem` | [phaseTable_count](../../../../../ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/declarations/phasetable-count.md) | 24 | `result-track:4f8be6144606d9e10c10ae92cb43dc6c5b00b594ddb9dff3af5453f11e254877` |
-| 4 | `theorem` | [allPhaseModules_count](../../../../../ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/declarations/allphasemodules-count.md) | 28 | `result-track:b652d79daa1aa52062929224e00db51bea15a1922e3ccc9f7c9fe521cf9859a2` |
-| 5 | `theorem` | [allPhaseModules_eq_centerSpine](../../../../../ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/declarations/allphasemodules-eq-centerspine.md) | 32 | `result-track:e5b3dead017f6f713527b4d8326f73c10656d9a97c1a35546463e8552dd0e8af` |
-| 6 | `def` | [phase37Spec](../../../../../ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/declarations/phase37spec.md) | 36 | `declaration-track:748d3c5e0cc5167dbb5c3d24d8a8d81ca2896ec5cc0594be4273cdf56ac8c046` |
-| 7 | `theorem` | [phase37Spec_mirror](../../../../../ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/declarations/phase37spec-mirror.md) | 39 | `result-track:ee811fe3f4a697cdc8f0a6df5dc909c86817ccd1285ca819922bf8110116be29` |
-| 8 | `theorem` | [phase37Spec_weight](../../../../../ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/declarations/phase37spec-weight.md) | 43 | `result-track:80cc17b0c1049c24d9b7fedf6cd78b7f2a88eb436a62283030bbb3fb450de9d6` |
+| 1 | `def` | [phaseTable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/declarations/phasetable.md) | 18 | `declaration-track:5450b2dddc69396c8d27f574414c0ec24979f2662a03eacbcc79c39977f6dcdc` |
+| 2 | `def` | [allPhaseModules](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/declarations/allphasemodules.md) | 21 | `declaration-track:f3f46937f8595727174251df539e52474335db017f21ff49171452b654321c9c` |
+| 3 | `theorem` | [phaseTable_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/declarations/phasetable-count.md) | 24 | `result-track:4f8be6144606d9e10c10ae92cb43dc6c5b00b594ddb9dff3af5453f11e254877` |
+| 4 | `theorem` | [allPhaseModules_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/declarations/allphasemodules-count.md) | 28 | `result-track:b652d79daa1aa52062929224e00db51bea15a1922e3ccc9f7c9fe521cf9859a2` |
+| 5 | `theorem` | [allPhaseModules_eq_centerSpine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/declarations/allphasemodules-eq-centerspine.md) | 32 | `result-track:e5b3dead017f6f713527b4d8326f73c10656d9a97c1a35546463e8552dd0e8af` |
+| 6 | `def` | [phase37Spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/declarations/phase37spec.md) | 36 | `declaration-track:748d3c5e0cc5167dbb5c3d24d8a8d81ca2896ec5cc0594be4273cdf56ac8c046` |
+| 7 | `theorem` | [phase37Spec_mirror](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/declarations/phase37spec-mirror.md) | 39 | `result-track:ee811fe3f4a697cdc8f0a6df5dc909c86817ccd1285ca819922bf8110116be29` |
+| 8 | `theorem` | [phase37Spec_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PhaseTableNamespaced.lean/declarations/phase37spec-weight.md) | 43 | `result-track:80cc17b0c1049c24d9b7fedf6cd78b7f2a88eb436a62283030bbb3fb450de9d6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

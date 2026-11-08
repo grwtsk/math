@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PaperFT.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PaperFT.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PaperFT.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PaperFT.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,20 +61,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [paperFT_def](../../../../MeasureAndIntegration/PaperFT.lean/declarations/paperft-def.md) | 27 | `result-track:f4456a9d8387affd421c996f69972974a1873acf1cbf6faad1642cfaa4df7a2e` |
-| 2 | `theorem` | [integral_const_mul_C](../../../../MeasureAndIntegration/PaperFT.lean/declarations/integral-const-mul-c.md) | 34 | `result-track:bcd2072ae776c021097b33527b55707d7d724070bb5eee3e1dd9b60ba814c22e` |
-| 3 | `theorem` | [integral_mul_const_C](../../../../MeasureAndIntegration/PaperFT.lean/declarations/integral-mul-const-c.md) | 37 | `result-track:7ca37286736196d1aa53c957858cc6701402beed4c907ad3046139feac2fe82c` |
-| 4 | `theorem` | [paperFT_ofReal_eq_fourier](../../../../MeasureAndIntegration/PaperFT.lean/declarations/paperft-ofreal-eq-fourier.md) | 42 | `result-track:3ff7be82621c0704088badfef47145b8352cbec43de56e14a91d5981ed244119` |
-| 5 | `theorem` | [fourier_eq_paperFT](../../../../MeasureAndIntegration/PaperFT.lean/declarations/fourier-eq-paperft.md) | 54 | `result-track:49aac230bb1b8cdab12c287b83b56ccb9510c799257938078be449bdabedff3e` |
-| 6 | `theorem` | [norm_cexp_I_mul](../../../../MeasureAndIntegration/PaperFT.lean/declarations/norm-cexp-i-mul.md) | 67 | `result-track:ed43e57d56df7994a0ca814a2bd10bcfa86b686a9d59d2619b2644268e9a8e52` |
-| 7 | `theorem` | [norm_cexp_I_mul_le](../../../../MeasureAndIntegration/PaperFT.lean/declarations/norm-cexp-i-mul-le.md) | 72 | `result-track:78dfcedcb74534d19bb3e3abd0396e2942bd8bbc2244b66112127ac9edb8365c` |
-| 8 | `theorem` | [norm_paperFT_le](../../../../MeasureAndIntegration/PaperFT.lean/declarations/norm-paperft-le.md) | 80 | `result-track:3fdb57d6f05e1f65673cd6f1efcaac89a573fdd9379f8a8a450b08c6bc779d8a` |
-| 9 | `theorem` | [paperFT_deriv](../../../../MeasureAndIntegration/PaperFT.lean/declarations/paperft-deriv.md) | 93 | `result-track:56c826bb83a657731206250707691de3991dda85fb543ba9a026600654c7e5fb` |
-| 10 | `theorem` | [paperFT_deriv_deriv](../../../../MeasureAndIntegration/PaperFT.lean/declarations/paperft-deriv-deriv.md) | 119 | `result-track:6df530d29862688ef5fda7a3b25793137dd3352f04e0f686ac9a70796e122e16` |
-| 11 | `theorem` | [hasCompactSupport_of_support_subset_abs](../../../../MeasureAndIntegration/PaperFT.lean/declarations/hascompactsupport-of-support-subset-abs.md) | 127 | `result-track:192d020de4dc68d6ccd674f65c9367f27a48e93a607f4501627caa6be980ab70` |
-| 12 | `theorem` | [tsupport_subset_of_support_subset_abs](../../../../MeasureAndIntegration/PaperFT.lean/declarations/tsupport-subset-of-support-subset-abs.md) | 133 | `result-track:34ba3655ca28bfc8b9b0c8617a83eab3412bdc43b729d634922939467d6a12ea` |
-| 13 | `theorem` | [norm_paperFT_mul_sq_le](../../../../MeasureAndIntegration/PaperFT.lean/declarations/norm-paperft-mul-sq-le.md) | 139 | `result-track:de7ed3fead30c553bb8f101c4d67b2d55bfd6469d692541e8092ddc4475b7612` |
-| 14 | `theorem` | [norm_paperFT_le_div](../../../../MeasureAndIntegration/PaperFT.lean/declarations/norm-paperft-le-div.md) | 156 | `result-track:70e645374741692cd1b8d12b9a593915d6db7aeabefe38144164e720f34e7151` |
+| 1 | `theorem` | [paperFT_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PaperFT.lean/declarations/paperft-def.md) | 27 | `result-track:f4456a9d8387affd421c996f69972974a1873acf1cbf6faad1642cfaa4df7a2e` |
+| 2 | `theorem` | [integral_const_mul_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PaperFT.lean/declarations/integral-const-mul-c.md) | 34 | `result-track:bcd2072ae776c021097b33527b55707d7d724070bb5eee3e1dd9b60ba814c22e` |
+| 3 | `theorem` | [integral_mul_const_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PaperFT.lean/declarations/integral-mul-const-c.md) | 37 | `result-track:7ca37286736196d1aa53c957858cc6701402beed4c907ad3046139feac2fe82c` |
+| 4 | `theorem` | [paperFT_ofReal_eq_fourier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PaperFT.lean/declarations/paperft-ofreal-eq-fourier.md) | 42 | `result-track:3ff7be82621c0704088badfef47145b8352cbec43de56e14a91d5981ed244119` |
+| 5 | `theorem` | [fourier_eq_paperFT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PaperFT.lean/declarations/fourier-eq-paperft.md) | 54 | `result-track:49aac230bb1b8cdab12c287b83b56ccb9510c799257938078be449bdabedff3e` |
+| 6 | `theorem` | [norm_cexp_I_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PaperFT.lean/declarations/norm-cexp-i-mul.md) | 67 | `result-track:ed43e57d56df7994a0ca814a2bd10bcfa86b686a9d59d2619b2644268e9a8e52` |
+| 7 | `theorem` | [norm_cexp_I_mul_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PaperFT.lean/declarations/norm-cexp-i-mul-le.md) | 72 | `result-track:78dfcedcb74534d19bb3e3abd0396e2942bd8bbc2244b66112127ac9edb8365c` |
+| 8 | `theorem` | [norm_paperFT_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PaperFT.lean/declarations/norm-paperft-le.md) | 80 | `result-track:3fdb57d6f05e1f65673cd6f1efcaac89a573fdd9379f8a8a450b08c6bc779d8a` |
+| 9 | `theorem` | [paperFT_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PaperFT.lean/declarations/paperft-deriv.md) | 93 | `result-track:56c826bb83a657731206250707691de3991dda85fb543ba9a026600654c7e5fb` |
+| 10 | `theorem` | [paperFT_deriv_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PaperFT.lean/declarations/paperft-deriv-deriv.md) | 119 | `result-track:6df530d29862688ef5fda7a3b25793137dd3352f04e0f686ac9a70796e122e16` |
+| 11 | `theorem` | [hasCompactSupport_of_support_subset_abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PaperFT.lean/declarations/hascompactsupport-of-support-subset-abs.md) | 127 | `result-track:192d020de4dc68d6ccd674f65c9367f27a48e93a607f4501627caa6be980ab70` |
+| 12 | `theorem` | [tsupport_subset_of_support_subset_abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PaperFT.lean/declarations/tsupport-subset-of-support-subset-abs.md) | 133 | `result-track:34ba3655ca28bfc8b9b0c8617a83eab3412bdc43b729d634922939467d6a12ea` |
+| 13 | `theorem` | [norm_paperFT_mul_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PaperFT.lean/declarations/norm-paperft-mul-sq-le.md) | 139 | `result-track:de7ed3fead30c553bb8f101c4d67b2d55bfd6469d692541e8092ddc4475b7612` |
+| 14 | `theorem` | [norm_paperFT_le_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PaperFT.lean/declarations/norm-paperft-le-div.md) | 156 | `result-track:70e645374741692cd1b8d12b9a593915d6db7aeabefe38144164e720f34e7151` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

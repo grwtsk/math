@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AlgebraUltraNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AlgebraUltraNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AlgebraUltraNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AlgebraUltraNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsUltrametricDist.of_normedAlgebra'](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AlgebraUltraNamespaced.lean/declarations/isultrametricdist-of-normedalgebra.md) | 33 | `result-track:8714d303791b430d1ada245e9ef7c96b2cf3f27db54c7990b64c17d427ae128a` |
-| 2 | `theorem` | [IsUltrametricDist.of_normedAlgebra](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AlgebraUltraNamespaced.lean/declarations/isultrametricdist-of-normedalgebra-source-edition-2.md) | 43 | `result-track:feee7cfa28fa48df7aa0251adf7947448d12a8daf2fd5f53bb884079e185b956` |
-| 3 | `theorem` | [IsUltrametricDist.normedAlgebra_iff](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AlgebraUltraNamespaced.lean/declarations/isultrametricdist-normedalgebra-iff.md) | 53 | `result-track:b8a2547159628b870568ee01c8200cb8167d1af5871bdf7d963b2f318bda4c70` |
+| 1 | `theorem` | [IsUltrametricDist.of_normedAlgebra'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AlgebraUltraNamespaced.lean/declarations/isultrametricdist-of-normedalgebra.md) | 33 | `result-track:8714d303791b430d1ada245e9ef7c96b2cf3f27db54c7990b64c17d427ae128a` |
+| 2 | `theorem` | [IsUltrametricDist.of_normedAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AlgebraUltraNamespaced.lean/declarations/isultrametricdist-of-normedalgebra-source-edition-2.md) | 43 | `result-track:feee7cfa28fa48df7aa0251adf7947448d12a8daf2fd5f53bb884079e185b956` |
+| 3 | `theorem` | [IsUltrametricDist.normedAlgebra_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AlgebraUltraNamespaced.lean/declarations/isultrametricdist-normedalgebra-iff.md) | 53 | `result-track:b8a2547159628b870568ee01c8200cb8167d1af5871bdf7d963b2f318bda4c70` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

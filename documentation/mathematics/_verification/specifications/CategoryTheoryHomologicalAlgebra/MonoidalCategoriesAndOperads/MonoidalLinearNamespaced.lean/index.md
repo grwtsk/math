@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLinearNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLinearNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLinearNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLinearNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [MonoidalLinear](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLinearNamespaced.lean/declarations/monoidallinear.md) | 38 | `declaration-track:2d18de8fb5ed57a4b9ac21066e9f77fe57500b127f79b798cc0b3cfdfc574045` |
-| 2 | `instance` | [tensorLeft_linear](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLinearNamespaced.lean/declarations/tensorleft-linear.md) | 49 | `declaration-track:a646546de6573bf8b42052139cff41958bdbe6eb74c528329c932cb35aaa531c` |
-| 3 | `instance` | [tensorRight_linear](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLinearNamespaced.lean/declarations/tensorright-linear.md) | 51 | `declaration-track:d313a85e94a32630e154bb46ab1a3802dde4c9e3ab085ffc50c0450233976d27` |
-| 4 | `instance` | [tensoringLeft_linear](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLinearNamespaced.lean/declarations/tensoringleft-linear.md) | 53 | `declaration-track:b9ef314ab5c32f23367ee275ad918f51a4c293ebd744dd15af1f29a3139bfee2` |
-| 5 | `instance` | [tensoringRight_linear](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLinearNamespaced.lean/declarations/tensoringright-linear.md) | 55 | `declaration-track:e8d1258ec201d11f7ed81b9553f0524370a234fad7a175738493397e7e604b6d` |
-| 6 | `theorem` | [monoidalLinearOfFaithful](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLinearNamespaced.lean/declarations/monoidallinearoffaithful.md) | 59 | `result-track:d9a0fcfbcf757ecca5004b5bd126c1b031a74e086adbc2b8826389ce72ca3fcc` |
+| 1 | `class` | [MonoidalLinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLinearNamespaced.lean/declarations/monoidallinear.md) | 38 | `declaration-track:2d18de8fb5ed57a4b9ac21066e9f77fe57500b127f79b798cc0b3cfdfc574045` |
+| 2 | `instance` | [tensorLeft_linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLinearNamespaced.lean/declarations/tensorleft-linear.md) | 49 | `declaration-track:a646546de6573bf8b42052139cff41958bdbe6eb74c528329c932cb35aaa531c` |
+| 3 | `instance` | [tensorRight_linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLinearNamespaced.lean/declarations/tensorright-linear.md) | 51 | `declaration-track:d313a85e94a32630e154bb46ab1a3802dde4c9e3ab085ffc50c0450233976d27` |
+| 4 | `instance` | [tensoringLeft_linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLinearNamespaced.lean/declarations/tensoringleft-linear.md) | 53 | `declaration-track:b9ef314ab5c32f23367ee275ad918f51a4c293ebd744dd15af1f29a3139bfee2` |
+| 5 | `instance` | [tensoringRight_linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLinearNamespaced.lean/declarations/tensoringright-linear.md) | 55 | `declaration-track:e8d1258ec201d11f7ed81b9553f0524370a234fad7a175738493397e7e604b6d` |
+| 6 | `theorem` | [monoidalLinearOfFaithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLinearNamespaced.lean/declarations/monoidallinearoffaithful.md) | 59 | `result-track:d9a0fcfbcf757ecca5004b5bd126c1b031a74e086adbc2b8826389ce72ca3fcc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/CheckedRowMajorCellRecord.lean/index.md) · [Full source](../../../../Geometry/CheckedRowMajorCellRecord.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CheckedRowMajorCellRecord.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CheckedRowMajorCellRecord.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GridCellRecord](../../../../Geometry/CheckedRowMajorCellRecord.lean/declarations/gridcellrecord.md) | 44 | `declaration-track:7643d0a1c009eb122a1feccd37c3cc20004c2f453e901d6bf64833cc8a40024c` |
-| 2 | `def` | [abstractGridCell](../../../../Geometry/CheckedRowMajorCellRecord.lean/declarations/abstractgridcell.md) | 52 | `declaration-track:681fc9c06147ff7a7cc46c8e08e479b046789e5a35752430bb5f8a0cf4160dab` |
-| 3 | `def` | [gridCellRepresentation](../../../../Geometry/CheckedRowMajorCellRecord.lean/declarations/gridcellrepresentation.md) | 58 | `declaration-track:b37e17a6851d76381fd51176f8fb55bdeb820b80339dd0be84a3cb5c4557f4e2` |
-| 4 | `theorem` | [abstractGridCell_rowMajorIndex](../../../../Geometry/CheckedRowMajorCellRecord.lean/declarations/abstractgridcell-rowmajorindex.md) | 67 | `result-track:7fe547b2e680c96682fea005e5fecaef90b755e71754c539f32a7edc2d136f9c` |
+| 1 | `structure` | [GridCellRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CheckedRowMajorCellRecord.lean/declarations/gridcellrecord.md) | 44 | `declaration-track:7643d0a1c009eb122a1feccd37c3cc20004c2f453e901d6bf64833cc8a40024c` |
+| 2 | `def` | [abstractGridCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CheckedRowMajorCellRecord.lean/declarations/abstractgridcell.md) | 52 | `declaration-track:681fc9c06147ff7a7cc46c8e08e479b046789e5a35752430bb5f8a0cf4160dab` |
+| 3 | `def` | [gridCellRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CheckedRowMajorCellRecord.lean/declarations/gridcellrepresentation.md) | 58 | `declaration-track:b37e17a6851d76381fd51176f8fb55bdeb820b80339dd0be84a3cb5c4557f4e2` |
+| 4 | `theorem` | [abstractGridCell_rowMajorIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CheckedRowMajorCellRecord.lean/declarations/abstractgridcell-rowmajorindex.md) | 67 | `result-track:7fe547b2e680c96682fea005e5fecaef90b755e71754c539f32a7edc2d136f9c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ObstructionNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ObstructionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ObstructionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ObstructionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ObstructionKind](../../../../Combinatorics/ObstructionNamespaced.lean/declarations/obstructionkind.md) | 22 | `declaration-track:dcd01880f34c3f9645a5c589e381bc57ee3a7a636c57db0493344fc0eed1e9d8` |
-| 2 | `structure` | [ImmutableSnapshot](../../../../Combinatorics/ObstructionNamespaced.lean/declarations/immutablesnapshot.md) | 41 | `declaration-track:c711d9d9d319f797f22baa971b1d90df7939f9f258a61ce612c6a9bf2abfe3ff` |
-| 3 | `structure` | [MutationProgram](../../../../Combinatorics/ObstructionNamespaced.lean/declarations/mutationprogram.md) | 46 | `declaration-track:0df0673bff95a09b0050be7277e89cead6ea566fb86f2db6464f8def1651b474` |
-| 4 | `structure` | [KnownObstruction](../../../../Combinatorics/ObstructionNamespaced.lean/declarations/knownobstruction.md) | 51 | `declaration-track:0c239f6293fd2855abddf88ccff82c5b0933edbfb74ae4b8e91396d824814ecf` |
-| 5 | `def` | [directMutationSupport](../../../../Combinatorics/ObstructionNamespaced.lean/declarations/directmutationsupport.md) | 69 | `declaration-track:c01eb7ab50f2de5944fc2cbac4c99690e5780cf9ea1dfdd0368914586e676fa3` |
-| 6 | `theorem` | [direct_mutation_support_exact](../../../../Combinatorics/ObstructionNamespaced.lean/declarations/direct-mutation-support-exact.md) | 76 | `result-track:71350042cf2452123c3d617df2ee334f7315ffafd110ab65258c811d23c26193` |
+| 1 | `inductive` | [ObstructionKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ObstructionNamespaced.lean/declarations/obstructionkind.md) | 22 | `declaration-track:dcd01880f34c3f9645a5c589e381bc57ee3a7a636c57db0493344fc0eed1e9d8` |
+| 2 | `structure` | [ImmutableSnapshot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ObstructionNamespaced.lean/declarations/immutablesnapshot.md) | 41 | `declaration-track:c711d9d9d319f797f22baa971b1d90df7939f9f258a61ce612c6a9bf2abfe3ff` |
+| 3 | `structure` | [MutationProgram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ObstructionNamespaced.lean/declarations/mutationprogram.md) | 46 | `declaration-track:0df0673bff95a09b0050be7277e89cead6ea566fb86f2db6464f8def1651b474` |
+| 4 | `structure` | [KnownObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ObstructionNamespaced.lean/declarations/knownobstruction.md) | 51 | `declaration-track:0c239f6293fd2855abddf88ccff82c5b0933edbfb74ae4b8e91396d824814ecf` |
+| 5 | `def` | [directMutationSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ObstructionNamespaced.lean/declarations/directmutationsupport.md) | 69 | `declaration-track:c01eb7ab50f2de5944fc2cbac4c99690e5780cf9ea1dfdd0368914586e676fa3` |
+| 6 | `theorem` | [direct_mutation_support_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ObstructionNamespaced.lean/declarations/direct-mutation-support-exact.md) | 76 | `result-track:71350042cf2452123c3d617df2ee334f7315ffafd110ab65258c811d23c26193` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

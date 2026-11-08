@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossedProductOperatorNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossedProductOperatorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossedProductOperatorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossedProductOperatorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SelfAdjointCrossedProductOperator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossedProductOperatorNamespaced.lean/declarations/selfadjointcrossedproductoperator.md) | 25 | `declaration-track:a0b274f784e0241b5d68cc4b61f8e4c4a7270eaba3f05c5051250b8952c6d774` |
-| 2 | `structure` | [CrossedProductSemisimplicityCertificate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossedProductOperatorNamespaced.lean/declarations/crossedproductsemisimplicitycertificate.md) | 66 | `declaration-track:2b42d8b24337ef19f7bffd0a30212d52b4a570931f449a0143a6f2e935501f7a` |
+| 1 | `structure` | [SelfAdjointCrossedProductOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossedProductOperatorNamespaced.lean/declarations/selfadjointcrossedproductoperator.md) | 25 | `declaration-track:a0b274f784e0241b5d68cc4b61f8e4c4a7270eaba3f05c5051250b8952c6d774` |
+| 2 | `structure` | [CrossedProductSemisimplicityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossedProductOperatorNamespaced.lean/declarations/crossedproductsemisimplicitycertificate.md) | 66 | `declaration-track:2b42d8b24337ef19f7bffd0a30212d52b4a570931f449a0143a6f2e935501f7a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

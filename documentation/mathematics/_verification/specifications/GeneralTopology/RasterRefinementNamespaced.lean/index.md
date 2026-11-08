@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/RasterRefinementNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/RasterRefinementNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RasterRefinementNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RasterRefinementNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MeshRefinement](../../../../GeneralTopology/RasterRefinementNamespaced.lean/declarations/meshrefinement.md) | 27 | `declaration-track:6c03c8f0ee9f9c81680a9d0ce0c22e3e9285536b9fc35682b10ddf377fd03b2d` |
-| 2 | `structure` | [RasterRefinement](../../../../GeneralTopology/RasterRefinementNamespaced.lean/declarations/rasterrefinement.md) | 54 | `declaration-track:2cca4c7ce50a670fdcfe187842b553ce57c522c59066176d2dc3a869eee3b3da` |
-| 3 | `theorem` | [restrict_field](../../../../GeneralTopology/RasterRefinementNamespaced.lean/declarations/restrict-field.md) | 87 | `result-track:571d4135695761ff98d1b7863b47f914085fb9461c1e6e67a72eb5c3b2aad43c` |
-| 4 | `theorem` | [vertex_value_commutes](../../../../GeneralTopology/RasterRefinementNamespaced.lean/declarations/vertex-value-commutes.md) | 95 | `result-track:753dc3410b0cd697fad34f4b4864bea13a412fc68c0e07fb5dbb6315059c4a26` |
+| 1 | `structure` | [MeshRefinement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RasterRefinementNamespaced.lean/declarations/meshrefinement.md) | 27 | `declaration-track:6c03c8f0ee9f9c81680a9d0ce0c22e3e9285536b9fc35682b10ddf377fd03b2d` |
+| 2 | `structure` | [RasterRefinement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RasterRefinementNamespaced.lean/declarations/rasterrefinement.md) | 54 | `declaration-track:2cca4c7ce50a670fdcfe187842b553ce57c522c59066176d2dc3a869eee3b3da` |
+| 3 | `theorem` | [restrict_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RasterRefinementNamespaced.lean/declarations/restrict-field.md) | 87 | `result-track:571d4135695761ff98d1b7863b47f914085fb9461c1e6e67a72eb5c3b2aad43c` |
+| 4 | `theorem` | [vertex_value_commutes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RasterRefinementNamespaced.lean/declarations/vertex-value-commutes.md) | 95 | `result-track:753dc3410b0cd697fad34f4b4864bea13a412fc68c0e07fb5dbb6315059c4a26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/BezierExamplesNamespacedHalf.lean/index.md) · [Full source](../../../../GeneralTopology/BezierExamplesNamespacedHalf.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamplesNamespacedHalf.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamplesNamespacedHalf.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [weightedLine](../../../../GeneralTopology/BezierExamplesNamespacedHalf.lean/declarations/weightedline.md) | 25 | `declaration-track:bb782507b9112fdd649f2ed92bb1acb84bee1ae262b73aad193f092fe58aac4e` |
-| 2 | `def` | [half](../../../../GeneralTopology/BezierExamplesNamespacedHalf.lean/declarations/half.md) | 32 | `declaration-track:79b68aae332d90f03f53b62cae614c7bc153b8e27e46470cb439282c71c87c02` |
-| 3 | `example` | [(anonymous)](../../../../GeneralTopology/BezierExamplesNamespacedHalf.lean/declarations/example.md) | 35 | `declaration-track:08799d62182ab8e21e62aace236cd84b9031c06bcd9c3941287810d2a5821506` |
-| 4 | `example` | [(anonymous)](../../../../GeneralTopology/BezierExamplesNamespacedHalf.lean/declarations/example-source-edition-4.md) | 38 | `declaration-track:61bb1051d3ccfc133b85677f5983a4b3839371ed889ea3ccf69039358238186f` |
-| 5 | `example` | [(anonymous)](../../../../GeneralTopology/BezierExamplesNamespacedHalf.lean/declarations/example-source-edition-7.md) | 41 | `declaration-track:916eb28c329b434f279bacbac6d111e00b35e41c17e9e9790222f76314ba2879` |
-| 6 | `example` | [(anonymous)](../../../../GeneralTopology/BezierExamplesNamespacedHalf.lean/declarations/example-source-edition-6.md) | 44 | `declaration-track:8341e846595f4336277d4989eccbb3a6cc778cfe48eaab623ad5029740c553d1` |
-| 7 | `example` | [(anonymous)](../../../../GeneralTopology/BezierExamplesNamespacedHalf.lean/declarations/example-source-edition-3.md) | 49 | `declaration-track:5afcedb3882f8c8c9a990dd0bfd3ed948d3f57c054d614127caa04f2d8ff93a7` |
-| 8 | `example` | [(anonymous)](../../../../GeneralTopology/BezierExamplesNamespacedHalf.lean/declarations/example-source-edition-2.md) | 54 | `declaration-track:31e4f181041c3e56bf0be5968940b3e48667d28ca9093e186965f8fda463df8d` |
-| 9 | `example` | [(anonymous)](../../../../GeneralTopology/BezierExamplesNamespacedHalf.lean/declarations/example-source-edition-5.md) | 61 | `declaration-track:6d38dd31e1acd754a3a573a2de2344d1377d8fd5d9d70a15ff2dde43fed36c33` |
+| 1 | `def` | [weightedLine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamplesNamespacedHalf.lean/declarations/weightedline.md) | 25 | `declaration-track:bb782507b9112fdd649f2ed92bb1acb84bee1ae262b73aad193f092fe58aac4e` |
+| 2 | `def` | [half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamplesNamespacedHalf.lean/declarations/half.md) | 32 | `declaration-track:79b68aae332d90f03f53b62cae614c7bc153b8e27e46470cb439282c71c87c02` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamplesNamespacedHalf.lean/declarations/example.md) | 35 | `declaration-track:08799d62182ab8e21e62aace236cd84b9031c06bcd9c3941287810d2a5821506` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamplesNamespacedHalf.lean/declarations/example-source-edition-4.md) | 38 | `declaration-track:61bb1051d3ccfc133b85677f5983a4b3839371ed889ea3ccf69039358238186f` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamplesNamespacedHalf.lean/declarations/example-source-edition-7.md) | 41 | `declaration-track:916eb28c329b434f279bacbac6d111e00b35e41c17e9e9790222f76314ba2879` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamplesNamespacedHalf.lean/declarations/example-source-edition-6.md) | 44 | `declaration-track:8341e846595f4336277d4989eccbb3a6cc778cfe48eaab623ad5029740c553d1` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamplesNamespacedHalf.lean/declarations/example-source-edition-3.md) | 49 | `declaration-track:5afcedb3882f8c8c9a990dd0bfd3ed948d3f57c054d614127caa04f2d8ff93a7` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamplesNamespacedHalf.lean/declarations/example-source-edition-2.md) | 54 | `declaration-track:31e4f181041c3e56bf0be5968940b3e48667d28ca9093e186965f8fda463df8d` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BezierExamplesNamespacedHalf.lean/declarations/example-source-edition-5.md) | 61 | `declaration-track:6d38dd31e1acd754a3a573a2de2344d1377d8fd5d9d70a15ff2dde43fed36c33` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

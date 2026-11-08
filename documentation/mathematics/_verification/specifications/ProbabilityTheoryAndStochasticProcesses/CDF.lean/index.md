@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CDF.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CDF.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CDF.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CDF.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cdf](../../../../ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/cdf.md) | 51 | `declaration-track:b198fa51b0d48d95180ac96ef833a9325fd134c09ff9993a3f6228a5406f9b1b` |
-| 2 | `lemma` | [cdf_nonneg](../../../../ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/cdf-nonneg.md) | 58 | `result-track:a037132fae83c7e0c9d71e5941eb9c7bc47a09875b8b8d5fbaf60f429e1a74eb` |
-| 3 | `lemma` | [cdf_le_one](../../../../ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/cdf-le-one.md) | 61 | `result-track:a5a1555ea5c583daedc1b2ff855eac50f9fd172352172cdeb6382ca26941cc84` |
-| 4 | `lemma` | [monotone_cdf](../../../../ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/monotone-cdf.md) | 64 | `result-track:829457cdfd6c7d50cde5e611a555936c2b3acfde0b449d170f8cd7eb57563f03` |
-| 5 | `lemma` | [tendsto_cdf_atBot](../../../../ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/tendsto-cdf-atbot.md) | 67 | `result-track:0349116dcb2c5e4b201508ba19d8b79f06694f7c8a2ec6a4fb75b56f54a38b25` |
-| 6 | `lemma` | [tendsto_cdf_atTop](../../../../ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/tendsto-cdf-attop.md) | 70 | `result-track:b6b7e57c03bc493c52cc332a9b314fc212ef2a04de05abb4b2478a7fdfaec774` |
-| 7 | `lemma` | [ofReal_cdf](../../../../ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/ofreal-cdf.md) | 72 | `result-track:745bb88e965c11c7731a72e43775996d3c1e26d837c4c0043ebf9492b0b39160` |
-| 8 | `lemma` | [cdf_eq_real](../../../../ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/cdf-eq-real.md) | 77 | `result-track:ccbd9675594e841227ddb30e4ce6c45c6611c534b6b8544ca6d27024dbcf6c3b` |
-| 9 | `instance` | [instIsProbabilityMeasurecdf](../../../../ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/instisprobabilitymeasurecdf.md) | 82 | `declaration-track:533244db435bc6b76810ab14bca8ed5e88667d2e41ba9d66c209ab78caaa20d8` |
-| 10 | `lemma` | [measure_cdf](../../../../ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/measure-cdf.md) | 88 | `result-track:21e0e7b17c1e4859cda30757bfacb2656fa6aedd9711f18a46c23a3e17c7e694` |
-| 11 | `lemma` | [cdf_measure_stieltjesFunction](../../../../ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/cdf-measure-stieltjesfunction.md) | 94 | `result-track:9c4768e357a86ce354132b81b46ec8463c7341013eb457f20f295883a2ab9d63` |
-| 12 | `lemma` | [MeasureTheory.Measure.eq_of_cdf](../../../../ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/measuretheory-measure-eq-of-cdf.md) | 107 | `result-track:d2bb6ab9a6c22e50fb4be8d963bddc81ce4480db397d7ebcdd58c2b9edd45898` |
-| 13 | `lemma` | [MeasureTheory.Measure.cdf_eq_iff](../../../../ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/measuretheory-measure-cdf-eq-iff.md) | 111 | `result-track:35ae3563b91c0af65541d0603c67a267ddae1181cd8f4219eae425e49dbf3f24` |
+| 1 | `def` | [cdf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/cdf.md) | 51 | `declaration-track:b198fa51b0d48d95180ac96ef833a9325fd134c09ff9993a3f6228a5406f9b1b` |
+| 2 | `lemma` | [cdf_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/cdf-nonneg.md) | 58 | `result-track:a037132fae83c7e0c9d71e5941eb9c7bc47a09875b8b8d5fbaf60f429e1a74eb` |
+| 3 | `lemma` | [cdf_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/cdf-le-one.md) | 61 | `result-track:a5a1555ea5c583daedc1b2ff855eac50f9fd172352172cdeb6382ca26941cc84` |
+| 4 | `lemma` | [monotone_cdf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/monotone-cdf.md) | 64 | `result-track:829457cdfd6c7d50cde5e611a555936c2b3acfde0b449d170f8cd7eb57563f03` |
+| 5 | `lemma` | [tendsto_cdf_atBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/tendsto-cdf-atbot.md) | 67 | `result-track:0349116dcb2c5e4b201508ba19d8b79f06694f7c8a2ec6a4fb75b56f54a38b25` |
+| 6 | `lemma` | [tendsto_cdf_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/tendsto-cdf-attop.md) | 70 | `result-track:b6b7e57c03bc493c52cc332a9b314fc212ef2a04de05abb4b2478a7fdfaec774` |
+| 7 | `lemma` | [ofReal_cdf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/ofreal-cdf.md) | 72 | `result-track:745bb88e965c11c7731a72e43775996d3c1e26d837c4c0043ebf9492b0b39160` |
+| 8 | `lemma` | [cdf_eq_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/cdf-eq-real.md) | 77 | `result-track:ccbd9675594e841227ddb30e4ce6c45c6611c534b6b8544ca6d27024dbcf6c3b` |
+| 9 | `instance` | [instIsProbabilityMeasurecdf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/instisprobabilitymeasurecdf.md) | 82 | `declaration-track:533244db435bc6b76810ab14bca8ed5e88667d2e41ba9d66c209ab78caaa20d8` |
+| 10 | `lemma` | [measure_cdf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/measure-cdf.md) | 88 | `result-track:21e0e7b17c1e4859cda30757bfacb2656fa6aedd9711f18a46c23a3e17c7e694` |
+| 11 | `lemma` | [cdf_measure_stieltjesFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/cdf-measure-stieltjesfunction.md) | 94 | `result-track:9c4768e357a86ce354132b81b46ec8463c7341013eb457f20f295883a2ab9d63` |
+| 12 | `lemma` | [MeasureTheory.Measure.eq_of_cdf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/measuretheory-measure-eq-of-cdf.md) | 107 | `result-track:d2bb6ab9a6c22e50fb4be8d963bddc81ce4480db397d7ebcdd58c2b9edd45898` |
+| 13 | `lemma` | [MeasureTheory.Measure.cdf_eq_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CDF.lean/declarations/measuretheory-measure-cdf-eq-iff.md) | 111 | `result-track:35ae3563b91c0af65541d0603c67a267ddae1181cd8f4219eae425e49dbf3f24` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

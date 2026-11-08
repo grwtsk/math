@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AllAlternative.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AllAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [All](../../../../../ComputerScience/AlgorithmsInComputerScience/AllAlternative.lean/declarations/all.md) | 15 | `declaration-track:901d854a00e92eb90fd80adef8d488c055540196e9cfe0a285261fd2af2b090b` |
-| 2 | `theorem` | [All.cons](../../../../../ComputerScience/AlgorithmsInComputerScience/AllAlternative.lean/declarations/all-cons.md) | 20 | `result-track:f1a0895eb1aa6925c4c350a58d9ef4e98ffaebe0b054e4fa993a63b21e07cb69` |
-| 3 | `theorem` | [mem](../../../../../ComputerScience/AlgorithmsInComputerScience/AllAlternative.lean/declarations/mem-source-edition-2.md) | 24 | `result-track:88e336a1e2e0a8f22587adb858f688ff586a63d7ddcf94567af8b9fd93ad9b50` |
-| 4 | `theorem` | [mem'](../../../../../ComputerScience/AlgorithmsInComputerScience/AllAlternative.lean/declarations/mem.md) | 30 | `result-track:6ad158bec24c678bcd454fb4d4ef182b56408f22211d314852714bc465f8303a` |
+| 1 | `inductive` | [All](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllAlternative.lean/declarations/all.md) | 15 | `declaration-track:901d854a00e92eb90fd80adef8d488c055540196e9cfe0a285261fd2af2b090b` |
+| 2 | `theorem` | [All.cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllAlternative.lean/declarations/all-cons.md) | 20 | `result-track:f1a0895eb1aa6925c4c350a58d9ef4e98ffaebe0b054e4fa993a63b21e07cb69` |
+| 3 | `theorem` | [mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllAlternative.lean/declarations/mem-source-edition-2.md) | 24 | `result-track:88e336a1e2e0a8f22587adb858f688ff586a63d7ddcf94567af8b9fd93ad9b50` |
+| 4 | `theorem` | [mem'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllAlternative.lean/declarations/mem.md) | 30 | `result-track:6ad158bec24c678bcd454fb4d4ef182b56408f22211d314852714bc465f8303a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectralChartLeafNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralChartLeafNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralChartLeafNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralChartLeafNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [surfaceId](../../../../FunctionalAnalysis/SpectralChartLeafNamespaced.lean/declarations/surfaceid.md) | 16 | `declaration-track:9b2b2b53c9c218278bd5512c7344702d3721c00b7fc65dca8d661df049e4f37b` |
-| 2 | `def` | [ownsDeclaredSurface](../../../../FunctionalAnalysis/SpectralChartLeafNamespaced.lean/declarations/ownsdeclaredsurface.md) | 17 | `declaration-track:945cf089b911e346aebfe01c30c6ccd05366e3e901659d95ef216cfc52efce35` |
-| 3 | `def` | [crossLeafReasoningRequiresGlue](../../../../FunctionalAnalysis/SpectralChartLeafNamespaced.lean/declarations/crossleafreasoningrequiresglue.md) | 18 | `declaration-track:1b6e440d83cfc352897c28f1d5449845b67db6c2caca46fccb5dba60fdc1041d` |
-| 4 | `theorem` | [surface_id_declared](../../../../FunctionalAnalysis/SpectralChartLeafNamespaced.lean/declarations/surface-id-declared.md) | 20 | `result-track:faed9e974ec4c6410ce2e6b0e972005b68f293fe598224d70caa127f3f219166` |
-| 5 | `theorem` | [owns_declared_surface](../../../../FunctionalAnalysis/SpectralChartLeafNamespaced.lean/declarations/owns-declared-surface.md) | 24 | `result-track:c9a7721006464b212aaa3f2f7719bbed793db3ed7492ec2337a69d89d65faaed` |
+| 1 | `def` | [surfaceId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralChartLeafNamespaced.lean/declarations/surfaceid.md) | 16 | `declaration-track:9b2b2b53c9c218278bd5512c7344702d3721c00b7fc65dca8d661df049e4f37b` |
+| 2 | `def` | [ownsDeclaredSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralChartLeafNamespaced.lean/declarations/ownsdeclaredsurface.md) | 17 | `declaration-track:945cf089b911e346aebfe01c30c6ccd05366e3e901659d95ef216cfc52efce35` |
+| 3 | `def` | [crossLeafReasoningRequiresGlue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralChartLeafNamespaced.lean/declarations/crossleafreasoningrequiresglue.md) | 18 | `declaration-track:1b6e440d83cfc352897c28f1d5449845b67db6c2caca46fccb5dba60fdc1041d` |
+| 4 | `theorem` | [surface_id_declared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralChartLeafNamespaced.lean/declarations/surface-id-declared.md) | 20 | `result-track:faed9e974ec4c6410ce2e6b0e972005b68f293fe598224d70caa127f3f219166` |
+| 5 | `theorem` | [owns_declared_surface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralChartLeafNamespaced.lean/declarations/owns-declared-surface.md) | 24 | `result-track:c9a7721006464b212aaa3f2f7719bbed793db3ed7492ec2337a69d89d65faaed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

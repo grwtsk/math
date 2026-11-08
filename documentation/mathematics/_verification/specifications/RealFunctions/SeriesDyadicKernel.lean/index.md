@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SeriesDyadicKernel.lean/index.md) · [Full source](../../../../RealFunctions/SeriesDyadicKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SeriesDyadicKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SeriesDyadicKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -65,15 +65,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [kernelTerm](../../../../RealFunctions/SeriesDyadicKernel.lean/declarations/kernelterm.md) | 35 | `declaration-track:69e4a131e58e8ac09355ab558f5f86da0d53fb4117469eabfea89739d38d2d02` |
-| 2 | `theorem` | [pow_rpow_comm](../../../../RealFunctions/SeriesDyadicKernel.lean/declarations/pow-rpow-comm.md) | 37 | `result-track:05b4fc08c750d9bdba86612b5a1def1e05191467c070a1efacbd5bea3b8a07e5` |
-| 3 | `theorem` | [kernelTerm_nonneg](../../../../RealFunctions/SeriesDyadicKernel.lean/declarations/kernelterm-nonneg.md) | 42 | `result-track:02a264a684285ea30fa31486f8ee69a951bd9ba3b72f86b14e11514de5a349d6` |
-| 4 | `theorem` | [kernelTerm_le_head](../../../../RealFunctions/SeriesDyadicKernel.lean/declarations/kernelterm-le-head.md) | 46 | `result-track:712ab8f626ba74b62de93c334ca03b4fa2440c9bbfd3f27095be3ff88d7fe904` |
-| 5 | `theorem` | [kernelTerm_le_tail](../../../../RealFunctions/SeriesDyadicKernel.lean/declarations/kernelterm-le-tail.md) | 52 | `result-track:c067b4c8ed74795b4df73abea466e03e71f0a5d9b1fe2fbca0eb8ac3546ef927` |
-| 6 | `theorem` | [ratio_lt_one](../../../../RealFunctions/SeriesDyadicKernel.lean/declarations/ratio-lt-one.md) | 66 | `result-track:18dd9749cf5cff48e1e6d7dcef546f2d45e120fbb18319737a87110fd3b6f70e` |
-| 7 | `theorem` | [kernel_summable](../../../../RealFunctions/SeriesDyadicKernel.lean/declarations/kernel-summable.md) | 69 | `result-track:5f7901f0dd8e8f89b80a0462953ef0d24e7dd85881a6c67505562bebdb722de4` |
-| 8 | `theorem` | [kernel_sum_cutoff](../../../../RealFunctions/SeriesDyadicKernel.lean/declarations/kernel-sum-cutoff.md) | 74 | `result-track:55e7f5f12a0942663570ee3a295d7ad406e231a346634ee44b9a0f82df1a00bb` |
-| 9 | `theorem` | [kernel_sum_bound](../../../../RealFunctions/SeriesDyadicKernel.lean/declarations/kernel-sum-bound.md) | 98 | `result-track:a2a1151465ca42ecea966d7d5c0869a7b22d6a81c2a20f8acb8e7c968fdd1d7e` |
+| 1 | `def` | [kernelTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SeriesDyadicKernel.lean/declarations/kernelterm.md) | 35 | `declaration-track:69e4a131e58e8ac09355ab558f5f86da0d53fb4117469eabfea89739d38d2d02` |
+| 2 | `theorem` | [pow_rpow_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SeriesDyadicKernel.lean/declarations/pow-rpow-comm.md) | 37 | `result-track:05b4fc08c750d9bdba86612b5a1def1e05191467c070a1efacbd5bea3b8a07e5` |
+| 3 | `theorem` | [kernelTerm_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SeriesDyadicKernel.lean/declarations/kernelterm-nonneg.md) | 42 | `result-track:02a264a684285ea30fa31486f8ee69a951bd9ba3b72f86b14e11514de5a349d6` |
+| 4 | `theorem` | [kernelTerm_le_head](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SeriesDyadicKernel.lean/declarations/kernelterm-le-head.md) | 46 | `result-track:712ab8f626ba74b62de93c334ca03b4fa2440c9bbfd3f27095be3ff88d7fe904` |
+| 5 | `theorem` | [kernelTerm_le_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SeriesDyadicKernel.lean/declarations/kernelterm-le-tail.md) | 52 | `result-track:c067b4c8ed74795b4df73abea466e03e71f0a5d9b1fe2fbca0eb8ac3546ef927` |
+| 6 | `theorem` | [ratio_lt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SeriesDyadicKernel.lean/declarations/ratio-lt-one.md) | 66 | `result-track:18dd9749cf5cff48e1e6d7dcef546f2d45e120fbb18319737a87110fd3b6f70e` |
+| 7 | `theorem` | [kernel_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SeriesDyadicKernel.lean/declarations/kernel-summable.md) | 69 | `result-track:5f7901f0dd8e8f89b80a0462953ef0d24e7dd85881a6c67505562bebdb722de4` |
+| 8 | `theorem` | [kernel_sum_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SeriesDyadicKernel.lean/declarations/kernel-sum-cutoff.md) | 74 | `result-track:55e7f5f12a0942663570ee3a295d7ad406e231a346634ee44b9a0f82df1a00bb` |
+| 9 | `theorem` | [kernel_sum_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SeriesDyadicKernel.lean/declarations/kernel-sum-bound.md) | 98 | `result-track:a2a1151465ca42ecea966d7d5c0869a7b22d6a81c2a20f8acb8e7c968fdd1d7e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

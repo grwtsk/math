@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [unfoldConst](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/declarations/unfoldconst.md) | 14 | `declaration-track:2d40a026d847beea9b0b273fb8013a0fe36e3572f499373b3b661fe6a6eb8544` |
-| 2 | `def` | [T₁](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/declarations/t-source-edition-2.md) | 20 | `declaration-track:d6d1f781622ebf654bb5bb8f919b6200559fe868a7f897fc314362e1b46d0a00` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/declarations/example-source-edition-3.md) | 26 | `declaration-track:255e62fae979ffd9d50c46c66a15fbab01ae7400c0970d6a008c59df0f3d4915` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/declarations/example.md) | 31 | `declaration-track:1a7455efc44d2acb8aca54ef64e66f9c8c8cff64b3e9392f4b2c1e8a12b83070` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/declarations/example-source-edition-2.md) | 38 | `declaration-track:23387723849bd786f63e0429ce0c0f585c0b32b24a0ec3d616e259d23645dd0f` |
-| 6 | `def` | [T₂](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/declarations/t.md) | 41 | `declaration-track:4d81ba3983d5dda7188a3ec1a3c4a97781a66498f49b99aaed8d798bdf23f3df` |
-| 7 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/declarations/example-source-edition-5.md) | 47 | `declaration-track:38acf137275b614bd971921cee23a0e7d3c4744b8f5efb0563bf67e529053d58` |
-| 8 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/declarations/example-source-edition-4.md) | 56 | `declaration-track:3538a9fde1f450cf908d7e997acd78c7f7858d3c55a8c7c9ab875f1c64918ddb` |
-| 9 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/declarations/example-source-edition-6.md) | 59 | `declaration-track:f34ebcc7fd5f4e56967023abfae5fd724817be3ce31a57482f5894b22a2a9e9b` |
+| 1 | `def` | [unfoldConst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/declarations/unfoldconst.md) | 14 | `declaration-track:2d40a026d847beea9b0b273fb8013a0fe36e3572f499373b3b661fe6a6eb8544` |
+| 2 | `def` | [T₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/declarations/t-source-edition-2.md) | 20 | `declaration-track:d6d1f781622ebf654bb5bb8f919b6200559fe868a7f897fc314362e1b46d0a00` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/declarations/example-source-edition-3.md) | 26 | `declaration-track:255e62fae979ffd9d50c46c66a15fbab01ae7400c0970d6a008c59df0f3d4915` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/declarations/example.md) | 31 | `declaration-track:1a7455efc44d2acb8aca54ef64e66f9c8c8cff64b3e9392f4b2c1e8a12b83070` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/declarations/example-source-edition-2.md) | 38 | `declaration-track:23387723849bd786f63e0429ce0c0f585c0b32b24a0ec3d616e259d23645dd0f` |
+| 6 | `def` | [T₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/declarations/t.md) | 41 | `declaration-track:4d81ba3983d5dda7188a3ec1a3c4a97781a66498f49b99aaed8d798bdf23f3df` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/declarations/example-source-edition-5.md) | 47 | `declaration-track:38acf137275b614bd971921cee23a0e7d3c4744b8f5efb0563bf67e529053d58` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/declarations/example-source-edition-4.md) | 56 | `declaration-track:3538a9fde1f450cf908d7e997acd78c7f7858d3c55a8c7c9ab875f1c64918ddb` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SimprocsUnfoldConst.lean/declarations/example-source-edition-6.md) | 59 | `declaration-track:f34ebcc7fd5f4e56967023abfae5fd724817be3ce31a57482f5894b22a2a9e9b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

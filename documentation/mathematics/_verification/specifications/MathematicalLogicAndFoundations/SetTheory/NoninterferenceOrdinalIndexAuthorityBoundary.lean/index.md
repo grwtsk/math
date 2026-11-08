@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/SetTheory/NoninterferenceOrdinalIndexAuthorityBoundary.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/SetTheory/NoninterferenceOrdinalIndexAuthorityBoundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/NoninterferenceOrdinalIndexAuthorityBoundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/NoninterferenceOrdinalIndexAuthorityBoundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OrdinalIndexAuthorityBoundary](../../../../../MathematicalLogicAndFoundations/SetTheory/NoninterferenceOrdinalIndexAuthorityBoundary.lean/declarations/ordinalindexauthorityboundary.md) | 12 | `declaration-track:d23252ab272867404c91068d8b8de726e60018028055bf708cd14cde2cc9eadd` |
-| 2 | `theorem` | [ordinal_index_does_not_create_authority](../../../../../MathematicalLogicAndFoundations/SetTheory/NoninterferenceOrdinalIndexAuthorityBoundary.lean/declarations/ordinal-index-does-not-create-authority.md) | 24 | `result-track:120ec70e1a5e755875c641a9cea06c9525610751a129d5cec234195fb88cb924` |
+| 1 | `structure` | [OrdinalIndexAuthorityBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/NoninterferenceOrdinalIndexAuthorityBoundary.lean/declarations/ordinalindexauthorityboundary.md) | 12 | `declaration-track:d23252ab272867404c91068d8b8de726e60018028055bf708cd14cde2cc9eadd` |
+| 2 | `theorem` | [ordinal_index_does_not_create_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/NoninterferenceOrdinalIndexAuthorityBoundary.lean/declarations/ordinal-index-does-not-create-authority.md) | 24 | `result-track:120ec70e1a5e755875c641a9cea06c9525610751a129d5cec234195fb88cb924` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

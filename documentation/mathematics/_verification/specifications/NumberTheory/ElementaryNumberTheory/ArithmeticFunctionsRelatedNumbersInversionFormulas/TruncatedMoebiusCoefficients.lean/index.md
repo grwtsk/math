@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.ArithmeticFunctions.MoebiusTruncation`](../../../../../../CommutativeAlgebra/MoebiusTruncation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.ArithmeticFunctions.MoebiusTruncation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MoebiusTruncation.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [lowMoebiusCoefficient](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/declarations/lowmoebiuscoefficient.md) | 19 | `declaration-track:54855fe3f73b4dedc3a1303e559ef75947fa60e9563a9f46024985f56f87110f` |
-| 2 | `def` | [highMoebiusCoefficient](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/declarations/highmoebiuscoefficient.md) | 23 | `declaration-track:97fe8ecc7a1aa8bcd00a512adabb526f0cb8f63cabe63eaacb0340ef24ae6ac4` |
-| 3 | `theorem` | [moebius_low_high_coefficient_return](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/declarations/moebius-low-high-coefficient-return.md) | 27 | `result-track:5d21d65ec988ec70f2076179504af78f8ac56de5eb2aae85954b03584e5dcd2a` |
-| 4 | `theorem` | [high_coefficient_three_thirty](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/declarations/high-coefficient-three-thirty.md) | 42 | `result-track:042f6e1c7b279ccf7b802acd7a6c048ac8887485273def46928d365c61fad18f` |
-| 5 | `theorem` | [high_coefficient_four_fortynine](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/declarations/high-coefficient-four-fortynine.md) | 46 | `result-track:3ec03a45b1bb890498b83bf12eb42709f4a65cbaf2b9dac9ec8f0c89b0408309` |
-| 6 | `theorem` | [low_coefficient_three_thirty](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/declarations/low-coefficient-three-thirty.md) | 50 | `result-track:f602afd8bc904712c57f95d979f499c4771f8c93b41cd6321025b5a2ce08e9d2` |
-| 7 | `theorem` | [low_coefficient_four_fortynine](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/declarations/low-coefficient-four-fortynine.md) | 54 | `result-track:b115f6733750cd05977d46e1cf95d6eb7709ef331202accc5841a9d5a3f460f3` |
-| 8 | `theorem` | [high_moebius_coefficients_have_both_signs](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/declarations/high-moebius-coefficients-have-both-signs.md) | 57 | `result-track:0ef174691b0c2ae0bf3ac766fe72225ffce49d8613f928c578c3aa41cbdde299` |
+| 1 | `def` | [lowMoebiusCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/declarations/lowmoebiuscoefficient.md) | 19 | `declaration-track:54855fe3f73b4dedc3a1303e559ef75947fa60e9563a9f46024985f56f87110f` |
+| 2 | `def` | [highMoebiusCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/declarations/highmoebiuscoefficient.md) | 23 | `declaration-track:97fe8ecc7a1aa8bcd00a512adabb526f0cb8f63cabe63eaacb0340ef24ae6ac4` |
+| 3 | `theorem` | [moebius_low_high_coefficient_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/declarations/moebius-low-high-coefficient-return.md) | 27 | `result-track:5d21d65ec988ec70f2076179504af78f8ac56de5eb2aae85954b03584e5dcd2a` |
+| 4 | `theorem` | [high_coefficient_three_thirty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/declarations/high-coefficient-three-thirty.md) | 42 | `result-track:042f6e1c7b279ccf7b802acd7a6c048ac8887485273def46928d365c61fad18f` |
+| 5 | `theorem` | [high_coefficient_four_fortynine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/declarations/high-coefficient-four-fortynine.md) | 46 | `result-track:3ec03a45b1bb890498b83bf12eb42709f4a65cbaf2b9dac9ec8f0c89b0408309` |
+| 6 | `theorem` | [low_coefficient_three_thirty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/declarations/low-coefficient-three-thirty.md) | 50 | `result-track:f602afd8bc904712c57f95d979f499c4771f8c93b41cd6321025b5a2ce08e9d2` |
+| 7 | `theorem` | [low_coefficient_four_fortynine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/declarations/low-coefficient-four-fortynine.md) | 54 | `result-track:b115f6733750cd05977d46e1cf95d6eb7709ef331202accc5841a9d5a3f460f3` |
+| 8 | `theorem` | [high_moebius_coefficients_have_both_signs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedMoebiusCoefficients.lean/declarations/high-moebius-coefficients-have-both-signs.md) | 57 | `result-track:0ef174691b0c2ae0bf3ac766fe72225ffce49d8613f928c578c3aa41cbdde299` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

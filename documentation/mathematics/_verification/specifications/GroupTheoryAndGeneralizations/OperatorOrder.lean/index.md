@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/OperatorOrder.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/OperatorOrder.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OperatorOrder.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OperatorOrder.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OperatorModel](../../../../GroupTheoryAndGeneralizations/OperatorOrder.lean/declarations/operatormodel.md) | 17 | `declaration-track:d283abdfffe17356138a29c648eaebd032675130afa90c733b617e758faa7c61` |
-| 2 | `def` | [OperatorLE](../../../../GroupTheoryAndGeneralizations/OperatorOrder.lean/declarations/operatorle.md) | 52 | `declaration-track:55bd32ec2b5f406cf3e903a700906fcb34d05d2a7988e9d91b682eef618c397a` |
-| 3 | `theorem` | [operatorLE_refl](../../../../GroupTheoryAndGeneralizations/OperatorOrder.lean/declarations/operatorle-refl.md) | 57 | `result-track:8d5ef7b3c077373e79b0c939ba34c0f050b7b76aa68519091860c19eb4acc566` |
-| 4 | `theorem` | [operatorLE_trans](../../../../GroupTheoryAndGeneralizations/OperatorOrder.lean/declarations/operatorle-trans.md) | 63 | `result-track:53ad4052c0808909c1b1ab23faffd9b4fadded2e70b30a54d4a81b7cf68bfe57` |
-| 5 | `theorem` | [operatorLE_antisymm](../../../../GroupTheoryAndGeneralizations/OperatorOrder.lean/declarations/operatorle-antisymm.md) | 76 | `result-track:7118a3bf0279109892efd6a5d4124eea8b892dd882dbbdc9609445fe323aadc0` |
-| 6 | `def` | [OperatorPositive](../../../../GroupTheoryAndGeneralizations/OperatorOrder.lean/declarations/operatorpositive.md) | 90 | `declaration-track:bfea4c5712cee820e5fc44bab7aca4717f949ec39909fd274792f1d5bf88a49b` |
-| 7 | `theorem` | [operatorFinsetSum_nonnegative](../../../../GroupTheoryAndGeneralizations/OperatorOrder.lean/declarations/operatorfinsetsum-nonnegative.md) | 95 | `result-track:5dd4d1b2b86941a6a3f41a1203e005f1823afced49e5c05f129d154c5fd733bf` |
+| 1 | `structure` | [OperatorModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OperatorOrder.lean/declarations/operatormodel.md) | 17 | `declaration-track:d283abdfffe17356138a29c648eaebd032675130afa90c733b617e758faa7c61` |
+| 2 | `def` | [OperatorLE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OperatorOrder.lean/declarations/operatorle.md) | 52 | `declaration-track:55bd32ec2b5f406cf3e903a700906fcb34d05d2a7988e9d91b682eef618c397a` |
+| 3 | `theorem` | [operatorLE_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OperatorOrder.lean/declarations/operatorle-refl.md) | 57 | `result-track:8d5ef7b3c077373e79b0c939ba34c0f050b7b76aa68519091860c19eb4acc566` |
+| 4 | `theorem` | [operatorLE_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OperatorOrder.lean/declarations/operatorle-trans.md) | 63 | `result-track:53ad4052c0808909c1b1ab23faffd9b4fadded2e70b30a54d4a81b7cf68bfe57` |
+| 5 | `theorem` | [operatorLE_antisymm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OperatorOrder.lean/declarations/operatorle-antisymm.md) | 76 | `result-track:7118a3bf0279109892efd6a5d4124eea8b892dd882dbbdc9609445fe323aadc0` |
+| 6 | `def` | [OperatorPositive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OperatorOrder.lean/declarations/operatorpositive.md) | 90 | `declaration-track:bfea4c5712cee820e5fc44bab7aca4717f949ec39909fd274792f1d5bf88a49b` |
+| 7 | `theorem` | [operatorFinsetSum_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OperatorOrder.lean/declarations/operatorfinsetsum-nonnegative.md) | 95 | `result-track:5dd4d1b2b86941a6a3f41a1203e005f1823afced49e5c05f129d154c5fd733bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

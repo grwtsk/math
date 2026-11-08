@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/AddCircleRealNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/AddCircleRealNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleRealNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleRealNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [pathConnectedSpace](../../../../GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/pathconnectedspace.md) | 37 | `declaration-track:26911f5713aab92b74fca3841d866d8c4af749501806d0e31b415b07b7cc02c2` |
-| 2 | `instance` | [compactSpace](../../../../GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/compactspace.md) | 41 | `declaration-track:da7935e31d175848ffc71e86f4a8cbd7475a5a1b95736df6c28fa51560173382` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/instance.md) | 47 | `declaration-track:1b9ba88b1194553e203845e9a2a6fae1127e6c43f6d29dce673bb12f4e62155a` |
-| 4 | `abbrev` | [UnitAddCircle](../../../../GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/unitaddcircle.md) | 56 | `declaration-track:cc89980e4c7a919b49661b3065297de583d2f28bbdfad8d7252f42131b82b7fe` |
-| 5 | `abbrev` | [UnitAddTorus](../../../../GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/unitaddtorus.md) | 60 | `declaration-track:4927e1a88d1e49ebe1f629e0d39a3c39db0b037a386370fad90893250517fdd0` |
-| 6 | `def` | [toAddCircle](../../../../GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/toaddcircle.md) | 69 | `declaration-track:f1b529be904c4fbde2ba1b42162fdbccac9e67bb7cc131530df0893fdf5c9492` |
-| 7 | `lemma` | [toAddCircle_intCast](../../../../GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/toaddcircle-intcast.md) | 73 | `result-track:5b64ce40b0222742e6d3d4834515315ea64d1133c2c98a7696337cc0b0615875` |
-| 8 | `lemma` | [toAddCircle_natCast](../../../../GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/toaddcircle-natcast.md) | 77 | `result-track:8ce1cefbe9289af56e036a01d42d66e742a801863a610bfff140bffb3e4af12a` |
-| 9 | `lemma` | [toAddCircle_apply](../../../../GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/toaddcircle-apply.md) | 85 | `result-track:ed8918ef3be2e2de20237f5f52761c04ac9c3bf7c2bcfdd9bacbef33cba88c47` |
-| 10 | `lemma` | [toAddCircle_injective](../../../../GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/toaddcircle-injective.md) | 90 | `result-track:a520a1d3228bd173a86b9828270ce48e6aae0bc99d295c89d671630e0c8f73bd` |
-| 11 | `lemma` | [toAddCircle_inj](../../../../GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/toaddcircle-inj.md) | 97 | `result-track:4c689ee35fd3e041af2b494cad4d76c9671059fbdb230993f242aa1f0f9d3149` |
-| 12 | `lemma` | [toAddCircle_eq_zero](../../../../GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/toaddcircle-eq-zero.md) | 100 | `result-track:284856599d40cb6bff9edbd67ec0d23614374cd4e9ff7d987609e1fc0d9c7eae` |
+| 1 | `instance` | [pathConnectedSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/pathconnectedspace.md) | 37 | `declaration-track:26911f5713aab92b74fca3841d866d8c4af749501806d0e31b415b07b7cc02c2` |
+| 2 | `instance` | [compactSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/compactspace.md) | 41 | `declaration-track:da7935e31d175848ffc71e86f4a8cbd7475a5a1b95736df6c28fa51560173382` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/instance.md) | 47 | `declaration-track:1b9ba88b1194553e203845e9a2a6fae1127e6c43f6d29dce673bb12f4e62155a` |
+| 4 | `abbrev` | [UnitAddCircle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/unitaddcircle.md) | 56 | `declaration-track:cc89980e4c7a919b49661b3065297de583d2f28bbdfad8d7252f42131b82b7fe` |
+| 5 | `abbrev` | [UnitAddTorus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/unitaddtorus.md) | 60 | `declaration-track:4927e1a88d1e49ebe1f629e0d39a3c39db0b037a386370fad90893250517fdd0` |
+| 6 | `def` | [toAddCircle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/toaddcircle.md) | 69 | `declaration-track:f1b529be904c4fbde2ba1b42162fdbccac9e67bb7cc131530df0893fdf5c9492` |
+| 7 | `lemma` | [toAddCircle_intCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/toaddcircle-intcast.md) | 73 | `result-track:5b64ce40b0222742e6d3d4834515315ea64d1133c2c98a7696337cc0b0615875` |
+| 8 | `lemma` | [toAddCircle_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/toaddcircle-natcast.md) | 77 | `result-track:8ce1cefbe9289af56e036a01d42d66e742a801863a610bfff140bffb3e4af12a` |
+| 9 | `lemma` | [toAddCircle_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/toaddcircle-apply.md) | 85 | `result-track:ed8918ef3be2e2de20237f5f52761c04ac9c3bf7c2bcfdd9bacbef33cba88c47` |
+| 10 | `lemma` | [toAddCircle_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/toaddcircle-injective.md) | 90 | `result-track:a520a1d3228bd173a86b9828270ce48e6aae0bc99d295c89d671630e0c8f73bd` |
+| 11 | `lemma` | [toAddCircle_inj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/toaddcircle-inj.md) | 97 | `result-track:4c689ee35fd3e041af2b494cad4d76c9671059fbdb230993f242aa1f0f9d3149` |
+| 12 | `lemma` | [toAddCircle_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCircleRealNamespacedPublic.lean/declarations/toaddcircle-eq-zero.md) | 100 | `result-track:284856599d40cb6bff9edbd67ec0d23614374cd4e9ff7d987609e1fc0d9c7eae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

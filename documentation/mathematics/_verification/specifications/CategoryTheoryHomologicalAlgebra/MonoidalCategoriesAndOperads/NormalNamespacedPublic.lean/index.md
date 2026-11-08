@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsAddMonHom.Normal](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/declarations/isaddmonhom-normal.md) | 51 | `declaration-track:e3b52dab1eda7e4640a32f858513244522854ce303e8bbb64907ce9815985136` |
-| 2 | `class` | [Normal](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/declarations/normal.md) | 66 | `declaration-track:07c9862428fa981b4febd178f74426435fbc4043f62a1a4f4ddcc5b1fc2ccde1` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/declarations/instance.md) | 74 | `declaration-track:5616eb011df12e525fae062d516aca658b46d115114ade66b3a7e97148a2bf22` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 78 | `declaration-track:cf2992b2a5562a1a9f0c10b8881571ea97202b1c423dd1b8e2eaaae89ecd488b` |
-| 5 | `lemma` | [isNormalHom_iff](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/declarations/isnormalhom-iff.md) | 84 | `result-track:2938a4e192e678092e212b175a1d0bd4e261d799bd48f7dd9e10949f3e3303c2` |
-| 6 | `theorem` | [normal_iff_normal_monoidHom](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/declarations/normal-iff-normal-monoidhom.md) | 91 | `result-track:7a7719cff9d550538e259dd61cd03486bb3411fe8d3ed0ac6f19d98b4f98b991` |
-| 7 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 112 | `declaration-track:b4096f396f685508733d62a83b7325594a25fa7f77294ce58ed799994e5191c6` |
-| 8 | `lemma` | [Normal.of_isPullback_η](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/declarations/normal-of-ispullback.md) | 117 | `result-track:884eca9f4295b4ae506c63676f300c1d6311a8f1d8dbb366e5cf16f6916f0ec7` |
+| 1 | `class` | [IsAddMonHom.Normal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/declarations/isaddmonhom-normal.md) | 51 | `declaration-track:e3b52dab1eda7e4640a32f858513244522854ce303e8bbb64907ce9815985136` |
+| 2 | `class` | [Normal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/declarations/normal.md) | 66 | `declaration-track:07c9862428fa981b4febd178f74426435fbc4043f62a1a4f4ddcc5b1fc2ccde1` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/declarations/instance.md) | 74 | `declaration-track:5616eb011df12e525fae062d516aca658b46d115114ade66b3a7e97148a2bf22` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 78 | `declaration-track:cf2992b2a5562a1a9f0c10b8881571ea97202b1c423dd1b8e2eaaae89ecd488b` |
+| 5 | `lemma` | [isNormalHom_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/declarations/isnormalhom-iff.md) | 84 | `result-track:2938a4e192e678092e212b175a1d0bd4e261d799bd48f7dd9e10949f3e3303c2` |
+| 6 | `theorem` | [normal_iff_normal_monoidHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/declarations/normal-iff-normal-monoidhom.md) | 91 | `result-track:7a7719cff9d550538e259dd61cd03486bb3411fe8d3ed0ac6f19d98b4f98b991` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 112 | `declaration-track:b4096f396f685508733d62a83b7325594a25fa7f77294ce58ed799994e5191c6` |
+| 8 | `lemma` | [Normal.of_isPullback_η](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NormalNamespacedPublic.lean/declarations/normal-of-ispullback.md) | 117 | `result-track:884eca9f4295b4ae506c63676f300c1d6311a8f1d8dbb366e5cf16f6916f0ec7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

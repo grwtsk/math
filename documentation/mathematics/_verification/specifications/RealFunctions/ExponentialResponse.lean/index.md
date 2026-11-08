@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ExponentialResponse.lean/index.md) · [Full source](../../../../RealFunctions/ExponentialResponse.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExponentialResponse.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExponentialResponse.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [causalShift](../../../../RealFunctions/ExponentialResponse.lean/declarations/causalshift.md) | 13 | `declaration-track:c787b2c8d776f2d947923e02ce13b17646773ed7e05e8b50f5067a5dd6cf6df1` |
-| 2 | `def` | [baseWave](../../../../RealFunctions/ExponentialResponse.lean/declarations/basewave.md) | 16 | `declaration-track:b990d0fbd070d22a83c9f3101bf44ca6154e7d754a9b815da41cacf7d65b4032` |
-| 3 | `def` | [atom](../../../../RealFunctions/ExponentialResponse.lean/declarations/atom.md) | 19 | `declaration-track:499f20bf66daf1a0693738e9784a036306cabc8b123f284827e0a355144300cd` |
-| 4 | `theorem` | [causalShift_comp](../../../../RealFunctions/ExponentialResponse.lean/declarations/causalshift-comp.md) | 22 | `result-track:e5d4481e71415115da328b5e8678857b8720ed3c7f187313f3b2bc0fdeabfed0` |
-| 5 | `theorem` | [causalShift_comm](../../../../RealFunctions/ExponentialResponse.lean/declarations/causalshift-comm.md) | 36 | `result-track:1f23aa091d2c9c69ef775b70b25d9c98c4d89b3ab460967968faeabd06066681` |
-| 6 | `theorem` | [exp_negative_half_log](../../../../RealFunctions/ExponentialResponse.lean/declarations/exp-negative-half-log.md) | 40 | `result-track:182701673a637796a1c9295a216ca7be19d98bbadb66df2690aee1896e5f4b9e` |
-| 7 | `theorem` | [atom_eq_scaled_shift](../../../../RealFunctions/ExponentialResponse.lean/declarations/atom-eq-scaled-shift.md) | 46 | `result-track:28bf6ca3c679a1793b637845c6530cf0fcea966b432e8af6c6c590b9fd1859f8` |
-| 8 | `theorem` | [atom_entry_zero](../../../../RealFunctions/ExponentialResponse.lean/declarations/atom-entry-zero.md) | 59 | `result-track:55efe60dae4bee36ff1b6e9aa03a5557250e09208878ea65adef6fd9cd2ba029` |
-| 9 | `theorem` | [signed_quadratic_expansion](../../../../RealFunctions/ExponentialResponse.lean/declarations/signed-quadratic-expansion.md) | 63 | `result-track:796239f979eca6983390258f7652a4e4eb9bae0fdf239840ce4e095cd59960c8` |
+| 1 | `def` | [causalShift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExponentialResponse.lean/declarations/causalshift.md) | 13 | `declaration-track:c787b2c8d776f2d947923e02ce13b17646773ed7e05e8b50f5067a5dd6cf6df1` |
+| 2 | `def` | [baseWave](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExponentialResponse.lean/declarations/basewave.md) | 16 | `declaration-track:b990d0fbd070d22a83c9f3101bf44ca6154e7d754a9b815da41cacf7d65b4032` |
+| 3 | `def` | [atom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExponentialResponse.lean/declarations/atom.md) | 19 | `declaration-track:499f20bf66daf1a0693738e9784a036306cabc8b123f284827e0a355144300cd` |
+| 4 | `theorem` | [causalShift_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExponentialResponse.lean/declarations/causalshift-comp.md) | 22 | `result-track:e5d4481e71415115da328b5e8678857b8720ed3c7f187313f3b2bc0fdeabfed0` |
+| 5 | `theorem` | [causalShift_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExponentialResponse.lean/declarations/causalshift-comm.md) | 36 | `result-track:1f23aa091d2c9c69ef775b70b25d9c98c4d89b3ab460967968faeabd06066681` |
+| 6 | `theorem` | [exp_negative_half_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExponentialResponse.lean/declarations/exp-negative-half-log.md) | 40 | `result-track:182701673a637796a1c9295a216ca7be19d98bbadb66df2690aee1896e5f4b9e` |
+| 7 | `theorem` | [atom_eq_scaled_shift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExponentialResponse.lean/declarations/atom-eq-scaled-shift.md) | 46 | `result-track:28bf6ca3c679a1793b637845c6530cf0fcea966b432e8af6c6c590b9fd1859f8` |
+| 8 | `theorem` | [atom_entry_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExponentialResponse.lean/declarations/atom-entry-zero.md) | 59 | `result-track:55efe60dae4bee36ff1b6e9aa03a5557250e09208878ea65adef6fd9cd2ba029` |
+| 9 | `theorem` | [signed_quadratic_expansion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExponentialResponse.lean/declarations/signed-quadratic-expansion.md) | 63 | `result-track:796239f979eca6983390258f7652a4e4eb9bae0fdf239840ce4e095cd59960c8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

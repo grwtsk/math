@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/FactorialCastPublic.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/FactorialCastPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialCastPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialCastPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cast_descFactorial_two](../../../../../NumberTheory/ElementaryNumberTheory/FactorialCastPublic.lean/declarations/cast-descfactorial-two.md) | 38 | `result-track:bd5e2c1b34ba5ef6118069c08127c22f07d37e2c2d39275b938849f43d0c4abf` |
+| 1 | `theorem` | [cast_descFactorial_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/FactorialCastPublic.lean/declarations/cast-descfactorial-two.md) | 38 | `result-track:bd5e2c1b34ba5ef6118069c08127c22f07d37e2c2d39275b938849f43d0c4abf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [NetworkVertexKind](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/declarations/networkvertexkind.md) | 15 | `declaration-track:e39a5475cff44f9cffa58765933e9333b81745ce7f0d1d0f436ab53a14e8aabc` |
-| 2 | `structure` | [NetworkVertex](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/declarations/networkvertex.md) | 24 | `declaration-track:b0c52eadbb4447d2de6a9b99ac778b365a112218a28b6c6ad9fdefcc6c0fee8d` |
-| 3 | `inductive` | [NetworkEdgeType](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/declarations/networkedgetype.md) | 30 | `declaration-track:9abb0bb25d21038eb075b69f952a4db64acf4c18b93a4ed2c7d03a5523c8fd98` |
-| 4 | `structure` | [NetworkEdge](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/declarations/networkedge.md) | 44 | `declaration-track:84d0c7f94c0181440019c3701d9f07f9b65258a880e2a6cada12890b7509fa00` |
-| 5 | `structure` | [IdiomConceptNetwork](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/declarations/idiomconceptnetwork.md) | 52 | `declaration-track:965c86b98427b911b62de7d4a13ac5158b593a6e00c5f78dd29fa6d2f9b4e8fb` |
-| 6 | `def` | [NetworkEdgeType.entails](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/declarations/networkedgetype-entails.md) | 66 | `declaration-track:0c3a0708f9b95058c1354ee25e8e5ba7baec93bb0b32314e1eb557fdeb4f598c` |
-| 7 | `theorem` | [shared_imagery_not_synonymy](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/declarations/shared-imagery-not-synonymy.md) | 73 | `result-track:25fdd02da3424737d466b5419e802e5ca7d5c43d905fc2df1f3be305e735f864` |
-| 8 | `theorem` | [shared_concept_not_synonymy](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/declarations/shared-concept-not-synonymy.md) | 78 | `result-track:f3a120c0c1ef8cffc45dc886c0dc788b2f48a25be2156b2f8c4663a77ea394da` |
+| 1 | `inductive` | [NetworkVertexKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/declarations/networkvertexkind.md) | 15 | `declaration-track:e39a5475cff44f9cffa58765933e9333b81745ce7f0d1d0f436ab53a14e8aabc` |
+| 2 | `structure` | [NetworkVertex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/declarations/networkvertex.md) | 24 | `declaration-track:b0c52eadbb4447d2de6a9b99ac778b365a112218a28b6c6ad9fdefcc6c0fee8d` |
+| 3 | `inductive` | [NetworkEdgeType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/declarations/networkedgetype.md) | 30 | `declaration-track:9abb0bb25d21038eb075b69f952a4db64acf4c18b93a4ed2c7d03a5523c8fd98` |
+| 4 | `structure` | [NetworkEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/declarations/networkedge.md) | 44 | `declaration-track:84d0c7f94c0181440019c3701d9f07f9b65258a880e2a6cada12890b7509fa00` |
+| 5 | `structure` | [IdiomConceptNetwork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/declarations/idiomconceptnetwork.md) | 52 | `declaration-track:965c86b98427b911b62de7d4a13ac5158b593a6e00c5f78dd29fa6d2f9b4e8fb` |
+| 6 | `def` | [NetworkEdgeType.entails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/declarations/networkedgetype-entails.md) | 66 | `declaration-track:0c3a0708f9b95058c1354ee25e8e5ba7baec93bb0b32314e1eb557fdeb4f598c` |
+| 7 | `theorem` | [shared_imagery_not_synonymy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/declarations/shared-imagery-not-synonymy.md) | 73 | `result-track:25fdd02da3424737d466b5419e802e5ca7d5c43d905fc2df1f3be305e735f864` |
+| 8 | `theorem` | [shared_concept_not_synonymy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomConceptNetworkNamespaced.lean/declarations/shared-concept-not-synonymy.md) | 78 | `result-track:f3a120c0c1ef8cffc45dc886c0dc788b2f48a25be2156b2f8c4663a77ea394da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

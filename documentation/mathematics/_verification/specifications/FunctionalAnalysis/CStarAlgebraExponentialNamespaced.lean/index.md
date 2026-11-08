@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/CStarAlgebraExponentialNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/CStarAlgebraExponentialNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraExponentialNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraExponentialNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [selfAdjoint.expUnitary](../../../../FunctionalAnalysis/CStarAlgebraExponentialNamespaced.lean/declarations/selfadjoint-expunitary.md) | 41 | `declaration-track:ea4670b35f0bb1a5409199cc554cd4694f4854983f1961efee48f9d31ce0f0dc` |
-| 2 | `lemma` | [selfAdjoint.expUnitary_zero](../../../../FunctionalAnalysis/CStarAlgebraExponentialNamespaced.lean/declarations/selfadjoint-expunitary-zero.md) | 48 | `result-track:7eeb4daf56aecf226a828c69c97cf7b5083d70fd52e929c176c14ebbcf88ae25` |
-| 3 | `lemma` | [selfAdjoint.continuous_expUnitary](../../../../FunctionalAnalysis/CStarAlgebraExponentialNamespaced.lean/declarations/selfadjoint-continuous-expunitary.md) | 53 | `result-track:0dd6401f2575b4f0b294531f430757d806a1bb89a2306713340a0f10c788bee7` |
-| 4 | `theorem` | [Commute.expUnitary_add](../../../../FunctionalAnalysis/CStarAlgebraExponentialNamespaced.lean/declarations/commute-expunitary-add.md) | 57 | `result-track:8bdcbfcd410bafd0336ac706f46000c2eceed6f185904cc2f4c4e13ee26425cb` |
-| 5 | `theorem` | [Commute.expUnitary](../../../../FunctionalAnalysis/CStarAlgebraExponentialNamespaced.lean/declarations/commute-expunitary.md) | 65 | `result-track:a9b2038a583fdba5d7253925f33cce05025c1e8af537aa31528f75dce86cfd3e` |
+| 1 | `def` | [selfAdjoint.expUnitary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraExponentialNamespaced.lean/declarations/selfadjoint-expunitary.md) | 41 | `declaration-track:ea4670b35f0bb1a5409199cc554cd4694f4854983f1961efee48f9d31ce0f0dc` |
+| 2 | `lemma` | [selfAdjoint.expUnitary_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraExponentialNamespaced.lean/declarations/selfadjoint-expunitary-zero.md) | 48 | `result-track:7eeb4daf56aecf226a828c69c97cf7b5083d70fd52e929c176c14ebbcf88ae25` |
+| 3 | `lemma` | [selfAdjoint.continuous_expUnitary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraExponentialNamespaced.lean/declarations/selfadjoint-continuous-expunitary.md) | 53 | `result-track:0dd6401f2575b4f0b294531f430757d806a1bb89a2306713340a0f10c788bee7` |
+| 4 | `theorem` | [Commute.expUnitary_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraExponentialNamespaced.lean/declarations/commute-expunitary-add.md) | 57 | `result-track:8bdcbfcd410bafd0336ac706f46000c2eceed6f185904cc2f4c4e13ee26425cb` |
+| 5 | `theorem` | [Commute.expUnitary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraExponentialNamespaced.lean/declarations/commute-expunitary.md) | 65 | `result-track:a9b2038a583fdba5d7253925f33cce05025c1e8af537aa31528f75dce86cfd3e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

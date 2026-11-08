@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/KernelSeriesNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/KernelSeriesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/KernelSeriesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/KernelSeriesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nonnegative_kernel_series_integrable](../../../../MeasureAndIntegration/KernelSeriesNamespaced.lean/declarations/nonnegative-kernel-series-integrable.md) | 23 | `result-track:4bd86b365456f12edb63c02aed6ec584f77c5e9ae3fd1523701237d2204e4955` |
-| 2 | `theorem` | [nonnegative_kernel_series_integral](../../../../MeasureAndIntegration/KernelSeriesNamespaced.lean/declarations/nonnegative-kernel-series-integral.md) | 47 | `result-track:252957189101b705548e2e28784c398f6664671a4fdd2f345ed5dcdc8e9e2546` |
+| 1 | `theorem` | [nonnegative_kernel_series_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/KernelSeriesNamespaced.lean/declarations/nonnegative-kernel-series-integrable.md) | 23 | `result-track:4bd86b365456f12edb63c02aed6ec584f77c5e9ae3fd1523701237d2204e4955` |
+| 2 | `theorem` | [nonnegative_kernel_series_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/KernelSeriesNamespaced.lean/declarations/nonnegative-kernel-series-integral.md) | 47 | `result-track:252957189101b705548e2e28784c398f6664671a4fdd2f345ed5dcdc8e9e2546` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

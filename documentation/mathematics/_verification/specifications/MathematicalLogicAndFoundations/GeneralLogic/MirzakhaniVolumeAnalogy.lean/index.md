@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MirzakhaniVolumeAnalogy.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MirzakhaniVolumeAnalogy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MirzakhaniVolumeAnalogy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MirzakhaniVolumeAnalogy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MirzakhaniVolumeAnalogy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MirzakhaniVolumeAnalogy.lean/declarations/mirzakhanivolumeanalogy.md) | 17 | `declaration-track:b086710d289ff3c169e624ad52dd839dc47651e0f1238879116a134604f2afc4` |
-| 2 | `theorem` | [mirzakhani_volume_is_analogy_only](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MirzakhaniVolumeAnalogy.lean/declarations/mirzakhani-volume-is-analogy-only.md) | 23 | `result-track:9b2a3b19f17dbef6a80212060cd68654f39d771e4c05aa96bca36e2426cde459` |
+| 1 | `structure` | [MirzakhaniVolumeAnalogy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MirzakhaniVolumeAnalogy.lean/declarations/mirzakhanivolumeanalogy.md) | 17 | `declaration-track:b086710d289ff3c169e624ad52dd839dc47651e0f1238879116a134604f2afc4` |
+| 2 | `theorem` | [mirzakhani_volume_is_analogy_only](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MirzakhaniVolumeAnalogy.lean/declarations/mirzakhani-volume-is-analogy-only.md) | 23 | `result-track:9b2a3b19f17dbef6a80212060cd68654f39d771e4c05aa96bca36e2426cde459` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

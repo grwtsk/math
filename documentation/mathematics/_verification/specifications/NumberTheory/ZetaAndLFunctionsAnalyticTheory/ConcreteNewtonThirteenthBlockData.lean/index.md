@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirteenthBlockData.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirteenthBlockData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirteenthBlockData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirteenthBlockData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonTwelfthBlockData`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTwelfthBlockData.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonTwelfthBlockData`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonTwelfthBlockData.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [base](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirteenthBlockData.lean/declarations/base.md) | 24 | `declaration-track:41667c54eaae2b7dd833c3219ece3e6a3339b3c41c9b0fe1a16168a02269517c` |
-| 2 | `def` | [initial](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirteenthBlockData.lean/declarations/initial.md) | 26 | `declaration-track:09976de53428b019a30dc835f1bb6e30c390b3ec28b56457e25c6a4e5bfbb96f` |
-| 3 | `def` | [sourceArgument](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirteenthBlockData.lean/declarations/sourceargument.md) | 93 | `declaration-track:a1b90d382563e7fc2bd17846d301950dc7722397c60c9b049e6fa9fb54df85e4` |
-| 4 | `def` | [sourceRadius](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirteenthBlockData.lean/declarations/sourceradius.md) | 95 | `declaration-track:86185f882c322e9c1b3f0f2df931a55c5be05e8336e036a4ddf23acb0d1ef7d1` |
-| 5 | `def` | [sourceDisplacement](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirteenthBlockData.lean/declarations/sourcedisplacement.md) | 97 | `declaration-track:1ce84c356d5cc1a249d6c7feffbd76dc5847ebc69f7090fd826f6405959ce902` |
-| 6 | `def` | [InputValid](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirteenthBlockData.lean/declarations/inputvalid.md) | 100 | `declaration-track:74f0b3561e29d11393e2715345a3da9886c49e5bde7f38f973af8efbbc6e5ac7` |
-| 7 | `def` | [SeedWindows](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirteenthBlockData.lean/declarations/seedwindows.md) | 104 | `declaration-track:3c877f09982b7dfa760f1171ab8dc3cd3609fde04c079cc925f9240723c4dfef` |
+| 1 | `def` | [base](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirteenthBlockData.lean/declarations/base.md) | 24 | `declaration-track:41667c54eaae2b7dd833c3219ece3e6a3339b3c41c9b0fe1a16168a02269517c` |
+| 2 | `def` | [initial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirteenthBlockData.lean/declarations/initial.md) | 26 | `declaration-track:09976de53428b019a30dc835f1bb6e30c390b3ec28b56457e25c6a4e5bfbb96f` |
+| 3 | `def` | [sourceArgument](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirteenthBlockData.lean/declarations/sourceargument.md) | 93 | `declaration-track:a1b90d382563e7fc2bd17846d301950dc7722397c60c9b049e6fa9fb54df85e4` |
+| 4 | `def` | [sourceRadius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirteenthBlockData.lean/declarations/sourceradius.md) | 95 | `declaration-track:86185f882c322e9c1b3f0f2df931a55c5be05e8336e036a4ddf23acb0d1ef7d1` |
+| 5 | `def` | [sourceDisplacement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirteenthBlockData.lean/declarations/sourcedisplacement.md) | 97 | `declaration-track:1ce84c356d5cc1a249d6c7feffbd76dc5847ebc69f7090fd826f6405959ce902` |
+| 6 | `def` | [InputValid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirteenthBlockData.lean/declarations/inputvalid.md) | 100 | `declaration-track:74f0b3561e29d11393e2715345a3da9886c49e5bde7f38f973af8efbbc6e5ac7` |
+| 7 | `def` | [SeedWindows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonThirteenthBlockData.lean/declarations/seedwindows.md) | 104 | `declaration-track:3c877f09982b7dfa760f1171ab8dc3cd3609fde04c079cc925f9240723c4dfef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

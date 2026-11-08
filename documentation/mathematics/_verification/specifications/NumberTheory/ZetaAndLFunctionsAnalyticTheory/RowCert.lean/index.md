@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RowCertData](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/rowcertdata.md) | 24 | `declaration-track:502b2b60b1844c54da7087e9903e0ac2462862b40e74fc1c105f19449e6b7908` |
-| 2 | `def` | [rowsOK](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/rowsok.md) | 34 | `declaration-track:64fa271b2d5ac90f6a077a6c86ed0fe00220c60a002f10e7c792732de4f09a48` |
-| 3 | `def` | [sumLo](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/sumlo.md) | 43 | `declaration-track:5565220f84204f3c2471b2b99bcae759a40fb745bd26417abae419a1912c6b30` |
-| 4 | `def` | [sumHi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/sumhi.md) | 47 | `declaration-track:d6717a70b6c6c83364e4734e10d9e5cc761aa4b51ae5a98e709a8058123d4a7d` |
-| 5 | `def` | [checkRows](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/checkrows.md) | 52 | `declaration-track:4a64636598987169d2b203586d577d52927e0ae1a75bdb522d46a0533b7bc110` |
-| 6 | `lemma` | [rows_sound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/rows-sound.md) | 65 | `result-track:d00fc8e80929898a4d785484464b34aae86d64868e16f429f179f78b32016595` |
-| 7 | `lemma` | [sums_sound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/sums-sound.md) | 113 | `result-track:d100c60854e298128eb5512d6ed27dd77173fd734017f0927d817e97216976b2` |
-| 8 | `theorem` | [cert_of_checkRows](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/cert-of-checkrows.md) | 134 | `result-track:81f0dbed5bd4e8b14db1c50c173d85d14b0e0f948bf6346bf92029663defdd07` |
+| 1 | `structure` | [RowCertData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/rowcertdata.md) | 24 | `declaration-track:502b2b60b1844c54da7087e9903e0ac2462862b40e74fc1c105f19449e6b7908` |
+| 2 | `def` | [rowsOK](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/rowsok.md) | 34 | `declaration-track:64fa271b2d5ac90f6a077a6c86ed0fe00220c60a002f10e7c792732de4f09a48` |
+| 3 | `def` | [sumLo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/sumlo.md) | 43 | `declaration-track:5565220f84204f3c2471b2b99bcae759a40fb745bd26417abae419a1912c6b30` |
+| 4 | `def` | [sumHi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/sumhi.md) | 47 | `declaration-track:d6717a70b6c6c83364e4734e10d9e5cc761aa4b51ae5a98e709a8058123d4a7d` |
+| 5 | `def` | [checkRows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/checkrows.md) | 52 | `declaration-track:4a64636598987169d2b203586d577d52927e0ae1a75bdb522d46a0533b7bc110` |
+| 6 | `lemma` | [rows_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/rows-sound.md) | 65 | `result-track:d00fc8e80929898a4d785484464b34aae86d64868e16f429f179f78b32016595` |
+| 7 | `lemma` | [sums_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/sums-sound.md) | 113 | `result-track:d100c60854e298128eb5512d6ed27dd77173fd734017f0927d817e97216976b2` |
+| 8 | `theorem` | [cert_of_checkRows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/cert-of-checkrows.md) | 134 | `result-track:81f0dbed5bd4e8b14db1c50c173d85d14b0e0f948bf6346bf92029663defdd07` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

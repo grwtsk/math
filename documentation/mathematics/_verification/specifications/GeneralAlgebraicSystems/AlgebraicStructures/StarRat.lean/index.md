@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarRat.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarRat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarRat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarRat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Rat.instStarRing](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarRat.lean/declarations/rat-inststarring.md) | 15 | `declaration-track:e6300f2a58bdfd0784314762ba322e1708e2609085c854f219bd224c7f55b45b` |
-| 2 | `instance` | [NNRat.instStarRing](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarRat.lean/declarations/nnrat-inststarring.md) | 16 | `declaration-track:3d60cfc1fabfe0502f7fbb735dd134fd30b5a270c84ad7b282a45be4ca50c541` |
-| 3 | `instance` | [Rat.instTrivialStar](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarRat.lean/declarations/rat-insttrivialstar.md) | 17 | `declaration-track:e6672ff488d20450e9f990919d865bddb0a41e3fd291620967111e27dad819ca` |
-| 4 | `instance` | [NNRat.instTrivialStar](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarRat.lean/declarations/nnrat-insttrivialstar.md) | 18 | `declaration-track:2af3457218748f303a284e6af80f541d9b3ad5ea5b27dd991fd89b3fdfed3c14` |
-| 5 | `lemma` | [star_nnratCast](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarRat.lean/declarations/star-nnratcast.md) | 25 | `result-track:05294eadba3602b7e1dadac4060e313628db327a13563fb7a8c39f7b85e76a73` |
-| 6 | `theorem` | [star_ratCast](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarRat.lean/declarations/star-ratcast.md) | 29 | `result-track:ef2259ea3e31578527001abee8bb5214e38310f550696db47d9231fec9e67e10` |
+| 1 | `instance` | [Rat.instStarRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarRat.lean/declarations/rat-inststarring.md) | 15 | `declaration-track:e6300f2a58bdfd0784314762ba322e1708e2609085c854f219bd224c7f55b45b` |
+| 2 | `instance` | [NNRat.instStarRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarRat.lean/declarations/nnrat-inststarring.md) | 16 | `declaration-track:3d60cfc1fabfe0502f7fbb735dd134fd30b5a270c84ad7b282a45be4ca50c541` |
+| 3 | `instance` | [Rat.instTrivialStar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarRat.lean/declarations/rat-insttrivialstar.md) | 17 | `declaration-track:e6672ff488d20450e9f990919d865bddb0a41e3fd291620967111e27dad819ca` |
+| 4 | `instance` | [NNRat.instTrivialStar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarRat.lean/declarations/nnrat-insttrivialstar.md) | 18 | `declaration-track:2af3457218748f303a284e6af80f541d9b3ad5ea5b27dd991fd89b3fdfed3c14` |
+| 5 | `lemma` | [star_nnratCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarRat.lean/declarations/star-nnratcast.md) | 25 | `result-track:05294eadba3602b7e1dadac4060e313628db327a13563fb7a8c39f7b85e76a73` |
+| 6 | `theorem` | [star_ratCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarRat.lean/declarations/star-ratcast.md) | 29 | `result-track:ef2259ea3e31578527001abee8bb5214e38310f550696db47d9231fec9e67e10` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

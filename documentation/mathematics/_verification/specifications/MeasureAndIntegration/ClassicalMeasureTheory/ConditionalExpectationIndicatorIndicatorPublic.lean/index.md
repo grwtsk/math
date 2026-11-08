@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationIndicatorIndicatorPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationIndicatorIndicatorPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationIndicatorIndicatorPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationIndicatorIndicatorPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [condExp_ae_eq_restrict_zero](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationIndicatorIndicatorPublic.lean/declarations/condexp-ae-eq-restrict-zero.md) | 40 | `result-track:f1676ad0fc619525f5ec67787b0cb0345e0cbba575802d09a32f1f76a8d1e555` |
-| 2 | `theorem` | [condExp_indicator_aux](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationIndicatorIndicatorPublic.lean/declarations/condexp-indicator-aux.md) | 64 | `result-track:7921af5a985c928f8bf98f3ffa9510bbd41aff233061f183adf764dd81bcb3df` |
-| 3 | `theorem` | [condExp_indicator](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationIndicatorIndicatorPublic.lean/declarations/condexp-indicator.md) | 75 | `result-track:90c94cc2ccb49147e6d0b72731e21970c65420fba9374f5f4e4b52908a9998c7` |
-| 4 | `theorem` | [condExp_restrict_ae_eq_restrict](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationIndicatorIndicatorPublic.lean/declarations/condexp-restrict-ae-eq-restrict.md) | 113 | `result-track:d5e1f65ffebd645357f367ab93b9b9a76f4e10b5b0de7e869cd1cd87a7cc785c` |
-| 5 | `theorem` | [condExp_ae_eq_restrict_of_measurableSpace_eq_on](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationIndicatorIndicatorPublic.lean/declarations/condexp-ae-eq-restrict-of-measurablespace-eq-on.md) | 141 | `result-track:63e84d4e2c7737c1918f60bcd3e26c0402aadaa9a29afaa62cc35f886afa92d4` |
+| 1 | `theorem` | [condExp_ae_eq_restrict_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationIndicatorIndicatorPublic.lean/declarations/condexp-ae-eq-restrict-zero.md) | 40 | `result-track:f1676ad0fc619525f5ec67787b0cb0345e0cbba575802d09a32f1f76a8d1e555` |
+| 2 | `theorem` | [condExp_indicator_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationIndicatorIndicatorPublic.lean/declarations/condexp-indicator-aux.md) | 64 | `result-track:7921af5a985c928f8bf98f3ffa9510bbd41aff233061f183adf764dd81bcb3df` |
+| 3 | `theorem` | [condExp_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationIndicatorIndicatorPublic.lean/declarations/condexp-indicator.md) | 75 | `result-track:90c94cc2ccb49147e6d0b72731e21970c65420fba9374f5f4e4b52908a9998c7` |
+| 4 | `theorem` | [condExp_restrict_ae_eq_restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationIndicatorIndicatorPublic.lean/declarations/condexp-restrict-ae-eq-restrict.md) | 113 | `result-track:d5e1f65ffebd645357f367ab93b9b9a76f4e10b5b0de7e869cd1cd87a7cc785c` |
+| 5 | `theorem` | [condExp_ae_eq_restrict_of_measurableSpace_eq_on](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationIndicatorIndicatorPublic.lean/declarations/condexp-ae-eq-restrict-of-measurablespace-eq-on.md) | 141 | `result-track:63e84d4e2c7737c1918f60bcd3e26c0402aadaa9a29afaa62cc35f886afa92d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

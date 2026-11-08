@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Boundary.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Boundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Boundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Boundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProperBoundaryOperator](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Boundary.lean/declarations/properboundaryoperator.md) | 20 | `declaration-track:07a9699373f541f9cecc4ffc61f6c2e5356e4002de285b64378a6731eb38822e` |
-| 2 | `def` | [comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Boundary.lean/declarations/comp.md) | 27 | `declaration-track:9e6bac1e18b2bd4678e74b806f35242409f3ac17dbaef0a8b095f3d8183cec75` |
-| 3 | `structure` | [BoundaryProfile](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Boundary.lean/declarations/boundaryprofile.md) | 37 | `declaration-track:b6fd6652977d0204a7939ddc9c8e84d5c6281954e5190cc477a4b90350174c54` |
-| 4 | `structure` | [BoundaryReplacement](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Boundary.lean/declarations/boundaryreplacement.md) | 59 | `declaration-track:1e631994520dd1cb220265b73730aa460ec9838b9861ab9d73adaac124715fc5` |
+| 1 | `structure` | [ProperBoundaryOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Boundary.lean/declarations/properboundaryoperator.md) | 20 | `declaration-track:07a9699373f541f9cecc4ffc61f6c2e5356e4002de285b64378a6731eb38822e` |
+| 2 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Boundary.lean/declarations/comp.md) | 27 | `declaration-track:9e6bac1e18b2bd4678e74b806f35242409f3ac17dbaef0a8b095f3d8183cec75` |
+| 3 | `structure` | [BoundaryProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Boundary.lean/declarations/boundaryprofile.md) | 37 | `declaration-track:b6fd6652977d0204a7939ddc9c8e84d5c6281954e5190cc477a4b90350174c54` |
+| 4 | `structure` | [BoundaryReplacement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Boundary.lean/declarations/boundaryreplacement.md) | 59 | `declaration-track:1e631994520dd1cb220265b73730aa460ec9838b9861ab9d73adaac124715fc5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

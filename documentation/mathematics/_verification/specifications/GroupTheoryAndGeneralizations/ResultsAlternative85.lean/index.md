@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ResultsAlternative85.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ResultsAlternative85.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ResultsAlternative85.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ResultsAlternative85.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [TwistedTwoCochain](../../../../GroupTheoryAndGeneralizations/ResultsAlternative85.lean/declarations/twistedtwocochain.md) | 12 | `declaration-track:71f138159f651751bf08b7fe096259cb8e88ed59c12457e2167cf5cb7bcbb873` |
+| 1 | `abbrev` | [TwistedTwoCochain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ResultsAlternative85.lean/declarations/twistedtwocochain.md) | 12 | `declaration-track:71f138159f651751bf08b7fe096259cb8e88ed59c12457e2167cf5cb7bcbb873` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

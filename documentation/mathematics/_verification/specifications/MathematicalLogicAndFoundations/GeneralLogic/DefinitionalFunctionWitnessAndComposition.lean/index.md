@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefinitionalFunctionWitnessAndComposition.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefinitionalFunctionWitnessAndComposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefinitionalFunctionWitnessAndComposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefinitionalFunctionWitnessAndComposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Definitional](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefinitionalFunctionWitnessAndComposition.lean/declarations/definitional.md) | 38 | `declaration-track:bb2b0e38571ae98980264686e56b141ac9f7a597304ab1f435785e57426f55b0` |
-| 2 | `def` | [rfl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefinitionalFunctionWitnessAndComposition.lean/declarations/rfl.md) | 45 | `declaration-track:a6e513df5a239681bd6f0e5d124db3c0fe9cc655a841909f609c65c8b89e8bbe` |
-| 3 | `def` | [comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefinitionalFunctionWitnessAndComposition.lean/declarations/comp.md) | 50 | `declaration-track:a342d37026273c5262756c8cd79fa8c7ad5fabf04a50edc14937a5abacb89664` |
+| 1 | `structure` | [Definitional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefinitionalFunctionWitnessAndComposition.lean/declarations/definitional.md) | 38 | `declaration-track:bb2b0e38571ae98980264686e56b141ac9f7a597304ab1f435785e57426f55b0` |
+| 2 | `def` | [rfl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefinitionalFunctionWitnessAndComposition.lean/declarations/rfl.md) | 45 | `declaration-track:a6e513df5a239681bd6f0e5d124db3c0fe9cc655a841909f609c65c8b89e8bbe` |
+| 3 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefinitionalFunctionWitnessAndComposition.lean/declarations/comp.md) | 50 | `declaration-track:a342d37026273c5262756c8cd79fa8c7ad5fabf04a50edc14937a5abacb89664` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/OrderedProduct.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/OrderedProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [orderedProduct](../../../../GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/orderedproduct.md) | 26 | `declaration-track:ce9b920139bce1eefee1d604c93445d5c3ab9260cbffe7e9793b1b809edc3ca5` |
-| 2 | `theorem` | [orderedProduct_zero](../../../../GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/orderedproduct-zero.md) | 32 | `result-track:571a7d754ee81cae3d84491f158b72b194f59e75d8b79639ee4067f8cd769107` |
-| 3 | `theorem` | [orderedProduct_succ](../../../../GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/orderedproduct-succ.md) | 38 | `result-track:6305a7b036c07321057cee8d594417f476865d597cfd3f8b8d98eaa68fc60c84` |
-| 4 | `theorem` | [orderedProduct_add](../../../../GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/orderedproduct-add.md) | 44 | `result-track:4e0ee46f7812843435f5c20e034d038f14d1f0c9d17f66ffb0f1a421da547e2a` |
-| 5 | `def` | [gaugeTransfer](../../../../GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/gaugetransfer.md) | 56 | `declaration-track:a42b44add2f56d972776bb8409adbde52b0612d16f5846204bc9ffbeddaeb4ee` |
-| 6 | `theorem` | [orderedProduct_gaugeTransfer](../../../../GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/orderedproduct-gaugetransfer.md) | 62 | `result-track:41e47c6a43823b02d86827f3102d1d9e01f14c30811fb615b742262797c7f551` |
-| 7 | `theorem` | [orderedProduct_conjugation](../../../../GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/orderedproduct-conjugation.md) | 77 | `result-track:0e89d4fe7b4f00399cf6ea4b03b0d36ee57e5db5e2705bd523408d90281f4767` |
-| 8 | `theorem` | [commute_orderedProduct](../../../../GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/commute-orderedproduct.md) | 90 | `result-track:2694a06e4a438c48a2c466d00dabb8a5512b4c581a968480f70dc4b099a7179e` |
-| 9 | `theorem` | [orderedProduct_inverse_commuting](../../../../GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/orderedproduct-inverse-commuting.md) | 100 | `result-track:2434598c6e8c9722dbcf3d59e8cfdb44d19e1513a269fec73e34d11f6559f6d0` |
-| 10 | `theorem` | [orderedProduct_sign_inverse](../../../../GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/orderedproduct-sign-inverse.md) | 112 | `result-track:e2501fc27d7a9ce88212b5428aacdac14ab9cda48f69e1b2cfa27c3f900d7c6f` |
+| 1 | `def` | [orderedProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/orderedproduct.md) | 26 | `declaration-track:ce9b920139bce1eefee1d604c93445d5c3ab9260cbffe7e9793b1b809edc3ca5` |
+| 2 | `theorem` | [orderedProduct_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/orderedproduct-zero.md) | 32 | `result-track:571a7d754ee81cae3d84491f158b72b194f59e75d8b79639ee4067f8cd769107` |
+| 3 | `theorem` | [orderedProduct_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/orderedproduct-succ.md) | 38 | `result-track:6305a7b036c07321057cee8d594417f476865d597cfd3f8b8d98eaa68fc60c84` |
+| 4 | `theorem` | [orderedProduct_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/orderedproduct-add.md) | 44 | `result-track:4e0ee46f7812843435f5c20e034d038f14d1f0c9d17f66ffb0f1a421da547e2a` |
+| 5 | `def` | [gaugeTransfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/gaugetransfer.md) | 56 | `declaration-track:a42b44add2f56d972776bb8409adbde52b0612d16f5846204bc9ffbeddaeb4ee` |
+| 6 | `theorem` | [orderedProduct_gaugeTransfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/orderedproduct-gaugetransfer.md) | 62 | `result-track:41e47c6a43823b02d86827f3102d1d9e01f14c30811fb615b742262797c7f551` |
+| 7 | `theorem` | [orderedProduct_conjugation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/orderedproduct-conjugation.md) | 77 | `result-track:0e89d4fe7b4f00399cf6ea4b03b0d36ee57e5db5e2705bd523408d90281f4767` |
+| 8 | `theorem` | [commute_orderedProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/commute-orderedproduct.md) | 90 | `result-track:2694a06e4a438c48a2c466d00dabb8a5512b4c581a968480f70dc4b099a7179e` |
+| 9 | `theorem` | [orderedProduct_inverse_commuting](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/orderedproduct-inverse-commuting.md) | 100 | `result-track:2434598c6e8c9722dbcf3d59e8cfdb44d19e1513a269fec73e34d11f6559f6d0` |
+| 10 | `theorem` | [orderedProduct_sign_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProduct.lean/declarations/orderedproduct-sign-inverse.md) | 112 | `result-track:e2501fc27d7a9ce88212b5428aacdac14ab9cda48f69e1b2cfa27c3f900d7c6f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

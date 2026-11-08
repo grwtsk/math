@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MathematicsFiberNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MathematicsFiberNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MathematicsFiberNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MathematicsFiberNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProjectExportMetadata](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MathematicsFiberNamespaced.lean/declarations/projectexportmetadata.md) | 18 | `declaration-track:078634a34360d2e208b73245b4655c35a70a5784f12faf16b42c243675d771db` |
-| 2 | `def` | [projectKeyOfFiber](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MathematicsFiberNamespaced.lean/declarations/projectkeyoffiber.md) | 31 | `declaration-track:9b39ead7b4481dc998e1d43978b50523d4f2488963257180ae137addb2da9d4b` |
-| 3 | `def` | [projectExportOfFiber](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MathematicsFiberNamespaced.lean/declarations/projectexportoffiber.md) | 38 | `declaration-track:03b27232c5fab55f611c91c4d01a302071c652e1d46f5fe98b8b9227e8a6b61c` |
-| 4 | `theorem` | [projectExportOfFiber_key](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MathematicsFiberNamespaced.lean/declarations/projectexportoffiber-key.md) | 56 | `result-track:01b39f74dd78ea088a89e1497bda84e973c72ca6342247fbf8f2c1a48e70ee5b` |
+| 1 | `structure` | [ProjectExportMetadata](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MathematicsFiberNamespaced.lean/declarations/projectexportmetadata.md) | 18 | `declaration-track:078634a34360d2e208b73245b4655c35a70a5784f12faf16b42c243675d771db` |
+| 2 | `def` | [projectKeyOfFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MathematicsFiberNamespaced.lean/declarations/projectkeyoffiber.md) | 31 | `declaration-track:9b39ead7b4481dc998e1d43978b50523d4f2488963257180ae137addb2da9d4b` |
+| 3 | `def` | [projectExportOfFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MathematicsFiberNamespaced.lean/declarations/projectexportoffiber.md) | 38 | `declaration-track:03b27232c5fab55f611c91c4d01a302071c652e1d46f5fe98b8b9227e8a6b61c` |
+| 4 | `theorem` | [projectExportOfFiber_key](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MathematicsFiberNamespaced.lean/declarations/projectexportoffiber-key.md) | 56 | `result-track:01b39f74dd78ea088a89e1497bda84e973c72ca6342247fbf8f2c1a48e70ee5b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

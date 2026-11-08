@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PlaceInteractionNamespacedPlaceInteraction.lean/index.md) · [Full source](../../../../Combinatorics/PlaceInteractionNamespacedPlaceInteraction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlaceInteractionNamespacedPlaceInteraction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlaceInteractionNamespacedPlaceInteraction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [placeInteraction](../../../../Combinatorics/PlaceInteractionNamespacedPlaceInteraction.lean/declarations/placeinteraction.md) | 22 | `declaration-track:f09a83efe366db623b0f3b29dd2720249acbee7e1083cef86cc7aeb8abc2a31f` |
-| 2 | `theorem` | [placeInteraction_eq_incrementDifference](../../../../Combinatorics/PlaceInteractionNamespacedPlaceInteraction.lean/declarations/placeinteraction-eq-incrementdifference.md) | 36 | `result-track:0eaeb7ad2c9c0afdfc01c1df5f6eea9dace6146082724048d1d4532e19a4cfa9` |
-| 3 | `inductive` | [InteractionSign](../../../../Combinatorics/PlaceInteractionNamespacedPlaceInteraction.lean/declarations/interactionsign.md) | 51 | `declaration-track:34eca10755f833e0f69d27a76929ecd835fa6263a68b283475798c4d8b44f973` |
-| 4 | `structure` | [PlaceInteractionCertificate](../../../../Combinatorics/PlaceInteractionNamespacedPlaceInteraction.lean/declarations/placeinteractioncertificate.md) | 58 | `declaration-track:9760512fa1955e33ced49d8bba7a5304369b69cad7341dfc78343ed4fc7bfa49` |
+| 1 | `def` | [placeInteraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlaceInteractionNamespacedPlaceInteraction.lean/declarations/placeinteraction.md) | 22 | `declaration-track:f09a83efe366db623b0f3b29dd2720249acbee7e1083cef86cc7aeb8abc2a31f` |
+| 2 | `theorem` | [placeInteraction_eq_incrementDifference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlaceInteractionNamespacedPlaceInteraction.lean/declarations/placeinteraction-eq-incrementdifference.md) | 36 | `result-track:0eaeb7ad2c9c0afdfc01c1df5f6eea9dace6146082724048d1d4532e19a4cfa9` |
+| 3 | `inductive` | [InteractionSign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlaceInteractionNamespacedPlaceInteraction.lean/declarations/interactionsign.md) | 51 | `declaration-track:34eca10755f833e0f69d27a76929ecd835fa6263a68b283475798c4d8b44f973` |
+| 4 | `structure` | [PlaceInteractionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlaceInteractionNamespacedPlaceInteraction.lean/declarations/placeinteractioncertificate.md) | 58 | `declaration-track:9760512fa1955e33ced49d8bba7a5304369b69cad7341dfc78343ed4fc7bfa49` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

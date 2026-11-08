@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PositiveHalfLineCutoffBalance.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PositiveHalfLineCutoffBalance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveHalfLineCutoffBalance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveHalfLineCutoffBalance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [positive_halfline_cutoff_balance](../../../../MeasureAndIntegration/PositiveHalfLineCutoffBalance.lean/declarations/positive-halfline-cutoff-balance.md) | 23 | `result-track:f03072b01b9e77e80e7c8236c14c84e6ff0695472fbed330e3677e039bf60366` |
-| 2 | `theorem` | [positive_halfline_sample_price](../../../../MeasureAndIntegration/PositiveHalfLineCutoffBalance.lean/declarations/positive-halfline-sample-price.md) | 38 | `result-track:b2e565b752b47cbffe629215847ddd4dd0e42053db397dd7809570834fd089ae` |
+| 1 | `theorem` | [positive_halfline_cutoff_balance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveHalfLineCutoffBalance.lean/declarations/positive-halfline-cutoff-balance.md) | 23 | `result-track:f03072b01b9e77e80e7c8236c14c84e6ff0695472fbed330e3677e039bf60366` |
+| 2 | `theorem` | [positive_halfline_sample_price](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveHalfLineCutoffBalance.lean/declarations/positive-halfline-sample-price.md) | 38 | `result-track:b2e565b752b47cbffe629215847ddd4dd0e42053db397dd7809570834fd089ae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

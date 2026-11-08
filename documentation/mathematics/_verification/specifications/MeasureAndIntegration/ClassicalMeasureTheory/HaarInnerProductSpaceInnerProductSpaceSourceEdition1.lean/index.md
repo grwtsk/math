@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/HaarInnerProductSpaceInnerProductSpaceSourceEdition1.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/HaarInnerProductSpaceInnerProductSpaceSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/HaarInnerProductSpaceInnerProductSpaceSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/HaarInnerProductSpaceInnerProductSpaceSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Orientation.measure_orthonormalBasis](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/HaarInnerProductSpaceInnerProductSpaceSourceEdition1.lean/declarations/orientation-measure-orthonormalbasis.md) | 36 | `result-track:2dbdc1355e8a7adc49ae8af8324dc93e59cd4c2b2add0d3016fa36f4cb29ab4a` |
-| 2 | `theorem` | [Orientation.measure_eq_volume](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/HaarInnerProductSpaceInnerProductSpaceSourceEdition1.lean/declarations/orientation-measure-eq-volume.md) | 50 | `result-track:b8710c39f951d9f6e09fb9af8aed495258a53d2c9a5dc64b353979b6ecfbea6f` |
-| 3 | `theorem` | [OrthonormalBasis.volume_parallelepiped](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/HaarInnerProductSpaceInnerProductSpaceSourceEdition1.lean/declarations/orthonormalbasis-volume-parallelepiped.md) | 63 | `result-track:c31d0158f7c4ca3efa1866a573e5e2588f74752926917c49ff4bea13637f30fb` |
+| 1 | `theorem` | [Orientation.measure_orthonormalBasis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/HaarInnerProductSpaceInnerProductSpaceSourceEdition1.lean/declarations/orientation-measure-orthonormalbasis.md) | 36 | `result-track:2dbdc1355e8a7adc49ae8af8324dc93e59cd4c2b2add0d3016fa36f4cb29ab4a` |
+| 2 | `theorem` | [Orientation.measure_eq_volume](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/HaarInnerProductSpaceInnerProductSpaceSourceEdition1.lean/declarations/orientation-measure-eq-volume.md) | 50 | `result-track:b8710c39f951d9f6e09fb9af8aed495258a53d2c9a5dc64b353979b6ecfbea6f` |
+| 3 | `theorem` | [OrthonormalBasis.volume_parallelepiped](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/HaarInnerProductSpaceInnerProductSpaceSourceEdition1.lean/declarations/orthonormalbasis-volume-parallelepiped.md) | 63 | `result-track:c31d0158f7c4ca3efa1866a573e5e2588f74752926917c49ff4bea13637f30fb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

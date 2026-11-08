@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceSharpColumnEnvelopeMass.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceSharpColumnEnvelopeMass.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSharpColumnEnvelopeMass.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSharpColumnEnvelopeMass.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inverse_sqrt_antiderivative](../../../../MeasureAndIntegration/SourceSharpColumnEnvelopeMass.lean/declarations/inverse-sqrt-antiderivative.md) | 21 | `result-track:f77d43e4f918eace4aab9f663b273c39b056514dc52d89875759d7b218bccefa` |
-| 2 | `theorem` | [inverse_sqrt_cell_integrable](../../../../MeasureAndIntegration/SourceSharpColumnEnvelopeMass.lean/declarations/inverse-sqrt-cell-integrable.md) | 32 | `result-track:f2db41061ea632ae66a1ff0f9ded0c4f07d9b25cd3644b4fc548596577fb5375` |
-| 3 | `theorem` | [inverse_sqrt_integral](../../../../MeasureAndIntegration/SourceSharpColumnEnvelopeMass.lean/declarations/inverse-sqrt-integral.md) | 41 | `result-track:768e73b51e9546b727cafd6aafbbcda932983414fce6959fc52b590884b4f1c0` |
-| 4 | `theorem` | [columnEnvelopeMass_le_cutoff_ratio](../../../../MeasureAndIntegration/SourceSharpColumnEnvelopeMass.lean/declarations/columnenvelopemass-le-cutoff-ratio.md) | 52 | `result-track:ae13d770ba5daaaf3c4598139f9ea1c488c67788201fa9e77ef1e950748bf65d` |
+| 1 | `theorem` | [inverse_sqrt_antiderivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSharpColumnEnvelopeMass.lean/declarations/inverse-sqrt-antiderivative.md) | 21 | `result-track:f77d43e4f918eace4aab9f663b273c39b056514dc52d89875759d7b218bccefa` |
+| 2 | `theorem` | [inverse_sqrt_cell_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSharpColumnEnvelopeMass.lean/declarations/inverse-sqrt-cell-integrable.md) | 32 | `result-track:f2db41061ea632ae66a1ff0f9ded0c4f07d9b25cd3644b4fc548596577fb5375` |
+| 3 | `theorem` | [inverse_sqrt_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSharpColumnEnvelopeMass.lean/declarations/inverse-sqrt-integral.md) | 41 | `result-track:768e73b51e9546b727cafd6aafbbcda932983414fce6959fc52b590884b4f1c0` |
+| 4 | `theorem` | [columnEnvelopeMass_le_cutoff_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSharpColumnEnvelopeMass.lean/declarations/columnenvelopemass-le-cutoff-ratio.md) | 52 | `result-track:ae13d770ba5daaaf3c4598139f9ea1c488c67788201fa9e77ef1e950748bf65d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualOffAxisResidualUpper.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualOffAxisResidualUpper.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualOffAxisResidualUpper.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualOffAxisResidualUpper.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualResidual_sub_offAxisHead_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualOffAxisResidualUpper.lean/declarations/actualresidual-sub-offaxishead-eq.md) | 23 | `result-track:08e28ac27f60b98713407985d9a352cca13c1c79e8962162b77c0dbfe36d516f` |
-| 2 | `theorem` | [actualResidual_movingOffAxisHead_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualOffAxisResidualUpper.lean/declarations/actualresidual-movingoffaxishead-upper.md) | 33 | `result-track:9a4957b06fe07530b44fe07d43198fa491542544a682fbad724d04e32fcb0ac7` |
-| 3 | `theorem` | [actualResidual_movingOffAxisHead_eventual_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualOffAxisResidualUpper.lean/declarations/actualresidual-movingoffaxishead-eventual-upper.md) | 48 | `result-track:9f975bad2bc5f67cb9441a606407ae4bddf847a37321309447c41080f90914c8` |
+| 1 | `theorem` | [actualResidual_sub_offAxisHead_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualOffAxisResidualUpper.lean/declarations/actualresidual-sub-offaxishead-eq.md) | 23 | `result-track:08e28ac27f60b98713407985d9a352cca13c1c79e8962162b77c0dbfe36d516f` |
+| 2 | `theorem` | [actualResidual_movingOffAxisHead_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualOffAxisResidualUpper.lean/declarations/actualresidual-movingoffaxishead-upper.md) | 33 | `result-track:9a4957b06fe07530b44fe07d43198fa491542544a682fbad724d04e32fcb0ac7` |
+| 3 | `theorem` | [actualResidual_movingOffAxisHead_eventual_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualOffAxisResidualUpper.lean/declarations/actualresidual-movingoffaxishead-eventual-upper.md) | 48 | `result-track:9f975bad2bc5f67cb9441a606407ae4bddf847a37321309447c41080f90914c8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/MajorityCrossingNamespacedCrosses.lean/index.md) · [Full source](../../../../Combinatorics/MajorityCrossingNamespacedCrosses.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MajorityCrossingNamespacedCrosses.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MajorityCrossingNamespacedCrosses.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [majorityThreshold](../../../../Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/majoritythreshold.md) | 21 | `declaration-track:f8ae4e9b430e98f24a0df51478cdf4549db9d5fda03bdc1443c5933d46c23a75` |
-| 2 | `def` | [Crosses](../../../../Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/crosses.md) | 24 | `declaration-track:c83e33b93232aa1c5419459730703239b409e595e5e38d601b91b7adf229e672` |
-| 3 | `def` | [IsPrimitiveCrossing](../../../../Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/isprimitivecrossing.md) | 29 | `declaration-track:9201cb63d54efc599dc90b6d0faba3f8b98288f08a6b1e85ef42892e5c8fe37f` |
-| 4 | `theorem` | [primitiveCrossing_crosses](../../../../Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/primitivecrossing-crosses.md) | 35 | `result-track:fa0586dcf224718f4620f2030942ba0b78d2218d31679d1545795803cf3fba27` |
-| 5 | `theorem` | [primitiveCrossing_minimal](../../../../Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/primitivecrossing-minimal.md) | 46 | `result-track:3afa5fefea0608c11dba849e8cc4a30bf1095b112f59cb0e15820bda35cd342e` |
-| 6 | `def` | [selectedCount](../../../../Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/selectedcount.md) | 62 | `declaration-track:6b1552e1659a0a2d58ec2a31657cc67b66fda6f67b53fefd3fdf59088fc4a489` |
-| 7 | `def` | [ProperPrefix](../../../../Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/properprefix.md) | 65 | `declaration-track:269fa6aeb9c6a0aa135a5d9aad2fed1ec46b3fbc30a380012478f58a002d3ef6` |
-| 8 | `structure` | [IsFirstCrossingCode](../../../../Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/isfirstcrossingcode.md) | 69 | `declaration-track:a759ba89b849a4dbc00e64b6f80945b14a1c3bf7ebba79ee87e6327910e6b056` |
-| 9 | `structure` | [FirstCrossingCode](../../../../Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/firstcrossingcode.md) | 89 | `declaration-track:28fa6be25810f5259d8004fe6a1982cbbeb0732ea80f944af2c4758b5c79c12f` |
-| 10 | `theorem` | [firstCrossing_crosses](../../../../Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/firstcrossing-crosses.md) | 96 | `result-track:8a685f23e1981c5b1b24545f4f57354a99f847f631c474cb4cf1b2c353fc0194` |
-| 11 | `theorem` | [majority_crossing_prefix_free](../../../../Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/majority-crossing-prefix-free.md) | 106 | `result-track:13c0637f83f809eb0cf4818684882954067fa6f9f1d8628253ec13c05ee0fdbd` |
-| 12 | `structure` | [MajorityCrossingBijectionCertificate](../../../../Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/majoritycrossingbijectioncertificate.md) | 128 | `declaration-track:b3e2fec3d5efb05d8a82dda32582d4b975be6e69027485d8c3947f13fe2e1c94` |
+| 1 | `def` | [majorityThreshold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/majoritythreshold.md) | 21 | `declaration-track:f8ae4e9b430e98f24a0df51478cdf4549db9d5fda03bdc1443c5933d46c23a75` |
+| 2 | `def` | [Crosses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/crosses.md) | 24 | `declaration-track:c83e33b93232aa1c5419459730703239b409e595e5e38d601b91b7adf229e672` |
+| 3 | `def` | [IsPrimitiveCrossing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/isprimitivecrossing.md) | 29 | `declaration-track:9201cb63d54efc599dc90b6d0faba3f8b98288f08a6b1e85ef42892e5c8fe37f` |
+| 4 | `theorem` | [primitiveCrossing_crosses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/primitivecrossing-crosses.md) | 35 | `result-track:fa0586dcf224718f4620f2030942ba0b78d2218d31679d1545795803cf3fba27` |
+| 5 | `theorem` | [primitiveCrossing_minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/primitivecrossing-minimal.md) | 46 | `result-track:3afa5fefea0608c11dba849e8cc4a30bf1095b112f59cb0e15820bda35cd342e` |
+| 6 | `def` | [selectedCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/selectedcount.md) | 62 | `declaration-track:6b1552e1659a0a2d58ec2a31657cc67b66fda6f67b53fefd3fdf59088fc4a489` |
+| 7 | `def` | [ProperPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/properprefix.md) | 65 | `declaration-track:269fa6aeb9c6a0aa135a5d9aad2fed1ec46b3fbc30a380012478f58a002d3ef6` |
+| 8 | `structure` | [IsFirstCrossingCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/isfirstcrossingcode.md) | 69 | `declaration-track:a759ba89b849a4dbc00e64b6f80945b14a1c3bf7ebba79ee87e6327910e6b056` |
+| 9 | `structure` | [FirstCrossingCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/firstcrossingcode.md) | 89 | `declaration-track:28fa6be25810f5259d8004fe6a1982cbbeb0732ea80f944af2c4758b5c79c12f` |
+| 10 | `theorem` | [firstCrossing_crosses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/firstcrossing-crosses.md) | 96 | `result-track:8a685f23e1981c5b1b24545f4f57354a99f847f631c474cb4cf1b2c353fc0194` |
+| 11 | `theorem` | [majority_crossing_prefix_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/majority-crossing-prefix-free.md) | 106 | `result-track:13c0637f83f809eb0cf4818684882954067fa6f9f1d8628253ec13c05ee0fdbd` |
+| 12 | `structure` | [MajorityCrossingBijectionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MajorityCrossingNamespacedCrosses.lean/declarations/majoritycrossingbijectioncertificate.md) | 128 | `declaration-track:b3e2fec3d5efb05d8a82dda32582d4b975be6e69027485d8c3947f13fe2e1c94` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexMeasureNamespaced.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexMeasureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConvexMeasureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConvexMeasureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [addHaar_frontier](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexMeasureNamespaced.lean/declarations/addhaar-frontier.md) | 39 | `result-track:b9946be436bc89ad9c7d1926d53bfc18531017f23c04a410782a4f75a86b6d88` |
-| 2 | `theorem` | [nullMeasurableSet](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexMeasureNamespaced.lean/declarations/nullmeasurableset.md) | 90 | `result-track:7a2860ffa81ba02ddee95856b18edc3992f3e453272ab387c4eba12213190f24` |
+| 1 | `theorem` | [addHaar_frontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConvexMeasureNamespaced.lean/declarations/addhaar-frontier.md) | 39 | `result-track:b9946be436bc89ad9c7d1926d53bfc18531017f23c04a410782a4f75a86b6d88` |
+| 2 | `theorem` | [nullMeasurableSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConvexMeasureNamespaced.lean/declarations/nullmeasurableset.md) | 90 | `result-track:7a2860ffa81ba02ddee95856b18edc3992f3e453272ab387c4eba12213190f24` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

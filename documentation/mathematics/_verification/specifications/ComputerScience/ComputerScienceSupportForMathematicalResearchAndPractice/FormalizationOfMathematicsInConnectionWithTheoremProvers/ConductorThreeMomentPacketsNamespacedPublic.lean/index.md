@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeMomentPacketsNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeMomentPacketsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeMomentPacketsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeMomentPacketsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [WangZahlGeometryForFrame](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeMomentPacketsNamespacedPublic.lean/declarations/wangzahlgeometryforframe.md) | 38 | `declaration-track:d3a666663ec83e5dcee0cec3b74c7c930d1b5e8a5287838744a96f3e09d6972f` |
-| 2 | `structure` | [ConductorThreePrimeMomentRoute](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeMomentPacketsNamespacedPublic.lean/declarations/conductorthreeprimemomentroute.md) | 49 | `declaration-track:b4dc1ceea9154918560f8f3d6fe48438024886be281045dd1b5e8ac7ecbb8cb0` |
-| 3 | `theorem` | [ConductorThreePrimeMomentRoute.geometricScale_pos](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeMomentPacketsNamespacedPublic.lean/declarations/conductorthreeprimemomentroute-geometricscale-pos.md) | 61 | `result-track:84ebdc237f00db759d2a8e908127f02063885cf71caa619d4aa10ace0f9be0d9` |
+| 1 | `structure` | [WangZahlGeometryForFrame](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeMomentPacketsNamespacedPublic.lean/declarations/wangzahlgeometryforframe.md) | 38 | `declaration-track:d3a666663ec83e5dcee0cec3b74c7c930d1b5e8a5287838744a96f3e09d6972f` |
+| 2 | `structure` | [ConductorThreePrimeMomentRoute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeMomentPacketsNamespacedPublic.lean/declarations/conductorthreeprimemomentroute.md) | 49 | `declaration-track:b4dc1ceea9154918560f8f3d6fe48438024886be281045dd1b5e8ac7ecbb8cb0` |
+| 3 | `theorem` | [ConductorThreePrimeMomentRoute.geometricScale_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeMomentPacketsNamespacedPublic.lean/declarations/conductorthreeprimemomentroute-geometricscale-pos.md) | 61 | `result-track:84ebdc237f00db759d2a8e908127f02063885cf71caa619d4aa10ace0f9be0d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

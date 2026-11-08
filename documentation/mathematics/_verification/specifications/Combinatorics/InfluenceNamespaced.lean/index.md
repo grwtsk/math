@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/InfluenceNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/InfluenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InfluenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InfluenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [allBitfieldsNonempty](../../../../Combinatorics/InfluenceNamespaced.lean/declarations/allbitfieldsnonempty.md) | 21 | `result-track:fcac2a960b9ea5f76f8903cc70eac4eebd9aa7cabe43e22007c7499b6da0e9db` |
-| 2 | `def` | [bitInfluence](../../../../Combinatorics/InfluenceNamespaced.lean/declarations/bitinfluence.md) | 26 | `declaration-track:a4e333cbe332e11b48ccf8b7f7648d936a06062050eda3d45a5b981948ba2d65` |
-| 3 | `def` | [influenceEnergy](../../../../Combinatorics/InfluenceNamespaced.lean/declarations/influenceenergy.md) | 36 | `declaration-track:8bbd7a8709de027c04997e09cf84af6cadf48b380dce019e13129aca2b300445` |
-| 4 | `theorem` | [observable_flip_change_le_influence](../../../../Combinatorics/InfluenceNamespaced.lean/declarations/observable-flip-change-le-influence.md) | 41 | `result-track:5a58bbfbc933a1beca9f607ba5bb6c9b0b54e6f00e23fb0f87eae3ae29e2b41e` |
-| 5 | `structure` | [InfluenceEnergyCertificate](../../../../Combinatorics/InfluenceNamespaced.lean/declarations/influenceenergycertificate.md) | 56 | `declaration-track:4a49e19833af9401ac18a613b0146bdd833bc60c79030fbb9171319f14efc9c0` |
+| 1 | `theorem` | [allBitfieldsNonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InfluenceNamespaced.lean/declarations/allbitfieldsnonempty.md) | 21 | `result-track:fcac2a960b9ea5f76f8903cc70eac4eebd9aa7cabe43e22007c7499b6da0e9db` |
+| 2 | `def` | [bitInfluence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InfluenceNamespaced.lean/declarations/bitinfluence.md) | 26 | `declaration-track:a4e333cbe332e11b48ccf8b7f7648d936a06062050eda3d45a5b981948ba2d65` |
+| 3 | `def` | [influenceEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InfluenceNamespaced.lean/declarations/influenceenergy.md) | 36 | `declaration-track:8bbd7a8709de027c04997e09cf84af6cadf48b380dce019e13129aca2b300445` |
+| 4 | `theorem` | [observable_flip_change_le_influence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InfluenceNamespaced.lean/declarations/observable-flip-change-le-influence.md) | 41 | `result-track:5a58bbfbc933a1beca9f607ba5bb6c9b0b54e6f00e23fb0f87eae3ae29e2b41e` |
+| 5 | `structure` | [InfluenceEnergyCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InfluenceNamespaced.lean/declarations/influenceenergycertificate.md) | 56 | `declaration-track:4a49e19833af9401ac18a613b0146bdd833bc60c79030fbb9171319f14efc9c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

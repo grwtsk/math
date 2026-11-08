@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CryptographicCouplingObligation.lean/index.md) · [Full source](../../../../Combinatorics/CryptographicCouplingObligation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CryptographicCouplingObligation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CryptographicCouplingObligation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CryptographicCouplingObligation](../../../../Combinatorics/CryptographicCouplingObligation.lean/declarations/cryptographiccouplingobligation.md) | 13 | `declaration-track:8dbd802115484009d5d0c4c52a3a0bb4da3fb48540f13cb2107bc4b9f5011534` |
-| 2 | `inductive` | [CryptographicCouplingStage](../../../../Combinatorics/CryptographicCouplingObligation.lean/declarations/cryptographiccouplingstage.md) | 32 | `declaration-track:7618a7757ec814f3c45c3054596664b39a6935f256deb966c2b5b99bc5c66679` |
-| 3 | `def` | [CryptographicCouplingObligation.stage](../../../../Combinatorics/CryptographicCouplingObligation.lean/declarations/cryptographiccouplingobligation-stage.md) | 41 | `declaration-track:a3ba2b5f89ddc6ec209869c92284e2dd5ffe45856a030b7f81fcc6af692a3c6f` |
-| 4 | `inductive` | [CryptographicCouplingVerdict](../../../../Combinatorics/CryptographicCouplingObligation.lean/declarations/cryptographiccouplingverdict.md) | 61 | `declaration-track:d0474fb90d854d90b64e69fdf08b791244519ef655c86b241214a4080e4a3c16` |
-| 5 | `def` | [IsCertified](../../../../Combinatorics/CryptographicCouplingObligation.lean/declarations/iscertified.md) | 72 | `declaration-track:79fbd630ba9117a53478440e8ad210fc484d27a4ec7731f92c69706799dc0b0c` |
-| 6 | `def` | [IsRefuted](../../../../Combinatorics/CryptographicCouplingObligation.lean/declarations/isrefuted.md) | 77 | `declaration-track:e98782b8261ad08483defa276afa1b029de2163f2554441af18e14d5ccfa1663` |
-| 7 | `def` | [unknowns](../../../../Combinatorics/CryptographicCouplingObligation.lean/declarations/unknowns.md) | 82 | `declaration-track:fa7f90ed27ecdf0ef868eefbf6902da6557ee27970a719222e01cace5c60592e` |
-| 8 | `theorem` | [certified_sound](../../../../Combinatorics/CryptographicCouplingObligation.lean/declarations/certified-sound.md) | 89 | `result-track:2fa956121278fecd6d7a2591e500201c8e117b103fb27807c434574b9711bc9b` |
-| 9 | `theorem` | [refuted_sound](../../../../Combinatorics/CryptographicCouplingObligation.lean/declarations/refuted-sound.md) | 98 | `result-track:69f10339c7e89955185287328fb7b0de209c69d26038c10592a9c31c6de2171f` |
+| 1 | `inductive` | [CryptographicCouplingObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CryptographicCouplingObligation.lean/declarations/cryptographiccouplingobligation.md) | 13 | `declaration-track:8dbd802115484009d5d0c4c52a3a0bb4da3fb48540f13cb2107bc4b9f5011534` |
+| 2 | `inductive` | [CryptographicCouplingStage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CryptographicCouplingObligation.lean/declarations/cryptographiccouplingstage.md) | 32 | `declaration-track:7618a7757ec814f3c45c3054596664b39a6935f256deb966c2b5b99bc5c66679` |
+| 3 | `def` | [CryptographicCouplingObligation.stage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CryptographicCouplingObligation.lean/declarations/cryptographiccouplingobligation-stage.md) | 41 | `declaration-track:a3ba2b5f89ddc6ec209869c92284e2dd5ffe45856a030b7f81fcc6af692a3c6f` |
+| 4 | `inductive` | [CryptographicCouplingVerdict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CryptographicCouplingObligation.lean/declarations/cryptographiccouplingverdict.md) | 61 | `declaration-track:d0474fb90d854d90b64e69fdf08b791244519ef655c86b241214a4080e4a3c16` |
+| 5 | `def` | [IsCertified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CryptographicCouplingObligation.lean/declarations/iscertified.md) | 72 | `declaration-track:79fbd630ba9117a53478440e8ad210fc484d27a4ec7731f92c69706799dc0b0c` |
+| 6 | `def` | [IsRefuted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CryptographicCouplingObligation.lean/declarations/isrefuted.md) | 77 | `declaration-track:e98782b8261ad08483defa276afa1b029de2163f2554441af18e14d5ccfa1663` |
+| 7 | `def` | [unknowns](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CryptographicCouplingObligation.lean/declarations/unknowns.md) | 82 | `declaration-track:fa7f90ed27ecdf0ef868eefbf6902da6557ee27970a719222e01cace5c60592e` |
+| 8 | `theorem` | [certified_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CryptographicCouplingObligation.lean/declarations/certified-sound.md) | 89 | `result-track:2fa956121278fecd6d7a2591e500201c8e117b103fb27807c434574b9711bc9b` |
+| 9 | `theorem` | [refuted_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CryptographicCouplingObligation.lean/declarations/refuted-sound.md) | 98 | `result-track:69f10339c7e89955185287328fb7b0de209c69d26038c10592a9c31c6de2171f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/HEvalNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/HEvalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HEvalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HEvalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [powerSeriesFamily](../../../../CommutativeAlgebra/HEvalNamespaced.lean/declarations/powerseriesfamily.md) | 52 | `declaration-track:3b1f5e370c59b3f0e839ffde1547b82fe25376df9cc84ebb4e666e579501ae9e` |
-| 2 | `theorem` | [powerSeriesFamily_of_not_orderTop_pos](../../../../CommutativeAlgebra/HEvalNamespaced.lean/declarations/powerseriesfamily-of-not-ordertop-pos.md) | 55 | `result-track:db7ba8c2bcdbb8f9792ebdf8f3f0eab4be73ff0bdb1e1febcaa2e6b7f5c34ce9` |
-| 3 | `theorem` | [powerSeriesFamily_of_orderTop_pos](../../../../CommutativeAlgebra/HEvalNamespaced.lean/declarations/powerseriesfamily-of-ordertop-pos.md) | 61 | `result-track:4ca2e7e723534b4e4ea81289ee3d1ac1ae994eaef62948e7787f5477ab3661cf` |
-| 4 | `theorem` | [powerSeriesFamily_hsum_zero](../../../../CommutativeAlgebra/HEvalNamespaced.lean/declarations/powerseriesfamily-hsum-zero.md) | 66 | `result-track:ecdd24c09b8575b3cf5a66bdf46b6e03692778f4d7b2e4f4c347707a879f7fa9` |
-| 5 | `theorem` | [powerSeriesFamily_add](../../../../CommutativeAlgebra/HEvalNamespaced.lean/declarations/powerseriesfamily-add.md) | 77 | `result-track:c86148b5884425da578a96b57fc89a46fbd2d5b4e3f28d2b48528b101ba069e5` |
-| 6 | `theorem` | [powerSeriesFamily_smul](../../../../CommutativeAlgebra/HEvalNamespaced.lean/declarations/powerseriesfamily-smul.md) | 82 | `result-track:5f2c10eaae0ecf37b7300e76f50b52162c78de07e36cbb3523250f680fbb1e59` |
-| 7 | `theorem` | [support_powerSeriesFamily_subset](../../../../CommutativeAlgebra/HEvalNamespaced.lean/declarations/support-powerseriesfamily-subset.md) | 87 | `result-track:770aaee59a905578f2f1d1f0edb995ce9e75be6af7dd07af9bdd44ea87e2987d` |
-| 8 | `theorem` | [hsum_powerSeriesFamily_mul](../../../../CommutativeAlgebra/HEvalNamespaced.lean/declarations/hsum-powerseriesfamily-mul.md) | 117 | `result-track:fb828df668895bf2e53d8657afdde9620ae06c03e411e268460ee8844f0845ad` |
-| 9 | `def` | [heval](../../../../CommutativeAlgebra/HEvalNamespaced.lean/declarations/heval.md) | 169 | `declaration-track:a2fc32787bcda5b373443d72fe9fbefaed6137e3ba56a49cff092b6276dec93a` |
-| 10 | `theorem` | [heval_mul](../../../../CommutativeAlgebra/HEvalNamespaced.lean/declarations/heval-mul.md) | 193 | `result-track:14e5d90ec63f0c81c4327d0457c29f47276ae7c4ae4371ff002856a6478ae17e` |
-| 11 | `theorem` | [heval_unit](../../../../CommutativeAlgebra/HEvalNamespaced.lean/declarations/heval-unit.md) | 197 | `result-track:36ef968b09725b6f93471f011e2a2fa42559c093e1a85d93a524c21e164ec01d` |
-| 12 | `theorem` | [coeff_heval](../../../../CommutativeAlgebra/HEvalNamespaced.lean/declarations/coeff-heval.md) | 202 | `result-track:5eba7f913c0e489b4c3ed3cc17248238aaaf4cdc6eb28a92cd572a88a438fe98` |
-| 13 | `theorem` | [coeff_heval_zero](../../../../CommutativeAlgebra/HEvalNamespaced.lean/declarations/coeff-heval-zero.md) | 207 | `result-track:a871e39849659e822d695edd08f6ab1a3c758521bd20f78411d5dbb6d3ce72c1` |
+| 1 | `abbrev` | [powerSeriesFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HEvalNamespaced.lean/declarations/powerseriesfamily.md) | 52 | `declaration-track:3b1f5e370c59b3f0e839ffde1547b82fe25376df9cc84ebb4e666e579501ae9e` |
+| 2 | `theorem` | [powerSeriesFamily_of_not_orderTop_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HEvalNamespaced.lean/declarations/powerseriesfamily-of-not-ordertop-pos.md) | 55 | `result-track:db7ba8c2bcdbb8f9792ebdf8f3f0eab4be73ff0bdb1e1febcaa2e6b7f5c34ce9` |
+| 3 | `theorem` | [powerSeriesFamily_of_orderTop_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HEvalNamespaced.lean/declarations/powerseriesfamily-of-ordertop-pos.md) | 61 | `result-track:4ca2e7e723534b4e4ea81289ee3d1ac1ae994eaef62948e7787f5477ab3661cf` |
+| 4 | `theorem` | [powerSeriesFamily_hsum_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HEvalNamespaced.lean/declarations/powerseriesfamily-hsum-zero.md) | 66 | `result-track:ecdd24c09b8575b3cf5a66bdf46b6e03692778f4d7b2e4f4c347707a879f7fa9` |
+| 5 | `theorem` | [powerSeriesFamily_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HEvalNamespaced.lean/declarations/powerseriesfamily-add.md) | 77 | `result-track:c86148b5884425da578a96b57fc89a46fbd2d5b4e3f28d2b48528b101ba069e5` |
+| 6 | `theorem` | [powerSeriesFamily_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HEvalNamespaced.lean/declarations/powerseriesfamily-smul.md) | 82 | `result-track:5f2c10eaae0ecf37b7300e76f50b52162c78de07e36cbb3523250f680fbb1e59` |
+| 7 | `theorem` | [support_powerSeriesFamily_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HEvalNamespaced.lean/declarations/support-powerseriesfamily-subset.md) | 87 | `result-track:770aaee59a905578f2f1d1f0edb995ce9e75be6af7dd07af9bdd44ea87e2987d` |
+| 8 | `theorem` | [hsum_powerSeriesFamily_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HEvalNamespaced.lean/declarations/hsum-powerseriesfamily-mul.md) | 117 | `result-track:fb828df668895bf2e53d8657afdde9620ae06c03e411e268460ee8844f0845ad` |
+| 9 | `def` | [heval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HEvalNamespaced.lean/declarations/heval.md) | 169 | `declaration-track:a2fc32787bcda5b373443d72fe9fbefaed6137e3ba56a49cff092b6276dec93a` |
+| 10 | `theorem` | [heval_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HEvalNamespaced.lean/declarations/heval-mul.md) | 193 | `result-track:14e5d90ec63f0c81c4327d0457c29f47276ae7c4ae4371ff002856a6478ae17e` |
+| 11 | `theorem` | [heval_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HEvalNamespaced.lean/declarations/heval-unit.md) | 197 | `result-track:36ef968b09725b6f93471f011e2a2fa42559c093e1a85d93a524c21e164ec01d` |
+| 12 | `theorem` | [coeff_heval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HEvalNamespaced.lean/declarations/coeff-heval.md) | 202 | `result-track:5eba7f913c0e489b4c3ed3cc17248238aaaf4cdc6eb28a92cd572a88a438fe98` |
+| 13 | `theorem` | [coeff_heval_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HEvalNamespaced.lean/declarations/coeff-heval-zero.md) | 207 | `result-track:a871e39849659e822d695edd08f6ab1a3c758521bd20f78411d5dbb6d3ce72c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

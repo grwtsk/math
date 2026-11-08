@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/RelativeCellComplexBasicNamespaced.lean/index.md) · [Full source](../../../../AlgebraicTopology/RelativeCellComplexBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RelativeCellComplexBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RelativeCellComplexBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RelativeCellComplex](../../../../AlgebraicTopology/RelativeCellComplexBasicNamespaced.lean/declarations/relativecellcomplex.md) | 52 | `declaration-track:d211ca6d18c29e5fc2c9cc2580c2ceac798a5892bd89b10f5580a7f704fa1b30` |
-| 2 | `structure` | [Cells](../../../../AlgebraicTopology/RelativeCellComplexBasicNamespaced.lean/declarations/cells.md) | 64 | `declaration-track:7bf724e5259dad9cb61fbf500fa63540c1d78b0516b9740ec6234f5c34bd4335` |
-| 3 | `def` | [Cells.i](../../../../AlgebraicTopology/RelativeCellComplexBasicNamespaced.lean/declarations/cells-i.md) | 74 | `declaration-track:8286dbfc7f236ef0e8e4fee0a6e19cd6d0748e4d3c2aeaf3246a64f1c4463954` |
-| 4 | `def` | [Cells.ι](../../../../AlgebraicTopology/RelativeCellComplexBasicNamespaced.lean/declarations/cells-source-edition-2.md) | 78 | `declaration-track:d2c4f30b68d8239ed41c53dc47c13f2151c42ae9445db0c084faaf6a3c69cc10` |
-| 5 | `lemma` | [hom_ext](../../../../AlgebraicTopology/RelativeCellComplexBasicNamespaced.lean/declarations/hom-ext.md) | 81 | `result-track:4e9c503be6ea825fd27456e178a8a6251f528213188e186ea90d89d154db484f` |
-| 6 | `def` | [transfiniteCompositionOfShape](../../../../AlgebraicTopology/RelativeCellComplexBasicNamespaced.lean/declarations/transfinitecompositionofshape.md) | 104 | `declaration-track:4e4b86bf890d5e09e809a50d8af3c8ce4ef1e07d5a774ae42c8922938e7e0a72` |
+| 1 | `structure` | [RelativeCellComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RelativeCellComplexBasicNamespaced.lean/declarations/relativecellcomplex.md) | 52 | `declaration-track:d211ca6d18c29e5fc2c9cc2580c2ceac798a5892bd89b10f5580a7f704fa1b30` |
+| 2 | `structure` | [Cells](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RelativeCellComplexBasicNamespaced.lean/declarations/cells.md) | 64 | `declaration-track:7bf724e5259dad9cb61fbf500fa63540c1d78b0516b9740ec6234f5c34bd4335` |
+| 3 | `def` | [Cells.i](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RelativeCellComplexBasicNamespaced.lean/declarations/cells-i.md) | 74 | `declaration-track:8286dbfc7f236ef0e8e4fee0a6e19cd6d0748e4d3c2aeaf3246a64f1c4463954` |
+| 4 | `def` | [Cells.ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RelativeCellComplexBasicNamespaced.lean/declarations/cells-source-edition-2.md) | 78 | `declaration-track:d2c4f30b68d8239ed41c53dc47c13f2151c42ae9445db0c084faaf6a3c69cc10` |
+| 5 | `lemma` | [hom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RelativeCellComplexBasicNamespaced.lean/declarations/hom-ext.md) | 81 | `result-track:4e9c503be6ea825fd27456e178a8a6251f528213188e186ea90d89d154db484f` |
+| 6 | `def` | [transfiniteCompositionOfShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/RelativeCellComplexBasicNamespaced.lean/declarations/transfinitecompositionofshape.md) | 104 | `declaration-track:4e4b86bf890d5e09e809a50d8af3c8ce4ef1e07d5a774ae42c8922938e7e0a72` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

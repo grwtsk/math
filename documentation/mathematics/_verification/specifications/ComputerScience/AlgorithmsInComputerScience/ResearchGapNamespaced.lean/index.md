@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchGapNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchGapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchGapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchGapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TheoremInputGap](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchGapNamespaced.lean/declarations/theoreminputgap.md) | 22 | `declaration-track:0b57d6e5ae23e31a7d50a7d4b294c359caf5706afb70b8e6e21ffc39cb966954` |
-| 2 | `def` | [missing](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchGapNamespaced.lean/declarations/missing.md) | 33 | `declaration-track:861c030a6b47f5a608e99122e951d57143d0896cbaddeee9a5cadeb4ea93bc8b` |
-| 3 | `def` | [Closed](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchGapNamespaced.lean/declarations/closed.md) | 37 | `declaration-track:9a61cd8d849dc5223cf01edb45bc075adcd104932de93636fc8b11c9881e6983` |
-| 4 | `theorem` | [mem_missing_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchGapNamespaced.lean/declarations/mem-missing-iff.md) | 41 | `result-track:01d6c27e635fd14c8d619b2092b7944f0149d93a52fe73f2ff5ca8d280dade33` |
-| 5 | `theorem` | [closed_iff_missing_nil](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchGapNamespaced.lean/declarations/closed-iff-missing-nil.md) | 47 | `result-track:fa0c10ef1603350fc3f8ffc2dda8c21289ebd60a202db1c5ec1e31d67b58b62f` |
+| 1 | `structure` | [TheoremInputGap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchGapNamespaced.lean/declarations/theoreminputgap.md) | 22 | `declaration-track:0b57d6e5ae23e31a7d50a7d4b294c359caf5706afb70b8e6e21ffc39cb966954` |
+| 2 | `def` | [missing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchGapNamespaced.lean/declarations/missing.md) | 33 | `declaration-track:861c030a6b47f5a608e99122e951d57143d0896cbaddeee9a5cadeb4ea93bc8b` |
+| 3 | `def` | [Closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchGapNamespaced.lean/declarations/closed.md) | 37 | `declaration-track:9a61cd8d849dc5223cf01edb45bc075adcd104932de93636fc8b11c9881e6983` |
+| 4 | `theorem` | [mem_missing_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchGapNamespaced.lean/declarations/mem-missing-iff.md) | 41 | `result-track:01d6c27e635fd14c8d619b2092b7944f0149d93a52fe73f2ff5ca8d280dade33` |
+| 5 | `theorem` | [closed_iff_missing_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchGapNamespaced.lean/declarations/closed-iff-missing-nil.md) | 47 | `result-track:fa0c10ef1603350fc3f8ffc2dda8c21289ebd60a202db1c5ec1e31d67b58b62f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Attempt01NamespacedDerivEqOnClosed.lean/index.md) · [Full source](../../../../RealFunctions/Attempt01NamespacedDerivEqOnClosed.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Attempt01NamespacedDerivEqOnClosed.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Attempt01NamespacedDerivEqOnClosed.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [deriv_eq_on_closed](../../../../RealFunctions/Attempt01NamespacedDerivEqOnClosed.lean/declarations/deriv-eq-on-closed.md) | 25 | `result-track:f611418ee6be7cd1e241c4d4d358df57c38ac5b7c95eab2113c790c5e5aaa50c` |
-| 2 | `theorem` | [primitiveCorrelationZero_third_deriv_eq_normalizedOverlapProfile](../../../../RealFunctions/Attempt01NamespacedDerivEqOnClosed.lean/declarations/primitivecorrelationzero-third-deriv-eq-normalizedoverlapprofile.md) | 34 | `result-track:5cf6f556aa860173ef9dc32c398098717ccac04f5dcac368eba9f44c65866a18` |
-| 3 | `theorem` | [primitiveCorrelationZero_fourth_deriv_eq_normalizedOverlapProfile](../../../../RealFunctions/Attempt01NamespacedDerivEqOnClosed.lean/declarations/primitivecorrelationzero-fourth-deriv-eq-normalizedoverlapprofile.md) | 48 | `result-track:8635afff41b561b3f954a5aa664eca321bcae501947b7e66b2dbe034d28dadc6` |
-| 4 | `theorem` | [sourceCorrelation_eq_normalizedOverlap_filter](../../../../RealFunctions/Attempt01NamespacedDerivEqOnClosed.lean/declarations/sourcecorrelation-eq-normalizedoverlap-filter.md) | 62 | `result-track:010f0db3b6e440b4ff00ad7e0f0b84fd53e79318c3375e9b0600761045b8c3fc` |
+| 1 | `theorem` | [deriv_eq_on_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Attempt01NamespacedDerivEqOnClosed.lean/declarations/deriv-eq-on-closed.md) | 25 | `result-track:f611418ee6be7cd1e241c4d4d358df57c38ac5b7c95eab2113c790c5e5aaa50c` |
+| 2 | `theorem` | [primitiveCorrelationZero_third_deriv_eq_normalizedOverlapProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Attempt01NamespacedDerivEqOnClosed.lean/declarations/primitivecorrelationzero-third-deriv-eq-normalizedoverlapprofile.md) | 34 | `result-track:5cf6f556aa860173ef9dc32c398098717ccac04f5dcac368eba9f44c65866a18` |
+| 3 | `theorem` | [primitiveCorrelationZero_fourth_deriv_eq_normalizedOverlapProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Attempt01NamespacedDerivEqOnClosed.lean/declarations/primitivecorrelationzero-fourth-deriv-eq-normalizedoverlapprofile.md) | 48 | `result-track:8635afff41b561b3f954a5aa664eca321bcae501947b7e66b2dbe034d28dadc6` |
+| 4 | `theorem` | [sourceCorrelation_eq_normalizedOverlap_filter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Attempt01NamespacedDerivEqOnClosed.lean/declarations/sourcecorrelation-eq-normalizedoverlap-filter.md) | 62 | `result-track:010f0db3b6e440b4ff00ad7e0f0b84fd53e79318c3375e9b0600761045b8c3fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

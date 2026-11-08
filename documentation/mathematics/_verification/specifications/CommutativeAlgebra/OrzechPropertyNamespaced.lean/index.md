@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/OrzechPropertyNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/OrzechPropertyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OrzechPropertyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OrzechPropertyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [OrzechProperty](../../../../CommutativeAlgebra/OrzechPropertyNamespaced.lean/declarations/orzechproperty.md) | 67 | `declaration-track:c3afa15b82a77d1fabc0dbc7073b19a6f839492dcffc0be4fafb8c206c3340e4` |
-| 2 | `theorem` | [injective_of_surjective_of_injective](../../../../CommutativeAlgebra/OrzechPropertyNamespaced.lean/declarations/injective-of-surjective-of-injective.md) | 77 | `result-track:ed3d06b1387547147d15fb2b9a4febf1c87db6a3334f7df71a35f5da673217d6` |
-| 3 | `theorem` | [injective_of_surjective_of_submodule](../../../../CommutativeAlgebra/OrzechPropertyNamespaced.lean/declarations/injective-of-surjective-of-submodule.md) | 92 | `result-track:9c6e3de6870c177ce44bede884edd2326f0763f871f02fe5db23b7139a1268a4` |
-| 4 | `theorem` | [injective_of_surjective_endomorphism](../../../../CommutativeAlgebra/OrzechPropertyNamespaced.lean/declarations/injective-of-surjective-endomorphism.md) | 96 | `result-track:2febd42f815f194827bd9d65009bca6d721c9c6df0baf4d2b5f698769a3d14e1` |
-| 5 | `theorem` | [bijective_of_surjective_endomorphism](../../../../CommutativeAlgebra/OrzechPropertyNamespaced.lean/declarations/bijective-of-surjective-endomorphism.md) | 100 | `result-track:5bb3957e750cd5ecba629453335af2ef54fffd7ed7d794cb7307d769ae9f6d1a` |
+| 1 | `class` | [OrzechProperty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OrzechPropertyNamespaced.lean/declarations/orzechproperty.md) | 67 | `declaration-track:c3afa15b82a77d1fabc0dbc7073b19a6f839492dcffc0be4fafb8c206c3340e4` |
+| 2 | `theorem` | [injective_of_surjective_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OrzechPropertyNamespaced.lean/declarations/injective-of-surjective-of-injective.md) | 77 | `result-track:ed3d06b1387547147d15fb2b9a4febf1c87db6a3334f7df71a35f5da673217d6` |
+| 3 | `theorem` | [injective_of_surjective_of_submodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OrzechPropertyNamespaced.lean/declarations/injective-of-surjective-of-submodule.md) | 92 | `result-track:9c6e3de6870c177ce44bede884edd2326f0763f871f02fe5db23b7139a1268a4` |
+| 4 | `theorem` | [injective_of_surjective_endomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OrzechPropertyNamespaced.lean/declarations/injective-of-surjective-endomorphism.md) | 96 | `result-track:2febd42f815f194827bd9d65009bca6d721c9c6df0baf4d2b5f698769a3d14e1` |
+| 5 | `theorem` | [bijective_of_surjective_endomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OrzechPropertyNamespaced.lean/declarations/bijective-of-surjective-endomorphism.md) | 100 | `result-track:5bb3957e750cd5ecba629453335af2ef54fffd7ed7d794cb7307d769ae9f6d1a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

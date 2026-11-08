@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/EisensteinCriterionNamespacedMapEqCMulXPowOfForallCoeffMem.lean/index.md) · [Full source](../../../../CommutativeAlgebra/EisensteinCriterionNamespacedMapEqCMulXPowOfForallCoeffMem.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EisensteinCriterionNamespacedMapEqCMulXPowOfForallCoeffMem.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EisensteinCriterionNamespacedMapEqCMulXPowOfForallCoeffMem.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [map_eq_C_mul_X_pow_of_forall_coeff_mem](../../../../CommutativeAlgebra/EisensteinCriterionNamespacedMapEqCMulXPowOfForallCoeffMem.lean/declarations/map-eq-c-mul-x-pow-of-forall-coeff-mem.md) | 40 | `result-track:daae0711e021f1692ad8f9dc1c36d99e6008f627d563f480cd660654f5a22ec9` |
-| 2 | `theorem` | [le_natDegree_of_map_eq_mul_X_pow](../../../../CommutativeAlgebra/EisensteinCriterionNamespacedMapEqCMulXPowOfForallCoeffMem.lean/declarations/le-natdegree-of-map-eq-mul-x-pow.md) | 60 | `result-track:ecbd35fcd712aa34b16f65d752062a83f15a9d45228c01d4ed592ffe53290501` |
-| 3 | `theorem` | [eval_zero_mem_ideal_of_eq_mul_X_pow](../../../../CommutativeAlgebra/EisensteinCriterionNamespacedMapEqCMulXPowOfForallCoeffMem.lean/declarations/eval-zero-mem-ideal-of-eq-mul-x-pow.md) | 73 | `result-track:9b2328e44320b3e60aa4a025cbd7d404b2f113955d9d5f5435b7824bde49efd7` |
-| 4 | `theorem` | [isUnit_of_natDegree_eq_zero_of_isPrimitive](../../../../CommutativeAlgebra/EisensteinCriterionNamespacedMapEqCMulXPowOfForallCoeffMem.lean/declarations/isunit-of-natdegree-eq-zero-of-isprimitive.md) | 82 | `result-track:086d5d88b26cb7e62ad2ee8b444c16566b758184d17b126b2b12b9886b14897a` |
-| 5 | `theorem` | [irreducible_of_eisenstein_criterion](../../../../CommutativeAlgebra/EisensteinCriterionNamespacedMapEqCMulXPowOfForallCoeffMem.lean/declarations/irreducible-of-eisenstein-criterion.md) | 101 | `result-track:c09e7440f1cd51eca9b7be925ab4825b872ec68120a6508fc60de93723855600` |
+| 1 | `theorem` | [map_eq_C_mul_X_pow_of_forall_coeff_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EisensteinCriterionNamespacedMapEqCMulXPowOfForallCoeffMem.lean/declarations/map-eq-c-mul-x-pow-of-forall-coeff-mem.md) | 40 | `result-track:daae0711e021f1692ad8f9dc1c36d99e6008f627d563f480cd660654f5a22ec9` |
+| 2 | `theorem` | [le_natDegree_of_map_eq_mul_X_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EisensteinCriterionNamespacedMapEqCMulXPowOfForallCoeffMem.lean/declarations/le-natdegree-of-map-eq-mul-x-pow.md) | 60 | `result-track:ecbd35fcd712aa34b16f65d752062a83f15a9d45228c01d4ed592ffe53290501` |
+| 3 | `theorem` | [eval_zero_mem_ideal_of_eq_mul_X_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EisensteinCriterionNamespacedMapEqCMulXPowOfForallCoeffMem.lean/declarations/eval-zero-mem-ideal-of-eq-mul-x-pow.md) | 73 | `result-track:9b2328e44320b3e60aa4a025cbd7d404b2f113955d9d5f5435b7824bde49efd7` |
+| 4 | `theorem` | [isUnit_of_natDegree_eq_zero_of_isPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EisensteinCriterionNamespacedMapEqCMulXPowOfForallCoeffMem.lean/declarations/isunit-of-natdegree-eq-zero-of-isprimitive.md) | 82 | `result-track:086d5d88b26cb7e62ad2ee8b444c16566b758184d17b126b2b12b9886b14897a` |
+| 5 | `theorem` | [irreducible_of_eisenstein_criterion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EisensteinCriterionNamespacedMapEqCMulXPowOfForallCoeffMem.lean/declarations/irreducible-of-eisenstein-criterion.md) | 101 | `result-track:c09e7440f1cd51eca9b7be925ab4825b872ec68120a6508fc60de93723855600` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

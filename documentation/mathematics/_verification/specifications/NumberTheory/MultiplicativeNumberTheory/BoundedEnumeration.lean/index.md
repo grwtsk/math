@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/BoundedEnumeration.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/BoundedEnumeration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/BoundedEnumeration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/BoundedEnumeration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [EnumeratesBelow](../../../../../NumberTheory/MultiplicativeNumberTheory/BoundedEnumeration.lean/declarations/enumeratesbelow.md) | 9 | `declaration-track:7a2540b8b5dac37b20148487538b4bec3d97f31605cedfacacef09843df75822` |
-| 2 | `theorem` | [primesBelow_contract](../../../../../NumberTheory/MultiplicativeNumberTheory/BoundedEnumeration.lean/declarations/primesbelow-contract.md) | 12 | `result-track:db0912789a3bec493b8b5a788cf189d0ad1fb034ccd6346990fb2b65128ce7f2` |
-| 3 | `theorem` | [enumeration_unique](../../../../../NumberTheory/MultiplicativeNumberTheory/BoundedEnumeration.lean/declarations/enumeration-unique.md) | 17 | `result-track:68bec5ec3b15990f94df45c0fd8918bca3c7b734d2e65f334fca41d72b923950` |
-| 4 | `theorem` | [enumeration_step](../../../../../NumberTheory/MultiplicativeNumberTheory/BoundedEnumeration.lean/declarations/enumeration-step.md) | 24 | `result-track:e86d76e57ecad9560b2ab89c74ef54bb430d3af2b134e45f79a8d487c16062d6` |
+| 1 | `def` | [EnumeratesBelow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/BoundedEnumeration.lean/declarations/enumeratesbelow.md) | 9 | `declaration-track:7a2540b8b5dac37b20148487538b4bec3d97f31605cedfacacef09843df75822` |
+| 2 | `theorem` | [primesBelow_contract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/BoundedEnumeration.lean/declarations/primesbelow-contract.md) | 12 | `result-track:db0912789a3bec493b8b5a788cf189d0ad1fb034ccd6346990fb2b65128ce7f2` |
+| 3 | `theorem` | [enumeration_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/BoundedEnumeration.lean/declarations/enumeration-unique.md) | 17 | `result-track:68bec5ec3b15990f94df45c0fd8918bca3c7b734d2e65f334fca41d72b923950` |
+| 4 | `theorem` | [enumeration_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/BoundedEnumeration.lean/declarations/enumeration-step.md) | 24 | `result-track:e86d76e57ecad9560b2ab89c74ef54bb430d3af2b134e45f79a8d487c16062d6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

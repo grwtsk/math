@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/SetTheory/LimitClosure.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/SetTheory/LimitClosure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/LimitClosure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/LimitClosure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LimitSquareRootClosure](../../../../../MathematicalLogicAndFoundations/SetTheory/LimitClosure.lean/declarations/limitsquarerootclosure.md) | 13 | `declaration-track:8a20d6f9fb9fd1db21b0f5120ff28e7ab1a29d71a9e9d6eeb2bee83c22075daa` |
+| 1 | `structure` | [LimitSquareRootClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/LimitClosure.lean/declarations/limitsquarerootclosure.md) | 13 | `declaration-track:8a20d6f9fb9fd1db21b0f5120ff28e7ab1a29d71a9e9d6eeb2bee83c22075daa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignmentNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignmentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignmentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignmentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TensorAlignedUnifiedCandidate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignmentNamespaced.lean/declarations/tensoralignedunifiedcandidate.md) | 25 | `declaration-track:d82010f22d6a57e0a1272775de2697bb3c2d9486770850971f6365b9539d047c` |
-| 2 | `theorem` | [TensorAlignedUnifiedCandidate.base_sound](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignmentNamespaced.lean/declarations/tensoralignedunifiedcandidate-base-sound.md) | 35 | `result-track:89e2180bafdb9b8382a6eebbd88b3788b92c5d97d3e4234a374f67890c6de3e1` |
-| 3 | `theorem` | [TensorAlignedUnifiedCandidate.alignment_sound](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignmentNamespaced.lean/declarations/tensoralignedunifiedcandidate-alignment-sound.md) | 44 | `result-track:8c61f00b4bb9ff55c951d30bd19a6e33a68a3035a342ebe344972a8a718043bb` |
+| 1 | `structure` | [TensorAlignedUnifiedCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignmentNamespaced.lean/declarations/tensoralignedunifiedcandidate.md) | 25 | `declaration-track:d82010f22d6a57e0a1272775de2697bb3c2d9486770850971f6365b9539d047c` |
+| 2 | `theorem` | [TensorAlignedUnifiedCandidate.base_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignmentNamespaced.lean/declarations/tensoralignedunifiedcandidate-base-sound.md) | 35 | `result-track:89e2180bafdb9b8382a6eebbd88b3788b92c5d97d3e4234a374f67890c6de3e1` |
+| 3 | `theorem` | [TensorAlignedUnifiedCandidate.alignment_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TensorAlignmentNamespaced.lean/declarations/tensoralignedunifiedcandidate-alignment-sound.md) | 44 | `result-track:8c61f00b4bb9ff55c951d30bd19a6e33a68a3035a342ebe344972a8a718043bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

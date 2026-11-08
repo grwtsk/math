@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListRangeNamespacedGetElemRange.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListRangeNamespacedGetElemRange.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListRangeNamespacedGetElemRange.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListRangeNamespacedGetElemRange.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [getElem_range'_1](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListRangeNamespacedGetElemRange.lean/declarations/getelem-range-1.md) | 35 | `result-track:fd4c64d62abfe6a967bbafce836d566e3902884cdf5f9672ee7742a55589f7af` |
-| 2 | `theorem` | [chain'_range_succ](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListRangeNamespacedGetElemRange.lean/declarations/chain-range-succ-source-edition-2.md) | 38 | `result-track:cfc980999f363e5958e7182cca14f324df754adcae3f6bfc75587702b488ee3f` |
-| 3 | `theorem` | [chain_range_succ](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListRangeNamespacedGetElemRange.lean/declarations/chain-range-succ.md) | 47 | `result-track:6ec2fed51272952970563e338677bffcd49f2c1c0bd8d02385d061a207fce126` |
-| 4 | `def` | [ranges](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListRangeNamespacedGetElemRange.lean/declarations/ranges.md) | 58 | `declaration-track:f2f64066e0b06c0547973d1765e1f05d3b2be46b508e7a4c868f9841bd09e481` |
-| 5 | `theorem` | [ranges_disjoint](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListRangeNamespacedGetElemRange.lean/declarations/ranges-disjoint.md) | 63 | `result-track:36559c9a72cf39fe28869faa36d4e70d847b8580aa63cbf93edf4ffb64f88c62` |
-| 6 | `theorem` | [ranges_length](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListRangeNamespacedGetElemRange.lean/declarations/ranges-length.md) | 84 | `result-track:47d89dcadec2ac4d0005b71108b89e06b81db1716d4b26447df4d9aa68ae8169` |
+| 1 | `theorem` | [getElem_range'_1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListRangeNamespacedGetElemRange.lean/declarations/getelem-range-1.md) | 35 | `result-track:fd4c64d62abfe6a967bbafce836d566e3902884cdf5f9672ee7742a55589f7af` |
+| 2 | `theorem` | [chain'_range_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListRangeNamespacedGetElemRange.lean/declarations/chain-range-succ-source-edition-2.md) | 38 | `result-track:cfc980999f363e5958e7182cca14f324df754adcae3f6bfc75587702b488ee3f` |
+| 3 | `theorem` | [chain_range_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListRangeNamespacedGetElemRange.lean/declarations/chain-range-succ.md) | 47 | `result-track:6ec2fed51272952970563e338677bffcd49f2c1c0bd8d02385d061a207fce126` |
+| 4 | `def` | [ranges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListRangeNamespacedGetElemRange.lean/declarations/ranges.md) | 58 | `declaration-track:f2f64066e0b06c0547973d1765e1f05d3b2be46b508e7a4c868f9841bd09e481` |
+| 5 | `theorem` | [ranges_disjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListRangeNamespacedGetElemRange.lean/declarations/ranges-disjoint.md) | 63 | `result-track:36559c9a72cf39fe28869faa36d4e70d847b8580aa63cbf93edf4ffb64f88c62` |
+| 6 | `theorem` | [ranges_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListRangeNamespacedGetElemRange.lean/declarations/ranges-length.md) | 84 | `result-track:47d89dcadec2ac4d0005b71108b89e06b81db1716d4b26447df4d9aa68ae8169` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MultinomialPlacementNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MultinomialPlacementNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MultinomialPlacementNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MultinomialPlacementNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [BraidWeight](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MultinomialPlacementNamespaced.lean/declarations/braidweight-source-edition-2.md) | 18 | `declaration-track:cca9a561baa7128d3fda027517133af002474efe35cad52ab906bf97ef16327c` |
-| 2 | `def` | [braidWeight](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MultinomialPlacementNamespaced.lean/declarations/braidweight.md) | 20 | `declaration-track:9b0bb7f611d299e09768c9b1fcc85b6d9aef65c07c6a83759511c690d9806bf6` |
-| 3 | `def` | [multinomialWeight](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MultinomialPlacementNamespaced.lean/declarations/multinomialweight.md) | 23 | `declaration-track:4f04999b4908ff908481ceb5929457d51e5f11f221013ec99d046828edcbf859` |
-| 4 | `theorem` | [multinomial_denominator_pos](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MultinomialPlacementNamespaced.lean/declarations/multinomial-denominator-pos.md) | 26 | `result-track:f12f3f15431e9cd5baa1f3653d72df59891caee0b43ebe74d4656096e63e2af3` |
+| 1 | `abbrev` | [BraidWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MultinomialPlacementNamespaced.lean/declarations/braidweight-source-edition-2.md) | 18 | `declaration-track:cca9a561baa7128d3fda027517133af002474efe35cad52ab906bf97ef16327c` |
+| 2 | `def` | [braidWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MultinomialPlacementNamespaced.lean/declarations/braidweight.md) | 20 | `declaration-track:9b0bb7f611d299e09768c9b1fcc85b6d9aef65c07c6a83759511c690d9806bf6` |
+| 3 | `def` | [multinomialWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MultinomialPlacementNamespaced.lean/declarations/multinomialweight.md) | 23 | `declaration-track:4f04999b4908ff908481ceb5929457d51e5f11f221013ec99d046828edcbf859` |
+| 4 | `theorem` | [multinomial_denominator_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MultinomialPlacementNamespaced.lean/declarations/multinomial-denominator-pos.md) | 26 | `result-track:f12f3f15431e9cd5baa1f3653d72df59891caee0b43ebe74d4656096e63e2af3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

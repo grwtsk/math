@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/ConformalGroupoidNamespaced.lean/index.md) · [Full source](../../../../DifferentialGeometry/ConformalGroupoidNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ConformalGroupoidNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ConformalGroupoidNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [conformalPregroupoid](../../../../DifferentialGeometry/ConformalGroupoidNamespaced.lean/declarations/conformalpregroupoid.md) | 35 | `declaration-track:02dd7f03b5a96e3594bc7e0e6e3c6cbc04b7793e46dfa3d0d706d2e3722b7478` |
-| 2 | `def` | [conformalGroupoid](../../../../DifferentialGeometry/ConformalGroupoidNamespaced.lean/declarations/conformalgroupoid.md) | 45 | `declaration-track:d95c160209a3428e4333996d0f0ea48fdce4f69b42f1061515fe686a986434b6` |
+| 1 | `def` | [conformalPregroupoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ConformalGroupoidNamespaced.lean/declarations/conformalpregroupoid.md) | 35 | `declaration-track:02dd7f03b5a96e3594bc7e0e6e3c6cbc04b7793e46dfa3d0d706d2e3722b7478` |
+| 2 | `def` | [conformalGroupoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ConformalGroupoidNamespaced.lean/declarations/conformalgroupoid.md) | 45 | `declaration-track:d95c160209a3428e4333996d0f0ea48fdce4f69b42f1061515fe686a986434b6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

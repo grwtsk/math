@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instLocallyFiniteOrder](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/declarations/instlocallyfiniteorder.md) | 37 | `declaration-track:f94030b62c414da779d1566e4233356bed9b8254b47f6609789f295f51c75489` |
-| 2 | `theorem` | [Icc_eq](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/declarations/icc-eq.md) | 43 | `result-track:5a8c61f6b3283423ac99d93d6e3773b8a1410d4766dc1e58ae0265012e96f0e3` |
-| 3 | `theorem` | [uIcc_eq](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/declarations/uicc-eq.md) | 48 | `result-track:b7b38282658167a9d3a7347ac4b4a55b109bcfe4cf4453d23c2c71d1f610fbb8` |
-| 4 | `theorem` | [card_Icc](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/declarations/card-icc.md) | 53 | `result-track:3081cb740fb588c037486e90d2ca4171a0d305df10d3fc830ca7330bfab2d256` |
-| 5 | `theorem` | [card_Ico](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/declarations/card-ico.md) | 58 | `result-track:e98565dbf9efe3ecf7cece8fe44d49e8a260d9f406b25ff7244acd477fb1ca85` |
-| 6 | `theorem` | [card_Ioc](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/declarations/card-ioc.md) | 62 | `result-track:61c8b9b106aaf3956ce14d8328ea72a0cb5449c14ac814b1879c7b575bf2e363` |
-| 7 | `theorem` | [card_Ioo](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/declarations/card-ioo.md) | 66 | `result-track:5de9581694ec22e32b45025f635b0baed3ad3aa7126460aed8dee5f7ecc0ea7a` |
-| 8 | `theorem` | [card_uIcc](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/declarations/card-uicc.md) | 70 | `result-track:250fd784d2ce49d697b8c5a7e7483cc4e70ca6ea8de4cb20b14cb91761bf9dcc` |
-| 9 | `theorem` | [card_Iic](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/declarations/card-iic.md) | 75 | `result-track:510dced384488b8bd9d555e1c08ee0d9156daab1e60d9cd7994b26dc73afccb4` |
+| 1 | `instance` | [instLocallyFiniteOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/declarations/instlocallyfiniteorder.md) | 37 | `declaration-track:f94030b62c414da779d1566e4233356bed9b8254b47f6609789f295f51c75489` |
+| 2 | `theorem` | [Icc_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/declarations/icc-eq.md) | 43 | `result-track:5a8c61f6b3283423ac99d93d6e3773b8a1410d4766dc1e58ae0265012e96f0e3` |
+| 3 | `theorem` | [uIcc_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/declarations/uicc-eq.md) | 48 | `result-track:b7b38282658167a9d3a7347ac4b4a55b109bcfe4cf4453d23c2c71d1f610fbb8` |
+| 4 | `theorem` | [card_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/declarations/card-icc.md) | 53 | `result-track:3081cb740fb588c037486e90d2ca4171a0d305df10d3fc830ca7330bfab2d256` |
+| 5 | `theorem` | [card_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/declarations/card-ico.md) | 58 | `result-track:e98565dbf9efe3ecf7cece8fe44d49e8a260d9f406b25ff7244acd477fb1ca85` |
+| 6 | `theorem` | [card_Ioc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/declarations/card-ioc.md) | 62 | `result-track:61c8b9b106aaf3956ce14d8328ea72a0cb5449c14ac814b1879c7b575bf2e363` |
+| 7 | `theorem` | [card_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/declarations/card-ioo.md) | 66 | `result-track:5de9581694ec22e32b45025f635b0baed3ad3aa7126460aed8dee5f7ecc0ea7a` |
+| 8 | `theorem` | [card_uIcc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/declarations/card-uicc.md) | 70 | `result-track:250fd784d2ce49d697b8c5a7e7483cc4e70ca6ea8de4cb20b14cb91761bf9dcc` |
+| 9 | `theorem` | [card_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetInterval.lean/declarations/card-iic.md) | 75 | `result-track:510dced384488b8bd9d555e1c08ee0d9156daab1e60d9cd7994b26dc73afccb4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

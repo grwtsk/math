@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [infinite_setOf_prime](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/declarations/infinite-setof-prime.md) | 22 | `result-track:00243e5559d94820b86be807c3cf5216e21e40a6b439c517ef1f0b319545bca1` |
-| 2 | `instance` | [Primes.infinite](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/declarations/primes-infinite.md) | 26 | `declaration-track:f9ac3e2ccfe0b9e8c3ce034a050b0a2d76b18b3aed1778569f4cf9c455b9400a` |
-| 3 | `instance` | [Primes.countable](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/declarations/primes-countable.md) | 28 | `declaration-track:e304e79ed57a3e3e50b0099109bd401f28bb466ca9b64e88f96553bb292904b4` |
-| 4 | `theorem` | [factors_mul_toFinset](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/declarations/factors-mul-tofinset.md) | 31 | `result-track:e9df0f1aa2b729c749424489e58cc28d05db24bdd0e2f63897a8695ec8b3af0a` |
-| 5 | `theorem` | [pow_succ_factors_toFinset](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/declarations/pow-succ-factors-tofinset.md) | 37 | `result-track:debd8b9044338c39961109e1a319ffc2461fd356782981fb4ef1c3e84f66a3b4` |
-| 6 | `theorem` | [pow_factors_toFinset](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/declarations/pow-factors-tofinset.md) | 46 | `result-track:2b1955c60177de5d878f8e5eda747ee044ce3e4fe1daf47ff50751f4f77079c7` |
-| 7 | `theorem` | [prime_pow_prime_divisor](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/declarations/prime-pow-prime-divisor.md) | 54 | `result-track:31f08e1993de955c8d262f3387254b907a907bfe3c28df34a3b1cf58d97b88e3` |
-| 8 | `theorem` | [factors_mul_toFinset_of_coprime](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/declarations/factors-mul-tofinset-of-coprime.md) | 58 | `result-track:2c7ec27f6c265e1098c9b343a1294849ade288d5e1b55a9e7197187a58fa6080` |
+| 1 | `theorem` | [infinite_setOf_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/declarations/infinite-setof-prime.md) | 22 | `result-track:00243e5559d94820b86be807c3cf5216e21e40a6b439c517ef1f0b319545bca1` |
+| 2 | `instance` | [Primes.infinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/declarations/primes-infinite.md) | 26 | `declaration-track:f9ac3e2ccfe0b9e8c3ce034a050b0a2d76b18b3aed1778569f4cf9c455b9400a` |
+| 3 | `instance` | [Primes.countable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/declarations/primes-countable.md) | 28 | `declaration-track:e304e79ed57a3e3e50b0099109bd401f28bb466ca9b64e88f96553bb292904b4` |
+| 4 | `theorem` | [factors_mul_toFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/declarations/factors-mul-tofinset.md) | 31 | `result-track:e9df0f1aa2b729c749424489e58cc28d05db24bdd0e2f63897a8695ec8b3af0a` |
+| 5 | `theorem` | [pow_succ_factors_toFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/declarations/pow-succ-factors-tofinset.md) | 37 | `result-track:debd8b9044338c39961109e1a319ffc2461fd356782981fb4ef1c3e84f66a3b4` |
+| 6 | `theorem` | [pow_factors_toFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/declarations/pow-factors-tofinset.md) | 46 | `result-track:2b1955c60177de5d878f8e5eda747ee044ce3e4fe1daf47ff50751f4f77079c7` |
+| 7 | `theorem` | [prime_pow_prime_divisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/declarations/prime-pow-prime-divisor.md) | 54 | `result-track:31f08e1993de955c8d262f3387254b907a907bfe3c28df34a3b1cf58d97b88e3` |
+| 8 | `theorem` | [factors_mul_toFinset_of_coprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinFactorsMulToFinset.lean/declarations/factors-mul-tofinset-of-coprime.md) | 58 | `result-track:2c7ec27f6c265e1098c9b343a1294849ade288d5e1b55a9e7197187a58fa6080` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

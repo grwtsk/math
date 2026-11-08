@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetFinsupp.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetFinsupp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FinsetFinsupp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FinsetFinsupp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finsupp](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetFinsupp.lean/declarations/finsupp.md) | 42 | `declaration-track:3040cc9f4acec2e391c6741e7acb7defbedbfd92bc886e581d38924ba904107c` |
-| 2 | `theorem` | [mem_finsupp_iff](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetFinsupp.lean/declarations/mem-finsupp-iff.md) | 45 | `result-track:9bcef8109ababf8b333c9115fbb06344e48d03622e66d9c72ca501fc11f16347` |
-| 3 | `theorem` | [mem_finsupp_iff_of_support_subset](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetFinsupp.lean/declarations/mem-finsupp-iff-of-support-subset.md) | 59 | `result-track:77818a8b5a0e500d718492a4d4418725d608eedec3c344aaf798c7af787edbc6` |
-| 4 | `theorem` | [card_finsupp](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetFinsupp.lean/declarations/card-finsupp.md) | 74 | `result-track:4a9a83471886ac250ae14be93566cb4c41cadf50955d7a711ba420d44aa6edee` |
-| 5 | `def` | [pi](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetFinsupp.lean/declarations/pi.md) | 85 | `declaration-track:ae4f2e5eb004c5ed3dd78c7d389ef630bb63ffe7af57362403ff9cb5fffb9997` |
-| 6 | `theorem` | [mem_pi](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetFinsupp.lean/declarations/mem-pi.md) | 89 | `result-track:d77539f5c686a533d341faf66d655bed5868649decb04dff86da04f08245424f` |
-| 7 | `theorem` | [card_pi](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetFinsupp.lean/declarations/card-pi.md) | 93 | `result-track:bc9890b3a02ec8c2b1bcbe19c4bc06ce250a01cee1109e2f5aba34779d8cd37e` |
+| 1 | `def` | [finsupp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FinsetFinsupp.lean/declarations/finsupp.md) | 42 | `declaration-track:3040cc9f4acec2e391c6741e7acb7defbedbfd92bc886e581d38924ba904107c` |
+| 2 | `theorem` | [mem_finsupp_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FinsetFinsupp.lean/declarations/mem-finsupp-iff.md) | 45 | `result-track:9bcef8109ababf8b333c9115fbb06344e48d03622e66d9c72ca501fc11f16347` |
+| 3 | `theorem` | [mem_finsupp_iff_of_support_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FinsetFinsupp.lean/declarations/mem-finsupp-iff-of-support-subset.md) | 59 | `result-track:77818a8b5a0e500d718492a4d4418725d608eedec3c344aaf798c7af787edbc6` |
+| 4 | `theorem` | [card_finsupp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FinsetFinsupp.lean/declarations/card-finsupp.md) | 74 | `result-track:4a9a83471886ac250ae14be93566cb4c41cadf50955d7a711ba420d44aa6edee` |
+| 5 | `def` | [pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FinsetFinsupp.lean/declarations/pi.md) | 85 | `declaration-track:ae4f2e5eb004c5ed3dd78c7d389ef630bb63ffe7af57362403ff9cb5fffb9997` |
+| 6 | `theorem` | [mem_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FinsetFinsupp.lean/declarations/mem-pi.md) | 89 | `result-track:d77539f5c686a533d341faf66d655bed5868649decb04dff86da04f08245424f` |
+| 7 | `theorem` | [card_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FinsetFinsupp.lean/declarations/card-pi.md) | 93 | `result-track:bc9890b3a02ec8c2b1bcbe19c4bc06ce250a01cee1109e2f5aba34779d8cd37e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

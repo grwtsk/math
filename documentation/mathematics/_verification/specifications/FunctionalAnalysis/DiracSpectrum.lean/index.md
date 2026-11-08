@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/DiracSpectrum.lean/index.md) · [Full source](../../../../FunctionalAnalysis/DiracSpectrum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DiracSpectrum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DiracSpectrum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TensorWithDiracSpectrum](../../../../FunctionalAnalysis/DiracSpectrum.lean/declarations/tensorwithdiracspectrum.md) | 21 | `declaration-track:de8e85b1f5d6b600a66d2b9f0346e2cae801c8a98c68281711990741927932c8` |
-| 2 | `theorem` | [tensor_dirac_spectrum_acts](../../../../FunctionalAnalysis/DiracSpectrum.lean/declarations/tensor-dirac-spectrum-acts.md) | 29 | `result-track:e08a478c464582480ebb324c6fa769c1ac2e0596e75770934db0409d7d4574f2` |
-| 3 | `def` | [TensorWithDiracSpectrum.toObject](../../../../FunctionalAnalysis/DiracSpectrum.lean/declarations/tensorwithdiracspectrum-toobject.md) | 36 | `declaration-track:318517000cc81aa50ad9089bc0660c5a1dcb5f44892b889b71eedb2d5fffbc0e` |
+| 1 | `structure` | [TensorWithDiracSpectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DiracSpectrum.lean/declarations/tensorwithdiracspectrum.md) | 21 | `declaration-track:de8e85b1f5d6b600a66d2b9f0346e2cae801c8a98c68281711990741927932c8` |
+| 2 | `theorem` | [tensor_dirac_spectrum_acts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DiracSpectrum.lean/declarations/tensor-dirac-spectrum-acts.md) | 29 | `result-track:e08a478c464582480ebb324c6fa769c1ac2e0596e75770934db0409d7d4574f2` |
+| 3 | `def` | [TensorWithDiracSpectrum.toObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DiracSpectrum.lean/declarations/tensorwithdiracspectrum-toobject.md) | 36 | `declaration-track:318517000cc81aa50ad9089bc0660c5a1dcb5f44892b889b71eedb2d5fffbc0e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

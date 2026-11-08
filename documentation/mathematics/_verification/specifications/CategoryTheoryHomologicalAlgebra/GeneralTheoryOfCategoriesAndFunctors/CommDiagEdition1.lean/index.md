@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommDiagEdition1.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommDiagEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommDiagEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommDiagEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommDiagEdition1.lean/declarations/instance.md) | 11 | `declaration-track:e85aa2d1c1042a45d80499fdf40f774fbe17fc99a047b753568023244ccf1502` |
-| 2 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommDiagEdition1.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:72b0c9fedfcf720d658d72d81201582f30e6cea0c1ef927a8f1899e8288f45df` |
-| 3 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommDiagEdition1.lean/declarations/example.md) | 24 | `declaration-track:1ebfcb178aec0fdd3a15ceb4f824d29892d141f8c2036f5434177223355ef3ca` |
-| 4 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommDiagEdition1.lean/declarations/example-source-edition-4.md) | 34 | `declaration-track:a6ee0a48790378b7c2b683c96e26c3d5c8ac08c1a4602eb1d6e774472dc892f9` |
-| 5 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommDiagEdition1.lean/declarations/example-source-edition-3.md) | 46 | `declaration-track:875d4bfd46b9684a37a67617fb231a9e53cc93f93f62cf643753cfd7b2d27287` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommDiagEdition1.lean/declarations/instance.md) | 11 | `declaration-track:e85aa2d1c1042a45d80499fdf40f774fbe17fc99a047b753568023244ccf1502` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommDiagEdition1.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:72b0c9fedfcf720d658d72d81201582f30e6cea0c1ef927a8f1899e8288f45df` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommDiagEdition1.lean/declarations/example.md) | 24 | `declaration-track:1ebfcb178aec0fdd3a15ceb4f824d29892d141f8c2036f5434177223355ef3ca` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommDiagEdition1.lean/declarations/example-source-edition-4.md) | 34 | `declaration-track:a6ee0a48790378b7c2b683c96e26c3d5c8ac08c1a4602eb1d6e774472dc892f9` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommDiagEdition1.lean/declarations/example-source-edition-3.md) | 46 | `declaration-track:875d4bfd46b9684a37a67617fb231a9e53cc93f93f62cf643753cfd7b2d27287` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

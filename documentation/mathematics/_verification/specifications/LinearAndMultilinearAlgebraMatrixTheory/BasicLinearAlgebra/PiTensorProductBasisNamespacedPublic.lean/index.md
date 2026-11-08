@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductBasisNamespacedPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductBasisNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductBasisNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductBasisNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Basis.piTensorProduct](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductBasisNamespacedPublic.lean/declarations/basis-pitensorproduct.md) | 41 | `declaration-track:d969fc8582aa8fcd70183a882847756514c34fd9d6307b64d5fff94490bf68e1` |
-| 2 | `theorem` | [Basis.piTensorProduct_repr_tprod_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductBasisNamespacedPublic.lean/declarations/basis-pitensorproduct-repr-tprod-apply.md) | 50 | `result-track:63122f44c7bc531fcb1d68dc9f2145861bd068dd81b8ab3f06114ace698a4010` |
-| 3 | `theorem` | [Basis.piTensorProduct_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductBasisNamespacedPublic.lean/declarations/basis-pitensorproduct-apply.md) | 57 | `result-track:5b967d56273ba45f0346c63a272ec97fd708fa97406a3d6c0757a7603a473d96` |
+| 1 | `def` | [Basis.piTensorProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductBasisNamespacedPublic.lean/declarations/basis-pitensorproduct.md) | 41 | `declaration-track:d969fc8582aa8fcd70183a882847756514c34fd9d6307b64d5fff94490bf68e1` |
+| 2 | `theorem` | [Basis.piTensorProduct_repr_tprod_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductBasisNamespacedPublic.lean/declarations/basis-pitensorproduct-repr-tprod-apply.md) | 50 | `result-track:63122f44c7bc531fcb1d68dc9f2145861bd068dd81b8ab3f06114ace698a4010` |
+| 3 | `theorem` | [Basis.piTensorProduct_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductBasisNamespacedPublic.lean/declarations/basis-pitensorproduct-apply.md) | 57 | `result-track:5b967d56273ba45f0346c63a272ec97fd708fa97406a3d6c0757a7603a473d96` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

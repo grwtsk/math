@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorization.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [wienerAbelPrefix](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorization.lean/declarations/wienerabelprefix.md) | 54 | `declaration-track:1daf2922c1d46043cdee54f76792b6c1a0b720f6262868e7de8f21472fb61395` |
-| 2 | `theorem` | [wienerAbelPrefix_succ](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorization.lean/declarations/wienerabelprefix-succ.md) | 57 | `result-track:2944b881e0e3d6707537d26f739475a91d13a5a5453b165db159f98a8f1c5b63` |
-| 3 | `theorem` | [wienerAbel_finite_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorization.lean/declarations/wienerabel-finite-identity.md) | 66 | `result-track:98bef33b0364b8ea578fa0e20ac8d246ea61ee18d84c8aaa255296f53955102b` |
-| 4 | `theorem` | [wienerAbel_linear_telescoping](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorization.lean/declarations/wienerabel-linear-telescoping.md) | 85 | `result-track:d002a092d5f5d8a502248c6309396b358af7f3d41692e4ea9a9e1a7454f4433f` |
-| 5 | `theorem` | [wienerAbel_weighted_le_linear_envelope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorization.lean/declarations/wienerabel-weighted-le-linear-envelope.md) | 107 | `result-track:3ae9841c3958a669581892c1ee3b206e5e89fe8d495835571d7437440aca9314` |
+| 1 | `def` | [wienerAbelPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorization.lean/declarations/wienerabelprefix.md) | 54 | `declaration-track:1daf2922c1d46043cdee54f76792b6c1a0b720f6262868e7de8f21472fb61395` |
+| 2 | `theorem` | [wienerAbelPrefix_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorization.lean/declarations/wienerabelprefix-succ.md) | 57 | `result-track:2944b881e0e3d6707537d26f739475a91d13a5a5453b165db159f98a8f1c5b63` |
+| 3 | `theorem` | [wienerAbel_finite_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorization.lean/declarations/wienerabel-finite-identity.md) | 66 | `result-track:98bef33b0364b8ea578fa0e20ac8d246ea61ee18d84c8aaa255296f53955102b` |
+| 4 | `theorem` | [wienerAbel_linear_telescoping](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorization.lean/declarations/wienerabel-linear-telescoping.md) | 85 | `result-track:d002a092d5f5d8a502248c6309396b358af7f3d41692e4ea9a9e1a7454f4433f` |
+| 5 | `theorem` | [wienerAbel_weighted_le_linear_envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaFiniteAbelMajorization.lean/declarations/wienerabel-weighted-le-linear-envelope.md) | 107 | `result-track:3ae9841c3958a669581892c1ee3b206e5e89fe8d495835571d7437440aca9314` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

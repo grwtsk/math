@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UniversalCertification.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UniversalCertification.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UniversalCertification.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UniversalCertification.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [certified_twist_family_all_certified](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UniversalCertification.lean/declarations/certified-twist-family-all-certified.md) | 37 | `result-track:2d858ab8e1ee1bf176d24389ce4a4d4b427c05cd6d903f8857a8313c4a9f9708` |
+| 1 | `theorem` | [certified_twist_family_all_certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UniversalCertification.lean/declarations/certified-twist-family-all-certified.md) | 37 | `result-track:2d858ab8e1ee1bf176d24389ce4a4d4b427c05cd6d903f8857a8313c4a9f9708` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

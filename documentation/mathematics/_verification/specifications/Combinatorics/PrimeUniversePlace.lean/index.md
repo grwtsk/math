@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PrimeUniversePlace.lean/index.md) · [Full source](../../../../Combinatorics/PrimeUniversePlace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeUniversePlace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeUniversePlace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Place](../../../../Combinatorics/PrimeUniversePlace.lean/declarations/place.md) | 13 | `declaration-track:3f83ca8f97bd43be1eed8b8568b110b8ef182cdd999fcac18b24dd839e68b09c` |
-| 2 | `structure` | [FinitePrimeUniverse](../../../../Combinatorics/PrimeUniversePlace.lean/declarations/finiteprimeuniverse.md) | 18 | `declaration-track:9696cd5b86f0d878b03a6840fc10be945d515a7f1ebcd69bab80e7cf7ef7fd16` |
-| 3 | `structure` | [AnchoredPrimeCut](../../../../Combinatorics/PrimeUniversePlace.lean/declarations/anchoredprimecut.md) | 25 | `declaration-track:2e7436cf0844c371682c9be5b52884768336f4b44ae55163bc2c2d40c219a6cb` |
-| 4 | `def` | [AnchoredPrimeCut.contains](../../../../Combinatorics/PrimeUniversePlace.lean/declarations/anchoredprimecut-contains.md) | 33 | `declaration-track:ecef6c44037b850a1bb60378c9d49e81e1833fdb90445ee8aff03e8f2d8be123` |
-| 5 | `theorem` | [archimedean_anchor_present](../../../../Combinatorics/PrimeUniversePlace.lean/declarations/archimedean-anchor-present.md) | 41 | `result-track:7307973cecec553f140f4026cc2368c1cf41c0eb96488de3f6cbbdc4c84ca0b8` |
-| 6 | `theorem` | [finite_place_present_iff](../../../../Combinatorics/PrimeUniversePlace.lean/declarations/finite-place-present-iff.md) | 48 | `result-track:9724e17f6b9e6aee8993050a7d6737bda05ff59497c1ce0aaeda68aea85c254a` |
+| 1 | `inductive` | [Place](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeUniversePlace.lean/declarations/place.md) | 13 | `declaration-track:3f83ca8f97bd43be1eed8b8568b110b8ef182cdd999fcac18b24dd839e68b09c` |
+| 2 | `structure` | [FinitePrimeUniverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeUniversePlace.lean/declarations/finiteprimeuniverse.md) | 18 | `declaration-track:9696cd5b86f0d878b03a6840fc10be945d515a7f1ebcd69bab80e7cf7ef7fd16` |
+| 3 | `structure` | [AnchoredPrimeCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeUniversePlace.lean/declarations/anchoredprimecut.md) | 25 | `declaration-track:2e7436cf0844c371682c9be5b52884768336f4b44ae55163bc2c2d40c219a6cb` |
+| 4 | `def` | [AnchoredPrimeCut.contains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeUniversePlace.lean/declarations/anchoredprimecut-contains.md) | 33 | `declaration-track:ecef6c44037b850a1bb60378c9d49e81e1833fdb90445ee8aff03e8f2d8be123` |
+| 5 | `theorem` | [archimedean_anchor_present](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeUniversePlace.lean/declarations/archimedean-anchor-present.md) | 41 | `result-track:7307973cecec553f140f4026cc2368c1cf41c0eb96488de3f6cbbdc4c84ca0b8` |
+| 6 | `theorem` | [finite_place_present_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeUniversePlace.lean/declarations/finite-place-present-iff.md) | 48 | `result-track:9724e17f6b9e6aee8993050a7d6737bda05ff59497c1ce0aaeda68aea85c254a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

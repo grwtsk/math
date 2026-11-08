@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OperatorPurityNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OperatorPurityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OperatorPurityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OperatorPurityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OperatorPurityCertificate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OperatorPurityNamespaced.lean/declarations/operatorpuritycertificate.md) | 22 | `declaration-track:e69166b497e1365c79eedf693ec03d8a6098cd7f1fc832456fc3ef6efe37bf1e` |
-| 2 | `def` | [canonicalCriticalLineProof](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OperatorPurityNamespaced.lean/declarations/canonicalcriticallineproof.md) | 64 | `declaration-track:26d0d312f80df20f580d5ea8694c317849f08d611c7087a4f6b0d6d35fb6c602` |
-| 3 | `theorem` | [operator_model_jordan_order_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OperatorPurityNamespaced.lean/declarations/operator-model-jordan-order-zero.md) | 77 | `result-track:76993cbf483a8915cda38d6e852c2a97ed5c98a1603d6ea3f0e1bdbae2ec476d` |
+| 1 | `structure` | [OperatorPurityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OperatorPurityNamespaced.lean/declarations/operatorpuritycertificate.md) | 22 | `declaration-track:e69166b497e1365c79eedf693ec03d8a6098cd7f1fc832456fc3ef6efe37bf1e` |
+| 2 | `def` | [canonicalCriticalLineProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OperatorPurityNamespaced.lean/declarations/canonicalcriticallineproof.md) | 64 | `declaration-track:26d0d312f80df20f580d5ea8694c317849f08d611c7087a4f6b0d6d35fb6c602` |
+| 3 | `theorem` | [operator_model_jordan_order_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OperatorPurityNamespaced.lean/declarations/operator-model-jordan-order-zero.md) | 77 | `result-track:76993cbf483a8915cda38d6e852c2a97ed5c98a1603d6ea3f0e1bdbae2ec476d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [measurable_re](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/declarations/measurable-re.md) | 24 | `result-track:095170b90ca319214687121002342e5ba3ab4747ad7c06d03a6eebe82a62b6dd` |
-| 2 | `theorem` | [measurable_im](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/declarations/measurable-im-source-edition-2.md) | 28 | `result-track:9611f75ac203e6f77e631af52dff418bc8bb5b5ecda4577ff35ef6d9d1ced6c7` |
-| 3 | `theorem` | [Measurable.re](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/declarations/measurable-re-source-edition-2.md) | 39 | `result-track:fda714a608103b2d81d52700a2b15a21989b94cd3afcc3f42be9266bfea2bf7f` |
-| 4 | `theorem` | [AEMeasurable.re](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/declarations/aemeasurable-re.md) | 43 | `result-track:b16e4eac2a0aa17eb405fba9c6790bad046ea962bdbca3530b8b2b240c651291` |
-| 5 | `theorem` | [Measurable.im](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/declarations/measurable-im.md) | 47 | `result-track:0d133313910f7369315040f502c7dcc774582ccf647dca5bed041d379df4fdb6` |
-| 6 | `theorem` | [AEMeasurable.im](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/declarations/aemeasurable-im.md) | 51 | `result-track:7a3f359b4b16e5abdcba5751d936713c3d8c292ca163f45dd8120f62252cc10b` |
-| 7 | `theorem` | [RCLike.measurable_ofReal](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/declarations/rclike-measurable-ofreal.md) | 61 | `result-track:8c0c5b08d6319e25142ce2b3c2ccf7ffd829ac4ffb2659d3637c156db978667c` |
-| 8 | `theorem` | [measurable_of_re_im](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/declarations/measurable-of-re-im.md) | 64 | `result-track:f7118ac6bd675e23e11b17cc4213d21028b1d94f84196ffcbc7a7c786b528371` |
-| 9 | `theorem` | [aemeasurable_of_re_im](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/declarations/aemeasurable-of-re-im.md) | 70 | `result-track:68f936cd5ceaebe2ea74bce4f44f0508c61c0e58cef305d19e7427f03e4d348e` |
+| 1 | `theorem` | [measurable_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/declarations/measurable-re.md) | 24 | `result-track:095170b90ca319214687121002342e5ba3ab4747ad7c06d03a6eebe82a62b6dd` |
+| 2 | `theorem` | [measurable_im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/declarations/measurable-im-source-edition-2.md) | 28 | `result-track:9611f75ac203e6f77e631af52dff418bc8bb5b5ecda4577ff35ef6d9d1ced6c7` |
+| 3 | `theorem` | [Measurable.re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/declarations/measurable-re-source-edition-2.md) | 39 | `result-track:fda714a608103b2d81d52700a2b15a21989b94cd3afcc3f42be9266bfea2bf7f` |
+| 4 | `theorem` | [AEMeasurable.re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/declarations/aemeasurable-re.md) | 43 | `result-track:b16e4eac2a0aa17eb405fba9c6790bad046ea962bdbca3530b8b2b240c651291` |
+| 5 | `theorem` | [Measurable.im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/declarations/measurable-im.md) | 47 | `result-track:0d133313910f7369315040f502c7dcc774582ccf647dca5bed041d379df4fdb6` |
+| 6 | `theorem` | [AEMeasurable.im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/declarations/aemeasurable-im.md) | 51 | `result-track:7a3f359b4b16e5abdcba5751d936713c3d8c292ca163f45dd8120f62252cc10b` |
+| 7 | `theorem` | [RCLike.measurable_ofReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/declarations/rclike-measurable-ofreal.md) | 61 | `result-track:8c0c5b08d6319e25142ce2b3c2ccf7ffd829ac4ffb2659d3637c156db978667c` |
+| 8 | `theorem` | [measurable_of_re_im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/declarations/measurable-of-re-im.md) | 64 | `result-track:f7118ac6bd675e23e11b17cc4213d21028b1d94f84196ffcbc7a7c786b528371` |
+| 9 | `theorem` | [aemeasurable_of_re_im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RCLike.lean/declarations/aemeasurable-of-re-im.md) | 70 | `result-track:68f936cd5ceaebe2ea74bce4f44f0508c61c0e58cef305d19e7427f03e4d348e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

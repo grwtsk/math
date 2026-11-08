@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/EulerTransportNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/EulerTransportNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EulerTransportNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EulerTransportNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [euler_preserving_transport_value_eq](../../../../ProbabilityTheoryAndStochasticProcesses/EulerTransportNamespaced.lean/declarations/euler-preserving-transport-value-eq.md) | 27 | `result-track:d7a95de4111ee252a4a9d34079662fb8fd65a900908a0c496543aef3cedf0422` |
-| 2 | `theorem` | [euler_preserving_transport_respects_differential](../../../../ProbabilityTheoryAndStochasticProcesses/EulerTransportNamespaced.lean/declarations/euler-preserving-transport-respects-differential.md) | 33 | `result-track:751f70dbc75665b0e6c06d4536d2a05a45a6043db11242302b960aad59804e6f` |
-| 3 | `theorem` | [euler_preserving_transport_quasi_iso_like](../../../../ProbabilityTheoryAndStochasticProcesses/EulerTransportNamespaced.lean/declarations/euler-preserving-transport-quasi-iso-like.md) | 39 | `result-track:c1fc1c87d55cd3ef23b5e7de47832ccc4777ff59569b09371f5e18b7997318f9` |
+| 1 | `theorem` | [euler_preserving_transport_value_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EulerTransportNamespaced.lean/declarations/euler-preserving-transport-value-eq.md) | 27 | `result-track:d7a95de4111ee252a4a9d34079662fb8fd65a900908a0c496543aef3cedf0422` |
+| 2 | `theorem` | [euler_preserving_transport_respects_differential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EulerTransportNamespaced.lean/declarations/euler-preserving-transport-respects-differential.md) | 33 | `result-track:751f70dbc75665b0e6c06d4536d2a05a45a6043db11242302b960aad59804e6f` |
+| 3 | `theorem` | [euler_preserving_transport_quasi_iso_like](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EulerTransportNamespaced.lean/declarations/euler-preserving-transport-quasi-iso-like.md) | 39 | `result-track:c1fc1c87d55cd3ef23b5e7de47832ccc4777ff59569b09371f5e18b7997318f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

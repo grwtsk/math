@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ContractPublic.lean/index.md) · [Full source](../../../../Combinatorics/ContractPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [transportSchemaVersionV1](../../../../Combinatorics/ContractPublic.lean/declarations/transportschemaversionv1.md) | 19 | `declaration-track:810b5611da1341a0c0b0f324738bd707738e6383551f6b96938189c608486cb5` |
-| 2 | `def` | [transportSerializationVersionV1](../../../../Combinatorics/ContractPublic.lean/declarations/transportserializationversionv1.md) | 20 | `declaration-track:2cafedfa905b300170cc5127139e7d6a5734f3f031b4532f5574ccadb9b2c2e3` |
-| 3 | `def` | [transportRevisionWidthV1](../../../../Combinatorics/ContractPublic.lean/declarations/transportrevisionwidthv1.md) | 21 | `declaration-track:d9bd8f63d715c56cbcbfeb19fece45eb2ded3d66a5f095de86b6a747d5e185c5` |
-| 4 | `def` | [traversalModeCode](../../../../Combinatorics/ContractPublic.lean/declarations/traversalmodecode.md) | 23 | `declaration-track:a97e0a2e58efdba210000f12f284c333efb0f9e6199fd4b824279bcd4cc9c19b` |
-| 5 | `structure` | [TransportContract](../../../../Combinatorics/ContractPublic.lean/declarations/transportcontract.md) | 28 | `declaration-track:7164228049c9d5089152ad58cd459321af44a34fbc3f1a5461699986572080a1` |
-| 6 | `def` | [hostTableMaterial](../../../../Combinatorics/ContractPublic.lean/declarations/hosttablematerial.md) | 44 | `declaration-track:c7e87aae5c75deda298e7f67b37da2f561ba62bf6ee341198ec96484797c8e0d` |
-| 7 | `def` | [edgeTableMaterial](../../../../Combinatorics/ContractPublic.lean/declarations/edgetablematerial.md) | 49 | `declaration-track:587b19f7129284603662d2b00c3fef55599c9f55aa688357220b17c2e78e61bd` |
-| 8 | `def` | [canonicalMaterial](../../../../Combinatorics/ContractPublic.lean/declarations/canonicalmaterial.md) | 60 | `declaration-track:e129e3bb289617a7598f00296c65750124efcf591114270e82f32a8e4db6470f` |
-| 9 | `def` | [Valid](../../../../Combinatorics/ContractPublic.lean/declarations/valid.md) | 85 | `declaration-track:5c7c0bdeeb1e1071900ebf0097be42c4fa666c89c8c185628e0181e671e60862` |
-| 10 | `instance` | [(anonymous)](../../../../Combinatorics/ContractPublic.lean/declarations/instance.md) | 96 | `declaration-track:f9bba4a729c184650ed49799846be1be658cd01d25a8cc80a4f1ad5fbcef5570` |
-| 11 | `def` | [verifyTransportContract](../../../../Combinatorics/ContractPublic.lean/declarations/verifytransportcontract.md) | 101 | `declaration-track:c7e2813ec153c9ed31e828c4c5171578ac1def8a09c097fd171113e5686f5000` |
-| 12 | `theorem` | [verifyTransportContract_sound](../../../../Combinatorics/ContractPublic.lean/declarations/verifytransportcontract-sound.md) | 107 | `result-track:332a3dd8aabe29d02dbb128df7943c7a03025c7b5036181499f5eff6e3f18c39` |
-| 13 | `theorem` | [canonicalMaterial_deterministic](../../../../Combinatorics/ContractPublic.lean/declarations/canonicalmaterial-deterministic.md) | 115 | `result-track:d43cd4391c67cab1e1ceb3c1fc0fe59d039b9d2495228fe53d36abb2bc519bff` |
+| 1 | `def` | [transportSchemaVersionV1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractPublic.lean/declarations/transportschemaversionv1.md) | 19 | `declaration-track:810b5611da1341a0c0b0f324738bd707738e6383551f6b96938189c608486cb5` |
+| 2 | `def` | [transportSerializationVersionV1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractPublic.lean/declarations/transportserializationversionv1.md) | 20 | `declaration-track:2cafedfa905b300170cc5127139e7d6a5734f3f031b4532f5574ccadb9b2c2e3` |
+| 3 | `def` | [transportRevisionWidthV1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractPublic.lean/declarations/transportrevisionwidthv1.md) | 21 | `declaration-track:d9bd8f63d715c56cbcbfeb19fece45eb2ded3d66a5f095de86b6a747d5e185c5` |
+| 4 | `def` | [traversalModeCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractPublic.lean/declarations/traversalmodecode.md) | 23 | `declaration-track:a97e0a2e58efdba210000f12f284c333efb0f9e6199fd4b824279bcd4cc9c19b` |
+| 5 | `structure` | [TransportContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractPublic.lean/declarations/transportcontract.md) | 28 | `declaration-track:7164228049c9d5089152ad58cd459321af44a34fbc3f1a5461699986572080a1` |
+| 6 | `def` | [hostTableMaterial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractPublic.lean/declarations/hosttablematerial.md) | 44 | `declaration-track:c7e87aae5c75deda298e7f67b37da2f561ba62bf6ee341198ec96484797c8e0d` |
+| 7 | `def` | [edgeTableMaterial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractPublic.lean/declarations/edgetablematerial.md) | 49 | `declaration-track:587b19f7129284603662d2b00c3fef55599c9f55aa688357220b17c2e78e61bd` |
+| 8 | `def` | [canonicalMaterial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractPublic.lean/declarations/canonicalmaterial.md) | 60 | `declaration-track:e129e3bb289617a7598f00296c65750124efcf591114270e82f32a8e4db6470f` |
+| 9 | `def` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractPublic.lean/declarations/valid.md) | 85 | `declaration-track:5c7c0bdeeb1e1071900ebf0097be42c4fa666c89c8c185628e0181e671e60862` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractPublic.lean/declarations/instance.md) | 96 | `declaration-track:f9bba4a729c184650ed49799846be1be658cd01d25a8cc80a4f1ad5fbcef5570` |
+| 11 | `def` | [verifyTransportContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractPublic.lean/declarations/verifytransportcontract.md) | 101 | `declaration-track:c7e2813ec153c9ed31e828c4c5171578ac1def8a09c097fd171113e5686f5000` |
+| 12 | `theorem` | [verifyTransportContract_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractPublic.lean/declarations/verifytransportcontract-sound.md) | 107 | `result-track:332a3dd8aabe29d02dbb128df7943c7a03025c7b5036181499f5eff6e3f18c39` |
+| 13 | `theorem` | [canonicalMaterial_deterministic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContractPublic.lean/declarations/canonicalmaterial-deterministic.md) | 115 | `result-track:d43cd4391c67cab1e1ceb3c1fc0fe59d039b9d2495228fe53d36abb2bc519bff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

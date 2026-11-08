@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonCWPartition.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonCWPartition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWPartition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWPartition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPositiveEdges`](../../../../AlgebraicTopology/SurfacePolygonCWPositiveEdges.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPositiveEdges`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWPositiveEdges.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [directedEdge_one_eq_zeroCell](../../../../AlgebraicTopology/SurfacePolygonCWPartition.lean/declarations/directededge-one-eq-zerocell.md) | 31 | `result-track:4ac4c228d0a6ec407fd202a66c4d9cc8625a4fd1e2dc3f4349bfa726efedbd3c` |
-| 2 | `theorem` | [positiveOneCell_one_eq_zeroCell](../../../../AlgebraicTopology/SurfacePolygonCWPartition.lean/declarations/positiveonecell-one-eq-zerocell.md) | 46 | `result-track:51a4f77c53adba86a3c7b8c6f4a0ce2a5a79668acda8821c2247cb0224396c0e` |
-| 3 | `theorem` | [directedEdge_has_positive_representative](../../../../AlgebraicTopology/SurfacePolygonCWPartition.lean/declarations/directededge-has-positive-representative.md) | 55 | `result-track:90fced5672fd513bb86c8ace7c1297c37e0fa7883126a6b6348aaa27907e2a89` |
-| 4 | `theorem` | [source_has_positive_representative](../../../../AlgebraicTopology/SurfacePolygonCWPartition.lean/declarations/source-has-positive-representative.md) | 71 | `result-track:a03fdf0038cccc16125b86e9a783d9793424590260e2ad9d5e0a1f773f9783bf` |
+| 1 | `theorem` | [directedEdge_one_eq_zeroCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWPartition.lean/declarations/directededge-one-eq-zerocell.md) | 31 | `result-track:4ac4c228d0a6ec407fd202a66c4d9cc8625a4fd1e2dc3f4349bfa726efedbd3c` |
+| 2 | `theorem` | [positiveOneCell_one_eq_zeroCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWPartition.lean/declarations/positiveonecell-one-eq-zerocell.md) | 46 | `result-track:51a4f77c53adba86a3c7b8c6f4a0ce2a5a79668acda8821c2247cb0224396c0e` |
+| 3 | `theorem` | [directedEdge_has_positive_representative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWPartition.lean/declarations/directededge-has-positive-representative.md) | 55 | `result-track:90fced5672fd513bb86c8ace7c1297c37e0fa7883126a6b6348aaa27907e2a89` |
+| 4 | `theorem` | [source_has_positive_representative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWPartition.lean/declarations/source-has-positive-representative.md) | 71 | `result-track:a03fdf0038cccc16125b86e9a783d9793424590260e2ad9d5e0a1f773f9783bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

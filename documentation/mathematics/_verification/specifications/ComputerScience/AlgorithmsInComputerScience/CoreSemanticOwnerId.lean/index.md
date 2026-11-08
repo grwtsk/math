@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SemanticOwnerId](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/semanticownerid.md) | 15 | `declaration-track:ca0570841e4771775862990a8f97c9cbf05f206fb736459e40c45fc537fb1107` |
-| 2 | `structure` | [GlobalLocusRef](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/globallocusref.md) | 20 | `declaration-track:dff90347b395b9ddaceaee5666f2f6a1f3772f9fb493072705d58ccb5924a346` |
-| 3 | `structure` | [IndexMetadata](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/indexmetadata.md) | 26 | `declaration-track:bc18143e95556d09f6d08aef593351ad76dd1de95e8624409d510e95ae94b4ce` |
-| 4 | `inductive` | [IndexRecordKind](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/indexrecordkind.md) | 44 | `declaration-track:53bc08c543a2fab8166d71c996bf89a3cad77108f188196f41314477724c26c8` |
-| 5 | `structure` | [IndexRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/indexrecord.md) | 73 | `declaration-track:1b6dfc6b2d4ced8c5d643a9c0f6d184fc5997a7d55bde6c995150f76086a2507` |
-| 6 | `structure` | [AnyIndexRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/anyindexrecord.md) | 84 | `declaration-track:2847cf4ff40b12ba9023bd899ac4a628a31d8782239d66a2e60cdefc41fee7c0` |
-| 7 | `def` | [IndexRecord.erase](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/indexrecord-erase.md) | 96 | `declaration-track:50a06e35780ff3a6b6472f1ee1c57a720e8471753a6905344bbe2e9a536b3710` |
-| 8 | `structure` | [CanonicalIndex](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/canonicalindex.md) | 108 | `declaration-track:87a3074c1bbe55b9a5263baf14b91515cad327222f207e051571df6aaef81cbb` |
-| 9 | `def` | [CanonicalIndex.Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/canonicalindex-valid.md) | 115 | `declaration-track:92ef882e75c9dfec1ad18b8cf4b7367d5f00a294f604ccf6bc514e5e8ea421c0` |
-| 10 | `theorem` | [CanonicalIndex.identifiers_unique](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/canonicalindex-identifiers-unique.md) | 119 | `result-track:36b72d38b65d4ff4a7ac9b688bf69c291fd922dd8a44a9b2ed72aeb8f235ef8c` |
+| 1 | `structure` | [SemanticOwnerId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/semanticownerid.md) | 15 | `declaration-track:ca0570841e4771775862990a8f97c9cbf05f206fb736459e40c45fc537fb1107` |
+| 2 | `structure` | [GlobalLocusRef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/globallocusref.md) | 20 | `declaration-track:dff90347b395b9ddaceaee5666f2f6a1f3772f9fb493072705d58ccb5924a346` |
+| 3 | `structure` | [IndexMetadata](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/indexmetadata.md) | 26 | `declaration-track:bc18143e95556d09f6d08aef593351ad76dd1de95e8624409d510e95ae94b4ce` |
+| 4 | `inductive` | [IndexRecordKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/indexrecordkind.md) | 44 | `declaration-track:53bc08c543a2fab8166d71c996bf89a3cad77108f188196f41314477724c26c8` |
+| 5 | `structure` | [IndexRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/indexrecord.md) | 73 | `declaration-track:1b6dfc6b2d4ced8c5d643a9c0f6d184fc5997a7d55bde6c995150f76086a2507` |
+| 6 | `structure` | [AnyIndexRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/anyindexrecord.md) | 84 | `declaration-track:2847cf4ff40b12ba9023bd899ac4a628a31d8782239d66a2e60cdefc41fee7c0` |
+| 7 | `def` | [IndexRecord.erase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/indexrecord-erase.md) | 96 | `declaration-track:50a06e35780ff3a6b6472f1ee1c57a720e8471753a6905344bbe2e9a536b3710` |
+| 8 | `structure` | [CanonicalIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/canonicalindex.md) | 108 | `declaration-track:87a3074c1bbe55b9a5263baf14b91515cad327222f207e051571df6aaef81cbb` |
+| 9 | `def` | [CanonicalIndex.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/canonicalindex-valid.md) | 115 | `declaration-track:92ef882e75c9dfec1ad18b8cf4b7367d5f00a294f604ccf6bc514e5e8ea421c0` |
+| 10 | `theorem` | [CanonicalIndex.identifiers_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreSemanticOwnerId.lean/declarations/canonicalindex-identifiers-unique.md) | 119 | `result-track:36b72d38b65d4ff4a7ac9b688bf69c291fd922dd8a44a9b2ed72aeb8f235ef8c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

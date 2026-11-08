@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualZeroSquareScopeAuditNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualZeroSquareScopeAuditNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualZeroSquareScopeAuditNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualZeroSquareScopeAuditNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualZeroSquareScopeAuditNamespaced.lean/declarations/example-source-edition-2.md) | 24 | `declaration-track:fb7433e28f090ea3e7b413a87da5c9e1a6b688ebcf81d242a6076bb6a9b03d5f` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualZeroSquareScopeAuditNamespaced.lean/declarations/example.md) | 26 | `declaration-track:c1d6b0fdcfcbc9ac28e38a7d0ac8e0423d3a5d3a7f1360494ba397293f5a8022` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualZeroSquareScopeAuditNamespaced.lean/declarations/example-source-edition-2.md) | 24 | `declaration-track:fb7433e28f090ea3e7b413a87da5c9e1a6b688ebcf81d242a6076bb6a9b03d5f` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualZeroSquareScopeAuditNamespaced.lean/declarations/example.md) | 26 | `declaration-track:c1d6b0fdcfcbc9ac28e38a7d0ac8e0423d3a5d3a7f1360494ba397293f5a8022` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

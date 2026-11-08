@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSymbolsAndInverseTable.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSymbolsAndInverseTable.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSymbolsAndInverseTable.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSymbolsAndInverseTable.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [RectSpin](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSymbolsAndInverseTable.lean/declarations/rectspin.md) | 36 | `declaration-track:d07a30056542b5668c9c9fb06c4734ede340fff3721044d06386417a85e5a2ea` |
-| 2 | `def` | [inverse](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSymbolsAndInverseTable.lean/declarations/inverse.md) | 46 | `declaration-track:21ae48f347c735b5bfc1f2878763078f0117626f2077dee9d547d78d938e8249` |
+| 1 | `inductive` | [RectSpin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSymbolsAndInverseTable.lean/declarations/rectspin.md) | 36 | `declaration-track:d07a30056542b5668c9c9fb06c4734ede340fff3721044d06386417a85e5a2ea` |
+| 2 | `def` | [inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSymbolsAndInverseTable.lean/declarations/inverse.md) | 46 | `declaration-track:21ae48f347c735b5bfc1f2878763078f0117626f2077dee9d547d78d938e8249` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [left_triangle](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/declarations/left-triangle.md) | 19 | `result-track:5ce3f6d0e056d46a8eb110b8c7eb9973943f8238a8c91c33c15eb9cd77905ab1` |
-| 2 | `lemma` | [yang_baxter](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/declarations/yang-baxter-source-edition-2.md) | 32 | `result-track:33319164db62e1f303dd0b4f9af1a42c9b9d4be096fcde3dbc271e43712ef882` |
-| 3 | `lemma` | [yang_baxter'](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/declarations/yang-baxter-source-edition-3.md) | 38 | `result-track:cea84c386d2b4a2779e2299fad0aa453f551efbe21f363d4f46c99f01cc8ca9b` |
-| 4 | `lemma` | [yang_baxter''](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/declarations/yang-baxter.md) | 43 | `result-track:0823d475a5012cf414e3315475a40da8d3226deb29a480d51a2518e682c11a44` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/declarations/example.md) | 52 | `declaration-track:1c55d597948781020ef49ac2e2006e56fa83c3e425ff1f6e526f4dcf629f65ae` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/declarations/example-source-edition-2.md) | 55 | `declaration-track:27c9099af09955647a10608f6e7398c849475b289951e108c7a3ed549499e765` |
-| 7 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/declarations/example-source-edition-3.md) | 58 | `declaration-track:336f2973661725c6c70ae836ec4ff2bc377f44cda83be46af6319d59f65fb681` |
-| 8 | `abbrev` | [yangBaxterLhs](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/declarations/yangbaxterlhs.md) | 416 | `declaration-track:735ec8c7f4c890719a5f73d30a7601b7ba1777c0bf0f61181c585228c5259b12` |
+| 1 | `lemma` | [left_triangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/declarations/left-triangle.md) | 19 | `result-track:5ce3f6d0e056d46a8eb110b8c7eb9973943f8238a8c91c33c15eb9cd77905ab1` |
+| 2 | `lemma` | [yang_baxter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/declarations/yang-baxter-source-edition-2.md) | 32 | `result-track:33319164db62e1f303dd0b4f9af1a42c9b9d4be096fcde3dbc271e43712ef882` |
+| 3 | `lemma` | [yang_baxter'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/declarations/yang-baxter-source-edition-3.md) | 38 | `result-track:cea84c386d2b4a2779e2299fad0aa453f551efbe21f363d4f46c99f01cc8ca9b` |
+| 4 | `lemma` | [yang_baxter''](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/declarations/yang-baxter.md) | 43 | `result-track:0823d475a5012cf414e3315475a40da8d3226deb29a480d51a2518e682c11a44` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/declarations/example.md) | 52 | `declaration-track:1c55d597948781020ef49ac2e2006e56fa83c3e425ff1f6e526f4dcf629f65ae` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/declarations/example-source-edition-2.md) | 55 | `declaration-track:27c9099af09955647a10608f6e7398c849475b289951e108c7a3ed549499e765` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/declarations/example-source-edition-3.md) | 58 | `declaration-track:336f2973661725c6c70ae836ec4ff2bc377f44cda83be46af6319d59f65fb681` |
+| 8 | `abbrev` | [yangBaxterLhs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StringDiagramEdition1.lean/declarations/yangbaxterlhs.md) | 416 | `declaration-track:735ec8c7f4c890719a5f73d30a7601b7ba1777c0bf0f61181c585228c5259b12` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

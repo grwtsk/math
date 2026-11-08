@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/DirectionFrame.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/DirectionFrame.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DirectionFrame.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DirectionFrame.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DirectionFrame](../../../../../ComputerScience/AlgorithmsInComputerScience/DirectionFrame.lean/declarations/directionframe.md) | 28 | `declaration-track:5d35fbaad6d109fd98a3342c3b6e49e2e87710693bd59b9448feb8445793b0cb` |
-| 2 | `structure` | [OppositeDirectionPair](../../../../../ComputerScience/AlgorithmsInComputerScience/DirectionFrame.lean/declarations/oppositedirectionpair.md) | 54 | `declaration-track:a5eb04bdf2e2e634729ca40795387f4531ab4807ef07bcfa5de190e98f3d32ab` |
-| 3 | `structure` | [DirectionOrbit](../../../../../ComputerScience/AlgorithmsInComputerScience/DirectionFrame.lean/declarations/directionorbit.md) | 61 | `declaration-track:8243272b9ea2c87bcacff267ee543c7869fe74cf7964e9f0949187871e7cf5ca` |
-| 4 | `inductive` | [BinaryDirection](../../../../../ComputerScience/AlgorithmsInComputerScience/DirectionFrame.lean/declarations/binarydirection.md) | 69 | `declaration-track:5e267da7de6f2ca0310332794967bb3cd1a315378166522f26cd72dc0a4dd1f1` |
-| 5 | `def` | [binaryDirectionFrame](../../../../../ComputerScience/AlgorithmsInComputerScience/DirectionFrame.lean/declarations/binarydirectionframe.md) | 76 | `declaration-track:c009e43252794d9fd8d39f05a91236fe95dcf259143525bbfdeb340f2cc9024b` |
-| 6 | `theorem` | [binary_opposite_involutive](../../../../../ComputerScience/AlgorithmsInComputerScience/DirectionFrame.lean/declarations/binary-opposite-involutive.md) | 105 | `result-track:72c8819ff90fc0d01426c45ccdb5f36acd2e25327e73145f0591aeb732612711` |
-| 7 | `def` | [binaryOppositeDirectionPair](../../../../../ComputerScience/AlgorithmsInComputerScience/DirectionFrame.lean/declarations/binaryoppositedirectionpair.md) | 112 | `declaration-track:c0445d3852f3aa0454a3681b9a45ac08333268ab9bc3c2736517d7a91b56612d` |
+| 1 | `structure` | [DirectionFrame](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DirectionFrame.lean/declarations/directionframe.md) | 28 | `declaration-track:5d35fbaad6d109fd98a3342c3b6e49e2e87710693bd59b9448feb8445793b0cb` |
+| 2 | `structure` | [OppositeDirectionPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DirectionFrame.lean/declarations/oppositedirectionpair.md) | 54 | `declaration-track:a5eb04bdf2e2e634729ca40795387f4531ab4807ef07bcfa5de190e98f3d32ab` |
+| 3 | `structure` | [DirectionOrbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DirectionFrame.lean/declarations/directionorbit.md) | 61 | `declaration-track:8243272b9ea2c87bcacff267ee543c7869fe74cf7964e9f0949187871e7cf5ca` |
+| 4 | `inductive` | [BinaryDirection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DirectionFrame.lean/declarations/binarydirection.md) | 69 | `declaration-track:5e267da7de6f2ca0310332794967bb3cd1a315378166522f26cd72dc0a4dd1f1` |
+| 5 | `def` | [binaryDirectionFrame](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DirectionFrame.lean/declarations/binarydirectionframe.md) | 76 | `declaration-track:c009e43252794d9fd8d39f05a91236fe95dcf259143525bbfdeb340f2cc9024b` |
+| 6 | `theorem` | [binary_opposite_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DirectionFrame.lean/declarations/binary-opposite-involutive.md) | 105 | `result-track:72c8819ff90fc0d01426c45ccdb5f36acd2e25327e73145f0591aeb732612711` |
+| 7 | `def` | [binaryOppositeDirectionPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DirectionFrame.lean/declarations/binaryoppositedirectionpair.md) | 112 | `declaration-track:c0445d3852f3aa0454a3681b9a45ac08333268ab9bc3c2736517d7a91b56612d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

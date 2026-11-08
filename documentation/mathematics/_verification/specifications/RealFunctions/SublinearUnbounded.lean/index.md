@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SublinearUnbounded.lean/index.md) · [Full source](../../../../RealFunctions/SublinearUnbounded.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SublinearUnbounded.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SublinearUnbounded.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sqrt_eventually_le_linear](../../../../RealFunctions/SublinearUnbounded.lean/declarations/sqrt-eventually-le-linear.md) | 10 | `result-track:9aad74caa9f602b616c64e950d20cdc78c703188267666aeee41b1a0ad40c233` |
-| 2 | `theorem` | [sqrt_not_uniformly_bounded](../../../../RealFunctions/SublinearUnbounded.lean/declarations/sqrt-not-uniformly-bounded.md) | 25 | `result-track:db8c803cc203b0ab30f95503c39cc7cad24cb6388a23189444ef931e3c04312f` |
+| 1 | `theorem` | [sqrt_eventually_le_linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SublinearUnbounded.lean/declarations/sqrt-eventually-le-linear.md) | 10 | `result-track:9aad74caa9f602b616c64e950d20cdc78c703188267666aeee41b1a0ad40c233` |
+| 2 | `theorem` | [sqrt_not_uniformly_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SublinearUnbounded.lean/declarations/sqrt-not-uniformly-bounded.md) | 25 | `result-track:db8c803cc203b0ab30f95503c39cc7cad24cb6388a23189444ef931e3c04312f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ReductionNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ReductionNamespacedSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ReductionNamespacedSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ReductionNamespacedSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reduce](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ReductionNamespacedSourceEdition1.lean/declarations/reduce.md) | 16 | `declaration-track:0bc1ac5534394013c6e070a7c6593ee5fff6536458c262feee4fdfe175e30e7e` |
-| 2 | `def` | [mutateResidue](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ReductionNamespacedSourceEdition1.lean/declarations/mutateresidue.md) | 20 | `declaration-track:08c868b4f62f0f90346892b535b8fad3985f69165aabbdc59df94c05368790cc` |
-| 3 | `theorem` | [reduce_mutate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ReductionNamespacedSourceEdition1.lean/declarations/reduce-mutate.md) | 25 | `result-track:b140412bdd61558a140f8c215b653510d620c97ed1650d0abd69f7d64ceea643` |
-| 4 | `def` | [playResidue](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ReductionNamespacedSourceEdition1.lean/declarations/playresidue.md) | 32 | `declaration-track:14678e154f402c4877090c23c5e57db4045582fabef3dccfa3df97b71f042fde` |
-| 5 | `theorem` | [reduce_play](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ReductionNamespacedSourceEdition1.lean/declarations/reduce-play.md) | 38 | `result-track:69708d6c4fdd600b6de7a61aa8aa20ef015049b79a604e9871cde971da5f6225` |
-| 6 | `theorem` | [reduced_mutation_determinant](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ReductionNamespacedSourceEdition1.lean/declarations/reduced-mutation-determinant.md) | 48 | `result-track:6b63093c8c1cd0c0bd7d16c5452bf96bd17ad2ffa224fc9c947f3f8c64d04a2a` |
-| 7 | `theorem` | [reduced_mutation_isUnit](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ReductionNamespacedSourceEdition1.lean/declarations/reduced-mutation-isunit.md) | 56 | `result-track:23450326f7bd3108f782764934397af2c76f358e22c7a6b9fa306139ca051b8c` |
+| 1 | `def` | [reduce](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ReductionNamespacedSourceEdition1.lean/declarations/reduce.md) | 16 | `declaration-track:0bc1ac5534394013c6e070a7c6593ee5fff6536458c262feee4fdfe175e30e7e` |
+| 2 | `def` | [mutateResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ReductionNamespacedSourceEdition1.lean/declarations/mutateresidue.md) | 20 | `declaration-track:08c868b4f62f0f90346892b535b8fad3985f69165aabbdc59df94c05368790cc` |
+| 3 | `theorem` | [reduce_mutate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ReductionNamespacedSourceEdition1.lean/declarations/reduce-mutate.md) | 25 | `result-track:b140412bdd61558a140f8c215b653510d620c97ed1650d0abd69f7d64ceea643` |
+| 4 | `def` | [playResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ReductionNamespacedSourceEdition1.lean/declarations/playresidue.md) | 32 | `declaration-track:14678e154f402c4877090c23c5e57db4045582fabef3dccfa3df97b71f042fde` |
+| 5 | `theorem` | [reduce_play](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ReductionNamespacedSourceEdition1.lean/declarations/reduce-play.md) | 38 | `result-track:69708d6c4fdd600b6de7a61aa8aa20ef015049b79a604e9871cde971da5f6225` |
+| 6 | `theorem` | [reduced_mutation_determinant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ReductionNamespacedSourceEdition1.lean/declarations/reduced-mutation-determinant.md) | 48 | `result-track:6b63093c8c1cd0c0bd7d16c5452bf96bd17ad2ffa224fc9c947f3f8c64d04a2a` |
+| 7 | `theorem` | [reduced_mutation_isUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ReductionNamespacedSourceEdition1.lean/declarations/reduced-mutation-isunit.md) | 56 | `result-track:23450326f7bd3108f782764934397af2c76f358e22c7a6b9fa306139ca051b8c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

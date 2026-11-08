@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AlgebraicCardinalityCardinality.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AlgebraicCardinalityCardinality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicCardinalityCardinality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicCardinalityCardinality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lift_cardinalMk_le_sigma_polynomial](../../../../CommutativeAlgebra/AlgebraicCardinalityCardinality.lean/declarations/lift-cardinalmk-le-sigma-polynomial.md) | 28 | `result-track:19d0e9e6b393df215f5e798f69cfb978cf4585c474e0453de82a9350893b2b2e` |
-| 2 | `theorem` | [lift_cardinalMk_le_max](../../../../CommutativeAlgebra/AlgebraicCardinalityCardinality.lean/declarations/lift-cardinalmk-le-max.md) | 45 | `result-track:797b2a57d06691a5527f5d695ab57b66bd24e3aec367a2a50235f75115e44f68` |
-| 3 | `theorem` | [cardinalMk_le_sigma_polynomial](../../../../CommutativeAlgebra/AlgebraicCardinalityCardinality.lean/declarations/cardinalmk-le-sigma-polynomial.md) | 61 | `result-track:b541c543b991be79fc7f81be8dd4f24bcd73dcc2e5c9d79a9198f9b4a3a00abe` |
-| 4 | `theorem` | [cardinalMk_le_max](../../../../CommutativeAlgebra/AlgebraicCardinalityCardinality.lean/declarations/cardinalmk-le-max.md) | 71 | `result-track:6979d5cf3f110d1d850e08b9c5d89e791771fdd5dfb9fc6fdcfffc478c7cf19b` |
+| 1 | `theorem` | [lift_cardinalMk_le_sigma_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicCardinalityCardinality.lean/declarations/lift-cardinalmk-le-sigma-polynomial.md) | 28 | `result-track:19d0e9e6b393df215f5e798f69cfb978cf4585c474e0453de82a9350893b2b2e` |
+| 2 | `theorem` | [lift_cardinalMk_le_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicCardinalityCardinality.lean/declarations/lift-cardinalmk-le-max.md) | 45 | `result-track:797b2a57d06691a5527f5d695ab57b66bd24e3aec367a2a50235f75115e44f68` |
+| 3 | `theorem` | [cardinalMk_le_sigma_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicCardinalityCardinality.lean/declarations/cardinalmk-le-sigma-polynomial.md) | 61 | `result-track:b541c543b991be79fc7f81be8dd4f24bcd73dcc2e5c9d79a9198f9b4a3a00abe` |
+| 4 | `theorem` | [cardinalMk_le_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicCardinalityCardinality.lean/declarations/cardinalmk-le-max.md) | 71 | `result-track:6979d5cf3f110d1d850e08b9c5d89e791771fdd5dfb9fc6fdcfffc478c7cf19b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

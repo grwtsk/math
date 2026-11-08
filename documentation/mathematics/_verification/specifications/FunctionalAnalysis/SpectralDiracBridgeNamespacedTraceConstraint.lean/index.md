@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [TraceConstraint](../../../../FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/declarations/traceconstraint.md) | 21 | `declaration-track:629ded0dbeeabc5f9d1eede378f81f66ec37545b8c932cca05ba4d0d481145df` |
-| 2 | `abbrev` | [DiracSymbol](../../../../FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/declarations/diracsymbol.md) | 24 | `declaration-track:907028e3c6a23d730e40f8c2c2e7411ee62edcfbb54cc7e6e1651a33babc3f99` |
-| 3 | `abbrev` | [PrismaticDifferenceSymbol](../../../../FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/declarations/prismaticdifferencesymbol.md) | 27 | `declaration-track:c12010d9ca2661c281312ef869c977dd6756305c538d67cb8e1dfbc3e864184b` |
-| 4 | `abbrev` | [SpectralBridgeNode](../../../../FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/declarations/spectralbridgenode.md) | 30 | `declaration-track:6380e5bdc1035cc980db2aae03c6e0248ac170447d3f12d7ecb92bc262d66922` |
-| 5 | `abbrev` | [ConnesStyleBridge](../../../../FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/declarations/connesstylebridge.md) | 33 | `declaration-track:b0fc5b39516dc88a320acde3dd39e0d594827df57945241160d8b88ccf7742b7` |
-| 6 | `abbrev` | [PrismaticLimitCertificate](../../../../FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/declarations/prismaticlimitcertificate.md) | 36 | `declaration-track:6dfc406293fe21119378f059af52a3f4feb7382395cf04ec1ca4bd60bc36f944` |
-| 7 | `theorem` | [connes_bridge_has_matrix_tree_lowering](../../../../FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/declarations/connes-bridge-has-matrix-tree-lowering.md) | 39 | `result-track:0709fa941214e354ec5b50de4fbe7ee515043e17501b3f3b93a62c8088bd95ea` |
-| 8 | `theorem` | [prismatic_limit_aligns_with_functional_equation](../../../../FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/declarations/prismatic-limit-aligns-with-functional-equation.md) | 44 | `result-track:2c88bb9e6b8d46218624c062697f016a428edff88279ad6d65863509e52ba681` |
+| 1 | `abbrev` | [TraceConstraint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/declarations/traceconstraint.md) | 21 | `declaration-track:629ded0dbeeabc5f9d1eede378f81f66ec37545b8c932cca05ba4d0d481145df` |
+| 2 | `abbrev` | [DiracSymbol](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/declarations/diracsymbol.md) | 24 | `declaration-track:907028e3c6a23d730e40f8c2c2e7411ee62edcfbb54cc7e6e1651a33babc3f99` |
+| 3 | `abbrev` | [PrismaticDifferenceSymbol](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/declarations/prismaticdifferencesymbol.md) | 27 | `declaration-track:c12010d9ca2661c281312ef869c977dd6756305c538d67cb8e1dfbc3e864184b` |
+| 4 | `abbrev` | [SpectralBridgeNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/declarations/spectralbridgenode.md) | 30 | `declaration-track:6380e5bdc1035cc980db2aae03c6e0248ac170447d3f12d7ecb92bc262d66922` |
+| 5 | `abbrev` | [ConnesStyleBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/declarations/connesstylebridge.md) | 33 | `declaration-track:b0fc5b39516dc88a320acde3dd39e0d594827df57945241160d8b88ccf7742b7` |
+| 6 | `abbrev` | [PrismaticLimitCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/declarations/prismaticlimitcertificate.md) | 36 | `declaration-track:6dfc406293fe21119378f059af52a3f4feb7382395cf04ec1ca4bd60bc36f944` |
+| 7 | `theorem` | [connes_bridge_has_matrix_tree_lowering](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/declarations/connes-bridge-has-matrix-tree-lowering.md) | 39 | `result-track:0709fa941214e354ec5b50de4fbe7ee515043e17501b3f3b93a62c8088bd95ea` |
+| 8 | `theorem` | [prismatic_limit_aligns_with_functional_equation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeNamespacedTraceConstraint.lean/declarations/prismatic-limit-aligns-with-functional-equation.md) | 44 | `result-track:2c88bb9e6b8d46218624c062697f016a428edff88279ad6d65863509e52ba681` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

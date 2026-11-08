@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Advice.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Advice.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Advice.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Advice.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ResolutionAdvice](../../../../../ComputerScience/AlgorithmsInComputerScience/Advice.lean/declarations/resolutionadvice.md) | 14 | `declaration-track:651e5bbe1d5abcd6ec54c1b207d8bf630ef4f31bb533ce86d51816615df720a8` |
-| 2 | `inductive` | [ResolverArtifact](../../../../../ComputerScience/AlgorithmsInComputerScience/Advice.lean/declarations/resolverartifact.md) | 18 | `declaration-track:ccd5eca09b3bc1f36700b40a3d89dc9eac3368b49807bc745c4507e239ebe705` |
-| 3 | `theorem` | [advice_constructor_ne_certificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Advice.lean/declarations/advice-constructor-ne-certificate.md) | 25 | `result-track:03d69621c81e3a53d9b7395ede9a38ff8a3ad409ab7b716c914a8e6b723630ee` |
+| 1 | `structure` | [ResolutionAdvice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Advice.lean/declarations/resolutionadvice.md) | 14 | `declaration-track:651e5bbe1d5abcd6ec54c1b207d8bf630ef4f31bb533ce86d51816615df720a8` |
+| 2 | `inductive` | [ResolverArtifact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Advice.lean/declarations/resolverartifact.md) | 18 | `declaration-track:ccd5eca09b3bc1f36700b40a3d89dc9eac3368b49807bc745c4507e239ebe705` |
+| 3 | `theorem` | [advice_constructor_ne_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Advice.lean/declarations/advice-constructor-ne-certificate.md) | 25 | `result-track:03d69621c81e3a53d9b7395ede9a38ff8a3ad409ab7b716c914a8e6b723630ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

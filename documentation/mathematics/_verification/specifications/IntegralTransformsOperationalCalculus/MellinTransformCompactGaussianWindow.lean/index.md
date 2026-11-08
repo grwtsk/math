@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus`](../../../../RealFunctions/DyadicAnnulus.lean/index.md) — import line 20; pinned internal source present.
-- [`GRWTSK.Analysis.MellinTransform.NormalizedGaussian`](../../../../MeasureAndIntegration/MellinTransformNormalizedGaussian.lean/index.md) — import line 21; pinned internal source present.
+- [`GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DyadicAnnulus.lean/index.md) — import line 20; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.NormalizedGaussian`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformNormalizedGaussian.lean/index.md) — import line 21; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Sqrt` — import line 22; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.Distribution.SchwartzSpace.Basic` — import line 23; external provider; requires a separately pinned dependency.
 
@@ -60,17 +60,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rootWeight](../../../../IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/rootweight.md) | 32 | `declaration-track:be510b7c69d5246459bee0eb7833e024b4738e0d2e2659e7e4a252bf84d5a1d9` |
-| 2 | `lemma` | [gaussianMellinProfile_real](../../../../IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussianmellinprofile-real.md) | 34 | `result-track:e338fbc1c71fad29c173648e9c62b241caeba68b52286c1e2acf987c60c5edec` |
-| 3 | `def` | [gaussianDyadicProfile](../../../../IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussiandyadicprofile.md) | 46 | `declaration-track:f59156d0cbfa980ccd28bf17a5faf6acccaf6355bd260eec6d9ccf059ba7dbd8` |
-| 4 | `lemma` | [gaussianDyadicProfile_small](../../../../IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussiandyadicprofile-small.md) | 49 | `result-track:262b05a92e6cd08277adf9a200b1fb59ba1170716b6e0af611b591e1cef5e2cc` |
-| 5 | `lemma` | [gaussianDyadicProfile_large](../../../../IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussiandyadicprofile-large.md) | 52 | `result-track:f9703e8d1e3c64b31e5360abe779080af8e716adeb988d9cb5ef403703d102ba` |
-| 6 | `lemma` | [gaussianDyadicProfile_compact](../../../../IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussiandyadicprofile-compact.md) | 56 | `result-track:1c3653d49096a5a1e0f19c6749af20e174d8cb34625d5065fac0d8e83cf1d352` |
-| 7 | `lemma` | [gaussianDyadicProfile_contDiff](../../../../IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussiandyadicprofile-contdiff.md) | 66 | `result-track:39f49b02d909a3fbd3dfa6ab04581983205a055cc18b229ed2552a7e5c7625f9` |
-| 8 | `lemma` | [gaussianDyadicProfile_rootWeight](../../../../IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussiandyadicprofile-rootweight.md) | 98 | `result-track:61d02e5e1ab72d6047d4ee969a23a8ad053a9af602e4affc21af6ba06a72892e` |
-| 9 | `def` | [gaussianDyadicSchwartz](../../../../IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussiandyadicschwartz.md) | 107 | `declaration-track:c85b4b5f5861607d0eff53e8cf870c38971728912a909d13d11210f85853643a` |
-| 10 | `theorem` | [gaussianDyadicSchwartz_apply](../../../../IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussiandyadicschwartz-apply.md) | 110 | `result-track:d27ce6e95d8729dfa6e0c12a6a392da5f8d1b04a8cd65a027352d362801d9cbf` |
-| 11 | `theorem` | [gaussianDyadicSchwartz_rootWeight](../../../../IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussiandyadicschwartz-rootweight.md) | 113 | `result-track:06a64a7f260f0ee00deea9963f1bf1a8be2d79d190e262da50243df6dcb1b05c` |
+| 1 | `def` | [rootWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/rootweight.md) | 32 | `declaration-track:be510b7c69d5246459bee0eb7833e024b4738e0d2e2659e7e4a252bf84d5a1d9` |
+| 2 | `lemma` | [gaussianMellinProfile_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussianmellinprofile-real.md) | 34 | `result-track:e338fbc1c71fad29c173648e9c62b241caeba68b52286c1e2acf987c60c5edec` |
+| 3 | `def` | [gaussianDyadicProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussiandyadicprofile.md) | 46 | `declaration-track:f59156d0cbfa980ccd28bf17a5faf6acccaf6355bd260eec6d9ccf059ba7dbd8` |
+| 4 | `lemma` | [gaussianDyadicProfile_small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussiandyadicprofile-small.md) | 49 | `result-track:262b05a92e6cd08277adf9a200b1fb59ba1170716b6e0af611b591e1cef5e2cc` |
+| 5 | `lemma` | [gaussianDyadicProfile_large](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussiandyadicprofile-large.md) | 52 | `result-track:f9703e8d1e3c64b31e5360abe779080af8e716adeb988d9cb5ef403703d102ba` |
+| 6 | `lemma` | [gaussianDyadicProfile_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussiandyadicprofile-compact.md) | 56 | `result-track:1c3653d49096a5a1e0f19c6749af20e174d8cb34625d5065fac0d8e83cf1d352` |
+| 7 | `lemma` | [gaussianDyadicProfile_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussiandyadicprofile-contdiff.md) | 66 | `result-track:39f49b02d909a3fbd3dfa6ab04581983205a055cc18b229ed2552a7e5c7625f9` |
+| 8 | `lemma` | [gaussianDyadicProfile_rootWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussiandyadicprofile-rootweight.md) | 98 | `result-track:61d02e5e1ab72d6047d4ee969a23a8ad053a9af602e4affc21af6ba06a72892e` |
+| 9 | `def` | [gaussianDyadicSchwartz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussiandyadicschwartz.md) | 107 | `declaration-track:c85b4b5f5861607d0eff53e8cf870c38971728912a909d13d11210f85853643a` |
+| 10 | `theorem` | [gaussianDyadicSchwartz_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussiandyadicschwartz-apply.md) | 110 | `result-track:d27ce6e95d8729dfa6e0c12a6a392da5f8d1b04a8cd65a027352d362801d9cbf` |
+| 11 | `theorem` | [gaussianDyadicSchwartz_rootWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/declarations/gaussiandyadicschwartz-rootweight.md) | 113 | `result-track:06a64a7f260f0ee00deea9963f1bf1a8be2d79d190e262da50243df6dcb1b05c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

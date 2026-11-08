@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/LogarithmicGrowth.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/LogarithmicGrowth.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/LogarithmicGrowth.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/LogarithmicGrowth.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,8 +47,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathlib.Algebra.Ring.IsFormallyReal` — import line 1; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Analysis.AsymptoticAnalysis.SublinearDyadic`](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SublinearDyadic.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.Analysis.Inequalities.ResidualGrowthComparison`](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualGrowthComparison.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.AsymptoticAnalysis.SublinearDyadic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SublinearDyadic.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.Inequalities.ResidualGrowthComparison`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualGrowthComparison.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [constant_upperSublinear](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/LogarithmicGrowth.lean/declarations/constant-uppersublinear.md) | 14 | `result-track:cf081961ca05727e20d9c3a39de02331310bbf5ccfd88a249bceb9eee086611a` |
-| 2 | `theorem` | [scale_upperSublinear](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/LogarithmicGrowth.lean/declarations/scale-uppersublinear.md) | 20 | `result-track:f0dda959baffd97fb05e49dd6f83391aeb4a9cc8c948a9c08b0f7971b46d9b9b` |
-| 3 | `lemma` | [log_one_add_le_two_sqrt](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/LogarithmicGrowth.lean/declarations/log-one-add-le-two-sqrt.md) | 34 | `result-track:200538a9d0109078cb44f029d8d2a86331c100d5516c7835f5ad61112015a671` |
-| 4 | `theorem` | [log_one_add_nat_upperSublinear](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/LogarithmicGrowth.lean/declarations/log-one-add-nat-uppersublinear.md) | 46 | `result-track:749c91363e4e4bb756b673385ad2900eb7fa89c452e0fe449bf019cfa045d04e` |
-| 5 | `theorem` | [residual_growth_iff](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/LogarithmicGrowth.lean/declarations/residual-growth-iff.md) | 67 | `result-track:a8b96f751c49c0905c632abf9da5d084ba13197159b9819a4bd584f2de024858` |
-| 6 | `theorem` | [positive_floor_not_sublinear](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/LogarithmicGrowth.lean/declarations/positive-floor-not-sublinear.md) | 94 | `result-track:a3a3885f492e0287e7607a57beceac66b2e2e24a12917bf2be73ba6449050355` |
-| 7 | `theorem` | [finite_prefix_does_not_force_sublinear](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/LogarithmicGrowth.lean/declarations/finite-prefix-does-not-force-sublinear.md) | 103 | `result-track:92da57ade7204ce9eedd467b786e5fa9eb7225165b36a3256d5d48211ed03c1d` |
+| 1 | `theorem` | [constant_upperSublinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/LogarithmicGrowth.lean/declarations/constant-uppersublinear.md) | 14 | `result-track:cf081961ca05727e20d9c3a39de02331310bbf5ccfd88a249bceb9eee086611a` |
+| 2 | `theorem` | [scale_upperSublinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/LogarithmicGrowth.lean/declarations/scale-uppersublinear.md) | 20 | `result-track:f0dda959baffd97fb05e49dd6f83391aeb4a9cc8c948a9c08b0f7971b46d9b9b` |
+| 3 | `lemma` | [log_one_add_le_two_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/LogarithmicGrowth.lean/declarations/log-one-add-le-two-sqrt.md) | 34 | `result-track:200538a9d0109078cb44f029d8d2a86331c100d5516c7835f5ad61112015a671` |
+| 4 | `theorem` | [log_one_add_nat_upperSublinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/LogarithmicGrowth.lean/declarations/log-one-add-nat-uppersublinear.md) | 46 | `result-track:749c91363e4e4bb756b673385ad2900eb7fa89c452e0fe449bf019cfa045d04e` |
+| 5 | `theorem` | [residual_growth_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/LogarithmicGrowth.lean/declarations/residual-growth-iff.md) | 67 | `result-track:a8b96f751c49c0905c632abf9da5d084ba13197159b9819a4bd584f2de024858` |
+| 6 | `theorem` | [positive_floor_not_sublinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/LogarithmicGrowth.lean/declarations/positive-floor-not-sublinear.md) | 94 | `result-track:a3a3885f492e0287e7607a57beceac66b2e2e24a12917bf2be73ba6449050355` |
+| 7 | `theorem` | [finite_prefix_does_not_force_sublinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/LogarithmicGrowth.lean/declarations/finite-prefix-does-not-force-sublinear.md) | 103 | `result-track:92da57ade7204ce9eedd467b786e5fa9eb7225165b36a3256d5d48211ed03c1d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

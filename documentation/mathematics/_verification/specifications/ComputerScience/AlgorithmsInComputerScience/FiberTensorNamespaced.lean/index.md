@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FiberTensorNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FiberTensorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiberTensorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiberTensorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [FactorRole](../../../../../ComputerScience/AlgorithmsInComputerScience/FiberTensorNamespaced.lean/declarations/factorrole.md) | 13 | `declaration-track:3d7257006f97e24cdf0d98c60e050eecaea963290ec9a6285c889eb77bca536b` |
-| 2 | `structure` | [BinaryMatrixFactor](../../../../../ComputerScience/AlgorithmsInComputerScience/FiberTensorNamespaced.lean/declarations/binarymatrixfactor.md) | 24 | `declaration-track:604b2dbd9030fa85f4ad9cc1a578cb72a4e114f8611fe12e8cd30b9ef8fb24ef` |
-| 3 | `structure` | [FiberTensorSite](../../../../../ComputerScience/AlgorithmsInComputerScience/FiberTensorNamespaced.lean/declarations/fibertensorsite.md) | 31 | `declaration-track:d8d167cff18831165864dbac1fcb8272d1976ddd97e6a0cc5a478d97c4664c62` |
-| 4 | `structure` | [BinaryMatrixFiberTensor](../../../../../ComputerScience/AlgorithmsInComputerScience/FiberTensorNamespaced.lean/declarations/binarymatrixfibertensor.md) | 37 | `declaration-track:e82c7b73f040dba7ffbed462204e814dcca70d02d9481c0e51f1baecd582aac5` |
-| 5 | `theorem` | [binaryMatrixFiberTensor_shared_rows](../../../../../ComputerScience/AlgorithmsInComputerScience/FiberTensorNamespaced.lean/declarations/binarymatrixfibertensor-shared-rows.md) | 46 | `result-track:f5e808bf3b6d5991ca1b64db388758f7031b4b7bda960db3e03f48799e3fd493` |
-| 6 | `theorem` | [fiberTensor_boundary_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/FiberTensorNamespaced.lean/declarations/fibertensor-boundary-visible.md) | 51 | `result-track:597df2d1fe2bc943597a543b8dc770813b831940c2cc5f78e51ed8ff8a090e73` |
+| 1 | `inductive` | [FactorRole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiberTensorNamespaced.lean/declarations/factorrole.md) | 13 | `declaration-track:3d7257006f97e24cdf0d98c60e050eecaea963290ec9a6285c889eb77bca536b` |
+| 2 | `structure` | [BinaryMatrixFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiberTensorNamespaced.lean/declarations/binarymatrixfactor.md) | 24 | `declaration-track:604b2dbd9030fa85f4ad9cc1a578cb72a4e114f8611fe12e8cd30b9ef8fb24ef` |
+| 3 | `structure` | [FiberTensorSite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiberTensorNamespaced.lean/declarations/fibertensorsite.md) | 31 | `declaration-track:d8d167cff18831165864dbac1fcb8272d1976ddd97e6a0cc5a478d97c4664c62` |
+| 4 | `structure` | [BinaryMatrixFiberTensor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiberTensorNamespaced.lean/declarations/binarymatrixfibertensor.md) | 37 | `declaration-track:e82c7b73f040dba7ffbed462204e814dcca70d02d9481c0e51f1baecd582aac5` |
+| 5 | `theorem` | [binaryMatrixFiberTensor_shared_rows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiberTensorNamespaced.lean/declarations/binarymatrixfibertensor-shared-rows.md) | 46 | `result-track:f5e808bf3b6d5991ca1b64db388758f7031b4b7bda960db3e03f48799e3fd493` |
+| 6 | `theorem` | [fiberTensor_boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiberTensorNamespaced.lean/declarations/fibertensor-boundary-visible.md) | 51 | `result-track:597df2d1fe2bc943597a543b8dc770813b831940c2cc5f78e51ed8ff8a090e73` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonRadialAdjunctionRadius.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonRadialAdjunctionRadius.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonRadialAdjunctionRadius.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonRadialAdjunctionRadius.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialAdjunctionSource`](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionSource.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialAdjunctionSource`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionSource.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [euclidean_radius_source](../../../../AlgebraicTopology/SurfacePolygonRadialAdjunctionRadius.lean/declarations/euclidean-radius-source.md) | 29 | `result-track:9c6c60c3618cc40c6fab3cfc1c3ec56476c88de012b22b65ba02f421434ebf4e` |
-| 2 | `theorem` | [radius_agrees_with_filled_source](../../../../AlgebraicTopology/SurfacePolygonRadialAdjunctionRadius.lean/declarations/radius-agrees-with-filled-source.md) | 39 | `result-track:38f51e60f6fec209e986c85a1203401646fba9875b9a4886732a0193dfafe588` |
-| 3 | `theorem` | [apex_euclidean_radius_zero](../../../../AlgebraicTopology/SurfacePolygonRadialAdjunctionRadius.lean/declarations/apex-euclidean-radius-zero.md) | 49 | `result-track:48feaf5f2f3032305555b9a8f02038690c348b3a9add45c6097486b90f03a08d` |
-| 4 | `theorem` | [boundary_euclidean_radius_one](../../../../AlgebraicTopology/SurfacePolygonRadialAdjunctionRadius.lean/declarations/boundary-euclidean-radius-one.md) | 57 | `result-track:406790c5d67eaedbc6835ffae3865b338127139a1c7a54200b19cd4dd23725bc` |
+| 1 | `theorem` | [euclidean_radius_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonRadialAdjunctionRadius.lean/declarations/euclidean-radius-source.md) | 29 | `result-track:9c6c60c3618cc40c6fab3cfc1c3ec56476c88de012b22b65ba02f421434ebf4e` |
+| 2 | `theorem` | [radius_agrees_with_filled_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonRadialAdjunctionRadius.lean/declarations/radius-agrees-with-filled-source.md) | 39 | `result-track:38f51e60f6fec209e986c85a1203401646fba9875b9a4886732a0193dfafe588` |
+| 3 | `theorem` | [apex_euclidean_radius_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonRadialAdjunctionRadius.lean/declarations/apex-euclidean-radius-zero.md) | 49 | `result-track:48feaf5f2f3032305555b9a8f02038690c348b3a9add45c6097486b90f03a08d` |
+| 4 | `theorem` | [boundary_euclidean_radius_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonRadialAdjunctionRadius.lean/declarations/boundary-euclidean-radius-one.md) | 57 | `result-track:406790c5d67eaedbc6835ffae3865b338127139a1c7a54200b19cd4dd23725bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

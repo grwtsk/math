@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isBigOWith_id](../../../../FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigowith-id.md) | 35 | `result-track:a3e9bbc3d81c256cb9d1e605eafece25a76effb8c2fac9da5c70a2069561dafc` |
-| 2 | `theorem` | [isBigO_id](../../../../FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigo-id.md) | 38 | `result-track:ec429953ec6ff17dc1023c005363f3ac1478e933839bd0e522e177a11a448ebf` |
-| 3 | `theorem` | [isBigOWith_comp](../../../../FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigowith-comp.md) | 41 | `result-track:5c8e6eefbcc00b7cbd5e17b93be12824bceeedfdc56477f7f3fe2fbd828fc4d2` |
-| 4 | `theorem` | [isBigO_comp](../../../../FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigo-comp.md) | 45 | `result-track:7e4fd47c84a2715bc8a475b3029374d21ca1e0e66f6c9e8d0b857c29dc1bd3ca` |
-| 5 | `theorem` | [isBigOWith_sub](../../../../FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigowith-sub.md) | 49 | `result-track:aba15eb927318105bf802f145091545c239b0efa019081bfc8c05f85e15e2112` |
-| 6 | `theorem` | [isBigO_sub](../../../../FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigo-sub.md) | 53 | `result-track:3c19fc5bc3abc0f5fc7bb2a6bdcfb00c4e90289abbdea22f411c68106129c3dc` |
-| 7 | `theorem` | [isBigO_comp](../../../../FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigo-comp-source-edition-2.md) | 67 | `result-track:7fb129ce930104b4cf91b4b08714c329fc7856b9763ddd5afd71004fc2cda29f` |
-| 8 | `theorem` | [isBigO_sub](../../../../FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigo-sub-source-edition-2.md) | 70 | `result-track:8347d09edd6f4d652c726b8c7744ca1a2641c64094e5ac6ee35032ec717b6f07` |
-| 9 | `theorem` | [isBigO_comp_rev](../../../../FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigo-comp-rev.md) | 79 | `result-track:6d9f97da417b0fb7683e7fd0043e58a4f3618b42f35927f95d8e875f67468f16` |
-| 10 | `theorem` | [isBigO_sub_rev](../../../../FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigo-sub-rev.md) | 82 | `result-track:14f8415e69c84f5d2ce81bab2dca3e81f7803d449896ca1fa82047eb2cb6115e` |
+| 1 | `theorem` | [isBigOWith_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigowith-id.md) | 35 | `result-track:a3e9bbc3d81c256cb9d1e605eafece25a76effb8c2fac9da5c70a2069561dafc` |
+| 2 | `theorem` | [isBigO_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigo-id.md) | 38 | `result-track:ec429953ec6ff17dc1023c005363f3ac1478e933839bd0e522e177a11a448ebf` |
+| 3 | `theorem` | [isBigOWith_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigowith-comp.md) | 41 | `result-track:5c8e6eefbcc00b7cbd5e17b93be12824bceeedfdc56477f7f3fe2fbd828fc4d2` |
+| 4 | `theorem` | [isBigO_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigo-comp.md) | 45 | `result-track:7e4fd47c84a2715bc8a475b3029374d21ca1e0e66f6c9e8d0b857c29dc1bd3ca` |
+| 5 | `theorem` | [isBigOWith_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigowith-sub.md) | 49 | `result-track:aba15eb927318105bf802f145091545c239b0efa019081bfc8c05f85e15e2112` |
+| 6 | `theorem` | [isBigO_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigo-sub.md) | 53 | `result-track:3c19fc5bc3abc0f5fc7bb2a6bdcfb00c4e90289abbdea22f411c68106129c3dc` |
+| 7 | `theorem` | [isBigO_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigo-comp-source-edition-2.md) | 67 | `result-track:7fb129ce930104b4cf91b4b08714c329fc7856b9763ddd5afd71004fc2cda29f` |
+| 8 | `theorem` | [isBigO_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigo-sub-source-edition-2.md) | 70 | `result-track:8347d09edd6f4d652c726b8c7744ca1a2641c64094e5ac6ee35032ec717b6f07` |
+| 9 | `theorem` | [isBigO_comp_rev](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigo-comp-rev.md) | 79 | `result-track:6d9f97da417b0fb7683e7fd0043e58a4f3618b42f35927f95d8e875f67468f16` |
+| 10 | `theorem` | [isBigO_sub_rev](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OperatorNormAsymptoticsNamespaced.lean/declarations/isbigo-sub-rev.md) | 82 | `result-track:14f8415e69c84f5d2ce81bab2dca3e81f7803d449896ca1fa82047eb2cb6115e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactContraction.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactContraction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactContraction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactContraction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [SourceFamily](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactContraction.lean/declarations/sourcefamily.md) | 8 | `declaration-track:bec0f8789e2e43786c6db09651064b8e59a5d64bb2560ebfc7baa4fd750fd2c7` |
-| 2 | `inductive` | [CompactModule](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactContraction.lean/declarations/compactmodule.md) | 27 | `declaration-track:026ba6ec8c66cc55b1265e32d91ed5d2d3629967f9552d772f6f5e84730ddf6e` |
-| 3 | `def` | [contractsTo](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactContraction.lean/declarations/contractsto.md) | 46 | `declaration-track:34f3238785771a52ee5580403d3bed59a8472ee7712dacbb9be24c407d3b3207` |
-| 4 | `def` | [allSourceFamilies](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactContraction.lean/declarations/allsourcefamilies.md) | 64 | `declaration-track:4a848060e18db2e901f276006e8a4a5496ee238bdf559de0ca2081a36d1a8016` |
-| 5 | `theorem` | [allSourceFamilies_length](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactContraction.lean/declarations/allsourcefamilies-length.md) | 83 | `result-track:61b323757c9914c029df96a147b345c2e36b6660beb8d3c748e617acb8a939ed` |
-| 6 | `theorem` | [every_source_family_contracts](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactContraction.lean/declarations/every-source-family-contracts.md) | 87 | `result-track:b542b1b14afd935fc87be8ddf42d44c2971be7ec749c12a6ab79f8826688ff90` |
+| 1 | `inductive` | [SourceFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactContraction.lean/declarations/sourcefamily.md) | 8 | `declaration-track:bec0f8789e2e43786c6db09651064b8e59a5d64bb2560ebfc7baa4fd750fd2c7` |
+| 2 | `inductive` | [CompactModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactContraction.lean/declarations/compactmodule.md) | 27 | `declaration-track:026ba6ec8c66cc55b1265e32d91ed5d2d3629967f9552d772f6f5e84730ddf6e` |
+| 3 | `def` | [contractsTo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactContraction.lean/declarations/contractsto.md) | 46 | `declaration-track:34f3238785771a52ee5580403d3bed59a8472ee7712dacbb9be24c407d3b3207` |
+| 4 | `def` | [allSourceFamilies](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactContraction.lean/declarations/allsourcefamilies.md) | 64 | `declaration-track:4a848060e18db2e901f276006e8a4a5496ee238bdf559de0ca2081a36d1a8016` |
+| 5 | `theorem` | [allSourceFamilies_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactContraction.lean/declarations/allsourcefamilies-length.md) | 83 | `result-track:61b323757c9914c029df96a147b345c2e36b6660beb8d3c748e617acb8a939ed` |
+| 6 | `theorem` | [every_source_family_contracts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactContraction.lean/declarations/every-source-family-contracts.md) | 87 | `result-track:b542b1b14afd935fc87be8ddf42d44c2971be7ec749c12a6ab79f8826688ff90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

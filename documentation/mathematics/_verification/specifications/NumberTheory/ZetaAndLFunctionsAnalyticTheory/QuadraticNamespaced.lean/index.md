@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Uform](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticNamespaced.lean/declarations/uform.md) | 35 | `declaration-track:dbc6f70730c365ed92c687891b5e87c24db5c8000c06ffda343112cb36b84e4d` |
-| 2 | `lemma` | [sum_erase_comm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticNamespaced.lean/declarations/sum-erase-comm.md) | 40 | `result-track:db80654969db13cec578ed97aa6c7e0ef4cd22dcc6a70368b34d27ef518515c7` |
-| 3 | `lemma` | [sum_erase_erase_comm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticNamespaced.lean/declarations/sum-erase-erase-comm.md) | 48 | `result-track:79c89183a1ab0193dbd0aa4084cf32b4d5cf42f7a6a2ea2d9f8a5d5679e3f275` |
-| 4 | `theorem` | [Uform_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticNamespaced.lean/declarations/uform-le.md) | 62 | `result-track:0eb5cdf9816d64c55d963c98f0541fbf93929662e62b3a52f5ffa94d244102e5` |
+| 1 | `def` | [Uform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticNamespaced.lean/declarations/uform.md) | 35 | `declaration-track:dbc6f70730c365ed92c687891b5e87c24db5c8000c06ffda343112cb36b84e4d` |
+| 2 | `lemma` | [sum_erase_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticNamespaced.lean/declarations/sum-erase-comm.md) | 40 | `result-track:db80654969db13cec578ed97aa6c7e0ef4cd22dcc6a70368b34d27ef518515c7` |
+| 3 | `lemma` | [sum_erase_erase_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticNamespaced.lean/declarations/sum-erase-erase-comm.md) | 48 | `result-track:79c89183a1ab0193dbd0aa4084cf32b4d5cf42f7a6a2ea2d9f8a5d5679e3f275` |
+| 4 | `theorem` | [Uform_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticNamespaced.lean/declarations/uform-le.md) | 62 | `result-track:0eb5cdf9816d64c55d963c98f0541fbf93929662e62b3a52f5ffa94d244102e5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

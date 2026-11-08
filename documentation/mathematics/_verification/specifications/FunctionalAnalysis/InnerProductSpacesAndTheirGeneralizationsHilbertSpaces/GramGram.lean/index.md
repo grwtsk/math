@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GramGram.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GramGram.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GramGram.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GramGram.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [gram](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GramGram.lean/declarations/gram.md) | 15 | `declaration-track:2ec7ec7152ec73b14d5b96d08610dd3c4d599f0c8f9d5b6ff81c2f954cedc931` |
-| 2 | `theorem` | [gram_equality_of_unitary_transport](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GramGram.lean/declarations/gram-equality-of-unitary-transport.md) | 18 | `result-track:3e908af6ff5a8e61c18d0cab97831a7dbbcfb13478a7cc47ece4c38fe484a912` |
+| 1 | `def` | [gram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GramGram.lean/declarations/gram.md) | 15 | `declaration-track:2ec7ec7152ec73b14d5b96d08610dd3c4d599f0c8f9d5b6ff81c2f954cedc931` |
+| 2 | `theorem` | [gram_equality_of_unitary_transport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GramGram.lean/declarations/gram-equality-of-unitary-transport.md) | 18 | `result-track:3e908af6ff5a8e61c18d0cab97831a7dbbcfb13478a7cc47ece4c38fe484a912` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

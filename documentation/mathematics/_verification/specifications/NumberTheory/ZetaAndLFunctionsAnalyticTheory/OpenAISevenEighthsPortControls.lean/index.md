@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.OpenAISevenEighthsPort`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/OpenAISevenEighthsPort.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.OpenAISevenEighthsPort`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/OpenAISevenEighthsPort.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [challenge_source_separation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/declarations/challenge-source-separation.md) | 23 | `result-track:601511842486ca8ee6e2bb1edc099e34ef8afd1578f60d2c69234412c38c0c43` |
-| 2 | `theorem` | [comparator_config_is_not_replay_receipt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/declarations/comparator-config-is-not-replay-receipt.md) | 30 | `result-track:ea3e1f8113c4dee84ec199ea623ee6a346446e544e96054eecc7c5826781c88d` |
-| 3 | `theorem` | [solution_body_is_not_dependency_review](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/declarations/solution-body-is-not-dependency-review.md) | 37 | `result-track:882d9f1b0fcd6fde7e2c08b4392ff04a3c4478a8dac18fbd6196f8c0e32d51b6` |
-| 4 | `theorem` | [statement_alignment_is_not_admission](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/declarations/statement-alignment-is-not-admission.md) | 43 | `result-track:fddbd12ed99f6c52fd702bc42f0a405d223cc7b6f5b1ec7eff5741f6bcd966a1` |
-| 5 | `theorem` | [source_and_local_environments_differ](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/declarations/source-and-local-environments-differ.md) | 52 | `result-track:817483e4d4f43b0c5d58e155176655b851840f65a14178dae1a3cd58d214bc4e` |
-| 6 | `theorem` | [sevenEighths_not_at_or_left_of_half](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/declarations/seveneighths-not-at-or-left-of-half.md) | 62 | `result-track:2ccabb6956039073f6fe4f3a3f0caa223fb483639f69efed09dfa6519dcf7ed6` |
-| 7 | `theorem` | [accepted_port_regional_consequence](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/declarations/accepted-port-regional-consequence.md) | 68 | `result-track:fe8aa6f69a6fcf3fdf8d316c1057a5533d122329bf180eb22f19f01735032782` |
-| 8 | `theorem` | [located_review_remains_blocked](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/declarations/located-review-remains-blocked.md) | 76 | `result-track:869f7786ea16ac8d643db49a8a0efa19ff7646f6adae5c7f2bfb4da2b36036e0` |
+| 1 | `theorem` | [challenge_source_separation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/declarations/challenge-source-separation.md) | 23 | `result-track:601511842486ca8ee6e2bb1edc099e34ef8afd1578f60d2c69234412c38c0c43` |
+| 2 | `theorem` | [comparator_config_is_not_replay_receipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/declarations/comparator-config-is-not-replay-receipt.md) | 30 | `result-track:ea3e1f8113c4dee84ec199ea623ee6a346446e544e96054eecc7c5826781c88d` |
+| 3 | `theorem` | [solution_body_is_not_dependency_review](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/declarations/solution-body-is-not-dependency-review.md) | 37 | `result-track:882d9f1b0fcd6fde7e2c08b4392ff04a3c4478a8dac18fbd6196f8c0e32d51b6` |
+| 4 | `theorem` | [statement_alignment_is_not_admission](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/declarations/statement-alignment-is-not-admission.md) | 43 | `result-track:fddbd12ed99f6c52fd702bc42f0a405d223cc7b6f5b1ec7eff5741f6bcd966a1` |
+| 5 | `theorem` | [source_and_local_environments_differ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/declarations/source-and-local-environments-differ.md) | 52 | `result-track:817483e4d4f43b0c5d58e155176655b851840f65a14178dae1a3cd58d214bc4e` |
+| 6 | `theorem` | [sevenEighths_not_at_or_left_of_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/declarations/seveneighths-not-at-or-left-of-half.md) | 62 | `result-track:2ccabb6956039073f6fe4f3a3f0caa223fb483639f69efed09dfa6519dcf7ed6` |
+| 7 | `theorem` | [accepted_port_regional_consequence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/declarations/accepted-port-regional-consequence.md) | 68 | `result-track:fe8aa6f69a6fcf3fdf8d316c1057a5533d122329bf180eb22f19f01735032782` |
+| 8 | `theorem` | [located_review_remains_blocked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/OpenAISevenEighthsPortControls.lean/declarations/located-review-remains-blocked.md) | 76 | `result-track:869f7786ea16ac8d643db49a8a0efa19ff7646f6adae5c7f2bfb4da2b36036e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

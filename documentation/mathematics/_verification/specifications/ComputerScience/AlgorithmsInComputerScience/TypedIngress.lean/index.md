@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TypedIngressPayload](../../../../../ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/declarations/typedingresspayload.md) | 16 | `declaration-track:4f1e149c3cc8cc18c3402c43306c77c464922efed0cf42198e2c8524567298f1` |
-| 2 | `def` | [TypedIngressPayload.artifactId](../../../../../ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/declarations/typedingresspayload-artifactid.md) | 20 | `declaration-track:8bf1e6f152af9af5f50aa857a832203856780661a0ff28c5e583f2c6b4465ba3` |
-| 3 | `inductive` | [LayerDisposition](../../../../../ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/declarations/layerdisposition.md) | 24 | `declaration-track:3e27f3aad770377bc28c2024b3921179d868054adfe8cf48bfb73c2ca197e42d` |
-| 4 | `structure` | [LayerIngressReceipt](../../../../../ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/declarations/layeringressreceipt.md) | 32 | `declaration-track:9634782143eeacf0333dd67f584b512035f30808ac752f2670cc649513859f58` |
-| 5 | `structure` | [TypedIngressEntry](../../../../../ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/declarations/typedingressentry.md) | 39 | `declaration-track:7d8811925c98a649bdadc1c09a9d60dfc953d54be7a1ea29e5a676518b2c6d05` |
-| 6 | `structure` | [TypedIngressGate](../../../../../ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/declarations/typedingressgate.md) | 46 | `declaration-track:89c5625003acad5917140d524396f7d1cf07251ff1ce21e9e3c5966206953ab8` |
-| 7 | `theorem` | [entry_exists](../../../../../ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/declarations/entry-exists.md) | 66 | `result-track:2bf4522d4394b875e6266934aad042a919fa4e7f3cb392681783ea27c8d164cd` |
-| 8 | `theorem` | [layer_disposition_exists](../../../../../ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/declarations/layer-disposition-exists.md) | 75 | `result-track:bcf2ff866be49d4fcc6250fac27d094c784a3142ccbbe34aee7c41059b8bf9bb` |
+| 1 | `inductive` | [TypedIngressPayload](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/declarations/typedingresspayload.md) | 16 | `declaration-track:4f1e149c3cc8cc18c3402c43306c77c464922efed0cf42198e2c8524567298f1` |
+| 2 | `def` | [TypedIngressPayload.artifactId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/declarations/typedingresspayload-artifactid.md) | 20 | `declaration-track:8bf1e6f152af9af5f50aa857a832203856780661a0ff28c5e583f2c6b4465ba3` |
+| 3 | `inductive` | [LayerDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/declarations/layerdisposition.md) | 24 | `declaration-track:3e27f3aad770377bc28c2024b3921179d868054adfe8cf48bfb73c2ca197e42d` |
+| 4 | `structure` | [LayerIngressReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/declarations/layeringressreceipt.md) | 32 | `declaration-track:9634782143eeacf0333dd67f584b512035f30808ac752f2670cc649513859f58` |
+| 5 | `structure` | [TypedIngressEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/declarations/typedingressentry.md) | 39 | `declaration-track:7d8811925c98a649bdadc1c09a9d60dfc953d54be7a1ea29e5a676518b2c6d05` |
+| 6 | `structure` | [TypedIngressGate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/declarations/typedingressgate.md) | 46 | `declaration-track:89c5625003acad5917140d524396f7d1cf07251ff1ce21e9e3c5966206953ab8` |
+| 7 | `theorem` | [entry_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/declarations/entry-exists.md) | 66 | `result-track:2bf4522d4394b875e6266934aad042a919fa4e7f3cb392681783ea27c8d164cd` |
+| 8 | `theorem` | [layer_disposition_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TypedIngress.lean/declarations/layer-disposition-exists.md) | 75 | `result-track:bcf2ff866be49d4fcc6250fac27d094c784a3142ccbbe34aee7c41059b8bf9bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

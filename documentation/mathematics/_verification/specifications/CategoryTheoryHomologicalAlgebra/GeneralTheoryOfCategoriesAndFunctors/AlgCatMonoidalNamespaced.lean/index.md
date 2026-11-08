@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatMonoidalNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatMonoidalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatMonoidalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatMonoidalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [tensorObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatMonoidalNamespaced.lean/declarations/tensorobj.md) | 41 | `declaration-track:2a57357e8662dde74ef5caebf48805843cac4397da48ff4d3dde6845a3145b09` |
-| 2 | `abbrev` | [tensorHom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatMonoidalNamespaced.lean/declarations/tensorhom.md) | 46 | `declaration-track:faf56623249237590d15ded40865212b491cb43536e3cb5c190c702fcdfaeef3` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatMonoidalNamespaced.lean/declarations/instance.md) | 56 | `declaration-track:42fb5cca73d529966fc6a3b85b859302d5fd36698512c63f98e2430881e63805` |
-| 4 | `instance` | [instMonoidalCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatMonoidalNamespaced.lean/declarations/instmonoidalcategory.md) | 66 | `declaration-track:3aa6b2767cc5a75fb39645a6df4153b1c50dca788785c66403b351c29575963b` |
-| 5 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatMonoidalNamespaced.lean/declarations/example.md) | 77 | `declaration-track:d2b98654520c84f151ad2f953502c5203e42305e19d7a8100a549961986f5de2` |
+| 1 | `abbrev` | [tensorObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatMonoidalNamespaced.lean/declarations/tensorobj.md) | 41 | `declaration-track:2a57357e8662dde74ef5caebf48805843cac4397da48ff4d3dde6845a3145b09` |
+| 2 | `abbrev` | [tensorHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatMonoidalNamespaced.lean/declarations/tensorhom.md) | 46 | `declaration-track:faf56623249237590d15ded40865212b491cb43536e3cb5c190c702fcdfaeef3` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatMonoidalNamespaced.lean/declarations/instance.md) | 56 | `declaration-track:42fb5cca73d529966fc6a3b85b859302d5fd36698512c63f98e2430881e63805` |
+| 4 | `instance` | [instMonoidalCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatMonoidalNamespaced.lean/declarations/instmonoidalcategory.md) | 66 | `declaration-track:3aa6b2767cc5a75fb39645a6df4153b1c50dca788785c66403b351c29575963b` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AlgCatMonoidalNamespaced.lean/declarations/example.md) | 77 | `declaration-track:d2b98654520c84f151ad2f953502c5203e42305e19d7a8100a549961986f5de2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

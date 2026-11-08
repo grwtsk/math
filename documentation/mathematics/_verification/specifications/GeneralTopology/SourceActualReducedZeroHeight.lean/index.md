@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SourceActualReducedZeroHeight.lean/index.md) · [Full source](../../../../GeneralTopology/SourceActualReducedZeroHeight.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualReducedZeroHeight.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualReducedZeroHeight.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualReducedZeroHeight](../../../../GeneralTopology/SourceActualReducedZeroHeight.lean/declarations/actualreducedzeroheight.md) | 23 | `declaration-track:0c8ab4d353d8e82d504e34ead4bdbb245a5a2b71f88109ade6108c89af6f0779` |
-| 2 | `def` | [actualReducedZeroEnvelope](../../../../GeneralTopology/SourceActualReducedZeroHeight.lean/declarations/actualreducedzeroenvelope.md) | 26 | `declaration-track:dbe8e21ebea33bed55a366bd9ca9c231c425507f9fc11cad611893e1424a9f62` |
-| 3 | `theorem` | [actualReducedZeroHeight_ge_four](../../../../GeneralTopology/SourceActualReducedZeroHeight.lean/declarations/actualreducedzeroheight-ge-four.md) | 30 | `result-track:d58a5a1efd8e6f1ffa70503cafcefd66d7837bb4b52eb466da9813c7b843f0b0` |
-| 4 | `theorem` | [actualReducedZeroTail_norm_bound](../../../../GeneralTopology/SourceActualReducedZeroHeight.lean/declarations/actualreducedzerotail-norm-bound.md) | 40 | `result-track:02097eb619186d1374ea66129d9167c2006d6ca02e09459be0ac2f13aa8a60a8` |
-| 5 | `theorem` | [actualReducedZeroTail_tendsto_zero](../../../../GeneralTopology/SourceActualReducedZeroHeight.lean/declarations/actualreducedzerotail-tendsto-zero.md) | 76 | `result-track:c8dd49fc1ce29ebab7ee451cd328283cdfc73db378643f7c733cb33ee060a7df` |
-| 6 | `theorem` | [actualSourceQuadraticValue_sub_reducedHead](../../../../GeneralTopology/SourceActualReducedZeroHeight.lean/declarations/actualsourcequadraticvalue-sub-reducedhead.md) | 92 | `result-track:fd7512305bfd322fd09ea7fdef84fdd848f16a59c1c5ed7ba1c53cbdd8928d04` |
-| 7 | `theorem` | [actualResidual_reducedHead_signed_error_bound](../../../../GeneralTopology/SourceActualReducedZeroHeight.lean/declarations/actualresidual-reducedhead-signed-error-bound.md) | 101 | `result-track:4bea6e345e05f5cee0eb63d058ceb3bba86c02f2e03266af58bc99c25ef3624f` |
-| 8 | `theorem` | [actualResidual_reducedHead_signed_error_tendsto](../../../../GeneralTopology/SourceActualReducedZeroHeight.lean/declarations/actualresidual-reducedhead-signed-error-tendsto.md) | 123 | `result-track:a69f16bf1ec3e55b903ba1956b7d019ffcadddc0802359e9aad8deade5e01c97` |
-| 9 | `theorem` | [actualResidual_reducedOffAxisHead_upper](../../../../GeneralTopology/SourceActualReducedZeroHeight.lean/declarations/actualresidual-reducedoffaxishead-upper.md) | 138 | `result-track:13cbaacc8b4c76360dd26607fd40e5f31d8de0fc85f76e53575b55b8ec94eed1` |
+| 1 | `def` | [actualReducedZeroHeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualReducedZeroHeight.lean/declarations/actualreducedzeroheight.md) | 23 | `declaration-track:0c8ab4d353d8e82d504e34ead4bdbb245a5a2b71f88109ade6108c89af6f0779` |
+| 2 | `def` | [actualReducedZeroEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualReducedZeroHeight.lean/declarations/actualreducedzeroenvelope.md) | 26 | `declaration-track:dbe8e21ebea33bed55a366bd9ca9c231c425507f9fc11cad611893e1424a9f62` |
+| 3 | `theorem` | [actualReducedZeroHeight_ge_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualReducedZeroHeight.lean/declarations/actualreducedzeroheight-ge-four.md) | 30 | `result-track:d58a5a1efd8e6f1ffa70503cafcefd66d7837bb4b52eb466da9813c7b843f0b0` |
+| 4 | `theorem` | [actualReducedZeroTail_norm_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualReducedZeroHeight.lean/declarations/actualreducedzerotail-norm-bound.md) | 40 | `result-track:02097eb619186d1374ea66129d9167c2006d6ca02e09459be0ac2f13aa8a60a8` |
+| 5 | `theorem` | [actualReducedZeroTail_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualReducedZeroHeight.lean/declarations/actualreducedzerotail-tendsto-zero.md) | 76 | `result-track:c8dd49fc1ce29ebab7ee451cd328283cdfc73db378643f7c733cb33ee060a7df` |
+| 6 | `theorem` | [actualSourceQuadraticValue_sub_reducedHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualReducedZeroHeight.lean/declarations/actualsourcequadraticvalue-sub-reducedhead.md) | 92 | `result-track:fd7512305bfd322fd09ea7fdef84fdd848f16a59c1c5ed7ba1c53cbdd8928d04` |
+| 7 | `theorem` | [actualResidual_reducedHead_signed_error_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualReducedZeroHeight.lean/declarations/actualresidual-reducedhead-signed-error-bound.md) | 101 | `result-track:4bea6e345e05f5cee0eb63d058ceb3bba86c02f2e03266af58bc99c25ef3624f` |
+| 8 | `theorem` | [actualResidual_reducedHead_signed_error_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualReducedZeroHeight.lean/declarations/actualresidual-reducedhead-signed-error-tendsto.md) | 123 | `result-track:a69f16bf1ec3e55b903ba1956b7d019ffcadddc0802359e9aad8deade5e01c97` |
+| 9 | `theorem` | [actualResidual_reducedOffAxisHead_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualReducedZeroHeight.lean/declarations/actualresidual-reducedoffaxishead-upper.md) | 138 | `result-track:13cbaacc8b4c76360dd26607fd40e5f31d8de0fc85f76e53575b55b8ec94eed1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

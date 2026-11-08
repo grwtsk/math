@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ElabTacticBasicNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ElabTacticBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ElabTacticBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ElabTacticBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [getMainTarget''](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ElabTacticBasicNamespaced.lean/declarations/getmaintarget.md) | 26 | `declaration-track:c979b06c02f7190f4d72cdbca28b90dc3d293e77169a4ed302e06b199cf334f0` |
-| 2 | `def` | [doneWithScope](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ElabTacticBasicNamespaced.lean/declarations/donewithscope.md) | 33 | `declaration-track:7b640e982a791eb9a55b54e314ed8e4dcb44ae3aad9610fbd66ea803bd88aa31` |
-| 3 | `def` | [focusAndDoneWithScope](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ElabTacticBasicNamespaced.lean/declarations/focusanddonewithscope.md) | 44 | `declaration-track:a5d54a1c395ab9102449e9d243014d9a842ec3fdd12e2604648ecd22af7df58c` |
+| 1 | `def` | [getMainTarget''](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ElabTacticBasicNamespaced.lean/declarations/getmaintarget.md) | 26 | `declaration-track:c979b06c02f7190f4d72cdbca28b90dc3d293e77169a4ed302e06b199cf334f0` |
+| 2 | `def` | [doneWithScope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ElabTacticBasicNamespaced.lean/declarations/donewithscope.md) | 33 | `declaration-track:7b640e982a791eb9a55b54e314ed8e4dcb44ae3aad9610fbd66ea803bd88aa31` |
+| 3 | `def` | [focusAndDoneWithScope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ElabTacticBasicNamespaced.lean/declarations/focusanddonewithscope.md) | 44 | `declaration-track:a5d54a1c395ab9102449e9d243014d9a842ec3fdd12e2604648ecd22af7df58c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

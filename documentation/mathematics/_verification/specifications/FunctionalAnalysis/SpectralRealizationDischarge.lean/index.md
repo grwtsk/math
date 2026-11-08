@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectralRealizationDischarge.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralRealizationDischarge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationDischarge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationDischarge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [operator_model_in_spectral_realization_discharge_checklist](../../../../FunctionalAnalysis/SpectralRealizationDischarge.lean/declarations/operator-model-in-spectral-realization-discharge-checklist.md) | 20 | `result-track:ab4d60bd47daa463f00890a7eba447c378a242324ec1052475f44b4d320ac6da` |
-| 2 | `theorem` | [spectral_point_space_in_spectral_realization_discharge_checklist](../../../../FunctionalAnalysis/SpectralRealizationDischarge.lean/declarations/spectral-point-space-in-spectral-realization-discharge-checklist.md) | 25 | `result-track:2110469b690fbf20be29892ce751cfe87b2ae4c5b23bc16e97ae7172f577d883` |
-| 3 | `theorem` | [spectral_parameter_map_in_spectral_realization_discharge_checklist](../../../../FunctionalAnalysis/SpectralRealizationDischarge.lean/declarations/spectral-parameter-map-in-spectral-realization-discharge-checklist.md) | 30 | `result-track:fa072b3ade97be43cadc97f2c3a8e5d2e5a277eefb33240e6fcd91de70746eaf` |
-| 4 | `theorem` | [every_h0_zero_represented_in_spectral_realization_discharge_checklist](../../../../FunctionalAnalysis/SpectralRealizationDischarge.lean/declarations/every-h0-zero-represented-in-spectral-realization-discharge-checklist.md) | 35 | `result-track:ba84d2d29ede34df3d6edc0b0b6d29d457ce2e806e1bdc6fb2f159309fc9a742` |
-| 5 | `theorem` | [parameter_preservation_in_spectral_realization_discharge_checklist](../../../../FunctionalAnalysis/SpectralRealizationDischarge.lean/declarations/parameter-preservation-in-spectral-realization-discharge-checklist.md) | 40 | `result-track:49f21c5106897428db0a60bbeafa4e0ea441c4a4827282f035cfe8d9cb3dd63c` |
-| 6 | `theorem` | [noncircularity_audit_in_spectral_realization_discharge_checklist](../../../../FunctionalAnalysis/SpectralRealizationDischarge.lean/declarations/noncircularity-audit-in-spectral-realization-discharge-checklist.md) | 45 | `result-track:33f20b21bed3421ea2441cc145e99ed12dee899830ac295c5f5495ffcc160bc1` |
+| 1 | `theorem` | [operator_model_in_spectral_realization_discharge_checklist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationDischarge.lean/declarations/operator-model-in-spectral-realization-discharge-checklist.md) | 20 | `result-track:ab4d60bd47daa463f00890a7eba447c378a242324ec1052475f44b4d320ac6da` |
+| 2 | `theorem` | [spectral_point_space_in_spectral_realization_discharge_checklist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationDischarge.lean/declarations/spectral-point-space-in-spectral-realization-discharge-checklist.md) | 25 | `result-track:2110469b690fbf20be29892ce751cfe87b2ae4c5b23bc16e97ae7172f577d883` |
+| 3 | `theorem` | [spectral_parameter_map_in_spectral_realization_discharge_checklist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationDischarge.lean/declarations/spectral-parameter-map-in-spectral-realization-discharge-checklist.md) | 30 | `result-track:fa072b3ade97be43cadc97f2c3a8e5d2e5a277eefb33240e6fcd91de70746eaf` |
+| 4 | `theorem` | [every_h0_zero_represented_in_spectral_realization_discharge_checklist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationDischarge.lean/declarations/every-h0-zero-represented-in-spectral-realization-discharge-checklist.md) | 35 | `result-track:ba84d2d29ede34df3d6edc0b0b6d29d457ce2e806e1bdc6fb2f159309fc9a742` |
+| 5 | `theorem` | [parameter_preservation_in_spectral_realization_discharge_checklist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationDischarge.lean/declarations/parameter-preservation-in-spectral-realization-discharge-checklist.md) | 40 | `result-track:49f21c5106897428db0a60bbeafa4e0ea441c4a4827282f035cfe8d9cb3dd63c` |
+| 6 | `theorem` | [noncircularity_audit_in_spectral_realization_discharge_checklist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralRealizationDischarge.lean/declarations/noncircularity-audit-in-spectral-realization-discharge-checklist.md) | 45 | `result-track:33f20b21bed3421ea2441cc145e99ed12dee899830ac295c5f5495ffcc160bc1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

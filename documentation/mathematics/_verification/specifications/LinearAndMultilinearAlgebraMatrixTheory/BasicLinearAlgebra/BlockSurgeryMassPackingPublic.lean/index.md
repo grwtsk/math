@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockSurgeryMassPackingPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockSurgeryMassPackingPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockSurgeryMassPackingPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockSurgeryMassPackingPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [TypeIIBlockSurgery.coefficientPartition](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockSurgeryMassPackingPublic.lean/declarations/typeiiblocksurgery-coefficientpartition.md) | 23 | `declaration-track:e7419459651309cbdcd977e701b5dba978fad8ea3c5c77cc74347c802f9d275f` |
-| 2 | `theorem` | [TypeIIBlockSurgery.child_mass_sum_le_parent_mass](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockSurgeryMassPackingPublic.lean/declarations/typeiiblocksurgery-child-mass-sum-le-parent-mass.md) | 36 | `result-track:9ffb07aae88344854777dbf91781baaf24803c3370647fd23ee61563b23f5dc8` |
+| 1 | `def` | [TypeIIBlockSurgery.coefficientPartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockSurgeryMassPackingPublic.lean/declarations/typeiiblocksurgery-coefficientpartition.md) | 23 | `declaration-track:e7419459651309cbdcd977e701b5dba978fad8ea3c5c77cc74347c802f9d275f` |
+| 2 | `theorem` | [TypeIIBlockSurgery.child_mass_sum_le_parent_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockSurgeryMassPackingPublic.lean/declarations/typeiiblocksurgery-child-mass-sum-le-parent-mass.md) | 36 | `result-track:9ffb07aae88344854777dbf91781baaf24803c3370647fd23ee61563b23f5dc8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

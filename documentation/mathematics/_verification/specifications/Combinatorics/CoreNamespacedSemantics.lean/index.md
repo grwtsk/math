@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CoreNamespacedSemantics.lean/index.md) · [Full source](../../../../Combinatorics/CoreNamespacedSemantics.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedSemantics.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedSemantics.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Semantics](../../../../Combinatorics/CoreNamespacedSemantics.lean/declarations/semantics.md) | 23 | `declaration-track:b035617370397f64ef0a6e760cf59004300df3c9d7ecf6763064559ad29db44c` |
-| 2 | `def` | [Semantics.SatisfiesAll](../../../../Combinatorics/CoreNamespacedSemantics.lean/declarations/semantics-satisfiesall.md) | 39 | `declaration-track:23edb791c58c2f4beae5be2e9cfd1158c3c4856751fce38a8d6458ac5b67848a` |
-| 3 | `def` | [Semantics.Feasible](../../../../Combinatorics/CoreNamespacedSemantics.lean/declarations/semantics-feasible.md) | 50 | `declaration-track:f906cd6fdb74e2f909f2247d7b17d1054987e8b66ce7118390184981e4fcb8c8` |
-| 4 | `def` | [Semantics.Infeasible](../../../../Combinatorics/CoreNamespacedSemantics.lean/declarations/semantics-infeasible.md) | 63 | `declaration-track:30e810f7967ff0d002ab6c9ea57e10dc39a6fe2ba86898091914f56b9bd7a53f` |
-| 5 | `theorem` | [Semantics.infeasible_iff_not_feasible](../../../../Combinatorics/CoreNamespacedSemantics.lean/declarations/semantics-infeasible-iff-not-feasible.md) | 76 | `result-track:efd7793e8e1b0d356a56bb23acd43ff557ce4cbff6ffb5e99c5caa0d2094ef44` |
-| 6 | `structure` | [CompletionCertificate](../../../../Combinatorics/CoreNamespacedSemantics.lean/declarations/completioncertificate.md) | 97 | `declaration-track:245251febf78e4a280aebf62708c5c4b4fc35d3666df362c96c87e7214bad646` |
-| 7 | `structure` | [NoCompletionCertificate](../../../../Combinatorics/CoreNamespacedSemantics.lean/declarations/nocompletioncertificate.md) | 112 | `declaration-track:5ece13826fb701b47e8ed3b4818fe7457315ffb5aff5d49e7daace072701a4f8` |
-| 8 | `theorem` | [Semantics.infeasible_of_refinement](../../../../Combinatorics/CoreNamespacedSemantics.lean/declarations/semantics-infeasible-of-refinement.md) | 123 | `result-track:554c483bf38aef5322fbd9dd32d2458458e4a6f7bdc89df8b56d4c91e12a022e` |
-| 9 | `theorem` | [Semantics.infeasibility_downward_closed](../../../../Combinatorics/CoreNamespacedSemantics.lean/declarations/semantics-infeasibility-downward-closed.md) | 142 | `result-track:765791f606f52c1967853a6a3eb5e6bf4e886b68fb60ba143087197d863c87d5` |
-| 10 | `theorem` | [Semantics.infeasible_mono_constraints](../../../../Combinatorics/CoreNamespacedSemantics.lean/declarations/semantics-infeasible-mono-constraints.md) | 158 | `result-track:31e739f70d2dc4fe78ab348db9d50d49a3a686fe3028bce7276199c1e748c9d8` |
-| 11 | `theorem` | [Semantics.feasible_anti_constraints](../../../../Combinatorics/CoreNamespacedSemantics.lean/declarations/semantics-feasible-anti-constraints.md) | 176 | `result-track:dab4e00863a739c2c5b70f83a6ba2acf32d0c423f14cf699eee2eabf7f353772` |
+| 1 | `structure` | [Semantics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedSemantics.lean/declarations/semantics.md) | 23 | `declaration-track:b035617370397f64ef0a6e760cf59004300df3c9d7ecf6763064559ad29db44c` |
+| 2 | `def` | [Semantics.SatisfiesAll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedSemantics.lean/declarations/semantics-satisfiesall.md) | 39 | `declaration-track:23edb791c58c2f4beae5be2e9cfd1158c3c4856751fce38a8d6458ac5b67848a` |
+| 3 | `def` | [Semantics.Feasible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedSemantics.lean/declarations/semantics-feasible.md) | 50 | `declaration-track:f906cd6fdb74e2f909f2247d7b17d1054987e8b66ce7118390184981e4fcb8c8` |
+| 4 | `def` | [Semantics.Infeasible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedSemantics.lean/declarations/semantics-infeasible.md) | 63 | `declaration-track:30e810f7967ff0d002ab6c9ea57e10dc39a6fe2ba86898091914f56b9bd7a53f` |
+| 5 | `theorem` | [Semantics.infeasible_iff_not_feasible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedSemantics.lean/declarations/semantics-infeasible-iff-not-feasible.md) | 76 | `result-track:efd7793e8e1b0d356a56bb23acd43ff557ce4cbff6ffb5e99c5caa0d2094ef44` |
+| 6 | `structure` | [CompletionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedSemantics.lean/declarations/completioncertificate.md) | 97 | `declaration-track:245251febf78e4a280aebf62708c5c4b4fc35d3666df362c96c87e7214bad646` |
+| 7 | `structure` | [NoCompletionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedSemantics.lean/declarations/nocompletioncertificate.md) | 112 | `declaration-track:5ece13826fb701b47e8ed3b4818fe7457315ffb5aff5d49e7daace072701a4f8` |
+| 8 | `theorem` | [Semantics.infeasible_of_refinement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedSemantics.lean/declarations/semantics-infeasible-of-refinement.md) | 123 | `result-track:554c483bf38aef5322fbd9dd32d2458458e4a6f7bdc89df8b56d4c91e12a022e` |
+| 9 | `theorem` | [Semantics.infeasibility_downward_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedSemantics.lean/declarations/semantics-infeasibility-downward-closed.md) | 142 | `result-track:765791f606f52c1967853a6a3eb5e6bf4e886b68fb60ba143087197d863c87d5` |
+| 10 | `theorem` | [Semantics.infeasible_mono_constraints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedSemantics.lean/declarations/semantics-infeasible-mono-constraints.md) | 158 | `result-track:31e739f70d2dc4fe78ab348db9d50d49a3a686fe3028bce7276199c1e748c9d8` |
+| 11 | `theorem` | [Semantics.feasible_anti_constraints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedSemantics.lean/declarations/semantics-feasible-anti-constraints.md) | 176 | `result-track:dab4e00863a739c2c5b70f83a6ba2acf32d0c423f14cf699eee2eabf7f353772` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

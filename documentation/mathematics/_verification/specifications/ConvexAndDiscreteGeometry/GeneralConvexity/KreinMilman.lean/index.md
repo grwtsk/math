@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/KreinMilman.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/KreinMilman.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/KreinMilman.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/KreinMilman.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsCompact.has_extreme_point](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/KreinMilman.lean/declarations/iscompact-has-extreme-point.md) | 63 | `result-track:cffe4c8f0388ae2cc807c9ef594510c1dfb8e9171e8da8c3d9b80337aa588689` |
-| 2 | `theorem` | [closure_convexHull_extremePoints](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/KreinMilman.lean/declarations/closure-convexhull-extremepoints.md) | 95 | `result-track:2bb43205db1f571791cc673dd47297ca302000e645509b133757d9a39c13e8cf` |
+| 1 | `theorem` | [IsCompact.has_extreme_point](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/KreinMilman.lean/declarations/iscompact-has-extreme-point.md) | 63 | `result-track:cffe4c8f0388ae2cc807c9ef594510c1dfb8e9171e8da8c3d9b80337aa588689` |
+| 2 | `theorem` | [closure_convexHull_extremePoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/KreinMilman.lean/declarations/closure-convexhull-extremepoints.md) | 95 | `result-track:2bb43205db1f571791cc673dd47297ca302000e645509b133757d9a39c13e8cf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

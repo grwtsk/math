@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AbsorptionCorpus.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AbsorptionCorpus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AbsorptionCorpus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AbsorptionCorpus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [theoremLink](../../../../../ComputerScience/AlgorithmsInComputerScience/AbsorptionCorpus.lean/declarations/theoremlink.md) | 16 | `declaration-track:c9aacc51591246646091c302b6dbcd920066d9a42119f45d3673041579c62a17` |
-| 2 | `def` | [joinAbsorption](../../../../../ComputerScience/AlgorithmsInComputerScience/AbsorptionCorpus.lean/declarations/joinabsorption.md) | 39 | `declaration-track:7d439867f83bb6cb49acc073bd6e3a43d249dcff2c007117671168521c2f37a9` |
-| 3 | `def` | [meetAbsorption](../../../../../ComputerScience/AlgorithmsInComputerScience/AbsorptionCorpus.lean/declarations/meetabsorption.md) | 45 | `declaration-track:94f6de972ac893b143d4fbfba4f156e5c44206f4c0dfb36d43b4777afe13f767` |
-| 4 | `def` | [joinLeftCommutative](../../../../../ComputerScience/AlgorithmsInComputerScience/AbsorptionCorpus.lean/declarations/joinleftcommutative.md) | 51 | `declaration-track:6ce711a1c53a863bdfba4bc51a55aa279a2f3a60acda33e57f586d898cbecacc` |
-| 5 | `def` | [meetLeftCommutative](../../../../../ComputerScience/AlgorithmsInComputerScience/AbsorptionCorpus.lean/declarations/meetleftcommutative.md) | 57 | `declaration-track:9df468aa660200b237793af0cbc842af8febdcfc38d1d840098c41dd7de320d9` |
-| 6 | `def` | [links](../../../../../ComputerScience/AlgorithmsInComputerScience/AbsorptionCorpus.lean/declarations/links.md) | 63 | `declaration-track:9bf16ef148d9c8a2823768275647483c435724c892d066969be5809637e32cdb` |
-| 7 | `theorem` | [links_length](../../../../../ComputerScience/AlgorithmsInComputerScience/AbsorptionCorpus.lean/declarations/links-length.md) | 70 | `result-track:fb8b0a3f29ce21c8b6e49791a7d48a3fca87e930b43117d3a20b0c909a333c9f` |
+| 1 | `def` | [theoremLink](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AbsorptionCorpus.lean/declarations/theoremlink.md) | 16 | `declaration-track:c9aacc51591246646091c302b6dbcd920066d9a42119f45d3673041579c62a17` |
+| 2 | `def` | [joinAbsorption](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AbsorptionCorpus.lean/declarations/joinabsorption.md) | 39 | `declaration-track:7d439867f83bb6cb49acc073bd6e3a43d249dcff2c007117671168521c2f37a9` |
+| 3 | `def` | [meetAbsorption](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AbsorptionCorpus.lean/declarations/meetabsorption.md) | 45 | `declaration-track:94f6de972ac893b143d4fbfba4f156e5c44206f4c0dfb36d43b4777afe13f767` |
+| 4 | `def` | [joinLeftCommutative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AbsorptionCorpus.lean/declarations/joinleftcommutative.md) | 51 | `declaration-track:6ce711a1c53a863bdfba4bc51a55aa279a2f3a60acda33e57f586d898cbecacc` |
+| 5 | `def` | [meetLeftCommutative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AbsorptionCorpus.lean/declarations/meetleftcommutative.md) | 57 | `declaration-track:9df468aa660200b237793af0cbc842af8febdcfc38d1d840098c41dd7de320d9` |
+| 6 | `def` | [links](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AbsorptionCorpus.lean/declarations/links.md) | 63 | `declaration-track:9bf16ef148d9c8a2823768275647483c435724c892d066969be5809637e32cdb` |
+| 7 | `theorem` | [links_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AbsorptionCorpus.lean/declarations/links-length.md) | 70 | `result-track:fb8b0a3f29ce21c8b6e49791a7d48a3fca87e930b43117d3a20b0c909a333c9f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

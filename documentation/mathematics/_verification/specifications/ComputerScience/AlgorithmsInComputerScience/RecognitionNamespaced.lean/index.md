@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RecognitionNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RecognitionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RecognitionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RecognitionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HumanRecognitionReceipt](../../../../../ComputerScience/AlgorithmsInComputerScience/RecognitionNamespaced.lean/declarations/humanrecognitionreceipt.md) | 24 | `declaration-track:64ea1c45a5e9ed2366d3376936445c3532a7f66f366c9c1be93e8314ae7730fd` |
-| 2 | `def` | [HumanRecognitionReceipt.impliesTrust](../../../../../ComputerScience/AlgorithmsInComputerScience/RecognitionNamespaced.lean/declarations/humanrecognitionreceipt-impliestrust.md) | 33 | `declaration-track:b3375096c5c97117a4c9c066bf3bb064c61bc0c6004a6a3209de3db4e36d8a35` |
-| 3 | `def` | [HumanRecognitionReceipt.evidenceKind](../../../../../ComputerScience/AlgorithmsInComputerScience/RecognitionNamespaced.lean/declarations/humanrecognitionreceipt-evidencekind.md) | 37 | `declaration-track:1e9dd74488b8397a158196833d94cd69ea44c91f80ceff742b7faf13122198aa` |
-| 4 | `theorem` | [trust_not_implied_by_recognition](../../../../../ComputerScience/AlgorithmsInComputerScience/RecognitionNamespaced.lean/declarations/trust-not-implied-by-recognition.md) | 42 | `result-track:741c3700ed6bf8832e6092a95fd843b40d94d038bab0d3d1efba798b82b899e9` |
-| 5 | `theorem` | [recognition_has_no_theorem_authority](../../../../../ComputerScience/AlgorithmsInComputerScience/RecognitionNamespaced.lean/declarations/recognition-has-no-theorem-authority.md) | 47 | `result-track:15da0f95ec589802eebcad3864611d0ba0f87e72c88e76f7f6278fb6f0d1dc03` |
+| 1 | `structure` | [HumanRecognitionReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RecognitionNamespaced.lean/declarations/humanrecognitionreceipt.md) | 24 | `declaration-track:64ea1c45a5e9ed2366d3376936445c3532a7f66f366c9c1be93e8314ae7730fd` |
+| 2 | `def` | [HumanRecognitionReceipt.impliesTrust](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RecognitionNamespaced.lean/declarations/humanrecognitionreceipt-impliestrust.md) | 33 | `declaration-track:b3375096c5c97117a4c9c066bf3bb064c61bc0c6004a6a3209de3db4e36d8a35` |
+| 3 | `def` | [HumanRecognitionReceipt.evidenceKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RecognitionNamespaced.lean/declarations/humanrecognitionreceipt-evidencekind.md) | 37 | `declaration-track:1e9dd74488b8397a158196833d94cd69ea44c91f80ceff742b7faf13122198aa` |
+| 4 | `theorem` | [trust_not_implied_by_recognition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RecognitionNamespaced.lean/declarations/trust-not-implied-by-recognition.md) | 42 | `result-track:741c3700ed6bf8832e6092a95fd843b40d94d038bab0d3d1efba798b82b899e9` |
+| 5 | `theorem` | [recognition_has_no_theorem_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RecognitionNamespaced.lean/declarations/recognition-has-no-theorem-authority.md) | 47 | `result-track:15da0f95ec589802eebcad3864611d0ba0f87e72c88e76f7f6278fb6f0d1dc03` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

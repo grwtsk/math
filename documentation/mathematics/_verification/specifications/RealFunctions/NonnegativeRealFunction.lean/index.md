@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/NonnegativeRealFunction.lean/index.md) · [Full source](../../../../RealFunctions/NonnegativeRealFunction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NonnegativeRealFunction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NonnegativeRealFunction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AnalyticFrobeniusEnergy](../../../../RealFunctions/NonnegativeRealFunction.lean/declarations/analyticfrobeniusenergy.md) | 36 | `declaration-track:388b3569d2223efb8ee4f011cbf02cee408d2346dcdaa7cd38bd1d50e6852ae1` |
-| 2 | `theorem` | [analytic_frobenius_nonnegative](../../../../RealFunctions/NonnegativeRealFunction.lean/declarations/analytic-frobenius-nonnegative.md) | 41 | `result-track:7f01ef4cbbf58eda4af55a69af7a17478c5476eaf4f2cb8005a32de22ef41480` |
+| 1 | `structure` | [AnalyticFrobeniusEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NonnegativeRealFunction.lean/declarations/analyticfrobeniusenergy.md) | 36 | `declaration-track:388b3569d2223efb8ee4f011cbf02cee408d2346dcdaa7cd38bd1d50e6852ae1` |
+| 2 | `theorem` | [analytic_frobenius_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NonnegativeRealFunction.lean/declarations/analytic-frobenius-nonnegative.md) | 41 | `result-track:7f01ef4cbbf58eda4af55a69af7a17478c5476eaf4f2cb8005a32de22ef41480` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

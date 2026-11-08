@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftNamespacedAlternative12SourceEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftNamespacedAlternative12SourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftNamespacedAlternative12SourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftNamespacedAlternative12SourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thetaPhiJet_polynomial_sum_eq_two_modes](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftNamespacedAlternative12SourceEdition2.lean/declarations/thetaphijet-polynomial-sum-eq-two-modes.md) | 28 | `result-track:7b29668080b5f3ab0093b089dba8d2a3cd9e47aafd7cefc42f25244240cc0077` |
-| 2 | `theorem` | [thetaPhiJet_eq_two_modes_add_remainder](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftNamespacedAlternative12SourceEdition2.lean/declarations/thetaphijet-eq-two-modes-add-remainder.md) | 62 | `result-track:6f7af90ae3a16426a366671afcbd6f787d235f8e3723130a67ed29126cb9b96c` |
-| 3 | `theorem` | [thetaPhiJetDet_negative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftNamespacedAlternative12SourceEdition2.lean/declarations/thetaphijetdet-negative.md) | 73 | `result-track:c97fa67dceba29101febd1a122f7b810b2059eab1b964534966d78882b33b7a6` |
-| 4 | `theorem` | [thetaPhi_wronskian_three_neg](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftNamespacedAlternative12SourceEdition2.lean/declarations/thetaphi-wronskian-three-neg.md) | 109 | `result-track:59bd3e4af0ccd400daaff8722e8dc3795e4e1da2a0235702e24dfbbbf37d03a4` |
+| 1 | `theorem` | [thetaPhiJet_polynomial_sum_eq_two_modes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftNamespacedAlternative12SourceEdition2.lean/declarations/thetaphijet-polynomial-sum-eq-two-modes.md) | 28 | `result-track:7b29668080b5f3ab0093b089dba8d2a3cd9e47aafd7cefc42f25244240cc0077` |
+| 2 | `theorem` | [thetaPhiJet_eq_two_modes_add_remainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftNamespacedAlternative12SourceEdition2.lean/declarations/thetaphijet-eq-two-modes-add-remainder.md) | 62 | `result-track:6f7af90ae3a16426a366671afcbd6f787d235f8e3723130a67ed29126cb9b96c` |
+| 3 | `theorem` | [thetaPhiJetDet_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftNamespacedAlternative12SourceEdition2.lean/declarations/thetaphijetdet-negative.md) | 73 | `result-track:c97fa67dceba29101febd1a122f7b810b2059eab1b964534966d78882b33b7a6` |
+| 4 | `theorem` | [thetaPhi_wronskian_three_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPositiveLiftNamespacedAlternative12SourceEdition2.lean/declarations/thetaphi-wronskian-three-neg.md) | 109 | `result-track:59bd3e4af0ccd400daaff8722e8dc3795e4e1da2a0235702e24dfbbbf37d03a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionRegularPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionRegularPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionRegularPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionRegularPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [subsingleton](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionRegularPublic.lean/declarations/subsingleton.md) | 25 | `result-track:8c9a3fdd8a366eebb545f3fa858ec92047e33c2afd717654cbc5ea9f175e282b` |
-| 2 | `theorem` | [zero_iff_subsingleton](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionRegularPublic.lean/declarations/zero-iff-subsingleton.md) | 29 | `result-track:3539ab59014bb0dc72a75e8e3109ae4bc1db3e268a8e1095f68649bfd8413882` |
-| 3 | `theorem` | [not_zero_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionRegularPublic.lean/declarations/not-zero-iff.md) | 33 | `result-track:19cd3383f063932c6749112559e67f605d07a1a822f36c485c5b2850e05d42ef` |
-| 4 | `theorem` | [zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionRegularPublic.lean/declarations/zero.md) | 39 | `result-track:bb0e3df0ba19d04cc38b47ee89fecfbafcb929bf184bcd97505967bec967cf18` |
-| 5 | `theorem` | [not_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionRegularPublic.lean/declarations/not-zero.md) | 43 | `result-track:bc47146092600c1b683b5e463fe5ef910f47b39a9daf42565a4a7edacf4c03d4` |
-| 6 | `lemma` | [IsSMulRegular.right_eq_zero_of_smul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionRegularPublic.lean/declarations/issmulregular-right-eq-zero-of-smul.md) | 52 | `result-track:0f5f3cde7e731f67de176e5034f9926cbad800dfdd44588ea86a20bff071dc38` |
-| 7 | `lemma` | [isSMulRegular_iff_right_eq_zero_of_smul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionRegularPublic.lean/declarations/issmulregular-iff-right-eq-zero-of-smul.md) | 58 | `result-track:72e68555093fcf79d9755e9d6fa87724a4ae9aae91c21cd13698b86238a2e677` |
+| 1 | `theorem` | [subsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionRegularPublic.lean/declarations/subsingleton.md) | 25 | `result-track:8c9a3fdd8a366eebb545f3fa858ec92047e33c2afd717654cbc5ea9f175e282b` |
+| 2 | `theorem` | [zero_iff_subsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionRegularPublic.lean/declarations/zero-iff-subsingleton.md) | 29 | `result-track:3539ab59014bb0dc72a75e8e3109ae4bc1db3e268a8e1095f68649bfd8413882` |
+| 3 | `theorem` | [not_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionRegularPublic.lean/declarations/not-zero-iff.md) | 33 | `result-track:19cd3383f063932c6749112559e67f605d07a1a822f36c485c5b2850e05d42ef` |
+| 4 | `theorem` | [zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionRegularPublic.lean/declarations/zero.md) | 39 | `result-track:bb0e3df0ba19d04cc38b47ee89fecfbafcb929bf184bcd97505967bec967cf18` |
+| 5 | `theorem` | [not_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionRegularPublic.lean/declarations/not-zero.md) | 43 | `result-track:bc47146092600c1b683b5e463fe5ef910f47b39a9daf42565a4a7edacf4c03d4` |
+| 6 | `lemma` | [IsSMulRegular.right_eq_zero_of_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionRegularPublic.lean/declarations/issmulregular-right-eq-zero-of-smul.md) | 52 | `result-track:0f5f3cde7e731f67de176e5034f9926cbad800dfdd44588ea86a20bff071dc38` |
+| 7 | `lemma` | [isSMulRegular_iff_right_eq_zero_of_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionRegularPublic.lean/declarations/issmulregular-iff-right-eq-zero-of-smul.md) | 58 | `result-track:72e68555093fcf79d9755e9d6fa87724a4ae9aae91c21cd13698b86238a2e677` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

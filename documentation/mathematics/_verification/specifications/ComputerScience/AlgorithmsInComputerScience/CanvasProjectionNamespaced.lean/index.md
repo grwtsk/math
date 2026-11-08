@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CanvasResidueRole](../../../../../ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/declarations/canvasresiduerole.md) | 23 | `declaration-track:2ffd0fccfa68ceae0a19f19ce2219628453c4121420affe81fcad78f08d0ba4b` |
-| 2 | `structure` | [CanvasCell](../../../../../ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/declarations/canvascell.md) | 32 | `declaration-track:e9006f653bb736db5e2f164c13ceef2518874d2ed15fb85d19692388bbee48f2` |
-| 3 | `structure` | [CanvasCursor](../../../../../ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/declarations/canvascursor.md) | 42 | `declaration-track:df6c70bfa25dee988cd229635cc84f33570a18c715393430dedb779c46c84c4f` |
-| 4 | `structure` | [CanvasPatternFeature](../../../../../ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/declarations/canvaspatternfeature.md) | 50 | `declaration-track:5c30dd9c77715b934bb9944635655dcf220b9fb7fc1b7fcbcbd98d28a5d68c28` |
-| 5 | `structure` | [CanvasTheoremCandidate](../../../../../ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/declarations/canvastheoremcandidate.md) | 59 | `declaration-track:6dcbfd30d389e46698f998a47c1bd6b6ca57ca0fbd9488aa2ce1b44fda0199ba` |
-| 6 | `structure` | [CanvasProjectionStream](../../../../../ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/declarations/canvasprojectionstream.md) | 69 | `declaration-track:611e28d36b26879dc48e615bb1a90530d93b360e10d39bfa827b6b7c8e2295b1` |
-| 7 | `theorem` | [canvas_projection_stream_sound](../../../../../ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/declarations/canvas-projection-stream-sound.md) | 89 | `result-track:dee3600a27bde722cd5a6aa55072ea4c90d90b497b47dadb7c32996ae7916b60` |
-| 8 | `theorem` | [canvas_theorem_candidate_firewall](../../../../../ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/declarations/canvas-theorem-candidate-firewall.md) | 103 | `result-track:e1e690e6f15fd38b1a07d5c504070d0b110a3547f175cbb35a902467e0ce9bff` |
+| 1 | `inductive` | [CanvasResidueRole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/declarations/canvasresiduerole.md) | 23 | `declaration-track:2ffd0fccfa68ceae0a19f19ce2219628453c4121420affe81fcad78f08d0ba4b` |
+| 2 | `structure` | [CanvasCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/declarations/canvascell.md) | 32 | `declaration-track:e9006f653bb736db5e2f164c13ceef2518874d2ed15fb85d19692388bbee48f2` |
+| 3 | `structure` | [CanvasCursor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/declarations/canvascursor.md) | 42 | `declaration-track:df6c70bfa25dee988cd229635cc84f33570a18c715393430dedb779c46c84c4f` |
+| 4 | `structure` | [CanvasPatternFeature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/declarations/canvaspatternfeature.md) | 50 | `declaration-track:5c30dd9c77715b934bb9944635655dcf220b9fb7fc1b7fcbcbd98d28a5d68c28` |
+| 5 | `structure` | [CanvasTheoremCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/declarations/canvastheoremcandidate.md) | 59 | `declaration-track:6dcbfd30d389e46698f998a47c1bd6b6ca57ca0fbd9488aa2ce1b44fda0199ba` |
+| 6 | `structure` | [CanvasProjectionStream](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/declarations/canvasprojectionstream.md) | 69 | `declaration-track:611e28d36b26879dc48e615bb1a90530d93b360e10d39bfa827b6b7c8e2295b1` |
+| 7 | `theorem` | [canvas_projection_stream_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/declarations/canvas-projection-stream-sound.md) | 89 | `result-track:dee3600a27bde722cd5a6aa55072ea4c90d90b497b47dadb7c32996ae7916b60` |
+| 8 | `theorem` | [canvas_theorem_candidate_firewall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CanvasProjectionNamespaced.lean/declarations/canvas-theorem-candidate-firewall.md) | 103 | `result-track:e1e690e6f15fd38b1a07d5c504070d0b110a3547f175cbb35a902467e0ce9bff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TraceNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TraceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TraceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TraceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Pc_part_integrable](../../../../MeasureAndIntegration/TraceNamespaced.lean/declarations/pc-part-integrable.md) | 44 | `result-track:390ca00b9670e9c4534452a59a730f503145d35b7b23629dc991a6c560f57716` |
-| 2 | `lemma` | [Pc_part_eq](../../../../MeasureAndIntegration/TraceNamespaced.lean/declarations/pc-part-eq.md) | 51 | `result-track:f1ad0546bd70e46f04a2b5dbed18836872bb7bc232a8ebff85d2bf8cb08b717b` |
-| 3 | `lemma` | [sum_Pc_part_bound](../../../../MeasureAndIntegration/TraceNamespaced.lean/declarations/sum-pc-part-bound.md) | 86 | `result-track:b40312a9fd7cc4b4bb2ba024ddd93cca015e6a4429abdf8511bffac3dff342de` |
-| 4 | `lemma` | [GentryW_diag_eq](../../../../MeasureAndIntegration/TraceNamespaced.lean/declarations/gentryw-diag-eq.md) | 162 | `result-track:d2a69457451903221eb84ac4e151e0b08a39e74100e735632000f49aebffb381` |
-| 5 | `theorem` | [prop_trace_W](../../../../MeasureAndIntegration/TraceNamespaced.lean/declarations/prop-trace-w.md) | 192 | `result-track:f8ae9d6b1f030c71e35f0fed32da5e25cf2739dfffd0934ed008d2da78034097` |
+| 1 | `lemma` | [Pc_part_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TraceNamespaced.lean/declarations/pc-part-integrable.md) | 44 | `result-track:390ca00b9670e9c4534452a59a730f503145d35b7b23629dc991a6c560f57716` |
+| 2 | `lemma` | [Pc_part_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TraceNamespaced.lean/declarations/pc-part-eq.md) | 51 | `result-track:f1ad0546bd70e46f04a2b5dbed18836872bb7bc232a8ebff85d2bf8cb08b717b` |
+| 3 | `lemma` | [sum_Pc_part_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TraceNamespaced.lean/declarations/sum-pc-part-bound.md) | 86 | `result-track:b40312a9fd7cc4b4bb2ba024ddd93cca015e6a4429abdf8511bffac3dff342de` |
+| 4 | `lemma` | [GentryW_diag_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TraceNamespaced.lean/declarations/gentryw-diag-eq.md) | 162 | `result-track:d2a69457451903221eb84ac4e151e0b08a39e74100e735632000f49aebffb381` |
+| 5 | `theorem` | [prop_trace_W](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TraceNamespaced.lean/declarations/prop-trace-w.md) | 192 | `result-track:f8ae9d6b1f030c71e35f0fed32da5e25cf2739dfffd0934ed008d2da78034097` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SeparatedTentContours.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SeparatedTentContours.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SeparatedTentContours.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SeparatedTentContours.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.SeparatedContourHeights`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeparatedContourHeights.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.TentAdmissibleContours`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentAdmissibleContours.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.SeparatedContourHeights`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeparatedContourHeights.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.TentAdmissibleContours`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentAdmissibleContours.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [separated_horizontal_ne_one](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SeparatedTentContours.lean/declarations/separated-horizontal-ne-one.md) | 37 | `result-track:ad26e19c83655e38e9c07c922c349159815cfe405ae8de6af9a1859fce7b997b` |
-| 2 | `theorem` | [zeta_ne_zero_on_separated_horizontal](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SeparatedTentContours.lean/declarations/zeta-ne-zero-on-separated-horizontal.md) | 46 | `result-track:b38961b409e01e5c55db7a92d57fbbd90db147448dd4357e4bf2287863daa13f` |
-| 3 | `theorem` | [analyticAt_integrand_separated_horizontal](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SeparatedTentContours.lean/declarations/analyticat-integrand-separated-horizontal.md) | 57 | `result-track:8fd8d304fe376045e4fb81fb7c048bad5a21861863a9b34fc75074e0f33fb5dc` |
-| 4 | `theorem` | [separated_horizontal_integrable](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SeparatedTentContours.lean/declarations/separated-horizontal-integrable.md) | 64 | `result-track:bbf1d864ae46ebdedf3a6ce228a3653fae885e5ee35c6820c50691cdda89083e` |
-| 5 | `theorem` | [rounded_weighted_head_eq](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SeparatedTentContours.lean/declarations/rounded-weighted-head-eq.md) | 76 | `result-track:913f5e9d3c0e6f3a7ed3bf1b53947f870769e0a3bd5a6a09865e84ab923344f6` |
-| 6 | `theorem` | [separated_right_tendsto_squareSource](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SeparatedTentContours.lean/declarations/separated-right-tendsto-squaresource.md) | 84 | `result-track:f29555a5e3bf996aef1031a00e4a68d3d8808817ea9300f89850a5ae1bdcaeec` |
+| 1 | `theorem` | [separated_horizontal_ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SeparatedTentContours.lean/declarations/separated-horizontal-ne-one.md) | 37 | `result-track:ad26e19c83655e38e9c07c922c349159815cfe405ae8de6af9a1859fce7b997b` |
+| 2 | `theorem` | [zeta_ne_zero_on_separated_horizontal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SeparatedTentContours.lean/declarations/zeta-ne-zero-on-separated-horizontal.md) | 46 | `result-track:b38961b409e01e5c55db7a92d57fbbd90db147448dd4357e4bf2287863daa13f` |
+| 3 | `theorem` | [analyticAt_integrand_separated_horizontal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SeparatedTentContours.lean/declarations/analyticat-integrand-separated-horizontal.md) | 57 | `result-track:8fd8d304fe376045e4fb81fb7c048bad5a21861863a9b34fc75074e0f33fb5dc` |
+| 4 | `theorem` | [separated_horizontal_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SeparatedTentContours.lean/declarations/separated-horizontal-integrable.md) | 64 | `result-track:bbf1d864ae46ebdedf3a6ce228a3653fae885e5ee35c6820c50691cdda89083e` |
+| 5 | `theorem` | [rounded_weighted_head_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SeparatedTentContours.lean/declarations/rounded-weighted-head-eq.md) | 76 | `result-track:913f5e9d3c0e6f3a7ed3bf1b53947f870769e0a3bd5a6a09865e84ab923344f6` |
+| 6 | `theorem` | [separated_right_tendsto_squareSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SeparatedTentContours.lean/declarations/separated-right-tendsto-squaresource.md) | 84 | `result-track:f29555a5e3bf996aef1031a00e4a68d3d8808817ea9300f89850a5ae1bdcaeec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

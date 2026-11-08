@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TorsionTower.lean/index.md) · [Full source](../../../../GeneralTopology/TorsionTower.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TorsionTower.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TorsionTower.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,18 +61,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimePowerTorsionTower](../../../../GeneralTopology/TorsionTower.lean/declarations/primepowertorsiontower.md) | 22 | `declaration-track:9a9f8e2885970ceae2d926642ebc123738a9d9f8e7de924b1f5d1a398d6994f0` |
-| 2 | `structure` | [TorsionInverseLimitPoint](../../../../GeneralTopology/TorsionTower.lean/declarations/torsioninverselimitpoint.md) | 37 | `declaration-track:db90edb031d620f43a393fe7a158eb991aab238a66b3b2846a4f0b73963517c1` |
-| 3 | `abbrev` | [DiscreteTorsionLevels](../../../../GeneralTopology/TorsionTower.lean/declarations/discretetorsionlevels.md) | 50 | `declaration-track:ef8dd17c4872d4083d570802b7a69f1373f35aac5b9e9b9f713012e629f574f9` |
-| 4 | `abbrev` | [TorsionInverseLimitCarrier](../../../../GeneralTopology/TorsionTower.lean/declarations/torsioninverselimitcarrier.md) | 60 | `declaration-track:1f5261c2e780bd18896c79d6bda78eebd2d2f8c4c6d5dc2a3a7eb15f1a75013f` |
-| 5 | `def` | [compatibleFamilies](../../../../GeneralTopology/TorsionTower.lean/declarations/compatiblefamilies.md) | 77 | `declaration-track:7b61aa5c36b7d6577b0c2aca6efcc0398b793790e7f1abe6205fb18f9297f594` |
-| 6 | `theorem` | [compatibleFamilies_isClosed](../../../../GeneralTopology/TorsionTower.lean/declarations/compatiblefamilies-isclosed.md) | 88 | `result-track:962fb2a7f10943a6be336355d709ef09d5f0db555f1871d1f3e42d0bf09ad610` |
-| 7 | `abbrev` | [TopologicalInverseLimit](../../../../GeneralTopology/TorsionTower.lean/declarations/topologicalinverselimit.md) | 109 | `declaration-track:0650a52fe3f7b8354b87513c9347df2ab686e07d09ab9882ede278730981bdf8` |
-| 8 | `theorem` | [topologicalInverseLimit_isCompact](../../../../GeneralTopology/TorsionTower.lean/declarations/topologicalinverselimit-iscompact.md) | 119 | `result-track:003c5719343eaa55ede11bc3e27c75829dab94f39326258fbfb09583a0ab3131` |
-| 9 | `def` | [TorsionInverseLimitCompactStatement](../../../../GeneralTopology/TorsionTower.lean/declarations/torsioninverselimitcompactstatement.md) | 134 | `declaration-track:8dca10b25db85c2dd58af0aa60a10854fb3e38ffce2572f50749f13e59099c1b` |
-| 10 | `def` | [torsionInverseLimitCompactOpenElement](../../../../GeneralTopology/TorsionTower.lean/declarations/torsioninverselimitcompactopenelement.md) | 147 | `declaration-track:d3f1026f7aa3635276749c9a2c787a930a2490cee2c07025da7f8f1580b612f0` |
-| 11 | `theorem` | [torsionInverseLimitCompact](../../../../GeneralTopology/TorsionTower.lean/declarations/torsioninverselimitcompact.md) | 166 | `result-track:9dee8074584357f621bd89294947f343544b191694f5977a203adc0605e6b071` |
-| 12 | `def` | [torsionInverseLimitCompactTheoremElement](../../../../GeneralTopology/TorsionTower.lean/declarations/torsioninverselimitcompacttheoremelement.md) | 172 | `declaration-track:7ae3d42ca66696979fb0a934202305e2006d419a9e05ff1a349f03452ed441c9` |
+| 1 | `structure` | [PrimePowerTorsionTower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TorsionTower.lean/declarations/primepowertorsiontower.md) | 22 | `declaration-track:9a9f8e2885970ceae2d926642ebc123738a9d9f8e7de924b1f5d1a398d6994f0` |
+| 2 | `structure` | [TorsionInverseLimitPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TorsionTower.lean/declarations/torsioninverselimitpoint.md) | 37 | `declaration-track:db90edb031d620f43a393fe7a158eb991aab238a66b3b2846a4f0b73963517c1` |
+| 3 | `abbrev` | [DiscreteTorsionLevels](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TorsionTower.lean/declarations/discretetorsionlevels.md) | 50 | `declaration-track:ef8dd17c4872d4083d570802b7a69f1373f35aac5b9e9b9f713012e629f574f9` |
+| 4 | `abbrev` | [TorsionInverseLimitCarrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TorsionTower.lean/declarations/torsioninverselimitcarrier.md) | 60 | `declaration-track:1f5261c2e780bd18896c79d6bda78eebd2d2f8c4c6d5dc2a3a7eb15f1a75013f` |
+| 5 | `def` | [compatibleFamilies](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TorsionTower.lean/declarations/compatiblefamilies.md) | 77 | `declaration-track:7b61aa5c36b7d6577b0c2aca6efcc0398b793790e7f1abe6205fb18f9297f594` |
+| 6 | `theorem` | [compatibleFamilies_isClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TorsionTower.lean/declarations/compatiblefamilies-isclosed.md) | 88 | `result-track:962fb2a7f10943a6be336355d709ef09d5f0db555f1871d1f3e42d0bf09ad610` |
+| 7 | `abbrev` | [TopologicalInverseLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TorsionTower.lean/declarations/topologicalinverselimit.md) | 109 | `declaration-track:0650a52fe3f7b8354b87513c9347df2ab686e07d09ab9882ede278730981bdf8` |
+| 8 | `theorem` | [topologicalInverseLimit_isCompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TorsionTower.lean/declarations/topologicalinverselimit-iscompact.md) | 119 | `result-track:003c5719343eaa55ede11bc3e27c75829dab94f39326258fbfb09583a0ab3131` |
+| 9 | `def` | [TorsionInverseLimitCompactStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TorsionTower.lean/declarations/torsioninverselimitcompactstatement.md) | 134 | `declaration-track:8dca10b25db85c2dd58af0aa60a10854fb3e38ffce2572f50749f13e59099c1b` |
+| 10 | `def` | [torsionInverseLimitCompactOpenElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TorsionTower.lean/declarations/torsioninverselimitcompactopenelement.md) | 147 | `declaration-track:d3f1026f7aa3635276749c9a2c787a930a2490cee2c07025da7f8f1580b612f0` |
+| 11 | `theorem` | [torsionInverseLimitCompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TorsionTower.lean/declarations/torsioninverselimitcompact.md) | 166 | `result-track:9dee8074584357f621bd89294947f343544b191694f5977a203adc0605e6b071` |
+| 12 | `def` | [torsionInverseLimitCompactTheoremElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TorsionTower.lean/declarations/torsioninverselimitcompacttheoremelement.md) | 172 | `declaration-track:7ae3d42ca66696979fb0a934202305e2006d419a9e05ff1a349f03452ed441c9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

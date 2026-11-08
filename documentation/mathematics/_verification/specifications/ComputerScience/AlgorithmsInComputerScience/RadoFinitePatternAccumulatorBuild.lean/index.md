@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorBuild.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorBuild.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorBuild.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorBuild.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bitRado_build_pattern_accumulator_by_steps](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorBuild.lean/declarations/bitrado-build-pattern-accumulator-by-steps.md) | 20 | `result-track:1aa33779fc6acfb811fe421c5c5c81f00d452f69bfd31b1fcb23110749b33189` |
+| 1 | `theorem` | [bitRado_build_pattern_accumulator_by_steps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoFinitePatternAccumulatorBuild.lean/declarations/bitrado-build-pattern-accumulator-by-steps.md) | 20 | `result-track:1aa33779fc6acfb811fe421c5c5c81f00d452f69bfd31b1fcb23110749b33189` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

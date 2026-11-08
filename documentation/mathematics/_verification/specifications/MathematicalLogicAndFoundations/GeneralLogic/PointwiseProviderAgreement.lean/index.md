@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PointwiseProviderAgreement.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PointwiseProviderAgreement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PointwiseProviderAgreement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PointwiseProviderAgreement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathlib.Data.Real.Basic` — import line 19; external provider; requires a separately pinned dependency.
-- [Provider And Point List](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProviderAndPointList.lean/index.md) — import line 21; pinned internal source present.
+- [Provider And Point List](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProviderAndPointList.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [RecoversMetric](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PointwiseProviderAgreement.lean/declarations/recoversmetric.md) | 34 | `declaration-track:59f9b86337bbae0e3b0512e70d4b235e1564aebf9f0d30e976d46db3252d244a` |
-| 2 | `structure` | [MetricRecoveryCapability](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PointwiseProviderAgreement.lean/declarations/metricrecoverycapability.md) | 39 | `declaration-track:b0be6ca2d24767712a65807fc37ca7a747d6665340c0d9eb28574ab4d41978f6` |
+| 1 | `def` | [RecoversMetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PointwiseProviderAgreement.lean/declarations/recoversmetric.md) | 34 | `declaration-track:59f9b86337bbae0e3b0512e70d4b235e1564aebf9f0d30e976d46db3252d244a` |
+| 2 | `structure` | [MetricRecoveryCapability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PointwiseProviderAgreement.lean/declarations/metricrecoverycapability.md) | 39 | `declaration-track:b0be6ca2d24767712a65807fc37ca7a747d6665340c0d9eb28574ab4d41978f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

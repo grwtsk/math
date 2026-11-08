@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FrequencyNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/FrequencyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrequencyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrequencyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [InvocationCut.frequency](../../../../Combinatorics/FrequencyNamespaced.lean/declarations/invocationcut-frequency.md) | 24 | `declaration-track:09ad1840618fdd00bae5c21bc50b53bc390932bad9a1ba25deef07c1ba5003e9` |
-| 2 | `theorem` | [InvocationCut.frequency_positive](../../../../Combinatorics/FrequencyNamespaced.lean/declarations/invocationcut-frequency-positive.md) | 34 | `result-track:3be238aa6ce462ca9de125067174e0ef217d62e59525b1f02917b58331e26b25` |
-| 3 | `theorem` | [committed_event_replay_idempotent](../../../../Combinatorics/FrequencyNamespaced.lean/declarations/committed-event-replay-idempotent.md) | 48 | `result-track:f334e100d60c3e1d289799ef96baee26e5a19f198d5a9611cfa78fff9f713f70` |
-| 4 | `structure` | [FrequencyWeight](../../../../Combinatorics/FrequencyNamespaced.lean/declarations/frequencyweight.md) | 56 | `declaration-track:bf0768104d345b7e68ff73dbad022a3b335072e5a0c11b095d614c0c24d46d18` |
-| 5 | `def` | [totalFrequency](../../../../Combinatorics/FrequencyNamespaced.lean/declarations/totalfrequency.md) | 62 | `declaration-track:af5097b0cc5e1973c6702e356bd87f5e29bfc3bffb4124cd160cbec8b695455c` |
+| 1 | `def` | [InvocationCut.frequency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrequencyNamespaced.lean/declarations/invocationcut-frequency.md) | 24 | `declaration-track:09ad1840618fdd00bae5c21bc50b53bc390932bad9a1ba25deef07c1ba5003e9` |
+| 2 | `theorem` | [InvocationCut.frequency_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrequencyNamespaced.lean/declarations/invocationcut-frequency-positive.md) | 34 | `result-track:3be238aa6ce462ca9de125067174e0ef217d62e59525b1f02917b58331e26b25` |
+| 3 | `theorem` | [committed_event_replay_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrequencyNamespaced.lean/declarations/committed-event-replay-idempotent.md) | 48 | `result-track:f334e100d60c3e1d289799ef96baee26e5a19f198d5a9611cfa78fff9f713f70` |
+| 4 | `structure` | [FrequencyWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrequencyNamespaced.lean/declarations/frequencyweight.md) | 56 | `declaration-track:bf0768104d345b7e68ff73dbad022a3b335072e5a0c11b095d614c0c24d46d18` |
+| 5 | `def` | [totalFrequency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrequencyNamespaced.lean/declarations/totalfrequency.md) | 62 | `declaration-track:af5097b0cc5e1973c6702e356bd87f5e29bfc3bffb4124cd160cbec8b695455c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

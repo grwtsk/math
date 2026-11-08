@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/LegacyEvidenceNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/LegacyEvidenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LegacyEvidenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LegacyEvidenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [LegacyClassificationKind](../../../../../ComputerScience/AlgorithmsInComputerScience/LegacyEvidenceNamespaced.lean/declarations/legacyclassificationkind.md) | 22 | `declaration-track:5042f0512e341a7c05469c924b9c43205c637596d66340430e2b0a56bfdf32a6` |
-| 2 | `structure` | [LegacyClassification](../../../../../ComputerScience/AlgorithmsInComputerScience/LegacyEvidenceNamespaced.lean/declarations/legacyclassification.md) | 31 | `declaration-track:3897af5beebe46eaaa9ecfe6ea72d11cc6054c55d82751ecf83218e583149514` |
-| 3 | `structure` | [LegacyEvidenceProjection](../../../../../ComputerScience/AlgorithmsInComputerScience/LegacyEvidenceNamespaced.lean/declarations/legacyevidenceprojection.md) | 40 | `declaration-track:ef9fd86bcd2f13dc1688f24cded52813b2b4fb02f761dc3dcb5f56e9d134979a` |
-| 4 | `def` | [LegacyClassification.SameLabel](../../../../../ComputerScience/AlgorithmsInComputerScience/LegacyEvidenceNamespaced.lean/declarations/legacyclassification-samelabel.md) | 52 | `declaration-track:48f2416852156f739cbd93175a7539111f543a033cb99b3ee89e8b90a4315795` |
+| 1 | `inductive` | [LegacyClassificationKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LegacyEvidenceNamespaced.lean/declarations/legacyclassificationkind.md) | 22 | `declaration-track:5042f0512e341a7c05469c924b9c43205c637596d66340430e2b0a56bfdf32a6` |
+| 2 | `structure` | [LegacyClassification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LegacyEvidenceNamespaced.lean/declarations/legacyclassification.md) | 31 | `declaration-track:3897af5beebe46eaaa9ecfe6ea72d11cc6054c55d82751ecf83218e583149514` |
+| 3 | `structure` | [LegacyEvidenceProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LegacyEvidenceNamespaced.lean/declarations/legacyevidenceprojection.md) | 40 | `declaration-track:ef9fd86bcd2f13dc1688f24cded52813b2b4fb02f761dc3dcb5f56e9d134979a` |
+| 4 | `def` | [LegacyClassification.SameLabel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LegacyEvidenceNamespaced.lean/declarations/legacyclassification-samelabel.md) | 52 | `declaration-track:48f2416852156f739cbd93175a7539111f543a033cb99b3ee89e8b90a4315795` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

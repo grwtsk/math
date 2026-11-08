@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFinitePublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFinitePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFinitePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFinitePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [isFinite](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFinitePublic.lean/declarations/isfinite.md) | 33 | `declaration-track:5d0b9e1b149434a8e7f1163b6f99d8716b4453640ee5d901b07d58e22a43ad5d` |
-| 2 | `lemma` | [prop_isFinite_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFinitePublic.lean/declarations/prop-isfinite-iff.md) | 37 | `result-track:7193af0a41e975155fdb960d8387687f5c55ae56ef582522411ffaccc5737768` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFinitePublic.lean/declarations/instance.md) | 39 | `declaration-track:c266556e318ed9f90cd1a83af63d7109429fd93d5fc624a4b7536f3b64b60d86` |
+| 1 | `def` | [isFinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFinitePublic.lean/declarations/isfinite.md) | 33 | `declaration-track:5d0b9e1b149434a8e7f1163b6f99d8716b4453640ee5d901b07d58e22a43ad5d` |
+| 2 | `lemma` | [prop_isFinite_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFinitePublic.lean/declarations/prop-isfinite-iff.md) | 37 | `result-track:7193af0a41e975155fdb960d8387687f5c55ae56ef582522411ffaccc5737768` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IsFinitePublic.lean/declarations/instance.md) | 39 | `declaration-track:c266556e318ed9f90cd1a83af63d7109429fd93d5fc624a4b7536f3b64b60d86` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

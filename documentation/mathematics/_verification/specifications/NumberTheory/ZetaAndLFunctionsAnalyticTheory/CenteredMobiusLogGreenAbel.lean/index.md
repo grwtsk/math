@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenMeshPhase`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenMeshPhase.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenMeshPhase`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenMeshPhase.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [greenMeshWeight](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/declarations/greenmeshweight.md) | 15 | `declaration-track:47bb408f6f9965515d02a7b0157a4cc5c268b23dbb35f809cf6a2a6b65e77d9c` |
-| 2 | `def` | [greenMeshPhasePartialSum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/declarations/greenmeshphasepartialsum.md) | 18 | `declaration-track:90f58cce190850ab36730b4e3b80792a0a9a99d4a09787c2497e88f46f4dc171` |
-| 3 | `theorem` | [greenMesh_weighted_phase_abel](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/declarations/greenmesh-weighted-phase-abel.md) | 22 | `result-track:b6f1acd5b00c27f1250045a533632a4dcd4171f4a98af164f137de8c5fb8f019` |
-| 4 | `theorem` | [greenMeshWeight_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/declarations/greenmeshweight-nonnegative.md) | 53 | `result-track:15fc1816975f3c345e0db9c48e4eff1d7b9c6736fc72ed5f3986be156490f5ac` |
-| 5 | `theorem` | [greenMeshWeight_antitone](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/declarations/greenmeshweight-antitone.md) | 59 | `result-track:37a68ace38a2ec2bf0283a9e480585ef81a99aa31184f7f298a8d465b7f490fa` |
-| 6 | `theorem` | [greenMeshWeight_abel_mass_le_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/declarations/greenmeshweight-abel-mass-le-one.md) | 71 | `result-track:d0729410a8616deac435ab2da7a3bda74bc13e8dc5aee357f098f0d16f9fdfea` |
-| 7 | `theorem` | [norm_greenMesh_weighted_phase_sum_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/declarations/norm-greenmesh-weighted-phase-sum-le.md) | 92 | `result-track:a66032d49516f4906913e9f6b3e5afec6334adcef78a095d1a219a146f52766c` |
+| 1 | `def` | [greenMeshWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/declarations/greenmeshweight.md) | 15 | `declaration-track:47bb408f6f9965515d02a7b0157a4cc5c268b23dbb35f809cf6a2a6b65e77d9c` |
+| 2 | `def` | [greenMeshPhasePartialSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/declarations/greenmeshphasepartialsum.md) | 18 | `declaration-track:90f58cce190850ab36730b4e3b80792a0a9a99d4a09787c2497e88f46f4dc171` |
+| 3 | `theorem` | [greenMesh_weighted_phase_abel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/declarations/greenmesh-weighted-phase-abel.md) | 22 | `result-track:b6f1acd5b00c27f1250045a533632a4dcd4171f4a98af164f137de8c5fb8f019` |
+| 4 | `theorem` | [greenMeshWeight_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/declarations/greenmeshweight-nonnegative.md) | 53 | `result-track:15fc1816975f3c345e0db9c48e4eff1d7b9c6736fc72ed5f3986be156490f5ac` |
+| 5 | `theorem` | [greenMeshWeight_antitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/declarations/greenmeshweight-antitone.md) | 59 | `result-track:37a68ace38a2ec2bf0283a9e480585ef81a99aa31184f7f298a8d465b7f490fa` |
+| 6 | `theorem` | [greenMeshWeight_abel_mass_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/declarations/greenmeshweight-abel-mass-le-one.md) | 71 | `result-track:d0729410a8616deac435ab2da7a3bda74bc13e8dc5aee357f098f0d16f9fdfea` |
+| 7 | `theorem` | [norm_greenMesh_weighted_phase_sum_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/declarations/norm-greenmesh-weighted-phase-sum-le.md) | 92 | `result-track:a66032d49516f4906913e9f6b3e5afec6334adcef78a095d1a219a146f52766c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

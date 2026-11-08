@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ENatLatticeSourceEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ENatLatticeSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ENatLatticeSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ENatLatticeSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/ENatLatticeSourceEdition2.lean/declarations/instance.md) | 22 | `declaration-track:fadcf7150f4ee101aa4dd3646371eebb22eb5d259a9d6f9800e318166f8ee3b8` |
-| 2 | `lemma` | [iSup_coe_lt_top](../../../../../../ComputerScience/TheoryOfData/DataStructures/ENatLatticeSourceEdition2.lean/declarations/isup-coe-lt-top.md) | 29 | `result-track:4470ac77ece02cd8bd611a86a0f3b8b6400b116fb9cb42d97f6b5c2fe9afe741` |
-| 3 | `theorem` | [coe_iSup](../../../../../../ComputerScience/TheoryOfData/DataStructures/ENatLatticeSourceEdition2.lean/declarations/coe-isup.md) | 32 | `result-track:48b1f84ba53b09a9972b43ad8b2b51458ec9b2fa5a58d351e067332ede123dd5` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ENatLatticeSourceEdition2.lean/declarations/instance.md) | 22 | `declaration-track:fadcf7150f4ee101aa4dd3646371eebb22eb5d259a9d6f9800e318166f8ee3b8` |
+| 2 | `lemma` | [iSup_coe_lt_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ENatLatticeSourceEdition2.lean/declarations/isup-coe-lt-top.md) | 29 | `result-track:4470ac77ece02cd8bd611a86a0f3b8b6400b116fb9cb42d97f6b5c2fe9afe741` |
+| 3 | `theorem` | [coe_iSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ENatLatticeSourceEdition2.lean/declarations/coe-isup.md) | 32 | `result-track:48b1f84ba53b09a9972b43ad8b2b51458ec9b2fa5a58d351e067332ede123dd5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

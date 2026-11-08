@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Identity.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Identity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Identity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Identity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ObligationIdentity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Identity.lean/declarations/obligationidentity.md) | 14 | `declaration-track:b048120e7d8b3faa9e962c869bf8e30699f20ac9d78cced4a0fb102f2287caaf` |
-| 2 | `structure` | [IdentitySystem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Identity.lean/declarations/identitysystem.md) | 21 | `declaration-track:a71b9e3ddb298feba6a65e9f71b6f3c8afca503bd747b58863075182e58bae27` |
-| 3 | `theorem` | [IdentitySystem.equal_of_identity_equal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Identity.lean/declarations/identitysystem-equal-of-identity-equal.md) | 25 | `result-track:1d31e0f53bc6ce5cbf5e8e946ccb52953f4ba662c71bcaa26863b908c89d33a8` |
+| 1 | `structure` | [ObligationIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Identity.lean/declarations/obligationidentity.md) | 14 | `declaration-track:b048120e7d8b3faa9e962c869bf8e30699f20ac9d78cced4a0fb102f2287caaf` |
+| 2 | `structure` | [IdentitySystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Identity.lean/declarations/identitysystem.md) | 21 | `declaration-track:a71b9e3ddb298feba6a65e9f71b6f3c8afca503bd747b58863075182e58bae27` |
+| 3 | `theorem` | [IdentitySystem.equal_of_identity_equal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Identity.lean/declarations/identitysystem-equal-of-identity-equal.md) | 25 | `result-track:1d31e0f53bc6ce5cbf5e8e946ccb52953f4ba662c71bcaa26863b908c89d33a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

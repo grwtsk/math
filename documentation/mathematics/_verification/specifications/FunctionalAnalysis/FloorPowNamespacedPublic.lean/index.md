@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/FloorPowNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/FloorPowNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_div_of_monotone_of_exists_subseq_tendsto_div](../../../../FunctionalAnalysis/FloorPowNamespacedPublic.lean/declarations/tendsto-div-of-monotone-of-exists-subseq-tendsto-div.md) | 39 | `result-track:5fa110a1fd4faea3f25cc65bb0b858f0699dc8543656ad76645091ddeb1dc328` |
-| 2 | `theorem` | [tendsto_div_of_monotone_of_tendsto_div_floor_pow](../../../../FunctionalAnalysis/FloorPowNamespacedPublic.lean/declarations/tendsto-div-of-monotone-of-tendsto-div-floor-pow.md) | 190 | `result-track:8a0d57c9cebc835d08df180b1469502dd7de59c778d9340ee8b3f34b57c6c0a6` |
-| 3 | `theorem` | [sum_div_pow_sq_le_div_sq](../../../../FunctionalAnalysis/FloorPowNamespacedPublic.lean/declarations/sum-div-pow-sq-le-div-sq.md) | 222 | `result-track:998924d2c82c764fcc217ce98e75ee8efa089cd8d1afb9712a7510fbf6b057eb` |
-| 4 | `theorem` | [mul_pow_le_nat_floor_pow](../../../../FunctionalAnalysis/FloorPowNamespacedPublic.lean/declarations/mul-pow-le-nat-floor-pow.md) | 266 | `result-track:e3c3abb3a3ec27cfed87340cb839544e16b75a95dc964ae71a27219c0fec8d84` |
-| 5 | `theorem` | [sum_div_nat_floor_pow_sq_le_div_sq](../../../../FunctionalAnalysis/FloorPowNamespacedPublic.lean/declarations/sum-div-nat-floor-pow-sq-le-div-sq.md) | 279 | `result-track:43e755c84b7d1dfea34f8078134300ec2e22f6bfbce5e9d51b05cb8cf097a35f` |
+| 1 | `theorem` | [tendsto_div_of_monotone_of_exists_subseq_tendsto_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowNamespacedPublic.lean/declarations/tendsto-div-of-monotone-of-exists-subseq-tendsto-div.md) | 39 | `result-track:5fa110a1fd4faea3f25cc65bb0b858f0699dc8543656ad76645091ddeb1dc328` |
+| 2 | `theorem` | [tendsto_div_of_monotone_of_tendsto_div_floor_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowNamespacedPublic.lean/declarations/tendsto-div-of-monotone-of-tendsto-div-floor-pow.md) | 190 | `result-track:8a0d57c9cebc835d08df180b1469502dd7de59c778d9340ee8b3f34b57c6c0a6` |
+| 3 | `theorem` | [sum_div_pow_sq_le_div_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowNamespacedPublic.lean/declarations/sum-div-pow-sq-le-div-sq.md) | 222 | `result-track:998924d2c82c764fcc217ce98e75ee8efa089cd8d1afb9712a7510fbf6b057eb` |
+| 4 | `theorem` | [mul_pow_le_nat_floor_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowNamespacedPublic.lean/declarations/mul-pow-le-nat-floor-pow.md) | 266 | `result-track:e3c3abb3a3ec27cfed87340cb839544e16b75a95dc964ae71a27219c0fec8d84` |
+| 5 | `theorem` | [sum_div_nat_floor_pow_sq_le_div_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowNamespacedPublic.lean/declarations/sum-div-nat-floor-pow-sq-le-div-sq.md) | 279 | `result-track:43e755c84b7d1dfea34f8078134300ec2e22f6bfbce5e9d51b05cb8cf097a35f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

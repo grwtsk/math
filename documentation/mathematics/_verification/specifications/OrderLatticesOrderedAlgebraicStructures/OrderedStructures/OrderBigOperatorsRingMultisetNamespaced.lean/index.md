@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderBigOperatorsRingMultisetNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderBigOperatorsRingMultisetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderBigOperatorsRingMultisetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderBigOperatorsRingMultisetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [CanonicallyOrderedAdd.multiset_prod_pos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderBigOperatorsRingMultisetNamespaced.lean/declarations/canonicallyorderedadd-multiset-prod-pos.md) | 27 | `result-track:62d1dae96966c9a17aca924c9585feba99372e571a06cbb9e7c1f9f07d093181` |
-| 2 | `theorem` | [Multiset.le_prod_of_submultiplicative_on_pred_of_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderBigOperatorsRingMultisetNamespaced.lean/declarations/multiset-le-prod-of-submultiplicative-on-pred-of-nonneg.md) | 38 | `result-track:deadc8d1ecfcda8ae57c80d84bdc22d2940d6e89a3c64689d657234e5066be33` |
-| 3 | `theorem` | [Multiset.le_prod_of_submultiplicative_of_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderBigOperatorsRingMultisetNamespaced.lean/declarations/multiset-le-prod-of-submultiplicative-of-nonneg.md) | 53 | `result-track:54d65106f9607fd31d8f4379f282616051b751f012bf7e1778539ea77a42aef4` |
+| 1 | `lemma` | [CanonicallyOrderedAdd.multiset_prod_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderBigOperatorsRingMultisetNamespaced.lean/declarations/canonicallyorderedadd-multiset-prod-pos.md) | 27 | `result-track:62d1dae96966c9a17aca924c9585feba99372e571a06cbb9e7c1f9f07d093181` |
+| 2 | `theorem` | [Multiset.le_prod_of_submultiplicative_on_pred_of_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderBigOperatorsRingMultisetNamespaced.lean/declarations/multiset-le-prod-of-submultiplicative-on-pred-of-nonneg.md) | 38 | `result-track:deadc8d1ecfcda8ae57c80d84bdc22d2940d6e89a3c64689d657234e5066be33` |
+| 3 | `theorem` | [Multiset.le_prod_of_submultiplicative_of_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderBigOperatorsRingMultisetNamespaced.lean/declarations/multiset-le-prod-of-submultiplicative-of-nonneg.md) | 53 | `result-track:54d65106f9607fd31d8f4379f282616051b751f012bf7e1778539ea77a42aef4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

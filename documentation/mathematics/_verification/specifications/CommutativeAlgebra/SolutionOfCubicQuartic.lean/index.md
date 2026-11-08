@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SolutionOfCubicQuartic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SolutionOfCubicQuartic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SolutionOfCubicQuartic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SolutionOfCubicQuartic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cube_root_of_unity_sum](../../../../CommutativeAlgebra/SolutionOfCubicQuartic.lean/declarations/cube-root-of-unity-sum.md) | 82 | `result-track:3188f7a22b8f4e19582be05038d0cecd9fb137562255fc910a2e9ba1c634a022` |
-| 2 | `theorem` | [cubic_depressed_eq_zero_iff](../../../../CommutativeAlgebra/SolutionOfCubicQuartic.lean/declarations/cubic-depressed-eq-zero-iff.md) | 86 | `result-track:a65a19c77b2a621e3df9b516047794934bc52efb692742c2b063db12645149ac` |
-| 3 | `theorem` | [cubic_eq_zero_iff](../../../../CommutativeAlgebra/SolutionOfCubicQuartic.lean/declarations/cubic-eq-zero-iff.md) | 107 | `result-track:add288f76bd181310f0f2a8f6389c3d28f8bedc666bf2d50a285363b44618bdb` |
-| 4 | `theorem` | [cubic_eq_zero_iff_of_p_eq_zero](../../../../CommutativeAlgebra/SolutionOfCubicQuartic.lean/declarations/cubic-eq-zero-iff-of-p-eq-zero.md) | 125 | `result-track:230a93374fba7c732f28985c928ba1f0f73e249a55d36f73e7d7e654e3ba0253` |
-| 5 | `theorem` | [quartic_depressed_eq_zero_iff](../../../../CommutativeAlgebra/SolutionOfCubicQuartic.lean/declarations/quartic-depressed-eq-zero-iff.md) | 166 | `result-track:7da9cce3316a139e6285bb8031941d47387aaf1c70fa1cedfaac29a1ab5f97f4` |
-| 6 | `theorem` | [quartic_eq_zero_iff](../../../../CommutativeAlgebra/SolutionOfCubicQuartic.lean/declarations/quartic-eq-zero-iff.md) | 198 | `result-track:1919cef69fc530dbbef17f109e4aea3b49a33afd739d434e30982237ed3f2aa5` |
-| 7 | `theorem` | [quartic_eq_zero_iff_of_q_eq_zero](../../../../CommutativeAlgebra/SolutionOfCubicQuartic.lean/declarations/quartic-eq-zero-iff-of-q-eq-zero.md) | 224 | `result-track:f9dd60989b309626b76e4bdb419714d38c74f21821da4d4ac0d04e413097ec08` |
+| 1 | `theorem` | [cube_root_of_unity_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SolutionOfCubicQuartic.lean/declarations/cube-root-of-unity-sum.md) | 82 | `result-track:3188f7a22b8f4e19582be05038d0cecd9fb137562255fc910a2e9ba1c634a022` |
+| 2 | `theorem` | [cubic_depressed_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SolutionOfCubicQuartic.lean/declarations/cubic-depressed-eq-zero-iff.md) | 86 | `result-track:a65a19c77b2a621e3df9b516047794934bc52efb692742c2b063db12645149ac` |
+| 3 | `theorem` | [cubic_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SolutionOfCubicQuartic.lean/declarations/cubic-eq-zero-iff.md) | 107 | `result-track:add288f76bd181310f0f2a8f6389c3d28f8bedc666bf2d50a285363b44618bdb` |
+| 4 | `theorem` | [cubic_eq_zero_iff_of_p_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SolutionOfCubicQuartic.lean/declarations/cubic-eq-zero-iff-of-p-eq-zero.md) | 125 | `result-track:230a93374fba7c732f28985c928ba1f0f73e249a55d36f73e7d7e654e3ba0253` |
+| 5 | `theorem` | [quartic_depressed_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SolutionOfCubicQuartic.lean/declarations/quartic-depressed-eq-zero-iff.md) | 166 | `result-track:7da9cce3316a139e6285bb8031941d47387aaf1c70fa1cedfaac29a1ab5f97f4` |
+| 6 | `theorem` | [quartic_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SolutionOfCubicQuartic.lean/declarations/quartic-eq-zero-iff.md) | 198 | `result-track:1919cef69fc530dbbef17f109e4aea3b49a33afd739d434e30982237ed3f2aa5` |
+| 7 | `theorem` | [quartic_eq_zero_iff_of_q_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SolutionOfCubicQuartic.lean/declarations/quartic-eq-zero-iff-of-q-eq-zero.md) | 224 | `result-track:f9dd60989b309626b76e4bdb419714d38c74f21821da4d4ac0d04e413097ec08` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

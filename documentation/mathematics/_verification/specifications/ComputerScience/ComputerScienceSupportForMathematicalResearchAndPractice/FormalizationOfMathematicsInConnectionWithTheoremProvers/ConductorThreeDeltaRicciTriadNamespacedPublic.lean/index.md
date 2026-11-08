@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeDeltaRicciTriadNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeDeltaRicciTriadNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeDeltaRicciTriadNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeDeltaRicciTriadNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [deltaRicciAssemblyAssumptions_imply_primeMomentProgram](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeDeltaRicciTriadNamespacedPublic.lean/declarations/deltaricciassemblyassumptions-imply-primemomentprogram.md) | 44 | `result-track:51324ae64d0918c42b28433f5df66d65c5f796fb8a44422a17a610048a66eb51` |
-| 2 | `theorem` | [deltaRicciAssemblyAssumptions_imply_grh](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeDeltaRicciTriadNamespacedPublic.lean/declarations/deltaricciassemblyassumptions-imply-grh.md) | 55 | `result-track:b6d88cbac87a8282bf2e9257ab5b6055f1379bbe73da207cf9d1ca642c99e2dd` |
+| 1 | `theorem` | [deltaRicciAssemblyAssumptions_imply_primeMomentProgram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeDeltaRicciTriadNamespacedPublic.lean/declarations/deltaricciassemblyassumptions-imply-primemomentprogram.md) | 44 | `result-track:51324ae64d0918c42b28433f5df66d65c5f796fb8a44422a17a610048a66eb51` |
+| 2 | `theorem` | [deltaRicciAssemblyAssumptions_imply_grh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeDeltaRicciTriadNamespacedPublic.lean/declarations/deltaricciassemblyassumptions-imply-grh.md) | 55 | `result-track:b6d88cbac87a8282bf2e9257ab5b6055f1379bbe73da207cf9d1ca642c99e2dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

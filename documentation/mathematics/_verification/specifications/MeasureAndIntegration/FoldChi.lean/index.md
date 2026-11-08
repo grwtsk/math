@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FoldChi.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FoldChi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FoldChi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FoldChi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [factorsThrough_inv](../../../../MeasureAndIntegration/FoldChi.lean/declarations/factorsthrough-inv.md) | 36 | `result-track:19b2e90c5ca6d64d0733eb9b44e5736e6986857b21b4b904676d77aa4708757a` |
-| 2 | `lemma` | [conductor_inv](../../../../MeasureAndIntegration/FoldChi.lean/declarations/conductor-inv.md) | 41 | `result-track:8e0b1b042ca1af967428fcf5cbd7f6a10560871c187d524cbba7155f60d99d3d` |
-| 3 | `lemma` | [isPrimitive_inv](../../../../MeasureAndIntegration/FoldChi.lean/declarations/isprimitive-inv.md) | 51 | `result-track:3228cb1e1c6878fe70ee5976f875cee4ffc2d158de5a02233b8a4a06bafdcbc1` |
-| 4 | `lemma` | [gammaFactor_conj](../../../../MeasureAndIntegration/FoldChi.lean/declarations/gammafactor-conj.md) | 58 | `result-track:36f9fd6d33b1e1b0b45b0b8784de5c1f8fbd29e536f08d5316f7fe0d54ca746e` |
-| 5 | `lemma` | [gammaFactor_inv](../../../../MeasureAndIntegration/FoldChi.lean/declarations/gammafactor-inv.md) | 65 | `result-track:78181887c857cebf097a0d5ade116e7586eaa9542c93f3092f59ad289dd0e376` |
-| 6 | `lemma` | [completedLFunction_inv_eq_conj](../../../../MeasureAndIntegration/FoldChi.lean/declarations/completedlfunction-inv-eq-conj.md) | 82 | `result-track:936ec3883e08db9e36b6cef37a2116affb0153d6d4cfb73d68740df035a39ced` |
-| 7 | `lemma` | [completedLSym_inv_eq_conj](../../../../MeasureAndIntegration/FoldChi.lean/declarations/completedlsym-inv-eq-conj.md) | 105 | `result-track:63f2141cfa0cd5ce58a9034922c723616e8d6618c2c675ee1f31a74f68af91d9` |
-| 8 | `lemma` | [logDeriv_completedLSym_inv_conj](../../../../MeasureAndIntegration/FoldChi.lean/declarations/logderiv-completedlsym-inv-conj.md) | 115 | `result-track:c56432b192a433f41572365f22fb28dc011f2a15f128cb65845070801fb9c803` |
-| 9 | `theorem` | [logDeriv_completedLSym_one_sub_conj](../../../../MeasureAndIntegration/FoldChi.lean/declarations/logderiv-completedlsym-one-sub-conj.md) | 123 | `result-track:45da9c55512b2327b969bab924c42af6653c92b19eb6bda0e9a3998602d29411` |
-| 10 | `lemma` | [continuousAt_logDeriv_completedLSym](../../../../MeasureAndIntegration/FoldChi.lean/declarations/continuousat-logderiv-completedlsym.md) | 143 | `result-track:e0bc477f99be1a6675a1ab838aed8ff0b0386bafa7d8b70bd4ae55bb2c1bacd2` |
-| 11 | `lemma` | [horizontal_foldChi](../../../../MeasureAndIntegration/FoldChi.lean/declarations/horizontal-foldchi.md) | 155 | `result-track:46d580ec141e88752e7fe4c558cbf76d92506cf1110d5e7743c650c8e0ce1413` |
-| 12 | `lemma` | [vertical_foldChi](../../../../MeasureAndIntegration/FoldChi.lean/declarations/vertical-foldchi.md) | 186 | `result-track:5e89baf25cddb58b731ad8eca8d1532d2db50aa81df93c42aee939a8cf0dc6e6` |
-| 13 | `theorem` | [rectangleIntegral_logDeriv_completedLSym_eq_halfContour](../../../../MeasureAndIntegration/FoldChi.lean/declarations/rectangleintegral-logderiv-completedlsym-eq-halfcontour.md) | 200 | `result-track:843462c600fd58f2f26e09d5238c4d560af80cf6ea13dd1f42a72e443fce1ce9` |
-| 14 | `theorem` | [NcountL_eq_im_halfContour](../../../../MeasureAndIntegration/FoldChi.lean/declarations/ncountl-eq-im-halfcontour.md) | 223 | `result-track:423c0106149ee60e9e9a7dd27f389dbfcb728a227dcb1558c5c9477b5f711525` |
+| 1 | `lemma` | [factorsThrough_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FoldChi.lean/declarations/factorsthrough-inv.md) | 36 | `result-track:19b2e90c5ca6d64d0733eb9b44e5736e6986857b21b4b904676d77aa4708757a` |
+| 2 | `lemma` | [conductor_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FoldChi.lean/declarations/conductor-inv.md) | 41 | `result-track:8e0b1b042ca1af967428fcf5cbd7f6a10560871c187d524cbba7155f60d99d3d` |
+| 3 | `lemma` | [isPrimitive_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FoldChi.lean/declarations/isprimitive-inv.md) | 51 | `result-track:3228cb1e1c6878fe70ee5976f875cee4ffc2d158de5a02233b8a4a06bafdcbc1` |
+| 4 | `lemma` | [gammaFactor_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FoldChi.lean/declarations/gammafactor-conj.md) | 58 | `result-track:36f9fd6d33b1e1b0b45b0b8784de5c1f8fbd29e536f08d5316f7fe0d54ca746e` |
+| 5 | `lemma` | [gammaFactor_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FoldChi.lean/declarations/gammafactor-inv.md) | 65 | `result-track:78181887c857cebf097a0d5ade116e7586eaa9542c93f3092f59ad289dd0e376` |
+| 6 | `lemma` | [completedLFunction_inv_eq_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FoldChi.lean/declarations/completedlfunction-inv-eq-conj.md) | 82 | `result-track:936ec3883e08db9e36b6cef37a2116affb0153d6d4cfb73d68740df035a39ced` |
+| 7 | `lemma` | [completedLSym_inv_eq_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FoldChi.lean/declarations/completedlsym-inv-eq-conj.md) | 105 | `result-track:63f2141cfa0cd5ce58a9034922c723616e8d6618c2c675ee1f31a74f68af91d9` |
+| 8 | `lemma` | [logDeriv_completedLSym_inv_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FoldChi.lean/declarations/logderiv-completedlsym-inv-conj.md) | 115 | `result-track:c56432b192a433f41572365f22fb28dc011f2a15f128cb65845070801fb9c803` |
+| 9 | `theorem` | [logDeriv_completedLSym_one_sub_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FoldChi.lean/declarations/logderiv-completedlsym-one-sub-conj.md) | 123 | `result-track:45da9c55512b2327b969bab924c42af6653c92b19eb6bda0e9a3998602d29411` |
+| 10 | `lemma` | [continuousAt_logDeriv_completedLSym](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FoldChi.lean/declarations/continuousat-logderiv-completedlsym.md) | 143 | `result-track:e0bc477f99be1a6675a1ab838aed8ff0b0386bafa7d8b70bd4ae55bb2c1bacd2` |
+| 11 | `lemma` | [horizontal_foldChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FoldChi.lean/declarations/horizontal-foldchi.md) | 155 | `result-track:46d580ec141e88752e7fe4c558cbf76d92506cf1110d5e7743c650c8e0ce1413` |
+| 12 | `lemma` | [vertical_foldChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FoldChi.lean/declarations/vertical-foldchi.md) | 186 | `result-track:5e89baf25cddb58b731ad8eca8d1532d2db50aa81df93c42aee939a8cf0dc6e6` |
+| 13 | `theorem` | [rectangleIntegral_logDeriv_completedLSym_eq_halfContour](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FoldChi.lean/declarations/rectangleintegral-logderiv-completedlsym-eq-halfcontour.md) | 200 | `result-track:843462c600fd58f2f26e09d5238c4d560af80cf6ea13dd1f42a72e443fce1ce9` |
+| 14 | `theorem` | [NcountL_eq_im_halfContour](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FoldChi.lean/declarations/ncountl-eq-im-halfcontour.md) | 223 | `result-track:423c0106149ee60e9e9a7dd27f389dbfcb728a227dcb1558c5c9477b5f711525` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

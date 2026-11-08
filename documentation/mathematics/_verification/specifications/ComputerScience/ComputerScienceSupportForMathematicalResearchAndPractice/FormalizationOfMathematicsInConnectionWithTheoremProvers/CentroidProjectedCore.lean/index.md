@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CentroidProjectedCore.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CentroidProjectedCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CentroidProjectedCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CentroidProjectedCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [projectedCore](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CentroidProjectedCore.lean/declarations/projectedcore.md) | 8 | `declaration-track:426b8787eb164dd3cf43b6c4dc96b69814d8e03b31d645c85f197a96275cee43` |
-| 2 | `def` | [centralFixedPhase](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CentroidProjectedCore.lean/declarations/centralfixedphase.md) | 11 | `declaration-track:2fb0a83f3f38b65da8d451f22617d149641aff8ee241048a9646bbf4dee43331` |
-| 3 | `theorem` | [centralFixedPhase_isFixed](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CentroidProjectedCore.lean/declarations/centralfixedphase-isfixed.md) | 14 | `result-track:df15ea67fe81c73a1cb30cb3d8ac8965fc0ac7e4050f3e8437a73c0b860c5696` |
+| 1 | `def` | [projectedCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CentroidProjectedCore.lean/declarations/projectedcore.md) | 8 | `declaration-track:426b8787eb164dd3cf43b6c4dc96b69814d8e03b31d645c85f197a96275cee43` |
+| 2 | `def` | [centralFixedPhase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CentroidProjectedCore.lean/declarations/centralfixedphase.md) | 11 | `declaration-track:2fb0a83f3f38b65da8d451f22617d149641aff8ee241048a9646bbf4dee43331` |
+| 3 | `theorem` | [centralFixedPhase_isFixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CentroidProjectedCore.lean/declarations/centralfixedphase-isfixed.md) | 14 | `result-track:df15ea67fe81c73a1cb30cb3d8ac8965fc0ac7e4050f3e8437a73c0b860c5696` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

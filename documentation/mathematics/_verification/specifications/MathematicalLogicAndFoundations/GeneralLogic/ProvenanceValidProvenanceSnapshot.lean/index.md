@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProvenanceValidProvenanceSnapshot.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProvenanceValidProvenanceSnapshot.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProvenanceValidProvenanceSnapshot.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProvenanceValidProvenanceSnapshot.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ProvenanceTerminal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProvenanceValidProvenanceSnapshot.lean/declarations/provenanceterminal.md) | 9 | `declaration-track:a39a52fe9cce654c8084fd9664fdb8d22a9dfdd70c9cf5903906f6fce5cd43bb` |
-| 2 | `structure` | [ProvenanceEdge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProvenanceValidProvenanceSnapshot.lean/declarations/provenanceedge.md) | 14 | `declaration-track:c47ff97aab23cdd5dcf2bd8f5cac59f583c1d9be346102d3a1cc22cd57505717` |
-| 3 | `structure` | [ProvenancePath](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProvenanceValidProvenanceSnapshot.lean/declarations/provenancepath.md) | 21 | `declaration-track:a1094dc2c22a3e61b5ae9d5e5e96ebb1ea0d6b91210ede66b286f9bb660454e5` |
-| 4 | `def` | [ProvenancePath.Valid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProvenanceValidProvenanceSnapshot.lean/declarations/provenancepath-valid.md) | 28 | `declaration-track:09dbf6c687a0382728011095ffee4a456b04cf28a02de5305977f08ec25888b3` |
-| 5 | `theorem` | [validProvenance_snapshot](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProvenanceValidProvenanceSnapshot.lean/declarations/validprovenance-snapshot.md) | 41 | `result-track:94e746d62c1c44d6d2f40d9300d1b080331db1493934605fa2ef0dc368b6ef90` |
-| 6 | `structure` | [ProvenanceCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProvenanceValidProvenanceSnapshot.lean/declarations/provenancecertificate.md) | 50 | `declaration-track:452ba0aef1b8241cfb67e14f0891fa102455c2e06d56e5b47af0ac7132f60f6e` |
-| 7 | `theorem` | [provenanceCertificate_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProvenanceValidProvenanceSnapshot.lean/declarations/provenancecertificate-sound.md) | 58 | `result-track:43a0daaf64a0f79ca09aebb5710695cb3f587ea653d52f2603a76c9b93f10797` |
+| 1 | `inductive` | [ProvenanceTerminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProvenanceValidProvenanceSnapshot.lean/declarations/provenanceterminal.md) | 9 | `declaration-track:a39a52fe9cce654c8084fd9664fdb8d22a9dfdd70c9cf5903906f6fce5cd43bb` |
+| 2 | `structure` | [ProvenanceEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProvenanceValidProvenanceSnapshot.lean/declarations/provenanceedge.md) | 14 | `declaration-track:c47ff97aab23cdd5dcf2bd8f5cac59f583c1d9be346102d3a1cc22cd57505717` |
+| 3 | `structure` | [ProvenancePath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProvenanceValidProvenanceSnapshot.lean/declarations/provenancepath.md) | 21 | `declaration-track:a1094dc2c22a3e61b5ae9d5e5e96ebb1ea0d6b91210ede66b286f9bb660454e5` |
+| 4 | `def` | [ProvenancePath.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProvenanceValidProvenanceSnapshot.lean/declarations/provenancepath-valid.md) | 28 | `declaration-track:09dbf6c687a0382728011095ffee4a456b04cf28a02de5305977f08ec25888b3` |
+| 5 | `theorem` | [validProvenance_snapshot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProvenanceValidProvenanceSnapshot.lean/declarations/validprovenance-snapshot.md) | 41 | `result-track:94e746d62c1c44d6d2f40d9300d1b080331db1493934605fa2ef0dc368b6ef90` |
+| 6 | `structure` | [ProvenanceCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProvenanceValidProvenanceSnapshot.lean/declarations/provenancecertificate.md) | 50 | `declaration-track:452ba0aef1b8241cfb67e14f0891fa102455c2e06d56e5b47af0ac7132f60f6e` |
+| 7 | `theorem` | [provenanceCertificate_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProvenanceValidProvenanceSnapshot.lean/declarations/provenancecertificate-sound.md) | 58 | `result-track:43a0daaf64a0f79ca09aebb5710695cb3f587ea653d52f2603a76c9b93f10797` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

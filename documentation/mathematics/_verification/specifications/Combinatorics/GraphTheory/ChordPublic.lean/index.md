@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/ChordPublic.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/ChordPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChordPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChordPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsChord](../../../../../Combinatorics/GraphTheory/ChordPublic.lean/declarations/ischord.md) | 35 | `declaration-track:8da41fc0379846d6fe52b78c246d233722d658323ec6d8cd386ad8ee62e20c98` |
-| 2 | `theorem` | [isChord_sym2Mk](../../../../../Combinatorics/GraphTheory/ChordPublic.lean/declarations/ischord-sym2mk.md) | 39 | `result-track:a23bcc1e13cbd64615062a2bdf3f9f3571a318570b785c426b821b5411bbeea2` |
-| 3 | `def` | [IsChordless](../../../../../Combinatorics/GraphTheory/ChordPublic.lean/declarations/ischordless.md) | 45 | `declaration-track:55766afdbda268832cc9a5cb12a94f1a4adee188806befb19fbafc4917b12c7b` |
-| 4 | `theorem` | [isChordless_iff_forall_mem_edges](../../../../../Combinatorics/GraphTheory/ChordPublic.lean/declarations/ischordless-iff-forall-mem-edges.md) | 48 | `result-track:35ecdc9d89d8c4ee441e4467bef09968ca8c033713cb5825869183332804b8c6` |
-| 5 | `theorem` | [IsChordless.mem_edges](../../../../../Combinatorics/GraphTheory/ChordPublic.lean/declarations/ischordless-mem-edges.md) | 53 | `result-track:fb3865ee90cea0e944a21ab8b535764da4364450752e8a98ceb0b107e728998e` |
-| 6 | `theorem` | [_root_.SimpleGraph.Adj.isChordless_toWalk](../../../../../Combinatorics/GraphTheory/ChordPublic.lean/declarations/root-simplegraph-adj-ischordless-towalk.md) | 57 | `result-track:c52332f7476ef4cc89e1bd2574edabb4e804349cd7fccd764c1c3c753c388678` |
+| 1 | `def` | [IsChord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChordPublic.lean/declarations/ischord.md) | 35 | `declaration-track:8da41fc0379846d6fe52b78c246d233722d658323ec6d8cd386ad8ee62e20c98` |
+| 2 | `theorem` | [isChord_sym2Mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChordPublic.lean/declarations/ischord-sym2mk.md) | 39 | `result-track:a23bcc1e13cbd64615062a2bdf3f9f3571a318570b785c426b821b5411bbeea2` |
+| 3 | `def` | [IsChordless](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChordPublic.lean/declarations/ischordless.md) | 45 | `declaration-track:55766afdbda268832cc9a5cb12a94f1a4adee188806befb19fbafc4917b12c7b` |
+| 4 | `theorem` | [isChordless_iff_forall_mem_edges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChordPublic.lean/declarations/ischordless-iff-forall-mem-edges.md) | 48 | `result-track:35ecdc9d89d8c4ee441e4467bef09968ca8c033713cb5825869183332804b8c6` |
+| 5 | `theorem` | [IsChordless.mem_edges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChordPublic.lean/declarations/ischordless-mem-edges.md) | 53 | `result-track:fb3865ee90cea0e944a21ab8b535764da4364450752e8a98ceb0b107e728998e` |
+| 6 | `theorem` | [_root_.SimpleGraph.Adj.isChordless_toWalk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChordPublic.lean/declarations/root-simplegraph-adj-ischordless-towalk.md) | 57 | `result-track:c52332f7476ef4cc89e1bd2574edabb4e804349cd7fccd764c1c3c753c388678` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

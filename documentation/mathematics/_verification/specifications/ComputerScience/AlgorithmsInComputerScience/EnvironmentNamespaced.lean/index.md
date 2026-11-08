@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/EnvironmentNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/EnvironmentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EnvironmentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EnvironmentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [EnvironmentCapture](../../../../../ComputerScience/AlgorithmsInComputerScience/EnvironmentNamespaced.lean/declarations/environmentcapture.md) | 20 | `declaration-track:bde7d41859d13aa87b0ca71cc3112972b17df6a605b1584c9240bb23beaebc39` |
-| 2 | `def` | [capsuleKey](../../../../../ComputerScience/AlgorithmsInComputerScience/EnvironmentNamespaced.lean/declarations/capsulekey.md) | 35 | `declaration-track:f41bba43ec05d28ead837ceda7d66bf4ab275a36216879f4e6c6526098b6135a` |
-| 3 | `def` | [declarationInventory](../../../../../ComputerScience/AlgorithmsInComputerScience/EnvironmentNamespaced.lean/declarations/declarationinventory.md) | 39 | `declaration-track:433b4e923374f1d85656197af9c68cb168c897bf9700658694b4c706ed7ec50d` |
-| 4 | `theorem` | [extraction_valid](../../../../../ComputerScience/AlgorithmsInComputerScience/EnvironmentNamespaced.lean/declarations/extraction-valid.md) | 46 | `result-track:89715d86e0646b0060f616b46609f5b8ad5675f0f03f3ebbb29423a788356e89` |
+| 1 | `structure` | [EnvironmentCapture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EnvironmentNamespaced.lean/declarations/environmentcapture.md) | 20 | `declaration-track:bde7d41859d13aa87b0ca71cc3112972b17df6a605b1584c9240bb23beaebc39` |
+| 2 | `def` | [capsuleKey](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EnvironmentNamespaced.lean/declarations/capsulekey.md) | 35 | `declaration-track:f41bba43ec05d28ead837ceda7d66bf4ab275a36216879f4e6c6526098b6135a` |
+| 3 | `def` | [declarationInventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EnvironmentNamespaced.lean/declarations/declarationinventory.md) | 39 | `declaration-track:433b4e923374f1d85656197af9c68cb168c897bf9700658694b4c706ed7ec50d` |
+| 4 | `theorem` | [extraction_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EnvironmentNamespaced.lean/declarations/extraction-valid.md) | 46 | `result-track:89715d86e0646b0060f616b46609f5b8ad5675f0f03f3ebbb29423a788356e89` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenGraph.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenGraph.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenGraph.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenGraph.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [SemanticRelationType](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenGraph.lean/declarations/semanticrelationtype.md) | 8 | `declaration-track:2a6152e0cf46a96491799828b0f26821aa9b780add6f7681c5d00d4a6a415cb5` |
-| 2 | `structure` | [SemanticEdge](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenGraph.lean/declarations/semanticedge.md) | 25 | `declaration-track:79b5c70f307f69e49c22bb8cae07a72c54aff217317a6c87d6e80d6de85dd741` |
-| 3 | `structure` | [ConnectivityObligation](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenGraph.lean/declarations/connectivityobligation.md) | 34 | `declaration-track:48142b9aac7860304ba111727a7cd24e5e61ea21736450a111bee62e36fa6210` |
-| 4 | `structure` | [TokenGraph](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenGraph.lean/declarations/tokengraph.md) | 39 | `declaration-track:a41f007e60b562359f408fe707eb612cffb0ee354bb084047fae388226fba707` |
-| 5 | `theorem` | [TokenGraph.vertices_are_tokens](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenGraph.lean/declarations/tokengraph-vertices-are-tokens.md) | 57 | `result-track:f8a9dcfc29f5a250cb9baf5c52d6c4ea2a9a7df7765ea7c580926248ac65d317` |
+| 1 | `inductive` | [SemanticRelationType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenGraph.lean/declarations/semanticrelationtype.md) | 8 | `declaration-track:2a6152e0cf46a96491799828b0f26821aa9b780add6f7681c5d00d4a6a415cb5` |
+| 2 | `structure` | [SemanticEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenGraph.lean/declarations/semanticedge.md) | 25 | `declaration-track:79b5c70f307f69e49c22bb8cae07a72c54aff217317a6c87d6e80d6de85dd741` |
+| 3 | `structure` | [ConnectivityObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenGraph.lean/declarations/connectivityobligation.md) | 34 | `declaration-track:48142b9aac7860304ba111727a7cd24e5e61ea21736450a111bee62e36fa6210` |
+| 4 | `structure` | [TokenGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenGraph.lean/declarations/tokengraph.md) | 39 | `declaration-track:a41f007e60b562359f408fe707eb612cffb0ee354bb084047fae388226fba707` |
+| 5 | `theorem` | [TokenGraph.vertices_are_tokens](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenGraph.lean/declarations/tokengraph-vertices-are-tokens.md) | 57 | `result-track:f8a9dcfc29f5a250cb9baf5c52d6c4ea2a9a7df7765ea7c580926248ac65d317` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

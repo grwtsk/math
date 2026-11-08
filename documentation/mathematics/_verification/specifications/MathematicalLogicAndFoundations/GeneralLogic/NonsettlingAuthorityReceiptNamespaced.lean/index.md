@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonsettlingAuthorityReceiptNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonsettlingAuthorityReceiptNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonsettlingAuthorityReceiptNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonsettlingAuthorityReceiptNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [NonsettlingAuthorityReceipt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonsettlingAuthorityReceiptNamespaced.lean/declarations/nonsettlingauthorityreceipt.md) | 18 | `declaration-track:ad7884bc5b35783b4db599183ae3aae4c6ec157062da30481f0bccb90c7c243d` |
-| 2 | `theorem` | [nonsettling_receipt_not_checked_proved](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonsettlingAuthorityReceiptNamespaced.lean/declarations/nonsettling-receipt-not-checked-proved.md) | 24 | `result-track:3796dd73ce184c9d6838618da1fbb61d6410be74db63e2b45b0d99143a621621` |
-| 3 | `theorem` | [nonsettling_receipt_has_boundary_residue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonsettlingAuthorityReceiptNamespaced.lean/declarations/nonsettling-receipt-has-boundary-residue.md) | 34 | `result-track:1c4a74a10988862a7001828604e2fb1d42139517613c85e1f3103c956f360d2d` |
+| 1 | `structure` | [NonsettlingAuthorityReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonsettlingAuthorityReceiptNamespaced.lean/declarations/nonsettlingauthorityreceipt.md) | 18 | `declaration-track:ad7884bc5b35783b4db599183ae3aae4c6ec157062da30481f0bccb90c7c243d` |
+| 2 | `theorem` | [nonsettling_receipt_not_checked_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonsettlingAuthorityReceiptNamespaced.lean/declarations/nonsettling-receipt-not-checked-proved.md) | 24 | `result-track:3796dd73ce184c9d6838618da1fbb61d6410be74db63e2b45b0d99143a621621` |
+| 3 | `theorem` | [nonsettling_receipt_has_boundary_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonsettlingAuthorityReceiptNamespaced.lean/declarations/nonsettling-receipt-has-boundary-residue.md) | 34 | `result-track:1c4a74a10988862a7001828604e2fb1d42139517613c85e1f3103c956f360d2d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

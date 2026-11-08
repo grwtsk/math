@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresentableLimits.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresentableLimits.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresentableLimits.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresentableLimits.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [surjective](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresentableLimits.lean/declarations/surjective.md) | 49 | `result-track:8befbd705861a21dd5d54eee1799b8ee88bcdf9657861a3fba01310840dbdad3` |
-| 2 | `lemma` | [injective](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresentableLimits.lean/declarations/injective.md) | 102 | `result-track:6dd53d401ade99986c2db0053b689f357090cb2e0c1d5e70dee9e9e48d8593a1` |
-| 3 | `def` | [isColimitMapCocone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresentableLimits.lean/declarations/iscolimitmapcocone.md) | 138 | `declaration-track:6159b2489ae80182c62ff656f97019b8d9ac60f31eb4f54ac5c7314edd3b084a` |
-| 4 | `lemma` | [isCardinalAccessible_of_isLimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresentableLimits.lean/declarations/iscardinalaccessible-of-islimit.md) | 150 | `result-track:d476f78b1a088d804dd2dba08aaee654ceb1801691e95fdbb5fc737af9ca06fd` |
-| 5 | `lemma` | [isCardinalPresentable_of_isColimit'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresentableLimits.lean/declarations/iscardinalpresentable-of-iscolimit.md) | 164 | `result-track:651087eebb42c3f841d21a1937b09b9aca3bad0c8d5f1c0fedeba4b575f1480b` |
-| 6 | `lemma` | [isCardinalPresentable_of_isColimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresentableLimits.lean/declarations/iscardinalpresentable-of-iscolimit-source-edition-2.md) | 175 | `result-track:e19b22caf304d33befa64d714bd4457cbc3a61d10eb8bc3cab0f7a2e2e82a2cd` |
+| 1 | `lemma` | [surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresentableLimits.lean/declarations/surjective.md) | 49 | `result-track:8befbd705861a21dd5d54eee1799b8ee88bcdf9657861a3fba01310840dbdad3` |
+| 2 | `lemma` | [injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresentableLimits.lean/declarations/injective.md) | 102 | `result-track:6dd53d401ade99986c2db0053b689f357090cb2e0c1d5e70dee9e9e48d8593a1` |
+| 3 | `def` | [isColimitMapCocone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresentableLimits.lean/declarations/iscolimitmapcocone.md) | 138 | `declaration-track:6159b2489ae80182c62ff656f97019b8d9ac60f31eb4f54ac5c7314edd3b084a` |
+| 4 | `lemma` | [isCardinalAccessible_of_isLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresentableLimits.lean/declarations/iscardinalaccessible-of-islimit.md) | 150 | `result-track:d476f78b1a088d804dd2dba08aaee654ceb1801691e95fdbb5fc737af9ca06fd` |
+| 5 | `lemma` | [isCardinalPresentable_of_isColimit'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresentableLimits.lean/declarations/iscardinalpresentable-of-iscolimit.md) | 164 | `result-track:651087eebb42c3f841d21a1937b09b9aca3bad0c8d5f1c0fedeba4b575f1480b` |
+| 6 | `lemma` | [isCardinalPresentable_of_isColimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresentableLimits.lean/declarations/iscardinalpresentable-of-iscolimit-source-edition-2.md) | 175 | `result-track:e19b22caf304d33befa64d714bd4457cbc3a61d10eb8bc3cab0f7a2e2e82a2cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

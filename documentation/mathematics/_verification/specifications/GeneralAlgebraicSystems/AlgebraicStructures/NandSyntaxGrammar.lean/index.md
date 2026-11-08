@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NandSyntaxGrammar.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NandSyntaxGrammar.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NandSyntaxGrammar.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NandSyntaxGrammar.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Folder.Boolean.NAND` — import line 21; external provider; requires a separately pinned dependency.
 - `Folder.Catalan.Tree` — import line 22; external provider; requires a separately pinned dependency.
 - `Folder.Spectral.Expansion` — import line 23; external provider; requires a separately pinned dependency.
-- [Binary Grammar And Tree Evaluation](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BinaryGrammarAndTreeEvaluation.lean/index.md) — import line 24; pinned internal source present.
+- [Binary Grammar And Tree Evaluation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BinaryGrammarAndTreeEvaluation.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [nandGrammar](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NandSyntaxGrammar.lean/declarations/nandgrammar.md) | 46 | `declaration-track:e153c0c2e8a86249ac65afbd5e0cdc63c8a15e4a39e63e88c33aaf49015f734c` |
+| 1 | `def` | [nandGrammar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NandSyntaxGrammar.lean/declarations/nandgrammar.md) | 46 | `declaration-track:e153c0c2e8a86249ac65afbd5e0cdc63c8a15e4a39e63e88c33aaf49015f734c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

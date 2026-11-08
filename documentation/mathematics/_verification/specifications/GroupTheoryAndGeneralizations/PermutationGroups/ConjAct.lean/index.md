@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ConjAct.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ConjAct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ConjAct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ConjAct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_conj_support](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ConjAct.lean/declarations/mem-conj-support.md) | 32 | `result-track:b3a292381cd2579b84f85f7408d1294881a8b5c25595707edd95be7f5987c2b0` |
-| 2 | `theorem` | [cycleFactorsFinset_conj](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ConjAct.lean/declarations/cyclefactorsfinset-conj.md) | 38 | `result-track:0ad3e469d4bb5345186324ab0d579e83fc0bd01185939a122ad0a73c4ed328a6` |
-| 3 | `theorem` | [mem_cycleFactorsFinset_conj'](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ConjAct.lean/declarations/mem-cyclefactorsfinset-conj.md) | 50 | `result-track:e9f4c6bee3b4d3308ab197ade477805c6552cb3b149b1239b2ea82261d97cfc9` |
-| 4 | `theorem` | [cycleFactorsFinset_conj_eq](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/ConjAct.lean/declarations/cyclefactorsfinset-conj-eq.md) | 56 | `result-track:570b9162dc64c2b8e409af17d4ec04359ba88b3c363a13066ea788cc5097cd52` |
+| 1 | `theorem` | [mem_conj_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ConjAct.lean/declarations/mem-conj-support.md) | 32 | `result-track:b3a292381cd2579b84f85f7408d1294881a8b5c25595707edd95be7f5987c2b0` |
+| 2 | `theorem` | [cycleFactorsFinset_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ConjAct.lean/declarations/cyclefactorsfinset-conj.md) | 38 | `result-track:0ad3e469d4bb5345186324ab0d579e83fc0bd01185939a122ad0a73c4ed328a6` |
+| 3 | `theorem` | [mem_cycleFactorsFinset_conj'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ConjAct.lean/declarations/mem-cyclefactorsfinset-conj.md) | 50 | `result-track:e9f4c6bee3b4d3308ab197ade477805c6552cb3b149b1239b2ea82261d97cfc9` |
+| 4 | `theorem` | [cycleFactorsFinset_conj_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/ConjAct.lean/declarations/cyclefactorsfinset-conj-eq.md) | 56 | `result-track:570b9162dc64c2b8e409af17d4ec04359ba88b3c363a13066ea788cc5097cd52` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

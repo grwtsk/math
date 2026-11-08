@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZipPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZipPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZipPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZipPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IterM.Intermediate.zip](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZipPublic.lean/declarations/iterm-intermediate-zip.md) | 28 | `declaration-track:e3251d82d48f1f285be8f23354ae30da36a2b6bb5d16dcf2d34eb3d8144878c4` |
-| 2 | `theorem` | [IterM.zip_eq_intermediateZip](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZipPublic.lean/declarations/iterm-zip-eq-intermediatezip.md) | 35 | `result-track:7130a61ba7996f063018e9ca732db2032975b1c8d1089911048d21a92fafc9ec` |
-| 3 | `theorem` | [IterM.step_intermediateZip](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZipPublic.lean/declarations/iterm-step-intermediatezip.md) | 39 | `result-track:a4391af9146225bf234d0aa2fb1256406bbe940c18be09b33925fc7b8c52483a` |
-| 4 | `theorem` | [IterM.step_zip](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZipPublic.lean/declarations/iterm-step-zip.md) | 77 | `result-track:1e769130d1a05d7879183dbde3f8c15e5c82b7a6546236aa98e859bd1c3c15f7` |
+| 1 | `def` | [IterM.Intermediate.zip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZipPublic.lean/declarations/iterm-intermediate-zip.md) | 28 | `declaration-track:e3251d82d48f1f285be8f23354ae30da36a2b6bb5d16dcf2d34eb3d8144878c4` |
+| 2 | `theorem` | [IterM.zip_eq_intermediateZip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZipPublic.lean/declarations/iterm-zip-eq-intermediatezip.md) | 35 | `result-track:7130a61ba7996f063018e9ca732db2032975b1c8d1089911048d21a92fafc9ec` |
+| 3 | `theorem` | [IterM.step_intermediateZip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZipPublic.lean/declarations/iterm-step-intermediatezip.md) | 39 | `result-track:a4391af9146225bf234d0aa2fb1256406bbe940c18be09b33925fc7b8c52483a` |
+| 4 | `theorem` | [IterM.step_zip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZipPublic.lean/declarations/iterm-step-zip.md) | 77 | `result-track:1e769130d1a05d7879183dbde3f8c15e5c82b7a6546236aa98e859bd1c3c15f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

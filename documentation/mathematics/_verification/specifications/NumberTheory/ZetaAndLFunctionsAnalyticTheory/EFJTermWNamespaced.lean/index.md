@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFJTermWNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFJTermWNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFJTermWNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFJTermWNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [DfroC](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFJTermWNamespaced.lean/declarations/dfroc.md) | 36 | `declaration-track:ee6f4e221cde288fe559ef46288c185af3b8879897d006d23d4ba45c419731a6` |
-| 2 | `theorem` | [DfroC_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFJTermWNamespaced.lean/declarations/dfroc-eq.md) | 39 | `result-track:c9ea718ba73ccb0426107173c6c237a2a4bad4d3a27985fb7f2d1afa380c7bee` |
-| 3 | `structure` | [FreezeFactsW](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFJTermWNamespaced.lean/declarations/freezefactsw.md) | 42 | `declaration-track:3d645429fab505f1ca738599f69b7b56266696d840823cf228aaa98f2f9f2169` |
-| 4 | `theorem` | [JcorrW_estimate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFJTermWNamespaced.lean/declarations/jcorrw-estimate.md) | 50 | `result-track:b8052c77da40a732eee6f07602a7e3fe73f4a1da3d81497fa5612f7f8d56ca32` |
+| 1 | `def` | [DfroC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFJTermWNamespaced.lean/declarations/dfroc.md) | 36 | `declaration-track:ee6f4e221cde288fe559ef46288c185af3b8879897d006d23d4ba45c419731a6` |
+| 2 | `theorem` | [DfroC_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFJTermWNamespaced.lean/declarations/dfroc-eq.md) | 39 | `result-track:c9ea718ba73ccb0426107173c6c237a2a4bad4d3a27985fb7f2d1afa380c7bee` |
+| 3 | `structure` | [FreezeFactsW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFJTermWNamespaced.lean/declarations/freezefactsw.md) | 42 | `declaration-track:3d645429fab505f1ca738599f69b7b56266696d840823cf228aaa98f2f9f2169` |
+| 4 | `theorem` | [JcorrW_estimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFJTermWNamespaced.lean/declarations/jcorrw-estimate.md) | 50 | `result-track:b8052c77da40a732eee6f07602a7e3fe73f4a1da3d81497fa5612f7f8d56ca32` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

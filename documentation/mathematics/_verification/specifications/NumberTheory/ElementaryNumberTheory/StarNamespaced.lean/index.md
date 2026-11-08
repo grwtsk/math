@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/StarNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/StarNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/StarNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/StarNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../NumberTheory/ElementaryNumberTheory/StarNamespaced.lean/declarations/instance-source-edition-2.md) | 29 | `declaration-track:5252df5ca85012fe2bcbb3df477fd68c8dae3ab75bfb5b83eb8cd8680926eecc` |
-| 2 | `instance` | [(anonymous)](../../../../../NumberTheory/ElementaryNumberTheory/StarNamespaced.lean/declarations/instance-source-edition-3.md) | 35 | `declaration-track:ef31e080d44f7a3395d1aa2e88cab73c177a823cfe7321a332a00ca7bffef2e3` |
-| 3 | `instance` | [(anonymous)](../../../../../NumberTheory/ElementaryNumberTheory/StarNamespaced.lean/declarations/instance.md) | 37 | `declaration-track:0c6b9e702d39479686487d5d224a416a7507f48c92581b86db14b22e1c268465` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/StarNamespaced.lean/declarations/instance-source-edition-2.md) | 29 | `declaration-track:5252df5ca85012fe2bcbb3df477fd68c8dae3ab75bfb5b83eb8cd8680926eecc` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/StarNamespaced.lean/declarations/instance-source-edition-3.md) | 35 | `declaration-track:ef31e080d44f7a3395d1aa2e88cab73c177a823cfe7321a332a00ca7bffef2e3` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/StarNamespaced.lean/declarations/instance.md) | 37 | `declaration-track:0c6b9e702d39479686487d5d224a416a7507f48c92581b86db14b22e1c268465` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

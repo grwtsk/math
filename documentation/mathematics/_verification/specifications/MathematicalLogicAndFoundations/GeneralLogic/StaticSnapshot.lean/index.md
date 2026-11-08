@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshot.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshot.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshot.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshot.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StaticComposite](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshot.lean/declarations/staticcomposite.md) | 7 | `declaration-track:471b851362fa273e429f8a8930594a78af65208a26bc26d3080f8d7930d36012` |
-| 2 | `def` | [phaseOneStaticComposite](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshot.lean/declarations/phaseonestaticcomposite.md) | 15 | `declaration-track:a90e1e69242e98dcf184118ac5d4b49961e0134c410c34c2988ac75b650205df` |
-| 3 | `abbrev` | [DiagonalStatus](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshot.lean/declarations/diagonalstatus.md) | 23 | `declaration-track:19d397169298fe573f791f91f8c4ee26854e7dd698b2cbaa39b8e02aaba7a7d7` |
-| 4 | `structure` | [ActiveOverlay](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshot.lean/declarations/activeoverlay.md) | 25 | `declaration-track:2bfb923eb994877130287b3825546b1b8f32f04e84f1027f9d17f9ffe2b491b0` |
-| 5 | `structure` | [ActivationValid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshot.lean/declarations/activationvalid.md) | 32 | `declaration-track:0b200d4ec48b355021c5eae3bd95d5f150f5ab0257140b17681cc0d6c427b428` |
+| 1 | `structure` | [StaticComposite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshot.lean/declarations/staticcomposite.md) | 7 | `declaration-track:471b851362fa273e429f8a8930594a78af65208a26bc26d3080f8d7930d36012` |
+| 2 | `def` | [phaseOneStaticComposite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshot.lean/declarations/phaseonestaticcomposite.md) | 15 | `declaration-track:a90e1e69242e98dcf184118ac5d4b49961e0134c410c34c2988ac75b650205df` |
+| 3 | `abbrev` | [DiagonalStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshot.lean/declarations/diagonalstatus.md) | 23 | `declaration-track:19d397169298fe573f791f91f8c4ee26854e7dd698b2cbaa39b8e02aaba7a7d7` |
+| 4 | `structure` | [ActiveOverlay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshot.lean/declarations/activeoverlay.md) | 25 | `declaration-track:2bfb923eb994877130287b3825546b1b8f32f04e84f1027f9d17f9ffe2b491b0` |
+| 5 | `structure` | [ActivationValid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StaticSnapshot.lean/declarations/activationvalid.md) | 32 | `declaration-track:0b200d4ec48b355021c5eae3bd95d5f150f5ab0257140b17681cc0d6c427b428` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

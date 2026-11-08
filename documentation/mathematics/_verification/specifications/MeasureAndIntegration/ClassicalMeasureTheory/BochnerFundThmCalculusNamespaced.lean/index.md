@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Filter.Tendsto.integral_sub_linear_isLittleO_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespaced.lean/declarations/filter-tendsto-integral-sub-linear-islittleo-ae.md) | 45 | `result-track:6f31d67044f458a8e0b5300f79cfdef1970607e77a4f58a029274f667191a3ca` |
-| 2 | `theorem` | [ContinuousWithinAt.integral_sub_linear_isLittleO_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespaced.lean/declarations/continuouswithinat-integral-sub-linear-islittleo-ae.md) | 77 | `result-track:440254a87aa1ce33d2d20a759eb170f09ce4cd0c759d66f1bba9131c7ee15b0e` |
-| 3 | `theorem` | [ContinuousAt.integral_sub_linear_isLittleO_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespaced.lean/declarations/continuousat-integral-sub-linear-islittleo-ae.md) | 97 | `result-track:02bdd5cd04eb70145b44b21ec359b034499899c4d17a0422d734fefe33189fab` |
-| 4 | `theorem` | [ContinuousOn.integral_sub_linear_isLittleO_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespaced.lean/declarations/continuouson-integral-sub-linear-islittleo-ae.md) | 113 | `result-track:888b49dde7898da48787ab490356f7d87713e1bba8688b2ae0a093128090fc6f` |
+| 1 | `theorem` | [Filter.Tendsto.integral_sub_linear_isLittleO_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespaced.lean/declarations/filter-tendsto-integral-sub-linear-islittleo-ae.md) | 45 | `result-track:6f31d67044f458a8e0b5300f79cfdef1970607e77a4f58a029274f667191a3ca` |
+| 2 | `theorem` | [ContinuousWithinAt.integral_sub_linear_isLittleO_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespaced.lean/declarations/continuouswithinat-integral-sub-linear-islittleo-ae.md) | 77 | `result-track:440254a87aa1ce33d2d20a759eb170f09ce4cd0c759d66f1bba9131c7ee15b0e` |
+| 3 | `theorem` | [ContinuousAt.integral_sub_linear_isLittleO_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespaced.lean/declarations/continuousat-integral-sub-linear-islittleo-ae.md) | 97 | `result-track:02bdd5cd04eb70145b44b21ec359b034499899c4d17a0422d734fefe33189fab` |
+| 4 | `theorem` | [ContinuousOn.integral_sub_linear_isLittleO_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespaced.lean/declarations/continuouson-integral-sub-linear-islittleo-ae.md) | 113 | `result-track:888b49dde7898da48787ab490356f7d87713e1bba8688b2ae0a093128090fc6f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

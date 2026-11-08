@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Real.RationalTentCorrectionLowerBound`](../../../../RealFunctions/RationalTentCorrectionLowerBound.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalPositiveTuringUpperTent`](../../../../NumberTheory/CanonicalPositiveTuringUpperTent.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Real.RationalTentCorrectionLowerBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalTentCorrectionLowerBound.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalPositiveTuringUpperTent`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringUpperTent.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [SquarePrefixEnclosure](../../../../NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/declarations/squareprefixenclosure.md) | 49 | `declaration-track:5a07e8c512f7258950d93b34ed9501e58a9821f3bb513937a8791a71228dfa86` |
-| 2 | `theorem` | [squareCorrectionAdmissible](../../../../NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/declarations/squarecorrectionadmissible.md) | 54 | `result-track:17bc8f7eff0efbefe4333e7f6877d7ed1705ad0e5a01b43910fb3a20745b4b8f` |
-| 3 | `theorem` | [verified_square_correction_lower](../../../../NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/declarations/verified-square-correction-lower.md) | 68 | `result-track:c3a14d689086bb69e43b57d58533036c5010248007d8bd5387f5036c3344f7d8` |
-| 4 | `theorem` | [verified_square_correction_floor](../../../../NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/declarations/verified-square-correction-floor.md) | 83 | `result-track:37788d689075ac0b359c7fe92d34935290e82110eda22a1a8ff645447c7999ff` |
-| 5 | `theorem` | [prime_in_square_of_verified_claimed_endpoints](../../../../NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/declarations/prime-in-square-of-verified-claimed-endpoints.md) | 96 | `result-track:b547b888e25d169ccddd0b101d74233fc2810ea8a2b608a9f9f94ba2d451535c` |
-| 6 | `theorem` | [prime_in_square_of_verified_endpoint_thresholds](../../../../NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/declarations/prime-in-square-of-verified-endpoint-thresholds.md) | 130 | `result-track:74bed3eb051ef72f8feffe2677dde690ea936dcab26d3a381f8282be3856faeb` |
-| 7 | `theorem` | [zero_margin_not_strict_fixture](../../../../NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/declarations/zero-margin-not-strict-fixture.md) | 162 | `result-track:721f70ec5ce48b6581c82d628afc96c9ce1624b90219c4bbd9d0d75dd618018b` |
+| 1 | `def` | [SquarePrefixEnclosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/declarations/squareprefixenclosure.md) | 49 | `declaration-track:5a07e8c512f7258950d93b34ed9501e58a9821f3bb513937a8791a71228dfa86` |
+| 2 | `theorem` | [squareCorrectionAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/declarations/squarecorrectionadmissible.md) | 54 | `result-track:17bc8f7eff0efbefe4333e7f6877d7ed1705ad0e5a01b43910fb3a20745b4b8f` |
+| 3 | `theorem` | [verified_square_correction_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/declarations/verified-square-correction-lower.md) | 68 | `result-track:c3a14d689086bb69e43b57d58533036c5010248007d8bd5387f5036c3344f7d8` |
+| 4 | `theorem` | [verified_square_correction_floor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/declarations/verified-square-correction-floor.md) | 83 | `result-track:37788d689075ac0b359c7fe92d34935290e82110eda22a1a8ff645447c7999ff` |
+| 5 | `theorem` | [prime_in_square_of_verified_claimed_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/declarations/prime-in-square-of-verified-claimed-endpoints.md) | 96 | `result-track:b547b888e25d169ccddd0b101d74233fc2810ea8a2b608a9f9f94ba2d451535c` |
+| 6 | `theorem` | [prime_in_square_of_verified_endpoint_thresholds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/declarations/prime-in-square-of-verified-endpoint-thresholds.md) | 130 | `result-track:74bed3eb051ef72f8feffe2677dde690ea936dcab26d3a381f8282be3856faeb` |
+| 7 | `theorem` | [zero_margin_not_strict_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringCorrectionMargin.lean/declarations/zero-margin-not-strict-fixture.md) | 162 | `result-track:721f70ec5ce48b6581c82d628afc96c9ce1624b90219c4bbd9d0d75dd618018b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

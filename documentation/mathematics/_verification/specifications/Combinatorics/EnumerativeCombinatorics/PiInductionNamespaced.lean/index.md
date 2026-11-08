@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/PiInductionNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/PiInductionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PiInductionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PiInductionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [induction_on_pi_of_choice](../../../../../Combinatorics/EnumerativeCombinatorics/PiInductionNamespaced.lean/declarations/induction-on-pi-of-choice.md) | 44 | `result-track:a5c95c657ac3ce05ce001e51825d5469ffffb273fec829ea64221c6b0ed178c8` |
-| 2 | `theorem` | [induction_on_pi](../../../../../Combinatorics/EnumerativeCombinatorics/PiInductionNamespaced.lean/declarations/induction-on-pi.md) | 78 | `result-track:d1f8ac97472324501811e239ac448e169afbbb3844b64918c8b43409f0ac22e2` |
-| 3 | `theorem` | [induction_on_pi_max](../../../../../Combinatorics/EnumerativeCombinatorics/PiInductionNamespaced.lean/declarations/induction-on-pi-max.md) | 91 | `result-track:29b0207c0725cec010ca3fb0adbd55c287d71a33ab645db7f3b3296b7d1e965a` |
-| 4 | `theorem` | [induction_on_pi_min](../../../../../Combinatorics/EnumerativeCombinatorics/PiInductionNamespaced.lean/declarations/induction-on-pi-min.md) | 107 | `result-track:cdd67a98a05b631c4a49a1ac6bf55bfc9cc19549e932ed2f70a498115d4b5cdf` |
+| 1 | `theorem` | [induction_on_pi_of_choice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PiInductionNamespaced.lean/declarations/induction-on-pi-of-choice.md) | 44 | `result-track:a5c95c657ac3ce05ce001e51825d5469ffffb273fec829ea64221c6b0ed178c8` |
+| 2 | `theorem` | [induction_on_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PiInductionNamespaced.lean/declarations/induction-on-pi.md) | 78 | `result-track:d1f8ac97472324501811e239ac448e169afbbb3844b64918c8b43409f0ac22e2` |
+| 3 | `theorem` | [induction_on_pi_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PiInductionNamespaced.lean/declarations/induction-on-pi-max.md) | 91 | `result-track:29b0207c0725cec010ca3fb0adbd55c287d71a33ab645db7f3b3296b7d1e965a` |
+| 4 | `theorem` | [induction_on_pi_min](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/PiInductionNamespaced.lean/declarations/induction-on-pi-min.md) | 107 | `result-track:cdd67a98a05b631c4a49a1ac6bf55bfc9cc19549e932ed2f70a498115d4b5cdf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

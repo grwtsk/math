@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoordinatePresentations.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoordinatePresentations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoordinatePresentations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoordinatePresentations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [matrixObservationSystem](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoordinatePresentations.lean/declarations/matrixobservationsystem.md) | 37 | `declaration-track:26ce1a7d4720a7024bc7d80fc319f2a3dfaca1f8b3a60baa154c578c19085001` |
-| 2 | `def` | [boolObservationSystem](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoordinatePresentations.lean/declarations/boolobservationsystem.md) | 46 | `declaration-track:df311d0a6daf868df873557741c015a41fd3fcbac19198a08892c9ae78ca56cf` |
-| 3 | `def` | [matrixPresentation](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoordinatePresentations.lean/declarations/matrixpresentation.md) | 55 | `declaration-track:71335c2d21ea7c61f5ad2bdaf9efc2a2aefe269a81d6bd40b142bc5908636ada` |
-| 4 | `def` | [boolPresentation](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoordinatePresentations.lean/declarations/boolpresentation.md) | 63 | `declaration-track:b51e8c302a7ae401877b7e67f7782fcf3e8d1a62abdcffab05b82bc2eff8dea7` |
-| 5 | `def` | [coordinateContract](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoordinatePresentations.lean/declarations/coordinatecontract.md) | 71 | `declaration-track:41f535d73cb04f61f6408ecd68d69412245a44052d598b9ca641e66d2b779104` |
-| 6 | `def` | [notContract](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoordinatePresentations.lean/declarations/notcontract.md) | 82 | `declaration-track:89dded1371d939493f4129c89a6fa057a0edc1d2b89811ae4cbc2dc063df6467` |
+| 1 | `def` | [matrixObservationSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoordinatePresentations.lean/declarations/matrixobservationsystem.md) | 37 | `declaration-track:26ce1a7d4720a7024bc7d80fc319f2a3dfaca1f8b3a60baa154c578c19085001` |
+| 2 | `def` | [boolObservationSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoordinatePresentations.lean/declarations/boolobservationsystem.md) | 46 | `declaration-track:df311d0a6daf868df873557741c015a41fd3fcbac19198a08892c9ae78ca56cf` |
+| 3 | `def` | [matrixPresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoordinatePresentations.lean/declarations/matrixpresentation.md) | 55 | `declaration-track:71335c2d21ea7c61f5ad2bdaf9efc2a2aefe269a81d6bd40b142bc5908636ada` |
+| 4 | `def` | [boolPresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoordinatePresentations.lean/declarations/boolpresentation.md) | 63 | `declaration-track:b51e8c302a7ae401877b7e67f7782fcf3e8d1a62abdcffab05b82bc2eff8dea7` |
+| 5 | `def` | [coordinateContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoordinatePresentations.lean/declarations/coordinatecontract.md) | 71 | `declaration-track:41f535d73cb04f61f6408ecd68d69412245a44052d598b9ca641e66d2b779104` |
+| 6 | `def` | [notContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoordinatePresentations.lean/declarations/notcontract.md) | 82 | `declaration-track:89dded1371d939493f4129c89a6fa057a0edc1d2b89811ae4cbc2dc063df6467` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

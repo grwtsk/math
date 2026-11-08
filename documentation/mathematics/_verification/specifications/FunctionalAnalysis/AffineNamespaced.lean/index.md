@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/AffineNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/AffineNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AffineNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AffineNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inner_vsub_left_eq_zero_symm](../../../../FunctionalAnalysis/AffineNamespaced.lean/declarations/inner-vsub-left-eq-zero-symm.md) | 28 | `result-track:6da95ff02063870ba625e7deac8bc16b72e7ddc47b4ea6c3a5da029944dae382` |
-| 2 | `theorem` | [inner_vsub_right_eq_zero_symm](../../../../FunctionalAnalysis/AffineNamespaced.lean/declarations/inner-vsub-right-eq-zero-symm.md) | 32 | `result-track:5360aa196fdcc77ffb8dfbb9465cdc555374a291a38e7188119226b41a64c2bf` |
-| 3 | `theorem` | [inner_vsub_vsub_left_eq_dist_sq_left_iff](../../../../FunctionalAnalysis/AffineNamespaced.lean/declarations/inner-vsub-vsub-left-eq-dist-sq-left-iff.md) | 51 | `result-track:1164d6e8efd2dc801261c0104820d6bce16f6ef221ea806a9751b96663fa5b90` |
-| 4 | `theorem` | [inner_vsub_vsub_left_eq_dist_sq_right_iff](../../../../FunctionalAnalysis/AffineNamespaced.lean/declarations/inner-vsub-vsub-left-eq-dist-sq-right-iff.md) | 56 | `result-track:ececf4516e76e36c16651d106b3087cfb00756df3fde29b9a79c7257b8807ea8` |
-| 5 | `theorem` | [inner_vsub_vsub_right_eq_dist_sq_left_iff](../../../../FunctionalAnalysis/AffineNamespaced.lean/declarations/inner-vsub-vsub-right-eq-dist-sq-left-iff.md) | 60 | `result-track:681b88a2c1fa8b8e60d2ce488b1f11dd23a4823edeb5a07e6717eccb9cc941c8` |
-| 6 | `theorem` | [inner_vsub_vsub_right_eq_dist_sq_right_iff](../../../../FunctionalAnalysis/AffineNamespaced.lean/declarations/inner-vsub-vsub-right-eq-dist-sq-right-iff.md) | 65 | `result-track:f71a36dd1a82fe729c0ef4c70fa1f808a44e71f4826cc8ff3b53b0c408f3560a` |
+| 1 | `theorem` | [inner_vsub_left_eq_zero_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AffineNamespaced.lean/declarations/inner-vsub-left-eq-zero-symm.md) | 28 | `result-track:6da95ff02063870ba625e7deac8bc16b72e7ddc47b4ea6c3a5da029944dae382` |
+| 2 | `theorem` | [inner_vsub_right_eq_zero_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AffineNamespaced.lean/declarations/inner-vsub-right-eq-zero-symm.md) | 32 | `result-track:5360aa196fdcc77ffb8dfbb9465cdc555374a291a38e7188119226b41a64c2bf` |
+| 3 | `theorem` | [inner_vsub_vsub_left_eq_dist_sq_left_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AffineNamespaced.lean/declarations/inner-vsub-vsub-left-eq-dist-sq-left-iff.md) | 51 | `result-track:1164d6e8efd2dc801261c0104820d6bce16f6ef221ea806a9751b96663fa5b90` |
+| 4 | `theorem` | [inner_vsub_vsub_left_eq_dist_sq_right_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AffineNamespaced.lean/declarations/inner-vsub-vsub-left-eq-dist-sq-right-iff.md) | 56 | `result-track:ececf4516e76e36c16651d106b3087cfb00756df3fde29b9a79c7257b8807ea8` |
+| 5 | `theorem` | [inner_vsub_vsub_right_eq_dist_sq_left_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AffineNamespaced.lean/declarations/inner-vsub-vsub-right-eq-dist-sq-left-iff.md) | 60 | `result-track:681b88a2c1fa8b8e60d2ce488b1f11dd23a4823edeb5a07e6717eccb9cc941c8` |
+| 6 | `theorem` | [inner_vsub_vsub_right_eq_dist_sq_right_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AffineNamespaced.lean/declarations/inner-vsub-vsub-right-eq-dist-sq-right-iff.md) | 65 | `result-track:f71a36dd1a82fe729c0ef4c70fa1f808a44e71f4826cc8ff3b53b0c408f3560a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

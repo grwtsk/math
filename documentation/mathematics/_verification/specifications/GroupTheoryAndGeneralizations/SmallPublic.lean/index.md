@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/SmallPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/SmallPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SmallPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SmallPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [small_set_zero](../../../../GroupTheoryAndGeneralizations/SmallPublic.lean/declarations/small-set-zero.md) | 23 | `declaration-track:6c3784a29b1610c6654331bc7e4167080c7d04c09da27dcef1024924d3c8f745` |
-| 2 | `instance` | [small_set_one](../../../../GroupTheoryAndGeneralizations/SmallPublic.lean/declarations/small-set-one.md) | 24 | `declaration-track:7b533c3339f7d41943ed982431d71e6ad9b13491305ea27c7cd2123d37bae902` |
-| 3 | `instance` | [small_neg](../../../../GroupTheoryAndGeneralizations/SmallPublic.lean/declarations/small-neg.md) | 26 | `declaration-track:5e81575a3775cf603f7b4aa253305f6e7b9ce2aace6da20250e1e235ecc66806` |
-| 4 | `instance` | [small_add](../../../../GroupTheoryAndGeneralizations/SmallPublic.lean/declarations/small-add.md) | 30 | `declaration-track:62bb73b4c7ddecc03cba18bb6433857a963bb9cc8d9615805119989de0e13238` |
-| 5 | `instance` | [small_sub](../../../../GroupTheoryAndGeneralizations/SmallPublic.lean/declarations/small-sub.md) | 31 | `declaration-track:9b49df6c5db2666f63975a93d0c2dd30da858c728f901953dcd02489411c85af` |
-| 6 | `instance` | [small_mul](../../../../GroupTheoryAndGeneralizations/SmallPublic.lean/declarations/small-mul.md) | 32 | `declaration-track:e64f200bbfb3b68d1b94c295642de3e331380439972c0191b74fc6b0adca87bf` |
-| 7 | `instance` | [small_div](../../../../GroupTheoryAndGeneralizations/SmallPublic.lean/declarations/small-div.md) | 33 | `declaration-track:532515983fad7cae820307364147b9d5e75966260c2e90a7877580b72c9c8987` |
+| 1 | `instance` | [small_set_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SmallPublic.lean/declarations/small-set-zero.md) | 23 | `declaration-track:6c3784a29b1610c6654331bc7e4167080c7d04c09da27dcef1024924d3c8f745` |
+| 2 | `instance` | [small_set_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SmallPublic.lean/declarations/small-set-one.md) | 24 | `declaration-track:7b533c3339f7d41943ed982431d71e6ad9b13491305ea27c7cd2123d37bae902` |
+| 3 | `instance` | [small_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SmallPublic.lean/declarations/small-neg.md) | 26 | `declaration-track:5e81575a3775cf603f7b4aa253305f6e7b9ce2aace6da20250e1e235ecc66806` |
+| 4 | `instance` | [small_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SmallPublic.lean/declarations/small-add.md) | 30 | `declaration-track:62bb73b4c7ddecc03cba18bb6433857a963bb9cc8d9615805119989de0e13238` |
+| 5 | `instance` | [small_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SmallPublic.lean/declarations/small-sub.md) | 31 | `declaration-track:9b49df6c5db2666f63975a93d0c2dd30da858c728f901953dcd02489411c85af` |
+| 6 | `instance` | [small_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SmallPublic.lean/declarations/small-mul.md) | 32 | `declaration-track:e64f200bbfb3b68d1b94c295642de3e331380439972c0191b74fc6b0adca87bf` |
+| 7 | `instance` | [small_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SmallPublic.lean/declarations/small-div.md) | 33 | `declaration-track:532515983fad7cae820307364147b9d5e75966260c2e90a7877580b72c9c8987` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

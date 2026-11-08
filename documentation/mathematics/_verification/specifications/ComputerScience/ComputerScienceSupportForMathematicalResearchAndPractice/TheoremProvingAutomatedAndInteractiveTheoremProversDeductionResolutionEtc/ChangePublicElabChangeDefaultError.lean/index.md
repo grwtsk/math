@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangePublicElabChangeDefaultError.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangePublicElabChangeDefaultError.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangePublicElabChangeDefaultError.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangePublicElabChangeDefaultError.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [elabChangeDefaultError](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangePublicElabChangeDefaultError.lean/declarations/elabchangedefaulterror.md) | 20 | `declaration-track:ccdc93d808f4768ca8e95d17c21fc2c900541c910b89a402163248e5f2032a7b` |
-| 2 | `def` | [elabChange](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangePublicElabChangeDefaultError.lean/declarations/elabchange.md) | 30 | `declaration-track:e7527fe4c02f2b3176efcbb7fe982e83879dda7f397f226432e7935fb2c27c87` |
-| 3 | `def` | [evalChange](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangePublicElabChangeDefaultError.lean/declarations/evalchange.md) | 71 | `declaration-track:cf386ead4486b63e9ca392cf2dc665b8925b350e62634bee28ec7d6ddf6460ad` |
+| 1 | `def` | [elabChangeDefaultError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangePublicElabChangeDefaultError.lean/declarations/elabchangedefaulterror.md) | 20 | `declaration-track:ccdc93d808f4768ca8e95d17c21fc2c900541c910b89a402163248e5f2032a7b` |
+| 2 | `def` | [elabChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangePublicElabChangeDefaultError.lean/declarations/elabchange.md) | 30 | `declaration-track:e7527fe4c02f2b3176efcbb7fe982e83879dda7f397f226432e7935fb2c27c87` |
+| 3 | `def` | [evalChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangePublicElabChangeDefaultError.lean/declarations/evalchange.md) | 71 | `declaration-track:cf386ead4486b63e9ca392cf2dc665b8925b350e62634bee28ec7d6ddf6460ad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

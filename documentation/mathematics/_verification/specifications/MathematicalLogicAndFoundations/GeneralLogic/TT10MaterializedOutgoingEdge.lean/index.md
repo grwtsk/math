@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TT10MaterializedOutgoingEdge.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TT10MaterializedOutgoingEdge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TT10MaterializedOutgoingEdge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TT10MaterializedOutgoingEdge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tt10_materializedOutgoingEdge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TT10MaterializedOutgoingEdge.lean/declarations/tt10-materializedoutgoingedge.md) | 11 | `result-track:639692e88375a9106aa49ddf3434ce9545b353b8f2b372c0d0b0f9016f1f0684` |
+| 1 | `theorem` | [tt10_materializedOutgoingEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TT10MaterializedOutgoingEdge.lean/declarations/tt10-materializedoutgoingedge.md) | 11 | `result-track:639692e88375a9106aa49ddf3434ce9545b353b8f2b372c0d0b0f9016f1f0684` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

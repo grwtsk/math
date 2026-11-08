@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/DualNumber.lean/index.md) · [Full source](../../../../CommutativeAlgebra/DualNumber.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DualNumber.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DualNumber.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,20 +60,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isNilpotent_iff_isNilpotent_fst](../../../../CommutativeAlgebra/DualNumber.lean/declarations/isnilpotent-iff-isnilpotent-fst.md) | 29 | `result-track:690d47dee5ae3d5426c70c7ccff33027866a596cfa277b345ef62e9744d716e9` |
-| 2 | `lemma` | [isNilpotent_inl_iff](../../../../CommutativeAlgebra/DualNumber.lean/declarations/isnilpotent-inl-iff.md) | 42 | `result-track:cc84e0d0a6a1796385a1b4761778e327d86c9f5d5823496307fe316581b5b1ce` |
-| 3 | `lemma` | [isNilpotent_inr](../../../../CommutativeAlgebra/DualNumber.lean/declarations/isnilpotent-inr.md) | 46 | `result-track:730e3562f57ae7beb841b508176e0bed48f2d5576a23f0c9c69095e117c30c6d` |
-| 4 | `lemma` | [isUnit_or_isNilpotent_of_isMaximal_isNilpotent](../../../../CommutativeAlgebra/DualNumber.lean/declarations/isunit-or-isnilpotent-of-ismaximal-isnilpotent.md) | 51 | `result-track:94fac9ee54a035d7865af7b76c572648f4aaa9ae1920293f3d83a98f057793d1` |
-| 5 | `lemma` | [isUnit_or_isNilpotent](../../../../CommutativeAlgebra/DualNumber.lean/declarations/isunit-or-isnilpotent.md) | 62 | `result-track:bcd1a5d18c826e1d3a161375e662ed84b93da98b3e740e50d2cae8b930cd50b2` |
-| 6 | `lemma` | [fst_eq_zero_iff_eps_dvd](../../../../CommutativeAlgebra/DualNumber.lean/declarations/fst-eq-zero-iff-eps-dvd.md) | 73 | `result-track:48bb8231e46fade86c79b0d0dae3f3be5039993703f30372e4d5567148aea0c9` |
-| 7 | `lemma` | [isNilpotent_eps](../../../../CommutativeAlgebra/DualNumber.lean/declarations/isnilpotent-eps.md) | 81 | `result-track:7cd9125ac0b4f2777c087d829c3b800d7aeef035c324a88a5c2e4f338f88f07c` |
-| 8 | `lemma` | [isNilpotent_iff_eps_dvd](../../../../CommutativeAlgebra/DualNumber.lean/declarations/isnilpotent-iff-eps-dvd.md) | 87 | `result-track:9efbee907494a6419b9b066ecaad7d744662ba83471b4facf5a4c41cbed72014` |
-| 9 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/DualNumber.lean/declarations/instance.md) | 95 | `declaration-track:1ef1cde8f795729fe9a33bece372aae41e4cbb7eb81b763aaabd996c65570708` |
-| 10 | `lemma` | [ideal_trichotomy](../../../../CommutativeAlgebra/DualNumber.lean/declarations/ideal-trichotomy.md) | 101 | `result-track:d381654071fc0192f95b20dd67a0d817bf9cdeb1c4c3ec67a17f4356c7bb378f` |
-| 11 | `lemma` | [isMaximal_span_singleton_eps](../../../../CommutativeAlgebra/DualNumber.lean/declarations/ismaximal-span-singleton-eps.md) | 131 | `result-track:ea13d0076c9e7398f29a7c11b113e7657a4f2d0fc651415b01dd59d8c638f8c2` |
-| 12 | `lemma` | [maximalIdeal_eq_span_singleton_eps](../../../../CommutativeAlgebra/DualNumber.lean/declarations/maximalideal-eq-span-singleton-eps.md) | 138 | `result-track:4ed222f319828b990e8b8a55f75c0935a2fe24b4fd72eba5e8298d328685ef16` |
-| 13 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/DualNumber.lean/declarations/instance-source-edition-2.md) | 142 | `declaration-track:4c9a528fa7810ac1eaf9d05edc7fc2aa19bbaff79d567d91110613a2f97ea39b` |
-| 14 | `lemma` | [exists_mul_left_or_mul_right](../../../../CommutativeAlgebra/DualNumber.lean/declarations/exists-mul-left-or-mul-right.md) | 149 | `result-track:e5fdd5eb47ab8ef85bd3064a53a77a92c1795a60637e8042d66d3c125db0fd4a` |
+| 1 | `lemma` | [isNilpotent_iff_isNilpotent_fst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DualNumber.lean/declarations/isnilpotent-iff-isnilpotent-fst.md) | 29 | `result-track:690d47dee5ae3d5426c70c7ccff33027866a596cfa277b345ef62e9744d716e9` |
+| 2 | `lemma` | [isNilpotent_inl_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DualNumber.lean/declarations/isnilpotent-inl-iff.md) | 42 | `result-track:cc84e0d0a6a1796385a1b4761778e327d86c9f5d5823496307fe316581b5b1ce` |
+| 3 | `lemma` | [isNilpotent_inr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DualNumber.lean/declarations/isnilpotent-inr.md) | 46 | `result-track:730e3562f57ae7beb841b508176e0bed48f2d5576a23f0c9c69095e117c30c6d` |
+| 4 | `lemma` | [isUnit_or_isNilpotent_of_isMaximal_isNilpotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DualNumber.lean/declarations/isunit-or-isnilpotent-of-ismaximal-isnilpotent.md) | 51 | `result-track:94fac9ee54a035d7865af7b76c572648f4aaa9ae1920293f3d83a98f057793d1` |
+| 5 | `lemma` | [isUnit_or_isNilpotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DualNumber.lean/declarations/isunit-or-isnilpotent.md) | 62 | `result-track:bcd1a5d18c826e1d3a161375e662ed84b93da98b3e740e50d2cae8b930cd50b2` |
+| 6 | `lemma` | [fst_eq_zero_iff_eps_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DualNumber.lean/declarations/fst-eq-zero-iff-eps-dvd.md) | 73 | `result-track:48bb8231e46fade86c79b0d0dae3f3be5039993703f30372e4d5567148aea0c9` |
+| 7 | `lemma` | [isNilpotent_eps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DualNumber.lean/declarations/isnilpotent-eps.md) | 81 | `result-track:7cd9125ac0b4f2777c087d829c3b800d7aeef035c324a88a5c2e4f338f88f07c` |
+| 8 | `lemma` | [isNilpotent_iff_eps_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DualNumber.lean/declarations/isnilpotent-iff-eps-dvd.md) | 87 | `result-track:9efbee907494a6419b9b066ecaad7d744662ba83471b4facf5a4c41cbed72014` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DualNumber.lean/declarations/instance.md) | 95 | `declaration-track:1ef1cde8f795729fe9a33bece372aae41e4cbb7eb81b763aaabd996c65570708` |
+| 10 | `lemma` | [ideal_trichotomy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DualNumber.lean/declarations/ideal-trichotomy.md) | 101 | `result-track:d381654071fc0192f95b20dd67a0d817bf9cdeb1c4c3ec67a17f4356c7bb378f` |
+| 11 | `lemma` | [isMaximal_span_singleton_eps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DualNumber.lean/declarations/ismaximal-span-singleton-eps.md) | 131 | `result-track:ea13d0076c9e7398f29a7c11b113e7657a4f2d0fc651415b01dd59d8c638f8c2` |
+| 12 | `lemma` | [maximalIdeal_eq_span_singleton_eps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DualNumber.lean/declarations/maximalideal-eq-span-singleton-eps.md) | 138 | `result-track:4ed222f319828b990e8b8a55f75c0935a2fe24b4fd72eba5e8298d328685ef16` |
+| 13 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DualNumber.lean/declarations/instance-source-edition-2.md) | 142 | `declaration-track:4c9a528fa7810ac1eaf9d05edc7fc2aa19bbaff79d567d91110613a2f97ea39b` |
+| 14 | `lemma` | [exists_mul_left_or_mul_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DualNumber.lean/declarations/exists-mul-left-or-mul-right.md) | 149 | `result-track:e5fdd5eb47ab8ef85bd3064a53a77a92c1795a60637e8042d66d3c125db0fd4a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangleNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangleNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangleNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangleNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [functor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangleNamespacedPublic.lean/declarations/functor.md) | 50 | `declaration-track:8f257bd55cccaeb43abce2905e44ad7e7e3cf579824cf1acc37b70efbcbfc227` |
-| 2 | `def` | [inverse](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangleNamespacedPublic.lean/declarations/inverse.md) | 70 | `declaration-track:8b4b58956f892f7f292eda8ab8bb6075f63de0059167b76bfaa5496547693aca` |
-| 3 | `def` | [unitIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangleNamespacedPublic.lean/declarations/unitiso.md) | 90 | `declaration-track:fbdaddad9e9bea2aabdfd8e1952bf9199c9fdeb34a3aa706df831a523dc31f4f` |
-| 4 | `def` | [counitIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangleNamespacedPublic.lean/declarations/counitiso.md) | 102 | `declaration-track:b01e0c53509120d7f46d0128e3aea121e353fa81041aa11c95fc696cb134773e` |
-| 5 | `def` | [triangleOpEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangleNamespacedPublic.lean/declarations/triangleopequivalence.md) | 123 | `declaration-track:b93c9b020c44f2cf8ab11c42866ee85bf331afae1ad3ef77576727761be6ea40` |
+| 1 | `def` | [functor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangleNamespacedPublic.lean/declarations/functor.md) | 50 | `declaration-track:8f257bd55cccaeb43abce2905e44ad7e7e3cf579824cf1acc37b70efbcbfc227` |
+| 2 | `def` | [inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangleNamespacedPublic.lean/declarations/inverse.md) | 70 | `declaration-track:8b4b58956f892f7f292eda8ab8bb6075f63de0059167b76bfaa5496547693aca` |
+| 3 | `def` | [unitIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangleNamespacedPublic.lean/declarations/unitiso.md) | 90 | `declaration-track:fbdaddad9e9bea2aabdfd8e1952bf9199c9fdeb34a3aa706df831a523dc31f4f` |
+| 4 | `def` | [counitIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangleNamespacedPublic.lean/declarations/counitiso.md) | 102 | `declaration-track:b01e0c53509120d7f46d0128e3aea121e353fa81041aa11c95fc696cb134773e` |
+| 5 | `def` | [triangleOpEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangleNamespacedPublic.lean/declarations/triangleopequivalence.md) | 123 | `declaration-track:b93c9b020c44f2cf8ab11c42866ee85bf331afae1ad3ef77576727761be6ea40` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

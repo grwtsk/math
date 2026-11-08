@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/NeighborhoodProofNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/NeighborhoodProofNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NeighborhoodProofNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NeighborhoodProofNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [continuous_thetaPhi_signedJetDet_test](../../../../GeneralTopology/NeighborhoodProofNamespaced.lean/declarations/continuous-thetaphi-signedjetdet-test.md) | 18 | `result-track:de0e43624cedd2b11a8fb046f7ea6674e5c88d97f3d58278454eb815f95a0242` |
-| 2 | `example` | [(anonymous)](../../../../GeneralTopology/NeighborhoodProofNamespaced.lean/declarations/example.md) | 27 | `declaration-track:66427b3ef02a7dcbd65b5fb10a3858b12505d7839db591a2ecc6f20e5a13b972` |
+| 1 | `theorem` | [continuous_thetaPhi_signedJetDet_test](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NeighborhoodProofNamespaced.lean/declarations/continuous-thetaphi-signedjetdet-test.md) | 18 | `result-track:de0e43624cedd2b11a8fb046f7ea6674e5c88d97f3d58278454eb815f95a0242` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NeighborhoodProofNamespaced.lean/declarations/example.md) | 27 | `declaration-track:66427b3ef02a7dcbd65b5fb10a3858b12505d7839db591a2ecc6f20e5a13b972` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

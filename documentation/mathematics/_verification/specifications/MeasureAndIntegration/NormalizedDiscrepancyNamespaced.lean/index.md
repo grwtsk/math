@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/NormalizedDiscrepancyNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/NormalizedDiscrepancyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedDiscrepancyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedDiscrepancyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [discrepancy_on_main_window](../../../../MeasureAndIntegration/NormalizedDiscrepancyNamespaced.lean/declarations/discrepancy-on-main-window.md) | 21 | `result-track:84d7e69f9fb7ad66a9ea2c79c1fba781a01ebf71828172a4564f20325c45f1e2` |
-| 2 | `theorem` | [discrepancy_on_tail_window](../../../../MeasureAndIntegration/NormalizedDiscrepancyNamespaced.lean/declarations/discrepancy-on-tail-window.md) | 34 | `result-track:098400f53423aa5b107c3562d952759ca880418c4f271d2d08b95fa66d466381` |
-| 3 | `theorem` | [boundary_discrepancy_bound](../../../../MeasureAndIntegration/NormalizedDiscrepancyNamespaced.lean/declarations/boundary-discrepancy-bound.md) | 44 | `result-track:e5d413f1c2f04486aa762a84a0a334851263de5a80c443d1f1b5676bd13633a1` |
-| 4 | `theorem` | [boundary_discrepancy_bound_with_tail](../../../../MeasureAndIntegration/NormalizedDiscrepancyNamespaced.lean/declarations/boundary-discrepancy-bound-with-tail.md) | 92 | `result-track:1c2cd244e80f33b1acf05dee9d2238f73e5135faf4954d99350103cd00294aaa` |
+| 1 | `theorem` | [discrepancy_on_main_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedDiscrepancyNamespaced.lean/declarations/discrepancy-on-main-window.md) | 21 | `result-track:84d7e69f9fb7ad66a9ea2c79c1fba781a01ebf71828172a4564f20325c45f1e2` |
+| 2 | `theorem` | [discrepancy_on_tail_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedDiscrepancyNamespaced.lean/declarations/discrepancy-on-tail-window.md) | 34 | `result-track:098400f53423aa5b107c3562d952759ca880418c4f271d2d08b95fa66d466381` |
+| 3 | `theorem` | [boundary_discrepancy_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedDiscrepancyNamespaced.lean/declarations/boundary-discrepancy-bound.md) | 44 | `result-track:e5d413f1c2f04486aa762a84a0a334851263de5a80c443d1f1b5676bd13633a1` |
+| 4 | `theorem` | [boundary_discrepancy_bound_with_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedDiscrepancyNamespaced.lean/declarations/boundary-discrepancy-bound-with-tail.md) | 92 | `result-track:1c2cd244e80f33b1acf05dee9d2238f73e5135faf4954d99350103cd00294aaa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

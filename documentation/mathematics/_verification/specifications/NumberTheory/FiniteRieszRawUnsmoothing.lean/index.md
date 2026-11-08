@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/FiniteRieszRawUnsmoothing.lean/index.md) · [Full source](../../../../NumberTheory/FiniteRieszRawUnsmoothing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteRieszRawUnsmoothing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteRieszRawUnsmoothing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.FirstRieszZeroTail`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FirstRieszZeroTail.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.FirstRieszZeroTail`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FirstRieszZeroTail.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Analysis.Calculus.Deriv.Slope` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finiteRiesz_raw_difference_limit](../../../../NumberTheory/FiniteRieszRawUnsmoothing.lean/declarations/finiteriesz-raw-difference-limit.md) | 17 | `result-track:d526c96cd644b4fae1f106fc7ea79fa59128920f71b8df48138e53c971c454ef` |
+| 1 | `theorem` | [finiteRiesz_raw_difference_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteRieszRawUnsmoothing.lean/declarations/finiteriesz-raw-difference-limit.md) | 17 | `result-track:d526c96cd644b4fae1f106fc7ea79fa59128920f71b8df48138e53c971c454ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

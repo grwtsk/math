@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CriticalStripSexticTailDefect.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CriticalStripSexticTailDefect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTailDefect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTailDefect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSexticKernelDefect`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSexticKernelDefect.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSexticKernelDefect`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSexticKernelDefect.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Integrals.Basic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [defect](../../../../MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/defect.md) | 26 | `declaration-track:673d30b24902a7ea9bcfd02be130a496028c73f93b3f988210c923698b0645bd` |
-| 2 | `lemma` | [integrand_norm](../../../../MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/integrand-norm.md) | 29 | `result-track:d11c08e3f017dba2316de4289db6cb785906b3255abe3c5c867e31bb35418122` |
-| 3 | `lemma` | [defect_nonneg](../../../../MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/defect-nonneg.md) | 35 | `result-track:5015db1beb8aebfa95af390ae4accb65d87d5fbb21eb9e50c4eb73f1543bbd1d` |
-| 4 | `lemma` | [defect_integrable](../../../../MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/defect-integrable.md) | 44 | `result-track:74dd7b21ab9add118f28c52e0777b98aec1aeefb64c243d2ef451989c25886e2` |
-| 5 | `lemma` | [real_interval_of_tail](../../../../MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/real-interval-of-tail.md) | 51 | `result-track:fc3e97a5a313c91093bb4455050068e243d48473b6778b8a340f5dc9220f0c92` |
-| 6 | `lemma` | [defect_on_subcell](../../../../MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/defect-on-subcell.md) | 57 | `result-track:9f9d96442358f94480cd8c8d06cdd9c22b031e0a9ae603e8be1d19e24666ca21` |
-| 7 | `def` | [cellMass](../../../../MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/cellmass.md) | 72 | `declaration-track:8152d76861e2c24c51bf9d439cb5f1767ccd63c279b65ac4fa3d56c41ac4ba8a` |
-| 8 | `lemma` | [cell_power_integral](../../../../MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/cell-power-integral.md) | 75 | `result-track:1c7854bf41d36d48ffe493304996a12b62939e5d2f92d19a11c72ef8732541e8` |
-| 9 | `lemma` | [subcell_defect_integral](../../../../MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/subcell-defect-integral.md) | 84 | `result-track:7665eafa3c24e0854aa371359e8ad7c932f4dff6f507d8bd68a3aa16d4f9d45a` |
-| 10 | `theorem` | [rational_saving](../../../../MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/rational-saving.md) | 106 | `result-track:af490a0d343db9d880e38cf387db4f4059ec8304e097a6e15df05dbb9a9f2a37` |
-| 11 | `lemma` | [first_cell_defect_lower](../../../../MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/first-cell-defect-lower.md) | 109 | `result-track:fbb80663d969c59ff5aaf8af885c5dd53804e664d2c9789f4e6345b9b0cd2080` |
-| 12 | `lemma` | [full_defect_lower](../../../../MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/full-defect-lower.md) | 125 | `result-track:cc7a110f87f146e80eb80173589d9722070e9f1a43a7bb573ae76a5456d7647f` |
-| 13 | `theorem` | [first_tail_with_saving](../../../../MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/first-tail-with-saving.md) | 153 | `result-track:2d0cb3188fcdd3d64918dd6f9421e490b8b02559dba7c452841022a83f7716d6` |
-| 14 | `theorem` | [first_tail_improved](../../../../MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/first-tail-improved.md) | 171 | `result-track:32f65d653532e3d8354423b7508d8d424209d292e4e6e170c375ef690efcc44e` |
+| 1 | `def` | [defect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/defect.md) | 26 | `declaration-track:673d30b24902a7ea9bcfd02be130a496028c73f93b3f988210c923698b0645bd` |
+| 2 | `lemma` | [integrand_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/integrand-norm.md) | 29 | `result-track:d11c08e3f017dba2316de4289db6cb785906b3255abe3c5c867e31bb35418122` |
+| 3 | `lemma` | [defect_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/defect-nonneg.md) | 35 | `result-track:5015db1beb8aebfa95af390ae4accb65d87d5fbb21eb9e50c4eb73f1543bbd1d` |
+| 4 | `lemma` | [defect_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/defect-integrable.md) | 44 | `result-track:74dd7b21ab9add118f28c52e0777b98aec1aeefb64c243d2ef451989c25886e2` |
+| 5 | `lemma` | [real_interval_of_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/real-interval-of-tail.md) | 51 | `result-track:fc3e97a5a313c91093bb4455050068e243d48473b6778b8a340f5dc9220f0c92` |
+| 6 | `lemma` | [defect_on_subcell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/defect-on-subcell.md) | 57 | `result-track:9f9d96442358f94480cd8c8d06cdd9c22b031e0a9ae603e8be1d19e24666ca21` |
+| 7 | `def` | [cellMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/cellmass.md) | 72 | `declaration-track:8152d76861e2c24c51bf9d439cb5f1767ccd63c279b65ac4fa3d56c41ac4ba8a` |
+| 8 | `lemma` | [cell_power_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/cell-power-integral.md) | 75 | `result-track:1c7854bf41d36d48ffe493304996a12b62939e5d2f92d19a11c72ef8732541e8` |
+| 9 | `lemma` | [subcell_defect_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/subcell-defect-integral.md) | 84 | `result-track:7665eafa3c24e0854aa371359e8ad7c932f4dff6f507d8bd68a3aa16d4f9d45a` |
+| 10 | `theorem` | [rational_saving](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/rational-saving.md) | 106 | `result-track:af490a0d343db9d880e38cf387db4f4059ec8304e097a6e15df05dbb9a9f2a37` |
+| 11 | `lemma` | [first_cell_defect_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/first-cell-defect-lower.md) | 109 | `result-track:fbb80663d969c59ff5aaf8af885c5dd53804e664d2c9789f4e6345b9b0cd2080` |
+| 12 | `lemma` | [full_defect_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/full-defect-lower.md) | 125 | `result-track:cc7a110f87f146e80eb80173589d9722070e9f1a43a7bb573ae76a5456d7647f` |
+| 13 | `theorem` | [first_tail_with_saving](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/first-tail-with-saving.md) | 153 | `result-track:2d0cb3188fcdd3d64918dd6f9421e490b8b02559dba7c452841022a83f7716d6` |
+| 14 | `theorem` | [first_tail_improved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTailDefect.lean/declarations/first-tail-improved.md) | 171 | `result-track:32f65d653532e3d8354423b7508d8d424209d292e4e6e170c375ef690efcc44e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

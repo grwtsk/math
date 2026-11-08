@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/Prufer.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/Prufer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Prufer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Prufer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [smul_eq_self_of_preimage_zpow_eq_self](../../../../DynamicalSystemsAndErgodicTheory/Prufer.lean/declarations/smul-eq-self-of-preimage-zpow-eq-self.md) | 28 | `result-track:a3cdaf14a1ac578311e18c276f2db3c356a09e8abf6144bf623b49c7110a3aad` |
+| 1 | `theorem` | [smul_eq_self_of_preimage_zpow_eq_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Prufer.lean/declarations/smul-eq-self-of-preimage-zpow-eq-self.md) | 28 | `result-track:a3cdaf14a1ac578311e18c276f2db3c356a09e8abf6144bf623b49c7110a3aad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

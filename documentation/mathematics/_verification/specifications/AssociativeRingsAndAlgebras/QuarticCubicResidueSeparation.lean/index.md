@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/QuarticCubicResidueSeparation.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/QuarticCubicResidueSeparation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticCubicResidueSeparation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticCubicResidueSeparation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticCubicDiscriminantReduction`](../../../../CommutativeAlgebra/QuarticCubicDiscriminantReduction.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticCubicDiscriminantReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicDiscriminantReduction.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.FieldTheory.Separable` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [adjacencyCubic_roots_nodup_of_discr_ne_zero](../../../../AssociativeRingsAndAlgebras/QuarticCubicResidueSeparation.lean/declarations/adjacencycubic-roots-nodup-of-discr-ne-zero.md) | 27 | `result-track:56c84755e5e99020041a4ebb6ebb83d1d52c04a0a3e994dbd9f0cd417d9d6b5f` |
-| 2 | `theorem` | [adjacencyCubic_roots_nodup_of_vandermonde_ne_zero](../../../../AssociativeRingsAndAlgebras/QuarticCubicResidueSeparation.lean/declarations/adjacencycubic-roots-nodup-of-vandermonde-ne-zero.md) | 40 | `result-track:5f34449f3b0983a4ec3570fb2ef75a79d3c0ec86c458735d86db98719783eec5` |
+| 1 | `theorem` | [adjacencyCubic_roots_nodup_of_discr_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticCubicResidueSeparation.lean/declarations/adjacencycubic-roots-nodup-of-discr-ne-zero.md) | 27 | `result-track:56c84755e5e99020041a4ebb6ebb83d1d52c04a0a3e994dbd9f0cd417d9d6b5f` |
+| 2 | `theorem` | [adjacencyCubic_roots_nodup_of_vandermonde_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticCubicResidueSeparation.lean/declarations/adjacencycubic-roots-nodup-of-vandermonde-ne-zero.md) | 40 | `result-track:5f34449f3b0983a4ec3570fb2ef75a79d3c0ec86c458735d86db98719783eec5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

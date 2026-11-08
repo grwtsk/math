@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/FiniteForwardDependentClosure.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/FiniteForwardDependentClosure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FiniteForwardDependentClosure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FiniteForwardDependentClosure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [dependentsClosure](../../../../../Combinatorics/GraphTheory/FiniteForwardDependentClosure.lean/declarations/dependentsclosure.md) | 44 | `declaration-track:b7cbe72c9ac74e8a016684793c69d236bb7ca8ad07283cc77568477134b7b7f4` |
-| 2 | `theorem` | [mem_dependentsClosure_iff](../../../../../Combinatorics/GraphTheory/FiniteForwardDependentClosure.lean/declarations/mem-dependentsclosure-iff.md) | 50 | `result-track:c1c2e5178cf6262f00bd60c5a1e89605d9098981e9a241ef22418f626f262c3c` |
-| 3 | `theorem` | [seed_mem_dependentsClosure](../../../../../Combinatorics/GraphTheory/FiniteForwardDependentClosure.lean/declarations/seed-mem-dependentsclosure.md) | 58 | `result-track:90d81c2632818bb95d9ffc7e2912d270b8c5cbf6fadd379aa2078a02bff84637` |
-| 4 | `theorem` | [dependent_mem_dependentsClosure](../../../../../Combinatorics/GraphTheory/FiniteForwardDependentClosure.lean/declarations/dependent-mem-dependentsclosure.md) | 66 | `result-track:48e7957b88eadea08853c94cd9170902f0f72532360f1da7917b2e89d3b0c823` |
-| 5 | `theorem` | [dependentsClosure_mono](../../../../../Combinatorics/GraphTheory/FiniteForwardDependentClosure.lean/declarations/dependentsclosure-mono.md) | 76 | `result-track:fffafecfd5c4b2650aa2fa0c377b1fc1075870c3cf980c9cf75b720ecf420730` |
-| 6 | `theorem` | [dependentsClosure_minimal](../../../../../Combinatorics/GraphTheory/FiniteForwardDependentClosure.lean/declarations/dependentsclosure-minimal.md) | 86 | `result-track:651ba7dba2403378e73a71e48c477da978854478e2d56c50f7fb2c317bc904d5` |
+| 1 | `def` | [dependentsClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FiniteForwardDependentClosure.lean/declarations/dependentsclosure.md) | 44 | `declaration-track:b7cbe72c9ac74e8a016684793c69d236bb7ca8ad07283cc77568477134b7b7f4` |
+| 2 | `theorem` | [mem_dependentsClosure_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FiniteForwardDependentClosure.lean/declarations/mem-dependentsclosure-iff.md) | 50 | `result-track:c1c2e5178cf6262f00bd60c5a1e89605d9098981e9a241ef22418f626f262c3c` |
+| 3 | `theorem` | [seed_mem_dependentsClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FiniteForwardDependentClosure.lean/declarations/seed-mem-dependentsclosure.md) | 58 | `result-track:90d81c2632818bb95d9ffc7e2912d270b8c5cbf6fadd379aa2078a02bff84637` |
+| 4 | `theorem` | [dependent_mem_dependentsClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FiniteForwardDependentClosure.lean/declarations/dependent-mem-dependentsclosure.md) | 66 | `result-track:48e7957b88eadea08853c94cd9170902f0f72532360f1da7917b2e89d3b0c823` |
+| 5 | `theorem` | [dependentsClosure_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FiniteForwardDependentClosure.lean/declarations/dependentsclosure-mono.md) | 76 | `result-track:fffafecfd5c4b2650aa2fa0c377b1fc1075870c3cf980c9cf75b720ecf420730` |
+| 6 | `theorem` | [dependentsClosure_minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FiniteForwardDependentClosure.lean/declarations/dependentsclosure-minimal.md) | 86 | `result-track:651ba7dba2403378e73a71e48c477da978854478e2d56c50f7fb2c317bc904d5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

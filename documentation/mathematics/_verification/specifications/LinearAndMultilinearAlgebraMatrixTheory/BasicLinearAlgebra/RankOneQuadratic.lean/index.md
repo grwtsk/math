@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadratic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadratic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadratic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadratic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rankOneGenerator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadratic.lean/declarations/rankonegenerator.md) | 12 | `declaration-track:e70e549b76b24ba384132ea204420fb9c79908723dcdde0615d079225933333c` |
-| 2 | `theorem` | [rankOne_quadratic](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadratic.lean/declarations/rankone-quadratic.md) | 15 | `result-track:2872307446731b171b3067a60dfc920aedc392f67555dabeb6ff7247164e4645` |
-| 3 | `theorem` | [rankOne_inverse](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadratic.lean/declarations/rankone-inverse.md) | 22 | `result-track:8fc73bec5a4edee6993f3ce4712e641500da0ffa7dff6c7bb470aac1ba03eac1` |
-| 4 | `theorem` | [rankOne_normalized_square](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadratic.lean/declarations/rankone-normalized-square.md) | 30 | `result-track:ced9db3a146801f8427557ad827f9f6915ab94b84d437a5a3135487bd5246896` |
-| 5 | `theorem` | [rankOne_coordinates_unique](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadratic.lean/declarations/rankone-coordinates-unique.md) | 39 | `result-track:0f72ddd3c0e4b3c4fce00f54a06824403b18796c12fb08e5c6357213b2eeb9f3` |
-| 6 | `theorem` | [rankOne_normalForm_mul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadratic.lean/declarations/rankone-normalform-mul.md) | 47 | `result-track:a91ca291506c44327ccce58a57d4915d28b049af99f613f4117d1776e414fc2f` |
+| 1 | `def` | [rankOneGenerator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadratic.lean/declarations/rankonegenerator.md) | 12 | `declaration-track:e70e549b76b24ba384132ea204420fb9c79908723dcdde0615d079225933333c` |
+| 2 | `theorem` | [rankOne_quadratic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadratic.lean/declarations/rankone-quadratic.md) | 15 | `result-track:2872307446731b171b3067a60dfc920aedc392f67555dabeb6ff7247164e4645` |
+| 3 | `theorem` | [rankOne_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadratic.lean/declarations/rankone-inverse.md) | 22 | `result-track:8fc73bec5a4edee6993f3ce4712e641500da0ffa7dff6c7bb470aac1ba03eac1` |
+| 4 | `theorem` | [rankOne_normalized_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadratic.lean/declarations/rankone-normalized-square.md) | 30 | `result-track:ced9db3a146801f8427557ad827f9f6915ab94b84d437a5a3135487bd5246896` |
+| 5 | `theorem` | [rankOne_coordinates_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadratic.lean/declarations/rankone-coordinates-unique.md) | 39 | `result-track:0f72ddd3c0e4b3c4fce00f54a06824403b18796c12fb08e5c6357213b2eeb9f3` |
+| 6 | `theorem` | [rankOne_normalForm_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadratic.lean/declarations/rankone-normalform-mul.md) | 47 | `result-track:a91ca291506c44327ccce58a57d4915d28b049af99f613f4117d1776e414fc2f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

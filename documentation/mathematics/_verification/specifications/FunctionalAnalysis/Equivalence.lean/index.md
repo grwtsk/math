@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/Equivalence.lean/index.md) · [Full source](../../../../FunctionalAnalysis/Equivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Equivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Equivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsEquiv](../../../../FunctionalAnalysis/Equivalence.lean/declarations/isequiv.md) | 21 | `declaration-track:c7cf51395f39d2bb26922963d806de39fc7ae24531ff1feda6d95dac4425c312` |
-| 2 | `lemma` | [isEquiv_refl](../../../../FunctionalAnalysis/Equivalence.lean/declarations/isequiv-refl.md) | 25 | `result-track:d70c3f07d8c7db8dfa7274785c1854e8f674d0964877e5f86760984501d9a2b9` |
-| 3 | `lemma` | [isEquiv_symm](../../../../FunctionalAnalysis/Equivalence.lean/declarations/isequiv-symm.md) | 29 | `result-track:3a22bea5606e800476e49b0d921f42df5c420bc6be7f802933de57eddcb4e96d` |
-| 4 | `lemma` | [isEquiv_trans](../../../../FunctionalAnalysis/Equivalence.lean/declarations/isequiv-trans.md) | 35 | `result-track:b0047bdf7426ae74678672ccc30995834e1efecfca98b9fbf906b450462412df` |
-| 5 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/Equivalence.lean/declarations/instance.md) | 42 | `declaration-track:efd1aaf17cce503e297291918446d990bcf6faed74d1305db9211a9391f41337` |
-| 6 | `lemma` | [eq_trivial_of_isEquiv_trivial](../../../../FunctionalAnalysis/Equivalence.lean/declarations/eq-trivial-of-isequiv-trivial.md) | 52 | `result-track:a9a375a04d9dee0a8f11ee310a416e05d1b65a1ee916e7b2cd3e658b94cf76a2` |
+| 1 | `def` | [IsEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Equivalence.lean/declarations/isequiv.md) | 21 | `declaration-track:c7cf51395f39d2bb26922963d806de39fc7ae24531ff1feda6d95dac4425c312` |
+| 2 | `lemma` | [isEquiv_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Equivalence.lean/declarations/isequiv-refl.md) | 25 | `result-track:d70c3f07d8c7db8dfa7274785c1854e8f674d0964877e5f86760984501d9a2b9` |
+| 3 | `lemma` | [isEquiv_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Equivalence.lean/declarations/isequiv-symm.md) | 29 | `result-track:3a22bea5606e800476e49b0d921f42df5c420bc6be7f802933de57eddcb4e96d` |
+| 4 | `lemma` | [isEquiv_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Equivalence.lean/declarations/isequiv-trans.md) | 35 | `result-track:b0047bdf7426ae74678672ccc30995834e1efecfca98b9fbf906b450462412df` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Equivalence.lean/declarations/instance.md) | 42 | `declaration-track:efd1aaf17cce503e297291918446d990bcf6faed74d1305db9211a9391f41337` |
+| 6 | `lemma` | [eq_trivial_of_isEquiv_trivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Equivalence.lean/declarations/eq-trivial-of-isequiv-trivial.md) | 52 | `result-track:a9a375a04d9dee0a8f11ee310a416e05d1b65a1ee916e7b2cd3e658b94cf76a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

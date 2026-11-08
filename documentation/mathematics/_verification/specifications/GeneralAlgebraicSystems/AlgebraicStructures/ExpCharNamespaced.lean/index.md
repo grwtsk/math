@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [inductive](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/declarations/inductive.md) | 50 | `declaration-track:4270e6d80c95ef3be0fd081ffb06ba1da434808256902d85b0cf7dbe509bd868` |
-| 2 | `theorem` | [expChar_one_of_char_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/declarations/expchar-one-of-char-zero.md) | 57 | `result-track:5a7b84b1ab3c5c3c60b955b1c008399d962b0a263127b782171c9b017fada193` |
-| 3 | `theorem` | [char_eq_expChar_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/declarations/char-eq-expchar-iff.md) | 64 | `result-track:9363702dd348022c54acd13ab976f7ba817f0bebcb4ade8778693de1754ea27a` |
-| 4 | `theorem` | [char_zero_of_expChar_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/declarations/char-zero-of-expchar-one.md) | 76 | `result-track:7e9f8af54cf93244f63246a24759213ecc989c06390fea9418a503b81c01c60b` |
-| 5 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/declarations/instance.md) | 84 | `declaration-track:d49fad70ebec49dc9ee38e5cc8e924e6150cce2dec6ed96af6424a7756df2ecc` |
-| 6 | `theorem` | [expChar_one_iff_char_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/declarations/expchar-one-iff-char-zero.md) | 91 | `result-track:2df5e1d7fa4b11c376432e37340d4a5ce4daa2b9b3695715e8a711c3877c3bdd` |
-| 7 | `theorem` | [char_prime_of_ne_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/declarations/char-prime-of-ne-zero.md) | 104 | `result-track:d6fc885e663f7894c846d3e79f03bea1a79436919b377ab562caf52bc4de2522` |
-| 8 | `theorem` | [expChar_is_prime_or_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/declarations/expchar-is-prime-or-one.md) | 111 | `result-track:16bcdc3437e35008e3417faf5ddf28229656beb6b35c82ded876bbe77feac719` |
+| 1 | `class` | [inductive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/declarations/inductive.md) | 50 | `declaration-track:4270e6d80c95ef3be0fd081ffb06ba1da434808256902d85b0cf7dbe509bd868` |
+| 2 | `theorem` | [expChar_one_of_char_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/declarations/expchar-one-of-char-zero.md) | 57 | `result-track:5a7b84b1ab3c5c3c60b955b1c008399d962b0a263127b782171c9b017fada193` |
+| 3 | `theorem` | [char_eq_expChar_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/declarations/char-eq-expchar-iff.md) | 64 | `result-track:9363702dd348022c54acd13ab976f7ba817f0bebcb4ade8778693de1754ea27a` |
+| 4 | `theorem` | [char_zero_of_expChar_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/declarations/char-zero-of-expchar-one.md) | 76 | `result-track:7e9f8af54cf93244f63246a24759213ecc989c06390fea9418a503b81c01c60b` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/declarations/instance.md) | 84 | `declaration-track:d49fad70ebec49dc9ee38e5cc8e924e6150cce2dec6ed96af6424a7756df2ecc` |
+| 6 | `theorem` | [expChar_one_iff_char_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/declarations/expchar-one-iff-char-zero.md) | 91 | `result-track:2df5e1d7fa4b11c376432e37340d4a5ce4daa2b9b3695715e8a711c3877c3bdd` |
+| 7 | `theorem` | [char_prime_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/declarations/char-prime-of-ne-zero.md) | 104 | `result-track:d6fc885e663f7894c846d3e79f03bea1a79436919b377ab562caf52bc4de2522` |
+| 8 | `theorem` | [expChar_is_prime_or_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ExpCharNamespaced.lean/declarations/expchar-is-prime-or-one.md) | 111 | `result-track:16bcdc3437e35008e3417faf5ddf28229656beb6b35c82ded876bbe77feac719` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

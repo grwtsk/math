@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PrimitiveNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PrimitiveNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimitiveNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimitiveNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IsSkewPrimitiveElem](../../../../CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/isskewprimitiveelem.md) | 56 | `declaration-track:4e7b303cfccd65a21b7c6f4519a5a5d4163380ea6d36782536d4f93992efa40b` |
-| 2 | `lemma` | [zero](../../../../CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/zero.md) | 64 | `result-track:edbc7074b2eebe124db7a3380c049014d1f006e27eb990d82d548c52b951c0ca` |
-| 3 | `lemma` | [add](../../../../CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/add.md) | 66 | `result-track:e1c1fdcafa2833074613b5f46007f99d5aa3085f1a2b7b2d3834608b05a176a6` |
-| 4 | `lemma` | [smul](../../../../CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/smul.md) | 73 | `result-track:86d3d4465f4e2fd441ca538c072dc85af9829e6d0afdc3fc091375e49d515e8e` |
-| 5 | `lemma` | [map](../../../../CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/map.md) | 79 | `result-track:a052063313e2007b5e53c29582d0e4b0927d2e2159dd04d635877635f7799a5f` |
-| 6 | `lemma` | [isSkewPrimitiveElem_map_equiv](../../../../CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/isskewprimitiveelem-map-equiv.md) | 88 | `result-track:55916342f8f14bb1e34e69d2ff095c91e3796d4455c3c52591b89fbddcc6ac88` |
-| 7 | `def` | [skewPrimitive](../../../../CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/skewprimitive.md) | 97 | `declaration-track:696332875f5d5c4f8ecf647d08d097ffd0316e916c1999a3f902adb90e95bba8` |
-| 8 | `lemma` | [mem_skewPrimitive](../../../../CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/mem-skewprimitive.md) | 103 | `result-track:65411a41430cfc56c08fd7413f73c2bc82e42d2e6433b9f2dce3a52c31b1e457` |
-| 9 | `lemma` | [counit_eq_zero_of_comul_eq_tmul_add_tmul](../../../../CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/counit-eq-zero-of-comul-eq-tmul-add-tmul.md) | 110 | `result-track:9d734237f81d73a766581b7a7b46a857325413a0b7c6efaf2a327b30998ec870` |
-| 10 | `lemma` | [IsSkewPrimitiveElem.of_comul_eq_tmul_add_tmul](../../../../CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/isskewprimitiveelem-of-comul-eq-tmul-add-tmul.md) | 117 | `result-track:01165b7e56fe372e5a56c0cd61eed68a425f0b08db3be3f35927c051c14c91ac` |
-| 11 | `lemma` | [isSkewPrimitiveElem_iff_comul_eq_tmul_add_tmul](../../../../CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/isskewprimitiveelem-iff-comul-eq-tmul-add-tmul.md) | 122 | `result-track:8a83db9994d3219f183a3cfb528db979794e3f665072ef3445d80505ba6fcca8` |
-| 12 | `lemma` | [neg](../../../../CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/neg.md) | 134 | `result-track:571c9d7d7096003ff20efdc299afac617a5b1d9cf1c58f764fdd90a288a5c365` |
-| 13 | `lemma` | [sub](../../../../CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/sub.md) | 139 | `result-track:a05ed489626b4b0a0638526857d178886b5611d66e6d4a30ef8a3a2d4bdd6167` |
-| 14 | `lemma` | [isSkewPrimitiveElem_neg](../../../../CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/isskewprimitiveelem-neg.md) | 145 | `result-track:a4cb5cadc62f8b66694f06e0ff18ebb57e4f4c77f9738cbb3da76293f36b349c` |
+| 1 | `structure` | [IsSkewPrimitiveElem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/isskewprimitiveelem.md) | 56 | `declaration-track:4e7b303cfccd65a21b7c6f4519a5a5d4163380ea6d36782536d4f93992efa40b` |
+| 2 | `lemma` | [zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/zero.md) | 64 | `result-track:edbc7074b2eebe124db7a3380c049014d1f006e27eb990d82d548c52b951c0ca` |
+| 3 | `lemma` | [add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/add.md) | 66 | `result-track:e1c1fdcafa2833074613b5f46007f99d5aa3085f1a2b7b2d3834608b05a176a6` |
+| 4 | `lemma` | [smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/smul.md) | 73 | `result-track:86d3d4465f4e2fd441ca538c072dc85af9829e6d0afdc3fc091375e49d515e8e` |
+| 5 | `lemma` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/map.md) | 79 | `result-track:a052063313e2007b5e53c29582d0e4b0927d2e2159dd04d635877635f7799a5f` |
+| 6 | `lemma` | [isSkewPrimitiveElem_map_equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/isskewprimitiveelem-map-equiv.md) | 88 | `result-track:55916342f8f14bb1e34e69d2ff095c91e3796d4455c3c52591b89fbddcc6ac88` |
+| 7 | `def` | [skewPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/skewprimitive.md) | 97 | `declaration-track:696332875f5d5c4f8ecf647d08d097ffd0316e916c1999a3f902adb90e95bba8` |
+| 8 | `lemma` | [mem_skewPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/mem-skewprimitive.md) | 103 | `result-track:65411a41430cfc56c08fd7413f73c2bc82e42d2e6433b9f2dce3a52c31b1e457` |
+| 9 | `lemma` | [counit_eq_zero_of_comul_eq_tmul_add_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/counit-eq-zero-of-comul-eq-tmul-add-tmul.md) | 110 | `result-track:9d734237f81d73a766581b7a7b46a857325413a0b7c6efaf2a327b30998ec870` |
+| 10 | `lemma` | [IsSkewPrimitiveElem.of_comul_eq_tmul_add_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/isskewprimitiveelem-of-comul-eq-tmul-add-tmul.md) | 117 | `result-track:01165b7e56fe372e5a56c0cd61eed68a425f0b08db3be3f35927c051c14c91ac` |
+| 11 | `lemma` | [isSkewPrimitiveElem_iff_comul_eq_tmul_add_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/isskewprimitiveelem-iff-comul-eq-tmul-add-tmul.md) | 122 | `result-track:8a83db9994d3219f183a3cfb528db979794e3f665072ef3445d80505ba6fcca8` |
+| 12 | `lemma` | [neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/neg.md) | 134 | `result-track:571c9d7d7096003ff20efdc299afac617a5b1d9cf1c58f764fdd90a288a5c365` |
+| 13 | `lemma` | [sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/sub.md) | 139 | `result-track:a05ed489626b4b0a0638526857d178886b5611d66e6d4a30ef8a3a2d4bdd6167` |
+| 14 | `lemma` | [isSkewPrimitiveElem_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimitiveNamespacedPublic.lean/declarations/isskewprimitiveelem-neg.md) | 145 | `result-track:a4cb5cadc62f8b66694f06e0ff18ebb57e4f4c77f9738cbb3da76293f36b349c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

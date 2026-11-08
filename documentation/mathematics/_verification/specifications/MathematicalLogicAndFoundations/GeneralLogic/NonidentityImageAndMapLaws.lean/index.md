@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonidentityImageAndMapLaws.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonidentityImageAndMapLaws.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonidentityImageAndMapLaws.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonidentityImageAndMapLaws.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Folder.Arithmetic.Torsion` — import line 19; external provider; requires a separately pinned dependency.
 - `Folder.Expansion.ShellTorsion` — import line 20; external provider; requires a separately pinned dependency.
 - `Folder.Monodromy.EllipticTorsionAction` — import line 21; external provider; requires a separately pinned dependency.
-- [Identity And Composition Map Data](../../../../../GroupTheoryAndGeneralizations/IdentityAndCompositionMapData.lean/index.md) — import line 23; pinned internal source present.
+- [Identity And Composition Map Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdentityAndCompositionMapData.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [UsesTorsionClass](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonidentityImageAndMapLaws.lean/declarations/usestorsionclass.md) | 43 | `declaration-track:df25f54c8f516ad2ab23363b546be631b393e165abb87a1c3f89ca8bad9d3f3f` |
-| 2 | `theorem` | [shell_twist_of_zero_is_identity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonidentityImageAndMapLaws.lean/declarations/shell-twist-of-zero-is-identity.md) | 53 | `result-track:2da0cde2e22cb501b5e9f3d772ef888ed6a75bad28ced81584f18cc060d93cbc` |
-| 3 | `theorem` | [shell_twist_respects_add](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonidentityImageAndMapLaws.lean/declarations/shell-twist-respects-add.md) | 64 | `result-track:04275b38412fd906fc35dfb60677b2006f9b0d687e80cad003b1a4140132e956` |
+| 1 | `def` | [UsesTorsionClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonidentityImageAndMapLaws.lean/declarations/usestorsionclass.md) | 43 | `declaration-track:df25f54c8f516ad2ab23363b546be631b393e165abb87a1c3f89ca8bad9d3f3f` |
+| 2 | `theorem` | [shell_twist_of_zero_is_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonidentityImageAndMapLaws.lean/declarations/shell-twist-of-zero-is-identity.md) | 53 | `result-track:2da0cde2e22cb501b5e9f3d772ef888ed6a75bad28ced81584f18cc060d93cbc` |
+| 3 | `theorem` | [shell_twist_respects_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonidentityImageAndMapLaws.lean/declarations/shell-twist-respects-add.md) | 64 | `result-track:04275b38412fd906fc35dfb60677b2006f9b0d687e80cad003b1a4140132e956` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

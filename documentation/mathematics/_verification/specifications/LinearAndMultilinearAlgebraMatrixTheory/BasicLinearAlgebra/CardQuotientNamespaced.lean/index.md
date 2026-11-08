@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CardQuotientNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CardQuotientNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CardQuotientNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CardQuotientNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Submodule.natAbs_det_equiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CardQuotientNamespaced.lean/declarations/submodule-natabs-det-equiv.md) | 39 | `result-track:8041c19212d6f250ffd2f9ff441d87d2669e9e28e1dffbbc6542d2772e3dda4c` |
-| 2 | `theorem` | [Submodule.natAbs_det_basis_change](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CardQuotientNamespaced.lean/declarations/submodule-natabs-det-basis-change.md) | 91 | `result-track:53d195024e16d7b4301edd0d409e3d24106b8d3494172123fbd034ad42d28336` |
-| 3 | `theorem` | [AddSubgroup.index_eq_natAbs_det](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CardQuotientNamespaced.lean/declarations/addsubgroup-index-eq-natabs-det.md) | 104 | `result-track:560ef6c0bdec0fc4778db912865be430985dc2666cb6afac7172f4eb38917c7d` |
-| 4 | `theorem` | [AddSubgroup.relindex_eq_natAbs_det](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CardQuotientNamespaced.lean/declarations/addsubgroup-relindex-eq-natabs-det.md) | 111 | `result-track:c2aa115d816f0507390e9c71f2cd8fd8a6f21f170248f334ce50feac07f1d556` |
-| 5 | `theorem` | [AddSubgroup.relindex_eq_abs_det](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CardQuotientNamespaced.lean/declarations/addsubgroup-relindex-eq-abs-det.md) | 118 | `result-track:3a7316896640388e4d4bdc14a6fdb28618a258b8e70f83c97589f56b5654ecb7` |
+| 1 | `theorem` | [Submodule.natAbs_det_equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CardQuotientNamespaced.lean/declarations/submodule-natabs-det-equiv.md) | 39 | `result-track:8041c19212d6f250ffd2f9ff441d87d2669e9e28e1dffbbc6542d2772e3dda4c` |
+| 2 | `theorem` | [Submodule.natAbs_det_basis_change](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CardQuotientNamespaced.lean/declarations/submodule-natabs-det-basis-change.md) | 91 | `result-track:53d195024e16d7b4301edd0d409e3d24106b8d3494172123fbd034ad42d28336` |
+| 3 | `theorem` | [AddSubgroup.index_eq_natAbs_det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CardQuotientNamespaced.lean/declarations/addsubgroup-index-eq-natabs-det.md) | 104 | `result-track:560ef6c0bdec0fc4778db912865be430985dc2666cb6afac7172f4eb38917c7d` |
+| 4 | `theorem` | [AddSubgroup.relindex_eq_natAbs_det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CardQuotientNamespaced.lean/declarations/addsubgroup-relindex-eq-natabs-det.md) | 111 | `result-track:c2aa115d816f0507390e9c71f2cd8fd8a6f21f170248f334ce50feac07f1d556` |
+| 5 | `theorem` | [AddSubgroup.relindex_eq_abs_det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CardQuotientNamespaced.lean/declarations/addsubgroup-relindex-eq-abs-det.md) | 118 | `result-track:3a7316896640388e4d4bdc14a6fdb28618a258b8e70f83c97589f56b5654ecb7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

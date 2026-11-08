@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [complexWeight](../../../../FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/declarations/complexweight.md) | 24 | `declaration-track:8e7e186b3500d8412db49263fd7c2b2198844857292ffc2cb70adacf9f71ebb1` |
-| 2 | `theorem` | [complexWeight_zero](../../../../FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/declarations/complexweight-zero.md) | 29 | `result-track:6028730e8da018d77f0d378f762049fd54e416ebf4dfa805dfd73ade48f33499` |
-| 3 | `theorem` | [complexWeight_one](../../../../FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/declarations/complexweight-one.md) | 34 | `result-track:b7be09f5fb12a7f69495453e65f1bb71d65e50dc8d4aee75efe9d5a393a42d18` |
-| 4 | `theorem` | [complexWeight_of_pos](../../../../FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/declarations/complexweight-of-pos.md) | 39 | `result-track:710580731198097384b7097b5158dfc003ba3822cd3f45e0b3265b028a202cc3` |
-| 5 | `theorem` | [norm_complexWeight_eq_posWeightReal_re](../../../../FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/declarations/norm-complexweight-eq-posweightreal-re.md) | 47 | `result-track:3eef49497091a5ff84d31a23c969bd337e50715eedd8dca4e40435e49af1950b` |
-| 6 | `theorem` | [norm_complexWeight_le_posWeightReal_re](../../../../FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/declarations/norm-complexweight-le-posweightreal-re.md) | 60 | `result-track:c818b7d7497eedea00941c8f99e0ee43582ff25239298d91618874f119a494bc` |
-| 7 | `theorem` | [complexWeight_mul](../../../../FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/declarations/complexweight-mul.md) | 68 | `result-track:f5b6fc316db1be4dc6337a17001d8b4179b0b9786aed3df7349955b4891bdc45` |
-| 8 | `theorem` | [complexWeight_completely_multiplicative](../../../../FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/declarations/complexweight-completely-multiplicative.md) | 91 | `result-track:41864528557d17f695a8947ad1d37ec3a5097806bbdcef7d65e3077f7d3c0de0` |
+| 1 | `def` | [complexWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/declarations/complexweight.md) | 24 | `declaration-track:8e7e186b3500d8412db49263fd7c2b2198844857292ffc2cb70adacf9f71ebb1` |
+| 2 | `theorem` | [complexWeight_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/declarations/complexweight-zero.md) | 29 | `result-track:6028730e8da018d77f0d378f762049fd54e416ebf4dfa805dfd73ade48f33499` |
+| 3 | `theorem` | [complexWeight_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/declarations/complexweight-one.md) | 34 | `result-track:b7be09f5fb12a7f69495453e65f1bb71d65e50dc8d4aee75efe9d5a393a42d18` |
+| 4 | `theorem` | [complexWeight_of_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/declarations/complexweight-of-pos.md) | 39 | `result-track:710580731198097384b7097b5158dfc003ba3822cd3f45e0b3265b028a202cc3` |
+| 5 | `theorem` | [norm_complexWeight_eq_posWeightReal_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/declarations/norm-complexweight-eq-posweightreal-re.md) | 47 | `result-track:3eef49497091a5ff84d31a23c969bd337e50715eedd8dca4e40435e49af1950b` |
+| 6 | `theorem` | [norm_complexWeight_le_posWeightReal_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/declarations/norm-complexweight-le-posweightreal-re.md) | 60 | `result-track:c818b7d7497eedea00941c8f99e0ee43582ff25239298d91618874f119a494bc` |
+| 7 | `theorem` | [complexWeight_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/declarations/complexweight-mul.md) | 68 | `result-track:f5b6fc316db1be4dc6337a17001d8b4179b0b9786aed3df7349955b4891bdc45` |
+| 8 | `theorem` | [complexWeight_completely_multiplicative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexWeightsNamespaced.lean/declarations/complexweight-completely-multiplicative.md) | 91 | `result-track:41864528557d17f695a8947ad1d37ec3a5097806bbdcef7d65e3077f7d3c0de0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

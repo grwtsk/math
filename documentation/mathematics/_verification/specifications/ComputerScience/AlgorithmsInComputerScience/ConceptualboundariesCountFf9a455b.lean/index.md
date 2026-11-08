@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptualboundariesCountFf9a455b.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptualboundariesCountFf9a455b.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptualboundariesCountFf9a455b.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptualboundariesCountFf9a455b.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,8 +63,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [conceptualBoundaries](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptualboundariesCountFf9a455b.lean/declarations/conceptualboundaries.md) | 18 | `declaration-track:5e837d2f703b13dba4b47c20dc42e773f447fafca2eb24103945b02fc1a0be95` |
-| 2 | `theorem` | [conceptualBoundaries_count](../../../../../ComputerScience/AlgorithmsInComputerScience/ConceptualboundariesCountFf9a455b.lean/declarations/conceptualboundaries-count.md) | 28 | `result-track:60cc6bff8b5af0f95eabd65d41e9327781cb99c348cc491e4841616140f9ae50` |
+| 1 | `def` | [conceptualBoundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptualboundariesCountFf9a455b.lean/declarations/conceptualboundaries.md) | 18 | `declaration-track:5e837d2f703b13dba4b47c20dc42e773f447fafca2eb24103945b02fc1a0be95` |
+| 2 | `theorem` | [conceptualBoundaries_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConceptualboundariesCountFf9a455b.lean/declarations/conceptualboundaries-count.md) | 28 | `result-track:60cc6bff8b5af0f95eabd65d41e9327781cb99c348cc491e4841616140f9ae50` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

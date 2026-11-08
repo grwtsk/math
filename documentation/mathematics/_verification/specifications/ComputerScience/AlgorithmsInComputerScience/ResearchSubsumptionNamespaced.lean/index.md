@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchSubsumptionNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchSubsumptionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchSubsumptionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchSubsumptionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [requiredResearchSubsumptionValidators](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchSubsumptionNamespaced.lean/declarations/requiredresearchsubsumptionvalidators.md) | 19 | `declaration-track:f8f26586bc48b4e1cace20c2dc5658a5a5909e6812a639c124a1cd9811b075f7` |
-| 2 | `def` | [researchSubsumptionStandingResidue](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchSubsumptionNamespaced.lean/declarations/researchsubsumptionstandingresidue.md) | 38 | `declaration-track:5286d37472b0cc6813a7c885b0bbbee547e5bf5e9c39cc96bd9cbbc1322d5b5a` |
-| 3 | `theorem` | [required_research_validator_count](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchSubsumptionNamespaced.lean/declarations/required-research-validator-count.md) | 41 | `result-track:67800d0a5001b61d099542293a29246a105bb38a229262c9f5a458b70cf7e658` |
-| 4 | `theorem` | [research_subsumption_preserves_pipeline_topos_residue](../../../../../ComputerScience/AlgorithmsInComputerScience/ResearchSubsumptionNamespaced.lean/declarations/research-subsumption-preserves-pipeline-topos-residue.md) | 45 | `result-track:d4b131f3b8168a4c20a46f10cfcbab2f48b0c32a4776e1138cc1ca22d8e7876c` |
+| 1 | `def` | [requiredResearchSubsumptionValidators](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchSubsumptionNamespaced.lean/declarations/requiredresearchsubsumptionvalidators.md) | 19 | `declaration-track:f8f26586bc48b4e1cace20c2dc5658a5a5909e6812a639c124a1cd9811b075f7` |
+| 2 | `def` | [researchSubsumptionStandingResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchSubsumptionNamespaced.lean/declarations/researchsubsumptionstandingresidue.md) | 38 | `declaration-track:5286d37472b0cc6813a7c885b0bbbee547e5bf5e9c39cc96bd9cbbc1322d5b5a` |
+| 3 | `theorem` | [required_research_validator_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchSubsumptionNamespaced.lean/declarations/required-research-validator-count.md) | 41 | `result-track:67800d0a5001b61d099542293a29246a105bb38a229262c9f5a458b70cf7e658` |
+| 4 | `theorem` | [research_subsumption_preserves_pipeline_topos_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResearchSubsumptionNamespaced.lean/declarations/research-subsumption-preserves-pipeline-topos-residue.md) | 45 | `result-track:d4b131f3b8168a4c20a46f10cfcbab2f48b0c32a4776e1138cc1ca22d8e7876c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

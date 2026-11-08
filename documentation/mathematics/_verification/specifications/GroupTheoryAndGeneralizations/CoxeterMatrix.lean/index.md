@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CoxeterMatrix.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CoxeterMatrix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoxeterMatrix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoxeterMatrix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,22 +58,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CoxeterMatrix](../../../../GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/coxetermatrix.md) | 65 | `declaration-track:d48a4bc8db17b7fead21d04c9ce84026e87166ba0df447cfd2a8b0bcc45681aa` |
-| 2 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/instance.md) | 77 | `declaration-track:f2c15a8503c062a11569a454b755956a0b0ffae63daa4d4fbd4eab103616f8dc` |
-| 3 | `theorem` | [symmetric](../../../../GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/symmetric.md) | 83 | `result-track:20dc5682afe2e0811b2fe0d07cd16e8119a77ff2c90710ccefbaa2f3c92b6c37` |
-| 4 | `def` | [reindex](../../../../GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/reindex.md) | 86 | `declaration-track:7eddb3dec800ef8b6309af17c2c434125af63d859091fd43456343322a1d4c7d` |
-| 5 | `theorem` | [reindex_apply](../../../../GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/reindex-apply.md) | 92 | `result-track:5ef4725216a120830fae9ae72cf21c89ddd7a8e2012ad385f944ce5081807aaf` |
-| 6 | `def` | [Aₙ](../../../../GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/a.md) | 103 | `declaration-track:f9eb1d175286178e0e0acb1d4e749c22c185c6bc187f974df60696942acbe138` |
-| 7 | `def` | [Bₙ](../../../../GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/b.md) | 121 | `declaration-track:de6f256dec74244a7a8a46dbe73283d89b5e14bc2867c58be6901ef668ccf469` |
-| 8 | `def` | [Dₙ](../../../../GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/d.md) | 141 | `declaration-track:a7b2d7324437f79984f18e51bba145ba2b1a0e47a2a9e3ab445462110d8a8149` |
-| 9 | `def` | [I₂ₘ](../../../../GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/i.md) | 158 | `declaration-track:fa0ad510bb4bc5684eb4c3eb212584a66ce9e1a65f82c485883561ebaf613d22` |
-| 10 | `def` | [E₆](../../../../GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/e-source-edition-3.md) | 173 | `declaration-track:a8701883292f8bcfe40a0edc7a21cbabe8cca6a7fd7c3d37ab4afb7a5fddc3c8` |
-| 11 | `def` | [E₇](../../../../GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/e-source-edition-2.md) | 190 | `declaration-track:7a60ab02f06195c90124d079090860e7c223d486493b410e092e48e557d2cfd9` |
-| 12 | `def` | [E₈](../../../../GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/e.md) | 208 | `declaration-track:6900cc19853f9b06671c176452f5919770718fd09189a57a55701558587dc590` |
-| 13 | `def` | [F₄](../../../../GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/f.md) | 226 | `declaration-track:befeac2717b71369837b28542cc7576cc47fb04bc1223ee620865aebb723eb11` |
-| 14 | `def` | [G₂](../../../../GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/g.md) | 240 | `declaration-track:03e5f404404e9f3dad004cc8a97486fa210423d317f63d8af6b8e5fb748c56b0` |
-| 15 | `def` | [H₃](../../../../GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/h-source-edition-2.md) | 252 | `declaration-track:cf0b2afef2ffedb79fcc2b41ba9d5e0a086043212729ef5cc3a0967a5d096974` |
-| 16 | `def` | [H₄](../../../../GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/h.md) | 265 | `declaration-track:b1a50f213f2b432417a4d6f00dcac1365ecdc60c3636753a650d8adaec463872` |
+| 1 | `structure` | [CoxeterMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/coxetermatrix.md) | 65 | `declaration-track:d48a4bc8db17b7fead21d04c9ce84026e87166ba0df447cfd2a8b0bcc45681aa` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/instance.md) | 77 | `declaration-track:f2c15a8503c062a11569a454b755956a0b0ffae63daa4d4fbd4eab103616f8dc` |
+| 3 | `theorem` | [symmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/symmetric.md) | 83 | `result-track:20dc5682afe2e0811b2fe0d07cd16e8119a77ff2c90710ccefbaa2f3c92b6c37` |
+| 4 | `def` | [reindex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/reindex.md) | 86 | `declaration-track:7eddb3dec800ef8b6309af17c2c434125af63d859091fd43456343322a1d4c7d` |
+| 5 | `theorem` | [reindex_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/reindex-apply.md) | 92 | `result-track:5ef4725216a120830fae9ae72cf21c89ddd7a8e2012ad385f944ce5081807aaf` |
+| 6 | `def` | [Aₙ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/a.md) | 103 | `declaration-track:f9eb1d175286178e0e0acb1d4e749c22c185c6bc187f974df60696942acbe138` |
+| 7 | `def` | [Bₙ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/b.md) | 121 | `declaration-track:de6f256dec74244a7a8a46dbe73283d89b5e14bc2867c58be6901ef668ccf469` |
+| 8 | `def` | [Dₙ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/d.md) | 141 | `declaration-track:a7b2d7324437f79984f18e51bba145ba2b1a0e47a2a9e3ab445462110d8a8149` |
+| 9 | `def` | [I₂ₘ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/i.md) | 158 | `declaration-track:fa0ad510bb4bc5684eb4c3eb212584a66ce9e1a65f82c485883561ebaf613d22` |
+| 10 | `def` | [E₆](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/e-source-edition-3.md) | 173 | `declaration-track:a8701883292f8bcfe40a0edc7a21cbabe8cca6a7fd7c3d37ab4afb7a5fddc3c8` |
+| 11 | `def` | [E₇](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/e-source-edition-2.md) | 190 | `declaration-track:7a60ab02f06195c90124d079090860e7c223d486493b410e092e48e557d2cfd9` |
+| 12 | `def` | [E₈](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/e.md) | 208 | `declaration-track:6900cc19853f9b06671c176452f5919770718fd09189a57a55701558587dc590` |
+| 13 | `def` | [F₄](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/f.md) | 226 | `declaration-track:befeac2717b71369837b28542cc7576cc47fb04bc1223ee620865aebb723eb11` |
+| 14 | `def` | [G₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/g.md) | 240 | `declaration-track:03e5f404404e9f3dad004cc8a97486fa210423d317f63d8af6b8e5fb748c56b0` |
+| 15 | `def` | [H₃](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/h-source-edition-2.md) | 252 | `declaration-track:cf0b2afef2ffedb79fcc2b41ba9d5e0a086043212729ef5cc3a0967a5d096974` |
+| 16 | `def` | [H₄](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoxeterMatrix.lean/declarations/h.md) | 265 | `declaration-track:b1a50f213f2b432417a4d6f00dcac1365ecdc60c3636753a650d8adaec463872` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

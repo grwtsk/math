@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsOptionNamespacedMulProdEqProdInsertNone.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsOptionNamespacedMulProdEqProdInsertNone.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsOptionNamespacedMulProdEqProdInsertNone.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsOptionNamespacedMulProdEqProdInsertNone.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prod_insertNone](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsOptionNamespacedMulProdEqProdInsertNone.lean/declarations/prod-insertnone.md) | 31 | `result-track:b60210207e7cad1346c89bdab81d9dab72736ba22c60af16326734ad1dfe9caf` |
-| 2 | `theorem` | [mul_prod_eq_prod_insertNone](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsOptionNamespacedMulProdEqProdInsertNone.lean/declarations/mul-prod-eq-prod-insertnone.md) | 35 | `result-track:6cc4b961daa7a61a25794dd904e90f69feadfd8a993b3dde2b3bdb135b89ec1f` |
-| 3 | `theorem` | [prod_eraseNone](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsOptionNamespacedMulProdEqProdInsertNone.lean/declarations/prod-erasenone.md) | 40 | `result-track:677d2d4290fb7db517811142e6a9d621a5ddf01d4a6ba7a80dbe02a97a2a9124` |
+| 1 | `theorem` | [prod_insertNone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsOptionNamespacedMulProdEqProdInsertNone.lean/declarations/prod-insertnone.md) | 31 | `result-track:b60210207e7cad1346c89bdab81d9dab72736ba22c60af16326734ad1dfe9caf` |
+| 2 | `theorem` | [mul_prod_eq_prod_insertNone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsOptionNamespacedMulProdEqProdInsertNone.lean/declarations/mul-prod-eq-prod-insertnone.md) | 35 | `result-track:6cc4b961daa7a61a25794dd904e90f69feadfd8a993b3dde2b3bdb135b89ec1f` |
+| 3 | `theorem` | [prod_eraseNone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsOptionNamespacedMulProdEqProdInsertNone.lean/declarations/prod-erasenone.md) | 40 | `result-track:677d2d4290fb7db517811142e6a9d621a5ddf01d4a6ba7a80dbe02a97a2a9124` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

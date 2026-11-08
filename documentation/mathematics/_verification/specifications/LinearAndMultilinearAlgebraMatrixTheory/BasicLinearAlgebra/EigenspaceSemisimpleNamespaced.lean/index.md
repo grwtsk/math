@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceSemisimpleNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceSemisimpleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceSemisimpleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceSemisimpleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [apply_eq_of_mem_of_comm_of_isFinitelySemisimple_of_isNil](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceSemisimpleNamespaced.lean/declarations/apply-eq-of-mem-of-comm-of-isfinitelysemisimple-of-isnil.md) | 36 | `result-track:8260bc4dba625f5ae6ca2a846ea12f3bb8d169625f8e770de0481acf3c8d7491` |
-| 2 | `lemma` | [IsFinitelySemisimple.genEigenspace_eq_eigenspace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceSemisimpleNamespaced.lean/declarations/isfinitelysemisimple-geneigenspace-eq-eigenspace.md) | 60 | `result-track:d7a5dbcd606c1f9cb3a3be1f340c6014edc6e987042617bb8dca795ac601a543` |
-| 3 | `lemma` | [IsFinitelySemisimple.maxGenEigenspace_eq_eigenspace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceSemisimpleNamespaced.lean/declarations/isfinitelysemisimple-maxgeneigenspace-eq-eigenspace.md) | 68 | `result-track:0a6cd160dcbdaa946c48352bb1e7318462834d29c0a18fc3354cf5c866bd9e0f` |
+| 1 | `lemma` | [apply_eq_of_mem_of_comm_of_isFinitelySemisimple_of_isNil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceSemisimpleNamespaced.lean/declarations/apply-eq-of-mem-of-comm-of-isfinitelysemisimple-of-isnil.md) | 36 | `result-track:8260bc4dba625f5ae6ca2a846ea12f3bb8d169625f8e770de0481acf3c8d7491` |
+| 2 | `lemma` | [IsFinitelySemisimple.genEigenspace_eq_eigenspace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceSemisimpleNamespaced.lean/declarations/isfinitelysemisimple-geneigenspace-eq-eigenspace.md) | 60 | `result-track:d7a5dbcd606c1f9cb3a3be1f340c6014edc6e987042617bb8dca795ac601a543` |
+| 3 | `lemma` | [IsFinitelySemisimple.maxGenEigenspace_eq_eigenspace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceSemisimpleNamespaced.lean/declarations/isfinitelysemisimple-maxgeneigenspace-eq-eigenspace.md) | 68 | `result-track:0a6cd160dcbdaa946c48352bb1e7318462834d29c0a18fc3354cf5c866bd9e0f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

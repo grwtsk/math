@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/RationalComplexBall.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/RationalComplexBall.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexBall.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexBall.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.RationalRoundedArithmetic`](../../../../FunctionsOfAComplexVariable/RationalRoundedArithmetic.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalRoundedArithmetic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalRoundedArithmetic.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.Complex.Norm` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,21 +59,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Ball](../../../../FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/ball.md) | 31 | `declaration-track:03eccc75f538d61dea0b9282543acb16602d7ba9cce547c586c0f921c72621ea` |
-| 2 | `def` | [Contains](../../../../FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/contains.md) | 40 | `declaration-track:37714a5a30ec3cece71ec5db2a5792a6064459befd0f11727064493ee5ae6f5c` |
-| 3 | `def` | [zero](../../../../FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/zero.md) | 44 | `declaration-track:0f47d99757bff6298641739d71aae2803778f697dfca9d805e112fe5ecb377c6` |
-| 4 | `def` | [add](../../../../FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/add.md) | 50 | `declaration-track:a84de3a037e98f85047cddc38abf445ec05df147400b0cdd51972b7298769af7` |
-| 5 | `theorem` | [zero_center](../../../../FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/zero-center.md) | 55 | `result-track:b8468c1913d3b21127f1fe2a083ba4ecd0d713a85762ed0f1f1065ced2386cd6` |
-| 6 | `theorem` | [zero_radius](../../../../FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/zero-radius.md) | 56 | `result-track:d1a07fbebcade074c9d31e6da219235015a505ed64daf255f8be615add55c05c` |
-| 7 | `theorem` | [add_center](../../../../FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/add-center.md) | 57 | `result-track:88a6f9d7a1c3c4831b9ddcd5afdcc9f2f14704da28ce90e9d588686fc57ab993` |
-| 8 | `theorem` | [add_radius](../../../../FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/add-radius.md) | 59 | `result-track:f68e33e7eb877b934124b2236d15a7881849a1c2b554b3ad63b1e5f027ed327a` |
-| 9 | `theorem` | [zero_contains](../../../../FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/zero-contains.md) | 63 | `result-track:a95f488f03415deefa42d394984eb173b6078ae79051dd13fa93b47936325b82` |
-| 10 | `theorem` | [contains_add](../../../../FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/contains-add.md) | 67 | `result-track:04049466df3637299c4ee42d87b2a6fceee5a8c359d0123487c324a00bdaf0e6` |
-| 11 | `def` | [realLower](../../../../FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/reallower.md) | 88 | `declaration-track:e14fabe75d9a693a0455127286e5b5e789dfbd4d0e66f1fdfa90b7bba56303f3` |
-| 12 | `def` | [realUpper](../../../../FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/realupper.md) | 91 | `declaration-track:86e19dbb3123f48731fba4dd918f6664d903e751710f1ab78d68334cb587a7f6` |
-| 13 | `theorem` | [realLower_le_realUpper](../../../../FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/reallower-le-realupper.md) | 94 | `result-track:2ff13e9b02879aed3c4fba529215a7ddec08e34b697b56974cfc0f819b436045` |
-| 14 | `theorem` | [contains_re_bounds](../../../../FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/contains-re-bounds.md) | 100 | `result-track:96f9d9cdf6ee2b6e0ffe1f6c883f39ef44c81edfc5e9b3d9ab9356e99e8f5c7d` |
-| 15 | `theorem` | [realUpper_sub_realLower](../../../../FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/realupper-sub-reallower.md) | 122 | `result-track:53393776080764ce3ba73b888cbbffd3a9351cc21736e5576d3e7448da5dbc73` |
+| 1 | `structure` | [Ball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/ball.md) | 31 | `declaration-track:03eccc75f538d61dea0b9282543acb16602d7ba9cce547c586c0f921c72621ea` |
+| 2 | `def` | [Contains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/contains.md) | 40 | `declaration-track:37714a5a30ec3cece71ec5db2a5792a6064459befd0f11727064493ee5ae6f5c` |
+| 3 | `def` | [zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/zero.md) | 44 | `declaration-track:0f47d99757bff6298641739d71aae2803778f697dfca9d805e112fe5ecb377c6` |
+| 4 | `def` | [add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/add.md) | 50 | `declaration-track:a84de3a037e98f85047cddc38abf445ec05df147400b0cdd51972b7298769af7` |
+| 5 | `theorem` | [zero_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/zero-center.md) | 55 | `result-track:b8468c1913d3b21127f1fe2a083ba4ecd0d713a85762ed0f1f1065ced2386cd6` |
+| 6 | `theorem` | [zero_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/zero-radius.md) | 56 | `result-track:d1a07fbebcade074c9d31e6da219235015a505ed64daf255f8be615add55c05c` |
+| 7 | `theorem` | [add_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/add-center.md) | 57 | `result-track:88a6f9d7a1c3c4831b9ddcd5afdcc9f2f14704da28ce90e9d588686fc57ab993` |
+| 8 | `theorem` | [add_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/add-radius.md) | 59 | `result-track:f68e33e7eb877b934124b2236d15a7881849a1c2b554b3ad63b1e5f027ed327a` |
+| 9 | `theorem` | [zero_contains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/zero-contains.md) | 63 | `result-track:a95f488f03415deefa42d394984eb173b6078ae79051dd13fa93b47936325b82` |
+| 10 | `theorem` | [contains_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/contains-add.md) | 67 | `result-track:04049466df3637299c4ee42d87b2a6fceee5a8c359d0123487c324a00bdaf0e6` |
+| 11 | `def` | [realLower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/reallower.md) | 88 | `declaration-track:e14fabe75d9a693a0455127286e5b5e789dfbd4d0e66f1fdfa90b7bba56303f3` |
+| 12 | `def` | [realUpper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/realupper.md) | 91 | `declaration-track:86e19dbb3123f48731fba4dd918f6664d903e751710f1ab78d68334cb587a7f6` |
+| 13 | `theorem` | [realLower_le_realUpper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/reallower-le-realupper.md) | 94 | `result-track:2ff13e9b02879aed3c4fba529215a7ddec08e34b697b56974cfc0f819b436045` |
+| 14 | `theorem` | [contains_re_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/contains-re-bounds.md) | 100 | `result-track:96f9d9cdf6ee2b6e0ffe1f6c883f39ef44c81edfc5e9b3d9ab9356e99e8f5c7d` |
+| 15 | `theorem` | [realUpper_sub_realLower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexBall.lean/declarations/realupper-sub-reallower.md) | 122 | `result-track:53393776080764ce3ba73b888cbbffd3a9351cc21736e5576d3e7448da5dbc73` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

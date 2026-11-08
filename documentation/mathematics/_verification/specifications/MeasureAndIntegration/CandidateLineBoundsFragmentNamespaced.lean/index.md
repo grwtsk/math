@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CandidateLineBoundsFragmentNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CandidateLineBoundsFragmentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateLineBoundsFragmentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateLineBoundsFragmentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [one_add_norm_le_twice](../../../../MeasureAndIntegration/CandidateLineBoundsFragmentNamespaced.lean/declarations/one-add-norm-le-twice.md) | 19 | `result-track:1fabe5664f1595dd5c3e2ca0da3dbeef2c84948179cf61d8b93e56751685ed4c` |
-| 2 | `theorem` | [candidate_parameter_decay](../../../../MeasureAndIntegration/CandidateLineBoundsFragmentNamespaced.lean/declarations/candidate-parameter-decay.md) | 31 | `result-track:6c0bc05ba4c2ad07e1ff2fda677e1cc3602325fc7fe98b2fc8510deccb01e80b` |
-| 3 | `theorem` | [candidate_vertical_decay](../../../../MeasureAndIntegration/CandidateLineBoundsFragmentNamespaced.lean/declarations/candidate-vertical-decay.md) | 98 | `result-track:3658916c891e48d86a7761004c8c5590146831f13e2846e3e66e16fa2069aa41` |
-| 4 | `theorem` | [scaled_cauchy_integrable_integral](../../../../MeasureAndIntegration/CandidateLineBoundsFragmentNamespaced.lean/declarations/scaled-cauchy-integrable-integral.md) | 111 | `result-track:bc44fdb3adc6df811f4d08da0fb574e5bc4c6b3d0d3c232739d444d2e01595d3` |
-| 5 | `theorem` | [candidate_square_majorant](../../../../MeasureAndIntegration/CandidateLineBoundsFragmentNamespaced.lean/declarations/candidate-square-majorant.md) | 120 | `result-track:65d761a9d70533f01b9b1605acbf8392a1e0399580670f3518f8e0b429002d13` |
-| 6 | `theorem` | [candidate_line_square_integrable_bound](../../../../MeasureAndIntegration/CandidateLineBoundsFragmentNamespaced.lean/declarations/candidate-line-square-integrable-bound.md) | 143 | `result-track:fa0f62af43e85970720f88a9d21cddf146019ea073f22bbedd8b3a1cfb7c008c` |
+| 1 | `theorem` | [one_add_norm_le_twice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateLineBoundsFragmentNamespaced.lean/declarations/one-add-norm-le-twice.md) | 19 | `result-track:1fabe5664f1595dd5c3e2ca0da3dbeef2c84948179cf61d8b93e56751685ed4c` |
+| 2 | `theorem` | [candidate_parameter_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateLineBoundsFragmentNamespaced.lean/declarations/candidate-parameter-decay.md) | 31 | `result-track:6c0bc05ba4c2ad07e1ff2fda677e1cc3602325fc7fe98b2fc8510deccb01e80b` |
+| 3 | `theorem` | [candidate_vertical_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateLineBoundsFragmentNamespaced.lean/declarations/candidate-vertical-decay.md) | 98 | `result-track:3658916c891e48d86a7761004c8c5590146831f13e2846e3e66e16fa2069aa41` |
+| 4 | `theorem` | [scaled_cauchy_integrable_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateLineBoundsFragmentNamespaced.lean/declarations/scaled-cauchy-integrable-integral.md) | 111 | `result-track:bc44fdb3adc6df811f4d08da0fb574e5bc4c6b3d0d3c232739d444d2e01595d3` |
+| 5 | `theorem` | [candidate_square_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateLineBoundsFragmentNamespaced.lean/declarations/candidate-square-majorant.md) | 120 | `result-track:65d761a9d70533f01b9b1605acbf8392a1e0399580670f3518f8e0b429002d13` |
+| 6 | `theorem` | [candidate_line_square_integrable_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateLineBoundsFragmentNamespaced.lean/declarations/candidate-line-square-integrable-bound.md) | 143 | `result-track:fa0f62af43e85970720f88a9d21cddf146019ea073f22bbedd8b3a1cfb7c008c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

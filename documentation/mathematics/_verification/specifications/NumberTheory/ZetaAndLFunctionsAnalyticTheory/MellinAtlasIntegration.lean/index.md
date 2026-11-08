@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,10 +46,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.WeilPolarization`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilPolarization.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.WeilCore`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.MellinTruncation`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinTruncation.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFiniteMellinAgreement`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.WeilPolarization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilPolarization.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.WeilCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.MellinTruncation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinTruncation.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFiniteMellinAgreement`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/declarations/example-source-edition-6.md) | 16 | `declaration-track:c28755ff6a0895b459dae97f3a4d80e3001b95b14ea69b9bed3a7eeac0a9fcec` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/declarations/example-source-edition-5.md) | 20 | `declaration-track:b4b56ffb8d5b0afe90568a1c6bc07dc9220d0e2b4657fcc4934c9de9ce75276b` |
-| 3 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/declarations/example-source-edition-4.md) | 25 | `declaration-track:b0ed0ef36121a799f3d80c144cac3a45e0040fa361f3318a10b3773b00723653` |
-| 4 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/declarations/example-source-edition-2.md) | 31 | `declaration-track:623b0a855adaee098e32bc44ce26e3888b5b5037e579c683ae3301a6b2ce2e7f` |
-| 5 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/declarations/example-source-edition-3.md) | 35 | `declaration-track:6fcbdfe83036168277f49296e2a516a45b1feaae5a34b24effb891429ebec23a` |
-| 6 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/declarations/example-source-edition-7.md) | 40 | `declaration-track:d68959fed3750ad647be6a29eb38fade06512d36b2e08d287aa708b2dbec8e55` |
-| 7 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/declarations/example.md) | 45 | `declaration-track:225dcda2c4c8c3ca05d3e86cdc4b500f02870630866399d8ec4306c202a43f1c` |
-| 8 | `theorem` | [pole_sample_not_injective](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/declarations/pole-sample-not-injective.md) | 50 | `result-track:5dc094c5ab09aa163b4eb71e8e7d3d9295066eb94747a854e67cafe1cae5e89e` |
-| 9 | `theorem` | [nonstrict_margin_allows_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/declarations/nonstrict-margin-allows-zero.md) | 57 | `result-track:af68dba7d232a2a7f231a232c8158094cce4a33bab8263f9639c0b18424f7464` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/declarations/example-source-edition-6.md) | 16 | `declaration-track:c28755ff6a0895b459dae97f3a4d80e3001b95b14ea69b9bed3a7eeac0a9fcec` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/declarations/example-source-edition-5.md) | 20 | `declaration-track:b4b56ffb8d5b0afe90568a1c6bc07dc9220d0e2b4657fcc4934c9de9ce75276b` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/declarations/example-source-edition-4.md) | 25 | `declaration-track:b0ed0ef36121a799f3d80c144cac3a45e0040fa361f3318a10b3773b00723653` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/declarations/example-source-edition-2.md) | 31 | `declaration-track:623b0a855adaee098e32bc44ce26e3888b5b5037e579c683ae3301a6b2ce2e7f` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/declarations/example-source-edition-3.md) | 35 | `declaration-track:6fcbdfe83036168277f49296e2a516a45b1feaae5a34b24effb891429ebec23a` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/declarations/example-source-edition-7.md) | 40 | `declaration-track:d68959fed3750ad647be6a29eb38fade06512d36b2e08d287aa708b2dbec8e55` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/declarations/example.md) | 45 | `declaration-track:225dcda2c4c8c3ca05d3e86cdc4b500f02870630866399d8ec4306c202a43f1c` |
+| 8 | `theorem` | [pole_sample_not_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/declarations/pole-sample-not-injective.md) | 50 | `result-track:5dc094c5ab09aa163b4eb71e8e7d3d9295066eb94747a854e67cafe1cae5e89e` |
+| 9 | `theorem` | [nonstrict_margin_allows_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinAtlasIntegration.lean/declarations/nonstrict-margin-allows-zero.md) | 57 | `result-track:af68dba7d232a2a7f231a232c8158094cce4a33bab8263f9639c0b18424f7464` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

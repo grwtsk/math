@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CS04SelectedS2RealizationNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/CS04SelectedS2RealizationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CS04SelectedS2RealizationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CS04SelectedS2RealizationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cs04_selectedS2Realization](../../../../GeneralTopology/CS04SelectedS2RealizationNamespaced.lean/declarations/cs04-selecteds2realization.md) | 17 | `result-track:05ee4e609e4d1047a2b55a05505fb8f300cd7eb120e56d52f2530e14d33242ce` |
+| 1 | `theorem` | [cs04_selectedS2Realization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CS04SelectedS2RealizationNamespaced.lean/declarations/cs04-selecteds2realization.md) | 17 | `result-track:05ee4e609e4d1047a2b55a05505fb8f300cd7eb120e56d52f2530e14d33242ce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

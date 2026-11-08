@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/IntegralTailAPI.lean/index.md) · [Full source](../../../../MeasureAndIntegration/IntegralTailAPI.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTailAPI.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTailAPI.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [integralTail](../../../../MeasureAndIntegration/IntegralTailAPI.lean/declarations/integraltail.md) | 8 | `declaration-track:1ac39d4eaa43058b8e8adf4c8072062b009ce79bff9ac609a1502ef459bfba3f` |
-| 2 | `theorem` | [integrableOn_Ici_all](../../../../MeasureAndIntegration/IntegralTailAPI.lean/declarations/integrableon-ici-all.md) | 10 | `result-track:db70773fea1cd60a0bf54b0d0461537cde5c0c59066cffe177086bca276656b6` |
-| 3 | `theorem` | [integralTail_eq_sub](../../../../MeasureAndIntegration/IntegralTailAPI.lean/declarations/integraltail-eq-sub.md) | 20 | `result-track:cc279a70fb6e8c186060eec7257b540ef6e2361d3390a67baf1f1a3e85f35fc7` |
-| 4 | `theorem` | [hasDerivAt_integralTail](../../../../MeasureAndIntegration/IntegralTailAPI.lean/declarations/hasderivat-integraltail.md) | 27 | `result-track:1fc4666e24e1aeae78b34b045d73f3c10fd7ef945170b567c4fe51867faf30a6` |
-| 5 | `theorem` | [integralTail_positive](../../../../MeasureAndIntegration/IntegralTailAPI.lean/declarations/integraltail-positive.md) | 37 | `result-track:78f0f2205e64598d93bcade816f6f3a6cae305d511f30e05963d79e0d6949bb4` |
-| 6 | `theorem` | [antitone_neg_reciprocal_ratio](../../../../MeasureAndIntegration/IntegralTailAPI.lean/declarations/antitone-neg-reciprocal-ratio.md) | 51 | `result-track:7f4094e354bcdcbd51428b9d63ee822d760a1e81daa20b317c2255d623e18220` |
+| 1 | `def` | [integralTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTailAPI.lean/declarations/integraltail.md) | 8 | `declaration-track:1ac39d4eaa43058b8e8adf4c8072062b009ce79bff9ac609a1502ef459bfba3f` |
+| 2 | `theorem` | [integrableOn_Ici_all](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTailAPI.lean/declarations/integrableon-ici-all.md) | 10 | `result-track:db70773fea1cd60a0bf54b0d0461537cde5c0c59066cffe177086bca276656b6` |
+| 3 | `theorem` | [integralTail_eq_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTailAPI.lean/declarations/integraltail-eq-sub.md) | 20 | `result-track:cc279a70fb6e8c186060eec7257b540ef6e2361d3390a67baf1f1a3e85f35fc7` |
+| 4 | `theorem` | [hasDerivAt_integralTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTailAPI.lean/declarations/hasderivat-integraltail.md) | 27 | `result-track:1fc4666e24e1aeae78b34b045d73f3c10fd7ef945170b567c4fe51867faf30a6` |
+| 5 | `theorem` | [integralTail_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTailAPI.lean/declarations/integraltail-positive.md) | 37 | `result-track:78f0f2205e64598d93bcade816f6f3a6cae305d511f30e05963d79e0d6949bb4` |
+| 6 | `theorem` | [antitone_neg_reciprocal_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegralTailAPI.lean/declarations/antitone-neg-reciprocal-ratio.md) | 51 | `result-track:7f4094e354bcdcbd51428b9d63ee822d760a1e81daa20b317c2255d623e18220` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 
